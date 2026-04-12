@@ -1,6 +1,6 @@
 # Active Litigation Tracker: Democracy and Immigration Cases — April 2026
 
-*Last updated: April 12, 2026 (monitoring pass) — for entries added after March 19, see the "April 2026 Updates" section at the bottom of this document*
+*Last updated: April 12, 2026 (evening session 74) — for entries added after March 19, see the "April 2026 Updates" section at the bottom of this document*
 
 ---
 
@@ -496,7 +496,7 @@ These three patterns together suggest that for the next phase of litigation trac
 
 - **What happened**: OPM published a final rule in February 2026 reclassifying approximately 50,000 career federal employees in "policy-influencing" roles into a new category called "Schedule Policy/Career." The rule took effect March 9, 2026. Employees reclassified into this category lose the due process protections that career civil servants have held since the Pendleton Act era: the right to advance notice of removal, the right to appeal disciplinary actions to the Merit Systems Protection Board, and — in a significant departure from prior Schedule F proposals — the agency, not the independent Office of Special Counsel, is now responsible for investigating whistleblower retaliation.
 - **Scale**: 50,000 positions is the OPM estimate; some analysts put the actual number higher once agency-level reclassification is complete. The public comment period produced over 40,000 comments, approximately 94% opposed.
-- **Legal challenge expected**: Federal unions (American Federation of Government Employees and others) have signaled imminent lawsuits. No ruling has been issued yet as of April 12.
+- **Legal challenge active**: AFGE, AFSCME, AFL-CIO, PEER, and Democracy Forward filed an amended complaint in the U.S. District Court for Maryland in March 2026. A separate AFGE lawsuit (National Council of Prison Locals v. BOP, D. Conn., No. 3:25-cv-01907) has a preliminary injunction hearing scheduled April 30, 2026. No court has issued an injunction halting Schedule Policy/Career as of April 12, 2026; implementation is proceeding.
 - **Why it matters**: Schedule Policy/Career is the long-run threat to the civil service that underlies most of the individual executive actions tracked elsewhere in this document. ICE agents who ignore court orders, DOGE personnel who access unauthorized systems, and SSA officials who provide false information to courts all operate within an institutional environment. If the career officials who provide institutional memory, legal compliance functions, and pushback against unlawful directives can be dismissed without appeal, the institutional constraints on executive overreach become even weaker. The whistleblower-retaliation change is particularly consequential: it means that the person who might alert the Inspector General, Congress, or the press to the kind of conduct documented in the SSA/DOGE cases would be appealing to the same agency head who ordered the conduct.
 - **Sources**: [Federal News Network, February 2026](https://federalnewsnetwork.com/workforce/2026/02/trump-administration-advances-plan-to-strip-job-protections-from-career-federal-employees/) · [Government Executive on final rule](https://www.govexec.com/workforce/2026/02/trump-admin-moves-finalize-return-schedule-f/411239/) · [Partnership for Public Service explainer](https://ourpublicservice.org/blog/schedule-policy-career-webinar-recap-schedule-f-fedsupport-explainer-series/)
 
@@ -521,16 +521,20 @@ These three patterns together suggest that for the next phase of litigation trac
 
 ---
 
-## Pending Deadlines as of April 12, 2026
+## Pending Deadlines as of April 12, 2026 (Evening)
 
 | Date | Case / Event | What to Watch |
 |---|---|---|
-| April 17 | White House Ballroom | D.C. Circuit stay expires; administration will likely seek SCOTUS emergency stay or district court will hold security fact-finding hearing |
-| April 17+ | White House Ballroom | If SCOTUS shadow-docket application filed, watch whether it is granted without full briefing |
+| April 14 noon | CIT Tariff Refund | CBP status report due on IEEPA Phase 1 rollout progress |
+| April 14 3 PM | CIT Tariff Refund | Closed conference before Judge Eaton on Phase 1 readiness |
+| April 17 | White House Ballroom | D.C. Circuit stay expires; expect SCOTUS emergency application from administration if Judge Leon maintains any construction block; application would likely go to Chief Justice Roberts or Justice Kavanaugh (DC Circuit) |
+| April 20 | CIT / CBP | IEEPA tariff refund Phase 1 rollout begins (covers ~63% of affected entries) |
+| April 20 8 PM EDT | No Kings Eyes on ICE | National virtual training — train-the-trainer format for ICE monitoring |
+| April 30 | AFGE / BOP (D. Conn.) | Preliminary injunction hearing on Schedule Policy/Career as applied to prison staff |
 | Weeks | Mail Voting EO (5.1/5.2) | Preliminary injunction decision expected in Massachusetts; no TRO yet |
 | May 22 | DHS Funding CR | Continuing resolution expires; another shutdown/funding standoff possible |
 | June 2026 | Trump v. Barbara | Decision expected before end of Court's term (late June); birthright citizenship |
-| June 14 | No Kings | Next national mobilization day |
-| TBD | Ramirez Ovando | District court compliance ruling; Tenth Circuit appeal on underlying injunction |
+| June 14 | No Kings Day | Next national mobilization; flagship event Philadelphia; no D.C. event due to Army 250th Parade |
+| TBD | Ramirez Ovando | District court compliance ruling; Tenth Circuit appeal (26-1027) on underlying injunction |
 | TBD | CIT tariff case | Three-judge panel ruling on 10% global tariff (argument held April 10) |
-| TBD | Schedule Policy/Career | Federal union lawsuit challenge expected; no filing confirmed yet |
+| TBD | Schedule Policy/Career | AFGE/AFSCME Maryland suit (amended complaint filed March 2026); no injunction yet |
