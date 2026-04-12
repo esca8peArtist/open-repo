@@ -8,8 +8,50 @@
 
 ## Since Last Check-in
 
-**Period**: April 12, 2026
-**Sessions run**: 73
+**Period**: April 12–13, 2026
+**Sessions run**: 74
+
+### Accomplished (Session 74)
+
+#### off-grid-living — Initial master outline (752 lines, 16 domains)
+
+Created `projects/off-grid-living/master-outline.md` from scratch (project directory was empty). Covers every major domain with key questions, subsections, and cost estimates:
+
+1. Site selection (evaluation checklist, water rights, zoning by state)
+2. Shelter (7 structure types, owner-built cost estimates)
+3. Water (source → treatment chain → distribution → storage; daily needs math)
+4. Food production (caloric math: 0.5–1 acre feeds 2 adults; annual/perennial/livestock/aquaculture)
+5. Food preservation (per-person-per-year targets, root cellar specs)
+6. Energy (solar sizing, battery chemistry, micro-hydro, cost estimates)
+7. Heating/cooling (wood supply math: 1–4 cords/year, passive cooling)
+8. Waste/sanitation (composting toilet, greywater, solid waste)
+9. Medicine (pharmaceutical stockpile list, herbal garden, equipment, skills priorities)
+10. Tools (3-tier inventory from founding tools through blacksmithing)
+11. Communications (GMRS, ham radio, satellite, analog fallback)
+12. Security (animal/human threats, firearms, legal framing)
+13. Community/governance (labor specialization, decision-making)
+14. Finances (transition phases, homestead revenue streams, barter)
+15. **Disaster scenarios** — power outage, storm, pandemic, economic collapse, civil unrest, **nuclear event** (fallout shelter design for root cellar retrofit, 7-10 rule, KI dosing, post-fallout farming guidance)
+16. Skills (table with time-to-competence and learning paths)
+
+Includes cross-domain dependency map and phased development roadmap. Commit: `b420466`.
+
+#### resistance-research — April 12/13 monitoring pass
+
+4 new developments added to `litigation-tracker-2026.md`:
+
+1. **Abrego Garcia v. Noem** — DOJ demanded Judge Xinis dissolve injunction by April 17 or "seek relief from a court not having the same views." Xinis refused. April 20 briefing + April 28 hearing set. DOJ's "third-country deportation" theory (Liberia) is a live template.
+
+2. **NPR/PBS defunding EO** — Judge Moss (D.D.C.) permanent injunction March 31 — First Amendment viewpoint discrimination. Doctrinal record now exists against viewpoint-based executive defunding.
+
+3. **MSPB immigration judges ruling** — MSPB held fired IJs lack appeal rights (inferior officers); Federal Circuit appeal filed. **Key**: rationale is identical to Schedule Policy/Career "policy-influencing function" language — if affirmed, ~50k Schedule F employees may lose all MSPB appeal access.
+
+4. **CIT Section 122 detail** — Panel (Barnett/Kelly/Stanceu) "sharply probed" government; post-argument analysis mirrors SCOTUS IEEPA skepticism.
+
+#### seedwarden — image audit
+All 120 native-plants images already cached. Stale "0/18 complete" note corrected in PROJECTS.md.
+
+---
 
 ### Accomplished (Session 73)
 
@@ -87,13 +129,14 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 2. **Open-source-rideshare**: Live driver ETA push + background check notifications (8 new tests, 1,809 → 1,817). Branch: `feature/background-checks-firebase-push`.
 
 ### In Progress
-- **Stockbot**: 3 paper trading sessions ready to start Monday morning. Backend + web UI verified working.
-- **Open-source-rideshare**: `feature/background-checks-firebase-push` has **4 commits** beyond `master` (Flutter apps now committed). Push to GitHub still blocked — see below.
+- **Stockbot**: Paper trading starts Monday April 14 at 9:30 AM ET. Backend + web UI verified. See `PAPER_TRADING_MONDAY.md` for startup commands.
+- **Open-source-rideshare**: `feature/background-checks-firebase-push` has **5 commits** beyond `master` (Flutter apps + off-grid-living outline also on this branch). Push to GitHub still blocked — see below.
 - **Seedwarden**: 19 products ready. PDF mockup images still needed.
+- **off-grid-living**: Master outline complete. Next: deep-dive documents (`03-water.md`, `06-energy-power.md`).
 
 ### Needs Your Input
 
-- [ ] **Start paper trading Monday morning**: Backend must be running before market open (9:30 AM ET). See `projects/stockbot/PAPER_TRADING_MONDAY.md` for exact commands. Do you want me to set up a cron job to auto-start it?
+- [ ] **MONDAY APRIL 14 — Start paper trading**: Backend must be running before market open (9:30 AM ET). See `projects/stockbot/PAPER_TRADING_MONDAY.md` for exact curl commands. Do you want a cron job to auto-start?
 - [ ] **GitHub push auth on Pi** — choose one option to enable push:
   - (a) `git config --global credential.helper store` then `git push` (enter username + PAT once, stored forever)
   - (b) `ssh-keygen -t ed25519` then add `~/.ssh/id_ed25519.pub` to GitHub settings
@@ -107,10 +150,11 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 - [x] **Stockbot venv**: rebuilt with `ta` library.
 
 ### Suggested Priorities for Next Session
-1. **Stockbot** — After Monday open (April 14): monitor paper trading sessions, review first cycle logs, check for errors.
-2. **Open-source-rideshare** — Push `feature/background-checks-firebase-push` once GitHub auth is resolved (4 commits ready). Then open PR.
-3. **Resistance-research** — Monitoring pass (ongoing); published/ copy worth reviewing for external sharing.
-4. **Seedwarden** — PDF mockup images when ready.
+1. **Stockbot** — Monday April 14: monitor paper trading sessions after market open. Review first cycle logs. Check for errors. The key question: did momentum fire on the first cycle?
+2. **Open-source-rideshare** — Push `feature/background-checks-firebase-push` once GitHub auth is resolved (5 commits ready). Then open PR.
+3. **Resistance-research** — April 17 deadline is key: White House ballroom SCOTUS application expected. Monitor closely.
+4. **off-grid-living** — Deep-dive documents: `03-water.md` (full technical specs) and `06-energy-power.md` (solar sizing calculator).
+5. **Seedwarden** — PDF mockup images when ready.
 
 ---
 
@@ -122,6 +166,15 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 ---
 
 ## History
+
+### April 12–13, 2026 (Session 74)
+- off-grid-living: master-outline.md created (752 lines, 16 domains) — site selection through nuclear disaster protocols, cross-domain dependency map, development roadmap.
+- resistance-research: 4 developments — Abrego Garcia v. Noem DOJ/Xinis confrontation (April 20 briefing, April 28 hearing); NPR/PBS permanent injunction; MSPB immigration judges ruling (Federal Circuit appeal); CIT Section 122 panel skepticism.
+- seedwarden: verified all 120 plant images cached; stale note corrected.
+
+### April 12, 2026 (Session 73)
+- open-source-rideshare: Flutter FCM notification tap routing complete for both rider and driver apps. Fixed gitignore bug (root `lib/` was blocking Flutter lib/ dirs). Flutter apps committed (45 files, first time). Commit: 6f4f946.
+- resistance-research: April 12 second monitoring pass — 6 developments (DHS shutdown, White House ballroom remand, mail voting second lawsuit, Schedule F in effect, No Kings pivot, Ramirez Ovando).
 
 ### April 12, 2026 (Session 72)
 - Stockbot: Paper trading ready for Monday. Fixed 3 critical bugs: (1) web UI auth broken — missing `web/.env`, frontend compiled with empty API key, all calls 401; (2) `ib_insync` crash on every trading cycle due to `asyncio.get_event_loop()` in ThreadPoolExecutor thread; (3) cycle-log endpoint read from deprecated session field. End-to-end verified. Strategy choices: momentum/SPY,QQQ,MSFT + rsi_mean_reversion/AAPL,NVDA + sma_crossover/AMZN,SPY.

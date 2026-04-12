@@ -25,6 +25,54 @@
 
 ---
 
+## 2026-04-12 — Session 74 — resistance-research + seedwarden + off-grid-living
+
+### Orientation
+- INBOX: empty
+- BLOCKED: GitHub push still blocked (no credentials); venv rebuild still pending user action; others resolved
+- Stockbot: paper trading ready for Monday (2026-04-14), no new work needed today (market closed)
+- Task 1: resistance-research monitoring pass (background agent)
+- Task 2: seedwarden wild edibles habit photos (18 plants, 0/18 complete — Stellaria + Taraxacum have Wikimedia leads)
+- Task 3: off-grid-living initial master outline (project directory was empty)
+
+### seedwarden — plant image audit
+- Ran download_plant_images.py — all 120 images already present and cached
+- "0/18 complete" note in PROJECTS.md was stale; corrected
+- No new downloads needed
+
+### off-grid-living — initial master outline
+- Created `projects/off-grid-living/master-outline.md` (752 lines, 16 domains)
+- Covers: site selection, shelter, water, food production/storage, energy,
+  heating/cooling, waste/sanitation, medicine, tools, communications,
+  security, community, finances, disaster scenarios (nuclear), skills
+- Nuclear fallout section: 7-10 rule, root cellar fallout shelter design,
+  KI dosing protocol, post-fallout farming guidance
+- Development roadmap included with priority deep-dive order
+- Committed: b420466 (off-grid-living: initial master outline, 16 domains)
+
+### resistance-research — April 12/13 monitoring pass (agent complete)
+- 4 new developments added to litigation-tracker-2026.md:
+  1. Abrego Garcia v. Noem (D. Md.) — DOJ demanded Judge Xinis rule by April 17 or
+     face DOJ seeking "relief from a court not having the same views." Xinis refused:
+     "Respondents cannot dictate the Court's schedule." April 20 briefing, April 28 hearing.
+     Also: DOJ "third-country deportation" theory (Liberia) is a live template being tested.
+  2. NPR/PBS defunding EO — permanent injunction by Judge Moss (March 31) — First Amendment
+     viewpoint discrimination; CPB already shuttered by Congress (July 2025) so practical
+     impact limited but doctrinal record established.
+  3. MSPB immigration judges — MSPB ruled fired IJ's lack MSPB appeal rights (inferior officers);
+     Federal Circuit appeal filed. Template identical to Schedule Policy/Career scope criteria —
+     could strip 50k+ employees of MSPB appeals if affirmed.
+  4. CIT Section 122 hearing (April 10) — added panel skepticism detail (Barnett/Kelly/Stanceu
+     "sharply probed" government; post-argument analysis mirrors SCOTUS IEEPA skepticism)
+- Agent committed changes to litigation-tracker-2026.md
+
+### Status: Complete
+- Session 74 complete. Committed: b420466 (off-grid-living outline)
+- Resistance-research monitoring pass committed by agent
+- Seedwarden: all 120 images already cached — stale PROJECTS.md note corrected
+
+---
+
 ## 2026-04-12 — Session 73 — open-source-rideshare + resistance-research
 
 ### Orientation
