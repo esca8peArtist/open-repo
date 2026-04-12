@@ -3341,3 +3341,84 @@ Spawned resistance-research subagent. April 12 monitoring found 4 significant de
 
 ### Block added
 - GitHub push blocked (no HTTPS credentials or SSH key on Pi) — added to BLOCKED.md with three resolution options.
+
+## 2026-04-13 — Orchestrator — Session 77: Paper trading health check + Resistance monitoring + Off-grid energy
+
+### Orientation
+- INBOX: empty — nothing to process.
+- BLOCKED: one unresolved (GitHub push for open-source-rideshare — no SSH/HTTPS creds on Pi).
+- Priority selected: stockbot health check first (paper trading started today), then resistance monitoring (April 17 deadline), then off-grid-living energy chapter.
+
+### stockbot — Pre-Monday Health Check
+All 3 paper trading sessions confirmed healthy:
+- momentum (SPY/QQQ/MSFT): running, cycling every 60s, 0 trades (market closed)
+- rsi_mean_reversion (AAPL/NVDA): running, cycling every 60s, 0 trades (market closed)
+- sma_crossover (AMZN/SPY): running, cycling every 60s, 0 trades (market closed)
+
+Note: Pi timezone is BST (UTC+1). Timestamps in cycle logs show UTC April 12 23:37 which is current. No errors, no backoff. System ready for Monday 9:30 AM ET (13:30 UTC April 13) first cycle with market_open=true.
+
+
+### stockbot — Session 77: Bug fixes + new endpoints
+
+Found and fixed 2 critical issues during pre-Monday health check:
+
+1. **Session persistence bug (critical)**: Shutdown event was calling `_finalize_model_run` on all sessions, marking `is_active=False`. This meant every server restart killed paper trading sessions — they wouldn't auto-resume. Fixed: shutdown now preserves `is_active=True`, only explicit stop requests deactivate sessions. Re-activated the 3 DB records manually, restarted server, all 3 sessions resumed correctly.
+
+2. **`/api/paper-trading/results` active flag wrong**: Was checking `app.state.live_engine` (legacy single-session path) for the `active` field. With multi-session paper trading, this always showed `active=false`. Fixed to check `paper_trading_sessions` registry first.
+
+3. **New endpoint `/api/paper-trading/session-results`**: Per-strategy P&L breakdown — shows each session's trades, return%, win rate, Sharpe, drawdown. Critical for Monday strategy comparison. Fixed Trade field (`ticker` not `symbol`).
+
+Commit: `025f06a` in stockbot repo.
+
+### resistance-research — Session 77: April 13 monitoring pass
+
+Major findings (written to `projects/resistance-research/monitoring/2026-04-13.md`):
+
+1. **Roberts solo SCOTUS stay (April 9) — CRITICAL**: Chief Justice Roberts unilaterally stayed the D.C. Circuit's en banc order reinstating MSPB chair Harris and NLRB member Wilcox. MSPB again without quorum — tens of thousands of federal worker appeals have no venue. Strong signal about Trump v. Slaughter (June 2026). If Humphrey's Executor is overruled, FTC, NLRB, MSPB, EEOC, SEC, FCC, CFPB all lose independence protections.
+
+2. **White House ballroom (April 17 deadline)**: National Trust brief directly attacks administration's internal contradiction (separable → inseparable). SCOTUS shadow-docket application expected before April 17. If denied, most visible court-defiance incident of the administration.
+
+3. **Nashville dismissal imminent**: Judge Crenshaw effectively waiting to rule on dismissing Abrego Garcia human smuggling charges. Blanche's public statements destroyed the prosecution's independence claim. If dismissed, primary justification for dissolving Maryland injunction collapses. Xinis rejected the April 17 deadline flatly.
+
+4. **CIT April 14 CBP report due**: Phase 1 tariff refund rollout on track for April 20.
+
+5. **Birthright citizenship**: Oral argument April 1 — majority (incl. conservatives) appeared hostile to administration. Roberts called argument "quirky." Decision June 2026.
+
+6. **May Day Strong (May 1)**: No Kings coalition shifting from mass attendance to economic disruption. First general strike attempt. Chicago Teachers Union as institutional test case.
+
+### open-source-rideshare — Session 77: Driver tipping system
+
+37 new tests (18 pass, 19 skip pending PostgreSQL), 0 failures. New files:
+- `models/tip.py` — TipRecord model (unique per ride, amount_cents, 48h window)
+- `schemas/tip.py` — TipRequest/TipResponse
+- `services/tips.py` — submit_tip with Stripe + graceful degradation + driver notifications
+- `api/v1/tips.py` — 4 endpoints: POST/GET ride tip, GET driver tip history, GET admin tips
+Tests: 1,817 → 1,854 (estimating; agent reported 37 added)
+Committed to `feature/background-checks-firebase-push` branch (local only).
+
+### off-grid-living — Session 77: `06-energy-power.md` complete
+
+997 lines. Covers:
+- Load calculation: worked 4-person example (7.5 kWh/day), seasonal adjustment
+- Solar: PSH table by US region (winter worst-month binding constraint), MPPT sizing, NEC 690.8 1.25 factor, named brands with honest assessment
+- Batteries: chemistry comparison table with 2025 $/kWh pricing, BMS requirements, charge-at-subfreezing prohibition for lithium
+- Inverters: pure sine vs MSW, surge load sizing, inverter-charger market (Victron, Sol-Ark)
+- Micro-hydro: power formula, 1 kW hydro = 24 kWh/day vs 4-6 kWh solar, penstock design, turbine selection
+- Cost tables: 1/5/10/20 kW systems with 2025 retail prices
+- EMP/nuclear: Faraday cage (metal garbage can), staged recovery plan, nuclear shelter power kit
+
+### seedwarden — Session 77: Wild edibles photos + native plants review
+
+- Confirmed all 129 images cached (not 0/18 as old note said)
+- Wild edibles photos copied: `assets/wild-edibles/stellaria-media-habit.jpg` (CC0) and `taraxacum-officinale-habit.jpg` (CC BY-SA 3.0 — needs attribution page before listing)
+- Native plants guide: cross-links expanded from 3 to 5 products, pricing error fixed ($18→$22)
+- Content gap identified: Region 5 (Southwest/Desert) has 14 species vs 27-46 in other regions
+
+### open-repo — Session 77: Landscape research complete
+
+Two documents written:
+- `landscape-research.md` — 16-platform survey
+- `architecture-notes.md` — federated instances + IPFS + ActivityPub architecture
+
+Key finding: missing layer is practical/procedural knowledge (not encyclopedic) and the connective tissue linking WikiHouse/Printables/Instructables/local practitioners. First step: agricultural techniques for Global South, import from WikiHouse/Open Food Facts/CC Instructables.
+

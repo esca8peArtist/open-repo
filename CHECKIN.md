@@ -9,7 +9,54 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–76
+**Sessions run**: 75–77
+
+### Accomplished (Session 77)
+
+#### stockbot — Critical bug fixes before Monday open
+
+Found 2 bugs that would have caused problems Monday:
+
+1. **Session persistence bug (CRITICAL — fixed)**: Server restart was killing all paper trading sessions permanently. Shutdown event called `_finalize_model_run` which marks `is_active=False` in DB, so sessions would NOT auto-resume. Fixed: shutdown now preserves `is_active=True`. Manually reactivated the 3 DB records. All 3 sessions resumed cleanly after restart. This would have silently dropped all paper trading on any Pi reboot.
+
+2. **`/results` active flag wrong**: The `/api/paper-trading/results` endpoint always showed `active: false` even with 3 running sessions (was checking legacy `live_engine` field). Fixed to check multi-session registry.
+
+3. **New endpoint `/api/paper-trading/session-results`**: Per-strategy performance breakdown showing each session's P&L, win rate, Sharpe, drawdown. Useful for Monday comparison.
+
+Commit: `025f06a` in stockbot repo. All 3 sessions running and ready for Monday 9:30 AM ET.
+
+#### resistance-research — April 13 monitoring pass
+
+4 major findings (written to `monitoring/2026-04-13.md`):
+
+1. **Roberts solo SCOTUS stay (CRITICAL NEW DEVELOPMENT)**: Chief Justice Roberts unilaterally stayed the D.C. Circuit's en banc reinstatement of MSPB chair Harris and NLRB member Wilcox. MSPB again without quorum — all federal worker appeals (including mass probationary terminations) have no venue. This is a strong signal about Trump v. Slaughter (June 2026): if Humphrey's Executor is limited or overruled, FTC, NLRB, MSPB, EEOC, SEC, FCC, CFPB all lose independent-appointment protections.
+
+2. **Ballroom (April 17)**: National Trust brief directly attacks the administration's internal contradiction (argued "separable" phases until appeal, then "inseparable"). SCOTUS shadow-docket application expected any day. If denied, most visible court-defiance event of this administration.
+
+3. **Nashville dismissal imminent**: Crenshaw effectively waiting to rule. Blanche's public statements destroyed the prosecution. If dismissed, the primary justification for dissolving Judge Xinis's Maryland injunction collapses. Xinis already rejected the April 17 deadline flatly.
+
+4. **Birthright citizenship (June 2026)**: Multiple conservatives appeared hostile at April 1 oral argument. Roberts called the administration's argument "quirky." Decision expected late June.
+
+5. **May Day Strong (May 1)**: No Kings coalition has pivoted from attendance to economic disruption — general strike with Chicago Teachers Union as institutional test case.
+
+#### off-grid-living — `06-energy-power.md` complete (997 lines)
+
+Solar sizing (PSH regional table, winter worst-month binding constraint), battery chemistry (LiFePO4 vs lead-acid with 2025 $/kWh), micro-hydro (1 kW hydro = 24 kWh/day vs 4–6 kWh solar), inverter-chargers, cost tables for 1–20 kW systems, EMP hardening (Faraday cage, staged recovery), nuclear shelter power kit.
+
+#### open-source-rideshare — Driver tipping system
+
+37 new tests, 0 failures. Full tipping system: `TipRecord` model, Stripe payment intent (graceful degradation), 48-hour window, $0.50–$50 range, driver push+SMS notifications, rider/driver/admin endpoints.
+Branch: `feature/background-checks-firebase-push` (local, push still blocked).
+
+#### seedwarden — Wild edibles photos + content review
+
+Wild edibles photos confirmed in place (CC0 and CC BY-SA 3.0). Native plants guide cross-links fixed, pricing corrected. Content gap flagged: Region 5 (Southwest/Desert) has only 14 species vs. 27–46 in other regions.
+
+#### open-repo — Landscape research launched (NEW PROJECT)
+
+Project directory was empty. Now has `landscape-research.md` (16-platform survey) + `architecture-notes.md`. Key finding: missing layer is practical/procedural knowledge and connective tissue between existing platforms. Architecture: federated instances + IPFS + ActivityPub. First step: agricultural techniques for Global South, bootstrapping from WikiHouse/Open Food Facts/CC Instructables.
+
+---
 
 ### Accomplished (Session 76)
 
@@ -183,31 +230,36 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 2. **Open-source-rideshare**: Live driver ETA push + background check notifications (8 new tests, 1,809 → 1,817). Branch: `feature/background-checks-firebase-push`.
 
 ### In Progress
-- **Stockbot**: 3 paper trading sessions running. Will fire first trading cycles Monday at 9:30 AM ET. Monitor at `http://127.0.0.1:8000`.
-- **Open-source-rideshare**: `feature/background-checks-firebase-push` has 5 commits beyond `master`. Push to GitHub still blocked — see below.
-- **Seedwarden**: 19 products ready. PDF mockup images still needed.
-- **off-grid-living**: `03-water.md` complete. Next: `06-energy-power.md` (solar sizing, battery chemistry, micro-hydro).
+- **Stockbot**: 3 paper trading sessions live and cycling. First market-open trades fire Monday 9:30 AM ET. Session persistence bug fixed — server restart no longer kills sessions. Monitor: `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/session-results`
+- **Open-source-rideshare**: `feature/background-checks-firebase-push` has 6 commits beyond `master` (latest: tipping). Push to GitHub still blocked — see below.
+- **Seedwarden**: 19 products ready. PDF mockup images still needed. Region 5 (Southwest) content gap (14 species).
+- **off-grid-living**: `03-water.md` and `06-energy-power.md` complete. Next: `07-heating-cooling.md` or `04-food-production.md`.
+- **open-repo**: Landscape research complete. Next: scope the MVP protocol design.
 
 ### Needs Your Input
 
+- [ ] **MONDAY MORNING ACTION — Stockbot**: After 9:30 AM ET Monday (April 14), check first cycle logs: `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/session-results` — did momentum fire? Any errors? (Or the orchestrator will check at next session.)
 - [ ] **GitHub push auth on Pi** — choose one option to enable push:
   - (a) `git config --global credential.helper store` then `git push` (enter username + PAT once, stored forever)
   - (b) `ssh-keygen -t ed25519` then add `~/.ssh/id_ed25519.pub` to GitHub settings
 - [ ] **Open-source-rideshare — merge feature branch** (once push works): push `feature/background-checks-firebase-push` and open a PR
-- [ ] **Resistance-research — review published/ versions**: `projects/resistance-research/published/` is current. Worth a read before sharing externally.
+- [ ] **Resistance-research — April 17 is CRITICAL**: White House ballroom stay expires. SCOTUS application expected. Requires monitoring pass Monday or Tuesday.
+- [ ] **Resistance-research — Roberts MSPB solo stay**: Big development. Worth reading `monitoring/2026-04-13.md` for context on Trump v. Slaughter implications.
 - [ ] **Open-source-rideshare — Docker needed for integration tests** (1,817 unit tests pass; 94 integration tests need Docker/PostgreSQL).
 - [ ] **Seedwarden — mockup images**: #1 Etsy conversion blocker. Canva or mockup generator?
-- [ ] **Discord webhook URL**: For session completion notifications.
+- [ ] **Seedwarden — Taraxacum photo attribution**: The dandelion habit photo is CC BY-SA 3.0 (Greg Hume) — needs a photo credits page in the wild edibles guide before that product can be listed.
 - [x] **Git identity** — resolved (thorn / thorn@local).
 - [x] **Workout — comprehensive plan complete**.
 - [x] **Stockbot venv**: rebuilt with `ta` library.
+- [x] **Discord webhook URL**: Configured and working.
 
 ### Suggested Priorities for Next Session
-1. **Stockbot** — Monday April 14 AM: after market open, review first cycle logs. Key question: did momentum fire? Any errors? Pull cycle logs with curl or check the web UI Trading page.
-2. **Resistance-research** — April 17 deadline is CRITICAL: White House ballroom SCOTUS application expected Monday or Tuesday. Run a monitoring pass.
-3. **off-grid-living** — `06-energy-power.md`: solar sizing (panel/battery sizing calculator), battery chemistry (LiFePO4 vs lead-acid), micro-hydro, wind, generator integration, real costs.
-4. **Open-source-rideshare** — Push `feature/background-checks-firebase-push` once GitHub auth is resolved (5 commits ready). Then open PR.
-5. **Seedwarden** — PDF mockup images when ready.
+1. **Stockbot** — Monday April 14 AM: after 9:30 ET market open, check first cycle logs and session results. Key questions: did momentum fire? Any signals generated? Any errors? Check `session-results` endpoint.
+2. **Resistance-research** — April 17 CRITICAL: run monitoring pass for ballroom SCOTUS application and Nashville dismissal ruling. Update litigation tracker.
+3. **off-grid-living** — `07-heating-cooling.md` (wood stove sizing, passive solar design, propane, thermal mass) or `04-food-production.md` (caloric math, annual/perennial).
+4. **open-repo** — MVP protocol design: define the `procedure`, `schematic`, `recipe` content type schemas; federation architecture decisions.
+5. **open-source-rideshare** — Push feature branch once GitHub auth resolved (6 commits ready).
+6. **Seedwarden** — PDF mockup images (Canva) when ready; Region 5 Southwest content expansion.
 
 ---
 
@@ -219,6 +271,14 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 ---
 
 ## History
+
+### April 13, 2026 (Session 77)
+- Stockbot: Fixed session persistence bug (shutdown was marking is_active=False, killing auto-resume on restart). Fixed results active flag. Added /api/paper-trading/session-results endpoint. All 3 sessions running.
+- Resistance-research: April 13 monitoring — Roberts solo SCOTUS stay reinstated MSPB firing (huge: MSPB without quorum, 10k+ appeals frozen, Trump v. Slaughter signal); ballroom SCOTUS app imminent; Nashville dismissal imminent; May Day Strong general strike (May 1).
+- off-grid-living: 06-energy-power.md complete (997 lines) — solar sizing, LiFePO4/lead-acid battery chemistry, micro-hydro, cost tables, EMP hardening.
+- open-source-rideshare: Driver tipping system (37 new tests, TipRecord model, Stripe, 48h window, notifications).
+- seedwarden: Wild edibles photos confirmed (CC0+CC BY-SA 3.0), native plants cross-links fixed, Region 5 content gap identified.
+- open-repo: Landscape research initiated — 16-platform survey + architecture notes. Missing layer: practical/procedural knowledge + connective tissue. Architecture: federated + IPFS + ActivityPub.
 
 ### April 13, 2026 (Session 76)
 - resistance-research: April 13 monitoring pass — White House ballroom (National Trust "no national security emergency" filing, SCOTUS window open); Abrego Garcia Nashville dismissal risk; MSPB oral argument held awaiting ruling; CIT April 14 CBP report due; mail voting EO clarification (EO 14399 vs 14248).

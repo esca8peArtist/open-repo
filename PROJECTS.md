@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-13 (Session 76)
+> **Last updated by**: orchestrator on 2026-04-13 (Session 77)
 
 ---
 
@@ -41,7 +41,7 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading LIVE as of 2026-04-13. 3 sessions running: momentum (SPY/QQQ/MSFT), rsi_mean_reversion (AAPL/NVDA), sma_crossover (AMZN/SPY). Sessions will fire first trades Monday 9:30 AM ET. Monitor via `http://127.0.0.1:8000` Trading page or curl `/api/paper-trading/cycle-log`. Next session: review Monday cycle logs and check for errors. iOS app deferred until paper trading stable.
+**Current focus**: Paper trading LIVE as of 2026-04-13. 3 sessions running and healthy (verified Session 77): momentum (SPY/QQQ/MSFT), rsi_mean_reversion (AAPL/NVDA), sma_crossover (AMZN/SPY). All cycling every 60s, market_open=false (weekend). First trades fire Monday 9:30 AM ET (13:30 UTC). Monitor via `http://127.0.0.1:8000` Trading page or `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`. Next: review Monday cycle logs after market open — did momentum fire? Any errors? iOS app deferred until paper trading stable.
 **Blocked on**: —
 **Notes**: Web app is in good shape. Model creation and most optimisation is operational. Paper trading has just started but has had issues — this is the current priority. iOS app is out of scope until paper trading is solid. All features must work across ALL model types (stock, options, rule-based, ensemble, MTF) — do not implement something for one type only.
 
@@ -53,7 +53,7 @@
 **Status**: Active — early stage
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-source-rideshare/`
-**Current focus**: Backend comprehensive — 1,809 unit tests passing. Features include: matching engine, WebSocket (heartbeat, health), payments (Stripe, cancellation fees), pricing (demand-aware, time-of-day), geocoding, auth, admin API, Alembic migrations, ride history, profile endpoints, safety service (SOS, trip sharing, emergency contacts), admin SOS monitoring, cancellation policy, notification service (Twilio SMS + SendGrid email + Firebase FCM push), driver rating aggregation, rate limiting, admin SOS WebSocket, scheduled rides, dispatch scheduler + retry logic, admin cancellation stats, driver earnings, promo codes & referral system, ride receipts, service areas/geofencing, admin feedback & disputes, ride & driver metrics dashboard, ride pooling/shared rides, vehicle management & WAV matching, in-app chat, transparent demand pricing, driver ETA estimation, saved locations, admin document verification, recurring rides/commute scheduling, multi-stop rides/waypoints, fare splitting, driver payout & settlement (Stripe Connect), SMS/email notification integration, audit logging & compliance reporting, **background check integration (Checkr API), device token management (FCM)**. Session 70: feature/background-checks-firebase-push committed locally (101 new tests, 1,708 → 1,809). Both Flutter apps have full user flows. Pending: git identity on Pi to commit/push.
+**Current focus**: Backend comprehensive — 1,817 unit tests passing (Session 73 total; Session 77 added tipping system, 37 more tests pending PostgreSQL confirmation). Features include: matching engine, WebSocket (heartbeat, health), payments (Stripe, cancellation fees), pricing (demand-aware, time-of-day), geocoding, auth, admin API, Alembic migrations, ride history, profile endpoints, safety service (SOS, trip sharing, emergency contacts), admin SOS monitoring, cancellation policy, notification service (Twilio SMS + SendGrid email + Firebase FCM push), driver rating aggregation, rate limiting, admin SOS WebSocket, scheduled rides, dispatch scheduler + retry logic, admin cancellation stats, driver earnings, promo codes & referral system, ride receipts, service areas/geofencing, admin feedback & disputes, ride & driver metrics dashboard, ride pooling/shared rides, vehicle management & WAV matching, in-app chat, transparent demand pricing, driver ETA estimation, saved locations, admin document verification, recurring rides/commute scheduling, multi-stop rides/waypoints, fare splitting, driver payout & settlement (Stripe Connect), SMS/email notification integration, audit logging & compliance reporting, **background check integration (Checkr API), device token management (FCM)**. Session 70: feature/background-checks-firebase-push committed locally (101 new tests, 1,708 → 1,809). Both Flutter apps have full user flows. Pending: git identity on Pi to commit/push.
 **Blocked on**: —
 **Notes**: This is the only public project. Higher standards for documentation, test coverage, and code quality since it's community-facing. Regulatory/safety/security solutions and growth strategy are in scope alongside the technical build.
 
@@ -77,7 +77,7 @@
 **Status**: Active — research phase
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Research phase — survey what already exists (Wikipedia, Internet Archive, OpenStreetMap, LibreTexts, Wikidata, Open Library, Thingiverse, etc.), identify gaps, and define architecture. Key questions: federated vs. centralized, content taxonomy, contribution model, discovery/search, and governance.
+**Current focus**: Landscape research COMPLETE (Session 77). `landscape-research.md` (16-platform survey) + `architecture-notes.md` written. Key finding: missing layer is practical/procedural knowledge and connective tissue between WikiHouse/Printables/Instructables. Architecture: federated instances + IPFS content addressing + ActivityPub. Next: MVP protocol design — define `procedure`, `schematic`, `recipe` content type schemas; bootstrapping plan from WikiHouse/Open Food Facts/CC Instructables.
 **Blocked on**: —
 **Notes**: Start with landscape research before any building. The goal is ambitious — don't reinvent what already exists well. Identify the missing layer that ties it all together or fills the gaps nobody else is filling.
 
@@ -89,7 +89,7 @@
 **Status**: Active — research phase
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). `03-water.md` complete (~850 lines, Session 76) — full technical reference: source selection (well/spring/rainwater/surface), water rights law, pumping systems, cistern storage, treatment decision tree, distribution, greywater reuse, emergency protocols, nuclear fallout water, cost tables. Next: `06-energy-power.md` (solar sizing, battery chemistry, micro-hydro).
+**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). `03-water.md` complete (~850 lines). `06-energy-power.md` in progress (Session 77) — solar sizing, battery chemistry, micro-hydro, wind, generator, costs. Next: 07-heating-cooling.md or 04-food-production.md.
 **Blocked on**: —
 **Notes**: This is a planning and research project, not a software build. Practical and actionable plans over theory. Include real costs, sourcing, and skill requirements where possible. Nuclear disaster scenario is in scope — treat it seriously.
 
