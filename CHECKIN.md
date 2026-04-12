@@ -8,8 +8,62 @@
 
 ## Since Last Check-in
 
-**Period**: April 12–13, 2026
-**Sessions run**: 74
+**Period**: April 13, 2026
+**Sessions run**: 75–76
+
+### Accomplished (Session 76)
+
+#### resistance-research — April 13 morning monitoring pass
+
+5 threads updated in `litigation-tracker-2026.md`:
+
+1. **White House ballroom (CRITICAL — April 17 deadline)**: National Trust filed April 13 response arguing "no national security emergency" — directly contests the D.C. Circuit majority's factual predicate. No SCOTUS emergency application yet as of Sunday AM; window open (would go to Roberts or Kavanaugh).
+
+2. **Abrego Garcia**: Nashville criminal case — Judge Crenshaw "poised to decide at any time" on dismissing human smuggling charges due to Blanche's public vindictive-prosecution statements. If dismissed, removes admin's strongest argument for dissolving the Maryland injunction. DHS still maintaining Liberia theory despite Costa Rica confirming willingness.
+
+3. **MSPB / Federal Circuit**: Oral argument in Oguntade v. MSPB held April 9 — awaiting ruling. Now a decided-argument-awaiting-ruling case.
+
+4. **CIT tariff / IEEPA**: April 14 CBP status report due. April 20 Phase 1 IEEPA refund rollout on track. Section 122 ruling still pending.
+
+5. **Mail voting EO clarification**: Current litigation targets EO 14399 (March 31, 2026) — the October 2025 "show your papers" injunction was against EO 14248 (a different order).
+
+#### off-grid-living — `03-water.md` complete (~850 lines)
+
+First domain deep-dive document, full technical reference:
+- **Source selection**: Well depth/cost tables by region ($25–85/ft, $8–40k complete system), spring box construction sequence, rainwater formula (0.623 gal/sq ft/inch) with 4-climate examples, water rights law (prior appropriation vs riparian, rainwater legality by state incl. Colorado's 110-gal limit)
+- **Pumping**: Simple Pump (to 325 ft) vs Bison Pump comparison, Grundfos SQFlex solar sizing (100W per 100 ft head per GPM), pump sizing worksheet with livestock demand table
+- **Storage**: Cistern sizing (30-day reserve math), materials table (poly, IBC, ferro-cement, concrete, fiberglass) with per-gallon costs
+- **Treatment decision tree** by source type: sequential sediment filtration, carbon, UV (note: 30 mJ/cm² not reliable against Cryptosporidium), RO, distillation
+- **Distribution**: Pressure tank sizing, PEX vs CPVC vs copper freeze-resistance table, frost depths by region
+- **Greywater**: L2L/branched drain/constructed wetland, legal status by state
+- **Emergency**: FEMA 1-gal/day myth corrected, bleach ratios, SODIS protocol, nuclear fallout water (I-131 half-life, sealed cistern safety, RO for dissolved radionuclides)
+- **Cost tables**: 5 system configurations from minimal cabin to full redundant homestead
+
+#### stockbot — Health check
+
+Backend confirmed running, all 3 sessions cycling every 3 seconds, `market_open: false` (expected Sunday). Ready for Monday 9:30 AM ET.
+
+---
+
+### Accomplished (Session 75)
+
+#### stockbot — Paper trading sessions LIVE
+
+All 3 paper trading sessions are now running and will begin active trading at Monday's market open (9:30 AM ET, April 14):
+
+| Strategy | Tickers | Session ID |
+|---|---|---|
+| `momentum` | SPY, QQQ, MSFT | 8fd082bf9782737b |
+| `rsi_mean_reversion` | AAPL, NVDA | eb4bcbab870baa6b |
+| `sma_crossover` | AMZN, SPY | d6b116ddee054524 |
+
+- Backend already running from previous session — health check passed
+- Alpaca paper account: PA38Z548DIRR — $99,335.35 cash, ACTIVE, trading unblocked
+- Cycle logs returning `market_open: false` (correct — Sunday, market closed)
+- Web UI at `http://127.0.0.1:8000/` — confirmed accessible
+- **No action needed from you Monday morning** — sessions are live and will fire automatically
+
+---
 
 ### Accomplished (Session 74)
 
@@ -129,14 +183,13 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 2. **Open-source-rideshare**: Live driver ETA push + background check notifications (8 new tests, 1,809 → 1,817). Branch: `feature/background-checks-firebase-push`.
 
 ### In Progress
-- **Stockbot**: Paper trading starts Monday April 14 at 9:30 AM ET. Backend + web UI verified. See `PAPER_TRADING_MONDAY.md` for startup commands.
-- **Open-source-rideshare**: `feature/background-checks-firebase-push` has **5 commits** beyond `master` (Flutter apps + off-grid-living outline also on this branch). Push to GitHub still blocked — see below.
+- **Stockbot**: 3 paper trading sessions running. Will fire first trading cycles Monday at 9:30 AM ET. Monitor at `http://127.0.0.1:8000`.
+- **Open-source-rideshare**: `feature/background-checks-firebase-push` has 5 commits beyond `master`. Push to GitHub still blocked — see below.
 - **Seedwarden**: 19 products ready. PDF mockup images still needed.
-- **off-grid-living**: Master outline complete. Next: deep-dive documents (`03-water.md`, `06-energy-power.md`).
+- **off-grid-living**: `03-water.md` complete. Next: `06-energy-power.md` (solar sizing, battery chemistry, micro-hydro).
 
 ### Needs Your Input
 
-- [ ] **MONDAY APRIL 14 — Start paper trading**: Backend must be running before market open (9:30 AM ET). See `projects/stockbot/PAPER_TRADING_MONDAY.md` for exact curl commands. Do you want a cron job to auto-start?
 - [ ] **GitHub push auth on Pi** — choose one option to enable push:
   - (a) `git config --global credential.helper store` then `git push` (enter username + PAT once, stored forever)
   - (b) `ssh-keygen -t ed25519` then add `~/.ssh/id_ed25519.pub` to GitHub settings
@@ -150,10 +203,10 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 - [x] **Stockbot venv**: rebuilt with `ta` library.
 
 ### Suggested Priorities for Next Session
-1. **Stockbot** — Monday April 14: monitor paper trading sessions after market open. Review first cycle logs. Check for errors. The key question: did momentum fire on the first cycle?
-2. **Open-source-rideshare** — Push `feature/background-checks-firebase-push` once GitHub auth is resolved (5 commits ready). Then open PR.
-3. **Resistance-research** — April 17 deadline is key: White House ballroom SCOTUS application expected. Monitor closely.
-4. **off-grid-living** — Deep-dive documents: `03-water.md` (full technical specs) and `06-energy-power.md` (solar sizing calculator).
+1. **Stockbot** — Monday April 14 AM: after market open, review first cycle logs. Key question: did momentum fire? Any errors? Pull cycle logs with curl or check the web UI Trading page.
+2. **Resistance-research** — April 17 deadline is CRITICAL: White House ballroom SCOTUS application expected Monday or Tuesday. Run a monitoring pass.
+3. **off-grid-living** — `06-energy-power.md`: solar sizing (panel/battery sizing calculator), battery chemistry (LiFePO4 vs lead-acid), micro-hydro, wind, generator integration, real costs.
+4. **Open-source-rideshare** — Push `feature/background-checks-firebase-push` once GitHub auth is resolved (5 commits ready). Then open PR.
 5. **Seedwarden** — PDF mockup images when ready.
 
 ---
@@ -166,6 +219,13 @@ See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup comman
 ---
 
 ## History
+
+### April 13, 2026 (Session 76)
+- resistance-research: April 13 monitoring pass — White House ballroom (National Trust "no national security emergency" filing, SCOTUS window open); Abrego Garcia Nashville dismissal risk; MSPB oral argument held awaiting ruling; CIT April 14 CBP report due; mail voting EO clarification (EO 14399 vs 14248).
+- off-grid-living: `03-water.md` complete (~850 lines) — full technical reference: wells, springs, rainwater harvesting, water rights law, pumping, cistern storage, treatment decision tree, greywater, emergency protocols, nuclear fallout water, cost tables.
+
+### April 13, 2026 (Session 75)
+- Stockbot: started 3 paper trading sessions — momentum/SPY,QQQ,MSFT + rsi_mean_reversion/AAPL,NVDA + sma_crossover/AMZN,SPY. All running, Alpaca connected, cycles logging. Will fire at Monday 9:30 AM ET market open.
 
 ### April 12–13, 2026 (Session 74)
 - off-grid-living: master-outline.md created (752 lines, 16 domains) — site selection through nuclear disaster protocols, cross-domain dependency map, development roadmap.

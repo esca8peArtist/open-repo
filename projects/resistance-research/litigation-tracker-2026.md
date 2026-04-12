@@ -1,6 +1,6 @@
 # Active Litigation Tracker: Democracy and Immigration Cases — April 2026
 
-*Last updated: April 12, 2026 (evening session 74) — for entries added after March 19, see the "April 2026 Updates" section at the bottom of this document*
+*Last updated: April 13, 2026 (morning monitoring pass) — for entries added after March 19, see the "April 2026 Updates" section at the bottom of this document*
 
 ---
 
@@ -520,6 +520,98 @@ These three patterns together suggest that for the next phase of litigation trac
 - **Sources**: [ACLU-CO case page](https://www.aclu-co.org/cases/ramirez-ovando-et-al-v-noem-et-al/) · [Justia Tenth Circuit docket 26-1027](https://dockets.justia.com/docket/circuit-courts/ca10/26-1027)
 
 ---
+
+---
+
+## April 13, 2026 — Morning Monitoring Pass
+
+*Pass conducted April 13, 2026. Focuses on the seven priority threads flagged for the April 17 ballroom deadline and April 20/28 Abrego Garcia schedule. The April 12 evening pass (Session 74) captured most of the major developments through Saturday night; this pass documents what moved or clarified overnight and Sunday morning.*
+
+---
+
+### White House Ballroom — National Trust Contests "National Security" Framing; SCOTUS Window Now Open
+
+**Date**: April 13, 2026
+**Development**: The National Trust for Historic Preservation has filed a response to the D.C. Circuit's April 12 remand order disputing the administration's central factual claim: that above-ground ballroom construction is necessary to — or inseparable from — below-ground military and security infrastructure. The National Trust argues there is "no national security emergency" that requires the ballroom construction to proceed, and that prior government representations to courts established that above-ground and below-ground phases are operationally and contractually separable. The filing was reported by The Hill on April 13.
+
+With the D.C. Circuit's stay extended to April 17 and the remand to Judge Leon for fact-finding, the April 17 date now runs two parallel tracks: (1) Judge Leon must clarify his injunction in light of the security questions, and (2) the administration's window to seek a SCOTUS emergency stay before that deadline is open. As of the morning of April 13, no SCOTUS application has been publicly filed. Applications to the D.C. Circuit go to Chief Justice Roberts as the Circuit Justice; alternatively the administration could apply to Justice Kavanaugh (also D.C. Circuit).
+
+**Significance**: The National Trust's factual counter-brief directly challenges the maneuver the administration used to get the D.C. Circuit majority to order a remand rather than simply deny the stay. If Judge Leon accepts the National Trust's factual position — that the phases are separable and no security imperative exists — he can maintain the injunction without the majority's national-security concern applying. That makes a SCOTUS emergency application the likely next step. A SCOTUS grant here without the full D.C. Circuit factual record would be another shadow-docket override of a merits development, consistent with the pattern documented in the meta-observations from April 2026.
+
+**What to watch**: Whether the administration files a SCOTUS application by April 17. If yes: watch which justice receives the application (Roberts or Kavanaugh), whether it is referred to the full Court, and the speed of any response. If no SCOTUS application: Judge Leon will proceed with fact-finding, likely with expedited briefing ordered this week.
+
+**Sources**: [The Hill — National Trust response, April 13, 2026](https://thehill.com/regulation/court-battles/5821834-national-trust-challenges-trump-ballroom/) · [CBS News — D.C. Circuit April 12 remand order](https://www.cbsnews.com/news/federal-appeals-court-white-house-ballroom-construction-lawsuit/) · [NPR — April 11 background](https://www.npr.org/2026/04/11/nx-s1-5782084/dc-appeals-court-trump-ballroom-bunker) · [RedState — April 12 D.C. Circuit order detail](https://redstate.com/smoosieq/2026/04/12/new-twist-dc-circuit-kicks-white-house-ballroom-case-back-to-lower-court-over-security-questions-n2201210)
+
+---
+
+### Abrego Garcia v. Noem — Nashville Criminal Case on the Knife's Edge; Acting AG Blanche's Comments in Focus
+
+**Date**: April 13, 2026
+**Development**: The civil deportation case in Maryland (Judge Xinis) is on the track documented in the April 12 evening pass: government brief due April 20, hearing April 28. What moved since then is in the parallel Nashville criminal case. On April 11, CNN reported that Acting Attorney General Todd Blanche's repeated public statements — asserting that Abrego Garcia is a violent MS-13 gang member and human trafficker — have so thoroughly undermined the government's ability to demonstrate a non-vindictive prosecutorial motive that Judge Waverly Crenshaw in the Middle District of Tennessee is "poised to decide at any time" whether to dismiss the human smuggling charges. The prosecution's own witnesses testified they knew the charges would appear vindictive and could not provide independent non-retaliatory reasons for the filing. If Crenshaw does not dismiss, the next option is to summon Blanche to testify in Nashville under oath about DOJ's prosecutorial motivation.
+
+In the Maryland case, DHS is maintaining its position that it intends to deport Abrego Garcia to Liberia — not Costa Rica, which has confirmed willingness to receive him. ICE Acting Director Todd Lyons stated in a March memo that deportation to Costa Rica would be "prejudicial to the United States" because of diplomatic resources invested in the Liberia relationship. Judge Xinis found that ICE had "affirmatively misled" the court about Costa Rica's offer. The Liberia theory is not merely diplomatic maneuvering: if Liberia deportation succeeds, it becomes the template for circumventing withholding-of-removal orders in any case by identifying a third country outside the original withholding designation.
+
+**Significance**: The two-front structure of this case — civil deportation in Maryland and criminal prosecution in Tennessee — is now visibly under strain. If the Tennessee charges are dismissed as vindictive, the administration loses its primary justification for seeking to dissolve the Maryland injunction (it has argued his criminal status justifies re-detention and removal). The Liberia tactic survives either outcome and is the structural threat to watch: the April 28 hearing is where Judge Xinis will have to directly address whether a third-country deportation to a country not covered by the withholding order is permissible under the Supreme Court's April 2025 unanimous order requiring the government to "facilitate" his return.
+
+**What to watch**: Judge Crenshaw ruling in Nashville (could issue any day); Judge Xinis April 28 hearing; whether DHS updates its Liberia position in the April 20 briefing.
+
+**Sources**: [CNN — Blanche comments threaten Nashville case, April 11, 2026](https://www.cnn.com/2026/04/11/politics/todd-blanche-kilmar-abrego-garcia) · [The Hill — Judge Xinis rebukes DOJ](https://thehill.com/regulation/court-battles/5575541-judge-presses-trump-deportation/) · [Dupree Report — DHS maintains Liberia position despite Costa Rica offer](https://www.thedupreereport.com/2026/04/abrego-garcia-dhs-liberia-costa-rica/) · [AP via Messenger-Inquirer — US still wants Liberia](https://www.messenger-inquirer.com/ap/ap_national_news/us-still-wants-to-deport-kilmar-abrego-garcia-to-liberia-despite-new-agreement-with-costa-rica/article_9347ed5b-e041-5f20-89b4-9a9d24f2f628.html) · [Fox News — judge blocks re-detention](https://www.foxnews.com/politics/judge-blocks-trumps-push-deport-abrego-garcia-rebukes-doj-trying-dictate-court)
+
+---
+
+### MSPB / Immigration Judges — Federal Circuit Oral Argument Held April 9
+
+**Date**: April 13, 2026
+**Development**: The Federal Circuit held oral argument in Oguntade v. MSPB (Case No. 2025-1114) on April 9, 2026. The Federal Circuit's case page confirms the audio has been uploaded. This is the appeal by fired immigration judges Megan Jackler and Brandon Jaroch from the MSPB's March 20 ruling that it lacks jurisdiction over their terminations because immigration judges are "inferior officers" removable at will under Article II. No ruling has issued; the Federal Circuit typically takes weeks to months to rule after argument.
+
+**Significance**: This is the first appellate hearing on the core civil service question underlying both the immigration judge firings and Schedule Policy/Career: whether career federal employees who exercise policy functions can be stripped of MSPB appeal rights by executive reclassification. The Federal Circuit's ruling — when it comes — will have direct application to the 50,000 employees now in Schedule Policy/Career and will shape the scope of the April 30 preliminary injunction hearing in AFGE v. BOP (D. Conn.) on Schedule Policy/Career as applied to prison staff.
+
+**What to watch**: Federal Circuit ruling in Oguntade v. MSPB (case 2025-1114); April 30 preliminary injunction hearing in AFGE/BOP (D. Conn.).
+
+**Sources**: [Federal Circuit case page — April 9, 2026 oral argument audio](https://www.cafc.uscourts.gov/04-09-2026-2025-1114-oguntade-v-mspb-audio-uploaded/) · [Bloomberg Law — Federal Circuit appeal filed](https://news.bloomberglaw.com/daily-labor-report/fired-immigration-judges-appeal-mspb-loss-to-federal-circuit) · [JURIST — petition filed](https://www.jurist.org/news/2026/03/fired-us-immigration-judges-appeal-to-federal-court-following-administrative-board-denial/)
+
+---
+
+### CIT Tariff / IEEPA Refund — Phase 1 Rollout On Track for April 20; Section 122 Ruling Still Pending
+
+**Date**: April 13, 2026
+**Development**: The Court of International Trade's compliance monitoring of the IEEPA tariff refund program (following the Supreme Court's February 20, 2026 ruling in Learning Resources v. Trump) continues on schedule. On April 1, Judge Eaton found that CBP is "on track" for the April 20 Phase 1 rollout, which will cover approximately 63% of affected entries. CBP's April 14 status report (due noon EDT) and afternoon conference before Judge Eaton are the next procedural steps; these are administrative compliance milestones rather than substantive legal hearings.
+
+On the separate Section 122 challenge — the administration's replacement 10% global tariff filed after IEEPA was struck down — the three-judge CIT panel (Barnett, Kelly, Stanceu) has not issued a ruling following the April 10 "marathon" oral argument. Post-argument commentary from trade law observers described the panel as sharply skeptical of the government's reading of the "balance-of-payments deficit" condition in Section 122.
+
+**Significance**: The Section 122 ruling is the next major tariff decision after Learning Resources. A ruling against the government would remove the administration's only remaining IEEPA-era tariff authority and force either legislative action or a SCOTUS emergency application. A ruling upholding Section 122 would give the administration a template for tariffs calibrated to survive judicial review. The panel gave no timeline.
+
+**What to watch**: April 14 CBP status report; CIT Section 122 ruling (no timeline given); April 20 Phase 1 IEEPA refund rollout begins.
+
+**Sources**: [Thompson Hine SmarTrade — CIT endorses Phase 1, April 1, 2026](https://www.thompsonhinesmartrade.com/2026/04/cit-endorses-phase-1-of-the-ieepa-tariff-refund-process-ahead-of-cbps-april-20-rollout/) · [SCOTUSblog — remaining questions after SCOTUS tariff ruling](https://www.scotusblog.com/2026/03/the-remaining-questions-after-the-supreme-courts-tariffs-ruling/) · [International Trade Today — April 10 hearing (captured in April 12 pass)](https://internationaltradetoday.com/article/2026/04/10/cit-sharply-probes-legality-of-section-122-tariffs-in-marathon-hearing-2604100067?BC=bc_69d99bc2ad6c8)
+
+---
+
+### NPR/PBS — Appeal Expected but Not Yet Filed; Permanent Injunction Stands
+
+**Date**: April 13, 2026
+**Development**: The White House called Judge Moss's March 31 permanent injunction "a ridiculous ruling by an activist judge" and the press secretary stated the administration will appeal. As of April 13, no notice of appeal to the D.C. Circuit has been reported. The permanent injunction blocking the executive order defunding NPR and PBS remains in effect.
+
+**Significance**: The practical limitation remains as documented in the April 12 evening pass — the injunction cannot restore CPB's rescinded congressional appropriation, so CPB remains shut down. The question on appeal will be whether the D.C. Circuit affirms the First Amendment viewpoint-discrimination analysis. If the D.C. Circuit reverses, the case becomes a vehicle for a SCOTUS ruling on whether the government can use funding conditions to suppress media organizations it disfavors. Worth watching for timing: if the administration files a notice of appeal but does not seek a stay, the permanent injunction remains operative while the appeal proceeds.
+
+**What to watch**: Notice of appeal filing in D.C. Circuit; any application for stay of the permanent injunction pending appeal.
+
+**Sources**: [The Hill — permanent injunction, March 31, 2026](https://thehill.com/homenews/administration/5809647-trump-funding-npr-pbs-blocked/) · [CNN — ruling, March 31, 2026](https://www.cnn.com/2026/03/31/media/federal-judge-trump-order-npr-pbs-funding) · [NPR — First Amendment analysis](https://www.npr.org/2026/03/31/nx-s1-5768399/npr-pbs-trump-federal-funding)
+
+---
+
+### Mail Voting EO — No TRO Issued; Preliminary Injunction Timeline Unclear
+
+**Date**: April 13, 2026
+**Development**: The two active lawsuits challenging the March 31 mail voting executive order — the 23-state coalition in Massachusetts (League of Women Voters of Massachusetts v. Trump, Case 1:26-cv-11549) and the civil rights coalition suit (Lawyers' Committee, NAACP, Common Cause, Black Voters Matter) — remain without TRO or preliminary injunction as of April 13. The Massachusetts court has indicated it will decide "in the coming weeks" on preliminary relief. No hearing date for the civil rights coalition suit has been publicly reported.
+
+Note for tracking purposes: the "show your papers" permanent injunction referenced in some searches (League of Women Voters v. Trump, October 31, 2025) was a ruling on a different, earlier voting executive order (EO 14248, "Preserving and Protecting the Integrity of American Elections," signed March 25, 2025). That case is resolved with a permanent injunction; the current litigation addresses EO 14399 (March 31, 2026), a new and distinct order specifically targeting mail ballot mechanics and USPS delivery authority.
+
+**Significance**: The six-months-to-midterms clock makes every week without a preliminary injunction practically significant. Mail voting programs in states with early application windows are approaching the phase where compliance decisions will need to be made, creating pressure to preemptively conform even without any judicial ruling upholding the order.
+
+**What to watch**: Massachusetts court ruling on preliminary injunction (expected "coming weeks"); whether civil rights coalition seeks TRO on an expedited basis; any USPS implementation guidance issued under the order.
+
+**Sources**: [Brennan Center case page — LWV v. Trump (March 2026 EO)](https://www.brennancenter.org/our-work/court-cases/league-women-voters-massachusetts-v-trump-march-2026-mail-voting-executive) · [Votebeat — 23-state suit, April 3, 2026](https://www.votebeat.org/national/2026/04/03/donald-trump-2026-midterm-election-executive-order-state-lawsuit-mail-ballots-josh-shapiro/) · [ACLU — civil rights coalition suit](https://www.aclu.org/press-releases/voting-rights-groups-challenge-executive-order-on-mail-in-ballots-as-illegal-interference-in-elections) · [Democracy Docket — case page](https://www.democracydocket.com/cases/trump-mail-in-voting-executive-order-challenge-lwvma/)
 
 ---
 

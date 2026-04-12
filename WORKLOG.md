@@ -25,6 +25,89 @@
 
 ---
 
+## 2026-04-13 — Session 76 — resistance-research monitoring + off-grid-living water
+
+### Orientation
+- INBOX: UFW firewall status output (not an actionable task — accidental paste). Cleared.
+- BLOCKED: GitHub push still unresolved. All other blocks resolved.
+- Stockbot health check: backend running, cycles logging every minute, `market_open: false` (expected Sunday). Sessions endpoint 404 but cycles confirm all 3 sessions are active. Will fire Monday 9:30 AM ET.
+
+### Tasks Selected
+1. **resistance-research** — April 13 monitoring pass. April 17 White House ballroom deadline is critical.
+2. **off-grid-living** — `03-water.md` deep-dive document (first domain deep-dive).
+
+### resistance-research — April 13 morning monitoring pass COMPLETE
+
+Key developments added to `litigation-tracker-2026.md`:
+
+1. **White House ballroom (CRITICAL — April 17 deadline)**
+   - National Trust filed April 13 response: "no national security emergency" — directly contests D.C. Circuit majority's factual predicate
+   - No SCOTUS emergency application yet as of Sunday AM; window still open
+   - Application would go to Roberts or Kavanaugh as Circuit Justices
+
+2. **Abrego Garcia (April 20 briefing / April 28 hearing)**
+   - Nashville criminal case: Judge Crenshaw "poised to decide at any time" on dismissing human smuggling charges (Blanche's public statements = vindictive prosecution)
+   - If Nashville dismisses, removes admin's strongest argument for dissolving Maryland injunction
+   - DHS maintaining Liberia deportation theory despite Costa Rica confirming willingness
+
+3. **MSPB / Federal Circuit**
+   - Oral argument in Oguntade v. MSPB held April 9, 2026 — awaiting ruling (upgraded from pending-hearing to decided-argument-awaiting-ruling)
+
+4. **CIT tariff / IEEPA**
+   - April 14: CBP status report due (next procedural step)
+   - April 20: Phase 1 IEEPA refund rollout
+   - Section 122 ruling still pending after April 10 panel skepticism
+
+5. **Mail voting EO** — Important clarification: current litigation targets EO 14399 (March 31, 2026); October 2025 "show your papers" injunction was against EO 14248 (different order)
+
+### off-grid-living — 03-water.md COMPLETE
+
+Wrote `projects/off-grid-living/03-water.md` — 850-line technical reference covering:
+- Source selection: wells (depth/cost tables by region and geology), spring development (collection box design, yield math), surface water (intake design), rainwater harvesting (collection formula, seasonal sizing), water rights law by doctrine
+- Pumping: Simple Pump and Bison Pump specs/costs, Grundfos SQFlex solar submersible sizing, 12V DC systems, gravity-fed head formula (0.433 PSI/ft), pump sizing worksheet with livestock demand table
+- Storage: cistern sizing (30-day reserve math), materials comparison table (poly, IBC, ferro-cement, concrete, fiberglass), elevated tank pressure calculations
+- Treatment chain with decision tree by source type: sediment sequential (50→5→1 micron), carbon, UV (sizing by GPM, maintenance schedule), RO (recovery ratios, when it's overkill), distillation, chemical/contaminant decision matrix
+- Distribution: pressure tank sizing/cycling, PEX vs CPVC vs copper freeze-resistance comparison table, frost depths by region, gravity distribution design
+- Water quality testing: annual schedule, DIY vs lab comparison, contaminant matrix by source type
+- Greywater: L2L, branched drain, constructed wetland, legal status by state (AZ most permissive), composting toilet integration costs
+- Emergency: corrected 1 gal/day myth, bleach ratios by concentration, SODIS protocol (6 hr/48 hr, temperature effect), Sawyer vs LifeStraw comparison, nuclear fallout water considerations (I-131 half-life, RO for dissolved radionuclides)
+- Cost tables: component costs and full system estimates by configuration, DIY vs hired tradeoffs
+
+---
+
+## 2026-04-13 — Session 75 — stockbot paper trading
+
+### Orientation
+- INBOX: empty
+- BLOCKED: GitHub push still blocked (no credentials); no new blocks
+- Priority: stockbot — paper trading must be running before Monday market open (9:30 AM ET, 2026-04-14)
+
+### stockbot — paper trading sessions started
+
+- Backend was already running from previous session (PID 236768, port 8000)
+- Health check: `{"status":"ok"}` ✓
+- Alpaca heartbeat: reachable, account PA38Z548DIRR, trading unblocked ✓
+- Alpaca paper account: $99,335.35 cash, $99,335.35 portfolio, ACTIVE ✓
+
+Started 3 paper trading sessions per PAPER_TRADING_MONDAY.md plan:
+
+| Session ID | Strategy | Tickers | Status |
+|---|---|---|---|
+| 8fd082bf9782737b | momentum | SPY, QQQ, MSFT | running |
+| eb4bcbab870baa6b | rsi_mean_reversion | AAPL, NVDA | running |
+| d6b116ddee054524 | sma_crossover | AMZN, SPY | running |
+
+- All 3 sessions confirmed `status: running`, `error: null`
+- Cycle logs returning `market_open: false` (expected — Sunday, market closed)
+- Web frontend: `http://127.0.0.1:8000/` returns 200, VITE_API_KEY confirmed matching backend
+- Sessions will begin active trading at 9:30 AM ET Monday without any manual intervention
+
+### Status: Complete
+- Discord notification sent to #stockbot channel
+- Sessions will auto-run through the market week
+
+---
+
 ## 2026-04-12 — Session 74 — resistance-research + seedwarden + off-grid-living
 
 ### Orientation

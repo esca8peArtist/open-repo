@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-12 (Session 74)
+> **Last updated by**: orchestrator on 2026-04-13 (Session 76)
 
 ---
 
@@ -29,7 +29,7 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Democratic renewal proposal at 22 domains / 2,544 lines / 13 feedback loops. Cross-domain quality pass COMPLETE. **Publication-ready format COMPLETE and CURRENT** — `published/` directory updated in Session 70 to include Sessions 68-69 content (Domains 10-15 fiscal estimates, subsections 10f/11f/14f; published copy now 2,595 lines). All 22 domains at full evidence depth. Session 74 monitoring pass: 4 new developments — Abrego Garcia v. Noem DOJ/Xinis confrontation (April 20 briefing, April 28 hearing); NPR/PBS defunding EO permanent injunction; MSPB immigration judges ruling (Federal Circuit appeal, Schedule F civil-service implications); CIT Section 122 panel skepticism detailed. Next: user review of published versions before external sharing.
+**Current focus**: Democratic renewal proposal at 22 domains / 2,544 lines / 13 feedback loops. Cross-domain quality pass COMPLETE. **Publication-ready format COMPLETE and CURRENT** — `published/` directory updated in Session 70 to include Sessions 68-69 content (Domains 10-15 fiscal estimates, subsections 10f/11f/14f; published copy now 2,595 lines). All 22 domains at full evidence depth. Session 76 monitoring pass: White House ballroom (April 17 deadline — National Trust "no national security emergency" filing, SCOTUS application window open); Abrego Garcia (Nashville case dismissal possible — removes admin's strongest argument); MSPB oral argument held April 9 awaiting ruling; CIT April 14 CBP status report due; mail voting EO clarification (EO 14399 vs EO 14248). Next: April 17 ballroom deadline monitoring pass critical.
 **Blocked on**: —
 **Notes**: Ongoing research and monitoring project. Existing files cover ICE detention, litigation tracking, case studies, civic action. When no specific task is queued, extend existing threads, find new angles, and monitor developments. Democratic renewal proposal is comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
 
@@ -41,7 +41,7 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading ready for Monday market open (2026-04-14). User request [2026-04-12]: get paper trading up and running with the best strategies, verify web UI is connected. Backend confirmed working (Alpaca reachable, account PA38Z548DIRR, heartbeat OK). Task: audit web UI ↔ backend integration, select 2-3 strongest strategies (SMA crossover, momentum, RSI mean-reversion), configure them, start sessions, verify cycle logs. iOS app deferred until paper trading is stable.
+**Current focus**: Paper trading LIVE as of 2026-04-13. 3 sessions running: momentum (SPY/QQQ/MSFT), rsi_mean_reversion (AAPL/NVDA), sma_crossover (AMZN/SPY). Sessions will fire first trades Monday 9:30 AM ET. Monitor via `http://127.0.0.1:8000` Trading page or curl `/api/paper-trading/cycle-log`. Next session: review Monday cycle logs and check for errors. iOS app deferred until paper trading stable.
 **Blocked on**: —
 **Notes**: Web app is in good shape. Model creation and most optimisation is operational. Paper trading has just started but has had issues — this is the current priority. iOS app is out of scope until paper trading is solid. All features must work across ALL model types (stock, options, rule-based, ensemble, MTF) — do not implement something for one type only.
 
@@ -89,7 +89,7 @@
 **Status**: Active — research phase
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). Session 74 delivered: site selection, shelter, water, food production, food storage, energy, heating/cooling, waste/sanitation, medicine, tools, communications, security, community, finances, disaster scenarios (nuclear fallout protocols included), and skills. Next: deep-dive documents starting with `03-water.md` and `06-energy-power.md`.
+**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). `03-water.md` complete (~850 lines, Session 76) — full technical reference: source selection (well/spring/rainwater/surface), water rights law, pumping systems, cistern storage, treatment decision tree, distribution, greywater reuse, emergency protocols, nuclear fallout water, cost tables. Next: `06-energy-power.md` (solar sizing, battery chemistry, micro-hydro).
 **Blocked on**: —
 **Notes**: This is a planning and research project, not a software build. Practical and actionable plans over theory. Include real costs, sourcing, and skill requirements where possible. Nuclear disaster scenario is in scope — treat it seriously.
 
