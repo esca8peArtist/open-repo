@@ -25,6 +25,42 @@
 
 ---
 
+## 2026-04-12 — Session 73 — open-source-rideshare + resistance-research
+
+### Orientation
+- INBOX: empty
+- BLOCKED: GitHub push still blocked (no credentials); others resolved
+- Stockbot: paper trading ready for Monday — no action today (market closed)
+- Task 1: open-source-rideshare Flutter notification routing
+- Task 2: resistance-research monitoring pass (parallel, delegated to agent)
+
+### open-source-rideshare — Flutter FCM notification tap routing
+- Discovery: both Flutter apps already had complete FCM service (initialize + register + unregister) wired in main.dart + auth_provider.dart. The gap was `_handleNotificationTap` was a debugPrint stub.
+- Discovery: root `.gitignore` had `lib/` (Python rule) blocking Flutter lib/ directories from git. Fixed by adding `!projects/**/lib/` and `!projects/**/lib/**` override rules.
+- Changes (rider_app):
+  - `lib/router.dart`: added `navigatorKey = GlobalKey<NavigatorState>()`, passed to GoRouter
+  - `lib/services/notification_service.dart`: added `consumePendingDeepLink()`, implemented `_handleNotificationTap` and `_routeFromMessage` — routes ride_matched/driver_en_route/driver_arrived → /ride/:id; ride_completed → /ride/:id/rate; ride_cancelled → /; payment_received/fare_split_request → /ride/:id or /history
+  - `lib/screens/home_screen.dart`: added `addPostFrameCallback` to consume pending deep link from terminated-app tap
+- Changes (driver_app): same pattern, driver-specific routing:
+  - ride_matched → /ride/:id; background_check_* → /profile; payout_completed/payment_received → /earnings; ride_completed/rating_received → /history
+- Committed: 45 files (Flutter apps first-time commit + gitignore fix), branch feature/background-checks-firebase-push
+- Backend tests: 1,817 passing, 0 regressions
+
+### resistance-research — April 12 second monitoring pass (agent)
+- Agent found 6 significant developments not in previous pass:
+  1. White House ballroom D.C. Circuit remand (April 12) — majority (Millett/Garcia) remands to Judge Leon for fact-finding before stay issues; Rao dissents. April 17 deadline likely forces SCOTUS shadow-docket application.
+  2. DHS 48-day partial shutdown (Feb 14–early Apr) — ended via Trump executive memo + CR through May 22. Fund-redirection authority legally contested under ICA.
+  3. Mail voting EO — second lawsuit filed by Lawyers' Committee + NAACP + Common Cause + Black Voters Matter (adds 15th Amendment theory). No TRO yet.
+  4. Schedule Policy/Career (Schedule F) final rule took effect March 9 — strips civil-service protections from ~50,000 employees, moves whistleblower retaliation to agency level.
+  5. No Kings movement electoral pivot — Our Revolution April 6 town hall framed next phase as voter registration + 2026 midterm organizing; June 14 national mobilization date; Eyes on ICE civilian monitoring program (200,000+ viewers).
+  6. Ramirez Ovando v. Noem — Tenth Circuit appeal filed (docket 26-1027); jurisdictional squeeze risk if circuit stays injunction while compliance ruling is pending.
+- File updated: `projects/resistance-research/litigation-tracker-2026.md`
+- Committed alongside Flutter changes
+
+### Status: Complete
+
+---
+
 ## 2026-04-12 — open-source-rideshare — Background checks + FCM push notifications
 - Task 1: Checkr background check integration
   - `app/models/background_check.py` — BackgroundCheck model (6-status enum, Checkr IDs, FK to driver_profile)
@@ -43,6 +79,55 @@
 - Full suite: 1,708 → 1,809 passing, 0 regressions
 - Branch: feature/background-checks-firebase-push
 - Status: Complete, PR pending review
+
+---
+
+## 2026-04-12 22:30 — stockbot — Session 72: Paper trading audit + Monday prep
+
+### Inbox processing
+- User request: elevate stockbot to #1 priority, get paper trading working with best strategies for Monday market open (2026-04-14 9:30 AM ET)
+- Updated PROJECTS.md priority order: stockbot is now #1
+- Cleared inbox item after processing
+
+### Backend verification (pre-agent)
+- Backend starts cleanly via uvicorn — no import errors
+- Alpaca reachable, account PA38Z548DIRR, paper mode confirmed
+- `/api/trading/heartbeat` → 200 OK with valid JSON
+- `/api/paper-trading/status` → 200 OK, empty sessions
+- Built-in strategies confirmed: sma_crossover, rsi_mean_reversion, momentum, mean_reversion
+
+### Bugs found and fixed (via stockbot agent)
+1. **Web UI auth broken (critical)**: `web/.env` was missing — `VITE_API_KEY` compiled as empty string, all frontend API calls returned 401. Fixed: created `web/.env` with matching key, rebuilt bundle.
+2. **`vite-env.d.ts` type gap**: `VITE_API_KEY` not declared. Fixed.
+3. **`ib_insync` crash on every cycle**: `src/brokers/__init__.py` imported IBKRBroker at module level. In ThreadPoolExecutor (used by trading_session), `asyncio.get_event_loop()` raised RuntimeError. Every cycle failed immediately. Fixed: made IBKR/TDA imports lazy in both `__init__.py` and `broker_factory.py`.
+4. **Cycle-log endpoint returned empty**: `GET /api/paper-trading/cycle-log` read from deprecated `app.state.active_trading_session` instead of `paper_trading_sessions` dict. Fixed to aggregate across all sessions.
+
+### End-to-end verification
+- Started backend, POSTed momentum session with SPY/QQQ/AAPL
+- Polled status: `running`, `error: null`, `market_open: false` (expected, Sunday)
+- Fetched cycle-log: populated correctly
+- Stopped session cleanly
+
+### Strategy recommendations for Monday
+| Strategy | Tickers | Why |
+|---|---|---|
+| momentum | SPY, QQQ, MSFT | Trend-following on 21-day return, best for liquid ETFs |
+| rsi_mean_reversion | AAPL, NVDA | RSI-14 counter-trend, rare triggers, good complement |
+| sma_crossover | AMZN, SPY | 10/50 SMA cross, very low frequency, classic confirmation |
+
+### Documentation
+- Created `PAPER_TRADING_MONDAY.md` — startup procedure, strategy choices, exact curl commands
+
+### Files modified
+- `web/.env` (created, gitignored)
+- `web/src/vite-env.d.ts`
+- `web/dist/` (rebuilt)
+- `src/brokers/__init__.py`
+- `src/brokers/broker_factory.py`
+- `src/api/dashboard_api.py` (cycle-log endpoint fix)
+- `PAPER_TRADING_MONDAY.md` (created)
+
+### Status: Complete — paper trading ready for Monday
 
 ---
 

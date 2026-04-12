@@ -453,3 +453,84 @@ These three patterns together suggest that for the next phase of litigation trac
 **4. The data exfiltration risk has materialized.** The AFSCME v. SSA litigation warned that DOGE access to federal databases would result in unauthorized use. The March 2026 whistleblower complaint — alleging that a DOGE associate copied the NUMIDENT database (SSNs, birth data, parents' names for nearly every living American) onto a thumb drive and planned to take it to a contractor job — is exactly the harm the original plaintiffs predicted. Combined with the earlier revelation that DOGE shared SSA data with an election-results advocacy group, and the D.C. District Court's ruling that Treasury data sharing is unreviewable under the APA, the picture is of a federal data protection regime that cannot keep pace with executive-branch access grants. The litigation is building the evidentiary record, but the courts are — so far — declining to act on it quickly enough to prevent the harms from compounding.
 
 **5. Consent decree defiance is a new front.** The Castañon Nava case in Chicago — where DHS unilaterally declared a consent decree terminated by internal memo — represents a challenge to judicial authority that is distinct from non-compliance with injunctions. Injunctions are new orders; consent decrees are negotiated agreements entered as court orders. If the government can walk away from them by memo, the entire framework of court-supervised institutional reform (which underpins desegregation orders, prison reform, police reform, and environmental cleanup) is at risk. This deserves its own tracking thread going forward.
+
+---
+
+## April 12, 2026 — Second Monitoring Pass (Later in the Day)
+
+*Conducted April 12, 2026. This pass captures developments that broke or became clearer after the earlier April 12 pass was written.*
+
+---
+
+### 6.1 Update — White House Ballroom: D.C. Circuit Remands for Fact-Finding (April 12)
+
+- **Development**: On the morning of April 12, the D.C. Circuit (2-1, Millett and Garcia in the majority, Rao dissenting) issued a further order in the ballroom case that goes beyond the April 11 stay. The court extended the administrative stay to April 17 — as previously reported — but also **remanded the case to the district court for fact-finding and clarification** before the D.C. Circuit can fully rule on the stay question.
+- **Why the remand matters**: The court said it could not "fairly determine, on this hurried record, whether and to what extent" the security exemption in Judge Leon's preliminary injunction would accommodate the administration's irreparable-harm arguments. Specifically, the court identified "serious factual questions" about whether above-ground construction is actually necessary for any security infrastructure, given prior government statements that below-ground and above-ground construction phases were independent and separable. This is a significant move: rather than simply granting the stay (as Rao wanted) or denying it, the majority is requiring the government to substantiate its national-security argument with actual evidence before any stay can issue.
+- **Practical consequence**: The April 17 deadline now functions as a prompt for either (a) the district court to hold a rapid hearing on the security facts and report back, or (b) the administration to seek emergency Supreme Court intervention on the shadow docket, bypassing the fact-finding entirely. Option (b) is the more likely path given the administration's pattern throughout 2025-2026. If the Supreme Court grants an emergency stay without the D.C. Circuit's factual record, it will be another instance of the shadow docket overriding merits development.
+- **Sources**: [RedState/Smoosie summary of D.C. Circuit April 12 order](https://redstate.com/smoosieq/2026/04/12/new-twist-dc-circuit-kicks-white-house-ballroom-case-back-to-lower-court-over-security-questions-n2201210) · [NPR, April 11 background](https://www.npr.org/2026/04/11/nx-s1-5782084/dc-appeals-court-trump-ballroom-bunker)
+
+---
+
+### 6.3 DHS Partial Government Shutdown — Status as of April 12
+
+- **Background**: A partial government shutdown affecting the Department of Homeland Security began February 14, 2026, after appropriations for DHS lapsed. For approximately 48 days, tens of thousands of DHS employees — including TSA officers, Coast Guard civilians, and CISA staff — worked without pay. ICE and CBP were funded separately; the shutdown was specifically a dispute over the remainder of DHS.
+- **Trump memo (April 4)**: Unable to secure a legislative solution through a deadlocked House, Trump signed a memorandum directing DHS Secretary Mullin and OMB Director Vought to identify available funds with a "reasonable and logical nexus" to homeland security operations and use them to pay employees retroactively. DHS employees began receiving paychecks on approximately April 10-16, funded through repurposed appropriations from the "One Big Beautiful Bill Act."
+- **Legislative resolution in progress**: Congress eventually moved on a two-track approach: (1) a continuing resolution funding most of DHS through May 22, 2026, except ICE and CBP; (2) a separate reconciliation track for ICE/CBP funding. Speaker Johnson had initially rejected a Senate deal (which excluded ICE/CBP from the CR) but later agreed to move the Senate bill. The CR passed and funds DHS through May 22, ending the shutdown that began February 14.
+- **Why it matters for democratic accountability**: Three points. First, the president's use of executive memo to redirect appropriated funds and pay employees is legally contested — Congress holds the appropriations power, and directing funds toward purposes not explicitly appropriated is a potential Impoundment Control Act and Antideficiency Act issue. Second, the willingness to let DHS workers go without pay for 48 days while maintaining ICE/CBP funding intact reveals how enforcement priorities shaped the shutdown's structure and resolution. Third, the May 22 expiration means the shutdown standoff will recur in six weeks.
+- **Sources**: [Federal News Network, April 2026](https://federalnewsnetwork.com/government-shutdown/2026/04/trump-says-hell-pay-all-dhs-workers-after-house-again-fails-end-shutdown/) · [CNN, April 2, 2026](https://www.cnn.com/2026/04/02/politics/dhs-senate-house-bill) · [Government Executive on payment timeline](https://www.govexec.com/pay-benefits/2026/04/dhs-employees-begin-receiving-paychecks-week/412706/) · [NPR on congressional deal, April 1, 2026](https://www.npr.org/2026/04/01/nx-s1-5770566/dhs-shutdown-congress-republicans)
+
+---
+
+### 5.2 Mail Voting EO — Civil Rights Coalition Suit Filed; No Injunction Yet as of April 12
+
+- **Update**: In addition to the 23-state suit filed April 3 in Massachusetts (already tracked at 5.1), a second lawsuit has been filed by a coalition of civil rights organizations — including the Lawyers' Committee for Civil Rights Under Law, the NAACP, Common Cause, and Black Voters Matter Fund. That coalition argues the order's practical effect will fall disproportionately on Black voters who rely heavily on mail voting in several swing states, and raises a Fifteenth Amendment dimension alongside the Tenth Amendment and Elections Clause arguments in the state suit.
+- **Preliminary injunction status**: As of April 12, no court has issued a TRO or preliminary injunction blocking the order. The Massachusetts court has indicated it will decide in "the coming weeks" whether to issue preliminary relief. The absence of a TRO means the order remains technically operative, though its implementation depends on USPS and agency compliance mechanics that have not yet been publicly described in detail.
+- **Why this matters now**: The 2026 midterms are approximately six months away. Mail ballot application processes typically begin four to six months before election day in many states. If no injunction issues within the next four to eight weeks, states will face genuine uncertainty about how to build their mail voting programs — with the risk that some will comply preemptively to protect federal funding, even before any court has upheld the order.
+- **Sources**: [Votebeat, April 3, 2026](https://www.votebeat.org/national/2026/04/03/donald-trump-2026-midterm-election-executive-order-state-lawsuit-mail-ballots-josh-shapiro/) · [CBS News](https://www.cbsnews.com/news/trump-mail-in-voting-lawsuit/) · [NY AG press release](https://ag.ny.gov/press-release/2026/attorney-general-james-challenges-unconstitutional-executive-order-threatening)
+
+---
+
+### Category 8 (New): Civil Service and Institutional Capacity
+
+### 8.1 Schedule Policy/Career (formerly Schedule F) — Final Rule Takes Effect
+
+- **What happened**: OPM published a final rule in February 2026 reclassifying approximately 50,000 career federal employees in "policy-influencing" roles into a new category called "Schedule Policy/Career." The rule took effect March 9, 2026. Employees reclassified into this category lose the due process protections that career civil servants have held since the Pendleton Act era: the right to advance notice of removal, the right to appeal disciplinary actions to the Merit Systems Protection Board, and — in a significant departure from prior Schedule F proposals — the agency, not the independent Office of Special Counsel, is now responsible for investigating whistleblower retaliation.
+- **Scale**: 50,000 positions is the OPM estimate; some analysts put the actual number higher once agency-level reclassification is complete. The public comment period produced over 40,000 comments, approximately 94% opposed.
+- **Legal challenge expected**: Federal unions (American Federation of Government Employees and others) have signaled imminent lawsuits. No ruling has been issued yet as of April 12.
+- **Why it matters**: Schedule Policy/Career is the long-run threat to the civil service that underlies most of the individual executive actions tracked elsewhere in this document. ICE agents who ignore court orders, DOGE personnel who access unauthorized systems, and SSA officials who provide false information to courts all operate within an institutional environment. If the career officials who provide institutional memory, legal compliance functions, and pushback against unlawful directives can be dismissed without appeal, the institutional constraints on executive overreach become even weaker. The whistleblower-retaliation change is particularly consequential: it means that the person who might alert the Inspector General, Congress, or the press to the kind of conduct documented in the SSA/DOGE cases would be appealing to the same agency head who ordered the conduct.
+- **Sources**: [Federal News Network, February 2026](https://federalnewsnetwork.com/workforce/2026/02/trump-administration-advances-plan-to-strip-job-protections-from-career-federal-employees/) · [Government Executive on final rule](https://www.govexec.com/workforce/2026/02/trump-admin-moves-finalize-return-schedule-f/411239/) · [Partnership for Public Service explainer](https://ourpublicservice.org/blog/schedule-policy-career-webinar-recap-schedule-f-fedsupport-explainer-series/)
+
+---
+
+### Category 9 (New): Civic Mobilization — No Kings Post-March 28 Phase
+
+### 9.1 No Kings Movement — Electoral and Organizing Pivot
+
+- **What happened after March 28**: The March 28 No Kings protests (8-9 million participants, documented in the previous pass as the largest protest in U.S. history) triggered an immediate organizing follow-up. Within days, over 3,000 local hosts held "What's Next" debrief meetings. The No Kings Coalition has announced its next major mobilization: **June 14, 2026** — Flag Day and President Trump's birthday — coinciding with the June 2025 No Kings Day anniversary.
+- **Our Revolution town hall (April 6)**: A national "Organize to Win" town hall was hosted on April 6, specifically framing the movement's next phase as electoral: converting protest participants into 2026 midterm voters, canvassers, and donors. This is the most explicit statement to date of the coalition's theory of change — protest as on-ramp to electoral participation.
+- **Eyes on ICE program**: The No Kings Coalition launched a nationwide virtual training program called "Eyes on ICE," designed to train civilians to safely monitor and document immigration enforcement actions. The first training drew over 200,000 viewers. Additional trainings are ongoing. This is a civilian documentation and accountability infrastructure being built in real time, directly responding to the documented pattern of warrantless arrests tracked in Categories 1 and 2 of this tracker.
+- **Why this matters**: The June 14 date is significant for two reasons: (1) it extends the mobilization cycle to roughly quarterly, maintaining pressure between now and the November 2026 elections; (2) it lands during primary season in several competitive states. Whether the coalition can maintain the March 28 turnout level, and whether it can convert that energy into voter registration and electoral organizing, is the central question for the civic resistance in 2026. Historical precedent (the Tea Party 2009-2010 cycle, the Women's March 2017-2018 cycle) suggests that sustained local organizing infrastructure matters more than peak turnout at this stage.
+- **Sources**: [No Kings Coalition press release via ACLU](https://www.aclu.org/press-releases/no-kings-coalition-responds-to-escalating-brutality) · [Stateline, March 26, 2026](https://stateline.org/2026/03/26/as-no-kings-protests-grow-a-bigger-question-looms-what-comes-next/) · [Lassen News / AP on electoral pivot](https://www.lassennews.com/after-no-kings-mobilizations-progressives-turn-to-next-phase-converting-mass-protest-into-electoral-power) · [PBS on protest history](https://www.pbs.org/newshour/classroom/daily-news-lessons/2026/03/millions-turn-out-nationwide-for-no-kings-protests-against-trump-administration)
+
+---
+
+### Watching: Ramirez Ovando v. Noem — Ruling on Post-Injunction Compliance Still Pending
+
+- **Status as of April 12**: No ruling has issued from Judge Jackson following the March 10-11 evidentiary compliance hearing. The government has also signaled it will appeal the underlying preliminary injunction to the Tenth Circuit (docket: 26-1027). The combination of a pending district court compliance ruling and an active Tenth Circuit appeal creates potential jurisdictional complexity: if the Tenth Circuit grants a stay of the preliminary injunction while the compliance ruling is pending, the district court's contempt authority over conduct that occurred while the injunction was operative remains — but the prospective compliance obligation evaporates. This is a maneuver worth watching.
+- **Sources**: [ACLU-CO case page](https://www.aclu-co.org/cases/ramirez-ovando-et-al-v-noem-et-al/) · [Justia Tenth Circuit docket 26-1027](https://dockets.justia.com/docket/circuit-courts/ca10/26-1027)
+
+---
+
+## Pending Deadlines as of April 12, 2026
+
+| Date | Case / Event | What to Watch |
+|---|---|---|
+| April 17 | White House Ballroom | D.C. Circuit stay expires; administration will likely seek SCOTUS emergency stay or district court will hold security fact-finding hearing |
+| April 17+ | White House Ballroom | If SCOTUS shadow-docket application filed, watch whether it is granted without full briefing |
+| Weeks | Mail Voting EO (5.1/5.2) | Preliminary injunction decision expected in Massachusetts; no TRO yet |
+| May 22 | DHS Funding CR | Continuing resolution expires; another shutdown/funding standoff possible |
+| June 2026 | Trump v. Barbara | Decision expected before end of Court's term (late June); birthright citizenship |
+| June 14 | No Kings | Next national mobilization day |
+| TBD | Ramirez Ovando | District court compliance ruling; Tenth Circuit appeal on underlying injunction |
+| TBD | CIT tariff case | Three-judge panel ruling on 10% global tariff (argument held April 10) |
+| TBD | Schedule Policy/Career | Federal union lawsuit challenge expected; no filing confirmed yet |

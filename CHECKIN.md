@@ -9,66 +9,108 @@
 ## Since Last Check-in
 
 **Period**: April 12, 2026
-**Sessions run**: 71
+**Sessions run**: 73
+
+### Accomplished (Session 73)
+
+#### open-source-rideshare — Flutter FCM notification routing
+
+Both Flutter apps now have full notification tap routing. When a user taps a push notification:
+
+**Rider app routing:**
+- `ride_matched`, `driver_en_route`, `driver_arrived` → `/ride/:id` (RideTrackingScreen)
+- `ride_completed` → `/ride/:id/rate` (RideRatingScreen)
+- `ride_cancelled` → `/` (HomeScreen)
+- `payment_received`, `fare_split_request` → `/ride/:id` or `/history`
+
+**Driver app routing:**
+- `ride_matched` → `/ride/:id` (ActiveRideScreen)
+- `background_check_approved`, `background_check_action_required` → `/profile`
+- `payout_completed`, `payment_received` → `/earnings`
+- `ride_completed`, `rating_received` → `/history`
+
+Terminated-app taps are handled via `consumePendingDeepLink()` called in `HomeScreen.initState`.
+
+Also: **fixed a `.gitignore` bug** — root `lib/` rule was blocking the Flutter `lib/` directories from being tracked. Added `!projects/**/lib/` override. Flutter apps are now committed (45 files, first-time commit).
+
+Commit: `6f4f946` on `feature/background-checks-firebase-push`. Branch now has 4 commits beyond master. Backend: 1,817 tests passing.
+
+#### resistance-research — April 12 second monitoring pass
+
+6 significant developments captured (not in first pass):
+1. **White House ballroom remand (April 12)** — D.C. Circuit majority sends case back to Judge Leon for fact-finding; April 17 deadline likely forces SCOTUS shadow-docket application
+2. **DHS shutdown resolved** — 48-day partial shutdown ended via executive memo + CR through May 22; fund-redirection authority contested under ICA
+3. **Mail voting EO — second lawsuit** — Lawyers' Committee + NAACP + Common Cause + Black Voters Matter adds 15th Amendment theory; no TRO yet
+4. **Schedule F (Schedule Policy/Career) in effect** — March 9, strips civil-service protections from ~50,000 employees
+5. **No Kings electoral pivot** — June 14 next national mobilization; Eyes on ICE civilian monitoring program building
+6. **Ramirez Ovando — Tenth Circuit appeal filed** — jurisdictional squeeze risk
+
+---
+
+### Accomplished (Session 72) — STOCKBOT PAPER TRADING READY FOR MONDAY
+
+**Stockbot is now ready for paper trading at Monday's market open (9:30 AM ET, April 14).**
+
+#### Bugs found and fixed
+
+1. **Web UI auth broken (critical)** — Every frontend API call was returning HTTP 401. Root cause: `web/.env` was missing, so `VITE_API_KEY` compiled as an empty string in the React bundle. Fixed: created `web/.env` with the correct API key, rebuilt the frontend bundle.
+
+2. **`ib_insync` crash on every trading cycle (critical)** — `src/brokers/__init__.py` imported `IBKRBroker` at module level. When `TradingSession` ran its trade cycle in a `ThreadPoolExecutor` thread, Python processed the brokers package, `asyncio.get_event_loop()` raised `RuntimeError` (threads have no default event loop), and every single cycle failed immediately. Fixed: made IBKR/TDA imports lazy in both `src/brokers/__init__.py` and `src/brokers/broker_factory.py`.
+
+3. **Cycle log endpoint returned empty** — `GET /api/paper-trading/cycle-log` was reading from the deprecated `app.state.active_trading_session` instead of the current `app.state.paper_trading_sessions` dict. Fixed to aggregate across all running sessions.
+
+#### End-to-end verification
+- Started backend, started a momentum session (SPY/QQQ/AAPL), polled status: `running`, `error: null`, `market_open: false` (expected on Sunday)
+- Cycle logs returned correctly
+- Session stopped cleanly
+
+#### Strategy choices for Monday
+| Strategy | Tickers | Logic |
+|---|---|---|
+| `momentum` | SPY, QQQ, MSFT | 21-day return threshold — trend-following, best for liquid ETFs |
+| `rsi_mean_reversion` | AAPL, NVDA | RSI-14 — counter-trend, rare triggers, good complement |
+| `sma_crossover` | AMZN, SPY | 10/50 SMA cross — classic confirmation, very low frequency |
+
+See `PAPER_TRADING_MONDAY.md` in the stockbot directory for exact startup commands.
+
+---
 
 ### Accomplished (Session 71)
 
 1. **Resistance-research — April 12 monitoring pass** (commit `94589a0`):
-   Four significant developments documented in `litigation-tracker-2026.md` and `us-democracy-crisis-analysis-2026.md`:
-   - **Gonzalez v. CBP (9th Circuit)**: Judge Thurston found CBP violated her injunction in Sacramento Home Depot sweep — "eleven, virtually identical" pre-printed forms, no individualized assessment, U.S. citizen arrested. 3rd circuit with confirmed post-injunction noncompliance simultaneously (joining D.C., 10th).
-   - **Mail voting executive order + 23-state suit**: Trump March 31 order directs USPS not to deliver mail ballots to anyone not on DHS/SSA pre-approved list. 23 states + D.C. filed in Massachusetts on April 3. First time a federal agency placed directly in ballot delivery chain — single executive chokepoint.
-   - **White House ballroom D.C. Circuit stay (April 11)**: 2-1 stay of Judge Leon's order halting $300M+ construction. National security framing. Stay expires April 17 — SCOTUS shadow-docket application imminent. New Appropriations Clause category added to tracker.
-   - **CIT tariff hearing (April 10)**: Three-judge panel heard argument on replacement 10% global tariff. No ruling yet.
-   - Resistance note: March 28 No Kings protests — estimated 8-9M participants, 3,300+ events — largest single-day protest in recorded U.S. history by organizer count.
+   - Gonzalez v. CBP: compliance violation confirmed (Sacramento Home Depot sweep, pre-printed forms, U.S. citizen arrested)
+   - Mail voting EO + 23-state suit: USPS blocking mail ballots for anyone not on DHS/SSA list
+   - White House ballroom D.C. Circuit stay — expires April 17, SCOTUS shadow-docket imminent
+   - CIT tariff hearing (April 10): no ruling yet
+   - No Kings protests: 8-9M participants, largest in U.S. history
 
-2. **Open-source-rideshare — Two new features committed** to `feature/background-checks-firebase-push`:
-
-   **Live driver ETA push to rider via WebSocket** (commit `2902f66`):
-   - When driver sends `location_update` with `active_ride_id`, `active_rider_id`, `pickup_lat`, `pickup_lng`, backend calls `estimate_driver_eta` and pushes `driver_eta` event to rider's WebSocket
-   - Added `notify_driver_eta` helper function
-   - Best-effort (exceptions silently swallowed — can't break location tracking)
-   - 2 new tests (1,809 → 1,811)
-
-   **Background check result notifications** (commit `328a37e`):
-   - CLEAR → push + SMS: "Background check approved — complete requirements to start driving"
-   - CONSIDER/SUSPENDED → push + SMS: "Background check requires attention — log in for details"
-   - CANCELLED/DISPUTE/PENDING → silently skipped (admin handles those)
-   - Added `BACKGROUND_CHECK_APPROVED` and `BACKGROUND_CHECK_ACTION_REQUIRED` to `NotificationType`
-   - Guards: user not found → no crash
-   - 6 new tests (1,811 → 1,817)
-
-3. **BLOCKED.md updated**: Added GitHub push block (no HTTPS credentials or SSH key on Pi).
+2. **Open-source-rideshare**: Live driver ETA push + background check notifications (8 new tests, 1,809 → 1,817). Branch: `feature/background-checks-firebase-push`.
 
 ### In Progress
-- **Open-source-rideshare**: `feature/background-checks-firebase-push` has 3 commits beyond `master` (Checkr+FCM, ETA push, notification trigger). Push to GitHub blocked — see item below.
+- **Stockbot**: 3 paper trading sessions ready to start Monday morning. Backend + web UI verified working.
+- **Open-source-rideshare**: `feature/background-checks-firebase-push` has **4 commits** beyond `master` (Flutter apps now committed). Push to GitHub still blocked — see below.
 - **Seedwarden**: 19 products ready. PDF mockup images still needed.
-- **Stockbot**: Venv rebuilt (ta library), ready to resume — Python 3.12 block resolved but venv rebuild still user-controlled.
 
 ### Needs Your Input
 
+- [ ] **Start paper trading Monday morning**: Backend must be running before market open (9:30 AM ET). See `projects/stockbot/PAPER_TRADING_MONDAY.md` for exact commands. Do you want me to set up a cron job to auto-start it?
 - [ ] **GitHub push auth on Pi** — choose one option to enable push:
   - (a) `git config --global credential.helper store` then `git push` (enter username + PAT once, stored forever)
   - (b) `ssh-keygen -t ed25519` then add `~/.ssh/id_ed25519.pub` to GitHub settings
-  - (c) `git remote set-url origin git@github.com:SuperClaude-Org/SuperClaude_Framework.git` + SSH key above
-- [ ] **Open-source-rideshare — merge feature branch** (once push works):
-  ```
-  git checkout master && git merge feature/background-checks-firebase-push && git push origin master
-  ```
-  Or push the feature branch and open a PR on GitHub. Optional deps: `aiohttp`, `firebase-admin` (graceful without them).
-- [ ] **Resistance-research — review published/ versions**: `projects/resistance-research/published/` is current through Session 69. Worth a read before sharing externally.
-- [x] **Git identity** — resolved (thorn / thorn@local).
-- [x] **Workout — comprehensive plan complete**: All three equipment tiers, multiple frequencies. No further input needed unless you want adjustments.
-- [x] **Stockbot venv**: pandas-ta replaced with `ta` library. Venv rebuilt.
+- [ ] **Open-source-rideshare — merge feature branch** (once push works): push `feature/background-checks-firebase-push` and open a PR
+- [ ] **Resistance-research — review published/ versions**: `projects/resistance-research/published/` is current. Worth a read before sharing externally.
 - [ ] **Open-source-rideshare — Docker needed for integration tests** (1,817 unit tests pass; 94 integration tests need Docker/PostgreSQL).
 - [ ] **Seedwarden — mockup images**: #1 Etsy conversion blocker. Canva or mockup generator?
-- [ ] **Seedwarden — apartment-growing-complete-guide.md**: Standalone premium ($22-25), merge, or archive?
 - [ ] **Discord webhook URL**: For session completion notifications.
+- [x] **Git identity** — resolved (thorn / thorn@local).
+- [x] **Workout — comprehensive plan complete**.
+- [x] **Stockbot venv**: rebuilt with `ta` library.
 
 ### Suggested Priorities for Next Session
-1. **Open-source-rideshare** — Flutter app FCM integration (wire device token registration into both rider + driver apps); or insurance/TNC compliance API scaffold.
-2. **Resistance-research** — Monitoring will auto-run at session start. The mail voting order + 23-state lawsuit warrants deeper analysis if you want it.
-3. **Stockbot** — Paper trading stability investigation (current focus per PROJECTS.md).
-4. **Seedwarden** — PDF regeneration and mockup images when time allows.
+1. **Stockbot** — After Monday open (April 14): monitor paper trading sessions, review first cycle logs, check for errors.
+2. **Open-source-rideshare** — Push `feature/background-checks-firebase-push` once GitHub auth is resolved (4 commits ready). Then open PR.
+3. **Resistance-research** — Monitoring pass (ongoing); published/ copy worth reviewing for external sharing.
+4. **Seedwarden** — PDF mockup images when ready.
 
 ---
 
@@ -80,6 +122,9 @@
 ---
 
 ## History
+
+### April 12, 2026 (Session 72)
+- Stockbot: Paper trading ready for Monday. Fixed 3 critical bugs: (1) web UI auth broken — missing `web/.env`, frontend compiled with empty API key, all calls 401; (2) `ib_insync` crash on every trading cycle due to `asyncio.get_event_loop()` in ThreadPoolExecutor thread; (3) cycle-log endpoint read from deprecated session field. End-to-end verified. Strategy choices: momentum/SPY,QQQ,MSFT + rsi_mean_reversion/AAPL,NVDA + sma_crossover/AMZN,SPY.
 
 ### April 12, 2026 (Session 71)
 - Resistance-research: April 12 monitoring — 4 developments added (Gonzalez v. CBP Sacramento compliance violation; mail voting EO + 23-state suit; White House ballroom D.C. Circuit stay; CIT tariff hearing). March 28 No Kings protests: 8-9M, largest in U.S. history.

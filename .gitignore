@@ -12,6 +12,10 @@ eggs/
 .eggs/
 lib/
 lib64/
+
+# Flutter overrides — lib/ is Flutter source, not a Python artifact
+!projects/**/lib/
+!projects/**/lib/**
 parts/
 sdist/
 var/
