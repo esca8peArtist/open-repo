@@ -279,7 +279,7 @@ Key resources for ongoing tracking:
 
 ---
 
-*This tracker reflects information available as of April 11, 2026. Cases move quickly — check the resource links for current status. Not legal advice.*
+*This tracker reflects information available as of April 12, 2026 (evening, Session 74). Cases move quickly — check the resource links for current status. Not legal advice.*
 
 ---
 
@@ -521,6 +521,53 @@ These three patterns together suggest that for the next phase of litigation trac
 
 ---
 
+---
+
+## April 12, 2026 — Evening Monitoring Pass (Session 74)
+
+*Entries below document developments found in the evening monitoring pass on April 12 that post-date the earlier April 12 pass and the April 11 pass.*
+
+---
+
+### NEW CASE — Abrego Garcia v. Noem (D. Md. 8:25-cv-00951) — Wrongful Deportation; Government Seeks to Dissolve Injunction
+
+- **Court**: U.S. District Court, District of Maryland — Judge Paula Xinis
+- **Background**: Kilmar Armando Abrego Garcia, a Salvadoran man with withholding-of-removal status (granted 2019 due to gang-violence danger), was wrongfully deported to El Salvador's CECOT prison on March 15, 2025 — acknowledged by the administration as "an administrative error." The Supreme Court ruled unanimously on April 10, 2025 (Noem v. Abrego Garcia, 24A949) that the government must "facilitate" his return. He was eventually returned to the United States but remains in federal criminal jeopardy: DOJ indicted him in Tennessee on human smuggling charges that Abrego Garcia argues are vindictive prosecution brought specifically to punish him for resisting deportation.
+- **Current posture (April 2026)**: The government now seeks to deport Abrego Garcia a second time — this time to Liberia rather than El Salvador — claiming this would avoid violating his original withholding of removal order. On March 20, 2026, DOJ filed a motion asking Judge Xinis to dissolve her injunction protecting him from re-detention. DOJ demanded that Xinis rule by **April 17** — the same date as the White House ballroom D.C. Circuit stay deadline — or it would seek appellate relief from a court that "does not have the same views."
+- **April 12 ruling**: Judge Xinis flatly rejected the government's demand: "Respondents cannot dictate the Court's schedule or the outcome of the motion. Nor can they appeal a judicial order that does not exist." Xinis found the motion "not ripe" and set a new briefing schedule: government and Abrego Garcia submissions due **April 20**, hearing **April 28**.
+- **Why it matters**: Three threads intersect here. First, this is one of the clearest documented instances of the executive branch attempting to coerce a federal judge — setting an external deadline on a court's ruling and threatening to appeal to a "friendlier" court if she doesn't comply. Second, the April 17 date (same as the ballroom stay deadline) appears to be part of a broader effort to create simultaneous pressure points across multiple cases. Third, the "deportation to a third country" tactic (Liberia, not El Salvador) is the administration's legal workaround for withholding-of-removal orders — if it succeeds, the same move will be deployed in other cases where courts have blocked deportations to specific countries.
+- **Sources**: [ABC News, April 12, 2026](https://abcnews.com/US/judge-questions-dojs-push-deport-abrego-garcia-criminal/story?id=131802873) · [Yahoo News / AP, March 21, 2026](https://www.yahoo.com/news/articles/trump-administration-urges-judge-dissolve-221804601.html) · [Fox News — judge rebukes DOJ](https://www.foxnews.com/politics/judge-blocks-trumps-push-deport-abrego-garcia-rebukes-doj-trying-dictate-court) · [PBS — judge seeks deportation assurances](https://www.pbs.org/newshour/nation/judge-seeks-assurances-that-the-government-wont-deport-abrego-garcia-to-liberia-in-violation-of-court-order) · [Civil Rights Litigation Clearinghouse](https://clearinghouse.net/case/46283/) · [SCOTUS April 10, 2025 order](https://www.supremecourt.gov/opinions/24pdf/24a949_lkhn.pdf)
+
+---
+
+### NEW ENTRY — NPR/PBS Defunding EO — Judge Moss Issues Permanent Injunction (March 31, 2026)
+
+- **Court**: U.S. District Court, District of Columbia — Judge Randolph Moss
+- **Background**: In 2025, President Trump signed an executive order titled "Ending Taxpayer Subsidization of Biased Media," directing federal agencies to terminate all direct and indirect funding of NPR and PBS. Congress separately rescinded the Corporation for Public Broadcasting's multi-year advance appropriation in July 2025, effectively shutting down CPB in January 2026.
+- **Ruling**: On March 31, 2026, Judge Moss issued a **permanent injunction** blocking the executive order as unconstitutional. Moss held that the order's mechanism — targeting two specific organizations based on the president's dislike of their editorial viewpoint — constitutes viewpoint discrimination in violation of the First Amendment. Moss wrote: "It is difficult to conceive of clearer evidence that a government action is targeted at viewpoints that the President does not like and seeks to squelch." He found that the order "singles out two speakers and, on the basis of their speech, bars them from all federally funded programs" and that "the First Amendment does not tolerate viewpoint discrimination and retaliation of this type."
+- **Practical limitation**: The permanent injunction blocks the executive order but does not restore the $1.1 billion in advance CPB funding that Congress rescinded. CPB has already shut down. The ruling's practical significance is therefore doctrinal rather than operational: it establishes a clear record that executive viewpoint-based defunding of press entities violates the First Amendment, which will matter in any future attempt to extend the tactic to other media organizations or grant recipients.
+- **Why it matters**: The Moss ruling is one of the most direct judicial statements in recent memory that the president cannot use executive authority to punish media organizations for their editorial content. Combined with the first-term pattern of FCC pressure, the CPB defunding through congressional rescission (which the injunction cannot undo), and ongoing White House hostility to independent media, this ruling draws a clear constitutional line — while also illustrating the gap between that line and actual outcomes when Congress acts as the vehicle for the restriction.
+- **Sources**: [CNN, March 31, 2026](https://www.cnn.com/2026/03/31/media/federal-judge-trump-order-npr-pbs-funding) · [NPR, March 31, 2026](https://www.npr.org/2026/03/31/nx-s1-5768399/npr-pbs-trump-federal-funding) · [Washington Post, March 31, 2026](https://www.washingtonpost.com/business/2026/03/31/trump-npr-pbs-funding-unconstitutional/) · [PBS NewsHour, March 31, 2026](https://www.pbs.org/newshour/nation/judge-blocks-trumps-executive-order-to-end-federal-funding-for-pbs-and-npr) · [The Hill — permanent injunction](https://thehill.com/homenews/administration/5809647-trump-funding-npr-pbs-blocked/) · [OPB — First Amendment framing](https://www.opb.org/article/2026/03/31/judge-blocks-trump-order-to-end-funding-for-national-public-radio-and-public-broadcasting-service/)
+
+---
+
+### Category 8 Update — MSPB Relinquishes Jurisdiction Over Immigration Judge Firings; Federal Circuit Appeal Filed
+
+- **Development (March 20, 2026)**: The Merit Systems Protection Board issued a ruling in the cases of two fired immigration judges — Megan Jackler and Brandon Jaroch, fired February 14, 2025 — holding that MSPB lacks jurisdiction to hear their appeals. The two-member MSPB (both Republican) concluded that immigration judges are "inferior officers" under Article II of the Constitution, and that the president's power to remove inferior officers precludes MSPB appeal rights, regardless of the Civil Service Reform Act's text. This is a significant departure from over a century of precedent treating immigration judges as career civil servants.
+- **Immediate Federal Circuit appeal**: Jackler and Jaroch promptly petitioned the U.S. Court of Appeals for the Federal Circuit for review. Their petition argues the MSPB decision "contradicts more than a century of binding Supreme Court precedent, dating to the 1800s," and that the CSRA explicitly extends appeal rights to career employees regardless of their function. The Federal Circuit has jurisdiction over MSPB appeals.
+- **Broader MSPB jurisdiction relinquishment**: The immigration judge ruling is one of several concurrent MSPB jurisdictional retreats. On March 9, 2026 — the same day Schedule Policy/Career took effect — MSPB revoked its authority to hear appeals from employees converted into Schedule Policy/Career positions. OPM has also proposed rules that would strip MSPB of jurisdiction over most RIF (reduction-in-force) appeals, potentially removing appeal rights from as much as 30% of MSPB's current caseload.
+- **Why it matters**: The immigration judge ruling and the Schedule Policy/Career jurisdiction relinquishment together represent a coordinated dismantling of the independent appeals mechanism that has protected career civil servants since 1978. If the Federal Circuit affirms the MSPB holding on immigration judges, that precedent will be available to argue that any category of federal employee who exercises "policy-influencing" functions — exactly the same language used in Schedule Policy/Career — can be removed without MSPB review. The logical conclusion is that Schedule Policy/Career employees face not just weakened due process on termination, but no MSPB avenue at all, leaving only APA litigation as a remedy. The Federal Circuit appeal is therefore one of the most consequential pending civil-service cases in the country.
+- **Sources**: [Bloomberg Law — MSPB upholds firings](https://news.bloomberglaw.com/us-law-week/immigration-judge-firings-upheld-in-boost-for-trump-worker-cuts) · [Bloomberg Law — Federal Circuit appeal filed](https://news.bloomberglaw.com/daily-labor-report/fired-immigration-judges-appeal-mspb-loss-to-federal-circuit) · [Federal News Network — MSPB relinquishes jurisdiction](https://federalnewsnetwork.com/workforce/2026/03/mspb-relinquishes-jurisdiction-over-some-federal-worker-appeals/412318/) · [Lawfare — MSPB analysis](https://www.lawfaremedia.org/article/mspb-strikes-down-tenure-protections-for-immigration-judges) · [JURIST — Federal Circuit petition](https://www.jurist.org/news/2026/03/fired-us-immigration-judges-appeal-to-federal-court-following-administrative-board-denial/) · [FedWeek — broad implications](https://www.fedweek.com/fedweek/new-mspb-ruling-could-have-broad-impact-on-employee-appeal-rights/)
+
+---
+
+### 6.2 Update — Section 122 CIT Hearing (April 10): Panel Sharply Skeptical
+
+- **Update**: The April 10 oral argument before the three-judge CIT panel (Chief Judge Barnett, Judges Kelly and Stanceu) was described by multiple observers as a "marathon" session in which judges repeatedly and sharply questioned the government's position. The central contested issue was the meaning of "balance-of-payments deficit" in Section 122 of the Trade Act of 1974 — the administration's new legal authority for the 10% global tariff after IEEPA was struck down. Judges questioned whether the statutory conditions for invoking Section 122 had actually been met, and whether the president's authority under the provision was as broad as the government claimed. Post-argument commentary from Ilya Somin (Volokh Conspiracy / Reason) noted that the panel's skepticism mirrored the Supreme Court's posture in the IEEPA cases. No ruling has been issued as of April 12; panel did not indicate a timeline.
+- **Sources**: [International Trade Today — hearing summary](https://internationaltradetoday.com/article/2026/04/10/cit-sharply-probes-legality-of-section-122-tariffs-in-marathon-hearing-2604100067?BC=bc_69d99bc2ad6c8) · [Volokh Conspiracy / Reason — post-argument analysis](https://reason.com/volokh/2026/04/10/thoughts-on-todays-oral-argument-in-the-section-122-tariff-cases/) · [Fleischer Group — Section 122 update](https://www.fleischer-chb.com/post/section-122-tariff-update-two-lawsuits-a-rate-announcement-and-a-july-deadline)
+
+---
+
 ## Pending Deadlines as of April 12, 2026 (Evening)
 
 | Date | Case / Event | What to Watch |
@@ -529,12 +576,15 @@ These three patterns together suggest that for the next phase of litigation trac
 | April 14 3 PM | CIT Tariff Refund | Closed conference before Judge Eaton on Phase 1 readiness |
 | April 17 | White House Ballroom | D.C. Circuit stay expires; expect SCOTUS emergency application from administration if Judge Leon maintains any construction block; application would likely go to Chief Justice Roberts or Justice Kavanaugh (DC Circuit) |
 | April 20 | CIT / CBP | IEEPA tariff refund Phase 1 rollout begins (covers ~63% of affected entries) |
+| April 20 | Abrego Garcia (D. Md.) | Parties' briefing due on DOJ motion to dissolve injunction blocking re-detention/deportation to Liberia |
 | April 20 8 PM EDT | No Kings Eyes on ICE | National virtual training — train-the-trainer format for ICE monitoring |
+| April 28 | Abrego Garcia (D. Md.) | Hearing before Judge Xinis on government motion to dissolve injunction; watch for third-country deportation arguments |
 | April 30 | AFGE / BOP (D. Conn.) | Preliminary injunction hearing on Schedule Policy/Career as applied to prison staff |
 | Weeks | Mail Voting EO (5.1/5.2) | Preliminary injunction decision expected in Massachusetts; no TRO yet |
 | May 22 | DHS Funding CR | Continuing resolution expires; another shutdown/funding standoff possible |
 | June 2026 | Trump v. Barbara | Decision expected before end of Court's term (late June); birthright citizenship |
 | June 14 | No Kings Day | Next national mobilization; flagship event Philadelphia; no D.C. event due to Army 250th Parade |
 | TBD | Ramirez Ovando | District court compliance ruling; Tenth Circuit appeal (26-1027) on underlying injunction |
-| TBD | CIT tariff case | Three-judge panel ruling on 10% global tariff (argument held April 10) |
+| TBD | CIT tariff case | Three-judge panel ruling on 10% Section 122 global tariff (argument held April 10; panel sharply skeptical) |
 | TBD | Schedule Policy/Career | AFGE/AFSCME Maryland suit (amended complaint filed March 2026); no injunction yet |
+| TBD | MSPB / Federal Circuit | Jackler & Jaroch appeal of MSPB immigration judge ruling; outcome will determine whether Schedule Policy/Career employees have any MSPB avenue |
