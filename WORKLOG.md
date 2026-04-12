@@ -3034,3 +3034,94 @@ Previously, if the dispatch scheduler dispatched a SCHEDULED ride to REQUESTED a
 **`published/README.md`**: No changes needed — no line count reference present; domain descriptions are deliberately brief
 
 **Constraint check**: No internal changelog, no backtick file references, no internal notes introduced in new content.
+
+## 2026-04-12 — Open-source-rideshare — Session 70 (continued): Background Check Integration + Firebase Push Notifications
+
+### Orientation
+- INBOX: empty. BLOCKED: git identity still not configured, stockbot Python 3.12.
+- resistance-research published/ sync complete (Session 70 first half).
+- Selected: open-source-rideshare — background check integration + Firebase push (suggested in CHECKIN.md).
+
+### Feature 1: Checkr Background Check Integration
+
+**New files**:
+- `backend/app/models/background_check.py` — BackgroundCheck model with BackgroundCheckStatus enum (pending/clear/consider/suspended/dispute/cancelled)
+- `backend/app/schemas/background_check.py` — OrderBackgroundCheckRequest, BackgroundCheckResponse (driver), AdminBackgroundCheckResponse, AdminOverrideRequest
+- `backend/app/services/background_checks.py` — Full Checkr API client (aiohttp async): create_candidate, order_check, get_check_status, handle_webhook (HMAC-SHA256 signature validation), admin_override, auto-approve trigger logic
+- `backend/app/api/v1/background_checks.py` — 6 endpoints: POST /driver/background-check/order, GET /driver/background-check, POST /background-checks/webhook (no auth, signature-verified), GET /admin/background-checks, GET /admin/background-checks/{driver_profile_id}, POST /admin/background-checks/{check_id}/override
+- `backend/tests/test_background_checks.py` — 56 tests
+
+**Key design decisions**:
+- Graceful degradation when OPENRIDE_CHECKR_API_KEY not set — simulates pending response (dev/CI-safe)
+- Webhook validates X-Checkr-Signature HMAC-SHA256; if no secret configured, accepts all with log warning
+- Auto-approve trigger: BackgroundCheck CLEAR + all REQUIRED_DOCUMENTS approved → driver.is_approved = True
+- CONSIDER/SUSPENDED sets background_check_status on driver profile for admin review
+
+### Feature 2: Firebase Cloud Messaging Push Notifications
+
+**New files**:
+- `backend/app/models/device_token.py` — DeviceToken model with DevicePlatform enum (ios/android/web), upsert-safe token registration
+- `backend/app/schemas/device_token.py` — RegisterDeviceTokenRequest, DeviceTokenResponse
+- `backend/app/api/v1/device_tokens.py` — 3 endpoints: POST /me/device-tokens (upsert), DELETE /me/device-tokens/{token}, GET /me/device-tokens
+- `backend/tests/test_push_notifications.py` — 45 tests
+
+**Modified files**:
+- `backend/app/services/notification_providers.py` — Replaced push stub with FirebasePushProvider (single-token and multicast; graceful without OPENRIDE_FIREBASE_CREDENTIALS_JSON)
+- `backend/app/services/notifications.py` — Added device token DB lookup before push dispatch
+- `backend/app/config.py` — 5 new settings: checkr_api_key, checkr_webhook_secret, checkr_default_package, firebase_credentials_json, firebase_project_id
+- `backend/app/models/__init__.py` — Registered BackgroundCheck, DeviceToken
+- `backend/app/main.py` — Registered background_checks, device_tokens routers
+
+**Test results**: 101 new tests (56 background check, 45 push). 1,708 → 1,809 unit tests passing. 0 regressions.
+
+**Branch**: feature/background-checks-firebase-push (committed locally; push blocked on git identity)
+
+### Status: Complete — waiting on git identity to push feature branch
+
+## 2026-04-12 — Orchestrator — Session 71: Orientation + Rideshare + Resistance Monitoring
+
+### Orientation
+- INBOX: empty — nothing to process.
+- BLOCKED: git identity resolved (thorn/thorn@local). New block added: GitHub push still not possible (no HTTPS credentials or SSH key). Committed to BLOCKED.md.
+- Stockbot block unchanged — user still needs to rebuild venv.
+- feature/background-checks-firebase-push: committed, push to GitHub pending resolution of auth block.
+- Priority selected: resistance-research monitoring (spawned agent), then open-source-rideshare features.
+
+### resistance-research — Monitoring Pass (Session 71)
+
+Spawned resistance-research subagent. April 12 monitoring found 4 significant developments not in the April 11 evening pass:
+
+1. **Gonzalez v. CBP (9th Circuit)**: Judge Thurston's 63-page ruling found CBP violated her injunction in Sacramento Home Depot parking lot sweep (July 2025). "Eleven, virtually identical" pre-printed forms used — no individualized assessment. U.S. citizen among those arrested. New documentation requirements ordered. Third circuit (joining D.C., 10th) with confirmed post-injunction noncompliance on record simultaneously.
+
+2. **Mail voting executive order + 23-state lawsuit**: Trump signed order March 31 directing USPS not to deliver mail ballots to anyone not on DHS/SSA pre-approved list. On April 3, 23 states + D.C. sued in Massachusetts. First federal agency placed directly in ballot delivery chain — single executive chokepoint.
+
+3. **White House ballroom D.C. Circuit stay (April 11)**: 2-1 stay of Judge Leon's order halting $300M+ ballroom construction (ruled requires congressional authorization). Majority used national security framing. Stay expires April 17 — SCOTUS shadow-docket application likely imminent. New Appropriations Clause category added to litigation tracker.
+
+4. **Court of International Trade tariff hearing (April 10)**: Post-SCOTUS (Learning Resources Inc. v. Trump, 6-3, Feb 20) hearing on Trump's replacement 10% global tariff. 24 states + 2 businesses suing. No ruling yet.
+
+**Resistance update**: March 28 No Kings protests drew estimated 8-9M participants across 3,300+ events — largest single-day protest in recorded U.S. history by organizer count.
+
+**Commit**: 94589a0 (resistance-research monitoring pass April 12)
+
+### open-source-rideshare — Session 71: Three features committed
+
+**Feature 1: Live driver ETA push to rider via WebSocket** (commit 2902f66)
+- Context: websocket.py had uncommitted changes adding ETA push during driver location_update
+- Added `notify_driver_eta` helper function
+- When driver sends location_update with active_ride_id, active_rider_id, pickup_lat/lng, estimates ETA and pushes driver_eta event to rider's WebSocket
+- Best-effort (exceptions silently swallowed — can't block location tracking)
+- 2 new tests: sends correct driver_eta message; returns False when rider not connected
+- Tests: 1,809 → 1,811
+
+**Feature 2: Background check result notifications** (commit 328a37e)
+- Added `BACKGROUND_CHECK_APPROVED` and `BACKGROUND_CHECK_ACTION_REQUIRED` to NotificationType
+- Added `_notify_driver_check_result` helper in background_checks.py
+- CLEAR: push + SMS "Background check approved — complete your remaining requirements to start driving"
+- CONSIDER/SUSPENDED: push + SMS "Background check requires attention — log in for details"
+- CANCELLED/DISPUTE/PENDING: silently skipped (admin handles via dashboard)
+- Guards: user not found → no crash, no notification
+- 6 new tests covering all status branches, missing-user guard, data payload
+- Tests: 1,811 → 1,817
+
+### Block added
+- GitHub push blocked (no HTTPS credentials or SSH key on Pi) — added to BLOCKED.md with three resolution options.

@@ -9,59 +9,66 @@
 ## Since Last Check-in
 
 **Period**: April 12, 2026
-**Sessions run**: 69
+**Sessions run**: 71
 
-### Accomplished (Session 69)
+### Accomplished (Session 71)
 
-1. **Resistance-research — Domains 11-15 deepened** — all 22 domains now at full evidence depth:
-   - **Inline fiscal estimates added to all 25 subsections** (11a-11e, 12a-12e, 13a-13e, 14a-14e, 15a-15e) — same treatment as Domains 2-10
-   - **New subsection 11f — Dental, Vision, and Long-Term Care**: Dental exclusion (74M uninsured, Medicare never covered routine dental, U.S. only OECD country treating dental as categorically separate from healthcare). Vision exclusion (22M with impairment, no Medicare coverage). Long-term care catastrophe — nursing home $108K/year, no public backstop until asset impoverishment. Germany Pflegeversicherung, Japan kaigo hoken, UK NHS dental, Canada's 2023 Dental Care Plan as precedents. Fiscal: dental/vision $35-55B/year; LTC public benefit $50-100B/year net new, funded by dedicated 2-3% payroll contribution
-   - **New subsection 14f — Police Use of Force Standards and De-escalation**: U.S. kills 1,100-1,200 people/year vs. Germany 8-12, UK <5. Camden NJ model: dissolved + rebuilt department, use of force -95%. Federal use of force standard (proportionality), chokeholds/no-knock/military weapons ban, mandatory 40h/year de-escalation training, behavioral health co-response (Denver STAR: 2,400+ calls, zero force incidents). RAND: de-escalation training reduces force 28-48%. Fiscal: $10-14B/year
-   - **Key fiscal findings**: Domain 11 net positive (drug reform $270-480B/year + admin simplification $55-77B/year in savings). Domain 13 self-financing (anti-speculation revenue $50-75B/year covers all housing investments). Domain 14 5-8x ROI (decarceration saves $100-130B/year). Domain 15 offset 4-10x by Domain 5 carbon tax
-   - **Section 5.5 Domains 11-15 updated** with subsection-level breakdowns
-   - Proposal: 2,466 → 2,544 lines
+1. **Resistance-research — April 12 monitoring pass** (commit `94589a0`):
+   Four significant developments documented in `litigation-tracker-2026.md` and `us-democracy-crisis-analysis-2026.md`:
+   - **Gonzalez v. CBP (9th Circuit)**: Judge Thurston found CBP violated her injunction in Sacramento Home Depot sweep — "eleven, virtually identical" pre-printed forms, no individualized assessment, U.S. citizen arrested. 3rd circuit with confirmed post-injunction noncompliance simultaneously (joining D.C., 10th).
+   - **Mail voting executive order + 23-state suit**: Trump March 31 order directs USPS not to deliver mail ballots to anyone not on DHS/SSA pre-approved list. 23 states + D.C. filed in Massachusetts on April 3. First time a federal agency placed directly in ballot delivery chain — single executive chokepoint.
+   - **White House ballroom D.C. Circuit stay (April 11)**: 2-1 stay of Judge Leon's order halting $300M+ construction. National security framing. Stay expires April 17 — SCOTUS shadow-docket application imminent. New Appropriations Clause category added to tracker.
+   - **CIT tariff hearing (April 10)**: Three-judge panel heard argument on replacement 10% global tariff. No ruling yet.
+   - Resistance note: March 28 No Kings protests — estimated 8-9M participants, 3,300+ events — largest single-day protest in recorded U.S. history by organizer count.
 
-2. **Session 68 (carried forward)**: Domain 10 (Education) deepened — fiscal estimates 10a-10e, new subsection 10f (Universal Pre-K + Childcare, $55-85B/year, Heckman $7-13/dollar ROI)
+2. **Open-source-rideshare — Two new features committed** to `feature/background-checks-firebase-push`:
+
+   **Live driver ETA push to rider via WebSocket** (commit `2902f66`):
+   - When driver sends `location_update` with `active_ride_id`, `active_rider_id`, `pickup_lat`, `pickup_lng`, backend calls `estimate_driver_eta` and pushes `driver_eta` event to rider's WebSocket
+   - Added `notify_driver_eta` helper function
+   - Best-effort (exceptions silently swallowed — can't break location tracking)
+   - 2 new tests (1,809 → 1,811)
+
+   **Background check result notifications** (commit `328a37e`):
+   - CLEAR → push + SMS: "Background check approved — complete requirements to start driving"
+   - CONSIDER/SUSPENDED → push + SMS: "Background check requires attention — log in for details"
+   - CANCELLED/DISPUTE/PENDING → silently skipped (admin handles those)
+   - Added `BACKGROUND_CHECK_APPROVED` and `BACKGROUND_CHECK_ACTION_REQUIRED` to `NotificationType`
+   - Guards: user not found → no crash
+   - 6 new tests (1,811 → 1,817)
+
+3. **BLOCKED.md updated**: Added GitHub push block (no HTTPS credentials or SSH key on Pi).
 
 ### In Progress
-- **Resistance-research**: All 22 domains at full depth. `published/` versions predate Sessions 68-69 — needs regeneration.
-- **Open-source-rideshare**: 1,708 passing unit tests. Blocked on git identity for commits.
-- **Seedwarden**: 19 products. Content and listing copy ready. Biggest blocker: PDF mockup images.
-
-### Needs Your Input (NEW — Review Before Merging)
-
-- [ ] **open-source-rideshare — Background checks + FCM push (feature/background-checks-firebase-push)**
-  PR: Implements Checkr background check integration + Firebase Cloud Messaging push notifications.
-  
-  **What's in the PR:**
-  - Checkr API integration: `POST /driver/background-check/order`, `GET /driver/background-check`, `POST /background-checks/webhook` (HMAC-SHA256 verified), admin endpoints for list/view/override. Graceful degradation when `OPENRIDE_CHECKR_API_KEY` not set.
-  - Auto-approve trigger: when background check returns "clear" AND all required documents are verified, driver is auto-approved. When "consider"/"suspended", driver is flagged for admin review.
-  - FCM push: replaced stub provider with real Firebase Admin SDK integration. `POST/DELETE/GET /me/device-tokens` for registration. Token lookup wired into notification dispatch. Graceful degradation without `OPENRIDE_FIREBASE_CREDENTIALS_JSON`.
-  - Config: 5 new `OPENRIDE_` settings added.
-  - Tests: 101 new unit tests (1,708 → 1,809), 0 regressions.
-
-  **To merge:** `git checkout master && git merge feature/background-checks-firebase-push`
-  **Dependencies to add to requirements.txt/pyproject:** `aiohttp`, `firebase-admin` (optional — both degrade gracefully if absent)
-
----
+- **Open-source-rideshare**: `feature/background-checks-firebase-push` has 3 commits beyond `master` (Checkr+FCM, ETA push, notification trigger). Push to GitHub blocked — see item below.
+- **Seedwarden**: 19 products ready. PDF mockup images still needed.
+- **Stockbot**: Venv rebuilt (ta library), ready to resume — Python 3.12 block resolved but venv rebuild still user-controlled.
 
 ### Needs Your Input
-- [ ] **Git identity on Pi**: `git config --global user.email "you@email.com"` and `git config --global user.name "Your Name"` needed — can't commit any of this work without it.
-- [ ] **Resistance-research — review published versions**: Check `projects/resistance-research/published/`. Sessions 68-69 added new subsections (10f, 11f, 14f) and ~80 lines of fiscal estimates. Once you've reviewed, orchestrator can regenerate `published/` to include all updates.
-- [ ] **Workout — review comprehensive plan**: Check `projects/workout/comprehensive-plan.md`. Pick a tier + frequency.
-- [ ] Discord webhook URL for notifications
-- [ ] **Stockbot venv is broken**: Python 3.12 packages, Python 3.11 binary. See BLOCKED.md for options.
-- [ ] **Open-source-rideshare — review architecture**: Check `ARCHITECTURE.md`. Key decisions: FastAPI, AGPL-3.0, zero-commission, Beckn Protocol.
-- [ ] **Open-source-rideshare — Docker needed for integration tests**
-- [ ] **Seedwarden — mockup images**: #1 blocker for Etsy listing. Canva or automated?
+
+- [ ] **GitHub push auth on Pi** — choose one option to enable push:
+  - (a) `git config --global credential.helper store` then `git push` (enter username + PAT once, stored forever)
+  - (b) `ssh-keygen -t ed25519` then add `~/.ssh/id_ed25519.pub` to GitHub settings
+  - (c) `git remote set-url origin git@github.com:SuperClaude-Org/SuperClaude_Framework.git` + SSH key above
+- [ ] **Open-source-rideshare — merge feature branch** (once push works):
+  ```
+  git checkout master && git merge feature/background-checks-firebase-push && git push origin master
+  ```
+  Or push the feature branch and open a PR on GitHub. Optional deps: `aiohttp`, `firebase-admin` (graceful without them).
+- [ ] **Resistance-research — review published/ versions**: `projects/resistance-research/published/` is current through Session 69. Worth a read before sharing externally.
+- [x] **Git identity** — resolved (thorn / thorn@local).
+- [x] **Workout — comprehensive plan complete**: All three equipment tiers, multiple frequencies. No further input needed unless you want adjustments.
+- [x] **Stockbot venv**: pandas-ta replaced with `ta` library. Venv rebuilt.
+- [ ] **Open-source-rideshare — Docker needed for integration tests** (1,817 unit tests pass; 94 integration tests need Docker/PostgreSQL).
+- [ ] **Seedwarden — mockup images**: #1 Etsy conversion blocker. Canva or mockup generator?
 - [ ] **Seedwarden — apartment-growing-complete-guide.md**: Standalone premium ($22-25), merge, or archive?
-- [ ] **MCP servers not configured on Pi**: Research monitoring deferred.
+- [ ] **Discord webhook URL**: For session completion notifications.
 
 ### Suggested Priorities for Next Session
-1. **Resistance-research** — Regenerate `published/` versions incorporating Sessions 68-69 updates (Domains 10-15 deepened, 3 new subsections: 10f, 11f, 14f).
-2. **Open-source-rideshare** — Background check integration (Checkr API) + push notifications (Firebase Cloud Messaging) once git identity resolved.
-3. **Seedwarden** — PDF regeneration after content edits.
-4. **Stockbot** — Blocked on Python 3.12 / venv rebuild.
+1. **Open-source-rideshare** — Flutter app FCM integration (wire device token registration into both rider + driver apps); or insurance/TNC compliance API scaffold.
+2. **Resistance-research** — Monitoring will auto-run at session start. The mail voting order + 23-state lawsuit warrants deeper analysis if you want it.
+3. **Stockbot** — Paper trading stability investigation (current focus per PROJECTS.md).
+4. **Seedwarden** — PDF regeneration and mockup images when time allows.
 
 ---
 
@@ -73,6 +80,15 @@
 ---
 
 ## History
+
+### April 12, 2026 (Session 71)
+- Resistance-research: April 12 monitoring — 4 developments added (Gonzalez v. CBP Sacramento compliance violation; mail voting EO + 23-state suit; White House ballroom D.C. Circuit stay; CIT tariff hearing). March 28 No Kings protests: 8-9M, largest in U.S. history.
+- Open-source-rideshare: Live driver ETA push to rider via WebSocket + background check result notifications (push+SMS on CLEAR/CONSIDER/SUSPENDED). 8 new tests (1,809 → 1,817).
+- GitHub push block identified and documented.
+
+### April 12, 2026 (Session 70)
+- Resistance-research: published/ regenerated — Domains 10-15 fiscal estimates + subsections 10f/11f/14f now in published copy (2,497 → 2,595 lines).
+- Open-source-rideshare: Checkr background check integration + Firebase FCM push notifications (feature/background-checks-firebase-push). 101 new tests (1,708 → 1,809).
 
 ### April 12, 2026 (Session 69)
 - Resistance-research: Domains 11-15 deepened — inline fiscal estimates added to all 25 subsections; new subsections 11f (Dental/Vision/LTC — Germany/Japan/Canada models, $50-100B/year LTC benefit) and 14f (Use of Force/De-escalation — Camden NJ model, RAND 28-48% force reduction, $10-14B/year). All 22 domains now at full depth. Proposal 2,466 → 2,544 lines.
