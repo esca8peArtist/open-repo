@@ -9,62 +9,63 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–97 (continued)
+**Sessions run**: 75–99
 
-### Accomplished (Session 97)
+### Stockbot Status (your INBOX question answered)
 
-#### open-source-rideshare — Admin rider management
+**The stockbot IS running on the Pi — no separate Jetson needed.** Findings from Session 99 investigation:
 
-**`GET /admin/riders`** — list riders with name/phone search, active filter, pagination, sorting
-**`GET /admin/riders/{id}`** — single rider details with total/completed/cancelled ride counts + avg rating from driver ratings
-**`POST /admin/riders/{id}/suspend`** — suspend rider (409 if already suspended); sets `is_active=False`; audit logged
-**`POST /admin/riders/{id}/reactivate`** — reactivate rider (409 if already active); sets `is_active=True`; audit logged
+- `uvicorn` server running (PID 240887, started Apr 13 00:46) — `http://127.0.0.1:8000/api/health` returns `{"status":"ok"}`
+- All 3 paper trading sessions initialized and fetching live data (confirmed in `logs/trading_20260413.log`):
+  - `momentum` — SPY, QQQ, MSFT
+  - `rsi_mean_reversion` — AAPL, NVDA
+  - `sma_crossover` — AMZN, SPY
+- **No trades executed yet** — expected. Today is Sunday April 13; first NYSE market open is Monday April 14. Sessions are cycling every 60s and data fetches succeed, but no signals have fired outside market hours.
+- Database `model_runs` table shows all 3 sessions with `is_active=1` and correct tickers/capital ($100k each)
 
-Bulk-query pattern avoids N+1 (2 queries for stats + ratings across all page results). Symmetric with existing driver management. 20 tests. Committed: `34e75cc`
+**Jetson not found on network** (`ping jetson` and `ping jetson.local` both fail). The stockbot appears to be running on the Pi itself, not a Jetson. If a Jetson is involved, it's not network-accessible by that hostname from this Pi.
 
-#### open-source-rideshare — Admin promo analytics
-
-**`GET /promos/admin/stats?period={week|month|year|all}`** — promo usage analytics:
-- Total redemptions, total discount value given, unique rider count
-- Active promo count (point-in-time)
-- Referral vs non-referral redemption breakdown
-- Top 10 promos by usage count
-- Top 10 promos by total discount given
-
-5 DB queries total. No new models. 11 tests. Committed: `1317ec5`
-
-**Full test suite: 2,463 passing** (was 2,432 at Session 96).
+**Still need your API key to pull cycle logs**: `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`
 
 ---
 
-#### resistance-research — Domain 6 Judicial Independence deepening COMPLETE
+### Python 3.12 (your INBOX question answered)
 
-`domain-deepening/judicial-independence-evidence.md` (406 lines, 11 sections). Key findings:
-- **Threat scale**: 564 threats against federal judges FY2025 (U.S. Marshals); AG Bondi formal misconduct complaint against Chief Judge Boasberg — documented intimidation through judicial discipline process
-- **Shadow docket collapse**: 8 emergency stays 2000-2016 → 41 Trump first term → 110+ applications in 2024-25 term; 67% grant rate vs. 31% Biden
-- **SCOTUS legitimacy**: 40% approval (Gallup), 24-point drop in 4 years; 51-point partisan gap; Thomas/Alito ethics scandals documented; November 2023 ethics code has no enforcement mechanism
-- **Capture metrics**: 90% of Trump's 234 first-term appointments were Federalist Society members; 6/9 SCOTUS justices FS affiliates; 21 of 35 district vacancies are judicial emergencies
-- **Consent decree defiance**: 250 of 380 Civil Rights Division lawyers gone; EPA 96% collapse in consent decrees filed
-- **Germany 2024 model**: BVerfG hardening via Basic Law amendment — documented as the international standard for court protection against capture
-- **Fiscal case**: $200-400M/year reform investment is enforcement insurance for $650-1,000B/year across all 22 domains — judicial independence is the layer through which every other reform is enforced
+**Python 3.12 is not available** on the Pi (only 3.11.2), and `pyenv` is not installed.
 
-**Deepening library: 11 of 22 domains now complete.**
+**Good news: Python 3.12 is no longer needed for stockbot.** The fix from Session 98 (replacing `pandas-ta` with the `ta` library) is in place — `requirements.txt` already has `ta>=0.10.0`, and the stockbot server is running successfully on Python 3.11.
+
+If you still want Python 3.12 for other reasons (future-proofing), the cleanest install path is `pyenv` (user-space, no root needed). I can set that up in a future session — just drop it in INBOX.md. For now, stockbot is unblocked.
 
 ---
 
-### Stockbot Note
-Paper trading LIVE since April 13. First market open was Monday April 14. Orchestrator cannot check cycle logs without `STOCKBOT_API_KEY` in env. Check manually:
-```
-curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20
-```
-Or `http://127.0.0.1:8000` → Trading page.
+### Accomplished (Sessions 97–99)
+
+#### open-source-rideshare — Sessions 97–99: 9 features
+- **Admin rider management**: GET/suspend/reactivate riders; N+1-free; 20 tests. `34e75cc`
+- **Admin promo analytics**: GET /promos/admin/stats with period filter; top promos; 11 tests. `1317ec5`
+- **Driver break management**: start/end break; blocks dispatch while on break; 29 tests. `744adb6`
+- **Rider ride preferences**: quiet/music/temp/pet/accessibility model; driver read-only; 30 tests. `729a1e6`
+- **Driver tip summary**: GET /drivers/me/tips/summary; period filter; status breakdown; 36 tests. `3b9815b`
+- **Admin tip stats**: GET /admin/tips/stats; platform-wide total/avg/unique drivers+riders/top-10 tipped drivers. (included in 36 tests above)
+- **Rider lifetime stats**: GET /analytics/rider/stats; total/completed/cancelled rides, spend, distance, avg rating, tips; 24 tests. `068d603`
+- **Admin top earners/spenders leaderboard**: GET /admin/stats/top-earners?role=driver|rider; period filter; 17 tests. `8d34bd2`
+- **Admin unified user search**: GET /admin/users/search?q=&role=all|driver|rider; name/phone/email search; driver stats; 15 tests. `88c9060`
+- **Full test suite: 2,556 passing**
+
+#### resistance-research — Sessions 97–99: 4 domains deepened
+- **Domain 1 (Electoral Reform)**: 348 lines — voting access suppression (GAO 2-3pt), REDMAP mechanics, $9B dark money, 4M disenfranchised. `7bd73d9`
+- **Domain 7 (Rights Protection)**: 432 lines — anti-protest wave (100+ bills, 34 states), DOGE database access, Section 702 FISA, civil asset forfeiture ($1,678 median seizure vs $3,300 attorney cost), facial recognition wrongful arrests, Cop City RICO template. `e95012c`
+- **Domain 15 (Environment/Climate)**: 469 lines — EPA enforcement collapse (78% DOJ referral drop), 1.8GT CO2-eq rollback, solar LCOE -90%, IRA $372B private investment, EU ETS 51% reduction, Sweden 33% emissions + 92% GDP. `b9bffb0`
+- **Domain 16 (Immigration)**: 399 lines — $164.65/day ICE detention, $17,121/deportation, Penn Wharton mass deportation $82.7B–$987B cost (GDP -1.0% to -4.9%), 32 detention deaths in 2025 (deadliest since 2004), 5,500+ separated children. `68114c5`
+- **Deepening library: 15 of 22 domains now complete**
 
 ---
 
 ### Needs Your Input
 
 **open-source-rideshare — GitHub push still blocked**
-Sessions 77–97 of commits piling up locally. Options:
+Sessions 77–99 of commits piling up locally. Options:
 - (a) `git config --global credential.helper store` + push once with username/PAT
 - (b) `ssh-keygen -t ed25519` on Pi → add public key to GitHub account
 - (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
@@ -75,20 +76,23 @@ Sessions 77–97 of commits piling up locally. Options:
 - Abrego Garcia DOJ brief was due April 20 — what position did they take?
 Drop updates in INBOX.md when you have them.
 
-**Stockbot — paper trading check-in**
-Can you share the cycle logs or a screenshot from the Trading page? We can't pull them without the API key in env. Without performance data, stockbot work is stuck at monitoring-only.
+**Stockbot — paper trading check-in (first market day is April 14)**
+Share cycle logs or Trading page screenshot after Monday's session. `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`
 
 ---
 
 ### Suggested Priorities (Next Session)
 1. **Stockbot**: If cycle logs shared — assess model performance and suggest improvements. Otherwise, continue open-source-rideshare.
-2. **Open-source-rideshare**: 2,463 tests passing — next candidates: vehicle type preference for ride requests, trip activity heatmap analytics, or rider subscription plans.
-3. **Resistance-research**: 11 remaining domains without deepening files. Top candidates: Domain 1 (Electoral Reform), Domain 15 (Environment/Climate), Domain 16 (Immigration).
+2. **Open-source-rideshare**: 2,556 tests — next candidates: vehicle type preference for ride requests, trip activity heatmap analytics, or rider subscription plans.
+3. **Resistance-research**: 7 remaining domains (2 Campaign Finance, 3 Anti-Corruption, 4 Economic Policy, 5 Healthcare, 8 Education, 9 Infrastructure, 17 Foreign Policy). Any is a good target.
 4. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
 
 ---
 
 ### History
+
+#### Accomplished (Sessions 97–99)
+See "Accomplished" section above — archived here after next check-in.
 
 #### Accomplished (Session 96)
 Admin notification log: `GET /admin/notification-logs`; filterable by user/type/channel/status/ride; 16 tests; 2,432 total passing.

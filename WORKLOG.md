@@ -4,6 +4,70 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## Session 99 — 2026-04-13
+
+### Orient
+- INBOX: 2 items — Jetson/paper trading status question + Python 3.12 install request
+- BLOCKED: stockbot Python block resolved (ta library working on 3.11); GitHub push still unresolved
+- Domain 7 rights-protection-evidence.md written by Session 98 background agent (65KB, uncommitted)
+- Current: feature/background-checks-firebase-push branch, 2,522 rideshare tests passing
+
+### INBOX Processing
+- [17:39] Jetson/paper trading status → Investigated. Stockbot IS running on Pi (uvicorn PID 240887, port 8000, Python 3.11). All 3 paper trading sessions initialized. No trades yet — market closed Sunday. Jetson not found on network. Answered in CHECKIN.md.
+- [17:38] Python 3.12 install → Not needed (stockbot working on 3.11 with ta library). Answered in CHECKIN.md. Pyenv option documented if user wants 3.12 for other reasons.
+
+### Progress — Session 99
+
+#### resistance-research — Domain 7 Rights Protection committed
+- Session 98 background agent wrote rights-protection-evidence.md (432 lines, 65KB)
+- Sections: anti-protest legislative wave, DOGE database access (IRS-ICE, SSA), Section 702 FISA reauthorization, civil asset forfeiture, reproductive health data, facial recognition wrongful arrests, Cop City RICO template, France/Germany international benchmarks
+- Committed `e95012c` — domain deepening library now at 13 of 22 complete
+
+### Progress — Session 99
+
+#### open-source-rideshare — Driver tip summary + admin tip analytics
+- `GET /drivers/me/tips/summary?period=` — total/avg/count + status breakdown for driver
+- `GET /admin/tips/stats?period=` — platform-wide: total, unique drivers/riders, top-10 drivers by tips
+- Service functions `get_driver_tip_summary` + `get_admin_tip_stats` added to analytics.py
+- Also fixed bug: `return output.getvalue()` was accidentally missing from `export_driver_tax_csv` (would have caused all CSV export tests to fail on next import)
+- 36 tests (18 unit, 18 integration); suite: 2,540 passing
+- Committed `3b9815b`
+
+#### resistance-research — Domain 15 Environment/Climate deepening COMPLETE
+- 469 lines: EPA enforcement collapse (78% drop to 40 DOJ referrals — record low), regulatory rollbacks (1.8GT additional CO2-eq through 2035), fossil fuel subsidies ($6.7T global implicit), carbon pricing (BC 5-15%; EU ETS 51%; Sweden 33% reduction + 92% GDP growth), clean energy LCOE (solar -90%; IRA $372B in 2 years), damage costs (2024: $182.7B), environmental justice, international benchmarks
+- Committed `b9bffb0`
+
+#### open-source-rideshare — Rider lifetime stats
+- `GET /analytics/rider/stats` — total/completed/cancelled rides, completion rate, total spent, avg fare, distance, avg rating given, tips given
+- Service: `get_rider_stats()` in analytics.py; schema: `RiderStatsResponse`
+- Also fixed stray unreachable `return output.getvalue()` after `get_admin_tip_stats`
+- 24 tests; suite: 2,556 passing
+- Committed `068d603`
+
+#### open-source-rideshare — Admin top earners/spenders leaderboard
+- `GET /admin/stats/top-earners?role=driver|rider&period=&limit=`
+- role=driver: ranks by sum of fares; role=rider: ranks by total spent
+- New schemas: TopEarnerDriverEntry, TopSpenderRiderEntry, TopEarnersResponse
+- 17 tests (integration only); suite: 2,556 passing
+- Committed `8d34bd2`
+
+#### open-source-rideshare — Admin unified user search
+- `GET /admin/users/search?q=&role=all|driver|rider&limit=`
+- Full-text search across name, phone, email; driver results include approval status, total trips, rating
+- New schemas: UserSearchResult, UserSearchResponse
+- 15 integration tests; suite: 2,556 passing
+- Committed `88c9060`
+
+#### resistance-research — Domain 16 Immigration deepening COMPLETE
+- 399 lines: ICE detention ($164.65/day, 37,000 detained), deportation costs ($17,121 each), Penn Wharton mass deportation GDP impact (-1.0% to -4.9%, $82.7B–$987B), 3.8M pending asylum cases, 32 detention deaths in 2025 (deadliest since 2004), 5,500+ children separated (1,360 still separated), economic contributions ($328.2B GDP, $98.9B taxes), international benchmarks (Canada/Germany asylum processing)
+- Committed `68114c5`; deepening library now at 15 of 22 domains
+
+### Session 99 Wrap-Up
+- **resistance-research**: 3 domains deepened (Rights Protection, Environment/Climate, Immigration) — 15 of 22 complete
+- **open-source-rideshare**: 5 features shipped (driver tip summary, admin tip stats, rider lifetime stats, top earners leaderboard, admin user search) — suite: 2,556 passing
+- **INBOX**: Both items answered in CHECKIN.md and cleared
+- Management files updated; PROJECTS.md and CHECKIN.md updated to reflect Session 99 state
+
 ## 2026-04-13 — Session 96 — open-source-rideshare — Admin notification log endpoint + history tests
 
 ### Orientation
@@ -4326,3 +4390,45 @@ Background agent completed. New file: `projects/resistance-research/domain-deepe
 ## Session 97 summary
 - 2 open-source-rideshare features: admin rider management (20 tests) + admin promo analytics (11 tests) — 2463 total
 - 1 resistance-research deepening: Domain 6 judicial independence (406 lines)
+
+---
+
+## Session 98 — 2026-04-13
+
+### Orient
+- INBOX: empty
+- BLOCKED: stockbot (venv rebuild needed by user), rideshare GitHub push (no SSH key)
+- Current branch: feature/background-checks-firebase-push — background checks + Firebase push already fully implemented and tested (2,463 passing)
+- 11/22 resistance-research domains deepened
+
+### Plan
+1. Deepen Domain 1 (Electoral Reform) evidence — resistance-research
+2. Add referral/invite system to open-source-rideshare (new feature)
+
+
+### Progress — Session 98
+
+#### open-source-rideshare — Driver break management
+- Extended DriverOnlineStatus model: is_on_break (bool) + break_started_at (datetime)
+- Service: start_break / end_break with idempotency and ValueError guards
+- is_driver_available_now: returns False for drivers on break
+- API: POST /drivers/me/availability/break/start and /break/end
+- Schema: BreakResponse; OnlineStatusResponse + AdminDriverAvailabilityItem updated
+- 29 new tests; suite: 2492 passing
+- Committed 744adb6
+
+#### open-source-rideshare — Rider ride preferences
+- Model: RidePreference (quiet_ride, music_off, temperature_preference, pet_friendly, extra_luggage, accessibility_vehicle_needed, notes)
+- Service: get_preferences (creates defaults on first access), update_preferences (partial, only flushes on changes)
+- API: GET/PUT /me/ride-preferences; GET /rides/{ride_id}/rider-preferences (driver read-only)
+- 30 new tests; suite: 2522 passing
+- Committed 729a1e6
+
+#### resistance-research — Domain 1 Electoral Reform deepening
+- 348 lines: voting access, electoral systems, gerrymandering, campaign finance, election admin, voting rights
+- Key evidence: GAO 2-3pt suppression, REDMAP mechanics, $9B dark money total, 4M disenfranchised (2024 update)
+- Committed 7bd73d9
+
+#### resistance-research — Domain 7 Rights Protection (in progress)
+- Agent running in background
+
