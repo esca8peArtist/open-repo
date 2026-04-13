@@ -25,6 +25,175 @@
 
 ---
 
+## 2026-04-13 — Session 81 — resistance-research + off-grid-living + open-source-rideshare
+
+### Orientation
+- INBOX: Empty
+- BLOCKED: GitHub push still blocked (no SSH/credentials); stockbot API running but STOCKBOT_API_KEY not in env for this session — can't read cycle logs, noting in CHECKIN.md for user to check manually
+- Current branch: feature/background-checks-firebase-push (background check + Firebase push feature COMPLETE, all 107 tests passing)
+- Selected tasks: (1) resistance-research April 17 monitoring; (2) off-grid-living 08-medical-health.md; (3) open-source-rideshare push notification preferences system
+- All three launched in parallel
+
+### open-source-rideshare — Push notification preferences COMPLETE
+
+5 new files, 2 modified. 51 tests (all passing). Full suite: 1,918 passed, 199 skipped (no regressions).
+- `models/notification_preference.py` — `NotificationPreference` (table: `notification_preferences_v2`), unique constraint on `(user_id, notification_type, channel)`, enabled=True default
+- `schemas/notification_preference.py` — `SetPreferenceRequest` (validates type+channel), `BulkSetPreferenceRequest`, `UserPreferencesResponse`
+- `services/notification_preferences.py` — `get_user_preferences`, `set_preference`, `bulk_set_preferences`, `is_channel_enabled` (opt-out model; None row = enabled), `reset_preference`
+- `api/v1/notification_preferences.py` — GET (full map), PUT /bulk, PUT /{type}/{channel}, DELETE /{type}/{channel} (204)
+- Migration `a8e1f5b03c92_add_notification_preferences.py`
+- `services/notifications.py` updated: checks `is_channel_enabled()` before each channel dispatch; SOS_ALERT bypasses check; DB failures caught at DEBUG to avoid blocking delivery
+- `main.py` updated: router registered at `/api/v1/users/me/notification-preferences`
+- Committed: feat(rideshare): add per-user notification preferences (opt-in/out by type and channel)
+
+### off-grid-living — 08-medical-health.md COMPLETE (1,139 lines)
+
+Domain 8 written. master-outline.md updated. Committed.
+- 14 sections: treat-vs-evacuate framework, first aid (MARCH protocol, Ottawa ankle rules, wound irrigation physics), supply tiers (Tier 1 ~$350-550, Tier 2 ~$900-1,400 with specific sources), 18 medicinal plants with evidence levels and tincture ratios, empiric antibiotics + fish antibiotic legality (2018 CID study), dental (Cavit, abscess I&D, Ludwig's angina warning, extraction walkthrough), prescription management (SLEP data, ReliOn insulin $25/vial, ivermectin horse paste dosing), childbirth (all 5 P's, McRoberts, improvised Bakri balloon), mental health (Antarctic winterover research, exercise=SSRI evidence), trauma (tourniquet timing physiology, conservative appendicitis antibiotics 70% RCT success rate), CBRN (ARS dose table, 7/10 rule, KI by age group, Cs-137/Sr-90/I-131 half-lives), training stack (Stop the Bleed free → WFA $200-350 → WFR $700-900), reference library, 25-row cost table (~$4,000-5,000 total)
+- First attempt timed out; relaunched with write-first prompt, completed successfully
+
+### resistance-research — April 13 Monday monitoring COMPLETE
+
+New file: `monitoring/2026-04-13-monday.md`. All five threads confirmed:
+- **White House ballroom**: Leon has not acted on remand; no SCOTUS application on docket. National Trust filed separability argument (above-ground vs. underground). Three Leon scenarios still open. April 17 stay expiry is the deadline.
+- **SCOTUS application**: Not filed. Administration strategically constrained — filing before Leon acts means going to SCOTUS without the factual record; filing after Leon narrows loses national security framing.
+- **Section 122 tariff (CIT)**: Panel was sharply skeptical at April 10 oral argument. No ruling yet. April 14 noon EDT: CBP Phase 1 status declaration (IEEPA refund implementation — separate track).
+- **Abrego Garcia (Maryland)**: April 17 pressure defused by Xinis; April 28 hearing is the next line. Liberia deportation template still active.
+- **Nashville (Crenshaw/Blanche)**: CNN April 11 report confirms Crenshaw found Blanche's comments linked Maryland case to investigation — meets vindictive prosecution threshold. Subpoena path now being weighed. Extended silence suggests Crenshaw going beyond simple dismissal.
+- Committed: research(resistance): April 13 Monday monitoring — April 17 watch
+
+---
+
+## 2026-04-13 — Session 80 — resistance-research + open-source-rideshare + off-grid-living
+
+### Orientation
+- INBOX: Empty
+- BLOCKED: GitHub push still blocked (no SSH/credentials — no resolution from user yet)
+- Stockbot: Paper trading live, market still closed (Sunday). First trades fire Monday 9:30 AM ET. No actionable work.
+- Session 79 completed: resistance-research evening monitoring, off-grid-living 04-food-production.md, rideshare incentive programs
+- Selected tasks: (1) resistance-research pre-April-17 scenario analysis; (2) open-source-rideshare rider rating system; (3) off-grid-living 05-food-preservation.md
+- All three launched in parallel
+
+### resistance-research — Pre-April-17 scenario analysis COMPLETE
+
+New file: `monitoring/2026-04-17-preview.md` (359 lines)
+- 4 scenarios with probabilities: Leon narrows (40%), stay expires (20%), SCOTUS application (50% base), Leon expands (15%)
+- Roberts posture synthesis: 50-55% SCOTUS grant probability if filed
+- April 14 CIT events: IEEPA refund conference, Section 122 ruling 25% this week
+- May Day + civic action implications for each scenario
+- Hour-by-hour watch items through April 17
+
+### open-source-rideshare — Rider rating system COMPLETE
+
+6 new files, 2 updated. 36 tests (18 passing service-layer, 18 skipped integration).
+- models/rider_rating.py: RiderRating with unique constraint (ride_id + driver_id) and check constraint (1-5)
+- services/rider_ratings.py: submit, summary, per-ride lookup, low-rated list (30-day < 3.0 avg with > 5 ratings)
+- api/v1/rider_ratings.py: 4 endpoints (driver submit, public summary, per-ride, admin low-rated list)
+- Migration f1a3c7e92d05_add_rider_ratings.py
+- Committed: feat(rideshare): add rider rating system (drivers rating riders, mutual accountability)
+
+### off-grid-living — 05-food-preservation.md COMPLETE (1,522 lines)
+
+Domain 5 written. master-outline.md updated. Committed.
+- 13 sections: root cellaring, canning, lacto-fermentation, dehydration (17-crop table), freezing (solar sizing math), smoking/curing (nitrite chemistry), vinegar pickling, oil preservation, grain storage (17-commodity table), preservation calendar, disaster scenarios, cost/ROI
+- Notable: 25-row root cellar storage table; 20-row pressure canning process table; UDS smoker construction; freeze-dryer ROI; nuclear contamination note (Cs-137/Sr-90 cannot be removed by cooking); 5-household equipment cooperative math
+
+### Status: COMPLETE
+
+---
+
+## 2026-04-13 — Session 79 — resistance-research + off-grid-living
+
+### Orientation
+- INBOX: Empty
+- BLOCKED: GitHub push still blocked (no SSH/credentials — no resolution from user yet)
+- Stockbot: Paper trading live, market still closed (Sunday). First trades fire Monday 9:30 AM ET.
+- Sessions 76–78 already ran today: monitoring (morning + afternoon), 07-heating-cooling.md, mvp-protocol-design.md
+- Selected tasks: (1) resistance-research evening monitoring pass focused on April 17 SCOTUS deadline; (2) off-grid-living 04-food-production.md
+
+### Actions
+- Launched resistance-research evening monitoring agent (background) — focused on White House ballroom SCOTUS application, Nashville Crenshaw ruling, CIT April 14 conference
+- Launched off-grid-living food-production agent (background) — writing 04-food-production.md (~900 lines: caloric math, perennials, livestock, seed saving, soil systems)
+- Launched open-source-rideshare incentive programs agent (background) — new feature: quest/peak-hours/streak bonus programs for driver retention. Files: models/incentive.py, services/incentives.py, api/v1/incentives.py, schemas/incentive.py, migration, ~35 tests
+- Status: COMPLETE
+
+### open-source-rideshare — driver incentive/bonus system COMPLETE
+
+New feature committed. 6 new files, 2 updated.
+
+Files:
+- `models/incentive.py` — IncentiveProgram + DriverIncentiveProgress models (ProgramType enum: quest/peak_hours/streak/earnings_guarantee; ProgressStatus: active/completed/paid/expired)
+- `schemas/incentive.py` — Full Pydantic v2 schema set
+- `services/incentives.py` — get_active_programs, create_or_get_progress, record_trip_completion (with time-window + day-of-week guards, streak expiry logic), get_driver_summary, mark_bonuses_paid
+- `api/v1/incentives.py` — 3 driver endpoints + 5 admin endpoints
+- `db/migrations/versions/e2f5a9c81d47_add_incentive_programs.py` — Alembic migration
+- `tests/test_incentives.py` — 36 tests (0 failures, 36 skipped pending live DB — standard behavior)
+- Updated: `models/__init__.py`, `main.py`
+
+### off-grid-living — `04-food-production.md` COMPLETE (1,301 lines)
+
+Domain 4 complete and master outline updated to mark it done. Coverage:
+- Caloric math: 1,800–4,000 cal/day by activity; calories/acre by crop (sweet potato 4.875M/acre tops); 4-person household targets; ranked caloric density table per sq ft
+- Annual vegetables: Zone 3–10 planting calendar; 15-crop spec table (days-to-maturity, yield/sq ft, storage); succession planting with specific sq footage; 1/4-acre/1/2-acre/1-acre allocation tables
+- Perennial systems: 12 fruit tree species table; nut tree calorie density (pecan 3,100 cal/lb; 465,000 cal/tree mature); 7-layer food forest design; berry yield by row foot
+- Livestock: Chicken egg math (8 hens = 1,920 eggs/year); rabbit cycle (3:1–4:1 FCR, 160 lb/year from trio); goat milk math (400–600 gal/year/doe); pig; duck vs. chicken table; IBC tote aquaponics
+- Seed saving: Isolation distances by crop family; viability table for 18 crops; wet/dry processing; seed bank targets
+- Soil systems: Hot pile compost design (131–160°F target); C:N table; cover crop calendar; no-till vs. till comparison; hugelkultur; biochar retort method
+- Food preservation: Root cellar parameters; 9-method comparison; storage duration matrix
+- Water for food: 1/2-acre garden needs ~163,000 gal/season (reduced to ~80k with mulch + drip); rainwater sizing math; drip vs. overhead table
+- Cost tables: Startup $1,200–$10,500; annual $190–$2,100; livestock by species; payback 0.5–2.5 years
+- Disaster: Crop failure math; drought protocol; IPM hierarchy; post-nuclear food safety (zeolite 50 lb/100 sq ft, deep till, potassium for Cs-137), pre-positioning checklist
+
+### resistance-research — April 13 evening monitoring COMPLETE
+
+New file: `monitoring/2026-04-13-evening.md`. Litigation tracker corrected.
+
+Key findings:
+1. **White House ballroom**: No SCOTUS application filed. No Leon remand response. April 17 stay expiration is still the hard clock. The D.C. Circuit separately remanded to Leon to clarify whether his injunction covers underground infrastructure (bomb shelters, etc.) — if Leon narrows it to exclude underground work, the administration's SCOTUS narrative collapses before any application is filed. This Leon response could break simultaneously with the SCOTUS filing in the next 96 hours.
+2. **Nashville (Crenshaw)**: No ruling. Continued silence may indicate Crenshaw is weighing subpoenaing Blanche rather than simply dismissing.
+3. **Maryland — CORRECTION**: April 17 deadline is MOOT. Xinis already disposed of it on April 12: rejected the government's self-imposed schedule, set new briefings April 20, hearing April 28. The "double-deadline" scenario (ballroom + Maryland) no longer exists.
+4. **CRITICAL CORRECTION to tracker**: IEEPA tariffs are NOT pending — SCOTUS struck them down 6-3 on February 20, 2026 (*Learning Resources v. Trump*, No. 24-1287, Roberts opinion). The April 14 CIT conference is about REFUND IMPLEMENTATION (CBP Phase 1 system, April 20 launch). The live constitutional tariff fight is the **Section 122 challenge** (10% global tariff post-IEEPA), argued April 10 before CIT three-judge panel — ruling still pending.
+5. **May Day**: No AFL-CIO national endorsement. Coalition unchanged.
+
+Next hard checkpoints: April 14 12PM CBP report, April 14 3PM Eaton conference, April 14-17 Leon remand response, April 17 stay expiration.
+
+---
+
+## 2026-04-13 — Session 78 — resistance-research + off-grid-living + open-repo
+
+### Orientation
+- INBOX: Empty
+- BLOCKED: GitHub push still blocked (no SSH key) — not actionable
+- Stockbot: Paper trading live, market opens Monday 9:30 AM ET — no work needed
+- Selected: resistance-research afternoon monitoring (April 17 deadline critical), off-grid-living 07-heating-cooling.md, open-repo MVP protocol design
+
+### resistance-research — April 13 afternoon monitoring pass
+
+Launched background agent. New file written: `monitoring/2026-04-13-afternoon.md`.
+Litigation tracker updated with 2 new entries.
+
+Key findings:
+- May Day coalition larger than morning data: NEA published operational toolkit (member infrastructure mobilized), NNU 200k, UFCW Local 3000 50k, CTU House of Delegates formal vote — most organizationally significant update of the day
+- Ballroom: no new Leon ruling or SCOTUS application; April 9 security filing details now in wider coverage (missile-resistant steel, bomb shelters, "Top Secret Military installations")
+- Nashville: still no Crenshaw ruling; both April 17 pressure points wobbling
+- AFGE/VA March 13 injunction (300k VA workers, CBA restoration) was missing from tracker — added
+- CIT/IEEPA: April 14 CBP report is next checkpoint; no preview located
+
+### off-grid-living — `07-heating-cooling.md` complete (846 lines)
+
+Full technical reference: building envelope (R-value targets by zone, 8 insulation materials), passive solar (overhang formula, thermal mass sizing), passive cooling (earth tubes, night flushing), wood stove (sizing chart, 14-species BTU table, seasoning guide), rocket mass heater, masonry heater, propane ($3,125/season estimate), mini-split COP table by temperature, evaporative cooler, emergency protocols (heat dome, cold snap, nuclear shelter). Cost tables and payback analysis included.
+
+Master outline updated: domains 3, 6, 7 marked Complete.
+
+### open-repo — `mvp-protocol-design.md` complete (711 lines)
+
+5 JSON-LD content type schemas (procedure, recipe, schematic, plan, service-listing), endorsement schema with DID signatures, federation protocol (ActivityPub + 3 extensions, 9-endpoint API spec), 5-phase bootstrapping plan with seed sources and import pipeline, definitive MVP stack (FastAPI + PostgreSQL + Meilisearch + Kubo + Next.js), success metrics, 5 open questions before building.
+
+### Status: Complete
+- PROJECTS.md and CHECKIN.md updated
+
+---
+
 ## 2026-04-13 — Session 76 — resistance-research monitoring + off-grid-living water
 
 ### Orientation

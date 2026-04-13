@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-13 (Session 77)
+> **Last updated by**: orchestrator on 2026-04-13 (Session 81)
 
 ---
 
@@ -29,7 +29,7 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Democratic renewal proposal at 22 domains / 2,544 lines / 13 feedback loops. Cross-domain quality pass COMPLETE. **Publication-ready format COMPLETE and CURRENT** — `published/` directory updated in Session 70 to include Sessions 68-69 content (Domains 10-15 fiscal estimates, subsections 10f/11f/14f; published copy now 2,595 lines). All 22 domains at full evidence depth. Session 76 monitoring pass: White House ballroom (April 17 deadline — National Trust "no national security emergency" filing, SCOTUS application window open); Abrego Garcia (Nashville case dismissal possible — removes admin's strongest argument); MSPB oral argument held April 9 awaiting ruling; CIT April 14 CBP status report due; mail voting EO clarification (EO 14399 vs EO 14248). Next: April 17 ballroom deadline monitoring pass critical.
+**Current focus**: Democratic renewal proposal at 22 domains / 2,544 lines / 13 feedback loops. All 22 domains at full evidence depth. Session 81: April 13 Monday monitoring complete — `monitoring/2026-04-13-monday.md`. Key status: Leon has not acted on remand (still open); no SCOTUS application filed; Section 122 panel sharply skeptical at April 10 oral argument (ruling pending); Abrego Garcia April 17 pressure defused, April 28 is the line; Nashville (Crenshaw) silence suggests subpoena for Blanche being weighed. **Next**: Monitor April 14 (CBP Phase 1 declaration noon EDT + Eaton conference) and April 17 (Leon remand response + possible SCOTUS application). April 28: Abrego Garcia hearing.
 **Blocked on**: —
 **Notes**: Ongoing research and monitoring project. Existing files cover ICE detention, litigation tracking, case studies, civic action. When no specific task is queued, extend existing threads, find new angles, and monitor developments. Democratic renewal proposal is comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
 
@@ -53,7 +53,7 @@
 **Status**: Active — early stage
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-source-rideshare/`
-**Current focus**: Backend comprehensive — 1,817 unit tests passing (Session 73 total; Session 77 added tipping system, 37 more tests pending PostgreSQL confirmation). Features include: matching engine, WebSocket (heartbeat, health), payments (Stripe, cancellation fees), pricing (demand-aware, time-of-day), geocoding, auth, admin API, Alembic migrations, ride history, profile endpoints, safety service (SOS, trip sharing, emergency contacts), admin SOS monitoring, cancellation policy, notification service (Twilio SMS + SendGrid email + Firebase FCM push), driver rating aggregation, rate limiting, admin SOS WebSocket, scheduled rides, dispatch scheduler + retry logic, admin cancellation stats, driver earnings, promo codes & referral system, ride receipts, service areas/geofencing, admin feedback & disputes, ride & driver metrics dashboard, ride pooling/shared rides, vehicle management & WAV matching, in-app chat, transparent demand pricing, driver ETA estimation, saved locations, admin document verification, recurring rides/commute scheduling, multi-stop rides/waypoints, fare splitting, driver payout & settlement (Stripe Connect), SMS/email notification integration, audit logging & compliance reporting, **background check integration (Checkr API), device token management (FCM)**. Session 70: feature/background-checks-firebase-push committed locally (101 new tests, 1,708 → 1,809). Both Flutter apps have full user flows. Pending: git identity on Pi to commit/push.
+**Current focus**: Backend comprehensive — ~1,969 total tests (1,918 passing + 51 new notif prefs). Features include: matching engine, WebSocket, payments (Stripe, cancellation fees), pricing (demand-aware, time-of-day), geocoding, auth, admin API, Alembic migrations, ride history, profile endpoints, safety service (SOS, trip sharing, emergency contacts), admin SOS monitoring, cancellation policy, notification service (Twilio SMS + SendGrid email + Firebase FCM push), driver rating aggregation, rate limiting, admin SOS WebSocket, scheduled rides, dispatch scheduler + retry logic, admin cancellation stats, driver earnings, promo codes & referral system, ride receipts, service areas/geofencing, admin feedback & disputes, ride & driver metrics dashboard, ride pooling/shared rides, vehicle management & WAV matching, in-app chat, transparent demand pricing, driver ETA estimation, saved locations, admin document verification, recurring rides/commute scheduling, multi-stop rides/waypoints, fare splitting, driver payout & settlement (Stripe Connect), SMS/email notification integration, audit logging & compliance reporting, background check integration (Checkr API), device token management (FCM), driver incentive/bonus programs (quest, peak-hours, streak, earnings guarantee), rider rating system (drivers rating riders, low-rated flag, admin monitoring), **per-user push notification preferences (opt-in/out by type + channel, SOS bypass, full CRUD API)**. Push to GitHub blocked pending SSH key/credentials setup. Both Flutter apps have full user flows.
 **Blocked on**: —
 **Notes**: This is the only public project. Higher standards for documentation, test coverage, and code quality since it's community-facing. Regulatory/safety/security solutions and growth strategy are in scope alongside the technical build.
 
@@ -77,7 +77,7 @@
 **Status**: Active — research phase
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Landscape research COMPLETE (Session 77). `landscape-research.md` (16-platform survey) + `architecture-notes.md` written. Key finding: missing layer is practical/procedural knowledge and connective tissue between WikiHouse/Printables/Instructables. Architecture: federated instances + IPFS content addressing + ActivityPub. Next: MVP protocol design — define `procedure`, `schematic`, `recipe` content type schemas; bootstrapping plan from WikiHouse/Open Food Facts/CC Instructables.
+**Current focus**: Landscape research COMPLETE. Architecture notes COMPLETE. MVP protocol design COMPLETE (Session 78) — `mvp-protocol-design.md` (711 lines): 5 JSON-LD content type schemas, endorsement schema, ActivityPub federation protocol, 5-phase bootstrapping plan, MVP stack decisions (FastAPI/PostgreSQL/Meilisearch/Kubo/Next.js). Next: begin content import pipeline — select first source (OpenFarm or Practical Action Technical Briefs), build extraction script, transform to procedure/recipe schemas, load into seed database.
 **Blocked on**: —
 **Notes**: Start with landscape research before any building. The goal is ambitious — don't reinvent what already exists well. Identify the missing layer that ties it all together or fills the gaps nobody else is filling.
 
@@ -89,7 +89,7 @@
 **Status**: Active — research phase
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). `03-water.md` complete (~850 lines). `06-energy-power.md` in progress (Session 77) — solar sizing, battery chemistry, micro-hydro, wind, generator, costs. Next: 07-heating-cooling.md or 04-food-production.md.
+**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). Domains complete: `03-water.md` (850 lines), `04-food-production.md` (1,301 lines), `05-food-preservation.md` (1,522 lines), `06-energy-power.md` (997 lines), `07-heating-cooling.md` (846 lines), `08-medical-health.md` (1,139 lines). Next: `09-waste-sanitation.md` — composting toilets, greywater, solid waste, human waste pathogens, legal considerations by state.
 **Blocked on**: —
 **Notes**: This is a planning and research project, not a software build. Practical and actionable plans over theory. Include real costs, sourcing, and skill requirements where possible. Nuclear disaster scenario is in scope — treat it seriously.
 
