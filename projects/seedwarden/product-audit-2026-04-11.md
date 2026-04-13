@@ -26,8 +26,9 @@
 | 15 | Apartment Plant Catalog | 1171 | Yes | Yes* | Yes | $14 | Tier 2 |
 | 16 | Survival Garden Regional Plans | 1363+ | Yes | Yes (updated) | Yes | $22 | Tier 1 |
 | 17 | Hunting, Fishing & Trapping Manual | 747 | Yes | Yes* | — | $20 | Tier 1 |
-| 18 | Apartment Growing Complete Guide | 3110 | **No** | Yes | **No** | $13 | Tier 2 |
-| 19 | Companion Planting Chart | 382 | **No** | Yes | — | $5 | Tier 1 |
+| 18 | Apartment Growing Complete Guide | 3110 | Yes (146pp) | Yes | **No** | $13 | Tier 2 |
+| 19 | Companion Planting Chart | 382 | Yes (21pp) | Yes | — | $5 | Tier 1 |
+| 20 | Zone-by-Zone Seed Starting Calendar | 1635 | Yes (82pp) | **No** | — | $7–$18 | Tier 1 |
 
 \* Listing copy written this session (April 11, 2026)
 
