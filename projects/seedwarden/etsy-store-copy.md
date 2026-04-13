@@ -1306,3 +1306,65 @@ This is an **instant digital PDF download** — delivered immediately after purc
 > apartment gardening pdf, indoor plant guide, balcony garden guide, grow light plants, no yard gardening, small space gardening, indoor edible plants, jar sprouting guide, container garden pdf, apartment plant care, north window plants, urban growing guide, digital gardening pdf
 
 ---
+
+---
+
+## 20. Zone-by-Zone Seed Starting Calendar
+
+**Title**
+
+> Seed Starting Calendar by Zone | USDA Zones 3-10 Planting Schedule | Digital PDF Gardening Guide
+
+*(101 characters)*
+
+---
+
+**Description**
+
+"Plant after danger of frost" is the most useless advice in gardening. It doesn't tell you when that is. It doesn't tell you what to start indoors or when. It doesn't tell you which varieties work in your actual climate.
+
+This calendar does.
+
+The Zone-by-Zone Seed Starting Calendar gives you exact planting dates for USDA Hardiness Zones 3–10 — month by month, for 45+ vegetables, herbs, and companion flowers. It's organized by your zone, not by some generic schedule that assumes you're in the perfect mild climate with a long growing season.
+
+**What's inside:**
+
+- **Month-by-month planting schedules for every zone from 3 to 10** — indoor start dates with weeks-before-last-frost counts, transplant windows with hardening-off notes, and direct sow timing with soil temperature requirements
+- **45+ crops covered** — tomatoes, peppers, cucumbers, beans, squash, broccoli, cabbage, kale, lettuce, carrots, beets, onions, herbs, cover crops, and companion flowers
+- **Named variety recommendations** — not "any tomato." Specific open-pollinated and heirloom varieties that perform well in each zone's growing conditions
+- **Frost date ranges for major cities** — find your nearest city and use its schedule directly
+- **Season extension strategies** — cold frames, row covers, and tunnel season extension specific to your zone; how to add 4–8 weeks of productive growing time in colder zones
+- **Soil temperature reference** — direct sow timing tied to actual soil temperature rather than calendar dates, so you know when seeds will actually germinate
+- **Indoor setup reference** — lights, trays, media, and watering for successful indoor starts without damping off or legginess
+
+**Why zones matter:**
+
+A gardener in Zone 4 (Minnesota) starts tomatoes indoors in late March under lights and doesn't put them outside until late May. A gardener in Zone 9 (Central California) starts tomatoes outdoors in February and has already harvested by the time Zone 4 puts plants in the ground. One generic schedule doesn't serve both — this calendar was written to serve both specifically.
+
+Cold climates (Zones 3–5): Emphasis on short-season varieties, succession planting to stretch the harvest window, and season extension because every week matters when your frost-free season is 90–120 days.
+
+Temperate climates (Zones 6–7): Two-season gardening becomes possible — spring and fall crops with summer gaps for heat-sensitive greens. The calendar covers both seasons.
+
+Warm climates (Zones 8–10): Heat is the main challenge, not cold. The calendar covers warm-season crops and the counterintuitive cool-season windows in late fall and winter when Zone 3 is under snow.
+
+**Who this is for:**
+
+Beginning and intermediate gardeners who want to stop guessing and start growing on a schedule that matches their actual climate. Useful whether you've been gardening for one season or ten — the frost-date and soil-temperature approach is how experienced gardeners actually think.
+
+This is an **instant digital PDF download** — 82 pages delivered immediately after purchase through Etsy. Works on any phone, tablet, or computer. Print it, mark it up, stick it on the wall above your seed trays.
+
+---
+
+**Related products from Seedwarden:**
+
+- **Apartment Seed Starting Kit** ($9) — Complete guide to starting seeds indoors in small spaces, including tray setup, lighting, potting mix, and troubleshooting; pairs directly with this calendar for timing + technique
+- **Heirloom Variety Selection Guide** ($11) — 40+ heirloom varieties chosen for small spaces and easy seed saving, with variety-specific planting notes that complement zone calendar timing
+- **Food Sovereignty Starter Guide** ($8) — The complete introduction to seed saving — keep the varieties that worked in your zone and never buy the same seeds twice
+
+---
+
+**Tags**
+
+> seed starting calendar, planting schedule by zone, USDA zone planting guide, when to start seeds, seed starting indoors, garden planting calendar, zone 3 planting, zone 7 planting, frost date guide, vegetable planting schedule, heirloom seed starting, digital garden planner, seed starting pdf
+
+---
