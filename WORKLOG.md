@@ -4182,3 +4182,28 @@ New file: `monitoring/2026-04-20-watch.md` (46 sources, ~3,500 words).
 - 14.11 55-item cost table (startup + annual + revenue)
 - 14.12 9-scenario decision matrix (employed+savings, debt, unemployed, no savings, remote worker, near-retirement, young/no savings, mortgage, red flags)
 ## 2026-04-13 — Session 93 — resistance-research — Domain 20 Economic Concentration deepening started
+
+## 2026-04-13 — Session 94 — resistance-research — Domain 21 Data Privacy deepening COMPLETE
+
+### Orientation
+- INBOX.md empty — no new tasks
+- BLOCKED.md: GitHub push still blocked (no SSH key); stockbot monitoring blocked (no API key in env)
+- Selected: resistance-research Domain 21 (Data Privacy) — next in deepening queue
+
+### resistance-research — Data Privacy domain deepening COMPLETE
+
+New file: `projects/resistance-research/domain-deepening/data-privacy-evidence.md` (596 lines). Committed.
+
+**Key findings**:
+- **RTB ecosystem**: 294 billion US ad auctions/day; location data travels from smartphone impression to federal agency without warrant through commercial intermediary chain. FTC enforcement: Kochava (consent order 2024), X-Mode (2024), Mobilewalla (Dec 2024), Gravy Analytics (Jan 2025) — all documented targeting sensitive locations (clinics, mosques, military installations). CBP paid Babel Street $2.7M+ for geolocation subscriptions. DHS OIG Sept 2023: ICE, CBP, Secret Service violated privacy policies using commercial geolocation.
+- **PCLOB non-operational**: Trump fired 3 of 5 members January 27, 2025 — board has no quorum, cannot issue reports or oversight findings. Only civilian oversight body for intelligence surveillance neutralized.
+- **Section 702**: Reauthorized April 2024 via RISAA (no warrant requirement for US-person queries added). FBI queried 204,090 US identifiers FY2022 including Jan. 6 suspects and BLM protesters. Sunsets April 2026 — next reauthorization fight imminent.
+- **Facial recognition**: NIST FRVT false-positive differential reaches factor of 7,203 across algorithm-demographic combinations. Robert Williams (Detroit, settled June 2024 — first confirmed wrongful FR arrest in US), Porcha Woodson (Detroit, arrested 8 months pregnant Jan 2023). Clearview AI $51.75M equity settlement approved March 2025.
+- **State law gap**: 19 states have comprehensive privacy laws — virtually none cover government surveillance, only commercial data. Industry preemption strategy: support weak federal ceiling to neutralize CCPA.
+- **GDPR outcomes**: €5.88B total fines since 2018; Ireland DPC alone issued €3.5B (Meta €1.2B data transfer fine largest single). EU AI Act biometric surveillance provisions effective February 2, 2025. PCLOB firings create Schrems III risk for EU-US Data Privacy Framework (€7-14B/year cross-border transfer value).
+- **Chilling effects**: Penney (2016) Wikipedia design documented with methodology. COINTELPRO to present: Denver JTTF informant paid $20K, encouraged weapons acquisition, snitch-jacketing BLM organizers. HIPAA gap: health apps, fertility trackers outside framework.
+- **Fiscal**: FDPA $400-600M/year (800-1,200 FTEs). Enforcement revenue offset: GDPR-comparable could generate $500M-$2B/year at maturity. Total Domain 21: $700-1,100M/year, net-positive over 10-year window.
+
+**Deepening pass status**: 9 of 22 domains complete. One remaining: Reparations (Domain 22).
+
+**PROJECTS.md updated**: current focus, deepened domain count, next task.

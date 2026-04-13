@@ -9,25 +9,32 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–93 (continued)
+**Sessions run**: 75–94 (continued)
 
-### Accomplished (Session 93 — continued)
+### Accomplished (Session 94)
 
-#### resistance-research — Domain 20 Economic Concentration deepening
+#### resistance-research — Domain 21 Data Privacy deepening COMPLETE
 
-**Domain 20: Economic Concentration** — `domain-deepening/economic-concentration-evidence.md` (644 lines):
-- **Markup methodology**: De Loecker-Eeckhout-Unger (QJE 2020) — average markup rose 1.18→1.67 (1980–2016), now 67% above competitive levels; Federal Reserve extension confirms trend through 2024. This is the peer-reviewed foundation for the proposal's $1.5 trillion labor share shift figure.
-- **Monopsony arc**: Alan Manning theoretical framework → Azar-Marinescu-Steinbaum (JHR 2022) empirical confirmation using 8.8M Burning Glass online vacancy postings; 5-17% wage penalty from concentration; rural/occupational niche concentration documented.
-- **Kill zone / killer acquisitions**: Cunningham-Ederer-Ma (JPE 2021) pharma natural experiment — incumbent firms acquire drugs in development that would compete with existing products and discontinue them; digital market extension debate documented.
-- **FTC non-compete rule quantified**: $400-488B over 10 years, 30 million workers, $524/year average wage gain, 8,500 new businesses/year — all from FTC's own regulatory impact analysis. Rule enjoined by Texas federal court August 2024 on jurisdictional grounds.
-- **AT&T 1984 breakup quantified**: Watzinger-Schnitzer study — local Bell territories saw patenting increase 15% vs. pre-divestiture trajectory; equipment market competition dropped prices 60%; long-distance rates fell 70% 1984–2000. Geographic limitation noted.
-- **Cross-ownership**: Azar-Schmalz-Tecu — common ownership by BlackRock/Vanguard/State Street raises airline prices 3-11% on concentrated routes; institutional shareholder coordination mechanism; Posner-Scott Morton-Weyl policy remedy designs.
-- **Active litigation**: Google Search — liability ruling August 2024 (exclusionary contracts with Apple/Samsung violate Sherman Act §2); remedy phase ongoing. FTC v. Amazon (2023 complaint, trial date 2026). DOJ v. Apple (filed March 2024). DOJ v. Google Ad Tech (trial completed Nov 2024, ruling pending).
-- **International benchmarks**: Germany Section 19a GWB (enacted Jan 2021, designated Apple/Google/Amazon/Meta/Microsoft by Sept 2024); EU DMA — Apple fined €500M, Meta fined €200M April 2025 (first enforcement actions); UK DMCCA in force Jan 2025 (10% global turnover fines); Australia ACCC 5-year inquiry, government response Dec 2024. Comparative enforcement budget table: EU spends ~$2.1/million GDP vs. US ~$0.6/million GDP.
-- **5 structured counterarguments**: Chicago School efficiency (Philippon falsifies it); "free services" (two-sided market problem, surveillance capital extraction); breakup destroys innovation (AT&T evidence refutes; AI race claim addressed); Amazon lowers prices (MFN clause pass-through, seller fee extraction from FTC complaint); codetermination incompatible with US law (statutory not constitutional barrier; VW-Chattanooga 2024 model).
-- **Fiscal estimates per subsection**: 20a ~$300M/yr → $50-100B consumer savings; 20c FTC rule $400-488B/10yr; 20d $1.6B additional investment; 20e German CEO/worker 50:1 vs. US 350:1.
+**Domain 21: Data Privacy and Digital Surveillance** — `domain-deepening/data-privacy-evidence.md` (596 lines):
+- **RTB ecosystem**: 294 billion US ad auctions/day expose user location data to any actor posing as an ad buyer — including federal agencies. FTC documented 4 enforcement actions 2024–2025: Kochava, X-Mode, Mobilewalla, Gravy Analytics — all sold data on sensitive locations (abortion clinics, mosques, military installations). CBP paid Babel Street $2.7M+ for geolocation subscriptions; DHS OIG Sept 2023 confirmed ICE/CBP/Secret Service violated privacy policies using commercial geolocation.
+- **PCLOB non-operational**: Trump fired 3 of 5 members January 27, 2025. Board has no quorum. The only civilian oversight body for intelligence surveillance has been neutralized.
+- **Section 702**: Reauthorized April 2024 (RISAA 60-34) without warrant requirement for US-person queries. FBI queried 204,090 US identifiers FY2022 including Jan. 6 suspects and BLM protesters. Sunsets April 2026 — reauthorization fight imminent.
+- **Facial recognition**: NIST FRVT false-positive differential reaches factor 7,203 across algorithm-demographic combinations; Black women face highest rates on majority of tested algorithms. Robert Williams (Detroit, settled June 2024 — first confirmed US case), Porcha Woodson (arrested 8 months pregnant Jan 2023). Clearview AI $51.75M equity settlement approved March 2025.
+- **State law gap**: 19 states have comprehensive privacy laws — virtually none cover government surveillance. Industry preemption strategy: support weak federal ceiling to neutralize CCPA.
+- **GDPR outcomes**: €5.88B total fines since 2018; Ireland DPC issued €3.5B (Meta €1.2B largest). EU AI Act biometric surveillance provisions effective February 2, 2025. PCLOB firings risk Schrems III challenge to EU-US Data Privacy Framework ($7-14B/year in cross-border transfers at stake).
+- **Chilling effects**: Penney (2016) Wikipedia study documented with full methodology; COINTELPRO-to-present surveillance of social movements; HIPAA gap for health/fertility apps.
+- **Fiscal**: Federal Data Protection Agency $400-600M/year (800-1,200 FTEs). Enforcement revenue offset: GDPR-comparable could generate $500M-$2B/year at maturity. Net-positive over 10-year window.
 
-**Deepening status: 8 of 22 domains complete.** Remaining: Data Privacy (21), Reparations (22).
+**Deepening status: 9 of 22 domains complete.** One remaining: Reparations (Domain 22).
+
+---
+
+### Stockbot Note
+Paper trading LIVE since April 13. First market open was Monday April 14. Orchestrator cannot check cycle logs without `STOCKBOT_API_KEY` in env. Check manually:
+```
+curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20
+```
+Or `http://127.0.0.1:8000` → Trading page.
 
 ---
 
@@ -60,14 +67,17 @@ Can you share the cycle logs or a screenshot from the Trading page? We can't pul
 ---
 
 ### Suggested Priorities (Next Session)
-1. **Resistance-research deepening queue**: Data Privacy (21), Reparations (22) — two domains left before the full 22-domain deepening pass is complete.
-2. **Open-source-rideshare**: Trip/driver activity heatmap analytics, or rider/driver notification history log.
+1. **Resistance-research — Reparations (Domain 22)**: Final domain in the deepening pass. After this, the full 22-domain evidence library is complete and the proposal is publication-ready.
+2. **Open-source-rideshare**: Trip/driver activity heatmap analytics, or rider/driver notification history log — good options for next feature.
 3. **Resistance-research**: April monitoring pass when user drops April 20+ updates in INBOX.md.
 4. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
 
 ---
 
 ### History
+
+#### Accomplished (Session 93)
+Domain 20 Economic Concentration deepening (644 lines): De Loecker-Eeckhout-Unger markup methodology (18%→67%); FTC non-compete rule $400-488B/10yr; AT&T 1984 breakup quantified; EU DMA Apple €500M/Meta €200M fines; FTC v. Amazon, DOJ v. Google/Apple litigation tracked.
 
 #### Accomplished (Session 93 — earlier in session)
 Domains 18 (Social Safety Net, 544 lines) and 19 (National Security, 648 lines) deepenings committed. See prior CHECKIN entry for details.
