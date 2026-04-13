@@ -498,6 +498,18 @@ PRODUCTS = [
         "A free guide from Seedwarden",
         "FREE",
     ),
+    (
+        "apartment-growing-complete-guide.md",
+        "The Complete Apartment Growing Guide",
+        "Indoor growing, balcony gardens, grow lights, and jar gardening",
+        "$13",
+    ),
+    (
+        "zone-seed-starting-calendar.md",
+        "Zone-by-Zone Seed Starting Calendar",
+        "Month-by-month planting schedules for USDA Zones 3–10",
+        "$18 (Complete Bundle)",
+    ),
 ]
 
 
