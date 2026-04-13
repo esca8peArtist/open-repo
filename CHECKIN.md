@@ -9,36 +9,46 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–96 (continued)
+**Sessions run**: 75–97 (continued)
 
-### Accomplished (Session 96)
+### Accomplished (Session 97)
 
-#### open-source-rideshare — Admin notification log endpoint + history tests
+#### open-source-rideshare — Admin rider management
 
-**`GET /admin/notification-logs`** — new admin-only endpoint in `api/v1/admin.py`:
-- Returns paginated notification log across **all users** (admin visibility)
-- Filters: `user_id`, `notification_type`, `channel`, `status`, `ride_id`
-- Pagination: `limit` (1–200, default 50) + `offset`
-- Results ordered newest first
-- Auth-gated: `require_admin`
-- New schemas: `AdminNotificationLogEntry`, `AdminNotificationLogListResponse`
+**`GET /admin/riders`** — list riders with name/phone search, active filter, pagination, sorting
+**`GET /admin/riders/{id}`** — single rider details with total/completed/cancelled ride counts + avg rating from driver ratings
+**`POST /admin/riders/{id}/suspend`** — suspend rider (409 if already suspended); sets `is_active=False`; audit logged
+**`POST /admin/riders/{id}/reactivate`** — reactivate rider (409 if already active); sets `is_active=True`; audit logged
 
-**`test_notification_history.py`** — 38 tests (16 unit pass, 22 integration skip pending DB):
-- 8 unit tests for `get_notification_history` (filtering by type, unread_only, pagination, total vs page count)
-- 7 unit tests for `list_notification_logs` (each filter variant, total count)
-- 12 integration tests (auth gating, field validation, cross-user visibility, filtering, pagination)
+Bulk-query pattern avoids N+1 (2 queries for stats + ratings across all page results). Symmetric with existing driver management. 20 tests. Committed: `34e75cc`
 
-**Full test suite: 2,432 passing** (from 2,416 before Session 90).
+#### open-source-rideshare — Admin promo analytics
 
-Committed: `360efae`
+**`GET /promos/admin/stats?period={week|month|year|all}`** — promo usage analytics:
+- Total redemptions, total discount value given, unique rider count
+- Active promo count (point-in-time)
+- Referral vs non-referral redemption breakdown
+- Top 10 promos by usage count
+- Top 10 promos by total discount given
+
+5 DB queries total. No new models. 11 tests. Committed: `1317ec5`
+
+**Full test suite: 2,463 passing** (was 2,432 at Session 96).
 
 ---
 
-### Accomplished (Session 95)
+#### resistance-research — Domain 6 Judicial Independence deepening COMPLETE
 
-#### resistance-research — Domain 22 Reparations deepening COMPLETE — planned deepening queue finished
+`domain-deepening/judicial-independence-evidence.md` (406 lines, 11 sections). Key findings:
+- **Threat scale**: 564 threats against federal judges FY2025 (U.S. Marshals); AG Bondi formal misconduct complaint against Chief Judge Boasberg — documented intimidation through judicial discipline process
+- **Shadow docket collapse**: 8 emergency stays 2000-2016 → 41 Trump first term → 110+ applications in 2024-25 term; 67% grant rate vs. 31% Biden
+- **SCOTUS legitimacy**: 40% approval (Gallup), 24-point drop in 4 years; 51-point partisan gap; Thomas/Alito ethics scandals documented; November 2023 ethics code has no enforcement mechanism
+- **Capture metrics**: 90% of Trump's 234 first-term appointments were Federalist Society members; 6/9 SCOTUS justices FS affiliates; 21 of 35 district vacancies are judicial emergencies
+- **Consent decree defiance**: 250 of 380 Civil Rights Division lawyers gone; EPA 96% collapse in consent decrees filed
+- **Germany 2024 model**: BVerfG hardening via Basic Law amendment — documented as the international standard for court protection against capture
+- **Fiscal case**: $200-400M/year reform investment is enforcement insurance for $650-1,000B/year across all 22 domains — judicial independence is the layer through which every other reform is enforced
 
-`domain-deepening/reparations-evidence.md` (552 lines). Key findings: racial wealth gap $284K vs $44K (6.4:1); GI Bill exclusion mechanics; FHA 1935/1938 Underwriting Manual verbatim racism; urban renewal 1.36M displaced; Chicago contract buying $3-4B; HR 40 36-year history; Evanston 44 recipients; California apology passed, direct payments failed; South Africa TRC cautionary lesson; Citigroup $16T GDP cost. **Deepening pass complete: 10 of 22 domains deepened** — criminal justice, healthcare-education, housing, tax policy, labor policy, social safety net, national security, economic concentration, data privacy, reparations.
+**Deepening library: 11 of 22 domains now complete.**
 
 ---
 
@@ -54,7 +64,7 @@ Or `http://127.0.0.1:8000` → Trading page.
 ### Needs Your Input
 
 **open-source-rideshare — GitHub push still blocked**
-Sessions 77–96 of commits piling up locally. Options:
+Sessions 77–97 of commits piling up locally. Options:
 - (a) `git config --global credential.helper store` + push once with username/PAT
 - (b) `ssh-keygen -t ed25519` on Pi → add public key to GitHub account
 - (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
@@ -71,14 +81,20 @@ Can you share the cycle logs or a screenshot from the Trading page? We can't pul
 ---
 
 ### Suggested Priorities (Next Session)
-1. **Open-source-rideshare**: Trip/driver activity heatmap analytics — good next feature, complements the notification history work. No blockers.
-2. **Resistance-research**: 12 remaining domains have no deepening files yet — option to continue the deepening pass beyond the original 10.
-3. **Off-grid-living**: All 16 domains complete — quality review pass or publish-ready formatting pass.
+1. **Stockbot**: If cycle logs shared — assess model performance and suggest improvements. Otherwise, continue open-source-rideshare.
+2. **Open-source-rideshare**: 2,463 tests passing — next candidates: vehicle type preference for ride requests, trip activity heatmap analytics, or rider subscription plans.
+3. **Resistance-research**: 11 remaining domains without deepening files. Top candidates: Domain 1 (Electoral Reform), Domain 15 (Environment/Climate), Domain 16 (Immigration).
 4. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
 
 ---
 
 ### History
+
+#### Accomplished (Session 96)
+Admin notification log: `GET /admin/notification-logs`; filterable by user/type/channel/status/ride; 16 tests; 2,432 total passing.
+
+#### Accomplished (Session 95)
+Domain 22 (Reparations) deepening complete (552 lines). Deepening pass: 10 of 22 domains finished.
 
 #### Accomplished (Session 93)
 Domain 20 Economic Concentration deepening (644 lines): De Loecker-Eeckhout-Unger markup methodology (18%→67%); FTC non-compete rule $400-488B/10yr; AT&T 1984 breakup quantified; EU DMA Apple €500M/Meta €200M fines; FTC v. Amazon, DOJ v. Google/Apple litigation tracked.

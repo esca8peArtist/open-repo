@@ -4266,3 +4266,63 @@ New file: `projects/resistance-research/domain-deepening/reparations-evidence.md
 **Deepening pass status**: 10 of 22 domains complete. ALL 22 DOMAINS DEEPENED. The full domain-deepening library is complete.
 
 **PROJECTS.md updated**: deepened domain count, current focus updated to note completion of deepening pass.
+
+## 2026-04-13 — Session 97 — open-source-rideshare — Admin rider management
+
+### Orientation
+- INBOX.md empty — no new tasks
+- BLOCKED.md: GitHub push still blocked (no SSH key); stockbot monitoring blocked (no API key in env)
+- Stockbot: paper trading live (since April 14), user needs to share cycle logs; no dev work possible without performance data
+- Selected: open-source-rideshare for code feature work
+
+### open-source-rideshare — Admin rider management COMPLETE
+
+**Feature**: Admin rider management — list, get, suspend, and reactivate rider accounts. Symmetric with existing driver suspend/reactivate; closes a safety gap where admins could not suspend problem riders.
+
+**Files changed**:
+- `backend/app/schemas/admin.py` — Added `AdminRiderResponse` (id, name, phone, email, is_active, phone_verified, referral_code, created_at, ride stats, avg_rider_rating) and `RidersListResponse` (paginated)
+- `backend/app/api/v1/admin.py` — Added `AdminRiderResponse`, `RidersListResponse` imports; added `_rider_to_response` helper; 4 new endpoints: `GET /admin/riders`, `GET /admin/riders/{id}`, `POST /admin/riders/{id}/suspend` (409 if already suspended), `POST /admin/riders/{id}/reactivate` (409 if already active). All endpoints: admin-auth gated, audit-logged. Bulk-query pattern for ride stats and ratings (avoids N+1).
+- `backend/tests/test_admin_riders.py` — 20 tests: schema construction (5), list response (3), get_rider (3), suspend (3), reactivate (3), list_riders (3)
+
+**Test results**: 20 new tests passing; 2452 total suite (329 skipped). Zero regressions.
+
+**Committed**: `34e75cc feat(open-source-rideshare): admin rider management (list/get/suspend/reactivate)`
+
+### Next
+- Spawning resistance-research agent to deepen Domain 6: Judicial Independence and Rule of Law
+- Spawning promo analytics feature for open-source-rideshare
+
+### open-source-rideshare — Admin promo analytics COMPLETE
+
+New endpoint: `GET /promos/admin/stats?period={week|month|year|all}`. Returns: total redemptions, total discount given, unique riders who used promos, active promo count, referral vs non-referral breakdown, top 10 promos by usage count and by discount value. No new models — pure query analytics.
+
+**Files changed**:
+- `backend/app/schemas/promo.py` — Added `PromoTopEntry` and `PromoStats` schemas
+- `backend/app/api/v1/promos.py` — Added imports (datetime, func); added `promo_stats` endpoint with 5 DB queries (summary, active count, referral breakdown, top-by-usage, top-by-discount)
+- `backend/tests/test_promo_stats.py` — 11 tests: schema construction (6), endpoint mock tests (5)
+
+**Test results**: 11 new tests passing; 2463 total suite. Zero regressions.
+
+**Committed**: `1317ec5 feat(open-source-rideshare): admin promo analytics endpoint`
+
+### resistance-research — Domain 6 Judicial Independence deepening COMPLETE
+
+Background agent completed. New file: `projects/resistance-research/domain-deepening/judicial-independence-evidence.md` (406 lines, 11 sections).
+
+**Key findings**:
+- **Scale of threat**: 564 threats against federal judges FY2025 (U.S. Marshals); AG Bondi filed formal misconduct complaint against Chief Judge Boasberg — documented use of judicial discipline as intimidation; V-Dem U.S. liberal democracy score fell 24% (0.75→0.57)
+- **Shadow docket**: 8 emergency stay requests total 2000-2016 → 41 in Trump first term → 110+ applications in 2024-25 term alone; 67% grant rate vs. 31% under Biden
+- **SCOTUS legitimacy**: 40% public approval (Gallup), down 24 points in 4 years; 15% Democrat approval — 51-point partisan gap; Thomas 20+ years undisclosed Crow travel/real estate; Alito Paul Singer private jet; November 2023 ethics code has no enforcement mechanism
+- **Federalist Society capture**: 6/9 SCOTUS justices FS affiliates; 90% of Trump's 234 first-term federal appointments were FS members; 21 of 35 district court vacancies are judicial emergencies
+- **Consent decree defiance**: 250 of 380 Civil Rights Division attorneys gone; EPA 96% collapse in new consent decrees; 3 attack vectors documented: unilateral termination, motions to dismiss agreed decrees, staffing collapse
+- **Germany 2024 model**: BVerfG hardening via Basic Law supermajority amendment — 12-year non-renewable terms, two-senate structure explicitly moved to amendment-resistant provisions; documented as the international standard for court protection
+- **Term limits**: 18-year terms supported by both conservative and progressive constitutional scholars independently; Biden commission found it area of greatest consensus
+- **Fiscal**: $200-400M/year reform investment is "enforcement insurance" for $650-1,000B/year program across all 22 domains — judicial independence is the enforcement layer for everything else
+
+**Deepening library**: 11 of 22 domains now complete.
+
+**PROJECTS.md updated**.
+
+## Session 97 summary
+- 2 open-source-rideshare features: admin rider management (20 tests) + admin promo analytics (11 tests) — 2463 total
+- 1 resistance-research deepening: Domain 6 judicial independence (406 lines)
