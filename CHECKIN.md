@@ -34,9 +34,10 @@
 - Wrote Etsy listing copy for Zone-by-Zone Seed Starting Calendar — all 20 paid products now have complete listing copy
 - Updated product audit to reflect 21-product catalog with correct PDF status
 
-#### off-grid-living — Domain 1 (Site Selection) + Domain 12 (Security & Defense) in progress
-- Two agents writing these files now; expect ~1,200–1,500 lines each
-- These were the only 2 "Planned" domains in master-outline — will complete the document map
+#### off-grid-living — Domain 1 (Site Selection) + Domain 12 (Security & Defense) COMPLETE
+- **01-site-selection.md** (1,178 lines): 32-criterion parcel checklist + weighted scoring matrix; prior appropriation vs. riparian doctrine by state; well permitting + seasonal water table; rainwater harvesting legality all 50 states; soil testing + amendment; regional comparison (Mid-South best overall, specific county recommendations); due diligence (minerals, easements, perc test, flood plain); 3-phase transition model with budget tables
+- **12-security-defense.md** (1,252 lines): 13-threat probability×consequence matrix; fencing/camera/lighting/dog costs; 14-species predator table with fencing specs; 4-gun practical loadout + safe comparison; OPSEC basics; community defense + radio protocols; 12 threat-specific response protocols; quarterly audit checklist (30+ items); regional profiles; 50+ product reference list (2026 prices)
+- **master-outline.md document map: 100% complete** — all 16 domain files now written
 
 ---
 
