@@ -6,6 +6,62 @@
 
 ---
 
+## 2026-04-13 — Session 93 continued — resistance-research — Economic Concentration deepening
+
+### Domain 20 Deepening Complete
+- Wrote `domain-deepening/economic-concentration-evidence.md` (644 lines)
+- Gaps filled: De Loecker-Eeckhout-Unger markup methodology (18%→67%); FTC non-compete rule $400-488B/10yr; monopsony evidence full arc (Manning theory → Azar-Marinescu-Steinbaum empirics); kill zone — Cunningham-Ederer-Ma killer acquisitions; AT&T 1984 breakup quantified; cross-ownership (BlackRock/Vanguard common ownership, airline price effects)
+- International benchmarks: Germany Section 19a GWB (Jan 2021, 5 US tech firms designated by Sept 2024), EU DMA (Apple €500M + Meta €200M fines April 2025), UK DMCCA (Jan 2025), Australia ACCC 5-year inquiry, comparative enforcement budget table
+- Active litigation section: Google Search liability (Aug 2024), FTC v. Amazon, DOJ v. Apple, DOJ v. Google Ad Tech — all current status
+- 5 structured counterarguments with rebuttals (Chicago School efficiency; "free services"; breakup destroys innovation; Amazon lowers prices; codetermination incompatible with US law)
+- Fiscal estimates: 20a ~$300M/yr enforcement → $50-100B/yr consumer savings; 20c FTC rule $400-488B/10yr; 20d $1.6B additional investment; 20e codetermination wage compression evidence
+- Updated PROJECTS.md: 8 of 22 domains deepened; next is Data Privacy (21)
+
+## 2026-04-13 — Session 93 — resistance-research
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub push still unresolved (no SSH key/credentials) — no user resolution
+- Stockbot: Paper trading live; STOCKBOT_API_KEY not in env — cannot check cycle logs; no code work actionable without performance data
+- Found: `social-safety-net-evidence.md` in domain-deepening/ — 544 lines, untracked/uncommitted, appeared to be a prior draft. Content is complete: 9 sections, fiscal summary, multiple comparison tables, comprehensive citations. Committing as Domain 18 deepening.
+- Selected task: (1) commit Social Safety Net deepening; (2) National Security domain deepening (Domain 19)
+
+### resistance-research — Social Safety Net Evidence Deepening COMMITTED (prior draft found and committed)
+
+`domain-deepening/social-safety-net-evidence.md`, 544 lines. Was an uncommitted draft — reviewed and confirmed complete.
+
+Key sections:
+- **Section 1: Child poverty** — 2021 expanded CTC: month-by-month poverty impact (15.8%→11.9% first payment), 3.7M children lifted, January 2022 reversal (fastest documented child poverty spike); Canada CCB 2016: 782,000 children lifted, Milligan-Stabile NBER finding of no labor supply response; UK/Germany comparison (€500/mo combined Kindergeld + Kinderzuschlag for poorest families)
+- **Section 2: TANF and guaranteed income** — $16.5B block grant frozen since 1996, 40% inflation erosion; state diversion in detail; Stockton SEED RCT (131 recipients, 24 months, 28%→40% full-time employment, 2× vs. control, <1% spent on alcohol/tobacco); Finland 2017-18 (€560/mo, +6 days/yr employment, strong wellbeing gains); GiveDirectly Kenya ($1→$2.50 multiplier, 48% infant death reduction); Alaska Permanent Fund (44 years, no negative employment effect); 150-city pilot wave convergence on positive/neutral employment effects
+- **Section 3: Food security** — SNAP $1.54 multiplier (USDA ERS); Thrifty Food Plan pre-2021 inadequacy (9/10 SNAP participants faced barriers); 27% 2021 update; drug felony ban: 26 states fully opted out, 1 (SC) maintains full ban; food desert geography (19M Americans, 30-40% fewer supermarkets in Black/Latino neighborhoods); post-emergency-allotment food insecurity +33%
+- **Section 4: UI collapse** — 55%→29% recipiency decline, four mechanisms; state variation table (FL $275/12wk vs. MA $1,033/30wk, MN 55% vs. KY 10% recipiency); FPUC $600: 5-6M kept from poverty, limited employment disincentive; Germany Kurzarbeit: 400,000 jobs preserved 2008-09, 0.5% GDP cost; 26-week federal floor rationale
+- **Section 5: Disability** — 30,000 died waiting in FY2023; 839-day median wait peak; $2,000 asset limit: set 1989, $10,000 inflation-adjusted value, 40,000 terminated annually for exceeding; marriage penalty (75% of two individual amounts); international comparison table (Netherlands 75% WIA, Sweden 64%, Germany 67% vs. US $943/mo); SSDI healthcare cliff traps <2% of beneficiaries in Ticket to Work
+- **Section 6: Administrative burden** — EMTR 60-80% in $20K-40K income range (NC: need $70K to net same as $30K with benefits); SSDI "any work" standard on 1991 DOT occupational codes; take-up table (SNAP 88%, SSI 50-55%, TANF 21%, UI 29%); churn (1 in 8 SNAP recipients interrupted); automatic enrollment potential
+- **Section 7: Contested findings** — NIT 1970s experiments (9% labor reduction, temporary design confound); dependency culture hypothesis (Gottschalk 1992 structural explanation); TANF success claims (Moffitt: 30-40% labor market, 20-30% EITC, 10-20% TANF work requirements); means-testing efficiency (universal programs 3-5% admin vs. means-tested 15-25%)
+- **Fiscal summary** — $260-400B gross, $180-280B net after multipliers; comparison to TCJA $150B/yr; Heckman 4% GDP loss from childhood disadvantage
+- **Section 8: COBOL** — NJ, CA, FL, AR legacy system failures; automatic stabilizer at half capacity; Chodorow-Reich: UI extensions raised employment 600,000 jobs during Great Recession
+- **Section 9: 1996 welfare reform** — Five premises that failed; racial architecture of reform; Moffitt decomposition (EITC most effective lever); college student exclusion (3.8M food insecure); ABAWD three-month limit; Summer EBT permanence
+
+### resistance-research — National Security Evidence Deepening COMPLETE
+
+`domain-deepening/national-security-evidence.md`, 648 lines. Committed.
+
+Key sections:
+- **Section 1: Pentagon audit failures** — 7 consecutive failures; only 7/28 sub-components received clean opinions in 2023; $6.2B Ukraine equipment overvaluation error discovered externally; GAO projects failure through 2028; on High Risk list since 1995. $10.8B confirmed contracting fraud FY2017-2024 (DoD OIG acknowledges "full extent unknown"). $715B+ in undocumentable journal voucher adjustments. DCAA auditing only $6-10.7B of $400B+ annual contract spend. UK NAO/Germany Bundesrechnungshof comparison.
+- **Section 1.3: F-35** — cost grown from ~$1T to $2T+ (100% overrun per April 2024 GAO); F-35A unit cost $82.5M vs. $69M projected 2019; sustainment cost $1.12T out of $1.7T lifetime total.
+- **Section 2: AUMF architecture** — "Associated forces" doctrine with no textual basis in 60-word 2001 AUMF; Soleimani killing used 2002 Iraq AUMF; War Powers Resolution never once functionally constrained a presidential military decision in 50 years; Tonkin Gulf precedent; Germany Bundestag requirement for parliamentary authorization.
+- **Section 3: Surveillance** — FBI 3.4M US person queries in 2021 (including senator and congressman); EO 12333 collects up to 5B records/day outside FISA with no court oversight; 2023 FISA Court found 278,000 non-compliant FBI queries; PCLOB had quorum fewer than half its operating years (three members fired January 2025); NSA XKeyscore/MUSCULAR; BLM/Standing Rock/Muslim community surveillance documentation.
+- **Section 4: Veterans** — Post-9/11 veteran suicide deaths: 30,177 vs. 7,057 combat deaths (4× ratio); "22/day" vs. 16.8 methodology difference; PACT Act: 2.4M claims filed, 551,895 pending as of January 2026, Board appeals averaging 853 days; Agent Orange: 16-year delay as precedent for burn pit/PFAS; Black veterans 31% of homeless veteran population vs. 14% of veteran population; VA outperforms private sector on quality metrics — it's a funding/staffing problem not a model problem.
+- **Section 5: Nuclear** — $1.7T program replacing all three triad legs simultaneously; INF (2019), Open Skies (2020), New START suspended (2023) — arms control framework collapsed; SecDef Perry + VCh Cartwright both called for eliminating ICBMs; 1983 Petrov incident as empirical evidence deterrence stability depends on individual judgment under time pressure.
+- **Section 6: Arms sales** — US at 43% of global arms exports (up from 35% 2015-2019); Saudi Arabia $129B+ in active agreements; Leahy Law never halted Saudi sales despite documented violations; comparison table (US/UK/Germany/France/Netherlands); Netherlands court halted F-35 parts to Israel in 2024 — enforcement mechanism US law structurally precludes.
+- **Section 7: Climate security** — Norfolk Naval Station sea level +18 inches over 100 years, 1-3 feet projected by 2050; DoD 2019: 2/3 of 3,500 installations face climate effects; Syria drought evidence with appropriate caveats (peer-reviewed criticism included; defensible as "conflict multiplier" from DoD's own doctrine).
+- **Section 8: Cyber** — SolarWinds compromised Commerce, Treasury, DHS, Pentagon, State, Energy, NIH — 18,000 customers received backdoored update; Colonial Pipeline: single unprotected VPN credential shut down 45% East Coast fuel supply; CISA $2.9B budget vs. DoD $886B; Estonia model — cyber resilience is architectural not scale-dependent.
+- **Section 9: Contested findings** — Defense creates 19.2 vs. healthcare 14.3 vs. education 6.9 jobs per $1M (defensible framing distinguishing "creates jobs" from "best use"); security dilemma / arms race history; VA Choice/MISSION Act: community care costs 20-30% more per encounter while quality evidence favors VA; intelligence reform gap claim rebutted by UK GCHQ/Canada CSIS evidence; nuclear deterrence stability vs. accidental war risk (Petrov, Able Archer 83, ICBM procedural failures).
+- **Section 10: Fiscal summary** — Reform strands: 19a ($1-2B/year); 19b (saves $15-40B/year net); 19c ($500M-1B/year); 19d ($8-15B/year); 19e ($116B/year at triple funding). Net new cost after defense savings: $40-80B/year.
+- **Section 11: Diplomacy gap** — US at 0.18% GNI ODA vs. 0.37% OECD average; USAID 2025 decimation (food programs cancelled, TB treatment interrupted); Marshall Plan at 2.5% GDP as canonical ROI case.
+
+---
+
 ## 2026-04-13 — Session 92 — resistance-research
 
 ### Orientation
@@ -4125,3 +4181,4 @@ New file: `monitoring/2026-04-20-watch.md` (46 sources, ~3,500 words).
 - 14.10 Three sample financial models: budget (<$100K, $34K/year net yr5), mid-range ($283K, $76K/year net yr5), full-capability ($716K, $182K/year net yr5)
 - 14.11 55-item cost table (startup + annual + revenue)
 - 14.12 9-scenario decision matrix (employed+savings, debt, unemployed, no savings, remote worker, near-retirement, young/no savings, mortgage, red flags)
+## 2026-04-13 — Session 93 — resistance-research — Domain 20 Economic Concentration deepening started

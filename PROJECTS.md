@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-13 (Session 92)
+> **Last updated by**: orchestrator on 2026-04-13 (Session 93)
 
 ---
 
@@ -29,7 +29,7 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Democratic renewal proposal at 22 domains / 2,544 lines / 13 feedback loops. All 22 domains at full evidence depth. Session 92: Labor policy domain deepening complete — `domain-deepening/labor-evidence.md` (663 lines). Key findings: private-sector union density 6.0% vs. 34–35% peak; 44-pt productivity-pay divergence gap; Card-Krueger monopsony rebuttal; Germany 2015 near-flat employment outcome; tipped wage/harassment nexus; OSHA 1:82,000 ratio vs. ILO 1:10,000; FTC non-compete rule struck down 5th Circuit; 60.1M workers in mandatory arbitration. Session 91: Housing deepening (633 lines, 107 citations). Session 90: Tax policy deepening (609 lines, 130 citations). Session 89: Criminal justice deepening (658 lines, 79 citations). **Deepened domains**: criminal justice, healthcare-education, housing, tax policy, labor policy (5 of 22). **Remaining deepening queue**: Social Safety Net (18), National Security (19), Economic Concentration (20), Data Privacy (21), Reparations (22) + monitoring pass when user provides April 20 updates. **Next**: April 20 monitoring pass (drop updates in INBOX.md); or next deepening domain (Social Safety Net recommended).
+**Current focus**: Democratic renewal proposal at 22 domains / 2,544 lines / 13 feedback loops. All 22 domains at full evidence depth. Session 93: Economic Concentration domain deepening complete — `domain-deepening/economic-concentration-evidence.md` (644 lines). Key findings: De Loecker-Eeckhout-Unger markup methodology (18% → 67% above competitive); FTC non-compete rule $400-488B/10yr wage gain; EU DMA first fines (Apple €500M, Meta €200M April 2025); Germany Section 19a GWB designated 5 US tech firms by Sept 2024; AT&T 1984 breakup quantified via Watzinger-Schnitzer; FTC v. Amazon, DOJ v. Google Search (liability ruling Aug 2024), DOJ v. Apple all tracked. Session 92: Labor policy deepening (663 lines). Session 91: Housing deepening (633 lines). Session 90: Tax policy deepening (609 lines). **Deepened domains**: criminal justice, healthcare-education, housing, tax policy, labor policy, social safety net, national security, economic concentration (8 of 22). **Remaining deepening queue**: Data Privacy (21), Reparations (22) + monitoring pass when user provides April 20 updates. **Next**: Data Privacy domain deepening (Domain 21).
 **Blocked on**: —
 **Notes**: Ongoing research and monitoring project. Existing files cover ICE detention, litigation tracking, case studies, civic action. When no specific task is queued, extend existing threads, find new angles, and monitor developments. Democratic renewal proposal is comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
 
