@@ -4,6 +4,78 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## Session 102 — 2026-04-13
+
+### Orient
+- INBOX: empty — no new items
+- stockbot: paper trading live but blocked on user sharing cycle logs — no dev work available
+- resistance-research: 17/22 domains deepened; Domain 3 Anti-Corruption selected (connects to Domain 2 Campaign Finance just done)
+- open-source-rideshare: 2,594 tests; surge pricing zone management selected as next feature
+- Launched 2 background agents in parallel
+
+### resistance-research — Domain 3 Anti-Corruption evidence deepening COMPLETE
+- 560+ lines: `domain-deepening/domain-03-anti-corruption.md`
+- U.S. CPI decline: top-20 in 2001 → 29th in 2024, lowest score ever recorded; corresponds to documented institutional changes across all governance metrics
+- Economic cost: $162B FY2024 improper payments (GAO); ~$200B COVID-19 PPP/EIDL fraud (SBA IG); FCA recoveries $2.92B in FY2024 (record), $78B cumulative since 1986; 979 qui tam suits filed (record)
+- Congressional insider trading: Ziobrowski 2004 (senators +12%/yr before STOCK Act); post-STOCK Act literature mixed; 2025 tariff-trading pattern (50+ members, 2,000+ trades during tariff policy formulation); NANC ETF 73% vs. S&P 500 61% since 2023
+- Revolving door: NBER patent examiner study (21-27% more patents to future employers, lower citation quality); agribiotech timing-window capture (benefits only in 2-year pre-transition window); Rottenberg 24% salary decay when former employer leaves Senate
+- Institutional failure anatomy: OGE $22M budget / 70 staff / advisory-only authority for 2.7M employees; PIN collapsed 36 lawyers → 2, stripped of case-filing authority; 17 IGs fired January 2025 (statutory 30-day notice violated; fired IGs investigating Musk/SpaceX, Neuralink, Starlink)
+- DOGE database access: cross-agency master database aggregating IRS IDRS, SSA NUMIDENT, Treasury BFS, HHS data without standard procurement/ethics review; federal judge found "never identified a single reason" for unlimited access
+- Emoluments: first-term cases dismissed as moot (SC never reached merits); WLFI $1B profits + $3B tokens + Abu Dhabi $2B stablecoin deal + Qatar plane; enforcement gap remains structurally open
+- FOIA: 1.5M requests FY2024 (25% increase); backlog 267,056 (33% increase); only 12% fully granted (all-time low vs. 38% in 2010); UK FOI grants 45%; Exemption 5 abuse documented
+- Whistleblowers: SEC $2.2B cumulative awards / 24,980 tips FY2024; CFTC $390M cumulative / record 1,744 tips; False Claims Act $78B cumulative; 80%+ retaliation rate
+- International: Singapore CPIB 1960-1980 transformation (3rd globally, 84 score 2024); Hong Kong ICAC 1,300 staff model (12th globally); Denmark structural model (no dedicated ACA — social trust + civil service pay + competition); Australia NACC 2023 design features
+- State ethics: California FPPC (independent, enforcement authority, national model); New York JCOPE/COELIG failure (zero enforcement cases against elected officials since 2022 inception)
+- Reform evidence: trading ban vs. disclosure (ban eliminates conflict, disclosure demonstrates it exists); independent agency requires bipartisan appointment + supermajority removal + jurisdiction over all 3 branches; 1-2 yr cooling-off periods insufficient, 5+ yr + sector-specific bans + activity coverage needed; open contracting (Ukraine: corruption perceptions halved, suppliers +45%; Peru: 51% lower public works cost); federal anti-SLAPP gap (Free Speech Protection Act Dec 2024, not yet passed)
+- Campaign finance → anti-corruption loop documented (Gilens-Page → regulatory capture → enforcement defunding → loop reinforcement)
+- `democratic-renewal-proposal.md` updated with companion reference note to Domain 2d/2e sections; PROJECTS.md updated to 18 of 22
+- **Deepening library: 18 of 22 domains complete**
+
+### open-source-rideshare — Surge pricing zone management COMPLETE
+- New `SurgePricingZone` model: UUID PK, polygon/circle geo fields, multiplier, time/day constraints (`models/surge.py`)
+- Pure Python geo service: haversine `point_in_circle`, ray-casting `point_in_polygon`, `is_zone_active_now`, `get_active_surge_multiplier` (`services/surge_zones.py`)
+- Schemas: `SurgeZoneCreate`, `SurgeZoneUpdate`, `SurgeZoneResponse`, `SurgeZonePublicResponse` (`schemas/surge_zone.py`)
+- Admin router (6 endpoints: CRUD + toggle) + public `GET /pricing/surge-zones/active` for map display (`api/v1/surge_zones.py`)
+- Pricing integration: `FareBreakdown` gains `surge_multiplier` + `surge_label` fields; backward-compatible
+- Alembic migration: `e3f4a5b6c7d8_add_surge_pricing_zones.py`
+- Design: polygon takes precedence over circle; overlapping zones → highest multiplier wins; time-restricted zones disappear from public map endpoint outside their window
+- **79 new tests; total: 2,673 passing**
+
+## Session 101 — 2026-04-13
+
+### Orient
+- INBOX: empty — no new items
+- stockbot: paper trading live, blocked on user sharing cycle logs (no dev work available)
+- resistance-research: 16/22 domains deepened — Campaign Finance (Domain 2) selected
+- open-source-rideshare: 2,579 tests passing — vehicle type preference selected as next feature
+- Launched 2 background agents in parallel
+
+### resistance-research — Domain 2 Campaign Finance deepening COMPLETE
+- 511 lines: `domain-deepening/domain-02-campaign-finance.md`
+- Key evidence: 2024 total election spending ~$16B record; outside spending $4.5B; dark money $1.9B (doubled from 2020, $4.3B cumulative since Citizens United); top 100 billionaire families = $2.6B = 1-in-6 dollars; top 1% super PAC donors = 97% of funds; Musk $277-300M largest individual donation in US history
+- Citizens United legal chain: Buckley (1976) → Austin (1990, overruled) → Citizens United (2010) → SpeechNow (DC Circuit, actually created super PACs) → McCutcheon (2014)
+- FEC deadlock: ~40% of substantive votes deadlocked 2017-2020 vs. 1.1% pre-2008
+- Small-dollar evidence: Seattle Democracy Vouchers (350% unique donor increase, people of color winning 30%→58.3%); NYC matching; Connecticut CEP (73-76% participation); Arizona/Maine
+- Federal lobbying $4.4B record (2024); Hall-Deardorff "lobbying as legislative subsidy" framework
+- Gilens & Page (2014): average citizens have little/no independent influence; Bartels (2008): bottom tercile receives statistically zero weight in Senate roll-calls
+- International: Canada ($1,750 cap, no corporate), Germany (€133M public subsidy, per-donated-euro match), UK (constituency caps, no contribution cap), France (corporate ban 1995, 47.5% reimbursement)
+- Reform proposals: DISCLOSE Act, 6:1 federal matching (~$800M-$2B/cycle CBO), Democracy for All Amendment (22 states + 800+ municipalities)
+- `democratic-renewal-proposal.md` updated with companion reference; PROJECTS.md updated
+- **Deepening library: 17 of 22 domains complete**
+- Committed by resistance-research agent
+
+### open-source-rideshare — Vehicle type preference for ride requests COMPLETE
+- New `VehicleServiceCategory` enum: standard/comfort/xl/premium/wav (`app/models/vehicle.py`)
+- `Vehicle` model gains `service_category` column (default standard)
+- `Ride` model gains `vehicle_type_preference` (nullable)
+- `RideRequest` + `RideResponse` schemas updated with optional field
+- `MatchingEngine.find_candidates()` filters by `vehicle_type_preference` when set
+- 15 unit tests + 9 integration tests in `tests/test_vehicle_type_preference.py` + `tests/integration/`
+- **Full suite: 2,594 passing** (up from 2,579)
+- Committed by rideshare agent
+
+---
+
 ## Session 99 — 2026-04-13
 
 ### Orient
@@ -4432,3 +4504,39 @@ Background agent completed. New file: `projects/resistance-research/domain-deepe
 #### resistance-research — Domain 7 Rights Protection (in progress)
 - Agent running in background
 
+
+---
+
+## Session 100 — 2026-04-13
+
+### Orient
+- INBOX: empty
+- BLOCKED: stockbot (user needs to share cycle logs / rebuild venv), rideshare GitHub push (no SSH key)
+- Resistance-research: 15/22 domains deepened — remaining 7: Domain 2 (Campaign Finance), Domain 3 (Anti-Corruption), Domain 4 (Economic Policy), Domain 5 (Healthcare), Domain 8 (Education), Domain 9 (Infrastructure), Domain 17 (Foreign Policy)
+- Open-source-rideshare: 2,556 tests passing; feature/background-checks-firebase-push branch
+
+### Plan
+1. Deepen Domain 4 (Economic Policy) — resistance-research
+2. Add formal complaint/dispute system — open-source-rideshare (rider/driver complaint filing + admin review workflow)
+
+### Progress — Session 100
+
+
+#### open-source-rideshare — Complaint and dispute management system
+- Model: Complaint (filed_by, against, ride_id, category, description, status, admin_notes, resolved_by)
+- Categories: unsafe_driving, harassment, discrimination, vehicle_condition, inappropriate_behavior, fraud, no_show, wrong_route, other
+- Service: file_complaint (self-complaint guard, ride participant validation), get_my_filed, get_against_me (admin_notes masked until resolved), admin CRUD + terminal-state protection
+- API: POST /complaints, GET /complaints/me/filed, GET /complaints/me/received, GET/PUT /admin/complaints[/{id}]
+- 50 new tests (8 test classes); suite: 2,579 passing
+- Committed 562f292
+
+#### resistance-research — Domain 4 Economic Policy deepening
+- ~600 lines: productivity-pay gap (57-61pt since 1979), Gini 0.48 (most unequal among peers), top 1% holds 30.9% of wealth / bottom 50% holds 2.5%, CEO:worker pay 281:1 (up from 31:1 in 1978)
+- Root causes: 1980 inflection (SEC 10b-18 legalizing buybacks, Taft-Hartley, PATCO), monopsony (Rinz: 15-25% wage penalty), consolidation (airlines 10→4, hospital merger 20-40% price increase)
+- Solutions: Saez-Zucman wealth tax design ($6.2T/10yr), PRO Act specifics, German codetermination (Betriebsverfassungsgesetz + Mitbestimmungsgesetz), minimum wage evidence honestly treated (Jardim vs Cengiz), Norway $1.77T SWF, Alaska PFD, Bank of North Dakota
+- Deepening library: 16 of 22 domains now complete
+- democratic-renewal-proposal.md updated with companion reference
+
+## Session 100 summary
+- open-source-rideshare: complaint/dispute system (50 new tests, 2,579 total)
+- resistance-research: Domain 4 economic policy deepening (600 lines, 16/22 domains)
