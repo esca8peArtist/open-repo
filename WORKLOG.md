@@ -92,6 +92,23 @@ New file: `monitoring/2026-04-17-results.md`.
 ### off-grid-living — 13-community-organization.md COMMITTED
 1,785 lines committed (was untracked from Session 86). Community governance, mutual aid, conflict resolution, trade/barter, CBRN/wildfire/grid-down emergency protocols.
 
+### open-source-rideshare — Driver onboarding status + activation workflow COMPLETE
+49 new tests, all passing. Full suite: 2,288 passed, 0 failures. Committed.
+- Driver readiness checklist: BGC + license + registration + inspection + insurance + profile completeness
+- `DriverOnboardingStatus` enum; `get_onboarding_checklist()`, `compute_onboarding_status()`, `activate_driver()`, `suspend_driver()`
+- Endpoints: GET /drivers/me/onboarding, GET /admin/drivers/{id}/onboarding, POST /admin/drivers/{id}/activate, POST /admin/drivers/{id}/suspend, GET /admin/drivers/onboarding/pending, GET /admin/drivers/onboarding/incomplete
+
+### seedwarden — Pre-launch audit verification + listing copy
+- Apartment Growing Complete Guide: Etsy listing copy written ($13, 13 tags), Tier 3→Tier 2. Committed.
+- Legal disclaimers: all 21 products verified. Audit updated.
+- Cross-links: all 21 products verified. Audit updated.
+
+### open-repo — OpenFarm content import pipeline COMPLETE
+- `content-import-openFarm.md`: API documented (live API shut down April 2025; CC0 data); field mapping; sample transformation; 5-step implementation plan
+- `scripts/import_openFarm.py`: full implementation — load, fetch, transform, validate, export, CID placeholder
+- Data acquisition path: self-hosted MongoDB export or Internet Archive snapshot
+- Committed.
+
 ---
 
 ## 2026-04-13 — Session 86 — resistance-research + off-grid-living + open-source-rideshare

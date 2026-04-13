@@ -15,7 +15,11 @@
 
 #### resistance-research — April 13 current status + April 20 watch brief
 - `monitoring/2026-04-13-current-status.md`: Leon/Ballroom CODE RED — April 17 stay expiry live. Abrego Garcia contempt threat live (Liberia vs. Costa Rica contradiction). Nashville/Crenshaw dismissal imminent. CAPE Phase 1 confirmed April 20. Humphrey's Executor narrowing likely.
-- `monitoring/2026-04-20-watch.md`: Pre-event brief for CAPE Phase 1 CBP launch + Abrego Garcia DOJ brief + any ballroom/SCOTUS resolution post-April 17 expiry. (see agent result for full summary)
+- `monitoring/2026-04-20-watch.md` (April 20 watch brief, 46 sources):
+  - **CAPE Phase 1**: $120B of $165–166B total IEEPA obligation enrolled — **$46B gap** from importers lacking ACH banking info. 12,300 already-rejected certified refunds. Phase 1 = unliquidated + entries within 80 days of liquidation (63% of total). Excluded: AD/CVD, drawback, open-protest, reconciliation entries. Section 232/301 completely unaffected.
+  - **Abrego Garcia**: 4 DOJ brief scenarios — Scenario B (most likely): maintain Liberia demand + executive foreign-affairs prerogative argument. This hands Xinis a clean contempt predicate. Contempt at April 28 hearing credible.
+  - **White House ballroom**: April 17 expiry passed — Branch C (injunction reinstates, contempt clock starts) has strongest circumstantial support. If construction visible April 18 = unambiguous contempt.
+  - **May Day**: NEA + SEIU + National Nurses United (200K members) + CTU + UTLA + AFA-CWA confirmed. Chicago city holiday declared. April 29 lead-up events. "No Work, No School, No Shopping" = qualitatively different from a march.
 
 #### open-source-rideshare — Driver license/registration + Driver onboarding workflow
 - `feat(rideshare): add driver license and vehicle registration document management` — 131 new tests, 2,239 passing. DriverLicense, VehicleRegistration, VehicleRegistrationAlert models; 15 endpoints (7 driver, 8 admin); migration chained.
@@ -29,8 +33,15 @@
 #### seedwarden — Apartment Growing Complete Guide listing copy
 Product upgraded Tier 3→Tier 2. Etsy listing copy written ($13, 13 SEO tags, cross-links to Apartment Plant Catalog/Container Pack/Seed Starting Kit). Committed.
 
-#### open-repo — Content import pipeline (in progress)
-OpenFarm API research + extraction script scaffold underway.
+#### open-repo — OpenFarm content import pipeline COMPLETE
+- `content-import-openFarm.md`: API/schema/license documented. Key finding: OpenFarm live API shut down April 2025; data is CC0 (most permissive). Data acquisition path: self-hosted MongoDB export or Internet Archive snapshot.
+- `scripts/import_openFarm.py`: `load_raw_data()`, `fetch_crops()`, `transform_crop()` (fully implemented), `validate_schema()`, `export_jsonl()`, `compute_cid_placeholder()`, CLI entry point. Runs cleanly.
+- Next: acquire data (clone OpenFarm + mongoexport OR Internet Archive crawl) → run import script → review output sample.
+
+#### seedwarden — Pre-launch audit verification
+- Legal disclaimers: all 21 products verified ✓
+- Cross-links: all 21 products verified ✓ (2–3 related products each, varies by format)
+- Only remaining blocker: PDF mockup images (needs Canva/external tool)
 
 ---
 
