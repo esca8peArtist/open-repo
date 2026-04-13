@@ -296,6 +296,8 @@ Establish a Federal Civic Infrastructure Fund that provides sustained, non-parti
 
 ## Domain 4: Digital Government Infrastructure
 
+*Companion document: `domain-04-economic-policy.md` — full evidence library for economic inequality, wage stagnation, wealth concentration, financialization, and structural economic reform (productivity-pay gap, Gini trajectory, CEO-to-worker pay ratios, wealth tax design, sovereign wealth fund options, international comparisons). The main proposal treats economic policy across Domains 5, 17, 18, and 20; the companion document provides the integrated evidentiary foundation.*
+
 ### The Problem
 
 The U.S. government operates on fragmented, aging technology infrastructure that imposes enormous costs on citizens and the economy while enabling corruption and undermining democratic accountability. The digital gap between American government and peer nations is not a matter of degree — it is a generation behind, and the consequences are measurable.
