@@ -3900,3 +3900,20 @@ New file: `monitoring/2026-04-20-watch.md` (46 sources, ~3,500 words).
 **White House ballroom post-April-17:** Branch C (stay expires, injunction reinstates, contempt clock starts) had strongest circumstantial support as of April 13. Leon's 6-day silence and no confirmed SCOTUS application entering the deadline are the key signals. Post-expiry outcome not yet indexed; ballroom status on April 20 depends on what happened April 17-18.
 
 **Secondary threads:** Section 122 CIT deliberating (no ruling; July 24 expiry is hard deadline); Nashville/Crenshaw dismissal still imminent (Blanche self-incriminating statements in record); Humphrey's Executor narrowing likeliest SCOTUS path by June; May Day Strong coalition consolidated (NEA/SEIU 509/2015/NNU/CTU, Chicago city holiday, April 29 lead-up events).
+
+---
+
+### off-grid-living — 14-finances-trade.md COMPLETE
+1516 lines. master-outline.md updated (domain 14 Complete). PROJECTS.md updated (domain 15 next).
+- 14.1 Financial reality check: all-in budget tables (budget/mid/full), break-even analysis, 3-phase transition model (employed+build → bridge → homestead primary), 7 common mistakes
+- 14.2 Income bridge: runway formula (30 months expenses + 1.5x build + 6-month emergency), remote work skill/income table, side income during build phase
+- 14.3 Homestead revenue streams: 15-stream revenue range table (beginner/intermediate/advanced), egg flock economics (25/50/100/200 hens), raw milk state legality table (32 allow/18 ban/retail vs. on-farm vs. herdshare), medicinal herb wholesale/retail prices, digital product channel comparison, U-pick economics, farm stay Airbnb data
+- 14.4 Property taxes: effective rates by state, homestead exemption amounts (TX $140K, FL $50K, GA $121K, MN $38K), ag-use/greenbelt designation mechanics (Tennessee formula), LLC/trust structure guidance, annual carrying cost budget, assessment appeal process
+- 14.5 Financing: USDA FSA loan programs (April 2026 rates), Section 502 direct loan (5.00% base, 1% with payment assistance), seller financing / land contracts, owner-builder loan requirements, hard money, crowdfunding, debt trap rule (finance land only)
+- 14.6 Barter/trade: LETS setup (CES platform, Ithaca HOURS, BerkShares), time banks (TimeBanks USA / hOurworld), skills valuation hierarchy (medical/dental/electrical >> general labor), equipment co-op structure, IRS barter reporting requirements
+- 14.7 Tax: Schedule F qualified income/deductions, SE tax calculation, hobby loss 9-factor test + 3-of-5 profit presumption, home office deduction, depreciation schedules, 9 no-income-tax states, barter FMV reporting
+- 14.8 Insurance: farm dwelling vs. standard homeowner gaps, farm liability $1,500–$3,000/year, livestock insurance when justified, NAP crop program, ACA 2026 subsidy cliff ($60,240 individual threshold), DPC+catastrophic alternative, full insurance cost table
+- 14.9 Long-term wealth: farmland 5–6% historical appreciation, high-ROI improvements (well > barn > fencing), estate planning (revocable trust / TODD / family LLC), paid-off land as primary goal, community land trusts
+- 14.10 Three sample financial models: budget (<$100K, $34K/year net yr5), mid-range ($283K, $76K/year net yr5), full-capability ($716K, $182K/year net yr5)
+- 14.11 55-item cost table (startup + annual + revenue)
+- 14.12 9-scenario decision matrix (employed+savings, debt, unemployed, no savings, remote worker, near-retirement, young/no savings, mortgage, red flags)
