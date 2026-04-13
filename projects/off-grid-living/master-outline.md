@@ -26,9 +26,9 @@
 | 8 | Waste & Sanitation | `09-waste-sanitation.md` | Complete |
 | 9 | Medicine & Health | `08-medical-health.md` | Complete |
 | 10 | Tools & Fabrication | `10-tools-fabrication.md` | Complete |
-| 11 | Communications | `11-communications.md` | Planned |
+| 11 | Communications | `12-communications.md` | Complete (~1,650 lines) — ham radio, GMRS, Starlink, Iridium, shortwave, EMP hardening, grid-down protocols, power sizing, CBRN comms |
 | 12 | Security & Defense | `12-security-defense.md` | Planned |
-| 13 | Community & Governance | `13-community-governance.md` | Planned |
+| 13 | Community & Governance | `13-community-organization.md` | Complete (~1,700 lines) — governance models (consensus, council, sociocracy), mutual aid setup, skill inventories, conflict resolution ladder, trade/barter ledgers, security governance, emergency decision-making by scenario (CBRN, wildfire, grid-down), membership process, mental health protocols, integration with outside communities |
 | 14 | Finances & Trade | `14-finances-trade.md` | Planned |
 | 15 | Disaster Scenarios | `15-disaster-scenarios.md` | Planned |
 | 16 | Skills & Knowledge | `16-skills-knowledge.md` | Planned |
