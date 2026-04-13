@@ -1,6 +1,6 @@
 # Active Litigation Tracker: Democracy and Immigration Cases — April 2026
 
-*Last updated: April 13, 2026 (morning monitoring pass) — for entries added after March 19, see the "April 2026 Updates" section at the bottom of this document*
+*Last updated: April 13, 2026 (evening monitoring pass) — for entries added after March 19, see the "April 2026 Updates" section at the bottom of this document*
 
 ---
 
@@ -660,23 +660,79 @@ Note for tracking purposes: the "show your papers" permanent injunction referenc
 
 ---
 
-## Pending Deadlines as of April 12, 2026 (Evening)
+## April 13, 2026 — Afternoon Monitoring Pass
+
+*Pass conducted April 13, 2026 (afternoon). Adds entries not in the morning pass. For full analysis see monitoring/2026-04-13-afternoon.md.*
+
+---
+
+### AFGE / VA — Judge DuBose Restores Collective Bargaining Agreement (March 13, 2026) — Previously Underreported
+
+- **Court**: U.S. District Court — Judge Melissa DuBose
+- **What happened**: On March 13, 2026, Judge DuBose granted AFGE's motion for a preliminary injunction requiring the VA to restore the Master Collective Bargaining Agreement (CBA) with AFGE's National Veterans Affairs Council (AFGE/NVAC). The VA had unilaterally revoked the Master CBA — which governs collective bargaining rights for over 300,000 VA employees — in an action AFGE characterized as illegal under the Federal Service Labor-Management Relations Statute. The injunction restores the Master CBA and all subsidiary local supplemental agreements and memoranda of understanding "for the remainder of the agreed-upon term."
+- **Significance**: This is the largest federal workforce CBA restoration ruling of the current term. 300,000 VA employees — the second-largest federal agency workforce — retain union contract protections while the litigation proceeds. This ruling runs parallel to the Schedule Policy/Career track: even if Schedule Policy/Career strips MSPB appeal rights from some employees, this ruling preserves the substantive bargaining protections that govern VA working conditions. It is also the first successful preliminary injunction specifically targeting CBA revocation (as opposed to termination or reclassification), establishing a model for AFGE litigation at other agencies.
+- **Next steps**: Merits briefing. Watch for government appeal to the circuit.
+- **Sources**: [Federal News Network — VA ordered to restore AFGE contract](https://federalnewsnetwork.com/veterans-affairs/2026/03/va-ordered-to-restore-afge-contract-under-federal-judges-temporary-order/) · [Government Executive — judge orders VA to restore collective bargaining](https://www.govexec.com/workforce/2026/03/judge-orders-va-restore-collective-bargaining/412123/) · [AFGE litigation summary](https://www.afge.org/article/summary-of-afge-lawsuits-against-trump--how-litigation-works-2/)
+
+---
+
+### White House Ballroom — Administration's Full Security Argument Now Publicly Documented
+
+- **Update (April 9 filing, widely circulated April 13)**: The administration's April 9 court filing — now receiving wide circulation — details the specific security installations it claims are inseparable from the ballroom project: "missile-resistant steel columns, beams, drone proof roofing materials, and bullet, ballistic, and blast proof glass" above ground; and "bomb shelters, hospital and medical area, protective partitioning, and Top Secret Military installations" below ground. This is the specific factual predicate for the administration's SCOTUS emergency application when and if it is filed. No application has been filed as of April 13 afternoon; the April 17 deadline remains operative. The NBC News report (April 9) is the primary source for this detail.
+- **Strategic significance for SCOTUS watch**: The specificity of the security claims is designed to make denial of a stay politically costly for conservative justices. A justice who votes to deny the stay — reinstating Leon's injunction — will be characterized as having knowingly halted construction of missile-resistant and bomb-shelter infrastructure protecting the president. The more specific and alarming the factual record the administration can build before any SCOTUS application, the more pressure it creates. The National Trust's counter-position — that above-ground and below-ground phases are separable — must engage directly with this level of detail to be persuasive at SCOTUS.
+- **No new ruling from Judge Leon as of afternoon pass.**
+- **Sources**: [NBC News — ballroom national security filing detail, April 9, 2026](https://www.nbcnews.com/politics/white-house/trump-ballroom-national-security-necessity-vital-first-family-safety-rcna267482)
+
+---
+
+---
+
+## April 13, 2026 — Evening Monitoring Pass
+
+*Pass conducted April 13, 2026 (evening). Full analysis at monitoring/2026-04-13-evening.md.*
+
+---
+
+### CORRECTION — CIT/IEEPA Track: SCOTUS Already Ruled; April 14 Conference Is About Refunds
+
+The Section 6.2 entry and prior deadline table framing ("CIT tariff case — three-judge panel ruling pending") applied to two separate proceedings that must now be distinguished:
+
+1. **IEEPA tariff legality (RESOLVED)**: The Supreme Court struck down IEEPA tariffs 6-3 on February 20, 2026, in *Learning Resources, Inc. v. Trump* (No. 24-1287). Chief Justice Roberts wrote that IEEPA "contains no reference to tariffs or duties" and cannot support the breadth of authority the president claimed. The Court affirmed the CIT's lower ruling. This question is settled.
+
+2. **IEEPA refund implementation (ACTIVE — April 14 and 20 deadlines)**: Following the SCOTUS ruling, the CIT (Senior Judge Eaton) has been managing CBP's administrative process for refunding collected IEEPA duties. Phase 1 launches April 20 and covers approximately 63% of affected entries. The April 14 noon CBP report and 3 PM closed conference are checkpoints on that rollout — not substantive legal argument.
+
+3. **Section 122 tariff legality (PENDING)**: After the IEEPA ruling, the administration announced a new 10% global tariff under Section 122 of the Trade Act of 1974. The CIT three-judge panel (Barnett, Kelly, Stanceu) heard argument April 10 and was sharply skeptical. This is the pending ruling. Update the deadline table entry accordingly.
+
+- **Sources**: [SCOTUSblog — SCOTUS strikes down IEEPA tariffs, Feb. 20, 2026](https://www.scotusblog.com/2026/02/supreme-court-strikes-down-tariffs/) | [WilmerHale — post-SCOTUS analysis](https://www.wilmerhale.com/en/insights/client-alerts/20260220-supreme-court-strikes-down-ieepa-tariffs-what-now) | [Thompson Hine — CIT Phase 1 endorsement](https://www.thompsonhinesmartrade.com/2026/04/cit-endorses-phase-1-of-the-ieepa-tariff-refund-process-ahead-of-cbps-april-20-rollout/) | [Stinson — refund process overview](https://www.stinson.com/newsroom-publications-supreme-court-invalidates-ieepa-tariffs-recent-developments-accelerate-refund-process)
+
+---
+
+### Abrego Garcia (D. Md.) — April 17 DOJ Deadline Defused by Xinis
+
+The government's demand that Xinis rule by April 17 or face an appeal to "a court that does not have the same views" has been mooted by Xinis's April 12 order: she ruled the motion "not ripe," rejected the self-imposed deadline, and set a briefing schedule with submissions due April 20 and a hearing April 28. The April 17 Abrego Garcia (Maryland) deadline no longer creates a pressure point on the same date as the White House ballroom stay expiration. Update: these two deadlines are now temporally decoupled. See the prior evening pass entry on this case for full analysis.
+
+---
+
+## Pending Deadlines as of April 13, 2026 (Evening)
 
 | Date | Case / Event | What to Watch |
 |---|---|---|
-| April 14 noon | CIT Tariff Refund | CBP status report due on IEEPA Phase 1 rollout progress |
-| April 14 3 PM | CIT Tariff Refund | Closed conference before Judge Eaton on Phase 1 readiness |
-| April 17 | White House Ballroom | D.C. Circuit stay expires; expect SCOTUS emergency application from administration if Judge Leon maintains any construction block; application would likely go to Chief Justice Roberts or Justice Kavanaugh (DC Circuit) |
-| April 20 | CIT / CBP | IEEPA tariff refund Phase 1 rollout begins (covers ~63% of affected entries) |
+| April 14, 12 PM EDT | CIT / IEEPA Refunds | CBP status report due — Phase 1 rollout readiness (4 components, 60–85% complete) |
+| April 14, 3 PM EDT | CIT / IEEPA Refunds | Closed conference before Judge Eaton on Phase 1 status |
+| April 14–17 | White House Ballroom | Judge Leon must respond to D.C. Circuit remand: clarify whether injunction reaches underground security work |
+| April 17 | White House Ballroom | D.C. Circuit stay expires; SCOTUS emergency application expected at or before this date; Chief Justice Roberts (DC Circuit Justice) would be the first stop |
+| April 20 | CIT / CBP | IEEPA tariff refund Phase 1 rollout (covers ~63% of affected entries) |
 | April 20 | Abrego Garcia (D. Md.) | Parties' briefing due on DOJ motion to dissolve injunction blocking re-detention/deportation to Liberia |
-| April 20 8 PM EDT | No Kings Eyes on ICE | National virtual training — train-the-trainer format for ICE monitoring |
-| April 28 | Abrego Garcia (D. Md.) | Hearing before Judge Xinis on government motion to dissolve injunction; watch for third-country deportation arguments |
+| April 20, 8 PM EDT | No Kings Eyes on ICE | National virtual training — train-the-trainer format for ICE monitoring |
+| April 28 | Abrego Garcia (D. Md.) | Hearing before Judge Xinis; watch for third-country (Liberia) deportation arguments |
 | April 30 | AFGE / BOP (D. Conn.) | Preliminary injunction hearing on Schedule Policy/Career as applied to prison staff |
+| Any day | Nashville (Crenshaw) | Dismissal ruling in Abrego Garcia criminal case; record is closed |
+| May 1 | May Day | General strike / economic boycott; institutional labor coalition now includes NNU (200k), AFT, NEA, CTU — AFL-CIO national not yet endorsing |
 | Weeks | Mail Voting EO (5.1/5.2) | Preliminary injunction decision expected in Massachusetts; no TRO yet |
 | May 22 | DHS Funding CR | Continuing resolution expires; another shutdown/funding standoff possible |
 | June 2026 | Trump v. Barbara | Decision expected before end of Court's term (late June); birthright citizenship |
 | June 14 | No Kings Day | Next national mobilization; flagship event Philadelphia; no D.C. event due to Army 250th Parade |
 | TBD | Ramirez Ovando | District court compliance ruling; Tenth Circuit appeal (26-1027) on underlying injunction |
-| TBD | CIT tariff case | Three-judge panel ruling on 10% Section 122 global tariff (argument held April 10; panel sharply skeptical) |
+| TBD | Section 122 CIT case | Three-judge panel ruling on 10% global tariff (argument April 10; panel sharply skeptical; separate from IEEPA) |
 | TBD | Schedule Policy/Career | AFGE/AFSCME Maryland suit (amended complaint filed March 2026); no injunction yet |
-| TBD | MSPB / Federal Circuit | Jackler & Jaroch appeal of MSPB immigration judge ruling; outcome will determine whether Schedule Policy/Career employees have any MSPB avenue |
+| TBD | MSPB / Federal Circuit | Jackler & Jaroch appeal; outcome will determine whether Schedule Policy/Career employees have any MSPB avenue |
