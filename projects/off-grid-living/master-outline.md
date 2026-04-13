@@ -30,7 +30,7 @@
 | 12 | Security & Defense | `12-security-defense.md` | Planned |
 | 13 | Community & Governance | `13-community-organization.md` | Complete (~1,700 lines) — governance models (consensus, council, sociocracy), mutual aid setup, skill inventories, conflict resolution ladder, trade/barter ledgers, security governance, emergency decision-making by scenario (CBRN, wildfire, grid-down), membership process, mental health protocols, integration with outside communities |
 | 14 | Finances & Trade | `14-finances-trade.md` | Complete (~1,516 lines) |
-| 15 | Disaster Scenarios | `15-disaster-scenarios.md` | Planned |
+| 15 | Disaster Scenarios | `15-disaster-scenarios.md` | Complete (~1,550 lines) — scenario taxonomy, power outage timeline, storm/hurricane/wildfire/earthquake protocols, pandemic isolation, economic collapse, civil unrest/OPSEC/bug-out, nuclear fallout/KI/shielding/EMP, compound cascades, master decision matrix, tabletop exercises, 45-line cost table |
 | 16 | Skills & Knowledge | `16-skills-knowledge.md` | Planned |
 
 ---
