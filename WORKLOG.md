@@ -109,6 +109,15 @@ New file: `monitoring/2026-04-17-results.md`.
 - Data acquisition path: self-hosted MongoDB export or Internet Archive snapshot
 - Committed.
 
+### resistance-research — April 20 watch brief COMPLETE
+`monitoring/2026-04-20-watch.md` (46 sources). CAPE Phase 1: $120B enrolled of $165B total ($46B gap from ACH non-enrollment; 12,300 rejected refunds already). Abrego Garcia 4 scenarios (Liberia maintain + exec-power most likely → hands Xinis contempt predicate). White House ballroom post-April-17: Branch C (injunction reinstates) strongest. May Day coalition confirmed (NEA + National Nurses United 200K + CTU + UTLA + SEIU; April 29 lead-up events).
+
+### off-grid-living — 14-finances-trade.md COMPLETE
+1,516 lines. Committed (included in rideshare docs batch commit). Financial transition model, homestead revenue streams, raw milk/dairy legality table (31 states), property taxes + homestead exemptions + agricultural use designation, USDA FSA/Rural Development loans, barter/LETS/time banks, IRS reporting for barter income, homestead insurance coverage gaps, 3 sample financial models ($100K/$150–300K/$400K+ homesteads), 55+ line cost table, decision matrix. master-outline.md updated (domain 14 Complete).
+
+### Repository cleanup
+Committed all previously untracked project files: resistance-research full corpus (39 files, 24K lines), seedwarden full product catalog (21 products + 120 native plants images + PDFs), off-grid domains 7+12, workout plans (4 files), open-repo landscape/architecture notes, rideshare backend (155 files), rideshare infrastructure (37 files), autonomous orchestrator config (.claude/agents + commands + orchestrator-prompt).
+
 ---
 
 ## 2026-04-13 — Session 86 — resistance-research + off-grid-living + open-source-rideshare

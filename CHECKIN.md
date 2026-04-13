@@ -28,7 +28,7 @@
 #### off-grid-living — Domains 12, 13, 14
 - `12-communications.md` (1,854 lines): ham radio, GMRS, Starlink, EMP hardening, grid-down protocols, cost table, decision matrix
 - `13-community-organization.md` (1,785 lines): governance models, mutual aid, skill inventories, conflict resolution, trade/barter, security governance, emergency decision-making, mental health protocols. Committed Session 87.
-- `14-finances-trade.md` (in progress): financial transition phases, revenue streams, barter/LETS/time banks, property taxes, USDA loans, tax implications, insurance, sample financial models
+- `14-finances-trade.md` (1,516 lines, COMPLETE): 3-phase financial transition model, revenue streams with revenue range tables (eggs/poultry/raw milk/herbs/instruction/digital), raw milk legality by state (31 legal/17 illegal/2 pet-food-only), USDA FSA loans, barter/LETS/time banks (TimeBanks USA/hOurworld), IRS barter reporting (FMV taxable), homestead insurance gaps, 3 sample financial models ($100K budget/$150–300K mid-range/$400K+ full-capability), 55+ row cost table, decision matrix. Committed.
 
 #### seedwarden — Apartment Growing Complete Guide listing copy
 Product upgraded Tier 3→Tier 2. Etsy listing copy written ($13, 13 SEO tags, cross-links to Apartment Plant Catalog/Container Pack/Seed Starting Kit). Committed.
