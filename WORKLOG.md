@@ -37,6 +37,13 @@
 - Selected tasks: (1) resistance-research tax policy domain deepening; (2) open-source-rideshare rider spending analytics + driver tax summary (1099 prep)
 - Both launched as parallel background agents
 
+### open-source-rideshare — COMPLETE (see entry above)
+Rider spending analytics + driver tax summary (1099 prep). 41 new tests; suite **2,386 passing**. Committed.
+
+### resistance-research — Tax Policy Evidence Deepening COMPLETE
+
+`domain-deepening/tax-policy-evidence.md`, 609 lines, 130 citations. Covers: US tax burden in OECD context (25.6% vs 34.1% average), Saez/Zucman billionaire rate finding and methodological dispute, buy-borrow-die strategy and mark-to-market reform options, European wealth tax failure (France ISF, Norway 2022 migration) and why the US context differs, corporate tax incidence and the TCJA $4,000 wage promise vs. evidence, tax expenditures ($1.8T annual total with distributional skew), IRS tax gap ($688B) and the $41.8B in IRA enforcement rescissions, starve-the-beast theory and Niskanen's empirical refutation, ETI literature and revenue-maximizing top marginal rates (56–73%), EITC as proof-of-concept for refundable credits, financial transaction taxes (Sweden failure vs. UK success), carbon taxation (BC and Sweden evidence), estate tax erosion, offshore profit shifting, fiscal policy and the Gilens/Page democratic legitimacy connection, flat tax arguments assessed, and revenue synthesis showing $580–995B/year credible reform range. Committed.
+
 ---
 
 ## 2026-04-13 — Session 89 — resistance-research + off-grid-living + open-source-rideshare
