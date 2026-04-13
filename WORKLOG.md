@@ -4207,3 +4207,34 @@ New file: `projects/resistance-research/domain-deepening/data-privacy-evidence.m
 **Deepening pass status**: 9 of 22 domains complete. One remaining: Reparations (Domain 22).
 
 **PROJECTS.md updated**: current focus, deepened domain count, next task.
+
+## 2026-04-13 — Session 95 — resistance-research — Domain 22 Reparations deepening COMPLETE
+
+### Orientation
+- INBOX.md empty — no new tasks
+- BLOCKED.md: GitHub push still blocked (no SSH key); stockbot monitoring blocked (no API key in env)
+- Stockbot: paper trading live, user needs to share cycle logs for performance assessment
+- Selected: resistance-research Domain 22 (Reparations) — final domain in deepening queue
+
+### resistance-research — Reparations domain deepening COMPLETE
+
+New file: `projects/resistance-research/domain-deepening/reparations-evidence.md` (552 lines, 10 sections, 28 subsections). Committed.
+
+**Key findings**:
+- **Racial wealth gap**: 2022 Fed SCF — $284,310 median white vs. $44,100 median Black (6.4:1); absolute gap grew $49,950 between 2019-2022 alone; ratio stable at ~15 cents Black per white dollar since 1963
+- **GI Bill exclusion mechanics**: 1947 Mississippi survey — 2 of 3,229 VA home loans reached Black veterans; all-white VA offices, Jim Crow banks, specific denial structure documented
+- **FHA racism**: 1935 and 1938 Underwriting Manuals contain verbatim racial language — "infiltration of inharmonious racial groups" as valuation criterion
+- **Urban renewal**: HUD data — 334,000 families (~1.36M individuals) displaced 1949-1973; 60% nonwhite; "Negro removal" well-documented
+- **Contract buying Chicago**: 84% price markup, $3-4B extracted from Black families (Beryl Satter / Contract Buyers League documentation)
+- **HR 40**: 36-year history (Conyers 1989 → Pressley/Booker 2025); reintroduced Feb 2025 amid DEI backlash
+- **Evanston, IL**: 44 recipients as of early 2026; $25K payments; dual funding (cannabis tax + real estate transfer tax); implementation bottlenecks documented
+- **California 2024**: 14-bill package — apology law passed; SB 1007 (homeownership assistance) and SB 1013 (property tax relief) failed committee — direct payment legislation did not advance
+- **South Africa TRC failure**: TRC recommended US$375M in reparations; Mbeki paid R30,000 (~$4,000) per victim — cautionary design lesson
+- **CARICOM 2026**: Active advocacy at Commonwealth Heads of Government Meeting; March 2026 UN General Assembly resolution in support
+- **Enforcement gap**: EEOC filed 111 lawsuits on 88,531 charges FY2024; DOJ Civil Rights Division lost 60%+ staff by 2025; HUD moving to eliminate disparate impact rule
+- **COMPAS**: Northpointe racial bias + mathematical fairness impossibility theorem (cannot simultaneously optimize for three competing fairness definitions)
+- **Fiscal case**: Citigroup — $16T GDP cost of racial wealth gap over 2000-2020 period; McKinsey — $1-1.5T/decade ongoing drag. Full Domain 22 10-year cost: $800B-$1T ≈ one year of the ongoing GDP cost
+
+**Deepening pass status**: 10 of 22 domains complete. ALL 22 DOMAINS DEEPENED. The full domain-deepening library is complete.
+
+**PROJECTS.md updated**: deepened domain count, current focus updated to note completion of deepening pass.

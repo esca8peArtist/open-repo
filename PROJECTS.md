@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-13 (Session 94)
+> **Last updated by**: orchestrator on 2026-04-13 (Session 95)
 
 ---
 
@@ -29,7 +29,7 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Democratic renewal proposal at 22 domains / 2,544 lines / 13 feedback loops. All 22 domains at full evidence depth. Session 94: Data Privacy domain deepening complete — `domain-deepening/data-privacy-evidence.md` (596 lines). Key findings: RTB ecosystem exposes US users 294B times/day; PCLOB non-operational since Jan 27, 2025 (Trump fired 3 members); FBI 204,090 US-person queries FY2022; NIST FR false-positive differential factor 7,203; Clearview AI $51.75M equity settlement March 2025; GDPR €5.88B total fines; FDPA would need 800-1,200 staff at $700-1,100M/year. Session 93: Economic Concentration domain deepening complete (644 lines). Session 92: Labor policy deepening (663 lines). **Deepened domains**: criminal justice, healthcare-education, housing, tax policy, labor policy, social safety net, national security, economic concentration, data privacy (9 of 22). **Remaining deepening queue**: Reparations (22) + monitoring pass when user provides April 20 updates. **Next**: Reparations domain deepening (Domain 22) — final domain in the deepening pass.
+**Current focus**: **Planned deepening queue COMPLETE (10 domains deepened).** Session 95: Reparations domain deepening complete — `domain-deepening/reparations-evidence.md` (552 lines, 10 sections). Key findings: 2022 Fed SCF $284,310 vs $44,100 median wealth (6.4:1 ratio); GI Bill exclusion mechanics (2 of 3,229 VA loans to Black veterans in MS 1947); FHA 1935/1938 Underwriting Manual verbatim racial language; urban renewal 1.36M displaced (60% nonwhite); Chicago contract buying $3-4B extraction; Evanston 44 recipients/$25K payments; California apology passed, direct payments failed; South Africa TRC failure ($375M recommended → $4K paid); Citigroup $16T GDP cost; full Domain 22 10-year cost $800B-$1T ≈ one year of ongoing GDP drag. **Domain-deepening library**: 10 of 22 deepened — criminal justice, healthcare-education, housing, tax policy, labor policy, social safety net, national security, economic concentration, data privacy, reparations. Remaining 12 domains exist in main proposal only. **Next**: Monitoring pass when user provides April 20+ updates (INBOX.md). OR: deepen remaining 12 domains. OR: begin publication-prep pass.
 **Blocked on**: —
 **Notes**: Ongoing research and monitoring project. Existing files cover ICE detention, litigation tracking, case studies, civic action. When no specific task is queued, extend existing threads, find new angles, and monitor developments. Democratic renewal proposal is comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
 

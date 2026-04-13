@@ -9,32 +9,37 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–94 (continued)
+**Sessions run**: 75–95 (continued)
+
+### Accomplished (Session 95)
+
+#### resistance-research — Domain 22 Reparations deepening COMPLETE — planned deepening queue finished
+
+**Domain 22: Reparations and Racial Justice** — `domain-deepening/reparations-evidence.md` (552 lines, 10 sections, 28 subsections):
+- **Racial wealth gap**: 2022 Fed SCF — $284,310 median white vs. $44,100 median Black (6.4:1); absolute gap grew $49,950 between 2019–2022 alone; ratio locked at ~15 cents Black per white dollar since 1963
+- **GI Bill exclusion mechanics**: 1947 Mississippi survey — 2 of 3,229 VA home loans reached Black veterans; all-white VA offices, Jim Crow banks, specific denial structure documented (not just vague discrimination — specific institutional mechanics)
+- **FHA racism on record**: 1935 and 1938 Underwriting Manuals contain verbatim racial language — "infiltration of inharmonious racial groups" as a valuation criterion
+- **Urban renewal**: HUD data — ~1.36 million displaced 1949–1973; 60% nonwhite; James Baldwin's "Negro removal" documented with numbers
+- **Contract buying**: Chicago — 84% price markup, $3–4B extracted from Black families (Beryl Satter / Contract Buyers League)
+- **HR 40**: 36-year history (Conyers 1989 → Pressley/Booker reintroduced Feb 2025 amid DEI backlash)
+- **Evanston, IL**: 44 recipients as of early 2026; $25K payments; funded by cannabis tax + real estate transfer tax; implementation bottlenecks documented
+- **California 2024**: 14-bill package — formal apology law passed; SB 1007 (homeownership assistance) and SB 1013 (property tax relief) failed committee — direct payments did not advance
+- **South Africa TRC failure**: TRC recommended US$375M — Mbeki paid R30,000 (~$4,000) per victim instead. Key cautionary design lesson for U.S. commission
+- **CARICOM 2026**: Active at Commonwealth Heads of Government Meeting; March 2026 UN General Assembly resolution in support
+- **Enforcement gap**: DOJ Civil Rights lost 60%+ staff; EEOC filed 111 lawsuits on 88,531 charges FY2024; HUD moving to eliminate disparate impact rule
+- **COMPAS fairness impossibility**: Mathematical proof that three competing fairness definitions cannot all be simultaneously satisfied — the bias is structural
+- **Fiscal**: Citigroup $16T GDP cost 2000–2020; McKinsey $1–1.5T/decade ongoing drag; full Domain 22 10-year package $800B–$1T ≈ one year of ongoing GDP cost being offset
+
+**Deepening pass**: 10 domains deepened total — criminal justice, healthcare-education, housing, tax policy, labor policy, social safety net, national security, economic concentration, data privacy, reparations. The planned deepening queue is now complete.
+
+---
 
 ### Accomplished (Session 94)
 
 #### resistance-research — Domain 21 Data Privacy deepening COMPLETE
 
 **Domain 21: Data Privacy and Digital Surveillance** — `domain-deepening/data-privacy-evidence.md` (596 lines):
-- **RTB ecosystem**: 294 billion US ad auctions/day expose user location data to any actor posing as an ad buyer — including federal agencies. FTC documented 4 enforcement actions 2024–2025: Kochava, X-Mode, Mobilewalla, Gravy Analytics — all sold data on sensitive locations (abortion clinics, mosques, military installations). CBP paid Babel Street $2.7M+ for geolocation subscriptions; DHS OIG Sept 2023 confirmed ICE/CBP/Secret Service violated privacy policies using commercial geolocation.
-- **PCLOB non-operational**: Trump fired 3 of 5 members January 27, 2025. Board has no quorum. The only civilian oversight body for intelligence surveillance has been neutralized.
-- **Section 702**: Reauthorized April 2024 (RISAA 60-34) without warrant requirement for US-person queries. FBI queried 204,090 US identifiers FY2022 including Jan. 6 suspects and BLM protesters. Sunsets April 2026 — reauthorization fight imminent.
-- **Facial recognition**: NIST FRVT false-positive differential reaches factor 7,203 across algorithm-demographic combinations; Black women face highest rates on majority of tested algorithms. Robert Williams (Detroit, settled June 2024 — first confirmed US case), Porcha Woodson (arrested 8 months pregnant Jan 2023). Clearview AI $51.75M equity settlement approved March 2025.
-- **State law gap**: 19 states have comprehensive privacy laws — virtually none cover government surveillance. Industry preemption strategy: support weak federal ceiling to neutralize CCPA.
-- **GDPR outcomes**: €5.88B total fines since 2018; Ireland DPC issued €3.5B (Meta €1.2B largest). EU AI Act biometric surveillance provisions effective February 2, 2025. PCLOB firings risk Schrems III challenge to EU-US Data Privacy Framework ($7-14B/year in cross-border transfers at stake).
-- **Chilling effects**: Penney (2016) Wikipedia study documented with full methodology; COINTELPRO-to-present surveillance of social movements; HIPAA gap for health/fertility apps.
-- **Fiscal**: Federal Data Protection Agency $400-600M/year (800-1,200 FTEs). Enforcement revenue offset: GDPR-comparable could generate $500M-$2B/year at maturity. Net-positive over 10-year window.
-
-**Deepening status: 9 of 22 domains complete.** One remaining: Reparations (Domain 22).
-
----
-
-### Stockbot Note
-Paper trading LIVE since April 13. First market open was Monday April 14. Orchestrator cannot check cycle logs without `STOCKBOT_API_KEY` in env. Check manually:
-```
-curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20
-```
-Or `http://127.0.0.1:8000` → Trading page.
+- RTB ecosystem 294B daily auctions; PCLOB neutralized (3 members fired Jan 27 2025); Section 702 reauthorized without warrant requirement; NIST FR false-positive factor 7,203; Clearview AI $51.75M settlement; GDPR €5.88B fines; FDPA $700–1,100M/year, net-positive over 10 years.
 
 ---
 
@@ -50,7 +55,7 @@ Or `http://127.0.0.1:8000` → Trading page.
 ### Needs Your Input
 
 **open-source-rideshare — GitHub push still blocked**
-Sessions 77–93 of commits piling up locally. Options:
+Sessions 77–95 of commits piling up locally. Options:
 - (a) `git config --global credential.helper store` + push once with username/PAT
 - (b) `ssh-keygen -t ed25519` on Pi → add public key to GitHub account
 - (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
@@ -67,9 +72,9 @@ Can you share the cycle logs or a screenshot from the Trading page? We can't pul
 ---
 
 ### Suggested Priorities (Next Session)
-1. **Resistance-research — Reparations (Domain 22)**: Final domain in the deepening pass. After this, the full 22-domain evidence library is complete and the proposal is publication-ready.
-2. **Open-source-rideshare**: Trip/driver activity heatmap analytics, or rider/driver notification history log — good options for next feature.
-3. **Resistance-research**: April monitoring pass when user drops April 20+ updates in INBOX.md.
+1. **Open-source-rideshare**: Trip/driver activity heatmap analytics, or rider/driver notification history log — good next features with no blockers.
+2. **Resistance-research**: Monitoring pass when you drop April 17–20 updates in INBOX.md. Also: 12 remaining domains have no deepening files yet — option to continue the deepening pass.
+3. **Off-grid-living**: All 16 domains complete — quality review pass or publish-ready formatting pass.
 4. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
 
 ---
