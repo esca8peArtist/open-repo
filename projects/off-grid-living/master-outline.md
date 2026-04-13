@@ -25,7 +25,7 @@
 | 7 | Heating & Cooling | `07-heating-cooling.md` | Complete |
 | 8 | Waste & Sanitation | `09-waste-sanitation.md` | Complete |
 | 9 | Medicine & Health | `08-medical-health.md` | Complete |
-| 10 | Tools & Fabrication | `10-tools-fabrication.md` | Planned |
+| 10 | Tools & Fabrication | `10-tools-fabrication.md` | Complete |
 | 11 | Communications | `11-communications.md` | Planned |
 | 12 | Security & Defense | `12-security-defense.md` | Planned |
 | 13 | Community & Governance | `13-community-governance.md` | Planned |
