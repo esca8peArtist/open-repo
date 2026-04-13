@@ -1,0 +1,22 @@
+# Each project can have its own .gitignore
+# This file just provides some sensible defaults
+
+# Common development files
+.env
+.env.local
+*.log
+*.pyc
+__pycache__/
+node_modules/
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build outputs
+dist/
+build/
+*.egg-info/
