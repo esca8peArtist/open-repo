@@ -4448,6 +4448,26 @@ Berries ripen September–November. Persist through winter.
 
 ---
 
+<div style="page-break-before: always"></div>
+
+### Desert Marigold
+*Baileya multiradiata*
+
+![Desert Marigold (Baileya multiradiata) — bright yellow daisy-like flowers on woolly gray-green stems in desert](images/native-plants/baileya-multiradiata.jpg)
+
+**Identification**
+A showy perennial wildflower with woolly, gray-green, deeply lobed basal leaves and bright yellow, daisy-like flower heads (1–2 inches across) on slender, woolly stems (6–18 inches). One of the most conspicuous and abundant wildflowers of the Sonoran and Chihuahuan deserts — in good years, it colors entire roadsides and desert flats brilliant yellow. Blooms nearly year-round at lower elevations, peaking spring and fall.
+
+**Where to Find It**
+Roadsides, desert flats, gravelly desert, bajadas, and disturbed open desert throughout Arizona, New Mexico, western Texas, and adjacent Nevada. Very common and often abundant.
+
+**NOT FOR INTERNAL CONSUMPTION.**
+
+**Safety**
+**DO NOT EAT — NOT AN EDIBLE PLANT.** Desert Marigold is included here because of its extreme visibility and abundance — foragers frequently encounter it and may assume it is edible. It is not. *Baileya multiradiata* contains sesquiterpene lactones and other compounds that cause toxicity in livestock (sheep and cattle grazing it develop neurological symptoms). Human toxicity from ingestion has not been well-characterized but internal consumption is not recommended. **This plant should not be eaten as food.** It is used in traditional medicine (external preparations) but never as a food source. Do not confuse the caution here with edibility — the word "marigold" in common names is not predictive of edibility. Note this clearly if sharing plant information with others.
+
+---
+
 ## TREES AND SHRUBS
 
 ---
@@ -4503,6 +4523,280 @@ Flowers: strip florets from stems, steep in sugar syrup with lemon for elderflow
 
 **Safety**
 **LOOKALIKE:** *Red Elderberry (S. racemosa)* has red berries in a domed (not flat-topped) cluster — toxic raw. **Flat-topped cluster + dark blue/black berries = edible when cooked. Red berries in domed cluster = do not eat raw.** Do not eat leaves, stems, or unripe berries of any elderberry species.
+
+---
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Pinyon Pine
+*Pinus edulis* (Two-Needle Pinyon) and *P. monophylla* (Single-Leaf Pinyon)
+
+![Pinyon Pine (Pinus edulis) — short needles in pairs and plump resin-sticky cones with large edible seeds](images/native-plants/pinus-edulis.jpg)
+
+**Identification**
+A small, rounded pine tree (10–35 feet) with short needles in bundles of two (*P. edulis*) or singly (*P. monophylla*). The cones are small (1–2 inches), rounded, and resinous. The seeds (pinyon nuts) are large relative to the cone — about ½ inch — with a thin papery wing or almost wingless. Bark is gray-brown, scaly. Grows in the distinctive pinyon-juniper woodland zone of the Southwest.
+
+**Where to Find It**
+Dry rocky foothills, mesas, and plateaus at 4,500–7,500 feet elevation. Widespread throughout New Mexico, Arizona, Utah, Nevada, and Colorado in characteristic pinyon-juniper woodland. Often grows in mixed stands with one-seed juniper (*Juniperus monosperma*).
+
+**Season**
+Cones ripen late summer through fall (August–October). Harvest when cones are green and opening or just fallen. Green cones can be roasted to open; fully ripe cones can be shaken out.
+
+**Edible Parts**
+Seeds (pinyon nuts) — one of the highest-calorie wild foods in the Southwest.
+
+**Preparation**
+Harvest cones before squirrels and jays claim them — competition is fierce. Green cones: roast in coals or oven at 300°F until they open. Shake out seeds. Shell by cracking between rocks or with a nutcracker. Eat raw (sweet, rich, buttery) or toast lightly. Grind into a rich paste (pinyon butter). Add to stews, breads, and piñole (traditional cornmeal drink). Dried shelled nuts store well for months in a cool dry place.
+
+**Safety**
+No dangerous lookalikes. All true pines produce edible seeds, though not all are large enough to harvest practically. The resin on hands and tools can be removed with vegetable oil.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Juniper Berries
+*Juniperus monosperma* (One-Seed Juniper), *J. osteosperma* (Utah Juniper), *J. deppeana* (Alligator Juniper)
+
+![One-Seed Juniper (Juniperus monosperma) — scale-like foliage and blue-purple berry-like cones](images/native-plants/juniperus-monosperma.jpg)
+
+**Identification**
+Shrubs to small trees (6–20 feet) with scale-like or awl-like overlapping foliage (not needle-like — scale leaves pressed flat against the twig). The "berries" are technically fleshy seed cones — round to oval, blue-gray to reddish-brown, coated in a whitish waxy bloom, usually containing 1–2 seeds. The foliage of edible Southwest junipers has a resinous, piney-gin aroma when crushed. *J. deppeana* (Alligator Juniper) has distinctive checkered bark resembling alligator hide.
+
+**Where to Find It**
+Pinyon-juniper woodland, dry mesas, rocky slopes throughout the Southwest at 3,500–7,000 feet. One of the most abundant trees in the Southwest — the juniper-pinyon zone covers millions of acres.
+
+**Season**
+Berries ripen late summer to fall (August–November) and often persist through winter. Blue-gray fully ripe berries are best. Red-brown berries of some species are also ripe.
+
+**Edible Parts**
+Ripe berry-like cones (the fleshy covering and seeds). Used primarily as a spice and for tea.
+
+**Preparation**
+Use sparingly — the flavor is intensely resinous and gin-like. Dry ripe berries and use as a seasoning (crush 2–4 per dish) in game meats, stews, and wild teas. Tea: steep 4–6 dried berries in boiling water for 10 minutes, add honey. The berries can be ground and added in small amounts to cornmeal or grain dishes. Traditional O'odham and Navajo use includes grinding dried berries as a flavoring.
+
+**Safety**
+**CRITICAL LOOKALIKE: Savin Juniper (*Juniperus sabina*) is TOXIC.** Savin Juniper is primarily a European species and rare in wild US settings, but is widely planted as an ornamental in yards and parks throughout the Southwest. Its foliage has a fetid, unpleasant odor when crushed (vs. pleasant piney-resinous smell of edible junipers). Never harvest juniper berries from ornamental plantings — identify in the wild pinyon-juniper woodland only. Do not consume large quantities — the volatile oils are kidney-irritating in excess. Use as a spice in moderation, not a bulk food.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Tepary Bean
+*Phaseolus acutifolius* var. *latifolius*
+
+![Tepary Bean (Phaseolus acutifolius) — twining vine with small white flowers and small flattened pods](images/native-plants/phaseolus-acutifolius.jpg)
+
+**Identification**
+A slender, twining annual vine with lance-shaped to oval leaflets (three per leaf, typical bean family). Small white to pale lavender pea-like flowers. Pods are short (1.5–2.5 inches), flat, slightly curved, and contain 3–6 small, flattened seeds varying from white to tan to speckled or dark. Much smaller and more drought-adapted than common bean (*P. vulgaris*). Often found climbing through desert shrubs.
+
+**Where to Find It**
+Desert washes, canyon bottoms, bajadas, and areas that receive monsoon water. Southern Arizona, New Mexico, and south Texas. Also persists near former agricultural sites and Native American farming areas (was a major crop of the O'odham people and is still cultivated).
+
+**Season**
+Flowers during and after monsoon rains (July–September). Pods ripen and dry late summer through fall. Harvest dry pods before they shatter.
+
+**Edible Parts**
+Mature dry seeds (primary use); green immature pods (edible but small).
+
+**Preparation**
+Dry beans require long cooking — soak overnight, then simmer 1.5–2 hours until tender. One of the most drought-tolerant and heat-tolerant of all beans; highly nutritious with more protein per calorie than common beans. Use in soups, stews, and traditional desert bean dishes. Green pods can be cooked like snap beans but the primary use is the dry seed.
+
+**Safety**
+Like all raw beans, raw tepary beans contain lectins — always cook thoroughly. No toxic lookalikes in the Southwest — no other twining legume vine in the desert wash habitat produces small flattened pods at this scale.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Mormon Tea
+*Ephedra viridis* (Green Ephedra), *E. trifurca* (Longleaf Ephedra), *E. nevadensis* (Nevada Ephedra)
+
+![Mormon Tea (Ephedra viridis) — bright green jointed leafless stems in dense clumps](images/native-plants/ephedra-viridis.jpg)
+
+**Identification**
+Distinctive shrubs (1–4 feet) consisting almost entirely of bright green, jointed, segmented stems — the leaves are reduced to tiny dry scales at each joint. The overall appearance is like a bundle of green drinking straws or a photosynthetic horsetail. No true leaves visible to the naked eye. Tiny seed cones appear at joints in spring. The plant is immediately distinctive — nothing else in the Southwest looks quite like it.
+
+**Where to Find It**
+Dry rocky slopes, desert flats, mesas, bajadas, and open desert throughout the Southwest. Very common and abundant in the Sonoran, Mojave, and Chihuahuan deserts.
+
+**Season**
+Stems harvested year-round. Youngest growth (brighter green, more tender) is best for tea.
+
+**Edible Parts**
+Green stems — steeped as tea. Not eaten directly.
+
+**Preparation**
+Harvest a handful of green stems. Rinse. Simmer in water for 15–20 minutes (longer = stronger, more bitter). Strain and drink. The flavor is mildly astringent, slightly piney, earthy. Sweeten with honey if desired. Traditional Mormon Tea was made this way — the name comes from early Mormon settlers who used it as a coffee substitute.
+
+**Safety**
+North American *Ephedra* species contain small amounts of ephedrine alkaloids (far less than Asian *E. sinica*, the source of commercial ephedra supplements). Drinking 1–2 cups of tea occasionally poses no significant risk for most people. Do not consume in large quantities, do not drink daily long-term, and avoid entirely if you have heart conditions, high blood pressure, or are pregnant. The alkaloid content varies by species — *E. viridis* and *E. nevadensis* have lower alkaloid content than *E. trifurca*. No toxic lookalikes — the jointed, leafless green stem is unmistakable.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Canyon Grape / Desert Wild Grape
+*Vitis arizonica* (Canyon Grape)
+
+![Canyon Grape (Vitis arizonica) — lobed leaves and clusters of small dark blue-purple grapes](images/native-plants/vitis-arizonica.jpg)
+
+**Identification**
+A vigorous woody vine climbing into riparian shrubs and trees along canyon walls and stream corridors. Leaves are heart-shaped, 3–5 lobed, with toothed margins and a woolly to hairy underside. Tendrils opposite the leaves (key grape feature). Fruit in loose clusters of small round berries (¼–½ inch), dark blue to purple-black when ripe, with a whitish bloom. The tendrils, opposite-leaf climbing habit, and grape-like berry clusters are diagnostic.
+
+**Where to Find It**
+Desert canyon bottoms, riparian areas, stream banks, and washes with access to permanent or seasonal water. Southern Arizona, New Mexico, west Texas, and Nevada. Often drapes over cottonwood and willow trees.
+
+**Season**
+Berries ripen late summer through fall (August–October). Leaves edible in spring (young, tender).
+
+**Edible Parts**
+Ripe berries (fresh or cooked); young spring leaves (stuffed grape leaves).
+
+**Preparation**
+Berries: eat fresh — flavor ranges from sweet-tart to sour depending on location and ripeness. Excellent for jelly, juice, and wine (small seeds and thin skin). Young leaves: parboil to soften, stuff with grain and meat mixtures (dolmades-style).
+
+**Safety**
+**MOONSEED LOOKALIKE (*Menispermum canadense*):** Moonseed is toxic and can resemble wild grape vines. Key distinctions: moonseed leaves have smooth, unlobed or shallowly lobed margins and the leaf stem attaches to the underside of the leaf rather than at the notch; its fruit contains a single crescent-shaped seed (vs. round grape seeds); moonseed vines have no tendrils. Always check for tendrils (grape has them, moonseed does not) and verify seed shape before eating. *Vitis arizonica* range overlaps with moonseed only marginally in the eastern Southwest.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Wild Onion
+*Allium macropetalum* (Desert Wild Onion), *A. cernuum* (Nodding Wild Onion)
+
+![Wild Onion (Allium cernuum) — nodding pink flower umbel and grass-like leaves from bulb](images/native-plants/allium-cernuum.jpg)
+
+**Identification**
+Grass-like to strap-like basal leaves (flat to hollow-cylindrical depending on species) growing from a bulb. Flowers in a terminal cluster (umbel) at the top of a smooth, leafless stem — pink, rose, or white, with 6 petals. *A. macropetalum* is common in rocky desert slopes and grasslands of Arizona and New Mexico, with 2–3 flat leaves and pink flowers. *A. cernuum* has a nodding (drooping) flower head. All true *Allium* species smell strongly of onion or garlic when any part is crushed.
+
+**Where to Find It**
+Rocky desert slopes, dry grasslands, piñon-juniper edges, and open areas throughout the Southwest at various elevations.
+
+**Season**
+Bulbs available year-round (best spring). Leaves edible spring through early summer. Flowers in spring–early summer.
+
+**Edible Parts**
+Bulb, leaves, and flowers — all parts of true *Allium* are edible.
+
+**Preparation**
+Bulbs: use raw or cooked like green onions or small onions. Slice into salads, cook in soups and stews. Leaves: use fresh as scallion substitute. Flowers: edible garnish.
+
+**Safety**
+**CRITICAL SAFETY RULE — THE SMELL TEST IS MANDATORY:** **Every part of every true *Allium* species smells distinctly of onion or garlic when crushed. This is non-negotiable.** *Death Camas* (*Anticlea elegans*, formerly *Zigadenus*) grows in similar rocky slope and grassland habitats in the Southwest, produces similar grass-like leaves from a bulb, and can be confused with wild onion. **Death Camas has NO onion or garlic smell at all — it smells like nothing or mildly sweet.** If you crush a leaf or bulb and it does not immediately and unmistakably smell of onion or garlic, discard it entirely and do not eat any part of the plant. The smell test must be applied to every individual plant before eating.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Desert Willow
+*Chilopsis linearis*
+
+![Desert Willow (Chilopsis linearis) — long narrow leaves and showy orchid-like pink-purple flowers](images/native-plants/chilopsis-linearis.jpg)
+
+**Identification**
+A large shrub or small tree (6–20 feet) with long, very narrow, willow-like leaves (3–6 inches). The flowers are spectacular and unmistakable — showy, trumpet-shaped, orchid-like blooms in pink to lavender to white, with purple veining inside, appearing throughout summer. Long, narrow seed pods (6–12 inches) hang from the branches and persist into winter. Not a true willow — related to catalpa and bignonia. Grows almost exclusively along desert washes and dry streambeds.
+
+**Where to Find It**
+Desert washes, arroyos, dry riverbeds, and sandy canyon bottoms throughout the Sonoran and Chihuahuan deserts. A reliable indicator of underground water in an arroyo. Southern Arizona, New Mexico, west Texas, southern Nevada, and southern California.
+
+**Season**
+Flowers: May–September (peak summer). Pods ripen fall.
+
+**Edible Parts**
+Fresh flowers (edible in moderation). Young green seed pods (in moderation).
+
+**Preparation**
+Flowers: eat fresh as a salad garnish or trail nibble — mild, slightly sweet, faintly nectar-like. Use sparingly; do not eat in bulk. Young green pods: can be cooked and eaten like green beans in small quantities. The flavor is mild and somewhat bitter.
+
+**Safety**
+**Use in moderation.** Desert willow contains iridoid glycosides and other compounds that may cause gastrointestinal upset if consumed in large quantities. Traditional use is as a small trail food and medicinal plant — not as a bulk staple. Occasional small amounts of flowers or young pods are considered safe; do not eat large quantities. No dangerous lookalikes in desert wash habitat — the large orchid-like flowers are unmistakable. True willows (*Salix* spp.) in the same habitat have entirely different flowers (catkins) and round, not showy blooms.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Lamb's Quarters / Goosefoot
+*Chenopodium berlandieri* (Pitseed Goosefoot) and *C. murale* (Nettleleaf Goosefoot)
+
+![Lamb's Quarters (Chenopodium berlandieri) — diamond-shaped mealy leaves with white-gray powder on new growth](images/native-plants/chenopodium-berlandieri.jpg)
+
+**Identification**
+Upright annual plants (1–4 feet) with distinctively diamond- to goosefoot-shaped leaves with toothed or wavy margins. Young leaves and stems are coated in a fine white-gray mealy powder (this is the key identification feature — rub a leaf and the white coating comes off on your fingers). Tiny inconspicuous flowers in dense branched clusters at the top. Very common desert weed. *C. berlandieri* has a pitted seed surface; *C. murale* has somewhat coarser, darker-green leaves. Both are edible.
+
+**Where to Find It**
+Disturbed desert soils, roadsides, washes, agricultural edges, vacant lots, and desert gardens throughout the Southwest. Appears aggressively wherever soil is disturbed — a reliable indicator of past human activity or fertile ground.
+
+**Season**
+Young growth: spring through summer (best before plant flowers). Seeds: late summer through fall.
+
+**Edible Parts**
+Young leaves and shoots (cooked greens); seeds (grain).
+
+**Preparation**
+Leaves: boil or steam 5 minutes and eat as greens — mild, excellent flavor similar to spinach. High in vitamins A, C, calcium, and protein. Seeds: collect ripe seed heads, thresh, winnow, and cook as a grain (porridge) or grind into flour. Related to quinoa (same genus, formerly).
+
+**Safety**
+Contains oxalic acid — cook before eating to reduce oxalate content. The white mealy coating is normal and desirable. No toxic lookalikes: no poisonous plants share the combination of mealy white coating, goosefoot-shaped leaves, and weedy desert habitat. Distinguish from nightshades (smooth leaves, no mealy coating, round berries) and from lambsquarters' own toxic-adjacent relatives by confirming the mealy coating is present.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Tumbleweed / Russian Thistle
+*Salsola tragus* (syn. *S. iberica*)
+
+![Russian Thistle (Salsola tragus) — young spring growth with soft fleshy green shoots before drying](images/native-plants/salsola-tragus.jpg)
+
+**Identification**
+The iconic tumbleweed of the American West — virtually everyone can identify the dry, spherical, spiny, gray-brown weed that rolls across roads and piles against fences. What most people do not know: the young spring plants are entirely different — soft, succulent, grass-like shoots with bright green, cylindrical, fleshy leaves (¼–1 inch long), finely tipped but not yet spiny. As the plant matures and dries through summer, the leaves become hard and spine-tipped, ultimately forming the woody tumbleweed ball.
+
+**Where to Find It**
+Roadsides, disturbed desert soil, agricultural margins, and open desert throughout the entire Southwest and beyond. An introduced invasive species from Eurasia, now ubiquitous.
+
+**Season**
+**Spring only (March–May)** — young shoots before the plant begins to harden. Once leaves become rigid or spine-tipped, the plant is no longer pleasant to eat.
+
+**Edible Parts**
+Young spring shoots and leaves.
+
+**Preparation**
+Harvest young shoots under 6 inches tall with soft, fleshy leaves. Use raw in salads (mild, slightly salty, succulent) or boil 5 minutes as cooked greens. The flavor is pleasant when young — similar to tender lamb's quarters. Once you know what you're looking at in the spring, this is one of the most abundant wild greens in the Southwest. The plant is an invasive weed — harvesting it is ecologically benign.
+
+**Safety**
+Spring shoots only — mature plants are unpleasant and painfully spiny. High in oxalic acid when raw; cooking reduces this. No toxic lookalikes at the young stage — the succulent cylindrical fleshy leaves emerging in masses from disturbed desert soil in early spring are distinctive. Do not confuse with young spurges (*Euphorbia* spp.) which exude white milky sap when broken; Russian thistle has clear sap.
+
+---
+
+<div style="page-break-before: always"></div>
+
+### Southern Cattail
+*Typha domingensis*
+
+![Southern Cattail (Typha domingensis) — brown cylindrical seed heads and tall strap-like leaves at water's edge](images/native-plants/typha-domingensis.jpg)
+
+**Identification**
+Tall (5–10 feet), emergent aquatic plant growing in standing or slow water. Long, flat, strap-like leaves (¾–1 inch wide). Unmistakable brown, sausage-shaped seed heads (1–1.5 inches in diameter, 6–15 inches long). *T. domingensis* (Southern Cattail) is slightly more slender than the Common Cattail (*T. latifolia*) and typically has a small gap between the male (upper) and female (lower) portions of the flower spike. Found at lower desert elevations in warmer climates than the common cattail.
+
+**Where to Find It**
+Desert springs, stock tanks, riparian corridors, marshes, irrigation channels, and desert washes with permanent or semi-permanent water throughout the Southwest. A highly reliable indicator of water in arid landscapes.
+
+**Season**
+Year-round — different parts are harvested at different times. See Preparation.
+
+**Edible Parts**
+Young shoots (spring); green flower heads (late spring); pollen (early summer); root starch (fall–winter).
+
+**Preparation**
+See full cattail entry in other regions — all edible parts and preparation methods are identical across cattail species. Summary: (1) Spring shoots: peel outer leaves to reveal white inner core — eat raw or cooked like hearts of palm. (2) Green female flower heads before pollen shed: boil and eat like corn on the cob. (3) Pollen: shake into a bag when male flowers are shedding — use as flour extender. (4) Roots: dig in fall and winter, pound starchy rhizomes in water to extract cattail starch.
+
+**Cross-reference:** See also cattail entries in Region 2 (Northeast), Region 3 (Southeast), and Region 4 (Great Plains) for full detail. The species differs but all preparation is identical.
+
+**Safety**
+No toxic lookalikes once the brown seed head is visible. Young shoots before seed heads develop: confirm plant is growing in water, the inner shoot is white (not green), and the cross-section shows concentric leaf layers (not a solid stem like iris, which is toxic). **Iris (*Iris* spp.) lookalike:** Iris also grows in wet areas with strap-like leaves but has no cylindrical seed head, grows in drier soil, and the iris rhizome is visible at the soil surface (knotted, not buried deep). When in doubt, wait for the seed head to confirm identity.
 
 ---
 
@@ -4591,6 +4885,32 @@ Sauté in butter, add to pasta, risotto, soups. Dry for storage — drying inten
 **Safety**
 **Avoid any bolete with a red or orange pore surface** — some are toxic. Avoid any bolete whose flesh turns blue rapidly when cut — some blue-staining boletes are toxic. The King Bolete has white to tan pores and white non-bluing flesh. When in doubt about a bolete, do not eat it.
 
+---
+
+<div style="page-break-before: always"></div>
+
+### Desert Inky Cap
+*Coprinellus* spp. and *Coprinus* spp.
+
+![Desert Inky Cap (Coprinellus micaceus) — bell-shaped caps with mica-like sheen, dissolving into black ink](images/native-plants/coprinellus-micaceus.jpg)
+
+**Identification**
+Small to medium mushrooms (cap 1–3 inches wide) appearing in tight clusters or loose groups in desert grasslands and disturbed desert soil after rain. Cap is bell-shaped to conical, pale tan to ochre-brown, often with a glistening mica-like surface when young (mica inky cap, *C. micaceus*). The most distinctive feature: as the mushroom ages, the cap and gills dissolve from the margin inward into a black inky liquid (autodigestion). Gills are white when young, turning gray then black. Stem white, hollow, fragile. Harvest window is brief — within hours of emergence after rain.
+
+**Where to Find It**
+Desert grasslands, dry washes, disturbed soils, around dead wood, desert parks and gardens throughout the Southwest. Appear explosively after monsoon rains and fall moisture, often in the same spots year after year. More common at desert grassland elevations (2,500–5,500 feet) than in core low desert.
+
+**Season**
+After rains — primarily July–October (monsoon season) and again after fall rains. Disappear within 24–48 hours of emergence.
+
+**Edible Parts**
+Young caps before any blackening begins.
+
+**Preparation**
+Harvest only when caps are still white to tan — the moment black ink appears at the margin, the window is closing. Use within a few hours of harvest; they cannot be stored. Cook immediately: sauté in butter 4–6 minutes over medium heat. Mild, delicate flavor. A quick morning forage after overnight rains is the classic approach — check your spot, harvest young caps, cook for breakfast.
+
+**Safety**
+**Alcohol interaction warning:** *Coprinopsis atramentaria* (Common Inky Cap), a close relative, contains coprine which causes a severe and unpleasant reaction when consumed with or within several days of drinking alcohol (flushing, nausea, rapid heartbeat). *Coprinellus micaceus* does NOT contain coprine and does not interact with alcohol, but it can be confused with *C. atramentaria*. **Rule:** if you are uncertain of the species, do not drink alcohol within 72 hours before or after eating any inky cap. *C. atramentaria* is grayish with a more fibrous surface (not mica-sparkly) and lacks the mica sheen. Key: sparkly mica sheen = *C. micaceus* (no coprine); smooth gray surface = *C. atramentaria* (coprine present). When in doubt, apply the alcohol avoidance rule. Both species look similar when young and must be harvested before autodigestion begins — never eat any inky cap that has begun to turn black.
 
 ---
 
