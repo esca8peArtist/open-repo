@@ -24,7 +24,7 @@
 | 6 | Energy & Power | `06-energy-power.md` | Complete |
 | 7 | Heating & Cooling | `07-heating-cooling.md` | Complete |
 | 8 | Waste & Sanitation | `08-waste-sanitation.md` | Planned |
-| 9 | Medicine & Health | `09-medicine-health.md` | Planned |
+| 9 | Medicine & Health | `08-medical-health.md` | Complete |
 | 10 | Tools & Fabrication | `10-tools-fabrication.md` | Planned |
 | 11 | Communications | `11-communications.md` | Planned |
 | 12 | Security & Defense | `12-security-defense.md` | Planned |
