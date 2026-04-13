@@ -9,26 +9,25 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–92
+**Sessions run**: 75–93 (continued)
 
-### Accomplished (Session 92)
+### Accomplished (Session 93 — continued)
 
-#### resistance-research — Labor policy domain evidence deepening
-`domain-deepening/labor-evidence.md` (663 lines):
+#### resistance-research — Domain 20 Economic Concentration deepening
 
-- **Union decline**: Private-sector density 6.0% (2024) vs. 34–35% peak (1950s). Public-sector density still 32.5% — the labor movement now lives almost entirely in government employment.
-- **Productivity-pay divergence**: +59.7% productivity vs. +15.8% typical worker pay (1979–2019, EPI). Labor share of income: 63–65% (1970s) → 57–58% (2020s).
-- **Minimum wage — Card-Krueger**: The 1994 payroll-data reanalysis rebutted the Neumark-Wascher critique on methodological grounds. Dube/Lester/Reich (2010) county-pair design; Cengiz et al. (2019) bunching estimator — both find no employment loss at normal policy ranges. Monopsony framework (Manning 2003, Dube 2019) is the theoretical explanation. Germany 2015 experiment: 70,000–900,000 jobs predicted lost; near-flat actual (IAB). Seattle UW hours-reduction finding: methodological flaw documented (40% exclusion of multi-location employers).
-- **Tipped minimum wage**: $2.13 since 1991. Seven equal-pay states (CA, OR, WA, MN, NV, MT, AK). ROC United research: tipped workers in states with separate sub-minimum wage face 2x sexual harassment rate.
-- **Sectoral bargaining**: Germany 44% coverage (extension mechanism; employer-exit risk documented), France 98% coverage with only 8% union density (erga omnes extension), Austria 95–98% (compulsory chambers), Ghent system (union-administered UI → Denmark 67%, Belgium 65% union density).
-- **Gig economy**: IRS estimates $54B/year in lost payroll taxes from misclassification. EU Platform Workers Directive (2024) — presumption of employment. UK *Uber v. Aslam* [2021] UKSC 5. California Prop 22: $224M gig industry campaign — currently under CA Supreme Court review.
-- **Organizing rights**: EPI: 41.5% of organizing campaigns see illegal firings; 78% see captive audience meetings. NLRB case processing: 18–24 months from petition to resolution. Canada card-check comparison: 27–29% density vs. US 10%. NLRA 1935 racial exclusion: 2.4M farmworkers + 2.5M domestic workers still uncovered.
-- **OSHA**: 1:82,000 inspector ratio vs. ILO 1:10,000 minimum; 165-yr inspection cycle at current pace. Heat deaths +30% (2013–2022); still no federal heat stress standard. US fatal work injury rate 3.5/100K vs. Germany 1.24/100K.
-- **Paid leave**: FMLA covers only ~56% of workers (employer size/tenure thresholds); <20% can afford to take it unpaid. US = 0 weeks statutory paid parental leave (only wealthy country). State experiments (CA, NJ, NY, RI, MA, CO) show no employment effects.
-- **Non-competes**: FTC (2024) rule covering ~30M workers (18% of workforce), estimated $300B annual wage gain — struck down 5th Circuit August 2024. Starr (2019): 4% wage suppression in enforcing states vs. California.
-- **Mandatory arbitration**: 60.1M workers (56% of nonunion private-sector) in mandatory arbitration (Colvin 2018, up from 2% in 1992). Win rate: 21.4% in arbitration vs. 36.4% in federal court. Average award: $23,548 vs. $143,497 in court.
-- **Fiscal estimates**: Federal paid leave ~$200B/yr (0.38% payroll tax split); OSHA rebuild ~$2.2B/yr (tripling current budget); minimum wage: EPI estimates $15/hr reduces SNAP $4.6B/yr + Medicaid $3.4B/yr.
-- **7 contested findings** with methodological precision (employment effects above 60% median, German coverage decline warning, union productivity tradeoff, portable benefits adverse selection, non-compete California exceptionalism, agricultural organizing structural limits, arbitration reform political ceiling post-*Epic Systems*).
+**Domain 20: Economic Concentration** — `domain-deepening/economic-concentration-evidence.md` (644 lines):
+- **Markup methodology**: De Loecker-Eeckhout-Unger (QJE 2020) — average markup rose 1.18→1.67 (1980–2016), now 67% above competitive levels; Federal Reserve extension confirms trend through 2024. This is the peer-reviewed foundation for the proposal's $1.5 trillion labor share shift figure.
+- **Monopsony arc**: Alan Manning theoretical framework → Azar-Marinescu-Steinbaum (JHR 2022) empirical confirmation using 8.8M Burning Glass online vacancy postings; 5-17% wage penalty from concentration; rural/occupational niche concentration documented.
+- **Kill zone / killer acquisitions**: Cunningham-Ederer-Ma (JPE 2021) pharma natural experiment — incumbent firms acquire drugs in development that would compete with existing products and discontinue them; digital market extension debate documented.
+- **FTC non-compete rule quantified**: $400-488B over 10 years, 30 million workers, $524/year average wage gain, 8,500 new businesses/year — all from FTC's own regulatory impact analysis. Rule enjoined by Texas federal court August 2024 on jurisdictional grounds.
+- **AT&T 1984 breakup quantified**: Watzinger-Schnitzer study — local Bell territories saw patenting increase 15% vs. pre-divestiture trajectory; equipment market competition dropped prices 60%; long-distance rates fell 70% 1984–2000. Geographic limitation noted.
+- **Cross-ownership**: Azar-Schmalz-Tecu — common ownership by BlackRock/Vanguard/State Street raises airline prices 3-11% on concentrated routes; institutional shareholder coordination mechanism; Posner-Scott Morton-Weyl policy remedy designs.
+- **Active litigation**: Google Search — liability ruling August 2024 (exclusionary contracts with Apple/Samsung violate Sherman Act §2); remedy phase ongoing. FTC v. Amazon (2023 complaint, trial date 2026). DOJ v. Apple (filed March 2024). DOJ v. Google Ad Tech (trial completed Nov 2024, ruling pending).
+- **International benchmarks**: Germany Section 19a GWB (enacted Jan 2021, designated Apple/Google/Amazon/Meta/Microsoft by Sept 2024); EU DMA — Apple fined €500M, Meta fined €200M April 2025 (first enforcement actions); UK DMCCA in force Jan 2025 (10% global turnover fines); Australia ACCC 5-year inquiry, government response Dec 2024. Comparative enforcement budget table: EU spends ~$2.1/million GDP vs. US ~$0.6/million GDP.
+- **5 structured counterarguments**: Chicago School efficiency (Philippon falsifies it); "free services" (two-sided market problem, surveillance capital extraction); breakup destroys innovation (AT&T evidence refutes; AI race claim addressed); Amazon lowers prices (MFN clause pass-through, seller fee extraction from FTC complaint); codetermination incompatible with US law (statutory not constitutional barrier; VW-Chattanooga 2024 model).
+- **Fiscal estimates per subsection**: 20a ~$300M/yr → $50-100B consumer savings; 20c FTC rule $400-488B/10yr; 20d $1.6B additional investment; 20e German CEO/worker 50:1 vs. US 350:1.
+
+**Deepening status: 8 of 22 domains complete.** Remaining: Data Privacy (21), Reparations (22).
 
 ---
 
@@ -44,7 +43,7 @@ Or `http://127.0.0.1:8000` → Trading page.
 ### Needs Your Input
 
 **open-source-rideshare — GitHub push still blocked**
-Sessions 77–92 of commits piling up locally. Options:
+Sessions 77–93 of commits piling up locally. Options:
 - (a) `git config --global credential.helper store` + push once with username/PAT
 - (b) `ssh-keygen -t ed25519` on Pi → add public key to GitHub account
 - (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
@@ -61,14 +60,22 @@ Can you share the cycle logs or a screenshot from the Trading page? We can't pul
 ---
 
 ### Suggested Priorities (Next Session)
-1. **Resistance-research**: April 20 post-event monitoring pass (needs user to drop news in INBOX.md first). Alternately: off-grid-living quality review pass (all 16 domains complete — time for consistency + cross-reference audit).
+1. **Resistance-research deepening queue**: Data Privacy (21), Reparations (22) — two domains left before the full 22-domain deepening pass is complete.
 2. **Open-source-rideshare**: Trip/driver activity heatmap analytics, or rider/driver notification history log.
-3. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
-4. **Resistance-research deepening queue**: 5 domains with no dedicated deepening file yet — Social Safety Net (18), National Security (19), Economic Concentration (20), Data Privacy (21), Reparations (22).
+3. **Resistance-research**: April monitoring pass when user drops April 20+ updates in INBOX.md.
+4. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
 
 ---
 
 ### History
+
+#### Accomplished (Session 93 — earlier in session)
+Domains 18 (Social Safety Net, 544 lines) and 19 (National Security, 648 lines) deepenings committed. See prior CHECKIN entry for details.
+
+#### Accomplished (Session 92)
+Labor policy evidence deepening (663 lines) — union decline, Card-Krueger, sectoral bargaining, gig economy, OSHA, non-competes, mandatory arbitration, fiscal estimates.
+
+---
 
 #### Accomplished (Session 90)
 
