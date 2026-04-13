@@ -16,7 +16,7 @@
 
 | # | Domain | File | Status |
 |---|--------|------|--------|
-| 1 | Site Selection & Land | `01-site-selection.md` | Planned |
+| 1 | Site Selection & Land | `01-site-selection.md` | Complete (~1,178 lines) |
 | 2 | Shelter & Construction | `11-shelter-construction.md` | Complete (~1,540 lines) |
 | 3 | Water Systems | `03-water.md` | Complete |
 | 4 | Food Production | `04-food-production.md` | Complete |
