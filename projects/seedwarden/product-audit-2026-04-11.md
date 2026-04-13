@@ -43,8 +43,8 @@ Products with complete content, generated PDF, and Etsy listing copy. These can 
 
 **Pre-launch checklist (applies to ALL Tier 1 products):**
 - [ ] **PDF mockup images** — Every listing needs 2-3 mockup images showing the PDF on a tablet/phone/table. Use Canva or a free mockup generator. This is the #1 conversion factor for digital products on Etsy.
-- [ ] **Legal disclaimer page** — Add a standard educational disclaimer to the front matter of each PDF. Especially critical for: Native Plants (foraging safety), Hunting/Fishing/Trapping (legal compliance), Livestock (animal husbandry), both Preservation manuals (food safety), Hot Sauce (pH safety).
-- [ ] **Internal cross-links** — Each PDF should mention 2-3 related Seedwarden products at the end ("If you found this useful, you might also like..."). This drives cross-sales within the catalog.
+- [x] **Legal disclaimer page** — All 21 product files verified to have disclaimers (Session 87). Native Plants, Hunting/Trapping, Livestock, both Preservation manuals, Hot Sauce: all have appropriate risk-specific language. Gardening-only products: standard educational disclaimers.
+- [x] **Internal cross-links** — All 21 products verified to have cross-links to related products (Session 87). Format varies ("More From Seedwarden" section, inline product mentions, closing recommendations) but all include 2–3 related products with prices.
 - [ ] **Voice consistency pass** — Read each product aloud to flag academic, hedging, or filler language. Brand voice is direct, practical, honest.
 - [ ] **Regenerate all PDFs** — After any content edits, run `generate_pdfs.py` to update all PDFs.
 
