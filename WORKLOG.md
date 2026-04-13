@@ -6,6 +6,71 @@
 
 ---
 
+## 2026-04-13 — Session 92 — resistance-research
+
+### Orientation
+- INBOX: Empty — nothing to process
+- Stockbot: Paper trading live, can't access cycle logs without STOCKBOT_API_KEY in env; all tasks in task system are done; no code work actionable without performance data from user
+- Selected task: resistance-research — labor policy domain evidence deepening (Domain 17)
+
+### resistance-research — Labor Policy Evidence Deepening COMPLETE
+
+`domain-deepening/labor-evidence.md`, 663 lines. Committed.
+
+Key sections:
+- **Section 1: Labor market decline** — Private-sector union density at 6.0% (2024) vs. 34–35% peak (1950s); 73% relative decline since 1983. Productivity-pay divergence: +59.7% productivity vs. +15.8% typical worker pay, 1979–2019 (EPI). Labor share of income declined ~6–8 pct points from 63–65% to 57–58% (BLS).
+- **Section 2: Minimum wage evidence** — Card-Krueger (1994) payroll-data reanalysis rebuttal; Dube/Lester/Reich (2010) county-pair natural experiment; Cengiz et al. (2019) bunching estimator. Monopsony framework (Manning 2003, Dube 2019) as theoretical underpinning. Germany 2015 introduction: 70,000–900,000 jobs predicted lost; near-flat actual outcome (IAB). UK National Living Wage (2016+) evidence. Tipped minimum wage: $2.13 since 1991; seven equal-pay states; ROC United research linking sub-minimum wage to sexual harassment rates.
+- **Section 3: Sectoral bargaining** — Germany (44% coverage; extension mechanism; employer-exit warning), France (extension erga omnes; 8% union density / 98% coverage paradox), Austria (compulsory chambers; 95–98%), Ghent system (union-administered UI as density engine — Belgium/Denmark/Sweden). Clean Slate for Worker Power (Harvard/Roosevelt 2020) US design.
+- **Section 4: Gig economy** — Katz-Krueger (2016/2019) scale data; IRS $54B/year payroll tax loss from misclassification. EU Platform Workers Directive (2024) — presumption of employment. UK Uber v. Aslam [2021] UKSC 5 — workers, not contractors. California AB5/Prop 22 ($224M gig industry campaign). Washington state HB 2076 (2022) portable benefits.
+- **Section 5: Organizing rights** — EPI: 41.5% illegal firings during campaigns; 78% captive audience meetings. NLRB case processing: 18–24 months to resolution. Canada card-check comparison (27–29% density vs. US 10%). German Betriebsrat — works councils at 5+ employees, co-determination at 2,000+. NLRA 1935 racial exclusion: agricultural (2.4M farmworkers) and domestic workers (2.5M) still uncovered.
+- **Section 6: OSHA** — 1:82,000 inspector ratio vs. ILO 1:10,000 minimum; 165-yr inspection cycle at current capacity. Heat deaths +30% (2013–2022); no OSHA heat standard. EU Framework Directive 89/391 comparison. Fatal work injury rate: US 3.5/100K vs. Germany 1.24/100K (Eurostat).
+- **Section 7: Paid leave / non-competes / arbitration** — FMLA: 44% of private-sector workers excluded; <20% of eligible workers take it unpaid. FTC non-compete rule (2024): ~30M workers, $300B wage gain estimate — struck down 5th Circuit Aug 2024 (Starr 4% wage suppression coefficient). Colvin (2018): 60.1M workers in mandatory arbitration; win rate 21.4% vs. 36.4% in federal court.
+- **Section 8: Fiscal estimates** — $200B/yr paid leave program (0.38% payroll tax, Tax Policy Center); $2.2B/yr OSHA rebuild (11K inspectors at $200K loaded cost); CBO Raise the Wage Act: 900K out of poverty, ±1.4M employment effect; EPI: $15 MW reduces SNAP costs $4.6B/yr and Medicaid $3.4B/yr.
+- **7 contested findings** with methodological precision — employment effects above 60% median wage, German coverage decline warning, union productivity tradeoff, portable benefits adverse selection, non-compete California exceptionalism, agricultural organizing structural barriers, arbitration reform political constraints.
+- **30-entry key numbers table**
+
+---
+
+## 2026-04-13 — Session 91 — open-source-rideshare + resistance-research
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub push still unresolved (no user resolution); all other blocks resolved
+- Stockbot: Paper trading live, can't check cycle logs without STOCKBOT_API_KEY in env — skipped
+- Selected tasks: (1) rideshare admin financial reconciliation; (2) resistance-research housing domain deepening
+
+### open-source-rideshare — Admin Financial Reconciliation COMPLETE
+
+3 new admin endpoints, 54 tests, full suite **2,416 passing** (up from 2,386). Zero regressions.
+
+**Files created**:
+- `backend/app/services/admin_financials.py` — pure async service layer: `get_financial_summary`, `export_reconciliation_csv`, `get_payout_status`
+- `backend/app/api/v1/admin_financials.py` — FastAPI router, all endpoints gated by `require_admin`
+- `backend/tests/test_admin_financials.py` — 54 tests (30 unit + 24 integration)
+- `backend/app/main.py` — router registered
+
+**Endpoints** (all require admin auth; non-admin → 403):
+- `GET /api/v1/admin/financial-reconciliation/summary?start_date=&end_date=` — gross/net revenue, fares, tips, promos, refunds, payouts, daily breakdown
+- `GET /api/v1/admin/financial-reconciliation/export` — CSV: date, ride_id, rider/driver IDs, fare, tip, promo_discount, platform_fee, driver_payout, refund_amount, net_platform
+- `GET /api/v1/admin/financial-reconciliation/payout-status` — driver payout records with optional status filter (pending/processing/completed/failed)
+
+### resistance-research — Housing Domain Evidence Deepening COMPLETE
+
+`domain-deepening/housing-evidence.md`, 633 lines, 107 citations. Committed.
+
+Key findings:
+- **Supply gap**: 4.03M units (Realtor.com/Up For Growth) for the overall market; 7.2M affordable units missing for extremely low-income renters (NLIHC). Supply reform alone can't close the bottom-quintile affordability gap.
+- **Cost burden at all-time high**: 22.4M renter households cost-burdened (Harvard JCHS 2024); 2025 Housing Wage $33.63/hr = 4.6x federal minimum wage.
+- **Zoning GDP drag**: Hsieh-Moretti (AEJ: Macro 2019) — relaxing zoning in NYC/SF Bay to median metro standards = 13.5% higher GDP (corrected figure); $1.4T/year drag from restrictive zoning.
+- **Racial history**: Single-family zoning developed as a proxy after *Buchanan v. Warley* (1917) barred explicit racial zoning; HOLC redlining fed FHA underwriting (only 2% of $120B in mortgage backing 1934–1962 reached nonwhite borrowers). 27.6 ppt Black-white homeownership gap is structural, not behavioral.
+- **Rent control**: Diamond et al. (2019) — 15% long-run supply reduction + 5.1% citywide rent increase. Anti-displacement bridge, not structural strategy.
+- **Moving to Opportunity corrected**: Chetty, Hendren, Katz (2016) — children who moved before age 13 had higher college attendance + earnings; the initial adult null result was misread. Policy implication: target voucher mobility at families with young children.
+- **Housing First**: 88% stable housing vs. 47% treatment-as-usual (Tsemberis RCT); 73% vs. 31% (Canadian At Home/Chez Soi). Among the strongest evidence bases in all social policy.
+- **LIHTC inefficiency**: Units 20% more expensive per sq ft than market-rate (GAO); $13.5B/year subsidy may produce fewer units than direct subsidy alternatives.
+- **Vienna limit**: Stopped building Gemeindebau in 2005 due to $1.3B debt from sticky rents vs. aging maintenance — model is real but financially constrained.
+
+---
+
 ## 2026-04-13 — open-source-rideshare — Rider Spending Analytics + Driver Tax Summary
 
 ### Features built (commit 2a5ae46)
