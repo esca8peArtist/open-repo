@@ -28,7 +28,7 @@
 | 17 | Hunting, Fishing & Trapping Manual | 747 | Yes | Yes* | — | $20 | Tier 1 |
 | 18 | Apartment Growing Complete Guide | 3110 | Yes (146pp) | Yes | **No** | $13 | Tier 2 |
 | 19 | Companion Planting Chart | 382 | Yes (21pp) | Yes | — | $5 | Tier 1 |
-| 20 | Zone-by-Zone Seed Starting Calendar | 1635 | Yes (82pp) | **No** | — | $7–$18 | Tier 1 |
+| 20 | Zone-by-Zone Seed Starting Calendar | 1635 | Yes (82pp) | Yes | — | $7–$18 | Tier 1 |
 
 \* Listing copy written this session (April 11, 2026)
 
