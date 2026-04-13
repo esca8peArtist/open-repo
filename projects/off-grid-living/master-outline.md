@@ -20,7 +20,7 @@
 | 2 | Shelter & Construction | `02-shelter-construction.md` | Planned |
 | 3 | Water Systems | `03-water.md` | Complete |
 | 4 | Food Production | `04-food-production.md` | Complete |
-| 5 | Food Preservation & Storage | `05-food-storage.md` | Planned |
+| 5 | Food Preservation & Storage | `05-food-preservation.md` | Complete |
 | 6 | Energy & Power | `06-energy-power.md` | Complete |
 | 7 | Heating & Cooling | `07-heating-cooling.md` | Complete |
 | 8 | Waste & Sanitation | `08-waste-sanitation.md` | Planned |
