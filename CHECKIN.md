@@ -9,9 +9,66 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–81
+**Sessions run**: 75–82
 
-### Accomplished (Session 81)
+### Accomplished (Session 82)
+
+#### resistance-research — April 14 watch brief
+New file: `monitoring/2026-04-14-watch.md`. Pre-event brief for Monday's scheduled and probable events:
+- Scheduled: CBP noon EDT Phase 1 IEEPA refund status declaration; Eaton 3 PM conference
+- Probabilistic: Leon remand response (any time), SCOTUS application (before April 17 deadline), Section 122 ruling (any business day — panel was sharply skeptical April 10), Crenshaw Nashville ruling
+- Three decision trees: Leon narrows (Scenario A, ~40%), Leon silent through EOD (compressed-clock scenario), SCOTUS files cold April 14
+- Three-tier escalation thresholds (code-red = same-day response required)
+- Framing for what EOD silence means on each thread
+
+#### open-source-rideshare — Driver availability and scheduling
+New feature. 56 tests passing, 3 skipped (PostgreSQL integration), 0 failures. Commit: `4e22036`.
+- `models/driver_availability.py` — `DriverSchedule` (weekly recurring slots, unique on driver_id+day+start_time) + `DriverOnlineStatus` (real-time state)
+- `schemas/driver_availability.py` — HH:MM time validation, end-after-start enforcement
+- `services/driver_availability.py` — schedule CRUD with upsert, online toggle (stamps `went_online_at` on offline→online only), heartbeat, `is_driver_available_now` (online + schedule window check), `get_available_drivers_for_matching`
+- `api/v1/driver_availability.py` — 7 endpoints: 5 driver self-service + 2 admin
+- Migration: `a1b2c3d4e5f6_add_driver_availability.py`
+
+#### off-grid-living — `09-waste-sanitation.md` (1,110 lines)
+Domain 9 complete. master-outline.md updated (filename + status corrected).
+- Human waste: composting toilet (4 commercial models, DIY two-chamber with cut-list, legal table 15 states), outhouse ($328 DIY, pit sizing math, VIP vent), humanure (Haverstock), septic (EPA sizing, $5K–$20K cost table, ATU/mound/drip alternatives)
+- Greywater: L2L, branched drain (2% slope rule), constructed wetland (50–80 sq ft/4-person, $230–415), soap chemistry table, legal table 15 states
+- Solid waste: burn barrel, biochar (0.5–2 kg/m² application), vermicomposting, hazardous materials disposal
+- CBRN: fallout waste (Cs-137/Sr-90 no-compost rule), hydrated lime for biological emergency waste
+- 27-row cost table; decision matrix; skills tier table
+
+---
+
+### Stockbot Note
+STOCKBOT_API_KEY not available in this orchestrator session — unable to check Monday trading cycle logs. **Market opens Monday 9:30 AM ET (April 14)**. Check manually:
+```
+curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20
+```
+Or visit `http://127.0.0.1:8000` → Trading page. Three sessions: momentum (SPY/QQQ/MSFT), rsi_mean_reversion (AAPL/NVDA), sma_crossover (AMZN/SPY). Server confirmed healthy (auth response) as of this session.
+
+---
+
+### Needs Your Input
+
+**open-source-rideshare — GitHub push still blocked**
+SSH key or HTTPS credentials needed to push `feature/background-checks-firebase-push` to GitHub. Many sessions of commits are piling up locally. Options:
+- (a) `git config --global credential.helper store` + push once with username/PAT
+- (b) Generate SSH key on Pi: `ssh-keygen -t ed25519` and add public key to GitHub account
+- (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
+
+---
+
+### Suggested Priorities (Next Session)
+1. **Resistance-research**: Run April 14 monitoring pass — check CBP noon declaration, Leon remand, Section 122, Nashville. Write `monitoring/2026-04-14-results.md`.
+2. **Stockbot**: After market open, review Monday cycle logs. Did any sessions fire trades? Any errors?
+3. **Off-grid-living**: Write `10-tools-fabrication.md` — hand tools, power tools, metalworking, woodworking, improvised fab, sourcing.
+4. **Open-source-rideshare**: Next feature TBD (driver insurance integration or driver schedule-based dispatch integration).
+
+---
+
+### History
+
+#### Accomplished (Session 81)
 
 #### resistance-research — April 13 Monday monitoring
 New file: `monitoring/2026-04-13-monday.md`. All five threads confirmed:
@@ -31,16 +88,7 @@ Per-user opt-in/out by notification type and channel. 51 new tests. Full suite: 
 - `services/notifications.py` updated: checks preference before each channel dispatch; SOS_ALERT always bypasses; DB failures are non-fatal
 
 #### off-grid-living — `08-medical-health.md` (1,139 lines)
-Domain 8 complete. 14 sections covering: treat-vs-evacuate decision framework, MARCH first aid protocol (wound irrigation physics: 18g needle = 8 PSI, closure hierarchy, Ottawa ankle rules), 3-tier supply tables ($350–550 basic, $900–1,400 advanced) with specific sources, 18 medicinal plants with evidence levels (St. John's Wort CYP3A4 interactions and comfrey hepatotoxicity flagged explicitly), empiric antibiotics + fish antibiotic legality confirmed (2018 CID study), full dental section (Cavit, abscess I&D, Ludwig's angina warning, extraction), prescription management (SLEP data, ReliOn insulin OTC $25/vial, ivermectin horse paste dosing math), childbirth (all 5 P's, McRoberts for shoulder dystocia, improvised Bakri balloon), mental health (Antarctic winterover research cited, exercise=SSRI equivalent evidence), trauma (tourniquet timing physiology, conservative appendicitis antibiotics 70% RCT success), CBRN (ARS dose table by Gy, 7/10 rule, KI dosing by age group, nerve agent SLUDGE signs with atropine dosing), training stack (WFR $700–900 recommended), 25-row cost table (~$4,000–5,000 total investment). Next: `09-waste-sanitation.md`.
-
----
-
-### Stockbot Note
-STOCKBOT_API_KEY not available in this orchestrator session — unable to check Monday trading cycle logs. Check manually:
-```
-curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20
-```
-Or visit `http://127.0.0.1:8000` → Trading page. First trades should have fired Monday 9:30 AM ET.
+Domain 8 complete. 14 sections: treat-vs-evacuate, MARCH protocol, 3-tier supply tables, 18 medicinal plants with evidence levels, empiric antibiotics + fish antibiotic legality, dental, prescription management, childbirth, mental health, trauma, CBRN, training stack, 25-row cost table (~$4,000–5,000 total). Next: `09-waste-sanitation.md`.
 
 ---
 

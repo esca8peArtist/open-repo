@@ -25,6 +25,51 @@
 
 ---
 
+## 2026-04-13 — Session 82 — off-grid-living + open-source-rideshare + resistance-research
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub push still blocked (no SSH/credentials — unresolved); stockbot API key not in env, can't read cycle logs (user should check manually after Monday open)
+- Stockbot: server healthy (auth response confirmed); paper trading sessions still running; market opens Monday 9:30 AM ET — no actionable work until user checks logs
+- Selected tasks: (1) off-grid-living 09-waste-sanitation.md; (2) rideshare driver availability/scheduling feature; (3) resistance-research April 14 watch brief
+- All three launched in parallel as background agents
+
+### off-grid-living — 09-waste-sanitation.md COMPLETE
+
+1,110 lines. master-outline.md updated (domain 8 row corrected to `09-waste-sanitation.md | Complete`).
+- 9.1 Why This Matters: 8-row pathogen table (infective doses + env survival), temperature kill data (55/60/70°C with WHO citations), handwashing ROI (40-47% diarrheal reduction, Cochrane 2014)
+- 9.2 Human Waste Systems: composting toilet (thermophilic vs. mesophilic, C:N ratio for 8 bulking materials, 4 commercial models with failure modes, DIY two-chamber with dimensions, vermicomposting variant, legal status table 15 states, troubleshooting table), outhouse (pit sizing math 128 cu ft / 4-person, VIP vent, $328 DIY cost breakdown, abandonment), humanure (Haverstock bucket method, thermophilic pile, annual cycle), septic (EPA sizing formulas, perc rate table, full cost $5K-$20K+, ATU/mound/drip alternatives), emergency field scenarios
+- 9.3 Greywater: volume estimates, L2L design, branched drain rules (2% slope, surge tank), constructed wetland sizing (50-80 sq ft / 4 persons, $230-415 materials), soap chemistry (sodium vs. potassium), state legal table 15 states, failure modes
+- 9.4 Solid Waste: reduction hierarchy, hot compost, burn barrel (legal status, what not to burn), biochar (cone pit + drum retort, 300-700°C, 0.5-2 kg/m² application rate), vermicomposting, hazardous materials disposal
+- 9.5 Pathogen epidemiology: F-diagram, WHO compost reuse standards
+- 9.6 Legal landscape: NPDES/UIC baseline, state permissiveness rankings, what "composting toilet legal" actually means
+- 9.7 Decision matrix: household size × budget × county permitting × water table → recommended system
+- 9.8 CBRN: fallout waste (Cs-137/Sr-90, no-compost-to-garden), contaminated water containment, hydrated lime for biological emergency waste
+- 9.9 Cost table: 27 rows
+- 9.10 Skills: DIY feasibility table, skill acquisition path, time-to-competence by system
+
+### open-source-rideshare — Driver availability and scheduling COMPLETE
+
+6 new files, 2 modified. 56 tests passing, 3 skipped (PostgreSQL integration), 0 failures. Commit: `4e22036`.
+- `models/driver_availability.py` — `DriverSchedule` (weekly recurring slots, unique on driver_id+day+start_time) + `DriverOnlineStatus` (real-time state, one row per driver)
+- `schemas/driver_availability.py` — HH:MM time validation, end-after-start enforcement, weekly schedule map, admin schemas
+- `services/driver_availability.py` — schedule CRUD with upsert, online toggle (stamps `went_online_at` on offline→online only), heartbeat, `is_driver_available_now` (online + schedule window check), `get_available_drivers_for_matching`, `_heartbeat_is_stale` utility
+- `api/v1/driver_availability.py` — 7 endpoints: 5 driver self-service (GET schedule, POST slot, DELETE slot, PUT online, POST heartbeat), 2 admin (list all, individual detail)
+- Migration `a1b2c3d4e5f6_add_driver_availability.py` — driver_schedules + driver_online_status tables
+- `main.py` + `models/__init__.py` updated
+
+### resistance-research — April 14 watch brief COMPLETE
+
+New file: `monitoring/2026-04-14-watch.md`.
+- Scheduled events: CBP noon Phase 1 declaration, Eaton 3 PM conference (procedural, watch for cooperation posture signals)
+- Probabilistic events tracked: Leon remand response, SCOTUS application, Section 122 ruling, Crenshaw Nashville ruling
+- Three decision trees: Leon narrows (Scenario A), Leon silent through EOD (compressed-clock), SCOTUS files cold April 14
+- Escalation thresholds in three tiers: code-red (same-day response required) vs. same-day awareness
+- Background threads (Humphrey's Executor, May Day, Xinis Maryland) documented with monitoring posture notes
+- Framing for what constitutes a productive vs. revealing non-event at EOD
+
+---
+
 ## 2026-04-13 — Session 81 — resistance-research + off-grid-living + open-source-rideshare
 
 ### Orientation

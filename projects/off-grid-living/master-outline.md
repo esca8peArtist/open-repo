@@ -23,7 +23,7 @@
 | 5 | Food Preservation & Storage | `05-food-preservation.md` | Complete |
 | 6 | Energy & Power | `06-energy-power.md` | Complete |
 | 7 | Heating & Cooling | `07-heating-cooling.md` | Complete |
-| 8 | Waste & Sanitation | `08-waste-sanitation.md` | Planned |
+| 8 | Waste & Sanitation | `09-waste-sanitation.md` | Complete |
 | 9 | Medicine & Health | `08-medical-health.md` | Complete |
 | 10 | Tools & Fabrication | `10-tools-fabrication.md` | Planned |
 | 11 | Communications | `11-communications.md` | Planned |
