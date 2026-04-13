@@ -127,6 +127,8 @@ Public financing of elections through a small-donor matching system (6:1 or high
 
 *Implementation pathway*: Small-donor matching by federal statute. Disclosure requirements by statute (the DISCLOSE Act). Constitutional amendment for Citizens United reversal is a long-term project requiring sustained movement pressure.
 
+*Evidence companion: `domain-deepening/domain-02-campaign-finance.md` — full evidence library for the campaign finance crisis and reform tools. Covers the Buckley→Citizens United→McCutcheon legal chain; 2024 spending data ($15.9B total, $1.9B dark money record, 100 billionaire families = 1-in-6 dollars); 501(c)(4)/(c)(6) dark money mechanics and FEC enforcement deadlock; small-dollar public financing evidence from NYC, Seattle, Connecticut, Arizona, and Maine; Gilens and Page (2014) and Bartels (2008) donor-class capture findings; and international benchmarks from Canada, Germany, France, and the UK.*
+
 **1e. Voting infrastructure: in-person improvements now, remote voting as a long-term aspiration contingent on institutional repair.**
 
 The research in `remote-electronic-voting-research.md` is unambiguous: no currently deployed technology makes fully remote electronic voting secure enough for binding public elections. The technical barriers — uncontrolled endpoints, coercion resistance, voter authentication, scalable attack surfaces, denial of service, and the absence of a paper audit trail — are deeply intertwined, and several may be fundamentally unsolvable without infrastructure that does not yet exist. Blockchain does not help (the Oxford Journal of Cybersecurity's 2021 assessment: "going from bad to worse").
