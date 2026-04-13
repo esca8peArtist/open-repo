@@ -89,7 +89,7 @@
 **Status**: Active — research phase
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). Domains complete: `03-water.md` (850 lines), `04-food-production.md` (1,301 lines), `05-food-preservation.md` (1,522 lines), `06-energy-power.md` (997 lines), `07-heating-cooling.md` (846 lines), `08-medical-health.md` (1,139 lines), `09-waste-sanitation.md` (1,110 lines), `10-tools-fabrication.md` (1,507 lines). Next: `11-shelter-construction.md` — site selection, foundation types, timber framing, earthen building (cob/adobe/rammed earth), roofing, insulation, windows/doors, CBRN hardening.
+**Current focus**: Master outline complete (`master-outline.md`, 752 lines, 16 domains). Domains complete: `03-water.md` (850 lines), `04-food-production.md` (1,301 lines), `05-food-preservation.md` (1,522 lines), `06-energy-power.md` (997 lines), `07-heating-cooling.md` (846 lines), `08-medical-health.md` (1,139 lines), `09-waste-sanitation.md` (1,110 lines), `10-tools-fabrication.md` (1,507 lines), `11-shelter-construction.md` (~1,540 lines, complete — site selection, foundations, stick frame, timber frame, earthen, straw bale, roofing, insulation, windows/doors, passive solar, CBRN hardening, decision matrix, cost tables, skills/resources). Next: `12-communications.md` — ham radio, GMRS, Starlink, shortwave, EMP-hardened comms, grid-down protocols.
 **Blocked on**: —
 **Notes**: This is a planning and research project, not a software build. Practical and actionable plans over theory. Include real costs, sourcing, and skill requirements where possible. Nuclear disaster scenario is in scope — treat it seriously.
 
