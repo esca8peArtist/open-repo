@@ -25,6 +25,110 @@
 
 ---
 
+## 2026-04-13 — Session 85 — resistance-research + off-grid-living + open-source-rideshare
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub push still unresolved (no SSH/credentials); all other blocks resolved
+- Stockbot: paper trading live, STOCKBOT_API_KEY not in env — cannot check cycle logs
+- Last sessions (82–84): April 14 watch, April 14 results, April 15 results completed; driver insurance doc mgmt + driver availability dispatch complete; shelter construction (domain 11) complete
+- Selected tasks: (1) resistance-research April 17 monitoring brief; (2) off-grid-living 12-communications.md; (3) open-source-rideshare driver vehicle inspection records
+- All three launched as parallel background agents
+
+### resistance-research — April 17 monitoring brief COMPLETE
+
+New file: `monitoring/2026-04-17-results.md`.
+- **Leon/Ballroom**: POST-EXPIRY OUTCOMES NOT YET INDEXED. Six days of silence after D.C. Circuit remand is the key data point — judge either writing comprehensive restatement or deliberately letting clock run to force admin cold SCOTUS filing. Branch C (stay expires, injunction reinstates) has strongest circumstantial support.
+- **SCOTUS**: Rao dissent (April 11) is administration's best asset for cold filing. Whether an application was filed before midnight is unconfirmed.
+- **Section 122 CIT**: No ruling — Shumate balance-of-payments admission remains fatal on record.
+- **Nashville/Crenshaw**: Binary unchanged (airtight dismissal vs. Blanche subpoena). Still silent.
+- **Abrego Garcia**: April 20 DOJ brief is now the first load-bearing event. Liberia vs. Costa Rica contradiction sharpening.
+- **CAPE Phase 1**: Confirmed April 20 launch per CBP.
+- **Resistance landscape**: No Kings March 28 protests = 8 million participants, confirmed largest single-day demos in American history. May Day organizing at peak prep (NEA, SEIU 509/2015, Chicago city holiday).
+- **Humphrey's Executor (Trump v. Slaughter)**: Decision expected by June. Overruling/substantial narrowing appears likely (Roberts, Barrett, Gorsuch oral argument signals).
+- Sources: NPR, Al Jazeera, The Hill, CBS News, CNBC, SCOTUSblog, Volokh/Reason, CNN, Courthouse News, CBP/Thompson Hines.
+
+### open-source-rideshare — Driver vehicle inspection records COMPLETE
+
+7 new files, 2 modified. **69 new tests, all passing. Full suite: 2,108 passed, 204 skipped, 0 failures.**
+- `models/vehicle_inspection.py` — `VehicleInspection` (status machine: `pending_upload` → `pending_review` → `approved`/`rejected`/`expired`; 5 inspection types; composite indexes on `(driver_id, status)` and `(status, expiry_date)`) + `VehicleInspectionAlert`
+- `schemas/vehicle_inspection.py` — Create/Update/Response, `AdminInspectionReview` (rejection_reason required on reject), `InspectionStatusSummary`
+- `services/vehicle_inspection.py` — `create` (auto-expiry: annual=365d, semi-annual=182d), `update` (ownership + editable-status check), `admin_review` (expires previous approved on approval), `get_driver_summary`, `get_expiring_inspections`, `mark_expired_inspections`
+- `api/v1/vehicle_inspection.py` — 4 driver endpoints (list, summary, create, update) + 3 admin endpoints (pending, expiring, review)
+- Migration `b4c9d3e2f1a7_add_vehicle_inspection_records.py` — chained after insurance migration
+- Committed as `feat(rideshare): add driver vehicle inspection records`
+
+### off-grid-living — `12-communications.md` COMPLETE
+
+1,854 lines. master-outline.md updated (domain 12 row updated to Complete).
+- 12.1 Why Communications Matter: info as survival resource, OPSEC considerations
+- 12.2 Radio Fundamentals: propagation table (LF–SHF), HF band guide, line-of-sight formula, feedline loss table (RG-58 through LMR-600), dipole/vertical formulas with worked examples
+- 12.3 Ham Radio: license tiers (Tech/General/Extra), study resources, HF radio comparison table (IC-7300, FT-991A, FT-DX10, G90, X6100, IC-705, FT-891, TS-590SG with prices), handheld/mobile tables, power consumption table, digital modes (FT8, JS8Call for grid-down messaging, Winlink P2P), mesh networking (Meshtastic/AREDN), net frequency table
+- 12.4 GMRS/FRS/MURS: realistic range tables (open/forest/mobile/repeater), CTCSS/DCS explained
+- 12.5 Satellite: Starlink (50–75W continuous — hard constraint), Iridium vs. inReach distinction, BGAN, full comparison table with SOS/power/data
+- 12.6 Shortwave Listening: SW receivers, key frequencies, loop/longwire antennas
+- 12.7 CB Radio: AM/SSB, range, channel 9/19
+- 12.8 EMP Hardening: E1/E2/E3 mechanism, attenuation table by cage type (dB values), Faraday construction, Carrington vs. HEMP distinction, tube radio recommendation
+- 12.9 Grid-Down Protocols: 4-level info hierarchy, coded status words (GREEN/YELLOW/RED/GREY), duress word, dead drop, comms-out escalation timeline (Day 1–3), runner decontamination, UTC via WWV
+- 12.10 Power Sizing: per-device tables, daily power budget, 200Ah LiFePO4 recommendation for Starlink+radio
+- 12.11 Legal: FCC Part 97/95E, GMRS/FRS/MURS exemptions, encryption prohibition
+- 12.12 CBRN: hour-by-hour nuclear comms assessment, WWV as infrastructure canary, biocontamination info discipline
+- 12.13 Decision Matrix: scenario × budget → kit recommendation
+- 12.14 Cost Table: 55+ line items, 2025–26 prices, tier estimates ($100–$15,000)
+- 12.15 Skills: license study hours, Technician → General → HF → digital → mesh path, time-to-competence table
+
+---
+
+## 2026-04-13 — Session 87 — off-grid-living + resistance-research + open-source-rideshare
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub SSH push still unresolved (no credentials); stockbot STOCKBOT_API_KEY not in env
+- Last session (86): driver license + vehicle registration (rideshare, 131 tests → 2,239 passing); April 13 current-status monitoring brief (resistance-research); 13-community-organization.md created but not committed
+- Selected tasks: (1) commit off-grid-living 13-community-organization.md; (2) resistance-research April 20 watch brief; (3) open-source-rideshare driver onboarding status + activation workflow
+- Also launching: seedwarden apartment guide Etsy listing copy; open-repo OpenFarm content import pipeline; off-grid-living domain 14 finances-trade
+- Stockbot status: server healthy (PID 240887, uvicorn port 8000, 08:09 BST). Market opens 14:30 BST (09:30 ET). First paper trading session fires today.
+
+### off-grid-living — 13-community-organization.md COMMITTED
+1,785 lines committed (was untracked from Session 86). Community governance, mutual aid, conflict resolution, trade/barter, CBRN/wildfire/grid-down emergency protocols.
+
+---
+
+## 2026-04-13 — Session 86 — resistance-research + off-grid-living + open-source-rideshare
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub SSH push still unresolved; stockbot STOCKBOT_API_KEY not in env (paper trading live since April 13, first market open was Monday April 14 — user should check manually)
+- Last session (85): April 17 monitoring brief, vehicle inspection records (rideshare, 69 tests), 12-communications.md (off-grid, 1,854 lines)
+- Selected tasks: (1) resistance-research current monitoring (April 13 status check on key threads); (2) off-grid-living 13-community-organization.md; (3) open-source-rideshare driver license + vehicle registration documents
+- All three launched as parallel background agents
+
+### open-source-rideshare — Driver license + vehicle registration document management COMPLETE
+
+7 new files, 1 modified. **131 new tests, all passing. Full suite: 2,239 passed, 148 skipped, 0 failures.** Committed.
+- `models/driver_documents.py` — `DriverLicense` (LicenseClass A/B/C/CDL enum; status machine: pending_upload→pending_review→approved/rejected/expired) + `DriverLicenseAlert` + `VehicleRegistration` (vehicle_id as plain string to avoid hard FK dependency) + `VehicleRegistrationAlert`; composite indexes on (driver_id, status) and (status, expiry_date)
+- `schemas/driver_documents.py` — AdminReview schemas enforce rejection_reason on reject; auto-promotes to pending_review on document_url attach; `DriverDocumentsSummary` combined view
+- `services/driver_documents.py` — ownership + editable-status guard; admin_review expires previous approved on approval; `mark_expired_*` batch; combined `get_driver_documents_summary`
+- `api/v1/driver_documents.py` — 15 endpoints (driver: 7, admin: 8); `DriverDocumentError` normalizes auth/not-found/conflict responses
+- Migration `c5d6e7f8a901_add_driver_license_and_vehicle_registration.py` — chained after vehicle inspection migration
+- `main.py` — router wired in
+- `tests/test_driver_documents.py` — 131 tests
+- Committed as `feat(rideshare): add driver license and vehicle registration document management`
+
+### resistance-research — April 13 current status COMPLETE
+
+New file: `monitoring/2026-04-13-current-status.md`
+- **Leon/White House ballroom (CODE RED)**: April 17 D.C. Circuit stay expires. No SCOTUS application confirmed on any public docket as of April 13. No Leon clarification order issued. National Trust filed April 13 separability argument (above-ground vs. below-ground work), stripping administration's national-security SCOTUS hook if Leon adopts it. Construction on April 18 without SCOTUS stay = unambiguous contempt, National Trust files emergency motion within hours.
+- **Abrego Garcia (AMBER → CODE RED)**: DHS reaffirmed Liberia demand April 8 despite Costa Rica agreement + Tennessee prosecution legally preventing departure. Xinis called DOJ's "remove himself to Costa Rica" suggestion "a fantasy." NBC confirms contempt weighing. April 20 DOJ brief: if they maintain Liberia position, they hand Xinis the contempt predicate.
+- **Nashville/Crenshaw (AMBER, dismissal imminent)**: CNN April 11 confirmed Blanche publicly linked Maryland civil case to Nashville prosecution = vindictive purpose in public record. Dismissal expected "at any time."
+- **CAPE Phase 1 (GREEN)**: CBP CSMS #68315804 officially confirms April 20 ACE Portal deployment. 26,000 importers enrolled, $120B duty value. CIT Judge Eaton pre-endorsed.
+- **Section 122 / CIT (AMBER)**: No ruling 3 days post-argument. Shumate "repeatedly admitted he cannot say what the balance-of-payments deficit is right now." Ruling expected days to weeks. July 24 is the hard deadline.
+- **Humphrey's Executor**: No decision. Roberts "dried husk," Barrett "eroding," Gorsuch "poorly reasoned." Narrowing (not overruling) appears likeliest path.
+- **May Day (GREEN, peak prep)**: "No Work, No School, No Shopping" framing. NEA toolkit published, SEIU 509/2015, Chicago city holiday declared. April 9 national organizers' call held. Real work stoppages explicitly urged with legal defense funding for non-union workers.
+- 30+ sources cited.
+
+---
+
 ## 2026-04-13 — Session 82 — off-grid-living + open-source-rideshare + resistance-research
 
 ### Orientation
@@ -3636,3 +3740,146 @@ Two documents written:
 
 Key finding: missing layer is practical/procedural knowledge (not encyclopedic) and the connective tissue linking WikiHouse/Printables/Instructables/local practitioners. First step: agricultural techniques for Global South, import from WikiHouse/Open Food Facts/CC Instructables.
 
+## 2026-04-13 — Session 83 — resistance-research + off-grid-living + open-source-rideshare
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub push still blocked (no SSH/credentials — unresolved); STOCKBOT_API_KEY not in env — can't check cycle logs; stockbot server still up (auth response confirmed), market not yet open (April 14 9:30 AM ET)
+- Session 82 completed: resistance-research April 14 watch brief, rideshare driver availability/scheduling (56 tests), off-grid-living 09-waste-sanitation.md (1,110 lines)
+- Selected tasks: (1) resistance-research April 14 monitoring (web research on Leon, CBP, Section 122, Nashville); (2) off-grid-living 10-tools-fabrication.md; (3) open-source-rideshare next feature (integrate driver availability into ride matching dispatch)
+- All three launched in parallel as background agents
+
+### resistance-research — April 14 monitoring results COMPLETE
+
+New file: `monitoring/2026-04-14-results.md`. Committed.
+- **CBP/Eaton**: RESOLVED COOPERATIVE. CBP noon declaration filed, 3 PM conference produced no public order. Phase 1 CAPE launch confirmed April 20. Track closed until April 20.
+- **Leon remand (ballroom)**: SILENT — escalating by inaction. No clarification order. Clock compressing: ~60 hours to April 17 stay expiry. All three decision tree branches from watch brief now live simultaneously.
+- **SCOTUS application**: NOT FILED. Consistent with waiting for Leon but strategy colliding with deadline.
+- **Section 122 CIT**: NO RULING. New critical finding — Shumate admitted on the record he cannot state the U.S. balance-of-payments deficit (fatal statutory gap for Section 122). Also new deadline: Section 122 tariffs expire July 24, 2026 (150-day statutory limit) — added to hard-deadline calendar.
+- **Nashville/Crenshaw**: SILENT — likely drafting airtight opinion. Subpoena option still live.
+- **Abrego Garcia**: ON SCHEDULE. April 20 DOJ briefing, April 28 hearing unchanged. No emergency bypass attempt.
+
+### open-source-rideshare — Driver availability dispatch integration COMPLETE
+
+Modified: `services/matching.py`. New: `tests/test_matching_availability.py`. 20 tests (18 passing, 2 skipped PostgreSQL integration), 0 regressions.
+- Added `_get_availability_eligible_driver_ids()` — bulk DB pre-filter after Redis geo-search: checks `driver_online_status` (online=True + heartbeat within 15min) and `driver_schedules` (day+window match or no schedule = always available — opt-in model)
+- `find_candidates()` gains `availability_filter=True` param; runs pre-filter before vehicle loading
+- `match_ride()` threads param through
+- 1,994 existing tests pass (148 skipped), 0 regressions
+- Commit: feat(rideshare): integrate driver availability into ride matching dispatch
+
+### off-grid-living — 10-tools-fabrication.md COMPLETE
+
+1,507 lines. master-outline.md updated (domain 10: Complete).
+- 10.1 Why Tools Matter: force multiplier framing, capability loss scenarios
+- 10.2 Hand Tools: full tables for measuring/layout, saws (rip/crosscut/panel/Japanese/two-man), chisels (Narex/Two Cherries/LN tiers), drawknives, axes (felling/splitting/hatchet/adze), farm tools (scythe, broadfork). Full sharpening system with bevel angles by tool.
+- 10.3 Power Tools: battery platform comparison (Milwaukee M18/DeWalt/Makita/Ryobi), solar charging strategy, pneumatic (CFM tables, nailer recs)
+- 10.4 Metalworking: welding process comparison (MIG/stick/TIG/oxy-ac/flux-core), welder recs (ESAB/Lincoln/Hobart/Miller), blacksmithing (propane/coal/DIY forge, anvil selection with ball-bearing rebound test, hardy tools), metal stock on hand
+- 10.5 Woodworking: chainsaw milling (Granberg Alaskan walkthrough, board-foot math), band sawmill options (Wood-Mizer/Norwood/Hudson), drying schedules, M&T joinery, natural finishes, wood species BTU table
+- 10.6 Improvised Fabrication: lost-foam aluminum casting, concrete mix/rebar, plastic welding (type ID), rope splices, leather saddle stitching, pit-fired clay
+- 10.7 Improvised Repairs: small engine maintenance schedule, carb cleaning, pump rebuild, tire repair, marine-grade electrical splicing, structural sistering
+- 10.8 Tool Maintenance: rust prevention (Boeshield/Fluid Film/VCI), shadow board, battery storage protocols
+- 10.9 CBRN: analog tools as rad-hardened fallback, CMOS vulnerability thresholds, decontamination protocols
+- 10.10 Sourcing: estate/auction strategy, Harbor Freight category verdict, $500/$1,500/$5,000 budget tiers
+- 10.11 Skills: 20-skill feasibility table, 6-month week-by-week plan, book recs (Weygers, Audel, Frid, Stohlman)
+- 10.12 Cost Table: 60+ rows
+
+---
+
+### Session 83 complete
+All three tasks done. Updating PROJECTS.md and CHECKIN.md.
+
+---
+
+## 2026-04-15 — Session 84 — resistance-research + off-grid-living + open-source-rideshare
+
+### Orientation
+- INBOX: Empty — nothing to process
+- BLOCKED: GitHub push still blocked (no SSH/credentials)
+- STOCKBOT_API_KEY: still not in env — can't check cycle logs
+- CHECKIN suggested: April 15 monitoring brief, 11-shelter-construction.md, rideshare next feature
+- Selected tasks: (1) resistance-research April 15 monitoring; (2) off-grid-living 11-shelter-construction.md; (3) open-source-rideshare driver insurance document management
+- Launching all three in parallel
+
+### resistance-research — April 15 monitoring COMPLETE
+
+New file: `monitoring/2026-04-15-results.md`. Committed.
+- **Leon (ballroom)**: SILENT through EOD April 15. Branch 1 (Leon acts first) now essentially foreclosed. Branch 2 (cold SCOTUS filing April 16) still technically live. Branch 3 (stay expires midnight April 17, injunction reinstates) is now the live baseline. No grace period — D.C. Circuit language was explicit.
+- **SCOTUS**: No application filed publicly. Window compressing — cold filing April 16 or bust.
+- **Section 122 (CIT)**: No ruling. Normal deliberation window; Shumate admission in record. July 24 expiry creates hard calendar deadline for relevance.
+- **Nashville/Crenshaw**: Still silent. Weeks of silence consistent with drafting airtight opinion OR Blanche subpoena deliberation.
+- **Abrego Garcia**: Liberia track confirmed (not Costa Rica despite obvious legal alternative). April 20 DOJ brief is next load-bearing event.
+- **New threads**: Trump v. Slaughter (Humphrey's Executor — decision by June 2026, Roberts signaled "dried husk" comment — most consequential structural ruling of term); May Day 2026 general strike framing (NEA, SEIU 509, SEIU 2015, HELU organizing)
+
+### open-source-rideshare — Driver insurance document management COMPLETE
+
+5 new files, 2 modified. 45 new tests (all passing). Full suite: 2,039 passed, 204 skipped, 0 failures. Committed.
+- `models/driver_insurance.py` — `DriverInsuranceDocument` (status machine: pending_upload → pending_review → approved/rejected/expired, composite index on status+policy_end_date) + `InsuranceExpiryAlert` (cascade delete)
+- `schemas/driver_insurance.py` — Create/Update/Response, AdminReviewRequest (rejection_reason required on reject), InsuranceStatusSummary
+- `services/driver_insurance.py` — create (auto-promotes to pending_review when URL present), update (ownership + editable-status check), admin_review (expires previous approved on approval, sets verified_by/verified_at), status_summary, get_expiring_documents, mark_expired_documents
+- `api/v1/driver_insurance.py` — 4 driver endpoints (status, list, create, update) + 3 admin endpoints (list pending, review, list expiring)
+- Migration `a3b8c2d1e4f5_add_driver_insurance_documents.py`
+- PROJECTS.md updated: test count 2,039
+
+### off-grid-living — 11-shelter-construction.md COMPLETE (1,830 lines)
+
+Domain 11 written. master-outline.md updated. Committed.
+- 11.1 Site selection: topography/drainage, solar orientation table (30-50°N), wind/windbreak math, soil bearing tests, frost depth by climate zone, owner-builder exemptions by state, red flags (WUI, FEMA floodplain, seismic, radon)
+- 11.2 Foundations: monolithic slab (FPSF), stem wall, pier-and-beam (ventilation, termite clearance), rubble trench, earthbag stem wall, helical piers + decision matrix
+- 11.3 Stick frame: platform framing sequence, 2×6 advanced framing (R-28–32 assembly), header sizing table, rafter vs. truss, OSB vs. plywood, Zip System
+- 11.4 Timber frame: M&T measurements, scarf joints, bent assembly, species comparison (DF/white oak/SYP/pine/black locust), infill options (SIPs, straw bale, cob, rigid foam)
+- 11.5 Earthen: cob ratios/thumb test/lift schedule, adobe seismic reinforcement, rammed earth PISE variant, earthbag barbed wire specs, cost comparison table
+- 11.6 Straw bale: load-bearing vs. infill, density requirements, plaster systems (clay/lime — NOT Portland cement), moisture monitoring protocol, code status by state
+- 11.7 Roofing: metal (standing seam vs. corrugated, G-90 vs. Galvalume), living/sod load (80-150 lb/sqft saturated), snow load procedure + regional table
+- 11.8 Insulation: EPS/XPS/polyiso comparison, vapor barrier by climate zone, IECC R-value targets zones 1-8
+- 11.9 Windows/doors: U-factor/SHGC, passive solar glazing sizing rule (7-12% floor area), security door specs
+- 11.10 Passive solar: overhang formula, thermal mass ratios, Trombe wall performance, earth sheltering waterproofing specs
+- 11.11 CBRN: blast resistance by type (stick/ICF/earthen berm), safe room specs (8" reinforced concrete, steel blast door 3-point latch), NBC filtration (HEPA + activated carbon, pressurization), PF table (PF-40 to PF-1000+), Rule of 7, KI dosing, EMP Faraday attenuation numbers, detection equipment comparison
+- 11.12 Decision matrix: 10 scenarios × climate/budget/skill/lot → specific recommendation
+- 11.13 Cost tables: 13 building systems per-sqft + 40+ row materials table (2025-26 pricing)
+- 11.14 Skills/timeline: feasibility table, learning sequence (chicken coop → main house), annotated reading list
+
+### seedwarden — Apartment Growing Complete Guide Etsy listing copy COMPLETE
+Complete Etsy listing written for the Apartment Growing Complete Guide (3110 lines, $13) and appended to etsy-store-copy.md, including title, full description organized by the guide's four environment sections, tags, and cross-links to three related products. Product 18 upgraded from Tier 3 to Tier 2 in product-audit-2026-04-11.md with price set at $13 and PDF generation flagged as the remaining blocker.
+
+## 2026-04-13 — Session 88 — open-repo content import pipeline
+
+### open-repo — OpenFarm content import pipeline research + script scaffold COMPLETE
+
+**Research findings**:
+- OpenFarm (github.com/openfarmcc/OpenFarm) shut down April 2025 — live API gone; repo archived read-only. Data is CC0 (Public Domain), fully compatible with open-repo licensing policy.
+- API was JSON-API format, no pagination, filter-required GET `/api/v1/crops/`. Schema: Crop (name, binomial_name, sun_requirements, sowing_method, spread, height, days_to_maturity, minimum_temperature), Guide (name, overview, location, practices, completeness_score, popularity_score), Stage (name, order, stage_length, environment/soil/light as arrays, overview).
+- Data acquisition path: self-host OpenFarm Rails/MongoDB app + mongoexport, OR Internet Archive CDX API to recover pre-shutdown API snapshots.
+- Field mapping: crop+guide+stages → procedure JSON-LD; stages→steps[]; guide.overview→outcome; crop.description→description; completeness_score filter ≥0.60; estimated 200–400 quality procedures from ~1,500 crops.
+- Practical Action Technical Briefs (CC BY) documented as fallback/complement.
+
+**Files created**:
+- `projects/open-repo/content-import-openFarm.md` — full research doc: API overview, schema, license confirmation, data quality assessment, field mapping table, sample Cherry Tomato transformation (input→output JSON-LD), 5-step implementation plan
+- `projects/open-repo/scripts/import_openFarm.py` — extraction pipeline with `load_raw_data()`, `fetch_crops()` (pagination + quality filter), `transform_crop()` (fully implemented field mapping), `validate_schema()` (5 quality gates), `export_jsonl()` (JSONL output), `compute_cid_placeholder()` (SHA256 stand-in for IPFS CID), and `__main__` CLI block
+
+**Next**: Acquire data (clone OpenFarm + rake db:setup + mongoexport), run pipeline, review 20-item sample for quality.
+
+## 2026-04-13 — open-source-rideshare — Driver onboarding status + activation workflow COMPLETE
+
+### open-source-rideshare — Driver onboarding status + activation workflow COMPLETE
+5 new files, 2 modified. 49 new tests, all passing. Full suite: 2288 passed, 204 skipped, 0 failures. Committed.
+
+- `models/driver_onboarding.py` — DriverOnboarding model with OnboardingStatus enum (incomplete/pending_review/approved/suspended), suspension reason + timestamps, activation timestamps; FK to driver_profiles and users
+- `schemas/driver_onboarding.py` — ChecklistItem, OnboardingChecklist, SuspendDriverRequest (validated non-empty), ActivateDriverRequest, DriverOnboardingResponse, PendingDriverItem, IncompleteDriverItem
+- `services/driver_onboarding.py` — get_onboarding_checklist() aggregates all 6 requirements (background check, license, registration, inspection, insurance, profile completeness); compute_onboarding_status(); get_or_create_onboarding(); activate_driver() (validates all items, raises if suspended); suspend_driver() (sets is_approved=False + is_online=False); list_pending_review() + list_incomplete() with pagination
+- `api/v1/driver_onboarding.py` — 6 endpoints: GET /drivers/me/onboarding (driver), GET /admin/drivers/{id}/onboarding (admin), POST /admin/drivers/{id}/onboarding/activate (admin), POST /admin/drivers/{id}/onboarding/suspend (admin), GET /admin/drivers/onboarding/pending (admin, paginated), GET /admin/drivers/onboarding/incomplete (admin, paginated); scoped under /onboarding/ to avoid conflicts with existing admin.py routes
+- `migrations/versions/d1e2f3a4b5c6_add_driver_onboarding.py` — creates driver_onboarding table with onboardingstatus enum, indexes on driver_profile_id (unique) and status
+- `main.py` — wired driver_onboarding router into app
+- Tests cover: model structure + enum values, schema validation, profile completeness helper, get_or_create behavior, checklist per-requirement status, compute_onboarding_status combinations, activate/suspend success + failure paths, list pagination, all 6 API endpoints
+
+### resistance-research — April 20 watch brief COMPLETE
+
+New file: `monitoring/2026-04-20-watch.md` (46 sources, ~3,500 words).
+
+**CAPE Phase 1 (April 20 launch):** CAPE (Consolidated Administration and Processing of Entries) is CBP's ACE-portal system for refunding ~$165B in duties invalidated by the Feb 20 SCOTUS IEEPA ruling. 26,664 importers enrolled ($120B principal duty value, 78% of entries). Phase 1 covers unliquidated + entries within 80 days of liquidation (63% of entries). Key risks: ACH non-enrollment gap (~$46B unenrolled), AD/CVD and drawback entries excluded, system 75% complete as of March 30. Section 232/301 tariffs unaffected and remain in place — IEEPA layer only is refunded.
+
+**Abrego Garcia DOJ brief (April 20):** Four scenarios mapped. Most likely: DOJ maintains Liberia deportation demand and reasserts structural executive foreign-affairs prerogative — which hands Xinis the contempt predicate since the Liberia position is structurally incoherent (no connection to Liberia, Costa Rica agreement exists, active Tennessee prosecution prevents departure). Code-red escalation scenario: simultaneous Fourth Circuit emergency filing to stay Xinis's injunction. Retreat from Liberia is possible but inconsistent with April 8 DHS reaffirmation.
+
+**White House ballroom post-April-17:** Branch C (stay expires, injunction reinstates, contempt clock starts) had strongest circumstantial support as of April 13. Leon's 6-day silence and no confirmed SCOTUS application entering the deadline are the key signals. Post-expiry outcome not yet indexed; ballroom status on April 20 depends on what happened April 17-18.
+
+**Secondary threads:** Section 122 CIT deliberating (no ruling; July 24 expiry is hard deadline); Nashville/Crenshaw dismissal still imminent (Blanche self-incriminating statements in record); Humphrey's Executor narrowing likeliest SCOTUS path by June; May Day Strong coalition consolidated (NEA/SEIU 509/2015/NNU/CTU, Chicago city holiday, April 29 lead-up events).
