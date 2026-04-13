@@ -4582,3 +4582,13 @@ Background agent completed. New file: `projects/resistance-research/domain-deepe
 - Deepening library: 19 of 22 domains complete
 - Committed 748044d
 
+
+#### off-grid-living — Domain 1 Site Selection complete
+- `01-site-selection.md` (1,178 lines): 32-criterion parcel checklist, weighted scoring matrix (430 pts), prior appropriation vs. riparian doctrine, well permitting by state, rainwater legality table, soil testing + amendment, contaminated land assessment, regional comparison (Mid-South/Appalachian/Pacific NW/Mountain West/Southwest), due diligence (title/minerals/easements/perc test/flood plain), 3-phase transition model with budget tables
+- Committed 2ac10a7
+
+#### off-grid-living — Domain 12 Security & Defense complete
+- `12-security-defense.md` (1,252 lines): 13-threat matrix, fencing/camera/lighting costs, 14-species predator table, livestock protection specs, 4-gun practical loadout + safe comparison, OPSEC basics, community defense protocols, 12 threat-specific response protocols, quarterly audit checklist, regional profiles (feral hogs/SE, equipment theft/Midwest, etc.), 50+ product list with 2026 prices
+- master-outline.md document map: 100% complete
+- Committed 08695a9
+

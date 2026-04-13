@@ -9,63 +9,41 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–99
+**Sessions run**: 75–103
 
-### Stockbot Status (your INBOX question answered)
+### Accomplished (Session 103)
 
-**The stockbot IS running on the Pi — no separate Jetson needed.** Findings from Session 99 investigation:
+#### resistance-research — Domain 8 Media & Information evidence deepening COMPLETE
+- **440 lines**: `domain-deepening/domain-08-media-information.md`
+- Local news collapse: Brookings/Notre Dame borrowing cost study (full research design, 1996-2015 natural experiment), Medill 2024 (208 zero-news counties, 55M Americans, 127 closures in 2024), Alden Global Capital 10-13% margin model vs. 20%+ target
+- Algorithmic amplification: González-Bailón et al. 2023 Science (three-level comparison — potential exposure vs. actual vs. engagement; asymmetric conservative misinformation corner), Frances Haugen disclosures (teen mental health data, 2020 election safeguard rollbacks)
+- Press freedom: RSF ranking 17th (2002) → 57th (2025), specific 2025 incidents (Mario Guevara deportation, Lucas Griffith conviction)
+- Counterarguments: Moody v. NetChoice (2024) engaged fully — what the Court said about editorial discretion and what it doesn't foreclose; Substack limits for accountability journalism; filter bubble objection to public media
+- International: ARD/ZDF Federal Constitutional Court ruling (1 BvR 1675/16), Sweden Presstödsnämnden formula, DSA first €120M fine (X, December 2025), Finland media literacy grade-level curriculum
+- **Deepening library: 19 of 22 domains complete**
 
-- `uvicorn` server running (PID 240887, started Apr 13 00:46) — `http://127.0.0.1:8000/api/health` returns `{"status":"ok"}`
-- All 3 paper trading sessions initialized and fetching live data (confirmed in `logs/trading_20260413.log`):
-  - `momentum` — SPY, QQQ, MSFT
-  - `rsi_mean_reversion` — AAPL, NVDA
-  - `sma_crossover` — AMZN, SPY
-- **No trades executed yet** — expected. Today is Sunday April 13; first NYSE market open is Monday April 14. Sessions are cycling every 60s and data fetches succeed, but no signals have fired outside market hours.
-- Database `model_runs` table shows all 3 sessions with `is_active=1` and correct tickers/capital ($100k each)
+#### open-source-rideshare — Surge Waitlist and Price Alert System COMPLETE
+- `SurgeWaitlistEntry` model: riders join waitlist at a location with a max surge threshold they'll accept; 2-hour auto-expiry; push/SMS notification flags; `active/notified/expired/cancelled` status
+- Service: create/cancel/list entries; `check_and_notify_waitlist` polling function (marks notified when surge ≤ threshold, marks expired when past expires_at); `get_current_surge_for_location` public lookup
+- API: `POST/GET/DELETE /surge-waitlist` (rider-auth); `GET /surge-waitlist/current-surge` (public, no auth); `POST /admin/surge-waitlist/check` (admin-auth, triggers poll cycle)
+- **49 new tests; total: 2,722 passing**
 
-**Jetson not found on network** (`ping jetson` and `ping jetson.local` both fail). The stockbot appears to be running on the Pi itself, not a Jetson. If a Jetson is involved, it's not network-accessible by that hostname from this Pi.
+#### seedwarden — PDF generator + product catalog fixes
+- Added `apartment-growing-complete-guide` (146pp, $13) and `zone-seed-starting-calendar` (82pp, $7–$18) to PDF generator — both were missing from the PRODUCTS list
+- All 21 products now have generated PDFs (was 19)
+- Wrote Etsy listing copy for Zone-by-Zone Seed Starting Calendar — all 20 paid products now have complete listing copy
+- Updated product audit to reflect 21-product catalog with correct PDF status
 
-**Still need your API key to pull cycle logs**: `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`
-
----
-
-### Python 3.12 (your INBOX question answered)
-
-**Python 3.12 is not available** on the Pi (only 3.11.2), and `pyenv` is not installed.
-
-**Good news: Python 3.12 is no longer needed for stockbot.** The fix from Session 98 (replacing `pandas-ta` with the `ta` library) is in place — `requirements.txt` already has `ta>=0.10.0`, and the stockbot server is running successfully on Python 3.11.
-
-If you still want Python 3.12 for other reasons (future-proofing), the cleanest install path is `pyenv` (user-space, no root needed). I can set that up in a future session — just drop it in INBOX.md. For now, stockbot is unblocked.
-
----
-
-### Accomplished (Sessions 97–99)
-
-#### open-source-rideshare — Sessions 97–99: 9 features
-- **Admin rider management**: GET/suspend/reactivate riders; N+1-free; 20 tests. `34e75cc`
-- **Admin promo analytics**: GET /promos/admin/stats with period filter; top promos; 11 tests. `1317ec5`
-- **Driver break management**: start/end break; blocks dispatch while on break; 29 tests. `744adb6`
-- **Rider ride preferences**: quiet/music/temp/pet/accessibility model; driver read-only; 30 tests. `729a1e6`
-- **Driver tip summary**: GET /drivers/me/tips/summary; period filter; status breakdown; 36 tests. `3b9815b`
-- **Admin tip stats**: GET /admin/tips/stats; platform-wide total/avg/unique drivers+riders/top-10 tipped drivers. (included in 36 tests above)
-- **Rider lifetime stats**: GET /analytics/rider/stats; total/completed/cancelled rides, spend, distance, avg rating, tips; 24 tests. `068d603`
-- **Admin top earners/spenders leaderboard**: GET /admin/stats/top-earners?role=driver|rider; period filter; 17 tests. `8d34bd2`
-- **Admin unified user search**: GET /admin/users/search?q=&role=all|driver|rider; name/phone/email search; driver stats; 15 tests. `88c9060`
-- **Full test suite: 2,556 passing**
-
-#### resistance-research — Sessions 97–99: 4 domains deepened
-- **Domain 1 (Electoral Reform)**: 348 lines — voting access suppression (GAO 2-3pt), REDMAP mechanics, $9B dark money, 4M disenfranchised. `7bd73d9`
-- **Domain 7 (Rights Protection)**: 432 lines — anti-protest wave (100+ bills, 34 states), DOGE database access, Section 702 FISA, civil asset forfeiture ($1,678 median seizure vs $3,300 attorney cost), facial recognition wrongful arrests, Cop City RICO template. `e95012c`
-- **Domain 15 (Environment/Climate)**: 469 lines — EPA enforcement collapse (78% DOJ referral drop), 1.8GT CO2-eq rollback, solar LCOE -90%, IRA $372B private investment, EU ETS 51% reduction, Sweden 33% emissions + 92% GDP. `b9bffb0`
-- **Domain 16 (Immigration)**: 399 lines — $164.65/day ICE detention, $17,121/deportation, Penn Wharton mass deportation $82.7B–$987B cost (GDP -1.0% to -4.9%), 32 detention deaths in 2025 (deadliest since 2004), 5,500+ separated children. `68114c5`
-- **Deepening library: 15 of 22 domains now complete**
+#### off-grid-living — Domain 1 (Site Selection) + Domain 12 (Security & Defense) in progress
+- Two agents writing these files now; expect ~1,200–1,500 lines each
+- These were the only 2 "Planned" domains in master-outline — will complete the document map
 
 ---
 
 ### Needs Your Input
 
 **open-source-rideshare — GitHub push still blocked**
-Sessions 77–99 of commits piling up locally. Options:
+Sessions 77–103 of commits piling up locally. Options:
 - (a) `git config --global credential.helper store` + push once with username/PAT
 - (b) `ssh-keygen -t ed25519` on Pi → add public key to GitHub account
 - (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
@@ -76,23 +54,36 @@ Sessions 77–99 of commits piling up locally. Options:
 - Abrego Garcia DOJ brief was due April 20 — what position did they take?
 Drop updates in INBOX.md when you have them.
 
-**Stockbot — paper trading check-in (first market day is April 14)**
-Share cycle logs or Trading page screenshot after Monday's session. `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`
+**Stockbot — paper trading performance**
+First market day was April 14 (Monday). Share cycle logs or Trading page screenshot — can't assess model performance without them.
+`curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`
+
+**Seedwarden — PDF mockup images still the #1 Etsy conversion blocker**
+All 21 products have content and PDFs now. The only thing between here and launching is mockup images (showing PDF on tablet/phone). Can you get Canva access, or is there another mockup generator you prefer?
 
 ---
 
 ### Suggested Priorities (Next Session)
-1. **Stockbot**: If cycle logs shared — assess model performance and suggest improvements. Otherwise, continue open-source-rideshare.
-2. **Open-source-rideshare**: 2,556 tests — next candidates: vehicle type preference for ride requests, trip activity heatmap analytics, or rider subscription plans.
-3. **Resistance-research**: 7 remaining domains (2 Campaign Finance, 3 Anti-Corruption, 4 Economic Policy, 5 Healthcare, 8 Education, 9 Infrastructure, 17 Foreign Policy). Any is a good target.
-4. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
+1. **Stockbot**: If cycle logs shared — assess model performance and suggest improvements.
+2. **Resistance-research**: 3 remaining domains — Domain 5 (Fiscal Reform/Tax Policy deepening), Domain 9 (Federalism & Local Democracy), Domain 17 (Foreign Policy/Diplomacy).
+3. **Open-source-rideshare**: 2,722 tests — next candidates: trip heatmap/demand analytics, driver revenue projections, or platform admin config.
+4. **Seedwarden**: Launch prep once mockup images are available.
 
 ---
 
 ### History
 
+#### Accomplished (Session 101)
+- **resistance-research**: Domain 2 Campaign Finance deepening (511 lines) — Citizens United legal chain, FEC deadlock, dark money mechanics, Gilens & Page, international comparisons, reform proposals. 17/22 domains.
+- **open-source-rideshare**: Vehicle type preference for ride requests — VehicleServiceCategory enum (standard/comfort/xl/premium/wav), MatchingEngine filtering, 24 tests. 2,594 passing.
+
+#### Accomplished (Session 100)
+- **open-source-rideshare**: Complaint and dispute management system — POST /complaints, 3 GET endpoints, 2 admin endpoints; self-complaint guard, ride participant validation, terminal-state protection; 50 tests; 2,579 passing.
+- **resistance-research**: Domain 4 Economic Policy deepening (~600 lines) — productivity-pay gap, Gini 0.48, CEO:worker 281:1, monopsony, 1980 inflection, Saez-Zucman wealth tax; 16/22 domains complete.
+
 #### Accomplished (Sessions 97–99)
-See "Accomplished" section above — archived here after next check-in.
+- **open-source-rideshare**: 9 features added (admin rider management, admin promo analytics, driver break management, rider ride preferences, driver tip summary, admin tip stats, rider lifetime stats, admin top earners/spenders leaderboard, admin unified user search). 2,556 passing.
+- **resistance-research**: Domains 1, 7, 15, 16 deepened (348/432/469/399 lines). 15/22 domains complete.
 
 #### Accomplished (Session 96)
 Admin notification log: `GET /admin/notification-logs`; filterable by user/type/channel/status/ride; 16 tests; 2,432 total passing.
