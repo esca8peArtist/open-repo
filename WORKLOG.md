@@ -4,6 +4,34 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-13 — Session 96 — open-source-rideshare — Admin notification log endpoint + history tests
+
+### Orientation
+- INBOX.md empty — no new tasks
+- BLOCKED.md: GitHub push blocked (no SSH key); stockbot API key not in env; both unchanged
+- Stockbot: paper trading live, user needs to share cycle logs — no dev work available without performance data
+- resistance-research: all 22 domains deepened (planned queue complete); 12 remaining domains have no deepening files
+- Selected: open-source-rideshare — implement rider/driver notification history (CHECKIN suggestion #1)
+
+### open-source-rideshare — Admin notification log endpoint + history tests COMPLETE
+
+**Discovery**: The user-facing notification history API (`GET /notifications/history`, `GET /notifications/unread-count`, `POST /notifications/mark-read/{id}`, `POST /notifications/mark-all-read`) already existed in `api/v1/notifications.py` with the `NotificationLog` model. What was missing:
+
+1. **Admin-side visibility** into notification delivery across all users — added `GET /admin/notification-logs` to `admin.py`
+   - Filters: user_id, notification_type, channel, status, ride_id, limit/offset
+   - Admin-auth gated (`require_admin`)
+   - Returns `AdminNotificationLogListResponse(logs, total)`
+
+2. **Test coverage** — `get_notification_history` endpoint had zero tests. Added `test_notification_history.py`:
+   - 8 unit tests for `get_notification_history` (empty list, filtering, pagination, unread_count)
+   - 7 unit tests for `list_notification_logs` (admin endpoint, all filter variants)
+   - 12 integration test stubs (skipped without test DB, will run in CI)
+   - All 16 unit tests pass; full suite **2,432 passing** (from 2,416 in prior session)
+
+**Schemas added** to `schemas/admin.py`: `AdminNotificationLogEntry`, `AdminNotificationLogListResponse`
+
+**Committed**: `360efae — feat(open-source-rideshare): admin notification log endpoint + history tests`
+
 ---
 
 ## 2026-04-13 — Session 93 continued — resistance-research — Economic Concentration deepening

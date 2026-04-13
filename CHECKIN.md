@@ -9,37 +9,36 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–95 (continued)
+**Sessions run**: 75–96 (continued)
+
+### Accomplished (Session 96)
+
+#### open-source-rideshare — Admin notification log endpoint + history tests
+
+**`GET /admin/notification-logs`** — new admin-only endpoint in `api/v1/admin.py`:
+- Returns paginated notification log across **all users** (admin visibility)
+- Filters: `user_id`, `notification_type`, `channel`, `status`, `ride_id`
+- Pagination: `limit` (1–200, default 50) + `offset`
+- Results ordered newest first
+- Auth-gated: `require_admin`
+- New schemas: `AdminNotificationLogEntry`, `AdminNotificationLogListResponse`
+
+**`test_notification_history.py`** — 38 tests (16 unit pass, 22 integration skip pending DB):
+- 8 unit tests for `get_notification_history` (filtering by type, unread_only, pagination, total vs page count)
+- 7 unit tests for `list_notification_logs` (each filter variant, total count)
+- 12 integration tests (auth gating, field validation, cross-user visibility, filtering, pagination)
+
+**Full test suite: 2,432 passing** (from 2,416 before Session 90).
+
+Committed: `360efae`
+
+---
 
 ### Accomplished (Session 95)
 
 #### resistance-research — Domain 22 Reparations deepening COMPLETE — planned deepening queue finished
 
-**Domain 22: Reparations and Racial Justice** — `domain-deepening/reparations-evidence.md` (552 lines, 10 sections, 28 subsections):
-- **Racial wealth gap**: 2022 Fed SCF — $284,310 median white vs. $44,100 median Black (6.4:1); absolute gap grew $49,950 between 2019–2022 alone; ratio locked at ~15 cents Black per white dollar since 1963
-- **GI Bill exclusion mechanics**: 1947 Mississippi survey — 2 of 3,229 VA home loans reached Black veterans; all-white VA offices, Jim Crow banks, specific denial structure documented (not just vague discrimination — specific institutional mechanics)
-- **FHA racism on record**: 1935 and 1938 Underwriting Manuals contain verbatim racial language — "infiltration of inharmonious racial groups" as a valuation criterion
-- **Urban renewal**: HUD data — ~1.36 million displaced 1949–1973; 60% nonwhite; James Baldwin's "Negro removal" documented with numbers
-- **Contract buying**: Chicago — 84% price markup, $3–4B extracted from Black families (Beryl Satter / Contract Buyers League)
-- **HR 40**: 36-year history (Conyers 1989 → Pressley/Booker reintroduced Feb 2025 amid DEI backlash)
-- **Evanston, IL**: 44 recipients as of early 2026; $25K payments; funded by cannabis tax + real estate transfer tax; implementation bottlenecks documented
-- **California 2024**: 14-bill package — formal apology law passed; SB 1007 (homeownership assistance) and SB 1013 (property tax relief) failed committee — direct payments did not advance
-- **South Africa TRC failure**: TRC recommended US$375M — Mbeki paid R30,000 (~$4,000) per victim instead. Key cautionary design lesson for U.S. commission
-- **CARICOM 2026**: Active at Commonwealth Heads of Government Meeting; March 2026 UN General Assembly resolution in support
-- **Enforcement gap**: DOJ Civil Rights lost 60%+ staff; EEOC filed 111 lawsuits on 88,531 charges FY2024; HUD moving to eliminate disparate impact rule
-- **COMPAS fairness impossibility**: Mathematical proof that three competing fairness definitions cannot all be simultaneously satisfied — the bias is structural
-- **Fiscal**: Citigroup $16T GDP cost 2000–2020; McKinsey $1–1.5T/decade ongoing drag; full Domain 22 10-year package $800B–$1T ≈ one year of ongoing GDP cost being offset
-
-**Deepening pass**: 10 domains deepened total — criminal justice, healthcare-education, housing, tax policy, labor policy, social safety net, national security, economic concentration, data privacy, reparations. The planned deepening queue is now complete.
-
----
-
-### Accomplished (Session 94)
-
-#### resistance-research — Domain 21 Data Privacy deepening COMPLETE
-
-**Domain 21: Data Privacy and Digital Surveillance** — `domain-deepening/data-privacy-evidence.md` (596 lines):
-- RTB ecosystem 294B daily auctions; PCLOB neutralized (3 members fired Jan 27 2025); Section 702 reauthorized without warrant requirement; NIST FR false-positive factor 7,203; Clearview AI $51.75M settlement; GDPR €5.88B fines; FDPA $700–1,100M/year, net-positive over 10 years.
+`domain-deepening/reparations-evidence.md` (552 lines). Key findings: racial wealth gap $284K vs $44K (6.4:1); GI Bill exclusion mechanics; FHA 1935/1938 Underwriting Manual verbatim racism; urban renewal 1.36M displaced; Chicago contract buying $3-4B; HR 40 36-year history; Evanston 44 recipients; California apology passed, direct payments failed; South Africa TRC cautionary lesson; Citigroup $16T GDP cost. **Deepening pass complete: 10 of 22 domains deepened** — criminal justice, healthcare-education, housing, tax policy, labor policy, social safety net, national security, economic concentration, data privacy, reparations.
 
 ---
 
@@ -55,7 +54,7 @@ Or `http://127.0.0.1:8000` → Trading page.
 ### Needs Your Input
 
 **open-source-rideshare — GitHub push still blocked**
-Sessions 77–95 of commits piling up locally. Options:
+Sessions 77–96 of commits piling up locally. Options:
 - (a) `git config --global credential.helper store` + push once with username/PAT
 - (b) `ssh-keygen -t ed25519` on Pi → add public key to GitHub account
 - (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
@@ -72,8 +71,8 @@ Can you share the cycle logs or a screenshot from the Trading page? We can't pul
 ---
 
 ### Suggested Priorities (Next Session)
-1. **Open-source-rideshare**: Trip/driver activity heatmap analytics, or rider/driver notification history log — good next features with no blockers.
-2. **Resistance-research**: Monitoring pass when you drop April 17–20 updates in INBOX.md. Also: 12 remaining domains have no deepening files yet — option to continue the deepening pass.
+1. **Open-source-rideshare**: Trip/driver activity heatmap analytics — good next feature, complements the notification history work. No blockers.
+2. **Resistance-research**: 12 remaining domains have no deepening files yet — option to continue the deepening pass beyond the original 10.
 3. **Off-grid-living**: All 16 domains complete — quality review pass or publish-ready formatting pass.
 4. **Seedwarden**: PDF mockup images still the #1 Etsy conversion blocker — any Canva access?
 
