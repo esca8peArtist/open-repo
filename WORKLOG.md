@@ -4540,3 +4540,45 @@ Background agent completed. New file: `projects/resistance-research/domain-deepe
 ## Session 100 summary
 - open-source-rideshare: complaint/dispute system (50 new tests, 2,579 total)
 - resistance-research: Domain 4 economic policy deepening (600 lines, 16/22 domains)
+
+---
+
+## Session 103 — 2026-04-13
+
+### Orient
+- INBOX: empty
+- BLOCKED: stockbot (awaiting user cycle logs); GitHub push (awaiting SSH key setup)
+- resistance-research: 18/22 domains deepened — remaining: Domain 5 (Fiscal Reform), Domain 8 (Media & Info), Domain 9 (Federalism), Domain 17 (Foreign Policy)
+- open-source-rideshare: 2,673 tests passing; surge pricing zone management just landed
+
+### Plan
+1. Deepen Domain 8 (Media & Information Ecosystem) — resistance-research
+2. Add rider surge waitlist + price alert system — open-source-rideshare (builds on surge zones)
+
+### Progress — Session 103
+
+
+#### open-source-rideshare — Surge waitlist and price alert system
+- Model: SurgeWaitlistEntry (rider_id, origin_lat/lon, dest_lat/lon, max_multiplier, vehicle_preference, status: active/notified/expired/cancelled, notify_via_push/sms, expires_at)
+- Service: create_waitlist_entry (validates coords + multiplier 1.0-5.0), cancel_waitlist_entry, get_my_waitlist_entries, check_and_notify_waitlist (polls active entries, marks notified when surge drops to threshold), get_current_surge_for_location
+- API: POST/GET/DELETE /surge-waitlist (rider auth), GET /surge-waitlist/current-surge (public), POST /admin/surge-waitlist/check (admin)
+- Alembic migration: f1g2h3i4j5k6_add_surge_waitlist
+- 49 new tests; suite: 2,722 passing
+
+#### seedwarden — PDF generator and product audit fixes
+- Added apartment-growing-complete-guide (146pp) and zone-seed-starting-calendar (82pp) to PRODUCTS list
+- All 21 products now have generated PDFs (was 19)
+- Wrote Etsy listing copy for Zone-by-Zone Seed Starting Calendar (product #20)
+- Updated product audit to reflect 21 products total
+
+
+#### resistance-research — Domain 8 Media & Information evidence deepening
+- 440 lines: `domain-deepening/domain-08-media-information.md`
+- Local news collapse: Brookings/Notre Dame borrowing cost study (full research design), Medill 2024 news desert data (208 zero-news counties, 55M Americans, 127 closures 2024), Alden Global 10-13% margin model
+- Algorithmic amplification: González-Bailón et al. 2023 Science study (three-level comparison + asymmetric conservative corner finding), Frances Haugen disclosure anatomy (teen mental health data, 2020 safeguard rollbacks, internal debate pattern)
+- Press freedom: RSF ranking 17th (2002) → 57th (2025), specific 2025 incidents (Mario Guevara deportation, Lucas Griffith conviction)
+- Counterarguments: Moody v. NetChoice (2024), Substack limits, market solutions, filter bubble objection to public media
+- International benchmarks: ARD/ZDF Federal Constitutional Court ruling (1 BvR 1675/16), Sweden Presstödsnämnden formula, DSA first fine (€120M vs X, December 2025), Finland media literacy grade-level curriculum
+- Deepening library: 19 of 22 domains complete
+- Committed 748044d
+
