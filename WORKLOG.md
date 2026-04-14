@@ -4645,3 +4645,22 @@ Background agent completed. New file: `projects/resistance-research/domain-deepe
 
 ### Discord Bot Investigation
 Root cause: `!checkin` reads `## Since Last Check-in` from CHECKIN.md. Orchestrator was writing WORKLOG entries but not always properly archiving + replacing the CHECKIN section. Result: bot returned Session 104 content for multiple sessions. Fix: CHECKIN.md properly updated this session; going forward each session will archive to History and write fresh current section.
+
+#### mfg-farm — Market Research complete
+- 861 lines: `projects/mfg-farm/market-research.md`
+- Product categories ranked by ROI: cable management, flexi animals, vase-mode planters, pet memorials, gaming organizers
+- Etsy Jun 2025 policy: third-party STL prints banned — original designs required
+- Platform fee analysis, machine investment sequencing (P1S next), IP risk framework
+- Committed 2880a07
+
+#### resistance-research — Domain 5 Fiscal Reform complete
+- ~450 lines: `domain-deepening/domain-05-fiscal-reform.md`
+- Buy-borrow-die, CAMT failure ($572M vs $35B), IRS enforcement collapse, Direct File shutdown
+- Norway wealth tax 2025 update (revenue rose despite emigration), $400–600B near-term reform range
+- Deepening library: 21/22 complete. Remaining: Domain 19 only.
+- Committed 2a1cac2
+
+#### Session end
+- CHECKIN.md updated with full accomplishments
+- INBOX cleared
+- Committing final CHECKIN update

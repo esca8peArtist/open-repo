@@ -11,9 +11,29 @@
 **Period**: April 14, 2026
 **Sessions run**: 105–106
 
-### Accomplished (Session 106 — in progress)
+### Accomplished (Session 106)
 
-_Work in progress — being updated now._
+#### Discord bot investigation — stale status updates
+Root cause identified and fixed. The `!checkin` command reads `## Since Last Check-in` from CHECKIN.md. The orchestrator was writing WORKLOG entries but not consistently archiving and replacing the CHECKIN section. Sessions 105 committed PROJECTS/WORKLOG updates but left CHECKIN's "Since Last Check-in" stuck on Session 104 content. Fix: CHECKIN.md now properly archived and replaced this session; going forward each session will write a fresh section. No code change needed in the bot itself — the issue was the orchestrator workflow, not the bot.
+
+#### mfg-farm — Market Research COMPLETE
+- **861 lines**: `projects/mfg-farm/market-research.md`
+- **Top product picks** (by net margin, automation score): cable management (68% margin, 9/10 automation), articulated flexi animals (AMS multi-color advantage, 20,000+ unit proven demand), vase-mode planters (fastest print per dollar, zero post-processing), pet memorials (highest margins 68–78%), gaming desk organizers (Amazon-primary, PETG, two-tone premium)
+- **Critical Etsy policy note**: June 10, 2025 policy update bans sales of prints based on third-party STL files — even commercially licensed ones. All designs must be original. This is an existential constraint on the business model.
+- **Platform fee reality**: Etsy's effective rate on a $25 sale is ~16.8% + 15% Offsite Ads on referred sales = 30%+ burden on some sales. Amazon Handmade 15% flat. Fee table and break-even analysis included.
+- **Machine sequencing**: Next printer → Bambu P1S (~$699–949, same AMS, lower cost than X1C). Resin at $3K+/mo revenue milestone. Laser cutter at $5–8K/mo as complementary line (6–8 week ROI on engraving).
+- **IP risk**: Nintendo, Disney, Games Workshop, Hasbro all actively enforce. Multiple DMCA = permanent ban. All designs must be original.
+
+#### resistance-research — Domain 5 Fiscal Reform and Tax Policy COMPLETE
+- **~450 lines**: `projects/resistance-research/domain-deepening/domain-05-fiscal-reform.md`
+- **Core finding**: In 2018, the 400 wealthiest families paid a lower effective all-in rate (23%) than the bottom 50% (24.2%) — first time in data back to 1960
+- **Three structural mechanisms**: (1) buy-borrow-die — stepped-up basis costs $40–50B/yr; (2) corporate offshore profit shifting — $200–250B/yr base erosion; (3) CAMT raised $572M vs $35B projection in 2024 (2% of expected) due to depreciation carveouts
+- **IRS collapse**: IRA's $80B rescinded to $38B; $1.3B already collected from high-income targets before rescission; $200B annual enforcement revenue lost at 5:1 ROI
+- **Direct File ended**: Nov 2025, 94% user satisfaction, killed under industry lobbying pressure. Sweden files 74% of returns via SMS.
+- **Norway wealth tax update**: 30 emigrations from 2022 rate increase, but total revenue rose 34B kroner (2025) vs 27B (2022) — broad base outgrows high-net-worth emigration
+- **Reform revenue**: $400–600B/yr near-term (stepped-up basis, GILTI, CAMT fix, IRS, FTT, carbon); +$150–250B medium-term (wealth tax, estate reform). US at 25.6% tax-to-GDP vs 34.1% OECD average = $2.3T gap.
+- **Deepening library: 21 of 22 domains complete. Remaining: Domain 19 (National Security/Foreign Policy)**
+- Committed `2a1cac2`
 
 ---
 
