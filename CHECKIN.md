@@ -8,56 +8,48 @@
 
 ## Since Last Check-in
 
-**Period**: April 13, 2026
-**Sessions run**: 75–104
+**Period**: April 14, 2026
+**Sessions run**: 105–106
 
-### Accomplished (Session 104)
+### Accomplished (Session 106 — in progress)
 
-#### resistance-research — Domain 9 Federalism & Local Democracy COMPLETE
-- **340 lines**: `domain-deepening/domain-09-federalism.md`
-- Shelby County: § 4(b) coverage formula precise legal mechanism (why this clause, not § 5), state-by-state polling place closures (TX 403, AZ 320, GA 214, LA 61% of parishes), NC H.B. 589 Fourth Circuit "surgical precision" finding, Billings et al. (2024 Journal of Public Economics) natural experiment with Grimmer et al. (2018) replication dispute disclosed
-- Birmingham minimum wage preemption: full litigation arc — Aug 2015 ordinance → Feb 2016 retroactive state preemption → Eleventh Circuit "rushed, reactionary, racially polarized" → full court dismissal (failed intent standard); NELP data: 346K workers, $1.5B/year, $4,100 avg loss; St. Louis 38,000 worker case study
-- Fragmented governance: Illinois 6,963 units detail (second-highest property taxes, three layers of general-purpose government); honest Louisville/Unigov/Nashville consolidation accounting including Unigov's deliberate racial dilution and post-consolidation inequities
-- Interstate compacts: Nurse Licensure Compact success anatomy (40 states, redesigned standards floor, COVID adoption surge); Multistate Tax Compact defection dynamics and United States Steel Corp. v. MTC (1978); NPVIC at 209 electoral votes (Maine most recent joiner, June 2024); Colorado River Compact 16.4M acre-feet vs. 13M actual flow and 2024 interstate stalemate
-- International benchmarks: Swiss Finanzausgleich (CHF 5.2B flows, 85% floor, Federal Supreme Court annulment authority); German Länderfinanzausgleich + Bavaria/Hesse Constitutional Court challenges; Spain State of Autonomies 1978–2006 success → 2010 Constitutional Court ruling → Catalan independence radicalization; Canada § 33 full usage (Quebec 1982-85, French signs 1988, Bill 21 2019, Ontario councils 2018) and CAD $24.9B equalization
-- Counterarguments: anti-commandeering doctrine limits (what NY v. US/NFIB actually forbids vs. Spending Clause options); Dillon's Rule legitimacy case and 2024 Harvard Law Review narrowing; inter-legislature binding objection with adaptive mechanism response; honest engagement with fragmentation/experimentation tension as the strongest objection
-- **Deepening library: 20 of 22 domains complete. Remaining: Domain 5 (Fiscal Reform/Tax Policy), Domain 19 (National Security/Foreign Policy)**
-
-#### open-source-rideshare — Driver Destination Filter (going-home mode) COMPLETE
-- `DriverDestinationFilter` model: one row per driver (unique constraint); destination lat/lon + radius_km (1–50); is_active flag; optional expires_at for auto-expiry at shift end
-- Service: `haversine_km` (pure Python, no deps); `dropoff_within_filter` (checks active + not expired + within radius); `set_destination_filter` (upsert — creates or updates); `clear_destination_filter` (sets inactive, 404/400 guards); `get_active_filters_for_drivers` (bulk fetch for MatchingEngine)
-- API: `PUT /drivers/me/destination-filter` (set/update), `GET /drivers/me/destination-filter` (read), `DELETE /drivers/me/destination-filter` (deactivate) — all driver-auth
-- MatchingEngine: `find_candidates` + `match_ride` gain `dropoff_lat/lng` params; active filters fetched bulk and applied after availability filter; drivers without filter always eligible
-- Migration: `g1h2i3j4k5l6_add_driver_destination_filter`
-- **47 new tests; total: 2,769 passing**
+_Work in progress — being updated now._
 
 ---
 
 ### Needs Your Input
 
-**open-source-rideshare — GitHub push** ✓ RESOLVED (2026-04-14)
-Repo created at https://github.com/esca8peArtist/open-source-rideshare. SSH key added to GitHub. All sessions 77–104 pushed via `git subtree push --prefix=projects/open-source-rideshare rideshare master`. Remote `rideshare` added to SuperClaude_Framework. Future pushes: `git subtree push --prefix=projects/open-source-rideshare rideshare master`.
+**Discord bot showing stale status updates**
+Root cause identified: The `!checkin` command reads the `## Since Last Check-in` section from CHECKIN.md. The orchestrator was not properly archiving and replacing this section at the end of each session — it wrote to the WORKLOG but didn't always replace the "Since Last Check-in" block, so the bot kept surfacing the same Session 104 content across multiple sessions.
 
-**resistance-research — April 17/20 events: not yet occurred**
-It is currently April 13 — April 17/20 events are upcoming, not past. No action needed yet. Check back after April 20 and drop outcomes in INBOX.md.
+Fix applied this session: The "Since Last Check-in" section is now properly archived to History and replaced with current session content. This should resolve repeated updates going forward.
 
-**Stockbot — paper trading performance** ✓ RESOLVED (2026-04-14)
-All 3 sessions (momentum/SPY/QQQ/MSFT, rsi_mean_reversion/AAPL/NVDA, sma_crossover/AMZN/SPY) running on Jetson at 100.120.18.84:8000. Fixed bugs this session: (1) stdlib logging in trading_session.py replaced with loguru — market-closed messages now visible; (2) cycle-log endpoint was reading wrong app.state attribute (active_trading_session vs paper_trading_sessions dict) — now returns real cycle data; (3) admin password set to real value. Container started after market close today — first live signals expected Tuesday April 14 at 9:30 AM EDT. Admin login: admin / [set this session].
+If `!status` also showed stale content, it reads the last 20 lines of WORKLOG.md — if no WORKLOG entry was added for a session, the tail doesn't change. Session 106 adds a proper WORKLOG entry.
 
-**Seedwarden — PDF mockup images** ✓ RESOLVED (2026-04-13)
-All 21 mockups generated programmatically via `projects/seedwarden/scripts/generate_mockups.py` (pypdfium2 + Pillow). 2400×2400px tablet portrait frames, zoomed to top 55% of each PDF cover. Saved to `projects/seedwarden/mockups/`. Ready for Etsy upload.
+**Stockbot — paper trading cycle logs**
+Paper trading has been live since April 14 (first market open). The orchestrator cannot read cycle logs without `STOCKBOT_API_KEY` in the environment. To assess model performance, either: (a) share cycle log output in INBOX.md, or (b) screenshot the Trading page at `http://127.0.0.1:8000` and drop path in INBOX.
+
+**Resistance-research — April 17/20 events**
+Today is April 14. The April 17 stay expiry and April 20 CAPE/Abrego Garcia briefing deadlines are imminent. If you have outcomes or news updates, drop them in INBOX.md and the next session will write a monitoring brief.
 
 ---
 
 ### Suggested Priorities (Next Session)
-1. **Stockbot**: If cycle logs shared — assess model performance and suggest improvements.
-2. **Resistance-research**: 2 remaining domains — Domain 5 (Fiscal Reform) and Domain 19 (National Security/Foreign Policy). Both have earlier evidence files; need the formal domain-XX deepening format.
-3. **Open-source-rideshare**: 2,769 tests — next candidates: trip demand heatmap/analytics, driver revenue projections, or platform admin configuration.
-4. **Seedwarden**: Mockups done — upload to Etsy listings and launch.
+1. **mfg-farm**: Market research underway this session — review findings and decide product focus.
+2. **resistance-research**: Domain 5 (Fiscal Reform) deepening underway this session — 21/22 done after.
+3. **stockbot**: Share cycle logs or Trading page screenshot to unblock model performance assessment.
+4. **open-source-rideshare**: 2,769 tests passing — next candidates: trip demand heatmap, driver revenue projections, platform admin config API.
 
 ---
 
 ### History
+
+#### Accomplished (Sessions 104–105)
+- **resistance-research**: Domain 9 Federalism & Local Democracy deepened (340 lines) — Shelby County § 4(b) mechanism, polling place closures by state, Birmingham wage preemption full litigation arc, Illinois 6,963-unit fragmentation, NPVIC 209 EVs, Swiss/German/Spain/Canada fiscal federalism. 20/22 deepening library.
+- **open-source-rideshare**: Driver Destination Filter (going-home mode) — DriverDestinationFilter model, haversine service, PUT/GET/DELETE endpoints, MatchingEngine integration, 47 tests; total 2,769 passing.
+- **mfg-farm**: Project added to PROJECTS.md. Stockbot logging bug fixed (stdlib→loguru; cycle-log endpoint app.state fix).
+
+#### Accomplished (Session 103)
 
 #### Accomplished (Session 103)
 - **resistance-research**: Domain 8 Media & Information deepening (440 lines) — Brookings/Notre Dame borrowing cost study, González-Bailón 2023 Science, Frances Haugen, RSF ranking, Moody v. NetChoice, ARD/ZDF ruling, DSA €120M X fine, Finland media literacy. 19/22 domains.

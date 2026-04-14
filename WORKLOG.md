@@ -4625,3 +4625,23 @@ Background agent completed. New file: `projects/resistance-research/domain-deepe
 - Counterarguments: anti-commandeering doctrine (what remains available post-NFIB), Dillon's Rule legitimacy case, honest engagement with fragmentation/experimentation tension
 - Domain-deepening library: 20 of 22 complete
 - Committed b19f236
+
+
+## Session 106 — 2026-04-14
+
+### Orient
+- INBOX: 1 item — Discord bot showing same status updates repeatedly
+- BLOCKED: No active blocks
+- CHECKIN: Stale — still showing Session 104 as current; archived to History, wrote fresh section
+- Stockbot: Paper trading live since April 14; no cycle logs shared yet — skipping assessment
+- mfg-farm: High priority but directory empty — no research done yet
+- resistance-research: 20/22 domains deepened; Domain 5 (Fiscal Reform) and Domain 19 (National Security) remain
+
+### Plan
+1. Process INBOX: Answer Discord bot staleness question in CHECKIN.md ✓
+2. Launch mfg-farm market research (parallel with Domain 5)
+3. Launch resistance-research Domain 5 deepening (parallel with mfg-farm)
+4. Commit and update CHECKIN at end
+
+### Discord Bot Investigation
+Root cause: `!checkin` reads `## Since Last Check-in` from CHECKIN.md. Orchestrator was writing WORKLOG entries but not always properly archiving + replacing the CHECKIN section. Result: bot returned Session 104 content for multiple sessions. Fix: CHECKIN.md properly updated this session; going forward each session will archive to History and write fresh current section.
