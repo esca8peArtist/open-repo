@@ -12,6 +12,11 @@
 ## New Items
 <!-- Add tasks here. Format: - [date] [description] -->
 
+<!-- Processed 2026-04-13 Session 99:
+- [17:39] Jetson/paper trading status → answered in CHECKIN.md
+- [17:38] Python 3.12 install → answered in CHECKIN.md (no longer needed; stockbot running on 3.11)
+-->
+
 ---
 
 ## Processing Rules

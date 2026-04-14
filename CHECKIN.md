@@ -9,70 +9,61 @@
 ## Since Last Check-in
 
 **Period**: April 13, 2026
-**Sessions run**: 75–103
+**Sessions run**: 75–104
 
-### Accomplished (Session 103)
+### Accomplished (Session 104)
 
-#### resistance-research — Domain 8 Media & Information evidence deepening COMPLETE
-- **440 lines**: `domain-deepening/domain-08-media-information.md`
-- Local news collapse: Brookings/Notre Dame borrowing cost study (full research design, 1996-2015 natural experiment), Medill 2024 (208 zero-news counties, 55M Americans, 127 closures in 2024), Alden Global Capital 10-13% margin model vs. 20%+ target
-- Algorithmic amplification: González-Bailón et al. 2023 Science (three-level comparison — potential exposure vs. actual vs. engagement; asymmetric conservative misinformation corner), Frances Haugen disclosures (teen mental health data, 2020 election safeguard rollbacks)
-- Press freedom: RSF ranking 17th (2002) → 57th (2025), specific 2025 incidents (Mario Guevara deportation, Lucas Griffith conviction)
-- Counterarguments: Moody v. NetChoice (2024) engaged fully — what the Court said about editorial discretion and what it doesn't foreclose; Substack limits for accountability journalism; filter bubble objection to public media
-- International: ARD/ZDF Federal Constitutional Court ruling (1 BvR 1675/16), Sweden Presstödsnämnden formula, DSA first €120M fine (X, December 2025), Finland media literacy grade-level curriculum
-- **Deepening library: 19 of 22 domains complete**
+#### resistance-research — Domain 9 Federalism & Local Democracy COMPLETE
+- **340 lines**: `domain-deepening/domain-09-federalism.md`
+- Shelby County: § 4(b) coverage formula precise legal mechanism (why this clause, not § 5), state-by-state polling place closures (TX 403, AZ 320, GA 214, LA 61% of parishes), NC H.B. 589 Fourth Circuit "surgical precision" finding, Billings et al. (2024 Journal of Public Economics) natural experiment with Grimmer et al. (2018) replication dispute disclosed
+- Birmingham minimum wage preemption: full litigation arc — Aug 2015 ordinance → Feb 2016 retroactive state preemption → Eleventh Circuit "rushed, reactionary, racially polarized" → full court dismissal (failed intent standard); NELP data: 346K workers, $1.5B/year, $4,100 avg loss; St. Louis 38,000 worker case study
+- Fragmented governance: Illinois 6,963 units detail (second-highest property taxes, three layers of general-purpose government); honest Louisville/Unigov/Nashville consolidation accounting including Unigov's deliberate racial dilution and post-consolidation inequities
+- Interstate compacts: Nurse Licensure Compact success anatomy (40 states, redesigned standards floor, COVID adoption surge); Multistate Tax Compact defection dynamics and United States Steel Corp. v. MTC (1978); NPVIC at 209 electoral votes (Maine most recent joiner, June 2024); Colorado River Compact 16.4M acre-feet vs. 13M actual flow and 2024 interstate stalemate
+- International benchmarks: Swiss Finanzausgleich (CHF 5.2B flows, 85% floor, Federal Supreme Court annulment authority); German Länderfinanzausgleich + Bavaria/Hesse Constitutional Court challenges; Spain State of Autonomies 1978–2006 success → 2010 Constitutional Court ruling → Catalan independence radicalization; Canada § 33 full usage (Quebec 1982-85, French signs 1988, Bill 21 2019, Ontario councils 2018) and CAD $24.9B equalization
+- Counterarguments: anti-commandeering doctrine limits (what NY v. US/NFIB actually forbids vs. Spending Clause options); Dillon's Rule legitimacy case and 2024 Harvard Law Review narrowing; inter-legislature binding objection with adaptive mechanism response; honest engagement with fragmentation/experimentation tension as the strongest objection
+- **Deepening library: 20 of 22 domains complete. Remaining: Domain 5 (Fiscal Reform/Tax Policy), Domain 19 (National Security/Foreign Policy)**
 
-#### open-source-rideshare — Surge Waitlist and Price Alert System COMPLETE
-- `SurgeWaitlistEntry` model: riders join waitlist at a location with a max surge threshold they'll accept; 2-hour auto-expiry; push/SMS notification flags; `active/notified/expired/cancelled` status
-- Service: create/cancel/list entries; `check_and_notify_waitlist` polling function (marks notified when surge ≤ threshold, marks expired when past expires_at); `get_current_surge_for_location` public lookup
-- API: `POST/GET/DELETE /surge-waitlist` (rider-auth); `GET /surge-waitlist/current-surge` (public, no auth); `POST /admin/surge-waitlist/check` (admin-auth, triggers poll cycle)
-- **49 new tests; total: 2,722 passing**
-
-#### seedwarden — PDF generator + product catalog fixes
-- Added `apartment-growing-complete-guide` (146pp, $13) and `zone-seed-starting-calendar` (82pp, $7–$18) to PDF generator — both were missing from the PRODUCTS list
-- All 21 products now have generated PDFs (was 19)
-- Wrote Etsy listing copy for Zone-by-Zone Seed Starting Calendar — all 20 paid products now have complete listing copy
-- Updated product audit to reflect 21-product catalog with correct PDF status
-
-#### off-grid-living — Domain 1 (Site Selection) + Domain 12 (Security & Defense) COMPLETE
-- **01-site-selection.md** (1,178 lines): 32-criterion parcel checklist + weighted scoring matrix; prior appropriation vs. riparian doctrine by state; well permitting + seasonal water table; rainwater harvesting legality all 50 states; soil testing + amendment; regional comparison (Mid-South best overall, specific county recommendations); due diligence (minerals, easements, perc test, flood plain); 3-phase transition model with budget tables
-- **12-security-defense.md** (1,252 lines): 13-threat probability×consequence matrix; fencing/camera/lighting/dog costs; 14-species predator table with fencing specs; 4-gun practical loadout + safe comparison; OPSEC basics; community defense + radio protocols; 12 threat-specific response protocols; quarterly audit checklist (30+ items); regional profiles; 50+ product reference list (2026 prices)
-- **master-outline.md document map: 100% complete** — all 16 domain files now written
+#### open-source-rideshare — Driver Destination Filter (going-home mode) COMPLETE
+- `DriverDestinationFilter` model: one row per driver (unique constraint); destination lat/lon + radius_km (1–50); is_active flag; optional expires_at for auto-expiry at shift end
+- Service: `haversine_km` (pure Python, no deps); `dropoff_within_filter` (checks active + not expired + within radius); `set_destination_filter` (upsert — creates or updates); `clear_destination_filter` (sets inactive, 404/400 guards); `get_active_filters_for_drivers` (bulk fetch for MatchingEngine)
+- API: `PUT /drivers/me/destination-filter` (set/update), `GET /drivers/me/destination-filter` (read), `DELETE /drivers/me/destination-filter` (deactivate) — all driver-auth
+- MatchingEngine: `find_candidates` + `match_ride` gain `dropoff_lat/lng` params; active filters fetched bulk and applied after availability filter; drivers without filter always eligible
+- Migration: `g1h2i3j4k5l6_add_driver_destination_filter`
+- **47 new tests; total: 2,769 passing**
 
 ---
 
 ### Needs Your Input
 
-**open-source-rideshare — GitHub push still blocked**
-Sessions 77–103 of commits piling up locally. Options:
-- (a) `git config --global credential.helper store` + push once with username/PAT
-- (b) `ssh-keygen -t ed25519` on Pi → add public key to GitHub account
-- (c) `git remote set-url origin git@github.com:...` + add SSH key to GitHub
+**open-source-rideshare — GitHub push** ✓ RESOLVED (2026-04-14)
+Repo created at https://github.com/esca8peArtist/open-source-rideshare. SSH key added to GitHub. All sessions 77–104 pushed via `git subtree push --prefix=projects/open-source-rideshare rideshare master`. Remote `rideshare` added to SuperClaude_Framework. Future pushes: `git subtree push --prefix=projects/open-source-rideshare rideshare master`.
 
-**resistance-research — April 17/20 events: what happened?**
-- Did Leon act after the April 17 D.C. Circuit stay expired? Did SCOTUS intervene? Did construction start?
-- CAPE Phase 1 launched April 20 — how did it go? Any reporting on the $46B ACH enrollment gap or rejected refunds?
-- Abrego Garcia DOJ brief was due April 20 — what position did they take?
-Drop updates in INBOX.md when you have them.
+**resistance-research — April 17/20 events: not yet occurred**
+It is currently April 13 — April 17/20 events are upcoming, not past. No action needed yet. Check back after April 20 and drop outcomes in INBOX.md.
 
-**Stockbot — paper trading performance**
-First market day was April 14 (Monday). Share cycle logs or Trading page screenshot — can't assess model performance without them.
-`curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`
+**Stockbot — paper trading performance** ✓ RESOLVED (2026-04-14)
+All 3 sessions (momentum/SPY/QQQ/MSFT, rsi_mean_reversion/AAPL/NVDA, sma_crossover/AMZN/SPY) running on Jetson at 100.120.18.84:8000. Fixed bugs this session: (1) stdlib logging in trading_session.py replaced with loguru — market-closed messages now visible; (2) cycle-log endpoint was reading wrong app.state attribute (active_trading_session vs paper_trading_sessions dict) — now returns real cycle data; (3) admin password set to real value. Container started after market close today — first live signals expected Tuesday April 14 at 9:30 AM EDT. Admin login: admin / [set this session].
 
-**Seedwarden — PDF mockup images still the #1 Etsy conversion blocker**
-All 21 products have content and PDFs now. The only thing between here and launching is mockup images (showing PDF on tablet/phone). Can you get Canva access, or is there another mockup generator you prefer?
+**Seedwarden — PDF mockup images** ✓ RESOLVED (2026-04-13)
+All 21 mockups generated programmatically via `projects/seedwarden/scripts/generate_mockups.py` (pypdfium2 + Pillow). 2400×2400px tablet portrait frames, zoomed to top 55% of each PDF cover. Saved to `projects/seedwarden/mockups/`. Ready for Etsy upload.
 
 ---
 
 ### Suggested Priorities (Next Session)
 1. **Stockbot**: If cycle logs shared — assess model performance and suggest improvements.
-2. **Resistance-research**: 3 remaining domains — Domain 5 (Fiscal Reform/Tax Policy deepening), Domain 9 (Federalism & Local Democracy), Domain 17 (Foreign Policy/Diplomacy).
-3. **Open-source-rideshare**: 2,722 tests — next candidates: trip heatmap/demand analytics, driver revenue projections, or platform admin config.
-4. **Seedwarden**: Launch prep once mockup images are available.
+2. **Resistance-research**: 2 remaining domains — Domain 5 (Fiscal Reform) and Domain 19 (National Security/Foreign Policy). Both have earlier evidence files; need the formal domain-XX deepening format.
+3. **Open-source-rideshare**: 2,769 tests — next candidates: trip demand heatmap/analytics, driver revenue projections, or platform admin configuration.
+4. **Seedwarden**: Mockups done — upload to Etsy listings and launch.
 
 ---
 
 ### History
+
+#### Accomplished (Session 103)
+- **resistance-research**: Domain 8 Media & Information deepening (440 lines) — Brookings/Notre Dame borrowing cost study, González-Bailón 2023 Science, Frances Haugen, RSF ranking, Moody v. NetChoice, ARD/ZDF ruling, DSA €120M X fine, Finland media literacy. 19/22 domains.
+- **open-source-rideshare**: Surge Waitlist + Price Alerts — SurgeWaitlistEntry model, check_and_notify_waitlist, 3 rider endpoints + public current-surge + admin trigger; 49 tests; 2,722 total.
+- **seedwarden**: apartment-growing-complete-guide + zone-seed-starting-calendar added to PDF generator; all 21 products have PDFs and listing copy.
+- **off-grid-living**: 01-site-selection.md (1,178 lines) + 12-security-defense.md (1,252 lines) complete; document map 100%.
 
 #### Accomplished (Session 101)
 - **resistance-research**: Domain 2 Campaign Finance deepening (511 lines) — Citizens United legal chain, FEC deadlock, dark money mechanics, Gilens & Page, international comparisons, reform proposals. 17/22 domains.

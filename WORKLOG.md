@@ -4592,3 +4592,36 @@ Background agent completed. New file: `projects/resistance-research/domain-deepe
 - master-outline.md document map: 100% complete
 - Committed 08695a9
 
+
+## Session 104 — 2026-04-13
+
+### Orient
+- INBOX: empty — no new items
+- BLOCKED: GitHub push blocked (no SSH key) — ongoing; all others resolved
+- stockbot: paper trading live but orchestrator cannot pull cycle logs without API key in env — skipping
+- resistance-research: 19/22 deepened; remaining: Domain 5 (Fiscal Reform), Domain 9 (Federalism), Domain 17/19 (Foreign Policy)
+- open-source-rideshare: 2,722 tests passing; surge waitlist just shipped in Session 103
+
+### Plan
+1. Deepen Domain 9 (Federalism & Local Democracy) — resistance-research (agent)
+2. Add driver destination filter feature — open-source-rideshare
+
+#### open-source-rideshare — Driver destination filter (going-home mode)
+- Model: DriverDestinationFilter (driver_id unique, destination_lat/lon, radius_km 1–50, is_active, expires_at)
+- Service: haversine_km, dropoff_within_filter, set_destination_filter (upsert), clear_destination_filter, get_destination_filter, get_active_filters_for_drivers (bulk, used by MatchingEngine)
+- API: PUT/GET/DELETE /drivers/me/destination-filter (driver auth)
+- Migration: g1h2i3j4k5l6_add_driver_destination_filter
+- MatchingEngine: find_candidates + match_ride gain dropoff_lat/lng params; active destination filters applied post-availability-check
+- 47 new tests; suite: 2,769 passing
+- Committed bf64d37
+
+#### resistance-research — Domain 9 Federalism & Local Democracy deepening
+- domain-09-federalism.md (340 lines)
+- Shelby County: § 4(b) coverage formula legal mechanism, state-by-state polling place closures (TX 403, AZ 320, GA 214), NC H.B. 589 Fourth Circuit "surgical precision" ruling, Billings et al. (2024) turnout study vs. Grimmer et al. (2018) methodology dispute
+- Birmingham minimum wage preemption: Aug 2015 ordinance → Feb 2016 retroactive state preemption → Eleventh Circuit "rushed, reactionary, racially polarized" → full court dismissal (intent requirement); NELP: 346K workers, $1.5B/year, $4,100 avg loss
+- Fragmented governance: Illinois 6,963 units detail; honest Louisville/Unigov/Nashville consolidation accounting (including Unigov's racial representation dilution)
+- Interstate compacts: Nurse Licensure Compact (40 states, redesigned standards floor), Multistate Tax Compact defection dynamics, NPVIC 209 electoral votes, Colorado River Compact overallocation + 2024 stalemate
+- International benchmarks: Swiss Finanzausgleich (CHF 5.2B, 85% floor, FSC annulment authority), German Länderfinanzausgleich + Länder Constitutional Court challenges, Spain 1978-2010 arc, Canada § 33 full usage history
+- Counterarguments: anti-commandeering doctrine (what remains available post-NFIB), Dillon's Rule legitimacy case, honest engagement with fragmentation/experimentation tension
+- Domain-deepening library: 20 of 22 complete
+- Committed b19f236
