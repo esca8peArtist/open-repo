@@ -1,0 +1,89 @@
+#!/bin/bash
+# generate-orchestrator-state.sh
+# Generates a compact ORCHESTRATOR_STATE.md before each autonomous session.
+# Reads the 5 source files and distills only what the orchestrator needs per session.
+# This means the orchestrator reads ONE compact file instead of 5 large raw files,
+# saving 60-70% on file-read token overhead.
+
+set -e
+
+WORKSPACE="${CLAUDE_WORKSPACE:-$HOME/dev/SuperClaude_Framework}"
+OUTPUT="$WORKSPACE/ORCHESTRATOR_STATE.md"
+SCRIPTS="$WORKSPACE/scripts"
+
+cd "$WORKSPACE"
+
+GENERATED_AT=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+# ── Usage check one-liner ──────────────────────────────────────────────────────
+USAGE_LINE=$(python3 "$SCRIPTS/usage-check.py" --checkin 2>/dev/null || echo "⚠️ usage-check unavailable")
+
+# ── Active blocks (Active Blocks section only) ─────────────────────────────────
+BLOCKED_SECTION=$(awk '/^## Active Blocks/{found=1; next} found && /^## Resolved/{exit} found{print}' \
+  "$WORKSPACE/BLOCKED.md" 2>/dev/null | grep -v '^\s*$' | head -30)
+[ -z "$BLOCKED_SECTION" ] && BLOCKED_SECTION="*No active blocks.*"
+
+# ── INBOX new items ────────────────────────────────────────────────────────────
+INBOX_ITEMS=$(awk '/^## New Items/{found=1; next} found && /^## /{exit} found{print}' \
+  "$WORKSPACE/INBOX.md" 2>/dev/null | grep -v '^\s*$' | grep -v '^<!--' | head -20)
+[ -z "$INBOX_ITEMS" ] && INBOX_ITEMS="*(no new items)*"
+
+# ── Priority order + active project summaries from PROJECTS.md ────────────────
+# Extract priority list
+PRIORITY_LIST=$(awk '/^## Priority Order/{found=1; next} found && /^---/{exit} found{print}' \
+  "$WORKSPACE/PROJECTS.md" 2>/dev/null | grep -v '^\s*$' | head -15)
+
+# Extract each active project's name, status, and current focus (skip Archived/Paused)
+PROJECT_SUMMARIES=""
+while IFS= read -r line; do
+  if [[ "$line" =~ ^###\  ]]; then
+    current_project="$line"
+    current_status=""
+    current_focus=""
+    current_blocked=""
+  elif [[ "$line" =~ ^\*\*Status\*\*: ]]; then
+    current_status="${line#**Status**: }"
+    if [[ "$current_status" == *"Archived"* ]] || [[ "$current_status" == *"Paused"* ]]; then
+      current_project=""  # skip this project
+    fi
+  elif [[ "$line" =~ ^\*\*Current\ focus\*\*: ]]; then
+    current_focus="${line#**Current focus**: }"
+  elif [[ "$line" =~ ^\*\*Blocked\ on\*\*: ]]; then
+    current_blocked="${line#**Blocked on**: }"
+  elif [[ "$line" == "---" ]] && [ -n "$current_project" ] && [ -n "$current_status" ]; then
+    PROJECT_SUMMARIES+="$current_project\n"
+    PROJECT_SUMMARIES+="**Status**: $current_status\n"
+    [ -n "$current_focus" ] && PROJECT_SUMMARIES+="**Focus**: $(echo "$current_focus" | cut -c1-300)\n"
+    [ -n "$current_blocked" ] && [ "$current_blocked" != "—" ] && PROJECT_SUMMARIES+="**Blocked**: $current_blocked\n"
+    PROJECT_SUMMARIES+="\n"
+    current_project=""
+  fi
+done < "$WORKSPACE/PROJECTS.md"
+
+# ── Recent WORKLOG (last 40 lines) ────────────────────────────────────────────
+RECENT_LOG=$(tail -40 "$WORKSPACE/WORKLOG.md" 2>/dev/null || echo "(WORKLOG not found)")
+
+# ── Write ORCHESTRATOR_STATE.md ───────────────────────────────────────────────
+cat > "$OUTPUT" << HEREDOC
+# Orchestrator State
+> Auto-generated at $GENERATED_AT — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+
+## Usage
+$USAGE_LINE
+
+## Priority Order
+$PRIORITY_LIST
+
+## Active Projects
+$(printf '%b' "$PROJECT_SUMMARIES")
+## Active Blocks
+$BLOCKED_SECTION
+
+## Inbox (unprocessed)
+$INBOX_ITEMS
+
+## Recent Log (last 40 lines of WORKLOG.md)
+$RECENT_LOG
+HEREDOC
+
+echo "[$(date)] ORCHESTRATOR_STATE.md generated ($(wc -l < "$OUTPUT") lines)"
