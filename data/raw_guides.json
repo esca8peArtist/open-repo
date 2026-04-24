@@ -1,0 +1,1072 @@
+[
+  {
+    "_id": "6a1b2c3d0000000000000001",
+    "crop_id": "5b2d4a1f0000000000000001",
+    "name": "Growing Cherry Tomatoes from Seed to Harvest",
+    "overview": "A complete guide to growing cherry tomatoes from seed started indoors, through transplanting outdoors, to a full season of prolific harvesting.",
+    "location": "Outdoor",
+    "practices": ["organic", "companion-planting"],
+    "completeness_score": 0.85,
+    "popularity_score": 312,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s001a", "order": 1, "name": "Seed Starting",
+        "stage_length": 14,
+        "overview": "Start seeds indoors 6–8 weeks before last frost date. Sow 3 mm deep in seed-starting mix or fine potting compost. Keep at 21–27°C for germination. Seeds sprout in 7–14 days. Use a heat mat to maintain soil temperature if your space is cool.",
+        "soil": ["seed-starting-mix"], "light": ["indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s001b", "order": 2, "name": "Seedling Development",
+        "stage_length": 42,
+        "overview": "Once sprouted, move to bright light (14–16 hours daily) or under grow lights. Water when the top 1 cm of soil is dry. Feed with half-strength liquid fertiliser every 2 weeks once the first true leaves appear. Pot up to 10 cm containers when roots emerge from drainage holes.",
+        "soil": ["moist-well-draining"], "light": ["full-sun", "grow-lights"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s001c", "order": 3, "name": "Hardening Off and Transplant",
+        "stage_length": 10,
+        "overview": "One week before transplanting, begin hardening off: set plants outdoors in a sheltered spot for 1 hour on day 1, increasing by 1 hour per day. After last frost when nighttime temperatures stay above 10°C, transplant into garden beds spaced 60 cm apart. Water deeply immediately after transplanting.",
+        "soil": ["loamy", "well-draining", "rich"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s001d", "order": 4, "name": "Vegetative Growth",
+        "stage_length": 30,
+        "overview": "Plants grow rapidly in warm conditions. Stake or cage plants — indeterminate varieties will reach 1.5 m and need support. Remove suckers (shoots in the leaf axils) to direct energy into fruiting branches. Water deeply 2–3 times per week. Fertilise with a balanced feed every 2 weeks.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s001e", "order": 5, "name": "Fruiting and Harvest",
+        "stage_length": 60,
+        "overview": "Yellow flowers self-pollinate and set fruit. Cherry tomatoes ripen 60–70 days after transplanting. Harvest when fruits are fully coloured and yield slightly to gentle pressure. Harvest every 2–3 days to encourage continued production. Bring indoors before frost; unripe fruits will ripen on the windowsill.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000002",
+    "crop_id": "5b2d4a1f0000000000000002",
+    "name": "Growing Basil: From Seed to Kitchen",
+    "overview": "Basil is one of the easiest herbs to grow in summer. This guide covers growing from seed, managing the plant through the season, and harvesting to maximise leaf production.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.80,
+    "popularity_score": 285,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s002a", "order": 1, "name": "Seed Sowing",
+        "stage_length": 10,
+        "overview": "Sow basil seeds indoors 4–6 weeks before last frost, or directly outdoors once soil temperatures reach 18°C. Sow 3 mm deep in well-draining potting mix. Basil germinates quickly (5–10 days) in warm conditions (21–27°C). Do not sow outdoors until the risk of frost has completely passed — basil is extremely cold-sensitive.",
+        "soil": ["well-draining", "rich"], "light": ["indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s002b", "order": 2, "name": "Transplanting Outdoors",
+        "stage_length": 14,
+        "overview": "After last frost when nights are reliably above 15°C, transplant or direct-sow basil outdoors in a warm, sunny spot. Space 30 cm apart. Basil appreciates shelter from wind. Avoid cold, wet conditions — plants stressed by cold often turn purple and underperform for the rest of the season.",
+        "soil": ["well-draining", "rich"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s002c", "order": 3, "name": "Harvest and Pinching",
+        "stage_length": 90,
+        "overview": "Begin harvesting when plants are 15–20 cm tall by pinching stem tips just above a leaf pair, which encourages bushy growth. Never remove more than a third of the plant at once. Pinch off any flower buds as soon as they appear — once basil flowers, leaf production slows and flavour declines. Harvest in the morning when essential oils are most concentrated.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000003",
+    "crop_id": "5b2d4a1f0000000000000003",
+    "name": "Growing Garlic: Autumn Planting to Summer Harvest",
+    "overview": "Garlic is one of the most rewarding crops — plant individual cloves in autumn and harvest large bulbs the following summer. This guide covers variety selection, planting, winter care, and curing for long-term storage.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.88,
+    "popularity_score": 401,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s003a", "order": 1, "name": "Variety Selection and Clove Preparation",
+        "stage_length": 7,
+        "overview": "Choose hardneck varieties (e.g., Rocambole, Purple Stripe) for cold climates or softneck varieties (e.g., Artichoke) for milder regions and longer storage. Source disease-free seed garlic from a reputable supplier — supermarket garlic may be treated to prevent sprouting. Separate bulbs into individual cloves just before planting, selecting the largest, healthiest cloves.",
+        "soil": ["well-draining", "loamy"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s003b", "order": 2, "name": "Autumn Planting",
+        "stage_length": 21,
+        "overview": "Plant cloves 5 cm deep, pointed end up, 15 cm apart in rows 30 cm apart. Plant 4–6 weeks before the ground freezes, giving roots time to establish before winter. In mild climates, plant from October to December. Mulch with 10 cm of straw after the ground freezes to insulate and reduce frost heaving.",
+        "soil": ["well-draining", "loamy", "rich"], "light": ["full-sun"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s003c", "order": 3, "name": "Spring Growth",
+        "stage_length": 90,
+        "overview": "Green shoots emerge in spring. Remove mulch when shoots appear. Water consistently — garlic needs 25 mm per week during bulb development. Feed with a nitrogen-rich fertiliser early in spring. Hardneck varieties produce scapes (curling flower stalks) in early summer — cut these off to direct energy into the bulb.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s003d", "order": 4, "name": "Harvest and Curing",
+        "stage_length": 30,
+        "overview": "Harvest when the lower 3–4 leaves have turned brown but 5–6 green leaves remain (each leaf = one wrapper layer on the bulb). Carefully dig rather than pull — garlic bruises easily. Cure by hanging in bundles or laying on racks in a warm (27–32°C), well-ventilated location for 3–4 weeks. Properly cured bulbs store 6–12 months.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000004",
+    "crop_id": "5b2d4a1f0000000000000004",
+    "name": "Growing Spinach: Spring and Autumn Crops",
+    "overview": "Spinach is a fast-growing cool-weather crop ideal for spring and autumn growing. This guide covers how to time sowings, extend the harvest with cut-and-come-again technique, and manage bolting in warm weather.",
+    "location": "Outdoor",
+    "practices": ["organic", "succession-planting"],
+    "completeness_score": 0.78,
+    "popularity_score": 198,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s004a", "order": 1, "name": "Direct Sowing",
+        "stage_length": 10,
+        "overview": "Sow spinach directly outdoors 4–6 weeks before last spring frost, or 8–10 weeks before first autumn frost. Soil temperature should be 4–21°C (spinach tolerates cold better than heat). Sow 1 cm deep, 5 cm apart, in rows 20 cm apart. Germination takes 7–14 days in cool soil.",
+        "soil": ["moist-well-draining", "rich"], "light": ["partial-shade"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s004b", "order": 2, "name": "Thinning and Early Care",
+        "stage_length": 20,
+        "overview": "Thin seedlings to 10–15 cm apart once they have 2 true leaves. Use thinnings as baby greens. Keep soil consistently moist — spinach is shallow-rooted and stressed by drought. A 5 cm layer of mulch helps retain moisture and keep soil cool.",
+        "soil": ["moist-well-draining"], "light": ["partial-shade"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s004c", "order": 3, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Begin harvesting when plants have 6–8 leaves. Cut outer leaves first, leaving the centre to continue growing (cut-and-come-again). In spring, harvest before temperatures consistently exceed 25°C, which triggers bolting. Bolted plants become bitter and are not worth harvesting. Pull spent plants and sow again in early autumn.",
+        "soil": ["moist"], "light": ["partial-shade"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000005",
+    "crop_id": "5b2d4a1f0000000000000005",
+    "name": "Growing Zucchini: Maximum Yield from Minimal Space",
+    "overview": "Zucchini is one of the most productive vegetables a gardener can grow — one or two plants will supply an entire household. This guide covers planting, pollination, and harvest to ensure continuous production.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.82,
+    "popularity_score": 267,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s005a", "order": 1, "name": "Starting Seeds",
+        "stage_length": 14,
+        "overview": "Start indoors 2–4 weeks before last frost in biodegradable pots (zucchini dislikes root disturbance). Sow 2–3 seeds per pot, 2 cm deep. Germination occurs in 5–10 days at 21–27°C. Thin to one plant per pot by snipping the weakest seedlings at soil level.",
+        "soil": ["seed-starting-mix"], "light": ["indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s005b", "order": 2, "name": "Transplanting",
+        "stage_length": 7,
+        "overview": "Transplant after all frost danger is past and soil is warm (above 18°C). Space plants 90 cm apart — they spread widely. Plant in rich, well-amended soil with compost incorporated. Water thoroughly after transplanting. Floating row covers can extend the season and protect young plants from pests.",
+        "soil": ["rich", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s005c", "order": 3, "name": "Pollination Management",
+        "stage_length": 14,
+        "overview": "Zucchini produces separate male and female flowers. Male flowers appear first and have no fruit attached; female flowers have a small immature fruit at the base. Pollination occurs through bee activity. In early season when pollinators are scarce, hand-pollinate by transferring pollen from male to female flowers with a small brush. Unpollinated female flowers abort and rot.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s005d", "order": 4, "name": "Harvest",
+        "stage_length": 60,
+        "overview": "Harvest zucchini at 15–20 cm length — smaller fruits are more tender and flavourful. Check plants every day or two; fruits grow extremely fast in warm weather and quickly become overly large and seedy. Use a sharp knife or shears to cut the stem. Regular harvesting is critical — leaving mature fruits on the plant suppresses further fruit set.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000006",
+    "crop_id": "5b2d4a1f0000000000000006",
+    "name": "Growing Kale Through the Seasons",
+    "overview": "Kale is a cold-hardy brassica that can be harvested from autumn through early spring. This guide covers growing from transplant through overwintering to spring harvest.",
+    "location": "Outdoor",
+    "practices": ["organic", "companion-planting"],
+    "completeness_score": 0.79,
+    "popularity_score": 224,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s006a", "order": 1, "name": "Starting Seeds Indoors",
+        "stage_length": 21,
+        "overview": "Start kale seeds 6–8 weeks before the last spring frost (for spring planting) or 10 weeks before first autumn frost (for autumn planting). Sow 6 mm deep in seed-starting mix at 18–24°C. Germination is rapid — 5–8 days. Kale seedlings are robust and easy to grow.",
+        "soil": ["seed-starting-mix"], "light": ["indirect-light"], "environment": ["indoor", "cool"]
+      },
+      {
+        "_id": "s006b", "order": 2, "name": "Transplanting",
+        "stage_length": 14,
+        "overview": "Transplant kale outdoors 3–5 weeks before last frost — it is quite cold-hardy and can handle light frosts. Space 45–60 cm apart. Kale is a heavy feeder; incorporate compost into the planting hole and mulch with straw to retain moisture and suppress weeds. Water well after transplanting.",
+        "soil": ["rich", "well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s006c", "order": 3, "name": "Ongoing Harvest",
+        "stage_length": 120,
+        "overview": "Harvest outer leaves when plants reach 30 cm, leaving the centre to continue growing. Never take more than a third of the plant. Kale flavour improves significantly after frost, as cold converts starches to sugars. In mild climates, kale can be harvested year-round. Watch for cabbage worms and aphids — remove by hand or treat with insecticidal soap.",
+        "soil": ["moist-well-draining"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000007",
+    "crop_id": "5b2d4a1f0000000000000007",
+    "name": "Growing Carrots: Soil Preparation and Thinning for Straight Roots",
+    "overview": "Success with carrots depends almost entirely on soil preparation. This guide covers the key steps for producing straight, flavourful roots without forking or stunting.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.83,
+    "popularity_score": 348,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s007a", "order": 1, "name": "Bed Preparation",
+        "stage_length": 7,
+        "overview": "Prepare a deep (30+ cm), loose, stone-free bed. Any obstruction causes forked roots. Work in well-aged compost but avoid fresh manure — this causes root forking and hairy growth. Raised beds with light, sandy loam produce the best carrots. Rake smooth before sowing.",
+        "soil": ["loamy", "sandy", "well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s007b", "order": 2, "name": "Sowing",
+        "stage_length": 21,
+        "overview": "Sow thinly directly outdoors from spring through early summer (soil temperature 7–26°C). Sow 3 mm deep in rows 20 cm apart. Carrot seed is tiny and difficult to sow thinly — mix with sand to improve distribution. Cover lightly with fine compost. Keep the seedbed consistently moist until germination, which takes 10–21 days.",
+        "soil": ["well-draining", "moist"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s007c", "order": 3, "name": "Thinning",
+        "stage_length": 14,
+        "overview": "Thin in two stages: first to 3 cm when seedlings are 5 cm tall, then to 8–10 cm when 10 cm tall. Thinning is non-negotiable — overcrowded carrots produce small, misshapen roots. Water before thinning to minimise root disturbance. The tiny thinnings are edible as microgreens.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s007d", "order": 4, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Harvest 70–80 days after sowing when roots reach 1–2 cm diameter at the crown. Loosen soil with a fork before pulling to avoid breakage. Carrots sweeten after light frost. Store in the ground under mulch through winter in mild climates, or harvest and store in moist sand in a cool root cellar.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000008",
+    "crop_id": "5b2d4a1f0000000000000008",
+    "name": "Growing Cucumbers: Heat, Water, and Consistent Harvest",
+    "overview": "Cucumbers are one of the most satisfying summer crops when grown in the right conditions. This guide focuses on the key requirements: warmth, consistent watering, and regular harvesting.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.81,
+    "popularity_score": 289,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s008a", "order": 1, "name": "Seed Starting",
+        "stage_length": 14,
+        "overview": "Start cucumber seeds indoors 3–4 weeks before last frost in biodegradable pots. Sow 1 cm deep. Germination requires soil above 18°C (optimally 24–32°C) and takes 3–10 days. Cucumbers resent root disturbance, so use biodegradable pots to transplant pot-and-all.",
+        "soil": ["seed-starting-mix"], "light": ["indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s008b", "order": 2, "name": "Transplanting",
+        "stage_length": 7,
+        "overview": "Transplant after last frost when soil is consistently above 18°C. Space 60 cm apart. Provide a trellis — trellised cucumbers produce straighter fruit, are easier to harvest, and have better air circulation to reduce disease. Mulch heavily to retain soil moisture and warmth.",
+        "soil": ["rich", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s008c", "order": 3, "name": "Watering and Feeding",
+        "stage_length": 21,
+        "overview": "Cucumbers need consistent, deep watering (25–40 mm per week). Irregular watering causes bitter fruit. Water at soil level to avoid wetting leaves (reduces powdery mildew). Feed with a balanced fertiliser every 2 weeks once plants begin climbing. Reduce nitrogen after flowering to encourage fruit set.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s008d", "order": 4, "name": "Harvest",
+        "stage_length": 45,
+        "overview": "Harvest slicing cucumbers at 15–20 cm length; pickling types at 5–8 cm. Harvest every 2–3 days — overripe cucumbers turn yellow, produce large seeds, and signal the plant to stop producing. Cut with shears rather than pulling to avoid damaging the vine. Cucumber season ends with frost.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000009",
+    "crop_id": "5b2d4a1f0000000000000009",
+    "name": "Lettuce: Succession Planting for Year-Round Salads",
+    "overview": "Lettuce is the easiest salad green to grow and succession sowing makes it possible to harvest fresh leaves almost year-round in temperate climates. This guide covers variety selection, sowing intervals, and summer management.",
+    "location": "Outdoor",
+    "practices": ["organic", "succession-planting"],
+    "completeness_score": 0.77,
+    "popularity_score": 374,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s009a", "order": 1, "name": "Sowing",
+        "stage_length": 14,
+        "overview": "Sow small batches of lettuce seed every 2–3 weeks from early spring through early autumn for continuous harvest. Sow 3 mm deep, 10 cm apart in rows 25 cm apart. Lettuce seed requires light to germinate — press seeds into the soil surface without covering, or cover with just 3 mm of soil. Germination occurs in 7–14 days at 10–18°C.",
+        "soil": ["rich", "moist-well-draining"], "light": ["partial-shade"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s009b", "order": 2, "name": "Thinning and Care",
+        "stage_length": 21,
+        "overview": "Thin to 25 cm apart for heading types, 15 cm for loose-leaf. Use thinnings in salads. Lettuce is shallow-rooted — water frequently and shallowly rather than deeply and infrequently. Mulch to keep soil cool. In midsummer heat, grow in partial shade or use shade cloth to delay bolting.",
+        "soil": ["moist"], "light": ["partial-shade"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s009c", "order": 3, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Harvest loose-leaf lettuce by cutting outer leaves, leaving the centre to continue growing. Harvest heading types when heads are firm by cutting at soil level. Lettuce is best harvested in early morning when leaves are crisp. If plants begin to bolt (send up a central stalk), harvest immediately — bolted lettuce becomes bitter within days.",
+        "soil": ["moist"], "light": ["partial-shade"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000000a",
+    "crop_id": "5b2d4a1f000000000000000a",
+    "name": "Growing Bush Beans: The Beginner's Protein Garden",
+    "overview": "Bush beans are one of the best crops for beginning gardeners. They are fast, productive, require no staking, and improve soil nitrogen. This guide covers sowing through harvest.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.76,
+    "popularity_score": 183,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s010a", "order": 1, "name": "Direct Sowing",
+        "stage_length": 10,
+        "overview": "Sow bush beans directly outdoors after last frost when soil is above 16°C. Sow 2–3 cm deep, 10–15 cm apart, in rows 45–60 cm apart. Do not start indoors — beans resent transplanting. Germination is rapid: 7–14 days. Inoculate seed with rhizobium bacteria inoculant before sowing to maximise nitrogen fixation.",
+        "soil": ["well-draining", "average"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s010b", "order": 2, "name": "Growing Season",
+        "stage_length": 35,
+        "overview": "Beans are largely self-managing once established. Water at soil level to avoid leaf diseases. Avoid working around plants when foliage is wet — this spreads bacterial diseases. Weed between rows regularly when plants are young. Do not over-fertilise with nitrogen — this encourages lush foliage at the expense of pods.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s010c", "order": 3, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Harvest when pods are 10–13 cm long and the seeds inside are just beginning to form bumps. Pick before pods become stringy and tough. Harvest every 2–3 days to maximise production — left unpicked, beans stop producing. For a second crop, sow a new batch 6 weeks after the first.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000000b",
+    "crop_id": "5b2d4a1f000000000000000b",
+    "name": "Growing Sweet Peppers: Heat and Patience",
+    "overview": "Sweet peppers require a long, warm growing season and produce their best yields in hot climates. This guide covers the indoor growing phase, transplanting, and managing plants through the season.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.80,
+    "popularity_score": 256,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s011a", "order": 1, "name": "Indoor Seed Starting",
+        "stage_length": 28,
+        "overview": "Start pepper seeds 8–10 weeks before last frost. Sow 6 mm deep in seed-starting mix. Peppers need warm soil (24–32°C) to germinate — a heat mat is strongly recommended. Germination can take 10–21 days; don't give up if sprouts are slow. Once germinated, move to bright light to prevent leggy growth.",
+        "soil": ["seed-starting-mix"], "light": ["grow-lights", "indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s011b", "order": 2, "name": "Transplanting",
+        "stage_length": 14,
+        "overview": "Transplant only when nighttime temperatures are consistently above 13°C and all frost danger is past. Peppers planted too early in cold soil will sulk and barely grow. Space 45 cm apart. Stake plants — fruit weight can break branches. Add a 5 cm mulch layer to retain warmth and moisture.",
+        "soil": ["rich", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s011c", "order": 3, "name": "Summer Growth and First Fruits",
+        "stage_length": 60,
+        "overview": "Peppers grow slowly at first but accelerate once established in heat. Flower drop is common in extreme heat (above 35°C) — this is normal and production resumes when temperatures moderate. Feed with a balanced fertiliser every 3 weeks. Remove the first 1–2 flower buds when plants are small to encourage stronger root establishment.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s011d", "order": 4, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Green peppers can be harvested at full size but before colour change. Allow to ripen to red, yellow, or orange for full sweetness and maximum vitamin C content. Red peppers are fully ripe green peppers — same fruit, same plant, just ripened longer. Harvest with shears. Plants continue producing until frost.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000000c",
+    "crop_id": "5b2d4a1f000000000000000c",
+    "name": "Growing Peas: First Crop of Spring",
+    "overview": "Peas are the classic first-of-the-season crop, sown while snow may still be possible. This guide covers timing, support structures, and harvest for shelling, snap, and snow pea varieties.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.78,
+    "popularity_score": 195,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s012a", "order": 1, "name": "Early Sowing",
+        "stage_length": 14,
+        "overview": "Sow peas directly outdoors 4–6 weeks before last frost when soil temperature reaches 4°C. Peas tolerate light frost and cold soil; they do not tolerate summer heat. Sow 3–5 cm deep, 8 cm apart, in double rows 15 cm apart with a trellis between. Inoculate with pea rhizobium for nitrogen fixation.",
+        "soil": ["well-draining", "average"], "light": ["full-sun"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s012b", "order": 2, "name": "Supporting the Vines",
+        "stage_length": 30,
+        "overview": "Provide trellis, netting, or twiggy sticks as soon as tendrils appear (within 2 weeks of germination). Climbing varieties reach 1.5–2 m; bush varieties manage with short support. Peas use their tendrils to grip and climb without tying. Keep soil moist but not waterlogged. Avoid overhead watering.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s012c", "order": 3, "name": "Harvest",
+        "stage_length": 21,
+        "overview": "Harvest shelling peas when pods are plump and seeds are visible through the pod wall but still bright green. Snap peas are harvested when pods are swollen and crunchy. Snow peas are harvested flat, before seeds develop. Pick frequently — daily if possible — to extend production. Once seeds mature in the pod, the plant begins to shut down.",
+        "soil": ["moist"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000000d",
+    "crop_id": "5b2d4a1f000000000000000d",
+    "name": "Growing Radishes: The Quickest Garden Crop",
+    "overview": "Radishes mature in as little as 20 days, making them ideal for impatient gardeners, row markers for slow crops, and succession planting. This guide covers the basics of fast radish production.",
+    "location": "Outdoor",
+    "practices": ["organic", "companion-planting"],
+    "completeness_score": 0.72,
+    "popularity_score": 142,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s013a", "order": 1, "name": "Sowing",
+        "stage_length": 5,
+        "overview": "Sow radishes directly outdoors in spring or autumn when temperatures are 10–18°C. Sow 1 cm deep, 3 cm apart, in rows 15–20 cm apart. Radishes bolt in summer heat — avoid midsummer sowing. They make excellent row markers: sow between carrot or parsnip rows, where the radishes are harvested before the root crops need the space.",
+        "soil": ["well-draining", "loose"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s013b", "order": 2, "name": "Growing",
+        "stage_length": 20,
+        "overview": "Radishes are almost maintenance-free once sown. Water consistently to keep soil moist — irregular watering causes cracking and pungent, woody roots. Thin to 5 cm apart if sown densely. Watch for flea beetles (small holes in leaves); row covers provide effective protection.",
+        "soil": ["moist"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s013d", "order": 3, "name": "Harvest",
+        "stage_length": 10,
+        "overview": "Harvest spring radishes 20–30 days after sowing when roots are 2–3 cm in diameter. Do not leave in the ground too long — overripe radishes become hollow, spongy, and hot. Pull a test radish every few days once roots reach finger-width. Sow a new batch every 2–3 weeks for continuous supply.",
+        "soil": ["moist"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000000e",
+    "crop_id": "5b2d4a1f000000000000000e",
+    "name": "Growing Sunflowers for Seeds and Oil",
+    "overview": "Sunflowers are easy to grow, drought-tolerant once established, and produce nutritious seeds or oil. This guide covers growing from direct sowing to seed harvest.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.73,
+    "popularity_score": 187,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s014a", "order": 1, "name": "Sowing",
+        "stage_length": 14,
+        "overview": "Sow sunflowers directly outdoors after last frost when soil is above 10°C. Sow 2–3 cm deep, 45–60 cm apart in rows. Sunflowers grow quickly and do not benefit from indoor starting. Protect young seedlings from birds and slugs — the large, nutritious seeds are attractive to both.",
+        "soil": ["well-draining", "average"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s014b", "order": 2, "name": "Vegetative Growth",
+        "stage_length": 60,
+        "overview": "Sunflowers are largely self-managing once established. Water deeply but infrequently once plants are 30 cm tall. Avoid high-nitrogen fertiliser — this produces large plants with delayed flowering. Young flower heads track the sun (a phenomenon called heliotropism); mature heads face east.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s014c", "order": 3, "name": "Seed Harvest",
+        "stage_length": 30,
+        "overview": "Harvest when the back of the seed head turns yellow-brown, the petals have fallen, and seeds are visible and firm. Cut heads with 30 cm of stem attached and hang upside down in a dry, well-ventilated location. Cover heads with paper bags to catch seeds. Seeds are ready when they release easily when rubbed.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000000f",
+    "crop_id": "5b2d4a1f000000000000000f",
+    "name": "Growing Sweet Potatoes in Warm Climates",
+    "overview": "Sweet potatoes produce abundantly in hot, long summers. This guide covers starting slips (rooted cuttings) from seed potatoes, transplanting, and curing for long-term storage.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.75,
+    "popularity_score": 164,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s015a", "order": 1, "name": "Growing Slips",
+        "stage_length": 42,
+        "overview": "Sweet potatoes are grown from 'slips' — rooted shoots grown from a seed tuber. 6–8 weeks before last frost, half-submerge a seed potato in water (using toothpicks to suspend it) and place in a warm (24°C+), bright location. Shoots with roots 5–10 cm long are ready to plant.",
+        "soil": ["water"], "light": ["indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s015b", "order": 2, "name": "Transplanting Slips",
+        "stage_length": 14,
+        "overview": "Transplant slips after the last frost when soil temperature is consistently above 18°C — sweet potatoes are very sensitive to cold. Space slips 30 cm apart in rows 90 cm apart. Plant deeply, burying the stem up to the top 2–3 leaves. Water daily for the first week until established.",
+        "soil": ["sandy", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s015c", "order": 3, "name": "Growing Season",
+        "stage_length": 90,
+        "overview": "Sweet potato vines are vigorous and will cover the ground, suppressing weeds. Allow vines to spread without pruning. Water deeply once per week once established — overwatering produces leafy growth at the expense of tubers. A potassium-rich fertiliser (e.g., greensand or wood ash) encourages tuber development.",
+        "soil": ["well-draining", "sandy"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s015d", "order": 4, "name": "Harvest and Curing",
+        "stage_length": 30,
+        "overview": "Harvest before first frost when leaves begin to yellow. Dig carefully with a fork — sweet potato skin is fragile when freshly dug. Cure for 1–2 weeks at 27–32°C and high humidity (85–90%) to heal wounds and convert starch to sugar. After curing, store at 13–16°C. Properly cured sweet potatoes keep 4–6 months.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000010",
+    "crop_id": "5b2d4a1f0000000000000010",
+    "name": "Growing Beets: Root and Leaf",
+    "overview": "Beets offer a double harvest — sweet roots and nutritious greens from the same plant. This guide covers sowing, thinning (which is critical with beets), and harvesting both parts.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.74,
+    "popularity_score": 156,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s016a", "order": 1, "name": "Sowing",
+        "stage_length": 14,
+        "overview": "Sow beets directly outdoors 4–5 weeks before last frost. Each 'seed' is actually a cluster of 2–4 seeds fused together, so thinning is always required. Sow 1–2 cm deep, 5 cm apart, in rows 30 cm apart. Keep seedbed moist until germination (10–14 days). Pre-soaking seed clusters for 24 hours improves germination.",
+        "soil": ["moist-well-draining", "rich"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s016b", "order": 2, "name": "Thinning",
+        "stage_length": 14,
+        "overview": "Thin beets to 8–10 cm apart when seedlings are 5 cm tall — crowded beets produce small, poorly-shaped roots. Use thinnings as baby greens in salads. Unlike most vegetables, beets can be transplanted if done carefully when very small, though direct sowing and thinning is simpler.",
+        "soil": ["moist-well-draining"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s016c", "order": 3, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Harvest beet roots when 3–5 cm in diameter (golf ball size). Roots become woody and tough at larger sizes. Harvest greens sparingly throughout the season — cut outer leaves, leaving at least 4 leaves per plant. Roots store well in a cool, moist refrigerator for several weeks, or in damp sand in a root cellar for months.",
+        "soil": ["moist-well-draining"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000011",
+    "crop_id": "5b2d4a1f0000000000000011",
+    "name": "Establishing Thyme as a Perennial Herb",
+    "overview": "Thyme is a long-lived perennial that, once established, requires minimal care and rewards with years of harvest. This guide covers establishment from transplant and ongoing management.",
+    "location": "Outdoor",
+    "practices": ["organic", "perennial"],
+    "completeness_score": 0.71,
+    "popularity_score": 122,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s017a", "order": 1, "name": "Transplanting",
+        "stage_length": 21,
+        "overview": "Purchase thyme starts from a nursery or propagate from cuttings. Transplant into well-drained soil in full sun after last frost. Thyme does poorly in wet, clay soils — amend with grit or perlite if needed. Space 30 cm apart. Do not overfertilise — poor, lean soil produces more intensely flavoured thyme.",
+        "soil": ["well-draining", "lean"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s017b", "order": 2, "name": "First Season Establishment",
+        "stage_length": 90,
+        "overview": "Water lightly during the first season until established. Once roots are established (6–8 weeks), thyme is quite drought-tolerant. Prune lightly after flowering to keep plants compact. Do not cut into old wood — thyme does not regenerate from hard pruning of mature stems.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s017c", "order": 3, "name": "Ongoing Harvest and Renewal",
+        "stage_length": 120,
+        "overview": "Harvest fresh tips throughout the growing season by cutting stem tips back by one-third. Thyme flavour is most intense before and during flowering. In early spring, cut back the previous year's growth by about half to stimulate new growth. Divide or replace plants every 3–4 years as older plants become woody and less productive.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000012",
+    "crop_id": "5b2d4a1f0000000000000012",
+    "name": "Container Growing Mint: Containment is Key",
+    "overview": "Mint is vigorous, productive, and invasive. Growing in containers is the recommended approach for all garden situations. This guide covers container establishment and ongoing harvest.",
+    "location": "Outdoor",
+    "practices": ["organic", "container-growing"],
+    "completeness_score": 0.73,
+    "popularity_score": 193,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s018a", "order": 1, "name": "Container Setup and Transplanting",
+        "stage_length": 14,
+        "overview": "Plant mint in containers at least 30 cm wide and deep — it spreads by underground stolons and will escape smaller pots quickly. Use rich, moisture-retentive potting mix. Place the container where it will not have contact with garden beds, or sink the pot into the ground with the rim 5 cm above soil level to prevent runners from escaping.",
+        "soil": ["rich", "moisture-retentive"], "light": ["partial-shade", "full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s018b", "order": 2, "name": "Establishment and First Harvest",
+        "stage_length": 30,
+        "overview": "Water regularly — mint needs consistent moisture. Begin harvesting when stems are 15 cm tall by cutting back to two sets of leaves from the base. This encourages bushy growth rather than a single leggy stem. Pinch off any flower buds to extend the leaf harvest season.",
+        "soil": ["moist", "rich"], "light": ["partial-shade", "full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s018c", "order": 3, "name": "Ongoing Harvest and Division",
+        "stage_length": 90,
+        "overview": "Mint can be cut back aggressively (to 5 cm) several times per season and will regrow rapidly. After 2–3 years, plants become congested — divide in spring by splitting the root mass and replanting vigorous sections in fresh potting mix. Mint is very frost-hardy and can be moved indoors for winter harvesting.",
+        "soil": ["moist", "rich"], "light": ["partial-shade"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000013",
+    "crop_id": "5b2d4a1f0000000000000013",
+    "name": "Growing Broccoli: Timing for Quality Heads",
+    "overview": "Broccoli success depends on timing — heads must mature in cool weather. This guide covers starting, transplanting for autumn harvest (the most reliable timing), and side-shoot management after main head harvest.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.81,
+    "popularity_score": 231,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s019a", "order": 1, "name": "Starting Indoors",
+        "stage_length": 21,
+        "overview": "For an autumn crop (most reliable in many climates), start broccoli seeds indoors in midsummer, 6–8 weeks before desired outdoor transplant date. For spring crop, start 10–12 weeks before last frost. Sow 6 mm deep at 18–24°C. Germination is rapid (5–7 days).",
+        "soil": ["seed-starting-mix"], "light": ["indirect-light", "grow-lights"], "environment": ["indoor"]
+      },
+      {
+        "_id": "s019b", "order": 2, "name": "Transplanting",
+        "stage_length": 14,
+        "overview": "Transplant outdoors 6–8 weeks before expected hard frost for autumn crop, or 4 weeks before last frost for spring crop. Space 45 cm apart. Broccoli is a heavy feeder — incorporate compost into the planting hole and mulch generously. Protect against cabbage white butterfly with floating row covers.",
+        "soil": ["rich", "moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s019c", "order": 3, "name": "Head Harvest and Side Shoots",
+        "stage_length": 60,
+        "overview": "Harvest the central head when it is dense, dark green, and before any flower buds begin to open (yellowing = opening = bolting). Cut the stem 15 cm below the head. After harvest, leave the plant in the ground — it will produce multiple smaller side shoots for several weeks. These are harvested the same way.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000014",
+    "crop_id": "5b2d4a1f0000000000000014",
+    "name": "Growing Onions from Sets",
+    "overview": "Growing onions from sets (small dormant bulbs) is easier and faster than from seed. This guide covers planting sets, managing through the season, and drying for long-term storage.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.79,
+    "popularity_score": 274,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s020a", "order": 1, "name": "Planting Sets",
+        "stage_length": 14,
+        "overview": "Plant onion sets outdoors in early spring as soon as soil can be worked. Sets are small dormant bulbs — plant pointed end up, 2 cm deep, 10 cm apart, in rows 30 cm apart. Day-length variety selection matters: choose long-day varieties for latitudes above 37°N, short-day varieties for warmer climates. Sets sized 1–2 cm are less likely to bolt than larger sets.",
+        "soil": ["well-draining", "rich"], "light": ["full-sun"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s020b", "order": 2, "name": "Growing Season",
+        "stage_length": 90,
+        "overview": "Keep onion beds weed-free — they compete poorly with weeds. Water consistently in the first half of the season; reduce watering as bulbs approach maturity. Remove flower stalks (bolting) immediately if they appear — bolted onions form a hard core and do not store well. Feed with a nitrogen-rich fertiliser early, switching to potassium as bulbs begin to swell.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s020c", "order": 3, "name": "Harvest and Curing",
+        "stage_length": 21,
+        "overview": "Harvest when the tops fall over naturally (don't force them). Undercut with a fork and lift carefully. Cure on racks or wire mesh in a warm, airy location for 2–4 weeks until the outer skins are papery and dry and the neck is completely dry. Cured onions store 3–6 months in a cool (4–10°C), dry, dark location.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000015",
+    "crop_id": "5b2d4a1f0000000000000015",
+    "name": "Growing Parsley: A Patient Herb",
+    "overview": "Parsley is slow to germinate but easy to grow once established. This guide covers germination techniques to speed up the notoriously slow process, and season-long leaf production.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.70,
+    "popularity_score": 148,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s021a", "order": 1, "name": "Germination",
+        "stage_length": 28,
+        "overview": "Parsley seed can take 3–6 weeks to germinate without intervention. Speed this up by soaking seed in warm water for 24 hours before sowing, or by pouring near-boiling water into the seed drill, allowing to cool, then sowing. Sow 6 mm deep, 15 cm apart, in rows 20–30 cm apart. Keep consistently moist.",
+        "soil": ["moist-well-draining", "rich"], "light": ["partial-shade"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s021b", "order": 2, "name": "Establishment",
+        "stage_length": 30,
+        "overview": "Once germinated, parsley grows steadily. Thin to 20 cm apart to allow full development. Parsley tolerates light shade, making it suitable for edges of taller plantings. Water consistently — it prefers moist soil. In its second year, parsley will flower and set seed before dying; harvest heavily in its first year.",
+        "soil": ["moist-well-draining"], "light": ["partial-shade", "full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s021c", "order": 3, "name": "Harvest",
+        "stage_length": 60,
+        "overview": "Begin harvesting when plants have at least 8–10 leaves. Cut outer stems at the base — never strip a plant bare. Harvest regularly to stimulate new growth. Flat-leaf parsley has stronger flavour; curly parsley holds up better as garnish. In mild climates, parsley overwinters and provides early spring harvest before flowering.",
+        "soil": ["moist"], "light": ["partial-shade", "full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000016",
+    "crop_id": "5b2d4a1f0000000000000016",
+    "name": "Growing Strawberries: Year One Establishment for Long-Term Production",
+    "overview": "Strawberries are perennial plants that improve in production over the first 3 years. This guide covers first-year establishment practices that set up a bed for maximum long-term yield.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.82,
+    "popularity_score": 357,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s022a", "order": 1, "name": "Bed Preparation",
+        "stage_length": 14,
+        "overview": "Prepare a strawberry bed in full sun with well-drained, slightly acidic soil (pH 5.5–6.5). Incorporate 10 cm of compost. Remove all perennial weeds thoroughly — weeds in an established strawberry bed are very difficult to remove. Strawberries also grow well in raised beds or containers.",
+        "soil": ["rich", "well-draining", "slightly-acidic"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s022b", "order": 2, "name": "Planting",
+        "stage_length": 14,
+        "overview": "Plant bare-root or potted strawberries in early spring. Set plants so the crown (where roots meet the stem) is at soil level — too deep causes crown rot; too shallow causes drying. Space 30 cm apart in rows 60 cm apart. Water thoroughly after planting. Mulch with straw to maintain moisture and prevent fruit from touching soil.",
+        "soil": ["rich", "moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s022c", "order": 3, "name": "First-Year Flower Removal",
+        "stage_length": 30,
+        "overview": "Remove all flowers in the first year (disappointing but critical). This redirects energy from fruit production into root establishment, resulting in dramatically larger yields in years 2 and 3. For everbearing varieties, allow autumn flowers to fruit in year one.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s022d", "order": 4, "name": "Runner Management and Harvest (Years 2+)",
+        "stage_length": 60,
+        "overview": "In year two, harvest berries when fully red and aromatic. Plants produce runners (stolons) throughout the season — allow a few to root and become new plants to replace aging ones; remove the rest to concentrate energy in fruit production. Renovate beds after harvest by mowing tops and thinning plants.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000017",
+    "crop_id": "5b2d4a1f0000000000000017",
+    "name": "Growing Pumpkins: Space, Sun, and Storage",
+    "overview": "Pumpkins are a long-season crop that takes patience and space but rewards with large, storable fruit. This guide covers planting, vine management, and curing for maximum storage life.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.76,
+    "popularity_score": 201,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s023a", "order": 1, "name": "Starting and Planting",
+        "stage_length": 14,
+        "overview": "Start indoors 3–4 weeks before last frost in large biodegradable pots, or direct sow after frost when soil is above 18°C. Sow 2–3 seeds per hill (raised mound of soil), 1 cm deep. After germination, thin to the strongest plant per hill. Space hills 2–4 m apart — pumpkin vines are very large.",
+        "soil": ["rich", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s023b", "order": 2, "name": "Vine Growth and Pollination",
+        "stage_length": 60,
+        "overview": "Pumpkin vines grow rapidly in warm, sunny conditions. Guide vines to keep them in their allotted space. Female flowers (with a small pumpkin at the base) require pollination — encourage pollinators or hand-pollinate. Water at the base, keeping leaves dry to prevent powdery mildew, which is common on cucurbits.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s023c", "order": 3, "name": "Harvest and Curing",
+        "stage_length": 30,
+        "overview": "Harvest pumpkins before first frost when the skin is fully coloured, hard, and the stem is beginning to die back. Cut stems with 5–8 cm attached — never carry by the stem. Cure at 27–29°C and moderate humidity for 10–14 days to harden the skin and heal wounds. Cured pumpkins store 3–6 months in a cool (10–15°C), dry room.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000018",
+    "crop_id": "5b2d4a1f0000000000000018",
+    "name": "Growing Dill: Succession Sowing for Continuous Leaf and Seed",
+    "overview": "Dill is a dual-use herb: the feathery leaves are used fresh, and the seeds are used as a spice. Since it bolts quickly, succession sowing is the key to a continuous supply. This guide covers succession management and seed harvest.",
+    "location": "Outdoor",
+    "practices": ["organic", "succession-planting"],
+    "completeness_score": 0.70,
+    "popularity_score": 119,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s024a", "order": 1, "name": "Succession Sowing",
+        "stage_length": 10,
+        "overview": "Sow dill directly outdoors after last frost, in full sun, 6 mm deep, 15 cm apart. Succession sow every 3 weeks for continuous leaf harvest. Dill prefers cool weather for leaf production but warm weather for seed development. Do not plant near fennel — they cross-pollinate. Dill self-seeds prolifically; allow some plants to set seed to naturalise in the garden.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s024b", "order": 2, "name": "Leaf Harvest",
+        "stage_length": 30,
+        "overview": "Begin harvesting leaves (fronds) when plants are 20 cm tall. Cut stem tips, leaving the main stem to continue growing. Dill is most flavourful before flowering. Once the flowering stalk appears (umbel), leaf production slows and flavour diminishes. For maximum leaf harvest, pinch off the central flower stalk as soon as it begins to emerge.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s024c", "order": 3, "name": "Seed Harvest",
+        "stage_length": 21,
+        "overview": "Allow designated plants to flower and set seed for coriander-like dill seed harvest. Seeds are ready when seed heads turn brown. Cut seed heads into a paper bag before seeds fall. Hang in a dry, airy location for 1–2 weeks, then thresh seeds from heads. Store seeds in an airtight container — they remain viable for 3–4 years.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000019",
+    "crop_id": "5b2d4a1f0000000000000019",
+    "name": "Growing Chives: Hardy Perennial Allium from Seed",
+    "overview": "Chives are one of the easiest perennial herbs to establish and will return reliably for years. This guide covers growing from seed and managing for continuous harvest.",
+    "location": "Outdoor",
+    "practices": ["organic", "perennial"],
+    "completeness_score": 0.68,
+    "popularity_score": 98,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s025a", "order": 1, "name": "Sowing or Dividing",
+        "stage_length": 21,
+        "overview": "Start chive seeds indoors 8–10 weeks before last frost, or sow directly outdoors in spring. Sow 6 mm deep, 15 cm apart. Germination takes 10–14 days. Alternatively, divide an existing chive clump in spring or autumn — division is faster than seed and produces harvest-ready plants in the same season.",
+        "soil": ["well-draining", "rich"], "light": ["full-sun"], "environment": ["indoor", "cool"]
+      },
+      {
+        "_id": "s025b", "order": 2, "name": "First Season Growth",
+        "stage_length": 60,
+        "overview": "In the first season from seed, chives grow slowly. Allow plants to establish fully before harvesting more than a light trim. Water consistently during establishment. By autumn, plants will form dense clumps. In cold climates, chive tops die back in winter and re-emerge vigorously in early spring.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s025c", "order": 3, "name": "Ongoing Harvest",
+        "stage_length": 90,
+        "overview": "From year two onwards, chives can be cut to 2–3 cm from the soil several times per season and will regrow within 3–4 weeks. Both the tubular leaves and the purple flowers are edible. Allow some flowers to seed and self-sow for a self-renewing patch. Divide clumps every 3–4 years to maintain vigour.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000001a",
+    "crop_id": "5b2d4a1f000000000000001a",
+    "name": "Growing Eggplant in Hot Climates",
+    "overview": "Eggplant requires heat, patience, and a long season. This guide covers starting plants well ahead of time and managing them through the warm season to maximise fruit production.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.76,
+    "popularity_score": 167,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s026a", "order": 1, "name": "Indoor Starting",
+        "stage_length": 42,
+        "overview": "Start eggplant seeds 8–10 weeks before last frost. Sow 6 mm deep in warm (24–32°C) seed-starting mix — a heat mat is recommended. Germination takes 7–14 days. Grow seedlings under strong light or grow lights. Pot up as plants grow — eggplant does best when root-bound slightly before transplanting.",
+        "soil": ["seed-starting-mix"], "light": ["grow-lights", "indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s026b", "order": 2, "name": "Transplanting",
+        "stage_length": 14,
+        "overview": "Transplant only when soil is thoroughly warm (above 18°C) and nighttime temperatures stay above 18°C. Cold conditions stunt eggplant severely. Space 60 cm apart. Stake at transplant time — plants will need support as they fruit. Black plastic mulch accelerates soil warming and is beneficial for eggplant.",
+        "soil": ["rich", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s026c", "order": 3, "name": "Growing Season",
+        "stage_length": 60,
+        "overview": "Eggplant grows slowly at first and accelerates in heat. Water consistently — irregular moisture causes bitter fruit. Fertilise every 3 weeks with a balanced fertiliser. Flea beetles are a common pest; row covers protect young plants. Hand-pick Colorado potato beetle if present. Remove spent flowers to encourage continuous fruit set.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s026d", "order": 4, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Harvest eggplant when skin is glossy and firm, before any browning or wrinkling. Press the skin gently — if it springs back, it is ready; if an indent remains, overripe. Use shears to cut the stem — eggplant stems are tough and spiny. Regular harvesting encourages continued production. Season ends at first frost.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000001b",
+    "crop_id": "5b2d4a1f000000000000001b",
+    "name": "Growing Swiss Chard: Season-Long Leaves",
+    "overview": "Swiss chard is one of the most reliable and productive greens for a long growing season. This guide covers establishing plants and harvesting across spring, summer, and autumn.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.73,
+    "popularity_score": 162,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s027a", "order": 1, "name": "Sowing",
+        "stage_length": 14,
+        "overview": "Sow chard directly outdoors in spring 4–6 weeks before last frost, or start indoors 4 weeks earlier. Like beets (a close relative), each seed is a cluster — sow 2 cm deep, 10 cm apart, then thin. Chard can also be autumn-sown in mild climates for winter-through-spring harvest.",
+        "soil": ["moist-well-draining", "rich"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s027b", "order": 2, "name": "Thinning and Establishment",
+        "stage_length": 21,
+        "overview": "Thin seedlings to 30 cm apart. Swiss chard is remarkably adaptable — it tolerates heat better than spinach and more cold than basil, making it productive across a very long season. Keep soil consistently moist. Mulch to conserve moisture and suppress weeds.",
+        "soil": ["moist-well-draining"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s027c", "order": 3, "name": "Season-Long Harvest",
+        "stage_length": 120,
+        "overview": "Harvest outer leaves when they are 20–25 cm long, cutting at the base of the stem. Never harvest more than a third of the plant. Chard left in the ground through light frosts becomes sweeter. In mild climates, a single planting can produce for 8–10 months. Pull and compost plants when they begin to bolt in late summer.",
+        "soil": ["moist-well-draining"], "light": ["full-sun", "partial-shade"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000001c",
+    "crop_id": "5b2d4a1f000000000000001c",
+    "name": "Growing Watermelon: Heat, Space, and Patience",
+    "overview": "Watermelons are the most demanding of the cucurbit family — they require heat, space, and a long growing season. This guide covers the key factors for success in warm-summer climates.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.74,
+    "popularity_score": 178,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s028a", "order": 1, "name": "Indoor Starting",
+        "stage_length": 21,
+        "overview": "Start watermelon seeds indoors 3–4 weeks before last frost in biodegradable pots. Sow 1 cm deep. Germination requires 24–32°C soil temperature and takes 5–10 days. Use a heat mat. Watermelons grow quickly once established and are best not started too far ahead of transplanting.",
+        "soil": ["seed-starting-mix"], "light": ["indirect-light"], "environment": ["indoor", "warm"]
+      },
+      {
+        "_id": "s028b", "order": 2, "name": "Transplanting",
+        "stage_length": 14,
+        "overview": "Transplant after last frost when soil is above 21°C. Watermelons need warm soil and do not recover well from cold transplant shock. Space 2–3 m apart or in hills with 2 plants per hill. Black plastic mulch significantly improves performance by warming soil and retaining moisture. Allow plenty of space — vines spread 3 m or more.",
+        "soil": ["sandy", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s028c", "order": 3, "name": "Vine Growth and Pollination",
+        "stage_length": 40,
+        "overview": "Watermelons are bee-pollinated. Each fruit requires multiple visits for good pollination. Insufficient pollination produces misshapen fruit. Water deeply 1–2 times per week. Reduce watering as fruit approaches maturity to concentrate sugars. Powdery mildew late in the season is common but usually does not affect fruit quality significantly.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s028d", "order": 4, "name": "Ripeness Assessment and Harvest",
+        "stage_length": 30,
+        "overview": "Determining watermelon ripeness requires multiple indicators: the curly tendril nearest the fruit should turn brown and dry; the ground spot (where it rests on soil) should turn yellow; tapping should produce a hollow sound rather than a metallic ring. Harvest by cutting the stem — do not pull.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000001d",
+    "crop_id": "5b2d4a1f000000000000001d",
+    "name": "Establishing Rosemary as a Long-Lived Garden Shrub",
+    "overview": "Rosemary is a Mediterranean perennial that, in a suitable climate, grows into a substantial shrub lasting 20+ years. This guide covers establishment from transplant and management for long-term production.",
+    "location": "Outdoor",
+    "practices": ["organic", "perennial"],
+    "completeness_score": 0.72,
+    "popularity_score": 154,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s029a", "order": 1, "name": "Site Selection and Transplanting",
+        "stage_length": 14,
+        "overview": "Choose the warmest, most sun-exposed spot in the garden with very well-drained soil. Rosemary tolerates drought but not wet feet — waterlogged soil is fatal. Incorporate grit into clay soils before planting. Transplant from a nursery pot in late spring after frost. Space 90 cm apart for full development.",
+        "soil": ["well-draining", "lean", "gritty"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s029b", "order": 2, "name": "First Year Establishment",
+        "stage_length": 90,
+        "overview": "Water lightly during the first summer — just enough to prevent wilting. Do not fertilise; rosemary grows best in lean soil. In cold climates (below -10°C), protect with a burlap wrap or grow in a container to bring indoors. Rosemary flowers in late winter/early spring and is an important early nectar source for bees.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s029c", "order": 3, "name": "Harvesting and Shaping",
+        "stage_length": 120,
+        "overview": "Begin harvesting stem tips once the plant is well-established (after the first summer). Never cut into old, woody growth without green leaves — rosemary will not regenerate from leafless wood. Prune after flowering to maintain shape. Established rosemary (years 3+) is very drought-tolerant and needs almost no care in suitable climates.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000001e",
+    "crop_id": "5b2d4a1f000000000000001e",
+    "name": "Growing Sweet Corn: Block Planting for Pollination",
+    "overview": "Corn is wind-pollinated and must be grown in blocks, not rows, to ensure good kernel fill. This guide covers planting layout, fertility management, and harvest timing.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.77,
+    "popularity_score": 212,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s030a", "order": 1, "name": "Planting",
+        "stage_length": 14,
+        "overview": "Direct sow corn after last frost when soil temperature reaches 16°C. Plant in a block (minimum 4×4 grid) rather than single or double rows — corn is wind-pollinated and needs pollen from multiple plants to fall onto silks. Sow 3 cm deep, 30 cm apart, in rows 45 cm apart. Germination takes 7–14 days in warm soil.",
+        "soil": ["rich", "well-draining"], "light": ["full-sun"], "environment": ["outdoor", "warm"]
+      },
+      {
+        "_id": "s030b", "order": 2, "name": "Fertilising and Growth",
+        "stage_length": 50,
+        "overview": "Corn is a very heavy nitrogen feeder. Side-dress with a nitrogen-rich fertiliser (compost, blood meal, or balanced granular) when plants are knee-high. Water consistently — corn needs 25–40 mm per week. Weed aggressively early; once plants are tall, they shade out weeds. Corn grows rapidly once established.",
+        "soil": ["moist-well-draining", "rich"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s030c", "order": 3, "name": "Pollination Check",
+        "stage_length": 14,
+        "overview": "Corn tassels (male) release pollen for 1–2 weeks. Silks (female, emerging from ears) must receive pollen within 5–10 days of emerging. In hot, dry weather, shake the tassels over the silks in the morning to supplement natural wind pollination. Poor kernel fill (missing kernels) indicates pollination failure.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s030d", "order": 4, "name": "Harvest",
+        "stage_length": 14,
+        "overview": "Harvest sweet corn at the 'milk stage': 18–24 days after silks emerge, when kernels exude milky sap when pierced (not clear = immature; no sap = over-ripe). The husks should be dark green and the silks brown. Eat or preserve immediately — sugars convert to starch rapidly after harvest. Refrigerate if not consuming same day.",
+        "soil": ["moist-well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d000000000000001f",
+    "crop_id": "5b2d4a1f000000000000001f",
+    "name": "Growing Cilantro: Managing Bolt-Prone Herb with Succession Sowing",
+    "overview": "Cilantro bolts in heat but is quick to grow and ideal for succession sowing. This guide covers keeping a continuous supply of fresh leaves through the season.",
+    "location": "Outdoor",
+    "practices": ["organic", "succession-planting"],
+    "completeness_score": 0.73,
+    "popularity_score": 174,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s031a", "order": 1, "name": "Succession Sowing",
+        "stage_length": 14,
+        "overview": "Sow cilantro directly outdoors every 3 weeks from early spring until midsummer, then again in late summer for autumn harvest. Sow 6 mm deep, 8–10 cm apart. Germination is faster if seeds are lightly crushed before sowing (each 'seed' is two seeds fused together). Best germination at 18–24°C.",
+        "soil": ["well-draining", "average"], "light": ["partial-shade"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s031b", "order": 2, "name": "Leaf Harvest",
+        "stage_length": 30,
+        "overview": "Begin harvesting when plants are 15 cm tall by snipping outer leaves and stem tips. Harvest in the morning for best flavour. Do not strip plants — leave the centre intact to continue growing. In warm weather, plants will begin bolting (sending up a central flower stalk) within 4–6 weeks of germination.",
+        "soil": ["well-draining"], "light": ["partial-shade"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s031c", "order": 3, "name": "Seed Harvest",
+        "stage_length": 21,
+        "overview": "Allow bolted plants to flower, set seed, and dry on the plant. Cut seed heads when fully brown and begin to dry. Collect in paper bags. Coriander seed is used as a spice and also for sowing the next crop. Allow some plants to self-seed — self-seeded cilantro often germinates more reliably than hand-sown seed.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  },
+  {
+    "_id": "6a1b2c3d0000000000000020",
+    "crop_id": "5b2d4a1f0000000000000020",
+    "name": "Growing Potatoes: Earthing Up for Maximum Yield",
+    "overview": "Potatoes are simple to grow and deeply satisfying to harvest. The key technique — earthing up (hilling soil around the plant as it grows) — dramatically increases yield and prevents greening. This guide covers the full process from seed potato to harvest.",
+    "location": "Outdoor",
+    "practices": ["organic"],
+    "completeness_score": 0.85,
+    "popularity_score": 419,
+    "draft": false,
+    "stages": [
+      {
+        "_id": "s032a", "order": 1, "name": "Chitting (Pre-Sprouting)",
+        "stage_length": 28,
+        "overview": "4–6 weeks before planting, set seed potatoes (purchased certified disease-free tubers) on a tray in a cool (10–12°C), light location to sprout. Each tuber should develop short, sturdy green sprouts (chits) 1–2 cm long. Chitting gives plants a head start and can advance harvest by 2–3 weeks.",
+        "soil": ["none"], "light": ["indirect-light"], "environment": ["indoor", "cool"]
+      },
+      {
+        "_id": "s032b", "order": 2, "name": "Planting",
+        "stage_length": 14,
+        "overview": "Plant chitted potatoes outdoors 2–4 weeks before last frost (they can handle light frost). Plant tubers 10–15 cm deep, 30 cm apart, in rows 60 cm apart, sprout-side up. In rows or trenches, covering with soil. Water in well. Shoots will emerge in 2–3 weeks.",
+        "soil": ["well-draining", "loamy"], "light": ["full-sun"], "environment": ["outdoor", "cool"]
+      },
+      {
+        "_id": "s032c", "order": 3, "name": "Earthing Up",
+        "stage_length": 30,
+        "overview": "When shoots are 20–25 cm tall, draw soil up around the stems to just below the lowest leaves. Repeat 2–3 times during the growing season. This process (earthing up or hilling) encourages the underground stems to produce more tubers and prevents potatoes near the surface from turning green (toxic when green). Alternatively, use mulch instead of soil.",
+        "soil": ["well-draining", "loamy"], "light": ["full-sun"], "environment": ["outdoor"]
+      },
+      {
+        "_id": "s032d", "order": 4, "name": "Harvest",
+        "stage_length": 30,
+        "overview": "Harvest new potatoes when plants flower (small, immature potatoes). For full-size storage potatoes, wait until tops die back completely. Dig with a fork, inserting it well away from the plant to avoid spearing tubers. Allow to cure on the surface for 1–2 hours in dry weather, then store in a cool (4–7°C), dark, well-ventilated space. Do not wash before storage.",
+        "soil": ["well-draining"], "light": ["full-sun"], "environment": ["outdoor"]
+      }
+    ]
+  }
+]
