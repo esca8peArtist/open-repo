@@ -4,21 +4,38 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-13 (Session 104)
+> **Last updated by**: orchestrator on 2026-04-25 (INBOX processing)
+
+---
+
+## Usage Budget
+
+> The orchestrator checks this at the start of every session via `scripts/usage-check.py`.
+> Adjust the numbers below to change throttling behaviour.
+> To check current usage manually: **claude.ai → Settings → Usage & billing**
+
+- **Weekly session budget: 20**  ← change this number to raise/lower the weekly cap
+- **Daily session budget: 5**    ← change this number to raise/lower the daily cap
+
+**Throttle rules (orchestrator must follow these):**
+1. Run `python3 scripts/usage-check.py --check` at the start of each session.
+2. If exit code is 1 (over budget): log "Usage budget exceeded — idling." in WORKLOG.md, update CHECKIN.md usage line, and stop without doing any project work.
+3. If exit code is 0 but warning (75%+ of weekly budget used): complete one task then idle — do not chain sessions.
+4. Always update the usage line in CHECKIN.md using `python3 scripts/usage-check.py --checkin` before going idle.
 
 ---
 
 ## Priority Order
-1. stockbot
-2. mfg-farm
-3. resistance-research
-4. open-source-rideshare
+1. resistance-research
+2. stockbot
+3. cybersecurity-hardening
+4. mfg-farm
 5. seedwarden
 6. open-repo
 7. off-grid-living
-8. containerized-agents
-9. workout
-10. resume
+8. workout
+9. resume
+10. open-source-rideshare (Paused)
 
 ---
 
@@ -27,11 +44,11 @@
 ### mfg-farm
 **Goal**: Build a fully automated manufacturing business centered on 3D printing, with a path to a full print farm. Sell products on Etsy, Amazon, and similar platforms. Develop a complete business plan: product selection driven by market demand and unique value proposition, pricing strategy, fulfillment workflow, and a scaling roadmap from single printer to multi-printer farm with multiple colors and material capabilities. Explore adjacent manufacturing (laser cutting, CNC, resin printing) and integrate where demand justifies it. The north star is maximizing income — product and machine decisions should be driven by data: what sells, what margins look like, and where automation creates the highest leverage.
 **Priority**: High
-**Status**: Active — planning phase
+**Status**: Active — ready to prototype
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/mfg-farm/`
-**Current focus**: Session 105: Project just created. First tasks: (1) market research — identify high-demand, high-margin 3D print product categories on Etsy/Amazon; (2) competitive analysis — pricing, volume, differentiation; (3) full business plan draft — product catalog, pricing, fulfillment, scaling roadmap, machine investment timeline; (4) identify which products require what capabilities (FDM colors, resin, laser cutting) to sequence machine investments correctly.
-**Blocked on**: —
+**Current focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis were already complete (`market-research.md`). Etsy and Amazon listing copy already complete (`etsy-listing-modrun.md`). **Lead product: ModRun cable management system** — original design, Etsy-compliant, 65–72% net margins. **BLOCKING GATE: test print required.** User needs to: (1) run `pip install cadquery` in mfg-farm env or system Python, (2) run `python modrun_clip.py --output-dir ./stl/` and `python modrun_rail.py --output-dir ./stl/` to generate STL files, (3) test print and tune tolerance parameters, (4) photograph finished set, (5) list on Etsy. All copy, pricing, tags, photo brief are ready in `etsy-listing-modrun.md`.
+**Blocked on**: Test print (user action required — see focus above)
 **Notes**: Automation is the core constraint — products and workflows must be designed for minimal human touchpoints per unit. Physical products mean real fulfillment costs (packaging, shipping, storage) — factor these in from the start. Etsy and Amazon have different fee structures and audiences; may want both. Scaling from 1→N printers requires thinking about file management, queue management, quality control, and packaging throughput — not just the printers themselves.
 
 ---
@@ -42,9 +59,21 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 104: Domain 9 (Federalism & Local Democracy) deepened — 340 lines covering Shelby County legal mechanism + state-by-state polling place closures, Birmingham minimum wage preemption full litigation arc, NELP/EPI wage-loss data (346K workers, $1.5B/year), Illinois 6,963-unit fragmentation costs, interstate compact anatomy (Nurse Licensure success vs. MTC failure, NPVIC at 209 electoral votes, Colorado River overallocation), Swiss Finanzausgleich + German Länderfinanzausgleich, Spain asymmetric federalism 1978–2010, Canada § 33 usage history. **Domain-deepening library**: 20 of 22 deepened. Remaining 2: Domain 5 (Fiscal Reform/Tax Policy), Domain 17/19 (Foreign Policy/National Security). **Next**: Deepen Domain 5 or Domain 19. Monitoring pass when user provides April 17/20+ updates (INBOX.md).
+**Current focus**: Session 384: **May Day 2026 Action Guide COMPLETE** (`mayday-2026-action-guide.md`, 669 lines) — comprehensive participant guide covering historical context, coalition/demands, graded participation ladder, legal rights and employment risks, outcomes framework, and post-May-Day organizing path. **Next mandatory passes**: April 28 (Xinis hearing — results brief → `monitoring/2026-04-28-results.md`), April 29 (May Day Mass Call), May 1 (May Day actions).
 **Blocked on**: —
 **Notes**: Ongoing research and monitoring project. Existing files cover ICE detention, litigation tracking, case studies, civic action. When no specific task is queued, extend existing threads, find new angles, and monitor developments. Democratic renewal proposal is comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
+
+---
+
+### cybersecurity-hardening
+**Goal**: Build a comprehensive, actionable guide to protecting communications and identity against government-level mass surveillance. Understand what Palantir and similar data brokers/intelligence platforms actually have access to — what data they ingest, how they link identities, and what their current government contracts cover. From that threat model, identify the best practical techniques for private and anonymous communication: encrypted messaging, metadata minimization, network anonymization (Tor/VPN tradeoffs), device hardening, operational security (OpSec), and identity compartmentalization. The output should be a personal OpSec playbook grounded in real threat modeling — not theoretical, but calibrated to the actual capabilities of the adversary.
+**Priority**: High
+**Status**: Active — research phase
+**Visibility**: Private — local only, no GitHub push
+**Working dir**: `projects/cybersecurity-hardening/`
+**Current focus**: **Starting fresh.** First task: research Palantir's government contracts and data access (Gotham, Foundry, AIP programs) — what data sources they ingest, what surveillance capabilities they provide to DHS/ICE/FBI/CBP. Then build a threat model. Then map available defensive tools to that threat model. Output: `threat-model.md` + `opsec-playbook.md`.
+**Blocked on**: —
+**Notes**: Threat model first — the right defenses depend on who the adversary is and what they can actually see. Palantir is the primary research anchor, but also cover NSA PRISM/XKeyScore legacy capabilities, FISA court access, third-party data broker aggregation, and law enforcement subpoenas to tech companies. Practical over theoretical: real apps, real configurations, real tradeoffs between security and usability.
 
 ---
 
@@ -54,7 +83,7 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading LIVE. 3 sessions running: momentum (SPY/QQQ/MSFT), rsi_mean_reversion (AAPL/NVDA), sma_crossover (AMZN/SPY). First market open was April 14. Monitor via `http://127.0.0.1:8000` Trading page or `curl -H "Authorization: Bearer $STOCKBOT_API_KEY" http://127.0.0.1:8000/api/paper-trading/cycle-log?limit=20`. Orchestrator cannot pull cycle logs without API key in env. iOS app deferred until paper trading stable. **Next**: User needs to share cycle logs or Trading page screenshot — then orchestrator can assess model performance and suggest improvements.
+**Current focus**: Session 362: **Ensemble Return Stacker COMPLETE** (commits `2c13e77`, `cd708f5`). EnsembleStackerModel class (Ridge + LightGBM meta-learners, 5-day + 10-day horizons, walk-forward + held-out CV). 4 endpoints: `POST /api/ensemble-stacker/train`, `GET /api/ensemble-stacker/list`, `GET /api/ensemble-stacker/{id}`, `DELETE /api/ensemble-stacker/{id}`. Projected returns endpoint updated for regressor models (raw_return_pct field, is_regressor flag, volatility-adaptive threshold). 10+ AAPL stackers trained in `models/ensemble_stackers/`. Frontend: stacker creation form wired in ModelBuilderPage, projected returns displays actual return % for regressors. **DEPLOY_READY created** — Jetson deploy triggered. **Next**: Monitor stacker performance in paper trading.
 **Blocked on**: —
 **Notes**: Web app is in good shape. Model creation and most optimisation is operational. Paper trading has just started but has had issues — this is the current priority. iOS app is out of scope until paper trading is solid. All features must work across ALL model types (stock, options, rule-based, ensemble, MTF) — do not implement something for one type only.
 
@@ -62,11 +91,11 @@
 
 ### open-source-rideshare
 **Goal**: Build a free, open-source alternative to Uber and Lyft that stops price-gouging both riders and drivers. The platform should be a web and mobile app that minimises deployment and maintenance costs, ideally using a model where the platform itself is non-profit or cooperative — the margin extracted by Uber/Lyft goes back to drivers and riders instead. Solve the real problems: regulatory compliance in different jurisdictions, driver and rider safety and security, insurance, payment processing, and trust. Also build a plan for bootstrapping the user and driver base — a rideshare app with no users is worthless, so growth strategy is part of the scope.
-**Priority**: Medium
-**Status**: Active — early stage
+**Priority**: Low
+**Status**: Paused — resume when user unpauses
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-source-rideshare/`
-**Current focus**: Backend comprehensive — 2,769 tests passing. Features include: matching engine, WebSocket, payments (Stripe, cancellation fees), pricing (demand-aware, time-of-day), geocoding, auth, admin API, Alembic migrations, ride history, profile endpoints, safety service (SOS, trip sharing, emergency contacts), admin SOS monitoring, cancellation policy, notification service (Twilio SMS + SendGrid email + Firebase FCM push), driver rating aggregation, rate limiting, admin SOS WebSocket, scheduled rides, dispatch scheduler + retry logic, admin cancellation stats, driver earnings, promo codes & referral system, ride receipts, service areas/geofencing, admin feedback & disputes, ride & driver metrics dashboard, ride pooling/shared rides, vehicle management & WAV matching, in-app chat, transparent demand pricing, driver ETA estimation, saved locations, admin document verification, recurring rides/commute scheduling, multi-stop rides/waypoints, fare splitting, driver payout & settlement (Stripe Connect), SMS/email notification integration, audit logging & compliance reporting, background check integration (Checkr API), device token management (FCM), driver incentive/bonus programs (quest, peak-hours, streak, earnings guarantee), rider rating system (drivers rating riders, low-rated flag, admin monitoring), per-user push notification preferences (opt-in/out by type + channel, SOS bypass, full CRUD API), driver availability and scheduling (weekly schedule slots, online/offline toggle, heartbeat, admin monitoring), driver availability dispatch integration (MatchingEngine filters online+heartbeat+schedule-window drivers), driver insurance document management (status machine; 45 tests), driver vehicle inspection records (5 types; auto-expiry; 69 tests), driver license + vehicle registration document management (expiry tracking + alerts; 71 tests), driver onboarding status and activation workflow (checklist aggregates BGC+license+registration+inspection+insurance+profile; activate/suspend; 49 tests), driver performance scoring and scorecards (DriverPerformanceSnapshot; composite score 0–100; tiers bronze/silver/gold/platinum; 7 endpoints; 56 tests), lost and found system (LostItemReport; 9 endpoints; ~60 tests; migration a1b2c3d4e5f6), rider spending analytics + driver tax summary (4 endpoints; 41 tests; `services/analytics.py`), **admin financial reconciliation** (3 admin endpoints — summary+CSV+payout-status; gross/net revenue, daily breakdown, payout filtering; admin-auth gated; 54 tests; `services/admin_financials.py`), **admin notification log** (GET /admin/notification-logs; filterable by user/type/channel/status/ride; 16 tests; `api/v1/admin.py`), **admin rider management** (list/get/suspend/reactivate riders; 409 on duplicate action; bulk ride stats + rating; 20 tests; `api/v1/admin.py`), **admin promo analytics** (GET /promos/admin/stats; period filter week/month/year/all; top promos by usage+discount; referral breakdown; 11 tests; `api/v1/promos.py`), **driver tip summary** (GET /drivers/me/tips/summary; period filter; status breakdown; 36 tests; `api/v1/tips.py`), **admin tip stats** (GET /admin/tips/stats; platform-wide total/avg/unique drivers+riders/top-10 tipped drivers; 36 tests total with driver tip summary), **rider lifetime stats** (GET /analytics/rider/stats; total/completed/cancelled rides, completion rate, spend, distance, avg rating given, tips; 24 tests; `api/v1/analytics.py`), **admin top earners/spenders leaderboard** (GET /admin/stats/top-earners?role=driver|rider; period filter; 17 tests; `api/v1/admin.py`), **admin unified user search** (GET /admin/users/search?q=&role=all|driver|rider; full-text search across name/phone/email; driver stats included; 15 tests; `api/v1/admin.py`), **complaint and dispute management** (POST /complaints; GET filed/received; admin list/get/update; self-complaint guard; ride participant validation; terminal-state protection; 50 tests; `api/v1/complaints.py`), **vehicle type preference for ride requests** (VehicleServiceCategory enum: standard/comfort/xl/premium/wav; optional field on RideRequest schema + Ride model + RideResponse; MatchingEngine filters candidates by service_category when preference set; 15 unit tests + 9 integration tests; `models/vehicle.py`, `models/ride.py`, `schemas/ride.py`, `services/matching.py`), **surge pricing zone management** (SurgePricingZone model; polygon/circle geo zones; haversine + ray-casting pure Python; admin CRUD + toggle 6 endpoints; public active-zones map endpoint; FareBreakdown gains surge_multiplier + surge_label for transparency; overlapping zones → highest multiplier wins; time/day-restricted zones; 79 tests; `models/surge.py`, `services/surge_zones.py`, `api/v1/surge_zones.py`), **surge waitlist + price alerts** (SurgeWaitlistEntry model; riders join waitlist with max_multiplier threshold + expiry; check_and_notify_waitlist polling function marks notified/expired; public current-surge endpoint; admin trigger endpoint; 49 tests; `models/surge_waitlist.py`, `services/surge_waitlist.py`, `api/v1/surge_waitlist.py`), **driver destination filter / going-home mode** (DriverDestinationFilter model; drivers set a destination + radius so MatchingEngine only offers rides whose dropoff is within range; upsert set/clear/get service; PUT/GET/DELETE /drivers/me/destination-filter; optional expires_at; pure-Python haversine; 47 tests; `models/driver_destination.py`, `services/driver_destination.py`, `api/v1/driver_destination.py`). Push to GitHub blocked pending SSH key/credentials setup. Both Flutter apps have full user flows. **Total: 2,769 tests passing.**
+**Current focus**: Session 407: **Driver Document Expiry Status Endpoints COMPLETE** (commit `c8cd00f`, 20 new tests, branch `feature/driver-navigation`). `GET /drivers/me/document-expiry` (driver self-check with urgency labels) and `GET /admin/document-expiry` (fleet overview with expired_only filter). `get_expiring_documents_for_driver()` added to service layer. 6,154 tests passing. **Next**: open-repo data acquisition task (acquire OpenFarm data via Internet Archive and run import_openFarm.py), or further rideshare safety/compliance features.
 **Blocked on**: —
 **Notes**: This is the only public project. Higher standards for documentation, test coverage, and code quality since it's community-facing. Regulatory/safety/security solutions and growth strategy are in scope alongside the technical build.
 

@@ -76,6 +76,22 @@ Before finishing the session, update CHECKIN.md:
 7. Check-in cadence is daily (sometimes twice daily) — pace work accordingly
 8. When stockbot code is ready to deploy to Jetson (paper trading features complete, tests passing), create a `DEPLOY_READY` file in the workspace root: `touch /home/awank/dev/SuperClaude_Framework/DEPLOY_READY`. The deploy script runs automatically after the session ends.
 
+## CRITICAL: Branch discipline — WORKLOG/CHECKIN/PROJECTS always on master
+
+**WORKLOG.md, CHECKIN.md, PROJECTS.md, BLOCKED.md, and INBOX.md must ALWAYS be committed on `master`.** Never commit these files on a feature branch.
+
+The correct workflow when working on open-source-rideshare (or any feature branch):
+1. `git checkout feature/your-branch` — do the code work
+2. Commit the code changes on the feature branch
+3. `git checkout master` — switch back immediately after
+4. Commit WORKLOG.md, CHECKIN.md, PROJECTS.md, BLOCKED.md on master
+
+If you find yourself on a feature branch with uncommitted changes to these files:
+- Stage ONLY the orchestration files (WORKLOG.md, CHECKIN.md, etc.)
+- `git stash` them or use `git checkout master -- WORKLOG.md CHECKIN.md PROJECTS.md BLOCKED.md` to move them to master
+
+Violation of this rule causes the orchestration state to be invisible on master, breaking the Discord bot and making it impossible for the user to see what's been done.
+
 ---
 
 ## Using SuperClaude Agents
