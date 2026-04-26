@@ -2,6 +2,30 @@
 
 ---
 
+## April 26, 2026 (Session 420) — Cybersecurity-Hardening Phase 2 OSINT Deepening
+
+**Session type**: Research — data broker expansion, ID barriers, court challenges
+**Date**: April 26, 2026
+**Files created**: `projects/cybersecurity-hardening/phase2-osint-deepening.md`
+
+### What Was Done
+
+Produced `phase2-osint-deepening.md` (three-part deep-dive) for cybersecurity-hardening project.
+
+**Part A — Broker Catalog Expansion**: Documented the structural point that 200-broker lists conflate impact tiers. The actionable expansion is Tier B additions (CoreLogic, Verisk, DataLogix/Oracle, Crossix, Samba TV) plus 10 Tier C batch additions not in the current guide. Documented Tier A brokers with no opt-out path (Venntel, Babel Street, CLEAR, Clearview for federal purposes) — these require platform countermeasures, not opt-outs.
+
+**Part B — ID-Restricted Services**: Documented which brokers require hard government ID (LexisNexis, CLEAR, Clearview), which use KBA instead (Acxiom, Epsilon), and strategies for people without standard U.S. ID. Key finding: California AB 60/AB 1766 provides undocumented California residents a path to state ID, which then unlocks DROP access — the most reliable verified path for this population. Proxy opt-out via advocacy orgs is emerging but has no national infrastructure.
+
+**Part C — Court Challenge Landscape**: Documented Clearview BIPA settlement ($51.75M, March 2025) and its federal law enforcement carve-out. Identified BIPA private right of action as the most powerful litigation vehicle. Flagged SECURE Data Act (HR 8413, introduced April 22, 2026) as a threat to state enforcement authority via broad preemption. Documented PADFAA as an indirect regulatory lever via foreign data sales.
+
+### Key Surprising Findings
+
+1. The Clearview ACLU settlement explicitly carved out federal agencies — ICE retains a $9.2M contract and Illinois state law does not bind it. "We won" and "ICE still has it" are both true simultaneously.
+2. California's DROP platform is accessible to undocumented residents specifically because AB 60/AB 1766 IDs exist — this connection is not documented in any guide found.
+3. SECURE Data Act preemption, if enacted, would eliminate DROP, CCPA enforcement, and the 10-state consortium's authority in a single stroke.
+
+---
+
 ## April 27, 2026 (Session 419) — April 28 Hearing Setup, Litigation Tracker Update, FISA/SB 4/CBP One
 
 **Session type**: Monitoring setup + litigation tracker additions + hearing template creation

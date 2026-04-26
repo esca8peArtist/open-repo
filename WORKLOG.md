@@ -4,9 +4,86 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-26 — Session 419 — Parallel 2-agent execution: resistance-research monitoring setup + cybersecurity-hardening OSINT deepening
+## 2026-04-26 07:30 — Session 420 — Parallel 3-agent execution: resistance-research (monitoring prep), stockbot (paper trading verify + Jetson deployment doc), cybersecurity-hardening (OSINT deepening)
 
-### resistance-research — April 28 Xinis Hearing Monitoring Framework Complete
+### resistance-research — April 28 Xinis Hearing Monitoring Framework Verified Complete
+
+**What was verified/created:**
+- `monitoring/2026-04-28-results.md` — VERIFIED COMPLETE. Quick-fill record table (9 questions, contempt Y/N, sealed depositions, April 30 deadline tracking, Liberia demand, 4th Circuit stay status). Pre-hearing intelligence includes DC Circuit Boasberg precedent (DOJ argument for contempt rejection).
+- `monitoring/2026-05-01-template.md` — VERIFIED COMPLETE. Scale summary table (pre-May Day projections vs actuals), 7 major city incident tracking, labor action tracker, government response (ICE enforcement, arrests, DHS statements), Section 702 expiration field (correctly flagged April 30 expiry), narrative/media framing table.
+- `monitoring/2026-04-29-contingency.md` — CREATED (was a gap). Covers Nashville/Crenshaw ruling (highest-probability April 29 development), 4th Circuit stay post-contempt, April 30 deadline early signals, Section 702 Congressional watch, AFL-CIO endorsement watch, ICE enforcement alerts, updated threat assessments. Includes cross-file update checklist.
+- `monitoring/2026-04-29-mass-call.md` — already exists (7:30 p.m. Zoom call record)
+
+**Status**: Monday readiness CLEAN. Section 702 expiration strategically positioned in both April 29 and May 1 templates. April 28 hearing closes at ~5pm EST, quick-fill completes in 10 min, April 29 analysis pass overnight, May 1 goes live at ~6am.
+
+**No new commits** — templates already in place from prior session. April 29 contingency now ready as backup.
+
+---
+
+### stockbot — Paper Trading Live + Jetson Deployment Doc
+
+**Paper trading status — VERIFIED LIVE**:
+- Session `33a4afe676cae12a` (AAPL_h10_lgbm_ho stacker `0676c84e`) started 2026-04-26T05:50:34Z
+- `active-sessions.json` confirms active session
+- `trading_20260426.log` shows cycling every ~60 seconds, most recent 07:22:39 (correct Sunday behavior: "Market closed — skipping cycle")
+- `dashboard_api.py` running (PID 162260)
+- Live signal generation begins Monday 2026-04-28 at market open (~14:30 UTC)
+
+**No blockers for paper trading on dev machine (raspby1).**
+
+**Jetson deployment — Critical gap identified**:
+- **Jetson reachable**: SSH works (`awank@100.120.18.84`), hostname `XXSB-01`, Tailscale active
+- **Docker stack running**: `stockbot` container `Up 4 hours (healthy)`, `stockbot-web` up 2 days
+- **CRITICAL GAP**: Container image is stale. No stacker code from session 417 (`_load_stacker_strategy`, `_stacker_signal_details`, `_stacker_base_models` absent from `trading_session.py`). Jetson has pkl files and registry but cannot load them.
+- **Jetson DB empty**: `model_runs` table has 0 rows — no sessions ever started on Jetson
+- **HTTP blocked**: `curl localhost:8000` from dev to Jetson times out (despite Tailscale direct route); SSH proxy works fine. Not a blocker.
+
+**New file created**:
+- `projects/stockbot/JETSON_DEPLOYMENT.md` (8.1 KB) — Connection details, current state gap analysis, pre-deployment checklist, rsync + docker rebuild + session-start steps, verification commands, rollback procedure
+
+**Next action**: rsync session-417 source changes, rebuild Docker image on Jetson, restart container, start paper trading session via API. Steps documented in JETSON_DEPLOYMENT.md.
+
+---
+
+### cybersecurity-hardening — Phase 2 OSINT/Data Broker Deepening Complete
+
+**File created**: `phase2-osint-deepening.md` (new, ~2,400 words)
+
+**Research delivered**:
+
+**Part A — Broker taxonomy expansion (200+ list problem)**:
+- New finding: common lists treat all brokers as equivalent; for this audience they are not
+- **No opt-out path**: Venntel/Gravy Analytics (FTC-ordered to stop but data already in govt hands), Babel Street Locate X (social media OSINT), Thomson Reuters CLEAR (law enforcement product, demands driver license front/back + selfie), Clearview AI (opt-out blocks private use only — ICE retains $9.2M contract)
+- **Tier B additions** (not currently in guide): CoreLogic (property/address verification, clean opt-out), Verisk Analytics (insurance claims history), DataLogix/Oracle Data Cloud (purchase behavior), Samba TV (smart TV viewing), Crossix/Veeva (health inference). CoreLogic + Verisk highest priority (address verification → law enforcement ID resolution)
+- **Tier C batch** (10 additions with URLs): PrivateEye, Clustrmaps, Nuwber, USPhoneBook, Spy Dialer, NumLooker, others
+
+**Part B — ID-restricted services (structural paradox)**:
+- Brokers with highest law enforcement exposure impose highest ID verification friction
+- Population most targeted by law enforcement is least able to meet ID requirements
+- **Critical invisible path**: California AB 60/AB 1766 (undocumented residents can obtain state ID), California DROP accepts state ID, enables simultaneous deletion from all registered CA brokers. This chain is highest-leverage opt-out path for most at-risk population but is currently undocumented.
+- ITIN as SSN substitute: plausible in practice, not confirmed
+- Proxy opt-out via advocacy orgs: emerging model, no national infrastructure
+
+**Part C — Court challenges (what works, what doesn't reach federal agencies)**:
+- **Clearview BIPA settlement ($51.75M, final March 2025)** is template: class members got 23% equity stake, Clearview barred from private entities nationwide. But settlement explicitly does NOT apply to federal agencies. ICE still has $9.2M Clearview contract.
+- **Illinois BIPA**: private right of action without proof of harm — most powerful lever. Texas/Washington have biometric privacy statutes but no private right of action (AG only).
+- **PADFAA** (Protecting Americans' Data from Foreign Adversaries Act): FTC sent warning letters to 13 brokers Feb 2026 selling to foreign adversary-controlled entities. Brokers selling to both foreign entities + domestic law enforcement face liability; gives advocates regulatory hook without Fourth Amendment fight.
+- **SECURE Data Act threat** (HR 8413, introduced April 22, 2026): Would require FTC broker registration (improvement) but preempt all state privacy laws (eliminates CCPA, DROP, CA AG enforcement, 10-state consortium). Net negative if enacted.
+
+**Ready to integrate**:
+1. Add note to Step 0.1 (California DROP): explicitly connect AB 60/AB 1766 IDs to DROP eligibility (invisible path for at-risk population)
+2. Add "no opt-out available" table to Part 0 framing (readers understand which brokers need platform countermeasures)
+3. Add CoreLogic + Verisk to Priority 7-20 batch table (Step 0.2)
+4. Add 8-10 Tier C brokers to batch table
+5. Add SECURE Data Act as policy-monitoring item
+
+**Status**: Phase 2 research complete, ready to fold into implementation guide Part 0.
+
+---
+
+## 2026-04-26 Session 419 — Parallel 2-agent execution: resistance-research (earlier work) + cybersecurity-hardening OSINT deepening
+
+### resistance-research — April 28 Xinis Hearing Monitoring Framework Complete (from earlier session)
 
 **What was added:**
 - `monitoring/2026-04-28-results.md` — Quick-fill outcome table (9 key questions answerable in 10 min on April 28 evening) + April 29 analysis pass template with structured questions
@@ -19,7 +96,7 @@
 
 ---
 
-### cybersecurity-hardening — Phase 2 OSINT/Data Broker Deepening COMPLETE
+### cybersecurity-hardening — Phase 2 OSINT/Data Broker Deepening COMPLETE (from earlier session)
 
 **What was added:**
 - `osint-data-broker-deepening.md` (new, ~2,400 words) — Comprehensive research on data broker landscape 2026, opt-out mechanics, legal/regulatory angles, automation services evaluation
