@@ -206,5 +206,8 @@ uv.lock
 
 # Usage monitor runtime state (not committed)
 .usage-monitor-state.json
+.usage-monitor.lock
+.usage-monitor-last-run
 USAGE_PAUSE
 USAGE_PAUSE_OVERRIDE
+USAGE_ALERT_PENDING

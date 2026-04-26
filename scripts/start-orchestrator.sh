@@ -26,24 +26,47 @@ echo "[$(date)] Orchestrator starting." | tee -a "$LOG_FILE"
   "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
 
 send_summary() {
-  local checkin_content blocked_content msg
+  [ -z "$DISCORD_WEBHOOK_URL" ] && return
 
-  # Extract "Since Last Check-in" section from CHECKIN.md (first 600 chars)
-  checkin_content=$(awk '/## Since Last Check-in/{found=1; next} found && /^---/{exit} found{print}' \
-    "$WORKSPACE/CHECKIN.md" 2>/dev/null | head -20 | tr '\n' ' ' | cut -c1-600)
+  # Use Python for safe content extraction, truncation, and JSON encoding
+  python3 - "$WORKSPACE/CHECKIN.md" "$WORKSPACE/BLOCKED.md" "$DISCORD_WEBHOOK_URL" <<'PYEOF'
+import sys, json, re, subprocess
+from pathlib import Path
 
-  # Extract active blocks from BLOCKED.md (first 400 chars)
-  blocked_content=$(awk '/## Active Blocks/{found=1; next} found && /^## Resolved/{exit} found{print}' \
-    "$WORKSPACE/BLOCKED.md" 2>/dev/null | grep -v '^$' | head -10 | tr '\n' ' ' | cut -c1-400)
+checkin_file, blocked_file, webhook = sys.argv[1], sys.argv[2], sys.argv[3]
 
-  [ -z "$checkin_content" ] && checkin_content="(nothing yet)"
-  [ -z "$blocked_content" ] && blocked_content="None"
+def extract_section(path, header_re):
+    try:
+        text = Path(path).read_text(encoding="utf-8", errors="replace")
+        m = re.search(header_re, text)
+        if not m:
+            return "(not found)"
+        start = m.end()
+        # Stop at next --- or ## heading
+        end_m = re.search(r'\n(---|\#\#)', text[start:])
+        section = text[start: start + end_m.start()] if end_m else text[start:]
+        # Truncate safely at character boundary
+        return section.strip()[:600]
+    except Exception as e:
+        return f"(error reading: {e})"
 
-  msg="**[Claude 2hr Update]**\n**Recent work:** ${checkin_content}\n**Blocked:** ${blocked_content}"
+checkin = extract_section(checkin_file, r'## Since Last Check-in')
+blocked = extract_section(blocked_file, r'## Active Blocks')
+if not blocked.strip():
+    blocked = "None"
 
-  curl -s -H "Content-Type: application/json" \
-    -d "{\"content\":\"$(echo "$msg" | sed 's/"/\\"/g')\"}" \
-    "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
+msg = f"**[Claude 2hr Update]**\n**Recent work:** {checkin}\n**Blocked:** {blocked}"
+payload = json.dumps({"content": msg})
+
+result = subprocess.run(
+    ["curl", "-s", "-w", "\n%{http_code}", "-H", "Content-Type: application/json",
+     "-d", payload, webhook],
+    capture_output=True, text=True, timeout=15
+)
+http_code = result.stdout.strip().split("\n")[-1]
+if not http_code.startswith("2"):
+    print(f"Discord summary failed: HTTP {http_code}", file=sys.stderr)
+PYEOF
 }
 
 # Background watchdog: fires summary every 2hrs regardless of session state
@@ -61,14 +84,24 @@ summary_watchdog &
 WATCHDOG_PID=$!
 trap "kill $WATCHDOG_PID 2>/dev/null; exit" EXIT INT TERM
 
-LAST_SUMMARY=$(date +%s)
-
 while true; do
   # ── Pre-session: ensure we're on master ───────────────────────────────────
   # This is the structural guard against branch drift. The orchestrator may end
   # a session on a feature branch; forcing master here means every session
   # starts clean and all orchestration file commits land on master.
   git -C "$WORKSPACE" checkout master >> "$LOG_FILE" 2>&1 || true
+
+  # ── Pre-session: warn if usage-monitor is stale (cron may be dead) ────────
+  MONITOR_LAST_RUN="$WORKSPACE/.usage-monitor-last-run"
+  if [ -f "$MONITOR_LAST_RUN" ]; then
+    LAST_RUN=$(cat "$MONITOR_LAST_RUN")
+    LAST_EPOCH=$(python3 -c "from datetime import datetime,timezone; print(int(datetime.fromisoformat('$LAST_RUN').timestamp()))" 2>/dev/null || echo 0)
+    NOW_EPOCH=$(date +%s)
+    AGE=$(( NOW_EPOCH - LAST_EPOCH ))
+    if [ "$AGE" -gt 5400 ]; then
+      echo "[$(date)] WARNING: usage-monitor last ran ${AGE}s ago — cron may be dead." | tee -a "$LOG_FILE"
+    fi
+  fi
 
   # ── Pre-session: generate compact state file ──────────────────────────────
   echo "[$(date)] Generating orchestrator state..." | tee -a "$LOG_FILE"

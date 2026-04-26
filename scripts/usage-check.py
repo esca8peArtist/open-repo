@@ -25,6 +25,15 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from collections import defaultdict
 
+# ── Model classification ───────────────────────────────────────────────────────
+
+def classify_model(model: str) -> str:
+    if model.startswith("claude-sonnet"): return "sonnet"
+    if model.startswith("claude-opus"):   return "opus"
+    if model.startswith("claude-haiku"):  return "haiku"
+    if model in ("<synthetic>", ""):      return "synthetic"
+    return "other"
+
 # ── Paths ─────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PROJECTS  = REPO_ROOT / "PROJECTS.md"
@@ -34,7 +43,39 @@ OVERRIDE_FILE = REPO_ROOT / "USAGE_PAUSE_OVERRIDE"
 # Claude Code stores sessions at ~/.claude/projects/<encoded-cwd>/*.jsonl
 # Encoded path: absolute path with / replaced by - (including underscores)
 CWD_ENCODED = str(REPO_ROOT).replace("/", "-").replace("_", "-")
-SESSION_DIR = Path.home() / ".claude" / "projects" / CWD_ENCODED
+
+
+def find_session_dir() -> Path:
+    """Find the session dir that matches REPO_ROOT by checking cwd in JSONL files.
+    Falls back to encoded-path heuristic if no match found."""
+    encoded = CWD_ENCODED  # existing heuristic as fallback
+    projects_dir = Path.home() / ".claude" / "projects"
+    if not projects_dir.exists():
+        return projects_dir / encoded
+
+    target_cwd = str(REPO_ROOT)
+    for d in projects_dir.iterdir():
+        if not d.is_dir():
+            continue
+        # Quick check: does the encoded dirname match our path?
+        if d.name == encoded:
+            return d
+        # Scan a few JSONL files for cwd field
+        for fpath in list(d.glob("*.jsonl"))[:3]:
+            try:
+                with open(fpath) as f:
+                    for line in f:
+                        msg = json.loads(line)
+                        if isinstance(msg, dict) and msg.get("cwd") == target_cwd:
+                            return d
+                        break  # only check first line of each file
+            except Exception:
+                continue
+    # Fallback
+    return projects_dir / encoded
+
+
+SESSION_DIR = find_session_dir()
 
 # ── Calibrated plan limits (output tokens per billing week) ───────────────────
 # Back-calculated from UI % on 2026-04-26:
@@ -46,10 +87,6 @@ DEFAULT_ALL_MODELS_LIMIT = 15_114_000
 
 WARN_PCT     = 0.75   # warn at 75% of limit
 THROTTLE_PCT = 0.90   # stop new sessions at 90% (buffer for current session)
-
-SONNET_MODELS = {"claude-sonnet-4-6", "claude-sonnet-4-5"}
-HAIKU_MODELS  = {"claude-haiku-4-5-20251001", "claude-haiku-4-5"}
-OPUS_MODELS   = {"claude-opus-4-6", "claude-opus-4-7"}
 
 
 def last_tuesday() -> datetime:
@@ -75,9 +112,15 @@ def load_limits() -> tuple[int, int]:
     m = re.search(r"sonnet[_\s]token[_\s]limit\s*[:=]\s*([\d_,]+)", text, re.IGNORECASE)
     if m:
         sonnet_limit = int(m.group(1).replace("_", "").replace(",", ""))
+    else:
+        if not re.search(r"sonnet[_\s]token[_\s]limit", text, re.IGNORECASE):
+            print("WARNING: Sonnet token limit not found in PROJECTS.md — using default.", file=sys.stderr)
     m = re.search(r"all[_\s]models?[_\s]token[_\s]limit\s*[:=]\s*([\d_,]+)", text, re.IGNORECASE)
     if m:
         all_limit = int(m.group(1).replace("_", "").replace(",", ""))
+    else:
+        if not re.search(r"all[_\s]models?[_\s]token[_\s]limit", text, re.IGNORECASE):
+            print("WARNING: All-models token limit not found in PROJECTS.md — using default.", file=sys.stderr)
     return sonnet_limit, all_limit
 
 
@@ -91,7 +134,10 @@ def collect_tokens(since: datetime) -> dict:
     if not SESSION_DIR.exists():
         return {}
 
+    since_ts = since.timestamp()
     for fpath in SESSION_DIR.glob("*.jsonl"):
+        if fpath.stat().st_mtime < since_ts:
+            continue  # file not modified since billing week start — skip
         session_id = fpath.stem
         try:
             with open(fpath) as f:
@@ -127,19 +173,18 @@ def collect_tokens(since: datetime) -> dict:
 
 
 def aggregate(by_model: dict) -> dict:
-    sonnet_out = sum(v["output"] for k, v in by_model.items() if k in SONNET_MODELS)
-    opus_out   = sum(v["output"] for k, v in by_model.items() if k in OPUS_MODELS)
-    haiku_out  = sum(v["output"] for k, v in by_model.items() if k in HAIKU_MODELS)
+    sonnet_out = sum(v["output"] for k, v in by_model.items() if classify_model(k) == "sonnet")
+    opus_out   = sum(v["output"] for k, v in by_model.items() if classify_model(k) == "opus")
+    haiku_out  = sum(v["output"] for k, v in by_model.items() if classify_model(k) == "haiku")
     other_out  = sum(v["output"] for k, v in by_model.items()
-                     if k not in SONNET_MODELS | OPUS_MODELS | HAIKU_MODELS
-                     and k not in ("unknown", "<synthetic>"))
+                     if classify_model(k) not in ("sonnet", "opus", "haiku", "synthetic"))
     total_out = sonnet_out + opus_out + haiku_out + other_out
 
     sonnet_sessions = set()
     total_sessions = set()
     for k, v in by_model.items():
         total_sessions |= v["sessions"]
-        if k in SONNET_MODELS:
+        if classify_model(k) == "sonnet":
             sonnet_sessions |= v["sessions"]
 
     return {
@@ -250,7 +295,12 @@ def _bar(used: int, total: int, width: int = 20) -> str:
         return "░" * width
     ratio = min(used / total, 1.0)
     filled = int(ratio * width)
-    ch = "█" if ratio < WARN_PCT else ("▓" if ratio < THROTTLE_PCT else "█")
+    if ratio >= THROTTLE_PCT:
+        ch = "█"   # throttle — solid
+    elif ratio >= WARN_PCT:
+        ch = "▓"   # warning — dense
+    else:
+        ch = "▒"   # normal — medium
     return ch * filled + "░" * (width - filled)
 
 
@@ -298,7 +348,9 @@ def calibrate(sonnet_pct: float, all_pct: float) -> None:
                        f"calibrated {today_str} (UI showed {sonnet_pct}%)")
     text = upsert_line(text, "All models token limit", new_all,
                        f"calibrated {today_str} (UI showed {all_pct}%)")
-    PROJECTS.write_text(text)
+    tmp = PROJECTS.with_suffix(".tmp")
+    tmp.write_text(text)
+    os.replace(tmp, PROJECTS)
     print(f"  Saved to PROJECTS.md.")
 
 
