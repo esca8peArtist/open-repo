@@ -4,14 +4,18 @@ import os
 import pytest
 import httpx
 from httpx import AsyncClient
-from unittest.mock import AsyncMock, MagicMock
+from unittest.mock import AsyncMock, MagicMock, patch
 
 
 @pytest.fixture
 async def client():
-    """Create test client with mocked database."""
+    """Create test client with mocked database and search service."""
     from app.main import create_app
     from app import database
+    from app.services.search_service import reset_search_service
+
+    # Reset search service
+    reset_search_service()
 
     # Mock the get_db dependency
     async def mock_get_db():
@@ -25,6 +29,7 @@ async def client():
         yield ac
 
     app.dependency_overrides.clear()
+    reset_search_service()
 
 
 @pytest.fixture
