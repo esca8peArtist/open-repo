@@ -8758,3 +8758,58 @@ projects/open-repo/backend/
 
 **Summary**: Three parallel subagents complete. resistance-research ready to publish May Day guide and begin live monitoring. stockbot identified critical deployment gap (paper trading not actually running). cybersecurity-hardening publication prep done; OSINT deepening recommended. All commits on master. Next: Decide action on stockbot paper trading (priority 1 blocker), consider OSINT deepening for cybersecurity-hardening, publish May Day guide.
 
+
+---
+
+## Session 422 — Parallel Verification: stockbot Live + resistance-research Monitoring Ready + cybersecurity-hardening Publication Decision (2026-04-26)
+
+### stockbot — Paper Trading Session Verified Live, Jetson Deployment Complete
+
+**Status findings**:
+- **Paper trading session**: `33a4afe676cae12a` (AAPL_h10_lgbm_ho stacker), started 2026-04-26T05:58:22Z, actively cycling every ~60 seconds. API on port 8000 (not 5000). `last_cycle_at`: 2026-04-26T07:06:51Z (current as of agent run). Status: **LIVE and running**.
+- **P&L**: 0 trades (expected — market closed Sunday). Ready for Monday US open (~14:30 UTC 2026-04-28).
+- **Jetson deployment**: Already complete from Session 421. Container is healthy, volume-mounted `/src/` synced, all 5 sessions running (1 stacker + 4 legacy), market_open flags correctly set to false. **No rebuild needed** — rsync would be no-op. Jetson stack confirmed **healthy and operational**.
+
+**Verdict**: Paper trading pipeline fully operational. Ready for market open Monday.
+
+**Commit**: `b54ca35` — `chore(stockbot): session 422 — live session verified, Jetson stack confirmed healthy`
+
+---
+
+### resistance-research — May Day Guide Published, Monitoring Templates Verified Ready
+
+**Status findings**:
+- **May Day guide**: Gist URL `https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4` is **live and publicly accessible**. All 9 sections intact, 200+ organizations, 900+ events, Section 702 guidance, legal analysis, ICE safety resources. Content matches Session 421 update.
+- **Monitoring templates**: All three verified present and complete:
+  - `2026-04-28-results.md` — 9-question quick-fill table, escalation field, April 29 analysis pass template
+  - `2026-04-29-contingency.md` — Section 702 expiration (April 30) explicitly captured, Nashville/Crenshaw ruling, 4th Circuit contingency
+  - `2026-05-01-template.md` — Scale summary, 7-city reporting, labor action tracker, Section 702 lapse field
+- **Distribution checklist**: Written to `projects/resistance-research/WORKLOG.md`. Hold broadcast until Monday April 28 morning. Personal/trusted-network shares OK now. Channel matrix covers Slack, Signal, Bluesky, Mastodon, Indivisible, DSA, Action Network, NEA/AFT.
+- **One minor gap** (non-blocking): No dedicated 2026-04-30-results.md for April 30 Abrego Garcia 5pm deadline. April 29 contingency can absorb it.
+
+**Verdict**: All infrastructure ready for Monday. Monitoring begins 2026-04-28 as scheduled.
+
+**Commit**: `10c9345` — `chore(resistance-research): session 422 — May Day guide distribution prep complete, monitoring templates verified`
+
+---
+
+### cybersecurity-hardening — Publication Decision: Option A (Publish as-is)
+
+**Assessment**:
+- **Publication readiness**: All three documents present, complete, interconnected (threat-model.md 440+ lines, opsec-playbook.md 10-part structure, implementation-guide.md 9,600 words/1,022 lines, publication-prep.md with 600-word executive summary, hierarchical TOC, 40-term glossary).
+- **AB 60/AB 1766 finding** (undocumented residents California DROP path): **Already integrated** in implementation-guide.md lines 70-77, Step 0.1. AB 60/AB 1766 explicitly documented, DROP eligibility confirmed, SECURE Data Act watch included.
+- **What's NOT integrated** (honest list):
+  - Tier B broker additions (CoreLogic, Verisk URLs) not in Step 0.2 table
+  - Tier C batch additions (10 brokers) not listed
+  - Legal landscape analysis (Clearview BIPA settlement, PADFAA, SECURE Data Act preemption) not in playbook Part 9
+- **Recommendation**: **Option A — Publish now**. The single highest-leverage finding for the highest-risk population is already there. Tier B/C additions improve completeness but not urgency. Legal landscape belongs in a separate playbook iteration. Holding publication for incremental improvements is wrong trade-off against urgency for target audience. `phase2-osint-deepening.md` remains available as companion reference document.
+- **Future iteration** (not blocking): Integrate Tier B/C broker table + legal landscape into Parts 0-9 as separate session post-publication.
+
+**Verdict**: Publish the trilogy now (threat-model + opsec-playbook + implementation-guide).
+
+**Recommendation recorded and committed.**
+
+---
+
+**Summary**: Three parallel agents verified critical infrastructure readiness. stockbot paper trading LIVE and Jetson deployment confirmed healthy. resistance-research May Day guide published and monitoring templates ready for Monday launch. cybersecurity-hardening publication decision finalized: Option A (publish as-is). All findings committed to master. All three top-priority projects on track. Next: Monitor Monday outcomes (April 28 Xinis hearing, market open, May Day status) and initiate publication workflows if user approves.
+
