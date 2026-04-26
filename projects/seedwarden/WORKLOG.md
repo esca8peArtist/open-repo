@@ -4,6 +4,51 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session: 2026-04-26 — Track B Mockup Advancement (phone frame variant)
+
+### Step 1: Regenerate tablet mockups (timestamp sync)
+
+All 21 tablet mockups regenerated to sync with the Apr 26 PDF rebuild
+(native-plants-regional-guide.pdf and all others). Previously the native-plants
+mockup was dated Apr 14 while the PDF was Apr 26.
+
+- 21/21 PDFs processed, 0 failures
+- Output: `projects/seedwarden/mockups/*-mockup.png`
+- All files 341-388 KB, 2400x2400 px
+
+### Step 2: Phone frame variant
+
+Added `--frame portrait` argument to `generate_mockups.py`. When passed, the
+script renders each PDF into a matte-black portrait smartphone frame (iPhone 13
+proportions, scaled 2x for the 2400x2400 canvas) instead of the tablet frame.
+
+**New function: `build_phone_frame(screen_img)`**
+- Draws phone body in matte black (28, 28, 30) with PHONE_RADIUS=100 corners
+- Drop shadow: darker than tablet shadow (30, 35, 30, 120 alpha) to read against light background
+- Dynamic Island pill notch at top centre (200x40px pill)
+- Side buttons: power button right side, volume up/down left side
+- Home indicator bar: thin pill at bottom of screen area
+- Subtle white rim-light highlight (18 alpha) on phone body edges
+- Screen area: PHONE_SCREEN_W x PHONE_SCREEN_H (820x1700px), inset 30px sides, 100px top/bottom
+
+**Helper: `_draw_phone_frame(canvas)`**
+- Draws the phone chrome layer (body, notch, buttons, indicator) on top of an already-pasted screen image
+
+**Output naming**: `{stem}_phone.png` (underscore before "phone" to distinguish from `-mockup.png` tablet files)
+
+All 21 phone mockups generated, 0 failures. All 2400x2400 px, ~70 KB each
+(smaller than tablet mockups because the phone body covers less canvas area,
+leaving more of the plain gradient background).
+
+**Backward compatibility verified**: running without `--frame` still generates
+tablet mockups with original `-mockup.png` naming and original geometry.
+
+### Files changed
+- `projects/seedwarden/scripts/generate_mockups.py` — added `--frame portrait` argument, `build_phone_frame()`, `_draw_phone_frame()`, PHONE_* geometry constants
+- `projects/seedwarden/mockups/*_phone.png` — 21 new phone mockup files
+
+---
+
 ## Session: 2026-04-13 — Wild Edibles Habit Photos
 
 ### Status update

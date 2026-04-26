@@ -1,15 +1,30 @@
 """
 generate_mockups.py
 Renders the first page of each Seedwarden PDF onto a clean tablet/iPad portrait
-frame and saves a high-res PNG suitable for Etsy listings (≥2000px long side).
+frame and saves a high-res PNG suitable for Etsy listings (>=2000px long side).
 
 Frame design: drawn programmatically with Pillow — no external assets, no
 licensing concerns.
 
 Usage:
     uv run python projects/seedwarden/scripts/generate_mockups.py
+    uv run python projects/seedwarden/scripts/generate_mockups.py --frame portrait
+
+Options:
+    --frame portrait
+        Draw a portrait smartphone frame (iPhone 13 proportions: 390x844px screen
+        area) instead of the default tablet frame. Output files are named
+        {stem}_phone.png and saved to the same output directory. The background,
+        PDF rendering, and text placement are preserved; only the device frame
+        geometry changes.
+
+        Phone frame dimensions: 440x950px phone body (within a 2400x2400 canvas),
+        with a 390x844px screen inset 25px from each screen edge. Frame color is
+        matte black with a subtle highlight and drop shadow matching the tablet
+        style.
 """
 
+import argparse
 import math
 import pathlib
 import sys
@@ -55,6 +70,32 @@ BUTTON_W = 70          # home button at bottom
 BUTTON_H = 70
 
 # ---------------------------------------------------------------------------
+# Phone frame geometry (iPhone 13 proportions, scaled to canvas)
+# ---------------------------------------------------------------------------
+# Phone body: 440x950px total (phone body + bezel)
+PHONE_W = 880          # scaled up 2x for the 2400px canvas (440 * 2)
+PHONE_H = 1900         # scaled up 2x (950 * 2)
+PHONE_X = (CANVAS_W - PHONE_W) // 2
+PHONE_Y = (CANVAS_H - PHONE_H) // 2
+PHONE_RADIUS = 100     # outer corner radius (notched modern phone look)
+
+# Phone bezel widths
+PHONE_BEZEL_TOP    = 100   # extra room for notch area
+PHONE_BEZEL_BOTTOM = 100   # chin / home indicator area
+PHONE_BEZEL_SIDE   = 30    # thin side bezels
+
+# Phone screen area
+PHONE_SCREEN_X = PHONE_X + PHONE_BEZEL_SIDE
+PHONE_SCREEN_Y = PHONE_Y + PHONE_BEZEL_TOP
+PHONE_SCREEN_W = PHONE_W - PHONE_BEZEL_SIDE * 2
+PHONE_SCREEN_H = PHONE_H - PHONE_BEZEL_TOP - PHONE_BEZEL_BOTTOM
+
+# Phone detail sizes
+PHONE_NOTCH_W  = 200   # dynamic island / notch width
+PHONE_NOTCH_H  = 40    # notch height
+PHONE_CAMERA_R = 14    # small dot inside notch area
+
+# ---------------------------------------------------------------------------
 # Colours
 # ---------------------------------------------------------------------------
 BG_TOP    = (242, 245, 240)     # very light warm white/sage — background gradient top
@@ -67,6 +108,11 @@ BEZEL_DARK  = (160, 163, 158)
 SCREEN_BG   = (255, 255, 255)
 
 SHADOW_COLOR = (100, 110, 100, 80)   # RGBA — soft drop shadow
+
+# Matte black phone frame colours
+PHONE_FRAME_DARK  = (28, 28, 30)     # near-black body
+PHONE_FRAME_MID   = (44, 44, 46)     # slightly lighter for gradient
+PHONE_FRAME_LIGHT = (60, 60, 62)     # highlight edge
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -98,7 +144,7 @@ def vertical_gradient(img: Image.Image, top_color, bottom_color):
 
 
 def make_bezel_gradient(draw, x0, y0, x1, y1, radius):
-    """Draw a 3-stop gradient bezel: light → mid at top, mid → dark at bottom."""
+    """Draw a 3-stop gradient bezel: light -> mid at top, mid -> dark at bottom."""
     # Draw in two halves — top half lighter, bottom half darker
     mid_y = (y0 + y1) // 2
     # Top half
@@ -130,7 +176,7 @@ def render_pdf_page(pdf_path: pathlib.Path, target_w: int, target_h: int) -> Ima
     # Render at a scale that fits target_w at full page width.
     # We'll crop vertically after, so only constrain by width.
     scale = target_w / pw
-    # Render at 2× then downscale for better antialiasing
+    # Render at 2x then downscale for better antialiasing
     render_scale = scale * 2
     bitmap = page.render(scale=render_scale, rotation=0)
     pil_img = bitmap.to_pil()
@@ -275,33 +321,201 @@ def build_tablet_frame(screen_img: Image.Image) -> Image.Image:
     return canvas
 
 
+def _draw_phone_frame(canvas: Image.Image) -> Image.Image:
+    """Draw a matte-black portrait smartphone frame onto canvas.
+
+    Draws the phone body, side buttons, and a Dynamic Island-style notch.
+    Returns the modified canvas (RGB). The caller is responsible for pasting
+    the screen image before calling this function — this function draws the
+    frame chrome on top.
+
+    Frame geometry is based on PHONE_* module-level constants (scaled 2x from
+    iPhone 13 proportions to fit the 2400x2400 canvas at high resolution).
+    """
+    draw = ImageDraw.Draw(canvas)
+
+    # ---- Phone body (matte black rounded rect) ----
+    rounded_rect_mask(
+        draw,
+        (PHONE_X, PHONE_Y, PHONE_X + PHONE_W, PHONE_Y + PHONE_H),
+        PHONE_RADIUS,
+        PHONE_FRAME_DARK,
+    )
+
+    # ---- Thin highlight ring (1px lighter edge, top-left) ----
+    # Achieved by drawing a slightly smaller rounded rect in PHONE_FRAME_LIGHT
+    # then the body colour on top again — gives a subtle rim-light effect.
+    highlight_layer = Image.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 0))
+    hl_draw = ImageDraw.Draw(highlight_layer)
+    rounded_rect_mask(
+        hl_draw,
+        (PHONE_X + 2, PHONE_Y + 2, PHONE_X + PHONE_W - 2, PHONE_Y + PHONE_H - 2),
+        PHONE_RADIUS - 2,
+        (255, 255, 255, 18),   # very faint white rim
+    )
+    canvas = canvas.convert("RGBA")
+    canvas = Image.alpha_composite(canvas, highlight_layer)
+    canvas = canvas.convert("RGB")
+    draw = ImageDraw.Draw(canvas)
+
+    # ---- Dynamic Island / notch (pill shape at top centre of screen) ----
+    notch_cx = PHONE_X + PHONE_W // 2
+    notch_cy = PHONE_Y + PHONE_BEZEL_TOP // 2
+    notch_x0 = notch_cx - PHONE_NOTCH_W // 2
+    notch_x1 = notch_cx + PHONE_NOTCH_W // 2
+    notch_y0 = notch_cy - PHONE_NOTCH_H // 2
+    notch_y1 = notch_cy + PHONE_NOTCH_H // 2
+    notch_r  = PHONE_NOTCH_H // 2
+    # Draw pill: two semicircles + rectangle
+    rounded_rect_mask(
+        draw,
+        (notch_x0, notch_y0, notch_x1, notch_y1),
+        notch_r,
+        PHONE_FRAME_DARK,
+    )
+
+    # ---- Side buttons (power button right side, volume buttons left side) ----
+    btn_color = PHONE_FRAME_MID
+    btn_outline = PHONE_FRAME_LIGHT
+    # Power button (right side)
+    pw_x0 = PHONE_X + PHONE_W - 6
+    pw_x1 = PHONE_X + PHONE_W + 14
+    pw_y0 = PHONE_Y + PHONE_H // 2 - 100
+    pw_y1 = PHONE_Y + PHONE_H // 2 + 100
+    draw.rectangle([pw_x0, pw_y0, pw_x1, pw_y1], fill=btn_color, outline=btn_outline, width=2)
+
+    # Volume up button (left side)
+    vu_x0 = PHONE_X - 14
+    vu_x1 = PHONE_X + 6
+    vu_y0 = PHONE_Y + PHONE_H // 3 - 80
+    vu_y1 = PHONE_Y + PHONE_H // 3 + 80
+    draw.rectangle([vu_x0, vu_y0, vu_x1, vu_y1], fill=btn_color, outline=btn_outline, width=2)
+
+    # Volume down button (left side)
+    vd_x0 = vu_x0
+    vd_x1 = vu_x1
+    vd_y0 = PHONE_Y + PHONE_H // 3 + 120
+    vd_y1 = PHONE_Y + PHONE_H // 3 + 280
+    draw.rectangle([vd_x0, vd_y0, vd_x1, vd_y1], fill=btn_color, outline=btn_outline, width=2)
+
+    # ---- Screen border (thin 1px line where glass meets bezel) ----
+    draw.rectangle(
+        [PHONE_SCREEN_X - 1, PHONE_SCREEN_Y - 1,
+         PHONE_SCREEN_X + PHONE_SCREEN_W, PHONE_SCREEN_Y + PHONE_SCREEN_H],
+        outline=(50, 50, 52),
+        width=2,
+    )
+
+    # ---- Home indicator bar (thin pill at bottom of screen) ----
+    ind_w = 200
+    ind_h = 12
+    ind_x = PHONE_X + PHONE_W // 2 - ind_w // 2
+    ind_y = PHONE_Y + PHONE_H - PHONE_BEZEL_BOTTOM // 2 - ind_h // 2
+    rounded_rect_mask(
+        draw,
+        (ind_x, ind_y, ind_x + ind_w, ind_y + ind_h),
+        ind_h // 2,
+        (80, 80, 82),
+    )
+
+    return canvas
+
+
+def build_phone_frame(screen_img: Image.Image) -> Image.Image:
+    """Composite screen_img into a drawn smartphone frame on a neutral background.
+
+    Uses a matte-black portrait phone frame (iPhone 13 proportions, scaled 2x
+    for the 2400x2400 canvas). The screen area is PHONE_SCREEN_W x PHONE_SCREEN_H
+    pixels. Frame chrome (notch, buttons, home indicator) is drawn on top.
+
+    The background gradient and drop shadow match the tablet variant for visual
+    consistency across mockup sets.
+    """
+    # 1. Background canvas with same gradient as tablet variant
+    canvas = Image.new("RGB", (CANVAS_W, CANVAS_H))
+    vertical_gradient(canvas, BG_TOP, BG_BOTTOM)
+
+    # 2. Drop shadow behind phone body
+    shadow_layer = Image.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(shadow_layer)
+    shadow_offset = 20
+    shadow_spread = 35
+    rounded_rect_mask(
+        sd,
+        (
+            PHONE_X - shadow_spread + shadow_offset,
+            PHONE_Y - shadow_spread + shadow_offset,
+            PHONE_X + PHONE_W + shadow_spread + shadow_offset,
+            PHONE_Y + PHONE_H + shadow_spread + shadow_offset,
+        ),
+        PHONE_RADIUS + shadow_spread,
+        (30, 35, 30, 120),   # darker shadow for dark phone body
+    )
+    shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(radius=35))
+    canvas = canvas.convert("RGBA")
+    canvas = Image.alpha_composite(canvas, shadow_layer)
+    canvas = canvas.convert("RGB")
+
+    # 3. Paste screen image first (frame chrome will draw over the bezel areas)
+    canvas.paste(screen_img, (PHONE_SCREEN_X, PHONE_SCREEN_Y))
+
+    # 4. Draw phone frame chrome on top
+    canvas = _draw_phone_frame(canvas)
+
+    return canvas
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
-def process_all():
+def process_all(frame_mode: str = "tablet"):
+    """Render mockups for all PDFs in PDF_DIR.
+
+    Args:
+        frame_mode: "tablet" (default) for the iPad-style frame, or "portrait"
+                    for a matte-black smartphone frame. Output filenames get a
+                    "_phone" suffix when frame_mode is "portrait".
+    """
     pdfs = sorted(PDF_DIR.glob("*.pdf"))
     if not pdfs:
         print("No PDFs found — check PDF_DIR path.", file=sys.stderr)
         sys.exit(1)
 
-    print(f"Found {len(pdfs)} PDFs. Generating mockups...")
+    use_phone = frame_mode == "portrait"
+    frame_label = "phone" if use_phone else "tablet"
+
+    if use_phone:
+        screen_w = PHONE_SCREEN_W
+        screen_h = PHONE_SCREEN_H
+    else:
+        screen_w = SCREEN_W
+        screen_h = SCREEN_H
+
+    print(f"Found {len(pdfs)} PDFs. Generating {frame_label} mockups...")
     success = []
     failures = []
 
     for pdf_path in pdfs:
         stem = pdf_path.stem
-        out_path = OUT_DIR / f"{stem}-mockup.png"
+        if use_phone:
+            out_name = f"{stem}_phone.png"
+        else:
+            out_name = f"{stem}-mockup.png"
+        out_path = OUT_DIR / out_name
         try:
             # Render first page to screen dimensions
-            page_img = render_pdf_page(pdf_path, SCREEN_W, SCREEN_H)
-            # Build full tablet composite
-            mockup = build_tablet_frame(page_img)
+            page_img = render_pdf_page(pdf_path, screen_w, screen_h)
+            # Build full composite
+            if use_phone:
+                mockup = build_phone_frame(page_img)
+            else:
+                mockup = build_tablet_frame(page_img)
             # Save at high quality
             mockup.save(str(out_path), "PNG", optimize=False)
             size_kb = out_path.stat().st_size // 1024
             w, h = mockup.size
-            print(f"  OK  {stem}-mockup.png  [{w}x{h}  {size_kb} KB]")
+            print(f"  OK  {out_name}  [{w}x{h}  {size_kb} KB]")
             success.append(out_path.name)
         except Exception as exc:
             print(f"  FAIL  {stem}: {exc}", file=sys.stderr)
@@ -316,5 +530,20 @@ def process_all():
 
 
 if __name__ == "__main__":
-    ok = process_all()
+    parser = argparse.ArgumentParser(
+        description="Generate Seedwarden product mockups (tablet or phone frame)."
+    )
+    parser.add_argument(
+        "--frame",
+        choices=["portrait"],
+        default=None,
+        help=(
+            "Frame variant. Omit for default tablet/iPad frame. "
+            "Pass 'portrait' for a smartphone portrait frame."
+        ),
+    )
+    args = parser.parse_args()
+
+    frame_mode = args.frame if args.frame else "tablet"
+    ok = process_all(frame_mode=frame_mode)
     sys.exit(0 if ok else 1)
