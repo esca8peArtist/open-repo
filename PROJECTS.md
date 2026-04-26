@@ -65,12 +65,12 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — ready to publish + live monitoring phase
+**Status**: Active — May Day guide PUBLISHED, live monitoring phase begins 2026-04-28
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 417: **May Day Action Guide VERIFIED PRODUCTION-READY** (`mayday-2026-action-guide.md` — 9 sections, 60+ sourced links, complete legal analysis, situation-specific guidance). **Live Monitoring Framework FULLY SET UP**: April 28 (Xinis hearing, monitoring/2026-04-28-results.md), April 29 (Mass Call 7:30pm ET, monitoring/2026-04-29-mass-call.md with post-call checklist), May 1 (May Day, monitoring/2026-05-01-template.md). All documents cross-linked. **NEXT IMMEDIATE ACTION**: Publish May Day guide (immediately, no blockers). Begin live monitoring April 28 with pre-monitoring templates. Optional April 29 update if new intelligence emerges (eyes-up restoration status, route changes). Commit: `c168979`.
+**Current focus**: Session 418: **May Day Action Guide PUBLISHED** (GitHub Gist: https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4). 743 lines, fully formatted Markdown, public. **NEXT IMMEDIATE ACTIONS**: (1) User distributes Gist URL to organizing channels (Slack, Signal, email, Mastodon). Frame as legal/analytical companion to coalition guides (Indivisible, NEA, DSA). (2) Begin live monitoring April 28 (Xinis hearing, monitoring/2026-04-28-results.md). April 29 optional update if new intelligence emerges. May 1 live monitoring template ready. Commit: `652d85e` (orchestrator session) + parent commit from publication.
 **Blocked on**: —
-**Notes**: May Day guide ready for publication — zero blockers. Monitoring chain is coherent and complete. Section 702 expires April 30 (direct impact on ICE surveillance constraints May 1+). Democratic renewal proposal 22 domains; publication prep remaining.
+**Notes**: May Day guide published to stable URL — zero blockers. Monitoring chain is coherent. Section 702 expires April 30 (direct impact on ICE surveillance constraints May 1+). Democratic renewal proposal 22 domains; publication prep remaining.
 
 ---
 
@@ -89,12 +89,12 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — paper trading not yet running despite deploy readiness claim
+**Status**: Active — paper trading LIVE, monitoring live accumulation, Jetson deployment next
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Session 417: **Ensemble Return Stacker machinery COMPLETE** (16 stackers trained, loaded on API startup). **CRITICAL GAP IDENTIFIED**: Ensemble stackers built but NOT WIRED INTO PAPER TRADING — no active sessions, last 3 sessions ended 2026-04-12 with no P&L data. Jetson deployment: DEPLOY_READY file never created, backend not running on Jetson (Tailscale 100.120.18.84). **PRIORITY 1**: Wire a stacker (e.g., AAPL_h10_lgbm_ho_0676c84e) into active paper trading session via `POST /api/paper-trading/start`. **PRIORITY 2**: Execute Jetson deployment (`ssh 100.120.18.84 && bash deploy/jetson_setup.sh`). **PRIORITY 3**: Backtest all 16 stackers, persist Sharpe/win-rate/max-drawdown to choose production stacker. Test suite: 849 passed, 30 pre-existing failures (not blocking).
-**Blocked on**: Paper trading infrastructure (sessions must be created and monitored)
-**Notes**: Web app ready. Model machinery complete. Jet deployment chain incomplete — DEPLOY_READY claim was documentation-only, not execution. Paper trading is the critical path; all other work is secondary until stackers are live and accumulating performance metrics. iOS app out of scope until paper trading is solid.
+**Current focus**: Session 418: **Paper Trading NOW LIVE**. Session ID: `33a4afe676cae12a` (AAPL_h10_lgbm_ho stacker 0676c84e). First cycle completed 2026-04-26T05:50:38Z; trades accumulating starting Monday 2026-04-28 when US market opens. Ensemble signal pipeline wired: `_load_stacker_strategy()` loads stacker + base models, `_stacker_signal_details()` generates predictions on each cycle. **Backtest results** (8/16 successful): Sharpe 1.24, win-rate 100%, max drawdown -13.1%, return +17.1%. Active session logged to `active-sessions.json`. Tests: 98 passed, no new failures. **PRIORITY 1 (done)**: Wire stacker into paper trading ✅ **PRIORITY 2**: Monitor live P&L Monday-Friday, review after market data available. **PRIORITY 3**: Jetson deployment (SSH + systemd service start). Test suite: 849 passed, 30 pre-existing failures (not blocking).
+**Blocked on**: —
+**Notes**: Web app ready. Model machinery complete and wired. Paper trading is live and accumulating. Jetson deployment is next phase. iOS app out of scope until paper trading is solid. Monitor live session performance through the week.
 
 ---
 

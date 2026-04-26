@@ -4,6 +4,32 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — resistance-research — May Day Action Guide published to GitHub Gist
+
+Published to: https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4
+
+Guide is 743 lines, fully formatted Markdown, public (no auth required). Five days until May 1 — distribution via Slack/Signal organizer channels, email lists, and Mastodon/Bluesky recommended. User action: post URL and coordinate with coalition partners (Indivisible, NEA, DSA) for amplification.
+
+---
+
+## 2026-04-26 — stockbot — Paper trading LIVE: Session 33a4afe676cae12a running, stacker wired
+
+**CRITICAL MILESTONE**: Ensemble stacker infrastructure complete. AAPL_h10_lgbm_ho (0676c84e-...) paper trading session now active and running.
+
+**What was delivered**:
+- `TradingSession._load_stacker_strategy()`: Loads stacker from registry, pre-loads all 12 base models
+- `TradingSession._stacker_signal_details()`: Generates one-row prediction DataFrame on each cycle
+- `PaperTradingStartRequest` wired to accept `stacker_id` parameter
+- Active session logged to `active-sessions.json`
+
+**Backtest results** (180 days, $10k): 8 of 16 stackers successful (h5 variants too tight-threshold). Winners show: Sharpe 1.24, win-rate 100%, max drawdown -13.1%, return +17.1%.
+
+**Next phases**: (1) Monitor session live through Monday-Friday trading, (2) Jetson deployment (SSH + systemd service), (3) Choose production stacker from backtest metrics.
+
+**Tests**: 98 passed, no new failures. **Commit**: `652d85e`.
+
+---
+
 ## 2026-04-26 — cybersecurity-hardening — Publication prep complete: TOC, glossary, executive summary
 
 Assessed `implementation-guide.md` for publication readiness. Finding: near publication-ready; primary gaps are navigation aids and terminology definitions, not content gaps. Wrote `publication-prep.md` containing: (1) 500-word executive summary positioning the three-document corpus, framing the threat clearly, stating the countermeasure approach, and providing an honest statement of limits; (2) full hierarchical TOC covering all three documents (threat-model.md, opsec-playbook.md, implementation-guide.md) with sub-section detail; (3) 40-term glossary covering all technical terms in the implementation guide (ELITE, BFU, fastboot, verified boot, MAID, NSL, MLAT, Section 702, Venntel, Palantir, Signal Protocol, etc.). Recommendation for Phase 2 next steps also documented in full report.
