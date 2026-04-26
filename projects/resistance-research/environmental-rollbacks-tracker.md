@@ -4,6 +4,7 @@ subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
 last_updated: "2026-04-26"
+april_2026_entries: "entries 25–27 added; entry 1 (Endangerment Finding) updated with reconsideration petition"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
 sources:
@@ -45,6 +46,10 @@ tags: [environmental-law, EPA, Interior, NOAA, DOE, DOT, rollbacks, litigation, 
 **Real-world impact**: If the rescission survives litigation, it removes the legal framework underpinning power plant emissions rules, vehicle tailpipe standards, and oil and gas methane regulations. The WRI estimated the Endangerment Finding covers roughly 80% of all U.S. greenhouse gas emissions. Health modeling by the Clean Air Task Force projects tens of thousands of additional premature deaths annually from increased GHG-linked pollution over a multi-decade horizon.
 
 **Litigation**: Earthjustice, NRDC, Environmental Defense Fund, and a coalition of 22 state attorneys general filed challenges immediately upon publication. Cases are consolidated in the D.C. Circuit. Harvard Law's Salata Institute projects a D.C. Circuit ruling by late 2026 and potential Supreme Court consideration by mid-2027. No preliminary injunction has been granted as of the compilation date.
+
+**April 2026 update — petition for administrative reconsideration**: On April 16, 2026, a coalition of sixteen health and environmental organizations (EDF, NRDC, Union of Concerned Scientists, Earthjustice, Sierra Club, Clean Air Task Force, American Lung Association, American Public Health Association, Center for Biological Diversity, Conservation Law Foundation, Public Citizen, Physicians for Social Responsibility, and others) filed a formal petition with EPA demanding it reconsider the Endangerment Finding repeal. The petition identifies fatal procedural and substantive defects: (a) key legal arguments in the final rule were entirely new and not included in the proposed rule, meaning the public never had an opportunity to comment on them — a Clean Air Act procedural violation; (b) the rule's claim that reducing U.S. vehicle GHG emissions is "futile" given global emissions is factually incorrect, given that U.S. vehicle emissions are the single largest domestic source of GHG. The petition supplements the litigation already pending in the D.C. Circuit; it does not replace it. The filing of a petition for reconsideration generally tolls certain appellate deadlines. EPA has not responded.
+
+**Sources — April 2026**: [Earthjustice — petition](https://earthjustice.org/press/2026/health-environmental-groups-ask-epa-to-reconsider-flawed-unlawful-decision-to-repeal-the-endangerment-finding) | [EDF — petition](https://www.edf.org/media/health-environmental-groups-ask-epa-reconsider-flawed-unlawful-decision-repeal-endangerment) | [Sierra Club — petition](https://www.sierraclub.org/press-releases/2026/04/health-environmental-groups-ask-epa-reconsider-flawed-unlawful-decision) | [CNN — state AGs litigation](https://www.cnn.com/2026/03/19/climate/trump-endangerment-finding-lawsuit-climate-blue-states)
 
 **Previous rule finalized**: December 15, 2009 (74 FR 66496); reaffirmed and updated multiple times through 2022.
 
@@ -420,6 +425,64 @@ Following CEQ's rescission of binding NEPA regulations (January 8, 2026, entry 1
 **Date**: U.S. withdrawal became effective January 27, 2026.
 
 The U.S. formally re-withdrew from the Paris Agreement on Climate Change. The withdrawal eliminates the U.S. Nationally Determined Contribution (NDC) commitment to reduce GHG emissions 50–52% below 2005 levels by 2030, removes U.S. participation in international climate finance mechanisms, and signals to domestic courts that international climate commitments will not inform regulatory interpretation. This is the second U.S. withdrawal from Paris; the first (2017–2021) was reversed by President Biden on his first day in office.
+
+---
+
+## VI-A. April 2026 Additions
+
+### 25. Risk Management Program (RMP) — Chemical Accident Prevention Rollback
+**Rule**: Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention
+**Code**: 40 CFR Part 68
+**Agency**: EPA
+**Status**: [PROPOSED — comment period extended to May 11, 2026]
+
+**Dates**: Proposed rule published February 24, 2026 (Docket ID: EPA-HQ-OLEM-2025-0313). Original comment deadline April 10, 2026, extended to May 11, 2026 (announced April 6, 2026).
+
+**What changed**: EPA proposes to rescind or significantly weaken many requirements of the 2024 Biden-era "Safer Communities by Chemical Accident Prevention" (SCCAP) rule, which had been prompted in part by the East Palestine, Ohio train derailment. The rollback would eliminate: mandatory third-party audit requirements for facilities with poor compliance histories; safer technology and alternatives analysis (STAA) obligations requiring facilities to evaluate whether inherently safer processes could reduce accident risk; enhanced public information-sharing duties; employee participation provisions; emergency preparedness and coordination requirements with local emergency responders; and enhanced incident investigation requirements.
+
+**Stated justification**: EPA framed the rollback as providing a "common sense" approach that reduces regulatory burden on industry while maintaining core chemical accident prevention. The administration argued the SCCAP rule imposed excessive costs and compliance complexity.
+
+**Real-world impact**: RMP-regulated facilities include refineries, chemical plants, water treatment facilities, and cold-storage operations — approximately 12,000 facilities nationwide. The SCCAP rule's third-party audit requirement was specifically designed to address facilities with documented compliance failures. Eliminating it would allow facilities with histories of violations to continue self-certifying compliance. The public information-sharing provisions gave communities near hazardous facilities access to accident scenario data critical for emergency planning.
+
+**Litigation**: Environmental groups have signaled intent to challenge any final rule. No litigation filed as of the compilation date because the rule remains in the proposal stage.
+
+**Previous rule finalized**: Biden SCCAP rule (89 FR 17622, March 11, 2024).
+
+**Sources**: [EPA — proposed rule](https://www.epa.gov/rmp) | [Haynes Boone — analysis](https://www.haynesboone.com/news/alerts/epa-proposes-rollback-of-chemical-accident-prevention-rules) | [Holland & Knight — analysis](https://www.hklaw.com/en/insights/publications/2026/03/epas-proposed-rule-signals-rollback-of-chemical-safety-requirements) | [SBA Office of Advocacy — comment deadline extension](https://advocacy.sba.gov/2026/04/06/epa-extends-comment-period-for-proposed-risk-management-program-updates/)
+
+---
+
+### 26. TSCA PFAS Reporting Rule — Compliance Deadline Delayed to 2027
+**Rule**: TSCA Section 8(a)(7) PFAS Reporting Rule — Submission Window Delay
+**Code**: TSCA Section 8(a)(7); 40 CFR Part 705
+**Agency**: EPA
+**Status**: [ADMIN ACTION — final rule delaying reporting window; proposed rule extending health and safety deadline]
+
+**Dates**: EPA announced delay April 9, 2026, publishing a final rule postponing the PFAS reporting submission window. The new submission period will begin January 31, 2027, or 60 days after EPA finalizes any substantive requirement changes, whichever is later. Separately, on March 30, 2026, EPA proposed to extend the TSCA Health and Safety Data Reporting rule (also PFAS-related) deadline to May 21, 2027.
+
+**What changed**: The Biden EPA finalized the TSCA Section 8(a)(7) PFAS Reporting Rule to require all manufacturers and importers of PFAS to report comprehensive data on the chemicals — production volumes, uses, exposures, and health/environmental effects — giving EPA and the public for the first time a comprehensive picture of PFAS in the U.S. economy. The reporting window was originally set to open in April 2026. EPA's delay pushes the window by at least 9 months, postponing the collection of this data during a period when EPA is simultaneously weakening PFAS drinking water and cleanup rules.
+
+**Stated justification**: EPA claimed it needs additional time to finalize changes to the substantive reporting requirements before the submission window opens.
+
+**Real-world impact**: Every month of delay is a month during which PFAS data required to inform regulatory and enforcement decisions is not collected. Combined with the partial rollback of PFAS drinking water standards (entry 8 in this tracker), the pattern is: weaken drinking water protections, delay data collection on where PFAS originates, and slow cleanup obligations — a coordinated multi-rule degradation of the PFAS regulatory framework.
+
+**Sources**: [EPA — TSCA PFAS reporting update](https://www.epa.gov/chemicals-under-tsca/update-reporting-deadline-tsca-pfas-reporting-rule) | [Akin Gump — delay analysis](https://www.akingump.com/en/insights/blogs/pfas-press/epa-confirms-delay-of-april-2026-tsca-pfas-reporting-window) | [EHS Leaders — delay announcement](https://ehsleaders.org/2026/04/epa-proposes-tsca-reporting-delay-extending-compliance-timeline-to-2027/) | [SBA — health and safety reporting deadline](https://advocacy.sba.gov/2026/03/30/epa-proposes-to-extend-tsca-health-and-safety-reporting-rule-deadline-to-2027/)
+
+---
+
+### 27. PFAS RCRA Hazardous Constituent Rule — Finalization Expected April 2026
+**Rule**: Proposal to List Nine Per- and Polyfluoroalkyl Compounds as RCRA Hazardous Constituents
+**Code**: 40 CFR Part 261, Appendix VIII (RCRA Hazardous Constituents list)
+**Agency**: EPA
+**Status**: [PROPOSED — finalization announced for April 2026]
+
+**Dates**: Rule originally proposed under the Biden administration. Trump EPA stated intent to finalize the rule in April 2026.
+
+**What this rule does** (notably, this is a PFAS rule moving forward under the Trump administration): The rule would add nine PFAS compounds — PFOA, PFOS, PFBS, HFPO-DA (GenX), PFNA, PFHxS, PFDA, PFHxA, and PFBA — to the RCRA list of hazardous constituents. This designation does not impose cradle-to-grave hazardous waste controls independently, but it does require corrective action for releases of these substances at facilities already subject to RCRA corrective action authority (i.e., facilities with existing RCRA permits or interim status). It establishes a legal basis for cleanup requirements at industrial sites where these PFAS have been released.
+
+**Significance in context of broader PFAS rollbacks**: The decision to finalize this RCRA listing while simultaneously rolling back drinking water PFAS standards (entry 8) and delaying TSCA PFAS reporting (entry 26) reflects the administration's selective engagement with PFAS regulation — moving forward where industry pressure is weaker (cleanup at already-regulated sites) while retreating on the rules with higher compliance costs for manufacturers (reporting) and utilities (drinking water). Environmental advocates have noted this selective approach does not represent a coherent PFAS regulatory framework.
+
+**Sources**: [EPA — proposed rule](https://www.epa.gov/hw/proposal-list-nine-and-polyfluoroalkyl-compounds-resource-conservation-and-recovery-act) | [Williams Mullen — PFAS enforcement analysis](https://www.williamsmullen.com/insights/news/legal-news/dont-be-fooled-rollbacks-epas-pfas-enforcement-agenda-moving-forward) | [Holland & Knight — PFAS trajectory](https://www.hklaw.com/en/insights/publications/2025/10/epas-pfas-rulemaking-trajectory-key-updates)
 
 ---
 

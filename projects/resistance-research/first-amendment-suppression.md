@@ -14,7 +14,7 @@ cross_references:
 
 # First Amendment Suppression — Reference Document
 
-*Phase 3 — Distributable. Last updated: April 26, 2026.*
+*Phase 3 — Distributable. Last updated: April 26, 2026. April 2026 entries added.*
 
 **Lead finding**: The United States is experiencing a coordinated, multi-vector assault on First Amendment rights. Government actors are suppressing press freedom through exclusion, warrant raids, and funding retaliation; restricting protest through state anti-protest laws and immigration enforcement used as political punishment; pressuring platforms to silence dissent through administrative subpoenas; and weaponizing defamation litigation to impose financial ruin on critics. Courts have provided partial relief, but enforcement gaps and the administration's willingness to defy injunctions mean legal wins do not always translate to protected speech.
 
@@ -72,7 +72,9 @@ Each section identifies: **what is happening**, **who is doing it**, **specific 
 
 **Court proceedings**: On January 21, a judge blocked the government from searching the seized data. On February 24, Judge William B. Porter ruled that the court — not the DOJ — would conduct a privilege review of the devices, writing that allowing the Justice Department to review the materials would be "the equivalent of leaving the government's fox in charge of the Washington Post's henhouse." As of April 2026, federal prosecutors are pressing to overturn this ruling and gain direct access.
 
-**Sources**: [Washington Post](https://www.washingtonpost.com/national-security/2026/04/09/washington-post-natanson-search-doj/) | [RCFP](https://www.rcfp.org/briefs-comments/in-re-search-natanson/) | [US Press Freedom Tracker](https://pressfreedomtracker.us/all-incidents/washington-post-reporters-home-searched-by-fbi-devices-seized/) | [CNN](https://www.cnn.com/2026/02/24/politics/washington-post-hannah-natanson-fbi-devices-seized)
+**April 2026 escalation**: On April 9, 2026, the Washington Post reported that federal prosecutors filed a motion seeking to overturn Judge Porter's February ruling and reclaim the authority to search Natanson's devices directly rather than have the court conduct the privilege review. The DOJ's appeal of the ruling — framing it as a barrier to a legitimate leak investigation — extends the period in which Natanson's devices remain in government possession and inaccessible to her. As of late April 2026, no court has ruled on the appeal.
+
+**Sources**: [Washington Post — April 2026 DOJ appeal](https://www.washingtonpost.com/national-security/2026/04/09/washington-post-natanson-search-doj/) | [RCFP](https://www.rcfp.org/briefs-comments/in-re-search-natanson/) | [US Press Freedom Tracker](https://pressfreedomtracker.us/all-incidents/washington-post-reporters-home-searched-by-fbi-devices-seized/) | [CNN](https://www.cnn.com/2026/02/24/politics/washington-post-hannah-natanson-fbi-devices-seized)
 
 ---
 
@@ -111,6 +113,20 @@ Each section identifies: **what is happening**, **who is doing it**, **specific 
 Federal agents separately arrested independent journalist Georgia Fort and charged her with three felony offenses, including a hate crime, in connection with a protest at a St. Paul church on January 18, 2026. Don Lemon was also arrested on January 30, 2026. Federal lawyers reportedly sought approval from three separate grand juries before finding probable cause.
 
 **Sources**: [US Press Freedom Tracker](https://pressfreedomtracker.us/blog/a-troubling-picture-of-press-freedom-pressures-to-start-2026/) | [NPR](https://www.npr.org/2026/01/30/nx-s1-5693756/don-lemon-arrest-cnn-minneapolis) | [PBS](https://www.pbs.org/newshour/show/arrests-of-journalists-fuel-backlash-as-anti-ice-protests-spread-from-minneapolis)
+
+---
+
+### 1.7 White House Correspondents' Dinner 2026 — Journalist Petition and Security Incident
+
+**April 25, 2026**: The first WHCA dinner Trump attended as president in his second term became a focal point for press freedom organizing and then a security incident.
+
+**Journalist petition**: In the days before the dinner, nearly 500 retired journalists — joined by the Society of Professional Journalists and other press freedom organizations — signed a petition urging the WHCA to mount a "forceful defense of freedom of the press and condemnation of those who threaten that freedom." The petition cited: defunding of public broadcasting, dismantling of international broadcasting, physical restrictions on journalist access, personal attacks on reporters, arrest of journalists including Don Lemon and Georgia Fort, the FBI raid on Hannah Natanson's home, and administration lawsuits and threats against news organizations. The petitioners characterized the conduct as "the most systematic and comprehensive assault on freedom of the press by a sitting American president."
+
+**The dinner itself and the security incident**: On the evening of April 25, 2026, a shooting occurred near the main security screening area of the Washington Hilton hotel as guests were arriving. President Trump, the First Lady, Vice President Vance, and Cabinet members were evacuated by the Secret Service. One law enforcement officer was struck in a bullet-resistant vest and is expected to recover. No other injuries were reported. The dinner was disrupted.
+
+**Significance as a press freedom marker**: The petition's breadth — the breadth of suppression it catalogues — serves as an admission from press freedom advocates that the accumulated record of administration action (settlements, raids, exclusions, arrests, license threats) has crossed a threshold meriting unified industry protest. It is also significant that the petition targeted the WHCA itself, reflecting concern that the dinner risked normalizing administration conduct by staging a collegial event without first demanding accountability.
+
+**Sources**: [Deadline — journalist petition](https://deadline.com/2026/04/trump-white-house-correspondents-dinner-media-attacks-1236865663/) | [SPJ — coalition statement](https://www.spj.org/spj-joins-coalition-urging-whca-to-defend-press-freedom-at-annual-dinner/) | [NBC News — shooting](https://www.nbcnews.com/politics/white-house/white-house-correspondents-dinner-2026-trump-speech-expected-rcna341446) | [CNN — correspondents dinner coverage](https://www.cnn.com/2026/04/25/business/trump-white-house-correspondents-dinner-press)
 
 ---
 
@@ -161,6 +177,28 @@ Universities are imposing tighter restrictions on demonstration spaces. Institut
 PEN America's position is that limiting protest to designated zones inhibits the First Amendment by restricting when and where speech can occur, rather than only how it occurs.
 
 **Sources**: [ACLU Indiana](https://www.21alivenews.com/2026/03/03/aclu-indiana-sues-ball-state-university-over-protest-policy/) | [PEN America](https://pen.org/are-campus-free-speech-zones-constitutional/)
+
+---
+
+### 2.4 "No Kings" Mass Mobilization — March 28, 2026 — Government Responses and Suppression Tactics
+
+**What happened**: On March 28, 2026, an estimated eight to nine million people participated in over 3,300 "No Kings" demonstrations across all 50 states and internationally — making it the largest single-day protest in American history. The demonstrations opposed Trump administration policies including ICE enforcement actions, the Iran war, democratic backsliding, and suppression of the Epstein files. The protests were organized following a series of smaller No Kings demonstrations in June 2025 and October 2025 (the latter drew approximately seven million participants).
+
+**First Amendment violations and suppression documented**:
+
+- **Portland — federal agents, tear gas, arrests**: Federal agents stationed at the Portland ICE facility used tear gas, smoke bombs, and flash-bang grenades against protesters who gathered outside after the main march. Three protesters were arrested. This occurred against the backdrop of a legal dispute between the Trump administration and a federal district court that had restricted federal agents' use of chemical munitions near the building. The Ninth Circuit had paused those restrictions on March 26 — two days before the demonstration — at the administration's request, a decision that permitted the tear-gas deployment.
+
+- **Los Angeles — mass arrests, LAPD tactical alert**: LAPD issued a dispersal order after peaceful protests, arrested 75 people (63 adults for failure to disperse, 9 juveniles, 1 on a weapons charge), and placed the department on tactical alert. Federal DHS officials and LAPD deployed tear gas against crowds after some attendees allegedly threw objects. The LAPD Chief stated the department is "committed to protecting constitutional rights," but the mass arrests for failure to disperse raised First Amendment concerns.
+
+- **LAPD drone surveillance — pre-emptive intelligence collection**: Obtained flight records analyzed by The Intercept show the LAPD deployed Skydio X10 drones over the No Kings protest site 32 separate times. Critically, nine drone flights were initiated before the dispersal order was issued — meaning surveillance began three and a half hours before any unlawful conduct was alleged. The Skydio X10 is capable of identifying individuals from 2,500 feet and reading license plates from 800 feet. The LAPD declined to state what footage was collected, who reviewed it, or how long it is retained, raising First Amendment and Fourth Amendment concerns about preemptive intelligence-gathering on political demonstration participants.
+
+- **New York City, Las Vegas**: By contrast, NYPD reported zero protest-related arrests. Las Vegas reported 6 arrests at an event of 6,000 attendees.
+
+**Administration response**: White House spokesperson characterized the protests as "Trump Derangement Therapy Sessions" and stated the administration "does not think about the protest at all."
+
+**Ninth Circuit — Portland tear gas litigation (April 2026)**: The Ninth Circuit heard oral arguments on April 7, 2026 in the consolidated Portland protest-policing litigation. The Trump administration argued that the lower court's restrictions on federal agents' use of crowd-control weapons were unlawful. The ACLU of Oregon and plaintiffs — including freelance journalists — argued their First Amendment rights were chilled when federal officers deployed tear gas and pepper-ball munitions without dispersal orders against peaceful gatherings. The Ninth Circuit's 2-1 ruling pausing the lower court restrictions remains in effect pending the full panel's decision.
+
+**Sources**: [ACLU — No Kings press release](https://www.aclu.org/press-releases/over-seven-million-people-exercise-their-first-amendment-rights-in-nationwide-no-kings-protests) | [NPR — No Kings March 2026](https://www.npr.org/2026/03/28/nx-s1-5763702/no-kings-saturday-protests) | [The Intercept — LAPD drone surveillance](https://theintercept.com/2026/04/20/lapd-skydio-drone-surveillance-no-kings-protest-ice/) | [ABC7 — LA arrests](https://abc7.com/post/no-kings-protest-los-angeles-2026-police-say-9-juveniles-arrested-officers-suffered-minor-during-saturdays-rally-downtown/18801910/) | [The Hill — LA arrests count](https://thehill.com/homenews/state-watch/5807315-no-kings-protest-arrests-los-angeles/) | [OPB — Ninth Circuit hearing](https://www.opb.org/article/2026/04/07/portland-oregon-tear-gas-ice-building-trump-use-of-force/) | [Axios Portland — tear gas stays](https://www.axios.com/local/portland/2026/03/26/appeals-court-blocks-tear-gas-limits-protests) | [Britannica — No Kings](https://www.britannica.com/event/No-Kings-protests)
 
 ---
 
@@ -281,6 +319,10 @@ The volume is increasing: 820 SLAPPs were identified globally in 2023, up from 5
 **Mahmoud Khalil / Mohsen Mahdawi / Rümeysa Öztürk / Dr. Badar Khan Suri**: ACLU challenges to immigration detention used as First Amendment retaliation. All four released; cases have not fully resolved the constitutional question of how First Amendment protections apply in the immigration enforcement context. See Section 2.2.
 
 **FIRE v. Trump Administration** (student visa / INA): Challenge to use of the Immigration and Nationality Act to deport student visa holders for speech-protected activity. Active as of 2026.
+
+**Portland protest policing — Ninth Circuit** (April 2026): The Ninth Circuit heard oral arguments April 7, 2026 in the consolidated litigation over federal agents' use of tear gas and crowd-control munitions outside the Portland ICE facility. The 9th Circuit had paused lower court restrictions at the Trump administration's request on March 26. The full panel's ruling is pending. If the administration prevails, federal agents retain discretion to deploy chemical munitions against protest crowds outside federal buildings without prior dispersal orders. See Section 2.4.
+
+**In re Search of Natanson** (E.D. Va., April 2026 escalation): DOJ filed motion in April 2026 to overturn Judge Porter's February ruling requiring court-supervised review of devices seized from Washington Post reporter Hannah Natanson. The motion, if granted, would give the DOJ direct search authority over the devices. See Section 1.3 and 1.3 April 2026 escalation note.
 
 **Energy Transfer v. Greenpeace** (North Dakota): Jury verdict of ~$345 million (reduced from $660 million). Greenpeace seeking new trial and, if denied, appealing to North Dakota Supreme Court. See Section 4.2.
 
