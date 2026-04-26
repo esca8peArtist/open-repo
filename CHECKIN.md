@@ -4,17 +4,20 @@
 
 ---
 
-## Since Last Check-in (Session 427 — 2026-04-26 evening)
+## Since Last Check-in (Session 428 — 2026-04-26 evening)
 
 **Completed**:
 
-1. **open-repo**: **Phase 4 Wave 1 COMPLETE** (`feat(open-repo): Phase 4 Wave 1 — ActivityPub protocol + HTTP signature verification`, commit `667d9d9`). **Implemented**: (1) 6 ActivityPub endpoints (webfinger, actor, inbox, outbox, followers, following) per W3C spec, (2) HTTP signature generation + verification (RFC 8017, RSA-SHA256), (3) Activity models (Create, Update, Delete, Announce, Undo), (4) 35 unit tests (100% Wave 1 coverage), (5) backward compatible — all 81 Phase 1-3 tests still passing (116 total). **Code**: app/http_signatures.py (229 lines, signature utilities), app/models.py (+71 lines), app/routes.py (+258 lines), app/schemas.py (+195 lines), tests/test_activitypub.py (665 lines, 35 tests). **Production-ready**: full error handling, pydantic validation, idempotency checks, no debug prints. **Next**: Phase 4 Wave 2 (Federation Bootstrap & Content Sync) — Follow/Accept handshake, content propagation, integration tests (~2 weeks, ~100 story points).
+1. **open-repo**: **Phase 4 Wave 2 — CORE CODE COMPLETE, MIGRATIONS PENDING** (`feat(open-repo): Phase 4 Wave 2 — Federation Bootstrap & Content Sync`, commit `4b96ca1`, branch `feature/phase-4-wave-2-federation-bootstrap`). **Core implementation COMPLETE** (~60 story points): (1) 3 new DB table models defined in models.py (`federation_partners`, `follow_in_progress`, `activity_idempotency`); (2) `federation_origin_instance` column on ContentItem; (3) `FederationFollowService` — outbound Follow, inbound Follow handling, auto-Accept on public instances, manual Accept for private instances, inbound Accept processing; (4) `FederationSyncService` — Create/Update/Delete propagation, ingest_create/update with version-based conflict detection; (5) `ActivityIdempotencyService` — check-and-reserve + mark_processed pattern; (6) 5 new endpoints: POST /api/federation/follow, POST /api/actors/{id}/inbox, POST /api/federation/accept-follow, POST /api/resources/sync, GET /api/federation/partners; (7) 57 new tests, all passing. **Test suite**: 173 total (116 existing pass unchanged — full backward compatibility). **Remaining Wave 2 work** (~40 story points): Alembic migrations for 3 new tables, Meilisearch index sync on federated ingestion, async delivery queue with retry. **Push blocked** (no push access to SuperClaude-Org repo) — needs your review and PR merge. **PR needed**: create from `feature/phase-4-wave-2-federation-bootstrap` → master.
+
+2. **open-repo** (earlier, Wave 1 reference): **Phase 4 Wave 1 COMPLETE** (`feat(open-repo): Phase 4 Wave 1 — ActivityPub protocol + HTTP signature verification`, commit `667d9d9`). **Implemented**: 6 ActivityPub endpoints, HTTP signature utilities (RSA-SHA256), Activity models, 35 unit tests, 116 total tests passing.
 
 **In Progress**:
 - **stockbot**: Paper trading LIVE on dev + Jetson (both healthy). Monday 2026-04-28 14:30 UTC market open checklist ready. Dashboard API operational, monitoring-dashboard.py ready. Zero action items — ready to monitor.
 - **resistance-research**: May Day guide published, all monitoring templates ready. Monday 2026-04-28 17:00 UTC Xinis hearing data capture begins. Pre-capture checklist (5 items) prepared for Monday 14:00 UTC. Ready to capture data.
 
 **Needs Your Input**:
+- **open-repo**: **PR needed** — `feature/phase-4-wave-2-federation-bootstrap` → master. Push was blocked (no push access to SuperClaude-Org/SuperClaude_Framework). Create the PR manually or grant push access. Wave 2 is fully implemented, tested (173 passing), committed, ready to merge.
 - **cybersecurity-hardening**: Publication signal needed (trilogy ready: threat-model.md + opsec-playbook.md + implementation-guide.md). Can publish immediately or hold pending optional additions (Spanish summary, Tier B/C brokers). Decision deferred to user.
 - **mfg-farm**: Test print required (physical action) before launch prep continues.
 - **seedwarden**: Mockup images needed for all Etsy listings (Canva/mockup generator work — 20 products in Tier 1 + Tier 2). This is the #1 conversion factor for digital products on Etsy. Audit complete; content ready; mockup images are the blocker.

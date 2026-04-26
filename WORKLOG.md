@@ -9106,3 +9106,41 @@ projects/open-repo/backend/
 ---
 
 **Session Summary**: Two parallel agents completed 38 story points of work (Phase 3 routes at ~3–4 hours labor equivalent + quality review at ~1–2 hours). All tests passing. Both projects advanced to next phase (Phase 4 planning for open-repo, publication decision for off-grid-living). Zero blockers introduced.
+
+---
+
+## Session 428 (2026-04-26 evening)
+
+### open-repo — Phase 4 Wave 2 MAJOR PROGRESS
+
+**Status**: ~60 of ~100 story points complete. Core federation machinery implemented and tested.
+
+**Implemented**:
+1. **Data Models** (models.py): `FederationPartner` (trust relationships, direction in/out/mutual, status tracking), `FollowInProgress` (Follow/Accept handshake state, 7-day expiry), `ActivityIdempotency` (activity deduplication), `ContentItem.federation_origin_instance` (source tagging)
+2. **Services** (3 new files):
+   - `FederationFollowService` — outbound Follow, incoming Follow handling (auto-Accept public/manual private), Accept response handling, partner status management
+   - `FederationSyncService` — Create/Update/Delete propagation to all active partners, incoming item ingestion with version-based conflict detection
+   - `ActivityIdempotencyService` — check-before-reserve pattern preventing duplicate activity processing
+3. **Endpoints** (5 new):
+   - `POST /api/federation/follow` — initiate outbound Follow
+   - `POST /api/actors/{actor_id}/inbox` — typed inbox for incoming activities
+   - `POST /api/federation/accept-follow` — manual approval (private instances)
+   - `POST /api/resources/sync` — trigger content propagation
+   - `GET /api/federation/partners` — list federation partners
+4. **Schemas** — all endpoint request/response models complete
+5. **Tests** — 57 new tests (173 total: 116 existing + 57 new Wave 2), all passing, zero regressions
+
+**Branch**: `feature/phase-4-wave-2-federation-bootstrap` (commit `4b96ca1`)
+
+**Remaining Wave 2 Work** (~40 story points):
+- Alembic database migrations for the 3 new tables
+- Meilisearch index sync on federated item ingestion
+- Async delivery queue with retry (currently synchronous)
+
+**Future Waves**:
+- Wave 3: Endorsement (Announce/Undo) propagation
+- Wave 4: Conflict logging + admin resolution UI
+
+**Blocker**: GitHub push blocked (no push access to SuperClaude-Org/SuperClaude_Framework). Will require user to push or grant push access for next session.
+
+---

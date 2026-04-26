@@ -125,12 +125,12 @@
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — Phase 3 COMPLETE (81/81 tests, commit 7351680), **Phase 4 Wave 1 COMPLETE** (35 new tests, commit 667d9d9), ready for Wave 2 implementation
+**Status**: Active — Phase 3 COMPLETE (81/81 tests), **Phase 4 Wave 1 COMPLETE** (35 new tests), **Phase 4 Wave 2 IN PROGRESS** (57 new tests, core federation machinery implemented, ~60 of 100 story points complete)
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Session 427: **Phase 4 Wave 1 COMPLETE** (`feat(open-repo): Phase 4 Wave 1 — ActivityPub protocol + HTTP signature verification`). Implemented: 6 ActivityPub endpoints (webfinger, actor, inbox, outbox, followers, following), HTTP signature generation/verification (RFC 8017), Activity models (Create, Update, Delete, Announce, Undo), 35 unit tests (100% coverage for Wave 1), backward compatible (116/116 tests passing). **Next**: Phase 4 Wave 2 implementation (Federation Bootstrap & Content Sync) — Follow/Accept handshake, `federation_partners` table, content propagation (Create/Update activities), idempotency checks, 15+ integration tests. Target: 2 weeks, ~100 story points.
+**Current focus**: Session 428: **Phase 4 Wave 2 IN PROGRESS**. Completed: Data models (FederationPartner, FollowInProgress, ActivityIdempotency), Services (FederationFollowService, FederationSyncService, ActivityIdempotencyService), 5 new endpoints (Follow, Inbox, Accept-Follow, Sync, List Partners), 57 new tests (173 total, all passing, zero regressions on 116 Phase 1-3 tests). Branch: `feature/phase-4-wave-2-federation-bootstrap` (commit 4b96ca1). **Remaining Wave 2 work** (~40 story points): Alembic migrations, Meilisearch sync, async delivery queue. **Blocker**: GitHub push blocked (no push access). User will need to push or grant access.
 **Blocked on**: —
-**Notes**: Phase 1–3 production-ready (100% test coverage). Phase 4 Wave 1 foundation complete — ready for federation mechanics. Phase 5 (offline export/Kiwix) deferred until Phase 4 complete.
+**Notes**: Phase 1–3 production-ready (116 tests). Phase 4 Wave 1–2 core machinery complete. Remaining: Wave 2 migration/async, Wave 3 Endorsement, Wave 4 conflict resolution. Phase 5 (offline export/Kiwix) deferred until Phase 4 complete.
 
 ---
 
