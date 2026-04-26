@@ -4,6 +4,46 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — cybersecurity-hardening — OpSec Playbook: Countermeasures Against Government Surveillance
+
+Created `projects/cybersecurity-hardening/opsec-playbook.md` — the defensive companion to the threat model. ~4,800 words covering 11 sections.
+
+**Structure**: Each section leads with the specific threat from the model, then delivers defensive tool/practice, realistic limitations, and tiered operational guidance (Tier 1: journalists/advocates; Tier 2: activists/organizers; Tier 3: direct investigation targets).
+
+**Key recommendations grounded in confirmed threats**:
+- Signal usernames + phone number privacy settings directly counter NSA/carrier metadata collection and Palantir social graph mapping
+- GrapheneOS eliminates the manufacturer as a legal compulsion point (Apple/Google comply with warrants); confirmed better forensics resistance than iOS for law enforcement seizure scenarios
+- Briar (Tor-routed, no phone number) closes the IMSI/carrier metadata gap for highest-risk contacts
+- Faraday bag + leave phone at home for protests directly counters Venntel/ad-tech location data sold without warrants (confirmed ICE market research request January 2026)
+- Pattern-of-life disruption techniques mapped against Palantir ELITE address confidence scoring model
+- VPN jurisdiction analysis (Mullvad/Sweden, ProtonVPN/Switzerland) as procedural friction against U.S. CLOUD Act; non-U.S. providers require MLAT process instead of NSL
+- VeraCrypt + Fifth Amendment compelled decryption legal landscape (circuit split, "foregone conclusion" doctrine)
+- Rayhunter (EFF, March 2025) for IMSI catcher detection
+- Organizational incident response template for when a member is arrested
+- Quarterly threat reassessment protocol
+
+**Sources**: EFF SSD, Signal protocol docs, GrapheneOS documentation, Tor Project, Freedom of the Press Foundation, NACDL compelled decryption primer, VPN court-verified no-log analysis, CLOUD Act vs. GDPR analysis.
+
+---
+
+## 2026-04-26 — cybersecurity-hardening — Threat Model: Government Surveillance Infrastructure
+
+Created `projects/cybersecurity-hardening/threat-model.md` — initial draft threat assessment of Palantir, NSA, FBI, and law enforcement surveillance capabilities.
+
+**Key findings**:
+- Palantir is the data integration backbone across ICE, DHS, IRS, Army, CIA, NSA, FBI — $970.5M in 2025 federal contracts
+- ELITE platform (Palantir/$29.9M) feeds Medicaid, DMV, USCIS, and Thomson-Reuters CLEAR data into deportation targeting maps with algorithmic address confidence scores
+- IRS LCA platform (Palantir/$130M since 2018) aggregates tax returns, FinCEN records, bank statements, crypto wallet data, and communications metadata for "massive-scale" data mining
+- ImmigrationOS includes real-time social media monitoring with sentiment analysis — confirmed involved in "Catch and Revoke" visa revocations of activists
+- DOGE master database initiative confirmed: building cross-agency database (SSA + IRS + biometrics + voting records + DHS) with Palantir involvement; blocked partially by courts but data transfers already occurred
+- The data broker pipeline (Venntel location data, LexisNexis Accurint, Babel Street OSINT) allows warrantless purchase of location and identity data
+- NSA Section 702 has 349,823 targets (2025); upstream backbone collection continues; reauthorization debate active (deadline April 20, 2026)
+- Clearview AI $9.2M ICE contract (September 2025); ALPR nationwide CBP dragnet; stingrays confirmed used without warrants by ICE/DHS/Secret Service
+
+Threat matrix table covers 15 data types across collection methods and warrant status. Identified parallel construction gap as key analytical uncertainty.
+
+---
+
 ## 2026-04-23 — Session 400
 
 ### open-source-rideshare — Driver Navigation (commit `dcc0e81`, branch `feature/driver-navigation`)

@@ -68,12 +68,12 @@
 ### cybersecurity-hardening
 **Goal**: Build a comprehensive, actionable guide to protecting communications and identity against government-level mass surveillance. Understand what Palantir and similar data brokers/intelligence platforms actually have access to — what data they ingest, how they link identities, and what their current government contracts cover. From that threat model, identify the best practical techniques for private and anonymous communication: encrypted messaging, metadata minimization, network anonymization (Tor/VPN tradeoffs), device hardening, operational security (OpSec), and identity compartmentalization. The output should be a personal OpSec playbook grounded in real threat modeling — not theoretical, but calibrated to the actual capabilities of the adversary.
 **Priority**: High
-**Status**: Active — research phase
+**Status**: Active — research phase COMPLETE
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: **Starting fresh.** First task: research Palantir's government contracts and data access (Gotham, Foundry, AIP programs) — what data sources they ingest, what surveillance capabilities they provide to DHS/ICE/FBI/CBP. Then build a threat model. Then map available defensive tools to that threat model. Output: `threat-model.md` + `opsec-playbook.md`.
+**Current focus**: Session 411: **Research phase COMPLETE** — `threat-model.md` (440 lines, Palantir $970.5M contract ecosystem, ELITE/ICM/ImmigrationOS/LCA platforms, DOGE database, NSA Section 702, data broker loopholes, 50+ sources) and `opsec-playbook.md` (4,800 words, 11 sections, Signal/GrapheneOS/Briar/Tor/VeraCrypt/VPN/device hardening/behavioral OpSec, tiered guidance for journalists/activists/targets, all recommendations grounded in confirmed threats). **Next**: Quality review pass, publication preparation, or deepening into specific threat categories (e.g., OSINT counter-measures, physical TSCM, organizational incident response templates).
 **Blocked on**: —
-**Notes**: Threat model first — the right defenses depend on who the adversary is and what they can actually see. Palantir is the primary research anchor, but also cover NSA PRISM/XKeyScore legacy capabilities, FISA court access, third-party data broker aggregation, and law enforcement subpoenas to tech companies. Practical over theoretical: real apps, real configurations, real tradeoffs between security and usability.
+**Notes**: Both foundational documents are research-complete and verified against primary sources (FOIA, contracts, court filings, investigative journalism, official docs). Practical over theoretical: real apps, real configurations, real tradeoffs between security and usability.
 
 ---
 

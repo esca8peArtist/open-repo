@@ -8,8 +8,46 @@
 
 ## Since Last Check-in
 
-**Period**: 2026-04-24 (Session 410 — orchestrator)
-**Sessions run**: 409–410
+**Period**: 2026-04-26 (Session 411 — orchestrator)
+**Sessions run**: 411
+
+### Accomplished (Session 411 — orchestrator)
+
+#### cybersecurity-hardening — Threat Model + OpSec Playbook (Research Phase COMPLETE)
+
+Two foundational documents completed:
+
+**1. Threat Model** (`threat-model.md`, 440 lines, high-confidence, primary sources)
+- Palantir ecosystem: $970.5M in 2025 federal contracts, $10B Army ESA, 75 consolidated contracts
+- Deployed platforms: ELITE (ICE deportation targeting), ICM (case management), ImmigrationOS (AI-assisted apprehension + social media monitoring), IRS LCA (tax/financial/crypto data mining)
+- Data sources: Medicaid, DMV, USCIS, CLEAR, Thomson-Reuters, IRS, FinCEN, bank statements, crypto wallets, phone records, SEVIS, FBI/DEA/ATF databases
+- DOGE cross-agency consolidation: SSA + IRS + biometrics + voting records + DHS; partially blocked by courts but transfers already occurred
+- Data broker pipeline: Venntel (ad-tech location), LexisNexis Accurint ($9.75M DHS), Babel Street (social media OSINT), Clearview AI ($9.2M ICE)
+- NSA: Section 702 reauthorization (349,823 targets 2025, deadline April 20), PRISM, XKeyScore, upstream backbone collection
+- Law enforcement: ALPR (CBP nationwide), stingrays (warrantless), warrantless location data purchases confirmed
+- Threat matrix: 15 data types, collection methods, warrant status
+
+Sources: FOIA documents, USASpending.gov, court filings, The Intercept, 404 Media, ACLU, EFF, Amnesty International, government contracts, investigative journalism.
+
+**2. OpSec Playbook** (`opsec-playbook.md`, 4,800 words, 11 sections)
+- Communications: Signal (usernames, metadata limitations), Briar (no phone number), encrypted email, XMPP/OMEMO, Jami
+- Metadata minimization: Phone alternatives, SIM strategy, location isolation, pattern-of-life counter-measures mapped to Palantir ELITE scoring
+- Network anonymization: Tor (traffic correlation realism, ISP visibility, bridges), VPN (jurisdiction strategy, CLOUD Act vs. GDPR Article 48, Mullvad/ProtonVPN), stacking tradeoffs
+- Device hardening: GrapheneOS vs. iOS (forensics resistance, manufacturer compulsion point), Calyx, Fedora Silverblue, full-disk encryption, firmware/BIOS security, USB/DMA attacks
+- Identity compartmentalization: Separate devices/OS for work/activist/personal, separate credentials, payment isolation, Monero for Tier 3
+- Data at rest: VeraCrypt (plausible deniability law landscape), LUKS, encrypted containers, password managers, hardware tokens
+- Behavioral OpSec: Device discipline, meeting security (TSCM, Faraday bag), financial compartmentalization, communication discipline, vehicle security
+- Legal defense layer: Warrant/subpoena processes, encrypted storage that cannot be compelled, jurisdiction strategy (non-U.S. servers), backup systems
+- Organizational OpSec: Secure team comms (Signal not Slack), role compartmentalization, document sharing (OnionShare), incident response when member arrested
+- Monitoring & threat intelligence: Surveillance detection (Rayhunter for IMSI catchers), threat feeds (EFF, ACLU, 404 Media), red flags, quarterly reassessment
+
+**Tier system**: Tier 1 (journalists/advocates), Tier 2 (activists/organizers), Tier 3 (direct investigation targets). Each recommendation grounded in specific confirmed threats. All limitations documented — honest about what works vs. theater.
+
+Sources: EFF SSD, Signal protocol docs, GrapheneOS, Tor Project, NACDL, Freedom of the Press Foundation, CLOUD Act analysis, GDPR Article 48, court cases, 30+ verified sources.
+
+**Status**: Research complete, ready for user review. Next phases: quality review, deepening into specific categories (OSINT counter-measures, organizational templates), publication preparation.
+
+---
 
 ### Accomplished (Session 410 — orchestrator)
 
@@ -54,26 +92,33 @@
 
 ### Needs Your Input
 
-**Discord bot showing stale status updates**
-Root cause identified: The `!checkin` command reads the `## Since Last Check-in` section from CHECKIN.md. The orchestrator was not properly archiving and replacing this section at the end of each session — it wrote to the WORKLOG but didn't always replace the "Since Last Check-in" block, so the bot kept surfacing the same Session 104 content across multiple sessions.
+**Cybersecurity-hardening — Review & Next Phase**
+Research phase complete: `threat-model.md` (440 lines, verified threat landscape) and `opsec-playbook.md` (4,800 words, actionable defenses). Both grounded in confirmed government surveillance capabilities (Palantir contracts, NSA Section 702, data broker loopholes, law enforcement tools). 
 
-Fix applied this session: The "Since Last Check-in" section is now properly archived to History and replaced with current session content. This should resolve repeated updates going forward.
+Next phase options:
+1. Quality review pass (spelling, technical accuracy, clarity)
+2. Deepen into specific categories (OSINT counter-measures, TSCM/physical security, large-group operational security, incident response templates)
+3. Publication preparation (add table of contents, glossary, quick-reference checklists)
+4. Move to implementation (e.g., build a configuration/installation guide for GrapheneOS/Signal/Tor stack)
 
-If `!status` also showed stale content, it reads the last 20 lines of WORKLOG.md — if no WORKLOG entry was added for a session, the tail doesn't change. Session 106 adds a proper WORKLOG entry.
+Please let us know which direction to take.
 
-**Stockbot — paper trading cycle logs**
-Paper trading has been live since April 14 (first market open). The orchestrator cannot read cycle logs without `STOCKBOT_API_KEY` in the environment. To assess model performance, either: (a) share cycle log output in INBOX.md, or (b) screenshot the Trading page at `http://127.0.0.1:8000` and drop path in INBOX.
+**mfg-farm — Test Print**
+Business plan, CadQuery designs, market research, and listing copy all ready. Blocked on physical test print of the ModRun rail and clip designs. Once completed, launch prep can continue.
 
-**Resistance-research — April 17/20 events**
-Today is April 14. The April 17 stay expiry and April 20 CAPE/Abrego Garcia briefing deadlines are imminent. If you have outcomes or news updates, drop them in INBOX.md and the next session will write a monitoring brief.
+**stockbot — Paper Trading Performance**
+Paper trading live since April 14. Orchestrator cannot read cycle logs without `STOCKBOT_API_KEY`. To assess model performance: (a) share cycle log output in INBOX.md, or (b) screenshot the Trading page at `http://127.0.0.1:8000` and drop path in INBOX.
+
+**seedwarden — PDF Mockup Images**
+All 21 products have content and listing copy complete. Only blocker: PDF mockup images needed for all listings (highest conversion factor on Etsy).
 
 ---
 
 ### Suggested Priorities (Next Session)
-1. **mfg-farm**: Market research underway this session — review findings and decide product focus.
-2. **resistance-research**: Domain 5 (Fiscal Reform) deepening underway this session — 21/22 done after.
-3. **stockbot**: Share cycle logs or Trading page screenshot to unblock model performance assessment.
-4. **open-source-rideshare**: 2,769 tests passing — next candidates: trip demand heatmap, driver revenue projections, platform admin config API.
+1. **cybersecurity-hardening**: Review research output (`threat-model.md` + `opsec-playbook.md`) and direct next phase (quality review, deepening, publication, or implementation).
+2. **resistance-research**: April 28 Xinis hearing monitoring brief ready. Ongoing monitoring through May 1 May Day actions (coalitions confirmed, legal prep complete). No urgent work until April 28 results arrive.
+3. **open-repo**: MVP implementation ready to begin — architecture designed, data import pipeline functional. Could start backend (FastAPI, PostgreSQL, Meilisearch/Kubo integration).
+4. **stockbot**: Share paper trading cycle logs or screenshot to assess model performance since April 14 launch.
 
 ---
 
