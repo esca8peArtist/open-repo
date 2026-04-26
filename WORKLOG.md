@@ -4,6 +4,18 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — cybersecurity-hardening — Phase 2 implementation guide outline complete
+
+Confirmed Option C recommendation from NEXT_PHASE.md. Wrote `implementation-guide-outline.md`: 8-part structure (data broker opt-outs, hardware selection, GrapheneOS install + verification, post-install config, Signal sequence, Tor/Mullvad routing, file encryption + metadata minimization, maintenance schedule) plus per-tier quick-start checklists. Total estimated writing effort: ~6 hours. Verification steps — the primary gap in the current playbook — are designed into every section. The outline is written to be executed by a writer directly with no further research required (all factual content already present in threat-model.md and opsec-playbook.md; only data broker opt-out URLs require link-verification at time of writing).
+
+## 2026-04-26 — cybersecurity-hardening — Phase 2 strategic assessment complete
+
+Read both production docs (threat-model.md 440 lines, opsec-playbook.md 4,800 words). Identified primary gap: strategic guidance exists but executable implementation does not. Wrote `NEXT_PHASE.md` recommending Option C (Implementation Guide) over Options A/B/D. Key finding: data broker opt-out section should lead (highest-population-impact, no technical expertise required); GrapheneOS installation with verification steps is the highest-friction missing piece. Three-document corpus (threat model + playbook + implementation guide) covers the full arc from intelligence to strategy to execution.
+
+**File**: `projects/cybersecurity-hardening/NEXT_PHASE.md`
+
+---
+
 ## 2026-04-26 (Session 414) — Parallel 3-agent execution: May Day monitoring, cybersecurity review, open-repo Phase 2
 
 ### resistance-research — May Day Monitoring: Critical DC Circuit Ruling + Coalition Updates
