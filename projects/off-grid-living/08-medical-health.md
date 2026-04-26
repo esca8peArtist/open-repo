@@ -3,6 +3,7 @@ title: "Domain 8: Medical & Health"
 project: off-grid-living
 status: complete
 created: 2026-04-13
+cross-refs: [03-water, 06-energy-power, 09-waste-sanitation, 15-disaster-scenarios]
 ---
 
 # Domain 8: Medical & Health

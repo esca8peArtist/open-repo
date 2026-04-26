@@ -1,8 +1,16 @@
-# 14. Finances & Trade
-## Off-Grid Living Research Project
+---
+title: "Domain 14: Finances & Trade"
+domain: 14
+project: off-grid-living
+status: complete
+created: 2026-04-13
+cross-refs: [01-site-selection, 04-food-production, 15-disaster-scenarios, 16-skills-knowledge]
+---
 
-**Purpose**: Transitioning to partial self-sufficiency without going broke. Managing the
-economic bridge period, building homestead revenue, and creating local trade networks.
+# Domain 14: Finances & Trade
+
+> **Scope**: Transitioning to partial self-sufficiency without going broke. Managing the
+> economic bridge period, building homestead revenue, and creating local trade networks.
 
 ---
 

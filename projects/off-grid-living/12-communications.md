@@ -3,7 +3,7 @@ title: "Domain 12: Communications"
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [06-energy-power, 08-medical-health, 11-shelter-construction, 13-community-governance, 15-disaster-scenarios]
+cross-refs: [06-energy-power, 08-medical-health, 11-shelter-construction, 13-community-organization, 15-disaster-scenarios]
 ---
 
 # Domain 12: Communications
@@ -1839,7 +1839,7 @@ Find local clubs at arrl.org/find-an-amateur-radio-club.
 - **[11-shelter-construction.md]**: Antenna mounting on structure; Faraday
   cage integration; underground shelter comms penetrations; CBRN hardened
   shelter comms
-- **[13-community-governance.md]**: Community radio net structure; net control
+- **[13-community-organization.md]**: Community radio net structure; net control
   rotation; information sharing protocols
 - **[15-disaster-scenarios.md]**: EMP scenario planning; nuclear event
   communications; extended grid-down operations; communication hierarchy
