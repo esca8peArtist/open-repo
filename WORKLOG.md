@@ -4,6 +4,91 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 (Session 434) — PARALLEL 3-AGENT EXECUTION — stockbot readiness + cybersecurity-hardening publication + open-repo Wave 4 design
+
+### 1. stockbot — Monday Market-Open Readiness Verification COMPLETE
+
+**Status**: All infrastructure verified healthy for Monday 2026-04-28 14:30 UTC market open.
+
+**Verification Results**:
+- Paper trading session `33a4afe676cae12a` running, last cycle 13 seconds old at check time
+- Jetson (xxsb-01) healthy: all 5 sessions confirmed running with recent cycle timestamps
+- Dev machine API healthy, paper smoke tests 22/22 passing
+- Monitoring scripts (monitoring-dashboard.py, monday-log-analysis.py) set executable
+- Monday runbook confirmed: 14:00 UTC pre-market checklist → 14:30 UTC dashboard launch → 16:30 UTC analysis
+
+**Changes**: Fixed execute bits on monitoring scripts only (no production code changes).
+
+**Monday Checklist Ready**: 11-step runbook with PASS criteria and recovery commands documented in market-open-checklist.md.
+
+---
+
+### 2. cybersecurity-hardening — Publication Infrastructure Verified & Updated COMPLETE
+
+**Status**: Trilogy publication-ready. All three documents verified complete.
+
+**Documents Verified**:
+- threat-model.md (446 lines) — 10 sections, primary-sourced, no TODOs
+- opsec-playbook.md (635 lines) — 11 parts, complete, no placeholders
+- implementation-guide.md (1,057 lines) — Parts 0–8 with verification checkpoints, correct use of `age1xxx` placeholder
+
+**Infrastructure Fixed**:
+- publication-prep.md: Status field updated from "draft" to "complete"
+- publication-prep.md: TOC corrected (threat-model missing Sections II, VIII, IX, X; opsec-playbook missing Part 11)
+- Created CHECKIN.md with final publishing checklist
+
+**Final Publishing Checklist (11 channels)**:
+- ✅ GitHub Gist (user creates at gist.github.com)
+- ✅ GitHub Pages / MkDocs static site
+- ✅ HackMD Book
+- ✅ PDF via Pandoc
+- ✅ Email to NILC/CLINIC/RAICES (immigration legal aid)
+- ✅ Signal/Slack community channels
+- ✅ Social media (Bluesky/Mastodon/Twitter)
+- ✅ Reddit (r/privacy, r/immigration, r/opsec)
+- ✅ EFF/FPF/Access Now partner outreach
+- ✅ SecureDrop (journalist distribution)
+- ✅ Obsidian Publish (if subscription exists)
+- ⏳ Spanish translation (deferred, identified as highest-leverage follow-on)
+
+**Single User Action**: Create GitHub Gist at https://gist.github.com with the three documents in order (threat-model.md, opsec-playbook.md, implementation-guide.md), set to Public, copy the URL, follow DISTRIBUTION_CHECKLIST.md channel sequence.
+
+---
+
+### 3. open-repo — Wave 4 Design COMPLETE (Federation Partner Management & HTTP Signature Verification)
+
+**Deliverable**: WAVE_4_DESIGN.md (1173 lines, comprehensive specification)
+
+**Design Scope**:
+- FederationPartner data model with trust state machine (pending → trusted/untrusted → revoked)
+- Manual registration API with public key fetching from .well-known/webfinger
+- HTTP signature verification per RFC 8017 + W3C ActivityPub standard
+- Trust model preventing vote manipulation attacks via untrusted partners
+
+**Architecture**:
+- FederationPartnerService: 8 core methods (register_partner, update_partner_trust, fetch_public_key, verify_signature, get_partner_stats, list_partners, revoke_partner)
+- 7 Admin REST endpoints (/admin/federation/partners/register, GET, PATCH, DELETE, /refresh-key, /activity-log)
+- Database schema: new federation_partners table, modified activities table with partner_id FK + signature fields
+
+**Test Plan**: 18-22 tests across 5 classes
+- Partner registration (5 tests)
+- HTTP signature verification (6 tests): valid/invalid/tampered/missing headers, unknown keys, untrusted partners
+- Public key management (3 tests)
+- Route integration (5 tests)
+- End-to-end signature flows (3 tests)
+
+**Implementation Plan**: 4 phases (3-4 days, 35-45 story points)
+1. Data model & Alembic migrations
+2. FederationPartnerService with signature logic
+3. Route integration (update /inbox for signature verification)
+4. End-to-end validation and documentation
+
+**Status**: Design COMPLETE, ready for implementation. No unknown unknowns remain. Specification detailed enough for development without clarification calls.
+
+**Updated**: PROJECTS.md with Wave 4 status and link to WAVE_4_DESIGN.md.
+
+---
+
 ## 2026-04-26 (Session 433) — open-repo Phase 4 Wave 3 Phase 3 COMPLETE — Cross-Node E2E Testing
 
 ### open-repo — Phase 4 Wave 3 Phase 3 COMPLETE (Cross-Node End-to-End Testing)

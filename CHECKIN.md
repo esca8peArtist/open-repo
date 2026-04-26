@@ -4,7 +4,42 @@
 
 ---
 
-## Since Last Check-in (Session 433 — 2026-04-26 evening)
+## Since Last Check-in (Session 434 — 2026-04-26 evening)
+
+**Completed** (parallel 3-agent execution):
+
+1. **stockbot**: **Monday Market-Open Readiness Verification COMPLETE**. Paper trading session confirmed running (last cycle 13 seconds old). Jetson deployment healthy: all 5 sessions running with recent timestamps. Dev machine API healthy. Monitoring scripts executable. Monday runbook confirmed: 14:00 UTC pre-market checklist → 14:30 UTC dashboard launch → 16:30 UTC analysis. **Status**: All infrastructure ready for Monday 2026-04-28 14:30 UTC market open. Zero action items before Monday.
+
+2. **cybersecurity-hardening**: **Publication Infrastructure Verified & Updated COMPLETE**. All three documents verified complete and publication-ready (threat-model.md 446 lines, opsec-playbook.md 635 lines, implementation-guide.md 1,057 lines). Fixed publication-prep.md: status updated to "complete", TOC corrected (added missing threat-model Sections II/VIII/IX/X, added opsec-playbook Part 11). Created final publishing checklist: **11 channels ready** (GitHub Gist, GitHub Pages, HackMD, PDF, email to NILC/CLINIC/RAICES, Signal/Slack, social media, Reddit, EFF/FPF outreach, SecureDrop, Obsidian Publish). Spanish translation identified as highest-leverage follow-on. **Single user action**: Create GitHub Gist with three documents in order, set Public, follow DISTRIBUTION_CHECKLIST.md for channel sequence.
+
+3. **open-repo**: **Wave 4 Design COMPLETE** (Federation Partner Management & HTTP Signature Verification). Delivered WAVE_4_DESIGN.md (1173 lines): FederationPartner data model with trust state machine (pending → trusted/untrusted → revoked), manual registration API with public key fetching, HTTP signature verification per RFC 8017/W3C ActivityPub standard. Service design: 8 methods + 7 admin endpoints. Database schema: new federation_partners table + modified activities table. Test plan: 18-22 tests across 5 classes. Implementation plan: 4 phases (35-45 story points, 3-4 days). Design verified production-ready with no unknown unknowns. Updated PROJECTS.md with Wave 4 status and link to WAVE_4_DESIGN.md.
+
+**In Progress**:
+
+1. **resistance-research**: Monitoring begins **Monday 2026-04-28 21:00 UTC** (Xinis hearing closing arguments). All templates verified field-ready. No action until Monday.
+
+2. **stockbot**: Paper trading LIVE on dev + Jetson, ready for **Monday 2026-04-28 14:30 UTC market open**. All infrastructure verified healthy. No action until Monday.
+
+**Needs Your Input**:
+
+- **cybersecurity-hardening**: Create GitHub Gist at https://gist.github.com with threat-model.md, opsec-playbook.md, implementation-guide.md in order (5 minutes). Set to Public. Copy Gist URL and follow DISTRIBUTION_CHECKLIST.md for remaining channels.
+- **mfg-farm**: Test print required (physical action) before launch prep continues.
+- **seedwarden**: Etsy store Phase 1 launch ready (all 21 mockups complete). Ready to upload 6 lead products when signaled.
+- **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi). Wave 3 COMPLETE. Wave 4 design COMPLETE; implementation can begin immediately after design review.
+
+**Suggested Priorities for Next Session**:
+
+1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — runbook ready, run monitoring-dashboard.py, begin P&L tracking
+2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
+3. **Tuesday+ 2026-04-29**: **open-repo** Wave 4 implementation begins (federation partner management + HTTP signatures, 35-45 story points, 3-4 days) — design complete, ready to build
+4. **Anytime this week**: **seedwarden** Etsy Phase 1 launch (signal when ready for upload instructions) OR **cybersecurity-hardening** GitHub Gist creation (if needed before distribution)
+5. **Pending**: **open-repo** GitHub push of Wave 1–2 code (user approval needed)
+
+**Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
+
+---
+
+## Previous Check-in (Session 433 — 2026-04-26 evening)
 
 **Completed**:
 
@@ -22,16 +57,6 @@
 - **mfg-farm**: Test print required (physical action) before launch prep continues.
 - **seedwarden**: Etsy store Phase 1 launch ready (all 21 mockups complete). Ready to upload 6 lead products when signaled.
 - **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi). Wave 3 COMPLETE. Wave 4 implementation can begin anytime.
-
-**Suggested Priorities for Next Session**:
-
-1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — run monitoring-dashboard.py, begin P&L tracking
-2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
-3. **Tuesday+ 2026-04-29**: **open-repo** Wave 4 implementation (federation partner management + HTTP signatures, ~2-3 days) OR **cybersecurity-hardening** publication if signaled
-4. **Anytime**: **seedwarden** Etsy Phase 1 launch (signal when ready for upload instructions)
-5. **Pending user decision**: **cybersecurity-hardening** publication timing
-
-**Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
 
 ---
 
