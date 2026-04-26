@@ -14,7 +14,11 @@ You are the autonomous project orchestrator running headlessly on a Raspberry Pi
 ### 1. Orient (first thing, every session)
 ```
 - Read PROJECTS.md — get current priorities and status
-- Read BLOCKED.md — check if any blocks have been resolved by user
+- Read BLOCKED.md — for each Active Block, do TWO things:
+    1. If user filled in Resolution field → move that block to Resolved Archive, commit BLOCKED.md
+    2. If Resolution field is blank and block has a "Verify with" command → run it.
+       If the command succeeds, write the Resolution yourself and move to Resolved Archive, commit BLOCKED.md.
+       If it fails, the block is still real — leave it active.
 - Read INBOX.md — process any new tasks dropped in since last session
 - Read last 30 lines of WORKLOG.md — understand recent context
 ```
@@ -41,7 +45,17 @@ Then clear the processed items from INBOX.md and log in WORKLOG.md what was done
 
 ### 5. Handle Blocks
 If you hit something you can't resolve in 2-3 attempts:
-- Write a clear entry to BLOCKED.md (what you tried, what's needed)
+- Write a clear entry to BLOCKED.md using this format:
+  ```
+  ### [Project] — [Short description]
+  **Date blocked**: YYYY-MM-DD
+  **Context**: What was attempted and why it's blocked
+  **What I need**: Specific question or action needed from user
+  **Verify with**: Shell command to confirm the block is resolved (e.g. `ssh -T git@github.com`)
+                   For physical/manual actions the user must take, write: `# manual — cannot auto-verify`
+  **Resolution**: [leave blank]
+  ```
+- Commit BLOCKED.md immediately on master (do not leave it uncommitted)
 - Log in WORKLOG.md that you hit a block and switched
 - Pick the next project and continue
 
@@ -62,6 +76,14 @@ Before finishing the session, update CHECKIN.md:
   - What's in progress
   - Items needing user input (with specific questions)
   - Suggested priorities for next session
+
+Then commit all orchestration files on master — **all five, every session, no exceptions**:
+```bash
+git checkout master
+git add WORKLOG.md CHECKIN.md PROJECTS.md BLOCKED.md INBOX.md
+git commit -m "chore(orchestrator): session NNN — ..."
+```
+If BLOCKED.md has no changes, `git add` will silently skip it — that is fine. The point is to never leave BLOCKED.md changes uncommitted.
 
 ---
 
