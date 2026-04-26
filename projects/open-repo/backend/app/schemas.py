@@ -189,6 +189,28 @@ class UserEndorsementResponse(BaseModel):
     endorsement: Optional[EndorsementResponse] = None
 
 
+class VoteCountBreakdown(BaseModel):
+    """Vote count breakdown with local, remote, and source breakdown."""
+
+    local: int = Field(0, description="Local votes from this node")
+    remote: int = Field(0, description="Remote votes from federation partners")
+    total: int = Field(0, description="Total votes (local + remote)")
+    breakdown: Dict[str, int] = Field(
+        default_factory=dict,
+        description="Vote count by source node URL"
+    )
+
+
+class AggregatedEndorsementStatsResponse(BaseModel):
+    """Comprehensive aggregated endorsement statistics with local/remote breakdown."""
+
+    item_cid: str
+    upvote_count: VoteCountBreakdown
+    downvote_count: VoteCountBreakdown
+    flag_count: VoteCountBreakdown
+    score: int = Field(0, description="Upvotes - downvotes (local + remote)")
+
+
 # ============================================================================
 # Phase 3: Contribution & Moderation Schemas
 # ============================================================================

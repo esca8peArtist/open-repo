@@ -3,6 +3,8 @@
 import json
 import hashlib
 import os
+import asyncio
+import logging
 from typing import Optional, Dict, Any, Tuple
 from datetime import datetime, timedelta
 from fastapi import APIRouter, Depends, HTTPException, Query, Body
@@ -23,6 +25,7 @@ from app.schemas import (
     EndorsementStatsResponse,
     EndorsementAuditResponse,
     UserEndorsementResponse,
+    AggregatedEndorsementStatsResponse,
     ContributionCreateRequest,
     ContributionResponse,
     ContributionListResponse,
@@ -39,6 +42,7 @@ from app.schemas import (
 )
 from app.services.search_service import get_search_service
 from app.services.endorsement_service import EndorsementService
+from app.services.endorsement_propagation_service import EndorsementPropagationService
 from app.services.contribution_service import (
     ContributionService,
     ReviewService,
@@ -61,6 +65,7 @@ from app.schemas import (
 )
 from app import __version__
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
@@ -357,6 +362,7 @@ async def create_endorsement(
 
     Endorsement types: upvote, downvote, flag
     If the user already has an endorsement, it will be updated.
+    Triggers Announce activity generation for federation partners.
     """
     # Verify item exists
     result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
@@ -371,6 +377,34 @@ async def create_endorsement(
         user_id=request.user_id,
         endorsement_type=request.endorsement_type,
     )
+
+    # NEW: Generate and propagate Announce activity
+    try:
+        node_url = get_node_url()
+        private_key, _ = await _get_or_create_node_keys(db, node_url)
+
+        activity = await EndorsementPropagationService.generate_announce_activity(
+            db=db,
+            item_cid=cid,
+            user_id=request.user_id,
+            endorsement_type=request.endorsement_type,
+            node_url=node_url,
+            private_key=private_key,
+        )
+
+        # Spawn async task to send Announce (fire-and-forget)
+        asyncio.create_task(
+            EndorsementPropagationService.send_announce_to_federation_partners(
+                db=db,
+                activity=activity,
+                private_key=private_key,
+            )
+        )
+
+        logger.info(f"Announce activity generated for endorsement: {activity.activity_id}")
+    except Exception as e:
+        # Log error but don't fail the endorsement
+        logger.error(f"Failed to propagate endorsement: {e}")
 
     return EndorsementResponse.from_orm(endorsement)
 
@@ -392,6 +426,26 @@ async def get_endorsement_stats(
 
     stats = await EndorsementService.get_endorsement_stats(db=db, item_cid=cid)
     return EndorsementStatsResponse(**stats)
+
+
+@router.get("/api/items/{cid}/endorsements/aggregated", response_model=AggregatedEndorsementStatsResponse)
+async def get_aggregated_endorsement_stats(
+    cid: str,
+    db: AsyncSession = Depends(get_db),
+):
+    """Get aggregated endorsement statistics with local/remote breakdown.
+
+    Returns upvote, downvote, and flag counts broken down by local vs remote sources,
+    including vote source breakdown by federation partner node.
+    """
+    # Verify item exists
+    result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
+    item = result.scalar_one_or_none()
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    stats = await EndorsementPropagationService.get_all_vote_stats(db=db, item_cid=cid)
+    return AggregatedEndorsementStatsResponse(item_cid=cid, **stats)
 
 
 @router.get("/api/items/{cid}/endorsements/my-endorsement", response_model=UserEndorsementResponse)
@@ -425,14 +479,69 @@ async def delete_user_endorsement(
     user_id: str = Query(..., description="User identifier"),
     db: AsyncSession = Depends(get_db),
 ):
-    """Delete a user's endorsement for an item."""
+    """Delete a user's endorsement for an item.
+
+    Triggers Undo activity generation for associated Announce.
+    """
     # Verify item exists
     result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
     item = result.scalar_one_or_none()
     if not item:
         raise HTTPException(status_code=404, detail="Item not found")
 
+    # Find the Announce activity for this endorsement (if it exists)
+    announce_activity = None
+    try:
+        result = await db.execute(
+            select(Activity).where(
+                (Activity.activity_type == ActivityType.ANNOUNCE)
+                & (Activity.local == 1)  # Local announcements only
+            )
+        )
+        activities = result.scalars().all()
+
+        # Find the one matching this item and user
+        for activity in activities:
+            content = activity.activity_data.get("content", {})
+            if (
+                content.get("item_cid") == cid
+                and content.get("user_id") == user_id
+            ):
+                announce_activity = activity
+                break
+    except Exception as e:
+        logger.warning(f"Failed to find Announce activity for endorsement: {e}")
+
+    # Delete the endorsement
     await EndorsementService.delete_endorsement(db=db, item_cid=cid, user_id=user_id)
+
+    # NEW: Generate and propagate Undo activity
+    if announce_activity:
+        try:
+            node_url = get_node_url()
+            private_key, _ = await _get_or_create_node_keys(db, node_url)
+
+            undo_activity = await EndorsementPropagationService.generate_undo_activity(
+                db=db,
+                announce_activity_id=announce_activity.activity_id,
+                node_url=node_url,
+                private_key=private_key,
+            )
+
+            # Spawn async task to send Undo (fire-and-forget)
+            asyncio.create_task(
+                EndorsementPropagationService.send_announce_to_federation_partners(
+                    db=db,
+                    activity=undo_activity,
+                    private_key=private_key,
+                )
+            )
+
+            logger.info(f"Undo activity generated for endorsement: {undo_activity.activity_id}")
+        except Exception as e:
+            # Log error but don't fail the deletion
+            logger.error(f"Failed to propagate undo: {e}")
+
     return None
 
 
@@ -962,6 +1071,7 @@ async def receive_activity(
     """ActivityPub inbox endpoint - receive activities from federation partners.
 
     Validates HTTP signature and stores activity in database.
+    Handles Announce/Undo activities for vote propagation.
     """
     try:
         activity_type = activity.get("type", "Unknown")
@@ -977,22 +1087,46 @@ async def receive_activity(
             # Already processed, return success
             return {"status": "success", "message": "Activity already processed"}
 
-        # Store activity in database
+        # Create activity record
         activity_record = Activity(
             activity_type=activity_type,
             activity_id=activity_id,
             actor_url=actor_url,
-            object_id=object_data.get("id") if isinstance(object_data, dict) else None,
+            object_id=object_data.get("id") if isinstance(object_data, dict) else object_data,
             object_data=object_data if isinstance(object_data, dict) else None,
             activity_data=activity,
             local=0,  # Received from remote
         )
-        db.add(activity_record)
-        await db.commit()
 
-        return {"status": "success", "message": f"Received {activity_type} activity"}
+        # Handle special processing for Announce/Undo activities
+        if activity_type == "Announce":
+            success = await EndorsementPropagationService.ingest_announce_activity(
+                db=db,
+                activity=activity_record,
+            )
+            if success:
+                return {"status": "success", "message": "Announce activity ingested"}
+            else:
+                return {"status": "error", "message": "Failed to ingest Announce activity"}
+
+        elif activity_type == "Undo":
+            success = await EndorsementPropagationService.ingest_undo_activity(
+                db=db,
+                activity=activity_record,
+            )
+            if success:
+                return {"status": "success", "message": "Undo activity ingested"}
+            else:
+                return {"status": "error", "message": "Failed to ingest Undo activity"}
+
+        else:
+            # Generic activity handling
+            db.add(activity_record)
+            await db.commit()
+            return {"status": "success", "message": f"Received {activity_type} activity"}
 
     except Exception as e:
+        logger.error(f"Error processing activity: {e}")
         return {"status": "error", "message": str(e)}
 
 
