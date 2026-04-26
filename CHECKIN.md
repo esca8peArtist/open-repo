@@ -8,44 +8,76 @@
 
 ## Since Last Check-in
 
-**Period**: 2026-04-26 (Session 411 — orchestrator)
-**Sessions run**: 411
+**Period**: 2026-04-26 (Session 412 — orchestrator, parallel 3-agent execution)
+**Sessions run**: 412
+**Token budget**: 36K used of 200K weekly (~18%)
 
-### Accomplished (Session 411 — orchestrator)
+### Accomplished (Session 412 — orchestrator)
 
-#### cybersecurity-hardening — Threat Model + OpSec Playbook (Research Phase COMPLETE)
+#### open-repo — OpenFarm Data Acquisition (COMPLETE)
+- Data source: `raw_crops.json` (32 crops) + `raw_guides.json` (32 guides, 109 stages) already in project
+- Import script fully implemented and tested end-to-end
+- Output: `projects/open-repo/data/openfarm_procedures.jsonl` (32 JSON-LD items, 100% validation pass)
+- Quality: All 32 items have required fields (title, type, license, steps), unique CIDs, 3–5 steps each
+- Sample crops: Potatoes (4 steps, 102d), Garlic (4 steps, 148d), Lettuce (3 steps, 65d)
+- Next: MVP backend implementation can begin using this data
 
-Two foundational documents completed:
+#### resistance-research — Xinis Hearing Monitoring + May Day Immigrant Safety (COMPLETE)
+**Xinis hearing (April 28)**:
+- Case: *Abrego Garcia v. Noem* — civil contempt test (can courts compel executive compliance?)
+- Four simultaneous issues: deposition compliance, contempt findings (judge flagged "bad faith"), SCOTUS return obligation, DOJ Liberia deportation demand
+- Significance: Most important institutional resistance precedent
+- Pre-brief written: `monitoring/2026-04-28-pre-brief.md`
 
-**1. Threat Model** (`threat-model.md`, 440 lines, high-confidence, primary sources)
-- Palantir ecosystem: $970.5M in 2025 federal contracts, $10B Army ESA, 75 consolidated contracts
-- Deployed platforms: ELITE (ICE deportation targeting), ICM (case management), ImmigrationOS (AI-assisted apprehension + social media monitoring), IRS LCA (tax/financial/crypto data mining)
-- Data sources: Medicaid, DMV, USCIS, CLEAR, Thomson-Reuters, IRS, FinCEN, bank statements, crypto wallets, phone records, SEVIS, FBI/DEA/ATF databases
-- DOGE cross-agency consolidation: SSA + IRS + biometrics + voting records + DHS; partially blocked by courts but transfers already occurred
-- Data broker pipeline: Venntel (ad-tech location), LexisNexis Accurint ($9.75M DHS), Babel Street (social media OSINT), Clearview AI ($9.2M ICE)
-- NSA: Section 702 reauthorization (349,823 targets 2025, deadline April 20), PRISM, XKeyScore, upstream backbone collection
-- Law enforcement: ALPR (CBP nationwide), stingrays (warrantless), warrantless location data purchases confirmed
-- Threat matrix: 15 data types, collection methods, warrant status
+**May Day 2026 Action Guide**:
+- Gap identified: No guidance for undocumented participants / ICE enforcement risk
+- New subsection added: "Undocumented Participants & ICE Enforcement Risk" (700–750 words)
+- Content: Before/at/after action framework, rights if encountered by ICE, emergency resources (Freedom for Immigrants hotline, NLG, ILRC, RAICES, city-level legal aid)
+- Integration: Seamlessly inserted between "Legal Rights" and "Employment Protections" sections
+- Status: Guide now PRODUCTION-READY for May 1
 
-Sources: FOIA documents, USASpending.gov, court filings, The Intercept, 404 Media, ACLU, EFF, Amnesty International, government contracts, investigative journalism.
+**New developments** (not in April 24 watch brief):
+- Senate $70B ICE funding reconciliation (April 23) — GOP bypasses filibuster, escalates enforcement entering May Day
+- ICE courthouse arrests walkback (April 24) — operational contradiction between policy and practice
+- April 30 critical deadline: 5pm discovery stay expiration in Xinis case
 
-**2. OpSec Playbook** (`opsec-playbook.md`, 4,800 words, 11 sections)
-- Communications: Signal (usernames, metadata limitations), Briar (no phone number), encrypted email, XMPP/OMEMO, Jami
-- Metadata minimization: Phone alternatives, SIM strategy, location isolation, pattern-of-life counter-measures mapped to Palantir ELITE scoring
-- Network anonymization: Tor (traffic correlation realism, ISP visibility, bridges), VPN (jurisdiction strategy, CLOUD Act vs. GDPR Article 48, Mullvad/ProtonVPN), stacking tradeoffs
-- Device hardening: GrapheneOS vs. iOS (forensics resistance, manufacturer compulsion point), Calyx, Fedora Silverblue, full-disk encryption, firmware/BIOS security, USB/DMA attacks
-- Identity compartmentalization: Separate devices/OS for work/activist/personal, separate credentials, payment isolation, Monero for Tier 3
-- Data at rest: VeraCrypt (plausible deniability law landscape), LUKS, encrypted containers, password managers, hardware tokens
-- Behavioral OpSec: Device discipline, meeting security (TSCM, Faraday bag), financial compartmentalization, communication discipline, vehicle security
-- Legal defense layer: Warrant/subpoena processes, encrypted storage that cannot be compelled, jurisdiction strategy (non-U.S. servers), backup systems
-- Organizational OpSec: Secure team comms (Signal not Slack), role compartmentalization, document sharing (OnionShare), incident response when member arrested
-- Monitoring & threat intelligence: Surveillance detection (Rayhunter for IMSI catchers), threat feeds (EFF, ACLU, 404 Media), red flags, quarterly reassessment
+#### stockbot — Paper Trading Status & Bug Fixes (COMPLETE)
+- Status: Operational, all 4 sessions running cleanly on Jetson (rsi_mean_reversion, sma_crossover, mtf, momentum)
+- DNS failures resolved: already configured with Google + Cloudflare DNS, transient network event cleared
+- Auth/DB session errors fixed: deployed updated `db_manager.py` + `trading_session.py` with price=None guards
+- Local test fixes committed (commit `8919023`): table count 6→9, `closed_trades` key corrected
+- Status: Ready to trade at next US market open (13:30 UTC / 9:30 ET)
+- Pre-existing unrelated test failures identified (13 failures, require separate investigation)
 
-**Tier system**: Tier 1 (journalists/advocates), Tier 2 (activists/organizers), Tier 3 (direct investigation targets). Each recommendation grounded in specific confirmed threats. All limitations documented — honest about what works vs. theater.
+### Needs Your Input
 
-Sources: EFF SSD, Signal protocol docs, GrapheneOS, Tor Project, NACDL, Freedom of the Press Foundation, CLOUD Act analysis, GDPR Article 48, court cases, 30+ verified sources.
+**cybersecurity-hardening — Review & Next Phase**
+Research phase was complete in Session 411: `threat-model.md` (440 lines, Palantir contracts + NSA + data broker ecosystem) and `opsec-playbook.md` (4,800 words, Signal/GrapheneOS/Tor/VeraCrypt + tiered guidance).
 
-**Status**: Research complete, ready for user review. Next phases: quality review, deepening into specific categories (OSINT counter-measures, organizational templates), publication preparation.
+Next phase options:
+1. Quality review pass (spelling, technical accuracy, clarity)
+2. Deepen into specific categories (OSINT counter-measures, TSCM/physical security, organizational incident response)
+3. Publication preparation (table of contents, glossary, quick-reference checklists)
+4. Implementation (e.g., GrapheneOS/Signal/Tor configuration guide)
+
+Please advise which direction to take.
+
+**mfg-farm — Test Print**
+Business plan, CadQuery designs, market research, and listing copy all ready. Still blocked on physical test print of the ModRun rail and clip designs. Once completed, Etsy launch can proceed.
+
+**stockbot — Paper Trading Performance**
+Paper trading is now operational. To assess model performance: share cycle log output or screenshot the Trading page at `http://127.0.0.1:8000` (if running locally).
+
+**seedwarden — PDF Mockup Images**
+All 21 products have content and listing copy complete. Only blocker: PDF mockup images for all listings (critical conversion factor on Etsy).
+
+### Suggested Priorities (Next Session)
+1. **cybersecurity-hardening**: Direction from user (quality review / deepening / publication / implementation).
+2. **resistance-research**: Monitor April 28 Xinis hearing outcome. Monitor April 29 May Day Mass Call. May 1 May Day actions.
+3. **stockbot**: Monitor paper trading performance starting next US market open. Check for signal generation and trade execution.
+4. **open-repo**: Begin MVP backend implementation (FastAPI + PostgreSQL) using completed OpenFarm data.
+
+**Usage**: 36K tokens used this session of 200K weekly budget (~18%). On pace for normal consumption.
 
 ---
 
@@ -92,6 +124,12 @@ Sources: EFF SSD, Signal protocol docs, GrapheneOS, Tor Project, NACDL, Freedom 
 
 ### Needs Your Input
 
+**resistance-research — Senate $70B ICE Funding Reconciliation (April 23, new since last brief)**
+The Senate passed a GOP budget resolution 50-48 on April 23 clearing the path for $70 billion in ICE/Border Patrol funding via reconciliation — bypassing the 60-vote filibuster threshold. This ends the 10-week DHS partial shutdown without Democratic preconditions (warrant requirements for ICE home entry). Homeland Security committees must produce legislation by May 15; Trump's deadline is June 1. This is material: it directly escalates ICE enforcement capacity entering May Day and beyond. Filed in `monitoring/2026-04-28-pre-brief.md`. The watch-brief (`2026-04-28-watch-brief.md`) does not yet cover this development. Consider whether it should be added to the litigation tracker.
+
+**resistance-research — April 28 Pre-Hearing Brief filed**
+`monitoring/2026-04-28-pre-brief.md` ready. Covers: who Xinis is, what charges are before the court, expected outcome range, significance for immigration resistance movement, and the new Senate ICE funding development. Results brief (`2026-04-28-results.md`) to be filed same day after the hearing.
+
 **Cybersecurity-hardening — Review & Next Phase**
 Research phase complete: `threat-model.md` (440 lines, verified threat landscape) and `opsec-playbook.md` (4,800 words, actionable defenses). Both grounded in confirmed government surveillance capabilities (Palantir contracts, NSA Section 702, data broker loopholes, law enforcement tools). 
 
@@ -123,6 +161,18 @@ All 21 products have content and listing copy complete. Only blocker: PDF mockup
 ---
 
 ### History
+
+#### Accomplished (Session 411 — orchestrator)
+
+**cybersecurity-hardening — Threat Model + OpSec Playbook (Research Phase COMPLETE)**
+- Threat Model (`threat-model.md`, 440 lines): Palantir ecosystem ($970.5M contracts), ELITE/ICM/ImmigrationOS/IRS LCA platforms, data sources (Medicaid/DMV/USCIS/CLEAR/IRS), DOGE consolidation, data brokers (Venntel/Accurint/Babel Street/Clearview), NSA Section 702, law enforcement tools (ALPR/stingrays)
+- OpSec Playbook (`opsec-playbook.md`, 4,800 words): Signal/Briar/encrypted email, metadata minimization, Tor/VPN, GrapheneOS/Calyx/Silverblue, identity compartmentalization, VeraCrypt, behavioral OpSec, legal defense layer, organizational OpSec, threat monitoring
+- Tier system: Tier 1 (journalists), Tier 2 (activists), Tier 3 (targets)
+- Status: Ready for user review
+
+---
+
+### History (Sessions 1–410)
 
 #### Accomplished (Sessions 104–105)
 - **resistance-research**: Domain 9 Federalism & Local Democracy deepened (340 lines) — Shelby County § 4(b) mechanism, polling place closures by state, Birmingham wage preemption full litigation arc, Illinois 6,963-unit fragmentation, NPVIC 209 EVs, Swiss/German/Spain/Canada fiscal federalism. 20/22 deepening library.
