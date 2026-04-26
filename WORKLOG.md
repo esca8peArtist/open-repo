@@ -4,6 +4,97 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — Session 423 — Parallel 3-agent execution: Democratic Renewal expansion, market-open monitoring, Phase 2 broker deepening
+
+### resistance-research — Democratic Renewal Proposal: Domains 3, 7, 14 expanded (5 subsections, ~5,000 words)
+
+**Task**: Expand Democratic Renewal Proposal with substantive, primary-sourced subsections in high-impact domains.
+
+**Work completed**:
+- **Domain 3e (Wealth Redistribution)**: American Opportunity Accounts Act (Booker/Pressley). Urban Institute 82% racial wealth gap reduction modeling. IDA matched savings programs, Connecticut pilot evidence, international precedents (UK Child Trust Fund, Canada RESP, Singapore Child Development Accounts). ~900 words.
+- **Domain 3f (Housing as a Justiciable Right)**: HUD 2024 PIT Count (650K+ homeless). Root cause: exclusionary zoning covering 75% of residential land. Four-part reform: statutory right framework (Scotland, South Africa Grootboom), 500K-unit annual production mandate, federal zoning preemption (Minneapolis 2040, Oregon), Social Housing Development Authority (Vienna Wiener Wohnen, Singapore HDB). Fiscal anchor: Rand Housing First cost analysis (5:1 ratio). ~1,100 words.
+- **Domain 7g (Campaign Finance Structural Overhaul)**: $1.9B dark money record (Brennan), $2.7B super PAC record. Legal chain: Buckley→Bellotti→Citizens United→McCutcheon. Three immediate-term vehicles: DISCLOSE Act 2026 (all 47 Democratic Senate co-sponsors), Government By the People 6:1 matching (NYC 8:1 evidence: 40% reduced donor influence), FEC structural reform (5-member no-tie structure). International benchmarks: Canada ($1,725 cap), Germany (no corporate), France (50-60% public), UK (£30M cap). ~1,200 words.
+- **Domain 7h (Congressional Ethics Enforcement)**: Senate Ethics Committee 2025 zero-sanction record. STOCK Act enforcement failure ($200 penalty, zero prosecutions in 13 years). April 2025 tariff trading scandal current instance. Core reform: independent ethics commission (5-member, investigative subpoena authority, prosecution referral). Trading ban: No Getting Rich in Congress Act (individual security prohibition). 5-year revolving door ban. Quarterly electronic disclosure with automated flagging. Anchored in Ziobrowski's 6%/year portfolio outperformance pre-STOCK. ~900 words.
+- **Domain 14g (Prosecutorial Ethics & Accountability)**: Root cause frame: absolute prosecutorial immunity under Imbler v. Pachtman (1976). Evidence: 71% official misconduct in 2024 fully overturned convictions (National Registry). Notre Dame largest-ever Brady study (2025) proving systemic violation patterns. 2003 CPI: 2,012 judicial misconduct findings → 44 bar disciplinary reviews. Reforms: federal Open Evidence Act (Michael Morton Act model), Brady Violation Registry (automatic court referrals, DOJ consent decree authority), limited prosecutorial liability carve-back (fabricated evidence, knowing Brady suppression), state bar tracking federal grant condition, $1B/year Innocence Commission matching grants. International: UK Criminal Cases Review Commission (1997, 28K cases reviewed, 700+ referrals, 450 quashed convictions). ~1,100 words.
+
+**File**: `projects/resistance-research/democratic-renewal-proposal.md` (expanded)
+
+**Commit**: Applied to master. All five subsections primary-source cited (15+ sources verified).
+
+---
+
+### stockbot — Market-Open Monitoring Infrastructure (3 deliverables)
+
+**Task**: Build monitoring setup for Monday 2026-04-28 market open (~14:30 UTC) and first 2 trading days.
+
+**Deliverables created**:
+
+1. **market-open-checklist.md**: 11-step pre-market runbook (14:00–14:25 UTC Monday). Each step has exact command and PASS criterion. Covers: dev API health, dev session `33a4afe676cae12a` liveness + heartbeat staleness, Jetson SSH reachability, Docker container status (stockbot + stockbot-web), Jetson API health, all 5 Jetson sessions with expected IDs tabulated, stacker model-load log, Alpaca connectivity, dashboard accessibility, pre-open indicator dry-run (14:25), post-open first-cycle confirmation (14:35). Every failure step includes recovery command.
+
+2. **scripts/monitoring-dashboard.py**: Live Rich terminal dashboard. Polls every 30 seconds (configurable). Panels:
+   - Alert box (red if any active condition, green otherwise)
+   - Stacker side-by-side: dev `33a4afe676cae12a` vs Jetson `b4e397af3a3c12a5`, both AAPL_h10_lgbm_ho fields
+   - All dev sessions table (status, cycle age, trades, P&L $, P&L %)
+   - Jetson sessions table (via SSH, direct HTTP times out from raspby1) + Docker status
+   - Cumulative realized P&L from equity-curve API
+   - Recent cycle log (last 8 entries, market_open flag, signals per ticker)
+   - Alert thresholds: cycle age > 90s, any session not running, Jetson stacker missing, Alpaca unreachable, P&L hourly swing > ±5% initial capital
+   - `--no-jetson` flag to skip SSH checks if Jetson offline
+   - Requires `rich` library (added to requirements-optional.txt)
+
+3. **scripts/monday-log-analysis.py**: EOD log parser for `trading_YYYYMMDD.log` and `live_trading_YYYYMMDD.log`. Usage: `python scripts/monday-log-analysis.py --date 20260428`. Outputs:
+   - Cycle counts (market-open vs closed split)
+   - First market-open cycle timestamp
+   - Stale cycle count
+   - Signal counts by ticker and direction
+   - Full trade execution table (time/session/action/qty/price/reason)
+   - Alpaca order submit/fail counts
+   - Stacker signal event count
+   - Error/warning tallies (capped 50 each)
+   - Session lifecycle events
+   - Rich table output (JSON fallback with `--json` flag for piping)
+   - Validated against 58k-line 2026-04-26 log
+
+**Files**: All three committed to `projects/stockbot/` on master.
+
+**Ready for Monday market open**.
+
+---
+
+### cybersecurity-hardening — Phase 2 Tier B/C Broker Deepening (459 lines)
+
+**Task**: Create Phase 2 companion reference extending broker intelligence beyond Tier A "no opt-out" brokers in implementation-guide.md Part 0.
+
+**File created**: `phase2-tier-b-c-deepening.md` (459 lines, committed to master)
+
+**Coverage**:
+
+**Part 1 — Tier B Brokers (8 covered)**:
+- **TransUnion/TLOxp** (HIGHEST PRIORITY): Active ICE contract (Sept 2023–2028), reaches 95% US population across 100B+ data points. Brennan Center FOIA obtained LE pricing schedule confirming per-query address history + associate mapping access. TransUnion breached July 2025 (4.4M SSNs). Countermeasure: credit freeze is most actionable; LE product tier unreachable by consumer opt-out.
+- **CoreLogic/Cotality** (property + tenant screening, rebranded March 2025): California CCPA deletion confirmed with suppression flag option (prevents re-ingestion from public records). Non-CA residents can only dispute inaccurate data, not delete. Explicit suppression flag request required.
+- **Equifax Workforce Solutions (The Work Number)**: Payroll data synced automatically from ADP, Gusto, Workday every 2 weeks. Covers virtually entire salaried US workforce. Free data freeze at employees.theworknumber.com highest-leverage action: processed within 3 days, no cost, removes frictionless query access for ICE December 2025 skip-tracing contractors (13 companies, up to $1.2B, 50K names/month).
+- **Samba TV** (active federal litigation, wiretap claims not dismissed, April 2026): Sony Bravia TVs require two separate toggles: Samba Interactive TV + Google Usage & Diagnostics (guides often miss second toggle).
+- **Acxiom**: New January 2025 Virginia federal class action for unconsented data sales. Adds litigation pressure making Part 0 opt-out more time-sensitive.
+- **LexisNexis** (Tier C moved to Part 1 for 2026 updates): $22.1M ICE contract renewed (new USASpending.gov award), December 2024 breach (364K SSNs + driver's licenses, undetected months) means submitting SSN to opt-out system carries documented breach-chain risk. Most important individual risk calculus for readers who haven't completed opt-out.
+
+**Part 2 — Tier C Brokers**:
+- Coverage of lower-risk or harder-to-access brokers with 2026 contract status and breach history.
+
+**Part 3 — Policy Watch**:
+- SECURE Data Act preemption unpacked against each tier
+- California SB 361 (now in effect): brokers self-report government data relationships to CPPA, creating disclosure record useful for advocates
+
+**Part 4 — Bypass Techniques**:
+- Skip-tracing contractor layer documented as distinct scenario: opt-outs degrade profile density but cannot block LE product access
+- Explicitly names out-of-scope items (IRS data sharing, DMV records, DOGE integration) with cross-references to threat-model.md
+- Keeps core trilogy intact without duplication
+
+**Sources**: 8+ primary sources (AFSC Investigate, Brennan Center FOIA, TechCrunch, FTC PADFAA letters, IAPP, ICE skip-tracing contracts, Law360, USASpending.gov)
+
+**Status**: Production-ready companion reference. Can be published post-trilogy if user chooses Phase 2 deepening, or left as reference material.
+
+---
+
 ## 2026-04-26 — Session 422 — Parallel 2-agent execution: resistance-research + cybersecurity-hardening
 
 ### resistance-research — Democratic Renewal Proposal Expansion (5 new subsections, ~4,300 words)

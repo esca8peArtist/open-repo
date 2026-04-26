@@ -4,9 +4,17 @@
 
 ---
 
-## Since Last Check-in (Session 422 — 2026-04-26 08:15)
+## Since Last Check-in (Session 423 — 2026-04-26 20:00)
 
-**Completed** (parallel 3-agent verification):
+**Completed** (parallel 3-agent expansion + infrastructure):
+
+1. **resistance-research**: **Democratic Renewal Proposal expanded** (Domains 3, 7, 14). Added 5 new subsections (~5,000 words total): Domain 3e (wealth redistribution + American Opportunity Accounts), 3f (housing as a justiciable right, Vienna/Singapore models), 7g (campaign finance structural overhaul, international benchmarks), 7h (congressional ethics enforcement, STOCK Act failure analysis), 14g (prosecutorial ethics & accountability, Imbler v. Pachtman root cause, 450-conviction CCRC precedent). All primary-source cited (15+ sources verified). Committed to master.
+
+2. **stockbot**: **Market-open monitoring infrastructure COMPLETE** (3 deliverables). (a) market-open-checklist.md: 11-step pre-market runbook for Monday 14:00-14:25 UTC with exact commands and PASS criteria. (b) monitoring-dashboard.py: Live Rich terminal dashboard (30s poll interval), renders stacker side-by-side comparison, all sessions status, real-time P&L tracking, alert thresholds (cycle age >90s, session health, ±5% hourly swing). (c) monday-log-analysis.py: EOD parser for trading_YYYYMMDD.log, extracts cycle counts, signal breakdown, full trade execution table, Alpaca order metrics, error tallies. All committed to master. **Ready for Monday market open 2026-04-28 14:30 UTC.**
+
+3. **cybersecurity-hardening**: **Phase 2 Tier B/C Broker Deepening** (459 lines). Created phase2-tier-b-c-deepening.md covering: TransUnion/TLOxp (HIGHEST PRIORITY: active ICE contract 2023-2028, 95% reach, Brennan FOIA LE pricing), CoreLogic/Cotality (property screening, CA CCPA suppression flag path), Equifax Workforce Solutions (payroll data, free freeze at employees.theworknumber.com), Samba TV (Sony Bravia wiretap litigation), Acxiom (Jan 2025 Virginia class action), LexisNexis (renewed ICE contract, Dec 2024 breach risk), Tier C deepening, SECURE Data Act policy watch, skip-tracing bypass techniques, cross-references to threat-model.md. Companion reference ready for post-trilogy Phase 2 deepening OR standalone publication. Committed to master.
+
+**Previously Completed** (Session 422 — 2026-04-26 08:15):
 
 1. **stockbot**: **Paper trading session VERIFIED LIVE** (session `33a4afe676cae12a`, AAPL_h10_lgbm_ho stacker). Confirmed: API operational on port 8000, cycling every ~60 seconds, started 2026-04-26T05:58:22Z, last cycle 2026-04-26T07:06:51Z. Zero trades (market closed Sunday). **Jetson deployment already COMPLETE** from Session 421: container healthy, `/src/` volume-mounted and synced, all 5 sessions running, no rebuild/rsync needed. Ready for Monday market open ~14:30 UTC 2026-04-28.
 
