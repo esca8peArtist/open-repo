@@ -203,3 +203,8 @@ TODO.txt
 # Development artifacts (should not be in repo)
 package-lock.json
 uv.lock
+
+# Usage monitor runtime state (not committed)
+.usage-monitor-state.json
+USAGE_PAUSE
+USAGE_PAUSE_OVERRIDE

@@ -75,12 +75,22 @@ while true; do
   bash "$WORKSPACE/scripts/generate-orchestrator-state.sh" >> "$LOG_FILE" 2>&1 || true
 
   # ── Pre-session: pause/budget gate ────────────────────────────────────────
-  # Use 'if' form so set -e doesn't kill the script when usage-check exits 1
-  if USAGE_CHECK=$(python3 "$WORKSPACE/scripts/usage-check.py" --check 2>&1); then
+  # Exit codes from usage-check.py --check:
+  #   0 = proceed normally
+  #   1 = over 90% budget — hard throttle, sessions blocked
+  #   2 = paused at 80% by usage-monitor — user can override via USAGE_PAUSE_OVERRIDE
+  USAGE_CHECK=$(python3 "$WORKSPACE/scripts/usage-check.py" --check 2>&1)
+  USAGE_EXIT=$?
+
+  if [ "$USAGE_EXIT" -eq 0 ]; then
     echo "[$(date)] Usage gate: OK. Starting Claude session..." | tee -a "$LOG_FILE"
+  elif [ "$USAGE_EXIT" -eq 2 ]; then
+    echo "[$(date)] Usage gate: PAUSED (80% gate). $USAGE_CHECK" | tee -a "$LOG_FILE"
+    echo "[$(date)] To override: touch $WORKSPACE/USAGE_PAUSE_OVERRIDE" | tee -a "$LOG_FILE"
+    sleep "$PAUSE_BETWEEN_SESSIONS"
+    continue
   else
-    echo "[$(date)] Usage gate: $USAGE_CHECK — skipping session." | tee -a "$LOG_FILE"
-    echo "[$(date)] Next check in ${PAUSE_BETWEEN_SESSIONS}s..." | tee -a "$LOG_FILE"
+    echo "[$(date)] Usage gate: THROTTLED. $USAGE_CHECK" | tee -a "$LOG_FILE"
     sleep "$PAUSE_BETWEEN_SESSIONS"
     continue
   fi

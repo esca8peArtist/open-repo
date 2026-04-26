@@ -27,10 +27,12 @@ from collections import defaultdict
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
-PROJECTS = REPO_ROOT / "PROJECTS.md"
+PROJECTS  = REPO_ROOT / "PROJECTS.md"
+PAUSE_FILE    = REPO_ROOT / "USAGE_PAUSE"
+OVERRIDE_FILE = REPO_ROOT / "USAGE_PAUSE_OVERRIDE"
 
 # Claude Code stores sessions at ~/.claude/projects/<encoded-cwd>/*.jsonl
-# Encoded path: absolute path with / replaced by -
+# Encoded path: absolute path with / replaced by - (including underscores)
 CWD_ENCODED = str(REPO_ROOT).replace("/", "-").replace("_", "-")
 SESSION_DIR = Path.home() / ".claude" / "projects" / CWD_ENCODED
 
@@ -319,9 +321,20 @@ if __name__ == "__main__":
     if "--json" in args:
         print(json.dumps(report, indent=2, default=str))
     elif "--check" in args:
+        # Exit 1 = over 90% budget (hard stop)
+        # Exit 2 = paused at 80% by usage-monitor (soft stop; user can override)
+        # Exit 0 = proceed
         if report["status"]["over_any"]:
             print(f"THROTTLE: {report['recommendation']}")
             sys.exit(1)
+        if PAUSE_FILE.exists():
+            if OVERRIDE_FILE.exists():
+                print(f"OVERRIDE ACTIVE: paused at 80% but override file present — proceeding.")
+                sys.exit(0)
+            pct = max(report["pct"]["sonnet"], report["pct"]["all_models"])
+            print(f"PAUSED: usage at {pct:.1f}% — orchestrator held at 80% gate. "
+                  f"Override: touch {OVERRIDE_FILE}")
+            sys.exit(2)
         print(f"OK: {report['recommendation']}")
         sys.exit(0)
     elif "--checkin" in args:

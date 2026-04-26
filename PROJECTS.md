@@ -10,18 +10,27 @@
 
 ## Usage Budget
 
-> The orchestrator checks this at the start of every session via `scripts/usage-check.py`.
-> Adjust the numbers below to change throttling behaviour.
-> To check current usage manually: **claude.ai → Settings → Usage & billing**
+> Tracking is **token-based** (output tokens from `~/.claude/projects/.../  *.jsonl`).
+> Plan resets every **Tuesday at 00:00 UTC**.
+> To manually check: **claude.ai → Settings → Usage & billing**
+> To recalibrate limits: `python3 scripts/usage-check.py --calibrate <sonnet_pct> <all_pct>`
 
-- **Weekly session budget: 200**  ← raised 2026-04-26 to use remaining Max (5x) plan quota before Tue reset
-- **Daily session budget: 50**    ← raised 2026-04-26 (was 5)
+**Calibrated limits** (back-calculated from UI — update after each weekly reset):
+- **Sonnet token limit: 8,935,000**  ← calibrated 2026-04-26 (UI showed 22%)
+- **All models token limit: 15,114,000**  ← calibrated 2026-04-26 (UI showed 14%)
 
-**Throttle rules (orchestrator must follow these):**
-1. Run `python3 scripts/usage-check.py --check` at the start of each session.
-2. If exit code is 1 (over budget): log "Usage budget exceeded — idling." in WORKLOG.md, update CHECKIN.md usage line, and stop without doing any project work.
-3. If exit code is 0 but warning (75%+ of weekly budget used): complete one task then idle — do not chain sessions.
-4. Always update the usage line in CHECKIN.md using `python3 scripts/usage-check.py --checkin` before going idle.
+**Alert thresholds** (handled by `scripts/usage-monitor.py`, runs every 30 min via cron):
+- Every 10% crossed → Discord notification
+- 80% → Orchestrator **paused** (`USAGE_PAUSE` file created); Discord alert with override command
+- 80% override → `touch /home/awank/dev/SuperClaude_Framework/USAGE_PAUSE_OVERRIDE` (expires at 90% or Tuesday reset)
+- 90% → Hard throttle, override revoked; sessions blocked until Tuesday
+
+**Throttle rules (orchestrator must follow at session start):**
+1. Run `python3 scripts/usage-check.py --check`
+2. Exit 0 → proceed normally
+3. Exit 1 (≥90%) → log "Usage throttled — idling." in WORKLOG.md, update CHECKIN.md, stop
+4. Exit 2 (80% pause) → log "Usage paused at 80% — waiting for user override or Tuesday reset.", update CHECKIN.md, stop
+5. Always update the usage line in CHECKIN.md with `python3 scripts/usage-check.py --checkin` before going idle
 
 ---
 
