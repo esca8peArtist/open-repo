@@ -847,6 +847,42 @@ This timeline is the evidentiary core of Judge Crenshaw's pending vindictive-pro
 
 ---
 
+### Texas SB 4 — 5th Circuit En Banc Vacates Injunction on Standing (April 24, 2026)
+
+**Case**: State of Texas v. United States; intervenor challenge to SB 4 (Texas Senate Bill 4, 2023)
+
+**What SB 4 does**: Creates a state criminal misdemeanor for illegal entry into Texas from Mexico; authorizes Texas law enforcement to arrest individuals suspected of unauthorized border crossing; requires state magistrate judges to order deportation to Mexico in lieu of prosecution or upon conviction.
+
+**Ruling**: On April 24, 2026, the en banc 5th U.S. Circuit Court of Appeals ruled 10-7 that plaintiffs — a coalition including Las Americas Immigrant Advocacy Center, El Paso County, and civil rights organizations — lacked standing to challenge SB 4. The court vacated the preliminary injunction that had kept SB 4 on hold, clearing the way for Texas to begin enforcement. The ruling did not address the merits of whether SB 4 is constitutional.
+
+**What standing means here**: The 5th Circuit found that the plaintiffs could not demonstrate they had suffered the requisite legal injury to bring a challenge. By deciding on procedural standing grounds rather than constitutional merits, the court left the underlying constitutional question — whether state immigration enforcement authority of this type is preempted by federal law — unresolved. New plaintiffs with different standing arguments could bring fresh challenges.
+
+**Practical effect**: Texas may now enforce SB 4. Individuals arrested under SB 4 face a state misdemeanor prosecution in addition to any federal immigration proceedings. The law also allows state judges to order removal to Mexico — an assertion of state authority over a function historically reserved to the federal government.
+
+**Why it matters**: SB 4's enforcement creates a new enforcement layer on top of federal ICE operations in Texas. From a resistance-research perspective: (1) it increases the immigration enforcement risk for communities near the Texas-Mexico border even in the current period of declining ICE arrest rates nationally; (2) the standing ruling leaves the constitutional question open for a challenge by plaintiffs with clearer standing (individuals arrested under SB 4 would have obvious standing); (3) a successful SB 4 model could be adopted by other states, creating a patchwork of state immigration enforcement systems that interact unpredictably with federal proceedings.
+
+**ACLU response**: "The 5th Circuit took the easy way out. By avoiding the core question of S.B. 4's unlawfulness, it left the road wide open for S.B. 4 to continue its reign of fear and targeted profiling against migrants and their families." — Nicolas Palazzo, Las Americas Immigrant Advocacy Center.
+
+**Sources**: [Texas Tribune — 5th Circuit clears SB 4 enforcement (April 24, 2026)](https://www.texastribune.org/2026/04/24/texas-immigration-law-sb-4-5th-circuit-court-of-appeals-ruling/) · [Hoodline — 5th Circuit clears Texas cops to use SB 4 (April 24, 2026)](https://hoodline.com/2026/04/fifth-circuit-clears-texas-cops-to-use-hotly-contested-sb-4/) · [ACLU press release — Fifth Circuit rules challenge must be dismissed on procedural grounds](https://www.aclu.org/press-releases/fifth-circuit-rules-challenge-to-extreme-texas-immigration-law-must-be-dismissed-on-procedural-grounds) · [FWD.us statement](https://www.fwd.us/news/fwd-us-statement-on-fifth-circuits-decision-to-allow-texas-sb-4-immigration-enforcement-law/) · [Prism News — 5th Circuit clears Texas law, sets up appeal](https://www.prismnews.com/news/5th-circuit-clears-texas-immigration-arrest-law-setting-up)
+
+---
+
+### CBP One Parole Revocation — Judge Burroughs Blocks Mass Cancellation (April 1, 2026)
+
+**Court**: U.S. District Court, District of Massachusetts — Judge Allison Burroughs
+
+**What happened**: In April 2025, the Trump administration abruptly terminated parole for every person who had entered the United States through CBP One — the Biden-era app that allowed approximately 900,000 people to schedule legal border appointments and receive temporary parole status while pursuing asylum. The termination was issued via mass email, effective immediately, revoking work authorization and directing people to leave the U.S. with no individual assessment or hearing.
+
+**Ruling**: On April 1, 2026, Judge Burroughs issued a 25-page ruling that: (1) found the mass termination unlawful, holding the Trump administration violated federal law by terminating parole "without observing the process mandated by statute and by their own regulations"; (2) vacated the mass terminations; and (3) ordered federal officials to restore parole status for the approximately 900,000 people in the class. Burroughs held that CBP does not have "unfettered discretion to terminate parole" and must find that parole's "humanitarian or public-benefit purposes have been served" before revoking it on an individual basis.
+
+**Why it matters**: (1) The ruling is the largest single restoration of immigration status in recent memory — 900,000 people had their parole reinstated by a single district court order. (2) It directly rejects the administration's theory that it can revoke mass-granted parole wholesale through administrative email without any individual process. (3) The ruling applies procedural due process principles to parole revocation — a category the administration has argued is entirely discretionary. (4) From the litigation pattern perspective, this is the third major immigration status restoration ruling after the Minnesota refugee TRO (Operation PARRIS) and the ongoing CBP warrantless-arrest injunctions — courts are building a consistent body of law that discretionary immigration authority is not discretion to dispense with procedure entirely.
+
+**Status**: Ruling issued April 1, 2026. Administration has not publicly confirmed compliance or announced an appeal as of late April 2026.
+
+**Sources**: [NPR — federal judge rules DHS illegally stripped immigration status from thousands who entered through CBP One (April 1, 2026)](https://www.npr.org/2026/04/01/nx-s1-5770189/federal-judge-rules-dhs-illegally-stripped-immigration-status-from-thousands-who-entered-through-cbp-one-app) · [The Hill — judge blocks Trump's termination of parole for migrants (April 2026)](https://thehill.com/homenews/administration/5809570-trump-parole-status-migrants-cbp-one-unwound/) · [NBC News — judge blocks mass cancellation of parole](https://www.nbcnews.com/news/us-news/judge-blocks-trump-termination-parole-migrants-legally-entered-us-usin-rcna266078) · [Boston Globe — Trump unlawfully revoked status of migrants (March 31 / April 1, 2026)](https://www.bostonglobe.com/2026/03/31/metro/trump-administration-migrant-parole-ruling/) · [Democracy Forward — court blocks unlawful mass termination](https://democracyforward.org/news/press-releases/court-blocks-trump-vance-administrations-unlawful-mass-termination-of-noncitizens-parole-status/)
+
+---
+
 ### Updated Pending Deadlines as of April 27, 2026
 
 | Date | Case / Event | What to Watch |
@@ -867,3 +903,5 @@ This timeline is the evidentiary core of Judge Crenshaw's pending vindictive-pro
 | TBD | Section 122 CIT | Three-judge panel on 10% global tariff (argument April 10; sharply skeptical panel) |
 | TBD | Mail Voting EO | Preliminary injunction in Massachusetts — clock matters for midterm mail ballot deadlines |
 | TBD | Rosado v. Bondi (N.D. Ill.) | Final injunction terms; Apple/Facebook voluntary restoration of ICE tracker apps |
+| TBD | Texas SB 4 (5th Cir.) | New plaintiff challenge on merits likely; anyone arrested under SB 4 has automatic standing; watch for fresh filing |
+| TBD | CBP One Parole (D. Mass.) | Government compliance with Burroughs restoration order; watch for appeal to 1st Circuit |

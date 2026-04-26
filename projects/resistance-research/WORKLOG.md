@@ -2,6 +2,37 @@
 
 ---
 
+## April 27, 2026 (Session 419) — April 28 Hearing Setup, Litigation Tracker Update, FISA/SB 4/CBP One
+
+**Session type**: Monitoring setup + litigation tracker additions + hearing template creation
+**Date**: April 27, 2026
+**Files updated**: `monitoring/2026-04-28-results.md` (quick-fill template + April 29 analysis pass template added), `litigation-tracker-2026.md` (Texas SB 4 5th Circuit and CBP One parole entries added; pending deadlines table extended), `CHECKIN.md` (session 419 research threads update)
+
+### What Was Done
+
+**Task 1 — April 28 Hearing Monitoring Setup**
+
+Read all existing monitoring files for the April 28 Xinis hearing. The infrastructure was already complete through April 27 (five documents: results, prep, pre-brief, watch-brief, tracking). Added to `monitoring/2026-04-28-results.md`:
+- Quick-fill record table: 9-question grid, fillable in 10 minutes on April 28 evening
+- Escalation level field and CHECKIN flag
+- April 29 analysis pass template: five structured questions covering contempt, circuit watch, Nashville interaction, April 30 implications, and tracker update instructions
+
+**Task 2 — Litigation Tracker: Two New Cases Added**
+
+Added to `litigation-tracker-2026.md` (both were missing from tracker despite predating April 27):
+
+1. **Texas SB 4 — 5th Circuit en banc (April 24, 2026)**: 10-7 ruling vacates injunction on standing grounds. SB 4 enforcement now unblocked. Constitutional question unresolved — leaves opening for fresh challenge by arrested individuals with clear standing.
+
+2. **CBP One Parole Revocation — Judge Burroughs (April 1, 2026)**: 900,000 parole statuses restored. Mass termination via email held unlawful — CBP lacks "unfettered discretion" to terminate parole without individual process. Largest single immigration status restoration ruling of the current term.
+
+Also updated pending deadlines table with tracking notes for both new cases.
+
+**Task 3 — Context Verified (no action needed)**
+
+Verified through web search that no new breaking developments on April 26-27 were missed in the existing monitoring documents. FISA Section 702 (expires April 30) still stalled — House blocked as of April 25-26 per Nextgov and Common Dreams reporting. AFL-CIO national still has not issued May Day strike call as of April 26. Nashville Crenshaw ruling still pending. All confirmed by existing CHECKIN.md entries.
+
+---
+
 ## April 26, 2026 (Session 2) — Surveillance Tracking, Live Monitoring Checkpoints, Deep Dives
 
 **Session type**: Surveillance infrastructure research + monitoring template creation + three-story deep dive

@@ -1,6 +1,20 @@
 # CHECKIN — Needs Your Input
 
-*Updated: April 26, 2026*
+*Updated: April 26-27, 2026 (session 419)*
+
+---
+
+## Published
+
+### May Day 2026 Action Guide — LIVE
+
+Published April 26, 2026 as a public GitHub Gist:
+
+**https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4**
+
+743 lines, 9 sections, 60+ sourced links, legal analysis, situation-specific guidance. Source file: `projects/resistance-research/mayday-2026-action-guide.md` (committed to master, HEAD at 24ceb62).
+
+Requires user action to distribute — see session notes for channel strategy.
 
 ---
 
@@ -47,6 +61,9 @@ May Day Strong final coordination call. Check for any last-minute route changes,
 
 ## Research Threads Open (no urgent action required)
 
-- Litigation tracker update: ICE tracker injunction (Alonso, N.D. Ill., April 18-23) should be added as a new entry — this is a significant First Amendment win for organizers.
+- Litigation tracker update: ICE tracker injunction (Alonso, N.D. Ill., April 18-23) should be added as a new entry — this is a significant First Amendment win for organizers. NOTE: Rosado v. Bondi status correction already in tracker and monitoring/2026-04-27-tracking.md.
 - ProPublica/Frontline "Caught in the Crackdown" findings should be summarized in the know-your-rights document as documented precedent for protest arrest patterns.
 - Williamsport warehouse case (Maryland v. Noem) preliminary injunction hearing pending — no date confirmed.
+- Texas SB 4 (5th Circuit en banc, April 24) and CBP One parole restoration (Judge Burroughs, April 1) both added to litigation-tracker-2026.md in session 419.
+- FISA Section 702 expires April 30 — House still blocked as of April 26; data broker loophole is the key reform provision. See surveillance-tracking.md.
+- Democratic renewal proposal: all 22 domains complete with evidence depth. No new domains needed. Follow-up: consider publication pathway and outreach targets once post-May Day monitoring stabilizes.
