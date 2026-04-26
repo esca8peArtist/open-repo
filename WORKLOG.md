@@ -4,6 +4,43 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — cybersecurity-hardening — Quality Review Pass: threat-model.md + opsec-playbook.md
+
+Conducted full quality review of both documents. Verified all major factual claims against primary sources. Applied 8 targeted corrections to opsec-playbook.md.
+
+**Technical inaccuracies corrected (opsec-playbook.md)**:
+1. Tails OS URL: `tails.boum.org` → `tails.net` (official domain migrated; confirmed)
+2. iOS reboot feature: clarified as "inactivity" reboot (not any reboot), added accurate timer history (168h in iOS 18.0 → 72h in iOS 18.1). Added missing GrapheneOS 18-hour auto-reboot default as the stronger forensics-relevant capability.
+3. GrapheneOS France withdrawal: corrected "threatened prosecution for refusing to implement backdoors" to accurate account — French police labeled it a "criminal tool," prosecutor publicly threatened legal action; no actual prosecution filed; no formal backdoor demand.
+4. LocalMonero: updated paragraph to note permanent closure (May 2024), named Haveno as purpose-built successor (Tor-native, LocalMonero replacement), retained Bisq as secondary option, added Cake Wallet atomic swap path.
+5. Signal setting name: "Who can find me by phone number" → "Who can find me by my number" (exact UI string per Signal support docs). Settings path corrected to Settings > Profile > @ field for username creation.
+6. Orbot/Signal/Tor: expanded "(Android only, via Orbot proxy)" to explain VPN mode mechanism and iOS limitation.
+
+**Consistency/clarity corrections**:
+7. Tier 1 vs Tier 2 mismatch in summary: Signal usernames/phone number privacy was listed in Tier 1 summary but body text places it in Tier 2. Moved to Tier 2 in summary for consistency.
+8. Tier 2 VPN→Tor direction: "Route Tor through VPN (Mullvad → Tor Browser)" was ambiguous (could read as Tor-then-VPN). Replaced with explicit directional language.
+
+**Claims verified as accurate (no correction needed)**:
+- Palantir $970.5M federal contracts 2025: confirmed
+- Army $10B enterprise agreement (July 2025, consolidating 75 contracts): confirmed
+- IRS LCA $130M since 2018: confirmed
+- ImmigrationOS $30M contract through September 2027: confirmed
+- ELITE $29.9M contract September 2025: confirmed
+- NSA Section 702 target count 349,823 (2025): confirmed via NPR April 2026
+- Section 702 expiration April 20, 2026: confirmed
+- Clearview AI ICE $9.2M contract September 2025: confirmed
+- Stephen Miller Palantir stake ($100K–$250K): confirmed
+- DHS Biden-era facial recognition directive removed February 2026: confirmed
+- XKeyscore retention periods (3-5 days content, 30 days metadata): confirmed from Snowden documents
+- GrapheneOS invulnerable to Cellebrite/GrayKey as of January 2025: confirmed by GrapheneOS project
+- VeraCrypt Fifth Amendment circuit split / "foregone conclusion" doctrine: confirmed
+
+Added 3 sources to Key Sources in opsec-playbook.md: GrapheneOS France (Proton blog), iOS inactivity reboot (Magnet Forensics analysis), LocalMonero shutdown (CoinDesk).
+
+**Files modified**: `projects/cybersecurity-hardening/opsec-playbook.md`
+
+---
+
 ## 2026-04-26 — cybersecurity-hardening — OpSec Playbook: Countermeasures Against Government Surveillance
 
 Created `projects/cybersecurity-hardening/opsec-playbook.md` — the defensive companion to the threat model. ~4,800 words covering 11 sections.

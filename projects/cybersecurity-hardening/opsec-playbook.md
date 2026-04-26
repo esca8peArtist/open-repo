@@ -44,7 +44,7 @@ Signal metadata (who you communicate with, when, how often) is visible to your c
 - Set Note to Self for sensitive notes rather than a cloud service
 
 *Tier 2*:
-- Enable usernames (Settings > Profile > Username) and set "Who can find me by phone number" to Nobody (Settings > Privacy > Phone Number)
+- Enable usernames (Settings > Profile > tap the @ field) and set "Who can find me by my number" to Nobody (Settings > Privacy > Phone Number)
 - This prevents someone who has your phone number from confirming you use Signal or contacting you that way
 - Register Signal using a Google Voice or MySudo number rather than your primary carrier number — this separates your Signal identity from your carrier identity
 - Verify Safety Numbers with important contacts in person or via a separate channel before sharing sensitive information
@@ -52,7 +52,7 @@ Signal metadata (who you communicate with, when, how often) is visible to your c
 
 *Tier 3*:
 - Register Signal using a temporary VoIP number purchased via Tor (MySudo, JMP.chat) that is not linked to your identity
-- Route Signal traffic through a VPN or Tor (Android only, via Orbot proxy) to prevent carrier-level metadata about Signal connection times
+- Route Signal traffic through a VPN or Tor to prevent carrier-level metadata about Signal connection times. On Android, use Orbot in VPN mode (select Signal as an app to tunnel) — this routes Signal's network traffic through Tor at the OS level. On iOS, use a full-device VPN; Orbot on iOS does not provide equivalent per-app Tor routing.
 - Use Signal on a dedicated device (see Device section) that is not associated with your primary identity
 - Rotate usernames periodically
 
@@ -239,8 +239,9 @@ DOGE has demonstrated willingness to transfer government data to unauthorized se
 - Per-app network access controls prevent apps from phoning home even with internet permission
 - Longer key derivation delays forensic brute-force of PIN
 - Apple is subject to U.S. law enforcement requests; GrapheneOS removes the manufacturer as a data source entirely
-- iOS 18 has a 72-hour auto-reboot feature that forces Before First Unlock (BFU) state, complicating forensics — this is a meaningful security improvement
-- The GrapheneOS project withdrew from France in November 2025 after French authorities threatened prosecution for refusing to implement backdoors — indicating governments view it as a real threat
+- iOS 18 has a 72-hour **inactivity** reboot feature (introduced in iOS 18.0, timer shortened from 168 hours to 72 hours in iOS 18.1): if an iPhone is not unlocked for 72 hours it reboots into Before First Unlock (BFU) state, complicating forensics — this is a meaningful security improvement
+  - GrapheneOS has its own auto-reboot feature (default: **18 hours** of inactivity, configurable from 10 minutes to 72 hours), which is more aggressive than Apple's 72-hour default and is an additional advantage of GrapheneOS
+- The GrapheneOS project withdrew its server infrastructure from France in November 2025 after French police labeled it a "criminal tool" in media (Le Parisien, Nov. 19, 2025) and a French cybercrime prosecutor publicly threatened legal action if the project refused law enforcement cooperation — indicating governments view it as a real operational threat
 - **Verdict**: For a threat model centered on law enforcement forensics and data broker prevention, GrapheneOS is the strongest choice. Requires a Google Pixel device.
 - **Download/install**: [grapheneos.org](https://grapheneos.org)
 
@@ -266,7 +267,7 @@ DOGE has demonstrated willingness to transfer government data to unauthorized se
 - Designed for the "borrowing a computer" scenario — use a library computer or any computer without leaving forensic evidence.
 - Does not have persistent storage by default (this can be configured but reduces the amnesia model).
 - **Use case**: One-time sensitive tasks, accessing Tor from an untrusted device, creating anonymous accounts.
-- **Download**: [tails.boum.org](https://tails.boum.org)
+- **Download**: [tails.net](https://tails.net)
 
 **Qubes OS** (hypervisor-based compartmentalization)
 - Runs each activity in a separate virtual machine ("qube"). A compromised browser qube cannot access files in a work qube. A malicious PDF opened in an isolated qube cannot spread to the rest of the system.
@@ -346,7 +347,7 @@ This is the core Palantir capability: identity resolution across disparate recor
 **Options**:
 - *Tier 1*: Use a separate debit card for activist purchases (a prepaid card bought with cash and loaded with cash).
 - *Tier 2*: Prepaid Visa/Mastercard gift cards purchased with cash for one-time sensitive purchases. Use these for VPN subscriptions, cloud storage, any service used by your secondary identity.
-- *Tier 3*: Monero (XMR) cryptocurrency for digital payments that require real anonymity. Unlike Bitcoin (where the IRS LCA platform has confirmed cryptocurrency wallet analysis capability), Monero uses ring signatures and stealth addresses to make transaction tracing computationally infeasible. Acquiring Monero without a KYC exchange (e.g., through LocalMonero peer-to-peer exchange, now defunct — replacements include Bisq) is necessary for the privacy model to hold. Cash purchases at Bitcoin ATMs followed by conversion to Monero on a non-custodial exchange are the practical path.
+- *Tier 3*: Monero (XMR) cryptocurrency for digital payments that require real anonymity. Unlike Bitcoin (where the IRS LCA platform has confirmed cryptocurrency wallet analysis capability), Monero uses ring signatures and stealth addresses to make transaction tracing computationally infeasible. Acquiring Monero without a KYC exchange is necessary for the privacy model to hold. LocalMonero (the primary P2P XMR exchange) permanently shut down in May 2024. Current no-KYC options: **Haveno** (Tor-native decentralized exchange built specifically as a LocalMonero successor, running atomic swaps), **Bisq** (Bitcoin-focused DEX with XMR/BTC markets, no KYC), or cash purchases at Bitcoin ATMs followed by atomic swap conversion to Monero via a non-custodial tool (Cake Wallet supports this). Avoid centralized exchanges — Binance, Coinbase, and Kraken have all delisted or restricted XMR in major markets.
 
 ---
 
@@ -574,7 +575,6 @@ The EFF released Rayhunter in March 2025, updated through September 2025. Rayhun
 
 ### Tier 1 (Baseline — Journalists, Advocates, Healthcare Workers)
 - Signal with disappearing messages enabled (1 week default)
-- Signal usernames enabled; phone number visibility set to Nobody
 - ProtonMail for sensitive email; Proton-to-Proton where possible
 - Full-disk encryption on all devices (FileVault on Mac, LUKS on Linux, BitLocker with strong PIN on Windows if necessary)
 - Use a PIN (not biometric) for phone unlock
@@ -584,12 +584,13 @@ The EFF released Rayhunter in March 2025, updated through September 2025. Rayhun
 
 ### Tier 2 (Intermediate — Activists, Organizers, Protest Participants)
 All of Tier 1, plus:
+- Signal usernames enabled; "Who can find me by my number" set to Nobody (Settings > Privacy > Phone Number)
 - GrapheneOS on a Pixel device for the sensitive-activity phone
 - Separate dedicated device for activist activity; never co-locate with personal phone
 - Register Signal on secondary phone with a VoIP number not linked to identity
 - Burner SIM purchased with cash for secondary device (used only away from home)
 - Leave phone at home for protests and sensitive meetings; use Faraday bag when this isn't possible
-- Route Tor through VPN (Mullvad → Tor Browser) for sensitive research
+- VPN then Tor (connect Mullvad first, then launch Tor Browser) for sensitive research — hides Tor usage from your ISP
 - Briar for contacts where zero phone-number metadata is required
 - Separate payment method (cash-loaded prepaid card) for activist-related purchases
 - Proton Mail accessed only over Tor, registered over Tor
@@ -626,5 +627,8 @@ All of Tier 2, plus:
 - [CLOUD Act vs. GDPR conflict — Exoscale](https://www.exoscale.com/blog/cloudact-vs-gdpr/)
 - [NACDL Compelled Decryption Primer](https://www.nacdl.org/Content/Compelled-Decryption-Primer)
 - [Freedom Press Foundation: Enable Signal Usernames (journalists)](https://freedom.press/digisec/blog/enable-signal-usernames/)
+- [GrapheneOS exits France — what it means for encryption (Proton, November 2025)](https://proton.me/blog/grapheneos-france)
+- [iOS 18 inactivity reboot feature — Magnet Forensics analysis](https://www.magnetforensics.com/blog/understanding-the-security-impacts-of-ios-18s-inactivity-reboot/)
+- [LocalMonero shutdown — CoinDesk](https://www.coindesk.com/opinion/2024/05/16/localmonero-shutdown-is-another-blow-for-privacy-tech)
 
 *This document depends on `threat-model.md` for the underlying threat capability analysis. All recommendations should be reassessed as the threat model is updated.*
