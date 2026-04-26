@@ -499,12 +499,195 @@ When running locally, access interactive API documentation:
 
 ---
 
-## Next Phases
+## Phase 2 Implementation: Search + Endorsements
 
-**Phase 2** (Search + Endorsements):
-- Meilisearch integration for full-text search
-- Endorsement object handling
-- `GET /api/items/{cid}/endorsements`
+### Search Endpoint
+
+#### `GET /api/items/search`
+
+Full-text search against content items using Meilisearch.
+
+**Query Parameters**:
+- `q` (string, required): Search query string (minimum 1 character)
+- `limit` (integer, default: 10, min: 1, max: 100): Number of results to return
+- `offset` (integer, default: 0, min: 0): Pagination offset
+- `item_type` (string, optional): Filter by type (`procedure`, `recipe`, `schematic`, `plan`, `service-listing`)
+- `domain` (string, optional): Filter by domain
+- `tags` (string, optional): Filter by comma-separated tags (matches any tag)
+
+**Searchable Fields**: title, description, tags, domain, item_type, author
+
+**Response** (200 OK):
+```json
+{
+  "query": "potato",
+  "hits": [
+    {
+      "cid": "sha256-...",
+      "title": "Growing Potatoes",
+      "description": "How to grow potatoes...",
+      "tags": ["agriculture", "potato"],
+      "domain": "procedural",
+      "item_type": "procedure",
+      "author": "OpenFarm",
+      "created_at": "2026-04-26T..."
+    }
+  ],
+  "limit": 10,
+  "offset": 0,
+  "estimated_total_hits": 32,
+  "processing_time_ms": 45
+}
+```
+
+**Example Queries**:
+```
+GET /api/items/search?q=water                                    # Basic search
+GET /api/items/search?q=filter&item_type=procedure&limit=50      # With filter
+GET /api/items/search?q=agriculture&tags=organic,DIY&offset=20   # With tags and pagination
+```
+
+---
+
+### Endorsement Endpoints
+
+#### `POST /api/items/{cid}/endorse`
+
+Submit an endorsement for a content item.
+
+**Request Body**:
+```json
+{
+  "user_id": "user@example.com",
+  "endorsement_type": "upvote"
+}
+```
+
+**Endorsement Types**:
+- `upvote` - Positive endorsement
+- `downvote` - Negative endorsement  
+- `flag` - Flag for moderation (inappropriate, spam, etc.)
+
+**Note**: If a user submits multiple endorsements for the same item, the latest one overwrites the previous.
+
+**Response** (201 Created):
+```json
+{
+  "id": 1,
+  "item_cid": "sha256-...",
+  "user_id": "user@example.com",
+  "endorsement_type": "upvote",
+  "created_at": "2026-04-26T03:45:23.123456"
+}
+```
+
+**Error Responses**:
+- **404 Not Found**: Item with this CID does not exist
+- **422 Unprocessable Entity**: Invalid endorsement_type
+
+---
+
+#### `GET /api/items/{cid}/endorsements`
+
+Get aggregated endorsement statistics for an item.
+
+**Response** (200 OK):
+```json
+{
+  "item_cid": "sha256-...",
+  "upvote_count": 15,
+  "downvote_count": 2,
+  "flag_count": 1,
+  "total_count": 18,
+  "score": 13
+}
+```
+
+**Score Calculation**: `upvote_count - downvote_count`
+
+**Error Responses**:
+- **404 Not Found**: Item does not exist
+
+---
+
+#### `GET /api/items/{cid}/endorsements/my-endorsement`
+
+Get a specific user's endorsement for an item (if any).
+
+**Query Parameters**:
+- `user_id` (string, required): The user identifier
+
+**Response** (200 OK):
+```json
+{
+  "endorsement": {
+    "id": 1,
+    "item_cid": "sha256-...",
+    "user_id": "user@example.com",
+    "endorsement_type": "upvote",
+    "created_at": "2026-04-26T03:45:23.123456"
+  }
+}
+```
+
+**Response when user has not endorsed** (200 OK):
+```json
+{
+  "endorsement": null
+}
+```
+
+**Error Responses**:
+- **404 Not Found**: Item does not exist
+
+---
+
+#### `DELETE /api/items/{cid}/endorsements/my-endorsement`
+
+Remove a user's endorsement from an item.
+
+**Query Parameters**:
+- `user_id` (string, required): The user identifier
+
+**Response** (204 No Content)
+
+**Error Responses**:
+- **404 Not Found**: Item does not exist
+
+---
+
+#### `GET /admin/items/{cid}/endorsements`
+
+Get full endorsement audit log for an item (admin endpoint).
+
+Returns all endorsements for the item in reverse chronological order (newest first).
+
+**Response** (200 OK):
+```json
+[
+  {
+    "id": 1,
+    "item_cid": "sha256-...",
+    "user_id": "user@example.com",
+    "endorsement_type": "upvote",
+    "created_at": "2026-04-26T03:45:23.123456"
+  },
+  {
+    "id": 2,
+    "item_cid": "sha256-...",
+    "user_id": "admin@example.com",
+    "endorsement_type": "flag",
+    "created_at": "2026-04-26T03:40:00.000000"
+  }
+]
+```
+
+**Error Responses**:
+- **404 Not Found**: Item does not exist
+
+---
+
+## Next Phases
 
 **Phase 3** (Contribution):
 - `POST /api/contributions` (anonymous submission)

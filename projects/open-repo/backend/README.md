@@ -1,17 +1,27 @@
 # Open-Repo MVP Backend
 
-**Status**: Phase 1 Complete - FastAPI + PostgreSQL CRUD scaffolding
+**Status**: Phase 2 Complete - FastAPI + PostgreSQL + Meilisearch + Endorsements
 
-**Version**: 0.1.0
+**Version**: 0.2.0
 
 A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1 implements CRUD endpoints for content items with JSON-LD validation against the schema defined in `../mvp-protocol-design.md`.
 
 ## What's Implemented
 
-### Endpoints (3 core routes)
+### Endpoints (10+ routes)
+
+**Phase 1 - CRUD**:
 - `POST /api/items` - Create a new content item (procedure, recipe, schematic, plan, or service-listing)
 - `GET /api/items/{cid}` - Retrieve a single item by Content Identifier
 - `GET /api/items` - List items with pagination and filters (type, domain, tags)
+
+**Phase 2 - Search + Endorsements**:
+- `GET /api/items/search` - Full-text search with Meilisearch
+- `POST /api/items/{cid}/endorse` - Submit endorsement (upvote/downvote/flag)
+- `GET /api/items/{cid}/endorsements` - Get endorsement statistics
+- `GET /api/items/{cid}/endorsements/my-endorsement` - Get user's endorsement
+- `DELETE /api/items/{cid}/endorsements/my-endorsement` - Delete user's endorsement
+- `GET /admin/items/{cid}/endorsements` - Admin audit log
 
 ### Schema & Validation
 - Pydantic models for JSON-LD validation against OpenRepoItem schema
@@ -27,16 +37,21 @@ A minimal FastAPI backend for the Open-Repo federated knowledge network. Phase 1
 - JSON column for full JSON-LD content
 
 ### Tests
-- **24 passing tests** covering:
-  - Required field validation
-  - Type validation (procedure, recipe, etc.)
-  - Multilingual content
-  - Procedure-specific fields (steps, materials, tools, etc.)
-  - Recipe-specific fields (ingredients, yield, storage)
-  - CID computation and format
-  - Response model structure
-  - Pagination model
+- **35 passing tests** covering:
+  - Required field validation (title, type, domain, license)
+  - Type validation (procedure, recipe, schematic, plan, service-listing)
+  - Multilingual content support
+  - Procedure-specific fields (steps, materials, tools, difficulty, etc.)
+  - Recipe-specific fields (ingredients, yield, storage, category)
+  - CID computation and format (deterministic SHA256)
+  - Response model structure and serialization
+  - Pagination and filtering
   - Health check endpoint
+  - Search response schemas and filtering
+  - Endorsement type validation and schemas
+  - Endorsement statistics aggregation
+  - Endorsement service CRUD operations
+  - Search service initialization and singleton pattern
 
 ## Quick Start
 
@@ -281,20 +296,17 @@ uv run pytest tests/ -v
 
 ## Next Phases
 
-**Phase 2** (Search + Endorsements):
-- Meilisearch integration for full-text search
-- Endorsement object support and propagation
-- `GET /api/items/{cid}/endorsements` endpoint
-
 **Phase 3** (Contributions):
 - Anonymous contribution submissions
 - Review workflow and moderation queue
 - Draft state for unpublished items
+- Contribution history and versioning
 
 **Phase 4+** (Federation):
 - ActivityPub inbox/outbox implementation
 - Node discovery via `.well-known/webfinger`
 - Content propagation and sync across federated nodes
+- Distributed identity (DID) integration
 
 ## Important Notes
 

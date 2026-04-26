@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "open-repo-backend"
-version = "0.1.0"
-description = "Open-Repo MVP backend - FastAPI + PostgreSQL"
+version = "0.2.0"
+description = "Open-Repo MVP backend - FastAPI + PostgreSQL + Meilisearch"
 requires-python = ">=3.10"
 dependencies = [
     "fastapi>=0.104.0",
@@ -16,6 +16,7 @@ dependencies = [
     "sqlalchemy>=2.0.0",
     "alembic>=1.13.0",
     "python-multipart>=0.0.6",
+    "meilisearch>=0.30.0",
 ]
 
 [project.optional-dependencies]

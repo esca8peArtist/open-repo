@@ -1,20 +1,30 @@
-"""API routes for content items."""
+"""API routes for content items, search, and endorsements."""
 
 import json
 import hashlib
 from typing import Optional
+from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database import get_db
-from app.models import ContentItem
+from app.models import ContentItem, Endorsement
 from app.schemas import (
     ContentItemCreateRequest,
     ContentItemResponse,
     ContentItemsListResponse,
     HealthCheckResponse,
+    SearchResponse,
+    SearchResultItem,
+    EndorsementCreateRequest,
+    EndorsementResponse,
+    EndorsementStatsResponse,
+    EndorsementAuditResponse,
+    UserEndorsementResponse,
 )
+from app.services.search_service import get_search_service
+from app.services.endorsement_service import EndorsementService
 from app import __version__
 
 router = APIRouter()
@@ -157,6 +167,31 @@ async def create_item(
     await db.commit()
     await db.refresh(item)
 
+    # Index in Meilisearch
+    try:
+        search_service = get_search_service()
+        description = ""
+        if request.description:
+            description = request.description.get("en", "")
+
+        author = ""
+        if request.attribution and request.attribution.author:
+            author = request.attribution.author
+
+        search_service.index_item(
+            cid=cid,
+            title=item.title,
+            description=description,
+            tags=request.tags,
+            domain=request.domain,
+            item_type=request.item_type,
+            author=author,
+            created_at=item.created_at.isoformat(),
+        )
+    except Exception as e:
+        # Log error but don't fail the request if indexing fails
+        print(f"Warning: Failed to index item {cid} in Meilisearch: {e}")
+
     return ContentItemResponse.from_orm(item)
 
 
@@ -223,4 +258,164 @@ async def list_items(
     )
 
 
-from datetime import datetime  # Import at end to avoid circular imports
+@router.get("/api/items/search", response_model=SearchResponse)
+async def search_items(
+    q: str = Query(..., min_length=1, description="Search query"),
+    limit: int = Query(10, ge=1, le=100),
+    offset: int = Query(0, ge=0),
+    item_type: Optional[str] = Query(None),
+    domain: Optional[str] = Query(None),
+    tags: Optional[str] = Query(None),
+):
+    """Search for content items using full-text search.
+
+    Search is performed against: title, description, categories, author, tags
+    """
+    search_service = get_search_service()
+
+    # Parse tags if provided
+    tag_list = None
+    if tags:
+        tag_list = [t.strip() for t in tags.split(",")]
+
+    # Perform search
+    results = search_service.search(
+        query=q,
+        limit=limit,
+        offset=offset,
+        item_type=item_type,
+        domain=domain,
+        tags=tag_list,
+    )
+
+    # Transform results
+    hits = [
+        SearchResultItem(
+            cid=hit.get("cid"),
+            title=hit.get("title", ""),
+            description=hit.get("description"),
+            tags=hit.get("tags", []),
+            domain=hit.get("domain", ""),
+            item_type=hit.get("item_type", ""),
+            author=hit.get("author"),
+            created_at=hit.get("created_at"),
+        )
+        for hit in results.get("hits", [])
+    ]
+
+    return SearchResponse(
+        query=q,
+        hits=hits,
+        limit=limit,
+        offset=offset,
+        estimated_total_hits=results.get("estimated_total_hits", 0),
+        processing_time_ms=results.get("processing_time_ms", 0),
+    )
+
+
+@router.post("/api/items/{cid}/endorse", response_model=EndorsementResponse, status_code=201)
+async def create_endorsement(
+    cid: str,
+    request: EndorsementCreateRequest,
+    db: AsyncSession = Depends(get_db),
+):
+    """Submit an endorsement for a content item.
+
+    Endorsement types: upvote, downvote, flag
+    If the user already has an endorsement, it will be updated.
+    """
+    # Verify item exists
+    result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
+    item = result.scalar_one_or_none()
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    # Create or update endorsement
+    endorsement = await EndorsementService.create_endorsement(
+        db=db,
+        item_cid=cid,
+        user_id=request.user_id,
+        endorsement_type=request.endorsement_type,
+    )
+
+    return EndorsementResponse.from_orm(endorsement)
+
+
+@router.get("/api/items/{cid}/endorsements", response_model=EndorsementStatsResponse)
+async def get_endorsement_stats(
+    cid: str,
+    db: AsyncSession = Depends(get_db),
+):
+    """Get aggregated endorsement statistics for an item.
+
+    Returns upvote count, downvote count, flag count, and overall score.
+    """
+    # Verify item exists
+    result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
+    item = result.scalar_one_or_none()
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    stats = await EndorsementService.get_endorsement_stats(db=db, item_cid=cid)
+    return EndorsementStatsResponse(**stats)
+
+
+@router.get("/api/items/{cid}/endorsements/my-endorsement", response_model=UserEndorsementResponse)
+async def get_user_endorsement(
+    cid: str,
+    user_id: str = Query(..., description="User identifier"),
+    db: AsyncSession = Depends(get_db),
+):
+    """Get a specific user's endorsement for an item (if any).
+
+    Returns null if the user has not endorsed the item.
+    """
+    # Verify item exists
+    result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
+    item = result.scalar_one_or_none()
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    endorsement = await EndorsementService.get_user_endorsement(
+        db=db, item_cid=cid, user_id=user_id
+    )
+
+    return UserEndorsementResponse(
+        endorsement=EndorsementResponse.from_orm(endorsement) if endorsement else None
+    )
+
+
+@router.delete("/api/items/{cid}/endorsements/my-endorsement", status_code=204)
+async def delete_user_endorsement(
+    cid: str,
+    user_id: str = Query(..., description="User identifier"),
+    db: AsyncSession = Depends(get_db),
+):
+    """Delete a user's endorsement for an item."""
+    # Verify item exists
+    result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
+    item = result.scalar_one_or_none()
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    await EndorsementService.delete_endorsement(db=db, item_cid=cid, user_id=user_id)
+    return None
+
+
+@router.get("/admin/items/{cid}/endorsements", response_model=list[EndorsementAuditResponse])
+async def get_endorsement_audit_log(
+    cid: str,
+    db: AsyncSession = Depends(get_db),
+):
+    """Get full endorsement audit log for an item (admin endpoint).
+
+    Returns all endorsements for the item in reverse chronological order.
+    """
+    # Verify item exists
+    result = await db.execute(select(ContentItem).where(ContentItem.cid == cid))
+    item = result.scalar_one_or_none()
+    if not item:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    endorsements = await EndorsementService.get_endorsements_for_item(db=db, item_cid=cid)
+    return [EndorsementAuditResponse.from_orm(e) for e in endorsements]
