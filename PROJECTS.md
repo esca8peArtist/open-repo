@@ -65,10 +65,19 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1-4 COMPLETE, **Phase 5 COMPLETE (Session 490)** — Full implementation architecture ready
+**Status**: Active — Phase 1-5 COMPLETE, **Phase 4 Integration COMPLETE (Session 494)** — Full proposal synthesis ready
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Phase 5 COMPLETE (Session 490)**. All four implementation strategy documents written and committed. Proposal now contains complete pathway: diagnosis (Domains 1-22) → alternative vision → theory of change (Phase 4) → implementation architecture (Phase 5). Next: Integration of Phase 5 into main proposal and distribution execution.
+**Current focus**: **Phase 4 Integration COMPLETE (Session 494)**. All Phase 4 documents (power-mapping, parallel-institutions, elite-capture-case-study, comparative-democratic-recovery) seamlessly woven into Part III of democratic-renewal-proposal.md. Proposal now contains complete pathway: diagnosis (Domains 1-22) → alternative vision → theory of change (Phases 3-4 synthesis) → implementation architecture (Phase 5). Next: Distribution execution (Substack/Reddit/institutional templates ready) or tracker updates (first-amendment, environmental-rollbacks, police-brutality).
+
+**✅ COMPLETED (Session 494)**:
+- ✅ **Phase 4 Integration into Part III** — All four Phase 4 documents synthesized into democratic-renewal-proposal.md Part III
+  - Enhanced Section 3.3 (Coalition Analysis) with veto players framework and dark money infrastructure analysis
+  - Enhanced Section 3.4 (Three Scenarios) with parallel institution options per scenario
+  - Created Section 3.6 (Structural Accountability) with Epstein case study and five reform mechanisms
+  - Enhanced Section 3.5 (Post-Electoral Recovery) with international case studies and comparative framework
+  - Result: Part III now contains comprehensive Theory of Change with institutional power analysis, viable alternatives, accountability mechanisms, and international precedent
+  - Commit: eabe4aa
 
 **✅ COMPLETED (Session 489)**:
 - ✅ **Phase 4 Documents 2-4** — theory-of-change framework complete
