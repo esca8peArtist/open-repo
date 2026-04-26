@@ -113,24 +113,24 @@
 ### seedwarden
 **Goal**: Build a profitable Etsy store and digital brand focused on farming, homesteading, and survival-related digital products, with the ability to expand into physical small products and seed packets. The business needs a full foundation: high-quality digital products that genuinely help people, a consistent social media presence across relevant platforms, and a reputation for real value. The goal is profit and a loyal customer base — not just a store. Grow the business systematically, identify what sells, double down on winners, and build a media presence that drives traffic organically.
 **Priority**: Medium
-**Status**: Active
+**Status**: Active — **PRODUCT LAUNCH READY** (mockup blocker resolved)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: Session 103: **21 products, all PDFs generated, all listing copy complete.** Added Zone-by-Zone Seed Starting Calendar (1,635 lines, 82pp PDF, $7–$18) to product catalog — was missing from PDF generator and audit. Apartment Growing Complete Guide PDF now generated (146pp). Southwest region in Native Plants guide expanded (was 19 entries, target 30+; agent running). **Biggest blocker**: PDF mockup images needed for all listings — #1 conversion factor on Etsy, requires Canva or mockup generator. All content is ready; launch is blocked only on mockup images.
+**Current focus**: Session 430: **MOCKUP BLOCKER RESOLVED** — All 21 tablet mockups are complete and production-ready (2400×2400 px PNG, 350–400 KB per file, professional tablet device frame design). All content (listing copy, pricing, tags, product PDFs) verified complete. **Ready for Phase 1 Etsy launch**: Upload 6 lead products this week. MOCKUP_STRATEGY.md created (covers Etsy best practices 2026, regeneration workflow, Phase 2-4 enhancement roadmap). Social media and ongoing marketing are next phase after Phase 1 product validation.
 **Blocked on**: —
-**Notes**: Etsy store exists with some products started but not yet quality to sell. Social media has plans but nothing executed. Need to fix quality before promoting. Plant images: all 120 native-plants images already downloaded and cached (verified Session 74) — "0/18" note in prior session was stale.
+**Notes**: All product infrastructure complete. Phase 1 launch unblocked. Phase 2-4 enhancements (phone mockups, lifestyle photography, printed page mockups) optional based on Phase 1 conversion data. 120 native-plants images cached and ready for future guides.
 
 ---
 
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — Phase 3 COMPLETE, **Phase 4 Wave 1 COMPLETE**, **Phase 4 Wave 2 COMPLETE** (203/203 tests), ready for Wave 3
+**Status**: Active — Phase 3 COMPLETE, **Phase 4 Wave 1 COMPLETE**, **Phase 4 Wave 2 COMPLETE** (203/203 tests), **Wave 3 PLANNED**, ready for Wave 3 implementation
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Session 429: **Phase 4 Wave 2 COMPLETE** — Alembic migrations (3 files: baseline, Wave 1 ActivityPub, Wave 2 federation tables), async delivery queue (RetryPolicy, DeliveryJob, DeliveryWorker with exponential backoff, wired into FastAPI lifespan), Meilisearch sync on federation ingestion (indexes new/updated remote items, silently swallows errors). **Test results**: 203 passing (30 new for Wave 2), 0 failures, 0 regressions on 173 Phase 1-3 tests. **Commits**: `d41a27c` + `42a0b71` on `feature/phase-4-wave-2-federation-bootstrap`. **Status**: PRODUCTION-READY — waiting for user GitHub push (no push access on Pi). **Next**: Phase 4 Wave 3 (Endorsement/Announce propagation) or Wave 4 (conflict logging + admin UI). Phase 5 (offline export/Kiwix) deferred until Phase 4 complete.
+**Current focus**: Session 430: **Phase 4 Wave 3 Planning COMPLETE** — Comprehensive design of Endorsement/Announce propagation across federated nodes. Artifacts created: WAVE_3_PLAN.md (architecture, routes, 17 test scenarios), test_wave3_endorsement_propagation.py (full test scaffolding, 17 async tests), endorsement_propagation_service.py (7 service methods with TODOs), WAVE_3_IMPLEMENTATION_GUIDE.md (developer quick reference). **Key design**: Minimal schema changes (reuse existing tables), query-time vote aggregation, async fire-and-forget delivery, full backward compatibility. **Effort**: 3-4 days, 35-50 story points. **Status**: All planning complete, ready for Phase 1 implementation (service methods). **Commits**: Awaiting user to push Wave 2 code to GitHub first; Wave 3 planning documents ready to push on next branch. **Next**: Begin Wave 3 Phase 1 implementation (16h for 7 service methods).
 **Blocked on**: —
-**Notes**: Phase 1–3 production-ready (116 tests). Phase 4 Wave 1–2 core federation machinery complete. All code committed, waiting for user to push to GitHub.
+**Notes**: Phase 1–3 production-ready (116 tests). Phase 4 Wave 1–2 core federation machinery complete (203 tests). Wave 3 design complete and scaffolded. All code committed, waiting for user GitHub push (Wave 1–2 to main first, then Wave 3 branch). Phase 5 (offline export/Kiwix) deferred until Phase 4 complete.
 
 ---
 
