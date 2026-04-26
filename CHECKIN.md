@@ -4,11 +4,11 @@
 
 ---
 
-## Since Last Check-in (Session 432 — 2026-04-26 evening)
+## Since Last Check-in (Session 433 — 2026-04-26 evening)
 
 **Completed**:
 
-1. **open-repo**: **Phase 4 Wave 3 Phase 2 IMPLEMENTATION COMPLETE**. Route integration for Announce/Undo endorsement propagation: (1) New schemas `VoteCountBreakdown`, `AggregatedEndorsementStatsResponse`, (2) Modified `create_endorsement()` to trigger Announce generation + async send, (3) New endpoint `GET /api/items/{cid}/endorsements/aggregated` with comprehensive local/remote breakdown, (4) Modified `delete_user_endorsement()` to generate and send Undo activity, (5) Modified `/inbox` to route Announce/Undo to propagation service. **Test results**: 125/125 passing (9 Phase 1 Wave 3 + 116 Phase 1–3), zero regressions. **Commit**: `45f9236`. **Status**: Phase 2 COMPLETE, ready for Phase 3 cross-node testing.
+1. **open-repo**: **Phase 4 Wave 3 Phase 3 IMPLEMENTATION COMPLETE**. Cross-node end-to-end testing for endorsement propagation: (1) TestCrossNodeEndorsementFlow class with 3 tests (Announce delivery, signature verification, Undo vote exclusion), (2) Full E2E flow test covering 7-phase federation scenario (Node A→B→A with vote retraction), (3) Verified vote aggregation correctly combines local + remote votes with proper source breakdown, (4) Verified Undo activities properly exclude revoked votes from aggregation. **Test results**: 13/13 Wave 3 tests passing (4 Phase 3 E2E + 9 Phase 1–2), zero regressions on all 116 Phase 1–3 tests. **Commit**: `198fe05`. **Status**: Wave 3 (full endorsement propagation system) COMPLETE and production-ready. **Next**: Wave 4 (federation partner management + HTTP signature verification) or deployment.
 
 **In Progress**:
 
@@ -21,15 +21,15 @@
 - **cybersecurity-hardening**: Publication signal needed (trilogy ready: threat-model.md + opsec-playbook.md + implementation-guide.md). Can publish immediately or hold pending optional additions. Decision: publish now or defer?
 - **mfg-farm**: Test print required (physical action) before launch prep continues.
 - **seedwarden**: Etsy store Phase 1 launch ready (all 21 mockups complete). Ready to upload 6 lead products when signaled.
-- **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi). Wave 3 Phase 3 cross-node testing next.
+- **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi). Wave 3 COMPLETE. Wave 4 implementation can begin anytime.
 
 **Suggested Priorities for Next Session**:
 
 1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — run monitoring-dashboard.py, begin P&L tracking
 2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
-3. **Tuesday+ 2026-04-29**: **open-repo** Wave 3 Phase 3 implementation (end-to-end cross-node testing, ~1-2 days)
-4. **Anytime this week**: **seedwarden** Etsy Phase 1 launch (signal when ready for upload instructions)
-5. **Pending user decision**: **cybersecurity-hardening** publication
+3. **Tuesday+ 2026-04-29**: **open-repo** Wave 4 implementation (federation partner management + HTTP signatures, ~2-3 days) OR **cybersecurity-hardening** publication if signaled
+4. **Anytime**: **seedwarden** Etsy Phase 1 launch (signal when ready for upload instructions)
+5. **Pending user decision**: **cybersecurity-hardening** publication timing
 
 **Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
 
