@@ -10,7 +10,7 @@ Updated April 11, 2026: Domains 10-15 added — Education, Healthcare, Infrastru
 
 ## How to Read This Document
 
-This proposal is organized in five parts. Part I establishes why renewal is necessary, drawing on the crisis analysis and case study research. Part II presents specific reforms across twenty-two domains, with evidence, precedents, international benchmarks, fiscal estimates, and implementation pathways for each. Part III lays out a theory of change informed by what the 160-movement research corpus tells us about how democratic reform actually succeeds. Part IV provides a phased implementation timeline. Part V cross-references the detailed research documents, provides a reading guide, includes a cross-domain synthesis (Section 5.4) mapping thirteen reinforcing feedback loops that show how progress in one domain accelerates progress in others — and why piecemeal reform consistently underperforms — and an international benchmarks and fiscal analysis (Section 5.5) grounding each domain in comparative evidence with cost estimates.
+This proposal is organized in five parts. Part I establishes why renewal is necessary, drawing on the crisis analysis and case study research. Part II presents specific reforms across twenty-two domains, with evidence, precedents, international benchmarks, fiscal estimates, and implementation pathways for each. Part III lays out a theory of change informed by what the 160-movement research corpus tells us about how democratic reform actually succeeds — including what comparative recovery cases teach us about sequencing, autocratic enclaves, and constitutional design. Part IV provides the full implementation architecture: Section 4.1 sequences recovery across three waves with domain assignments and success criteria; Section 4.2 defines triggers, milestones, and contingency timelines; Section 4.3 maps the elite defection cascade and mass organization strategy; Section 4.4 assesses eleven derailment vectors with mitigation strategies and cost estimates. Part V cross-references the detailed research documents, provides a reading guide, includes a cross-domain synthesis (Section 5.4) mapping thirteen reinforcing feedback loops that show how progress in one domain accelerates progress in others — and why piecemeal reform consistently underperforms — and an international benchmarks and fiscal analysis (Section 5.5) grounding each domain in comparative evidence with cost estimates.
 
 Every reform proposed here meets three criteria: (1) it has been implemented or seriously attempted somewhere, (2) the evidence for its effectiveness is documented, and (3) there is a plausible political pathway to adoption in the United States. This is not a wish list. It is a sequenced program of structural repair.
 
@@ -2320,16 +2320,6 @@ Model compact applications directly relevant to this proposal's domains: a unifo
 
 The democratic renewal proposal contains 22 domains of structural reform. Attempting to implement all 22 simultaneously would overwhelm legislative capacity, outpace civil society organization, trigger unified elite backlash, and almost certainly fail.
 
-The comparative democratic recovery framework documents a consistent pattern across successful cases: **recovery sequences in waves, with each wave creating conditions that make the next wave possible.** Poland's 2023 recovery did not attempt constitutional rewrite and judicial restructuring and civil service reform and campaign finance overhaul at once. It sequenced: first, establish that electoral victory is possible (2023 elections); second, use electoral victory to restore judicial independence and investigative capacity (2023-2024); third, deploy restored institutional capacity to advance structural reforms (2024-2025 and onward).
-
-This document defines the US recovery sequencing across three waves, identifies which domains anchor each wave, specifies the conditions that must be met to trigger the next wave, and maps how progress in each domain creates capacity for downstream domains.
-
----
-
-## Executive Summary: Why Sequencing Matters
-
-The democratic renewal proposal contains 22 domains of structural reform. Attempting to implement all 22 simultaneously would overwhelm legislative capacity, outpace civil society organization, trigger unified elite backlash, and almost certainly fail.
-
 The comparative democratic recovery framework (Phase 4, Document 1) documents a consistent pattern across successful cases: **recovery sequences in waves, with each wave creating conditions that make the next wave possible.** Poland's 2023 recovery did not attempt constitutional rewrite and judicial restructuring and civil service reform and campaign finance overhaul at once. It sequenced: first, establish that electoral victory is possible (2023 elections); second, use electoral victory to restore judicial independence and investigative capacity (2023-2024); third, deploy restored institutional capacity to advance structural reforms (2024-2025 and onward).
 
 This document defines the US recovery sequencing across three waves, identifies which domains anchor each wave, specifies the conditions that must be met to trigger the next wave, and maps how progress in each domain creates capacity for downstream domains.
@@ -3705,7 +3695,7 @@ The US resistance movement must prepare for the worst case while hoping for the 
 
 ---
 
-# PART V: HOW THIS CONNECTS# PART V: HOW THIS CONNECTS
+# PART V: HOW THIS CONNECTS
 
 ---
 
