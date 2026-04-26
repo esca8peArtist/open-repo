@@ -91,7 +91,7 @@ A small number of members — the ones who want to be engaged — participate mo
 
 American convenience culture is not an obstacle to design around — it is a design constraint to design with.
 
-**Passive membership is the default.** You join because you want cheaper electricity or accessible healthcare. You sign up, you get the service, you pay sliding-scale dues (or dues come out of your energy savings automatically). You are a member. You have voting rights you will probably never use. That is fine.
+**Passive membership is the default.** You join because you want cheaper electricity or accessible healthcare. You sign up, you get the service. No payment required. You are a member. You have voting rights you will probably never use. That is fine.
 
 **Engagement follows results, not the other way around.** When your electricity bill drops $150/month, you start caring about the cooperative. When your kid can see a doctor without a bill that takes three months to pay off, you tell your neighbors. You do not ask people to be civic-minded first and hope results follow. You deliver results first and let civic engagement emerge naturally from people who have a stake in what works.
 
@@ -141,20 +141,35 @@ This is the design deliberately. An organization where volunteers learn real ski
 
 ## Revenue Model
 
-Financial independence is structural independence. Houston Commons must operate without dependence on any single funder — government grants, corporate foundations, or institutional investors all carry strings.
+There are no membership dues. Money is never a barrier to joining, participating, or receiving services. This is a design principle, not a compromise — the organization's revenue comes from cooperative economics and voluntary contribution, not from charging people who are already resource-constrained.
 
 **Revenue by source (Year 3 target):**
 
 | Source | Mechanism | Target % |
 |---|---|---|
-| Cooperative energy savings | Members share bill reductions vs. grid rate | 25-30% |
-| Solar installation program | Cooperative financing; members pay over time | 20-25% |
-| Member dues (sliding scale $0-50/month) | Pooled across income levels | 15-20% |
-| Healthcare sliding-scale fees | Subsidized by higher-income members | 10-15% |
-| Foundation grants (non-core programs only) | Research, startup capital, specific programs | 10-15% |
-| Replication training | Other organizations learning the model | 5% |
+| Cooperative energy surplus | Net metering sells excess solar back to grid; cooperative captures margin on shared savings | 30-35% |
+| Solar installation program | Cooperative financing for businesses and organizations; grant-funded for households | 20-25% |
+| Voluntary donations | Public, transparent, real-time — see below | 15-20% |
+| Foundation and government grants | Research, startup capital, specific programs — non-core only | 15-20% |
+| Replication and consulting | Other communities learning the model | 5-10% |
 
-**Rule**: No single funder exceeds 20% of annual revenue. Any funder at 20% has effective veto power. The energy cooperative economics — where bill savings are real, recurring, and controlled by the membership — are the key to financial independence.
+**Why no dues:** The energy cooperative economics generate real revenue without charging members. A 1,000-household solar network generating average savings of $150/month per household produces $150,000/month in economic value. The cooperative captures a portion of that through shared surplus — households keep the majority of their savings, the organization keeps enough to fund operations. This scales with membership; dues do not need to.
+
+**Transparent finances as a core design principle:**
+
+Every dollar in and every dollar out is publicly visible in real time. The Technology division builds and maintains a public financial dashboard — not an annual report or a 990 filed six months late, but a live ledger accessible to anyone. Every donation recorded with the donor's name (unless they choose anonymous). Every expenditure itemized and categorized. Every board decision logged with the reasoning behind it. Every volunteer hour counted alongside cash as organizational contribution.
+
+This is not just ethics — it is structural trust. Organizations with fully transparent finances generate more voluntary contribution than opaque ones, because people give to organizations they can verify. There is nothing to hide, so nothing is hidden.
+
+**Donations over dues:**
+
+Anyone who benefits from the cooperative and has capacity to give more than they receive is invited — never required — to donate. The app shows exactly what donations fund: one month of a CHW's time, one solar installation, one year of after-school programming. Donors choose what their contribution supports. Small recurring donations from members who benefit from cheaper energy can collectively fund the health and education programs that do not yet generate their own surplus.
+
+**On the long arc — shared contribution:**
+
+In its mature form, Houston Commons provides energy, healthcare, food, water, waste management, education, and technology infrastructure for a community. That is, functionally, what a government provides. The difference is consent, transparency, and democratic member control. The path from voluntary cooperative to community self-governance with proportional shared contribution — some form of mandatory contribution from everyone who benefits — is a natural evolution when membership approaches universal coverage in a neighborhood. That transition should be designed democratically by the membership when the time comes. It is not imposed by the founding structure. For now: no dues, no barriers, voluntary contribution, transparent books.
+
+**Rule**: No single funder exceeds 20% of annual revenue.
 
 ---
 
@@ -185,7 +200,7 @@ How do you make it difficult for hostile actors — state government, industry i
 - First volunteer cohort (20-30 people) completing solar installation training alongside licensed electricians
 - Education division curriculum drafted for Energy and Health tracks
 - Cooperative legally incorporated under Texas law
-- Mobile membership app live — dues, voting, service requests, volunteer scheduling
+- Mobile membership app live — donations, voting, service requests, volunteer scheduling, public financial dashboard
 - Results dashboard public: panels installed, kilowatts generated, bills reduced, patients seen, volunteer hours logged
 
 **Funding**: $400K-600K. Foundation startup grants acceptable for Phase 1 capital.
