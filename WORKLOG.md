@@ -4,6 +4,29 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 Evening (19:30 UTC) — Orchestrator Session 484 — Exploration Queue Work: Stockbot Model Graduation Framework
+
+**Session Context**:
+- Current time: Saturday 2026-04-26 19:30 UTC
+- Time to Monday market open: ~43 hours (14:30 UTC 2026-04-28)
+- Previous 25 sessions in holding pattern; resumed autonomous work on Exploration Queue
+- Recognized that "zero autonomous work" conclusion was incorrect — Exploration Queue items remain available despite completed deliverables
+
+**Work Completed**:
+- ✅ **Stockbot: Model Graduation Criteria Research** — Researched quantitative finance benchmarks and decision frameworks for escalating trading models from paper trading to live capital. Generated `projects/stockbot/model-graduation-criteria.md` (427 lines, 28.5 KB):
+  - **Gate 1**: Statistical sufficiency (Bailey/Lopez de Prado Minimum Track Record Length, t-statistic validation, deflated Sharpe ratio for multiple-testing correction)
+  - **Gate 2**: Performance quality (Sharpe ratio 1.0–2.0 floor for retail, 2.0+ for institutional; Sortino, Calmar, Profit Factor, SQN, Max Drawdown thresholds)
+  - **Gate 3**: Robustness validation (Walk-forward efficiency ≥50%, OOS/IS Sharpe degradation <30%, sensitivity testing, regime coverage)
+  - **Gate 4**: Operational readiness (3 consecutive profitable months, ≥30 trades/month in paper, slippage modeling at ≥1.5× commission, Half-Kelly position sizing, circuit breakers at 50% MDD halt / 100% MDD shutdown)
+  - Sourced from Bailey/Lopez de Prado DSR research, Andrew Lo statistics, institutional quant standards, and 2025–2026 arXiv walk-forward frameworks
+- ✅ **Committed** to stockbot submodule: commit `196c968` — "docs: add model graduation criteria framework for paper-to-live trading decisions"
+
+**Key Insight**: The four-gate checklist prevents false signals and premature escalation. A model passing all metrics but barely should begin at 1–5% of intended capital and scale only after live performance confirms backtest.
+
+**Status**: Exploration work resumed. Moved from health-check holding pattern to meaningful research contribution. PROJECTS.md Exploration Queue item #4 now outdated (Phase 2 already complete) — scheduled for cleanup next session.
+
+---
+
 ## 2026-04-27 Early Morning (00:15 UTC) — Orchestrator Session 483 — Holding-Pattern Verification (25th Consecutive)
 
 **Session Context**:

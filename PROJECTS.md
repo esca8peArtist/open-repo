@@ -196,9 +196,9 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - **off-grid-living: nuclear and radiological preparedness** — the goal explicitly includes nuclear disaster scenarios. Current content is thin here. Research: fallout shelter construction standards, potassium iodide protocols, contamination detection, decontamination procedures, long-term food/water storage under fallout conditions, and community triage. Write to `projects/off-grid-living/` as a new domain file.
 
-- **Stockbot: model evaluation framework** — as paper trading data accumulates, define the criteria for graduating a model from paper to live trading. What Sharpe ratio, max drawdown, win rate, and minimum sample size thresholds should be required? Research standard quantitative finance benchmarks and write a decision framework to `projects/stockbot/model-graduation-criteria.md`.
+- ~~**Stockbot: model evaluation framework**~~ — **Done** (Session 484: `model-graduation-criteria.md` complete — four-gate framework for paper-to-live graduation: statistical sufficiency, performance quality, robustness validation, operational readiness)
 
-- **resistance-research: post-launch Phase 2 prep** — litigation tracking infrastructure. Research CourtListener API, PACER access patterns, and how to automate monitoring of key cases (Xinis v. Abrego Garcia and similar). Draft the Phase 2 monitoring templates and data capture workflow. Write to `projects/resistance-research/`.
+- ~~**resistance-research: post-launch Phase 2 prep**~~ — **Done** (Phase 2 litigation tracking COMPLETE and production-ready per Session 462)
 
 ---
 
