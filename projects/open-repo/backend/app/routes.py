@@ -1200,6 +1200,60 @@ async def get_followers(
     )
 
 
+@router.get("/admin/federation/conflicts")
+async def get_federation_conflicts(
+    partner_id: Optional[int] = Query(None, description="Filter by partner ID"),
+    conflict_type: Optional[str] = Query(None, description="Filter by conflict type (signature_mismatch | key_expired | key_revoked | trust_failure)"),
+    status: Optional[str] = Query("all", description="Filter by status (active | resolved | all)"),
+    limit: int = Query(100, ge=1, le=500, description="Max results to return"),
+    db: AsyncSession = Depends(get_db),
+):
+    """Get federation conflicts with filtering.
+
+    Wave 4 Phase 4: Admin endpoint for monitoring federation conflicts.
+    Returns conflict records for signature mismatches, key issues, and trust failures.
+
+    Query parameters:
+    - partner_id: Optional filter by federation partner
+    - conflict_type: Optional filter by conflict type
+    - status: Filter by status ('active', 'resolved', or 'all')
+    - limit: Max results (1-500, default 100)
+
+    Returns:
+        Dict with conflicts list and total count
+    """
+    from app.services.federation_conflict_service import FederationConflictService
+    from app.models import ConflictType
+
+    # Validate conflict_type if provided
+    conflict_type_enum = None
+    if conflict_type:
+        try:
+            conflict_type_enum = ConflictType(conflict_type)
+        except ValueError:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Invalid conflict_type. Must be one of: signature_mismatch, key_expired, key_revoked, trust_failure"
+            )
+
+    # Validate status if provided
+    if status and status not in ["active", "resolved", "all"]:
+        raise HTTPException(
+            status_code=400,
+            detail="Invalid status. Must be one of: active, resolved, all"
+        )
+
+    result = await FederationConflictService.get_all_conflicts(
+        db=db,
+        partner_id=partner_id,
+        conflict_type=conflict_type_enum,
+        status=status,
+        limit=limit,
+    )
+
+    return result
+
+
 @router.get("/following", response_model=OrderedCollectionResponse)
 async def get_following(
     db: AsyncSession = Depends(get_db),
