@@ -38,6 +38,7 @@ def upgrade() -> None:
         sa.Column('trust_state', trust_status_enum, nullable=False, server_default='pending'),
         sa.Column('created_at', sa.DateTime(), nullable=False, server_default=sa.func.now()),
         sa.Column('updated_at', sa.DateTime(), nullable=False, server_default=sa.func.now()),
+        sa.Column('failed_signature_count', sa.Integer(), nullable=False, server_default='0'),
         sa.Column('public_key_expires_at', sa.DateTime(), nullable=True),
         sa.Column('last_key_refresh_at', sa.DateTime(), nullable=True),
         sa.Column('last_activity_at', sa.DateTime(), nullable=True),
