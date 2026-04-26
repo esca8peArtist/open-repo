@@ -2,6 +2,117 @@
 
 ---
 
+## April 26, 2026 (Session 423) — Cybersecurity-Hardening: Publication Decision Memo
+
+**Session type**: Assessment + decision memo
+**Date**: April 26, 2026
+**Files read**: `projects/cybersecurity-hardening/publication-prep.md`, `projects/cybersecurity-hardening/phase2-osint-deepening.md`, `projects/cybersecurity-hardening/implementation-guide.md`
+
+### Publication Readiness Verification
+
+All three documents are present and complete:
+
+1. **`threat-model.md`** — 440+ lines. Covers Palantir (ELITE, ImmigrationOS, LCA), NSA Section 702, FBI NSL/subpoena capabilities, LexisNexis/Venntel/Babel Street pipelines, DOGE consolidation, social media monitoring, and capability-tier matrix. Well-sourced with contract values and FOIA-confirmed details.
+
+2. **`opsec-playbook.md`** — 10-part countermeasure structure aligned to the threat model. Covers communications, network anonymization, device security, identity compartmentalization, physical OpSec, file security, social media, data brokers, legal prep, and threat reassessment. Organized by tier.
+
+3. **`implementation-guide.md`** — 9,600 words, 1,022 lines. Step-by-step execution across Parts 0–8. Interconnected: explicitly references `threat-model.md` and `opsec-playbook.md` in its header. Each part cites why, not just what.
+
+**Interconnection status**: The three documents reference each other explicitly. The implementation guide's header states it "translates the recommendations in `opsec-playbook.md`" and that "threats are documented in `threat-model.md`." Part 0 Step 0.1 references `phase2-osint-deepening.md` Part B directly. Cross-linking is intact.
+
+**Publication materials**: `publication-prep.md` contains a complete executive summary (600+ words), a full three-document Table of Contents with all sections listed, and a 40-term glossary covering every technical term used in the corpus. These are ready.
+
+**Verdict**: The trilogy is publication-ready as-is.
+
+---
+
+### OSINT Deepening Integration Assessment
+
+`phase2-osint-deepening.md` covers three substantive areas:
+
+**Part A — Broker tier analysis**: Documents that 200-broker lists conflate impact levels; identifies the actionable Tier B additions (CoreLogic, Verisk, DataLogix/Oracle, Crossix, Samba TV with opt-out URLs) and Tier C batch additions (10 brokers); documents Tier A brokers with no opt-out path (Venntel, Babel Street, CLEAR, Clearview for federal purposes).
+
+**Part B — ID barrier workarounds**: Documents which brokers require hard ID vs. KBA; documents six strategies for people without U.S. government ID, including the AB 60/AB 1766 → California state ID → DROP path.
+
+**Part C — Court challenge landscape**: Documents Clearview BIPA settlement and its federal carve-out; BIPA private right of action as the strongest litigation vehicle; PADFAA as an indirect lever; SECURE Data Act preemption threat.
+
+**Key question: Is the AB 60/AB 1766 → DROP path important enough to warrant republishing Part 0?**
+
+**Answer: It is already in Part 0.** Reading `implementation-guide.md` lines 70-77 confirms the implementation guide's Step 0.1 (California DROP) section already contains a dedicated "For undocumented residents (California)" paragraph that explicitly documents AB 60/AB 1766, explains that these statutes allow undocumented residents to obtain state ID without proof of authorized presence, and states that a California state ID satisfies DROP's identity verification requirement. It also includes the SECURE Data Act watch note. The `phase2-osint-deepening.md` work was the research basis for that integration — the integration already happened.
+
+**What is NOT yet in the implementation guide from the OSINT deepening**:
+- Tier B broker additions (CoreLogic, Verisk opt-out URLs) not in current Step 0.2 Priority 7-20 table
+- Tier C batch additions (10 new URLs) not listed
+- The structural framing that Tier A law enforcement databases (Venntel, CLEAR, Clearview/federal) have no consumer opt-out path — this distinction is partially in Part 0 but not laid out as explicitly as in the deepening
+- Court challenge and regulatory landscape (Part C of deepening) is not represented in the guide at all, though this belongs in the playbook, not the implementation guide
+
+---
+
+### Recommendation Memo
+
+**Recommendation: Option A — Publish the trilogy as-is.**
+
+**Rationale**:
+
+**1. The most important finding is already integrated.** The AB 60/AB 1766 → DROP path — the single highest-leverage finding for the population most at risk — is already documented in the implementation guide's Step 0.1. The publication-prep executive summary also correctly frames data broker opt-outs as the most important Tier 1 action. The deepening research informed what went in; it does not need to go in again.
+
+**2. The Tier B/C broker additions are valuable but not urgent.** Adding CoreLogic and Verisk to the Step 0.2 table improves completeness. But the existing guide already covers the six highest-impact brokers by law enforcement relevance. The Tier B additions are real-address-verification brokers with moderate law enforcement access, not direct ELITE/Venntel feeds. The marginal improvement to the guide does not justify holding publication.
+
+**3. The Part C legal landscape content belongs in the playbook, not the implementation guide.** The court challenge analysis (BIPA, CCPA enforcement, PADFAA, SECURE Data Act) is strategically important — especially the Clearview federal carve-out and the SECURE Data Act preemption threat. But this content fits the OpSec playbook's Part 9 (Legal Preparation) architecture, not Part 0 of the step-by-step guide. Integrating it into the implementation guide would break the document's functional design (it deliberately does not re-explain threats or legal context; it gives steps).
+
+**4. Effort vs. impact trade-off favors publishing.** The deepening is 201 lines of dense primary-source research. Proper integration into the implementation guide (Tier B/C table expansion, legal framing for Part 9 of the playbook) would be 30-45 minutes of substantive editorial work, not just appending text. The trilogy is already more comprehensive than comparable public resources. Holding publication for incremental completeness improvements is the wrong call.
+
+**5. `phase2-osint-deepening.md` functions well as a companion document.** The file is well-structured, sourced, and already referenced in the implementation guide. Readers who want the extended broker catalog, ID workaround details, or court challenge analysis have it in that file. It does not need to be absorbed into the main guide to be useful — and absorbing it would make the implementation guide harder to use.
+
+**One genuine exception**: The SECURE Data Act watch note (HR 8413, introduced April 22, 2026) is time-sensitive and already in the implementation guide's Step 0.1. No additional action needed.
+
+**Publish sequence**: Publish the three-document trilogy and `publication-prep.md` (executive summary + TOC + glossary). File `phase2-osint-deepening.md` as a published companion/appendix. Future iteration: consider integrating Tier B/C broker table into Step 0.2 and the legal landscape analysis into the playbook's Part 9 as a separate session.
+
+---
+
+## April 26, 2026 (Session 422) — Democratic Renewal Proposal Phase 2: Domain Expansion
+
+**Session type**: Research and writing — democratic renewal proposal deepening
+**Date**: April 26, 2026
+**Files updated**: `democratic-renewal-proposal.md`, `WORKLOG.md`
+
+### What Was Done
+
+Expanded three foundational domains in `democratic-renewal-proposal.md` with substantive new sections grounded in April 2026 research. Note: the referenced `master-outline.md` does not exist in the resistance-research directory — the democratic-renewal-proposal.md is itself the canonical document, already containing all 22 domains at full depth. The expansion work therefore added new subsections (1f, 1g, 2f, 6g, 6h) covering developments that postdated the previous update passes.
+
+**Domain 1: Electoral Reform**
+
+- Added **subsection 1f** (mid-decade redistricting crisis): ~850 words. Documents Texas redistricting (30–13 projected Republican advantage, racial gerrymander finding overridden by SCOTUS 6–3 via shadow docket), North Carolina, Indiana, Missouri, Virginia. Cook Political Report estimate of 8–12 seat swing. Proposes federal prohibition on mid-decade redistricting and mandatory independent commissions, citing the Redistricting Reform Act of 2025 (Padilla/Lofgren) as legislative vehicle.
+- Added **subsection 1g** (RCV momentum and backlash): ~800 words. Documents current state (49 jurisdictions, 14 million voters, 22 states). Virginia's 2026 expansion. Indiana/Ohio 2026 bans. Federal bills H.R.6589/S.3425. Maine Supreme Court April 2026 ruling declaring gubernatorial RCV expansion unconstitutional. Strategic framework for protecting gains: federal mandate (Supremacy Clause shield), open primaries + RCV combination, constitutional amendment at state level.
+
+**Domain 2: Institutional Integrity**
+
+- Added **subsection 2f** (Schedule Policy/Career final rule): ~1,000 words. Analyzes OPM's March 9, 2026 final rule, NTEU and coalition lawsuits, 9% workforce reduction scale, immunity doctrine interaction (Trump v. United States as compounding threat), irreversibility analysis (7–12 year rebuilding timeline), House Budget Committee April 2026 report on gutted services/higher costs. Argues for constitutional amendment targeting civil service protection on Germany Basic Law Article 33(5) model.
+
+**Domain 6: Judicial Independence and Rule of Law**
+
+- Added **subsection 6g** (post-CASA reform): ~900 words. Analyzes Trump v. CASA (June 27, 2025, 6–3 Barrett majority limiting universal injunctions). Concrete impact on birthright citizenship litigation. Four-part reform response: statutory restoration of universal injunction authority, expedited class certification (60-day mandate), state AG parens patriae standing codification, combined CASA+immunity constitutional repair.
+- Added **subsection 6h** (term limits design): ~750 words. Maps current legislation (H.R.1074, Whitehouse-Booker-Blumenthal-Padilla, Welch-Manchin constitutional amendment). Statutory vs. constitutional pathways with risk assessment. 18-year staggered design details. Strategic recommendation: pursue both tracks simultaneously.
+
+### Word Counts (approximate)
+- Domain 1 additions (1f + 1g): ~1,650 words
+- Domain 2 addition (2f): ~1,000 words
+- Domain 6 additions (6g + 6h): ~1,650 words
+- **Total added**: ~4,300 words
+
+### Sources Consulted
+- SCOTUSblog birthright citizenship oral argument analysis (April 2026)
+- Cook Political Report 2025–2026 redistricting tracker
+- FairVote RCV jurisdiction count (March 2026)
+- Ballotpedia April 2026 Maine RCV ruling
+- OPM Schedule Policy/Career final rule (March 9, 2026)
+- Federal News Network DOGE workforce analysis (March 2026)
+- House Budget Committee Democrats report (April 2026)
+- Sidley Austin analysis of Trump v. CASA (June 2025)
+- Congress.gov H.R.1074, H.R.6589, H.R.4632, S.3425, H.R.14
+
+---
+
 ## April 26, 2026 (Session 421) — May Day Guide Production Readiness + Distribution Strategy
 
 **Session type**: Production verification + distribution planning
