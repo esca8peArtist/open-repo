@@ -8,9 +8,53 @@
 
 ## Since Last Check-in
 
-**Period**: 2026-04-26 (Session 413 — orchestrator, parallel 2-agent execution)
-**Sessions run**: 413
-**Token budget**: 95K used of 200K weekly (~48%)
+**Period**: 2026-04-26 (Session 414 — orchestrator, parallel 3-agent execution)
+**Sessions run**: 414
+**Token budget**: ~200K used of 200K weekly (~100%) — approaching limit; usage monitor will throttle at 80% or 90%
+
+### Accomplished (Session 414 — orchestrator, parallel 3-agent execution)
+
+#### resistance-research — May Day Monitoring: Critical Developments + April 28 Hearing Prep
+**Files updated**: `monitoring/2026-04-28-results.md` (monitoring protocol + 5 new developments), `litigation-tracker-2026.md` (April 26 monitoring pass)
+
+**Key findings** (not in Session 413 pre-brief):
+- **DC Circuit contempt doctrine (Boasberg, April 15)**: Rao panel requires "unmistakably clear and specific" orders for contempt. DOJ will cite at April 28 Xinis hearing. En banc petition pending.
+- **ICE arrest trend**: Down 12% nationally but regionally varied (up in KY/IN/NC/FL). Posture is tactically quieter, not strategically changed.
+- **Coalition mobilization**: NJ AFL-CIO (1M+ members) formally mobilized. Event count: 900+ confirmed, 3,500+ projected with walkouts.
+- **Trump v. CASA oral args**: April 1 (not May 15). Court likely to side against admin on birthright citizenship.
+- **Nashville/Crenshaw**: Still pending as of April 26, no dismissal.
+
+**Status**: May Day Action Guide verified production-ready. Monitoring protocol documented for April 28 hearing outcome. Ready for live updates April 28-May 1.
+
+#### cybersecurity-hardening — Quality Review COMPLETE: Both Documents Ready
+**threat-model.md**: READY TO PUBLISH
+- All major factual claims verified against primary sources (contracts, NSA targets, DOGE data, etc.)
+- Zero spelling/grammar errors
+- Gaps appropriately flagged as research areas
+
+**opsec-playbook.md**: 8 corrections applied + ready
+- Tails URL migration (boum.org → tails.net)
+- iOS inactivity reboot clarification + GrapheneOS 18-hour default (forensics advantage)
+- GrapheneOS France threat accurate description
+- LocalMonero shutdown + replacements (Haveno, Bisq, Cake Wallet) + XMR delisting warnings
+- Signal UI string + Orbot routing clarification
+- Tier 1/2 consistency fixed
+- VPN→Tor directional language explicit
+
+**Overall**: Both documents production-ready. Threat model ready to publish as-is. Playbook ready post-corrections.
+
+#### open-repo — Phase 2 MVP Backend: COMPLETE + Production-Ready
+**Deliverables**:
+- **Meilisearch Search**: `GET /api/items/search` endpoint with full-text search, filtering (type/domain/tags), pagination, graceful degradation
+- **Endorsement System**: 6 endpoints (post/get/delete endorsements, aggregate stats, admin audit log)
+- **Data Model**: Endorsement table (user_id, item_cid, type, created_at)
+- **Schemas**: 7 new Pydantic models for validation
+- **Tests**: 35 total (24 original + 11 new), all passing, zero regressions
+- **Documentation**: API.md updated, README.md v0.2.0, Makefile Meilisearch targets
+
+**Status**: Production-ready, fully committed, backward compatible. Ready for Phase 3 (contributions/review workflow) or Phase 4+ (ActivityPub federation).
+
+---
 
 ### Accomplished (Session 413 — orchestrator, parallel 2-agent execution)
 
@@ -81,22 +125,21 @@
 
 ### Needs Your Input
 
-**resistance-research — May Day Monitoring (April 28, 29, May 1)**
-- April 28: Xinis hearing outcome expected. Results brief (`2026-04-28-results.md`) ready to be filled.
-- April 29: May Day Mass Call at 7:30pm ET. Coalition status confirmed 900+ events.
-- May 1: May Day actions begin. Guide is production-ready.
+**resistance-research — May Day Live Monitoring (April 28, 29, May 1)**
+- **April 28**: Xinis hearing outcome expected. Results brief (`2026-04-28-results.md`) has monitoring protocol ready to fill. Critical DC Circuit contempt ruling (Boasberg, April 15) will likely be cited by DOJ.
+- **April 29**: May Day Mass Call at 7:30pm ET. Coalition confirmed 900+ events, 3,500+ projected with walkouts.
+- **May 1**: May Day actions begin. Guide is production-ready.
+
 If you will be participating or monitoring, share updates so the orchestrator can document outcomes.
 
-**cybersecurity-hardening — Review & Next Phase**
-Research phase complete since Session 411: `threat-model.md` (440 lines, verified threat landscape) and `opsec-playbook.md` (4,800 words, actionable defenses). Both grounded in confirmed government capabilities (Palantir contracts, NSA Section 702, data broker loopholes).
+**cybersecurity-hardening — Next Phase Direction Needed**
+Quality review complete (Session 414). Both documents are verified, accurate, and ready. Next phase options:
+1. **Publication preparation** (add table of contents, glossary, quick-reference checklists)
+2. **Deepen into specific categories** (OSINT counter-measures, TSCM/physical security, organizational incident response templates)
+3. **Implementation** (build a configuration/installation guide for GrapheneOS/Signal/Tor stack)
+4. **Publish as-is** (documents are production-ready now)
 
-Next phase options:
-1. Quality review pass (spelling, technical accuracy, clarity)
-2. Deepen into specific categories (OSINT counter-measures, TSCM/physical security, organizational incident response templates)
-3. Publication preparation (table of contents, glossary, quick-reference checklists)
-4. Implementation (e.g., build a configuration guide for GrapheneOS/Signal/Tor stack)
-
-Please advise which direction to take.
+Please advise direction.
 
 **mfg-farm — Test Print**
 Business plan, CadQuery designs, market research, and listing copy all ready. Blocked on physical test print of the ModRun rail and clip designs. Once completed, Etsy launch can proceed.
@@ -105,12 +148,13 @@ Business plan, CadQuery designs, market research, and listing copy all ready. Bl
 All 21 products have content and listing copy complete. Only blocker: PDF mockup images for all listings (critical conversion factor on Etsy).
 
 ### Suggested Priorities (Next Session)
-1. **resistance-research**: Monitor April 28 Xinis hearing outcome (critical institutional resistance precedent). Monitor April 29 May Day Mass Call. Assess May 1 May Day actions and document outcomes.
-2. **cybersecurity-hardening**: User direction needed — which next phase? (quality review / deepening / publication / implementation)
-3. **open-repo**: Phase 2 backend implementation (Meilisearch search + endorsement endpoints) when prioritized by user.
-4. **stockbot**: Monitor paper trading performance (4 sessions running on Jetson). Check for signal generation and execution.
+1. **resistance-research**: **LIVE MONITORING** — April 28 Xinis hearing outcome (critical institutional resistance precedent), April 29 May Day Mass Call (7:30pm ET), May 1 May Day actions. Document outcomes when available.
+2. **cybersecurity-hardening**: **User direction needed** — which next phase? (publication / deepening / implementation / or publish as-is)
+3. **stockbot**: Monitor paper trading performance (4 sessions running on Jetson since April 14). Check for signal generation and execution. Paper trading assessment.
+4. **mfg-farm**: Test print of ModRun rail/clip designs (user action required for launch prep).
+5. **seedwarden**: PDF mockup images needed (all 21 products have content/listing copy ready, only blocker is mockup images for Etsy conversion).
 
-**Usage**: 95K tokens used this session of 200K weekly budget (~48%). At normal pace — no throttling needed.
+**Usage**: Approaching limit (~100K+ tokens used of 200K weekly). Orchestrator usage monitor will throttle at 80% or 90% threshold or at Tuesday 00:00 UTC weekly reset.
 
 ---
 

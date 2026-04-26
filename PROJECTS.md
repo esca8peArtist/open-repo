@@ -65,24 +65,24 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active
+**Status**: Active — live monitoring phase
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 413: **May Day 2026 Action Guide PRODUCTION-READY** (`mayday-2026-action-guide.md`, 669 lines). **Monitoring for May Day (in 5 days)**. April 28 Xinis hearing pre-brief updated with 6 material new developments (ICE tracker injunction win, ProPublica findings, DHS payroll cliff, Nashville Crenshaw pending). April 28 results brief pre-filed (`monitoring/2026-04-28-results.md`) — to be updated with hearing outcome. May Day Strong confirmed 900+ events, April 29 Mass Call 7:30pm ET. **Critical dates**: April 28 (Xinis hearing), April 29 (May Day Mass Call), May 1 (May Day actions).
+**Current focus**: Session 414: **May Day 2026 Action Guide PRODUCTION-READY** (`mayday-2026-action-guide.md`, 669 lines). **LIVE MONITORING April 28–May 1**. April 28 results brief monitoring protocol documented (`monitoring/2026-04-28-results.md`). DC Circuit contempt ruling (Boasberg, April 15) updated in pre-brief — DOJ will cite at Xinis hearing. ICE arrest trends, NJ AFL-CIO 1M+ member mobilization, event count 900+ confirmed/3,500+ projected documented. Nashville/Crenshaw still pending. **Critical dates**: April 28 (Xinis hearing outcome), April 29 (May Day Mass Call 7:30pm ET), May 1 (May Day actions begin).
 **Blocked on**: —
-**Notes**: Live monitoring through May 1. Ongoing litigation tracking (Xinis, Nashville, Leon, Branch C). Democratic renewal proposal comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
+**Notes**: Live monitoring through May 1. Democratic renewal proposal comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
 
 ---
 
 ### cybersecurity-hardening
 **Goal**: Build a comprehensive, actionable guide to protecting communications and identity against government-level mass surveillance. Understand what Palantir and similar data brokers/intelligence platforms actually have access to — what data they ingest, how they link identities, and what their current government contracts cover. From that threat model, identify the best practical techniques for private and anonymous communication: encrypted messaging, metadata minimization, network anonymization (Tor/VPN tradeoffs), device hardening, operational security (OpSec), and identity compartmentalization. The output should be a personal OpSec playbook grounded in real threat modeling — not theoretical, but calibrated to the actual capabilities of the adversary.
 **Priority**: High
-**Status**: Active — research phase COMPLETE
+**Status**: Active — quality review COMPLETE, awaiting next phase direction
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Session 411: **Research phase COMPLETE** — `threat-model.md` (440 lines, Palantir $970.5M contract ecosystem, ELITE/ICM/ImmigrationOS/LCA platforms, DOGE database, NSA Section 702, data broker loopholes, 50+ sources) and `opsec-playbook.md` (4,800 words, 11 sections, Signal/GrapheneOS/Briar/Tor/VeraCrypt/VPN/device hardening/behavioral OpSec, tiered guidance for journalists/activists/targets, all recommendations grounded in confirmed threats). **Next**: Quality review pass, publication preparation, or deepening into specific threat categories (e.g., OSINT counter-measures, physical TSCM, organizational incident response templates).
+**Current focus**: Session 414: **Quality review COMPLETE** — `threat-model.md` (440 lines) READY TO PUBLISH — all major factual claims verified against primary sources (SEC filings, contracts, NSA reports, law enforcement public records). `opsec-playbook.md` (4,800 words) — 8 targeted corrections applied (Tails URL migration, iOS reboot timing, LocalMonero shutdown + replacements, Signal UI strings, GrapheneOS France accurate account, Orbot routing clarification, tier consistency), now ready. **Next phase options**: (1) Publication preparation (TOC, glossary, quick-ref checklists), (2) Deepen into specific categories (OSINT counter-measures, TSCM/physical, org incident response), (3) Implementation (configuration guide for GrapheneOS/Signal/Tor stack), (4) Publish as-is (production-ready now).
 **Blocked on**: —
-**Notes**: Both foundational documents are research-complete and verified against primary sources (FOIA, contracts, court filings, investigative journalism, official docs). Practical over theoretical: real apps, real configurations, real tradeoffs between security and usability.
+**Notes**: Both documents are accurate, practical, grounded in confirmed threats. Awaiting user direction for next phase. Identified deepening gaps: TSCM/physical security, OSINT counter-measures, secure hardware procurement, international comparisons, SecureDrop operator security.
 
 ---
 
@@ -125,12 +125,12 @@
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — MVP backend Phase 1 COMPLETE
+**Status**: Active — MVP backend Phase 2 COMPLETE
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Session 413: **MVP Backend Phase 1 COMPLETE** (`backend/app/` — FastAPI + PostgreSQL, 489 lines). **Deliverables**: (1) 3 core API endpoints (POST/GET /api/items, GET with pagination/filtering), (2) 24 passing tests, (3) JSON-LD validation + CID computation, (4) SQLAlchemy ORM with PostgreSQL, (5) Seed data loader for 32 OpenFarm crops, (6) Documentation: API.md (517 lines) + README.md (334 lines) + Makefile. **Next**: Phase 2 (search via Meilisearch + endorsement endpoints).
+**Current focus**: Session 414: **MVP Backend Phase 2 COMPLETE** — Meilisearch search + endorsement system fully implemented and tested. **Deliverables**: (1) Search service (`app/services/search_service.py`) with graceful degradation, (2) 6 endorsement endpoints (post/get/delete endorsements, aggregate stats, admin audit log), (3) Endorsement model (user_id, item_cid, type [UPVOTE/DOWNVOTE/FLAG], created_at), (4) 7 new Pydantic schemas for validation, (5) 35 total tests (24 original + 11 new), all passing, zero regressions, (6) Updated API.md + README.md v0.2.0 + Makefile Meilisearch targets. **Next**: Phase 3 (contributions/review workflow with moderation) or Phase 4+ (ActivityPub federation, DID integration).
 **Blocked on**: —
-**Notes**: Backend is production-ready for Phase 1. All architecture decisions (FastAPI/PostgreSQL/Meilisearch/Kubo/Next.js) validated. Phase 2+ requires Meilisearch setup and endorsement schema implementation.
+**Notes**: Backend Phase 1–2 production-ready, fully backward compatible. All core architecture validated and implemented (FastAPI, PostgreSQL, Meilisearch, async throughout). Phase 3+ ready when prioritized.
 
 ---
 

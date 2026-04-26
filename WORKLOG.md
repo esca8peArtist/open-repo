@@ -4,6 +4,80 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 (Session 414) — Parallel 3-agent execution: May Day monitoring, cybersecurity review, open-repo Phase 2
+
+### resistance-research — May Day Monitoring: Critical DC Circuit Ruling + Coalition Updates
+
+Updated monitoring brief for April 28 Xinis hearing + April 29 Mass Call + May 1 May Day actions.
+
+**Key developments not in April 26 pre-brief**:
+1. **DC Circuit kills contempt doctrine (Boasberg, April 15)** — Rao panel: criminal contempt requires "unmistakably clear and specific" orders. DOJ will cite this at April 28 hearing to challenge Xinis contempt before it is drafted. Dissent warns this creates evasion roadmap. En banc petition pending.
+2. **ICE arrest trend** — Down 12% nationally (8,347→7,369/week) but regionally varied (up in KY/IN/NC/FL). Collateral arrests also fell. Pre-May Day posture is tactically quieter, not strategically changed.
+3. **Coalition mobilization** — NJ AFL-CIO (1M+ members) formally mobilized at Newark press conference (April 22). Largest single state federation explicitly moving membership to May Day. Event count: 900+ confirmed, 3,500+ projected with walkouts.
+4. **Trump v. CASA correction** — Oral args April 1 (not May 15). SCOTUSblog reads Court as likely siding against admin on birthright citizenship. Decision expected late June 2026.
+5. **Nashville/Crenshaw** — Still pending as of April 26. No dismissal yet.
+
+**Files updated**: `monitoring/2026-04-28-results.md` (monitoring protocol documented), `litigation-tracker-2026.md` (April 26 monitoring pass with new developments, updated deadline table).
+
+**May Day Action Guide**: Verified production-ready — all 9 sections complete, legal/safety/undocumented guidance in place. Optional addition: N.D. Illinois injunction restoring Eyes Up / ICE Sightings apps (April 18-23) would strengthen safety resources section.
+
+---
+
+### cybersecurity-hardening — Quality Review Pass: threat-model.md + opsec-playbook.md COMPLETE
+
+**threat-model.md**: READY TO PUBLISH (no corrections needed)
+- All major factual claims verified against primary sources: Palantir contracts, NSA Section 702 targets, Clearview AI contract, DHS facial recognition oversight removal, DOGE SSA data transfer, etc.
+- Spelling/grammar: No errors.
+- Gaps appropriately flagged as open research areas.
+
+**opsec-playbook.md**: 8 corrections applied, now ready
+1. Tails URL: `tails.boum.org` → `tails.net` (official domain migration)
+2. iOS 72-hour reboot feature: Added inactivity qualifier, iOS 18.0→18.1 timer change (168h→72h), and GrapheneOS 18-hour auto-reboot default (key forensics advantage)
+3. GrapheneOS France threat: Corrected from "threatened prosecution" to accurate account (Le Parisien labeling, prosecutor threat, no formal prosecution filed)
+4. LocalMonero: Updated from "defunct — replacements include Bisq" to include Haveno (dedicated successor), Bisq (Bitcoin DEX with XMR support), Cake Wallet atomic swaps. Added warning: Binance/Coinbase/Kraken delisted XMR.
+5. Signal phone number privacy setting: Exact UI string "Who can find me by my number" + path clarification (Settings > Profile > tap @ field)
+6. Orbot/Signal routing: Added VPN mode mechanism, Signal tunneling instruction, iOS limitation
+7. Tier 1/2 consistency: Moved Signal username from Tier 1 to Tier 2
+8. VPN→Tor direction: Replaced ambiguous phrasing with explicit directional language
+
+**Overall assessment**: Both documents are accurate, well-sourced, production-ready. Threat model ready to publish as-is. Playbook ready after corrections applied.
+
+**Future deepening opportunities**: TSCM/physical security, OSINT counter-measures, secure hardware procurement, international comparisons, SecureDrop operator security.
+
+---
+
+### open-repo — Phase 2 MVP Backend: Meilisearch Search + Endorsement System COMPLETE
+
+Implemented full Phase 2 functionality with production-ready quality.
+
+**Search (Meilisearch Integration)**:
+- Service: `app/services/search_service.py` (Meilisearch client wrapper with graceful degradation)
+- Endpoint: `GET /api/items/search` (full-text search, advanced filtering, pagination)
+- Searchable fields: title, description, tags, domain, item_type, author
+- Filters: item_type, domain, tags
+- Auto-indexing on item creation
+
+**Endorsement System** (Community Feedback):
+- Model: `Endorsement` (user_id, item_cid, endorsement_type [UPVOTE/DOWNVOTE/FLAG], created_at)
+- Service: `app/services/endorsement_service.py` (CRUD, aggregation, audit log)
+- Endpoints (6 new):
+  - `POST /api/items/{cid}/endorse` — Submit/update endorsement
+  - `GET /api/items/{cid}/endorsements` — Aggregate stats (upvote/downvote/flag counts, score)
+  - `GET /api/items/{cid}/endorsements/my-endorsement` — User's endorsement
+  - `DELETE /api/items/{cid}/endorsements/my-endorsement` — Remove endorsement
+  - `GET /admin/items/{cid}/endorsements` — Audit log
+- Schemas: 7 new Pydantic models for validation + response structures
+
+**Tests**: 35 total (24 existing + 11 new), all passing, zero regressions
+
+**Documentation**: API.md updated with full Phase 2 endpoint docs + examples, README.md updated to v0.2.0, Makefile adds meilisearch targets
+
+**Status**: Production-ready, fully committed, backward compatible
+
+**Next phases**: Phase 3 (contributions/review workflow), Phase 4+ (ActivityPub federation, DID integration)
+
+---
+
 ## 2026-04-26 — cybersecurity-hardening — Quality Review Pass: threat-model.md + opsec-playbook.md
 
 Conducted full quality review of both documents. Verified all major factual claims against primary sources. Applied 8 targeted corrections to opsec-playbook.md.
