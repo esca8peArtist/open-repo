@@ -98,31 +98,57 @@ If BLOCKED.md has no changes, `git add` will silently skip it — that is fine. 
 7. Check-in cadence is daily (sometimes twice daily) — pace work accordingly
 8. When stockbot code is ready to deploy to Jetson (paper trading features complete, tests passing), create a `DEPLOY_READY` file in the workspace root: `touch /home/awank/dev/SuperClaude_Framework/DEPLOY_READY`. The deploy script runs automatically after the session ends.
 
-## CRITICAL: Branch discipline — WORKLOG/CHECKIN/PROJECTS always on master
+## CRITICAL: Branch discipline — ALL orchestration files always on master
 
-**WORKLOG.md, CHECKIN.md, PROJECTS.md, BLOCKED.md, and INBOX.md must ALWAYS be committed on `master`.** Never commit these files on a feature branch.
+The following must ALWAYS be committed on `master`. Never commit them on a feature branch:
+
+- **State files**: `WORKLOG.md`, `CHECKIN.md`, `PROJECTS.md`, `BLOCKED.md`, `INBOX.md`
+- **Infrastructure files**: `scripts/` (any new or modified scripts), `.claude/` (agent definitions, this prompt)
 
 The correct workflow when working on open-source-rideshare (or any feature branch):
 1. `git checkout feature/your-branch` — do the code work
 2. Commit the code changes on the feature branch
-3. `git checkout master` — switch back immediately after
-4. Commit WORKLOG.md, CHECKIN.md, PROJECTS.md, BLOCKED.md on master
+3. `git checkout master` — switch back **immediately** after
+4. Commit all orchestration and infrastructure files on master
 
 If you find yourself on a feature branch with uncommitted changes to these files:
-- Stage ONLY the orchestration files (WORKLOG.md, CHECKIN.md, etc.)
-- `git stash` them or use `git checkout master -- WORKLOG.md CHECKIN.md PROJECTS.md BLOCKED.md` to move them to master
+- `git checkout master` first
+- Then `git add` the orchestration/infrastructure files and commit
 
-Violation of this rule causes the orchestration state to be invisible on master, breaking the Discord bot and making it impossible for the user to see what's been done.
+Note: `start-orchestrator.sh` now runs `git checkout master` automatically before and after each session. If you are in a session, you started on master. Stay on master for all orchestration commits.
+
+Violation of this rule causes orchestration state and infrastructure changes to be invisible on master, breaking the Discord bot, losing scripts, and causing "unavailable" errors in the next session.
 
 ---
 
-## Using SuperClaude Agents
+## Using SuperClaude Agents — Parallel Execution
 
-You can and should spawn specialised subagents for project work. Available agents:
-- `/sc:research` — for research tasks on any project
-- `/sc:implement` — for coding tasks
-- `/sc:analyze` — for reviewing code or documents
-- `/sc:improve` — for iterative refinement
-- Agent profiles in `.claude/agents/` — for project-specific context
+**Always run multiple projects in parallel when possible.** Do not work on one project and then idle — spawn concurrent subagents for independent tasks.
 
-Begin now. Orient, then select the highest-priority task and start working.
+**Pattern:**
+1. Orient: identify 2–3 projects with ready work (not blocked, not paused)
+2. Spawn all their subagents simultaneously in one message
+3. Wait for all to complete, then log and commit
+
+**Example — spawning in parallel:**
+```
+# Good: two agents launched at once
+Agent(resistance-research subagent, task A)  ← same message
+Agent(stockbot subagent, task B)             ← same message
+
+# Bad: sequential
+Agent(resistance-research subagent, task A)
+[wait]
+Agent(stockbot subagent, task B)
+```
+
+This produces roughly 2–3× the output per session with no extra wall-clock cost.
+
+Available agent profiles:
+- `.claude/agents/resistance-research.md`
+- `.claude/agents/stockbot.md`
+- `.claude/agents/seedwarden.md`
+- `.claude/agents/open-source-rideshare.md`
+- `.claude/agents/general-research.md`
+
+Begin now. Orient, then spawn parallel subagents for the top 2–3 unblocked projects.
