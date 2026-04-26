@@ -1,245 +1,195 @@
-# Houston Power Commons
+# Houston Commons
 ## Founding Document & Theory of Change
-### Draft v1.0 — April 2026
-
-> *"The question is not whether the system is broken. The question is what we build while it is."*
+### Draft v2.0 — April 2026
 
 ---
 
-## Name & Framing
+## What We Are
 
-**Houston Power Commons** — "power" carries both meanings deliberately: electrical power and political power. "Commons" names the ownership model — not a service provider, not a nonprofit delivering charity, but shared infrastructure owned by its members. Every word is a design decision.
+A member-owned infrastructure company. We build and operate the systems that keep people alive — energy, healthcare, food, water, waste — at lower cost and higher reliability than the market currently provides. Members own the infrastructure. Professionals operate it. Results are the measure of everything.
 
-**Tagline**: *Member-owned infrastructure for the city the grid forgot.*
-
-**What we are not**: a mutual aid group (too episodic), an advocacy organization (we don't petition power, we build alternatives), a nonprofit service provider (clients are not members, services are not power). We are a **cooperative infrastructure organization** — the model is the rural electric cooperative, updated for a city that the fossil fuel industry and a captured grid operator have decided is expendable.
+We are not an advocacy organization. We do not petition existing institutions for better outcomes. We build better systems and make failing ones irrelevant.
 
 ---
 
-## Why Now, Why Houston, Why This
+## The Model
 
-On February 10-19, 2021, the Texas electric grid (ERCOT) failed. Across the state, an estimated 246 to 702 people died — the true number remains contested because Texas did not want to count them. In Houston, low-income neighborhoods lost power for days while wealthier zip codes were rotated off and on. The failure was not a weather anomaly. It was the predictable outcome of a grid run by an industry that lobbied against weatherization requirements because weatherization cost money and there was no regulator with authority to compel it. ERCOT exists outside federal grid regulation because Texas chose that — specifically to avoid oversight. People died because of a regulatory choice made by captured officials.
+**SpaceX did not organize against ULA's launch monopoly. They built cheaper rockets.**
 
-That was 2021. Every summer since, Houston has broken heat records. The grid has strained. The same structural problems remain unfixed. Meanwhile, energy bills for low-income households have risen while solar and battery technology has dropped in cost dramatically — to the point where community-scale solar plus storage is now economically viable and the fossil fuel industry's monopoly on electricity generation is structurally threatened for the first time in a century.
+The disruption followed from superior performance. By the time the political and economic consequences landed, SpaceX was too embedded and too valuable to stop. The existing order became obsolete through demonstrated results, not through fighting it.
 
-At the same time, Texas has the highest uninsured rate in the United States. Houston has one of the largest uninsured and undocumented populations of any major American city. The ACA has been systematically undermined. Texas has refused Medicaid expansion eleven times. Healthcare for low-income Houstonians is effectively inaccessible — not because medicine doesn't exist, but because the system that delivers it has been captured by insurance and pharmaceutical industry interests that profit from inaccessibility.
+This is the model. You do not challenge a captured energy grid through political organizing — you build energy infrastructure that works better. You do not advocate for healthcare access — you provide healthcare. When enough people are using better alternatives, the failing systems become irrelevant. That is the goal.
 
-These are not separate problems. They are the same problem: essential infrastructure — the systems that keep people alive — has been captured by private interests that profit from failure. The Houston Power Commons exists to build the infrastructure that should exist but doesn't.
-
----
-
-## Theory of Change
-
-### The Model
-
-The dominant theory of change in progressive politics is: **organize people → win elections → pass policy → change systems**. This model assumes the institutions you're trying to change are responsive to electoral pressure. The evidence from the last decade is that they are not — or not fast enough, or not durably enough. Policy wins are reversed. Elections are structured to produce predetermined outcomes. Courts strike down reforms. Regulatory agencies are captured and reversed.
-
-We propose a different model, drawn from the history of movements that actually built durable power:
-
-**Solve a material problem → build a relationship → accumulate members → build collective capacity → exercise political power**
-
-The material problem is the entry point, not the destination. West Street Recovery in Northeast Houston started fixing flooded homes. The output, after years of work, is a permanent organized base that wins $28 million drainage investments and overturns decades-old city ordinances. The Black Panther Party started free breakfast programs and free clinics. The output was the most sophisticated political organization produced by the Black freedom movement. The rural electric cooperatives of the 1930s started by stringing power lines to farms the utilities refused to serve. The output was 900 member-owned cooperatives that still operate today — 90 years of durability.
-
-In each case: the material service was not charity. It was the basis of a relationship, and the relationship was the basis of a political base, and the political base was the basis of structural power. The service and the politics were never separate.
-
-**The Houston Power Commons operates on this model.** We start with energy — solar installations, battery backup, community microgrids — because energy is life-critical, because ERCOT's failure is undeniable and named, because the economics now make community-scale energy viable, and because nobody else in Houston is doing it at the organizational level. We add healthcare as the second pillar because it is the other domain where state failure is most acute and most legible. Together, energy and healthcare are a complete life-infrastructure package: the two systems that keep you alive when the state fails.
-
-Every household that receives an installation is a member with a vote. Every member is part of a neighborhood chapter. Every chapter is connected to a citywide body. The political organization grows with the infrastructure — it is not bolted on afterward.
-
-### Why Not Just Advocacy
-
-Advocacy — petitioning existing institutions for better outcomes — is not sufficient when those institutions are captured. This is not a theoretical claim; it is the observable record. Texas has refused Medicaid expansion eleven times despite majority public support. ERCOT has implemented minimal weatherization despite the 2021 deaths. The fossil fuel industry's political influence over Texas state government is documented and durable. Advocacy into captured institutions produces marginal improvements at best and ritual humiliation at worst.
-
-This does not mean legal and advocacy work is worthless — it is necessary and we support it. But it cannot be the primary strategy. The primary strategy must be building systems that work independent of whether the captured institutions reform. We build infrastructure that keeps people alive regardless of what ERCOT or the Texas Legislature does. The political power that infrastructure generates is then deployed to challenge captured institutions — but from a position of material independence, not supplication.
-
-### Why Not Just Service Delivery
-
-The inverse failure is the NGO model: build a service organization, hire staff, apply for grants, deliver services to clients. This model has three structural problems:
-
-1. **Clients are not members**. People who receive services have no ownership of the organization, no vote, no stake. When the funding runs out or priorities shift, the services stop and the community has nothing. No accumulated capacity.
-
-2. **Grant dependence is capture by other means**. Government grants, corporate foundations, and institutional funders all have their own political interests. Organizations that depend on them cannot organize against them. This is not theoretical — it has happened to virtually every major nonprofit that tried to do structural work.
-
-3. **Scale without power**. A service org can serve thousands of people and build no political power at all — because the relationship is client-provider, not member-member. This is exactly the NGO trap: impressive outputs, zero structural impact.
-
-The Houston Power Commons is structured to avoid both failures. Members own the infrastructure. Governance is democratic and member-driven. Revenue comes primarily from cooperative economics (energy savings, sliding-scale fees) rather than grants. Political education is explicit from day one — not a curriculum added later, but the reason the organization exists stated plainly.
+**The sequence is**: solve a real problem → deliver measurable results → earn trust → expand. Political and structural consequences follow from this. They are not the goal.
 
 ---
 
-## The Two Pillars
+## Why Houston, Why These Problems
 
-### Pillar 1: Energy Sovereignty
+**Energy**: The Texas grid (ERCOT) failed in February 2021. Hundreds died. The structural cause — an industry that lobbied against weatherization requirements because weatherization cost money and there was no effective regulator — remains unfixed. Houston summers are increasingly life-threatening. Energy bills for low-income households are rising. Meanwhile, solar and battery costs have dropped 80% in the last decade, to the point where community-scale energy is now economically viable without subsidies. No organization in Houston is doing this at scale. The market failure and the technical opportunity exist simultaneously.
 
-**What we build**: Community solar installations and battery backup systems, starting at the household level and scaling to community microgrids. Every installation is made in partnership with a member household that contributes what they can (sliding scale, including $0 for lowest-income households). Every installation is cooperatively owned — the panel is on your roof but the economics are pooled.
+**Healthcare**: Texas has the highest uninsured rate in the United States. Houston has one of the largest uninsured populations of any major American city. The healthcare system is inaccessible not because medicine does not exist but because the delivery system is built around extraction rather than outcomes. Community health worker models have a strong evidence base for impact and a low barrier to entry.
 
-**Why this works economically**: Solar + battery costs have dropped 80% in the last decade. A residential solar + storage system that cost $40,000 in 2015 costs $12,000-18,000 today, with further drops projected. Community solar models — where multiple households share a single larger installation — reduce per-household costs further and allow renters and non-homeowners to participate. Federal tax credits (Investment Tax Credit) currently make community solar economically viable without subsidies.
-
-**Why this builds power**:
-- Every installation is a 25-year relationship. Solar panels last a long time.
-- Energy independence reduces household vulnerability to ERCOT failures — members can weather the next freeze or heat emergency
-- Cooperative ownership means decisions about the grid are made by members, not ERCOT executives
-- The aggregate political claim is concrete: we represent X households generating Y kilowatts of energy that ERCOT's monopoly cannot control
-
-**The political target**: ERCOT and the Texas Public Utility Commission (PUC). Both are documented captured institutions. The PUC has three commissioners appointed by the governor. The fossil fuel industry's influence over the Texas legislature and the governor's appointments is documented. Our goal is not to reform ERCOT — it is to build energy infrastructure independent of ERCOT, and to use the political base that generates to advocate for structural change to grid governance.
-
-**Phase 1 target**: 30-50 households in a single Houston neighborhood (to be selected based on energy poverty rates, community partner relationships, and organizing capacity). A community anchor — church, school, or community center — as the first major installation. This creates visible infrastructure on a building people recognize.
-
-### Pillar 2: Community Health
-
-**What we build**: A community health worker (CHW) program as the foundation, scaling toward a sliding-scale clinic. CHWs are trusted community members — not necessarily licensed clinicians — trained to navigate the healthcare system, provide health education, connect people to existing services, conduct home visits, and refer to clinical care. This model has the lowest regulatory barrier to entry and the strongest evidence base for impact in underserved communities.
-
-**Why CHWs first**: A licensed clinic requires physical space, malpractice coverage, licensed staff, and regulatory compliance — a multi-year, multi-million dollar build. A CHW program can launch with trained community members, a small stipend or volunteer model, and a referral network with existing providers. The CHW program builds the relationships and organizational capacity; the clinic is the Phase 3 build once the base is established.
-
-**Why healthcare belongs with energy**: Together they are life infrastructure — the two systems that keep you alive when the state fails. The combination is also more politically coherent than either alone: we're not an energy org that also does healthcare or a health org that also does energy. We are an organization that builds the infrastructure the captured system won't provide. Energy and health are both expressions of that mission.
-
-**The political target**: Texas's Medicaid non-expansion (the only state policy decision that most directly affects Houston's uninsured crisis), plus Harris County's health system funding and priorities. The CHW model also directly challenges the for-profit healthcare delivery system by demonstrating that community-controlled, non-extractive healthcare delivery is possible and effective.
+**Food, water, waste**: The same structural failure pattern applies across essential infrastructure. Each is a future service division. Energy and healthcare are where we start because the need is most acute and the economic case is clearest today.
 
 ---
 
-## Membership and Governance
+## Structure: One Organization, Multiple Divisions
 
-### Membership Model
+The governance failure of the cooperative model is usually this: one cooperative for energy, a separate one for food, a separate one for healthcare — each with its own board, its own meetings, its own administrative overhead. It becomes a part-time job for the engaged members and an abstraction for everyone else.
 
-Every person who receives a service is invited to become a member. Membership is the default, not the exception. Members have:
-- A vote in their neighborhood chapter's governance
-- A vote in annual citywide decisions (budget priorities, leadership, political positions)
-- Access to all programs (energy, health, political education, legal know-your-rights)
-- Obligation to participate (minimum 4 hours/year of collective work — installations, canvassing, meetings)
+**Houston Commons is one organization with multiple service divisions.**
 
-Membership is sliding scale: $5-50/month, with $0 for lowest-income households. The sliding scale is not charity — it is cooperative economics. The members who can pay more subsidize the members who cannot. This is the credit union model, the food co-op model, the rural electric co-op model.
+One membership. One board. Multiple programs. Professional operators run each division. Members interact with each service in their daily lives without needing to understand the organizational structure behind it. When the energy division generates a surplus, it can fund healthcare program growth. When the healthcare division has capacity, it can serve energy program members first. Cross-subsidy within one organization is impossible across separate cooperatives.
 
-### Governance Structure
+The divisions in order of launch priority:
 
-**Neighborhood chapters** (10-50 member households in a defined geography) are the primary unit. Each chapter governs itself: sets local priorities, elects representatives, manages local installations. Chapters are autonomous but federated.
+| Division | What it does | Launch timing |
+|---|---|---|
+| Energy | Community solar + battery, cooperative billing | Phase 1 |
+| Health | CHW program → sliding-scale clinic | Phase 1-2 |
+| Food | Community purchasing, urban agriculture, distribution | Phase 2-3 |
+| Water | Rainwater harvesting, filtration, storage systems | Phase 3 |
+| Waste | Composting, materials recovery, circular economy | Phase 3 |
 
-**Citywide council** — one elected representative per chapter. Makes citywide decisions: budget, partnerships, political positions, expansion priorities. Meets monthly. Decisions by consensus where possible, supermajority where not.
+Each division launches when the organizational capacity and economic case exist — not on an ideological schedule.
 
-**Paid staff** — hired by and accountable to the citywide council. Not the other way around. Staff serve the member-governed organization; they do not run it.
+---
 
-**Political positions** — taken by the membership, not by staff or leadership. The organization can endorse candidates, issue policy demands, and take public positions, but only after a democratic member vote. This protects the organization from capture by any individual leader's politics.
+## Governance: As Thin As Possible
 
-### Preventing Institutional Capture
+The goal is a governance structure that is democratically legitimate without consuming members' lives.
 
-Four structural protections:
+**How it works in practice:**
 
-1. **No single funder over 20% of budget**. Any funder who represents more than 20% of annual revenue has effective veto power over the organization. Cap it by policy.
+Members join. Most members never attend a meeting. Their membership is visible only in three ways: (1) lower bills or better services than they'd otherwise have, (2) an annual statement showing the cooperative's financial performance, and (3) an occasional app notification asking them to vote on something important. That is the full governance burden for a passive member. It is designed to be less demanding than a streaming service subscription.
 
-2. **No government grants for core programs**. Government grants can be revoked by hostile administrations (see: every federal grant to progressive organizations under hostile executive power). Government contracts for service delivery are acceptable; government grants to core organizing programs are not.
+A small number of members — the ones who want to be engaged — participate more actively. They stand for the board. They attend the annual meeting (which is also a community event, not a governance obligation). They serve on advisory groups for specific divisions. This is entirely voluntary. The organization functions without their engagement; it functions better with it.
 
-3. **Staff cannot vote in governance**. Staff are employees of the member-governed organization. Allowing staff to vote in governance is how professional staff gradually take over democratic organizations. The Michels problem — the iron law of oligarchy — starts here.
+**Board**: 7 members, elected by membership, staggered 3-year terms. Responsible for: hiring and firing the executive director, approving annual budget, setting strategic direction, major expansion decisions. Everything else is delegated to professional management.
 
-4. **Term limits for all leadership**. Two terms maximum for any elected position. The organization's leadership must rotate through the membership. Organizations that allow permanent leadership become organizations run by their leadership, not their members.
+**Professional management**: An executive director and division operators hired by and accountable to the board. They run day-to-day operations. They do not set strategic direction. This is the credit union model — members don't manage loan portfolios, professionals do.
+
+**Member decisions via app**: Major votes (board elections, significant strategic shifts, large capital expenditures) are conducted through a mobile app. Vote takes 2 minutes. Notification goes out, voting window is 2 weeks, result is published. Members who don't vote don't lose membership — passive non-participation is expected and accommodated.
+
+**Annual meeting as community event**: Once a year, the organization hosts a neighborhood gathering — food, live music, the year's results presented clearly (panels installed, bills reduced, patients seen). The governance portion takes 20 minutes. The community portion takes the rest of the day. This is how you get attendance — not by making it a civic obligation but by making it worth attending.
+
+---
+
+## Membership: Convenience First
+
+American convenience culture is not an obstacle to design around — it is a design constraint to design with.
+
+**Passive membership is the default.** You join because you want cheaper electricity or accessible healthcare. You sign up, you get the service, you pay sliding-scale dues (or dues come out of your energy savings automatically). You are a member. You have voting rights you will probably never use. That is fine.
+
+**Engagement follows results, not the other way around.** When your electricity bill drops $150/month, you start caring about the cooperative. When your kid can see a doctor without a bill that takes three months to pay off, you tell your neighbors. You do not ask people to be civic-minded first and hope results follow. You deliver results first and let civic engagement emerge naturally from people who have a stake in what works.
+
+**No minimum participation requirements.** The previous version of this document included a 4-hour annual participation requirement. That is a barrier. Remove it entirely. Participation should be invited and rewarded, never required.
+
+**The invisible infrastructure model**: The best cooperatives in the world work because membership is nearly invisible in daily life. You use a credit union like a bank. You shop at REI like a retail store. The cooperative structure matters enormously for resilience and ownership, but it does not have to manifest as constant governance overhead. Members benefit; professionals operate; a small engaged core governs. Everyone else just lives their life with better infrastructure.
 
 ---
 
 ## Revenue Model
 
-The Houston Power Commons must be financially independent to be politically independent. Projected revenue streams by Year 3:
+Financial independence is structural independence. Houston Commons must operate without dependence on any single funder — government grants, corporate foundations, or institutional investors all carry strings.
 
-| Source | Model | Projected % of budget |
+**Revenue by source (Year 3 target):**
+
+| Source | Mechanism | Target % |
 |---|---|---|
-| Member dues (sliding scale) | $5-50/month × membership | 15-20% |
-| Cooperative energy savings | Members share savings vs. grid electricity costs | 20-25% |
-| Solar installation program income | Shared financing model; members pay over time | 15-20% |
-| Healthcare sliding-scale fees | Subsidized by higher-income members and grants | 10-15% |
-| Foundation grants (non-core programs) | Research, specific programs, not organizing | 15-20% |
-| Training/consulting (replication) | Other orgs paying to learn the model | 5-10% |
+| Cooperative energy savings | Members share bill reductions vs. grid rate | 25-30% |
+| Solar installation program | Cooperative financing; members pay over time | 20-25% |
+| Member dues (sliding scale $0-50/month) | Pooled across income levels | 15-20% |
+| Healthcare sliding-scale fees | Subsidized by higher-income members | 10-15% |
+| Foundation grants (non-core programs only) | Research, startup capital, specific programs | 10-15% |
+| Replication training | Other organizations learning the model | 5% |
 
-**Target**: financial independence from any single funder within 3 years. The cooperative economics of the energy program are the key — energy savings are real, recurring, and politically controlled by members. This is qualitatively different from grant dependency.
+**Rule**: No single funder exceeds 20% of annual revenue. Any funder at 20% has effective veto power. The energy cooperative economics — where bill savings are real, recurring, and controlled by the membership — are the key to financial independence.
+
+---
+
+## Structural Resilience
+
+How do you make it difficult for hostile actors — state government, industry incumbents, regulatory capture — to interfere?
+
+**Distributed ownership eliminates the single target.** If 1,000 households own solar installations through cooperative financing, those assets are in 1,000 private homes. There is no building to seize, no bank account to freeze, no single license to revoke. To shut it down you would have to take action against 1,000 individual households. That is not a legal maneuver — it is a political disaster.
+
+**Federal law preempts state interference on energy.** PURPA (Public Utility Regulatory Policies Act) is federal law. It requires utilities to interconnect distributed generation. Texas cannot override federal interconnection rights. Building community energy infrastructure inside existing federal legal protections makes state-level attack much harder than attacking a nonprofit for political speech.
+
+**Cooperative legal structure is more resilient than nonprofit structure.** A nonprofit has a charter the state attorney general can challenge (this is what Paxton did to FIEL Houston). A cooperative is member-owned — the members are the organization in a way that is structurally harder to dissolve. The assets are distributed to members.
+
+**Economic embeddedness is the primary defense.** An organization that employs 50 people, powers 1,000 homes, and provides healthcare to 3,000 patients is a different target than an advocacy nonprofit. The political cost of attacking it is enormously higher. This is not a legal strategy — it is a results strategy. Grow fast enough, deliver enough value, become embedded enough in community life that interference is politically catastrophic for whoever attempts it.
+
+**Operational independence from political cycles.** No dependence on government contracts. No dependence on political goodwill. Technical operations run on cooperative economics. The organization functions regardless of who holds state or federal office because it does not depend on their permission to operate.
 
 ---
 
 ## Phase Roadmap
 
-### Phase 1 (Year 1): Proof of Concept
-**Goal**: 30-50 member households in one neighborhood. One community anchor installation. CHW program launched with 5-8 trained community health workers.
+### Phase 1 (Year 1): Prove It Works
+**North star**: One neighborhood. Measurable results. The model validated.
 
-**Milestones**:
-- Select founding neighborhood based on: energy poverty rate, existing community relationships, organizing capacity, geographic coherence
-- Partner with one existing organization (candidate: West Street Recovery for Northeast Houston, or t.e.j.a.s. for East End) for relationships and trust
-- Complete 30 household solar assessments; begin 15 installations
-- Train first cohort of CHWs (8-10 people) using existing curriculum (Texas CHW certification program)
-- Establish neighborhood chapter governance; hold first chapter meeting
-- Begin political education curriculum (bimonthly sessions, tied to energy and health issues)
+- 30-50 household solar installations in a single neighborhood
+- Community anchor installation (school, church, or community center) — visible, named, in a building people recognize
+- 8-10 community health workers trained and active
+- Cooperative legally incorporated under Texas law
+- Mobile membership app live — dues, voting, service requests
+- Results dashboard public: panels installed, kilowatts generated, bills reduced, patients seen
 
-**Funding**: $300,000-500,000. Sources: foundation grants (acceptable for startup capital), member dues, federal solar ITC.
+**Funding**: $400K-600K. Foundation startup grants acceptable for Phase 1 capital.
 
-### Phase 2 (Years 2-3): Build the Base
-**Goal**: 3-5 neighborhood chapters. 200-300 member households. Community microgrid pilot. CHW program expanded; clinic partnership established.
+**Success criteria**: Members' average electricity bill down 30%+ from baseline. CHWs completing 200+ home visits. Membership retention above 80%. Waitlist forming for installations.
 
-**Milestones**:
-- Expand to 3-5 adjacent or complementary neighborhoods
-- Community microgrid pilot: interconnect member installations in founding neighborhood, apply for Texas PUC distributed generation interconnection
-- Partner with a licensed clinic or FQHC (Federally Qualified Health Center) for clinical referrals; begin sliding-scale clinic planning
-- First political campaign: chapter-identified priority (e.g., grid weatherization requirements, Medicaid expansion advocacy, neighborhood infrastructure)
-- Citywide council established with chapter representatives
+### Phase 2 (Years 2-3): Replicate the Model
+**North star**: 3-5 neighborhoods. Economic self-sufficiency approaching.
 
-**Funding**: $1-1.5M/year. Increasingly cooperative economics replacing grant dependency.
+- Expand to adjacent neighborhoods using the same model
+- Community microgrid pilot: interconnect installations in founding neighborhood, apply for federal interconnection under PURPA
+- Sliding-scale clinic partnership or launch (physical location, licensed staff)
+- Food division launched in founding neighborhood: cooperative purchasing, urban agriculture plot, distribution
+- Financial independence target: grants below 30% of revenue
 
-### Phase 3 (Years 4-7): Structural Power
-**Goal**: 10+ neighborhood chapters. 1,000+ member households. Sliding-scale clinic operational. Demonstrated political wins at city/county level. Model documented for replication.
+**Success criteria**: 300+ member households. Energy program cash-flow positive. Healthcare program serving 500+ patients. Second neighborhood chapter fully operational with local leadership.
 
-**Milestones**:
-- Community health clinic operational (physical location, licensed staff, sliding-scale fees)
-- Energy cooperative registered as formal cooperative entity under Texas law
-- Electoral capacity: ability to mobilize 500+ members for targeted city council and county commissioner races
-- First state-level campaign: Medicaid expansion, ERCOT governance reform, or weatherization requirements
-- Replication guide published; first replication in another Texas city (Dallas, San Antonio, or Rio Grande Valley) supported
+### Phase 3 (Years 4-7): Scale and Systematize
+**North star**: 10+ neighborhoods. Citywide infrastructure footprint. Replicable model documented.
 
-**What success looks like at Year 7**: The Houston Power Commons has 1,000 member households generating 2-3 megawatts of cooperative solar power. It operates a community health clinic serving 3,000 patients per year. It has 10 neighborhood chapters whose members have demonstrated wins at the city and county level. It is financially independent. And it has proven a model that other cities can replicate — a proof-of-concept for what parallel infrastructure politics looks like in practice.
+- Water and waste divisions launched
+- 1,000+ member households
+- Community health clinic fully operational
+- Energy cooperative registered as formal utility cooperative under Texas law — able to sign long-term power purchase agreements
+- Replication guide published; first replication supported in another Texas city
+- Workforce: 50+ staff across all divisions, predominantly from member communities
 
----
-
-## Relationship to Democratic Renewal
-
-The Houston Power Commons is not a think tank, a lobbying organization, or a reform coalition. It is a base-building organization that builds material infrastructure and political capacity simultaneously. Its relationship to the broader democratic renewal project is practical and explicit:
-
-1. **It is a live test of the parallel institutions theory**. The `parallel-institutions.md` research document describes this model in the abstract; the Houston Power Commons is the concrete implementation. What works and what doesn't becomes evidence.
-
-2. **It generates the political base that the democratic renewal proposal requires**. A 22-domain democratic renewal proposal is academically interesting without a base. The same proposal, backed by 1,000 organized households in 10 Houston neighborhoods with demonstrated political wins, is a different political object entirely.
-
-3. **It demonstrates that infrastructure sovereignty is achievable at city scale**. The comparative democratic recovery research shows that recovery requires both mass mobilization and institutional blueprint. This organization builds the mobilization capacity; the research project builds the blueprint.
-
-4. **Its members are the distribution network**. Political education sessions, the research project's documents, the democratic renewal proposal — these reach people through the organization's membership, not through Substack subscribers or Reddit readers. Organized members who own solar panels and see a nurse practitioner at the community clinic are a qualitatively different audience than newsletter readers.
-
-The long arc: an organization that starts by fixing the grid problem in one Houston neighborhood, that ten years from now has demonstrated in practice what community-controlled infrastructure looks like, that has trained a generation of organizers in how to build parallel institutions — that organization is a contribution to democratic renewal that no amount of research or proposal-writing alone can make.
+**What success looks like at Year 7**: Houston Commons powers 2-3 megawatts of cooperative solar across 10 Houston neighborhoods, operates a clinic serving 3,000 patients annually, runs a food cooperative, and is financially independent. The model has been replicated in at least one other city. The organization employs 50 people from the communities it serves. Members interact with it as infrastructure — like a credit union or a utility — not as a cause.
 
 ---
 
-## What Makes This Fail
+## What Failure Looks Like
 
-Honest accounting of failure modes:
+**Mission drift into service delivery.** The energy program becomes "we install solar panels" and the organizational identity stops there. The membership structure becomes ceremonial. A professional class captures the governance. Result: a well-run nonprofit with no structural differentiation from any other installer. Prevention: keep the results dashboard public and the membership structure real. If members aren't governing, something is wrong.
 
-**The state moves against us**. Texas has preemption laws that allow the state to override local progressive policies. Ken Paxton attempted to revoke FIEL Houston's nonprofit charter for political speech. If the Houston Power Commons grows to the point of threatening ERCOT or the fossil fuel industry's political position, state retaliation is possible. Mitigation: cooperative structure (harder to attack than a nonprofit), distributed infrastructure (panels in 1,000 homes are not a building you can shut down), legal partnerships, and building fast enough that retaliation is politically costly.
+**Grant dependency.** A single major funder's priorities shift and the organization cannot absorb the loss. Prevention: the 20% cap, enforced as policy before you need it.
 
-**Staff capture**. The organization's professional staff gradually becomes its governing class, and member democracy becomes ceremonial. Mitigation: the structural protections above — staff cannot vote in governance, term limits, member-led councils.
+**Complexity before capacity.** Launching food, water, and waste divisions before energy and health are self-sustaining. The division table above is a long-term roadmap, not a Year 1 plan. Prevention: each division launches when the organizational and economic capacity is demonstrated, not on a schedule.
 
-**Grant dependency**. A major funder's priorities shift and the organization cannot survive the funding loss. Mitigation: the 20% cap, the cooperative economics model, the explicit goal of financial independence by Year 3.
-
-**The founding neighborhood fails**. The first neighborhood chapter doesn't cohere — wrong neighborhood, wrong partners, wrong timing. Mitigation: spend significant time (6-12 months) on neighborhood and partner selection before launching. The founding neighborhood selection is the most important single decision.
-
-**We become a service org**. Without sustained intentionality, the energy program becomes "we install solar panels" and the health program becomes "we do home visits" and the political capacity never develops. Mitigation: political education is non-optional from day one. Membership governance is non-optional from day one. Every interaction is explicitly framed in terms of the mission.
+**The founding neighborhood selection is wrong.** The whole model rests on the first neighborhood cohering — the relationships, the trust, the demonstrated results. A poor selection means two years building on sand. Prevention: spend the first 6 months on nothing but neighborhood selection and partner relationship-building before any program work begins.
 
 ---
 
-## First Steps
+## First Steps (No Funding Required)
 
-The following can begin immediately, before any formal organization is established:
+1. **Neighborhood selection**: Map Harris County by energy poverty rate, uninsured rate, existing community relationships, and heat/flood vulnerability. Visit 3-5 candidate neighborhoods. Build relationships with community members before deciding anything.
 
-1. **Neighborhood selection research** — Map Harris County by: energy poverty rate (households spending >6% of income on energy), uninsured rate, existing organizing relationships, and flood/heat vulnerability. Identify 3-5 candidate neighborhoods. Visit and build relationships with community members and existing organizations.
+2. **Solar feasibility**: Commission a basic feasibility assessment for the founding neighborhood. What do 30 installations cost? What federal incentives apply today? What are ERCOT interconnection requirements for community solar?
 
-2. **Partner conversations** — Approach West Street Recovery, t.e.j.a.s., Texas Organizing Project, and Houston Community Land Trust. Not to ask for permission or partnership yet — to understand their work, share the concept, and gauge interest and fit.
+3. **Healthcare pathway**: Identify the Texas CHW certification pathway, costs, and existing CHW networks in Houston. Understand what a 10-person CHW program costs to run.
 
-3. **Solar economics feasibility** — Commission a basic feasibility study for the founding neighborhood. What would 30 household installations cost? What federal incentives apply? What are the interconnection requirements? What cooperative structure is legally cleanest in Texas?
+4. **Legal structure**: Research the Texas cooperative incorporation process alongside a 501c3 nonprofit as a fiscal sponsor. Understand the dual-structure that other infrastructure cooperatives use.
 
-4. **CHW program design** — Texas has a formal Community Health Worker certification program. Identify the training pathway, costs, and existing CHW networks in Houston. Understand what a small CHW program costs to run.
-
-5. **Legal structure** — A cooperative can be incorporated under Texas law. A nonprofit (501c3) may be needed alongside it for grant eligibility. Research the dual-structure model (cooperative + nonprofit fiscal sponsor) that other organizations use.
-
-None of these require significant money. They require time, relationships, and clarity of purpose. The founding document is step zero — the clarity of purpose. The neighborhood selection and partner conversations are steps one and two.
+5. **Partner conversations**: Approach West Street Recovery, t.e.j.a.s., and Texas Organizing Project — not for partnership yet, but to understand their work and share the concept. Relationships before programs.
 
 ---
 
-*This document is a founding draft. It is designed to be argued with, tested against reality, and revised. The goal is not to produce a perfect document but to produce a clear enough document that the first real conversations can happen.*
-
-*Version history: v1.0 April 2026 — initial draft*
+*Draft v2.0 — April 2026. This document is a starting point, not a finished plan. It is designed to be tested against reality and revised accordingly.*
