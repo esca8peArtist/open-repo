@@ -11580,3 +11580,38 @@ At 600px displayed in 110mm, resolution is clearly legible for plant identificat
 
 ---
 
+
+## Agent Completion: stockbot Live Trading Guardrails ✅
+
+**Agent ID**: a37564efc7154fc77
+**Status**: COMPLETED
+**Deliverables**:
+- `live-trading-guardrails.md` (specification)
+- `src/guardrails.py` (module with 6 validators)
+- 88 new unit tests (all passing)
+
+**Implementation Summary**:
+
+**Six Guardrail Validators** (AssembledGuardrailChain):
+
+1. **EmergencyHaltCommand** — Kill switch (blocks all orders, sells bypass by default, requires explicit deactivate)
+2. **InstrumentBan** — 55 hard-coded banned tickers (leveraged 2×/3×, inverse, volatility); regex patterns; bans short sales
+3. **CashOnlyValidator** — Buy orders exceeding `cash_buying_power` rejected; sell always passes
+4. **PositionSizeLimiter** — Single position capped at 15% of equity (invariant, cannot be loosened)
+5. **ConcurrentPositionsCap** — Maximum open positions enforced; adding to existing position doesn't count
+6. **DailyLossKillSwitch** — Auto-resets next calendar day, halts buy orders once threshold breached
+
+**Design Philosophy**:
+- Zero external dependencies (stdlib only: threading, re, dataclasses, datetime)
+- Fail-fast validation or full diagnostics (`validate()` vs `validate_all()`)
+- Cannot be taken down by Alpaca API failures or project config layer issues
+
+**Test Coverage**:
+- 88 new unit tests (all passing)
+- Covers: at-limit, over-limit, zero-balance, fractional orders, existing position aggregation, sell passthrough, emergency halt propagation, ticker blocklist, pattern matching, thread safety (50 concurrent validators)
+- 592 pre-existing trading unit tests remain green
+
+**Status**: Live trading guardrails complete. Ready for integration into order placement flow before live trading is considered.
+
+---
+
