@@ -65,12 +65,12 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — May Day guide published and distribution-ready, monitoring begins 2026-04-28 at Xinis hearing
+**Status**: Active — READY FOR MONDAY — monitoring begins 2026-04-28T21:00 UTC (Xinis hearing closes ~22:00 UTC)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 422: **Verification COMPLETE**. May Day guide (maydaystrong Gist) is live and publicly accessible. All three monitoring templates verified present and ready: `2026-04-28-results.md` (Xinis hearing quick-fill + April 29 analysis template), `2026-04-29-contingency.md` (Section 702 expires April 30, Nashville/Crenshaw/4th Circuit contingency), `2026-05-01-template.md` (scale summary, 7-city reporting, labor action tracker, Section 702 lapse field). Distribution checklist written to project WORKLOG.md — recommend broadcast push Monday April 28 morning (personal/trusted shares OK now). Minor gap: no dedicated 2026-04-30-results.md for Abrego Garcia deadline, but April 29 contingency can absorb. **Monday readiness: VERIFIED CLEAN**. **User action (optional)**: Distribute guide URL to organizing channels if not already done via other means. Begin data capture at 2026-04-28T21:00 UTC (Xinis hearing closing arguments ~5pm EST).
+**Current focus**: Session 429: **PRE-MONDAY VERIFICATION COMPLETE**. May Day guide live and publicly accessible: https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4. All three monitoring templates verified field-ready: `2026-04-28-results.md` (9-question hearing outcome quick-fill, escalation levels, April 29 analysis template), `2026-04-29-contingency.md` (Nashville ruling, Section 702 expiration, 4th Circuit emergency, AFL-CIO endorsement), `2026-05-01-template.md` (scale summary table, 7-city tracking, labor action tracker, media framing). Distribution checklist documented in WORKLOG.md (8 channels, timing, 3 message templates). Data capture ready: fills ~10 minutes on April 28 at 21:00 UTC (5pm ET). **User action (optional)**: Distribute guide URL to organizing channels. Begin data capture at 2026-04-28T21:00 UTC as Xinis hearing closes.
 **Blocked on**: —
-**Notes**: Live monitoring phase ready. Democratic renewal proposal (22 domains) and Phase 2 litigation tracking remain as future work. All templates ready for data capture.
+**Notes**: Live monitoring phase ready. Democratic renewal proposal (22 domains) and Phase 2 litigation tracking remain as future work. All templates ready for data capture. Confidence: HIGH.
 
 ---
 
@@ -125,12 +125,12 @@
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — Phase 3 COMPLETE (81/81 tests), **Phase 4 Wave 1 COMPLETE** (35 new tests), **Phase 4 Wave 2 IN PROGRESS** (57 new tests, core federation machinery implemented, ~60 of 100 story points complete)
+**Status**: Active — Phase 3 COMPLETE, **Phase 4 Wave 1 COMPLETE**, **Phase 4 Wave 2 COMPLETE** (203/203 tests), ready for Wave 3
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Session 428: **Phase 4 Wave 2 IN PROGRESS**. Completed: Data models (FederationPartner, FollowInProgress, ActivityIdempotency), Services (FederationFollowService, FederationSyncService, ActivityIdempotencyService), 5 new endpoints (Follow, Inbox, Accept-Follow, Sync, List Partners), 57 new tests (173 total, all passing, zero regressions on 116 Phase 1-3 tests). Branch: `feature/phase-4-wave-2-federation-bootstrap` (commit 4b96ca1). **Remaining Wave 2 work** (~40 story points): Alembic migrations, Meilisearch sync, async delivery queue. **Blocker**: GitHub push blocked (no push access). User will need to push or grant access.
+**Current focus**: Session 429: **Phase 4 Wave 2 COMPLETE** — Alembic migrations (3 files: baseline, Wave 1 ActivityPub, Wave 2 federation tables), async delivery queue (RetryPolicy, DeliveryJob, DeliveryWorker with exponential backoff, wired into FastAPI lifespan), Meilisearch sync on federation ingestion (indexes new/updated remote items, silently swallows errors). **Test results**: 203 passing (30 new for Wave 2), 0 failures, 0 regressions on 173 Phase 1-3 tests. **Commits**: `d41a27c` + `42a0b71` on `feature/phase-4-wave-2-federation-bootstrap`. **Status**: PRODUCTION-READY — waiting for user GitHub push (no push access on Pi). **Next**: Phase 4 Wave 3 (Endorsement/Announce propagation) or Wave 4 (conflict logging + admin UI). Phase 5 (offline export/Kiwix) deferred until Phase 4 complete.
 **Blocked on**: —
-**Notes**: Phase 1–3 production-ready (116 tests). Phase 4 Wave 1–2 core machinery complete. Remaining: Wave 2 migration/async, Wave 3 Endorsement, Wave 4 conflict resolution. Phase 5 (offline export/Kiwix) deferred until Phase 4 complete.
+**Notes**: Phase 1–3 production-ready (116 tests). Phase 4 Wave 1–2 core federation machinery complete. All code committed, waiting for user to push to GitHub.
 
 ---
 
