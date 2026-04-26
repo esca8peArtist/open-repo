@@ -4,41 +4,36 @@
 
 ---
 
-## Since Last Check-in (Session 424 — 2026-04-26 evening)
+## Since Last Check-in (Session 425 — 2026-04-26 afternoon)
 
-**Completed** (parallel 3-agent validation + publication prep):
+**Completed** (parallel 2-agent work: open-repo Phase 3 routes + off-grid-living quality review):
 
-1. **resistance-research**: **Monday data capture readiness VERIFIED** (100% ready). All 3 monitoring templates confirmed correct structure: 2026-04-28-results.md (9-question Xinis hearing quick-fill), 2026-04-29-contingency.md (Section 702/Nashville-Crenshaw/4th Circuit fields), 2026-05-01-template.md (scale summary, 7-city reporting, labor action tracker). Pre-capture 5-item checklist logged for Monday 14:00 UTC. Known gap (April 30 dedicated file) documented and alternative identified. Template verification + pre-capture checklist recorded in project WORKLOG.md.
+1. **open-repo**: **Phase 3 Routes Implementation COMPLETE**. All 10 endpoints fully implemented per PHASE_3_DESIGN.md: (1) POST /api/contributions (new item/edit submission), (2) GET /api/contributions (list + filtering), (3) GET /api/contributions/{id} (detail + diff + proposed content), (4) GET /api/review/queue (reviewer queue), (5) POST /api/contributions/{id}/review (review decision), (6) POST /api/contributions/{id}/review/{decision} (quick review), (7) GET /api/contributions/{id}/review-history (audit trail), (8) POST /api/contributions/{id}/finalize (admin finalization), (9) POST /api/contributions/{id}/request-revision (revision requests), (10) GET /api/contributors/{user_id}/stats (reputation scoring). Service layer complete: ContributionService, ReviewService, ContributorStatsService. State machine implemented: PENDING → REVISION_REQUESTED | APPROVED | REJECTED. Consensus logic working (2+ approves auto-approve, 1+ reject auto-rejects). Test suite: **81/81 passing** (20 new Phase 3 tests + 61 existing). Backward compatible with Phase 1–2. Commit: `7351680`. **Next**: Phase 4 planning (UI, public forms, notifications).
 
-2. **stockbot**: **Infrastructure validated + all tests passing (175/175)**. 6-point validation complete (paper session live, checklist ready, monitoring-dashboard.py working, logging parser ready, API healthy on port 8000, abbreviated test suite green). Fixed 10 pre-existing test failures: (a) `create_position_manager()` factory missing `database_url` parameter (added, all 8 call sites updated to use in-memory DB), (b) `get_risk_summary()` returns dict not float (assertion updated), (c) `test_realized_pnl` rewritten to use correct API, (d) `test_expected_bars_1min` bounds updated for actual implementation. Manual steps for Monday: 14:00 UTC pre-market checklist, 14:30 UTC start monitoring-dashboard.py, 16:30 UTC run monday-log-analysis.py. Ready for first market day.
-
-3. **cybersecurity-hardening**: **Publication infrastructure COMPLETE**. Created two new deliverables: (a) PUBLICATION_README.md (what to publish, audience guidance ranked by urgency, 3 publishing formats, citation instructions, version/currency notes, pre-pub checklist), (b) DISTRIBUTION_CHECKLIST.md (15+ priority organizations with contact notes, 4 tailored sharing scripts — email/Slack/social/Reddit, anticipated responses guide). Quality pass done: removed `status: initial-draft` YAML artifact and "next document" footer from threat-model.md. Optional improvements documented (Spanish one-pager for community translation, Section 702 annual tasks update note, GitHub Gist permalink stability rationale). Ready to publish immediately on user signal.
-
-**Previously Completed** (Session 423 — 2026-04-26 20:00):
-
-1. **stockbot**: **Paper trading session VERIFIED LIVE** (session `33a4afe676cae12a`, AAPL_h10_lgbm_ho stacker). Confirmed: API operational on port 8000, cycling every ~60 seconds, started 2026-04-26T05:58:22Z, last cycle 2026-04-26T07:06:51Z. Zero trades (market closed Sunday). **Jetson deployment already COMPLETE** from Session 421: container healthy, `/src/` volume-mounted and synced, all 5 sessions running, no rebuild/rsync needed. Ready for Monday market open ~14:30 UTC 2026-04-28.
-
-2. **resistance-research**: **May Day guide VERIFIED LIVE & PUBLISHED** at Gist URL (https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4). All monitoring templates verified present and ready for Monday: `2026-04-28-results.md` (Xinis hearing quick-fill + April 29 analysis), `2026-04-29-contingency.md` (Section 702 expires April 30, contingency scenarios), `2026-05-01-template.md` (scale summary, 7-city reporting, labor action tracking). Distribution checklist written to project WORKLOG.md — recommend broadcast Monday April 28 morning (personal/trusted shares OK now). Minor gap: no dedicated April 30 results file for Abrego Garcia 5pm deadline (April 29 contingency can absorb).
-
-3. **cybersecurity-hardening**: **Publication decision FINAL: Option A (Publish as-is)**. Trilogy verified complete: threat-model.md (440+ lines), opsec-playbook.md (10-part structure), implementation-guide.md (9,600 words). Publication materials complete: 600-word executive summary, hierarchical TOC, 40-term glossary. Key finding: AB 60/AB 1766 (highest-leverage discovery for at-risk populations) is **already integrated** in implementation-guide.md Step 0.1. Tier B/C broker additions and legal landscape can be added post-publication without blocking. Rationale: Single highest-impact finding present; incremental improvements should not delay publication for target audience urgency.
+2. **off-grid-living**: **Quality Review COMPLETE** (8.5/10 quality score). All 16 domain files (1,310 KB total) assessed: zero TODOs, all acronyms defined, consistent formatting, accurate cross-references. **5 issues identified & fixed** (commit `de5ccb3`): (1) 08-medical-health.md missing cross-refs field in YAML (added), (2) 14-finances-trade.md missing entire YAML header (added + standardized), (3) 07-heating-cooling.md cross-ref fix (02→11 shelter-construction), (4) 10-tools-fabrication.md two cross-ref fixes (02→11), (5) 12-communications.md cross-ref fix (13 governance→organization). All cross-references verified valid. **Project now publication-ready**. Next: user decision to publish or hold.
 
 **In Progress**:
-- **stockbot**: Monitoring P&L Monday-Friday market hours. All infrastructure validated, tests passing (175/175). Manual steps documented for Monday 14:00–16:30 UTC. Ready for live execution.
-- **resistance-research**: Live monitoring begins Monday 14:00 UTC at Xinis hearing. All 3 templates verified ready. Pre-capture checklist prepared.
-- **cybersecurity-hardening**: Publication infrastructure complete (PUBLICATION_README.md + DISTRIBUTION_CHECKLIST.md). Trilogy verified publication-ready. Awaiting user approval or timing preference.
-- **open-repo**: Phase 3 routes implementation ready (38 story points, ~58 hours, 3.5-4 weeks effort).
-- **off-grid-living**: All 16 domain files complete. Ready for quality review or publish-ready formatting pass.
+- **stockbot**: Monday 2026-04-28 14:30 UTC market open — all infrastructure validated (175/175 tests, paper session LIVE). Manual steps: 14:00 UTC pre-market checklist, monitoring-dashboard.py at 14:30 UTC, log analysis at 16:30 UTC.
+- **resistance-research**: Monday 2026-04-28 17:00 UTC Xinis hearing data capture begins. All 3 monitoring templates verified ready. Pre-capture 5-item checklist prepared for 14:00 UTC Monday.
+- **cybersecurity-hardening**: Publication infrastructure complete (PUBLICATION_README.md + DISTRIBUTION_CHECKLIST.md). Trilogy verified ready. Awaiting user signal to publish.
 
 **Needs Your Input**:
-- **cybersecurity-hardening**: Signal to publish. Two new publication materials created and ready (see PUBLICATION_README.md for instructions, DISTRIBUTION_CHECKLIST.md for channel guidance). Trilogy ready immediately. Optional improvements noted (Spanish one-pager, Section 702 update note) can be added post-publication.
-- **mfg-farm**: Test print required to proceed with launch prep (user action, already in BLOCKED.md).
+- **cybersecurity-hardening**: Signal to publish the trilogy (threat-model.md + opsec-playbook.md + implementation-guide.md). Publication materials and distribution guidance ready (see PUBLICATION_README.md). Can publish immediately or hold pending optional additions (Spanish summary, legal landscape Tier B/C).
+- **mfg-farm**: Test print required to proceed with launch prep (in BLOCKED.md).
 
-**Usage**: Token usage nominal. No throttling. Next reset Tuesday 2026-04-30.
+**Usage**: Token usage nominal. Next reset: Tuesday 2026-04-30 00:00 UTC.
+
+---
+
+## Session 424 Checkpoint (2026-04-26 evening)
+
+Parallel 3-agent validation: resistance-research Monday readiness VERIFIED (100% template setup complete), stockbot infrastructure VALIDATED (175/175 tests, paper session LIVE, Jetson deployment complete, ready for market open), cybersecurity-hardening PUBLICATION infrastructure finalized (PUBLICATION_README.md + DISTRIBUTION_CHECKLIST.md created). Three projects ready for execution/publication. Usage nominal. All orchestration state files synced.
 
 ---
 
 ## History
 
+### Session 423 Checkpoint (2026-04-26 20:00)
 ### Session 423 Checkpoint (2026-04-26 20:00)
 
 Parallel 3-agent expansion completed: Democratic Renewal Proposal expanded with 5 subsections (Domains 3e, 3f, 7g, 7h, 14g) — ~5,000 words, 15+ sources. Market-open monitoring infrastructure delivered (market-open-checklist.md, monitoring-dashboard.py, monday-log-analysis.py). Phase 2 broker deepening complete (Phase 2 Tier B/C). All three projects advancing toward execution/publication. Stockbot ready for Monday 14:30 UTC market open. Resistance-research ready for April 28 Xinis monitoring. Cybersecurity-hardening publication-ready pending user approval.
