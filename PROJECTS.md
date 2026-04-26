@@ -65,10 +65,16 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1-5 COMPLETE, **Phase 4 Integration COMPLETE (Session 494)** — Full proposal synthesis ready
+**Status**: Active — Phase 1-5 COMPLETE, **Domain deepening COMPLETE (Session 497)** — Diagnostic framework expanded to 24 domains
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Phase 4 Integration COMPLETE (Session 494)**. All Phase 4 documents (power-mapping, parallel-institutions, elite-capture-case-study, comparative-democratic-recovery) seamlessly woven into Part III of democratic-renewal-proposal.md. Proposal now contains complete pathway: diagnosis (Domains 1-22) → alternative vision → theory of change (Phases 3-4 synthesis) → implementation architecture (Phase 5). Next: Distribution execution (Substack/Reddit/institutional templates ready) or tracker updates (first-amendment, environmental-rollbacks, police-brutality).
+**Current focus**: **Session 497 (2026-04-27): Domain Deepening COMPLETE**. Two new domains identified and documented:
+- **Domain 23: Monetary Policy Independence and Consumer Financial Protection** — Federal Reserve capture, CFPB destruction, household debt trap mechanisms, financial extraction feedback loop
+- **Domain 24: Energy Access, Utility Democracy, and Regulatory Capture** — Utility regulatory capture, energy poverty, ALEC preemption legislation, grid failure governance
+- Result: Diagnostic framework now spans 24 domains with strengthened cross-domain loop analysis (5 identified feedback loops)
+- Files: `domain-deepening/domain-23-monetary-consumer-finance.md` and `domain-deepening/domain-24-energy-utilities-democracy.md` committed to master
+
+**Next**: Distribution execution (Substack/Reddit/institutional templates ready) or continued tracker updates (first-amendment, environmental-rollbacks, police-brutality) or further domain deepening if additional gaps identified.
 
 **✅ COMPLETED (Session 494)**:
 - ✅ **Phase 4 Integration into Part III** — All four Phase 4 documents synthesized into democratic-renewal-proposal.md Part III
@@ -145,12 +151,18 @@
 ### cybersecurity-hardening
 **Goal**: Build a comprehensive, actionable guide to protecting communications and identity against government-level mass surveillance. Understand what Palantir and similar data brokers/intelligence platforms actually have access to — what data they ingest, how they link identities, and what their current government contracts cover. From that threat model, identify the best practical techniques for private and anonymous communication: encrypted messaging, metadata minimization, network anonymization (Tor/VPN tradeoffs), device hardening, operational security (OpSec), and identity compartmentalization. The output should be a personal OpSec playbook grounded in real threat modeling — not theoretical, but calibrated to the actual capabilities of the adversary.
 **Priority**: High
-**Status**: Active — **TIER 1 DISTRIBUTION PREP COMPLETE** (Session 465), ready for user execution
+**Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP COMPLETE** (Sessions 465, 497), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Session 465 (2026-04-26): **TIER 1 DISTRIBUTION PREP COMPLETE**. Agent-created TIER1_DISTRIBUTION_PREP.md (358 lines) consolidates all distribution materials: 8 Tier 1 organizations (5 legal aid + 3 community org networks), 3 email templates (legal aid, community orgs, mutual aid networks), 5-step execution process, pre-send checklist, FAQ, success metrics, and quarterly review schedule. All templates include Gist URL and are ready for personalization. TIER1_DISTRIBUTION_PREP.md committed to master. **Next**: User reviews and approves templates → execute Tier 1 outreach → track responses → Tier 2 (digital rights, security researchers, journalists) → Tier 3 (policy, academic, labor).
+**Current focus**: Session 497 (2026-04-27): **TIER 2 & 3 DISTRIBUTION PREP COMPLETE**. Agent-created:
+- **TIER2_DISTRIBUTION_PREP.md** (380 lines): 33 organizations (12 digital rights + 9 academic cybersecurity + 5 researcher communities + 7 journalist organizations), 4 tailored email templates, 5-step execution plan, FAQ, tracking templates
+- **TIER3_DISTRIBUTION_PREP.md** (380 lines): 30 organizations (12 policy + 8 labor + 10 academic law/policy), 3 tailored email templates, 16-week timeline, long-horizon success metrics
+- Key findings: Georgetown CPT highest-priority Tier 3 contact (American Dragnet report alignment); Access Now security helpline highest-leverage Tier 2 (direct harm reduction for undocumented); AFL-CIO Tech Institute new ED is outreach opportunity
+- Both documents follow Tier 1 structure for consistency; committed to master
+
+**Next**: User reviews and approves Tier 1 templates → execute Tier 1 outreach → track responses → Tier 2 launch (digital rights + academic + journalists) → Tier 3 launch (policy + labor + academic law).
 **Blocked on**: —
-**Notes**: All distribution materials production-ready. Trilogy (Gist) published and accessible. TIER1_DISTRIBUTION_PREP.md provides step-by-step execution guide with email templates, contact list, tracking templates, and quarterly review schedule. User can begin Tier 1 outreach immediately after approval.
+**Notes**: All three distribution tiers now production-ready. Full trilogy (Gist + three distribution-prep documents + FAQ) accessible. User can begin Tier 1 outreach immediately after approval, with Tier 2 following ~4 weeks after Tier 1 completion, and Tier 3 following ~12 weeks after Tier 1 completion.
 
 ---
 

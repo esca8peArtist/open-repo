@@ -4,7 +4,64 @@
 
 ---
 
-## Current Session (Session 496 — 2026-04-27 02:15 UTC — Paper Trading Day 2 + April Tracker Expansion)
+## Current Session (Session 497 — 2026-04-27 — Domain Deepening + Distribution Tier 2/3 Prep)
+
+**Status**: Parallel 2-agent execution completed. Domain deepening expanded resistance-research diagnostic framework from 22 → 24 domains with identified cross-domain feedback loops. Cybersecurity-hardening distribution infrastructure now complete for all 3 tiers, ready for user-directed execution.
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Domain Deepening COMPLETE**
+   - **New Domain 23: Monetary Policy Independence and Consumer Financial Protection** 
+     - Gap: No existing coverage of Federal Reserve capture, CFPB destruction (Jan-May 2025), household debt trap
+     - Current crisis: Criminal investigation vs. Powell (Apr 2026), Warsh nomination, Humphrey's Executor assault, CFPB enforcement withdrawn ($19B/year consumer returns stopped)
+     - File: `domain-deepening/domain-23-monetary-consumer-finance.md` (2,100 words, 8 sources)
+     - Cross-domain loop: Financial extraction → household precarity → civic disengagement → regulatory capture → deepened extraction
+   
+   - **New Domain 24: Energy Access, Utility Democracy, and Regulatory Capture**
+     - Gap: Domain 12 addresses grid engineering but omits governance failure; no coverage of utility regulatory capture
+     - Current crisis: 13.5M disconnections vs. $52B industry profits; LIHEAP elimination proposed 6 budgets; ALEC utility preemption legislation (banning municipal utilities, restricting solar)
+     - File: `domain-deepening/domain-24-energy-utilities-democracy.md` (2,400 words, 9 sources)
+     - Cross-domain loop: Utility capture → energy poverty → material precarity → civic disengagement → regulatory weakness → capture deepens
+   
+   - **Quality**: Evidence-based (current 2026 data), documented sources, cross-domain connections explicit
+   - **Result**: Diagnostic framework strengthened 22 → 24 domains; 2 new feedback loops identified
+
+2. ✅ **Cybersecurity-Hardening: Tier 2 & 3 Distribution Prep COMPLETE**
+   - **TIER2_DISTRIBUTION_PREP.md** (380 lines): 33 organizations
+     - Digital rights: EFF, CDT, Access Now, FPF, Tor, Mozilla, etc. (12 total)
+     - Academic: CMU CyLab, UC Berkeley CLTC, MIT CSAIL, Stanford, RPI, etc. (9 total)
+     - Researchers: DEF CON, CCC, Black Hat, ShmooCon (5 total)
+     - Journalists: FPF, IRE, CPJ, RCFP, SPJ (7 total)
+   - **TIER3_DISTRIBUTION_PREP.md** (380 lines): 30 organizations
+     - Policy: Georgetown CPT (highest-priority — "American Dragnet" predecessor), New America, Brookings, ACLU, etc. (12 total)
+     - Labor: AFL-CIO, CWA, SEIU, SAG-AFTRA, gig worker collectives (8 total)
+     - Academic law/policy: Harvard Cyberlaw Clinic, Yale ISP, Stanford CodeX, Michigan, etc. (10 total)
+   - **Key findings**: Georgetown CPT (direct "American Dragnet" predecessor), Access Now security helpline (highest-leverage for at-risk), AFL-CIO new ED Lauren McFerran (Feb 2026 opening)
+   - **Structure**: Matching Tier 1 format for consistency (organization inventory, tailored email templates, execution plan, FAQ, tracking, timeline)
+   - **Timeline**: Tier 2 can launch ~4 weeks after Tier 1 completion; Tier 3 follows ~12 weeks after Tier 1
+
+**Project Status**:
+- **resistance-research**: Domain deepening complete; full proposal (22 → 24 domains) ready for distribution or further deepening
+- **cybersecurity-hardening**: All 3 distribution tiers production-ready; awaiting user review for Tier 1 launch
+- **stockbot**: Monitoring running (daily cron); next checkpoint 2026-05-12 for Gate 1 feasibility
+- **seedwarden**: Phase 2 complete; Track A awaiting user tag corrections
+- **open-repo**: PR #1 awaiting maintainer review
+
+**Needs User Input**:
+- **Cybersecurity-Hardening**: Review Tier 1 templates → approve Tier 1 outreach execution
+- **Resistance-Research**: Consider distribution execution (templates ready) vs. continued tracker maintenance
+- **Seedwarden**: Tag corrections (3) + Etsy verification for Track A Phase 1 launch
+
+**Available Work Going Forward**:
+- **Resistance-Research**: Distribution execution (user action) OR tracker maintenance (ongoing) OR further domain deepening if gaps identified
+- **Cybersecurity-Hardening**: Tier 1 outreach execution (user action) OR prepare Tier 2 messaging templates for Q2 launch
+- **Open-repo**: Phase 5 research/planning (offline export, Kiwix integration) after PR #1 merges
+
+**Tokens Used This Session**: ~158K (2 parallel agents: resistance-research ~97K, cybersecurity-hardening ~61K). Usage: 47.5% Sonnet (well below throttle). Reset: ~24h.
+
+---
+
+## Previous Session (Session 496 — 2026-04-27 02:15 UTC — Paper Trading Day 2 + April Tracker Expansion)
 
 **Status**: Parallel 2-agent execution completed. Paper trading Day 2 monitoring shows 0 round trips yet (expected). Critical finding: Gate 1 feasibility uncertain — daily-signal strategy may not generate 30 trades/month structurally. April 2026 crisis trackers expanded with 3 convergent cross-domain patterns identifying structural dismantlement strategy.
 
