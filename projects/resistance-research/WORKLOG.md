@@ -2,6 +2,85 @@
 
 ---
 
+## April 26, 2026 — resistance-research: Monday Readiness (Template Validation)
+
+**Session type**: Pre-capture validation
+**Date**: April 26, 2026 (validated for April 28 capture window)
+**Files verified**: `monitoring/2026-04-28-results.md`, `monitoring/2026-04-29-contingency.md`, `monitoring/2026-05-01-template.md`
+**Files checked (missing)**: `PROJECTS.md` (does not exist in directory — references to it in the task brief are stale; WORKLOG.md is the authoritative project log), `2026-04-30-results.md` (confirmed absent, noted as known gap below)
+
+---
+
+### Template Status — All Three Verified
+
+**monitoring/2026-04-28-results.md** — READY
+
+- Xinis hearing quick-fill record table: PRESENT. 9-question grid covering contempt, sanctions, sealed depositions, April 30 deadline, Liberia demand, Fourth Circuit emergency stay, Nashville/Crenshaw interaction, DOJ statement. Takes 10 minutes to fill.
+- Escalation level field: PRESENT. (`CRITICAL / HIGH / MEDIUM-HIGH / MEDIUM / LOW-MEDIUM`)
+- CHECKIN flag field: PRESENT.
+- "Next hard date created by this hearing" field: PRESENT.
+- April 29 analysis pass template: PRESENT. Five structured questions: (1) what the hearing decided; (2) circuit court watch; (3) Nashville interaction; (4) what April 30 now means; (5) litigation tracker update instruction.
+- Pre-hearing context sections: full. DC Circuit Boasberg analysis, ICE arrest data, NJ AFL-CIO confirmation, Trump v. CASA date correction all present. Monitoring source table with CourtListener, PACER, Courthouse News, Sandoval-Moshenberg, AILA, SCOTUSblog, Democracy Docket confirmed.
+- Verdict: NO CHANGES NEEDED.
+
+**monitoring/2026-04-29-contingency.md** — READY
+
+- Nashville/Crenshaw ruling field: PRESENT. Y/N, outcome, implications for Xinis April 30 deadline, CHECKIN flag, source link.
+- Fourth Circuit emergency motion field: PRESENT. Y/N, docket, relief, judge, basis, timeline.
+- April 30 early signals field: PRESENT.
+- Section 702 / FISA expiration section: PRESENT. Fields: Senate floor action April 29 Y/N; House floor action April 29 Y/N; reauthorization passed before midnight April 30 Y/N; if lapsed DOJ/IC operational impact statement. Expiration date (April 30) correctly stated in the section header.
+- AFL-CIO national endorsement (outside mass call) field: PRESENT.
+- ICE/DHS enforcement alert field: PRESENT.
+- Updated assessments section: PRESENT. Abrego Garcia/Xinis posture, May Day threat environment, Section 702 lapse operational significance.
+- Public messaging recommendations: PRESENT. Safety guidance changes, legal support updates, framing for participants.
+- Cross-file update checklist: PRESENT. Four companion file update reminders.
+- Verdict: NO CHANGES NEEDED.
+
+**monitoring/2026-05-01-template.md** — READY
+
+- Scale summary table: PRESENT. Pre-May Day projections (922 events, 3,500+ total actions, 85 cities) with blank actuals columns for all metrics.
+- 7-city reporting structure: PRESENT. DC, Chicago (with CTU bus protocol note), New York City, Los Angeles, Seattle, Portland OR, New Orleans (with UMC nurses strike Day 1 note), plus open-ended "other notable cities" block.
+- Labor action tracker: PRESENT. Confirmed stoppages table, employer closures table, AFL-CIO national statement field.
+- Government response section: PRESENT. ICE/DHS enforcement at demonstrations table, arrests table, administration statements table.
+- Section 702 FISA field: PRESENT. Y/N expiration, reform provisions if reauthorized, operational impact if lapsed.
+- DHS payroll cliff field: PRESENT. House budget resolution Y/N, DHS operations Y/N, enforcement surge pattern Y/N.
+- Narrative/media framing section: PRESENT. Five outlets tracked.
+- Verification checklist: PRESENT. Labor sources, turnout verification protocol (police vs. organizer), arrest/incident verification (NLG, ProPublica, PACER), litigation monitoring (CourtListener Abrego Garcia docket, Nashville docket, Democracy Docket, Just Security).
+- Strategic assessment section: PRESENT. 8 questions to complete May 2-3.
+- Verdict: NO CHANGES NEEDED.
+
+---
+
+### Known Gap — No 2026-04-30-results.md
+
+Confirmed absent. As documented in Session 423 spot-check: the April 30 5:00 p.m. discovery deadline is the hardest judicial deadline in the monitoring window. The `2026-04-29-contingency.md` has an "Early Signals" section for April 30 filings, and `2026-04-28-results.md` tracks the deadline outcome in its April 29 analysis pass. These can absorb April 30 developments without a dedicated file. However, if the April 30 deadline produces significant outcomes (compliance, defiance, contempt escalation), a dedicated file would keep the monitoring record cleaner.
+
+Decision left to user. If April 28 hearing generates a contempt order and April 30 becomes a hard enforcement moment, create `monitoring/2026-04-30-results.md` at that time rather than in advance.
+
+---
+
+### Known Gap — No PROJECTS.md
+
+The task brief references `PROJECTS.md` as containing an Exploration Queue and noting the `2026-04-30-results.md` gap. This file does not exist in the directory. WORKLOG.md is the authoritative session log. CHECKIN.md is the authoritative flag/queue for urgent and open items. No action needed — the content the task expected to find there is already recorded in WORKLOG.md (Session 423) and CHECKIN.md.
+
+---
+
+### Monday April 28, 2026 — Pre-Capture Checklist (14:00 UTC)
+
+Run this checklist at 14:00 UTC (10:00 a.m. ET) before the Xinis hearing closes at approximately 17:00 UTC (1:00 p.m. ET). The hearing is scheduled for the afternoon; closing arguments are expected around 5:00 p.m. ET (22:00 UTC). Fill the quick-fill table immediately after the hearing — do not wait for the overnight analysis.
+
+1. OPEN `monitoring/2026-04-28-results.md` and confirm the quick-fill record table is in view. Have it ready to fill within 10 minutes of hearing outcome news.
+
+2. CHECK CourtListener docket https://www.courtlistener.com/docket/71191591/abrego-garcia-v-noem/ for same-day filings. Set a browser alert or check on arrival at 14:00 UTC and again at 17:00, 19:00, 22:00 UTC.
+
+3. CHECK Nashville/Crenshaw docket (U.S. v. Abrego Garcia, 3:25-cr-00115, M.D. Tenn. on CourtListener) — ruling is "imminent" and could land Monday. If it lands before the Xinis hearing closes, fill the Nashville/Crenshaw field in the quick-fill table immediately.
+
+4. CHECK Section 702 status — Senate/House floor action. Any Monday floor votes would appear at congress.gov activity feed or EFF tracker. If a vote is scheduled or taken, fill the Section 702 field in `monitoring/2026-04-29-contingency.md` same day.
+
+5. AFTER filling the quick-fill table, set a CHECKIN.md flag if escalation level is CRITICAL or HIGH — specifically if contempt is issued. The April 29 analysis pass template in `2026-04-28-results.md` is the next step; that fills Tuesday morning.
+
+---
+
 ## April 26, 2026 (Session 423) — May Day Guide Distribution Prep + Monitoring Readiness Check
 
 **Session type**: Verification + distribution planning

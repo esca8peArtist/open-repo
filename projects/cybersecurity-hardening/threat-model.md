@@ -2,7 +2,7 @@
 title: "Threat Model: Government Surveillance Infrastructure (2025-2026)"
 project: cybersecurity-hardening
 created: 2026-04-26
-status: initial-draft
+status: complete
 confidence: high — primary sources (FOIA disclosures, court filings, government contracts, investigative journalism, Amnesty International)
 ---
 
@@ -443,7 +443,3 @@ Foundry's core capability: connecting datasets that were never designed to inter
 - [Biometric Update: ICE awards Clearview AI $9.2M contract](https://www.biometricupdate.com/202509/ice-awards-clearview-ai-9-2m-facial-recognition-contract)
 - [Penn CERL: Section 702 reauthorization outlook](https://www.penncerl.org/the-rule-of-law-post/after-a-bruising-battle-fisa-section-702-lives-on-now-let-the-2026-section-702-reauthorization-debate-begin/)
 - [Privacy International: All Roads Lead to Palantir (2020)](https://privacyinternational.org/sites/default/files/2020-11/All%20roads%20lead%20to%20Palantir%20with%20Palantir%20response%20v3.pdf)
-
----
-
-*Next document to produce*: `defensive-opsec-guide.md` — layered countermeasures mapped against each threat vector identified here.
