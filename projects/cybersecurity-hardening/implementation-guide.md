@@ -73,12 +73,16 @@ If you are a California resident, this is the highest-priority action in Part 0.
 - Process: Create an account at privacy.ca.gov, verify California residency, submit one request.
 - Time to effect: Up to 45 days for initial processing; ongoing automatic maintenance thereafter.
 - Limitation: Does not cover law enforcement data products (Accurint, CLEAR) or unregistered brokers. After DROP submission, still complete Steps 0.2-0.3 for brokers outside California's jurisdiction.
+- **For undocumented residents (California)**: AB 60 (2013) and AB 1766 (effective 2023) allow undocumented California residents to obtain state driver's licenses and ID cards without proof of authorized presence. A California state ID obtained under these statutes satisfies DROP's identity verification requirement. This is the highest-leverage path for the population most targeted by ELITE/Venntel — undocumented Californians have a documented route to DROP access that does not require a Social Security Number. See `phase2-osint-deepening.md` Part B for ID-verification workarounds applicable to other opt-out services.
+- **SECURE Data Act watch (HR 8413, introduced April 22, 2026)**: This bill, if enacted, would preempt CCPA and all state privacy laws that "relate to" its provisions — including the DELETE Act and DROP itself. Its passage would eliminate the most active enforcement regime currently constraining data brokers and remove California residents' ability to use DROP. This is a regulatory threat to monitor. Check state AG enforcement status quarterly and watch for committee progress via EFF Deeplinks (https://www.eff.org/deeplinks).
 
 ---
 
 ### Step 0.2 — Data Broker Opt-Outs by Priority
 
 Work through these in order. The highest-priority brokers are first — they have confirmed or likely law enforcement data relationships.
+
+Some brokers provide no consumer opt-out path at all. Venntel (which harvests MAID location data from smartphone ad-SDKs) and Babel Street (which holds FBI contracts up to $27M for social media OSINT) have already sold their data to government agencies — individual removal is not available, and no mechanism exists to purge yourself from datasets that have already been delivered. Thomson Reuters CLEAR demands high-friction ID verification (front and back of driver's license plus a selfie via ID DataWeb) and is used directly within Palantir ELITE, the platform generating address confidence scores used in deportation targeting. Clearview AI offers a limited consumer opt-out that explicitly does not apply to federal law enforcement — ICE holds a contract worth up to $9.2M. Palantir itself is not a data broker: it is an intelligence aggregation platform that pulls from upstream sources, and there is no consumer-facing mechanism. The achievable focus for Part 0 is the brokers where consumer suppression is both possible and where law enforcement has documented data relationships — starting with Priority 1 below.
 
 **Priority 1: LexisNexis (Accurint)**
 The most important opt-out. LexisNexis holds a confirmed $9.75 million DHS contract giving ICE access to its database. Palantir's ELITE platform integrates CLEAR (a Thomson-Reuters product; LexisNexis and Thomson-Reuters are competitors but CLEAR and Accurint data largely overlap).
@@ -115,23 +119,25 @@ The most important opt-out. LexisNexis holds a confirmed $9.75 million DHS contr
 
 **Priority 7–20 (submit in batch, same afternoon):**
 
-| Broker | Opt-out URL |
-|--------|-------------|
-| TruePeopleSearch | https://www.truepeoplesearch.com/removal |
-| FastPeopleSearch | https://www.fastpeoplesearch.com/removal |
-| PeopleFinder | https://www.peoplefinder.com/optout.php |
-| Instant Checkmate | https://www.instantcheckmate.com/opt-out/ |
-| TruthFinder | https://www.truthfinder.com/opt-out/ |
-| Pipl | https://pipl.com/personal-information-removal-request/ |
-| PeekYou | https://www.peekyou.com/about/contact/optout/ |
-| FamilyTreeNow | https://www.familytreenow.com/optout |
-| ZabaSearch | https://www.zabasearch.com/block_records/ |
-| InfoTracer | https://infotracer.com/optout/ |
-| PublicRecordsNow | https://www.publicrecordsnow.com/optout/ |
-| US Search | https://www.ussearch.com/consumer/optout/ |
-| Addresses.com | https://www.addresses.com/optout.php |
-| Acxiom | https://isapps.acxiom.com/optout/optout.aspx |
-| Epsilon | https://us.epsilon.com/privacy/epsilon-data-alliance-opt-out |
+| Broker | Opt-out URL | Notes |
+|--------|-------------|-------|
+| TruePeopleSearch | https://www.truepeoplesearch.com/removal | |
+| FastPeopleSearch | https://www.fastpeoplesearch.com/removal | |
+| PeopleFinder | https://www.peoplefinder.com/optout.php | |
+| Instant Checkmate | https://www.instantcheckmate.com/opt-out/ | |
+| TruthFinder | https://www.truthfinder.com/opt-out/ | |
+| CoreLogic | https://optout.corelogic.com/ | property ownership and tenant screening; no ID required |
+| Pipl | https://pipl.com/personal-information-removal-request/ | |
+| PeekYou | https://www.peekyou.com/about/contact/optout/ | |
+| FamilyTreeNow | https://www.familytreenow.com/optout | |
+| ZabaSearch | https://www.zabasearch.com/block_records/ | |
+| InfoTracer | https://infotracer.com/optout/ | |
+| PublicRecordsNow | https://www.publicrecordsnow.com/optout/ | |
+| US Search | https://www.ussearch.com/consumer/optout/ | |
+| Addresses.com | https://www.addresses.com/optout.php | |
+| Acxiom | https://isapps.acxiom.com/optout/optout.aspx | uses KBA, no ID upload required |
+| Epsilon | https://us.epsilon.com/privacy/epsilon-data-alliance-opt-out | uses KBA, no ID upload required |
+| Verisk Analytics | https://www.verisk.com/privacy/ | insurance and claims history; name + address required |
 
 For a comprehensive and regularly-updated master list, the Big-Ass-Data-Broker-Opt-Out-List on GitHub (https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List, last updated March 28, 2026) covers 200+ brokers with current removal URLs.
 
@@ -170,6 +176,13 @@ What you will and won't see: some brokers show the public listing as removed but
 **"I can't find my record to opt out."** Some brokers require you to search specifically — try variations (middle initial, no middle name, previous city, spouse's name). If no record appears, you may already have limited exposure on that broker — move on.
 
 **"The opt-out form requires a government ID upload and I'm not comfortable with that."** This is a legitimate concern. LexisNexis specifically uses this to verify identity before suppression. The alternative is to skip LexisNexis consumer opt-out and focus on the others. The ID upload is to prevent someone from removing another person's record maliciously — the data they receive is compared against what they already hold. If you are unwilling to submit ID, focus your effort on the other 19 brokers instead.
+
+**If you lack government-issued ID** (undocumented status, lost documents): See `phase2-osint-deepening.md` Part B for a full breakdown. A few specific options:
+
+- **Foreign passport**: LexisNexis states it accepts "government-issued ID" without specifying U.S. issuance. A valid foreign passport may function as a substitute, but LexisNexis's actual processing of foreign passports is not publicly confirmed. Risk tradeoff: submitting a foreign passport to a law enforcement data vendor exposes that passport's details to those systems — weigh this against the benefit of suppression.
+- **ITIN (Individual Taxpayer Identification Number)**: The IRS issues ITINs specifically to people who cannot obtain an SSN, including undocumented individuals. The LexisNexis form requests SSN; ITIN may function as a substitute in practice. This is not confirmed — treat it as an option to explore, not a guaranteed path.
+- **Matrícula Consular** (Mexican consular ID): Government-issued and accepted by several U.S. banks for account opening. Whether data brokers accept it for opt-out is not publicly documented.
+- **Most accessible path for undocumented individuals**: If you are a California resident, use DROP (see Step 0.1 above — AB 60/AB 1766 state IDs satisfy DROP verification). If you are not a California resident, focus on the brokers in the Priority 7-20 table that use Knowledge-Based Authentication instead of ID upload — Acxiom and Epsilon both use KBA and do not require ID submission, making them accessible without government-issued documents.
 
 **"The removal link in the confirmation email is expired."** Re-submit the opt-out form and check your email immediately. Most confirmation links expire within 24–48 hours.
 

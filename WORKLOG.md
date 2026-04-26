@@ -4,6 +4,47 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — Session 422 — Parallel 2-agent execution: resistance-research + cybersecurity-hardening
+
+### resistance-research — Democratic Renewal Proposal Expansion (5 new subsections, ~4,300 words)
+
+**Task**: Expand Democratic Renewal Proposal from outline to substantive, actionable text. Focused on foundational domains (voting, institutions, judiciary).
+
+**Work completed**:
+- **Domain 1 (Electoral Reform)**: Added 1f (mid-decade redistricting prohibition, ~850 words) and 1g (RCV momentum and backlash management, ~800 words). Covers Texas 2025 remapping crisis, SCOTUS 6-3 stay, 49-jurisdiction RCV adoption, Maine April 8 ruling, federal mandate strategy.
+- **Domain 2 (Institutional Integrity)**: Added 2f (Schedule Policy/Career final rule, ~1,000 words). Analyzes OPM March 2026 rule (50,000 positions), NTEU litigation, 9% workforce elimination, civil service amendment on Germany BL Article 33(5) model.
+- **Domain 6 (Judicial Independence)**: Added 6g (post-CASA universal injunction reform, ~900 words) and 6h (term limits design, ~750 words). CASA district court impacts, statutory restoration of universal injunction, H.R.1074/Whitehouse-Booker/Welch-Manchin track comparison.
+
+**Files written**:
+- `projects/resistance-research/democratic-renewal-proposal.md` (expanded; all 22 domains now have substantive text or detailed outline)
+- `projects/resistance-research/WORKLOG.md` (logged session 422 with sources)
+
+**Lines added**: ~4,300 words across 5 subsections. All work primary-source cited.
+
+---
+
+### cybersecurity-hardening — Phase 2 OSINT integration into implementation-guide.md Part 0 (4 edits applied)
+
+**Task**: Apply 4 specified edits integrating phase2-osint-deepening.md findings into implementation-guide.md Part 0.
+
+**File edited**: `/home/awank/dev/SuperClaude_Framework/projects/cybersecurity-hardening/implementation-guide.md`
+
+**Edits applied**:
+
+1. **Step 0.1 DROP entry** (~line 76-77 in updated file): Added two new bullet points to the California DELETE Act / DROP section. First bullet documents the AB 60/AB 1766 path for undocumented California residents (state ID eligibility without proof of authorized presence satisfies DROP verification; this is the highest-leverage path for the most-targeted population). Second bullet adds SECURE Data Act watch (HR 8413, April 22, 2026), noting its preemption threat to CCPA and DROP, with quarterly check instruction. Net: ~145 words added.
+
+2. **Step 0.2 opening paragraph** (~line 85 in updated file): Inserted new framing paragraph before Priority 1 explaining which Tier A brokers have no consumer opt-out path (Venntel, Babel Street, CLEAR, Clearview AI, Palantir) and why, orienting readers toward achievable targets. Net: ~130 words added.
+
+3. **Priority 7-20 table** (~lines 122-140 in updated file): Expanded table to add a Notes column, inserted CoreLogic (property ownership/tenant screening; no ID required) in alphabetical position after TruthFinder, and appended Verisk Analytics (insurance/claims history; name + address required) at the end. Also added KBA notes to Acxiom and Epsilon rows. Table grew from 15 rows to 17 rows.
+
+4. **Troubleshooting — ID requirements** (~lines 180-185 in updated file): After the existing "focus on the other 19 brokers" sentence, added a new paragraph addressing users without government-issued ID. Covers: foreign passport tradeoff (unconfirmed LexisNexis acceptance, data exposure risk), ITIN as SSN substitute (plausible, not confirmed), Matrícula Consular (documented but unknown broker acceptance), and the most accessible path (DROP for CA residents via AB 60/AB 1766; KBA-based brokers Acxiom/Epsilon for others). Net: ~215 words added.
+
+**Line count before edits**: ~1,044 lines. After edits: ~1,072 lines (net +28 lines; word count increase substantially larger due to paragraph and table additions).
+
+**No new files created. No commit made (orchestrator to commit).**
+
+---
+
 ## 2026-04-26 — Session 421 — cybersecurity-hardening — Phase 2 fold-vs-standalone integration analysis
 
 **Task**: Compare phase2-osint-deepening.md against implementation-guide.md Part 0; produce fold-vs-standalone recommendation with exact diffs ready for one-click implementation.
