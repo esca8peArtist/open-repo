@@ -350,3 +350,57 @@ class ReviewHistoryItemResponse(BaseModel):
     created_at: datetime
 
     model_config = ConfigDict(from_attributes=True)
+
+
+class ContributorStatsResponse(BaseModel):
+    """Contributor reputation and statistics."""
+
+    user_id: str
+    total_submissions: int
+    approved_count: int
+    rejected_count: int
+    pending_count: int
+    revision_requested_count: int
+    approval_rate: float
+    endorsement_score: int
+    reputation_tier: str  # 'none' | 'trusted' | 'expert'
+    first_submission: Optional[datetime]
+    last_submission: Optional[datetime]
+
+
+class FinalizeDecisionRequest(BaseModel):
+    """Request to finalize a contribution decision (admin endpoint)."""
+
+    final_decision: str  # 'approved' | 'rejected'
+    reason: str
+
+
+class FinalizeDecisionResponse(BaseModel):
+    """Response after finalizing a contribution."""
+
+    id: int
+    state: str
+    review_decision_reason: Optional[str]
+    reviewed_at: datetime
+    reviewed_by: str
+    published_item_cid: Optional[str] = None
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class RequestRevisionRequest(BaseModel):
+    """Request revision from contributor."""
+
+    revision_requests: List[RevisionRequest]
+    deadline_days: int = 7
+
+
+class RequestRevisionResponse(BaseModel):
+    """Response after requesting revision."""
+
+    id: int
+    state: str
+    revision_deadline: datetime
+    revision_requests: List[RevisionRequest]
+
+    model_config = ConfigDict(from_attributes=True)
