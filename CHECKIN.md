@@ -8,6 +8,73 @@
 
 **Completed**:
 
+1. **stockbot — Monday Market-Open Readiness Verification COMPLETE** ✓
+   - P&L data pipeline verified (trades, performance_metrics, model_runs tables all correct)
+   - 22/22 Monday readiness tests PASS
+   - Jetson sync confirmed (all code files match dev exactly, 5 sessions cycling correctly)
+   - Database baseline clean (0 trades in stockbot.db, ready for Monday P&L capture)
+   - `MONDAY_READINESS.md` created with monitoring commands and fallback procedures
+   - **Status**: ZERO BLOCKERS. Ready for Monday 2026-04-28 14:30 UTC market open. No rebuild/restart needed.
+
+2. **resistance-research — Phase 1 Launch Readiness Verification COMPLETE** ✓
+   - All four monitoring templates verified field-ready (no changes needed)
+   - Dry run successful (mock scenario fills all 9 quick-fill fields cleanly)
+   - Timeline verified in UTC (all deadlines correct, no timezone errors)
+   - GitHub Gist confirmed working (May Day Action Guide published)
+   - Optional channels (Discord, Slack, Signal, Reddit, Twitter/X, email) require manual credential setup but do NOT block April 28 launch
+   - `PHASE1_LAUNCH_CHECKLIST.md` created with step-by-step Monday 21:00 UTC action plan
+   - **Status**: PRODUCTION-READY for Monday 2026-04-28 21:00 UTC Phase 1 launch. GitHub Gist alone is sufficient if other channels are not configured.
+
+3. **seedwarden — Phase 1 Product Audit COMPLETE** ✓
+   - All 6 lead products verified complete (PDFs, mockups, listing copy all present)
+   - All 21 mockups verified production-ready (2400×2400 px PNG, correct dimensions/file size, no AI artifacts)
+   - Etsy compliance verified: titles ✓ pass, descriptions ✓ pass, SEO keywords ✓ properly front-loaded
+   - **CRITICAL ISSUES FOUND & SOLUTIONS PROVIDED**:
+     - Tags exceed 20-char limit in 7 products (silent Etsy rejection) — corrected tag sets provided in UPLOAD_SEQUENCE.md
+     - Native Plants Regional Guide PDF = 56.96 MB (exceeds 5 MB Etsy limit) — excluded from Phase 1 (replaced by Companion Planting Chart, which is the recommended swap)
+   - `UPLOAD_SEQUENCE.md` created with day-by-day upload schedule, step-by-step checklist, corrected tags, post-upload monitoring
+   - **Status**: GO FOR UPLOAD with 3 manual actions required.
+
+**In Progress**:
+
+1. **stockbot**: Paper trading LIVE, ready for Monday 2026-04-28 14:30 UTC market open. System will auto-capture P&L.
+2. **resistance-research**: Data capture window Monday 2026-04-28 21:00 UTC (Xinis hearing closing arguments).
+3. **seedwarden**: Awaiting manual verification before upload can begin.
+
+**Needs Your Input**:
+
+1. **seedwarden — BEFORE UPLOAD** (3 manual actions):
+   - ✓ **Tag corrections**: Use corrected tag sets from UPLOAD_SEQUENCE.md when uploading (copy-paste before upload, not after)
+   - ✓ **Etsy shop verification**: Log into etsy.com/shop/manager and confirm account is active/in-good-standing
+   - ✓ **Social media accounts**: Confirm or create Instagram/Pinterest/TikTok accounts before Day 3 go-live announcement
+   - **Once complete**: Ready to upload Monday 2026-04-28 or any day thereafter. Recommended stagger: Day 1 Mon, Day 2 Tue, Day 3 Wed.
+
+2. **resistance-research — OPTIONAL, NOT BLOCKING**:
+   - Discord/Slack/Signal/etc channel setup (if desired before Monday). GitHub Gist is sufficient for April 28 launch.
+
+3. **cybersecurity-hardening** (Session 438 deliverable):
+   - Execute Tier 1 distribution using templates in DISTRIBUTION_CHECKLIST.md. Suggested sequence: immigration legal aid (NILC, CLINIC, RAICES, ILRC, NLG), then community orgs, then mutual aid networks. Estimated Tier 1A time: 30–45 minutes.
+
+4. **mfg-farm**:
+   - Test print required (physical action) before launch prep continues.
+
+**Suggested Priorities for Next Session**:
+
+1. **Monday 2026-04-28 14:30 UTC (CRITICAL)**: **stockbot** market open — paper trading will auto-cycle and capture P&L
+2. **Monday 2026-04-28 21:00 UTC (CRITICAL)**: **resistance-research** Phase 1 data capture (Xinis hearing closing arguments)
+3. **This week (HIGH)**: **seedwarden** complete 3 manual actions + upload Phase 1 products (Day 1–3 stagger)
+4. **This week (HIGH)**: **cybersecurity-hardening** execute Tier 1 distribution (30–45 min)
+5. **This week (MEDIUM)**: **open-repo** GitHub push/merge Wave 4 (210+ tests, 0 regressions, production-ready)
+6. **Post-Monday (LOW)**: **mfg-farm** test print required
+
+**Usage**: Nominal. Next reset: Tuesday 2026-04-30 00:00 UTC.
+
+---
+
+## Previous Check-in (Session 438 — 2026-04-26 evening)
+
+**Completed**:
+
 1. **Monday Readiness Verification (3-agent parallel audit)** ✓
    - **resistance-research**: All three monitoring templates ready (Apr 28 Xinis 271-line quick-fill, Apr 29 contingency 138-line brief, May 1 scale summary 225-line template). May Day guide live (Gist published). Litigation tracker present (337 lines). Distribution checklist exists with 8+ channels across 3 tiers. **Confidence: HIGH for Monday 21:00 UTC execution**.
    - **stockbot**: Dev paper trading session running and cycling correctly (session ID 33a4afe676cae12a, last cycle 2026-04-26 12:11:42 UTC). Dashboard API responding on port 8000. Monitoring tools executable (monitoring-dashboard.py, monday-log-analysis.py). Market-open checklist complete (11 steps). **Confidence: MEDIUM — Jetson verification requires manual SSH check 14:00–14:25 UTC Monday before market open** (need to SSH to awank@100.120.18.84 and verify 5 sessions running per checklist items 4–8).
