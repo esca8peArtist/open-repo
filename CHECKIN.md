@@ -4,30 +4,37 @@
 
 ---
 
-## Since Last Check-in (Session 419 — 2026-04-26)
+## Since Last Check-in (Session 420 — 2026-04-26)
 
 **Completed**:
-1. **resistance-research**: April 28 Xinis hearing monitoring framework complete. Quick-fill outcome template (9 questions, 10-min evening fill) + April 29 analysis pass template ready. Litigation tracker updated with two missing entries (Texas SB 4 5th Circuit ruling, CBP One parole restoration). All four pre-hearing monitoring files ready. Commit: `8c527bf`.
-2. **cybersecurity-hardening**: Phase 2 OSINT/data broker deepening COMPLETE. New research document `osint-data-broker-deepening.md` (~2,400 words). `implementation-guide.md` Part 0 expanded (GPC signal, California DROP platform, automation services refined). `threat-model.md` updated (Montana SB 282, National Public Data breach, Venntel/Babel Street entries expanded, ICE MAID RFI escalation). Key finding: ICE MAID RFI (Jan 2026) is most significant new threat vector — ad tech procurement outside Carpenter scope, only addressable by platform countermeasures in Parts 1-3. Three-document corpus now deepened and publication-ready.
+1. **resistance-research**: April 28-May 1 monitoring templates VERIFIED COMPLETE. April 28 quick-fill template verified (9-question record table, contempt tracking, Boasberg precedent documented). May 1 template verified (scale summary, 7-city incident tracking, Section 702 expiration field, government response tables). April 29 contingency brief CREATED (covers Nashville/Crenshaw ruling, 4th Circuit stay post-contempt, early discovery deadline signals, Section 702 watch, escalation checklist). **Monday readiness: CLEAN**. Section 702 expires April 30 — strategically positioned in templates to track ICE surveillance constraint impact May 1+.
+
+2. **stockbot**: Paper trading VERIFIED LIVE on dev machine (raspby1). Session `33a4afe676cae12a` started 2026-04-26T05:50:34Z, cycling every 60 seconds, `dashboard_api.py` running. Live signal generation begins Monday 2026-04-28 market open. **JETSON_DEPLOYMENT.md created** (8.1 KB) — documents current state gap (container image stale, no stacker code from session 417), pre-deployment checklist, rsync + docker rebuild + session-start steps, verification commands, rollback procedure. **Critical gap**: Jetson container has pkl files but cannot load them; model_runs table empty (0 rows).
+
+3. **cybersecurity-hardening**: Phase 2 OSINT/Data Broker Deepening COMPLETE. `phase2-osint-deepening.md` created (~2,400 words). **Part A** (Broker taxonomy): "No opt-out path" catalog (Venntel, Babel Street, Thomson Reuters CLEAR, Clearview), Tier B additions (CoreLogic, Verisk), Tier C batch (10 brokers). **Part B** (ID-restricted services): California AB 60/AB 1766 → DROP eligibility identified as highest-leverage path for undocumented residents (currently invisible in guides). **Part C** (Court challenges): Clearview BIPA template ($51.75M but federal carve-out), Illinois BIPA as most powerful lever, PADFAA Feb 2026 FTC warnings as emerging hook, SECURE Data Act as threat (preempts CCPA/DROP). **Ready to integrate**: Add AB 60/1766 note to Part 0 Step 0.1, add "no opt-out" table to framing, fold CoreLogic/Verisk/Tier C into batch tables, add SECURE Data Act policy watch.
 
 **In Progress**:
-- resistance-research: Live monitoring 2026-04-28 Xinis hearing (ready for evening quick-fill).
-- stockbot: Paper trading accumulating (market opens Monday). Jetson deployment preparation (after P&L review).
+- resistance-research: Live monitoring 2026-04-28 Xinis hearing (ready for evening quick-fill). May Day guide distribution pending user action.
+- stockbot: Paper trading live on dev. Jetson deployment doc ready for execution (rsync + rebuild + session start). Monday P&L review pending market data.
 - open-repo: Phase 3 routes (38 story points, pending).
 - off-grid-living: Quality review/formatting pass (16 domains complete).
 
 **Needs Your Input**:
-- **resistance-research**: Distribute May Day Action Guide Gist link to organizing channels (Slack, Signal, email, Mastodon). Frame as legal/analytical companion to coalition guides (Indivisible, NEA, DSA). Five days to May 1.
-- **cybersecurity-hardening**: Publication approach — proceed now, or continue deepening before publication? Three-document corpus is deepened, sourced, and production-ready. (OSINT deepening complete; can publish immediately or stage further research.)
-- **stockbot**: After Monday market open, review paper trading P&L. Proceed with Jetson deployment or wait for more data? (Backtest: Sharpe 1.24, 100% win-rate, +17.1% return; tests 98 passed.)
+- **resistance-research**: Distribute May Day guide Gist URL (https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4) to organizing channels. Frame as legal/analytical companion to coalition guides. **Timeline critical**: 5 days to May 1.
+- **cybersecurity-hardening**: Decision on Part 0 integration — fold OSINT deepening findings and republish, or publish as-is? (Both are ready now.)
+- **stockbot**: After Monday market open and first P&L data captured, decide: (a) proceed with Jetson deployment immediately, or (b) wait for more paper trading validation?
 
-**Usage**: Calibrated token limits — Sonnet 8,935,000 (17% of week consumed), All 15,114,000 (17%). No throttling.
+**Usage**: Token usage nominal (14% of week consumed). No throttling. Next reset Tuesday 2026-04-30.
 
 ---
 
 ## History
 
 <!-- Archive prior check-ins here as they accumulate -->
+
+### Session 419 Checkpoint (2026-04-26)
+
+Resistance-research April 28 Xinis hearing monitoring framework complete. Quick-fill outcome template + April 29 analysis pass template ready. Litigation tracker updated. Cybersecurity-hardening Phase 2 OSINT/data broker deepening complete. Implementation guide Part 0 expanded (GPC signal, DROP platform, automation services). Threat model updated (Montana SB 282, National Public Data, Venntel/Babel Street, ICE MAID RFI). Three-document corpus deepened and publication-ready. Stockbot paper trading identified as infrastructure gap (not yet started despite wiring complete).
 
 ### Session 417 Checkpoint (2026-04-26)
 
