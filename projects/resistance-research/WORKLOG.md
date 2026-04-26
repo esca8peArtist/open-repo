@@ -2,6 +2,43 @@
 
 ---
 
+## April 26, 2026 — resistance-research: Phase 3 research integration into democratic renewal proposal
+
+**Session type**: Integration (weaving Phase 3 comparative research into existing proposal infrastructure)
+**Files modified**:
+- `projects/resistance-research/democratic-renewal-proposal.md` — four integration points added (~2,600 new words)
+- `projects/resistance-research/democratic-renewal-executive-summary.md` — "How Change Is Possible" expanded with Carnegie recovery findings and NPVIC status; archive references updated
+- `projects/resistance-research/published/README.md` — Phase 3 research roadmap added as a Research Foundation document with full annotation
+
+### Integration points in `democratic-renewal-proposal.md`
+
+**Pattern 6 (new) in Section 3.1**: Added the Carnegie Endowment recovery playbook as a sixth pattern — winning an election does not end the work. Poland's autocratic enclave problem explained. Pre-committed institution strategy (ANC exile planning, Solidarity infrastructure under martial law, Irish Citizens' Assembly specificity). Full citation to Carnegie April 2025 report.
+
+**Section 3.1a (new)**: Constitutional design dimension added — what 935-constitution comparative research says about specificity and endurance; Tunisia's unactivated Constitutional Court as the archetypal "institution that exists on paper only" failure; Germany's Basic Law as a defensive design model; Ireland's two-stage Citizens' Assembly model; New Zealand's electoral reform pathway as the RCV analog.
+
+**Section 3.5 (new)**: Post-electoral recovery challenge — the O'Donnell-Schmitter sequencing argument; four-phase US recovery sequence (stop the bleeding / structural legal restoration / structural reform / constitutional renewal); autocratic enclave problem with US-specific inventory (judiciary, Schedule F agencies, state-level captured institutions) and recovery tools; interstate compact opportunity (NPVIC 222 EV, campaign finance disclosure compact, election administration standards compact, economic rights compact).
+
+**Domain 3 (3a Citizens' Assemblies) strengthened**: Ireland's two-stage model detailed — Constitutional Convention (2012-2014, Stage 1, marriage equality) and Citizens' Assembly (2016-2018, Stage 2, abortion rights). Mechanism analysis: random selection creates representativeness elections do not; deliberation over multiple sessions; Supreme Court judge as chair for procedural legitimacy; political cover mechanism. References added to `phase-3-research-roadmap.md`.
+
+**Domain 6 (6i new subsection)**: German Basic Law comparative design analysis — Weimar failure modes (Article 48 emergency powers, presidential removal authority, no constructive vote of no confidence) and their US analogs; Basic Law's design responses (judicial oversight during emergencies, 12-year non-renewable terms with supermajority appointment, militant democracy provisions); specific US equivalents needed. Fiscal impact: 0.5-1.0% annual GDP growth premium from governance quality (World Bank estimate).
+
+**Cross-reference table (5.1) updated**: `phase-3-research-roadmap.md` added with full annotation of key findings.
+
+**Reading guide (5.2) updated**: New entry for `phase-3-research-roadmap.md` directing readers to the recovery playbook and constitutional design research.
+
+### What the integration accomplishes
+
+The proposal previously had strong mobilization theory (Chenoweth, Tufekci) and strong reform design (22 domains, fiscal analysis, international benchmarks) but a thin transition-gap analysis that relied primarily on the movement case studies. Phase 3 adds:
+- A recovery probability finding (4 of 25 backsliding countries recovered) that grounds urgency
+- A specific, named problem (autocratic enclaves) with a US-specific inventory and recovery tools
+- A pre-commitment strategy drawn from the most successful historical transitions
+- Constitutional design evidence that specific structural gaps (emergency powers, judicial independence design, citizens' assembly mechanism) have known solutions from 75 years of post-Weimar constitutional learning
+- The NPVIC as a live near-term pathway at 82.2% of activation threshold
+
+**Confidence**: High — all integration points are drawn directly from `phase-3-research-roadmap.md` verified at session start. No new claims introduced; all findings cited to primary sources in the roadmap.
+
+---
+
 ## April 26, 2026 — resistance-research: Phase 3 distribution templates — Substack, Reddit, institutional outreach
 
 **Session type**: Writing (distribution-ready outputs)

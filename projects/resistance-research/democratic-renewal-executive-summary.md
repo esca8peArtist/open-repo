@@ -27,6 +27,8 @@ The current crisis was not caused solely by the individuals in power. It was ena
 
 Analysis of approximately 160 resistance and reform movements (1917-2024) produces a clear theory of change. Democratic backsliding is reversible — Poland reversed eight years of institutional capture in 2023 because a unified opposition achieved 74.4% turnout while civil society maintained organizational depth throughout the PiS era. Hungary's opposition failed because it unified too late, after structural advantages became insurmountable. The U.S. is currently closer to Poland than Hungary, but the window is narrowing with each month of institutional dismantling. Erica Chenoweth's research on 250+ campaigns found that no nonviolent movement with sustained active participation exceeding 3.5% of the population has ever failed. In the United States that is 11.6 million people. The October 2025 No Kings protests drew 7 million — real, unprecedented, and not yet sufficient or sustained. The movements that converted mobilization into lasting change shared one characteristic that digital-era movements consistently lack: organizational depth. The Civil Rights Movement required years of SCLC and SNCC chapter-building, jail training, and legal defense infrastructure before Birmingham was possible. The current resistance movement has the numbers; it is still building the infrastructure. And the movements that secured lasting gains — South Africa's ANC, Poland's Solidarity, Czechoslovakia's Civic Forum — did not merely win. They planned for governance. They had blueprints. This document is that blueprint.
 
+The Phase 3 comparative research adds a crucial caveat to the Poland success story: winning an election does not end the work. The Carnegie Endowment's April 2025 synthesis found that of 25 countries that experienced significant democratic backsliding since 1990, only four recovered to their prior quality of democracy — and none has sustained recovery for five years. Poland's Tusk coalition, despite its historic 2023 mandate, faces PiS-installed judges still controlling the Constitutional Tribunal and structural "autocratic enclaves" blocking democratic restoration. The US must anticipate the same: federal judges appointed during the current period serve life tenure, regulatory agency positions converted to at-will under Schedule F can be re-politicized, and rebuilt institutional capacity takes 7-12 years. Recovery requires a pre-committed institutional strategy — not improvised after winning, but designed and staffed before the window opens. The National Popular Vote Interstate Compact, now at 222 electoral votes (82.2% of the 270 needed for activation after Virginia joined in April 2026), is one such pre-committed mechanism already in motion.
+
 ---
 
 ## The Twenty-Two Domains
@@ -82,9 +84,10 @@ The window is open. The tools exist. The evidence base is extensive. The questio
 
 ---
 
-*This executive summary is drawn from the full proposal (22 domains, 2,789 lines) and the broader Resistance Research Archive: 160+ movement case studies, crisis analysis, litigation tracking, voting technology research, tax system analysis, governance models, and ICE detention research. Full proposal, supporting research, and source citations available at the links below.*
+*This executive summary is drawn from the full proposal (22 domains) and the broader Resistance Research Archive: 160+ movement case studies, crisis analysis, litigation tracking, voting technology research, tax system analysis, governance models, ICE detention research, and Phase 3 international comparative research. Full proposal, supporting research, and source citations available at the links below.*
 
 **Full proposal:** `democratic-renewal-proposal.md`
+**International models and recovery research:** `phase-3-research-roadmap.md`
 **Research archive:** `resistance-master-report.md`, `us-democracy-crisis-analysis-2026.md`, `litigation-tracker-2026.md`
 **Citation format:** "Democratic Renewal Project, resistance-research.org, April 2026"
 **License:** Creative Commons Attribution 4.0 — share freely with attribution
