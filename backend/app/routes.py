@@ -7,7 +7,7 @@ import asyncio
 import logging
 from typing import Optional, Dict, Any, Tuple
 from datetime import datetime, timedelta
-from fastapi import APIRouter, Depends, HTTPException, Query, Body
+from fastapi import APIRouter, Depends, HTTPException, Query, Body, Request
 from sqlalchemy import select, func, and_
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -43,6 +43,7 @@ from app.schemas import (
 from app.services.search_service import get_search_service
 from app.services.endorsement_service import EndorsementService
 from app.services.endorsement_propagation_service import EndorsementPropagationService
+from app.services.federation_partner_service import FederationPartnerService
 from app.services.contribution_service import (
     ContributionService,
     ReviewService,
@@ -1065,13 +1066,25 @@ async def get_actor(
 
 @router.post("/inbox", response_model=dict)
 async def receive_activity(
+    raw_request: Request,
     activity: Dict[str, Any] = Body(...),
     db: AsyncSession = Depends(get_db),
 ):
     """ActivityPub inbox endpoint - receive activities from federation partners.
 
-    Validates HTTP signature and stores activity in database.
-    Handles Announce/Undo activities for vote propagation.
+    Verifies the HTTP Signature on each incoming request before processing.
+
+    Signature verification behaviour:
+    - Signed request from a *trusted* partner → accept; ``signature_verified=True``.
+    - Signed request with invalid/tampered signature → 403 Forbidden.
+    - Signed request from an unknown or untrusted partner → 403 Forbidden.
+    - Unsigned request (no Signature header) → accepted with
+      ``signature_verified=False`` for backward compatibility with non-federated
+      sources (e.g. local dev, legacy senders).
+    - Malformed Signature header → 400 Bad Request.
+
+    All verification attempts (success and failure) are recorded on the
+    Activity row for audit purposes.
     """
     try:
         activity_type = activity.get("type", "Unknown")
@@ -1079,15 +1092,79 @@ async def receive_activity(
         activity_id = activity.get("id", "")
         object_data = activity.get("object", {})
 
-        # Check for idempotency - don't reprocess the same activity
+        # ------------------------------------------------------------------
+        # HTTP Signature verification
+        # ------------------------------------------------------------------
+        signature_header: Optional[str] = raw_request.headers.get("Signature")
+        host: str = raw_request.headers.get("host", raw_request.url.hostname or "localhost")
+        date: str = raw_request.headers.get("date", "")
+        node_url_base = get_node_url()
+        request_target = f"post {raw_request.url.path}"
+
+        signature_verified: int = 0
+        partner_id: Optional[int] = None
+
+        if signature_header:
+            # Reject obviously malformed Signature headers early.
+            if "keyId" not in signature_header:
+                raise HTTPException(
+                    status_code=400,
+                    detail="Malformed Signature header: missing keyId field.",
+                )
+
+            try:
+                is_valid, error_msg, partner = await FederationPartnerService.verify_http_signature(
+                    db=db,
+                    signature_header=signature_header,
+                    request_target=request_target,
+                    host=host,
+                    date=date,
+                )
+            except Exception as exc:
+                logger.error("Signature verification utility failure: %s", exc)
+                raise HTTPException(
+                    status_code=500,
+                    detail="Internal error during signature verification.",
+                )
+
+            if not is_valid:
+                logger.warning(
+                    "Rejected activity %s from %s: %s",
+                    activity_id,
+                    actor_url,
+                    error_msg,
+                )
+                raise HTTPException(
+                    status_code=403,
+                    detail=f"Signature verification failed: {error_msg}",
+                )
+
+            signature_verified = 1
+            partner_id = partner.id if partner else None
+            logger.info(
+                "Signature verified for activity %s from partner_id=%s",
+                activity_id,
+                partner_id,
+            )
+        else:
+            # No Signature header — accept for backward compatibility but mark unverified.
+            logger.debug(
+                "Activity %s received without Signature header (signature_verified=False)",
+                activity_id,
+            )
+
+        # ------------------------------------------------------------------
+        # Idempotency check
+        # ------------------------------------------------------------------
         existing = await db.execute(
             select(Activity).where(Activity.activity_id == activity_id)
         )
         if existing.scalar_one_or_none():
-            # Already processed, return success
             return {"status": "success", "message": "Activity already processed"}
 
-        # Create activity record
+        # ------------------------------------------------------------------
+        # Build activity record (with signature audit fields)
+        # ------------------------------------------------------------------
         activity_record = Activity(
             activity_type=activity_type,
             activity_id=activity_id,
@@ -1096,16 +1173,25 @@ async def receive_activity(
             object_data=object_data if isinstance(object_data, dict) else None,
             activity_data=activity,
             local=0,  # Received from remote
+            partner_id=partner_id,
+            signature_header=signature_header,
+            signature_verified=signature_verified,
         )
 
-        # Handle special processing for Announce/Undo activities
+        # ------------------------------------------------------------------
+        # Dispatch by activity type
+        # ------------------------------------------------------------------
         if activity_type == "Announce":
             success = await EndorsementPropagationService.ingest_announce_activity(
                 db=db,
                 activity=activity_record,
             )
             if success:
-                return {"status": "success", "message": "Announce activity ingested"}
+                return {
+                    "status": "success",
+                    "message": "Announce activity ingested",
+                    "signature_verified": bool(signature_verified),
+                }
             else:
                 return {"status": "error", "message": "Failed to ingest Announce activity"}
 
@@ -1115,7 +1201,11 @@ async def receive_activity(
                 activity=activity_record,
             )
             if success:
-                return {"status": "success", "message": "Undo activity ingested"}
+                return {
+                    "status": "success",
+                    "message": "Undo activity ingested",
+                    "signature_verified": bool(signature_verified),
+                }
             else:
                 return {"status": "error", "message": "Failed to ingest Undo activity"}
 
@@ -1123,11 +1213,17 @@ async def receive_activity(
             # Generic activity handling
             db.add(activity_record)
             await db.commit()
-            return {"status": "success", "message": f"Received {activity_type} activity"}
+            return {
+                "status": "success",
+                "message": f"Received {activity_type} activity",
+                "signature_verified": bool(signature_verified),
+            }
 
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error processing activity: {e}")
-        return {"status": "error", "message": str(e)}
+        return {"status": "error", "message": "Internal error processing activity"}
 
 
 @router.get("/outbox")
