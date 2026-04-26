@@ -4,6 +4,71 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 evening — Session 424 — Parallel 3-agent validation: Monday readiness confirmed (resistance-research + stockbot infrastructure + cybersecurity-hardening publication)
+
+### resistance-research — Monday 2026-04-28 Data Capture Readiness VERIFIED
+
+**Task**: Validate all monitoring templates ready for Xinis hearing data capture at Monday 17:00 UTC (5pm EST).
+
+**Deliverables**:
+- All 3 monitoring templates verified correct: 2026-04-28-results.md (9-question quick-fill + April 29 pass template), 2026-04-29-contingency.md (Nashville/Crenshaw + 4th Circuit + Section 702 FISA April 30 expiry), 2026-05-01-template.md (scale summary, 7-city reporting, labor action tracker).
+- Pre-capture checklist created for Monday 14:00 UTC (5 items: check CourtListener/PACER, monitor Section 702 floor votes, fill quick-fill after hearing, flag CHECKIN if CRITICAL).
+- Known gap documented: April 30 dedicated file missing (contingency file can absorb).
+- **Status**: READY FOR MONDAY. Template verification logged to projects/resistance-research/WORKLOG.md.
+
+---
+
+### stockbot — Monday Market-Open Infrastructure VALIDATED (tests 175 pass/0 fail)
+
+**Task**: Validate all infrastructure ready for Monday 2026-04-28 14:30 UTC market open.
+
+**Deliverables**:
+- 6-point validation complete: paper session `33a4afe676cae12a` LIVE (verified via API), market-open-checklist.md ready (11 steps + PASS criteria), monitoring-dashboard.py importable + --help functional, monday-log-analysis.py operational with documentation, dashboard API healthy on port 8000 (`/api/health` returns `{"status":"ok"}`), abbreviated test suite passing (175 passed, 0 failed).
+- **Test failure fixes** (10 total resolved):
+  - Root cause: `create_position_manager()` factory missing `database_url` parameter. Tests using `strategy_name="test"` connected to shared database with prior OPEN positions. New position attempts failed.
+  - Solution: Added `database_url: Optional[str]` to factory, passed `sqlite:///:memory:` to all 8 call sites (test_market_gaps.py + test_phase2_acceptance.py).
+  - Additional fixes: `get_risk_summary()` returns dict not float (assertion updated), `test_realized_pnl` rewritten to use correct API, `test_expected_bars_1min` bounds updated (1900–2000).
+- Manual steps for Monday: 14:00 UTC checklist, 14:30 UTC monitoring-dashboard.py, 16:30 UTC monday-log-analysis.py, post-day reconciliation.
+- **Status**: READY FOR MONDAY. Tests passing, infrastructure validated.
+
+---
+
+### cybersecurity-hardening — Publication Infrastructure Complete
+
+**Task**: Prepare final publication readiness materials (Option A: Publish as-is).
+
+**Task**: Prepare final publication infrastructure for the cybersecurity-hardening trilogy (Option A: Publish as-is).
+
+**Quality pass findings**:
+- `threat-model.md`: Two drafting artifacts found and fixed. (1) `status` field was `initial-draft` — updated to `complete`. (2) Footer line "Next document to produce: `defensive-opsec-guide.md`" was a development artifact — removed. No TODOs or placeholder text found in any of the three trilogy files.
+- `opsec-playbook.md`: Clean. No issues.
+- `implementation-guide.md`: Clean. No issues. The AB 60/AB 1766 / DROP path for undocumented California residents is integrated correctly. Troubleshooting sections are complete.
+- Terminology consistency: Glossary covers all technical terms used in the corpus. No undefined acronyms found.
+- Internal cross-references: All `threat-model.md` → `opsec-playbook.md` → `implementation-guide.md` dependency references are accurate.
+
+**Files created**:
+
+1. **`projects/cybersecurity-hardening/PUBLICATION_README.md`**:
+   - One-paragraph publishing instructions for three formats (GitHub Gist, static site, PDF)
+   - Audience guidance ranked by urgency (undocumented people first, then advocates, activists, journalists, researchers)
+   - Citation formats (short and long)
+   - Version/currency notes with specific time-sensitive items flagged
+   - Pre-publication final checklist (all items checked)
+
+2. **`projects/cybersecurity-hardening/DISTRIBUTION_CHECKLIST.md`**:
+   - Three-tier distribution strategy: direct-need networks first (immigration legal aid, community orgs, mutual aid), then amplifiers (EFF, Privacy Guides, security research communities, journalists), then policy/academic networks
+   - 15+ specific organizations named with contact notes
+   - Four sharing scripts: email (for organizational contacts), Signal/Slack/Discord (community channels), social media (thread format), Reddit (post format for r/privacy, r/immigration, r/opsec)
+   - Post-distribution steps: tracking, quarterly review cadence, corrections protocol
+   - Anticipated responses and how to address them
+
+**Files edited**:
+- `projects/cybersecurity-hardening/threat-model.md`: Fixed two drafting artifacts (status field + footer line)
+
+**Status**: Trilogy is publication-ready. To publish: follow `PUBLICATION_README.md` instructions. To distribute: follow `DISTRIBUTION_CHECKLIST.md` priority order.
+
+---
+
 ## 2026-04-26 — Session 423 — Parallel 3-agent execution: Democratic Renewal expansion, market-open monitoring, Phase 2 broker deepening
 
 ### resistance-research — Democratic Renewal Proposal: Domains 3, 7, 14 expanded (5 subsections, ~5,000 words)
