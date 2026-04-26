@@ -158,7 +158,7 @@ def main() -> None:
         elif threshold == 90:
             msg = (f"{emoji} **[Usage] 90% — THROTTLE ACTIVE**\n"
                    f"Sonnet: **{sonnet_pct:.1f}%** | All-models: {all_pct:.1f}%\n"
-                   f"Reset in {hours_left:.0f}h. Override revoked — sessions blocked.")
+                   f"Reset in {hours_left:.0f}h. Sessions blocked (override still active if set).")
         elif threshold == 100:
             msg = (f"⛔ **[Usage] Weekly limit reached**\n"
                    f"All sessions blocked until Tuesday reset.")
@@ -173,13 +173,6 @@ def main() -> None:
 
     # ── Manage 80% pause gate ─────────────────────────────────────────────────
     override_active = OVERRIDE_FILE.exists()
-
-    if effective_pct >= 90 and override_active:
-        # Override cannot bypass 90%
-        OVERRIDE_FILE.unlink(missing_ok=True)
-        override_active = False
-        discord("🔴 **[Usage] Override revoked** — past 90%, override cannot bypass throttle.")
-        log("Override revoked at 90%.")
 
     if effective_pct >= 80 and not override_active:
         if not PAUSE_FILE.exists():
