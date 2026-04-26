@@ -4,71 +4,76 @@
 
 ---
 
-## Current Session (Session 489 — 2026-04-26 Late Night — Phase 4 Complete + Strategy Optimization Complete)
+## Current Session (Session 490 — 2026-04-26 Evening — Resistance-Research Phase 5 Implementation Architecture COMPLETE)
 
-**Status**: Parallel 2-agent execution (resistance-research + stockbot). Both agents completed major deliverables independently. **Phase 4 theory of change COMPLETE** (all 4 documents written, committed). **Stockbot strategy optimization COMPLETE** (cleanup, validation, readiness). Democratic renewal proposal now contains full actionable pathway. Live trading infrastructure ready for 3-month validation window.
+**Status**: Autonomous orchestrator execution (single focus: resistance-research Phase 5). **Phase 5 implementation strategy COMPLETE** (all 4 documents written and committed). Democratic renewal proposal now contains full pathway: diagnosis (22 domains) → alternative vision → theory of change → implementation architecture. Ready for integration into main proposal document and distribution.
 
-**Work Completed** (Parallel 2-Agent Execution):
+**Work Completed** (Orchestrator Single Focus):
 
-- ✅ **Usage**: NOMINAL (verified via token budget tracking, 45.8% Sonnet, 2.7M tokens remaining before 80% threshold)
+- ✅ **Resistance-Research: Phase 5 Implementation Architecture COMPLETE** (commit 8756b4b)
+  1. **`implementation-roadmap.md`** (5,000 words) — Three-wave recovery sequencing with institutional assignment
+     - Wave 1 (0-18mo): Restore guardrails — courts, elections, civil service, press freedom. Success criterion: elections reflect voter intent, courts contain executive, federal workforce stabilizes
+     - Wave 2 (6-36mo): Build parallel alternatives — CDFIs, cooperatives, CLTs, state policy labs, interstate compacts. Success criterion: CDFI $550B+, 20+ states with policy innovation, interstate compacts on 3+ areas
+     - Wave 3 (24-48+mo): Permanent structural reform — electoral system, campaign finance, civil service, judiciary, healthcare, education, housing, tax, labor, reparations
+     - Cross-wave dependencies: Wave 1 stability → Wave 2 confidence → Wave 3 authority
+     - Resource allocation: litigation, organizing, communications, media, funding infrastructure detailed for each wave
 
-- ✅ **Resistance-Research: Phase 4 Documents 2-4 COMPLETE** (agent a17080a47a4bbba6e)
-  1. **`power-mapping.md`** (3,500 words) — Veto players and vulnerabilities
-     - US capture is layered (Federalist Society + executive + civil service) but NOT yet fully consolidated — recovery window is still open
-     - Institutional veto points: federal judiciary (split, 350/362 rule-of-law wins), AG coalitions (71 suits, 40 wins), civil service (incomplete), military (norms intact), intelligence (partially captured)
-     - Dark money architecture: Koch/DonorsTrust/SPN/Federalist Society ($195M/year to 300+ orgs), Leonard Leo undisclosed SCOTUS gifts
-     - Identified vulnerabilities: Roberts independence signals, business elite fracture on tariffs, AG legal record
-  2. **`parallel-institutions.md`** (3,500 words) — Alternative institutional infrastructure at scale
-     - US already has substantial parallel infrastructure but fragmented: Champlain Housing (18% Burlington, largest CLT), CDFI ($446B, 18.3M members), coops (900-1000, $806M), mutual aid networks, state policy infrastructure
-     - Mondragon (70K workers under Franco) shows democratic governance can scale
-     - Three-layer blueprint: defend existing, scale existing, create new (interstate compacts, cooperative finance, state coordination)
-  3. **`elite-capture-case-study.md`** (3,000 words) — Accountability failure mechanisms
-     - Epstein case as technical manual for manufacturing elite impunity (five mechanisms: prosecutorial discretion, unnamed co-conspirator immunity, settlement gag clauses, judicial deference, revolving door)
-     - 2024-2026 updates: Maxwell convicted, 3.5M pages released (200K redacted), FARA gaps
-     - Pattern generalization: corporate prosecution at 30-year low, large multinationals get DPAs at higher rates
-     - Accountability reform framed as constitutive of democratic recovery
-  4. All documents committed to master with full citations
+  2. **`timeline-and-conditions.md`** (4,500 words) — Triggers and success metrics for recovery pathway
+     - **Scenario A (House flips)**: Compressed 36-month recovery (Wave 1: 6-8mo, Wave 2: 6-18mo, Wave 3: 12-24mo)
+     - **Scenario B (tight House)**: Extended 48-60 month recovery; states become primary drivers
+     - **Scenario C (federal collapse)**: 60-120 month contingency; states govern autonomously
+     - Month-by-month milestones for each scenario: immediate actions, wave completion indicators, sustainability verification
+     - Contingency triggers (court defeats, Congress loses power, institutions fail) mapped with contingency pathways
 
-- ✅ **Stockbot: Strategy Optimization COMPLETE** (agent a38c427b9c32e004c)
-  1. **Task 1: Strategy Cleanup** (commit ac6d574)
-     - Removed SMA_50_200 and SMA_10_50 from strategy catalogue (structural failure: 0-2 trades/252 days, need ≥100)
-     - Updated strategy inventory: 8 total (1 benchmark, 4 ensemble, 1 options, 1 crypto, 1 MTF)
-     - 52 strategy evaluation tests pass, 0 regressions
-  2. **Task 2: Paper Trading Validation Setup** (commit f86abd7)
-     - Created `scripts/paper_trading_monitor.py` (20 unit tests, JSON logging)
-     - 3-month graduation criteria defined: Gates 1+2+3 all pass for 3 consecutive months
-     - Gate 1: ≥30 trades/month; Gate 2: Sharpe ≥1.0, MDD ≤20%, profit factor ≥1.5; Gate 3: ≥63 days
-     - Paper trading started 2026-04-26: 9 trade legs, 1 AAPL_h10_lgbm_ho (BUY 36 @$271.04)
-  3. **Task 3: Live Trading Readiness Checklist** (commit a1af9e0)
-     - Created `docs/live-trading-readiness.md` (7 sections: gates, Alpaca setup, guardrails, risk mgmt, monitoring, emergency exit, checklist)
-     - User-facing with specific guidance (e.g., AAPL @~$170 = 34% of $500 account)
-  4. All 115 tests passing, 0 regressions, 3 commits
+  3. **`movement-coordination.md`** (4,000 words) — Elite defection cascade and mass organization architecture
+     - Elite defection targets: federal judges (350+ court wins provide leverage), state AGs (25+ already coordinating), civil service (institutional interest in rule of law), federal law enforcement (professional commitment)
+     - Defection support mechanisms: judge alliance reinforcement, state AG coalition formalization, legal defense funds, whistleblower protection
+     - Civil society coalition: 15-20 constituencies (labor, environmental, civil rights, faith, professional, student) with 7-8 issue working groups
+     - Conflict resolution: resource allocation via sequencing, tactical disagreement via parallel work, demand disagreement via principle/policy distinction
+     - Coalition sustainability: ongoing governance structure, diversified funding, demonstrated success, mission expansion beyond crisis
+     - Defection timeline Month 0-18: initial → expansion → consolidation → lock-in
 
-**Tokens Used**: 201,977 total (80,633 resistance-research + 121,344 stockbot)
+  4. **`risk-assessment.md`** (4,500 words) — Derailment vectors and $400-600M mitigation strategy
+     - 11 major risks with probability and mitigation:
+       - **High risk**: protest suppression (30-40%), strategic fatigue (60-70%), election interference (25-35%), funding cuts (40-50%)
+       - **Medium risk**: court escalation (10-30%), Congress loses power (40-50%), violent fringe escalation (50-60%), elite defection fails (20-30%), authoritarian escalation (20-30%)
+       - **Lower risk**: international interference (<5%)
+     - Mitigation strategies for each: legal defense, training, operational security, contingency infrastructure, funding diversification
+     - 5-year investment: $80-120M/year ($400-600M total) for full mitigation capacity
+     - Cost context: single presidential campaign ($500M), Democratic party 2024 ($2.5B+) — mitigation capacity exists
+
+**Confidence Assessment**: 0.95 (95%)
+- ✅ No duplicates (Phase 5 never attempted before)
+- ✅ Architecture compliance (follows Phase 3-4 template, markdown research format)
+- ✅ Official documentation verified (Phase 4 docs present, comparative case studies cited, movement archive referenced)
+- ✅ Working implementations (Poland 2023, Brazil 2022, South Africa transition, Hungary failure case)
+- ✅ Root cause clear (Phase 5 scope explicitly defined in PROJECTS.md)
+
+**Tokens Used**: ~45,000 (confidence check + Phase 5 synthesis)
 
 **In Progress**:
 
-1. **Resistance-research**: Phase 4 COMPLETE. Phase 5 scope planning (implementation roadmap, timeline, movement coordination).
-2. **Stockbot**: Paper trading monitoring daily. AAPL_h10_lgbm_ho validation in progress (target: 3-month track record for Gates 1-3).
+1. **Resistance-research**: Phase 5 COMPLETE. Next: integration into main proposal document (Part III Theory of Change, Part IV Implementation Architecture) and distribution execution.
+2. **Stockbot**: Paper trading monitoring daily. AAPL_h10_lgbm_ho validation in progress (target: 3-month track record by 2026-07-26).
 3. **Seedwarden Track A**: Awaiting user tag corrections + Etsy account verification. Track B (native plants guide) rebuild complete.
 4. **open-repo**: PR #1 awaiting maintainer review/merge. Phase 5 (offline export/Kiwix) ready to start after merge.
 
 **Needs Your Input**:
 
-1. **Resistance-research distribution** (HIGH): Execute Substack/Reddit/institutional outreach using templates in projects/resistance-research/distribution-*.md. Estimated time: 2–3 hours. Phase 4 complete, proposal now actionable.
-2. **Stockbot paper trading monitoring** (ongoing, daily): Run `scripts/paper_trading_monitor.py` daily → logs to `logs/paper_trading_daily.jsonl`. Monthly checkpoints: 2026-05-26, 2026-06-26, 2026-07-26. All three gates must pass for 3 consecutive months before live trading.
-3. **Seedwarden Track A** (if proceeding with Phase 1 upload): Complete 3 manual tag corrections + Etsy account verification per UPLOAD_READY_CHECKLIST.md.
-4. **off-grid-living social media** (MEDIUM): Execute social media distribution (Reddit, X/Twitter, email) using posts in projects/off-grid-living/social-media-launch-posts.md.
-5. **cybersecurity-hardening Tier 1 distribution** (user execution when ready): TIER1_DISTRIBUTION_PREP.md has all templates + checklist. Ready to send.
+1. **Resistance-research distribution** (HIGH): Execute Substack/Reddit/institutional outreach using templates in projects/resistance-research/distribution-*.md. Estimated time: 2–3 hours. Phase 4+5 complete, proposal now fully actionable with implementation architecture.
+2. **Stockbot paper trading** (ongoing): Monitor daily. Monthly checkpoints: 2026-05-26, 2026-06-26, 2026-07-26. Need 3 consecutive months of Gates 1+2+3 passing for live trading.
+3. **Seedwarden Phase 1** (if proceeding): Complete 3 tag corrections + Etsy account verification per UPLOAD_READY_CHECKLIST.md.
+4. **off-grid-living social media** (MEDIUM): Execute distribution per social-media-launch-posts.md (Reddit, X/Twitter, email).
+5. **cybersecurity-hardening Tier 1** (user execution): Ready to send — TIER1_DISTRIBUTION_PREP.md has all templates and checklist.
 
 **Suggested Priorities for Next Session**:
 
-1. **Cybersecurity-hardening**: device-hardening-guide.md (exploratory, 3K words) — practical guidance on GrapheneOS/CalyxOS, aeroplane mode, location brokers, SIM swapping
-2. **Stockbot**: Monitor paper trading daily, assess progress toward Gate 1 (30 trades/month by 2026-05-26)
-3. **open-repo**: After PR #1 merges, begin Phase 5 (offline export/Kiwix integration)
-4. **Resistance-research Phase 5**: Implementation roadmap, timeline, movement coordination (once Phase 4 distribution begins)
+1. **Resistance-research Phase 5 integration** (HIGH): Integrate Phase 5 documents into democratic-renewal-proposal.md as Part III (Theory of Change) and Part IV (Implementation Architecture). ~3-4 hours work.
+2. **Exploration Queue**: device-hardening-guide.md or nutrition-tracking companion.md (if no higher-priority work available).
+3. **Stockbot**: Continue paper trading monitoring. Update PROJECTS.md with monthly Gate progress.
+4. **open-repo**: PR #1 merge or continue Phase 5 if merge doesn't happen.
 
-**Usage**: Sonnet 45.8% (201,977 tokens this session) | Reset in ~27h | All systems green | 2.7M tokens before 80% threshold
+**Usage**: Estimated 46% Sonnet total (45K this session + 201,977 prior) | Reset in ~25h | All systems green
 
 ---
 
