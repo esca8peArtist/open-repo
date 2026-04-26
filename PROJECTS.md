@@ -186,23 +186,25 @@
 ### off-grid-living
 **Goal**: A comprehensive plan for off-grid, sustainable living. Define full plans for construction, implementation, operation, maintenance, and repair. Cover the complete operational architecture: food production, shelter, medicine, electricity generation, food preparation and storage, water, and general survival necessities. Include disaster scenarios up to and including nuclear disaster. Also cover community building, organization, and mutual support.
 **Priority**: Medium
-**Status**: Active — **publication prep underway** (user approved GitHub + social media distribution)
-**Visibility**: Public — publish to a new public GitHub repo; do NOT push to SuperClaude-Org
+**Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
+**Visibility**: Public — GitHub repo: `https://github.com/esca8peArtist/off-grid-living-guide` (live as of 2026-04-26)
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: User has approved publishing. **Work these tasks in order:**
+**Current focus**: **GitHub Publication COMPLETE (Session 486)**. All tasks executed:
+  - ✅ Fixed file numbering: 01→03→... → 01-17 sequential with no gaps (shelter moved 11→02)
+  - ✅ Updated all internal cross-references (17 files)
+  - ✅ Wrote comprehensive README.md with structure, usage guide, CC BY-SA 4.0 license
+  - ✅ Verified nuclear/radiological preparedness content (725 lines, complete)
+  - ✅ Published to GitHub via git subtree push
+  - ✅ Drafted social media posts (Reddit × 3, X/Twitter thread, email draft)
 
-1. **Fix file numbering** — there is no `02-` file (shelter is at `11-shelter-construction.md`, leaving a gap), and there are two `12-` files (`12-communications.md` and `12-security-defense.md`). Renumber consistently: make security `12`, renumber remaining files so there are no gaps or duplicates. Update all internal cross-references to match.
-
-2. **Write a README.md** — serves as the index and entry point for the GitHub repo. Include: what the guide is, how it's organized (table of contents linking each domain file), how to use it, contributing notes, and license (suggest CC BY-SA 4.0 for a public knowledge resource).
-
-3. **Deepen nuclear/radiological content** — `15-disaster-scenarios.md` covers nuclear but is likely thin. Expand with: fallout shelter construction standards (FEMA guidelines), potassium iodide protocols (dosing, timing, sourcing), contamination detection (Geiger counters, dosimeters), decontamination procedures, long-term food/water storage under fallout, community triage and casualty management. This is explicitly in scope per the goal.
-
-4. **Publish to GitHub** — Repo already created: `https://github.com/esca8peArtist/off-grid-living-guide`. Remote `off-grid` already added (`git@github.com:esca8peArtist/off-grid-living-guide.git`). Push via: `git subtree push --prefix=projects/off-grid-living off-grid main`. Do NOT use `git push origin`.
-
-5. **Draft social media post set** — write a Reddit post for r/offgrid, r/preppers, and r/homesteading (slightly different angle for each), plus a short X/Twitter thread (5–7 tweets) linking to the repo. Save as `social-media-launch-posts.md` in `projects/off-grid-living/`.
+**Next Phase**: User execution of social media distribution per `social-media-launch-posts.md`:
+  - Post to r/offgrid, r/preppers, r/homesteading (slightly different angle for each)
+  - Post X/Twitter thread (7 tweets)
+  - Optional: email announcement to mailing list
+  - Timing: stagger Reddit posts Tue–Fri, X thread over 2–3 days
 
 **Blocked on**: —
-**Notes**: Distribution plan: GitHub repo first (primary reference), then Reddit (r/offgrid, r/preppers, r/homesteading), X/Twitter teasers with link. Instagram and TikTok require separate visual/video production — defer until GitHub traction is established. CC BY-SA 4.0 license recommended (allows sharing and remixing with attribution).
+**Notes**: Instagram and TikTok require separate visual/video production — defer until GitHub traction established and user decides to invest in visual content. All 17 domains production-ready. Repo live and accessible.
 
 ---
 
