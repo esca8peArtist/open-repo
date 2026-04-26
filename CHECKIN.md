@@ -4,7 +4,30 @@
 
 ---
 
-## Since Last Check-in (Session 425 — 2026-04-26 afternoon)
+## Since Last Check-in (Session 426 — 2026-04-26 afternoon/evening)
+
+**Completed**:
+
+1. **open-repo**: **Phase 4 Design Specification COMPLETE** (`PHASE_4_DESIGN.md`, 550 lines). Architecture fully defined: ActivityPub protocol (W3C spec), HTTP signature verification (RFC 8017), multi-node federation, conflict resolution (versioning + last-write-wins), DID:WEB integration (optional), federation registry (optional). Implementation roadmap clear: 5 waves across 3–4 months (400–500 story points). Wave 1 (ActivityPub endpoints + signatures), Wave 2 (federation bootstrap), Wave 3 (endorsement sync), Wave 4 (conflict resolution), Wave 5 (deployment + e2e testing on two nodes). Success criteria explicit: two nodes federating, content syncing, endorsements aggregating, ≥95% test coverage, full documentation. Resolves prior discrepancy (CHECKIN.md note said "Phase 4 = UI/forms" — architecture reveals Phase 4 is Federation, the architectural proof). Commit: `fbb3806`. **Next**: Phase 4 Wave 1 implementation when user prioritizes.
+
+**In Progress**:
+- **stockbot**: Paper trading LIVE on dev + Jetson (both healthy). Monday 2026-04-28 14:30 UTC market open checklist ready. Dashboard API operational, monitoring-dashboard.py ready. Zero action items — ready to monitor.
+- **resistance-research**: May Day guide published, all monitoring templates ready. Monday 2026-04-28 17:00 UTC Xinis hearing data capture begins. Pre-capture checklist (5 items) prepared for Monday 14:00 UTC. Ready to capture data.
+
+**Needs Your Input**:
+- **cybersecurity-hardening**: Publication signal needed (trilogy ready: threat-model.md + opsec-playbook.md + implementation-guide.md). Can publish immediately or hold pending optional additions (Spanish summary, Tier B/C brokers). Decision deferred to user.
+- **mfg-farm**: Test print required (physical action) before launch prep continues.
+- **seedwarden**: Mockup images needed for all Etsy listings (Canva/mockup generator work — 20 products in Tier 1 + Tier 2). This is the #1 conversion factor for digital products on Etsy. Audit complete; content ready; mockup images are the blocker.
+
+**Monday (2026-04-28) — Critical Dates**:
+- **14:30 UTC (9:30 AM EST)**: Stockbot market open. Run monitoring-dashboard.py. P&L data capture begins automatically.
+- **17:00 UTC (1:00 PM EST)**: Resistance-research Xinis hearing closing arguments. Data capture begins at this time.
+
+**Usage**: Nominal (< 20% estimated). Next reset: Tuesday 2026-04-30 00:00 UTC.
+
+---
+
+## Session 425 Checkpoint (2026-04-26 afternoon)
 
 **Completed** (parallel 2-agent work: open-repo Phase 3 routes + off-grid-living quality review):
 
