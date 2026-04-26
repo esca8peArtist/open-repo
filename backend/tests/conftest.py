@@ -5,6 +5,7 @@ import pytest
 import httpx
 from httpx import AsyncClient
 from unittest.mock import AsyncMock, MagicMock, patch
+from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine, async_sessionmaker
 
 
 @pytest.fixture
@@ -30,6 +31,35 @@ async def client():
 
     app.dependency_overrides.clear()
     reset_search_service()
+
+
+@pytest.fixture
+async def test_db():
+    """Create test database session using PostgreSQL for testing."""
+    # Use test database if available, otherwise use main database
+    db_url = os.getenv("TEST_DATABASE_URL", "postgresql+asyncpg://postgres:postgres@localhost:5432/open_repo")
+
+    try:
+        from app.models import Base
+
+        engine = create_async_engine(db_url, echo=False)
+
+        # Create tables
+        async with engine.begin() as conn:
+            await conn.run_sync(Base.metadata.create_all)
+
+        AsyncSessionLocal = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
+
+        async with AsyncSessionLocal() as session:
+            yield session
+
+        # Cleanup: drop tables after test
+        async with engine.begin() as conn:
+            await conn.run_sync(Base.metadata.drop_all)
+
+        await engine.dispose()
+    except Exception as e:
+        pytest.skip(f"Could not connect to test database: {e}")
 
 
 @pytest.fixture

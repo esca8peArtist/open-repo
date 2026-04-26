@@ -5,12 +5,19 @@ When a user votes on an item, an Announce activity is generated and sent to
 all federation partners. Vote counts aggregate locally + remotely.
 """
 
+import json
+import uuid
+import httpx
+import logging
 from datetime import datetime
 from typing import Optional, Dict, Tuple, Any, List
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, func
+from sqlalchemy import select, func, and_
 
 from app.models import Activity, ActivityType, Endorsement, EndorsementType
+from app.http_signatures import HTTPSignatureUtils
+
+logger = logging.getLogger(__name__)
 
 
 class EndorsementPropagationService:
@@ -37,19 +44,63 @@ class EndorsementPropagationService:
 
         Returns:
             Activity object with Announce type
-
-        TODO: Implementation steps:
-        1. Get current vote stats for item (local upvotes/downvotes)
-        2. Build Announce JSON-LD:
-           - type: "Announce"
-           - actor: {node_url}/actor
-           - object: {node_url}/items/{item_cid}
-           - content: {item_cid, vote_type, user_id, local_counts}
-        3. Create Activity record with activity_type=Announce, local=1
-        4. Store in database
-        5. Return Activity object
         """
-        raise NotImplementedError("Wave 3 implementation pending")
+        # Step 1: Get current vote stats for item
+        upvote_result = await db.execute(
+            select(func.count(Endorsement.id)).where(
+                (Endorsement.item_cid == item_cid)
+                & (Endorsement.endorsement_type == EndorsementType.UPVOTE)
+            )
+        )
+        local_upvote_count = upvote_result.scalar() or 0
+
+        downvote_result = await db.execute(
+            select(func.count(Endorsement.id)).where(
+                (Endorsement.item_cid == item_cid)
+                & (Endorsement.endorsement_type == EndorsementType.DOWNVOTE)
+            )
+        )
+        local_downvote_count = downvote_result.scalar() or 0
+
+        # Step 2: Build Announce JSON-LD
+        activity_id = f"{node_url}/activities/announce-{uuid.uuid4()}"
+        timestamp = datetime.utcnow().isoformat() + "Z"
+
+        announce_data = {
+            "@context": "https://www.w3.org/ns/activitystreams",
+            "id": activity_id,
+            "type": "Announce",
+            "actor": f"{node_url}/actor",
+            "object": f"{node_url}/items/{item_cid}",
+            "published": timestamp,
+            "content": {
+                "item_cid": item_cid,
+                "vote_type": endorsement_type,
+                "user_id": user_id,
+                "source_node": node_url,
+                "local_upvote_count": local_upvote_count,
+                "local_downvote_count": local_downvote_count,
+                "timestamp": timestamp,
+            }
+        }
+
+        # Step 3: Create Activity record with activity_type=Announce, local=1
+        activity = Activity(
+            activity_type=ActivityType.ANNOUNCE,
+            activity_id=activity_id,
+            actor_url=f"{node_url}/actor",
+            object_id=f"{node_url}/items/{item_cid}",
+            activity_data=announce_data,
+            local=1,  # Generated locally
+            published=datetime.utcnow(),
+        )
+
+        # Step 4: Store in database
+        db.add(activity)
+        await db.commit()
+        await db.refresh(activity)
+
+        return activity
 
     @staticmethod
     async def send_announce_to_federation_partners(
@@ -66,17 +117,19 @@ class EndorsementPropagationService:
 
         Returns:
             Dict mapping partner_url to (success: bool, error_msg: optional)
-
-        TODO: Implementation steps:
-        1. Query federation_partners table
-        2. For each partner:
-           a. Create HTTP Signature header (RFC 8017)
-           b. POST activity.activity_data to partner.inbox_url
-           c. Collect result (success/error)
-        3. Return aggregated results
-        4. Log failures but don't fail the operation
         """
-        raise NotImplementedError("Wave 3 implementation pending")
+        results = {}
+
+        # For now, return empty results - federation_partners table not yet implemented
+        # When implemented, this will:
+        # 1. Query federation_partners table
+        # 2. For each partner, create HTTP signature and POST to inbox_url
+        # 3. Collect results and log failures
+        #
+        # This is a fire-and-forget operation - don't fail local vote if delivery fails
+
+        logger.info(f"Announce activity {activity.activity_id} ready for federation (no partners configured yet)")
+        return results
 
     @staticmethod
     async def ingest_announce_activity(
@@ -94,17 +147,40 @@ class EndorsementPropagationService:
 
         Returns:
             True if successfully ingested, False on error
-
-        TODO: Implementation steps:
-        1. Validate activity has required fields:
-           - activity.activity_type == "Announce"
-           - activity.activity_data["content"]["item_cid"]
-           - activity.actor_url
-        2. Store activity with local=0 (mark as remote)
-        3. Commit to database
-        4. Return True
         """
-        raise NotImplementedError("Wave 3 implementation pending")
+        try:
+            # Step 1: Validate activity has required fields
+            if activity.activity_type != ActivityType.ANNOUNCE:
+                logger.warning(f"Invalid activity type for ingest_announce: {activity.activity_type}")
+                return False
+
+            if not activity.activity_data:
+                logger.warning("Activity data missing")
+                return False
+
+            content = activity.activity_data.get("content", {})
+            if not content.get("item_cid"):
+                logger.warning("Missing item_cid in Announce activity")
+                return False
+
+            if not activity.actor_url:
+                logger.warning("Missing actor_url in Announce activity")
+                return False
+
+            # Step 2: Mark as remote and store
+            activity.local = 0
+
+            # Step 3: Store in database
+            db.add(activity)
+            await db.commit()
+            await db.refresh(activity)
+
+            logger.info(f"Ingested Announce activity {activity.activity_id} from {activity.actor_url}")
+            return True
+
+        except Exception as e:
+            logger.error(f"Failed to ingest Announce activity: {e}")
+            return False
 
     @staticmethod
     async def generate_undo_activity(
@@ -125,18 +201,48 @@ class EndorsementPropagationService:
 
         Returns:
             Activity object with Undo type
-
-        TODO: Implementation steps:
-        1. Fetch the original Announce activity by ID
-        2. Build Undo JSON-LD:
-           - type: "Undo"
-           - actor: {node_url}/actor
-           - object: {announce_activity_id}
-        3. Create Activity record with activity_type=Undo, local=1
-        4. Store in database
-        5. Return Activity object
         """
-        raise NotImplementedError("Wave 3 implementation pending")
+        # Step 1: Fetch the original Announce activity by ID
+        result = await db.execute(
+            select(Activity).where(Activity.activity_id == announce_activity_id)
+        )
+        original_announce = result.scalar_one_or_none()
+
+        if not original_announce:
+            logger.warning(f"Original Announce activity not found: {announce_activity_id}")
+            raise ValueError(f"Original Announce activity not found: {announce_activity_id}")
+
+        # Step 2: Build Undo JSON-LD
+        undo_id = f"{node_url}/activities/undo-{uuid.uuid4()}"
+        timestamp = datetime.utcnow().isoformat() + "Z"
+
+        undo_data = {
+            "@context": "https://www.w3.org/ns/activitystreams",
+            "id": undo_id,
+            "type": "Undo",
+            "actor": f"{node_url}/actor",
+            "object": announce_activity_id,
+            "published": timestamp,
+        }
+
+        # Step 3: Create Activity record with activity_type=Undo, local=1
+        activity = Activity(
+            activity_type=ActivityType.UNDO,
+            activity_id=undo_id,
+            actor_url=f"{node_url}/actor",
+            object_id=announce_activity_id,
+            activity_data=undo_data,
+            local=1,  # Generated locally
+            published=datetime.utcnow(),
+        )
+
+        # Step 4: Store in database
+        db.add(activity)
+        await db.commit()
+        await db.refresh(activity)
+
+        logger.info(f"Generated Undo activity {undo_id} for {announce_activity_id}")
+        return activity
 
     @staticmethod
     async def ingest_undo_activity(
@@ -151,17 +257,46 @@ class EndorsementPropagationService:
 
         Returns:
             True if successfully ingested, False on error
-
-        TODO: Implementation steps:
-        1. Validate activity has required fields:
-           - activity.activity_type == "Undo"
-           - activity.activity_data["object"] (ID of original Announce)
-        2. Find the original Announce activity by ID
-        3. Store Undo activity with local=0
-        4. Mark or link Undo to original Announce (for aggregation logic)
-        5. Return True
         """
-        raise NotImplementedError("Wave 3 implementation pending")
+        try:
+            # Step 1: Validate activity has required fields
+            if activity.activity_type != ActivityType.UNDO:
+                logger.warning(f"Invalid activity type for ingest_undo: {activity.activity_type}")
+                return False
+
+            if not activity.activity_data:
+                logger.warning("Activity data missing for Undo")
+                return False
+
+            original_announce_id = activity.activity_data.get("object")
+            if not original_announce_id:
+                logger.warning("Missing object (original Announce ID) in Undo activity")
+                return False
+
+            # Step 2: Find the original Announce activity by ID
+            result = await db.execute(
+                select(Activity).where(Activity.activity_id == original_announce_id)
+            )
+            original_announce = result.scalar_one_or_none()
+
+            if not original_announce:
+                # Original not found - log but still ingest the Undo for audit trail
+                logger.warning(f"Original Announce activity not found for Undo: {original_announce_id}")
+
+            # Step 3: Mark as remote and store Undo activity with local=0
+            activity.local = 0
+
+            # Step 4: Store in database
+            db.add(activity)
+            await db.commit()
+            await db.refresh(activity)
+
+            logger.info(f"Ingested Undo activity {activity.activity_id} from {activity.actor_url}")
+            return True
+
+        except Exception as e:
+            logger.error(f"Failed to ingest Undo activity: {e}")
+            return False
 
     @staticmethod
     async def get_aggregated_vote_count(
@@ -189,21 +324,68 @@ class EndorsementPropagationService:
                     "https://node-b.example.com": 7
                 }
             }
-
-        TODO: Implementation steps:
-        1. Count local votes:
-           SELECT COUNT(*) FROM endorsements
-           WHERE item_cid = ? AND endorsement_type = ?
-        2. Count remote votes:
-           SELECT COUNT(*) FROM activities
-           WHERE object_id = ? AND activity_type = "Announce"
-           AND activity_data->>"content.vote_type" = ?
-           AND local = 0
-           AND object_id NOT IN (SELECT object_id FROM activities WHERE type = "Undo")
-        3. Group remote votes by source_node (from activity_data["content"]["source_node"])
-        4. Return aggregated dict
         """
-        raise NotImplementedError("Wave 3 implementation pending")
+        # Step 1: Count local votes
+        local_result = await db.execute(
+            select(func.count(Endorsement.id)).where(
+                (Endorsement.item_cid == item_cid)
+                & (Endorsement.endorsement_type == EndorsementType(endorsement_type))
+            )
+        )
+        local_count = local_result.scalar() or 0
+
+        # Step 2: Get all remote Announce activities for this item
+        # (excluding those that have been undone)
+        remote_result = await db.execute(
+            select(Activity).where(
+                (Activity.activity_type == ActivityType.ANNOUNCE)
+                & (Activity.object_id.contains(item_cid))  # Simple match for item reference
+                & (Activity.local == 0)  # Remote activities only
+            )
+        )
+        announce_activities = remote_result.scalars().all()
+
+        # Get all Undo activity IDs to exclude their targets
+        undo_result = await db.execute(
+            select(Activity.object_id).where(
+                Activity.activity_type == ActivityType.UNDO
+            )
+        )
+        undo_ids = set(r[0] for r in undo_result.all() if r[0])
+
+        # Step 3: Filter Announces by vote type and count by source_node
+        breakdown = {}
+        remote_count = 0
+
+        for activity in announce_activities:
+            # Skip if this announce has been undone
+            if activity.activity_id in undo_ids:
+                continue
+
+            content = activity.activity_data.get("content", {})
+
+            # Check if this is the right vote type
+            vote_type = content.get("vote_type", "")
+            if vote_type != endorsement_type:
+                continue
+
+            # Check if item_cid matches
+            activity_item_cid = content.get("item_cid", "")
+            if activity_item_cid != item_cid:
+                continue
+
+            source_node = content.get("source_node", "unknown")
+            breakdown[source_node] = breakdown.get(source_node, 0) + 1
+            remote_count += 1
+
+        # Step 4: Return aggregated dict
+        total = local_count + remote_count
+        return {
+            "local": local_count,
+            "remote": remote_count,
+            "total": total,
+            "breakdown": breakdown,
+        }
 
     @staticmethod
     async def get_all_vote_stats(
@@ -224,4 +406,22 @@ class EndorsementPropagationService:
                 "score": X - Y  # upvotes - downvotes
             }
         """
-        raise NotImplementedError("Wave 3 implementation pending")
+        upvote_stats = await EndorsementPropagationService.get_aggregated_vote_count(
+            db, item_cid, "upvote"
+        )
+        downvote_stats = await EndorsementPropagationService.get_aggregated_vote_count(
+            db, item_cid, "downvote"
+        )
+        flag_stats = await EndorsementPropagationService.get_aggregated_vote_count(
+            db, item_cid, "flag"
+        )
+
+        # Calculate score: upvotes - downvotes
+        score = upvote_stats["total"] - downvote_stats["total"]
+
+        return {
+            "upvote_count": upvote_stats,
+            "downvote_count": downvote_stats,
+            "flag_count": flag_stats,
+            "score": score,
+        }
