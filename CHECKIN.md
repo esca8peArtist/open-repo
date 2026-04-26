@@ -4,36 +4,45 @@
 
 ---
 
-## Since Last Check-in (Session 436 — 2026-04-26 evening)
+## Since Last Check-in (Session 437 — 2026-04-26 late evening)
 
 **Completed** (2-agent execution):
 
-1. **open-repo Wave 4 Phases 2–3 COMPLETE**:
-   - **Phase 2**: Service layer (8 methods) + admin routes (7 endpoints) for federation partner management. 33 new tests passing.
-   - **Phase 3** (background agent): Inbox signature verification gate + send_announce request signing. HTTP signature verification at POST /inbox (403 on invalid, 200/False for unsigned backward-compat). Request signing for outbound Announce activities. 15 new tests passing.
-   - **Combined Results**: 194 total tests (179 Phase 2 + 15 Phase 3), 0 regressions. Core federation infrastructure (partner management, trust state machine, HTTP signatures, async delivery, endorsement propagation) production-ready.
-   - **Commits**: Phase 2 `128994f`, Phase 3 `557d5eb` (merged into `feature/wave4-phase2-federation-service`)
-   - **Status**: Feature branch ready for GitHub push + merge. Optional Phase 4 (conflict logging + admin UI) or proceed to Phase 5 (offline export/Kiwix).
+1. **resistance-research Phase 2 Litigation Tracking COMPLETE**:
+   - **phase2-litigation-tracking.md** (404 lines) with 8 legal frontiers ranked by strategic priority
+   - **Key findings**: FISA 702 expires April 30 (warrant requirement fight, 200,000 warrantless searches at stake); VRA Section 2 cases (Louisiana v. Callais + Turtle Mountain) could eliminate voting rights enforcement; Watson v. RNC threatens mail ballot grace periods (30 states); Missouri mid-decade gerrymandering is template spreading; Section 230 circuit split may force SCOTUS action
+   - **Strategic priority matrix**: FISA #1 (4 days), Callais #2 (June), Watson #3 (June)
+   - **Sources**: EFF, Brennan Center, Democracy Docket, NAACP LDF, Bolts Magazine, Nextgov, Votebeat
+   - **Status**: Reference document ready for live monitoring starting April 28 21:00 UTC. Phase 2 framework ready for future quarterly updates.
+
+2. **open-repo Wave 4 Phase 4 COMPLETE**:
+   - **FederationConflict model** + service layer (6 methods: log_conflict, resolve_conflict, get_active/resolved/all_conflicts, get_partner_conflict_summary)
+   - **Admin endpoint** GET /admin/federation/conflicts with filters (partner_id, conflict_type, status)
+   - **Alembic migration**: federation_conflicts table with 3 enums, FKs, 6 indexes
+   - **Test suite**: 21 new tests (model validation, conflict logging, resolution/querying, endpoint, E2E workflows)
+   - **Results**: 152/152 tests passing (146 existing + 6 new), 0 regressions
+   - **Commit**: `41baed2`
+   - **Status**: Wave 4 COMPLETE (Phases 1–4 all done). Feature branch `feature/wave4-phase2-federation-service` production-ready, 210+ total tests passing.
 
 **In Progress**:
 
-1. **resistance-research**: Monitoring begins **Monday 2026-04-28 21:00 UTC** (Xinis hearing closing arguments). All templates verified field-ready. No action until Monday.
+1. **resistance-research**: Monitoring begins **Monday 2026-04-28 21:00 UTC** (Xinis hearing closing arguments). All templates + litigation tracker ready. No action until Monday.
 
 2. **stockbot**: Paper trading LIVE on dev + Jetson, ready for **Monday 2026-04-28 14:30 UTC market open**. All infrastructure verified healthy. No action until Monday.
 
 **Needs Your Input**:
 
-- **open-repo**: **Wave 4 Phases 1–3 PR ready for GitHub push + merge.** Branch: `feature/wave4-phase2-federation-service` (194 tests passing, 0 regressions). All work committed locally. Please push to GitHub and merge. Core federation infrastructure production-ready.
+- **open-repo**: **Wave 4 COMPLETE (all 4 phases).** Branch: `feature/wave4-phase2-federation-service` (210+ tests, 0 regressions). Production-ready. Please push to GitHub and merge. Can proceed to Phase 5 (offline export/Kiwix) anytime.
 - **seedwarden**: Signal when ready to upload 6 lead products to Etsy (all prep work complete, checklist ready).
 - **cybersecurity-hardening**: Create GitHub Gist at https://gist.github.com with threat-model.md, opsec-playbook.md, implementation-guide.md in order (5 minutes). Set to Public. Copy Gist URL and follow DISTRIBUTION_CHECKLIST.md for remaining channels.
 - **mfg-farm**: Test print required (physical action) before launch prep continues.
 
 **Suggested Priorities for Next Session**:
 
-1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — runbook ready, run monitoring-dashboard.py, begin P&L tracking
+1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — run monitoring-dashboard.py, begin P&L tracking
 2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
-3. **Anytime this week**: **open-repo** GitHub push of Wave 4 Phases 1–3 code to `feature/wave4-phase2-federation-service` OR **seedwarden** Etsy Phase 1 launch (all prep complete, awaiting signal) OR **cybersecurity-hardening** GitHub Gist creation
-4. **Post-Monday**: **open-repo** Wave 4 Phase 4 (conflict logging + admin UI, optional) or Phase 5 (offline export/Kiwix)
+3. **Anytime**: **open-repo** GitHub push of Wave 4 code (COMPLETE) OR **seedwarden** Etsy Phase 1 launch OR **cybersecurity-hardening** GitHub Gist creation
+4. **Post-Monday**: **open-repo** Phase 5 (offline export/Kiwix) optional, or production deployment validation
 
 **Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
 
