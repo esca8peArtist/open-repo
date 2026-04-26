@@ -4,6 +4,24 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — General Research Agent — Palantir Surveillance Capabilities Deep-Dive
+
+**Work Completed**:
+- Researched Palantir's technical architecture (Gotham, Foundry, AIP), confirmed government contracts, data sources, identity resolution methodology, and OpSec implications
+- Wrote `/home/awank/dev/SuperClaude_Framework/projects/cybersecurity-hardening/palantir-threat-model.md` (~350 lines)
+- Sources: FOIA disclosures, USASpending.gov, The Intercept, 404 Media, Vice, ACLU, EFF, Amnesty International, Palantir's own technical documentation, BuzzFeed News leaked training documents, Congressional records
+
+**Key Findings**:
+- Palantir is not a database but a query layer connecting 10+ pre-existing government/commercial databases simultaneously
+- ELITE's address confidence score pulls from IRS, SSA, DMV, Medicaid, utility bills, ALPR, commercial brokers in near real-time
+- IRS LCA has confirmed access to cryptocurrency wallet data from Coinbase and other exchanges
+- CBP AFI confirmed access to email, WhatsApp, Telegram, Instagram from devices searched at the border
+- DOGE cross-agency Foundry interoperability is the structural change: it removes friction from cross-database identity queries without full centralization
+- Confirmed false positive problems: LAPD algorithm engineer admitted "I don't know" when asked about false positives; 1,800–4,000 visa revocations with documented incorrect targeting
+- Signal remains the most robust confirmed capability gap
+
+---
+
 ## 2026-04-26 Evening (19:30 UTC) — Orchestrator Session 484 — Exploration Queue Work: Stockbot Model Graduation Framework
 
 **Session Context**:
