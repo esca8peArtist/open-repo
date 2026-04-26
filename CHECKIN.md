@@ -4,9 +4,15 @@
 
 ---
 
-## Since Last Check-in (Session 429 — 2026-04-26 morning)
+## Since Last Check-in (Session 430 — 2026-04-26 evening)
 
 **Completed**:
+
+1. **open-repo**: **Phase 4 Wave 3 Planning COMPLETE**. Comprehensive design of Endorsement/Announce propagation (federated vote aggregation). Artifacts: WAVE_3_PLAN.md (26 KB, architecture + routes + 17 test scenarios), test_wave3_endorsement_propagation.py (13 KB, full test scaffolding, 17 async tests), endorsement_propagation_service.py (service stub with 7 methods + TODOs), WAVE_3_IMPLEMENTATION_GUIDE.md (quick reference). **Key design**: Minimal schema changes (reuse existing Endorsement + Activity tables), query-time aggregation, async fire-and-forget, full backward compatibility. **Test coverage**: 17 new Wave 3 tests scaffolded, all existing 116 Phase 1-3 tests remain passing (zero regressions). **Effort**: 3-4 days, 35-50 story points. **Status**: Ready for Wave 3 Phase 1 implementation (service methods). **Commits**: Committed to master as planning artifacts; awaiting user GitHub push for Wave 1-2 code first, then Wave 3 branch.
+
+2. **seedwarden**: **PRODUCT LAUNCH BLOCKER RESOLVED**. Discovery: All 21 tablet mockups are already complete and production-ready (2400×2400 px PNG, 350–400 KB, professional tablet device frame design). MOCKUP_STRATEGY.md created (20 KB, Etsy best practices 2026, regeneration workflow, Phase 2-4 enhancement roadmap). **Phase 1 Launch Ready**: Immediately upload 6 lead products to Etsy. All content (copy, pricing, tags, PDFs, mockups) verified complete. Social media + ongoing marketing next phase. **Future enhancement** (not blocking): Phone mockups, lifestyle photography, printed pages (Phase 2-4, optional based on Phase 1 conversion data).
+
+**Previous Session Summary** (Session 429)
 
 1. **resistance-research**: **PRE-MONDAY VERIFICATION COMPLETE** (Session 429). May Day guide verified live and publicly accessible. All three monitoring templates verified field-ready with clear fill procedures (10 minutes on April 28 evening). Distribution checklist documented and ready. Data capture beginning 2026-04-28T21:00 UTC (Xinis hearing closing arguments). **Confidence: HIGH** that everything needed for monitoring window is ready.
 
@@ -14,16 +20,20 @@
 
 **In Progress**:
 - **stockbot**: Paper trading LIVE on dev + Jetson (both healthy). Monday 2026-04-28 14:30 UTC market open checklist ready. Dashboard API operational, monitoring-dashboard.py ready. Zero action items — ready to monitor.
-- **resistance-research**: May Day guide published, all monitoring templates ready. Monday 2026-04-28 17:00 UTC Xinis hearing data capture begins. Pre-capture checklist (5 items) prepared for Monday 14:00 UTC. Ready to capture data.
+- **resistance-research**: May Day guide published, all monitoring templates ready. Monday 2026-04-28 17:00 UTC Xinis hearing data capture begins (Xinis closing arguments). Pre-capture checklist (5 items) prepared for Monday 14:00 UTC. Ready to capture data.
+- **seedwarden**: Phase 1 product launch ready. Can proceed immediately with Etsy uploads this week. Social media setup next phase.
+- **open-repo**: Wave 3 planning complete. Next: Begin Phase 1 implementation (service methods, 16h effort).
 
 **Needs Your Input**:
-- **cybersecurity-hardening**: Publication signal needed (trilogy ready: threat-model.md + opsec-playbook.md + implementation-guide.md). Can publish immediately or hold pending optional additions (Spanish summary, Tier B/C brokers). Decision deferred to user.
-- **mfg-farm**: Test print required (physical action) before launch prep continues.
-- **seedwarden**: Mockup images needed for all Etsy listings (Canva/mockup generator work — 20 products in Tier 1 + Tier 2). This is the #1 conversion factor for digital products on Etsy. Audit complete; content ready; mockup images are the blocker.
+- **cybersecurity-hardening**: Publication signal needed (trilogy ready: threat-model.md + opsec-playbook.md + implementation-guide.md). Can publish immediately or hold pending optional additions (Tier B/C brokers, legal landscape). Decision needed.
+- **mfg-farm**: Test print required (physical action) before launch prep continues. All design files (STL) are ready in projects/mfg-farm/cadquery/.
+- **open-repo**: Wave 1–2 code ready to push to GitHub (awaiting user push from Pi). Wave 3 planning artifacts ready for branch after Wave 1-2 merged.
+- **seedwarden**: Etsy store launch signal (all products ready to upload).
 
 **Monday (2026-04-28) — Critical Dates**:
 - **14:30 UTC (9:30 AM EST)**: Stockbot market open. Run monitoring-dashboard.py. P&L data capture begins automatically.
 - **17:00 UTC (1:00 PM EST)**: Resistance-research Xinis hearing closing arguments. Data capture begins at this time.
+- **Optional**: Seedwarden Etsy Phase 1 product upload (anytime this week).
 
 **Usage**: Nominal (< 20% estimated). Next reset: Tuesday 2026-04-30 00:00 UTC.
 
