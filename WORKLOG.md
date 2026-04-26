@@ -4,6 +4,21 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 — cybersecurity-hardening — Tier 2 and Tier 3 Distribution Prep Complete
+
+**Files created**:
+- `projects/cybersecurity-hardening/TIER2_DISTRIBUTION_PREP.md` — Digital rights orgs (12 entries), academic cybersecurity programs (9 entries), security researcher communities (5 entries), journalist organizations (7 entries). Four email template variants, 5-step execution plan, pre-send checklist, tracking template, FAQ.
+- `projects/cybersecurity-hardening/TIER3_DISTRIBUTION_PREP.md` — Policy think tanks (12 entries), labor organizations (8 entries), academic law/policy schools (10 entries). Three email template variants, contact research methodology, 2–3 month timeline from Tier 2 completion, long-horizon success metrics.
+
+**Key findings from research**:
+- Georgetown Center on Privacy & Technology is the single highest-priority Tier 3 contact — their 2022 "American Dragnet" report is the direct predecessor to the corpus threat model; they will recognize the sourcing approach immediately
+- Access Now operates a Digital Security Helpline (security@accessnow.org) serving exactly the at-risk population — highest-leverage Tier 2 contact after EFF
+- AFL-CIO Tech Institute named new Executive Director Lauren McFerran (Feb 2026) — timing is good for engagement on the labor + digital privacy angle
+- Stanford Internet Observatory ended 2024; Tier 2 academic outreach redirected to Stanford Cyber Policy Center
+- FPF (Freedom of the Press Foundation) press contact confirmed: press@freedom.press — corpus recommends SecureDrop which FPF builds; natural partnership
+
+**Status**: Both docs ready for user review before outreach begins.
+
 ## 2026-04-26 22:30 UTC — Orchestrator Session 494 — Phase 4 Integration + Paper Trading Monitoring
 
 **Session Protocol**: Standard workflow (parallel 2-agent execution)
