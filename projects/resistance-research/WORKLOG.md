@@ -2,6 +2,104 @@
 
 ---
 
+## April 26, 2026 (Session 423) — May Day Guide Distribution Prep + Monitoring Readiness Check
+
+**Session type**: Verification + distribution planning
+**Date**: April 26, 2026
+**Files updated**: `WORKLOG.md`
+
+### Task 1 — Gist Live Verification
+
+Fetched https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4 directly.
+
+**Result: LIVE AND CONFIRMED.**
+
+The Gist is publicly accessible. Content verified:
+- Title: "May Day 2026 Action Guide"
+- All 9 sections present: What Is May Day 2026, The Demands and the Coalition, How to Participate, Know Before You Go, For Different Situations, The April 29 Mass Call, What Outcomes to Watch, After May Day, Sources.
+- Coalition scale: 200+ organizations, 900+ events confirmed nationally, 3,500+ total actions projected — correct as of April 26 update pass.
+- Three-pillar framework (No Work, No School, No Shopping) prominent.
+- Legal analysis present in Section 4 (First Amendment, NLRA, undocumented participant guidance).
+- ICE safety resources section confirmed present.
+- Post-action framing connecting to 2027-2028 sustained organizing (3.5% threshold research) confirmed present.
+
+No discrepancies found against the April 26-27 update record documented in Session 421.
+
+### Task 2 — Distribution Checklist
+
+**DISTRIBUTION CHECKLIST — May Day 2026 Action Guide**
+**Gist URL**: https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4
+
+**Timing recommendation**: Hold broad distribution until Monday morning April 28, 2026.
+- Rationale: The April 29 7:30 p.m. ET Mass Call is the primary last-mile coordination point. Distributing the guide Monday morning gives organizers two full days to read it and arrive at the call with context. Distributing now (Sunday) is also defensible but creates a longer window for the guide to circulate without the Monday Xinis hearing context that may update Section 7.
+- Exception: Personal and trusted-network shares can go now. Broadcast push to large lists should wait until Monday April 28 morning, after the Xinis hearing produces an outcome (even a non-outcome is news).
+
+**Channels:**
+
+| Channel | Timing | Notes |
+|---------|--------|-------|
+| Slack (organizing workspaces) | Monday April 28 a.m. | Post in #general and relevant issue channels. Pin if admin. |
+| Signal (group threads) | Monday April 28 a.m. | Works best with a short intro note — see message framework below. |
+| Mastodon / Bluesky | Monday April 28 a.m. | NEA toolkit confirmed Bluesky as active activist platform; Mastodon has civic discourse but no dominant May Day channel. Post on both. |
+| Indivisible chapter lists | Monday April 28 a.m. | Indivisible's own guide includes social sharing; this guide complements, not competes. |
+| DSA chapter toolkits | Monday April 28 a.m. | DSA is confirmed May Day organizer — share as supplementary legal/safety resource. |
+| Action Network campaign | Monday April 28 a.m. | actionnetwork.org runs a separate May Day 2026 Weekend of Action campaign; this guide can be linked from that infrastructure. |
+| NEA / AFT chapter contacts | Monday April 28 a.m. | NEA toolkit already in distribution; this guide supplements with broader legal and undocumented participant guidance NEA's toolkit lacks. |
+| Personal email to known organizers | Now (April 26-27) | No caveat — direct trusted-network shares are appropriate immediately. |
+
+**Caveats:**
+- The Section 7 parenthetical "(as of April 23)" is slightly stale but substantively accurate. No updated government targeting of May Day organizing has been confirmed through April 27. This does not require a guide update before distribution.
+- The Xinis hearing on April 28 may produce news that is worth a one-line addition to Section 7 before the broadest distribution push. If contempt is issued or a major new development emerges, consider a quick update pass on the Gist before pushing to large lists.
+- Do not distribute the Gist URL with language suggesting it is affiliated with maydaystrong.org or official coalition channels unless that affiliation is confirmed. Present it as a researcher/observer guide that supplements official coalition materials.
+
+**Suggested Messaging Framework for Organizers:**
+
+Short version (Signal/Slack):
+"If you're participating in or helping organize May Day events, this guide covers your legal rights, what to watch for in the courts this week, and safety protocols for different participant situations. It's current through April 27. [URL]"
+
+Medium version (email/Substack):
+"The May Day 2026 Action Guide is a nine-section resource covering: the coalition's demands and organizing scale, how to participate across different situations, know-your-rights legal briefing (including for undocumented participants), what to watch in the courts the week of April 28-30, and how to think about what May Day means strategically. It's been updated through April 27 and links 60+ primary sources. Worth reading before Tuesday — especially Section 4 on legal rights and Section 7 on what outcomes to watch."
+
+For organizer introduction at meetings/calls:
+"We have a research guide that went deeper than most coalition toolkits on two things: the legal rights section, which distinguishes clearly between union vs. non-union employment protection and gives specific guidance for undocumented participants; and the court-watch section, which explains what the Xinis/Abrego Garcia hearing on Monday means for the broader enforcement environment. It's worth 20 minutes before Tuesday."
+
+### Task 3 — Monitoring Readiness Check
+
+**Templates present in /monitoring/:**
+
+| Template | File | Status |
+|----------|------|--------|
+| April 28 Xinis hearing results | 2026-04-28-results.md | PRESENT |
+| April 29 contingency (4th Circuit / Section 702) | 2026-04-29-contingency.md | PRESENT |
+| May 1 live monitoring | 2026-05-01-template.md | PRESENT |
+
+All three confirmed present. A fourth relevant file, `2026-04-29-mass-call.md`, is also present (pre-brief and documentation template for the April 29 7:30 p.m. ET national coordination call).
+
+**Spot-check: 2026-04-29-contingency.md — Section 702 expiration date field**
+
+Verified. The file contains a dedicated "Section 702 / FISA Expiration Watch" section with the following fields:
+- "Section 702 authorization expires April 30" — expiration date explicitly stated in the section header
+- "Senate floor action April 29? Y / N"
+- "House floor action April 29? Y / N"
+- "Reauthorization passed before midnight April 30? Y / N (this field fills April 30)"
+- "If lapsed: any DOJ or IC public statement on operational impact?"
+
+The Section 702 expiration date (April 30) is correctly stated. The field structure is complete and fillable.
+
+**Spot-check: 2026-04-28-results.md**
+
+Quick-fill record table is present with 9 questions covering contempt, depositions, April 30 deadline, Liberia demand, Fourth Circuit stay, Crenshaw ruling, and DOJ statement. Escalation level field and CHECKIN flag confirmed. April 29 analysis pass template with 5 structured questions confirmed.
+
+**Spot-check: 2026-05-01-template.md**
+
+Scale summary table with pre-May Day projections (922 events, 3,500+ total actions, 85 cities) and blank actuals columns confirmed. Major city reporting structure (DC, Chicago, NYC, LA, Seattle, Portland, New Orleans) confirmed. Labor action tracker, government response section, Section 702 field, DHS payroll cliff field, and strategic assessment questions (to complete May 2-3) all confirmed present.
+
+**Monitoring readiness verdict: READY.** All templates are in place, correctly dated, and contain the right field structure for Monday through Thursday monitoring.
+
+**One gap identified**: There is no `2026-04-30-results.md` file for the April 30 5:00 p.m. discovery deadline in Abrego Garcia — the hardest judicial deadline in the monitoring window. The April 29 contingency file has an "Early Signals" section for April 30, and the April 28 results file tracks the deadline, but there is no dedicated April 30 results capture file. This is not a blocking issue — the April 29 contingency file can absorb April 30 developments — but if the April 30 deadline produces significant outcomes (compliance, defiance, contempt escalation), a dedicated file would keep the monitoring record cleaner. Flagging for user decision.
+
+---
+
 ## April 26, 2026 (Session 423) — Cybersecurity-Hardening: Publication Decision Memo
 
 **Session type**: Assessment + decision memo
