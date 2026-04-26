@@ -4,43 +4,38 @@
 
 ---
 
-## Current Session (Session 487 — 2026-04-26 Evening — Phase 3 Integration + Multi-Strategy Conflict Resolution COMPLETE)
+## Current Session (Session 488 — 2026-04-26 Late Night — Phase 4 Launch + Strategy Evaluation COMPLETE)
 
-**Status**: Parallel 2-agent execution (resistance-research + stockbot). Both agents completed major deliverables independently. Phase 3 research fully integrated into democratic renewal proposal. Multi-strategy conflict resolution built and tested (StrategyCoordinator, 0 regressions).
+**Status**: Parallel 2-agent execution (resistance-research + stockbot). Both agents completed major deliverables independently. Phase 4 theory of change document 1 complete. Strategy evaluation complete — 0 strategies graduate; AAPL_h10_lgbm_ho marked as highest priority for validation; SMA strategies flagged for removal.
 
 **Work Completed** (Parallel 2-Agent Execution):
 
 - ✅ **Usage**: NOMINAL (verified `python3 scripts/usage-check.py --check`)
 
-- ✅ **Resistance-Research: Phase 3 Research Integration COMPLETE** (agent af2c0c7d2a166e403)
-  1. Integrated Phase 3 research roadmap (7,148 words, 8 case studies) into democratic renewal proposal
-  2. 5 substantive integrations (not appended, threaded into proposal structure):
-     - Pattern 6 in Section 3.1: Carnegie Endowment recovery playbook + Poland's PiS enclave problem
-     - Section 3.1a (new): Constitutional Design Dimension — 935-constitution study, Tunisia institutional failure
-     - Section 3.5 (new): Post-Electoral Recovery Challenge — 4-phase US sequence, autocratic enclave inventory
-     - Domain 3: Ireland Citizens' Assembly two-stage model mechanics
-     - Domain 6 subsection 6i (new): German Basic Law as Weimar response
-  3. Files modified: democratic-renewal-proposal.md, executive-summary.md, published/README.md
-  4. Committed: d911817 — "feat(resistance-research): integrate Phase 3 research roadmap into democratic renewal proposal"
-  5. **Status**: Phase 3 COMPLETE. Distribution execution ready (user action).
+- ✅ **Resistance-Research: Phase 4 Document 1 COMPLETE** (agent a73b501da472833d7)
+  1. **`phase-4-comparative-democratic-recovery.md`** (6,400 words, 38 citations) — Cross-national case studies:
+     - **Successes**: South Korea (1987 recovery via elite defection + mass mobilization), Spain (post-Franco managed reform), Uruguay (post-dictatorship pacted exit)
+     - **Failures**: Hungary (Orbán entrenchment 2010–2026), Venezuela (Chávez institutional capture 1999–present), Turkey (2016 coup purge → AKP consolidation)
+  2. **Central finding**: Recovery succeeds when mass mobilization + elite defection happen *before entrenchment completes*. This timing variable consistently separates successes from failures.
+  3. **US Application**: Identifies existing infrastructure (state AG coalitions, federal judges, civil society data) and critical gap (prepared institutional blueprint + elite-defection triggers)
+  4. Committed: `phase-4-comparative-democratic-recovery.md` to master
 
-- ✅ **Stockbot: Multi-Strategy Conflict Resolution COMPLETE** (agent a660bdfc102ec8e28)
-  1. Identified 3 conflict classes: position double-counting, competing orders, rate limit multiplication
-  2. Built `StrategyCoordinator` class (stdlib only, zero external deps):
-     - `aggregate_open_positions()` — combined {symbol: market_value} across all strategies
-     - `acquire_symbol_lock(symbol)` — threading.Lock per ticker; serializes order submission
-     - `check_rate_limit()` / `record_order()` — 60-second sliding window shared globally
-  3. Tests: 43 comprehensive unit tests, all pass; 723 total trading tests pass, 0 regressions
-  4. Integration pattern: Lock + aggregate + validate → submit + record
-  5. Committed: 9c28451 — "feat(stockbot): implement StrategyCoordinator for multi-strategy conflict resolution"
-  6. **Status**: Multi-strategy system ready. Next: strategy optimization & backtesting.
+- ✅ **Stockbot: Strategy Evaluation COMPLETE** (agent a144692b76957e579)
+  1. **Evaluation**: 10 strategies across 5 model types against 4-gate graduation criteria
+  2. **Key results** (0 strategies graduate):
+     - **AAPL_h10_lgbm_ho (paper)**: Only Gate 4 passer → **HIGHEST PRIORITY** for 3-month validation
+     - **SMA_50_200 / SMA_10_50**: Flagged for **REMOVAL** (structural failure: daily crossovers insufficient signal)
+     - **Ensemble/options/crypto/MTF**: Blocked by data pipeline dependencies
+  3. Built `scripts/run_strategy_evaluation.py` — automated runner against synthetic GBM + 4 regime variants
+  4. Tests: 52 new unit tests, 2,590 total trading tests pass
+  5. Committed: `strategy-evaluation.md`, evaluation runner, new tests
 
-**Tokens Used**: 225,191 total (123,334 resistance-research + 101,857 stockbot)
+**Tokens Used**: 211,331 total (85,138 resistance-research + 126,193 stockbot)
 
 **In Progress**:
 
-1. **Resistance-research**: Distribution execution ready (Substack, Reddit, institutional templates). User can execute Tier 1 outreach anytime.
-2. **Stockbot**: Paper trading live. Next work: strategy optimization (backtests, performance evaluation, underperformer elimination).
+1. **Resistance-research**: Phase 4 Documents 2-4 queue (power-mapping, parallel-institutions, elite-capture-case-study). Distribution execution ready (user action).
+2. **Stockbot**: Paper trading live. SMA strategy removal staged. AAPL_h10_lgbm_ho validation pipeline ready.
 3. **Seedwarden Track B**: Native plants guide rebuild complete (4.91 MB, Etsy-compliant). Ready to deploy.
 
 **Needs Your Input**:
@@ -51,12 +46,32 @@
 
 **Suggested Priorities for Next Session**:
 
-1. **Stockbot**: Strategy optimization (backtests on existing strategies, evaluate per graduation criteria, eliminate underperformers)
-2. **Cybersecurity-hardening**: Prepare Tier 2 distribution materials (digital rights, security researchers, journalists) — Tier 1 ready for user execution
-3. **Seedwarden Track B**: Deploy rebuilt native plants guide PDF to Etsy (or evaluate Phase 2 expansion roadmap)
+1. **Resistance-research**: Phase 4 Documents 2-3 (power-mapping, parallel-institutions) — highest priority
+2. **Stockbot**: Remove SMA strategies; validate AAPL_h10_lgbm_ho paper track record
+3. **Cybersecurity-hardening**: Prepare Tier 2 distribution materials (digital rights, security researchers, journalists)
 4. **Exploration Queue**: workout/nutrition-tracking OR cybersecurity-hardening/device-hardening
 
-**Usage**: Sonnet 45.3% (nominal) | Reset in ~28h | All systems green
+**Usage**: Sonnet ~42% (nominal) | Reset in ~25h | All systems green
+
+---
+
+## Previous Session (Session 487 — 2026-04-26 Evening — Phase 3 Integration + Multi-Strategy Conflict Resolution COMPLETE)
+
+**Status**: Parallel 2-agent execution (resistance-research + stockbot). Phase 3 research fully integrated. Multi-strategy conflict resolution built and tested.
+
+**Work Completed**:
+
+- ✅ **Resistance-Research: Phase 3 Research Integration COMPLETE** (agent af2c0c7d2a166e403)
+  - Integrated Phase 3 research roadmap into democratic renewal proposal (5 substantive integrations)
+  - Committed: d911817
+  - Status: Phase 3 COMPLETE. Distribution execution ready.
+
+- ✅ **Stockbot: Multi-Strategy Conflict Resolution COMPLETE** (agent a660bdfc102ec8e28)
+  - Built `StrategyCoordinator` class for concurrent strategy management
+  - 723 total trading tests pass, 0 regressions
+  - Status: Multi-strategy system ready. Next: strategy optimization & backtesting.
+
+**Tokens Used**: 225,191 total
 
 ---
 

@@ -68,37 +68,33 @@
 **Status**: Active — Phase 1 launched, Phase 2 live, **Phase 3 COMPLETE (Session 487)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Phase 3 Research Integration COMPLETE (Session 487, agent af2c0c7d2a166e403)**. Phase 3 research roadmap (7,148 words, 8 case studies) fully integrated into democratic renewal proposal:
-- Pattern 6 in Section 3.1: Carnegie Endowment recovery playbook + Poland's PiS enclave problem
-- Section 3.1a (new): Constitutional Design Dimension — 935-constitution study, Tunisia institutional failure, Germany Basic Law design
-- Section 3.5 (new): Post-Electoral Recovery Challenge — 4-phase US sequence, autocratic enclave inventory, interstate compact strategies
-- Domain 3: Ireland Citizens' Assembly two-stage model mechanics
-- Domain 6 subsection 6i (new): German Basic Law as Weimar response — specific failure modes and US analogs
+**Current focus**: **Phase 4 IN PROGRESS (Session 488)**. Phase 3 research roadmap fully integrated into democratic renewal proposal (Session 487). Phase 4 addresses theory of change: how captured systems get replaced.
+
+**✅ COMPLETED (Session 488)**:
+- ✅ **Phase 4 Document 1: Comparative Democratic Recovery** — `phase-4-comparative-democratic-recovery.md` (6,400 words, 38 citations)
+  - Cross-national case studies: South Korea (1987 recovery), Spain (post-Franco), Uruguay (post-dictatorship), Hungary (failed), Venezuela (failed), Turkey (failed)
+  - **Central finding**: Recovery succeeds when mass mobilization + elite defection happen before entrenchment completes. This timing variable separates successes from failures consistently.
+  - **US application**: Existing infrastructure identified (state AGs 71 lawsuits 40 wins, federal judges, civil society data preservation); critical gap is prepared institutional blueprint + elite-defection triggers
+  - Committed: `phase-4-comparative-democratic-recovery.md` to master
 
 **✅ COMPLETED (Session 487)**:
-- ✅ **Phase 3 research roadmap integration** — 5 substantive integrations woven into proposal structure (not appended)
+- ✅ **Phase 3 research roadmap integration** — 5 substantive integrations woven into proposal structure
 - ✅ Files: `democratic-renewal-proposal.md`, `democratic-renewal-executive-summary.md`, `published/README.md` updated
-- ✅ Committed: d911817 — "feat(resistance-research): integrate Phase 3 research roadmap into democratic renewal proposal"
+- ✅ Committed: d911817
 
 **✅ COMPLETED (Session 485-486)**:
-1. **Priority documents**: first-amendment-suppression.md (3,400 words), environmental-rollbacks-tracker.md (3,800 words), police-brutality-consent-decree-tracker.md (4,200 words)
+1. **Priority documents**: first-amendment-suppression.md, environmental-rollbacks-tracker.md, police-brutality-consent-decree-tracker.md
 2. **Proposal infrastructure**: democratic-renewal-executive-summary.md, DISTRIBUTION_GUIDE.md, published/README.md
-3. **Distribution templates**: Substack drafts (4 posts), Reddit templates (5 posts), institutional outreach (8 templates)
-4. **Phase 3 research roadmap**: 7,148 words, 8 case studies, implementation timelines, adoption pathways
+3. **Distribution templates**: Substack (4 posts), Reddit (5 posts), institutional outreach (8 templates)
+4. **Phase 3 research roadmap**: 7,148 words, 8 case studies
 
 **NEXT WORK**:
+- **Phase 4 Documents 2-4** (highest priority):
+  1. `power-mapping.md` (~3,500 words) — Veto players, dark money networks, vulnerabilities, displacement precedents
+  2. `parallel-institutions.md` (~3,500 words) — Mutual aid, CLTs, coops, credit unions, state-level alternatives, political effects
+  3. `elite-capture-case-study.md` (~3,000 words) — Epstein network as structural accountability failure (court records, investigative journalism, FARA gaps, systemic implications)
 - **Distribution execution** (user action): Substack, Reddit, institutional templates ready for user posting
-- **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers are production-ready for regular updates
-
-**Phase 4 — Theory of Change (new scope, 2026-04-26)**: The project has a strong diagnosis and a vision of "what better looks like." The identified gap is the *mechanism* question: how does a captured system get replaced when the people who'd need to approve change are the same ones who benefit from blocking it? Four documents to produce, in priority order:
-
-1. **`comparative-democratic-recovery.md`** — Cross-national case study: countries that underwent democratic backsliding and recovered (South Korea post-1987, Spain post-Franco, Uruguay post-dictatorship) vs. those that failed to recover (Hungary, Venezuela, Turkey). What structural factors made the difference? What role did parallel institutions, international pressure, elite defection, and mass mobilization each play? Identify replicable patterns and apply explicitly to the US context. (~4,000 words, heavily cited)
-
-2. **`power-mapping.md`** — Concrete analysis of who specifically holds veto power over systemic change in the US (not abstract "elites" — named institutions, networks, funding streams). Map: legislative veto players, judicial capture mechanisms, dark money networks (Federalist Society, Koch network, AIPAC), foreign lobbying exemptions (FARA gaps), and revolving-door pipelines. For each: what are their known vulnerabilities (electoral, legal, reputational)? What historical precedents exist for displacing comparable entrenched power? (~3,500 words)
-
-3. **`parallel-institutions.md`** — Concrete models for building functional systems that reduce dependence on captured federal apparatus while developing the organizational base for structural reform. Cover: mutual aid networks, community land trusts, worker cooperatives, local food sovereignty, community broadband, credit unions vs. commercial banks, state-level single-payer experiments. For each: current scale, replication requirements, documented political effects (does local alternative-building translate to political capacity?). (~3,500 words)
-
-4. **`elite-capture-case-study.md`** — The Epstein network as a documented case study in accountability system failure. Not speculative — use only what is established in court records, unsealed documents, investigative journalism (NYT, Miami Herald, Vanity Fair, Hersh). Cover: the 2008 NPA deal as prosecutorial capture, the Maxwell trial record, documented connections to intelligence services (Robert Maxwell/Mossad per multiple credible sources), the FARA gap that allowed foreign influence networks to operate without disclosure, and systemic implications for democratic accountability. Explicit framing: this is evidence of *structural* failure, not individual criminality. (~3,000 words)
+- **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
 
 **Blocked on**: —
 **Notes**: Phase 3 COMPLETE. Phase 4 (theory of change) is the identified research gap — the project diagnoses what's broken and proposes what better looks like, but lacks the mechanism analysis: how captured systems actually get uncaptured. These four documents fill that gap and make the democratic renewal proposal actionable rather than aspirational.
@@ -123,33 +119,37 @@
 **Status**: Active — paper trading live, **multi-strategy conflict resolution COMPLETE**, ready for strategy optimization
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **Multi-strategy conflict resolution COMPLETE (Session 487, agent a660bdfc102ec8e28)**.
+**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **Strategy evaluation COMPLETE (Session 488, agent a144692b76957e579)**. **Multi-strategy conflict resolution COMPLETE (Session 487)**.
+
+**Completed (Session 488)**:
+1. ✅ **Strategy Evaluation & Backtesting** — COMPLETE:
+   - `strategy-evaluation.md` — comprehensive assessment of all 10 strategies across 5 model types
+   - **Strategy inventory**: 3 rule-based (SMA variants), 5 ensemble stackers, 1 options, 1 crypto, 1 MTF
+   - **Evaluation framework**: Applied 4-gate graduation criteria to all strategies
+   - **Results**: 0 strategies graduate without caveats
+     - **AAPL_h10_lgbm_ho (paper trading)**: Only Gate 4 passer; Gates 1-3 blocked on live Alpaca data → **HIGHEST PRIORITY** for 3-month validation + full walk-forward
+     - **SMA_50_200 / SMA_10_50**: Flagged for **REMOVAL** — generate 0-2 trades/252 days (need ≥100), negative Sharpe → structural failure: daily crossovers insufficient signal
+     - **BuyAndHold**: Benchmark only, structurally fails Gate 1
+     - **Ensemble/options/crypto/MTF**: Architecture sound; blocked by data pipeline dependencies
+   - Built `scripts/run_strategy_evaluation.py` — automated runner against synthetic GBM + 4 regime variants
+   - **Tests**: 52 new unit tests (all pass), 2,590 total trading tests pass, 0 regressions
+   - Committed: `strategy-evaluation.md`, evaluation runner, tests
 
 **Completed (Session 487)**:
-1. ✅ **Multi-strategy conflict resolution** — COMPLETE:
-   - `src/trading/strategy_coordinator.py` — `StrategyCoordinator` class (stdlib only, zero external deps)
-   - **Conflict classes identified and solved**:
-     1. Position double-counting (same ticker across strategies) → `aggregate_open_positions()` sums cross-strategy exposure
-     2. Competing orders (both strategies submit independently) → `acquire_symbol_lock(symbol)` serializes order submission per ticker
-     3. Rate limit multiplication (N engines × max_orders cap) → shared 60-second sliding window global counter
-   - `tests/unit/test_trading/test_strategy_coordinator.py` — 43 comprehensive unit tests, all pass
-   - **Total test suite**: 723 trading unit tests pass, 0 regressions
-   - **Integration pattern**: Lock acquisition → aggregate positions → validate with guardrails → submit → record global order
-   - Committed: 9c28451 — "feat(stockbot): implement StrategyCoordinator for multi-strategy conflict resolution"
+1. ✅ **Multi-strategy conflict resolution** — `StrategyCoordinator` class, 43 unit tests, 723 total tests pass
 
 **Completed (Session 486)**:
-1. ✅ **Live trading guardrails** — COMPLETE:
-   - `live-trading-guardrails.md` specification (rationale, implementation approach, config parameters)
-   - `src/guardrails.py` module: 6 validators (emergency halt, instrument ban, cash-only, position limit, concurrent cap, daily loss killswitch)
-   - 88 unit tests (all passing)
+1. ✅ **Live trading guardrails** — `guardrails.py` module with 6 validators, 88 unit tests
 
 **Next tasks — work these in order:**
 
-2. **Strategy optimization** — run backtests on existing strategies; evaluate performance per graduation criteria; eliminate underperformers; document in `strategy-evaluation.md`
+2. **Strategy cleanup** — Remove SMA_50_200/SMA_10_50 (structural failure, committed removal rationale)
 
-3. **Live trading readiness checklist** — when paper trading shows consistent positive performance (per graduation criteria), produce user-facing checklist: switch to funded live account, verify cash account (no margin), confirm guardrails active, set initial funding
+3. **AAPL_h10_lgbm_ho validation** — Monitor paper trading track record; document 3-month performance target; prepare walk-forward backtest pipeline
 
-4. **Live trading launch** — once model graduation criteria met and all checks pass, transition to Jetson deployment with live trading enabled
+4. **Live trading readiness checklist** — Once paper performance consistent (per graduation criteria), produce user-facing checklist: funded account setup, cash account verification, guardrails confirmation, initial funding guidelines
+
+5. **Live trading launch** — After readiness checklist passes, transition to Jetson deployment with live trading enabled (minimal $100–500 initial funding)
 
 **Blocked on**: —
 **Notes**: Multi-strategy system is now conflict-free. Next: optimize and evaluate which strategies should graduate to live trading. Paper trading provides the validation signal. Guardrails are in place. Live trading will begin with minimal funding ($100–500) and scale only after 2+ weeks of profitable live performance.

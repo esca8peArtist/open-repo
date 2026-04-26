@@ -4,6 +4,53 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 Late Night (23:47 UTC) — Orchestrator Session 488 — Parallel Agents: Phase 4 Launch + Strategy Evaluation
+
+**Session Protocol**: Parallel agent execution (2 independent high-priority tasks)
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Phase 4 Document 1** (agent a73b501da472833d7)
+   - Completed `phase-4-comparative-democratic-recovery.md` (6,400 words, 38 citations)
+   - Cross-national case studies: South Korea (1987 recovery), Spain (post-Franco), Uruguay (post-dictatorship), Hungary (failed recovery), Venezuela (escalating capture), Turkey (2016-present)
+   - **Central finding**: Recovery succeeds when mass mobilization coincides with elite defection *before the captured system completes entrenchment*. Every recovery case shared this timing; every failure involved entrenchment accelerating before opposition adapted.
+   - **Secondary finding**: Movements that won without prepared institutional blueprints lost gains within a decade. 
+   - **US Application**: Identifies existing infrastructure (state AG coalitions 71 lawsuits 40 wins, federal judges, civil society data preservation) and critical gap (prepared institutional blueprint + elite-defection triggers)
+   - Four recovery mechanisms mapped to US context with specific examples
+   - Committed to master, added to Phase 4 queue
+   - **Token usage**: 85,138 total
+   
+2. ✅ **Stockbot: Strategy Evaluation & Backtesting** (agent a144692b76957e579)
+   - Completed `strategy-evaluation.md` — comprehensive assessment of all 10 strategies across 5 model types
+   - **Strategy inventory**: 3 rule-based (SMA), 5 ensemble (stacker variants), 1 options, 1 crypto, 1 MTF
+   - **Evaluation framework**: Applied 4-gate graduation criteria (statistical sufficiency, performance quality, robustness, operational readiness) to all strategies
+   - **Results**: 0 strategies pass all gates without caveats
+     - **AAPL_h10_lgbm_ho** (paper trading): Only Gate 4 passer; Gates 1-3 blocked on live Alpaca data → **HIGHEST PRIORITY** for 3-month validation + full walk-forward backtest
+     - **SMA_50_200 / SMA_10_50**: Flagged for removal — generate 0-2 trades over 252 days (need ≥100), negative Sharpe in mixed regime → **STRUCTURAL PROBLEM**: daily-bar crossovers cannot produce adequate signal density
+     - **BuyAndHold**: Benchmark only, structurally fails Gate 1
+     - **Ensemble/options/crypto/MTF**: Architecture sound; blocked by data pipeline dependencies (live feeds)
+   - Built `scripts/run_strategy_evaluation.py` — automated evaluation runner against synthetic GBM + 4 regime variants
+   - **Tests**: 52 new unit tests (all pass), 2,590 total trading tests pass, 0 regressions
+   - Committed to master with strategy-evaluation.md and evaluation runner
+   - **Token usage**: 126,193 total
+
+**Orchestration Work**:
+- Oriented: read ORCHESTRATOR_STATE.md, INBOX.md (empty), PROJECTS.md
+- Usage check: NOMINAL (45.3% Sonnet, no throttling)
+- Spawned 2 agents in parallel to top-priority unblocked work
+- Both agents completed independently within 10 minutes
+
+**Total Tokens This Session**: 211,331 (both agents combined)
+
+**Next Session Work**:
+- resistance-research: Phase 4 Documents 2-4 (power-mapping, parallel-institutions, elite-capture-case-study)
+- stockbot: Remove SMA strategies (structural failure), validate AAPL_h10_lgbm_ho paper track record, prepare live trading readiness checklist
+- seedwarden: Phase 1 upload (awaiting user tag corrections + Etsy verification)
+
+**Git Status**: All commits to master ✓
+
+---
+
 ## 2026-04-26 Evening (20:40 UTC) — Orchestrator Session 487 — Parallel Agents: Phase 3 Integration + Multi-Strategy Conflict Resolution
 
 **Session Protocol**: Parallel agent execution (2 independent high-priority tasks)
