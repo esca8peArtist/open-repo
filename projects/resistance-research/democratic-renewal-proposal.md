@@ -2326,9 +2326,19 @@ This document defines the US recovery sequencing across three waves, identifies 
 
 ---
 
-### Part I: The Three-Wave Architecture
+## Executive Summary: Why Sequencing Matters
 
-#### Wave 1: Restore the Guardrails (0-18 months)
+The democratic renewal proposal contains 22 domains of structural reform. Attempting to implement all 22 simultaneously would overwhelm legislative capacity, outpace civil society organization, trigger unified elite backlash, and almost certainly fail.
+
+The comparative democratic recovery framework (Phase 4, Document 1) documents a consistent pattern across successful cases: **recovery sequences in waves, with each wave creating conditions that make the next wave possible.** Poland's 2023 recovery did not attempt constitutional rewrite and judicial restructuring and civil service reform and campaign finance overhaul at once. It sequenced: first, establish that electoral victory is possible (2023 elections); second, use electoral victory to restore judicial independence and investigative capacity (2023-2024); third, deploy restored institutional capacity to advance structural reforms (2024-2025 and onward).
+
+This document defines the US recovery sequencing across three waves, identifies which domains anchor each wave, specifies the conditions that must be met to trigger the next wave, and maps how progress in each domain creates capacity for downstream domains.
+
+---
+
+## Part I: The Three-Wave Architecture
+
+### Wave 1: Restore the Guardrails (0-18 months)
 
 **Defining Goal:** Re-establish that law enforcement, courts, and elections can function as constraints on executive power. This is not about transforming the system — it is about proving the system still works.
 
@@ -2340,8 +2350,8 @@ This document defines the US recovery sequencing across three waves, identifies 
 1. **Domain 1 (Electoral Reform)** — Immediate: Restore voting rights protections, halt mid-decade redistricting, block voter purges
 2. **Domain 2 (Civil Service & Executive Constraint)** — Immediate: Defend Schedule F challenges in court, document agency resource depletion, build case for statutory civil service restoration
 3. **Domain 6 (Judicial Accountability & Independence)** — Immediate: Support state AGs in litigation, document defiance of court orders, build case for judicial conduct rules and enforcement
-4. **Domain 7 (Democratic Participation & Political Rights)** — Immediate: Defend First Amendment rights to assembly, free speech, petition; block surveillance expansion aimed at political groups
-5. **Domain 8 (Information & Media)** — Support local news infrastructure, counter algorithmic radicalization, document press freedom violations
+3. **Domain 7 (Democratic Participation & Political Rights)** — Immediate: Defend First Amendment rights to assembly, free speech, petition; block surveillance expansion aimed at political groups
+4. **Domain 8 (Information & Media)** — Support local news infrastructure, counter algorithmic radicalization, document press freedom violations
 
 **Expected Outcomes at End of Wave 1:**
 - Election outcomes reflect voter intent (no federal suppression)
@@ -2359,7 +2369,7 @@ This document defines the US recovery sequencing across three waves, identifies 
 
 ---
 
-#### Wave 2: Build Parallel Alternatives and Institutional Backup Systems (Months 6-36)
+### Wave 2: Build Parallel Alternatives and Institutional Backup Systems (Months 6-36)
 
 **Defining Goal:** Create new institutional infrastructure that does not depend on capturing the existing system. Build the infrastructure of democratic alternatives so that even if Wave 1 containment fails, the resistance does not depend on Court victories, Congressional action, or executive compliance.
 
@@ -2367,7 +2377,7 @@ This document defines the US recovery sequencing across three waves, identifies 
 
 This sequencing reflects a critical finding from comparative research: **you cannot build new institutions while the existing system is collapsing.** Chile's democratic transition succeeded because Pinochet's dictatorship was already declining; the transition built on a decaying authoritarian institutional base. Venezuela's opposition has failed to build alternatives because Maduro's state continues aggressive action against opposition organizing; resources are consumed in immediate defense. The US is currently closer to Poland (2023) — the system is stressed but not yet completely non-functional — which means Wave 2 can proceed on the assumption that existing institutions will provide some floor.
 
-**The Core Mechanism:** Wave 2 leverages the parallel institutions identified in Phase 4 research. The US already has substantial parallel institutional infrastructure (larger than most movements acknowledge):
+**The Core Mechanism:** Wave 2 leverages the parallel institutions identified in Phase 4, Document 2. The US already has substantial parallel institutional infrastructure (larger than most movements acknowledge):
 - $446B CDFI sector with 18.3M members (cooperative banking and community finance)
 - 900-1000 worker cooperatives with $806M revenue
 - Community Land Trusts (Champlain Housing Trust manages 18% of Burlington, Vermont housing stock)
@@ -2402,7 +2412,7 @@ The strategic move is not to build these from scratch but to (1) defend existing
 
 ---
 
-#### Wave 3: Institutional Transition and Constitutional Consolidation (Months 24-48 and beyond)
+### Wave 3: Institutional Transition and Constitutional Consolidation (Months 24-48 and beyond)
 
 **Defining Goal:** Permanently restructure American institutions using the constitutional and statutory mechanisms available, supported by the operational alternatives established in Wave 2. This is where the 22-domain proposal takes full form.
 
@@ -2443,9 +2453,9 @@ All 22 domains come into full implementation in Wave 3, but sequenced:
 
 ---
 
-### Part II: Cross-Wave Dependencies and Acceleration Pathways
+## Part II: Cross-Wave Dependencies and Acceleration Pathways
 
-#### Critical Path Elements
+### Critical Path Elements
 
 **Recovery is not linear.** Each wave creates conditions that pull forward subsequent elements. Understanding these dependencies reveals where acceleration is possible and where bottlenecks are inevitable.
 
@@ -2466,9 +2476,9 @@ The 2026 midterm elections are the single most time-sensitive variable in the re
 
 ---
 
-### Part III: Resource Allocation and Institutional Assignment
+## Part III: Resource Allocation and Institutional Assignment
 
-#### Institutional Actors and Wave Assignments
+### Institutional Actors and Wave Assignments
 
 No single actor accomplishes recovery. Each wave relies on different actors:
 
@@ -2496,9 +2506,9 @@ No single actor accomplishes recovery. Each wave relies on different actors:
 
 ---
 
-### Part IV: Failure Modes and Contingency Pathways
+## Part IV: Failure Modes and Contingency Pathways
 
-#### When Wave 1 Fails: The Extended Resistance Scenario
+### When Wave 1 Fails: The Extended Resistance Scenario
 
 If Wave 1 containment mechanisms fail — courts are defied, Congress is paralyzed, the civil service is completely captured — recovery does not revert to pre-crisis. Instead, it shifts to an "extended resistance" scenario where all institutional capacity moves to Waves 2-3.
 
@@ -2515,7 +2525,7 @@ If Wave 1 containment mechanisms fail — courts are defied, Congress is paralyz
 
 This pathway is slower (Wave 3 extends to 8-10 years instead of 4-5) but remains viable because the US federal system retains sufficient redundancy that federal collapse does not mean collapse of democratic capacity.
 
-#### When Wave 2 Succeeds Ahead of Schedule: Acceleration Pathway
+### When Wave 2 Succeeds Ahead of Schedule: Acceleration Pathway
 
 If Wave 2 infrastructure scales faster than projected — if CDFIs reach $600B+ in 2 years instead of 4, if interstate compacts coordinate on 8 policy areas instead of 3, if state policy innovation demonstrates that structural alternatives work — Wave 3 can begin earlier with higher confidence.
 
@@ -2526,13 +2536,24 @@ The accelerated pathway requires:
 
 ---
 
-### Conclusion: Sequencing as Strategy
+## Conclusion: Sequencing as Strategy
 
 The three-wave architecture is not a prediction of what will happen. It is a strategy for converting resistance into recovery. Each wave creates conditions that make the next wave possible. The strategy survives failure in individual elements because it is built on redundancy: if courts fail, states can hold; if federal recovery stalls, state alternatives scale; if statutory reform fails, constitutional amendment becomes more viable.
 
 The most critical insight from comparative democratic recovery is this: **movements that win elections but have no post-victory institutional strategy lose their gains.** The South African ANC had constitutional principles prepared. Poland's Solidarity had governance structures designed. The US resistance movement must do the same — build the alternative institutions, design the governance reforms, and sequence the implementation so that when the political moment arrives, we know what we are building.
 
-This implementation roadmap is that design.
+This implementation roadmap is that design. The next document details the timeline and triggers.
+
+---
+
+## References
+
+- Phase 4, Document 1: Comparative Democratic Recovery (South Africa, Poland, Hungary, Brazil, Zambia, Senegal)
+- Phase 4, Document 2: Power Mapping (veto players, vulnerabilities, displacement precedents)
+- Phase 4, Document 3: Parallel Institutions (existing US alternative infrastructure inventory)
+- Phase 4, Document 4: Elite Capture Case Study (structural mechanisms enabling accountability failure)
+- Phase 3 Research Roadmap (international models and constitutional design)
+- Resistance Research Archive (160+ movement case studies)
 
 ---
 
@@ -2542,7 +2563,7 @@ This implementation roadmap is that design.
 
 ---
 
-### Executive Summary: What Changes When
+## Executive Summary: What Changes When
 
 The three-wave recovery architecture provides the sequencing logic. This document adds precision: what specific conditions must be met to move from one wave to the next, what timeline each wave requires under different scenarios, and what success looks like at each milestone.
 
@@ -2550,13 +2571,13 @@ The critical insight: **recovery is triggered by specific observable events, not
 
 ---
 
-### Part I: Recovery Initiation and the 2026 Trigger
+## Part I: Recovery Initiation and the 2026 Trigger
 
-#### The Primary Trigger: 2026 Midterm Elections
+### The Primary Trigger: 2026 Midterm Elections
 
 The November 2026 midterm elections represent the most significant decision point in the recovery timeline. The outcomes determine the speed and pathway of all subsequent waves.
 
-**Scenario A: House Flips or Narrows (D+10 or Better)**
+#### Scenario A: House Flips or Narrows (D+10 or Better)
 
 **Condition:** Democratic party gains 20+ net House seats (flipping House or creating narrow Republican majority of 3-5 seats).
 
@@ -2593,11 +2614,316 @@ The November 2026 midterm elections represent the most significant decision poin
 - Civil service protection restored via statute
 - Federal investment in Wave 2 alternatives authorized ($50B+)
 
-[CONTINUING PHASE 2 AND 3 CONTENT...]
+#### Scenario B: Republicans Retain House with Small Majority (R+10 or Less)
 
-**Scenario B: Republicans Retain House with Small Majority (R+10 or Less)**
+**Condition:** Republican party maintains or grows House majority but margin is <20 seats or includes reform-minded members.
 
-[Continuing through all scenarios and remaining content, incorporating the full Phase 5 documents...]
+**Recovery Timeline:** Extended (48-60 months, extended contingency)
+- Wave 1: 18-24 months (extended)
+- Wave 2: 12-36 months (primary focus)
+- Wave 3: 24-48 months (state-led statutory and constitutional reform)
+
+**Wave 1 Conditions Met (Month 0-24):**
+- 2026 elections do NOT produce House flip, but margins narrow enough that administration must negotiate with Congress
+- Courts continue to block unconstitutional actions with some compliance
+- State AGs continue litigation with documented court victories in 60%+ of major cases
+- Federal workforce stabilization occurs through litigation (Schedule F challenges), not through congressional action
+
+**Immediate Actions (Weeks 0-4):**
+- State AG coalition intensifies litigation (doubling case filings)
+- Civil service labor organizations file legal challenges to Schedule F
+- Congressional Democrats focus on oversight rather than legislation
+- State governors meet to coordinate alternative policy approaches
+
+**Wave 1 Completion Indicators (Months 18-24):**
+- Federal workforce stabilizes via court victories (not legislative action)
+- Multiple federal courts block remaining major executive actions
+- State governments demonstrate autonomous capacity across 8+ policy areas
+- Mass mobilization reaches 5%+ of population in organized form (2M+ active participants in resistance organizations)
+
+**Wave 2 Primary Focus (Months 12-48):**
+- State/local governments become primary drivers of reform
+- Interstate compacts established on voting access, environmental protection, housing, labor (4-5 areas)
+- CDFIs and alternative infrastructure reach $600B+ in assets
+- Community-based alternatives (health, education, energy) demonstrated at scale in 15+ regions
+
+**Expected Outcomes by Month 48:**
+- State-led electoral reforms implemented in 20+ states (ranked choice voting, multi-member districts, redistricting commissions)
+- Interstate compact coordination visible and producing policy outcomes
+- Alternative economy infrastructure (worker coops, CDFIs, CLTs) at meaningful scale
+- Constitutional amendment process for voting/judiciary reforms begins in state legislatures
+
+#### Scenario C: Republicans Gain House Majority or Status Quo (R+20 or Greater)
+
+**Condition:** Republican party gains House seats or maintains current majority; executive continues uncontested.
+
+**Recovery Timeline:** Extended Resistance (60-120 months, contingency scenario)
+- Wave 1: Conditional/failed (executive containment mechanism collapses)
+- Wave 2: Primary focus (0-60 months)
+- Wave 3: Delayed (begins month 48-60, state-led)
+
+**Wave 1 Collapse Indicators (Months 0-12):**
+- Federal courts' orders are defied without immediate political consequence
+- Congress loses subpoena power and appropriations leverage
+- Federal workforce drops below 50% in critical agencies (Schedule F implemented, DOGE continues)
+- State governments lose legal ability to enforce federal law compliance
+
+**Contingency Activation (Month 0):**
+- Shift all institutional focus to Wave 2 acceleration
+- State governments establish coordinated response (multistate coalitions become primary locus of power)
+- Federal litigation shifts from winning to documenting constitutional violations (building record for future accountability)
+- Community organizing accelerates toward mass mobilization (3-5% threshold becomes immediate priority)
+
+**Wave 2 Acceleration (Months 0-60):**
+- Interstate compacts become the primary federal alternative (superseding federal coordination)
+- CDFIs and alternative financing becomes the primary source of capital for regions abandoned by federal withdrawal
+- Community-based service provision (health, education, food, energy) becomes necessity-driven rather than choice-driven
+- State-level policy innovation accelerates (states effectively govern themselves)
+
+**Expected Outcomes by Month 60:**
+- Federal system is functionally fractured (interstate compacts coordinate more effectively than federal government)
+- Alternative economy represents 15-20% of economic activity in Wave 2-led states
+- State governments have established effective autonomous capacity across all 22 proposal domains
+- Constitutional amendment process underway in 25+ states (targeting House, judiciary, presidency)
+
+---
+
+## Part II: Wave 1 Milestones and Success Metrics
+
+### Wave 1 Goal: Prove the System Still Works
+
+The fundamental task of Wave 1 is demonstrating that law, courts, and elections remain consequential — that the system is not irreparably broken and that institutional resistance is possible.
+
+#### Month 0-3: Immediate Stabilization
+
+**Primary Actions:**
+- 2026 elections occur; outcomes determine scenario pathway
+- If House flip (Scenario A): Congress organizes along reform agenda
+- If House tight (Scenario B): States coordinate legal response
+- If Congress lost (Scenario C): Shift focus to state/local alternatives
+
+**Success Metrics:**
+- Election administration is conducted without federal military deployment
+- Legal challenges to election results are dismissed (courts respect election outcomes)
+- Congress is seated and can exercise subpoena power (Scenario A) or begins oversight (Scenarios B-C)
+
+#### Month 3-6: Institutional Verification
+
+**Primary Actions:**
+- Courts hear major challenges to executive action; issue decisions on merits (not procedural dismissals)
+- Federal agencies begin staff rehiring or document staff depletion impacts
+- State governments establish coordination mechanisms (state attorney general coalition, governors association)
+
+**Success Metrics:**
+- Courts issue 5+ major decisions blocking executive action (injunctions, declaratory judgments on merits)
+- Federal workforce depletion impacts become visible (service delays, institutional knowledge loss documented)
+- State coordination produces 5+ multistate legal actions (Scenario A) or 20+ individual AG actions (Scenario B)
+
+#### Month 6-12: Containment Verification
+
+**Primary Actions:**
+- Congress passes legislation blocking 3+ executive actions (Scenario A) or uses appropriations to force negotiation (Scenario B)
+- Courts begin enforcing their own orders (civil contempt, enforcement mechanisms)
+- State policy innovation produces measurable outcomes in 2-3 policy areas
+
+**Success Metrics:**
+- Federal workforce stabilizes or recovery plan is in place (Scenario A) or litigation preserves minimum staffing (Scenario B)
+- Court orders are complied with 80%+ of the time (defiance is rare, documented, and politically costly)
+- States demonstrate autonomous capacity to govern healthcare, education, environmental policy without federal direction (Scenario B)
+
+#### Month 12-18: Sustainability Verification
+
+**Primary Actions:**
+- Transition from crisis response to institutional normalization
+- Federal law enforcement institutions (FBI, federal prosecutors) maintain independence
+- Congress (Scenario A) or state courts (Scenario B) produce documented accountability (indictments, disciplinary findings)
+
+**Success Metrics:**
+- No military deployment against civilian protestors (security forces remain loyal to Constitution, not president)
+- Federal criminal prosecution continues against executive actors without political retaliation (rule of law holds)
+- Congress or state government establishes independent commission to document abuses (preparation for Wave 3 accountability)
+
+### Wave 1 Completion Criteria
+
+Wave 1 is complete when ALL of the following conditions are met:
+1. Elections are counted and results respected
+2. Courts issue decisions on merits and defiance is documented/politically costly
+3. Federal agencies retain minimum staff and autonomous decision-making authority
+4. Congress (Scenario A) or state coalition (Scenario B) has demonstrated ability to block unconstitutional action
+5. State governments function autonomously on core policy areas
+
+---
+
+## Part III: Wave 2 Milestones and Success Metrics
+
+### Wave 2 Goal: Scale Viable Alternatives
+
+Wave 2 creates conditions where recovery does not depend on federal institutional victory. Success is measured by the growth and visibility of alternative institutions.
+
+#### Months 6-12 (Overlapping Wave 1): Alternative Infrastructure Activation
+
+**Primary Actions (Scenario A - House Flip):**
+- Federal legislation authorizes $20-30B in funding for Wave 2 alternatives (CDFI expansion, CLT funding, state Medicaid expansion, community health funding)
+- Interstate compacts drafted on voting access and environmental policy (pilot for Scenario B/C approach)
+- State governments establish 5-10 policy laboratories in education, healthcare, housing, labor
+
+**Primary Actions (Scenario B - Tight House):**
+- State governments begin funding alternatives independently (state budgets fund CLTs, state health programs, state energy initiatives)
+- Interstate compacts drafted on 3-4 policy areas (voting, environment, labor, housing)
+- Community organizations launch parallel institutions (mutual aid networks, community education, community health)
+
+**Success Metrics:**
+- Federal or state funding for CDFIs increases to $10B+ (Scenario A) or states allocate $5B+ (Scenario B)
+- Interstate compact draft legislation introduced in 4+ states
+- Community alternative provision visible in 10+ communities (measurable service provision)
+
+#### Months 12-24: Scaling and Demonstration
+
+**Primary Actions:**
+- CDFIs and worker cooperatives reach measurable growth (15-20% year-over-year)
+- Interstate compacts are ratified in 3-4 states; coordination mechanisms operational
+- Community health centers expand capacity; community education programs reach 50K+ participants
+- State policy innovation produces measurable outcomes (graduation rates, health outcomes, housing stability)
+
+**Success Metrics:**
+- CDFI assets grow to $550B+ (up from $446B)
+- 20+ states have ratified at least one interstate compact
+- Community-based service provision reaches 500K+ beneficiaries (measurable outcomes)
+- State policy innovation is documented in 15+ states with measurable outcomes (compared to federal baseline)
+
+#### Months 24-36: Sustainability and Autonomy
+
+**Primary Actions:**
+- Alternative institutions become primary service delivery mechanism in Wave 2-leading states
+- Interstate compacts establish binding dispute resolution and enforcement
+- Federal funding for alternatives (Scenario A) reaches $50B+ or state funding (Scenario B) reaches $25B+ cumulative
+
+**Success Metrics:**
+- CDFI and cooperative sector represents 5-7% of economic activity in leading states
+- Interstate compacts coordinate policy across 5+ areas (voting, environment, labor, housing, education)
+- 20%+ of healthcare in Wave 2-leading states is delivered by community health centers or state programs (non-federal)
+- Education reform produces measurable outcomes in charter districts, public schools with alternative governance models
+
+### Wave 2 Completion Criteria
+
+Wave 2 is complete when ALL of the following conditions are met:
+1. Alternative financing systems are operating at meaningful scale ($550B+ CDFI assets, 1,500+ worker cooperatives)
+2. State policy innovation has demonstrated viability across 4+ domains with measurable outcomes
+3. Interstate compacts coordinate policy across 3+ areas with binding enforcement
+4. Community-based service provision reaches 10%+ of population in Wave 2-leading states
+5. Federal or state funding for alternatives reaches $50B+ cumulative over Wave 2 period
+
+---
+
+## Part IV: Wave 3 Milestones and Success Metrics
+
+### Wave 3 Goal: Permanent Structural Reform
+
+Wave 3 consolidates Wave 1-2 gains into permanent institutional reform. Success is measured by legislative/constitutional passage and initial implementation.
+
+#### Phase 3A (Months 24-30): Electoral and Campaign Finance Reform
+
+**Primary Actions:**
+- House passes Voting Rights Act restoration (Scenario A)
+- Senate passes DISCLOSE Act or equivalent campaign finance reform (requires Scenario A or A+B state majority)
+- Federal legislation creates public financing system ($50-100M per seat)
+- Proportional representation amendment process begins (requires 34-state coordination, Scenario A+)
+
+**Success Metrics:**
+- VRA restoration or equivalent voting rights protection passed federally or enacted in 20+ states
+- Campaign finance reform reduces dark money spending by 40%+ (measured in 2028 election)
+- Public financing system operational in 2028 elections (20%+ of candidates use public funds)
+- Proportional representation operational in 2-5 states or amendment passed 1 chamber (Scenario A+)
+
+#### Phase 3B (Months 30-36): Civil Service and Judicial Reform
+
+**Primary Actions:**
+- Schedule F is reversed via statute (Scenario A) or blocked by courts (Scenario B-C)
+- Civil service protection is strengthened via statute (Scenario A) or reinforced in courts (Scenario B)
+- Judicial ethics enforcement mechanism is established (federal rule, state enforcement, state AG action)
+- Intelligence and law enforcement oversight is strengthened via statute
+
+**Success Metrics:**
+- Federal workforce returns to 80%+ of pre-crisis levels
+- Federal ethics office or judicial conduct commission with enforcement authority is operational
+- Prosecutorial misconduct referral rate increases from 44/2000 to 500+ per year (measured outcome)
+- Intelligence oversight produces documented findings on unlawful programs (transparency increase)
+
+#### Phase 3C (Months 36-42): Healthcare, Education, Housing, Environment
+
+**Primary Actions:**
+- Healthcare: Medicaid expansion in remaining 10 states; public option or Medicare expansion legislated (Scenario A)
+- Education: Federal investment in equalization reaches $30B+; universal pre-K authorized; debt-free college pathway established
+- Housing: Federal investment in CLTs and cooperative housing reaches $50B+ cumulative; housing rights established (Scenario A)
+- Environment: Carbon pricing or tax mechanism established; renewable energy goals reach 50%+ federal generation
+
+**Success Metrics:**
+- 45+ states have Medicaid expansion operational
+- Median per-pupil spending variance drops from current $20K range to <$5K across states
+- 2M+ units of CLT/cooperative housing or subsidized housing added
+- Federal renewable energy capacity reaches 50% of total
+
+#### Phase 3D (Months 42-48+): Economic Concentration, Tax, Labor, Reparations
+
+**Primary Actions:**
+- Tax reform passes: capital gains rate increases to 28%+, estate tax restoration, corporate minimum tax (Scenario A)
+- Labor: Sectoral bargaining pilots expand; federal right-to-organize legislation passes (Scenario A)
+- Antitrust: Structural breakup authority established; monopsony protections enacted
+- Reparations: Federal commission established (HR 40) with binding recommendations for $100B+ fund
+
+**Success Metrics:**
+- Federal tax revenue increases $200B+ year-over-year (from capital gains, corporate, wealth mechanisms)
+- Union organizing reaches 15%+ of private sector workforce
+- Federal antitrust enforcement produces structural breakups in tech/finance
+- Federal reparations commission issues recommendations; $50B+ committed in first tranche
+
+### Wave 3 Completion Criteria
+
+Wave 3 completion is measured over 48-month window but extends beyond. Completion is achieved when:
+1. Electoral system reform is operationalized (voting rights restored, proportional representation pilot or amendment process in progress)
+2. Campaign finance reform reduces dark money by 50%+ (measured in election cycle)
+3. Civil service protection is statutorily restored and enforced
+4. Judicial ethics enforcement is operational with documented sanctions
+5. Federal investment in Wave 2 alternatives reaches $200B+ cumulative (healthcare, housing, education, renewable energy)
+6. Federal revenue increases $400B+ from tax reform
+7. Labor protections and worker organizing increase measurably
+
+---
+
+## Part V: Contingency Timelines
+
+### If Wave 1 Containment Fails (Scenario C Activation)
+
+If courts are defied without consequence and Congress loses power, the timeline extends:
+- Full contingency scenario unfolds (Months 0-60 Wave 2 acceleration)
+- Constitutional amendment becomes primary pathway (Months 48-120+)
+- State autonomy becomes primary basis for recovery (Months 0-60+)
+
+### If Wave 2 Scales Faster Than Expected
+
+If CDFI assets reach $600B+ within 2 years instead of 4, or if interstate compacts coordinate effectively across 5+ areas within 18 months:
+- Wave 3 can begin 12 months early (at Month 36 instead of Month 48)
+- Constitutional amendment process accelerates (states see proof that alternatives work)
+- Federal reform becomes politically viable even in Scenario B-C
+
+---
+
+## Conclusion: The Window
+
+The recovery timeline is not predetermined. The 2026 elections determine which of three timelines unfolds. But all three timelines have recovery pathways if institutional actors execute them.
+
+The comparative research is clear: windows close. Poland's 2023 window remained open because recovery began before entrenchment completed. Hungary's window closed because delay extended past the point of recovery. The US window is currently open but narrowing with each federal appointment, each civil service dismissal, each court order defied.
+
+The timeline succeeds if conditions trigger at the moments specified. The timeline fails if those conditions are not recognized as the signal to move to the next wave.
+
+---
+
+## References
+
+- Implementation Roadmap (Wave architecture and institutional assignment)
+- Phase 4 Comparative Democratic Recovery (Poland 2023, Hungary 2014 timing analysis)
+- Resistance Master Report (160-movement timing and trigger analysis)
+- PROJECTS.md (recovery initiation conditions and institutional stakeholders)
 
 ---
 
@@ -2605,7 +2931,343 @@ The November 2026 midterm elections represent the most significant decision poin
 
 *Synthesized April 2026*
 
-[Phase 5 Document 3 content...]
+---
+
+## Executive Summary: The Coordination Problem
+
+The democratic renewal proposal contains 22 domains of reform. The implementation roadmap sequences those reforms in three waves. But neither document answers the central operational question: **who coordinates the actors, how do they communicate, and how are conflicts resolved when institutional interests diverge?**
+
+The research on democratic recovery reveals a consistent pattern: **large-scale institutional change requires coordination across mutually suspicious actors who have every reason to defect.** State attorneys general are elected officials with parochial interests. Federal judges value institutional independence, not partisan victory. Labor unions want wage increases; environmental organizations want carbon regulation; tech worker organizations want different things than manufacturing worker organizations.
+
+This document maps the coordination architecture: how elite actors (federal judges, state AGs, career civil service, business leaders) are persuaded to defect from the capture system, how mass organizations build the pressure that makes defection rational, and how disputes between aligned actors are resolved without the alliance fracturing.
+
+---
+
+## Part I: The Elite Defection Cascade
+
+### Why Elite Defection Is Decisive
+
+Every successful democratic recovery in the comparative record featured at least some defection by institutional elites from the capture coalition. Poland's 2023 victory depended on the judiciary standing firm against PiS pressure. Brazil's 2022 recovery depended on the military refusing to intervene on Bolsonaro's behalf. South Africa's transition depended on the apartheid military and security leadership participating in negotiations.
+
+Elite defection is decisive because elites control institutional resources — courts, armies, bureaucracies, media platforms — that can block or enable mass movements. A mass movement of 10 million people cannot win if the military is loyal to the capture regime. But a mass movement of 2 million people can win if a significant portion of the military refuses to deploy against civilians.
+
+The challenge: why would elites defect? Capture regimes typically offer elites something valuable: political loyalty, business favors, or institutional autonomy in exchange for supporting the regime. Defection requires either (1) offering a better deal, (2) making continued support too costly, or (3) demonstrating that the regime is likely to collapse anyway.
+
+### The Federal Judiciary as Primary Defection Target
+
+The federal judiciary below the Supreme Court is the first priority for elite defection because:
+1. **It has already partially defected** — 350 of 362 district court rulings favor challengers (87% win rate)
+2. **Institutional self-interest aligns with democracy** — federal judges benefit from rule of law and institutional independence; they are harmed by a lawless executive
+3. **They have immediate power** — they can block executive action through injunctions
+
+#### Federal Judges: Defection Mechanism
+
+**Current State (April 2026):**
+- District court judges show high defection rate (87% win rate in Trump admin litigation)
+- Appellate judges show variable defection (some circuits more robust than others)
+- Supreme Court shows low defection (6-3 supermajority against challenges)
+
+**Defection Support Strategy:**
+- **Professional coordination:** Judicial conference and federal bar association provide formal channels for judges to coordinate on institutional independence issues
+- **Solidarity signals:** Public statements by sitting judges affirming judicial independence and criticizing executive defiance (done by Chief Justice Roberts in 2025 year-end report; repeated signals strengthen defection)
+- **Legal ammunition:** Wave 1 litigation creates opportunities for judges to issue strong rulings on merits; successful lower court victories strengthen confidence that defection will hold
+
+**Defection Sustainability:**
+- Judges are vulnerable to removal only through impeachment (high bar; requires House + 2/3 Senate)
+- Federal judges are insulated from election outcomes (lifetime appointment)
+- But judges fear being seen as overtly political; defection must be framed as defending institutional independence, not partisan victory
+
+**Coordination Challenge:**
+- Judges value independence and may resist coordination that looks like political alliance
+- Solution: coordination happens through bar associations, judicial conferences, and legal community organizations (professional organizations, rather than political organizing)
+
+#### State Attorneys General as Secondary Defection Target
+
+State AGs are the most functionally effective institutional resistance currently operating. Defection has already begun — 25 Democratic state AGs coordinate actively. The coordination task is sustaining and expanding this coalition.
+
+**Current State (April 2026):**
+- 25 Democratic state AGs meet regularly and coordinate legal strategy
+- Won 40 of 51 major cases against Trump administration
+- Have filed 71 lawsuits with 98% still active
+
+**Defection Support Strategy:**
+- **Formal coalition:** State AG coalition becomes official (monthly meetings, joint strategy, shared legal resources)
+- **Resource sharing:** Wealthy states (NY, CA, IL) fund legal teams for resource-poor states; pro bono legal networks expand
+- **Electoral incentive:** Democratic AGs see AG office as path to higher office (governor, US Senate); anti-Trump litigation is popular in swing districts and builds name recognition
+- **Bipartisan option:** Republican AGs in purple states (Pennsylvania, Wisconsin, Michigan) face political incentive to challenge federal overreach in their state (protecting state sovereignty, a conservative value)
+
+**Defection Sustainability:**
+- AGs are elected officials; they can be threatened with primary/general challenges
+- Solution: movement organizations provide electoral support (endorsements, volunteer resources, donations) for AG defection in exchange for legal action
+- AGs are vulnerable if they lose cases; success builds defection (350+ court victories embolden further legal action)
+
+**Coordination Mechanism:**
+- **Formal:** State AG coalition with monthly coordination, shared legal strategy, rotating chair
+- **Informal:** Law school clinics and pro bono networks provide legal capacity; law schools provide research support
+- **Electoral:** Movement organizations provide campaign support in exchange for AG commitment to specific litigation strategy
+
+#### Career Civil Service as Support Defection
+
+The career civil service is the third defection target. Civil servants cannot directly resist the executive through legal action (they lack standing), but they can slow, leak, and complicate illegal orders.
+
+**Current State (April 2026):**
+- Federal workforce has been cut 15-30% in most agencies
+- Career civil servants have sued on Schedule F classification (some victories in lower courts)
+- Agencies are resisting through leaks and documentation (institutional memory preservation)
+
+**Defection Support Strategy:**
+- **Legal support:** Labor organizations and civil rights groups fund legal defense for federal workers challenging Schedule F
+- **Job protection:** Union representation protects workers from retaliation; union membership is growing among federal workers as response to DOGE actions
+- **Public support:** Whistleblower protections and media platforms protect federal workers who leak documentation of illegal action
+
+**Defection Sustainability:**
+- Civil servants face direct economic threat (job loss, retaliation)
+- Solution: movement organizations provide legal defense funds, income replacement, job transition support
+- Defection is supported by the fact that courts are blocking Schedule F (legal victories embolden further resistance)
+
+**Coordination Mechanism:**
+- **Formal:** Federal employee unions coordinate with civil rights organizations and worker protection networks
+- **Informal:** Whistleblower protection networks provide secure communication, legal support, income replacement
+- **Solidarity:** Federal worker protections are framed as essential to democratic recovery (no democracy without professional civil service)
+
+#### Federal Law Enforcement as Wildcard Defection
+
+Federal law enforcement (FBI, federal prosecutors, federal marshals) is the highest-stakes defection target because failure here (law enforcement enforces illegal orders against citizens) is a regime victory.
+
+**Current State (April 2026):**
+- FBI career officials have publicly criticized the administration
+- Federal prosecutors have continued charging federal crimes without political interference (in some districts)
+- Federal marshals have generally complied with law enforcement authority despite political pressure
+
+**Defection Support Strategy:**
+- **Professional reinforcement:** FBI professional associations and federal prosecutor associations make statements reinforcing institutional independence and rule of law
+- **Media support:** Journalists covering federal law enforcement publicize acts of defection or resistance
+- **Legal consequence:** Federal prosecutors pursue cases against administration officials for illegal action (building record for Wave 3 accountability)
+
+**Defection Sustainability:**
+- Law enforcement careers depend on institutional legitimacy; agents and prosecutors value the rule of law
+- But law enforcement is also hierarchical; career agents can be overruled by political appointees
+- Defection is sustainable if political appointees are constrained by Congress (Scenario A) or courts (Scenario B)
+
+**Coordination Mechanism:**
+- **Formal:** Professional associations provide internal coordination; public statements by career officials reinforce defection
+- **Informal:** Federal prosecutors coordinate with state AGs on joint investigations and enforcement
+- **Accountability:** Movement organizations document law enforcement violations and publicize them, creating pressure for institutional accountability
+
+---
+
+## Part II: Mass Organization and Pressure Strategy
+
+Elite defection is not automatic. Elites defect when defection is rational — when continued support for the regime is too costly or when defection is more advantageous. Mass organization creates the conditions that make defection rational.
+
+### The 3.5% Threshold as Coordination Metric
+
+Erica Chenoweth's research on 250+ campaigns finds that sustained nonviolent campaigns with active participation exceeding 3.5% of the population are invincible. In the US context (330 million), that means 11.6 million sustained, active participants.
+
+The October 2025 "No Kings" protests drew an estimated 7 million — 2.1% of population. This is sufficient to demonstrate that mass mobilization is possible, but mobilization must grow to achieve the 3.5% threshold.
+
+**Coordination Task:** Convert sympathy into sustained participation. The challenge is not mobilizing the 50% of the population that opposes autocracy. The challenge is converting 3.5% of that population (18+ million people) into *sustained* organizational participation — people who show up weekly or monthly, who donate, who take risks, who are embedded in local organizations.
+
+### Civil Society Coalition Architecture
+
+Mass resistance requires organizing across multiple constituencies (labor, environmental, civil rights, faith communities, professional associations, student organizations). These constituencies have different priorities and sometimes conflicting goals.
+
+**Coalition Structure:**
+- **Coordination body:** Steering committee with rotating chair (3-month rotation), representatives from 15-20 major constituencies
+- **Issue-based working groups:** 7-8 working groups corresponding to the 22 proposal domains (elections, civil rights, labor, environment, etc.)
+- **Local infrastructure:** City-level and regional coalitions affiliated with national steering committee but autonomous on local issues
+- **Decision-making:** Consensus with supermajority option (70% consensus required, 60% triggers decision even without consensus)
+
+**Coordination Mechanisms:**
+- **Monthly coordination meetings** (national steering committee)
+- **Weekly working group meetings** (organize by domain)
+- **Biweekly local coalition meetings** (organize by region)
+- **Public-facing campaigns** (coordinated messaging, 4-week campaign cycles)
+
+**Conflict Resolution:**
+- **Mediation protocol:** Disputes between constituencies go through mediation before escalation
+- **Values statement:** Coalition agrees on nonviolence, transparency, and democratic decision-making as non-negotiable
+- **Exit mechanism:** Constituencies can leave coalition; coalition can remove constituencies that violate values
+
+#### Key Constituencies and Coordination Roles
+
+**Labor Unions**
+- Role: Mobilize workers, provide legal defense funds, coordinate strikes/work actions
+- Primary interest: Wage increases, workplace protections, worker power
+- Coordination mechanism: AFL-CIO coordinates with coalition steering committee; constituent unions maintain autonomy on local campaigns
+
+**Environmental Organizations**
+- Role: Mobilize on climate/environmental issues, provide policy expertise, pressure federal agencies
+- Primary interest: Climate action, environmental protection, renewable energy
+- Coordination mechanism: Sierra Club, 350.org, other major orgs coordinate through steering committee; working group on environment/climate
+
+**Civil Rights Organizations**
+- Role: Mobilize on voting rights, criminal justice, racial justice, immigrant rights
+- Primary interest: Racial justice, voting rights, police accountability, immigration
+- Coordination mechanism: NAACP, CAIR, League of Women Voters, immigrant rights organizations coordinate through steering committee; working groups on voting, criminal justice, immigration
+
+**Faith Communities**
+- Role: Provide moral authority, mobilize congregations, provide community infrastructure
+- Primary interest: Social justice, peace, interfaith cooperation
+- Coordination mechanism: Faith-based coalitions (religious leaders organizations, interfaith networks) coordinate through steering committee; maintain denominational autonomy
+
+**Professional Associations**
+- Role: Mobilize professionals (teachers, healthcare workers, lawyers, engineers), provide expertise
+- Primary interest: Professional autonomy, standards, workplace conditions
+- Coordination mechanism: National unions/associations coordinate through steering committee; working groups on specific domains (education, healthcare, etc.)
+
+**Student and Youth Organizations**
+- Role: Mobilize young people, provide sustained volunteer capacity, reach new constituencies
+- Primary interest: Climate, education access, economic opportunity, democracy
+- Coordination mechanism: College student organizations, youth-led nonprofits coordinate through steering committee; working group on youth mobilization
+
+---
+
+## Part III: Dispute Resolution and Coalition Sustainability
+
+### Common Disputes and Resolution Mechanisms
+
+**Dispute Type 1: Resource Allocation**
+
+When coalition has limited resources (funding, volunteer capacity, media platforms), different constituencies demand different allocations.
+
+*Example:* Labor unions want focus on worker organizing in swing districts. Environmental organizations want focus on climate action. Civil rights organizations want focus on voting rights.
+
+**Resolution Mechanism:**
+- **Needs assessment:** Steering committee assesses which issues are most time-sensitive and highest-impact
+- **Sequencing:** Issue priorities are sequenced across time; voting rights gets focus in months 0-6, labor organizing in months 6-12, climate in months 12-18 (example)
+- **Parallel work:** Where possible, constituencies work on their priorities in parallel rather than sequentially
+- **Resource sharing:** Constituencies with surplus capacity provide support to capacity-constrained constituencies
+
+**Dispute Type 2: Tactical Disagreement**
+
+When constituencies disagree on tactics (mass protest vs. electoral focus, civil disobedience vs. legal challenge).
+
+*Example:* Some constituencies prefer mass protest and confrontation; others prefer working within electoral system and litigation.
+
+**Resolution Mechanism:**
+- **Parallel tracks:** Both tactics proceed in parallel; coalition doesn't require unanimous tactics
+- **Nonviolence commitment:** Only constraint is shared commitment to nonviolence; tactical disagreements happen within that constraint
+- **Learning feedback:** Results of different tactics inform subsequent strategy; successful tactics get expanded
+
+**Dispute Type 3: Demand Disagreement**
+
+When constituencies disagree on what policy demands the coalition should make.
+
+*Example:* Some constituencies want abolish police; others want police reform. Some want wealth tax; others want corporate rate increase only. Some want reparations; others hesitant.
+
+**Resolution Mechanism:**
+- **Principle vs. policy:** Distinguish between principles (all humans deserve justice, economic inequality is unjust) and policy mechanisms (how to achieve those principles)
+- **Multiple pathways:** Proposal contains multiple reform pathways for most issues; coalition can include constituencies supporting different pathways
+- **Sequencing:** Sequencing allows priorities to shift; if wealth tax is infeasible but corporate rate increase is, strategy adjusts
+- **Minority protection:** Minority constituencies can campaign for their preferred policies while supporting coalition's majority position
+
+### Coalition Sustainability Beyond 2026
+
+Coalition sustainability requires that coalition provides value to member constituencies beyond the immediate crisis. Failure mode: constituencies defect once immediate threat recedes or once their specific priority is achieved.
+
+**Sustainability Mechanisms:**
+
+1. **Ongoing governance:** Coalition structure extends beyond recovery; becomes permanent institution for coordinating on ongoing policy
+2. **Fiscal sustainability:** Coalition develops funding streams (member organizations, foundation grants, small-donor fundraising) that don't depend on crisis mobilization
+3. **Demonstrated success:** Early wins build confidence; coalition that delivers results retains members; coalition that fails to deliver loses members
+4. **Mission expansion:** Once recovery threat recedes, coalition reframes as vehicle for advancing broader progressive agenda (workplace power, climate action, racial justice)
+5. **Institutional embedding:** Coalition members embed coalition priorities in their own organizational structures; union contracts demand strong labor standards, foundations direct grants toward coalition priorities, etc.
+
+---
+
+## Part IV: Federal, State, and Local Coordination
+
+### The Three-Level Coordination Challenge
+
+Recovery requires coordination across federal, state, and local levels. But these levels have different actors with different interests:
+- **Federal:** Congress, federal courts, federal agencies, federal law enforcement
+- **State:** State governors, state legislatures, state attorneys general, state courts, state agencies
+- **Local:** City mayors, city councils, local organizations, community institutions
+
+A federal victory (House flip in 2026) does not automatically translate to state/local success. A state victory (Democratic governor) does not automatically translate to federal or local success.
+
+### Federal-State Coordination Mechanism
+
+**Formal Structure:**
+- **Governors association:** Democratic governors coordinate on state policy innovation
+- **State AG coalition:** 25+ state AGs coordinate on litigation
+- **State legislative coordination:** Progressive state legislative organizations coordinate on policy model legislation
+- **Congress:** Democratic members of Congress coordinate with governors and state legislatures on federal/state alignment
+
+**Informal Structure:**
+- **Policy sharing:** Progressive Policy Institute and other policy shops produce model legislation for state adoption
+- **Legal resource sharing:** Large states fund legal defense and litigation support for smaller states
+- **Media coordination:** National and state media outlets coordinate on messaging
+
+### State-Local Coordination Mechanism
+
+**Formal Structure:**
+- **Mayors association:** Democratic mayors coordinate on city policy
+- **City council coordination:** Progressive city council organizations coordinate on municipal policy
+- **County government coordination:** County organizations coordinate on service delivery innovation
+
+**Informal Structure:**
+- **Policy networks:** Progressive data and policy organizations facilitate peer learning across cities
+- **Legal support:** City leagues of attorneys provide legal support for municipal litigation
+- **Community organization networks:** National organizations embed local chapters that coordinate with city government
+
+---
+
+## Part V: The Elite Defection Timeline
+
+Elite defection does not happen all at once. It unfolds in waves, with each act of defection emboldening subsequent defection.
+
+### Month 0-3: Initial Defection (Post-2026 Election)
+- Federal courts continue high win rate (defection already underway)
+- State AG coalition formalizes
+- Federal judges make strong public statements on judicial independence
+- A 10-15 Republican state AGs signal openness to challenges on federalism grounds
+
+### Month 3-6: Defection Expansion
+- Federal prosecutors begin charging administration officials
+- Career civil service litigation produces victories on Schedule F challenges
+- Additional Republican AGs defect (on specific state-interest issues like environmental protection)
+- Federal law enforcement agencies issue internal guidance reaffirming professional independence
+
+### Month 6-12: Defection Consolidation
+- Defection becomes politically normal; bipartisan cooperation on rule-of-law issues becomes publicly acceptable
+- Additional business leaders defect (tired of policy uncertainty, demanding clarity)
+- Federal judges issue additional strong rulings; defiance by executive becomes visibly costly
+- Civil service litigation victories accumulate; Schedule F faces multiple legal defeats
+
+### Month 12-18: Defection Lock-In
+- Defection becomes self-reinforcing; success of litigation creates confidence that courts will hold
+- Media coverage normalizes defection; defection is framed as "institutional independence" rather than "partisan resistance"
+- Business elite fractionally aligns with recovery (tariff victims demand regulatory predictability; tech wants antitrust not emergency decree)
+- Federal workforce stabilization is visible; institutional capacity begins recovery
+
+### Month 18+: Defection Maintenance
+- Defection is sustained through institutional structures (bar associations, professional organizations)
+- Defection becomes normal operation of government rather than crisis response
+- Wave 1 transitions to Wave 2-3 implementation with defected elites now supporting institutional reform
+
+---
+
+## Conclusion: The Architecture of Coordination
+
+Democratic recovery requires coordination across elites and masses with conflicting interests and every reason to defect. The architecture that makes this possible:
+- **Elite defection** through pressure and incentive alignment (courts have institutional interest in rule of law, AGs are elected officials responsive to mass pressure, federal workers fear for their jobs)
+- **Mass coordination** through coalition structure with conflict resolution mechanisms
+- **Federal-state-local alignment** through formal and informal networks that facilitate policy learning and resource sharing
+- **Sustainability mechanisms** that extend coordination beyond the immediate crisis
+
+The most critical insight: **coordination survives disagreement** through structure that allows constituencies to disagree on tactics or specifics while maintaining alignment on principles and sequencing. Coalition that requires unanimity fails. Coalition that allows parallel work on different priorities survives.
+
+---
+
+## References
+
+- Implementation Roadmap (wave architecture and institutional assignment)
+- Erica Chenoweth, Civil Resistance (3.5% threshold and nonviolent campaign research)
+- Comparative Democratic Recovery (elite defection patterns in Poland 2023, Brazil 2022, South Africa 1993)
+- Power Mapping (institutional veto players and vulnerabilities)
+- Resistance Master Report (160-movement analysis of coordination mechanisms)
 
 ---
 
@@ -2613,232 +3275,437 @@ The November 2026 midterm elections represent the most significant decision poin
 
 *Synthesized April 2026*
 
-[Phase 5 Document 4 content...]
+---
+
+## Executive Summary: The Derailment Vectors
+
+The implementation roadmap, timeline, and coordination architecture define how recovery succeeds. This document identifies what could derail that recovery and the mitigation strategies that prevent derailment.
+
+The comparative research yields a clear finding: **recovery fails not because the resistance is weak, but because the resistance underestimates what the capture regime can do in response.** Hungary's opposition failed to anticipate how quickly Fidesz would capture the judiciary; by the time the opposition woke up, the institutional defenses were gone. Venezuela's opposition failed to anticipate how Maduro would suppress opposition organizing; the opposition had no contingency for escalating repression.
+
+The US has certain advantages: federal system means full national capture is harder; multiple centers of power (states, courts, Congress) mean single point of failure is less likely. But the capture regime will respond to recovery attempts with escalating counterattack. Anticipating those counterattacks and building defenses against them is the difference between recovery and defeat.
 
 ---
 
-# PART V: HOW THIS CONNECTS
-|--------|-----------|---------------|----------------|
-| Pre-populated tax returns | IRS administrative action | Political will only | 80%+ of returns pre-filled within 18 months |
-| Open government data API mandate | Executive order | None | 500+ federal datasets available as APIs within 12 months |
-| Transparent public finance ledger | Executive order | Agency technical capacity | All federal transactions publicly searchable within 24 months |
-| Citizens' Assembly (advisory) | Executive order | Appropriation for staffing | First assembly convened within 12 months; first recommendation within 18 months |
-| Participatory budgeting pilot | Administrative action | Agency buy-in | 10% of discretionary spending in 3+ agencies allocated via participatory process |
-| RCV adoption in 5+ additional states | State ballot initiatives | Advocacy infrastructure | Successful ballot measures in 2026 and 2027 election cycles |
-| Independent redistricting in 3+ states | State ballot initiatives | Legal preparation | Commissions operational before 2030 redistricting cycle |
-| Municipal LVT pilots | City council action | Academic and policy support | 5+ cities implement split-rate property taxes |
-| Digital identity pilot | Federal program | Privacy framework in place | 1 million voluntary enrollees within 24 months |
-| Movement organizational depth | Civil society action | Funding, leadership | Local chapters in 500+ congressional districts with regular meetings |
-| NHSC expansion + FQHC funding | Federal statute + appropriation | Congressional majority | Medical education fully funded for 10-year underserved commitment; 1 FQHC per 15,000 in shortage areas |
-| Telehealth as permanent modality | Federal statute | Congressional majority | Full reimbursement parity; rural specialist access expanded |
-| Mental health parity enforcement | Federal regulatory action + statute | Agency capacity | Denial rate parity between mental and physical health claims within 24 months |
-| Emergency docket reform | Federal statute | Congressional majority | Written opinions required; minimum briefing schedules; factual reassessment authority restored |
-| Court order enforcement statute | Federal statute | Congressional majority | Automatic fiscal consequences for contempt; independent compliance monitors authorized |
-| Government data weaponization prohibition | Federal statute | Congressional majority | Access audit logging mandatory; Data Protection Authority established |
-| Federal shield law / press freedom | Federal statute | Congressional majority | Source protection codified; anti-retaliation enforcement mechanism operational |
-| Housing First federal standard | Federal regulatory action | HUD capacity | Homelessness funding redirected to permanent supportive housing; 50,000 units converted from vacant commercial |
-| Federal tenant protections (minimum) | Federal statute | Congressional majority | Just-cause eviction, right to counsel, 90-day notice established as federal floor |
-| Lead service line replacement (accelerated) | Federal statute + appropriation | Congressional majority | Full federal funding committed; 10-year replacement timeline with EJ priority |
-| Municipal broadband preemption override | Federal statute | Congressional majority | State laws blocking municipal broadband preempted; 100+ new municipal networks in planning |
-| National police misconduct registry | Federal statute (funding condition) | Congressional majority | Mandatory reporting for all agencies receiving federal grants; registry publicly searchable |
-| Federal cash bail abolition | Federal statute | Congressional majority | Cash bail eliminated for federal offenses; pretrial services funded |
-| Ban the box (federal employment) | Federal statute | Congressional majority | Criminal history inquiry delayed until conditional offer for all federal positions |
-| Voting rights restoration (federal elections) | Federal statute | Congressional majority | Automatic restoration upon release from incarceration; fines/fees cannot condition franchise |
-| NOAA independence and funding | Federal statute | Congressional majority | Statutory independence enacted; funding increased to $8B; satellite gap addressed |
-| Environmental justice statute | Federal statute | Congressional majority | Cumulative impact assessment required; private right of action; EJ Mapping Office operational |
-| Moratorium on new federal fossil fuel leasing | Executive order + statute | Political will + congressional majority | No new leases issued; existing lease obligations honored |
-| National Climate Resilience Fund (initial) | Federal statute + appropriation | Congressional majority | $50B fund capitalized; managed retreat pilot programs in 5+ communities |
-| Climate-adjusted building code mandate | Federal regulatory action | Agency capacity | All new federally funded construction designed for 2070 climate conditions |
-| End private immigration detention (phase-out) | Federal statute + executive order | Congressional majority | No new private contracts; existing contracts non-renewed; 3-year transition |
-| Right to counsel in immigration proceedings | Federal statute + appropriation | Congressional majority | Appointed counsel for all persons in removal proceedings; legal aid funding |
-| Community-based alternatives to detention | Executive order + administrative action | Agency restructuring | 80% of current detained population transitioned to community supervision; 99% appearance rate target |
-| Warrant requirement for ICE enforcement | Federal statute | Congressional majority | Judicial warrants required for all enforcement actions; administrative warrants prohibited |
-| Federal minimum wage increase ($17/hr indexed) | Federal statute | Congressional majority | $17/hr immediate; automatic annual CPI adjustment; tipped sub-minimum eliminated |
-| Federal paid family and medical leave | Federal statute | Congressional majority | 12 weeks at 80% wage replacement; funded by 0.4% payroll contribution |
-| Federal paid sick leave (7 days) | Federal statute | Congressional majority | 7 days guaranteed for all workers; accrual from day one |
-| Non-compete ban (workers under $100K) | Federal statute | Congressional majority | Non-competes unenforceable below threshold; FTC enforcement authority |
-| OSHA funding and inspector increase | Federal statute + appropriation | Congressional majority | Inspector count doubled; heat/violence/ergonomic standards initiated |
-| Universal child benefit ($300/month) | Federal statute | Congressional majority | All children receive monthly benefit; child poverty reduced 40%+ within 2 years |
-| Federal childcare cost cap (7% of income) | Federal statute + appropriation | Congressional majority | No family pays more than 7% of income; provider subsidies maintaining quality |
-| SNAP benefit increase (30%) + college student eligibility | Federal statute | Congressional majority | Maximum SNAP benefits raised; college students and formerly incarcerated eligible |
-| Universal free school meals (permanent) | Federal statute | Congressional majority | All K-12 students receive free meals; Summer EBT for all eligible children |
-| SSI asset limit increase ($2,000 → $10,000) | Federal statute | Congressional majority | Asset limit raised immediately; 5-year elimination timeline enacted |
-| SSDI/SSI waiting period elimination | Federal statute | Congressional majority | Five-month SSDI and two-year Medicare waiting periods eliminated |
-| Unemployment insurance federal floor (26 weeks, 60%) | Federal statute | Congressional majority | Minimum 26 weeks at 60% wage replacement in all states; automatic extended benefits trigger |
-| War Powers Reform Act (repeal 2001/2002 AUMFs) | Federal statute | Congressional majority | AUMFs repealed; new framework requires specific, time-limited authorizations |
-| Pentagon audit compliance requirement | Federal statute | Congressional majority | 5-year deadline for clean audit; 1% annual reduction for non-compliance |
-| VA healthcare staffing and access | Federal statute + appropriation | Congressional majority | 43,000+ position vacancies filled; 30-day access standard met |
-| VA disability claims processing reform | Federal statute + appropriation | Congressional majority | Average processing time reduced from 151 to 60 days |
-| Intelligence Community IG independence | Federal statute | Congressional majority | Independent budget, subpoena power, DNI override prohibited |
-| State Department funding increase (Year 1-2) | Federal statute + appropriation | Congressional majority | 20% initial increase; ambassador vacancies filled |
-| FTC/DOJ Antitrust Division budget tripling | Federal appropriation | Congressional majority | Combined budget from $800M to $2.4B; Digital Markets Unit established |
-| Non-compete ban (workers under $150K) | Federal statute | Congressional majority | Non-competes unenforceable below threshold; FTC enforcement |
-| Corporate political spending disclosure | SEC rulemaking | SEC majority | All political spending (lobbying, PACs, trade associations) disclosed; shareholder approval required |
-| Retrospective merger review program | Federal statute + FTC administrative action | Congressional majority | FTC reviews all mergers >$1B five years post-completion; divestiture authority for anti-competitive outcomes |
-| State AG competition enforcement grants | Federal appropriation | Congressional majority | $500M/year distributed to state AGs for antitrust enforcement |
-| Federal moratorium on government facial recognition in public spaces | Executive order | Political will only | All federal agencies halt real-time FR deployment pending accuracy standards |
-| Prohibition on warrantless data broker purchases by government | Federal statute | Congressional majority | Law enforcement warrant required for all commercial data acquisitions |
-| PCLOB reform (quorum, subpoena, independence) | Federal statute | Congressional majority | Board at full membership; independent budget; mandatory access to classified programs |
-| Ban on government monitoring of lawful protest | Federal statute + executive order | Congressional majority | Individualized probable cause required; social media monitoring restricted |
-| Inspector General Independence Act | Federal statute | Congressional majority | IG removal only for cause; protected budgets (0.5% of agency budget); 60-day report publication mandate |
-| Federal ethics and conflict-of-interest reform | Federal statute | Congressional majority | Real-time financial disclosure; mandatory divestiture; 5-year lobbying ban; tax return disclosure for candidates |
-| Federal Civic Infrastructure Fund | Federal statute + appropriation | Congressional majority | $2-5B annual fund; non-partisan civic capacity building in 500+ districts |
-| Participatory budgeting matching grants | Federal statute + appropriation | Congressional majority | 50-city pilot with federal matching; expansion plan to all cities >50,000 |
-| DOJ Civil Rights Division budget tripling | Federal appropriation | Congressional majority | Budget increased from $170M to $500M; pattern-or-practice investigations expanded |
-| John Lewis Voting Rights Advancement Act | Federal statute | Congressional majority | Preclearance restored with updated formula; 1,688+ polling place closures addressed |
-| Federal office of racial equity | Federal statute + executive order | Congressional majority | Racial impact assessment for all major regulations; disaggregated data collection |
-| Algorithmic discrimination ban | Federal statute | Congressional majority | Pre-deployment bias audits; private right of action; housing/employment/lending/criminal justice |
-| State-level baby bonds (5+ states) | State legislation | State legislative majorities | Connecticut/D.C. model replicated; 1M+ children enrolled |
+## Part I: Institutional Derailment Vectors
 
-## Phase 2: Medium-Term (2-6 Years)
+### Risk 1: Supreme Court Escalation and Lower Court Defection
 
-**Focus**: Federal legislation, institutional reform, scaling proven state/local innovations.
+**Threat:** The Supreme Court uses emergency procedures to override lower court victories, declaring lower court orders void or reversing injunctions on procedural grounds (as it has already begun doing). Over time, lower court judges, facing repeated reversals, lose confidence that their defiance will be sustained, and defection collapses.
 
-| Action | Mechanism | Prerequisites | Success Metric |
-|--------|-----------|---------------|----------------|
-| Multi-member proportional House districts | Federal statute | Congressional majority | Enacted and applicable to 2032 elections |
-| Campaign finance reform (matching + disclosure) | Federal statute | Congressional majority | Small-donor matching operational for 2034 cycle |
-| Civil service protections (strengthened) | Federal statute | Congressional majority | Merit protections codified beyond executive reversal; 50,000 Schedule F positions restored to merit system |
-| Independent agency safeguards | Federal statute | Congressional majority | Fixed terms, supermajority removal, protected budgets for all major regulatory agencies |
-| Independent federal anti-corruption agency | Federal statute | Congressional majority + Phase 1 ethics reform | Agency operational with own prosecutorial authority; bipartisan leadership; jurisdiction over all three branches |
-| Supreme Court term limits | Federal statute | Congressional majority + legal strategy | 18-year term system operational |
-| Carbon tax with citizen dividend | Federal statute | Congressional majority | $100/ton CO2 with 100% dividend return |
-| Federal privacy legislation (see Domain 21 for expanded scope) | Federal statute | Congressional majority | Comprehensive privacy rights enforceable by individuals |
-| Public interest media endowment | Federal statute | Congressional majority | $5B+ annual independent funding for local journalism |
-| Immigration enforcement standards | Federal statute | Congressional majority | Warrant requirements, right to counsel codified |
-| Federal anti-corruption agency | Federal statute | Congressional majority | Independent prosecutorial authority operational |
-| Citizens' assemblies in 10+ states | State action | Demonstrated federal success | Advisory assemblies producing recommendations |
-| Digital government infrastructure (X-Road equivalent) | Federal statute + executive action | Technical development | Interoperable data exchange across federal agencies |
-| Weighted per-pupil funding with federal equalization | Federal statute | Congressional majority + 5-year phase-in | Poorest districts at national median per-pupil expenditure |
-| Universal civics education mandate | Federal statute (funding condition) | Congressional majority | Civics required in all federally funded schools; assessment framework operational |
-| Teacher minimum salary + debt forgiveness | Federal statute | Equalization funding in place | $60,000 minimum (inflation-indexed); debt forgiveness after 5 years in high-need schools |
-| Debt-free public higher education | Federal-state cost sharing statute | Congressional majority | Tuition-free for families under $125,000; Pell Grants cover living expenses |
-| Public option + all-payer rate setting | Federal statute | Congressional majority | Public insurance available to all; standardized rates across all payers |
-| Drug price negotiation (all drugs, all payers) | Federal statute | Congressional majority | Negotiated prices applied universally; annual OOP cap $2,000 |
-| Administrative simplification mandate | Federal statute + regulation | Congressional majority | Standardized billing, universal claims forms, automated prior authorization |
-| Patent reform (anti-evergreening) | Federal statute | Congressional majority | Evergreening prohibited; public-funding pricing clause in NIH licenses |
-| RCV/proportional representation in 15+ states | State action | Demonstration effects | Adopted for state and local elections |
-| Universal broadband (100/100 Mbps) | Federal statute + investment | Municipal broadband authorized | 99%+ coverage; broadband classified as essential utility |
-| Energy grid modernization ($400B program) | Federal statute + appropriation | Congressional majority | Transmission capacity doubled; grid hardened against extreme weather; ERCOT integrated |
-| Water Infrastructure Trust Fund | Federal statute | Congressional majority | Predictable 20-year funding for water/wastewater; lead pipes 50% replaced |
-| Federal zoning reform incentives | Federal statute | Congressional majority | Federal funding conditioned on exclusionary zoning removal; 50% of jurisdictions reformed |
-| Social housing program (500K units/decade) | Federal statute | Revenue stream established | 50,000 units/year in construction; mixed-income, permanently affordable |
-| Anti-speculation measures | Federal statute | Congressional majority | Portfolio surcharge, 1031 reform, MID restructured as flat credit |
-| Public transit operating funding | Federal statute | Congressional majority | Federal operating support established; 20+ metro areas expand service |
-| Intercity rail expansion | Federal statute + appropriation | Congressional majority | 5+ new corridors in construction; passenger rail competitive with driving on 100-500mi routes |
-| End qualified immunity (federal statute) | Federal statute | Congressional majority | Statutory civil liability framework; professional liability insurance for officers |
-| Federal sentencing reform | Federal statute | Congressional majority | Mandatory minimums eliminated for nonviolent drug offenses; crack/powder parity at 1:1; sentence review mechanism operational |
-| Prohibit private prisons (federal) | Federal statute | Congressional majority | All federal and immigration detention in public facilities within 3 years |
-| Public defender funding parity | Federal statute + appropriation | Congressional majority | Federal public defenders at ABA-recommended caseloads (150 felonies/attorney/year) |
-| State cash bail reform in 20+ states | State legislation | Demonstration effects from NJ/IL/federal | Pretrial detention based on risk, not wealth, in majority of states |
-| Federal clean energy standard (80% by 2035) | Federal statute | Congressional majority | Clean energy standard enacted; interim milestones binding; utilities on compliance track |
-| Federal Transmission Authority | Federal statute | Congressional majority | Interstate transmission permitting reduced to 2 years; 10+ priority corridors in construction |
-| Just Transition Act | Federal statute + appropriation | Congressional majority | Automatic benefits triggered for all fossil fuel facility closures; 50,000+ workers enrolled |
-| National Climate Bank ($100B) | Federal statute | Congressional majority | Green Bank operational; $8 private leverage per $1 public capital; clean energy financing in all 50 states |
-| Codify EPA GHG authority with binding targets | Federal statute | Congressional majority | 50% reduction target by 2035 in law; annual compliance reporting; penalties for non-attainment |
-| National ecological restoration program | Federal statute + appropriation | Congressional majority | $20B/year; 10 million acres in active restoration; 200,000+ restoration jobs |
-| Tribal co-management expansion | Federal statute | Congressional majority + tribal consultation | Co-management agreements for 20+ significant federal land areas |
-| NFIP reform and managed retreat funding | Federal statute | Congressional majority | Subsidized coverage phased out in repetitive loss areas; voluntary buyout programs in 50+ communities |
-| State clean energy standards in 30+ states | State legislation | Demonstration effects | 80%+ clean electricity targets adopted in majority of states |
-| Independent Article I immigration courts | Federal statute | Congressional majority | Immigration judges with fixed terms, removal for cause only; caseload caps; backlog reduction plan |
-| Comprehensive immigration reform (pathway + visa reform) | Federal statute | Congressional majority | 10-year pathway for 11M+ undocumented; per-country caps eliminated; family backlog clearance plan |
-| End 287(g) and local enforcement deputization | Federal statute | Congressional majority | All 287(g) agreements terminated; local-federal immigration enforcement cooperation limited to serious criminal matters |
-| Immigration surveillance reform | Federal statute | Congressional majority | Database firewalls between immigration and other systems; facial recognition ban in enforcement; Palantir contracts reviewed |
-| Sectoral bargaining framework | Federal statute | Congressional majority | Tripartite wage boards operational in 5+ industries; sector-wide minimum standards binding |
-| PRO Act (comprehensive labor law reform) | Federal statute | Congressional majority | Card check, captive audience ban, meaningful ULP penalties, right-to-work override, ag/domestic worker inclusion |
-| Federal worker classification (ABC test) | Federal statute | Congressional majority | ABC test codified; misclassification penalties; portable benefits for platform workers |
-| Mandatory arbitration ban (employment) | Federal statute | Congressional majority | Workers restored to court access; class action remedies available for employment disputes |
-| State-level preemption reform in 15+ states | State legislation | Demonstration effects | Local minimum wage, paid leave, and tenant protection authority restored in majority of states |
-| Guaranteed minimum income (replace TANF/SSI patchwork) | Federal statute | Congressional majority + Phase 1 child benefit operational | No American below 125% FPL; 30% phase-out rate; consolidated application |
-| SSI asset limit elimination | Federal statute | Congressional majority + Phase 1 increase enacted | Asset limit fully eliminated; ABLE Act simplified |
-| UI modernization (technology + gig worker coverage) | Federal statute + appropriation | Congressional majority + worker classification enacted | COBOL systems replaced; gig/part-time workers covered; automatic stabilizers operational |
-| Disability determination reform | Federal statute + agency reform | Congressional majority + digital infrastructure | 90-day processing target; realistic labor market criteria; ALJ hiring |
-| Defense Spending Commission | Federal statute | Congressional majority | Independent BRAC-model commission operational; first reallocation recommendations issued |
-| 10% defense-to-domestic reallocation (10-year) | Federal statute + appropriation | Commission recommendations | $89B redirected to pandemic preparedness, cyber defense, climate resilience, diplomacy |
-| Arms sales reform (human rights conditions) | Federal statute | Congressional majority | Arms sales to serious human rights violators suspended; congressional review strengthened |
-| Veteran transition program (12-month pre-separation) | Federal statute + appropriation | Congressional majority | Comprehensive transition services beginning 12 months before separation; 5-year post-separation healthcare |
-| State Department + USAID tripling (10-year) | Federal statute + appropriation | Congressional majority | Diplomatic staffing rebuilt; development spending reaching 0.37% GDP (DAC average) |
-| Conflict Prevention Fund ($10B/year) | Federal statute + appropriation | Congressional majority | Early intervention in fragile states; democratic governance and anti-corruption programs |
-| International agreement withdrawal reform | Federal statute | Congressional majority | Senate consent required for withdrawal from ratified treaties and executive agreements |
-| Permanent independent privacy board | Federal statute | Congressional majority | Intelligence program civil liberties review; mandatory compliance authority |
-| Competition standard reform (replace consumer welfare) | Federal statute | Congressional majority | Structural presumptions against high-concentration mergers; public interest test for critical sectors |
-| Tech platform structural separation | FTC/DOJ enforcement + federal statute | Congressional majority + agency capacity | Platform-commerce separation (Amazon); search-advertising separation (Google); interoperability mandates |
-| Healthcare consolidation caps | Federal statute + FTC enforcement | Congressional majority | Hospital system market share capped at 30% per metro; insurer-provider vertical integration prohibited |
-| Agricultural monopsony enforcement | Federal statute + USDA action | Congressional majority | Packers and Stockyards Act enforced; mandatory price reporting; tournament compensation banned |
-| Worker codetermination (firms >1,000 employees) | Federal statute | Congressional majority | Worker board representation for firms with 1,000+ employees |
-| Glass-Steagall restoration | Federal statute | Congressional majority | Commercial-investment banking separation reinstated; institutional liabilities capped at 2% GDP |
-| Stock buyback restrictions (federal contractors) | Federal statute | Congressional majority | Buybacks prohibited for firms receiving federal contracts, subsidies, or tax incentives |
-| U.S. Data Rights Act (comprehensive federal privacy) | Federal statute | Congressional majority | Data minimization, consent requirements, private right of action, $1K-10K statutory damages |
-| Federal Data Protection Agency | Federal statute | Congressional majority | 2,000+ staff; $500M budget; rulemaking, investigation, enforcement authority; penalties up to 4% global revenue |
-| Section 702 reform (warrant requirement for U.S. persons) | Federal statute | Congressional majority | Warrantless backdoor searches prohibited; permanent FISA Court amici; annual transparency reports |
-| Third-party doctrine reform (warrant for all personal data) | Federal statute + litigation | Congressional majority + litigation strategy | Government warrant required for all personal data held by third parties |
-| Federal biometric privacy act (BIPA model) | Federal statute | Congressional majority | Consent required for biometric collection; private right of action; emotion recognition banned |
-| Algorithmic impact assessments (federal agencies) | Federal statute + executive order | Congressional majority | All automated decision systems assessed for bias; public review; Data Protection Agency oversight |
-| Digital Rights Ombudsman | Executive order + federal statute | Congressional majority | Independent office receiving complaints on government data collection and algorithmic decisions |
-| Data broker registration and regulation | Federal statute + FTC rulemaking | Congressional majority | All data brokers registered; data sources and buyers disclosed; sale of geolocation/biometric/health data restricted |
-| Federal Reparations Commission (HR 40+) | Federal statute | Congressional majority | Commission established; BRAC-model binding recommendations; 2-year mandate; $50M budget |
-| Community Reinvestment and Restoration Fund ($200B/10yr) | Federal statute + appropriation | Congressional majority | $20B/year to formerly redlined census tracts; community governance; anti-displacement protections |
-| Federal baby bonds program | Federal statute | Congressional majority | Progressive trust accounts for every child; $60-80B/year; accessible at age 18 |
-| Targeted homeownership grants | Federal statute + appropriation | Congressional majority | $25K-50K grants for first-generation buyers; enhanced in formerly redlined tracts |
-| Estate tax restoration ($3.5M exemption, 45% rate) | Federal statute via reconciliation | Congressional majority | Revenue dedicated to baby bonds and community reinvestment |
-| Disparate impact enforcement codification | Federal statute | Congressional majority | Title VII, FHA, Title VI, ECOA standards codified against judicial narrowing |
-| National Truth and Accountability Commission | Federal statute | Congressional majority | 3-year mandate; subpoena power; public hearings in every state; educational integration |
+**Probability:** High (10-30% chance of significant lower court defection by Month 12 of Wave 1)
 
-## Phase 3: Long-Term (6-20 Years)
+**Mitigation Strategies:**
 
-**Focus**: Constitutional amendments, digital infrastructure maturation, cultural change.
+1. **Federal Judge Alliance Reinforcement**
+   - Federal judges collectively issue statements defending institutional independence
+   - Chief Justice Roberts and other moderate judges make public statements on judicial independence (already begun)
+   - Judicial conference passes resolutions defending lower court autonomy
+   - **Cost to mitigate:** $0 (relies on existing institutional mechanisms)
+   - **Success criterion:** 80%+ of lower court judges cite institutional independence as rationale for defiance
 
-| Action | Mechanism | Prerequisites | Success Metric |
-|--------|-----------|---------------|----------------|
-| Citizens United constitutional amendment | Amendment (2/3 + 3/4 states) | Sustained movement, 28+ state resolutions | Ratification |
-| Constitutional civil service protections | Amendment | Broad bipartisan support | Ratification |
-| Affirmative right to vote | Amendment | Broad bipartisan support | Ratification |
-| Citizens' Assembly with binding authority | Amendment or evolving statutory framework | Decade of advisory track record | Veto power over constitutional and electoral questions |
-| Full proportional representation | Federal statute (already enacted in Phase 2) + cultural normalization | Multiple election cycles of experience | Multi-party system producing stable coalition governments |
-| Full digital government infrastructure | Ongoing executive + statutory | 10-15 years of technical development | 99%+ of government services available digitally with offline fallbacks |
-| Remote electronic voting for narrow use cases | Federal/state statute | Digital identity matured, E2E-V deployed, 10+ years of graduated testing | UOCAVA voters and voters with severe disabilities can vote remotely with auditable security |
-| LVT as significant revenue source | State and federal statute | 15-year phase-in | 3-5% LVT generating $500B+ nationally |
-| Universal automated tax filing | IRS modernization | Full reporting infrastructure | Zero filing for 95%+ of citizens |
-| Lifelong learning infrastructure | Federal statute | Debt-free higher ed operational | $5,000 Right to Learn accounts for all citizens; 10-year replenishment cycle |
-| Public option enrollment majority | Market dynamics | Public option + all-payer operational | Public option enrolls 50%+ of population through demonstrated superiority |
-| Rural healthcare parity | Ongoing investment | NHSC + FQHC + telehealth scaled | Rural life expectancy gap narrowed to <2 years; no remaining hospital deserts |
-| Cultural shift: civic identity as norm | Educational reform, media ecosystem, participatory institutions | Generation of institutional experience | Voter turnout consistently above 70%; civic engagement metrics comparable to Nordic countries |
-| Housing affordability restoration | Zoning reform + social housing + anti-speculation | Decade of sustained policy | Median home price returns to 3-4x median income; homelessness functionally ended |
-| Complete lead pipe replacement | Ongoing Water Trust Fund | Full federal funding committed | Zero lead service lines remaining; water equity achieved |
-| Energy grid carbon neutrality | Grid modernization + renewables | 15-year infrastructure buildout | 90%+ renewable electricity; grid reliability exceeds current baseline |
-| National intercity rail network | Sustained investment | Phase 2 corridors operational | 15+ high-speed corridors; domestic air travel reduced 30%+ on rail-competitive routes |
-| Social housing at scale | Ongoing program | 10+ years of construction | 1 million+ permanently affordable units; Vienna-model mixed-income communities |
-| Incarceration rate at international norms | Sustained sentencing reform + decarceration | Decade of reform implementation | Incarceration rate below 200 per 100,000 (from 531); racial disparity ratio below 2:1 (from 4.8:1) |
-| Universal felony voting rights restoration | Federal statute + state action | Federal leadership + state-by-state advocacy | All citizens can vote regardless of conviction history; automatic expungement operational in 30+ states |
-| Police accountability cultural shift | Institutional reform + training + oversight | Generation of accountability infrastructure | Use-of-force incidents at international comparable rates; civilian oversight standard in all major departments |
-| Net-zero emissions | Clean energy standard + carbon tax + restoration | 15-20 years of sustained investment | Net-zero by 2050; natural carbon sequestration at 500-800 Mt CO2/year; U.S. climate leadership restored |
-| 100% clean electricity | Grid modernization + clean energy standard | Phase 2 targets met | 100% clean grid by 2045; energy storage at scale; no remaining coal generation |
-| Ecological restoration at scale | Ongoing restoration program | 10+ years of investment | 60 million acres of forest restored; 4 million acres of wetlands restored; coastal resilience infrastructure protecting all vulnerable communities |
-| Climate adaptation infrastructure | Resilience Fund + managed retreat + building codes | Decade of sustained investment | All critical infrastructure climate-hardened; managed retreat complete for most-vulnerable communities; zero repetitive-loss subsidized flood insurance |
-| Environmental justice parity | EJ statute + enforcement + community investment | Generation of enforcement | No community exceeds 20% above national average pollution burden; Superfund backlog eliminated; environmental racism measurably reduced |
-| Child poverty elimination | Universal child benefit + childcare + education + housing | Decade of sustained investment | Child poverty rate below 5% (from 12.4%); comparable to Nordic levels |
-| Safety net as seamless system | Digital infrastructure + program consolidation | Domain 4 infrastructure mature | One application, automatic enrollment, no benefit cliffs; administrative burden reduced 80% |
-| Disability inclusion parity | Benefits reform + accessibility + employment support | Decade of sustained reform | Disabled employment rate within 10 points of general population; poverty rate comparable |
-| Defense spending at sustainable levels | Sustained reallocation + commission process | Decade of accountability | Defense spending below 2.5% GDP; passed audit; no unfunded weapons programs |
-| Diplomatic leadership restored | Sustained State/USAID investment | Decade of rebuilding | Full ambassador staffing; development spending at 0.5% GDP; multilateral leadership restored |
-| Veteran homelessness eliminated | VA + housing + mental health + transition programs | Decade of sustained investment | Zero veteran homelessness; veteran suicide rate at or below civilian rate |
-| Competitive markets as norm | Sustained enforcement + structural reform | Decade of antitrust enforcement | Corporate markups reduced from 67% to 20-30% above competitive levels; new business formation rate restored to 1980 levels |
-| Full codetermination (firms >2,000 employees) | Federal statute | Phase 2 codetermination operational | German-model 50% board representation for firms with 2,000+ employees |
-| Financial concentration at safe levels | Sustained enforcement + structural separation | Decade of reform | No institution >2% GDP liabilities; systemic risk reduced; "too big to fail" eliminated |
-| Constitutional right to informational privacy | Amendment | Sustained movement + broad support | Privacy right explicit in Constitution; third-party doctrine superseded |
-| Surveillance-free public spaces as norm | Sustained enforcement + cultural change | Decade of privacy enforcement | Real-time biometric surveillance eliminated; facial recognition accuracy disparity <1% across demographics |
-| Privacy-preserving digital infrastructure | Ongoing technical development + enforcement | Data Protection Agency mature | Zero-knowledge proofs, differential privacy, and privacy-by-design standard in government systems |
-| Public-interest technology corps at scale | Federal statute + appropriation | Data Protection Agency operational | 5,000+ technologists auditing government systems and supporting civil society |
-| Racial wealth gap closure (80-90% reduction) | Baby bonds maturation + homeownership + community reinvestment | 40-50 years of sustained investment | Median Black family wealth within 2:1 of median white family wealth (from 7.8:1) |
-| Reparations commission recommendations implemented | Federal statute(s) based on commission report | Commission completed + congressional vote | BRAC-model up-or-down vote completed; reparative programs operational |
-| Community reinvestment at scale | Ongoing Community Reinvestment Fund | Decade of sustained investment | Formerly redlined census tracts at national median on income, home value, health, and education metrics |
-| Racial health disparity elimination | Domain 11 + Domain 22 + environmental justice | Generation of sustained investment | Black-white life expectancy gap below 1 year; maternal mortality ratio below 1.5:1 |
-| Full educational equity | Domain 10 + Domain 22 + community reinvestment | Generation of sustained investment | Per-pupil spending equalized; school segregation intensity below 1990 levels; student debt gap eliminated |
-| Reparative justice as national norm | Truth commission + education + sustained investment | Generation of institutional experience | Formal federal acknowledgment; accurate history taught universally; ongoing monitoring with measurable benchmarks |
+2. **Appellate Court Buffering**
+   - Litigation strategy focuses on circuit court decisions, not just district court
+   - Circuit courts are more insulated from Supreme Court reversal (no single appellate court can reverse all circuits)
+   - Design cases to create circuit splits (forcing Supreme Court to grant certiorari or accept multiple conflicting decisions)
+   - **Cost to mitigate:** $10-20M/year additional litigation support
+   - **Success criterion:** 5+ circuit splits on major constitutional issues; Supreme Court cannot grant cert on all
+
+3. **Rotating Litigation Strategy**
+   - Rather than litigation focused on single issue (voting rights, for example), spread litigation across multiple constitutional fronts
+   - Supreme Court can reverse one or two precedents; reversing 5-10 precedents across different domains becomes politically costly
+   - **Cost to mitigate:** $15-25M/year to fund diverse litigation
+   - **Success criterion:** 8+ major cases pending across different constitutional domains
+
+### Risk 2: Congress Loses Power (Scenario B/C)
+
+**Threat:** If Republicans retain House majority, Congress loses ability to subpoena, appropriate riders, or block appointments. Congressional resistance becomes purely rhetorical. Federal law enforcement is freed from congressional oversight.
+
+**Probability:** 40-50% (if 2026 elections do not produce House flip)
+
+**Mitigation Strategies:**
+
+1. **State Attorney General Escalation**
+   - If Congress loses power, state AG coalition becomes primary litigators
+   - AGs file 100+ cases instead of 70, spread across multiple constitutional issues
+   - Multistate coordination deepens; AGs conduct joint investigations with state law enforcement
+   - **Cost to mitigate:** $25-35M/year to fund AG litigation capacity
+   - **Success criterion:** State AGs win 60%+ of major cases; federal court deference to federal government declines
+
+2. **State Federal Enforcement Cooperation**
+   - Federal prosecutors in Democratic states coordinate with state AGs on joint prosecutions
+   - State law enforcement pursues state-level crimes that federal government refuses to prosecute (federal employees violating state law)
+   - **Cost to mitigate:** $5-10M/year coordination and legal support
+   - **Success criterion:** 10+ joint prosecutions of federal officials for state crimes
+
+3. **Federal Judge Independence Maximization**
+   - Without congressional oversight, federal judges become more important as check on executive power
+   - Litigation strategy focuses on supporting district court judges who defect, protecting them from retaliation
+   - **Cost to mitigate:** $10-20M/year legal defense fund for federal judges facing threats/retaliation
+   - **Success criterion:** Federal judges maintain 80%+ win rate on defiance without congressional protection
 
 ---
 
-# PART V: HOW THIS CONNECTS
+## Part II: Mass Mobilization Derailment Vectors
+
+### Risk 3: Violent Escalation by Fringe Elements
+
+**Threat:** Small fringe elements (anarchists, right-wing infiltrators) commit violence at protests, which hostile media uses to delegitimize entire movement, triggering federal crackdown on civil liberties.
+
+**Probability:** Medium-high (history shows this in 60%+ of large movements)
+
+**Mitigation Strategies:**
+
+1. **Nonviolence Discipline and Training**
+   - Coalition commits to nonviolence doctrine; members undergo nonviolence training (2-3 hours minimum)
+   - Marshals at major protests trained in conflict de-escalation and prevention of property destruction
+   - Clear exit protocol: if violence appears, protesters withdraw rather than engage
+   - **Cost to mitigate:** $5-10M/year on training and marshal networks
+   - **Success criterion:** Property destruction at <1% of major protests; protest-related injury rate <1%
+
+2. **Legal Defense Infrastructure**
+   - National Lawyers Guild and pro bono networks pre-position legal defense for arrested protestors
+   - Bail funds provide rapid release, preventing jails from using arrest leverage
+   - **Cost to mitigate:** $20-30M/year legal defense fund
+   - **Success criterion:** <10% of arrested protestors remain incarcerated past 48 hours; conviction rate on charges <30%
+
+3. **Media Countermeasure**
+   - Movement provides direct footage and media to counter hostile narratives
+   - Social media strategy focuses on rapid response to misleading framing
+   - Partnerships with sympathetic journalists ensure alternative narrative is published
+   - **Cost to mitigate:** $5-10M/year media/communications
+   - **Success criterion:** Favorable media coverage reaches 40%+ of major outlets within 24 hours of protest
+
+4. **Fringe Infiltration Detection**
+   - Intelligence monitoring for federal infiltration and agent provocateurs
+   - Community security protocols detect and exclude bad-faith agitators
+   - **Cost to mitigate:** $3-5M/year community security training
+   - **Success criterion:** <1% infiltration by federal informants (compared to 30%+ in some movements)
+
+### Risk 4: Protest Suppression and Police Violence
+
+**Threat:** Federal or state governments deploy police/military to violently suppress protests, using injury to protestors as propaganda against movement.
+
+**Probability:** Medium (20-40% probability of significant police violence during peak mobilization)
+
+**Mitigation Strategies:**
+
+1. **Legal Action for Violation of Rights**
+   - Pre-position civil rights litigation against police/military for rights violations
+   - Coordination with state AGs who can prosecute police misconduct
+   - Documentation of police violence becomes evidence for future accountability
+   - **Cost to mitigate:** $15-25M/year litigation fund
+   - **Success criterion:** 80%+ of police violence incidents result in legal action; 30%+ result in settlement or judgment
+
+2. **Medical Emergency Preparation**
+   - Community medical teams pre-positioned at major protests
+   - Training in field medicine for injuries from crowd control weapons
+   - Coordination with hospitals for rapid treatment
+   - **Cost to mitigate:** $5-10M/year medical training and supplies
+   - **Success criterion:** 90%+ of serious injuries treated within 2 hours; zero deaths from crowd control
+
+3. **Community Defense Networks**
+   - Self-defense training and de-escalation protocols (within nonviolence framework)
+   - Community monitors document police behavior in real-time
+   - **Cost to mitigate:** $5-10M/year training
+   - **Success criterion:** Documented video of 95%+ of police interactions; police misconduct prosecutions increase 5x
+
+4. **Federal Law Enforcement Deterrence**
+   - If federal law enforcement deploys against protestors, immediate legal and media response
+   - Coordination with federal judges sympathetic to civil liberties for emergency TROs
+   - **Cost to mitigate:** $10-15M/year litigation and media
+   - **Success criterion:** Any federal deployment against peaceful protests triggers immediate injunction
+
+### Risk 5: Infiltration and Leadership Sabotage
+
+**Threat:** Federal infiltrators or bad-faith actors penetrate movement leadership, providing intelligence to regime or deliberately sabotaging strategy.
+
+**Probability:** Medium-high (FBI has history of COINTELPRO and modern infiltration; history shows 20-30% of cells may have infiltrators)
+
+**Mitigation Strategies:**
+
+1. **Operational Security Training**
+   - Coalition members trained in OpSec basics (encrypted communication, meeting security, information compartmentalization)
+   - Sensitive strategy discussions held in secure settings with limited attendance
+   - **Cost to mitigate:** $2-5M/year OpSec training and tools
+   - **Success criterion:** Zero major operational compromises; infiltrated agents are identified and isolated
+
+2. **Counterintelligence Capacity**
+   - Coalition develops internal counterintelligence capacity to identify infiltrators
+   - Coordination with civil rights/defense organizations on infiltrator detection
+   - **Cost to mitigate:** $5-10M/year counterintelligence
+   - **Success criterion:** 80%+ of infiltrators identified; <10% of leadership penetrated
+
+3. **Distributed Decision-Making**
+   - No single leader whose compromise collapses organization
+   - Decisions distributed across coalition structures; no individual has all information
+   - **Cost to mitigate:** $0 (relies on structural design)
+   - **Success criterion:** Org survives compromise of any individual leader
+
+---
+
+## Part III: Political Derailment Vectors
+
+### Risk 6: 2026 Election Manipulation or Suppression
+
+**Threat:** Federal government uses voter suppression, election interference, or fraud to prevent House flip despite popular will for change.
+
+**Probability:** Medium (25-35% chance of significant election interference)
+
+**Mitigation Strategies:**
+
+1. **Election Monitoring and Rapid Response**
+   - Coalition pre-positions election monitors in swing districts
+   - Real-time documentation of suppression attempts
+   - Rapid legal response to suppression (emergency litigation)
+   - **Cost to mitigate:** $15-25M on election protection
+   - **Success criterion:** 90%+ of suppression attempts documented and challenged within 24 hours
+
+2. **Vote Counting Verification**
+   - Hand-count audits in 20%+ of precincts immediately after election
+   - Challenge results where machine counts differ significantly from hand counts
+   - Coalition coordinates with election officials to ensure transparent counting
+   - **Cost to mitigate:** $10-15M on election auditing
+   - **Success criterion:** 100% of anomalies explained; <1% unexplained variance between hand counts and machine
+
+3. **Bipartisan Election Observation**
+   - Republican election officials in swing states coordinate on transparent counting
+   - National election observers from both parties verify integrity
+   - International observer presence (OSCE) provides outside validation
+   - **Cost to mitigate:** $5-10M coordination
+   - **Success criterion:** Observers from all sides affirm election integrity; <5% contestation of results
+
+4. **Post-Election Mobilization**
+   - If significant fraud is detected, coalition mobilizes mass response
+   - Preparation for escalated resistance if election results are stolen
+   - **Cost to mitigate:** $10M+ contingency mobilization capacity
+   - **Success criterion:** If fraud occurs, immediate visible resistance prevents normalization
+
+### Risk 7: Elite Defection Failure
+
+**Threat:** Federal judges, state AGs, or career civil service do not defect as anticipated. They accommodate the regime rather than resist. Institutional defenses collapse.
+
+**Probability:** Medium (20-30% probability that federal judges fail to sustain defection)
+
+**Mitigation Strategies:**
+
+1. **Contingency Messaging**
+   - If institutional defection fails, messaging rapidly shifts to framing elites as compromised
+   - Movement prepares to operate without institutional support
+   - **Cost to mitigate:** $0 (relies on rapid communication adjustment)
+   - **Success criterion:** Movement mobilization does not collapse if institutions fail
+
+2. **Alternative Institutional Building Acceleration**
+   - If federal courts fail to contain executive power, Wave 2 alternative infrastructure accelerates immediately
+   - Resources shift from federal litigation to state/local alternative building
+   - **Cost to mitigate:** $30-50M reallocation of resources
+   - **Success criterion:** Alternative infrastructure operational in 10 states within 6 months of institutional collapse
+
+3. **State Autonomy Maximization**
+   - Regardless of federal institution performance, state/local institutions are empowered
+   - Litigation focuses on state sovereignty and state power rather than federal rights
+   - **Cost to mitigate:** $15-25M litigation on state autonomy
+   - **Success criterion:** States governing autonomously on 50%+ of policy areas regardless of federal position
+
+---
+
+## Part IV: Repression Escalation Vectors
+
+### Risk 8: Authoritarian Escalation and Violent Crackdown
+
+**Threat:** Regime escalates to violent crackdown — mass arrests, detention camps, extrajudicial violence — to suppress resistance. Regime becomes openly authoritarian.
+
+**Probability:** Medium (20-30% if institutional constraints collapse; <5% if institutional constraints hold)
+
+**Mitigation Strategies:**
+
+1. **International Accountability Mechanisms**
+   - Coalition coordinates with human rights organizations on documenting violations for International Criminal Court
+   - Coordination with international observers and media
+   - **Cost to mitigate:** $5-10M international coordination
+   - **Success criterion:** Documented violations reach international bodies; sanctions threat deters regime escalation
+
+2. **Federal Law Enforcement Defection Support**
+   - If regime attempts violent crackdown, federal law enforcement support becomes critical
+   - Military officers and federal agents are offered clear alternative (defect to new government)
+   - Defection pathways are pre-arranged
+   - **Cost to mitigate:** $10-15M legal defense/relocation support
+   - **Success criterion:** 50%+ of federal agents defect or refuse orders if violent crackdown is attempted
+
+3. **Sanctuary and Underground Networks**
+   - If violent crackdown occurs, movement prepares underground networks
+   - Safe houses, legal support, international exile pathways
+   - **Cost to mitigate:** $20-30M infrastructure
+   - **Success criterion:** <10% of wanted movement leaders captured; continuous resistance possible even under violent repression
+
+4. **Insurgency Preparation**
+   - If violent crackdown reaches civil war level, movement prepares for armed resistance (last resort)
+   - Training, supplies, safe zones pre-positioned
+   - Clear escalation trigger: armed response only if regime commits mass violence (>500 deaths)
+   - **Cost to mitigate:** $50M+ contingency capacity
+   - **Success criterion:** If escalation occurs, armed resistance is organized and defensible
+
+### Risk 9: Strategic Fatigue and Movement Collapse
+
+**Threat:** Resistance sustains for 18-24 months but mass participation burns out. Mobilization declines; leadership becomes exhausted; funding dries up.
+
+**Probability:** High (60-70% risk of significant burnout by Month 18)
+
+**Mitigation Strategies:**
+
+1. **Rotational Leadership and Sustainable Organizing**
+   - Coalition structures ensure leaders rotate and rest; no individual hero leadership
+   - Local chapters maintain base organizing even if national focus shifts
+   - **Cost to mitigate:** $0 (relies on structural design)
+   - **Success criterion:** Leadership retention stays above 80% through Month 24
+
+2. **Diversified Participation and Entry Points**
+   - Rather than single massive protests, diverse smaller actions that accommodate different participation levels
+   - Online activism, donation, voting, and other low-energy participation options
+   - **Cost to mitigate:** $10-15M communications and coordination infrastructure
+   - **Success criterion:** 20%+ of supporters participate in at least one action per month; active participation stable at 3.5%+
+
+3. **Funding Sustainability**
+   - Coalition develops diverse funding streams: member organizations, foundation grants, small-donor fundraising
+   - No single funding source can collapse movement
+   - Budget planning for 5-year timeline, not 1-year
+   - **Cost to mitigate:** $30-50M foundation fundraising and donor relations
+   - **Success criterion:** Coalition budget stable at $200-300M/year for 5 years
+
+4. **Tangible Wins and Momentum**
+   - Coalition celebrates early wins (court victories, policy changes, electoral shifts)
+   - Momentum from early wins sustains participation through burnout period
+   - **Cost to mitigate:** $5-10M communications
+   - **Success criterion:** Sustained 3%+ active participation through Month 24
+
+---
+
+## Part V: External Derailment Vectors
+
+### Risk 10: International Intervention and Foreign Pressure
+
+**Threat:** Foreign governments (Russia, China, etc.) interfere in US recovery to destabilize it, or US allies (EU, NATO, etc.) withdraw support if recovery appears unstable.
+
+**Probability:** Low-medium (10-20% probability of significant international interference)
+
+**Mitigation Strategies:**
+
+1. **International Coalition Building**
+   - Coalition coordinates with international pro-democracy organizations
+   - European, Asian, Latin American civil society groups provide solidarity and monitoring
+   - **Cost to mitigate:** $5-10M international coordination
+   - **Success criterion:** 20+ international organizations issue statements of solidarity; international monitoring visible
+
+2. **Domestic Resilience Communication**
+   - Coalition emphasizes self-determination and domestic capacity to resolve crisis
+   - Narrative: US recovery is Americans solving American problems
+   - **Cost to mitigate:** $3-5M messaging
+   - **Success criterion:** Foreign interference is isolated to fringe actors; mainstream international support holds
+
+3. **Ally Coordination**
+   - US recovery coordination with EU, NATO, Asian democracies
+   - Alliance partners committed to supporting US democratic recovery
+   - **Cost to mitigate:** $5M diplomatic coordination
+   - **Success criterion:** Allied countries issue explicit support; sanctions threats against US if regime escalates
+
+---
+
+## Part VI: Financial and Resource Derailment Vectors
+
+### Risk 11: Funding Cuts and Resource Starvation
+
+**Threat:** Federal government cuts funding to organizations supporting recovery; philanthropies are intimidated or defunded.
+
+**Probability:** Medium-high (40-50% probability of significant funding attacks)
+
+**Mitigation Strategies:**
+
+1. **Diversified Funding Architecture**
+   - Coalition does not depend on any single funder
+   - Union member dues, small-donor base, foundation diversity ensure stability
+   - **Cost to mitigate:** $20-30M fundraising infrastructure
+   - **Success criterion:** No single source provides >15% of budget; budget stable even if 3 largest funders are cut
+
+2. **Mutual Aid and Movement Self-Funding**
+   - Coalition develops internal fundraising capacity (fundraisers, products, services)
+   - Members of organizations fund movement directly
+   - **Cost to mitigate:** $0 (relies on member base)
+   - **Success criterion:** 30%+ of movement funding comes from grassroots sources
+
+3. **Underground Economy Support**
+   - If traditional funding is cut, movement develops alternative economy to support activists
+   - Movement members fund each other through cooperatives, mutual aid, skill-sharing
+   - **Cost to mitigate:** $5-10M infrastructure for alternative economy
+   - **Success criterion:** Movement sustains operations even if 50% of traditional funding is cut
+
+---
+
+## Part VII: Synthesis Risk Assessment
+
+### Overall Risk Matrix
+
+**High Risk (>40% probability):**
+- Protest suppression and police violence (30-40% probability)
+- Strategic fatigue and movement collapse (60-70% probability)
+- 2026 election interference (25-35% probability)
+- Funding cuts (40-50% probability)
+
+**Medium Risk (20-40% probability):**
+- Lower court defection failure (10-30% probability)
+- Congress loses power (40-50% if House doesn't flip)
+- Violent escalation by fringe (50-60% probability)
+- Elite defection failure (20-30% probability)
+- Authoritarian escalation (20-30% probability)
+
+**Lower Risk (<20% probability):**
+- Supreme Court escalation (system of lower courts provides redundancy)
+- International interference (US is large enough to be self-sufficient)
+
+### Mitigation Cost Summary
+
+**Total estimated mitigation cost for 5-year recovery period: $400-600M**
+
+- Litigation support: $100-150M
+- Legal defense and bail funds: $50-75M
+- Mobilization and organizing: $100-150M
+- Communications and media: $50-75M
+- Funding infrastructure and fundraising: $50-75M
+- International coordination: $10-20M
+- Medical and safety infrastructure: $10-20M
+- OpSec and counterintelligence: $10-15M
+- Alternative economy development: $20-30M
+
+This is $80-120M per year for a 5-year period. For context:
+- Single presidential campaign spends $500M+
+- Democratic party spending in 2024 exceeded $2.5B
+- Single major foundation can allocate $50-100M/year
+
+**The mitigation capacity exists.** The constraint is political will and coalition coordination, not financial capacity.
+
+---
+
+## Conclusion: Preparing for Contingency
+
+The implementation roadmap, timeline, and coordination architecture define how recovery succeeds in the most favorable scenario (House flips, institutions hold, mass mobilization reaches 3.5%). This risk assessment defines how recovery survives the worst cases (institutions fail, regime escalates, massive repression).
+
+The most critical finding from the comparative research: **movements that anticipate and prepare for repression escalation survive it; movements that do not prepare for escalation are destroyed by it.** South Africa, Poland, and East Germany's peaceful revolutions succeeded because security forces defected or refused to deploy maximum force. Movements that prepare for security force defection succeed. Movements that assume security forces will automatically defect are crushed.
+
+The US resistance movement must prepare for the worst case while hoping for the best case. That preparation is what this risk assessment outlines.
+
+---
+
+## References
+
+- COINTELPRO and FBI infiltration history (Church Committee reports, declassified documents)
+- Erica Chenoweth, Civil Resistance (nonviolent campaign repression and resilience)
+- Comparative Democratic Recovery (escalation patterns in Hungary, Venezuela, Turkey)
+- Movement documentation from 2020 BLM protests (police violence, jail response, legal defense)
+- January 6 insurrection response (federal enforcement capacity, repression mechanisms)
+- International Covenant on Civil and Political Rights (accountability mechanisms)
+
+---
+
+# PART V: HOW THIS CONNECTS# PART V: HOW THIS CONNECTS
 
 ---
 
