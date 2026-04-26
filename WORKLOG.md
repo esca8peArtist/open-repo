@@ -11548,3 +11548,35 @@ The orchestrator had been in 20+ consecutive "holding pattern verification" sess
 - stockbot (a37564efc7154fc77) — Live trading guardrails
 - seedwarden (ae85740e7bcee5ae1) — Native plants guide image rebuild
 
+
+## Agent Completion: seedwarden Native Plants Guide Image Rebuild ✅
+
+**Agent ID**: ae85740e7bcee5ae1
+**Status**: COMPLETED
+**Deliverable**: Updated `generate_pdfs.py` + regenerated `native-plants-regional-guide.pdf`
+
+**Root Cause Analysis**:
+The 56.96 MB PDF was NOT caused by wrong image sources. The 129 Wikipedia/iNaturalist images were correctly identified, botanically accurate. Root issue: fpdf2 embeds JPEG images verbatim with NO recompression. Source images ranged 500px–5,472px (some 10 MB each). With 126 unique images × 275 references across regions, total embedded data = 57 MB.
+
+**Solution Implemented**:
+Modified `generate_pdfs.py`:
+- Added Pillow-based image recompression: max 600px on long axis, JPEG quality 55
+- Implemented `_compressed_image_path()` function: re-encodes every image, caches results in temp directory (one-time per unique image per run)
+- Silent fallback if Pillow unavailable
+- Source images in `scripts/images/native-plants/` remain untouched
+
+**Results**:
+| Metric | Before | After |
+|---|---|---|
+| PDF Size | 56.96 MB | **4.91 MB** |
+| Pages | 404 | 404 |
+| Avg Image Size | 118–2,213 KB | 31 KB |
+| Effective DPI | — | ~138 DPI |
+| Etsy Uploadable | ❌ No | ✅ Yes |
+
+At 600px displayed in 110mm, resolution is clearly legible for plant identification in digital PDF viewers.
+
+**Status**: native-plants-regional-guide.pdf now Etsy-compliant and ready for Phase 1 upload (awaiting user tag corrections + Etsy account verification).
+
+---
+
