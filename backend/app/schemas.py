@@ -187,3 +187,166 @@ class UserEndorsementResponse(BaseModel):
     """User's endorsement on an item (if any)."""
 
     endorsement: Optional[EndorsementResponse] = None
+
+
+# ============================================================================
+# Phase 3: Contribution & Moderation Schemas
+# ============================================================================
+
+
+class RevisionRequest(BaseModel):
+    """Individual revision request for a contribution."""
+
+    field: str
+    suggestion: str
+
+
+class ContributionCreateRequest(BaseModel):
+    """Request to submit a new contribution (new item or edit)."""
+
+    contribution_type: str  # 'new_item' | 'edit_item'
+    item_data: Dict[str, Any]  # Full proposed JSON-LD content
+    target_item_cid: Optional[str] = None  # For edit_item: CID of item being edited
+    edit_diff: Optional[Dict[str, Any]] = None  # For edit_item: structured diff
+    contributor_id: Optional[str] = None  # User email or ID (anonymous if omitted)
+
+    @field_validator("contribution_type")
+    @classmethod
+    def validate_contribution_type(cls, v):
+        """Validate contribution type."""
+        if v not in ["new_item", "edit_item"]:
+            raise ValueError("contribution_type must be 'new_item' or 'edit_item'")
+        return v
+
+
+class ContributionUpdate(BaseModel):
+    """Request to update a contribution (for resubmission after revision request)."""
+
+    item_data: Dict[str, Any]  # Updated JSON-LD content
+    edit_diff: Optional[Dict[str, Any]] = None  # For edit_item: updated diff
+    submission_notes: Optional[str] = None  # Comments on revisions made
+
+
+class ContributionResponse(BaseModel):
+    """Response for a contribution."""
+
+    id: int
+    contribution_type: str
+    status: str
+    contributor_id: Optional[str]
+    created_at: datetime
+    updated_at: datetime
+    target_item_cid: Optional[str]
+    proposed_cid: Optional[str]
+    reviewer_notes: Optional[str]
+    rejection_reason: Optional[str]
+    required_revisions: Optional[List[RevisionRequest]]
+    item_data: Dict[str, Any]
+    edit_diff: Optional[Dict[str, Any]]
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ContributionDetailResponse(ContributionResponse):
+    """Detailed contribution response with all metadata."""
+
+    pass
+
+
+class ContributionListResponse(BaseModel):
+    """Paginated list of contributions."""
+
+    items: List[ContributionResponse]
+    total: int
+    limit: int
+    offset: int
+    has_more: bool
+
+
+class ReviewerQueueItemResponse(BaseModel):
+    """Response for a reviewer queue item."""
+
+    id: int
+    contribution_id: int
+    reviewer_id: str
+    assigned_at: datetime
+    decided_at: Optional[datetime]
+    decision: Optional[str]
+    reviewer_notes: Optional[str]
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ReviewQueueItemWithContribution(BaseModel):
+    """Contribution awaiting review with context."""
+
+    contribution: ContributionResponse
+    target_item: Optional[ContentItemResponse] = None  # Original item (if edit)
+    review_status: str  # 'pending' | 'reviewed' | 'recused'
+    assigned_at: datetime
+
+
+class ReviewQueueListResponse(BaseModel):
+    """Paginated list of items in the review queue."""
+
+    items: List[ReviewQueueItemWithContribution]
+    total: int
+    limit: int
+    offset: int
+    has_more: bool
+
+
+class ContributionFeedbackResponse(BaseModel):
+    """Response for contribution feedback."""
+
+    id: int
+    contribution_id: int
+    feedback_type: str
+    severity: str
+    message: str
+    resolved: bool
+    resolved_at: Optional[datetime]
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ReviewDecision(BaseModel):
+    """Decision to approve/reject/request revisions on a contribution."""
+
+    decision: str  # 'approve' | 'reject' | 'revision_requested'
+    reviewer_notes: Optional[str] = None
+    revision_requests: Optional[List[RevisionRequest]] = None
+
+    @field_validator("decision")
+    @classmethod
+    def validate_decision(cls, v):
+        """Validate decision type."""
+        if v not in ["approve", "reject", "revision_requested"]:
+            raise ValueError("decision must be 'approve', 'reject', or 'revision_requested'")
+        return v
+
+
+class ReviewDecisionResponse(BaseModel):
+    """Response after reviewer submits a decision."""
+
+    id: int
+    review_status: str  # 'pending' | 'reviewed'
+    feedback_submitted: bool
+    total_feedback_count: int
+    consensus_reached: bool
+    final_state: Optional[str]  # 'approved', 'rejected', 'revision_requested', or None if pending consensus
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class ReviewHistoryItemResponse(BaseModel):
+    """Individual review history entry."""
+
+    id: int
+    reviewer_id: str
+    decision: str
+    reviewer_notes: Optional[str]
+    created_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
