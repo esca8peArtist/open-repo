@@ -14,8 +14,8 @@
 > Adjust the numbers below to change throttling behaviour.
 > To check current usage manually: **claude.ai → Settings → Usage & billing**
 
-- **Weekly session budget: 20**  ← change this number to raise/lower the weekly cap
-- **Daily session budget: 5**    ← change this number to raise/lower the daily cap
+- **Weekly session budget: 200**  ← raised 2026-04-26 to use remaining Max (5x) plan quota before Tue reset
+- **Daily session budget: 50**    ← raised 2026-04-26 (was 5)
 
 **Throttle rules (orchestrator must follow these):**
 1. Run `python3 scripts/usage-check.py --check` at the start of each session.
