@@ -23,9 +23,18 @@ BLOCKED_SECTION=$(awk '/^## Active Blocks/{found=1; next} found && /^## Resolved
   "$WORKSPACE/BLOCKED.md" 2>/dev/null | grep -v '^\s*$' | head -30)
 [ -z "$BLOCKED_SECTION" ] && BLOCKED_SECTION="*No active blocks.*"
 
-# ── INBOX new items ────────────────────────────────────────────────────────────
-INBOX_ITEMS=$(awk '/^## New Items/{found=1; next} found && /^## /{exit} found{print}' \
-  "$WORKSPACE/INBOX.md" 2>/dev/null | grep -v '^\s*$' | grep -v '^<!--' | head -20)
+# ── INBOX new items (skip HTML comment blocks — those are already processed) ───
+INBOX_ITEMS=$(python3 - "$WORKSPACE/INBOX.md" <<'PYEOF'
+import re, sys
+from pathlib import Path
+text = Path(sys.argv[1]).read_text(errors="replace")
+m = re.search(r'## New Items\n(.*?)(?=\n## |\Z)', text, re.DOTALL)
+section = m.group(1) if m else ""
+section = re.sub(r'<!--.*?-->', '', section, flags=re.DOTALL)
+lines = [l for l in section.split('\n') if l.strip() and not l.strip().startswith('<!--') and l.strip() != '---']
+print('\n'.join(lines[:20]) if lines else '*(no new items)*')
+PYEOF
+)
 [ -z "$INBOX_ITEMS" ] && INBOX_ITEMS="*(no new items)*"
 
 # ── Priority order + active project summaries from PROJECTS.md ────────────────

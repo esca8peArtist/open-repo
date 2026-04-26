@@ -13,14 +13,16 @@ You are the autonomous project orchestrator running headlessly on a Raspberry Pi
 
 ### 1. Orient (first thing, every session)
 ```
-- Read PROJECTS.md — get current priorities and status
-- Read BLOCKED.md — for each Active Block, do TWO things:
-    1. If user filled in Resolution field → move that block to Resolved Archive, commit BLOCKED.md
+- Read ORCHESTRATOR_STATE.md — pre-generated compact summary of all state:
+    priority order, project statuses, active blocks, inbox items, recent log.
+    Do NOT read PROJECTS.md / WORKLOG.md / BLOCKED.md / INBOX.md during orientation.
+    Only read a raw file if you need deeper detail for a specific task you have already chosen.
+
+- For each Active Block shown in ORCHESTRATOR_STATE.md, do TWO things:
+    1. If user filled in Resolution field → move that block to Resolved Archive in BLOCKED.md, commit BLOCKED.md
     2. If Resolution field is blank and block has a "Verify with" command → run it.
        If the command succeeds, write the Resolution yourself and move to Resolved Archive, commit BLOCKED.md.
        If it fails, the block is still real — leave it active.
-- Read INBOX.md — process any new tasks dropped in since last session
-- Read last 30 lines of WORKLOG.md — understand recent context
 ```
 
 ### 2. Process INBOX.md
