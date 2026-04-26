@@ -8,9 +8,39 @@
 
 ## Since Last Check-in
 
-**Period**: 2026-04-26 (Session 414 — orchestrator, parallel 3-agent execution)
-**Sessions run**: 414
+**Period**: 2026-04-26 (Session 415 — orchestrator, parallel 3-agent execution)
+**Sessions run**: 415
 **Token budget**: ~200K used of 200K weekly (~100%) — approaching limit; usage monitor will throttle at 80% or 90%
+
+### Accomplished (Session 415 — orchestrator, parallel 3-agent execution)
+
+#### resistance-research — April 27 Monitoring Pass: Critical Action Guide Correction
+
+**Finding**: Action Guide contained factually incorrect claim — Eyes Up and ICE Sightings apps stated as "restored under court protection." Correction applied: N.D. Illinois injunction (Judge Alonso, April 17-23) blocks government censorship demands but does NOT compel platform restoration. Neither Apple nor Facebook has announced restoration. Corrected to accurately describe injunction scope and direct participants to confirmed-operational alternatives.
+
+**Status**: May Day 2026 Action Guide verified accurate and production-ready. Monitoring protocol in place for April 28 Xinis hearing (pre-hearing state documented; hearing outcome TBD). Live monitoring through May 1 ready to capture outcomes.
+
+#### cybersecurity-hardening — Phase 2 Next Steps: Implementation Guide Architecture Designed
+
+**Finding**: NEXT_PHASE.md recommendation confirmed correct. Gap is real: strategic content exists (threat-model.md, opsec-playbook.md) but executable setup sequences and verification steps are missing.
+
+**Deliverable**: `implementation-guide-outline.md` (8-part structure, verified feasible to execute)
+
+**Key design decision**: Data broker opt-outs lead (highest population impact, zero technical barriers). Verification steps embedded in every section. Estimated effort: ~6 hours to write full guide.
+
+**Next phase options**: (1) Write full implementation guide, (2) Publication preparation, (3) Deepen specific categories, (4) Publish as-is.
+
+#### open-repo — Phase 3 Architecture: Contributions/Moderation Workflow Designed
+
+**Deliverable**: `PHASE_3_DESIGN.md` (748 lines, complete architecture for Phase 3)
+
+**Architecture**: 3 new data models, 8 endpoint groups, state machine, contributor reputation tiers, reviewer assignment system, audit trails.
+
+**Implementation effort**: 38 story points (~58 hours, 3.5-4 weeks), 53-60 new tests expected.
+
+**Status**: Architecture validated and ready for implementation prioritization.
+
+---
 
 ### Accomplished (Session 414 — orchestrator, parallel 3-agent execution)
 
@@ -125,36 +155,40 @@
 
 ### Needs Your Input
 
+**cybersecurity-hardening — Phase 2 Implementation Path**
+Quality review complete, documents verified accurate. Phase 2 outline designed (Session 415). **Choose next direction:**
+1. **Implement full guide** (write the 8-part implementation guide, ~6 hours)
+2. **Publication preparation** (add TOC, glossary, quick-reference checklists to existing docs)
+3. **Deepen specific categories** (OSINT counter-measures, TSCM/physical security, organizational incident response)
+4. **Publish as-is** (documents ready now for publication)
+
+Which direction should Phase 2 take?
+
+**open-repo — Phase 3 Prioritization**
+Phase 3 architecture designed (Session 415). Backend Phase 1-2 fully operational and backward compatible. **Ready to start Phase 3 implementation** (contributions/moderation workflow) when you prioritize. 38 story points, ~3.5-4 weeks, 53-60 new tests.
+
 **resistance-research — May Day Live Monitoring (April 28, 29, May 1)**
-- **April 28**: Xinis hearing outcome expected. Results brief (`2026-04-28-results.md`) has monitoring protocol ready to fill. Critical DC Circuit contempt ruling (Boasberg, April 15) will likely be cited by DOJ.
-- **April 29**: May Day Mass Call at 7:30pm ET. Coalition confirmed 900+ events, 3,500+ projected with walkouts.
-- **May 1**: May Day actions begin. Guide is production-ready.
+- **April 28**: Xinis hearing outcome expected (not yet available; hearing hasn't occurred as of April 26). Monitoring protocol ready.
+- **April 29**: May Day Mass Call 7:30pm ET. Coalition confirmed 900+ events, 3,500+ projected with walkouts.
+- **May 1**: May Day actions begin. Action Guide is verified accurate and production-ready.
 
-If you will be participating or monitoring, share updates so the orchestrator can document outcomes.
-
-**cybersecurity-hardening — Next Phase Direction Needed**
-Quality review complete (Session 414). Both documents are verified, accurate, and ready. Next phase options:
-1. **Publication preparation** (add table of contents, glossary, quick-reference checklists)
-2. **Deepen into specific categories** (OSINT counter-measures, TSCM/physical security, organizational incident response templates)
-3. **Implementation** (build a configuration/installation guide for GrapheneOS/Signal/Tor stack)
-4. **Publish as-is** (documents are production-ready now)
-
-Please advise direction.
+If you'll be participating or monitoring, share updates so the orchestrator can document outcomes.
 
 **mfg-farm — Test Print**
-Business plan, CadQuery designs, market research, and listing copy all ready. Blocked on physical test print of the ModRun rail and clip designs. Once completed, Etsy launch can proceed.
+Business plan, CadQuery designs, market research, and listing copy all ready. Blocked on physical test print of the ModRun rail and clip designs. Once completed, Etsy launch prep can proceed.
 
 **seedwarden — PDF Mockup Images**
 All 21 products have content and listing copy complete. Only blocker: PDF mockup images for all listings (critical conversion factor on Etsy).
 
 ### Suggested Priorities (Next Session)
-1. **resistance-research**: **LIVE MONITORING** — April 28 Xinis hearing outcome (critical institutional resistance precedent), April 29 May Day Mass Call (7:30pm ET), May 1 May Day actions. Document outcomes when available.
-2. **cybersecurity-hardening**: **User direction needed** — which next phase? (publication / deepening / implementation / or publish as-is)
-3. **stockbot**: Monitor paper trading performance (4 sessions running on Jetson since April 14). Check for signal generation and execution. Paper trading assessment.
-4. **mfg-farm**: Test print of ModRun rail/clip designs (user action required for launch prep).
-5. **seedwarden**: PDF mockup images needed (all 21 products have content/listing copy ready, only blocker is mockup images for Etsy conversion).
+1. **resistance-research**: **LIVE MONITORING** — April 28 Xinis hearing outcome (institution resistance precedent), April 29 May Day Mass Call (7:30pm ET), May 1 May Day actions. Document outcomes when available. Action Guide is verified ready.
+2. **cybersecurity-hardening**: **Awaiting user direction** — Phase 2 options determined. User to choose: implement guide / publish prep / deepen categories / publish as-is.
+3. **open-repo**: **Ready to start Phase 3** when prioritized. Architecture designed, backend solid. Can begin implementation.
+4. **stockbot**: Monitor paper trading performance (4 sessions running on Jetson since April 14). Check for signal generation and execution.
+5. **mfg-farm**: Test print of ModRun rail/clip designs (user action required for launch prep).
+6. **seedwarden**: PDF mockup images (all 21 products content/copy ready, only blocker is mockup images).
 
-**Usage**: Approaching limit (~100K+ tokens used of 200K weekly). Orchestrator usage monitor will throttle at 80% or 90% threshold or at Tuesday 00:00 UTC weekly reset.
+**Usage**: At limit (~200K tokens weekly used). Orchestrator usage monitor will throttle at 80% or 90% threshold or reset Tuesday 00:00 UTC.
 
 ---
 

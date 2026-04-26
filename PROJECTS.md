@@ -68,21 +68,21 @@
 **Status**: Active — live monitoring phase
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 414: **May Day 2026 Action Guide PRODUCTION-READY** (`mayday-2026-action-guide.md`, 669 lines). **LIVE MONITORING April 28–May 1**. April 28 results brief monitoring protocol documented (`monitoring/2026-04-28-results.md`). DC Circuit contempt ruling (Boasberg, April 15) updated in pre-brief — DOJ will cite at Xinis hearing. ICE arrest trends, NJ AFL-CIO 1M+ member mobilization, event count 900+ confirmed/3,500+ projected documented. Nashville/Crenshaw still pending. **Critical dates**: April 28 (Xinis hearing outcome), April 29 (May Day Mass Call 7:30pm ET), May 1 (May Day actions begin).
+**Current focus**: Session 415: **May Day 2026 Action Guide VERIFIED ACCURATE & PRODUCTION-READY** — Critical correction applied (April 27): Eyes Up/ICE Sightings app false restoration claim removed; injunction scope accurately described. April 27 monitoring pass complete (`monitoring/2026-04-27-tracking.md`). **LIVE MONITORING April 28–May 1** ready: April 28 Xinis hearing (outcome TBD), April 29 Mass Call 7:30pm ET, May 1 May Day actions. Pre-hearing state fully documented. NJ AFL-CIO 1M+ + CTU 100-school May 1 rally confirmed. ICE arrest trends documented (12% national decline, regional variance). Nashville/Crenshaw still pending.
 **Blocked on**: —
-**Notes**: Live monitoring through May 1. Democratic renewal proposal comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
+**Notes**: Action Guide ready for publication post-May 1. Live monitoring through May 1 to capture outcomes. Democratic renewal proposal 22 domains; remaining work is quality deepening and publication prep.
 
 ---
 
 ### cybersecurity-hardening
 **Goal**: Build a comprehensive, actionable guide to protecting communications and identity against government-level mass surveillance. Understand what Palantir and similar data brokers/intelligence platforms actually have access to — what data they ingest, how they link identities, and what their current government contracts cover. From that threat model, identify the best practical techniques for private and anonymous communication: encrypted messaging, metadata minimization, network anonymization (Tor/VPN tradeoffs), device hardening, operational security (OpSec), and identity compartmentalization. The output should be a personal OpSec playbook grounded in real threat modeling — not theoretical, but calibrated to the actual capabilities of the adversary.
 **Priority**: High
-**Status**: Active — quality review COMPLETE, awaiting next phase direction
+**Status**: Active — Phase 2 outline designed, ready to implement or deepen
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Session 414: **Quality review COMPLETE** — `threat-model.md` (440 lines) READY TO PUBLISH — all major factual claims verified against primary sources (SEC filings, contracts, NSA reports, law enforcement public records). `opsec-playbook.md` (4,800 words) — 8 targeted corrections applied (Tails URL migration, iOS reboot timing, LocalMonero shutdown + replacements, Signal UI strings, GrapheneOS France accurate account, Orbot routing clarification, tier consistency), now ready. **Next phase options**: (1) Publication preparation (TOC, glossary, quick-ref checklists), (2) Deepen into specific categories (OSINT counter-measures, TSCM/physical, org incident response), (3) Implementation (configuration guide for GrapheneOS/Signal/Tor stack), (4) Publish as-is (production-ready now).
+**Current focus**: Session 415: **Phase 2 Architecture DESIGNED** — `implementation-guide-outline.md` (8-part structure) confirmed Option C (Implementation Guide) as next phase. Documents are accurate, practical, production-ready. **Outline structure**: Part 0 Data broker opt-outs (highest-population impact, zero barriers), Hardware selection, GrapheneOS install + verification (highest-friction, critical value), Post-install config, Signal setup (dependency-ordered), Tor/Mullvad routing, File encryption + metadata minimization, Maintenance schedule. **Design principle**: Verification steps embedded in every section — users can confirm "did this work" before advancing. **Effort**: ~6 hours to write full implementation guide (translation work, no additional research needed). **Next phase options**: (1) Implement full guide (~6 hours), (2) Publication prep (TOC/glossary/checklists), (3) Deepen specific categories (OSINT, TSCM/physical, organizational incident response), (4) Publish existing docs as-is (production-ready).
 **Blocked on**: —
-**Notes**: Both documents are accurate, practical, grounded in confirmed threats. Awaiting user direction for next phase. Identified deepening gaps: TSCM/physical security, OSINT counter-measures, secure hardware procurement, international comparisons, SecureDrop operator security.
+**Notes**: Threat-model.md and opsec-playbook.md both production-ready and verified accurate. Implementation guide outline is written to be executable by a writer with no further research. Awaiting user direction on implementation vs. other options.
 
 ---
 
@@ -125,12 +125,12 @@
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — MVP backend Phase 2 COMPLETE
+**Status**: Active — Phase 3 architecture designed, ready to implement
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Session 414: **MVP Backend Phase 2 COMPLETE** — Meilisearch search + endorsement system fully implemented and tested. **Deliverables**: (1) Search service (`app/services/search_service.py`) with graceful degradation, (2) 6 endorsement endpoints (post/get/delete endorsements, aggregate stats, admin audit log), (3) Endorsement model (user_id, item_cid, type [UPVOTE/DOWNVOTE/FLAG], created_at), (4) 7 new Pydantic schemas for validation, (5) 35 total tests (24 original + 11 new), all passing, zero regressions, (6) Updated API.md + README.md v0.2.0 + Makefile Meilisearch targets. **Next**: Phase 3 (contributions/review workflow with moderation) or Phase 4+ (ActivityPub federation, DID integration).
+**Current focus**: Session 415: **Phase 3 Architecture DESIGNED** — `PHASE_3_DESIGN.md` (748 lines) complete. **Deliverables**: (1) 3 new data models (contributions with state machine, reviewer_queue_items, contribution_feedback), (2) 8 endpoint groups (POST contributions, GET pending, review decision, history, finalize, request revision, contributor stats), (3) State machine (PENDING → REVISION_REQUESTED → APPROVED/REJECTED), (4) Reviewer assignment (round-robin, consensus-based approval), (5) Contributor reputation tiers (none/trusted/expert). **Implementation effort**: 38 story points (~58 hours, 3.5-4 weeks). Expected 53-60 new tests. **Next**: Begin Phase 3 implementation (moderation workflow, contribution tracking, reviewer queues) or Phase 4+ (ActivityPub federation, DID integration).
 **Blocked on**: —
-**Notes**: Backend Phase 1–2 production-ready, fully backward compatible. All core architecture validated and implemented (FastAPI, PostgreSQL, Meilisearch, async throughout). Phase 3+ ready when prioritized.
+**Notes**: Backend Phase 1–2 production-ready and fully backward compatible. Phase 3 architecture validated and ready. All core architecture solid (FastAPI, PostgreSQL, Meilisearch, async). Ready to prioritize Phase 3 implementation.
 
 ---
 

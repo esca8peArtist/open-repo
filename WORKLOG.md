@@ -4,6 +4,16 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 (Session 415) — resistance-research — April 27 Monitoring Pass: Critical Action Guide Correction
+
+**Key finding**: Action Guide contained factually incorrect claim about Eyes Up/ICE Sightings app restoration. N.D. Illinois injunction (Judge Alonso, April 17-23, 2026) blocks government from making *future* censorship demands to Apple and Facebook — but does NOT compel either platform to restore the apps. Court explicitly acknowledged restoration is each platform's editorial prerogative. As of late April 2026, neither company has announced restoration. **Correction applied** to Action Guide Section 4 to accurately describe injunction scope and direct May Day participants to confirmed-operational alternatives (Google Maps, Apple Maps, transit apps, TextLay, etc.).
+
+**Files updated**: `monitoring/2026-04-27-tracking.md` (created), `litigation-tracker-2026.md` (April 27 monitoring pass appended), `mayday-2026-action-guide.md` (Eyes Up/Sightings section corrected)
+
+**Status**: Action Guide is production-ready for May 1. Monitoring protocol in place for April 28 Xinis hearing outcome (not yet available; hearing hasn't occurred as of April 26).
+
+---
+
 ## 2026-04-26 — cybersecurity-hardening — Phase 2 implementation guide outline complete
 
 Confirmed Option C recommendation from NEXT_PHASE.md. Wrote `implementation-guide-outline.md`: 8-part structure (data broker opt-outs, hardware selection, GrapheneOS install + verification, post-install config, Signal sequence, Tor/Mullvad routing, file encryption + metadata minimization, maintenance schedule) plus per-tier quick-start checklists. Total estimated writing effort: ~6 hours. Verification steps — the primary gap in the current playbook — are designed into every section. The outline is written to be executed by a writer directly with no further research required (all factual content already present in threat-model.md and opsec-playbook.md; only data broker opt-out URLs require link-verification at time of writing).
