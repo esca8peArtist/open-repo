@@ -2,6 +2,46 @@
 
 ---
 
+## April 26, 2026 (Session 421) — May Day Guide Production Readiness + Distribution Strategy
+
+**Session type**: Production verification + distribution planning
+**Date**: April 26, 2026
+**Files updated**: `WORKLOG.md`
+
+### What Was Done
+
+**Task 1 — Gist Content Verification (production-readiness check)**
+
+Compared the live Gist (https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4) against the source file (`mayday-2026-action-guide.md`, commit HEAD at 24ceb62). All four critical verification points confirmed:
+
+1. Footer shows both update dates: "Updated: April 26, 2026 — event counts updated to 900+/85 cities; ICE tracker injunction added" and "Updated: April 27, 2026 — corrected ICE tracker app restoration status." Both April 26 and April 27 passes are present in the live Gist.
+
+2. ICE tracker injunction present in Section 4 (Undocumented Participants subsection): Judge Alonso N.D. Illinois preliminary injunction language is there with the correct caveat that the court cannot compel Apple/Facebook to restore the apps. The April 27 correction (apps not confirmed restored, do not rely on them for May 1) is reflected.
+
+3. Event counts correct: "900+ events confirmed nationally; 3,500+ total actions including walkouts projected" and "85+ cities." Matches the April 26 update pass.
+
+4. Section 7 government response date parenthetical reads "(as of April 23, none confirmed)" — this is accurate and intentional. Section 7 was not changed in later update passes because no new confirmed government enforcement actions targeting May Day organizing had emerged as of April 27. The date is slightly stale but the substance is correct; no update needed at this stage given the guide's footer clearly shows the April 26-27 update passes.
+
+**Production-readiness verdict: YES.** The Gist is production-ready. The source and live versions are in sync. Nine sections, 743 lines, 60+ sourced links, legal analysis current through April 27. One minor note for awareness: the Section 7 parenthetical "(as of April 23)" could theoretically be updated to April 27 on a final pass, but this is cosmetic — the substance of that section is accurate and the footer establishes the guide's update timeline.
+
+**Task 2 — Distribution Channel Research**
+
+Researched the active distribution landscape for the May Day coalition's own guide distribution.
+
+Key findings:
+- Coalition organizations are distributing through their institutional channels (NEA email lists, Indivisible chapter email, DSA chapter toolkits, mobilize.us event registration).
+- NEA toolkit explicitly includes Bluesky in its social media messaging templates alongside Threads — this is the confirmed activist platform with active May Day content as of April 2026.
+- Indivisible's guide includes social sharing via Bluesky and Facebook, plus Substack newsletter distribution.
+- Action Network (actionnetwork.org) is running a May Day 2026 Weekend of Action campaign — this is a separate distribution channel from maydaystrong.org and mobilize.us, reaching different segment of civic organizers.
+- No confirmed May Day-specific Signal groups or Slack workspaces identified in open web search. Signal groups are private by nature; Slack workspaces relevant to this work are not publicly indexed. The absence of search results here is expected, not indicative of absence of activity.
+- Mastodon/Fediverse: active civic discourse in April 2026 but no May Day-specific channel infrastructure identified as dominant.
+
+**Task 3 — Distribution Strategy + Message Drafted**
+
+See distribution strategy and message draft in session 421 findings (returned directly to user as text output per protocol).
+
+---
+
 ## April 26, 2026 (Session 420) — Cybersecurity-Hardening Phase 2 OSINT Deepening
 
 **Session type**: Research — data broker expansion, ID barriers, court challenges

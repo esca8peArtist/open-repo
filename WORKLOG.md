@@ -4,6 +4,21 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — Session 421 — cybersecurity-hardening — Phase 2 fold-vs-standalone integration analysis
+
+**Task**: Compare phase2-osint-deepening.md against implementation-guide.md Part 0; produce fold-vs-standalone recommendation with exact diffs ready for one-click implementation.
+
+**Files read**:
+- `/home/awank/dev/SuperClaude_Framework/projects/cybersecurity-hardening/implementation-guide.md` (~1,044 lines)
+- `/home/awank/dev/SuperClaude_Framework/projects/cybersecurity-hardening/phase2-osint-deepening.md` (~201 lines)
+- `/home/awank/dev/SuperClaude_Framework/projects/cybersecurity-hardening/osint-data-broker-deepening.md` (~338 lines)
+
+**Findings**: The implementation guide's Part 0 already had a strong scaffold (Steps 0.1, 0.2, 0.3, Verification, Troubleshooting). Phase 2 deepening adds five distinct layers: (A) Tier A "no opt-out" broker table; (B) Tier B/C broker additions to the batch table; (C) AB 60/AB 1766 path for undocumented California residents accessing DROP; (D) ID-restricted broker workarounds (foreign passport, ITIN, Matrícula Consular, proxy opt-out); (E) SECURE Data Act as a policy risk to DROP and California enforcement. Full fold recommendation with exact section-by-section diffs produced in the assistant response. No new files written (findings delivered as text per agent protocol).
+
+**Decision point**: User to choose fold-into-Part-0 (expands ~300-400 words + one new table + 10 new batch-table rows + updated troubleshooting note) vs. keep standalone (zero editing risk, backward-compatible link from Part 0).
+
+**Output**: Analysis delivered as assistant message. Exact diffs ready for immediate application if fold path is chosen.
+
 ## 2026-04-26 07:30 — Session 420 — Parallel 3-agent execution: resistance-research (monitoring prep), stockbot (paper trading verify + Jetson deployment doc), cybersecurity-hardening (OSINT deepening)
 
 ### resistance-research — April 28 Xinis Hearing Monitoring Framework Verified Complete

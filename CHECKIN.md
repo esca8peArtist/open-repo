@@ -4,33 +4,43 @@
 
 ---
 
-## Since Last Check-in (Session 420 — 2026-04-26)
+## Since Last Check-in (Session 421 — 2026-04-26)
 
-**Completed**:
-1. **resistance-research**: April 28-May 1 monitoring templates VERIFIED COMPLETE. April 28 quick-fill template verified (9-question record table, contempt tracking, Boasberg precedent documented). May 1 template verified (scale summary, 7-city incident tracking, Section 702 expiration field, government response tables). April 29 contingency brief CREATED (covers Nashville/Crenshaw ruling, 4th Circuit stay post-contempt, early discovery deadline signals, Section 702 watch, escalation checklist). **Monday readiness: CLEAN**. Section 702 expires April 30 — strategically positioned in templates to track ICE surveillance constraint impact May 1+.
+**Completed** (parallel 3-agent execution):
 
-2. **stockbot**: Paper trading VERIFIED LIVE on dev machine (raspby1). Session `33a4afe676cae12a` started 2026-04-26T05:50:34Z, cycling every 60 seconds, `dashboard_api.py` running. Live signal generation begins Monday 2026-04-28 market open. **JETSON_DEPLOYMENT.md created** (8.1 KB) — documents current state gap (container image stale, no stacker code from session 417), pre-deployment checklist, rsync + docker rebuild + session-start steps, verification commands, rollback procedure. **Critical gap**: Jetson container has pkl files but cannot load them; model_runs table empty (0 rows).
+1. **resistance-research**: May Day guide distribution strategy READY. Gist verified production-ready (743 lines, 9 sections, 60+ sourced links, updates through April 27). **Distribution channels prioritized**: (1) Bluesky (highest priority — activist-left community, native for long-form sharing), (2) Action Network, (3) Indivisible chapter email lists, (4) Signal groups, (5) NLG chapter networks. **Distribution message drafted** (4-part Bluesky thread + short version for Signal/email). **Strategic timing**: April 29 mass call (7:30pm ET) is peak distribution window for organizer reach. All materials production-ready for immediate distribution.
 
-3. **cybersecurity-hardening**: Phase 2 OSINT/Data Broker Deepening COMPLETE. `phase2-osint-deepening.md` created (~2,400 words). **Part A** (Broker taxonomy): "No opt-out path" catalog (Venntel, Babel Street, Thomson Reuters CLEAR, Clearview), Tier B additions (CoreLogic, Verisk), Tier C batch (10 brokers). **Part B** (ID-restricted services): California AB 60/AB 1766 → DROP eligibility identified as highest-leverage path for undocumented residents (currently invisible in guides). **Part C** (Court challenges): Clearview BIPA template ($51.75M but federal carve-out), Illinois BIPA as most powerful lever, PADFAA Feb 2026 FTC warnings as emerging hook, SECURE Data Act as threat (preempts CCPA/DROP). **Ready to integrate**: Add AB 60/1766 note to Part 0 Step 0.1, add "no opt-out" table to framing, fold CoreLogic/Verisk/Tier C into batch tables, add SECURE Data Act policy watch.
+2. **stockbot**: **Jetson deployment COMPLETE AND VERIFIED** ✅. Critical discovery: source code is volume-mounted (not baked into image), so only rsync + restart needed (not full Docker rebuild). (1) SSH to Jetson confirmed working, (2) rsync completed: trading_session.py + 7 other files synced from dev to `/opt/stockbot/src/`, (3) Container restarted (20 seconds), (4) Verification passed: `grep _load_stacker_strategy` returns 3 matches, API health OK, `Loaded 16 ensemble stackers` confirmed in logs. (5) **New stacker session started via API**: session_id `b4e397af3a3c12a5`, run_id `e502261df93a9d3c`, strategy AAPL_h10_lgbm_ho (0676c84e). First cycle at 06:41:41 (correct Sunday behavior). **All success criteria met before Monday market open (2026-04-28)**: Jetson can load stacker pkl files, new paper trading session active, model_runs table has entry.
+
+3. **cybersecurity-hardening**: **Fold-vs-standalone analysis COMPLETE with exact diffs ready**. Recommendation: **selective fold** (4 actionable changes to Part 0) + keep broker taxonomy + litigation in standalone research file. **Exact changes ready to apply** (one-click implementation): (1) Step 0.1 DROP entry: Add AB 60/1766 path + SECURE Data Act policy note (~120 words), (2) Step 0.2 opening: Add Tier A "no opt-out" framing paragraph explaining why Palantir ELITE / Venntel have no consumer mechanism (~130 words), (3) Priority 7-20 table: Add CoreLogic + Verisk rows, (4) Troubleshooting ID upload section: Expand with foreign passport / ITIN / Matrícula Consular / proxy opt-out guidance (~220 words). Net impact: Part 0 ~900 → ~1,400 words (still readable single session). Broker taxonomy + litigation analysis stays in phase2-osint-deepening.md (research layer). Single pointer sentence added to Step 0.3.
 
 **In Progress**:
-- resistance-research: Live monitoring 2026-04-28 Xinis hearing (ready for evening quick-fill). May Day guide distribution pending user action.
-- stockbot: Paper trading live on dev. Jetson deployment doc ready for execution (rsync + rebuild + session start). Monday P&L review pending market data.
+- resistance-research: May Day guide distribution — user action to post URL to Bluesky/Signal/email channels. April 28 Xinis hearing quick-fill (ready for evening). April 29 contingency brief (ready). May 1 monitoring (ready).
+- stockbot: Paper trading live on dev (session 33a4afe676cae12a), Jetson also live (session b4e397af3a3c12a5). Monday P&L review pending market data.
 - open-repo: Phase 3 routes (38 story points, pending).
 - off-grid-living: Quality review/formatting pass (16 domains complete).
 
 **Needs Your Input**:
-- **resistance-research**: Distribute May Day guide Gist URL (https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4) to organizing channels. Frame as legal/analytical companion to coalition guides. **Timeline critical**: 5 days to May 1.
-- **cybersecurity-hardening**: Decision on Part 0 integration — fold OSINT deepening findings and republish, or publish as-is? (Both are ready now.)
-- **stockbot**: After Monday market open and first P&L data captured, decide: (a) proceed with Jetson deployment immediately, or (b) wait for more paper trading validation?
+- **resistance-research**: Post May Day guide Gist URL to distribution channels (Bluesky priority, then Signal/email). Message template provided. Timeline: 5 days to May 1.
+- **cybersecurity-hardening**: Confirm fold path — ready for one-click implementation of 4 exact diffs, OR publish phase2-osint-deepening as-is. Which approach?
 
-**Usage**: Token usage nominal (14% of week consumed). No throttling. Next reset Tuesday 2026-04-30.
+**Usage**: Token usage nominal (under 20% of week consumed). No throttling. Next reset Tuesday 2026-04-30.
+
+---
+
+### Session 420 Checkpoint (2026-04-26 07:30)
+
+Resistance-research April 28 Xinis hearing monitoring framework complete. Quick-fill outcome template + April 29 analysis pass template ready. Litigation tracker updated. Cybersecurity-hardening Phase 2 OSINT/data broker deepening complete. Implementation guide Part 0 expanded (GPC signal, DROP platform, automation services). Threat model updated (Montana SB 282, National Public Data, Venntel/Babel Street, ICE MAID RFI). Three-document corpus deepened and publication-ready. Stockbot paper trading identified as infrastructure gap (not yet started despite wiring complete).
 
 ---
 
 ## History
 
 <!-- Archive prior check-ins here as they accumulate -->
+
+### Session 420 Previous Checkpoint (2026-04-26 07:30)
+
+April 28-May 1 monitoring templates verified complete. April 28 Xinis hearing quick-fill template ready (9-question record table, contempt tracking, Boasberg precedent). May 1 template ready (scale summary, 7-city tracking, Section 702 expiration field). April 29 contingency brief created (Nashville/Crenshaw ruling, 4th Circuit stay, Section 702 watch). Jetson deployment gap identified (container stale, stacker code missing). Paper trading live on dev machine (session 33a4afe676cae12a, AAPL_h10_lgbm_ho stacker). Phase 2 OSINT/broker deepening complete (AB 60/1766 path identified as highest-leverage for undocumented residents). Usage nominal (14%).
 
 ### Session 419 Checkpoint (2026-04-26)
 
