@@ -48,11 +48,14 @@ The divisions in order of launch priority:
 |---|---|---|
 | Energy | Community solar + battery, cooperative billing | Phase 1 |
 | Health | CHW program → sliding-scale clinic | Phase 1-2 |
+| Education | Skills training across all divisions; volunteer pipeline | Phase 1 (alongside Energy) |
 | Food | Community purchasing, urban agriculture, distribution | Phase 2-3 |
 | Water | Rainwater harvesting, filtration, storage systems | Phase 3 |
 | Waste | Composting, materials recovery, circular economy | Phase 3 |
 
 Each division launches when the organizational capacity and economic case exist — not on an ideological schedule.
+
+**Education is the connective tissue.** It launches alongside Energy in Phase 1 because every other division depends on it. It is not a classroom program — it is hands-on skills training embedded in the work each division does. Solar installation training happens during actual installations. First aid and CHW skills are taught by the health division practitioners. Urban farming knowledge transfers through working the food plots. Water testing and maintenance are learned on the water systems themselves. The Education division coordinates this across all programs, maintains the curriculum, and manages the volunteer pipeline.
 
 ---
 
@@ -87,6 +90,40 @@ American convenience culture is not an obstacle to design around — it is a des
 **No minimum participation requirements.** The previous version of this document included a 4-hour annual participation requirement. That is a barrier. Remove it entirely. Participation should be invited and rewarded, never required.
 
 **The invisible infrastructure model**: The best cooperatives in the world work because membership is nearly invisible in daily life. You use a credit union like a bank. You shop at REI like a retail store. The cooperative structure matters enormously for resilience and ownership, but it does not have to manifest as constant governance overhead. Members benefit; professionals operate; a small engaged core governs. Everyone else just lives their life with better infrastructure.
+
+---
+
+## Volunteers: Contribute, Learn, Belong
+
+Volunteers are not auxiliary — they are a core part of how the organization operates and how it grows. Every division has a volunteer program. Every volunteer interaction is also a learning opportunity. The model is: **show up, do something useful, leave knowing more than you arrived with.**
+
+This is the design deliberately. An organization where volunteers learn real skills — how to install a solar panel, how to test water quality, how to build a raised bed, how to do a wound assessment — creates something more durable than an organization where volunteers just stuff envelopes. People return to places where they become more capable. They bring friends. They eventually become the people who train the next cohort.
+
+**What volunteers can do, by division:**
+
+*Energy* — assist with rooftop and ground-mount solar installations under licensed supervision; learn panel wiring, racking systems, battery storage hookup, and basic electrical safety; help with member energy audits; maintain installation records.
+
+*Health* — complete CHW certification training through the Texas CHW program; conduct home visits alongside certified CHWs; assist with health screenings and referral navigation; learn basic first aid and emergency response; support clinic operations once running.
+
+*Education* — develop and deliver skills training content; mentor new volunteers through their first installations or farming shifts; help run the annual community event; translate materials for non-English-speaking members.
+
+*Food* — work the urban agriculture plots; help with cooperative purchasing logistics; assist with food distribution; learn soil science, crop planning, composting, seed saving, and food preservation.
+
+*Water* — learn to conduct water quality testing and read results; assist with rainwater collection system installation and maintenance; help members with filtration system setup and troubleshooting.
+
+*Waste* — run composting operations; help with materials recovery and sorting; support repair café events (fixing electronics, clothing, furniture instead of discarding).
+
+**Volunteer pathway:**
+
+1. *Show up* — anyone can attend an open volunteer day for any division. No application, no commitment, no vetting required for basic work days.
+2. *Join a division* — after two volunteer days, you can join a division's regular volunteer cohort. You get a schedule, a mentor, and access to more complex work.
+3. *Get certified* — for divisions with formal credentials (CHW certification, solar installer certification, food safety), the organization supports volunteers through the certification process. Certification is earned, not given.
+4. *Become a trainer* — experienced volunteers who want to train others move into the Education division's trainer cohort. This is where institutional knowledge compounds.
+5. *Convert to staff* — when paid positions open, volunteers with demonstrated skills and community relationships are the first pipeline. This keeps hiring inside the community.
+
+**Non-members can volunteer.** You do not have to be a member to show up and help install a solar panel or work a planting day. Membership is for people who want services and ownership. Volunteering is for anyone who wants to contribute and learn. Many volunteers will eventually become members; some will not. Both are fine.
+
+**Volunteer hours are tracked and recognized** — not as a governance obligation but as a community record. An annual recognition at the community event. A skill badge system in the app. Public acknowledgment of the people whose time built the infrastructure. This is intrinsic motivation design: people want to be seen contributing, especially when the contribution is real and visible.
 
 ---
 
@@ -133,13 +170,15 @@ How do you make it difficult for hostile actors — state government, industry i
 - 30-50 household solar installations in a single neighborhood
 - Community anchor installation (school, church, or community center) — visible, named, in a building people recognize
 - 8-10 community health workers trained and active
+- First volunteer cohort (20-30 people) completing solar installation training alongside licensed electricians
+- Education division curriculum drafted for Energy and Health tracks
 - Cooperative legally incorporated under Texas law
-- Mobile membership app live — dues, voting, service requests
-- Results dashboard public: panels installed, kilowatts generated, bills reduced, patients seen
+- Mobile membership app live — dues, voting, service requests, volunteer scheduling
+- Results dashboard public: panels installed, kilowatts generated, bills reduced, patients seen, volunteer hours logged
 
 **Funding**: $400K-600K. Foundation startup grants acceptable for Phase 1 capital.
 
-**Success criteria**: Members' average electricity bill down 30%+ from baseline. CHWs completing 200+ home visits. Membership retention above 80%. Waitlist forming for installations.
+**Success criteria**: Members' average electricity bill down 30%+ from baseline. CHWs completing 200+ home visits. Membership retention above 80%. Waitlist forming for installations. 50+ active volunteers across Energy and Health divisions.
 
 ### Phase 2 (Years 2-3): Replicate the Model
 **North star**: 3-5 neighborhoods. Economic self-sufficiency approaching.
@@ -189,6 +228,8 @@ How do you make it difficult for hostile actors — state government, industry i
 4. **Legal structure**: Research the Texas cooperative incorporation process alongside a 501c3 nonprofit as a fiscal sponsor. Understand the dual-structure that other infrastructure cooperatives use.
 
 5. **Partner conversations**: Approach West Street Recovery, t.e.j.a.s., and Texas Organizing Project — not for partnership yet, but to understand their work and share the concept. Relationships before programs.
+
+6. **Volunteer program design**: Map the specific skills each division needs from volunteers. Identify which require formal certification (CHW, solar installer, food safety) and what the certification pathway looks like in Texas. Design the open volunteer day format — low barrier, high value, worth attending.
 
 ---
 
