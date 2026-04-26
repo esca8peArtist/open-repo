@@ -4,11 +4,11 @@
 
 ---
 
-## Since Last Check-in (Session 426 — 2026-04-26 afternoon/evening)
+## Since Last Check-in (Session 427 — 2026-04-26 evening)
 
 **Completed**:
 
-1. **open-repo**: **Phase 4 Design Specification COMPLETE** (`PHASE_4_DESIGN.md`, 550 lines). Architecture fully defined: ActivityPub protocol (W3C spec), HTTP signature verification (RFC 8017), multi-node federation, conflict resolution (versioning + last-write-wins), DID:WEB integration (optional), federation registry (optional). Implementation roadmap clear: 5 waves across 3–4 months (400–500 story points). Wave 1 (ActivityPub endpoints + signatures), Wave 2 (federation bootstrap), Wave 3 (endorsement sync), Wave 4 (conflict resolution), Wave 5 (deployment + e2e testing on two nodes). Success criteria explicit: two nodes federating, content syncing, endorsements aggregating, ≥95% test coverage, full documentation. Resolves prior discrepancy (CHECKIN.md note said "Phase 4 = UI/forms" — architecture reveals Phase 4 is Federation, the architectural proof). Commit: `fbb3806`. **Next**: Phase 4 Wave 1 implementation when user prioritizes.
+1. **open-repo**: **Phase 4 Wave 1 COMPLETE** (`feat(open-repo): Phase 4 Wave 1 — ActivityPub protocol + HTTP signature verification`, commit `667d9d9`). **Implemented**: (1) 6 ActivityPub endpoints (webfinger, actor, inbox, outbox, followers, following) per W3C spec, (2) HTTP signature generation + verification (RFC 8017, RSA-SHA256), (3) Activity models (Create, Update, Delete, Announce, Undo), (4) 35 unit tests (100% Wave 1 coverage), (5) backward compatible — all 81 Phase 1-3 tests still passing (116 total). **Code**: app/http_signatures.py (229 lines, signature utilities), app/models.py (+71 lines), app/routes.py (+258 lines), app/schemas.py (+195 lines), tests/test_activitypub.py (665 lines, 35 tests). **Production-ready**: full error handling, pydantic validation, idempotency checks, no debug prints. **Next**: Phase 4 Wave 2 (Federation Bootstrap & Content Sync) — Follow/Accept handshake, content propagation, integration tests (~2 weeks, ~100 story points).
 
 **In Progress**:
 - **stockbot**: Paper trading LIVE on dev + Jetson (both healthy). Monday 2026-04-28 14:30 UTC market open checklist ready. Dashboard API operational, monitoring-dashboard.py ready. Zero action items — ready to monitor.
