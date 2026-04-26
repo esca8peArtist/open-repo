@@ -2,6 +2,57 @@
 
 ---
 
+## April 27, 2026 (Session 496) — Three tracker updates: First Amendment, Environmental, Police Brutality
+
+**Session type**: Research and tracker update
+**Files modified**:
+- `projects/resistance-research/first-amendment-suppression.md` — two new entries (Section 1.8 Seth Harp congressional subpoena; Section 4.6 Kash Patel v. The Atlantic); Section 5.2 litigation list updated; date updated to April 27
+- `projects/resistance-research/environmental-rollbacks-tracker.md` — Entry 1 updated with Endangerment Finding effective date (April 20, 2026); Entry 12 updated with February-March 2026 enforcement collapse data; date updated to April 27
+- `projects/resistance-research/police-brutality-consent-decree-tracker.md` — Pattern 4 expanded with Q1 2026 cross-domain enforcement data; date updated to April 27
+
+### Developments identified per tracker
+
+**First Amendment (2 new entries)**
+
+1. **Seth Harp congressional subpoena** (January 9, 2026): House Oversight Committee voted to subpoena journalist Seth Harp to reveal sources for reporting that identified a Delta Force commander involved in the U.S. invasion of Venezuela and abduction of President Maduro. Twenty press freedom organizations — including ACLU, RCFP, PEN America, CPJ — demanded rescission. This is the first documented congressional source-compulsion subpoena of the current administration. The mechanism is distinct from DOJ prosecution: legislative compulsion is harder to challenge on standard reporter's-privilege grounds.
+
+2. **Kash Patel v. The Atlantic** (April 20, 2026): Sitting FBI Director Kash Patel filed a $250 million defamation lawsuit in D.C. federal court against The Atlantic over an article reporting on his alleged excessive drinking and erratic behavior. Press freedom advocates characterized it as a SLAPP. Patel chose federal court specifically because D.C.'s anti-SLAPP protections don't apply there (per *Abbas v. Foreign Policy Group*, D.C. Cir. 2014). A prior Patel defamation suit against former MSNBC contributor Frank Figliuzzi was dismissed in late April 2026. This is a sitting FBI director using personal litigation to intimidate press — without modern precedent.
+
+**Environmental (2 updates to existing entries)**
+
+1. **Endangerment Finding effective date** (April 20, 2026): The GHG Endangerment Finding rescission became legally effective April 20, 2026 — 60 days after February 18 Federal Register publication. No court has issued a stay. EPA currently lacks its primary statutory authority to regulate greenhouse gases. The reconsideration petition (filed April 16 by 16 organizations) tolls some appellate deadlines but does not halt the rule's legal effect.
+
+2. **EPA enforcement collapse data** (February-March 2026 reports): Environmental Integrity Project data: DOJ civil lawsuits referred by EPA dropped to 16 in Trump's first 12 months (76% below Biden year 1; 81% below Trump first-term year 1). Penalties through September 2025: $41 million (below Biden-era inflation-adjusted figure). TSCA inspections fell 42% (1,430 to 834). 400 more administrative cases resolved with zero-dollar penalties versus Biden's fourth year. EPA publicly claimed strong enforcement; agency data contradicted those claims.
+
+**Police brutality (1 update to cross-cutting pattern)**
+
+Pattern 4 (Federal Vacuum) updated with Q1 2026 cross-domain enforcement collapse data linking the DOJ Civil Rights Division staffing loss (250+ attorneys departed), the 36% police prosecution drop, and the parallel EPA enforcement collapse as coordinated institutional attrition across enforcement domains — not independent trends.
+
+### Patterns emerging across the three domains (2026 trajectory)
+
+The dominant 2026 pattern is **enforcement attrition as the primary mechanism of rights erosion**, rather than formal legal change. In all three domains:
+- Formal rule changes are real (Endangerment Finding rescinded, decrees dismissed), but the more pervasive mechanism is the removal of enforcement personnel and capacity
+- Courts are winning individual cases (NPR/PBS defunding blocked, Pentagon press rules blocked, PFAS suits advancing) but enforcement gaps mean legal wins don't always translate to protected outcomes
+- Speed asymmetry favors the administration: enforcement infrastructure takes years to rebuild; dismantling takes months
+- The 2026 election creates a potential inflection point — but without pre-committed institutional restoration plans, winning elections does not automatically restore enforcement capacity (the autocratic enclaves problem documented in democratic-renewal-proposal.md)
+
+### Sources added
+- [The Intercept — Kash Patel SLAPP](https://theintercept.com/2026/04/23/kash-patel-atlantic-lawsuit/)
+- [Democracy Now — Patel filing](https://www.democracynow.org/2026/4/21/headlines/fbi_director_kash_patel_files_250_million_defamation_lawsuit_against_atlantic_magazine)
+- [CNN — Patel filing](https://edition.cnn.com/2026/04/20/media/kash-patel-fbi-atlantic-lawsuit-sarah-fitzpatrick)
+- [NBC News — Figliuzzi suit dismissed](https://www.nbcnews.com/politics/justice-department/judge-tosses-kash-patels-defamation-suit-former-msnbc-contributor-rcna341458)
+- [Freedom of the Press Foundation — Seth Harp](https://freedom.press/issues/house-committee-approves-subpoena-of-journalist-for-venezuela-reporting/)
+- [Washington Post — Seth Harp subpoena](https://www.washingtonpost.com/business/2026/01/08/seth-harp-first-amendment-luna-subpoena/)
+- [CPJ — Seth Harp](https://cpj.org/2026/01/cpj-calls-on-u-s-house-committee-to-drop-seth-harp-subpoena/)
+- [Inside Climate News — EPA enforcement collapse](https://insideclimatenews.org/news/05022026/trump-epa-polluter-enforcement-collapses/)
+- [NPR — EPA record low enforcement](https://www.npr.org/2026/02/05/nx-s1-5699511/epa-trump-enforcement)
+- [Inside Climate News — EPA contradicts own claims](https://insideclimatenews.org/news/10032026/trumps-epa-claims-strong-enforcement/)
+- [EDGI — enforcement annotation](https://envirodatagov.org/epas-enforcement-report-press-release-annotated/)
+
+**Confidence**: High for all new entries. Kash Patel filing confirmed by Axios, CNBC, CNN, Washington Post, Democracy Now. Seth Harp subpoena confirmed by Freedom of the Press Foundation, Washington Post, CPJ, PEN America. EPA enforcement data sourced to Environmental Integrity Project report covered by Inside Climate News and NPR. Endangerment Finding effective date calculated from Federal Register.
+
+---
+
 ## April 26, 2026 — resistance-research: Phase 3 research integration into democratic renewal proposal
 
 **Session type**: Integration (weaving Phase 3 comparative research into existing proposal infrastructure)

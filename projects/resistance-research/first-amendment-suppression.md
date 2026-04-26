@@ -1,7 +1,7 @@
 ---
 title: "First Amendment Suppression — Press Crackdowns, Protest Restrictions, Deplatforming, and SLAPP Suits"
 description: "A reference document tracking First Amendment violations and suppression across press freedom, protest rights, government-coerced deplatforming, and strategic litigation. Covers 2024–2026 with case law context."
-last_updated: 2026-04-26
+last_updated: 2026-04-27
 status: active
 phase: 3
 project: resistance-research
@@ -14,7 +14,7 @@ cross_references:
 
 # First Amendment Suppression — Reference Document
 
-*Phase 3 — Distributable. Last updated: April 26, 2026. April 2026 entries added.*
+*Phase 3 — Distributable. Last updated: April 27, 2026. April 2026 additions: Section 1.8 (Seth Harp congressional subpoena), Section 4.6 (Kash Patel v. The Atlantic — $250M SLAPP), Section 5.2 updated with both cases.*
 
 **Lead finding**: The United States is experiencing a coordinated, multi-vector assault on First Amendment rights. Government actors are suppressing press freedom through exclusion, warrant raids, and funding retaliation; restricting protest through state anti-protest laws and immigration enforcement used as political punishment; pressuring platforms to silence dissent through administrative subpoenas; and weaponizing defamation litigation to impose financial ruin on critics. Courts have provided partial relief, but enforcement gaps and the administration's willingness to defy injunctions mean legal wins do not always translate to protected speech.
 
@@ -113,6 +113,20 @@ Each section identifies: **what is happening**, **who is doing it**, **specific 
 Federal agents separately arrested independent journalist Georgia Fort and charged her with three felony offenses, including a hate crime, in connection with a protest at a St. Paul church on January 18, 2026. Don Lemon was also arrested on January 30, 2026. Federal lawyers reportedly sought approval from three separate grand juries before finding probable cause.
 
 **Sources**: [US Press Freedom Tracker](https://pressfreedomtracker.us/blog/a-troubling-picture-of-press-freedom-pressures-to-start-2026/) | [NPR](https://www.npr.org/2026/01/30/nx-s1-5693756/don-lemon-arrest-cnn-minneapolis) | [PBS](https://www.pbs.org/newshour/show/arrests-of-journalists-fuel-backlash-as-anti-ice-protests-spread-from-minneapolis)
+
+---
+
+### 1.8 Congressional Subpoena of Journalist Seth Harp — *House Oversight Committee*
+
+**What happened**: On January 9, 2026, the Republican-led House Oversight Committee voted to subpoena investigative journalist Seth Harp — requiring him to appear and hand over documents identifying the sources for reporting on a classified U.S. military operation. The reporting at issue: on January 4, 2026, the day after U.S. forces invaded Venezuela and abducted President Nicolás Maduro and his wife, Harp published the name and photograph of the Delta Force commander who led the operation. Harp is a New York Times bestselling author and Iraq war veteran whose work focuses on links between the U.S. military and organized crime.
+
+**Legal framework**: Reporters do not commit crimes by publishing information lawfully obtained — even classified information. The Supreme Court confirmed in *Bartnicki v. Vopper* (2001) that the First Amendment protects publication of lawfully obtained information even if the source obtained it unlawfully. The question of whether a journalist can be compelled to reveal sources via a congressional subpoena remains unsettled; reporters' privilege doctrine (based on the First Amendment and recognized in some form by a majority of federal circuits) provides at least a qualified shield. Freedom of the Press Foundation chief of advocacy Seth Stern stated Harp "merely published information that was publicly available about someone at the center of the world's biggest news story."
+
+**Response**: Twenty press freedom and First Amendment organizations — including the ACLU, the Reporters Committee for Freedom of the Press, PEN America, the Committee to Protect Journalists, and Reporters Without Borders — signed a letter calling on the committee to rescind the subpoena, stating that Harp's reporting was "fully and squarely within the protections of the First Amendment." The CPJ explicitly called on the DOJ to refrain from pursuing criminal charges.
+
+**Significance**: This is the first documented instance of a congressional committee voting to subpoena a journalist for source-revealing purposes since the current administration took office. It represents a distinct mechanism from DOJ action — legislative compulsion rather than executive branch prosecution — and is more difficult to challenge through standard First Amendment press protection doctrine. The committee's stated rationale was national security, which has historically been the government's most powerful claim against press-shield arguments.
+
+**Sources**: [Freedom of the Press Foundation](https://freedom.press/issues/house-committee-approves-subpoena-of-journalist-for-venezuela-reporting/) | [Washington Post](https://www.washingtonpost.com/business/2026/01/08/seth-harp-first-amendment-luna-subpoena/) | [CPJ](https://cpj.org/2026/01/cpj-calls-on-u-s-house-committee-to-drop-seth-harp-subpoena/) | [PEN America](https://pen.org/press-release/congressional-subpoena-of-journalist-threatens-press-freedom/) | [Common Dreams](https://www.commondause.org/articles/lawmakers-vote-subpoena-journalist-harp-delta-force)
 
 ---
 
@@ -280,6 +294,20 @@ The volume is increasing: 820 SLAPPs were identified globally in 2023, up from 5
 
 ---
 
+### 4.6 Kash Patel v. The Atlantic — $250 Million SLAPP Filed by a Sitting FBI Director
+
+**What happened**: On April 20, 2026, FBI Director Kash Patel filed a $250 million defamation lawsuit in federal court in the District of Columbia against The Atlantic and one of its reporters. The suit arose from an article published the week prior headlined "Kash Patel's Erratic Behavior Could Cost Him His Job," which reported — based on interviews with more than two dozen current and former FBI officials, congressional staff, political operatives, lobbyists, and hospitality workers — that Patel frequently drinks to excess, has been unreachable at critical times, and that agents once broke down a door to locate him. Patel denied the central allegations as "categorically false" and claimed his team had warned the publication hours before publication. The Atlantic stated it stood by its reporting and would "vigorously defend" the lawsuit.
+
+**Why this is a SLAPP**: Press freedom advocates including the Freedom Forum and The Intercept characterized the suit as a textbook SLAPP. The Intercept's analysis noted that Patel filed in D.C. federal court rather than state court in part because the D.C. appellate court had previously ruled that D.C.'s state anti-SLAPP protections do not apply in federal diversity cases — a jurisdictional gap that allows suits with weak merit to survive the early dismissal mechanism that anti-SLAPP laws provide. The $250 million figure is not calibrated to any plausible calculation of actual damages; it is a litigation cost threat. The pattern is identical to the Trump v. Des Moines Register and ABC/CBS settlement cases: a powerful government-affiliated figure using litigation not to obtain a legal remedy but to impose financial and editorial cost on journalism it dislikes.
+
+**The D.C. anti-SLAPP gap**: The legal mechanism here is important. The D.C. Anti-SLAPP Act provides early dismissal and fee-shifting for meritless SLAPP suits filed in D.C. courts. But in *Abbas v. Foreign Policy Group* (D.C. Cir. 2014), the D.C. Circuit held that D.C.'s anti-SLAPP statute does not apply in federal court. Patel's choice of federal court is therefore not procedurally neutral — it is a litigation strategy that strips the defendant of its most powerful anti-SLAPP defense. This gap is documented in the federal Free Speech Protection Act proposal (see Section 4.5), which would close it. That bill has not advanced.
+
+**Additional context**: Separately, a federal judge dismissed a prior Patel defamation suit against former MSNBC contributor Frank Figliuzzi in late April 2026, finding the claims did not meet the "actual malice" standard required for public officials. Patel is also reportedly pursuing additional litigation against other media organizations. The pattern — a sitting FBI director using personal litigation to intimidate news organizations covering his conduct — is without modern American precedent.
+
+**Sources**: [The Intercept — SLAPP analysis](https://theintercept.com/2026/04/23/kash-patel-atlantic-lawsuit/) | [Democracy Now — filing](https://www.democracynow.org/2026/4/21/headlines/fbi_director_kash_patel_files_250_million_defamation_lawsuit_against_atlantic_magazine) | [Poynter — analysis](https://www.poynter.org/commentary/2026/will-kash-patel-win-atlantic-defamation-lawsuit/) | [CNN — filing](https://edition.cnn.com/2026/04/20/media/kash-patel-fbi-atlantic-lawsuit-sarah-fitzpatrick) | [NBC News — Figliuzzi suit dismissed](https://www.nbcnews.com/politics/justice-department/judge-tosses-kash-patels-defamation-suit-former-msnbc-contributor-rcna341458)
+
+---
+
 ### 4.5 Anti-SLAPP Protections — State Progress, Federal Gap
 
 **State progress**: Montana and Iowa enacted the Uniform Public Expression Protection Act (UPEPA) in May 2025. Delaware followed in September 2025. As of late 2025, 14 states have enacted UPEPA versions. However, 36 states have no meaningful anti-SLAPP protection. Anti-SLAPP laws that do exist vary widely in scope and procedure.
@@ -325,6 +353,10 @@ The volume is increasing: 820 SLAPPs were identified globally in 2023, up from 5
 **In re Search of Natanson** (E.D. Va., April 2026 escalation): DOJ filed motion in April 2026 to overturn Judge Porter's February ruling requiring court-supervised review of devices seized from Washington Post reporter Hannah Natanson. The motion, if granted, would give the DOJ direct search authority over the devices. See Section 1.3 and 1.3 April 2026 escalation note.
 
 **Energy Transfer v. Greenpeace** (North Dakota): Jury verdict of ~$345 million (reduced from $660 million). Greenpeace seeking new trial and, if denied, appealing to North Dakota Supreme Court. See Section 4.2.
+
+**Kash Patel v. The Atlantic** (D.D.C., filed April 20, 2026): FBI Director Patel filed a $250 million defamation lawsuit against The Atlantic over reporting on his alleged conduct in office. The Atlantic has stated it will "vigorously defend" the suit. Patel's choice of federal court strips the defendant of D.C. anti-SLAPP protections. Legal analysts assess the suit as unlikely to succeed on the merits. See Section 4.6.
+
+**House Oversight Committee — Seth Harp subpoena** (January 9, 2026): Congressional subpoena issued to journalist for source-revealing purposes. Twenty press freedom organizations demanded rescission. Status as of April 2026 unknown — no public resolution reported. See Section 1.8.
 
 **Dakota Rural Action v. Noem** (D. South Dakota): ACLU challenge to South Dakota's "Riot Boosting Act" and companion laws. Federal court blocked the laws; South Dakota settled and agreed not to enforce them. A cautionary model for what anti-protest legislation looks like before courts intervene.
 

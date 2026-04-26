@@ -3,8 +3,8 @@ title: "Environmental Regulation Rollbacks Tracker — Trump Administration 2025
 subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
-last_updated: "2026-04-26"
-april_2026_entries: "entries 25–27 added; entry 1 (Endangerment Finding) updated with reconsideration petition"
+last_updated: "2026-04-27"
+april_2026_entries: "entries 25–27 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
 sources:
@@ -46,6 +46,8 @@ tags: [environmental-law, EPA, Interior, NOAA, DOE, DOT, rollbacks, litigation, 
 **Real-world impact**: If the rescission survives litigation, it removes the legal framework underpinning power plant emissions rules, vehicle tailpipe standards, and oil and gas methane regulations. The WRI estimated the Endangerment Finding covers roughly 80% of all U.S. greenhouse gas emissions. Health modeling by the Clean Air Task Force projects tens of thousands of additional premature deaths annually from increased GHG-linked pollution over a multi-decade horizon.
 
 **Litigation**: Earthjustice, NRDC, Environmental Defense Fund, and a coalition of 22 state attorneys general filed challenges immediately upon publication. Cases are consolidated in the D.C. Circuit. Harvard Law's Salata Institute projects a D.C. Circuit ruling by late 2026 and potential Supreme Court consideration by mid-2027. No preliminary injunction has been granted as of the compilation date.
+
+**Effective date note**: The Endangerment Finding rescission became effective **April 20, 2026**, per the Federal Register publication schedule (effective date = 60 days after February 18 publication). As of April 20, EPA lacks its primary statutory authority to regulate greenhouse gases from motor vehicles and, by extension, all downstream source categories. Litigation challenging the rescission was filed before the effective date and remains pending in the D.C. Circuit; no court has issued a stay halting the rule's effect.
 
 **April 2026 update — petition for administrative reconsideration**: On April 16, 2026, a coalition of sixteen health and environmental organizations (EDF, NRDC, Union of Concerned Scientists, Earthjustice, Sierra Club, Clean Air Task Force, American Lung Association, American Public Health Association, Center for Biological Diversity, Conservation Law Foundation, Public Citizen, Physicians for Social Responsibility, and others) filed a formal petition with EPA demanding it reconsider the Endangerment Finding repeal. The petition identifies fatal procedural and substantive defects: (a) key legal arguments in the final rule were entirely new and not included in the proposed rule, meaning the public never had an opportunity to comment on them — a Clean Air Act procedural violation; (b) the rule's claim that reducing U.S. vehicle GHG emissions is "futile" given global emissions is factually incorrect, given that U.S. vehicle emissions are the single largest domestic source of GHG. The petition supplements the litigation already pending in the D.C. Circuit; it does not replace it. The filing of a petition for reconsideration generally tolls certain appellate deadlines. EPA has not responded.
 
@@ -252,6 +254,16 @@ tags: [environmental-law, EPA, Interior, NOAA, DOE, DOT, rollbacks, litigation, 
 **Real-world impact**: The Environmental Protection Network (a group of former EPA officials) described the proposed cuts as "a wrecking ball." The civil enforcement division cuts reduce EPA's capacity to bring enforcement actions against violators. Superfund funding cuts directly affect cleanup at 1,350+ National Priority List sites. IRIS program cuts degrade the scientific basis for future health-based regulations.
 
 **Litigation**: The EPA's direct funding cuts are subject to ongoing congressional appropriations litigation, but individual budget decisions are largely within executive discretion. No comprehensive injunction against personnel cuts has been issued.
+
+**April 2026 enforcement collapse data**: A February 2026 report by the Environmental Integrity Project (covered by Inside Climate News and NPR) documented the scale of EPA enforcement collapse in Trump's first 12 months:
+- Civil lawsuits referred to DOJ: **16 cases** — a **76% decline** from Biden's first year (and an 81% decline from the first year of Trump's first term, which itself produced 86 cases). Obama-era comparison: 127 cases in the equivalent period.
+- Penalties imposed through September 2025: approximately **$41 million** — $8 million below the Biden-era figure adjusted for inflation.
+- Administrative cases with **zero dollars in federal penalties**: 2,257 under Trump 2.0 versus 1,813 under Biden's fourth year — 400 more cases resolved without any monetary penalty.
+- TSCA inspections: fell from 1,430 (Biden year 1) to **834** — a 42% drop.
+- Staffing driver: at least one-third of DOJ environmental attorneys departed; EPA laid off hundreds of monitoring employees in 2025.
+A March 2026 Inside Climate News follow-up found EPA publicly claimed strong enforcement; the agency's own data contradicted those claims. Environmental advocates characterized this as "regulatory capture by attrition" — retaining the statutory framework while gutting the enforcement personnel that makes it functional.
+
+**Sources — enforcement collapse**: [Inside Climate News — February 2026](https://insideclimatenews.org/news/05022026/trump-epa-polluter-enforcement-collapses/) | [NPR — record low enforcement](https://www.npr.org/2026/02/05/nx-s1-5699511/epa-trump-enforcement) | [Inside Climate News — March 2026 follow-up](https://insideclimatenews.org/news/10032026/trumps-epa-claims-strong-enforcement/) | [Environmental Data and Governance Initiative](https://envirodatagov.org/epas-enforcement-report-press-release-annotated/)
 
 ---
 
