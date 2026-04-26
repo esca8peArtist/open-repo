@@ -1,245 +1,326 @@
 #!/usr/bin/env python3
 """
-usage-check.py — Weekly session usage tracker for the SuperClaude orchestrator.
+usage-check.py — Token-based usage tracker for the SuperClaude orchestrator.
 
-Parses WORKLOG.md to count orchestrator sessions per week and reports
-usage against the configured budget. Used by:
-  - The orchestrator at the start of each session (throttle check)
-  - The user at any time for a quick usage overview
+Reads actual token counts from Claude Code's local session files
+(~/.claude/projects/.../  *.jsonl) and compares against calibrated plan limits.
+
+Plan limits are back-calculated from the UI percentage + observed tokens.
+Update them by running: python usage-check.py --calibrate <sonnet_pct> <all_pct>
 
 Output modes:
-  python usage-check.py            → human-readable report
-  python usage-check.py --json     → JSON for scripting
-  python usage-check.py --check    → exit 0 if under budget, exit 1 if over
-  python usage-check.py --checkin  → compact one-liner for CHECKIN.md
+  python usage-check.py              → human-readable report
+  python usage-check.py --json       → JSON for scripting
+  python usage-check.py --check      → exit 0 if under budget, exit 1 if over
+  python usage-check.py --checkin    → compact one-liner for CHECKIN.md
+  python usage-check.py --calibrate 22 14  → recalibrate limits from UI %
 """
 
 import re
 import sys
 import json
-from datetime import date, datetime, timedelta
+import glob
+import os
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from collections import defaultdict
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# ── Paths ─────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
-WORKLOG = REPO_ROOT / "WORKLOG.md"
 PROJECTS = REPO_ROOT / "PROJECTS.md"
 
-# Week runs Monday–Sunday (ISO week).
-# These should match the values in PROJECTS.md ## Usage Budget section.
-DEFAULT_WEEKLY_BUDGET = 20
-DEFAULT_DAILY_BUDGET = 5
-WARN_PCT = 0.75  # warn at 75% of budget
+# Claude Code stores sessions at ~/.claude/projects/<encoded-cwd>/*.jsonl
+# Encoded path: absolute path with / replaced by -
+CWD_ENCODED = str(REPO_ROOT).replace("/", "-").replace("_", "-")
+SESSION_DIR = Path.home() / ".claude" / "projects" / CWD_ENCODED
+
+# ── Calibrated plan limits (output tokens per billing week) ───────────────────
+# Back-calculated from UI % on 2026-04-26:
+#   ~1.97M Sonnet output tokens = 22%  →  limit ≈ 8,935,000
+#   ~2.12M all-model output tokens = 14%  →  limit ≈ 15,114,000
+# Update with --calibrate when you have fresh UI data.
+DEFAULT_SONNET_LIMIT     = 8_935_000
+DEFAULT_ALL_MODELS_LIMIT = 15_114_000
+
+WARN_PCT     = 0.75   # warn at 75% of limit
+THROTTLE_PCT = 0.90   # stop new sessions at 90% (buffer for current session)
+
+SONNET_MODELS = {"claude-sonnet-4-6", "claude-sonnet-4-5"}
+HAIKU_MODELS  = {"claude-haiku-4-5-20251001", "claude-haiku-4-5"}
+OPUS_MODELS   = {"claude-opus-4-6", "claude-opus-4-7"}
 
 
-def parse_budget_from_projects() -> tuple[int, int]:
-    """Read weekly and daily budget from PROJECTS.md if present."""
-    weekly = DEFAULT_WEEKLY_BUDGET
-    daily = DEFAULT_DAILY_BUDGET
+def last_tuesday() -> datetime:
+    """Return the most recent Tuesday at 00:00 UTC (billing week start)."""
+    today = datetime.now(timezone.utc).date()
+    days_back = (today.weekday() - 1) % 7  # weekday(): Mon=0, Tue=1
+    reset_date = today - timedelta(days=days_back)
+    return datetime(reset_date.year, reset_date.month, reset_date.day,
+                    tzinfo=timezone.utc)
+
+
+def next_tuesday() -> datetime:
+    return last_tuesday() + timedelta(weeks=1)
+
+
+def load_limits() -> tuple[int, int]:
+    """Read calibrated limits from PROJECTS.md if present, else use defaults."""
+    sonnet_limit = DEFAULT_SONNET_LIMIT
+    all_limit = DEFAULT_ALL_MODELS_LIMIT
     if not PROJECTS.exists():
-        return weekly, daily
+        return sonnet_limit, all_limit
     text = PROJECTS.read_text()
-    m = re.search(r"weekly[_\s]session[_\s]budget\s*[:=]\s*(\d+)", text, re.IGNORECASE)
+    m = re.search(r"sonnet[_\s]token[_\s]limit\s*[:=]\s*([\d_,]+)", text, re.IGNORECASE)
     if m:
-        weekly = int(m.group(1))
-    m = re.search(r"daily[_\s]session[_\s]budget\s*[:=]\s*(\d+)", text, re.IGNORECASE)
+        sonnet_limit = int(m.group(1).replace("_", "").replace(",", ""))
+    m = re.search(r"all[_\s]models?[_\s]token[_\s]limit\s*[:=]\s*([\d_,]+)", text, re.IGNORECASE)
     if m:
-        daily = int(m.group(1))
-    return weekly, daily
+        all_limit = int(m.group(1).replace("_", "").replace(",", ""))
+    return sonnet_limit, all_limit
 
 
-def parse_sessions(worklog_path: Path) -> list[date]:
+def collect_tokens(since: datetime) -> dict:
     """
-    Extract one date per session from WORKLOG.md.
-    Lines matching '## YYYY-MM-DD' are session headers.
-    Returns list of dates (one per session entry, oldest first).
+    Read all session JSONL files and sum output tokens since `since`.
+    Returns dict keyed by model name.
     """
-    if not worklog_path.exists():
-        return []
-    dates: list[date] = []
-    pattern = re.compile(r"^##\s+(\d{4}-\d{2}-\d{2})")
-    for line in worklog_path.read_text().splitlines():
-        m = pattern.match(line)
-        if m:
-            try:
-                dates.append(datetime.strptime(m.group(1), "%Y-%m-%d").date())
-            except ValueError:
-                pass
-    return sorted(dates)
+    by_model: dict[str, dict] = defaultdict(lambda: {"output": 0, "input": 0, "sessions": set()})
+
+    if not SESSION_DIR.exists():
+        return {}
+
+    for fpath in SESSION_DIR.glob("*.jsonl"):
+        session_id = fpath.stem
+        try:
+            with open(fpath) as f:
+                for line in f:
+                    try:
+                        msg = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    if not isinstance(msg, dict) or msg.get("type") != "assistant":
+                        continue
+                    ts_str = msg.get("timestamp", "")
+                    if not ts_str:
+                        continue
+                    try:
+                        ts = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+                    except ValueError:
+                        continue
+                    if ts < since:
+                        continue
+                    usage = msg.get("message", {}).get("usage", {})
+                    model = msg.get("message", {}).get("model", "unknown")
+                    out = usage.get("output_tokens", 0) or 0
+                    inp = usage.get("input_tokens", 0) or 0
+                    if out == 0:
+                        continue
+                    by_model[model]["output"] += out
+                    by_model[model]["input"] += inp
+                    by_model[model]["sessions"].add(session_id)
+        except OSError:
+            continue
+
+    return dict(by_model)
 
 
-def iso_week_key(d: date) -> str:
-    """Return 'YYYY-Www' ISO week key for a date."""
-    iso = d.isocalendar()
-    return f"{iso[0]}-W{iso[1]:02d}"
+def aggregate(by_model: dict) -> dict:
+    sonnet_out = sum(v["output"] for k, v in by_model.items() if k in SONNET_MODELS)
+    opus_out   = sum(v["output"] for k, v in by_model.items() if k in OPUS_MODELS)
+    haiku_out  = sum(v["output"] for k, v in by_model.items() if k in HAIKU_MODELS)
+    other_out  = sum(v["output"] for k, v in by_model.items()
+                     if k not in SONNET_MODELS | OPUS_MODELS | HAIKU_MODELS
+                     and k not in ("unknown", "<synthetic>"))
+    total_out = sonnet_out + opus_out + haiku_out + other_out
 
-
-def week_range(d: date) -> tuple[date, date]:
-    """Return (monday, sunday) for the ISO week containing d."""
-    monday = d - timedelta(days=d.weekday())
-    sunday = monday + timedelta(days=6)
-    return monday, sunday
-
-
-def build_report() -> dict:
-    weekly_budget, daily_budget = parse_budget_from_projects()
-    session_dates = parse_sessions(WORKLOG)
-
-    today = date.today()
-    current_week = iso_week_key(today)
-    current_monday, current_sunday = week_range(today)
-
-    # Group by ISO week
-    by_week: dict[str, list[date]] = defaultdict(list)
-    for d in session_dates:
-        by_week[iso_week_key(d)].append(d)
-
-    # By day for daily budget check
-    by_day: dict[date, int] = defaultdict(int)
-    for d in session_dates:
-        by_day[d] += 1
-
-    # Current week stats
-    this_week_sessions = by_week.get(current_week, [])
-    this_week_count = len(this_week_sessions)
-    today_count = by_day.get(today, 0)
-
-    # Rolling 7 days
-    rolling_start = today - timedelta(days=6)
-    rolling_count = sum(1 for d in session_dates if d >= rolling_start)
-
-    # Last 4 weeks for trend
-    weeks = []
-    for offset in range(3, -1, -1):
-        ref = today - timedelta(weeks=offset)
-        wk = iso_week_key(ref)
-        mon, sun = week_range(ref)
-        count = len(by_week.get(wk, []))
-        weeks.append({
-            "week": wk,
-            "start": str(mon),
-            "end": str(sun),
-            "sessions": count,
-            "is_current": wk == current_week,
-        })
-
-    # Budget status
-    week_pct = this_week_count / weekly_budget if weekly_budget else 0
-    day_pct = today_count / daily_budget if daily_budget else 0
-    over_week = this_week_count >= weekly_budget
-    over_day = today_count >= daily_budget
-    warn_week = week_pct >= WARN_PCT and not over_week
-    warn_day = day_pct >= WARN_PCT and not over_day
+    sonnet_sessions = set()
+    total_sessions = set()
+    for k, v in by_model.items():
+        total_sessions |= v["sessions"]
+        if k in SONNET_MODELS:
+            sonnet_sessions |= v["sessions"]
 
     return {
-        "today": str(today),
-        "current_week": current_week,
-        "week_start": str(current_monday),
-        "week_end": str(current_sunday),
-        "budgets": {
-            "weekly": weekly_budget,
-            "daily": daily_budget,
-        },
-        "usage": {
-            "this_week": this_week_count,
-            "today": today_count,
-            "rolling_7d": rolling_count,
-            "total_all_time": len(session_dates),
-        },
-        "status": {
-            "over_weekly_budget": over_week,
-            "warn_weekly_budget": warn_week,
-            "over_daily_budget": over_day,
-            "warn_daily_budget": warn_day,
-            "week_pct": round(week_pct * 100, 1),
-            "day_pct": round(day_pct * 100, 1),
-        },
-        "weekly_trend": weeks,
-        "recommendation": _recommend(over_week, warn_week, over_day, warn_day,
-                                      this_week_count, weekly_budget,
-                                      today_count, daily_budget),
+        "sonnet_output":   sonnet_out,
+        "opus_output":     opus_out,
+        "haiku_output":    haiku_out,
+        "other_output":    other_out,
+        "total_output":    total_out,
+        "sonnet_sessions": len(sonnet_sessions),
+        "total_sessions":  len(total_sessions),
     }
 
 
-def _recommend(over_w, warn_w, over_d, warn_d, wk_used, wk_budget, d_used, d_budget) -> str:
-    if over_w:
-        return (f"OVER weekly budget ({wk_used}/{wk_budget}). "
-                "Orchestrator should idle until next Monday or user raises limit.")
-    if over_d:
-        return (f"OVER daily budget ({d_used}/{d_budget}). "
-                "Orchestrator should idle until tomorrow.")
-    if warn_w:
-        remaining = wk_budget - wk_used
-        return (f"Approaching weekly budget — {remaining} sessions remaining this week. "
-                "Prioritise high-value tasks only.")
-    if warn_d:
-        remaining = d_budget - d_used
-        return f"Approaching daily budget — {remaining} sessions remaining today."
-    return "Usage nominal. No throttling needed."
+def build_report() -> dict:
+    sonnet_limit, all_limit = load_limits()
+    since = last_tuesday()
+    next_reset = next_tuesday()
+
+    by_model = collect_tokens(since)
+    agg = aggregate(by_model)
+
+    sonnet_pct  = agg["sonnet_output"] / sonnet_limit * 100 if sonnet_limit else 0
+    all_pct     = agg["total_output"]  / all_limit    * 100 if all_limit    else 0
+    sonnet_over = sonnet_pct >= THROTTLE_PCT * 100
+    all_over    = all_pct    >= THROTTLE_PCT * 100
+    sonnet_warn = sonnet_pct >= WARN_PCT * 100 and not sonnet_over
+    all_warn    = all_pct    >= WARN_PCT * 100 and not all_over
+
+    hours_left = (next_reset - datetime.now(timezone.utc)).total_seconds() / 3600
+
+    return {
+        "since":              since.isoformat(),
+        "next_reset":         next_reset.isoformat(),
+        "hours_until_reset":  round(hours_left, 1),
+        "limits":             {"sonnet": sonnet_limit, "all_models": all_limit},
+        "usage":              agg,
+        "pct":                {"sonnet": round(sonnet_pct, 1), "all_models": round(all_pct, 1)},
+        "status": {
+            "sonnet_over": sonnet_over,
+            "all_over":    all_over,
+            "sonnet_warn": sonnet_warn,
+            "all_warn":    all_warn,
+            "over_any":    sonnet_over or all_over,
+        },
+        "recommendation": _recommend(sonnet_over, all_over, sonnet_warn, all_warn,
+                                     agg["sonnet_output"], sonnet_limit,
+                                     agg["total_output"], all_limit),
+        "by_model": {k: {"output": v["output"], "sessions": len(v["sessions"])}
+                     for k, v in by_model.items() if v["output"] > 0},
+    }
+
+
+def _recommend(s_over, a_over, s_warn, a_warn, s_used, s_lim, a_used, a_lim) -> str:
+    s_pct = s_used / s_lim * 100 if s_lim else 0
+    a_pct = a_used / a_lim * 100 if a_lim else 0
+    if s_over:
+        return (f"THROTTLE — Sonnet at {s_pct:.0f}% ({s_used:,}/{s_lim:,} tokens). "
+                "Idling until Tuesday reset.")
+    if a_over:
+        return (f"THROTTLE — All-models at {a_pct:.0f}% ({a_used:,}/{a_lim:,} tokens). "
+                "Idling until Tuesday reset.")
+    if s_warn:
+        return (f"WARNING — Sonnet at {s_pct:.0f}% ({s_lim - s_used:,} tokens remaining). "
+                "Limit session depth; prioritise high-value tasks.")
+    if a_warn:
+        return (f"WARNING — All-models at {a_pct:.0f}% ({a_lim - a_used:,} tokens remaining). "
+                "Prioritise high-value tasks.")
+    return "Usage nominal — no throttling needed."
 
 
 def print_report(r: dict) -> None:
-    w = r["status"]
     u = r["usage"]
-    b = r["budgets"]
+    p = r["pct"]
+    lim = r["limits"]
+    s = r["status"]
 
-    week_bar = _bar(u["this_week"], b["weekly"])
-    day_bar = _bar(u["today"], b["daily"])
+    bar_s = _bar(u["sonnet_output"], lim["sonnet"])
+    bar_a = _bar(u["total_output"],  lim["all_models"])
+    flag_s = "🔴" if s["sonnet_over"] else ("🟡" if s["sonnet_warn"] else "🟢")
+    flag_a = "🔴" if s["all_over"]    else ("🟡" if s["all_warn"]    else "🟢")
 
-    status_w = "OVER" if w["over_weekly_budget"] else ("WARN" if w["warn_weekly_budget"] else "OK  ")
-    status_d = "OVER" if w["over_daily_budget"] else ("WARN" if w["warn_daily_budget"] else "OK  ")
-
-    print(f"\n{'='*55}")
-    print(f"  SuperClaude Usage Check — {r['today']}")
-    print(f"{'='*55}")
-    print(f"  Week ({r['current_week']}, {r['week_start']} → {r['week_end']})")
-    print(f"  [{status_w}] {week_bar}  {u['this_week']:>2}/{b['weekly']} sessions  ({w['week_pct']}%)")
-    print(f"  Today")
-    print(f"  [{status_d}] {day_bar}  {u['today']:>2}/{b['daily']} sessions  ({w['day_pct']}%)")
-    print(f"  Rolling 7d: {u['rolling_7d']} sessions  |  All-time: {u['total_all_time']}")
+    print(f"\n{'='*62}")
+    print(f"  SuperClaude Token Usage — since {r['since'][:10]}")
+    print(f"  Reset in {r['hours_until_reset']:.0f}h  (Tue {r['next_reset'][:10]} 00:00 UTC)")
+    print(f"{'='*62}")
+    print(f"  {flag_s} Sonnet     {bar_s}  {p['sonnet']:.1f}%")
+    print(f"       {u['sonnet_output']:>13,} / {lim['sonnet']:,} output tokens")
+    print(f"  {flag_a} All models {bar_a}  {p['all_models']:.1f}%")
+    print(f"       {u['total_output']:>13,} / {lim['all_models']:,} output tokens")
     print()
-    print("  Weekly trend:")
-    for wk in r["weekly_trend"]:
-        marker = " ◀ current" if wk["is_current"] else ""
-        bar = _bar(wk["sessions"], b["weekly"], width=20)
-        print(f"    {wk['week']}  {bar}  {wk['sessions']:>2}/{b['weekly']}{marker}")
+    print(f"  Sessions this week: {u['total_sessions']}  "
+          f"(Sonnet: {u['sonnet_sessions']})")
+    if r["by_model"]:
+        for model, d in sorted(r["by_model"].items(), key=lambda x: -x[1]["output"]):
+            print(f"    {model}: {d['output']:,} tokens  ({d['sessions']} sessions)")
     print()
     print(f"  ➜  {r['recommendation']}")
-    print(f"{'='*55}\n")
-    print("  To check manually: claude.ai → Settings → Usage & billing")
+    print(f"{'='*62}")
+    print()
+    print("  Recalibrate from UI %:")
+    print("    python usage-check.py --calibrate <sonnet_pct> <all_pct>")
+    print("  (claude.ai → Settings → Usage & billing)")
     print()
 
 
-def _bar(used: int, total: int, width: int = 24) -> str:
+def _bar(used: int, total: int, width: int = 20) -> str:
     if total == 0:
         return "░" * width
-    filled = min(int(used / total * width), width)
-    color = "█" if used < total * WARN_PCT else ("▓" if used < total else "░")
-    return "█" * filled + "░" * (width - filled)
+    ratio = min(used / total, 1.0)
+    filled = int(ratio * width)
+    ch = "█" if ratio < WARN_PCT else ("▓" if ratio < THROTTLE_PCT else "█")
+    return ch * filled + "░" * (width - filled)
 
 
 def checkin_line(r: dict) -> str:
+    p = r["pct"]
     u = r["usage"]
-    b = r["budgets"]
     s = r["status"]
-    flag = "🔴" if s["over_weekly_budget"] else ("🟡" if s["warn_weekly_budget"] else "🟢")
-    return (f"{flag} Usage this week: {u['this_week']}/{b['weekly']} sessions "
-            f"({s['week_pct']}%) | today: {u['today']}/{b['daily']} | "
-            f"rolling 7d: {u['rolling_7d']} | check: claude.ai → Settings → Usage & billing")
+    flag = "🔴" if s["over_any"] else ("🟡" if (s["sonnet_warn"] or s["all_warn"]) else "🟢")
+    return (f"{flag} Usage: Sonnet {p['sonnet']}% ({u['sonnet_output']:,} tokens) | "
+            f"All-models {p['all_models']}% | "
+            f"Reset in {r['hours_until_reset']:.0f}h | "
+            f"check: claude.ai → Settings → Usage & billing")
+
+
+def calibrate(sonnet_pct: float, all_pct: float) -> None:
+    """Back-calculate and write new limits to PROJECTS.md."""
+    r = build_report()
+    u = r["usage"]
+
+    new_sonnet = int(u["sonnet_output"] / (sonnet_pct / 100)) if sonnet_pct > 0 else DEFAULT_SONNET_LIMIT
+    new_all    = int(u["total_output"]  / (all_pct    / 100)) if all_pct    > 0 else DEFAULT_ALL_MODELS_LIMIT
+
+    print(f"Calibrating: Sonnet={sonnet_pct}%, All-models={all_pct}%")
+    print(f"  Current Sonnet output  : {u['sonnet_output']:,} tokens")
+    print(f"  Implied Sonnet limit   : {new_sonnet:,} tokens/week")
+    print(f"  Current total output   : {u['total_output']:,} tokens")
+    print(f"  Implied all-models lim : {new_all:,} tokens/week")
+
+    if not PROJECTS.exists():
+        print("ERROR: PROJECTS.md not found.")
+        return
+
+    text = PROJECTS.read_text()
+    today_str = str(date.today())
+
+    def upsert_line(text, key, value, note):
+        pattern = rf"- \*\*{re.escape(key)}.*"
+        replacement = f"- **{key}: {value:,}**  ← {note}"
+        if re.search(pattern, text):
+            return re.sub(pattern, replacement, text)
+        return text.replace("**Throttle rules",
+                            f"{replacement}\n\n**Throttle rules")
+
+    text = upsert_line(text, "Sonnet token limit",    new_sonnet,
+                       f"calibrated {today_str} (UI showed {sonnet_pct}%)")
+    text = upsert_line(text, "All models token limit", new_all,
+                       f"calibrated {today_str} (UI showed {all_pct}%)")
+    PROJECTS.write_text(text)
+    print(f"  Saved to PROJECTS.md.")
 
 
 if __name__ == "__main__":
     args = sys.argv[1:]
+
+    if "--calibrate" in args:
+        idx = args.index("--calibrate")
+        try:
+            s_pct = float(args[idx + 1])
+            a_pct = float(args[idx + 2])
+        except (IndexError, ValueError):
+            print("Usage: usage-check.py --calibrate <sonnet_pct> <all_models_pct>")
+            sys.exit(1)
+        calibrate(s_pct, a_pct)
+        sys.exit(0)
+
     report = build_report()
 
     if "--json" in args:
-        print(json.dumps(report, indent=2))
+        print(json.dumps(report, indent=2, default=str))
     elif "--check" in args:
-        # Exit 1 if over any budget (for use in orchestrator scripts)
-        s = report["status"]
-        if s["over_weekly_budget"] or s["over_daily_budget"]:
-            print(f"BUDGET EXCEEDED: {report['recommendation']}")
+        if report["status"]["over_any"]:
+            print(f"THROTTLE: {report['recommendation']}")
             sys.exit(1)
         print(f"OK: {report['recommendation']}")
         sys.exit(0)
