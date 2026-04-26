@@ -4,6 +4,77 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 Late Night (23:55 UTC) — Orchestrator Session 489 — Phase 4 Completion + Strategy Optimization
+
+**Session Protocol**: Parallel agent execution (2 independent high-priority tasks)
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Phase 4 Documents 2-4** (agent a17080a47a4bbba6e)
+   - Completed `power-mapping.md` (3,500 words) — veto players, dark money networks, vulnerabilities
+     - **Key finding**: US capture is layered (Federalist Society + executive + civil service) but not fully consolidated — recovery window still open
+     - Institutional mapping: federal judiciary (split, 350/362 wins for rule of law), AG coalitions (71 suits, 40 wins), civil service (closest to capture), military (institutional norms intact), intel (partially captured)
+     - Dark money infrastructure: Koch/DonorsTrust/SPN/Federalist Society architecture ($195M in 2024), Leonard Leo undisclosed gifts
+     - Identified vulnerabilities: Roberts independence signals, incomplete civil service capture, business elite fracture on tariffs, AG legal record
+   
+   - Completed `parallel-institutions.md` (3,500 words) — institutional alternatives at scale
+     - **Key finding**: US already has substantial parallel infrastructure but lacks political coherence to function as recovery anchors
+     - Sector data: Champlain Housing Trust (18% of Burlington, largest CLT), CDFI $446B (18.3M members), 900-1000 worker coops ($806M revenue), state policy alternatives
+     - Mondragon comparison (70K worker-owners under Franco), CLT/cooperative scaling models
+     - Three-layer blueprint: defend existing, scale existing, create new (interstate compacts, cooperative development finance)
+   
+   - Completed `elite-capture-case-study.md` (3,000 words) — accountability failure mechanisms
+     - **Key finding**: Epstein case is manual for manufacturing elite impunity, not anomaly
+     - Five mechanisms: prosecutorial discretion without accountability (OPR "poor judgment" standard), unnamed co-conspirator immunity, settlement gag clauses, judicial deference, revolving-door incentives
+     - 2024-2026 updates: Maxwell convicted, 3.5M pages released (200K redacted), FARA gaps documented
+     - Generalization: corporate prosecution rates at 30-year low, large multinationals receive DPAs at higher rates
+     - Five structural reforms framed as constitutive of democratic recovery
+   
+   - All documents cited with sources, committed to master
+   - **Token usage**: 80,633
+
+2. ✅ **Stockbot: Strategy Cleanup + Validation + Readiness** (agent a38c427b9c32e004c)
+   - Task 1: Removed SMA_50_200/SMA_10_50 (commit ac6d574)
+     - Structural failure: generate 0-2 trades/252 days (need ≥100), negative Sharpe
+     - Updated strategy catalogue, test coverage, strategy count 10→8
+   
+   - Task 2: Paper trading validation setup (commit f86abd7)
+     - Paper trading started today, 9 trade legs total, 1 AAPL_h10_lgbm_ho (36 shares @$271.04)
+     - Created `scripts/paper_trading_monitor.py` — daily metrics collection (round trips, win rate, profit factor, Sharpe, max drawdown, Calmar)
+     - 20 unit tests, JSON snapshot logging to `logs/paper_trading_daily.jsonl`
+     - **3-month success criteria**: Gates 1+2+3 all pass for 3 consecutive calendar months
+       - Gate 1: ≥30 round trips/month
+       - Gate 2: Sharpe ≥1.0, MDD ≤20%, profit factor ≥1.5
+       - Gate 3: ≥63 days elapsed
+   
+   - Task 3: Live trading readiness checklist (commit a1af9e0)
+     - Created `/projects/stockbot/docs/live-trading-readiness.md` (user-facing)
+     - Seven sections: paper trading gates, Alpaca setup (cash account, $100-500 initial), guardrails confirmation (6 validators enumerated), risk management (position sizing tables), monitoring (daily cron, alerts), emergency exit (halt commands), final go/no-go
+     - Specific warning: AAPL ~$170/share = 34% of $500 account in fractional shares
+   
+   - 115 tests passing, 0 regressions, 3 commits
+   - **Token usage**: 121,344
+
+**Orchestration Work**:
+- Oriented: ORCHESTRATOR_STATE.md, INBOX.md (empty), PROJECTS.md
+- Usage check: NOMINAL (45.8% Sonnet, 2.7M tokens remaining before 80% threshold)
+- Spawned 2 agents in parallel (resistance-research, stockbot)
+- Both completed independently with high-quality output
+
+**Total Tokens This Session**: 201,977
+
+**Blocks Resolved**: —
+
+**Next Session Work**:
+- cybersecurity-hardening: device-hardening-guide.md (exploratory, 3K words on GrapheneOS/CalyxOS, aeroplane mode, location brokers, SIM swapping)
+- stockbot: Monitor paper trading daily, assess progress toward Gate 1 (30 round trips/month)
+- resistance-research: Consider Phase 5 scope (implementation roadmap, timeline)
+- open-repo: After PR #1 merges, begin Phase 5 (offline export/Kiwix integration)
+
+**Git Status**: All agent commits to master ✓, orchestration files staged
+
+---
+
 ## 2026-04-26 Late Night (23:47 UTC) — Orchestrator Session 488 — Parallel Agents: Phase 4 Launch + Strategy Evaluation
 
 **Session Protocol**: Parallel agent execution (2 independent high-priority tasks)

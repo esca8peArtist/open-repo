@@ -65,10 +65,30 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1 launched, Phase 2 live, **Phase 3 COMPLETE (Session 487)**
+**Status**: Active — Phase 1 launched, Phase 2 live, Phase 3 COMPLETE, **Phase 4 COMPLETE (Session 489)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Phase 4 IN PROGRESS (Session 488)**. Phase 3 research roadmap fully integrated into democratic renewal proposal (Session 487). Phase 4 addresses theory of change: how captured systems get replaced.
+**Current focus**: **Phase 4 COMPLETE (Session 489)**. All four theory-of-change documents written and committed. Proposal now contains full diagnosis-to-action pathway. Next: Phase 5 (implementation roadmap, timeline, movement coordination strategy).
+
+**✅ COMPLETED (Session 489)**:
+- ✅ **Phase 4 Documents 2-4** — theory-of-change framework complete
+  1. **`power-mapping.md`** (3,500 words) — Institutional veto points and vulnerabilities
+     - **Key finding**: US capture is layered (Federalist Society + executive overreach + civil service dismantlement) but not yet fully consolidated — recovery window is still open
+     - Detailed mapping: federal judiciary (split, 350/362 rule-of-law wins), AG coalitions (71 suits, 40 wins), civil service (incomplete capture, legal challenges active), military officer corps (institutional non-interference norms intact), intelligence agencies (partially captured via leadership appointments)
+     - Dark money infrastructure: Koch/DonorsTrust/SPN/Federalist Society four-layer architecture, documented $195M in 2024 grants to 300+ organizations, Leonard Leo's undisclosed gifts to SCOTUS justices
+     - Identified vulnerabilities: Roberts independence signals, incomplete civil service capture, documented business elite fracture from tariff unpredictability, AG legal record building institutional precedent
+  2. **`parallel-institutions.md`** (3,500 words) — Alternative institutional infrastructure at scale
+     - **Key finding**: US already has substantial parallel institutional infrastructure (larger than most acknowledge) but fragmented and lacking political coherence to function as institutional anchors in recovery context
+     - Sector inventory: Champlain Housing Trust (18% of Burlington residential units, largest CLT in world), $446B CDFI sector with 18.3M members, 900-1000 worker cooperatives with $806M revenue, mutual aid networks with demonstrated crisis-response capacity, state-level policy infrastructure with interstate compact potential
+     - Mondragon comparison (70K worker-owners under Franco) shows democratic governance can scale at meaningful size
+     - Three-layer blueprint: (1) what exists and needs defense, (2) what exists and needs scaling, (3) what needs creation (interstate compact architecture, cooperative development finance system, state coordination mechanism)
+  3. **`elite-capture-case-study.md`** (3,000 words) — Accountability failure as structural design
+     - **Key finding**: Epstein case is a technical manual for manufacturing elite impunity, not an anomaly
+     - Five mechanisms systematically analyzed: (1) prosecutorial discretion without accountability (OPR "poor judgment" standard never produces sanctions), (2) unnamed co-conspirator immunity provisions (most legally significant — foreclosed network investigation before identification), (3) settlement secrecy and gag clauses (civil releases block subsequent criminal allegations), (4) judicial deference to prosecutorial discretion (Judge Marra found violation but could not compel re-prosecution), (5) revolving door incentives (Acosta became Labor Secretary)
+     - 2024-2026 context: Maxwell convicted, invokes Fifth before House Feb 2026, DOJ released 3.5M pages (200K redacted against Transparency Act terms)
+     - Pattern generalization: corporate prosecution rates at 30-year low, 70% of federal prosecutions target <50-person companies while large multinationals receive DPAs at dramatically higher rates
+     - Accountability reform framed as constitutive of democratic recovery, not separate from it; five specific structural reforms outlined
+  4. All committed to master
 
 **✅ COMPLETED (Session 488)**:
 - ✅ **Phase 4 Document 1: Comparative Democratic Recovery** — `phase-4-comparative-democratic-recovery.md` (6,400 words, 38 citations)
@@ -89,15 +109,16 @@
 4. **Phase 3 research roadmap**: 7,148 words, 8 case studies
 
 **NEXT WORK**:
-- **Phase 4 Documents 2-4** (highest priority):
-  1. `power-mapping.md` (~3,500 words) — Veto players, dark money networks, vulnerabilities, displacement precedents
-  2. `parallel-institutions.md` (~3,500 words) — Mutual aid, CLTs, coops, credit unions, state-level alternatives, political effects
-  3. `elite-capture-case-study.md` (~3,000 words) — Epstein network as structural accountability failure (court records, investigative journalism, FARA gaps, systemic implications)
+- **Phase 5 Implementation Roadmap** (next phase):
+  1. `implementation-roadmap.md` — Sequencing recovery in waves: (1st) strengthen existing guardrails, (2nd) build parallel alternatives to scale, (3rd) institutional transition
+  2. `timeline-and-conditions.md` — What triggers each wave, what success metrics look like, timeline constraints
+  3. `movement-coordination.md` — How distributed actors coordinate (elite defection networks, civil society coalition structure, state AG coordination, federal judge solidarity)
+  4. `risk-assessment.md` — What could derail recovery at each phase, mitigation strategies
 - **Distribution execution** (user action): Substack, Reddit, institutional templates ready for user posting
 - **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
 
 **Blocked on**: —
-**Notes**: Phase 3 COMPLETE. Phase 4 (theory of change) is the identified research gap — the project diagnoses what's broken and proposes what better looks like, but lacks the mechanism analysis: how captured systems actually get uncaptured. These four documents fill that gap and make the democratic renewal proposal actionable rather than aspirational.
+**Notes**: Phase 4 COMPLETE. Proposal now contains full pathway: diagnosis (Domains 1-16), alternative vision (democratic renewal proposal), how capture works (power-mapping), what can be leveraged (parallel-institutions), why accountability fails (elite-capture-case-study), and how recovery succeeded elsewhere (comparative-democratic-recovery). Proposal is actionable rather than aspirational. Phase 5 will complete the strategic plan with implementation architecture.
 
 ---
 
@@ -116,22 +137,33 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — paper trading live, **strategy cleanup COMPLETE**, paper trading validation in progress
+**Status**: Active — paper trading live, **strategy optimization COMPLETE**, ready for monitoring + live trading launch
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **Strategy cleanup COMPLETE**. **Paper trading validation plan documented**. **Live trading readiness checklist COMPLETE**.
+**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **All three strategy optimization tasks COMPLETE** (Sessions 488-489). AAPL_h10_lgbm_ho validation plan in place, monitoring script deployed, live trading readiness checklist ready. **Next**: Monitor paper trading daily, assess progress toward Gate 1 (30 trades/month), prepare live trading transition once all gates pass for 3 consecutive months.
 
 **Completed (Session 489)**:
-1. ✅ **Strategy Cleanup** — COMPLETE:
+1. ✅ **Strategy Cleanup** — COMPLETE (commit ac6d574):
    - Removed SMA_50_200 and SMA_10_50 from `scripts/run_strategy_evaluation.py` catalogue
-   - Reason: structural failure — 0-2 trades/252 days (Gate 1 requires ≥100), negative Sharpe (Gate 2 requires ≥1.0)
-   - 52 strategy evaluation tests still pass, 0 regressions
-   - Strategy inventory now: 1 benchmark (BuyAndHold), 4 ensemble stackers, 1 options, 1 crypto, 1 MTF = 8 total
-2. ✅ **Paper Trading Validation Plan** — documented in `strategy-evaluation.md` and `PROJECTS.md`:
-   - AAPL_h10_lgbm_ho: 3-month track record target (≥30 trades/month, Sharpe ≥1.0, max drawdown ≤20%)
-   - Success criteria defined for graduation to live trading
-3. ✅ **Live Trading Readiness Checklist** — `docs/live-trading-readiness.md` COMPLETE:
-   - Alpaca account setup, guardrails enumeration, funding guidelines, monitoring, emergency procedures
+   - Reason: structural failure — generate 0-2 trades/252 days (Gate 1 requires ≥100), negative Sharpe (Gate 2 requires ≥1.0)
+   - Updated Underperformer Disposition table, removed SMACrossoverStrategy import
+   - Strategy inventory: 1 benchmark (BuyAndHold), 4 ensemble stackers, 1 options, 1 crypto, 1 MTF = 8 total
+   - 52 strategy evaluation tests pass, 0 regressions
+
+2. ✅ **Paper Trading Validation Setup** — COMPLETE (commit f86abd7):
+   - Created `scripts/paper_trading_monitor.py` (reads stockbot.db, computes daily metrics)
+   - Metrics: round trips, win rate, profit factor, Sharpe (per-trade proxy), max drawdown, Calmar
+   - 20 unit tests, zero external dependencies, JSON snapshot logging to `logs/paper_trading_daily.jsonl`
+   - **3-month graduation criteria**: All of Gates 1+2+3 pass for 3 consecutive calendar months
+     - Gate 1: ≥30 round trips/month
+     - Gate 2: Sharpe ≥1.0, max drawdown ≤20%, profit factor ≥1.5
+     - Gate 3: ≥63 days elapsed
+   - Paper trading started 2026-04-26: 9 trade legs to date, 1 AAPL_h10_lgbm_ho (BUY 36 shares @$271.04)
+
+3. ✅ **Live Trading Readiness Checklist** — COMPLETE (commit a1af9e0):
+   - Created `docs/live-trading-readiness.md` (user-facing, 7 sections)
+   - Sections: (1) paper trading gates with thresholds, (2) Alpaca account setup (cash account, $100-500 initial funding, PDT rules), (3) guardrails confirmation (6 validators enumerated), (4) risk management (position sizing tables by account size, fractional share warning), (5) monitoring setup (daily cron, alert channels), (6) emergency exit procedures (halt, DELETE /v2/positions, kill), (7) final go/no-go checklist
+   - Specific guidance: AAPL @~$170/share = 34% of $500 account in fractional shares
 
 **Completed (Session 488)**:
 1. ✅ **Strategy Evaluation & Backtesting** — COMPLETE:
@@ -151,12 +183,20 @@
 
 **Next tasks — work these in order:**
 
-1. **AAPL_h10_lgbm_ho paper trading** — Monitor 3-month track record. Target: ≥30 trades/month, Sharpe ≥1.0, max drawdown ≤20%. Graduation gate: 3 consecutive months meeting all targets.
+1. **Paper Trading Monitoring** — Daily run of `paper_trading_monitor.py` via cron (appends to `logs/paper_trading_daily.jsonl`)
+   - Track progress toward Gate 1 (30 trades/month) — started 2026-04-26, expecting data by 2026-05-26
+   - Monthly checkpoints: 2026-05-26, 2026-06-26, 2026-07-26
+   - All three gates (1+2+3) must pass for 3 consecutive months before graduation
 
-2. **Live trading launch** — After readiness checklist passes (see `docs/live-trading-readiness.md`), transition to Jetson deployment with live trading enabled (initial funding $100–500)
+2. **Live Trading Launch** — After 3-month validation complete:
+   - Confirm Alpaca account setup (cash account, funds ready)
+   - Verify all guardrails in `src/guardrails.py` deployed to Jetson
+   - Initial funding: $100–500 (position limits per readiness checklist)
+   - Monitor daily for first 2 weeks, scale only after 2+ weeks profitable performance
+   - Use `docs/live-trading-readiness.md` as user-facing launch checklist
 
 **Blocked on**: —
-**Notes**: Multi-strategy system is now conflict-free. Next: optimize and evaluate which strategies should graduate to live trading. Paper trading provides the validation signal. Guardrails are in place. Live trading will begin with minimal funding ($100–500) and scale only after 2+ weeks of profitable live performance.
+**Notes**: All optimization tasks complete. Strategy portfolio cleaned (8 strategies, SMA structural failures removed). Validation plan in place with clear graduation criteria. Guardrails verified. Paper trading provides the validation signal. Live trading will begin with minimal capital ($100–500) and scale incrementally only after demonstrated profitable performance.
 
 ---
 
