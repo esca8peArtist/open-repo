@@ -136,6 +136,10 @@ The **"third-party doctrine"** holds that information voluntarily shared with a 
 
 A DHS Inspector General report (September 28, 2023) **confirmed that CBP, ICE, and the Secret Service all violated federal law** in their warrantless purchase and use of location data — but the violations were procedural, not prohibitions on the practice itself. ([NPR, March 2026](https://www.npr.org/2026/03/25/nx-s1-5752369/ice-surveillance-data-brokers-congress-anthropic))
 
+**State law exception — Montana SB 282 (effective October 1, 2025)**: Montana became the first U.S. state to require a warrant before state or local law enforcement can purchase geolocation data, biometric information, financial transaction records, or other "sensitive data" from commercial brokers. Significant as a legislative model but does not constrain federal agencies including ICE and DHS. ([EFF](https://www.eff.org/deeplinks/2025/05/montana-becomes-first-state-close-law-enforcement-data-broker-loophole))
+
+**Accountability gap — National Public Data breach (2024-2025)**: Jerico Pictures, Inc. (doing business as National Public Data) suffered a breach exposing 2.9 billion records — full names, Social Security numbers, current and past addresses, and dates of birth for virtually every American adult plus Canadian and UK records. The company filed for bankruptcy in October 2024. The California Privacy Protection Agency fined the company $46,000 — approximately $0.000016 per affected record. Class action plaintiffs received nothing due to insolvency. This illustrates the accountability gap structurally: data brokers can absorb catastrophic breaches with near-zero regulatory consequence. ([Wikipedia — NPD breach](https://en.wikipedia.org/wiki/2024_National_Public_Data_breach), [CPPA enforcement](https://cppa.ca.gov/announcements/2025/20250220.html))
+
 ---
 
 ### B. Key Data Brokers with Government Contracts
@@ -150,15 +154,18 @@ Sources: [The ICE-Lexisnexus journal paper](https://journals.sagepub.com/doi/10.
 
 **Venntel (owned by Gravy Analytics)**
 - ICE Enforcement and Removal Operations used Venntel to "access/gain information to accurately identify digital devices"
-- Collects location data harvested from smartphone apps (through the ad SDK ecosystem) — this is commercial location data derived from apps you install
-- FTC alleged in 2024 that Venntel sold sensitive consumer location data without proper consent
-- Note: Gravy Analytics itself was breached in early 2025
+- Collected location data from ~17 billion daily signals across ~1 billion mobile devices via advertising SDKs — data derived from apps you install, without those apps' users knowing their location was being sold to law enforcement
+- FTC finalized order (January 2025) prohibiting Gravy Analytics and Venntel from selling sensitive consumer location data; required deletion of historical location databases. ([FTC final order](https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-finalizes-order-prohibiting-gravy-analytics-venntel-selling-sensitive-location-data))
+- January 2025: Gravy Analytics suffered a 17-terabyte breach — hackers gained root access and control over Amazon S3 buckets containing location data for an estimated billion devices. Law enforcement's commercial surveillance source was itself a high-value attack target.
+- No consumer opt-out available. The FTC order restricts future sales but does not retroactively restrict already-sold government database access.
 
-Source: [Vice investigative report](https://www.vice.com/en/article/ice-dhs-fbi-location-data-venntel-apps/)
+Sources: [Vice investigative report](https://www.vice.com/en/article/ice-dhs-fbi-location-data-venntel-apps/), [FTC final order](https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-finalizes-order-prohibiting-gravy-analytics-venntel-selling-sensitive-location-data), [FKKS technology law: Gravy breach](https://technologylaw.fkks.com/post/102jtp5/data-broker-experiences-massive-cybersecurity-breach-involving-sensitive-location)
 
 **Babel Street**
 - Provides social media monitoring and OSINT aggregation to DHS agencies
+- FBI signed a contract worth up to $27 million for 5,000 licenses to Babel Street's Locate X product
 - Amnesty International (August 2025) identified Babel Street technology as posing direct surveillance threats to pro-Palestine protesters
+- No consumer opt-out exists — Babel Street aggregates publicly available social media content; countermeasure is operational security on social platforms, not data broker opt-out
 - Babel Street did not respond to Amnesty's inquiry
 
 Source: [Amnesty International](https://www.amnesty.org/en/latest/news/2025/08/usa-global-tech-made-by-palantir-and-babel-street-pose-surveillance-threats-to-pro-palestine-student-protestors-migrants/)
@@ -182,6 +189,8 @@ ICE filed a market research request in January 2026 explicitly seeking "ad tech"
 Source: [The Register](https://www.theregister.com/2026/01/27/ice_data_advertising_tech_firms/)
 
 **Practical implication**: Any phone running apps with advertising SDKs — which is nearly every commercial smartphone — continuously broadcasts its location to data brokers who can legally sell that data to law enforcement without a warrant.
+
+**January 2026 escalation — ICE formal MAID procurement RFI**: ICE issued a formal Request for Information on SAM.gov asking ad tech companies to demonstrate capabilities for supplying Mobile Advertising ID (MAID)-linked location data for investigative use. The RFI did not reference warrants, court orders, or judicial authorization. ICE's apparent legal theory: MAID-linked data is not covered by *Carpenter v. United States* (2018) because it is tied to an advertising identifier rather than a phone number. Privacy advocates consider this distinction a technicality — the MAID enrichment industry exists specifically to cross-reference advertising identifiers with personal identities. This procurement vector is not reachable by data broker opt-outs; it requires platform-level countermeasures (Parts 1-3 of the implementation guide — GrapheneOS and iOS hardening remove advertising identifiers from the data collection pipeline). ([The Register](https://www.theregister.com/2026/01/27/ice_data_advertising_tech_firms/), [Biometric Update](https://www.biometricupdate.com/202602/ice-seeks-industry-input-on-ad-tech-location-data-for-investigative-use), [ACLU](https://www.aclu.org/news/privacy-technology/dhs-is-circumventing-constitution-by-buying-data-it-would-normally-need-a-warrant-to-access))
 
 ---
 

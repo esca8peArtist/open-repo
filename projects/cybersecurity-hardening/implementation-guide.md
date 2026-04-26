@@ -57,6 +57,23 @@ These are statutory programs with legal backing. Submit these before the broker-
 - URL: https://optout.aboutads.info
 - Process: Same as NAI — run the tool on the page on each device and browser.
 
+**Global Privacy Control (GPC) browser signal** — automatic, ongoing opt-out across compliant sites.
+Twelve states now legally require businesses to honor the GPC signal as a valid opt-out from data sale and sharing. GPC is a browser header that signals your opt-out preference automatically to every site you visit.
+- Firefox: Enable in Settings > Privacy & Security > "Tell websites not to sell or share my data" (built-in as of Firefox 120+).
+- Chrome: Install the [GPC extension](https://globalprivacycontrol.org/#download) from the official site.
+- Brave: GPC is enabled by default.
+- Process: One-time setup, automatic thereafter. No per-site action required.
+- Time estimate: 2 minutes.
+- States honoring GPC as a valid opt-out (as of late 2025): California, Colorado, Connecticut, Delaware, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Texas.
+- Note: GPC only reaches sites legally obligated to honor it or that have voluntarily opted in. It does not reach data brokers who sell to law enforcement.
+
+**California DELETE Act — DROP Platform** (California residents only).
+If you are a California resident, this is the highest-priority action in Part 0. The Delete Request and Opt-Out Platform (DROP) at privacy.ca.gov allows you to submit a single deletion request that cascades to all registered California data brokers simultaneously. Brokers must retrieve and process these requests within 45 days on an ongoing basis — meaning re-addition from public records triggers automatic re-deletion, unlike one-time opt-outs.
+- URL: https://privacy.ca.gov/drop/
+- Process: Create an account at privacy.ca.gov, verify California residency, submit one request.
+- Time to effect: Up to 45 days for initial processing; ongoing automatic maintenance thereafter.
+- Limitation: Does not cover law enforcement data products (Accurint, CLEAR) or unregistered brokers. After DROP submission, still complete Steps 0.2-0.3 for brokers outside California's jurisdiction.
+
 ---
 
 ### Step 0.2 — Data Broker Opt-Outs by Priority
@@ -124,9 +141,13 @@ For a comprehensive and regularly-updated master list, the Big-Ass-Data-Broker-O
 
 Data brokers re-add people from public records on a roughly quarterly cycle. One-time opt-out is not permanent.
 
-**EasyOptOuts** (~$20/year): Automated opt-outs with re-submission. Covers major brokers. Acceptable for Tier 1 users who want ongoing protection without manual quarterly re-submission.
+**Incogni** (~$96/year, $7.99/month via Surfshark): The strongest independently-verified automated removal service as of 2026. Covers 420+ brokers with 60-day re-submission cycles for public brokers and 90-day for commercial databases. Its processes were verified by a Deloitte independent assurance assessment in 2025 — the only service with third-party verification of its process. PCMag Editors' Choice 2025. For non-technical Tier 1 users who want hands-off ongoing protection, this is the recommended first choice. ([incogni.com](https://incogni.com/))
 
-**DeleteMe** (~$130/year): Covers 750+ brokers with quarterly re-submission and a confirmation report. This is the right trade for Tier 2 users who want thorough ongoing coverage. The cost is less than the time value of quarterly manual submissions.
+**EasyOptOuts** (~$20/year): Automated opt-outs with re-submission. Covers major people-search brokers. Good for Tier 1 users who have already done the manual opt-outs in Step 0.2 and want automated maintenance at lowest cost.
+
+**DeleteMe** (~$130/year): Human-led removals for ~100 listing-based brokers with before/after screenshot documentation and quarterly reports. Note: DeleteMe markets coverage of "750+ brokers" but active removal is ~100; the remainder are monitored but not actively processed. Best for Tier 2 users who want documented, verifiable evidence of removal for specific high-priority listing brokers.
+
+**Privacy Bee** (~$96/year): Broad coverage including commercial (non-listing) databases. 60-day response window before follow-up. Stronger for commercial database removal than listing sites.
 
 For Tier 3 users: Use a paid service, paying with a prepaid card purchased with cash. Do not create the service account with your real email address.
 
