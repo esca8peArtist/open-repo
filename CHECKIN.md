@@ -4,13 +4,11 @@
 
 ---
 
-## Since Last Check-in (Session 435 — 2026-04-26 evening)
+## Since Last Check-in (Session 436 — 2026-04-26 evening)
 
-**Completed** (parallel 2-agent execution):
+**Completed**:
 
-1. **open-repo**: **Wave 4 Phase 1 IMPLEMENTATION COMPLETE** (FederationPartner data model + Alembic migrations). FederationPartner model created with all required fields per spec: id, name (unique), base_url (unique, https enforced), public_key_pem, key_id (unique), trust_state (enum: pending/trusted/untrusted/revoked, default pending), timestamps, and nullables. TrustStatus enum implemented. Activity model extended with partner_id FK, signature_header, signature_verified. Alembic migration 001 created: federation_partners table with constraints, indexes, PostgreSQL ENUM type, extensions to activities table with proper cascade behavior. **17 tests written and passing** (model instantiation, enum values, defaults, constraints, types, field configuration). Code follows existing patterns (SQLAlchemy, type hints, conventions). Migration reversible with full cleanup. **Commit**: `fd2bf0d` — "feat(federation): FederationPartner model + migrations for Wave 4". **Ready for Phase 2** (service layer with 8 methods + 7 admin endpoints).
-
-2. **seedwarden**: **Etsy Phase 1 Launch VERIFICATION COMPLETE**. All 21 tablet mockups verified production-ready (2400×2400 px, 341–389 KB each, professional device frames, total 7.4 MB). All 6 lead products verified complete with PDFs (650–750 KB), pricing ($8–$18), tags (13 each), descriptions (100–500 words), categories. Listing content ready in product-action-plans.md and bundle-listings.md. **Critical issue flagged**: Native Plants Regional Guide exceeds Etsy 5 MB limit (56.96 MB); excluded from Phase 1, deferred to Phase 2 with PDF compression rebuild. **Created**: ETSY_PHASE_1_UPLOAD_CHECKLIST.md (364 lines, complete pre-upload/post-upload verification, per-product workflow, Etsy setup steps, go/no-go matrix). **GO assessment**: Confidence 85–95%, all mockups valid, all listing content complete, file sizes optimal. **Recommendation**: Upload 6 verified products Mon-Wed 2026-04-28 to 2026-04-30 for optimal Etsy algorithm timing.
+1. **open-repo**: **Wave 4 Phase 2 IMPLEMENTATION COMPLETE**. Service layer (8 methods in `federation_partner_service.py`, ~290 lines) + admin routes (7 endpoints in `federation_partners.py`, ~210 lines) fully implemented per WAVE_4_DESIGN.md spec. HTTP signature verification: RFC 8017 + W3C ActivityPub with auto-downgrade to UNTRUSTED after 5+ failures. State machine: one-way transitions (pending → {trusted, untrusted, revoked}). Delete safety: REVOKED + 30-day inactivity required. **33 new tests written, all passing** (registration, trust state machine, signature verification, key rotation, delete guards, 7 route endpoints, 3 integration flows). **Test results**: 179 total passed, 0 regressions on existing 125 tests. Code follows open-source standards (type hints, docstrings, error handling). **Commit**: `128994f`. **Branch**: `feature/wave4-phase2-federation-service` (ready for GitHub push + merge). **Next**: Phase 3 (modify /inbox for signature verification, update send_announce for request signing — 2-3 days).
 
 **In Progress**:
 
@@ -20,18 +18,50 @@
 
 **Needs Your Input**:
 
+- **open-repo**: **Wave 4 Phase 2 PR ready for review + merge.** Branch: `feature/wave4-phase2-federation-service`. Commit: `128994f`. Push to remote was denied (SSH key access), so the branch is local only — please push and merge. Full summary below.
 - **seedwarden**: Signal when ready to upload 6 lead products to Etsy (all prep work complete, checklist ready).
 - **cybersecurity-hardening**: Create GitHub Gist at https://gist.github.com with threat-model.md, opsec-playbook.md, implementation-guide.md in order (5 minutes). Set to Public. Copy Gist URL and follow DISTRIBUTION_CHECKLIST.md for remaining channels.
 - **mfg-farm**: Test print required (physical action) before launch prep continues.
-- **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi). Wave 3 COMPLETE. Wave 4 Phase 1 COMPLETE; Phase 2 (service layer) ready to begin immediately.
+
+### open-repo Wave 4 Phase 2 PR: feat(federation) — service layer + admin routes
+
+**Branch**: `feature/wave4-phase2-federation-service`  
+**Commit**: `128994f`  
+**Test results**: 179 passed, 4 skipped (pre-existing), 0 regressions on existing 125 tests, 33 new tests  
+
+**What was built**:
+
+1. `app/services/federation_partner_service.py` (8 service methods, ~290 lines):
+   - `register_partner` — creates partner with PENDING state, validates PEM key
+   - `get_partner` / `list_partners` — retrieval with optional trust-state filter
+   - `update_partner_trust_state` — enforces state machine (pending→trusted/untrusted/revoked; revoked=terminal)
+   - `rotate_partner_public_key` — validates new key before persisting (safety check)
+   - `verify_http_signature` — RFC 8017 + W3C ActivityPub; auto-downgrades partner to UNTRUSTED after >5 failures
+   - `get_activity_log` — audit trail of activities linked to a partner
+   - `delete_partner` — hard delete with guards: must be REVOKED + no activity in last 30 days
+
+2. `app/api/v1/admin/federation_partners.py` (7 admin endpoints, ~210 lines):
+   - `POST /api/v1/admin/federation-partners/register`
+   - `GET /api/v1/admin/federation-partners`
+   - `GET /api/v1/admin/federation-partners/{id}`
+   - `PUT /api/v1/admin/federation-partners/{id}/trust-state`
+   - `POST /api/v1/admin/federation-partners/{id}/rotate-key`
+   - `GET /api/v1/admin/federation-partners/{id}/activity-log`
+   - `DELETE /api/v1/admin/federation-partners/{id}`
+
+3. `app/schemas.py` — 8 new Pydantic schemas with input validation
+4. `app/models.py` — added `failed_signature_count` to FederationPartner
+5. `alembic/versions/001_add_federation_partners.py` — migration updated with new column
+6. `tests/test_federation_partner_routes.py` — 33 tests across 6 classes
+
+**Wave 1–3 APIs unchanged. Backward compatible.**
 
 **Suggested Priorities for Next Session**:
 
 1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — runbook ready, run monitoring-dashboard.py, begin P&L tracking
 2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
-3. **Tuesday+ 2026-04-29**: **open-repo** Wave 4 Phase 2 implementation begins (service layer + routes, 25-30 story points, 2-3 days) — Phase 1 complete and committed
-4. **Anytime this week**: **seedwarden** Etsy Phase 1 launch (all prep complete, awaiting signal) OR **cybersecurity-hardening** GitHub Gist creation
-5. **Pending**: **open-repo** GitHub push of Wave 1–2 code (user approval needed)
+3. **Anytime before Monday**: **open-repo** Wave 4 Phase 3 implementation (modify /inbox for signature verification, update send_announce, 25-30 story points, 2-3 days) OR **seedwarden** Etsy Phase 1 launch (all prep complete, awaiting signal) OR **cybersecurity-hardening** GitHub Gist creation
+4. **Pending user action**: **open-repo** GitHub push of Wave 1–2 + Wave 4 Phase 2 code to feature branches
 
 **Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
 

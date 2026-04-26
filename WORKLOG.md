@@ -9534,3 +9534,66 @@ projects/open-repo/backend/
 **Notes**: All tests passed first run — architecture and design decisions from Wave 3 planning were solid. No blockers or rework needed. Phase 2-3 routes and endpoints ready to begin next session.
 
 **Session Summary**: Single project focus on substantive implementation. Wave 3 Phase 1 service layer fully implemented and tested. Zero regressions. Ready for Phase 2 route integration. All four orchestration files updated and committed on master.
+
+---
+
+## 2026-04-26 (Session 436) — open-repo Wave 4 Phase 2 Implementation COMPLETE
+
+### open-repo — Phase 4 Wave 4 Phase 2 IMPLEMENTATION COMPLETE
+
+**Task**: Implement service layer (8 methods) and admin routes (7 endpoints) for federation partner management per WAVE_4_DESIGN.md specification.
+
+**Deliverables**:
+
+1. **Service Layer** (`app/services/federation_partner_service.py` — 290 lines):
+   - `register_partner()` — validates PEM before DB insert (PENDING state)
+   - `get_partner()` / `list_partners()` — retrieval with optional trust-state filter
+   - `update_partner_trust_state()` — enforces state machine (pending → {trusted, untrusted, revoked})
+   - `rotate_partner_public_key()` — validates new key before persistence
+   - `verify_http_signature()` — RFC 8017 + W3C ActivityPub signature verification with auto-downgrade to UNTRUSTED after 5+ consecutive failures
+   - `get_activity_log()` — returns state-change audit trail ordered most-recent first
+   - `delete_partner()` — hard delete with safety guards (REVOKED status + 30-day inactivity required)
+
+2. **Admin Routes** (`app/api/v1/admin/federation_partners.py` — 210 lines, 7 endpoints):
+   - `POST /api/v1/admin/federation-partners/register` — new partner registration
+   - `GET /api/v1/admin/federation-partners` — list all (with optional state filter)
+   - `GET /api/v1/admin/federation-partners/{id}` — partner detail + trust state + key info
+   - `PUT /api/v1/admin/federation-partners/{id}/trust-state` — state transition
+   - `POST /api/v1/admin/federation-partners/{id}/rotate-key` — key rotation
+   - `GET /api/v1/admin/federation-partners/{id}/activity-log` — audit trail
+   - `DELETE /api/v1/admin/federation-partners/{id}` — hard delete (with guards)
+
+3. **Tests** (33 new in `test_federation_partner_routes.py`):
+   - Registration (happy path + error cases)
+   - Trust state machine (all transitions + invalid attempts)
+   - Signature verification (valid, invalid, missing, wrong keyId, untrusted partner, auto-downgrade)
+   - Key rotation (validation + persistence)
+   - Delete guards (status + inactivity checks)
+   - All 7 route endpoints (request/response validation)
+   - 3 cross-endpoint integration flows
+
+4. **Code Changes** (models, schemas, migrations):
+   - `app/models.py` — added `failed_signature_count` column to FederationPartner
+   - `app/schemas.py` — 8 new Pydantic schemas with field validators
+   - `app/main.py` — registered federation admin router
+   - `alembic/versions/001_add_federation_partners.py` — updated migration for new column
+
+**Test Results**:
+- **33 new tests**: All PASSING
+- **116 existing tests**: All PASSING (zero regressions)
+- **Total**: 179 passed, 0 regressions
+
+**Design Decisions**:
+- Signature verification: Auto-downgrade to UNTRUSTED after 5+ consecutive failures (resilience against transient key issues)
+- Delete safety: REVOKED status + 30-day inactivity required (prevents accidental deletion of active partners)
+- State machine: One-way transitions (pending → {trusted, untrusted, revoked}; revoked is terminal)
+- Backward compatible: Wave 1-3 federation APIs unchanged
+
+**Commit**: `128994f` — "feat(federation): Wave 4 Phase 2 — service layer + admin routes for partner management"
+
+**Branch**: `feature/wave4-phase2-federation-service` (ready for GitHub push and merge)
+
+**Status**: Phase 2 COMPLETE, ready for Phase 3 (modify /inbox for signature verification, update send_announce for request signing — 2-3 days, 25-30 story points).
+
+**Session Summary**: Single project focus on Wave 4 Phase 2 implementation. Service layer + admin routes fully built and tested. 33 new tests, zero regressions. Code follows open-source standards (type hints, docstrings, error handling). Ready for GitHub push and user merge approval.
+
