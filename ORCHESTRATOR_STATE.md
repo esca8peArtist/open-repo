@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-26T21:46:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-26T23:03:48Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 46.5% (2,336,563 tokens) | All-models 40.9% | Reset in 26h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 47.5% (2,386,251 tokens) | All-models 42.9% | Reset in 25h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -23,8 +23,8 @@
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
-**Status**: Active — Phase 1-4 COMPLETE, **Phase 5 COMPLETE (Session 490)** — Full implementation architecture ready
-**Focus**: **Phase 5 COMPLETE (Session 490)**. All four implementation strategy documents written and committed. Proposal now contains complete pathway: diagnosis (Domains 1-22) → alternative vision → theory of change (Phase 4) → implementation architecture (Phase 5). Next: Integration of Phase 5 into ma
+**Status**: Active — Phase 1-5 COMPLETE, **Phase 4 Integration COMPLETE (Session 494)** — Full proposal synthesis ready
+**Focus**: **Phase 4 Integration COMPLETE (Session 494)**. All Phase 4 documents (power-mapping, parallel-institutions, elite-capture-case-study, comparative-democratic-recovery) seamlessly woven into Part III of democratic-renewal-proposal.md. Proposal now contains complete pathway: diagnosis (Domains 1-22) �
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1 DISTRIBUTION PREP COMPLETE** (Session 465), ready for user execution
@@ -35,7 +35,7 @@
 **Focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **All three strategy optimization tasks COMPLETE** (Sessions 488-489). AAPL_h10_lgbm_ho validation plan in place, monitoring script deployed, live trading readiness checklist ready. **Next**: Monitor paper trading daily, assess progress toward Gate 1
 
 ### seedwarden
-**Status**: Active — Phase 1 upload pending user tag corrections; native plants guide on hold for image rebuild
+**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 mockup tooling COMPLETE**
 **Focus**: **Two parallel tracks:**
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
@@ -63,19 +63,6 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - Conflict resolution mechanisms: resource allocation disputes resolved through sequencing; tactical disagreements proceed in parallel; demand disagreements distinguish principle from policy
-   - Coalition sustainability: ongoing governance structure, fiscal sustainability, demonstrated success, mission expansion beyond crisis period
-   - Defection timeline mapped Month 0-18: initial defection → expansion → consolidation → lock-in
-
-4. **risk-assessment.md** (4,500 words)
-   - 11 major derailment vectors with probability assessment and mitigation strategies
-   - **Institutional risks** (courts collapse, Congress loses power, elite defection fails)
-     - Mitigation: federal judge alliance reinforcement, rotating litigation strategy, state AG escalation, state federal enforcement cooperation
-   - **Mass mobilization risks** (violent escalation by fringe, police violence, infiltration, fatigue)
-     - Mitigation: nonviolence discipline training, legal defense infrastructure, community security protocols, rotational leadership, diversified participation
-   - **Political risks** (2026 election interference)
-     - Mitigation: election monitoring, vote counting verification, bipartisan observation, post-fraud mobilization
-   - **Repression risks** (violent crackdown, authoritarian escalation)
      - Mitigation: international accountability, federal defection support, sanctuary networks, armed resistance preparation (last resort)
    - **Resource risks** (funding cuts, movement collapse)
      - Mitigation: diversified funding architecture, grassroots fundraising, alternative economy development
@@ -102,3 +89,16 @@
 - Tracker updates: first-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
 
 **Token Usage**: ~45,000 (confidence check + 4 Phase 5 documents)
+
+## 2026-04-26 — cybersecurity-hardening — Device Hardening Guide (iOS + Android)
+
+**File created**: `/projects/cybersecurity-hardening/device-hardening-guide.md`
+
+**Summary**: Comprehensive device hardening guide for iOS and Android against government-level surveillance. Covers: iPhone iCloud/ADP threat model, airplane mode vs power-off RF analysis (Find My BFU Bluetooth beacon behavior), Lockdown Mode, SIM swapping countermeasures, Faraday pouch use cases, device compartmentalization. Android: GrapheneOS vs CalyxOS vs stock Android with documented threat-model tradeoffs, bootloader re-lock requirement (the critical security paradox of custom ROMs), BFU/AFU forensic extraction states, F-Droid security issues vs Play Store. Cross-platform: power-off decision matrix, compartmentalization profile table, backup strategy by tier, crisis protocol. Sources include Apple law enforcement guidelines (October 2025), leaked Cellebrite support matrix (February 2025), GrapheneOS documentation, EFF SSD, privsec.dev, academic forensics research.
+
+**Key findings**:
+- iCloud without Advanced Data Protection is the most productive law enforcement target against iPhone users — ADP removes Apple's ability to comply with warrants
+- Modern iPhones continue Bluetooth beaconing after power-off if Find My is enabled; only disabling Find My before shutdown provides full RF silence
+- GrapheneOS re-locks the bootloader after installation — this is what makes it forensically durable; CalyxOS/LineageOS with unlocked bootloaders are weaker than stock Android
+- BFU state (before first unlock) is the critical protection posture; power off before potential seizure
+- F-Droid has documented infrastructure vulnerabilities (outdated servers, no TLS pinning, slow updates) that make it weaker than Play Store for security-focused users

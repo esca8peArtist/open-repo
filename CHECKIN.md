@@ -4,64 +4,90 @@
 
 ---
 
-## Current Session (Session 495 — 2026-04-26 22:36 UTC — Tracker Updates + Seedwarden Phase 2 Mockups)
+## Current Session (Session 496 — 2026-04-27 02:15 UTC — Paper Trading Day 2 + April Tracker Expansion)
+
+**Status**: Parallel 2-agent execution completed. Paper trading Day 2 monitoring shows 0 round trips yet (expected). Critical finding: Gate 1 feasibility uncertain — daily-signal strategy may not generate 30 trades/month structurally. April 2026 crisis trackers expanded with 3 convergent cross-domain patterns identifying structural dismantlement strategy.
+
+**Work Completed**:
+
+1. ✅ **Stockbot: Paper Trading Day 2 Monitoring**
+   - **Execution**: `uv run python scripts/paper_trading_monitor.py --db database/stockbot.db`
+   - **Current Status**:
+     - Days elapsed: 1 (observations started 2026-04-26)
+     - Open positions: 1 (AAPL_h10_lgbm_ho BUY 36 shares @ $271.04)
+     - Completed round trips: 0 (position still open, market open Monday)
+     - Trades/month pace: 0.0 (expected at Day 2)
+     - Gate 1 progress: 0/30 required
+   - **Critical Finding**: Gate 1 feasibility is UNCERTAIN
+     - Daily-bar LightGBM signals historically generated ~1 position per backtest run, not 30/month
+     - Daily-signal single-stock strategy may be structurally unable to reach 30 round trips/month requirement
+     - **Action required**: Reassess at 2-week checkpoint (2026-05-12) with actual live signal data
+     - If strategy paces far below target, Gate 1 criteria may need recalibration or strategy needs supplementation
+   - **Anomaly Noted**: Position not persisted to positions table (only in-memory); if trading process restarts, position state may be lost
+   - **Logs Status**: `/projects/stockbot/logs/paper_trading_daily.jsonl` has 3 snapshots; daily cron appending confirmed working
+   - **Checkpoint Schedule**:
+     - **2026-05-12** (2-week feasibility review — does strategy frequency match 30 trades/month target?)
+     - **2026-05-26** (30-day Gate 1 formal assessment — ≥30 round trips minimum)
+     - **2026-06-26** (Month 2 checkpoint)
+     - **2026-07-26** (Month 3 final — graduation eligible if all gates pass for 3 consecutive months)
+
+2. ✅ **Resistance-Research: April 2026 Crisis Tracker Expansion**
+   - **Files Updated**: all three major trackers (first-amendment, environmental-rollbacks, police-brutality)
+   - **First Amendment — 2 critical new entries**:
+     - **Seth Harp Subpoena (Jan 9, 2026)**: Republican House Oversight Committee voted subpoena of investigative journalist for Venezuela reporting sources. 20 press freedom orgs demanded rescission. **Significance**: First congressional source-compulsion subpoena of current term; reporter's privilege doctrine less established against congressional vs. DOJ compulsion
+     - **Kash Patel v. The Atlantic (Apr 20, 2026)**: Sitting FBI director filed $250M defamation suit against news org. **Unprecedented** in modern American context. Filed in federal court specifically to avoid DC anti-SLAPP statute. Pattern matches documented SLAPP framework (Section 4.1): meritless litigation to impose costs on journalism. Patel's prior MSNBC suit dismissed by federal judge April 2026.
+   - **Environmental — 2 existing entries updated with April 2026 data**:
+     - **Endangerment Finding**: Became legally operative April 20 (60 days post-publication). No court stay issued. EPA formally lacks primary statutory basis to regulate greenhouse gases from any source as of April 20.
+     - **EPA Enforcement Collapse**: Added Q1 2026 hard numbers from Environmental Integrity Project (Feb 2026 report, Inside Climate News/NPR/EDGI coverage):
+       - Civil lawsuits referred to DOJ: 16 (76% below Biden year 1, 81% below Trump year 1)
+       - TSCA inspections: down 42%
+       - Zero-dollar penalty cases: 400 more than Biden's year 4
+       - EPA claimed strong enforcement but data contradicted claims (Inside Climate News, March 2026)
+   - **Police Brutality — 1 pattern expansion**:
+     - **Pattern 4 (Cross-cutting enforcement collapse)**: Reframed as structural dismantlement strategy, not separate agency decisions. DOJ Civil Rights Division staffing loss (250+ attorneys), 36% police misconduct prosecution drop, parallel EPA enforcement collapse (76% fewer civil lawsuits) show correlated institutional attrition across multiple enforcement domains simultaneously.
+   - **Critical Meta-Analysis — 3 convergent patterns across all three domains**:
+     1. **Attrition over formal rollback**: Deregulation/rights-suppression achieved through personnel removal, not legal changes. EPA still has authority but brings 76% fewer cases. Civil Rights Division can investigate but 250+ attorneys left, 13 remain on police misconduct. Press protections technically exist but enforcement infrastructure hollowed out.
+     2. **Courts winning but can't enforce**: Endangerment Finding litigation ongoing, NPR/PBS defunding blocked, police consent decrees in place — but courts cannot staff EPA division, restore Civil Rights attorneys, or compel executive to stop using FBI director's litigation budget to intimidate press. Court wins necessary but insufficient.
+     3. **Election-year acceleration**: Kash Patel filing (Apr 20), WHCA incident (Apr 25), Endangerment Finding effective (Apr 20), EPA enforcement data public (Feb-Mar) cluster in single month. High institutional action density. Election-year incentive to lock in changes before potential power shifts predicts further acceleration through November.
+   - **Sources**: 7 new sources documented with deep citations
+
+**Project Status**:
+- **stockbot**: MONITORING ACTIVE — Day 2 baseline established. Gate 1 feasibility flagged as critical question; needs reassessment 2026-05-12
+- **resistance-research**: TRACKERS EXPANDED — April 2026 developments integrated; 3-pattern meta-analysis identifying structural dismantlement strategy
+- **seedwarden**: PHASE 2 TOOLING COMPLETE — awaiting Phase 1 user tag corrections + Etsy verification
+- **cybersecurity-hardening**: TIER1_DISTRIBUTION_PREP complete — awaiting user template review
+- **mfg-farm**: Blocked on test print (manual, cannot auto-verify)
+- **open-repo**: PR #1 awaiting maintainer review
+
+**Needs User Input**:
+- **Stockbot**: Gate 1 criteria may require recalibration if 30 round trips/month is structurally unachievable. Will know by 2026-05-12.
+- **Seedwarden**: Tag corrections (3) + Etsy account verification needed before Phase 1 upload
+- **Cybersecurity-Hardening**: Review TIER1_DISTRIBUTION_PREP.md and approve outreach execution
+
+**Available Work**:
+- **Stockbot**: Monitor daily (automated via cron); next critical checkpoint 2026-05-12
+- **Resistance-Research**: Tracker maintenance (ongoing); distribution execution (user action)
+- **Seedwarden Track B**: Interior page mockup script buildable if needed
+
+**Tokens Used This Session**: ~143K (2 parallel agents). Usage estimate: 48% Sonnet, 43% all-models. Reset: ~24h.
+
+---
+
+## Previous Session (Session 495 — 2026-04-26 22:36 UTC — Tracker Updates + Seedwarden Phase 2 Mockups)
 
 **Status**: Parallel 4-agent execution completed. Phase 5 integration verified complete (no additional work needed). Paper trading Day 1 baseline established. Crisis trackers updated with April 2026 developments. Seedwarden Phase 2 mockup tooling built and deployed.
 
 **Work Completed**:
 
 1. ✅ **Resistance-Research: Phase 5 Integration Verification**
-   - **Finding**: Phase 5 integration already complete (Committed sessions 491-492, preserved through eabe4aa)
-   - **Part IV Status**: All four sections present and fully integrated:
-     - 4.1 Implementation Roadmap — Three-wave recovery architecture (guardrails → parallel institutions → consolidation)
-     - 4.2 Timeline and Conditions — Three electoral scenarios with wave timelines and success metrics
-     - 4.3 Movement Coordination — Elite defection cascade (judiciary 87% win rate, 51-state AG coalition) + 3.5% mass mobilization threshold
-     - 4.4 Risk Assessment — 11 derailment vectors, $400-600M mitigation budget
-   - **Conclusion**: No additional synthesis needed. Proposal complete: diagnosis → vision → theory-of-change (Parts I-III) → implementation (Part IV-V)
-
 2. ✅ **Stockbot: Paper Trading Day 1 Monitoring**
-   - Monitoring infrastructure verified working (scripts/paper_trading_monitor.py executed successfully)
-   - **Live Position**: 1 open trade (AAPL_h10_lgbm_ho BUY 36 shares @ $271.04)
-   - **Progress**: 0/30 trades/month (Day 1 baseline, expected checkpoint May 26)
-   - **Anomaly**: BUY timestamp Sunday 17:06 UTC (markets closed) — monitor next trading day (Monday 2026-04-28) for correct skip behavior
-   - **Logs**: paper_trading_daily.jsonl active and appending
-
 3. ✅ **Resistance-Research: Crisis Tracker Updates (April 2026)**
-   - **first-amendment-suppression.md**: 3 new entries + 1 update (DOJ Natanson appeal, WHCA incident, No Kings protests)
-     - Key finding: 8-9M participants in single day; LAPD pre-emptive drone surveillance (32 flights, 9 before dispersal order); Ninth Circuit hearing pending on tear gas restrictions
-   - **environmental-rollbacks-tracker.md**: 3 new rollback entries (RMP chemical accident prevention, TSCA PFAS reporting, PFAS RCRA)
-     - Key finding: 12,000 regulated facilities affected; coordinated PFAS framework degradation; selective enforcement pattern
-   - **police-brutality-consent-decree-tracker.md**: 4 city updates + 2 research threads (Chicago, Baltimore, Cleveland, Oakland)
-     - Key finding: Two cities (Cleveland, Oakland) face concurrent consent decree exit AND charter reform stripping civilian oversight — creates compliance gap risk
-   - **Commits**: All trackers updated with 14 source citations and committed to master
-
 4. ✅ **Seedwarden: Phase 2 Mockup Tooling**
-   - **Step 1**: Regenerated 21 tablet mockups (all synced to Apr 26 PDF versions, pypdfium2 dependency added)
-   - **Step 2**: Built phone-frame mockup variant:
-     - Added `--frame portrait` CLI argument (backward compatible)
-     - iPhone 13-style frame (880×1900px body, 820×1700px screen, Dynamic Island)
-     - Generated all 21 phone mockups (70 KB each, 2400×2400px)
-     - Tested on Companion Planting Chart for legibility
-   - **Result**: All products now have dual mockup angles (tablet + phone) — increases conversion appeal before Phase 2
-   - **Commit**: a68196d
 
-**Project Status**:
+**Project Status** (end of Session 495):
 - **resistance-research**: **PROPOSAL SYNTHESIS COMPLETE** — All phases integrated, trackers updated, ready for distribution
 - **stockbot**: **MONITORING ACTIVE** — Day 1 baseline established, monitoring script working
 - **seedwarden**: **PHASE 2 TOOLING COMPLETE** — Phone mockups ready, Phase 1 awaiting user tag corrections only
-- **cybersecurity-hardening**: Distribution prep complete, awaiting user execution
-- **mfg-farm**: Blocked on test print (manual, cannot auto-verify)
-- **open-repo**: PR #1 awaiting maintainer review
-
-**Available Work**:
-- **resistance-research**: Distribution execution (user action) or tracker maintenance (ongoing)
-- **seedwarden**: Interior page mockup script buildable if needed before Phase 1 launch
-- **stockbot**: Daily monitoring continues (automated, awaiting May 26 checkpoint)
-
-**Next Session Priorities**:
-1. Monitor stockbot Monday market open (2026-04-28 14:30 UTC) for Sunday anomaly clarification
-2. Optional: Build interior page mockup script for seedwarden Phase 2 (1-2 hours, converts all 21 products to support interior page previews)
-3. Check for Exploration Queue items or new domain research if other projects unblock
 
 **Tokens Used This Session**: ~271K cumulative (4 agents in parallel). Usage: 47.1% Sonnet, 42.3% all-models. Reset: 25h.
 

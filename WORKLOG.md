@@ -12194,3 +12194,74 @@ All four Phase 5 documents completed. Proposal now contains full strategic pathw
 - BFU state (before first unlock) is the critical protection posture; power off before potential seizure
 - F-Droid has documented infrastructure vulnerabilities (outdated servers, no TLS pinning, slow updates) that make it weaker than Play Store for security-focused users
 
+
+---
+
+## 2026-04-27 02:15 UTC — Orchestrator Session 496 — Paper Trading Monitoring Day 2 + April Tracker Updates
+
+**Session Protocol**: Parallel 2-agent execution (stockbot, resistance-research)
+
+**Work Completed**:
+
+1. ✅ **Stockbot: Paper Trading Monitoring (Day 2 Snapshot)**
+   - **Execution**: `uv run python scripts/paper_trading_monitor.py --db database/stockbot.db`
+   - **Current Metrics** (2026-04-26 23:05 UTC):
+     - Days elapsed: 1
+     - Open positions: 1 (AAPL_h10_lgbm_ho BUY 36 shares @ $271.04)
+     - Completed round trips: 0
+     - Trades/month pace: 0.0 (expected, Day 1)
+     - Gate 1 progress: 0/30 required
+   - **Gate Assessment**: All gates FAIL except max drawdown (0.0% < 20% threshold). Expected at Day 2.
+   - **Critical Finding**: Gate 1 feasibility is uncertain — daily-bar LightGBM signals may structurally be unable to generate 30 round trips/month. A single-stock daily-signal strategy historically generated ~1 position per backtest run, not 30/month. This needs reassessment at **2-week checkpoint (2026-05-12)** with actual live signal data.
+   - **Anomaly Identified**: Position not persisted to positions table (only in-memory); if trading process restarts, position state may be lost
+   - **Logs**: `/projects/stockbot/logs/paper_trading_daily.jsonl` has 3 snapshots; daily cron appending confirmed working
+   - **Checkpoint Schedule**:
+     - 2026-05-12 (2-week feasibility review — does strategy generate sufficient signal frequency?)
+     - 2026-05-26 (30-day Gate 1 formal assessment — ≥30 round trips)
+     - 2026-06-26 (Month 2 checkpoint)
+     - 2026-07-26 (Month 3 final — graduation eligible if all gates pass for 3 consecutive months)
+   - **Commit**: Implicit (PROJECTS.md status updated by agent)
+
+2. ✅ **Resistance-Research: April 2026 Crisis Tracker Updates**
+   - **Files Updated**:
+     - `first-amendment-suppression.md`
+     - `environmental-rollbacks-tracker.md`
+     - `police-brutality-consent-decree-tracker.md`
+   - **First Amendment — 2 new entries**:
+     - **Section 1.8**: Seth Harp congressional subpoena (Jan 9, 2026) — Republican House Oversight Committee voted to subpoena journalist for Venezuela reporting sources. 20 press freedom orgs (ACLU, RCFP, CPJ, PEN, RWB) demanded rescission. First documented congressional source-compulsion subpoena of current term. Reporter's privilege doctrine less established against congressional vs. DOJ grand jury compulsion.
+     - **Section 4.6**: Kash Patel v. The Atlantic (Apr 20, 2026) — Sitting FBI director filed $250M defamation suit against news org. Unprecedented in modern American context. Filed in federal court specifically to avoid DC anti-SLAPP statute. SLAPP pattern matches Section 4.1 framework: meritless litigation to impose costs on journalism. Patel's prior MSNBC suit dismissed by federal judge late April 2026.
+   - **Environmental — 2 existing entries updated with April 2026 data**:
+     - **Endangerment Finding**: Became legally operative April 20 (60 days post-publication). No court stay issued. EPA formally lacks primary statutory basis to regulate greenhouse gases from any source category as of that date.
+     - **EPA Enforcement Collapse**: Added Q1 2026 hard numbers from Environmental Integrity Project (Feb 2026 report, covered by Inside Climate News/NPR/EDGI):
+       - Civil lawsuits referred to DOJ: 16 (76% below Biden year 1, 81% below Trump year 1)
+       - TSCA inspections down 42%
+       - Zero-dollar penalty cases: 400 more than Biden's year 4
+       - EPA's own claims of strong enforcement contradicted by data (Inside Climate News, March 2026)
+   - **Police Brutality — 1 pattern expansion**:
+     - **Pattern 4 (Cross-cutting enforcement collapse)**: Reframed as structural dismantlement strategy, not separate agency decisions. DOJ Civil Rights Division staffing loss (250+ attorneys), 36% police misconduct prosecution drop, parallel EPA enforcement collapse (76% fewer civil lawsuits) are correlated institutional attrition across multiple enforcement domains simultaneously.
+   - **Cross-Domain Pattern Analysis** (critical finding):
+     - **Pattern A — Attrition over formal rollback**: Achievement of deregulation/rights-suppression through personnel removal, not legal changes. EPA still has authority but brings 76% fewer cases. Civil Rights Division can investigate but 250+ attorneys left, 13 remain on police misconduct. Press freedom protections technically exist but enforcement infrastructure hollowed out.
+     - **Pattern B — Courts winning but can't enforce**: Endorsement Finding litigation ongoing, NPR/PBS defunding blocked, police consent decrees in place (Chicago, Baltimore, Cleveland) — but courts cannot staff EPA division, restore Civil Rights attorneys, or compel executive to stop using FBI director's litigation budget to intimidate press. Court victories necessary but insufficient.
+     - **Pattern C — Election-year acceleration**: Kash Patel filing (Apr 20), WHCA dinner incident (Apr 25), Endangerment Finding effective (Apr 20), EPA enforcement data public (Feb-Mar) cluster in single month. Period of high institutional action density. Election-year incentive to lock in changes before potential power shifts predicts further acceleration through November.
+   - **Sources**: 7 new sources documented (Intercept, Democracy Now, Freedom of the Press Foundation, Washington Post, CPJ, Inside Climate News, NPR)
+   - **Commit**: Committed to master with conventional message
+
+**Status Summary**:
+- **Stockbot**: Paper trading on Day 2, 0 round trips yet (expected). Critical Gate 1 feasibility question identified — needs reassessment at 2-week checkpoint (2026-05-12). Monitoring infrastructure confirmed working.
+- **Resistance-Research**: Trackers updated with April 2026 developments. Three convergent cross-domain patterns identified suggesting structural dismantlement strategy, not piecemeal rollback.
+
+**Available Work Going Forward**:
+- **Stockbot**: Monitor daily (cron-based); 2-week feasibility checkpoint at 2026-05-12; monthly checkpoints thereafter
+- **Resistance-Research**: Trackers maintained. Proposal fully integrated and ready for distribution (user action) or domain research deepening
+- **Seedwarden**: Phase 2 mockup tooling complete; awaiting Phase 1 user tag corrections + Etsy verification
+- **Cybersecurity-Hardening**: TIER1_DISTRIBUTION_PREP complete; awaiting user template review and outreach execution
+
+**Needs User Input**:
+- **Stockbot**: Gate 1 criteria may require recalibration if 30 round trips/month is structurally unachievable with daily-signal single-stock strategy (assess at 2026-05-12)
+- **Seedwarden**: Tag corrections (3) + Etsy account verification needed before Phase 1 upload
+- **Cybersecurity-Hardening**: Review TIER1_DISTRIBUTION_PREP.md templates and approve outreach execution
+
+**Token Usage** (Session 496):
+- Stockbot agent: ~43K tokens
+- Resistance-research agent: ~100K tokens
+- Total: ~143K tokens
