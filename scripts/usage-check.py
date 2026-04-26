@@ -126,10 +126,12 @@ def load_limits() -> tuple[int, int]:
 
 def collect_tokens(since: datetime) -> dict:
     """
-    Read all session JSONL files and sum output tokens since `since`.
-    Returns dict keyed by model name.
+    Read all session JSONL files and sum token types since `since`.
+    Returns dict keyed by model name with output, input, cache_write, cache_read counts.
     """
-    by_model: dict[str, dict] = defaultdict(lambda: {"output": 0, "input": 0, "sessions": set()})
+    by_model: dict[str, dict] = defaultdict(
+        lambda: {"output": 0, "input": 0, "cache_write": 0, "cache_read": 0, "sessions": set()}
+    )
 
     if not SESSION_DIR.exists():
         return {}
@@ -161,10 +163,14 @@ def collect_tokens(since: datetime) -> dict:
                     model = msg.get("message", {}).get("model", "unknown")
                     out = usage.get("output_tokens", 0) or 0
                     inp = usage.get("input_tokens", 0) or 0
-                    if out == 0:
+                    cw  = usage.get("cache_creation_input_tokens", 0) or 0
+                    cr  = usage.get("cache_read_input_tokens", 0) or 0
+                    if out == 0 and cw == 0:
                         continue
-                    by_model[model]["output"] += out
-                    by_model[model]["input"] += inp
+                    by_model[model]["output"]      += out
+                    by_model[model]["input"]        += inp
+                    by_model[model]["cache_write"]  += cw
+                    by_model[model]["cache_read"]   += cr
                     by_model[model]["sessions"].add(session_id)
         except OSError:
             continue
@@ -173,12 +179,22 @@ def collect_tokens(since: datetime) -> dict:
 
 
 def aggregate(by_model: dict) -> dict:
-    sonnet_out = sum(v["output"] for k, v in by_model.items() if classify_model(k) == "sonnet")
-    opus_out   = sum(v["output"] for k, v in by_model.items() if classify_model(k) == "opus")
-    haiku_out  = sum(v["output"] for k, v in by_model.items() if classify_model(k) == "haiku")
-    other_out  = sum(v["output"] for k, v in by_model.items()
-                     if classify_model(k) not in ("sonnet", "opus", "haiku", "synthetic"))
-    total_out = sonnet_out + opus_out + haiku_out + other_out
+    def _sum(field, cls):
+        return sum(v[field] for k, v in by_model.items() if classify_model(k) == cls)
+    def _sum_not(field, classes):
+        return sum(v[field] for k, v in by_model.items() if classify_model(k) not in classes)
+
+    sonnet_out = _sum("output", "sonnet")
+    opus_out   = _sum("output", "opus")
+    haiku_out  = _sum("output", "haiku")
+    other_out  = _sum_not("output", ("sonnet", "opus", "haiku", "synthetic"))
+    total_out  = sonnet_out + opus_out + haiku_out + other_out
+
+    sonnet_cw = _sum("cache_write", "sonnet")
+    haiku_cw  = _sum("cache_write", "haiku")
+    opus_cw   = _sum("cache_write", "opus")
+    total_cw  = sum(v["cache_write"] for v in by_model.values())
+    total_cr  = sum(v["cache_read"]  for v in by_model.values())
 
     sonnet_sessions = set()
     total_sessions = set()
@@ -193,6 +209,11 @@ def aggregate(by_model: dict) -> dict:
         "haiku_output":    haiku_out,
         "other_output":    other_out,
         "total_output":    total_out,
+        "sonnet_cache_write": sonnet_cw,
+        "haiku_cache_write":  haiku_cw,
+        "opus_cache_write":   opus_cw,
+        "total_cache_write":  total_cw,
+        "total_cache_read":   total_cr,
         "sonnet_sessions": len(sonnet_sessions),
         "total_sessions":  len(total_sessions),
     }
@@ -232,8 +253,12 @@ def build_report() -> dict:
         "recommendation": _recommend(sonnet_over, all_over, sonnet_warn, all_warn,
                                      agg["sonnet_output"], sonnet_limit,
                                      agg["total_output"], all_limit),
-        "by_model": {k: {"output": v["output"], "sessions": len(v["sessions"])}
-                     for k, v in by_model.items() if v["output"] > 0},
+        "by_model": {k: {
+                         "output":      v["output"],
+                         "cache_write": v["cache_write"],
+                         "cache_read":  v["cache_read"],
+                         "sessions":    len(v["sessions"]),
+                     } for k, v in by_model.items() if v["output"] > 0 or v["cache_write"] > 0},
     }
 
 
@@ -279,7 +304,15 @@ def print_report(r: dict) -> None:
           f"(Sonnet: {u['sonnet_sessions']})")
     if r["by_model"]:
         for model, d in sorted(r["by_model"].items(), key=lambda x: -x[1]["output"]):
-            print(f"    {model}: {d['output']:,} tokens  ({d['sessions']} sessions)")
+            cw = d.get("cache_write", 0)
+            cw_str = f"  cache_write: {cw:,}" if cw else ""
+            print(f"    {model}: {d['output']:,} tokens  ({d['sessions']} sessions){cw_str}")
+    print()
+    cw_total = u.get("total_cache_write", 0)
+    cr_total = u.get("total_cache_read", 0)
+    if cw_total or cr_total:
+        print(f"  Cache writes (all models): {cw_total:,} tokens")
+        print(f"  Cache reads  (all models): {cr_total:,} tokens")
     print()
     print(f"  ➜  {r['recommendation']}")
     print(f"{'='*62}")

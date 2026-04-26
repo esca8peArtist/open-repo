@@ -1,0 +1,76 @@
+{
+  "notes": "Calibration data points — UI % vs tracked token counts. Used to derive actual Anthropic metering formula.",
+  "data_points": [
+    {
+      "date": "2026-04-26",
+      "label": "DP1 — initial calibration (pre-session-summary)",
+      "source": "conversation summary — exact token counts not directly observed",
+      "ui_pct": {
+        "sonnet": 22.3,
+        "all_models": 14.2
+      },
+      "tracker_tokens": {
+        "sonnet_output": 1985000,
+        "note": "back-calculated from implied 8.935M limit — not directly observed"
+      },
+      "cache_tokens": {
+        "sonnet_cache_write": "unknown — not tracked at time of DP1",
+        "sonnet_cache_read": "unknown"
+      },
+      "implied_limits_output_only": {
+        "sonnet": 8935000,
+        "all_models": 15114000,
+        "caveat": "if cache writes are metered this will be wrong"
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "label": "DP2 — end of billing week (31h before reset)",
+      "source": "UI screenshot + raw JSONL scan",
+      "ui_pct": {
+        "sonnet": 42.0,
+        "all_models": 34.0,
+        "claude_design": 0.0,
+        "current_session_pct": 5.0,
+        "resets_in_hours": 3.93
+      },
+      "tracker_tokens": {
+        "sonnet_output": 2627012,
+        "haiku_output": 2341115,
+        "total_output": 4968127,
+        "note": "from raw JSONL scan, ~6 days window (may include a few pre-Tuesday files)"
+      },
+      "cache_tokens": {
+        "sonnet_cache_write": 11437504,
+        "sonnet_cache_read": 302512546,
+        "haiku_cache_write": 13140144,
+        "haiku_cache_read": 208210358,
+        "total_cache_write": 24692035,
+        "total_cache_read": 510592197
+      },
+      "implied_limits_output_only": {
+        "sonnet": 6254790,
+        "all_models": 14612138,
+        "caveat": "wildly inconsistent with DP1 — output-only metering does not explain the numbers"
+      },
+      "implied_limits_output_plus_cache_write_25pct": {
+        "sonnet_weighted": 5486388,
+        "sonnet_limit": 13062829,
+        "comment": "if cache_write is metered at 0.25x output rate — still speculative"
+      }
+    }
+  ],
+  "analysis": {
+    "key_finding": "Cache writes are 11.4M Sonnet tokens vs 2.6M Sonnet output tokens — a 4.4:1 ratio. If cache writes are metered at even 25% rate, the weighted usage nearly doubles. This is the most likely explanation for the DP1 vs DP2 inconsistency.",
+    "why_dp1_dp2_are_inconsistent": "DP1 output ~2.0M → 22.3%. DP2 output 2.63M → 42%. Output only went up 630K but UI jumped 20 percentage points. Cache writes accumulated massively across the week (orchestrator reads same large context files each session).",
+    "cache_read_note": "510M cache read tokens — almost certainly NOT metered or metered at negligible rate. These are the orchestrator re-reading the same context (PROJECTS.md, WORKLOG.md, etc.) with cache hits.",
+    "fresh_input_note": "Only 110K fresh input tokens. Almost all 'input' is served from cache. This is expected for the orchestrator pattern.",
+    "next_data_point_needed": "A reading early in the next billing week (Tuesday AM, before much work is done) with BOTH UI% and our token counts including cache_writes would let us solve for the cache_write metering rate."
+  },
+  "current_limits_in_projects_md": {
+    "sonnet": 5023178,
+    "all_models": 13048473,
+    "calibration_date": "2026-04-26",
+    "basis": "DP2 output-only back-calculation — conservative but likely incorrect formula"
+  }
+}
