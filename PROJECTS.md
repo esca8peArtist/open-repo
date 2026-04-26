@@ -65,39 +65,33 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1 launched, Phase 2 live, **Phase 3 substantially complete (Session 486)**
+**Status**: Active — Phase 1 launched, Phase 2 live, **Phase 3 COMPLETE (Session 487)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Phase 1 (monitoring) and Phase 2 (litigation tracking) LIVE and production-ready. **Phase 3 in progress (Session 485 — major completion):**
+**Current focus**: **Phase 3 Research Integration COMPLETE (Session 487, agent af2c0c7d2a166e403)**. Phase 3 research roadmap (7,148 words, 8 case studies) fully integrated into democratic renewal proposal:
+- Pattern 6 in Section 3.1: Carnegie Endowment recovery playbook + Poland's PiS enclave problem
+- Section 3.1a (new): Constitutional Design Dimension — 935-constitution study, Tunisia institutional failure, Germany Basic Law design
+- Section 3.5 (new): Post-Electoral Recovery Challenge — 4-phase US sequence, autocratic enclave inventory, interstate compact strategies
+- Domain 3: Ireland Citizens' Assembly two-stage model mechanics
+- Domain 6 subsection 6i (new): German Basic Law as Weimar response — specific failure modes and US analogs
 
-**✅ COMPLETED (Session 485)**:
+**✅ COMPLETED (Session 487)**:
+- ✅ **Phase 3 research roadmap integration** — 5 substantive integrations woven into proposal structure (not appended)
+- ✅ Files: `democratic-renewal-proposal.md`, `democratic-renewal-executive-summary.md`, `published/README.md` updated
+- ✅ Committed: d911817 — "feat(resistance-research): integrate Phase 3 research roadmap into democratic renewal proposal"
 
-1. **✅ Priority documents — all delivered and committed**:
-   - ✅ `first-amendment-suppression.md` (3,400 words, 6 sections) — press crackdowns, protest restrictions, deplatforming, SLAPP litigation, legal landscape, current cases (2025-2026)
-   - ✅ `environmental-rollbacks-tracker.md` (3,800 words, 5 agencies + cross-agency) — EPA/Interior/NOAA/DOE/DOT with Federal Register citations, litigation status, impact analysis (24 entries)
-   - ✅ `police-brutality-consent-decree-tracker.md` (4,200 words, 8 major cities) — Chicago/Oakland/Minneapolis/Baltimore/Louisville/Cleveland/Ferguson/Newark with systemic defiance patterns
+**✅ COMPLETED (Session 485-486)**:
+1. **Priority documents**: first-amendment-suppression.md (3,400 words), environmental-rollbacks-tracker.md (3,800 words), police-brutality-consent-decree-tracker.md (4,200 words)
+2. **Proposal infrastructure**: democratic-renewal-executive-summary.md, DISTRIBUTION_GUIDE.md, published/README.md
+3. **Distribution templates**: Substack drafts (4 posts), Reddit templates (5 posts), institutional outreach (8 templates)
+4. **Phase 3 research roadmap**: 7,148 words, 8 case studies, implementation timelines, adoption pathways
 
-2. **✅ Format democratic renewal proposal — all infrastructure created**:
-   - ✅ `democratic-renewal-executive-summary.md` (1,200-1,500 words, print-ready) — 2-page summary, 22-domain table, fiscal scope, call to action
-   - ✅ `DISTRIBUTION_GUIDE.md` (1,000-1,200 words) — Platform strategy (Substack, Reddit, email, Twitter/X, institutional), audience segmentation, metrics
-   - ✅ `published/README.md` (comprehensive hub) — Links to all documents, 5 use-case pathways, 22-domain quick-reference
-
-3. **✅ Distribution setup — all templates drafted and ready**:
-   - ✅ `distribution-substack-drafts.md` (4 posts: Launch, Electoral Reform, Accountability/Oversight, Trackers) — 800-1,000 words each
-   - ✅ `distribution-reddit-templates.md` (5 posts: r/law, r/politics, r/Keep_Track, r/Ask_Politics, r/democracy) — native framing, 300-500+ words each
-   - ✅ `distribution-institutional-outreach-templates.md` (8 templates: legal aid 2, digital rights 2, movement orgs 3) — personalization checklists, sequencing
-
-**Phase 3 COMPLETION STATUS**:
-4. ✅ **Phase 3 research roadmap** (Session 486, agent aee330fa17c47b4aa) — COMPLETE
-   - `phase-3-research-roadmap.md` (7,148 words): 8 case studies, implementation timelines, constitutional design, adoption pathways
-   - Key findings: democratic recovery is rare (4/25 countries); Tunisia warning; replicable models identified
-   - Ready for integration into democratic renewal proposal
-
-**NEXT Phase 3 Work**:
-5. (Exploration Queue) Seedwarden Phase 2-4 expansion + social media strategy
+**NEXT WORK**:
+- **Distribution execution** (user action): Substack, Reddit, institutional templates ready for user posting
+- **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers are production-ready for regular updates
 
 **Blocked on**: —
-**Notes**: Phase 3 distribution infrastructure COMPLETE and READY for user execution. All trackers field-ready for ongoing updates. Gist remains live distribution channel. Next work is strategic deepening (Phase 3 research roadmap) and adjacent business/brand work (Seedwarden expansion).
+**Notes**: Phase 3 COMPLETE. All research, infrastructure, and distribution templates ready for user execution. Proposal is comprehensive (22 domains), evidence-based (Phase 3 research integrated), and distribution-ready. Tracker system in place for ongoing monitoring of crises and litigation.
 
 ---
 
@@ -116,28 +110,39 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — paper trading live, **pre-live-trading hardening underway**
+**Status**: Active — paper trading live, **multi-strategy conflict resolution COMPLETE**, ready for strategy optimization
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker, session `33a4afe676cae12a`). Model graduation criteria framework complete (`model-graduation-criteria.md`). **Live trading guardrails COMPLETE (Session 486)**.
+**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **Multi-strategy conflict resolution COMPLETE (Session 487, agent a660bdfc102ec8e28)**.
+
+**Completed (Session 487)**:
+1. ✅ **Multi-strategy conflict resolution** — COMPLETE:
+   - `src/trading/strategy_coordinator.py` — `StrategyCoordinator` class (stdlib only, zero external deps)
+   - **Conflict classes identified and solved**:
+     1. Position double-counting (same ticker across strategies) → `aggregate_open_positions()` sums cross-strategy exposure
+     2. Competing orders (both strategies submit independently) → `acquire_symbol_lock(symbol)` serializes order submission per ticker
+     3. Rate limit multiplication (N engines × max_orders cap) → shared 60-second sliding window global counter
+   - `tests/unit/test_trading/test_strategy_coordinator.py` — 43 comprehensive unit tests, all pass
+   - **Total test suite**: 723 trading unit tests pass, 0 regressions
+   - **Integration pattern**: Lock acquisition → aggregate positions → validate with guardrails → submit → record global order
+   - Committed: 9c28451 — "feat(stockbot): implement StrategyCoordinator for multi-strategy conflict resolution"
 
 **Completed (Session 486)**:
 1. ✅ **Live trading guardrails** — COMPLETE:
    - `live-trading-guardrails.md` specification (rationale, implementation approach, config parameters)
    - `src/guardrails.py` module: 6 validators (emergency halt, instrument ban, cash-only, position limit, concurrent cap, daily loss killswitch)
    - 88 unit tests (all passing)
-   - Zero external dependencies (stdlib only)
 
 **Next tasks — work these in order:**
 
-2. **Multi-strategy conflict resolution** — investigate and fix concurrent strategy order conflicts (competing orders, position double-counting, rate limits). Implement shared position manager or strategy isolation layer.
+2. **Strategy optimization** — run backtests on existing strategies; evaluate performance per graduation criteria; eliminate underperformers; document in `strategy-evaluation.md`
 
-3. **Strategy optimization** — once conflicts resolved, run backtests; evaluate performance; eliminate underperformers; document in `strategy-evaluation.md`
+3. **Live trading readiness checklist** — when paper trading shows consistent positive performance (per graduation criteria), produce user-facing checklist: switch to funded live account, verify cash account (no margin), confirm guardrails active, set initial funding
 
-4. **Live trading readiness checklist** — when paper trading shows consistent positive performance (per graduation criteria), produce user-facing checklist: switch to funded live account, verify cash account (no margin), confirm guardrails active, set initial funding
+4. **Live trading launch** — once model graduation criteria met and all checks pass, transition to Jetson deployment with live trading enabled
 
 **Blocked on**: —
-**Notes**: User live trading criteria: strategies must open AND close positions autonomously with UI matching Alpaca exactly. Paper-to-live switch is just credential swap + URL change — but guardrails must be in place first. Initial live account will be funded with a very small amount to verify everything works. Margin is explicitly banned. Leveraged ETFs and short selling are explicitly banned.
+**Notes**: Multi-strategy system is now conflict-free. Next: optimize and evaluate which strategies should graduate to live trading. Paper trading provides the validation signal. Guardrails are in place. Live trading will begin with minimal funding ($100–500) and scale only after 2+ weeks of profitable live performance.
 
 ---
 

@@ -4,6 +4,55 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 Evening (20:40 UTC) — Orchestrator Session 487 — Parallel Agents: Phase 3 Integration + Multi-Strategy Conflict Resolution
+
+**Session Protocol**: Parallel agent execution (2 independent high-priority tasks)
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Phase 3 Research Roadmap Integration** (agent af2c0c7d2a166e403)
+   - Integrated Phase 3 research roadmap (7,148 words, 8 case studies) into democratic renewal proposal
+   - **5 substantive integrations** (not appended, threaded into existing structure):
+     1. **Pattern 6 in Section 3.1**: Carnegie Endowment recovery playbook — Poland's PiS enclave problem as concrete warning
+     2. **Section 3.1a (new)**: Constitutional Design Dimension — 935-constitution study, Tunisia's institutional failure, Germany's Basic Law design responses
+     3. **Section 3.5 (new)**: Post-Electoral Recovery Challenge — 4-phase US sequence, autocratic enclave inventory, interstate compact as filibuster bypass
+     4. **Domain 3**: Ireland Citizens' Assembly two-stage model mechanically explained
+     5. **Domain 6 subsection 6i (new)**: German Basic Law as design response to Weimar — specific failure modes and remedies
+   - **Files modified**: `democratic-renewal-proposal.md`, `democratic-renewal-executive-summary.md`, `published/README.md`
+   - **Committed**: d911817 — "feat(resistance-research): integrate Phase 3 research roadmap into democratic renewal proposal"
+   - **Token usage**: 123,334 total
+
+2. ✅ **Stockbot: Multi-Strategy Conflict Resolution** (agent a660bdfc102ec8e28)
+   - Built `StrategyCoordinator` class for concurrent strategy order management
+   - **Problem identified**: Three conflict classes when multiple strategies run simultaneously
+     - Position double-counting (same ticker across strategies)
+     - Competing orders for same instrument (both strategies submit independently)
+     - Rate limit multiplication (N strategies × max orders = N × intended cap)
+   - **Solution**: Stdlib-only `StrategyCoordinator` (zero external deps)
+     - `register_strategy()` / `unregister_strategy()` — plug in any PositionManager
+     - `aggregate_open_positions()` — combined {symbol: market_value} across all strategies
+     - `acquire_symbol_lock()` — threading.Lock per ticker; serializes order submission
+     - `check_rate_limit()` / `record_order()` — 60-second sliding window shared globally
+   - **Tests**: 43 comprehensive unit tests, all pass; 723 total trading tests pass, 0 regressions
+   - **Integration pattern**: Lock + aggregate + validate → submit + record
+   - **Committed**: 9c28451 — "feat(stockbot): implement StrategyCoordinator for multi-strategy conflict resolution"
+   - **Token usage**: 101,857 total
+
+**Orchestration Work**:
+- Oriented (read ORCHESTRATOR_STATE.md)
+- Processed INBOX.md (no new items)
+- Spawned 2 agents in parallel for top-priority work
+- Both agents completed and committed independently
+
+**Total Tokens**: 225,191 (both agents combined)
+
+**Next Session Work**:
+- resistance-research: Distribution execution (Substack, Reddit, institutional templates ready)
+- stockbot: Strategy optimization (backtests, performance evaluation, underperformer elimination)
+- seedwarden Track B: Deploy rebuilt native plants guide PDF (4.91 MB, ready)
+
+---
+
 ## 2026-04-26 Late Evening — Orchestrator Session 485 — Phase 3 Comprehensive Delivery (Resistance-Research)
 
 **Work Completed**:
