@@ -2,6 +2,48 @@
 
 ---
 
+## April 27, 2026 — resistance-research: Two new diagnostic domains for democratic-renewal-proposal.md
+
+**Session type**: Domain deepening — new diagnostic framework entries
+**Files created**:
+- `projects/resistance-research/domain-deepening/domain-23-monetary-consumer-finance.md` — 1,900 words. Domain 23: Monetary Policy Independence and Consumer Financial Protection.
+- `projects/resistance-research/domain-deepening/domain-24-energy-utilities-democracy.md` — 2,100 words. Domain 24: Energy Access, Utility Democracy, and Regulatory Capture.
+
+### Domain selection rationale
+
+The two domains selected fill the largest genuine gaps in the proposal's diagnostic coverage after audit of all 22 existing domains:
+
+**Domain 23 (Monetary/Consumer Finance)** was selected because:
+- The Federal Reserve independence attack is occurring in real-time (April-May 2026): DOJ criminal probe weaponized against Powell, Lisa Cook fired, Kevin Warsh nomination with explicit presidential rate-cutting pressure, Supreme Court's Humphrey's Executor assault under active litigation. No existing domain addresses monetary policy capture as a democratic problem.
+- The CFPB was functionally destroyed in four months (January-May 2025) through a combination of leadership replacement, enforcement withdrawal, and rule reversal — removing $19B in annual consumer protection and gutting fair lending enforcement. Domain 5 (fiscal reform) and Domain 20 (antitrust) do not address the consumer financial protection apparatus or household debt traps.
+- The $8B/year payday extraction, $14B/year in credit card fees, and $100B+ in medical debt are structurally regressive — functioning as hidden taxes on low-income households — but are invisible in the proposal's existing fiscal analysis.
+- The racial wealth extraction dimension (Black mortgage denial rates 2.5x, payday concentration in Black/Latino communities, ECOA disparate-impact rollback) complements Domain 22 (Reparations and Racial Justice) with an ongoing, current-period mechanism.
+
+**Domain 24 (Energy/Utilities)** was selected because:
+- 13.5 million utility disconnections in 2024, with the same investor-owned utilities earning $52B in record profits, is the clearest current-period example of regulatory capture producing mass material harm. Domain 12 (Infrastructure) addresses grid modernization as a physical problem but not as a governance failure.
+- LIHEAP staff fired April 2025, program proposed for elimination six consecutive budgets — energy poverty is active policy under attack, not a background condition.
+- The ERCOT/Texas 2021 collapse ($195-200B damage, 246-702 deaths) is the fully documented case study of what deliberate regulatory isolation and private profit maximization in essential infrastructure produces. The governance lessons are absent from Domain 12's treatment.
+- The ALEC-drafted utility protection legislation pattern (restricting municipal utilities, banning community solar competition, preempting net metering) is structurally identical to the voter suppression and worker rights preemption patterns documented in Domains 1 and 9 — recognizing it as part of the same captured-legislature machinery strengthens the cross-domain analysis.
+- Energy poverty is a democratic participation problem: 21.5 million households behind on bills, 1-in-6 households, 8.6% income share for low-income vs. 3% for higher-income households. This is material precarity operating through the same mechanisms as housing and food insecurity.
+
+### Why NOT the other candidates
+
+- **Agriculture**: Farm consolidation and seed patent monopolies are real but partially addressed in Domain 20 (antitrust) and Domain 15 (environment). The democratic failure pattern is less distinctively absent.
+- **Telecom/Broadband**: Domain 12's 12a (universal broadband as regulated utility) already addresses the core of this domain. Spectrum allocation and ISP monopoly are antitrust problems in Domain 20.
+- **Labor law deepening**: Domain 17 is already substantial. Gig economy classification, OSHA, and union-busting are all present.
+- **Immigration**: Domain 16 already has significant depth including algorithmic decision-making subsection 16d.
+
+### How these domains connect to the existing framework
+
+Both documents include explicit connection sections mapping to existing domains. The key new cross-domain loops identified:
+
+- **Financial extraction loop** (Domain 23): CFPB destruction enables payday extraction → household financial precarity → reduced civic participation → weaker regulatory accountability → more regulatory capture. Connects to Domains 2, 5, 20, 22.
+- **Energy poverty loop** (Domain 24): Utility regulatory capture enables rate extraction → energy poverty creates material precarity → reduced civic participation → weakened regulatory accountability → capture deepens. Connects to Domains 9, 12, 15, 18, 22.
+
+**Confidence**: High. All data from cited sources, prioritizing 2025-2026 reporting. Federal Reserve crisis data from multiple major outlets confirming the same facts. Energy shutoff data from EIA primary source as reported by Energy and Policy Institute (April 2026). CFPB destruction timeline from Holland & Knight, NCLC, and CFPB press releases.
+
+---
+
 ## April 27, 2026 (Session 496) — Three tracker updates: First Amendment, Environmental, Police Brutality
 
 **Session type**: Research and tracker update
