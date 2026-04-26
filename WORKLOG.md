@@ -4,6 +4,94 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 (Session 435) — PARALLEL 2-AGENT EXECUTION — open-repo Wave 4 Phase 1 implementation + seedwarden Etsy launch prep
+
+### 1. open-repo — Wave 4 Phase 1 COMPLETE (FederationPartner Data Model & Alembic Migrations)
+
+**Status**: Phase 1 implementation complete, committed to master, ready for Phase 2 (service layer).
+
+**Deliverables**:
+- **FederationPartner Model** (app/models.py): All required fields per spec:
+  - id (BigInteger PK), name (unique), base_url (unique, https enforced), public_key_pem (Text)
+  - key_id (unique), trust_state (Enum: pending/trusted/untrusted/revoked, default pending)
+  - created_at, updated_at, public_key_expires_at, last_key_refresh_at, last_activity_at
+- **TrustStatus Enum**: All 4 required states with defaults
+- **Activity Model Extensions**: partner_id FK (nullable), signature_header (string 1024), signature_verified (int)
+- **Alembic Migration**: revision 001
+  - Creates federation_partners table with all constraints, indexes, unique constraints
+  - PostgreSQL ENUM type for trust_state
+  - Extends activities table with partner_id FK and signature fields
+  - Proper cascade behavior on deletes
+- **Test Suite**: 17 tests, all passing
+  - Model instantiation, enum values, defaults, constraints, nullability, types, field configuration
+  - Activity federation field presence and types
+
+**Key Details**:
+- Followed existing codebase patterns (SQLAlchemy, type hints, conventions)
+- Indexes on frequently-queried columns (name, base_url, trust_state, last_activity_at)
+- Enum safety for trust state transitions
+- Full migration reversibility with constraint/enum cleanup
+- All 17 model tests passing without database connection
+
+**Commit**: `fd2bf0d` — "feat(federation): FederationPartner model + migrations for Wave 4"
+
+**Next Phase**: Phase 2 (service layer) — FederationPartnerService with registration, key management, stats
+
+---
+
+### 2. seedwarden — Etsy Phase 1 Launch Verification COMPLETE
+
+**Status**: All 21 mockups verified production-ready. All 6 lead products verified complete. GO decision for Phase 1 launch.
+
+**Mockup Verification**:
+- All 21 tablet mockups present and valid (2400×2400 px, professional device frames)
+- File sizes: 341–389 KB each (optimal range, all <1 MB, exceeds Etsy minimum)
+- Total: 7.4 MB (well within storage limits)
+- Quality: Professional, brand-compliant, production-ready
+
+**Product Verification** (6 lead products):
+| Product | PDF | Price | Status |
+| Food Sovereignty Starter Guide | 711 KB | $8 | ✅ |
+| Seed Saving Field Manual | 725 KB | $14 | ✅ |
+| Anti-Catalog: 30 Heirlooms | 687 KB | $10 | ✅ |
+| Seed Swap Hosting Kit | 680 KB | $10 | ✅ |
+| Apartment Plant Catalog | 749 KB | $14 | ✅ |
+| Survival Garden Regional Plans | 754 KB | $18 | ✅ |
+
+**Listing Content Verified**:
+- Pricing defined for all 6 products (avg $12.33)
+- 13 tags per product (Etsy maximum)
+- 100–500 word descriptions with opening hooks
+- Categories pre-selected (Craft Supplies & Tools → Patterns & How To → Gardening)
+- Cross-sells documented for bundle recommendations
+- All copy in product-action-plans.md and bundle-listings.md (ready to copy-paste)
+
+**Critical Issue Found & Flagged**:
+- **Native Plants Regional Guide**: 56.96 MB (exceeds Etsy 5 MB hard limit, 1 MB recommended)
+- **Resolution**: Exclude from Phase 1; rebuild with PDF compression in Phase 2
+- **Impact**: Proceed with 6 verified products instead
+
+**Artifact Created**:
+- ETSY_PHASE_1_UPLOAD_CHECKLIST.md (364 lines, 15 KB) with:
+  - Complete pre-upload verification checklist (21 mockups, 6 products)
+  - Etsy shop setup steps (branding, payment, shipping)
+  - Per-product upload workflow (image, description, tags, PDF, digital delivery)
+  - Post-upload verification (indexing, conversion monitoring)
+  - Critical issue resolution
+  - Recommended launch timeline (Mon-Wed 2026-04-28 to 2026-04-30)
+  - Success criteria and go/no-go matrix
+
+**Go/No-Go Assessment**: GO ✅
+- Confidence: 85–95%
+- Mockups: All valid (professional quality, correct specs)
+- PDFs: All verified (650–750 KB, within limits except native-plants)
+- Listing content: Complete (copy, pricing, tags, categories)
+- File sizes: Optimal (mockups <400 KB, PDFs <800 KB)
+
+**Recommendation**: Upload 6 verified products Mon-Wed 2026-04-28 to 2026-04-30 for optimal Etsy algorithm timing. Defer native-plants rebuild to Phase 2 after Phase 1 sales data validates market demand.
+
+---
+
 ## 2026-04-26 (Session 434) — PARALLEL 3-AGENT EXECUTION — stockbot readiness + cybersecurity-hardening publication + open-repo Wave 4 design
 
 ### 1. stockbot — Monday Market-Open Readiness Verification COMPLETE

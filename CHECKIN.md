@@ -4,7 +4,40 @@
 
 ---
 
-## Since Last Check-in (Session 434 — 2026-04-26 evening)
+## Since Last Check-in (Session 435 — 2026-04-26 evening)
+
+**Completed** (parallel 2-agent execution):
+
+1. **open-repo**: **Wave 4 Phase 1 IMPLEMENTATION COMPLETE** (FederationPartner data model + Alembic migrations). FederationPartner model created with all required fields per spec: id, name (unique), base_url (unique, https enforced), public_key_pem, key_id (unique), trust_state (enum: pending/trusted/untrusted/revoked, default pending), timestamps, and nullables. TrustStatus enum implemented. Activity model extended with partner_id FK, signature_header, signature_verified. Alembic migration 001 created: federation_partners table with constraints, indexes, PostgreSQL ENUM type, extensions to activities table with proper cascade behavior. **17 tests written and passing** (model instantiation, enum values, defaults, constraints, types, field configuration). Code follows existing patterns (SQLAlchemy, type hints, conventions). Migration reversible with full cleanup. **Commit**: `fd2bf0d` — "feat(federation): FederationPartner model + migrations for Wave 4". **Ready for Phase 2** (service layer with 8 methods + 7 admin endpoints).
+
+2. **seedwarden**: **Etsy Phase 1 Launch VERIFICATION COMPLETE**. All 21 tablet mockups verified production-ready (2400×2400 px, 341–389 KB each, professional device frames, total 7.4 MB). All 6 lead products verified complete with PDFs (650–750 KB), pricing ($8–$18), tags (13 each), descriptions (100–500 words), categories. Listing content ready in product-action-plans.md and bundle-listings.md. **Critical issue flagged**: Native Plants Regional Guide exceeds Etsy 5 MB limit (56.96 MB); excluded from Phase 1, deferred to Phase 2 with PDF compression rebuild. **Created**: ETSY_PHASE_1_UPLOAD_CHECKLIST.md (364 lines, complete pre-upload/post-upload verification, per-product workflow, Etsy setup steps, go/no-go matrix). **GO assessment**: Confidence 85–95%, all mockups valid, all listing content complete, file sizes optimal. **Recommendation**: Upload 6 verified products Mon-Wed 2026-04-28 to 2026-04-30 for optimal Etsy algorithm timing.
+
+**In Progress**:
+
+1. **resistance-research**: Monitoring begins **Monday 2026-04-28 21:00 UTC** (Xinis hearing closing arguments). All templates verified field-ready. No action until Monday.
+
+2. **stockbot**: Paper trading LIVE on dev + Jetson, ready for **Monday 2026-04-28 14:30 UTC market open**. All infrastructure verified healthy. No action until Monday.
+
+**Needs Your Input**:
+
+- **seedwarden**: Signal when ready to upload 6 lead products to Etsy (all prep work complete, checklist ready).
+- **cybersecurity-hardening**: Create GitHub Gist at https://gist.github.com with threat-model.md, opsec-playbook.md, implementation-guide.md in order (5 minutes). Set to Public. Copy Gist URL and follow DISTRIBUTION_CHECKLIST.md for remaining channels.
+- **mfg-farm**: Test print required (physical action) before launch prep continues.
+- **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi). Wave 3 COMPLETE. Wave 4 Phase 1 COMPLETE; Phase 2 (service layer) ready to begin immediately.
+
+**Suggested Priorities for Next Session**:
+
+1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — runbook ready, run monitoring-dashboard.py, begin P&L tracking
+2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
+3. **Tuesday+ 2026-04-29**: **open-repo** Wave 4 Phase 2 implementation begins (service layer + routes, 25-30 story points, 2-3 days) — Phase 1 complete and committed
+4. **Anytime this week**: **seedwarden** Etsy Phase 1 launch (all prep complete, awaiting signal) OR **cybersecurity-hardening** GitHub Gist creation
+5. **Pending**: **open-repo** GitHub push of Wave 1–2 code (user approval needed)
+
+**Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
+
+---
+
+## Previous Check-in (Session 434 — 2026-04-26 evening)
 
 **Completed** (parallel 3-agent execution):
 
