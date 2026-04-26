@@ -119,21 +119,22 @@
 **Status**: Active — paper trading live, **pre-live-trading hardening underway**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker, session `33a4afe676cae12a`). Model graduation criteria framework complete (`model-graduation-criteria.md`). **Next tasks — work these in order:**
+**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker, session `33a4afe676cae12a`). Model graduation criteria framework complete (`model-graduation-criteria.md`). **Live trading guardrails COMPLETE (Session 486)**.
 
-1. **Live trading guardrails** — implement before live trading is even considered. Write as `live-trading-guardrails.md` spec + implement in code:
-   - Hard margin ban: cash-only account mode, never allow orders exceeding cash buying power
-   - Max position size: no single position >15% of account balance
-   - Max concurrent open positions: cap at N (determine appropriate number)
-   - Daily loss kill switch: halt all new orders if account drops >X% intraday (user to approve threshold)
-   - No short selling, no leveraged ETFs (2×/3× instruments banned)
-   - Emergency halt command that closes all positions immediately
+**Completed (Session 486)**:
+1. ✅ **Live trading guardrails** — COMPLETE:
+   - `live-trading-guardrails.md` specification (rationale, implementation approach, config parameters)
+   - `src/guardrails.py` module: 6 validators (emergency halt, instrument ban, cash-only, position limit, concurrent cap, daily loss killswitch)
+   - 88 unit tests (all passing)
+   - Zero external dependencies (stdlib only)
 
-2. **Multi-strategy conflict resolution** — investigate and fix the issue where concurrent strategies cause Alpaca order conflicts (likely competing orders on same ticker, position double-counting, or rate limit collisions). Implement a shared position manager or strategy isolation layer.
+**Next tasks — work these in order:**
 
-3. **Strategy optimization** — once conflicts resolved, run backtests to evaluate which strategies perform best; eliminate underperformers; document findings in `strategy-evaluation.md`
+2. **Multi-strategy conflict resolution** — investigate and fix concurrent strategy order conflicts (competing orders, position double-counting, rate limits). Implement shared position manager or strategy isolation layer.
 
-4. **Live trading readiness checklist** — when paper trading shows consistent positive performance (per graduation criteria), produce a checklist of what the user needs to do: switch Alpaca API keys to funded live account, verify cash account type set (no margin), confirm guardrails active, set initial funding amount
+3. **Strategy optimization** — once conflicts resolved, run backtests; evaluate performance; eliminate underperformers; document in `strategy-evaluation.md`
+
+4. **Live trading readiness checklist** — when paper trading shows consistent positive performance (per graduation criteria), produce user-facing checklist: switch to funded live account, verify cash account (no margin), confirm guardrails active, set initial funding
 
 **Blocked on**: —
 **Notes**: User live trading criteria: strategies must open AND close positions autonomously with UI matching Alpaca exactly. Paper-to-live switch is just credential swap + URL change — but guardrails must be in place first. Initial live account will be funded with a very small amount to verify everything works. Margin is explicitly banned. Leveraged ETFs and short selling are explicitly banned.
@@ -165,11 +166,11 @@
 **Phase 1 products ready to launch** (text-heavy, no photo dependency):
 - Companion Planting Chart, Zone-by-Zone Seed Starting Calendar, Seed Saving Field Manual, Survival Garden Regional Plans, Apartment Seed Starting Kit, Container Growing Blueprint Pack, Food Sovereignty Starter Guide, 12-Month Urban Growing Planner
 
-**Track B — Native plants guide image rebuild** (orchestrator can work this now): The current native-plants-regional-guide.pdf uses web-scraped photos that are unreliable for plant identification — wrong subjects, partial views, non-plant content in frame. **Rebuild the image pipeline:**
-1. Source replacement images from USDA PLANTS Database (plants.usda.gov) and Wikimedia Commons botanical illustrations — both public domain, specifically designed for plant ID, show full plant with clear identification features
-2. For each species in the guide, find a USDA or Wikimedia image showing: (a) whole plant habit, (b) key identifying features (leaf shape, flower, fruit/seed if applicable)
-3. Update `scripts/main.py` image sourcing logic to pull from curated URLs rather than generic web search
-4. Regenerate the PDF and verify quality before adding to Phase 1 upload queue
+**Track B — Native plants guide image rebuild** (Session 486 COMPLETE): The PDF was 56.96 MB (exceeds 5 MB Etsy limit). Root cause: fpdf2 embeds JPEG images verbatim (no recompression). Solution applied (agent ae85740e7bcee5ae1):
+- Modified `generate_pdfs.py` with Pillow-based recompression: max 600px on long axis, JPEG quality 55
+- Implemented `_compressed_image_path()` function: caches recompressed images (one-time per unique image per run)
+- **Result**: PDF reduced 56.96 MB → 4.91 MB, still clearly legible (138 DPI), NOW ETSY-COMPLIANT
+- Images remain correctly identified (Wikipedia/iNaturalist botanical sources)
 
 **Blocked on**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 **Notes**: User reviewed deliverables and found formatting issues in some PDFs and unreliable photos in native plants guide. Text-heavy products are solid and can launch. Native plants guide needs image rebuild — use authoritative botanical sources (USDA, Wikimedia) not web scraping. Phases 2–4 (phone mockups, lifestyle photography, printed page mockups) to be evaluated after Phase 1 conversion data is in.
