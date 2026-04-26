@@ -4,7 +4,7 @@ subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
 last_updated: "2026-04-27"
-april_2026_entries: "entries 25–27 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data"
+april_2026_entries: "entries 25–27 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
 sources:
@@ -263,7 +263,9 @@ tags: [environmental-law, EPA, Interior, NOAA, DOE, DOT, rollbacks, litigation, 
 - Staffing driver: at least one-third of DOJ environmental attorneys departed; EPA laid off hundreds of monitoring employees in 2025.
 A March 2026 Inside Climate News follow-up found EPA publicly claimed strong enforcement; the agency's own data contradicted those claims. Environmental advocates characterized this as "regulatory capture by attrition" — retaining the statutory framework while gutting the enforcement personnel that makes it functional.
 
-**Sources — enforcement collapse**: [Inside Climate News — February 2026](https://insideclimatenews.org/news/05022026/trump-epa-polluter-enforcement-collapses/) | [NPR — record low enforcement](https://www.npr.org/2026/02/05/nx-s1-5699511/epa-trump-enforcement) | [Inside Climate News — March 2026 follow-up](https://insideclimatenews.org/news/10032026/trumps-epa-claims-strong-enforcement/) | [Environmental Data and Governance Initiative](https://envirodatagov.org/epas-enforcement-report-press-release-annotated/)
+**Q1 2026 enforcement totals**: A Q1 2026 enforcement roundup by EHSLeaders (published April 2026) found EPA finalized 91 settlement agreements in Q1 2026 — up modestly from 74 in Q4 2025. Total penalties in Q1: **$3.37 million**. The largest single Q1 fine was $781,175 against a Kansas building materials manufacturer for Clean Air Act violations. To put these numbers in context: a full quarter of national EPA civil enforcement produced approximately the same amount as a single mid-sized corporate fine in the Obama era. The Environmental Protection Network's analysis of the proposed FY2026 EPA budget identified a 49% cut to enforcement programs, which — if enacted — would further degrade enforcement capacity in Q2-Q4 2026.
+
+**Sources — enforcement collapse**: [Inside Climate News — February 2026](https://insideclimatenews.org/news/05022026/trump-epa-polluter-enforcement-collapses/) | [NPR — record low enforcement](https://www.npr.org/2026/02/05/nx-s1-5699511/epa-trump-enforcement) | [Inside Climate News — March 2026 follow-up](https://insideclimatenews.org/news/10032026/trumps-epa-claims-strong-enforcement/) | [Environmental Data and Governance Initiative](https://envirodatagov.org/epas-enforcement-report-press-release-annotated/) | [EHSLeaders — Q1 2026 enforcement roundup](https://ehsleaders.org/2026/04/epa-enforcement-roundup-q1-2026/) | [Environmental Protection Network — 49% enforcement cut](https://www.environmentalprotectionnetwork.org/epa-rollbacks-costs/)
 
 ---
 

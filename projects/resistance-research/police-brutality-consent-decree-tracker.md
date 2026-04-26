@@ -15,7 +15,7 @@ sources_verified: true
 
 # Police Brutality Consent Decree Tracker
 
-*Last updated: April 27, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026).*
+*Last updated: April 27, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026); Oakland Open Research Thread 8 updated (charter reform and NSA exit timeline).*
 
 **Lead finding**: The May 21, 2025 Trump DOJ action — simultaneously withdrawing from two proposed consent decrees, retracting findings of unconstitutional policing in eight jurisdictions, and closing pattern-or-practice investigations in six cities — was the largest single rollback of federal police oversight in U.S. history. It was not aberrational. It was the culmination of a strategy that began on January 22, 2025, and continues through systematic defunding of the Civil Rights Division's enforcement capacity. The cities left behind either persist under older, pre-Trump-era decrees with diminishing federal support, or are relying on local political commitments that carry no legal enforcement weight.
 
