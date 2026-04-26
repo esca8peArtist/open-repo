@@ -348,7 +348,7 @@ If you were not detained but had any contact with ICE agents — being questione
 **Resources**
 
 *ICE monitoring tools (First Amendment-protected):*
-U.S. District Judge Jorge L. Alonso (N.D. Illinois) granted a preliminary injunction on April 18-23, 2026, finding the Trump administration likely violated the First Amendment by pressuring Apple and Facebook to remove ICE-monitoring apps. Eyes Up and ICE Sightings - Chicagoland are now restored under court protection pending the full case. These apps document publicly observable ICE operations and are relevant to situational awareness near demonstration sites.
+U.S. District Judge Jorge L. Alonso (N.D. Illinois) granted a preliminary injunction on April 17-23, 2026, finding the Trump administration likely violated the First Amendment by pressuring Apple and Facebook to remove ICE-monitoring apps (Eyes Up and ICE Sightings - Chicagoland). The injunction blocks the government from making future censorship demands and gives developers legal cover to negotiate restoration with Apple and Facebook. Important: the court cannot compel Apple or Facebook to restore the apps — platform restoration is each company's decision. As of late April 2026, confirmed restoration of either app has not been publicly announced. Do not rely on these apps as available for May 1. If you previously downloaded Eyes Up before October 2025, check whether your version remains accessible. Use the confirmed-operational rapid-response tools listed below as your primary resources.
 
 *Immediate detention response:*
 - Freedom for Immigrants National Immigration Detention Hotline: 1-209-757-3733 (M-F, 8 a.m.–8 p.m. PT); from inside detention dial 9233# — [freedomforimmigrants.org/hotline](https://www.freedomforimmigrants.org/hotline)
@@ -738,5 +738,6 @@ If you participate on May 1, the most useful thing you can do on May 2 is identi
 
 *Prepared: April 23, 2026*
 *Updated: April 26, 2026 — event counts updated to 900+/85 cities; ICE tracker injunction added to Section 4 safety resources*
-*Companion documents: monitoring/2026-04-28-results.md (pre-hearing brief + April 26 developments), monitoring/2026-04-28-prep.md (April 28 monitoring checklist)*
-*Next update: Post-May Day results*
+*Updated: April 27, 2026 — corrected ICE tracker app restoration status (injunction does not compel Apple/Facebook to restore; apps remain unavailable for new downloads as of late April)*
+*Companion documents: monitoring/2026-04-28-results.md (pre-hearing brief + April 26 developments), monitoring/2026-04-27-tracking.md (April 27 pre-May Day tracking brief)*
+*Next update: Post-April 28 Xinis hearing; Post-May Day results*

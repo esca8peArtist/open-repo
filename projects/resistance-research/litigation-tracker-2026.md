@@ -803,3 +803,67 @@ The government's demand that Xinis rule by April 17 or face an appeal to "a cour
 | TBD | DC Circuit en banc | Boasberg contempt — en banc petition filed; not yet resolved |
 | TBD | Section 122 CIT | Three-judge panel ruling on 10% global tariff |
 | TBD | Mail Voting EO | Preliminary injunction in Massachusetts |
+
+---
+
+## April 27, 2026 — Pre-May Day Monitoring Pass
+
+*Pass conducted April 27, 2026. One day before the Xinis hearing. Four days before May Day.*
+
+---
+
+### Abrego Garcia (D. Md. / M.D. Tenn.) — Pre-Hearing Intelligence Update
+
+**New evidentiary record on prosecution timing (December 2025 / April 27 relevance)**:
+
+Unsealed court documents (CBS News, December 31, 2025) show the following DOJ internal timeline:
+
+- **April 27, 2025**: DOJ official Aakash Singh (under Deputy AG Todd Blanche) contacted Middle District of Tennessee officials about opening a criminal case against Abrego Garcia — the day before SCOTUS issued its original "facilitate return" order
+- **April 30, 2025**: Singh called the case a "top priority"
+- **May 15, 2025**: U.S. Attorney McGuire noted "anecdotally that the DAG and PDAG would like Garcia charged sooner rather than later"
+- **May 21, 2025**: Abrego Garcia was indicted
+
+This timeline is the evidentiary core of Judge Crenshaw's pending vindictive-prosecution ruling. The prosecution began the same week as the Supreme Court's intervention in the civil case and was driven from the Deputy AG's office downward. If Crenshaw dismisses, this record makes it difficult for the government to argue a curative indictment.
+
+**Status entering April 28 hearing**: Discovery stayed through April 30 at 5 p.m. by mutual sealed agreement. Contempt proceedings remain live. DOJ will invoke the Rao specificity standard (from the April 15 Boasberg DC Circuit ruling) against any contempt order Xinis issues. The Reuveni whistleblower complaint documents deliberate DOJ-level decisions to resist court orders — the strongest vehicle for a specificity-proof contempt order if Xinis chooses to use it.
+
+**Nashville (Crenshaw)**: No ruling as of April 27. Still "at any time." The interaction effect is live: if Crenshaw dismisses before or during the April 28 hearing, the government's Liberia removal rationale loses its criminal-supervision anchor in real time.
+
+**What to update here**: When the April 28 hearing produces a public order, update this entry with: (1) contempt issued Y/N; (2) any new deadlines set; (3) whether Nashville ruling dropped and how Xinis responded; (4) whether DOJ filed an emergency application to the Fourth Circuit or SCOTUS same day.
+
+**Sources**: [CBS News — prosecution timeline unsealed (December 31, 2025)](https://www.cbsnews.com/news/abrego-garcia-prosecution-push-began-after-wrongful-deportation-court-order/) · [CNN — Blanche comments threaten Nashville case (April 11, 2026)](https://www.cnn.com/2026/04/11/politics/todd-blanche-kilmar-abrego-garcia) · [MSNBC — contempt and sanctions still on table after return](https://www.msnbc.com/deadline-white-house/deadline-legal-blog/abrego-garcia-returned-contempt-sanctions-trump-admin-still-table-rcna211782)
+
+---
+
+### ICE Tracker Apps — Status Correction (Rosado v. Bondi, N.D. Ill.)
+
+**Status update as of April 27**: The April 17-23, 2026 preliminary injunction (Judge Alonso, N.D. Ill.) blocks the Trump administration from future censorship demands directed at Apple and Facebook regarding ICE-monitoring tools. It does NOT compel Apple or Facebook to restore the Eyes Up app or the ICE Sightings - Chicagoland Facebook group. Restoration is each platform's editorial decision. As of late April 2026, no confirmed announcement of restoration by either company has been reported. The final injunction terms were still pending as of April 20.
+
+**Practical implication**: Eyes Up and ICE Sightings - Chicagoland should not be cited as active community safety tools for May Day participants who did not have prior installations. Confirmed-operational alternatives include United We Dream rapid-response network, Alianza Americas, city-specific hotlines listed in the Action Guide, and the No Kings "Eyes on ICE" trained community (200,000+ trained). A correction to the Action Guide has been applied (April 27 pass).
+
+**Case to continue tracking**: The final injunction terms and any Apple/Facebook response will determine whether these tools are available for the June 14 No Kings Day and subsequent actions.
+
+**Sources**: [9to5Mac — injunction ruling (April 20, 2026)](https://9to5mac.com/2026/04/20/judge-says-white-house-cant-strong-arm-apple-into-blocking-ice-trackers/) · [Eric Goldman analysis — no compelled restoration (April 20, 2026)](https://blog.ericgoldman.org/archives/2026/04/the-federal-government-used-jawboning-to-censor-ice-transparency-initiatives-rosado-v-bondi.htm) · [Indiana Capital Chronicle — injunction for ICE tracker sites](https://indianacapitalchronicle.com/briefs/federal-judge-grants-injunction-for-ice-tracker-sites/)
+
+---
+
+### Updated Pending Deadlines as of April 27, 2026
+
+| Date | Case / Event | What to Watch |
+|---|---|---|
+| April 28 | Abrego Garcia (D. Md.) | Xinis hearing — contempt ruling? Depositions disclosed? Liberia addressed? Nashville ruling interaction? |
+| April 28 | Workers Memorial Day | Several unions using this as opening of May Day arc |
+| April 29, 7:30 PM ET | May Day Mass Call | Final national coordination; monitor for any safety or route updates |
+| April 30, 5 PM | Abrego Garcia (D. Md.) | Discovery deadline reactivates (unless extended again) |
+| April 30 | AFGE / BOP (D. Conn.) | Preliminary injunction hearing on Schedule Policy/Career (prison staff) |
+| Any day | Nashville (Crenshaw) | Dismissal ruling — record closed; interaction with April 28 Xinis hearing is the wildcard |
+| May 1 | May Day | 922 confirmed events; CPS/CTU buses 100 Chicago schools to Union Park rally; NJ AFL-CIO 1M+ mobilized |
+| May 4–8 | DHS Payroll | Emergency fund exhausts; ICE/CBP operations unaffected; civilian DHS staff face furlough |
+| May 15 | DHS Committees | Reconciliation legislation deadline for Homeland Security committees ($70B ICE/CBP) |
+| May 22 | DHS Funding CR | Continuing resolution expires |
+| June 14 | No Kings Day | Next national mobilization; flagship event Philadelphia |
+| Late June | Trump v. Barbara | SCOTUS birthright citizenship; post-argument read favors challengers |
+| TBD | DC Circuit en banc | Boasberg contempt en banc petition — not yet resolved |
+| TBD | Section 122 CIT | Three-judge panel on 10% global tariff (argument April 10; sharply skeptical panel) |
+| TBD | Mail Voting EO | Preliminary injunction in Massachusetts — clock matters for midterm mail ballot deadlines |
+| TBD | Rosado v. Bondi (N.D. Ill.) | Final injunction terms; Apple/Facebook voluntary restoration of ICE tracker apps |
