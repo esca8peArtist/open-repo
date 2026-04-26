@@ -111,8 +111,8 @@ These demands are broader and more politically explicit than standard labor barg
 
 *Scale indicators:*
 - 200+ organizations total
-- 600+ actions planned nationally as of late April
-- 65+ cities confirmed with organized events (Payday Report map; growing)
+- 900+ events confirmed nationally; 3,500+ total actions including walkouts projected (The People's Dissent tracker, April 25)
+- 85+ cities confirmed with organized events (Payday Report map, April 24)
 
 **What is NOT confirmed:**
 
@@ -346,6 +346,9 @@ Do not sign any document you receive after release without legal review. This in
 If you were not detained but had any contact with ICE agents — being questioned, followed, or photographed — document it and report it to your local rapid-response network. This information helps communities track enforcement patterns.
 
 **Resources**
+
+*ICE monitoring tools (First Amendment-protected):*
+U.S. District Judge Jorge L. Alonso (N.D. Illinois) granted a preliminary injunction on April 18-23, 2026, finding the Trump administration likely violated the First Amendment by pressuring Apple and Facebook to remove ICE-monitoring apps. Eyes Up and ICE Sightings - Chicagoland are now restored under court protection pending the full case. These apps document publicly observable ICE operations and are relevant to situational awareness near demonstration sites.
 
 *Immediate detention response:*
 - Freedom for Immigrants National Immigration Detention Hotline: 1-209-757-3733 (M-F, 8 a.m.–8 p.m. PT); from inside detention dial 9233# — [freedomforimmigrants.org/hotline](https://www.freedomforimmigrants.org/hotline)
@@ -734,5 +737,6 @@ If you participate on May 1, the most useful thing you can do on May 2 is identi
 ---
 
 *Prepared: April 23, 2026*
-*Companion documents: monitoring/2026-04-23-results.md (coalition confirmation), monitoring/2026-04-28-watch.md (government response watch)*
+*Updated: April 26, 2026 — event counts updated to 900+/85 cities; ICE tracker injunction added to Section 4 safety resources*
+*Companion documents: monitoring/2026-04-28-results.md (pre-hearing brief + April 26 developments), monitoring/2026-04-28-prep.md (April 28 monitoring checklist)*
 *Next update: Post-May Day results*

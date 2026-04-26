@@ -2,6 +2,55 @@
 
 ---
 
+## April 26, 2026 — April 28 Prep, Mass Call Tracking Setup, Guide Quality Pass
+
+**Session type**: Pre-hearing preparation + guide quality review
+**Date**: April 26, 2026
+**Files created/updated**: `monitoring/2026-04-28-prep.md` (new), `mayday-2026-action-guide.md` (updated)
+
+---
+
+### What Was Done
+
+**Task 1 — April 28 Hearing Preparation (`monitoring/2026-04-28-prep.md` — NEW)**
+
+Created a comprehensive decision-support document for the April 28 hearing. Key content:
+
+- **DC Circuit Boasberg ruling analysis**: Full treatment of how the April 15 DC Circuit 2-1 ruling (Rao-Walker majority, Childs dissent) will be deployed by DOJ at the April 28 hearing, and why it is weaker against Xinis's civil contempt posture than it was against Boasberg's criminal contempt inquiry. Four-part counterargument documented: civil vs. criminal contempt distinction; Fourth Circuit independence from DC Circuit precedent; SCOTUS April 10 return order as controlling authority; Xinis's documented factual record (1,140 documents withheld, "bad faith" finding).
+
+- **Three sealed-record theories**: Organized the April 23 sealed filing into three analytically distinct scenarios (Theory A: negotiated partial compliance; Theory B: sealed refusal with Fourth Circuit appeal preparation; Theory C: partial compliance under privilege assertion), each with its observable signal at hearing open.
+
+- **Outcome checklist**: Four specific outcomes to record in `2026-04-28-results.md`: (1) civil contempt issued Y/N; (2) deposition status disclosed or sealed; (3) April 30 deadline confirmed/modified/vacated; (4) Liberia demand addressed. Escalation action matrix by outcome type.
+
+- **April 29 Mass Call tracking**: Documented what is confirmed (7:30 p.m. ET Zoom, registration via maydaystrong.org, text "solidarity" to 58910), what is not confirmed (speaker list, attendance estimate, direct Zoom link). Five specific watch items for the call.
+
+- **May 1 action count protocol**: Current baseline 900+ events, 85 cities. Protocol for creating `monitoring/2026-05-01-results.md`.
+
+- **Primary monitoring source table**: Eight sources with speed-of-reporting estimates for April 28.
+
+**Task 2 — May Day Guide Quality Pass (`mayday-2026-action-guide.md` — UPDATED)**
+
+Two substantive fixes:
+
+1. **Stale event counts corrected**: Line 115-116 updated from "600+ actions / 65+ cities" to "900+ events confirmed / 85+ cities" with source (The People's Dissent tracker April 25; Payday Report April 24).
+
+2. **ICE tracker injunction added to Section 4**: Added a new paragraph in the undocumented participant safety resources block noting the April 18-23 N.D. Illinois preliminary injunction (Judge Alonso) restoring Eyes Up and ICE Sightings - Chicagoland under First Amendment protection. This is directly relevant to May Day participant situational awareness and was the one identified gap in the guide.
+
+3. **Date stamp updated**: Footer updated to note April 26 update pass and point to `monitoring/2026-04-28-prep.md` as companion.
+
+No other substantive changes needed. All links active, legal rights section accurate, safety section complete, sources section comprehensive (40+ links).
+
+**Nashville / Crenshaw watch**: Confirmed no ruling as of April 26. Search results show the February 26 hearing remains the last public event; ruling still described as "imminent" but no docket entry confirmed. Remains in CHECKIN.md as highest-impact unpredicted event.
+
+---
+
+### Files Modified
+
+- `/projects/resistance-research/monitoring/2026-04-28-prep.md` — CREATED
+- `/projects/resistance-research/mayday-2026-action-guide.md` — UPDATED (event counts, ICE tracker injunction, date stamp)
+
+---
+
 ## April 26, 2026 — Pre-May Day / April 28 Readiness Pass
 
 **Session type**: Monitoring + update pass
