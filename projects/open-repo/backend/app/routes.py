@@ -3,13 +3,13 @@
 import json
 import hashlib
 from typing import Optional
-from datetime import datetime
+from datetime import datetime, timedelta
 from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy import select, func
+from sqlalchemy import select, func, and_
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database import get_db
-from app.models import ContentItem, Endorsement
+from app.models import ContentItem, Endorsement, ReviewerQueueItem
 from app.schemas import (
     ContentItemCreateRequest,
     ContentItemResponse,
@@ -22,9 +22,27 @@ from app.schemas import (
     EndorsementStatsResponse,
     EndorsementAuditResponse,
     UserEndorsementResponse,
+    ContributionCreateRequest,
+    ContributionResponse,
+    ContributionListResponse,
+    ReviewQueueListResponse,
+    ReviewQueueItemWithContribution,
+    ReviewDecision,
+    ReviewDecisionResponse,
+    ReviewHistoryItemResponse,
+    ContributorStatsResponse,
+    FinalizeDecisionRequest,
+    FinalizeDecisionResponse,
+    RequestRevisionRequest,
+    RequestRevisionResponse,
 )
 from app.services.search_service import get_search_service
 from app.services.endorsement_service import EndorsementService
+from app.services.contribution_service import (
+    ContributionService,
+    ReviewService,
+    ContributorStatsService,
+)
 from app import __version__
 
 router = APIRouter()
@@ -419,3 +437,391 @@ async def get_endorsement_audit_log(
 
     endorsements = await EndorsementService.get_endorsements_for_item(db=db, item_cid=cid)
     return [EndorsementAuditResponse.from_orm(e) for e in endorsements]
+
+
+# ============================================================================
+# Phase 3: Contribution Submission API
+# ============================================================================
+
+
+@router.post("/api/contributions", response_model=ContributionResponse, status_code=201)
+async def create_contribution(
+    request: ContributionCreateRequest,
+    db: AsyncSession = Depends(get_db),
+):
+    """Submit a new item or propose an edit to an existing item.
+
+    Contributions start in 'pending' state and await reviewer assignment.
+    """
+    # Validate contribution type
+    if request.contribution_type not in ["new_item", "edit_item"]:
+        raise HTTPException(
+            status_code=400,
+            detail="contribution_type must be 'new_item' or 'edit_item'",
+        )
+
+    # For edit_item, verify target item exists
+    if request.contribution_type == "edit_item":
+        if not request.target_item_cid:
+            raise HTTPException(
+                status_code=400,
+                detail="target_item_cid is required for edit_item contributions",
+            )
+        target_result = await db.execute(
+            select(ContentItem).where(ContentItem.cid == request.target_item_cid)
+        )
+        if not target_result.scalar_one_or_none():
+            raise HTTPException(
+                status_code=404,
+                detail=f"Target item {request.target_item_cid} not found",
+            )
+
+    try:
+        contribution, proposed_cid = await ContributionService.create_contribution(
+            db=db,
+            contribution_type=request.contribution_type,
+            item_data=request.item_data,
+            contributor_id=request.contributor_id,
+            target_item_cid=request.target_item_cid,
+            edit_diff=request.edit_diff,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=409, detail=str(e))
+
+    return ContributionResponse.from_orm(contribution)
+
+
+@router.get("/api/contributions", response_model=ContributionListResponse)
+async def list_contributions(
+    db: AsyncSession = Depends(get_db),
+    limit: int = Query(10, ge=1, le=100),
+    offset: int = Query(0, ge=0),
+    state: Optional[str] = Query(None),
+    contribution_type: Optional[str] = Query(None),
+    submitted_by: Optional[str] = Query(None),
+):
+    """List contributions with optional filtering.
+
+    Public users see only pending contributions and their own submissions.
+    Admins see all contributions.
+    """
+    try:
+        contributions, total = await ContributionService.list_contributions(
+            db=db,
+            limit=limit,
+            offset=offset,
+            state=state,
+            contribution_type=contribution_type,
+            submitted_by=submitted_by,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    return ContributionListResponse(
+        items=[ContributionResponse.from_orm(c) for c in contributions],
+        total=total,
+        limit=limit,
+        offset=offset,
+        has_more=(offset + limit) < total,
+    )
+
+
+@router.get("/api/contributions/{contribution_id}", response_model=ContributionResponse)
+async def get_contribution(
+    contribution_id: int,
+    db: AsyncSession = Depends(get_db),
+):
+    """Retrieve a single contribution with proposed content and diff."""
+    contribution = await ContributionService.get_contribution(db, contribution_id)
+    if not contribution:
+        raise HTTPException(status_code=404, detail="Contribution not found")
+
+    return ContributionResponse.from_orm(contribution)
+
+
+# ============================================================================
+# Phase 3: Review Workflow API
+# ============================================================================
+
+
+@router.get("/api/review/queue", response_model=ReviewQueueListResponse)
+async def get_review_queue(
+    db: AsyncSession = Depends(get_db),
+    limit: int = Query(10, ge=1, le=50),
+    offset: int = Query(0, ge=0),
+    assignment_status: Optional[str] = Query(None),
+):
+    """Get pending contributions awaiting review (paginated).
+
+    Reviewers see their assigned items; admins see all pending items.
+    """
+    try:
+        queue_items, total = await ReviewService.get_review_queue(
+            db=db,
+            reviewer_id=None,  # In production, would use current_user
+            limit=limit,
+            offset=offset,
+            assignment_status=assignment_status,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    # Enrich queue items with contribution and target item details
+    items = []
+    for queue_item in queue_items:
+        contribution = queue_item.contribution
+        target_item = None
+        if contribution.target_item_cid:
+            target_result = await db.execute(
+                select(ContentItem).where(ContentItem.cid == contribution.target_item_cid)
+            )
+            target_item = target_result.scalar_one_or_none()
+
+        items.append(
+            ReviewQueueItemWithContribution(
+                contribution=ContributionResponse.from_orm(contribution),
+                target_item=ContentItemResponse.from_orm(target_item) if target_item else None,
+                review_status="pending" if not queue_item.decided_at else "reviewed",
+                assigned_at=queue_item.assigned_at,
+            )
+        )
+
+    return ReviewQueueListResponse(
+        items=items,
+        total=total,
+        limit=limit,
+        offset=offset,
+        has_more=(offset + limit) < total,
+    )
+
+
+@router.post("/api/contributions/{contribution_id}/review", response_model=ReviewDecisionResponse)
+async def submit_review_decision(
+    contribution_id: int,
+    request: ReviewDecision,
+    db: AsyncSession = Depends(get_db),
+    reviewer_id: str = "admin@example.com",  # In production, from auth
+):
+    """Reviewer submits a review decision (approve, reject, or revision-requested)."""
+    try:
+        result = await ReviewService.submit_review_decision(
+            db=db,
+            contribution_id=contribution_id,
+            reviewer_id=reviewer_id,
+            decision=request.decision,
+            reviewer_notes=request.reviewer_notes,
+            revision_requests=request.revision_requests,
+        )
+    except ValueError as e:
+        if "not found" in str(e):
+            raise HTTPException(status_code=404, detail=str(e))
+        raise HTTPException(status_code=409, detail=str(e))
+
+    return ReviewDecisionResponse(
+        id=contribution_id,
+        review_status=result["review_status"],
+        feedback_submitted=result["feedback_submitted"],
+        total_feedback_count=result["total_feedback_count"],
+        consensus_reached=result["consensus_reached"],
+        final_state=result["final_state"],
+    )
+
+
+@router.post("/api/contributions/{contribution_id}/review/{review_decision}")
+async def quick_review_decision(
+    contribution_id: int,
+    review_decision: str,
+    db: AsyncSession = Depends(get_db),
+    reviewer_id: str = "admin@example.com",
+):
+    """Quick endpoint for simple approve/reject decisions."""
+    if review_decision not in ["approve", "reject", "recuse"]:
+        raise HTTPException(
+            status_code=400,
+            detail="review_decision must be 'approve', 'reject', or 'recuse'",
+        )
+
+    try:
+        if review_decision == "recuse":
+            # Handle recusal by updating queue item
+            queue_result = await db.execute(
+                select(ReviewerQueueItem).where(
+                    and_(
+                        ReviewerQueueItem.contribution_id == contribution_id,
+                        ReviewerQueueItem.reviewer_id == reviewer_id,
+                    )
+                )
+            )
+            queue_item = queue_result.scalar_one_or_none()
+            if queue_item:
+                queue_item.decision = "recuse"
+                db.add(queue_item)
+                await db.commit()
+            return {"status": "recused"}
+
+        result = await ReviewService.submit_review_decision(
+            db=db,
+            contribution_id=contribution_id,
+            reviewer_id=reviewer_id,
+            decision=review_decision,
+        )
+    except ValueError as e:
+        if "not found" in str(e):
+            raise HTTPException(status_code=404, detail=str(e))
+        raise HTTPException(status_code=409, detail=str(e))
+
+    return ReviewDecisionResponse(
+        id=contribution_id,
+        review_status=result["review_status"],
+        feedback_submitted=result["feedback_submitted"],
+        total_feedback_count=result["total_feedback_count"],
+        consensus_reached=result["consensus_reached"],
+        final_state=result["final_state"],
+    )
+
+
+@router.get("/api/contributions/{contribution_id}/review-history", response_model=list[ReviewHistoryItemResponse])
+async def get_review_history(
+    contribution_id: int,
+    db: AsyncSession = Depends(get_db),
+):
+    """Get all reviewer feedback for a contribution (audit trail)."""
+    contribution = await ContributionService.get_contribution(db, contribution_id)
+    if not contribution:
+        raise HTTPException(status_code=404, detail="Contribution not found")
+
+    feedback_items = await ReviewService.get_review_history(db, contribution_id)
+    return [ReviewHistoryItemResponse.from_orm(f) for f in feedback_items]
+
+
+# ============================================================================
+# Phase 3: Contribution Resolution API
+# ============================================================================
+
+
+@router.post("/api/contributions/{contribution_id}/finalize", response_model=FinalizeDecisionResponse)
+async def finalize_contribution(
+    contribution_id: int,
+    request: FinalizeDecisionRequest,
+    db: AsyncSession = Depends(get_db),
+    admin_id: str = "admin@example.com",
+):
+    """Admin endpoint to finalize a contribution (transition to approved/rejected).
+
+    For approved new_item: creates new ContentItem.
+    For approved edit_item: merges changes into existing item.
+    """
+    contribution = await ContributionService.get_contribution(db, contribution_id)
+    if not contribution:
+        raise HTTPException(status_code=404, detail="Contribution not found")
+
+    if request.final_decision == "approved":
+        if contribution.contribution_type == "new_item":
+            # Create new ContentItem
+            new_item = ContentItem(
+                cid=contribution.proposed_cid,
+                title=contribution.item_data.get("title", {}).get("en", ""),
+                item_type=contribution.item_data.get("type", "procedure"),
+                domain=contribution.item_data.get("domain", ""),
+                license=contribution.item_data.get("license", ""),
+                content_jsonld=contribution.item_data,
+            )
+            db.add(new_item)
+
+        elif contribution.contribution_type == "edit_item":
+            # Update existing ContentItem
+            target_item = await db.execute(
+                select(ContentItem).where(ContentItem.cid == contribution.target_item_cid)
+            )
+            item = target_item.scalar_one_or_none()
+            if item:
+                # Merge changes
+                for key, value in contribution.item_data.items():
+                    if key not in ["cid", "id"]:
+                        setattr(item, key, value) if hasattr(item, key) else None
+
+                # Update JSON-LD
+                updated_jsonld = item.content_jsonld.copy() if isinstance(item.content_jsonld, dict) else {}
+                updated_jsonld.update(contribution.item_data)
+                item.content_jsonld = updated_jsonld
+                item.updated_at = datetime.utcnow()
+                db.add(item)
+
+        # Update contribution status
+        await ContributionService.update_contribution_status(
+            db, contribution_id, "approved", reviewer_notes=request.reason
+        )
+
+        await db.commit()
+
+        return FinalizeDecisionResponse(
+            id=contribution_id,
+            state="approved",
+            review_decision_reason=request.reason,
+            reviewed_at=datetime.utcnow(),
+            reviewed_by=admin_id,
+            published_item_cid=contribution.proposed_cid if contribution.contribution_type == "new_item" else contribution.target_item_cid,
+        )
+
+    elif request.final_decision == "rejected":
+        await ContributionService.update_contribution_status(
+            db, contribution_id, "rejected", reviewer_notes=request.reason
+        )
+        await db.commit()
+
+        return FinalizeDecisionResponse(
+            id=contribution_id,
+            state="rejected",
+            review_decision_reason=request.reason,
+            reviewed_at=datetime.utcnow(),
+            reviewed_by=admin_id,
+        )
+
+    raise HTTPException(status_code=400, detail="final_decision must be 'approved' or 'rejected'")
+
+
+@router.post("/api/contributions/{contribution_id}/request-revision", response_model=RequestRevisionResponse)
+async def request_revision(
+    contribution_id: int,
+    request: RequestRevisionRequest,
+    db: AsyncSession = Depends(get_db),
+):
+    """Request revision from contributor."""
+    contribution = await ContributionService.get_contribution(db, contribution_id)
+    if not contribution:
+        raise HTTPException(status_code=404, detail="Contribution not found")
+
+    try:
+        updated = await ReviewService.request_revision(
+            db=db,
+            contribution_id=contribution_id,
+            revision_requests=[r.dict() for r in request.revision_requests],
+            deadline_days=request.deadline_days,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+
+    from datetime import timedelta
+    revision_deadline = updated.updated_at + timedelta(days=request.deadline_days)
+
+    return RequestRevisionResponse(
+        id=contribution_id,
+        state="revision_requested",
+        revision_deadline=revision_deadline,
+        revision_requests=request.revision_requests,
+    )
+
+
+# ============================================================================
+# Phase 3: Contributor Stats API
+# ============================================================================
+
+
+@router.get("/api/contributors/{user_id}/stats", response_model=ContributorStatsResponse)
+async def get_contributor_stats(
+    user_id: str,
+    db: AsyncSession = Depends(get_db),
+):
+    """Get contributor reputation and statistics."""
+    stats = await ContributorStatsService.get_contributor_stats(db, user_id)
+    return ContributorStatsResponse(**stats)
