@@ -4,24 +4,24 @@
 
 ---
 
-## Since Last Check-in (Session 418 — 2026-04-26)
+## Since Last Check-in (Session 419 — 2026-04-26)
 
 **Completed**:
-1. **resistance-research**: May Day Action Guide published to GitHub Gist (public, fully formatted, zero auth required). URL: https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4. Five days to distribute via organizer channels, email, Mastodon, coalition partners.
-2. **stockbot**: Paper trading NOW LIVE. Session 33a4afe676cae12a (AAPL_h10_lgbm_ho stacker) active, running, first cycle completed. Trades will accumulate starting Monday when market opens. Ensemble infrastructure complete (stacker signal pipeline wired). Backtest results: 8/16 stackers successful, Sharpe 1.24, win-rate 100%, return +17.1%. Tests: 98 passed. Commit: `652d85e`.
+1. **resistance-research**: April 28 Xinis hearing monitoring framework complete. Quick-fill outcome template (9 questions, 10-min evening fill) + April 29 analysis pass template ready. Litigation tracker updated with two missing entries (Texas SB 4 5th Circuit ruling, CBP One parole restoration). All four pre-hearing monitoring files ready. Commit: `8c527bf`.
+2. **cybersecurity-hardening**: Phase 2 OSINT/data broker deepening COMPLETE. New research document `osint-data-broker-deepening.md` (~2,400 words). `implementation-guide.md` Part 0 expanded (GPC signal, California DROP platform, automation services refined). `threat-model.md` updated (Montana SB 282, National Public Data breach, Venntel/Babel Street entries expanded, ICE MAID RFI escalation). Key finding: ICE MAID RFI (Jan 2026) is most significant new threat vector — ad tech procurement outside Carpenter scope, only addressable by platform countermeasures in Parts 1-3. Three-document corpus now deepened and publication-ready.
 
 **In Progress**:
-- resistance-research: Live monitoring begins 2026-04-28 (Xinis hearing). User distribution of guide needed.
-- stockbot: Monitoring live trading accumulation (Monday-Friday). Jetson deployment next (SSH + systemd).
-- open-repo: Phase 3 routes (38 story points, pending)
-- off-grid-living: Quality review pass or publish-ready formatting (16 domains complete)
+- resistance-research: Live monitoring 2026-04-28 Xinis hearing (ready for evening quick-fill).
+- stockbot: Paper trading accumulating (market opens Monday). Jetson deployment preparation (after P&L review).
+- open-repo: Phase 3 routes (38 story points, pending).
+- off-grid-living: Quality review/formatting pass (16 domains complete).
 
 **Needs Your Input**:
-- **resistance-research**: Publish May Day guide to your organizing channels (Slack, Signal, email list, Mastodon). Gist URL ready to share. Frame as legal/analytical companion to coalition guides (Indivisible, NEA, DSA).
-- **cybersecurity-hardening**: Publication approach — proceed with OSINT/data broker deepening before publishing, or publish as-is? (Publication prep is complete.)
-- **stockbot**: After Monday's market open, review paper trading P&L snapshot. Should I proceed with Jetson deployment, or wait for more live data?
+- **resistance-research**: Distribute May Day Action Guide Gist link to organizing channels (Slack, Signal, email, Mastodon). Frame as legal/analytical companion to coalition guides (Indivisible, NEA, DSA). Five days to May 1.
+- **cybersecurity-hardening**: Publication approach — proceed now, or continue deepening before publication? Three-document corpus is deepened, sourced, and production-ready. (OSINT deepening complete; can publish immediately or stage further research.)
+- **stockbot**: After Monday market open, review paper trading P&L. Proceed with Jetson deployment or wait for more data? (Backtest: Sharpe 1.24, 100% win-rate, +17.1% return; tests 98 passed.)
 
-**Usage**: Calibrated token limits — Sonnet 8,935,000 (15% of week consumed), All 15,114,000 (15%). No throttling.
+**Usage**: Calibrated token limits — Sonnet 8,935,000 (17% of week consumed), All 15,114,000 (17%). No throttling.
 
 ---
 

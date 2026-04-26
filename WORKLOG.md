@@ -4,6 +4,42 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — Session 419 — Parallel 2-agent execution: resistance-research monitoring setup + cybersecurity-hardening OSINT deepening
+
+### resistance-research — April 28 Xinis Hearing Monitoring Framework Complete
+
+**What was added:**
+- `monitoring/2026-04-28-results.md` — Quick-fill outcome table (9 key questions answerable in 10 min on April 28 evening) + April 29 analysis pass template with structured questions
+- `litigation-tracker-2026.md` — Two missing case entries added: (1) Texas SB 4 5th Circuit en banc (April 24, 10-7 ruling on standing, clearing SB 4 enforcement), (2) CBP One parole restoration (Judge Burroughs, April 1, largest single immigration status restoration ruling of current period — 900,000 people)
+- All four pre-hearing monitoring files ready (2026-04-28-prep.md, pre-brief.md, watch-brief.md, baseline results.md)
+
+**Commit**: `8c527bf`
+
+**Ready for**: April 28 evening quick-fill, April 29 analysis pass, Fourth Circuit emergency stay watch.
+
+---
+
+### cybersecurity-hardening — Phase 2 OSINT/Data Broker Deepening COMPLETE
+
+**What was added:**
+- `osint-data-broker-deepening.md` (new, ~2,400 words) — Comprehensive research on data broker landscape 2026, opt-out mechanics, legal/regulatory angles, automation services evaluation
+- `implementation-guide.md` Part 0 expanded:
+  - Global Privacy Control browser signal (2-min setup, legal opt-out in 12 states)
+  - California DELETE Act DROP platform (live Jan 1, 2026, single request covers all registered CA brokers)
+  - Automation services expanded: Incogni (top choice), DeleteMe corrected, Privacy Bee added
+- `threat-model.md` updated:
+  - Section II.A: Montana SB 282 (first state warrant requirement for data purchases, Oct 2025) + National Public Data 2.9B breach details
+  - Section II.B: Venntel expanded (17TB Gravy Analytics breach, FTC Jan 2025 order); Babel Street expanded (FBI $27M Locate X contract, no opt-out exists)
+  - Section II.C: ICE MAID RFI escalation paragraph (formal ad tech procurement for MAID-linked location data, outside Carpenter scope, only addressable by platform countermeasures in Parts 1-3)
+
+**Key finding**: ICE January 2026 MAID RFI is the most significant new threat vector not previously captured — ad tech data procurement that no data broker opt-out can address. Routed readers toward GrapheneOS/platform countermeasures in Parts 1-3.
+
+**Regulatory landscape**: Gains are real (California DROP, Montana SB 282, FTC enforcement, CCPA penalties up to $2.75M) but structurally lag surveillance build-up by 18-24 months and do not constrain federal agencies. DROP platform + GPC signal are highest-leverage new tools; MAID RFI is highest-leverage new threat.
+
+**Status**: Three-document corpus (threat-model + opsec-playbook + implementation-guide) is now deepened and publication-ready. All sourcing verified for 2026 currency. Awaits user decision on publication approach (publish as-is vs. staged rollout with continued deepening).
+
+---
+
 ## 2026-04-26 — resistance-research — May Day Action Guide published to GitHub Gist
 
 Published to: https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4
@@ -45,6 +81,16 @@ Wrote full `implementation-guide.md` (~5,500 words): 8-part executable walkthrou
 Verification steps embedded in every section. Troubleshooting included for all high-failure-rate steps (USB cable issues, OEM unlock grayed out, Tor blocked on network, passphrase errors). All tool versions and URLs verified against current official sources as of April 2026. Three-document cybersecurity corpus (threat-model.md + opsec-playbook.md + implementation-guide.md) is now complete.
 
 **File**: `projects/cybersecurity-hardening/implementation-guide.md`
+
+---
+
+## 2026-04-26 — cybersecurity-hardening — Phase 2 OSINT/Data Broker Deepening complete
+
+Research document written covering: (1) Data broker landscape 2026 — four functional tiers with differentiated threat profiles; (2) ICE January 2026 MAID/ad tech RFI — the most significant emerging threat not previously covered, exposes limits of opt-out as a countermeasure; (3) California Delete Act DROP platform live January 1 2026 — single-request deletion cascading to all registered brokers, most important development for California residents; (4) Montana SB 282 — first state to close law enforcement data broker warrant loophole (effective October 2025, federal agencies not covered); (5) FTC final orders against Gravy Analytics/Venntel and Mobilewalla (January 2025) — meaningful but non-retroactive; (6) Gravy Analytics 17TB breach (January 2025); (7) National Public Data 2.9B record breach and $46k fine accountability gap; (8) Automated opt-out tool evaluation — Incogni now strongest independent-verified recommendation (Deloitte audit, PCMag Choice); DeleteMe 750-broker claim corrected to ~100 active removals.
+
+Applied edits directly to parent documents: implementation-guide.md (GPC browser signal step added, California DROP platform added, Step 0.3 automation services corrected and expanded with Incogni); threat-model.md (Montana SB 282 and NPD breach added to legal framework section, Venntel entry expanded with breach details and FTC final order, Babel Street law enforcement contract details added, MAID RFI escalation paragraph added to ad tech section).
+
+**Files**: `projects/cybersecurity-hardening/osint-data-broker-deepening.md` (research + gap analysis + proposed edits), `implementation-guide.md` (edits applied), `threat-model.md` (edits applied)
 
 ---
 
