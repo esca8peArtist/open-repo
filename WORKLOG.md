@@ -4,6 +4,37 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 afternoon — Session 426 — Phase 4 Federation Specification Complete (open-repo)
+
+### open-repo — Phase 4 Architecture Design COMPLETE
+
+**Task**: Plan Phase 4 scope and architecture following completion of Phase 3 (commit 7351680, 81/81 tests).
+
+**Deliverable**: `PHASE_4_DESIGN.md` (550 lines, comprehensive specification)
+
+**Content**:
+- **Executive summary**: Phase 4 proves the distributed architecture by deploying a second node that federates with the first.
+- **Success criteria**: Two nodes syncing content + endorsements, conflict resolution working, 95%+ test coverage.
+- **Architecture**: ActivityPub protocol (W3C spec), HTTP signature verification (RFC 8017), multi-node federation, DID:WEB integration (optional), federation registry (optional).
+- **Implementation roadmap**: 5 waves across 3–4 months, 2–3 FTE, 400–500 story points:
+  - Wave 1 (Weeks 1–2): ActivityPub endpoints + HTTP signatures (20+ unit tests)
+  - Wave 2 (Weeks 2–3): Federation bootstrap + content propagation (15+ integration tests)
+  - Wave 3 (Week 3): Endorsement sync (10+ tests)
+  - Wave 4 (Week 4): Conflict resolution + versioning (10+ tests)
+  - Wave 5 (Weeks 4–5): Deployment + end-to-end testing on two nodes (15+ e2e tests)
+- **Testing strategy**: 30 unit + 20 integration + 15+ end-to-end tests, performance benchmarks.
+- **Known risks**: ActivityPub spec complexity, signature verification bugs, activity delivery failures, conflict explosion — all mitigated in spec.
+- **Out of scope**: Kiwix/offline (Phase 5), governance, open federation, blockchain consensus, advanced DID, GraphQL.
+
+**Alignment notes**:
+- Resolves discrepancy in prior CHECKIN.md ("Phase 4 = UI + forms") — architecture reveals Phase 4 is Federation.
+- Synthesizes architecture-notes.md + mvp-protocol-design.md into executable spec (Phases 1–3 were Weeks 1–5; Phases 4–5 are Weeks 6–12 of MVP build).
+- Phase 4 is the architectural proof; Phase 5 (Kiwix) deferred until federation MVP complete.
+
+**Status**: Ready for Phase 4 Wave 1 implementation when user prioritizes.
+
+---
+
 ## 2026-04-26 evening — Session 424 — Parallel 3-agent validation: Monday readiness confirmed (resistance-research + stockbot infrastructure + cybersecurity-hardening publication)
 
 ### resistance-research — Monday 2026-04-28 Data Capture Readiness VERIFIED
