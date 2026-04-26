@@ -65,12 +65,22 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — **PHASE 1 PRE-LAUNCH VALIDATION COMPLETE** (Session 462), launch Monday 2026-04-28 21:00 UTC, all systems GO
+**Status**: Active — Phase 1 launched, Phase 2 live, **Phase 3 underway**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 462 (2026-04-26): **PRE-LAUNCH VALIDATION COMPLETE**. Comprehensive validation passed (commit 8ffb45f): (1) GitHub Gist verified publicly accessible and correct (May Day Action Guide), (2) PHASE1_LAUNCH_CHECKLIST.md verified complete with 7-section operational plan, (3) All 3 monitoring templates tested end-to-end with mock data and field-ready, (4) UTC/EDT mapping verified across all 6 Phase 1 deadlines (April 28 21:00 UTC = 5 PM EDT, April 29 23:30 UTC = 7:30 PM EDT, etc.), (5) `MONDAY_LAUNCH_READINESS.md` created documenting Gist status, template verification, timezone mapping, fallback procedures (Gist source file at mayday-2026-action-guide.md, re-publishable in <3 min), and monitoring checklist. Non-blocking open items: optional distribution channels (Discord, Slack, Signal, email, Twitter/X) can be confirmed in hours before 21:00 UTC launch; CourtListener is viable substitute if PACER account unavailable. **Status**: Production-ready. Launch Monday 21:00 UTC confirmed.
+**Current focus**: Phase 1 (monitoring) and Phase 2 (litigation tracking) complete. **Phase 3 priorities — work these in order:**
+
+1. **Priority documents** — write these as standalone distributable files:
+   - `first-amendment-suppression.md` — press crackdowns, protest restrictions, platform deplatforming, SLAPP suits; current cases and legal landscape
+   - `environmental-rollbacks-tracker.md` — specific rule reversals (EPA, clean water, endangered species, climate); agency by agency, date by date
+   - `police-brutality-consent-decree-tracker.md` — expand existing `consent-decree-defiance-tracker.md`; which cities, which decrees, what's being defied and what the consequences are
+
+2. **Format the democratic renewal proposal for distribution** — take `democratic-renewal-proposal.md` and produce: (a) a 2-page executive summary, (b) a formatted PDF suitable for sharing, (c) a `published/` README linking all documents
+
+3. **Distribution setup** — create a Substack draft structure (free tier, no account needed from orchestrator — draft the content and post format so user can publish). Identify 5 subreddits (r/law, r/politics, r/Keep_Track, r/Ask_Politics, r/democracy) and draft intro posts linking to the Gist and proposal. Draft a contact email template for ACLU, EFF, and Indivisible chapters.
+
 **Blocked on**: —
-**Notes**: Phase 1 (monitoring) and Phase 2 (litigation tracking) both COMPLETE and production-ready. All templates field-ready. Gist is confirmed working distribution channel. Optional channels can be added pre-launch. High confidence across monitoring framework, templates, timeline, and data capture flow. Launch readiness VERIFIED Saturday evening.
+**Notes**: ICE/immigration content is already deep (algorithmic-decision-making-immigration.md, corporate-accountability-ice-contractors.md, consent-decree-defiance-tracker.md, organizations-anti-ice-social-justice.md). Police brutality, First Amendment, and environmental rollbacks are the current gaps. Litigation tracking is most useful as a public resource if kept current and distributed through existing high-traffic communities rather than built as a standalone platform. Phase 3 goal = turning research into distributable public documents.
 
 ---
 
@@ -89,12 +99,27 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — **MONDAY MARKET OPEN READINESS VERIFIED** (Session 439), all systems green, P&L pipeline confirmed, zero blockers
+**Status**: Active — paper trading live, **pre-live-trading hardening underway**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Session 439 (2026-04-26): **MONDAY READINESS VERIFICATION COMPLETE**. Paper trading session `33a4afe676cae12a` (AAPL_h10_lgbm_ho stacker) LIVE and healthy. P&L data pipeline verified: trades/performance_metrics/model_runs tables correct, database baseline clean (0 trades in stockbot.db), equity curve algorithm validated. Jetson sync confirmed (all code files match dev exactly, 5 sessions cycling correctly, market_open flags false). **22/22 Monday readiness tests PASS**. Dashboard API ready to capture P&L beginning 2026-04-28 14:30 UTC market open. `MONDAY_READINESS.md` created with monitoring commands and fallback procedures. **Status**: Ready for live P&L capture Monday. No rebuild/restart needed. Paper trading will auto-cycle and capture trades/P&L for the week.
+**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker, session `33a4afe676cae12a`). Model graduation criteria framework complete (`model-graduation-criteria.md`). **Next tasks — work these in order:**
+
+1. **Live trading guardrails** — implement before live trading is even considered. Write as `live-trading-guardrails.md` spec + implement in code:
+   - Hard margin ban: cash-only account mode, never allow orders exceeding cash buying power
+   - Max position size: no single position >15% of account balance
+   - Max concurrent open positions: cap at N (determine appropriate number)
+   - Daily loss kill switch: halt all new orders if account drops >X% intraday (user to approve threshold)
+   - No short selling, no leveraged ETFs (2×/3× instruments banned)
+   - Emergency halt command that closes all positions immediately
+
+2. **Multi-strategy conflict resolution** — investigate and fix the issue where concurrent strategies cause Alpaca order conflicts (likely competing orders on same ticker, position double-counting, or rate limit collisions). Implement a shared position manager or strategy isolation layer.
+
+3. **Strategy optimization** — once conflicts resolved, run backtests to evaluate which strategies perform best; eliminate underperformers; document findings in `strategy-evaluation.md`
+
+4. **Live trading readiness checklist** — when paper trading shows consistent positive performance (per graduation criteria), produce a checklist of what the user needs to do: switch Alpaca API keys to funded live account, verify cash account type set (no margin), confirm guardrails active, set initial funding amount
+
 **Blocked on**: —
-**Notes**: Monday market open at ~14:30 UTC on 2026-04-28. System is production-ready. P&L data will flow automatically. Next phase: monitor live P&L accumulation week-by-week, evaluate stacker performance against baseline metrics, prepare for escalation to live trading once paper trading demonstrates stable positive returns.
+**Notes**: User live trading criteria: strategies must open AND close positions autonomously with UI matching Alpaca exactly. Paper-to-live switch is just credential swap + URL change — but guardrails must be in place first. Initial live account will be funded with a very small amount to verify everything works. Margin is explicitly banned. Leveraged ETFs and short selling are explicitly banned.
 
 ---
 
@@ -113,12 +138,24 @@
 ### seedwarden
 **Goal**: Build a profitable Etsy store and digital brand focused on farming, homesteading, and survival-related digital products, with the ability to expand into physical small products and seed packets. The business needs a full foundation: high-quality digital products that genuinely help people, a consistent social media presence across relevant platforms, and a reputation for real value. The goal is profit and a loyal customer base — not just a store. Grow the business systematically, identify what sells, double down on winners, and build a media presence that drives traffic organically.
 **Priority**: Medium
-**Status**: Active — **UPLOAD VALIDATION COMPLETE** (Session 462), 3 tag corrections required before Monday upload
+**Status**: Active — Phase 1 upload pending user tag corrections; native plants guide on hold for image rebuild
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: Session 462 (2026-04-26): **PHASE 1 UPLOAD VALIDATION COMPLETE**. All assets verified production-ready: PDFs (682–754 KB), mockups (2400×2400 px PNG, 342–389 KB all compliant), titles/descriptions (3-point compliance check passed), keywords (properly front-loaded). `UPLOAD_READY_CHECKLIST.md` created documenting: ✓ all 6 PDFs present, ✓ all 21 mockups 2400×2400 px PNG (342–389 KB), ✓ titles/descriptions Etsy-compliant, ✓ previously corrected tag sets validated. **3 CRITICAL TAG CORRECTIONS REQUIRED** (documented in UPLOAD_READY_CHECKLIST.md Section 4): (1) **Companion Planting Chart** (critical—listing #1, Monday upload): No corrected tag set exists; original has 10 of 12 tags >20 chars; full replacement set of 13 compliant tags in checklist, (2) **Survival Garden Regional Plans**: "self sufficient garden" is 22 chars → replace with "self-sufficient" (15 chars), (3) **Zone-by-Zone Seed Starting Calendar**: "veggie planting guide" is 21 chars → replace with "veggie plant guide" (18 chars). **Visual flag**: Zone calendar mockup shows "$18 (Complete Bundle)" but individual listing priced $8 — verify before using this mockup. **3 MANUAL ACTIONS REQUIRED**: (1) Apply tag corrections from checklist before upload, (2) Verify Etsy seller account active + Etsy Payments connected, (3) Pre-schedule Day 3 social media announcement. **Status**: Ready for Monday upload after tag corrections (1.5–2 hrs estimated upload time across 3 days).
-**Blocked on**: Manual user actions (tag corrections, Etsy account verification, social media pre-scheduling)
-**Notes**: All product assets production-ready. Tag corrections are straightforward copy-paste operations with exact replacement sets provided. The zone-calendar mockup price badge discrepancy is a documentation issue, not a product issue — verify the badge matches the individual listing price. Phase 1 launch unblocked pending 3 manual actions. Phase 2-4 enhancements (phone mockups, lifestyle photography, printed page mockups) optional based on Phase 1 conversion data.
+**Current focus**: **Two parallel tracks:**
+
+**Track A — Phase 1 launch (blocked on user)**: 3 tag corrections and Etsy account verification required before upload (documented in `UPLOAD_READY_CHECKLIST.md`). Once user completes those, the 8 text-heavy products below are ready to list immediately. Do NOT hold up these products waiting on the native plants guide.
+
+**Phase 1 products ready to launch** (text-heavy, no photo dependency):
+- Companion Planting Chart, Zone-by-Zone Seed Starting Calendar, Seed Saving Field Manual, Survival Garden Regional Plans, Apartment Seed Starting Kit, Container Growing Blueprint Pack, Food Sovereignty Starter Guide, 12-Month Urban Growing Planner
+
+**Track B — Native plants guide image rebuild** (orchestrator can work this now): The current native-plants-regional-guide.pdf uses web-scraped photos that are unreliable for plant identification — wrong subjects, partial views, non-plant content in frame. **Rebuild the image pipeline:**
+1. Source replacement images from USDA PLANTS Database (plants.usda.gov) and Wikimedia Commons botanical illustrations — both public domain, specifically designed for plant ID, show full plant with clear identification features
+2. For each species in the guide, find a USDA or Wikimedia image showing: (a) whole plant habit, (b) key identifying features (leaf shape, flower, fruit/seed if applicable)
+3. Update `scripts/main.py` image sourcing logic to pull from curated URLs rather than generic web search
+4. Regenerate the PDF and verify quality before adding to Phase 1 upload queue
+
+**Blocked on**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
+**Notes**: User reviewed deliverables and found formatting issues in some PDFs and unreliable photos in native plants guide. Text-heavy products are solid and can launch. Native plants guide needs image rebuild — use authoritative botanical sources (USDA, Wikimedia) not web scraping. Phases 2–4 (phone mockups, lifestyle photography, printed page mockups) to be evaluated after Phase 1 conversion data is in.
 
 ---
 
@@ -137,12 +174,23 @@
 ### off-grid-living
 **Goal**: A comprehensive plan for off-grid, sustainable living. Define full plans for construction, implementation, operation, maintenance, and repair. Cover the complete operational architecture: food production, shelter, medicine, electricity generation, food preparation and storage, water, and general survival necessities. Include disaster scenarios up to and including nuclear disaster. Also cover community building, organization, and mutual support.
 **Priority**: Medium
-**Status**: Active — quality review COMPLETE, awaiting publication decision
-**Visibility**: Private — local only, no GitHub push
+**Status**: Active — **publication prep underway** (user approved GitHub + social media distribution)
+**Visibility**: Public — publish to a new public GitHub repo; do NOT push to SuperClaude-Org
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: Session 425: **Quality Review COMPLETE** (8.5/10 quality score). All 16 domain files (1,310 KB total) verified: zero TODOs, all acronyms defined, consistent formatting, accurate cross-references. **5 issues found and fixed** (commit `de5ccb3`): (1) 08-medical-health.md YAML front matter missing cross-refs field (added), (2) 14-finances-trade.md YAML header completely missing (added + standardized heading format), (3) 07-heating-cooling.md cross-ref `02-shelter-construction` → `11-shelter-construction`, (4) 10-tools-fabrication.md two cross-ref fixes (front matter + body), (5) 12-communications.md cross-ref `13-community-governance` → `13-community-organization`. All cross-references now valid. Project is now publication-ready. **Next**: User decision to publish or hold pending further additions.
+**Current focus**: User has approved publishing. **Work these tasks in order:**
+
+1. **Fix file numbering** — there is no `02-` file (shelter is at `11-shelter-construction.md`, leaving a gap), and there are two `12-` files (`12-communications.md` and `12-security-defense.md`). Renumber consistently: make security `12`, renumber remaining files so there are no gaps or duplicates. Update all internal cross-references to match.
+
+2. **Write a README.md** — serves as the index and entry point for the GitHub repo. Include: what the guide is, how it's organized (table of contents linking each domain file), how to use it, contributing notes, and license (suggest CC BY-SA 4.0 for a public knowledge resource).
+
+3. **Deepen nuclear/radiological content** — `15-disaster-scenarios.md` covers nuclear but is likely thin. Expand with: fallout shelter construction standards (FEMA guidelines), potassium iodide protocols (dosing, timing, sourcing), contamination detection (Geiger counters, dosimeters), decontamination procedures, long-term food/water storage under fallout, community triage and casualty management. This is explicitly in scope per the goal.
+
+4. **Publish to GitHub** — create a new public repo (name suggestion: `off-grid-living-guide`) under the user's personal GitHub account. Push all 16 domain files + README. Note: this is NOT the SuperClaude-Org — use the user's personal account (esca8peArtist or equivalent).
+
+5. **Draft social media post set** — write a Reddit post for r/offgrid, r/preppers, and r/homesteading (slightly different angle for each), plus a short X/Twitter thread (5–7 tweets) linking to the repo. Save as `social-media-launch-posts.md` in `projects/off-grid-living/`.
+
 **Blocked on**: —
-**Notes**: This is a planning and research project, not a software build. Practical and actionable plans over theory. Include real costs, sourcing, and skill requirements where possible. Nuclear disaster scenario is in scope — treat it seriously.
+**Notes**: Distribution plan: GitHub repo first (primary reference), then Reddit (r/offgrid, r/preppers, r/homesteading), X/Twitter teasers with link. Instagram and TikTok require separate visual/video production — defer until GitHub traction is established. CC BY-SA 4.0 license recommended (allows sharing and remixing with attribution).
 
 ---
 
@@ -194,11 +242,19 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ~~**Palantir and government surveillance infrastructure**~~ — **Done** (Session 484: `palantir-threat-model.md` complete — Gotham/Foundry/AIP architecture, confirmed federal contracts (ICE/ELITE/ImmigrationOS, CBP/AFI, FBI, NSA, DHS), data sources, entity resolution methodology, real-world implications, capability gaps)
 
-- **off-grid-living: nuclear and radiological preparedness** — the goal explicitly includes nuclear disaster scenarios. Current content is thin here. Research: fallout shelter construction standards, potassium iodide protocols, contamination detection, decontamination procedures, long-term food/water storage under fallout conditions, and community triage. Write to `projects/off-grid-living/` as a new domain file.
+- ~~**off-grid-living: nuclear and radiological preparedness**~~ — moved to project Current focus (Step 3 of publication prep)
 
 - ~~**Stockbot: model evaluation framework**~~ — **Done** (Session 484: `model-graduation-criteria.md` complete — four-gate framework for paper-to-live graduation: statistical sufficiency, performance quality, robustness validation, operational readiness)
 
 - ~~**resistance-research: post-launch Phase 2 prep**~~ — **Done** (Phase 2 litigation tracking COMPLETE and production-ready per Session 462)
+
+- ~~**Resistance-research: Phase 3 research roadmap**~~ — moved to project Current focus (Phase 3 priority documents + proposal formatting + distribution setup)
+
+- ~~**Seedwarden: Phase 2-4 expansion & social media strategy**~~ — moved to project Current focus (native plants image rebuild is the priority; Phase 2-4 deferred until Phase 1 conversion data in)
+
+- **workout: nutrition and tracking companion** — comprehensive-plan.md is complete but lacks nutrition guidance and progress tracking. Add: a nutrition framework (macros by goal + equipment tier), a weekly tracking template (lifts, bodyweight, energy), and a progress milestone chart. Write to `projects/workout/nutrition-and-tracking.md`. This extends the plan without requiring user review of the existing document.
+
+- **cybersecurity-hardening: device hardening deep-dive** — the Palantir threat model is complete. Next gap: practical device hardening for iPhone and Android against government-level surveillance. Research: aeroplane mode vs. full-power-off for RF silence, locked bootloader implications, GrapheneOS vs. CalyxOS tradeoffs, iCloud vs. local backup security, location data brokers and how to opt out, and SIM swapping as an attack vector. Write to `projects/cybersecurity-hardening/device-hardening-guide.md`.
 
 ---
 
