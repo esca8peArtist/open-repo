@@ -162,6 +162,21 @@
 **Working dir**: `projects/stockbot/`
 **Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **All three strategy optimization tasks COMPLETE** (Sessions 488-489). AAPL_h10_lgbm_ho validation plan in place, monitoring script deployed, live trading readiness checklist ready. **Next**: Monitor paper trading daily, assess progress toward Gate 1 (30 trades/month), prepare live trading transition once all gates pass for 3 consecutive months.
 
+**Paper Trading Status (Session 496 — 2026-04-27, Day 2)**:
+- Paper trading started: 2026-04-26
+- Days elapsed: 1 (as of monitor run 2026-04-26 23:05 UTC)
+- DB state: 9 total trade legs across 2 strategy names:
+  - `stacker:0676c84e` — 8 smoke-test legs (pre-market verification, NOT from live signals; correctly excluded by monitor)
+  - `AAPL_h10_lgbm_ho` — 1 leg: BUY 36 AAPL @ $271.04 (live signal, position open, no SELL yet)
+- Completed round trips: 0 (open BUY, awaiting SELL signal)
+- Trades/month pace: 0.0 (insufficient data — 1 day elapsed)
+- Gate 1 (30 round trips/month): FAIL — expected at Day 1/2
+- Gate 2 (Sharpe ≥1.0, MDD ≤20%, PF ≥1.5): all FAIL except MDD (0.0%) — insufficient data
+- Gate 3 (≥63 days): FAIL — 62 days remaining
+- Monitor script: `scripts/paper_trading_monitor.py` running; daily log at `logs/paper_trading_daily.jsonl` (3 snapshots)
+- Next checkpoint: 2026-05-12 (2-week flag for Gate 1 pace feasibility review — see WORKLOG)
+- Gate 1 data milestone: 2026-05-26 (30 days after start)
+
 **Completed (Session 489)**:
 1. ✅ **Strategy Cleanup** — COMPLETE (commit ac6d574):
    - Removed SMA_50_200 and SMA_10_50 from `scripts/run_strategy_evaluation.py` catalogue
