@@ -4,38 +4,38 @@
 
 ---
 
-## Since Last Check-in (Session 422 — 2026-04-26)
+## Since Last Check-in (Session 422 — 2026-04-26 08:15)
 
-**Completed** (parallel 2-agent execution):
+**Completed** (parallel 3-agent verification):
 
-1. **resistance-research**: **Democratic Renewal Proposal EXPANDED** (5 new subsections, ~4,300 words). Added Domain 1f (mid-decade redistricting prohibition — Texas 2025 crisis, SCOTUS 6-3 stay, RCV expansion), 1g (RCV momentum and Maine backlash), 2f (Schedule Policy/Career civil service reform), 6g (post-CASA universal injunction repair), 6h (judicial term limits design). All 22 domains now have substantive text. Primary sources cited (SCOTUSblog, Cook Political, FairVote, OPM rule, NTEU litigation, Sidley analysis).
+1. **stockbot**: **Paper trading session VERIFIED LIVE** (session `33a4afe676cae12a`, AAPL_h10_lgbm_ho stacker). Confirmed: API operational on port 8000, cycling every ~60 seconds, started 2026-04-26T05:58:22Z, last cycle 2026-04-26T07:06:51Z. Zero trades (market closed Sunday). **Jetson deployment already COMPLETE** from Session 421: container healthy, `/src/` volume-mounted and synced, all 5 sessions running, no rebuild/rsync needed. Ready for Monday market open ~14:30 UTC 2026-04-28.
 
-2. **cybersecurity-hardening**: **Phase 2 OSINT Fold COMPLETE** ✅. All 4 edits applied to implementation-guide.md Part 0: (1) Step 0.1 DROP entry: Added AB 60/AB 1766 path for undocumented California residents + SECURE Data Act watch (HR 8413 preemption threat); (2) Step 0.2 opening: Added framing paragraph naming Tier A no-opt-out brokers (Venntel, Babel Street, CLEAR, Clearview, Palantir); (3) Priority 7-20 table: Added CoreLogic and Verisk rows, annotated Acxiom/Epsilon with KBA note; (4) Troubleshooting ID section: Expanded with foreign passport/ITIN/Matrícula Consular options, most-accessible paths (DROP for CA, KBA-based brokers for all). Net: Part 0 grew 28 lines (word count increase much larger due to paragraph density). File now ~1,072 lines.
+2. **resistance-research**: **May Day guide VERIFIED LIVE & PUBLISHED** at Gist URL (https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4). All monitoring templates verified present and ready for Monday: `2026-04-28-results.md` (Xinis hearing quick-fill + April 29 analysis), `2026-04-29-contingency.md` (Section 702 expires April 30, contingency scenarios), `2026-05-01-template.md` (scale summary, 7-city reporting, labor action tracking). Distribution checklist written to project WORKLOG.md — recommend broadcast Monday April 28 morning (personal/trusted shares OK now). Minor gap: no dedicated April 30 results file for Abrego Garcia 5pm deadline (April 29 contingency can absorb).
+
+3. **cybersecurity-hardening**: **Publication decision FINAL: Option A (Publish as-is)**. Trilogy verified complete: threat-model.md (440+ lines), opsec-playbook.md (10-part structure), implementation-guide.md (9,600 words). Publication materials complete: 600-word executive summary, hierarchical TOC, 40-term glossary. Key finding: AB 60/AB 1766 (highest-leverage discovery for at-risk populations) is **already integrated** in implementation-guide.md Step 0.1. Tier B/C broker additions and legal landscape can be added post-publication without blocking. Rationale: Single highest-impact finding present; incremental improvements should not delay publication for target audience urgency.
 
 **In Progress**:
-- resistance-research: May Day guide live Monday (April 28 Xinis hearing monitoring), Democratic Renewal Proposal deepening (5 new subsections added; 17 more domains ready for expansion). 
-- stockbot: Paper trading live on dev (session 33a4afe676cae12a) and Jetson (session b4e397af3a3c12a5). Monitoring P&L Monday-Friday market hours.
-- cybersecurity-hardening: Part 0 integration complete. Phase 2 research layer (standalone file) ready if user wants additional publication.
-- open-repo: Phase 3 routes (38 story points, ready to start).
-- off-grid-living: Quality review/formatting pass (16 domains complete, awaiting prioritization).
+- stockbot: Monitoring P&L Monday-Friday market hours. Dashboard API healthy, ready for live signal generation Monday.
+- resistance-research: Live monitoring infrastructure ready for April 28 Xinis hearing. April 29 Mass Call post-brief + May 1 checkpoint templates prepared.
+- cybersecurity-hardening: Publication decision finalized. Ready to publish trilogy or await user timing preferences.
+- open-repo: Phase 3 routes implementation ready (38 story points, ~58 hours, 3.5-4 weeks effort).
+- off-grid-living: All 16 domain files complete. Ready for quality review or publish-ready formatting pass.
 
 **Needs Your Input**:
-- **resistance-research**: Distribute May Day guide Gist (https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4) to channels (Bluesky priority, then Signal/Action Network/Indivisible). Message template ready. Timeline: 5 days to May 1.
-- **cybersecurity-hardening**: Publication path confirmed (fold applied). Ready to republish Part 0 with integrated findings, or hold pending additional edits?
+- **cybersecurity-hardening**: Approval to publish trilogy (threat-model + opsec-playbook + implementation-guide) or preferred timing?
+- **resistance-research** (optional): Distribute May Day guide URL to organizing channels if not already done via other means.
 
-**Usage**: Token usage nominal (under 20% of week consumed). No throttling. Next reset Tuesday 2026-04-30.
-
----
-
-### Session 420 Checkpoint (2026-04-26 07:30)
-
-Resistance-research April 28 Xinis hearing monitoring framework complete. Quick-fill outcome template + April 29 analysis pass template ready. Litigation tracker updated. Cybersecurity-hardening Phase 2 OSINT/data broker deepening complete. Implementation guide Part 0 expanded (GPC signal, DROP platform, automation services). Threat model updated (Montana SB 282, National Public Data, Venntel/Babel Street, ICE MAID RFI). Three-document corpus deepened and publication-ready. Stockbot paper trading identified as infrastructure gap (not yet started despite wiring complete).
+**Usage**: Token usage nominal. No throttling. Next reset Tuesday 2026-04-30.
 
 ---
 
 ## History
 
 <!-- Archive prior check-ins here as they accumulate -->
+
+### Session 420 Checkpoint (2026-04-26 07:30)
+
+Resistance-research April 28 Xinis hearing monitoring framework complete. Quick-fill outcome template + April 29 analysis pass template ready. Litigation tracker updated. Cybersecurity-hardening Phase 2 OSINT/data broker deepening complete. Implementation guide Part 0 expanded (GPC signal, DROP platform, automation services). Threat model updated (Montana SB 282, National Public Data, Venntel/Babel Street, ICE MAID RFI). Three-document corpus deepened and publication-ready. Stockbot paper trading identified as infrastructure gap (not yet started despite wiring complete).
 
 ### Session 420 Previous Checkpoint (2026-04-26 07:30)
 
