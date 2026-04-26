@@ -15,6 +15,38 @@ cd "$WORKSPACE"
 
 GENERATED_AT=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
 
+# ── INBOX cleanup: delete comment blocks older than 7 days ────────────────────
+python3 - "$WORKSPACE/INBOX.md" <<'PYEOF'
+import re, sys, os
+from pathlib import Path
+from datetime import datetime, timedelta, timezone
+
+inbox = Path(sys.argv[1])
+text = inbox.read_text(errors="replace")
+cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+
+def is_old_comment(block):
+    # Try to find a date in the comment header line: <!-- Processed YYYY-MM-DD ... -->
+    m = re.search(r'(\d{4}-\d{2}-\d{2})', block.split('\n')[0])
+    if not m:
+        return False
+    try:
+        d = datetime.fromisoformat(m.group(1)).replace(tzinfo=timezone.utc)
+        return d < cutoff
+    except ValueError:
+        return False
+
+# Remove comment blocks that are old enough to delete
+cleaned = re.sub(r'<!--.*?-->', lambda m: '' if is_old_comment(m.group(0)) else m.group(0), text, flags=re.DOTALL)
+
+if cleaned != text:
+    tmp = inbox.with_suffix(".tmp")
+    tmp.write_text(cleaned)
+    os.replace(tmp, inbox)
+    removed = text.count('<!--') - cleaned.count('<!--')
+    print(f"[INBOX cleanup] Removed {removed} comment block(s) older than 7 days.")
+PYEOF
+
 # ── Usage check one-liner ──────────────────────────────────────────────────────
 USAGE_LINE=$(python3 "$SCRIPTS/usage-check.py" --checkin 2>/dev/null || echo "⚠️ usage-check unavailable")
 

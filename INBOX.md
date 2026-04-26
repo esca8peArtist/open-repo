@@ -17,14 +17,9 @@
 - [2026-04-25 19:54] Pause open-source-rideshare → Status set to Paused in PROJECTS.md, moved to bottom of priority order
 -->
 
-<!-- Processed 2026-04-14 Session 106:
-- [15:56] Discord bot showing same status info → investigated and answered in CHECKIN.md
--->
 
-<!-- Processed 2026-04-13 Session 99:
-- [17:39] Jetson/paper trading status → answered in CHECKIN.md
-- [17:38] Python 3.12 install → answered in CHECKIN.md (no longer needed; stockbot running on 3.11)
--->
+
+
 
 ---
 
