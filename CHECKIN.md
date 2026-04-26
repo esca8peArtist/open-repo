@@ -6,9 +6,14 @@
 
 ## Since Last Check-in (Session 436 — 2026-04-26 evening)
 
-**Completed**:
+**Completed** (2-agent execution):
 
-1. **open-repo**: **Wave 4 Phase 2 IMPLEMENTATION COMPLETE**. Service layer (8 methods in `federation_partner_service.py`, ~290 lines) + admin routes (7 endpoints in `federation_partners.py`, ~210 lines) fully implemented per WAVE_4_DESIGN.md spec. HTTP signature verification: RFC 8017 + W3C ActivityPub with auto-downgrade to UNTRUSTED after 5+ failures. State machine: one-way transitions (pending → {trusted, untrusted, revoked}). Delete safety: REVOKED + 30-day inactivity required. **33 new tests written, all passing** (registration, trust state machine, signature verification, key rotation, delete guards, 7 route endpoints, 3 integration flows). **Test results**: 179 total passed, 0 regressions on existing 125 tests. Code follows open-source standards (type hints, docstrings, error handling). **Commit**: `128994f`. **Branch**: `feature/wave4-phase2-federation-service` (ready for GitHub push + merge). **Next**: Phase 3 (modify /inbox for signature verification, update send_announce for request signing — 2-3 days).
+1. **open-repo Wave 4 Phases 2–3 COMPLETE**:
+   - **Phase 2**: Service layer (8 methods) + admin routes (7 endpoints) for federation partner management. 33 new tests passing.
+   - **Phase 3** (background agent): Inbox signature verification gate + send_announce request signing. HTTP signature verification at POST /inbox (403 on invalid, 200/False for unsigned backward-compat). Request signing for outbound Announce activities. 15 new tests passing.
+   - **Combined Results**: 194 total tests (179 Phase 2 + 15 Phase 3), 0 regressions. Core federation infrastructure (partner management, trust state machine, HTTP signatures, async delivery, endorsement propagation) production-ready.
+   - **Commits**: Phase 2 `128994f`, Phase 3 `557d5eb` (merged into `feature/wave4-phase2-federation-service`)
+   - **Status**: Feature branch ready for GitHub push + merge. Optional Phase 4 (conflict logging + admin UI) or proceed to Phase 5 (offline export/Kiwix).
 
 **In Progress**:
 
@@ -18,50 +23,17 @@
 
 **Needs Your Input**:
 
-- **open-repo**: **Wave 4 Phase 2 PR ready for review + merge.** Branch: `feature/wave4-phase2-federation-service`. Commit: `128994f`. Push to remote was denied (SSH key access), so the branch is local only — please push and merge. Full summary below.
+- **open-repo**: **Wave 4 Phases 1–3 PR ready for GitHub push + merge.** Branch: `feature/wave4-phase2-federation-service` (194 tests passing, 0 regressions). All work committed locally. Please push to GitHub and merge. Core federation infrastructure production-ready.
 - **seedwarden**: Signal when ready to upload 6 lead products to Etsy (all prep work complete, checklist ready).
 - **cybersecurity-hardening**: Create GitHub Gist at https://gist.github.com with threat-model.md, opsec-playbook.md, implementation-guide.md in order (5 minutes). Set to Public. Copy Gist URL and follow DISTRIBUTION_CHECKLIST.md for remaining channels.
 - **mfg-farm**: Test print required (physical action) before launch prep continues.
-
-### open-repo Wave 4 Phase 2 PR: feat(federation) — service layer + admin routes
-
-**Branch**: `feature/wave4-phase2-federation-service`  
-**Commit**: `128994f`  
-**Test results**: 179 passed, 4 skipped (pre-existing), 0 regressions on existing 125 tests, 33 new tests  
-
-**What was built**:
-
-1. `app/services/federation_partner_service.py` (8 service methods, ~290 lines):
-   - `register_partner` — creates partner with PENDING state, validates PEM key
-   - `get_partner` / `list_partners` — retrieval with optional trust-state filter
-   - `update_partner_trust_state` — enforces state machine (pending→trusted/untrusted/revoked; revoked=terminal)
-   - `rotate_partner_public_key` — validates new key before persisting (safety check)
-   - `verify_http_signature` — RFC 8017 + W3C ActivityPub; auto-downgrades partner to UNTRUSTED after >5 failures
-   - `get_activity_log` — audit trail of activities linked to a partner
-   - `delete_partner` — hard delete with guards: must be REVOKED + no activity in last 30 days
-
-2. `app/api/v1/admin/federation_partners.py` (7 admin endpoints, ~210 lines):
-   - `POST /api/v1/admin/federation-partners/register`
-   - `GET /api/v1/admin/federation-partners`
-   - `GET /api/v1/admin/federation-partners/{id}`
-   - `PUT /api/v1/admin/federation-partners/{id}/trust-state`
-   - `POST /api/v1/admin/federation-partners/{id}/rotate-key`
-   - `GET /api/v1/admin/federation-partners/{id}/activity-log`
-   - `DELETE /api/v1/admin/federation-partners/{id}`
-
-3. `app/schemas.py` — 8 new Pydantic schemas with input validation
-4. `app/models.py` — added `failed_signature_count` to FederationPartner
-5. `alembic/versions/001_add_federation_partners.py` — migration updated with new column
-6. `tests/test_federation_partner_routes.py` — 33 tests across 6 classes
-
-**Wave 1–3 APIs unchanged. Backward compatible.**
 
 **Suggested Priorities for Next Session**:
 
 1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — runbook ready, run monitoring-dashboard.py, begin P&L tracking
 2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
-3. **Anytime before Monday**: **open-repo** Wave 4 Phase 3 implementation (modify /inbox for signature verification, update send_announce, 25-30 story points, 2-3 days) OR **seedwarden** Etsy Phase 1 launch (all prep complete, awaiting signal) OR **cybersecurity-hardening** GitHub Gist creation
-4. **Pending user action**: **open-repo** GitHub push of Wave 1–2 + Wave 4 Phase 2 code to feature branches
+3. **Anytime this week**: **open-repo** GitHub push of Wave 4 Phases 1–3 code to `feature/wave4-phase2-federation-service` OR **seedwarden** Etsy Phase 1 launch (all prep complete, awaiting signal) OR **cybersecurity-hardening** GitHub Gist creation
+4. **Post-Monday**: **open-repo** Wave 4 Phase 4 (conflict logging + admin UI, optional) or Phase 5 (offline export/Kiwix)
 
 **Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
 

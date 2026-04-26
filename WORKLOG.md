@@ -9608,3 +9608,58 @@ projects/open-repo/backend/
 **Effort estimate**: 2-3 days, 25-30 story points  
 **Expected completion**: Notification on completion + commit to feature/wave4-phase3-signature-integration
 
+
+---
+
+## 2026-04-26 (Session 436 Late Evening) — open-repo Wave 4 Phase 3 COMPLETE
+
+### open-repo — Phase 4 Wave 4 Phase 3 IMPLEMENTATION COMPLETE
+
+**Task**: Implement inbox endpoint signature verification gate and send_announce request signing (background agent execution).
+
+**Deliverables**:
+
+1. **HTTP Signature Request Signing** (`app/http_signatures.py`):
+   - `HTTPSignatureUtils.sign_request()` — high-level helper that accepts URL, private key PEM, and key ID
+   - Derives host/path from URL, builds signature header, returns dict of HTTP headers (Signature, Date, Host)
+   - Ready to merge into outbound requests
+
+2. **Send Announce Signing** (`app/services/endorsement_propagation_service.py`):
+   - `send_announce_to_federation_partners()` fully implemented (was previously stub)
+   - Queries TRUSTED partners from DB
+   - Signs each POST request with `sign_request()` before sending
+   - Returns per-partner result dict {url: (success, error_msg)}
+   - Backward-compatible with existing callers
+
+3. **Inbox Signature Verification Gate** (`app/routes.py` POST /inbox):
+   - Reads raw Request to extract Signature, Host, Date headers
+   - Signed requests: delegates to `FederationPartnerService.verify_http_signature()`
+   - Invalid signature → 403 Forbidden
+   - Malformed Signature header (missing keyId) → 400 Bad Request
+   - Unsigned requests → accepted with `signature_verified=False` (backward compatibility)
+   - All Activity rows now include partner_id, signature_header, signature_verified (audit trail)
+   - Response includes "signature_verified": bool for caller
+
+4. **Tests** (15 new in `test_federation_inbox_integration.py`):
+   - **Inbox verification tests** (8): valid sig, invalid sig, unsigned, unknown keyId, untrusted partner, malformed header, failure triggers verify, audit fields
+   - **Send Announce signing tests** (5): Signature header present, correct keyId, success result, empty when no trusted partners, failure on network error
+   - **E2E roundtrip tests** (2): full crypto roundtrip accepted, revoked partner rejected
+
+**Test Results**:
+- **194 total tests passing** (179 Phase 2 + 15 Phase 3)
+- **Zero regressions** on Phase 1 baseline
+
+**Code Changes**:
+- **http_signatures.py**: Added `sign_request()` method (~62 lines)
+- **routes.py**: Added signature verification gate to POST /inbox (~118 lines modified/added)
+- **endorsement_propagation_service.py**: Fully implemented `send_announce_to_federation_partners()` (~119 lines modified/added)
+- **test_federation_inbox_integration.py**: New file with 15 tests (~653 lines)
+
+**Commit**: `557d5eb` — "feat(federation): Wave 4 Phase 3 — integrate HTTP signatures into inbox + send_announce"
+
+**Branch**: `feature/wave4-phase3-inbox-signature` (merged into `feature/wave4-phase2-federation-service`)
+
+**Status**: Phase 3 COMPLETE, ready for GitHub push and merge. Core federation infrastructure (Phases 1–3) now complete. Optional: Wave 4 Phase 4 (conflict logging + admin UI) or Phase 5 (offline export/Kiwix).
+
+**Session Summary**: Background agent completed Wave 4 Phase 3 implementation. 15 new tests, zero regressions. Inbox/send_announce integration with HTTP signatures fully working. Phase 3 merged into Phase 2 branch. All orchestration files updated and committed on master.
+
