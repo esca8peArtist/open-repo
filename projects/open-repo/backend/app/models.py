@@ -218,3 +218,74 @@ class ContributionFeedback(Base):
 
     def __repr__(self):
         return f"<ContributionFeedback id={self.id} contribution_id={self.contribution_id} severity={self.severity}>"
+
+
+# ============================================================================
+# Phase 4: ActivityPub Federation Models
+# ============================================================================
+
+
+class ActivityType(str, enum.Enum):
+    """Activity type enumeration per ActivityPub spec."""
+
+    CREATE = "Create"
+    UPDATE = "Update"
+    DELETE = "Delete"
+    ANNOUNCE = "Announce"
+    UNDO = "Undo"
+    FOLLOW = "Follow"
+    ACCEPT = "Accept"
+
+
+class Activity(Base):
+    """Activity model - stores ActivityPub activities for federation."""
+
+    __tablename__ = "activities"
+
+    # Primary key
+    id = Column(BigInteger, primary_key=True, autoincrement=True, index=True)
+
+    # Activity metadata
+    activity_type = Column(Enum(ActivityType), nullable=False, index=True)
+    activity_id = Column(String(512), unique=True, index=True, nullable=False)  # Unique activity URI
+
+    # Actor (who performed the action)
+    actor_url = Column(String(512), nullable=False, index=True)  # Full actor URL
+
+    # Object and target (what the activity was about)
+    object_id = Column(String(512), nullable=True, index=True)  # Object URI or inline object ID
+    object_data = Column(JSON, nullable=True)  # Full object (for Create/Update activities)
+
+    # Full activity as JSON-LD
+    activity_data = Column(JSON, nullable=False)
+
+    # Timestamps
+    created_at = Column(DateTime, nullable=False, default=datetime.utcnow, index=True)
+    published = Column(DateTime, nullable=False, default=datetime.utcnow)
+
+    # Federation metadata
+    local = Column(Integer, nullable=False, default=1)  # 1 = generated locally, 0 = received from remote
+
+    def __repr__(self):
+        return f"<Activity id={self.id} type={self.activity_type} actor={self.actor_url}>"
+
+
+class NodePublicKey(Base):
+    """Node public key storage for HTTP signature verification."""
+
+    __tablename__ = "node_public_keys"
+
+    # Primary key
+    id = Column(BigInteger, primary_key=True, autoincrement=True, index=True)
+
+    # Key metadata
+    key_id = Column(String(512), unique=True, index=True, nullable=False)  # Unique key URI
+    public_key_pem = Column(Text, nullable=False)  # PEM-encoded public key
+    node_url = Column(String(512), nullable=False, index=True)  # Source node URL
+
+    # Timestamps
+    created_at = Column(DateTime, nullable=False, default=datetime.utcnow, index=True)
+    updated_at = Column(DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def __repr__(self):
+        return f"<NodePublicKey id={self.id} key_id={self.key_id} node={self.node_url}>"

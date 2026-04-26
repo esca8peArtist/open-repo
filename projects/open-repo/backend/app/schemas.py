@@ -404,3 +404,198 @@ class RequestRevisionResponse(BaseModel):
     revision_requests: List[RevisionRequest]
 
     model_config = ConfigDict(from_attributes=True)
+
+
+# ============================================================================
+# Phase 4: ActivityPub Schemas
+# ============================================================================
+
+
+class PublicKeyObject(BaseModel):
+    """Public key object for actor."""
+
+    id: str
+    owner: str
+    publicKeyPem: str
+
+
+class ActorResponse(BaseModel):
+    """ActivityPub actor object (node identity)."""
+
+    id: str
+    type: str = "Service"  # Actor type
+    name: str
+    summary: Optional[str] = None
+    url: str
+    inbox: str
+    outbox: str
+    followers: str
+    following: str
+    publicKey: PublicKeyObject
+    preferredUsername: Optional[str] = None
+
+
+class ActivityObject(BaseModel):
+    """Base ActivityPub activity object."""
+
+    context: Dict[str, Any] = Field(default_factory=lambda: [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1"
+    ], alias="@context")
+    type: str
+    id: str
+    actor: str
+    object: Dict[str, Any]
+    published: str
+    to: Optional[List[str]] = None
+    cc: Optional[List[str]] = None
+
+    model_config = ConfigDict(populate_by_name=True)
+
+
+class CreateActivityRequest(BaseModel):
+    """Request to receive a Create activity."""
+
+    context: Dict[str, Any] = Field(default_factory=lambda: [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1"
+    ], alias="@context")
+    type: str = "Create"
+    id: str
+    actor: str
+    object: Dict[str, Any]
+    published: str
+    to: Optional[List[str]] = None
+    cc: Optional[List[str]] = None
+
+    model_config = ConfigDict(populate_by_name=True)
+
+
+class UpdateActivityRequest(BaseModel):
+    """Request to receive an Update activity."""
+
+    context: Dict[str, Any] = Field(default_factory=lambda: [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1"
+    ], alias="@context")
+    type: str = "Update"
+    id: str
+    actor: str
+    object: Dict[str, Any]
+    published: str
+    to: Optional[List[str]] = None
+    cc: Optional[List[str]] = None
+
+    model_config = ConfigDict(populate_by_name=True)
+
+
+class DeleteActivityRequest(BaseModel):
+    """Request to receive a Delete activity."""
+
+    context: Dict[str, Any] = Field(default_factory=lambda: [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1"
+    ], alias="@context")
+    type: str = "Delete"
+    id: str
+    actor: str
+    object: Dict[str, Any]
+    published: str
+    to: Optional[List[str]] = None
+    cc: Optional[List[str]] = None
+
+    model_config = ConfigDict(populate_by_name=True)
+
+
+class AnnounceActivityRequest(BaseModel):
+    """Request to receive an Announce activity (endorsement)."""
+
+    context: Dict[str, Any] = Field(default_factory=lambda: [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1"
+    ], alias="@context")
+    type: str = "Announce"
+    id: str
+    actor: str
+    object: Dict[str, Any]
+    published: str
+    to: Optional[List[str]] = None
+    cc: Optional[List[str]] = None
+
+    model_config = ConfigDict(populate_by_name=True)
+
+
+class UndoActivityRequest(BaseModel):
+    """Request to receive an Undo activity."""
+
+    context: Dict[str, Any] = Field(default_factory=lambda: [
+        "https://www.w3.org/ns/activitystreams",
+        "https://w3id.org/security/v1"
+    ], alias="@context")
+    type: str = "Undo"
+    id: str
+    actor: str
+    object: Dict[str, Any]
+    published: str
+    to: Optional[List[str]] = None
+    cc: Optional[List[str]] = None
+
+    model_config = ConfigDict(populate_by_name=True)
+
+
+class ActivityResponse(BaseModel):
+    """Response for stored activity."""
+
+    id: int
+    activity_type: str
+    activity_id: str
+    actor_url: str
+    object_id: Optional[str]
+    object_data: Optional[Dict[str, Any]]
+    activity_data: Dict[str, Any]
+    created_at: datetime
+    published: datetime
+    local: bool
+
+    model_config = ConfigDict(from_attributes=True)
+
+
+class OrderedCollectionItem(BaseModel):
+    """Item in an ordered collection."""
+
+    id: str
+    type: str
+    actor: str
+    object: Dict[str, Any]
+    published: str
+
+
+class OrderedCollectionResponse(BaseModel):
+    """OrderedCollection response (for outbox, followers, following)."""
+
+    context: str = "https://www.w3.org/ns/activitystreams"
+    id: str
+    type: str = "OrderedCollection"
+    totalItems: int
+    first: str  # Link to first page
+    last: Optional[str] = None
+
+
+class OrderedCollectionPageResponse(BaseModel):
+    """OrderedCollectionPage response (paginated collection)."""
+
+    context: str = "https://www.w3.org/ns/activitystreams"
+    id: str
+    type: str = "OrderedCollectionPage"
+    partOf: str  # Link back to the collection
+    startIndex: int
+    orderedItems: List[Dict[str, Any]]
+    next: Optional[str] = None
+    prev: Optional[str] = None
+
+
+class WebFingerResponse(BaseModel):
+    """WebFinger response (RFC 7033)."""
+
+    subject: str
+    links: List[Dict[str, str]]
