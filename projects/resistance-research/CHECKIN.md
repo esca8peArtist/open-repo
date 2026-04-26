@@ -6,6 +6,27 @@
 
 ## Published
 
+### Cybersecurity Hardening Trilogy — PUBLICATION-READY (Session 422)
+
+Three-document corpus verified complete and publication-ready. All infrastructure updated. Final publishing checklist documented.
+
+**Files**:
+- `projects/cybersecurity-hardening/threat-model.md` (446 lines — Palantir/NSA/FBI/data broker threat analysis, primary-sourced)
+- `projects/cybersecurity-hardening/opsec-playbook.md` (635 lines — countermeasures by tier)
+- `projects/cybersecurity-hardening/implementation-guide.md` (1,057 lines — step-by-step setup with verification checkpoints)
+
+**Infrastructure** (also complete):
+- `PUBLICATION_README.md` — publishing instructions, citation formats, pre-pub checklist (all items checked)
+- `DISTRIBUTION_CHECKLIST.md` — channel strategy, sharing scripts, organization contacts
+- `publication-prep.md` — executive summary (600 words), corrected TOC, 40-term glossary; status updated from `draft` to `complete`
+- `CHECKIN.md` (new) — full publishing checklist with Yes/No per channel
+
+**Awaiting user action**: Create GitHub Gist at https://gist.github.com (5 minutes) to produce a shareable URL, then distribute per DISTRIBUTION_CHECKLIST.md. Highest-priority first contact: NILC/CLINIC/RAICES via the email script in the distribution checklist.
+
+**Note**: Spanish translation of Part 0 + Tier 1 checklist identified as the highest-leverage follow-on — not yet produced.
+
+---
+
 ### May Day 2026 Action Guide — LIVE
 
 Published April 26, 2026 as a public GitHub Gist:

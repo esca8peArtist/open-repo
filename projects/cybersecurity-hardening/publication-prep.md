@@ -2,7 +2,7 @@
 title: "Publication Prep: OpSec Corpus (Threat Model + Playbook + Implementation Guide)"
 project: cybersecurity-hardening
 created: 2026-04-26
-status: draft
+status: complete
 purpose: TOC, glossary, and executive summary for the three-document corpus
 ---
 
@@ -40,38 +40,44 @@ This corpus does not cover: organizational security for groups (a different thre
 ### Document 1: Threat Model (`threat-model.md`)
 
 I. The Central Threat: Palantir as the Integration Layer
-- A. Scale and Financial Commitment
+- A. Scale and Financial Commitment ($970.5M in 2025 federal contracts)
 - B. Platform Architecture (Gotham / Foundry / AIP)
-- C. Confirmed Tools: ELITE, ImmigrationOS, IRS LCA, Venntel integration
+- C. Confirmed Tools: ELITE, ImmigrationOS, IRS LCA, Falcon
 
-II. NSA Signals Intelligence
-- Section 702 FISA surveillance (foreign-origin interception, U.S. person query rules)
-- Upstream collection from internet backbone
-- PRISM program scope
+II. The Data Broker Pipeline: Commercial Surveillance Without a Warrant
+- A. The Legal Framework (third-party doctrine, Montana SB 282, National Public Data breach)
+- B. Key Data Brokers with Government Contracts (LexisNexis, Venntel, Babel Street, CLEAR)
+- C. Ad Tech Location Data (ICE's January 2026 MAID procurement RFI)
 
-III. FBI Investigative Capabilities
-- National Security Letters (NSLs) — no judicial approval required
-- Grand jury subpoenas for Signal metadata
-- FISA warrants and Section 215 records
+III. NSA Signals Intelligence
+- A. PRISM (Section 702 downstream collection — 349,823 targets in 2025)
+- B. Upstream Collection (backbone taps, XKeyscore)
+- C. What NSA Can and Cannot Do (confirmed constraints and uncertainties)
 
-IV. Law Enforcement Data Brokers
-- LexisNexis / Accurint: $9.75M DHS contract
-- Thomson-Reuters CLEAR
-- Venntel and the location data market
-- LexisNexis ELITE address confidence scoring pipeline
+IV. FBI Investigative Tools
+- A. National Security Letters (no judicial approval required; gag orders)
+- B. FISA Orders (Traditional)
+- C. Tech Company Legal Process (Signal vs. Google/Apple disclosure scope)
+- D. Parallel Construction
 
-V. DOGE Data Consolidation
-- Status as of April 2026
-- Confirmed cross-agency database access
-- Legal challenges and status
+V. Facial Recognition and Biometric Surveillance
+- A. Clearview AI ($9.2M ICE contract, September 2025)
+- B. License Plate Readers (ALPR dragnet via Vigilant Solutions, Flock Safety)
+- C. Cell-Site Simulators (Stingrays/IMSI Catchers — Rayhunter detection tool)
 
-VI. Social Media Monitoring
-- Babel Street: confirmed contract, keyword/social graph capabilities
-- ImmigrationOS social media component
-- CBP social media vetting at entry
+VI. DOGE Data Consolidation: The Emerging Cross-Agency Database
+- Confirmed Actions (SSA transfer, IRS-DHS agreement, master database via Palantir)
+- What This Means If Completed
 
-VII. Threat Matrix
-- Capability × Tier matrix (who faces what, at what probability)
+VII. Threat Matrix: What Can They Actually See?
+- 15-row capability table covering: location, content, financial, biometric, social media, ALPR, student/visa, crypto
+
+VIII. Analytical Capabilities: What Palantir/NSA Can Do With That Data
+- Identity Resolution, Pattern of Life, Social Graph Mapping, Predictive Targeting, Bulk Social Media Monitoring, Cross-Agency Record Linking
+
+IX. Confirmed Gaps and Open Questions
+
+X. Key Sources (All Primary or Near-Primary)
 
 ---
 
@@ -79,55 +85,62 @@ VII. Threat Matrix
 
 **Part 1**: Communications Defense
 - 1.1 Signal: what it protects, what it doesn't, configuration by tier
-- 1.2 Email: why it is not salvageable for high-stakes communications
-- 1.3 Session and Briar: offline-capable alternatives
+- 1.2 Briar: high-anonymity mesh messenger for zero-phone-number contact
+- 1.3 Email: limitations and ProtonMail/Tutanota configuration
+- 1.4 XMPP + OMEMO: verdict on federated encrypted chat
 
-**Part 2**: Network Anonymization
-- 2.1 VPN selection criteria (jurisdiction, payment, log policy)
-- 2.2 Tor: capability, limitations, traffic analysis resistance
-- 2.3 VPN-then-Tor: the recommended configuration and why
+**Part 2**: Metadata Minimization
+- 2.1 Your phone as a location tracking device (structural threat)
+- 2.2 Phone number compartmentalization by tier
+- 2.3 Breaking pattern-of-life analysis
 
-**Part 3**: Device Security
-- 3.1 GrapheneOS: why Android, why Pixel, what it provides
-- 3.2 iOS as a Tier 1 option
-- 3.3 Laptop: full-disk encryption, BIOS password, firmware security
+**Part 3**: Network Anonymization
+- 3.1 Tor Browser: realistic threat model (what it does and does not protect)
+- 3.2 VPN: provider selection, jurisdiction, no-log verification
+- 3.3 VPN-then-Tor stacking: the recommended configuration
 
-**Part 4**: Identity Compartmentalization
-- 4.1 Separate identities for separate activities
-- 4.2 VoIP numbers and pseudonymous accounts
-- 4.3 Payment anonymization (Monero, prepaid cards)
+**Part 4**: Device and OS Hardening
+- 4.1 Mobile OS comparison (GrapheneOS / iOS / stock Android)
+- 4.2 Desktop OS (Tails, Qubes, Fedora/Ubuntu, Windows assessment)
+- 4.3 Full disk encryption (LUKS2, FileVault, BitLocker)
+- 4.4 USB and physical security
 
-**Part 5**: Physical and Operational Security
-- 5.1 Physical device security
-- 5.2 Behavioral OpSec: what you say, to whom, over which channels
-- 5.3 Border crossing and checkpoint protocols
+**Part 5**: Identity Compartmentalization
+- 5.1 Identity architecture (real / activist / public-facing)
+- 5.2 Payment compartmentalization (prepaid cards, Monero)
 
-**Part 6**: Document and File Security
-- 6.1 Metadata: what files contain and how it becomes evidence
-- 6.2 ExifTool and MAT2 for metadata removal
-- 6.3 VeraCrypt for sensitive files at rest
-- 6.4 age encryption for file transfer
+**Part 6**: Data at Rest Protection
+- 6.1 VeraCrypt and hidden volumes (legal reality of plausible deniability)
+- 6.2 Password management (KeePassXC vs. Bitwarden)
+- 6.3 Hardware security keys (YubiKey)
 
-**Part 7**: Social Media and Public Presence
-- 7.1 What Babel Street and ImmigrationOS ingest
-- 7.2 Reducing your public social media footprint
-- 7.3 Protest and event security
+**Part 7**: Behavioral OpSec
+- 7.1 Device discipline (one device, one identity; biometric vs. PIN)
+- 7.2 Meeting security
+- 7.3 Communication discipline
+- 7.4 Financial discipline
 
-**Part 8**: Data Broker Reduction
-- 8.1 How law enforcement uses data brokers
-- 8.2 The 20 highest-priority brokers
-- 8.3 Automation services
+**Part 8**: When Technical Measures Are Not Enough — Legal Layers
+- 8.1 What law enforcement can compel (from devices and providers)
+- 8.2 Jurisdiction strategy for data (CLOUD Act, GDPR Article 48)
+- 8.3 The Fifth Amendment reality on compelled decryption
 
-**Part 9**: Legal Preparation
-- 9.1 Know-your-rights framework
-- 9.2 Compelled decryption: current Fifth Amendment case law
-- 9.3 Incident response planning
+**Part 9**: Organizational OpSec
+- 9.1 Organizational communications (Signal, SecureDrop, OnionShare)
+- 9.2 Compartmentalization within organizations
+- 9.3 Incident response (arrest of a member; receipt of legal process)
 
-**Part 10**: Threat Model Reassessment
-- 10.1 Tier escalation signals
-- 10.2 Quarterly review process
+**Part 10**: Monitoring and Threat Intelligence
+- 10.1 Indicators of active investigation
+- 10.2 Threat intelligence sources (EFF, 404 Media, The Intercept, Privacy Guides)
 
-**Summary Tier Tables**
+**Part 11**: IMSI Catcher Detection
+- Rayhunter open-source stingray detection tool (EFF, March 2025)
+
+**Summary: Tier-by-Tier Minimum Viable OpSec**
+- Tier 1 (Baseline): journalists, advocates, healthcare workers
+- Tier 2 (Intermediate): activists, organizers, protest participants
+- Tier 3 (Advanced): direct targets of investigation
 
 ---
 
