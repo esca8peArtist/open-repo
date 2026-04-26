@@ -116,24 +116,32 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — paper trading live, **multi-strategy conflict resolution COMPLETE**, ready for strategy optimization
+**Status**: Active — paper trading live, **strategy cleanup COMPLETE**, paper trading validation in progress
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **Strategy evaluation COMPLETE (Session 488, agent a144692b76957e579)**. **Multi-strategy conflict resolution COMPLETE (Session 487)**.
+**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **Strategy cleanup COMPLETE**. **Paper trading validation plan documented**. **Live trading readiness checklist COMPLETE**.
+
+**Completed (Session 489)**:
+1. ✅ **Strategy Cleanup** — COMPLETE:
+   - Removed SMA_50_200 and SMA_10_50 from `scripts/run_strategy_evaluation.py` catalogue
+   - Reason: structural failure — 0-2 trades/252 days (Gate 1 requires ≥100), negative Sharpe (Gate 2 requires ≥1.0)
+   - 52 strategy evaluation tests still pass, 0 regressions
+   - Strategy inventory now: 1 benchmark (BuyAndHold), 4 ensemble stackers, 1 options, 1 crypto, 1 MTF = 8 total
+2. ✅ **Paper Trading Validation Plan** — documented in `strategy-evaluation.md` and `PROJECTS.md`:
+   - AAPL_h10_lgbm_ho: 3-month track record target (≥30 trades/month, Sharpe ≥1.0, max drawdown ≤20%)
+   - Success criteria defined for graduation to live trading
+3. ✅ **Live Trading Readiness Checklist** — `docs/live-trading-readiness.md` COMPLETE:
+   - Alpaca account setup, guardrails enumeration, funding guidelines, monitoring, emergency procedures
 
 **Completed (Session 488)**:
 1. ✅ **Strategy Evaluation & Backtesting** — COMPLETE:
    - `strategy-evaluation.md` — comprehensive assessment of all 10 strategies across 5 model types
-   - **Strategy inventory**: 3 rule-based (SMA variants), 5 ensemble stackers, 1 options, 1 crypto, 1 MTF
-   - **Evaluation framework**: Applied 4-gate graduation criteria to all strategies
-   - **Results**: 0 strategies graduate without caveats
-     - **AAPL_h10_lgbm_ho (paper trading)**: Only Gate 4 passer; Gates 1-3 blocked on live Alpaca data → **HIGHEST PRIORITY** for 3-month validation + full walk-forward
-     - **SMA_50_200 / SMA_10_50**: Flagged for **REMOVAL** — generate 0-2 trades/252 days (need ≥100), negative Sharpe → structural failure: daily crossovers insufficient signal
-     - **BuyAndHold**: Benchmark only, structurally fails Gate 1
-     - **Ensemble/options/crypto/MTF**: Architecture sound; blocked by data pipeline dependencies
+   - **AAPL_h10_lgbm_ho (paper trading)**: Only Gate 4 passer; Gates 1-3 blocked on live Alpaca data → **HIGHEST PRIORITY** for 3-month validation + full walk-forward
+   - **SMA_50_200 / SMA_10_50**: REMOVED — structural failure: daily crossovers insufficient signal
+   - **BuyAndHold**: Benchmark only, structurally fails Gate 1
+   - **Ensemble/options/crypto/MTF**: Architecture sound; blocked by data pipeline dependencies
    - Built `scripts/run_strategy_evaluation.py` — automated runner against synthetic GBM + 4 regime variants
    - **Tests**: 52 new unit tests (all pass), 2,590 total trading tests pass, 0 regressions
-   - Committed: `strategy-evaluation.md`, evaluation runner, tests
 
 **Completed (Session 487)**:
 1. ✅ **Multi-strategy conflict resolution** — `StrategyCoordinator` class, 43 unit tests, 723 total tests pass
@@ -143,13 +151,9 @@
 
 **Next tasks — work these in order:**
 
-2. **Strategy cleanup** — Remove SMA_50_200/SMA_10_50 (structural failure, committed removal rationale)
+1. **AAPL_h10_lgbm_ho paper trading** — Monitor 3-month track record. Target: ≥30 trades/month, Sharpe ≥1.0, max drawdown ≤20%. Graduation gate: 3 consecutive months meeting all targets.
 
-3. **AAPL_h10_lgbm_ho validation** — Monitor paper trading track record; document 3-month performance target; prepare walk-forward backtest pipeline
-
-4. **Live trading readiness checklist** — Once paper performance consistent (per graduation criteria), produce user-facing checklist: funded account setup, cash account verification, guardrails confirmation, initial funding guidelines
-
-5. **Live trading launch** — After readiness checklist passes, transition to Jetson deployment with live trading enabled (minimal $100–500 initial funding)
+2. **Live trading launch** — After readiness checklist passes (see `docs/live-trading-readiness.md`), transition to Jetson deployment with live trading enabled (initial funding $100–500)
 
 **Blocked on**: —
 **Notes**: Multi-strategy system is now conflict-free. Next: optimize and evaluate which strategies should graduate to live trading. Paper trading provides the validation signal. Guardrails are in place. Live trading will begin with minimal funding ($100–500) and scale only after 2+ weeks of profitable live performance.
