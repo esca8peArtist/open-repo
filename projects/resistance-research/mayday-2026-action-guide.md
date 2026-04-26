@@ -298,6 +298,75 @@ Comply promptly. A dispersal order, once given, makes remaining in the area subj
 **Legal observer resources:**
 The National Lawyers Guild (NLG) provides legal observers at many demonstrations — they wear bright green hats. If arrested, NLG operates a jail support hotline in many cities. Find your local NLG chapter at nlg.org before May 1 and save their number.
 
+### Undocumented Participants & ICE Enforcement Risk
+
+This subsection is written directly for undocumented community members and their families. The risks here are different in kind from those facing documented participants — not just higher in degree — and they deserve honest, specific treatment.
+
+The watch brief for this period explicitly flags ICE enforcement at or near demonstrations as a likely intimidation tactic given the "No ICE" demand at the center of May Day 2026. There is documented precedent in 2026: protesters in multiple cities reported being called by name by federal agents and followed home; a Marshall Project investigation confirmed federal retaliatory surveillance of demonstration observers. This is the threat environment you are operating in.
+
+**Before you go**
+
+Assess your local enforcement environment before deciding to attend in person. ICE operational tempo has been elevated in most major metros since January 2026. Check with local rapid-response networks (see resources below) for current enforcement patterns in your area.
+
+Attending a public demonstration creates a record even if you are never arrested or detained. You may appear in press photographs, law enforcement surveillance footage, or participant-shared social media. Mixed-status families should make this decision together, accounting for the risk profile of every family member — not just the person considering attending. A parent's detention affects documented children; a spouse's immigration record can affect a partner's pending case.
+
+If you decide not to attend in person, your participation through the consumer boycott and digital solidarity actions (Section 3) is real and carries none of the in-person enforcement risk.
+
+**Your rights if encountered by ICE — the four absolutes:**
+
+1. You do not have to answer questions. This applies regardless of your immigration status. Say: "I am exercising my right to remain silent."
+2. You do not have to consent to a search. Say: "I do not consent to a search."
+3. You do not have to sign any document. Do not sign anything — including what ICE may describe as "voluntary departure" paperwork — without speaking to a lawyer first. Signing can waive rights you do not know you have.
+4. You have the right to speak to a lawyer. Say: "I want to speak to a lawyer." Then say nothing further until you have one.
+
+These rights apply on a public street, at a demonstration, and inside a detention facility. They apply regardless of documentation status.
+
+**At the action**
+
+Use the buddy system — it is more important for undocumented participants than for anyone else at the demonstration. Your buddy should know your legal name (the name that will appear in any detention record), your emergency contact outside the country if applicable, and the name of an immigration attorney or legal aid organization you have contacted in advance. Buddy pairs with mixed language capacity are especially valuable: identify who in your group can communicate clearly in English with law enforcement if an encounter occurs.
+
+Know how you will leave before you arrive. Identify two exit routes from the assembly point. If police or ICE personnel move toward the crowd, do not wait to see what happens — move to the exit immediately and calmly. The time to assess the situation is from a distance, not inside it.
+
+Understand the distinction between a local police stop and an ICE encounter. Local police, in many sanctuary cities, are restricted from inquiring about immigration status or cooperating with ICE civil detainers. ICE agents are not restricted. If you are unsure who is detaining you, ask clearly: "Are you ICE or local police?" The answer determines your immediate legal situation.
+
+On what to carry: do not bring documents that would confirm your immigration status and that you cannot afford to have seized — this includes foreign passports, consular ID cards, or immigration paperwork you are not legally required to carry. A state-issued ID (if you have one) is generally safer to carry than documents showing your country of origin.
+
+**If someone is detained at the demonstration**
+
+Do not attempt to physically intervene in a detention. Document what you see: badge numbers, vehicle plates, time, location, and the name of the person detained if you know it. Call the immigration rapid-response hotline for your area immediately (see resources below). Call Freedom for Immigrants' National Immigration Detention Hotline: 1-209-757-3733 (Monday through Friday, 8 a.m. to 8 p.m. Pacific). Detained individuals can reach the hotline from inside detention facilities at 9233#.
+
+Notify the detainee's family and their designated immigration attorney as soon as possible. The first hours after a detention are the most critical for initiating legal response.
+
+**After the action**
+
+If you were detained and released, contact an immigration attorney before taking any other action. An arrest record — even one that results in no criminal charges — can surface in future immigration proceedings, including green card applications, naturalization, and removal proceedings. This is true even if you were acquitted or charges were dropped. The immigration consequences of a May Day arrest are not resolved by the criminal outcome.
+
+Do not sign any document you receive after release without legal review. This includes offers of "voluntary departure," which forfeit your right to a hearing before an immigration judge.
+
+If you were not detained but had any contact with ICE agents — being questioned, followed, or photographed — document it and report it to your local rapid-response network. This information helps communities track enforcement patterns.
+
+**Resources**
+
+*Immediate detention response:*
+- Freedom for Immigrants National Immigration Detention Hotline: 1-209-757-3733 (M-F, 8 a.m.–8 p.m. PT); from inside detention dial 9233# — [freedomforimmigrants.org/hotline](https://www.freedomforimmigrants.org/hotline)
+- National Immigration Project of the NLG — ICE activity hotline: 1-844-363-1423 — [nationalimmigrationproject.org](https://www.nationalimmigrationproject.org/)
+- ACLU Immigrants' Rights Project: [aclu.org/issues/immigrants-rights](https://www.aclu.org/issues/immigrants-rights/immigrants-rights-and-detention)
+
+*Know Your Rights cards (bilingual):*
+- ILRC Red Cards (Spanish, English, and seven additional languages): [ilrc.org/redcards](https://www.ilrc.org/redcards) — print before May 1 and carry one
+- National Immigrant Justice Center — Know Your Rights if encountered by ICE: [immigrantjustice.org/know-your-rights/ice-encounter](https://immigrantjustice.org/for-immigrants/know-your-rights/ice-encounter/)
+- RAICES — Canopy social services hotline connecting migrants to local resources: [raicestexas.org/canopy-hotline](https://www.raicestexas.org/what-we-do/social-programs/canopy-hotline/)
+
+*City-level rapid-response and immigration legal aid:*
+- Los Angeles: Coalition for Humane Immigration Rights of Los Angeles (CHIRLA) — 1-888-624-4752; Legal Aid Foundation of LA — [lafla.org/immigration](https://lafla.org/get-help/immigration/)
+- New York: Office of New Americans Hotline — 1-800-566-7636; [immigrantjustice.org](https://immigrantjustice.org/)
+- Chicago: Illinois Coalition for Immigrant and Refugee Rights Family Support Hotline — 1-855-435-7693 (24 hours)
+- San Francisco: SF Immigrant Legal and Education Network — 1-415-200-1548
+- Phoenix: [Immigration Advocates Network directory for Arizona](https://www.immigrationadvocates.org/nonprofit/legaldirectory/?state=AZ)
+- National legal services directory by location: [immigrationadvocates.org/nonprofit/legaldirectory](https://www.immigrationadvocates.org/nonprofit/legaldirectory/)
+
+Identify your local legal aid contact before May 1. Save the number in your phone under a name that does not identify it as immigration legal aid, and write it on paper as a backup.
+
 ### Employment Protections and Risks
 
 **The core question: is participating protected concerted activity under the NLRA?**
