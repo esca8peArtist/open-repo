@@ -6,6 +6,22 @@
 
 ## Urgent / Time-Sensitive
 
+### 0. Section 702 FISA Expiration — APRIL 30 (4 DAYS OUT)
+
+Section 702 of FISA — NSA's primary warrantless surveillance authority — expires April 30, 2026. The 10-day extension passed April 17 runs out in four days. No deal is in place as of April 26.
+
+**What's stalled**: A coalition of 20 House Republicans + most Democrats blocked the 5-year extension on April 17. A three-year bill (Foreign Intelligence Accountability Act) is being floated with modest reforms (no warrant requirement; monthly Civil Liberties Protection reviews). Trump complicated it further by conditioning his signature on SAVE Act attachment.
+
+**The civil liberties leverage point**: The reform window includes a proposal to close the "data broker loophole" — currently agencies can purchase commercial location data (Venntel model) without a warrant. Closing this loophole directly constrains ICE/DHS surveillance of protest environments and immigrant communities. This is the clause worth following most closely.
+
+**If Section 702 lapses**: Existing collected data survives; only new collection authority lapses. Congress will almost certainly pass emergency reauthorization within days — this has never lapsed before. But the negotiation in the next 4 days is the best reform window in years.
+
+**Where to track**: [EFF 702 Campaign](https://epic.org/campaigns/fisa-section-702-reform-or-sunset/) | [FISA 702 GovPing stall report (April 25)](https://changeflow.com/govping/data-privacy-cybersecurity/fisa-702-reauthorization-stalls-in-congress-2026-04-25) | [Nextgov — House vote readied without warrant amendment](https://www.nextgov.com/policy/2026/04/house-readies-vote-renew-fisa-702-without-warrant-amendment/412856/)
+
+*Research filed to: surveillance-tracking.md (Part 1, Section 702)*
+
+---
+
 ### 1. April 28 Xinis Hearing (TOMORROW)
 The results brief is filed at `monitoring/2026-04-28-results.md` with a "Hearing Outcome" placeholder at the top. The hearing has not yet occurred — outcome needs to be added on April 28.
 
