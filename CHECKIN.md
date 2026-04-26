@@ -26,7 +26,7 @@
 - **14:30 UTC (9:30 AM EST)**: Stockbot market open. Run monitoring-dashboard.py. P&L data capture begins automatically.
 - **17:00 UTC (1:00 PM EST)**: Resistance-research Xinis hearing closing arguments. Data capture begins at this time.
 
-**Usage**: Nominal (< 20% estimated). Next reset: Tuesday 2026-04-30 00:00 UTC.
+**Usage**: Sonnet 23.5% (2,100,361 tokens), All-models 19.5%. Next reset: Tuesday 2026-04-30 00:00 UTC.
 
 ---
 
