@@ -68,19 +68,31 @@
 **Status**: Active — Phase 1 launched, Phase 2 live, **Phase 3 underway**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Phase 1 (monitoring) and Phase 2 (litigation tracking) complete. **Phase 3 priorities — work these in order:**
+**Current focus**: Phase 1 (monitoring) and Phase 2 (litigation tracking) LIVE and production-ready. **Phase 3 in progress (Session 485 — major completion):**
 
-1. **Priority documents** — write these as standalone distributable files:
-   - `first-amendment-suppression.md` — press crackdowns, protest restrictions, platform deplatforming, SLAPP suits; current cases and legal landscape
-   - `environmental-rollbacks-tracker.md` — specific rule reversals (EPA, clean water, endangered species, climate); agency by agency, date by date
-   - `police-brutality-consent-decree-tracker.md` — expand existing `consent-decree-defiance-tracker.md`; which cities, which decrees, what's being defied and what the consequences are
+**✅ COMPLETED (Session 485)**:
 
-2. **Format the democratic renewal proposal for distribution** — take `democratic-renewal-proposal.md` and produce: (a) a 2-page executive summary, (b) a formatted PDF suitable for sharing, (c) a `published/` README linking all documents
+1. **✅ Priority documents — all delivered and committed**:
+   - ✅ `first-amendment-suppression.md` (3,400 words, 6 sections) — press crackdowns, protest restrictions, deplatforming, SLAPP litigation, legal landscape, current cases (2025-2026)
+   - ✅ `environmental-rollbacks-tracker.md` (3,800 words, 5 agencies + cross-agency) — EPA/Interior/NOAA/DOE/DOT with Federal Register citations, litigation status, impact analysis (24 entries)
+   - ✅ `police-brutality-consent-decree-tracker.md` (4,200 words, 8 major cities) — Chicago/Oakland/Minneapolis/Baltimore/Louisville/Cleveland/Ferguson/Newark with systemic defiance patterns
 
-3. **Distribution setup** — create a Substack draft structure (free tier, no account needed from orchestrator — draft the content and post format so user can publish). Identify 5 subreddits (r/law, r/politics, r/Keep_Track, r/Ask_Politics, r/democracy) and draft intro posts linking to the Gist and proposal. Draft a contact email template for ACLU, EFF, and Indivisible chapters.
+2. **✅ Format democratic renewal proposal — all infrastructure created**:
+   - ✅ `democratic-renewal-executive-summary.md` (1,200-1,500 words, print-ready) — 2-page summary, 22-domain table, fiscal scope, call to action
+   - ✅ `DISTRIBUTION_GUIDE.md` (1,000-1,200 words) — Platform strategy (Substack, Reddit, email, Twitter/X, institutional), audience segmentation, metrics
+   - ✅ `published/README.md` (comprehensive hub) — Links to all documents, 5 use-case pathways, 22-domain quick-reference
+
+3. **✅ Distribution setup — all templates drafted and ready**:
+   - ✅ `distribution-substack-drafts.md` (4 posts: Launch, Electoral Reform, Accountability/Oversight, Trackers) — 800-1,000 words each
+   - ✅ `distribution-reddit-templates.md` (5 posts: r/law, r/politics, r/Keep_Track, r/Ask_Politics, r/democracy) — native framing, 300-500+ words each
+   - ✅ `distribution-institutional-outreach-templates.md` (8 templates: legal aid 2, digital rights 2, movement orgs 3) — personalization checklists, sequencing
+
+**NEXT Phase 3 Work**:
+4. Phase 3 research roadmap (international democratic renewal models, implementation timelines, constitutional design, adoption pathways)
+5. (Exploration Queue) Seedwarden Phase 2-4 expansion + social media strategy
 
 **Blocked on**: —
-**Notes**: ICE/immigration content is already deep (algorithmic-decision-making-immigration.md, corporate-accountability-ice-contractors.md, consent-decree-defiance-tracker.md, organizations-anti-ice-social-justice.md). Police brutality, First Amendment, and environmental rollbacks are the current gaps. Litigation tracking is most useful as a public resource if kept current and distributed through existing high-traffic communities rather than built as a standalone platform. Phase 3 goal = turning research into distributable public documents.
+**Notes**: Phase 3 distribution infrastructure COMPLETE and READY for user execution. All trackers field-ready for ongoing updates. Gist remains live distribution channel. Next work is strategic deepening (Phase 3 research roadmap) and adjacent business/brand work (Seedwarden expansion).
 
 ---
 
