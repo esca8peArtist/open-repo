@@ -338,9 +338,9 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ~~**Seedwarden: Phase 2-4 expansion & social media strategy**~~ — moved to project Current focus (native plants image rebuild is the priority; Phase 2-4 deferred until Phase 1 conversion data in)
 
-- **workout: nutrition and tracking companion** — comprehensive-plan.md is complete but lacks nutrition guidance and progress tracking. Add: a nutrition framework (macros by goal + equipment tier), a weekly tracking template (lifts, bodyweight, energy), and a progress milestone chart. Write to `projects/workout/nutrition-and-tracking.md`. This extends the plan without requiring user review of the existing document.
+- ~~**workout: nutrition and tracking companion**~~ — **Done (Session 493)**: `projects/workout/nutrition-and-tracking.md` (6,226 words) — comprehensive nutrition framework (macro targets by goal/tier/frequency), meal planning with 3 sample days (2,000/2,600/3,000 cal), weekly tracking template, progress timeline expectations, deload protocol, integration with comprehensive-plan.md.
 
-- **cybersecurity-hardening: device hardening deep-dive** — the Palantir threat model is complete. Next gap: practical device hardening for iPhone and Android against government-level surveillance. Research: aeroplane mode vs. full-power-off for RF silence, locked bootloader implications, GrapheneOS vs. CalyxOS tradeoffs, iCloud vs. local backup security, location data brokers and how to opt out, and SIM swapping as an attack vector. Write to `projects/cybersecurity-hardening/device-hardening-guide.md`.
+- ~~**cybersecurity-hardening: device hardening deep-dive**~~ — **Done (Session 493)**: `projects/cybersecurity-hardening/device-hardening-guide.md` (3,200 words) — iPhone hardening (iCloud ADP as critical attack surface, airplane mode vs. power-off technical differences), Android hardening (bootloader paradox, GrapheneOS verified boot recovery, Cellebrite forensics leak data), cross-platform compartmentalization and recovery scenarios, evidence-based (Apple guidelines, GrapheneOS docs, EFF guides, privsec.dev analysis).
 
 ---
 

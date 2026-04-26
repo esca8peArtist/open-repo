@@ -4,6 +4,42 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 Late Evening (23:45 UTC) — Orchestrator Session 493 — Bug Fixes + Exploration Queue
+
+**Session Protocol**: Standard workflow (orientation → select work → execute → commit)
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Phase 5 Integration QA & Bug Fixes** (commit 4b626be)
+   - Identified and fixed 3 bugs in democratic-renewal-proposal.md from session 492 integration:
+     - Duplicate executive summary in section 4.1 (removed uncited version, kept correctly cited)
+     - Concatenated Part V header (line 3708 merger artifact: `# PART V...# PART V...` → single header)
+     - Stale "How to Read This Document" section (now describes all four Part IV sections: roadmap, timeline/conditions, movement coordination, risk assessment)
+   - Verified proposal structure clean: Part I-V complete with all Phase 5 content integrated
+
+2. ✅ **Exploration Queue — Cybersecurity-Hardening: Device Hardening Deep-Dive**
+   - **Deliverable**: `projects/cybersecurity-hardening/device-hardening-guide.md` (3,200 words)
+   - **Key Findings**:
+     - **iPhone**: iCloud Advanced Data Protection is critical attack surface (without ADP, Apple decrypts under warrant; with ADP, Apple cannot). Power-off with Find My disabled needed for genuine RF silence; airplane mode sufficient for IMSI prevention only.
+     - **Android**: Bootloader paradox — unlocking for custom ROM weakens forensics (tools exploit to bypass encryption). GrapheneOS uniquely re-locks bootloader, restoring verified boot. Cellebrite leak (Feb 2025) confirms Pixel+GrapheneOS inaccessible in BFU state.
+     - **F-Droid**: privsec.dev analysis shows infrastructure gaps vs. Play Store. GrapheneOS sandboxed Play resolves this.
+   - **Status**: Complete, ready for user review
+
+3. ✅ **Exploration Queue — Workout: Nutrition & Tracking Companion Guide**
+   - **Deliverable**: `projects/workout/nutrition-and-tracking.md` (6,226 words)
+   - **Content**: Caloric needs by activity level, macro targets by goal/tier/frequency, 3 sample meal plans (2,000/2,600/3,000 cal), weekly tracking template, progress timelines (Weeks 1-4 through 13+), deload protocol, integration examples with comprehensive-plan.md
+   - **Methodology**: Evidence-based (ACSM/ISSN), practical (no-app tracking), focused on consistency over perfection
+   - **Status**: Complete, ready for user review
+
+**Available Orchestrator Work Going Forward**:
+- **High Priority (user action required)**: mfg-farm test print, cybersecurity-hardening Tier 1 outreach, seedwarden tag corrections
+- **Available**: Phase 4 integration into resistance-research Part III (~147 KB comparative-recovery, power-mapping, parallel-institutions, elite-capture content)
+- **Upcoming**: stockbot 1-month checkpoint (2026-05-26)
+
+**Tokens Used**: ~108,000 / 200,000. Remaining: ~92,000 tokens. Usage nominal.
+
+---
+
 ## 2026-04-26 Late Night (02:30 UTC) — Orchestrator Session 491 — Orientation + Next-Session Prep
 
 **Session Protocol**: Orientation phase (state assessment only, no implementation work)
@@ -12040,4 +12076,17 @@ All four Phase 5 documents completed. Proposal now contains full strategic pathw
 - Tracker updates: first-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
 
 **Token Usage**: ~45,000 (confidence check + 4 Phase 5 documents)
+
+## 2026-04-26 — cybersecurity-hardening — Device Hardening Guide (iOS + Android)
+
+**File created**: `/projects/cybersecurity-hardening/device-hardening-guide.md`
+
+**Summary**: Comprehensive device hardening guide for iOS and Android against government-level surveillance. Covers: iPhone iCloud/ADP threat model, airplane mode vs power-off RF analysis (Find My BFU Bluetooth beacon behavior), Lockdown Mode, SIM swapping countermeasures, Faraday pouch use cases, device compartmentalization. Android: GrapheneOS vs CalyxOS vs stock Android with documented threat-model tradeoffs, bootloader re-lock requirement (the critical security paradox of custom ROMs), BFU/AFU forensic extraction states, F-Droid security issues vs Play Store. Cross-platform: power-off decision matrix, compartmentalization profile table, backup strategy by tier, crisis protocol. Sources include Apple law enforcement guidelines (October 2025), leaked Cellebrite support matrix (February 2025), GrapheneOS documentation, EFF SSD, privsec.dev, academic forensics research.
+
+**Key findings**:
+- iCloud without Advanced Data Protection is the most productive law enforcement target against iPhone users — ADP removes Apple's ability to comply with warrants
+- Modern iPhones continue Bluetooth beaconing after power-off if Find My is enabled; only disabling Find My before shutdown provides full RF silence
+- GrapheneOS re-locks the bootloader after installation — this is what makes it forensically durable; CalyxOS/LineageOS with unlocked bootloaders are weaker than stock Android
+- BFU state (before first unlock) is the critical protection posture; power off before potential seizure
+- F-Droid has documented infrastructure vulnerabilities (outdated servers, no TLS pinning, slow updates) that make it weaker than Play Store for security-focused users
 
