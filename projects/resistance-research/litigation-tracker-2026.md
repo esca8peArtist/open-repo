@@ -736,3 +736,70 @@ The government's demand that Xinis rule by April 17 or face an appeal to "a cour
 | TBD | Section 122 CIT case | Three-judge panel ruling on 10% global tariff (argument April 10; panel sharply skeptical; separate from IEEPA) |
 | TBD | Schedule Policy/Career | AFGE/AFSCME Maryland suit (amended complaint filed March 2026); no injunction yet |
 | TBD | MSPB / Federal Circuit | Jackler & Jaroch appeal; outcome will determine whether Schedule Policy/Career employees have any MSPB avenue |
+
+---
+
+## April 26, 2026 — Pre-May Day Monitoring Pass
+
+*Pass conducted April 26, 2026. Two days before the April 28 Xinis hearing. Five days before May Day.*
+
+---
+
+### CRITICAL — DC Circuit Terminates Boasberg Contempt Inquiry (April 15, 2026)
+
+**Case**: In re Grand Jury Investigation (D.C. Circuit, re: Noem v. J.G.G. deportation flights)
+
+**Ruling**: On April 15, 2026, the D.C. Circuit issued a 2-1 opinion ordering Chief Judge James Boasberg to terminate his criminal contempt investigation of the Trump administration for defying a temporary restraining order that blocked flights carrying Venezuelan migrants to El Salvador.
+
+**Majority holding (Judge Neomi Rao)**: Criminal contempt requires an order that is "unmistakably clear and specific." The TRO at issue "did not clearly and specifically bar the government from transferring plaintiffs into Salvadoran custody" because it was ambiguous as to whether it applied to flights already in the air. Therefore the TRO did not satisfy the specificity standard required to support criminal contempt proceedings.
+
+**Dissent (Judge J. Michelle Childs)**: The majority's ruling allows litigants to evade contempt by adopting their own creative interpretations of court orders. "Today's decision invites litigants to exploit even textually dubious interpretations of a court order to avoid being held in contempt."
+
+**Direct relevance to Xinis/April 28**: DOJ will cite this ruling at the April 28 hearing as precedent that any civil contempt order Xinis issues must be drafted with exceptional specificity to survive DC Circuit review. If Xinis does issue contempt sanctions, the administration's first appellate move will be to argue her orders fail the Rao specificity test. This weakens the enforcement mechanism substantially. Lawyers for deportees are seeking full DC Circuit en banc review — not yet resolved.
+
+**Broader significance**: This is the first appellate ruling that directly limits the contempt mechanism in immigration enforcement cases. Combined with the AFSCME v. SSA Fourth Circuit holding (lower courts cannot reassess interim orders even when the factual record shows government deception), it creates a pattern of appellate holdings that reduce the practical enforceability of injunctions against the executive.
+
+**Sources**: [JURIST — DC appellate court ends contempt inquiry over migrant deportations](https://www.jurist.org/news/2026/04/us-appellate-court-ends-contempt-inquiry-over-migrant-deportations/)
+
+---
+
+### Abrego Garcia (D. Md.) — Pre-Hearing Status as of April 26
+
+**Status**: April 28 hearing proceeds as scheduled. Both parties submitted sealed motions on April 23, and Xinis issued a stay of all discovery "with the agreement of the parties" until April 30 at 5:00 p.m. The reason for the agreed stay is sealed. Whether the four court-ordered depositions (due April 23) were actually completed before the stay is not in the public record. Contempt proceedings remain on the table — the ABA Journal confirms Abrego Garcia's attorneys are requesting fines based on civil contempt for the government's discovery defiance (1,140 documents withheld, 32 produced). The Erez Reuveni whistleblower complaint is now cited in the civil case to prevent mooting. Nashville Crenshaw ruling has not issued as of April 26 — still "imminent."
+
+**Enforcement risk from Boasberg ruling**: DOJ will argue any contempt order Xinis issues must meet the Rao specificity standard. Xinis's strongest response is to draft contempt sanctions with explicit reference to specific, documented non-compliance events rather than general defiance. The Reuveni whistleblower complaint is her best evidentiary vehicle for a specificity-proof contempt order.
+
+**Sources**: [ABA Journal — contempt inquiry filing](https://www.abajournal.com/news/article/even-though-abrego-garcia-is-back-in-us-government-stonewalling-merits-contempt-inquiry-court-filing-says) · [NBC News — whistleblower and civil case](https://www.ms.now/deadline-white-house/deadline-legal-blog/kilmar-abrego-garcia-whistleblower-maryland-civil-case-rcna216191) · [Courthouse News — sealed records pressure](https://www.courthousenews.com/press-pushes-back-against-sealed-records-as-abrego-garcias-return-hits-standstill/)
+
+---
+
+### ICE Enforcement Posture — 12% Arrest Decline, Regionally Uneven (April 25 Data)
+
+**New data (April 25)**: Deportation Data Project analysis shows ICE arrests declined from 8,347/week average to 7,369/week — a 12% drop — comparing five-week windows before and after Tom Homan's February 4 drawdown announcement following the Minneapolis killings and subsequent DHS leadership shakeup.
+
+**Regional divergence**: The national decline is not uniform. Arrests increased significantly in Kentucky, Indiana, North Carolina, and Florida during the same period when Minnesota and Texas saw declines. Collateral arrests (people not originally targeted in an operation) fell from over 25% to under 20% of all arrests.
+
+**Practical implication for May Day**: The ICE enforcement posture entering May Day is moderating nationally but elevated in the Southeast and Midwest regions outside Minnesota. The "quieter enforcement" language from NPR (April 4 report on post-Minneapolis shift) reflects a tactical, not strategic, change. Participants in KY, IN, NC, and FL face a materially different risk environment than the national average suggests.
+
+**Sources**: [Washington Times — ICE arrests drop nearly 12% (April 25, 2026)](https://www.washingtontimes.com/news/2026/apr/25/ice-arrests-drop-nearly-12-minneapolis-killings-immigration-shake/) · [NPR — after the Minnesota surge, ICE shifts to quieter enforcement (April 4, 2026)](https://www.npr.org/2026/04/04/nx-s1-5768273/after-minnesota-ice-surge-shift-to-quieter-enforcement) · [CBS News — ICE detained fewer non-criminals](https://www.cbsnews.com/news/ice-detentions-decline-non-criminals-minnesota-crackdown-data/)
+
+---
+
+### Updated Pending Deadlines as of April 26, 2026
+
+| Date | Case / Event | What to Watch |
+|---|---|---|
+| April 28 | Abrego Garcia (D. Md.) | Xinis hearing — contempt ruling? Depositions disclosed? Liberia addressed? |
+| April 29, 7:30 PM ET | May Day Mass Call | Final national coordination call before May 1 |
+| April 30, 5 PM | Abrego Garcia (D. Md.) | Discovery deadline reactivates (unless extended again) |
+| April 30 | AFGE / BOP (D. Conn.) | Preliminary injunction hearing on Schedule Policy/Career / prison staff |
+| Any day | Nashville (Crenshaw) | Dismissal ruling in Abrego Garcia criminal case — record closed |
+| May 1 | May Day | 900+ events confirmed; 3,500+ projected including walkouts |
+| May 4–8 | DHS Payroll | Emergency fund exhausts; first week of May is the operational ceiling |
+| May 15 | DHS Committees | Reconciliation legislation deadline for Homeland Security committees |
+| May 22 | DHS Funding CR | Continuing resolution expires |
+| June 14 | No Kings Day | Next national mobilization |
+| Late June | Trump v. Barbara | SCOTUS decision on birthright citizenship; post-argument read is skeptical of government |
+| TBD | DC Circuit en banc | Boasberg contempt — en banc petition filed; not yet resolved |
+| TBD | Section 122 CIT | Three-judge panel ruling on 10% global tariff |
+| TBD | Mail Voting EO | Preliminary injunction in Massachusetts |
