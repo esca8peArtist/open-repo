@@ -8489,3 +8489,67 @@ projects/open-repo/backend/
 
 **Summary**: 3 parallel subagents. resistance-research surveillance landscape updated with critical Section 702 urgency + April 28-May 1 monitoring framework complete. cybersecurity-hardening Phase 2 implementation guide complete (9,600 words, 8-part executable structure, production-ready). open-repo Phase 3 data model layer complete + 26 tests passing. All work committed to master. Next: monitor April 28-May 1 outcomes; Phase 2 next steps for cybersecurity-hardening (publication prep or deepen); Phase 3 routes for open-repo.
 
+
+---
+
+## Session 417 — Parallel Subagent Status Check (2026-04-26)
+
+### resistance-research — May Day Guide Verified Production-Ready
+
+**Findings**:
+- May Day Action Guide (mayday-2026-action-guide.md): 9 well-structured sections, 60+ sourced links, complete legal analysis (First Amendment, NLRA, federal employee restrictions), situation-specific guidance (undocumented participants, essential workers, remote workers, etc.), post-May Day organizing framework.
+- Monitoring framework: Fully set up with cross-linked templates for April 28 (Xinis hearing results), April 29 (Mass Call post-brief), May 1 (May Day checkpoint). All documents reference each other and the action guide directly.
+- Factual accuracy verified: Event counts ("900+"), AFL-CIO non-endorsement caveat, Section 702 expiry context.
+- **Ready for immediate publication** — zero content blockers.
+
+**Optional improvement** (not blocking): Post-Mass Call update April 29 if new intel emerges (Eyes Up restoration status, route changes in major cities).
+
+**Commit**: `c168979` — Added action guide cross-reference to May 1 monitoring template.
+
+---
+
+### stockbot — Paper Trading Infrastructure Gap Identified
+
+**Status findings**:
+- Ensemble stackers: 16 trained (AAPL configs, Ridge + LightGBM meta-learners), loaded on API startup, but **NOT WIRED INTO ACTIVE PAPER TRADING SESSIONS**.
+- Paper trading: Last 3 sessions ended 2026-04-12 with no P&L data. No active sessions today.
+- Jetson deployment: DEPLOY_READY file mentioned in PROJECTS.md but **was never actually created**. Backend not running on Jetson (Tailscale 100.120.18.84). Jetson deployment chain incomplete.
+- Test suite: 849 passed, 30 failures (pre-existing — vaderSentiment optional dependency, one fixed this session). Not blocking live trading.
+
+**Critical gap**: The "DEPLOY_READY created — Jetson deploy triggered" claim from prior session was documentation-only. No actual deployment occurred.
+
+**Next 3 priorities**:
+1. Wire a stacker into active paper trading session (e.g., AAPL_h10_lgbm_ho_0676c84e) via `POST /api/paper-trading/start` — this is the critical path.
+2. Execute Jetson deployment: SSH to Jetson, run deploy script, confirm systemd service starts.
+3. Backtest all 16 stackers, persist baseline metrics (Sharpe, win-rate, drawdown) to the database for objective model selection.
+
+**Status**: Moved from "monitoring phase" to "infrastructure gap" — paper trading must start before further optimization.
+
+**Files changed**: test_technical_indicators.py (test_empty_dataframe corrected).
+
+---
+
+### cybersecurity-hardening — Publication Prep Complete
+
+**Assessment**:
+- Implementation guide (9,600 words, 8 parts): Content solid, verified accurate, executable. Threat model + opsec playbook + implementation guide form a complete trilogy.
+- **Publication blocker identified**: Not content, but navigational. No table of contents (1,022 lines, no way to jump to specific parts). No glossary (terms like ELITE, BFU, MAID, NSL, MLAT appear without definition). No executive summary for context-setting. These are publishing problems, not content problems.
+
+**Publication prep delivered**:
+- Executive summary (500-800 words): Frames threat (Palantir/Venntel/ELITE specifics), who the corpus is for, what the countermeasure architecture does, honest statement of limits.
+- Full hierarchical TOC: All three documents with sub-section detail. Implementation guide at step granularity (e.g., "Step 2.3: Connect device in fastboot mode").
+- 40-term glossary: ELITE, BFU, Cellebrite, fastboot mode, verified boot, MAID, NSL, MLAT, Section 702, obfs4/Snowflake, Venntel, Palantir, Signal Protocol, Sandboxed Google Play, Orbot, Mullvad, MySudo, VeraCrypt, age, ExifTool, KeePassXC, Diceware, Tails, TSCM, and more.
+
+**Phase 2 deepening recommendation** (ranked by population impact):
+1. **OSINT/data broker deepening**: Expand Part 0 broker opt-outs (200+ brokers, not just top 20), add strategies for ID-restricted services, court-challenge landscape. Highest-impact Tier 1 reader coverage.
+2. **Organizational incident response**: Currently absent. What happens when org leadership is detained? Key/device access, compromise signals, collective security. Relevant to protest organizers and mutual aid networks.
+3. **TSCM** (physical surveillance countermeasures): Narrower Tier 3 audience.
+
+**Verdict**: Publication prep done. Ready for either (a) targeted OSINT deepening, then publish, or (b) publish as-is. Recommend (a).
+
+**Commit**: `69e073d` — Added publication-prep.md with TOC, glossary, executive summary.
+
+---
+
+**Summary**: Three parallel subagents complete. resistance-research ready to publish May Day guide and begin live monitoring. stockbot identified critical deployment gap (paper trading not actually running). cybersecurity-hardening publication prep done; OSINT deepening recommended. All commits on master. Next: Decide action on stockbot paper trading (priority 1 blocker), consider OSINT deepening for cybersecurity-hardening, publish May Day guide.
+
