@@ -34,9 +34,14 @@ For each item in INBOX.md "New Items":
 Then clear the processed items from INBOX.md and log in WORKLOG.md what was done.
 
 ### 3. Select Task
-- Skip any project with Status: Paused or Blocked (unless the block just resolved)
-- Pick the highest-priority Active project with meaningful work available
-- If all projects are blocked, work from the Exploration Queue
+- Skip projects with Status: **Paused**, or **blocked on a named external dependency** (unless that block just resolved)
+- **"Awaiting review" or "awaiting user action" ≠ fully blocked.** These projects still have work available. Re-read the project **Goal** — identify what scope hasn't been built yet. The current deliverable being done does not mean the Goal is achieved.
+- Pick the highest-priority Active project with meaningful work available. If all current deliverables are done but the Goal isn't fully achieved, advancing toward it IS the task.
+- If all projects are genuinely blocked on named external dependencies:
+  1. Check the Exploration Queue. If it has fewer than 3 active (non-crossed-out) items, **add 2–3 new items yourself** before proceeding. Good sources: open questions from recent work, gaps in project coverage, adjacent research that deepens a project's Goal, new angles on any project's threat model or domain.
+  2. Work the top item from the queue.
+- **Never conclude "no autonomous work available"** without first: (a) re-reading project Goals for unfinished scope, and (b) ensuring the Exploration Queue has items. Burning a session on health checks alone when real project work exists is a waste of budget.
+- **Health checks** (Gist accessibility, dashboard status, stockbot readiness) are only warranted within 2 hours of a known scheduled event. Do not run them as a default "nothing else to do" activity.
 
 ### 4. Work
 - Use the appropriate agent profile from `.claude/agents/` for the selected project

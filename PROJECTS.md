@@ -192,6 +192,14 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 - ~~Regulatory landscape for rideshare in major US cities~~ — **Done** (Session 23: `regulatory-compliance-research.md`, 1,002 lines)
 - ~~Etsy SEO and digital product market research — what sells in the homesteading/survival niche?~~ — **Done** (Session 24: `etsy-seo-market-research.md` in seedwarden/, 402 lines — Etsy algorithm mechanics, keyword strategy, competitive landscape, price positioning, title optimization, growth strategy, seasonal planning, bundle strategy, social media, metrics)
 
+- **Palantir and government surveillance infrastructure** — deep research into what Palantir Gotham/Foundry/AIP actually ingests, which federal/state agencies have contracts, and what the real attack surface looks like from a citizen OpSec perspective. Feeds directly into cybersecurity-hardening threat model. Write to `projects/cybersecurity-hardening/palantir-threat-model.md`.
+
+- **off-grid-living: nuclear and radiological preparedness** — the goal explicitly includes nuclear disaster scenarios. Current content is thin here. Research: fallout shelter construction standards, potassium iodide protocols, contamination detection, decontamination procedures, long-term food/water storage under fallout conditions, and community triage. Write to `projects/off-grid-living/` as a new domain file.
+
+- **Stockbot: model evaluation framework** — as paper trading data accumulates, define the criteria for graduating a model from paper to live trading. What Sharpe ratio, max drawdown, win rate, and minimum sample size thresholds should be required? Research standard quantitative finance benchmarks and write a decision framework to `projects/stockbot/model-graduation-criteria.md`.
+
+- **resistance-research: post-launch Phase 2 prep** — litigation tracking infrastructure. Research CourtListener API, PACER access patterns, and how to automate monitoring of key cases (Xinis v. Abrego Garcia and similar). Draft the Phase 2 monitoring templates and data capture workflow. Write to `projects/resistance-research/`.
+
 ---
 
 ## Completed (Archive)
