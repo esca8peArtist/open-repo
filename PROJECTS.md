@@ -162,12 +162,12 @@
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — Phase 3 COMPLETE, **Phase 4 COMPLETE (Phases 1–4 all implemented)**, **194 TESTS PASSING (verified 2026-04-26)**, **BLOCKED on GitHub push (SSH permission issue)**
-**Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
+**Status**: Active — Phase 4 COMPLETE, **feature branch pushed to GitHub** (2026-04-26), awaiting PR merge
+**Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Session 465 (2026-04-26): **WAVE 4 PRODUCTION-READY BUT GITHUB PUSH BLOCKED**. Branch `feature/wave4-phase2-federation-service` (commits `fd2bf0d` Phase 1, `128994f` Phase 2, `557d5eb` Phase 3) verified complete and tested: **194/198 tests passing** (4 skipped), 0 failures. All Wave 4 federation infrastructure production-ready (partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection). **BLOCKER**: SSH key (esca8peArtist) lacks write access to SuperClaude-Org/SuperClaude_Framework repository. Push fails with "permission denied". Branch code is ready; requires GitHub permission fix before push can succeed. **Next**: User either (1) adds esca8peArtist to SuperClaude-Org with push access, OR (2) configures alternate SSH key with access. Then push feature branch and merge. Optional Phase 5 (offline export/Kiwix) can follow.
-**Blocked on**: **GitHub SSH permissions** (SuperClaude-Org write access for esca8peArtist)
-**Notes**: All code, tests, and federation infrastructure COMPLETE and verified working. GitHub push is purely a permission/SSH configuration issue — once resolved, code can be pushed immediately. Phase 5 optional.
+**Current focus**: Branch `feature/wave4-phase2-federation-service` pushed to `https://github.com/esca8peArtist/open-repo`. 194/198 tests passing (4 skipped), 0 failures. Wave 4 federation infrastructure complete (partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection). **Next**: Open a PR from `feature/wave4-phase2-federation-service` → `main` on the open-repo GitHub repo. After merge, begin Phase 5 (offline export/Kiwix integration).
+**Blocked on**: —
+**Notes**: All pushes to GitHub use `git subtree push --prefix=projects/open-repo open-repo <branch>` or `git subtree split` to keep the public repo clean (no SuperClaude Framework internals). Never use `git push origin` for this project.
 
 ---
 
@@ -185,7 +185,7 @@
 
 3. **Deepen nuclear/radiological content** — `15-disaster-scenarios.md` covers nuclear but is likely thin. Expand with: fallout shelter construction standards (FEMA guidelines), potassium iodide protocols (dosing, timing, sourcing), contamination detection (Geiger counters, dosimeters), decontamination procedures, long-term food/water storage under fallout, community triage and casualty management. This is explicitly in scope per the goal.
 
-4. **Publish to GitHub** — create a new public repo (name suggestion: `off-grid-living-guide`) under the user's personal GitHub account. Push all 16 domain files + README. Note: this is NOT the SuperClaude-Org — use the user's personal account (esca8peArtist or equivalent).
+4. **Publish to GitHub** — Repo already created: `https://github.com/esca8peArtist/off-grid-living-guide`. Remote `off-grid` already added (`git@github.com:esca8peArtist/off-grid-living-guide.git`). Push via: `git subtree push --prefix=projects/off-grid-living off-grid main`. Do NOT use `git push origin`.
 
 5. **Draft social media post set** — write a Reddit post for r/offgrid, r/preppers, and r/homesteading (slightly different angle for each), plus a short X/Twitter thread (5–7 tweets) linking to the repo. Save as `social-media-launch-posts.md` in `projects/off-grid-living/`.
 

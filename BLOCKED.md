@@ -27,15 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### open-repo — GitHub push blocked: esca8peArtist key lacks SuperClaude-Org write access
-**Date blocked**: 2026-04-26
-**Context**: Feature branch `feature/wave4-phase2-federation-service` is fully ready (5+ commits, 194 tests passing, 0 failures). All code work complete and verified. Push attempt failed: SSH key authenticates as esca8peArtist, but that account lacks write permission to SuperClaude-Org/SuperClaude_Framework repository.
-**What I need**: Either (1) add esca8peArtist to SuperClaude-Org organization with push access, OR (2) configure an SSH key for an account that already has write access to SuperClaude-Org.
-**Verify with**: `cd /home/awank/dev/SuperClaude_Framework && git push origin feature/wave4-phase2-federation-service && echo "Push succeeded"`
-**Resolution**:
-
----
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -46,6 +37,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### open-repo — GitHub push blocked: esca8peArtist key lacks SuperClaude-Org write access
+**Date blocked**: 2026-04-26
+**Context**: Feature branch `feature/wave4-phase2-federation-service` is fully ready (5+ commits, 194 tests passing, 0 failures). Push attempt failed because origin pointed to third-party SuperClaude-Org/SuperClaude_Framework repo the user doesn't own.
+**What I need**: New public repo under esca8peArtist account.
+**Verify with**: `git ls-remote open-repo HEAD`
+**Resolution**: Resolved 2026-04-26 — Created `esca8peArtist/open-repo` (public). Added `open-repo` remote pointing to `git@github.com:esca8peArtist/open-repo.git`. Pushed main branch and feature branch via `git subtree push --prefix=projects/open-repo`. Feature branch is live at https://github.com/esca8peArtist/open-repo/tree/feature/wave4-phase2-federation-service.
 
 ### stockbot — Python 3.12 required but not available on Pi
 **Date blocked**: 2026-04-12
