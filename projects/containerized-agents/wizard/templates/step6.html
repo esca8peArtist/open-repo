@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}Integrations{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 6 of {{ total_steps }}</span>
+    <h1>Integrations</h1>
+    <p class="subtitle">Connect calendar and email. All integrations are optional and work offline when on the local network.</p>
+  </div>
+
+  <form method="post" action="/step/6" novalidate>
+
+    <!-- CalDAV -->
+    <div style="margin-bottom:1.5rem;">
+      <h2>📅 Calendar (CalDAV)</h2>
+      <p class="subtitle" style="margin-bottom:1rem;">Works with Nextcloud, Fastmail, Apple Calendar, Google Calendar (via bridge), and any CalDAV server.</p>
+      <div class="form-group">
+        <label for="caldav_url">CalDAV server URL</label>
+        <input type="url" id="caldav_url" name="caldav_url" value="{{ state.caldav_url }}"
+          placeholder="https://caldav.example.com/user/calendar/">
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div class="form-group">
+          <label for="caldav_username">Username / email</label>
+          <input type="text" id="caldav_username" name="caldav_username" value="{{ state.caldav_username }}"
+            placeholder="user@example.com" autocomplete="username">
+        </div>
+        <div class="form-group">
+          <label for="caldav_password">Password / app password</label>
+          <input type="password" id="caldav_password" name="caldav_password" value="{{ state.caldav_password }}"
+            autocomplete="current-password">
+        </div>
+      </div>
+    </div>
+
+    <!-- SMTP / Email -->
+    <div>
+      <h2>✉️ Email (SMTP)</h2>
+      <p class="subtitle" style="margin-bottom:1rem;">Lets the agent send emails on your behalf. Use an app password if 2FA is enabled.</p>
+      <div class="form-group">
+        <label for="smtp_host">SMTP host</label>
+        <input type="text" id="smtp_host" name="smtp_host" value="{{ state.smtp_host }}"
+          placeholder="smtp.example.com">
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div class="form-group">
+          <label for="smtp_port">Port</label>
+          <input type="number" id="smtp_port" name="smtp_port" value="{{ state.smtp_port or 587 }}"
+            min="1" max="65535">
+        </div>
+        <div class="form-group">
+          <label for="email_user">Email address</label>
+          <input type="email" id="email_user" name="email_user" value="{{ state.email_user }}"
+            placeholder="you@example.com" autocomplete="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email_password">App password</label>
+        <input type="password" id="email_password" name="email_password" value="{{ state.email_password }}"
+          autocomplete="current-password">
+      </div>
+    </div>
+
+    <div class="info-box">
+      All integration settings can be changed later from the admin dashboard. Leave blank to skip.
+    </div>
+
+    <div class="btn-row">
+      <a href="/step/5" class="btn btn-secondary">&larr; Back</a>
+      <button type="submit" class="btn btn-primary">Continue &rarr;</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

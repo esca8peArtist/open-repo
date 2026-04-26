@@ -1,0 +1,15 @@
+[Unit]
+Description=Claude Live Chat Session (tmux)
+After=network.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/awank/dev/SuperClaude_Framework
+EnvironmentFile=/home/awank/.claude_env
+ExecStartPre=-/usr/bin/tmux kill-session -t chat
+ExecStart=/usr/bin/tmux new-session -d -s chat /home/awank/dev/SuperClaude_Framework/scripts/start-chat.sh
+ExecStop=/usr/bin/tmux kill-session -t chat
+
+[Install]
+WantedBy=default.target

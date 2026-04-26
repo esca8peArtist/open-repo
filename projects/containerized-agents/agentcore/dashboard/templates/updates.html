@@ -1,0 +1,371 @@
+{% extends "base.html" %}
+{% block title %}Updates &mdash; AgentCore Dashboard{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <div class="page-title">Software Updates</div>
+    <div class="page-subtitle">On-device update checker and installer. Updates require an internet connection.</div>
+  </div>
+</div>
+
+<!-- Current version -->
+<div class="card mb-3">
+  <div class="card-body flex-between flex-gap" style="flex-wrap:wrap;">
+    <div>
+      <div class="text-sm text-muted mb-1">Current Version</div>
+      <div class="version-badge">
+        <span>&#9654;</span> AgentCore v{{ version }}
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary" id="btn-check" onclick="checkForUpdates()">
+        Check for Updates
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Offline warning (shown when update check returns offline error) -->
+<div class="alert alert-warn hidden" id="offline-warn">
+  <strong>Device is offline.</strong> Connect to the internet to check for updates.
+  Inference and all local features continue to work normally.
+</div>
+
+<!-- Up-to-date notice -->
+<div class="alert alert-ok hidden" id="up-to-date-notice">
+  <strong>You are up to date.</strong> No newer version is available.
+</div>
+
+<!-- Update available banner -->
+<div class="update-available-banner hidden" id="update-banner">
+  <div style="font-size:1.6rem;">&#8593;</div>
+  <div style="flex:1;">
+    <div style="font-weight:700; font-size:1.05rem;">Update Available</div>
+    <div class="text-sm text-secondary mt-1">
+      New version: <strong id="new-version"></strong> &mdash; current: v{{ version }}
+    </div>
+    <div class="text-sm text-muted mt-1" id="component-count"></div>
+  </div>
+  <button class="btn btn-primary" id="btn-install" onclick="startInstall()">
+    Install Update
+  </button>
+</div>
+
+<!-- Changelog -->
+<div class="card hidden mb-3" id="changelog-card">
+  <div class="card-header"><span class="card-title">Changelog</span></div>
+  <div class="card-body">
+    <div class="changelog-box" id="changelog-text"></div>
+  </div>
+</div>
+
+<!-- Components list -->
+<div class="card hidden mb-3" id="components-card">
+  <div class="card-header"><span class="card-title">Components to Update</span></div>
+  <div class="card-body">
+    <ul class="component-list" id="components-list"></ul>
+  </div>
+</div>
+
+<!-- Installation progress -->
+<div class="card hidden mb-3" id="install-progress-card">
+  <div class="card-header">
+    <span class="card-title">Installing Update</span>
+    <span class="badge badge-amber" id="install-phase-badge">Preparing</span>
+  </div>
+  <div class="card-body">
+    <div class="progress-wrap">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-label">
+        <span id="progress-message">Starting...</span>
+        <span id="progress-pct">0%</span>
+      </div>
+    </div>
+    <div id="install-log" style="margin-top:1rem; max-height:180px; overflow-y:auto; font-family:var(--font-mono); font-size:0.78rem; color:var(--text-secondary);"></div>
+  </div>
+</div>
+
+<!-- Install complete -->
+<div class="alert alert-ok hidden" id="install-complete">
+  <strong>Update complete!</strong> AgentCore is restarting with version <strong id="installed-version"></strong>.
+  This page will automatically refresh in <span id="restart-countdown">15</span> seconds.
+</div>
+
+<!-- Install error -->
+<div class="alert alert-danger hidden" id="install-error">
+  <strong>Installation failed.</strong> <span id="install-error-msg"></span>
+  A rollback may have been applied automatically. Check the <a href="/dashboard/logs">Audit Log</a> for details.
+</div>
+
+<!-- Rollback section -->
+{% if rollback_available %}
+<div class="rollback-section" id="rollback-section">
+  <div class="flex-between flex-gap" style="flex-wrap:wrap;">
+    <div>
+      <div style="font-weight:600; margin-bottom:0.3rem;">&#9654; Rollback Available</div>
+      <div class="text-sm text-secondary">
+        Previous version: <strong>{{ rollback_version }}</strong>. Rollback window expires in
+        <span id="rollback-ttl">{{ rollback_ttl_remaining }}</span> seconds.
+      </div>
+    </div>
+    <button class="btn btn-secondary" onclick="doRollback()">Rollback to {{ rollback_version }}</button>
+  </div>
+</div>
+{% endif %}
+
+<div class="card mt-3">
+  <div class="card-body">
+    <p class="text-sm text-secondary">
+      <strong>How updates work:</strong> AgentCore checks a signed manifest at
+      <code>https://updates.agentcore.io/manifest.json</code>. The manifest signature is verified
+      with an Ed25519 key embedded in this build before any download begins. Downloaded components
+      are SHA-256 verified before being applied. The previous version is saved for 24&nbsp;hours
+      to allow rollback if needed. No automatic updates; all installs require manual confirmation.
+    </p>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+let updateInfo = null;
+let eventSource = null;
+
+// -----------------------------------------------------------------------
+// Check for updates
+// -----------------------------------------------------------------------
+async function checkForUpdates() {
+  const btn = document.getElementById('btn-check');
+  btn.disabled = true;
+  btn.textContent = 'Checking...';
+
+  // Hide previous results
+  hide('offline-warn');
+  hide('up-to-date-notice');
+  hide('update-banner');
+  hide('changelog-card');
+  hide('components-card');
+  hide('install-complete');
+  hide('install-error');
+
+  try {
+    const res = await fetch('/dashboard/updates/check', { method: 'POST' });
+    const data = await res.json();
+    updateInfo = data;
+
+    if (data.error === 'offline') {
+      show('offline-warn');
+      return;
+    }
+
+    if (!data.available) {
+      show('up-to-date-notice');
+      return;
+    }
+
+    // Update available
+    document.getElementById('new-version').textContent = 'v' + data.latest_version;
+    const count = (data.components || []).length;
+    document.getElementById('component-count').textContent = count + ' component' + (count !== 1 ? 's' : '') + ' to download';
+    show('update-banner');
+
+    if (data.changelog) {
+      document.getElementById('changelog-text').textContent = data.changelog;
+      show('changelog-card');
+    }
+
+    if (data.components && data.components.length > 0) {
+      renderComponents(data.components);
+      show('components-card');
+    }
+
+  } catch(e) {
+    alert('Failed to check for updates: ' + e);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Check for Updates';
+  }
+}
+
+function renderComponents(components) {
+  const list = document.getElementById('components-list');
+  list.innerHTML = '';
+  components.forEach(c => {
+    const li = document.createElement('li');
+    const name = c.name || c.type;
+    const size = c.size_bytes ? formatBytes(c.size_bytes) : 'size unknown';
+    li.innerHTML = `
+      <span><strong class="mono">${esc(name)}</strong>
+        ${c.docker_tag ? '<span class="badge badge-gray">' + esc(c.docker_tag) + '</span>' : ''}
+        ${c.version ? '<span class="badge badge-accent">' + esc(c.version) + '</span>' : ''}
+      </span>
+      <span class="text-sm text-muted">${esc(size)}</span>
+    `;
+    list.appendChild(li);
+  });
+}
+
+// -----------------------------------------------------------------------
+// Install update (SSE stream)
+// -----------------------------------------------------------------------
+function startInstall() {
+  if (!updateInfo || !updateInfo.available) return;
+
+  if (!confirm('Install update to v' + updateInfo.latest_version + '?\n\nThis will restart services. Any active conversations will be interrupted.')) {
+    return;
+  }
+
+  document.getElementById('btn-install').disabled = true;
+  hide('update-banner');
+
+  const card = document.getElementById('install-progress-card');
+  show('install-progress-card');
+  document.getElementById('install-log').innerHTML = '';
+
+  if (eventSource) eventSource.close();
+
+  eventSource = new EventSource('/dashboard/updates/install/stream');
+
+  eventSource.onmessage = function(evt) {
+    try {
+      const data = JSON.parse(evt.data);
+      handleInstallEvent(data);
+    } catch(e) {
+      appendLog('Parse error: ' + e);
+    }
+  };
+
+  eventSource.onerror = function() {
+    eventSource.close();
+    appendLog('[SSE connection closed]');
+  };
+}
+
+function handleInstallEvent(data) {
+  if (data.phase === 'heartbeat') return;
+
+  const phaseBadge = document.getElementById('install-phase-badge');
+  const fill = document.getElementById('progress-fill');
+  const msg = document.getElementById('progress-message');
+  const pct = document.getElementById('progress-pct');
+
+  phaseBadge.textContent = data.phase.charAt(0).toUpperCase() + data.phase.slice(1);
+
+  if (data.progress >= 0) {
+    const pctVal = Math.round(data.progress * 100);
+    fill.style.width = pctVal + '%';
+    pct.textContent = pctVal + '%';
+  }
+
+  if (data.message) {
+    msg.textContent = data.message;
+    appendLog(data.message);
+  }
+
+  if (data.phase === 'complete') {
+    eventSource && eventSource.close();
+    hide('install-progress-card');
+    const v = data.new_version || updateInfo.latest_version;
+    document.getElementById('installed-version').textContent = 'v' + v;
+    show('install-complete');
+    // Countdown and reload
+    let seconds = 15;
+    const countEl = document.getElementById('restart-countdown');
+    const timer = setInterval(() => {
+      seconds--;
+      countEl.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.reload();
+      }
+    }, 1000);
+  }
+
+  if (data.phase === 'error') {
+    eventSource && eventSource.close();
+    hide('install-progress-card');
+    document.getElementById('install-error-msg').textContent = data.message || 'Unknown error.';
+    show('install-error');
+    document.getElementById('btn-install').disabled = false;
+  }
+}
+
+// -----------------------------------------------------------------------
+// Rollback
+// -----------------------------------------------------------------------
+async function doRollback() {
+  if (!confirm('Roll back to the previous version? Services will restart.')) return;
+
+  const btn = event.target;
+  btn.disabled = true;
+  btn.textContent = 'Rolling back...';
+
+  try {
+    const res = await fetch('/dashboard/updates/rollback', { method: 'POST' });
+    const data = await res.json();
+    if (data.status === 'ok') {
+      alert(data.message + '\n\nThe page will reload.');
+      window.location.reload();
+    } else {
+      alert('Rollback failed: ' + (data.message || 'unknown error'));
+      btn.disabled = false;
+      btn.textContent = 'Rollback';
+    }
+  } catch(e) {
+    alert('Network error during rollback: ' + e);
+    btn.disabled = false;
+  }
+}
+
+// -----------------------------------------------------------------------
+// Rollback TTL countdown
+// -----------------------------------------------------------------------
+{% if rollback_available and rollback_ttl_remaining %}
+(function() {
+  let remaining = {{ rollback_ttl_remaining }};
+  const el = document.getElementById('rollback-ttl');
+  if (!el) return;
+  const iv = setInterval(() => {
+    remaining--;
+    if (remaining <= 0) {
+      clearInterval(iv);
+      const section = document.getElementById('rollback-section');
+      if (section) section.style.display = 'none';
+      return;
+    }
+    el.textContent = remaining;
+  }, 1000);
+})();
+{% endif %}
+
+// -----------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------
+function show(id) { const el = document.getElementById(id); if (el) el.classList.remove('hidden'); }
+function hide(id) { const el = document.getElementById(id); if (el) el.classList.add('hidden'); }
+
+function appendLog(text) {
+  const log = document.getElementById('install-log');
+  if (!log) return;
+  const line = document.createElement('div');
+  line.textContent = new Date().toISOString().substring(11,19) + ' ' + text;
+  log.appendChild(line);
+  log.scrollTop = log.scrollHeight;
+}
+
+function formatBytes(bytes) {
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+  if (bytes < 1024 * 1024 * 1024) return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+  return (bytes / (1024 * 1024 * 1024)).toFixed(2) + ' GB';
+}
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+{% endblock %}

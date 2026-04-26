@@ -1,0 +1,16 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# Never commit terraform.tfvars — it may contain sensitive configuration.
+
+# AWS region for all resources (S3, IAM).
+# CloudFront is global; the us-east-1 provider alias is configured automatically.
+aws_region = "us-east-1"
+
+# Deployment environment: "staging" or "prod"
+environment = "staging"
+
+# S3 bucket will be created as "<bucket_name_prefix>-<environment>"
+# e.g. "agentcore-updates-staging" or "agentcore-updates-prod"
+bucket_name_prefix = "agentcore-updates"
+
+# Used for resource tags (Project = <project_name>)
+project_name = "agentcore"

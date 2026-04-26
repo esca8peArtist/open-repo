@@ -1,0 +1,76 @@
+# =============================================================================
+# agentcore.service
+# Main AgentCore service — starts all containerized agents after first-boot
+# wizard completes.
+#
+# This service is NOT enabled by default. It is enabled by agentcore-wizard
+# .service upon successful completion of first-boot configuration.
+#
+# It manages the full Docker Compose stack: ollama, open-webui, agentcore,
+# postgres, redis (Tier 3+), and chromadb.
+# =============================================================================
+
+[Unit]
+Description=AgentCore — Containerized AI Agent Stack
+Documentation=https://github.com/SuperClaude-Org/SuperClaude_Framework
+After=network-online.target docker.service
+Wants=network-online.target docker.service
+# Require wizard to have completed at least once
+ConditionPathExists=/opt/agentcore/.wizard-complete
+
+[Service]
+Type=exec
+RemainAfterExit=no
+
+User=root
+WorkingDirectory=/opt/agentcore
+
+# Environment
+EnvironmentFile=/opt/agentcore/.env
+Environment=COMPOSE_HTTP_TIMEOUT=300
+Environment=DOCKER_CLIENT_TIMEOUT=300
+Environment=PYTHONUNBUFFERED=1
+
+# Pre-start validation
+ExecStartPre=/usr/bin/docker compose \
+    --file /opt/agentcore/docker-compose.yml \
+    config --quiet
+
+# Start the full stack (exclude wizard profile)
+ExecStart=/usr/bin/docker compose \
+    --file /opt/agentcore/docker-compose.yml \
+    up --remove-orphans
+
+# Graceful stop — give containers time to flush state
+ExecStop=/usr/bin/docker compose \
+    --file /opt/agentcore/docker-compose.yml \
+    down --timeout 30
+
+# Reload (e.g. after config change): restart only changed containers
+ExecReload=/usr/bin/docker compose \
+    --file /opt/agentcore/docker-compose.yml \
+    up --detach --remove-orphans
+
+# Timeouts
+TimeoutStartSec=300
+TimeoutStopSec=90
+
+# Restart on failure, but with backoff to avoid thrashing
+Restart=on-failure
+RestartSec=30
+StartLimitInterval=300
+StartLimitBurst=3
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=agentcore
+
+# Resource limits
+# Ollama + WebUI are memory-hungry; set a hard ceiling appropriate to your tier
+# Override via /etc/systemd/system/agentcore.service.d/override.conf
+#MemoryMax=48G
+#CPUQuota=800%
+
+[Install]
+WantedBy=multi-user.target

@@ -3,7 +3,7 @@ title: "Domain 13: Community Organization, Governance, and Mutual Aid"
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [08-medical-health, 12-communications, 14-finances-trade, 15-disaster-scenarios, 16-skills-knowledge]
+cross-refs: [08-medical-health, 11-communications, 14-finances-trade, 15-disaster-scenarios, 16-skills-knowledge]
 ---
 
 # Domain 13: Community Organization, Governance, and Mutual Aid

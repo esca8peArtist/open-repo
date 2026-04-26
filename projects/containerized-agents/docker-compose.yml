@@ -1,0 +1,395 @@
+# =============================================================================
+# docker-compose.yml — Containerized Agents
+# Full service stack for AgentCore edge AI agent deployment.
+#
+# Services:
+#   ollama       - Local LLM inference engine (port 11434)
+#   open-webui   - Chat UI / admin dashboard (port 3000, http://agent.local)
+#   agentcore    - Orchestration API (port 8080)
+#   wizard       - First-boot setup wizard (port 8888, profile: wizard only)
+#   postgres     - Conversation history + configuration DB (port 5432)
+#   redis        - Message queue for multi-agent (port 6379)
+#   chromadb     - Vector database for RAG (port 8000)
+#
+# Usage:
+#   cp .env.template .env && vim .env
+#   docker compose up -d                 # run full stack
+#   docker compose --profile wizard up   # run with setup wizard
+#
+# Environment variables are loaded from .env (see .env.template for docs).
+# =============================================================================
+
+name: agentcore
+
+# ---------------------------------------------------------------------------
+# Networks
+# ---------------------------------------------------------------------------
+networks:
+  agentcore-net:
+    name: agentcore-net
+    driver: bridge
+    ipam:
+      config:
+        - subnet: "172.28.0.0/16"
+
+# ---------------------------------------------------------------------------
+# Named volumes (all data persisted locally)
+# ---------------------------------------------------------------------------
+volumes:
+  ollama-data:
+    name: agentcore_ollama_data
+  open-webui-data:
+    name: agentcore_open_webui_data
+  agentcore-data:
+    name: agentcore_agentcore_data
+  wizard-data:
+    name: agentcore_wizard_data
+  postgres-data:
+    name: agentcore_postgres_data
+  redis-data:
+    name: agentcore_redis_data
+  chromadb-data:
+    name: agentcore_chromadb_data
+
+# ---------------------------------------------------------------------------
+# Services
+# ---------------------------------------------------------------------------
+services:
+
+  # --------------------------------------------------------------------------
+  # ollama — Local LLM inference engine
+  # Serves all models via OpenAI-compatible REST API.
+  # GPU/unified-memory accelerated where available.
+  # --------------------------------------------------------------------------
+  ollama:
+    image: ollama/ollama:latest
+    container_name: agentcore-ollama
+    restart: unless-stopped
+    networks:
+      - agentcore-net
+    ports:
+      - "${OLLAMA_HOST:-127.0.0.1}:${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    environment:
+      OLLAMA_HOST: "0.0.0.0"
+      OLLAMA_ORIGINS: "*"
+      OLLAMA_MAX_LOADED_MODELS: "${OLLAMA_MAX_LOADED_MODELS:-2}"
+      OLLAMA_NUM_PARALLEL: "${OLLAMA_NUM_PARALLEL:-1}"
+      OLLAMA_KEEP_ALIVE: "${OLLAMA_KEEP_ALIVE:-5m}"
+    # GPU passthrough (uncomment and configure for NVIDIA GPU hosts)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "3"
+
+  # --------------------------------------------------------------------------
+  # open-webui — Chat UI + admin dashboard
+  # Accessible at http://agent.local (mDNS via avahi on the host).
+  # --------------------------------------------------------------------------
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: agentcore-open-webui
+    restart: unless-stopped
+    networks:
+      - agentcore-net
+    ports:
+      - "${WEBUI_HOST:-0.0.0.0}:${WEBUI_PORT:-3000}:8080"
+    volumes:
+      - open-webui-data:/app/backend/data
+    environment:
+      OLLAMA_BASE_URL: "http://ollama:11434"
+      OPENAI_API_BASE_URL: "http://agentcore:8080/v1"
+      OPENAI_API_KEY: "${AGENTCORE_API_KEY:-agentcore-local}"
+      WEBUI_NAME: "${WEBUI_NAME:-AgentCore}"
+      WEBUI_URL: "${WEBUI_URL:-http://agent.local}"
+      WEBUI_SECRET_KEY: "${WEBUI_SECRET_KEY:?WEBUI_SECRET_KEY must be set in .env}"
+      ENABLE_SIGNUP: "${WEBUI_ENABLE_SIGNUP:-false}"
+      DEFAULT_USER_ROLE: "${WEBUI_DEFAULT_ROLE:-user}"
+      ENABLE_RAG_WEB_SEARCH: "${WEBUI_ENABLE_WEB_SEARCH:-false}"
+      CHROMA_HTTP_HOST: "chromadb"
+      CHROMA_HTTP_PORT: "8000"
+      DATABASE_URL: "postgresql://${POSTGRES_USER:-agentcore}:${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set}@postgres:5432/${POSTGRES_DB:-agentcore}"
+    depends_on:
+      ollama:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      chromadb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "3"
+
+  # --------------------------------------------------------------------------
+  # agentcore — Custom orchestration API
+  # Python asyncio + FastAPI. Handles tool dispatch, multi-step pipelines,
+  # message routing, and inter-agent communication.
+  # Exposed at http://agent.local:8080/api
+  # --------------------------------------------------------------------------
+  agentcore:
+    image: agentcore:${BUNDLE_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.agentcore
+      args:
+        BUNDLE_VERSION: "${BUNDLE_VERSION:-dev}"
+        PROFILE: "${PROFILE:-base}"
+    container_name: agentcore-api
+    restart: unless-stopped
+    networks:
+      - agentcore-net
+    ports:
+      - "${AGENTCORE_HOST:-0.0.0.0}:${AGENTCORE_PORT:-8080}:8080"
+    volumes:
+      - agentcore-data:/app/data
+    environment:
+      ENVIRONMENT: "${ENVIRONMENT:-production}"
+      PROFILE: "${PROFILE:-base}"
+      BUNDLE_VERSION: "${BUNDLE_VERSION:-dev}"
+      AGENTCORE_API_KEY: "${AGENTCORE_API_KEY:-agentcore-local}"
+      AGENTCORE_SECRET: "${AGENTCORE_SECRET:?AGENTCORE_SECRET must be set in .env}"
+      OLLAMA_BASE_URL: "http://ollama:11434"
+      DATABASE_URL: "postgresql://${POSTGRES_USER:-agentcore}:${POSTGRES_PASSWORD:?}@postgres:5432/${POSTGRES_DB:-agentcore}"
+      REDIS_URL: "redis://redis:6379/0"
+      CHROMADB_HOST: "chromadb"
+      CHROMADB_PORT: "8000"
+      # TPM / hardware binding (populated by wizard on first boot)
+      HARDWARE_FINGERPRINT: "${HARDWARE_FINGERPRINT:-}"
+      LICENSE_KEY: "${LICENSE_KEY:-}"
+      # Optional integrations
+      TELEGRAM_BOT_TOKEN: "${TELEGRAM_BOT_TOKEN:-}"
+      TWILIO_ACCOUNT_SID: "${TWILIO_ACCOUNT_SID:-}"
+      TWILIO_AUTH_TOKEN: "${TWILIO_AUTH_TOKEN:-}"
+      TWILIO_PHONE_NUMBER: "${TWILIO_PHONE_NUMBER:-}"
+    depends_on:
+      ollama:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      chromadb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "5"
+
+  # --------------------------------------------------------------------------
+  # wizard — First-boot setup wizard
+  # Only started via `--profile wizard` (or by agentcore-wizard.service).
+  # Runs on port 8888. Guides user through initial configuration, model pull,
+  # hardware binding. Writes /app/data/.wizard-complete when done, which
+  # signals agentcore-wizard.service to enable agentcore.service.
+  # --------------------------------------------------------------------------
+  wizard:
+    image: wizard:${BUNDLE_VERSION:-latest}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.wizard
+      args:
+        BUNDLE_VERSION: "${BUNDLE_VERSION:-dev}"
+    container_name: agentcore-wizard
+    profiles:
+      - wizard
+    restart: "no"
+    networks:
+      - agentcore-net
+    ports:
+      - "${WIZARD_HOST:-0.0.0.0}:${WIZARD_PORT:-8888}:8888"
+    volumes:
+      - wizard-data:/app/data
+      # Bind-mount the agentcore data dir so wizard can write .env and flag files
+      - agentcore-data:/app/agentcore-data
+      # docker.sock is intentionally NOT mounted here.
+      # The wizard pulls models by calling the Ollama REST API (OLLAMA_BASE_URL),
+      # not by invoking Docker commands. Docker socket access is not required and
+      # would grant the wizard container full host escape capability.
+    environment:
+      WIZARD_PORT: "8888"
+      WIZARD_BIND: "0.0.0.0"
+      OLLAMA_BASE_URL: "http://ollama:11434"
+      AGENTCORE_DATA_DIR: "/app/agentcore-data"
+      BUNDLE_VERSION: "${BUNDLE_VERSION:-dev}"
+      # Written by wizard to /app/data/.env after user completes setup
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:-}"
+    depends_on:
+      ollama:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "3"
+
+  # --------------------------------------------------------------------------
+  # postgres — Relational database
+  # Stores: conversation history, audit logs, agent configurations,
+  # user management, multi-agent state.
+  # --------------------------------------------------------------------------
+  postgres:
+    image: postgres:16-alpine
+    container_name: agentcore-postgres
+    restart: unless-stopped
+    networks:
+      - agentcore-net
+    ports:
+      - "${POSTGRES_HOST:-127.0.0.1}:${POSTGRES_EXPOSE_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER:-agentcore}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in .env}"
+      POSTGRES_DB: "${POSTGRES_DB:-agentcore}"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-agentcore} -d ${POSTGRES_DB:-agentcore}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+  # --------------------------------------------------------------------------
+  # redis — Message queue and cache (Tier 3+ profiles, multi-agent)
+  # Used by AgentCore for inter-agent messaging and task queuing.
+  # Enabled by default; can be disabled on Tier 1 by removing from compose.
+  # --------------------------------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: agentcore-redis
+    restart: unless-stopped
+    networks:
+      - agentcore-net
+    ports:
+      - "${REDIS_HOST:-127.0.0.1}:${REDIS_EXPOSE_PORT:-6379}:6379"
+    volumes:
+      - redis-data:/data
+    command: >
+      redis-server
+      --appendonly yes
+      --appendfsync everysec
+      --maxmemory "${REDIS_MAXMEMORY:-512mb}"
+      --maxmemory-policy allkeys-lru
+      --requirepass "${REDIS_PASSWORD:-}"
+      --loglevel notice
+    healthcheck:
+      test: ["CMD", "redis-cli", "--no-auth-warning", "-a", "${REDIS_PASSWORD:-}", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+  # --------------------------------------------------------------------------
+  # nginx — Reverse proxy for http://agent.local
+  # Routes / to open-webui:3000 and /api/ to agentcore:8080.
+  # Handles WebSocket upgrades, gzip compression, static-asset caching,
+  # and security headers.
+  # --------------------------------------------------------------------------
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: agentcore-nginx
+    restart: unless-stopped
+    networks:
+      - agentcore-net
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/services/open-webui/nginx/:/etc/nginx/conf.d/:ro
+    depends_on:
+      open-webui:
+        condition: service_healthy
+      agentcore:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"
+
+  # --------------------------------------------------------------------------
+  # chromadb — Vector database for RAG
+  # Stores embeddings computed locally via nomic-embed-text (through Ollama).
+  # Fully offline — no external API calls.
+  # --------------------------------------------------------------------------
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: agentcore-chromadb
+    restart: unless-stopped
+    networks:
+      - agentcore-net
+    ports:
+      - "${CHROMADB_HOST:-127.0.0.1}:${CHROMADB_EXPOSE_PORT:-8000}:8000"
+    volumes:
+      - chromadb-data:/chroma/chroma
+    environment:
+      IS_PERSISTENT: "TRUE"
+      PERSIST_DIRECTORY: "/chroma/chroma"
+      ANONYMIZED_TELEMETRY: "FALSE"
+      CHROMA_AUTH_TOKEN_TRANSPORT_HEADER: "${CHROMA_AUTH_HEADER:-X-Chroma-Token}"
+      CHROMA_SERVER_AUTHN_CREDENTIALS: "${CHROMA_TOKEN:-}"
+      CHROMA_SERVER_AUTHN_PROVIDER: "${CHROMA_AUTH_PROVIDER:-}"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"

@@ -1,0 +1,112 @@
+{
+  "name": "Sales Outreach",
+  "profile": "sales_outreach",
+  "model": "qwen2.5:14b-instruct",
+  "fallback_model": "qwen2.5:7b-instruct",
+  "system_prompt": "You are a sales outreach agent. Your role is to:\n- Engage prospects via SMS and WhatsApp in a professional, personalized way\n- Qualify leads based on their responses\n- Book meetings and demos on behalf of the sales team\n- Follow up with prospects on a scheduled cadence\n- Track all interactions in the CRM\n\nGuidelines:\n- Keep messages SHORT — this is SMS/WhatsApp, not email\n- Be conversational and human, never robotic or pushy\n- Always provide value in each message\n- Respect opt-out requests immediately and permanently\n- Never spam — respect the configured outreach schedule\n- Personalize using CRM data (name, company, last interaction)\n\nYou represent {company_name}. Your goal: qualify leads and book meetings.",
+  "tools": [
+    {
+      "name": "search_contacts",
+      "description": "Search CRM contacts by name, company, status, or tag.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "get_contact",
+      "description": "Retrieve full CRM record for a single contact by ID.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "add_note",
+      "description": "Add an interaction note to a CRM contact record.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "update_contact_status",
+      "description": "Update a contact's lead status in the CRM (e.g., new → contacted → qualified → meeting_booked → closed).",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "schedule_task",
+      "description": "Schedule a follow-up outreach task for a contact.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "list_scheduled_tasks",
+      "description": "List all pending outreach tasks and follow-up reminders.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "cancel_task",
+      "description": "Cancel a scheduled outreach task (e.g., after opt-out).",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "get_calendar_events",
+      "description": "Check sales team calendar availability for meeting booking.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "create_calendar_event",
+      "description": "Book a meeting or demo on the sales team calendar.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "send_email",
+      "description": "Send outreach or follow-up emails via SMTP.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    }
+  ],
+  "channels": [
+    {
+      "channel_type": "sms",
+      "enabled": true,
+      "config": {
+        "provider": "twilio",
+        "note": "requires_internet"
+      }
+    },
+    {
+      "channel_type": "whatsapp",
+      "enabled": true,
+      "config": {
+        "provider": "twilio",
+        "note": "requires_internet"
+      }
+    },
+    {
+      "channel_type": "web",
+      "enabled": true,
+      "config": {}
+    }
+  ],
+  "hardware_tier": 2,
+  "rag_enabled": false,
+  "rag_collection": null,
+  "active": true,
+  "metadata": {
+    "company_name": "",
+    "outreach_cadence_days": 3,
+    "max_follow_ups": 3,
+    "opt_out_keywords": ["stop", "unsubscribe", "remove me", "opt out"]
+  }
+}

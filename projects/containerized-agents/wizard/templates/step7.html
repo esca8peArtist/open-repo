@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}Model Download{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 7 of {{ total_steps }}</span>
+    <h1>Download AI Models</h1>
+    <p class="subtitle">The following models will be downloaded to this device. Internet required this one time only — models run fully offline afterwards.</p>
+  </div>
+
+  <div style="margin: 1rem 0;">
+    <h2>Models to install</h2>
+    <table class="health-table">
+      <thead><tr><th>Model</th><th>Status</th></tr></thead>
+      <tbody>
+        {% for m in state.models_to_pull %}
+        <tr>
+          <td>{{ m }}</td>
+          <td id="status-{{ loop.index0 }}" data-model="{{ m }}">
+            {% if m in state.models_pulled %}
+            <span class="status-badge ok">Downloaded</span>
+            {% else %}
+            <span class="status-badge pending">Pending</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="log-box" id="pull-log" style="display:none;"></div>
+
+  <div id="pull-controls">
+    {% set all_pulled = state.models_to_pull | length > 0 and state.models_pulled | length == state.models_to_pull | length %}
+    {% if all_pulled %}
+    <div class="success-box">All models downloaded successfully.</div>
+    {% else %}
+    <button type="button" class="btn btn-primary" id="start-pull-btn" onclick="startPull()">
+      Start Download
+    </button>
+    {% endif %}
+  </div>
+
+  <form method="post" action="/step/7" style="margin-top:1.5rem;">
+    <div class="btn-row">
+      <a href="/step/6" class="btn btn-secondary">&larr; Back</a>
+      <button type="submit" class="btn btn-primary" id="next-btn">
+        {% if all_pulled %}Continue &rarr;{% else %}Skip (not recommended){% endif %}
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const log = document.getElementById('pull-log');
+  const nextBtn = document.getElementById('next-btn');
+
+  function startPull() {
+    document.getElementById('start-pull-btn').disabled = true;
+    log.style.display = 'block';
+    log.innerHTML = '<span class="log-info">Connecting to Ollama…</span>\n';
+
+    const evtSource = new EventSource('/step/7/stream');
+
+    evtSource.onmessage = function(e) {
+      let data;
+      try { data = JSON.parse(e.data); } catch { return; }
+
+      if (data.status === 'all_done') {
+        log.innerHTML += '<span class="log-ok">All models downloaded.</span>\n';
+        evtSource.close();
+        nextBtn.textContent = 'Continue →';
+        nextBtn.classList.add('btn-success');
+        return;
+      }
+
+      const line = document.createElement('div');
+      if (data.status === 'done') {
+        line.className = 'log-ok';
+        line.textContent = `✓ ${data.model} — downloaded`;
+        // Update table status
+        document.querySelectorAll('[data-model]').forEach(td => {
+          if (td.dataset.model === data.model) td.innerHTML = '<span class="status-badge ok">Downloaded</span>';
+        });
+      } else if (data.status === 'error') {
+        line.className = 'log-error';
+        line.textContent = `✗ ${data.model}: ${data.detail}`;
+        document.querySelectorAll('[data-model]').forEach(td => {
+          if (td.dataset.model === data.model) td.innerHTML = '<span class="status-badge error">Error</span>';
+        });
+      } else if (data.status === 'pulling') {
+        line.className = 'log-info';
+        line.textContent = `⇩ Pulling ${data.model}…`;
+        document.querySelectorAll('[data-model]').forEach(td => {
+          if (td.dataset.model === data.model) td.innerHTML = '<span class="status-badge pending"><span class="spinner"></span> Downloading</span>';
+        });
+      } else {
+        line.textContent = data.detail || '';
+      }
+      log.appendChild(line);
+      log.scrollTop = log.scrollHeight;
+    };
+
+    evtSource.onerror = function() {
+      const line = document.createElement('div');
+      line.className = 'log-error';
+      line.textContent = '✗ Connection to download stream lost.';
+      log.appendChild(line);
+      evtSource.close();
+    };
+  }
+</script>
+{% endblock %}

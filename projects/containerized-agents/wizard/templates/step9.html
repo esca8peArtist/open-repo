@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}Hardware Validation{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 9 of {{ total_steps }}</span>
+    <h1>Hardware Validation</h1>
+    <p class="subtitle">Benchmark this machine to confirm it can run your chosen profile at a comfortable speed.</p>
+  </div>
+
+  <div style="margin-bottom:1.5rem;">
+    <h2>Benchmark results</h2>
+
+    {% if state.benchmark_score > 0 %}
+    <table class="health-table" id="results-table">
+      <tbody>
+        <tr><td>RAM detected</td><td id="ram-cell">{{ state.ram_gb }} GB</td></tr>
+        <tr><td>Hardware tier</td><td id="tier-cell">Tier {{ state.hardware_tier_detected }}</td></tr>
+        <tr><td>Inference speed</td><td id="speed-cell">{{ state.benchmark_score }} tokens/sec</td></tr>
+        <tr>
+          <td>Profile compatibility</td>
+          <td id="compat-cell">
+            {% if state.profile_compatible %}
+            <span class="status-badge ok">Compatible</span>
+            {% else %}
+            <span class="status-badge error">Insufficient RAM for selected profile</span>
+            {% endif %}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    {% else %}
+    <table class="health-table" id="results-table">
+      <tbody>
+        <tr><td>RAM detected</td><td id="ram-cell"><span class="status-badge pending">—</span></td></tr>
+        <tr><td>Hardware tier</td><td id="tier-cell"><span class="status-badge pending">—</span></td></tr>
+        <tr><td>Inference speed</td><td id="speed-cell"><span class="status-badge pending">—</span></td></tr>
+        <tr><td>Profile compatibility</td><td id="compat-cell"><span class="status-badge pending">—</span></td></tr>
+      </tbody>
+    </table>
+    {% endif %}
+
+    <div id="bench-msg" style="margin-top:0.5rem;font-size:0.88rem;color:var(--color-muted);"></div>
+    <button type="button" class="btn btn-secondary" id="run-bench-btn" onclick="runBenchmark()" style="margin-top:0.75rem;">
+      {% if state.benchmark_score > 0 %}Re-run benchmark{% else %}Run benchmark{% endif %}
+    </button>
+  </div>
+
+  {% if state.benchmark_score > 0 and not state.profile_compatible %}
+  <div class="warn-box">
+    <strong>Warning:</strong> This machine may not have enough RAM for the selected profile ({{ profile_display.get("tagline", "") }} requires {{ profile_display.get("min_ram_gb", "?") }} GB).
+    You can continue, but performance may be degraded. Consider <a href="/step/2">choosing a lighter profile</a>.
+  </div>
+  {% endif %}
+
+  <form method="post" action="/step/9">
+    <div class="btn-row">
+      <a href="/step/8" class="btn btn-secondary">&larr; Back</a>
+      <button type="submit" class="btn btn-primary">Continue &rarr;</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  async function runBenchmark() {
+    const btn = document.getElementById('run-bench-btn');
+    const msg = document.getElementById('bench-msg');
+    btn.disabled = true;
+    msg.textContent = 'Running benchmark — this takes about 30 seconds…';
+
+    try {
+      const res = await fetch('/api/benchmark', { method: 'POST' });
+      const data = await res.json();
+
+      document.getElementById('ram-cell').textContent = data.ram_gb + ' GB';
+      document.getElementById('tier-cell').textContent = 'Tier ' + data.tier;
+      document.getElementById('speed-cell').textContent = data.tokens_per_second + ' tokens/sec'
+        + (data.benchmark_model !== 'none' ? ' (via ' + data.benchmark_model + ')' : '');
+      const compatEl = document.getElementById('compat-cell');
+      compatEl.innerHTML = data.compatible
+        ? '<span class="status-badge ok">Compatible</span>'
+        : '<span class="status-badge error">Insufficient RAM for selected profile</span>';
+      msg.textContent = 'Benchmark complete.';
+    } catch (err) {
+      msg.textContent = 'Benchmark failed: ' + err;
+    }
+    btn.disabled = false;
+    btn.textContent = 'Re-run benchmark';
+  }
+</script>
+{% endblock %}

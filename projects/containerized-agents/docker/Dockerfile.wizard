@@ -1,0 +1,108 @@
+# =============================================================================
+# Dockerfile.wizard
+# AgentCore First-Boot Setup Wizard
+#
+# Python 3.12-slim base. Runs the setup wizard web UI on port 8888.
+# Only started during first boot via agentcore-wizard.service (or
+# `docker compose --profile wizard up`). Disables itself after completion.
+# =============================================================================
+
+ARG PYTHON_VERSION=3.12
+FROM python:${PYTHON_VERSION}-slim AS base
+
+# Build args (injected by build_compose_bundle.sh)
+ARG BUNDLE_VERSION=dev
+ARG GIT_SHA=unknown
+ARG BUILD_DATE=unknown
+
+# OCI labels
+LABEL org.opencontainers.image.title="AgentCore Wizard"
+LABEL org.opencontainers.image.description="First-boot setup wizard for Containerized AI Agents"
+LABEL org.opencontainers.image.version="${BUNDLE_VERSION}"
+LABEL org.opencontainers.image.revision="${GIT_SHA}"
+LABEL org.opencontainers.image.created="${BUILD_DATE}"
+LABEL org.opencontainers.image.vendor="AgentCore"
+
+# ---------------------------------------------------------------------------
+# System dependencies
+# ---------------------------------------------------------------------------
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        curl \
+        ca-certificates \
+        jq \
+        tpm2-tools \
+        pciutils \
+        dmidecode \
+    && rm -rf /var/lib/apt/lists/*
+
+# ---------------------------------------------------------------------------
+# Install uv
+# ---------------------------------------------------------------------------
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+
+# ---------------------------------------------------------------------------
+# Application user (non-root)
+# Note: wizard needs to read TPM / hardware info — still runs as non-root
+# but the service grants it necessary capabilities via the compose file.
+# ---------------------------------------------------------------------------
+RUN groupadd --gid 1002 wizard \
+    && useradd --uid 1002 --gid wizard --no-create-home --shell /usr/sbin/nologin wizard
+
+# ---------------------------------------------------------------------------
+# Working directory
+# ---------------------------------------------------------------------------
+WORKDIR /app
+
+# ---------------------------------------------------------------------------
+# Python dependencies
+# ---------------------------------------------------------------------------
+COPY pyproject.toml uv.lock* ./
+
+RUN uv sync --frozen --no-dev --extra wizard 2>/dev/null \
+    || uv pip install \
+        fastapi>=0.115 \
+        uvicorn[standard]>=0.32 \
+        httpx>=0.27 \
+        pydantic>=2.9 \
+        pydantic-settings>=2.6 \
+        jinja2>=3.1 \
+        python-multipart>=0.0.12 \
+        structlog>=24.4 \
+        asyncpg>=0.30 \
+        cryptography>=43
+
+# ---------------------------------------------------------------------------
+# Application source
+# ---------------------------------------------------------------------------
+COPY src/wizard/ ./wizard/
+# Static assets for the wizard web UI
+COPY src/wizard/static/ ./wizard/static/
+COPY src/wizard/templates/ ./wizard/templates/
+
+# Data directory
+RUN mkdir -p /app/data /app/agentcore-data && \
+    chown wizard:wizard /app/data /app/agentcore-data
+
+# ---------------------------------------------------------------------------
+# Runtime configuration
+# ---------------------------------------------------------------------------
+USER wizard
+
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV WIZARD_PORT=8888
+ENV WIZARD_BIND=0.0.0.0
+
+EXPOSE 8888
+
+HEALTHCHECK --interval=15s --timeout=5s --start-period=15s --retries=10 \
+    CMD curl -f http://localhost:8888/health || exit 1
+
+# ---------------------------------------------------------------------------
+# Entrypoint
+# ---------------------------------------------------------------------------
+CMD ["python", "-m", "uvicorn", "wizard.app:app", \
+     "--host", "0.0.0.0", \
+     "--port", "8888", \
+     "--workers", "1", \
+     "--loop", "asyncio"]

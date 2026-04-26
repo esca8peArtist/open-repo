@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}License Binding{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 10 of {{ total_steps }}</span>
+    <h1>License Binding</h1>
+    <p class="subtitle">Bind the software license to this hardware. No internet required for this step.</p>
+  </div>
+
+  {% if state.license_bound %}
+  <div class="success-box">
+    <strong>License bound</strong> &mdash;
+    Type: <code>{{ state.license_type }}</code> &middot;
+    Tier: {{ state.license_tier }}
+  </div>
+  {% else %}
+    <!-- TPM path (OS image SKU) -->
+    {% if license_status.type == "tpm" %}
+    <div class="info-box">
+      <strong>OS Image SKU detected</strong> — license will be cryptographically bound to this machine's TPM chip.
+      No license key needed.
+    </div>
+    <button type="button" class="btn btn-primary" id="tpm-btn" onclick="bindTPM()">
+      Bind via TPM
+    </button>
+    <div id="tpm-msg" style="margin-top:0.75rem;font-size:0.88rem;"></div>
+    {% else %}
+    <!-- Key path (Docker Compose SKU) -->
+    <div class="info-box">
+      <strong>Docker Compose SKU</strong> — paste your license key below. The key was emailed to you after purchase.
+    </div>
+    <div class="form-group" style="margin-top:1rem;">
+      <label for="license_key">License key</label>
+      <input type="text" id="license_key" name="license_key" placeholder="XXXX-XXXX-XXXX-XXXX…" autocomplete="off">
+    </div>
+    <button type="button" class="btn btn-primary" id="key-btn" onclick="bindKey()">
+      Activate license
+    </button>
+    <div id="key-msg" style="margin-top:0.75rem;font-size:0.88rem;"></div>
+    {% endif %}
+  {% endif %}
+
+  <form method="post" action="/step/10">
+    <div class="btn-row">
+      <a href="/step/9" class="btn btn-secondary">&larr; Back</a>
+      <button type="submit" class="btn btn-primary">Continue &rarr;</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  async function bindTPM() {
+    const btn = document.getElementById('tpm-btn');
+    const msg = document.getElementById('tpm-msg');
+    btn.disabled = true;
+    msg.textContent = 'Binding to TPM…';
+    msg.style.color = '';
+
+    const res = await fetch('/api/license/bind-tpm', { method: 'POST' });
+    const data = await res.json();
+    if (data.success) {
+      msg.textContent = '✓ License bound (Tier ' + data.tier + '). Click Continue.';
+      msg.style.color = 'var(--color-success)';
+    } else {
+      msg.textContent = '✗ ' + data.error;
+      msg.style.color = 'var(--color-error)';
+      btn.disabled = false;
+    }
+  }
+
+  async function bindKey() {
+    const key = document.getElementById('license_key').value.trim();
+    const btn = document.getElementById('key-btn');
+    const msg = document.getElementById('key-msg');
+    if (!key) { msg.textContent = 'Please enter a license key.'; msg.style.color = 'var(--color-error)'; return; }
+
+    btn.disabled = true;
+    msg.textContent = 'Validating…';
+    msg.style.color = '';
+
+    const fd = new FormData();
+    fd.append('license_key', key);
+    const res = await fetch('/api/license/bind-key', { method: 'POST', body: fd });
+    const data = await res.json();
+    if (data.success) {
+      msg.textContent = '✓ License activated (Tier ' + data.tier + '). Click Continue.';
+      msg.style.color = 'var(--color-success)';
+    } else {
+      msg.textContent = '✗ ' + data.error;
+      msg.style.color = 'var(--color-error)';
+      btn.disabled = false;
+    }
+  }
+</script>
+{% endblock %}

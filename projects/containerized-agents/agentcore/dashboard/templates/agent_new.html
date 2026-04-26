@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+{% block title %}New Agent &mdash; AgentCore Dashboard{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <div class="page-title">Create New Agent</div>
+    <div class="page-subtitle">Choose a profile template, then customise the configuration.</div>
+  </div>
+  <a href="/dashboard/" class="btn btn-ghost">Cancel</a>
+</div>
+
+<form method="POST" action="/dashboard/agents/new" id="new-agent-form">
+
+  <!-- Profile selection -->
+  <div class="card mb-3">
+    <div class="card-header">
+      <span class="card-title">Step 1 &mdash; Choose a Profile</span>
+    </div>
+    <div class="card-body">
+      <div class="profile-grid" id="profile-grid">
+        {% for key, meta in profiles.items() %}
+        <label class="profile-card" id="pc-{{ key }}" onclick="selectProfile('{{ key }}', '{{ meta.recommended_model }}')">
+          <input type="radio" name="profile" value="{{ key }}" {% if loop.first %}checked{% endif %}>
+          <div class="profile-card-title">{{ meta.label }}</div>
+          <div class="profile-card-desc">{{ meta.description }}</div>
+          <div class="profile-card-meta">
+            <span class="badge badge-gray">Tier {{ meta.min_tier }}+</span>
+            <span class="badge badge-accent mono">{{ meta.recommended_model }}</span>
+          </div>
+        </label>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Basic config -->
+  <div class="card mb-3">
+    <div class="card-header"><span class="card-title">Step 2 &mdash; Basic Configuration</span></div>
+    <div class="card-body">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="name">Agent Name <span class="required">*</span></label>
+          <input class="form-control" type="text" id="name" name="name"
+                 required maxlength="100" placeholder="e.g. Sales Bot">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="hardware_tier">Hardware Tier</label>
+          <select class="form-control" id="hardware_tier" name="hardware_tier">
+            <option value="1">Tier 1 &mdash; Entry (7B&ndash;8B)</option>
+            <option value="2">Tier 2 &mdash; Mid (up to 32B)</option>
+            <option value="3">Tier 3 &mdash; Pro (up to 70B)</option>
+            <option value="4">Tier 4 &mdash; Enterprise (up to 200B)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="model">Ollama Model <span class="required">*</span></label>
+        <select class="form-control" id="model" name="model">
+          {% for m in ollama_models %}
+          <option value="{{ m }}">{{ m }}</option>
+          {% endfor %}
+        </select>
+        <div class="form-hint">Selecting a profile above will auto-select the recommended model.</div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="system_prompt">System Prompt <span class="required">*</span></label>
+        <textarea class="form-control" id="system_prompt" name="system_prompt"
+                  rows="6" required placeholder="You are a helpful AI assistant...">You are a helpful AI assistant.</textarea>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Tools -->
+  <div class="card mb-3">
+    <div class="card-header"><span class="card-title">Step 3 &mdash; Enable Tools</span></div>
+    <div class="card-body">
+      <div class="check-grid">
+        {% for tool in available_tools %}
+        <label class="form-check">
+          <input type="checkbox" name="tools" value="{{ tool }}"
+                 {% if tool in ['rag_query', 'calculator'] %}checked{% endif %}>
+          <span class="form-check-label mono">{{ tool }}</span>
+        </label>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- Channels -->
+  <div class="card mb-3">
+    <div class="card-header"><span class="card-title">Step 4 &mdash; Communication Channels</span></div>
+    <div class="card-body">
+      <div class="check-grid">
+        {% for ch in available_channels %}
+        <label class="form-check">
+          <input type="checkbox" name="channels" value="{{ ch }}"
+                 {% if ch == 'web' %}checked{% endif %}>
+          <span class="form-check-label">{{ ch | upper }}</span>
+        </label>
+        {% endfor %}
+      </div>
+      <div class="form-hint mt-1">Web and Voice work fully offline. SMS/WhatsApp/Telegram require internet.</div>
+    </div>
+  </div>
+
+  <!-- RAG -->
+  <div class="card mb-3">
+    <div class="card-header"><span class="card-title">Step 5 &mdash; Knowledge Base (optional)</span></div>
+    <div class="card-body">
+      <label class="form-check mb-2">
+        <input type="checkbox" id="rag_enabled" name="rag_enabled" value="on"
+               onchange="document.getElementById('rag-col').style.display=this.checked?'block':'none'">
+        <span class="form-check-label">Enable RAG (Retrieval-Augmented Generation)</span>
+      </label>
+      <div id="rag-col" style="display:none">
+        <div class="form-group">
+          <label class="form-label" for="rag_collection">ChromaDB Collection Name</label>
+          <input class="form-control" type="text" id="rag_collection" name="rag_collection"
+                 placeholder="e.g. my_agent_docs">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-group">
+    <button type="submit" class="btn btn-primary btn-lg">Create Agent</button>
+    <a href="/dashboard/" class="btn btn-ghost">Cancel</a>
+  </div>
+
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Profile recommended prompts
+const PROMPTS = {
+  {% for key, meta in profiles.items() %}
+  '{{ key }}': 'You are a {{ meta.label }} AI assistant. {{ meta.description }}',
+  {% endfor %}
+};
+
+const MODELS = {{ ollama_models | tojson }};
+
+function selectProfile(key, recModel) {
+  // Deselect all profile cards
+  document.querySelectorAll('.profile-card').forEach(c => c.classList.remove('selected'));
+  const card = document.getElementById('pc-' + key);
+  if (card) card.classList.add('selected');
+
+  // Check the hidden radio
+  const radio = card ? card.querySelector('input[type=radio]') : null;
+  if (radio) radio.checked = true;
+
+  // Set system prompt suggestion
+  const promptEl = document.getElementById('system_prompt');
+  if (promptEl && PROMPTS[key]) promptEl.value = PROMPTS[key];
+
+  // Auto-select recommended model if available
+  const modelSel = document.getElementById('model');
+  if (modelSel && recModel) {
+    for (let opt of modelSel.options) {
+      if (opt.value === recModel || opt.value.startsWith(recModel.split(':')[0])) {
+        opt.selected = true;
+        break;
+      }
+    }
+  }
+}
+
+// Mark first profile as selected on load
+document.addEventListener('DOMContentLoaded', () => {
+  const first = document.querySelector('.profile-card');
+  if (first) first.classList.add('selected');
+});
+</script>
+{% endblock %}

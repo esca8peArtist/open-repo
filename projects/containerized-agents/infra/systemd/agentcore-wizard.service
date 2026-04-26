@@ -1,0 +1,84 @@
+# =============================================================================
+# agentcore-wizard.service
+# First-boot setup wizard for Containerized Agents.
+#
+# This service runs exactly once on first boot. It presents a web-based
+# setup wizard on port 8888, guides the user through initial configuration,
+# performs hardware fingerprint binding (TPM), pulls models, and enables
+# agentcore.service when complete.
+#
+# After successful completion the wizard disables itself so it never runs
+# again on subsequent reboots.
+# =============================================================================
+
+[Unit]
+Description=AgentCore First-Boot Setup Wizard
+Documentation=https://github.com/SuperClaude-Org/SuperClaude_Framework
+After=network-online.target docker.service
+Wants=network-online.target docker.service
+ConditionPathExists=!/opt/agentcore/.wizard-complete
+# Do NOT start if the main service is already running (idempotency guard)
+ConditionPathExists=!/opt/agentcore/.agentcore-configured
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+
+User=root
+WorkingDirectory=/opt/agentcore
+
+# Environment
+EnvironmentFile=-/opt/agentcore/.env
+Environment=WIZARD_PORT=8888
+Environment=WIZARD_BIND=0.0.0.0
+Environment=AGENTCORE_DIR=/opt/agentcore
+Environment=PYTHONUNBUFFERED=1
+
+# Pre-start: ensure compose bundle is present
+ExecStartPre=/usr/bin/test -f /opt/agentcore/docker-compose.yml
+
+# Start wizard container
+ExecStart=/usr/bin/docker compose \
+    --file /opt/agentcore/docker-compose.yml \
+    --profile wizard \
+    up --no-deps --wait wizard
+
+# Wait for wizard to report completion (polls /opt/agentcore/.wizard-complete)
+ExecStartPost=/bin/bash -c '\
+    echo "Waiting for wizard to complete..."; \
+    for i in $(seq 1 720); do \
+        if [ -f /opt/agentcore/.wizard-complete ]; then \
+            echo "Wizard completed — enabling agentcore.service"; \
+            systemctl enable --now agentcore.service; \
+            break; \
+        fi; \
+        sleep 5; \
+    done; \
+    if [ ! -f /opt/agentcore/.wizard-complete ]; then \
+        echo "ERROR: Wizard did not complete within 60 minutes" >&2; \
+        exit 1; \
+    fi'
+
+# Stop the wizard container after completion
+ExecStop=/usr/bin/docker compose \
+    --file /opt/agentcore/docker-compose.yml \
+    --profile wizard \
+    stop wizard
+
+# Self-disable after successful run
+ExecStopPost=/bin/systemctl disable agentcore-wizard.service
+
+# Generous timeout — model downloads can take a long time on first boot
+TimeoutStartSec=3600
+TimeoutStopSec=60
+
+# Restart policy — do NOT restart on failure to avoid boot loop
+Restart=no
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=agentcore-wizard
+
+[Install]
+WantedBy=multi-user.target

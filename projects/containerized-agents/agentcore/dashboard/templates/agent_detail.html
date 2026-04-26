@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+{% block title %}{{ agent.name }} &mdash; AgentCore Dashboard{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <div class="page-title">
+      <span class="agent-row-status {% if agent.active and is_live %}active{% elif agent.active %}idle{% else %}off{% endif %}"
+            style="margin-right:0.5rem; vertical-align: middle;"
+            title="{{ 'Active (warm)' if agent.active and is_live else 'Idle' if agent.active else 'Disabled' }}">
+      </span>
+      {{ agent.name }}
+    </div>
+    <div class="page-subtitle">
+      <span class="badge badge-accent">{{ agent.profile.value | replace('_', ' ') | title }}</span>
+      &nbsp;
+      <span class="mono text-sm">{{ agent.model }}</span>
+    </div>
+  </div>
+  <div class="btn-group">
+    <a href="/dashboard/agents/{{ agent.id }}/edit" class="btn btn-secondary">Edit Config</a>
+    <button class="btn btn-{% if agent.active %}ghost{% else %}primary{% endif %}"
+            onclick="toggleAgent('{{ agent.id }}')">
+      {{ 'Disable Agent' if agent.active else 'Enable Agent' }}
+    </button>
+    <button class="btn btn-danger" onclick="deleteAgent('{{ agent.id }}', '{{ agent.name }}')">Delete</button>
+  </div>
+</div>
+
+<div class="grid-2">
+
+  <!-- Config card -->
+  <div class="card">
+    <div class="card-header"><span class="card-title">Configuration</span></div>
+    <div class="card-body">
+      <table style="width:100%; font-size:0.88rem; border-collapse:collapse;">
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0; width:140px;">Agent ID</td>
+          <td class="mono text-sm">{{ agent.id }}</td>
+        </tr>
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">Profile</td>
+          <td>{{ agent.profile.value | replace('_', ' ') | title }}</td>
+        </tr>
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">Model</td>
+          <td class="mono">{{ agent.model }}</td>
+        </tr>
+        {% if agent.fallback_model %}
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">Fallback Model</td>
+          <td class="mono">{{ agent.fallback_model }}</td>
+        </tr>
+        {% endif %}
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">Hardware Tier</td>
+          <td>Tier {{ agent.hardware_tier }}</td>
+        </tr>
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">RAG Enabled</td>
+          <td>
+            {% if agent.rag_enabled %}
+            <span class="badge badge-green">Yes</span>
+            {% if agent.rag_collection %}
+            <span class="text-sm text-muted ml-1">Collection: <code>{{ agent.rag_collection }}</code></span>
+            {% endif %}
+            {% else %}
+            <span class="badge badge-gray">No</span>
+            {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">Status</td>
+          <td>
+            {% if agent.active %}
+            <span class="badge badge-green">Active</span>
+            {% if is_live %}<span class="badge badge-accent">Warm</span>{% endif %}
+            {% else %}
+            <span class="badge badge-gray">Disabled</span>
+            {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">Created</td>
+          <td>{{ agent.created_at.strftime('%Y-%m-%d %H:%M UTC') if agent.created_at else '&mdash;' }}</td>
+        </tr>
+        <tr>
+          <td class="text-muted" style="padding:0.4rem 0;">Updated</td>
+          <td>{{ agent.updated_at.strftime('%Y-%m-%d %H:%M UTC') if agent.updated_at else '&mdash;' }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- System prompt -->
+  <div class="card">
+    <div class="card-header"><span class="card-title">System Prompt</span></div>
+    <div class="card-body">
+      <pre style="max-height:200px; overflow-y:auto; font-size:0.82rem; line-height:1.5; white-space:pre-wrap; word-break:break-word;">{{ agent.system_prompt | e }}</pre>
+    </div>
+  </div>
+
+</div><!-- grid-2 -->
+
+<div class="grid-2 mt-3">
+
+  <!-- Tools -->
+  <div class="card">
+    <div class="card-header"><span class="card-title">Tools ({{ agent.tools | length }})</span></div>
+    {% if agent.tools %}
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Status</th>
+            <th>Needs Internet</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for tool in agent.tools %}
+          <tr>
+            <td class="mono text-sm">{{ tool.name }}</td>
+            <td>
+              {% if tool.enabled %}
+              <span class="badge badge-green">Enabled</span>
+              {% else %}
+              <span class="badge badge-gray">Disabled</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if tool.requires_internet %}
+              <span class="badge badge-amber">Yes</span>
+              {% else %}
+              <span class="badge badge-green">Offline OK</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="card-body"><p class="text-muted text-sm">No tools configured.</p></div>
+    {% endif %}
+  </div>
+
+  <!-- Channels -->
+  <div class="card">
+    <div class="card-header"><span class="card-title">Channels ({{ agent.channels | length }})</span></div>
+    {% if agent.channels %}
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Channel</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for ch in agent.channels %}
+          <tr>
+            <td>
+              <span class="badge badge-accent">{{ ch.channel_type.value | upper }}</span>
+            </td>
+            <td>
+              {% if ch.enabled %}
+              <span class="badge badge-green">Enabled</span>
+              {% else %}
+              <span class="badge badge-gray">Disabled</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="card-body"><p class="text-muted text-sm">No channels configured.</p></div>
+    {% endif %}
+  </div>
+
+</div><!-- grid-2 -->
+
+<div class="card mt-3">
+  <div class="card-header">
+    <span class="card-title">Agent JSON (raw config)</span>
+    <button class="btn btn-ghost btn-sm" onclick="toggleRaw()">Show / Hide</button>
+  </div>
+  <div class="card-body hidden" id="raw-json">
+    <pre style="max-height:350px; overflow-y:auto; font-size:0.78rem; line-height:1.5;">{{ agent.model_dump_json(indent=2) if agent else '' }}</pre>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function toggleRaw() {
+  const el = document.getElementById('raw-json');
+  el.classList.toggle('hidden');
+}
+
+async function toggleAgent(agentId) {
+  if (!confirm('Toggle agent active state?')) return;
+  const res = await fetch('/dashboard/agents/' + agentId + '/toggle', { method: 'POST' });
+  if (res.ok) location.reload();
+  else alert('Error: ' + res.status);
+}
+
+async function deleteAgent(agentId, name) {
+  if (!confirm('Permanently delete agent "' + name + '"? This cannot be undone.')) return;
+  const res = await fetch('/dashboard/agents/' + agentId, {
+    method: 'DELETE',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({confirm: true})
+  });
+  if (res.ok) {
+    window.location.href = '/dashboard/';
+  } else {
+    const data = await res.json().catch(() => ({}));
+    alert('Delete failed: ' + (data.detail || res.status));
+  }
+}
+</script>
+{% endblock %}

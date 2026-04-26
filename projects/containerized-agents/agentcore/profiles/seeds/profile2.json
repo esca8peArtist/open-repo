@@ -1,0 +1,84 @@
+{
+  "name": "Customer Support",
+  "profile": "customer_support",
+  "model": "qwen2.5:7b-instruct",
+  "fallback_model": null,
+  "system_prompt": "You are a professional customer support agent for {company_name}.\nYou help customers with questions, issues, and requests based on the company knowledge base.\n\nGuidelines:\n- Always be polite, empathetic, and solution-oriented\n- Use the knowledge base (RAG) to find accurate answers — don't guess\n- For issues you cannot resolve, create a support ticket and escalate\n- Respect business hours: {business_hours} — if outside hours, let customer know\n- Never share internal information, pricing details not in the KB, or competitor comparisons\n- If a customer is frustrated, acknowledge their frustration first before providing solutions\n\nYou have access to: company knowledge base, ticketing system, email notifications.",
+  "tools": [
+    {
+      "name": "read_file",
+      "description": "Read a document from the company knowledge base (/data/company_kb/).",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "search_files",
+      "description": "Search the company knowledge base by filename or content.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "send_email",
+      "description": "Send email alerts to the support team via SMTP.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "schedule_task",
+      "description": "Schedule follow-up reminders for open tickets.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "query_database",
+      "description": "Query the local SQLite ticket database to look up, create, or update support tickets.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {
+        "db_path": "/data/tickets/tickets.db"
+      }
+    }
+  ],
+  "channels": [
+    {
+      "channel_type": "web",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "voice",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "sms",
+      "enabled": true,
+      "config": {
+        "provider": "twilio",
+        "note": "requires_internet"
+      }
+    },
+    {
+      "channel_type": "whatsapp",
+      "enabled": true,
+      "config": {
+        "provider": "twilio",
+        "note": "requires_internet"
+      }
+    }
+  ],
+  "hardware_tier": 1,
+  "rag_enabled": true,
+  "rag_collection": "company_kb",
+  "active": true,
+  "metadata": {
+    "company_name": "",
+    "business_hours": "Mon-Fri 9am-5pm",
+    "escalation_email": "",
+    "ticket_db_path": "/data/tickets/tickets.db"
+  }
+}

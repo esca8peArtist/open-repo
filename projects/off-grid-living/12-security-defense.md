@@ -4,7 +4,7 @@ domain: 12
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [12-communications, 13-community-organization, 15-disaster-scenarios, 06-energy-power, 04-food-production]
+cross-refs: [11-communications, 13-community-organization, 15-disaster-scenarios, 06-energy-power, 04-food-production]
 ---
 
 # Domain 12: Security & Defense
@@ -567,7 +567,7 @@ Alarm systems for off-grid properties have different requirements than urban res
 **Cell-free notification options:**
 - LoRa (Meshtastic network): text alerts over radio to a nearby node with internet access; free hardware; range 1–10 miles
 - Satellite pager (SPOT Trace, InReach): can send motion-triggered alerts via satellite; $150 hardware + $12–$25/month service
-- Ham radio automated message: more complex; requires radio setup (see 12-communications.md)
+- Ham radio automated message: more complex; requires radio setup (see 11-communications.md)
 
 ---
 
@@ -748,7 +748,7 @@ OPSEC (Operational Security) is the discipline of not broadcasting information t
 - Ham radio traffic is inherently public — never transmit critical information (food stores, security status, cache locations) on repeater nets or open frequencies
 - GMRS and FRS are easily monitored with a $30 scanner
 - For sensitive local communication: face-to-face, or digital modes with encryption on ham radio (JS8Call, Winlink on HF)
-- See 12-communications.md for full radio protocol setup
+- See 11-communications.md for full radio protocol setup
 
 ---
 
@@ -815,7 +815,7 @@ See 13-community-organization.md for community formation, governance, and mutual
 - Designate a shared GMRS channel for community security communication (GMRS channels 15–22 are less congested; channel 20 is a common off-grid community default)
 - Establish a callsign convention for your community (e.g., homestead name + number: "Ridgeline-1, Ridgeline-2")
 - Schedule morning and evening radio check-ins to confirm all households are OK
-- See 12-communications.md for full GMRS setup, repeater options, and grid-down protocols
+- See 11-communications.md for full GMRS setup, repeater options, and grid-down protocols
 
 **Code words:**
 - Simple code words for threat levels allow communication on monitored channels without revealing details to potential adversaries
@@ -1244,9 +1244,9 @@ A consolidated shopping list for a homestead security buildout. Prices are 2026 
 
 | Domain | Intersection |
 |---|---|
-| 12-communications.md | Radio protocols for security alerts; GMRS and ham for community coordination; grid-down communication tree |
+| 11-communications.md | Radio protocols for security alerts; GMRS and ham for community coordination; grid-down communication tree |
 | 13-community-organization.md | Mutual aid governance; watch bill scheduling; community decision-making on security response |
 | 15-disaster-scenarios.md | Civil unrest protocols; extended grid-down security posture; CBRN scenario community coordination |
 | 06-energy-power.md | Power for cameras, lights, NVR; 12V DC circuit design for security devices |
 | 04-food-production.md | Food store security; coop and livestock area integration with predator fencing |
-| 11-shelter-construction.md | Safe room integration in building design; door and window security during construction phase |
+| 02-shelter-construction.md | Safe room integration in building design; door and window security during construction phase |

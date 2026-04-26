@@ -3,7 +3,7 @@ title: "Domain 15: Disaster Scenarios"
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [03-water, 04-food-production, 05-food-preservation, 06-energy-power, 07-heating-cooling, 08-medical-health, 09-waste-sanitation, 10-tools-fabrication, 11-shelter-construction, 12-communications, 13-community-organization, 14-finances-trade]
+cross-refs: [03-water, 04-food-production, 05-food-preservation, 06-energy-power, 07-heating-cooling, 08-medical-health, 09-waste-sanitation, 10-tools-fabrication, 02-shelter-construction, 11-communications, 13-community-organization, 14-finances-trade]
 ---
 
 # Domain 15: Disaster Scenarios

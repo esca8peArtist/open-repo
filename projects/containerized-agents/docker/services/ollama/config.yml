@@ -1,0 +1,77 @@
+# Ollama Service Configuration
+# Containerized AI Agents — v1.0
+# Supports NVIDIA CUDA (Linux) and Apple Metal (macOS) acceleration
+
+ollama:
+  # --- Acceleration ---
+  # Set OLLAMA_GPU_TYPE to one of: nvidia, metal, cpu
+  # The docker-compose.yml or OS image init sets this based on detected hardware.
+  gpu:
+    type: "${OLLAMA_GPU_TYPE:-cpu}"   # nvidia | metal | cpu
+    # NVIDIA-specific: expose all GPUs by default; override per container
+    nvidia_visible_devices: "${NVIDIA_VISIBLE_DEVICES:-all}"
+    # Apple Metal is automatically used by Ollama on macOS; no extra env needed.
+
+  # --- Model Storage ---
+  models_path: /models   # Bind-mounted volume; persist across container restarts
+
+  # --- Concurrency / Resource Limits ---
+  # Maximum number of models to hold in memory simultaneously.
+  # Tier 1/2: 1–2 models; Tier 3/4: up to 4. Overridden by per-tier env var.
+  max_loaded_models: "${OLLAMA_MAX_LOADED_MODELS:-2}"
+
+  # Number of parallel inference requests per model.
+  # Increase on high-VRAM / high-RAM machines.
+  num_parallel: "${OLLAMA_NUM_PARALLEL:-1}"
+
+  # --- Timeouts ---
+  # Seconds before an in-flight inference request is aborted.
+  request_timeout_seconds: 300
+
+  # Seconds of idle time before a loaded model is unloaded from memory.
+  # -1 = never unload (keeps model hot; use on Tier 3/4 with abundant VRAM).
+  keep_alive_seconds: "${OLLAMA_KEEP_ALIVE:-300}"
+
+  # --- Context Window ---
+  # Default context length in tokens. Models that support longer contexts will
+  # use this value unless the request overrides it.
+  context_length: "${OLLAMA_CONTEXT_LENGTH:-8192}"
+
+  # --- Network ---
+  host: "0.0.0.0"
+  port: 11434
+
+  # --- Logging ---
+  log_level: "${OLLAMA_LOG_LEVEL:-info}"   # debug | info | warn | error
+
+  # --- Flash Attention ---
+  # Enable where supported (speeds up inference on CUDA; ignored on Metal).
+  flash_attention: "${OLLAMA_FLASH_ATTENTION:-true}"
+
+# --- Per-Tier Overrides (applied by docker-compose profile or init script) ---
+# These are reference values; actual injection happens via environment variables
+# passed to the Ollama container at start time.
+tier_defaults:
+  tier1:
+    max_loaded_models: 1
+    num_parallel: 1
+    context_length: 8192
+    keep_alive_seconds: 300
+
+  tier2:
+    max_loaded_models: 2
+    num_parallel: 2
+    context_length: 8192
+    keep_alive_seconds: 300
+
+  tier3:
+    max_loaded_models: 2
+    num_parallel: 2
+    context_length: 16384
+    keep_alive_seconds: 600
+
+  tier4:
+    max_loaded_models: 4
+    num_parallel: 4
+    context_length: 32768
+    keep_alive_seconds: -1   # never unload — always-hot for enterprise throughput

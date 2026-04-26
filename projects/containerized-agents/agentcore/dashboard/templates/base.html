@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}AgentCore Dashboard{% endblock %}</title>
+  <link rel="stylesheet" href="/dashboard/static/dashboard.css">
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+<div class="shell">
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="topbar-brand">
+      <div class="brand-icon">&#9654;</div>
+      AgentCore
+    </div>
+
+    <div class="topbar-status">
+      <span class="status-dot green" title="AgentCore API">API</span>
+      <span class="status-dot {% if vram %}green{% else %}gray{% endif %}" title="GPU / VRAM">GPU</span>
+      <span class="status-dot {% if ram and ram.pct < 80 %}green{% elif ram and ram.pct < 95 %}amber{% else %}red{% endif %}" title="RAM">RAM&nbsp;{{ ram.pct if ram else '?' }}%</span>
+      <span class="text-sm text-muted" title="Uptime">&#9650;&nbsp;{{ uptime if uptime is defined else '&mdash;' }}</span>
+      <span class="text-sm text-muted">v{{ version }}</span>
+    </div>
+
+    <div class="topbar-actions">
+      <a href="/dashboard/logout" class="btn btn-ghost btn-sm">Sign out</a>
+    </div>
+  </header>
+
+  <!-- Sidebar navigation -->
+  <nav class="sidebar" aria-label="Main navigation">
+    <div class="sidebar-section">
+      <div class="sidebar-label">Main</div>
+      <a href="/dashboard/" class="nav-link {% if page == 'overview' %}active{% endif %}">
+        <span class="nav-icon">&#9632;</span> Overview
+      </a>
+      <a href="/dashboard/agents" class="nav-link {% if page == 'agents' %}active{% endif %}">
+        <span class="nav-icon">&#9781;</span> Agents
+      </a>
+      <a href="/dashboard/resources" class="nav-link {% if page == 'resources' %}active{% endif %}">
+        <span class="nav-icon">&#9654;</span> Resources
+      </a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-label">System</div>
+      <a href="/dashboard/logs" class="nav-link {% if page == 'logs' %}active{% endif %}">
+        <span class="nav-icon">&#9776;</span> Audit Log
+      </a>
+      <a href="/dashboard/updates" class="nav-link {% if page == 'updates' %}active{% endif %}">
+        <span class="nav-icon">&#8593;</span> Updates
+      </a>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-label">API</div>
+      <a href="/api/docs" class="nav-link" target="_blank" rel="noopener">
+        <span class="nav-icon">&#128196;</span> API Docs
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="content" role="main">
+    {% block content %}{% endblock %}
+  </main>
+
+</div><!-- .shell -->
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

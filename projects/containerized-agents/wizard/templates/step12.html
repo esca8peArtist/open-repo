@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}Go Live{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 12 of {{ total_steps }}</span>
+    <h1>Your Agent is Ready!</h1>
+    <p class="subtitle">Setup is complete. <strong>{{ state.agent_name or "Your agent" }}</strong> is now running on this device.</p>
+  </div>
+
+  <div class="success-box" style="font-size:1rem;">
+    AgentCore has started. The wizard will disable itself &mdash; this page will no longer be accessible after you navigate away.
+  </div>
+
+  <div class="qr-block" style="margin:2rem 0;">
+    {% if qr_b64 %}
+    <img src="data:image/png;base64,{{ qr_b64 }}" alt="QR code for {{ dashboard_url }}" width="200" height="200">
+    {% else %}
+    <div style="width:200px;height:200px;border:2px dashed var(--color-border);display:inline-flex;align-items:center;justify-content:center;border-radius:6px;color:var(--color-muted);font-size:0.88rem;">
+      QR unavailable
+    </div>
+    {% endif %}
+    <div class="qr-url">{{ dashboard_url }}</div>
+    <p style="font-size:0.88rem;color:var(--color-muted);margin-top:0.5rem;">
+      Scan with your phone or open in any browser on your local network
+    </p>
+  </div>
+
+  <h2>Summary</h2>
+  <table class="health-table">
+    <tbody>
+      <tr><td>Agent name</td><td><strong>{{ state.agent_name or "—" }}</strong></td></tr>
+      <tr><td>Primary profile</td><td>Profile {{ state.selected_profile or "—" }}</td></tr>
+      {% if state.additional_profiles %}
+      <tr><td>Additional profiles</td><td>{{ state.additional_profiles | join(", ") }}</td></tr>
+      {% endif %}
+      <tr>
+        <td>Telegram</td>
+        <td>{% if state.telegram_enabled %}<span class="status-badge ok">Enabled</span>{% else %}<span class="status-badge warn">Disabled</span>{% endif %}</td>
+      </tr>
+      <tr>
+        <td>SMS / WhatsApp</td>
+        <td>{% if state.twilio_enabled %}<span class="status-badge ok">Enabled</span>{% else %}<span class="status-badge warn">Disabled</span>{% endif %}</td>
+      </tr>
+      <tr>
+        <td>License</td>
+        <td>{% if state.license_bound %}<span class="status-badge ok">Bound ({{ state.license_type }})</span>{% else %}<span class="status-badge warn">Not bound</span>{% endif %}</td>
+      </tr>
+      <tr>
+        <td>Health check</td>
+        <td>{% if state.health_check_passed %}<span class="status-badge ok">Passed</span>{% else %}<span class="status-badge warn">Some issues</span>{% endif %}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form method="post" action="/step/12" style="margin-top:1.5rem;">
+    <div class="btn-row btn-row-right">
+      <a href="{{ dashboard_url }}" class="btn btn-success" target="_blank">
+        Open Agent Dashboard &rarr;
+      </a>
+    </div>
+  </form>
+</div>
+{% endblock %}

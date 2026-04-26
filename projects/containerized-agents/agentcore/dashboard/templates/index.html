@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block title %}Overview &mdash; AgentCore Dashboard{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <div class="page-title">System Overview</div>
+    <div class="page-subtitle">All agents and system health at a glance.</div>
+  </div>
+  <div class="btn-group">
+    <a href="/dashboard/agents/new" class="btn btn-primary">+ New Agent</a>
+  </div>
+</div>
+
+<!-- Summary stats -->
+<div class="stat-grid">
+  <div class="stat-card">
+    <div class="stat-label">Total Agents</div>
+    <div class="stat-value">{{ agent_count }}</div>
+    <div class="stat-sub">{{ active_agent_count }} active</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Live Instances</div>
+    <div class="stat-value">{{ live_instances | length }}</div>
+    <div class="stat-sub">warm in-memory</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">System RAM</div>
+    <div class="stat-value">{{ ram.pct }}%</div>
+    <div class="stat-sub">{{ ram.used_mb | int }} / {{ ram.total_mb | int }} MB used</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Hardware Tier</div>
+    <div class="stat-value">{{ hardware_tier }}</div>
+    <div class="stat-sub">
+      {% if hardware_tier == 1 %}Entry (~$400&ndash;600)
+      {% elif hardware_tier == 2 %}Mid (~$800&ndash;1,400)
+      {% elif hardware_tier == 3 %}Pro (~$2,400&ndash;3,500)
+      {% else %}Enterprise (~$4,000+)
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- RAM gauge -->
+<div class="card mb-3">
+  <div class="card-header">
+    <span class="card-title">&#9654; Memory Usage</span>
+    {% if vram %}
+    <span class="badge badge-green">GPU detected</span>
+    {% else %}
+    <span class="badge badge-gray">No GPU / CPU-only</span>
+    {% endif %}
+  </div>
+  <div class="card-body">
+    <div class="gauge-wrap">
+      <div class="gauge-label">
+        <span>System RAM</span>
+        <span>{{ ram.used_mb | int }} MB / {{ ram.total_mb | int }} MB</span>
+      </div>
+      <div class="gauge-track">
+        <div class="gauge-fill {% if ram.pct > 90 %}crit{% elif ram.pct > 75 %}warn{% endif %}"
+             style="width:{{ ram.pct }}%"></div>
+      </div>
+    </div>
+
+    {% if vram %}
+    <div class="gauge-wrap mt-2">
+      <div class="gauge-label">
+        <span>GPU VRAM</span>
+        <span>{{ vram.used_mb | int }} MB / {{ vram.total_mb | int }} MB</span>
+      </div>
+      <div class="gauge-track">
+        <div class="gauge-fill {% if vram.pct > 90 %}crit{% elif vram.pct > 75 %}warn{% endif %}"
+             style="width:{{ vram.pct }}%"></div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Agent list -->
+<div class="card mb-3">
+  <div class="card-header">
+    <span class="card-title">&#9781; Agents</span>
+    <a href="/dashboard/agents/new" class="btn btn-secondary btn-sm">+ New</a>
+  </div>
+  {% if agents %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Name</th>
+          <th>Profile</th>
+          <th>Model</th>
+          <th>Channels</th>
+          <th>Created</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for agent in agents %}
+        <tr>
+          <td>
+            <span class="agent-row-status {% if agent.active and agent.id in live_instances %}active{% elif agent.active %}idle{% else %}off{% endif %}"
+                  title="{% if agent.active and agent.id in live_instances %}Active (warm){% elif agent.active %}Idle (inactive){% else %}Disabled{% endif %}">
+            </span>
+          </td>
+          <td><a href="/dashboard/agents/{{ agent.id }}"><strong>{{ agent.name }}</strong></a></td>
+          <td>
+            <span class="badge badge-accent">{{ agent.profile.value | replace('_', ' ') | title }}</span>
+          </td>
+          <td class="mono text-sm">{{ agent.model }}</td>
+          <td>
+            {% for ch in agent.channels %}
+            <span class="badge badge-gray">{{ ch.channel_type.value }}</span>
+            {% else %}
+            <span class="text-muted text-sm">&mdash;</span>
+            {% endfor %}
+          </td>
+          <td class="text-sm text-muted">{{ agent.created_at.strftime('%Y-%m-%d') if agent.created_at else '&mdash;' }}</td>
+          <td>
+            <div class="btn-group">
+              <a href="/dashboard/agents/{{ agent.id }}/edit" class="btn btn-ghost btn-sm">Edit</a>
+              <button class="btn btn-ghost btn-sm"
+                      onclick="toggleAgent('{{ agent.id }}', this)"
+                      data-active="{{ 'true' if agent.active else 'false' }}">
+                {{ 'Disable' if agent.active else 'Enable' }}
+              </button>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="card-body" style="text-align:center; padding: 3rem 1rem;">
+    <p class="text-muted">No agents configured yet.</p>
+    <a href="/dashboard/agents/new" class="btn btn-primary mt-2">Create your first agent</a>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function toggleAgent(agentId, btn) {
+  btn.disabled = true;
+  try {
+    const res = await fetch('/dashboard/agents/' + agentId + '/toggle', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'}
+    });
+    if (res.ok) {
+      location.reload();
+    } else {
+      alert('Toggle failed: ' + res.status);
+    }
+  } catch(e) {
+    alert('Network error: ' + e);
+  } finally {
+    btn.disabled = false;
+  }
+}
+</script>
+{% endblock %}

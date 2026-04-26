@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-03-10T00:00:00Z",
+  "latest": {
+    "version": "1.1.0",
+    "tier1": "1.1.0",
+    "tier2": "1.1.0",
+    "tier3": "1.1.0",
+    "tier4": "1.1.0"
+  },
+  "releases": [
+    {
+      "version": "1.1.0",
+      "published_at": "2026-03-10T00:00:00Z",
+      "min_version": "1.0.0",
+      "changelog": "## AgentCore v1.1.0\n\n### What's new\n- **Voice improvements:** Kokoro-82M TTS latency reduced from ~1s to ~0.4s on Tier 1 hardware.\n- **RAG precision:** ChromaDB embedding pipeline updated; retrieval accuracy improved ~12%.\n- **Admin dashboard:** New \"System Health\" panel showing CPU/RAM/VRAM usage per agent.\n- **Telegram reliability:** Reconnect loop now handles network drops without requiring restart.\n- **Docker Compose SKU:** License key binding wizard step redesigned — clearer error messages.\n\n### Bug fixes\n- Fixed rare race condition in multi-agent message bus under high load (Profile 6).\n- Fixed STT silence detection cutting off long sentences on slower Tier 1 hardware.\n- Wizard step 7 (model pull) no longer times out on slow connections.\n\n### Security\n- Updated base images to Ubuntu 24.04.2 LTS (patches CVE-2026-1234).\n",
+      "critical": false,
+      "components": {
+        "agentcore": {
+          "image_url": "https://updates.agentcore.io/releases/1.1.0/agentcore-1.1.0.tar.gz",
+          "sha256": "a3f1e2b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2",
+          "size_bytes": 312475648,
+          "docker_tag": "agentcore:1.1.0"
+        },
+        "wizard": {
+          "image_url": "https://updates.agentcore.io/releases/1.1.0/wizard-1.1.0.tar.gz",
+          "sha256": "b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5",
+          "size_bytes": 89128960,
+          "docker_tag": "agentcore-wizard:1.1.0"
+        },
+        "models": [
+          {
+            "name": "qwen2.5:7b",
+            "version": "2.5.1",
+            "tiers": [1, 2],
+            "download_url": "https://updates.agentcore.io/models/qwen2.5-7b-instruct-q4_k_m.gguf",
+            "sha256": "c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6",
+            "size_bytes": 4368609280,
+            "optional": false
+          },
+          {
+            "name": "qwen2.5:14b",
+            "version": "2.5.1",
+            "tiers": [2, 3],
+            "download_url": "https://updates.agentcore.io/models/qwen2.5-14b-instruct-q4_k_m.gguf",
+            "sha256": "d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7",
+            "size_bytes": 8053063680,
+            "optional": true
+          }
+        ]
+      }
+    },
+    {
+      "version": "1.0.0",
+      "published_at": "2026-01-15T12:00:00Z",
+      "changelog": "## AgentCore v1.0.0\n\nInitial release.\n\n- All 6 agent profiles operational.\n- Web chat, voice, Telegram channels.\n- Setup wizard steps 1–12.\n- TPM binding for OS image SKU.\n- Offline license key for Docker Compose SKU.\n",
+      "critical": false,
+      "components": {
+        "agentcore": {
+          "image_url": "https://updates.agentcore.io/releases/1.0.0/agentcore-1.0.0.tar.gz",
+          "sha256": "e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8",
+          "size_bytes": 298844160,
+          "docker_tag": "agentcore:1.0.0"
+        },
+        "wizard": {
+          "image_url": "https://updates.agentcore.io/releases/1.0.0/wizard-1.0.0.tar.gz",
+          "sha256": "f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9",
+          "size_bytes": 84934656,
+          "docker_tag": "agentcore-wizard:1.0.0"
+        },
+        "models": [
+          {
+            "name": "qwen2.5:7b",
+            "version": "2.5.0",
+            "tiers": [1, 2],
+            "download_url": "https://updates.agentcore.io/models/qwen2.5-7b-instruct-q4_k_m-v2.5.0.gguf",
+            "sha256": "a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+            "size_bytes": 4294967296,
+            "optional": false
+          }
+        ]
+      }
+    }
+  ],
+  "signature": "PLACEHOLDER_ED25519_SIGNATURE_HEX_REPLACE_WITH_REAL_SIGNING_OUTPUT"
+}

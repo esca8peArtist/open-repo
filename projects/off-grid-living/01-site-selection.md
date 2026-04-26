@@ -4,7 +4,7 @@ domain: 1
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [03-water, 06-energy-power, 04-food-production, 11-shelter-construction, 09-waste-sanitation, 15-disaster-scenarios]
+cross-refs: [03-water, 06-energy-power, 04-food-production, 02-shelter-construction, 09-waste-sanitation, 15-disaster-scenarios]
 ---
 
 # Domain 1: Site Selection & Land
@@ -1168,7 +1168,7 @@ The goal of Phase 3 is to reduce the cash required to a level that can be met by
 | `03-water.md` | Full well drilling, spring development, rainwater system design; references legal framework from this file |
 | `06-energy-power.md` | Solar resource by region ties directly to site sun exposure assessment; wind resource maps |
 | `04-food-production.md` | USDA hardiness zones, growing season length, and soil type directly set production parameters |
-| `11-shelter-construction.md` | Foundation type depends on soil drainage and depth to bedrock from Web Soil Survey; passive solar design requires south-facing site |
+| `02-shelter-construction.md` | Foundation type depends on soil drainage and depth to bedrock from Web Soil Survey; passive solar design requires south-facing site |
 | `09-waste-sanitation.md` | Perc test results determine septic options; composting toilet legality reviewed here; state cross-references apply |
 | `15-disaster-scenarios.md` | Site selection affects every disaster scenario: flood plain avoidance, wildfire interface, tornado corridor, fallout shelter siting |
 | `14-finances-trade.md` | Land cost, carrying costs, and transition budget from this file feed into the full financial model |

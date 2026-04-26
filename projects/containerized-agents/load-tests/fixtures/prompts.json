@@ -1,0 +1,22 @@
+[
+  "Schedule a meeting with the marketing team for next Tuesday at 2 PM.",
+  "Draft a follow-up email to a client who hasn't responded in two weeks.",
+  "Summarise the key points from last quarter's financial report.",
+  "What are the best practices for writing clean Python code?",
+  "Help me debug this error: TypeError: 'NoneType' object is not subscriptable.",
+  "Write a SQL query to find the top 10 customers by total order value.",
+  "Explain the difference between async/await and Promises in JavaScript.",
+  "What is the capital of France and what is it known for?",
+  "Create a project timeline for launching a mobile app in 3 months.",
+  "How do I set up a GitHub Actions CI pipeline for a Python project?",
+  "Rewrite this paragraph to sound more professional and concise.",
+  "What are the pros and cons of microservices vs monolithic architecture?",
+  "Calculate the compound interest on $10,000 at 5% annual rate for 10 years.",
+  "Translate the following sentence to Spanish: 'The meeting starts at noon.'",
+  "Give me five ideas for a team-building activity that works remotely.",
+  "What is the difference between RAM and storage? Explain it simply.",
+  "Review this code snippet and suggest improvements for readability.",
+  "Write a brief product description for a wireless ergonomic keyboard.",
+  "How do I handle rate limiting in a REST API client gracefully?",
+  "Summarise what Docker is and why developers use it."
+]

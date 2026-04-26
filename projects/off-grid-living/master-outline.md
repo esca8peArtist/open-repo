@@ -17,21 +17,22 @@
 | # | Domain | File | Status |
 |---|--------|------|--------|
 | 1 | Site Selection & Land | `01-site-selection.md` | Complete (~1,178 lines) |
-| 2 | Shelter & Construction | `11-shelter-construction.md` | Complete (~1,540 lines) |
+| 2 | Shelter & Construction | `02-shelter-construction.md` | Complete (~1,540 lines) |
 | 3 | Water Systems | `03-water.md` | Complete |
 | 4 | Food Production | `04-food-production.md` | Complete |
 | 5 | Food Preservation & Storage | `05-food-preservation.md` | Complete |
 | 6 | Energy & Power | `06-energy-power.md` | Complete |
 | 7 | Heating & Cooling | `07-heating-cooling.md` | Complete |
-| 8 | Waste & Sanitation | `09-waste-sanitation.md` | Complete |
-| 9 | Medicine & Health | `08-medical-health.md` | Complete |
+| 8 | Medicine & Health | `08-medical-health.md` | Complete |
+| 9 | Waste & Sanitation | `09-waste-sanitation.md` | Complete |
 | 10 | Tools & Fabrication | `10-tools-fabrication.md` | Complete |
-| 11 | Communications | `12-communications.md` | Complete (~1,650 lines) — ham radio, GMRS, Starlink, Iridium, shortwave, EMP hardening, grid-down protocols, power sizing, CBRN comms |
+| 11 | Communications | `11-communications.md` | Complete (~1,650 lines) — ham radio, GMRS, Starlink, Iridium, shortwave, EMP hardening, grid-down protocols, power sizing, CBRN comms |
 | 12 | Security & Defense | `12-security-defense.md` | Complete (~1,252 lines) — threat matrix, perimeter/site layout, natural barriers, fencing costs, lighting, cameras (local NVR), dogs (alert vs. LGD), predator ID by region, coop hardware cloth specs, LGD breed comparison, entry hardening, safe storage, firearms loadout (4-gun homestead), ammo stocking, safe selection, OPSEC, community defense protocols, threat-response quick-reference, quarterly audit checklist, tabletop drills, regional profiles (Southeast/Midwest/Southwest/PNW/Appalachia), equipment reference list |
 | 13 | Community & Governance | `13-community-organization.md` | Complete (~1,700 lines) — governance models (consensus, council, sociocracy), mutual aid setup, skill inventories, conflict resolution ladder, trade/barter ledgers, security governance, emergency decision-making by scenario (CBRN, wildfire, grid-down), membership process, mental health protocols, integration with outside communities |
 | 14 | Finances & Trade | `14-finances-trade.md` | Complete (~1,516 lines) |
 | 15 | Disaster Scenarios | `15-disaster-scenarios.md` | Complete (~1,550 lines) — scenario taxonomy, power outage timeline, storm/hurricane/wildfire/earthquake protocols, pandemic isolation, economic collapse, civil unrest/OPSEC/bug-out, nuclear fallout/KI/shielding/EMP, compound cascades, master decision matrix, tabletop exercises, 45-line cost table |
 | 16 | Skills & Knowledge | `16-skills-knowledge.md` | Complete (~2,091 lines) — skill assessment framework (proficiency matrix, gap analysis, priority quadrant), Tier 1 critical survival skills (water/fire/food/first aid/shelter/navigation), Tier 2 infrastructure (carpentry/plumbing/electrical/engines/welding), Tier 3 food production (garden planning/seed saving/livestock/hunting/wild foods), Tier 4 advanced (suturing/herbal medicine/ham radio/blacksmithing/soap/leather/natural building), learning pathways with specific book titles and YouTube channels, community skill inventory template, skill degradation drills schedule, children's age-staged education, fitness and mental health protocols, documentation system, cost/time investment tables, master 16-domain skills checklist |
+| 17 | Nuclear & Radiological Preparedness | `17-nuclear-radiological-preparedness.md` | Complete (~1,100 lines) — fallout shelter design, potassium iodide protocols, Geiger counters, decontamination procedures, long-term storage under fallout |
 
 ---
 

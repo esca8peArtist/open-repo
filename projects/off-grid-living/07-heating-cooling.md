@@ -4,7 +4,7 @@ domain: 7
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [01-site-selection, 11-shelter-construction, 06-energy-power, 15-disaster-scenarios]
+cross-refs: [01-site-selection, 02-shelter-construction, 06-energy-power, 15-disaster-scenarios]
 ---
 
 # Domain 7: Heating & Cooling

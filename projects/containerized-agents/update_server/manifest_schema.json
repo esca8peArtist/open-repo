@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "AgentCore Update Manifest",
+  "description": "Signed manifest listing available AgentCore releases. Served from S3/CloudFront at updates.agentcore.io/manifest.json",
+  "type": "object",
+  "required": ["schema_version", "latest", "releases", "published_at", "signature"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1,
+      "description": "Manifest schema version. Increment only on breaking changes."
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO8601 UTC timestamp when this manifest was last published."
+    },
+    "latest": {
+      "type": "object",
+      "description": "Shortcut to the latest version string per tier. Clients read this first.",
+      "required": ["version", "tier1", "tier2", "tier3", "tier4"],
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Latest release version (semver)."
+        },
+        "tier1": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Latest version recommended for Tier 1 hardware."
+        },
+        "tier2": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Latest version recommended for Tier 2 hardware."
+        },
+        "tier3": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Latest version recommended for Tier 3 hardware."
+        },
+        "tier4": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Latest version recommended for Tier 4 hardware."
+        }
+      }
+    },
+    "releases": {
+      "type": "array",
+      "description": "Ordered list of releases (newest first).",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/Release"
+      }
+    },
+    "signature": {
+      "type": "string",
+      "description": "Ed25519 signature (hex) over the canonical JSON of all fields except 'signature' itself. Clients must verify before trusting any release data."
+    }
+  },
+  "definitions": {
+    "Release": {
+      "type": "object",
+      "required": ["version", "published_at", "changelog", "components"],
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Release version (semver)."
+        },
+        "published_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO8601 UTC timestamp when this release was published."
+        },
+        "min_version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Minimum installed version that can upgrade to this release. Omit if any version can upgrade."
+        },
+        "changelog": {
+          "type": "string",
+          "description": "Markdown changelog for this release. Shown in the admin dashboard update banner."
+        },
+        "critical": {
+          "type": "boolean",
+          "description": "If true, the dashboard shows a prominent security/critical update warning.",
+          "default": false
+        },
+        "components": {
+          "type": "object",
+          "description": "Container image and model updates included in this release.",
+          "additionalProperties": false,
+          "properties": {
+            "agentcore": {
+              "$ref": "#/definitions/Component",
+              "description": "Main AgentCore orchestration container update."
+            },
+            "wizard": {
+              "$ref": "#/definitions/Component",
+              "description": "Setup/admin wizard container update."
+            },
+            "models": {
+              "type": "array",
+              "description": "Model file updates (Ollama GGUF or safetensors).",
+              "items": {
+                "$ref": "#/definitions/ModelUpdate"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Component": {
+      "type": "object",
+      "required": ["image_url", "sha256", "size_bytes"],
+      "additionalProperties": false,
+      "properties": {
+        "image_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "HTTPS URL to the Docker image tar.gz on our S3/CloudFront CDN."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 hex digest of the image file. Must be verified before applying."
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Uncompressed file size in bytes. Used to show download progress."
+        },
+        "docker_tag": {
+          "type": "string",
+          "description": "Docker image tag to apply after loading (e.g. agentcore:1.1.0)."
+        }
+      }
+    },
+    "ModelUpdate": {
+      "type": "object",
+      "required": ["name", "version", "tiers", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Model name as used in Ollama (e.g. qwen2.5:7b)."
+        },
+        "version": {
+          "type": "string",
+          "description": "Model version or release tag."
+        },
+        "tiers": {
+          "type": "array",
+          "description": "Hardware tiers for which this model update applies.",
+          "items": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "minItems": 1
+        },
+        "download_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Direct HTTPS URL to download the model file."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 hex digest of the model file."
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Model file size in bytes."
+        },
+        "optional": {
+          "type": "boolean",
+          "description": "If true, this model update can be skipped by the user.",
+          "default": false
+        }
+      }
+    }
+  }
+}

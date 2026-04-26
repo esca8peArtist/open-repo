@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}AgentCore Setup{% endblock %} — AgentCore Wizard</title>
+  <link rel="stylesheet" href="/static/wizard.css">
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <!-- ===== Progress bar ===== -->
+  {% if current_step and current_step > 0 %}
+  <div class="progress-bar-wrap">
+    <span class="progress-label">Step {{ current_step }} of {{ total_steps }}</span>
+    <div class="progress-track">
+      <div class="progress-fill" style="width: {{ ((current_step / total_steps) * 100) | int }}%"></div>
+    </div>
+    <div class="progress-steps">
+      {% for n in range(1, total_steps + 1) %}
+        {% if n in completed_steps %}
+          <div class="progress-dot done" title="Step {{ n }} complete"></div>
+        {% elif n == current_step %}
+          <div class="progress-dot active" title="Step {{ n }} (current)"></div>
+        {% else %}
+          <div class="progress-dot" title="Step {{ n }}"></div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="wizard-outer">
+    <main class="wizard-main">
+
+      {% if error %}
+      <div class="error-box" role="alert">{{ error }}</div>
+      {% endif %}
+
+      {% block content %}{% endblock %}
+
+    </main>
+
+    <footer class="wizard-footer">
+      AgentCore Setup Wizard &mdash; running on this device at port 8888
+    </footer>
+  </div>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

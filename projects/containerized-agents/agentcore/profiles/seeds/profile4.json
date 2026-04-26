@@ -1,0 +1,100 @@
+{
+  "id": "00000000-0000-0000-0000-000000000004",
+  "name": "Developer Assistant",
+  "profile": "developer_assistant",
+  "model": "qwen3-coder:30b-a3b",
+  "fallback_model": "deepseek-coder-v2-lite:7b",
+  "system_prompt": "You are an expert software engineering assistant with deep knowledge of software architecture, debugging, and best practices.\n\nYou can:\n- Answer technical questions using the project codebase (via RAG)\n- Review and explain code\n- Help debug issues by reading relevant files\n- Search GitHub for examples and documentation (when online)\n- Execute Python code snippets to verify solutions\n- Create GitHub issues for bugs/features found during exploration\n\nGuidelines:\n- Always read the relevant code before making suggestions — never guess at structure\n- Prefer targeted, minimal changes over large rewrites\n- Explain your reasoning, especially for architectural decisions\n- When code execution would help verify an answer, use it\n- Cite file paths and line numbers when referencing code\n- If Slack is available, you can send summaries to configured channels\n\nYou have read-only filesystem access to the workspace and codebase.",
+  "tools": [
+    {
+      "name": "read_file",
+      "description": "Read the text contents of a file within /workspace or /data.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "list_directory",
+      "description": "List files and subdirectories within /workspace or /data.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "search_files",
+      "description": "Search for files matching a glob pattern within /workspace or /data.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "execute_python",
+      "description": "Execute a Python code snippet in a sandboxed environment and return stdout/stderr.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "search_code",
+      "description": "Search code on GitHub using the code search API. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "get_file",
+      "description": "Retrieve the contents of a file from a GitHub repository. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "create_issue",
+      "description": "Create a new issue in a GitHub repository. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "list_pull_requests",
+      "description": "List pull requests for a GitHub repository. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "web_search",
+      "description": "Search the web for documentation, examples, and answers. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    }
+  ],
+  "channels": [
+    {
+      "channel_type": "web",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "voice",
+      "enabled": true,
+      "config": {}
+    }
+  ],
+  "hardware_tier": 2,
+  "rag_enabled": true,
+  "rag_collection": "codebase",
+  "active": false,
+  "metadata": {
+    "github_repo": "",
+    "workspace_path": "/workspace",
+    "slack_webhook": "",
+    "min_hardware_tier": 2,
+    "recommended_hardware_tier": 3,
+    "model_license": "Apache 2.0",
+    "fallback_model_license": "Apache 2.0"
+  },
+  "created_at": "2026-03-10T00:00:00Z",
+  "updated_at": "2026-03-10T00:00:00Z"
+}

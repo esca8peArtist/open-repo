@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}Voice Setup{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 8 of {{ total_steps }}</span>
+    <h1>Voice Setup</h1>
+    <p class="subtitle">Test your microphone and speaker, then download the speech models. Voice works entirely offline.</p>
+  </div>
+
+  <div style="margin-bottom:1.5rem;">
+    <h2>Hardware test</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:0.75rem;">
+      <div class="card" style="box-shadow:none;border:1.5px solid var(--color-border);text-align:center;padding:1.25rem;">
+        <div style="font-size:2rem;">🎤</div>
+        <div style="font-weight:600;margin:0.5rem 0;">Microphone</div>
+        <div id="mic-status" class="status-badge {% if state.mic_tested %}ok{% else %}pending{% endif %}" style="margin-bottom:0.75rem;">
+          {% if state.mic_tested %}Tested ✓{% else %}Not tested{% endif %}
+        </div>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="testMic()">Test mic</button>
+        <div id="mic-msg" style="margin-top:0.4rem;font-size:0.8rem;color:var(--color-muted);"></div>
+      </div>
+
+      <div class="card" style="box-shadow:none;border:1.5px solid var(--color-border);text-align:center;padding:1.25rem;">
+        <div style="font-size:2rem;">🔊</div>
+        <div style="font-weight:600;margin:0.5rem 0;">Speaker</div>
+        <div id="spk-status" class="status-badge {% if state.speaker_tested %}ok{% else %}pending{% endif %}" style="margin-bottom:0.75rem;">
+          {% if state.speaker_tested %}Tested ✓{% else %}Not tested{% endif %}
+        </div>
+        <button type="button" class="btn btn-secondary btn-sm" onclick="testSpeaker()">Play test tone</button>
+        <div id="spk-msg" style="margin-top:0.4rem;font-size:0.8rem;color:var(--color-muted);"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:1.5rem;">
+    <h2>Speech models</h2>
+    <table class="health-table">
+      <thead><tr><th>Model</th><th>Purpose</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><code>{{ stt_model }}</code></td>
+          <td>Speech-to-Text (Whisper large-v3)</td>
+          <td id="stt-status">
+            {% if state.stt_model_downloaded %}
+            <span class="status-badge ok">Ready</span>
+            {% else %}
+            <span class="status-badge pending">Not downloaded</span>
+            {% endif %}
+          </td>
+        </tr>
+        <tr>
+          <td><code>{{ tts_model }}</code></td>
+          <td>Text-to-Speech (Kokoro-82M)</td>
+          <td id="tts-status">
+            {% if state.tts_model_downloaded %}
+            <span class="status-badge ok">Ready</span>
+            {% else %}
+            <span class="status-badge pending">Not downloaded</span>
+            {% endif %}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-primary btn-sm" id="dl-voice-btn" onclick="downloadVoiceModels()"
+      style="margin-top:0.75rem;"
+      {% if state.stt_model_downloaded and state.tts_model_downloaded %}disabled{% endif %}>
+      Download speech models
+    </button>
+    <div id="dl-msg" style="margin-top:0.4rem;font-size:0.88rem;color:var(--color-muted);"></div>
+  </div>
+
+  <div class="info-box">
+    Voice is standard on all profiles (hardware permitting). You can skip this step and set up voice later.
+  </div>
+
+  <form method="post" action="/step/8">
+    <input type="hidden" name="skip_voice" value="">
+    <div class="btn-row">
+      <a href="/step/7" class="btn btn-secondary">&larr; Back</a>
+      <button type="submit" class="btn btn-primary">Continue &rarr;</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  async function apiPost(url) {
+    const res = await fetch(url, { method: 'POST' });
+    return res.json();
+  }
+
+  async function testMic() {
+    document.getElementById('mic-msg').textContent = 'Recording 2 seconds…';
+    const data = await apiPost('/api/voice/test-mic');
+    const el = document.getElementById('mic-status');
+    el.className = 'status-badge ' + (data.success ? 'ok' : 'error');
+    el.textContent = data.success ? 'Tested ✓' : 'Failed';
+    document.getElementById('mic-msg').textContent = data.message;
+  }
+
+  async function testSpeaker() {
+    document.getElementById('spk-msg').textContent = 'Playing test tone…';
+    const data = await apiPost('/api/voice/test-speaker');
+    const el = document.getElementById('spk-status');
+    el.className = 'status-badge ' + (data.success ? 'ok' : 'error');
+    el.textContent = data.success ? 'Tested ✓' : 'Failed';
+    document.getElementById('spk-msg').textContent = data.message;
+  }
+
+  async function downloadVoiceModels() {
+    const btn = document.getElementById('dl-voice-btn');
+    const msg = document.getElementById('dl-msg');
+    btn.disabled = true;
+    msg.textContent = 'Downloading… this may take a few minutes.';
+
+    const data = await apiPost('/api/voice/download-models');
+    document.getElementById('stt-status').innerHTML = data.stt
+      ? '<span class="status-badge ok">Ready</span>'
+      : '<span class="status-badge error">Failed</span>';
+    document.getElementById('tts-status').innerHTML = data.tts
+      ? '<span class="status-badge ok">Ready</span>'
+      : '<span class="status-badge error">Failed</span>';
+    msg.textContent = (data.stt && data.tts) ? 'Both models downloaded successfully.' : 'Some models failed — check your internet connection.';
+  }
+</script>
+{% endblock %}

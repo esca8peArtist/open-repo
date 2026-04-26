@@ -1,0 +1,134 @@
+# Ollama Model Manifest — Per Hardware Tier
+# Containerized AI Agents — v1.0
+#
+# Licensing: all models listed here are Apache 2.0 or MIT — cleared for
+# commercial resale and redistribution. See requirements.md §7 for detail.
+#
+# Notes:
+#   - stt (whisper-large-v3) is served via faster-whisper, NOT via Ollama.
+#   - tts (kokoro-82m) is served by the kokoro-tts container, NOT via Ollama.
+#   - Models marked with a note are pulled by pull_models.sh only when the
+#     relevant PROFILE is active.
+
+# ---------------------------------------------------------------------------
+# Tier 1 — Entry hardware (~$400–600)
+# Recommended: Mac Mini M4 16 GB | Beelink EQR6 32 GB
+# Profiles: Personal Productivity (1), Customer Support (2)
+# ---------------------------------------------------------------------------
+tier1:
+  primary:
+    model: qwen2.5:7b-instruct
+    license: apache-2.0
+    min_ram_gb: 8
+    description: "Primary general-purpose model for Tier 1 profiles"
+
+  fallback:
+    model: phi4-mini
+    license: mit
+    min_ram_gb: 4
+    description: "Lightweight fallback for very constrained memory conditions"
+
+  embeddings:
+    model: nomic-embed-text
+    license: apache-2.0
+    min_ram_gb: 2
+    description: "Local RAG embeddings — all profiles"
+
+  # STT and TTS are NOT Ollama models; listed here for documentation only.
+  stt:
+    model: whisper-large-v3
+    served_by: faster-whisper   # separate container / service
+    license: mit
+    note: "Do NOT pull via ollama pull — managed by the whisper service"
+
+  tts:
+    model: kokoro-82m
+    served_by: kokoro-tts       # separate container / service
+    license: apache-2.0
+    note: "Do NOT pull via ollama pull — managed by the kokoro service"
+
+# ---------------------------------------------------------------------------
+# Tier 2 — Mid hardware (~$800–1,400)
+# Recommended: Mac Mini M4 Pro 24 GB
+# Profiles: 1, 2, 3, 4 (lightweight)
+# ---------------------------------------------------------------------------
+tier2:
+  primary:
+    model: qwen2.5:14b-instruct
+    license: apache-2.0
+    min_ram_gb: 16
+    description: "Primary model — handles Sales (Profile 3) and Developer lite (Profile 4)"
+
+  fallback:
+    model: qwen2.5:7b-instruct
+    license: apache-2.0
+    min_ram_gb: 8
+    description: "Fallback to 7B when 14B is under memory pressure"
+
+  embeddings:
+    model: nomic-embed-text
+    license: apache-2.0
+    min_ram_gb: 2
+    description: "Local RAG embeddings — all profiles"
+
+# ---------------------------------------------------------------------------
+# Tier 3 — Pro hardware (~$2,400–3,500)
+# Recommended: Mac Mini M4 Pro 64 GB | Custom RTX 4090 Mini-ITX
+# Profiles: 4 (full Developer Assistant), 5 (Business Intelligence)
+# ---------------------------------------------------------------------------
+tier3:
+  primary:
+    model: deepseek-r1:14b
+    license: mit
+    min_ram_gb: 16
+    description: "Primary reasoning model for BI (Profile 5)"
+
+  coding:
+    model: qwen2.5-coder:32b-instruct-q4_K_M
+    license: apache-2.0
+    min_ram_gb: 24
+    description: "Coding-optimised model for Developer Assistant (Profile 4)"
+    note: "qwen3-coder:30b-a3b — use quantised Ollama tag when available"
+
+  fallback:
+    model: qwen2.5:14b-instruct
+    license: apache-2.0
+    min_ram_gb: 16
+    description: "Fallback when primary is under load"
+
+  embeddings:
+    model: nomic-embed-text
+    license: apache-2.0
+    min_ram_gb: 2
+    description: "Local RAG embeddings — all profiles"
+
+# ---------------------------------------------------------------------------
+# Tier 4 — Enterprise hardware (~$4,000–8,000)
+# Recommended: NVIDIA DGX Spark
+# Profiles: 6 (Enterprise Orchestrator) + concurrent multi-agent
+# ---------------------------------------------------------------------------
+tier4:
+  orchestrator:
+    model: qwen3:72b
+    license: apache-2.0
+    min_ram_gb: 64
+    description: "Top-level orchestrator for Profile 6; quantised Q4 build"
+    ollama_tag: qwen3:72b-q4_K_M
+
+  subagents:
+    model: qwen2.5:7b-instruct
+    license: apache-2.0
+    min_ram_gb: 8
+    description: "Parallel sub-agent workers spawned by the orchestrator"
+
+  reasoning:
+    model: deepseek-r1:14b
+    license: mit
+    min_ram_gb: 16
+    description: "Dedicated reasoning / chain-of-thought model"
+
+  embeddings:
+    model: nomic-embed-text
+    license: apache-2.0
+    min_ram_gb: 2
+    description: "Local RAG embeddings — all profiles"

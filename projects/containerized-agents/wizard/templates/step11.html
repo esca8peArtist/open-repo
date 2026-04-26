@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}Health Check{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 11 of {{ total_steps }}</span>
+    <h1>Health Check</h1>
+    <p class="subtitle">Running a self-test on all services before going live.</p>
+  </div>
+
+  <table class="health-table" id="health-table">
+    <thead><tr><th>Service</th><th>Status</th><th>Detail</th></tr></thead>
+    <tbody id="health-body">
+      {% if state.health_check_results %}
+        {% for name, info in state.health_check_results.items() %}
+        <tr>
+          <td>{{ name | replace("_", " ") | title }}</td>
+          <td>
+            <span class="health-dot {{ 'ok' if info.ok else 'error' }}"></span>
+            {{ "OK" if info.ok else "FAIL" }}
+          </td>
+          <td style="font-family:var(--mono);font-size:0.8rem;color:var(--color-muted);">{{ info.detail }}</td>
+        </tr>
+        {% endfor %}
+      {% else %}
+        <!-- Placeholder rows filled by SSE -->
+        {% for svc in ["ollama", "open_webui", "agentcore", "chromadb", "postgres"] %}
+        <tr id="row-{{ svc }}">
+          <td>{{ svc | replace("_", " ") | title }}</td>
+          <td><span class="health-dot pending"></span> <span id="status-{{ svc }}">Pending</span></td>
+          <td id="detail-{{ svc }}" style="font-family:var(--mono);font-size:0.8rem;color:var(--color-muted);">—</td>
+        </tr>
+        {% endfor %}
+      {% endif %}
+    </tbody>
+  </table>
+
+  <div id="health-summary" style="margin-top:0.75rem;">
+    {% if state.health_check_passed %}
+    <div class="success-box">All services healthy. Ready to go live.</div>
+    {% elif state.health_check_results %}
+    <div class="warn-box">Some services failed. You can continue anyway, but some features may not work.</div>
+    {% else %}
+    <button type="button" class="btn btn-primary" id="run-health-btn" onclick="runHealthChecks()">
+      Run health check
+    </button>
+    {% endif %}
+  </div>
+
+  <form method="post" action="/step/11">
+    <div class="btn-row">
+      <a href="/step/10" class="btn btn-secondary">&larr; Back</a>
+      <button type="submit" class="btn btn-primary">Continue &rarr;</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% if not state.health_check_results %}
+<script>
+  function runHealthChecks() {
+    document.getElementById('run-health-btn').disabled = true;
+
+    const evtSource = new EventSource('/step/11/stream');
+    evtSource.onmessage = function(e) {
+      let data;
+      try { data = JSON.parse(e.data); } catch { return; }
+
+      if (data.status === 'done') {
+        evtSource.close();
+        const summary = document.getElementById('health-summary');
+        summary.innerHTML = data.all_ok
+          ? '<div class="success-box">All services healthy. Ready to go live.</div>'
+          : '<div class="warn-box">Some services failed. You can continue anyway, but some features may not work.</div>';
+        return;
+      }
+
+      const svc = data.service;
+      const statusEl = document.getElementById('status-' + svc);
+      const detailEl = document.getElementById('detail-' + svc);
+      const dotEl = document.querySelector('#row-' + svc + ' .health-dot');
+      if (!statusEl) return;
+
+      statusEl.textContent = data.ok ? 'OK' : 'FAIL';
+      if (dotEl) { dotEl.className = 'health-dot ' + (data.ok ? 'ok' : 'error'); }
+      if (detailEl) { detailEl.textContent = data.detail; }
+    };
+
+    evtSource.onerror = function() {
+      evtSource.close();
+      document.getElementById('health-summary').innerHTML =
+        '<div class="error-box">Health check stream lost. Reload the page to retry.</div>';
+    };
+  }
+</script>
+{% endif %}
+{% endblock %}

@@ -3,7 +3,7 @@ title: "Domain 12: Communications"
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [06-energy-power, 08-medical-health, 11-shelter-construction, 13-community-organization, 15-disaster-scenarios]
+cross-refs: [06-energy-power, 08-medical-health, 02-shelter-construction, 13-community-organization, 15-disaster-scenarios]
 ---
 
 # Domain 12: Communications
@@ -1836,7 +1836,7 @@ Find local clubs at arrl.org/find-an-amateur-radio-club.
   battery bank design; charge controller selection
 - **[08-medical-health.md]**: Medical information distribution via radio;
   Winlink for medical consultation; CBRN health protocols
-- **[11-shelter-construction.md]**: Antenna mounting on structure; Faraday
+- **[02-shelter-construction.md]**: Antenna mounting on structure; Faraday
   cage integration; underground shelter comms penetrations; CBRN hardened
   shelter comms
 - **[13-community-organization.md]**: Community radio net structure; net control

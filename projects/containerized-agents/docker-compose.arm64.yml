@@ -1,0 +1,85 @@
+# =============================================================================
+# docker-compose.arm64.yml — Compose override for ARM64 / NVIDIA Jetson
+#
+# Applies Jetson-specific resource limits, runtime, and profile constraints
+# on top of the base docker-compose.yml.
+#
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.arm64.yml up -d
+#
+# Prerequisites on the Jetson host:
+#   - JetPack 6.x
+#   - nvidia-container-runtime installed and registered with Docker
+#     (sudo apt install nvidia-container-runtime)
+#   - Docker CE (not Desktop)
+#   - 64 GB+ NVMe storage recommended
+#
+# Profiles:
+#   (default) — core services only: ollama, agentcore, postgres, redis
+#   full      — adds open-webui and chromadb (requires Orin NX 16GB or larger)
+#
+# Memory budget guidance:
+#   Orin Nano 8GB  : personal profile only; open-webui + chromadb opt-in via
+#                    --profile full (not recommended; expect OOM pressure)
+#   Orin NX 16GB   : Tier 2; full profile usable; increase agentcore to 2g
+#   AGX Orin 32GB  : Tier 3; remove limits or increase as needed
+# =============================================================================
+
+services:
+
+  # --------------------------------------------------------------------------
+  # ollama — Jetson-optimised image with CUDA / NVMM support
+  # ollama/ollama:latest publishes a multi-arch manifest that includes
+  # linux/arm64 with JetPack/CUDA support for Jetson Orin series.
+  # --------------------------------------------------------------------------
+  ollama:
+    image: ollama/ollama:latest   # multi-arch: includes arm64 + Jetson CUDA
+    runtime: nvidia               # requires nvidia-container-runtime on host
+    deploy:
+      resources:
+        limits:
+          memory: 6g
+    environment:
+      - OLLAMA_MODELS=${OLLAMA_MODELS:-phi3:mini}
+
+  # --------------------------------------------------------------------------
+  # agentcore — constrained to 1 GB on Nano; raise to 2g on NX/AGX
+  # --------------------------------------------------------------------------
+  agentcore:
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+
+  # --------------------------------------------------------------------------
+  # postgres — lightweight; 256 MB is sufficient for the default workload
+  # --------------------------------------------------------------------------
+  postgres:
+    deploy:
+      resources:
+        limits:
+          memory: 256m
+
+  # --------------------------------------------------------------------------
+  # redis — in-memory cache; 128 MB covers typical agent message queuing
+  # --------------------------------------------------------------------------
+  redis:
+    deploy:
+      resources:
+        limits:
+          memory: 128m
+
+  # --------------------------------------------------------------------------
+  # open-webui — opt-in only on constrained hardware.
+  # Enable with: docker compose ... --profile full up -d
+  # Not recommended on Orin Nano 8GB due to memory pressure.
+  # --------------------------------------------------------------------------
+  open-webui:
+    profiles: ["full"]
+
+  # --------------------------------------------------------------------------
+  # chromadb — opt-in only on constrained hardware.
+  # Enable with: docker compose ... --profile full up -d
+  # --------------------------------------------------------------------------
+  chromadb:
+    profiles: ["full"]

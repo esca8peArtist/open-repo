@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% block title %}Resources &mdash; AgentCore Dashboard{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <div>
+    <div class="page-title">Hardware Resources</div>
+    <div class="page-subtitle">RAM / VRAM usage and tier compatibility.</div>
+  </div>
+  <span class="tier-badge">Tier {{ hardware_tier }} &mdash; {{ tier_info.label }}</span>
+</div>
+
+<!-- RAM / VRAM gauges -->
+<div class="card mb-3">
+  <div class="card-header"><span class="card-title">System Memory</span></div>
+  <div class="card-body">
+
+    <div class="gauge-wrap">
+      <div class="gauge-label">
+        <span><strong>System RAM</strong></span>
+        <span>{{ ram.used_mb | int }} MB used / {{ ram.total_mb | int }} MB total
+          ({{ ram.available_mb | int }} MB free)</span>
+      </div>
+      <div class="gauge-track">
+        <div class="gauge-fill {% if ram.pct > 90 %}crit{% elif ram.pct > 75 %}warn{% endif %}"
+             style="width:{{ ram.pct }}%"></div>
+      </div>
+      {% if ram.pct > 90 %}
+      <div class="alert alert-danger mt-1">
+        RAM usage is critically high ({{ ram.pct }}%). Consider disabling inactive agents or upgrading hardware.
+      </div>
+      {% elif ram.pct > 75 %}
+      <div class="alert alert-warn mt-1">
+        RAM usage is elevated ({{ ram.pct }}%). Monitor for degraded performance.
+      </div>
+      {% endif %}
+    </div>
+
+    {% if vram %}
+    <div class="gauge-wrap mt-3">
+      <div class="gauge-label">
+        <span><strong>GPU VRAM</strong> <span class="badge badge-gray">{{ vram.source }}</span></span>
+        <span>{{ vram.used_mb | int }} MB used / {{ vram.total_mb | int }} MB total</span>
+      </div>
+      <div class="gauge-track">
+        <div class="gauge-fill {% if vram.pct > 90 %}crit{% elif vram.pct > 75 %}warn{% endif %}"
+             style="width:{{ vram.pct }}%"></div>
+      </div>
+    </div>
+    {% else %}
+    <div class="alert alert-info mt-2">
+      No GPU detected (nvidia-smi not available). All inference runs on CPU / unified memory.
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<!-- Per-agent resource allocation -->
+<div class="card mb-3">
+  <div class="card-header">
+    <span class="card-title">Per-Agent Allocation</span>
+    <span class="text-sm text-muted">Estimated based on model size; actual usage varies.</span>
+  </div>
+  {% if agents %}
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Agent</th>
+          <th>Model</th>
+          <th>Tier</th>
+          <th>Est. RAM</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for agent in agents %}
+        <tr>
+          <td><a href="/dashboard/agents/{{ agent.id }}">{{ agent.name }}</a></td>
+          <td class="mono text-sm">{{ agent.model }}</td>
+          <td><span class="badge badge-accent">Tier {{ agent.hardware_tier }}</span></td>
+          <td class="text-sm text-muted">
+            {# Estimate based on model name patterns #}
+            {% if '70b' in agent.model.lower() or '72b' in agent.model.lower() %}~40 GB
+            {% elif '30b' in agent.model.lower() or '32b' in agent.model.lower() %}~18 GB
+            {% elif '14b' in agent.model.lower() %}~9 GB
+            {% elif '7b' in agent.model.lower() or '8b' in agent.model.lower() %}~5 GB
+            {% else %}varies
+            {% endif %}
+          </td>
+          <td>
+            {% if agent.active %}
+            <span class="badge badge-green">Active</span>
+            {% else %}
+            <span class="badge badge-gray">Inactive</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="card-body"><p class="text-muted text-sm">No agents configured.</p></div>
+  {% endif %}
+</div>
+
+<!-- Tier compatibility matrix -->
+<div class="card mb-3">
+  <div class="card-header">
+    <span class="card-title">Hardware Tier Compatibility</span>
+  </div>
+  <div class="card-body">
+    <div class="compat-matrix">
+      {% for t, info in all_tier_info.items() %}
+      <div class="compat-cell {% if t == hardware_tier %}current{% endif %}">
+        <div style="font-weight:600; margin-bottom:0.3rem;">{{ info.label }}</div>
+        <div class="text-sm text-muted">RAM: {{ info.ram }}</div>
+        <div class="text-sm">Profiles: {{ info.profiles }}</div>
+        <div class="text-sm text-muted">{{ info.models }}</div>
+        {% if t == hardware_tier %}
+        <div class="badge badge-accent mt-1" style="margin:0.4rem auto 0; display:inline-flex;">Current</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <hr>
+    <p class="text-sm text-muted">
+      Your device is running at <strong>Tier {{ hardware_tier }}</strong>.
+      Profiles that require a higher tier may experience slower inference or OOM errors.
+      See <a href="/dashboard/agents/new">New Agent</a> for profile-to-tier recommendations.
+    </p>
+  </div>
+</div>
+
+{% endblock %}

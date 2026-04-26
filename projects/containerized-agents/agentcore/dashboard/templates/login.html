@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In &mdash; AgentCore Dashboard</title>
+  <link rel="stylesheet" href="/dashboard/static/dashboard.css">
+</head>
+<body>
+<div class="login-shell">
+  <div class="login-card">
+    <div class="login-title">AgentCore</div>
+    <p class="login-subtitle">Admin Dashboard &mdash; sign in with your API key.</p>
+
+    {% if error %}
+    <div class="alert alert-danger mb-2">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST" action="/dashboard/login">
+      <div class="form-group">
+        <label class="form-label" for="api_key">API Key <span class="required">*</span></label>
+        <input
+          class="form-control"
+          type="password"
+          id="api_key"
+          name="api_key"
+          autocomplete="current-password"
+          autofocus
+          required
+          placeholder="Enter your admin API key"
+        >
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Sign in</button>
+    </form>
+
+    <p class="text-sm text-muted mt-3" style="text-align:center">
+      The API key is configured via the <code>API_SECRET_KEY</code> environment variable.
+    </p>
+  </div>
+</div>
+</body>
+</html>

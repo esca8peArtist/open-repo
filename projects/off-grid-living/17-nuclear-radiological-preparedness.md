@@ -2,7 +2,7 @@
 title: "Domain 17: Nuclear & Radiological Preparedness"
 description: "Comprehensive guidance on fallout shelter construction, potassium iodide protocols, radiation detection, decontamination, long-term food/water storage under fallout conditions, and community triage — grounded in NCRP, IAEA, FEMA, and CDC standards."
 related_topics:
-  - 11-shelter-construction.md
+  - 02-shelter-construction.md
   - 03-water.md
   - 05-food-preservation.md
   - 08-medical-health.md

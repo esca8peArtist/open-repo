@@ -1,0 +1,97 @@
+name: Build OS Image
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: "Agent profile to build"
+        required: true
+        type: choice
+        options:
+          - personal-productivity
+          - customer-support
+          - sales-outreach
+          - developer-assistant
+          - business-intelligence
+          - enterprise-orchestrator
+      tier:
+        description: "Capability tier to build"
+        required: true
+        type: choice
+        options:
+          - tier1
+          - tier2
+          - tier3
+          - tier4
+
+concurrency:
+  group: build-image-${{ github.inputs.profile }}-${{ github.inputs.tier }}
+  cancel-in-progress: false
+
+env:
+  ARTIFACT_RETENTION_DAYS: 14
+
+jobs:
+  build:
+    name: Build image (${{ github.event.inputs.profile }} / ${{ github.event.inputs.tier }})
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Validate build script exists
+        run: |
+          if [[ ! -f "scripts/build_os_image.sh" ]]; then
+            echo "ERROR: scripts/build_os_image.sh not found" >&2
+            exit 1
+          fi
+          chmod +x scripts/build_os_image.sh
+
+      - name: Build OS image
+        id: build
+        env:
+          PROFILE: ${{ github.event.inputs.profile }}
+          TIER: ${{ github.event.inputs.tier }}
+        run: |
+          echo "Building OS image for profile=${PROFILE} tier=${TIER}"
+          bash scripts/build_os_image.sh \
+            --profile "${PROFILE}" \
+            --tier "${TIER}" \
+            --output-dir dist/
+
+      - name: Capture build metadata
+        id: metadata
+        run: |
+          BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          SHORT_SHA="${GITHUB_SHA::8}"
+          ARTIFACT_NAME="os-image-${{ github.event.inputs.profile }}-${{ github.event.inputs.tier }}-${SHORT_SHA}"
+          echo "build_date=${BUILD_DATE}" >> "$GITHUB_OUTPUT"
+          echo "short_sha=${SHORT_SHA}" >> "$GITHUB_OUTPUT"
+          echo "artifact_name=${ARTIFACT_NAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Upload OS image artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.metadata.outputs.artifact_name }}
+          path: dist/
+          retention-days: ${{ env.ARTIFACT_RETENTION_DAYS }}
+          if-no-files-found: error
+
+      - name: Build summary
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<EOF
+          ## OS Image Build Summary
+
+          | Field        | Value                                             |
+          |-------------|---------------------------------------------------|
+          | Profile      | \`${{ github.event.inputs.profile }}\`            |
+          | Tier         | \`${{ github.event.inputs.tier }}\`               |
+          | Commit       | \`${{ steps.metadata.outputs.short_sha }}\`       |
+          | Build date   | \`${{ steps.metadata.outputs.build_date }}\`      |
+          | Artifact     | \`${{ steps.metadata.outputs.artifact_name }}\`   |
+          | Triggered by | @${{ github.actor }}                              |
+          EOF

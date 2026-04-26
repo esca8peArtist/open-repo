@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% set completed_steps = state.completed_steps %}
+{% block title %}Profile Selection{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <span class="step-badge">Step 2 of {{ total_steps }}</span>
+    <h1>Choose a Profile</h1>
+    <p class="subtitle">Select the primary role for <strong>{{ state.agent_name or "your agent" }}</strong>. You can add more roles in the next step.</p>
+  </div>
+
+  <form method="post" action="/step/2" id="profile-form">
+    <div class="profile-grid" id="profile-grid">
+      {% for p in profiles %}
+      <label class="profile-card {% if state.selected_profile == p.id %}selected{% endif %}" for="profile_{{ p.id }}">
+        <input
+          type="radio"
+          id="profile_{{ p.id }}"
+          name="profile_id"
+          value="{{ p.id }}"
+          {% if state.selected_profile == p.id %}checked{% endif %}
+          required
+        >
+        <span class="icon">{{ p.icon }}</span>
+        <span class="name">{{ p.tagline }}</span>
+        <span class="ram">Min {{ p.min_ram_gb }} GB RAM &middot; Tier {{ p.recommended_tier }}</span>
+        <ul class="uses">
+          {% for uc in p.use_cases[:3] %}
+          <li>{{ uc }}</li>
+          {% endfor %}
+        </ul>
+      </label>
+      {% endfor %}
+    </div>
+
+    <div class="btn-row">
+      <a href="/step/1" class="btn btn-secondary">&larr; Back</a>
+      <button type="submit" class="btn btn-primary" id="next-btn" {% if not state.selected_profile %}disabled{% endif %}>
+        Continue &rarr;
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const cards = document.querySelectorAll('.profile-card');
+  const nextBtn = document.getElementById('next-btn');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      cards.forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      card.querySelector('input[type=radio]').checked = true;
+      nextBtn.disabled = false;
+    });
+  });
+</script>
+{% endblock %}

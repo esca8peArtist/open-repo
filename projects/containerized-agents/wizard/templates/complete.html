@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Complete — AgentCore</title>
+  <link rel="stylesheet" href="/static/wizard.css">
+  <meta http-equiv="refresh" content="30;url={{ dashboard_url }}">
+</head>
+<body>
+  <div class="wizard-outer" style="justify-content:center;align-items:center;">
+    <main class="wizard-main">
+      <div class="card" style="text-align:center;padding:3rem 2rem;">
+        <div style="font-size:4rem;margin-bottom:1rem;">✅</div>
+        <h1>Setup Complete!</h1>
+        <p class="subtitle" style="margin:0.75rem 0 2rem;">
+          <strong>{{ state.agent_name or "Your agent" }}</strong> is running on your device.
+          Redirecting to the dashboard in 30 seconds…
+        </p>
+
+        <div class="qr-block">
+          {% if qr_b64 %}
+          <img src="data:image/png;base64,{{ qr_b64 }}" alt="QR code" width="200" height="200">
+          {% endif %}
+          <div class="qr-url">{{ dashboard_url }}</div>
+          <p style="font-size:0.85rem;color:var(--color-muted);margin-top:0.5rem;">
+            Open on any device connected to this network
+          </p>
+        </div>
+
+        <a href="{{ dashboard_url }}" class="btn btn-success" style="margin-top:2rem;font-size:1.1rem;padding:0.8rem 2rem;">
+          Open Agent Dashboard &rarr;
+        </a>
+
+        <p style="font-size:0.78rem;color:var(--color-muted);margin-top:2rem;">
+          This setup wizard has been disabled. To re-run it, delete
+          <code>/opt/agentcore/.wizard-complete</code> and restart the wizard service.
+        </p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

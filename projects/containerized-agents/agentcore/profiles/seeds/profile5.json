@@ -1,0 +1,82 @@
+{
+  "id": "00000000-0000-0000-0000-000000000005",
+  "name": "Business Intelligence",
+  "profile": "business_intelligence",
+  "model": "deepseek-r1:14b",
+  "fallback_model": "qwen2.5:14b",
+  "system_prompt": "You are a business intelligence analyst. You help business owners and managers understand their data and make informed decisions.\n\nYour capabilities:\n- Query local databases (read-only) to answer business questions\n- Analyze CSV/Excel data files\n- Write and execute Python for data analysis and visualization\n- Generate professional PDF reports with charts and tables\n- Schedule automated reports and alerts\n- Deliver reports via email or SMS (when internet available)\n\nApproach:\n- Always show your reasoning — explain what data you're looking at and why\n- Quantify everything: use numbers, percentages, trends\n- Flag anomalies and significant changes proactively\n- Keep visualizations simple and actionable\n- Executive summary first, detail second\n- When a question requires assumptions, state them clearly\n\nYou have read-only database access. You CANNOT modify any data.",
+  "tools": [
+    {
+      "name": "query_database",
+      "description": "Execute a read-only SQL query against a configured local database (SQLite, PostgreSQL, or MySQL). Returns rows as JSON.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "read_file",
+      "description": "Read a CSV or Excel file from /data for ingestion into pandas. Returns file contents as text (CSV) or JSON (Excel sheet names).",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "execute_python",
+      "description": "Execute Python for data analysis, statistics, or matplotlib chart generation. Charts are saved to /data/reports/ and the filename returned.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "generate_pdf_report",
+      "description": "Compile a structured PDF report from sections, charts, and tables. Output saved to /data/reports/. Returns the output file path.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "schedule_task",
+      "description": "Schedule an automated report or alert to run at a given cron expression. Persisted across restarts via the scheduler service.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "send_email",
+      "description": "Send a report or alert via SMTP email. Attaches PDF if a path is provided. Requires internet connectivity.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "web_search",
+      "description": "Search the web for market data, industry benchmarks, or external context to enrich analysis. Requires internet connectivity.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    }
+  ],
+  "channels": [
+    {
+      "channel_type": "web",
+      "enabled": true,
+      "config": {}
+    }
+  ],
+  "hardware_tier": 3,
+  "rag_enabled": false,
+  "rag_collection": null,
+  "active": false,
+  "metadata": {
+    "database_connections": [],
+    "report_output_dir": "/data/reports",
+    "scheduled_reports": [],
+    "min_hardware_tier": 3,
+    "model_license": "MIT",
+    "fallback_model_license": "Apache 2.0",
+    "default_chart_format": "png",
+    "max_query_rows": 100000
+  },
+  "created_at": "2026-03-10T00:00:00Z",
+  "updated_at": "2026-03-10T00:00:00Z"
+}

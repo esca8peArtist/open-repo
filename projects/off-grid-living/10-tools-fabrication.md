@@ -3,7 +3,7 @@ title: "Domain 10: Tools & Fabrication"
 project: off-grid-living
 status: complete
 created: 2026-04-13
-cross-refs: [11-shelter-construction, 03-water, 06-energy-power, 07-heating-cooling, 08-medical-health, 09-waste-sanitation, 15-disaster-scenarios]
+cross-refs: [02-shelter-construction, 03-water, 06-energy-power, 07-heating-cooling, 08-medical-health, 09-waste-sanitation, 15-disaster-scenarios]
 ---
 
 # Domain 10: Tools & Fabrication
@@ -1493,7 +1493,7 @@ Not every tool needs to be owned by every household. Community tool libraries an
 
 | Related domain | Specific links |
 |---|---|
-| 11-shelter-construction | Framing tools, timber frame techniques, concrete work |
+| 02-shelter-construction | Framing tools, timber frame techniques, concrete work |
 | 03-water | Pump repair (Section 10.7.2), PEX plumbing tools |
 | 06-energy-power | Battery care (Section 10.8.3), electrical repair (Section 10.7.4) |
 | 07-heating-cooling | Chainsaw for firewood, splitting mauls, chimney repair |

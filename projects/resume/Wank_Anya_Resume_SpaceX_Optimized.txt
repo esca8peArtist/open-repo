@@ -1,0 +1,100 @@
+ANYA WANK
+15200 Park Row  |  Houston, TX 77084
+wanka@umich.edu  |  (262) 914-0659  |  LinkedIn: [add URL]
+
+================================================================================
+EXPERIENCE
+================================================================================
+
+SLB                                                                 2020–2025
+
+Senior Project Engineer – Data Centers, June 2025–Present       Houston, TX
+
+  - Built a centralized product database and introduced structured kitting,
+    reducing supply chain workload and cutting production delays by 15%.
+
+  - Established design standards and standardized documentation to support
+    hyper-scaling, increasing production capacity by 20% across cross-functional
+    teams.
+
+  - Mentored 10–15 engineers on technical design and problem solving, accelerating
+    new hire onboarding and improving team productivity.
+
+  - Developed automation tools (Python, VBA) for bill of materials generation,
+    reporting, and data entry, adopted across the business line, reducing manual
+    labor by 30% and improving data accuracy.
+
+  - Resolved nonconformance reports, clarified technical requirements, and
+    troubleshot manufacturing and field issues to preserve schedule and meet or
+    exceed quality standards.
+
+
+Senior Control Systems Mechanical Engineer, 2023–2025           Houston, TX
+
+  - Led end-to-end control system design and delivery, including functional design
+    specifications, drawings, piping and instrumentation diagrams, Inventor 3D
+    models, and test procedures across supply chain, manufacturing, and quality.
+
+  - Managed compliance to industry standards (API, ASME, ABS, DNV, CE) by tracking
+    requirements and implementing specifications into design and validation.
+
+  - Conducted technical risk assessments (failure modes, effects, and criticality
+    analysis; hazard identification) to mitigate safety and design risks, reducing
+    late-stage design changes by 25%.
+
+  - Owned technology qualification and commercialization for a $7M product, leading
+    proposals, client presentations, and prototype-to-production transition.
+
+  - Served as primary technical contact for vendors and clients, leading design
+    reviews, resolving nonconformance reports, and addressing deviations to keep
+    projects on scope, schedule, and quality.
+
+
+================================================================================
+EDUCATION
+================================================================================
+
+University of Michigan, College of Engineering                   Ann Arbor, MI
+Bachelor of Science in Engineering, May 2020
+  - Minor in Computer Science
+
+
+================================================================================
+ADDITIONAL EXPERIENCE
+================================================================================
+
+Rotational Engineer | SLB | 2020–2022
+Completed an engineering development program with rotations in automation,
+product development, quality, and manufacturing. Highlights:
+
+  - Developed programmable logic controller and human-machine interface control
+    systems compliant with API 16D and supported CE compliance testing.
+
+  - Contributed to commercialization of a remote access gateway ($1.4M revenue
+    impact).
+
+  - Automated inspection and supplier quality processes, reducing cycle times
+    by 40%.
+
+
+================================================================================
+PROJECTS
+================================================================================
+
+Automated Quantitative Trading Application
+  - Designed and implemented a machine learning-driven stock trading system with
+    predictive models, feature engineering, and hyperparameter tuning. Integrated
+    with brokerage APIs for automated execution and built backtesting frameworks
+    to validate strategies.
+
+
+================================================================================
+SKILLS
+================================================================================
+
+Systems Engineering | Product Development | System Design | Technical Program
+Management | Stakeholder Engagement | Risk Mitigation | Agile & Scrum |
+Cross-Functional Collaboration | Project Scheduling | Technology Qualification |
+Process Optimization | Automation | Inventor | CAD | Power BI | SAP |
+Manufacturing Operations | Vendor Management | Software Development (Python, VBA)
+| Problem Solving | Hardware-Software Integration

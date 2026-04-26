@@ -1,0 +1,119 @@
+{
+  "name": "Personal Assistant",
+  "profile": "personal_productivity",
+  "model": "qwen2.5:7b-instruct",
+  "fallback_model": "phi4-mini",
+  "system_prompt": "You are a personal productivity assistant. You help with:\n- Managing calendar events and scheduling\n- Drafting and managing emails\n- Searching personal documents and notes (via RAG)\n- Web research and summaries (when internet available)\n- Setting reminders and scheduling tasks\n\nYou are direct, efficient, and respect the user's time. Keep responses concise.\nWhen internet is unavailable, you note this and help with what you can offline.",
+  "tools": [
+    {
+      "name": "get_calendar_events",
+      "description": "Retrieve upcoming calendar events from CalDAV.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "create_calendar_event",
+      "description": "Create a new calendar event in CalDAV.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email via IMAP/SMTP (works on LAN mail servers).",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "read_emails",
+      "description": "Read emails from the configured IMAP account.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "web_search",
+      "description": "Search the web for information. Requires internet — degrades gracefully when offline.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "schedule_task",
+      "description": "Schedule a future task or reminder (local scheduler).",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "list_scheduled_tasks",
+      "description": "List all pending scheduled tasks and reminders.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "cancel_task",
+      "description": "Cancel a previously scheduled task by ID.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "read_file",
+      "description": "Read a personal document from /data/personal/.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "search_files",
+      "description": "Search personal documents and notes by filename or content.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    }
+  ],
+  "channels": [
+    {
+      "channel_type": "web",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "voice",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "telegram",
+      "enabled": true,
+      "config": {
+        "note": "requires_internet"
+      }
+    },
+    {
+      "channel_type": "sms",
+      "enabled": true,
+      "config": {
+        "provider": "twilio",
+        "note": "requires_internet"
+      }
+    },
+    {
+      "channel_type": "whatsapp",
+      "enabled": true,
+      "config": {
+        "provider": "twilio",
+        "note": "requires_internet"
+      }
+    }
+  ],
+  "hardware_tier": 1,
+  "rag_enabled": true,
+  "rag_collection": "personal_docs",
+  "active": false,
+  "metadata": {}
+}

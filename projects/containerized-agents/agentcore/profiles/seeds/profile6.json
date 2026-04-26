@@ -1,0 +1,322 @@
+{
+  "id": "00000000-0000-0000-0000-000000000006",
+  "name": "Enterprise Orchestrator",
+  "profile": "enterprise_orchestrator",
+  "model": "qwen3:72b",
+  "fallback_model": null,
+  "system_prompt": "You are an enterprise AI orchestrator managing a team of specialized AI sub-agents.\n\nYour role:\n- Decompose complex enterprise requests into parallel sub-tasks\n- Delegate to the right specialized agent (customer support, sales, BI, developer)\n- Aggregate results and deliver coherent responses\n- Monitor all agents and escalate failures\n- Maintain audit log of all significant actions\n- Manage multi-user access across the organization\n\nEnterprise guidelines:\n- All significant actions are logged to the audit trail\n- User permissions are enforced — check role before acting\n- Prefer parallel execution of independent tasks\n- For ambiguous requests, clarify before acting\n- Escalate to human administrators for: data deletion, permission changes, financial actions > threshold\n- Maintain confidentiality: users only see data appropriate to their role\n\nYou coordinate: {active_agent_names}",
+  "tools": [
+    {
+      "name": "get_calendar_events",
+      "description": "Retrieve calendar events for a given date range.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "create_calendar_event",
+      "description": "Create a new calendar event.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "send_email",
+      "description": "Send an email via SMTP. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "read_emails",
+      "description": "Read recent emails from the configured IMAP account. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "web_search",
+      "description": "Search the web for external context. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "query_database",
+      "description": "Execute a read-only SQL query against a configured database.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "execute_python",
+      "description": "Execute Python code for analysis or automation tasks.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "generate_pdf_report",
+      "description": "Generate a structured PDF report.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "search_contacts",
+      "description": "Search CRM contacts.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "get_contact",
+      "description": "Get full CRM contact details.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "add_note",
+      "description": "Add a note to a CRM contact.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "update_contact_status",
+      "description": "Update a CRM contact pipeline status.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "schedule_task",
+      "description": "Schedule a recurring or one-off task.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "list_scheduled_tasks",
+      "description": "List all currently scheduled tasks.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "cancel_task",
+      "description": "Cancel a scheduled task by ID.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "search_code",
+      "description": "Search code on GitHub. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "get_file",
+      "description": "Retrieve a file from a GitHub repository. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "create_issue",
+      "description": "Create a GitHub issue. Requires internet.",
+      "enabled": true,
+      "requires_internet": true,
+      "config": {}
+    },
+    {
+      "name": "read_file",
+      "description": "Read a file from /data or /workspace.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "list_directory",
+      "description": "List a directory in /data or /workspace.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    },
+    {
+      "name": "search_files",
+      "description": "Search for files by glob pattern.",
+      "enabled": true,
+      "requires_internet": false,
+      "config": {}
+    }
+  ],
+  "channels": [
+    {
+      "channel_type": "web",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "voice",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "telegram",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "sms",
+      "enabled": true,
+      "config": {}
+    },
+    {
+      "channel_type": "whatsapp",
+      "enabled": true,
+      "config": {}
+    }
+  ],
+  "hardware_tier": 4,
+  "rag_enabled": true,
+  "rag_collection": "enterprise_kb",
+  "active": false,
+  "metadata": {
+    "subagent_ids": [],
+    "redis_bus_channel": "agentcore:bus:enterprise",
+    "audit_log_enabled": true,
+    "admin_escalation_email": "",
+    "max_parallel_subagents": 4,
+    "min_hardware_tier": 4,
+    "model_license": "Apache 2.0",
+    "escalation_threshold_usd": 1000,
+    "roles": ["admin", "manager", "analyst", "viewer"]
+  },
+  "created_at": "2026-03-10T00:00:00Z",
+  "updated_at": "2026-03-10T00:00:00Z",
+  "_subagents": [
+    {
+      "id": "00000000-0000-0000-0000-000000000061",
+      "name": "CS Sub-Agent",
+      "profile": "customer_support",
+      "model": "qwen2.5:7b-instruct",
+      "fallback_model": null,
+      "system_prompt": "You are a customer support specialist operating as part of an enterprise AI team. Handle customer queries efficiently using the company knowledge base and ticket database. Escalate to the orchestrator when: the question is out of scope, the customer is escalating, or a refund/exception is requested.",
+      "tools": [
+        {
+          "name": "read_file",
+          "description": "Read files from the company knowledge base directory.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "search_files",
+          "description": "Search files in the knowledge base by glob pattern.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "query_database",
+          "description": "Query the ticket database (read-only) to look up customer history.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "send_email",
+          "description": "Send resolution emails to customers. Requires internet.",
+          "enabled": true,
+          "requires_internet": true,
+          "config": {}
+        },
+        {
+          "name": "schedule_task",
+          "description": "Schedule a follow-up task or reminder.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        }
+      ],
+      "channels": [],
+      "hardware_tier": 4,
+      "rag_enabled": true,
+      "rag_collection": "company_kb",
+      "active": false,
+      "metadata": {
+        "role": "customer_support",
+        "escalation_keywords": ["refund", "cancel", "legal", "manager", "complaint"]
+      },
+      "created_at": "2026-03-10T00:00:00Z",
+      "updated_at": "2026-03-10T00:00:00Z"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000062",
+      "name": "Sales Sub-Agent",
+      "profile": "sales_outreach",
+      "model": "qwen2.5:7b-instruct",
+      "fallback_model": null,
+      "system_prompt": "You are a sales specialist. Handle lead qualification, CRM updates, and meeting scheduling as directed by the orchestrator. Always verify a contact exists before updating. Do not disclose deal values or pipeline data to non-sales roles.",
+      "tools": [
+        {
+          "name": "search_contacts",
+          "description": "Search the CRM for contacts by name, email, or company.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "get_contact",
+          "description": "Retrieve full contact details and history from the CRM.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "add_note",
+          "description": "Add an interaction note to a CRM contact record.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "update_contact_status",
+          "description": "Update a CRM contact's pipeline stage or status.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "schedule_task",
+          "description": "Schedule a follow-up task for a lead.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        },
+        {
+          "name": "create_calendar_event",
+          "description": "Book a sales call or demo on the calendar.",
+          "enabled": true,
+          "requires_internet": false,
+          "config": {}
+        }
+      ],
+      "channels": [],
+      "hardware_tier": 4,
+      "rag_enabled": false,
+      "rag_collection": null,
+      "active": false,
+      "metadata": {
+        "role": "sales",
+        "crm_db": ""
+      },
+      "created_at": "2026-03-10T00:00:00Z",
+      "updated_at": "2026-03-10T00:00:00Z"
+    }
+  ]
+}

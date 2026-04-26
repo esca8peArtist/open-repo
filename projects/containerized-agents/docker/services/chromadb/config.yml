@@ -1,0 +1,31 @@
+# =============================================================================
+# docker/services/chromadb/config.yml — ChromaDB server configuration
+#
+# ChromaDB is the local vector database for RAG.
+# All embeddings are computed via nomic-embed-text through Ollama.
+# Fully offline — no external API calls.
+#
+# These values are passed to the chromadb container as environment variables
+# via docker-compose.yml. This file serves as the canonical config reference
+# and is read by agentcore at startup to validate service configuration.
+# =============================================================================
+
+server:
+  host: "0.0.0.0"           # CHROMA_SERVER_HOST — bind on all interfaces (internal network only)
+  port: 8000                 # CHROMA_SERVER_HTTP_PORT
+
+persistence:
+  directory: "/chroma/data"  # PERSIST_DIRECTORY — mounted volume path
+
+telemetry:
+  anonymized: false          # ANONYMIZED_TELEMETRY — disable all phone-home telemetry
+
+auth:
+  enabled: false             # CHROMA_AUTH_ENABLED — no auth on internal Docker network
+  # Authentication is handled at the network level (agentcore-net bridge network).
+  # ChromaDB is never exposed directly to the host on a public interface.
+  # If you need auth for multi-tenant scenarios, set CHROMA_SERVER_AUTHN_PROVIDER
+  # and CHROMA_SERVER_AUTHN_CREDENTIALS in docker-compose.yml instead.
+
+logging:
+  level: "WARNING"           # Reduce noise; set to "INFO" for debugging

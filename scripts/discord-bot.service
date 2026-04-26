@@ -1,0 +1,16 @@
+[Unit]
+Description=Claude Discord Bot
+After=network.target claude-orchestrator.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/awank/dev/SuperClaude_Framework
+EnvironmentFile=/home/awank/.claude_env
+ExecStart=/usr/bin/python3 /home/awank/dev/SuperClaude_Framework/scripts/discord-bot.py
+Restart=on-failure
+RestartSec=15
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
