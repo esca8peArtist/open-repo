@@ -48,14 +48,19 @@ The divisions in order of launch priority:
 |---|---|---|
 | Energy | Community solar + battery, cooperative billing | Phase 1 |
 | Health | CHW program → sliding-scale clinic | Phase 1-2 |
-| Education | Skills training across all divisions; volunteer pipeline | Phase 1 (alongside Energy) |
+| Education — Trades | Continuous skills training tied to all divisions; volunteer pipeline; formal certifications | Phase 1 (alongside Energy) |
+| Education — Pre-College | Enrichment and applied learning for K-12; after-school and summer programs; community school model | Phase 2 |
 | Food | Community purchasing, urban agriculture, distribution | Phase 2-3 |
 | Water | Rainwater harvesting, filtration, storage systems | Phase 3 |
 | Waste | Composting, materials recovery, circular economy | Phase 3 |
 
 Each division launches when the organizational capacity and economic case exist — not on an ideological schedule.
 
-**Education is the connective tissue.** It launches alongside Energy in Phase 1 because every other division depends on it. It is not a classroom program — it is hands-on skills training embedded in the work each division does. Solar installation training happens during actual installations. First aid and CHW skills are taught by the health division practitioners. Urban farming knowledge transfers through working the food plots. Water testing and maintenance are learned on the water systems themselves. The Education division coordinates this across all programs, maintains the curriculum, and manages the volunteer pipeline.
+**Education has two distinct tracks:**
+
+*Trades & Continuous Learning* launches in Phase 1 because every other division depends on it from day one. This is hands-on skills training embedded in the work each division does — solar installation training happens during actual installations, CHW skills are taught by health division practitioners, urban farming knowledge transfers through working the food plots. It maintains the curriculum, manages the volunteer pipeline, and supports members through formal certifications: NABCEP solar installer certification, Texas CHW certification, food safety handler, water treatment operator, composting facility operator. Adults at any stage of life. No prerequisites.
+
+*Pre-College Education* launches in Phase 2, after the organization has enough operational depth to do it properly. This is a standalone program for children and young people — enrichment, tutoring, after-school and summer programming, eventually a community school model. It is applied from the start: a kid learning about solar is working on actual panels; a kid learning biology is growing actual food. Every division becomes a classroom. The goal is not to replicate conventional schooling but to build a generation of young people who understand how the physical world works and have the hands-on skills to operate in it. The skill badge system spans both tracks — academic and practical, children and adults, all on the same platform.
 
 ---
 
@@ -105,7 +110,9 @@ This is the design deliberately. An organization where volunteers learn real ski
 
 *Health* — complete CHW certification training through the Texas CHW program; conduct home visits alongside certified CHWs; assist with health screenings and referral navigation; learn basic first aid and emergency response; support clinic operations once running.
 
-*Education* — develop and deliver skills training content; mentor new volunteers through their first installations or farming shifts; help run the annual community event; translate materials for non-English-speaking members.
+*Education — Trades* — develop and deliver skills training content; mentor new volunteers through their first installations or farming shifts; help run the annual community event; translate materials for non-English-speaking members; support members working toward formal certifications.
+
+*Education — Pre-College* — tutor and mentor children in academic subjects; lead applied learning sessions (a solar lesson using real panels, a biology lesson on the food plots, a chemistry lesson on water testing); assist with after-school and summer programming; share professional expertise with young people who have never met someone who does what you do.
 
 *Food* — work the urban agriculture plots; help with cooperative purchasing logistics; assist with food distribution; learn soil science, crop planning, composting, seed saving, and food preservation.
 
