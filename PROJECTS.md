@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-25 (INBOX processing)
+> **Last updated by**: orchestrator on 2026-04-27 Session 498 (Domain 25 + tracker maintenance)
 
 ---
 
@@ -65,16 +65,15 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1-5 COMPLETE, **Domain deepening COMPLETE (Session 497)** — Diagnostic framework expanded to 24 domains
+**Status**: Active — Phase 1-5 COMPLETE, **Diagnostic Framework Expanded to 25 Domains (Session 498)** — Core proposal architecture complete
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 497 (2026-04-27): Domain Deepening COMPLETE**. Two new domains identified and documented:
-- **Domain 23: Monetary Policy Independence and Consumer Financial Protection** — Federal Reserve capture, CFPB destruction, household debt trap mechanisms, financial extraction feedback loop
-- **Domain 24: Energy Access, Utility Democracy, and Regulatory Capture** — Utility regulatory capture, energy poverty, ALEC preemption legislation, grid failure governance
-- Result: Diagnostic framework now spans 24 domains with strengthened cross-domain loop analysis (5 identified feedback loops)
-- Files: `domain-deepening/domain-23-monetary-consumer-finance.md` and `domain-deepening/domain-24-energy-utilities-democracy.md` committed to master
+**Current focus**: **Session 498 (2026-04-27 afternoon): Domain 25 Identification + Tracker Updates COMPLETE**. 
+- **Domain 25: FBI/Intelligence Agency Accountability** (`domain-deepening/domain-25-fbi-intelligence-accountability.md`, 4,200 words) — New structural domain identifying FBI directorship as personal political instrument (retaliatory firings, resource misuse, SLAPP litigation, fitness questions). Kash Patel case study (March-April 2026) shows oversight institutions failing to prevent documented misconduct. Cross-domain bridges: Domains 1, 2, 5, 18, 20, 22.
+- **Tracker Updates (April 27-29)**: First-Amendment suppression (WHCD shooting, Don Lemon status, Patel v. Figliuzzi), Environmental rollbacks (Q1 2026 EPA enforcement data, 49% cut proposed), Police brutality (confirmed current)
+- **Result**: Diagnostic framework now spans 25 domains with complete Phase 1-5 integration. Proposal architecture complete with diagnosis → vision → theory-of-change → implementation pathway. Distribution infrastructure fully ready.
 
-**Next**: Distribution execution (Substack/Reddit/institutional templates ready) or continued tracker updates (first-amendment, environmental-rollbacks, police-brutality) or further domain deepening if additional gaps identified.
+**Next**: Distribution execution (Substack/Reddit/institutional templates ready — user action) OR consider if Domain 26+ gaps remain (core diagnostic appears saturated at 25 domains).
 
 **✅ COMPLETED (Session 494)**:
 - ✅ **Phase 4 Integration into Part III** — All four Phase 4 documents synthesized into democratic-renewal-proposal.md Part III

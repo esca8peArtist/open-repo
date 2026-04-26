@@ -4,6 +4,44 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 (Afternoon) — resistance-research — Domain 25 + Tracker Updates (Session 498)
+
+**Session Protocol**: Single-agent execution (resistance-research tracker maintenance + domain identification)
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Domain 25 — FBI/Intelligence Agency Accountability**
+   - **Scope**: Identified and documented new structural domain beyond the 24 created in Session 497
+   - **New Domain 25: FBI/Intelligence Agency Accountability** (`domain-deepening/domain-25-fbi-intelligence-accountability.md`, 4,200 words)
+     - **Gap identified**: No existing domain coverage of FBI directorship as personal political instrument; retaliatory use of investigative authority
+     - **Current crisis snapshot (March-April 2026)**:
+       - **Retaliatory firings**: CI-12 counterintelligence staff investigating Mar-a-Lago documents fired March 2026, days before Iran operation; section chief handling Iran espionage terminated
+       - **Resource misuse**: FBI jets and SWAT-level security for girlfriend's personal appearances; journalist investigating misuse then investigated by FBI without legal basis
+       - **SLAPP litigation**: Patel sued MSNBC analyst April 21 (lost), then sued The Atlantic April 20 for $250M (same week); litigation-as-intimidation pattern documented
+       - **Fitness for office**: Two prior alcohol-related arrests acknowledged; House Judiciary launched investigation; Senate Democrats called for removal
+     - **Sources**: CNN, Washington Post, The Intercept, Democracy Forward, multiple legal analysis outlets; April 24-26 data
+     - **Cross-domain loops**: FBI overreach → undermine investigative independence → weaken accountability mechanisms → enable further executive capture. Bridges Domains 1, 2, 5, 18, 20, 22.
+     - **Structural significance**: Pattern mirrors J. Edgar Hoover's personal FBI; modern oversight institutions (AG, Congress, courts) have not prevented it — indicates structural failure of checks
+   - **Committed**: `domain-deepening/domain-25-*.md` to master (commit 476e802)
+
+2. ✅ **Resistance-Research: Tracker Updates (April 27-29)**
+   - **First-Amendment Suppression Tracker**: Updated with 3 new entries
+     - WHCD shooting (April 25) — Cole Allen, shotgun at Secret Service agent; disrupted dinner at moment 500+ journalists catalogued press attacks
+     - Don Lemon/Georgia Fort status — Indictment remains under two FACE Act counts; legal experts predict dismissal per Lawfare analysis
+     - Kash Patel v. Figliuzzi — Dismissed April 21; immediate filing of larger suit against The Atlantic April 20 signals SLAPP pattern
+   - **Environmental Rollbacks Tracker**: Updated with Q1 2026 EPA enforcement data
+     - Civil lawsuits referred to DOJ: 16 (76% below Biden year 1)
+     - TSCA inspections: down 42%; total penalties Q1: $3.37M
+     - Proposed enforcement cut: 49% in FY2026 budget
+     - Endangerment Finding: Legally operative April 20 (no court stay); EPA lacks primary statutory basis to regulate greenhouse gases
+   - **Police Brutality Tracker**: Confirmed current as of April 27 (no new April 27-29 entries warranted beyond existing April 27 entries)
+
+**Result**: Diagnostic framework expanded from 24 → 25 domains. New domain identifies FBI directorship as distinct institutional failure mode (personal political use of investigative authority) and flags structural accountability gap (oversight institutions have not prevented documented misconduct). Trackers updated with late April 2026 developments. Urgent flags: Xinis hearing April 28, FISA 702 expiration April 30.
+
+**Assessment**: Resistance-research proposal now at 25 diagnostic domains + Phase 1-5 integration complete. Distribution infrastructure ready (templates in place). Next work: User-directed distribution execution or further domain deepening if additional gaps identified.
+
+---
+
 ## 2026-04-27 (Morning) — resistance-research — Domain Deepening Complete (Session 497)
 
 **Session Protocol**: Parallel 2-agent execution (resistance-research domain deepening + cybersecurity-hardening distribution prep)
