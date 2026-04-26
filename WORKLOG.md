@@ -4,6 +4,35 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 Late Evening — Orchestrator Session 485 — Phase 3 Comprehensive Delivery (Resistance-Research)
+
+**Work Completed**:
+- ✅ **Resistance-Research Phase 3 (5 priorities delivered, 9 documents created)**:
+  1. **Research Trackers** (3 documents, ~11,400 words):
+     - `first-amendment-suppression.md` (3,400 words) — 6 sections covering press crackdowns, protest restrictions, deplatforming, SLAPP litigation, legal landscape
+     - `environmental-rollbacks-tracker.md` (3,800 words) — 24 regulatory rollbacks across 5 agencies (EPA, Interior, NOAA, DOE, DOT) with Federal Register citations and litigation status
+     - `police-brutality-consent-decree-tracker.md` (4,200 words) — 8 major cities, 5 cross-cutting defiance patterns, federal enforcement gaps
+  2. **Distribution Infrastructure** (3 documents, ~3,500 words):
+     - `democratic-renewal-executive-summary.md` (1,200-1,500 words) — 2-page print-ready summary, 22-domain table, fiscal scope
+     - `DISTRIBUTION_GUIDE.md` (1,000-1,200 words) — Platform strategy, audience segmentation, format options, metrics
+     - `published/README.md` (hub document) — Links to all documents, 5 use-case pathways, 22-domain quick-reference
+  3. **Distribution Templates** (3 documents, ~3,500 words):
+     - `distribution-substack-drafts.md` (4 posts) — 800-1,000 words each, launch + deep-dive posts
+     - `distribution-reddit-templates.md` (5 posts) — native framing for r/law, r/politics, r/Keep_Track, r/Ask_Politics, r/democracy
+     - `distribution-institutional-outreach-templates.md` (8 templates) — legal aid, digital rights, movement organizations with personalization checklists
+
+- ✅ **Exploration Queue Work**:
+  - Completed: `off-grid-living/17-nuclear-radiological-preparedness.md` (450 lines, 8 sections)
+  - Replenished queue with 2 new items (Phase 3 research roadmap, Seedwarden expansion)
+
+**Commits**:
+- `04a19e9`: feat(resistance-research) Phase 3 comprehensive delivery — 13 files, 3,698 insertions
+- `9e4d329`: chore(orchestrator) session 485 — state files updated
+
+**Token Usage**: NOMINAL (verified `python3 scripts/usage-check.py --check`)
+
+---
+
 ## 2026-04-26 — General Research Agent — Nuclear & Radiological Preparedness (off-grid-living domain)
 
 **Work Completed**:
