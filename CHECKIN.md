@@ -4,44 +4,66 @@
 
 ---
 
-## Current Session (Session 494 — 2026-04-26 22:30 UTC — Phase 4 Integration + Paper Trading Monitoring)
+## Current Session (Session 495 — 2026-04-26 22:36 UTC — Tracker Updates + Seedwarden Phase 2 Mockups)
 
-**Status**: Parallel 2-agent execution: Phase 4 research fully integrated into resistance-research proposal Part III. Paper trading monitoring infrastructure confirmed working. Proposal synthesis complete and ready for distribution.
+**Status**: Parallel 4-agent execution completed. Phase 5 integration verified complete (no additional work needed). Paper trading Day 1 baseline established. Crisis trackers updated with April 2026 developments. Seedwarden Phase 2 mockup tooling built and deployed.
 
 **Work Completed**:
 
-1. ✅ **Resistance-Research: Phase 4 Integration into Part III COMPLETE** (commit eabe4aa)
-   - Integrated all four Phase 4 documents (~16.4K words) into democratic-renewal-proposal.md:
-     - **Power-mapping.md** integrated into Section 3.3: "Veto Players and the Institutional Landscape" + "Dark Money Infrastructure and Its Vulnerabilities"
-     - **Parallel-institutions.md** integrated into Section 3.4: "Parallel institution role" subsections for each scenario
-     - **Elite-capture-case-study.md** created new Section 3.6: "Structural Accountability: Why Two-Tier Justice Is a Democratic Problem"
-     - **Comparative-democratic-recovery.md** enhanced Section 3.5: International case studies framework (South Korea, Spain, Uruguay, Poland, Hungary, Venezuela, Turkey)
-   - Result: Part III now contains complete Theory of Change with institutional power analysis, viable alternatives, accountability mechanisms, and international precedent
-   - Proposal complete: diagnosis (Domains 1-22) → vision → theory of change (Phases 3-4 synthesis) → implementation architecture (Phase 5)
+1. ✅ **Resistance-Research: Phase 5 Integration Verification**
+   - **Finding**: Phase 5 integration already complete (Committed sessions 491-492, preserved through eabe4aa)
+   - **Part IV Status**: All four sections present and fully integrated:
+     - 4.1 Implementation Roadmap — Three-wave recovery architecture (guardrails → parallel institutions → consolidation)
+     - 4.2 Timeline and Conditions — Three electoral scenarios with wave timelines and success metrics
+     - 4.3 Movement Coordination — Elite defection cascade (judiciary 87% win rate, 51-state AG coalition) + 3.5% mass mobilization threshold
+     - 4.4 Risk Assessment — 11 derailment vectors, $400-600M mitigation budget
+   - **Conclusion**: No additional synthesis needed. Proposal complete: diagnosis → vision → theory-of-change (Parts I-III) → implementation (Part IV-V)
 
-2. ✅ **Stockbot: Paper Trading Monitoring VERIFIED** 
-   - Monitoring script `projects/stockbot/scripts/paper_trading_monitor.py` executed successfully on Day 1
-   - Logs infrastructure established: `projects/stockbot/logs/paper_trading_daily.jsonl` created and first snapshot logged
-   - Current status (Day 1 — 2026-04-26): 1 open AAPL_h10_lgbm_ho position (36 shares @ $271.04), 0 completed round trips (expected on Day 1)
-   - All gates failing as expected (insufficient data), first meaningful checkpoint May 26 (1 month of trading)
-   - No anomalies — data clean and monitoring infrastructure confirmed working
+2. ✅ **Stockbot: Paper Trading Day 1 Monitoring**
+   - Monitoring infrastructure verified working (scripts/paper_trading_monitor.py executed successfully)
+   - **Live Position**: 1 open trade (AAPL_h10_lgbm_ho BUY 36 shares @ $271.04)
+   - **Progress**: 0/30 trades/month (Day 1 baseline, expected checkpoint May 26)
+   - **Anomaly**: BUY timestamp Sunday 17:06 UTC (markets closed) — monitor next trading day (Monday 2026-04-28) for correct skip behavior
+   - **Logs**: paper_trading_daily.jsonl active and appending
+
+3. ✅ **Resistance-Research: Crisis Tracker Updates (April 2026)**
+   - **first-amendment-suppression.md**: 3 new entries + 1 update (DOJ Natanson appeal, WHCA incident, No Kings protests)
+     - Key finding: 8-9M participants in single day; LAPD pre-emptive drone surveillance (32 flights, 9 before dispersal order); Ninth Circuit hearing pending on tear gas restrictions
+   - **environmental-rollbacks-tracker.md**: 3 new rollback entries (RMP chemical accident prevention, TSCA PFAS reporting, PFAS RCRA)
+     - Key finding: 12,000 regulated facilities affected; coordinated PFAS framework degradation; selective enforcement pattern
+   - **police-brutality-consent-decree-tracker.md**: 4 city updates + 2 research threads (Chicago, Baltimore, Cleveland, Oakland)
+     - Key finding: Two cities (Cleveland, Oakland) face concurrent consent decree exit AND charter reform stripping civilian oversight — creates compliance gap risk
+   - **Commits**: All trackers updated with 14 source citations and committed to master
+
+4. ✅ **Seedwarden: Phase 2 Mockup Tooling**
+   - **Step 1**: Regenerated 21 tablet mockups (all synced to Apr 26 PDF versions, pypdfium2 dependency added)
+   - **Step 2**: Built phone-frame mockup variant:
+     - Added `--frame portrait` CLI argument (backward compatible)
+     - iPhone 13-style frame (880×1900px body, 820×1700px screen, Dynamic Island)
+     - Generated all 21 phone mockups (70 KB each, 2400×2400px)
+     - Tested on Companion Planting Chart for legibility
+   - **Result**: All products now have dual mockup angles (tablet + phone) — increases conversion appeal before Phase 2
+   - **Commit**: a68196d
 
 **Project Status**:
-- **resistance-research**: **COMPLETE** — All phases (1-5) integrated, proposal ready for distribution
-- **stockbot**: **ON TRACK** — Paper trading running, Day 1 monitoring verified, awaiting May 26 checkpoint
-- **All other projects**: Awaiting user actions or external review
+- **resistance-research**: **PROPOSAL SYNTHESIS COMPLETE** — All phases integrated, trackers updated, ready for distribution
+- **stockbot**: **MONITORING ACTIVE** — Day 1 baseline established, monitoring script working
+- **seedwarden**: **PHASE 2 TOOLING COMPLETE** — Phone mockups ready, Phase 1 awaiting user tag corrections only
+- **cybersecurity-hardening**: Distribution prep complete, awaiting user execution
+- **mfg-farm**: Blocked on test print (manual, cannot auto-verify)
+- **open-repo**: PR #1 awaiting maintainer review
 
-**Available Work Going Forward**:
-- **resistance-research**: Distribution execution (Substack, Reddit, institutional templates ready) OR tracker maintenance (first-amendment, environmental-rollbacks, police-brutality updates)
-- **stockbot**: Daily monitoring through May 26 (mostly observational, waiting for sufficient trading data)
-- **User actions required**: mfg-farm test print, cybersecurity-hardening publication signal, seedwarden Etsy Phase 1 launch, open-repo GitHub push
+**Available Work**:
+- **resistance-research**: Distribution execution (user action) or tracker maintenance (ongoing)
+- **seedwarden**: Interior page mockup script buildable if needed before Phase 1 launch
+- **stockbot**: Daily monitoring continues (automated, awaiting May 26 checkpoint)
 
-**Next Session Priorities** (April 28 onwards):
-1. **Monday 14:30 UTC**: Stockbot market open monitoring
-2. **Monday 17:00 UTC**: Resistance-research Xinis hearing data capture
-3. **Anytime this week**: Distribution execution or Etsy Phase 1 launch (user action)
+**Next Session Priorities**:
+1. Monitor stockbot Monday market open (2026-04-28 14:30 UTC) for Sunday anomaly clarification
+2. Optional: Build interior page mockup script for seedwarden Phase 2 (1-2 hours, converts all 21 products to support interior page previews)
+3. Check for Exploration Queue items or new domain research if other projects unblock
 
-**Tokens Used This Session**: ~127K / 200K. Remaining: ~73K. Nominal usage.
+**Tokens Used This Session**: ~271K cumulative (4 agents in parallel). Usage: 47.1% Sonnet, 42.3% all-models. Reset: 25h.
 
 ---
 

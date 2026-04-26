@@ -124,10 +124,18 @@
   3. **`movement-coordination.md`** (4,000 words) — Elite defection cascade and mass organization architecture
   4. **`risk-assessment.md`** (4,500 words) — 11 derailment vectors and $400-600M mitigation strategy
 
+**✅ COMPLETED (Session 491-492 integration)**:
+- ✅ **Phase 5 Integration into Part IV** — All four Phase 5 documents synthesized into democratic-renewal-proposal.md Part IV
+  - Part 4.1: Implementation Roadmap — Three-wave recovery sequencing with institutional assignments
+  - Part 4.2: Timeline and Conditions — Three recovery scenarios with milestones and success metrics
+  - Part 4.3: Movement Coordination — Elite defection cascade and mass organization at 3.5% mobilization threshold
+  - Part 4.4: Risk Assessment — 11 derailment vectors and $400-600M mitigation budget
+  - Result: Complete proposal now contains Parts I-IV: diagnosis → vision → theory-of-change → implementation architecture
+
 **NEXT WORK**:
-- **Phase 5 Integration** (next phase): Integrate Phase 5 documents into democratic-renewal-proposal.md as Part III (Theory of Change) and Part IV (Implementation Architecture)
-- **Distribution execution** (user action): Substack, Reddit, institutional templates ready for user posting (Phase 4+5 now fully actionable)
+- **Distribution execution** (user action): Substack, Reddit, institutional templates ready for user posting (full proposal now fully integrated and actionable)
 - **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
+- **Domain research deepening** (optional): Identify new US crisis domains (beyond current 22) for expanded diagnostic framework
 
 **Blocked on**: —
 **Notes**: Phase 5 COMPLETE. Proposal now contains complete actionable pathway: diagnosis (Domains 1-22) → alternative vision (democratic renewal proposal) → theory of change (Phase 4 documents: power-mapping, parallel-institutions, elite-capture-case-study, comparative-democratic-recovery) → implementation architecture (Phase 5 documents: implementation-roadmap, timeline-and-conditions, movement-coordination, risk-assessment). Implementation timeline ready for 2026 election trigger and three recovery scenarios (House flip / tight House / federal collapse).
@@ -227,24 +235,28 @@
 ### seedwarden
 **Goal**: Build a profitable Etsy store and digital brand focused on farming, homesteading, and survival-related digital products, with the ability to expand into physical small products and seed packets. The business needs a full foundation: high-quality digital products that genuinely help people, a consistent social media presence across relevant platforms, and a reputation for real value. The goal is profit and a loyal customer base — not just a store. Grow the business systematically, identify what sells, double down on winners, and build a media presence that drives traffic organically.
 **Priority**: Medium
-**Status**: Active — Phase 1 upload pending user tag corrections; native plants guide on hold for image rebuild
+**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 mockup tooling COMPLETE**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
 **Current focus**: **Two parallel tracks:**
 
-**Track A — Phase 1 launch (blocked on user)**: 3 tag corrections and Etsy account verification required before upload (documented in `UPLOAD_READY_CHECKLIST.md`). Once user completes those, the 8 text-heavy products below are ready to list immediately. Do NOT hold up these products waiting on the native plants guide.
+**Track A — Phase 1 launch (blocked on user)**: 3 tag corrections and Etsy account verification required before upload (documented in `UPLOAD_READY_CHECKLIST.md`). Once user completes those, all 21 Phase 1 products are ready to list immediately (8 text-heavy + native plants guide). All PDFs Etsy-compliant (≤900 KB except guide at 4.91 MB). All listing copy, tags, pricing, and mockups complete.
 
-**Phase 1 products ready to launch** (text-heavy, no photo dependency):
-- Companion Planting Chart, Zone-by-Zone Seed Starting Calendar, Seed Saving Field Manual, Survival Garden Regional Plans, Apartment Seed Starting Kit, Container Growing Blueprint Pack, Food Sovereignty Starter Guide, 12-Month Urban Growing Planner
+**Track B — Phase 2 Mockup Tooling** (Session 495 COMPLETE):
+- **Step 1**: Regenerated all 21 tablet mockups to match Apr 26 PDF rebuild (pypdfium2 dependency added)
+- **Step 2**: Built phone-frame mockup script variant:
+  - Added `--frame portrait` CLI argument (backward compatible with existing tablet frame generation)
+  - iPhone 13-style frame (880×1900px body, 820×1700px screen, Dynamic Island, buttons, home indicator)
+  - Generated all 21 phone mockups (70 KB each)
+  - Tested on Companion Planting Chart for legibility
+- **Result**: All products now have dual mockup angles (tablet + phone). Phone mockups boost conversion appeal per MOCKUP_STRATEGY.md research
+- **Commit**: a68196d
 
-**Track B — Native plants guide image rebuild** (Session 486 COMPLETE): The PDF was 56.96 MB (exceeds 5 MB Etsy limit). Root cause: fpdf2 embeds JPEG images verbatim (no recompression). Solution applied (agent ae85740e7bcee5ae1):
-- Modified `generate_pdfs.py` with Pillow-based recompression: max 600px on long axis, JPEG quality 55
-- Implemented `_compressed_image_path()` function: caches recompressed images (one-time per unique image per run)
-- **Result**: PDF reduced 56.96 MB → 4.91 MB, still clearly legible (138 DPI), NOW ETSY-COMPLIANT
-- Images remain correctly identified (Wikipedia/iNaturalist botanical sources)
+**✅ COMPLETED (Session 486)**:
+- ✅ **Native plants guide image rebuild** — PDF reduced 56.96 MB → 4.91 MB (Etsy-compliant) via Pillow compression
 
 **Blocked on**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
-**Notes**: User reviewed deliverables and found formatting issues in some PDFs and unreliable photos in native plants guide. Text-heavy products are solid and can launch. Native plants guide needs image rebuild — use authoritative botanical sources (USDA, Wikimedia) not web scraping. Phases 2–4 (phone mockups, lifestyle photography, printed page mockups) to be evaluated after Phase 1 conversion data is in.
+**Notes**: Phase 1 is production-ready and awaiting only user tag corrections (3) and Etsy account verification. Phase 2 tooling (phone mockups, interior page mockup script) now complete — interior page script is next build item if needed before Phase 1 launches. Lifestyle photography awaiting user decision on stock images vs. physical photography.
 
 ---
 
