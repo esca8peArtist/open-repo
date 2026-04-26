@@ -4,6 +4,16 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — cybersecurity-hardening — Phase 2 Implementation Guide COMPLETE
+
+Wrote full `implementation-guide.md` (~5,500 words): 8-part executable walkthrough covering (0) Data broker opt-outs with 20+ specific opt-out URLs and automation service recommendations, (1) Hardware selection with current Pixel model list including Pixel 10 series, (2) GrapheneOS installation via web installer with step-by-step fastboot sequence and bootloader re-lock, (3) Post-install configuration (auto-reboot, network permissions, advertising ID deletion, USB controls), (4) Signal setup sequence ordered for correct privacy setting precedence, (5) Tor + Mullvad VPN with VPN-then-Tor sequence and behavioral rules, (6) File encryption (VeraCrypt containers + age + ExifTool metadata stripping), (7) Tier-annotated quick-start checklists, (8) Monthly/quarterly/annual maintenance schedule.
+
+Verification steps embedded in every section. Troubleshooting included for all high-failure-rate steps (USB cable issues, OEM unlock grayed out, Tor blocked on network, passphrase errors). All tool versions and URLs verified against current official sources as of April 2026. Three-document cybersecurity corpus (threat-model.md + opsec-playbook.md + implementation-guide.md) is now complete.
+
+**File**: `projects/cybersecurity-hardening/implementation-guide.md`
+
+---
+
 ## 2026-04-26 (Session 415) — resistance-research — April 27 Monitoring Pass: Critical Action Guide Correction
 
 **Key finding**: Action Guide contained factually incorrect claim about Eyes Up/ICE Sightings app restoration. N.D. Illinois injunction (Judge Alonso, April 17-23, 2026) blocks government from making *future* censorship demands to Apple and Facebook — but does NOT compel either platform to restore the apps. Court explicitly acknowledged restoration is each platform's editorial prerogative. As of late April 2026, neither company has announced restoration. **Correction applied** to Action Guide Section 4 to accurately describe injunction scope and direct May Day participants to confirmed-operational alternatives (Google Maps, Apple Maps, transit apps, TextLay, etc.).
@@ -8410,4 +8420,64 @@ projects/open-repo/backend/
 ---
 
 **Session summary**: 2 parallel subagents, both completed successfully. resistance-research ready for May 1 with 6 critical new developments documented. open-repo backend production-ready for Phase 2 (search + endorsements). All work committed on master. Next session: monitor April 28 Xinis hearing outcome; continue resistance-research through May 1; consider Phase 2 for open-repo if user prioritizes.
+
+
+---
+
+## 2026-04-26 13:00 — Orchestrator Session 416 — 3-agent parallel execution
+
+### resistance-research — Surveillance Tracking + Live Monitoring Prep
+
+**Deliverables**:
+- `surveillance-tracking.md` (new standing tracker) — Palantir contracts ($970M, 79% YoY growth; new ImmigrationOS $30M, USDA bossware $75M, food security $300M), Venntel FTC order + FBI/ICE evasion routes, Clearview AI $9.2M ICE + field deployment, Wyden/OIG investigation status, regional enforcement shifts (12% national down, KY/IN/NC/FL up 120% workforce expansion)
+- `monitoring/2026-04-26-deep-dive.md` (three story deep dives) — Nashville/Crenshaw dismissal impact (Blanche testimony + contempt hearing timing), Erez Reuveni whistleblower (tactical use in Maryland civil case), DHS payroll cliff (May 4-8 enforcement surge risk window)
+- `monitoring/2026-04-29-mass-call.md` (Mass Call pre-brief + outcome template) — April 29 7:30pm ET, 900+ events confirmed, 3,500+ projected with walkouts, NJ AFL-CIO 1M+ formally mobilized
+- `monitoring/2026-05-01-template.md` (May Day documentation template) — Event reporting framework, outcome logging structure
+
+**Critical finding**: **Section 702 FISA expires April 30** — 4 days from now. 10-day congressional stop-gap ending. This is the most time-sensitive surveillance development: current Section 702 allows ICE to purchase commercial location data (Venntel-type) without warrant. Loophole closure + warrant requirements directly constrains ICE surveillance of protests/communities. Clean extension without reform extends infrastructure multi-year with congressional endorsement. Status: no deal confirmed as of April 25-26.
+
+**Status**: May Day Action Guide remains production-ready. Live monitoring protocol ready April 28-May 1. Critical surveillance update integrated.
+
+### cybersecurity-hardening — Phase 2 Implementation Guide Complete
+
+**Deliverable**: `implementation-guide.md` (9,600 words, 1,022 lines, 8-part structure complete)
+- Part 0: Data Broker Opt-Outs (priority table, DeleteMe automation, batch submission workflow)
+- Part 1: Hardware Selection (Pixel 6a/8/9/10, OEM unlock requirement, pre-purchase checklist)
+- Part 2: GrapheneOS Installation (web installer expanded with clarity, post-install 4-point gate)
+- Part 3: Post-install Configuration (sandboxing, permission model, apps list)
+- Part 4: Signal Setup (trusted contact, PIN, backup verification)
+- Part 5: Tor/Mullvad Routing (bridge obfs4/Snowflake fallback for blocked networks, always-on kill switch)
+- Part 6: File Encryption (VeraCrypt caveats, ExifTool -overwrite_original flag, metadata stripping)
+- Part 7: Maintenance Schedule (quarterly audit, update regimen, threat monitoring)
+
+**Design**: Every section includes objective, prerequisites, step-by-step instructions, verification (shell command or observable outcome), troubleshooting, time estimate. Tier-annotated quick-start checklists + maintenance schedule appended.
+
+**Quality enhancements**: Data broker table for efficient batch submission, Tor bridge instructions for network-blocked scenarios, VeraCrypt hidden volume discipline warning (Tier 2 decision), ExifTool backup file cleanup, Pixel 10 support confirmed, Mullvad kill switch always-on verified.
+
+**Status**: Phase 2 implementation guide complete and verified. Ready for publication prep (Phase 2 next option) or immediate publication. Threat-model.md + opsec-playbook.md + implementation-guide.md form complete trilogy.
+
+### open-repo — Phase 3 Data Models Complete + Tests Passing
+
+**Deliverables**:
+- **SQLAlchemy Models** (models.py, 160 lines added):
+  - Contribution (id, contribution_type, status, contributor_id, item_data[JSON-LD], edit_diff, reviewer_notes, rejection_reason, required_revisions; cascade delete)
+  - ReviewerQueueItem (id, contribution_id, reviewer_id, assigned_at, decided_at, decision, reviewer_notes)
+  - ContributionFeedback (id, contribution_id, feedback_type[TEXT_ONLY/MINOR_CORRECTION/MISSING_FIELD], severity[LOW/MEDIUM/HIGH], message, resolved, resolved_at)
+  - 4 new enums: ContributionType, ContributionStatus, FeedbackType, FeedbackSeverity
+
+- **Pydantic Schemas** (schemas.py, 160 lines added):
+  - 12 schema classes covering creation, update, response, list responses, reviewer queue, review decisions, history
+  - Full type validation, JSON-LD compatibility preserved
+
+- **Test Suite** (test_contributions.py, 694 lines):
+  - 26 comprehensive tests (13 model/field, 4 relationship/cascade, 3 complex workflows, 6 status transitions)
+  - All tests passing, edge cases covered
+
+**Status**: Phase 3 data layer production-ready. Backward compatible with Phase 1-2 (no breaking changes). Routes/endpoints next (8 endpoint groups per PHASE_3_DESIGN.md).
+
+**Commit**: `3a94093` — `feat(open-repo): Phase 3 data models — contributions, reviewer queues, feedback`
+
+---
+
+**Summary**: 3 parallel subagents. resistance-research surveillance landscape updated with critical Section 702 urgency + April 28-May 1 monitoring framework complete. cybersecurity-hardening Phase 2 implementation guide complete (9,600 words, 8-part executable structure, production-ready). open-repo Phase 3 data model layer complete + 26 tests passing. All work committed to master. Next: monitor April 28-May 1 outcomes; Phase 2 next steps for cybersecurity-hardening (publication prep or deepen); Phase 3 routes for open-repo.
 

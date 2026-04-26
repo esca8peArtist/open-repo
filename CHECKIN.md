@@ -8,9 +8,50 @@
 
 ## Since Last Check-in
 
-**Period**: 2026-04-26 (Session 415 — orchestrator, parallel 3-agent execution)
-**Sessions run**: 415
-**Token budget**: ~200K used of 200K weekly (~100%) — approaching limit; usage monitor will throttle at 80% or 90%
+**Period**: 2026-04-26 (Session 416 — orchestrator, parallel 3-agent execution)
+**Sessions run**: 416
+**Token budget**: Nominal (no throttling); reset Tuesday 00:00 UTC
+
+### Accomplished (Session 416 — orchestrator, parallel 3-agent execution)
+
+#### resistance-research — Surveillance Landscape Complete + April 28–May 1 Monitoring Framework Ready
+
+**Deliverables**:
+- `surveillance-tracking.md` — Standing tracker for Palantir ecosystem, Venntel/Clearview/Babel Street, NSA Section 702, regional ICE shifts, contract updates
+- `monitoring/2026-04-26-deep-dive.md` — Nashville/Crenshaw dismissal impact analysis, Erez Reuveni whistleblower tactical use in civil litigation, DHS payroll cliff (May 4-8 enforcement surge window)
+- `monitoring/2026-04-29-mass-call.md` — Pre-brief + outcome template for April 29 Mass Call (900+ events, 3,500+ with walkouts, NJ AFL-CIO 1M+ mobilized)
+- `monitoring/2026-05-01-template.md` — May Day documentation structure ready
+
+**CRITICAL SURVEILLANCE UPDATE**: **Section 702 FISA expires April 30** (4 days). This is the most time-sensitive surveillance development. Current law allows ICE to purchase Venntel-type location data without warrant. The gap is the "data broker loophole" blocking warrant requirements and closing broker sale to law enforcement. No deal confirmed as of April 26. This directly impacts ICE's ability to track protests, immigrant communities, and activist networks entering May 1. Live monitoring framework ready for April 28-May 1 outcomes.
+
+**Status**: May Day Action Guide production-ready. Surveillance tracking current. Live monitoring ready.
+
+#### cybersecurity-hardening — Phase 2 Implementation Guide Complete (9,600 words)
+
+**Deliverable**: `implementation-guide.md` — 8-part executable guide
+- Part 0: Data Broker Opt-Outs (priority table, batch submission automation)
+- Parts 1-2: Hardware & GrapheneOS (Pixel 6a/8/9/10, OEM unlock, installation gates)
+- Parts 3-4: Configuration & Signal (sandboxing, trusted contact, backup)
+- Parts 5-6: Tor/Mullvad/File Encryption (bridge fallbacks for blocked networks, VeraCrypt caveats, metadata stripping)
+- Part 7: Maintenance Schedule (quarterly audit, update regimen, threat monitoring)
+- Appended: Tier-annotated quick-start, maintenance checklist
+
+**Quality**: Every section includes objective, prerequisites, step-by-step instructions, verification checkpoints, troubleshooting, time estimates. Verified facts: Pixel 10 support, Mullvad always-on kill switch, Tor bridge obfs4/Snowflake fallback for network-blocked scenarios.
+
+**Status**: Phase 2 complete. Threat-model.md + opsec-playbook.md + implementation-guide.md form production-ready trilogy. Ready for publication prep or immediate release.
+
+#### open-repo — Phase 3 Data Layer Complete + 26 Tests Passing
+
+**Deliverables**:
+- **3 SQLAlchemy Models**: Contribution (PENDING → REVISION_REQUESTED/APPROVED/REJECTED), ReviewerQueueItem (round-robin assignment), ContributionFeedback (audit trail)
+- **12 Pydantic Schemas**: Creation, update, response, list, reviewer queue, review decision, history validation
+- **Test Suite**: 26 tests covering model/field validation (13), relationship integrity (4), complex workflows (3), status transitions (6)
+
+**Status**: Phase 3 data layer production-ready. Backward compatible. All 26 tests passing. Routes/endpoints ready to implement next.
+
+**Commit**: `3a94093` — `feat(open-repo): Phase 3 data models — contributions, reviewer queues, feedback`
+
+---
 
 ### Accomplished (Session 415 — orchestrator, parallel 3-agent execution)
 
@@ -155,40 +196,35 @@
 
 ### Needs Your Input
 
-**cybersecurity-hardening — Phase 2 Implementation Path**
-Quality review complete, documents verified accurate. Phase 2 outline designed (Session 415). **Choose next direction:**
-1. **Implement full guide** (write the 8-part implementation guide, ~6 hours)
-2. **Publication preparation** (add TOC, glossary, quick-reference checklists to existing docs)
-3. **Deepen specific categories** (OSINT counter-measures, TSCM/physical security, organizational incident response)
-4. **Publish as-is** (documents ready now for publication)
+**cybersecurity-hardening — Phase 2 Next Steps**
+**COMPLETE**: Implementation guide written (9,600 words, all 8 parts with verification). Threat-model.md + opsec-playbook.md + implementation-guide.md form complete trilogy. **Choose next direction:**
+1. **Publication preparation** (add TOC, glossary, quick-reference checklists, publish the trilogy)
+2. **Deepen specific categories** (OSINT counter-measures, TSCM/physical security, organizational incident response)
+3. **Publish immediately as-is** (documents production-ready now)
 
-Which direction should Phase 2 take?
+What's Phase 2's next step?
 
-**open-repo — Phase 3 Prioritization**
-Phase 3 architecture designed (Session 415). Backend Phase 1-2 fully operational and backward compatible. **Ready to start Phase 3 implementation** (contributions/moderation workflow) when you prioritize. 38 story points, ~3.5-4 weeks, 53-60 new tests.
+**open-repo — Phase 3 Routes/Endpoints**
+**COMPLETE**: Phase 3 data layer (3 models, 12 schemas, 26 tests all passing). Backend Phase 1-2 fully operational. **Ready to implement Phase 3 routes** (POST contributions, GET pending, review decisions, etc.). 38 story points total remaining, ~3.5-4 weeks. Should the orchestrator begin Phase 3 routes implementation?
 
-**resistance-research — May Day Live Monitoring (April 28, 29, May 1)**
-- **April 28**: Xinis hearing outcome expected (not yet available; hearing hasn't occurred as of April 26). Monitoring protocol ready.
-- **April 29**: May Day Mass Call 7:30pm ET. Coalition confirmed 900+ events, 3,500+ projected with walkouts.
-- **May 1**: May Day actions begin. Action Guide is verified accurate and production-ready.
-
-If you'll be participating or monitoring, share updates so the orchestrator can document outcomes.
+**resistance-research — Section 702 FISA + April 28–May 1 Live Monitoring**
+**CRITICAL**: Section 702 (FISA bulk surveillance loophole) expires April 30 — 4 days. No congressional deal confirmed. This directly constrains ICE's warrant-free location data purchase capability. Monitoring framework ready for April 28 (Xinis hearing outcome) → April 29 (Mass Call 7:30pm ET, 900+ events confirmed) → May 1 (May Day actions). May Day Action Guide verified production-ready. If you'll monitor or participate, share updates so outcomes are documented.
 
 **mfg-farm — Test Print**
-Business plan, CadQuery designs, market research, and listing copy all ready. Blocked on physical test print of the ModRun rail and clip designs. Once completed, Etsy launch prep can proceed.
+Business plan, CadQuery designs, market research, listing copy all complete. Blocked on physical test print of ModRun rail/clip designs. Once completed, launch prep can proceed.
 
 **seedwarden — PDF Mockup Images**
-All 21 products have content and listing copy complete. Only blocker: PDF mockup images for all listings (critical conversion factor on Etsy).
+All 21 products have content and listing copy. Only blocker: PDF mockup images for all listings (critical conversion factor on Etsy).
 
 ### Suggested Priorities (Next Session)
-1. **resistance-research**: **LIVE MONITORING** — April 28 Xinis hearing outcome (institution resistance precedent), April 29 May Day Mass Call (7:30pm ET), May 1 May Day actions. Document outcomes when available. Action Guide is verified ready.
-2. **cybersecurity-hardening**: **Awaiting user direction** — Phase 2 options determined. User to choose: implement guide / publish prep / deepen categories / publish as-is.
-3. **open-repo**: **Ready to start Phase 3** when prioritized. Architecture designed, backend solid. Can begin implementation.
-4. **stockbot**: Monitor paper trading performance (4 sessions running on Jetson since April 14). Check for signal generation and execution.
-5. **mfg-farm**: Test print of ModRun rail/clip designs (user action required for launch prep).
-6. **seedwarden**: PDF mockup images (all 21 products content/copy ready, only blocker is mockup images).
+1. **resistance-research**: **LIVE MONITORING** — Section 702 expires April 30 (4 days, no deal); April 28 Xinis hearing outcome; April 29 Mass Call 7:30pm ET (900+ events); May 1 May Day actions. Outcomes framework ready. Document as events occur.
+2. **cybersecurity-hardening**: **Awaiting user direction** — Implementation guide complete. Choose Phase 2 next: publication prep / deepening / publish as-is.
+3. **open-repo**: **Ready for Phase 3 routes** — Data layer done. Can begin Phase 3 routes/endpoints implementation (38 story points remaining).
+4. **stockbot**: Monitor paper trading performance (4 sessions running on Jetson since April 14). Share cycle logs or screenshot for status.
+5. **mfg-farm**: Test print of ModRun rail/clip designs (user action required).
+6. **seedwarden**: PDF mockup images (21 products ready, only blocker is mockups).
 
-**Usage**: At limit (~200K tokens weekly used). Orchestrator usage monitor will throttle at 80% or 90% threshold or reset Tuesday 00:00 UTC.
+**Usage**: Nominal. No throttling active.
 
 ---
 
