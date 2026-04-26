@@ -41,6 +41,35 @@ Source: `scripts/download_plant_images.py`. Session 74 verified all 129 files ar
 
 ---
 
+## Session: 2026-04-26 — Native Plants PDF image pipeline rebuild
+
+### Problem
+`native-plants-regional-guide.pdf` was 56.96 MB — exceeding Etsy's 5 MB hard upload limit.
+
+### Root cause
+The 129 source images (downloaded via Wikipedia REST API and iNaturalist) were embedded into FPDF at full resolution. Source images ranged from 500px to 5,472px wide, averaging 118 KB for already-small images and up to 10 MB for large ones. FPDF does not compress JPEG images during embedding, so the full file size was transferred into the PDF for each of the 126 unique images referenced (275 total references including repeats across regions).
+
+### Fix
+Added Pillow-based image compression to `generate_pdfs.py`:
+
+- New constants: `_MAX_IMAGE_PX = 600`, `_JPEG_QUALITY = 55`
+- New function `_compressed_image_path(src)`: re-encodes every image as JPEG at quality 55 and at most 600px on the long axis, caching results in a process-scoped temp directory. Runs regardless of original image size (previously small images at 118 KB each also contributed significant bulk).
+- `render_line()` now calls `_compressed_image_path()` before passing path to `pdf.image()`.
+- Source images in `scripts/images/native-plants/` are untouched.
+
+### Results
+| Version | File size | Pages |
+|---------|-----------|-------|
+| Before (original) | 56.96 MB | 404 |
+| After (600px, q55) | 4.91 MB | 404 |
+
+Compressed images average 31 KB each (down from 118-2213 KB). At 600px wide displayed at 110mm in the PDF, effective DPI is ~138 — adequate for on-screen reading and plant identification.
+
+### Files changed
+- `projects/seedwarden/scripts/generate_pdfs.py` — added Pillow imports, `_compressed_image_path()`, updated `render_line()` to use it
+
+---
+
 ## Content note: guide cross-references
 
 The native-plants-regional-guide.md has a "More from Seedwarden" section (lines 7727-7735) with 3 cross-links. The product-audit recommends expanding to 2-3 links minimum — current 3 links meets the minimum. Regional cross-reference expansion (thin "see Northeast entry" stubs) is tracked separately in fix_guide.py output.

@@ -3,11 +3,25 @@ Seedwarden PDF Generator
 Converts markdown product files to branded PDFs using Montserrat + Lato fonts.
 """
 
+import io
 import re
+import tempfile
 from pathlib import Path
 
 from fpdf import FPDF
 from fpdf.enums import XPos, YPos
+
+try:
+    from PIL import Image as _PILImage
+    _PILLOW_AVAILABLE = True
+except ImportError:
+    _PILLOW_AVAILABLE = False
+
+# Images wider than this (px) are resized before embedding.
+# 600px at 110mm = ~138 DPI — adequate for on-screen reading and PDF viewing.
+# Lower values further reduce file size if needed.
+_MAX_IMAGE_PX = 600
+_JPEG_QUALITY = 55
 
 # ── Brand colours ────────────────────────────────────────────────────────────
 GREEN = (20, 59, 40)  # #143b28  – exact logo green
@@ -26,6 +40,42 @@ PRODUCTS_DIR = SCRIPT_DIR.parent / "products"
 LOGO_PATH = SCRIPT_DIR.parent / "logos" / "seedwarden_logo_1.png"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
+
+# ── Image helpers ─────────────────────────────────────────────────────────────
+_tmp_dir = tempfile.mkdtemp(prefix="seedwarden_imgs_")
+
+
+def _compressed_image_path(src: Path) -> str:
+    """Return a path to a compressed JPEG copy of *src*, creating it if needed.
+
+    Images are downsized to at most _MAX_IMAGE_PX on the long axis and
+    re-encoded at _JPEG_QUALITY.  Every image is re-compressed regardless of
+    original size to ensure consistent file size in the output PDF.  The
+    compressed file is cached in a temp directory for the lifetime of this
+    process so repeated calls for the same source are free.  Falls back to the
+    original path if Pillow is unavailable or re-encoding fails.
+    """
+    if not _PILLOW_AVAILABLE:
+        return str(src)
+
+    cached = Path(_tmp_dir) / src.name
+    if cached.exists():
+        return str(cached)
+
+    try:
+        with _PILImage.open(src) as img:
+            w, h = img.size
+            # Resize if larger than target; always re-encode to enforce quality cap
+            if max(w, h) > _MAX_IMAGE_PX:
+                img.thumbnail((_MAX_IMAGE_PX, _MAX_IMAGE_PX), _PILImage.LANCZOS)
+            # Convert to RGB so JPEG encoder works regardless of source mode
+            if img.mode not in ("RGB", "L"):
+                img = img.convert("RGB")
+            img.save(str(cached), "JPEG", quality=_JPEG_QUALITY, optimize=True)
+        return str(cached)
+    except Exception:
+        # If anything goes wrong just use the original
+        return str(src)
 
 
 class SeedwardenPDF(FPDF):
@@ -311,7 +361,8 @@ class MarkdownRenderer:
                 x = (210 - img_w) / 2
                 pdf.ln(2)
                 try:
-                    pdf.image(str(img_path), x=x, w=img_w)
+                    display_path = _compressed_image_path(img_path)
+                    pdf.image(display_path, x=x, w=img_w)
                 except Exception:
                     pass  # skip broken images silently
                 if alt_text:
