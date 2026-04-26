@@ -237,6 +237,50 @@ class ActivityType(str, enum.Enum):
     ACCEPT = "Accept"
 
 
+class TrustStatus(str, enum.Enum):
+    """Trust status enumeration for federation partners."""
+
+    PENDING = "pending"
+    TRUSTED = "trusted"
+    UNTRUSTED = "untrusted"
+    REVOKED = "revoked"
+
+
+class FederationPartner(Base):
+    """Federation partner model - tracks partner nodes and their public keys."""
+
+    __tablename__ = "federation_partners"
+
+    # Primary key: UUID
+    id = Column(BigInteger, primary_key=True, autoincrement=True, index=True)
+
+    # Partner identification
+    name = Column(String(255), nullable=False, unique=True, index=True)
+    base_url = Column(String(512), nullable=False, unique=True, index=True)  # https://node-b.example.com
+
+    # Public key and signature info
+    public_key_pem = Column(Text, nullable=False)  # PEM-encoded RSA public key
+    key_id = Column(String(512), unique=True, index=True, nullable=False)  # Key identifier URI
+
+    # Trust state machine
+    trust_state = Column(
+        Enum(TrustStatus),
+        nullable=False,
+        default=TrustStatus.PENDING,
+        index=True,
+    )
+
+    # Timestamps
+    created_at = Column(DateTime, nullable=False, default=datetime.utcnow, index=True)
+    updated_at = Column(DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+    public_key_expires_at = Column(DateTime, nullable=True)
+    last_key_refresh_at = Column(DateTime, nullable=True)
+    last_activity_at = Column(DateTime, nullable=True, index=True)
+
+    def __repr__(self):
+        return f"<FederationPartner id={self.id} name={self.name} trust_state={self.trust_state}>"
+
+
 class Activity(Base):
     """Activity model - stores ActivityPub activities for federation."""
 
@@ -265,6 +309,11 @@ class Activity(Base):
 
     # Federation metadata
     local = Column(Integer, nullable=False, default=1)  # 1 = generated locally, 0 = received from remote
+
+    # Wave 4 Federation Partner fields
+    partner_id = Column(BigInteger, ForeignKey("federation_partners.id"), nullable=True, index=True)
+    signature_header = Column(String(1024), nullable=True)  # Raw Signature header for audit
+    signature_verified = Column(Integer, nullable=False, default=0)  # 1 = verified, 0 = unverified/failed
 
     def __repr__(self):
         return f"<Activity id={self.id} type={self.activity_type} actor={self.actor_url}>"
