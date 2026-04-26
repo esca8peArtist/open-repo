@@ -90,8 +90,18 @@
 - **Distribution execution** (user action): Substack, Reddit, institutional templates ready for user posting
 - **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers are production-ready for regular updates
 
+**Phase 4 — Theory of Change (new scope, 2026-04-26)**: The project has a strong diagnosis and a vision of "what better looks like." The identified gap is the *mechanism* question: how does a captured system get replaced when the people who'd need to approve change are the same ones who benefit from blocking it? Four documents to produce, in priority order:
+
+1. **`comparative-democratic-recovery.md`** — Cross-national case study: countries that underwent democratic backsliding and recovered (South Korea post-1987, Spain post-Franco, Uruguay post-dictatorship) vs. those that failed to recover (Hungary, Venezuela, Turkey). What structural factors made the difference? What role did parallel institutions, international pressure, elite defection, and mass mobilization each play? Identify replicable patterns and apply explicitly to the US context. (~4,000 words, heavily cited)
+
+2. **`power-mapping.md`** — Concrete analysis of who specifically holds veto power over systemic change in the US (not abstract "elites" — named institutions, networks, funding streams). Map: legislative veto players, judicial capture mechanisms, dark money networks (Federalist Society, Koch network, AIPAC), foreign lobbying exemptions (FARA gaps), and revolving-door pipelines. For each: what are their known vulnerabilities (electoral, legal, reputational)? What historical precedents exist for displacing comparable entrenched power? (~3,500 words)
+
+3. **`parallel-institutions.md`** — Concrete models for building functional systems that reduce dependence on captured federal apparatus while developing the organizational base for structural reform. Cover: mutual aid networks, community land trusts, worker cooperatives, local food sovereignty, community broadband, credit unions vs. commercial banks, state-level single-payer experiments. For each: current scale, replication requirements, documented political effects (does local alternative-building translate to political capacity?). (~3,500 words)
+
+4. **`elite-capture-case-study.md`** — The Epstein network as a documented case study in accountability system failure. Not speculative — use only what is established in court records, unsealed documents, investigative journalism (NYT, Miami Herald, Vanity Fair, Hersh). Cover: the 2008 NPA deal as prosecutorial capture, the Maxwell trial record, documented connections to intelligence services (Robert Maxwell/Mossad per multiple credible sources), the FARA gap that allowed foreign influence networks to operate without disclosure, and systemic implications for democratic accountability. Explicit framing: this is evidence of *structural* failure, not individual criminality. (~3,000 words)
+
 **Blocked on**: —
-**Notes**: Phase 3 COMPLETE. All research, infrastructure, and distribution templates ready for user execution. Proposal is comprehensive (22 domains), evidence-based (Phase 3 research integrated), and distribution-ready. Tracker system in place for ongoing monitoring of crises and litigation.
+**Notes**: Phase 3 COMPLETE. Phase 4 (theory of change) is the identified research gap — the project diagnoses what's broken and proposes what better looks like, but lacks the mechanism analysis: how captured systems actually get uncaptured. These four documents fill that gap and make the democratic renewal proposal actionable rather than aspirational.
 
 ---
 
