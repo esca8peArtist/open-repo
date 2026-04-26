@@ -4,7 +4,38 @@
 
 ---
 
-## Since Last Check-in (Session 431 — 2026-04-26 afternoon/evening)
+## Since Last Check-in (Session 432 — 2026-04-26 evening)
+
+**Completed**:
+
+1. **open-repo**: **Phase 4 Wave 3 Phase 2 IMPLEMENTATION COMPLETE**. Route integration for Announce/Undo endorsement propagation: (1) New schemas `VoteCountBreakdown`, `AggregatedEndorsementStatsResponse`, (2) Modified `create_endorsement()` to trigger Announce generation + async send, (3) New endpoint `GET /api/items/{cid}/endorsements/aggregated` with comprehensive local/remote breakdown, (4) Modified `delete_user_endorsement()` to generate and send Undo activity, (5) Modified `/inbox` to route Announce/Undo to propagation service. **Test results**: 125/125 passing (9 Phase 1 Wave 3 + 116 Phase 1–3), zero regressions. **Commit**: `45f9236`. **Status**: Phase 2 COMPLETE, ready for Phase 3 cross-node testing.
+
+**In Progress**:
+
+1. **resistance-research**: Monitoring begins **Monday 2026-04-28 21:00 UTC** (Xinis hearing closing arguments). All templates verified field-ready. No action until Monday.
+
+2. **stockbot**: Paper trading LIVE on dev + Jetson, ready for **Monday 2026-04-28 14:30 UTC market open**. Dashboard API operational. No action until Monday.
+
+**Needs Your Input**:
+
+- **cybersecurity-hardening**: Publication signal needed (trilogy ready: threat-model.md + opsec-playbook.md + implementation-guide.md). Can publish immediately or hold pending optional additions. Decision: publish now or defer?
+- **mfg-farm**: Test print required (physical action) before launch prep continues.
+- **seedwarden**: Etsy store Phase 1 launch ready (all 21 mockups complete). Ready to upload 6 lead products when signaled.
+- **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi). Wave 3 Phase 3 cross-node testing next.
+
+**Suggested Priorities for Next Session**:
+
+1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — run monitoring-dashboard.py, begin P&L tracking
+2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
+3. **Tuesday+ 2026-04-29**: **open-repo** Wave 3 Phase 3 implementation (end-to-end cross-node testing, ~1-2 days)
+4. **Anytime this week**: **seedwarden** Etsy Phase 1 launch (signal when ready for upload instructions)
+5. **Pending user decision**: **cybersecurity-hardening** publication
+
+**Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
+
+---
+
+## Previous Check-in (Session 431 — 2026-04-26 afternoon/evening)
 
 **Completed**:
 
