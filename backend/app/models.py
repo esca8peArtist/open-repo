@@ -319,6 +319,66 @@ class Activity(Base):
         return f"<Activity id={self.id} type={self.activity_type} actor={self.actor_url}>"
 
 
+class ConflictType(str, enum.Enum):
+    """Federation conflict type enumeration for Wave 4 Phase 4."""
+
+    SIGNATURE_MISMATCH = "signature_mismatch"
+    KEY_EXPIRED = "key_expired"
+    KEY_REVOKED = "key_revoked"
+    TRUST_FAILURE = "trust_failure"
+
+
+class ConflictResolutionAction(str, enum.Enum):
+    """Federation conflict resolution action enumeration."""
+
+    AUTO_DOWNGRADE = "auto_downgrade"
+    MANUAL_REVIEW = "manual_review"
+    IGNORE = "ignore"
+
+
+class ConflictStatus(str, enum.Enum):
+    """Federation conflict status enumeration."""
+
+    ACTIVE = "active"
+    RESOLVED = "resolved"
+
+
+class FederationConflict(Base):
+    """Federation conflict model - tracks signature/key/trust conflicts.
+
+    Wave 4 Phase 4: Conflict logging and admin dashboard for federation monitoring.
+    Stores records of signature verification failures, key issues, and trust failures.
+    """
+
+    __tablename__ = "federation_conflicts"
+
+    # Primary key
+    id = Column(BigInteger, primary_key=True, autoincrement=True, index=True)
+
+    # Foreign keys
+    partner_id = Column(BigInteger, ForeignKey("federation_partners.id"), nullable=False, index=True)
+    activity_id = Column(BigInteger, ForeignKey("activities.id"), nullable=True, index=True)  # Nullable for key-level conflicts
+
+    # Conflict metadata
+    conflict_type = Column(Enum(ConflictType), nullable=False, index=True)
+    status = Column(Enum(ConflictStatus), nullable=False, default=ConflictStatus.ACTIVE, index=True)
+
+    # Conflict details
+    error_message = Column(Text, nullable=True)  # Error details from verification failure
+
+    # Resolution tracking
+    resolution_action = Column(Enum(ConflictResolutionAction), nullable=True)
+    resolved_by = Column(String(255), nullable=True)  # Admin user ID or system identifier
+    resolution_notes = Column(Text, nullable=True)
+
+    # Timestamps
+    detected_at = Column(DateTime, nullable=False, default=datetime.utcnow, index=True)
+    resolved_at = Column(DateTime, nullable=True, index=True)
+
+    def __repr__(self):
+        return f"<FederationConflict id={self.id} partner_id={self.partner_id} type={self.conflict_type} status={self.status}>"
+
+
 class NodePublicKey(Base):
     """Node public key storage for HTTP signature verification."""
 
