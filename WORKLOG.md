@@ -4,6 +4,23 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — General Research Agent — Nuclear & Radiological Preparedness (off-grid-living domain)
+
+**Work Completed**:
+- Researched nuclear/radiological preparedness comprehensively across FEMA, HHS/REMM, CDC, FDA, IAEA, NCRP, NRC, EPA, and Cresson Kearny/ORNL sources
+- Wrote `/home/awank/dev/SuperClaude_Framework/projects/off-grid-living/17-nuclear-radiological-preparedness.md` (~450 lines)
+
+**Key Findings**:
+- The 7:10 rule governs shelter exit decisions: dose rate drops 10x for every 7x increase in time; after 48 hours it is 1/100th of the 1-hour value
+- Protection factor of a concrete/brick basement is ~200+; wood-frame house basement is 10–20; removing outer clothing eliminates 90% of surface contamination
+- KI dosing is age-stratified (16 mg for neonates to 130 mg for adults); must be taken within 1–2 hours of exposure to achieve >90% thyroid protection; ineffective at 12+ hours
+- ARS vomiting onset time is the primary field triage indicator: <30 min = ≥6 Gy (critical), <2 hrs = 2–6 Gy (serious), absent = <2 Gy (survivable without specialized care)
+- KFM (Kearny Fallout Meter) is a functional improvised detector buildable from household materials; plans freely available from ORNL/OISM
+- Cs-137 and Sr-90 drive long-term soil contamination; potassium fertilization and liming mitigate crop uptake
+- SALT triage framework adapted by REMM for mass-casualty nuclear events; expectant category applies to severe trauma + high-dose combined injury
+
+---
+
 ## 2026-04-26 — General Research Agent — Palantir Surveillance Capabilities Deep-Dive
 
 **Work Completed**:

@@ -2,6 +2,107 @@
 
 ---
 
+## April 26, 2026 — resistance-research: Phase 3 distribution templates — Substack, Reddit, institutional outreach
+
+**Session type**: Writing (distribution-ready outputs)
+**Files**:
+- `projects/resistance-research/distribution-substack-drafts.md` — Four Substack post drafts (~3,800 words total): Launch/Overview (~800 words), Electoral Reform Deep Dive (~1,000 words), Accountability and Oversight (~1,000 words), Trackers and Monitoring (~600 words). Each includes YAML metadata, narrative hooks, inline citations, cross-links to specific proposal domains and tracker documents, and subscriber growth calls-to-action.
+- `projects/resistance-research/distribution-reddit-templates.md` — Five subreddit-tailored posts (~2,500 words total): r/law (constitutional and doctrinal framing, citations to controlling case law), r/politics (data-forward policy alternative framing, 2026 midterm timeline), r/Keep_Track (documentation community framing, tracker-first approach), r/Ask_Politics (answer-the-question framing, actionability emphasis), r/democracy (comparative movement research and international precedent framing). Each written to feel native to the target community.
+- `projects/resistance-research/distribution-institutional-outreach-templates.md` — Three email template categories (~4,200 words total): Category 1 (legal aid — two templates: general legal aid and public defender associations, covering litigation tracker, constitutional challenge pathways, domain-specific legal analysis), Category 2 (digital rights and civil liberties — two templates: EFF/digital rights focus and platform accountability/media policy focus, covering Domains 4, 7, 8, 21), Category 3 (movement and community organizations — three templates: general movement, faith communities, environmental justice organizations, covering Domains 1, 3, 13, 15, 16, 17, 18, 22). Each template includes specific value proposition, relevant domain mapping, CC 4.0 distribution language, and a personalization checklist.
+
+**Status**: Complete — ready for personalization and use
+
+**Coverage**: All templates grounded in actual proposal content (domain numbers, fiscal figures, international precedents, case law citations) read at session start. Institutional outreach templates avoid generic framing — each category leads with the specific domains most relevant to that audience type and includes specific document links and feedback requests. Reddit posts are written to feel native to each community, not cross-posted. Substack posts are serialized and sequenced for subscriber growth.
+
+**Confidence**: High — all document content is drawn from the full proposal, tracker documents, and executive summary verified at session start.
+
+---
+
+## April 26, 2026 — resistance-research: Distribution package — executive summary, distribution guide, published/README
+
+**Session type**: Writing (distribution-ready outputs)
+**Files**:
+- `projects/resistance-research/democratic-renewal-executive-summary.md` — 2-page print-ready executive summary (new distribution-optimized version, ~1,350 words prose + 22-domain table with fiscal scope)
+- `projects/resistance-research/DISTRIBUTION_GUIDE.md` — Platform strategy, audience segmentation, messaging templates, metrics, and legal/ethical notes (~2,200 words)
+- `projects/resistance-research/published/README.md` — Hub README for all distributable documents, full domain quick-reference table, use-case guide for five audience types (~1,600 words)
+**Status**: Complete — distribution-ready
+
+**Coverage**:
+- Executive summary: four-paragraph structure (crisis, structural failures, theory of change, call to action) plus 22-domain fiscal table and fiscal summary. Grounded in actual proposal data (57/100 democracy score, DOGE database disclosure, 3.5% Chenoweth threshold, Poland comparison, five minimum-viable reforms). Designed for print at standard letter format.
+- Distribution guide: Substack, Reddit (10+ subreddits with specific messaging), email (institutional outreach template), Twitter/X (thread structure), institutional channels (legal aid, law reviews, think tanks, unions, faith communities, state legislatures). Audience segmentation across general public, policy makers, legal/policy professionals, and grassroots organizers. Format options: web link, PDF, email template, social media cards, print. Metrics: immediate (views, shares), medium-term (cite-backs, legislative staff inquiries), long-term (legislation, court filings, organizational adoption). CC 4.0 legal notes.
+- Published README: links to all 14 primary research files, domain quick-reference table mapping all 22 domains to lead document sections, five use-case pathways (general understanding, policy work, litigation, organizing, institutional adoption), metadata block with citation format.
+
+**Confidence**: High — all documents grounded in full proposal content read at start of session.
+
+---
+
+## April 26, 2026 — resistance-research: police-brutality-consent-decree-tracker.md
+
+**Session type**: Research and writing
+**File**: `projects/resistance-research/police-brutality-consent-decree-tracker.md`
+**Word count**: ~4,200 words
+**Status**: Complete — distributable
+
+**Coverage**:
+- Section 1: The May 21, 2025 DOJ mass action — simultaneous withdrawal from Minneapolis/Louisville proposed decrees, retraction of findings in eight jurisdictions, closure of pattern-or-practice investigations in six cities (Phoenix, Trenton, Memphis, Mount Vernon, Oklahoma City, Louisiana State Police). Structural context: DOJ Civil Rights Division lost 70%+ of attorneys, police misconduct unit dropped from ~40 to 13 trial attorneys, excessive-force prosecutions fell 36% in 2025.
+- Chicago CPD (state AG decree, 2019): 16–23% compliance over 6.5 years; use-of-force up 47% 2023–2024, 84 high-severity incidents in 2024; supervisory corrective action taken only 3% of the time flagged violations are detected; 47% staffing vacancy in reform-implementation positions as of mid-2025.
+- Oakland OPD (NSA, 2003): Three tasks remain open after 22 years; federal monitor has not attended a meeting since 2019 and missed quarterly reports in 2025; Phong Tran bribery/perjury case implicating eight officers; City Council twice rejected Police Commission oversight nominees after documented police union lobbying.
+- Minneapolis MPD (federal proposed decree dismissed May 2025; state MDHR decree active): State decree continues, Mayor Frey signed EO 2025-01 to implement federal reforms voluntarily; first-year monitoring found above-average compliance pace.
+- Baltimore BPD (2017): Five sections terminated, 83% in compliance; nine DOJ attorneys withdrew; 700+ officers in disciplinary backlog as of April 2026; staffing 600 below authorized strength.
+- Louisville LMPD (proposed decree dismissed Dec. 31, 2025): Replaced with voluntary "Community Commitment" — no contempt enforcement mechanism.
+- Cleveland CDP (2015): Near-exit; mayor filed to end oversight Feb. 2026; Police Commission and interim monitor both filed objections March 2026 citing ongoing deficiencies and city "animosity" toward commission.
+- Ferguson FPD (2016): City council voted 4-3 in June 2025 to cut consent decree budget by 50%; estimated 45–60% complete as of May 2025; exit deadline of Dec. 2025 not met.
+- Newark NPD: Successfully terminated November 19, 2025 — 95% compliance across 10 areas.
+- New Orleans NOPD: Successfully terminated November 19, 2025 after sustainment period.
+- Seattle SPD: Successfully terminated September 3, 2025 after 13 years and $127M investment.
+- Los Angeles LAPD/LASD: No active federal decree over LAPD; LASD Antelope Valley settlement ongoing.
+- Kansas City KCPD: No consent decree; state-controlled department structure insulates from city accountability; $18.1M in settlements in 2025.
+- Cross-cutting patterns: staffing sabotage, political capture of civilian oversight, financial strangulation, federal vacuum downstream effects.
+- Section 4: Monitoring and enforcement gaps — no contempt proceedings despite documented non-compliance; state AG intervention is the most viable remaining mechanism.
+- Open research threads: LASD detail, state-level § 14141 standing for private plaintiffs, Louisville ELEFA monitor reports, Ferguson post-funding-cut compliance.
+
+**Confidence**: High for all city-specific compliance data, decree dates, and documented violations. Sources are primary (DOJ, monitor reports, court filings) and major local news organizations. All citations linked.
+
+---
+
+## April 26, 2026 — resistance-research: Phase 3 — environmental-rollbacks-tracker.md
+
+**Session type**: Research and writing
+**File**: `projects/resistance-research/environmental-rollbacks-tracker.md`
+**Word count**: ~3,800 words
+**Status**: Complete — distributable
+
+**Coverage**:
+- EPA (10 entries): Endangerment Finding rescission (finalized Feb 2026, challenged in D.C. Circuit); MATS 2024 amendments repealed (finalized Feb 2026); PM2.5 NAAQS rollback via court motion to vacate (Nov 2025); Power Plant GHG Standards repeal (proposed, June 2025); California vehicle emissions waivers nullified via CRA (June 2025); CAFE standards reset proposed (Dec 2025); Good Neighbor Plan NOx rollback (proposed Jan 2026); PFAS partial rollback (PFOA/PFOS retained but delayed; four PFAS standards rescinded); WOTUS proposed (Nov 2025); methane WEC repealed via CRA (March 2025); NEPA regulatory framework eliminated (CEQ final rule Jan 2026); EPA enforcement/staffing cuts (23% staff reduction as of July 2025, 55% budget cut proposed).
+- Department of Interior (4 entries): ANWR leasing reinstated (Oct 2025); ESA four-part proposed rollback + habitat-modification "harm" definition revision (Nov 2025/Apr 2025); National monuments under review / NE Canyons reopened to fishing (Feb 2026); NPR-A and BLM onshore leasing expansion.
+- NOAA/Commerce (3 entries): Pacific Islands Heritage Monument injunction won (Aug 2025); NE Canyons and Seamounts reopened (Feb 2026, litigation filed); NOAA staffing/structural degradation (800 fired, $1.6B budget cut).
+- DOT (1 entry): CAFE (cross-reference EPA entry); NEPA review requirements eliminated cross-agency.
+- DOE (1 entry): Appliance efficiency rollback across 16+ categories; anti-backsliding EPCA legal conflict; 12-state AG opposition.
+- Cross-agency (2 entries): Social cost of carbon reduced 96% (IWG disbanded Jan 2026); Paris Agreement withdrawal effective Jan 2026.
+
+**Confidence**: High for all finalized rules and published Federal Register citations. Moderate for pending rules and ongoing litigation status. All entries include CFR citations, FR document numbers where available, and litigation organization cross-references.
+
+---
+
+## April 26, 2026 — resistance-research: Phase 3 — first-amendment-suppression.md
+
+**Session type**: Research and writing
+**File**: `projects/resistance-research/first-amendment-suppression.md`
+**Word count**: ~3,400 words
+**Status**: Complete — distributable
+
+**Coverage**:
+- Section 1 (Press Crackdowns): Pentagon press policy and *NYT v. DoD* (March 2026 ruling); AP exclusion and ongoing D.C. Circuit litigation; FBI raid on Washington Post reporter Natanson (January 2026, still contested); NPR/PBS defunding EO ruled unconstitutional (March 2026); FCC broadcast license threats; journalist arrests and assaults during Minneapolis immigration protests (January 2026).
+- Section 2 (Protest Restrictions): State anti-protest legislation wave (55 laws since 2017, 100 proposals in 10 months); immigration enforcement as protest suppression (Khalil, Öztürk, Mahdawi, Khan Suri); campus free-speech-zone restrictions.
+- Section 3 (Platform Deplatforming): DHS administrative subpoenas targeting online critics (*Doe v. DHS*); EFF open letter and FOIA suit; *Murthy v. Missouri* framework and its unresolved gaps.
+- Section 4 (SLAPP Suits): Greenpeace/Energy Transfer $345M verdict (March 2025); Trump v. Des Moines Register/Selzer; ABC and CBS-Paramount settlement chilling effect; state anti-SLAPP progress and federal legislative gap.
+- Section 5 (Legal Landscape): Brandenburg, Texas v. Johnson, NAACP v. Claiborne Hardware, Snyder v. Phelps; active 2025–2026 cases mapped; analysis of three systemic vulnerabilities (enforcement gaps, standing/ripeness, speed asymmetry).
+- Section 6 (Resources): Tracker organizations, emergency legal contacts, project cross-references.
+
+**Confidence**: High for all documented court proceedings and verified reporting. Moderate for ongoing cases where status may have changed post-April 26.
+
+---
+
 ## April 26, 2026 — resistance-research: Monday Readiness (Template Validation)
 
 **Session type**: Pre-capture validation
