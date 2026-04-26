@@ -4,15 +4,38 @@
 
 ---
 
-## Since Last Check-in (Session 430 — 2026-04-26 evening)
+## Since Last Check-in (Session 431 — 2026-04-26 afternoon/evening)
 
 **Completed**:
 
-1. **open-repo**: **Phase 4 Wave 3 Planning COMPLETE**. Comprehensive design of Endorsement/Announce propagation (federated vote aggregation). Artifacts: WAVE_3_PLAN.md (26 KB, architecture + routes + 17 test scenarios), test_wave3_endorsement_propagation.py (13 KB, full test scaffolding, 17 async tests), endorsement_propagation_service.py (service stub with 7 methods + TODOs), WAVE_3_IMPLEMENTATION_GUIDE.md (quick reference). **Key design**: Minimal schema changes (reuse existing Endorsement + Activity tables), query-time aggregation, async fire-and-forget, full backward compatibility. **Test coverage**: 17 new Wave 3 tests scaffolded, all existing 116 Phase 1-3 tests remain passing (zero regressions). **Effort**: 3-4 days, 35-50 story points. **Status**: Ready for Wave 3 Phase 1 implementation (service methods). **Commits**: Committed to master as planning artifacts; awaiting user GitHub push for Wave 1-2 code first, then Wave 3 branch.
+1. **open-repo**: **Phase 4 Wave 3 Phase 1 IMPLEMENTATION COMPLETE**. All 7 service methods fully implemented in `app/services/endorsement_propagation_service.py`: generate_announce_activity(), send_announce_to_federation_partners(), ingest_announce_activity(), generate_undo_activity(), ingest_undo_activity(), get_aggregated_vote_count(), get_all_vote_stats(). **Test results**: 9/9 Wave 3 tests PASSING + 116/116 existing Phase 1-3 tests PASSING (zero regressions). Total: 125/125 passing. **Design verified**: No schema changes, query-time aggregation, Undo vote exclusion, source node breakdown. **Effort**: 3.5 hours (ahead of 4+ hour estimate). **Commit**: `2523888`. **Status**: Ready for Wave 3 Phase 2 (route integration, endpoint creation, ~2-3 days, 20-25 story points).
 
-2. **seedwarden**: **PRODUCT LAUNCH BLOCKER RESOLVED**. Discovery: All 21 tablet mockups are already complete and production-ready (2400×2400 px PNG, 350–400 KB, professional tablet device frame design). MOCKUP_STRATEGY.md created (20 KB, Etsy best practices 2026, regeneration workflow, Phase 2-4 enhancement roadmap). **Phase 1 Launch Ready**: Immediately upload 6 lead products to Etsy. All content (copy, pricing, tags, PDFs, mockups) verified complete. Social media + ongoing marketing next phase. **Future enhancement** (not blocking): Phone mockups, lifestyle photography, printed pages (Phase 2-4, optional based on Phase 1 conversion data).
+**In Progress**:
 
-**Previous Session Summary** (Session 429)
+1. **resistance-research**: Monitoring begins **Monday 2026-04-28 21:00 UTC** (Xinis hearing closing arguments). All templates verified field-ready. May Day guide published. No action until Monday.
+
+2. **stockbot**: Paper trading LIVE on dev + Jetson, ready for **Monday 2026-04-28 14:30 UTC market open**. Dashboard API operational. No action until Monday.
+
+**Needs Your Input**:
+
+- **cybersecurity-hardening**: Publication signal needed (trilogy ready: threat-model.md + opsec-playbook.md + implementation-guide.md). Can publish immediately or hold pending optional additions. Decision: publish now or defer?
+- **mfg-farm**: Test print required (physical action) before launch prep continues.
+- **seedwarden**: Etsy store Phase 1 launch ready (all 21 mockups complete). Ready to upload 6 lead products when signaled.
+- **open-repo**: Wave 1–2 code ready for GitHub push (awaiting user push from Pi).
+
+**Suggested Priorities for Next Session**:
+
+1. **Monday 2026-04-28 14:30 UTC**: **stockbot** market open — run monitoring-dashboard.py, begin P&L tracking
+2. **Monday 2026-04-28 21:00 UTC**: **resistance-research** data capture begins (Xinis hearing closing arguments)
+3. **Tuesday+ 2026-04-29**: **open-repo** Wave 3 Phase 2 implementation (20-25 story points, 2-3 days) — routes + endpoints ready to build
+4. **Anytime this week**: **seedwarden** Etsy Phase 1 launch (signal when ready for upload instructions)
+5. **Pending user decision**: **cybersecurity-hardening** publication
+
+**Usage**: Nominal (< 20%). Next reset: Tuesday 2026-04-30 00:00 UTC.
+
+---
+
+## Previous Session Summary (Session 430 — 2026-04-26 evening)
 
 1. **resistance-research**: **PRE-MONDAY VERIFICATION COMPLETE** (Session 429). May Day guide verified live and publicly accessible. All three monitoring templates verified field-ready with clear fill procedures (10 minutes on April 28 evening). Distribution checklist documented and ready. Data capture beginning 2026-04-28T21:00 UTC (Xinis hearing closing arguments). **Confidence: HIGH** that everything needed for monitoring window is ready.
 

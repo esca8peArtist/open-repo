@@ -9222,3 +9222,44 @@ projects/open-repo/backend/
 ---
 
 **Session Summary**: Two parallel agents completed Wave 3 architecture planning + unblocked seedwarden product launch. open-repo Wave 3 fully scaffolded and ready for implementation (35-50 story points). seedwarden mockup discovery resolved the final launch blocker — all 21 products now production-ready for Etsy deployment. Zero new blockers introduced.
+
+---
+
+## 2026-04-26 (Session 431) — open-repo Wave 3 Phase 1 Implementation COMPLETE
+
+### open-repo — Phase 4 Wave 3 Phase 1 Implementation COMPLETE
+
+**Task**: Implement 7 service methods in `endorsement_propagation_service.py` for federated vote aggregation and propagation.
+
+**Deliverables**:
+
+1. **7 Service Methods** implemented in `app/services/endorsement_propagation_service.py`:
+   - `generate_announce_activity()` — Creates Announce ActivityPub activities when users vote, includes local vote statistics
+   - `send_announce_to_federation_partners()` — Fire-and-forget delivery to federation partners
+   - `ingest_announce_activity()` — Receives and stores remote Announce activities for aggregation
+   - `generate_undo_activity()` — Creates Undo activities to retract votes
+   - `ingest_undo_activity()` — Receives and stores Undo activities
+   - `get_aggregated_vote_count()` — Aggregates local endorsements + remote Announce activities with source node breakdown
+   - `get_all_vote_stats()` — Returns comprehensive vote statistics (upvotes, downvotes, flags, score)
+
+2. **Test Results**:
+   - All 9 Wave 3 unit tests PASSING (5 unit tests + 4 aggregation tests)
+   - All 116 existing Phase 1-3 tests PASSING (zero regressions)
+   - **Total: 125/125 tests passing**
+
+3. **Design Decisions**:
+   - No schema changes — reuses existing Activity and Endorsement tables
+   - Query-time aggregation — votes counted on read, not materialized
+   - Undo handling — undone votes excluded by checking activity IDs
+   - Breakdown tracking — vote distribution by source node for federation insights
+   - Backward compatible — all Wave 1-2 APIs unchanged
+
+4. **Commit**: `2523888` — "feat(wave3): implement endorsement propagation service for federated vote synchronization"
+
+**Status**: Phase 1 COMPLETE, ready for Phase 2 (route integration, endpoint creation, cross-node testing).
+
+**Effort**: 3.5 hours (faster than estimated 4+ hours due to clear architecture and test scaffolding).
+
+**Notes**: All tests passed first run — architecture and design decisions from Wave 3 planning were solid. No blockers or rework needed. Phase 2-3 routes and endpoints ready to begin next session.
+
+**Session Summary**: Single project focus on substantive implementation. Wave 3 Phase 1 service layer fully implemented and tested. Zero regressions. Ready for Phase 2 route integration. All four orchestration files updated and committed on master.
