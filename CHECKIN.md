@@ -8,9 +8,39 @@
 
 ## Since Last Check-in
 
-**Period**: 2026-04-26 (Session 412 — orchestrator, parallel 3-agent execution)
-**Sessions run**: 412
-**Token budget**: 36K used of 200K weekly (~18%)
+**Period**: 2026-04-26 (Session 413 — orchestrator, parallel 2-agent execution)
+**Sessions run**: 413
+**Token budget**: 95K used of 200K weekly (~48%)
+
+### Accomplished (Session 413 — orchestrator, parallel 2-agent execution)
+
+#### resistance-research — May Day Monitoring: 6 Critical New Developments Documented
+**Files updated**: `monitoring/2026-04-28-pre-brief.md` (6 new developments added), `monitoring/2026-04-28-results.md` (pre-filed with blank hearing outcome)
+
+**Key findings** (not in April 24 watch brief):
+1. **ICE tracker apps injunction (April 18-23)** — First Amendment win for organizer safety infrastructure
+2. **ProPublica "Caught in the Crackdown"** — 1/3 of protest arrests collapsed; video defeats officer statements
+3. **DHS payroll cliff (May 4-8)** — 270K employees affected; watch for pre-May Day enforcement surge
+4. **Nashville Crenshaw ruling** — still pending, could drop any day
+5. **Erez Reuveni whistleblower complaint** — being cited in civil litigation, contempt evidence
+6. **May Day Strong: 900+ events confirmed, April 29 Mass Call at 7:30pm ET**
+
+**Status**: May Day guide production-ready. No logistics changes needed. April 28 Xinis hearing is next critical event.
+
+#### open-repo — MVP Backend Phase 1: Production-Ready FastAPI + PostgreSQL
+**Files created**: `backend/app/` (5 files, 489 lines), tests (24 passing), docs (API.md 517 lines, README.md 334 lines)
+
+**Deliverables**:
+- 3 API endpoints: POST /api/items (create), GET /api/items/{cid} (retrieve), GET /api/items (list + pagination)
+- SQLAlchemy ORM + PostgreSQL, async throughout
+- JSON-LD validation + CID computation (SHA256 deterministic hashing)
+- Seed data loader for 32 OpenFarm crops
+- Full documentation + Makefile for dev workflows
+- All 24 tests passing ✅
+
+**Status**: Production-ready for Phase 2 (search + endorsements). Ready to begin backend Phase 2 implementation when prioritized.
+
+---
 
 ### Accomplished (Session 412 — orchestrator)
 
@@ -51,33 +81,36 @@
 
 ### Needs Your Input
 
+**resistance-research — May Day Monitoring (April 28, 29, May 1)**
+- April 28: Xinis hearing outcome expected. Results brief (`2026-04-28-results.md`) ready to be filled.
+- April 29: May Day Mass Call at 7:30pm ET. Coalition status confirmed 900+ events.
+- May 1: May Day actions begin. Guide is production-ready.
+If you will be participating or monitoring, share updates so the orchestrator can document outcomes.
+
 **cybersecurity-hardening — Review & Next Phase**
-Research phase was complete in Session 411: `threat-model.md` (440 lines, Palantir contracts + NSA + data broker ecosystem) and `opsec-playbook.md` (4,800 words, Signal/GrapheneOS/Tor/VeraCrypt + tiered guidance).
+Research phase complete since Session 411: `threat-model.md` (440 lines, verified threat landscape) and `opsec-playbook.md` (4,800 words, actionable defenses). Both grounded in confirmed government capabilities (Palantir contracts, NSA Section 702, data broker loopholes).
 
 Next phase options:
 1. Quality review pass (spelling, technical accuracy, clarity)
-2. Deepen into specific categories (OSINT counter-measures, TSCM/physical security, organizational incident response)
+2. Deepen into specific categories (OSINT counter-measures, TSCM/physical security, organizational incident response templates)
 3. Publication preparation (table of contents, glossary, quick-reference checklists)
-4. Implementation (e.g., GrapheneOS/Signal/Tor configuration guide)
+4. Implementation (e.g., build a configuration guide for GrapheneOS/Signal/Tor stack)
 
 Please advise which direction to take.
 
 **mfg-farm — Test Print**
-Business plan, CadQuery designs, market research, and listing copy all ready. Still blocked on physical test print of the ModRun rail and clip designs. Once completed, Etsy launch can proceed.
-
-**stockbot — Paper Trading Performance**
-Paper trading is now operational. To assess model performance: share cycle log output or screenshot the Trading page at `http://127.0.0.1:8000` (if running locally).
+Business plan, CadQuery designs, market research, and listing copy all ready. Blocked on physical test print of the ModRun rail and clip designs. Once completed, Etsy launch can proceed.
 
 **seedwarden — PDF Mockup Images**
 All 21 products have content and listing copy complete. Only blocker: PDF mockup images for all listings (critical conversion factor on Etsy).
 
 ### Suggested Priorities (Next Session)
-1. **cybersecurity-hardening**: Direction from user (quality review / deepening / publication / implementation).
-2. **resistance-research**: Monitor April 28 Xinis hearing outcome. Monitor April 29 May Day Mass Call. May 1 May Day actions.
-3. **stockbot**: Monitor paper trading performance starting next US market open. Check for signal generation and trade execution.
-4. **open-repo**: Begin MVP backend implementation (FastAPI + PostgreSQL) using completed OpenFarm data.
+1. **resistance-research**: Monitor April 28 Xinis hearing outcome (critical institutional resistance precedent). Monitor April 29 May Day Mass Call. Assess May 1 May Day actions and document outcomes.
+2. **cybersecurity-hardening**: User direction needed — which next phase? (quality review / deepening / publication / implementation)
+3. **open-repo**: Phase 2 backend implementation (Meilisearch search + endorsement endpoints) when prioritized by user.
+4. **stockbot**: Monitor paper trading performance (4 sessions running on Jetson). Check for signal generation and execution.
 
-**Usage**: 36K tokens used this session of 200K weekly budget (~18%). On pace for normal consumption.
+**Usage**: 95K tokens used this session of 200K weekly budget (~48%). At normal pace — no throttling needed.
 
 ---
 

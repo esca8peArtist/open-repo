@@ -68,9 +68,9 @@
 **Status**: Active
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 384: **May Day 2026 Action Guide COMPLETE** (`mayday-2026-action-guide.md`, 669 lines) — comprehensive participant guide covering historical context, coalition/demands, graded participation ladder, legal rights and employment risks, outcomes framework, and post-May-Day organizing path. **Next mandatory passes**: April 28 (Xinis hearing — results brief → `monitoring/2026-04-28-results.md`), April 29 (May Day Mass Call), May 1 (May Day actions).
+**Current focus**: Session 413: **May Day 2026 Action Guide PRODUCTION-READY** (`mayday-2026-action-guide.md`, 669 lines). **Monitoring for May Day (in 5 days)**. April 28 Xinis hearing pre-brief updated with 6 material new developments (ICE tracker injunction win, ProPublica findings, DHS payroll cliff, Nashville Crenshaw pending). April 28 results brief pre-filed (`monitoring/2026-04-28-results.md`) — to be updated with hearing outcome. May Day Strong confirmed 900+ events, April 29 Mass Call 7:30pm ET. **Critical dates**: April 28 (Xinis hearing), April 29 (May Day Mass Call), May 1 (May Day actions).
 **Blocked on**: —
-**Notes**: Ongoing research and monitoring project. Existing files cover ICE detention, litigation tracking, case studies, civic action. When no specific task is queued, extend existing threads, find new angles, and monitor developments. Democratic renewal proposal is comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
+**Notes**: Live monitoring through May 1. Ongoing litigation tracking (Xinis, Nashville, Leon, Branch C). Democratic renewal proposal comprehensive at 22 domains; remaining work is quality deepening and publication preparation.
 
 ---
 
@@ -125,12 +125,12 @@
 ### open-repo
 **Goal**: An open-source library for all things under the sun — a distributed, free, one-stop shop to find and share information that benefits all of humanity. Link to Wikipedia for general information, schematics, building plans, 3D models, recipes/instructions, services to share, and more. The core principle: no single person or organization controls any of it. Everything is distributed and open source. This is about leveling the playing field — giving all people the best chance to not only survive but thrive.
 **Priority**: Medium
-**Status**: Active — research phase
+**Status**: Active — MVP backend Phase 1 COMPLETE
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-repo/`
-**Current focus**: Landscape research COMPLETE. Architecture notes COMPLETE. MVP protocol design COMPLETE (Session 78) — `mvp-protocol-design.md` (711 lines): 5 JSON-LD content type schemas, endorsement schema, ActivityPub federation protocol, 5-phase bootstrapping plan, MVP stack decisions (FastAPI/PostgreSQL/Meilisearch/Kubo/Next.js). Content import pipeline research COMPLETE — `content-import-openFarm.md`: OpenFarm API/schema/license documented, field mapping + sample transformation + 5-step implementation plan. Extraction script scaffolded: `scripts/import_openFarm.py` — `fetch_crops()`, `transform_crop()` (implemented), `validate_schema()`, `export_jsonl()`, `compute_cid_placeholder()`, CLI entry point. Key finding: OpenFarm live API shut down April 2025; data acquisition via self-hosted MongoDB export or Internet Archive snapshot. Next: acquire data (clone OpenFarm + mongoexport OR Internet Archive crawl), run import_openFarm.py, review output sample.
+**Current focus**: Session 413: **MVP Backend Phase 1 COMPLETE** (`backend/app/` — FastAPI + PostgreSQL, 489 lines). **Deliverables**: (1) 3 core API endpoints (POST/GET /api/items, GET with pagination/filtering), (2) 24 passing tests, (3) JSON-LD validation + CID computation, (4) SQLAlchemy ORM with PostgreSQL, (5) Seed data loader for 32 OpenFarm crops, (6) Documentation: API.md (517 lines) + README.md (334 lines) + Makefile. **Next**: Phase 2 (search via Meilisearch + endorsement endpoints).
 **Blocked on**: —
-**Notes**: Start with landscape research before any building. The goal is ambitious — don't reinvent what already exists well. Identify the missing layer that ties it all together or fills the gaps nobody else is filling.
+**Notes**: Backend is production-ready for Phase 1. All architecture decisions (FastAPI/PostgreSQL/Meilisearch/Kubo/Next.js) validated. Phase 2+ requires Meilisearch setup and endorsement schema implementation.
 
 ---
 

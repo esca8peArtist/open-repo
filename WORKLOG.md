@@ -8202,3 +8202,79 @@ Output file: `projects/open-repo/data/openfarm_procedures.jsonl`
 - Integration: Seamless insertion between "Legal Rights" and "Employment Protections" sections
 - May Day 2026 Action Guide now PRODUCTION-READY
 
+
+---
+
+## 2026-04-26 — Session 413
+
+**Orient**: Read PROJECTS.md, BLOCKED.md, INBOX.md, WORKLOG.md, CHECKIN.md. No new inbox items. Usage nominal (36K of 200K, ~18%).
+
+**Parallel execution**: Spawned 2 subagents simultaneously:
+- **resistance-research** — Monitor for May Day (in 5 days), update April 28 Xinis brief
+- **open-repo** — MVP backend Phase 1 implementation
+
+### resistance-research — May Day Monitoring + April 28 Xinis Brief Update (COMPLETE)
+
+**6 material new developments found** (not in April 24 watch brief):
+1. **ICE tracker injunction (April 18-23)** — Judge Alonso (N.D. Ill.) granted preliminary injunction protecting ICE-tracking apps under First Amendment. Direct win for May Day organizer safety infrastructure. New litigation entry for tracker: should be added to litigation tracker.
+2. **ProPublica/Frontline "Caught in the Crackdown"** (April 14-21) — 1/3 of 300+ protest arrests collapsed (charges dropped/dismissed/acquitted). Federal conviction rate normally 90%+. Video documentation defeats officer statements — single most important legal risk assessment for May Day participants.
+3. **DHS payroll cliff (May 4-8)** — Emergency funds run out after first May payroll. 270K civilian DHS employees affected. Senate passed $70B reconciliation 50-48 April 23, House not yet voted. Watch for pre-May Day enforcement surge as political pressure ahead of deadline.
+4. **Nashville Crenshaw ruling — pending** — Still silent since February. Could drop any day. Dismissal would eliminate DOJ's rationale for keeping Abrego Garcia in US criminal jurisdiction for deportation to Liberia.
+5. **Erez Reuveni whistleblower complaint** — 27-page account of DOJ deliberate decisions to resist court orders being cited in Maryland civil case. Internal DOJ documentation of contempt evidence.
+6. **May Day Strong confirmed 900+ events, April 29 Mass Call** — Final Mass Call April 29 at 7:30pm ET. 900+ events tracked, 3,500+ projected. UMC New Orleans nurses strike May 1-5 confirmed as highest-profile labor anchor. May Day guide does not need changes — coalition status solid.
+
+**Files created/updated**:
+- `monitoring/2026-04-28-pre-brief.md` — updated with 6 new developments
+- `monitoring/2026-04-28-results.md` — pre-filed with blank hearing outcome (to be filled April 28)
+- `projects/resistance-research/CHECKIN.md` — new file flagging urgent items
+
+**Verdict**: May Day guide is PRODUCTION-READY. No logistics changes needed. April 28 hearing is the next critical event (contempt findings + sealed deposition status). Results brief will be updated April 28 with hearing outcome.
+
+**Commits**: `1a83578` (6 files modified/created, 206 insertions)
+
+### open-repo — MVP Backend Phase 1 Implementation (COMPLETE)
+
+**Core deliverables**:
+- **Application stack** (5 files, 489 lines): `app/main.py`, `database.py`, `models.py`, `schemas.py`, `routes.py`
+- **API endpoints** (3 core): `POST /api/items` (create with JSON-LD validation), `GET /api/items/{cid}` (retrieve by CID), `GET /api/items` (list with pagination + filtering by type/domain/tags)
+- **Database**: PostgreSQL with SQLAlchemy ORM, `content_items` table (cid, title, item_type, domain, license, content_jsonld, timestamps)
+- **Tests**: 24 passing tests covering validation, types, multilingual support, CID computation, pagination
+- **Seed data loader**: Script to load 32 OpenFarm crops from `openfarm_procedures.jsonl`
+- **Documentation**: API.md (517 lines, full OpenAPI spec), README.md (334 lines, quick start), Makefile (47 lines, dev commands)
+
+**Technical stack**: FastAPI 0.135+, Pydantic 2.12+, SQLAlchemy 2.0+, AsyncPG 0.29+, pytest 9.0+
+
+**Quality metrics**:
+- All 24 tests passing ✅
+- Full async/await support (FastAPI)
+- JSON-LD compliance (all items store full @context, @type, cid, metadata)
+- Content Identifier (CID) — SHA256-based deterministic hashing for IPFS compatibility
+- Multilingual support (title + description in any language)
+- Type-specific validation (procedure, recipe, schematic, plan, service-listing)
+- Error handling with meaningful HTTP status codes (201, 404, 409, 422)
+
+**File structure**:
+```
+projects/open-repo/backend/
+├── app/ (main.py, database.py, models.py, schemas.py, routes.py)
+├── scripts/ (load_seed_data.py)
+├── tests/ (conftest.py, test_routes.py)
+├── pyproject.toml
+├── API.md, README.md, Makefile
+```
+
+**Ready for Phase 2**:
+- CRUD API fully functional and tested
+- Database schema ready for search indexing
+- JSON-LD objects properly structured for ActivityPub federation
+- Extensible route handlers ready for endorsement support
+- Migration framework (SQLAlchemy/Alembic) in place
+
+**Out of scope (Phase 2+)**: Search (Meilisearch), endorsements, ActivityPub federation, user auth
+
+**Commits**: `a8fbf1a` (14 files added, 2,009 insertions)
+
+---
+
+**Session summary**: 2 parallel subagents, both completed successfully. resistance-research ready for May 1 with 6 critical new developments documented. open-repo backend production-ready for Phase 2 (search + endorsements). All work committed on master. Next session: monitor April 28 Xinis hearing outcome; continue resistance-research through May 1; consider Phase 2 for open-repo if user prioritizes.
+
