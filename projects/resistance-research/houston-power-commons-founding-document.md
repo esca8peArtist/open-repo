@@ -50,6 +50,7 @@ The divisions in order of launch priority:
 | Health | CHW program → sliding-scale clinic | Phase 1-2 |
 | Education — Trades | Continuous skills training tied to all divisions; volunteer pipeline; formal certifications | Phase 1 (alongside Energy) |
 | Education — Pre-College | Enrichment and applied learning for K-12; after-school and summer programs; community school model | Phase 2 |
+| Technology | Community networking, mesh comms, open source infrastructure, digital security | Phase 1 (internal) → Phase 2 (community-facing) |
 | Food | Community purchasing, urban agriculture, distribution | Phase 2-3 |
 | Water | Rainwater harvesting, filtration, storage systems | Phase 3 |
 | Waste | Composting, materials recovery, circular economy | Phase 3 |
@@ -59,6 +60,8 @@ Each division launches when the organizational capacity and economic case exist 
 **Education has two distinct tracks:**
 
 *Trades & Continuous Learning* launches in Phase 1 because every other division depends on it from day one. This is hands-on skills training embedded in the work each division does — solar installation training happens during actual installations, CHW skills are taught by health division practitioners, urban farming knowledge transfers through working the food plots. It maintains the curriculum, manages the volunteer pipeline, and supports members through formal certifications: NABCEP solar installer certification, Texas CHW certification, food safety handler, water treatment operator, composting facility operator. Adults at any stage of life. No prerequisites.
+
+*Technology* runs in two phases. In Phase 1 it is internal infrastructure: the membership app, the results dashboard, the skill badge system, the voting platform, and the volunteer scheduling system — all built on open source software, self-hosted on hardware the cooperative owns, auditable by any member. No proprietary black boxes in systems the community depends on. In Phase 2 it expands outward: community mesh networking connecting member households, a local communications network that functions when commercial internet and cell service fail, and digital security training for members. The technology division is the organization's immune system against manipulation — every tool the cooperative uses must be transparent enough that any technically capable member can verify it is doing what it claims.
 
 *Pre-College Education* launches in Phase 2, after the organization has enough operational depth to do it properly. This is a standalone program for children and young people — enrichment, tutoring, after-school and summer programming, eventually a community school model. It is applied from the start: a kid learning about solar is working on actual panels; a kid learning biology is growing actual food. Every division becomes a classroom. The goal is not to replicate conventional schooling but to build a generation of young people who understand how the physical world works and have the hands-on skills to operate in it. The skill badge system spans both tracks — academic and practical, children and adults, all on the same platform.
 
@@ -119,6 +122,8 @@ This is the design deliberately. An organization where volunteers learn real ski
 *Water* — learn to conduct water quality testing and read results; assist with rainwater collection system installation and maintenance; help members with filtration system setup and troubleshooting.
 
 *Waste* — run composting operations; help with materials recovery and sorting; support repair café events (fixing electronics, clothing, furniture instead of discarding).
+
+*Technology* — help build and maintain the cooperative's open source infrastructure; set up and configure community networking equipment (mesh nodes, routers, local servers); contribute code to the membership app and dashboard; conduct security audits of systems the cooperative depends on; teach Linux, networking fundamentals, and digital security to other volunteers and members; help members harden their own devices and communications.
 
 **Volunteer pathway:**
 
