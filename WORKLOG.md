@@ -4,6 +4,14 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-26 — cybersecurity-hardening — Publication prep complete: TOC, glossary, executive summary
+
+Assessed `implementation-guide.md` for publication readiness. Finding: near publication-ready; primary gaps are navigation aids and terminology definitions, not content gaps. Wrote `publication-prep.md` containing: (1) 500-word executive summary positioning the three-document corpus, framing the threat clearly, stating the countermeasure approach, and providing an honest statement of limits; (2) full hierarchical TOC covering all three documents (threat-model.md, opsec-playbook.md, implementation-guide.md) with sub-section detail; (3) 40-term glossary covering all technical terms in the implementation guide (ELITE, BFU, fastboot, verified boot, MAID, NSL, MLAT, Section 702, Venntel, Palantir, Signal Protocol, etc.). Recommendation for Phase 2 next steps also documented in full report.
+
+**File**: `projects/cybersecurity-hardening/publication-prep.md`
+
+---
+
 ## 2026-04-26 — cybersecurity-hardening — Phase 2 Implementation Guide COMPLETE
 
 Wrote full `implementation-guide.md` (~5,500 words): 8-part executable walkthrough covering (0) Data broker opt-outs with 20+ specific opt-out URLs and automation service recommendations, (1) Hardware selection with current Pixel model list including Pixel 10 series, (2) GrapheneOS installation via web installer with step-by-step fastboot sequence and bootloader re-lock, (3) Post-install configuration (auto-reboot, network permissions, advertising ID deletion, USB controls), (4) Signal setup sequence ordered for correct privacy setting precedence, (5) Tor + Mullvad VPN with VPN-then-Tor sequence and behavioral rules, (6) File encryption (VeraCrypt containers + age + ExifTool metadata stripping), (7) Tier-annotated quick-start checklists, (8) Monthly/quarterly/annual maintenance schedule.
