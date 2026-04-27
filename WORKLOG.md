@@ -4,6 +4,68 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 549 — Parallel Exploration Queue Execution (2 Items)
+
+**Status**: ✅ **TWO PARALLEL EXPLORATION ITEMS COMPLETE** — stockbot Post-Gate-2 live trading operations suite delivered (10,724 words); mfg-farm manufacturing automation architecture delivered (4,800+ words).
+
+**Part 1 — stockbot: Post-Gate-2 Live Trading Operations Suite (COMPLETE)**
+
+**Deliverable**: `projects/stockbot/docs/live-trading-operations-suite.md` (10,724 words / 1,384 lines, 8 sections + 4 appendices)
+
+**Structure**:
+1. **Real-time P&L and position tracking dashboard architecture** — Three-layer monitoring stack (5-minute health checks, 30-minute performance tracking, daily model reviews), portfolio aggregate display with rolling 30-trade metrics, per-ticker position and regime tables, vol scalar displays, equity snapshot mechanism
+2. **Alert trigger framework** — 19 alert types across 6 categories: drawdown tiers (5%/10%/15%), regime shift alerts (Bear entry, portfolio sweep), volatility/VIX alerts, model drift (4 levels from feature_drift_detector.py), circuit breakers (consecutive losses, Bear+HighVol), concentration alerts. Alert Response Matrix maps every alert to auto-action and human response deadline.
+3. **Performance attribution analysis** — Daily feedback loop using A-E win/loss category taxonomy from performance-attribution-framework.md. Each category threshold signals operational response (Category D > 30% suppresses model, Category A-Loss > 40% triggers Orange drift alert, Category B > 30% triggers recalibration). Weekly Spearman tracking, monthly Tier 2/3 retrain decisions.
+4. **Automated optimization triggers** — Model retraining queue (converting feature_drift_detector.py RETRAIN recommendations with 3 deferral conditions), position sizing adjustments (regime transitions → HMM scalar, vol-tier → threshold multipliers, 8% drawdown → 0.70x defensive), hedge activation (VIX > 30 overlay, portfolio Bear sweep halt, 3-session Sharpe collapse)
+5. **Emergency response playbooks** — 4 scenario-specific decision trees: (1) circuit breaker trip (single-ticker / 3+ tickers / portfolio-wide branches), (2) 10%+ intraday drawdown (systemic vs. positional branches), (3) engine crash during market hours (controlled restart vs. emergency path), (4) persistent losses without circuit breaker (4 failure mode branches)
+
+**Companion checklists** (Appendices):
+- Pre-market checklist (4 categories, 12 items, ~10 minutes)
+- During-market monitoring schedule (12 check times at 30-minute intervals)
+- Post-market checklist (5 categories, 10 items, ~15 minutes)
+- Weekly audit checklist (4 categories, 18 items, ~20-30 minutes)
+
+**Key design decisions**: 
+- Alert Response Matrix is the operational core — every alert has predetermined auto-action + human deadline
+- Performance attribution feedback loop is weekly cadence (not daily) to avoid noise-driven revisions
+- Emergency playbooks are decision trees with human judgment + automated guardrails (not black-box automation)
+- All metrics grounded in existing infrastructure (post_trade_analysis.py, feature_drift_detector.py, HMM regime scalar, guardrails.py)
+
+**Readiness**: Production-ready for immediate deployment post-Gate-2 pass. Can be implemented in parallel with paper trading (most checks are passive monitoring, not real-time modifications).
+
+**Commit**: 53f9819 on master
+
+---
+
+**Part 2 — mfg-farm: Manufacturing Automation & Multi-Printer Scaling Architecture (COMPLETE)**
+
+**Deliverable**: `projects/mfg-farm/manufacturing-automation-architecture.md` (4,800+ words, 5 sections + Mermaid flowcharts + cost model tables)
+
+**Structure**:
+1. **Manufacturing workflow automation** — File pipeline (CAD→STL→slicer profile lock→plate batching→job library), queue management (SimplyPrint + Bambu Farm Manager stack), post-processing architecture (zero post-processing target via self-supporting design, auto-eject Phase 2 via AutoFarm3D Door Opener $129/printer + $9.99–$40/month software), harvest cycle target (30-second plate harvest)
+2. **Quality control architecture** — Quantitative acceptance criteria (±0.5mm clip width, ±0.3mm depth, visual layer adhesion, surface finish standards), QC gate flowchart (Mermaid), calibration protocol (daily/weekly/monthly), defect rate thresholds (<2%) with margin cost impact table. QC labor overhead at 720 units/day ≈ 45 minutes (6% of shift, within 10% overhead target).
+3. **Fulfillment and logistics** — Order-to-fulfillment workflow (Craftybase sync → Pirate Ship batch label → USPS), batch consolidation logic (4 rules for order grouping), packaging automation (Rollo thermal printer $100 one-time + Pirate Ship batch labels), 3PL transition analysis (7,000 units/month inflection point)
+4. **Multi-printer orchestration** — Material-based printer assignment (P1=black, P2=white, P3=grey+overflow, P4=flex queue, P5=testing/overflow to eliminate AMS purge waste), load balancing strategy (idle time elimination), failure decision tree (Mermaid), daily operating cycle schedule. AutoFarm3D Door Opener validated as auto-eject solution for P1S overnight unattended production.
+5. **Cost model** — Parametric model across 5 variables: unit cost vs. batch size (1→14 clips/plate), utilization (60–95%), printer count (1–5), material cost sensitivity ($15→$9/kg), labor rates. Break-even at 122 units/month. Margin optimization priority stack (8 ranked actions with 13–15 percentage point improvement targets in first 30 days post-test-print).
+
+**Key findings**:
+- Baseline COGS updated to $1.032/clip using bulk filament ($11.50/kg) vs. prior $1.15 retail
+- **Plate batching to 12 clips is highest-leverage single action** (6x throughput vs. 1 clip, zero capital investment)
+- Labor binding constraint at Month 5–6; first hire covers packing (not printing), freeing operator for revenue activities
+- AutoFarm3D Door Opener ($129/printer) enables fully unattended overnight auto-eject on P1S/X1C printers — key enabler for 12-hour unattended overnight batches. **Availability/shipping status needs confirmation before Phase 2 capital budget.**
+- **Bundle mix shift (30% sales → 3-pack) adds 5–8% margin with zero production cost change** — highest ROI action, not capital-dependent
+- **Most important insight**: Difference between 1-printer and 5-printer operation is only 7 points margin improvement. Bundle mix shift is worth more margin improvement than adding 4 printers.
+
+**Evidence base**: Bambu Farm Manager wiki, SimplyPrint integration docs, 3DQue AutoFarm3D pricing (verified April 2026), Craftybase pricing, Pirate Ship USPS rates (post-8% increase), Phasio FDM QC practices, Formlabs tolerance guide, prior sessions (multi-printer-architecture.md Session 541, phase-2-supplier-research.md Session 544)
+
+**Readiness**: Production-ready design document. Can be directly executed post-test-print to inform printer hardware selection, material supplier contracts, and operational workflow design. No design blockers identified.
+
+**Commit**: to master
+
+---
+
+**Session Conclusion**: Exploration Queue execution continues (Session 548 completed toolkit, Session 549 completed Post-Gate-2 ops + Manufacturing automation). Both documents production-ready for their respective project gates. Stockbot operations suite immediately deployable post-Gate-2; mfg-farm automation architecture actionable post-test-print. Queue now has 1 remaining item (crisis response playbooks, Priority 4). Per protocol, will add 2-3 new items on next session if main projects remain blocked.
+
 ## 2026-04-27 Session 549 — mfg-farm: Manufacturing Automation Architecture (Exploration Queue)
 
 **Status**: COMPLETE — `projects/mfg-farm/manufacturing-automation-architecture.md` (4,800+ words, 5 sections + implementation sequence)

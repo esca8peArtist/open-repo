@@ -767,28 +767,28 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Deliverables**: `implementation-toolkit.md` (2,028 words) + 5 sector-specific guides (legislative, advocacy, academic, state government, institutional resilience) — 10,222 words total
   - **Key design**: Each guide has "Monday morning question" + 5-step decision tree + domain applications + common mistakes + case studies
   - **Value**: Bridges proposal to execution. Ready for Phase 1 institutional outreach.
-  - **Status**: ✅ COMPLETE, committed to master
+  - **Status**: ✅ COMPLETE, committed to master (Session 548)
 
-- **stockbot: Post-Gate-2 live trading operations & performance analysis framework** (Priority 2)
-  - **Scope**: Once Gate 2 passes and live trading is approved, design the complete live trading operations suite: (1) Real-time P&L and position tracking dashboard architecture, (2) Alert trigger framework (drawdown limits, regime shifts, model drift), (3) Performance attribution analysis (win/loss drivers, regime performance, sector performance), (4) Automated optimization triggers (when to retrain, when to adjust position sizing, when to activate hedges), (5) Emergency response playbooks (what to do if circuit breaker trips, how to manually close positions, how to preserve evidence for post-mortems)
-  - **Goal**: Production-ready operations framework that ensures model performance is maintained and human oversight is maximized in live trading environment
-  - **Expected output**: `live-trading-operations-suite.md` (4,000-5,000 words) + operational checklists + emergency response decision trees
-  - **Timeline**: 2-3 sessions (available after Gate 2 pass)
-  - **Status**: QUEUED
+- ✅ **stockbot: Post-Gate-2 live trading operations & performance analysis framework** (COMPLETE — Session 549)
+  - **Deliverable**: `live-trading-operations-suite.md` (10,724 words / 1,384 lines, 8 sections + 4 appendices)
+  - **Scope**: Complete live trading operations infrastructure: (1) three-layer dashboard (health/performance/model reviews), (2) 19-alert trigger framework with response matrix, (3) performance attribution feedback loop (A-E taxonomy), (4) automated optimization triggers (model retraining, position sizing, hedge activation), (5) four-scenario emergency playbooks
+  - **Key design**: Alert Response Matrix is operational core — every alert has predetermined auto-action + human deadline. Performance attribution weekly cadence (not daily noise). Emergency playbooks are decision trees with human judgment + automated guardrails.
+  - **Value**: Production-ready for immediate deployment post-Gate-2. All metrics grounded in existing infrastructure.
+  - **Status**: ✅ COMPLETE, committed to master (53f9819, Session 549)
 
-- **mfg-farm: Manufacturing automation & multi-printer scaling architecture** (Priority 3)
-  - **Scope**: Design the complete manufacturing and workflow automation path for scaling from single-printer prototype to 3-5 printer operation with <2 human FTE per 10K units/month. (1) Manufacturing workflow automation (file preparation, print queue management, post-processing), (2) Quality control architecture (layer adhesion testing, tolerance verification, surface finish inspection), (3) Fulfillment and logistics optimization (batch consolidation, packaging automation, shipping integration), (4) Multi-printer orchestration (load balancing across printers, material allocation, job scheduling), (5) Cost per unit as function of batch size and utilization (break-even analysis, margin optimization)
-  - **Goal**: Comprehensive design document for post-test-print ModRun launch that informs printer hardware selection, material suppliers, and operational process design
-  - **Expected output**: `manufacturing-automation-architecture.md` (4,000-5,000 words) + operational process diagrams + cost model spreadsheet
-  - **Timeline**: 2-3 sessions (available post-test-print)
-  - **Status**: QUEUED
+- ✅ **mfg-farm: Manufacturing automation & multi-printer scaling architecture** (COMPLETE — Session 549)
+  - **Deliverable**: `manufacturing-automation-architecture.md` (4,800+ words, 5 sections + flowcharts + cost modeling)
+  - **Scope**: Complete scaling blueprint (1→5 printers): (1) manufacturing workflow automation (SimplyPrint stack, zero post-processing, AutoFarm3D auto-eject), (2) QC framework (±0.5mm / ±0.3mm tolerance, 45-min labor overhead, <2% defect target), (3) fulfillment pipeline (Craftybase→Pirate Ship→USPS), (4) multi-printer orchestration (material-based assignment P1–P5, load balancing), (5) parametric cost model (COGS $1.032/clip, break-even 122 units/month)
+  - **Key findings**: Plate batching to 12 clips = 6x throughput (zero capital). Bundle mix shift (30%→3-packs) adds 5–8% margin, worth more than adding 4 printers. AutoFarm3D Door Opener availability needs confirmation.
+  - **Value**: Production-ready for post-test-print execution. Informs printer selection, supplier contracts, operational workflow design.
+  - **Status**: ✅ COMPLETE, committed to master (Session 549)
 
-- **resistance-research: Democratic Crisis Response Playbooks** (Priority 4 — NEW)
+- **resistance-research: Democratic Crisis Response Playbooks** (Priority 4 — NEW, QUEUED)
   - **Scope**: Design step-by-step operational playbooks for how institutions (legislatures, AGs, advocacy coalitions, academic research centers) should respond to specific democratic crises using the 35-domain framework. Crisis scenarios: (1) Election interference (federal or state-level), (2) Judicial capture (confirmed hostile appointment), (3) Executive overreach (emergency EO, removal power abuse), (4) Civil service targeting (Schedule F-equivalent purge), (5) Prosecutorial weaponization (targeted investigations of political opponents)
   - **Goal**: Actionable playbooks that translate framework recommendations into concrete 72-hour, 30-day, and 90-day response sequences. Each playbook includes: decision trees (who should do what), resource requirements (legal, communications, logistics), success metrics, coordination with other institutions
   - **Expected output**: `crisis-response-playbooks.md` (4,000-5,000 words) + 5 sector-specific playbooks (legislative, AG, advocacy, academic, civil service defense) as companion files
   - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED
+  - **Status**: QUEUED (1 item remaining in queue — next session will add 2-3 new items per protocol if main projects remain blocked)
 
 ---
 
