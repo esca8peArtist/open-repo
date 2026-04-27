@@ -4,6 +4,24 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session: 2026-04-27 — Phase 3 Social Media Growth Strategy Research
+
+Completed deep research document for Phase 3 (post-Phase 1 launch) social media and paid advertising strategy.
+
+**File**: `projects/seedwarden/phase-3-social-media-growth-strategy.md`
+
+**Research scope covered**:
+- TikTok competitive landscape: top creators by follower tier (ballerinafarm 10.5M, itsbreellis 772K, thermal_and_oaks 367K), engagement benchmarks (7.5% under 100K), hashtag strategy (#homestead = 5.4B views), monetization thresholds
+- Instagram and Pinterest strategy: Pinterest CPC $0.05–$0.50, 33% more referral traffic to Etsy than Facebook, pin lifespan 4+ months, posting cadence, format differences by platform
+- Creator breakdown: Jill Winger (Prairie Homestead) as canonical case study, mid-tier creators at 100K–600K with relevant audience overlap, 5 traits shared by successful monetizing creators
+- Paid ads: Etsy ROAS benchmarks (2.8x average, 1.05 break-even for digital products), Facebook Shopping category CPC $0.34, Pinterest CPA ~$8, phased budget allocation
+- Influencer partnerships: micro-influencer rate cards ($100–$500/post), three deal structures (pure affiliate, gift+affiliate, flat fee+affiliate), direct outreach approach at Phase 3 budget level
+- Phase 3 blueprint: 3-month implementation timeline, $500–$1,000/month budget allocation table, success scorecard, 4 failure modes with mitigations
+
+**Sources**: 28 cited sources including WordStream 2025 benchmarks, Tailwind Pinterest cost data, Feedspot creator lists, IZEA homesteading influencer report, Emplicit TikTok engagement data, Influencer Marketing Hub micro-influencer rates, eRank/Marmalead Etsy platform data.
+
+---
+
 ## Session: 2026-04-26 — Track B Mockup Advancement (phone frame variant)
 
 ### Step 1: Regenerate tablet mockups (timestamp sync)
