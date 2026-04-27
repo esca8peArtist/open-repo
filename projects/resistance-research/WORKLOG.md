@@ -2,6 +2,47 @@
 
 ---
 
+## April 27, 2026 (Session 531) — Phase 3 Candidate 1: Real-Time Crisis Monitoring Infrastructure
+
+**Session type**: Phase 3 structural deepening — monitoring infrastructure
+**Files created**:
+- `projects/resistance-research/monitoring-infrastructure-2026.md` (~3,500 words, production-ready)
+- `projects/resistance-research/monitoring/templates/monthly-crisis-snapshot.md`
+- `projects/resistance-research/monitoring/templates/contingency-trigger-log.md`
+- `projects/resistance-research/monitoring/templates/coalition-feedback-tracker.md`
+
+### What Was Done
+
+**monitoring-infrastructure-2026.md** — Primary deliverable. Answers four questions:
+1. Which 35 domains require automated vs. human-curated monitoring (Tier 1/2/3 matrix)
+2. How the implementation roadmap adapts as crisis outcomes occur (Wave 1/2/3 trigger tables)
+3. Monthly refresh cadence for "two-week currency" standard
+4. What monitoring data should be published vs. kept internal for coalition strategy
+
+Key structure:
+- **Tier 1 (Automated)**: Domains 1, 6, 29, 33, 34, 37 — flag triggers, specific data sources, cadence
+- **Tier 2 (Human-Curated)**: Domains 2, 9, 11, 19f, 27, 28, 35 — interpretive judgment required
+- **Tier 3 (Coalition-Fed)**: Domains 23, 26, 31 — operational intelligence from reform constituencies
+- **Trigger tables**: Wave 1 (6 events), Wave 2 (4 events), Wave 3 (3 long-horizon conditions)
+- **Monthly protocol**: 4-week cadence (automated review → snapshot → update sessions → distribution integration)
+- **Source inventory**: 18 sources with access method and cost
+- **Integration section**: how monitoring connects to the three existing trackers (FA, environmental, police)
+- **Coalition feedback architecture**: how institutional engagement feeds back into domain selection
+
+**Templates** (immediately usable):
+- Monthly Crisis Snapshot: 7-section form for identifying 5-7 urgent domains, pending decisions calendar, trigger event check, work plan
+- Contingency Trigger Log: INTERNAL — records trigger events as they occur, adversary response patterns, required roadmap adaptations
+- Coalition Feedback Tracker: INTERNAL — contact engagement log, domain heatmap, operational intelligence log, distribution metrics
+
+### Integration Points Verified
+
+- three trackers (FA, environmental, police) connected to specific domains and monitoring tiers
+- April 2026 updates cycle (Sessions 529-530) cited as proof-of-concept for monthly refresh feasibility
+- Policy influencer mapping (Session 528) connected to coalition feedback architecture (Part VI)
+- Implementation roadmap trigger tables directly reference existing roadmap assumptions
+
+---
+
 ## April 27, 2026 (Session 530) — Domain Updates: April 2026 Content Currency Batch (19f, 33, surveillance-tracking)
 
 **Session type**: Queued domain content updates from PROJECTS.md Exploration Queue
