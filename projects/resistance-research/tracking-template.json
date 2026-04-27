@@ -1,0 +1,1316 @@
+{
+  "metadata": {
+    "title": "35-Domain Monitoring Tracking Template",
+    "version": "1.0",
+    "created": "2026-04-27",
+    "purpose": "Monthly refresh template for the 35-domain Democratic Renewal Proposal. Covers all domains by monitoring tier, source type, flag triggers, and current status. Complete one entry per domain per monthly cycle. Reference: monitoring-infrastructure-2026.md.",
+    "classification": "coalition-internal",
+    "cycle_instructions": "Complete during the first two weeks of each month. Flag any domain where 'flag_triggered' is true for domain update session in week 3. Publish only 'domain_status' and 'last_checked' fields via public-facing Current Alerts — do not publish 'coalition_notes' or 'adversary_signals' fields.",
+    "tier_definitions": {
+      "tier_1_automated": "High-frequency, low-context. Events are structured, dateable, and appear in public databases within hours. Monitor via API or RSS alert; human review only when flag trigger is crossed.",
+      "tier_2_human_curated": "Medium-frequency, high-context. Automated alerts capture raw events; coordinator judgment required to assess whether event crosses domain update threshold.",
+      "tier_3_coalition_fed": "Low-frequency, high-leverage. Monitoring depends on operational intelligence from coalition contacts whose knowledge exceeds what public data captures."
+    }
+  },
+
+  "monthly_snapshot": {
+    "snapshot_month": "",
+    "snapshot_date": "",
+    "coordinator": "",
+    "domains_flagged_count": 0,
+    "domains_flagged": [],
+    "high_urgency_domains": [],
+    "wave_1_success_criteria_status": "on_track | partial | off_track",
+    "wave_1_notes": "",
+    "pending_trigger_events": [],
+    "distribution_update_brief_needed": false,
+    "distribution_update_brief_topic": ""
+  },
+
+  "domains": [
+    {
+      "domain_number": "1",
+      "domain_name": "Electoral Reform",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "Democracy Docket — https://www.democracydocket.com/cases/",
+        "CourtListener docket alerts: Watson v. RNC, Louisiana v. Callais",
+        "Congress.gov API — SAVE Act follow-on, VRA reauthorization",
+        "FEC.gov data — dark money voter ID spending",
+        "Brennan Center state voting legislation tracker"
+      ],
+      "monitoring_cadence": "weekly_election_cycles",
+      "flag_triggers": [
+        "New voter roll purge litigation filed in AZ, GA, MI, PA, or WI",
+        "FEC filing showing dark money spending >$10M on voter ID campaigns",
+        "Senate vote on any electoral legislation (including SAVE Act follow-on)",
+        "Mid-decade redistricting introduced in any state with >2 congressional seats"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 anchor domain",
+      "pending_decisions": [
+        "Watson v. RNC — appellate posture",
+        "Louisiana v. Callais — cert timing",
+        "SAVE Act follow-on Senate procedural status"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "2",
+      "domain_name": "Civil Service and Executive Constraint",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "OPM workforce statistics — quarterly",
+        "MSPB appeal statistics",
+        "Federal Circuit decisions on Schedule F/Policy",
+        "Union grievance filings",
+        "DOGE.gov announcements (if active)"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "OPM rule revision expanding Schedule F coverage beyond March 2026 scope",
+        "MSPB appeal backlog exceeds 12,000 cases",
+        "Federal Circuit panel ruling on Schedule F immunity interaction",
+        "Named agency drops below 50% staffing in critical function"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 anchor domain",
+      "pending_decisions": [
+        "March 9, 2026 OPM Schedule F/Policy rule — legal challenge status",
+        "DOGE-phase-2 agency targets (if any announced)"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "3",
+      "domain_name": "Democratic Participation and Civic Infrastructure",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "AmeriCorps/national service program funding notices",
+        "OMB grants database for civic organization funding",
+        "NEH, NEA grant terminations",
+        "Alliance for Justice nonprofit advocacy tracker"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "AmeriCorps program termination or budget cut >25%",
+        "Executive order restricting 501(c)(3) advocacy activity",
+        "IRS enforcement action against nonpartisan civic organization"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 2 parallel infrastructure",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "4",
+      "domain_name": "Digital Government Infrastructure",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "GAO IT modernization reports",
+        "OMB Federal Data Strategy updates",
+        "GSA Digital.gov announcements",
+        "DOGE.gov operational scope announcements"
+      ],
+      "monitoring_cadence": "quarterly",
+      "flag_triggers": [
+        "USAJobs.gov or benefit portal taken offline or access restricted",
+        "DOGE data access to IRS, SSA, or HHS benefits databases confirmed",
+        "GAO report on DOGE-caused agency IT failure"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 2 parallel infrastructure",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "5",
+      "domain_name": "Fiscal Reform and Tax System",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "Congress.gov API — reconciliation bill status",
+        "CBO cost estimates — OBBBA and follow-on",
+        "Joint Committee on Taxation scores",
+        "IRS enforcement budget appropriations"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "Tax bill with billionaire rate reduction advancing to Senate floor",
+        "IRS enforcement budget cut >15% in appropriations",
+        "Corporate tax rate reduction enacted",
+        "Carried interest loophole preserved in final reconciliation text"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 3 structural reform",
+      "pending_decisions": [
+        "OBBBA final Senate passage — timeline",
+        "OBBBA tax provisions — CBO final score"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "6",
+      "domain_name": "Judicial Independence and Rule of Law",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "CourtListener docket alerts: Trump v. Slaughter",
+        "SCOTUS orders list — every Monday",
+        "Senate Judiciary Committee hearing notices",
+        "SCOTUSblog interim docket — https://www.scotusblog.com/cases/interim-docket/2025/",
+        "PACER — impeachment proceedings if any"
+      ],
+      "monitoring_cadence": "weekly",
+      "flag_triggers": [
+        "Trump v. Slaughter decided (expected June 2026)",
+        "Shadow docket emergency application granted affecting domain-relevant case",
+        "Article III judge removal proceeding introduced in Senate",
+        "Administration defies named court order for >60 days without political consequence"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 anchor domain",
+      "pending_decisions": [
+        "Trump v. Slaughter — SCOTUS decision (June 2026)",
+        "Trump v. Wilcox — status and scope",
+        "Universal injunction authority — post-CASA legislative response"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "7",
+      "domain_name": "Rights Protection, Civil Liberties, and Campaign Finance",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "ACLU litigation tracker",
+        "First Amendment suppression tracker (internal — first-amendment-suppression.md)",
+        "FEC dark money filings — OpenSecrets.org",
+        "FIRE campus incident tracker — https://www.thefire.org/research-learn/campus-deplatforming-database"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "New anti-protest law enacted in any of: AZ, FL, GA, NC, TX",
+        "Executive order restricting political speech of government contractors or grantees",
+        "DISCLOSE Act vote outcome (if scheduled)",
+        "First Amendment tracker entry that crosses Domain 7 or Domain 29 threshold"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 anchor domain",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "8",
+      "domain_name": "Media and Information Ecosystem",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Reporters Committee for Freedom of the Press",
+        "Reporters Without Borders Press Freedom Index — annual",
+        "Knight Foundation local news closure tracker",
+        "FCC license renewal actions"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "FCC license challenge targeting specific outlet for political content",
+        "DOJ subpoena to journalist or news organization",
+        "Local news closure rate exceeds 10 per month nationally",
+        "AP or Reuters wire service access restricted from White House"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 and Wave 2 infrastructure",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "9",
+      "domain_name": "Federalism and Local Democracy",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "National Governors Association statements",
+        "NAAG — National Association of Attorneys General",
+        "Public Rights Project coalition litigation",
+        "NCSL state preemption tracker"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "State AG coalition expands from 22 to 25+ states on any single issue",
+        "New federal preemption challenge enacted targeting state environmental or health standards",
+        "State successfully defies federal executive action without litigation (political nullification)",
+        "Interstate compact formation announced in any domain-relevant policy area"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 and Wave 2 both",
+      "pending_decisions": [
+        "State AG coalition size at 2026 elections (Wave 2 trigger: 28+ states)"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "10",
+      "domain_name": "Education",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Department of Education Federal Register rules",
+        "NEA and AFT public statements on federal actions",
+        "National School Boards Association legal tracker",
+        "Education Week policy tracker"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "Title I formula change reducing equity funding",
+        "Department of Education executive elimination or reorganization finalized",
+        "Student loan forgiveness program legally terminated by court",
+        "Title IX or Title VI enforcement formally suspended"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 2 and Wave 3",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "11",
+      "domain_name": "Healthcare Access",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "CMS guidance pages",
+        "KFF Medicaid tracker — https://www.kff.org/medicaid/",
+        "National Rural Health Association hospital closure data",
+        "Protect Our Care litigation tracker"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "CMS Medicaid work requirement guidance published (June 2026 deadline)",
+        "Medicaid enrollment drop >5% in any state within a quarter",
+        "Hospital closure in rural county with no alternative within 60 miles",
+        "ACA marketplace enrollment guidance restricting SEP access"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 defense and Wave 2 infrastructure",
+      "pending_decisions": [
+        "HHS Medicaid work requirement guidance — June 2026",
+        "OBBBA Medicaid cuts — implementation timeline"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "12",
+      "domain_name": "Infrastructure, Environment, and Climate",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Harvard EELP Regulatory Tracker — https://eelp.law.harvard.edu/regulatory-tracker/",
+        "Environmental rollbacks tracker (internal — environmental-rollbacks-tracker.md)",
+        "Earthjustice docket — https://earthjustice.org/cases",
+        "EPA Federal Register rule status"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "Rollbacks tracker entry transitions from [PROPOSED] to [FINAL]",
+        "Endangerment Finding D.C. Circuit ruling issued",
+        "IRA clean energy tax credit repeal enacted",
+        "NEPA categorical exclusion expanded to cover major infrastructure projects without review"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 2 and Wave 3",
+      "pending_decisions": [
+        "Endangerment Finding D.C. Circuit challenge — briefing schedule",
+        "EPA OOOO methane rule — litigation status"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "13",
+      "domain_name": "Housing",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "HUD PIT Count annual",
+        "NLIHC Out of Reach report — annual",
+        "Community Land Trust Network",
+        "Urban Institute housing equity tracker"
+      ],
+      "monitoring_cadence": "quarterly",
+      "flag_triggers": [
+        "HUD budget cut >20% in public housing operating fund",
+        "Fair Housing Act enforcement suspended or defunded",
+        "Section 8 voucher rescissions enacted in appropriations",
+        "FHFA rule change restricting Community Reinvestment Act application"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 2 and Wave 3",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "14",
+      "domain_name": "Criminal Justice and Policing",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Police brutality consent decree tracker (internal — police-brutality-consent-decree-tracker.md)",
+        "Consent decree defiance tracker (internal — consent-decree-defiance-tracker.md)",
+        "DOJ Civil Rights Division press releases",
+        "Brennan Center criminal justice tracker"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "New DOJ policy ending consent decree enforcement in any city",
+        "Federal court finding of consent decree defiance",
+        "Cleveland or Oakland consent decree ruling issued (pending as of April 2026)",
+        "DOJ files new consent decree exit motion without remediation"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 rights protection",
+      "pending_decisions": [
+        "Cleveland consent decree exit motion — ruling pending",
+        "Oakland consent decree — status after DOJ exit announcement",
+        "10th Circuit Denver protest policing — circuit split implications"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "15",
+      "domain_name": "Labor and Employment",
+      "monitoring_tier": "tier_3_coalition_fed",
+      "primary_sources": [
+        "NLRB case tracker",
+        "AFL-CIO legislative updates",
+        "National Employment Law Project",
+        "Economic Policy Institute labor market data"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "NLRB quorum falls below functional threshold (2 members)",
+        "NLRB general counsel withdraws pending unfair labor practice complaint affecting >10,000 workers",
+        "Federal contractor minimum wage executive order revoked",
+        "Davis-Bacon Act suspension for federal projects"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 2 and Wave 3",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "16",
+      "domain_name": "Immigration and Citizenship",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "National Immigration Litigation Alliance — https://immigrationlitigation.org/",
+        "ACLU immigrants' rights litigation tracker",
+        "PACER — Abrego Garcia, Kilmar follow-on cases",
+        "ICE detention statistics — quarterly"
+      ],
+      "monitoring_cadence": "weekly",
+      "flag_triggers": [
+        "Supreme Court ruling on administrative removal authority",
+        "ICE detention population exceeds 55,000",
+        "New deportation-to-third-country agreement with country that has no asylum framework",
+        "Birthright citizenship executive order enforcement survives preliminary injunction"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 rights protection",
+      "pending_decisions": [
+        "Birthright citizenship circuit court consolidation",
+        "Abrego Garcia vindictive prosecution finding — appellate posture"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "17",
+      "domain_name": "Labor and Employment Rights",
+      "monitoring_tier": "tier_3_coalition_fed",
+      "primary_sources": [
+        "NLRB press releases",
+        "CWA, SEIU, UFCW legislative alerts",
+        "DOL wage and hour division enforcement reports"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "NLRB structure changed by statute (reauthorization or composition)",
+        "Department of Labor budget cut >30%",
+        "Independent contractor final rule implemented effectively ending FLSA coverage for gig workers"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 2 and Wave 3",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "18",
+      "domain_name": "Social Safety Net",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Center on Budget and Policy Priorities",
+        "SNAP enrollment data — USDA quarterly",
+        "SSA disability application and processing statistics",
+        "Georgetown Center for Children and Families"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "SNAP work requirement expansion effective date set",
+        "SSI benefit reduction enacted",
+        "Medicaid block grant conversion enacted in any form",
+        "CHIP reauthorization lapse for >30 days"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 immediate defense and Wave 3 structural",
+      "pending_decisions": [
+        "OBBBA SNAP work requirements — implementation timeline"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "19",
+      "domain_name": "National Security and Foreign Policy",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Congressional Research Service memos on WPR and AUMF",
+        "Senate Armed Services Committee hearing notices",
+        "State Department legal office publications",
+        "Carnegie International Crisis Monitor"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "New Section 4(a)(1) WPR notification filed (or omitted for a new hostility)",
+        "NATO Article 5 commitment formally conditioned or suspended",
+        "Taiwan arms sale delayed or canceled by executive action",
+        "US withdraws from international human rights treaty or court"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 3 structural reform; Wave 1 monitoring",
+      "pending_decisions": [
+        "Iran ceasefire or escalation outcome — geopolitical cascade implications",
+        "NATO summit Article 5 language (next summit)"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "19f",
+      "domain_name": "War Powers Reform — Iran and Structural",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Senate.gov roll call votes — WPR resolutions",
+        "White House WPR Section 4 notifications",
+        "State Department Office of the Legal Adviser publications",
+        "Congressional Research Service reports on WPR",
+        "Just Security WPR analysis — https://www.justsecurity.org/"
+      ],
+      "monitoring_cadence": "weekly_during_active_hostilities",
+      "flag_triggers": [
+        "Iran WPR 60-day deadline passes without compliance (post-May 1, 2026)",
+        "New Senate WPR vote attempt filed",
+        "OLC issues supplemental memo on WPR application to Iran",
+        "Second military operation overseas commenced without Section 4 notification",
+        "WPR repeal or amendment introduced in Congress"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 constitutional defense; documents entrenchment",
+      "pending_decisions": [
+        "Iran WPR 60-day window compliance (May 1, 2026 deadline)",
+        "Sixth Senate WPR vote — timing and sponsor coalition"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "20",
+      "domain_name": "Economic Concentration and Antitrust",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "FTC press releases and consent decree database",
+        "DOJ Antitrust Division case tracker",
+        "American Economic Liberties Project",
+        "Open Markets Institute"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "FTC quorum falls to 2 members, making contested enforcement impossible",
+        "Major merger approved in sector previously designated as highly concentrated",
+        "DOJ drops pending monopolization case against major platform",
+        "Section 2 Sherman Act enforcement guidance narrowed by DOJ policy memo"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 3 structural reform",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "21",
+      "domain_name": "Data Privacy and Digital Surveillance",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Surveillance tracking document (internal — surveillance-tracking.md)",
+        "PCLOB annual reports",
+        "Electronic Frontier Foundation surveillance tracker",
+        "Congress.gov — Section 702 reauthorization"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "Section 702 lapses without reauthorization or reauthorized with weakened restrictions",
+        "New ICE/CBP algorithmic surveillance contract >$100M",
+        "EO 12333 authority expanded to cover domestic communications",
+        "State-level biometric surveillance preemption law enacted"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 rights protection; Wave 3 structural",
+      "pending_decisions": [
+        "FISA Section 702 — April 30, 2026 deadline outcome confirmed",
+        "LSAM/ImmigrationOS contract renewals"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "22",
+      "domain_name": "Reparations and Racial Justice",
+      "monitoring_tier": "tier_3_coalition_fed",
+      "primary_sources": [
+        "HR 40 cosponsors and committee status",
+        "State reparations commission activity (CA, IL, MN)",
+        "Evanston and Asheville program implementation reports",
+        "NAACP Legal Defense Fund civil rights litigation"
+      ],
+      "monitoring_cadence": "quarterly",
+      "flag_triggers": [
+        "HR 40 advances to committee vote",
+        "State reparations commission issues final report with binding recommendations",
+        "DOJ Civil Rights Division budget reduced to functional zero",
+        "Federal disparate impact standard eliminated by SCOTUS"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 3 structural",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "23",
+      "domain_name": "Trade Policy, Tariff Unilateralism, and Economic Sovereignty",
+      "monitoring_tier": "tier_3_coalition_fed",
+      "primary_sources": [
+        "Court of International Trade docket — 24-state AG challenge",
+        "Business Roundtable litigation updates",
+        "Section 301 USTR status reports",
+        "Peterson Institute for International Economics tariff impact data"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "CIT or Federal Circuit rules on Section 122 authority",
+        "State AG coalition expanded to 28+ states on tariff challenge",
+        "WTO Appellate Body reconstitution motion advanced",
+        "Trade Review Act S.1272 advances to Senate floor vote"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 litigation; Wave 3 structural reform",
+      "pending_decisions": [
+        "SCOTUS Learning Resources v. Trump follow-on — 6-3 IEEPA ruling implications",
+        "Section 122 150-day global tariff — sunset or renewal"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "24",
+      "domain_name": "International Democratic Solidarity",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Freedom House Freedom in the World annual",
+        "International IDEA Global State of Democracy report",
+        "Carnegie Endowment Democracy Tracker",
+        "NED (National Endowment for Democracy) funding status"
+      ],
+      "monitoring_cadence": "quarterly",
+      "flag_triggers": [
+        "NED defunded or reorganized to eliminate democracy promotion function",
+        "US withdraws from OSCE election observation program",
+        "US vetoes UN resolution supporting electoral integrity",
+        "Allied democracy (EU, Canada, Australia) publicly breaks with US democratic norms"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 3 structural; international pressure leverage point",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "25",
+      "domain_name": "Emergency Powers and Constitutional Crisis Management",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "Brennan Center National Emergency Powers tracker — https://www.brennancenter.org/our-work/research-reports/emergency-powers-tracker",
+        "Senate Homeland Security Committee hearings",
+        "Congressional Research Service emergency powers memos",
+        "IEEPA and National Emergencies Act invocations — Federal Register"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "New national emergency declared beyond existing active declarations",
+        "IEEPA invoked for domestic economic purpose beyond trade",
+        "Insurrection Act invocation for domestic civil unrest",
+        "National emergency declaration used to suspend congressional appropriations authority"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 constitutional defense — highest-urgency monitor",
+      "pending_decisions": [
+        "Brennan Center emergency powers tracker — count of active declarations"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "26",
+      "domain_name": "Government Accountability and Institutional Resilience",
+      "monitoring_tier": "tier_3_coalition_fed",
+      "primary_sources": [
+        "POGO (Project on Government Oversight) — https://www.pogo.org/",
+        "CREW (Citizens for Responsibility and Ethics) — https://www.citizensforethics.org/",
+        "MSPB case pipeline",
+        "Inspector General community reports (remaining IGs)"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "Additional Inspector General fired or position eliminated",
+        "GAO access to federal records denied by any agency",
+        "MSPB quorum falls to zero (no functional merit appeals)",
+        "Federal Records Act compliance formally suspended or waived"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 institutional floor",
+      "pending_decisions": [],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "27",
+      "domain_name": "Higher Education and Academic Freedom",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "AAUP statements — https://www.aaup.org/reports-publications",
+        "FIRE campus incident tracker",
+        "State Department visa revocation announcements",
+        "Chronicle of Higher Education federal funding news",
+        "Academic Freedom Index — V-Dem annual"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "Federal funding freeze extended beyond 90 days at any university",
+        "Accreditor placed on warning list or terminated for political reasons",
+        "Additional batch visa revocation exceeding 500 students",
+        "University signs compliance agreement with administration on DEI or admissions"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 institutional resilience",
+      "pending_decisions": [
+        "Harvard funding freeze — legal challenge status",
+        "Columbia compliance agreement — monitoring compliance monitoring",
+        "Accreditation weaponization rulemaking — effective date"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "28",
+      "domain_name": "War Powers — Venezuela Military Unilateralism",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "DOJ Office of Legal Counsel publications",
+        "Congressional Research Service memos",
+        "Senate Armed Services Committee hearings",
+        "Human Rights Watch — Venezuela",
+        "International Criminal Court — situation status"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "OLC issues new memo applying arrest-operation theory to third country",
+        "Second military operation characterized as 'law enforcement arrest' commenced",
+        "ICC preliminary inquiry into Operation Absolute Resolve opened",
+        "DOD Inspector General audit of Venezuela operation released"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 constitutional; documents pattern for Wave 3 reform",
+      "pending_decisions": [
+        "Seth Harp subpoena — press freedom litigation outcome",
+        "Maduro successor government recognition status"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "29",
+      "domain_name": "Prosecutorial Weaponization and DOJ Capture",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "PACER — SPLC v. United States and follow-on",
+        "DOJ press releases — pattern-trackable by subject",
+        "Reporters Committee for Freedom of the Press",
+        "Just Security Anti-Corruption Tracker — https://www.justsecurity.org/117267/anti-corruption-tracker/",
+        "Federal court vindictive prosecution findings"
+      ],
+      "monitoring_cadence": "weekly",
+      "flag_triggers": [
+        "New civil society organization indictment under federal statute",
+        "Congressional subpoena to journalist confirmed",
+        "DOJ press conference announcing investigation of Democratic official",
+        "Judge issues finding of vindictive prosecution or prosecutorial misconduct"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 — immediate monitoring priority",
+      "pending_decisions": [
+        "SPLC indictment — Thompson v. US bank fraud defect — ruling",
+        "Nashville vindictive prosecution — appellate posture",
+        "Abrego Garcia prosecutorial conduct — follow-on proceedings"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "30",
+      "domain_name": "Voting Technology and Election Security",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "CISA election security press releases",
+        "EAC security advisories",
+        "Verified Voting Foundation tracker",
+        "Democracy Docket election security cases"
+      ],
+      "monitoring_cadence": "monthly_offcycle_weekly_before_elections",
+      "flag_triggers": [
+        "CISA election security program budget cut >25%",
+        "EAC composition changes affecting 2026 guidance authority",
+        "State removes paper ballot requirement ahead of 2026 primary",
+        "Known voting system vulnerability publicly disclosed without patch"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 — election integrity",
+      "pending_decisions": [
+        "CISA FY27 appropriations — final amount",
+        "EAC grant program — continuation status"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "31",
+      "domain_name": "Healthcare Access — OBBBA Medicaid Crisis",
+      "monitoring_tier": "tier_3_coalition_fed",
+      "primary_sources": [
+        "Georgetown Center for Children and Families — https://ccf.georgetown.edu/",
+        "KFF Medicaid tracker",
+        "Families USA impact reports",
+        "NAMD — National Association of Medicaid Directors",
+        "CourtListener — Medicaid work requirement challenges"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "HHS Medicaid work requirement guidance published (June 2026)",
+        "Medicaid work requirement effective date set for January 2027",
+        "Federal court grants or denies preliminary injunction on work requirements",
+        "State Medicaid director announces system incapacity to implement requirements by deadline"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 and Wave 2 — highest urgency healthcare domain",
+      "pending_decisions": [
+        "HHS Medicaid work requirement guidance — June 2026",
+        "OBBBA Medicaid cuts — CBO score of coverage loss",
+        "Medicaid work requirement injunction — district court status"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "33",
+      "domain_name": "State Legislative Autocratization",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "Democracy Docket state cases",
+        "Brennan Center state legislative tracker",
+        "LegiScan API — 50-state keyword monitoring",
+        "Ballotpedia state legislation database"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "State enacts supermajority requirement for ballot initiatives",
+        "Mid-decade congressional redistricting introduced in any state",
+        "Dark money spending >$5M in state supreme court race",
+        "State legislature passes bill preempting local anti-discrimination ordinance"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 monitoring; Wave 3 depends on state court independence",
+      "pending_decisions": [
+        "North Carolina state supreme court 2026 election (Wave 2 trigger)",
+        "State legislative sessions with open redistricting dockets"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "34",
+      "domain_name": "Congressional Power-of-the-Purse and Fiscal Authority",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "OMB apportionment reports — quarterly",
+        "CBO Budget and Economic Outlook",
+        "GAO appropriations law reports",
+        "USASpending.gov obligations vs. appropriations"
+      ],
+      "monitoring_cadence": "monthly",
+      "flag_triggers": [
+        "OMB Category C apportionment exceeds 8% of any discretionary account",
+        "Agency refuses to obligate specifically appropriated funds",
+        "GAO impoundment finding issued",
+        "Continuing resolution gap >30 days affecting specific agency operations"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 — directly constrains recovery funding capacity",
+      "pending_decisions": [
+        "FY27 appropriations timeline — continuing resolution vs. omnibus",
+        "Debt ceiling interaction with apportionment authority"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "35",
+      "domain_name": "Supreme Court 2026 Term Preview",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "SCOTUSblog cert-stage monitoring — https://www.scotusblog.com/",
+        "SCOTUS orders lists — Mondays during term",
+        "Democracy Forward SCOTUS guide — https://democracyforward.org/work/research/peoples-guide-scotus-25-26/",
+        "PACER — domain-relevant circuit splits"
+      ],
+      "monitoring_cadence": "weekly_during_term",
+      "flag_triggers": [
+        "Cert granted in voting rights case with adverse circuit split implications",
+        "Cert granted in administrative state case threatening post-Loper rulemaking authority",
+        "SCOTUS justice signals retirement or health issue",
+        "Shadow docket emergency application granted that reverses lower court democracy protection"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 and Wave 3 — shapes entire legal landscape",
+      "pending_decisions": [
+        "Trump v. Slaughter — June 2026 decision",
+        "Watson v. RNC — cert decision",
+        "Louisiana v. Callais — pending",
+        "OT2026 cert grants in voting rights and administrative law dockets"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "36",
+      "domain_name": "AI Governance and Algorithmic Accountability",
+      "monitoring_tier": "tier_2_human_curated",
+      "primary_sources": [
+        "AI Now Institute annual report",
+        "NIST AI Risk Management Framework updates",
+        "FTC AI enforcement actions",
+        "Congress.gov — federal AI governance bills"
+      ],
+      "monitoring_cadence": "quarterly",
+      "flag_triggers": [
+        "Federal AI governance statute enacted or explicitly blocked in Senate",
+        "AI-enabled government decision-making system deployed without impact assessment",
+        "State AI authority preempted by federal statute",
+        "FTC AI enforcement action involving democratic-process application"
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 3 structural; state-level action relevant in Wave 2",
+      "pending_decisions": [
+        "Federal AI governance statute — Senate committee status",
+        "EU AI Act extraterritorial effects on US-based systems"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    },
+    {
+      "domain_number": "37",
+      "domain_name": "Federal Executive Interference in 2026 Midterms",
+      "monitoring_tier": "tier_1_automated",
+      "primary_sources": [
+        "CISA election security press releases",
+        "EAC advisories",
+        "DHS Secretary statements on election administration",
+        "Democracy Docket executive order challenges",
+        "DOJ voter roll litigation tracker (23 active cases as of April 2026)"
+      ],
+      "monitoring_cadence": "weekly_from_june_2026",
+      "flag_triggers": [
+        "New DOJ suit against state voter roll procedures",
+        "CISA budget cut enacted in any appropriations vehicle",
+        "ICE enforcement operation announced within 60 days of election in competitive district",
+        "EAC HSGP grant conditionality tied to voter data sharing",
+        "Executive order restricting state election administration authority"
+      ],
+      "advocacy_windows": [
+        {
+          "window": "1",
+          "deadline": "2026-05-30",
+          "description": "DOJ consent decree deadlines on voter roll management — final opportunity to challenge methodology"
+        },
+        {
+          "window": "2",
+          "deadline": "2026-06-30",
+          "description": "HSGP grant conditionality challenge — states must accept or reject conditions before July 1 grant period"
+        },
+        {
+          "window": "3",
+          "deadline": "2026-08-07",
+          "description": "August primary stress-test — document SAVE Act error rates and voter ID problems in real-time primaries"
+        },
+        {
+          "window": "4",
+          "deadline": "2026-09-15",
+          "description": "Pre-election litigation positioning — Section 3 disqualification filings, voter roll challenge suits"
+        },
+        {
+          "window": "5",
+          "deadline": "2026-11-03",
+          "description": "Pre-election day — poll observer deployment, emergency litigation preparation, provisional ballot procedures locked"
+        }
+      ],
+      "last_checked": "",
+      "last_significant_event": "",
+      "last_significant_event_date": "",
+      "flag_triggered": false,
+      "domain_status": "current | needs_update | urgent",
+      "action_required": "",
+      "wave_relevance": "Wave 1 — highest-urgency time-sensitive domain",
+      "pending_decisions": [
+        "CISA FY27 appropriations final amount",
+        "SAVE Act follow-on Senate status",
+        "DOJ voter roll litigation — 23 active cases status"
+      ],
+      "coalition_notes": "",
+      "public_notes": ""
+    }
+  ],
+
+  "trigger_event_log": {
+    "instructions": "Add an entry each time a trigger event from a domain's flag_triggers list is crossed. Reference monitoring-infrastructure-2026.md Part II for wave-level trigger tables. This section records the event; the contingency-trigger-log.md (monitoring/templates/) records the required roadmap adaptation.",
+    "events": []
+  },
+
+  "wave_status_assessment": {
+    "assessment_date": "",
+    "wave_1_status": {
+      "overall": "on_track | partial | off_track",
+      "criteria": {
+        "elections_free_of_federal_suppression": "Y | N | partial",
+        "courts_functioning_as_executive_check": "Y | N | partial",
+        "federal_workforce_above_60pct_critical_agencies": "Y | N | partial",
+        "mass_mobilization_without_military_deployment": "Y | N | partial"
+      },
+      "notes": ""
+    },
+    "wave_2_readiness": {
+      "overall": "ready_to_begin | not_yet | conditional",
+      "conditions_met": [],
+      "conditions_unmet": [],
+      "notes": ""
+    },
+    "wave_3_horizon": {
+      "assessment": "on_track | delayed | blocked",
+      "blocking_conditions": [],
+      "notes": ""
+    }
+  },
+
+  "publication_matrix": {
+    "instructions": "Governs what is published vs. kept internal. Reference monitoring-infrastructure-2026.md Part IV for full rationale.",
+    "publish_externally": [
+      "domain_status field (for current_alerts)",
+      "last_significant_event and date (without coalition_notes)",
+      "flag_triggered status — domains flagged become Current Alerts",
+      "litigation_tracker updates (litigation-tracker-2026.md)",
+      "three public trackers monthly update notes",
+      "monthly crisis snapshot urgency ranking (5-7 domains only, stripped of coalition input)"
+    ],
+    "keep_internal": [
+      "coalition_notes field (all domains)",
+      "adversary_signals field (all domains)",
+      "trigger_event_log adversary response entries",
+      "wave_status_assessment coalition implications",
+      "publication_matrix itself",
+      "coalition feedback tracker (all contact engagement data)",
+      "contingency trigger log (all entries)"
+    ]
+  },
+
+  "source_health_check": {
+    "instructions": "Verify monthly that key automated sources are functioning. Note any that have become unavailable, restricted, or degraded.",
+    "check_date": "",
+    "sources": [
+      {
+        "name": "CourtListener docket alerts",
+        "url": "https://www.courtlistener.com/",
+        "status": "active | degraded | unavailable",
+        "active_alerts_set": [],
+        "notes": ""
+      },
+      {
+        "name": "Democracy Docket RSS",
+        "url": "https://www.democracydocket.com/cases/",
+        "status": "active | degraded | unavailable",
+        "swing_states_monitored": ["AZ", "GA", "MI", "PA", "WI"],
+        "notes": ""
+      },
+      {
+        "name": "Congress.gov API",
+        "url": "https://api.congress.gov/",
+        "status": "active | degraded | unavailable",
+        "active_queries": ["SAVE Act", "VRA reauthorization", "Trade Review Act", "DISCLOSE Act"],
+        "notes": ""
+      },
+      {
+        "name": "LegiScan API",
+        "url": "https://legiscan.com/legiscan",
+        "status": "active | degraded | unavailable",
+        "active_keywords": ["ballot initiative", "redistricting", "preemption", "voter roll"],
+        "coverage_gap_states": ["TX (odd-year sessions)", "LA (odd-year sessions)"],
+        "notes": ""
+      },
+      {
+        "name": "FEC.gov data",
+        "url": "https://www.fec.gov/data/",
+        "status": "active | degraded | unavailable",
+        "reporting_lag_weeks": 6,
+        "dark_money_limitation": "501c4 spending not disclosed at FEC — use OpenSecrets for supplemental tracking",
+        "notes": ""
+      },
+      {
+        "name": "Federal Register email alerts",
+        "url": "https://www.federalregister.gov/",
+        "agencies_subscribed": ["CMS", "HHS", "EPA", "OMB", "OPM", "DOJ"],
+        "status": "active | degraded | unavailable",
+        "notes": ""
+      },
+      {
+        "name": "USASpending.gov",
+        "url": "https://usaspending.gov/",
+        "status": "active | degraded | unavailable",
+        "notes": ""
+      },
+      {
+        "name": "SCOTUSblog",
+        "url": "https://www.scotusblog.com/",
+        "status": "active | degraded | unavailable",
+        "notes": ""
+      },
+      {
+        "name": "Just Security Anti-Corruption Tracker",
+        "url": "https://www.justsecurity.org/117267/anti-corruption-tracker/",
+        "status": "active | degraded | unavailable",
+        "notes": ""
+      },
+      {
+        "name": "Harvard EELP Regulatory Tracker",
+        "url": "https://eelp.law.harvard.edu/regulatory-tracker/",
+        "status": "active | degraded | unavailable",
+        "notes": ""
+      },
+      {
+        "name": "PACER",
+        "url": "https://pacer.uscourts.gov/",
+        "status": "active | degraded | unavailable",
+        "quarterly_fee_waiver_active": true,
+        "notes": ""
+      }
+    ]
+  }
+}

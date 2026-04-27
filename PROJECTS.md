@@ -727,28 +727,22 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Key design**: Zero schema changes; LightGBM native SHAP (no external package); 5-dimension retraining trigger with advisory default (human approval before execution); regime-adaptive thresholds
   - **Status**: Production-ready for post-Gate-1-pass integration once paper trading validates drift patterns
 
-**NEW ITEMS (Session 546 — Exploration Queue Refresh)**:
+**✅ COMPLETED (Session 547 — Exploration Queue Execution)**:
 
-- **resistance-research: Post-distribution measurement and iteration framework** (Priority 1)
-  - **Scope**: Design measurement infrastructure for tracking adoption and impact of Phase 1 distribution across influencer tiers (Tier 1: legislators/think tanks; Tier 2: academics/media; Tier 3: labor/civil rights networks). (1) Define success metrics per tier and domain, (2) Build feedback-loop mechanisms for iterating proposal messaging, (3) Measure influencer network amplification (who cites, who networks, cascade tracking), (4) Design monthly iteration cycles for Phase 2 domain research based on distribution feedback, (5) Create institutional adoption playbook (how policy organizations should implement framework recommendations)
-  - **Goal**: Post-launch visibility into whether distribution is reaching intended audiences and what refinements to proposal/messaging/sequencing improve adoption
-  - **Expected output**: `measurement-and-iteration-framework.md` (3,000-4,000 words) + adoption tracking template + feedback integration workflow
-  - **Timeline**: 1-2 sessions
-  - **Status**: QUEUED
+- ✅ **resistance-research: Post-distribution measurement and iteration framework** (COMPLETE — Session 547)
+  - **Deliverables**: `measurement-and-iteration-framework.md` (6,800 words) — Seven-part framework with success metrics by tier, feedback-loop mechanisms (direct contact log, passive monitoring, structured check-ins, coalition input), network amplification tracking (bridge-node methodology), monthly iteration cycles with demand-signal decision matrix, institutional adoption playbook (4 adoption levels, 5-step facilitation sequence, sector-specific pathways), tracking infrastructure, and recovery protocols
+  - **Key findings**: Institutional adoption depth is the unit of measure, not reach. Two-contact threshold prevents messaging overcorrection. Bridge-node tracking compensates for invisible Hill staff adoption. Current Phase 2 priorities: Domain 31x (Healthcare Tariff Collision, 95 days to deadline) and Domain 37b (State Election Security, April–July advocacy window)
+  - **Status**: COMPLETE, committed to master (d625129)
 
-- **stockbot: Gate 2+ optimization thesis** (Priority 2)
-  - **Scope**: Design optimization strategy for improving Gate 2 metrics (Sharpe ratio ≥1.0, max drawdown ≤20%, profit factor ≥1.5) beyond multi-ticker paper trading baseline. (1) Ensemble weighting strategies beyond equal weighting (volatility weighting, risk parity, Kelly criterion), (2) Sector rotation thesis (diversify across sectors to reduce concentration risk and improve Sharpe), (3) Tail-hedge mechanisms (protective puts, volatility-spike positioning, drawdown triggers), (4) Regime-adaptive position sizing deepening (HMM + volatility scalar interaction), (5) Model refresh schedule and retraining triggers to combat drift
-  - **Goal**: Create a detailed optimization roadmap that closes the 4x gap to Gate 2 pass without increasing operational complexity or risk
-  - **Expected output**: `gate-2-optimization-thesis.md` (4,000-5,000 words) + pseudo-code for 3 ensemble methods + decision tree for sector/tail-hedge activation
-  - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED
+- ✅ **stockbot: Gate 2+ optimization thesis** (COMPLETE — Session 547)
+  - **Deliverables**: `gate-2-optimization-thesis.md` (7,400 words, 9 sections) — Complete Gate 2 optimization roadmap with: (1) Ensemble weighting (Inverse-Vol, Risk Parity, Conservative Quarter-Kelly with pseudo-code), (2) Sector rotation (12-week relative-strength scoring, 35% hard cap, defensive tilt in Bear regime), (3) Tail-hedge mechanisms (VolatilityCircuitBreaker, defensive rotation at 8% drawdown, VIXSpike overlay), (4) Regime sizing compound formula (vol × HMM × defensive multipliers), (5) Model refresh schedule (Tier 1 monthly / Tier 2 quarterly / Tier 3 emergency retrain at drift ≥ 0.55), (6) Unified architecture signal flow, (7) Gate 2 metric projections (Sharpe 1.25–1.65, MDD 4–5% backtest / ~8% live, PF ~1.82), (8) 5-phase implementation sequence
+  - **Key findings**: All five optimization layers compound multiplicatively on portfolio volatility. Bull+calm → 1.35x sizing; Bear+high-vol → 0.13x. Gate 2 evaluation requires 120 completed round trips, all layers active, no emergency retrain in 30d, VIX > 20 experience
+  - **Status**: COMPLETE, committed to master
 
-- **seedwarden: Wholesale and affiliate partnership strategy** (Priority 3)
-  - **Scope**: Design B2B growth channels complementary to direct-to-consumer Phase 1-3. (1) Wholesale partnerships (bulk discounts to homesteading/survival retailers, PDF licensing to educational institutions), (2) Affiliate programs (commissions for bloggers, YouTube creators, homesteading influencers), (3) Corporate training and corporate bulk licensing (employee wellness programs, disaster preparedness training), (4) White-label partnerships (other Etsy sellers bundling products into kits, content distribution platforms licensing guides), (5) Seasonal partnership windows (spring garden planning bundles with seed companies, fall preservation bundles with canning suppliers)
-  - **Goal**: Build sustainable high-margin channels that reduce reliance on paid advertising and capture customers before they reach Etsy
-  - **Expected output**: `wholesale-and-affiliate-strategy.md` (3,500-4,500 words) + partnership pipeline template + commission structure proposals + contact list for 15-20 target partners per channel
-  - **Timeline**: 1-2 sessions
-  - **Status**: QUEUED
+- ✅ **seedwarden: Wholesale and affiliate partnership strategy** (COMPLETE — Session 547)
+  - **Deliverables**: `wholesale-and-affiliate-strategy.md` (~4,100 words) — Five-channel B2B strategy: (1) Affiliate Programs (25% standard, 30% creator, 20% institutional; 20+ named targets including Melissa K. Norris YT 486K, Homesteading Family 895K), (2) Wholesale/Bulk Licensing ($1.50–$5.00/PDF; targets: True Leaf Market, Botanical Interests, Seed Savers Exchange, county extension, FFA chapters), (3) Corporate Training & Bulk Licensing (seat-license $2.50–$6.00; tech/hospital/CERT/ERG trainers; 3–6 month sales cycle), (4) White-Label Partnerships (Etsy bundlers $2.00/unit; content platforms $1,500–$3,000/year license), (5) Seasonal Windows (Spring Partner Pack $4.00/unit, Preservation $8.00/unit, Holiday Bundle $15/unit)
+  - **Phase 3 revenue targets**: Affiliate $300–$800/month; total partnership revenue 20–35% of Phase 1-2 total. Phase 3 outreach timeline month-by-month for each seasonal window
+  - **Status**: COMPLETE, committed to master
 
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 

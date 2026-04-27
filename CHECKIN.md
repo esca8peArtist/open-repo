@@ -4,7 +4,61 @@
 
 ---
 
-## Current Session (Session 546 — 2026-04-27 evening — Exploration Queue Refresh + Pre-Deployment Staging)
+## Current Session (Session 547 — 2026-04-27 20:03 UTC — Exploration Queue Execution)
+
+**Status**: ✅ **THREE PARALLEL EXPLORATION ITEMS COMPLETE** — resistance-research post-distribution measurement framework delivered (6,800 words, 7-part); stockbot Gate 2+ optimization thesis delivered (7,400 words, 5 optimization layers with projections); seedwarden wholesale/affiliate strategy delivered (4,100 words, 5-channel pipeline).
+
+**CRITICAL DEADLINE REMAINS**: 🔴 **stockbot engine restart REQUIRED before 2026-04-28 09:30 ET** (~12.5 hours remaining). No autonomous blocking issues — awaiting user action.
+
+**Since Last Session (Session 546)**:
+
+1. ✅ **Parallel Exploration Queue Execution (3 agents)**
+   - **resistance-research: Post-distribution measurement framework** — Comprehensive 6,800-word framework with success metrics per tier, feedback-loop mechanisms (direct contact log, passive monitoring, 30/60/90 check-ins, quarterly coalition input), network amplification tracking (bridge-node methodology), monthly iteration cycles with demand-signal decision matrix, institutional adoption playbook (4 levels, 5-step facilitation, sector-specific pathways), and recovery protocols. Current Phase 2 priorities identified: Domain 31x (Healthcare Tariff, 95 days to deadline) and Domain 37b (State Election Security, window open now). Committed to master (d625129).
+   
+   - **stockbot: Gate 2+ optimization thesis** — Complete 7,400-word design document with 5 optimization layers: (1) Ensemble weighting (Inverse-Vol, Risk Parity, Quarter-Kelly with decision tree), (2) Sector rotation (12-week relative-strength, defensive tilt in Bear), (3) Tail-hedge mechanisms (VolatilityCircuitBreaker, defensive rotation, VIXSpike overlay), (4) Regime sizing compound (vol × HMM × defensive multiplicatively), (5) Model refresh schedule (monthly/quarterly/emergency tiers). Gate 2 projections: Sharpe 1.25–1.65, MDD 4–5% backtest / ~8% live, PF ~1.82 — all clearing thresholds. Committed to master.
+   
+   - **seedwarden: Wholesale & affiliate strategy** — Production-ready 4,100-word strategy spanning 5 B2B channels: affiliate programs (25% standard, 30% creator; 20+ named targets), wholesale licensing ($1.50–$5.00/PDF), corporate training (seat-license $2.50–$6.00), white-label partnerships (Etsy bundlers $2.00/unit), seasonal windows (Spring $4, Preservation $8, Holiday $15/unit). Phase 3 revenue targets: affiliate $300–$800/mo, total partnership 20–35%. Committed to master.
+
+2. ✅ **PROJECTS.md Updated**
+   - Marked all three exploration items COMPLETE with deliverable summaries and key findings
+   - Queue now empty per protocol — ready to add 2-3 new items on next session
+
+3. ✅ **Orchestration Files Updated**
+   - WORKLOG.md: Full Session 547 entry with all three research deliverables
+   - CHECKIN.md: This session summary
+   - All commits to master
+
+**Project Status Summary** (unchanged from Session 546):
+- 🔴 **stockbot**: CRITICAL — Engine restart needed 12.5h before market open (2026-04-28 09:30 ET). Multi-ticker paper trading verified. Gate 2+ optimization thesis now available to engineering team for post-live-trading phase.
+- 🟡 **resistance-research**: Distribution path decision pending (Path A / A+Domain37 / Path B). Pre-deployment staging ready. Post-distribution measurement framework now complete.
+- ✅ **mfg-farm**: Test print blocking (user action). Multi-printer farm architecture + Phase 2 supplier research complete.
+- ✅ **seedwarden**: Track A awaiting tag corrections + Etsy verification. Track B no blockers. B2B partnership strategy now available for Phase 2+.
+- ✅ **All other projects**: Blocked on user action (open-repo PR review, cybersecurity-hardening execution, off-grid-living social distribution, workout review).
+
+**Items Needing User Input (Prioritized)**:
+
+1. 🔴 **CRITICAL (T-12.5 hours)**: Restart stockbot engine — When ready, run from `projects/stockbot/`: `.venv/bin/python scripts/run_live_trading.py` before 2026-04-28 09:30 ET
+   - Checklist available: `STOCKBOT_PRE_RESTART_CHECKLIST.md`
+   - Estimated time: 30 seconds restart + 2-minute verification
+   - Gate 2+ optimization thesis available in `docs/gate-2-optimization-thesis.md` if optimization engineering desired post-restart
+   
+2. 🟡 **High Priority (once decided)**: resistance-research distribution path decision
+   - Path A: Immediate 34-domain broad distribution
+   - Path A+Domain37 (recommended): Path A + targeted Domain 37 to election-protection organizations
+   - Path B: Continue optional content updates before distribution
+   - Post-decision: Orchestrator executes Phase 1 within 2 hours via STAGE_* directory
+   
+3. 🟡 **High Priority**: Confirm mfg-farm test print completion
+   - Post-print: 7-step supplier negotiation sequence ready (documented in PROJECTS.md)
+   
+4. 🟠 **Medium Priority**: seedwarden Phase 1 tag corrections (3 items) + Etsy account verification
+   - B2B partnership strategy now available for Phase 2+ planning
+
+**Session Conclusion**: Exploration queue execution complete (3 parallel agents delivered measurement framework, optimization thesis, partnership strategy). All research production-ready. Exploration queue now empty — ready to refresh with new items if main projects remain blocked. System awaiting user engine restart (most time-critical) and distribution path decision (deployment-ready).
+
+---
+
+## Previous Session (Session 546 — 2026-04-27 evening — Exploration Queue Refresh + Pre-Deployment Staging)
 
 **Status**: ✅ **THREE PARALLEL TASKS COMPLETE** — open-repo Phase 5 offline export architecture finalized (production-ready, committed); resistance-research pre-deployment staging directories created (Path A, A+Domain37, B); exploration queue refreshed with 3 new items per protocol.
 
