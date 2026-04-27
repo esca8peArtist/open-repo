@@ -79,7 +79,15 @@
 - **All other candidate domains assessed**: Indigenous sovereignty (needs Domain 15 subsection depth, not standalone), disability justice (Domain 18 expansion), immigration (Domain 16 complete), media (Domain 8 complete), housing (Domain 13+3f complete), university autonomy (Domain 10 subsection), civil society (cross-cutting, no standalone needed)
 - **Result**: Diagnostic framework at 25 domains with one identified Domain 26 gap. Framework completeness assessed and documented.
 
-**Next**: User decision on Domain 26 deepening. If approved: deep research on reproductive justice architecture, constitutional pathways, comparative models (France, Argentina, Ireland), implementation pathway. If deferred: proceed to distribution execution (templates ready).
+**Next**: 
+- **Domain 26 Research Infrastructure COMPLETE (Session 500)**: Prep documents ready (`domain-26-research-outline.md`, `domain-26-research-checklist.md`). Framework is 30% pre-written and structured. When user approves deepening, full Domain 26 document can be executed immediately with research focused on 5 priority areas (Skrmetti outcome, EMTALA rescission, CDC data, ballot initiative record, My Health My Data Act status). OR proceed to distribution execution (templates ready).
+- **Current decision point**: Approve Domain 26 deepening (fastest path: apply Domain 26 research priorities list) OR proceed to Substack/Reddit/institutional distribution (templates production-ready).
+
+**✅ COMPLETED (Session 500)**:
+- ✅ **Domain 26 Research Infrastructure** — Outline, checklist, priority research areas identified
+  - `domain-26-research-outline.md` (2,800 words) — Full structure with 5 subsections, fiscal architecture, international benchmarks
+  - `domain-26-research-checklist.md` (1,200 words) — Timeline, source categories, key unknowns
+  - When approved: Ready for immediate full development
 
 **✅ COMPLETED (Session 494)**:
 - ✅ **Phase 4 Integration into Part III** — All four Phase 4 documents synthesized into democratic-renewal-proposal.md Part III

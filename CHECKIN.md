@@ -31,8 +31,10 @@
 - **mfg-farm**: Blocked on test print (user action required).
 
 **Needs User Input**:
-- **Seedwarden**: Tag corrections (3) + Etsy account verification to launch Phase 1
-- **Resistance-Research**: Approve Domain 26 deepening OR proceed to distribution execution (templates ready for Substack/Reddit/institutional outreach)
+- **Seedwarden**: Tag corrections (3) + Etsy account verification to launch Phase 1 (HIGHEST PRIORITY — Phase 2 is complete)
+- **Resistance-Research**: Domain 26 deepening decision:
+  - **Option A (recommended if Domain 26 is in scope)**: Approve deepening. Agent will execute full Domain 26 document using priority research checklist (Skrmetti outcome, EMTALA rescission, CDC data, ballot initiatives, data broker laws). Infrastructure 30% pre-written; timeline ~3-4 hours agent work.
+  - **Option B**: Proceed to distribution execution (templates ready for Substack/Reddit/institutional outreach). User action needed for posting.
 - **Cybersecurity-Hardening**: Review Tier 1 templates and approve outreach execution (Tier 2 templates now ready for ~4-week follow-up)
 
 **Suggested Next Actions**:

@@ -12457,5 +12457,23 @@ All four Phase 5 documents completed. Proposal now contains full strategic pathw
 - **Resistance-Research**: Awaiting user decision on Domain 26 deepening; distribution execution ready for user action
 - **Other**: Stockbot monitoring ongoing (next checkpoint 2026-05-12); cybersecurity-hardening awaiting Tier 1 approval
 
+2. ✅ **Resistance-Research: Domain 26 Research Infrastructure COMPLETE**
+   - **Agent**: General-research agent spawned (prep work, not full domain yet)
+   - **Task**: Prepare Domain 26 framework for immediate execution when user approves deepening
+   - **Deliverables**:
+     - `domain-26-research-outline.md` (2,800 words) — Full structure, 5 subsections, fiscal architecture, international benchmarks, movement landscape
+     - `domain-26-research-checklist.md` (1,200 words) — Research priorities, source categories, timeline estimates
+     - Updated `assessment/domain-completeness-check.md` with links to prep docs
+   - **Key insight**: Archive is already ~30% pre-written (Section 7e of rights-protection-evidence.md, prior outline work). Domain 26 full development will be faster than typical domain.
+   - **Top 5 research priorities** (when approved):
+     1. United States v. Skrmetti outcome (gender-affirming care precedent)
+     2. EMTALA April 2026 rescission specifics (current admin's direct attack)
+     3. CDC maternal mortality update (2022-2023 data post-Dobbs impact)
+     4. State ballot initiative record 2022-2026 (proof of public support)
+     5. My Health My Data Act federal analog status (surveillance protection mechanism)
+   - **Status**: Infrastructure ready for full development. User can approve and agent can immediately execute to full domain document in next session.
+
 **Token Usage** (Session 500):
 - Seedwarden agent: ~60K tokens
+- Resistance-research agent: ~44K tokens
+- Total: ~104K tokens
