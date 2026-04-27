@@ -4,6 +4,40 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 550 (Late Evening, ~23:45 UTC) — Institutional Adoption Playbooks
+
+**Orchestration**: All high-priority projects remain blocked on user action (engine restart critical, distribution path decision pending, test print needed). Session 549 cleared exploration queue to zero. Added 3 new exploration items per protocol. Spawned resistance-research agent for top priority item.
+
+**Work Completed**:
+
+1. ✅ **resistance-research: Post-Distribution Institutional Adoption Playbooks** (COMPLETE)
+   - **Deliverable**: `institutional-adoption-playbooks.md` (9,145 words, 5 sector playbooks)
+   - **Scope**: State legislatures, federal circuit courts, executive agencies, universities (law schools), civil rights organizations
+   - **What makes it actionable**: Each playbook is sector-specific, not generic. Built around: (1) concrete 2026 opening scenario for that sector, (2) 5-step step-by-step decision framework, (3) sector-specific decision tree, (4) timeline template aligned to sector's decision cycle, (5) success metrics unique to sector, (6) common failure modes specific to sector
+   - **Key analytical findings**: 
+     - Legislatures: Virginia 2026 fragmentation vs. Minnesota 2023 omnibus success as contrasts; wave filter timing + feasibility matrix + GSD peer coordination as core mechanisms
+     - Courts: Post-Loper Bright landscape opens both offensive challenges and defensive restrictions; Corner Post tolling reverses statute-of-limitations advantage; pre-assigned rapid-response academic record teams beat post-ruling scrambling
+     - Executive agencies: Three-category function audit (legally mandated vs. discretionary vs. consent-decree-bound) determines what career officials must protect; whistleblower documentation protocol addresses 2026 specific vulnerability (DOGE/SSA NUMIDENT); state parallel capacity analysis reflects real EPA/NLRB/CFPB absorption into state agencies
+     - Universities: Domain 27 four-track threat map (funding leverage, DEI self-censorship, visa revocations, accreditation weaponization) as organizing frame; rapid-response publication protocol (12-hour turnaround vs. traditional 12-month academic cycle) as core fix; pre-assignment of faculty teams to predicted SCOTUS rulings
+     - Civil rights orgs: Domain-lead assignment as governance mechanism; 3.5% mobilization threshold as trackable campaign benchmark; 12-week messaging sequence with April 2026 decision-point integration (April 28 Xinis hearing, April 30 FISA deadline, May Day)
+   - **Additional**: Minimum viable portfolio table for capacity-constrained institutions; domain dependency structure (Domain 6 must precede 1,2,29,34; Domain 2 must precede 11,15,18,20); four contact templates for coordination gaps
+   - **Sources**: 10 authoritative sources including K&L Gates post-Loper analysis, Democracy Docket appellate tracking, NCSL state legislature calendar, civil rights coalition coordination models
+   - **Value**: Bridges from framework reading to concrete institutional operation. Production-ready for distribution to think tanks, state AG offices, law schools, advocacy coalitions. Operationalizes 35-domain framework at scale.
+   - **Committed**: File committed, PROJECTS.md marked complete
+
+**Exploration Queue Status**:
+- **Added 3 new items (Session 550)**:
+  1. ✅ resistance-research: Post-distribution institutional adoption playbook (COMPLETE)
+  2. stockbot: Live trading dashboard UI mockup (queued)
+  3. seedwarden: Customer cohort analysis framework (queued)
+- **Queue currently has 2 active items** (stockbot UI mockup, seedwarden cohort analysis)
+
+**Project Status Summary**:
+- 🔴 **stockbot** — CRITICAL: Engine restart needed before 2026-04-28 09:30 ET (~8.5 hours remaining from session time). Multi-ticker paper training complete. All post-Gate-2 infrastructure ready. System awaiting user restart only.
+- 🟡 **resistance-research** — Distribution path decision pending. Framework + implementation toolkit + activation architecture + crisis playbooks + institutional adoption playbooks all complete. Ready for Phase 1 launch.
+- ✅ **mfg-farm** — Test print blocking. Manufacturing automation + supplier research + CNC economics all complete.
+- ✅ All secondary projects — Awaiting user action (seedwarden tag corrections, cybersecurity-hardening Tier 1 approval, open-repo PR review, off-grid-living social media execution)
+
 ## 2026-04-27 Session 549 (Late Evening) — Parallel Exploration Queue Execution (3 Items Complete)
 
 **Orchestration**: Oriented on ORCHESTRATOR_STATE.md. All high-priority projects blocked on user action (engine restart, distribution path decision, test print, tag corrections, PR review). Exploration Queue had 1 item; added 2 new items per protocol. Spawned 2 parallel agents for 3 independent exploration tasks.
