@@ -42,7 +42,7 @@ license: "Creative Commons Attribution 4.0"
 
 Cross-posting a legal research document that I think this community will find substantive, particularly given the volume of active constitutional litigation in the last 18 months.
 
-The document is a 22-domain analysis of structural reform pathways for U.S. democratic institutions, grounded in constitutional design, comparative constitutional law, and the existing litigation record. I'm sharing it here specifically because Domains 1, 2, 6, and 7 are directly relevant to active legal questions and the document cites the controlling case law throughout.
+The document is a 28-domain analysis of structural reform pathways for U.S. democratic institutions, grounded in constitutional design, comparative constitutional law, and the existing litigation record. I'm sharing it here specifically because Domains 1, 2, 6, and 7 are directly relevant to active legal questions and the document cites the controlling case law throughout.
 
 A few things the document addresses that seem most relevant to r/law:
 
@@ -185,7 +185,7 @@ The key insight from the movement research (and from comparative political scien
 - Campaign finance rules correlating policy outcomes with elite donor preferences and showing no significant correlation with median voter preferences (Gilens and Page, 2014)
 - A Supreme Court with life tenure, political appointment, and no enforceable ethics code
 
-**The 22-domain proposal**
+**The 28-domain proposal**
 
 The research produced a 28-domain framework. Every reform in it has been implemented or seriously attempted somewhere, has documented evidence of effectiveness, and has a plausible political pathway. The domains:
 
@@ -209,7 +209,7 @@ Poland's PiS government spent eight years stacking courts, capturing media, and 
 
 If the House flips or narrows to a functional check, Phase 1 reforms become achievable. If it does not, the remaining 47% of Project 2025 proceeds with minimal friction, and structural changes to redistricting and judicial authority may close the electoral reversal window.
 
-Full proposal (22 domains, full evidence base): [link]
+Full proposal (28 domains, full evidence base): [link]
 Two-page executive summary: [link]
 Litigation tracker (what courts are doing right now): [link]
 
@@ -253,7 +253,7 @@ The meta-analysis of the movement dataset produces several findings with high co
 
 **The international comparisons in the proposal**
 
-Each of the 22 domains is grounded in comparative evidence from functioning democracies. A few examples:
+Each of the 28 domains is grounded in comparative evidence from functioning democracies. A few examples:
 
 - Ireland has used multi-member districts with STV since 1921 — evidence for proportional representation (Domain 1)
 - New Zealand adopted MMP in 1996 after a public referendum — evidence for the transition from single-member systems

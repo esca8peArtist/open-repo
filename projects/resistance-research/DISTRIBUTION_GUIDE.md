@@ -18,7 +18,7 @@ This guide is for anyone who wants to share the Democratic Renewal proposal, tra
 The core documents, in order of distribution priority:
 
 1. **Executive Summary** (2 pages) — The highest-leverage document for general audiences. Designed to be shared as a standalone piece.
-2. **Full Proposal** (22 domains, full evidence) — For policy professionals, journalists, and people who want to go deep.
+2. **Full Proposal** (28 domains, full evidence) — For policy professionals, journalists, and people who want to go deep.
 3. **Trackers** — First Amendment Suppression, Environmental Rollbacks, Police Brutality and Consent Decrees, Litigation — for audiences who respond to documented current events rather than policy frameworks.
 4. **Crisis Analysis** (U.S. Democracy Crisis Analysis 2026) — For academics, journalists, and audiences who need the diagnostic before the prescription.
 5. **Resistance Meta-Analysis** — For organizers and movement strategists.
@@ -72,7 +72,7 @@ The core documents, in order of distribution priority:
 
 > Subject: Research resource on [specific domain] — democratic renewal framework
 >
-> [Name], I wanted to share a research document that may be useful for your work on [specific issue]. It's part of a larger 22-domain proposal on democratic renewal, grounded in 160+ movement case studies and international evidence. The [Domain X] section covers [brief description of what it covers], with evidence from [relevant countries/precedents].
+> [Name], I wanted to share a research document that may be useful for your work on [specific issue]. It's part of a larger 28-domain proposal on democratic renewal, grounded in 160+ movement case studies and international evidence. The [Domain X] section covers [brief description of what it covers], with evidence from [relevant countries/precedents].
 >
 > The executive summary (2 pages) gives the overview: [link]. The full [domain] section is here: [link].
 >
@@ -142,7 +142,7 @@ The core documents, in order of distribution priority:
 
 **Web link (GitHub Gist or similar):** The fastest way to share. Create a public Gist for the executive summary with the Creative Commons license noted at the top. Link directly to specific sections for targeted outreach.
 
-**PDF download:** Convert the executive summary to a 2-page PDF using a clean template. The table of 22 domains is the centerpiece — format it for print legibility (10pt minimum in the table). Include the citation format and license on the back page.
+**PDF download:** Convert the executive summary to a 2-page PDF using a clean template. The table of 28 domains is the centerpiece — format it for print legibility (10pt minimum in the table). Include the citation format and license on the back page.
 
 **Email template:** The body of the executive summary (minus the YAML frontmatter) works as the body of a long-form email newsletter. Break it with horizontal rules between sections as formatted.
 

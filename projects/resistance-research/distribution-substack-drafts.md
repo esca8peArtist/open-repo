@@ -71,7 +71,7 @@ The full proposal and supporting research are available under Creative Commons A
 
 **Call to Action (end of post)**:
 - Read the full executive summary: [link]
-- Read the complete 22-domain proposal: [link]
+- Read the complete 28-domain proposal: [link]
 - Share this post with someone who is asking "what do we actually do?"
 - Subscribe to receive the full series
 

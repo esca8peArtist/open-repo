@@ -7,9 +7,9 @@
 
 ## Overall Project Status
 
-**Phase**: Maintenance + Phase 2 domain identification complete; distribution awaiting user action.
+**Phase**: Phase 2 integration complete (Session 510). Domains 27-29 fully integrated into proposal and distribution package. Exploration queue replenished. Distribution awaiting user action.
 
-**26-Domain Diagnostic Framework**: COMPLETE. All 26 domains researched and documented in `democratic-renewal-proposal.md` and domain-specific files. Distribution templates ready (Substack, Reddit, institutional outreach) — awaiting user execution.
+**28-Domain Diagnostic Framework**: COMPLETE. All 28 domains researched and documented in `democratic-renewal-proposal.md` and domain-specific files. Distribution templates updated (Substack, Reddit, institutional outreach) — all references corrected from "22-domain" to "28-domain" — awaiting user execution.
 
 ---
 
@@ -17,12 +17,12 @@
 
 | Document | Status | Notes |
 |----------|--------|-------|
-| `democratic-renewal-proposal.md` | Complete | 26 domains, Phase 3 comparative research integrated |
-| `democratic-renewal-executive-summary.md` | Complete | Print-ready 2-page summary |
-| `DISTRIBUTION_GUIDE.md` | Complete | Platform strategy, audience segmentation, templates |
-| `distribution-substack-drafts.md` | Complete | 4 Substack post drafts |
-| `distribution-reddit-templates.md` | Complete | 5 subreddit-tailored posts |
-| `distribution-institutional-outreach-templates.md` | Complete | 3 email template categories |
+| `democratic-renewal-proposal.md` | Complete | 28 domains, Phase 3 comparative research integrated; Domains 27-29 cross-references updated Session 510 |
+| `democratic-renewal-executive-summary.md` | Complete | Print-ready 2-page summary; Domains 27-29 table rows updated Session 510 |
+| `DISTRIBUTION_GUIDE.md` | Complete | Platform strategy, audience segmentation, templates; domain count corrected to 28 Session 510 |
+| `distribution-substack-drafts.md` | Complete | 4 Substack post drafts; domain count corrected to 28 Session 510 |
+| `distribution-reddit-templates.md` | Complete | 5 subreddit-tailored posts; domain count corrected to 28 Session 510 |
+| `distribution-institutional-outreach-templates.md` | Complete | 3 email template categories; domain count corrected to 28 Session 510 |
 | `published/README.md` | Complete | Hub README for all distributable documents |
 
 ---
@@ -50,6 +50,8 @@
 ---
 
 ## Exploration Queue
+
+**Canonical exploration queue is now in `EXPLORATION_QUEUE.md`** (created Session 510). That file contains the three new Phase 2 research candidates and all lower-priority follow-on threads. Below is the historical queue for reference.
 
 Items listed in priority order. Do NOT start research until explicitly tasked.
 

@@ -2,6 +2,66 @@
 
 ---
 
+## April 27, 2026 (Session 510) — Phase 2 Integration Complete: Domains 27-29 + Distribution Package + Exploration Queue
+
+**Session type**: Integration, quality assurance, and queue replenishment
+**Files modified**: `democratic-renewal-proposal.md`, `democratic-renewal-executive-summary.md`, `DISTRIBUTION_GUIDE.md`, `distribution-substack-drafts.md`, `distribution-reddit-templates.md`, `distribution-institutional-outreach-templates.md`, `PROJECTS.md`, `WORKLOG.md`
+**Files created**: `EXPLORATION_QUEUE.md`
+
+### What Was Done
+
+**1. Proposal Part II — Domain reference updates**
+
+Verified that Domains 27, 28, and 29 were correctly integrated into the proposal in Session 509. All three have proper `*Full research documentation:*` cross-reference blocks pointing to standalone domain files. The following corrections were made:
+
+- **Domain 27** (`domain-27-higher-education-and-academic-freedom.md`): Updated stated word count from the Session 505 draft figure (6,769) to the accurate production count (~9,200 words reflecting the full expanded file including structural vulnerability section, fiscal scope section, Canada Tri-Agency reform model, FIRE 2024 McCarthyism data, state tenure attack wave, and First Circuit April 2026 brief status). Updated the reference description to surface these additions.
+
+- **Domain 28**: Corrected the filename reference. The proposal was pointing to `domain-28-war-powers-venezuela.md` (Session 506 draft, ~5,600 words). The production-ready file is `domain-28-war-powers-venezuela-military-unilateralism.md` (Session 509, ~6,100 words, with fiscal scope from Brown University and CSIS, implementation timeline, AUMF historical context). Updated the reference to point to the correct file and updated the description accordingly.
+
+- **Domain 29** (`domain-29-prosecutorial-weaponization-and-doj-capture.md`): Updated stated word count from the draft figure (6,124) to the accurate production count (~8,800 words). Updated the reference description to surface the charging-stage power gap analysis, international comparative systems section, three-phase implementation timeline, and fiscal scope section.
+
+**2. Executive Summary — Domains 27-29 table rows updated**
+
+Expanded all three domain rows in the twenty-eight-domain table to surface the most significant new findings:
+- Domain 27: Added Tri-Agency independent research funding model, $3B+ funding disruption with $3.3B GDP impact, McCarthyism comparison (self-censorship 4x peak), ERC application triple
+- Domain 28: Added $4.7B total cost, $2.8M/day unbudgeted (CSIS), full list of countries with active DEA indictments, VP Vance tiebreaker detail, Johnson 20-minute procedural manipulation
+- Domain 29: Added Thompson v. United States bank fraud defect, state bar interference rule (proposed April 25, 2026), suppression-through-process logic, Abrego Garcia documentary evidence finding
+
+**3. Distribution package — domain count corrections**
+
+Identified that all distribution templates still referenced "22-domain" (pre-expansion count). Corrected across all files:
+- `DISTRIBUTION_GUIDE.md`: Three instances corrected (proposal description, PDF tip, email template)
+- `distribution-substack-drafts.md`: One instance corrected
+- `distribution-reddit-templates.md`: Four instances corrected (r/law post description, section heading, evidence list, closing link)
+- `distribution-institutional-outreach-templates.md`: Two instances corrected (feedback request, faith community template)
+
+**4. PROJECTS.md updated**
+
+Updated overall status from "26-Domain Diagnostic Framework: COMPLETE" to "28-Domain Diagnostic Framework: COMPLETE." Updated all core document table rows to reflect Session 510 corrections. Added reference to `EXPLORATION_QUEUE.md` as the canonical queue location.
+
+**5. EXPLORATION_QUEUE.md created**
+
+New file at `projects/resistance-research/EXPLORATION_QUEUE.md`. Contains three Phase 2 research candidates with full scoping:
+
+1. **Trade Policy, Tariff Unilateralism, and Economic Sovereignty** — IEEPA Supreme Court ruling, 145% China tariffs, congressional reclamation mechanisms. Fits between Domains 20-22. Estimated 5,000-6,500 words.
+2. **Healthcare Access Collapse — OBBBA Medicaid Crisis** — $911B CBO cut, 11.8M coverage loss projection, work requirements effective January 2027, HHS guidance window closing June 2026. Updates Domain 11. Estimated 4,500-6,000 words. Time-sensitive.
+3. **State Legislative Autocratization** — 500+ preemption instances, state court capture (NC Supreme Court reversal), mid-decade redistricting, ALEC preemption tracker, anti-protest legislation. Fits adjacent to Domain 9. Estimated 5,000-6,500 words.
+
+Also includes lower-priority follow-on items and a "not yet in queue" section for gaps identified during readiness assessment.
+
+### Readiness Assessment — Phase 2 Integration Complete
+
+The proposal is ready to be considered "Phase 2 integration complete" with the following confirmed:
+- All 28 domains have body text in the proposal and (for Domains 23-29) cross-references to standalone domain files
+- All domain standalone files are production-ready and sourced
+- All distribution templates reference the correct domain count
+- Executive summary table reflects all 28 domains with accurate fiscal and finding summaries
+- Exploration queue replenished with three candidates for next research phase
+
+One file deferred: The old Session 506 draft `domains/domain-28-war-powers-venezuela.md` still exists alongside the production file `domains/domain-28-war-powers-venezuela-military-unilateralism.md`. The old file is no longer referenced by the proposal. Consider archiving or deleting to avoid future confusion — flagged for user decision.
+
+---
+
 ## April 27, 2026 (Session 507) — Tracker Maintenance Pass: SPLC Indictment + April 27-28 Litigation Updates
 
 **Session type**: Tracker maintenance — post-Domain 28/29 follow-up pass

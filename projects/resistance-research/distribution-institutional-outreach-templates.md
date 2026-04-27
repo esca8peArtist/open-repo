@@ -260,7 +260,7 @@ I would also welcome an opportunity to present these materials at a chapter meet
 
 **Two requests**:
 
-First, feedback on what is missing. The proposal was built from documentary evidence, movement research, and comparative policy analysis — but it was not built by grassroots organizers in the field. What is your organization dealing with right now that isn't reflected in these 22 domains? What would your members find missing if they read the executive summary?
+First, feedback on what is missing. The proposal was built from documentary evidence, movement research, and comparative policy analysis — but it was not built by grassroots organizers in the field. What is your organization dealing with right now that isn't reflected in these 28 domains? What would your members find missing if they read the executive summary?
 
 Second, if these materials seem useful, please share them with your chapter networks and peer organizations. All documents are CC 4.0 — share, adapt, translate, excerpt, modify freely with attribution ("Democratic Renewal Project, resistance-research.org, April 2026").
 
@@ -289,7 +289,7 @@ Thank you for the work your organization does.
 
 I'm reaching out because [faith community name]'s work on [specific social issue — e.g., "immigration ministry" / "affordable housing advocacy" / "anti-poverty work"] intersects with a research project I believe your congregation may find useful for its civic education and community engagement.
 
-I'm an independent researcher, not affiliated with any political party or organization. The project is a 22-domain proposal for democratic structural reform, grounded in comparative evidence from functioning democracies and the research record on what has worked historically. It is not a partisan document — it is a structural analysis.
+I'm an independent researcher, not affiliated with any political party or organization. The project is a 28-domain proposal for democratic structural reform, grounded in comparative evidence from functioning democracies and the research record on what has worked historically. It is not a partisan document — it is a structural analysis.
 
 For faith communities engaged in social ministry, the most relevant domains are probably:
 
