@@ -4,6 +4,67 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session: 2026-04-27 — Wholesale & Affiliate Partnership Strategy
+
+Built `projects/seedwarden/marketing/wholesale-and-affiliate-strategy.md` (~4,100 words), the B2B and affiliate channel strategy for Phase 2–3 growth beyond direct-to-consumer Etsy.
+
+**Five channels designed**:
+
+1. **Affiliate programs** — Three-tier commission structure (Standard 25%, Partner Creator 30%, Institutional Publisher 20% or flat annual fee). Full outreach list of 20+ named targets across YouTube creators (Melissa K. Norris, Homesteading Family, PREPSTEADERS, Homestead HEART, Dirtpatcheaven, The Seasonal Homestead), blogs (Simply Canning, Prairie Homestead), and newsletter publishers (Mother Earth News, Grit, Backwoods Home). Phase-gated technical upgrade path: UTM + Google Sheet → Pretty Links → Rewardful/Tapfiliate. Commission rationale grounded in existing CAC data from growth-metrics-framework.md (affiliate 25% = Etsy ads $4.80 CAC parity on $14 product).
+
+2. **Wholesale partnerships** — Three sub-models: per-unit add-on for retailer digital bundles ($1.50–$5.00/PDF by volume tier), annual site license for educational/institutional use ($250–$1,200/year), and physical kit inclusion licensing. Named targets: True Leaf Market, Botanical Interests, High Mowing Organic Seeds, Seed Savers Exchange, Southern Exposure, Fedco Seeds, Lehman's, Homesteaders Supply, Roots & Harvest, Valley Food Storage. Institutional targets: county cooperative extension services, FFA chapters, public library seed library programs, community college continuing education. Wholesale outreach email template included.
+
+3. **Corporate training and bulk licensing** — Seat-license pricing model ($2.50–$6.00/seat by volume, $60–$2,497 total per deal). Two sub-channels: employee wellness programs (tech companies with LSA programs, hospital systems, remote-first companies) and disaster preparedness training (CERT program coordinators, corporate ERG trainers, state emergency management agencies). Corporate branded cover add-on ($150 flat) and virtual workshop option ($300/session) documented. Note: 3–6 month sales cycle; Phase 3 start for Phase 4 revenue.
+
+4. **White-label partnerships** — Two sub-models: Etsy kit-bundler inclusion ($2.00/unit, co-branded) and content platform annual license ($1,500–$3,000/year for up to 1,000 members). Named target types for Etsy bundlers: heirloom seed packet sellers (search by review count), homesteading subscription boxes, canning kit sellers, foraging kit sellers. Platform targets: homesteading Patreon communities, survival content platforms (The Prepared, Ask a Prepper), permaculture networks. White-label Etsy bundler email template included.
+
+5. **Seasonal partnership windows** — Three windows aligned to existing demand peaks from annual-product-plan.md. Spring (Jan–Apr): seed companies as primary partners; "Spring Partner Pack" (Seed Saving Manual + Anti-Catalog) licensed at $4.00/unit. Preservation season (Jul–Sep): canning/fermentation suppliers; "Preservation Partner Pack" licensed at $8.00/unit. Holiday (Oct–Dec): subscription boxes and gift retailers; Homesteader's Complete Bundle licensed at $15/unit. Month-by-month calendar for outreach timing for each window.
+
+**Master partnership pipeline template** included: 10-column spreadsheet structure covering all five channels, status workflow (Prospect → Active → Closed), and per-partner tracking columns for revenue and renewal dates.
+
+**Commission structure summary table** consolidates all rates in one reference.
+
+**Phase sequencing recommendations**: Phase 2 = affiliate outreach (10 creators) + spring 2027 seed company co-promotion outreach + first 5 Etsy white-label bundlers. Phase 3 = upgrade tracking infrastructure + institutional extension office outreach + corporate wellness LinkedIn outreach + preservation season 2026 partnerships. Phase 4 = corporate deals close; affiliate revenue $300–$800/month.
+
+**Phase 3 revenue targets**: affiliate $300–$800/month; wholesale/licensing $3K–$8K/year; corporate $500–$2,500/year; white-label $1K–$3.5K/year; total partnership revenue 20–35% of total.
+
+**Design decisions**:
+- Commission floor (25%) set at parity with Etsy ads CAC, not as an arbitrary discount — any deal at or above that floor is margin-neutral vs. paid acquisition
+- Baker Creek excluded from partner list — confirmed they do not run affiliate or influencer programs (search-verified); approach via media relations if pursuing editorial coverage, not commercial partnership
+- Corporate channel treated as Phase 3+ start, not Phase 2 priority — 3–6 month sales cycles make it a Phase 4 revenue contributor even if outreach begins in Phase 3
+- White-label full rebrand (Seedwarden branding removed) has a $5,000/year minimum floor; co-branded is the default; this protects brand equity while not foreclosing high-value partnership opportunities
+
+---
+
+## Session: 2026-04-27 — Growth Metrics & Cohort Analysis Framework
+
+Built the full growth metrics and cohort analysis infrastructure for Phase 1+ scaling. Four deliverables created, all cross-referenced.
+
+**`projects/seedwarden/marketing/growth-metrics-framework.md`** (~3,700 words)
+
+Seven sections:
+1. Customer cohort segmentation — acquisition channel (Etsy organic, email, social, influencer), first-product price tier (entry/mid/premium/bundle), email engagement health tiers, behavioral tag segments (Seed Saver / City Grower / Preservationist), and seasonal acquisition windows (spring planning / preservation / holiday gift).
+2. LTV, CAC, and payback period calculations — Etsy fee baseline (89.6% net margin), LTV by price tier ($14.80–$43 over 24 months), CAC by channel (Etsy organic ~$0, Etsy ads ~$4.80, Pinterest ~$8.00, influencer ~$18), payback period analysis with channel-specific break-even conditions.
+3. Product-level cohort analysis — repeat-purchase driver products (Food Sovereignty Guide, Companion Planting Chart, Zone Calendar), one-time buyer products (Hunting Manual, Native Plants, Survival Garden Plans), bundle LTV ceiling problem and cross-sell paths, listing conversion rate benchmarks (1–3% target, below 0.5% = intervention needed, above 3% = ad candidate).
+4. Email engagement cohort analysis — open rate health tiers, click-through cohorts by content type, unsubscribe timing patterns (welcome sequence vs. newsletter vs. post-broadcast), segment performance tracking for behavioral tag cohorts.
+5. Seasonal cohort tracking — three-peak framework (spring, preservation, holiday), 12-month retention targets per cohort, year-over-year comparison methodology (starts May 2027), seasonal product demand index.
+6. Conversion funnel metrics — six-stage funnel from listing impression through VIP status, target rate per stage, diagnostic action when below target.
+7. Metrics governance — Etsy vs. Kit data availability, metric optimization hierarchy (listing conversion rate first, list growth second, second-purchase rate third, CAC fourth), 6-month and 12-month KPI targets.
+
+**`projects/seedwarden/analytics/cohort-analysis-template.sql`**
+
+Eight sections of SQL queries: raw data staging views (v_orders_enriched with Etsy fee calculations, seasonal cohort assignment, price tier derivation), cohort retention table (monthly retention %), LTV curves by cohort, seasonal cohort analysis (revenue by season/month, 90-day second-purchase rates), product-level cohort analysis (repeat-purchase trigger rate, cross-sell flow, listing conversion rate with health flags), email engagement cohort queries (subscriber health distribution, behavioral tag performance, unsubscribe timing, email-to-purchase funnel), CAC and ROAS calculations by channel, and a monthly executive summary query. Full table schemas included in appendix for SQLite/DuckDB setup.
+
+**`projects/seedwarden/analytics/dashboard-template.ipynb`**
+
+Eight-cell Jupyter notebook: setup/configuration cell (pandas, matplotlib, seaborn, duckdb; brand palette), data loading with synthetic fallback (250-order sample with realistic seasonal distribution for layout validation before real data is available), revenue trend charts (gross vs. net by month, orders/buyers, AOV trend, bundle revenue %), cohort retention heatmap (seaborn annotated heatmap with cohort size labels), LTV curves by first-product price tier (with 24-month target dashed lines), seasonal cohort performance (stacked revenue by season + second-purchase rate comparison), product-level conversion and repeat-trigger rate charts, email health visualization (subscriber health donut, list growth bar/line, tag distribution), and monthly scorecard with target-tracking output.
+
+**`projects/seedwarden/analytics/monthly-metrics-checklist.md`**
+
+Operator runbook for 90-minute monthly analysis: pre-work exports (Etsy payment CSV, listing stats, Kit subscriber CSV), six sections (revenue analysis, cohort and repeat purchase analysis, email list health, paid channel analysis, listing health audit, data log), Monthly Data Log table template for ongoing appending, actions-arising format with priority tiers, and seasonal action trigger calendar (month-by-month specific actions for the full year).
+
+---
+
 ## Session: 2026-04-27 — Annual Product Calendar & Email Growth Engine
 
 Built the full-year growth infrastructure for Seedwarden: four documents covering seasonal strategy, a 12-month product calendar, email automation architecture, and a detailed May–July 2026 social media calendar.
