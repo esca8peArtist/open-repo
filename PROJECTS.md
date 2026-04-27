@@ -68,23 +68,29 @@
 **Status**: Active — Phase 1-5 COMPLETE, **Diagnostic Framework Complete at 26 Domains (Session 502)** — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 502 (2026-04-27 morning): Domain 19f War Powers Reform COMPLETE**. 
-- **Domain 19f — COMPLETE: War Powers Reform and Constitutional Crisis Response** (4,400 words, fully sourced):
-  - **May 1 deadline LIVE**: Operation Epic Fury launched Feb 28, 2026 without authorization. Trump submitted War Powers notification March 2. 60-day clock expires May 1. Ceasefire April 8 but collapsing (Iran seized ship April 24, Trump canceled peace talks April 25). Congress blocked four war powers resolutions (most recent 52-47 April 15).
-  - **Constitutional inversion**: Founders designed Congress→declare, President→conduct. Now reversed: President→initiate, Congress→forced to stop. Youngstown Steel Category 2/Twilight applies; four Senate votes near-denying push toward Category 3. Courts never enforced War Powers Act against executive refusal.
-  - **2001 AUMF analysis**: Still on books, used in 19 countries, no enemy/scope/duration. Dec 2025 NDAA repealed 1991/2002 Iraq AUMFs (first repeal since 1971). Jayapal-Massie repeal characterized as longshot.
-  - **Fiscal connection**: Congress ~$50B estimate through Day 40; Harvard ~$1T lifetime. No supplemental appropriations request (admin fears it legalizes war under Kosovo precedent).
-  - **Power of the purse**: Most enforceable tool. Congress cut unauthorized ops 1973 (Cambodia) and 1994 (Somalia) via appropriations riders. Just Security recommends explicit statutory language denying authorization.
-  - **International precedent**: Germany's Parlamentsvorbehalt (2005 law) requires affirmative Bundestag authorization before armed activities abroad. UK/France weaker but meaningful. No peer democracy relies as heavily on executive unilateralism as post-1945 US.
-  - **File**: `domains/domain-19f-war-powers-reform.md` (4,400 words, 9 cited sources)
-- **Domain 26 — INFRASTRUCTURE COMPLETE (Session 500)**:
-  - Outline: `domain-26-research-outline.md` (2,800 words) — Full structure with 5 subsections, fiscal architecture, international benchmarks
-  - Checklist: `domain-26-research-checklist.md` (1,200 words) — Timeline, source categories, key unknowns
-  - When user approves: Ready for immediate full development with identified research priorities
+**Current focus**: **Session 503 (2026-04-27 evening): Domain 26 Research COMPLETE**. 
+- **Domain 26 — COMPLETE: Government Accountability and Institutional Resilience** (4,700 words, fully sourced):
+  - **26-DOMAIN DIAGNOSTIC FRAMEWORK NOW COMPLETE** (all domains + implementation architecture fully researched)
+  - **Central finding**: Accountability failures in 2026 are coordinated across every layer of the oversight system simultaneously
+  - **Priority research areas executed**:
+    - Skrmetti (June 2025): SCOTUS narrowed equal protection scrutiny, reducing judicial backstop for healthcare accountability
+    - EMTALA rescission (June 3, 2025): CMS eliminated Biden guidance, demonstrating law-functional-elimination without repeal
+    - CDC maternal mortality: 80 staff fired, PRAMS halted, no guidance on abortion-related deaths; Texas stopped reporting to avoid accountability
+    - Ballot initiatives: 295 bills in 43 states targeting initiative process; coordinated post-approval nullification via legislative resistance and budget cuts
+    - My Health My Data Act: Washington state privacy law — identified as positive institutional resilience template (dual-track enforcement, extraterritorial scope, designed to function without executive goodwill)
+  - **File**: `domains/domain-26-government-accountability-and-institutional-resilience.md` (4,700 words, 12 cited sources)
+  - **International precedents**: Germany's Federal Audit Office, New Zealand parliamentary commissioner system, France constitutionalization of abortion (model comparison)
+
+**✅ COMPLETED (Session 503)**:
+- ✅ **Domain 26 Research** — Complete research document with coordinated accountability failure analysis and reform pathways
+  - `domains/domain-26-government-accountability-and-institutional-resilience.md` (4,700 words) — Full domain structure, structural vulnerabilities, institutional resilience mechanisms, reform pathways with international precedent, implementation timeline
+  - 12 sourced citations covering all five priority research areas
+  - Completes the 26-domain diagnostic framework. With Domain 19f (War Powers): removes both distribution blocks identified in post-Domain-26 audit
 
 **Next**: 
-- **Domain 26 Decision**: Approve deepening for full Domain 26 execution? (3-4 hours agent work to produce complete research document using identified priority areas: Skrmetti outcome, EMTALA rescission, CDC maternal mortality, ballot initiatives, My Health My Data Act status)
-- **Distribution readiness**: Domain 19f closes Priority 1 gap from post-Domain-26 audit. After Domain 26 execution: Substack/Reddit templates ready for production. Institutional distribution (universities, policy orgs, legal clinics) should wait for full 26-domain completion.
+- **DISTRIBUTION EXECUTION** (user action): Substack/Reddit templates ready for production. Suggested timeline: 2-3 posts/week starting this week (stagger across platforms to manage inbox)
+- **Institutional distribution**: Ready to proceed (universities, policy orgs, legal clinics) — all research now at sufficient depth for serious institutional engagement
+- **Phase 2 (optional)**: Identify additional US crisis domains beyond current 26-domain framework, or deepen existing domains based on distribution feedback
 
 **✅ COMPLETED (Session 502)**:
 - ✅ **Domain 19f War Powers Reform** — Complete research document with current crisis analysis

@@ -4,6 +4,27 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 (Session 503) — resistance-research — Domain 26 Research Execution COMPLETE
+
+**File**: `projects/resistance-research/domains/domain-26-government-accountability-and-institutional-resilience.md`
+
+**Word count**: 4,700 | **Citations**: 12 sources | **Commit**: `b99228f`
+
+**Summary**: Full Domain 26 research document complete, covering government accountability and institutional resilience in the 2026 crisis context. Structured as five sections: (1) Current Crisis in Accountability Systems (what's failing now), (2) Structural Vulnerabilities (why the system breaks), (3) Institutional Resilience Mechanisms (what works), (4) Reform Pathways (specific solutions with international precedent), (5) Timeline and Conditions for Implementation.
+
+**Key findings across priority research areas**:
+- **Skrmetti (June 2025)**: 6-3 SCOTUS ruling narrowing equal protection scrutiny for healthcare regulation, reducing judicial backstop capacity across accountability challenges
+- **EMTALA rescission (June 3, 2025)**: CMS rescinded Biden-era guidance, demonstrating how laws can be functionally eliminated without repeal through administrative action
+- **CDC maternal mortality accountability collapse**: Two of three DRH branches eliminated, PRAMS data halted, 80 staff fired. ProPublica found no guidance on abortion-ban-related deaths; Texas stopped reporting to CDC entirely to avoid accountability
+- **Ballot initiatives under coordinated siege**: 295 bills in 43 states targeting initiative process in 2025; post-approval nullification via legislative resistance, budget restrictions, implementation delays
+- **My Health My Data Act** (positive model): Washington state's privacy law with extraterritorial scope, dual-track enforcement (AG + private right of action), mandatory 2030 review. Architecture designed to function without federal executive goodwill — identified as template for reform
+
+**Central analytical finding**: Accountability failures in 2026 are coordinated across every layer of the oversight system simultaneously. Reform pathway focuses on rebuilding mechanisms that function without voluntary executive cooperation (concrete international models: Germany's Federal Audit Office, New Zealand's parliamentary commissioner system).
+
+**Integration with democratic renewal proposal**: Completes the diagnostic framework (26 domains now full). With Domain 19f (War Powers Reform, completed Session 502), removes both blocks identified in post-Domain-26 completeness audit. Distribution readiness: Substack/Reddit templates ready for production.
+
+---
+
 ## 2026-04-27 — open-repo — Phase 5 Kiwix Architecture Research
 
 **File**: `projects/open-repo/phase-5-kiwix-architecture.md`
