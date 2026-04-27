@@ -4,6 +4,26 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 — mfg-farm — ModRun Phase 2 Supplier Research
+
+**Status**: COMPLETE — Supplier research for scaled ModRun production (7,000–10,000 units/month target).
+
+**Deliverables**:
+- `projects/mfg-farm/phase-2-supplier-research.md` — 2,700-word supplier research document with filament pricing tables, packaging cost analysis, logistics strategy, and negotiation playbook
+- `projects/mfg-farm/supplier-scorecard.csv` — 12-row CSV scorecard comparing all vendors across price, MOQ, lead time, reliability
+
+**Key findings**:
+1. **Primary filament**: eSUN PLA+ 10kg Amazon bundles at $11–13/kg — best AMS reliability for Bambu P1S/X1C, Prime shipping, no wholesale account required
+2. **Pallet tier**: Anycubic direct store offers the only publicly-listed 50kg bulk deal at **$10.49/kg** — no MOQ friction, 25+ colors; validate with test order before committing
+3. **Quality tier (Phase 3)**: Polymaker wholesale at $14.99/kg with $1,000 minimum — best moisture packaging, Net 30 terms available, activate at 50kg/month sustained
+4. **Shipping**: Pirate Ship for all USPS immediately — commercial Ground Advantage rates ~$3.50–5.09 for sub-4oz packages (zone-dependent), 15–20% below retail; April 2026 USPS 8% temp increase already baked in through Jan 17 2027
+5. **Packaging**: Shop4Mailers poly mailers at $0.05/unit (1000-pack) for launch; Packlane custom boxes at $0.76–1.10/unit at 500-unit run for premium bundle SKUs (activate Month 3–4)
+6. **3PL threshold**: Do not outsource fulfillment before 7,000 units/month; Simpl Fulfillment or ShipMonk at that scale; Amazon FBA for top 2–3 Amazon SKUs once proven
+
+**COGS impact**: Bulk filament ($10.49–13/kg vs. $15 retail) + Pirate Ship ($4.50 avg vs. $5.50 retail postage) = **$0.77–1.40 saved per unit-order**. At 7,000 units/month: $5,400–9,800/month in retained margin.
+
+---
+
 ## 2026-04-27 Session 543 (Market Open Readiness + Phase 1 Execution Prep)
 
 **Status**: ✅ **TWO PARALLEL EXECUTION-PREP TASKS COMPLETE** — Stockbot Day-1 infrastructure ready for post-restart deployment; Resistance-research Phase 1 execution kit ready for immediate deployment post-decision.
