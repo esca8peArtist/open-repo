@@ -147,27 +147,33 @@
 
 ## Items Needing Your Input
 
-1. **stockbot — Engine Restart + Strategy Pivot (CRITICAL PRIORITY)**:
-   - **Engine restart**: Before 2026-04-28 09:30 ET (14:30 UTC market open). Use: `.venv/bin/python scripts/run_live_trading.py`
-   - **Strategy pivot decision**: Gate 1 is infeasible with current h=10 single-ticker design (0.17 vs. 30 trades/month required). Choose:
-     - **Option A (Recommended)**: Multi-ticker expansion to 10-15 additional tickers (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, BRK-B, UNH). Would meet Gate 1 (~30 aggregate trades/month). Begin training now.
-     - **Option B**: Threshold reduction (h=5 shorter horizon). Less likely to help — 4 h=5 variants produced 0 trades.
-     - **Option C**: Intraday MTF (multi-timeframe). Higher complexity, documented in feasibility checkpoint.
-   - **Analysis**: `projects/stockbot/may-12-feasibility-checkpoint.md` (full assessment)
+### CRITICAL PRIORITY
 
-2. **resistance-research distribution decision (HIGH PRIORITY)**:
-   - **Path A**: Distribute 35-domain framework immediately (Domains 1-22, 19f + Domains 23, 27-29, 31, 33-37)
-   - **Path A+Domain37 Hybrid (RECOMMENDED)**: Distribute 34-domain base (without Domain 37) to general audiences (law schools, think tanks, labor) immediately; sequence Domain 37 separately to election-protection organizations within 2 weeks. Captures immediate traction + election integrity urgency.
-   - **Path B**: Domain Updates (content maintenance on remaining 5-6 domains per April 2026 developments) before distribution (1-2 weeks additional research)
-   - **Note**: Session 519 completed 4 priority updates (Domains 19f, 28, 35, 1). Remaining updates (21, 25, 33, 19, 6) are either lower-priority or dependent on May 2026 outcomes.
+1. **stockbot — Engine Restart + Strategy Decision**:
+   - **Engine restart (DEADLINE: 2026-04-28 09:30 ET)**: Command: `.venv/bin/python scripts/run_live_trading.py`
+   - **Option A (RECOMMENDED)**: Paper trade with 41-ticker config (currently wired, ready to go). Projects ~9.5 trades/month. See `OPTION_A_READINESS.md` for 180-day backtest results and ticker breakdown.
+   - **Option B**: Threshold reduction (reduce confidence multiplier from 0.5 to 0.2, requires retrain + revalidation)
+   - **Option C**: Further scaling (train 40+ more tickers toward Gate 1's 30/month target; training infrastructure ready)
+   - **Analysis**: `projects/stockbot/may-12-feasibility-checkpoint.md`
 
-3. **mfg-farm test print (MEDIUM PRIORITY)**:
-   - CadQuery designs ready. User needs to: (1) run `pip install cadquery`, (2) run STL generation scripts, (3) test print, (4) photograph, (5) list on Etsy
-   - All listing copy, pricing, tags ready in `etsy-listing-modrun.md`
+### HIGH PRIORITY
 
-4. **seedwarden Phase 1 launch (MEDIUM PRIORITY)**:
+2. **resistance-research — Distribution Path Decision**:
+   - **Infrastructure ready**: All prep complete (contacts verified, posting schedule documented, email templates ready)
+   - **Path A**: Launch Phase A immediately (Substack, Reddit, law schools, think tanks, labor unions, civil rights orgs, foundations). Week-by-week calendar ready in `PHASE_A_POSTING_SCHEDULE.md`
+   - **Path A+Domain37 Hybrid (RECOMMENDED)**: Phase A launch immediately (Week 1-8), then Domain 37 sequencing to election-protection organizations starting Week 9. Advocacy windows align: May 30 (consent decrees), June 30 (emergency EO). Full plan in `DOMAIN_37_SEQUENCING_PLAN.md`
+   - **Path B**: Continue Domain Updates (remaining 5-6 domains per April 2026 developments) before distribution (1-2 weeks)
+   - **New files** (Session 522): `DISTRIBUTION_OUTREACH_CONTACTS.md`, `PHASE_A_POSTING_SCHEDULE.md`, `EMAIL_PERSONALIZATION_GUIDE.md`, `DOMAIN_37_SEQUENCING_PLAN.md`
+
+### MEDIUM PRIORITY
+
+3. **mfg-farm test print**:
+   - CadQuery designs ready. User needs to: (1) `pip install cadquery`, (2) run STL generation, (3) test print, (4) photograph, (5) list on Etsy
+   - All copy, pricing, tags ready in `etsy-listing-modrun.md`
+
+4. **seedwarden Phase 1 launch**:
    - Awaiting: 3 tag corrections + Etsy account verification
-   - All 21 products ready to list immediately once user completes those two items
+   - All 21 products ready to list once complete
 
 ---
 
