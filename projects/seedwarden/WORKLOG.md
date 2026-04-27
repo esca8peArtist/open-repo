@@ -4,6 +4,82 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session: 2026-04-27 — Annual Product Calendar & Email Growth Engine
+
+Built the full-year growth infrastructure for Seedwarden: four documents covering seasonal strategy, a 12-month product calendar, email automation architecture, and a detailed May–July 2026 social media calendar.
+
+### Files created
+
+**`projects/seedwarden/marketing/annual-product-plan.md`** (~3,400 words)
+
+Six-section strategic roadmap:
+
+1. **Seasonal demand patterns** — Two primary peaks (spring garden Jan–Apr, holiday gift Nov–Dec), one secondary peak (preservation Jul–Sep), plus back-to-school and hunting-season patterns. Month-by-month demand map with top products per month across all 21.
+
+2. **Email marketing architecture** — Six-tier funnel: welcome sequence, nurture newsletter, behavioral segmentation (Seed Saver / City Grower / Preservationist), post-purchase sequence, cart-browse re-engagement, VIP repeat-buyer track. Success metric table with 6-month and 12-month targets.
+
+3. **Seasonal product and bundle strategy** — 21 products assigned to seasonal demand profiles (spring peak, preservation peak, fall/winter gift peak, year-round). Five bundle opportunities mapped to seasons with pricing and positioning. Limited-edition title/tag update schedule for Zone Calendar, Seed Starting Kit, and Survival Garden Plans.
+
+4. **Holiday gift campaign** — October 15 through January cadence: gift listing updates, Pinterest gift guide board, Black Friday/Cyber Monday structure (25% off sale, CYBER2026 bundle code), December 22 last-minute gift email, post-holiday planning pivot.
+
+5. **Social media monthly theme calendar** — 12-month content theme rotation with primary theme, content topics, featured products, and promotional campaigns per month. Six content pillars with percentage targets (Education 35%, Product Feature 20%, Values 15%, Behind-the-Scenes 15%, Community 10%, Relatable 5%).
+
+6. **Etsy seller case studies** — Five case studies: Jill Winger / Prairie Homestead (long-game blueprint, email-first monetization), Pretty Arrow (optimization blueprint, keyword repetition, 14-month $168K), @barefeetandmimosas (400K TikTok, preservation niche, $1,500–$5,000/month), seed saving category benchmarks (top sellers 200–800+ reviews, regional specificity advantage), native plants/foraging niche premium (regional guides command 30–50% price premium, field guide format requirements).
+
+---
+
+**`projects/seedwarden/marketing/product-calendar-2026-2027.json`**
+
+12-month JSON calendar (May 2026 through April 2027) with structured fields per month:
+- `themes` — 4 content themes for the month
+- `content_topics` — 5 specific post/article topics
+- `product_focus` — 3–4 individual products with seasonal rationale
+- `bundles_to_feature` — 1–2 bundle recommendations
+- `promotional_campaigns` — specific actions (listing updates, ad changes, outreach)
+- `email_campaigns` — weekly breakdown of newsletter and segment sends
+- `social_cadence` — per-platform posting frequency
+- `etsy_actions` — listing, tag, and ad changes
+- `kpis` — monthly targets for views, sales, email subscribers, Pinterest views
+
+Annual summary block includes revenue trajectory ($8K–$30K gross year 1), email list trajectory (50 in May 2026 → 1,800–2,500 by April 2027), top revenue months ranked, and seasonal product leaders by category.
+
+---
+
+**`projects/seedwarden/marketing/email-automation-blueprint.md`** (~2,200 words)
+
+Eight-part implementation guide:
+
+1. Lead magnet recommendation — Zone Quick-Start Card (zone-personalized single-page printable), with alternative (existing 5-variety guide from email-and-launch-plan.md), delivery mechanism, and promotion channels including Etsy PDF end-page.
+2. Five automations architecture overview — Welcome, Post-Purchase, Newsletter, Win-Back, Seasonal Broadcasts — with trigger conditions and goals.
+3. Welcome sequence Kit setup — form configuration, email schedule with conditional send rules, behavioral tag application in Emails 3–4, SEEDWARDEN15 coupon implementation.
+4. Post-Purchase sequence — Trigger options (manual vs. Zapier at $19.99/month), three-email structure with product-specific cross-sell variants per cluster, review request language and Etsy direct link.
+5. Weekly newsletter — Thursday cadence, 500–800 word format, subject line formulas, seasonal product rotation rule.
+6. Win-back campaign — Three emails over 90 days, "Keep me on the list" click trigger, automatic list pruning rationale.
+7. Seasonal broadcast campaigns — Five planned campaigns per year with timing, target list, and CTA.
+8. Success metrics table — 7 metrics with healthy ranges and action triggers. Quarterly review protocol.
+
+---
+
+**`projects/seedwarden/marketing/social-media-calendar-may-july-2026.md`** (~3,100 words)
+
+Detailed week-by-week social calendar for May, June, and July 2026:
+
+- **May** (4 weeks): Launch week (uses Day 1–7 from existing social-media-calendar.md), then community/seed swaps, native plants/foraging, container gardening. 5 posts/week with full hooks, format, content direction, product tie-in, hashtag stacks.
+- **June** (4 weeks): Mid-season troubleshooting, preservation season preview, hot sauce season, seed saving setup.
+- **July** (4 weeks): Preservation season launch, fermentation deep dive, dehydrating and long-term storage, homesteader bundle push.
+- Pinterest cadence — batch build plan: 63 pins in May (3 variants per product), Board 8 "Food Preservation" created in June, promoted pins ($25–$50) in July on Harvest Preservation and Preservation Bundle.
+- 10 evergreen pin topics with copy and Etsy link targets.
+- Hashtag reference table by 8 content categories.
+
+### Design decisions
+
+- Zone Quick-Start Card recommended over existing 5-variety lead magnet as the Phase 2 lead magnet upgrade — immediate personal relevance (zone-specific) drives higher completion and perceived value. The existing guide is the interim deployment option (ready to use today without additional work).
+- Product calendar delivered as JSON rather than Markdown — more parseable for future automation, and the structured fields make it easier to extract per-field data (e.g., pull all November `etsy_actions` as a checklist).
+- Case studies drawn from real creator data documented in phase-3-social-media-growth-strategy.md, supplemented with web research on Etsy seller revenue benchmarks and seasonal patterns. No estimated data presented as confirmed without caveat.
+- Social calendar for May Week 1 explicitly defers to the existing 30-day calendar (marketing/social-media-calendar.md Day 1–7) rather than duplicating content — avoids conflicting versions.
+
+---
+
 ## Session: 2026-04-27 — Phase 3 Operations Playbook
 
 Built `projects/seedwarden/marketing/phase-3-operations-playbook.md` (~3,600 words), the execution-level Phase 3 infrastructure document. This fills the gap between the existing strategy/calendar/spec documents and daily operational reality.

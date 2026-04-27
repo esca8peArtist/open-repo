@@ -1,0 +1,685 @@
+{
+  "meta": {
+    "title": "Seedwarden 12-Month Product Calendar 2026–2027",
+    "created": "2026-04-27",
+    "status": "ready-to-execute",
+    "note": "All months reference 2026 unless noted as 2027. Promotional campaigns assume Phase 1 live by May 2026."
+  },
+  "months": [
+    {
+      "month": "May 2026",
+      "season": "Late Spring — Peak Planting",
+      "themes": [
+        "Seed community and sharing",
+        "What to plant right now",
+        "Native and wild edibles identification",
+        "Container setup for summer"
+      ],
+      "content_topics": [
+        "What to direct-sow in May by zone",
+        "How seed swaps work and why they matter",
+        "Native plants to forage in spring",
+        "Companion planting basics for small gardens",
+        "Seed Warden origin story — Phase 1 launch announcement"
+      ],
+      "product_focus": [
+        "Seed Swap Hosting Kit ($10) — community event season",
+        "Native Plants Regional Guide ($18) — spring foraging",
+        "Food Sovereignty Starter Guide ($8) — gateway product push",
+        "Container Growing Blueprint Pack ($12) — final container setup"
+      ],
+      "bundles_to_feature": [
+        "Food Sovereignty Bundle ($30) — debut feature",
+        "Regional Self-Sufficiency Bundle ($28) — native plants + survival"
+      ],
+      "promotional_campaigns": [
+        "Phase 1 launch: shop goes live, first Etsy listings active",
+        "Lead magnet launch: Kit landing page live, welcome sequence active",
+        "Reddit: share lead magnet organically in r/homesteading, r/seedsaving, r/urbangardening"
+      ],
+      "email_campaigns": [
+        "Week 1: Welcome sequence activation (5-email sequence running for all new subscribers)",
+        "Week 3: First standalone newsletter — 'What to plant in May by zone' (educational, no sell)",
+        "Week 4: Soft product spotlight — Seed Swap Kit and Native Plants Guide"
+      ],
+      "social_cadence": {
+        "tiktok": "5x/week — launch-focused content, educational hooks",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "3 pins/day — all 21 products pinned, 7 boards live"
+      },
+      "etsy_actions": [
+        "All Phase 1 listings live",
+        "3 bundle listings created",
+        "Review request in digital product delivery PDF activated",
+        "Etsy internal ads: $3/day on Food Sovereignty Starter Guide and Seed Saving Manual"
+      ],
+      "kpis": {
+        "etsy_views_target": "500–1,500",
+        "etsy_sales_target": "5–20",
+        "email_list_target": "50–150 subscribers",
+        "pinterest_monthly_views_target": "2,000–5,000"
+      }
+    },
+    {
+      "month": "June 2026",
+      "season": "Early Summer — Mid-Season Gardening",
+      "themes": [
+        "Mid-season troubleshooting",
+        "Succession planting",
+        "Container watering and maintenance",
+        "Apartment grower check-in"
+      ],
+      "content_topics": [
+        "Why your seedlings are leggy (and the fix)",
+        "Succession planting for continuous harvest",
+        "Container watering rules — the finger test",
+        "How to trellis in a small space",
+        "What to start indoors in June for fall harvest"
+      ],
+      "product_focus": [
+        "Container Growing Blueprint Pack ($12) — troubleshooting audience",
+        "Apartment Growing Complete Guide ($13) — mid-season depth",
+        "12-Month Urban Growing Planner ($7) — succession planting tool",
+        "Grow Your Own Hot Sauce ($15) — pepper season begins"
+      ],
+      "bundles_to_feature": [
+        "Apartment Grower Bundle ($32) — full summer apartment guide",
+        "Food Sovereignty Bundle ($30) — seed saving season approaching"
+      ],
+      "promotional_campaigns": [
+        "Phase 2 lifestyle photography: upload new images to Etsy listings (starts with Tier 1 products)",
+        "First influencer outreach batch: 5 creators in apartment/container gardening niche contacted"
+      ],
+      "email_campaigns": [
+        "Week 1: Newsletter — 'Mid-season troubleshooting: what I'm seeing in my garden right now'",
+        "Week 2: Segment-specific send — City Grower segment gets Container Blueprint feature",
+        "Week 3: Newsletter — 'Succession planting: how to keep harvesting all summer'",
+        "Week 4: Post-purchase sequence running for May buyers (Day 7 upsell email active)"
+      ],
+      "social_cadence": {
+        "tiktok": "4x/week",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "2 pins/day — begin building Preservation board for July"
+      },
+      "etsy_actions": [
+        "Phase 2 lifestyle images uploaded to Tier 1 products (Survival Garden, Hunting Manual, Livestock Manual)",
+        "Review from May buyers should be arriving — respond publicly to every review",
+        "Etsy ads: add Container Blueprint Pack to ad rotation"
+      ],
+      "kpis": {
+        "etsy_views_target": "1,000–3,000",
+        "etsy_sales_target": "15–40",
+        "email_list_target": "150–300 subscribers",
+        "pinterest_monthly_views_target": "5,000–15,000"
+      }
+    },
+    {
+      "month": "July 2026",
+      "season": "Peak Summer — Preservation Season Opens",
+      "themes": [
+        "Harvest preservation — don't let it go to waste",
+        "Fermentation fundamentals",
+        "Hot sauce from garden to bottle",
+        "Wild food foraging in summer"
+      ],
+      "content_topics": [
+        "How lacto-fermentation works (and why it's not scary)",
+        "Water bath vs. pressure canning — which do you need?",
+        "Making hot sauce from scratch: seed to bottle",
+        "What to forage in summer — native edibles by region",
+        "Fermenting hot peppers — the easiest preservation method"
+      ],
+      "product_focus": [
+        "Harvest Preservation Field Manual ($16) — primary July feature",
+        "Fermented & Preserved Harvest Handbook ($13) — fermentation season",
+        "Grow Your Own Hot Sauce ($15) — pepper harvest",
+        "Native Plants Regional Guide ($18) — summer foraging"
+      ],
+      "bundles_to_feature": [
+        "Preservation Bundle ($38) — anchor feature for preservation season",
+        "Regional Self-Sufficiency Bundle ($28) — foraging + garden plans"
+      ],
+      "promotional_campaigns": [
+        "Preservation season content push: 4-week themed content series across all platforms",
+        "Pinterest Preservation board fully built: 30+ pins linking to preservation product listings",
+        "Second influencer outreach batch: 10 creators in food preservation/canning niche contacted"
+      ],
+      "email_campaigns": [
+        "Week 1: Newsletter — 'Preservation season is here — here's where to start'",
+        "Week 2: Preservationist segment send — Fermented Harvest spotlight with educational angle",
+        "Week 3: Newsletter — 'Hot sauce from the garden: the full process'",
+        "Week 4: Preservation Bundle feature email with testimonial (if available from May/June buyers)"
+      ],
+      "social_cadence": {
+        "tiktok": "4x/week — preservation demos perform best, film them this month",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "3 pins/day — Preservation board gets heavy content"
+      },
+      "etsy_actions": [
+        "Add Preservation Bundle to Etsy ads rotation at $5/day",
+        "Update Harvest Preservation listing tags to include 'canning season', 'harvest guide July'",
+        "Begin tracking which preservation products are getting most views (Phase 1 data comparison)"
+      ],
+      "kpis": {
+        "etsy_views_target": "1,500–4,000",
+        "etsy_sales_target": "25–60",
+        "email_list_target": "300–500 subscribers",
+        "pinterest_monthly_views_target": "10,000–25,000"
+      }
+    },
+    {
+      "month": "August 2026",
+      "season": "Late Summer — Peak Preservation + Back-to-School",
+      "themes": [
+        "Peak canning and preservation",
+        "Meat and fish preservation for the hunting season ahead",
+        "Building homesteading skills (back-to-school mindset)",
+        "Seed saving before summer ends"
+      ],
+      "content_topics": [
+        "Pressure canning safety — the 5 rules you must follow",
+        "Smoking and curing meat: beginner's overview",
+        "How to test old seeds before you throw them out",
+        "The homesteading skills worth learning this fall",
+        "Dehydrating vegetables: time, temp, storage"
+      ],
+      "product_focus": [
+        "Meat & Fish Preservation Field Manual ($18) — hunting season prep",
+        "Harvest Preservation Field Manual ($16) — peak canning",
+        "Fermented & Preserved Harvest Handbook ($13) — late summer ferments",
+        "Food Sovereignty Starter Guide ($8) — back-to-school skill building"
+      ],
+      "bundles_to_feature": [
+        "Preservation Bundle ($38) — peak season anchor",
+        "Homesteader's Complete Bundle ($50) — skill-building for serious learners"
+      ],
+      "promotional_campaigns": [
+        "Back-to-school angle: position educational guides as 'the homesteading curriculum you didn't get in school'",
+        "Hunting season preview: Hunting/Fishing Manual begins its fall promotion cycle"
+      ],
+      "email_campaigns": [
+        "Week 1: Newsletter — 'Peak preservation season: the full overview from canning to curing'",
+        "Week 2: Meat/Fish Preservation feature — hunting season is coming",
+        "Week 3: Newsletter — 'Building homesteading skills: what to learn before fall'",
+        "Week 4: Win-back campaign for any subscribers who haven't opened in 6 weeks (free mini-resource re-engagement)"
+      ],
+      "social_cadence": {
+        "tiktok": "4x/week",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "2 pins/day"
+      },
+      "etsy_actions": [
+        "Update Meat/Fish Preservation tags to include 'hunting season prep', 'smoking meat guide fall'",
+        "Check ROAS on all running Etsy ads — pause any below 1.5x after 45 days of data"
+      ],
+      "kpis": {
+        "etsy_views_target": "2,000–5,000",
+        "etsy_sales_target": "30–70",
+        "email_list_target": "400–600 subscribers",
+        "pinterest_monthly_views_target": "15,000–35,000"
+      }
+    },
+    {
+      "month": "September 2026",
+      "season": "Early Fall — Seed Saving + End-of-Season",
+      "themes": [
+        "Save your seeds before the season ends",
+        "Fall seed swaps and community growing",
+        "Foraging in fall — native edibles and wild food",
+        "Winter prep begins"
+      ],
+      "content_topics": [
+        "When exactly to harvest seeds (timing is everything)",
+        "Dry vs. wet processing — which seeds need which",
+        "Fall foraging: what's available in your region",
+        "How to host a fall seed swap",
+        "Root cellar basics for winter storage"
+      ],
+      "product_focus": [
+        "Seed Saving Field Manual ($14) — end-of-season urgency",
+        "Seed Swap Hosting Kit ($10) — fall swap season",
+        "Native Plants Regional Guide ($18) — fall foraging",
+        "Anti-Catalog: 30 Heirlooms ($10) — save the best seeds from this year"
+      ],
+      "bundles_to_feature": [
+        "Food Sovereignty Bundle ($30) — seed saving focus",
+        "Regional Self-Sufficiency Bundle ($28) — foraging + planning"
+      ],
+      "promotional_campaigns": [
+        "End-of-season seed saving push: '3 weeks left to save seeds from your garden'",
+        "Fall seed swap event promotion: Seed Swap Kit featured on all platforms"
+      ],
+      "email_campaigns": [
+        "Week 1: Newsletter — 'It's seed saving season — here's the timing for your crops'",
+        "Week 2: Seed Saver segment send — Seed Saving Manual + Anti-Catalog feature",
+        "Week 3: Newsletter — 'Fall foraging: what's out there right now'",
+        "Week 4: Community spotlight — 'Hosting a fall seed swap' with Seed Swap Kit"
+      ],
+      "social_cadence": {
+        "tiktok": "4x/week",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "2 pins/day — begin building Gift Guide board"
+      },
+      "etsy_actions": [
+        "Update Seed Saving Manual tags for fall search terms: 'end of season seed saving', 'save tomato seeds fall'",
+        "Begin updating bundle listings with gift-ready copy (soft update before October 15 official launch)"
+      ],
+      "kpis": {
+        "etsy_views_target": "1,500–4,000",
+        "etsy_sales_target": "25–55",
+        "email_list_target": "500–750 subscribers",
+        "pinterest_monthly_views_target": "15,000–30,000"
+      }
+    },
+    {
+      "month": "October 2026",
+      "season": "Fall — Winter Prep + Gift Season Begins",
+      "themes": [
+        "Winter self-sufficiency planning",
+        "Hunting and wild game season",
+        "Livestock for small farms and homesteads",
+        "Gift season opens: homesteader gift guide"
+      ],
+      "content_topics": [
+        "Getting ready for hunting season: gear and field skills",
+        "Starting small-scale livestock in fall/winter",
+        "What the best homesteaders do in October to prepare for winter",
+        "Gift guide: best resources for the homesteader in your life",
+        "Native plants for winter foraging and identification"
+      ],
+      "product_focus": [
+        "Hunting, Fishing & Trapping Field Manual ($20) — hunting season",
+        "Small-Scale Livestock Field Manual ($18) — fall planning",
+        "Survival Garden Regional Plans ($22) — winter prep begins",
+        "Native Plants Regional Guide ($18) — fall/winter foraging"
+      ],
+      "bundles_to_feature": [
+        "Homesteader's Complete Bundle ($50) — gift-ready anchor",
+        "Regional Self-Sufficiency Bundle ($28) — gift option"
+      ],
+      "promotional_campaigns": [
+        "October 15: All bundle listings updated with gift-ready titles, descriptions, and cover images",
+        "October 15: Pinterest Gift Guide board created and first 10 gift-oriented pins published",
+        "First gift-positioning social posts begin: 'the homesteader gift guide'",
+        "Etsy ads: Add Homesteader's Complete Bundle to rotation at $5/day"
+      ],
+      "email_campaigns": [
+        "Week 1: Newsletter — 'October on the homestead: what to do before winter'",
+        "Week 2: Newsletter — 'Hunting season is here: our field manual for wild game'",
+        "Week 3: Gift preview email — 'Early holiday gift guide for homesteaders'",
+        "Week 4: VIP early access — Repeat buyers get 20% off any bundle through Nov 1"
+      ],
+      "social_cadence": {
+        "tiktok": "4x/week",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "3 pins/day — gift guide board priority"
+      },
+      "etsy_actions": [
+        "Bundle listings: update titles, descriptions, and cover images for gift positioning",
+        "Add gift-specific tags to all bundles: 'homesteader gift', 'gardening gift', 'homesteading gift set'",
+        "Update Hunting Manual tags: 'hunting season guide', 'wild game field manual', 'hunting guide gift'"
+      ],
+      "kpis": {
+        "etsy_views_target": "2,000–5,000",
+        "etsy_sales_target": "30–65",
+        "email_list_target": "600–900 subscribers",
+        "pinterest_monthly_views_target": "20,000–40,000"
+      }
+    },
+    {
+      "month": "November 2026",
+      "season": "Peak Gift Season — Black Friday + Cyber Monday",
+      "themes": [
+        "Holiday gift guide for homesteaders",
+        "Black Friday and Cyber Monday promotions",
+        "Everything the serious homesteader needs",
+        "Digital gifts: instant delivery advantage"
+      ],
+      "content_topics": [
+        "The Seedwarden Holiday Gift Guide — every bundle explained",
+        "Why a guide makes a better gift than a gadget",
+        "Our complete homesteader's bundle: what's inside",
+        "Last chance for early holiday pricing",
+        "Digital downloads: the gift that delivers instantly"
+      ],
+      "product_focus": [
+        "All bundles — November is 100% bundle-focused",
+        "Homesteader's Complete Bundle ($50) — top of gift guide",
+        "Preservation Bundle ($38) — for the preservationist",
+        "Food Sovereignty Bundle ($30) — for the values-driven buyer"
+      ],
+      "bundles_to_feature": [
+        "Homesteader's Complete Bundle ($50)",
+        "Preservation Bundle ($38)",
+        "Apartment Grower Bundle ($32)",
+        "Regional Self-Sufficiency Bundle ($28)"
+      ],
+      "promotional_campaigns": [
+        "November 1: Gift guide social series begins (one bundle feature per week through December)",
+        "November 20: Configure Etsy Black Friday sale tool (25% off, Thursday–Sunday)",
+        "November 27 (Black Friday): Etsy 25% off sale live — Thanksgiving morning email to list",
+        "November 30 (Cyber Monday): 'Buy 2 individual guides, get 20% off' code CYBER2026",
+        "Pinterest promoted pins: $50–$75 on Homesteader's Complete Bundle and Preservation Bundle"
+      ],
+      "email_campaigns": [
+        "Week 1: Newsletter — 'The homesteader gift guide: our recommendation for every budget'",
+        "Week 3 (Nov 25, Thanksgiving): Black Friday sale announcement — single email, morning send",
+        "Week 4 (Nov 30): Cyber Monday email — bundle-your-own offer",
+        "All week: Welcome sequence welcome coupon (SEEDWARDEN15) aligned with holiday traffic spike"
+      ],
+      "social_cadence": {
+        "tiktok": "5x/week — gift content performs well, post more frequently",
+        "instagram_reels": "4x/week + daily Stories",
+        "pinterest": "3 pins/day — gift guide board primary"
+      },
+      "etsy_actions": [
+        "Increase all Etsy ad budgets by 50% for November 27–December 1 window",
+        "Ensure all bundle listings have 'instant download' prominently in first line of description",
+        "Black Friday sale: Use Etsy's built-in sale tool, set 25% off all bundles"
+      ],
+      "kpis": {
+        "etsy_views_target": "4,000–10,000",
+        "etsy_sales_target": "60–150",
+        "email_list_target": "800–1,200 subscribers",
+        "revenue_target": "$1,500–$4,000 gross"
+      }
+    },
+    {
+      "month": "December 2026",
+      "season": "Peak Gift Season — Holiday + Year-End Planning",
+      "themes": [
+        "Last-minute homesteader gifts",
+        "Instant digital delivery advantage",
+        "Plan your 2027 growing season",
+        "Year in review"
+      ],
+      "content_topics": [
+        "Last-minute gift ideas for the homesteader (delivered instantly)",
+        "How to plan your 2027 growing season in January",
+        "What seeds to order in January for spring planting",
+        "A year of Seedwarden: what we built and where we're going"
+      ],
+      "product_focus": [
+        "All bundles — gift focus through December 20",
+        "Zone-by-Zone Seed Starting Calendar ($8) — 2027 edition, planning angle December 20+",
+        "Survival Garden Regional Plans ($22) — gift AND planning pivot",
+        "12-Month Urban Growing Planner ($7) — new year planning"
+      ],
+      "bundles_to_feature": [
+        "Homesteader's Complete Bundle ($50) — primary through Dec 20",
+        "Food Sovereignty Bundle ($30) — gift for values-driven recipient",
+        "Regional Self-Sufficiency Bundle ($28) — gift + planning overlap"
+      ],
+      "promotional_campaigns": [
+        "December 3: 'Holiday Gift Guide' email newsletter (gift frame, three bundles featured)",
+        "December 15: All bundle listing descriptions updated to include 'instant delivery, perfect for last-minute gifts'",
+        "December 22: 'Last-minute gift' email — single email, short, direct",
+        "December 27: Pivot to planning season — 'Plan your 2027 growing season' first post"
+      ],
+      "email_campaigns": [
+        "Dec 3: Holiday Gift Guide newsletter",
+        "Dec 22: Last-minute gift email (short, 150 words max, direct link to Homesteader's Bundle)",
+        "Dec 29: Year-end message + 'What's coming in 2027' preview (builds anticipation)"
+      ],
+      "social_cadence": {
+        "tiktok": "4x/week",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "2 pins/day — begin 2027 planning season pins December 26"
+      },
+      "etsy_actions": [
+        "December 1–20: Etsy ads at elevated budget (from November — maintain or reduce gradually)",
+        "December 21: Add 'Last-minute gift — instant digital delivery' to first line of all bundle descriptions",
+        "December 27: Reset Zone Calendar title to include '2027' for January search traffic"
+      ],
+      "kpis": {
+        "etsy_views_target": "5,000–12,000",
+        "etsy_sales_target": "80–200",
+        "email_list_target": "1,000–1,500 subscribers",
+        "revenue_target": "$2,000–$5,000 gross"
+      }
+    },
+    {
+      "month": "January 2027",
+      "season": "New Year — Seed Planning Peak",
+      "themes": [
+        "Plan your 2027 growing season",
+        "Seed ordering and variety selection",
+        "New year, new garden — starting fresh",
+        "Zone-by-zone what to start when"
+      ],
+      "content_topics": [
+        "How to plan your garden before you buy a single seed",
+        "Best heirloom varieties for small spaces in 2027",
+        "Zone-by-zone seed starting calendar: when to start what",
+        "Survival garden planning: how to grow enough to matter",
+        "Seed saving from last year — is it still viable?"
+      ],
+      "product_focus": [
+        "Zone-by-Zone Seed Starting Calendar ($8) — January is peak month",
+        "Survival Garden Regional Plans ($22) — planning season",
+        "12-Month Urban Growing Planner ($7) — new year resolution buyers",
+        "Anti-Catalog: 30 Heirlooms ($10) — seed ordering season"
+      ],
+      "bundles_to_feature": [
+        "Food Sovereignty Bundle ($30) — full seed system",
+        "Apartment Grower Bundle ($32) — spring planning anchor"
+      ],
+      "promotional_campaigns": [
+        "January 2: Social content pivots 100% to planning season",
+        "January 5: Email newsletter — 'How to plan your 2027 growing season before seeds sell out'",
+        "Zone Calendar listing: updated title to '2027 Seed Starting Calendar' for year-specific search traffic",
+        "Pinterest: Begin 2027 planning season board with zone-specific pins"
+      ],
+      "email_campaigns": [
+        "Jan 5: 'New year, new growing season — where to start' newsletter",
+        "Jan 12: Seed Saver segment send — variety selection for 2027",
+        "Jan 19: City Grower segment send — apartment planning for the year",
+        "Jan 26: Full list send — 'The one thing that will make 2027 your best growing year'"
+      ],
+      "social_cadence": {
+        "tiktok": "5x/week — January is high-growth month, post more",
+        "instagram_reels": "4x/week + daily Stories",
+        "pinterest": "3 pins/day — planning season content indexes well"
+      },
+      "etsy_actions": [
+        "Zone Calendar: update title to include 2027",
+        "Etsy ads: restart or increase on Zone Calendar, Survival Garden Plans, 12-Month Planner",
+        "Review all listing tags for spring 2027 search intent — update any stale fall/holiday tags"
+      ],
+      "kpis": {
+        "etsy_views_target": "3,000–8,000",
+        "etsy_sales_target": "50–120",
+        "email_list_target": "1,200–1,800 subscribers",
+        "revenue_target": "$800–$2,500 gross"
+      }
+    },
+    {
+      "month": "February 2027",
+      "season": "Late Winter — Seed Starting Begins",
+      "themes": [
+        "Starting seeds indoors — step by step",
+        "Heirloom vs. hybrid — what to buy this year",
+        "Small-space seed starting setup",
+        "Valentine's Day: gifts for the gardener"
+      ],
+      "content_topics": [
+        "How to set up a seed starting station with no special equipment",
+        "The 5 heirloom varieties I'm starting this year (and why)",
+        "Light requirements for indoor seed starting",
+        "Valentine's Day: gifts for the person who would rather garden",
+        "Damping off — what it is and how to prevent it"
+      ],
+      "product_focus": [
+        "Apartment Seed Starting Kit ($9) — peak month",
+        "Heirloom Variety Selection Guide ($11) — seed selection season",
+        "Food Sovereignty Starter Guide ($8) — gateway for new gardeners",
+        "Seed Saving Field Manual ($14) — 'save these ones from what you grow'"
+      ],
+      "bundles_to_feature": [
+        "Apartment Grower Bundle ($32) — complete system for new growers",
+        "Food Sovereignty Bundle ($30) — heirloom seed focus"
+      ],
+      "promotional_campaigns": [
+        "Valentine's Day gift angle (Feb 10–14): 'For the person who would rather have seeds than flowers'",
+        "Seed starting season launch content series: 4-week educational push on all platforms"
+      ],
+      "email_campaigns": [
+        "Feb 3: Newsletter — 'Seed starting season begins: here's your setup'",
+        "Feb 10: Valentine's gift email — gentle, non-pushy, gift framing for plant-loving partners",
+        "Feb 17: Newsletter — 'The heirloom varieties worth starting from seed'",
+        "Feb 24: City Grower segment — apartment seed starting guide feature"
+      ],
+      "social_cadence": {
+        "tiktok": "5x/week",
+        "instagram_reels": "4x/week + daily Stories",
+        "pinterest": "3 pins/day"
+      },
+      "etsy_actions": [
+        "Apartment Seed Starting Kit: increase Etsy ads to $5/day for peak February traffic",
+        "Add 'Valentine's Day gift' tags to relevant individual products (Feb 1–15 only, then remove)"
+      ],
+      "kpis": {
+        "etsy_views_target": "3,500–9,000",
+        "etsy_sales_target": "60–140",
+        "email_list_target": "1,400–2,000 subscribers",
+        "revenue_target": "$900–$2,800 gross"
+      }
+    },
+    {
+      "month": "March 2027",
+      "season": "Early Spring — Peak Garden Season",
+      "themes": [
+        "Peak seed starting and transplanting",
+        "Companion planting for small spaces",
+        "Survival garden planning",
+        "Community growing and seed swaps"
+      ],
+      "content_topics": [
+        "Companion planting: what to pair with what",
+        "When to transplant: the hardening-off guide",
+        "How to plan a survival garden by region",
+        "Spring seed swap: how to participate or host",
+        "Soil prep for containers and raised beds"
+      ],
+      "product_focus": [
+        "Companion Planting Chart ($5) — impulse buy, peak month",
+        "Container Growing Blueprint Pack ($12) — spring setup",
+        "Survival Garden Regional Plans ($22) — peak planning",
+        "Seed Swap Hosting Kit ($10) — spring swap season"
+      ],
+      "bundles_to_feature": [
+        "Food Sovereignty Bundle ($30) — full system for new-season gardeners",
+        "Regional Self-Sufficiency Bundle ($28) — survival garden + native plants"
+      ],
+      "promotional_campaigns": [
+        "Spring equinox content push (March 20): 'Spring is officially here — what to do today'",
+        "Second annual influencer outreach batch for spring season creators",
+        "Pinterest: spring garden board promoted pins ($50 budget for Container Blueprint and Zone Calendar)"
+      ],
+      "email_campaigns": [
+        "Mar 3: Newsletter — 'Companion planting: the science and the shortcuts'",
+        "Mar 10: Newsletter — 'Survival garden planning: how much do you actually need to grow?'",
+        "Mar 20 (Spring Equinox): Special send — 'Spring is here. Here's what to plant this weekend.'",
+        "Mar 27: Seed Swap feature — community growing angle"
+      ],
+      "social_cadence": {
+        "tiktok": "5x/week — peak engagement month",
+        "instagram_reels": "4x/week + daily Stories",
+        "pinterest": "3 pins/day"
+      },
+      "etsy_actions": [
+        "Etsy ads: maximum budget month for spring products — $10/day across top 4 listings",
+        "Companion Planting Chart: run at $2/day (low price, high volume, builds reviews)",
+        "Check and update all spring listing tags for March-specific search terms"
+      ],
+      "kpis": {
+        "etsy_views_target": "4,000–10,000",
+        "etsy_sales_target": "70–160",
+        "email_list_target": "1,600–2,200 subscribers",
+        "revenue_target": "$1,000–$3,000 gross"
+      }
+    },
+    {
+      "month": "April 2027",
+      "season": "Mid-Spring — Planting and First Harvests",
+      "themes": [
+        "Transplanting and direct sowing",
+        "Hot pepper season begins",
+        "Food sovereignty: why this season matters",
+        "Mid-spring check-in"
+      ],
+      "content_topics": [
+        "Hardening off seedlings: the step most people skip",
+        "Growing hot peppers from seed — variety guide",
+        "Direct sow crops for April by zone",
+        "What to do when your plants get too big for the container",
+        "One year of Seedwarden: what we've learned"
+      ],
+      "product_focus": [
+        "Grow Your Own Hot Sauce ($15) — pepper season",
+        "Anti-Catalog: 30 Heirlooms ($10) — planting season",
+        "Container Growing Blueprint Pack ($12) — final setup",
+        "Food Sovereignty Starter Guide ($8) — new grower entry"
+      ],
+      "bundles_to_feature": [
+        "Apartment Grower Bundle ($32) — full system for mid-season starters",
+        "Food Sovereignty Bundle ($30) — values-driven buyers who waited"
+      ],
+      "promotional_campaigns": [
+        "First-year anniversary content: 'One year of Seedwarden — what we built'",
+        "Earth Day (April 22): 'Food sovereignty is the most grounded form of environmentalism'",
+        "Seed swap season closing content: fall swaps will come in September"
+      ],
+      "email_campaigns": [
+        "Apr 3: Newsletter — 'April in the garden: what to plant right now'",
+        "Apr 15: Newsletter — 'Growing hot peppers from seed: the full guide'",
+        "Apr 22 (Earth Day): Values email — 'Growing your own food is the most direct form of food sovereignty'",
+        "Apr 29: Anniversary email — 'One year of Seedwarden: a look back and what's next'"
+      ],
+      "social_cadence": {
+        "tiktok": "4x/week",
+        "instagram_reels": "3x/week + daily Stories",
+        "pinterest": "2 pins/day"
+      },
+      "etsy_actions": [
+        "Phase 1 data review (full year): identify top 5 products by revenue and conversion rate",
+        "Begin planning Phase 4 products based on what the top-sellers revealed about audience demand",
+        "Etsy ads: begin reducing spring product budgets as peak traffic window closes"
+      ],
+      "kpis": {
+        "etsy_views_target": "3,000–7,000",
+        "etsy_sales_target": "50–120",
+        "email_list_target": "1,800–2,400 subscribers",
+        "revenue_target": "$800–$2,200 gross"
+      }
+    }
+  ],
+  "annual_summary": {
+    "revenue_trajectory": {
+      "may_2026_monthly": "$150–$500",
+      "q3_2026_monthly": "$500–$1,500",
+      "q4_2026_monthly": "$1,500–$5,000",
+      "q1_2027_monthly": "$900–$3,000",
+      "twelve_month_gross_total": "$8,000–$30,000"
+    },
+    "email_list_trajectory": {
+      "may_2026": "50–150",
+      "september_2026": "500–750",
+      "december_2026": "1,000–1,500",
+      "april_2027": "1,800–2,500"
+    },
+    "top_revenue_months_ranked": [
+      "November 2026 (Black Friday + holiday peak)",
+      "December 2026 (gift season)",
+      "March 2027 (peak spring garden season)",
+      "January 2027 (seed planning season)",
+      "February 2027 (seed starting season)"
+    ],
+    "products_to_watch_by_season": {
+      "spring_peak_leaders": ["Zone-by-Zone Seed Starting Calendar", "Survival Garden Regional Plans", "Apartment Seed Starting Kit"],
+      "summer_preservation_leaders": ["Harvest Preservation Field Manual", "Fermented & Preserved Harvest Handbook", "Grow Your Own Hot Sauce"],
+      "fall_winter_gift_leaders": ["Homesteader's Complete Bundle", "Hunting Fishing Trapping Manual", "Small-Scale Livestock Field Manual"],
+      "year_round_stable": ["Food Sovereignty Starter Guide", "Seed Saving Field Manual", "Anti-Catalog 30 Heirlooms"]
+    }
+  }
+}
