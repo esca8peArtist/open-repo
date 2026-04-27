@@ -11028,3 +11028,60 @@ projects/open-repo/backend/
 **Session Summary**: All high-priority projects blocked on user action. Executed Exploration Queue Priority 1 (implementation toolkit) with resistance-research agent. Produced 10,222-word toolkit spanning main guide + 5 sector-specific implementation guides (legislative, advocacy, academic, state government, institutional resilience). Toolkit bridges gap between proposal and execution, designed for institutional actors to use the 35-domain framework in their own work. All files production-ready and syncing to Obsidian. Ready for Phase 1 institutional outreach once user distribution path is decided and admin fixes completed (<2 hours user work).
 
 ---
+
+## 2026-04-27 Session 551 (Late Evening, 22:53 UTC) — Exploration Queue: Dashboard UI Mockup
+
+**Orientation**: Reviewed ORCHESTRATOR_STATE.md, PROJECTS.md, INBOX.md, BLOCKED.md. All high-priority projects remain blocked on user action:
+- 🔴 **CRITICAL**: stockbot engine restart REQUIRED before 2026-04-28 09:30 ET (~14.5 hours from session start)
+- 🟡 resistance-research awaiting distribution path decision (Path A / A+37 / B)
+- mfg-farm awaiting test print confirmation
+- Others blocked on user action (tag corrections, Tier 1 approval, PR review)
+- No new INBOX items to process
+- One active block: mfg-farm test print (manual, cannot auto-verify)
+
+**Work Completed**:
+
+1. ✅ **stockbot: Live Trading Dashboard UI Mockup v1.0** (COMPLETE)
+   - **Deliverable**: Interactive HTML prototype + design documentation
+     - `ui-mockup/dashboard.html` (982 lines) — Self-contained interactive mockup with live demo data
+     - `ui-mockup/README.md` (design document) — Phase 2 development roadmap + technical stack recommendations
+   - **Features demonstrated**:
+     - Portfolio summary: value, today's P&L, active positions, monthly trade count
+     - Control panel: Pause/Resume, Settings, Emergency Halt with modal confirmation
+     - 11-ticker active positions table with P&L and % change per position
+     - Risk metrics: Sharpe ratio (2.14), max drawdown (-3.2%), volatility (14.8%), win rate (61.2%), profit factor (1.84), beta (0.95)
+     - Signal board: Latest 3 signals per ticker with confidence levels and execution timing
+     - Recent trades log: Last 10 executed trades with timestamp, action, price, status, P&L
+   - **Design decisions**:
+     - Dark theme for extended market-hours use (reduced eye strain)
+     - Color coding: Green/red for positions and P&L, blue for primary actions
+     - Responsive 1/2-column grid layout
+     - Real-time status indicator with pulsing "Live" dot
+   - **Tech stack recommendation**: React + TypeScript, Tailwind CSS, Chart.js/D3.js for visualizations, WebSocket for real-time updates, Vite/Next.js for build
+   - **API integration**: Documented 7 endpoints and WebSocket path with data refresh strategy (5s during market hours, 30s after-hours)
+   - **Committed to stockbot submodule master** (commit 7d3e9db)
+
+**Exploration Queue Status**:
+- Queue item #1 (stockbot UI mockup): ✅ **COMPLETE (Session 551)**
+- Queue item #2 (seedwarden customer cohort analysis): Queued for future session
+- Queue item #3 (stockbot post-Gate-2 operations): Queued for future session
+
+**Critical Action Required**:
+- 🔴 **USER ACTION REQUIRED WITHIN 14.5 HOURS**: Restart stockbot engine
+  - Command: `.venv/bin/python scripts/run_live_trading.py` (from projects/stockbot/)
+  - Deadline: 2026-04-28 09:30 ET (09:35 ET would miss market open)
+  - Status: Open AAPL position (36 @ $271.04) verified safe for cold restart
+  - Next step (post-restart): Monitor paper trading through market open; wire multi-ticker config; verify Gate 1 signal generation
+
+**Project Status Summary**:
+- ✅ Dashboard UI mockup exploration complete, ready for design review
+- 🔴 stockbot: CRITICAL 14.5-hour countdown to engine restart
+- 🟡 resistance-research: awaiting distribution path decision from user
+- ✅ Other projects: blocked on known external dependencies (test print, tag corrections, PR review)
+
+**Next Session Priority**:
+1. Verify stockbot engine restart completed by user (if not, send urgent reminder)
+2. If restarted: Monitor paper trading through market open, confirm Gate 1 signal generation
+3. If resistance-research path decided: Execute Phase 1 institutional outreach
+4. If test print confirmed: Begin supplier negotiation sequence
+5. Otherwise: Continue exploration queue item #2 (seedwarden cohort analysis)
