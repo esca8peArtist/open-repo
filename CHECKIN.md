@@ -8,7 +8,70 @@
 
 **Status**: ✅ **INSTITUTIONAL ADOPTION PLAYBOOKS COMPLETE** — `institutional-adoption-playbooks.md` (9,145 words, 5 sector-specific playbooks). Operationalizes 35-domain framework for concrete institutional use post-distribution. State legislatures, federal courts, executive agencies, universities, civil rights organizations — each with decision trees, timeline templates, success metrics, failure modes, contact templates. Production-ready for institutional distribution.
 
-**Previous Session 549**: THREE PARALLEL EXPLORATION ITEMS COMPLETE (Crisis Response Playbooks, Organizational Defense Playbook, CNC Economics Research). Exploration Queue cleared to zero after Session 549.
+**Since Last Check-in (Session 549 → Session 550)**:
+
+1. ✅ **Institutional Adoption Playbooks for resistance-research — COMPLETE**
+   - **Deliverable**: `institutional-adoption-playbooks.md` (9,145 words, 5 sector-specific playbooks)
+   - **Scope**: State legislatures, federal circuit courts, executive agencies, universities (law schools), civil rights organizations
+   - **What makes it operational** (not generic):
+     - Each playbook built around a concrete 2026 institutional scenario specific to that sector
+     - 5-step decision framework tailored to how that sector actually makes decisions
+     - Sector-specific decision tree (what variables matter for that institution)
+     - Timeline template aligned to sector's natural decision cycle
+     - Success metrics unique to that sector
+     - Common failure modes specific to sector (not universal)
+   - **Key findings by sector**:
+     - **Legislatures**: Virginia 2026 fragmentation vs. Minnesota 2023 omnibus as contrast cases; wave filter timing + feasibility matrix + GSD peer coordination as core operational mechanisms
+     - **Courts**: Post-Loper Bright opens both offensive (challenge rollbacks) and defensive (constrain new authority) vectors; Corner Post tolling reverses statute-of-limitations advantage; pre-assigned academic record teams beat post-ruling scrambling
+     - **Executive Agencies**: Three-category function audit (legally mandated vs. discretionary vs. consent-decree-bound) determines what officials must protect; whistleblower documentation protocol addresses April 2026 specific vulnerabilities (DOGE/SSA NUMIDENT); state parallel capacity analysis reflects real EPA/NLRB/CFPB absorption into state agencies
+     - **Universities**: Domain 27 four-track threat map (funding, DEI self-censorship, visas, accreditation) as organizing frame; 12-hour rapid-response publication beats traditional 12-month academic cycle; pre-assigned faculty teams to predicted SCOTUS rulings
+     - **Civil rights orgs**: Domain-lead assignment as governance mechanism; 3.5% mobilization threshold as trackable campaign benchmark; 12-week messaging sequence integrated into April 2026 decision calendar (April 28 Xinis hearing, April 30 FISA, May Day)
+   - **Additional value**: Minimum viable portfolio table (capacity-constrained institutions), domain dependency structure (which domains must precede others), four contact templates for coordination gaps
+   - **Sources**: 10 authoritative sources including K&L Gates Loper analysis, Democracy Docket, NCSL state legislature calendar, civil rights coalition models
+   - **Value for user**: Bridges from framework reading → concrete institutional operation. Production-ready for distribution to think tanks, state AG offices, law schools, advocacy coalitions. Operationalizes 35-domain framework at institutional scale.
+   - **Committed**: File committed, PROJECTS.md marked complete, WORKLOG.md updated, this check-in prepared
+
+2. ✅ **Exploration Queue Refresh (Session 550)**
+   - **Previous status**: Session 549 completed 3 exploration items, cleared queue to zero
+   - **New items added** (Session 550):
+     - ✅ resistance-research: Post-distribution institutional adoption playbook (COMPLETE)
+     - stockbot: Live trading dashboard UI mockup (queued for design work)
+     - seedwarden: Customer cohort analysis framework (queued for pre-launch analytics work)
+   - **Queue status**: 2 active items remain for future sessions
+
+**Project Status Summary** (no change from Session 549):
+- 🔴 **stockbot**: CRITICAL — Engine restart needed before 2026-04-28 09:30 ET (~8.5 hours remaining). Multi-ticker paper training complete. All post-Gate-2 infrastructure ready. Awaiting user restart only.
+- 🟡 **resistance-research**: Distribution path decision pending (Path A / A+Domain37 / Path B). Framework + implementation toolkit + activation architecture + crisis playbooks + institutional adoption playbooks all complete. Ready for Phase 1 launch immediately upon user decision.
+- ✅ **mfg-farm**: Test print blocking. Manufacturing automation + supplier research + CNC economics all complete.
+- ✅ **All secondary projects**: Awaiting user action (seedwarden tag corrections, cybersecurity-hardening Tier 1 approval, open-repo PR review, off-grid-living social media execution, workout review, resume paused)
+
+**Items Needing User Input** (prioritized):
+
+1. 🔴 **CRITICAL (T-8.5 hours)**: Restart stockbot engine before 2026-04-28 09:30 ET
+   - Command: `.venv/bin/python scripts/run_live_trading.py` (from projects/stockbot/)
+   - Time: 30 seconds restart + 2-minute verification
+   - Safety: Open BUY position (36 AAPL @ $271.04) safe for cold restart
+   - Post-restart monitoring: Paper trading monitor ready; daily cron established
+
+2. 🟡 **High Priority**: resistance-research distribution path decision
+   - Path A: Immediate 34-domain broad distribution
+   - Path A+Domain37 (RECOMMENDED): Path A + targeted Domain 37 to election-protection organizations
+   - Path B: Continue optional content updates before distribution
+   - Upon decision: Orchestrator executes Phase 1 within 2 hours
+
+3. 🟡 **High Priority**: Confirm mfg-farm test print completion
+   - Post-print: 7-step supplier negotiation sequence ready
+
+4. 🟠 **Medium Priority**: seedwarden Phase 1 tag corrections (3 items) + Etsy account verification
+   - All 21 products ready to list immediately upon completion
+
+**Suggested Priorities for Next Session**:
+1. Monitor stockbot post-restart (assuming user restarts before market open)
+2. If resistance-research distribution path is decided: Execute Phase 1 institutional outreach
+3. If test print is confirmed: Begin supplier negotiation sequence
+4. If none of above: Work secondary exploration queue item (stockbot dashboard UI or seedwarden cohort analysis)
+
+**Token Usage**: ~48.7% Sonnet at session 550 start. Session 550 work completed within budget. Reset Tuesday 2026-04-29 00:00 UTC.
 
 **CRITICAL DEADLINE REMAINS**: 🔴 **stockbot engine restart REQUIRED before 2026-04-28 09:30 ET** (~3 hours remaining). All infrastructure ready; user action needed immediately.
 
