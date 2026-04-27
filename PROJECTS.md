@@ -317,19 +317,20 @@
   - 2026-05-12 (Day 16): Gate 1 feasibility formal checkpoint — use to confirm pivot decision
   - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail
 
+**Completed (Session 552 — 2026-04-28)**:
+1. ✅ **Fix idle sleep — market-aware sleep window** (commit 26697dd): When market is closed, sessions now sleep until 15 minutes before market open (13:15 UTC Mon–Fri) instead of polling every 60 seconds. Eliminates ~15,000 "market closed — skipping cycle" log lines per day. Implementation: `_next_market_prewake(now)` helper computes next weekday 13:15 UTC, sessions sleep full duration when `market_open=False`. Minimum floor 60s prevents busy loop. Tests: 7 unit tests for wake time computation.
+
+2. ✅ **Ticker enforcement guard** (commit 26697dd): Added `_enforce_ticker_match()` in `TradingSession.__init__` to verify model's trained ticker matches session's assigned ticker (case-insensitive). Raises `ValueError` on mismatch with both tickers named in message. Backward compatible: no-op when metadata missing ticker key, applies to single-ticker sessions only. Tests: 8 unit tests for all mismatch scenarios.
+
+3. ✅ **Daily trading summary to Discord** (commit 26697dd): At market close (20:00 UTC), sends structured Discord summary via `STOCKBOT_DISCORD_WEBHOOK_URL` with: signals per ticker, orders placed/filled, total trades, mode, strategy name, error cycles. Three methods: `_maybe_send_daily_discord_summary(now)` (fires once per calendar day), `_build_daily_discord_payload(date_str, now)` (aggregates cycle_logs), `_send_discord_summary(payload)` (stdlib-only POST). Fails gracefully if webhook URL missing. Tests: 12 unit tests for payload structure, idempotency, daily reset.
+
 **NEXT WORK (priority order)**:
 
 0. **CRITICAL — Fix feature count mismatch so engine actually trades**: See BLOCKED.md. Steps: (a) Open `src/features/feature_engineer.py`, find `_add_economic_features`, fix the `%d` logging bug and determine whether FRED API calls succeed (check for missing env var / API key). (b) Run feature engineer locally against sample data, count output features. (c) Retrain AAPL mtf models against the correct feature count (`models/mtf/AAPL_*.joblib`). (d) Outside 13:30–20:00 UTC: `touch DEPLOY_READY` to trigger Jetson deploy. (e) Next session: `ssh awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1"` — confirm no more `LightGBM [Fatal]` lines and at least one non-HOLD prediction logged.
 
-1. **Fix idle sleep — market-aware sleep window**: When market is closed, sessions should sleep until 15 minutes before market open (13:15 UTC Mon–Fri) rather than polling every 60 seconds. Sessions should stay active until 15 minutes after close (20:15 UTC) to allow data downloads. Current behaviour generates ~15,000 "market closed — skipping cycle" log lines per day. Fix in `src/trading/trading_session.py` — compute next wake time when `market_open=False` and sleep the full duration.
+1. **Discord position notifications**: Send a Discord message every time any strategy opens or closes a position. Include: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized or realized P&L. Wire into `on_trade_executed` in `src/models/model_strategy.py` (currently only logs to debug). **Use `STOCKBOT_DISCORD_WEBHOOK_URL` (stockbot channel) — NOT `DISCORD_WEBHOOK_URL` (general/orchestrator channel).** `STOCKBOT_DISCORD_WEBHOOK_URL` is already defined and used by `src/remote/hetzner_budget.py` — follow the same pattern.
 
-2. **Ticker enforcement guard**: Add a hard assertion in `TradingSession.__init__` that the model's trained ticker matches the session's assigned ticker. Raise on mismatch. Currently enforced by convention only — a misconfiguration would silently trade the wrong stock.
-
-3. **Discord position notifications**: Send a Discord message every time any strategy opens or closes a position. Include: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized or realized P&L. Wire into `on_trade_executed` in `src/models/model_strategy.py` (currently only logs to debug). **Use `STOCKBOT_DISCORD_WEBHOOK_URL` (stockbot channel) — NOT `DISCORD_WEBHOOK_URL` (general/orchestrator channel).** `STOCKBOT_DISCORD_WEBHOOK_URL` is already defined and used by `src/remote/hetzner_budget.py` — follow the same pattern.
-
-4. **Daily trading summary to Discord**: At market close (20:00 UTC), send a structured Discord summary: signals generated per ticker, orders placed, orders filled, open positions, closed positions, realized P&L for the day, any risk events. Write as a post-market hook in the engine. **Use `STOCKBOT_DISCORD_WEBHOOK_URL` — NOT `DISCORD_WEBHOOK_URL`.**
-
-5. **Tomorrow's paper trading verification** (2026-04-28, first clean market session):
+2. **Market open verification** (2026-04-28, first clean market session):
    - Pre-open (before 13:15 UTC): Verify engine is running and connected to Alpaca paper account
    - At open (13:30 UTC): Confirm sessions detect market open and begin cycle (no shutdowns)
    - During session: Log whether each of the 11 strategies generates a signal

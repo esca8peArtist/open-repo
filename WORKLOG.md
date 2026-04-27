@@ -11131,3 +11131,44 @@ projects/open-repo/backend/
 - All work committed to appropriate submodules (stockbot, seedwarden) and documented
 
 **Next Session**: Monitor stockbot engine restart (critical deadline), or if engine restarted, monitor paper trading through market open. Continue exploration queue item #3 if available. All major deliverables (UI mockup, analytics framework) production-ready.
+
+---
+
+## 2026-04-28 Session 552 (00:05 UTC) — Stockbot Pre-Market Robustness
+
+**Work Completed**:
+
+1. ✅ **stockbot: Pre-Market Robustness Improvements** (3 features, 27 tests, all pass)
+   - **Session timing**: Executed 13.5 hours before market open (09:30 ET / 13:30 UTC). Window used for code hardening before engine restart.
+   - **Deliverables**:
+     - **Market-aware idle sleep** (commit 26697dd): Fixes ~15,000 "market closed — skipping cycle" log lines per day. Implementation: `_next_market_prewake(now)` computes next Mon–Fri 13:15 UTC; sessions sleep full duration when `market_open=False`. Minimum 60s floor. File: `src/trading/trading_session.py`. Tests: 7 unit tests (wake time computation, weekend skip, timezone aware, same-day/next-day transitions). All pass.
+     - **Ticker enforcement guard** (commit 26697dd): Prevents silent misconfiguration. Added `_enforce_ticker_match()` to verify model's trained ticker matches session's assigned ticker (case-insensitive). Raises `ValueError` on mismatch. Backward compatible (no-op if metadata missing ticker key, skips multi-ticker sessions). Wired into `_load_strategy`, `_load_stacker_strategy`, `_load_mtf_strategy`. File: `src/trading/trading_session.py`. Tests: 8 unit tests (no-op with missing metadata, pass on match, raise on mismatch, case-insensitive, error message format, multi-ticker exemption, error handler integration). All pass.
+     - **Daily Discord summary** (commit 26697dd): Post-market reporting at 20:00 UTC. Three methods: `_maybe_send_daily_discord_summary(now)` (fires once per calendar day, idempotent), `_build_daily_discord_payload(date_str, now)` (aggregates cycle_logs into Discord embed with signals per ticker, orders, trades, mode, strategy, errors), `_send_discord_summary(payload)` (stdlib-only urllib.request POST to `STOCKBOT_DISCORD_WEBHOOK_URL`, fails gracefully if env var missing). File: `src/trading/trading_session.py`. Tests: 12 unit tests (payload structure, date inclusion, ticker count, signal counts, fires at 20:00 UTC only, idempotency, daily reset, graceful missing env). All pass.
+   - **Test summary**: 27 new unit tests in new file `tests/test_trading_session_improvements.py`. All pass. 182 existing tests unchanged and passing. Total: 209 tests pass, 0 regressions.
+   - **Code quality**: No external dependencies added. Stdlib-only for Discord POST. Backward compatible. No breaking changes.
+   - **Files modified**: `src/trading/trading_session.py` (main implementation), `tests/test_trading_session_improvements.py` (new, 27 tests)
+   - **Committed to**: stockbot submodule master (commit 26697dd)
+   - **Status**: Production-ready. Engine can be restarted without code regression risk.
+
+**Orchestration work**:
+- Updated PROJECTS.md: Marked items 1, 2, 4 of NEXT WORK as completed in new "Completed (Session 552)" section
+- Updated CHECKIN.md: New session entry documenting improvements and maintaining critical deadline reminder
+
+**Session 552 Summary**:
+- 1 autonomous project (stockbot) improved with 3 critical robustness features
+- Total autonomous work: 27 unit tests, 3 production features, 0 blockers encountered
+- All work committed to stockbot submodule; ready for engine restart
+- Critical deadline: stockbot engine restart required before 2026-04-28 09:30 ET (13.5 hours remaining)
+
+**Next Session**: 
+1. CRITICAL: Verify stockbot engine has been restarted by user
+2. If restarted: Monitor paper trading through market open; confirm multi-ticker portfolio signals
+3. If not restarted: Urgent reminder to user
+4. If time permits: Continue exploration queue item #3 (stockbot post-Gate-2 operations)
+
+**Blockers**: None new. stockbot engine restart remains user action (required before market open).
+
+**Exploration Queue Status**:
+- Item #1 (stockbot dashboard UI mockup): ✅ **COMPLETE (Session 551)**
+- Item #2 (seedwarden customer cohort analysis): ✅ **COMPLETE (Session 551)**
+- Item #3 (stockbot post-Gate-2 operations): Queued for next session

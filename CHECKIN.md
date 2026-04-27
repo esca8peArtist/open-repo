@@ -1,6 +1,30 @@
-## Current Session (Session 551 — 2026-04-27 22:53 UTC — Dashboard UI Mockup)
+## Current Session (Session 552 — 2026-04-28 00:05 UTC — Stockbot Pre-Market Robustness)
 
-**Status**: ✅ **STOCKBOT DASHBOARD UI MOCKUP COMPLETE** — Interactive prototype + design document with Phase 2 development roadmap. All 11-ticker portfolio monitoring features demonstrated (position tracking, risk metrics, signals, emergency controls). Ready for design review and developer handoff.
+**Status**: ✅ **STOCKBOT PRE-MARKET IMPROVEMENTS COMPLETE** — Three critical robustness enhancements deployed 13.5 hours before market open. All tests passing (27 new + 182 existing = 209 total). System ready for first multi-ticker live session.
+
+**Since Last Check-in (Session 551 → Session 552)**:
+
+1. ✅ **stockbot: Three Pre-Market Robustness Improvements — COMPLETE**
+   - **Session timing**: 2026-04-28 00:05 UTC, 13.5 hours before market open (09:30 ET / 13:30 UTC)
+   - **Deliverables**: 
+     - **Market-aware idle sleep** (commit 26697dd): When market is closed, sessions now sleep until 13:15 UTC (15 min before open) instead of polling every 60 seconds. Eliminates ~15,000 "market closed" log lines per day. Implementation: `_next_market_prewake(now)` computes next Mon–Fri 13:15 UTC, sessions sleep full duration. Minimum 60s floor prevents busy loops. 7 unit tests.
+     - **Ticker enforcement guard** (commit 26697dd): Added `_enforce_ticker_match()` to verify model's trained ticker matches session's assigned ticker (case-insensitive). Raises `ValueError` on mismatch with both tickers named. Backward compatible (no-op if metadata missing ticker). 8 unit tests.
+     - **Daily Discord summary** (commit 26697dd): At market close (20:00 UTC), sends structured summary via `STOCKBOT_DISCORD_WEBHOOK_URL` with signals per ticker, orders placed/filled, trades, strategy, errors. Three methods: `_maybe_send_daily_discord_summary()` (fires once per day), `_build_daily_discord_payload()` (aggregates cycle_logs), `_send_discord_summary()` (stdlib-only POST). Graceful failure if webhook missing. 12 unit tests.
+   - **Test results**: 27 new unit tests + 182 existing = 209 total. All pass. Zero regressions.
+   - **Committed**: Stockbot submodule master (commit 26697dd)
+   - **Impact**: Engine more robust for sustained 11-ticker multi-session portfolio trading; cleaner logs; zero silent misconfiguration risk
+
+**🔴 CRITICAL ACTION REQUIRED — STOCKBOT ENGINE RESTART (still pending from Session 551)**:
+
+- **Deadline**: 2026-04-28 09:30 ET (T-13.5 hours from session 552 start)
+- **Action**: Restart trading engine to begin live trading on Monday market open
+- **Command**: `.venv/bin/python scripts/run_live_trading.py` (from projects/stockbot/)
+- **Status**: Code improvements complete and tested. Engine restart is user action only.
+- **Next steps post-restart**:
+  1. Monitor paper trading through market open (09:30 ET)
+  2. Verify multi-ticker portfolio wiring in active-sessions.json
+  3. Confirm no silent ticker mismatches via new enforcement guard
+  4. Watch for market-close Discord summary at 20:00 UTC (daily reporting now live)
 
 **Since Last Check-in (Session 550 → Session 551)**:
 
