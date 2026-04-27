@@ -4,43 +4,51 @@
 
 ---
 
-## Current Session (Session 535 — 2026-04-27 17:45 — Autonomous Phase 2 Expansion Research + Preparation)
+## Current Session (Session 536 — 2026-04-27 — Pre-Market Readiness: Ticker Expansion + Tracker Updates)
 
-**Status**: ✅ **PHASE 2 RESEARCH & PREPARATION COMPLETE ACROSS 3 PROJECTS**. All high-priority projects remain blocked on user action. Three parallel subagents autonomously completed Phase 2 deepening work while market is closed. System ready for market open in ~15 hours.
+**Status**: ✅ **PRE-MARKET EXPANSION COMPLETE**. Two parallel subagents expanded stockbot portfolio (62→67 tickers) and updated resistance-research trackers with April 2026 civic developments. Gate 1 projection: 134 trades/month (4.5x threshold). All work ready for user engine restart before market open tomorrow.
 
-**Since Last Session**:
-- ✅ Stockbot health checks: database verified, 56 tickers ready, monitoring script confirmed
-- ✅ **DISCOVERY**: All 62 tickers are fully trained (not 11), Gate 1 feasibility upgraded to FEASIBLE (4x threshold)
-- ✅ Created batch training pipeline (`train_multi_ticker_batch.py`, 776 lines)
-- ✅ Resistance-research Phase 2 expansion roadmap created with scoped research candidates
-- ✅ Seedwarden Phase 2 photography plan + Phase 3 transition documented and committed
-- ✅ All commits successful to master
+**Since Last Session (Session 535)**:
+- ✅ Expanded stockbot portfolio: 5 new tickers trained (HD, LMT, UPS, REGN, FDX)
+  - Portfolio now 67 tickers total (62 from Session 535 + 5 new)
+  - All wired to active-sessions.json, all ensemble tests passing
+  - Gate 1 projection: 134 trades/month (up from 124), 4.5x threshold
+- ✅ Updated resistance-research trackers with April 2026 civic data
+  - first-amendment-suppression.md: +1 entry (LAPD journalist assault April 11)
+  - environmental-rollbacks-tracker.md: +2 entries (EPA coal ash, plastic pyrolysis)
+  - police-brutality-consent-decree-tracker.md: +1 update (LAPD section)
+  - All existing entries verified, no broken references
+- ✅ Both agents committed changes to master (stockbot: d76c11b, resistance-research: 0810fa3)
 
 **What Needs Your Input**:
 
-1. **🚨 CRITICAL — stockbot engine restart** (before 2026-04-28 09:30 ET, ~15 hours):
+1. **🚨 CRITICAL — stockbot engine restart** (before 2026-04-28 09:30 ET market open, ~15 hours from now):
    - **Command**: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/`
-   - **Impact**: 62-ticker portfolio ready to execute paper trading immediately after restart
-   - **Gate 1 status**: FEASIBLE (4x threshold with full portfolio). System ready for May 12 checkpoint.
+   - **Why**: Engine offline since April 26 22:15 UTC; open AAPL position (36 @ $271.04) ready to run to completion
+   - **What's ready**: 67 tickers fully trained and wired. Gate 1 projection: 134 trades/month (4.5x the 30 rt/month threshold)
+   - **Status**: System positioned to exceed Gate 1 threshold. May 12 checkpoint will show 3-month feasibility trajectory.
 
 2. **resistance-research distribution path** (awaiting your decision, no time pressure):
-   - **Phase 2 expansion roadmap** now complete with scoped research candidates
-   - **User decision points**: Path A autonomous work vs. Path B approval-required deepening clearly separated
-   - **Optional candidates**: Domains 19, 21, 25, 33 deepening + Phase 3 Candidates 2-4 ready for autonomous execution
+   - **Trackers updated**: April 2026 civic/legal data now current (first-amendment, environmental-rollbacks, police-brutality)
+   - **Ready for distribution**: 35-domain framework production-ready
+   - **User decision**: Path A (immediate) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (optional deepening)
+   - **Timeline**: No urgency; distribution can begin as soon as you decide path
 
-3. **seedwarden Phase 1 blockers** (awaiting your action):
-   - Tag corrections (3 remaining)
-   - Etsy account verification
-   - Once complete: all 21 Phase 1 products ready for upload
+3. **seedwarden Phase 1 launch blockers** (awaiting your action):
+   - **Remaining**: Tag corrections (3) + Etsy account verification
+   - **Timeline**: Once complete, all 21 Phase 1 products ready to list immediately
+   - **Phase 2 ready**: Lifestyle photography strategy and Phase 3 transition planning already done
 
 **Project Status**:
-- **stockbot**: ✅ All 62 tickers trained. ✅ Gate 1 feasible (4x threshold). 🚩 Engine restart required (user action, before 09:30 ET tomorrow)
-- **resistance-research**: ✅ Phase 2 expansion roadmap complete. ✅ Optional research scoped. 🚩 Distribution path decision awaited (no time pressure)
-- **seedwarden**: ✅ Phase 2 photography plan complete. ✅ Phase 3 transition documented. 🚩 Phase 1 tag corrections + Etsy verification awaited
-- **cybersecurity-hardening**: ✅ All distribution tiers complete. 🚩 Tier 1 approval awaited
-- **All others**: Awaiting user action or paused
+- **stockbot** (P2): ✅ 67 tickers trained. ✅ Gate 1 feasible (4.5x threshold, 134 rt/month). 🚩 Engine restart (user action, CRITICAL before 09:30 ET tomorrow)
+- **resistance-research** (P1): ✅ 35 domains complete. ✅ Trackers updated April 27. ✅ Influencer mapping complete. 🚩 Distribution path decision awaited (no urgency)
+- **cybersecurity-hardening** (P3): ✅ All tiers complete + messaging templates. 🚩 Tier 1 approval awaited (before execution)
+- **seedwarden** (P5): ✅ Phase 2 photography plan + Phase 3 transition. ✅ Phase 1 production-ready. 🚩 Tag corrections + Etsy verification (user action)
+- **open-repo** (P6): ✅ PR #1 open, 194/198 tests passing, Phase 5 research done. 🚩 Awaiting maintainer PR merge
+- **mfg-farm** (P4): ✅ Business plan + CadQuery designs + listings complete. 🚩 Test print required (user action)
+- **All others**: Complete or paused (awaiting user action)
 
-**Usage**: Sonnet 47.6% (from Session 534). Parallel agents completed 3 independent research tasks efficiently. No additional usage impact beyond normal work.
+**Usage**: Sonnet 47.6% (2,391,297 tokens) | All-models 59.0% ← Updated at session end. Two parallel agents (stockbot, resistance-research) completed expansion + tracking work. Efficient parallel execution; no threshold concerns.
 
 ---
 

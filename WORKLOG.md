@@ -4,6 +4,32 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 536 (Autonomous ticker training + tracker updates before market open)
+
+**Status**: ✅ **PRE-MARKET READINESS WORK COMPLETE** — Two parallel subagents expanded stockbot portfolio (5 new tickers, 62→67 total) and updated resistance-research trackers with April 2026 civic developments. All 67 tickers trained and wired. Gate 1 projection: 134 trades/month (4.5x threshold). Trackers current through April 27. System ready for user engine restart before 2026-04-28 09:30 ET market open (~15 hours away).
+
+**What was done**:
+
+1. ✅ **Stockbot Ticker Expansion** (Agent: stockbot)
+   - Trained 5 new tickers: HD, LMT, UPS, REGN, FDX (retail, defense, logistics, biotech coverage gaps)
+   - Expanded from 62→67 active sessions in active-sessions.json
+   - All 5 models wired to ensemble_stackers registry
+   - Gate 1 projection: 67 tickers × 2 rt/month = 134 rt/month (4.5x the 30 rt/month threshold)
+   - All 63 ensemble tests pass (verified integration)
+   - Commit: d76c11b
+
+2. ✅ **Resistance-Research Tracker Updates** (Agent: resistance-research)
+   - Updated first-amendment-suppression.md: 1 new entry (LAPD journalist assault April 11, connected to 10th Circuit ruling)
+   - Updated environmental-rollbacks-tracker.md: 2 new entries (EPA coal ash CCR rollback April 13, plastic pyrolysis reclassification April 15)
+   - Updated police-brutality-consent-decree-tracker.md: 1 entry updated (LAPD section with April 11 data)
+   - All existing entries verified as accurate (no broken references or outdated info)
+   - Trackers current through April 27 with rich April 2026 civil developments documented
+   - Commit: 0810fa3
+
+**Next action**: User engine restart (before 2026-04-28 09:30 ET) to begin paper trading with full 67-ticker portfolio.
+
+---
+
 ## 2026-04-27 (Session 535 — Autonomous parallel research: Phase 2 deepening across 3 projects)
 
 **Status**: ✅ **PHASE 2 EXPANSION & PREPARATION WORK COMPLETE** — Three parallel subagents completed autonomous research and planning for resistance-research (Phase 2 expansion), seedwarden (Phase 2 implementation), and stockbot (multi-ticker scaling). All high-priority projects remain blocked on user action (engine restart, distribution decision). System ready for market open in ~15 hours.
