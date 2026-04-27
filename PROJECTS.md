@@ -744,27 +744,45 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Phase 3 revenue targets**: Affiliate $300–$800/month; total partnership revenue 20–35% of Phase 1-2 total. Phase 3 outreach timeline month-by-month for each seasonal window
   - **Status**: COMPLETE, committed to master
 
-**NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
+**✅ COMPLETED (Earlier Sessions — Phase 2 Research)**:
 
-- **Domain 27 — Higher Education and Academic Freedom** (Priority 1 for Phase 2 research)
-  - **Scope**: The assault on universities is operating on four simultaneous tracks: (1) federal funding leverage ($2.2B frozen at Harvard, $220M Columbia settlement, State Department proposing cuts to 38 universities over DEI hiring), (2) DEI prohibition producing preemptive self-censorship even where no legal mandate applied, (3) student visa revocations and political detention targeting campus activists (Khalil, Oztürk, Mahdawi, Khan Suri cases already in litigation tracker), (4) demands for "unprecedented" administrative control over admissions and curriculum as conditions of funding restoration.
-  - **Gap**: No existing domain addresses the democratic function of universities or the federal funding leverage mechanism as ideological control.
-  - **Sourcing**: Over one-third of faculty report declining academic freedom; over half report self-censoring. High-volume primary documentation available (Harvard/Columbia settlements, State Dept letters, AAUP surveys, Freedom House 2026 report).
-  - **Status**: QUEUED (identified by Session 504 civic tracker analysis)
+- ✅ **Domain 27 — Higher Education and Academic Freedom** (COMPLETE — Session 510)
+  - **Deliverable**: `domains/domain-27-higher-education-and-academic-freedom.md` (9,226 words, 7 sections)
+  - **Coverage**: Four-track threat diagnosis (funding leverage, DEI/self-censorship, student visa detentions, administrative capture), evidence base (Harvard/Columbia cases, State Dept. correspondence), democratic functional impact, reform pathways, international precedents (Hungary, Germany, EU, Canada), implementation timeline
+  - **Status**: ✅ COMPLETE, production-ready
 
-- **Domain 29 — Prosecutorial Weaponization and DOJ Capture** (Priority 2 for Phase 2 research)
-  - **Scope**: SPLC indictment (April 21, 2026) is the landmark case — a civil rights organization operating an informant program for decades, now federally charged for that program, with FBI Director Kash Patel personally announcing charges. This operates at the charging stage before courts are involved, using the criminal charging power as a suppression mechanism against civil society.
-  - **Gap**: This is functionally distinct from Domain 6 (Judicial Independence) and operates at charging stage. Combined with Nashville vindictive prosecution finding, DOJ investigations of Democratic members of Congress, and Kash Patel personal defamation suits against journalists, there is a documented pattern with no equivalent in the current 26-domain framework.
-  - **Sourcing**: SPLC indictment (April 21), Just Security analysis (Weissmann), Nashville Crenshaw finding (April 2026), DOJ investigations of Democrats, Kash Patel litigation.
-  - **Urgency**: High — May Day 2026 potential for protest-related prosecutions creates immediate relevance.
-  - **Status**: QUEUED (identified by Session 504 civic tracker analysis)
+- ✅ **Domain 28 — War Powers and Venezuela Military Unilateralism** (COMPLETE — Session 506)
+  - **Deliverable**: `domains/domain-28-war-powers-venezuela-military-unilateralism.md` (5,600 words)
+  - **Coverage**: Arrest-operation legal theory, Senate/House vote analysis, WPR elimination implications, structural reform pathways
+  - **Status**: ✅ COMPLETE, production-ready
 
-- **Domain 28 — War Powers and Venezuela Military Unilateralism** (Priority 3 for Phase 2 research)
-  - **Scope**: January 3, 2026 capture of Venezuela's President Maduro without congressional authorization — characterized as an "arrest operation" to avoid the War Powers Resolution — produced documented Senate and House votes (Senate 51-50 blocked with VP Vance tiebreaker; House 215-215 failed). The administration's legal theory, if accepted, would eliminate the War Powers Resolution for any military operation framed as law enforcement.
-  - **Gap**: This extends Domain 19f (War Powers Reform, Session 502) from structural proposal to operational live case. The legal precedent is actively being set.
-  - **Sourcing**: Senate/House vote records (January 2026), Al Jazeera/NPR reporting, legal analysis of arrest-operation framing.
-  - **Urgency**: Moderate — situation stable but legal precedent actively being set.
-  - **Status**: QUEUED (identified by Session 504 civic tracker analysis)
+- ✅ **Domain 29 — Prosecutorial Weaponization and DOJ Capture** (COMPLETE — Session 506)
+  - **Deliverable**: `domains/domain-29-prosecutorial-weaponization-and-doj-capture.md` (6,124 words)
+  - **Coverage**: SPLC indictment case study, charging-stage suppression mechanism, DOJ capture evidence, reform pathways
+  - **Status**: ✅ COMPLETE, production-ready
+
+**NEW ITEMS (Session 547 — Exploration Queue Refresh for Empty Queue)**:
+
+- **resistance-research: Implementation toolkit for institutional adoption** (Priority 1)
+  - **Scope**: Design action guides for how policy organizations, advocacy coalitions, state entities, and academic institutions should implement the 35-domain framework recommendations. (1) Legislative toolkit (how to use framework in bill drafting, legislative strategy, policy analysis), (2) Advocacy playbook (how to use framework for coalition messaging, influencer targeting, media strategy), (3) Academic integration (how universities integrate democratic renewal into curriculum, research programs), (4) State government adoption (how state legislatures use framework for policymaking), (5) Institutional resilience toolkit (how organizations prepare for capture/resistance scenarios detailed in framework)
+  - **Goal**: Bridge gap between proposal (what should be done) and execution (how organizations actually implement it). Each toolkit includes decision trees, templates, and case study integration points.
+  - **Expected output**: `implementation-toolkit.md` (3,500-4,500 words) + 5 sector-specific implementation guides (legislative, advocacy, academic, state government, institutional resilience) as companion files
+  - **Timeline**: 2-3 sessions
+  - **Status**: QUEUED
+
+- **stockbot: Post-Gate-2 live trading operations & performance analysis framework** (Priority 2)
+  - **Scope**: Once Gate 2 passes and live trading is approved, design the complete live trading operations suite: (1) Real-time P&L and position tracking dashboard architecture, (2) Alert trigger framework (drawdown limits, regime shifts, model drift), (3) Performance attribution analysis (win/loss drivers, regime performance, sector performance), (4) Automated optimization triggers (when to retrain, when to adjust position sizing, when to activate hedges), (5) Emergency response playbooks (what to do if circuit breaker trips, how to manually close positions, how to preserve evidence for post-mortems)
+  - **Goal**: Production-ready operations framework that ensures model performance is maintained and human oversight is maximized in live trading environment
+  - **Expected output**: `live-trading-operations-suite.md` (4,000-5,000 words) + operational checklists + emergency response decision trees
+  - **Timeline**: 2-3 sessions (available after Gate 2 pass)
+  - **Status**: QUEUED
+
+- **mfg-farm: Manufacturing automation & multi-printer scaling architecture** (Priority 3)
+  - **Scope**: Design the complete manufacturing and workflow automation path for scaling from single-printer prototype to 3-5 printer operation with <2 human FTE per 10K units/month. (1) Manufacturing workflow automation (file preparation, print queue management, post-processing), (2) Quality control architecture (layer adhesion testing, tolerance verification, surface finish inspection), (3) Fulfillment and logistics optimization (batch consolidation, packaging automation, shipping integration), (4) Multi-printer orchestration (load balancing across printers, material allocation, job scheduling), (5) Cost per unit as function of batch size and utilization (break-even analysis, margin optimization)
+  - **Goal**: Comprehensive design document for post-test-print ModRun launch that informs printer hardware selection, material suppliers, and operational process design
+  - **Expected output**: `manufacturing-automation-architecture.md` (4,000-5,000 words) + operational process diagrams + cost model spreadsheet
+  - **Timeline**: 2-3 sessions (available post-test-print)
+  - **Status**: QUEUED
 
 ---
 
