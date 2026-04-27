@@ -444,4 +444,48 @@ Former federal prosecutor Aaron Zelinsky identified that the bank fraud counts a
 
 ---
 
+---
+
+## April 27, 2026 Additions
+
+### A.1 Tenth Circuit Upholds $14 Million Verdict Against Denver — *Epps v. City of Denver* (April 21, 2026)
+
+**What happened**: On April 21, 2026, the Tenth Circuit Court of Appeals upheld a 2022 jury verdict holding the City of Denver and one of its officers liable for unconstitutional force and First Amendment violations against 12 peaceful protesters during the 2020 George Floyd demonstrations. The jury had awarded $14 million in damages. The Tenth Circuit rejected all of Denver's challenges, including a claim that the officer was entitled to qualified immunity.
+
+**Legal significance**: The Tenth Circuit's opinion articulates a standard directly applicable to current protest policing: "the use of less-lethal munitions — as with any other type of pain-inflicting compliance technique — is unconstitutionally excessive force when applied to an unthreatening protester who has neither committed a serious offense nor attempted to flee." This formulation is important because it addresses the precise scenario documented at the No Kings protests (Section 2.4) — deployment of crowd-control munitions against protesters who had not committed serious offenses. The qualified immunity rejection is equally significant: the court found a clearly established right, removing officers from the immunity shield in protest-policing contexts. The ruling creates circuit-level precedent on both the First Amendment and excessive force standards in protest contexts.
+
+**Connection to current enforcement pattern**: The Denver ruling stands in direct tension with the Ninth Circuit's March 26, 2026 decision staying lower court restrictions on federal agents' use of tear gas outside the Portland ICE facility (see Section 2.4 and Section 5.2). Both circuits are now addressing whether crowd-control munitions deployed against protesters without prior dispersal orders or evidence of serious offenses constitute constitutional violations. The Ninth Circuit's pending en banc resolution will determine whether the constitutional standard recognized in Denver extends to federal agents.
+
+**Sources**: [ACLU of Colorado — press release](https://www.aclu-co.org/press-releases/federal-appeals-court-upholds-decision-against-city-of-denver-and-denver-police-in-protest-case/) | [Colorado Springs Gazette — ruling detail](https://gazette.com/2026/04/21/10th-circuit-upholds-verdict-against-denver-officer-for-protest-related-violations/) | [Denverite — verdict analysis](https://denverite.com/2026/04/22/denver-police-george-floyd-protests-appeal-fails/) | [OutFront Magazine — legal context](https://outfrontmagazine.com/federal-appeals-court-upholds-14-million-verdict-against-denver-for-police-brutality-during-2020-protests/)
+
+---
+
+### A.2 Supreme Court Declines *Villarreal v. Alaniz* — Qualified Immunity for Journalist Arrest Survives (March 23, 2026)
+
+**What happened**: On March 23, 2026, the Supreme Court declined to hear *Villarreal v. Alaniz*, a case in which Laredo, Texas journalist Priscilla Villarreal was arrested in 2017 for publishing news reports about a border agent's public suicide and a local car crash. The charges invoked a Texas "Improper Use of a Government Identification" statute. The Fifth Circuit, sitting en banc, ruled 9-7 that the arresting officers had qualified immunity because they could have "reasonably believed" they were enforcing the law.
+
+**Legal significance**: The Supreme Court's refusal to hear the case leaves in place a Fifth Circuit rule that is a serious threat to press freedom in the circuit's jurisdiction (Texas, Louisiana, Mississippi). Under the Fifth Circuit's ruling, a law enforcement officer can arrest a journalist for core First Amendment activity — publishing information obtained from a government official — so long as the officer can point to any statute that the activity arguably violated, regardless of whether that statute's application is itself constitutionally valid. This "any statute = no liability" qualified immunity doctrine effectively immunizes retaliatory journalist arrests within the circuit.
+
+**Justice Sotomayor's dissent**: Justice Sotomayor dissented from the denial of certiorari. She wrote that under the Fifth Circuit's formulation, "police officers may arrest journalists for core First Amendment activity so long as they can point to a statute that the activity violated," and that this rule "creates a perverse scheme in which officials can arrest someone for protected activity and use qualified immunity to avoid liability by citing back to that statute." The Reporters Committee for Freedom of the Press argued in an amicus brief that the ruling "threatens to muzzle the gathering and reporting of news and cannot be reconciled with the most basic constitutional guarantee of a free press."
+
+**National implications**: The Fifth Circuit's rule applies in three states. But as the pattern of journalist arrests expands (Don Lemon and Georgia Fort under the FACE Act — Section 1.6; Seth Harp subpoena — Section 1.8), the question of whether qualified immunity shields the arresting officers from civil liability becomes increasingly important. If an officer can arrest a journalist without Fourth Amendment liability as long as any statute is invoked, the deterrent that civil rights litigation provides against retaliatory arrests is substantially weakened. The Hill called SCOTUS's refusal to hear the case "catastrophic" for press freedom.
+
+**Sources**: [NPR — SCOTUS denial](https://www.npr.org/2026/03/23/nx-s1-5757440/supreme-court-press-freedom) | [RCFP — amicus brief](https://www.rcfp.org/briefs-comments/villarreal-v-alaniz/) | [SCOTUSblog — denial of cert](https://www.scotusblog.com/2026/03/court-reverses-ruling-on-qualified-immunity-and-denies-review-of-death-row-case-and-first-amendment-challenge-by-citizen-journalist/) | [The Hill — editorial analysis](https://thehill.com/opinion/judiciary/5826184-texas-law-muzzles-journalists/)
+
+---
+
+### A.3 *Accountability Now USA v. National Park Service* — Anti-Trump Demonstration and First Amendment Enforcement (April 2026)
+
+**What happened**: Demonstrators with Accountability NOW USA, a group maintaining a permitted anti-Trump demonstration on Constitution Avenue in Washington, D.C. (begun March 4, 2026), were threatened by the National Park Service with enforcement action over two small signs displayed at the demonstration. The ACLU-DC filed suit on behalf of the demonstrators, challenging the NPS enforcement threats as a First Amendment violation.
+
+**Significance**: This case documents a pattern of NPS-level pressure against anti-administration demonstrations in the National Mall area — the geographic heart of constitutionally protected assembly. A permitted demonstration facing enforcement threats for sign content is textbook viewpoint discrimination under the First Amendment. The case is distinct from the protest-crackdown cases involving crowd-control munitions (Sections 2.3, 2.4) in that it involves administrative harassment of a permitted, peaceful, sustained demonstration — a different but equally significant suppression mechanism.
+
+**Current status**: Lawsuit filed. NPS has not publicly responded. Case pending as of April 27, 2026.
+
+**Sources**: [ACLU-DC — press release](https://www.acludc.org/press-releases/anti-trump-demonstrators-sue-over-first-amendment-violation-based-on-false-obscenity-claims/)
+
+---
+
+*Updated April 27, 2026. Additions: Section A.1 (10th Circuit Denver ruling — April 21); Section A.2 (SCOTUS Villarreal cert denial — March 23); Section A.3 (Accountability Now NPS enforcement threat suit).*
+
 *This document is intended as a factual reference. It reflects verified reporting and legal records as of April 27, 2026. Confidence is high for documented court proceedings and verified reporting from named outlets; moderate for ongoing litigation where status may have changed. Verify current case status with CourtListener, PACER, and the sources linked above before relying on this document in legal or advocacy contexts.*

@@ -4,7 +4,7 @@ subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
 last_updated: "2026-04-27"
-april_2026_entries: "entries 25–27 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup"
+april_2026_entries: "entries 25–28 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup; entry 28 (OOOO methane flaring rule) added April 27"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
 sources:
@@ -443,6 +443,28 @@ The U.S. formally re-withdrew from the Paris Agreement on Climate Change. The wi
 ---
 
 ## VI-A. April 2026 Additions
+
+### 28. Oil and Gas Methane Emissions Rule — OOOO Standards Weakened (April 4, 2026)
+**Rule**: Reconsideration of Clean Air Act NSPS OOOO Standards for Oil and Natural Gas — Flaring and Vent Gas Monitoring Revisions
+**Code**: 40 CFR Part 60, Subparts OOOO and OOOOa
+**Agency**: EPA
+**Status**: [FINAL — effective April 4, 2026]
+
+**Dates**: Industry petitions for reconsideration filed following Biden EPA's December 2023 methane rule. EPA granted reconsideration May 6, 2024. Proposed revisions published December 2024. Final rule issued April 4, 2026.
+
+**What changed**: EPA finalized two specific technical revisions to the Biden-era methane rule for oil and gas operations: (a) loosened temporary flaring provisions for "associated gas" — the gas that naturally escapes during oil extraction — in situations where operators claim pipeline capacity is unavailable; (b) weakened continuous monitoring requirements for the net heating value of vent gas from flares and enclosed combustion devices. The practical effect: oil and gas operators gain additional flexibility to burn off (flare) excess gas rather than capture it, and the monitoring requirements that would have tracked whether flares are operating efficiently have been relaxed.
+
+**Stated justification**: EPA framed the rule as providing "flexibility to oil and gas operators" in response to industry claims that the Biden rule's technical specifications were operationally impractical. The agency estimated the rule saves the oil and gas industry $2.5 billion over 2024–2038, equivalent to $208 million per year.
+
+**Real-world impact**: Flaring releases not only CO2 but also uncombusted methane (when flares operate improperly), benzene, and other volatile organic compounds. Communities near flare sites — disproportionately low-income and communities of color in oil-producing regions — face elevated air quality risks when flaring increases. The Sierra Club's Director of Beyond Fossil Fuels Policy characterized the rule as "a massive step backward for public health, the climate, and economic common sense," noting that "allowing more flaring will drive up harmful emissions, worsening smog and soot pollution in already overburdened communities while accelerating the climate crisis." The weaker monitoring requirements mean that even when flares are operating inefficiently (releasing more methane than a properly burning flare would), operators face reduced detection risk.
+
+**Context within the tracker**: This rule weakens enforcement of the OOOO methane standards at the same time as: (a) the Waste Emissions Charge (entry 10) has been functionally eliminated; (b) the Endangerment Finding (entry 1) has been rescinded; and (c) EPA enforcement capacity has collapsed (entry 12, Q1 2026: $3.37 million total civil penalties). Together, these three simultaneous moves remove the financial penalty, the monitoring obligation, and the enforcement infrastructure for methane control in the oil and gas sector.
+
+**Litigation**: Environmental groups including EDF and the Sierra Club have signaled intent to challenge. No litigation filed as of April 27, 2026; the rule was finalized April 4, 2026.
+
+**Sources**: [Sierra Club — press release](https://www.sierraclub.org/press-releases/2026/04/trump-administration-finalizes-methane-rule-will-loosen-restrictions-gas) | [Harvard EELP — OOOO tracker update](https://eelp.law.harvard.edu/epa-finalizes-weakened-standards-for-oooo-rules/) | [EPA — 2026 final rule page](https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/2026-final-rule-reduce-burden-oil-and) | [CleanTechnica — analysis](https://cleantechnica.com/2026/04/07/trump-administration-finalizes-methane-rule-that-will-loosen-restrictions-on-gas-flaring-increase-pollution/)
+
+---
 
 ### 25. Risk Management Program (RMP) — Chemical Accident Prevention Rollback
 **Rule**: Accidental Release Prevention Requirements: Risk Management Programs Under the Clean Air Act; Common Sense Approach to Chemical Accident Prevention

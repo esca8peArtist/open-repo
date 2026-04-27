@@ -15,7 +15,7 @@ sources_verified: true
 
 # Police Brutality Consent Decree Tracker
 
-*Last updated: April 27, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026); Oakland Open Research Thread 8 updated (charter reform and NSA exit timeline).*
+*Last updated: April 27, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Pattern 6 added (10th Circuit Denver ruling, circuit split on protest policing, cross-reference to first-amendment-suppression.md Section A.1); Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026); Oakland Open Research Thread 8 updated (charter reform and NSA exit timeline).*
 
 **Lead finding**: The May 21, 2025 Trump DOJ action — simultaneously withdrawing from two proposed consent decrees, retracting findings of unconstitutional policing in eight jurisdictions, and closing pattern-or-practice investigations in six cities — was the largest single rollback of federal police oversight in U.S. history. It was not aberrational. It was the culmination of a strategy that began on January 22, 2025, and continues through systematic defunding of the Civil Rights Division's enforcement capacity. The cities left behind either persist under older, pre-Trump-era decrees with diminishing federal support, or are relying on local political commitments that carry no legal enforcement weight.
 
@@ -330,6 +330,18 @@ The 36% drop in federal excessive-force prosecutions to 54 cases in 2025 — and
 ### Pattern 5 — Genuine Success Cases as Counterweight
 
 Newark (terminated 2025), New Orleans (terminated 2025), and Seattle (terminated 2025) demonstrate that consent decrees can achieve their stated goals. All three shared: consistent leadership, genuine political buy-in at the executive level, adequate resourcing of the reform implementation effort, and willingness to engage honestly with monitor findings over extended periods. These cases are not merely public relations counterweights — they establish that the consent decree mechanism itself is not the problem. The problem is defiance, disinvestment, and capture.
+
+### Pattern 6 — Circuit Split on Protest Policing Standards Creates Uneven Accountability (added April 27, 2026)
+
+The Tenth Circuit's April 21, 2026 ruling in *Epps v. City of Denver* — upholding a $14 million verdict against Denver for First Amendment violations and excessive force against 2020 protesters — establishes in the Tenth Circuit that use of less-lethal munitions against unthreatening protesters who have not committed a serious offense is unconstitutionally excessive force. The court also rejected the qualified immunity claim, finding the constitutional right clearly established.
+
+This ruling now stands in direct tension with the Ninth Circuit's March 26, 2026 decision staying lower court restrictions on federal agents' use of tear gas outside the Portland ICE facility. The Ninth Circuit has not yet issued its en banc ruling.
+
+The practical consequence: officers engaged in the same conduct — deploying crowd-control munitions against protesters who have not committed serious offenses — face civil liability in the Tenth Circuit but not necessarily in the Ninth Circuit while the stay is in effect. This creates a geographic zone of differential accountability that directly undermines the deterrent function of civil rights litigation. Cities in the Tenth Circuit (Colorado, Kansas, New Mexico, Oklahoma, Utah, Wyoming) now have strong circuit-level precedent establishing excess-force standards; cities in the Ninth Circuit (California, Oregon, Washington, Arizona, Nevada, Montana, Idaho, Hawaii, Alaska) have that precedent in tension with the federal government's stay.
+
+The Denver ruling also reinforces the consent decree accountability function: had Denver been under a consent decree with explicit crowd-management force restrictions, the violations would have triggered contempt proceedings rather than years of civil litigation. The absence of any active federal consent decree over LAPD and SPD (both terminated) means those departments face the slower private litigation pathway, not the faster contempt mechanism.
+
+**Sources**: [ACLU of Colorado — Epps ruling](https://www.aclu-co.org/press-releases/federal-appeals-court-upholds-decision-against-city-of-denver-and-denver-police-in-protest-case/) | [Colorado Springs Gazette — 10th Circuit detail](https://gazette.com/2026/04/21/10th-circuit-upholds-verdict-against-denver-officer-for-protest-related-violations/)
 
 ---
 

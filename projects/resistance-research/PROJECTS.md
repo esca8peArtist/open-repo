@@ -32,11 +32,11 @@
 | Tracker | Last Updated | Currency | Next Action |
 |---------|-------------|----------|-------------|
 | `litigation-tracker-2026.md` | April 13 (full); April 27 (SB4/CBP One) | Moderately stale | Add: SPLC indictment, Crenshaw/Nashville ruling, April 28 Xinis hearing outcome |
-| `environmental-rollbacks-tracker.md` | April 27, 2026 | Current | Monitor Endangerment Finding D.C. Circuit |
-| `police-brutality-consent-decree-tracker.md` | April 27, 2026 | Current | Monitor Cleveland exit motion ruling |
+| `environmental-rollbacks-tracker.md` | April 27, 2026 | Current | Added: Entry 28 (EPA OOOO oil/gas methane rule, April 4). Monitor Endangerment Finding D.C. Circuit |
+| `police-brutality-consent-decree-tracker.md` | April 27, 2026 | Current | Added: Pattern 6 (10th Circuit Denver ruling, circuit split). Monitor Cleveland exit motion ruling |
 | `consent-decree-defiance-tracker.md` | April 12, 2026 | Moderately stale (15 days) | Update: Seventh Circuit pending ruling notation; date stamp |
 | `surveillance-tracking.md` | April 26, 2026 | Mostly current | Add: Flock Safety LPR contract changes; Section 702 final outcome |
-| `first-amendment-suppression.md` | April 27, 2026 | Current | SPLC indictment to add as major new entry |
+| `first-amendment-suppression.md` | April 27, 2026 | Current | Added: 10th Circuit Denver ruling (A.1), SCOTUS Villarreal qualified immunity denial (A.2), Accountability NOW NPS suit (A.3) |
 
 ---
 
@@ -94,6 +94,21 @@ Completed: Session 507 (April 27, 2026). Updates made: (1) SPLC indictment — n
 **[QUEUED] Consent decree defiance tracker refresh**
 
 Update: Seventh Circuit Castañon Nava pending ruling status; date stamp; note that EPA environmental consent decree question (whether existing cleanup decrees are being terminated, not just new ones refused) remains an open research thread from Section 4.
+
+---
+
+### HIGH PRIORITY — Phase 2 Domain Candidates (identified Session 507, April 27)
+
+**[COMPLETE] Phase 2 Expansion Discovery — `phase-2-expansion-candidates.md`**
+
+Completed: Session 507 (April 27, 2026). Four candidate domains identified and scoped, ranked by urgency. All four fill genuine gaps not covered by any of the 28 existing domains:
+
+1. **Domain A (rank 1): Trade Policy and Economic Sovereignty** — IEEPA Supreme Court ruling (Feb 20), Section 122 pivot, $170B in tariffs, 145% China tariffs, 61% small business negative impact, GDP drag. Constitutional crisis in progress. Sourcing: high. Scope: 4,000–5,500 words.
+2. **Domain B (rank 2): Healthcare Access Implementation — OBBBA Medicaid Crisis** — $911B Medicaid cuts, 11.8M coverage losses projected, 446 hospitals at risk, rural hospital closures documented, work requirements (80 hrs/month) effective January 2027, HHS guidance due June 2026 (advocacy window open now). Sourcing: high. Scope: 4,500–6,000 words.
+3. **Domain C (rank 3): AI Governance and Algorithmic Democracy** — FBI buying location data from brokers (Patel congressional testimony April 2026), EFF FOIA suit against CMS for Medicaid AI decision records, Trump AI framework preempting state regulation, automated denial of benefits without due process. Sourcing: medium. Scope: 4,000–5,000 words.
+4. **Domain D (rank 4): Disability Rights and Benefits Access** — SSA 7,000-job cut (12% reduction), SSDI processing delays, dropped 20%-cut rule (advocacy win to document), Medicaid work requirement threat to disability community. Sourcing: medium. Scope: 3,500–4,500 words.
+
+Do NOT start research until user selects a domain.
 
 ---
 
