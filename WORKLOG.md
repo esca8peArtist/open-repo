@@ -4,6 +4,39 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Afternoon (Session 521) — Parallel Subagent Work: Stockbot Multi-Ticker Integration + Domain Update (Trade Policy)
+
+**Session Type**: Autonomous (headless on Raspberry Pi 5)
+**Duration**: ~15 min (parallel subagent execution) + 5 min (log/commit)
+**Work**: Two independent agents (stockbot, resistance-research) executing in parallel
+
+### Session 521 Completion Summary
+
+✅ **stockbot: Multi-Ticker Integration COMPLETE**
+- **Agent**: stockbot subagent (Session 521)
+- **Deliverable**: `/projects/stockbot/scripts/wire_multiticker_sessions.py` — idempotent script to activate all 11 multi-ticker sessions
+- **Database state**: 11 active model_runs rows (AAPL + MSFT + GOOGL + NVDA + AMZN + META + JPM + XOM + JNJ + UNH + TSLA), each with unique `strategy="stacker:<uuid>"`
+- **Sessions config**: `/projects/stockbot/active-sessions.json` updated to 11 entries
+- **Test coverage**: Created `tests/test_multiticker_wiring.py` with 107 parametrized integration tests — **all pass**
+- **Full test suite**: **140 tests, 0 failures** (no regressions)
+- **Status**: Ready for engine restart before 2026-04-28 09:30 ET. On startup, `_resume_active_sessions()` will instantiate 11 concurrent `TradingSession` objects with deterministic 0-29s stagger to avoid Alpaca burst limits.
+- **Next steps**: User restarts engine; paper trading resumes across 11-ticker portfolio with aggregate expected ~8 trades/month.
+
+✅ **resistance-research: Domain 23 Update COMPLETE (April 2026 Trade Policy Developments)**
+- **Agent**: resistance-research subagent (Session 521)
+- **Domain**: Domain 23 — Trade Policy, Tariff Unilateralism, and Economic Sovereignty
+- **Update scope**: New "April 2026 Update" section (~1,600 words, 14 new source citations)
+- **Developments captured**:
+  - **Section 122 Oral Argument (April 10)**: CIT hearing exposed government's weak legal position on tariff authority. Judges questioned DOJ's balance-of-payments theory; no ruling yet but evidence documented.
+  - **IEEPA Refund Portal (April 20)**: $166–175B owed to 330K importers. CBP's CAPE portal launched but failed on day one (overloads, duplicate-ID errors). Only covers ~63% of eligible entries.
+  - **Section 301 Replacement Hearings (April 28 + May 5)**: USTR investigating 16-country manufacturing overcapacity + 60-country forced labor. No rate cap, no time limit. Yale Budget Lab: $1,338/household cost if extended; 2.3% disposable income loss regressive impact.
+  - **Trade Review Act status**: S.1272 remains stalled in Finance Committee (legislative accountability gap confirmed).
+- **Sources**: 10 new citations (CIT analysis, CBP/CAPE updates, Yale Budget Lab, USTR documentation)
+- **Status**: Committed as `content(domain-23): April 2026 update — Section 122 oral argument, IEEPA refund portal, Section 301 hearings`. Demonstrates the Domain Update workflow for remaining 8 flagged domains.
+- **Next steps**: Optional — Domain Updates on 8 remaining domains (Domain 1, 2, 5, 19f, and others per April 2026 developments)
+
+---
+
 ## 2026-04-27 Late Morning (Session 520) — Parallel Subagent Work: Stockbot Multi-Ticker Training + Distribution Infrastructure Prep
 
 **Session Type**: Autonomous (headless on Raspberry Pi 5)  

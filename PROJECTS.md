@@ -65,10 +65,10 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1-5 COMPLETE, **29-Domain Diagnostic Framework COMPLETE** (Sessions 502-512) — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready, Phase 2 expansion Domain 23 (Trade Policy) COMPLETE
+**Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE** (Sessions 502-520) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), Domain 23 April 2026 update complete (Session 521)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 520 (2026-04-27): Distribution Infrastructure Verification COMPLETE** — All 34 domain documents verified production-ready. Three new infrastructure files created: `DISTRIBUTION_READINESS.md` (domain checklist), `DISTRIBUTION_LAUNCH_CHECKLIST.md` (user-facing operational guide), `DISTRIBUTION_PHASE_ORDER.md` (domain sequencing for all three paths). All templates (7 Substack, 8 Reddit, 11 institutional outreach) ready for personalization. Framework now 35 domains complete (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33-37). **User decision required: Path A (immediate distribution) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (continue updates before distribution).** Once user decides, orchestrator can execute Phase 1 immediately. 
+**Current focus**: **Session 521 (2026-04-27): Domain 23 April 2026 Update COMPLETE** — Domain 23 (Trade Policy) updated with Section 122 oral argument (April 10), IEEPA refund portal launch + failure (April 20), and Section 301 replacement hearings (April 28+). Demonstrates the Domain Update workflow for remaining 8 flagged domains. **Session 520 (2026-04-27): Distribution Infrastructure Verification COMPLETE** — All 34 domain documents verified production-ready. Three new infrastructure files created: `DISTRIBUTION_READINESS.md` (domain checklist), `DISTRIBUTION_LAUNCH_CHECKLIST.md` (user-facing operational guide), `DISTRIBUTION_PHASE_ORDER.md` (domain sequencing for all three paths). All templates (7 Substack, 8 Reddit, 11 institutional outreach) ready for personalization. Framework now 35 domains complete (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33-37). **User decision required: Path A (immediate distribution) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (continue updates before distribution).** Once user decides, orchestrator can execute Phase 1 immediately. 
 - **Domain 26 — COMPLETE: Government Accountability and Institutional Resilience** (4,700 words, fully sourced):
   - **26-DOMAIN DIAGNOSTIC FRAMEWORK NOW COMPLETE** (all domains + implementation architecture fully researched)
   - **Central finding**: Accountability failures in 2026 are coordinated across every layer of the oversight system simultaneously
@@ -268,13 +268,13 @@
 **Status**: Active — paper trading live, **Gate 1 INFEASIBLE with current design — multi-ticker pivot required**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading live (AAPL_h10_lgbm_ho stacker, 1 BUY open). Engine OFFLINE — user restart required before 2026-04-28 09:30 ET. **Gate 1 feasibility assessment COMPLETE (Session 519)**; **multi-ticker training COMPLETE (Session 520)**. 
+**Current focus**: Paper trading live (AAPL_h10_lgbm_ho stacker, 1 BUY open). Engine OFFLINE — user restart required before 2026-04-28 09:30 ET. **Gate 1 feasibility assessment COMPLETE (Session 519)**; **multi-ticker training COMPLETE (Session 520)**; **multi-ticker integration COMPLETE (Session 521)**.
 - Single-ticker rate: 0.17/month. Gate 1 requires 30/month (175x gap).
 - **Session 520 multi-ticker training**: 10 new stackers trained (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA). 11-ticker portfolio projects to ~8/month (47x improvement, but still 4x short of Gate 1).
+- **Session 521 integration**: All 11 sessions wired into database model_runs table. `/projects/stockbot/active-sessions.json` updated. Created 107 parametrized integration tests — all pass. Full test suite: 140 tests, 0 failures.
 - **Two options to reach Gate 1**: (A) scale to ~40 tickers (pipeline ready, each trains in ~90s); (B) reduce threshold multiplier (requires retrain + revalidation).
-- New script: `scripts/train_multiticker_stackers.py`. Models registered in database.
-- **Next agent task**: Wire 10 new tickers into TradingSession config, restart multi-ticker paper trading.
 - See `projects/stockbot/may-12-feasibility-checkpoint.md` for full analysis.
+- **Next step (user action)**: Restart engine before 2026-04-28 09:30 ET. Command: `.venv/bin/python scripts/run_live_trading.py` (from projects/stockbot)
 
 **Paper Trading Status (Session 519 — 2026-04-27 07:11 UTC — Day 2)**:
 - Paper trading started: 2026-04-26
