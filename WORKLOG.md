@@ -4,6 +4,32 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 — open-repo — Phase 5 Offline Export Production Architecture
+
+**Deliverable**: `projects/open-repo/phase-5-offline-export-architecture.md` (~3,600 words, production-ready)
+
+**Builds on**: `phase-5-kiwix-architecture.md` (existing, 3,933 words). Zero duplication — this document goes deeper on four gaps that prior research left as stubs.
+
+**Key findings**:
+
+1. **ZIM Metadata Precision** — Documented all mandatory vs optional metadata fields with exact formats. The `Name` field must follow `[publisher]_[language]_[flavour]` naming convention (no underscores within parts). `Illustration_48x48` (48×48 PNG) is mandatory for Kiwix catalog visibility. UUID must be stable across monthly export runs to enable in-app update detection — requires storing UUID in `zim_exports` table. `LongDescription` is contested (see zim-tools issue #408) but include it.
+
+2. **Incremental Strategy** — Binary ZIM diffs (zimdiff/zimpatch) are not production-ready as of 2025; checksum mismatches persist on large files. Correct strategy: versioned full exports with the openZIM ZIM Updates v2 retention policy (keep current + most recent from two previous months + anything ≤30 days). Export scoping by flavour (`nopic`, `agriculture`, `recipes`, `all`) serves as practical delta proxy. `export_content_snapshots` table preserves version data for future delta analysis.
+
+3. **CDN Strategy** — Recommended Cloudflare R2 for Phase 5 MVP (zero egress, free 10 GB tier, no Bandwidth Alliance configuration required). Long-term: Backblaze B2 + Cloudflare via Bandwidth Alliance (zero egress, lower storage cost at scale). Do not use AWS S3 (egress cost prohibitive for public ZIM distribution). Three URL patterns: permanent `/latest` redirect, stable versioned URL (CDN-cacheable), pre-signed for analytics/access control. BitTorrent + `kiwix-seeder` for resilient community distribution (Phase 5.1).
+
+4. **OPDS Catalog Integration** — Documented the full `/catalog/v2` endpoint structure, how to self-host an OPDS feed with `feedgen`, the path to official Kiwix catalog inclusion (submit to `openzim/zim-requests`), and the Android Play Store restriction on third-party ZIM files (direct to F-Droid variant or in-app OPDS path).
+
+5. **Search Quality** — Xapian index quality depends on HTML rendering hygiene: strip navigation boilerplate from article HTML, ensure `get_title()` returns meaningful titles, include structured metadata as hidden text. Cold cache search ~7s, warm ~0.12s — document startup warmup pattern for kiwix-serve deployments.
+
+6. **Federation Integration** — Scoped `ExportConfig` with `LOCAL_ONLY` vs `FEDERATED` scopes. Federated items require attribution footer (CC-BY compliance). Cross-node OPDS discovery via `federation_sources` field in export catalog API response.
+
+7. **Update Mechanisms** — RSS/Atom feed (free, via existing OPDS endpoint), polling via export catalog API, optional webhook subscriptions. Per-platform update instructions for Kiwix desktop and kiwix-serve `--monitorLibrary` zero-downtime update pattern.
+
+**Effort estimate addendum**: 9–14 days additive to prior 15–23 day estimate → 24–37 days total for complete Phase 5.
+
+---
+
 ## 2026-04-27 Session 545 — Exploration Queue Execution: Phase 3 Prep + Growth Metrics + Feature Drift Detection
 
 **Status**: ✅ **THREE PARALLEL EXPLORATION ITEMS COMPLETE** — resistance-research monitoring infrastructure finalized; seedwarden growth metrics framework delivered; stockbot feature drift detection implemented.
