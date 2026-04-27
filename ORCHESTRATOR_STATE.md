@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-27T04:58:03Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-27T06:01:58Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 49.8% | Reset in 19h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 51.3% | Reset in 18h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -64,42 +64,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-1. ✅ `domains/domain-23-trade-policy-tariff-unilateralism.md` (8,849 words, production-ready)
-2. ✅ `democratic-renewal-proposal.md` (updated with Domain 23 integration)
+2. Georgetown CCF (state-by-state Medicaid impact analysis)
+3. CBO scoring and budget impacts
+4. Commonwealth Fund (work requirements evidence review)
+5. CBPP (procedural disenrollment analysis)
+6. State Health and Value Strategies (SHVS) — implementation timeline
+7. NIH/PMC — racial disparities in Medicaid unwinding
+8. National Health Law Program — procedural disenrollment by race
+9. Rural hospital data (Chartis Center, Families USA, National Rural Health Association)
+10. Medicaid litigation tracker (Georgetown CCF, Foley Hoag legal analysis)
+11. Institute for Responsive Government — voter registration/Medicaid nexus
+12. Agency guidance documents (CMS, HHS)
+
+**Deliverable**: 
+- ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` (6,142 words, production-ready)
+- Structure: Executive summary, Current Crisis, Root Causes (3 mechanisms), Structural Vulnerabilities (3), International Precedent, Reform Pathways (4), Implementation Timeline, Proposal Integration
+- Key finding: Work requirements function as enrollment barriers (not employment drivers), with documented precedent (Arkansas 18K disenrolled in 6 months, zero employment effect)
+- Democracy angle: Medicaid office voter registration infrastructure + work requirement disenrollment = coordinated removal of healthcare + voter registration access in same populations
+- June 2026 deadline: HHS must issue guidance by June 1, 2026 (creates advocacy window)
+- Integration: Connects to Domains 1, 6, 11, 22, 2, 5, 9
+
+**Files Written**:
+1. ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` (6,142 words)
+2. ✅ Updated `EXPLORATION_QUEUE.md` (added 3 new candidates)
 
 ---
 
-### Exploration Queue Maintenance
-
-**Task: Update EXPLORATION_QUEUE.md to reflect Domain 23 completion**
-
-**Changes**:
-- ✅ Status section updated to reflect 29-domain framework (Domain 23 completed Session 512)
-- ✅ Marked Candidate 1 (Trade Policy) as COMPLETED with key findings summary
-- ✅ Removed detailed Candidate 1 research questions (now superseded by Domain 23)
-- ✅ Renumbered Candidates 2→1 and Candidate 3→2 (Healthcare Access and State Legislative Autocratization)
-- ✅ Queue now has 2 remaining candidates for autonomous Phase 2 expansion work
-
-**Queue Status**: 2 active candidates queued (Healthcare Access is most time-sensitive with January 2027 deadline; State Legislative is state-level democratic angle). Domain 23 completion means 4 of the initial Phase 2 expansion candidates are now complete (Domains 23, 27-29).
-
----
-
-### Project Status Summary
+### Project Status Update
 
 **resistance-research**:
-- ✅ 29-domain diagnostic framework COMPLETE (Domains 1-22 base + Domain 19f + Domains 23, 27-29)
-- ✅ Phase 2 Priority 3 expansion partially complete (Candidates 1/Trade Policy done; Candidates 2-3/Healthcare + State Legislative queued)
-- ✅ Proposal fully integrated with all new domains
-- **Next**: User decision on distribution execution OR pick next Phase 2 candidate for expansion research
+- Domain 31 (Healthcare Access) — COMPLETE and production-ready
+- Framework now 30 domains (base 1-22 + 19f + 23, 27-29, 31 = 30-domain framework)
+- Phase 2 expansion: Candidate 1 complete, 4 candidates queued (Candidates 2-5)
+- **Next**: User decides (1) begin distribution execution for 29-domain proposal, OR (2) begin next Phase 2 expansion research (Candidate 2: State Legislative Autocratization is the next priority after healthcare)
 
-**stockbot**:
-- ⚠️ Engine offline (test contamination resolved per Session 511)
-- ⚠️ Requires restart before Monday 2026-04-28 09:30 ET (USER ACTION)
-- ⚠️ Gate 1 structural risk remains critical (30/month requirement vs. 2-3/month capacity)
-- ✓ May 12 feasibility checkpoint scheduled (2026-05-12)
-
-**All other projects**: Awaiting user input or manual actions (mfg-farm test print, seedwarden Etsy corrections, off-grid-living social media, etc.)
+**All other projects**: No change; awaiting user action
 
 ---
 
-**Status**: Domain 23 research complete, proposal integrated, framework now 29 domains. Ready for user to decide: (1) begin distribution execution, (2) pick next Phase 2 candidate for research, or (3) pause autonomous work and await user guidance.
+**Status**: Exploration queue augmented to 5 candidates; Domain 31 (Healthcare Access/OBBBA Medicaid Crisis) researched and production-ready. Framework now spans 30 domains. All work on resistance-research that is autonomous has been completed; further expansion requires user prioritization (distribution vs. continued research). Ready for user guidance.

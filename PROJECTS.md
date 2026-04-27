@@ -518,6 +518,33 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ~~**seedwarden: Phase 3 social media and paid-ads growth strategy**~~ — **Done (Session 501)**: `phase-3-social-media-growth-strategy.md` (4,866 words) — Complete Phase 3 roadmap for post-Phase 1 launch. Includes: (1) TikTok competitive analysis (top creators: @itsbreellis 772K, @thermal_and_oaks 367K; optimal format 30-60s educational; #homestead 5.4B views), (2) Instagram + Pinterest strategy (Pinterest is highest-ROI organic for Etsy; 33% more referral traffic than Facebook), (3) Creator breakdown (5 success traits: hyper-specific niche, practical content, 12-24mo consistency, email list ownership, $5-$15 price point), (4) Paid advertising strategy (Shopping/Gifts $0.34 CPC benchmark; 2.0x ROAS target; Pinterest CPA $8 most cost-effective), (5) Influencer partnerships (direct outreach model, 20-30% response rate, $100-$250 flat fee + commission), (6) Three-month phased implementation plan (Month 1: infrastructure, Month 2: test ads $300-500 + outreach, Month 3: scale winners kill losers). Ready for execution when Phase 1 converts.
 
+**NEW ITEMS (Session 516 — Civic Tracker Update & Path A/B Hybrid Decision)**:
+
+- **Domain 37 Research — Federal Executive Interference in 2026 Midterms** (CONDITIONAL — awaiting user Path A/B/Hybrid decision)
+  - **Status**: QUEUED (identified by Session 516 civic tracker analysis)
+  - **Urgency**: CRITICAL (November 2026 election, 6-month window)
+  - **Scope**: 3,500 words, 1-session research turnaround
+  - **Key mechanisms**: DOJ voter roll lawsuits, draft emergency EO (ban mail voting, force re-registration), election denier federal positions, ICE-at-polls threat, Bannon public suppression signals
+  - **Advocacy response**: Federal election takeover authority analysis, Section 3 litigation, injunction strategy, state-level blocking mechanisms
+  - **Natural distribution targets**: Common Cause, Protect Democracy, Democracy Docket, state AGs
+  - **Sourcing confidence**: HIGH (Protect Democracy, Democracy Docket, CAP, Votebeat, WBUR reporting all current)
+  - **Recommendation**: If user approves hybrid approach (Path A + Domain 37 parallel), research in next session; sequence into distribution before reaching election-protection organizations
+  
+- **Domain Updates — Content Maintenance** (triggered by Session 516 civic tracker findings)
+  - **Status**: QUEUED (identified by Session 516)
+  - **Scope**: Multiple domains affected by April-May 2026 developments
+  - **Content additions**:
+    - Domain 19f: Add Iran war case study (May 1 WPR deadline, Senate blocking pattern, Vance constitutional rejection)
+    - Domain 28: Cross-reference Iran as larger empirical instance  
+    - Domain 29: Add SPLC indictment (April 21) as case study for prosecutorial weaponization
+    - Domain 6 & 35: Trump v. Wilcox shadow-docket removal power ruling (Humphrey's Executor effectively overruled)
+    - Domain 1: SAVE Act Senate failure (4 GOP defectors) as coalition-fracture proof-of-concept
+    - Domains 21, 25: FISA Section 702 April 30 deadline outcome tracking
+    - Domain 33: 100+ bills in 15+ states targeting ballot initiatives in 2026 (strengthen empirical foundation)
+    - Domain 19: NATO withdrawal threats + Taiwan pressure + Iran geopolitical cascade
+  - **Estimated scope**: 2-4 sessions depending on depth of updates
+  - **Priority**: MEDIUM (post-distribution, but important for proposal currency)
+
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 
 - **Domain 27 — Higher Education and Academic Freedom** (Priority 1 for Phase 2 research)

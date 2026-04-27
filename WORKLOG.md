@@ -13483,3 +13483,101 @@ Queue now empty (3 items worked). Should add 2-3 new Phase 2 research candidates
 
 **Status**: Exploration queue augmented to 5 candidates; Domain 31 (Healthcare Access/OBBBA Medicaid Crisis) researched and production-ready. Framework now spans 30 domains. All work on resistance-research that is autonomous has been completed; further expansion requires user prioritization (distribution vs. continued research). Ready for user guidance.
 
+---
+
+## Session 516 — 2026-04-27 Morning — Civic Tracker Update + Exploration Queue
+
+**Duration**: ~50 min research
+**Token usage**: ~49K (within budget)
+
+### Orientation & Decision
+
+All projects at decision point:
+- **resistance-research**: Framework complete at 34 domains. User decision required: Path A (distribution now) vs Path B (continue research).
+- **stockbot**: Paper trading live, engine status RESOLVED (per BLOCKED.md Resolved Archive), next checkpoint 2026-05-12.
+- **cybersecurity-hardening**: Tier 1-3 distribution prep complete, awaiting user approval.
+- **mfg-farm**: Blocked on test print (user action).
+- **seedwarden**: Phase 1 awaiting user tag corrections + Etsy verification.
+- **open-repo**: PR #1 awaiting review/merge.
+- **off-grid-living, workout**: Awaiting user review/selection.
+
+**Assessment**: No real project work available (all await user action or external dependencies). Exploration queue exhausted (high-priority candidates researched, lower-priority items waiting for user Path A/B decision).
+
+**Decision**: Per session protocol, added new exploration work + civic tracker analysis to inform user decision.
+
+### Work Completed
+
+**1. Civic Tracker Update — April-May 2026 Developments**
+
+Spawned general-research agent to analyze emerging crises. Findings:
+
+**Key developments identified** (8 major developments):
+1. **War Powers deadline (May 1)** — Critical. Iran 60-day WPR clock expires ~May 1. Senate blocked 4 resolutions. VP Vance explicitly rejected WPR constitutionality. This is the empirical test case Domain 19f warned about.
+2. **SCOTUS Birthright Citizenship** — Major case (argued April 1, decision June/July). Broad skepticism across bench toward Trump administration's argument. Secondary implications for removal power + universal injunction scope.
+3. **SCOTUS Shadow Docket — Trump v. Wilcox Removal Power** — D.C. Circuit upheld Trump's removal of NLRB/MSPB members without cause. SCOTUS stayed reinstatement order April 9. Effectively overrules Humphrey's Executor without merits briefing. Direct precedent for expanded presidential removal authority.
+4. **DOJ Indictment of SPLC** — April 21, 11 federal counts based on informant program (routine federal LE practice). First major civil rights organization criminal prosecution in current political period. Case study for Domain 29 (Prosecutorial Weaponization).
+5. **WHCD Shooting** — April 25. Attack on Washington Hilton ballroom during WH Correspondents' Dinner. One Secret Service agent struck (non-fatal). Potential downstream: press freedom restrictions, civil liberties legislation impacts.
+6. **FISA Section 702 Reauthorization** — April 30 deadline. Johnson proposal: 3-year reauthorization WITHOUT warrant requirement. Procedural updates only (attorney-level approvals, monthly review). Just Security analysis: "straight reauthorization with procedural window-dressing."
+7. **2026 Midterm Election Interference Buildup** — Multiple tracks: DOJ suing 8 states for voter rolls, draft emergency EO (ban mail voting, force re-registration), election denier federal positions, SAVE Act (failed Senate 48-52 with 4 Republican defectors). Bannon public threat: "ICE will surround the polls come November."
+8. **NATO Withdrawal Threats + Iran Geopolitical Cascade** — Trump April 1 considered "absolutely" NATO withdrawal, walked back after Rutte meeting April 8. Xi/Putin coordinate pressure. Strait of Hormuz disrupted, 30+ vessels ordered to turn around, Iranian ships seized.
+
+**Domain impact analysis**:
+- Domain 19f (War Powers Reform): Iran provides empirical test case for abstract warnings. Needs content addition.
+- Domain 28 (War Powers / Venezuela): Now has larger companion case (Iran). Cross-reference recommended.
+- Domain 29 (Prosecutorial Weaponization): SPLC indictment is direct case study, not yet covered.
+- Domain 6 (Judicial Independence): Wilcox shadow-docket ruling + birthright citizenship case require updates.
+- Domain 35 (SCOTUS 2026 Term): Wilcox trajectory + birthright citizenship arguments are live Domain 35 material.
+- Domain 1 (Electoral Reform): SAVE Act's Senate failure (4 GOP defectors) shows coalition fracture, advocacy pressure point.
+- Domain 21 (Data Privacy / Surveillance): Section 702 outcome directly determines warrantless surveillance legal landscape.
+- Domain 25 (FBI/Intelligence Accountability): Same Section 702 impact + SPLC indictment politicization signal.
+- Domain 33 (State Legislative Autocratization): 100+ bills targeting ballot initiatives across 15+ states in 2026 alone (already within Domain 33 scope, but strengthens empirical foundation).
+- Domain 19 (National Security / Foreign Policy): NATO withdrawal threats + Taiwan pressure + Iran ceasefire affect treaty commitment subsection.
+
+**Gap analysis — new domains potentially warranted**:
+
+1. **Gap Candidate A — Federal Executive Interference in 2026 Midterms (STRONG CASE)**
+   - Qualitatively different from Domain 1 (structural reform vs. active executive interference)
+   - Mechanisms: DOJ voter roll lawsuits (8 states), draft emergency EO (ban mail voting, force re-registration), election denier federal positions, ICE-at-polls threat
+   - Time-bounded: November 2026 (6 months)
+   - **Scope**: Domain 37 — Federal Executive Interference in the 2026 Midterms (~3,500 words)
+   - Core sources identified: Protect Democracy, Democracy Docket, CAP, Votebeat, WBUR, legal analysis
+   - Priority: HIGH (maximum current urgency, election protection orgs are natural early distribution targets)
+   - **Recommendation**: Research in parallel with Phase A distribution to non-election targets. Sequence Domain 37 for insertion into distribution packet before reaching election protection organizations.
+
+2. **Gap Candidate B — Civil Society Targeting & Weaponized Prosecution (MODERATE CASE)**
+   - SPLC indictment represents new phase: criminal prosecution of civil society monitoring organizations
+   - Broader pattern: Big Law EO, university DEA funding cuts, NAACP DEI lawsuit
+   - Could be Domain 29 addendum (Domain 29b) or Domain 7 (Rights Protection) subsection
+   - Priority: MEDIUM-HIGH (significant escalation, but coverage may be achievable through existing updates)
+
+3. **Gap Candidate C — War Powers / Iran Case Study (NO NEW DOMAIN NEEDED)**
+   - Addendum to Domains 19f and 28
+   - Treat as content maintenance task, not research expansion
+   - Priority: LOW (for domain expansion) / HIGH (for content maintenance)
+
+**Recommendation to user**:
+- **Path A (distribution now)** is justified — framework is substantive at 34 domains, urgency high for reaching organizers/advocates before November 2026.
+- **Hybrid approach recommended**: Begin Phase A distribution to general audiences (law schools, think tanks, labor unions) while researching Domain 37 in parallel. Sequence Domain 37 into distribution before reaching election protection organizations specifically.
+- This captures maximum immediate impact (34-domain framework distributed to broad audiences) while adding targeted domain (37) for highest-urgency subset (election integrity orgs).
+
+**Files created**:
+- `projects/resistance-research/civic-tracker-session-516.md` (2,800 words, full source citations)
+
+### Exploration Queue Updated
+
+Added two new items:
+1. **Domain 37 Research — Federal Executive Interference in 2026 Midterms** (ACTIVE — can start immediately if user chooses hybrid Path A+Domain 37 approach). Estimated 3,500 words, 1-session turnaround.
+2. **Domain Updates — Content Maintenance for Existing Domains** (triggered by civic tracker findings — Domains 19f, 28, 6, 35, 1, 21, 25, 33, 19 all have material to add). Estimated scope: 2-4 sessions depending on depth.
+
+### Status Summary
+
+All orchestration files remain clean. No changes to PROJECTS.md priority order. No changes to BLOCKED.md (stockbot block already resolved).
+
+**Next user decision required**:
+1. **Path A vs Path B**: Approve distribution start, or extend research?
+2. **Hybrid option**: Approve Domain 37 + Phase A parallel execution?
+3. **Stockbot engine**: Is the restart complete and ready for Monday 2026-04-28 market open?
+4. **mfg-farm test print**: Ready to proceed?
+
+**Recommendation**: Gather user input on Path A/B/hybrid decision, then proceed with distribution execution. Civic tracker update provides all necessary information for informed choice.
+
