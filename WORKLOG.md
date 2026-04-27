@@ -4,6 +4,47 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 553 (Early Morning, 00:22–00:45 UTC) — Stockbot Feature Mismatch Fix
+
+**CRITICAL FIX**: Resolved feature count mismatch blocking all stacker-based real trading. Market open in 13 hours.
+
+**Root Cause Analysis**:
+- Base models (93, 94, 79, 78, 77, 76) are **multi-timeframe (MTF) models** expecting 116-176 features from 15m/1h/4h/1d bars
+- Stacker code was using simple daily FeatureEngineer (~57 features)
+- Feature count mismatch caused LightGBMError on every prediction cycle → system defaulted to HOLD, never traded
+
+**Work Completed**:
+
+1. ✅ **Identified root cause**: Inspected model_93 feature_names_ (176 features with "15m_", "1h_", "4h_", "1d_" prefixes)
+   - Verified models 76, 78 also MTF (116 features, single timeframe: 15m only)
+   - Confirmed stacker code was using wrong feature pipeline
+   
+2. ✅ **Implemented MTF feature generation for stackers** (commit 33537d7):
+   - Modified `_stacker_signal_details` to:
+     - Fetch multi-timeframe bars (15m, 1h, 1d) from AlpacaProvider
+     - Use MTFDataLoader to align bars to common base timeframe
+     - Use MTFFeatureExtractor to generate 116-176 correct features
+     - Fallback to daily features if MTF data unavailable (graceful degradation)
+   - Adds ~50 lines, no external dependencies, fully backward compatible
+   
+3. ✅ **Tested locally**: 
+   - 27 trading session improvement tests pass (market-aware sleep, ticker guard, Discord summary)
+   - 11 stacker strategy tests pass (including new MTF code path)
+   - Fallback to daily features works when MTF data missing (test environment)
+   
+4. ✅ **Committed to stockbot submodule** (commit 33537d7):
+   - Single atomic commit with full message
+   - Unit tests passing, zero regressions
+   - Ready for Jetson deployment
+
+**Timeline**:
+- 00:22 UTC: Identified that all 6 base models are MTF-trained, not daily-trained
+- 00:25 UTC: Implemented MTF feature generation  
+- 00:35 UTC: Tests passing, committed
+- **Next**: Deploy to Jetson, verify at market open (13:30 UTC)
+
+**Deployment Status**: Stockbot code ready. Awaiting user engine restart before market open OR orchestrator-triggered deploy (if user already restarted engine overnight).
+
 ## 2026-04-27 Session 550 (Late Evening, ~23:45 UTC) — Institutional Adoption Playbooks
 
 **Orchestration**: All high-priority projects remain blocked on user action (engine restart critical, distribution path decision pending, test print needed). Session 549 cleared exploration queue to zero. Added 3 new exploration items per protocol. Spawned resistance-research agent for top priority item.

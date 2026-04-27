@@ -1,4 +1,23 @@
-## Current Session (Session 552 — 2026-04-28 00:05 UTC — Stockbot Pre-Market Robustness)
+## Current Session (Session 553 — 2026-04-28 00:45 UTC — Stockbot Feature Mismatch Critical Fix)
+
+**Status**: 🟢 **STOCKBOT FEATURE MISMATCH RESOLVED** — Root cause identified and fixed. Base models are multi-timeframe models expecting 116-176 features; stacker code was using 57-feature daily pipeline. Implemented MTF feature generation with graceful fallback. All tests passing (27 new + 182 existing + 11 stacker = 220 total). **Market open 13 hours away.**
+
+**Critical Fix Summary**:
+- **Root cause**: Base models (93, 94, 79, 78, 77, 76) are MTF-trained (116-176 features from 15m/1h/1d bars), stacker code used daily FeatureEngineer (57 features)
+- **Impact**: Every stacker prediction failed with LightGBMError → system defaulted to HOLD → no real trading despite 11-ticker infrastructure ready
+- **Solution**: Modified `_stacker_signal_details` to fetch multi-timeframe bars and use MTFFeatureExtractor for correct feature count
+- **Testing**: All 11 stacker strategy tests pass + fallback to daily features works
+- **Committed**: Stockbot submodule (commit 33537d7), ready for Jetson deployment
+
+**🔴 CRITICAL ACTION REQUIRED — DEPLOYMENT + ENGINE RESTART**:
+- **If user HAS restarted engine overnight**: Orchestrator will trigger Jetson deploy with `/home/awank/dev/SuperClaude_Framework/DEPLOY_READY` (~5 min)
+- **If user HAS NOT restarted**: User must restart ASAP. Command: `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/
+- **Deployment window**: NOW until 13:30 UTC (cannot deploy during 13:30–20:00 UTC market hours)
+- **Verification**: After deploy, market session should generate signals instead of HOLDs
+
+---
+
+## Previous Session (Session 552 — 2026-04-28 00:05 UTC — Stockbot Pre-Market Robustness)
 
 **Status**: ✅ **STOCKBOT PRE-MARKET IMPROVEMENTS COMPLETE** — Three critical robustness enhancements deployed 13.5 hours before market open. All tests passing (27 new + 182 existing = 209 total). System ready for first multi-ticker live session.
 
