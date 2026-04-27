@@ -281,6 +281,8 @@
 **Status**: Active — **Multi-ticker training verified COMPLETE (Session 533), ready for market open 2026-04-28 09:30 ET** — awaiting engine restart
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
+**DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
+
 **Current focus**: **Session 533 (2026-04-27): Multi-ticker stacker training VERIFIED** — All 11 tickers (AAPL + MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA) trained and integrated in active-sessions.json. 63 ensemble tests passing. Gate 1 projection: ~124 trades/month (4x threshold). Engine OFFLINE — user restart required before 2026-04-28 09:30 ET (command: `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/). Open position: 36 AAPL @ $271.04 persisted in positions table, cold restart safe. **Next: (1) User engine restart, (2) Wire multi-ticker config into paper trading, (3) Continue daily monitoring, (4) Gate 1 pass expected by ~2026-05-12**.
 - Single-ticker rate: 0.17/month. Gate 1 requires 30/month (175x gap).
 - **Session 520 multi-ticker training**: 10 new stackers trained (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA). 11-ticker portfolio projects to ~8/month (47x improvement, but still 4x short of Gate 1).
@@ -314,6 +316,24 @@
   - 2026-05-09 (approx): First SELL signal expected (~10 trading days from BUY entry)
   - 2026-05-12 (Day 16): Gate 1 feasibility formal checkpoint — use to confirm pivot decision
   - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail
+
+**NEXT WORK (priority order)**:
+
+1. **Fix idle sleep — market-aware sleep window**: When market is closed, sessions should sleep until 15 minutes before market open (13:15 UTC Mon–Fri) rather than polling every 60 seconds. Sessions should stay active until 15 minutes after close (20:15 UTC) to allow data downloads. Current behaviour generates ~15,000 "market closed — skipping cycle" log lines per day. Fix in `src/trading/trading_session.py` — compute next wake time when `market_open=False` and sleep the full duration.
+
+2. **Ticker enforcement guard**: Add a hard assertion in `TradingSession.__init__` that the model's trained ticker matches the session's assigned ticker. Raise on mismatch. Currently enforced by convention only — a misconfiguration would silently trade the wrong stock.
+
+3. **Discord position notifications**: Send a Discord message every time any strategy opens or closes a position. Include: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized or realized P&L. Wire into order fill handler.
+
+4. **Daily trading summary to Discord**: At market close (20:00 UTC), send a structured Discord summary: signals generated per ticker, orders placed, orders filled, open positions, closed positions, realized P&L for the day, any risk events. Write as a post-market hook in the engine.
+
+5. **Tomorrow's paper trading verification** (2026-04-28, first clean market session):
+   - Pre-open (before 13:15 UTC): Verify engine is running and connected to Alpaca paper account
+   - At open (13:30 UTC): Confirm sessions detect market open and begin cycle (no shutdowns)
+   - During session: Log whether each of the 11 strategies generates a signal
+   - At close (20:00 UTC): Write post-market report to `logs/paper_trading_daily.jsonl` with: signals per ticker, orders submitted, fills confirmed, positions held, realized P&L
+   - Key question: did any strategy generate a real signal and place a real order with Alpaca? If zero signals across all 11 tickers in a full session, the signal threshold may be too high
+   - **Do not shut down or restart the engine between 13:15–20:15 UTC under any circumstances**
 
 **May 12 Feasibility Assessment (Session 519 — COMPLETE)**:
 - Full report: `projects/stockbot/may-12-feasibility-checkpoint.md`
@@ -788,7 +808,21 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Goal**: Actionable playbooks that translate framework recommendations into concrete 72-hour, 30-day, and 90-day response sequences. Each playbook includes: decision trees (who should do what), resource requirements (legal, communications, logistics), success metrics, coordination with other institutions
   - **Expected output**: `crisis-response-playbooks.md` (4,000-5,000 words) + 5 sector-specific playbooks (legislative, AG, advocacy, academic, civil service defense) as companion files
   - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED (1 item remaining in queue — next session will add 2-3 new items per protocol if main projects remain blocked)
+  - **Status**: QUEUED (active, starting Session 549)
+
+- **cybersecurity-hardening: Supply chain targeting and organizational defense** (Priority 5 — NEW, QUEUED)
+  - **Scope**: Design comprehensive organizational defense playbook for institutions and media under targeted supply chain attacks. Builds on high-risk populations work (Session 543). Focus: (1) Detecting supply chain compromise (vendor risk assessment, SLSA framework), (2) Infrastructure targeting (DDos, BGP hijacking, DNS poisoning), (3) Insider threat detection, (4) Incident response workflows, (5) Post-breach organizational recovery
+  - **Goal**: Actionable playbook for NGOs, media outlets, civil rights orgs to defend against sophisticated state-level supply chain attacks
+  - **Expected output**: `organizational-defense-playbook.md` (3,000-4,000 words) + 2-3 sector-specific companion guides
+  - **Timeline**: 1-2 sessions
+  - **Status**: QUEUED
+
+- **mfg-farm: CNC capabilities and economics research** (Priority 6 — NEW, QUEUED)
+  - **Scope**: Research where and how CNC capabilities add value to ModRun product line. (1) Technical: which ModRun components benefit from CNC finishing? (2) Economics: CNC machine cost, training, material waste, per-unit cost impact vs. FDM-only, (3) Market: do higher-precision CNC variants command price premium? (4) Workflow: integration with FDM+CNC workflow, quality control, case studies of hybrid Etsy sellers
+  - **Goal**: Decision framework for whether to add CNC to mfg-farm roadmap post-test-print
+  - **Expected output**: `cnc-capabilities-analysis.md` (3,000-4,000 words) + cost comparison matrix
+  - **Timeline**: 1-2 sessions
+  - **Status**: QUEUED
 
 ---
 

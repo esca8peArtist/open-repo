@@ -104,6 +104,7 @@ If BLOCKED.md has no changes, `git add` will silently skip it — that is fine. 
 6. Leave every project in a committable state at the end of the session
 7. Check-in cadence is daily (sometimes twice daily) — pace work accordingly
 8. When stockbot code is ready to deploy to Jetson (paper trading features complete, tests passing), create a `DEPLOY_READY` file in the workspace root: `touch /home/awank/dev/SuperClaude_Framework/DEPLOY_READY`. The deploy script runs automatically after the session ends.
+   **CRITICAL — Jetson deploy blackout**: NEVER create `DEPLOY_READY` during US market hours (13:30–20:00 UTC, Monday–Friday). Deploying during market hours restarts the Jetson engine mid-session, killing live trades. You MAY work on stockbot code freely at any time — write, test, commit. Only the deploy flag is restricted to outside market hours. Check `date -u` before setting DEPLOY_READY.
 
 ## CRITICAL: Branch discipline — ALL orchestration files always on master
 
