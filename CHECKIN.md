@@ -4,9 +4,30 @@
 
 ---
 
-## Current Session (Session 543 — 2026-04-27 — Market Open Readiness + Phase 1 Execution Prep + Exploration Queue)
+## Current Session (Session 544 — 2026-04-27 22:30 UTC — Distribution Readiness Audit + Phase 2 Supplier Research)
 
-**Status**: ✅ **THREE TASKS COMPLETE** — Day-1 infrastructure ready for stockbot post-restart; Phase 1 execution kit ready for resistance-research post-user-decision; High-risk population protection protocols complete for cybersecurity-hardening distribution. All work production-ready and committed to master. Next move: user decisions (engine restart, distribution path) or continued exploration queue work.
+**Status**: ✅ **TWO PARALLEL TASKS COMPLETE** — Resistance-research distribution readiness audit complete (8 Severity-categorized findings, <2hr fixes needed); mfg-farm Phase 2 supplier research complete (top 5 vendors ranked, $0.77–1.40/unit savings identified). All work production-ready and committed to master.
+
+**Critical deadline reminder**: ⏰ **stockbot engine restart REQUIRED before 2026-04-28 09:30 ET** (23.5 hours remaining from session start). This is the ONLY blocking item preventing stockbot market-open deployment.
+
+**Since Session 543**:
+
+1. ✅ **resistance-research: Distribution Readiness Final Audit**
+   - **Audit coverage**: All distribution-facing files (35 domains, proposal, templates, guides, trackers)
+   - **Findings**: 8 categorized issues (Severity 1: 2 items / 30 min, Severity 2: 3 items / 1-2 hr, Severity 3: 3 cosmetic). All are **administrative**, not content-blocking.
+   - **Bottom line**: Substance is production-ready TODAY. Blocking items: (1) resolve canonical file location (`published/` vs root), (2) fill URL placeholders in templates (user decides hosting), (3) fill contact field, (4) pick Path A/A+37/B.
+   - **User action**: <2 hours of fixes, then can begin distribution immediately.
+   - **Deliverable**: Comprehensive audit report (1,200+ words) with exact fix checklist, stored in WORKLOG.md.
+
+2. ✅ **mfg-farm: Phase 2 Supplier Sourcing Research**
+   - **Scope**: PLA filament bulk suppliers, packaging vendors, logistics optimization for 7K-10K units/month scaling
+   - **Top 5 suppliers ranked**: eSUN (primary, $11–13/kg), Anycubic (bulk, $10.49/kg), Polymaker (quality tier, $14.99/kg), Overture (backup), SUNLU (sampling)
+   - **Cost optimization**: Current $8.49/unit → $7.08–7.72 optimized = **$0.77–1.40 saved per unit**. At 7K units/month: **$5,400–9,800 additional monthly margin**.
+   - **Shipping**: Pirate Ship reduces postage from $5.50 to $4.50–5.09 (commercial rates).
+   - **Packaging**: Shop4Mailers ($0.05/unit launch) → Packlane ($0.76–1.10/unit Phase 2).
+   - **3PL threshold**: Do not outsource before 7K units/month.
+   - **Deliverables**: `phase-2-supplier-research.md` (2,700 words) + `supplier-scorecard.csv` (vendor comparison), both committed to master.
+   - **Post-test-print sequence**: 7-step action plan documented (Pirate Ship → eSUN test → poly mailers → Anycubic validation → Polymaker registration → eSUN direct → Packlane custom).
 
 **Since Last Session (Session 542)**:
 

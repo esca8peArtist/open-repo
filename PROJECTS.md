@@ -56,7 +56,7 @@
 **Status**: Active — ready to prototype
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/mfg-farm/`
-**Current focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis were already complete (`market-research.md`). Etsy and Amazon listing copy already complete (`etsy-listing-modrun.md`). **Lead product: ModRun cable management system** — original design, Etsy-compliant, 65–72% net margins. **BLOCKING GATE: test print required.** User needs to: (1) run `pip install cadquery` in mfg-farm env or system Python, (2) run `python modrun_clip.py --output-dir ./stl/` and `python modrun_rail.py --output-dir ./stl/` to generate STL files, (3) test print and tune tolerance parameters, (4) photograph finished set, (5) list on Etsy. All copy, pricing, tags, photo brief are ready in `etsy-listing-modrun.md`.
+**Current focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis complete (`market-research.md`). Etsy and Amazon listing copy complete (`etsy-listing-modrun.md`). **Phase 2 supplier research COMPLETE** (Session 544: `phase-2-supplier-research.md`, `supplier-scorecard.csv` — top 5 suppliers ranked, $0.77–1.40/unit COGS savings identified, post-test-print sequence documented). **Lead product: ModRun cable management system** — original design, Etsy-compliant, 65–72% net margins. **BLOCKING GATE: test print required.** User needs to: (1) run `pip install cadquery` in mfg-farm env or system Python, (2) run `python modrun_clip.py --output-dir ./stl/` and `python modrun_rail.py --output-dir ./stl/` to generate STL files, (3) test print and tune tolerance parameters, (4) photograph finished set, (5) list on Etsy. All copy, pricing, tags, photo brief ready in `etsy-listing-modrun.md`. Post-test-print supplier sequence documented — negotiate immediately after print.
 **Blocked on**: Test print (user action required — see focus above)
 **Notes**: Automation is the core constraint — products and workflows must be designed for minimal human touchpoints per unit. Physical products mean real fulfillment costs (packaging, shipping, storage) — factor these in from the start. Etsy and Amazon have different fee structures and audiences; may want both. Scaling from 1→N printers requires thinking about file management, queue management, quality control, and packaging throughput — not just the printers themselves.
 
@@ -236,13 +236,17 @@
   - Part 4.4: Risk Assessment — 11 derailment vectors and $400-600M mitigation budget
   - Result: Complete proposal now contains Parts I-IV: diagnosis → vision → theory-of-change → implementation architecture
 
-**NEXT WORK**:
-- **Distribution execution** (user action): Substack, Reddit, institutional templates ready for user posting (full proposal now fully integrated and actionable)
-- **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
-- **Domain research deepening** (optional): Identify new US crisis domains (beyond current 22) for expanded diagnostic framework
+**✅ COMPLETED (Session 544)**:
+- ✅ **Distribution Readiness Final Audit** — Comprehensive 8-point audit of all distribution-facing files (35 domains, proposal, templates, guides, trackers). Verdict: substance production-ready TODAY. Blocking items are administrative: (1) resolve canonical file location, (2) fill URL placeholders, (3) fill contact field, (4) pick Path A/A+37/B. Total fix time: <2 hours. User can begin distribution immediately post-decisions.
 
-**Blocked on**: —
-**Notes**: Phase 5 COMPLETE. Proposal now contains complete actionable pathway: diagnosis (Domains 1-22) → alternative vision (democratic renewal proposal) → theory of change (Phase 4 documents: power-mapping, parallel-institutions, elite-capture-case-study, comparative-democratic-recovery) → implementation architecture (Phase 5 documents: implementation-roadmap, timeline-and-conditions, movement-coordination, risk-assessment). Implementation timeline ready for 2026 election trigger and three recovery scenarios (House flip / tight House / federal collapse).
+**NEXT WORK**:
+- **Distribution execution** (user action): Pick Path A / Path A+Domain37 Hybrid / Path B → orchestrator executes Phase 1 immediately (all materials ready)
+- **Distribution fixes** (user action, <2 hr): Resolve canonical file, fill URL placeholders in templates, fill contact field in published/README.md
+- **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
+- **Domain research deepening** (optional): Phase 2 domain research if user selects Path B or post-Phase-1 expansion
+
+**Blocked on**: User distribution path decision (A / A+37 / B)
+**Notes**: Phase 5 COMPLETE + Distribution audit complete. Proposal contains complete actionable pathway: diagnosis (Domains 1-35) → alternative vision (democratic renewal proposal) → theory of change (Phase 4 documents) → implementation architecture (Phase 5 documents) → activation architecture (Phase 2 expansion complete). Implementation timeline ready for 2026 election trigger and three recovery scenarios. Distribution infrastructure audit complete. Ready to launch immediately upon user decision + <2hr administrative fixes.
 
 ---
 
@@ -695,12 +699,10 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Key findings**: (1) Dual-SIM phones only safe if activated from different locations (synchronous activation = tracking signature), (2) Tor bridges + guard node vetting critical over exit node (guard controls observability), (3) Attorney-client privilege over Signal/ProtonMail only if encrypted end-to-end, (4) Canada/Germany/Ireland have US asylum acceptance (6-12 month processing), (5) Evidence preservation requires SHA-256 chains of custody for legal admissibility
   - **Sources**: 14 authoritative sources (EFF SSD, Access Now, NLG, ACLU, UNHCR, Tor Project, Freedom House, CBP, constitutional law)
 
-- **mfg-farm: Phase 2 supplier sourcing and multi-printer farm economics** (Priority 2 — post-test-print readiness)
-  - **Scope**: Research and negotiate suppliers for scaled ModRun production (PLA bulk sourcing, packaging vendors, logistics optimization). Design multi-printer farm economics (labor, facility costs, queue management software). Create supplier scorecard and negotiation strategy.
-  - **Goal**: Pre-test-print supplier partnerships identified so scaling decision is immediate post-print
-  - **Expected output**: `projects/mfg-farm/phase-2-supplier-research.md` + sourcing scorecard
-  - **Timeline**: 1 session
-  - **Status**: QUEUED
+- ✅ **mfg-farm: Phase 2 supplier sourcing and multi-printer farm economics** (Session 544 COMPLETE)
+  - **Deliverables**: `projects/mfg-farm/phase-2-supplier-research.md` (2,700 words) + `supplier-scorecard.csv`
+  - **Key findings**: Top 5 suppliers ranked (eSUN $11–13/kg, Anycubic $10.49/kg bulk, Polymaker $14.99/kg quality, Overture backup, SUNLU sampling). COGS reduction: $0.77–1.40/unit. Monthly margin gain at 7K units: $5,400–9,800. Post-test-print 7-step sequence documented.
+  - **Status**: ✅ COMPLETE
 
 - **open-repo Phase 5 final architecture**: Kiwix integration and offline export implementation plan
   - **Scope**: Complete architecture design for offline ZIM file generation, incremental export strategy, CDN hosting, user download experience
