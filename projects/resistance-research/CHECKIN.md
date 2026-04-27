@@ -80,6 +80,20 @@ May Day Strong final coordination call. Check for any last-minute route changes,
 
 ---
 
+## Phase 2 Domain Expansion — New Scope Documents (April 27, 2026)
+
+Three new domain scope documents written in this session (Phase 2 autonomous expansion):
+
+1. **`domains/domain-37a-post-election-section3-litigation-recovery.md`** — Post-election Section 3 litigation and congressional certification recovery strategy. Covers the Fulton County FBI seizure threat model, the FCEA/House contestation mechanism, Section 3 enforcement after *Trump v. Anderson*, and the pre-certification TRO litigation strategy. Three-phase framework (election night → certification → post-seating). Cross-references Domains 29, 37. **Advocacy window: September–October 2026. Full research: 1–2 sessions.**
+
+2. **`domains/domain-37b-state-election-security-coordination.md`** — Post-CISA state election security architecture. Documents what states have built to replace CISA (National Guard cyber units, state police integration, university partnerships, state appropriations), why the coordination gap cannot be closed at state level, and the competitive state vulnerability matrix (AZ, GA, MI, PA, WI against documented capacity indicators). Governance recommendations include NASS emergency working group, paid MS-ISAC pool, statutory independence for federal coordination. Cross-references Domains 21, 33, 36, 37. **Advocacy window: April–July 2026. Full research: 1 session.**
+
+3. **`domains/domain-31x-healthcare-tariff-collision.md`** — Healthcare tariff collision scope document. Three-track convergence: (a) Section 232 100% pharmaceutical tariffs (effective July 31, 2026 — confirmed legally enforceable after IEEPA Supreme Court ruling); (b) OBBBA Medicaid work requirements (effective January 1, 2027); (c) Strait of Hormuz / Iran war shipping disruption compounding generic drug API supply chain. Seven-date advocacy timeline from May 2026 through January 2027. Electoral political economy analysis (MFN pricing strategy as pre-election messaging tool). Cross-references Domains 23, 28, 31. **Most urgent: 95 days to July 31 tariff date. Full research: 1–2 sessions.**
+
+**All three files are scope documents (ready for full research execution), not completed research domains. No user approval required to proceed to full research.**
+
+---
+
 ## Research Threads Open (no urgent action required)
 
 - Litigation tracker update: ICE tracker injunction (Alonso, N.D. Ill., April 18-23) should be added as a new entry — this is a significant First Amendment win for organizers. NOTE: Rosado v. Bondi status correction already in tracker and monitoring/2026-04-27-tracking.md.

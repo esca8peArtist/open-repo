@@ -101,6 +101,33 @@ Update: Seventh Circuit Castañon Nava pending ruling status; date stamp; note t
 
 ---
 
+### HIGH PRIORITY — Phase 2 Domain Scope Documents (written April 27, 2026 — Phase 2 autonomous expansion)
+
+**[SCOPE COMPLETE — READY FOR FULL RESEARCH]** Three new domain scope documents written, each with research outline, primary source list, analytical framework, and governance/advocacy implications:
+
+1. **Domain 37a: Post-Election Section 3 Litigation and Congressional Certification Recovery Strategy**
+   - File: `domains/domain-37a-post-election-section3-litigation-recovery.md`
+   - Parent: Domain 37 (Federal Executive Interference in 2026 Midterms)
+   - Core gap: Domain 37 documents pre-election interference. This domain covers the post-election phase: Fulton County seizure threat model, FCEA contestation, Section 3 enforcement after *Trump v. Anderson*, pre-certification TRO strategy.
+   - Advocacy window: September–October 2026
+   - Effort to full research: 1–2 sessions
+
+2. **Domain 37b: State Election Security Coordination — Post-CISA Architecture and the 2026 Vulnerability Gap**
+   - File: `domains/domain-37b-state-election-security-coordination.md`
+   - Parent: Domain 37 (Federal Executive Interference in 2026 Midterms)
+   - Core gap: Domain 37 documents CISA's destruction. This domain covers what states have built to replace it, the coordination gap that cannot be closed at state level, and the competitive state vulnerability matrix.
+   - Advocacy window: April–July 2026 (most urgent of the three)
+   - Effort to full research: 1 session
+
+3. **Domain 31x: Healthcare Tariff Collision — Pharmaceutical Supply Shock, Medicaid Contraction, and the Access Collapse Timeline**
+   - File: `domains/domain-31x-healthcare-tariff-collision.md`
+   - Parent: Domain 31 (Healthcare Access — OBBBA and Medicaid Crisis)
+   - Core gap: Three converging tracks — Section 232 pharmaceutical tariffs (100%, effective July 31), OBBBA Medicaid work requirements (effective January 1, 2027), and Strait of Hormuz/Iran war shipping disruption. Convergence creates a healthcare access collapse scenario more severe than any individual track suggests. Seven-date advocacy timeline.
+   - Most urgent advocacy window: June 2026 (HHS work requirement guidance comment period) + July 31, 2026 (tariff effective date — 95 days away)
+   - Effort to full research: 1–2 sessions
+
+---
+
 ### HIGH PRIORITY — Phase 2 Domain Candidates (identified Session 507, April 27)
 
 **[COMPLETE] Phase 2 Expansion Discovery — `phase-2-expansion-candidates.md`**
