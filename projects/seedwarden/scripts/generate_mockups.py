@@ -1,7 +1,7 @@
 """
 generate_mockups.py
-Renders the first page of each Seedwarden PDF onto a clean tablet/iPad portrait
-frame and saves a high-res PNG suitable for Etsy listings (>=2000px long side).
+Renders product pages onto device frames and saves high-res PNGs suitable for
+Etsy listings (>=2000px long side).
 
 Frame design: drawn programmatically with Pillow — no external assets, no
 licensing concerns.
@@ -9,19 +9,28 @@ licensing concerns.
 Usage:
     uv run python projects/seedwarden/scripts/generate_mockups.py
     uv run python projects/seedwarden/scripts/generate_mockups.py --frame portrait
+    uv run python projects/seedwarden/scripts/generate_mockups.py --frame interior
 
 Options:
-    --frame portrait
+    --frame portrait (default: tablet)
         Draw a portrait smartphone frame (iPhone 13 proportions: 390x844px screen
         area) instead of the default tablet frame. Output files are named
-        {stem}_phone.png and saved to the same output directory. The background,
-        PDF rendering, and text placement are preserved; only the device frame
-        geometry changes.
+        {stem}_phone.png and saved to the same output directory.
 
         Phone frame dimensions: 440x950px phone body (within a 2400x2400 canvas),
         with a 390x844px screen inset 25px from each screen edge. Frame color is
         matte black with a subtle highlight and drop shadow matching the tablet
         style.
+
+    --frame interior
+        Draw a tablet frame showing a 2x2 grid of interior pages (pages 2-5),
+        demonstrating content depth and product substance. Output files are named
+        {stem}_interior.png. Useful for showing product variety and value beyond
+        the cover.
+
+        Interior grid shows four consecutive pages in a 2x2 layout with subtle
+        dividers. Each page is scaled to fit, showing actual content from the
+        product interior.
 """
 
 import argparse
@@ -159,17 +168,26 @@ def make_bezel_gradient(draw, x0, y0, x1, y1, radius):
         draw.line([(x0, y), (x1, y)], fill=col)
 
 
-def render_pdf_page(pdf_path: pathlib.Path, target_w: int, target_h: int) -> Image.Image:
-    """Render first page of a PDF to a PIL Image, zoomed into the top 55% of the page.
+def render_pdf_page(pdf_path: pathlib.Path, target_w: int, target_h: int, page_num: int = 0) -> Image.Image:
+    """Render a specific page of a PDF to a PIL Image, zoomed into the top 55% of the page.
 
-    The cover designs have a rich header (dark banner + title + price button) in the
-    top half and a mostly-blank cream area below. Cropping to the top 55% fills the
-    screen with the visually interesting part and avoids the empty lower half.
+    Args:
+        pdf_path: Path to the PDF file.
+        target_w: Target width for the rendered image.
+        target_h: Target height for the rendered image.
+        page_num: Zero-indexed page number (default 0 = first page).
+
+    For cover pages (page 0), crops to the top 55% where the rich header is.
+    For interior pages, shows the full page (or crops to top 85% if page is very tall).
     """
-    CROP_FRACTION = 0.55  # show only the top 55% of the page
+    # Cover pages have a rich header and blank area — crop to 55%.
+    # Interior pages show full content — use 85% to avoid excessive blank space at bottom.
+    CROP_FRACTION = 0.55 if page_num == 0 else 0.85
 
     doc = pdfium.PdfDocument(str(pdf_path))
-    page = doc[0]
+    if page_num >= len(doc):
+        page_num = len(doc) - 1  # fallback to last page
+    page = doc[page_num]
 
     pw, ph = page.get_width(), page.get_height()
 
@@ -214,6 +232,68 @@ def render_pdf_page(pdf_path: pathlib.Path, target_w: int, target_h: int) -> Ima
 
     doc.close()
     return pil_img
+
+
+def render_interior_grid(pdf_path: pathlib.Path, target_w: int, target_h: int) -> Image.Image:
+    """Render a 2x2 grid of interior pages (pages 2-5) from a PDF.
+
+    Creates a grid showing pages 2-5 in a 2x2 layout with subtle dividers.
+    This demonstrates content depth and product substance. If the PDF has fewer
+    than 5 pages, wraps around to available pages.
+
+    Args:
+        pdf_path: Path to the PDF file.
+        target_w: Total target width (grid width).
+        target_h: Total target height (grid height).
+
+    Returns:
+        A PIL Image of the grid composite.
+    """
+    # Load document to check page count
+    doc = pdfium.PdfDocument(str(pdf_path))
+    page_count = len(doc)
+    doc.close()
+
+    # Page numbers to show (1-indexed in PDF, so pages 2-5 are indices 1-4)
+    # If PDF is short, wrap around
+    page_indices = []
+    for i in range(1, 5):
+        idx = min(i, page_count - 1) if i < page_count else (page_count - 1)
+        page_indices.append(idx)
+
+    # Grid is 2x2, so each cell is half the target size
+    # Leave a small gap (2px) between cells for divider
+    gap = 2
+    cell_w = (target_w - gap) // 2
+    cell_h = (target_h - gap) // 2
+
+    # Render each page to cell size
+    page_imgs = []
+    for page_idx in page_indices:
+        img = render_pdf_page(pdf_path, cell_w, cell_h, page_num=page_idx)
+        page_imgs.append(img)
+
+    # Build 2x2 grid: top-left, top-right, bottom-left, bottom-right
+    grid = Image.new("RGB", (target_w, target_h), (255, 255, 255))
+
+    # Top-left (page 2 or 1 if only 1 page)
+    grid.paste(page_imgs[0], (0, 0))
+    # Top-right (page 3 or wrapped)
+    grid.paste(page_imgs[1], (cell_w + gap, 0))
+    # Bottom-left (page 4 or wrapped)
+    grid.paste(page_imgs[2], (0, cell_h + gap))
+    # Bottom-right (page 5 or wrapped)
+    grid.paste(page_imgs[3], (cell_w + gap, cell_h + gap))
+
+    # Draw subtle dividers (light gray lines)
+    divider = ImageDraw.Draw(grid)
+    divider_color = (220, 220, 220)
+    # Vertical divider
+    divider.rectangle([cell_w, 0, cell_w + gap, target_h], fill=divider_color)
+    # Horizontal divider
+    divider.rectangle([0, cell_h, target_w, cell_h + gap], fill=divider_color)
+
+    return grid
 
 
 def build_tablet_frame(screen_img: Image.Image) -> Image.Image:
@@ -473,9 +553,10 @@ def process_all(frame_mode: str = "tablet"):
     """Render mockups for all PDFs in PDF_DIR.
 
     Args:
-        frame_mode: "tablet" (default) for the iPad-style frame, or "portrait"
-                    for a matte-black smartphone frame. Output filenames get a
-                    "_phone" suffix when frame_mode is "portrait".
+        frame_mode: "tablet" (default) for the iPad-style frame showing the cover,
+                    "portrait" for a matte-black smartphone frame showing the cover,
+                    or "interior" for a tablet frame showing a 2x2 grid of interior
+                    pages (pages 2-5) to demonstrate product content and depth.
     """
     pdfs = sorted(PDF_DIR.glob("*.pdf"))
     if not pdfs:
@@ -483,7 +564,14 @@ def process_all(frame_mode: str = "tablet"):
         sys.exit(1)
 
     use_phone = frame_mode == "portrait"
-    frame_label = "phone" if use_phone else "tablet"
+    use_interior = frame_mode == "interior"
+
+    if use_interior:
+        frame_label = "interior"
+    elif use_phone:
+        frame_label = "phone"
+    else:
+        frame_label = "tablet"
 
     if use_phone:
         screen_w = PHONE_SCREEN_W
@@ -498,19 +586,29 @@ def process_all(frame_mode: str = "tablet"):
 
     for pdf_path in pdfs:
         stem = pdf_path.stem
-        if use_phone:
+        if use_interior:
+            out_name = f"{stem}_interior.png"
+        elif use_phone:
             out_name = f"{stem}_phone.png"
         else:
             out_name = f"{stem}-mockup.png"
         out_path = OUT_DIR / out_name
         try:
-            # Render first page to screen dimensions
-            page_img = render_pdf_page(pdf_path, screen_w, screen_h)
-            # Build full composite
+            # Render pages to screen dimensions
+            if use_interior:
+                # Interior grid shows pages 2-5 in a 2x2 layout
+                page_img = render_interior_grid(pdf_path, screen_w, screen_h)
+            else:
+                # Cover mockups show the first page
+                page_img = render_pdf_page(pdf_path, screen_w, screen_h, page_num=0)
+
+            # Build full composite with device frame
             if use_phone:
                 mockup = build_phone_frame(page_img)
             else:
+                # Both tablet (cover) and interior use the tablet frame
                 mockup = build_tablet_frame(page_img)
+
             # Save at high quality
             mockup.save(str(out_path), "PNG", optimize=False)
             size_kb = out_path.stat().st_size // 1024
@@ -531,15 +629,16 @@ def process_all(frame_mode: str = "tablet"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Generate Seedwarden product mockups (tablet or phone frame)."
+        description="Generate Seedwarden product mockups (tablet, phone, or interior frame)."
     )
     parser.add_argument(
         "--frame",
-        choices=["portrait"],
+        choices=["portrait", "interior"],
         default=None,
         help=(
-            "Frame variant. Omit for default tablet/iPad frame. "
-            "Pass 'portrait' for a smartphone portrait frame."
+            "Frame variant. Omit for default tablet/iPad frame (shows cover). "
+            "Pass 'portrait' for a smartphone portrait frame. "
+            "Pass 'interior' for a tablet frame showing a 2x2 grid of interior pages."
         ),
     )
     args = parser.parse_args()
