@@ -687,6 +687,27 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ~~**stockbot: Performance Attribution & Post-Trade Analysis Framework**~~ — **COMPLETE (Session 542)**: `performance-attribution-framework.md`, `post_trade_analysis.py` (CLI module), 55 tests (all passing), Jupyter notebook. Framework designed for zero schema migration — attribution JSON stores in trades.notes. Ready for Day-1 integration post-engine-restart.
 
+**NEW ITEMS (Session 543 — Exploration Queue Refresh for Parallel Autonomous Work)**:
+
+- ✅ **cybersecurity-hardening: High-Risk Population Protection Protocols** (Session 543 COMPLETE)
+  - **Scope**: Advanced OpSec for high-risk populations (activists, dissidents, vulnerable populations facing government targeting). Design: (1) Identity compartmentalization (burner phones, secondary SIM architectures, VPN/Tor layering), (2) Physical security (surveillance detection, safe house networks, movement patterns), (3) Legal defense coordination (attorney networks, bail funds, playbooks), (4) International sanctuary options (asylum processes, travel security), (5) Emergency protocols (asset recovery, family safety, evidence preservation)
+  - **Deliverable**: `projects/cybersecurity-hardening/high-risk-populations.md` (8,000 words, 5 sections, 10+ case studies) — Production-ready with activation decision tree, real case studies (Khalil/Öztürk/Hong Kong 47/Jan 6 geofencing), legal frameworks, international asylum pathways, emergency escalation protocols
+  - **Key findings**: (1) Dual-SIM phones only safe if activated from different locations (synchronous activation = tracking signature), (2) Tor bridges + guard node vetting critical over exit node (guard controls observability), (3) Attorney-client privilege over Signal/ProtonMail only if encrypted end-to-end, (4) Canada/Germany/Ireland have US asylum acceptance (6-12 month processing), (5) Evidence preservation requires SHA-256 chains of custody for legal admissibility
+  - **Sources**: 14 authoritative sources (EFF SSD, Access Now, NLG, ACLU, UNHCR, Tor Project, Freedom House, CBP, constitutional law)
+
+- **mfg-farm: Phase 2 supplier sourcing and multi-printer farm economics** (Priority 2 — post-test-print readiness)
+  - **Scope**: Research and negotiate suppliers for scaled ModRun production (PLA bulk sourcing, packaging vendors, logistics optimization). Design multi-printer farm economics (labor, facility costs, queue management software). Create supplier scorecard and negotiation strategy.
+  - **Goal**: Pre-test-print supplier partnerships identified so scaling decision is immediate post-print
+  - **Expected output**: `projects/mfg-farm/phase-2-supplier-research.md` + sourcing scorecard
+  - **Timeline**: 1 session
+  - **Status**: QUEUED
+
+- **open-repo Phase 5 final architecture**: Kiwix integration and offline export implementation plan
+  - **Scope**: Complete architecture design for offline ZIM file generation, incremental export strategy, CDN hosting, user download experience
+  - **Expected output**: Implementation roadmap ready for Phase 5 execution
+  - **Timeline**: 1 session
+  - **Status**: QUEUED
+
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 
 - **Domain 27 — Higher Education and Academic Freedom** (Priority 1 for Phase 2 research)

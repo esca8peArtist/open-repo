@@ -28,6 +28,14 @@
    - **Critical path**: Once engine restarts, wire three hooks into run_live_trading.py (see integration-checklist), then run pre-open-report.py before 09:30 ET to verify all systems operational
    - **Verification cmd** (pre-restart): `uv run python scripts/generate_daily_report.py --type pre_open --date 2026-04-28 && uv run python -m src.alerts --check infra`
 
+3. ✅ **cybersecurity-hardening: High-Risk Population Protection Protocols** (Orchestrator → general-research agent)
+   - **Deliverable**: `projects/cybersecurity-hardening/high-risk-populations.md` (8,000 words, 5 sections, 10+ documented case studies)
+   - **Scope**: Comprehensive protection protocols for high-risk populations (activists, dissidents, journalists, asylum seekers) facing government-level targeting
+   - **Content**: (1) Identity Compartmentalization — SIM architecture, device layering, VPN/Tor distinction with obfs4/guard node vetting; (2) Physical Security — TEDD framework, SDR techniques, safe house networks, border crossing protocols; (3) Legal Defense — attorney networks, *Berghuis v. Thompkins* language, bail funds, case studies (Jan 6 geofencing, Hong Kong 47, asylum defense); (4) International Sanctuary — 1951 Refugee Convention standard, Canada/Germany/Ireland asylum pathways (6-12 mo), re-entry risk analysis; (5) Emergency Protocols — dead drops, family compartmentalization, evidence preservation (SHA-256 chain of custody), escalation procedures
+   - **Key Findings**: (1) Dual-SIM location synchronization is a tracking signature, (2) Guard node control matters more than exit node, (3) Attorney-client privilege requires E2E encryption, (4) Canada/Germany/Ireland accept US asylum claims (6-12 month processing), (5) Legal evidence preservation requires documented SHA-256 chains of custody
+   - **Sourcing**: 14 authoritative sources (EFF SSD, Access Now, NLG, ACLU, UNHCR, Tor Project, Freedom House, CBP, constitutional law, Wikipedia case studies)
+   - **Status**: Production-ready; committed to master
+
 2. ✅ **resistance-research: Phase 1 Execution Kit** (Orchestrator → resistance-research agent)
    - **Deliverables**: 9 execution documents, 38 tests (all passing)
    - **Tier-1 Contact Batching** (`tier-1-contact-batches.md`):
@@ -59,11 +67,14 @@
      - FAQ: Framing scope, credentials/methodology, academic rigor, distribution/use
      - Rebuttals: 11 common objection patterns (scope-vs-depth, cherry-picking countries, feasibility, electoral liability, etc.)
 
-**Orchestration files updated**: WORKLOG.md (this entry)
-**Commits**: Both agents committed to master (stockbot: 6f4c288, resistance-research: execution/ directory)
+**Orchestration files updated**: WORKLOG.md (session summary), PROJECTS.md (exploration queue additions + cybersecurity-hardening completion)
+**Commits**: Three agents committed to master (stockbot Day-1, resistance-research Phase 1 kit, cybersecurity-hardening high-risk protocols)
 **Project readiness assessment**:
-- **stockbot**: Day-1 infrastructure ready; awaiting user engine restart (CRITICAL, T-14h)
-- **resistance-research**: Phase 1 execution kit ready; awaiting user distribution path decision
+- **stockbot**: Day-1 infrastructure ready; awaiting user engine restart (CRITICAL, T-14.5h to market open 2026-04-28 09:30 ET)
+- **resistance-research**: Phase 1 execution kit ready; awaiting user distribution path decision (Path A / A+Domain37 Hybrid / Path B)
+- **cybersecurity-hardening**: High-risk population protection protocols complete; core playbook + distribution prep + advanced protocols trilogy now production-ready for full distribution launch
+
+**Session Summary**: Orchestrator oriented, assessed all active blocks and projects, identified exploration queue was empty. Added 3 new research items (cybersecurity-hardening high-risk protocols, mfg-farm Phase 2 supplier sourcing, open-repo Phase 5 architecture). Spawned general-research agent to complete high-risk population protection protocols (8,000 words, 5 sections, 10+ case studies). All high-priority projects now either complete (resistance-research, cybersecurity-hardening, mfg-farm research) or awaiting user action (stockbot engine restart, seedwarden tag corrections, open-repo PR merge). Next session: monitor stockbot market open readiness; continue exploration queue if projects remain blocked on user action.
 
 ---
 
