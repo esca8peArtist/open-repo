@@ -414,29 +414,26 @@
 
 **Track A — Phase 1 launch (blocked on user)**: 3 tag corrections and Etsy account verification required before upload (documented in `UPLOAD_READY_CHECKLIST.md`). Once user completes those, all 21 Phase 1 products are ready to list immediately (8 text-heavy + native plants guide). All PDFs Etsy-compliant (≤900 KB except guide at 4.91 MB). All listing copy, tags, pricing, and mockups complete.
 
-**Track B — Phase 2 Mockup Tooling** (Session 500 COMPLETE):
-- **Step 1**: Regenerated all 21 tablet mockups to match Apr 26 PDF rebuild (pypdfium2 dependency added)
-- **Step 2**: Built phone-frame mockup script variant:
-  - Added `--frame portrait` CLI argument (backward compatible with existing tablet frame generation)
-  - iPhone 13-style frame (880×1900px body, 820×1700px screen, Dynamic Island, buttons, home indicator)
-  - Generated all 21 phone mockups (70 KB each)
-  - Tested on Companion Planting Chart for legibility
-- **Step 3**: Built interior-page mockup script variant (Session 500):
-  - Added `--frame interior` CLI argument (backward compatible with tablet/phone)
-  - 2×2 grid showing pages 2-5 from each PDF, framed in tablet device
-  - Generated all 21 interior mockups (313–706 KB each)
-  - Demonstrates product substance and content depth
-  - Updated MOCKUP_STRATEGY.md with interior variant specs + Etsy placement guidance
-- **Result**: All products now have three mockup angles (tablet cover + phone + interior grid). Grandtotal: 63 images, 19 MB. All variants boost conversion appeal per MOCKUP_STRATEGY.md research
-- **Commits**: 
-  - Session 495: a68196d (tablet + phone)
-  - Session 500: feat(seedwarden): add interior-page mockup script variant, docs(seedwarden): update mockup strategy with interior variant documentation
+**Track B — Phase 2 Expansion Planning** (Session 523 COMPLETE):
+- **Lifestyle Photography Strategy** (Session 523 COMPLETE):
+  - File created: `LIFESTYLE_PHOTOGRAPHY_STRATEGY.md` (4,200 words)
+  - Recommendation: Hybrid approach (physical for 15 products, stock for 6)
+  - Budget: $80–160 (mostly iStock credits); Timeline: 3 weeks (10–14 hours)
+  - Conversion-focused metrics: Primary watch on 4 high-ticket products ($18–$22 range)
+  - Status: Ready for user review and approval
+
+**✅ COMPLETED (Session 500)**:
+- **Mockup Tooling** — All 21 products have three mockup angles (tablet, phone, interior)
+- **Step 1**: Regenerated tablet mockups (pypdfium2 dependency added)
+- **Step 2**: Built phone-frame variant (iPhone 13-style, 21 mockups)
+- **Step 3**: Built interior-page variant (2×2 grid, 21 mockups)
+- Result: 63 total images, 19 MB, all variants boost conversion per research
 
 **✅ COMPLETED (Session 486)**:
-- ✅ **Native plants guide image rebuild** — PDF reduced 56.96 MB → 4.91 MB (Etsy-compliant) via Pillow compression
+- **Native plants guide image rebuild** — 56.96 MB → 4.91 MB (Etsy-compliant via Pillow compression)
 
 **Blocked on**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
-**Notes**: Phase 1 is production-ready and awaiting only user tag corrections (3) and Etsy account verification. Phase 2 tooling (phone mockups, interior page mockup script) now complete — interior page script is next build item if needed before Phase 1 launches. Lifestyle photography awaiting user decision on stock images vs. physical photography.
+**Notes**: Phase 1 is production-ready and awaiting only user tag corrections (3) and Etsy account verification. Phase 2 tooling complete; lifestyle photography strategy ready for user approval. Once Phase 1 launches and initial conversion data arrives (week 2–3), Phase 2 photography can begin.
 
 ---
 
