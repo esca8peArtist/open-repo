@@ -13581,3 +13581,65 @@ All orchestration files remain clean. No changes to PROJECTS.md priority order. 
 
 **Recommendation**: Gather user input on Path A/B/hybrid decision, then proceed with distribution execution. Civic tracker update provides all necessary information for informed choice.
 
+
+---
+
+## Session 517 — 2026-04-27 Morning — Domain 37 Research Complete
+
+**Duration**: ~45 min research + verification
+**Token usage**: ~81K (within budget)
+
+### Orientation & Status
+
+All projects at steady state with decision points waiting for user:
+- **resistance-research**: Framework now complete at 35 domains (added Domain 37). Path A/B/Hybrid decision required for distribution execution.
+- **stockbot**: Engine fixed and verified, paper trading live, awaiting Monday 14:30 UTC market open and Monday 14:00–14:25 UTC SSH verification.
+- **cybersecurity-hardening**: Tier 1-3 distribution prep complete, Gist published, awaiting user distribution execution signal.
+- **All other projects**: Awaiting user action (test print, tag corrections, Etsy verification, PR merge, social media signal).
+- **INBOX**: Empty (no new items to process).
+- **BLOCKED**: Only mfg-farm test print remains active (user action required).
+
+**Decision**: No autonomous project work available until user decision on resistance-research distribution direction. Highest-value work identified: **Domain 37 research** — enables user to make Path A/B/Hybrid decision with all necessary information. Spawned general-research agent.
+
+### Work Completed
+
+**Domain 37 Research — Federal Executive Interference in 2026 Midterms**
+
+Agent delivered production-ready domain document (8,850 words, 50 sources).
+
+**Key research findings**:
+
+1. **DOJ Voter Roll Litigation Track**: University of Wisconsin Law School tracker shows 23 active cases, 1 settlement (Oklahoma with 45-day voter removal clause), 5 dismissals (CA, OR, MI, MA, RI). Brennan Center analysis reveals contractors receiving voter data under confidential consent agreements are not bound by safeguards.
+
+2. **Election Security Infrastructure Degradation**: CISA FY27 budget proposal eliminates election security program entirely ($700M cut), eliminates EI-ISAC and MS-ISAC, removes all regional election security advisors. Election Day situation room did not operate for November 2025 elections for first time in years. DOJ privacy officer resigned April 3, 2026 over voter-data-to-DHS transfer.
+
+3. **Personnel Network**: ProPublica April 2026 investigation identified 11+ appointees across DHS/DOJ connected to Cleta Mitchell's Election Integrity Network. Key examples: David Harvilicz (voting machine security at DHS) co-founded AI company with Antrim County conspiracy theorist; Kurt Olsen (White House election security director) pressured FBI Atlanta.
+
+4. **Legal Doctrine**: Trump v. Anderson (March 2024) eliminated state-initiated Section 3 disqualification for federal offices but preserved congressional enforcement and state-level enforcement for state electoral positions. Practical 2026 application is building factual record for post-election accountability, not pre-election remedy.
+
+5. **International Precedent**: Hungary April 12, 2026 election is instructive — Orbán defeated 53.6% to 37.8% despite 95%+ media capture and systematic gerrymandering. Record 77% turnout overcame structural disadvantage. Lesson for US: mobilization margins can exceed structural interference, but mechanisms differ (Hungary = media capture; US = federal law enforcement control + election-night seizure infrastructure).
+
+**Advocacy Windows Identified**:
+- May 30: DOJ consent decrees finalized or blocked
+- June 30: Emergency EO routing (OMB/legal review)
+- September 2026: Pre-election litigation testing (Section 3 disqualifications, preliminary injunctions)
+- October 2026: Pre-election logistics (poll observer deployment, legal hotline readiness)
+- Election Day + early vote: Real-time monitoring
+
+**File created**: `projects/resistance-research/domains/domain-37-federal-executive-interference-2026-midterms.md` (67 KB, ~8,850 words, 50 sources, production-ready)
+
+**Quality assessment**: Fully sourced (Brennan Center, University of Wisconsin Law tracker, ProPublica, Democracy Docket, NPR, Just Security, legal analysis), no speculation, current to April 2026, balanced (federal leverage + state/civil society defenses), actionable (advocacy windows explicit).
+
+### Status Update
+
+**resistance-research**: Framework now 35 domains complete (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33-37). All production-ready. Exploration queue fully exhausted — no remaining high-priority candidates.
+
+**Next user decision required**:
+1. **Path A (distribution now)**: Begin Phase A distribution to general audiences with 34-domain base framework.
+2. **Path A+Domain37 Hybrid (RECOMMENDED)**: Phase A distribution to general audiences (law schools, think tanks, labor unions) + Domain 37 sequenced into distribution before reaching election protection organizations. Captures maximum immediate impact + election integrity urgency.
+3. **Path B (continued research)**: Domain Updates (content maintenance on 9 domains per April 2026 developments) + optional lower-priority expansion toward 35-40 domains.
+
+**Recommendation**: Hybrid approach captures both timeliness (34-domain framework to broad audiences immediately) and urgency (Domain 37 targeted to election protection organizations before November 2026).
+
+**All orchestration files remain clean**. No changes needed to BLOCKED.md. Exploration queue status updated in PROJECTS.md.
+

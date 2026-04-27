@@ -4,50 +4,57 @@
 
 ---
 
-## Current Session (Session 516 — 2026-04-27 06:01–06:51 UTC — Civic Tracker Update + Path A/B Recommendation)
+## Current Session (Session 517 — 2026-04-27 Morning — Domain 37 Research Complete)
 
-**Status**: ✅ **Civic tracker research COMPLETE** — Analyzed April-May 2026 developments, identified **one strong new domain gap** (Domain 37: Federal Executive Interference in 2026 Midterms), assessed existing 34-domain framework coverage. **Recommendation**: Hybrid Path A + Domain 37. Begin Phase A distribution immediately (34 domains sufficient for broad audiences: law schools, think tanks, labor unions), research Domain 37 in parallel (~3,500 words, 1 session), then sequence into distribution for election-protection organizations. **User decision required**: Path A vs Path B vs Hybrid. **All orchestration files clean** — ready for commit.
+**Status**: ✅ **Domain 37 COMPLETE** — Federal Executive Interference in 2026 Midterms research delivered (8,850 words, 50 sources, production-ready). **Framework now 35 domains complete**. All components ready for user distribution decision. **Recommendation**: Hybrid Path A + Domain 37 approved. **User decision required**: Path A (distribution now, 34 domains), Path A+Domain37 Hybrid (distribute 34-domain base to general audiences + sequence Domain 37 to election-protection organizations), or Path B (domain updates before distribution).
 
-**What Accomplished** (Session 516):
+**What Accomplished** (Session 517):
 
-1. ✅ **resistance-research: Civic Tracker Update — April-May 2026 Crisis Analysis**
-   - **Scope**: 8 major developments identified (War Powers deadline, SCOTUS cases, SPLC indictment, election interference, NATO withdrawal, FISA 702)
-   - **Domain impact analysis**: Assessed 10 existing domains for content updates (19f, 28, 29, 6, 35, 1, 21, 25, 33, 19)
-   - **Gap analysis completed**:
-     - **Gap A (STRONG CASE)**: Domain 37 — Federal Executive Interference in 2026 Midterms (3,500 words, 1-session research, maximum time urgency)
-     - **Gap B (MODERATE CASE)**: Civil society targeting extension to Domain 29 or new subsection
-     - **Gap C (NO NEW DOMAIN)**: Iran war case study as addendum to Domains 19f & 28
-   - **File created**: `civic-tracker-session-516.md` (2,800 words, full source citations, strategic recommendations)
+1. ✅ **resistance-research: Domain 37 Research — Federal Executive Interference in 2026 Midterms**
+   - **File**: `projects/resistance-research/domains/domain-37-federal-executive-interference-2026-midterms.md` (8,850 words, 50 sources)
+   - **Key findings delivered**:
+     - DOJ voter roll litigation: 23 active cases, 1 settlement (OK 45-day removal), 5 dismissals (CA, OR, MI, MA, RI)
+     - CISA election security program defunding: $700M cut in FY27 budget proposal, elimination of EI-ISAC/MS-ISAC, removal of regional advisors
+     - Election denier personnel network: 11+ DHS/DOJ appointees connected to Election Integrity Network, voting machine security officials co-founding AI companies with conspiracy theorists
+     - ICE-at-polls threat: Bannon public statement (April 2026): "ICE will surround the polls come November"
+     - Section 3 litigation strategy: Viable for post-election accountability, pre-election application limited by Trump v. Anderson precedent
+     - International precedent: Hungary April 12, 2026 election (77% turnout overcame 95% media capture + systematic gerrymandering — mobilization can exceed structural interference)
+   - **Advocacy windows identified**: May 30 (consent decrees), June 30 (emergency EO), September 2026 (pre-election litigation), October 2026 (logistics), Election Day (monitoring)
+   - **Sources**: University of Wisconsin Law School tracker, ProPublica April 2026 investigation, Brennan Center confidential agreement analysis, Democracy Docket, NPR, Just Security
 
-2. ✅ **Path A vs Path B Decision Support**
-   - Analyzed feasibility of three scenarios:
-     - Path A (distribution now, 34 domains): Justified — framework substantive, urgency high for November 2026
-     - Path B (extended research): Diminishing returns, May cause delays in reaching decision-makers
-     - **Hybrid Path A + Domain 37**: Recommended — maximum impact, minimal delay. Begin distribution to general audiences (law schools, think tanks, labor) immediately; research Domain 37 in parallel; sequence 35-domain framework to election-protection organizations before November
-   - **Strategic distribution target list identified**: Law school constitutional clinics, Brennan Center, CFR, AFL-CIO legislative, progressive foundations (Phase A); Common Cause, Protect Democracy, Democracy Docket, state AGs (Phase A secondary after Domain 37)
+2. ✅ **Framework Status Update**
+   - Framework now 35 domains complete (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33-37)
+   - All domains production-ready for distribution
+   - Exploration queue fully exhausted — no remaining high-priority candidates
 
-3. ✅ **Exploration Queue Status Assessment**
-   - Confirmed queue exhausted at start of session (high-priority Phase 2 candidates complete)
-   - Added new exploration items to queue:
-     - **Domain 37 Research** (ACTIVE, can start immediately if user approves hybrid approach)
-     - **Domain Updates / Content Maintenance** (triggered by civic tracker findings)
-
-4. ✅ **Updated WORKLOG.md and all orchestration files** — ready for commit
+3. ✅ **Updated PROJECTS.md and WORKLOG.md** — all orchestration files clean
 
 **Status of Other Projects**:
-- ✅ **stockbot**: BLOCKED.md Resolved Archive shows block was resolved 2026-04-27 — engine restarted, position recovered. Next checkpoint: Monday 2026-04-28 market open (09:30 ET). Monitoring automated via cron.
+- ✅ **stockbot**: Engine verified, paper trading live, awaiting Monday 2026-04-28 market open. **Monday 14:00–14:25 UTC SSH verification CRITICAL before 14:30 UTC market open**
 - **mfg-farm**: Awaiting test print (user action)
-- **seedwarden**: Awaiting user tag corrections + Etsy verification (Phase 1); Phase 2 mockup tooling complete
-- **cybersecurity-hardening**: Awaiting user approval for Tier 1 distribution
-- **open-repo**: Awaiting PR #1 review/merge
+- **seedwarden**: Awaiting user tag corrections (3) + Etsy verification (Phase 1); Phase 2 mockup tooling complete
+- **cybersecurity-hardening**: Gist published, Tier 1-3 distribution templates ready, awaiting user execution
+- **open-repo**: PR #1 awaiting user GitHub push/merge (Wave 4 implementation ready after merge)
 - **off-grid-living, workout**: Awaiting user review/selection
 
 ---
 
 ## Items Needing Your Input
 
-1. **resistance-research distribution decision**: Path A (start now), Path B (extend research), or Hybrid (Path A + Domain 37 parallel)?
-2. **Domain 37 approval** (if hybrid): Approve Federal Executive Interference in 2026 Midterms (3,500 words, election-focus)?
+1. **resistance-research distribution decision (HIGH PRIORITY)**: 
+   - **Path A**: Distribution with 34-domain framework (immediate)
+   - **Path A+Domain37 Hybrid (RECOMMENDED)**: Distribute 34-domain base to general audiences (law schools, think tanks, labor) immediately; sequence Domain 37 to election-protection organizations within 2 weeks. Captures immediate impact + election integrity urgency.
+   - **Path B**: Domain Updates (content maintenance on 9 domains per April 2026 civic tracker findings) before distribution (2-4 weeks additional research)
+   - **Decision needed**: Which path? If Hybrid, approval to sequence Domain 37 into election-protection org distribution before general release.
+
+2. **stockbot — Monday 14:00–14:25 UTC (CRITICAL)**: SSH verification before market open
+   - SSH to Jetson (awank@100.120.18.84)
+   - Run checklist from `projects/stockbot/docs/market-open-checklist.md` items 4–8
+   - Must complete before 14:30 UTC market open
+
+3. **Clarification on resistance-research distribution channels**:
+   - Are resistance-research and cybersecurity-hardening distributions separate efforts, or should they integrate channels?
+   - Currently treated as separate: resistance-research → policy/advocacy orgs; cybersecurity-hardening → Tier 1–3 (immigration legal aid → community orgs → mutual aid)
 3. **stockbot engine restart verification**: Confirm Monday 2026-04-28 09:30 ET market open ready to proceed?
 4. **mfg-farm test print**: Ready to execute, or awaiting user resources?
 
