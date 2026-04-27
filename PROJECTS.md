@@ -625,11 +625,7 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 **NEW ITEMS (Session 538 — Exploration Queue Refresh)**:
 
-- **resistance-research: Democratic Renewal Activation Architecture** (Priority 1 for post-distribution)
-  - **Scope**: Post-distribution operationalization — for each of the 35 domains' recommendations, design: (1) responsible agency/organization, (2) implementation timeline (immediate/100-day/1yr/3yr/10yr), (3) success metrics, (4) cross-domain dependencies, (5) international precedent, (6) risk mitigation for institutional capture/backlash
-  - **Goal**: A comprehensive implementation roadmap that answers "what happens after distribution?" — who does what, by when, with what success criteria?
-  - **Expected outcome**: `ACTIVATION_ARCHITECTURE.md` (5,000-7,000 words) with tabular implementation schedule, dependency graph, and risk mitigation strategies
-  - **Status**: QUEUED (identified by Session 538 orchestrator — available now)
+- ~~**resistance-research: Democratic Renewal Activation Architecture**~~ — **COMPLETE (Session 542)**: `ACTIVATION_ARCHITECTURE.md` (extended to 13,200 words), `implementation-schedule.md` (new tabular companion). Complete post-distribution operationalization roadmap with agency responsibility matrix (35 domains), timeline phases, success metrics, dependency graph, 6 international case studies, risk mitigation. Three critical findings: (1) Trump v. Slaughter pre-staging (June deadline, 24-48h window), (2) Poland precedent shows judicial capture harder to reverse than electoral recovery, (3) Interstate compact path is primary mechanism for Phase 2 implementation.
 
 - **stockbot: Live Trading Infrastructure and Risk Management** (Priority 2 for post-gate-1-pass)
   - **Scope**: Design the complete monitoring, alerting, and emergency-response infrastructure for live trading on Jetson. (1) Dashboard architecture (real-time P&L, position tracking, regime detection), (2) Alert triggers (model drift, drawdown limits, regime shifts, circuit breakers), (3) Emergency exit procedures (controlled vs. panic liquidation), (4) Operational runbooks (what to do if each alert fires), (5) Integration with existing guardrails
@@ -643,6 +639,41 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Expected outcome**: `high-risk-populations.md` (4,000-5,000 words) + operational playbooks for 3-4 scenario types
   - **Status**: QUEUED (identified by Session 538 orchestrator — available now)
 
+**NEW ITEMS (Session 542 — Parallel Exploration Queue Execution)**:
+
+- ✅ **stockbot: Performance Attribution & Post-Trade Analysis Framework** (COMPLETE — Session 542)
+  - **Scope**: Comprehensive post-trade analysis framework for understanding trade success/failure drivers
+  - **Deliverables**: 
+    - `projects/stockbot/docs/performance-attribution-framework.md` (~2,800 words) — Attribution analysis (regime/volatility/SHAP features), win/loss taxonomy (5 categories with strict assignment ordering), drift detection (4 signals, 4 alert levels), feature feedback loop (monthly review + quarterly audit), reporting templates
+    - `projects/stockbot/src/analytics/post_trade_analysis.py` — Python module with CLI: `--report portfolio|drift|first30|snapshot|monthly`; reads stockbot.db, stores attribution JSON in trades.notes (no schema migration); integration hooks: record_entry_context() at BUY, attribute_round_trip() at SELL
+    - `tests/unit/test_analytics/test_post_trade_analysis.py` — 55 tests, all passing, zero regressions
+    - `post_trade_analysis_example.ipynb` — Jupyter notebook with framework walkthrough (excluded from git)
+  - **Key Finding**: Framework designed for zero schema changes — attribution JSON piggybacks on existing trades.notes TEXT field. Immediate integration post-engine-restart possible.
+  - **Critical Path**: Call analyzer.snapshot_open_positions() immediately after user engine restart; wire record_entry_context() before first SELL execution to capture feature SHAP at entry time.
+  - **Status**: COMPLETE, committed to master
+
+- ✅ **seedwarden: Annual Product Calendar & Email Growth Engine** (COMPLETE — Session 542)
+  - **Scope**: Comprehensive annual marketing and product strategy for Phase 1+ growth
+  - **Deliverables**:
+    - `projects/seedwarden/marketing/annual-product-plan.md` (3,400 words) — Seasonal demand analysis, email automation architecture, bundle strategies, holiday campaigns, social calendar alignment with case studies
+    - `projects/seedwarden/marketing/product-calendar-2026-2027.json` — 12-month structured calendar (themes, email campaigns, product focus, promotional calendar)
+    - `projects/seedwarden/marketing/email-automation-blueprint.md` — Complete funnel: lead magnet (5-variety guide → zone-personalized Phase 2 upgrade), welcome sequence (5 emails, 10 days), behavioral tagging (Emails 3-4 → Seed Saver/City Grower/Preservationist segments), post-purchase sequence (3 emails), win-back campaign with automatic list pruning
+    - `projects/seedwarden/marketing/social-media-calendar-may-july-2026.md` — Week-by-week May-July 2026 social content calendar
+  - **Key Finding**: Two hard seasonal peaks — spring planning window (Jan-Apr, highest buyer receptivity) and holiday gift (Nov-Dec, 35-40% of annual revenue); July-Sep preservation season secondary peak with lower competitive density → higher organic ranking opportunity
+  - **Bundle Recommendation**: Winter Planning Bundle ($28, Nov-Dec: Survival Garden + Zone Calendar + Food Sovereignty Guide); seasonal title/tag updates (Zone Calendar: add "2027" Jan, Apartment Kit: add gift tags Oct, Survival Garden: add gift tags Nov)
+  - **Status**: COMPLETE, committed to master
+
+- ✅ **resistance-research: Democratic Renewal Activation Architecture** (COMPLETE — Session 542)
+  - **Scope**: Post-distribution operationalization roadmap for 35-domain framework
+  - **Deliverables**:
+    - `projects/resistance-research/ACTIVATION_ARCHITECTURE.md` (extended to 13,200 words, 549 lines) — Complete implementation roadmap with: agency/organization responsibility matrix (35 domains), timeline buckets (30-day/100-day/1yr/3yr/10yr phases), success metrics per phase, cross-domain dependencies, 6 international case studies (Spain, South Korea, Poland, Hungary, Taiwan, Costa Rica), risk mitigation strategies for capture/backlash per phase, explicit Part VII integration with Phase 4-5 theory-of-change documents
+    - `projects/resistance-research/implementation-schedule.md` (new, tabular companion) — 35-domain matrix with: responsible entity, timeline bucket, Phase 1 success metric, cross-domain dependencies, international precedent; tier classification (Tier 1 critical-path D6/D2/D1/D9, Tier 2/3 sequences); phase 1 priority list (13 domains ordered by dependency/urgency); recovery scenario crosswalks (House Flip/Tight House/Federal Collapse); international precedent quick-reference
+  - **Three Critical Operational Findings**:
+    1. **Trump v. Slaughter response pre-staging (Most Urgent)** — SCOTUS ruling expected June 2026 (~6 weeks). If overrules Humphrey's Executor, collapses independent agency protections across D2/D6/D20/D29/D36. Must pre-stage state-level independent agency protection statutes + Federal Reserve legislation for 24-48h deployment window post-ruling, not draft afterward.
+    2. **Poland precedent is most applicable** — Tusk coalition won decisive Oct 2023 victory, still blocked by Constitutional Tribunal 2.5 years later. Judicial capture is harder to reverse than electoral recovery. Every court-dependent domain (D6/D1/D2/D29/D34) must be further along BEFORE electoral window opens, not started when it opens.
+    3. **Interstate compact path (D9) is primary, not contingency** — 60-vote Senate blocks Phase 2 legislation regardless of electoral outcome. Interstate compacts on clean energy, labor standards, voting access are primary for D3/D12/D15/D17. States acting without federal authorization = Spain model applied to US federalism.
+  - **Status**: COMPLETE, committed to master
+
 **NEW ITEMS (Session 541 — Exploration Queue Refresh)**:
 
 - ✅ **mfg-farm: Multi-Printer Farm Architecture & Cost Modeling** (COMPLETE — Session 541)
@@ -652,17 +683,9 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Key Findings**: 5-printer Bambu setup fits 3.2m workspace; bulk PLA drops to $7-10/kg; ModRun cable clips: $1.15 COGS (PLA) + $0.40 packaging; 52% net margin on bundles; payback period <3 months at realistic demand; labor becomes binding constraint at ~month 5-6
   - **Status**: COMPLETE (committed to master)
 
-- **seedwarden: Annual Product Calendar & Email Growth Engine** (Priority 2 for organic growth)
-  - **Scope**: Build a comprehensive annual marketing and product plan beyond Phase 2 mockups. (1) Seasonal demand patterns in homesteading/survival niche (holidays, spring garden season, winter prep, etc.), (2) Email marketing automation strategy (lead magnets, nurture sequences, re-engagement), (3) Seasonal product variations and bundle strategies, (4) Holiday gift campaign planning, (5) Social media content calendar aligned to seasons, (6) Case studies of successful Etsy sellers using seasonal themes
-  - **Goal**: A year-long product and marketing roadmap that extends Phase 1→2→3 growth systematically
-  - **Expected outcome**: `annual-product-plan.md` (2,500-3,500 words) + product calendar (Google Sheets template) + email automation blueprint
-  - **Status**: QUEUED (accessible now — deepens Phase 2 planning)
+- ~~**seedwarden: Annual Product Calendar & Email Growth Engine**~~ — **COMPLETE (Session 542)**: `annual-product-plan.md`, `product-calendar-2026-2027.json`, `email-automation-blueprint.md`, `social-media-calendar-may-july-2026.md` — Comprehensive marketing roadmap with seasonal demand analysis, email funnel design, bundle strategies, 12-month calendar. Key finding: spring planning (Jan-Apr) and holiday gift (Nov-Dec) are hard peaks; preservation season (Jul-Sep) secondary with lower competitive density.
 
-- **stockbot: Performance Attribution & Post-Trade Analysis Framework** (Priority 3 for operational learning)
-  - **Scope**: Design a framework for analyzing completed paper and live trading performance to understand *why* trades succeeded or failed. (1) Attribution analysis (regime conditions, volatility environment, feature contributions to signals), (2) Win/loss categorization (prediction accuracy, timing, position sizing), (3) Model drift detection methodology, (4) Feedback loop for improving feature engineering, (5) Reporting templates for stakeholder updates, (6) Case study: analyze first 30 trades from multi-ticker paper trading to validate framework
-  - **Goal**: Operational learning and continuous improvement infrastructure that survives beyond individual gate passes
-  - **Expected outcome**: `performance-attribution-framework.md` (2,500-3,000 words) + Jupyter notebook for post-trade analysis + quarterly reporting template
-  - **Status**: QUEUED (accessible now — deepens project operational maturity)
+- ~~**stockbot: Performance Attribution & Post-Trade Analysis Framework**~~ — **COMPLETE (Session 542)**: `performance-attribution-framework.md`, `post_trade_analysis.py` (CLI module), 55 tests (all passing), Jupyter notebook. Framework designed for zero schema migration — attribution JSON stores in trades.notes. Ready for Day-1 integration post-engine-restart.
 
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 
