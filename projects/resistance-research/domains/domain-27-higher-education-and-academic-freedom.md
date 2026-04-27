@@ -58,7 +58,19 @@ This is the preemptive compliance effect: the gap between what the law requires 
 
 The self-censorship documented in faculty surveys predates the Trump second term and has deepened under it. The AAUP/AAC&U/NORC survey — conducted between December 2023 and February 2024, before the most aggressive 2025 executive actions — found: more than half of faculty self-censored views they professionally believed to be correct; more than one-third reported declining ability to teach without interference (35%), speak freely as citizens (36%), or participate freely in institutional governance (38%); and about one-quarter reported feeling pressure to match political views held by administrators or other professors. These numbers reflect the baseline from which the post-January 2025 actions pushed further.
 
-Sources: [Survey Documents Decline in Academic Freedom | AAUP](https://www.aaup.org/academe/issues/winter-2025/survey-documents-decline-academic-freedom); [One-Third of Faculty Report Declining Academic Freedom | Higher Ed Dive](https://www.highereddive.com/news/1-in-3-faculty--declines-academic-freedom-survey-aacu-aaup-norc/737085/); [Tracking Higher Ed's Dismantling of DEI | Chronicle of Higher Education](https://www.chronicle.com/article/tracking-higher-eds-dismantling-of-dei); [AZ Universities Won't Say How They Quietly Altered DEI | AZ Mirror](https://azmirror.com/2026/04/10/az-universities-wont-say-how-they-quietly-altered-dei-offerings-after-trump-threatened-funding-cuts/); [Even After Anti-DEI Guidance Struck Down, UVA Changes Remain | Cavalier Daily](https://www.cavalierdaily.com/article/2026/04/even-after-federal-anti-dei-guidance-was-struck-down-uva-says-its-changes-will-remain)
+The FIRE 2024 Faculty Survey, the largest of its kind (6,269 faculty at 55 institutions, fielded March–May 2024), provides the historical benchmark that makes the current scale of self-censorship legible: faculty are four times more likely to self-censor than at the height of McCarthyism. In 1954, 9% of social scientists reported toning down their writings to avoid controversy; in 2024, that figure reached 35%. A full 87% of respondents reported difficulty discussing at least one politically sensitive topic — transgender rights, racial inequality, the Israel-Gaza conflict, abortion, or the 2024 election. One in five reported they are likely to self-censor across all professional contexts, including research and teaching. These numbers preceded the post-January 2025 escalation; the FIRE researchers explicitly note they represent a "baseline" likely to worsen under executive pressure.
+
+Sources: [Survey Documents Decline in Academic Freedom | AAUP](https://www.aaup.org/academe/issues/winter-2025/survey-documents-decline-academic-freedom); [One-Third of Faculty Report Declining Academic Freedom | Higher Ed Dive](https://www.highereddive.com/news/1-in-3-faculty--declines-academic-freedom-survey-aacu-aaup-norc/737085/); [Tracking Higher Ed's Dismantling of DEI | Chronicle of Higher Education](https://www.chronicle.com/article/tracking-higher-eds-dismantling-of-dei); [AZ Universities Won't Say How They Quietly Altered DEI | AZ Mirror](https://azmirror.com/2026/04/10/az-universities-wont-say-how-they-quietly-altered-dei-offerings-after-trump-threatened-funding-cuts/); [Even After Anti-DEI Guidance Struck Down, UVA Changes Remain | Cavalier Daily](https://www.cavalierdaily.com/article/2026/04/even-after-federal-anti-dei-guidance-was-struck-down-uva-says-its-changes-will-remain); [Silence in the Classroom: FIRE 2024 Faculty Survey | FIRE](https://www.fire.org/facultyreport); [Faculty Are More Likely to Self-Censor Than at Height of McCarthyism | FIRE](https://www.thefire.org/news/college-faculty-are-more-likely-self-censor-now-height-mccarthyism)
+
+### 1.3b Track Two (Continued): State-Level Tenure Attacks as Compound Pressure
+
+The federal executive pressure is compounded, not duplicated, by a wave of state legislation specifically targeting the tenure system and faculty governance at public universities. In 2026, at least four states — Alabama, Kentucky, Oklahoma, and Tennessee — advanced legislation that would fundamentally restructure employment protections at public institutions. These bills operate independently of federal funding leverage but produce a combined pressure that eliminates the two institutional mechanisms most protective of academic freedom: secure employment (tenure) and collective faculty authority (shared governance).
+
+Oklahoma is the leading case. Governor Kevin Stitt signed an executive order in February 2026 eliminating tenure at regional universities and community colleges; Oklahoma legislators are now advancing a bill to extend that ban to research universities. In Tennessee, proposed legislation would allow a tenured professor to be dismissed on a single official's decision, with no contractual protections — effectively converting tenure from a constraint on administrative power into a discretionary benefit. Iowa's House Higher Education Committee advanced sweeping legislation that would expand direct legislative oversight of public universities, give the legislature power over board composition, and constrain university budgets in response to political disfavor. The Chronicle of Higher Education's tracker identified 70 state-level bills and 22 enacted laws targeting academic freedom, DEI, and tenure as of February 2026.
+
+The compound effect of federal and state pressure is not merely additive. Federal leverage operates through grant conditions and visa enforcement; state pressure operates through employment law and governance structure. An institution facing both simultaneously has no stable ground for resistance: complying with state tenure elimination removes the faculty governance mechanism that would otherwise resist federal ideological demands, while complying with federal DEI prohibitions removes the programmatic diversity that state legislatures are simultaneously demanding universities demonstrate as a condition of continued appropriations in more liberal states. The squeeze is structural.
+
+Sources: [70 Bills, 22 Laws: Unprecedented Assault on Academic Freedom | Bernd Pulch](https://berndpulch.org/2026/02/13/70-bills-22-laws-the-unprecedented-assault-on-academic-freedom-in-america/); [4 State Bills Faculty Should Watch | Inside Higher Ed](https://www.insidehighered.com/news/government/state-policy/2026/04/10/bills-weakening-tenure-abolishing-faculty-senates-advance); [Tenure in Higher Education Under Attack Nationwide | Hechinger Report](https://hechingerreport.org/opinion-tenure-higher-education-academic-freedom-tennessee-bill/); [New State Laws Target DEI, Programs, and Tenure | Chronicle of Higher Education](https://www.chronicle.com/article/new-state-laws-target-dei-struggling-academic-programs-and-tenure)
 
 ### 1.4 Track Three: Student Visa Revocations and Political Detention
 
@@ -120,6 +132,30 @@ Sources: [Faculty Actually Are Trying to Flee Red States | Inside Higher Ed](htt
 
 ---
 
+## Section 2b: Structural Vulnerabilities — Why the Leverage Works
+
+### 2b.1 Federal Funding Concentration
+
+The most fundamental structural vulnerability is the degree to which U.S. research universities depend on a single source — the federal executive branch — for their operational capacity to conduct research. Total U.S. academic R&D expenditures reached $117 billion in FY 2024 (8.1% growth over FY 2023), of which approximately $64 billion — 55% — came from federal sources, with HHS/NIH alone accounting for $35.5 billion (55% of all federal university R&D). When only research-intensive universities are analyzed, the dependence ratio is higher: the 100 universities receiving the most federal research funding collectively receive over 70% of their research funding from federal sources. The universities most targeted by the current campaign — Harvard, Columbia, Johns Hopkins, MIT, Stanford, UC campuses — are precisely the ones most financially dependent on continued federal grant flow for their research enterprises.
+
+This creates a structural leverage point with no equivalent in other democratic institutions. Federal courts cannot have their funding frozen by executive action; state legislatures retain their constitutional taxing authority regardless of federal preferences; political parties fund themselves through private donations. Universities occupy a unique position: privately governed (in the case of research-intensive private universities) but operationally dependent on an executive-controlled funding stream that can be disrupted without congressional approval, without judicial pre-approval, and without any statutory requirement that disruption be grounded in specific violations of specific law.
+
+### 2b.2 Tax-Exempt Status and Endowment Taxation as Parallel Leverage
+
+The federal government also holds leverage over university financial independence through the tax code. Private universities' tax-exempt status under Section 501(c)(3) of the Internal Revenue Code is conditioned on operating exclusively for educational and charitable purposes — a determination the IRS, an executive branch agency, administers. The administration has not formally threatened revocation of tax-exempt status for academic speech, but the implicit threat is present in the same way that grant freezes are credible without being formally justified: the administrative capacity exists, the legal threshold for revocation is vague enough to be contested, and the mere possibility disciplines institutional behavior.
+
+More directly operative is the endowment excise tax enacted in 2017 and expanded in recent tax proposals: a 1.4% tax (revised to 8% in recent legislation affecting Princeton, Yale, and MIT) on the investment income of university endowments with assets over $500,000 per student. This tax is explicitly targeted at wealthy private universities — the same institutions that have the endowment reserves to resist funding freezes. Increasing the excise tax rate is a mechanism for eroding the financial independence that makes institutions like Harvard capable of sustaining multi-year litigation against a federal funding freeze. The administration's FY2026 budget proposed additional increases. The strategic logic: eliminate the financial cushion that makes resistance viable.
+
+### 2b.3 Accreditation as a Structural Chokepoint
+
+Accreditation is the third major structural vulnerability. Unlike grant funding or tax treatment, accreditation has a direct effect on the educational mission rather than the research mission: loss of accreditation would make a university's degrees invalid for federal student aid purposes, eliminating the financial basis for undergraduate and graduate enrollment. Accreditors are nominally private associations, but the Department of Education must recognize them for their accreditation to be legally operative. The negotiated rulemaking process launched in January 2026 targets this chokepoint: by modifying the criteria for recognizing accreditors, the administration can require that recognized accreditors enforce DEI prohibitions, viewpoint diversity requirements, and ideological conditions as terms of institutional accreditation.
+
+The vulnerability here is structural and not easily remedied by litigation: courts give substantial deference to agency rulemaking in regulatory areas, and the administrative record being built through the negotiated rulemaking process is designed to support deference claims. A successful accreditation rulemaking that survives judicial review would give the executive branch permanent, institutionalized control over the academic operating conditions of every accredited university — private and public — in the United States.
+
+Sources: [Universities Report 8.1% Growth in R&D Expenditures in FY 2024 | NCSES/NSF](https://ncses.nsf.gov/pubs/nsf26305); [Federal R&D Funding by Budget Function | NCSES/NSF](https://ncses.nsf.gov/data-collections/federal-budget-function); [Weaponization of Student Aid Is Next Frontier | Inside Higher Ed](https://www.insidehighered.com/opinion/views/2026/03/23/weaponization-student-aid-next-frontier-opinion); [Experts: New Accreditation Rules Threaten Academic Freedom | Inside Higher Ed](https://www.insidehighered.com/news/governance/accreditation/2026/04/13/experts-new-accreditation-rules-threaten-academic-freedom); [University Endowments Returned to Growth in 2025 | Chief Investment Officer](https://www.ai-cio.com/news/university-endowments-returned-to-growth-in-2025/)
+
+---
+
 ## Section 3: The Democratic Function — Why This Is Not Just an Education Policy Dispute
 
 ### 3.1 Universities as Knowledge-Production Infrastructure for Democracy
@@ -172,7 +208,11 @@ The contrast with functioning democracies that protect academic freedom from gov
 
 **The European Union's Charter of Fundamental Rights** (Article 13) protects academic freedom as a fundamental right across all member states, creating a supranational floor that no member state government can unilaterally override. This model — embedding academic freedom in fundamental rights law at a level above the executive branch's reach — is the most robust available design.
 
-Sources: [Freedom of Academic Freedom in the EU | Global Campus of Human Rights](https://www.gchumanrights.org/preparedness/academic-freedom-in-the-european-union-a-human-rights-approach/); [Protection of Academic Freedom: A Modern European Scholar's Republic | European Trends](https://europeantrends.net/2026/01/25/protection-of-academic-freedom/); [Political Interference in Higher Education? | Cursor, TU Eindhoven](https://www.cursor.tue.nl/en/news/2025/februari/week-1/political-interference-in-higher-education/)
+**Canada's Tri-Agency Research Funding Model** offers a structural reform precedent that is directly applicable to the funding concentration problem. Canada funds academic research through three independent statutory agencies — the Canadian Institutes of Health Research (CIHR), the Natural Sciences and Engineering Research Council (NSERC), and the Social Sciences and Humanities Research Council (SSHRC) — collectively known as the Tri-Agency or Tri-Council. These agencies operate with independence from direct political direction, peer-review grant adjudication processes that are insulated from ministerial preference, and a distributed governance model that prevents any single executive from controlling the funding pipeline. Each agency makes funding decisions independently, using its own peer-review process, even when applications are submitted through the shared Tri-Agency review committee.
+
+The relevance to U.S. reform is structural: a Tri-Agency model applied to U.S. research funding would distribute grant-making authority across multiple independent bodies — one for health sciences, one for physical and engineering sciences, one for social sciences and humanities — each governed by a board requiring bipartisan confirmation, operating with statutory independence from executive direction, and protected by a cause requirement for dismissal of board members. This does not remove Congress's power to appropriate funds; it removes the executive branch's ability to use the grant-making process as an ideological compliance mechanism. The Canada Foundation for Innovation, which removes the provincial matching requirement for strategically important research, demonstrates that the model can be updated to address equity concerns without sacrificing independence.
+
+Sources: [Freedom of Academic Freedom in the EU | Global Campus of Human Rights](https://www.gchumanrights.org/preparedness/academic-freedom-in-the-european-union-a-human-rights-approach/); [Protection of Academic Freedom: A Modern European Scholar's Republic | European Trends](https://europeantrends.net/2026/01/25/protection-of-academic-freedom/); [Political Interference in Higher Education? | Cursor, TU Eindhoven](https://www.cursor.tue.nl/en/news/2025/februari/week-1/political-interference-in-higher-education/); [Collaborations between Federal Research Funding Organizations | CIHR](https://cihr-irsc.gc.ca/e/46884.html); [Canada's Priorities for 2026: Research and Innovation | University of Ottawa](https://www.uottawa.ca/en/news-all/canadas-priorities-2026-what-they-mean-research-innovation)
 
 ---
 
@@ -202,6 +242,18 @@ The reform: amend Section 237(a)(4)(C) to require that adverse foreign policy de
 
 The practical democratic function: international scholars and students are essential to U.S. research universities. Of the $108.8 billion in U.S. academic R&D in FY2023, a substantial portion was conducted by researchers who came to the U.S. on visas. The signal sent by the current policy — that a visa-holder who expresses protected political views can be detained without judicial review while the administration builds a legal justification — is legible globally and is already reflected in the ERC application numbers.
 
+### 5.3b Independent Research Funding Agency Model — The Tri-Agency Structural Fix
+
+The most durable protection against funding leverage is structural separation: removing grant-making authority from executive branch agencies controlled by political appointees and placing it in independent statutory bodies. The Canadian Tri-Agency model provides the template. U.S. implementation would require legislation creating three independent research funding agencies — one for biomedical/health sciences, one for physical/engineering sciences, one for social sciences/humanities — each with:
+
+- A governing board of 11–15 members, appointed on staggered terms requiring bipartisan Senate confirmation
+- Statutory independence from direct executive direction on grant decisions (modeled on existing independent agency structures such as the Federal Reserve or the National Endowment for the Arts in its pre-2025 form)
+- A cause requirement for dismissal of board members (preventing the removal of independent appointees as a mechanism of political pressure)
+- Peer-review processes insulated from political direction, with decisions reviewable only for procedural compliance, not substantive scientific merit determination by political officials
+- Annual appropriations from Congress (maintaining democratic accountability at the appropriations level) but operational independence in the disbursement of those appropriations
+
+The political pathway is narrow under the current Congress but the legislative drafting is achievable now for introduction in the next session. Companion state-level legislation could create state research funding agencies on a similar independent model for state-appropriated research funding — providing a parallel track that does not require federal legislation.
+
 ### 5.4 Structural Institutional Resilience — Endowment Governance and Shared Faculty Authority
 
 Several universities have demonstrated resilience that does not depend on federal legislative action. Harvard's resistance to the April 2025 demands was possible in part because it has the largest university endowment in the world ($53 billion as of the last reported figure) — a financial cushion that meaningfully reduces the existential threat posed by a funding freeze that most institutions could not survive. This is not a general solution; most research universities do not have that endowment cushion. But it points to structural features that make academic freedom more defensible:
@@ -218,7 +270,7 @@ Sources: [AAUP and AFT Launch Joint Campaign to Defend Higher Ed | AAUP](https:/
 
 ### 6.1 Immediate Actions (2026 Crisis Window)
 
-The Harvard case is in the First Circuit on appeal. An amicus coalition including 25 research universities and multiple disciplinary associations has filed briefs supporting the September 2025 ruling. Maintaining and expanding that legal coalition — including state attorneys general from states with major research universities — is the immediate-term action. The broader principle at stake in the appeal (whether funding leverage can be used as a viewpoint-discrimination mechanism) is the foundational question for all four tracks.
+The Harvard case is in the First Circuit on appeal. On April 16, 2026, the Trump administration filed its formal appellate brief, resting on three arguments: (1) that the district court lacked jurisdiction because grant termination disputes belong in the Court of Federal Claims, not district court; (2) that Title VI does not require specific procedural steps before funding termination; and (3) that the funding freeze did not violate the First Amendment. The government also requested oral argument, acknowledging the case raises "significant issues" about the scope of federal funding authority. An amicus coalition including 25 research universities and multiple disciplinary associations has filed briefs supporting the September 2025 district court ruling. Maintaining and expanding that legal coalition — including state attorneys general from states with major research universities — is the immediate-term action. The jurisdictional question (Court of Federal Claims versus district court) is the administration's primary attempt to remove the district court's First Amendment analysis from the appellate record; defeating that jurisdictional argument is the threshold issue.
 
 The GSA certification rulemaking has a public comment record. The 1,300+ organizations that signed the Council of Nonprofits opposition letter represent a coalition that should be immediately converted into congressional engagement: lobbying members on the Senate HELP and House Education committees to use the appropriations process to prohibit the GSA certification requirement from taking effect.
 
@@ -238,6 +290,47 @@ Sources: [Freedom House: United States Freedom in the World 2026](https://freedo
 
 ---
 
+## Section 7: Fiscal Scope — The Cost of the Current Trajectory
+
+### 7.1 Documented Funding Losses (Through April 2026)
+
+The fiscal cost of the current campaign against higher education is large enough to be tracked as a macroeconomic phenomenon, not merely an institutional disruption. The documented figures as of April 2026:
+
+- Harvard: $2.2 billion in grants and $60 million in contracts frozen (April 2025); currently restored pending appeal but subject to reinstatement if the First Circuit reverses
+- Columbia: $200 million settlement payment to the federal government plus $21 million in resolved claims; additional compliance costs for federal monitoring are ongoing
+- NIH: approximately $2.3 billion in unspent funds across nearly 2,500 grants frozen or terminated by November 2025
+- NSF: over 1,300 grants totaling approximately $700 million terminated
+- State Department Diplomacy Lab: 38 universities' partnership funding suspended
+- Total documented higher education funding disruption: the Sanders HELP Committee Report (January 7, 2026) calculated nearly $3 billion in higher education funding cuts across all programs
+
+The economic multiplier on academic research disruption is documented: the Ithaka S+R analysis of a $5.5 billion NIH cut estimated $6.1 billion in GDP loss and over 46,000 jobs. Applying the same multiplier to the documented $3 billion in disruption yields an estimated $3.3 billion in GDP impact and approximately 25,000 jobs affected — before accounting for the brain drain multiplier from researchers who leave the country.
+
+### 7.2 Fiscal Cost of Reform Pathways
+
+The reform pathways identified above have associated fiscal scopes:
+
+**Immediate protective measures (2026)**:
+- Federal litigation support (amicus and direct) for the Harvard appeal: existing university legal budgets; no new appropriation required
+- Congressional appropriations rider prohibiting the GSA certification requirement: revenue-neutral; no new spending
+- Statutory clarification of Section 237(a)(4)(C): revenue-neutral legislation
+
+**Medium-term institutional resilience (2026–2028)**:
+- AAUP-AFT organizing and legal program: existing membership dues and foundation support, growing with 21% membership increase; estimated $50–80 million annually at scale
+- State-level independent research funding agencies: state appropriations decisions; the 10 largest state research university systems have combined state R&D budgets in the $2–5 billion range
+- Endowment growth campaigns: revenue-neutral from federal perspective; requires philanthropic capital deployment
+
+**Structural reform (post-recovery)**:
+- Independent U.S. research funding agency creation: the annual federal academic R&D appropriation ($64 billion in FY2024) would transfer to independent agencies rather than executive branch agencies; no increase in total federal spending required; reform is structural, not budgetary
+- Constitutional academic freedom amendment: no direct fiscal cost; implementation requires the two-thirds threshold in each chamber plus three-quarters of state legislatures
+
+### 7.3 The Cost of Inaction
+
+The brain drain numbers cited in Section 2.3 provide the most direct fiscal framing of inaction costs. If the ERC application surge — American researchers applying at 3x and 5x previous rates — represents a sustained 10% annual outflow of early-career researchers over a decade, the U.S. loses approximately one generation's worth of scientific talent replacement in the fields most concentrated in research universities. The ITIF analysis estimates that the U.S. brain drain already underway threatens scientific and biopharmaceutical leadership worth trillions in long-term economic output and national security capacity. The fiscal cost of the reform pathways above is measured in the tens of billions; the cost of the trajectory being established is measured in scientific generations.
+
+Sources: [Sanders HELP Committee Report | Senate HELP Committee](https://www.sanders.senate.gov/press-releases/news-sanders-releases-new-report-delineating-trumps-war-on-free-speech-on-college-campuses/); [Impact of State and Federal Policies on Academic Researchers | Ithaka S+R](https://sr.ithaka.org/publications/the-impact-of-state-and-federal-policies-on-academic-researchers/); [US Brain Drain Threatens Scientific Leadership | ITIF](https://itif.org/publications/2025/12/18/us-brain-drain-threatens-scientific-and-biopharmaceutical-leadership/); [AAUP and AFT National Higher Education Platform | AFT](https://www.aft.org/press-release/aaup-and-aft-launch-national-higher-education-platform-ahead-of-2026-midterms); [Universities Report 8.1% Growth in R&D Expenditures in FY 2024 | NCSES/NSF](https://ncses.nsf.gov/pubs/nsf26305)
+
+---
+
 ## Summary: The Compound Effect
 
 The four tracks of the assault on higher education in 2026 are not independent policy disputes. They constitute a coordinated structural intervention with a documented international precedent in Hungary, explicit endorsement by key administration-aligned actors, and measurable consequences already visible in academic freedom indices, faculty mobility data, and international scientific recruitment.
@@ -248,6 +341,6 @@ The resistance available is also documented: 17 court rulings finding constituti
 
 ---
 
-*Research completed: April 27, 2026*
-*Primary sources: AAUP, Academic Freedom Index 2026, Freedom House 2026, Harvard and Columbia case records, Sanders HELP Committee Report (January 2026), Higher Ed Dive, Inside Higher Ed, federal court orders cited above*
-*Cross-reference: litigation-tracker-2026.md (Khalil, Oztürk, Mahdawi, Khan Suri cases); first-amendment-suppression.md (campus speech track)*
+*Research completed: April 27, 2026. Updated: April 27, 2026 (Session current — added structural vulnerabilities section, fiscal scope section, Canada Tri-Agency reform model, FIRE 2024 McCarthyism data, state tenure attack wave, First Circuit April 2026 brief status)*
+*Primary sources: AAUP/AAC&U/NORC survey (Dec 2023–Feb 2024), FIRE 2024 Faculty Survey, Academic Freedom Index 2026, Freedom House 2026, Harvard and Columbia case records, Sanders HELP Committee Report (January 7, 2026), NCSES/NSF FY2024 Higher Education R&D data, Ithaka S+R researcher survey, Higher Ed Dive, Inside Higher Ed, ACLU case records (Khalil, Oztürk, Mahdawi, Khan Suri)*
+*Cross-reference: litigation-tracker-2026.md (Khalil, Oztürk, Mahdawi, Khan Suri cases); first-amendment-suppression.md (campus speech track); democratic-renewal-proposal.md (Domain 27 integration)*

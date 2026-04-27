@@ -12981,3 +12981,54 @@ All four Phase 5 documents completed. Proposal now contains full strategic pathw
   - Stockbot: Restart engine before Monday 2026-04-28 market open
   - Other projects: All blocked on user input/manual actions
 
+
+## 2026-04-27 05:03 — resistance-research — Phase 2 Priority Domains 27-29 Research Complete
+
+**Session**: Autonomous orchestrator (single session, parallel agent execution)
+
+**Context**: Exploration Queue identified three high-priority Phase 2 domain research tasks queued from Session 504 civic tracker analysis. All three are production-ready for integration into 29-domain framework.
+
+### Completed Work
+
+**Domain 27: Higher Education and Academic Freedom** ✅
+- **File**: `projects/resistance-research/domains/domain-27-higher-education-and-academic-freedom.md`
+- **Metrics**: 9,226 words, 28 subsections, 50+ sourced citations
+- **Content**: Four-track assault analysis (federal funding leverage, DEI prohibition, student visa revocations, administrative control demands), democratic function, structural vulnerabilities, institutional resilience mechanisms, reform pathways (27a-27e), international precedents (Germany, Canada, Netherlands), implementation timeline, fiscal scope ($96-126B/year investment vs $1-1.5T GDP loss)
+- **Key findings**: 
+  - U.S. institutional autonomy fell from 3.3 (2019) to 1.7 (2025) — largest single-year decline for any major democracy in Academic Freedom Index
+  - 35% of faculty now more likely to self-censor than during McCarthyism (FIRE 2024 survey)
+  - Brain drain escalating: U.S. researchers' ERC grant applications to EU tripled (60→169 in 2 years)
+- **Status**: Production-ready, fully sourced, integrated with Domain 19f
+
+**Domain 28: War Powers, Venezuela Military Unilateralism** ✅
+- **File**: `projects/resistance-research/domains/domain-28-war-powers-venezuela-military-unilateralism.md`
+- **Metrics**: 5,200 words, 28 sourced citations
+- **Content**: January 3 2026 Venezuela "arrest operation" as precedent for eliminating WPR constraints, Senate 51-50 blocked (VP Vance tiebreaker), House 215-215 failed, legal theory analysis, WPR historical framework, 1973-2001 AUMF context, implications for democratic constraint, international precedent, reform pathways (28a-28d), implementation timeline, fiscal scope ($4.7B costs of 2025-2026 deployment)
+- **Key findings**: 
+  - If "arrest operation" successfully displaces "military operation," WPR is functionally eliminated for any operation framed as law enforcement
+  - DEA holds current indictments in Iran, North Korea, Russia, Lebanon, Cuba, Colombia, Mexico — establishes precedent scope
+  - Appropriations rider pathway (Cambodia 1973, Somalia 1994 model) is available short-term lever
+- **Connection**: Domain 28 extends Domain 19f by documenting the operational live case where legal precedent is actively being set
+- **Status**: Production-ready, fully sourced, explicitly maps connection to Domain 19f
+
+**Domain 29: Prosecutorial Weaponization and DOJ Capture** ✅
+- **File**: `projects/resistance-research/domains/domain-29-prosecutorial-weaponization-and-doj-capture.md`
+- **Metrics**: 8,809 words, 60 sourced citations across 20 source blocks
+- **Content**: SPLC indictment (April 21 2026) as landmark case, Kash Patel personal announcement (abnormal), 22-case pattern (political opposition, Democratic officials, instrumentalized prosecution, protest suppression tracks), Nashville/Crenshaw vindictive prosecution finding (October 2025), institutional vulnerability via FVRA gaming, prosecutorial discretion at charging stage, charging-stage vs trial-stage analysis (97.2% guilty plea rate), international precedent (Germany Legalitätsprinzip, Canada transparency, UK CPS test, EU independence), May Day implications, reform pathways (29a-29d: Special Counsel Independence Act, charging transparency, IG restoration, McDade-Murtha litigation), implementation timeline (Phase 1: 0-12mo, Phase 2: 12-36mo, Phase 3: 36+mo), fiscal scope ($50-100M/year institutional infrastructure vs $44M+ in defense costs for documented 22 cases)
+- **Key findings**: 
+  - SPLC case is "suppression through process, not conviction" — successor to COINTELPRO applying formal legal apparatus
+  - Charging decision = functional verdict (2% trial rate, 0.4% acquittal rate)
+  - Grand jury secrecy + no pre-indictment standing means no check on charging stage where power is most dangerous
+  - Section 7 (new) establishes charging-stage power is categorically different from trial-stage power
+- **Status**: Production-ready, fully sourced, establishes distinctions from Domain 6 (Judicial Independence)
+
+### Integration Status
+
+All three domains have standalone research files committed to git. The proposal file (`democratic-renewal-proposal.md`) currently has older embedded summaries of Domains 27-29. Next step is integration into proposal Part II and updates to executive summary and distribution package. However, the core research is complete and production-ready.
+
+### Exploration Queue Status
+
+Queue now empty (3 items worked). Should add 2-3 new Phase 2 research candidates before next session if no higher-priority work emerges.
+
+**Total Phase 2 domains completed**: 6 (Domains 27-29 completed this session; Domains 26, 25, 24, 23 completed in Sessions 500-502)
+
