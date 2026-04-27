@@ -710,6 +710,29 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Timeline**: 1 session
   - **Status**: QUEUED
 
+**NEW ITEMS (Session 545 — Exploration Queue Replenishment for Blocked Project Landscape)**:
+
+- **resistance-research Phase 3: Real-Time Crisis Monitoring Infrastructure** (Priority 1 for post-distribution credibility)
+  - **Scope**: Formalize the infrastructure for tracking 35-domain framework developments in real-time. Design: (1) Which 35-domain monitoring mechanisms (court dockets, legislative tracking, media monitoring) should be automated vs. human-curated? (2) How should the proposal's implementation roadmap adapt as specific crisis outcomes occur? (3) What monthly cadence of domain updates would keep the framework "distribution-current"? (4) Which monitoring data should be published vs. kept internal for coalition strategy?
+  - **Goal**: Post-distribution operationalization — enable the proposal to stay current and credible as political developments unfold
+  - **Expected output**: `monitoring-infrastructure-2026.md` (3,000-4,000 words) + formalized tracking templates (not wordcount-intensive)
+  - **Timeline**: 1 session
+  - **Status**: QUEUED (Session 545)
+
+- **seedwarden: Advanced Growth Metrics and Cohort Analysis Framework** (Priority 2 for Phase 1+ scaling)
+  - **Scope**: Design comprehensive analytics framework for Phase 1 conversion tracking. (1) Customer cohort segmentation (first-time buyers, repeat customers, engaged email subscribers), (2) LTV/CAC/payback period calculations, (3) Product-level cohort analysis (which products drive repeat purchases, which are one-time), (4) Email engagement cohorts (open rates, click rates, unsubscribe patterns), (5) Seasonal cohort tracking (spring planning vs. holiday gift buyers)
+  - **Goal**: Provide data-driven decision-making framework for Phase 2 scaling decisions (product focus, marketing budget allocation, email strategy optimization)
+  - **Expected output**: `growth-metrics-framework.md` (3,000-4,000 words) + analytics dashboard templates + SQL/Python templates for Etsy data analysis
+  - **Timeline**: 1 session
+  - **Status**: QUEUED (Session 545)
+
+- **stockbot: Advanced Feature Importance and Model Drift Detection** (Priority 3 for enhanced analytics)
+  - **Scope**: Extend the performance attribution framework (Session 542) with advanced feature importance analysis. (1) SHAP feature importance per round trip, (2) Model drift detection (rolling z-score on feature distributions), (3) Regime-specific feature importance (bull/bear/sideways regime changes), (4) Retraining signal design (when to retrain based on drift detection), (5) Adaptive threshold tuning (how SHAP importance thresholds change per regime)
+  - **Goal**: Advanced post-trade analytics enabling early detection of model degradation and data-driven retraining decisions
+  - **Expected output**: `feature-drift-detection.md` (3,000-4,000 words) + Python module extending post_trade_analysis.py with drift detection CLI + 40+ tests
+  - **Timeline**: 1 session
+  - **Status**: QUEUED (Session 545)
+
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 
 - **Domain 27 — Higher Education and Academic Freedom** (Priority 1 for Phase 2 research)
