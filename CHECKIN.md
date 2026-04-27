@@ -4,21 +4,24 @@
 
 ---
 
-## Current Session (Session 536 — 2026-04-27 — Pre-Market Readiness: Ticker Expansion + Tracker Updates)
+## Current Session (Session 537 — 2026-04-27 — Phase 2 Expansion: Resistance-Research + Seedwarden Operations)
 
-**Status**: ✅ **PRE-MARKET EXPANSION COMPLETE**. Two parallel subagents expanded stockbot portfolio (62→67 tickers) and updated resistance-research trackers with April 2026 civic developments. Gate 1 projection: 134 trades/month (4.5x threshold). All work ready for user engine restart before market open tomorrow.
+**Status**: ✅ **PHASE 2 EXPANSION INFRASTRUCTURE COMPLETE**. Two parallel subagents created three research-ready Phase 2 domain scope documents for resistance-research (Domain 37a post-election litigation, Domain 37b state election security, Domain 31x healthcare-tariff collision with July 31 urgency) and built comprehensive Phase 3 operations playbook for seedwarden (TikTok/Instagram/Pinterest/email systems with 30-day launch checklist). All work autonomous and committed to master. Stockbot awaiting engine restart before 2026-04-28 09:30 ET market open (~15 hours).
 
-**Since Last Session (Session 535)**:
-- ✅ Expanded stockbot portfolio: 5 new tickers trained (HD, LMT, UPS, REGN, FDX)
-  - Portfolio now 67 tickers total (62 from Session 535 + 5 new)
-  - All wired to active-sessions.json, all ensemble tests passing
-  - Gate 1 projection: 134 trades/month (up from 124), 4.5x threshold
-- ✅ Updated resistance-research trackers with April 2026 civic data
-  - first-amendment-suppression.md: +1 entry (LAPD journalist assault April 11)
-  - environmental-rollbacks-tracker.md: +2 entries (EPA coal ash, plastic pyrolysis)
-  - police-brutality-consent-decree-tracker.md: +1 update (LAPD section)
-  - All existing entries verified, no broken references
-- ✅ Both agents committed changes to master (stockbot: d76c11b, resistance-research: 0810fa3)
+**Since Last Session (Session 536)**:
+- ✅ **Resistance-Research Phase 2 Domain Scope Documents** (3 new domains created):
+  - Domain 37a: Post-Election Section 3 Litigation (3-phase timeline: election night seizures → congressional certification → post-seating accountability)
+  - Domain 37b: State Election Security Coordination (CISA defunding gap analysis + Arizona/Georgia/Michigan/Pennsylvania/Wisconsin vulnerability matrix)
+  - Domain 31x: Healthcare Tariff Collision (urgency: July 31 pharma tariff + OBBBA January + 7-date advocacy timeline, sources confirmed)
+  - All three research-ready with outlines, source lists, governance implications
+  - Urgency ranking: 31x (95 days) > 37b (April-July) > 37a (Sept-Oct)
+- ✅ **Seedwarden Phase 3 Operations Playbook** (5,500+ word execution guide):
+  - TikTok: Production specs + 30-day calendar + engagement templates
+  - Instagram: Asset reuse map + 3 carousel templates + Story/bio link strategy
+  - Pinterest: Design specs + 63-pin batch plan + Rich Pins setup
+  - Email: Welcome edits + newsletter template + behavioral segmentation + win-back campaign
+  - 30-day launch checklist + 6 operational decision trees
+- ✅ Both agents committed changes to master
 
 **What Needs Your Input**:
 
@@ -40,15 +43,15 @@
    - **Phase 2 ready**: Lifestyle photography strategy and Phase 3 transition planning already done
 
 **Project Status**:
-- **stockbot** (P2): ✅ 67 tickers trained. ✅ Gate 1 feasible (4.5x threshold, 134 rt/month). 🚩 Engine restart (user action, CRITICAL before 09:30 ET tomorrow)
-- **resistance-research** (P1): ✅ 35 domains complete. ✅ Trackers updated April 27. ✅ Influencer mapping complete. 🚩 Distribution path decision awaited (no urgency)
+- **stockbot** (P2): ✅ 67 tickers trained, Gate 1 feasible (134 rt/month). 🚩 Engine restart CRITICAL (before 09:30 ET tomorrow, ~15h away)
+- **resistance-research** (P1): ✅ 35 domains complete + Phase 2 expansion framework (3 scope docs created). ✅ Trackers current through April 27. ✅ Influencer mapping complete. 🚩 Distribution path decision (no urgency)
+- **seedwarden** (P5): ✅ Phase 1 production-ready + Phase 3 operations playbook complete (5-system execution guide). 🚩 Tag corrections + Etsy verification (Phase 1 launch blocker)
 - **cybersecurity-hardening** (P3): ✅ All tiers complete + messaging templates. 🚩 Tier 1 approval awaited (before execution)
-- **seedwarden** (P5): ✅ Phase 2 photography plan + Phase 3 transition. ✅ Phase 1 production-ready. 🚩 Tag corrections + Etsy verification (user action)
 - **open-repo** (P6): ✅ PR #1 open, 194/198 tests passing, Phase 5 research done. 🚩 Awaiting maintainer PR merge
 - **mfg-farm** (P4): ✅ Business plan + CadQuery designs + listings complete. 🚩 Test print required (user action)
 - **All others**: Complete or paused (awaiting user action)
 
-**Usage**: Sonnet 47.6% (2,391,297 tokens) | All-models 59.0% ← Updated at session end. Two parallel agents (stockbot, resistance-research) completed expansion + tracking work. Efficient parallel execution; no threshold concerns.
+**Usage**: Sonnet 47.6% (2,391,297 tokens) | All-models 59.4% ← Updated at session end. Two parallel agents (resistance-research, seedwarden) completed Phase 2 expansion + Phase 3 playbook work. Efficient parallel execution; no threshold concerns. Resets Tuesday 00:00 UTC (~9h away).
 
 ---
 
