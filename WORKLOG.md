@@ -4,6 +4,48 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 03:10 — resistance-research — Domains 27 + 29 Research COMPLETE (2 Phase 2 Domains)
+
+**Session**: Phase 2 domain research acceleration (Domains 29 + 27)
+
+### COMPLETED: Domain 29 — Prosecutorial Weaponization and DOJ Capture (6,124 words)
+
+**Research deliverable**: `projects/resistance-research/domains/domain-29-prosecutorial-weaponization-and-doj-capture.md` (6,124 words)
+
+**Key findings**:
+- **SPLC indictment (April 21)**: Landmark case. 11 counts, announced by FBI Director Kash Patel. Legal analysis identifies independent defects in wire fraud/bank fraud/money laundering counts. Actual charged wire fraud: $13,905 on one day in 2023. Indictment 6 months after Patel severed FBI-SPLC intelligence relationship (Oct 2025).
+- **22-case retaliatory pattern**: Protect Democracy tracker documents systematic pattern across four categories: political opposition (Schiff, James, Comey, Bolton), Democratic officials (6 members of Congress), prosecution-as-leverage (Eric Adams), protest suppression (McIver, Baraka, Lemon).
+- **Nashville vindictive prosecution**: Judge Waverly Crenshaw found "realistic likelihood" of vindictive prosecution; reviewed 3,000+ DOJ documents; documentary evidence of pressure from DOJ leadership.
+- **Structural breakdown**: OPR director fired (no replacement 8+ months); DOJ IG facing 28% budget cut; 70% Civil Rights Division departure; April 25 proposed rule to shield federal prosecutors from state bar discipline (4 days after SPLC indictment).
+- **May Day context**: FACE Act, § 111, and conspiracy charges (§ 372) are documented enforcement vehicles. 3 days until May Day — practical guidance included in research.
+
+**Sourcing**: 9 primary sources (DOJ press release, Just Security Weissmann, CBS News former prosecutors, Intercept donors, Protect Democracy tracker, Democracy Docket, Brennan Center, NPR, Lawfare, The Hill grand jury refusal).
+
+**Status**: Domain 29 COMPLETE and production-ready for distribution.
+
+### COMPLETED: Domain 27 — Higher Education and Academic Freedom (4,800+ words)
+
+**Research deliverable**: `projects/resistance-research/domains/domain-27-higher-education-and-academic-freedom.md`
+
+**Key findings**:
+- **Four-track simultaneous assault**: (1) Federal funding leverage (Harvard $2.2B freeze ruled unconstitutional Sept 2025; Columbia $221M settlement with demographic monitoring of admits/rejects, visa-holder mandatory reporting), (2) DEI prohibition + preemptive self-censorship (persists after court blocks; AAUP baseline Dec 2023–Feb 2024 already showed >50% faculty self-censoring), (3) Visa revocations (6,000+ revoked 2025; Khalil detention case at Third Circuit; "adverse foreign policy" legal gap), (4) Administrative control (GSA certification False Claims Act liability, accreditation weaponization rulemaking finalized late 2026).
+- **International precedent**: J.D. Vance explicitly named Orbán's Hungary approach as model. Academic Freedom Index 2026: US institutional autonomy decline (3.3→1.7) steeper than Hungary's own decline.
+- **Brain drain signal**: ERC early-career grant applications from US: 60 (2024) → 116 (2025) → 169 (2026). EU €500M "Choose Europe for Science" initiative launched. 1 in 10 faculty in restricted states actively seeking out-of-state positions.
+- **Central finding**: Compound effect of four tracks, not individual severity. No single legal challenge or institutional response has arrested the degradation of university's democratic function.
+
+**Sourcing**: Federal court documents (Burroughs ruling, Khalil), Columbia settlement, State Dept letters, AAUP surveys, Freedom House 2026, Heritage Foundation/Danube Institute cooperation documents, Academic Freedom Index, ERC data.
+
+**Status**: Domain 27 COMPLETE and production-ready for distribution. 
+
+**Two Phase 2 Domains Now Complete**:
+- ✅ Domain 29 (6,124 words) — Prosecutorial Weaponization (May Day urgency)
+- ✅ Domain 27 (4,800+ words) — Higher Education (Priority 1 Phase 2)
+- ⏳ Domain 28 (pending) — War Powers Venezuela (Priority 3 Phase 2)
+
+**Next**: All three domains production-ready for integration into proposal and distribution. Pending user prioritization of Phase 2 research cadence and publication schedule.
+
+---
+
 ## 2026-04-27 02:51 — stockbot — Trading Engine Shutdown Root Cause Resolution
 
 **Session**: Immediate response to critical block
