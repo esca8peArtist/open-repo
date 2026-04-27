@@ -4,11 +4,51 @@
 
 ---
 
-## Current Session (Session 538 — 2026-04-27 — Stockbot Infrastructure Prep + Resistance-Research Phase 2 Verification)
+## Current Session (Session 538 — 2026-04-27 — Activation Architecture + Infrastructure Prep + Phase 2 Verification)
 
-**Status**: ✅ **STOCKBOT POST-RESTART INFRASTRUCTURE READY** + ✅ **RESISTANCE-RESEARCH PHASE 2 VERIFICATION COMPLETE**. Two parallel agents completed: (1) Stockbot: 67-ticker portfolio infrastructure verified, paper trading monitor upgraded to multi-ticker aggregation, 53 infrastructure tests passing, POST_ENGINE_RESTART_CHECKLIST.md created. (2) Resistance-Research: Domains 27, 28, 29 verified production-ready (38 total domains now), all April 2026 content updates verified complete. Framework 100% production-ready for distribution path decision. Stockbot ready for 2026-04-28 09:30 ET engine restart (🚨 TIME-CRITICAL: ~13 hours remaining).
+**Status**: ✅ **DEMOCRATIC RENEWAL ACTIVATION ARCHITECTURE COMPLETE** + ✅ **STOCKBOT POST-RESTART INFRASTRUCTURE READY** + ✅ **RESISTANCE-RESEARCH PHASE 2 VERIFICATION COMPLETE**. Three parallel tasks completed: (1) Orchestrator: Exploration Queue refreshed with 3 new research items, highest-priority item spawned. (2) Resistance-Research Agent: 11,992-word ACTIVATION_ARCHITECTURE.md created (Phase 1-5 implementation schedule, dependency mapping, international precedent, success gates). (3) Previous agents (from Session 538a): Stockbot multi-ticker infrastructure verified (67 tickers, 53 tests), Resistance-Research Domains 27-29 verified (38 total domains). Framework 100% production-ready for distribution. Stockbot ready for 2026-04-28 09:30 ET engine restart (🚨 TIME-CRITICAL: ~13 hours remaining).
 
 **Since Last Session (Session 537)**:
+
+**Part 0 — Democratic Renewal Activation Architecture** (Orchestrator + Resistance-Research Agent):
+- ✅ **Exploration Queue Refresh**: Added 3 new research items (activation architecture, live trading ops, high-risk population protocols)
+- ✅ **Activation Architecture**: COMPLETE — 11,992 words, 91 KB, production-ready
+  - **Scope**: Post-distribution operationalization of all 35 domains (Phase 1-5 implementation)
+  - **Phase 1-5 Implementation Schedule**: Tabular format across all domains, with specific responsible actors (federal agencies, state legislatures, courts, civil society)
+    - Phase 1 (Immediate Jan-May 2026): Quick wins (EO reforms, hiring, OIG investigations)
+    - Phase 2 (100-day June-Sept 2026): Legislative proposals, court filings, administrative overhauls
+    - Phase 3 (1-year 2027): Institutional reforms requiring time
+    - Phase 4 (3-year): Constitutional reforms
+    - Phase 5 (10-year): Structural transformations
+  - **Dependency Mapping**: Domain 6 (Judicial Independence) is the absolute prerequisite — Trump v. Slaughter (June 2026) is the linchpin event. Six domains depend on Domain 6 ruling for viability.
+  - **Critical Path**: 5 critical path events identified with specific threshold conditions
+  - **Bottlenecks**: 4 named bottlenecks with measurable success criteria (e.g., "maintain 20+ state AG coalition")
+  - **International Precedent**: 6 case studies with timelines
+    - Spain (1975→1978): 8 months to transition PM, 19 months to first free elections
+    - South Korea (1987→1992): 5 years to consolidation, sustained mass mobilization critical
+    - Poland (1989→2024): 2.5 years to electoral victory but institutional reform still blocked after 35 years
+    - Hungary (2026): Two-thirds opposition majority after 16 years authoritarian rule — speed matters when window opens
+    - Taiwan (1996→2005): 9 years to presidential election victory, 17 years to democratic consolidation
+    - Costa Rica (1949): 3-year post-civil-war institutional rebuild, no-standing-army constitutional design still operating 75 years later
+  - **Success Gates** (measurable post-distribution evaluation thresholds):
+    - Gate 1 (June 2026): 30 Senate staffers + 25+ law school clinics publishing analysis
+    - Gate 2 (Sept 2026): 15 RCV states + 3-4 major AGs filing coordinated suits
+    - Gate 3 (Dec 2026): MERIT Act introduced + 50+ institutional endorsements
+    - Gate 4 (Dec 2027): MERIT Act House committee passage + 8+ RCV states + 60%+ AG coalition win rate
+    - Gate 5 (2028+): Institutional defection thresholds
+  - **Practitioner Role Matrix**: 8 recipient types with Phase 1 actions and success metrics
+    - Law professors: publish 1,500-word policy briefs on Domain 6 or 29, target Brennan Center/Law360, success metric is citation in Senate Judiciary Committee staff memos within 60 days
+    - State AGs: join/expand multistate coalition, file at least one suit in highest-leverage domain, maintain 20+ state threshold for 79% win rate
+    - Senate judiciary staffers: request committee hearings on Domains 6 and 29 in Q3 2026, commission CRS analysis
+    - Think tanks: commission 3-5 policy analyses per domain, distribute to state legislatures, track adoption
+    - Media outlets: cover Domain 37 (election interference) through October 2026, signal legislative interest to Senate
+    - NGOs: Build pre-litigation infrastructure for election protection, Section 3 enforcement, state-level constitutional amendments
+    - International bodies: Monitor US democratic regression as precedent for global decline, engage multilateral diplomatic channels
+    - State legislatures: Use Phase 1 domains as RCV models, pass ballot security legislation, fund election infrastructure
+  - **Risk Mitigation**: 3 failure modes per phase with explicit pivot triggers (e.g., "If Phase 2 bills fail in both chambers by June 2026, shift to state-level federalism strategy")
+  - **House Flip Contingency**: Nov 2026 House flip is a binary switch — bifurcates Phase 2 legislative feasibility. Both paths mapped (flip-case = 12-18mo acceleration; no-flip = state-level shift).
+  - **Activation Timeline**: Visual Q2 2026-Q4 2028 with all 5 Success Gates, phase transitions, and coordination points
+  - **Commit**: 9a7f375
 
 **Part 1 — Stockbot Multi-Ticker Infrastructure Verification** (Parallel Agent):
 - ✅ **Multi-ticker configuration**: Verified 67 sessions active across Sessions 521-535 (all core tickers + 56 additional from batch expansions)
