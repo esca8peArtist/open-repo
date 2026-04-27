@@ -118,12 +118,31 @@
   - International precedent: Hungary (cardinal laws model — exact mechanism being replicated in four US states), Poland (capture reversal asymmetric), Turkey (legislative capture as platform for next phase)
   - Timeline: 26 SOS races + 3 state supreme court races in 2026 as immediate test; 2030 Census redistricting cycle as long-term objective (whoever controls state legislatures in Jan 2031 draws maps until 2041)
 
-**Next (Session 514 Update)**:
-- **Framework status**: 31 domains complete (Phase 1-5 base 22 + Phase 2 Domains 23, 27-29, 31, 33). All production-ready.
+**Phase 2 Candidates 3-5 (Session 515) — ALL COMPLETE**:
+- ✅ **Domain 34: Congressional Power-of-the-Purse Fiscal Authority Reassertion** (6,403 words, 45 sources)
+  - Research document: `domains/domain-34-congressional-power-of-the-purse-fiscal-authority-reassertion.md`
+  - Scope: Four-mechanism fiscal assault (agency fund holds, OMB apportionment Category C expansion, Treasury payment system interference, pocket rescissions)
+  - Key findings: $425B+ withheld appropriations documented; Category C expansion to 8.64% of FY2026 (vs. 3.94% under Biden); watchdog dismantlement threat (50% GAO budget cut proposed); post-*Loper Bright* litigation vectors detailed
+  - Reform pathways: Congressional Power of the Purse Act, Category C statutory reform, congressional standing legislation, emergency authority sunset provisions, watchdog protection
+
+- ✅ **Domain 35: Supreme Court October 2026 Term Preview & Post-Loper Landscape** (~5,100 words, 26 sources)
+  - Research document: `domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md`
+  - Scope: October 2025 term holdings, Loper Bright fallout, October 2026 docket prediction, universal injunction restrictions, presidential immunity, reform feasibility assessment
+  - Key findings: Humphrey's Executor effectively dead; Loper Bright trifecta forces statutory drafting rewrite; universal injunctions eliminated; presidential immunity closes criminal accountability; October 2026 cert predictions (Second Amendment, Section 230, APA vacatur, Article III agencies)
+  - Doctrinal implications: Which Domain 6 and Domain 13 recommendations remain viable post-Loper, which require statutory heavy-lifting
+
+- ✅ **Domain 36: AI Governance, Algorithmic Accountability & Democratic Authority** (6,080 words, 30 sources)
+  - Research document: `domains/domain-36-ai-governance-algorithmic-accountability-democratic-authority.md`
+  - Scope: Federal AI deployment accountability gap, root causes, structural vulnerabilities, international precedent (EU AI Act, Canada AIDA), statutory reform pathways
+  - Key findings: No federal AI statute; Biden EO framework revoked Jan 20, 2025; five crisis cases (WISeR, Palantir/ICE, FBI location data, SSA disability, DOGE terminations); post-Loper Bright vulnerability
+  - Six statutory reforms: Federal AI Governance Act, APA Algorithmic Due Process Amendment, Algorithmic Impact Assessment, Congressional Audit Rights, State AI Authority Floor, Private Right of Action
+
+**Next (Session 515 Update)**:
+- **Framework status**: 34 domains complete (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33-36). All production-ready. **Exploration queue fully exhausted** — no more high-priority Phase 2 candidates in active queue.
 - **User decision required**:
-  - **Path A — DISTRIBUTION EXECUTION**: Updated proposal (now integrating 31 domains), Substack/Reddit templates, institutional outreach (universities, policy orgs, legal clinics) — all at depth for serious engagement. Ready to begin immediately.
-  - **Path B — Phase 2 expansion (optional)**: 3 more candidates queued (Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance) — continue research toward 35-40 domain framework before distribution.
-  - User selects priority.
+  - **Path A — DISTRIBUTION EXECUTION**: Updated proposal (now integrating 34 domains), Substack/Reddit templates, institutional outreach (universities, policy orgs, legal clinics) — comprehensive coverage with 34-domain framework. Ready to begin immediately.
+  - **Path B — Phase 2 expansion (optional)**: Lower-priority candidates remain (state legislative preemption depth, international democratic update, Federal Circuit decisions) — continue research toward 35-40 domain framework before distribution (requires explicit user selection of next candidate).
+  - **User selects priority**: Path A maximizes timeliness and impact of 34-domain framework; Path B requires 4-6 week extension with diminishing marginal returns.
 
 **✅ COMPLETED (Session 502)**:
 - ✅ **Domain 19f War Powers Reform** — Complete research document with current crisis analysis
