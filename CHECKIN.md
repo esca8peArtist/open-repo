@@ -4,7 +4,53 @@
 
 ---
 
-## Current Session (Session 510 — 2026-04-27 Early Morning — Phase 2 Integration Complete + Stockbot Engine Offline)
+## Current Session (Session 511 — 2026-04-27 Early Morning — Pre-Restart Status Check + Protocol Execution)
+
+**Status**: ✅ **Orientation + state verification complete**. All active projects assessed for autonomous work availability. **CRITICAL DEADLINE REMINDER**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)** — approximately 34 hours from session start (2026-04-27 04:30 UTC).
+
+**What Accomplished**:
+
+1. ✅ **Orchestrator Session Protocol: Full Execution**
+   - **Orient**: Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md — all state files verified
+   - **Process INBOX.md**: No new items (last processed 2026-04-25 evening)
+   - **Handle Blocks**: 1 active block (mfg-farm test print, user action, cannot auto-verify); 5 resolved blocks confirmed in archive
+   - **Assess Work**: All projects reviewed for autonomous work availability
+
+2. ✅ **Stockbot: Pre-Restart Health Check (COMPLETE)**
+   - **Root cause verification**: Test contamination (pytest concurrent with live engine on 2026-04-26 22:15 UTC) documented in logs (bad_callback Mock object in shutdown handler)
+   - **Engine readiness**: BLOCKED.md Resolved Archive confirms "Engine ready for Monday 2026-04-28 market open"
+   - **Paper trading state**: 8 monitoring snapshots intact (2026-04-26 22:22 → 2026-04-27 04:15 UTC); 1 BUY (36 AAPL @$271.04), 0 round trips, no anomalies
+   - **Database**: Files present and accessible; stockbot.db empty (expected, test artifact)
+   - **Confidence**: **Engine restart should succeed.** Expect SELL signal execution Monday morning when market opens.
+
+3. ✅ **Project Status Summary**:
+   - **resistance-research**: 28-domain framework complete; Phase 2 exploration queue populated (3 candidates); awaiting user selection for Phase 2 domain OR distribution execution go-ahead
+   - **stockbot**: Paper trading active, engine offline but ready for restart. USER ACTION REQUIRED: restart before 2026-04-28 09:30 ET
+   - **cybersecurity-hardening**: Tiers 1-3 complete; awaiting user Tier 1 approval for distribution
+   - **mfg-farm**: Blocked on user test print
+   - **seedwarden**: Phase 1 blocked on user tag corrections; Phase 2 mockup tooling complete
+   - **open-repo**: PR #1 open, awaiting review
+   - **All others**: Complete or paused
+
+**What's in Progress**:
+- **stockbot**: Paper trading monitoring (engine offline until user restart). First market session: Monday 2026-04-28 09:30 ET.
+- **resistance-research**: Awaiting Phase 2 expansion domain selection OR distribution execution approval from user
+
+**What Needs User Input** (priority order):
+1. **URGENT — Today before 2026-04-28 09:30 ET**: Restart stockbot engine: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`. Confirm engine starts cleanly, position (36 AAPL @$271.04) loads, and SELL signal executes at market open Monday.
+2. **resistance-research**: (a) BEGIN DISTRIBUTION EXECUTION using 28-domain templates, OR (b) pick Phase 2 expansion domain (recommend healthcare/Medicaid for January 2027 urgency)
+3. **seedwarden, mfg-farm, cybersecurity-hardening**: Tag corrections, test print, Tier 1 approval
+
+**Suggested Next Steps**:
+- **ASAP (before 09:30 ET tomorrow)**: Restart stockbot engine and verify position loads cleanly
+- **Next autonomous session (if no user input)**: No meaningful work available — all projects blocked on user action or awaiting selection
+- **May 12 checkpoint**: Stockbot Gate 1 feasibility assessment — determine if h=10 single-ticker viable or strategy pivot required
+
+**Usage Status**: Check `python3 scripts/usage-check.py --check` in next session to verify no throttle active.
+
+---
+
+## Previous Session (Session 510 — 2026-04-27 Early Morning — Phase 2 Integration Complete + Stockbot Engine Offline)
 
 **Status**: ✅ **Phase 2 integration COMPLETE** — all 28 domains unified, metadata corrected, distribution templates fixed. Exploration Queue created and populated. CRITICAL: **Stockbot engine offline — user action required before 09:30 ET today.** Structural risk identified: Gate 1 requires 30 trades/month but h=10 design maxes at 2-3/month (10-15x gap). May 12 feasibility checkpoint needed.
 

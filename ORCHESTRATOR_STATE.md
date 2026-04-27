@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-27T02:19:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-27T04:28:37Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 47.1% | Reset in 22h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 49.1% | Reset in 20h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -33,6 +33,7 @@
 ### stockbot
 **Status**: Active — paper trading live, **strategy optimization COMPLETE**, ready for monitoring + live trading launch
 **Focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **All three strategy optimization tasks COMPLETE** (Sessions 488-489). AAPL_h10_lgbm_ho validation plan in place, monitoring script deployed, live trading readiness checklist ready. **Next**: Monitor paper trading daily, assess progress toward Gate 1
+**Blocked**: Engine restart (user action today before 09:30 ET) and May 12 feasibility assessment
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 mockup tooling COMPLETE**
@@ -63,43 +64,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - **Priority**: Domain 19f identified as Priority 1 in post-Domain-26 completeness audit (Session 501)
-   - **Deliverable**: `projects/resistance-research/domains/domain-19f-war-powers-reform.md` (4,400 words)
-   - **Key findings**:
-     - **May 1 deadline is LIVE and non-trivial**: Operation Epic Fury launched February 28, 2026, without congressional authorization. Trump submitted War Powers notification dated March 2. 60-day clock expires May 1. Ceasefire placed April 8 but under severe strain — Iran seized ship April 24, Trump canceled peace talks April 25. Congress blocked FOUR war powers resolutions (most recent 52-47 on April 15).
-     - **Constitutional structure inverted**: Founders' design (Congress declares war, President conducts it) has reversed since 1945. Presidents now initiate; Congress forced to vote to stop. Youngstown Steel framework (Category 2/Zone of Twilight) applies, but four Senate votes near-denying push toward Category 3.
-     - **2001 AUMF still dangerous**: Used to justify operations in 19 countries, names no enemy/scope/duration. December 2025 NDAA repealed 1991 and 2002 Iraq AUMFs (first AUMF repeal since 1971), but 2001 remains. Jayapal-Massie repeal bill characterized as longshot.
-     - **Fiscal connection underappreciated**: Congressional estimates ~$50B through Day 40; Harvard expert ~$1 trillion lifetime. White House budget director refused to estimate cost in testimony. No supplemental appropriations request yet (admin fears it legalizes the war under Kosovo appropriations-as-authorization doctrine).
-     - **Power of the purse is most enforceable tool**: Congress terminated unauthorized ops in 1973 (Cambodia) and 1994 (Somalia) via appropriations riders. This works because it doesn't require executive compliance — cuts off funding. Risk: Iran-specific appropriations may inadvertently constitute authorization. Just Security recommends explicit statutory language denying authorization in any supplemental request.
-     - **Germany's Parlamentsvorbehalt is strongest international model**: 2005 Parlamentsbeteiligungsgesetz requires affirmative Bundestag authorization before any German armed activities abroad, with emergency carve-out and Federal Constitutional Court enforcement. UK's 2013 Syria defeat (Cameron accepted Commons rejection) and France's four-month authorization threshold weaker but meaningful. No peer democracy relies as heavily on executive unilateralism as post-1945 US.
-     - **Strongest counterargument is enforcement gap, not speed**: Waxman's Yale analysis correctly identifies that legal reform alone cannot change political incentives causing Congressional abdication. But doesn't follow that legal reform is pointless — automatic funding cutoffs could shift default incentives even under adverse political conditions.
-   - **Sourcing**: 9 sources from current reporting (April 2026) and legal analysis
-   - **Status**: Complete. Ready for integration into proposal and distribution. Closes Priority 1 gap identified in post-Domain-26 audit.
+- **Metrics**: 9,226 words, 28 subsections, 50+ sourced citations
+- **Content**: Four-track assault analysis (federal funding leverage, DEI prohibition, student visa revocations, administrative control demands), democratic function, structural vulnerabilities, institutional resilience mechanisms, reform pathways (27a-27e), international precedents (Germany, Canada, Netherlands), implementation timeline, fiscal scope ($96-126B/year investment vs $1-1.5T GDP loss)
+- **Key findings**: 
+  - U.S. institutional autonomy fell from 3.3 (2019) to 1.7 (2025) — largest single-year decline for any major democracy in Academic Freedom Index
+  - 35% of faculty now more likely to self-censor than during McCarthyism (FIRE 2024 survey)
+  - Brain drain escalating: U.S. researchers' ERC grant applications to EU tripled (60→169 in 2 years)
+- **Status**: Production-ready, fully sourced, integrated with Domain 19f
 
-2. ✅ **Stockbot: Paper Trading Monitoring (Day 2)**
-   - **Agent**: stockbot agent spawned
-   - **Task**: Run daily monitoring script and assess Gate 1 feasibility
-   - **Results**:
-     - Monitor script: exit code 0, clean run
-     - Daily log: updated with 5th snapshot (2026-04-27 01:05:25 UTC)
-     - Database state: 1 BUY open (36 AAPL @ $271.04, 2026-04-26 17:06 UTC), 0 completed round trips (expected at Day 2)
-     - Market closed Sunday when BUY was placed. First SELL signal opportunity: Monday 2026-04-28 (first live market session)
-     - Gate 1 pace: INDETERMINATE — no round trips yet. **Structural concern flagged**: AAPL_h10_lgbm_ho is daily-bar LightGBM stacker. 180-day backtest produced only 1 buy-hold trade. Achieving 30 round trips/month from single-stock daily-signal strategy is aggressive. Cannot be confirmed/refuted until live signals generate at least a few round trips.
-     - All other gates: FAIL or INSUFFICIENT DATA (expected at Day 2). Max drawdown passing (0%) due to insufficient data.
-   - **Checkpoint schedule**:
-     - 2026-04-28 (Day 3): First live market session — watch for SELL signal and first round-trip completion
-     - 2026-05-12 (Day 16): Two-week Gate 1 feasibility review — **flag if pace well below 15 round trips** (half-month threshold for 30/month rate)
-     - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail (baseline for rate calculation)
-     - 2026-07-26 (Day 90): 3-month graduation review target
-   - **Status**: Monitoring on track. No issues. Waiting for Monday market open for meaningful data.
+**Domain 28: War Powers, Venezuela Military Unilateralism** ✅
+- **File**: `projects/resistance-research/domains/domain-28-war-powers-venezuela-military-unilateralism.md`
+- **Metrics**: 5,200 words, 28 sourced citations
+- **Content**: January 3 2026 Venezuela "arrest operation" as precedent for eliminating WPR constraints, Senate 51-50 blocked (VP Vance tiebreaker), House 215-215 failed, legal theory analysis, WPR historical framework, 1973-2001 AUMF context, implications for democratic constraint, international precedent, reform pathways (28a-28d), implementation timeline, fiscal scope ($4.7B costs of 2025-2026 deployment)
+- **Key findings**: 
+  - If "arrest operation" successfully displaces "military operation," WPR is functionally eliminated for any operation framed as law enforcement
+  - DEA holds current indictments in Iran, North Korea, Russia, Lebanon, Cuba, Colombia, Mexico — establishes precedent scope
+  - Appropriations rider pathway (Cambodia 1973, Somalia 1994 model) is available short-term lever
+- **Connection**: Domain 28 extends Domain 19f by documenting the operational live case where legal precedent is actively being set
+- **Status**: Production-ready, fully sourced, explicitly maps connection to Domain 19f
 
-**Exploration Queue Assessment**:
-- Queue had 0 active items going into session (all 3 from Session 501 completed)
-- No replenishment needed now (2 projects have meaningful work)
-- Will replenish if both projects hit external blocks
+**Domain 29: Prosecutorial Weaponization and DOJ Capture** ✅
+- **File**: `projects/resistance-research/domains/domain-29-prosecutorial-weaponization-and-doj-capture.md`
+- **Metrics**: 8,809 words, 60 sourced citations across 20 source blocks
+- **Content**: SPLC indictment (April 21 2026) as landmark case, Kash Patel personal announcement (abnormal), 22-case pattern (political opposition, Democratic officials, instrumentalized prosecution, protest suppression tracks), Nashville/Crenshaw vindictive prosecution finding (October 2025), institutional vulnerability via FVRA gaming, prosecutorial discretion at charging stage, charging-stage vs trial-stage analysis (97.2% guilty plea rate), international precedent (Germany Legalitätsprinzip, Canada transparency, UK CPS test, EU independence), May Day implications, reform pathways (29a-29d: Special Counsel Independence Act, charging transparency, IG restoration, McDade-Murtha litigation), implementation timeline (Phase 1: 0-12mo, Phase 2: 12-36mo, Phase 3: 36+mo), fiscal scope ($50-100M/year institutional infrastructure vs $44M+ in defense costs for documented 22 cases)
+- **Key findings**: 
+  - SPLC case is "suppression through process, not conviction" — successor to COINTELPRO applying formal legal apparatus
+  - Charging decision = functional verdict (2% trial rate, 0.4% acquittal rate)
+  - Grand jury secrecy + no pre-indictment standing means no check on charging stage where power is most dangerous
+  - Section 7 (new) establishes charging-stage power is categorically different from trial-stage power
+- **Status**: Production-ready, fully sourced, establishes distinctions from Domain 6 (Judicial Independence)
 
-**Token Usage** (Session 502):
-- Resistance-research agent: ~88K tokens
-- Stockbot agent: ~46K tokens
-- Total: ~134K tokens
-- Running total: 47.6% Sonnet (still well below 80% throttle threshold)
+### Integration Status
+
+All three domains have standalone research files committed to git. The proposal file (`democratic-renewal-proposal.md`) currently has older embedded summaries of Domains 27-29. Next step is integration into proposal Part II and updates to executive summary and distribution package. However, the core research is complete and production-ready.
+
+### Exploration Queue Status
+
+Queue now empty (3 items worked). Should add 2-3 new Phase 2 research candidates before next session if no higher-priority work emerges.
+
+**Total Phase 2 domains completed**: 6 (Domains 27-29 completed this session; Domains 26, 25, 24, 23 completed in Sessions 500-502)
