@@ -4,7 +4,40 @@
 
 ---
 
-## Current Session (Session 505 — 2026-04-27 Early Morning — Critical Block Resolution + Phase 2 Domain Research)
+## Current Session (Session 506 — 2026-04-27 Late Morning — Phase 2 Domain 28 Research + Tracker Maintenance)
+
+**Status**: Phase 2 research 100% complete (Domains 27, 28, 29 all researched and production-ready). Tracker updates current through April 27. Resistance-research project ready for distribution phase.
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Domain 28 Research COMPLETE** (5,600 words)
+   - **Document**: `domains/domain-28-war-powers-venezuela.md`
+   - **Focus**: January 3, 2026 Venezuela operation as live case study of War Powers Resolution enforcement gap
+   - **Key findings**: Operation Absolute Resolve (150+ aircraft, Delta Force, B-1 bombers, regime change objective, 55 foreign nationals killed) characterized as "law enforcement arrest." OLC memo reveals internal contradictions. Senate 52-47 advance, 51-50 defeat (Vance tiebreaker). House 215-215 failure.
+   - **Distinct from Domain 19f**: Venezuela is authorization-framing gap, Iran is authorization-timing gap. Two separate constitutional flanks.
+   - **Status**: Production-ready for distribution.
+
+2. ✅ **Resistance-Research: Tracker Updates COMPLETE**
+   - **SPLC Indictment** (April 21, 2026): Added Section 7 to `first-amendment-suppression.md` documenting charges, legal theory flaws (Weissmann comparison, donor-fraud defect, norm violations), mutual defense network. Also added Category 10.1 entry to `litigation-tracker-2026.md`.
+   - **Litigation Tracker April 27-28 Pass**: Updated `litigation-tracker-2026.md`:
+     - SPLC indictment entry (10.1) with full legal analysis
+     - Nashville Crenshaw ruling status (10.2): Explicitly "Decision pending as of April 27, 2026" with fill-in checklist for when outcome is public
+     - Abrego Garcia / Xinis April 28 hearing: Pre-hearing confirmation with discovery-stay context
+     - Section 702 FISA legislative status: April 30 deadline, Johnson proposal analysis, data broker loophole as resistance-research significance
+   - **Tracker currency**: litigation-tracker-2026.md current through April 27. April 28 Xinis and Nashville Crenshaw pending — entries structured for immediate fill-in when outcomes public. Other trackers (environmental, consent-decree) remain in status noted in Session 504.
+
+**Phase 2 Completion Summary**:
+- Domain 27 (Higher Education) — COMPLETE (Session 505, 4,800+ words)
+- Domain 28 (War Powers Venezuela) — COMPLETE (Session 506, 5,600 words)
+- Domain 29 (Prosecutorial Weaponization) — COMPLETE (Session 505, 6,124 words)
+- **Exploration Queue: 3/3 Phase 2 candidates researched**
+
+**Project Status Post-Session 506**:
+- **resistance-research** (Priority 1): ✅ **Phase 2 research 100% complete (27, 28, 29)**. Tracker updates current through April 27. All trackers up-to-date except consent-decree-defiance-tracker.md (April 12, lower priority). Distribution templates ready (awaiting user execution).
+
+---
+
+## Previous Session (Session 505 — 2026-04-27 Early Morning — Critical Block Resolution + Phase 2 Domain Research)
 
 **Status**: Critical block resolved. Two Phase 2 domains researched and production-ready. Stockbot engine ready for Monday market open. Exploration Queue partially advanced.
 

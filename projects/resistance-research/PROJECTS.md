@@ -55,23 +55,23 @@ Items listed in priority order. Do NOT start research until explicitly tasked.
 
 ### HIGH PRIORITY — Phase 2 Domain Candidates (identified Session 504, April 27)
 
-**[QUEUED] Domain 27: Higher Education and Academic Freedom as a Democratic Institution**
+**[COMPLETE] Domain 27: Higher Education and Academic Freedom as a Democratic Institution**
 
-Why: Active April 2026 crisis (Harvard $2.2B frozen, Columbia $220M settlement, SPLC indictment targeting civil rights infrastructure, student visa revocations as campus speech suppression). Democratic function of universities (civic training, independent expertise, protected dissent space) is a genuine gap in the 26-domain framework. Over one-third of faculty reporting academic freedom decline; over half self-censoring. No existing domain addresses university-based knowledge production or the mechanism of funding leverage as ideological control.
+Completed: Session 505 (April 27, 2026). File: `domains/domain-27-higher-education-and-academic-freedom.md`
 
-Research scope: Federal funding leverage mechanism; DEI prohibition vs. preemptive self-censorship pattern; visa revocations as campus political suppression; curriculum/admissions demands; democratic function analysis; reform proposals (shared governance protections, federal funding decoupling from ideological compliance, academic freedom statute).
+Four-track assault documented: (1) federal funding leverage — Harvard $2.2B freeze, Columbia $221M settlement, GSA certification expansion; (2) DEI prohibition preemptive self-censorship — 450 campuses in 48 states, Chronicle tracking; (3) student visa revocations — 6,000+ student visas revoked, Khalil/Oztürk/Mahdawi/Khan Suri landmark cases; (4) administrative control demands — accreditation weaponization rulemaking, Compact for Academic Excellence. Academic Freedom Index 2026: US institutional autonomy score fell 3.3 (2019) to 1.7 (2025), faster than Hungary. Sanders HELP Report: 17 First Amendment court rulings against administration. Brain drain: ERC US applications tripled in 2 years.
 
-Primary sources to use: AAUP Political Attacks on Higher Education tracker; Freedom House 2026 Country Report; U.S. News higher education policy timeline (January 2026); Harvard and Columbia case records; ACLU student rights litigation.
+**[COMPLETE] Domain 29: Prosecutorial Weaponization and DOJ Capture**
 
-**[QUEUED] Domain 29: Prosecutorial Weaponization and DOJ Capture**
+Completed: Session 505 (April 27, 2026). File: `domains/domain-29-prosecutorial-weaponization-and-doj-capture.md`
 
-Why: SPLC indictment (April 21, 2026) is the landmark case — a civil rights organization charged for operating an informant program that preceded DOJ's own awareness; announced personally by the sitting FBI Director. Nashville vindictive prosecution finding is judicially documented (Judge Crenshaw's "realistic likelihood" finding). This is functionally distinct from Domain 6 (Judicial Independence) because it operates at the charging stage, before courts are involved. No existing domain addresses the criminal charging power as a democratic suppression mechanism.
+SPLC indictment (April 21, 2026) documented as landmark prosecutorial weaponization case. 22-case retaliatory pattern identified (political opposition, Democratic officials, protest suppression). Nashville vindictive prosecution documented (Judge Crenshaw's "realistic likelihood" finding). Structural breakdown of post-Watergate accountability mechanisms analyzed. May Day 2026 guidance provided (FACE Act, § 111 enforcement, practical protest protection tactics). Reform pathways articulated (statutory special prosecutor independence, charging-decision transparency requirements, congressional oversight restoration).
 
-Research scope: SPLC indictment case record and legal theory; Nashville vindictive prosecution precedent; DOJ investigations of Democratic members of Congress; Kash Patel defamation suits as FBI Director; historical comparison (COINTELPRO, Nixon DOJ, McCarthy-era prosecutions); reform proposals (special prosecutor independence, charging-decision transparency requirements, congressional oversight restoration).
+**[COMPLETE] Domain 28: War Powers, Venezuela Military Unilateralism, and Congressional War Authorization**
 
-Primary sources to use: DOJ press release (April 21); Just Security Weissmann analysis; NPR, CNN, NBC indictment coverage; Intercept donor response piece; first-amendment-suppression.md existing SLAPP/Patel entries.
+Completed: Session 506 (April 27, 2026). File: `domains/domain-28-war-powers-venezuela.md`
 
-**[QUEUED] Domain 28: War Powers, Venezuela Military Unilateralism, and Congressional War Authorization**
+Operation Absolute Resolve (January 3, 2026) documented in full: 150+ aircraft, Delta Force ground troops, 200+ U.S. personnel, 55 foreign nationals killed, regime change explicit goal. "Arrest operation" legal theory traced through the December 23 OLC memo — which internally concedes the "hybrid" nature of the operation and delegates the constitutional determination to the president rather than making an affirmative OLC conclusion. Senate vote record: 52-47 advance (January 8), 51-50 defeat with Vance tiebreaker (January 15) after Hawley and Young flipped on non-binding "(circumstances permitting)" assurances from Rubio. House vote: 215-215 defeat after Speaker Johnson held vote open 20+ minutes for delayed Republican. Seth Harp subpoena documented as structural connection between operational secrecy and war powers oversight suppression. Four Venezuela-specific reform proposals beyond Domain 19f's structural agenda: close the "law enforcement" loophole through definitional amendment; create statutory congressional standing to sue; require pre-authorization notification for named operations; mandate OLC memo disclosure to Gang of Eight.
 
 Why: The January 3, 2026 capture of Venezuela's President Maduro — a military operation on foreign soil conducted without congressional authorization, characterized by the administration as an "arrest operation" to avoid War Powers Resolution requirements — is the most significant war powers constitutional confrontation since the Iraq AUMF. Senate vote (52-47) advanced a War Powers resolution; final vote blocked 51-50 with VP Vance tiebreaker. House failed 215-215. The legal theory ("law enforcement, not war") has no established precedent and would effectively eliminate the War Powers Resolution for any military operation characterized as counternarcotics or law enforcement.
 
@@ -83,13 +83,13 @@ Primary sources to use: Al Jazeera Senate vote coverage; NPR House vote coverage
 
 ### MEDIUM PRIORITY — Tracker Updates Needed
 
-**[QUEUED] SPLC indictment entry for first-amendment-suppression.md and litigation-tracker-2026.md**
+**[COMPLETE] SPLC indictment entry for first-amendment-suppression.md and litigation-tracker-2026.md**
 
-One substantive entry documenting: charges, legal theory, DOJ/Patel announcement, Weissmann analysis, SPLC response, civil society implications. This is not a new domain — it is an update to existing trackers. Can be done in a single focused session.
+Completed: Session 507 (April 27, 2026). SPLC indictment (April 21, 2026) documented in both trackers: charges (11 counts), legal theory, DOJ/Patel announcement staging, Weissmann "preposterous" analysis, bank fraud *Thompson* contradiction, no donor complainants, norm violations, civil rights community response and mutual defense pact. Cross-references between trackers and domain-29 file. New Category 10 (Prosecutorial Weaponization) created in litigation tracker.
 
-**[QUEUED] Litigation tracker April 27-28 update pass**
+**[COMPLETE] Litigation tracker April 27-28 update pass**
 
-Cover: SPLC indictment (new Category 10 entry); Nashville Crenshaw ruling (update when issued); April 28 Xinis hearing outcome (fill in from monitoring files); Section 702 final disposition; Flock Safety LPR contract changes for surveillance-tracking.md.
+Completed: Session 507 (April 27, 2026). Updates made: (1) SPLC indictment — new Category 10 entry in litigation tracker; (2) Nashville Crenshaw — "Decision pending as of April 27" notation added; (3) Abrego Garcia / Xinis — pre-hearing status entry added with fill-in checklist for April 28 outcome (hearing scheduled for April 28, not yet occurred at time of writing); (4) Section 702 FISA — legislative update added: April 30 deadline, failed five-year reauthorization (April 17), Johnson's Foreign Intelligence Accountability Act (three-year, modest reforms, no warrant requirement, civil liberties objections documented). Flock Safety LPR contract changes remain queued for surveillance-tracking.md (lower priority — add in next surveillance pass).
 
 **[QUEUED] Consent decree defiance tracker refresh**
 

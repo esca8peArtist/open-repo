@@ -905,3 +905,108 @@ This timeline is the evidentiary core of Judge Crenshaw's pending vindictive-pro
 | TBD | Rosado v. Bondi (N.D. Ill.) | Final injunction terms; Apple/Facebook voluntary restoration of ICE tracker apps |
 | TBD | Texas SB 4 (5th Cir.) | New plaintiff challenge on merits likely; anyone arrested under SB 4 has automatic standing; watch for fresh filing |
 | TBD | CBP One Parole (D. Mass.) | Government compliance with Burroughs restoration order; watch for appeal to 1st Circuit |
+
+---
+
+## April 27, 2026 — Tracker Maintenance Pass
+
+*Maintenance pass conducted April 27, 2026. Adds: SPLC indictment (new Category 10); Abrego Garcia / Xinis April 28 hearing status note; Nashville Crenshaw ruling status notation; Section 702 legislative update.*
+
+---
+
+## Category 10 (New): Prosecutorial Weaponization — Civil Society and Political Opposition
+
+### 10.1 United States v. Southern Poverty Law Center (M.D. Ala., indictment April 21, 2026)
+
+- **Court**: U.S. District Court, Middle District of Alabama, Montgomery
+- **Indictment returned**: April 21, 2026
+- **Announced by**: FBI Director Kash Patel and Acting Attorney General Todd Blanche (in person, DOJ press conference — staging without modern precedent for a civil society wire fraud case)
+- **Counts**: 11 counts — 6 counts wire fraud (18 U.S.C. § 1343), 4 counts false statements to a federally insured bank (18 U.S.C. § 1014), 1 count conspiracy to commit concealment money laundering
+- **Government's theory**: Between 2014 and 2023, the SPLC secretly paid more than $3 million to individuals embedded in extremist organizations (KKK, Aryan Nations, National Socialist Party of America) without disclosing this to donors — constituting donor fraud. The government characterized payments as funding "racist postings" and "fundraising" by the informants.
+- **SPLC's position**: The payments were a civil rights intelligence operation, modeled on civil rights-era approaches, kept confidential to protect informant safety. The intelligence gathered was routinely shared with local and federal law enforcement, including the FBI. Interim President Bryan Fair: the organization was "operating in the shadow of the height of the Civil Rights Movement, which had seen bombings at churches, state-sponsored violence against demonstrators, and the murders of activists that went unanswered."
+- **Legal analysis — multiple defects identified by former prosecutors**:
+  - **Wire fraud (Weissmann)**: No fundraising materials are quoted. No specific donor is identified as deceived. Actual charged wire fraud amounts total only "$13,905 on a single day in 2023." Weissmann (former DOJ Fraud Section Chief, former FBI General Counsel) called the theory "preposterous" in Just Security, noting that paying informants to infiltrate extremist groups is precisely what fighting extremism looks like. No donor has come forward claiming fraud. The *Build the Wall* prosecution (the administration's own template case) explicitly quoted specific donor promises that were violated; the SPLC indictment contains no equivalent.
+  - **Bank fraud (Zelinsky)**: The indictment repeatedly uses "false and misleading." The Supreme Court's *Thompson v. United States* (decided ~14 months before this indictment) held § 1014 only criminalizes "false" statements, not "misleading" ones. Former federal prosecutor and FBI agent Kyle Boynton: "I don't think any prosecutor with white-collar experience would look at this indictment and believe it makes out the elements of a crime."
+  - **Money laundering**: Legally dependent on fraud counts; if fraud counts fail, this count has no predicate.
+- **Norm violations**: Federal jurisdiction without federal funds involved (charity fraud enforcement is normally a state AG function). No donor complaints cited. FBI Director personally announcing a civil society wire fraud case is without modern precedent. Indiana University nonprofit management professor Beth Gazley confirmed both violations as "unusual" and "atypical."
+- **The causal sequence that matters**: Patel severed the FBI's intelligence-sharing relationship with the SPLC in October 2025, calling it a "partisan smear machine." Six months later, the SPLC was indicted for the conduct that constituted that intelligence-sharing relationship. The FBI had previously used the SPLC's counterintelligence on extremist groups operationally.
+- **First Amendment dimension**: The alleged criminal conduct — paying individuals who made protected speech — is constitutionally protected activity. The government is criminalizing a civil rights organization's decision to pay informants whose expression happened to be extremist.
+- **Civil society response**: ACLU Director Anthony Romero: "anti-American behavior harkening back to the McCarthy era." National Urban League: "a declaration of war on the civil rights movement." Over 100 civil rights groups, labor unions, and religious organizations signed a mutual defense pact. The administration simultaneously vacated Proud Boys and Oath Keepers sedition convictions (April 2026) while indicting the organization that had monitored those same groups.
+- **Status**: Indicted April 21, 2026. No arraignment date publicly confirmed as of April 27, 2026. No dismissal motion filed; no guilty plea entered. Case at initial stages.
+- **Why it matters**: Even if dismissed — as multiple former prosecutors expect — the costs of defending 11 federal counts consume organizational resources, create donor hesitancy, and establish a template for what civil rights intelligence programs constitute criminal risk. Every civil rights organization with similar informant programs is now recalculating. The suppression logic is COINTELPRO applied through formal legal process: disruption through threat, not conviction.
+- **Cross-reference**: `first-amendment-suppression.md` Section 7.1; `domains/domain-29-prosecutorial-weaponization-and-doj-capture.md` Section 1 (comprehensive case analysis, legal flaws, historical comparisons, reform proposals)
+- **Sources**: [DOJ press release — United States v. SPLC (April 21, 2026)](https://www.justice.gov/opa/pr/federal-grand-jury-charges-southern-poverty-law-center-wire-fraud-false-statements-and) | [Just Security — Weissmann: "The Poverty of the DOJ Indictment of the Southern Poverty Law Center"](https://www.justsecurity.org/137171/indictment-southern-poverty-law-center-splc/) | [NPR — SPLC charged with fraud (April 21, 2026)](https://www.npr.org/2026/04/21/g-s1-118275/southern-poverty-law-center-fraud-charges-paid-informants) | [The Intercept — donors reject DOJ claims (April 24, 2026)](https://theintercept.com/2026/04/24/splc-donors-fraud-doj-kash-patel/) | [NBC News — SPLC says targeted by Trump administration](https://www.nbcnews.com/politics/justice-department/southern-poverty-law-center-says-targeted-trump-administration-rcna341237) | [CBS News — former prosecutors on legal flaws](https://www.cbsnews.com/news/southern-poverty-law-center-justice-department-indictment-legal-flaws/) | [The Conversation — norm violations analysis](https://theconversation.com/trump-administrations-indictment-of-the-southern-poverty-law-center-breaks-with-norms-and-may-lack-evidence-of-criminal-wrongdoing-281310) | [Ms. Magazine — civil rights community response (April 24, 2026)](https://msmagazine.com/2026/04/24/southern-poverty-law-center-trump-civil-rights-feminist/)
+
+---
+
+### 10.2 Status Notation: Nashville Crenshaw Ruling — Decision Pending as of April 27, 2026
+
+The vindictive prosecution ruling in *United States v. Abrego Garcia* (M.D. Tenn., Case 3:25-cr-00115), Judge Waverly Crenshaw presiding, remains pending as of April 27, 2026.
+
+The evidentiary record is closed. The February 26, 2026 hearing established that: (a) DOJ official Aakash Singh initiated contact with the Middle District of Tennessee on April 27, 2025 — the day before SCOTUS's "facilitate return" order — calling the prosecution a "top priority"; (b) U.S. Attorney McGuire testified under oath that he knew charges would likely be seen as "vindictive" and "selective"; (c) internal DOJ documents showed DOJ leadership directed prosecutors to hold off on indicting until they received "clearance." Judge Crenshaw found a "realistic likelihood" of vindictiveness in October 2025 and has completed the evidentiary phase.
+
+**As of April 27, 2026: No ruling has been issued. Ruling remains "imminent" per multiple sources.** This entry will be updated when the ruling issues.
+
+**Significance if Crenshaw dismisses**: Eliminates DOJ's primary basis for keeping Abrego Garcia in criminal jurisdiction; removes the Liberia deportation rationale's criminal-supervision anchor; establishes a federal-court record of DOJ leadership orchestrating a charge directly in response to a Supreme Court order.
+
+**Sources**: [Tennessee Lookout — Crenshaw "realistic likelihood" finding (October 2025)](https://tennesseelookout.com/2025/10/06/nashville-federal-judge-finds-likelihood-prosecution-of-kilmar-abrego-garcia-is-vindictive/) | [NBC News — prosecutor testifies he knew charges would appear vindictive (February 2026)](https://www.nbcnews.com/news/us-news/kilmar-abrego-garcia-asks-us-judge-tennessee-dismiss-criminal-case-say-rcna260794) | [CBS News — vindictive prosecution hearing (February 2026)](https://www.cbsnews.com/news/kilmar-abrego-garcia-vindictive-prosecution-tennessee-court/) | [CNN — Blanche comments threaten case (April 11, 2026)](https://www.cnn.com/2026/04/11/politics/todd-blanche-kilmar-abrego-garcia) | [Democracy Docket — vindictive prosecution finding](https://www.democracydocket.com/news-alerts/federal-judge-justice-department-kilmar-abrego-garcia-vindictive-prosecution/)
+
+---
+
+### Abrego Garcia v. Noem (D. Md.) — April 28 Hearing Status Note
+
+**April 28 hearing is SCHEDULED AND NOT YET OCCURRED as of this writing (April 27, 2026).** This entry is a pre-hearing status notation per the April 27 deadline table.
+
+The April 28 hearing before Judge Paula Xinis (D. Md. 8:25-cv-02780) was set to address: (1) DOJ's motion to dissolve the injunction blocking re-detention and third-country deportation to Liberia; (2) contempt/sanctions question for discovery defiance (1,140 documents withheld, 32 produced); (3) status of four court-ordered depositions. Abrego Garcia has been physically present in the United States since his return; the Maryland civil case is distinct from the Nashville criminal proceedings.
+
+**Last known status before hearing**: Discovery stayed through April 30 at 5 p.m. by mutual sealed agreement as of April 23. Both parties submitted sealed motions April 23; content not public. DOJ will invoke the Rao specificity standard from the April 15 D.C. Circuit Boasberg ruling against any contempt order Xinis issues. The government continues to assert Liberia as the deportation destination.
+
+**This entry will be updated with hearing outcomes on or after April 28.** Items to fill in when ruling issues: (1) contempt issued Y/N and terms; (2) Liberia deportation addressed Y/N and court's ruling; (3) any new deadlines or briefing ordered; (4) whether Nashville ruling dropped before or during hearing and how Xinis responded; (5) any emergency appellate application filed same day.
+
+**Sources**: [April 26 pre-hearing status](https://wearecasa.org/judge-frustrated-government-lack-proof-kilmar-abrego-garcia/) | [ABA Journal — contempt inquiry filing](https://www.abajournal.com/news/article/even-though-abrego-garcia-is-back-in-us-government-stonewalling-merits-contempt-inquiry-court-filing-says) | [Fox News — judge rebukes DOJ attempt to dictate court's schedule](https://www.foxnews.com/politics/judge-blocks-trumps-push-deport-abrego-garcia-rebukes-doj-trying-dictate-court)
+
+---
+
+## Section 702 FISA — Legislative Status Update (April 27, 2026)
+
+*This entry documents the legislative posture of Section 702 of the Foreign Intelligence Surveillance Act as of April 27, 2026. For full surveillance infrastructure analysis see `surveillance-tracking.md` Part 1.*
+
+**The April 30 deadline**: Section 702 — the NSA's primary authority for warrantless surveillance of foreign targets, including "backdoor" searches of U.S. persons' communications — was extended through April 30, 2026 by a 10-day stopgap measure passed after the House's initial five-year reauthorization attempt failed on April 17.
+
+**What failed on April 17**: Speaker Johnson's five-year reauthorization bill was blocked when approximately 20 House Republicans joined most Democrats. The coalition objected primarily to the absence of any warrant requirement for querying communications data of U.S. persons, and to the scope of the "data broker loophole" (which allows agencies to purchase commercial location data without a warrant, circumventing collection restrictions).
+
+**Johnson's Foreign Intelligence Accountability Act (introduced April 24, 2026)**: Johnson unveiled updated legislation proposing a three-year reauthorization (reduced from five years) with modest reform provisions:
+  - Monthly civil liberties reviews of U.S. person queries by the Civil Liberties Protection Officer
+  - Attorney-level approval (rather than field supervisor) for U.S. person queries
+  - Expanded congressional access to FISA Court proceedings
+  - GAO technical audits of targeting mechanisms
+  - Enhanced criminal liability for FBI employees who knowingly violate querying procedures
+
+**Why this is inadequate per civil liberties advocates**: The bill does not include a warrant requirement for U.S. person queries — the core civil liberties objection. Senator Ron Wyden characterized the reforms as "fake." Just Security analysis (April 26): "Speaker Johnson's Section 702 proposal would place no limits on backdoor searches." Rep. Scott Perry (R-PA), whose vote is needed: "we're not there yet."
+
+**Status as of April 27**: No deal is in place. If the April 30 deadline passes without action, Section 702 collection authority lapses (existing collected data survives; only new collection ceases). Congress has historically passed emergency reauthorization within days in such situations. The current four-day window is the best civil liberties reform opportunity in several years.
+
+**The resistance-research significance**: Section 702's data broker loophole directly enables ICE and DHS surveillance of protest environments and immigrant communities by allowing warrantless purchase of commercial location data. Closing this loophole is the single most consequential reform in the current window for limiting the immigration enforcement surveillance infrastructure documented throughout this tracker.
+
+**Sources**: [NPR — Johnson unveils Foreign Intelligence Accountability Act (April 24, 2026)](https://www.npr.org/2026/04/24/nx-s1-5797964/after-2-failed-votes-mike-johnson-unveils-new-plan-to-extend-key-u-s-spy-powers) | [GovPing — FISA 702 reauthorization stalls (April 25, 2026)](https://changeflow.com/govping/data-privacy-cybersecurity/fisa-702-reauthorization-stalls-in-congress-2026-04-25) | [CNN — US intel officials scramble as surveillance law expiration approaches (April 13, 2026)](https://www.cnn.com/2026/04/13/politics/fisa-section-702-suveillance-law-expiration-congress) | [Brennan Center — Section 702 2026 resource page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page) | [NPR — what to know about Section 702 (April 14, 2026)](https://www.npr.org/2026/04/14/nx-s1-5768270/what-to-know-about-section-702-surveillance) | [Just Security — Johnson's FIAA is "fake reforms" (April 26, 2026)](https://www.justsecurity.org/article/fisa-section-702-johnson-fake-reforms/)
+
+---
+
+### Updated Pending Deadlines as of April 27, 2026 (Post-Maintenance)
+
+| Date | Case / Event | What to Watch |
+|---|---|---|
+| April 28 | Abrego Garcia (D. Md.) | Xinis hearing — contempt ruling? Liberia addressed? Nashville interaction? Fill in entry 10.2/Abrego April 28 above |
+| April 29, 7:30 PM ET | May Day Mass Call | Final national coordination |
+| April 30 | Section 702 FISA | Stopgap expires; deal or lapse? Data broker loophole is the key reform provision |
+| April 30, 5 PM | Abrego Garcia (D. Md.) | Discovery deadline reactivates (unless extended) |
+| April 30 | AFGE / BOP (D. Conn.) | Preliminary injunction hearing on Schedule Policy/Career (prison staff) |
+| Any day | Nashville (Crenshaw) | Dismissal ruling pending; record closed; "imminent" per multiple sources |
+| May 1 | May Day | 922+ confirmed events |
+| May 4–8 | DHS Payroll | Emergency fund exhausts; civilian DHS staff face furlough risk |
+| May 22 | DHS Funding CR | Continuing resolution expires |
+| Late June | Trump v. Barbara | SCOTUS birthright citizenship |
+| TBD | SPLC (M.D. Ala.) | Arraignment; dismissal motion likely from defense |
+| TBD | DC Circuit en banc | Boasberg contempt en banc petition |
+| TBD | Section 122 CIT | Three-judge panel on 10% global tariff |
+| TBD | Mail Voting EO | Preliminary injunction (Massachusetts) |
