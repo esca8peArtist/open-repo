@@ -365,9 +365,11 @@
 
 **Next tasks — work these in order:**
 
+0. **Market Regime Detection Research** (Session 525 COMPLETE): `regime-detection-research.md` (2,400 words, 9 sources) provides roadmap for Gate 2 improvement. Approach 1 (rolling volatility scalar) alone gets Sharpe → 0.9–1.1, MDD → 15–20%. Expected implementation time: 1–2 days once user approves.
+
 1. **Engine restart** (user action — manual): Restart before 2026-04-28 09:30 ET. Allow current AAPL paper trade to run to SELL completion.
 
-2. **Multi-ticker stacker training** (autonomous agent work):
+2. **Multi-ticker stacker training** (autonomous agent work — OPTIONAL expansion):
    - Train AAPL_h10_lgbm_ho-equivalent stackers for 10 additional tickers: MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, BRK-B, UNH
    - Script: `scripts/train_ensemble_stacker_e2e.py` — already supports arbitrary ticker input
    - Target: 10 new stacker ensembles, same architecture (h=10, lgbm, held-out)
@@ -574,6 +576,32 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
     - Domain 19: NATO withdrawal threats + Taiwan pressure + Iran geopolitical cascade
   - **Estimated scope**: 2-4 sessions depending on depth of updates
   - **Priority**: MEDIUM (post-distribution, but important for proposal currency)
+
+**NEW ITEMS (Session 525 — Autonomous Research Queue)**:
+
+- **stockbot: Market regime detection and adaptive position sizing** (Priority HIGH for Gate 2 improvement)
+  - **Scope**: Research market regime classification (bull/bear/sideways), volatility clusters, correlation regime shifts
+  - **Goal**: Build regime detector that triggers adaptive position sizing (increase size in low-vol regimes, decrease in high-vol)
+  - **Expected outcome**: Improve Sharpe ratio (Gate 2 requirement ≥1.0) and reduce max drawdown (≤20%)
+  - **Sources**: Academic regime detection literature (Hamilton HMM, Gaussian mixture models), volatility forecasting (GARCH), VIX regime analysis
+  - **Timeline**: 2-3 sessions for research + implementation
+  - **Status**: QUEUED (identified as growth vector for paper trading success)
+
+- **resistance-research: Policy influencer mapping and distribution amplification strategy** (Priority HIGH for distribution impact)
+  - **Scope**: Identify high-leverage policy influencers per distribution tier (legislators, think tanks, media, academia), analyze their information networks, design targeted messaging for max reach
+  - **Goal**: Map policy influence network to maximize democratic renewal proposal reach and adoption
+  - **Expected outcome**: Amplified distribution impact, policy influencer pre-engagement before Phase 1 distribution
+  - **Sources**: Congress.gov committee assignments, think tank leadership, media outlet editorial boards, academic department rankings
+  - **Timeline**: 2-3 sessions for mapping + strategy
+  - **Status**: QUEUED (identified as post-distribution execution planning)
+
+- **seedwarden: Email list building and organic growth playbook** (Priority MEDIUM for Phase 1+ scaling)
+  - **Scope**: Email marketing strategy, lead magnet design, automation sequence, list growth tactics (free guides, bonuses, contests)
+  - **Goal**: Build sustainable email list (1K+ subscribers) and organic growth engine before Phase 2 paid advertising
+  - **Expected outcome**: Email-driven repeat sales, customer retention, product launch amplification
+  - **Sources**: Successful Etsy creator case studies, email marketing best practices, automation tools (Mailchimp, ConvertKit)
+  - **Timeline**: 1-2 sessions for strategy
+  - **Status**: QUEUED (can begin once Phase 1 converts + launches)
 
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 

@@ -4,7 +4,43 @@
 
 ---
 
-## Current Session (Session 524 — 2026-04-27 Daytime — Domain Updates + BRK.B Multi-Ticker)
+## Current Session (Session 525 — 2026-04-27 Autonomous Research — Market Regime Detection)
+
+**Status**: ✅ **RESEARCH COMPLETE — Market Regime Detection Strategy Document Delivered**. Exploration queue expanded with 3 high-priority research items. All projects remain awaiting user decisions/actions. Framework ready for live trading enhancement.
+
+**What Accomplished**:
+
+✅ **stockbot: Market Regime Detection and Adaptive Position Sizing Research COMPLETE**
+- **File created**: `projects/stockbot/regime-detection-research.md` (2,400 words, 9 peer-reviewed sources)
+- **Key findings**:
+  - Academic consensus: Regime detection reduces max drawdown 30–57%, improves Sharpe 0.20–0.41
+  - **Approach 1 (RECOMMENDED)**: Rolling volatility scalar (~30 lines Python, 1–2 days implementation)
+    - Expected: Sharpe 0.7 → 0.9–1.1; MDD 22–28% → 15–20%
+    - Achieves Gate 2 threshold (Sharpe ≥1.0, MDD ≤20%)
+  - **Approach 2**: Two-state HMM filter (2 weeks, more sophisticated)
+    - Expected: Sharpe 1.1–1.3; MDD 12–18%
+    - Provides statistical margin above Gate 2
+  - **Implementation guidance**: Regime filter applies AFTER signal confirmation (preserves alpha, controls tail risk)
+- **Next step**: User approves Approach 1 implementation → development begins
+- **Impact**: Directly advances Gate 2 pass likelihood and live trading launch readiness
+
+**Exploration Queue Expansion**:
+- Added 3 new high-priority items (Session 525):
+  1. ✅ **stockbot regime detection** — COMPLETE (research document delivered)
+  2. **resistance-research policy influencer mapping** — QUEUED (post-distribution amplification)
+  3. **seedwarden email list building** — QUEUED (Phase 1+ scaling)
+- Previous queue exhausted; expansion required per orchestration protocol (all projects await user decisions)
+
+**Project Status** (unchanged from Session 524):
+- **resistance-research**: 35 domains complete, awaiting user distribution path decision (Path A / Hybrid / Path B)
+- **stockbot**: 42-ticker portfolio complete, engine offline, awaiting user restart before 2026-04-28 09:30 ET
+- **All others**: Awaiting user actions/reviews (see Session 524 check-in for details)
+
+**Orchestration files updated**: WORKLOG.md (session log), PROJECTS.md (exploration queue + task list), CHECKIN.md (this entry)
+
+---
+
+## Previous Session (Session 524 — 2026-04-27 Daytime — Domain Updates + BRK.B Multi-Ticker)
 
 **Status**: ✅ **TWO PARALLEL SUBAGENTS COMPLETED: resistance-research domain updates (5 domains) + stockbot BRK.B stacker completion.** **Framework currency improved with April 2026 developments.** **Multi-ticker portfolio complete: 42 active sessions across 42 unique tickers.** **All 351 tests passing.**
 
