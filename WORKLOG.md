@@ -4,6 +4,100 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 545 — Exploration Queue Execution: Phase 3 Prep + Growth Metrics + Feature Drift Detection
+
+**Status**: ✅ **THREE PARALLEL EXPLORATION ITEMS COMPLETE** — resistance-research monitoring infrastructure finalized; seedwarden growth metrics framework delivered; stockbot feature drift detection implemented.
+
+**Part 1 — resistance-research: Real-Time Crisis Monitoring Infrastructure (COMPLETE)**
+
+**Status**: Confirmed complete from Session 544 (monitoring-infrastructure-2026.md exists, 4,670 words).
+
+**Deliverables** (verified):
+- `projects/resistance-research/monitoring-infrastructure-2026.md` (4,670 words, 7 parts) — Covers: (1) 35-domain monitoring matrix across three tiers (Tier 1 automated: court dockets, legislative votes; Tier 2 human-curated: significance threshold interpretation; Tier 3 coalition-fed: relationship intelligence), (2) Implementation roadmap adaptation triggers for all three waves, (3) Two-week currency standard monthly cadence, (4) Publication vs. internal data governance policy, (5) Tracker integration architecture, (6) Coalition feedback loop, (7) Source inventory with coverage gaps noted
+- `projects/resistance-research/tracking-template.json` (1,316 lines, valid JSON) — 37-domain tracking objects with 12 fields per domain: monitoring_tier, primary_sources, cadence, flag_triggers, last_checked, last_significant_event, domain_status, action_required, wave_relevance, coalition_notes (internal), public_notes, plus three meta-blocks (monthly_snapshot, wave_status_assessment, publication_matrix)
+- **Companion templates** (already at `monitoring/templates/`): monthly-crisis-snapshot.md, contingency-trigger-log.md, coalition-feedback-tracker.md
+
+**Key design**: Domain 37 (2026 midterms) has embedded five-window advocacy calendar with exact deadlines. Tier 3 domains (15, 17, 22, 23, 26, 31) depend on coalition relationship intelligence (Medicaid director insights, labor union strategic intel) that public databases cannot provide.
+
+**Ready for**: Post-distribution Phase 3 operationalization — enables proposal to stay current as political developments unfold.
+
+---
+
+**Part 2 — seedwarden: Advanced Growth Metrics & Cohort Analysis Framework (COMPLETE)**
+
+**Deliverables**:
+1. `projects/seedwarden/marketing/growth-metrics-framework.md` (3,700+ words, 7 sections)
+   - Cohort segmentation: acquisition channel × first-product price tier × email engagement × seasonal window
+   - LTV/CAC calibration: 89.6% net margin digital products, break-even CPA by channel ($0 organic, $18 influencer)
+   - Product-level analysis: repeat drivers (Food Sovereignty, Companion Planting, Zone Calendar), one-time buyers (Hunting, Native Plants, Survival Garden)
+   - Funnel conversion targets: 2%+ listing-to-view, 1.5%+ individual purchase, 0.8%+ bundle, 20%+ purchase-to-email, 20%+ email-to-second-purchase, 10%+ to VIP third
+   - Seasonal patterns: Spring planning (Jan-Apr) and holiday (Nov-Dec) hard peaks, preservation season (Jul-Sep) secondary with lower competition
+   - Email engagement segments with behavioral tagging strategy
+
+2. `projects/seedwarden/analytics/cohort-analysis-template.sql` (617 lines)
+   - 8 query sections: enriched orders view, cohort retention pivot, LTV curves by cohort, seasonal cross-sell, product repeat triggers, cross-sell flow matrix, listing health flags, monthly executive summary
+   - Self-contained: includes CREATE TABLE schemas (Etsy/Kit CSV imports as SQLite/DuckDB tables)
+   - Action thresholds: SCALE / MAINTAIN / PAUSE_AND_FIX per channel
+
+3. `projects/seedwarden/analytics/dashboard-template.ipynb` (Jupyter notebook)
+   - Synthetic data fallback (runs immediately without Phase 1 data)
+   - 13 charts: revenue, orders, AOV trends, cohort retention heatmap, LTV curves, seasonal revenue, repeat rates, product revenue, behavioral tags, subscriber health, list growth
+   - Output PNGs to `analytics/data/output_*.png`
+
+4. `projects/seedwarden/analytics/monthly-metrics-checklist.md` (90-minute runbook)
+   - Etsy/Kit export navigation paths
+   - Monthly Data Log table (append-only)
+   - Seasonal trigger calendar with month-by-month concrete actions (e.g., "October: update bundle listings with gift-ready titles by Oct 15")
+
+**Key findings**: Email-to-purchase funnel critical path (20% target at 90-day post-purchase); seasonal cohort behavioral divergence (holiday gift buyers ≠ self-purchasers in repeat patterns); product-level LTV optimization (single products never reach breakeven on Pinterest ads).
+
+**Ready for**: Phase 1 launch — framework in place for data collection; post-Phase-1 analysis for Phase 2 scaling decisions.
+
+---
+
+**Part 3 — stockbot: Advanced Feature Importance & Model Drift Detection (COMPLETE)**
+
+**Deliverables**:
+1. `projects/stockbot/docs/feature-drift-detection.md` (3,800 words, 6 sections)
+   - SHAP capture protocol (LightGBM `pred_contrib=True` native, no external package)
+   - Rolling z-score + PSI (Population Stability Index) for feature distribution monitoring
+   - Regime-specific importance aggregation (Bull regimes weight momentum, Bear regimes weight defensive)
+   - 5-dimension retraining trigger: shap_rank_decay (0.30), drift_persistence (0.25), win_rate_divergence (0.20), regime_mismatch_duration (0.15), loss_shap_concentration (0.10)
+   - Adaptive threshold state machine: NOMINAL → MONITORING → ADJUSTED → RESET_PENDING
+   - Integration protocol for paper_trading_monitor.py and retraining pipeline
+
+2. `projects/stockbot/src/analytics/feature_drift_detector.py` (Python module)
+   - `compute_shap_importance()` — LightGBM native `pred_contrib=True`, fallback to `feature_importances_`
+   - `detect_drift_signal()` — z-score + PSI + IQR composite → FeatureDriftSignal (Green/Yellow/Orange/Red)
+   - `regime_adaptive_thresholds()` — SHAP rank per regime with vol-tier multipliers (Calm 0.85× through Stress 1.35×)
+   - `retraining_trigger()` — 5-dimension decision function → HOLD/MONITOR/RETRAIN
+   - `DriftReportBatch` — portfolio-wide daily runner for paper_trading_monitor.py
+   - Three dataclasses with `to_dict()` methods for JSON serialization
+
+3. `projects/stockbot/tests/unit/test_analytics/test_feature_drift_detector.py` (68 unit tests)
+   - All passing; covers all public functions, edge cases, end-to-end integration
+   - Zero schema changes: all state flows through existing `trades.notes TEXT` field
+
+4. CLI extension in `post_trade_analysis.py`
+   - New `--drift-report` option for `--report` flag
+   - Supports `--ticker` for single-ticker or portfolio-wide batch analysis
+   - `--feature-stats-dir` for training distribution sidecar files
+
+**Key design decisions**: 
+- Zero schema changes (all state through trades.notes)
+- No new dependencies (LightGBM 4.6.0 already includes pred_contrib)
+- Retraining trigger advisory by default (fires to logs/retraining_queue.jsonl, human approval before execution)
+
+**Ready for**: Post-Gate-1-pass integration once paper trading accumulates sufficient round trips to validate drift patterns.
+
+---
+
+**Session Summary**: Exploration queue replenished with 3 new Phase 3 forward-looking research items at session start (identified <3 active items per protocol). All three items completed in parallel by specialized agents. resistance-research monitoring infrastructure verified complete from prior session; seedwarden growth metrics framework production-ready for Phase 1+ execution; stockbot feature drift detection ready for post-Gate-1 integration. All orchestration files updated and committed.
+
+**Next Session Ready**: (1) Respond to user stockbot engine restart (T-14h remaining) with immediate monitoring deployment, OR (2) Continue exploration queue work if projects remain blocked on user action.
+
+---
+
 ## 2026-04-27 Session 544 — Distribution Readiness Audit + Phase 2 Supplier Research
 
 **Status**: ✅ **TWO PARALLEL TASKS COMPLETE** — Resistance-research distribution readiness audit delivered; mfg-farm Phase 2 supplier research with full cost analysis delivered.
