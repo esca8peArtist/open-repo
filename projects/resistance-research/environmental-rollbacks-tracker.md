@@ -4,7 +4,7 @@ subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
 last_updated: "2026-04-27"
-april_2026_entries: "entries 25–28 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup; entry 28 (OOOO methane flaring rule) added April 27"
+april_2026_entries: "entries 25–30 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup; entry 28 (OOOO methane flaring rule) added April 27; entry 29 (CCR coal ash proposed rollback) added April 27; entry 30 (plastic pyrolysis Clean Air Act reclassification) added April 27"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
 sources:
@@ -519,6 +519,54 @@ The U.S. formally re-withdrew from the Paris Agreement on Climate Change. The wi
 **Significance in context of broader PFAS rollbacks**: The decision to finalize this RCRA listing while simultaneously rolling back drinking water PFAS standards (entry 8) and delaying TSCA PFAS reporting (entry 26) reflects the administration's selective engagement with PFAS regulation — moving forward where industry pressure is weaker (cleanup at already-regulated sites) while retreating on the rules with higher compliance costs for manufacturers (reporting) and utilities (drinking water). Environmental advocates have noted this selective approach does not represent a coherent PFAS regulatory framework.
 
 **Sources**: [EPA — proposed rule](https://www.epa.gov/hw/proposal-list-nine-and-polyfluoroalkyl-compounds-resource-conservation-and-recovery-act) | [Williams Mullen — PFAS enforcement analysis](https://www.williamsmullen.com/insights/news/legal-news/dont-be-fooled-rollbacks-epas-pfas-enforcement-agenda-moving-forward) | [Holland & Knight — PFAS trajectory](https://www.hklaw.com/en/insights/publications/2025/10/epas-pfas-rulemaking-trajectory-key-updates)
+
+---
+
+### 29. Coal Combustion Residuals (CCR) — Proposed Rollback of Coal Ash Disposal Standards (April 13, 2026)
+**Rule**: 2026 Proposed Amendments to the Coal Combustion Residuals Regulations
+**Code**: 40 CFR Part 257
+**Agency**: EPA
+**Status**: [PROPOSED — comment period open through June 12, 2026]
+
+**Dates**: EPA announced the proposal April 9, 2026; published in the Federal Register April 13, 2026. Virtual public hearing scheduled May 28, 2026. Public comment deadline June 12, 2026.
+
+**What changed**: The proposal would revise the Biden-era CCR framework — which established uniform national standards for coal ash disposal in landfills and surface impoundments — in multiple ways:
+
+1. **Legacy impoundment closure flexibility**: Facilities that completed closure-by-removal of legacy CCR surface impoundments under state regulatory oversight before November 8, 2024, could now certify compliance without meeting current federal performance standards.
+2. **Deferred closure requirements**: Owners and operators could defer closure compliance determinations until their facility enters a state permitting program — a pathway that could substantially delay cleanup obligations where state permitting is slow.
+3. **Waste-in-place closure option**: EPA is soliciting comment on allowing CCR disposal units to close with coal ash remaining in contact with groundwater, provided standing water is eliminated — a significant retreat from current closure standards requiring removal or capping.
+4. **CCRMU rescission**: The proposal would completely rescind the CCR Management Units rule (covering inactive landfills and other sites) or defer all requirements to future permitting — effectively removing federal regulation from a large category of legacy coal ash sites.
+5. **Beneficial use expansion**: Removes environmental demonstration requirements for unencapsulated CCR applied on land (above 12,400 tons), expanding uses of coal ash material in construction and fill applications without requiring proof that the use poses no environmental harm.
+
+**Stated justification**: EPA characterized the proposal as providing "compliance flexibility" and "site-specific permitting pathways" that reduce regulatory burden on utilities.
+
+**Real-world impact**: Coal ash is the second-largest industrial waste stream in the United States and contains arsenic, lead, chromium, selenium, and mercury at concentrations that contaminate groundwater. The Biden CCR rule was itself a response to documented contamination at dozens of sites — including the 2008 Kingston, Tennessee spill (one of the largest industrial accidents in U.S. history). The "waste-in-place" option and CCRMU rescission together could leave hundreds of legacy coal ash ponds without enforceable federal cleanup requirements. The environmental demonstration rollback for beneficial use increases the risk that toxic coal ash is used in road construction, fill, and agricultural applications near communities without verified safety data.
+
+**Context within the tracker**: This proposal compounds: (a) the Endangerment Finding rescission (entry 1, effective April 20), which removes EPA's authority to regulate GHGs; (b) the NEPA rollback (entry 11), which eliminated uniform environmental review for energy projects; and (c) the enforcement collapse (entry 12, Q1 2026: $3.37 million total civil penalties nationally). It further weakens the regulatory infrastructure inherited from the Obama-era CCR rule (2015) that was the first federal standard ever established for coal ash disposal.
+
+**Litigation**: Environmental groups are expected to challenge the final rule on procedural grounds (arbitrary and capricious standard) and on the merits. No litigation filed; comment period remains open.
+
+**Sources**: [EPA — 2026 CCR proposed amendments](https://www.epa.gov/coal-combustion-residuals/2026-proposed-amendments-coal-combustion-residuals-regulations) | [National Law Review — analysis](https://natlawreview.com/article/epa-proposes-revisions-coal-combustion-residuals-regulations) | [DRGNews — April 10 report](https://drgnews.com/2026/04/10/epa-proposes-several-amendments-to-coal-combustion-residuals-ccr-requirements/) | [SBA Office of Advocacy — announcement](https://advocacy.sba.gov/2026/04/14/epa-proposes-revisions-to-coal-combustion-residuals-disposal-regulations/) | [Babst Calland — analysis](https://www.babstcalland.com/news-article/epa-proposes-revisions-to-coal-combustion-residuals-regulations/)
+
+---
+
+### 30. Plastic Pyrolysis — EPA Proposes to Strip Clean Air Act Incinerator Standards (April 2026)
+**Rule**: Proposed reclassification of plastic pyrolysis/chemical recycling facilities out of municipal waste combustion unit category
+**Code**: Clean Air Act Section 129 (current governing standard); proposed shift to Section 111
+**Agency**: EPA
+**Status**: [PROPOSED — embedded in separate permitting proposal; public comment open]
+
+**Dates**: EPA proposed the reclassification as part of a broader permitting rule in early April 2026. A public hearing was held on the proposal during the week of April 15, 2026. Environmental groups and community organizations testified in opposition.
+
+**What changed**: Plastic pyrolysis facilities — which heat plastic waste in low-oxygen conditions to break it down into fuel feedstocks and chemical building blocks — are currently regulated as incinerators under Clean Air Act Section 129. Section 129 requires monitoring and emission limits for nine air pollutants including toxic particulates, heavy metals (lead, cadmium, mercury), dioxins, and furans. EPA's proposal would remove pyrolysis units from the Section 129 incinerator definition and instead treat them as manufacturing facilities subject to Section 111 — which covers far fewer pollutants and imposes less stringent monitoring.
+
+**Stated justification**: The American Chemistry Council (ACC), the primary industry lobbying group, characterized pyrolysis as "advanced recycling" and argued the manufacturing classification is more appropriate. EPA framed the proposal as recognizing that pyrolysis "converts used plastic into valuable feedstocks to make new products" — language drawn directly from industry advocacy materials. The proposal was inserted into a broader incinerator permitting rule rather than a standalone rulemaking, limiting public notice of the specific change.
+
+**Real-world impact**: Pyrolysis facilities generate incomplete combustion products including dioxins, furans, polycyclic aromatic hydrocarbons (PAHs), polychlorinated biphenyls (PCBs), and formaldehyde — precisely the compounds that Section 129 was designed to control. These facilities are disproportionately sited in low-income communities and communities of color. Downgrading to Section 111 removes monitoring requirements for the pollutants most associated with the process's known health risks. Environmental groups noted at the April 2026 public hearing that the chemical composition of pyrolysis emissions is more consistent with combustion than with conventional manufacturing.
+
+**Litigation**: Expected from environmental and environmental justice organizations upon finalization. No litigation filed as of April 27, 2026.
+
+**Sources**: [AZPM — April 15 report](https://news.azpm.org/p/environmentnews/2026/4/15/229377-epa-may-ease-regulation-of-chemical-plastic-recycling-and-environmentalists-worry/) | [C&EN — analysis](https://cen.acs.org/environment/pollution/epa-wants-to-let-plastic-incinerators-skirt-clean-air-act/104/web/2026/03) | [Times of San Diego — April 4 report](https://timesofsandiego.com/environment/2026/04/04/chemical-industry-epa-protections-plastic-waste/) | [ABC News — April 15](https://abcnews.com/Technology/wireStory/epa-ease-regulation-chemical-plastic-recycling-environmentalists-worry-132057726)
 
 ---
 

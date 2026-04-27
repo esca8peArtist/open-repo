@@ -14,7 +14,7 @@ cross_references:
 
 # First Amendment Suppression — Reference Document
 
-*Phase 3 — Distributable. Last updated: April 27, 2026. April 2026 additions: Section 1.7 (WHCD shooting + journalist petition updated with suspect detail), Section 1.6 updated (Don Lemon/Fort charges — April status), Section 1.8 (Seth Harp congressional subpoena), Section 4.6 (Kash Patel v. The Atlantic — $250M SLAPP), Section 4.6 updated (Figliuzzi suit dismissed April 21), Section 5.2 updated, Section 7 added (SPLC indictment — April 21, 2026 — civil society prosecution as First Amendment suppression mechanism).*
+*Phase 3 — Distributable. Last updated: April 27, 2026. April 2026 additions: Section 1.7 (WHCD shooting + journalist petition updated with suspect detail), Section 1.6 updated (Don Lemon/Fort charges — April status), Section 1.8 (Seth Harp congressional subpoena), Section 1.9 (LAPD baton strikes on journalists at LA immigration protest — April 11), Section 4.6 (Kash Patel v. The Atlantic — $250M SLAPP), Section 4.6 updated (Figliuzzi suit dismissed April 21), Section 5.2 updated, Section 7 added (SPLC indictment — April 21, 2026 — civil society prosecution as First Amendment suppression mechanism).*
 
 **Lead finding**: The United States is experiencing a coordinated, multi-vector assault on First Amendment rights. Government actors are suppressing press freedom through exclusion, warrant raids, and funding retaliation; restricting protest through state anti-protest laws and immigration enforcement used as political punishment; pressuring platforms to silence dissent through administrative subpoenas; and weaponizing defamation litigation to impose financial ruin on critics. Courts have provided partial relief, but enforcement gaps and the administration's willingness to defy injunctions mean legal wins do not always translate to protected speech.
 
@@ -129,6 +129,22 @@ Federal agents separately arrested independent journalist Georgia Fort and charg
 **Significance**: This is the first documented instance of a congressional committee voting to subpoena a journalist for source-revealing purposes since the current administration took office. It represents a distinct mechanism from DOJ action — legislative compulsion rather than executive branch prosecution — and is more difficult to challenge through standard First Amendment press protection doctrine. The committee's stated rationale was national security, which has historically been the government's most powerful claim against press-shield arguments.
 
 **Sources**: [Freedom of the Press Foundation](https://freedom.press/issues/house-committee-approves-subpoena-of-journalist-for-venezuela-reporting/) | [Washington Post](https://www.washingtonpost.com/business/2026/01/08/seth-harp-first-amendment-luna-subpoena/) | [CPJ](https://cpj.org/2026/01/cpj-calls-on-u-s-house-committee-to-drop-seth-harp-subpoena/) | [PEN America](https://pen.org/press-release/congressional-subpoena-of-journalist-threatens-press-freedom/) | [Common Dreams](https://www.commondause.org/articles/lawmakers-vote-subpoena-journalist-harp-delta-force)
+
+---
+
+### 1.9 LAPD Baton Strike and Projectile Threat Against Journalists at Immigration Protest — April 11, 2026
+
+**What happened**: On April 11, 2026, at least two journalists were assaulted by LAPD officers while covering a protest against immigration enforcement outside the downtown Los Angeles Metropolitan Detention Center.
+
+- **Sean Beckner-Carmitchel** (independent journalist): Pushed multiple times by officers and struck with a police baton at least twice on his arm. An LAPD officer aimed a projectile launcher directly at him. Beckner-Carmitchel told the U.S. Press Freedom Tracker: "So many of my shots were out of focus because you need a half a second to focus. And if you're constantly being shoved, that's extremely difficult." He was positioned on the sidewalk where police had directed the press.
+
+- **Tina-Desiree Berg** (Status Coup reporter): Pushed back by police and separately shoved by an officer while documenting the same protest.
+
+**Context**: LAPD declared an unlawful assembly after reported vandalism and moved to disperse the crowd — including members of the press who were on a police-designated press area on the sidewalk. The protest was one of dozens held at the Metropolitan Detention Center, a recurring site for demonstrations since the intensification of ICE enforcement in Los Angeles in mid-2025.
+
+**Pattern significance**: This incident follows the documented LAPD baton strikes at the No Kings protests (Section 2.4) and the January 2026 Minneapolis journalist assaults (Section 1.6). The Tenth Circuit's ruling in *Epps v. City of Denver* (see Section A.1) establishes that use of less-lethal force against unthreatening journalists and protesters who have not committed a serious offense is unconstitutionally excessive. The LAPD now faces a press-specific lawsuit over protest-related journalist assaults (the Hollywood Reporter reported on a suit by a press group against LAPD and LAPD Chief). Each incident without consequence compounds the chilling effect on visual journalists covering immigration enforcement.
+
+**Sources**: [U.S. Press Freedom Tracker — Beckner-Carmitchel](https://pressfreedomtracker.us/all-incidents/journalist-pushed-struck-with-police-baton-at-la-immigration-protest/) | [U.S. Press Freedom Tracker — Berg](https://pressfreedomtracker.us/all-incidents/reporter-struck-in-head-with-munition-by-federal-officers-at-la-protest/) | [Radio Free — April 14 report](https://www.radiofree.org/2026/04/14/journalist-pushed-struck-with-police-baton-at-la-immigration-protest/) | [Hollywood Reporter — LAPD lawsuit](https://www.hollywoodreporter.com/news/local-news/press-group-sues-los-angeles-lapd-assaults-at-protests-1236292364/)
 
 ---
 
@@ -486,6 +502,6 @@ Former federal prosecutor Aaron Zelinsky identified that the bank fraud counts a
 
 ---
 
-*Updated April 27, 2026. Additions: Section A.1 (10th Circuit Denver ruling — April 21); Section A.2 (SCOTUS Villarreal cert denial — March 23); Section A.3 (Accountability Now NPS enforcement threat suit).*
+*Updated April 27, 2026. Additions: Section A.1 (10th Circuit Denver ruling — April 21); Section A.2 (SCOTUS Villarreal cert denial — March 23); Section A.3 (Accountability Now NPS enforcement threat suit); Section 1.9 (LAPD journalist assaults — April 11, 2026).*
 
 *This document is intended as a factual reference. It reflects verified reporting and legal records as of April 27, 2026. Confidence is high for documented court proceedings and verified reporting from named outlets; moderate for ongoing litigation where status may have changed. Verify current case status with CourtListener, PACER, and the sources linked above before relying on this document in legal or advocacy contexts.*
