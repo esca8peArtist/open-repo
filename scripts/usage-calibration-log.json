@@ -60,6 +60,40 @@
       }
     }
   ],
+    {
+      "date": "2026-04-27",
+      "label": "DP3 — end of billing week (~6.5h before reset)",
+      "source": "UI screenshot + usage-check.py output",
+      "ui_pct": {
+        "sonnet": 92.0,
+        "all_models": 77.0,
+        "claude_design": 0.0,
+        "current_session_pct": 23.0,
+        "resets_in_hours": 6.55
+      },
+      "tracker_tokens": {
+        "sonnet_output": 2434131,
+        "haiku_output": 6263453,
+        "total_output": 8697584,
+        "sessions_total": 198,
+        "sessions_sonnet": 38
+      },
+      "cache_tokens": {
+        "sonnet_cache_write": 10322730,
+        "haiku_cache_write": 29227281,
+        "total_cache_write": 39550011,
+        "total_cache_read": 799184591
+      },
+      "discrepancies_flagged": {
+        "sonnet_pct_tool_vs_ui": "Tool: 48.5% vs UI: 92% — 1.9x gap. Calibrated limit of 5,023,178 appears ~2x too high.",
+        "all_models_pct_tool_vs_ui": "Tool: 66.7% vs UI: 77% — smaller gap, ~1.15x.",
+        "reset_time_tool_vs_ui": "Tool says reset in 2h (midnight UTC). UI says reset in 6h33m (~05:00 UTC). Tool is using wrong reset anchor — Anthropic likely resets at midnight US Central (CDT = UTC-5 = 05:00 UTC), not midnight UTC.",
+        "implied_sonnet_limit": "2,434,131 output tokens / 0.92 = ~2,645,000 — suggests true output limit is ~2.6M, not 5.0M",
+        "implied_all_models_limit": "8,697,584 output tokens / 0.77 = ~11,295,000 — closer to current calibrated 13M but still off"
+      },
+      "action_needed": "Two bugs to fix in usage-check.py: (1) reset anchor should be Tuesday 05:00 UTC not 00:00 UTC; (2) re-calibrate immediately after Tuesday reset with fresh reading at near-0% usage to get clean limit derivation."
+    }
+  ],
   "analysis": {
     "key_finding": "Cache writes are 11.4M Sonnet tokens vs 2.6M Sonnet output tokens — a 4.4:1 ratio. If cache writes are metered at even 25% rate, the weighted usage nearly doubles. This is the most likely explanation for the DP1 vs DP2 inconsistency.",
     "why_dp1_dp2_are_inconsistent": "DP1 output ~2.0M → 22.3%. DP2 output 2.63M → 42%. Output only went up 630K but UI jumped 20 percentage points. Cache writes accumulated massively across the week (orchestrator reads same large context files each session).",
