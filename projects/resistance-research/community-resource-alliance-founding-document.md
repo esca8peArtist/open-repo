@@ -1,12 +1,12 @@
-# Houston Commons
+# Community Resource Alliance
 ## Founding Document & Theory of Change
-### Draft v2.0 — April 2026
+### Draft v2.1 — April 2026
 
 ---
 
 ## What We Are
 
-A member-owned infrastructure company. We build and operate the systems that keep people alive — energy, healthcare, food, water, waste — at lower cost and higher reliability than the market currently provides. Members own the infrastructure. Professionals operate it. Results are the measure of everything.
+A community structure that stands in where institutions have failed. We build and operate the systems that keep people alive — energy, healthcare, food, water, waste — at lower cost and higher reliability than what currently exists. We build each other up. The strength of the community is the foundation of everything.
 
 We are not an advocacy organization. We do not petition existing institutions for better outcomes. We build better systems and make failing ones irrelevant.
 
@@ -14,11 +14,9 @@ We are not an advocacy organization. We do not petition existing institutions fo
 
 ## The Model
 
-**SpaceX did not organize against ULA's launch monopoly. They built cheaper rockets.**
+The most durable way to displace a failing system is not to fight it directly. Build something that works better. Let the failure become irrelevant.
 
-The disruption followed from superior performance. By the time the political and economic consequences landed, SpaceX was too embedded and too valuable to stop. The existing order became obsolete through demonstrated results, not through fighting it.
-
-This is the model. You do not challenge a captured energy grid through political organizing — you build energy infrastructure that works better. You do not advocate for healthcare access — you provide healthcare. When enough people are using better alternatives, the failing systems become irrelevant. That is the goal.
+You do not challenge a captured energy grid through political organizing — you build energy infrastructure that works better. You do not advocate for healthcare access — you provide healthcare. You do not argue about food security — you grow food. When enough people are using better alternatives, the failing systems lose their grip. That is the goal.
 
 **The sequence is**: solve a real problem → deliver measurable results → earn trust → expand. Political and structural consequences follow from this. They are not the goal.
 
@@ -38,7 +36,7 @@ This is the model. You do not challenge a captured energy grid through political
 
 The governance failure of the cooperative model is usually this: one cooperative for energy, a separate one for food, a separate one for healthcare — each with its own board, its own meetings, its own administrative overhead. It becomes a part-time job for the engaged members and an abstraction for everyone else.
 
-**Houston Commons is one organization with multiple service divisions.**
+**Community Resource Alliance is one organization with multiple service divisions.**
 
 One membership. One board. Multiple programs. Professional operators run each division. Members interact with each service in their daily lives without needing to understand the organizational structure behind it. When the energy division generates a surplus, it can fund healthcare program growth. When the healthcare division has capacity, it can serve energy program members first. Cross-subsidy within one organization is impossible across separate cooperatives.
 
@@ -167,7 +165,7 @@ Anyone who benefits from the cooperative and has capacity to give more than they
 
 **On the long arc — shared contribution:**
 
-In its mature form, Houston Commons provides energy, healthcare, food, water, waste management, education, and technology infrastructure for a community. That is, functionally, what a government provides. The difference is consent, transparency, and democratic member control. The path from voluntary cooperative to community self-governance with proportional shared contribution — some form of mandatory contribution from everyone who benefits — is a natural evolution when membership approaches universal coverage in a neighborhood. That transition should be designed democratically by the membership when the time comes. It is not imposed by the founding structure. For now: no dues, no barriers, voluntary contribution, transparent books.
+In its mature form, Community Resource Alliance provides energy, healthcare, food, water, waste management, education, and technology infrastructure for a community. That is, functionally, what a government provides. The difference is consent, transparency, and democratic member control. The path from voluntary cooperative to community self-governance with proportional shared contribution — some form of mandatory contribution from everyone who benefits — is a natural evolution when membership approaches universal coverage in a neighborhood. That transition should be designed democratically by the membership when the time comes. It is not imposed by the founding structure. For now: no dues, no barriers, voluntary contribution, transparent books.
 
 **Rule**: No single funder exceeds 20% of annual revenue.
 
@@ -228,7 +226,7 @@ How do you make it difficult for hostile actors — state government, industry i
 - Replication guide published; first replication supported in another Texas city
 - Workforce: 50+ staff across all divisions, predominantly from member communities
 
-**What success looks like at Year 7**: Houston Commons powers 2-3 megawatts of cooperative solar across 10 Houston neighborhoods, operates a clinic serving 3,000 patients annually, runs a food cooperative, and is financially independent. The model has been replicated in at least one other city. The organization employs 50 people from the communities it serves. Members interact with it as infrastructure — like a credit union or a utility — not as a cause.
+**What success looks like at Year 7**: Community Resource Alliance powers 2-3 megawatts of cooperative solar across 10 Houston neighborhoods, operates a clinic serving 3,000 patients annually, runs a food cooperative, and is financially independent. The model has been replicated in at least one other city. The organization employs 50 people from the communities it serves. Members interact with it as infrastructure — like a credit union or a utility — not as a cause.
 
 ---
 
