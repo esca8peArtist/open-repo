@@ -32,6 +32,21 @@
 
 ---
 
+## 2026-04-27 — seedwarden — Phase 3 Social Media and Growth Strategy
+
+**File**: `projects/seedwarden/phase-3-social-media-growth-strategy.md`
+
+**Summary**: Comprehensive Phase 3 roadmap for post-Phase 1 launch. Actionable strategies for social media growth (organic TikTok, Instagram, Pinterest), paid advertising, and influencer partnerships. Key findings:
+- **TikTok Competitive Analysis**: Mid-tier creators (@itsbreellis 772K, @thermal_and_oaks 367K, @barefeetandmimosas 400K+) with 30-60 second educational format drive best engagement (9.5% vs. 7.5% baseline). #homestead hashtag has 5.4 billion views. Accounts under 100K followers average 7.5% engagement.
+- **Pinterest Strategy (Highest ROI)**: Pinterest drives 33% more referral traffic to e-commerce than Facebook. 4+ month pin lifespan (vs. TikTok 24-72h). Structurally a search engine, not social feed. Estimated 500 to 50K monthly visits from single Pinterest campaign for Etsy sellers.
+- **Creator Benchmarks**: Jill Winger (@theprairiehomestead, 191K Instagram) canonical case study. Five traits among successful monetizers: hyper-specific niche, practical immediate-use content, 12-24 months consistent posting, email list as owned asset, $5-15 product pricing (matches seedwarden range).
+- **Paid Advertising Benchmarks**: Shopping/Gifts category has most favorable CPC ($0.34 vs. $1.50+ other industries), 4.13% CTR. Etsy digital products have 85-95% margins, breakeven ROAS 1.05-1.18, target 2.0+. Pinterest CPA $8 (most cost-effective). Recommended Phase 3 budget allocation at $500/month: $150 Etsy ads, $100 Pinterest, $100 Facebook/Instagram, $100 influencer, $50 tools.
+- **Influencer Partnerships**: Direct outreach model (not enterprise platforms). 20-30% response rate, 10-15% agreement rate. Deal structures: pure affiliate (20-30% commission), gift + affiliate, flat fee + commission hybrid ($100-250 + 15-20%). TikTok affiliates under 50K followers show 30.1% engagement rate (1,570% higher than Instagram).
+- **Three-Month Phase 3 Plan**: Month 1 infrastructure (accounts, 20-30 videos, Pinterest boards + pins). Month 2 testing ($300-500 paid ads, 15 influencer outreach contacts). Month 3 scale winners (2.5x ROAS increase 25-50%), kill losers (1.5x ROAS threshold for pause after 30 days). Four documented failure modes with mitigations.
+- **Status**: Ready for immediate execution when Phase 1 launches and conversion data begins arriving.
+
+---
+
 ## 2026-04-27 (Evening) — Parallel 2-Agent Execution: Domain Completeness Assessment + Tier 2 Templates (Session 499)
 
 **Session Protocol**: Parallel 2-agent execution (resistance-research domain assessment + cybersecurity-hardening Tier 2 messaging)
