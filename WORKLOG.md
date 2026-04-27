@@ -14,6 +14,24 @@
 
 ---
 
+## 2026-04-27 — resistance-research — Post-Domain 26 Completeness Audit
+
+**File**: `assessment/post-domain-26-completeness-audit.md`
+
+**Summary**: Comprehensive audit of the 26-domain diagnostic framework to identify any missing crisis domains or affected population gaps before distribution. Findings:
+- **4 Priority Gaps Identified**:
+  1. **Domain 19f: War Powers Reform** (Priority 1) — Iran war constitutional crisis. Trump administration declared War Powers Resolution unconstitutional; Senate blocked 4 war powers resolutions; 60-day statutory deadline falls May 1, 2026 (4 days from now). This is the largest uncaptured acute crisis.
+  2. **Pharmaceutical Tariff Crisis** — April 2 100% tariffs on patented drugs, effective July 31. Affects 65M Medicare + 92M Medicaid/CHIP beneficiaries. Requires Domain 11 cross-reference + Domain 5 note.
+  3. **Indigenous Sovereignty** (Priority 2) — Needs subsection 22f covering treaty law, trust responsibility, BIA court system, ICWA rollbacks, MMIWG response, tribal data sovereignty. 574 federally recognized tribes have legally distinct government relationship.
+  4. **Disability Justice Deepening** — Domain 18e outdated post-One Big Beautiful Bill Act (July 4, 2025). HCBS cuts affect 12M people; work requirements exclude many disabled-but-non-SSA-certified individuals.
+- **Population Pattern Analysis**: Rural coverage adequate; disabled systematically under-addressed post-OBBBA; indigenous sovereignty structurally absent; LGBTQ+ beyond reproductive is covered by Domain 26; aging (Social Security structural) is thin; immigrants covered but could be deeper on affirmative reform.
+- **April 2026 Crises Captured**: Iran war (missing — Priority 1), pharmaceutical tariff (missing — high priority), NATO withdrawal threat (partial — Domain 19 needs subsection), denaturalization campaign (covered in Domain 16).
+- **Distribution Readiness Verdict**: NOT READY. Blocks: (1) Domain 26 research must be executed, (2) Domain 19f (War Powers) should be added. After those two: Substack/Reddit ready. Institutional distribution should wait for full 26-domain completion.
+
+**Key insight**: The 26-domain framework is more comprehensive than any comparable democratic renewal proposal, but skips the most immediate constitutional crisis (Iran war with May 1 deadline). Adding Domain 19f and executing Domain 26 removes both blocks.
+
+---
+
 ## 2026-04-27 (Evening) — Parallel 2-Agent Execution: Domain Completeness Assessment + Tier 2 Templates (Session 499)
 
 **Session Protocol**: Parallel 2-agent execution (resistance-research domain assessment + cybersecurity-hardening Tier 2 messaging)
