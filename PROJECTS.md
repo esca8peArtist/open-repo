@@ -643,6 +643,27 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Expected outcome**: `high-risk-populations.md` (4,000-5,000 words) + operational playbooks for 3-4 scenario types
   - **Status**: QUEUED (identified by Session 538 orchestrator — available now)
 
+**NEW ITEMS (Session 541 — Exploration Queue Refresh)**:
+
+- ✅ **mfg-farm: Multi-Printer Farm Architecture & Cost Modeling** (COMPLETE — Session 541)
+  - **Scope**: Research and design the economics and logistics of scaling from 1→N printers. (1) Multi-printer farm layout optimization, (2) Material supply chain for different print profiles (PLA, ABS, resin, etc.), (3) Queue management and job scheduling strategies, (4) Cost-per-unit modeling as function of batch size and material, (5) Regulatory compliance landscape for scaled manufacturing in home/small-business environments, (6) Case studies of successful Etsy sellers with 2-5 printer setups
+  - **Goal**: A comprehensive blueprint for ModRun product scaling from single printer (post-test-print) to 3-5 printer operation
+  - **Deliverable**: `projects/mfg-farm/multi-printer-architecture.md` (6,200 words) — Complete farm architecture, supply chain analysis, cost modeling, queue management, regulatory compliance, case studies with 2026 pricing data
+  - **Key Findings**: 5-printer Bambu setup fits 3.2m workspace; bulk PLA drops to $7-10/kg; ModRun cable clips: $1.15 COGS (PLA) + $0.40 packaging; 52% net margin on bundles; payback period <3 months at realistic demand; labor becomes binding constraint at ~month 5-6
+  - **Status**: COMPLETE (committed to master)
+
+- **seedwarden: Annual Product Calendar & Email Growth Engine** (Priority 2 for organic growth)
+  - **Scope**: Build a comprehensive annual marketing and product plan beyond Phase 2 mockups. (1) Seasonal demand patterns in homesteading/survival niche (holidays, spring garden season, winter prep, etc.), (2) Email marketing automation strategy (lead magnets, nurture sequences, re-engagement), (3) Seasonal product variations and bundle strategies, (4) Holiday gift campaign planning, (5) Social media content calendar aligned to seasons, (6) Case studies of successful Etsy sellers using seasonal themes
+  - **Goal**: A year-long product and marketing roadmap that extends Phase 1→2→3 growth systematically
+  - **Expected outcome**: `annual-product-plan.md` (2,500-3,500 words) + product calendar (Google Sheets template) + email automation blueprint
+  - **Status**: QUEUED (accessible now — deepens Phase 2 planning)
+
+- **stockbot: Performance Attribution & Post-Trade Analysis Framework** (Priority 3 for operational learning)
+  - **Scope**: Design a framework for analyzing completed paper and live trading performance to understand *why* trades succeeded or failed. (1) Attribution analysis (regime conditions, volatility environment, feature contributions to signals), (2) Win/loss categorization (prediction accuracy, timing, position sizing), (3) Model drift detection methodology, (4) Feedback loop for improving feature engineering, (5) Reporting templates for stakeholder updates, (6) Case study: analyze first 30 trades from multi-ticker paper trading to validate framework
+  - **Goal**: Operational learning and continuous improvement infrastructure that survives beyond individual gate passes
+  - **Expected outcome**: `performance-attribution-framework.md` (2,500-3,000 words) + Jupyter notebook for post-trade analysis + quarterly reporting template
+  - **Status**: QUEUED (accessible now — deepens project operational maturity)
+
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 
 - **Domain 27 — Higher Education and Academic Freedom** (Priority 1 for Phase 2 research)
