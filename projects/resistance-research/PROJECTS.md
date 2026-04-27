@@ -7,7 +7,9 @@
 
 ## Overall Project Status
 
-**Phase**: Phase 2 integration complete (Session 510). Domains 27-29 fully integrated into proposal and distribution package. Exploration queue replenished. Distribution awaiting user action.
+**Phase**: Phase 2 preparation research complete (Session 535). 35-domain framework production-ready. Phase 2 expansion roadmap written (`phase-2-expansion-roadmap.md`). Distribution awaiting user Path A/B/Hybrid decision.
+
+**35-Domain Diagnostic Framework**: COMPLETE AND PRODUCTION-READY. All 35 domains + 6 April 2026 updates documented. Distribution templates cover all distribution channels. Session 535 added: phase-2-expansion-roadmap.md (1,900 words), Domain 33 Section 1.3a (6-state simultaneous action map, ~1,300 words, 10 new sources), surveillance-tracking.md FISA post-deadline checklist.
 
 **28-Domain Diagnostic Framework**: COMPLETE. All 28 domains researched and documented in `democratic-renewal-proposal.md` and domain-specific files. Distribution templates updated (Substack, Reddit, institutional outreach) — all references corrected from "22-domain" to "28-domain" — awaiting user execution.
 

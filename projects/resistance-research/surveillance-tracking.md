@@ -59,6 +59,20 @@ The Foreign Intelligence Accountability Act does not close this loophole. Neithe
 - Senate Majority Leader Thune's vote-counting and timeline for Senate action if House passes the FISA bill
 - Whether a lapse occurs and what legal challenges are filed in response
 
+### Post-Deadline Update Checklist (fill after April 30, 2026)
+
+*To be completed in the first session after the April 30 deadline.*
+
+- [ ] Vote result: [ ] Passed / [ ] Lapsed / [ ] Further stopgap
+- [ ] Final bill: [ ] Foreign Intelligence Accountability Act (3-year) / [ ] Other: ___________
+- [ ] Warrant requirement: [ ] Included / [ ] Excluded
+- [ ] Commercial data broker loophole: [ ] Closed / [ ] Still open
+- [ ] New expiration date: ___________
+- [ ] Civil liberties community response (EFF, ACLU, Brennan Center statements): ___________
+- [ ] Any lapse litigation filed: ___________
+
+**Cross-domain flag**: If reauthorized without warrant requirement or data broker loophole closure, add a note to Domain 21 (Data Privacy and Digital Surveillance) in democratic-renewal-proposal.md cross-reference section, and update Section 4.1 of the proposal's reform roadmap to reflect that 702 reform remains an open legislative priority.
+
 Sources:
 - [EFF — Keep Pushing: We Get 10 More Days to Reform Section 702](https://www.eff.org/deeplinks/2026/04/keep-pushing-we-get-10-more-days-reform-section-702)
 - [NPR — Congress extends controversial surveillance powers for 10 days](https://www.npr.org/2026/04/17/nx-s1-5788573/house-extends-surveillance-powers-for-10-days)
