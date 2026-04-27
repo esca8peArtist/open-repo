@@ -173,4 +173,114 @@ The following gaps were identified in the Session 510 readiness assessment but a
 
 **SESSION 513 UPDATE (2026-04-27 05:00 UTC):** Exploration queue updated with 3 new candidates (Candidates 3-5), bringing active queue to 5 items. Candidate 1 (Healthcare Access Collapse / OBBBA Medicaid Crisis) selected as highest-priority Phase 2 research due to June 2026 deadline urgency. Beginning research for Domain 11b or Domain 31 (healthcare-access-obbba-medicaid-crisis.md).
 
-*Next action: Begin healthcare access domain research (Session 513).*
+---
+
+## Phase 3 Candidates — Structural Deepening (Session 531 Update, 2026-04-27)
+
+All Phase 2 candidates (Domains 31-37) now complete. Framework contains 35 base domains + 6 April 2026 updates (41 total documents). Distribution awaiting user decision (Path A / Path A+Domain37 Hybrid / Path B).
+
+Phase 3 research should focus on **structural deepening and real-time crisis monitoring** to strengthen implementation feasibility once distribution begins.
+
+### Phase 3 Candidate 1 (Highest Priority): Real-Time Crisis Monitoring and Democratic Resistance Tracking Infrastructure
+
+**Why this is the gap:** The proposal identifies 35 specific crises and reform pathways, but does not formalize the infrastructure for **tracking crisis developments in real time and testing implementation assumptions as crises evolve**. Sessions 529-530 demonstrated the value of April 2026 domain updates (SAVE Act Senate failure, Trump v. Wilcox ruling, Iran WPR State Dept memo, ballot initiative nullification proof). A Phase 3 research program would systematize this ongoing tracking into:
+- **Monthly crisis snapshots** (first-of-month assessment of which 5-7 domains are most urgent based on legislative/judicial activity)
+- **Contingency trigger documentation** (if X outcome occurs, the implementation roadmap changes as follows)
+- **Coalition feedback loop** (domains that are receiving institutional input from actual reform constituencies)
+
+**Core research questions:**
+- Which 35-domain monitoring mechanisms (court dockets, legislative tracking, media monitoring) should be automated vs. human-curated?
+- How should the proposal's implementation roadmap adapt as specific crisis outcomes occur? (e.g., if Iran WPR expires May 1, does the proposal's defense jurisdiction recommendations change?)
+- What monthly cadence of domain updates would keep the framework "distribution-current" (always within 2 weeks of crisis development)?
+- Which monitoring data should be published to reinforce the proposal's real-time authority vs. kept internal for coalition strategy?
+
+**Connection to existing domains:** All 35 domains require ongoing monitoring; this candidate formalizes the monitoring infrastructure.
+
+**Sourcing confidence:** High — tracking mechanisms exist (CourtListener, FEC, congressional bill tracking, SCOTUS docket); question is integration and prioritization.
+
+**Estimated scope:** 3,000–4,000 words (meta-document) + formalized tracking templates (not wordcount-intensive).
+
+**Time sensitivity:** High — the proposal's credibility depends on currency; each month without updates reduces credibility with institutional audiences; implementation begins within 2-4 weeks of distribution.
+
+**Outcome:** `monitoring-infrastructure-2026.md` + updated tracking templates for monthly refresh cycle.
+
+---
+
+### Phase 3 Candidate 2 (High Priority): Institutional Playbooks — Sector-Specific Implementation Tactics
+
+**Why this is the gap:** The proposal's implementation roadmap (Part IV) identifies actors (executive, Congress, states, courts, civil society) and sequencing (3-wave recovery). But it does not provide **sector-specific implementation playbooks** that would guide actual reform constituencies (civil service unions, AG coalitions, state legislatures, law school clinics) on what to do in specific scenarios. The current proposal is a diagnostic + vision + theory-of-change + macro architecture. What's missing is: **if you are a state AG, here's the three-month action plan for Domain 6 (judicial independence)**. If you are a law school, here's how to operationalize Domain 27 (academic freedom). If you are a labor union, here's Domain 11 (healthcare) + Domain 15 (labor rights) coordination strategy.
+
+**Core research questions:**
+- Which 6-8 constituencies have the most leverage in the implementation roadmap? (AGs, federal judges, civil service, labor unions, state legislators, law school clinics, religious coalitions, media organizations)
+- For each constituency, which 3-5 domains are most directly actionable?
+- What are the specific, sequenced steps each constituency should take in Year 1 (distribution + trust-building), Year 2 (legislative + institutional action), Year 3+ (implementation)?
+- Which constituencies are natural allies, and where do they conflict? (e.g., state AGs may oppose federal court jurisdiction expansion, but support federal minimum standards)
+- What are the communication, legal, and political constraints within each sector?
+
+**Connection to existing domains:** Domains 1-37 require sector-specific operationalization; this candidate provides the bridge between proposal and implementation for actual constituencies.
+
+**Sourcing confidence:** Medium-high — requires interviews/input from actual practitioners (AG coalition representatives, civil service unions, law school leadership), plus existing sector literature (labor strategy docs, AG campaign materials, judicial reform literature).
+
+**Estimated scope:** 12,000–15,000 words (6-8 playbooks × 1,500–2,000 words each). Could be structured as `implementation-playbooks.md` (comprehensive) or sectored files (playbook-ags.md, playbook-judiciary.md, etc.).
+
+**Time sensitivity:** Medium-high — needed within 4-6 weeks of distribution to enable constituencies to operationalize the proposal; earlier = higher fidelity input from practitioners.
+
+**Outcome:** `implementation-playbooks.md` + sector-specific guidance documents.
+
+---
+
+### Phase 3 Candidate 3 (High Priority): Adversary Response Modeling and Resilience Architecture
+
+**Why this is the gap:** The proposal identifies reform pathways but does not systematically model **how the opposition would respond to implementation and what resilience mechanisms would be required**. Session 530 documented several adversary response patterns (defiance of court orders, using process to delay, administrative inertia, structural circumvention). A Phase 3 research program would systematize:
+- **Opposition playbook** (if democratic renewal proposal begins distribution, what are the 5-10 most likely adversary responses?)
+- **Resilience mechanisms** (for each likely opposition response, what makes the implementation resilient?)
+- **Asymmetric advantage identification** (where does the reform coalition have structural advantages the opposition cannot overcome?)
+- **Enforcement architecture** (which reforms are self-enforcing vs. require external enforcement?)
+
+**Core research questions:**
+- What are the historical opposition patterns to democratic transitions in comparable cases (Poland, Spain, South Korea)? What worked and what didn't?
+- For each of the 35 domains, what is the most likely obstruction mechanism? (defiance, delay, legislative reversal, administrative circumvention, court challenge, informal enforcement evasion)
+- Which obstruction mechanisms can be designed around vs. which require external enforcement?
+- What is the minimum coalition size needed to make implementation resilient to opposition defection or deception?
+- Where are the irreversible enforcement points (once X happens, the opposition cannot unwind it)?
+
+**Connection to existing domains:** All 35 domains require opposition-resilience assessment; Part IV (implementation architecture) needs to be revised with obstruction scenarios embedded.
+
+**Sourcing confidence:** Medium (historical cases + legal literature on institutional design + game-theoretic analysis).
+
+**Estimated scope:** 5,000–7,000 words (opposition playbook) + 8,000–10,000 words (resilience architecture). Could be `adversary-response-modeling.md` + `resilience-architecture.md`.
+
+**Time sensitivity:** Medium — needed before any coalition strategy is finalized; after initial distribution but before intensive constituency outreach.
+
+**Outcome:** `adversary-response-modeling.md` + `resilience-architecture.md` + updated Part IV (implementation roadmap with obstruction scenarios).
+
+---
+
+### Phase 3 Candidate 4 (Medium Priority): International Precedent Deepening — Democratic Recovery Timelines and Failure Modes
+
+**Why this is the gap:** Phase 4 research (`phase-4-comparative-democratic-recovery.md`) surveyed 6 case studies (South Korea, Spain, Uruguay, Hungary, Venezuela, Turkey) and identified a key insight: **recovery succeeds when mass mobilization + elite defection happen before entrenchment completes. This timing variable separates successes from failures consistently.** But the document was written in Session 488 (before April 2026 developments). A Phase 3 update would:
+- Add 2026 developments (South Korea's 2025 martial law crisis and recovery, Poland's failed judicial capture reversal, Hungary's continued autocratic enclave)
+- Formalize the **timing variable** as a measurable framework (how many months from first institutional defection to sustainable recovery?)
+- Identify the specific **trigger events** in each case that marked the point of no return
+- Map these triggers onto the U.S. 2026-2028 timeline
+
+**Core research questions:**
+- In successful cases (Korea, Spain, Uruguay), what was the time from mass mobilization start to elite defection critical mass to institutional recovery completion?
+- In failed cases (Hungary, Venezuela, Turkey), at what point did the opposition's window close, and what made it irreversible?
+- What is the U.S. 2026-2028 analog to each case? What is the "point of no return" in U.S. institutional capture?
+- Which international precedents are most directly applicable to federal systems (Canada, Australia, Brazil) vs. parliamentary systems?
+- What does the South Korea 2025 martial law crisis teach about recovery under a 6-3 Supreme Court hostile regime?
+
+**Connection to existing domains:** Part III (theory of change) and Part IV (implementation architecture) + all 35 domains that depend on timing assumptions.
+
+**Sourcing confidence:** High — documented comparative literature + 2026 developments (South Korea, Poland, Hungary news coverage).
+
+**Estimated scope:** 3,000–5,000 words (updated comparative analysis) + 2,000–3,000 words (timing framework formalization).
+
+**Time sensitivity:** Medium — valuable for constituency confidence but not immediate critical path.
+
+**Outcome:** Updated `phase-4-comparative-democratic-recovery.md` + `recovery-timing-framework.md`.
+
+---
+
+*Next action: Review Phase 3 candidates with user; select priority order for post-distribution expansion.*

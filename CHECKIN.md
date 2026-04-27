@@ -4,7 +4,71 @@
 
 ---
 
-## Current Session (Session 530 — 2026-04-27 Evening — Bug Fix + Domain Analysis Deepening)
+## Current Session (Session 531 — 2026-04-27 Late Afternoon — Phase 3 Exploration Planning)
+
+**Status**: ✅ **PHASE 3 RESEARCH EXPANSION QUEUED**. Identified available autonomous work within production-ready framework (all Phase 2 research complete, trackers current). Formalized 4 Phase 3 research candidates in EXPLORATION_QUEUE.md for post-distribution expansion, per orchestrator protocol (queue had 0 active items → added 2-3+ candidates). Framework production-ready; Phase 3 expansion ready once distribution path is selected.
+
+**What Accomplished**:
+
+✅ **Framework Status Assessment** (Session 531 Orientation)
+- ✅ Verified 35-domain framework + 6 April 2026 updates (41 total documents) complete and production-ready
+- ✅ Confirmed trackers current through April 27 (first-amendment-suppression.md, environmental-rollbacks-tracker.md, police-brutality-consent-decree-tracker.md updated in Session 530)
+- ✅ Identified time-sensitive monitoring deadlines: April 28 Xinis hearing, April 30 FISA vote
+- ✅ Confirmed all Phase 2 exploration queue candidates completed; 0 active research items in queue
+
+✅ **Phase 3 Candidates Formalized** (Per orchestrator protocol: when queue < 3 items, add 2-3+)
+- **Phase 3 Candidate 1 — Real-Time Crisis Monitoring Infrastructure** (Highest priority)
+  - Formalizes ongoing tracking mechanism for 35-domain framework
+  - Systemizes monthly crisis snapshots + contingency trigger documentation
+  - Scope: 3,000–4,000 words + monitoring templates
+  - Outcome: `monitoring-infrastructure-2026.md` + quarterly tracking refresh cycle
+  
+- **Phase 3 Candidate 2 — Institutional Playbooks (Sector-Specific Implementation Tactics)** (High priority)
+  - Bridges diagnostic/vision/theory proposal architecture to actionable sector guidance
+  - 6-8 constituencies: AGs, federal judges, civil service, labor unions, state legislators, law school clinics, religious coalitions
+  - Scope: 12,000–15,000 words (playbook per constituency + 3-month action sequences)
+  - Outcome: `implementation-playbooks.md` + sector-specific Year 1-3 guidance documents
+  
+- **Phase 3 Candidate 3 — Adversary Response Modeling & Resilience Architecture** (High priority)
+  - Opposition playbook (5-10 likely adversary responses) + resilience mechanisms for each
+  - Embeds obstruction scenarios (defiance, delay, administrative circumvention, court challenge) into updated Part IV
+  - Identifies self-enforcing vs. enforcement-dependent reforms
+  - Scope: 13,000–17,000 words
+  - Outcome: `adversary-response-modeling.md` + `resilience-architecture.md` + updated Part IV (implementation roadmap)
+  
+- **Phase 3 Candidate 4 — International Precedent Deepening** (Medium priority)
+  - Updates Phase 4 comparative research with 2026 developments (South Korea martial law recovery, Poland failure analysis, Hungary enclave persistence)
+  - Formalizes timing framework: months from mass mobilization → elite defection → sustained recovery
+  - Scope: 5,000–8,000 words
+  - Outcome: Updated `phase-4-comparative-democratic-recovery.md` + `recovery-timing-framework.md`
+
+- **File updated**: `/projects/resistance-research/EXPLORATION_QUEUE.md` with full Phase 3 specifications
+
+**Blockers**:
+- **mfg-farm test print**: Still active (user action required) — no change
+- No new blockers identified
+
+**What Needs Your Input**:
+1. **resistance-research distribution path** (URGENT for Phase 1 execution): 
+   - **Path A**: Distribute 35-domain framework now (maximizes timeliness)
+   - **Path A+Domain37 Hybrid** (RECOMMENDED): Begin general-audience distribution while sequencing Domain 37 (election interference) into distribution targeting election-protection orgs
+   - **Path B**: Continue optional updates before distribution (2-4 week extension)
+   - **Status**: Policy influencer map ready for any path choice. Framework now deepened with April developments. Phase 3 expansion candidates queued for post-distribution work.
+
+2. **stockbot engine restart** (CRITICAL — before 2026-04-28 09:30 ET Monday): 
+   - Command: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/`
+   - Current open position: BUY 36 AAPL @ $271.04
+   - Portfolio state: 62 tickers ready, feature engineering corrected, all tests passing
+
+**Project Status**:
+- **resistance-research**: ✅ 35 domains + April updates complete. ✅ Framework analysis deepened with critical April evidence. ✅ Phase 3 expansion candidates queued. 🚩 User distribution path decision required.
+- **stockbot**: ✅ 62-ticker portfolio complete, ✅ market regime detection deployed, ✅ feature engineering bug fixed. 🚩 User engine restart required Monday 09:30 ET.
+- **cybersecurity-hardening**: ✅ All distribution tiers complete. Awaiting user Tier 1 outreach execution.
+- **open-repo**: ✅ Phase 4 PR open, awaiting review/merge.
+
+---
+
+## Previous Session (Session 530 — 2026-04-27 Evening — Bug Fix + Domain Analysis Deepening)
 
 **Status**: ✅ **STOCKBOT FEATURE ENGINEERING BUG FIXED + RESISTANCE-RESEARCH APRIL DEVELOPMENTS DEEPLY ANALYZED**. Autonomous agents resolved critical data integrity issue (time-based column normalization) and deepened framework analysis with April 2026 developments: State Dept war powers memo, ballot initiative nullification proof, FISA reauthorization immunity.
 
