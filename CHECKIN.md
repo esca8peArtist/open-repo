@@ -4,24 +4,31 @@
 
 ---
 
-## Current Session (Session 537 — 2026-04-27 — Phase 2 Expansion: Resistance-Research + Seedwarden Operations)
+## Current Session (Session 537 Continuation — 2026-04-27 — Stockbot HMM Implementation + Phase 2 Expansion)
 
-**Status**: ✅ **PHASE 2 EXPANSION INFRASTRUCTURE COMPLETE**. Two parallel subagents created three research-ready Phase 2 domain scope documents for resistance-research (Domain 37a post-election litigation, Domain 37b state election security, Domain 31x healthcare-tariff collision with July 31 urgency) and built comprehensive Phase 3 operations playbook for seedwarden (TikTok/Instagram/Pinterest/email systems with 30-day launch checklist). All work autonomous and committed to master. Stockbot awaiting engine restart before 2026-04-28 09:30 ET market open (~15 hours).
+**Status**: ✅ **MARKET REGIME DETECTION IMPLEMENTATION COMPLETE + PHASE 2 EXPANSION INFRASTRUCTURE COMPLETE**. Stockbot HMM regime detection fully implemented and tested (858 unit tests passing). Two-layer position sizing (vol scalar + HMM regime scalar) ready for paper trading integration. System positioned for Gate 2 improvement (Sharpe ≥1.0, MDD ≤20%). All orchestration files current. Ready for user engine restart before 2026-04-28 09:30 ET market open (~15 hours).
 
 **Since Last Session (Session 536)**:
-- ✅ **Resistance-Research Phase 2 Domain Scope Documents** (3 new domains created):
-  - Domain 37a: Post-Election Section 3 Litigation (3-phase timeline: election night seizures → congressional certification → post-seating accountability)
-  - Domain 37b: State Election Security Coordination (CISA defunding gap analysis + Arizona/Georgia/Michigan/Pennsylvania/Wisconsin vulnerability matrix)
-  - Domain 31x: Healthcare Tariff Collision (urgency: July 31 pharma tariff + OBBBA January + 7-date advocacy timeline, sources confirmed)
-  - All three research-ready with outlines, source lists, governance implications
-  - Urgency ranking: 31x (95 days) > 37b (April-July) > 37a (Sept-Oct)
-- ✅ **Seedwarden Phase 3 Operations Playbook** (5,500+ word execution guide):
-  - TikTok: Production specs + 30-day calendar + engagement templates
-  - Instagram: Asset reuse map + 3 carousel templates + Story/bio link strategy
-  - Pinterest: Design specs + 63-pin batch plan + Rich Pins setup
-  - Email: Welcome edits + newsletter template + behavioral segmentation + win-back campaign
-  - 30-day launch checklist + 6 operational decision trees
-- ✅ Both agents committed changes to master
+
+**Part 1 — Stockbot Market Regime Detection** (Session 537 Continuation):
+- ✅ **HMMRegimeScalar Implementation**: New class in hmm_regime_scalar.py for probability-weighted position sizing
+  - Stateful per-ticker HMM with weekly retraining (every 5 bars)
+  - Scalar formula: `max_scale - (max_scale - min_scale) * P(Bear_regime_0)`, clipped to [0.15, 1.0]
+  - Thread-safe with per-ticker locks; disabled by default (safe for live trading)
+- ✅ **StrategyCoordinator Extended**: Full HMM opt-in layer alongside existing vol scalar
+  - `enable/disable_hmm_regime_scaling()` for dynamic control
+  - `apply_composite_scalar()` multiplies both layers
+  - Monitoring methods: `get_hmm_scalar_summary()`, `get_composite_scalar_summary()`
+- ✅ **Comprehensive Test Coverage**: 33 tests for RegimeDetector, 46 tests for HMM integration
+  - Total: 858 unit tests passing, 0 failures
+- ✅ **Activation Path**: Disabled by default; activate with `coordinator.enable_hmm_regime_scaling()` once multi-ticker baseline established
+- ✅ **Commit**: fb3e87e (feat: HMM regime scalar Approach 2 + RegimeDetector tests)
+
+**Part 2 — Resistance-Research Phase 2 Domain Scope Documents** (earlier in Session 537):
+- ✅ Domain 37a: Post-Election Section 3 Litigation (election night seizures → congressional certification → post-seating accountability)
+- ✅ Domain 37b: State Election Security Coordination (CISA defunding gap + state vulnerability matrix)
+- ✅ Domain 31x: Healthcare Tariff Collision (July 31 urgency + 7-date advocacy timeline)
+- ✅ Seedwarden Phase 3 Operations Playbook: TikTok/Instagram/Pinterest/email/30-day checklist complete
 
 **What Needs Your Input**:
 

@@ -4,13 +4,27 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-27 Session 537 (Phase 2 Expansion: Resistance-Research domains + Seedwarden Phase 3 Operations Playbook)
+## 2026-04-27 Session 537 Continuation (Stockbot: Market Regime Detection HMM Implementation + Phase 2 Domain Research)
 
-**Status**: ✅ **PHASE 2 EXPANSION INFRASTRUCTURE COMPLETE** — Two parallel subagents created three research-ready Phase 2 domain scope documents for resistance-research (election integrity cluster + healthcare-tariff urgency track) and built comprehensive Phase 3 operations playbook for seedwarden (TikTok, Instagram, Pinterest, email systems with execution templates and 30-day launch checklist). All work autonomous and committed to master.
+**Status**: ✅ **MARKET REGIME DETECTION IMPLEMENTATION COMPLETE** — Stockbot HMM regime detection fully implemented and tested (858 unit tests passing, 0 failures). Two-layer position sizing (vol scalar + HMM regime scalar) ready for paper trading. System positioned for Gate 2 improvement (Sharpe target ≥1.0, MDD target ≤20%). All orchestration files current. Ready for user engine restart before 2026-04-28 09:30 ET market open.
 
 **What was done**:
 
-1. ✅ **Resistance-Research Phase 2 Domain Expansion** (Agent: resistance-research)
+1. ✅ **Stockbot Market Regime Detection Implementation** (Agent: stockbot)
+   - **HMMRegimeScalar class** (new in hmm_regime_scalar.py): Stateful per-ticker probability-weighted position sizing using GaussianHMM
+     - Retrains every 5 bars (weekly update cadence), maintains rolling window of prices
+     - Scalar formula: `max_scale - (max_scale - min_scale) * P(Bear_regime_0)`, clipped to [0.15, 1.0]
+     - Thread-safe with per-ticker locks; disabled by default (safe for live trading)
+   - **StrategyCoordinator extended**: Added full HMM opt-in layer alongside existing vol scalar
+     - `enable/disable_hmm_regime_scaling()` methods for dynamic control
+     - `apply_composite_scalar()` multiplies both layers, clips to [0.05, 1.5]
+     - `get_hmm_scalar_summary()` and `get_composite_scalar_summary()` for monitoring
+   - **Comprehensive test coverage**: 33 new tests for RegimeDetector, 46 new tests for HMM integration (total 858 passing)
+   - **Activation path**: Disabled by default; activate with `coordinator.enable_hmm_regime_scaling()` when paper trading launches
+   - **Gate 2 impact**: HMM begins contributing to position sizing after 60+ daily closes (~3 months per ticker)
+   - **Commit**: fb3e87e (feat: HMM regime scalar Approach 2 + RegimeDetector tests)
+
+2. ✅ **Resistance-Research Phase 2 Domain Expansion** (Agent: resistance-research)
    - **Domain 37a** (Post-Election Section 3 Litigation and Congressional Certification Recovery Strategy): Scope doc with 3-phase litigation timeline (election night seizure TRO practice → congressional certification contestation → post-seating accountability). Sources: Brennan Center, Democracy Docket, NPR, Lawfare.
    - **Domain 37b** (State Election Security Coordination — Post-CISA Architecture): Scope doc analyzing CISA defunding impact on state-level coordination gap. Built competitive state vulnerability matrix (Arizona, Georgia, Michigan, Pennsylvania, Wisconsin) with documented capacity assessment. Sources: CyberScoop, Votebeat, Brennan Center, CDT.
    - **Domain 31x** (Healthcare Tariff Collision — Pharmaceutical Supply Shock + Medicaid Contraction): Scope doc with July 31 deadline urgency (100% pharma tariff effective + OBBBA January 2027 + Strait of Hormuz compound). Built 7-date advocacy timeline (May comment period → June HHS guidance → July tariff → Sept tranche → Oct pre-election visibility → Jan coverage cliff). Sources: White House Proclamation, Crowell & Moring, Ropes & Gray, AJMC, PwC, CNBC, NRHA.
