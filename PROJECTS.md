@@ -110,9 +110,20 @@
   - Democracy angle: Medicaid enrollment offices serve as voter registration sites under NVRA; cuts to enrollment capacity reduce voter registration in majority-minority areas (12 non-expansion states are primarily Southern, majority-Black low-income populations)
   - Implementation timeline: June 1, 2026 (HHS guidance); January 1, 2027 (work requirements effective); litigation anticipated Q1 2027; circuit court decisions through 2028
 
-**Next**: 
-- **DISTRIBUTION EXECUTION** (user action): All 29 domains production-ready. Comprehensive distribution package: (1) updated proposal integrating new domains, (2) Substack/Reddit templates (3-posts/week suggested), (3) Institutional outreach (universities, policy orgs, legal clinics) — all research at sufficient depth for serious engagement
-- **Phase 2 expansion (optional)**: Exploration queue updated (Session 513) with 5 candidates queued (Healthcare/Medicaid complete; State Legislative Autocratization, Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance). Pick next candidate or begin distribution. User selects priority.
+**Phase 2 Candidate 2 (Session 514) — COMPLETE**:
+- ✅ **Domain 33: State Legislative Autocratization** (7,821 words, production-ready)
+  - Research document: `domains/domain-33-state-legislative-autocratization.md`
+  - Scope: Four simultaneous mechanisms (redistricting autocratization cycle via REDMAP 2.0, state supreme court capture via dark money, ballot initiative suppression, voter suppression escalation)
+  - Key findings: REDMAP model replicated at scale; North Carolina 2022-2023 dark money ($5.5M RSLC) captured state supreme court and reversed redistricting ruling in same term; 295+ bills in 43 states attacking ballot initiatives (2025 alone exceeded 2000-2023 combined); 31 restrictive voting laws enacted in 2025
+  - International precedent: Hungary (cardinal laws model — exact mechanism being replicated in four US states), Poland (capture reversal asymmetric), Turkey (legislative capture as platform for next phase)
+  - Timeline: 26 SOS races + 3 state supreme court races in 2026 as immediate test; 2030 Census redistricting cycle as long-term objective (whoever controls state legislatures in Jan 2031 draws maps until 2041)
+
+**Next (Session 514 Update)**:
+- **Framework status**: 31 domains complete (Phase 1-5 base 22 + Phase 2 Domains 23, 27-29, 31, 33). All production-ready.
+- **User decision required**:
+  - **Path A — DISTRIBUTION EXECUTION**: Updated proposal (now integrating 31 domains), Substack/Reddit templates, institutional outreach (universities, policy orgs, legal clinics) — all at depth for serious engagement. Ready to begin immediately.
+  - **Path B — Phase 2 expansion (optional)**: 3 more candidates queued (Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance) — continue research toward 35-40 domain framework before distribution.
+  - User selects priority.
 
 **✅ COMPLETED (Session 502)**:
 - ✅ **Domain 19f War Powers Reform** — Complete research document with current crisis analysis

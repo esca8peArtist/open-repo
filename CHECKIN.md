@@ -4,11 +4,33 @@
 
 ---
 
-## Current Session (Session 513 — 2026-04-27 05:00 UTC — Exploration Queue Augmentation + Domain 31 Healthcare Research Complete)
+## Current Session (Session 514 — 2026-04-27 05:45 UTC — Phase 2 Domain 33 Complete + Framework at 31 Domains)
 
-**Status**: ✅ **Exploration queue augmented from 2 to 5 candidates** (added Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance). ✅ **Domain 31 (Healthcare Access / OBBBA Medicaid Crisis) research COMPLETE** — 6,142 words, production-ready, June 2026 HHS guidance deadline identified. Framework now at 30 domains (base 22 + Domain 19f + Domains 23, 27-29, 31). **CRITICAL DEADLINE REMAINS**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)** — user action.
+**Status**: ✅ **Domain 33 (State Legislative Autocratization) research COMPLETE** — 7,821 words, 27 sources, production-ready. Framework now at 31 domains (base 22 + Domain 19f + Domains 23, 27-29, 31, 33). **User decision required**: Begin distribution execution (31-domain framework ready) OR continue Phase 2 expansion (3 candidates queued). **CRITICAL DEADLINE**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)** — user action required (~8 hours from session start).
 
-**What Accomplished**:
+**What Accomplished** (Session 514):
+
+1. ✅ **resistance-research: Domain 33 Phase 2 Expansion Complete**
+   - **Domain**: State Legislative Autocratization — Coordinated assault on state legislatures across the US
+   - **Length**: 7,821 words across 6 sections, 27 cited sources
+   - **Research scope**: Four simultaneous mechanisms (redistricting autocratization cycle, state supreme court capture via dark money, ballot initiative process suppression, voter suppression escalation)
+   - **Key findings**:
+     - REDMAP 2.0 replicated at scale: North Carolina 2022-2023 dark money ($5.5M RSLC) captured state supreme court; new majority reheared redistricting case in same term with no new facts
+     - 295 bills in 43 states attacking ballot initiatives in 2025 alone (exceeds all of 2000-2023 combined)
+     - Three simultaneous ballot-suppression mechanisms: pre-election barriers (Florida $1M bond), supermajority thresholds (Missouri congressional district), post-approval nullification (Missouri HB 567 reversing voter-approved minimum wage)
+     - 31 restrictive voting laws enacted in 2025 (second highest on record)
+   - **International precedent**: Hungary (cardinal laws model), Poland (capture reversal asymmetric), Turkey (legislative capture as platform for next phase), North Carolina (American analog to Orbán sequence)
+   - **Reform pathways**: Immediate (26 SOS races, 3 state supreme court races, redistricting litigation); medium-term (2027-2028 IRC ballot campaigns, VRA restoration); long-term (2030 Census redistricting as structural objective — whoever controls state legislatures Jan 2031 draws maps through 2041)
+   - **Integration**: Cross-referenced to Domains 1.1f (federal redistricting ban), 6 (judicial independence), 9 (federalism) — no duplication, foundational evidence base
+   - **File**: `projects/resistance-research/domains/domain-33-state-legislative-autocratization.md` — production-ready for proposal integration or standalone distribution
+
+2. ✅ **Framework Status Update**
+   - **Total domains**: 31 (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33)
+   - **Phase 2 expansion progress**: Domains 31 & 33 complete; 3 candidates queued (Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance)
+   - **Proposal readiness**: 31-domain framework production-ready for distribution execution
+   - **PROJECTS.md updated** with Domain 33 completion, decision point for next phase
+
+**Previous Session (Session 513) Accomplishments**:
 
 1. ✅ **Orchestrator Session Protocol: Full Execution**
    - **Orient**: Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md — all state files verified; no new inbox items; 1 active block (mfg-farm test print, user action)
@@ -48,21 +70,38 @@
    - **Distribution readiness**: 29-domain original proposal production-ready; 30-domain framework available for expanded distribution
 
 **What's in Progress**:
-- **resistance-research**: 29-domain framework production-ready. Awaiting user decision: (a) BEGIN DISTRIBUTION EXECUTION (28-domain templates ready for Substack/Reddit/institutional outreach), OR (b) CONTINUE PHASE 2 EXPANSION (2 candidates queued: Healthcare Access Crisis, State Legislative Autocratization)
-- **stockbot**: Paper trading monitoring (engine offline until user restart). Market session Monday 2026-04-28 09:30 ET. May 12 checkpoint for Gate 1 feasibility assessment.
+- **resistance-research**: 31-domain framework production-ready. **AWAITING USER DECISION**:
+  - **Path A — DISTRIBUTION EXECUTION**: Begin Substack/Reddit/institutional outreach campaign using updated 31-domain templates (execution timeline: 2-3 weeks)
+  - **Path B — PHASE 2 EXPANSION**: Continue research on queued candidates (Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance) to reach 35-40 domain framework before distribution
+- **stockbot**: Paper trading engine offline. User restart required before 2026-04-28 09:30 ET. Monitoring ready post-restart. May 12 feasibility checkpoint for Gate 1 (30 trades/month viability).
+- **All other projects**: Blocked on user actions (seedwarden tags, mfg-farm test print, cybersecurity-hardening Tier 1 approval, open-repo PR review, off-grid-living social media execution)
 
 **What Needs User Input** (priority order):
-1. **URGENT — Today before 2026-04-28 09:30 ET**: Restart stockbot engine: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`. Confirm engine starts cleanly, position (36 AAPL @$271.04) loads, and SELL signal executes at market open Monday.
-2. **resistance-research** (next decision): (a) BEGIN DISTRIBUTION EXECUTION using 29-domain templates (Substack, Reddit, institutional outreach ready), OR (b) PICK NEXT PHASE 2 CANDIDATE for research (Recommend: Healthcare Access Crisis for January 2027 urgency; State Legislative for state-level democratic angle)
-3. **seedwarden, mfg-farm, cybersecurity-hardening**: Tag corrections, test print, Tier 1 approval (lower urgency, all awaiting user action)
+
+1. **🚨 URGENT — Today before 2026-04-28 09:30 ET (~8 hours)**:
+   - Restart stockbot engine: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`
+   - Verify engine starts cleanly, position (36 AAPL @$271.04) loads, SELL signal executes at Monday market open
+   - Report any errors or successful execution status
+
+2. **HIGH PRIORITY — Next Session Decision**:
+   - **resistance-research**: Choose between Path A (distribution execution) or Path B (Phase 2 expansion)
+   - Path A readiness: 31-domain framework complete, all templates available (Substack, Reddit, institutional outreach)
+   - Path B readiness: 3 candidates queued, Domain 33 established the research pattern and sourcing depth
+   - **Recommendation**: Path A would maximize impact and distribution of the 31-domain framework; Path B would expand framework to 35-40 domains before distribution (higher investment, longer timeline)
+
+3. **MEDIUM PRIORITY**:
+   - **seedwarden**: Provide 3 tag corrections for Phase 1 upload readiness
+   - **mfg-farm**: Run test print of CadQuery designs (modrun_rail.py, modrun_clip.py) to generate STL files
+   - **cybersecurity-hardening**: Approve Tier 1 messaging templates to begin distribution outreach
+   - **off-grid-living**: Execute social media distribution (Reddit posts, X thread per social-media-launch-posts.md)
 
 **Suggested Next Steps**:
-- **ASAP (before 09:30 ET Monday)**: Restart stockbot engine and verify position loads cleanly; assess Monday P&L
-- **Next autonomous session (conditional)**:
-  - If user picks **distribution execution**: Implement Substack/Reddit/institutional outreach campaign (2-3 week execution timeline)
-  - If user picks **Phase 2 expansion**: Begin next domain research (healthcare or state legislative — recommend healthcare for time-sensitivity)
-  - If no user input: All higher-priority work requires user decision; could implement lower-priority features (workout plan review, cybersecurity-hardening research deepening) but these are non-blocking
-- **May 12 checkpoint**: Stockbot Gate 1 feasibility assessment — determine if h=10 single-ticker viable (expected first round trip by then; if not, strategy pivot needed)
+- **Today (in 8 hours or less)**: Restart stockbot engine via CLI command above
+- **Next autonomous session (conditional on user decision)**:
+  - **If Path A selected**: Orchestrator spawns distribution agent to execute Substack/Reddit/institutional outreach (2-3 week execution window)
+  - **If Path B selected**: Orchestrator spawns resistance-research agent for Congressional Power-of-the-Purse domain research
+  - **If no user input by next session**: Orchestrator will prepare seedwarden/stockbot/other projects for user actions, but all high-priority autonomous work requires user prioritization
+- **May 12 checkpoint (automatic)**: Stockbot Gate 1 feasibility assessment — evaluate if h=10 single-ticker viable or strategy pivot needed based on live trading data
 
 **Usage Status**: Check `python3 scripts/usage-check.py --check` in next session to verify no throttle active.
 
