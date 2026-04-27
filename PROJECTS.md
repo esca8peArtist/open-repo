@@ -68,7 +68,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **29-Domain Diagnostic Framework COMPLETE** (Sessions 502-512) — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready, Phase 2 expansion Domain 23 (Trade Policy) COMPLETE
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 512 (2026-04-27): Domain 23 Trade Policy Research COMPLETE** — Major research finding: February 20, 2026 SCOTUS ruling (*Learning Resources, Inc. v. Trump*) struck down IEEPA tariff authority (6-3, Roberts majority). Domain covers executive tariff authority erosion, Section 122 pivot, TAA lapse, state litigation, international precedent, and reform pathways. 8,849 words, fully integrated into proposal Part II. Brings total framework to 29 domains (Phase 1-5 base + Phase 2 Domains 23, 27-29). 
+**Current focus**: **Session 520 (2026-04-27): Distribution Infrastructure Verification COMPLETE** — All 34 domain documents verified production-ready. Three new infrastructure files created: `DISTRIBUTION_READINESS.md` (domain checklist), `DISTRIBUTION_LAUNCH_CHECKLIST.md` (user-facing operational guide), `DISTRIBUTION_PHASE_ORDER.md` (domain sequencing for all three paths). All templates (7 Substack, 8 Reddit, 11 institutional outreach) ready for personalization. Framework now 35 domains complete (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33-37). **User decision required: Path A (immediate distribution) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (continue updates before distribution).** Once user decides, orchestrator can execute Phase 1 immediately. 
 - **Domain 26 — COMPLETE: Government Accountability and Institutional Resilience** (4,700 words, fully sourced):
   - **26-DOMAIN DIAGNOSTIC FRAMEWORK NOW COMPLETE** (all domains + implementation architecture fully researched)
   - **Central finding**: Accountability failures in 2026 are coordinated across every layer of the oversight system simultaneously
@@ -268,7 +268,13 @@
 **Status**: Active — paper trading live, **Gate 1 INFEASIBLE with current design — multi-ticker pivot required**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker, 1 BUY open). Engine OFFLINE — user restart required before 2026-04-28 09:30 ET. **Gate 1 feasibility assessment COMPLETE (Session 519, 2026-04-27)**: current design achieves 0.17 round trips/month vs. 30/month required (175x gap) — architectural blocker, not a data problem. **Strategy pivot to multi-ticker expansion is the recommended fix.** Begin training additional ticker stackers (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, BRK-B, UNH) immediately. See `projects/stockbot/may-12-feasibility-checkpoint.md` for full analysis.
+**Current focus**: Paper trading live (AAPL_h10_lgbm_ho stacker, 1 BUY open). Engine OFFLINE — user restart required before 2026-04-28 09:30 ET. **Gate 1 feasibility assessment COMPLETE (Session 519)**; **multi-ticker training COMPLETE (Session 520)**. 
+- Single-ticker rate: 0.17/month. Gate 1 requires 30/month (175x gap).
+- **Session 520 multi-ticker training**: 10 new stackers trained (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA). 11-ticker portfolio projects to ~8/month (47x improvement, but still 4x short of Gate 1).
+- **Two options to reach Gate 1**: (A) scale to ~40 tickers (pipeline ready, each trains in ~90s); (B) reduce threshold multiplier (requires retrain + revalidation).
+- New script: `scripts/train_multiticker_stackers.py`. Models registered in database.
+- **Next agent task**: Wire 10 new tickers into TradingSession config, restart multi-ticker paper trading.
+- See `projects/stockbot/may-12-feasibility-checkpoint.md` for full analysis.
 
 **Paper Trading Status (Session 519 — 2026-04-27 07:11 UTC — Day 2)**:
 - Paper trading started: 2026-04-26

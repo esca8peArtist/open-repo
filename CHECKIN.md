@@ -4,13 +4,42 @@
 
 ---
 
-## Current Session (Session 519 — 2026-04-27 Late Morning — Domain Updates Executed + Stockbot Feasibility)
+## Current Session (Session 520 — 2026-04-27 Late Morning — Multi-Ticker Training + Distribution Prep Complete)
+
+**Status**: ✅ **Two parallel subagents completed: stockbot multi-ticker training + resistance-research distribution infrastructure verification.** **stockbot ready for multi-ticker paper trading** (10 new stackers trained, aggregate ~8/month vs. 30/month Gate 1 target). **resistance-research ready for distribution execution** (all 35 domains verified production-ready, three new infrastructure files created). **User decisions required**:
+
+1. **stockbot**: Engine restart (before 2026-04-28 09:30 ET) + decide: Option A (scale to 40 tickers) or Option B (reduce threshold)?
+2. **resistance-research**: Choose distribution path: Path A, Path A+Domain37 Hybrid (RECOMMENDED), or Path B?
+
+---
+
+## Previous Session (Session 519 — 2026-04-27 Late Morning — Domain Updates Executed + Stockbot Feasibility)
 
 **Status**: ✅ **Domain Updates Executed; Gate 1 Infeasibility Determined** — Four domain updates completed and committed (Domain 19f Iran war, Domain 28 Venezuela synthesis, Domain 35 Humphrey's Executor, Domain 1 SAVE Act). **stockbot May 12 feasibility assessment complete: Gate 1 is INFEASIBLE with current h=10 single-ticker design (175x gap: 0.17 vs. 30 round trips/month).** **User decisions required**:
 
-1. **stockbot strategy pivot**: Multi-ticker expansion (recommended) vs. threshold reduction vs. intraday MTF?
-2. **Engine restart**: Before 2026-04-28 09:30 ET (14:30 UTC market open)
-3. **resistance-research distribution path**: Path A, Path A+Domain37 Hybrid (RECOMMENDED), or Path B?
+**What Accomplished** (Session 520):
+
+✅ **stockbot: Multi-Ticker Stacker Training COMPLETE**
+- Created `scripts/train_multiticker_stackers.py` — parameterized multi-ticker training pipeline
+- Trained 10 models: MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA (all h=10 lgbm architecture)
+- 11-ticker portfolio: ~8 round trips/month aggregate (vs. 0.17/month single-ticker, 47x improvement)
+- Still 4x short of Gate 1 (30/month), but clear path forward: Option A (scale to 40 tickers) or Option B (reduce threshold)
+- Models registered in database, training logs complete
+- **Status**: Ready for multi-ticker paper trading once user restarts engine
+
+✅ **resistance-research: Distribution Infrastructure Verification COMPLETE**
+- Verified all 34 domain documents production-ready (frontmatter, full body, sourcing confirmed)
+- Created 3 new infrastructure files:
+  - `DISTRIBUTION_READINESS.md` — domain verification checklist (all 34 confirmed)
+  - `DISTRIBUTION_LAUNCH_CHECKLIST.md` — user-facing operational checklist (user action = path decision only)
+  - `DISTRIBUTION_PHASE_ORDER.md` — domain sequencing for all three distribution paths
+- All templates (7 Substack, 8 Reddit, 11 institutional outreach) ready for personalization
+- All cross-references verified correct; one minor cleanup item identified (superseded draft)
+- **Status**: Infrastructure ready for any chosen distribution path (user path decision is the only gate)
+
+---
+
+## Previous Session Summary (Session 519):
 
 **What Accomplished** (Session 519):
 

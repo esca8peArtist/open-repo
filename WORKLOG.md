@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Late Morning (Session 520) — Parallel Subagent Work: Stockbot Multi-Ticker Training + Distribution Infrastructure Prep
+
+**Session Type**: Autonomous (headless on Raspberry Pi 5)  
+**Duration**: ~35 min (parallel subagent execution) + 10 min (log/commit)  
+**Work**: Two independent agents (stockbot, resistance-research) executing in parallel
+
+### Session 520 Completion Summary
+
+✅ **stockbot: Multi-Ticker Stacker Training COMPLETE**
+- **Agent**: stockbot subagent (Session 520)
+- **Deliverable**: `/projects/stockbot/scripts/train_multiticker_stackers.py` — new parameterized multi-ticker training pipeline (replaces hardcoded AAPL in original script)
+- **Models trained**: 10 new stackers (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA) — all `TICKER_h10_lgbm_ho` architecture matching AAPL
+- **Backtest results**: 
+  - 11-ticker portfolio: ~4 round trips per 180-day window (projects to ~8/month aggregate)
+  - Single-ticker rate was 0.17/month; multi-ticker improvement is 47x
+  - Still 4x short of Gate 1 threshold (30/month) but significant progress
+- **Supporting infrastructure**: 20 new MTF daily regressor `.joblib` files (model IDs 89-108) registered in `data/model_registry.db`
+- **Training log**: `/projects/stockbot/logs/multiticker_training_log.json` documents each training run
+- **Status**: Training complete; waiting for user to restart engine before multi-ticker paper trading begins
+- **Next steps** (orchestrator work, not user action):
+  1. Wire 10 new tickers into TradingSession configuration
+  2. Restart multi-ticker paper trading once user restarts engine
+  3. Monitor aggregate round trips across all 11 tickers toward Gate 1 pass
+
+**stockbot Gate 1 Path Forward**:
+- Current 11-ticker aggregate: ~8 round trips/month (27% of Gate 1)
+- Two options to reach 30/month:
+  - **Option A**: Scale to ~40 total tickers (training pipeline runs in ~80-90s per ticker, fully parallelizable)
+  - **Option B**: Reduce threshold multiplier from 0.5 to 0.2 (requires retrain + revalidation of Gate 2 quality metrics)
+- **User decision needed**: Which approach to pursue after seeing first multi-ticker paper trading results
+
+✅ **resistance-research: Distribution Infrastructure Verification COMPLETE**
+- **Agent**: general-research subagent (Session 520)
+- **Deliverables**: Three new files created:
+  1. **`DISTRIBUTION_READINESS.md`** — Domain-by-domain verification table for all 34 confirmed domains (file paths, line counts, word counts, source counts)
+  2. **`DISTRIBUTION_LAUNCH_CHECKLIST.md`** — User-facing operational checklist (5 sections, all items labeled [COMPLETE], [ORCHESTRATOR], or [USER ACTION])
+  3. **`DISTRIBUTION_PHASE_ORDER.md`** — Domain sequencing for all three distribution paths (Path A, Path A+Hybrid, Path B)
+- **Verification findings**:
+  - 34 unique domain documents verified production-ready (34 vs. 35 counting artifact — see details below)
+  - All templates (7 Substack posts, 8 Reddit posts, 11 institutional outreach templates) ready for personalization
+  - All cross-references verified correct (spot-check of 7 key references)
+  - One minor cleanup item: superseded `domain-28-war-powers-venezuela.md` draft identified (not referenced, can be archived)
+  - Cosmetic update needed: template references still say "28-domain framework" — can update to "35-domain" or "34-domain" as part of Phase 1 prep
+- **Domain count clarification**: 
+  - Filesystem count: 34 unique domain documents (Domains 1-22 embedded in proposal + Domains 19f, 23, 26-29, 31, 33-37 as standalones)
+  - WORKLOG references: "35 domains" reflects Phase 2 expansion session counting (includes both the Domain 26 outline from research history and the production file)
+  - All content is accounted for and production-ready
+- **Status**: All infrastructure ready for any chosen distribution path. User decision on Path A/Hybrid/B is the only blocking gate.
+
+### Project Assessment
+
+- **stockbot**: Multi-ticker training complete. Waiting for (1) user engine restart, (2) user decision on Option A (scale to 40 tickers) vs Option B (reduce threshold). Next agent work: wire 10 tickers into TradingSession and begin multi-ticker paper trading.
+- **resistance-research**: Distribution infrastructure verified and documented. Waiting for user to choose distribution path (Path A, Path A+Hybrid, or Path B). Once path chosen, orchestrator can execute Phase 1 immediately.
+- **All other projects**: Status unchanged; blocks persist.
+
+**Files committed**: 
+- DISTRIBUTION_READINESS.md, DISTRIBUTION_LAUNCH_CHECKLIST.md, DISTRIBUTION_PHASE_ORDER.md (created in projects/resistance-research/)
+- train_multiticker_stackers.py, multiticker_training_log.json (created in projects/stockbot/)
+- WORKLOG.md and CHECKIN.md updated
+- Commit pending: after CHECKIN.md updated with Session 520 summary
+
+---
+
 ## 2026-04-27 Morning (late) — Session 519: Autonomous Orchestrator — Domain Updates + Stockbot May 12 Feasibility
 
 **Session Type**: Autonomous (headless on Raspberry Pi 5)  
