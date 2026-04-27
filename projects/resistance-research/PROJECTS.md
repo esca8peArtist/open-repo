@@ -7,7 +7,7 @@
 
 ## Overall Project Status
 
-**Phase**: Phase 2 domain expansion COMPLETE (Session 538 verification). 38-domain framework production-ready (Domains 27, 28, 29 added; Domains 1, 6 created as standalone files; Domains 19f, 33, 35 updated). Distribution awaiting user Path A/B/Hybrid decision. Session 538 audit: all Phase 2 work items verified complete; FISA 702 April 30 outcome tracking queued.
+**Phase**: Phase 2 domain expansion COMPLETE (Session 538 verification). Distribution measurement infrastructure now complete (Session 546). 38-domain framework production-ready (Domains 27, 28, 29 added; Domains 1, 6 created as standalone files; Domains 19f, 33, 35 updated). Distribution awaiting user Path A/B/Hybrid decision. Session 538 audit: all Phase 2 work items verified complete; FISA 702 April 30 outcome tracking queued.
 
 **35-Domain Diagnostic Framework**: COMPLETE AND PRODUCTION-READY. All 35 domains + 6 April 2026 updates documented. Distribution templates cover all distribution channels. Session 535 added: phase-2-expansion-roadmap.md (1,900 words), Domain 33 Section 1.3a (6-state simultaneous action map, ~1,300 words, 10 new sources), surveillance-tracking.md FISA post-deadline checklist.
 
@@ -26,6 +26,7 @@
 | `distribution-reddit-templates.md` | Complete | 5 subreddit-tailored posts; domain count corrected to 28 Session 510 |
 | `distribution-institutional-outreach-templates.md` | Complete | 3 email template categories; domain count corrected to 28 Session 510 |
 | `published/README.md` | Complete | Hub README for all distributable documents |
+| `measurement-and-iteration-framework.md` | Complete | Post-distribution measurement, adoption tracking, monthly iteration cycles, institutional playbook — Session 546 |
 
 ---
 
