@@ -623,6 +623,26 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Timeline**: 1-2 sessions for strategy
   - **Status**: QUEUED (can begin once Phase 1 converts + launches)
 
+**NEW ITEMS (Session 538 — Exploration Queue Refresh)**:
+
+- **resistance-research: Democratic Renewal Activation Architecture** (Priority 1 for post-distribution)
+  - **Scope**: Post-distribution operationalization — for each of the 35 domains' recommendations, design: (1) responsible agency/organization, (2) implementation timeline (immediate/100-day/1yr/3yr/10yr), (3) success metrics, (4) cross-domain dependencies, (5) international precedent, (6) risk mitigation for institutional capture/backlash
+  - **Goal**: A comprehensive implementation roadmap that answers "what happens after distribution?" — who does what, by when, with what success criteria?
+  - **Expected outcome**: `ACTIVATION_ARCHITECTURE.md` (5,000-7,000 words) with tabular implementation schedule, dependency graph, and risk mitigation strategies
+  - **Status**: QUEUED (identified by Session 538 orchestrator — available now)
+
+- **stockbot: Live Trading Infrastructure and Risk Management** (Priority 2 for post-gate-1-pass)
+  - **Scope**: Design the complete monitoring, alerting, and emergency-response infrastructure for live trading on Jetson. (1) Dashboard architecture (real-time P&L, position tracking, regime detection), (2) Alert triggers (model drift, drawdown limits, regime shifts, circuit breakers), (3) Emergency exit procedures (controlled vs. panic liquidation), (4) Operational runbooks (what to do if each alert fires), (5) Integration with existing guardrails
+  - **Goal**: Production-ready infrastructure that prevents catastrophic losses while maintaining algorithm performance
+  - **Expected outcome**: `live-trading-operations.md` (3,000-4,000 words) + operational checklists
+  - **Status**: QUEUED (identified by Session 538 orchestrator — available after Gate 1 pass)
+
+- **cybersecurity-hardening: High-Risk Population Protection Protocols** (Priority 3 for advanced OpSec)
+  - **Scope**: Beyond baseline OpSec playbook — design comprehensive protection for activists, dissidents, lawyers, vulnerable populations facing government targeting. (1) Identity compartmentalization (burner phones, secondary SIM architectures, VPN/Tor layering), (2) Physical security (surveillance detection, safe house networks, low-profile movement patterns), (3) Legal defense coordination (attorney networks, bail funds, criminal defense playbooks), (4) International sanctuary options (asylum processes, travel security, international NGO coordination), (5) Emergency protocols (asset recovery, family safety, evidence preservation)
+  - **Goal**: Actionable protocols for high-risk populations, grounded in case studies (HK activists, US Jan 6 defendants, EU dissident networks)
+  - **Expected outcome**: `high-risk-populations.md` (4,000-5,000 words) + operational playbooks for 3-4 scenario types
+  - **Status**: QUEUED (identified by Session 538 orchestrator — available now)
+
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 
 - **Domain 27 — Higher Education and Academic Freedom** (Priority 1 for Phase 2 research)
