@@ -4,7 +4,87 @@
 
 ---
 
-## Current Session (Session 501 — 2026-04-27 Early Morning — Exploration Queue Complete: 3 Strategic Research Items)
+## Current Session (Session 502 — 2026-04-27 Morning/Afternoon — Priority 1 Work Execution: Domain 19f + Monitoring)
+
+**Status**: Parallel 2-agent execution completed. Domain 19f War Powers Reform research complete (4,400 words). Paper trading monitoring Day 2 complete. Two highest-priority projects advanced. Exploration Queue empty (replenish if new blocks hit).
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research: Domain 19f War Powers Reform COMPLETE**
+   - **Priority**: Domain 19f identified as Priority 1 in post-Domain-26 audit (Session 501)
+   - **File**: `projects/resistance-research/domains/domain-19f-war-powers-reform.md` (4,400 words)
+   - **Key findings**:
+     - May 1 deadline LIVE: Operation Epic Fury launched Feb 28 without authorization. War Powers clock expires May 1. Ceasefire April 8 collapsing (Iran seized ship April 24, Trump canceled peace talks April 25). Congress blocked 4 war powers resolutions.
+     - Constitutional inversion: Presidents now initiate, Congress forced to stop (reverse of founders' design). Youngstown Category 2 applies, but 4 Senate votes near-denying push toward Category 3.
+     - 2001 AUMF still dangerous: Used in 19 countries, no enemy/scope/duration. December 2025 repealed 1991/2002 AUMFs, but 2001 remains.
+     - Power of the purse is most enforceable: Congress terminated unauthorized ops via appropriations riders (1973 Cambodia, 1994 Somalia). Just Security recommends explicit statutory language.
+     - Germany's Parlamentsvorbehalt is strongest model: Affirmative Bundestag authorization required before armed activities abroad.
+   - **Status**: Complete, cited, ready for proposal integration and distribution
+
+2. ✅ **Stockbot: Paper Trading Monitoring (Day 2)**
+   - **Task**: Run daily monitoring script and assess Gate 1 feasibility
+   - **Results**:
+     - Monitor script clean run (exit 0)
+     - Daily log updated with 5th snapshot (2026-04-27 01:05 UTC)
+     - 1 BUY open (36 AAPL @ $271.04, 2026-04-26), 0 round trips (expected)
+     - Gate 1 pace INDETERMINATE: structural concern flagged — daily-bar LightGBM stacker achieved 1 trade in 180-day backtest. Achieving 30 round trips/month is aggressive. Cannot confirm/refute until live signals generate multiple round trips.
+   - **Checkpoints**:
+     - 2026-04-28 (Day 3): First live market session
+     - 2026-05-12 (Day 16): Two-week Gate 1 feasibility review — **flag if pace << 15**
+     - 2026-05-26 (Day 30): 30-day baseline for rate calculation
+     - 2026-07-26 (Day 90): 3-month graduation target
+   - **Status**: Monitoring on track. Waiting for Monday market open.
+
+**Project Status Summary**:
+- **resistance-research** (Priority 1): Phase 1-5 COMPLETE. Domain 26 infrastructure ready + Domain 19f COMPLETE. Post-Domain 26 audit identified 4 priority gaps; 2 are now addressed (Domain 19f done, Domain 26 infrastructure ready). Distribution BLOCKED until Domain 26 research executed. After that: Substack/Reddit templates ready.
+- **stockbot** (Priority 2): Paper trading live (Day 2, started 2026-04-26). Monitoring running daily. Gate 1 pace assessment TBD (need multiple round trips to confirm feasibility). Next checkpoint 2026-05-12 (Day 16, ~15 days out).
+- **cybersecurity-hardening** (Priority 3): All 3 distribution tiers ready. Tier 2 messaging templates complete. Awaiting Tier 1 user approval for outreach execution.
+- **mfg-farm** (Priority 4): Business plan, CadQuery designs, market research, listing copy all complete. BLOCKED on test print (user action).
+- **seedwarden** (Priority 5): Phase 2 mockup tooling 100% complete (63 images, 3 variants per product). Phase 1 BLOCKED on tag corrections (3) + Etsy account verification. Phase 3 strategy now ready.
+- **open-repo** (Priority 6): PR #1 awaiting maintainer review. Phase 5 Kiwix architecture documented and ready for implementation when PR merges.
+- **No blocking technical issues** — all blocks are user-action dependent (decisions, test print, tag corrections, PR review)
+
+**Needs User Input** (in priority order):
+
+1. **Seedwarden Phase 1 Launch** (HIGHEST PRIORITY):
+   - Action: 3 tag corrections + Etsy account verification
+   - Blocker: Can't list products until these are complete
+   - Status: Everything else (Phase 2 tooling, Phase 3 strategy) complete and ready
+
+2. **Resistance-Research: Domain 26 Deepening Decision**:
+   - **Current status**: Domain 19f (War Powers) now COMPLETE. Domain 26 infrastructure ready. Domain 19f closes Priority 1 gap from audit.
+   - **Decision needed**: Execute Domain 26 research?
+     - **Yes**: Agent will produce full Domain 26 document (~3-4 hours work) using identified research priorities (Skrmetti outcome, EMTALA rescission, CDC maternal mortality, ballot initiatives, MHMD Act status)
+     - **No**: Proceed to distribution with current framework (Substack/Reddit templates ready after Domain 19f confirmed integrated)
+   - **Recommended**: Domain 26 deepening is highest-value addition. War Powers addition (just completed) closes major credibility gap. Together, these position proposal for institutional distribution (universities, policy orgs, legal clinics).
+
+3. **Cybersecurity-Hardening: Tier 1 Approval**:
+   - Action: Review Tier 1 messaging templates in `TIER1_DISTRIBUTION_PREP.md`
+   - Next step: Execute Tier 1 outreach (user action)
+   - Timeline: Tier 2 follows ~4 weeks after Tier 1 completion
+
+4. **mfg-farm: Test Print**:
+   - Action: Run test print of CadQuery designs (rail + clip)
+   - Blocker: Can't proceed with launch prep until confirmed printable
+   - Everything else ready (business plan, pricing, listing copy)
+
+**Suggested Next Actions**:
+1. **Highest**: Seedwarden Phase 1 (tag corrections + Etsy verification)
+2. **Secondary**: Resistance-research Domain 26 decision (deepening or distribute?)
+3. **Tertiary**: Cybersecurity-hardening Tier 1 review and approval
+
+**Session Metrics**:
+- **Agents executed**: 2 (resistance-research Domain 19f, stockbot monitoring)
+- **Tokens used**: ~134K (2 agents, ~67K each)
+- **Documents created**: 1 domain research file (4,400 words)
+- **Sonnet usage**: ~47.6% (well below 80% throttle threshold)
+- **Status**: No issues. Budget reset Tuesday 2026-04-29 00:00 UTC.
+- **All work**: Committed to master, no uncommitted changes
+- **Exploration Queue**: Empty (replenish if external blocks hit)
+
+---
+
+## Previous Session (Session 501 — 2026-04-27 Early Morning — Exploration Queue Complete: 3 Strategic Research Items)
 
 **Status**: Parallel 3-agent execution completed. All exploration queue items delivered. Total output: 13,465 words of strategic, actionable documentation across open-repo, resistance-research, and seedwarden. All autonomous work completed. Next phase awaits user decisions on priority projects.
 
@@ -40,58 +120,9 @@
    - **Key findings**: TikTok (mid-tier creators 100K-700K, 30-60s educational, #homestead 5.4B views), Pinterest (highest-ROI organic, 33% more traffic than Facebook), paid ads (Shopping/Gifts $0.34 CPC, 2.0x ROAS target), influencer partnerships (direct outreach, 20-30% response rate, $100-250 flat fee), three-month phased plan (Month 1 infrastructure, Month 2 test $300-500 + outreach, Month 3 scale winners kill losers)
    - **Status**: Ready for immediate execution when Phase 1 launches and converts
 
-**Project Status Summary**:
-- **resistance-research** (Priority 1): Phase 1-5 COMPLETE. Domain 26 infrastructure ready (prep docs complete). Post-Domain 26 audit complete — distribution BLOCKED until: (1) Domain 26 research executed, (2) Domain 19f (War Powers) added. After those: Substack/Reddit ready.
-- **stockbot** (Priority 2): Paper trading live (Day 2, started 2026-04-26). Monitoring running daily. Next Gate 1 checkpoint 2026-05-12 (14 days out).
-- **cybersecurity-hardening** (Priority 3): All 3 distribution tiers ready. Tier 2 messaging templates complete. Awaiting Tier 1 user approval for outreach execution.
-- **mfg-farm** (Priority 4): Business plan, CadQuery designs, market research, listing copy all complete. BLOCKED on test print (user action).
-- **seedwarden** (Priority 5): Phase 2 mockup tooling 100% complete (63 images, 3 variants per product). Phase 1 BLOCKED on tag corrections (3) + Etsy account verification. Phase 3 strategy now ready.
-- **open-repo** (Priority 6): PR #1 awaiting maintainer review. Phase 5 architecture now documented and ready for implementation when PR merges.
-- **No blocking technical issues** — all blocks are user-action dependent (decisions, test print, tag corrections, PR review)
-
-**Needs User Input** (in priority order):
-
-1. **Seedwarden Phase 1 Launch** (HIGHEST PRIORITY):
-   - Action: 3 tag corrections + Etsy account verification
-   - Blocker: Can't list products until these are complete
-   - Status: Everything else (Phase 2 tooling, Phase 3 strategy) complete and ready
-
-2. **Resistance-Research: Distribution Strategy**:
-   - **Option A**: Approve Domain 26 deepening
-     - Agent will execute full Domain 26 document using research priorities (Skrmetti outcome, EMTALA, CDC data, ballot initiatives)
-     - Infrastructure 30% pre-written; estimated ~3-4 hours agent work
-     - Then: Substack/Reddit distribution ready after Domain 19f addition
-   - **Option B**: Proceed to distribution now
-     - Templates ready for user posting (Substack, Reddit, institutional)
-     - Framework distribution-ready after Domain 26 + Domain 19f added (per audit)
-   - **Recommended**: Domain 26 deepening is highest-value. Domain 19f (War Powers with May 1 deadline) should be added before distribution to avoid credibility gap.
-
-3. **Cybersecurity-Hardening: Tier 1 Approval**:
-   - Action: Review Tier 1 messaging templates
-   - Next step: Execute Tier 1 outreach (user action)
-   - Timeline: Tier 2 follows ~4 weeks after Tier 1 completion
-
-4. **mfg-farm: Test Print**:
-   - Action: Run test print of CadQuery designs (rail + clip)
-   - Blocker: Can't proceed with launch prep until confirmed printable
-   - Everything else ready (business plan, pricing, listing copy)
-
-**Suggested Next Actions**:
-1. **Highest**: Seedwarden Phase 1 (tag corrections + Etsy verification)
-2. **Secondary**: Resistance-research Domain 26 decision + Domain 19f addition
-3. **Tertiary**: Cybersecurity-hardening Tier 1 review and approval
-
-**Session Metrics**:
-- **Agents executed**: 3 (open-repo Kiwix, resistance-research audit, seedwarden Phase 3)
-- **Tokens used**: ~161K (3 agents, ~54K each average)
-- **Documents created**: 3 (13,465 words total)
-- **Sonnet usage**: ~52.5% (estimated 2,500K / 4,750K available)
-- **Status**: Below 80% throttle threshold. Reset: Tuesday ~24h.
-- **All work**: Committed to master, no uncommitted changes
-
 ---
 
-## Previous Session (Session 500 — 2026-04-27 Afternoon — Seedwarden Phase 2 Mockup Tooling Complete)
+## Previous Session — Session 500 (2026-04-27 Afternoon — Seedwarden Phase 2 Mockup Tooling Complete)
 
 **Status**: Single-agent execution completed. Seedwarden Phase 2 mockup tooling fully implemented. All 21 products now have three mockup variants (tablet cover, phone, interior grid). Phase 1 is now the critical path for seedwarden launch.
 

@@ -65,23 +65,32 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1-5 COMPLETE, **Diagnostic Framework Complete at 25 Domains + Domain 26 Identified (Session 499)** — Core proposal architecture complete, completeness assessment done
+**Status**: Active — Phase 1-5 COMPLETE, **Diagnostic Framework Complete at 26 Domains (Session 502)** — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 499 (2026-04-27 evening): Domain Completeness Assessment COMPLETE + Domain 26 Identified**. 
-- **Assessment file**: `assessment/domain-completeness-check.md` (comprehensive review of all 25 domains)
-- **Domain 26 — IDENTIFIED: Reproductive Rights, Bodily Autonomy, and Gender Justice** (new domain with clear gap justification):
-  - **Gap**: Proposal mentions reproductive rights 4× in passing; no reform architecture, no subsection, no fiscal analysis
-  - **Scale**: 31M women of reproductive age under state bans (larger than several fully-treated domains)
-  - **April 2026 crisis**: Admin rescinded Biden-era emergency abortion guidance; using federal funding leverage against state protections; Dobbs logic threatens Griswold (contraception), Lawrence (LGBT), Obergefell (marriage equality)
-  - **International precedent**: France constitutionalized abortion as "guaranteed freedom" April 2024
-  - **Proposed subsections**: (1) WHPA federal statutory pathway, (2) contraceptive access + Dobbs limits, (3) gender-affirming care protection, (4) maternal health equity, (5) reproductive surveillance prohibition
-- **All other candidate domains assessed**: Indigenous sovereignty (needs Domain 15 subsection depth, not standalone), disability justice (Domain 18 expansion), immigration (Domain 16 complete), media (Domain 8 complete), housing (Domain 13+3f complete), university autonomy (Domain 10 subsection), civil society (cross-cutting, no standalone needed)
-- **Result**: Diagnostic framework at 25 domains with one identified Domain 26 gap. Framework completeness assessed and documented.
+**Current focus**: **Session 502 (2026-04-27 morning): Domain 19f War Powers Reform COMPLETE**. 
+- **Domain 19f — COMPLETE: War Powers Reform and Constitutional Crisis Response** (4,400 words, fully sourced):
+  - **May 1 deadline LIVE**: Operation Epic Fury launched Feb 28, 2026 without authorization. Trump submitted War Powers notification March 2. 60-day clock expires May 1. Ceasefire April 8 but collapsing (Iran seized ship April 24, Trump canceled peace talks April 25). Congress blocked four war powers resolutions (most recent 52-47 April 15).
+  - **Constitutional inversion**: Founders designed Congress→declare, President→conduct. Now reversed: President→initiate, Congress→forced to stop. Youngstown Steel Category 2/Twilight applies; four Senate votes near-denying push toward Category 3. Courts never enforced War Powers Act against executive refusal.
+  - **2001 AUMF analysis**: Still on books, used in 19 countries, no enemy/scope/duration. Dec 2025 NDAA repealed 1991/2002 Iraq AUMFs (first repeal since 1971). Jayapal-Massie repeal characterized as longshot.
+  - **Fiscal connection**: Congress ~$50B estimate through Day 40; Harvard ~$1T lifetime. No supplemental appropriations request (admin fears it legalizes war under Kosovo precedent).
+  - **Power of the purse**: Most enforceable tool. Congress cut unauthorized ops 1973 (Cambodia) and 1994 (Somalia) via appropriations riders. Just Security recommends explicit statutory language denying authorization.
+  - **International precedent**: Germany's Parlamentsvorbehalt (2005 law) requires affirmative Bundestag authorization before armed activities abroad. UK/France weaker but meaningful. No peer democracy relies as heavily on executive unilateralism as post-1945 US.
+  - **File**: `domains/domain-19f-war-powers-reform.md` (4,400 words, 9 cited sources)
+- **Domain 26 — INFRASTRUCTURE COMPLETE (Session 500)**:
+  - Outline: `domain-26-research-outline.md` (2,800 words) — Full structure with 5 subsections, fiscal architecture, international benchmarks
+  - Checklist: `domain-26-research-checklist.md` (1,200 words) — Timeline, source categories, key unknowns
+  - When user approves: Ready for immediate full development with identified research priorities
 
 **Next**: 
-- **Domain 26 Research Infrastructure COMPLETE (Session 500)**: Prep documents ready (`domain-26-research-outline.md`, `domain-26-research-checklist.md`). Framework is 30% pre-written and structured. When user approves deepening, full Domain 26 document can be executed immediately with research focused on 5 priority areas (Skrmetti outcome, EMTALA rescission, CDC data, ballot initiative record, My Health My Data Act status). OR proceed to distribution execution (templates ready).
-- **Current decision point**: Approve Domain 26 deepening (fastest path: apply Domain 26 research priorities list) OR proceed to Substack/Reddit/institutional distribution (templates production-ready).
+- **Domain 26 Decision**: Approve deepening for full Domain 26 execution? (3-4 hours agent work to produce complete research document using identified priority areas: Skrmetti outcome, EMTALA rescission, CDC maternal mortality, ballot initiatives, My Health My Data Act status)
+- **Distribution readiness**: Domain 19f closes Priority 1 gap from post-Domain-26 audit. After Domain 26 execution: Substack/Reddit templates ready for production. Institutional distribution (universities, policy orgs, legal clinics) should wait for full 26-domain completion.
+
+**✅ COMPLETED (Session 502)**:
+- ✅ **Domain 19f War Powers Reform** — Complete research document with current crisis analysis
+  - `domains/domain-19f-war-powers-reform.md` (4,400 words) — Full domain structure, May 1 deadline crisis, constitutional analysis, fiscal implications, international precedent, reform pathways
+  - 9 sourced citations from April 2026 reporting and legal analysis
+  - Closes Priority 1 gap from post-Domain-26 audit (Iran war constitutional crisis with May 1 deadline)
 
 **✅ COMPLETED (Session 500)**:
 - ✅ **Domain 26 Research Infrastructure** — Outline, checklist, priority research areas identified
@@ -194,20 +203,33 @@
 **Working dir**: `projects/stockbot/`
 **Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **All three strategy optimization tasks COMPLETE** (Sessions 488-489). AAPL_h10_lgbm_ho validation plan in place, monitoring script deployed, live trading readiness checklist ready. **Next**: Monitor paper trading daily, assess progress toward Gate 1 (30 trades/month), prepare live trading transition once all gates pass for 3 consecutive months.
 
-**Paper Trading Status (Session 496 — 2026-04-27, Day 2)**:
+**Paper Trading Status (Session 502 — 2026-04-27, Day 2)**:
 - Paper trading started: 2026-04-26
-- Days elapsed: 1 (as of monitor run 2026-04-26 23:05 UTC)
+- Days elapsed: 1 (market closed Sunday)
 - DB state: 9 total trade legs across 2 strategy names:
-  - `stacker:0676c84e` — 8 smoke-test legs (pre-market verification, NOT from live signals; correctly excluded by monitor)
-  - `AAPL_h10_lgbm_ho` — 1 leg: BUY 36 AAPL @ $271.04 (live signal, position open, no SELL yet)
-- Completed round trips: 0 (open BUY, awaiting SELL signal)
-- Trades/month pace: 0.0 (insufficient data — 1 day elapsed)
-- Gate 1 (30 round trips/month): FAIL — expected at Day 1/2
+  - `stacker:0676c84e` — 8 smoke-test legs (pre-market verification, correctly excluded by monitor)
+  - `AAPL_h10_lgbm_ho` — 1 leg: BUY 36 AAPL @ $271.04 (2026-04-26 17:06 UTC, live signal, position open)
+- Completed round trips: 0 (open BUY, awaiting SELL signal; first market session Monday 2026-04-28)
+- Trades/month pace: INDETERMINATE (no round trips yet)
+- **Gate 1 assessment**: STRUCTURAL CONCERN FLAGGED — Daily-bar LightGBM stacker achieved 1 buy-hold in 180-day backtest. Achieving 30 round trips/month is aggressive. Cannot confirm/refute feasibility until live signals generate multiple round trips.
+- Gate 1 (30 round trips/month): FAIL — expected at Day 2 (insufficient data)
 - Gate 2 (Sharpe ≥1.0, MDD ≤20%, PF ≥1.5): all FAIL except MDD (0.0%) — insufficient data
 - Gate 3 (≥63 days): FAIL — 62 days remaining
-- Monitor script: `scripts/paper_trading_monitor.py` running; daily log at `logs/paper_trading_daily.jsonl` (3 snapshots)
-- Next checkpoint: 2026-05-12 (2-week flag for Gate 1 pace feasibility review — see WORKLOG)
-- Gate 1 data milestone: 2026-05-26 (30 days after start)
+- Monitor script: `scripts/paper_trading_monitor.py` — clean runs, daily log at `logs/paper_trading_daily.jsonl` (5 snapshots as of 2026-04-27 01:05 UTC)
+- **Checkpoints**:
+  - 2026-04-28 (Day 3): First live market session — watch for SELL signal
+  - 2026-05-12 (Day 16): Two-week Gate 1 feasibility review — **flag if pace well below 15 round trips** (half-month threshold)
+  - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail (baseline for 30/month rate)
+  - 2026-07-26 (Day 90): 3-month graduation target
+
+**Completed (Session 502)**:
+1. ✅ **Paper Trading Monitoring (Day 2)** — COMPLETE:
+   - Monitor script executed cleanly (exit 0)
+   - Daily log updated with 5th snapshot (2026-04-27 01:05:25 UTC)
+   - Database state unchanged (market closed Sunday when BUY placed)
+   - Gate 1 pace INDETERMINATE — structural concern: daily-bar strategy achieved 1 trade in 180-day backtest; achieving 30 trades/month aggressive
+   - Next checkpoints: 2026-04-28 (first market session), 2026-05-12 (Day 16 feasibility review), 2026-05-26 (30-day baseline)
+   - Status: Monitoring on track, waiting for Monday market open
 
 **Completed (Session 489)**:
 1. ✅ **Strategy Cleanup** — COMPLETE (commit ac6d574):
