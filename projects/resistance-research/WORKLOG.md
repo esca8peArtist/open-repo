@@ -2,6 +2,53 @@
 
 ---
 
+## April 27, 2026 (Session 538) — Phase 2 Domain Expansion Verification and Content Audit
+
+**Session type**: Phase 2 completion verification, cross-reference integrity check, FISA 702 outcome tracking
+**Files created**:
+- `projects/resistance-research/domains/APRIL_2026_UPDATES_SESSION_538.md` — Metadata file documenting verification status of all Phase 2 work items
+
+### What Was Done
+
+**Phase 2 domain verification pass**: Confirmed all three new domains (27, 28, 29) and all content maintenance updates are complete and production-ready. All work was done across Sessions 505–530.
+
+**Domain 27 (Higher Education and Academic Freedom)** — Verified complete (~5,700 words, 32 sources). Four-track assault documented: funding leverage (Harvard First Circuit appeal brief filed April 16, 2026 confirmed), DEI preemptive compliance, visa revocations (Khalil/Oztürk/Mahdawi/Khan Suri), administrative control demands (accreditation weaponization rulemaking). Academic Freedom Index 2026 (1.7 institutional autonomy score), brain drain data (ERC applications tripled), Hungary model comparator, Canadian Tri-Agency reform model.
+
+**Domain 29 (Prosecutorial Weaponization and DOJ Capture)** — Verified complete (~7,200 words, 38 sources). SPLC indictment landmark case; 22-case retaliatory pattern; Nashville/Crenshaw vindictive prosecution finding; post-Watergate accountability dismantling; May Day 2026 practical guidance; reform pathways.
+
+**Domain 28 (War Powers Venezuela)** — Verified complete (~5,600 words, 35 sources). Operation Absolute Resolve full documentation; OLC memo analysis; Senate/House vote records; $4.7B fiscal scope; Iran as companion case (two-flanks synthesis); four Venezuela-specific reform proposals.
+
+**Content maintenance updates** — All verified complete (Sessions 523, 529, 530):
+- Domain 1: SAVE Act 48-50 failure (4 GOP defectors as coalition-fracture proof-of-concept)
+- Domain 6: Trump v. Wilcox shadow-docket Humphrey's Executor functional overruling
+- Domain 35: Post-Slaughter OT2026 independent agency pipeline; immunity litigation closure
+- Domain 19f: Iran war State Department legal memo (April 21); Post-May 1 constitutional phase
+- Domain 28: Iran cross-reference and two-flanks synthesis
+- Domain 33: 100+ bills in 15+ states (2026 sessions); Missouri Amendment 4 retroactive analysis; Virginia redistricting post-approval nullification
+
+**FISA 702 outcome tracking** — 10-day stopgap (through April 30) documented; Foreign Intelligence Accountability Act (3-year, Johnson, April 24) documented as pending. Post-April 30 outcome not yet available as of this session (April 27). Next session must check May 1+ reporting and update surveillance-tracking.md.
+
+**Research conducted**: WebSearch for FISA 702 April 30 outcome status; Harvard First Circuit appeal brief; SAVE Act Senate vote confirmation; Trump v. Wilcox NLRB/Humphrey's Executor confirmation; state ballot initiative 2026 data.
+
+### Files Verified Production-Ready
+
+- `domains/domain-27-higher-education-and-academic-freedom.md` — 346 lines, 32 sources
+- `domains/domain-28-war-powers-venezuela-military-unilateralism.md` — 375 lines, 35 sources
+- `domains/domain-29-prosecutorial-weaponization-and-doj-capture.md` — 458 lines, 38 sources
+- `domains/domain-01-voting-rights-elections.md` — 16 sources
+- `domains/domain-06-judicial-independence.md` — 18 sources
+- `domains/domain-19f-war-powers-reform.md` — ~25 cumulative sources
+- `domains/domain-33-state-legislative-autocratization.md` — 42 sources
+- `domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md` — ~30 sources
+
+### Items Queued for Next Session
+
+- FISA 702 April 30 outcome — update surveillance-tracking.md when May 1+ reporting available
+- Consent decree defiance tracker refresh (Seventh Circuit Castañon Nava pending ruling)
+- Flock Safety LPR contract changes (lower priority, surveillance-tracking.md)
+
+---
+
 ## April 27, 2026 (Session 531) — Phase 3 Candidate 1: Real-Time Crisis Monitoring Infrastructure
 
 **Session type**: Phase 3 structural deepening — monitoring infrastructure

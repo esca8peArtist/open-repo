@@ -7,7 +7,7 @@
 
 ## Overall Project Status
 
-**Phase**: Phase 2 preparation research complete (Session 535). 35-domain framework production-ready. Phase 2 expansion roadmap written (`phase-2-expansion-roadmap.md`). Distribution awaiting user Path A/B/Hybrid decision.
+**Phase**: Phase 2 domain expansion COMPLETE (Session 538 verification). 38-domain framework production-ready (Domains 27, 28, 29 added; Domains 1, 6 created as standalone files; Domains 19f, 33, 35 updated). Distribution awaiting user Path A/B/Hybrid decision. Session 538 audit: all Phase 2 work items verified complete; FISA 702 April 30 outcome tracking queued.
 
 **35-Domain Diagnostic Framework**: COMPLETE AND PRODUCTION-READY. All 35 domains + 6 April 2026 updates documented. Distribution templates cover all distribution channels. Session 535 added: phase-2-expansion-roadmap.md (1,900 words), Domain 33 Section 1.3a (6-state simultaneous action map, ~1,300 words, 10 new sources), surveillance-tracking.md FISA post-deadline checklist.
 
@@ -98,6 +98,10 @@ Completed: Session 507 (April 27, 2026). Updates made: (1) SPLC indictment — n
 **[QUEUED] Consent decree defiance tracker refresh**
 
 Update: Seventh Circuit Castañon Nava pending ruling status; date stamp; note that EPA environmental consent decree question (whether existing cleanup decrees are being terminated, not just new ones refused) remains an open research thread from Section 4.
+
+**[QUEUED] FISA Section 702 post-April 30 outcome tracking**
+
+10-day stopgap (through April 30) documented in surveillance-tracking.md. Foreign Intelligence Accountability Act (3-year, Johnson, April 24) documented as pending but not voted on as of Session 538 (April 27). Next session: check May 1+ reporting, determine whether Section 702 lapsed (EO 12333 shift + tech company lawsuits) or passed (Foreign Intelligence Accountability Act terms), update surveillance-tracking.md.
 
 ---
 
