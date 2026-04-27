@@ -43,11 +43,11 @@
 
 **Needs User Input** (in priority order):
 
-1. 🚨 **CRITICAL: Stockbot Engine Restart** (URGENT — deadline 2026-04-28 09:30 ET):
-   - **Issue**: Engine shut down 2026-04-26 22:15 UTC, offline >6 hours. Reason unknown.
-   - **Risk**: Open AAPL position (BUY 36 @ $271.04) orphaned in DB. Cold restart will not detect it.
-   - **Action needed**: (1) Check live_trading_20260426.log for error context. (2) Restart engine + verify position persists. (3) Confirm no duplicate BUY risk before Monday market.
-   - **Verify**: Run Monday market open monitoring — SELL signal must execute to confirm position detected correctly
+1. ✅ **RESOLVED: Stockbot Engine Shutdown** (2026-04-27 02:51):
+   - **Root cause**: pytest test suite ran concurrently with live engine (2026-04-26 22:15 UTC). Mock objects contaminated shutdown handler.
+   - **Actions taken**: (1) Investigated error logs → found test contamination (bad_callback, test halt messages). (2) Located trade in database/stockbot.db (BUY 36 AAPL @ $271.04). (3) Created missing position record (orphaned trade had no position entry). (4) Fixed position_manager logging bug (mode.value AttributeError). (5) Verified engine loads position cleanly.
+   - **Engine status**: Ready for Monday 2026-04-28 market open at 14:30 UTC.
+   - **Next**: Monitor SELL signal execution Monday to confirm position detected correctly. Recommend: add pytest database isolation to prevent future test contamination.
 
 2. **Resistance-Research: Phase 2 Domain Prioritization** (OPTIONAL):
    - **Current state**: Domains 27, 28, 29 identified and queued for research

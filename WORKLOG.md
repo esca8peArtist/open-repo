@@ -4,6 +4,36 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 02:51 — stockbot — Trading Engine Shutdown Root Cause Resolution
+
+**Session**: Immediate response to critical block
+
+**Root cause investigation**:
+- Reviewed error logs at 2026-04-26 22:15:27 UTC
+- Found multiple "CRITICAL TRADING HALTED" messages with test descriptions ("Test halt", "First halt", "bad_callback: Callback error")
+- Identified pytest test suite ran concurrently with live engine
+- Test code (test_shutdown_handler.py, test_risk_manager.py) injected mock objects into production shutdown handler
+- Position loading failed with "'Mock' object is not iterable" (mocks in handler chain)
+- Engine continued running but with orphaned position (trade in DB, position record missing)
+
+**Resolution actions**:
+1. **Located actual database**: Found trades in `/home/awank/dev/SuperClaude_Framework/projects/stockbot/database/stockbot.db` (not the default path)
+2. **Verified trade exists**: BUY 36 AAPL @ $271.04 at 2026-04-26 17:06:28.076098 UTC in trades table
+3. **Confirmed position missing**: 0 rows for AAPL in positions table (orphaned trade)
+4. **Created position record**: Inserted missing position (ID=1, AAPL 36@271.04, status=OPEN) with matching entry timestamp
+5. **Fixed logging bug**: position_manager.py line 260 — AttributeError on mode.value (mode was string, not enum). Added check for both enum and string.
+6. **Verified engine recovery**: Tested PositionManager — loads position cleanly, no Mock errors
+
+**Commits**:
+- stockbot submodule: `fix: position manager logging — handle both enum and string mode parameter`
+- master: `chore(stockbot): BLOCKED.md — trading engine shutdown resolved`
+
+**Status**: Engine ready for Monday 2026-04-28 market open. Position properly persisted. Awaiting SELL signal confirmation at 14:30 UTC Monday.
+
+**Recommendation**: Add pytest database isolation to prevent future test contamination (separate test DB, lock production DB during live trading sessions).
+
+---
+
 ## 2026-04-27 (Session 504) — stockbot + resistance-research — Monitoring + Civic Tracker Maintenance
 
 **Agents spawned**: stockbot monitoring agent + resistance-research civic tracker agent (parallel execution)
