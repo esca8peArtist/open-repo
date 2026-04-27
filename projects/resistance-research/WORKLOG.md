@@ -2,6 +2,56 @@
 
 ---
 
+## April 27, 2026 (Session 530) — Domain Updates: April 2026 Content Currency Batch (19f, 33, surveillance-tracking)
+
+**Session type**: Queued domain content updates from PROJECTS.md Exploration Queue
+**Files updated**:
+- `projects/resistance-research/domains/domain-19f-war-powers-reform.md`
+- `projects/resistance-research/domains/domain-33-state-legislative-autocratization.md`
+- `projects/resistance-research/surveillance-tracking.md`
+
+### What Was Done
+
+**Domain 19f (War Powers Reform)** — New subsection added under "The Immediate Crisis: May 1, 2026" (~850 words):
+
+State Department "Operation Epic Fury and International Law" memo (April 21, 2026) documented in full:
+- Reed Rubinstein's two-part argument: collective self-defense of Israel (Article 51 UN Charter) + ongoing conflict theory (war allegedly began June 2025, not February 2026)
+- Quiet publication on State Department website without press conference — paper-record-building without inviting sustained scrutiny
+- Identification of four specific legal weaknesses per Just Security's Finucane analysis: (1) no predicate armed attack on the U.S.; (2) the "ongoing conflict" theory creates a *prior* war powers violation (August 2025); (3) necessity absent (diplomatic back-channels open February 6, three weeks before strikes); (4) "at the request of Israel" disclosure confirming what critics alleged
+- Ceasefire clock-reset theory identified as textually problematic: ceasefire simultaneously violated and maintained through naval blockade, Touska seizure, mine-destruction orders
+- Senator Curtis (R-UT) defection-position documented: "will not support ongoing military action beyond a 60-day window without congressional authorization" — framing the Resolution as a legal requirement, not a political preference
+- 7 new sources added
+
+**Surveillance Tracking** — Section 702 section fully expanded (~850 words replacing ~350 words):
+- Three failed reauthorization attempts documented: 5-year clean extension (blocked April 17, 20 Republican defectors + Democrats), 18-month Trump-preferred extension (same day failure), 10-day stop-gap (only vehicle achieving consensus)
+- Foreign Intelligence Accountability Act (3-year proposal) analyzed using Just Security's "Fool's Gold" framework: attorney-level approval addresses front-end targeting (already prohibited), not back-end queries of Americans' communications (actual problem); 18 years of FBI "compliance whackamole" not addressable by additional internal review layers
+- Trump's SAVE Act signature condition documented as cross-cutting vote-counting complication
+- Lapse analysis added: what would and would not happen — technology company legal challenge window identified; shift to less legally constrained EO 12333 authorities identified
+- Critical structural gap: data broker loophole closes under zero current proposals — the commercial location data purchase pathway used by ICE/DHS exists entirely outside Section 702 framework and unaffected by any pending reauthorization
+- 14 new sources added (net addition: 10 new unique sources)
+
+**Domain 33 (State Legislative Autocratization)** — New Section 1.6 added (~900 words):
+- Missouri Amendment 4 retroactive analysis: Ballotpedia's finding that every citizen-initiated constitutional amendment since 2020 would have failed (Medicaid expansion 2020, marijuana legalization 2022, sports wagering 2024, abortion rights 2024) — all failed District 7 majority threshold; analytically decisive quantitative proof of the mechanism's intent
+- Missouri Amendment 4 uniqueness documented: no state in the country currently has a congressional-district voter-approval requirement
+- Respect Missouri Voters counter-campaign documented: coalition (Missouri NAACP, NOW, Veterans for All Voters), 170,000-signature deadline in May, dual-amendment 2026 ballot confrontation analysis
+- Virginia redistricting post-approval nullification (April 22): Tazewell County Judge Hurley permanent injunction issued day after 50.7-49.3% voter approval; mechanism analysis — judicial nullification added as third type in post-approval nullification taxonomy (joining legislative reversal and administrative rulemaking)
+- Redistricting arms race asymmetry documented: Republican mid-decade gerrymanders operating (SCOTUS 6-3 stay of Texas federal panel ruling), Democratic counter-gerrymanders judicially blocked — partisan asymmetry in judicial outcomes
+- 12 new sources added
+
+### Domains NOT Updated (Why)
+
+**Domain 21 (Surveillance/Privacy) and Domain 25 (Gun Rights)**: These domains do not appear as separate files in `projects/resistance-research/domains/`. Domain 21's FISA 702 content is housed in surveillance-tracking.md (updated this session). Domain 25's cross-reference to Domain 21 cannot be found in the domain directory — may be embedded in the main proposal document. The primary FISA 702 coverage is now current in surveillance-tracking.md.
+
+**Iran war post-May 1 outcome**: May 1 deadline has not yet passed as of this writing (April 27). The new State Department legal memo subsection documents the pre-deadline legal offensive — the most significant new development available. Post-deadline outcome will require a separate session after May 1.
+
+### Research Method
+
+WebSearch used for: FISA 702 April 30 deadline status; Iran war State Department legal memo; Missouri Amendment 4 retroactive ballot initiative analysis; Virginia redistricting court injunction; Respect Missouri Voters campaign.
+WebFetch used for: Lawfare FISA reauthorization article (confirmed 2024, not 2026); Just Security Operation Epic Fury memo analysis; Democracy Docket Virginia court blocking reports.
+Cross-checked all additions against existing content to avoid duplication.
+
+---
+
 ## April 27, 2026 (Session 523) — Domain Updates: Priority Batch (19f, 29, 33, 35, Domain 6)
 
 **Session type**: Domain content updates per PROJECTS.md Exploration Queue

@@ -3,7 +3,7 @@ title: "Surveillance Tracking — ICE/DHS Technology, Data Brokers, and Legal St
 date: 2026-04-26
 project: resistance-research
 type: surveillance-tracker
-last_updated: 2026-04-26
+last_updated: 2026-04-27
 ---
 
 # Surveillance Tracking
@@ -14,37 +14,66 @@ last_updated: 2026-04-26
 
 ## CRITICAL: Section 702 Expiration — April 30, 2026
 
-**This is the most time-sensitive surveillance development in the queue.**
+**This is the most time-sensitive surveillance development in the queue. Updated April 27, 2026 — deadline 3 days away.**
 
-Section 702 of the Foreign Intelligence Surveillance Act — the NSA's primary legal authority to conduct warrantless surveillance of foreign targets while collecting communications of U.S. persons — is set to expire April 30, 2026.
+Section 702 of the Foreign Intelligence Surveillance Act — the NSA's primary legal authority to conduct warrantless surveillance of foreign targets while collecting communications of U.S. persons — expires April 30, 2026.
 
-**What happened**: The 5-year reauthorization that House Speaker Johnson sought failed April 17 when 20 dissenting Republicans joined most Democrats to block the bill. An 18-month extension Trump demanded was also rejected. Congress passed a 10-day stop-gap to April 30, which is now the hard deadline.
+### The Road to the Deadline: Three Failed Attempts
 
-**Current congressional posture (as of April 25-26)**:
-- The House Rules Committee approved a closed rule on a new bill — the Foreign Intelligence Accountability Act — blocking a floor amendment to add a warrant requirement
-- The proposal offers a 3-year reauthorization with reforms including monthly Civil Liberties Protection Officer reviews and attorney-level approvals for U.S. person queries — but no warrant requirement
-- Freedom Caucus members and civil libertarians from both parties are pushing for a warrant requirement as the price of reauthorization
-- Trump has additionally complicated passage by conditioning his signature on attaching the SAVE Act (voter ID legislation) to the FISA bill
+The 2026 reauthorization fight has produced three sequential congressional failures in ten days, each failure exposing a different fault line in the coalition for surveillance authority.
 
-**If Section 702 lapses**:
-- NSA loses real-time authority to collect foreign-targeted communications that transit U.S. systems
-- FBI loses authority to query the 702 database for U.S. persons without a warrant
-- Existing collected data does not disappear — analysis of previously collected data continues; only new collection authority lapses
-- Historical pattern: Congress has always reauthorized surveillance authorities; a lapse of more than a few days would be unprecedented
+**Attempt 1 — Five-year clean reauthorization (April 17)**: Speaker Johnson's primary proposal — a five-year renewal with minimal reforms — failed when 20 House Republicans joined most Democrats. The Republican defectors were a cross-ideological coalition: Freedom Caucus members (opposing on civil liberties/FISA-was-used-against-Trump grounds) and moderates seeking cover on an issue they had promised constituents to reform. Trump's simultaneous demand for an 18-month clean extension was also rejected.
 
-**Civil liberties implications of the reform debate**:
-The 50-member House Democrat letter (April 14) identified the critical loophole: intelligence agencies are currently permitted to purchase location data from commercial data brokers without a warrant, even when a warrant would be required to compel the same data directly. Closing this loophole would directly affect ICE and DHS operations since both agencies route location surveillance through commercial data broker relationships (Venntel/Babel Street, Accurint) specifically to avoid the warrant requirement.
+**Attempt 2 — 18-month Trump-preferred extension (April 17)**: Failed the same day. The 18-month proposal attracted no additional Democratic votes and insufficient Republican votes to overcome the bipartisan civil liberties bloc.
 
-**What to watch April 26-30**: Congressional floor vote timing; whether the SAVE Act attachment demand is dropped; whether a warrant-lite compromise (requiring attorney approval but not a judicial warrant for U.S. person queries) can hold together a majority.
+**Attempt 3 — 10-day stop-gap (April 17-18)**: Congress passed a 10-day extension through April 30 by unanimous consent in the House and voice vote in the Senate — the only vehicle everyone could agree on. Trump signed it. The April 30 deadline is the hard stop; no further extensions are procedurally available under the terms of the stop-gap.
+
+**Attempt 4 — Foreign Intelligence Accountability Act (April 24-27 status)**: Speaker Johnson's revised proposal for a 3-year reauthorization. The House Rules Committee approved a closed rule blocking a floor amendment to add a warrant requirement. The bill includes: monthly Civil Liberties Protection Officer reviews; attorney-level approval requirements for U.S. person queries; expanded GAO audit authority; strengthened criminal liability for FBI employees. It does not include: a warrant requirement for U.S. person queries; restrictions on commercial data broker purchases; geographic limitations on collection.
+
+Just Security analyzed this proposal under the headline "Fool's Gold": the attorney-level approval requirement is procedurally similar to what FBI already required internally after prior compliance failures; the warrant language in the bill addresses front-end targeting (already prohibited) rather than back-end searches of Americans' communications incidentally collected (the actual civil liberties problem). The 18 years of "compliance whackamole" (Julian Sanchez's framing) — FBI systematically under-counting violations, classifying obvious abuses as unintentional — is not addressed by adding more internal review layers.
+
+**Trump's SAVE Act demand**: As of April 26, Trump has conditioned his signature on attaching the SAVE Act (proof-of-citizenship voter ID legislation) to the FISA bill. This condition has complicated vote-counting: Democrats who might accept the surveillance authority extension terms are unwilling to provide votes that would also pass SAVE Act provisions. Republicans who support FISA reauthorization do not uniformly support the SAVE Act attachment as a political vehicle. The SAVE Act attachment appears to be a bargaining position, but its persistence as of April 27 creates genuine risk of lapse.
+
+### What a Lapse Would and Would Not Do
+
+**Would do**: NSA loses prospective authority to collect foreign-targeted communications that transit U.S. systems. FBI loses prospective authority to query the 702 database for U.S. persons without a warrant. Technology companies that are currently compelled to assist NSA collection can challenge that compulsion in court once the statutory authority expires — and unlike previous lapse moments, there is active litigation from civil liberties organizations that could immediately convert a lapse into a legal challenge against resumed collection.
+
+**Would not do**: Existing collected data does not disappear — analysis of previously collected data continues. The NSA retains other collection authorities (Executive Order 12333 for collection entirely outside U.S. systems; Title I FISA for targeted surveillance with court orders). The intelligence gap from a lapse, while real, would not eliminate NSA collection; it would create legal vulnerability for the specific 702 program and shift collection toward less legally constrained authorities.
+
+**Historical pattern**: Congress has never allowed a major surveillance authority to lapse for more than a few days. The closest precedent is the 2024 lapse of roughly hours before RISAA passed. Intelligence community officials publicly argue that even a brief lapse creates operational risk — partner services that share intelligence under classified agreements may reduce sharing during periods of legal uncertainty about U.S. surveillance authority.
+
+### The Civil Liberties Accountability Gap That No Proposal Closes
+
+The 50-member House Democrat letter (April 14) identified a structural gap that no current proposal addresses: intelligence agencies are currently permitted to purchase location data from commercial data brokers without a warrant, even when a warrant would be required to compel the same data directly. This commercial data purchase pathway is how ICE and DHS route location surveillance through Venntel/Babel Street/Accurint relationships — specifically structured to avoid the warrant requirement that direct government collection would trigger.
+
+The Foreign Intelligence Accountability Act does not close this loophole. Neither does the failed 5-year proposal. The civil liberties coalition's warrant requirement demand would have addressed front-end collection — but the commercial data purchase pathway exists entirely outside the Section 702 framework and would require separate legislation (the Fourth Amendment Is Not For Sale Act, which has not advanced).
+
+**Cross-domain implication**: If Section 702 is reauthorized without closing the commercial data purchase loophole, the FISA debate will have produced a 3-year extension of warrantless surveillance authority while leaving intact the primary mechanism through which immigration enforcement accesses location data without court oversight. The surveillance apparatus documented in this tracker's Parts 1-3 (Palantir, Accurint, Clearview, ad tech RFI) operates largely outside the Section 702 framework and is unaffected by any of the pending reauthorization proposals.
+
+### What to Monitor (April 27-30)
+
+- Whether the SAVE Act attachment demand is dropped as a condition for Trump's signature
+- Whether Freedom Caucus members accept the attorney-level approval compromise as a warrant substitute
+- Whether a bipartisan civil liberties bloc (Freedom Caucus + progressive Democrats) can hold together long enough to force a genuine warrant requirement
+- Any further amendments or substitute proposals introduced on the House floor
+- Senate Majority Leader Thune's vote-counting and timeline for Senate action if House passes the FISA bill
+- Whether a lapse occurs and what legal challenges are filed in response
 
 Sources:
 - [EFF — Keep Pushing: We Get 10 More Days to Reform Section 702](https://www.eff.org/deeplinks/2026/04/keep-pushing-we-get-10-more-days-reform-section-702)
 - [NPR — Congress extends controversial surveillance powers for 10 days](https://www.npr.org/2026/04/17/nx-s1-5788573/house-extends-surveillance-powers-for-10-days)
+- [NPR — After 2 failed votes, Mike Johnson unveils new plan to extend key U.S. spy powers](https://www.npr.org/2026/04/24/nx-s1-5797964/after-2-failed-votes-mike-johnson-unveils-new-plan-to-extend-key-u-s-spy-powers)
 - [Nextgov/FCW — House readies vote to renew FISA 702 without a warrant amendment](https://www.nextgov.com/policy/2026/04/house-readies-vote-renew-fisa-702-without-warrant-amendment/412856/)
+- [Nextgov/FCW — House passes 10-day FISA extension after prospects of long-term deal collapse](https://www.nextgov.com/policy/2026/04/house-passes-10-day-fisa-extension-after-prospects-long-term-deal-collapse/412933/)
+- [Just Security — Fool's Gold: Speaker Johnson's Section 702 proposal would place no limits on backdoor searches](https://www.justsecurity.org/137206/johnson-section-702-warrant/)
+- [The Hill — GOP rebels block leaders' last-minute FISA Section 702 spy powers deal](https://thehill.com/homenews/house/5835879-fisa-702-spy-powers-vote/)
+- [CNN — Republicans buck Trump to reject 18-month FISA extension](https://www.cnn.com/2026/04/17/politics/house-fisa-foreign-surveillance)
 - [Reason — Congress still has a chance to curb Section 702 surveillance abuses](https://reason.com/2026/04/24/congress-still-has-a-chance-to-curb-section-702-surveillance-abuses/)
 - [GovPing — FISA 702 Reauthorization Stalls in Congress](https://changeflow.com/govping/data-privacy-cybersecurity/fisa-702-reauthorization-stalls-in-congress-2026-04-25)
 - [Brookings — A key intelligence law expires in April](https://www.brookings.edu/articles/a-key-intelligence-law-expires-in-april-and-the-path-for-reauthorization-is-unclear/)
-- [Penn CERL — FISA Section 702 lives on, now let the 2026 debate begin](https://www.penncerl.org/the-rule-of-law-post/after-a-bruising-battle-fisa-section-702-lives-on-now-let-the-2026-section-702-reauthorization-debate-begin/)
+- [Brennan Center — Section 702 FISA 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page)
+- [CNBC — Three things to know about FISA Section 702](https://www.cnbc.com/2026/04/17/section-702-fisa-congress-surveillance.html)
+- [State of Surveillance — FISA 702: 9 Days, Ex-Spy Chiefs Beg Congress](https://stateofsurveillance.org/news/fisa-702-9-days-ex-spy-chiefs-fisc-renewal-countdown-april-2026/)
 
 ---
 
