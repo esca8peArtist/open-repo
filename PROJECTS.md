@@ -803,19 +803,28 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Value**: Production-ready for post-test-print execution. Informs printer selection, supplier contracts, operational workflow design.
   - **Status**: ✅ COMPLETE, committed to master (Session 549)
 
-- **resistance-research: Democratic Crisis Response Playbooks** (Priority 4 — NEW, QUEUED)
-  - **Scope**: Design step-by-step operational playbooks for how institutions (legislatures, AGs, advocacy coalitions, academic research centers) should respond to specific democratic crises using the 35-domain framework. Crisis scenarios: (1) Election interference (federal or state-level), (2) Judicial capture (confirmed hostile appointment), (3) Executive overreach (emergency EO, removal power abuse), (4) Civil service targeting (Schedule F-equivalent purge), (5) Prosecutorial weaponization (targeted investigations of political opponents)
-  - **Goal**: Actionable playbooks that translate framework recommendations into concrete 72-hour, 30-day, and 90-day response sequences. Each playbook includes: decision trees (who should do what), resource requirements (legal, communications, logistics), success metrics, coordination with other institutions
-  - **Expected output**: `crisis-response-playbooks.md` (4,000-5,000 words) + 5 sector-specific playbooks (legislative, AG, advocacy, academic, civil service defense) as companion files
-  - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED (active, starting Session 549)
+- ✅ **resistance-research: Democratic Crisis Response Playbooks** (COMPLETE — Session 549)
+  - **Deliverables**: `crisis-response-playbooks.md` (~4,800 words) + 5 sector guides (~1,000-1,200 words each, ~9,000 words total)
+  - **Scope**: Five crisis scenarios with 72-hour / 30-day / 90-day sequencing, specific actors (with phone numbers), success metrics, failure modes, cross-playbook coordination matrix
+  - **Crisis scenarios**: (1) Election interference (federal or state-level), (2) Judicial capture, (3) Executive overreach (emergency EO), (4) Civil service targeting (Schedule F-equivalent purge), (5) Prosecutorial weaponization
+  - **Key design**: Specific institutions (not generic), specific decision-makers (not generic leadership), specific success metrics (not vague outcomes). Failure modes section for each scenario addressing administration counter-tactics.
+  - **Value**: Bridges 35-domain diagnostic framework to institutional execution. Ready for Phase 1 distribution activation.
+  - **Status**: ✅ COMPLETE, committed to master (commit 3c3cd30)
 
-- **cybersecurity-hardening: Supply chain targeting and organizational defense** (Priority 5 — NEW, QUEUED)
-  - **Scope**: Design comprehensive organizational defense playbook for institutions and media under targeted supply chain attacks. Builds on high-risk populations work (Session 543). Focus: (1) Detecting supply chain compromise (vendor risk assessment, SLSA framework), (2) Infrastructure targeting (DDos, BGP hijacking, DNS poisoning), (3) Insider threat detection, (4) Incident response workflows, (5) Post-breach organizational recovery
-  - **Goal**: Actionable playbook for NGOs, media outlets, civil rights orgs to defend against sophisticated state-level supply chain attacks
-  - **Expected output**: `organizational-defense-playbook.md` (3,000-4,000 words) + 2-3 sector-specific companion guides
-  - **Timeline**: 1-2 sessions
-  - **Status**: QUEUED
+- ✅ **cybersecurity-hardening: Supply chain targeting and organizational defense** (COMPLETE — Session 549)
+  - **Deliverable**: `organizational-defense-playbook.md` (~3,500 words, 5 sections)
+  - **Scope**: (1) Detecting supply chain compromise (SBOM auditing, SLSA framework), (2) Infrastructure targeting (DDoS / BGP / DNS with redundancy architecture), (3) Insider threat detection (UEBA, behavioral signals), (4) Incident response workflows (3-phase with decision trees), (5) Post-breach organizational recovery (90-day timeline)
+  - **Key finding**: Supply chain is primary attack surface (SolarWinds, MOVEit, 3CX cases). Extends high-risk-populations work to institutional infrastructure level.
+  - **Value**: Production-ready for organizational deployment. NGOs, media outlets, civil rights orgs can use playbook immediately.
+  - **Status**: ✅ COMPLETE, committed to master
+
+- ✅ **mfg-farm: CNC capabilities and economics research** (COMPLETE — Session 549)
+  - **Deliverables**: `cnc-capabilities-analysis.md` (~4,000 words) + `cnc-cost-comparison-matrix.csv` (25 rows, 4 sections)
+  - **Scope**: (1) Technical analysis (FDM vs CNC tolerances, component requirements), (2) Economics (equipment cost, labor throughput, material waste, break-even analysis), (3) Market (price premium potential, Etsy segment analysis), (4) Workflow integration (outsourced vs in-house)
+  - **Key finding**: **Do not purchase in-house CNC at 1K-10K units/month.** A fifth FDM printer has better ROI. Recommend testing outsourced CNC first ($1.5K-3.5K validation cost).
+  - **Economics verdict**: CNC break-even requires 180+ premium units/month; FDM market size at current volumes makes pure-FDM the right choice through 10K units/month
+  - **Value**: Informs post-test-print scaling roadmap. Clear recommendation: stay FDM-only.
+  - **Status**: ✅ COMPLETE, committed to master
 
 - **mfg-farm: CNC capabilities and economics research** (Priority 6 — NEW, QUEUED)
   - **Scope**: Research where and how CNC capabilities add value to ModRun product line. (1) Technical: which ModRun components benefit from CNC finishing? (2) Economics: CNC machine cost, training, material waste, per-unit cost impact vs. FDM-only, (3) Market: do higher-precision CNC variants command price premium? (4) Workflow: integration with FDM+CNC workflow, quality control, case studies of hybrid Etsy sellers
