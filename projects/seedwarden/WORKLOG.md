@@ -4,6 +4,43 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session: 2026-04-27 — Phase 3 Launch Preparation Framework (Option A)
+
+Three Phase 3 preparation documents created. Option A selected over Option B based on existing ready material: Phase 3 strategy doc complete, 30-day launch calendar complete, video scripts complete, product mockups all generated.
+
+### Files created
+
+**`projects/seedwarden/marketing/phase-3-content-calendar-template.md`**
+Reusable 30-day block framework extending the launch calendar into ongoing Phase 3 operations.
+- Content mix ratios by category (educational 35%, product feature 20%, values 15%, behind-the-scenes 15%, community 10%, relatable 5%)
+- Posting frequency per platform (TikTok 4–7/week, IG Reels 3–4/week + daily Stories, Pinterest 5–7 pins/week)
+- Seasonal content angles for May–July 2026 window (late spring planting prep, garden launch, companion planting payoff, peak preservation season)
+- Product-to-content-theme mapping for all 21 products with recommended platform per product
+- Repeating 30-day calendar skeleton (30 rows, all platforms, all categories)
+- Pre-built hashtag stacks by post type
+- Monthly tracking metrics table with action thresholds
+
+**`projects/seedwarden/marketing/phase-3-creator-brief.md`**
+1.5-page creator partnership brief for influencer outreach, ready to attach or adapt for DM/email.
+- Brand description written for external creator audience (not internal voice)
+- Audience fit criteria and why Seedwarden products convert for homesteading/gardening creators
+- 7 specific video angles with full descriptions (seed saving how-to, heirloom variety stories, container setup, hot sauce, seed-buying treadmill, container compatibility, planner walkthrough)
+- Three partnership structures: gift+affiliate (25% commission), flat fee+affiliate ($150–$300 + 15% commission), ongoing affiliate (25% indefinite)
+- FTC disclosure requirements, creative control terms, Etsy affiliate tracking note
+- Full 21-product reference table with price and best audience match per product
+- Outreach tracker template + priority target criteria
+
+**`projects/seedwarden/marketing/phase-3-platform-asset-specs.md`**
+Platform specification reference document.
+- TikTok: video dimensions, safe zones, caption limits, hashtag stack, export settings
+- Instagram: Reels (9:16), Carousels (1:1 and 4:5), Stories (9:16), static posts — dimensions, safe zones, hashtag strategy
+- Pinterest: standard pin (2:3), video pin, text overlay formula, three-variant-per-product approach, link-to-listing requirement
+- Etsy: shop banner (3360x840px, mobile crop zone), listing images (2400x2400px already generated), listing video spec
+- Cross-platform repurposing map (TikTok to IG Story to Pinterest pin to carousel)
+- Canva export cheatsheet (all assets, all platforms)
+
+---
+
 ## Session: 2026-04-27 — Phase 3 Social Media Growth Strategy Research
 
 Completed deep research document for Phase 3 (post-Phase 1 launch) social media and paid advertising strategy.
