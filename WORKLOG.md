@@ -4,6 +4,28 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 549 — mfg-farm: Manufacturing Automation Architecture (Exploration Queue)
+
+**Status**: COMPLETE — `projects/mfg-farm/manufacturing-automation-architecture.md` (4,800+ words, 5 sections + implementation sequence)
+
+**Deliverable**: Full manufacturing automation blueprint for ModRun post-test-print scaling from 1 to 5 printers.
+
+**Structure**:
+1. Manufacturing workflow automation — file pipeline (CAD→STL→slicer profile lock→plate batching→job library), queue management (SimplyPrint + Bambu Farm Manager stack), post-processing (zero post-processing target, auto-eject Phase 2 via 3DQue $129/printer kit), harvest cycle (30-second plate target)
+2. Quality control architecture — quantitative acceptance criteria (±0.5mm clip width, ±0.3mm depth, visual adhesion, surface finish standards), QC gate flowchart (Mermaid), calibration protocol (daily/weekly/monthly), defect rate targets (<2%) with margin cost table
+3. Fulfillment and logistics — order-to-fulfillment workflow (Craftybase sync → Pirate Ship batch label → USPS), batch consolidation logic (4 rules), packaging automation (Rollo thermal printer + Pirate Ship), 3PL transition thresholds (7,000 units/month)
+4. Multi-printer orchestration — material-based printer assignment (P1–P5 color roles), load balancing strategy (idle time elimination), failure decision tree (Mermaid), daily operating cycle schedule
+5. Cost model — parametric model across 5 variables; unit cost vs. batch size (1→14 clips/plate); unit cost vs. utilization (60–95%); unit cost vs. printer count (1–5); material cost sensitivity ($15→$9/kg); break-even at 122 units/month; margin optimization priority stack (8 ranked actions)
+
+**Key design decisions**:
+- Baseline COGS updated to $1.032/clip using bulk filament ($11.50/kg) vs. prior $1.15 retail baseline — reflects Phase 1 sourcing
+- Plate batching to 12 clips is the highest-leverage single action (6x throughput vs. 1 clip)
+- Labor becomes binding at Month 5–6; first hire covers packing (not printing), freeing operator for revenue activities
+- AutoFarm3D Door Opener ($129/printer) validated as the auto-eject solution for P1S; availability and shipping status needs confirmation before Phase 2 budget
+- Bundle mix shift (30% of sales → 3-pack) adds 5–8% margin with no production cost change
+
+**Evidence base**: Bambu Farm Manager wiki, SimplyPrint integration docs, 3DQue AutoFarm3D pricing (verified April 2026), Craftybase pricing, Pirate Ship commercial rates (post-8% USPS increase), Phasio FDM QC practices, Formlabs tolerance guide, prior sessions (multi-printer-architecture.md, phase-2-supplier-research.md)
+
 ## 2026-04-27 Session 547 — Exploration Queue Execution (3 Items Parallel)
 
 **Status**: ✅ **THREE PARALLEL EXPLORATION ITEMS COMPLETE** — resistance-research post-distribution measurement framework finalized; stockbot Gate 2+ optimization thesis delivered; seedwarden wholesale and affiliate strategy complete.
