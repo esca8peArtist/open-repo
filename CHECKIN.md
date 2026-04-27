@@ -4,7 +4,55 @@
 
 ---
 
-## Current Session (Session 529 — 2026-04-27 Late Afternoon — Parallel Expansion: stockbot Tickers + resistance-research April Content)
+## Current Session (Session 530 — 2026-04-27 Evening — Bug Fix + Domain Analysis Deepening)
+
+**Status**: ✅ **STOCKBOT FEATURE ENGINEERING BUG FIXED + RESISTANCE-RESEARCH APRIL DEVELOPMENTS DEEPLY ANALYZED**. Autonomous agents resolved critical data integrity issue (time-based column normalization) and deepened framework analysis with April 2026 developments: State Dept war powers memo, ballot initiative nullification proof, FISA reauthorization immunity.
+
+**What Accomplished**:
+
+✅ **stockbot: Feature Engineering Bug Fixed**
+- **Issue**: StandardScaler/MinMaxScaler incorrectly applied to time-based ordinal columns (day_of_week staying in [-1.496, ...] instead of [0, 6])
+- **Root cause**: Exclusion set in `_normalize_features()` didn't include `time_based_cols`
+- **Fix**: Extended exclusion set to preserve ordinal semantics
+- **Test results**: 5/5 time-based feature tests now pass (was 1 failure), 138/138 integration tests, zero regressions
+- **Impact**: Data integrity restored; 62-ticker portfolio ready for multi-ticker paper trading without corruption
+- **Commit**: `b6f6ba8`
+
+✅ **resistance-research: April 2026 Domain Analysis Deepening**
+- **3 files updated** with critical April 2026 evidence:
+  - **Domain 19f (War Powers)**: State Dept memo (April 21) analyzed — new section on "Pre-Deadline Legal Offensive" (850 words, 7 sources). Critical finding: Senator Curtis defection marks legal requirement precedent for post-May 1 enforcement.
+  - **Domain 33 (State Legislation)**: Ballot suppression deepened — Ballotpedia retroactive counterfactual proof (every post-2020 citizen amendment would fail under district-majority requirement). Virginia redistricting judicial nullification documented. 12 new sources.
+  - **surveillance-tracking.md**: FISA Section 702 rewritten (350→1,200 words). Critical structural finding: Commercial data broker loophole (ICE/DHS Venntel/Babel Street routing) exists entirely outside Section 702 — immune to any reauthorization outcome. 14 sources.
+- **Total**: 154 net lines, 33 new sources, 3,050+ words of substantive analysis
+- **Framework currency**: Improved with retroactive empirical proof (ballot suppression), pre-deadline admin response analysis (war powers), and structural immunity documentation (surveillance)
+- **Commit**: Made on master
+
+**Blockers**:
+- **mfg-farm test print**: Still active (user action required) — no change
+- No new blockers identified
+
+**What Needs Your Input**:
+1. **resistance-research distribution path** (URGENT for Phase 1 execution): 
+   - **Path A**: Distribute 35-domain framework now (maximizes timeliness)
+   - **Path A+Domain37 Hybrid** (RECOMMENDED): Begin general-audience distribution while sequencing Domain 37 (election interference) into distribution targeting election-protection orgs
+   - **Path B**: Continue optional updates before distribution (2-4 week extension)
+   - **Status**: Policy influencer map ready for any path choice. Framework now deepened with April developments.
+
+2. **stockbot engine restart** (CRITICAL — before 2026-04-28 09:30 ET Monday): 
+   - Command: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/`
+   - Current open position: BUY 36 AAPL @ $271.04
+   - Portfolio state: 62 tickers ready, feature engineering corrected, all tests passing
+
+**Project Status**:
+- **resistance-research**: ✅ 35 domains + April updates complete, ✅ framework analysis deepened with critical April evidence. 🚩 User distribution path decision required.
+- **stockbot**: ✅ 62-ticker portfolio complete, ✅ market regime detection deployed, ✅ feature engineering bug fixed. 🚩 User engine restart required Monday 09:30 ET.
+- **cybersecurity-hardening**: ✅ All distribution tiers complete. Awaiting user Tier 1 outreach execution.
+- **open-repo**: ✅ Phase 4 PR open, awaiting review/merge.
+- **All others**: Awaiting user actions.
+
+---
+
+## Previous Session (Session 529 — 2026-04-27 Late Afternoon — Parallel Expansion: stockbot Tickers + resistance-research April Content)
 
 **Status**: ✅ **MULTI-TICKER PORTFOLIO EXPANDED TO 62 + APRIL 2026 DOMAIN CURRENCY COMPLETE**. Parallel agents expanded stockbot paper trading capacity (52→62 tickers, ~20% Gate 1 pace improvement) and updated resistance-research framework content through April 2026 developments (5,720 new words, 41 total domain documents).
 
