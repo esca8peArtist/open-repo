@@ -1,10 +1,10 @@
 ---
 title: "Democratic Renewal: An Integrated Proposal for Structural Reform — Executive Summary"
 date: April 2026
-version: "1.0"
+version: "1.1"
 status: distribution-ready
-word_count: ~1400
-format: 2-page print-ready
+word_count: ~1750
+format: 2-page print-ready (expanded)
 citation: "Democratic Renewal Project, resistance-research.org, April 2026"
 license: "Creative Commons Attribution 4.0"
 ---
@@ -31,9 +31,9 @@ The Phase 3 comparative research adds a crucial caveat to the Poland success sto
 
 ---
 
-## The Twenty-Two Domains
+## The Twenty-Eight Domains
 
-The proposal presents specific, evidence-backed reforms across 22 policy domains. Every reform has been implemented or seriously attempted somewhere, has documented evidence of effectiveness, and has a plausible political pathway to U.S. adoption.
+The proposal presents specific, evidence-backed reforms across 28 policy domains. Every reform has been implemented or seriously attempted somewhere, has documented evidence of effectiveness, and has a plausible political pathway to U.S. adoption.
 
 | # | Domain | Fiscal Scope |
 |---|--------|-------------|
@@ -59,12 +59,15 @@ The proposal presents specific, evidence-backed reforms across 22 policy domains
 | 20 | **Economic Concentration and Antitrust** — Competition standard reform, tech platform structural separation, healthcare consolidation caps, worker codetermination | FTC/DOJ budget tripling ($1.6B increase) against $650B-1.3T/year in monopoly costs to median households |
 | 21 | **Data Privacy and Digital Surveillance** — Comprehensive federal privacy legislation, prohibition on warrantless data access, biometric surveillance regulation, Federal Data Protection Agency | $800M-1.2B/year; data broker industry extracts $200B+/year from American consumers without meaningful consent or compensation |
 | 22 | **Reparations and Racial Justice** — Federal reparations commission, $200B Community Reinvestment Fund, baby bonds, Voting Rights Act restoration, DOJ Civil Rights Division tripling | $96-126B/year; racial wealth gap costs $1-1.5T/year in lost GDP (Brookings); eliminating disparities would add 4-6% to U.S. GDP by 2028 (McKinsey) |
+| 27 | **Higher Education and Academic Freedom** — Statutory academic freedom protections, federal funding decoupling from ideological compliance, visa reform for speech-based revocations, accreditation independence | Research enterprise preservation ($108.8B in annual U.S. academic R&D, 55% federally funded); reversing brain drain costing next-generation scientific leadership; U.S. institutional autonomy score fell from 3.3 (2019) to 1.7 (2025) — fastest decline ever recorded in the Academic Freedom Index |
+| 28 | **War Powers, Venezuela Military Unilateralism** — Close the "law enforcement" loophole in the War Powers Resolution, statutory congressional standing to sue, mandatory pre-authorization for named operations, automatic OLC memo disclosure | Constitutional constraint on executive war-making; Operation Absolute Resolve (January 3, 2026) used 150+ aircraft, Delta Force troops, and regime change against Venezuela with no congressional authorization — the administration's "arrest operation" theory, if accepted, effectively nullifies the War Powers Resolution for any operation against an indicted foreign leader |
+| 29 | **Prosecutorial Weaponization and DOJ Capture** — Statutory special counsel independence, charging transparency requirements, IG restoration, McDade-Murtha Amendment defense, congressional oversight restoration | DOJ as instrument of political suppression — 22 documented retaliatory prosecutions since January 2025; SPLC indictment (April 21, 2026) deploys federal criminal apparatus against a civil rights monitoring organization; accountability infrastructure systematically dismantled including OPR director firing, 28% IG budget cut, 70% Civil Rights Division attorney departure |
 
 ---
 
 ## Fiscal Summary
 
-Total new federal investment across all 22 domains at full implementation is approximately **$650-1,000 billion per year** — a substantial figure that requires two essential pieces of context.
+Total new federal investment across all 28 domains at full implementation is approximately **$650-1,000 billion per year** (Domains 27-29 add primarily institutional design costs with large avoided-cost benefits) — a substantial figure that requires two essential pieces of context.
 
 First, the proposal contains its own funding mechanisms. Carbon tax at $100/ton generates $250-500B/year returned primarily as a $1,500/person citizen dividend. Defense reallocation provides $89B. Healthcare administrative savings redirect $500B+ within the existing $4.5T healthcare system. Simplified income taxation and offshore loophole closure add $380-610B/year. The revenue mechanisms within this proposal exceed its costs.
 
@@ -84,7 +87,7 @@ The window is open. The tools exist. The evidence base is extensive. The questio
 
 ---
 
-*This executive summary is drawn from the full proposal (22 domains) and the broader Resistance Research Archive: 160+ movement case studies, crisis analysis, litigation tracking, voting technology research, tax system analysis, governance models, ICE detention research, and Phase 3 international comparative research. Full proposal, supporting research, and source citations available at the links below.*
+*This executive summary is drawn from the full proposal (28 domains) and the broader Resistance Research Archive: 160+ movement case studies, crisis analysis, litigation tracking, voting technology research, tax system analysis, governance models, ICE detention research, and Phase 3 international comparative research. Full proposal, supporting research, and source citations available at the links below.*
 
 **Full proposal:** `democratic-renewal-proposal.md`
 **International models and recovery research:** `phase-3-research-roadmap.md`

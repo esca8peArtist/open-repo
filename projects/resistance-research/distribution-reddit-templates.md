@@ -5,6 +5,7 @@ status: ready-for-personalization
 phase: 3
 project: resistance-research
 series: distribution-templates
+domain_count: 28
 cross_references:
   - democratic-renewal-proposal.md
   - democratic-renewal-executive-summary.md
@@ -12,13 +13,16 @@ cross_references:
   - first-amendment-suppression.md
   - environmental-rollbacks-tracker.md
   - police-brutality-consent-decree-tracker.md
+  - domains/domain-27-higher-education-and-academic-freedom.md
+  - domains/domain-28-war-powers-venezuela.md
+  - domains/domain-29-prosecutorial-weaponization-and-doj-capture.md
   - DISTRIBUTION_GUIDE.md
 license: "Creative Commons Attribution 4.0"
 ---
 
 # Reddit Post Templates — Democratic Renewal
 
-*Five post drafts tailored to specific subreddit communities. Each is written to feel native to that subreddit — not cross-posted marketing. Read each community's rules before posting; subreddit norms change and some require source links in specific formats. Do not post these simultaneously or in close succession — space posts by at least several days. Respond substantively to comments.*
+*Eight post drafts tailored to specific subreddit communities. Each is written to feel native to that subreddit — not cross-posted marketing. Read each community's rules before posting; subreddit norms change and some require source links in specific formats. Do not post these simultaneously or in close succession — space posts by at least several days. Respond substantively to comments. Posts 6-8 cover Phase 2 domains (27-29) added in Session 509.*
 
 *Personalize bracketed fields. Add direct links to the relevant documents before posting.*
 
@@ -60,7 +64,7 @@ I'm not affiliated with any legal organization. This is independent research. Ha
 
 ## 2. r/politics
 
-**Headline**: A Comprehensive Proposal for Democratic Structural Reform — 22 Domains, Evidence-Based, International Precedents, 2026 Midterm Timeline
+**Headline**: A Comprehensive Proposal for Democratic Structural Reform — 28 Domains, Evidence-Based, International Precedents, 2026 Midterm Timeline
 
 **Suggested flair**: Analysis / Policy
 
@@ -70,7 +74,7 @@ I'm not affiliated with any legal organization. This is independent research. Ha
 
 ### Draft Post
 
-I've been working on a research project for the past several months — a 22-domain proposal for democratic structural reform, grounded in movement research, comparative political science, and the evidentiary record on what has actually worked in other countries. I'm sharing it here because the 2026 midterm timeline is the central constraint, and I think this community understands why.
+I've been working on a research project for the past several months — a 28-domain proposal for democratic structural reform, grounded in movement research, comparative political science, and the evidentiary record on what has actually worked in other countries. I'm sharing it here because the 2026 midterm timeline is the central constraint, and I think this community understands why.
 
 The core argument is not that the right people need to win. It's that the architecture of American democracy has design flaws — some dating to the 18th century, some to 20th-century court decisions, some to 21st-century technological shifts — that a determined minority has learned to exploit simultaneously. Fixing the people without fixing the architecture guarantees recurrence.
 
@@ -83,7 +87,7 @@ The core argument is not that the right people need to win. It's that the archit
 
 **What the proposal covers**:
 
-22 domains: Electoral reform, institutional integrity, democratic participation, digital government, fiscal reform, judicial independence, rights protection, media and information, federalism, education, healthcare, infrastructure, housing, criminal justice, environment and climate, immigration, labor, social safety net, national security, economic concentration, data privacy, reparations and racial justice.
+28 domains: Electoral reform, institutional integrity, democratic participation, digital government, fiscal reform, judicial independence, rights protection, media and information, federalism, education, healthcare, infrastructure, housing, criminal justice, environment and climate, immigration, labor, social safety net, national security, economic concentration, data privacy, reparations and racial justice, higher education and academic freedom, war powers and military unilateralism, prosecutorial weaponization and DOJ capture.
 
 Every reform meets three criteria: (1) it has been implemented or seriously attempted somewhere, (2) the evidence for its effectiveness is documented, and (3) there is a plausible political pathway to adoption in the U.S.
 
@@ -183,9 +187,9 @@ The key insight from the movement research (and from comparative political scien
 
 **The 22-domain proposal**
 
-The research produced a 22-domain framework. Every reform in it has been implemented or seriously attempted somewhere, has documented evidence of effectiveness, and has a plausible political pathway. The domains:
+The research produced a 28-domain framework. Every reform in it has been implemented or seriously attempted somewhere, has documented evidence of effectiveness, and has a plausible political pathway. The domains:
 
-Electoral reform — Institutional integrity — Democratic participation — Digital government — Fiscal reform — Judicial independence — Rights protection — Media and information — Federalism — Education — Healthcare — Infrastructure — Housing — Criminal justice — Environment and climate — Immigration — Labor — Social safety net — National security — Economic concentration — Data privacy — Reparations and racial justice
+Electoral reform — Institutional integrity — Democratic participation — Digital government — Fiscal reform — Judicial independence — Rights protection — Media and information — Federalism — Education — Healthcare — Infrastructure — Housing — Criminal justice — Environment and climate — Immigration — Labor — Social safety net — National security — Economic concentration — Data privacy — Reparations and racial justice — Higher education and academic freedom — War powers and military unilateralism — Prosecutorial weaponization and DOJ capture
 
 **Five things that could be done immediately** (no constitutional amendment required):
 
@@ -225,7 +229,7 @@ Happy to answer specific questions about any domain, the evidence base, or the t
 
 ### Draft Post
 
-I've spent several months synthesizing research from approximately 160 resistance and reform movements (1917–2024) alongside comparative constitutional analysis of what has and has not worked in countries facing similar democratic challenges. The result is a 22-domain reform framework for the United States. I'm sharing it here because I think this community will engage with the comparative evidence most substantively.
+I've spent several months synthesizing research from approximately 160 resistance and reform movements (1917–2024) alongside comparative constitutional analysis of what has and has not worked in countries facing similar democratic challenges. The result is a 28-domain reform framework for the United States. I'm sharing it here because I think this community will engage with the comparative evidence most substantively.
 
 **The comparative context**
 
@@ -264,5 +268,169 @@ The full proposal documents the international precedents for each reform, includ
 Full proposal and resistance meta-analysis: [link]
 Two-page executive summary: [link]
 CC 4.0 — share and adapt freely with attribution.
+
+---
+
+---
+
+## 6. r/AcademicFreedom or r/highereducation
+
+**Headline**: The Four-Track Assault on U.S. Universities — and What Structural Reform Looks Like (Domain 27, 28-Domain Democratic Renewal Framework)
+
+**Suggested flair**: Analysis / Policy / Academic Freedom
+
+**Pre-post note**: These communities are practitioner-heavy. Use precise documentation: funding figures, case names, Academic Freedom Index data. Avoid generic democratic framing — lead with the specific mechanisms affecting faculty and researchers. The Hungary comparison resonates here because it is explicit, documented, and endorsed by key administration actors — not an analogy but a stated model. Respond to comments from affected faculty with empathy and specificity.
+
+---
+
+### Draft Post
+
+The United States' institutional autonomy score for higher education fell from 3.3 in 2019 to 1.7 in 2025 — the largest single-year decline for any major democratic country in the Academic Freedom Index's history, steeper than what Hungary, India, or Turkey recorded during their most aggressive university targeting.
+
+I've been documenting this as part of a broader democratic renewal research project, and Domain 27 (Higher Education and Academic Freedom) is one of the most extensively documented sections. Sharing the key findings here because I think this community will have substantive feedback on what the research is missing.
+
+**The compound effect — four simultaneous tracks**
+
+What makes 2026 distinct from previous threats is not any single mechanism but all four operating simultaneously:
+
+*Funding leverage*: Harvard's $2.2B frozen after it rejected demands for "viewpoint diversity" audits of faculty and students. A federal judge found this unlawful — "antisemitism was a smokescreen for an ideologically motivated assault." The administration appealed. Columbia settled, agreeing to report its own international students' disciplinary actions to federal immigration authorities as a condition of operating federally funded research programs. That settlement is now the template being offered to other institutions as the alternative to litigation.
+
+*DEI preemptive compliance*: Courts blocked specific enforcement actions, but the Chronicle tracked changes at 450 campuses in 48 states. An Ivy League medical school administrator described running Control-F searches for prohibited words. Arizona's public universities dismantled DEI offerings and refused to disclose what changed. University of Virginia said its changes would remain even after the guidance was struck down in court. The self-censorship operates without a legal record of the impairment — the knowledge simply doesn't get produced.
+
+*Visa revocations*: More than 6,000 student visas revoked in 2025. Rümeysa Öztürk detained after co-authoring a student newspaper op-ed — the government acknowledged no evidence of terrorism. Mahmoud Khalil arrested during an ICE operation; courts found the "adverse foreign policy" deportation theory likely unconstitutional but haven't definitively resolved it. The chilling effect operates in the gap between the finding and the resolution. Every international student on every U.S. campus now knows that constitutionally protected speech can be made the basis for detention while the administration builds a legal justification.
+
+*Accreditation weaponization*: Negotiated rulemaking launched January 2026 to require accreditors to enforce DEI elimination and impose viewpoint diversity standards. The rulemaking committee meets April-May 2026. If rules are finalized by late 2026, accreditation — which currently protects institutional independence — becomes a political compliance mechanism. This is the most structurally significant track and the one with the fastest-closing window for intervention.
+
+**The Hungary model — not an analogy**
+
+This isn't a comparison. J.D. Vance explicitly stated Hungary was "the closest conservatives have ever gotten to dealing with left-wing domination of universities." The Heritage Foundation signed a cooperation agreement with a pro-Orbán think tank. Heritage's president called Modern Hungary "the model."
+
+What Orbán did: cut university funding ~40%, install government-appointed chancellors with financial control, transfer 70% of universities to politically controlled foundations by 2021, eliminate sociology/gender studies programs, force CEU to relocate to Vienna. The U.S. sequence is not yet complete — accreditation weaponization is still in rulemaking, governance conditions have been imposed by settlement rather than statute — but the roadmap is legible.
+
+**The brain drain is real and already accelerating**
+
+U.S. researchers' applications to European Research Council early-career grants nearly tripled in two years (60 in 2024 → 169 in 2026). The EU launched a €500M initiative specifically to recruit American scientific talent. One in 10 faculty in states restricting academic speech are actively seeking jobs out of state; 84.9% of Florida faculty would not recommend the state for academic careers.
+
+**What statutory reform looks like**
+
+Domain 27 identifies three specific legislative fixes: (1) a federal academic freedom statute prohibiting agencies from conditioning funding on viewpoint compliance, with fee-shifting to make each enforcement action costly for the government; (2) amendment of INA Section 237(a)(4)(C) to prohibit visa revocation based solely on protected political speech; (3) codification of accreditor independence from executive DEI preferences. The accreditation rulemaking timeline makes this the most urgent near-term action.
+
+I'm genuinely interested in feedback from faculty, researchers, and administrators on what Domain 27 gets wrong or is missing. The practitioner perspective is the most valuable gap in documentation built primarily from public records.
+
+Full Domain 27 analysis: [link] | Full 28-domain proposal: [link] | CC 4.0
+
+---
+
+---
+
+## 7. r/PoliticalAnalysis or r/democracyWorks
+
+**Headline**: Operation Absolute Resolve and the War Powers Resolution: How the Administration Advanced a Theory That Would Eliminate Congressional War Authority — Vote Counts, OLC Memo Analysis, Reform Pathways
+
+**Suggested flair**: Analysis / Constitutional Law / National Security
+
+**Pre-post note**: r/PoliticalAnalysis and r/democracyWorks value documented analysis over advocacy framing. Lead with the vote counts and the OLC memo contradictions — these are the most analytically significant elements and will generate substantive discussion. Avoid framing this as "Trump bad" — frame it as "this legal theory has implications beyond this president." The forward-reach analysis (what the theory permits against indicted foreign leaders in Iran, North Korea, Mexico) is the strongest hook for the analytical community.
+
+---
+
+### Draft Post
+
+I've been documenting the Venezuela war powers confrontation as part of a broader democratic reform research project, and I want to share the analysis here because I think this community will engage with the constitutional mechanics most substantively.
+
+**The lead finding**: The administration's "law enforcement arrest" theory for Operation Absolute Resolve — if accepted as binding constitutional doctrine — would effectively eliminate the War Powers Resolution for any military operation against a foreign leader or criminal organization that faces U.S. criminal indictment. The DEA has active indictments against leaders in Iran, North Korea, Lebanon, Russia, and Colombia. Under the administration's theory, military operations against those leaders could all be characterized as law enforcement, not war.
+
+**The operation: January 3, 2026**
+
+Over 150 military aircraft (F-22s, F-35s, B-1 bombers, carrier-based aircraft) and approximately 200 Delta Force operators conducted a regime-change operation in Caracas. Nicolás Maduro was captured. 23 Venezuelan security personnel and 32 Cuban military personnel were killed. Seven U.S. service members were wounded. The administration did not notify the Gang of Eight before the operation. The statutory 48-hour notification report was submitted four days after launch, one day beyond the deadline.
+
+The administration's legal position: this was a "law enforcement arrest operation" supported by military force, not a "war" requiring congressional authorization under the War Powers Resolution. The authority: a 1989 OLC memo by William Barr concluding the president has "inherent authority" to conduct extraterritorial law enforcement arrests. The claim: Maduro's federal drug trafficking indictment transforms 150+ aircraft and a regime-change bombardment of a foreign capital into law enforcement.
+
+**The OLC memo's internal contradictions**
+
+The administration released a classified OLC memo on January 13, 2026 — ten days after the operation. Just Security's analysis documents three contradictions:
+
+The memo applies the 2011 OLC two-part test for unilateral exercise of war powers, specifically because "U.S. forces will face significant resistance on the approach." A law enforcement operation would not require this analysis. The application of a war powers framework to what the memo calls "law enforcement" is a structural admission that the framing fails.
+
+The memo states the president "likely could conclude" the operation falls short of war — not that the OLC has concluded it. This delegates the constitutional determination to the president. If the president unilaterally decides his military operation is not war, the War Powers Resolution has no remaining content: the constraint becomes circular.
+
+The memo admits the administration "not assessed this threat as sufficient to justify a military attack" — the factual predicate for the legal theory is explicitly missing from the OLC's own document.
+
+**The vote counts**
+
+Senate: S.J.Res.90 advanced 52-47 (five Republicans: Paul, Collins, Murkowski, Young, Hawley). Administration lobbied furiously. Young reversed after receiving a "commitment" to "seek congressional authorizations in advance (circumstances permitting)" — the parenthetical making it legally void. Hawley reversed after assurances troops would not remain in Venezuela, despite wounded service members still receiving treatment. Final vote: 50-50, with VP Vance casting the tiebreaking vote. First VP tiebreaker to defeat a war powers resolution.
+
+House: H.Con.Res.64 failed 215-215. Speaker Johnson held a 2-minute vote open 20+ minutes for a missing Republican to arrive. Two Republicans (Massie, Bacon) crossed party lines.
+
+Congress came within one vote in each chamber of formally rejecting the administration's legal theory.
+
+**The forward reach of the theory**
+
+The limiting principle the administration articulated: Secretary Rubio argued the U.S. did not "occupy" Venezuela, so it was not an invasion. Under this standard, any rapid military operation against any foreign country is permissible without congressional authorization as long as U.S. forces are withdrawn after the mission. Any strike, any capture operation, any regime change — as long as forces don't remain in permanent occupation.
+
+Combined with the indictment theory: any operation against an indicted foreign official — and the DEA's indictment list is long — is law enforcement, not war. The War Powers Resolution has no work to do.
+
+**The reform gap Domain 19f doesn't address**
+
+The Iran-focused war powers reform analysis (AUMF modernization, automatic funding cutoffs, 60-day clock enforcement) does not close the Venezuela-specific loophole. Domain 28 identifies four additional fixes: a statutory definition of "hostilities" that forecloses executive recharacterization (any operation with combat, foreign casualties, or regime change objectives); congressional standing to sue with D.C. Circuit jurisdiction; mandatory pre-notification for named operations (the OLC memo was finalized ten days before launch — there was time); and automatic Gang of Eight disclosure of any OLC memo concluding a planned operation doesn't require authorization.
+
+Full Domain 28 analysis with vote records and OLC memo analysis: [link] | Full 28-domain proposal: [link] | CC 4.0
+
+---
+
+---
+
+## 8. r/law (Domain 29 addition)
+
+**Headline**: Vindictive Prosecution Doctrine and DOJ Capture: The Abrego Garcia Finding, the SPLC Indictment, and What Structural Reform Would Require
+
+**Suggested flair**: Constitutional Law / Legal Analysis
+
+**Pre-post note**: This is an r/law post — legal precision is required. Lead with the doctrinal analysis (vindictive prosecution doctrine, selective prosecution standards, the Blackledge/Pearce line, the Wayte standard). The SPLC indictment provides the example; the Abrego Garcia case provides the judicial validation. Avoid partisan framing. Frame as: the constitutional doctrine exists, the evidentiary record is being developed, and structural reform proposals target the enforcement gap that makes the doctrine difficult to apply.
+
+---
+
+### Draft Post
+
+Sharing Domain 29 (Prosecutorial Weaponization and DOJ Capture) from a 28-domain democratic reform research project, because I think this community will find the constitutional analysis — specifically the vindictive and selective prosecution doctrine discussion — the most substantive part.
+
+**The Abrego Garcia vindictive prosecution finding (M.D. Tenn., Oct. 2025)**
+
+The most judicially significant finding in the current period: U.S. District Judge Waverly Crenshaw found a "realistic likelihood of vindictive prosecution" in the Kilmar Abrego Garcia case (M.D. Tenn.) and ordered discovery. The sequence: Abrego Garcia filed suit in Maryland challenging wrongful deportation; federal courts ruled in his favor; Tennessee human smuggling charges were subsequently filed based on previously investigated, previously declined conduct; Acting AG Todd Blanche publicly linked the Maryland lawsuit to the investigation — a statement Judge Crenshaw cited as central to the vindictive prosecution analysis.
+
+A December 2025 sealed order (later unsealed) found that "a subset" of more than 3,000 government documents reviewed "appear to undercut the government's defense," and that "top officials in Washington worked with federal prosecutors in Nashville to prosecute Kilmar Abrego Garcia after he fought his wrongful deportation." This is a judicial finding — under the Blackledge/Pearce "realistic likelihood" standard — supported by internal documentary evidence.
+
+**The SPLC indictment: doctrinal issues for r/law**
+
+The April 21, 2026 indictment of the Southern Poverty Law Center (11 counts: wire fraud, bank fraud, money laundering conspiracy) has been analyzed by multiple former federal prosecutors. The doctrinal problems:
+
+*Wire fraud*: The omission theory requires showing the omitted information would have mattered to donors. Andrew Weissmann (former DOJ Fraud Section Chief, former FBI General Counsel) notes the organizational purpose — fighting extremism — makes paying informants to infiltrate extremist groups precisely what donors were funding. The actual charged wire fraud is $13,905 on a single day in 2023; the narrative describes millions over a decade. No quoted misstatements from fundraising materials. No identified donor claiming fraud.
+
+*Bank fraud*: The indictment repeatedly uses "false and misleading." Aaron Zelinsky (former federal prosecutor) identifies this as a Thompson v. United States problem: the Supreme Court held approximately 14 months before this indictment that 18 U.S.C. § 1014 covers "false" statements only, not "misleading" ones. The standard formulation in the indictment is excluded by recent SCOTUS precedent.
+
+*Money laundering*: Legally dependent on the predicate fraud counts. If both fraud sets fail, the conspiracy count has no predicate.
+
+*Normative violations beyond doctrine*: Federal jurisdiction without federal funding (charity fraud enforcement is normally state AG jurisdiction); no identified donor complainants; FBI Director personally appearing at the charging announcement (without modern precedent for this charge type).
+
+**The structural gap: charging decisions before courts are involved**
+
+Domain 29's core doctrinal observation: prosecutorial discretion operates before judicial review. Courts defer to charging decisions with a presumption of regularity. Defendants must overcome this presumption with "clear evidence" of discriminatory intent under Wayte. The Protect Democracy retaliatory action tracker documents 22 cases — but documenting a pattern does not automatically clear the Wayte evidentiary burden in any individual case.
+
+The accountability infrastructure designed to prevent this — OPR for attorney misconduct complaints, IG oversight for systemic problems, career staff norms as internal resistance — has been systematically dismantled. The April 25, 2026 proposed DOJ rule allowing the AG to intercept state bar complaints against federal prosecutors before state bars can proceed targets the last external accountability mechanism.
+
+**What structural reform targets**
+
+Domain 29 identifies three statutory fixes that address the evidentiary problem at the heart of vindictive and selective prosecution doctrine:
+
+(1) Charging transparency requirements creating reviewable records of charging rationales and documentation of presidential public statements preceding investigations — the record that both Wayte and Blackledge require but that currently must be developed through discovery without a baseline.
+
+(2) Statutory special counsel independence that requires judicial review for removal decisions — converting the post-Watergate norm into an enforceable legal standard.
+
+(3) McDade-Murtha Amendment defense — litigating the proposed state bar rule as a violation of 28 U.S.C. § 530B and creating a circuit split if necessary to force Supreme Court resolution.
+
+The Abrego Garcia case is the model for how the existing doctrine can produce results when the evidentiary record is developed. The challenge is that developing that record — discovery, document review, evidentiary hearings — requires resources and time that most defendants in retaliatory prosecutions don't have.
+
+I'm interested in feedback from practitioners on whether the constitutional analysis here holds up and what the research is missing from a litigation strategy perspective.
+
+Full Domain 29 analysis: [link] | Full 28-domain proposal: [link] | CC 4.0
 
 Interested in discussing the comparative evidence, the movement research methodology, or any specific domain in the comments.
