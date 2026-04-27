@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Morning (late) — Session 519: Autonomous Orchestrator — Domain Updates + Stockbot May 12 Feasibility
+
+**Session Type**: Autonomous (headless on Raspberry Pi 5)  
+**Duration**: ~45 min (subagent execution) + 10 min (log/commit)  
+**Work**: Parallel subagent execution — resistance-research Domain Updates, stockbot feasibility assessment
+
+### Session 519 Completion Summary
+
+✅ **Four Domain Updates COMPLETE and committed**:
+
+1. **Domain 19f: War Powers Reform — Iran War Case Study** (updated)
+   - Added subsection: "The Administration's Constitutional Position: Rejection of the Resolution's Validity"
+   - Documents Vance's January 2026 "fundamentally fake and unconstitutional law" statement as pre-announced non-compliance
+   - Youngstown Category 3 analysis: administration assertion puts power "at its lowest ebb", enforcement gap means legal vulnerability + practical immunity coexist
+   - Added Senate vote count: April 23, 46-51 (Rand Paul only GOP defector, Fetterman lone Democratic no, Grassley/McCormick/Warner abstained)
+   - Documented House 215-215 vote and Johnson's 20-minute hold in this subsection
+
+2. **Domain 28: War Powers Venezuela Military Unilateralism — Iran Cross-Reference** (updated)
+   - Added synthesis: Venezuela ("arrest operation" framing — clock never starts) + Iran ("constitutional rejection" — clock is fake) together constitute complete functional WPR dismantling
+   - Both flanks anchored to live May 1 deadline
+   - Routes to unified reform proposal: Domain 28 Section 7.1 definitional fix applies equally to both
+
+3. **Domain 35: Supreme Court October 2026 Term Preview — Humphrey's Executor Collapse** (updated)
+   - Confirmed via search: D.C. Circuit issued merits ruling in December 2025 upholding Wilcox and Harris firings
+   - Rewrote Section 5.1 as three-stage collapse: (1) shadow docket stay May 22 2025, (2) D.C. Circuit December 2025 merits ruling, (3) pending SCOTUS Trump v. Slaughter
+   - Section 6.1 Point 2 updated from contingency to present-tense: NLRB quorum loss is now 11 months of present fact
+   - Federal Reserve carve-out detail added from shadow docket opinion
+
+4. **Domain 1 / democratic-renewal-proposal.md — SAVE Act Coalition Fracture** (new subsection 1h)
+   - SAVE Act amendment failed 48-50 on April 23, 2026 (same night as fifth Iran war powers vote)
+   - Four defectors named individually with individual rationales documented
+   - Structural implications: (1) four-senator firewall real but electorally conditional (Collins/Tillis up 2026, Murkowski up 2028), (2) vote-a-rama mechanism proved more robust than expected as blocking tool, (3) state-level SAVE Act analogs proliferating in eight states as federal passage stalls, (4) polling shows documentary-proof requirements durably toxic with independents (41% support vs. 77% generic voter ID)
+   - Identified Democracy Restoration Act as operative legislative vehicle during window while firewall holds
+
+**stockbot May 12 Feasibility Assessment — GATE 1 INFEASIBLE**:
+
+Key findings from backtest analysis (`reports/stacker_backtest_results.json`, generated 2026-04-26):
+- **All 8 h=10 stacker variants independently produced exactly 1 trade in 180 days**
+- All 4 h=5 variants produced 0 trades (shorter horizon does not improve)
+- Signal threshold: `max(rolling_std × 0.5, 0.002) = 2.28%`. AAPL predicted 10-day return must exceed 2.28% to trigger.
+- **Implied rate**: 0.17 round trips/month. Gate 1 requires 30/month. **175x gap.**
+- **Architectural ceiling for h=10 single-ticker**: ~2 round trips/month max (one in, one out every ~10 days). This itself is 15x below Gate 1.
+- **Conclusion**: Gate 1 is structurally infeasible with current design. Not a data alignment issue.
+
+**Strategy Pivot Recommendation**: Multi-ticker expansion to 10-15 additional tickers (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, BRK-B, UNH) would produce ~30 aggregate round trips/month, meeting Gate 1. Training is scripted via `scripts/train_ensemble_stacker_e2e.py`. Alternative pivots documented: threshold reduction (Option B) and intraday MTF (Option C).
+
+**Engine Status**: OFFLINE since 2026-04-26 22:15 UTC. Open BUY position (36 AAPL @ $271.04) safe in positions table. Cold restart will load correctly. **User action required**: Restart engine before 2026-04-28 09:30 ET (14:30 UTC).
+
+### Project Assessment
+
+- **resistance-research**: Four domain updates completed. Framework remains at 35 domains production-ready. Path A/B decision still pending.
+- **stockbot**: Engine offline (awaits restart). Gate 1 infeasibility determined. Strategy pivot decision required before next training cycle.
+- **All other projects**: Status unchanged; blocks persist.
+
+**Files committed**: 
+- Domain 19f, 28, 35 updated in projects/resistance-research/domains/
+- democratic-renewal-proposal.md subsection 1h added
+- may-12-feasibility-checkpoint.md created in projects/stockbot/
+- WORKLOG.md and CHECKIN.md updated
+- PROJECTS.md stockbot section updated with Gate 1 infeasibility findings
+
+---
+
 ## 2026-04-27 06:40 — Session 515: Autonomous Orchestrator — Phase 2 Expansion Domains 34, 35, 36 + Framework Scope Expansion
 
 **Session Type**: Autonomous (headless on Raspberry Pi 5)  

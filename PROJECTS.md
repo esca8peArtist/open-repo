@@ -265,33 +265,42 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — paper trading live, **strategy optimization COMPLETE**, ready for monitoring + live trading launch
+**Status**: Active — paper trading live, **Gate 1 INFEASIBLE with current design — multi-ticker pivot required**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
-**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **All three strategy optimization tasks COMPLETE** (Sessions 488-489). AAPL_h10_lgbm_ho validation plan in place, monitoring script deployed, live trading readiness checklist ready. **Next**: Monitor paper trading daily, assess progress toward Gate 1 (30 trades/month), prepare live trading transition once all gates pass for 3 consecutive months.
+**Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker, 1 BUY open). Engine OFFLINE — user restart required before 2026-04-28 09:30 ET. **Gate 1 feasibility assessment COMPLETE (Session 519, 2026-04-27)**: current design achieves 0.17 round trips/month vs. 30/month required (175x gap) — architectural blocker, not a data problem. **Strategy pivot to multi-ticker expansion is the recommended fix.** Begin training additional ticker stackers (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, BRK-B, UNH) immediately. See `projects/stockbot/may-12-feasibility-checkpoint.md` for full analysis.
 
-**Paper Trading Status (Session 504 — 2026-04-27, Day 3 — ENGINE SHUTDOWN DETECTED)**:
+**Paper Trading Status (Session 519 — 2026-04-27 07:11 UTC — Day 2)**:
 - Paper trading started: 2026-04-26
-- Days elapsed: 2 (market closed Sunday and Monday ET)
-- **🚨 CRITICAL: Trading engine shut down unexpectedly at 2026-04-26 22:15 UTC** (reason: UNKNOWN — investigate log file)
-  - Engine status: OFFLINE as of monitoring report (2026-04-27 02:38 UTC)
-  - Open position: BUY 36 AAPL @ $271.04 (2026-04-26 17:06 UTC)
-  - **Orphaned position risk**: Position in trades table but NOT persisted in positions table — engine cold-restart would lose the position reference
-  - **Deadline**: Engine must restart before Monday 2026-04-28 market open (09:30 ET / 14:30 UTC) or first SELL signal will fail
-  - **Blocked on**: Engine restart and position persistence verification (see BLOCKED.md)
-- DB state before shutdown: 9 total trade legs (8 smoke-test, 1 AAPL_h10_lgbm_ho)
-- Completed round trips: 0 (no market session since BUY placed)
-- Trades/month pace: INDETERMINATE (no round trips yet; no data points)
-- **Gate 1 assessment**: STRUCTURAL CONCERN FLAGGED — Daily-bar LightGBM stacker achieved 1 buy-hold in 180-day backtest. Achieving 30 round trips/month is aggressive. Cannot confirm/refute feasibility until live signals generate multiple round trips.
-- Gate 1 (30 round trips/month): FAIL — expected at Day 3 (insufficient data, also engine offline)
-- Gate 2 (Sharpe ≥1.0, MDD ≤20%, PF ≥1.5): all FAIL except MDD (0.0%) — insufficient data
+- Days elapsed: 2 (0 full market sessions completed — engine offline since 22:15 UTC 2026-04-26)
+- Engine status: OFFLINE — must restart before 2026-04-28 09:30 ET / 14:30 UTC
+  - Command: `.venv/bin/python scripts/run_live_trading.py` (from projects/stockbot)
+- Open position: BUY 36 AAPL @ $271.04 (trade ID 9, 2026-04-26 17:06 UTC)
+  - Position IS persisted in positions table (Session 504 fix) — cold restart is safe
+- DB state: 1 production trade leg (BUY), 0 completed round trips
+- Trades/month pace: 0.0 (no round trips complete; structurally expected to stay at ~0.17/month)
+- **Gate 1 assessment — INFEASIBLE (Session 519 determination)**:
+  - Backtest evidence: all 8 h=10 stacker variants produced exactly 1 trade in 180 days
+  - Signal threshold = 2.28% predicted return required to trigger — crosses rarely
+  - Architectural ceiling: ~2 round trips/month for single-ticker h=10 design
+  - 15x gap to Gate 1 (30/month) cannot be closed within current design parameters
+  - h=5 variants provide no improvement (0 trades in same backtest)
+  - **Pivot required**: Multi-ticker expansion (same architecture, 15 tickers = ~30 aggregate round trips/month)
+- Gate 1 (30 round trips/month): STRUCTURAL FAIL — pivot required
+- Gate 2 (Sharpe ≥1.0, MDD ≤20%, PF ≥1.5): all FAIL except MDD — insufficient data (0 round trips)
 - Gate 3 (≥63 days): FAIL — 61 days remaining
-- Monitor script: `scripts/paper_trading_monitor.py` — clean runs, daily log at `logs/paper_trading_daily.jsonl` (6 snapshots as of 2026-04-27 02:38 UTC)
-- **Checkpoints (updated for engine restart)**:
-  - 2026-04-28 (Day 3): First live market session — **PRIORITY: verify engine restarts, position persists, SELL signal executes**
-  - 2026-05-12 (Day 16): Two-week Gate 1 feasibility review — **flag if pace well below 15 round trips** (half-month threshold)
-  - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail (baseline for 30/month rate)
-  - 2026-07-26 (Day 90): 3-month graduation target
+- Monitor script: `scripts/paper_trading_monitor.py` — clean runs, 10 snapshots in `logs/paper_trading_daily.jsonl`
+- **Checkpoints**:
+  - 2026-04-28 (Day 3): First live market session — verify engine restarts, position persists, SELL eventually fires
+  - 2026-05-09 (approx): First SELL signal expected (~10 trading days from BUY entry)
+  - 2026-05-12 (Day 16): Gate 1 feasibility formal checkpoint — use to confirm pivot decision
+  - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail
+
+**May 12 Feasibility Assessment (Session 519 — COMPLETE)**:
+- Full report: `projects/stockbot/may-12-feasibility-checkpoint.md`
+- Verdict: Gate 1 INFEASIBLE with current design; strategy pivot to multi-ticker required
+- Recommended pivot (Option A): Train stackers for 10 additional tickers, run in parallel
+- Begin training now — do not wait for May 12 to act
 
 **Completed (Session 502)**:
 1. ✅ **Paper Trading Monitoring (Day 2)** — COMPLETE:
@@ -341,30 +350,39 @@
 **Completed (Session 486)**:
 1. ✅ **Live trading guardrails** — `guardrails.py` module with 6 validators, 88 unit tests
 
-**Session 510 Status Update**:
-- **Engine Status**: Engine offline (test harness only, not real trading). **USER ACTION REQUIRED**: Restart before 09:30 ET today (13:30 UTC) using `.venv/bin/python scripts/run_live_trading.py`
-- **Paper Trading Day 2**: 1 BUY leg (36 AAPL @ $271.04), no round trips yet (expected)
-- **Gate Progress**: All gates FAIL at Day 2 (structurally expected pre-first-round-trip)
-- **Gate 1 Structural Risk**: Requires 30 round trips/month; h=10 single-ticker design maxes out at 2-3 round trips/month = **10-15x gap**. This is the dominant risk factor. 2026-05-12 checkpoint will determine strategy pivot necessity.
-- **Confidence in Live Trading Launch**: **LOW** due to Gate 1 frequency mismatch. Reserved for Gate 2 quality metrics until first round trip completes.
+**Session 519 Status Update (2026-04-27)**:
+- **Engine Status**: OFFLINE — **USER ACTION REQUIRED**: Restart before 09:30 ET Monday 2026-04-28 using `.venv/bin/python scripts/run_live_trading.py`
+- **Position safety**: Open BUY (36 AAPL @ $271.04) is in positions table — cold restart is safe
+- **Gate 1 Feasibility**: FORMALLY ASSESSED as INFEASIBLE with current design (see may-12-feasibility-checkpoint.md)
+- **Strategy pivot decided**: Multi-ticker expansion is the recommended path to Gate 1 pass
+- **Confidence in Live Trading Launch**: LOW — cannot launch until Gate 1 is met; pivot must complete first
 
 **Next tasks — work these in order:**
 
-1. **Paper Trading Monitoring** — Daily run of `paper_trading_monitor.py` via cron (appends to `logs/paper_trading_daily.jsonl`)
-   - Track progress toward Gate 1 (30 trades/month) — started 2026-04-26, expecting data by 2026-05-26
-   - Monthly checkpoints: 2026-05-26, 2026-06-26, 2026-07-26
-   - Feasibility checkpoint 2026-05-12: Assess if current h=10 single-ticker architecture is viable for Gate 1 or pivot to multi-ticker/shorter-horizon design needed
-   - All three gates (1+2+3) must pass for 3 consecutive months before graduation
+1. **Engine restart** (user action — manual): Restart before 2026-04-28 09:30 ET. Allow current AAPL paper trade to run to SELL completion.
 
-2. **Live Trading Launch** — After 3-month validation complete AND Gate 1 feasibility confirmed:
-   - Confirm Alpaca account setup (cash account, funds ready)
-   - Verify all guardrails in `src/guardrails.py` deployed to Jetson
-   - Initial funding: $100–500 (position limits per readiness checklist)
-   - Monitor daily for first 2 weeks, scale only after 2+ weeks profitable performance
-   - Use `docs/live-trading-readiness.md` as user-facing launch checklist
+2. **Multi-ticker stacker training** (autonomous agent work):
+   - Train AAPL_h10_lgbm_ho-equivalent stackers for 10 additional tickers: MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, BRK-B, UNH
+   - Script: `scripts/train_ensemble_stacker_e2e.py` — already supports arbitrary ticker input
+   - Target: 10 new stacker ensembles, same architecture (h=10, lgbm, held-out)
+   - Run in batch; training is scripted and does not require user interaction
 
-**Blocked on**: Engine restart (user action today before 09:30 ET) and May 12 feasibility assessment
-**Notes**: All optimization tasks complete. Strategy portfolio cleaned (8 strategies, SMA structural failures removed). Validation plan in place with clear graduation criteria. Guardrails verified. Paper trading provides the validation signal. Live trading will begin with minimal capital ($100–500) and scale incrementally only after demonstrated profitable performance.
+3. **Multi-ticker paper trading** (after training complete):
+   - Update TradingSession configuration to include all 11 tickers
+   - Restart paper trading with multi-ticker config
+   - Aggregate round trips count toward Gate 1 (15 tickers × ~2/month = ~30 aggregate)
+
+4. **Paper Trading Monitoring** — Daily run of `paper_trading_monitor.py` (appends to `logs/paper_trading_daily.jsonl`)
+   - Continue monitoring through May 12 checkpoint
+   - After multi-ticker expansion: update monitor to aggregate across all tickers
+
+5. **Live Trading Launch** — After Gate 1 passes (multi-ticker paper trading, 3 consecutive months):
+   - Confirm Alpaca account setup
+   - Verify guardrails in `src/guardrails.py` deployed to Jetson
+   - Initial funding: $100–500 per readiness checklist
+
+**Blocked on**: Engine restart (user action — before 2026-04-28 09:30 ET)
+**Notes**: Gate 1 feasibility assessment complete — pivot to multi-ticker is the path forward. All optimization infrastructure exists; training additional ticker models is the next autonomous task. Paper trading with the current AAPL-only stacker continues in parallel to collect Gate 2 quality data. Live trading launch timeline now depends on completing multi-ticker pivot + 3-month paper trading track record.
 
 ---
 

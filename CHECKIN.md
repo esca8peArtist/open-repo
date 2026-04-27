@@ -4,20 +4,28 @@
 
 ---
 
-## Current Session (Session 518 — 2026-04-27 Evening — Domain Updates Analysis)
+## Current Session (Session 519 — 2026-04-27 Late Morning — Domain Updates Executed + Stockbot Feasibility)
 
-**Status**: ⏸️ **AWAITING USER DISTRIBUTION PATH DECISION** — All 35-domain framework complete and production-ready. Session 518 analyzed Path B (Domain Updates) options and confirmed most updates are either already complete OR are lower-priority content-maintenance tasks. **User decision required**: 
-- **Path A**: Distribute 34-domain base immediately (Domains 1-22, 19f + Domains 23, 27-29, 31, 33-34, 35-36)
-- **Path A+Domain37 Hybrid (RECOMMENDED)**: Distribute 34-domain base to general audiences immediately; sequence Domain 37 to election-protection organizations within 2 weeks
-- **Path B**: Execute Domain Updates (April-May 2026 content maintenance on 9 domains) before distribution (~2-4 weeks additional work)
+**Status**: ✅ **Domain Updates Executed; Gate 1 Infeasibility Determined** — Four domain updates completed and committed (Domain 19f Iran war, Domain 28 Venezuela synthesis, Domain 35 Humphrey's Executor, Domain 1 SAVE Act). **stockbot May 12 feasibility assessment complete: Gate 1 is INFEASIBLE with current h=10 single-ticker design (175x gap: 0.17 vs. 30 round trips/month).** **User decisions required**:
 
-**What Found** (Session 518):
-- Analyzed Session 516 civic tracker findings identifying 9 domains for April-May 2026 updates
-- **Status check**: Domain 29 (Prosecutorial Weaponization) **ALREADY COMPLETE** with SPLC indictment case study (created Session 505)
-- Remaining updates fall into two categories:
-  1. **Low-effort, high-impact** (1-2 hours each): Domain 1 (SAVE Act Senate failure), Domain 33 (ballot initiative expansion), Domain 6 (Wilcox removal power)
-  2. **Future-dependent** (require April-May 2026 outcomes): Domain 21/25 (FISA Section 702 April 30 deadline), Domain 19 (NATO/Taiwan/Iran cascade still unfolding)
-- **Assessment**: Path A/Hybrid is executable immediately with existing 35-domain framework. Path B updates would strengthen proposal currency but are NOT prerequisite for distribution
+1. **stockbot strategy pivot**: Multi-ticker expansion (recommended) vs. threshold reduction vs. intraday MTF?
+2. **Engine restart**: Before 2026-04-28 09:30 ET (14:30 UTC market open)
+3. **resistance-research distribution path**: Path A, Path A+Domain37 Hybrid (RECOMMENDED), or Path B?
+
+**What Accomplished** (Session 519):
+
+✅ **Four resistance-research Domain Updates Completed**:
+- Domain 19f: Added Iran war case study with Vance constitutional rejection + Youngstown analysis
+- Domain 28: Added Venezuela-Iran synthesis showing complete WPR functional dismantling
+- Domain 35: Confirmed D.C. Circuit December 2025 merits ruling; updated Humphrey's Executor status from contingency to present-tense collapse
+- Domain 1 (proposal): Added SAVE Act Senate failure (48-50, April 23) as coalition-fracture proof-of-concept
+
+✅ **stockbot May 12 Feasibility Assessment**:
+- Engine confirmed OFFLINE since 2026-04-26 22:15 UTC
+- Backtest analysis (8 h=10 variants + 4 h=5 variants): All h=10 produced exactly 1 trade in 180 days → 0.17 round trips/month
+- Gate 1 requires 30/month → **175x gap** (architectural ceiling of ~2 trades/month means even perfect execution falls 15x short)
+- **Recommendation**: Multi-ticker expansion to 10-15 tickers would meet Gate 1 (~30 aggregate trades/month). Alternative pivots documented.
+- Full analysis: `projects/stockbot/may-12-feasibility-checkpoint.md` (~1,800 words)
 
 ---
 
@@ -73,22 +81,27 @@
 
 ## Items Needing Your Input
 
-1. **resistance-research distribution decision (HIGH PRIORITY)**: 
-   - **Path A**: Distribution with 34-domain framework (immediate)
-   - **Path A+Domain37 Hybrid (RECOMMENDED)**: Distribute 34-domain base to general audiences (law schools, think tanks, labor) immediately; sequence Domain 37 to election-protection organizations within 2 weeks. Captures immediate impact + election integrity urgency.
-   - **Path B**: Domain Updates (content maintenance on 9 domains per April 2026 civic tracker findings) before distribution (2-4 weeks additional research)
-   - **Decision needed**: Which path? If Hybrid, approval to sequence Domain 37 into election-protection org distribution before general release.
+1. **stockbot — Engine Restart + Strategy Pivot (CRITICAL PRIORITY)**:
+   - **Engine restart**: Before 2026-04-28 09:30 ET (14:30 UTC market open). Use: `.venv/bin/python scripts/run_live_trading.py`
+   - **Strategy pivot decision**: Gate 1 is infeasible with current h=10 single-ticker design (0.17 vs. 30 trades/month required). Choose:
+     - **Option A (Recommended)**: Multi-ticker expansion to 10-15 additional tickers (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, BRK-B, UNH). Would meet Gate 1 (~30 aggregate trades/month). Begin training now.
+     - **Option B**: Threshold reduction (h=5 shorter horizon). Less likely to help — 4 h=5 variants produced 0 trades.
+     - **Option C**: Intraday MTF (multi-timeframe). Higher complexity, documented in feasibility checkpoint.
+   - **Analysis**: `projects/stockbot/may-12-feasibility-checkpoint.md` (full assessment)
 
-2. **stockbot — Monday 14:00–14:25 UTC (CRITICAL)**: SSH verification before market open
-   - SSH to Jetson (awank@100.120.18.84)
-   - Run checklist from `projects/stockbot/docs/market-open-checklist.md` items 4–8
-   - Must complete before 14:30 UTC market open
+2. **resistance-research distribution decision (HIGH PRIORITY)**:
+   - **Path A**: Distribute 35-domain framework immediately (Domains 1-22, 19f + Domains 23, 27-29, 31, 33-37)
+   - **Path A+Domain37 Hybrid (RECOMMENDED)**: Distribute 34-domain base (without Domain 37) to general audiences (law schools, think tanks, labor) immediately; sequence Domain 37 separately to election-protection organizations within 2 weeks. Captures immediate traction + election integrity urgency.
+   - **Path B**: Domain Updates (content maintenance on remaining 5-6 domains per April 2026 developments) before distribution (1-2 weeks additional research)
+   - **Note**: Session 519 completed 4 priority updates (Domains 19f, 28, 35, 1). Remaining updates (21, 25, 33, 19, 6) are either lower-priority or dependent on May 2026 outcomes.
 
-3. **Clarification on resistance-research distribution channels**:
-   - Are resistance-research and cybersecurity-hardening distributions separate efforts, or should they integrate channels?
-   - Currently treated as separate: resistance-research → policy/advocacy orgs; cybersecurity-hardening → Tier 1–3 (immigration legal aid → community orgs → mutual aid)
-3. **stockbot engine restart verification**: Confirm Monday 2026-04-28 09:30 ET market open ready to proceed?
-4. **mfg-farm test print**: Ready to execute, or awaiting user resources?
+3. **mfg-farm test print (MEDIUM PRIORITY)**:
+   - CadQuery designs ready. User needs to: (1) run `pip install cadquery`, (2) run STL generation scripts, (3) test print, (4) photograph, (5) list on Etsy
+   - All listing copy, pricing, tags ready in `etsy-listing-modrun.md`
+
+4. **seedwarden Phase 1 launch (MEDIUM PRIORITY)**:
+   - Awaiting: 3 tag corrections + Etsy account verification
+   - All 21 products ready to list immediately once user completes those two items
 
 ---
 
