@@ -1,52 +1,80 @@
 # Seedwarden Mockup Strategy & Implementation
-## Status: COMPLETE — 21/21 Products Ready for Launch
+## Status: PHASE 2 COMPLETE — All Mockup Variants Ready
 
-**Last Updated:** April 26, 2026  
-**Completion Status:** ✅ All 21 products have tablet mockup images generated and ready for Etsy listings
+**Last Updated:** April 27, 2026  
+**Completion Status:** ✅ All 21 products have three mockup variants (cover, phone, interior)
 
 ---
 
 ## Executive Summary
 
-All 21 Seedwarden products have professional mockup images ready for launch. Tablet mockup images (2400×2400px PNG) show each product's PDF on a realistic iPad-style device, providing the #1 conversion factor for digital products on Etsy. No additional mockup generation needed.
+All 21 Seedwarden products have professional mockup images in three variants ready for Etsy listings. Mockup images (2400×2400px PNG) show each product's PDF on realistic device frames (tablet, phone) and as a 2x2 grid of interior pages, providing multiple conversion angles. Tablet cover mockups are the #1 conversion factor; interior mockups demonstrate product depth.
 
 **What's Complete:**
-- 21 tablet mockup images (one per product) — ready for Etsy primary image slot
+- 21 tablet cover mockups (one per product) — ready for Etsy primary image slot
+- 21 phone mockups (portrait, iPhone 13 proportions) — alternative view for mobile customers
+- 21 interior-page mockups (2x2 grid of pages 2-5) — demonstrate content and substance
 - High resolution (2400×2400px) — meets Etsy's zoom-functionality requirement (2000px+ shortest side)
 - Consistent brand design — matching seedwarden color palette and layout
-- Professional quality — suitable for primary (cover) image on all listings
+- All variants generated programmatically — no external tools or licensed assets needed
 
 **What's Ready to Deploy:**
-- All mockup images in `/projects/seedwarden/mockups/` directory
-- Script for regenerating mockups if PDFs change: `scripts/generate_mockups.py`
+- 63 total mockup PNG images in `/projects/seedwarden/mockups/` directory
+- Script for regenerating all variants if PDFs change: `scripts/generate_mockups.py`
 - No additional tools or dependencies required
+- Three frame options: `--frame tablet` (default), `--frame portrait`, `--frame interior`
 
 ---
 
 ## Current Mockup Architecture
 
-### Image Specifications
+### Image Specifications (All Variants)
 
 | Specification | Value |
 |---|---|
 | Format | PNG (RGB, 8-bit color) |
 | Resolution | 2400×2400 pixels |
-| Size per image | 350–400 KB (highly optimized) |
-| Device type | iPad/Tablet in portrait orientation |
-| Content shown | Top 55% of PDF first page (rich header + title area) |
 | Aspect ratio | 1:1 square (optimal for Etsy grid thumbnails) |
 | Color management | Consistent brand green (#143b28) + device bezel |
+| Design | Programmatically generated — no external tools or licensed assets |
 
-### Visual Design
+### Mockup Variants
+
+**1. Cover/Tablet Mockup** (primary image)
+- Device: iPad/Tablet in portrait orientation
+- Content: Top 55% of PDF first page (rich header + title area, where branding is strongest)
+- Size per image: 350–400 KB
+- Filename: `{product}-mockup.png`
+- Use case: Primary Etsy listing image (highest conversion factor)
+- Visual: Aluminum bezel with rounded corners, camera dot, home button
+
+**2. Phone Mockup** (alternative/secondary image)
+- Device: iPhone 13-style portrait orientation (390×844px screen area, scaled 2x)
+- Content: Same as tablet (top 55% of cover page)
+- Size per image: 70 KB (much smaller than tablet)
+- Filename: `{product}_phone.png`
+- Use case: Show mobile/handheld viewing experience, appeals to phone-first customers
+- Visual: Matte black body with Dynamic Island notch, side buttons, home indicator
+
+**3. Interior Grid Mockup** (new — demonstrates content depth)
+- Device: Tablet frame (same as cover mockup)
+- Content: 2×2 grid of pages 2–5 showing interior content and substance
+- Size per image: 313–706 KB (varies by page density)
+- Filename: `{product}_interior.png`
+- Use case: Secondary Etsy listing image (slots 2–3) to demonstrate product depth
+- Visual: Four interior pages in a grid with subtle light-gray dividers
+- Feature: If PDF has <5 pages, wraps to available pages; shows actual content variety
+
+### Visual Design Details
 
 Each mockup shows:
-1. **Tablet device frame** — realistic aluminum bezel with rounded corners, camera dot, home button
-2. **Screen content** — PDF cover page (top 55% of page, where visual branding is strongest)
-3. **Background** — subtle sage gradient (light warm white to deeper sage)
-4. **Drop shadow** — soft shadow behind tablet for depth perception
-5. **Highlights** — thin edge highlight on top-left for dimension
+1. **Device frame** — realistic aluminum/black bezel with rounded corners, hardware details
+2. **Screen content** — PDF pages as rendered (cover for tablet/phone, interior 2x2 grid for interior variant)
+3. **Background** — subtle sage gradient (light warm white to deeper sage, varies by frame color)
+4. **Drop shadow** — soft shadow behind device for depth perception
+5. **Highlights** — thin edge highlight on top-left for dimension (tablet) or rim light (phone)
 
-The design is programmatically generated — no external design tools or licensed assets needed.
+Canvas: 2400×2400 pixels allows for professional printing and Etsy zoom functionality.
 
 ---
 
@@ -116,54 +144,81 @@ Use the tablet mockup. This should be the first image customers see in search re
 ### Additional Images (Slots 2–10)
 Etsy allows up to 10 images per listing. For maximum conversion potential, consider adding:
 
-**Recommended additional images:**
-1. **Cover mockup** (current primary image — tablet mockup)
-2. **Page interior mockup** — Show a sample interior page on the same tablet frame (demonstrates content depth)
-3. **Flat lay mockup** — Printed pages spread on a wooden desk/outdoor setting (appeals to customers who print products)
-4. **Device mockup variation** — Same PDF on a phone or laptop to show compatibility
-5. **Lifestyle shot** — PDF being used in actual context (e.g., planner on desk while gardening, guide in hand in field)
-6. **Text close-up** — Detail shot highlighting writing quality and depth
-7. **Comparison/scale shot** — Page next to a hand or coffee cup to show size
-8. **Color/design detail** — Highlight the branded cover design elements
-9. **Features list** — Graphic listing what's included
-10. **Customer testimonial/benefit** — Visual showing the value proposition
+**Recommended additional images (Etsy slots 1–10):**
+1. **Cover mockup — tablet** ✅ COMPLETE — Tablet frame showing PDF cover (primary image)
+2. **Interior mockup — tablet** ✅ COMPLETE — Tablet frame showing 2×2 grid of interior pages
+3. **Phone mockup** ✅ COMPLETE — iPhone-style frame showing PDF cover (shows mobile compatibility)
+4. **Flat lay mockup** — Printed pages spread on a wooden desk/outdoor setting (appeals to customers who print products) [Future]
+5. **Lifestyle shot** — PDF being used in actual context (e.g., planner on desk while gardening, guide in hand in field) [Future]
+6. **Text close-up** — Detail shot highlighting writing quality and depth [Future]
+7. **Comparison/scale shot** — Page next to a hand or coffee cup to show size [Future]
+8. **Color/design detail** — Highlight the branded cover design elements [Future]
+9. **Features list** — Graphic listing what's included [Future]
+10. **Customer testimonial/benefit** — Visual showing the value proposition [Future]
 
-**Current Status:** Only slot 1 (primary mockup) is complete. Slots 2–10 would require:
-- Additional mockup angles (phone, laptop, printed pages)
+**Current Status:** Slots 1–3 complete (cover tablet, interior grid, phone). Slots 4–10 would require:
 - Lifestyle photography
+- Printed page mockups
 - Graphic design for benefits/features
 
 ### Recommended Sequencing for Launch
 
-For Phase 1 launch (6 products):
-1. Use tablet mockups as primary images (slots 1) for all 6 products
-2. Add basic interior page mockups for slots 2 (will increase if time allows)
-3. Monitor conversion rates for first 2 weeks
-4. Add additional mockup angles (phone, printed pages) in Phase 2 based on performance
+For Phase 2 launch (all 21 products):
+1. ✅ Use tablet cover mockups as primary images (Etsy slot 1) for all 21 products
+2. ✅ Add interior grid mockups for slot 2 (demonstrates product depth and substance)
+3. ✅ Use phone mockups for slot 3 if customers browse on mobile
+4. [Optional Phase 3] Add flat lay and lifestyle photos for slots 4–5
+5. [Optional Phase 4] Add graphic benefits/features for slots 6–8
 
 ---
 
 ## Regeneration Workflow
 
-If product PDFs are updated, mockups can be regenerated instantly using the existing script.
+If product PDFs are updated, mockups can be regenerated instantly using the existing script. All three variants (cover, phone, interior) are generated from the same PDF source with no manual effort.
 
-### Regenerate All Mockups
+### Regenerate All Variants
 
+**Default (cover/tablet mockups):**
 ```bash
 cd /home/awank/dev/SuperClaude_Framework/projects/seedwarden
 uv run python scripts/generate_mockups.py
 ```
 
-**What this does:**
+**Phone mockups:**
+```bash
+uv run python scripts/generate_mockups.py --frame portrait
+```
+
+**Interior mockups (new):**
+```bash
+uv run python scripts/generate_mockups.py --frame interior
+```
+
+**Regenerate all three variants in sequence:**
+```bash
+uv run python scripts/generate_mockups.py && \
+uv run python scripts/generate_mockups.py --frame portrait && \
+uv run python scripts/generate_mockups.py --frame interior
+```
+
+### What Each Command Does
+
+| Frame Mode | Renders | Output Filename | File Size | Duration |
+|---|---|---|---|---|
+| (default/tablet) | PDF cover page (top 55%) on tablet frame | `{product}-mockup.png` | 350–400 KB | ~10 sec / 21 products |
+| portrait | PDF cover page (top 55%) on iPhone frame | `{product}_phone.png` | 70 KB | ~10 sec / 21 products |
+| interior | Pages 2–5 in 2×2 grid on tablet frame | `{product}_interior.png` | 313–706 KB | ~10 sec / 21 products |
+
+**What the script does:**
 - Scans `/scripts/output/` for all .pdf files
-- Renders the first page of each PDF
-- Crops to the top 55% (title area)
-- Composites onto a tablet device frame
-- Saves high-res PNG to `/mockups/` directory
+- Renders specified pages at 2x resolution, then downscales for antialiasing
+- Crops pages intelligently (55% for covers, 85% for interior to minimize blank space)
+- Composites onto device frame with realistic shadows, bezels, and details
+- Saves high-res PNG (2400×2400px) to `/mockups/` directory
 - Overwrites existing mockups without prompting
 
-**Duration:** ~30 seconds for all 21 products
-**Dependencies:** pypdfium2, Pillow (already in project)
+**Total time for all variants:** ~30 seconds for all 21 products (all three frames)
+**Dependencies:** pypdfium2, Pillow (already in project venv)
 
 ### Regenerate Single Mockup
 
