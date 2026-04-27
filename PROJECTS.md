@@ -93,9 +93,17 @@
 - ✅ Domain 29 (Prosecutorial Weaponization and DOJ Capture) — COMPLETE — 6,124 words
 - **Total framework**: 28 domains + implementation architecture (Phase 1-5 complete + Phase 2 Priority 3 expansion complete)
 
+**✅ COMPLETED (Session 510)**:
+- ✅ **Phase 2 Integration COMPLETE** — All 28 domains unified, metadata corrected, distribution templates updated
+  - Executive summary rows updated for Domains 27-29 with expanded findings
+  - Distribution package corrected: fixed 9 instances of "22-domain" → 28-domain across all templates
+  - EXPLORATION_QUEUE.md created with 3 new Phase 2 research candidates (trade policy/tariffs, healthcare access/Medicaid, state legislative autocratization)
+  - Proposal structure complete: all 28 domains have body text in proposal, Domains 23-29 have standalone research files with cross-references
+  - Assessment: Ready for distribution execution OR Phase 2 expansion research selection
+
 **Next**: 
 - **DISTRIBUTION EXECUTION** (user action): All 28 domains production-ready. Comprehensive distribution package: (1) updated proposal integrating new domains, (2) Substack/Reddit templates (3-posts/week suggested), (3) Institutional outreach (universities, policy orgs, legal clinics) — all research at sufficient depth for serious engagement
-- **Phase 2 expansion (optional)**: Identify additional US crisis domains (Domains 30+) based on distribution feedback and civic tracker analysis
+- **Phase 2 expansion (optional)**: Pick from EXPLORATION_QUEUE.md candidates (trade policy most urgent for Trump tariff analysis; healthcare access most time-sensitive for Medicaid deadline in January 2027; state legislative capture offers state-level democracy angle). Add 2-3 more candidates if queue drops below 3 items.
 
 **✅ COMPLETED (Session 502)**:
 - ✅ **Domain 19f War Powers Reform** — Complete research document with current crisis analysis
@@ -285,21 +293,29 @@
 **Completed (Session 486)**:
 1. ✅ **Live trading guardrails** — `guardrails.py` module with 6 validators, 88 unit tests
 
+**Session 510 Status Update**:
+- **Engine Status**: Engine offline (test harness only, not real trading). **USER ACTION REQUIRED**: Restart before 09:30 ET today (13:30 UTC) using `.venv/bin/python scripts/run_live_trading.py`
+- **Paper Trading Day 2**: 1 BUY leg (36 AAPL @ $271.04), no round trips yet (expected)
+- **Gate Progress**: All gates FAIL at Day 2 (structurally expected pre-first-round-trip)
+- **Gate 1 Structural Risk**: Requires 30 round trips/month; h=10 single-ticker design maxes out at 2-3 round trips/month = **10-15x gap**. This is the dominant risk factor. 2026-05-12 checkpoint will determine strategy pivot necessity.
+- **Confidence in Live Trading Launch**: **LOW** due to Gate 1 frequency mismatch. Reserved for Gate 2 quality metrics until first round trip completes.
+
 **Next tasks — work these in order:**
 
 1. **Paper Trading Monitoring** — Daily run of `paper_trading_monitor.py` via cron (appends to `logs/paper_trading_daily.jsonl`)
    - Track progress toward Gate 1 (30 trades/month) — started 2026-04-26, expecting data by 2026-05-26
    - Monthly checkpoints: 2026-05-26, 2026-06-26, 2026-07-26
+   - Feasibility checkpoint 2026-05-12: Assess if current h=10 single-ticker architecture is viable for Gate 1 or pivot to multi-ticker/shorter-horizon design needed
    - All three gates (1+2+3) must pass for 3 consecutive months before graduation
 
-2. **Live Trading Launch** — After 3-month validation complete:
+2. **Live Trading Launch** — After 3-month validation complete AND Gate 1 feasibility confirmed:
    - Confirm Alpaca account setup (cash account, funds ready)
    - Verify all guardrails in `src/guardrails.py` deployed to Jetson
    - Initial funding: $100–500 (position limits per readiness checklist)
    - Monitor daily for first 2 weeks, scale only after 2+ weeks profitable performance
    - Use `docs/live-trading-readiness.md` as user-facing launch checklist
 
-**Blocked on**: —
+**Blocked on**: Engine restart (user action today before 09:30 ET) and May 12 feasibility assessment
 **Notes**: All optimization tasks complete. Strategy portfolio cleaned (8 strategies, SMA structural failures removed). Validation plan in place with clear graduation criteria. Guardrails verified. Paper trading provides the validation signal. Live trading will begin with minimal capital ($100–500) and scale incrementally only after demonstrated profitable performance.
 
 ---

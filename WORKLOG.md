@@ -4,6 +4,111 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 05:20 — Parallel Session: resistance-research + stockbot — Phase 2 Integration Complete + Engine Offline Assessment
+
+**Session**: Parallel execution on resistance-research (Phase 2 integration audit + exploration queue creation) and stockbot (paper trading status assessment + engine offline diagnosis)
+
+### resistance-research: Phase 2 Integration — COMPLETE
+
+**Task 1 — Domain File Audit (COMPLETE)**:
+- **Domain 27 (Higher Education and Academic Freedom)**: Production file is 9,226 words (was labeled 6,769 in proposal). Corrected proposal cross-reference with expanded finding summary. Includes structural vulnerability analysis, FIRE 2024 McCarthyism data (35% self-censorship vs. McCarthyism), First Circuit April 2026 brief status, state tenure attack wave analysis.
+- **Domain 28 (War Powers, Venezuela Military Unilateralism)**: Corrected proposal cross-reference to production file `domain-28-war-powers-venezuela-military-unilateralism.md` (6,085 words, not 5,600). Production file includes Brown University/CSIS fiscal scope ($4.7B total deployment, $31M/day ongoing), full implementation timeline (phases 1-4), AUMF historical context (1973-2001 analysis), DEA indictment precedent scope (7 countries: Iran, NK, Russia, Lebanon, Cuba, Colombia, Mexico).
+- **Domain 29 (Prosecutorial Weaponization and DOJ Capture)**: Production file is 8,809 words (was labeled 6,124). Corrected proposal cross-reference. Includes charging-stage power gap analysis (97.2% guilty plea rate = charging is functional verdict), international comparative systems, three-phase implementation timeline, fiscal scope ($50-100M/year institutional infrastructure vs. $44M+ in defense costs for 22 documented cases).
+- **Old draft artifact**: `domain-28-war-powers-venezuela.md` (Session 506 draft, 391 lines) still exists but is no longer referenced. Flagged for optional archival/deletion.
+- **Status**: All three domains verified production-ready with accurate metadata. Proposal cross-references corrected.
+
+**Task 2 — Distribution Package Audit (COMPLETE)**:
+- **Critical error found**: Nine instances of "22-domain" appeared in distribution templates (DISTRIBUTION_GUIDE.md, distribution-substack-drafts.md, distribution-reddit-templates.md, distribution-institutional-outreach-templates.md)
+- **Root cause**: Templates created before Domains 23-29 were added; domain count not updated
+- **Corrected**: All 9 instances → "28-domain"
+- **Impact**: Fixes misleading domain count in distribution messaging
+- **Status**: Distribution package now accurate for 28-domain framework
+
+**Task 3 — Executive Summary Updates (COMPLETE)**:
+- Updated all three domain rows (27, 28, 29) in 28-domain summary table with expanded key findings
+- Domain 27: Added Tri-Agency Canada reform model, state tenure attack wave finding, brain drain escalation metric (EU ERC applications 60→169 in 2 years)
+- Domain 28: Added $3B+ disruption cost estimate, Thompson v. US bank fraud defect, DEA indictment network scope
+- Domain 29: Added suppression-through-process logic (SPLC case model), charging-stage power distinction, Section 7 distinctions from Domain 6
+- **Status**: Executive summary now reflects full production research content
+
+**Task 4 — Exploration Queue Creation (COMPLETE)**:
+- **EXPLORATION_QUEUE.md created** with 3 new Phase 2 research candidates, ranked by urgency:
+  1. **Candidate 1: Trade Policy, Tariff Unilateralism, Economic Sovereignty** (5,000-6,500 words)
+     - IEEPA Supreme Court ruling (February 20, 2026), 145% China tariffs, congressional trade authority reclamation mechanisms
+     - Most significant economic constitutional confrontation not in 28-domain framework
+     - High sourcing confidence
+  2. **Candidate 2: Healthcare Access Collapse / OBBBA Medicaid Crisis** (4,500-6,000 words) — **MOST TIME-SENSITIVE**
+     - $911B Medicaid cuts, 11.8M coverage loss projection, work requirement implementation (effective January 2027, HHS guidance due June 2026)
+     - NVRA-Medicaid enrollment nexus makes this democracy priority (enrollment offices = voter registration sites)
+     - Hard deadline January 2027; research window June-September 2026
+     - High sourcing confidence
+  3. **Candidate 3: State Legislative Autocratization** (5,000-6,500 words)
+     - 500+ state preemption instances, mid-decade redistricting, state court capture (North Carolina Supreme Court reversal), ALEC-coordinated anti-protest/anti-municipal legislation
+     - State-level democratic erosion track running independently of federal action; tangentially addressed in current framework
+     - High sourcing confidence
+- **Status**: Exploration queue replenished. User can select any candidate for Phase 2 expansion research.
+
+**Task 5 — Phase 2 Integration Readiness Assessment (COMPLETE)**:
+- ✅ All 28 domains have body text in proposal
+- ✅ All Domains 23-29 have standalone research files with cross-references
+- ✅ Distribution templates reference correct 28-domain count
+- ✅ Executive summary table reflects all 28 domains with accurate fiscal and finding summaries
+- **Deliverable**: "Phase 2 integration complete" — ready for distribution execution OR Phase 2 expansion domain selection
+- **User decision point**: (a) Begin distribution execution (Substack/Reddit/institutional outreach), OR (b) Pick one of 3 exploration queue candidates for Phase 2 research expansion
+
+### stockbot: Paper Trading Assessment + Engine Offline Alert
+
+**Task 1 — Monitoring Script Execution (COMPLETE)**:
+- Ran `scripts/paper_trading_monitor.py` cleanly at 05:16 UTC
+- Checked 8 daily snapshots in `logs/paper_trading_daily.jsonl`
+- **Data**: All consistent. Only 1 entry (first trade on 2026-04-26). No new data since then (Sunday market closed).
+
+**Task 2 — Paper Trading Metrics Summary (Day 2)**:
+- **Position**: 36 AAPL @ $271.04 avg (cost basis $9,757.44) — OPEN
+- **Round trips**: 0 completed (expected — h=10 horizon means first exit signal ~10 trading days after entry, expected ~2026-05-09)
+- **Realized P&L**: $0.00
+- **Unrealized P&L**: $0.00 (price not marked — engine offline)
+- **Win rate**: 0.0% (no completed trades)
+- **Sharpe ratio**: 0.0 (no signal yet)
+- **Max drawdown**: 0.0%
+- **Profit factor**: 0.0
+
+**Task 3 — Gate 1 Progress Assessment**:
+- Gate 1 (30 round trips/month): FAIL — 0 completed round trips. Expected first SELL ~2026-05-09 (10 trading days out).
+- Gate 2 (Sharpe ≥1.0, MDD ≤20%, PF ≥1.5): FAIL on Sharpe/PF (no realized P&L). MDD PASS (0%).
+- Gate 3 (≥63 days elapsed): FAIL — 1 day elapsed. Expected pass 2026-07-26 (3 months).
+
+**CRITICAL FINDING — Gate 1 Structural Risk**:
+- **Requirement**: 30 round trips/month = ~1.5 trades/trading day
+- **h=10 single-ticker design reality**: Theoretical maximum 2-3 round trips/month = ~0.1 trades/trading day
+- **Gap**: 10-15x frequency mismatch
+- **Implication**: Current strategy architecture is likely incapable of passing Gate 1 as defined
+- **Formal assessment checkpoint**: 2026-05-12 (16 days post-BUY) — by then, first round trip may have completed, enabling viability judgment. If no round trip by then, structural pivot likely needed.
+- **Pivot options**: (1) Multi-ticker (AAPL + 4-5 others), (2) Shorter horizon (h=5 or h=3), (3) Revised Gate 1 thresholds (e.g., 10 trades/month)
+
+**Task 4 — Engine Status Assessment**:
+- **Current Status**: **OFFLINE** — no trading process running
+- **Evidence**: `logs/live_trading_20260427.log` (56 KB) contains only test harness artifacts (unit test pause/resume/risk-halt sequences, mock position close messages) — not real trading
+- **Database state**: `database/stockbot.db` (241 KB, 9 tables) is valid. Open position (36 AAPL) will load correctly on engine restart via `_load_positions_from_db()`
+- **Non-blocking issues**:
+  - Stale `model_runs.is_active=1` (Run ID 7) — will be superseded on restart
+  - Empty root-level `stockbot.db` and `trading.db` — these are old empties, real DB is `database/stockbot.db`
+
+**Task 5 — Confidence in Live Trading Launch**:
+- **Confidence level**: **LOW** (structural Gate 1 frequency mismatch)
+- **Rationale**: Gate 1 requires 10-15x more trades than current architecture can produce. Unless strategy pivot occurs, the model will fail Gate 1 by definition, preventing graduation to live trading.
+- **Reserved judgment**: Gate 2 and Gate 3 confidence are reserved until first round trip completes and produces real Sharpe/MDD/PF data
+- **Decision point**: May 12 feasibility assessment will determine whether to (a) continue with current h=10 single-ticker, (b) pivot to multi-ticker/shorter-horizon, or (c) revise Gate definitions
+
+**User Action Required**:
+- **Today before 09:30 ET (13:30 UTC)**: Restart engine: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/`
+  - Engine will auto-load 36 AAPL open position from database
+  - Market opens 09:30 ET (13:30 UTC), engine should be ready 30 min prior
+- **Daily monitoring**: Check P&L, position count, trade signals
+- **May 12**: Formal feasibility assessment (should have 10+ trading days of signal data; first round trip may have completed)
+
+**Status**: Paper trading on track operationally, but Gate 1 structural risk requires May 12 reassessment and likely strategy pivot.
+
 ## 2026-04-27 04:30 — Parallel Session: resistance-research + stockbot — Phase 2 Expansion Candidates Deepened + Pre-Market System Validation
 
 **Session**: Parallel execution on resistance-research (Domain 30+ candidates) and stockbot (pre-market health check)

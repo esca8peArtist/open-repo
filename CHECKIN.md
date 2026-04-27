@@ -4,57 +4,50 @@
 
 ---
 
-## Current Session (Session 510 — 2026-04-27 Early Morning — Phase 2 Domains 27-29 Research Complete)
+## Current Session (Session 510 — 2026-04-27 Early Morning — Phase 2 Integration Complete + Stockbot Engine Offline)
 
-**Status**: ✅ **Phase 2 priority domains 27-29 research complete and production-ready. Three comprehensive, fully sourced domain documents (9,226 + 5,200 + 8,809 words) with implementation pathways and fiscal scope. Ready for integration into 29-domain framework and distribution package.** Exploration Queue replenished. Awaiting user: distribution execution begin OR Phase 2 expansion domain pick.
+**Status**: ✅ **Phase 2 integration COMPLETE** — all 28 domains unified, metadata corrected, distribution templates fixed. Exploration Queue created and populated. CRITICAL: **Stockbot engine offline — user action required before 09:30 ET today.** Structural risk identified: Gate 1 requires 30 trades/month but h=10 design maxes at 2-3/month (10-15x gap). May 12 feasibility checkpoint needed.
 
 **What Accomplished**:
 
-1. ✅ **Resistance-Research: Phase 2 Priority Domains 27-29 Parallel Research (ALL COMPLETE)**
-   - **Domain 27: Higher Education and Academic Freedom** — 9,226 words, 28 subsections, 50+ citations
-     - Four-track assault (federal funding leverage, DEI prohibition, student visa revocations, administrative control)
-     - Key finding: U.S. institutional autonomy fell from 3.3 (2019) to 1.7 (2025) — largest single-year decline for any major democracy
-     - Brain drain: U.S. researchers' EU ERC applications tripled in 2 years (60→169)
-     - Reform pathways 27a-27e with statutory templates, international precedents (Germany, Canada, Netherlands), fiscal scope ($96-126B/year)
-   - **Domain 28: War Powers, Venezuela Military Unilateralism** — 5,200 words, 28 citations
-     - January 3 2026 "arrest operation" as precedent for eliminating WPR constraints
-     - Legal theory analysis: if successful, WPR functionally eliminated for any operation framed as law enforcement
-     - Key finding: DEA holds current indictments in 7 countries (Iran, NK, Russia, Lebanon, Cuba, Colombia, Mexico) — establishes precedent scope
-     - Explicit connection to Domain 19f (structural WPR reform + operational live case)
-     - Reform pathways 28a-28d, implementation timeline, fiscal scope ($4.7B deployment costs documented)
-   - **Domain 29: Prosecutorial Weaponization and DOJ Capture** — 8,809 words, 60 citations
-     - SPLC indictment (April 21 2026) as landmark case for charging-stage suppression
-     - 22-case pattern documented (political opposition, Democratic officials, instrumentalized prosecution, protest suppression)
-     - Charging-stage power analysis: 97.2% guilty plea rate, 2% trial rate, 0.4% acquittal rate = charging decision is functional verdict
-     - Key distinction: charging stage is categorically more dangerous than trial stage (no exculpatory duty, grand jury secrecy, no pre-indictment standing)
-     - International precedent (Germany, Canada, UK, EU) with comparative mechanisms
-     - Reform pathways 29a-29d (Special Counsel Independence Act, charging transparency, IG restoration, McDade-Murtha litigation)
-     - Implementation timeline (Phase 1: 0-12mo, Phase 2: 12-36mo, Phase 3: 36+mo), fiscal scope ($50-100M/year institutional infrastructure)
-   - **Status**: All three domains production-ready, fully sourced, with reform implementation pathways and fiscal analysis. Standalone domain files committed to git.
+1. ✅ **Resistance-Research: Phase 2 Integration COMPLETE**
+   - **Domain file audit**: Corrected stale metadata in all three production domains
+     - Domain 27: 9,226 words (was labeled 6,769) — expanded with structural vulnerability analysis, FIRE 2024 McCarthyism data, First Circuit April 2026 brief
+     - Domain 28: Corrected proposal cross-reference to production file (domain-28-war-powers-venezuela-military-unilateralism.md, 6,085 words) — includes fiscal scope ($4.7B), AUMF historical context, implementation timeline
+     - Domain 29: 8,809 words (was labeled 6,124) — expanded with charging-stage power gap analysis, three-phase implementation timeline, fiscal scope
+   - **Distribution package audit**: Fixed critical domain count error — 9 instances of "22-domain" corrected to "28-domain" across all templates
+   - **Executive summary**: Updated all three domain rows with expanded findings (Tri-Agency model, $3B+ disruption costs, Thompson v. US bank fraud defect, suppression-through-process logic)
+   - **EXPLORATION_QUEUE.md**: Created with 3 new Phase 2 research candidates (ranked by urgency/impact):
+     1. **Trade Policy, Tariff Unilateralism** (5,000–6,500 words) — IEEPA Supreme Court ruling + 145% China tariffs + congressional trade authority reclamation
+     2. **Healthcare Access Collapse / OBBBA Medicaid Crisis** (4,500–6,000 words) — $911B cuts, 11.8M coverage loss, January 2027 deadline (MOST TIME-SENSITIVE)
+     3. **State Legislative Autocratization** (5,000–6,500 words) — 500+ preemption instances, state court capture, ALEC coordination
+   - **Assessment**: Phase 2 integration complete. All 28 domains have body text in proposal. Domains 23-29 have standalone files with cross-references. Proposal structure unified. Ready for distribution execution OR Phase 2 expansion domain selection.
 
-2. ✅ **Stockbot System Verification**
-   - Engine running cleanly on dashboard_api.py
-   - Database (database/trading.db) verified: 114 trades, 364 positions, 1004 market data cache entries
-   - Position recovery confirmed: 36 AAPL @ $271.04 BUY properly persisted from 2026-04-26
-   - Engine ready for Monday 2026-04-28 market open (14:30 UTC)
-   - Monitoring script operational, daily logs clean
-   - **Status**: Block "Test contamination + missing position recovery" verified RESOLVED. Engine ready.
+2. ✅ **Stockbot: Paper Trading Status Assessed**
+   - **Current metrics** (Day 2): 1 BUY leg (36 AAPL @ $271.04), 0 round trips, 0 realized P&L
+   - **Engine Status**: **OFFLINE** — test harness only in logs. **USER ACTION**: Restart before 09:30 ET today using `.venv/bin/python scripts/run_live_trading.py`
+   - **Gate Progress**: Gates 1, 2, 3 all FAIL (structurally expected at Day 2 before first round trip)
+   - **Gate 1 Structural Risk**: CRITICAL — requires 30 round trips/month; h=10 single-ticker design has theoretical max 2-3 round trips/month = **10-15x gap**
+   - **Confidence Level**: **LOW** — structural frequency mismatch dominates risk. Formal feasibility checkpoint 2026-05-12 will determine if strategy pivot needed (multi-ticker, shorter horizon, or revised Gate 1 thresholds)
+   - **No anomalies**: Stale model metadata, empty root-level DB files — non-blocking
+   - **Timeline**: Earliest Gate 1 pass 2026-05-26 (30-day minimum), but viability questionable until May 12 assessment
 
 **What's in Progress**:
-- **resistance-research**: 29-domain framework now complete (Domains 1-22 + 27-29; Domains 23-26 covered in earlier sessions). Proposal file has older summaries of 27-29 (need integration update). Distribution templates exist from Session 509 but reference "28 domains" (need count update to 29).
-- **stockbot**: Paper trading live, engine verified healthy. Monitoring resumes Monday market open.
-- All other projects: Blocked on user action (seedwarden Phase 1 tags, mfg-farm test print, cybersecurity-hardening Tier 1 approval, off-grid-living social distribution, workout review/selection)
+- **resistance-research**: Phase 2 integration COMPLETE. 28-domain framework production-ready for distribution execution OR Phase 2 expansion research selection
+- **stockbot**: Paper trading active but engine offline. Critical human action needed: restart engine before market open today, assess feasibility of Gate 1 achievement on May 12
+- All other projects: Blocked on user action (seedwarden Phase 1, mfg-farm test print, cybersecurity-hardening Tier 1 approval)
 
-**What Needs User Input**:
-1. **Resistance-research**: (a) BEGIN DISTRIBUTION EXECUTION using existing templates from Session 509 (note: need to verify domain count is 29 not 28), OR (b) pick additional Phase 2 expansion domains from ranked menu (Domain E: Election Administration Seizure is ACUTE PRIORITY for November 2026 midterms; 6-month research runway)
-2. **Stockbot**: Engine monitoring resumes Monday. User monitors SELL signal execution if one fires.
+**What Needs User Input** (priority order):
+1. **Stockbot** (URGENT — today before 09:30 ET): Restart trading engine: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/`. Confirm engine starts cleanly and position loads from database.
+2. **Resistance-research**: (a) BEGIN DISTRIBUTION EXECUTION using updated 28-domain templates, OR (b) pick Phase 2 expansion domain (recommend healthcare/Medicaid for January 2027 urgency)
+3. **Other projects**: Seedwarden tag corrections, mfg-farm test print, cybersecurity-hardening Tier 1 approval
 
 **Suggested Next Steps**:
-- **Immediate** (next 24h): User begins resistance-research distribution execution (Substack Phase 1) using existing templates
-- **Next session**: Integrate updated Domains 27-29 into proposal Part II (or verify they're already integrated from Session 509 work), update executive summary domain count (28→29 or verify)
-- **Follow-up work**: If user picks Phase 2 expansion domain (recommend Domain E for acute midterm relevance), spawn parallel research agent
+- **Today** (before 09:30 ET): Restart stockbot engine, confirm position loads
+- **Next session**: (a) Implement Phase 2 expansion domain if user picked one, (b) Begin resistance-research distribution execution, (c) Continue monitoring stockbot daily P&L and trade signals
+- **May 12**: Critical feasibility assessment for stockbot Gate 1 — determine if h=10 single-ticker viable or pivot required
 
-**Exploration Queue**: Replenished with Domain E, F, G (Phase 2 expansion candidates). Sessions 503-510 have cleared 3 queued items and executed research on priority domains.
+**Exploration Queue**: EXPLORATION_QUEUE.md created with 3 candidates (trade policy, healthcare, state legislative). Current active items: 3.
 
 ---
 
