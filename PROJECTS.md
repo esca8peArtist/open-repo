@@ -323,9 +323,9 @@
 
 2. **Ticker enforcement guard**: Add a hard assertion in `TradingSession.__init__` that the model's trained ticker matches the session's assigned ticker. Raise on mismatch. Currently enforced by convention only — a misconfiguration would silently trade the wrong stock.
 
-3. **Discord position notifications**: Send a Discord message every time any strategy opens or closes a position. Include: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized or realized P&L. Wire into order fill handler.
+3. **Discord position notifications**: Send a Discord message every time any strategy opens or closes a position. Include: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized or realized P&L. Wire into `on_trade_executed` in `src/models/model_strategy.py` (currently only logs to debug). **Use `STOCKBOT_DISCORD_WEBHOOK_URL` (stockbot channel) — NOT `DISCORD_WEBHOOK_URL` (general/orchestrator channel).** `STOCKBOT_DISCORD_WEBHOOK_URL` is already defined and used by `src/remote/hetzner_budget.py` — follow the same pattern.
 
-4. **Daily trading summary to Discord**: At market close (20:00 UTC), send a structured Discord summary: signals generated per ticker, orders placed, orders filled, open positions, closed positions, realized P&L for the day, any risk events. Write as a post-market hook in the engine.
+4. **Daily trading summary to Discord**: At market close (20:00 UTC), send a structured Discord summary: signals generated per ticker, orders placed, orders filled, open positions, closed positions, realized P&L for the day, any risk events. Write as a post-market hook in the engine. **Use `STOCKBOT_DISCORD_WEBHOOK_URL` — NOT `DISCORD_WEBHOOK_URL`.**
 
 5. **Tomorrow's paper trading verification** (2026-04-28, first clean market session):
    - Pre-open (before 13:15 UTC): Verify engine is running and connected to Alpaca paper account
