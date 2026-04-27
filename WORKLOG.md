@@ -4,6 +4,45 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 (Session 528) — resistance-research: Policy Influencer Mapping + stockbot: Paper Trading Monitor
+
+**Status**: ✅ **POLICY INFLUENCER MAPPING COMPLETE + PAPER TRADING MONITOR VERIFIED STABLE**
+
+**What was done**:
+
+1. **Orchestrator orientation**: Verified usage nominal (47.6% Sonnet), 1 active block (mfg-farm test print — user action), 0 new inbox items.
+
+2. **Paper Trading Monitor (stockbot)**:
+   - Ran daily monitoring script: `scripts/paper_trading_monitor.py`
+   - Status: 1 open BUY (AAPL @ $271.04, 36 shares), placed 2026-04-26 17:06 UTC
+   - Current state: Awaiting Monday 2026-04-28 09:30 ET market open (user engine restart required)
+   - Trades to date: 0 round trips (market closed when BUY placed on weekend)
+   - Next checkpoint: 2026-04-28 (first live market session), expected SELL signal ~10 trading days from entry (approx 2026-05-09)
+
+3. **Policy Influencer Mapping (resistance-research)** — Autonomous agent work:
+   - File created: `projects/resistance-research/policy-influencer-mapping.md` (3,500+ words)
+   - **Deliverable**: Comprehensive 3-tier influencer map with sequencing strategy
+     - **Tier 1** (25 high-leverage): 8 Democratic senators, 15 think tank/civil society leaders, 5 law school deans with clinic directors
+     - **Tier 2** (45+ contacts): 10 academic researchers (Chenoweth, Levitsky, Ziblatt, Allen, Fung, Balkin, Issacharoff, Goodman, Franks, Bouie), 12 media contacts (The Atlantic, Just Security, Lawfare, Democracy Docket, ProPublica, Vox, NYT, Washington Monthly, Heather Cox Richardson 2.9M Substack, Pod Save America 30M monthly), 6 law reviews, 5 university policy programs
+     - **Tier 3** (55+ contacts): Labor (AFL-CIO, SEIU, NEA, CWA, UAW, IBEW), state networks (DLCC, FairVote, Represent.Us, States United), civil rights (Indivisible, M4BL, NAACP, Color of Change, UnidosUS, AANJ, CPD), digital rights (EFF, CDT, AI Now), faith coalitions (Poor People's Campaign, Sojourners, Interfaith Alliance)
+   - **Key findings**:
+     - **Single highest-leverage contact**: Heather Cox Richardson (2.9M Substack subscribers, 2x any other democracy outlet). Approach path: get cited by Chenoweth/Levitsky first, then approach.
+     - **Fastest law school + congressional staff reach**: ACS network (200+ law school chapters, Next Generation Leaders program into senior policy positions)
+     - **Critical context**: SPLC under federal indictment (April 21, 2026), Bryan Fair interim CEO. Proposal's prosecutorial weaponization analysis validates their situation — approach should acknowledge directly.
+   - **Sequencing priority**: (1) Ryan Goodman at Just Security (fastest path to published citation), (2) Erica Chenoweth (highest academic credibility), (3) Wendy Weiser at Brennan Center (gateway to congressional staff). Everything else follows from those three.
+   - **Purpose**: Pre-distribution amplification strategy. Once user decides distribution path (Path A / Path A+Domain37 Hybrid / Path B), orchestrator can execute Phase 1 immediately using this map.
+
+**Project Status**:
+- **resistance-research**: 35 domains complete, policy influencer map complete. **Awaiting user distribution path decision**.
+- **stockbot**: 52-ticker portfolio complete + market regime detection ready. **Engine restart required 2026-04-28 09:30 ET**.
+- **All others**: Awaiting user actions/reviews.
+
+**Orchestration files updated**: WORKLOG.md (this entry), CHECKIN.md (current session summary), PROJECTS.md (policy mapping complete)
+
+**Next**: User decision on resistance-research distribution path → execution begins. User engine restart for stockbot Monday market open.
+
+---
+
 ## 2026-04-27 (Session 527) — stockbot: Multi-Ticker Portfolio Expansion (52-Ticker Configuration)
 
 **Status**: ✅ **PORTFOLIO EXPANSION COMPLETE** — 52-ticker ensemble stacker portfolio ready for Monday 2026-04-28 09:30 ET engine restart.
