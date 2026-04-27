@@ -4,61 +4,95 @@
 
 ---
 
-## Current Session (Session 537 Continuation — 2026-04-27 — Stockbot HMM Implementation + Phase 2 Expansion)
+## Current Session (Session 538 — 2026-04-27 — Stockbot Infrastructure Prep + Resistance-Research Phase 2 Verification)
 
-**Status**: ✅ **MARKET REGIME DETECTION IMPLEMENTATION COMPLETE + PHASE 2 EXPANSION INFRASTRUCTURE COMPLETE**. Stockbot HMM regime detection fully implemented and tested (858 unit tests passing). Two-layer position sizing (vol scalar + HMM regime scalar) ready for paper trading integration. System positioned for Gate 2 improvement (Sharpe ≥1.0, MDD ≤20%). All orchestration files current. Ready for user engine restart before 2026-04-28 09:30 ET market open (~15 hours).
+**Status**: ✅ **STOCKBOT POST-RESTART INFRASTRUCTURE READY** + ✅ **RESISTANCE-RESEARCH PHASE 2 VERIFICATION COMPLETE**. Two parallel agents completed: (1) Stockbot: 67-ticker portfolio infrastructure verified, paper trading monitor upgraded to multi-ticker aggregation, 53 infrastructure tests passing, POST_ENGINE_RESTART_CHECKLIST.md created. (2) Resistance-Research: Domains 27, 28, 29 verified production-ready (38 total domains now), all April 2026 content updates verified complete. Framework 100% production-ready for distribution path decision. Stockbot ready for 2026-04-28 09:30 ET engine restart (🚨 TIME-CRITICAL: ~13 hours remaining).
 
-**Since Last Session (Session 536)**:
+**Since Last Session (Session 537)**:
 
-**Part 1 — Stockbot Market Regime Detection** (Session 537 Continuation):
-- ✅ **HMMRegimeScalar Implementation**: New class in hmm_regime_scalar.py for probability-weighted position sizing
-  - Stateful per-ticker HMM with weekly retraining (every 5 bars)
-  - Scalar formula: `max_scale - (max_scale - min_scale) * P(Bear_regime_0)`, clipped to [0.15, 1.0]
-  - Thread-safe with per-ticker locks; disabled by default (safe for live trading)
-- ✅ **StrategyCoordinator Extended**: Full HMM opt-in layer alongside existing vol scalar
-  - `enable/disable_hmm_regime_scaling()` for dynamic control
-  - `apply_composite_scalar()` multiplies both layers
-  - Monitoring methods: `get_hmm_scalar_summary()`, `get_composite_scalar_summary()`
-- ✅ **Comprehensive Test Coverage**: 33 tests for RegimeDetector, 46 tests for HMM integration
-  - Total: 858 unit tests passing, 0 failures
-- ✅ **Activation Path**: Disabled by default; activate with `coordinator.enable_hmm_regime_scaling()` once multi-ticker baseline established
-- ✅ **Commit**: fb3e87e (feat: HMM regime scalar Approach 2 + RegimeDetector tests)
+**Part 1 — Stockbot Multi-Ticker Infrastructure Verification** (Parallel Agent):
+- ✅ **Multi-ticker configuration**: Verified 67 sessions active across Sessions 521-535 (all core tickers + 56 additional from batch expansions)
+  - Core 11: AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA ✓
+  - All sessions: 10,000 initial capital, h10_lgbm_ho strategy, start time 2026-04-28 09:30 ET ✓
+- ✅ **Database schema verified**: 9 tables clean, 62 active model_runs, 1 persisted open AAPL position (36 @ $271.04, safe for cold restart)
+- ✅ **Paper trading monitor upgraded**: Enhanced from AAPL-only to 67-ticker portfolio aggregation
+  - Portfolio-level aggregate metrics (merged Sharpe/MDD/PF across all 67 tickers)
+  - Per-ticker breakdown table with legs/round-trips/win%/PnL per ticker
+  - New flags: `--strategy` (single-ticker drill-down), `--no-per-ticker` (cron pipelines)
+  - Backward compatible with existing usage
+- ✅ **Infrastructure test coverage**: 53 new tests in test_multi_ticker_infra.py (all pass)
+  - 413+ existing multi-ticker wiring tests (all pass)
+  - 70 ensemble stacker tests (all pass)
+  - Total: 536+ tests confirming multi-ticker readiness
+- ✅ **Optional expansion assessed**: 67 tickers → ~134 trades/month (4.5x Gate 1 threshold). Further expansion not needed until Gate 2 validated. Expansion pipeline documented.
+- ✅ **New file**: POST_ENGINE_RESTART_CHECKLIST.md (restart procedure, verification commands, expected AAPL position persistence, monitoring checkpoint)
+- ✅ **Commit**: 32ae8b2 (test: multi-ticker infrastructure validation + monitor upgrade)
 
-**Part 2 — Resistance-Research Phase 2 Domain Scope Documents** (earlier in Session 537):
-- ✅ Domain 37a: Post-Election Section 3 Litigation (election night seizures → congressional certification → post-seating accountability)
-- ✅ Domain 37b: State Election Security Coordination (CISA defunding gap + state vulnerability matrix)
-- ✅ Domain 31x: Healthcare Tariff Collision (July 31 urgency + 7-date advocacy timeline)
-- ✅ Seedwarden Phase 3 Operations Playbook: TikTok/Instagram/Pinterest/email/30-day checklist complete
+**Part 2 — Resistance-Research Phase 2 Domain Verification** (Parallel Agent):
+- ✅ **Domain 27 (Higher Education and Academic Freedom)**: Production-ready, ~5,700 words, 32 sources
+  - Four tracks: federal funding leverage (Harvard $2.2B, Columbia $221M, GSA expansion, State Dept 38-university suspension); DEI compliance (450 campuses, 4x self-censorship increase, 70 bills); student visa revocations (6,000+ visas, 4 landmark cases); administrative control demands (accreditation weaponization, Compact for Academic Excellence)
+  - Academic Freedom Index 3.3→1.7 (faster than Hungary/India/Turkey). Canadian Tri-Agency model as structural reform template.
+- ✅ **Domain 29 (Prosecutorial Weaponization and DOJ Capture)**: Production-ready, ~7,200 words, 38 sources
+  - SPLC indictment (April 21) landmark case — 11 counts, Patel/Blanche announcement, legal defects across wire fraud/bank fraud/money laundering. No donor complainants. Inversion: Proud Boys/Oath Keepers pardons same month as SPLC prosecution.
+  - 22-case retaliatory pattern. Nashville/Crenshaw vindictive prosecution finding (sealed December 2025 order). May Day 2026 practical guidance.
+  - Reform pathways: S. 2644 Special Counsel Independence Act, charging transparency statute, IG restoration, civil service protection.
+- ✅ **Domain 28 (War Powers and Venezuela Military Unilateralism)**: Production-ready, ~5,600 words, 35 sources
+  - Operation Absolute Resolve: OLC memo self-undermining (concedes hybrid operation), Senate 52-47→51-50 (Vance tiebreaker), House 215-215.
+  - Fiscal: $4.7B total (Brown Costs of War), $31M/day ongoing, $2.8M/day unbudgeted. Iran as companion case (constitutional nullity vs. definitional exclusion).
+  - Four Venezuela-specific reform proposals beyond Domain 19f's structural agenda.
+- ✅ **April 2026 Content Updates**: All verified complete
+  - Domain 1: SAVE Act 48-50 defeat, four-senator institutionalist bloc analysis
+  - Domain 6: Trump v. Wilcox shadow-docket (Humphrey's Executor functional overruling), D.C. Circuit December 2025 merits
+  - Domain 19f: State Department "Epic Fury" memo (April 21), five Senate defeats, Vance constitutional rejection
+  - Domain 28: Iran-Venezuela two-flanks synthesis integrated
+  - Domain 33: 100+ ballot initiative bills (Fairness Project), Virginia redistricting post-approval nullification
+  - Domain 35: OT2026 pipeline, presidential immunity closure
+- ✅ **FISA 702 April 30 deadline**: Correctly deferred (10-day stopgap in effect, FIAA released April 24 but not voted, three scenarios pending). Queued for post-May 1 outcome check.
+- ✅ **Archive note**: Duplicate domain-28-war-powers-venezuela.md (Session 506 draft) identified. Production version supersedes. Can archive during distribution prep.
+- ✅ **Metadata**: APRIL_2026_UPDATES_SESSION_538.md created for tracking.
+- ✅ **Framework status**: 38 total domains (22 base + 19f + 15 Phase 2). Phase 2 expansion COMPLETE. 100% production-ready.
+- ✅ **Commits**: Committed by resistance-research agent to master.
 
 **What Needs Your Input**:
 
-1. **🚨 CRITICAL — stockbot engine restart** (before 2026-04-28 09:30 ET market open, ~15 hours from now):
+1. **🚨 CRITICAL — Stockbot Engine Restart** (DEADLINE: 2026-04-28 09:30 ET, ~13 hours remaining):
    - **Command**: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/`
-   - **Why**: Engine offline since April 26 22:15 UTC; open AAPL position (36 @ $271.04) ready to run to completion
-   - **What's ready**: 67 tickers fully trained and wired. Gate 1 projection: 134 trades/month (4.5x the 30 rt/month threshold)
-   - **Status**: System positioned to exceed Gate 1 threshold. May 12 checkpoint will show 3-month feasibility trajectory.
+   - **Infrastructure ready**: All 67 tickers verified. Open AAPL position (36 @ $271.04) persists safely on cold restart.
+   - **Expected outcome**: Multi-ticker paper trading begins. Gate 1 pass expected by ~2026-05-12.
+   - **Post-restart task** (autonomous): Multi-ticker paper trading setup + daily monitoring begin immediately.
 
-2. **resistance-research distribution path** (awaiting your decision, no time pressure):
-   - **Trackers updated**: April 2026 civic/legal data now current (first-amendment, environmental-rollbacks, police-brutality)
-   - **Ready for distribution**: 35-domain framework production-ready
-   - **User decision**: Path A (immediate) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (optional deepening)
-   - **Timeline**: No urgency; distribution can begin as soon as you decide path
+2. **resistance-research distribution path decision** (awaiting your decision, no time pressure):
+   - **Framework complete**: 38 domains, April 2026 current, influencer mapping done
+   - **Ready for distribution**: Path A (immediate 35-domain) / Path A+Hybrid (35 + Domain 37) / Path B (optional deepening)
+   - **No autonomy blockers**: All core framework work complete. Further deepening is optional.
+   - **Recommendation**: Path A or Hybrid allows immediate distribution impact. Path B defers 2-4 weeks for optional updates.
 
-3. **seedwarden Phase 1 launch blockers** (awaiting your action):
-   - **Remaining**: Tag corrections (3) + Etsy account verification
-   - **Timeline**: Once complete, all 21 Phase 1 products ready to list immediately
-   - **Phase 2 ready**: Lifestyle photography strategy and Phase 3 transition planning already done
+3. **seedwarden Phase 1 launch** (awaiting your action):
+   - **Blockers**: Tag corrections (3) + Etsy account verification
+   - **Status**: All 21 Phase 1 products ready to list immediately once cleared
+   - **Phase 2/3 ready**: Lifestyle photography strategy + Phase 3 operations playbook complete (no further prep needed)
 
 **Project Status**:
-- **stockbot** (P2): ✅ 67 tickers trained, Gate 1 feasible (134 rt/month). 🚩 Engine restart CRITICAL (before 09:30 ET tomorrow, ~15h away)
-- **resistance-research** (P1): ✅ 35 domains complete + Phase 2 expansion framework (3 scope docs created). ✅ Trackers current through April 27. ✅ Influencer mapping complete. 🚩 Distribution path decision (no urgency)
-- **seedwarden** (P5): ✅ Phase 1 production-ready + Phase 3 operations playbook complete (5-system execution guide). 🚩 Tag corrections + Etsy verification (Phase 1 launch blocker)
-- **cybersecurity-hardening** (P3): ✅ All tiers complete + messaging templates. 🚩 Tier 1 approval awaited (before execution)
-- **open-repo** (P6): ✅ PR #1 open, 194/198 tests passing, Phase 5 research done. 🚩 Awaiting maintainer PR merge
-- **mfg-farm** (P4): ✅ Business plan + CadQuery designs + listings complete. 🚩 Test print required (user action)
-- **All others**: Complete or paused (awaiting user action)
+- **stockbot** (P2): ✅ Infrastructure ready. 🚨 Engine restart CRITICAL (13h deadline)
+- **resistance-research** (P1): ✅ 38-domain framework complete + all April updates verified. No blockers.
+- **cybersecurity-hardening** (P3): ✅ All tiers complete. Awaiting Tier 1 approval.
+- **mfg-farm** (P4): ✅ Ready. Awaiting test print.
+- **seedwarden** (P5): ✅ Phases 1/2/3 ready. Awaiting tag corrections + Etsy verification.
+- **open-repo** (P6): ✅ PR #1 open. Awaiting maintainer merge.
+- **All others**: Complete or paused.
 
-**Usage**: Sonnet 47.6% (2,391,297 tokens) | All-models 59.4% ← Updated at session end. Two parallel agents (resistance-research, seedwarden) completed Phase 2 expansion + Phase 3 playbook work. Efficient parallel execution; no threshold concerns. Resets Tuesday 00:00 UTC (~9h away).
+**Usage**: Sonnet ~52% | All-models ~64% (post-session estimate). Two parallel agents completed major work efficiently. No threshold concerns. Reset Tuesday 00:00 UTC (~9h).
+
+---
+
+## Previous Session (Session 537 Continuation — 2026-04-27 — Stockbot HMM Implementation + Phase 2 Expansion)
+
+**Status**: ✅ **MARKET REGIME DETECTION IMPLEMENTATION COMPLETE + PHASE 2 EXPANSION INFRASTRUCTURE COMPLETE**. Stockbot HMM regime detection fully implemented and tested (858 unit tests passing). Two-layer position sizing (vol scalar + HMM regime scalar) ready for paper trading integration. System positioned for Gate 2 improvement (Sharpe ≥1.0, MDD ≤20%). Phase 2 domain scope documents created (Domain 37a/37b/31x research-ready). Seedwarden Phase 3 operations playbook complete. Ready for user engine restart before 2026-04-28 09:30 ET market open.
+
+**Key Accomplishments**:
+- ✅ **Stockbot HMM regime scalar**: 858 unit tests passing. Prob-weighted position sizing, stateful per-ticker, weekly retraining.
+- ✅ **Resistance-research Phase 2 scopes**: Domains 37a, 37b, 31x research-ready with urgency ranking and source lists.
+- ✅ **Seedwarden Phase 3 playbook**: TikTok/Instagram/Pinterest/email/30-day operations guide complete.
 
 ---
 

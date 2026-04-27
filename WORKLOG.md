@@ -4,6 +4,42 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 538 (Stockbot Infrastructure Prep + Resistance-Research Phase 2 Verification)
+
+**Status**: ✅ **STOCKBOT POST-RESTART INFRASTRUCTURE READY** + ✅ **RESISTANCE-RESEARCH PHASE 2 COMPLETE**
+
+**What was done**:
+
+1. ✅ **Stockbot Multi-Ticker Infrastructure Preparation** (Agent: stockbot)
+   - **Multi-ticker configuration verified**: 67 sessions active across Sessions 521-535 (exceeds Session 533 spec of 11). All core tickers present: AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA + 56 additional sessions from batch expansions.
+   - **Database schema verified**: 9 tables clean, 62 active model_runs (mode=PAPER, $10k capital each), 1 open AAPL position (36 shares @ $271.04, persisted safely from 2026-04-26).
+   - **Paper trading monitor upgraded**: `scripts/paper_trading_monitor.py` enhanced from AAPL-only to 67-ticker portfolio aggregation with per-ticker breakdown metrics. Portfolio-level aggregate metrics (merged Sharpe/MDD/PF). New flags: `--strategy` for single-ticker drill-down, `--no-per-ticker` for cron pipelines.
+   - **Infrastructure tests created**: 53 new tests in `test_multi_ticker_infra.py` (all passing). Pre-existing test infrastructure: 413+ multi-ticker wiring tests (all pass). Ensemble stacker tests: 70 tests (all pass).
+   - **Expansion assessment**: Optional expansion to 40+ tickers assessed as not needed. Current 67 tickers project to ~134 trades/month (4.5x Gate 1 threshold of 30). Expansion pipeline documented (train → wire → auto-register on next engine run).
+   - **New file created**: `POST_ENGINE_RESTART_CHECKLIST.md` with restart procedure, verification commands, expected initial state (persisted AAPL position), monitoring checkpoint guidance.
+   - **Readiness**: READY for 2026-04-28 09:30 ET restart. All infrastructure in place for multi-ticker paper trading immediately post-restart.
+   - **Commits**: 32ae8b2 (infrastructure tests + monitor upgrade + POST_ENGINE_RESTART_CHECKLIST.md)
+
+2. ✅ **Resistance-Research Phase 2 Domain Verification** (Agent: resistance-research)
+   - **Domain 27 (Higher Education and Academic Freedom)**: Verified production-ready. ~5,700 words, 32 sources. Four simultaneous tracks documented: federal funding leverage (Harvard $2.2B freeze with First Circuit brief filed April 16, Columbia $221M settlement, GSA certification expansion, State Department Diplomacy Lab 38-university suspension); DEI prohibition preemptive compliance (450 campuses, 4x self-censorship increase, 70 bills targeting tenure); student visa revocations (6,000+ visas, 4 landmark cases: Khalil/First Circuit, Oztürk/returned to Turkey, Mahdawi/dismissed, Khan Suri/pending Texas); administrative control demands (accreditation weaponization, Compact for Academic Excellence). Academic Freedom Index drop 3.3→1.7 (2019-2025) faster than Hungary/India/Turkey. Canadian Tri-Agency independent funding model documented as structural reform template.
+   - **Domain 29 (Prosecutorial Weaponization and DOJ Capture)**: Verified production-ready. ~7,200 words, 38 sources. SPLC indictment (April 21, 2026) landmark case documented — 11 counts, Patel/Blanche announcement, legal defects at multiple levels (wire fraud omission, Thompson bank fraud contradiction, money laundering predicate collapse), no donor complainants, inversion of accountability (Proud Boys/Oath Keepers pardons same month as SPLC prosecution). 22-case retaliatory pattern, Nashville/Crenshaw vindictive prosecution finding with sealed December 2025 order. May Day 2026 practical guidance. Reform pathways: S. 2644 Special Counsel Independence Act, charging transparency statute, IG restoration, McDade-Murtha defense, civil service protection for career prosecutors.
+   - **Domain 28 (War Powers and Venezuela Military Unilateralism)**: Verified production-ready. ~5,600 words, 35 sources. Operation Absolute Resolve documented — OLC memo self-undermining structure, Senate 52-47 advance → 51-50 defeat (Vance tiebreaker), House 215-215. Fiscal scope: $4.7B total (Brown Costs of War), $31M/day with $2.8M/day unbudgeted. Iran documented as companion case (constitutional nullity vs. definitional exclusion). Four Venezuela-specific reform proposals beyond Domain 19f's structural agenda.
+   - **Content maintenance updates verified**: Domain 1 (SAVE Act 48-50 defeat, four-senator institutionalist bloc); Domain 6 (Trump v. Wilcox Humphrey's Executor functional overruling, D.C. Circuit December 2025 merits); Domain 19f (State Department "Epic Fury" memo April 21, five Senate defeats, Vance constitutional rejection); Domain 28 (Iran-Venezuela two-flanks synthesis); Domain 33 (100+ ballot initiative bills in 15+ states, Fairness Project, Virginia redistricting post-approval nullification); Domain 35 (OT2026 pipeline, presidential immunity closure).
+   - **FISA 702 April 30 deadline**: Deferred correctly (10-day stopgap in effect, Foreign Intelligence Accountability Act released April 24 but not yet voted, three scenarios pending). Queued for next session outcome check post-May 1.
+   - **Duplicate file identified**: `domain-28-war-powers-venezuela.md` (Session 506 draft, 391 lines) superseded by production version. Can be archived during distribution prep.
+   - **New metadata file**: `APRIL_2026_UPDATES_SESSION_538.md` created for tracking.
+   - **Framework status**: 38 total domains (22 base + Domain 19f + 15 Phase 2). Phase 2 domain expansion COMPLETE. All production-ready.
+   - **Commits**: Committed by resistance-research agent to master.
+
+**Project Status Update**:
+- **stockbot** (P2): Infrastructure READY for 2026-04-28 09:30 ET engine restart. 67-ticker portfolio verified, monitoring upgraded, infrastructure tests passing (53 new tests). Post-restart task: multi-ticker paper trading setup. **TIME-CRITICAL: User engine restart required before 09:30 ET.**
+- **resistance-research** (P1): Phase 2 domain expansion COMPLETE (Domains 27, 28, 29 verified production-ready + all content maintenance verified). Framework now 38 domains, current through April 2026. Awaiting user distribution path decision (Path A / Path A+Hybrid / Path B). No autonomy blockers.
+- **All other projects**: No changes. All remain at prior session status.
+
+**No new commits** — both agents committed their work to master during execution.
+
+---
+
 ## 2026-04-27 Session 537 Continuation (Stockbot: Market Regime Detection HMM Implementation + Phase 2 Domain Research)
 
 **Status**: ✅ **MARKET REGIME DETECTION IMPLEMENTATION COMPLETE** — Stockbot HMM regime detection fully implemented and tested (858 unit tests passing, 0 failures). Two-layer position sizing (vol scalar + HMM regime scalar) ready for paper trading. System positioned for Gate 2 improvement (Sharpe target ≥1.0, MDD target ≤20%). All orchestration files current. Ready for user engine restart before 2026-04-28 09:30 ET market open.
