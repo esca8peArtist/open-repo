@@ -1,9 +1,10 @@
 # Domain 28: War Powers and Venezuela Military Unilateralism
 
 **Document created**: 2026-04-27 (Session 509)
-**Crisis window**: January 3–22, 2026 (Operation Absolute Resolve and congressional response)
+**Updated**: 2026-04-27 — Cross-domain connections expanded with Iran-Venezuela synthesis: Operation Epic Fury as larger-scale empirical instance; fifth Senate vote (46-51, April 23) and Vance constitutional rejection documented
+**Crisis window**: January 3–22, 2026 (Operation Absolute Resolve and congressional response); ongoing (Iran war as parallel larger instance, May 1 WPR deadline)
 **Priority**: High — live constitutional confrontation with documented legislative votes and a novel legal theory with no established precedent
-**Word count**: approximately 5,200 words
+**Word count**: approximately 5,400 words
 **Citations**: 28 sourced references
 **Cross-domain connections**: Domain 19f (War Powers Reform — Iran/structural), Domain 6 (Judicial Independence — political question doctrine), Domain 2 (Executive Accountability), Domain 4 (Press Freedom — Seth Harp subpoena)
 
@@ -308,6 +309,8 @@ The Venezuela operations were not only a constitutional confrontation — they w
 ## Cross-Domain Connections
 
 **Domain 19f (War Powers Reform — Iran)**: The Iran and Venezuela operations share the constitutional diagnosis — presidential war-making without congressional authorization — but are doctrinally distinct. Iran invokes the 60-day clock; Venezuela claims the clock never starts. These are two separate flanks of the same structural failure. Domain 19f's structural reforms (AUMF modernization, automatic funding cutoffs, constitutional amendment) are necessary but insufficient: they do not close the Venezuela-specific "arrest operation" loophole.
+
+**The Iran operation as the larger empirical instance of the same doctrine**: Operation Epic Fury (February 28, 2026) is not a separate constitutional phenomenon from Operation Absolute Resolve — it is the same unilateral war-making doctrine operating at larger scale and longer duration. Venezuela demonstrated the "arrest operation" framing as a mechanism for avoiding War Powers Resolution triggering entirely. Iran accepted the 60-day clock but asserted the right to ignore it through a different route: VP Vance's January 2026 declaration that "the War Powers Act is fundamentally a fake and unconstitutional law" converts the question from "does the clock apply?" to "does the statute apply at all?" As of April 27, 2026, the Senate has blocked war powers resolutions five times (the fifth on April 23, 46-51) and the House failed 215-215, with the May 1, 2026 deadline four days away and the administration publicly announcing non-compliance. The Iran case is the stress test of what the Venezuela case predicted: if you assert the clock does not start, you can conduct an arrest operation with impunity. If you assert the clock is fake, you can conduct a full-scale war with impunity. The two legal theories together constitute a complete dismantling of the War Powers Resolution framework. The reform proposals in Sections 7 and 8 of this domain address both flanks: the definitional loophole (Section 7.1) applies equally to "arrest operations" in Venezuela and to the administration's constitutional rejection in Iran.
 
 **Domain 6 (Judicial Independence)**: The political question doctrine — courts' refusal to adjudicate war powers disputes — is the enabling condition for both the Iran and Venezuela confrontations. Statutory standing legislation (Section 7.2 above) is the most direct pathway to forcing judicial engagement.
 
