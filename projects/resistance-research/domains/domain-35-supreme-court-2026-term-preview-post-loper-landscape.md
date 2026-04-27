@@ -2,6 +2,7 @@
 
 **Research completed**: April 27, 2026 (Session 515)
 **Updated**: April 27, 2026 — Section 5.1 expanded with two-stage Humphrey's Executor collapse: shadow docket (Trump v. Wilcox, May 2025) + D.C. Circuit merits ruling (December 2025); Section 6.1 Point 2 updated to present-tense
+**Updated**: April 27, 2026 (Session 523) — Section 2.4b added: post-Slaughter OT2026 independent agency landscape; Fed carve-out status; follow-on litigation pipeline; reform planning implications confirmed
 **Judicial landscape status**: Active transformation — three foundational doctrines reshaped since June 2024; NLRB quorum gone since May 2025
 **Priority designation**: Phase 2 Expansion — essential for adaptive reform planning (Domains 2, 6, 13)
 **Cross-domain connections**: Domain 2 (Executive Power / Presidential Immunity), Domain 6 (Judicial Independence and Reform), Domain 13 (Constitutional Amendments), Domain 29 (DOJ Capture), Domain 34 (Congressional Power of the Purse)
@@ -93,6 +94,20 @@ A cert grant would not necessarily broaden into a general Section 230 reconsider
 ### 2.4 Article III Adjudication and Agency Enforcement
 
 **Department of Labor v. Sun Valley Orchards** (solicitor general petition): Whether Congress can assign visa penalty adjudications to the Labor Department rather than Article III courts. The SG's petition — filed by the Trump administration — challenges the constitutionality of agency adjudication even for the government's preferred enforcement mechanism, illustrating the scope of the post-Jarkesy doctrinal disruption. This case, if granted, would extend Jarkesy's jury-trial requirement into immigration enforcement and labor visa proceedings.
+
+### 2.4b Post-Slaughter Independent Agency Landscape for OT2026
+
+The *Trump v. Slaughter* decision (expected late June 2026) will arrive just as the October 2026 term is being constituted — making its outcome directly relevant to OT2026 docket predictions. Whatever *Slaughter* holds, a wave of follow-on litigation will be certiorari-ready for OT2026.
+
+**If *Slaughter* overrules *Humphrey's Executor* broadly**: Courts will face immediate challenges to the removal protections of the EEOC, FEC, FCC, CFTC, and Federal Reserve Board. The *Slaughter* shadow docket order explicitly carved out the Federal Reserve with a "uniquely structured, quasi-private entity" reservation. Whether that reservation survives a merits ruling — or whether Trump's subsequent threats to fire Federal Reserve Chair Powell (walked back in April 2026 after market turbulence) generate standalone litigation — is the highest-stakes open question. A cert petition challenging the Fed carve-out could reach the Court in OT2026 if filed immediately after the *Slaughter* decision.
+
+**If *Slaughter* narrows *Humphrey's Executor* without full overruling**: Courts must determine which agencies retain protection under the narrowed standard. The NLRB (quasi-legislative, quorum already gone), FTC (enforcement/rulemaking), FEC (electoral), and CFPB (single-director structure already addressed in *Seila Law*) each present distinct structural arguments. A circuit split on which agencies survive the narrowed test could resolve in OT2026.
+
+**The Wilcox/Harris OT2026 connection**: The shadow docket stay in *Trump v. Wilcox* (May 2025) was not a merits ruling. If *Slaughter* resolves the FTC question but leaves NLRB and MSPB officer removal on the merits undecided, a certiorari petition in the Wilcox/Harris litigation remains possible — though the D.C. Circuit's December 2025 merits ruling means both officials are formally out regardless of whether the Supreme Court addresses their specific case. The more likely OT2026 vehicle is a post-*Slaughter* challenge to a newly fired EEOC or FEC commissioner.
+
+**Reform planning implication**: Section 5.2's observation that agency independence cannot be secured through statute alone is now confirmed, not contingent. Reform strategies must assume that every independent agency position is functionally at-will for the remainder of this administration and potentially permanently, depending on *Slaughter*'s scope.
+
+Sources: [SCOTUSblog: Trump v. Slaughter explainer](https://www.scotusblog.com/2025/12/trump-v-slaughter-an-explainer/); [Oyez: Trump v. Slaughter case overview](https://www.oyez.org/cases/2025/25-332); [The Steptoe: Fed carve-out analysis](https://www.steptoe.com/en/news-publications/the-fed-can-stay-but-the-rest-of-you-have-to-go-why-a-temporary-supreme-court-decision-might-signal-the-end-is-near-for-independent-agencies.html); [Missouri Law Review: Trump v. Wilcox and the Supreme Court's Retreat from Administrative Independence](https://lawreview.missouri.edu/trump-v-wilcox-and-the-supreme-courts-retreat-from-administrative-independence/); [Constitutional Accountability Center: Wilcox v. Trump](https://www.theusconstitution.org/litigation/wilcox-v-trump/)
 
 ### 2.5 APA Vacatur Scope: The CASA Unresolved Question
 

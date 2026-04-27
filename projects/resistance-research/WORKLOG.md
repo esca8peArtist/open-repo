@@ -2,6 +2,69 @@
 
 ---
 
+## April 27, 2026 (Session 523) — Domain Updates: Priority Batch (19f, 29, 33, 35, Domain 6)
+
+**Session type**: Domain content updates per PROJECTS.md Exploration Queue
+**Files updated**:
+- `projects/resistance-research/domains/domain-19f-war-powers-reform.md`
+- `projects/resistance-research/domains/domain-29-prosecutorial-weaponization-and-doj-capture.md`
+- `projects/resistance-research/domains/domain-33-state-legislative-autocratization.md`
+- `projects/resistance-research/domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md`
+- `projects/resistance-research/democratic-renewal-proposal.md` (Domain 6 section 6e)
+
+### What Was Done
+
+**Domain 19f (War Powers Reform)** — Added "Post-May 1 Constitutional Phase" subsection (~600 words):
+- Democratic escalation strategy: The Hill reporting on Democrats planning repeated floor votes post-May 1 regardless of administration response
+- GOP fracture calculus: Collins and Murkowski named as potential post-deadline defectors based on their own pre-deadline statements
+- "Legalization through appropriation" trap: Democrats committed to explicit non-authorization language in any supplemental; Republicans who fund without that language will have implicitly authorized under executive branch doctrine
+- Structural precedent analysis: May 1 non-compliance, if administration simply continues, will be the most direct statement in 50-year history that the 60-day clock is a legal nullity — citing every future administration
+- 6 new sources added
+
+**Domain 29 (Prosecutorial Weaponization)** — Section 4.2 (Accountability Infrastructure Dismantled) expanded (~450 words):
+- DOJ proposed state bar rule (April 25, 2026): documented with ABA opposition, Democratic AG comment filing, McDade-Murtha Amendment violation analysis; no final rule issued as of this writing
+- House Judiciary Patel investigation: Rep. Raskin leading formal inquiry into Atlantic report on Patel alcohol abuse/absences; Schumer/Durbin preservation letter to Blanche; four-item demand (AUDIT questionnaire, sworn statement, security clearances, communications)
+- Dual-track suppression analysis: $250M Atlantic lawsuit filed April 20 + SPLC indictment announced April 21 = same-week dual-track documented as pattern, not coincidence
+- 7 new sources added
+
+**Domain 33 (State Legislative Autocratization)** — Section 1.3 (Ballot Initiative Capture) expanded (~450 words):
+- 2026 data distinguished from 2025: 100+ bills in 15+ states in opening weeks of 2026 sessions alone (Fairness Project)
+- BISC March 30 tracking: 155 bills across 31 states and D.C.
+- 6-state supermajority push: Oklahoma, Arizona, Missouri, North Dakota, South Dakota, Idaho — all advancing 60% threshold proposals
+- Missouri geographic distribution requirement: citizen amendments must win in each of 8 congressional districts — 95% statewide support could be defeated by failure in one rural district
+- SAVE Act Senate failure (48-50, 4 GOP defectors: Murkowski, McConnell, Collins, Tillis) integrated as state-vs-federal track divergence case study: federal SAVE Act dies while 4 states sign proof-of-citizenship laws within weeks
+- 7 new sources added
+
+**Domain 35 (Supreme Court 2026 Term)** — New Section 2.4b added (~500 words):
+- Post-Slaughter OT2026 pipeline: depending on scope of Slaughter ruling (expected late June 2026), wave of follow-on independent agency challenges will be certiorari-ready for OT2026
+- Fed carve-out status: shadow docket reservation in unsigned order — open question whether survives merits ruling or direct challenge
+- Wilcox/Harris OT2026 connection: D.C. Circuit already ruled (December 2025), so Wilcox vehicle less likely than a newly fired EEOC or FEC commissioner as the OT2026 case
+- Reform planning confirmed: Section 5.2's contingent observation ("may be overruled") is now confirmed fact
+- 5 new sources added
+
+**Domain 6 in democratic-renewal-proposal.md** — Section 6e (Shadow Docket Reform) evidence paragraph expanded (~400 words):
+- Trump v. Wilcox (May 22, 2025) documented as paradigm case of shadow docket used to effectively overrule major precedent without named opinion
+- Kagan dissent quoted: "effectively repealed Humphrey's Executor by fiat"
+- Federal Reserve carve-out documented as written into unsigned emergency order, not reasoned opinion
+- D.C. Circuit December 2025 merits ruling noted: Humphrey's Executor functionally overruled for NLRB/MSPB through shadow docket + circuit ruling, before formal SCOTUS merits decision
+- Trump v. Slaughter (December 2025 oral argument, late June 2026 decision) framed as the formal completion of what Wilcox started
+- 4 new sources added
+
+### Sources Research Method
+
+WebSearch used for: Iran war powers post-May 1 dynamics; SPLC post-April 24 developments; DOJ Democratic investigations/Patel suits; SAVE Act Senate failure; state ballot initiative 2026 data; Trump v. Wilcox/Slaughter OT2026 positioning
+
+All findings cross-checked against existing domain content to avoid duplication. Material already present was not re-added.
+
+### Items NOT Updated (Why)
+
+- **Domain 28 (Venezuela)**: Iran cross-reference already present per April 27 session header — confirmed complete
+- **Domain 1 (SAVE Act)**: SAVE Act Senate failure (4 GOP defectors, 48-50) integrated into Domain 33 as cross-reference; standalone Domain 1 update would add <200 words and duplicate this material — deferred
+- **Domains 21, 25 (FISA 702)**: Deadline not yet passed as of this writing (April 30 deadline); update requires post-deadline outcome data — queued for next session
+- **CHECKIN.md**: No urgent flags requiring user input from this session
+
+---
+
 ## April 27, 2026 (Session 521) — Domain 23 April 2026 Content Refresh
 
 **Session type**: Domain content update
