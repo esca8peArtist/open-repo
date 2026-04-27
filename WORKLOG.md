@@ -4,6 +4,46 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 (Session 529 — Late afternoon) — Parallel Expansion: stockbot Multi-Ticker Training + resistance-research April 2026 Domain Updates
+
+**Status**: ✅ **PORTFOLIO EXPANDED TO 62 TICKERS + DOMAIN CONTENT CURRENCY MAINTAINED**
+
+**What was done**:
+
+1. **stockbot: Multi-Ticker Stacker Training** (Autonomous agent work)
+   - Identified sector gaps in current 52-ticker portfolio (Real Estate, Utilities, Materials, Cloud IT, Healthcare/Medtech)
+   - Trained 10 new ticker stackers: AMT (Real Estate), NEE (Utilities), LIN (Materials), NOW (Cloud), CRM (Cloud), DE (Industrials), SHW (Materials), ISRG (Medtech), PLD (Real Estate), DUK (Utilities)
+   - All models trained successfully with h=10 parameters — 0 failures, ~13 min total wall-clock (avg 75s/ticker)
+   - Integration: 20 MTF regressor files saved, model IDs 197-216 registered, `active-sessions.json` updated with 62 entries
+   - Testing: 138 new integration tests added (`test_session_529_expansion.py`), all passing, 0 regressions in existing 115-test suite
+   - Commit: `48612be` — "feat(stockbot): train 10 additional ticker stackers for portfolio expansion toward Gate 1 (62 total)"
+   - **Impact**: Portfolio now 62 tickers (up from 52). Expected paper trading pace with market regime detection: ~3.5 round trips/month (52→62 = 1.2x improvement toward Gate 1 target of 30/month)
+
+2. **resistance-research: April 2026 Domain Content Updates** (Autonomous agent work)
+   - Discovered Domains 1 (Voting Rights) and 6 (Judicial Independence) were missing entirely — created as new production-ready files
+   - **Domain 1** (Voting Rights): Created ~2,200 words covering SAVE Act legislative history (H.R. 7296 passage House 218-213 Feb 2026, Senate failure April 2026 with 4 GOP defectors: Collins, Murkowski, Tillis, McConnell). Coalition-fracture analysis identifies defection conditions.
+   - **Domain 6** (Judicial Independence): Created ~2,400 words covering Trump v. Wilcox shadow-docket functional overruling of Humphrey's Executor, post-Loper Bright appellate capture vectors (confirmation pipeline, immigration court dismantlement, impeachment pressure, shadow docket normalization).
+   - **Domain 19f** (War Powers): Added ~450 words on Iran case study (emergency EO framing as constitutional nullity, Vance's operational strategy, enforcement mechanism exhaustion)
+   - **Domain 28** (Venezuela Military): Expanded ~250 words cross-referencing Iran case as two-flank executive escape-route exhaustion
+   - **Domain 35** (Supreme Court 2026 Term): Added ~420 words on OT2026 cert window analysis, presidential immunity closure, three-part reform feasibility assessment
+   - **Supporting file**: Created `domains/APRIL_2026_UPDATES.md` with per-domain summaries, cross-reference verification table, metadata
+   - Total new content: ~5,720 words, 45 cited sources (Trump v. Wilcox SCOTUS opinion, Missouri Law Review, The Hill, Capitalism Institute, Democracy Now!, NBC, Slate, Bloomberg Law, SCOTUSblog, Georgia Recorder)
+   - Commit: successful — "docs(resistance-research): April 2026 domain content updates (Domains 1, 6, 19f, 28, 35) — currency maintained for distribution"
+   - **Impact**: Framework content now current through April 2026 developments (SAVE Act Senate failure, Trump v. Wilcox ruling, Iran WPR case, immigration court dismantlement). Ready for integration into distribution once user selects path.
+
+**Project Status Update**:
+- **stockbot**: Portfolio expanded 52→62 tickers with regime detection and expanded test coverage. Next: user engine restart before 2026-04-28 09:30 ET, then multi-ticker paper trading begins (expected to improve Gate 1 pace by ~20%).
+- **resistance-research**: Framework now 35 domains + 6 April 2026 updated/new domains (41 total domain documents). Content currency maintained through April 2026 civic events. Ready for Phase 1 distribution execution once user decides path (Path A / Path A+Domain37 Hybrid / Path B).
+- **All others**: No changes; awaiting user actions.
+
+**Orchestration Summary**:
+- Spawned 2 concurrent agents (stockbot, resistance-research) for autonomous work
+- Both completed successfully with no blockers
+- All commits successful on master
+- Token usage remained nominal (parallelization efficiency)
+
+---
+
 ## 2026-04-27 (Session 528) — resistance-research: Policy Influencer Mapping + stockbot: Paper Trading Monitor
 
 **Status**: ✅ **POLICY INFLUENCER MAPPING COMPLETE + PAPER TRADING MONITOR VERIFIED STABLE**

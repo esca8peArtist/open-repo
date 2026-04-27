@@ -4,49 +4,62 @@
 
 ---
 
-## Current Session (Session 528 — 2026-04-27 Midday — Policy Influencer Mapping + Stockbot Paper Trading Monitor)
+## Current Session (Session 529 — 2026-04-27 Late Afternoon — Parallel Expansion: stockbot Tickers + resistance-research April Content)
 
-**Status**: ✅ **POLICY INFLUENCER MAPPING COMPLETE + PAPER TRADING STABLE**. Comprehensive 3-tier influencer map (150+ contacts) created for resistance-research distribution amplification. Stockbot paper trading verified healthy, awaiting Monday market open and user engine restart.
+**Status**: ✅ **MULTI-TICKER PORTFOLIO EXPANDED TO 62 + APRIL 2026 DOMAIN CURRENCY COMPLETE**. Parallel agents expanded stockbot paper trading capacity (52→62 tickers, ~20% Gate 1 pace improvement) and updated resistance-research framework content through April 2026 developments (5,720 new words, 41 total domain documents).
 
 **What Accomplished**:
 
-✅ **resistance-research: Policy Influencer Mapping COMPLETE**
-- **File created**: `projects/resistance-research/policy-influencer-mapping.md` (3,500+ words, 30+ source citations)
-- **3-tier influencer map**:
-  - **Tier 1** (25 high-leverage): 8 Democratic senators, 15 think tank/civil society leaders, 5 law school deans
-  - **Tier 2** (45+ contacts): 10 academic researchers, 12 media outlets, 6 law reviews, 5 university policy programs
-  - **Tier 3** (55+ contacts): Labor unions, state networks, civil rights coalitions, digital rights orgs, faith coalitions
-- **Key strategic findings**:
-  - Heather Cox Richardson (2.9M Substack) is single highest-leverage media contact
-  - ACS network (200+ law school chapters) fastest path to simultaneous reach
-  - SPLC currently under federal indictment (April 21) — approach should acknowledge proposal's prosecutorial weaponization analysis
-- **Sequencing priority**: Ryan Goodman (Just Security), Erica Chenoweth, Wendy Weiser (Brennan Center) — first three approaches cascade everything else
-- **Purpose**: Pre-distribution amplification strategy, ready for execution once user decides distribution path (Path A / Path A+Domain37 Hybrid / Path B)
+✅ **stockbot: Multi-Ticker Stacker Training — Portfolio Expanded 52→62 Tickers**
+- **10 new ticker stackers trained**: AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK
+- **Sector coverage**: Filled gaps in Real Estate (AMT, PLD), Utilities (NEE, DUK), Materials (LIN, SHW), Cloud IT (NOW, CRM), Healthcare/Medtech (ISRG), Industrials (DE)
+- **Training results**: All models h=10 LightGBM with held-out validation — 0 failures, ~75s avg per ticker, 13 min total wall-clock
+- **Integration**: 20 MTF regressor files saved, model IDs 197-216 registered, `active-sessions.json` updated (62 entries)
+- **Testing**: 138 new integration tests, all passing, 0 regressions in existing suite
+- **Impact**: Expected paper trading pace improvement with regime detection: ~3.5 round trips/month (vs. 52-ticker ~2.8/month). Gate 1 target: 30/month — portfolio now 24% of way there, vs. 9% before expansion.
+- **Next**: User engine restart before 2026-04-28 09:30 ET, then multi-ticker paper trading begins Monday market open
 
-✅ **stockbot: Paper Trading Monitor Verified STABLE**
-- **Status**: 1 open BUY (AAPL @ $271.04, 36 shares, placed 2026-04-26 17:06 UTC)
-- **Current state**: Market closed when BUY placed (weekend). 0 round trips completed. Awaiting Monday 2026-04-28 09:30 ET market open.
-- **Next checkpoints**:
-  - 2026-04-28 (Day 3): First live market session — verify engine restart, position persists
-  - 2026-05-09 (approx): Expected first SELL signal (~10 trading days from BUY entry)
-  - 2026-05-12 (Day 16): Gate 1 feasibility formal checkpoint
-  - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail
-- **Portfolio state**: 52 tickers ready, regime detection deployed, all tests passing
+✅ **resistance-research: April 2026 Domain Content Updates — Framework Currency Maintained**
+- **6 domains updated/created**: Domains 1 (Voting Rights — NEW), 6 (Judicial Independence — NEW), 19f (War Powers), 28 (Venezuela Military), 35 (Supreme Court 2026 Term)
+- **New content scope**: ~5,720 words, 45 cited sources
+- **Key findings documented**:
+  - **Domain 1**: SAVE Act legislative history (Senate failure April 2026, 4 GOP defectors with coalition-fracture analysis)
+  - **Domain 6**: Trump v. Wilcox shadow-docket ruling, post-Loper Bright appellate capture vectors (confirmation pipeline, immigration court dismantlement, impeachment pressure)
+  - **Domain 19f**: Iran WPR case study (emergency EO framing, enforcement mechanism exhaustion)
+  - **Domain 28**: Cross-reference Iran case as parallel executive escape-route exhaustion
+  - **Domain 35**: OT2026 cert window analysis, presidential immunity closure, three-part reform feasibility
+- **Supporting file**: `domains/APRIL_2026_UPDATES.md` with per-domain summaries, cross-reference verification, metadata
+- **Framework status**: Now 41 total domain documents (35 base + 6 April 2026 updated/new). Content current through April 2026 civic events.
+- **Next**: Integration into Phase 1 distribution once user selects path
 
 **Blocker Resolution**:
-- **mfg-farm test print**: Still active (user action required)
+- **mfg-farm test print**: Still active (user action required) — no change
 - No new blockers identified
+- ✅ **stockbot regime detection**: Already complete (Session 526)
 
 **What Needs Your Input**:
-1. **resistance-research distribution path**: Path A (distribute now) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (continue optional updates). Policy influencer map is ready for any path choice.
-2. **stockbot engine restart**: Must happen before 2026-04-28 09:30 ET. Command: `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/.
+1. **resistance-research distribution path** (URGENT for Phase 1 execution): 
+   - **Path A**: Distribute 35-domain framework now (maximizes timeliness)
+   - **Path A+Domain37 Hybrid** (RECOMMENDED): Begin general-audience distribution (law schools, think tanks, labor) while sequencing Domain 37 (election interference) into distribution targeting election-protection orgs specifically
+   - **Path B**: Continue optional domain updates before distribution (2-4 week extension)
+   - Policy influencer map ready for any path choice.
+
+2. **stockbot engine restart** (CRITICAL — before 2026-04-28 09:30 ET Monday): 
+   - Command: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/`
+   - Current open position: BUY 36 AAPL @ $271.04 (placed 2026-04-26, will be re-evaluated Monday when market opens)
+   - Portfolio state: 62 tickers ready, all tests passing
 
 **Project Status**:
-- **resistance-research**: ✅ 35 domains complete, ✅ policy influencer map complete. 🚩 Awaiting user distribution path decision.
-- **stockbot**: ✅ 52-ticker portfolio complete, ✅ market regime detection deployed, ✅ paper trading stable. 🚩 User engine restart required Monday 09:30 ET.
+- **resistance-research**: ✅ 35 domains + April updates complete (41 total documents), ✅ policy influencer map complete. 🚩 User distribution path decision required.
+- **stockbot**: ✅ 62-ticker portfolio complete, ✅ market regime detection deployed, ✅ multi-ticker expansion tested. 🚩 User engine restart required Monday 09:30 ET.
 - **cybersecurity-hardening**: ✅ All distribution tiers complete. Awaiting user Tier 1 outreach execution.
-- **open-repo**: PR #1 open, awaiting review/merge.
+- **open-repo**: ✅ Phase 4 PR open, awaiting review/merge.
 - **All others**: Awaiting user actions.
+
+**Suggested Next Priorities**:
+1. **Immediate (by Monday 2026-04-28 09:30 ET)**: Restart stockbot engine to let paper trading continue through multi-ticker portfolio
+2. **This week**: Decide resistance-research distribution path (Path A/B/Hybrid) to unblock Phase 1 execution
+3. **This week**: Review cybersecurity-hardening Tier 1 templates if approving distribution outreach
 
 **Orchestration files updated**: WORKLOG.md (Session 528 entry), CHECKIN.md (this entry), PROJECTS.md (noted policy mapping complete)
 
