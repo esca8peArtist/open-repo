@@ -7,32 +7,42 @@
 
 ## Status
 
-Phase 2 integration complete as of Session 510. Domains 27-29 are production-ready and integrated into all deliverables. The exploration queue below identifies 2-3 candidates that would most meaningfully strengthen the proposal's current gaps.
+Phase 2 expansion in progress. As of Session 512:
+- ✅ **Domain 23 (Trade Policy) — COMPLETE** — 8,849 words, integrated into proposal Part II, SCOTUS February 2026 ruling fully analyzed
+- Domains 27-29 from Session 506 remain production-ready
+- **Total framework**: 29 domains complete
+
+The queue below identifies remaining Phase 2 candidates that would meaningfully strengthen the proposal.
 
 ---
 
 ## Queued Phase 2 Candidates — Priority Order
 
-### Candidate 1 (Highest Priority): Trade Policy, Tariff Unilateralism, and Economic Sovereignty
+### ~~Candidate 1 (COMPLETED — Session 512): Trade Policy, Tariff Unilateralism, and Economic Sovereignty~~
 
-**Why this is the gap:** The proposal covers antitrust (Domain 20), fiscal reform (Domain 5), and economic concentration, but has no domain addressing trade policy as a democratic accountability problem. The current tariff regime — 145% on Chinese goods, 10% global baseline, IEEPA invocation — has no modern precedent and is producing effects visible to ordinary voters in ways that abstract governance crises are not. The Supreme Court's February 20, 2026 ruling on IEEPA authority is the most significant economic constitutional confrontation of the current period and is unaddressed anywhere in the 28-domain framework.
+**Status**: ✅ COMPLETE — Domain 23 written, 8,849 words, integrated into proposal Part II
 
-**Core research questions:**
-- What is the constitutional and statutory basis for IEEPA tariff authority, and what did the Supreme Court's February 2026 ruling actually decide?
-- How do the tariffs interact with the democratic accountability structure — who authorized them, who can undo them, what congressional reclamation mechanisms exist?
-- What are the documented economic effects on small businesses (61% reporting negative impact per NFIB), supply chains, and median household costs?
-- What structural reforms — congressional reclamation of trade authority, IEEPA reform, WTO re-engagement — are available?
-- International precedent: how do the EU, Canada, and Japan constrain executive trade authority through parliamentary approval requirements?
-
-**Connection to existing domains:** Domain 2 (executive accountability — IEEPA as unreviewable emergency power), Domain 20 (economic concentration — tariffs as corporate welfare for protected industries), Domain 5 (fiscal reform — tariffs as regressive consumption taxes), Domain 18 (social safety net — trade adjustment assistance gaps), Domain 6 (judicial independence — political question doctrine applied to trade).
-
-**Sourcing confidence:** High. Peterson Institute, Tax Policy Center, NFIB surveys, Congressional Research Service trade authority analyses, IEEPA statutory text and legislative history, Brennan Center executive power analysis, WTO dispute settlement record.
-
-**Estimated scope:** 5,000–6,500 words. Fits between Domains 20 and 22 in the proposal sequence; could be numbered Domain 23 or inserted as Domain 20b.
+**Findings**: 
+- February 20, 2026 SCOTUS ruling (*Learning Resources, Inc. v. Trump*) struck down IEEPA tariff authority 6-3
+- Chief Justice Roberts majority (joined by Sotomayor, Kagan, Gorsuch, Barrett, Jackson) applied major questions doctrine
+- Administration pivoted to Section 122 Trade Act (1974) — 10% cap, expires July 24, 2026
+- Section 301 investigations (launched March 2026) are long-term replacement strategy (no rate cap, no sunset)
+- Trade Adjustment Assistance lapsed July 2022, not reauthorized — $264B FY2025 tariff revenue with zero worker support
+- 24 state AGs challenging Section 122 tariffs in Court of International Trade (oral argument April 10, 2026)
+- International precedent: EU/Canada/Japan all require parliamentary approval or judicial review for tariff changes
+- Reform pathways: IEEPA amendment, CRA repeal, Trade Review Act (S.1272), TAA reauthorization, WTO re-engagement
 
 ---
 
-### Candidate 2 (High Priority): Healthcare Access Collapse — The OBBBA Medicaid Crisis and the Democracy-Health Nexus
+### ~~OLD REFERENCE - See completed Domain 23 for full details~~
+
+~~Candidate 1 (Highest Priority): Trade Policy, Tariff Unilateralism, and Economic Sovereignty~~
+
+See `projects/resistance-research/domains/domain-23-trade-policy-tariff-unilateralism.md` for full research and analysis.
+
+---
+
+### Candidate 1 (Highest Priority): Healthcare Access Collapse — The OBBBA Medicaid Crisis and the Democracy-Health Nexus
 
 **Why this is the gap:** Domain 11 covers healthcare structural reform but was written before the One Big Beautiful Budget Act's $911 billion Medicaid cuts were fully documented, before the 11.8 million coverage loss projection was published, before the rural hospital closure data accumulated, and before the work requirement implementation timeline (effective January 2027, HHS guidance due June 2026) created a discrete advocacy window. The democracy-health nexus — health disparities as a mechanism of political exclusion, Medicaid enrollment as a citizenship infrastructure question — is the angle that makes this a democracy research priority rather than a healthcare policy update.
 
@@ -53,7 +63,7 @@ Phase 2 integration complete as of Session 510. Domains 27-29 are production-rea
 
 ---
 
-### Candidate 3 (High Priority): State Legislative Autocratization — Preemption, Gerrymandering, and the State-Level Democratic Erosion Track
+### Candidate 2 (High Priority): State Legislative Autocratization — Preemption, Gerrymandering, and the State-Level Democratic Erosion Track
 
 **Why this is the gap:** The proposal addresses federal democratic erosion comprehensively but treats state-level democratic erosion primarily through the lens of federalism (Domain 9) and voting rights (Domain 1). The actual 2025-2026 state legislative record reveals a pattern — described by comparative politics researchers as "state-level autocratization" — that operates independently of federal action and, in some states, has proceeded further than the federal level. Academic freedom attacks (Domain 27 documents the tenure bills) are one thread; this candidate would document the broader pattern including preemption laws blocking municipal democracy, single-party legislative supermajorities insulating themselves from voter accountability, and anti-protest legislation operating as a state-level First Amendment carve-back.
 

@@ -13193,3 +13193,129 @@ Queue now empty (3 items worked). Should add 2-3 new Phase 2 research candidates
 
 **Total Phase 2 domains completed**: 6 (Domains 27-29 completed this session; Domains 26, 25, 24, 23 completed in Sessions 500-502)
 
+
+## 2026-04-27 06:15 — Session 512: Autonomous Orchestrator — Phase 2 Expansion Domain 23 Research Complete
+
+**Session Type**: Autonomous (headless on Raspberry Pi 5)
+**Duration**: ~12 min
+**Work**: Phase 2 expansion — Domain 23 (Trade Policy, Tariff Unilateralism) research and integration
+
+### Session Protocol Execution
+
+**1. Orient** ✅
+- Read ORCHESTRATOR_STATE.md, INBOX.md, BLOCKED.md, PROJECTS.md
+- Priority order: resistance-research (1) → stockbot (2) → cybersecurity-hardening (3)
+- Active blocks: 1 (mfg-farm test print, manual)
+- Available autonomous work: resistance-research Phase 2 expansion (Exploration Queue has 3 candidates)
+
+**2. Process INBOX.md** ✅
+- No new items
+
+**3. Select Task** ✅
+- **Candidate 1: Trade Policy, Tariff Unilateralism, Economic Sovereignty** selected
+- Rationale: Highest-priority gap (February 2026 SCOTUS ruling on IEEPA just decided), high sourcing confidence, 5,000–6,500 word scope
+- Previous session (510) audit identified this as "most urgent for Trump tariff analysis"
+
+**4. Execute Research**
+- Spawned resistance-research subagent to write Domain 23
+
+---
+
+### resistance-research: Domain 23 (Trade Policy, Tariff Unilateralism, Economic Sovereignty) — COMPLETE ✅
+
+**Task: Research and write Domain 23 for 29-domain framework**
+
+**Key Research Findings**:
+
+1. **SCOTUS Ruling — Learning Resources, Inc. v. Trump** (February 20, 2026)
+   - 6-3 decision, Chief Justice Roberts authoring, cross-ideological majority (including Sotomayor, Kagan, Gorsuch, Barrett, Jackson)
+   - Held: IEEPA does not authorize tariff authority — tariffs are a "branch of the taxing power" requiring explicit congressional authorization
+   - Applied major questions doctrine and constitutional structure (Article I, Section 8 tariff power reserved to Congress)
+   - Major constitutional milestone: first court check on IEEPA tariff overreach
+
+2. **Administrative Pivot — Section 122 Tariff Act (1974)**
+   - Invoked immediately after SCOTUS ruling to preserve tariff regime
+   - 10% global baseline, capped at 150 days (expires July 24, 2026 absent congressional extension)
+   - Already challenged in Court of International Trade by 24 state AGs + private importers (oral argument April 10, 2026)
+   - Section 301 investigations (March 2026) launching as long-term replacement (no rate cap, no time limit)
+
+3. **Economic Impact Documentation**
+   - Yale Budget Lab: $30B annual GDP reduction (0.1% long-run loss)
+   - Tax Policy Center: $1,050 average household cost (2026)
+   - Peterson Institute: $1,200+ median household burden; regressive (0.8% for bottom 10% vs 0.3% top 10% of after-tax income)
+   - NFIB March 2026: 11-point drop in small business profit trend reporting
+
+4. **Trade Adjustment Assistance (TAA) Lapse**
+   - Expired July 2022, not reauthorized (S.1449 in Senate Finance since April 2025)
+   - $264B FY2025 tariff revenue collected with zero dedicated worker support
+   - Program designed exactly for displaced worker retraining/income support
+   - This lapse is a structural accountability failure distinct from tariff policy itself
+
+5. **International Comparative Framework**
+   - **EU**: Article 207 TFEU requires Parliament approval for tariff changes; executive cannot unilaterally impose peacetime tariffs
+   - **Canada**: Trade and Tariff Act requires parliamentary involvement; SOIRA mechanisms court-reviewable and narrower than IEEPA
+   - **Japan**: Diet approval required for all tariff changes; no executive override
+   - **Australia**: Executive tariff authority explicitly statutory and limited; courts reject indefinite emergency claims
+   - **Conclusion**: All major democracies constrain executive trade authority through parliamentary or judicial mechanisms absent from U.S. IEEPA
+
+6. **Congressional Reclamation Mechanisms**
+   - Trade Review Act (S.1272, Grassley-Cantwell bipartisan): Require congressional approval for tariffs persisting >60 days
+   - CRA repeal campaign for existing IEEPA-era tariff orders (feasible if House control shifts)
+   - Tariff Act amendment reasserting congressional primacy
+   - IEEPA amendment narrowing to actual emergencies + 90-day congressional ratification requirement
+   - WTO re-engagement and dispute resolution (Appellate Body non-functional since 2017)
+
+**Domain 23 Specifications**:
+- **File**: `projects/resistance-research/domains/domain-23-trade-policy-tariff-unilateralism.md`
+- **Length**: 8,849 words (6 sections + executive summary + key findings)
+- **Structure**: Executive summary → 1. Constitutional & statutory foundation (IEEPA history, SCOTUS ruling, Section 122 pivot) → 2. Democratic accountability failure (executive authority, economic effects, TAA lapse) → 3. Democratic theory → 4. International precedent → 5. Reform pathways (5a-5e: IEEPA amendment, CRA repeal, judicial enforcement, WTO re-engagement, TAA expansion) → 6. Implementation timeline and fiscal scope
+- **Sourcing**: 13+ official sources (SCOTUS opinion, CRS analyses, CBO, Peterson Institute, Tax Policy Center, Yale Budget Lab, NFIB surveys, Grassley Senate, EUR-Lex, Harvard ILJ)
+- **Cross-references**: Domain 2 (executive accountability), Domain 5 (fiscal structure), Domain 20 (economic concentration), Domain 18 (social safety net)
+- **Sourcing gaps noted**: Australia "Plaintiff M70" case citation not verified as tariff case (constitutional principles sound but specific case unavailable); NFIB "61% negative impact" figure not locatable in specific survey (domain uses verified alternative metrics); Section 301 CIT litigation ongoing without definitive 2026 rulings (treated as prospective litigation landscape)
+
+**Proposal Integration**:
+- Updated `projects/resistance-research/democratic-renewal-proposal.md` Part II with Domain 23 subsection (~1,100 words, full reform proposals integrated)
+- Updated domain count from 28 to 29 in "How to Read This Document" section
+- Positioned after Domain 22 (Reparations), before Phase 2 cluster (Domains 26-27 Accountability/Higher Education)
+
+**Files Written**:
+1. ✅ `domains/domain-23-trade-policy-tariff-unilateralism.md` (8,849 words, production-ready)
+2. ✅ `democratic-renewal-proposal.md` (updated with Domain 23 integration)
+
+---
+
+### Exploration Queue Maintenance
+
+**Task: Update EXPLORATION_QUEUE.md to reflect Domain 23 completion**
+
+**Changes**:
+- ✅ Status section updated to reflect 29-domain framework (Domain 23 completed Session 512)
+- ✅ Marked Candidate 1 (Trade Policy) as COMPLETED with key findings summary
+- ✅ Removed detailed Candidate 1 research questions (now superseded by Domain 23)
+- ✅ Renumbered Candidates 2→1 and Candidate 3→2 (Healthcare Access and State Legislative Autocratization)
+- ✅ Queue now has 2 remaining candidates for autonomous Phase 2 expansion work
+
+**Queue Status**: 2 active candidates queued (Healthcare Access is most time-sensitive with January 2027 deadline; State Legislative is state-level democratic angle). Domain 23 completion means 4 of the initial Phase 2 expansion candidates are now complete (Domains 23, 27-29).
+
+---
+
+### Project Status Summary
+
+**resistance-research**:
+- ✅ 29-domain diagnostic framework COMPLETE (Domains 1-22 base + Domain 19f + Domains 23, 27-29)
+- ✅ Phase 2 Priority 3 expansion partially complete (Candidates 1/Trade Policy done; Candidates 2-3/Healthcare + State Legislative queued)
+- ✅ Proposal fully integrated with all new domains
+- **Next**: User decision on distribution execution OR pick next Phase 2 candidate for expansion research
+
+**stockbot**:
+- ⚠️ Engine offline (test contamination resolved per Session 511)
+- ⚠️ Requires restart before Monday 2026-04-28 09:30 ET (USER ACTION)
+- ⚠️ Gate 1 structural risk remains critical (30/month requirement vs. 2-3/month capacity)
+- ✓ May 12 feasibility checkpoint scheduled (2026-05-12)
+
+**All other projects**: Awaiting user input or manual actions (mfg-farm test print, seedwarden Etsy corrections, off-grid-living social media, etc.)
+
+---
+
+**Status**: Domain 23 research complete, proposal integrated, framework now 29 domains. Ready for user to decide: (1) begin distribution execution, (2) pick next Phase 2 candidate for research, or (3) pause autonomous work and await user guidance.
+

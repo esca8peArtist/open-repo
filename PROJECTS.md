@@ -65,10 +65,10 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1-5 COMPLETE, **Diagnostic Framework Complete at 26 Domains (Session 502)** — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready
+**Status**: Active — Phase 1-5 COMPLETE, **29-Domain Diagnostic Framework COMPLETE** (Sessions 502-512) — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready, Phase 2 expansion Domain 23 (Trade Policy) COMPLETE
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 503 (2026-04-27 evening): Domain 26 Research COMPLETE**. 
+**Current focus**: **Session 512 (2026-04-27): Domain 23 Trade Policy Research COMPLETE** — Major research finding: February 20, 2026 SCOTUS ruling (*Learning Resources, Inc. v. Trump*) struck down IEEPA tariff authority (6-3, Roberts majority). Domain covers executive tariff authority erosion, Section 122 pivot, TAA lapse, state litigation, international precedent, and reform pathways. 8,849 words, fully integrated into proposal Part II. Brings total framework to 29 domains (Phase 1-5 base + Phase 2 Domains 23, 27-29). 
 - **Domain 26 — COMPLETE: Government Accountability and Institutional Resilience** (4,700 words, fully sourced):
   - **26-DOMAIN DIAGNOSTIC FRAMEWORK NOW COMPLETE** (all domains + implementation architecture fully researched)
   - **Central finding**: Accountability failures in 2026 are coordinated across every layer of the oversight system simultaneously
@@ -87,11 +87,12 @@
   - 12 sourced citations covering all five priority research areas
   - Completes the 26-domain diagnostic framework. With Domain 19f (War Powers): removes both distribution blocks identified in post-Domain-26 audit
 
-**Phase 2 PRIORITY DOMAINS STATUS (Session 506)**:
-- ✅ Domain 27 (Higher Education and Academic Freedom) — COMPLETE — 4,800 words
-- ✅ Domain 28 (War Powers Venezuela Military Unilateralism) — COMPLETE — 5,600 words  
-- ✅ Domain 29 (Prosecutorial Weaponization and DOJ Capture) — COMPLETE — 6,124 words
-- **Total framework**: 28 domains + implementation architecture (Phase 1-5 complete + Phase 2 Priority 3 expansion complete)
+**Phase 2 PRIORITY DOMAINS STATUS**:
+- ✅ Domain 23 (Trade Policy, Tariff Unilateralism) — COMPLETE (Session 512) — 8,849 words
+- ✅ Domain 27 (Higher Education and Academic Freedom) — COMPLETE (Session 506) — 4,800 words
+- ✅ Domain 28 (War Powers Venezuela Military Unilateralism) — COMPLETE (Session 506) — 5,600 words  
+- ✅ Domain 29 (Prosecutorial Weaponization and DOJ Capture) — COMPLETE (Session 506) — 6,124 words
+- **Total framework**: 29 domains + implementation architecture (Phase 1-5 complete + Phase 2 expansion: Domains 23, 27-29 complete)
 
 **✅ COMPLETED (Session 510)**:
 - ✅ **Phase 2 Integration COMPLETE** — All 28 domains unified, metadata corrected, distribution templates updated

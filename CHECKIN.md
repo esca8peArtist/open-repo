@@ -4,49 +4,75 @@
 
 ---
 
-## Current Session (Session 511 — 2026-04-27 Early Morning — Pre-Restart Status Check + Protocol Execution)
+## Current Session (Session 512 — 2026-04-27 Morning — Phase 2 Expansion Domain 23 Research Complete)
 
-**Status**: ✅ **Orientation + state verification complete**. All active projects assessed for autonomous work availability. **CRITICAL DEADLINE REMINDER**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)** — approximately 34 hours from session start (2026-04-27 04:30 UTC).
+**Status**: ✅ **Domain 23 (Trade Policy, Tariff Unilateralism) research COMPLETE** — 8,849 words, fully integrated into 29-domain proposal. SCOTUS February 2026 ruling on IEEPA fully analyzed. Framework now at 29 domains (base 22 + Domain 19f + Domains 23, 27-29). **CRITICAL DEADLINE REMAINS**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)** — user action.
 
 **What Accomplished**:
 
 1. ✅ **Orchestrator Session Protocol: Full Execution**
    - **Orient**: Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md — all state files verified
-   - **Process INBOX.md**: No new items (last processed 2026-04-25 evening)
-   - **Handle Blocks**: 1 active block (mfg-farm test print, user action, cannot auto-verify); 5 resolved blocks confirmed in archive
-   - **Assess Work**: All projects reviewed for autonomous work availability
+   - **Process INBOX.md**: No new items
+   - **Handle Blocks**: 1 active block (mfg-farm test print, user action); 5 resolved blocks in archive
+   - **Select Task**: Phase 2 exploration queue Candidate 1 (Trade Policy) selected as highest-priority autonomous work
 
-2. ✅ **Stockbot: Pre-Restart Health Check (COMPLETE)**
-   - **Root cause verification**: Test contamination (pytest concurrent with live engine on 2026-04-26 22:15 UTC) documented in logs (bad_callback Mock object in shutdown handler)
-   - **Engine readiness**: BLOCKED.md Resolved Archive confirms "Engine ready for Monday 2026-04-28 market open"
-   - **Paper trading state**: 8 monitoring snapshots intact (2026-04-26 22:22 → 2026-04-27 04:15 UTC); 1 BUY (36 AAPL @$271.04), 0 round trips, no anomalies
-   - **Database**: Files present and accessible; stockbot.db empty (expected, test artifact)
-   - **Confidence**: **Engine restart should succeed.** Expect SELL signal execution Monday morning when market opens.
+2. ✅ **resistance-research: Domain 23 Research (COMPLETE)**
+   - **Domain**: Trade Policy, Tariff Unilateralism, and Economic Sovereignty
+   - **Length**: 8,849 words, 6 sections + executive summary
+   - **Research scope**: SCOTUS February 20, 2026 ruling (*Learning Resources v. Trump*) — 6-3 decision striking down IEEPA tariff authority; Section 122 Trade Act pivot; TAA lapse; state litigation; international precedent (EU/Canada/Japan all require parliamentary approval); reform pathways (IEEPA amendment, CRA repeal, Trade Review Act, TAA reauthorization, WTO re-engagement)
+   - **Key findings**:
+     - SCOTUS 6-3 majority (Roberts + Sotomayor, Kagan, Gorsuch, Barrett, Jackson) applied major questions doctrine
+     - Administration immediately pivoted to Section 122 (expires July 24, 2026); already challenged by 24 state AGs (oral argument April 10, 2026)
+     - $264B FY2025 tariff revenue with zero dedicated worker support (TAA lapsed July 2022)
+     - Peterson Institute: $1,200+ median household cost; regressive burden (0.8% bottom 10% vs 0.3% top 10%)
+     - Congressional reclamation mechanisms available: Trade Review Act, CRA repeal, IEEPA amendment
+   - **Files produced**:
+     - `domains/domain-23-trade-policy-tariff-unilateralism.md` (8,849 words, production-ready)
+     - Updated `democratic-renewal-proposal.md` Part II with Domain 23 integration
+   - **Sourcing**: 13+ official sources (SCOTUS, CRS, CBO, Peterson Institute, Tax Policy Center, Yale Budget Lab, NFIB)
 
-3. ✅ **Project Status Summary**:
-   - **resistance-research**: 28-domain framework complete; Phase 2 exploration queue populated (3 candidates); awaiting user selection for Phase 2 domain OR distribution execution go-ahead
-   - **stockbot**: Paper trading active, engine offline but ready for restart. USER ACTION REQUIRED: restart before 2026-04-28 09:30 ET
-   - **cybersecurity-hardening**: Tiers 1-3 complete; awaiting user Tier 1 approval for distribution
-   - **mfg-farm**: Blocked on user test print
-   - **seedwarden**: Phase 1 blocked on user tag corrections; Phase 2 mockup tooling complete
-   - **open-repo**: PR #1 open, awaiting review
-   - **All others**: Complete or paused
+3. ✅ **Exploration Queue Maintenance**
+   - Updated EXPLORATION_QUEUE.md to reflect Domain 23 completion (Session 512)
+   - Marked Candidate 1 (Trade Policy) as COMPLETED with key findings summary
+   - Renumbered remaining candidates: Candidate 2→1 (Healthcare Access), Candidate 3→2 (State Legislative)
+   - Queue now has 2 active candidates for next Phase 2 expansion round
+
+4. ✅ **Framework Status**
+   - **Total domains**: 29 (base 22 + Domain 19f + Domains 23, 27-29)
+   - **Phase 2 expansion progress**: 4 of 3+ candidates complete (Domains 23, 27-29); 2 candidates queued (Healthcare, State Legislative)
+   - **Proposal integration**: All new domains integrated into Part II with full reform pathways and fiscal scope
+   - **Distribution readiness**: 29-domain proposal ready for user execution (Substack, Reddit, institutional outreach)
 
 **What's in Progress**:
-- **stockbot**: Paper trading monitoring (engine offline until user restart). First market session: Monday 2026-04-28 09:30 ET.
-- **resistance-research**: Awaiting Phase 2 expansion domain selection OR distribution execution approval from user
+- **resistance-research**: 29-domain framework production-ready. Awaiting user decision: (a) BEGIN DISTRIBUTION EXECUTION (28-domain templates ready for Substack/Reddit/institutional outreach), OR (b) CONTINUE PHASE 2 EXPANSION (2 candidates queued: Healthcare Access Crisis, State Legislative Autocratization)
+- **stockbot**: Paper trading monitoring (engine offline until user restart). Market session Monday 2026-04-28 09:30 ET. May 12 checkpoint for Gate 1 feasibility assessment.
 
 **What Needs User Input** (priority order):
 1. **URGENT — Today before 2026-04-28 09:30 ET**: Restart stockbot engine: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`. Confirm engine starts cleanly, position (36 AAPL @$271.04) loads, and SELL signal executes at market open Monday.
-2. **resistance-research**: (a) BEGIN DISTRIBUTION EXECUTION using 28-domain templates, OR (b) pick Phase 2 expansion domain (recommend healthcare/Medicaid for January 2027 urgency)
-3. **seedwarden, mfg-farm, cybersecurity-hardening**: Tag corrections, test print, Tier 1 approval
+2. **resistance-research** (next decision): (a) BEGIN DISTRIBUTION EXECUTION using 29-domain templates (Substack, Reddit, institutional outreach ready), OR (b) PICK NEXT PHASE 2 CANDIDATE for research (Recommend: Healthcare Access Crisis for January 2027 urgency; State Legislative for state-level democratic angle)
+3. **seedwarden, mfg-farm, cybersecurity-hardening**: Tag corrections, test print, Tier 1 approval (lower urgency, all awaiting user action)
 
 **Suggested Next Steps**:
-- **ASAP (before 09:30 ET tomorrow)**: Restart stockbot engine and verify position loads cleanly
-- **Next autonomous session (if no user input)**: No meaningful work available — all projects blocked on user action or awaiting selection
-- **May 12 checkpoint**: Stockbot Gate 1 feasibility assessment — determine if h=10 single-ticker viable or strategy pivot required
+- **ASAP (before 09:30 ET Monday)**: Restart stockbot engine and verify position loads cleanly; assess Monday P&L
+- **Next autonomous session (conditional)**:
+  - If user picks **distribution execution**: Implement Substack/Reddit/institutional outreach campaign (2-3 week execution timeline)
+  - If user picks **Phase 2 expansion**: Begin next domain research (healthcare or state legislative — recommend healthcare for time-sensitivity)
+  - If no user input: All higher-priority work requires user decision; could implement lower-priority features (workout plan review, cybersecurity-hardening research deepening) but these are non-blocking
+- **May 12 checkpoint**: Stockbot Gate 1 feasibility assessment — determine if h=10 single-ticker viable (expected first round trip by then; if not, strategy pivot needed)
 
 **Usage Status**: Check `python3 scripts/usage-check.py --check` in next session to verify no throttle active.
+
+---
+
+## Previous Session (Session 511 — 2026-04-27 Early Morning — Pre-Restart Status Check + Protocol Execution)
+
+**Status**: ✅ **Orientation + state verification complete**. All active projects assessed for autonomous work availability. **CRITICAL DEADLINE REMINDER**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)**.
+
+**What Accomplished**: Orchestrator protocol executed; stockbot engine readiness verified (test contamination resolved); all projects assessed for autonomous work; Phase 2 exploration queue identified as available autonomous work for resistance-research (Domain 23 Trade Policy selected for research)
+
+**What's in Progress**: stockbot paper trading monitoring (engine offline until user restart); resistance-research Phase 2 expansion (Domain 23 research ready to spawn)
+
+**What Needs User Input**: (1) Restart stockbot engine before Monday 09:30 ET, (2) Resistance-research: begin distribution execution OR pick Phase 2 domain, (3) Other projects awaiting user action
 
 ---
 
