@@ -24,10 +24,23 @@
 - ⚠️ Marked item for reformulation (needs grounding in published defensive guides: EFF, CPJ, Access Now, rather than operational playbooks)
 - **Result**: No autonomous work available beyond dependency fix and test monitoring
 
+**CRITICAL BLOCKER — Stockbot Test Timeout**:
+- **Issue**: Unit tests timeout after 178 seconds; full suite times out after 364 seconds
+- **Behavior**: Tests appear to hang during execution (not failing assertions, but timing out)
+- **Pattern**: Same behavior across multiple test run attempts
+- **Impact**: Unable to validate code before market open 2026-04-28 09:30 ET
+- **Root Cause Unknown**: Could be (a) test fixture deadlock, (b) database transaction hang, (c) new dependency interaction
+- **User Action Required**: **BEFORE ENGINE RESTART** — investigate test timeout root cause
+  - Check if tests pass on different machine
+  - Check database locks or hanging connections
+  - Review recent changes to test fixtures or dependencies
+  - Full blocker documented in BLOCKED.md
+
 **Items Needing User Input**:
-1. **Stockbot engine restart** (CRITICAL — before 09:30 ET tomorrow 2026-04-28)
-2. **Resistance-research distribution path decision** (Path A / Path A+Domain37 / Path B)
-3. **High-Risk Population Protocols scope reformulation** (vs. operational evasion manual distinction)
+1. ⛔ **Stockbot test timeout investigation** (CRITICAL — blocks engine restart, market open T-14h)
+2. **Stockbot engine restart** (BLOCKED pending test validation)
+3. **Resistance-research distribution path decision** (Path A / Path A+Domain37 / Path B)
+4. **High-Risk Population Protocols scope reformulation** (vs. operational evasion manual distinction)
 
 ---
 
