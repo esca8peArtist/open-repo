@@ -4,7 +4,48 @@
 
 ---
 
-## Current Session (Session 523 — 2026-04-27 Evening — Multi-Ticker Verification + Lifestyle Photography Strategy)
+## Current Session (Session 524 — 2026-04-27 Daytime — Domain Updates + BRK.B Multi-Ticker)
+
+**Status**: ✅ **TWO PARALLEL SUBAGENTS COMPLETED: resistance-research domain updates (5 domains) + stockbot BRK.B stacker completion.** **Framework currency improved with April 2026 developments.** **Multi-ticker portfolio complete: 42 active sessions across 42 unique tickers.** **All 351 tests passing.**
+
+**What Accomplished**:
+
+✅ **resistance-research: Domain Updates COMPLETE (5 domains)**
+- **Domain 19f (War Powers Reform)**: Post-May 1 landscape added (Democratic escalation strategy, GOP fracture calculus, "legalization through appropriation" trap)
+- **Domain 29 (Prosecutorial Weaponization)**: DOJ April 25 rule + House Judiciary Patel investigation + dual-track suppression pattern added
+- **Domain 33 (State Legislative Autocratization)**: 2026 data integrated (100+ bills, six-state supermajority push, Missouri geographic distribution requirement, SAVE Act Senate failure)
+- **Domain 35 (Supreme Court 2026 Term)**: Post-Slaughter pipeline analysis (EEOC/FEC/CFTC/Fed challenges certiorari-ready)
+- **Part III (democratic-renewal-proposal.md)**: Trump v. Wilcox shadow docket evidence added
+- **Deferred**: Domains 1, 21, 25 (pending FISA 702 April 30 outcome)
+- **Quality**: 10 sources cited; all production-ready
+- **Commit**: `feat(resistance-research): update domains 19f, 29, 33, 35, 6 with april 2026 developments`
+
+✅ **stockbot: BRK.B Multi-Ticker Completion**
+- **Issue**: BRK-B (hyphen) invalid on Alpaca; correct form is BRK.B (dot notation)
+- **Action**: Trained `BRK.B_h10_lgbm_ho` stacker; wired into database and active-sessions.json
+- **Portfolio state**: 42 active sessions, 42 unique tickers
+  - 1 baseline (AAPL Session 519)
+  - 10 standard (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA from Sessions 520-521)
+  - 30 Option A (IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T from Session 522)
+  - 1 addition (BRK.B Session 524)
+- **Test fix**: `tests/test_option_a_training.py` hardened (ephemeral log fallback to registry)
+- **Test suite**: 351 tests pass (0 failures)
+- **Commit**: `feat(stockbot): complete multi-ticker training with brk.b stacker (42 total sessions)`
+
+**Engine Status**:
+- OFFLINE since 2026-04-26 22:15 UTC
+- Open position: 36 AAPL @ $271.04 (persisted in positions table, cold restart safe)
+- **CRITICAL ACTION REQUIRED**: Restart before 2026-04-28 09:30 ET (command: `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/)
+- After restart: Paper trading resumes with 42-ticker portfolio; aggregate expected ~10 round trips/month (vs. Gate 1 target 30)
+
+**Next Steps (Awaiting User Action)**:
+1. **CRITICAL — Stockbot engine restart**: Restart before 2026-04-28 09:30 ET
+2. **resistance-research**: Choose distribution path once ready (Path A, Path A+Domain37, or Path B)
+3. **stockbot**: After Monday trading data available, decide scaling option (Option A 42-ticker, Option B threshold tuning, or Option C 80+ tickers)
+
+---
+
+## Previous Session (Session 523 — 2026-04-27 Evening — Multi-Ticker Verification + Lifestyle Photography Strategy)
 
 **Status**: ✅ **TWO PARALLEL SUBAGENTS COMPLETED: stockbot multi-ticker verification + seedwarden lifestyle photography strategy.** **stockbot 41-ticker configuration verified ready (406 tests pass, 0 failures).** **seedwarden strategy document created (hybrid approach: physical for 15 products, stock for 6; $80-160 budget; 3-week timeline).** **Critical user action required**: Engine restart before 2026-04-28 09:30 ET.
 

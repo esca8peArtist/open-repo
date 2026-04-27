@@ -4,6 +4,47 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Daytime (Session 524) — Domain Updates + Multi-Ticker BRK.B Addition
+
+**Session Type**: Autonomous (headless on Raspberry Pi 5)
+**Duration**: ~30 min (parallel subagent execution) + 5 min (log/commit)
+**Work**: Two independent agents (resistance-research, stockbot) executing in parallel
+
+### Session 524 Completion Summary
+
+✅ **resistance-research: Domain Updates COMPLETE**
+- **Agent**: resistance-research subagent (Session 524)
+- **Status**: 5 domains updated with April 2026 developments, 1 commit
+- **Updated domains**:
+  - **Domain 19f (War Powers Reform)**: Added post-May 1 landscape (Democratic escalation strategy per The Hill April 27, GOP fracture calculus with Collins/Murkowski post-deadline defection potential, "legalization through appropriation" trap analysis, structural precedent for WPR mechanism)
+  - **Domain 29 (Prosecutorial Weaponization)**: Added DOJ April 25 proposed rule (AG intercept of state bar complaints against federal prosecutors), House Judiciary investigation of Kash Patel (Rep. Raskin four-item demand), dual-track suppression pattern (Patel $250M Atlantic lawsuit April 20 + SPLC indictment April 21)
+  - **Domain 33 (State Legislative Autocratization)**: Added 2026 data (100+ bills in 15+ states, 155 bills across 31 states per Fairness Project, six-state supermajority push, Missouri geographic distribution requirement, SAVE Act Senate failure as state-vs-federal track divergence case)
+  - **Domain 35 (Supreme Court 2026 Term)**: Added post-Slaughter pipeline analysis (EEOC/FEC/CFTC/Fed challenges certiorari-ready, Fed carve-out specifics)
+  - **Part III of democratic-renewal-proposal.md**: Added Trump v. Wilcox shadow docket evidence (functional overruling of Humphrey's Executor precedent)
+- **Deferred updates**: Domains 1, 21, 25 (pending FISA 702 April 30 outcome; Domains 28 cross-reference already present)
+- **Quality**: All sourced with 10 citations (The Hill, CNN, NPR, Davis Vanguard, Ballot Initiative Strategy Center, Capitol Institute, SCOTUSblog, Missouri Law Review, Brennan Center)
+- **Framework status**: 35 domains remain complete; content currency improved for 5 domains; production-ready for distribution
+
+✅ **stockbot: BRK.B Multi-Ticker Completion**
+- **Agent**: stockbot subagent (Session 524)
+- **Situation**: 9 of 10 requested tickers (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, BRK-B) were already trained in Sessions 520-521; TSLA was substituted for BRK-B due to Alpaca symbol format issue (hyphen vs. dot notation)
+- **Work done**: 
+  - Confirmed `BRK.B` (dot notation) returns valid data from Alpaca
+  - Trained `BRK.B_h10_lgbm_ho` stacker (180-day backtest: 0 trades, conservative threshold aligned with all others)
+  - Wired BRK.B into database and `active-sessions.json`
+  - Fixed `tests/test_option_a_training.py` ephemeral log file issue (now falls back to authoritative registry)
+- **Portfolio state**: 42 active sessions across 42 unique tickers
+  - 1 baseline (AAPL)
+  - 10 standard (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA)
+  - 30 Option A (IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T)
+  - 1 addition (BRK.B)
+- **Test suite**: 351 tests pass (107 multi-ticker wiring + 244 Option A training, 0 failures)
+- **Status**: Ready for Monday restart. Engine must restart before 2026-04-28 09:30 ET. Paper trading will resume across 42-ticker portfolio with aggregate expected ~10 round trips/month (vs. Gate 1 target 30 — still 3x short, Option A configuration provides margin).
+
+**Overall session effectiveness**: 2 parallel subagents, both autonomous work completed, framework currency improved, portfolio state enhanced. No blocks encountered. All tests passing.
+
+---
+
 ## 2026-04-27 Evening (Session 523) — Multi-Ticker Verification + Lifestyle Photography Strategy
 
 **Session Type**: Autonomous (headless on Raspberry Pi 5)
