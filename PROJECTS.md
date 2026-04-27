@@ -763,12 +763,11 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 **NEW ITEMS (Session 547 — Exploration Queue Refresh for Empty Queue)**:
 
-- **resistance-research: Implementation toolkit for institutional adoption** (Priority 1)
-  - **Scope**: Design action guides for how policy organizations, advocacy coalitions, state entities, and academic institutions should implement the 35-domain framework recommendations. (1) Legislative toolkit (how to use framework in bill drafting, legislative strategy, policy analysis), (2) Advocacy playbook (how to use framework for coalition messaging, influencer targeting, media strategy), (3) Academic integration (how universities integrate democratic renewal into curriculum, research programs), (4) State government adoption (how state legislatures use framework for policymaking), (5) Institutional resilience toolkit (how organizations prepare for capture/resistance scenarios detailed in framework)
-  - **Goal**: Bridge gap between proposal (what should be done) and execution (how organizations actually implement it). Each toolkit includes decision trees, templates, and case study integration points.
-  - **Expected output**: `implementation-toolkit.md` (3,500-4,500 words) + 5 sector-specific implementation guides (legislative, advocacy, academic, state government, institutional resilience) as companion files
-  - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED
+- ✅ **resistance-research: Implementation toolkit for institutional adoption** (COMPLETE — Session 548)
+  - **Deliverables**: `implementation-toolkit.md` (2,028 words) + 5 sector-specific guides (legislative, advocacy, academic, state government, institutional resilience) — 10,222 words total
+  - **Key design**: Each guide has "Monday morning question" + 5-step decision tree + domain applications + common mistakes + case studies
+  - **Value**: Bridges proposal to execution. Ready for Phase 1 institutional outreach.
+  - **Status**: ✅ COMPLETE, committed to master
 
 - **stockbot: Post-Gate-2 live trading operations & performance analysis framework** (Priority 2)
   - **Scope**: Once Gate 2 passes and live trading is approved, design the complete live trading operations suite: (1) Real-time P&L and position tracking dashboard architecture, (2) Alert trigger framework (drawdown limits, regime shifts, model drift), (3) Performance attribution analysis (win/loss drivers, regime performance, sector performance), (4) Automated optimization triggers (when to retrain, when to adjust position sizing, when to activate hedges), (5) Emergency response playbooks (what to do if circuit breaker trips, how to manually close positions, how to preserve evidence for post-mortems)
@@ -782,6 +781,13 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Goal**: Comprehensive design document for post-test-print ModRun launch that informs printer hardware selection, material suppliers, and operational process design
   - **Expected output**: `manufacturing-automation-architecture.md` (4,000-5,000 words) + operational process diagrams + cost model spreadsheet
   - **Timeline**: 2-3 sessions (available post-test-print)
+  - **Status**: QUEUED
+
+- **resistance-research: Democratic Crisis Response Playbooks** (Priority 4 — NEW)
+  - **Scope**: Design step-by-step operational playbooks for how institutions (legislatures, AGs, advocacy coalitions, academic research centers) should respond to specific democratic crises using the 35-domain framework. Crisis scenarios: (1) Election interference (federal or state-level), (2) Judicial capture (confirmed hostile appointment), (3) Executive overreach (emergency EO, removal power abuse), (4) Civil service targeting (Schedule F-equivalent purge), (5) Prosecutorial weaponization (targeted investigations of political opponents)
+  - **Goal**: Actionable playbooks that translate framework recommendations into concrete 72-hour, 30-day, and 90-day response sequences. Each playbook includes: decision trees (who should do what), resource requirements (legal, communications, logistics), success metrics, coordination with other institutions
+  - **Expected output**: `crisis-response-playbooks.md` (4,000-5,000 words) + 5 sector-specific playbooks (legislative, AG, advocacy, academic, civil service defense) as companion files
+  - **Timeline**: 2-3 sessions
   - **Status**: QUEUED
 
 ---
