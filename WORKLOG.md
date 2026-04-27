@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 543 (Market Open Readiness + Phase 1 Execution Prep)
+
+**Status**: ✅ **TWO PARALLEL EXECUTION-PREP TASKS COMPLETE** — Stockbot Day-1 infrastructure ready for post-restart deployment; Resistance-research Phase 1 execution kit ready for immediate deployment post-decision.
+
+**What was done**:
+
+1. ✅ **stockbot: Day-1 Market-Open Infrastructure** (Orchestrator → stockbot agent)
+   - **Deliverables**: 4 documentation files, AlertManager class, generate_daily_report.py script, 76 new tests (238 total passing)
+   - **AlertManager** (`src/alerts.py`): Four check categories
+     - Infrastructure: DB health, stale trades, connection validation (CRITICAL if DB missing/broken)
+     - Position sizes: Allocation warnings at ≥20% (WARN), ≥25% (CRITICAL). Equity calculated correctly (fixes prior double-count)
+     - Loss limits: Consecutive losses (3+ per ticker = CRITICAL), daily drawdown ≥20% (CRITICAL)
+     - Regime shift: HMM state transition (WARN), realized vol spike >2x baseline (WARN)
+     - Entry point: `run_all_checks()` returns alerts to `logs/alerts.jsonl`
+   - **Reporting** (`scripts/generate_daily_report.py`): Four report generators
+     - Pre-open (before market open, T-15 min)
+     - Post-close (end of session, T+15 min)
+     - PnL report (trades today, MTD metrics: Sharpe, win rate, largest win/loss)
+     - Weekly report (5-trading-day trend analysis)
+     - Text output (human-readable) or JSON (machine-readable, saved to reports/)
+   - **Documentation**: Day-1 monitoring dashboard specs, reporting templates, alert rules with SQL, exact integration points in run_live_trading.py
+   - **Critical path**: Once engine restarts, wire three hooks into run_live_trading.py (see integration-checklist), then run pre-open-report.py before 09:30 ET to verify all systems operational
+   - **Verification cmd** (pre-restart): `uv run python scripts/generate_daily_report.py --type pre_open --date 2026-04-28 && uv run python -m src.alerts --check infra`
+
+2. ✅ **resistance-research: Phase 1 Execution Kit** (Orchestrator → resistance-research agent)
+   - **Deliverables**: 9 execution documents, 38 tests (all passing)
+   - **Tier-1 Contact Batching** (`tier-1-contact-batches.md`):
+     - Batch 1 (Days 1-3, 5 contacts): Ryan Goodman, Erica Chenoweth, Wendy Weiser, Ian Bassin, Marc Elias — network bridge nodes targeting fastest credibility loop (Goodman → Just Security publication within days)
+     - Batch 2 (Days 8-12, 8 contacts): Waldman, Brest, Durbin/Whitehouse staff, Balkin, Jurecic, Beauchamp, Nelson — reached after Batch 1 responses; each reference Batch 1 engagement as credibility anchor
+     - Batch 3 (Days 15-21, 12 contacts): Congressional/nonprofit/state network nodes
+     - Success gate: ≥30% response rate, ≥10% forwarding rate
+   - **Email Templates** (`outreach-email-templates.md`): 9 customized templates (3 types × 3 variants)
+     - Type A (Academic/Think Tank): Methodological peer review, citation verification, research partnership — frames for academic response
+     - Type B (Media/Journalist): Diagnostic framework, operational roadmap, specific newsworthy finding — frames for journalism coverage
+     - Type C (Legal/Institutional): Institutional reform, law review brief, litigation support — frames for legal/policy engagement
+     - Each has 3 subject lines for A/B testing, personalization fields, complete response-handling guide
+   - **Distribution Timeline** (`distribution-sequence.md`): T-Day 0 through T+4 weeks with decision trees
+     - T-Day 0: Batch 1 emails, social media drafts queued, press release ready
+     - T+3 days: Social media goes live (after Batch 1 receives research, institutional engagement visible before public announcement)
+     - T+8 days: Batch 2 contacts with Batch 1 engagement references
+     - T+15 days: Batch 3 contacts, Tier 2 outreach begins
+     - Success gates at T+28: Tier 1 response ≥30%, Tier 1 forward to Tier 2, media mention
+   - **Path-Specific Materials**: Three decision-specific documents
+     - Path A: 35-domain completeness as credibility signal (all domains visible simultaneously)
+     - Path A+Domain37: Operational urgency frame (5 advocacy windows before Nov 2026, makes framework timely); includes Domain 37 integration checklist
+     - Path B: Sustained engagement strategy (rolling releases create repeated contact points, builds Phase 2 momentum)
+   - **Measurement** (`success-metrics.md`): Three-tier metrics with 30-day and 90-day gates
+     - Engagement: Email response, social media reach, citations
+     - Adoption: Think tank briefs, organizational platform use
+     - Influence: Network propagation (which Tier 1 contacts share with Tier 2, what framing used)
+     - 30-day checkpoint is Phase 2 launch gate; 90-day is Phase 2 continuation decision
+   - **FAQ & Objections** (`frequently-asked-questions.md` + `objection-responses.md`): 
+     - FAQ: Framing scope, credentials/methodology, academic rigor, distribution/use
+     - Rebuttals: 11 common objection patterns (scope-vs-depth, cherry-picking countries, feasibility, electoral liability, etc.)
+
+**Orchestration files updated**: WORKLOG.md (this entry)
+**Commits**: Both agents committed to master (stockbot: 6f4c288, resistance-research: execution/ directory)
+**Project readiness assessment**:
+- **stockbot**: Day-1 infrastructure ready; awaiting user engine restart (CRITICAL, T-14h)
+- **resistance-research**: Phase 1 execution kit ready; awaiting user distribution path decision
+
+---
+
 ## 2026-04-27 Session 542 (Parallel Exploration Queue: stockbot, seedwarden, resistance-research)
 
 **Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE** — All parallel agents delivered production-ready artifacts. Committed to master.
