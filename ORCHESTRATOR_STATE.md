@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-27T06:01:58Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-27T07:00:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 51.3% | Reset in 18h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 52.3% | Reset in 17h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -64,42 +64,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-2. Georgetown CCF (state-by-state Medicaid impact analysis)
-3. CBO scoring and budget impacts
-4. Commonwealth Fund (work requirements evidence review)
-5. CBPP (procedural disenrollment analysis)
-6. State Health and Value Strategies (SHVS) — implementation timeline
-7. NIH/PMC — racial disparities in Medicaid unwinding
-8. National Health Law Program — procedural disenrollment by race
-9. Rural hospital data (Chartis Center, Families USA, National Rural Health Association)
-10. Medicaid litigation tracker (Georgetown CCF, Foley Hoag legal analysis)
-11. Institute for Responsive Government — voter registration/Medicaid nexus
-12. Agency guidance documents (CMS, HHS)
+**Domain 37 Research — Federal Executive Interference in 2026 Midterms**
 
-**Deliverable**: 
-- ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` (6,142 words, production-ready)
-- Structure: Executive summary, Current Crisis, Root Causes (3 mechanisms), Structural Vulnerabilities (3), International Precedent, Reform Pathways (4), Implementation Timeline, Proposal Integration
-- Key finding: Work requirements function as enrollment barriers (not employment drivers), with documented precedent (Arkansas 18K disenrolled in 6 months, zero employment effect)
-- Democracy angle: Medicaid office voter registration infrastructure + work requirement disenrollment = coordinated removal of healthcare + voter registration access in same populations
-- June 2026 deadline: HHS must issue guidance by June 1, 2026 (creates advocacy window)
-- Integration: Connects to Domains 1, 6, 11, 22, 2, 5, 9
+Agent delivered production-ready domain document (8,850 words, 50 sources).
 
-**Files Written**:
-1. ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` (6,142 words)
-2. ✅ Updated `EXPLORATION_QUEUE.md` (added 3 new candidates)
+**Key research findings**:
 
----
+1. **DOJ Voter Roll Litigation Track**: University of Wisconsin Law School tracker shows 23 active cases, 1 settlement (Oklahoma with 45-day voter removal clause), 5 dismissals (CA, OR, MI, MA, RI). Brennan Center analysis reveals contractors receiving voter data under confidential consent agreements are not bound by safeguards.
 
-### Project Status Update
+2. **Election Security Infrastructure Degradation**: CISA FY27 budget proposal eliminates election security program entirely ($700M cut), eliminates EI-ISAC and MS-ISAC, removes all regional election security advisors. Election Day situation room did not operate for November 2025 elections for first time in years. DOJ privacy officer resigned April 3, 2026 over voter-data-to-DHS transfer.
 
-**resistance-research**:
-- Domain 31 (Healthcare Access) — COMPLETE and production-ready
-- Framework now 30 domains (base 1-22 + 19f + 23, 27-29, 31 = 30-domain framework)
-- Phase 2 expansion: Candidate 1 complete, 4 candidates queued (Candidates 2-5)
-- **Next**: User decides (1) begin distribution execution for 29-domain proposal, OR (2) begin next Phase 2 expansion research (Candidate 2: State Legislative Autocratization is the next priority after healthcare)
+3. **Personnel Network**: ProPublica April 2026 investigation identified 11+ appointees across DHS/DOJ connected to Cleta Mitchell's Election Integrity Network. Key examples: David Harvilicz (voting machine security at DHS) co-founded AI company with Antrim County conspiracy theorist; Kurt Olsen (White House election security director) pressured FBI Atlanta.
 
-**All other projects**: No change; awaiting user action
+4. **Legal Doctrine**: Trump v. Anderson (March 2024) eliminated state-initiated Section 3 disqualification for federal offices but preserved congressional enforcement and state-level enforcement for state electoral positions. Practical 2026 application is building factual record for post-election accountability, not pre-election remedy.
 
----
+5. **International Precedent**: Hungary April 12, 2026 election is instructive — Orbán defeated 53.6% to 37.8% despite 95%+ media capture and systematic gerrymandering. Record 77% turnout overcame structural disadvantage. Lesson for US: mobilization margins can exceed structural interference, but mechanisms differ (Hungary = media capture; US = federal law enforcement control + election-night seizure infrastructure).
 
-**Status**: Exploration queue augmented to 5 candidates; Domain 31 (Healthcare Access/OBBBA Medicaid Crisis) researched and production-ready. Framework now spans 30 domains. All work on resistance-research that is autonomous has been completed; further expansion requires user prioritization (distribution vs. continued research). Ready for user guidance.
+**Advocacy Windows Identified**:
+- May 30: DOJ consent decrees finalized or blocked
+- June 30: Emergency EO routing (OMB/legal review)
+- September 2026: Pre-election litigation testing (Section 3 disqualifications, preliminary injunctions)
+- October 2026: Pre-election logistics (poll observer deployment, legal hotline readiness)
+- Election Day + early vote: Real-time monitoring
+
+**File created**: `projects/resistance-research/domains/domain-37-federal-executive-interference-2026-midterms.md` (67 KB, ~8,850 words, 50 sources, production-ready)
+
+**Quality assessment**: Fully sourced (Brennan Center, University of Wisconsin Law tracker, ProPublica, Democracy Docket, NPR, Just Security, legal analysis), no speculation, current to April 2026, balanced (federal leverage + state/civil society defenses), actionable (advocacy windows explicit).
+
+### Status Update
+
+**resistance-research**: Framework now 35 domains complete (Phase 1-5 base 22 + Domain 19f + Phase 2 Domains 23, 27-29, 31, 33-37). All production-ready. Exploration queue fully exhausted — no remaining high-priority candidates.
+
+**Next user decision required**:
+1. **Path A (distribution now)**: Begin Phase A distribution to general audiences with 34-domain base framework.
+2. **Path A+Domain37 Hybrid (RECOMMENDED)**: Phase A distribution to general audiences (law schools, think tanks, labor unions) + Domain 37 sequenced into distribution before reaching election protection organizations. Captures maximum immediate impact + election integrity urgency.
+3. **Path B (continued research)**: Domain Updates (content maintenance on 9 domains per April 2026 developments) + optional lower-priority expansion toward 35-40 domains.
+
+**Recommendation**: Hybrid approach captures both timeliness (34-domain framework to broad audiences immediately) and urgency (Domain 37 targeted to election protection organizations before November 2026).
+
+**All orchestration files remain clean**. No changes needed to BLOCKED.md. Exploration queue status updated in PROJECTS.md.
