@@ -4,6 +4,67 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 05:20 — Parallel Session: resistance-research + seedwarden — Tracker Updates + Phase 2 Expansion Scoping + Phase 3 Social Media Launch Prep
+
+**Session**: Parallel execution on resistance-research and seedwarden autonomous work
+
+### resistance-research: Tracker Maintenance + Phase 2 Expansion Domain Discovery
+
+**Task 1 — Civic Tracker Maintenance (COMPLETE)**:
+- Updated `first-amendment-suppression.md` with 3 new April 2026 entries:
+  - 10th Circuit upholds $14M Denver protest verdict (*Epps v. Denver*, April 21) — establishes circuit precedent on less-lethal munitions and qualified immunity
+  - SCOTUS declines *Villarreal v. Alaniz* (March 23) — journalist arrest immunity stands, 5th Circuit split
+  - Accountability NOW USA v. NPS (April 2026) — permitted demonstration sign suppression case
+- Updated `environmental-rollbacks-tracker.md` with EPA OOOO methane rule finalization (April 4) — $2.5B savings, loosened flaring provisions
+- Updated `police-brutality-consent-decree-tracker.md` with new Pattern 6 entry — circuit split on protest policing standards (10th vs. 9th)
+- All three trackers current through April 27, 2026
+
+**Task 2 — Phase 2 Expansion Domain Discovery (COMPLETE)**:
+- Created `phase-2-expansion-candidates.md` (discovery document, not full domain research)
+- Identified 4 candidate Phase 2 expansion domains ranked by urgency:
+  1. **Domain A (Trade Policy and Economic Sovereignty)** — Rank 1, Urgency High — SCOTUS unconstitutional IEEPA ruling, Section 122 pivot, $170B collected, 145% China tariffs. Scope: 4-5.5K words. Gap: Domain 5 (Fiscal) doesn't cover trade architecture.
+  2. **Domain B (Healthcare Access Implementation Crisis — OBBBA Medicaid)** — Rank 2, Urgency High — $911B cut takes effect, 446 hospitals at risk, rural obstetrics eliminated (Indiana, Georgia, Virginia). HHS guidance deadline June 1. Scope: 4.5-6K words. Gap: Domain 11 predates OBBBA harm documentation.
+  3. **Domain C (AI Governance and Algorithmic Democracy)** — Rank 3, Urgency Medium-High — CMS denying Medicaid via AI, location data tracking by FBI, Trump AI framework preempts state law. Scope: 4-5K words. Gap: Broader than Domain 21 surveillance or Domain 16 immigration algos.
+  4. **Domain D (Disability Rights and Benefits Access)** — Rank 4, Urgency Medium — SSA 7K job cuts, dropped SSDI rule (20% cut, stopped Nov 2025), Medicaid work requirement threatens 40%+ at risk. Scope: 3.5-4.5K words. Gap: SSA cuts and work requirement impacts not in current domains.
+- **Recommendation**: Domains A + B first (high sourcing ease, high urgency). C + D follow. All four genuine gaps, none duplicate.
+- **Status**: Menu ready for user prioritization of Phase 2 expansion research cadence
+
+### seedwarden: Phase 3 Social Media Implementation Prep (COMPLETE)
+
+**Task: Phase 3 Implementation Documents (Option A chosen — deepest ready work)**
+
+Created three Phase 3 launch documents to operationalize existing strategy:
+
+1. **`phase-3-content-calendar-template.md`** — Repeating monthly framework:
+   - Content mix ratios: 35% educational (highest engagement per strategy), 20% product feature (hard rule: no consecutive posts), 20% community/UGC, 15% behind-the-scenes, 10% promotional
+   - Platform cadences: TikTok 4-7/week (Month 1 front-loaded for algorithmic momentum), IG Reels 3-4/week + daily Stories, Pinterest 5-7/week via scheduler
+   - Seasonal angles (May-July 2026): late spring planting (May), garden launch + first harvest (June), peak season + preservation (July)
+   - 21-product theme mapping table — every product mapped to primary + secondary content angle + best-fit platform (prevents 60-day gaps)
+   - 30-row block skeleton — ready to copy and fill each month
+   - Pre-built hashtag stacks (5 stacks by category)
+   - Tracking table with 6 metrics and action thresholds (avoids vanity optimization)
+
+2. **`phase-3-creator-brief.md`** — Standalone outreach document for influencers:
+   - Brand description written for external audience (honest about one-person shop, apartment, not farmstead)
+   - Audience fit criteria (5 self-qualification signals)
+   - 3 differentiation points: small-space framing, food sovereignty angle, price accessibility
+   - **7 complete video angle concepts** — each ready to pitch or hand to creator. E.g., "Show fermentation method with Field Manual open. Narrate. End on link in bio."
+   - Partnership structures: gift+affiliate (25%), flat fee+affiliate ($150-300+15%), ongoing (25% indefinite)
+   - 21-product reference table (price, audience fit)
+   - Outreach tracker template + priority target checklist
+
+3. **`phase-3-platform-asset-specs.md`** — Technical quick-reference for content production:
+   - TikTok: resolution, safe zones (right-edge action bar, top/bottom UI), caption limits, hashtag recommendation, export settings
+   - Instagram: Reels (9:16), Carousels (1:1 + 4:5), Stories (9:16 + interactive requirement), static posts
+   - Pinterest: standard pin (2:3), video pin, text overlay formula, 3-variant-per-product approach, must link to specific listing (not shop homepage)
+   - Etsy: shop banner (3360x840, mobile crop zone warning — center 1200x300), listing image slots (Phase 2 mockups fill 1-3, slots 4-10 pending lifestyle photography), listing video spec
+   - Cross-platform repurposing map — every content type mapped downstream uses (45s TikTok → Stories card + Pinterest cover + 3 carousel slides)
+   - Canva export cheatsheet — asset types, Canva dimensions, format, quality settings in one table
+
+**Status**: All three Phase 3 documents production-ready. Operationalize existing strategy (phase-3-social-media-growth-strategy.md) into executable templates. Phase 3 launch can proceed when user completes Phase 1 tag corrections + Etsy account verification.
+
+---
+
 ## 2026-04-27 03:45 — resistance-research — Phase 2 Priority Domains COMPLETE (Domains 27 + 28 + 29)
 
 **Session**: Phase 2 domain research completion (all three Priority 3 domains)
