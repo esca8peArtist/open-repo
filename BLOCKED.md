@@ -27,13 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Feature count mismatch: engine runs but never trades
-**Date blocked**: 2026-04-28
-**Context**: Investigated Jetson container (up 40h, healthy). Found engine has never executed a real strategy trade — all 84 DB trades are March 2026 integration test fixtures. Root cause: feature engineer generates 58 features but deployed models expect 116 (old ensemble_stackers format). Every prediction cycle throws `LightGBM [Fatal] features in data (58) != training data (116)` and falls back to HOLD. Pi has newer mtf-format models (61 features) that are also not deployed. There is also a silent logging bug in `_add_economic_features`: log line prints `Added %d historical macro features` (literal `%d` — string format never applied), indicating the FRED macro feature step is crashing silently and dropping ~3 features (61→58 gap). The Jetson cannot trade until models are retrained against the current 58-feature output (or FRED is fixed and models retrained against the correct 61-feature output).
-**What I need**: Orchestrator should: (1) Fix `_add_economic_features` in `src/features/feature_engineer.py` — find the `%d` logging bug and whether FRED API calls are failing; (2) determine correct feature count after fix; (3) retrain AAPL mtf models against that count; (4) create DEPLOY_READY (outside 13:30–20:00 UTC) to push to Jetson; (5) verify next-day logs show predictions succeeding (not HOLD on every cycle).
-**Verify with**: `ssh awank@100.120.18.84 "docker logs stockbot --tail 20 2>&1" | grep -v "Market closed" | grep -c "prediction\|signal\|BUY\|SELL"`
-**Resolution**:
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
