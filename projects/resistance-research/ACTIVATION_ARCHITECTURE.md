@@ -466,6 +466,84 @@ This matrix tells each distribution recipient their specific Phase 1 action, suc
 
 ---
 
+---
+
+## Part VII: Integration with Phase 4-5 Architecture
+
+The activation architecture does not stand alone. It is the operational layer that sits atop four Phase 4-5 documents that provide the theoretical and strategic foundation. Understanding how this document connects to those four is essential for practitioners using the full proposal.
+
+### Document 1: Comparative Democratic Recovery (`phase-4-comparative-democratic-recovery.md`)
+
+**What that document provides**: The foundational finding that of 25 countries with significant democratic backsliding since 1990, only four have recovered to prior democratic quality. The case studies — South Korea, Spain, Uruguay as successes; Hungary, Venezuela, Turkey as failures — identify four decisive variables: parallel institutions, international pressure, elite defection, and mass mobilization. The core conclusion: movements that won without a prepared institutional blueprint lost their gains within a decade.
+
+**How this document builds on it**: The Phase 4 comparative analysis identifies *what* is needed — an institutional blueprint. This activation architecture *is* that blueprint. Every case study in Part IV of this document draws on the Phase 4 comparative framework, but adds the US-specific operational translation: what Spain's "reforma pactada" means for the statutory-reform-first sequencing in this implementation table; what South Korea's 19-day mobilization-to-concession means for the 3.5% threshold and elite defection calculations in the Collins/Murkowski/Tillis/McConnell coalition strategy; what Hungary 2026's speed imperative means for prioritizing IG restoration and FTC appointment in the first 100 days of any governing window.
+
+**Integration point**: The Phase 4 document's four-variable framework (parallel institutions, international pressure, elite defection, mass mobilization) maps directly onto this document's four actor categories: parallel institutions → D9 (interstate compacts) and D3/D13/D8 (worker cooperatives, CLTs, independent media); international pressure → D19/D28 (foreign policy and war powers) and the IACHR/UN HRC accountability strategy in Phase 3 risk mitigation; elite defection → the Republican senator coalition strategy in the critical path analysis; mass mobilization → the 3.5% threshold analysis embedded in the South Korea case study.
+
+### Document 2: Three-Wave Implementation Roadmap (`implementation-roadmap.md`)
+
+**What that document provides**: The sequencing logic across three waves — Wave 1 (restore guardrails), Wave 2 (rebuild institutions), Wave 3 (structural reform) — with anchor domains and wave-transition conditions. The roadmap establishes that implementation sequences in waves, not all at once, and that each wave creates conditions for the next.
+
+**How this document builds on it**: The roadmap provides sequencing logic; this document adds operational specificity. For each wave in the roadmap, this document names: the specific responsible actor (not just "courts" but "state AGs coalition, Brennan Center, Senate Judiciary minority staff — Whitehouse/Durbin offices direct"); the specific Phase 1 action (not just "file litigation" but "file amicus briefs in Trump v. Slaughter; document shadow docket abuse pattern; compile judicial threat data (564 threats FY2025)"); the specific success metric (not just "progress on judicial independence" but "SCOTUS Ethics Act introduced with 45+ Senate cosponsors").
+
+**Integration point**: The roadmap's three-wave architecture maps onto this document's five phases as follows: Wave 1 (guardrails) = Phases 1-2 (now through September 2026); Wave 2 (institutional rebuild) = Phase 3 (2027); Wave 3 (structural reform) = Phases 4-5 (2028-2036). The roadmap's wave-transition conditions — "courts must remain functionally independent," "elections conducted with less than 5% interference" — become the success gates in Part VI's activation timeline. The roadmap's anchor domains (D1, D2, D6 anchor Wave 1) are precisely the domains classified as Tier 1 dependencies in Part II of this document.
+
+### Document 3: Timeline and Conditions (`timeline-and-conditions.md`)
+
+**What that document provides**: The trigger events and conditions that determine which scenario unfolds. Three scenarios — House Flip (Scenario A), Tight House (Scenario B), and Federal Collapse (Scenario C) — with precise timeline implications for each. The critical insight that recovery is triggered by specific observable events, not by waiting for the right moment.
+
+**How this document builds on it**: The timeline and conditions document identifies when conditions change; this document specifies what actions are taken in response to those condition changes. Every "pivot trigger" in Part V of this document (the risk mitigation section) is the operational counterpart to the scenario branches in the timeline document. When the timeline document says "if House does not flip," this document's pivot triggers say specifically: "shift Phase 2 legislative agenda to state-level strategy with focus on interstate compact formation, state constitutional amendments, state AG actions; federal legislative activity narrows to Senate minority blocking and cosponsor-building for 2028 mandate."
+
+**Integration point**: The timeline document's three scenarios are mapped explicitly in the Implementation Schedule companion (`implementation-schedule.md`) under the "Recovery Scenario Crosswalk" table: each scenario column identifies which domains become primary, which become secondary, and what the fallback strategy is. The timeline document's "primary trigger" (2026 midterms) is this document's "Critical Path Item 2" in Part III. The timeline document's "Trump v. Slaughter ruling" as secondary trigger is this document's "Critical Path Item 1" — placed first because it precedes the election by five months and requires pre-staged response protocols.
+
+### Document 4: Risk Assessment (`risk-assessment.md`)
+
+**What that document provides**: The derailment vectors — Supreme Court escalation and lower court defection, executive defiance of court orders, mass arrest and organizational capacity destruction, economic shock as political demobilization, elite fragmentation within the recovery coalition — with probability estimates and mitigation strategies for each.
+
+**How this document builds on it**: The risk assessment identifies threat categories; this document provides domain-specific failure modes and pivot triggers for each. The risk assessment's "institutional derailment vectors" map onto specific domains: Supreme Court escalation affects D6 and D35 specifically; executive defiance of court orders is the central concern of D34 (appropriations) and D2 (civil service); mass arrest and organizational capacity destruction is the risk being mitigated in D7 (participation rights), D29 (prosecutorial accountability), and D27 (academic freedom). Each domain's Phase 1-3 risk section in Part V of this document is the operational specification of the risk assessment's threat categories.
+
+**Integration point**: The risk assessment's recommended mitigation — "maintain parallel capacity outside federal institutional channels" — is operationalized through this document's independent parallel paths: D9 (interstate compacts), D3 (worker cooperatives), D13 (CLTs), D8 (independent media). These are not alternative strategies; they are the simultaneous non-federal paths that the risk assessment identifies as necessary insurance against federal institutional capture. Every domain classified as an "independent parallel path" in this document is a direct response to the risk assessment's finding that sole dependence on federal institutional channels is the primary failure mode.
+
+### How the Five Documents Form a Complete System
+
+The five documents (the four Phase 4-5 documents plus this activation architecture) form an integrated operational system:
+
+```
+THEORY OF CHANGE
+Phase 4: Comparative Recovery Analysis
+  → establishes: what works historically and why
+  
+IMPLEMENTATION LOGIC
+Phase 5, Doc 1: Three-Wave Roadmap
+  → establishes: sequencing and wave-transition conditions
+
+TRIGGER AND SCENARIO PLANNING
+Phase 5, Doc 2: Timeline and Conditions
+  → establishes: when conditions change and what scenarios result
+
+THREAT AND RISK PLANNING
+Phase 5, Doc 3: Risk Assessment
+  → establishes: what can go wrong and generic mitigation
+
+MOVEMENT COORDINATION
+Phase 5, Doc 4: Movement Coordination
+  → establishes: who coordinates and how disputes are resolved
+
+OPERATIONAL SPECIFICATION (this document)
+Activation Architecture
+  → translates all of the above into: which actor does what,
+    by when, with what success metric, in response to what trigger
+    
+QUICK REFERENCE
+Implementation Schedule (companion document)
+  → compact tabular form for practitioners who need the matrix
+    without the full operational detail
+```
+
+A practitioner reading the activation architecture alone gets the operational specificity they need for Monday morning. A researcher or organizer who wants to understand *why* the sequence is what it is and *what alternative scenarios look like* should read the Phase 4 comparative analysis and Phase 5 roadmap/timeline documents. A coordination lead managing multiple actors should read the movement coordination document and then return to this document's Practitioner Role Matrix in the Appendix.
+
+---
+
 *This document was compiled April 27, 2026. International case study data is from primary sources documented inline. US legislative timeline data is from Congress.gov, GovTrack, and Democracy Docket. Institutional capacity estimates are from existing research files in the resistance-research archive. All source URLs are embedded in the text.*
 
 *File path: `projects/resistance-research/ACTIVATION_ARCHITECTURE.md`*
