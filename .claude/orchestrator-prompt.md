@@ -67,13 +67,13 @@ If you hit something you can't resolve in 2-3 attempts:
 - Pick the next project and continue
 
 ### 6. Discord Notifications
-Send a notification after completing a meaningful chunk of work or hitting a block:
+**Only send Discord notifications for blocks** — when you write a new entry to BLOCKED.md. Do NOT send a notification at the end of every session; the 2-hour watchdog in start-orchestrator.sh handles regular updates automatically. Sending per-session messages floods the channel.
+
 ```bash
 curl -s -H "Content-Type: application/json" \
-  -d "{\"content\":\"[Claude] MESSAGE\"}" \
+  -d "{\"content\":\"[Claude] BLOCKED: brief description — see BLOCKED.md\"}" \
   "$DISCORD_WEBHOOK_URL"
 ```
-Keep messages brief: what was done, what's next or what's blocked.
 
 ### 7. Prepare Check-in
 Before finishing the session, update CHECKIN.md:
