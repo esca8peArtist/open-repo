@@ -4,44 +4,48 @@
 
 ---
 
-## Current Session (Session 512 — 2026-04-27 Morning — Phase 2 Expansion Domain 23 Research Complete)
+## Current Session (Session 513 — 2026-04-27 05:00 UTC — Exploration Queue Augmentation + Domain 31 Healthcare Research Complete)
 
-**Status**: ✅ **Domain 23 (Trade Policy, Tariff Unilateralism) research COMPLETE** — 8,849 words, fully integrated into 29-domain proposal. SCOTUS February 2026 ruling on IEEPA fully analyzed. Framework now at 29 domains (base 22 + Domain 19f + Domains 23, 27-29). **CRITICAL DEADLINE REMAINS**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)** — user action.
+**Status**: ✅ **Exploration queue augmented from 2 to 5 candidates** (added Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance). ✅ **Domain 31 (Healthcare Access / OBBBA Medicaid Crisis) research COMPLETE** — 6,142 words, production-ready, June 2026 HHS guidance deadline identified. Framework now at 30 domains (base 22 + Domain 19f + Domains 23, 27-29, 31). **CRITICAL DEADLINE REMAINS**: Stockbot engine restart required before **2026-04-28 09:30 ET (14:30 UTC)** — user action.
 
 **What Accomplished**:
 
 1. ✅ **Orchestrator Session Protocol: Full Execution**
-   - **Orient**: Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md — all state files verified
-   - **Process INBOX.md**: No new items
-   - **Handle Blocks**: 1 active block (mfg-farm test print, user action); 5 resolved blocks in archive
-   - **Select Task**: Phase 2 exploration queue Candidate 1 (Trade Policy) selected as highest-priority autonomous work
+   - **Orient**: Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md — all state files verified; no new inbox items; 1 active block (mfg-farm test print, user action)
+   - **Process INBOX**: No new items
+   - **Select Task**: Applied protocol logic — "If all projects are blocked on external dependencies, check Exploration Queue. If <3 items, add 2–3 new candidates." Found queue had 2 active items; augmented to 5; selected Candidate 1 (Healthcare Access) for immediate research (June 2026 HHS guidance deadline = highest time sensitivity)
 
-2. ✅ **resistance-research: Domain 23 Research (COMPLETE)**
-   - **Domain**: Trade Policy, Tariff Unilateralism, and Economic Sovereignty
-   - **Length**: 8,849 words, 6 sections + executive summary
-   - **Research scope**: SCOTUS February 20, 2026 ruling (*Learning Resources v. Trump*) — 6-3 decision striking down IEEPA tariff authority; Section 122 Trade Act pivot; TAA lapse; state litigation; international precedent (EU/Canada/Japan all require parliamentary approval); reform pathways (IEEPA amendment, CRA repeal, Trade Review Act, TAA reauthorization, WTO re-engagement)
+2. ✅ **Exploration Queue Augmentation (Session 513)**
+   - **Starting state**: 2 candidates (Healthcare Access, State Legislative Autocratization)
+   - **Added 3 new candidates**:
+     - **Candidate 3**: Congressional Power-of-the-Purse Restoration (foundational for recovery scenarios, ongoing)
+     - **Candidate 4**: Supreme Court October 2026 Term Preview (post-Loper landscape, medium-high urgency)
+     - **Candidate 5**: AI Governance and Algorithmic Accountability (systemic governance gap, medium priority)
+   - **Final queue state**: 5 candidates queued; Healthcare Access in progress
+   - **Updated**: EXPLORATION_QUEUE.md with full candidate specifications, sourcing confidence, time sensitivity
+
+3. ✅ **resistance-research: Domain 31 Healthcare Access Research (COMPLETE)**
+   - **Domain**: Healthcare Access Collapse — OBBBA, Medicaid Crisis, and the Democracy-Health Nexus
+   - **Length**: 6,142 words, production-ready research document
+   - **Research scope**: OBBBA Medicaid provisions, work requirements (80 hours/month, effective January 2027), Medicaid expansion funding elimination (January 2026), 6-month recertification (2027+), rural hospital closures (417 vulnerable, $630K average loss per hospital), voter registration infrastructure (NVRA nexus), litigation landscape (Arkansas 2018 precedent: 18K disenrolled in 6 months, zero employment effect)
    - **Key findings**:
-     - SCOTUS 6-3 majority (Roberts + Sotomayor, Kagan, Gorsuch, Barrett, Jackson) applied major questions doctrine
-     - Administration immediately pivoted to Section 122 (expires July 24, 2026); already challenged by 24 state AGs (oral argument April 10, 2026)
-     - $264B FY2025 tariff revenue with zero dedicated worker support (TAA lapsed July 2022)
-     - Peterson Institute: $1,200+ median household cost; regressive burden (0.8% bottom 10% vs 0.3% top 10%)
-     - Congressional reclamation mechanisms available: Trade Review Act, CRA repeal, IEEPA amendment
+     - 11.8M projected Medicaid disenrollment (CBO 10-year projection)
+     - Work requirements designed as enrollment barriers, not employment drivers (Arkansas precedent)
+     - Racial disparities in procedural disenrollment: Black individuals 22% of enrollees but 22% of procedural disenrollments; Hispanic individuals 23% of enrollees but 34% of procedural disenrollments
+     - 12 non-expansion states (primarily Southern, majority-Black low-income populations) cannot expand due to loss of enhanced federal matching
+     - Medicaid enrollment offices serve as voter registration sites under NVRA; cuts to enrollment capacity reduce voter registration in same populations experiencing disenrollment
+     - June 1, 2026 deadline for HHS guidance creates advocacy window (April-May 2026 comment period)
+     - Arkansas litigation precedent (Gresham v. Azar, D.C. Circuit upheld 2020) holds work requirements violate Medicaid purpose; however, post-Loper textualism may change precedent interpretation
    - **Files produced**:
-     - `domains/domain-23-trade-policy-tariff-unilateralism.md` (8,849 words, production-ready)
-     - Updated `democratic-renewal-proposal.md` Part II with Domain 23 integration
-   - **Sourcing**: 13+ official sources (SCOTUS, CRS, CBO, Peterson Institute, Tax Policy Center, Yale Budget Lab, NFIB)
-
-3. ✅ **Exploration Queue Maintenance**
-   - Updated EXPLORATION_QUEUE.md to reflect Domain 23 completion (Session 512)
-   - Marked Candidate 1 (Trade Policy) as COMPLETED with key findings summary
-   - Renumbered remaining candidates: Candidate 2→1 (Healthcare Access), Candidate 3→2 (State Legislative)
-   - Queue now has 2 active candidates for next Phase 2 expansion round
+     - `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` (6,142 words, production-ready)
+   - **Sourcing**: 12 primary sources (KFF, Georgetown CCF, CBO, Commonwealth Fund, CBPP, SHVS, NIH/PMC, NHP, Rural hospital associations, Medicaid litigation trackers)
+   - **Connections to existing domains**: Integrated with Domains 1 (electoral integrity), 6 (judicial independence), 11 (healthcare), 22 (racial justice), 9 (federalism), 2 (executive power/checks & balances)
 
 4. ✅ **Framework Status**
-   - **Total domains**: 29 (base 22 + Domain 19f + Domains 23, 27-29)
-   - **Phase 2 expansion progress**: 4 of 3+ candidates complete (Domains 23, 27-29); 2 candidates queued (Healthcare, State Legislative)
-   - **Proposal integration**: All new domains integrated into Part II with full reform pathways and fiscal scope
-   - **Distribution readiness**: 29-domain proposal ready for user execution (Substack, Reddit, institutional outreach)
+   - **Total domains**: 30 (base 22 + Domain 19f + Domains 23, 27-29, 31)
+   - **Phase 2 expansion progress**: 5 of 5+ candidates complete (Domains 23, 27-29, 31); 4 candidates queued (State Legislative, Congressional Power, SCOTUS 2026 Term, AI Governance)
+   - **Proposal integration**: Domain 31 ready for integration into Part II; domain cross-references prepared
+   - **Distribution readiness**: 29-domain original proposal production-ready; 30-domain framework available for expanded distribution
 
 **What's in Progress**:
 - **resistance-research**: 29-domain framework production-ready. Awaiting user decision: (a) BEGIN DISTRIBUTION EXECUTION (28-domain templates ready for Substack/Reddit/institutional outreach), OR (b) CONTINUE PHASE 2 EXPANSION (2 candidates queued: Healthcare Access Crisis, State Legislative Autocratization)

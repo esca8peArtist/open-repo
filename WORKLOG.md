@@ -13319,3 +13319,102 @@ Queue now empty (3 items worked). Should add 2-3 new Phase 2 research candidates
 
 **Status**: Domain 23 research complete, proposal integrated, framework now 29 domains. Ready for user to decide: (1) begin distribution execution, (2) pick next Phase 2 candidate for research, or (3) pause autonomous work and await user guidance.
 
+
+---
+
+## 2026-04-27 05:00 — Session 513: Autonomous Orchestrator — Exploration Queue Augmentation + Domain 31 Research
+
+**Session Type**: Autonomous (headless on Raspberry Pi 5)  
+**Duration**: ~45 min  
+**Work**: Exploration queue maintenance + Phase 2 Candidate 1 research (Healthcare Access/OBBBA Medicaid)
+
+### Session Protocol Execution
+
+**1. Orient** ✅
+- Read ORCHESTRATOR_STATE.md (Session 512 summary at 04:58 UTC)
+- Priority order: resistance-research (1) → stockbot (2) → cybersecurity-hardening (3) → mfg-farm (4) → seedwarden (5)
+- Active block: 1 (mfg-farm test print — manual, cannot auto-verify)
+- Resolution: No new blocks to move to archive
+
+**2. Process INBOX.md** ✅
+- No new items
+
+**3. Select Task** ✅
+- **Finding**: All top-priority projects awaiting user action or review (resistance-research awaiting distribution decision, stockbot awaiting engine restart, cybersecurity-hardening awaiting Tier 1 approval, etc.)
+- **Protocol application**: "If all projects are genuinely blocked on named external dependencies: Check the Exploration Queue. If it has fewer than 3 active (non-crossed-out) items, add 2–3 new items yourself before proceeding."
+- **Exploration Queue Status** (before Session 513): 2 active candidates (Healthcare Access Collapse, State Legislative Autocratization)
+- **Action**: Augment queue to 5 items; select Candidate 1 (Healthcare Access) for immediate research (June 2026 HHS guidance deadline = highest time sensitivity)
+
+### Exploration Queue Maintenance + Augmentation (Session 513)
+
+**Task: Expand Exploration Queue from 2 to 5 Items**
+
+**Updates to EXPLORATION_QUEUE.md**:
+- ✅ Added Candidate 3 (Congressional Power-of-the-Purse Restoration) — foundational for recovery scenarios, ongoing
+- ✅ Added Candidate 4 (Supreme Court October 2026 Term Preview) — post-Loper landscape shift, medium-high urgency
+- ✅ Added Candidate 5 (AI Governance and Algorithmic Accountability) — systemic governance gap, medium priority
+- ✅ Updated status to show Session 513 work in progress
+
+**Queue Status**: 5 candidates now queued:
+1. Healthcare Access Collapse / OBBBA Medicaid Crisis (Candidate 1) — IN PROGRESS
+2. State Legislative Autocratization (Candidate 2)
+3. Congressional Power-of-the-Purse Restoration (Candidate 3)
+4. Supreme Court October 2026 Term Preview (Candidate 4)
+5. AI Governance and Algorithmic Accountability (Candidate 5)
+
+---
+
+### Phase 2 Candidate 1 Research — COMPLETE
+
+**Task: Research and Document Healthcare Access Crisis (OBBBA/Medicaid)**
+
+**Research Scope**:
+- OBBBA (One Big Beautiful Budget Act, P.L. 119-21, signed July 4, 2025) Medicaid provisions
+- 11.8M projected disenrollment, work requirements, Medicaid expansion funding elimination
+- Rural hospital closure linkages
+- Voter registration infrastructure nexus (NVRA)
+- Litigation landscape (Arkansas 2018 precedent)
+- Racial equity impacts
+
+**Sources Used** (12 primary):
+1. KFF Medicaid tracking and OBBBA provisions analysis
+2. Georgetown CCF (state-by-state Medicaid impact analysis)
+3. CBO scoring and budget impacts
+4. Commonwealth Fund (work requirements evidence review)
+5. CBPP (procedural disenrollment analysis)
+6. State Health and Value Strategies (SHVS) — implementation timeline
+7. NIH/PMC — racial disparities in Medicaid unwinding
+8. National Health Law Program — procedural disenrollment by race
+9. Rural hospital data (Chartis Center, Families USA, National Rural Health Association)
+10. Medicaid litigation tracker (Georgetown CCF, Foley Hoag legal analysis)
+11. Institute for Responsive Government — voter registration/Medicaid nexus
+12. Agency guidance documents (CMS, HHS)
+
+**Deliverable**: 
+- ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` (6,142 words, production-ready)
+- Structure: Executive summary, Current Crisis, Root Causes (3 mechanisms), Structural Vulnerabilities (3), International Precedent, Reform Pathways (4), Implementation Timeline, Proposal Integration
+- Key finding: Work requirements function as enrollment barriers (not employment drivers), with documented precedent (Arkansas 18K disenrolled in 6 months, zero employment effect)
+- Democracy angle: Medicaid office voter registration infrastructure + work requirement disenrollment = coordinated removal of healthcare + voter registration access in same populations
+- June 2026 deadline: HHS must issue guidance by June 1, 2026 (creates advocacy window)
+- Integration: Connects to Domains 1, 6, 11, 22, 2, 5, 9
+
+**Files Written**:
+1. ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` (6,142 words)
+2. ✅ Updated `EXPLORATION_QUEUE.md` (added 3 new candidates)
+
+---
+
+### Project Status Update
+
+**resistance-research**:
+- Domain 31 (Healthcare Access) — COMPLETE and production-ready
+- Framework now 30 domains (base 1-22 + 19f + 23, 27-29, 31 = 30-domain framework)
+- Phase 2 expansion: Candidate 1 complete, 4 candidates queued (Candidates 2-5)
+- **Next**: User decides (1) begin distribution execution for 29-domain proposal, OR (2) begin next Phase 2 expansion research (Candidate 2: State Legislative Autocratization is the next priority after healthcare)
+
+**All other projects**: No change; awaiting user action
+
+---
+
+**Status**: Exploration queue augmented to 5 candidates; Domain 31 (Healthcare Access/OBBBA Medicaid Crisis) researched and production-ready. Framework now spans 30 domains. All work on resistance-research that is autonomous has been completed; further expansion requires user prioritization (distribution vs. continued research). Ready for user guidance.
+

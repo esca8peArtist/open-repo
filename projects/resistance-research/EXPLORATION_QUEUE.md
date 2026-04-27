@@ -82,6 +82,69 @@ See `projects/resistance-research/domains/domain-23-trade-policy-tariff-unilater
 
 ---
 
+### Candidate 3 (High Priority): Congressional Power-of-the-Purse Restoration and Fiscal Authority Reassertion
+
+**Why this is the gap:** The proposal covers War Powers Reform (Domain 19f) but not the broader question of congressional reassertion of fiscal authority. The executive branch has systematically circumvented congressional appropriation controls through: (1) impoundment (refusing to spend appropriated funds), (2) discretionary fund reprogramming (using emergency authorities to shift appropriations), (3) executive unilateral spending (DEO activities, Venezuela operations, agency restructuring funded outside appropriations bills), (4) emergency declarations triggering spending authority. These mechanisms were the infrastructure for the Venezuela operations (January 2026), DOGE activities, and agency restructuring. Congressional power to impeach an executive is meaningful only if Congress controls the fiscal lever. This is foundational to any democratic recovery scenario.
+
+**Core research questions:**
+- What is the scope of executive impoundment and reprogramming authority post-Trump presidency? (CMS reprogramming of Medicare funds, DoD discretionary reallocations, Treasury emergency spending authorities)
+- How are emergency authorities (NEA, IEEPA, statutory emergency powers) being used to bypass appropriations? (Venezuela operations funding, DEO spending authority, ICE budget reallocations)
+- What is the current legal landscape post-Loper Bright for Congressional budget enforcement? (Appropriations Clause litigation, standing to enforce congressional budget authority, separation of powers jurisprudence)
+- What historical precedents exist for Congressional budget reassertion? (Gramm-Rudman-Hollings framework, CBA creation, Antideficiency Act enforcement history)
+- What reforms could restore congressional fiscal control? (Appropriations enforcement mechanisms, emergency authority sunset provisions, congressional approval for budget authority delegation, mandatory impoundment reporting)
+
+**Connection to existing domains:** Domain 2 (executive power and checks/balances), Domain 19f (war powers — which presupposes fiscal control), Domain 5 (congressional structure and reform), Domain 6 (judicial review of appropriations disputes).
+
+**Sourcing confidence:** High. Congressional Budget Office analysis, appropriations bills text, CRS reports on appropriations authority, constitutional law literature on Appropriations Clause, litigation tracker for Appropriations Clause cases.
+
+**Estimated scope:** 4,500–6,000 words. Complements Domain 2 and Domain 19f; could be structured as Domain 2b or as a standalone domain (Domain 31).
+
+**Time sensitivity:** Immediate (ongoing executive budget circumvention continues through FY2026).
+
+---
+
+### Candidate 4 (Medium-High Priority): Supreme Court October 2026 Term Preview and Post-Loper Landscape
+
+**Why this is the gap:** The proposal's judicial reform sections (Domain 6, Domain 13) were written before the October 2025 term decisions — particularly Loper Bright (overruling Chevron), universal injunction limits, and presidential immunity. The October 2026 term cert grants (due summer 2026) will determine the judicial-power landscape for the next 3 years. Major cases visible on the horizon: (1) Section 230 immunity and platform liability, (2) state congressional map challenges under 14th Amendment, (3) religious freedom/civil rights conflicts, (4) labor organizing rights (NLRB authority post-Loper). These cases directly impact reform feasibility. Understanding the likely October 2026 holdings is essential for adaptive recovery planning.
+
+**Core research questions:**
+- Which cases are likely to be cert-granted for October 2026 term? (Supreme Court docket review, early cert petitions, amicus briefing patterns)
+- What is the doctrinal fallout from Loper Bright (chevron overruling) for the proposal's implementation roadmap? (Which agencies lose deference, which statute interpretations become contestable, what new litigation vectors open)
+- What limits do universal injunction restrictions place on nationwide reform litigation? (District court remedies architecture, circuit court splitting, SCOTUS merits timeline)
+- What is the working definition of presidential immunity post-June 2024 decision, and how does it affect election-related executive overreach liability?
+- What structural judicial reforms remain viable post-Loper? (Judicial independence protections that don't depend on deference doctrine, statutes that survive textualist review)
+
+**Connection to existing domains:** Domain 6 (judicial independence and reform), Domain 13 (constitutional amendments — may need updates), Domain 2 (executive power — presidential immunity implications).
+
+**Sourcing confidence:** High for pending cases (SCOTUS docket public), medium for October 2026 predictions (cert petitions not yet fully docketed as of April 2026).
+
+**Estimated scope:** 3,500–5,000 words. Complements Domain 6 and updates judicial landscape analysis; could be a Domain 6 addendum or standalone brief (Domain 32).
+
+**Time sensitivity:** Summer 2026 cert grants (will be publicly available before this candidate should be researched).
+
+---
+
+### Candidate 5 (Medium Priority): AI Governance, Algorithmic Accountability, and Democratic Authority
+
+**Why this is the gap:** Domains 21 (Data Privacy) and 16d (algorithmic decision-making in immigration enforcement) provide partial coverage, but the broader question of AI governance as a democracy issue — how AI systems undermine human democratic authority, and what accountability mechanisms are necessary — deserves dedicated treatment. Recent developments: (1) FBI location data purchasing (Kash Patel testimony April 2026), (2) EFF FOIA suit against CMS for Medicaid AI decision records, (3) Trump AI framework preempting state regulation, (4) federal agencies deploying AI for grant/benefit decisions without human review. This is distinct from privacy (it's about authority) and immigration (it's systemic across all agencies).
+
+**Core research questions:**
+- What is the scope of federal AI deployment in benefit determinations, law enforcement, and administrative decisions as of April 2026? (GAO AI inventory, agency AI systems registry, CMS Medicaid AI guidance)
+- How are AI systems being deployed to circumvent human oversight and democratic accountability? (Fully automated benefit denials, algorithmic law enforcement, predictive systems used without explainability)
+- What is the international precedent for AI accountability (EU AI Act, Canada AIDA, UK AI Bill framework)?
+- What accountability mechanisms exist in law and what gaps remain? (Explainability requirements, human review mandates, appeal rights, algorithmic impact assessments)
+- What structural reforms could establish human democratic authority over AI systems in government? (Algorithmic due process, administrative procedure updates, transparency requirements, algorithmic justice board proposals)
+
+**Connection to existing domains:** Domain 21 (data privacy — extends beyond data to authority), Domain 16d (algorithmic decision-making — expands from immigration to all government), Domain 5 (administrative procedure — AI as a circumvention mechanism), Domain 14 (education — AI in grading/discipline decisions).
+
+**Sourcing confidence:** Medium-high. GAO reports, agency AI guidance documents, EFF litigation materials, international regulatory comparison (EU/Canada).
+
+**Estimated scope:** 4,000–5,500 words. Could be Domain 21b (AI Governance Addendum) or standalone domain (Domain 33).
+
+**Time sensitivity:** Medium (ongoing deployment, no immediate legislative deadline, but 2026 regulatory actions likely).
+
+---
+
 ## Lower Priority — Follow-on Research
 
 These are valid threads but lower urgency than the three candidates above:
@@ -108,4 +171,6 @@ The following gaps were identified in the Session 510 readiness assessment but a
 
 ---
 
-*Next action: User selects one or more candidates from the priority list. Do NOT begin research until selection confirmed.*
+**SESSION 513 UPDATE (2026-04-27 05:00 UTC):** Exploration queue updated with 3 new candidates (Candidates 3-5), bringing active queue to 5 items. Candidate 1 (Healthcare Access Collapse / OBBBA Medicaid Crisis) selected as highest-priority Phase 2 research due to June 2026 deadline urgency. Beginning research for Domain 11b or Domain 31 (healthcare-access-obbba-medicaid-crisis.md).
+
+*Next action: Begin healthcare access domain research (Session 513).*

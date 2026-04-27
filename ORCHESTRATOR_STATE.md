@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-27T04:36:15Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-27T04:58:03Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 49.3% | Reset in 19h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 47.6% (2,391,297 tokens) | All-models 49.8% | Reset in 19h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -23,8 +23,8 @@
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
-**Status**: Active — Phase 1-5 COMPLETE, **Diagnostic Framework Complete at 26 Domains (Session 502)** — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready
-**Focus**: **Session 503 (2026-04-27 evening): Domain 26 Research COMPLETE**. 
+**Status**: Active — Phase 1-5 COMPLETE, **29-Domain Diagnostic Framework COMPLETE** (Sessions 502-512) — Core proposal architecture complete, completeness assessment done, Domain 19f (War Powers) COMPLETE, Domain 26 infrastructure ready, Phase 2 expansion Domain 23 (Trade Policy) COMPLETE
+**Focus**: **Session 512 (2026-04-27): Domain 23 Trade Policy Research COMPLETE** — Major research finding: February 20, 2026 SCOTUS ruling (*Learning Resources, Inc. v. Trump*) struck down IEEPA tariff authority (6-3, Roberts majority). Domain covers executive tariff authority erosion, Section 122 pivot, TA
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -64,42 +64,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- **Metrics**: 9,226 words, 28 subsections, 50+ sourced citations
-- **Content**: Four-track assault analysis (federal funding leverage, DEI prohibition, student visa revocations, administrative control demands), democratic function, structural vulnerabilities, institutional resilience mechanisms, reform pathways (27a-27e), international precedents (Germany, Canada, Netherlands), implementation timeline, fiscal scope ($96-126B/year investment vs $1-1.5T GDP loss)
-- **Key findings**: 
-  - U.S. institutional autonomy fell from 3.3 (2019) to 1.7 (2025) — largest single-year decline for any major democracy in Academic Freedom Index
-  - 35% of faculty now more likely to self-censor than during McCarthyism (FIRE 2024 survey)
-  - Brain drain escalating: U.S. researchers' ERC grant applications to EU tripled (60→169 in 2 years)
-- **Status**: Production-ready, fully sourced, integrated with Domain 19f
+1. ✅ `domains/domain-23-trade-policy-tariff-unilateralism.md` (8,849 words, production-ready)
+2. ✅ `democratic-renewal-proposal.md` (updated with Domain 23 integration)
 
-**Domain 28: War Powers, Venezuela Military Unilateralism** ✅
-- **File**: `projects/resistance-research/domains/domain-28-war-powers-venezuela-military-unilateralism.md`
-- **Metrics**: 5,200 words, 28 sourced citations
-- **Content**: January 3 2026 Venezuela "arrest operation" as precedent for eliminating WPR constraints, Senate 51-50 blocked (VP Vance tiebreaker), House 215-215 failed, legal theory analysis, WPR historical framework, 1973-2001 AUMF context, implications for democratic constraint, international precedent, reform pathways (28a-28d), implementation timeline, fiscal scope ($4.7B costs of 2025-2026 deployment)
-- **Key findings**: 
-  - If "arrest operation" successfully displaces "military operation," WPR is functionally eliminated for any operation framed as law enforcement
-  - DEA holds current indictments in Iran, North Korea, Russia, Lebanon, Cuba, Colombia, Mexico — establishes precedent scope
-  - Appropriations rider pathway (Cambodia 1973, Somalia 1994 model) is available short-term lever
-- **Connection**: Domain 28 extends Domain 19f by documenting the operational live case where legal precedent is actively being set
-- **Status**: Production-ready, fully sourced, explicitly maps connection to Domain 19f
+---
 
-**Domain 29: Prosecutorial Weaponization and DOJ Capture** ✅
-- **File**: `projects/resistance-research/domains/domain-29-prosecutorial-weaponization-and-doj-capture.md`
-- **Metrics**: 8,809 words, 60 sourced citations across 20 source blocks
-- **Content**: SPLC indictment (April 21 2026) as landmark case, Kash Patel personal announcement (abnormal), 22-case pattern (political opposition, Democratic officials, instrumentalized prosecution, protest suppression tracks), Nashville/Crenshaw vindictive prosecution finding (October 2025), institutional vulnerability via FVRA gaming, prosecutorial discretion at charging stage, charging-stage vs trial-stage analysis (97.2% guilty plea rate), international precedent (Germany Legalitätsprinzip, Canada transparency, UK CPS test, EU independence), May Day implications, reform pathways (29a-29d: Special Counsel Independence Act, charging transparency, IG restoration, McDade-Murtha litigation), implementation timeline (Phase 1: 0-12mo, Phase 2: 12-36mo, Phase 3: 36+mo), fiscal scope ($50-100M/year institutional infrastructure vs $44M+ in defense costs for documented 22 cases)
-- **Key findings**: 
-  - SPLC case is "suppression through process, not conviction" — successor to COINTELPRO applying formal legal apparatus
-  - Charging decision = functional verdict (2% trial rate, 0.4% acquittal rate)
-  - Grand jury secrecy + no pre-indictment standing means no check on charging stage where power is most dangerous
-  - Section 7 (new) establishes charging-stage power is categorically different from trial-stage power
-- **Status**: Production-ready, fully sourced, establishes distinctions from Domain 6 (Judicial Independence)
+### Exploration Queue Maintenance
 
-### Integration Status
+**Task: Update EXPLORATION_QUEUE.md to reflect Domain 23 completion**
 
-All three domains have standalone research files committed to git. The proposal file (`democratic-renewal-proposal.md`) currently has older embedded summaries of Domains 27-29. Next step is integration into proposal Part II and updates to executive summary and distribution package. However, the core research is complete and production-ready.
+**Changes**:
+- ✅ Status section updated to reflect 29-domain framework (Domain 23 completed Session 512)
+- ✅ Marked Candidate 1 (Trade Policy) as COMPLETED with key findings summary
+- ✅ Removed detailed Candidate 1 research questions (now superseded by Domain 23)
+- ✅ Renumbered Candidates 2→1 and Candidate 3→2 (Healthcare Access and State Legislative Autocratization)
+- ✅ Queue now has 2 remaining candidates for autonomous Phase 2 expansion work
 
-### Exploration Queue Status
+**Queue Status**: 2 active candidates queued (Healthcare Access is most time-sensitive with January 2027 deadline; State Legislative is state-level democratic angle). Domain 23 completion means 4 of the initial Phase 2 expansion candidates are now complete (Domains 23, 27-29).
 
-Queue now empty (3 items worked). Should add 2-3 new Phase 2 research candidates before next session if no higher-priority work emerges.
+---
 
-**Total Phase 2 domains completed**: 6 (Domains 27-29 completed this session; Domains 26, 25, 24, 23 completed in Sessions 500-502)
+### Project Status Summary
+
+**resistance-research**:
+- ✅ 29-domain diagnostic framework COMPLETE (Domains 1-22 base + Domain 19f + Domains 23, 27-29)
+- ✅ Phase 2 Priority 3 expansion partially complete (Candidates 1/Trade Policy done; Candidates 2-3/Healthcare + State Legislative queued)
+- ✅ Proposal fully integrated with all new domains
+- **Next**: User decision on distribution execution OR pick next Phase 2 candidate for expansion research
+
+**stockbot**:
+- ⚠️ Engine offline (test contamination resolved per Session 511)
+- ⚠️ Requires restart before Monday 2026-04-28 09:30 ET (USER ACTION)
+- ⚠️ Gate 1 structural risk remains critical (30/month requirement vs. 2-3/month capacity)
+- ✓ May 12 feasibility checkpoint scheduled (2026-05-12)
+
+**All other projects**: Awaiting user input or manual actions (mfg-farm test print, seedwarden Etsy corrections, off-grid-living social media, etc.)
+
+---
+
+**Status**: Domain 23 research complete, proposal integrated, framework now 29 domains. Ready for user to decide: (1) begin distribution execution, (2) pick next Phase 2 candidate for research, or (3) pause autonomous work and await user guidance.

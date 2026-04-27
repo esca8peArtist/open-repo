@@ -102,9 +102,17 @@
   - Proposal structure complete: all 28 domains have body text in proposal, Domains 23-29 have standalone research files with cross-references
   - Assessment: Ready for distribution execution OR Phase 2 expansion research selection
 
+**Phase 2 Candidate 1 (Session 513) — COMPLETE**:
+- ✅ **Domain 31: Healthcare Access Collapse — OBBBA/Medicaid Crisis** (6,142 words, production-ready)
+  - Research document: `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md`
+  - Scope: OBBBA work requirement implementation (January 2027), Medicaid expansion funding elimination (January 2026), 6-month recertification (2027+), and democracy-health nexus through voter registration infrastructure
+  - Key findings: 11.8M disenrollment projected; Arkansas 2018 precedent (18K disenrolled in 6 months with zero employment effect); June 2026 HHS guidance deadline creates advocacy window; racial disparities in procedural disenrollment (Black individuals 22% of enrollees but 22% of procedural disenrollments); rural hospital closures linked to Medicaid funding cuts
+  - Democracy angle: Medicaid enrollment offices serve as voter registration sites under NVRA; cuts to enrollment capacity reduce voter registration in majority-minority areas (12 non-expansion states are primarily Southern, majority-Black low-income populations)
+  - Implementation timeline: June 1, 2026 (HHS guidance); January 1, 2027 (work requirements effective); litigation anticipated Q1 2027; circuit court decisions through 2028
+
 **Next**: 
-- **DISTRIBUTION EXECUTION** (user action): All 28 domains production-ready. Comprehensive distribution package: (1) updated proposal integrating new domains, (2) Substack/Reddit templates (3-posts/week suggested), (3) Institutional outreach (universities, policy orgs, legal clinics) — all research at sufficient depth for serious engagement
-- **Phase 2 expansion (optional)**: Pick from EXPLORATION_QUEUE.md candidates (trade policy most urgent for Trump tariff analysis; healthcare access most time-sensitive for Medicaid deadline in January 2027; state legislative capture offers state-level democracy angle). Add 2-3 more candidates if queue drops below 3 items.
+- **DISTRIBUTION EXECUTION** (user action): All 29 domains production-ready. Comprehensive distribution package: (1) updated proposal integrating new domains, (2) Substack/Reddit templates (3-posts/week suggested), (3) Institutional outreach (universities, policy orgs, legal clinics) — all research at sufficient depth for serious engagement
+- **Phase 2 expansion (optional)**: Exploration queue updated (Session 513) with 5 candidates queued (Healthcare/Medicaid complete; State Legislative Autocratization, Congressional Power-of-the-Purse, Supreme Court 2026 Term Preview, AI Governance). Pick next candidate or begin distribution. User selects priority.
 
 **✅ COMPLETED (Session 502)**:
 - ✅ **Domain 19f War Powers Reform** — Complete research document with current crisis analysis
