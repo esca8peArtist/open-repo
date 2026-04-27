@@ -704,11 +704,11 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Key findings**: Top 5 suppliers ranked (eSUN $11–13/kg, Anycubic $10.49/kg bulk, Polymaker $14.99/kg quality, Overture backup, SUNLU sampling). COGS reduction: $0.77–1.40/unit. Monthly margin gain at 7K units: $5,400–9,800. Post-test-print 7-step sequence documented.
   - **Status**: ✅ COMPLETE
 
-- **open-repo Phase 5 final architecture**: Kiwix integration and offline export implementation plan
-  - **Scope**: Complete architecture design for offline ZIM file generation, incremental export strategy, CDN hosting, user download experience
-  - **Expected output**: Implementation roadmap ready for Phase 5 execution
-  - **Timeline**: 1 session
-  - **Status**: QUEUED
+- ✅ **open-repo Phase 5 final architecture** (Session 546 COMPLETE)
+  - **Deliverables**: `projects/open-repo/phase-5-offline-export-architecture.md` (production-ready)
+  - **Key findings**: ZIM metadata naming convention (openZIM standard), incremental strategy (versioned full exports + scope-scoped flavours), CDN architecture (Cloudflare R2 for MVP, Backblaze B2 for scale, explicit S3 rejection on egress costs), OPDS catalog integration (feedgen library + submission path to Kiwix catalog), search quality + federation-aware export scoping
+  - **Effort revision**: 24–37 days total for complete Phase 5 (9–14 days additive to prior 15–23 day estimate)
+  - **Status**: COMPLETE (committed to master)
 
 **✅ COMPLETED (Session 545 — Exploration Queue Execution)**:
 
@@ -726,6 +726,29 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Deliverables**: `feature-drift-detection.md` (3,800 words) + `feature_drift_detector.py` (Python module with 4 key functions) + `test_feature_drift_detector.py` (68 unit tests, all passing) + CLI extension to post_trade_analysis.py
   - **Key design**: Zero schema changes; LightGBM native SHAP (no external package); 5-dimension retraining trigger with advisory default (human approval before execution); regime-adaptive thresholds
   - **Status**: Production-ready for post-Gate-1-pass integration once paper trading validates drift patterns
+
+**NEW ITEMS (Session 546 — Exploration Queue Refresh)**:
+
+- **resistance-research: Post-distribution measurement and iteration framework** (Priority 1)
+  - **Scope**: Design measurement infrastructure for tracking adoption and impact of Phase 1 distribution across influencer tiers (Tier 1: legislators/think tanks; Tier 2: academics/media; Tier 3: labor/civil rights networks). (1) Define success metrics per tier and domain, (2) Build feedback-loop mechanisms for iterating proposal messaging, (3) Measure influencer network amplification (who cites, who networks, cascade tracking), (4) Design monthly iteration cycles for Phase 2 domain research based on distribution feedback, (5) Create institutional adoption playbook (how policy organizations should implement framework recommendations)
+  - **Goal**: Post-launch visibility into whether distribution is reaching intended audiences and what refinements to proposal/messaging/sequencing improve adoption
+  - **Expected output**: `measurement-and-iteration-framework.md` (3,000-4,000 words) + adoption tracking template + feedback integration workflow
+  - **Timeline**: 1-2 sessions
+  - **Status**: QUEUED
+
+- **stockbot: Gate 2+ optimization thesis** (Priority 2)
+  - **Scope**: Design optimization strategy for improving Gate 2 metrics (Sharpe ratio ≥1.0, max drawdown ≤20%, profit factor ≥1.5) beyond multi-ticker paper trading baseline. (1) Ensemble weighting strategies beyond equal weighting (volatility weighting, risk parity, Kelly criterion), (2) Sector rotation thesis (diversify across sectors to reduce concentration risk and improve Sharpe), (3) Tail-hedge mechanisms (protective puts, volatility-spike positioning, drawdown triggers), (4) Regime-adaptive position sizing deepening (HMM + volatility scalar interaction), (5) Model refresh schedule and retraining triggers to combat drift
+  - **Goal**: Create a detailed optimization roadmap that closes the 4x gap to Gate 2 pass without increasing operational complexity or risk
+  - **Expected output**: `gate-2-optimization-thesis.md` (4,000-5,000 words) + pseudo-code for 3 ensemble methods + decision tree for sector/tail-hedge activation
+  - **Timeline**: 2-3 sessions
+  - **Status**: QUEUED
+
+- **seedwarden: Wholesale and affiliate partnership strategy** (Priority 3)
+  - **Scope**: Design B2B growth channels complementary to direct-to-consumer Phase 1-3. (1) Wholesale partnerships (bulk discounts to homesteading/survival retailers, PDF licensing to educational institutions), (2) Affiliate programs (commissions for bloggers, YouTube creators, homesteading influencers), (3) Corporate training and corporate bulk licensing (employee wellness programs, disaster preparedness training), (4) White-label partnerships (other Etsy sellers bundling products into kits, content distribution platforms licensing guides), (5) Seasonal partnership windows (spring garden planning bundles with seed companies, fall preservation bundles with canning suppliers)
+  - **Goal**: Build sustainable high-margin channels that reduce reliance on paid advertising and capture customers before they reach Etsy
+  - **Expected output**: `wholesale-and-affiliate-strategy.md` (3,500-4,500 words) + partnership pipeline template + commission structure proposals + contact list for 15-20 target partners per channel
+  - **Timeline**: 1-2 sessions
+  - **Status**: QUEUED
 
 **NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
 

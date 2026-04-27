@@ -4,6 +4,71 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 Session 546 — Exploration Queue Refresh + Pre-Deployment Staging
+
+**Status**: ✅ **THREE PARALLEL TASKS COMPLETE** — open-repo Phase 5 offline export architecture finalized; resistance-research pre-deployment staging directories created (Path A / A+Domain37 / Path B); exploration queue refreshed with 3 new forward-looking research items.
+
+**Part 1 — open-repo: Phase 5 Offline Export Production Architecture (COMPLETE)**
+
+**Deliverable**: `projects/open-repo/phase-5-offline-export-architecture.md` (production-ready, committed to master)
+
+**Key architectural decisions resolved**:
+1. **ZIM Metadata (openZIM compliance)**: Name field format (`{publisher}_{language}_{flavour}`), mandatory 48×48 PNG illustration for catalog visibility, stable UUID across exports for in-app update detection
+2. **Incremental strategy (correct approach)**: Binary diffs (zimdiff) not production-ready as of 2025; use versioned full exports with openZIM retention policy (current + 2 prior months + anything ≤30 days). Scope-scoped flavours (`nopic`, `agriculture`, `recipes`) as practical delta proxy.
+3. **CDN architecture**: Cloudflare R2 MVP (zero egress, free 10GB), Backblaze B2 for scale (via Bandwidth Alliance zero egress); AWS S3 explicitly ruled out (egress prohibitive)
+4. **OPDS catalog integration**: `/opds/v2/root.xml` endpoint, `feedgen` library, submission path to official Kiwix catalog (openzim/zim-requests), Android Play Store workaround (F-Droid variant)
+5. **Search quality & federation integration**: HTML rendering hygiene (strip boilerplate), CC-BY attribution for federated items, update mechanisms (RSS/polling/webhooks)
+
+**Effort revision**: 24–37 days total for Phase 5 (9–14 days additive to prior estimate)
+
+---
+
+**Part 2 — resistance-research: Pre-Deployment Staging for Immediate Execution (COMPLETE)**
+
+**Deliverables**: Three staging directories created and production-ready:
+1. **`projects/resistance-research/STAGE_PATH_A/`** — Broad 34-domain distribution, no Domain 37 sequencing
+   - `DEPLOY_CHECKLIST_PATH_A.md`: Hour-by-hour execution timeline (T-Hour 1 through T+8 weeks), all contacts named with email addresses, every step mapped to templates
+2. **`projects/resistance-research/STAGE_PATH_A_DOMAIN37/`** — Recommended hybrid path
+   - `DEPLOY_CHECKLIST_PATH_A_DOMAIN37.md`: Path A through Week 8, then Phase B with election-protection organization tier (7 national + state-level targets in AZ/GA/MI/PA/WI), targeted Domain 37 sequencing with subject line variants keyed to advocacy windows (May 30, June 30, Aug 7, Sept, Oct)
+3. **`projects/resistance-research/STAGE_PATH_B/`** — Deferred distribution pending content maintenance
+   - `MAINTENANCE_SCHEDULE_PATH_B.md`: 7 priorities sequenced with exact word estimates, primary sources, execution steps, decision rules. Minimum delay 1-2 weeks (not 2-4). Transition gate documented.
+
+**Strategic design**: All staging directories reference existing production files (no duplication). When user chooses path, corresponding STAGE_* directory is the execution blueprint — orchestrator can deploy within 2 hours.
+
+---
+
+**Part 3 — Exploration Queue Protocol Compliance (COMPLETE)**
+
+**Status**: Queue assessment identified <3 active items (only "open-repo Phase 5" queued). Per protocol, added 3 new exploration items:
+
+1. **resistance-research: Post-distribution measurement and iteration framework** (Priority 1)
+   - Scope: Success metrics per tier, feedback-loop mechanisms, influencer network amplification tracking, monthly iteration cycles, institutional adoption playbook
+   - Timeline: 1-2 sessions
+   - Status: QUEUED
+
+2. **stockbot: Gate 2+ optimization thesis** (Priority 2)
+   - Scope: Ensemble weighting strategies, sector rotation, tail hedges, regime-adaptive position sizing, model refresh schedule
+   - Timeline: 2-3 sessions
+   - Status: QUEUED
+
+3. **seedwarden: Wholesale and affiliate partnership strategy** (Priority 3)
+   - Scope: Wholesale partnerships, affiliate programs, corporate training/licensing, white-label models, seasonal partnerships
+   - Timeline: 1-2 sessions
+   - Status: QUEUED
+
+**Commits**:
+- PROJECTS.md: Marked open-repo Phase 5 COMPLETE, added 3 new exploration items
+- phase-5-offline-export-architecture.md: New research deliverable
+- STAGE_PATH_A/DEPLOY_CHECKLIST_PATH_A.md: New staging directory
+- STAGE_PATH_A_DOMAIN37/DEPLOY_CHECKLIST_PATH_A_DOMAIN37.md: New staging directory
+- STAGE_PATH_B/MAINTENANCE_SCHEDULE_PATH_B.md: New staging directory
+
+---
+
+**Ancillary**: Created `STOCKBOT_PRE_RESTART_CHECKLIST.md` (5-minute verification, restart procedure, monitoring guidelines, emergency stop protocol) for user before 2026-04-28 09:30 ET engine restart.
+
+---
+
 ## 2026-04-27 — open-repo — Phase 5 Offline Export Production Architecture
 
 **Deliverable**: `projects/open-repo/phase-5-offline-export-architecture.md` (~3,600 words, production-ready)

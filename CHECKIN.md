@@ -4,45 +4,66 @@
 
 ---
 
-## Current Session (Session 545 — 2026-04-27 23:45 UTC — Exploration Queue Execution: Phase 3 Prep + Growth Metrics + Feature Drift)
+## Current Session (Session 546 — 2026-04-27 evening — Exploration Queue Refresh + Pre-Deployment Staging)
 
-**Status**: ✅ **THREE EXPLORATION ITEMS COMPLETE** — Resistance-research monitoring infrastructure verified complete (prior session, 4,670 words + JSON template); seedwarden growth metrics framework production-ready (4 deliverables); stockbot feature drift detection implemented (Python module + 68 tests, all passing).
+**Status**: ✅ **THREE PARALLEL TASKS COMPLETE** — open-repo Phase 5 offline export architecture finalized (production-ready, committed); resistance-research pre-deployment staging directories created (Path A, A+Domain37, B); exploration queue refreshed with 3 new items per protocol.
 
-**Critical Reminder**: ⏰ **stockbot engine restart REQUIRED before 2026-04-28 09:30 ET** (~13 hours remaining). No blocking issues — all infrastructure ready for Day-1 deployment.
+**CRITICAL DEADLINE**: 🔴 **stockbot engine restart REQUIRED before 2026-04-28 09:30 ET** (~14 hours remaining). Pre-restart checklist created: `STOCKBOT_PRE_RESTART_CHECKLIST.md`. No blocking issues — system ready for immediate restart.
 
-**Since Last Session (Session 544)**:
+**Since Last Session (Session 545)**:
 
-1. ✅ **Orientation & Queue Assessment**
-   - Identified: Exploration queue had <3 active items (protocol trigger point)
-   - Action: Added 3 new forward-looking research items per protocol
-   - Committed PROJECTS.md update to master
+1. ✅ **Orchestrator Orientation**
+   - Read ORCHESTRATOR_STATE.md, PROJECTS.md, INBOX.md, BLOCKED.md
+   - Assessment: Only 1 active block (mfg-farm test print). Stockbot and resistance-research are awaiting user action, not fully blocked.
+   - Queue assessment: <3 items, per protocol trigger
 
-2. ✅ **Parallel Exploration Execution (3 agents in parallel)**
-   - **resistance-research Phase 3 monitoring infrastructure**: Verified complete from prior session. Deliverables: `monitoring-infrastructure-2026.md` (4,670 words, 7 parts) + `tracking-template.json` (1,316 lines, 37-domain tracking). Tier structure: Tier 1 automated (court dockets), Tier 2 human-curated (significance judgment), Tier 3 coalition-fed (relationship intel). Domain 37 has embedded advocacy calendar.
-   - **seedwarden growth metrics framework**: Delivered 4 production-ready components: (1) `growth-metrics-framework.md` (3,700+ words, 7 sections), (2) `cohort-analysis-template.sql` (617 lines, 8 query sets), (3) `dashboard-template.ipynb` (Jupyter with synthetic data fallback), (4) `monthly-metrics-checklist.md` (90-minute runbook). Key finding: Email-to-purchase funnel critical path (20% target); seasonal cohort divergence (holiday gift ≠ self-purchase repeat patterns).
-   - **stockbot feature drift detection**: Delivered complete analytics extension: (1) `feature-drift-detection.md` (3,800 words, 6 sections), (2) `feature_drift_detector.py` (Python module: 4 key functions, 3 dataclasses), (3) `test_feature_drift_detector.py` (68 unit tests, all passing), (4) CLI extension to `post_trade_analysis.py`. Zero schema changes; 5-dimension retraining trigger with advisory default.
+2. ✅ **Parallel Deployment Staging (2 agents in parallel)**
+   - **open-repo Phase 5 offline export architecture**: Researched and documented complete production architecture for Kiwix ZIM integration. Resolved: ZIM metadata naming, incremental export strategy (versioned full + scope-scoped flavours), CDN architecture (R2/B2 vs. S3), OPDS catalog integration, federation integration, search quality, update mechanisms. Effort estimate: 24–37 days total. Committed to master.
+   - **resistance-research pre-deployment staging**: Created three complete deployment directories (STAGE_PATH_A, STAGE_PATH_A_DOMAIN37, STAGE_PATH_B) with hour-by-hour execution checklists, contact tables, sequencing logic, and maintenance schedules. When user chooses path, corresponding STAGE_* directory is the execution blueprint. Can deploy within 2 hours of user decision.
 
-3. ✅ **Orchestration Files Updated**
-   - WORKLOG.md: Full Session 545 entry with all three agent deliverables documented
-   - PROJECTS.md: Marked all 3 exploration items complete with deliverable summaries
-   - CHECKIN.md: This check-in entry
+3. ✅ **Exploration Queue Protocol Compliance**
+   - Assessed queue: 1 active item (open-repo Phase 5)
+   - Added 3 new items per protocol (queue <3 items): resistance-research post-distribution measurement, stockbot Gate 2+ optimization, seedwarden wholesale/affiliate strategy
+   - Marked open-repo Phase 5 COMPLETE
 
-**Project Status Summary** (unchanged from Session 544):
-- ✅ **stockbot**: Day-1 infrastructure ready + feature drift ready (awaiting user engine restart, CRITICAL T-13h)
-- ✅ **resistance-research**: Phase 1 execution kit ready + Phase 3 monitoring ready (awaiting user distribution decision)
-- ✅ **cybersecurity-hardening**: COMPLETE — ready for distribution
-- ✅ **seedwarden**: Phase 2 growth metrics + mockup tooling (Track A awaiting user action, Track B research-ready)
-- ✅ **mfg-farm**: Architecture + supplier research complete (awaiting user test print)
-- ✅ **open-repo**: PR #1 open (awaiting review)
-- ✅ **off-grid-living**: Publication complete (awaiting user social media)
+4. ✅ **Pre-Restart Preparation**
+   - Created `STOCKBOT_PRE_RESTART_CHECKLIST.md`: 5-minute verification command, restart procedure, monitoring guidelines, emergency stop protocol
+   - System verified ready for user engine restart
+
+5. ✅ **Orchestration Files Updated**
+   - PROJECTS.md: Marked open-repo Phase 5 COMPLETE, added 3 new exploration items
+   - WORKLOG.md: Full Session 546 entry documenting all three tasks
+   - CHECKIN.md: This session summary
+   - All commits to master
+
+**Project Status Summary** (updated from Session 545):
+- ✅ **stockbot**: Multi-ticker paper trading ready, all infrastructure complete (awaiting user engine restart, CRITICAL T-14h, straightforward 30-second restart)
+- ✅ **resistance-research**: Phase 1-3 infrastructure 100% ready, pre-deployment staging directories created (awaiting user distribution path decision — restart will trigger immediate <2-hour deployment)
+- ✅ **cybersecurity-hardening**: Distribution complete and ready (all Tier 1-3 templates finalized)
+- ✅ **seedwarden**: Phase 2 growth metrics + mockup tooling + annual product calendar (Track A awaiting user tag corrections + Etsy verification, Track B no blockers)
+- ✅ **mfg-farm**: Architecture + Phase 2 supplier research + multi-printer economics complete (awaiting user test print — post-print 7-step sequence ready)
+- ✅ **open-repo**: Phase 5 architecture finalized + PR #1 open (awaiting PR review + Phase 5 implementation)
+- ✅ **off-grid-living**: Publication complete (awaiting user social media distribution)
 - ✅ **workout**: Plan complete (awaiting user review)
 
-**Items Needing User Input**:
-1. 🔴 **CRITICAL (T-13h)**: Restart stockbot engine before 2026-04-28 09:30 ET
-2. 🟡 **High Priority**: Decide resistance-research distribution path (Path A / Path A+Domain37 / Path B)
-3. 🟡 **High Priority**: mfg-farm test print confirmation
+**Items Needing User Input (Prioritized)**:
+1. 🔴 **CRITICAL (T-14 hours)**: Restart stockbot engine — `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/ before 2026-04-28 09:30 ET
+   - Checklist: `STOCKBOT_PRE_RESTART_CHECKLIST.md`
+   - Estimated time: 30 seconds restart + verification
+   
+2. 🟡 **High Priority (can execute immediately after Decision)**: Decide resistance-research distribution path
+   - Path A: Immediate 34-domain broad distribution
+   - Path A+Domain37: Recommended hybrid (Path A + targeted Domain 37 to election-protection orgs)
+   - Path B: Continue content maintenance before distribution
+   - Staging directories ready: Once decided, orchestrator executes Phase 1 within 2 hours via corresponding STAGE_* directory
+   
+3. 🟡 **High Priority (post-decision)**: Confirm mfg-farm test print completion
+   - Post-test-print sequence documented: 7-step supplier negotiation + launch sequence ready
+   
+4. 🟠 **Medium Priority**: seedwarden Phase 1 tag corrections (3 items) + Etsy account verification
+   - Phase 2 growth infrastructure ready (no blockers)
 
-**Session Conclusion**: Exploration queue protocol executed cleanly — queue had <3 items, added 3 new items, completed all in parallel. resistance-research Phase 3 monitoring verified production-ready; seedwarden metrics framework ready for Phase 1+ execution; stockbot feature drift detection ready for post-Gate-1 integration. All orchestration files committed to master. System ready for next user signal.
+**Session Conclusion**: Exploration queue protocol executed (queue <3 items → added 3 new items). Completed open-repo Phase 5 architecture research + resistance-research pre-deployment staging (3 paths, all execution-ready) + exploration queue refresh. Created STOCKBOT_PRE_RESTART_CHECKLIST.md for user. All orchestration files committed to master. System positioned for immediate execution on all pending user decisions (engine restart → distribution decision → test print confirmation).
 
 ---
 
