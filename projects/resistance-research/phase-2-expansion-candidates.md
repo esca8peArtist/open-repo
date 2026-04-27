@@ -217,3 +217,178 @@ Method: (1) Enumerated all 28 existing domains to map coverage; (2) scanned Apri
 ---
 
 *This document is a discovery/scoping tool. Do not begin full domain research without explicit user selection. The estimates in this document are based on April 27, 2026 news scanning and cross-reference with existing domain coverage. Scope and sourcing assessments will be refined during actual research.*
+
+---
+
+## Second Discovery Pass — Domains 34+ Candidates
+
+*Session 508 — April 27, 2026. Three additional candidates identified after a second April-May 2026 development scan. These are distinct from Domains A–D above and fill genuine gaps not touched by any of the 28 existing domains or the four Session 507 candidates.*
+
+**Method**: Enumerated confirmed domain coverage (Domains 1–29 + Candidates A–D); searched April–May 2026 developments across five research threads (election administration, civil society infrastructure, Indigenous sovereignty, nonprofit suppression, election security); cross-checked each against existing domains; assessed urgency, sourcing ease, and additive analytical value.
+
+**Confirmed additional gaps**: (1) Operational seizure of election administration machinery — distinct from Domain 1's structural electoral reform focus; (2) civil society suppression as a democracy-dismantling mechanism — the nonprofit sector as democratic infrastructure; (3) tribal sovereignty and Indigenous democratic exclusion — the only sovereign nations within US borders receive no domain coverage in the framework.
+
+---
+
+### Candidate Domain E: Election Administration Seizure and the 2026 Midterm Crisis
+**Proposed title**: "Election Administration as Democratic Infrastructure — Federal Seizure, CISA Gutting, and the 2026 Stress Test"
+**Priority rank**: 1 (highest urgency among second-pass candidates)
+
+**The gap**: Domain 1 (Electoral Reform) addresses the structural architecture of voting systems — proportional representation, RCV, independent redistricting, campaign finance. Subsection 1e covers voting technology and cryptographic verification. What Domain 1 does not address is the *operational administration* of elections: who runs them, who certifies them, who secures them, and what happens when the federal executive branch mounts a systematic campaign to seize control of that administration before a midterm election. This is not a reform question — it is a crisis-in-progress question requiring its own documentation.
+
+**What happened in April 2026**:
+- On March 31, 2026, President Trump signed "Ensuring Citizenship Verification and Integrity in Federal Elections," directing DHS and SSA to compile a nationwide State Citizenship List and directing USPS to deliver mail ballots only to voters on that list. The order effectively converts USPS into a federal election gatekeeping agency. The Constitution's Elections Clause (Article I, Section 4) assigns election regulation to states and Congress — not the president. At least five lawsuits have been filed; a D.C. district court granted a partial injunction blocking key provisions in April 2026.
+- This is the second election executive order. The first (March 25, 2025) was largely blocked by courts but established the pattern. Key provisions of both orders remain under litigation as of April 2026. Expert consensus: the orders cannot be implemented in time for November 2026 even without injunctions, but the intent to establish legal precedent for 2028 is documented.
+- The administration replaced CISA's election security workforce: nearly a third of CISA's staff have been pushed out; election deniers have been installed in at least two dozen positions across DHS and EAC that could affect election administration. Votebeat (January 2026): "States once relied on CISA for election security. Now officials say politicization and retreating support have shattered that trust." CISA staff told ProPublica "elections are a toxic poison" internally — staff avoid the topic to protect their jobs.
+- ProPublica investigation (April 17, 2026): "Inside Trump's Effort to 'Take Over' the Midterm Elections" — documents that roughly two dozen people Trump has installed in positions affecting elections either actively worked to reverse the 2020 vote or come from election denial movement organizations. DOJ demanded state voter rolls; SAVE system inaccuracies documented; multiple states reporting federal pressure.
+- The DOJ demanded voter roll data from states under penalty of funding threats. Several Republican state officials pushed back. SAVE system checks found that states initially reported only "a few to a few hundred" potential noncitizens registered among millions of voters — confirming that noncitizen voting is vanishingly rare, contradicting the administration's premise.
+- At the state level: at least 31 restrictive voting laws enacted in 2025 (Brennan Center — second highest total since tracking began in 2011); at least 8 election interference laws granting partisan state actors authority over election processes; 6 new voter roll purge laws.
+
+**Why this is a democracy emergency distinct from Domain 1**: Domain 1 proposes structural reforms to make elections more representative. This domain documents an active, ongoing attempt to *compromise the administration of the elections we already have* before November 2026. The analytical frame is not reform — it is election integrity defense. The 2026 midterms are the single most time-sensitive variable in the entire democratic recovery scenario (identified in Section 1.4 of the democratic renewal proposal). If election administration is compromised, the reform framework in Domains 1–29 becomes unreachable.
+
+**Scope estimate**: 4,000–5,000 words. Sub-areas: (a) the constitutional design of election administration — Elections Clause, state authority, narrow federal role; (b) the March 2026 executive order: provisions, legal analysis, court challenges, implementation status; (c) CISA gutting and the collapse of federal election security support; (d) election denier installation across federal positions affecting election administration; (e) DOJ voter roll demands and SAVE system inaccuracies; (f) state-level restrictive legislation trends (Brennan Center data); (g) the 2026 midterm stress test — what security gaps exist and who fills them; (h) reform: restoring CISA election security function, civil servant protections for election officials, federal floor standards for election administration independence.
+
+**Sourcing ease**: High. ProPublica investigation is primary source-level. Brennan Center has the most systematic state voting law tracking in the country. Votebeat covers election administration with granular accuracy. The executive order text, Federal Register publication, and court filings are all public. The Brennan Center's litigation tracker supplements the just-security tracker already maintained in this research archive.
+
+**Urgency**: Acute. The 2026 midterms are six months away. The integrity of the outcome is the single most consequential democratic variable in the recovery scenario. Unlike most domains that document harms already in progress, this domain covers harms that are still partially preventable through litigation, state resistance, and civil society pressure.
+
+**Intersection with existing domains**:
+- Domain 1 (Electoral Reform): complementary — Domain 1 covers structural design; this covers operational defense of existing systems
+- Domain 2 (Institutional Integrity): election deniers in government positions is a civil service corruption problem
+- Domain 6 (Judicial Independence): the courts blocking executive election orders are the primary defense mechanism — court independence is the precondition
+- Domain 7 (Rights Protection/Civil Liberties): voter disenfranchisement through mail ballot restrictions is a rights violation
+- Domain 21 (Data Privacy): voter roll data handed to federal agencies creates a surveillance database of political participation
+
+**Sourcing anchors**:
+- [ProPublica: Inside Trump's Effort to "Take Over" the Midterm Elections (April 17, 2026)](https://www.propublica.org/article/trump-midterm-elections-takeover)
+- [Brennan Center: Status of Trump's Anti-Voting Executive Order](https://www.brennancenter.org/our-work/research-reports/status-trumps-anti-voting-executive-order)
+- [Votebeat: Trump election EO — USPS oversight over mail voting (March 31, 2026)](https://www.votebeat.org/national/2026/03/31/donald-trump-2026-midterm-election-executive-order-absentee-mail-ballots-postal-service-citizenship-list/)
+- [Votebeat: Election officials say trust with CISA on election security is broken (January 2026)](https://www.votebeat.org/2026/01/15/cisa-election-security-trust-broken-trump-chris-krebs-denise-merrill/)
+- [Brennan Center: State Voting Laws 2025 in Review](https://www.brennancenter.org/our-work/research-reports/state-voting-laws-roundup-2025-review)
+- [NPR: Trump tries to create verified voter list with executive order (March 31, 2026)](https://www.npr.org/2026/03/31/nx-s1-5508948/trump-voter-list-mail-ballots-executive-order)
+- [CNN: Trump wants Republicans to 'nationalize' US elections](https://www.cnn.com/2026/02/04/politics/trump-nationalize-elections-constitution-clause)
+- [Government Executive: Inside Trump's overhaul of federal election security agencies (April 2026)](https://www.govexec.com/management/2026/04/inside-trumps-overhaul-federal-election-security-agencies/412802/)
+- [ACLU: Court strikes down key part of Trump's unlawful voting executive order](https://www.aclu.org/press-releases/court-strikes-down-key-part-of-trumps-unlawful-voting-executive-order-permanently-blocking-show-your-papers-requirement)
+- [CRS: Executive Order on Elections: Legal Background and Court Challenges](https://www.congress.gov/crs-product/LSB11368)
+- [Brookings: Does President Trump have the authority to 'nationalize' voting?](https://www.brookings.edu/articles/does-president-trump-have-the-authority-to-nationalize-voting/)
+
+**Suggested subsections**: (a) The constitutional design of election administration: state authority, federal floor, zero presidential role; (b) The March 2026 executive order: text, legal theory, and why experts say the president lacks authority; (c) Federal voter rolls and the SAVE problem: inaccurate data as a disenfranchisement mechanism; (d) USPS as election gatekeeper: the constitutional and independence problems; (e) CISA gutting and the election security vacuum; (f) Election deniers in government: who was installed and what they control; (g) State-level voting restriction trends 2025–2026; (h) The 2026 midterm stress test: what holds and what is exposed; (i) Reform: civil servant protections for election officials, CISA independence, federal administration standards, election administration courts (modeled on UK Electoral Commission)
+
+---
+
+### Candidate Domain F: Civil Society Suppression as Democratic Infrastructure Attack
+**Proposed title**: "Civil Society as Democratic Infrastructure — Nonprofit Suppression, IRS Weaponization, and the Terrorism Designation Mechanism"
+**Priority rank**: 2
+
+**The gap**: No existing domain addresses the nonprofit and civil society sector as democratic infrastructure in its own right. Domain 3 (Democratic Participation) covers civic engagement and voter mobilization programs at a structural level. Domain 7 (Rights Protection) covers the First Amendment framework that protects nonprofit speech. Domain 8 (Media/Information) covers the local news collapse. None of them addresses the sector-wide dismantling of the organizational infrastructure through which democracy operates: the $2.5 trillion nonprofit sector that delivers social services, organizes communities, conducts voter registration, operates legal defense networks, maintains the press, and holds government accountable. When this sector is suppressed, the capacity for democratic participation collapses regardless of what the formal voting system looks like.
+
+**What happened in April 2026**:
+- The One Big Beautiful Bill Act (Pub. L. 119-21, signed July 4, 2025) includes Section 112209, which grants the Treasury Secretary unilateral authority to designate any nonprofit as a "terrorist supporting organization" and revoke its tax-exempt status. The organization has 90 days to prove innocence. The government is not required to produce evidence. No due process before designation. Center for American Progress: this provision "would let the executive branch dismantle nonprofits under pretext of fighting terrorism." Section 112209 is enacted law as of 2026.
+- April 6, 2026: Florida Governor DeSantis signed HB 1471, allowing the state to designate domestic and foreign terrorist organizations. Designated groups can be forcibly dissolved, lose state funding, and students can be expelled for promoting them. Stanford Law School documented in February 2026 that red-state governors are already designating civil rights groups as terrorists. A federal judge blocked Florida's earlier attempt to designate Muslim groups; the April law expands the mechanism.
+- The administration pursued revocation of Harvard University's 501(c)(3) tax-exempt status (April–May 2025, continuing through 2026). The March 7, 2026 executive order directed the Education Secretary to exclude from Public Service Loan Forgiveness nonprofits with a "substantial illegal purpose" — a definition the administration controls. IRS/FBI task force created December 2025 to "investigate tax-exempt entities" over alleged ties to "political violence and domestic terrorism" (terminology defined by the administration).
+- $163 billion proposed cut to non-defense programs in FY2026 budget, including complete elimination of: Economic Development Administration, Community Development Block Grant, Community Services Block Grant. Federal grant freezes affected 2,600+ programs; 33% of nonprofits reported funding disruption in the first 4–6 months of 2025; 21% lost government funding outright.
+- SPLC 501(c)(3) IRS investigation request filed April 24, 2026 by right-wing watchdog following the federal indictment. This documents the weaponization pattern: federal indictment → IRS investigation request → potential tax-exempt status challenge. The SPLC indictment (already in Domain 29 and the litigation tracker) is thus connected to the civil society suppression domain as a case study.
+- Chilling effect documented: Democracy Forward's CEO described the administration's goal as winning "through intimidation and targeting what he can't win fair and square in the public square or in court."
+
+**Why this is a standalone democracy domain**: The nonprofit sector is not just an advocacy tool — it is the organizational tissue of democratic society. Food banks, legal aid, civil rights organizations, voter registration networks, community health centers, investigative journalism, labor unions, environmental watchdogs, and academic research centers are all organized as nonprofits. When these organizations face designated-terrorist status without due process, funding freezes, IRS audits, and loan forgiveness exclusions, they reduce staff, restrict speech, abandon politically sensitive programs, and self-censor. This is the structural demobilization of civil society — precisely the mechanism that consolidated autocracies use to prevent opposition from organizing.
+
+**Scope estimate**: 3,500–4,500 words. Sub-areas: (a) the nonprofit sector as democratic infrastructure — scope, functions, and why its suppression matters for democracy; (b) Section 112209 of the OBBBA: text, mechanism, and constitutional problems (First Amendment, due process, separation of powers); (c) IRS weaponization: the legal limits (post-Watergate statute), the violations being attempted, and what the inspector general oversight looks like; (d) Florida and state-level terrorist designation laws: the dual-track (federal + state) suppression mechanism; (e) Federal funding cuts and grant freezes: the financial starvation mechanism; (f) Chilling effect documentation: self-censorship, program restriction, organizational contraction; (g) Legal challenges and civil society resistance (ICNL, National Council of Nonprofits, Leadership Conference); (h) International benchmarks: Hungary's NGO registration and foreign agent laws as the playbook being followed; (i) Reform: repeal of Section 112209, statutory IRS independence protections, due process requirements for tax-exempt status proceedings.
+
+**Sourcing ease**: High. The OBBBA text is a primary source. Center for American Progress, EFF, ICNL, National Council of Nonprofits, and Charity & Security Network have all published detailed analyses. Stanford Law documented the state-level pattern. The Florida law text is public. The IRS/FBI task force is documented. The chilling effect survey data (33% of nonprofits disrupted) is from the National Council of Nonprofits.
+
+**Urgency**: High. Section 112209 is enacted law, not a proposal. The IRS/FBI task force is operational. The Florida law is signed and takes effect July 1, 2026. The SPLC indictment creates a live case study of the weaponization pattern. The $163B budget cut proposal is in active congressional consideration. The advocacy window to challenge Section 112209 constitutionally is open now — no designation has been litigated yet.
+
+**Intersection with existing domains**:
+- Domain 3 (Democratic Participation): civil society organizations are the delivery mechanism for civic engagement programs
+- Domain 7 (Rights Protection/Civil Liberties): First Amendment challenges to nonprofit suppression; chilling effect doctrine
+- Domain 8 (Media/Information): nonprofit investigative journalism is already under attack; Section 112209 could be used against press organizations structured as nonprofits
+- Domain 14 (Criminal Justice): legal aid nonprofits providing defense services; suppression leaves defendants unrepresented
+- Domain 29 (Prosecutorial Weaponization): SPLC indictment as case study connecting prosecutorial and IRS weaponization
+
+**Sourcing anchors**:
+- [Center for American Progress: Reconciliation Provision Would Let Executive Branch Dismantle Nonprofits](https://www.americanprogress.org/article/reconciliation-provision-would-let-executive-branch-dismantle-nonprofits-under-pretext-of-fighting-terrorism/)
+- [ICNL: Evolving Threats to Tax-Exempt Status of 501(c)(3) Nonprofits](https://www.icnl.org/post/news/evolving-threats-to-the-tax-exempt-status-of-501c3-nonprofits)
+- [Stanford Law School: Red State Governors Are Designating Civil Rights Groups as Terrorists (February 2026)](https://law.stanford.gov/2026/02/03/red-state-governors-are-designating-civil-rights-groups-as-terrorists/)
+- [Florida: DeSantis signs domestic terrorist designation law (April 6, 2026)](https://www.wusf.org/politics-issues/2026-04-06/gov-ron-desantis-signs-bill-allowing-state-to-designate-groups-as-domestic-terrorist-organizations)
+- [Nonprofit Quarterly: Federal Funding Freeze Could Decimate Nonprofits](https://nonprofitquarterly.org/federal-funding-freeze-could-decimate-nonprofits/)
+- [National Council of Nonprofits: Proposed Slash to FY2026 Programs](https://www.councilofnonprofits.org/articles/president-trump-proposes-slash-funding-domestic-programs-fy2026)
+- [FIRE: Revoking Harvard's tax-exempt status will threaten all nonprofits](https://www.thefire.org/news/revoking-harvards-tax-exempt-status-will-threaten-all-nonprofits)
+- [NPR: Trump is looking to use the IRS for political ends. Nixon tried it too](https://www.npr.org/2025/05/12/nx-s1-5379585/irs-harvard-trump-nixon)
+- [EFF: House Moves Forward With Dangerous Proposal Targeting Nonprofits](https://www.eff.org/deeplinks/2025/05/house-moves-forward-dangerous-proposal-targeting-nonprofits-0)
+- [Leadership Conference: Opposes Section 112209 of the Ways and Means Budget Reconciliation](https://civilrights.org/resource/leadership-conference-opposes-sec-112209-of-the-ways-and-means-budget-reconciliation/)
+- [Charity & Security Network: Federal Terrorism Law and U.S. Civil Society](https://www.icnl.org/federal-terrorism-law-and-u-s-civil-society-an-explainer)
+
+**Suggested subsections**: (a) Civil society as democratic infrastructure: the $2.5T sector and what it does; (b) Section 112209: the terrorism designation mechanism and its constitutional problems; (c) IRS weaponization: historical precedents (Nixon), current violations, and the post-Watergate statute; (d) State-level terrorist designation: Florida HB 1471 and the dual-track suppression pattern; (e) Federal funding cuts and grant freezes: the financial starvation mechanism; (f) Chilling effect: self-censorship, organizational contraction, and why this is a democracy problem; (g) SPLC as case study: indictment → IRS investigation request → tax-exempt challenge as weaponization pipeline; (h) Legal challenges and civil society resistance; (i) International benchmarks: Hungary's NGO registration and foreign agent laws as structural precedent; (j) Reform: Section 112209 repeal, statutory IRS independence, due process for tax-exempt status proceedings, federal nonprofit protection legislation
+
+---
+
+### Candidate Domain G: Tribal Sovereignty and Indigenous Democratic Exclusion
+**Proposed title**: "Tribal Sovereignty, Indigenous Democratic Rights, and the Dismantling of the Federal Trust Relationship"
+**Priority rank**: 3
+
+**The gap**: Domain 22 (Reparations and Racial Justice) briefly addresses Indigenous communities in the context of the racial wealth gap and environmental justice. Domain 15 (Environment and Climate) covers public lands and natural resource extraction. Neither domain addresses the unique political-legal status of 574 federally recognized tribal nations — which are not racial minorities but sovereign governments with treaty rights, trust relationships, and constitutionally distinct standing. The Trump administration's assault on tribal sovereignty involves a qualitatively different legal structure than any other civil rights or environmental issue: it targets the basis of Indigenous political existence as governments, not merely the rights of Indigenous people as individuals.
+
+**What happened in April 2026**:
+- On April 1, 2026, the Supreme Court heard oral arguments in *Trump v. Barbara* (25-365) on birthright citizenship. The Trump administration's DOJ argued that "the children of tribal Indians are not birthright citizens" — questioning whether the Indian Citizenship Act of 1924 satisfies the 14th Amendment's citizenship clause in the context of tribal membership. Chief Justice Roberts described the government's argument as "quirky." NPR, SCOTUSblog, and the American Immigration Council document that a SCOTUS majority appeared skeptical, but no ruling has issued. Decision expected by late June/early July 2026. If the citizenship argument were accepted, it would undermine a century of settled law.
+- The Trump administration revoked Biden's Executive Order 14112 on tribal sovereignty and self-determination (December 2023) along with 17 other Biden executive actions. EO 14112 expanded tribal self-governance across federal programs, authorized new compacting arrangements, and directed agencies to improve government-to-government consultation. Its revocation eliminates the primary executive-level commitment to tribal self-determination made in the modern era.
+- Secretary of the Interior Burgum's 15-day review of all lands withdrawn from resource extraction under Secretarial Order 3418 — executed without tribal consultation despite legal requirements. Unlike Trump's first term, the review was conducted without public comment or tribal consultation, violating the government-to-government consultation obligation.
+- For the first time this century, a tribe was stripped of its sovereign rights to land: the Mashpee Wampanoag Tribe's land trust designation was removed, described by advocates as "an economic death sentence on an entire community."
+- BIA (Bureau of Indian Affairs) office closures: a Wisconsin BIA office with 40 employees serving all 11 federally recognized tribes in Wisconsin is scheduled to close in August 2026. This eliminates trust services: land-into-trust applications, real estate management, law enforcement support. BIA capacity destruction parallels SSA staffing cuts — the administrative mechanism of federal trust responsibility is being eliminated through personnel reductions.
+- DOGE cuts to Indian Health Service (IHS) documented by the House Natural Resources Committee Democrats. IHS is the primary healthcare delivery system for 2.6 million Native Americans; cuts to IHS are not merely a healthcare access problem — they violate treaty obligations made in exchange for land cessions.
+
+**Why this is a standalone democracy domain**: Tribal nations are sovereign governments — not advocacy organizations, not racial communities, not state subdivisions. The democratic exclusion of tribal nations is structurally different from other civil rights violations: it attacks the governing authority of other sovereigns that predate the United States. The democratic renewal framework addresses how the U.S. can rebuild democratic institutions — but it currently contains no analysis of how 574 governments within U.S. territory should relate to those institutions. This is a foundational gap in the theory of American democracy. The current administration is not merely failing to protect Indigenous rights; it is actively dismantling the legal architecture of tribal sovereignty and testing whether courts will accept arguments that would erase Indian citizenship itself.
+
+**Scope estimate**: 3,500–4,500 words. Sub-areas: (a) tribal sovereignty as a distinct legal category — the treaty-trust-sovereignty triad; (b) the democratic exclusion of tribal nations: representation, citizenship, and government-to-government relationships; (c) Trump administration actions: revocation of EO 14112, land trust removal (Mashpee), SAVE program birthright citizenship argument, BIA closures, IHS cuts; (d) *Trump v. Barbara* — the SCOTUS case, what was argued, what a ruling might mean; (e) Resource extraction on tribal lands without consultation — the environmental-sovereignty intersection; (f) Tribal resistance and legal challenges (NARF, NCAI, coalition litigation); (g) Reform: treaty compliance enforcement mechanism, statutory government-to-government consultation requirement, tribal representation in federal democracy (DC statehood parallel), restoration of EO 14112 protections, IHS and BIA staffing floors.
+
+**Sourcing ease**: Medium-High. NARF (Native American Rights Fund) maintains the best primary litigation docket. The House Natural Resources Committee Democrats published a comprehensive attack summary. The SCOTUS oral argument transcript and SCOTUSblog coverage are primary sources. American Bar Association's natural resources journal published a 2026 winter review of Native nations and public lands. Cultural Survival and Native News Online have documented the executive actions systematically. The Wisconsin BIA closure is documented through local tribal government communications.
+
+**Urgency**: Medium-High. *Trump v. Barbara* — the SCOTUS birthright citizenship/tribal citizenship case — will be decided by late June/early July 2026. That ruling is a hard deadline for understanding the constitutional stakes. The Mashpee land trust removal is a completed harm with ongoing legal challenge. BIA office closures proceed on a documented timeline. The resource extraction reviews without consultation are proceeding. The window for congressional intervention on tribal consultation requirements is open but narrowing.
+
+**Intersection with existing domains**:
+- Domain 22 (Reparations/Racial Justice): Indigenous communities in the racial justice framework — this domain deepens and distinguishes the Indigenous-specific analysis
+- Domain 15 (Environment/Climate): sacred site protection, resource extraction on tribal lands, environmental justice for Indigenous communities
+- Domain 9 (Federalism): tribal nations as a third sovereign category above states but below the federal government — a structural federalism question
+- Domain 19 (National Security): treaty obligations as international law instruments — treaty violations have implications for U.S. treaty credibility globally
+- Domain 6 (Judicial Independence): SCOTUS *Trump v. Barbara* as a live case; courts as the primary defense mechanism for tribal rights
+
+**Sourcing anchors**:
+- [SCOTUSblog: Supreme Court appears likely to side against Trump on birthright citizenship (April 1, 2026)](https://www.scotusblog.com/2026/04/supreme-court-appears-likely-to-side-against-trump-on-birthright-citizenship/)
+- [American Immigration Council: Supreme Court Expresses Skepticism at Trump's Effort to Eliminate Birthright Citizenship](https://www.americanimmigrationcouncil.org/blog/supreme-court-trump-eliminate-birthright-citizenship/)
+- [Native News Online: Trump Administration Rolls Back Executive Order on Tribal Sovereignty](https://nativenewsonline.net/sovereignty/trump-administration-rolls-back-executive-order-on-tribal-sovereignty-and-self-governance/)
+- [American Bar Association: Native Nations, Public Lands, and the Trump 2.0 Era (Winter 2026)](https://www.americanbar.org/groups/environment_energy_resources/resources/natural-resources-environment/2026-winter/native-nations-public-lands-trump-20-era/)
+- [House Natural Resources Committee Democrats: The Trump administration's attack on Indian Country](https://democrats-naturalresources.house.gov/news/in-the-news/the-trump-administrations-attack-on-indian-country/)
+- [National Parks Conservation Association: What Trump's Actions May Cost Tribal Nations](https://www.npca.org/articles/7737-public-lands-did-not-come-free-what-trump-s-actions-may-cost-tribal-nations)
+- [NARF: About Tribal Nations and the United States](https://narf.org/about-tribal-nations-united-states-treaties/)
+- [NARF: Tribal Supreme Court Project](https://www.sct.narf.org/)
+- [Cultural Survival: Indigenous Peoples' Rights Are Non-Negotiable: 22 Calls to Action](https://www.culturalsurvival.org/news/indigenous-peoples-rights-are-non-negotiable-22-calls-action-trump-administration-presidents)
+- [The Nation: Trump Can't Strip Natives of Our US Citizenship, but He Will Try to Take Our Lands](https://www.thenation.com/article/politics/trump-native-sovereignty-citizenship-14th-amendment/)
+- [Stanford Law School: Red State Governors Are Designating Civil Rights Groups as Terrorists (Feb 2026)](https://law.stanford.edu/2026/02/03/red-state-governors-are-designating-civil-rights-groups-as-terrorists/)
+- [CRS: Tribal Self-Determination Authorities: Overview and Issues for Congress](https://www.congress.gov/crs-product/R48256)
+- [Wipfli: Trump's executive orders — key impacts on tribal entities](https://www.wipfli.com/insights/articles/tr-trumps-executive-orders-key-impacts-on-tribal-entities)
+
+**Suggested subsections**: (a) Tribal sovereignty: the treaty-trust-sovereignty triad and why it's different from civil rights law; (b) Democratic exclusion: representation, citizenship, and government-to-government relationships; (c) The administration's actions: a documented inventory (EO 14112 revocation, Mashpee land trust, BIA closures, IHS cuts, resource extraction reviews without consultation); (d) *Trump v. Barbara*: SCOTUS, birthright citizenship, and the tribal citizenship argument; (e) Resource extraction and sacred site threats; (f) Tribal resistance and legal challenges; (g) International benchmarks: UNDRIP (UN Declaration on the Rights of Indigenous Peoples), Canada's duty to consult, New Zealand Treaty of Waitangi; (h) Reform: treaty compliance enforcement mechanism, statutory consultation requirement, Indigenous representation in federal governance, IHS and BIA staffing floors, UNDRIP adoption
+
+---
+
+## Updated Priority Order — All Candidates (Sessions 507 + 508)
+
+| Rank | Domain | Tag | Urgency | Sourcing | Scope |
+|------|--------|-----|---------|----------|-------|
+| 1 | Trade Policy and Economic Sovereignty | A | High | High | 4,000–5,500 |
+| 2 | Healthcare Access Implementation | B | High | High | 4,500–6,000 |
+| 3 | Election Administration Seizure | E | Acute | High | 4,000–5,000 |
+| 4 | Civil Society Suppression | F | High | High | 3,500–4,500 |
+| 5 | AI Governance and Algorithmic Democracy | C | Med-High | Medium | 4,000–5,000 |
+| 6 | Disability Rights and Benefits Access | D | Medium | Medium | 3,500–4,500 |
+| 7 | Tribal Sovereignty and Indigenous Democratic Exclusion | G | Med-High | Med-High | 3,500–4,500 |
+
+**Note on Domain E (Election Administration Seizure)**: This domain has a hard external deadline — the 2026 midterms. If it is to be actionable for distribution before November 2026, research needs to begin no later than June 2026. The *Trump v. Barbara* SCOTUS ruling (expected late June/early July) also provides a natural research trigger point for Domain G (Tribal Sovereignty).
+
+**Excluded from second-pass candidates** (and why):
+- *Housing crisis / Section 8*: The housing domain (Domain 13) already covers housing access comprehensively. The OBBBA's $26.7B HUD cut is referenced in Domain B (Healthcare Implementation) candidate and in Domain 18 (Social Safety Net). An independent housing crisis domain would overlap significantly with existing work.
+- *Birthright citizenship as standalone domain*: The birthright citizenship case is the entry point for Domain G above. As a standalone domain (separate from tribal sovereignty), the birthright citizenship executive order is already covered by Domain 7 (Rights Protection) and Domain 16 (Immigration/Citizenship). The tribal dimension is the genuine gap.
+- *Federal workforce dismantlement as standalone*: Domain 2 (Institutional Integrity) covers Schedule F/Schedule Policy-Career, DOGE, and civil service protections. Domain 26 (Government Accountability and Institutional Resilience) extends this analysis. A standalone domain would overlap both.
+
+---
+
+*Second discovery pass complete. Session 508 — April 27, 2026. Three additional candidate domains (E, F, G) identified, scoped, and sourced. All three fill genuine gaps not covered by existing domains 1–29 or Session 507 candidates A–D. Do NOT begin full domain research without explicit user selection.*

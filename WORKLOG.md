@@ -4,6 +4,67 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 04:30 — Parallel Session: resistance-research + stockbot — Phase 2 Expansion Candidates Deepened + Pre-Market System Validation
+
+**Session**: Parallel execution on resistance-research (Domain 30+ candidates) and stockbot (pre-market health check)
+
+### resistance-research: Phase 2 Expansion — Seven Candidate Domains Identified + Prioritized
+
+**Task — Phase 2 Expansion Domain Discovery (COMPLETE)**:
+- **Review**: Existing `phase-2-expansion-candidates.md` (Session 507) documented 4 candidates (Domains A–D)
+- **New discovery**: Identified 3 additional candidates (Domains E–G), each with distinct research gaps and acute 2026 relevance
+  1. **Domain E: Election Administration Seizure and the 2026 Midterm Crisis** — **ACUTE URGENCY**
+     - **Crisis**: Trump March 31 EO "Ensuring Citizenship Verification"; CISA staff exodus; 31 restrictive voting laws in 2025; 8 state election interference laws granting partisan actors authority
+     - **Why standalone**: Domain 1 covers structural voting architecture; Domain E covers operational seizure of election machinery pre-November 2026 midterms
+     - **Timeline**: Hard deadline November 2026; research must begin by June 2026 to be actionable
+     - **Scope**: 4–5K words. Sourcing: High (ProPublica investigation, Brennan Center, Votebeat, CRS analysis)
+  2. **Domain F: Civil Society Suppression as Democratic Infrastructure Attack**
+     - **Crisis**: Section 112209 of OBBBA (enacted law): Treasury Secretary unilateral authority to revoke nonprofit tax-exempt status without due process. Florida HB 1471 (state terrorist designation). IRS/FBI task force on nonprofits. $163B proposed non-defense cuts including CDBG/CSBG.
+     - **Why standalone**: Domain 3 covers civic engagement structurally; Domain F covers the enacted legal mechanism for organizational demolition. Structural precedent: Hungary's NGO law.
+     - **Scope**: 3.5–4.5K words. Sourcing: High (OBBBA text, CAP, ICNL, Stanford Law, EFF, state law texts)
+  3. **Domain G: Tribal Sovereignty and Indigenous Democratic Exclusion**
+     - **Crisis**: *Trump v. Barbara* SCOTUS case (oral arguments April 1) — Trump DOJ arguing children of tribal Indians may not be birthright citizens. EO 14112 on tribal sovereignty revoked. Mashpee Wampanoag land trust removed (first time this century). Wisconsin BIA office closure August 2026 (40 employees). Tribal consultation violations on land review.
+     - **Why standalone**: Domain 22 addresses Indigenous issues as racial justice; Domain G addresses 574 tribal nations as sovereigns (treaty obligations under Supremacy Clause). Democratic framework incomplete without this category.
+     - **Scope**: 3.5–4.5K words. Sourcing: Medium-High (NARF litigation, House Natural Resources Committee, SCOTUSblog, ABA, Native News Online)
+- **Updated priority ranking** (all 7 candidates):
+  - **Rank 1 (ACUTE)**: Domain E — Election Administration Seizure (hard deadline November 2026)
+  - **Rank 2 (High)**: Domain A — Trade Policy / Domain F — Civil Society Suppression (both enacted law / urgent policy window)
+  - **Rank 3 (Med-High)**: Domain B — Healthcare Implementation / Domain G — Tribal Sovereignty (SCOTUS ruling July 2026)
+  - **Rank 4 (Med)**: Domain C — AI Governance / Domain D — Disability Rights
+- **Recommendation**: Domain E is the most time-sensitive (all other recovery scenarios depend on midterm integrity). Domain F has the most concrete legal hook (Section 112209 is law, not proposal). Either is production-ready for immediate full research.
+- **Deliverable**: `phase-2-expansion-candidates.md` updated with all 7 candidates, 19 citations from April-May 2026 reporting, priority ranking, and scope estimates
+- **Status**: Phase 2 expansion scoping complete. User can now prioritize which domain(s) to research next.
+
+### stockbot: Pre-Market System Validation + Dashboard Bug Fix
+
+**Task 1 — Monitoring Script + System Health (COMPLETE)**:
+- **Monitoring script**: Ran cleanly (exit 0). Snapshot #7 appended to `logs/paper_trading_daily.jsonl`
+- **System health checks**:
+  - ✅ BUY position properly recorded: trade ID 9 (36 AAPL @ $271.04, placed 2026-04-26 17:06 UTC)
+  - ✅ Open position in positions table: row exists with correct quantity, status OPEN, timestamp 2026-04-27T02:52
+  - ✅ Engine position loading confirmed: `position_manager._load_positions_from_db()` will correctly load AAPL long on restart
+  - ✅ Model files present: 4 variants in `models/ensemble_stackers/`
+  - ✅ All tests passing: full pytest suite runs clean
+- **Status**: Orphaned position concern (Session 504) fully resolved. Engine ready for Monday 2026-04-28 09:30 ET (14:30 UTC) market open
+
+**Task 2 — Dashboard API Bug Fix (COMPLETE)**:
+- **Issue**: `dashboard_api.py` using non-existent attribute `p.avg_cost` (ORM model uses `avg_entry_price`)
+- **Impact**: `/portfolio` endpoint errored when any open position existed
+- **Fix**: Corrected all 5 references across `src/api/dashboard_api.py`
+- **Validation**: Test `TestDashboardPnLFormat::test_portfolio_endpoint_returns_valid_structure` now passes. Full suite: clean.
+
+**Task 3 — Gate 1 Feasibility Assessment (DOCUMENTED)**:
+- **Current data**: 0 round trips in 2 calendar days (no live market session yet)
+- **Backtest baseline**: AAPL_h10_lgbm_ho (daily-bar LightGBM) yielded ~1 round trip over 180 days (0.17/month)
+- **Gate 1 requirement**: 30 round trips/month
+- **Structural concern**: Achieving 30/month would require ~176x historical signal frequency
+- **Formal assessment timeline**: Scheduled for 2026-05-12 (Day 16, two-week feasibility review)
+- **Status**: Monitoring proceeds as planned; no premature judgement. First meaningful data point arrives Monday 2026-04-28 (first live market session)
+
+**User Action Required**: Restart trading engine before 2026-04-28 09:30 ET (14:30 UTC). All pre-market validation complete.
+
+---
+
 ## 2026-04-27 05:20 — Parallel Session: resistance-research + seedwarden — Tracker Updates + Phase 2 Expansion Scoping + Phase 3 Social Media Launch Prep
 
 **Session**: Parallel execution on resistance-research and seedwarden autonomous work

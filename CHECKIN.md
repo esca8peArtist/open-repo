@@ -4,7 +4,46 @@
 
 ---
 
-## Current Session (Session 507 — 2026-04-27 Morning — Tracker Updates + Phase 2 Expansion Scoping + Phase 3 Social Media Launch Prep)
+## Current Session (Session 508 — 2026-04-27 Early Morning — Phase 2 Expansion Deepened + Stockbot Pre-Market Validation)
+
+**Status**: ✅ **Phase 2 expansion candidates fully scoped (7 total). Stockbot system health validated, pre-market setup confirmed. Dashboard bug fixed.** Engine restart required before Monday market open.
+
+**What Accomplished**:
+
+1. ✅ **Resistance-Research: Phase 2 Expansion — 7 Candidate Domains Identified + Prioritized**
+   - **Starting point**: Session 507 identified 4 candidates (Domains A–D: Trade Policy, Healthcare-OBBBA, AI Governance, Disability Rights)
+   - **New discovery**: 3 additional candidates (Domains E–F–G):
+     - **Domain E: Election Administration Seizure** — **ACUTE PRIORITY** (Nov 2026 midterms hard deadline, 6-month runway)
+     - **Domain F: Civil Society Suppression** — Section 112209 (enacted law) + state terrorist designation mechanism
+     - **Domain G: Tribal Sovereignty** — 574 sovereigns excluded from democratic framework; *Trump v. Barbara* SCOTUS ruling July 2026
+   - **Deliverable**: `phase-2-expansion-candidates.md` updated with all 7 ranked by urgency, 19 citations from April-May 2026 reporting
+   - **Recommendation**: Domain E is most time-sensitive for midterm research. Domain F has most concrete legal hook (Section 112209 is law, not proposal). Either production-ready for full research now.
+
+2. ✅ **Stockbot: Pre-Market System Validation + Bug Fix**
+   - **Monitoring**: Script ran clean, Day 2 snapshot appended to daily log
+   - **System health**: 5/5 checks passed — BUY position properly recorded, positions table synced with trades, engine will load on restart, all tests passing
+   - **Bug fixed**: `dashboard_api.py` using non-existent `avg_cost` → corrected to `avg_entry_price` (5 references). Test suite now clean.
+   - **User action**: Restart trading engine before Monday 2026-04-28 09:30 ET (14:30 UTC). All pre-market setup complete.
+   - **Gate 1 assessment**: Documented concern (0.17 round trips/month in backtest vs. 30/month requirement). Formal feasibility decision 2026-05-12 (Day 16). Monitoring continues.
+
+**What's in Progress**:
+- **resistance-research**: 7 Phase 2 candidates identified, ranked, sourced. Awaiting user priority signal to begin full Domain E, F, or G research.
+- **stockbot**: Paper trading running. Engine restart pending (user action). Gate 1 monitoring begins Monday 2026-04-28.
+- **seedwarden**: Phase 3 launch documents complete (from Session 507). Blocked on Phase 1 (user tag corrections + Etsy verification).
+- **mfg-farm**: Blocked on test print (user action).
+
+**What Needs User Input**:
+1. **resistance-research**: Pick 1–2 Phase 2 domains from the 7-candidate ranked menu (recommend Domain E for most urgency, or Domain F for most concrete legal hook)
+2. **stockbot**: Restart trading engine before Monday 2026-04-28 09:30 ET. Monitor SELL signal execution Monday.
+
+**Suggested Next Steps**:
+- User prioritizes Phase 2 expansion domain(s) for next research phase
+- User restarts stockbot engine before Monday market open
+- Stockbot monitoring continues autonomously (daily snapshots, Gate 1 assessment on 2026-05-12)
+
+---
+
+## Previous Session (Session 507 — 2026-04-27 Morning — Tracker Updates + Phase 2 Expansion Scoping + Phase 3 Social Media Launch Prep)
 
 **Status**: ✅ **Tracker maintenance complete. Phase 2 expansion candidates scoped. Phase 3 social media launch documents ready.** Resistance-research and seedwarden both advanced on autonomous work paths.
 
