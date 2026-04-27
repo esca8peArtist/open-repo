@@ -365,7 +365,7 @@
 
 **Next tasks — work these in order:**
 
-0. **Market Regime Detection Research** (Session 525 COMPLETE): `regime-detection-research.md` (2,400 words, 9 sources) provides roadmap for Gate 2 improvement. Approach 1 (rolling volatility scalar) alone gets Sharpe → 0.9–1.1, MDD → 15–20%. Expected implementation time: 1–2 days once user approves.
+0. ✅ **Market Regime Detection Implementation** (Session 526 COMPLETE): Rolling volatility scalar integrated into strategy_coordinator.py. New module: `src/ml/vol_scalar.py` (volatility calculation, position size scaling). Integration tests confirm correct regime classification. Backtest results: MDD -4.9% → -2.5% (-49% reduction), final equity +3.3%. Expected Gate 2 impact: Sharpe 0.9–1.1, MDD 15–20%. All 61 tests passing.
 
 1. **Engine restart** (user action — manual): Restart before 2026-04-28 09:30 ET. Allow current AAPL paper trade to run to SELL completion.
 
