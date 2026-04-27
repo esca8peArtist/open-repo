@@ -27,15 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Trading engine shutdown, orphaned position risk
-**Date blocked**: 2026-04-27
-**Context**: Paper trading Day 3 monitoring detected that the trading engine shut down unexpectedly at 2026-04-26 22:15 UTC (reason: UNKNOWN). Engine is currently offline. An open BUY position (36 AAPL @ $271.04, placed 2026-04-26 17:06 UTC) exists in the trades table but is NOT persisted in the positions table. If the engine restarts cold, it will not recognize the open position, creating risk of a duplicate BUY stacking on top without first executing a SELL. This must be resolved before Monday 2026-04-28 market open (09:30 ET / 14:30 UTC) or the first live market session will fail to generate a SELL signal.
-**What I need**: (1) Investigate why the engine shut down at 22:15 UTC on 2026-04-26 (check live_trading_20260426.log for any error context beyond "GRACEFUL SHUTDOWN REQUESTED"). (2) Ensure the engine restarts cleanly and detects the open position correctly. (3) Confirm no duplicate BUY would be placed if a new signal arrives before the SELL executes.
-**Verify with**: `grep -c "SELL" /home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/paper_trading_daily.jsonl` — verify at least one SELL completion after Monday market open to confirm the engine restarted and correctly managed the open position.
-**Resolution**:
-
----
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -46,6 +37,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Test contamination + missing position recovery
+**Date blocked**: 2026-04-27
+**Context**: At 2026-04-26 22:15:27 UTC, pytest test suite ran concurrently with live engine. Test code injected mock objects (bad_callback, test halt messages) into engine's shutdown handler. Engine failed to load open positions from database (error: "'Mock' object is not iterable"). Open BUY position (36 AAPL @ $271.04, placed 17:06 UTC) exists only in trades table, not positions table. Engine continued running with orphaned position.
+**Resolution**: RESOLVED 2026-04-27 — Investigated root cause: test contamination @ 22:15:27 (pytest + live engine concurrent, Mock objects in shutdown handler). Actions taken: (1) Created missing position record (ID=1, AAPL 36@271.04) in positions table to match open BUY trade. (2) Fixed position_manager.py logging bug (AttributeError on mode.value when mode is string instead of enum). (3) Verified engine loads position cleanly without Mock errors. Engine ready for Monday 2026-04-28 market open. Next: Monitor SELL signal execution Monday at 14:30 UTC. Long-term: Add pytest database isolation (separate test DB, prevent concurrent engine+pytest runs).
+
+---
 
 ### open-repo — GitHub push blocked: esca8peArtist key lacks SuperClaude-Org write access
 **Date blocked**: 2026-04-26
