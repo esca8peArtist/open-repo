@@ -4,6 +4,41 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session: 2026-04-27 — Phase 2 Photography Execution Planning
+
+Three Phase 2 planning documents created. These are preparation materials for when LIFESTYLE_PHOTOGRAPHY_STRATEGY.md is approved by the user. Phase 2 is currently blocked on Phase 1 tag corrections + Etsy account verification.
+
+### Files created
+
+**`projects/seedwarden/PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md`** (~1,750 words)
+Operational execution plan for the hybrid photography approach (15 products physical, 6 products stock).
+- Section 1: Logistics breakdown — which 15 products get physical photos vs. which 6 get stock, including specific props lists by cluster and tablet/printed-page setup guidance.
+- Section 2: Week-by-week timeline — Week 1 stock sourcing (free sources then iStock fill-in for Clusters D/E), Week 2 physical shooting and editing for Clusters A/B/C, Week 3 final compositing and Etsy upload. Includes per-day action items.
+- Section 3: Equipment and location setup — minimum viable kit (smartphone + wooden surface + window light), optional softbox, backdrop choices by cluster.
+- Section 4: iStock credit purchasing strategy — on-demand credits over subscription, priority order for 6 gap products, license verification checklist, expected spend at $0/free-tier, $48–$90 (4–6 images), or $120–$150 maximum.
+- Section 5: QA checklist — 15-item checklist covering technical specs (2400×2400px, under 1MB), Etsy compliance (no competing brands, not misleading), conversion-focused angles (product visible, props on-theme, natural lighting, earthy hands), brand consistency (warm tone, non-aspirational).
+- Section 6: Risk mitigation — 5 risks with mitigations and fallback paths (physical photo failure, iStock budget exhaustion, scheduling constraints, compositing quality issues, Phase 1 data suggesting photos are low priority).
+
+**`projects/seedwarden/PHASE2_PRODUCT_PRIORITIES.md`** (~650 words)
+Priority matrix for sequencing lifestyle photography across all 21 products.
+- Tier 1 (photograph first, Week 1 critical mass): Survival Garden $22, Hunting Manual $20, Livestock Manual $18, Meat/Fish Preservation $18, Harvest Preservation $16. These are the 5 highest-ticket products with the most revenue upside per additional conversion. Getting lifestyle images live on these 5 within Week 1 is the critical mass threshold.
+- Tier 2 (photograph second): Fermented Harvest $13, Hot Sauce $15, Seed Saving Manual $14, Native Plants $18, Heirloom Guide $11, Apartment Plant Catalog $14, Container Blueprint $12.
+- Tier 3 (photograph third, minimal additional setup): remaining lower-ticket products; all shoot during existing Cluster A/B batch sessions at near-zero marginal cost.
+- Tracking note: record the date lifestyle images go live on each listing; before/after conversion measurement window begins from those dates.
+
+**`projects/seedwarden/PHASE2_TO_PHASE3_TRANSITION.md`** (~900 words)
+How Phase 2 photography output feeds Phase 3 social media (TikTok, Instagram, Pinterest).
+- Phase 3 readiness checklist (photography complete, social accounts set up, 30 days of Phase 1 data collected).
+- Platform-by-platform breakdown: TikTok (lifestyle photos as B-roll stills cut into educational videos), Instagram (Reels cross-posts, carousel format using cluster photos, Stories from raw behind-the-scenes shots), Pinterest (3 pin variants per product from same photo = 63 minimum pins).
+- Example 30-day content calendar with specific post-by-post asset mapping (which Phase 2 photo goes into which post type on which platform).
+- Critical handoff instruction: archive raw (unedited, uncropped) Phase 2 photos separately from Etsy-ready composites; raw photos are the Phase 3 content bank for vertical (9:16), horizontal (16:9), and Pinterest (2:3) formats.
+- Recommended folder structure: `marketing/lifestyle-photos/stock/`, `raw/cluster-a/ b/ c/`, `etsy-ready/`.
+
+### Verification
+`phase-3-social-media-growth-strategy.md` reviewed and confirmed complete (created this same session earlier). All three new files cross-reference it and the content calendar template and creator brief from the prior Phase 3 preparation session.
+
+---
+
 ## Session: 2026-04-27 — Phase 3 Launch Preparation Framework (Option A)
 
 Three Phase 3 preparation documents created. Option A selected over Option B based on existing ready material: Phase 3 strategy doc complete, 30-day launch calendar complete, video scripts complete, product mockups all generated.
