@@ -70,6 +70,47 @@
 
 **Status**: COMPLETE — `projects/mfg-farm/manufacturing-automation-architecture.md` (4,800+ words, 5 sections + implementation sequence)
 
+---
+
+## 2026-04-27 Session 549 — Parallel Exploration Queue: Supply-Chain Defense + CNC Economics (COMPLETE)
+
+**Part 1 — cybersecurity-hardening: Organizational Defense Playbook (COMPLETE)**
+
+**Deliverable**: `projects/cybersecurity-hardening/organizational-defense-playbook.md` (~3,500 words, 5 sections)
+
+**Lead finding**: The most catastrophic recent breaches (SolarWinds, MOVEit, 3CX) entered through trusted vendors, not organizational perimeters. For media organizations and NGOs, supply chain hardening is the prerequisite to all other security measures.
+
+**Sections delivered**:
+1. **Detecting Supply Chain Compromise** — SLSA framework (4 levels), SBOM vendor auditing via Snyk and Wiz, case studies of SolarWinds 2020 / MOVEit 2023 / 3CX 2023, vendor security posture assessment checklist
+2. **Infrastructure Targeting** — DDoS (volume/protocol/application-layer attacks and defenses including Cloudflare Project Galileo), BGP hijacking (RPKI/ROA defenses, monitoring tools, Myanmar 2021 / Estonia 2007 / Russia-Ukraine 2022 cases), DNS poisoning (DNSSEC, DoH/DoT, registrar lock), multi-CDN + multi-DNS redundancy architecture
+3. **Insider Threat Detection** — Three threat categories (financial, ideological, coercion), behavioral detection signals table, UEBA tools at multiple price points (Microsoft Sentinel, Splunk UEBA, Exabeam), least-privilege and PAM architecture, SecureDrop for internal coercion reporting
+4. **Incident Response Workflows** — Three-phase structure (0-2hr / 2-72hr / 72hr+), decision trees for ransomware / DNS hijacking / credential compromise, FBI IC3 coordination guidance, media strategy during active incident, forensic preservation protocol
+5. **Post-Breach Organizational Recovery** — 90-day timeline (crisis → stabilization → rebuilding), mandatory technical changes table, three stakeholder communication templates (board, funders, staff), institutional partner breach notification guidance
+
+**Key evidence**: BCG 2024 on trust recovery (2.5x faster with structured comms); Ponemon 2025 on UEBA adoption (62% of orgs); CISA playbooks; Cyber Threat Alliance NGO threat report 2024.
+
+**Cross-references**: Extends `high-risk-populations.md` to organizational level; references `threat-model.md` and `palantir-threat-model.md`.
+
+---
+
+**Part 2 — mfg-farm: CNC Capabilities and Economics Research (COMPLETE)**
+
+**Deliverables**:
+- `projects/mfg-farm/cnc-capabilities-analysis.md` (~3,200 words, 4 sections + final recommendation)
+- `projects/mfg-farm/cnc-cost-comparison-matrix.csv` (25 rows across Equipment / Material / Labor / Break-Even categories)
+
+**Lead finding**: CNC is not ROI-positive for ModRun at 1K-10K units/month. Recommended action: outsourced CNC test (Protolabs, 100 units, $1,500-3,500) before any capital decision. Fifth FDM printer ($1,400) delivers higher ROI than first CNC machine at current volume.
+
+**Sections delivered**:
+1. **Technical Analysis** — FDM (±0.2-0.3mm) vs. CNC (±0.05-0.1mm) tolerance comparison; cable clips do not require CNC precision; heat-set brass inserts ($0.12-0.25/unit) as CNC-equivalent for threaded connections without a CNC machine; Bambu H2D clarified as laser cutter (not CNC mill); no CNC market segment viable at current product price points
+2. **Economics** — Equipment cost table ($1,699-$8,970 for desktop CNC); material waste (FDM 5-10% vs. CNC 30-70%); labor comparison (FDM ~10 units/hr vs. CNC 4-7 units/hr); 5-printer vs. 4+CNC capital comparison; break-even requires 180+ CNC premium units/month at $20 — demand unvalidated
+3. **Market** — Etsy pricing tiers ($3-8 commodity / $8-15 original FDM / $20-40 full metal CNC — thin market); "CNC-machined" premium real but wrong channel; professional creator/corporate segments could pay $25-45 via branded kit direct channel not Etsy; FDM-only brands achieving $5K-15K/month without CNC
+4. **Workflow Integration** — Floor space competition (CNC requires 8x8ft, displacing 1-2 FDM printers); CNC quality failure modes (tool wear, chip contamination, fixturing variation); outsourced CNC test path (Protolabs instant quote, JLCCNC $4-9/unit at 100 units); Option A (FDM-only) vs B (outsourced test) vs C (in-house CNC) comparison; recommendation: Option B
+
+**Final recommendation**: Stay FDM-primary. Test outsourced CNC when ready. Re-evaluate in-house CNC only when premium revenue exceeds $3,000/month from outsourced testing.
+
+**Commit**: docs(exploration-queue): session 549 — supply-chain-defense + cnc-economics-research
+
 **Deliverable**: Full manufacturing automation blueprint for ModRun post-test-print scaling from 1 to 5 printers.
 
 **Structure**:
