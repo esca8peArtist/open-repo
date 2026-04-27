@@ -4,6 +4,16 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 — open-repo — Phase 5 Kiwix Architecture Research
+
+**File**: `projects/open-repo/phase-5-kiwix-architecture.md`
+
+**Summary**: Pre-implementation research document for Phase 5 (offline export + Kiwix integration). Covers: Kiwix ecosystem and GPLv3/LGPL licensing, ZIM file format internals (cluster compression, Zstandard/LZMA2, full-text Xapian index, random access model), comparable pipelines (Wikipedia/mwoffliner, Project Gutenberg/gutenberg2zim, Zimit), python-libzim API with working code pattern, incremental export status (not production-ready — versioned full exports recommended), integration strategy decision (Option A: direct python-libzim, not Zimit or zimwriterfs), deployment model (user download + institutional kiwix-serve), and a 3-step 15–23 day implementation blueprint with dependency table and risk mitigations.
+
+**Key finding**: The closest reference implementation is gutenberg2zim (Python, openzim/gutenberg). Direct python-libzim pipeline is the correct approach. No fundamental technical risk.
+
+---
+
 ## 2026-04-27 (Evening) — Parallel 2-Agent Execution: Domain Completeness Assessment + Tier 2 Templates (Session 499)
 
 **Session Protocol**: Parallel 2-agent execution (resistance-research domain assessment + cybersecurity-hardening Tier 2 messaging)

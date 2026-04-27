@@ -418,6 +418,14 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ~~**cybersecurity-hardening: device hardening deep-dive**~~ — **Done (Session 493)**: `projects/cybersecurity-hardening/device-hardening-guide.md` (3,200 words) — iPhone hardening (iCloud ADP as critical attack surface, airplane mode vs. power-off technical differences), Android hardening (bootloader paradox, GrapheneOS verified boot recovery, Cellebrite forensics leak data), cross-platform compartmentalization and recovery scenarios, evidence-based (Apple guidelines, GrapheneOS docs, EFF guides, privsec.dev analysis).
 
+**NEW ITEMS (Session 501)**:
+
+- ~~**open-repo: Phase 5 architecture research — Kiwix integration and offline export**~~ — **Done (Session 501)**: `phase-5-kiwix-architecture.md` (3,933 words) — Complete Kiwix ecosystem overview, ZIM file format architecture, comparison with Wikipedia/Project Gutenberg pipelines, direct python-libzim integration strategy, incremental export analysis, and 15-23 day implementation blueprint (ExportService → ZimWriter → export catalog + CDN). Ready for Phase 5 implementation when PR #1 merges.
+
+- **resistance-research: Post-Domain 26 completeness audit** — After Domain 26 research completes, audit the full 26-domain framework for: (1) emerging April 2026 crises not yet covered (admin actions, court decisions), (2) any remaining gaps by affected population or severity, (3) whether all 26 domains together address the full scope of the government. Goal: ensure no critical areas are missed before distribution begins. Scope: 5-8K tokens.
+
+- **seedwarden: Phase 3 social media and paid-ads growth strategy** — Phase 1 launches when user corrects tags; after Phase 1 conversion data arrives (~1-2 months), Phase 3 plans social media (TikTok/Instagram content strategy, hashtag research, influencer partnerships) and paid ads (Facebook/Pinterest ad spend budget, audience targeting, ROI targets). Research: What's the competitive landscape for Etsy homesteading products on social? What are the top 3-5 TikTok accounts in the niche and what drives engagement? Scope: 5-10K tokens, deliverable is Phase 3 strategy document.
+
 ---
 
 ## Completed (Archive)

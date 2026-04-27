@@ -4,7 +4,56 @@
 
 ---
 
-## Current Session (Session 500 — 2026-04-27 Afternoon — Seedwarden Phase 2 Mockup Tooling Complete)
+## Current Session (Session 501 — 2026-04-27 Early Morning — Exploration Queue Research: open-repo Phase 5 Kiwix Architecture)
+
+**Status**: Single-agent execution completed. Exploration queue replenished with 3 strategic research items. Top item (open-repo Phase 5 Kiwix architecture) completed. All autonomous work identified and documented. Next meaningful work awaits user decisions on priority projects.
+
+**Work Completed**:
+
+1. ✅ **Exploration Queue Replenished**
+   - Added 3 high-value research items:
+     - open-repo Phase 5 Kiwix architecture (COMPLETED this session)
+     - resistance-research: Post-Domain 26 completeness audit (pending)
+     - seedwarden: Phase 3 social media and paid-ads growth strategy (pending)
+
+2. ✅ **open-repo Phase 5: Kiwix Architecture Research COMPLETE**
+   - **File**: `projects/open-repo/phase-5-kiwix-architecture.md` (3,933 words)
+   - **Deliverable**: Complete technical architecture for Phase 5 (offline export + Kiwix integration)
+   - **Key findings**:
+     - Kiwix ecosystem overview: GPLv3 ecosystem, 40+ openzIM repos, LGPL libzim (safe to embed)
+     - ZIM file format internals: cluster-based compression (Zstandard), embedded Xapian full-text search, random access model
+     - Comparable pipelines: Wikipedia (mwoffliner), Project Gutenberg (gutenberg2zim — best reference implementation), Zimit (not recommended for open-repo)
+     - Integration strategy: Direct python-libzim binding (Option A). Gutenberg2zim validates approach at scale. No incremental exports in production (use versioned full + scoped sub-exports)
+     - Implementation blueprint: 3 steps, 15–23 days total, single key dependency (libzim PyPI package, LGPL, pre-built wheels)
+     - ExportService (Days 1-5) → ZimWriter wrapper (Days 6-12) → export catalog + CDN streaming (Days 13-18)
+   - **Status**: Ready for Phase 5 implementation when PR #1 merges
+
+**Project Status Summary**:
+- **All top-priority projects have clear status**:
+  - **resistance-research** (Priority 1): Phase 1-5 COMPLETE, Domain 26 infrastructure ready, awaiting user decision on deepening vs. distribution
+  - **stockbot** (Priority 2): Paper trading live (Day 2), monitoring running, next Gate 1 checkpoint 2026-05-12
+  - **cybersecurity-hardening** (Priority 3): Tier 2 messaging templates complete, awaiting Tier 1 user approval
+  - **mfg-farm** (Priority 4): Blocked on test print (user action)
+  - **seedwarden** (Priority 5): Phase 2 mockup complete, Phase 1 blocked on tag corrections + Etsy verification
+  - **open-repo** (Priority 6): PR #1 awaiting maintainer review; Phase 5 architecture now documented
+- **No blocking technical issues** — all blocks are user-action dependent (decisions, test print, tag corrections, PR review)
+
+**Needs User Input**:
+- **Seedwarden** (HIGHEST PRIORITY): 3 tag corrections + Etsy account verification to launch Phase 1. Phase 2 tooling 100% complete.
+- **Resistance-Research**: Domain 26 deepening approval (YES → full document, ~3-4 hours) OR distribution execution (templates ready for user posting)
+- **Cybersecurity-Hardening**: Tier 1 template review and approval for outreach execution
+- **mfg-farm**: Test print required to unblock launch prep
+
+**Suggested Next Actions**:
+1. **Highest priority**: Seedwarden Phase 1 launch (user tag corrections + Etsy verification)
+2. **Secondary**: Resistance-research Domain 26 decision (deepen or distribute)
+3. **Tertiary**: Cybersecurity-hardening Tier 1 approval
+
+**Tokens Used This Session**: ~47K (1 agent). Sonnet usage: ~51.2% (2,433K / 4,750K available). Below 80% throttle. Reset: Tuesday ~24h.
+
+---
+
+## Previous Session (Session 500 — 2026-04-27 Afternoon — Seedwarden Phase 2 Mockup Tooling Complete)
 
 **Status**: Single-agent execution completed. Seedwarden Phase 2 mockup tooling fully implemented. All 21 products now have three mockup variants (tablet cover, phone, interior grid). Phase 1 is now the critical path for seedwarden launch.
 
