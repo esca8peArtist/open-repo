@@ -4,55 +4,67 @@
 
 ---
 
-## Current Session (Session 503 — 2026-04-27 Evening — Domain 26 Research Execution)
+## Current Session (Session 504 — 2026-04-27 Late Night — Monitoring + Maintenance)
 
-**Status**: Single-agent execution completed. Domain 26 Government Accountability and Institutional Resilience research complete (4,700 words, 12 citations). Highest-priority project work delivered. Diagnostic framework now comprehensive. Ready for distribution execution.
+**Status**: Parallel agent execution (stockbot + resistance-research). **CRITICAL ISSUE: Trading engine shutdown detected.** Civic tracker maintenance + Phase 2 domain identification complete.
 
 **Work Completed**:
 
-1. ✅ **Resistance-Research: Domain 26 Research COMPLETE**
-   - **Priority**: Domain 26 deepening identified as key removal of distribution blocker (Session 502)
-   - **File**: `projects/resistance-research/domains/domain-26-government-accountability-and-institutional-resilience.md` (4,700 words)
-   - **Key findings**:
-     - **Accountability failures coordinated across all layers simultaneously** (2026 structural finding)
-     - Skrmetti (June 2025): SCOTUS narrowed equal protection scrutiny, reducing judicial backstop
-     - EMTALA rescission (June 3, 2025): CMS eliminated Biden guidance, demonstrating law-functional-elimination model
-     - CDC maternal mortality: 80 staff fired, PRAMS halted, no guidance on abortion-related deaths; Texas stopped reporting to avoid accountability
-     - Ballot initiatives: 295 bills in 43 states targeting initiative process; coordinated post-approval nullification via legislative resistance and budget cuts
-     - **My Health My Data Act** (positive precedent): Washington state privacy law with dual-track enforcement, extraterritorial scope, designed to function without federal executive goodwill — identified as reform template
-   - **Status**: Complete, 12 sources, ready for proposal integration
+1. ✅ **Stockbot: Paper Trading Day 3 Monitoring COMPLETE** ⚠️ CRITICAL FINDING
+   - **Critical issue**: Trading engine shut down unexpectedly at 2026-04-26 22:15 UTC (reason UNKNOWN)
+   - **Engine status**: OFFLINE as of 2026-04-27 02:38 UTC (6+ hours no activity)
+   - **Open position at risk**: BUY 36 AAPL @ $271.04 still open; position in trades table but NOT in positions table (orphaned)
+   - **Risk**: Cold restart would lose position reference, allowing duplicate BUY without first SELL
+   - **Deadline**: Engine must restart before 2026-04-28 09:30 ET market open or Monday's live market session fails
+   - **Action taken**: Block written to BLOCKED.md, Discord alert sent, PROJECTS.md status updated
+   - **Next**: User investigates engine shutdown reason and ensures clean restart with position persistence check
 
-**Project Status Summary Post-Session 503**:
-- **resistance-research** (Priority 1): **26-DOMAIN DIAGNOSTIC FRAMEWORK COMPLETE** (19 main domains + 19f + 26, all researched/integrated). Phase 1-5 implementation architecture COMPLETE. Distribution ready (Substack/Reddit templates). Next: User execution of distribution.
-- **stockbot** (Priority 2): Paper trading live (Day 2, started 2026-04-26). Monitoring running daily. Gate 1 pace assessment TBD. Next checkpoint 2026-05-12 (Day 16, ~15 days out).
-- **cybersecurity-hardening** (Priority 3): All 3 distribution tiers ready. Tier 2 messaging templates complete. Awaiting Tier 1 user approval for outreach execution.
-- **mfg-farm** (Priority 4): Business plan, CadQuery designs, market research, listing copy all complete. BLOCKED on test print (user action).
-- **seedwarden** (Priority 5): Phase 1 BLOCKED on tag corrections (3) + Etsy account verification. Phase 2 mockup tooling 100% complete. Phase 3 strategy ready.
-- **open-repo** (Priority 6): PR #1 awaiting maintainer review. Phase 5 Kiwix architecture ready for implementation.
+2. ✅ **Resistance-Research: Weekly Civic Tracker Maintenance COMPLETE** 
+   - Civic intelligence report generated: `civic-tracker-report-2026-04-27.md`
+   - **API status**: Congress.gov HTTP 403 (needs free API key); Democracy Docket transient failure; ICE Locator 403; others online
+   - **Key intelligence**: Section 702 FISA (April 30 expiration, Johnson proposal as status quo relabel); SPLC indictment (April 21, landmark prosecutorial weaponization case); 14+ facial recognition arrests; FIFA 2026 travel advisory
+   - **Tracker currency assessment**:
+     - CURRENT: environmental-rollbacks-tracker.md, police-brutality-consent-decree-tracker.md (both Session 496)
+     - STALE: litigation-tracker-2026.md (April 13, missing SPLC, Crenshaw, Xinis April 28), consent-decree-defiance-tracker.md (April 12, Seventh Circuit pending)
+
+3. ✅ **Resistance-Research: Phase 2 Gap Analysis — Three New Domains Identified**
+   - **Domain 27 — Higher Education and Academic Freedom** (Priority 1): Federal funding leverage, DEI prohibition, student visa revocations, admin control demands. High sourcing availability.
+   - **Domain 29 — Prosecutorial Weaponization and DOJ Capture** (Priority 2): SPLC indictment landmark case. Distinct from judicial independence (operates at charging stage). High urgency (May Day 2026 protest prosecutions).
+   - **Domain 28 — War Powers and Venezuela Military Unilateralism** (Priority 3): Jan 3 Maduro capture without authorization. Extends Domain 19f from structural to operational live case.
+   - **Action**: All three queued in PROJECTS.md Exploration Queue pending user prioritization
+
+**Project Status Summary Post-Session 504**:
+- **stockbot** (Priority 2): 🚨 **ENGINE SHUTDOWN — CRITICAL BLOCK**. Paper trading Day 3 monitoring complete. Engine offline since 22:15 UTC 2026-04-26. Must restart before Monday market open. Orphaned position risk flagged.
+- **resistance-research** (Priority 1): Civic tracker maintenance complete. Three Phase 2 domains identified and queued. Trackers partially stale (litigation, consent-decree entries not yet updated but flagged). Distribution templates remain ready (awaiting user execution).
+- **cybersecurity-hardening** (Priority 3): All 3 tiers ready. Tier 2 templates complete. Awaiting Tier 1 user approval.
+- **mfg-farm** (Priority 4): BLOCKED on test print (user action).
+- **seedwarden** (Priority 5): Phase 1 BLOCKED on tag corrections (3) + Etsy verification. Phase 2 mockup tooling 100% complete.
+- **open-repo** (Priority 6): PR #1 awaiting maintainer review. Phase 5 Kiwix architecture ready.
 
 **Needs User Input** (in priority order):
 
-1. **Resistance-Research: DISTRIBUTION EXECUTION** (HIGHEST PRIORITY):
-   - **Current status**: All research complete (26 domains + implementation architecture). Substack/Reddit templates ready.
-   - **Action**: Post to Substack (draft posts ready). Post to Reddit (r/politics, r/democracy, r/law; templates ready). 
-   - **Timeline**: Suggested stagger (avoid all same day to manage inbox). 2-3 posts/week starting this week.
-   - **After distribution**: Monitor engagement, track institutional outreach leads, plan Phase 2 deepening
+1. 🚨 **CRITICAL: Stockbot Engine Restart** (URGENT — deadline 2026-04-28 09:30 ET):
+   - **Issue**: Engine shut down 2026-04-26 22:15 UTC, offline >6 hours. Reason unknown.
+   - **Risk**: Open AAPL position (BUY 36 @ $271.04) orphaned in DB. Cold restart will not detect it.
+   - **Action needed**: (1) Check live_trading_20260426.log for error context. (2) Restart engine + verify position persists. (3) Confirm no duplicate BUY risk before Monday market.
+   - **Verify**: Run Monday market open monitoring — SELL signal must execute to confirm position detected correctly
 
-2. **Seedwarden Phase 1 Launch** (HIGH PRIORITY):
+2. **Resistance-Research: Phase 2 Domain Prioritization** (OPTIONAL):
+   - **Current state**: Domains 27, 28, 29 identified and queued for research
+   - **Action**: Review scope and prioritization. If approved, orchestrator can begin research (estimated 5K–7K words each, 2–3 weeks total)
+   - **Suggested timeline**: Domain 27 highest-priority (highest sourcing volume), followed by 29 (higher urgency), then 28
+
+3. **Resistance-Research: DISTRIBUTION EXECUTION** (UNCHANGED):
+   - All research complete (26 domains + implementation architecture). Substack/Reddit templates ready.
+   - Action: Post 2-3/week, stagger across platforms
+
+4. **Seedwarden Phase 1 Launch** (UNCHANGED):
    - Action: 3 tag corrections + Etsy account verification
-   - Blocker: Can't list products until complete
-   - Status: Everything else (Phase 2 mockup tooling, Phase 3 strategy) complete and ready
-   - Impact: Phase 1 launch unlocks Phase 3 execution (conversion data → paid ads scaling)
+   - Status: Everything else complete and ready
 
-3. **Cybersecurity-Hardening: Tier 1 Approval**:
-   - Action: Review Tier 1 messaging templates in `TIER1_DISTRIBUTION_PREP.md`
-   - Next step: Execute Tier 1 outreach (user action)
-   - Timeline: Tier 2 follows ~4 weeks after Tier 1 completion
-
-4. **mfg-farm: Test Print**:
-   - Action: Run test print of CadQuery designs (rail + clip)
-   - Blocker: Can't proceed with launch prep until confirmed printable
-   - Everything else ready (business plan, pricing, listing copy)
+5. **Cybersecurity-Hardening: Tier 1 Approval** (UNCHANGED):
+   - Action: Review Tier 1 messaging templates
+   - Next: Execute Tier 1 outreach (user action)
 
 ---
 

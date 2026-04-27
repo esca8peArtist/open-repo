@@ -4,6 +4,86 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 (Session 504) — stockbot + resistance-research — Monitoring + Civic Tracker Maintenance
+
+**Agents spawned**: stockbot monitoring agent + resistance-research civic tracker agent (parallel execution)
+
+### Stockbot: Paper Trading Day 3 Monitoring + CRITICAL ENGINE SHUTDOWN DISCOVERY
+
+**File**: `projects/stockbot/logs/paper_trading_daily.jsonl` (6th snapshot appended, 2026-04-27 02:38 UTC)
+
+**Critical finding**: Trading engine shut down unexpectedly at 2026-04-26 22:15 UTC (reason: UNKNOWN). Engine is currently OFFLINE.
+
+**Detailed status**:
+- Paper trading started: 2026-04-26 Day 1 (market closed Sunday)
+- Day 3 monitoring timestamp: 2026-04-27 02:38 UTC (market closed Monday due to engine shutdown)
+- Open position: BUY 36 AAPL @ $271.04 (2026-04-26 17:06 UTC) — STILL OPEN, NO SELL SIGNAL
+- **Orphaned position risk**: Position recorded in trades table but NOT persisted in positions table. If engine restarts cold, it will lose the position reference, creating risk of duplicate BUY without first executing SELL.
+- DB last modified: 2026-04-26 20:37 UTC (no writes in past ~6 hours — confirms engine offline)
+- `model_runs` row: `is_active=1` but `ended_at=NULL` — stale flag, never updated on shutdown
+- Gate 1 pace: INDETERMINATE (no round trips; no data)
+- **Deadline**: Engine must restart before 2026-04-28 09:30 ET market open or first live market session will fail
+
+**Action**: Wrote block to BLOCKED.md: `stockbot — Trading engine shutdown, orphaned position risk`. Verify command checks for SELL completion in daily log post-Monday market open.
+
+**Discord notification**: Sent alert about engine shutdown + orphaned position risk.
+
+---
+
+### Resistance-Research: Weekly Civic Tracker Maintenance + Phase 2 Domain Gap Analysis
+
+**File**: `projects/resistance-research/civic-tracker-report-2026-04-27.md` (auto-generated weekly intelligence report)
+
+**Civic intelligence aggregation** (`civic-tracker.py --full --save`):
+
+**API status**:
+- Congress.gov: HTTP 403 on all tracked bills (HR1 Laken Riley Act, S103 SAVE Act, HR22 DOGE Act) and keyword searches — authentication constraint, need free API key
+- Democracy Docket RSS: Feed parse failed silently — transient issue, manual check of democracydocket.com/cases/ is substitute
+- ICE Detainee Locator: HTTP 403
+- Project 2025 Observer: ONLINE
+- TRAC Immigration Detention: ONLINE
+- Just Security, ACLU News, Brennan Center: All feeds retrieved successfully
+
+**Key intelligence captured**:
+- **Section 702 FISA reauthorization**: Johnson's "Foreign Intelligence Accountability Act" proposal described by Just Security as preserving status quo under reform label; April 30 expiration in 3 days with no reauth deal confirmed
+- **SPLC indictment (April 21)**: DOJ charged Southern Poverty Law Center with 11 federal counts (wire fraud, false statements, conspiracy to launder) over covert informant program paying individuals inside extremist groups (KKK, Aryan Nations, NSP). FBI Director Kash Patel personally announced. Legal experts called the theory "preposterous." This emerged as landmark case for Domain 29 (Prosecutorial Weaponization).
+- **Facial recognition arrests**: 14+ wrongful arrests documented from Clearview/facial recognition tech. ACLU client spent six months in jail before charges collapsed.
+- **FIFA 2026 civil liberties alert**: ACLU issued travel advisory for fans/players/journalists due to immigration crackdown
+- **Flock Safety**: April 2026 contract revisions disempower municipal customers
+
+**Tracker currency assessment**:
+
+| Tracker | Last Updated | Status | Action |
+|---------|-------------|--------|--------|
+| environmental-rollbacks-tracker.md | 2026-04-27 Session 496 | CURRENT | No update needed |
+| police-brutality-consent-decree-tracker.md | 2026-04-27 Session 496 | CURRENT | No update needed |
+| litigation-tracker-2026.md | 2026-04-13 | MODERATELY STALE | Missing SPLC indictment, Crenshaw ruling, Xinis April 28 outcome (not yet updated) |
+| consent-decree-defiance-tracker.md | 2026-04-12 | MODERATELY STALE | Seventh Circuit ruling pending; date update needed (not yet updated) |
+
+**Phase 2 gap analysis — Three new domains identified and queued for research**:
+
+1. **Domain 27 — Higher Education and Academic Freedom** (Priority 1)
+   - Assault on universities via: (a) federal funding leverage ($2.2B Harvard, $220M Columbia, 38-university cuts threatened), (b) DEI prohibition producing self-censorship, (c) student visa revocations targeting activists (Khalil, Oztürk, Mahdawi, Khan Suri cases), (d) demands for administrative control over admissions/curriculum as condition of funding
+   - Gap: No existing domain addresses universities' democratic function or federal funding as ideological control mechanism
+   - Sourcing: High-volume primary docs (settlements, State Dept letters, AAUP surveys, Freedom House 2026)
+
+2. **Domain 29 — Prosecutorial Weaponization and DOJ Capture** (Priority 2)
+   - SPLC indictment is landmark case: civil rights org with decades-long informant program now federally charged; FBI Director personally announced. Distinct from Domain 6 (Judicial Independence) — operates at charging stage before courts.
+   - Pattern: SPLC indictment + Nashville vindictive prosecution finding + DOJ investigations of Democratic members of Congress + Kash Patel defamation suits against journalists
+   - Urgency: May Day 2026 potential for protest-related prosecutions
+
+3. **Domain 28 — War Powers and Venezuela Military Unilateralism** (Priority 3)
+   - January 3 capture of Venezuelan President Maduro without congressional authorization, framed as "arrest operation" to avoid War Powers Resolution
+   - Senate vote 51-50 blocked (VP Vance tiebreaker); House vote 215-215 failed
+   - Admin legal theory if accepted would eliminate WPR for any military operation framed as law enforcement
+   - Extends Domain 19f from structural proposal to operational live case
+
+**Next steps**: Tracker update passes scheduled (litigation-tracker and consent-decree-defiance-tracker stale dates); Phase 2 domains queued in PROJECTS.md Exploration Queue pending user prioritization.
+
+**Commits**: Session 504 entries added to WORKLOG.md in projects/resistance-research/ and projects/stockbot/
+
+---
+
 ## 2026-04-27 (Session 503) — resistance-research — Domain 26 Research Execution COMPLETE
 
 **File**: `projects/resistance-research/domains/domain-26-government-accountability-and-institutional-resilience.md`

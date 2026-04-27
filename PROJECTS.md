@@ -209,21 +209,25 @@
 **Working dir**: `projects/stockbot/`
 **Current focus**: Paper trading running (AAPL_h10_lgbm_ho stacker). **All three strategy optimization tasks COMPLETE** (Sessions 488-489). AAPL_h10_lgbm_ho validation plan in place, monitoring script deployed, live trading readiness checklist ready. **Next**: Monitor paper trading daily, assess progress toward Gate 1 (30 trades/month), prepare live trading transition once all gates pass for 3 consecutive months.
 
-**Paper Trading Status (Session 502 — 2026-04-27, Day 2)**:
+**Paper Trading Status (Session 504 — 2026-04-27, Day 3 — ENGINE SHUTDOWN DETECTED)**:
 - Paper trading started: 2026-04-26
-- Days elapsed: 1 (market closed Sunday)
-- DB state: 9 total trade legs across 2 strategy names:
-  - `stacker:0676c84e` — 8 smoke-test legs (pre-market verification, correctly excluded by monitor)
-  - `AAPL_h10_lgbm_ho` — 1 leg: BUY 36 AAPL @ $271.04 (2026-04-26 17:06 UTC, live signal, position open)
-- Completed round trips: 0 (open BUY, awaiting SELL signal; first market session Monday 2026-04-28)
-- Trades/month pace: INDETERMINATE (no round trips yet)
+- Days elapsed: 2 (market closed Sunday and Monday ET)
+- **🚨 CRITICAL: Trading engine shut down unexpectedly at 2026-04-26 22:15 UTC** (reason: UNKNOWN — investigate log file)
+  - Engine status: OFFLINE as of monitoring report (2026-04-27 02:38 UTC)
+  - Open position: BUY 36 AAPL @ $271.04 (2026-04-26 17:06 UTC)
+  - **Orphaned position risk**: Position in trades table but NOT persisted in positions table — engine cold-restart would lose the position reference
+  - **Deadline**: Engine must restart before Monday 2026-04-28 market open (09:30 ET / 14:30 UTC) or first SELL signal will fail
+  - **Blocked on**: Engine restart and position persistence verification (see BLOCKED.md)
+- DB state before shutdown: 9 total trade legs (8 smoke-test, 1 AAPL_h10_lgbm_ho)
+- Completed round trips: 0 (no market session since BUY placed)
+- Trades/month pace: INDETERMINATE (no round trips yet; no data points)
 - **Gate 1 assessment**: STRUCTURAL CONCERN FLAGGED — Daily-bar LightGBM stacker achieved 1 buy-hold in 180-day backtest. Achieving 30 round trips/month is aggressive. Cannot confirm/refute feasibility until live signals generate multiple round trips.
-- Gate 1 (30 round trips/month): FAIL — expected at Day 2 (insufficient data)
+- Gate 1 (30 round trips/month): FAIL — expected at Day 3 (insufficient data, also engine offline)
 - Gate 2 (Sharpe ≥1.0, MDD ≤20%, PF ≥1.5): all FAIL except MDD (0.0%) — insufficient data
-- Gate 3 (≥63 days): FAIL — 62 days remaining
-- Monitor script: `scripts/paper_trading_monitor.py` — clean runs, daily log at `logs/paper_trading_daily.jsonl` (5 snapshots as of 2026-04-27 01:05 UTC)
-- **Checkpoints**:
-  - 2026-04-28 (Day 3): First live market session — watch for SELL signal
+- Gate 3 (≥63 days): FAIL — 61 days remaining
+- Monitor script: `scripts/paper_trading_monitor.py` — clean runs, daily log at `logs/paper_trading_daily.jsonl` (6 snapshots as of 2026-04-27 02:38 UTC)
+- **Checkpoints (updated for engine restart)**:
+  - 2026-04-28 (Day 3): First live market session — **PRIORITY: verify engine restarts, position persists, SELL signal executes**
   - 2026-05-12 (Day 16): Two-week Gate 1 feasibility review — **flag if pace well below 15 round trips** (half-month threshold)
   - 2026-05-26 (Day 30): First 30-day formal Gate 1 pass/fail (baseline for 30/month rate)
   - 2026-07-26 (Day 90): 3-month graduation target
@@ -453,6 +457,28 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 - ~~**resistance-research: Post-Domain 26 completeness audit**~~ — **Done (Session 501)**: `assessment/post-domain-26-completeness-audit.md` (4,666 words) — Comprehensive audit of 26-domain framework identifying 4 priority gaps: (1) Domain 19f War Powers Reform (Iran war constitutional crisis, May 1 deadline — Priority 1), (2) Pharmaceutical tariff collision (100% tariff effective July 31 — Domain 11 cross-ref), (3) Indigenous Sovereignty subsection 22f (trust responsibility, treaty law — Priority 2), (4) Disability Justice deepening post-OBBBA (Domain 18e update). Population pattern analysis complete. Distribution readiness verdict: Not ready until Domain 26 research + Domain 19f are executed.
 
 - ~~**seedwarden: Phase 3 social media and paid-ads growth strategy**~~ — **Done (Session 501)**: `phase-3-social-media-growth-strategy.md` (4,866 words) — Complete Phase 3 roadmap for post-Phase 1 launch. Includes: (1) TikTok competitive analysis (top creators: @itsbreellis 772K, @thermal_and_oaks 367K; optimal format 30-60s educational; #homestead 5.4B views), (2) Instagram + Pinterest strategy (Pinterest is highest-ROI organic for Etsy; 33% more referral traffic than Facebook), (3) Creator breakdown (5 success traits: hyper-specific niche, practical content, 12-24mo consistency, email list ownership, $5-$15 price point), (4) Paid advertising strategy (Shopping/Gifts $0.34 CPC benchmark; 2.0x ROAS target; Pinterest CPA $8 most cost-effective), (5) Influencer partnerships (direct outreach model, 20-30% response rate, $100-$250 flat fee + commission), (6) Three-month phased implementation plan (Month 1: infrastructure, Month 2: test ads $300-500 + outreach, Month 3: scale winners kill losers). Ready for execution when Phase 1 converts.
+
+**NEW ITEMS (Session 504 — Resistance-Research Civic Tracker Phase 2 Gap Analysis)**:
+
+- **Domain 27 — Higher Education and Academic Freedom** (Priority 1 for Phase 2 research)
+  - **Scope**: The assault on universities is operating on four simultaneous tracks: (1) federal funding leverage ($2.2B frozen at Harvard, $220M Columbia settlement, State Department proposing cuts to 38 universities over DEI hiring), (2) DEI prohibition producing preemptive self-censorship even where no legal mandate applied, (3) student visa revocations and political detention targeting campus activists (Khalil, Oztürk, Mahdawi, Khan Suri cases already in litigation tracker), (4) demands for "unprecedented" administrative control over admissions and curriculum as conditions of funding restoration.
+  - **Gap**: No existing domain addresses the democratic function of universities or the federal funding leverage mechanism as ideological control.
+  - **Sourcing**: Over one-third of faculty report declining academic freedom; over half report self-censoring. High-volume primary documentation available (Harvard/Columbia settlements, State Dept letters, AAUP surveys, Freedom House 2026 report).
+  - **Status**: QUEUED (identified by Session 504 civic tracker analysis)
+
+- **Domain 29 — Prosecutorial Weaponization and DOJ Capture** (Priority 2 for Phase 2 research)
+  - **Scope**: SPLC indictment (April 21, 2026) is the landmark case — a civil rights organization operating an informant program for decades, now federally charged for that program, with FBI Director Kash Patel personally announcing charges. This operates at the charging stage before courts are involved, using the criminal charging power as a suppression mechanism against civil society.
+  - **Gap**: This is functionally distinct from Domain 6 (Judicial Independence) and operates at charging stage. Combined with Nashville vindictive prosecution finding, DOJ investigations of Democratic members of Congress, and Kash Patel personal defamation suits against journalists, there is a documented pattern with no equivalent in the current 26-domain framework.
+  - **Sourcing**: SPLC indictment (April 21), Just Security analysis (Weissmann), Nashville Crenshaw finding (April 2026), DOJ investigations of Democrats, Kash Patel litigation.
+  - **Urgency**: High — May Day 2026 potential for protest-related prosecutions creates immediate relevance.
+  - **Status**: QUEUED (identified by Session 504 civic tracker analysis)
+
+- **Domain 28 — War Powers and Venezuela Military Unilateralism** (Priority 3 for Phase 2 research)
+  - **Scope**: January 3, 2026 capture of Venezuela's President Maduro without congressional authorization — characterized as an "arrest operation" to avoid the War Powers Resolution — produced documented Senate and House votes (Senate 51-50 blocked with VP Vance tiebreaker; House 215-215 failed). The administration's legal theory, if accepted, would eliminate the War Powers Resolution for any military operation framed as law enforcement.
+  - **Gap**: This extends Domain 19f (War Powers Reform, Session 502) from structural proposal to operational live case. The legal precedent is actively being set.
+  - **Sourcing**: Senate/House vote records (January 2026), Al Jazeera/NPR reporting, legal analysis of arrest-operation framing.
+  - **Urgency**: Moderate — situation stable but legal precedent actively being set.
+  - **Status**: QUEUED (identified by Session 504 civic tracker analysis)
 
 ---
 
