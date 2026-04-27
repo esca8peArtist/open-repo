@@ -3,6 +3,7 @@
 **Research completed**: April 27, 2026 (Session 515)
 **Updated**: April 27, 2026 — Section 5.1 expanded with two-stage Humphrey's Executor collapse: shadow docket (Trump v. Wilcox, May 2025) + D.C. Circuit merits ruling (December 2025); Section 6.1 Point 2 updated to present-tense
 **Updated**: April 27, 2026 (Session 523) — Section 2.4b added: post-Slaughter OT2026 independent agency landscape; Fed carve-out status; follow-on litigation pipeline; reform planning implications confirmed
+**Updated**: April 27, 2026 (Session 529) — Section 8 added: OT2026 cert window closing analysis; presidential immunity litigation full closure as of April 2026; three-part OT2026 reform feasibility assessment (independent agency amendment, SAVE Act filibuster survival, Second Amendment OT2026 implications)
 **Judicial landscape status**: Active transformation — three foundational doctrines reshaped since June 2024; NLRB quorum gone since May 2025
 **Priority designation**: Phase 2 Expansion — essential for adaptive reform planning (Domains 2, 6, 13)
 **Cross-domain connections**: Domain 2 (Executive Power / Presidential Immunity), Domain 6 (Judicial Independence and Reform), Domain 13 (Constitutional Amendments), Domain 29 (DOJ Capture), Domain 34 (Congressional Power of the Purse)
@@ -300,6 +301,40 @@ For completeness and context, the following decisions from the OT2025 term have 
 - *Louisiana v. Callais* (Voting Rights Act, 14th and 15th Amendments, reargued October 2025): Decision pending. Could eliminate majority-minority districts as a VRA Section 2 remedy nationwide — potentially the most consequential voting rights decision since *Shelby County* (2013).
 - *Trump v. Slaughter* (independent agencies, *Humphrey's Executor*): Decision pending by late June 2026. Near-certain to narrow or overrule *Humphrey's Executor* on the merits; D.C. Circuit already ruled against Wilcox/Harris in December 2025; NLRB has been without a quorum since May 2025. See Section 5.1 for the full two-stage analysis.
 - *Watson v. Republican National Committee* (mail ballot deadlines, federal preemption): Oral arguments March 23, 2026. Court appeared likely to preempt state grace-period laws. If decided against Mississippi, 14 states' mail ballot acceptance practices may be invalidated — a direct voting access implication for the 2026 midterms.
+
+---
+
+## 8. April 2026 Update — OT2026 Cert Window, Presidential Immunity Closure, and Reform Implications
+
+**Added**: April 27, 2026 (Session 529)
+
+### 8.1 The Cert Grant Window Is Closing for OT2026
+
+As of late April 2026, the Supreme Court is within weeks of the final cert grant decisions that will complete the October 2026 docket. The Court's spring conference schedule concludes in late May; grants that do not emerge by early June will not be placed on the OT2026 argument calendar, which runs October through April. This timing concentrates consequences:
+
+The Second Amendment cluster (*Viramontes*, *Duncan v. Bonta*) will almost certainly be granted — 11 relists each is functionally determinative. The Court has not resolved a full Second Amendment case since *NYSRPA v. Bruen* (2022), and the circuit split on assault weapons bans provides the necessary cert factors. Reform planning should assume a summer 2026 grant announcement and an OT2026 argument date in early 2027.
+
+*Doe v. Twitter* (Section 230 CSAM) has a more uncertain trajectory. Granting the case requires four votes for a question the Court could frame narrowly — knowing possession of CSAM — without committing to broad Section 230 revision. The current petition's narrow framing is designed to attract precisely those four votes.
+
+The APA vacatur scope question — whether *Trump v. CASA*'s party-specific relief principle extends to statutory vacatur under 5 U.S.C. § 706(2) — will generate cert-ready circuit splits as soon as the circuits that have deferred ruling issue their decisions. This question may arrive via an expedited petition rather than the standard conference process.
+
+### 8.2 Presidential Immunity Litigation: Full Closure as of April 2026
+
+The *Trump v. United States* (July 1, 2024) immunity doctrine has now fully played out in every federal criminal proceeding against President Trump. Special Counsel Jack Smith dismissed the federal election interference case without prejudice in November 2024, citing the DOJ's policy against indicting a sitting president. The Georgia RICO case against Trump and his co-defendants was dismissed in November 2025 following state court proceedings. As of April 2026, no federal or state criminal prosecution of Trump for his official-capacity conduct remains active.
+
+The immunity doctrine's practical closure — not as a pending legal question but as a fully realized political fact — has two analytical implications for October 2026 reform planning. First, "presidential immunity" is no longer a live case affecting judicial doctrine; it is a settled constitutional feature whose contours will be defined in future cases involving different presidents and different conduct. The three-tier framework (absolute immunity for core executive functions; presumptive immunity for official acts; no immunity for unofficial acts) is now the governing law, and reform planning must treat it as such. Second, the doctrine's closure removes the single largest individual-accountability case from federal docket — ending the period of exceptional judicial activity around the ex-president's conduct. OT2026 will accordingly be less dominated by executive accountability cases and more focused on structural doctrines: Second Amendment, Section 230, APA vacatur, and the independent agency follow-on litigation from *Trump v. Slaughter*.
+
+### 8.3 OT2026 Reform Feasibility: Updated Assessment
+
+The combination of the *Slaughter* decision (expected June 2026), the post-*Loper Bright* statutory interpretation landscape, and the OT2026 Second Amendment cluster produces a reform architecture update with three operative conclusions:
+
+**First**: Any legislative reform designed to restore independent agency protection must be drafted as a constitutional amendment, not a statute. The *Slaughter* ruling will make clear that statutes cannot insulate agency officers from at-will removal. The amendment language should track Article III's "during good behavior" model, extending equivalent tenure protection to commissioners of agencies with defined quasi-judicial or quasi-legislative functions.
+
+**Second**: The SAVE Act's Senate failure (48-50 in April 2026) preserves the filibuster as a 60-vote threshold for electoral legislation specifically — including any legislative effort to restrict mail ballot access via preemption. If *Watson v. RNC* produces an adverse ruling on mail ballot grace periods, a legislative response restoring those periods would need 60 Senate votes under current filibuster rules. The four-senator defection faction (Collins, Murkowski, Tillis, McConnell) that blocked the SAVE Act is the same faction that would need to hold for any legislative electoral restoration to survive.
+
+**Third**: The OT2026 Second Amendment cluster will arrive as the first post-redistricting Congress takes office in January 2027. If the Court extends *Bruen* to protect assault-style rifles and large-capacity magazines, any federal gun safety legislation in the recovery window will require a constitutional amendment rather than ordinary legislation. Domain 13's amendment priorities should include a Second Amendment clarification alongside the independent agency protection, voting rights, and presidential self-pardon amendments already identified.
+
+Sources: [SCOTUSblog: What Cases Might the Court Grant Next? (April 2026)](https://www.scotusblog.com/2026/04/what-cases-might-the-court-grant-next/); [Federal prosecution of Trump election obstruction case — Wikipedia](https://en.wikipedia.org/wiki/Federal_prosecution_of_Donald_Trump_(election_obstruction_case)); [Fulton County election interference case dismissed — Georgia Recorder (November 2025)](https://georgiarecorder.com/2025/11/26/fulton-county-election-interference-case-against-trump-and-his-allies-is-dismissed/); [Trump v. United States: Revisiting the Immunity Ruling 1 Year Later — Center for American Progress](https://www.americanprogress.org/article/trump-v-united-states-revisiting-the-presidential-immunity-ruling-1-year-later/)
 
 ---
 

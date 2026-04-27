@@ -358,6 +358,24 @@ This section synthesizes the evidence into a sequenced reform program, distingui
 
 ---
 
+## Section 9: April 2026 Case Study — Iran as Proof of WPR Ineffectiveness Against Emergency EO Framing
+
+**Added**: April 27, 2026 (Session 529)
+
+The Iran war has now produced the most empirically dense record of War Powers Resolution ineffectiveness in the statute's 50-year history. Five Senate votes failed. The House failed 215-215. The administration pre-announced non-compliance with the May 1 deadline. No court intervened. This record warrants explicit analysis as a case study in how emergency executive order framing defeats statutory war powers constraints even when the statutory mechanism is functioning as designed.
+
+**The Emergency EO framing mechanism**: The administration's legal strategy was not to comply with or dispute the 60-day clock — it was to declare the underlying statute a constitutional nullity before the clock expired. VP Vance's January 2026 statement that "the War Powers Act is fundamentally a fake and unconstitutional law" was not a legal brief or a judicial filing; it was a political pre-commitment. By publicly pre-announcing non-compliance, the administration converted the constitutional question from "will the president comply?" to "what happens when the president doesn't?" The answer, demonstrated in May 2026, is: nothing executable through existing legal channels.
+
+The emergency EO pathway operates in parallel: when the president frames military action as a national emergency under inherent Article II authority, he simultaneously invokes the argument that statutory constraints — the War Powers Resolution's 60-day clock — cannot limit the commander-in-chief's constitutional authority. The Iran case is distinct from Venezuela in this regard: Venezuela used the "arrest operation" reframing to avoid triggering the clock at all; Iran accepted the clock but pre-announced it would be ignored, testing whether any enforcement mechanism is available. None proved to be. The appropriations power — historically the most effective war powers enforcement mechanism (Cambodia 1973, Somalia 1994) — was neutralized by the administration's refusal to submit a dedicated Iran supplemental, avoiding the specific-appropriation vehicle that would allow Congress to attach explicit non-authorization language.
+
+**The coalition arithmetic and its structural limits**: The five Senate votes produced a maximum of 47 yes votes (fourth vote, April 15) on the Iran war powers resolutions — three votes short of the simple majority needed for a concurrent resolution, and twenty votes short of the two-thirds needed to override a presidential veto of an authorization denial. The House 215-215 tie showed that a near-majority exists for WPR enforcement but cannot reach the threshold required. The structural finding is unambiguous: the WPR's enforcement mechanism requires either (a) a simple-majority concurrent resolution (constitutionally uncertain post-*INS v. Chadha*), or (b) the president's voluntary compliance, or (c) an appropriations cutoff requiring a majority willing to condition defense funding during active hostilities. None of the three was achievable in the Iran case.
+
+**The reform implication**: Statutory WPR reform — creating automatic funding cutoffs or strengthened concurrent resolution mechanisms — is necessary but insufficient if the president pre-announces that the statute does not apply and if no court will adjudicate the constitutional question. The constitutional amendment pathway (Section 6.3, this domain) is the only mechanism that would be judicially enforceable against a president who has publicly rejected the statute's validity. An amendment must include explicit congressional standing to sue, a designated court with expedited jurisdiction, and a prohibition on executive branch funding of unauthorized hostilities after the authorization deadline. Without all three elements, the Iran precedent — presidential pre-announcement of non-compliance as a complete defense to statutory war powers constraints — will govern every future administration's calculation.
+
+Sources: [Democracy Now!: Senate defeats war powers resolution fifth time, 46-51 (April 23, 2026)](https://www.democracynow.org/2026/4/23/headlines/senate_republicans_defeat_iran_war_powers_resolution_for_fifth_time); [NBC News: House effort fails 215-215](https://www.nbcnews.com/politics/congress/house-resolution-end-trumps-war-iran-fails-one-vote-rcna332178); [CNN: Will Trump respect the 60-day limit?](https://www.cnn.com/2026/04/25/politics/war-powers-act-trump-iran-war-congress-analysis); [Just Security: Iran, War Powers, and the Power of the Purse](https://www.justsecurity.org/133361/iran-war-powers-purse-leverage-legalization/); [The Hill: Vance "fundamentally fake" quote](https://thehill.com/homenews/administration/5679759-vice-president-vance-war-powers/)
+
+---
+
 ## Key Sources
 
 - [Al Jazeera: May 1 deadline analysis](https://www.aljazeera.com/news/2026/4/24/trumps-may-1-deadline-can-he-continue-war-on-iran-after-that)
@@ -386,4 +404,5 @@ This section synthesizes the evidence into a sequenced reform program, distingui
 *Domain 19f created: 2026-04-27 | Session 502 | Priority 1 per post-Domain-26 completeness audit*
 *Updated: 2026-04-27 | Added fifth Senate vote (46-51, April 23), Vance constitutional rejection, House 215-215 vote detail*
 *Updated: 2026-04-27 (Session 523) | Added "Post-May 1 Constitutional Phase" subsection: Democratic escalation strategy, GOP fracture calculus, appropriations trap, structural precedent implications*
-*Word count: approximately 5,500 words*
+*Updated: 2026-04-27 (Session 529) | Added Section 9: April 2026 Case Study — Iran as proof of WPR ineffectiveness against emergency EO framing; coalition arithmetic analysis; constitutional amendment reform implication*
+*Word count: approximately 6,000 words*
