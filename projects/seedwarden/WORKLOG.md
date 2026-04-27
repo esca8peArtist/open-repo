@@ -4,6 +4,60 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session: 2026-04-27 — Phase 3 Operations Playbook
+
+Built `projects/seedwarden/marketing/phase-3-operations-playbook.md` (~3,600 words), the execution-level Phase 3 infrastructure document. This fills the gap between the existing strategy/calendar/spec documents and daily operational reality.
+
+### File created
+
+**`projects/seedwarden/marketing/phase-3-operations-playbook.md`**
+
+Six sections:
+
+**Part 1 — TikTok Content Creation System**
+- Complete shoot-ready production specs (camera setup, lighting rule, safe zones, export settings) — single reference card replaces hunting across multiple documents
+- Hook templates by category (educational, values, product feature, relatable) — pull and use
+- Populated 30-day content calendar: 30 rows, all platforms, specific hooks, Phase 2 asset references mapped to file paths, product tie-ins, operational notes per post
+- Upload schedule optimization: best days (Tue–Fri + Sat AM), best times (7–9pm primary), spacing rules, native scheduler guidance
+- Engagement response protocol: 5 comment-type templates, DM templates for "where do I buy this" and "do you ship seeds," 60-minute response window guidance for algorithm boost
+
+**Part 2 — Instagram Reel + Feed Strategy**
+- Phase 2 photo asset reuse map: which file from which directory feeds which Instagram format, including the 9:16 crop-from-landscape technique
+- Three carousel templates with full slide-by-slide structure: "X Things You Need to Know" (saves-optimized), "Problem-Solution" (conversion-optimized), "Variety Spotlight" (brand-building, generates 10 carousels from Anti-Catalog alone)
+- Daily Story mechanics: 3–5 slide structure, one interactive element per day, behind-the-scenes Story content from Phase 2 raw photo outtakes, link slide frequency rule (not every day)
+- Bio link strategy: rotation schedule (Etsy default / Kit lead magnet / product launch), 140-character bio copy with rationale, Linktree avoided with reasoning
+
+**Part 3 — Pinterest Pin Strategy**
+- Full design specs: 1000×1500px, text overlay formula, font minimums, contrast rule, Seedwarden hex palette
+- Three-template system with complete structure for each: product mockup pin (commercial intent), benefit-focused pin (discovery intent), educational hook pin (longest lifespan)
+- 63-pin batch build plan: 3–4 hour Canva session, build order aligned with PHASE2_PRODUCT_PRIORITIES.md tiers
+- 7-board structure with keyword-optimized names, purpose, pin types, pinning frequency, cross-linking rule
+- Rich Pins setup: one-time Etsy catalog integration, 20-minute setup instructions
+
+**Part 4 — Email List Launch**
+- Welcome sequence activation: three specific changes to make to existing email-and-launch-plan.md sequence before Phase 3 launch (update product recommendations with Phase 1 data, add seasonal P.S.)
+- Weekly newsletter template: Thursday cadence, 800–1,000 words, four-section structure (growing update / technique / product spotlight / mailbag), 10-item subject line swipe file
+- Segment strategy: three Kit behavioral segments (seed saving, urban/apartment, food preservation) with click-trigger setup and practical application for Thursday split sends
+- 3-email win-back campaign: targeting non-openers after 6 missed emails, free resource re-engagement offer, automatic list removal implementation, 90-day schedule
+
+**Part 5 — First 30 Days Execution Checklist**
+- Pre-launch week: 9-item checklist before Day 1 (content bank, Canva templates, 63 draft pins, Pinterest boards, Rich Pins, Kit sequence)
+- Days 1–7: day-by-day posts with Pinterest pin assignments
+- Days 8–14: mid-week analytics review instructions, Etsy traffic source tracking
+- Days 15–21: influencer outreach launch (Day 15), social proof content prep, analytics milestone
+- Days 22–30: first standalone email, second outreach batch, first Thursday newsletter, Month 1 WORKLOG entry
+
+**Part 6 — Decision Trees**
+- Six operational triage rules: whether to post under time pressure, which product to feature, how to handle an unexpected high-view video, Pinterest flatline diagnosis, influencer response protocol, Phase 3 launch gate (no Phase 2 photos = delay)
+- Cross-reference index mapping decision types to specific document sections
+
+### Design decisions
+- Option A selected over Option B (paid ads infrastructure) because Phase 3 paid ads strategy is well-covered in phase-3-social-media-growth-strategy.md (Section 4 is 800+ words of detailed paid channel guidance). The operational gap was daily execution templates and the populated calendar, not more strategy.
+- 30-day calendar kept product-agnostic for Days 3, 8, 15 (the three "top converting product" slots) — these slots are deliberately held open and filled from Phase 1 conversion data. Populating them with guesses would require revision at Phase 3 launch.
+- Email segment strategy is behavioral (click-triggered), not demographic — more accurate and requires no subscriber self-identification.
+
+---
+
 ## Session: 2026-04-27 — Phase 2 Photography Execution Planning
 
 Three Phase 2 planning documents created. These are preparation materials for when LIFESTYLE_PHOTOGRAPHY_STRATEGY.md is approved by the user. Phase 2 is currently blocked on Phase 1 tag corrections + Etsy account verification.
