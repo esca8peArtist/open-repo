@@ -130,7 +130,7 @@ def collect_tokens(since: datetime) -> dict:
     Returns dict keyed by model name with output, input, cache_write, cache_read counts.
     """
     by_model: dict[str, dict] = defaultdict(
-        lambda: {"output": 0, "input": 0, "cache_write": 0, "cache_read": 0, "sessions": set()}
+        lambda: {"output": 0, "input": 0, "cache_write": 0, "cache_write_5m": 0, "cache_read": 0, "sessions": set()}
     )
 
     if not SESSION_DIR.exists():
@@ -161,16 +161,18 @@ def collect_tokens(since: datetime) -> dict:
                         continue
                     usage = msg.get("message", {}).get("usage", {})
                     model = msg.get("message", {}).get("model", "unknown")
-                    out = usage.get("output_tokens", 0) or 0
-                    inp = usage.get("input_tokens", 0) or 0
-                    cw  = usage.get("cache_creation_input_tokens", 0) or 0
-                    cr  = usage.get("cache_read_input_tokens", 0) or 0
+                    out   = usage.get("output_tokens", 0) or 0
+                    inp   = usage.get("input_tokens", 0) or 0
+                    cw    = usage.get("cache_creation_input_tokens", 0) or 0
+                    cw_5m = (usage.get("cache_creation", {}) or {}).get("ephemeral_5m_input_tokens", 0) or 0
+                    cr    = usage.get("cache_read_input_tokens", 0) or 0
                     if out == 0 and cw == 0:
                         continue
-                    by_model[model]["output"]      += out
-                    by_model[model]["input"]        += inp
-                    by_model[model]["cache_write"]  += cw
-                    by_model[model]["cache_read"]   += cr
+                    by_model[model]["output"]       += out
+                    by_model[model]["input"]         += inp
+                    by_model[model]["cache_write"]   += cw
+                    by_model[model]["cache_write_5m"] += cw_5m
+                    by_model[model]["cache_read"]    += cr
                     by_model[model]["sessions"].add(session_id)
         except OSError:
             continue
@@ -190,11 +192,13 @@ def aggregate(by_model: dict) -> dict:
     other_out  = _sum_not("output", ("sonnet", "opus", "haiku", "synthetic"))
     total_out  = sonnet_out + opus_out + haiku_out + other_out
 
-    sonnet_cw = _sum("cache_write", "sonnet")
-    haiku_cw  = _sum("cache_write", "haiku")
-    opus_cw   = _sum("cache_write", "opus")
-    total_cw  = sum(v["cache_write"] for v in by_model.values())
-    total_cr  = sum(v["cache_read"]  for v in by_model.values())
+    sonnet_cw    = _sum("cache_write", "sonnet")
+    haiku_cw     = _sum("cache_write", "haiku")
+    opus_cw      = _sum("cache_write", "opus")
+    total_cw     = sum(v["cache_write"]    for v in by_model.values())
+    total_cw_5m  = sum(v["cache_write_5m"] for v in by_model.values())
+    total_cr     = sum(v["cache_read"]     for v in by_model.values())
+    total_fresh  = sum(v["input"]          for v in by_model.values())
 
     sonnet_sessions = set()
     total_sessions = set()
@@ -204,18 +208,20 @@ def aggregate(by_model: dict) -> dict:
             sonnet_sessions |= v["sessions"]
 
     return {
-        "sonnet_output":   sonnet_out,
-        "opus_output":     opus_out,
-        "haiku_output":    haiku_out,
-        "other_output":    other_out,
-        "total_output":    total_out,
+        "sonnet_output":      sonnet_out,
+        "opus_output":        opus_out,
+        "haiku_output":       haiku_out,
+        "other_output":       other_out,
+        "total_output":       total_out,
         "sonnet_cache_write": sonnet_cw,
         "haiku_cache_write":  haiku_cw,
         "opus_cache_write":   opus_cw,
         "total_cache_write":  total_cw,
+        "total_cache_write_5m": total_cw_5m,
         "total_cache_read":   total_cr,
-        "sonnet_sessions": len(sonnet_sessions),
-        "total_sessions":  len(total_sessions),
+        "total_fresh_input":  total_fresh,
+        "sonnet_sessions":    len(sonnet_sessions),
+        "total_sessions":     len(total_sessions),
     }
 
 
@@ -254,10 +260,12 @@ def build_report() -> dict:
                                      agg["sonnet_output"], sonnet_limit,
                                      agg["total_output"], all_limit),
         "by_model": {k: {
-                         "output":      v["output"],
-                         "cache_write": v["cache_write"],
-                         "cache_read":  v["cache_read"],
-                         "sessions":    len(v["sessions"]),
+                         "output":        v["output"],
+                         "fresh_input":   v["input"],
+                         "cache_write":   v["cache_write"],
+                         "cache_write_5m": v["cache_write_5m"],
+                         "cache_read":    v["cache_read"],
+                         "sessions":      len(v["sessions"]),
                      } for k, v in by_model.items() if v["output"] > 0 or v["cache_write"] > 0},
     }
 
@@ -293,7 +301,7 @@ def print_report(r: dict) -> None:
 
     print(f"\n{'='*62}")
     print(f"  SuperClaude Token Usage — since {r['since'][:10]}")
-    print(f"  Reset in {r['hours_until_reset']:.0f}h  (Tue {r['next_reset'][:10]} 00:00 UTC)")
+    print(f"  Reset in {r['hours_until_reset']:.0f}h  (Tue {r['next_reset'][:10]} ~05:00 UTC)")
     print(f"{'='*62}")
     print(f"  {flag_s} Sonnet     {bar_s}  {p['sonnet']:.1f}%")
     print(f"       {u['sonnet_output']:>13,} / {lim['sonnet']:,} output tokens")
@@ -308,10 +316,15 @@ def print_report(r: dict) -> None:
             cw_str = f"  cache_write: {cw:,}" if cw else ""
             print(f"    {model}: {d['output']:,} tokens  ({d['sessions']} sessions){cw_str}")
     print()
-    cw_total = u.get("total_cache_write", 0)
-    cr_total = u.get("total_cache_read", 0)
-    if cw_total or cr_total:
-        print(f"  Cache writes (all models): {cw_total:,} tokens")
+    cw_total    = u.get("total_cache_write", 0)
+    cw_5m_total = u.get("total_cache_write_5m", 0)
+    cr_total    = u.get("total_cache_read", 0)
+    fi_total    = u.get("total_fresh_input", 0)
+    if cw_total or cr_total or fi_total:
+        print(f"  Fresh input  (all models): {fi_total:,} tokens")
+        print(f"  Cache writes 1h (all):     {cw_total:,} tokens")
+        if cw_5m_total:
+            print(f"  Cache writes 5m (all):     {cw_5m_total:,} tokens")
         print(f"  Cache reads  (all models): {cr_total:,} tokens")
     print()
     print(f"  ➜  {r['recommendation']}")
