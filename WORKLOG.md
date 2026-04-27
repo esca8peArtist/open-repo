@@ -4,6 +4,39 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-27 03:45 — resistance-research — Phase 2 Priority Domains COMPLETE (Domains 27 + 28 + 29)
+
+**Session**: Phase 2 domain research completion (all three Priority 3 domains)
+
+### CONFIRMED COMPLETE: Domain 28 — War Powers and Venezuela Military Unilateralism (5,600 words)
+
+**Research deliverable**: `projects/resistance-research/domains/domain-28-war-powers-venezuela.md` (Session 506 completion)
+
+**Key findings**:
+- January 3, 2026 capture of Venezuelan President Maduro — Operation Absolute Resolve — over 150 aircraft, Delta Force ground troops, regime change objective
+- Administration's novel legal theory: "law enforcement arrest operation" to avoid War Powers Resolution trigger
+- Senate vote: 52-47 to advance, then 51-50 defeat (VP Vance tiebreaker after two Republicans reversed votes under administration lobbying)
+- House vote: 215-215 tie (Speaker Johnson held vote 20 minutes for missing Republican, losing single vote margin)
+- Congress within ONE VOTE in each chamber of rejecting the president's legal theory
+- Structural gap: Law Enforcement loophole threatens to eliminate War Powers Resolution for any DEA-indicted foreign leader
+- Cross-domain: Connected to Domain 19f (War Powers structural reform), Domain 6 (political question doctrine), Domain 4 (Seth Harp press freedom), Domain 2 (executive accountability)
+
+**Sourcing**: 34 primary sources (Congress.gov, Al Jazeera, NPR, CNN, Defense One, Washington Post, Just Security, Brennan Center, Brookings, WOLA, UN News, legal analysis)
+
+**Status**: Ready for integration into proposal Part III and distribution templates.
+
+### SUMMARY: All Three Phase 2 Priority Domains Complete
+
+- ✅ Domain 27 (Higher Education and Academic Freedom) — 4,800 words — COMPLETE (Session 505)
+- ✅ Domain 28 (War Powers Venezuela) — 5,600 words — COMPLETE (Session 506)
+- ✅ Domain 29 (Prosecutorial Weaponization and DOJ Capture) — 6,124 words — COMPLETE (Session 505)
+
+**Framework status**: 28-domain diagnostic framework + Phase 1-5 implementation architecture COMPLETE. All domains production-ready for distribution.
+
+**Next phase**: User executes distribution (Substack, Reddit, institutional outreach) across all 28 domains. Orchestrator can prepare integrated proposal documents and distribution templates on user trigger.
+
+---
+
 ## 2026-04-27 03:10 — resistance-research — Domains 27 + 29 Research COMPLETE (2 Phase 2 Domains)
 
 **Session**: Phase 2 domain research acceleration (Domains 29 + 27)
