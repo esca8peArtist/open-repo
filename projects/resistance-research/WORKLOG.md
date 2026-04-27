@@ -2,6 +2,33 @@
 
 ---
 
+## April 27, 2026 (Session 521) — Domain 23 April 2026 Content Refresh
+
+**Session type**: Domain content update
+**Files updated**: `projects/resistance-research/domains/domain-23-trade-policy-tariff-unilateralism.md`
+
+### What Was Done
+
+Researched and integrated three April 2026 developments into Domain 23 (Trade Policy, Tariff Unilateralism, and Economic Sovereignty). The update adds a new "April 2026 Update" section (~1,600 words, 14 new source citations) covering:
+
+**A. Section 122 Oral Argument (April 10, 2026)**
+Three-hour CIT hearing exposed critical legal vulnerabilities in the government's position: DOJ could not quantify the claimed balance-of-payments deficit when directly pressed; DOJ shifted its legal theory mid-argument (abandoning the GATT monetary reserves framework after confrontation with U.S. $252B reserve high, pivoting to current account); at least two judges signaled the government's theory "proves too much" — effectively unlimited presidential tariff authority. Expert assessment is that the tariff will survive given its July 24 expiration date, but the hearing record documents the evidentiary void behind the administration's legal theory.
+
+**B. IEEPA Refund Portal Launch (April 20, 2026)**
+$166-175 billion owed to ~330,000 importers, with $650M/month interest accruing. CAPE portal launched April 20 with 56,000+ importers enrolled but experienced system failures, duplicate ID errors, and portal unavailability on day one — including for Rick Woldenberg of Learning Resources, the named SCOTUS plaintiff. Phase 1 covers only ~63% of eligible entries; finally-liquidated entries excluded. Documents the pattern of executive overreach: judicial correction occurs but the corrective administrative machinery bears the repair burden.
+
+**C. Section 301 Replacement Hearings (April 28 onward)**
+USTR launched two investigations in March 2026: 16-country overcapacity probe covering semiconductors, autos, batteries, steel; 60-country forced labor enforcement probe. No rate cap, no time limit — potential for IEEPA-scale tariffs to persist indefinitely. Forced labor application is novel legal territory for Section 301. Written comments closed April 15; forced labor hearings begin April 28, overcapacity hearings May 5. Updated Yale Budget Lab April 2026 figures: $1,338/household cost if Section 122 extended; 2.3% disposable income loss for second-lowest decile vs. 0.9% for top decile (2.6x regressive ratio); $1.2-1.3 trillion projected revenue 2026-35.
+
+**D. Trade Review Act Status**
+S.1272 remains in Senate Finance Committee, no floor action. Confirms the political accountability gap is a failure of legislative will, not of available tools.
+
+### Domain Selection Rationale
+
+Domain 23 was selected over other candidates (Domain 6, Domain 35) because all three April developments are directly on-topic, the domain's Section 122 litigation section was written when oral argument was still pending, and the IEEPA refund process is entirely new material with no prior coverage. The update advances the domain's core accountability argument rather than merely adding news.
+
+---
+
 ## April 27, 2026 (Session 519) — Distribution Infrastructure Verification Complete
 
 **Session type**: Verification, documentation, and distribution preparation
