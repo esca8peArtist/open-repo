@@ -4,6 +4,52 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 565 — 2026-04-28 — Phase 3 Product Expansion Roadmap (Root-Level Deliverables)
+
+**Task**: Develop Phase 3 Product Expansion Roadmap as production-ready files in `projects/seedwarden/` (root level), meeting the exact deliverable spec: 3,500–4,500 word strategy document and a JSON specifications file using the required schema (name, category, description, target_cohort, estimated_cogs, estimated_price, margin, phases_1_dependency, supplier, launch_month, customer_feedback_signal, cross_sell_bundle, success_metric).
+
+**Context**: Session 563 had created detailed files in `docs/` and `data/` subdirectories with a different JSON schema. This session creates the deliverables at the correct root-level paths and with the task-specified field structure.
+
+**Deliverables created**:
+
+1. **`projects/seedwarden/phase-3-product-expansion-roadmap.md`** (~4,100 words)
+   - Part 1: Strategic context — four customer cohorts (forager, prepper, homesteader, gift buyer) mapped to specific Phase 3 categories; Phase 1 data signals that activate vs. defer each product
+   - Part 2: Product categories and month-by-month sequencing (M3 July → M6 October)
+     - Month 3 (July): 4 preservation derivatives, 14 regional listing variants, Wild Edibles Quick Reference
+     - Month 4 (August): 3 bundle launches, photo pack, flashcard set
+     - Month 5 (September): Seed Library System, Medicinal Herb Guide, Regional Forager Bundle, Homestead Skills Roadmap
+     - Month 6 (October): Preservation Planner, Expanded Homesteader Gift Set
+   - Part 3: Pricing strategy — Phase 3 mid-tier ($8–$14) rationale; 3 price increase tests on Phase 1 products (August 15, decision September 28); bundle economics (21%–42% discount ranges)
+   - Part 4: Supplier sourcing — all digital; Etsy, Kit/ConvertKit, Canva, Wikimedia Commons; imputed COGS at $25/hr opportunity cost with per-product recovery estimates
+   - Part 5: Customer feedback integration — 3 data types (Etsy analytics, cohort survey, Etsy messages); decision rule for deferring conditional products to Phase 4
+   - Part 6: Cross-sell bundle strategy — explicit entry → cross-sell → bundle upgrade pathways for all 4 cohorts
+   - Part 7: Month-by-month execution timeline with task-level detail
+   - Part 8: Success metrics — numeric revenue targets by month (conservative/moderate), repeat purchase rate by cohort, AOV targets, ROAS threshold, email list growth
+   - Part 9: Competitive differentiation — comprehensive vs. specific, national vs. regional
+   - Part 10: Risk management — 4 identified risks with specific triggers and responses
+
+2. **`projects/seedwarden/phase-3-product-specifications.json`** (12 full-spec products + regional listing summary + 3 bundles)
+   - 12 products with complete field set per task schema: name, category, description, target_cohort, estimated_cogs, estimated_price, margin, phases_1_dependency, supplier, launch_month, customer_feedback_signal, cross_sell_bundle, success_metric
+   - Preservation category (5 products): Beginner Canning ($9), Fermentation Starter ($8), Dehydrating Guide ($11), Pressure Canning Meat ($13), Food Preservation Planner ($12)
+   - Foraging category (3 products): Wild Edibles Quick Reference ($10), Habitat Photo Pack ($14), Native Plants Flashcards ($12)
+   - Seeds/organization (1 product): Seed Library System ($14)
+   - Medicinal herbs (1 product): Medicinal Herb Growing Guide ($14)
+   - Guides/gateway (1 product): Homestead Skills Roadmap ($10)
+   - Bundles (1 product): Expanded Homesteader Gift Set ($62)
+   - Regional listing summary: 14 regional variants (7 Native Plants at $12, 7 Survival Garden at $5.99) with combined revenue target
+   - Bundle summary: 3 Phase 3 bundles ($22, $52, $26) with contents and success metrics
+   - Price increase tests: 3 products with current/test prices, rationale, revert triggers, implementation/decision dates
+   - Revenue targets: Month-by-month May–December 2026 (conservative/moderate/optimistic); repeat purchase rate targets by cohort; AOV targets
+
+**Design decisions**:
+- All 12 products in the JSON use the exact schema fields specified in the task brief; regional listings handled separately in a summary block because they use existing PDFs with no new content
+- estimated_cogs reflects imputed opportunity cost ($25/hr × development hours ÷ realistic first-year unit sales); explicitly noted as digital with zero marginal COGS per unit
+- customer_feedback_signal for each product is specific: names the Phase 1 metric, threshold, and what absence of the signal means (defer/deprioritize vs. proceed)
+- Medicinal Herb Guide (P3-23) is the most conditional product — its launch is explicitly gated on forager cohort ≥20% of Phase 1 buyers AND Native Plants converting at ≥1.5%
+- Success metrics are all numeric with a specific timeframe (not "increased sales")
+
+---
+
 ## Session 564 — 2026-04-28 — Phase 1 Revenue Projections
 
 **Task**: Build detailed 90-day revenue forecasts, conversion targets, KPI dashboard, and Phase 1-to-Phase-2 go/no-go decision matrix. All queued from Exploration Queue with no blockers.
