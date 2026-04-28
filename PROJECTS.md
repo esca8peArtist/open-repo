@@ -712,12 +712,21 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Expected outcome**: `stockbot-post-gate-2-roadmap.md` (6,000-7,000 words)
   - **Status**: QUEUED (after market open, Session 564+)
 
-- **stockbot: Real-time CRITICAL Alert Discord Webhook Implementation** (Priority 2 for live operations)
+- ✅ **stockbot: Real-time CRITICAL Alert Discord Webhook Implementation** (COMPLETE — Session 599)
   - **Scope**: Implement real-time CRITICAL alert Discord webhook (identified gap from Session 553 `live-trading-operations.md` design spec). (1) Add `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` env var + configuration, (2) Implement `_send_critical_discord_alert()` method in TradingSession, (3) Wire into 6 alert categories (drift, circuit breaker, drawdown, regime shift, position-specific, prediction error), (4) Test alert firing logic (mock webhook, verify message format, throttle duplicate alerts), (5) Integration with existing daily summary pattern (similar POST pattern, different webhook URL)
-  - **Expected scope**: ~15 min implementation, ~10 unit tests, zero schema changes
-  - **Deliverable**: Updated `src/trading/trading_session.py` + updated `tests/test_trading_session_improvements.py` with webhook tests
-  - **Integration**: Immediately deployable post-engine-restart; coordinates with Session 551 dashboard + Session 553 operations runbooks
-  - **Status**: ACTIVE (Session 554+ — available after Phase 3 Candidate 5 starts)
+  - **Deliverables**: 
+    - `_send_critical_discord_alert()` (line 125–201 in trading_session.py) — module-level helper with JSON embed formatting, error handling, timeout management
+    - `_maybe_send_critical_alert()` (line 1820–1867) — instance method with 15-minute throttling per alert type
+    - `_check_alerts()` + 5 individual checkers (circuit breaker, drawdown, position move, prediction error, regime shift) — all wired to call `_maybe_send_critical_alert()`
+    - 17 unit tests in test_trading_session_improvements.py — all passing (payload structure, env var handling, error cases, color coding, throttling)
+  - **Key Features**: 
+    - Separate webhook URL from daily summary (`STOCKBOT_DISCORD_ALERT_WEBHOOK_URL`)
+    - Graceful degradation when env var missing (logs warning, continues trading)
+    - Per-alert-type throttling (15 min window, prevents spam)
+    - Rich Discord embeds with color coding (CRITICAL=red, HIGH=orange, MEDIUM=gold)
+    - All 6 alert categories integrated and tested
+  - **Integration**: Ready for immediate deployment post-engine-restart; requires env var configuration only
+  - **Status**: COMPLETE (Session 599 verification), all 17 tests passing
 
 - **cybersecurity-hardening: High-Risk Population Protection Protocols** (Priority 3 for advanced OpSec)
   - **Scope**: Beyond baseline OpSec playbook — design comprehensive protection for activists, dissidents, lawyers, vulnerable populations facing government targeting. (1) Identity compartmentalization (burner phones, secondary SIM architectures, VPN/Tor layering), (2) Physical security (surveillance detection, safe house networks, low-profile movement patterns), (3) Legal defense coordination (attorney networks, bail funds, criminal defense playbooks), (4) International sanctuary options (asylum processes, travel security, international NGO coordination), (5) Emergency protocols (asset recovery, family safety, evidence preservation)
