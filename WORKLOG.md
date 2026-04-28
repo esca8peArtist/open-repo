@@ -4,6 +4,52 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 556 (00:31 UTC onward) — Phase 3 Candidate 4 Research Complete
+
+**Orchestration Status**: All autonomous projects blocked on user actions (stockbot engine restart, resistance-research path decision, mfg-farm test print, seedwarden verification). Exploration Queue items executed.
+
+**Work Completed**:
+
+1. ✅ **resistance-research: Phase 3 Candidate 4 Research COMPLETE**
+   - **Deliverable**: `phase-3-candidate-4-international-recovery-timelines.md` (8,900 words, 44 sources)
+   - **Scope**: Comparative analysis of international democratic recovery after institutional capture and authoritarian erosion
+   - **Case Studies** (8 cases spanning 1945–2026):
+     - South Korea 2024 (6-month recovery from martial law, built on 35 years institutional depth)
+     - Spain 1975–1982 (7 years to first left-wing government, reform-through-law model)
+     - Taiwan 1987–1996 (9 years to first direct election, elite-initiated democratization)
+     - Germany 1949–1955 (designed-from-scratch constitutional model, militant democracy provisions)
+     - Uruguay 1973–1985 (12-year recovery, accountability trade-offs in pacted transitions)
+     - Argentina 1976–present (16+ years to stable civilian rule, Nunca Más resilience culture)
+     - Poland 2015–present (8 years to electoral recovery, institutional recovery still ongoing, 27+ months post-Tusk)
+     - Hungary 2010–2026 (16 years to electoral defeat, projected 25+ years for full institutional recovery)
+   - **Key Findings**:
+     - Full institutional recovery minimum 5–10 years in favorable cases; 15–25+ years under deep capture
+     - No cases achieved recovery under 5 years from gradual erosion pattern
+     - Media freedom + civil society restoration are first-mover reforms in every successful case
+     - US has not yet crossed Hungary's threshold of structural entrenchment (window still open)
+     - US lacks external institutional anchor (EU-equivalent) with enforcement capacity — identified as critical gap
+     - Realistic US timeline: 8–15 years favorable scenario (Spain model) to 15–25 years if capture deepens (Poland/Hungary model)
+   - **Critical Synthesis**: 
+     - Domains 21–22 (media, civil society) should lead Year 1 per comparative evidence
+     - Cardinal law trap (two-thirds supermajority requirements) parallels US lifetime federal appointments — key institutional durability mechanism
+     - Poland's structural parallel: time-insulated appointments (PiS judges with terms to 2030s) = US federal judiciary capture timeline
+   - **Production Status**: Ready for Phase 1 distribution integration (can be sent with institutional materials)
+   - **Committed**: fd2f31d to master
+   - **File**: `projects/resistance-research/phase-3-candidate-4-international-recovery-timelines.md`
+
+**Exploration Queue Update**:
+- ✅ **Added Phase 3 Candidate 4 to queue** (Session 556) — Now at 3 active items (minimum maintained per protocol)
+- **Remaining active items**: Phase 3 Candidate 5 (next research), resistance-research Domain Updates (April-May content maintenance), mfg-farm CNC capabilities
+
+**Session Summary**:
+- 1 autonomous project researched (resistance-research Phase 3 Candidate 4)
+- 8,900-word research document completed, committed, production-ready
+- Exploration queue maintained at 3+ active items per protocol
+- All active project work remains blocked on user actions (stockbot engine restart T-13 hours to market open, resistance-research path decision, mfg-farm test print, seedwarden verification)
+- Next session: Monitor stockbot engine restart status (CRITICAL), execute resistance-research Phase 1 if path decided, or continue Phase 3 research if neither available
+
+---
+
 ## 2026-04-28 Session 554 (01:00 UTC onward) — Resistance-Research Phase 1 Readiness Audit
 
 **Orchestration Focus**: All projects blocked on user action. Conducted comprehensive Phase 1 readiness audit to prepare immediate execution infrastructure.

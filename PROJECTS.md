@@ -748,6 +748,14 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Key design**: Tier 1 (automated: court dockets, legislative votes), Tier 2 (human-curated: significance judgment), Tier 3 (coalition-fed: relationship intelligence). Domain 37 has embedded five-window advocacy calendar.
   - **Status**: Production-ready for post-distribution Phase 3 operationalization
 
+- ✅ **resistance-research Phase 3 Candidate 4: International Democratic Recovery Timelines** (COMPLETE — Session 556)
+  - **Deliverables**: `phase-3-candidate-4-international-recovery-timelines.md` (8,900 words, 44 sources)
+  - **Case Studies**: 8 cases spanning 1945–2026 (South Korea, Spain, Taiwan, Germany, Uruguay, Argentina, Poland, Hungary)
+  - **Key Findings**: Full institutional recovery 5–10 years minimum (favorable) to 15–25+ years (deep capture). US timeline 8–15 years (Spain model) to 15–25 years (Poland/Hungary model). Critical gap identified: US lacks external institutional anchor with enforcement capacity.
+  - **Synthesis**: Media freedom + civil society restoration lead Year 1 per comparative evidence. Cardinal law trap (two-thirds supermajority) parallels US lifetime federal appointments. Poland structural parallel applies directly to US judicial durability mechanism.
+  - **Status**: Production-ready for Phase 1 distribution integration (can be sent with institutional materials)
+  - **Committed**: fd2f31d to master
+
 - ✅ **seedwarden: Advanced Growth Metrics and Cohort Analysis Framework** (COMPLETE)
   - **Deliverables**: `growth-metrics-framework.md` (3,700+ words) + `cohort-analysis-template.sql` (617 lines) + `dashboard-template.ipynb` (Jupyter with synthetic data fallback) + `monthly-metrics-checklist.md` (90-minute runbook)
   - **Key findings**: Email-to-purchase funnel critical path (20% target); seasonal cohort divergence (holiday gift ≠ self-purchase repeat patterns); product LTV optimization (single products never ROI-positive on Pinterest ads)

@@ -1,4 +1,45 @@
-## Current Session (Session 555 — 2026-04-28 00:25 UTC — Phase 3 Candidate 3 Research Complete)
+## Current Session (Session 556 — 2026-04-28 00:31 UTC — Phase 3 Candidate 4 Research Complete)
+
+**Status**: 🟢 **PHASE 3 CANDIDATE 4 COMPLETE** — International democratic recovery timelines research finished. 8 case studies (1945–2026) with recovery time analysis, mechanisms, and comparative synthesis. All projects blocked on user actions (stockbot engine restart T-13 hours to market open, resistance-research path decision, mfg-farm test print, seedwarden verification).
+
+**Since Last Check-in (Session 555 → Session 556)**:
+
+1. ✅ **resistance-research: Phase 3 Candidate 4 — International Democratic Recovery Timelines COMPLETE**
+   - **Deliverable**: `phase-3-candidate-4-international-recovery-timelines.md` (8,900 words, 44 sources)
+   - **Case studies**: South Korea (6-month recovery, 35 years institutional pre-built), Spain (7 years, reform-through-law), Taiwan (9 years, elite-initiated), Germany (designed-from-scratch, militant democracy), Uruguay (12 years, pacted transition), Argentina (16+ years, Nunca Más culture), Poland (8-year electoral, institutional recovery ongoing), Hungary (16-year electoral defeat, 25+ projected for full recovery)
+   - **Key Finding**: Full institutional recovery = 5–10 years minimum (favorable cases) to 15–25+ years (deep capture). US scenario: 8–15 years (Spain optimistic) to 15–25+ years (Poland/Hungary model)
+   - **Critical Synthesis**: Domains 21–22 (media, civil society) lead Year 1 per evidence. US lacks external enforcement anchor (EU-equivalent) — identified as critical gap. Cardinal law trap (US lifetime appointments) = Poland structural parallel.
+   - **Production Status**: Ready for Phase 1 distribution integration (institutional materials)
+   - **Committed**: fd2f31d to master
+
+**🔴 CRITICAL ACTION STILL PENDING**:
+
+1. **T-13 hours to market open (13:30 UTC, 09:30 ET)**: Verify stockbot engine restart
+   - User must run: `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/
+   - If restarted: Next session monitors multi-ticker portfolio through market open, confirms signal generation
+   - If NOT restarted: Cannot enter live trading, code regression risk increases
+
+2. **resistance-research distribution path decision** (upon user decision: A / A+37 / B)
+   - Upon decision: Execute 5-hour pre-launch checklist, T-Day 0 distribution launch
+   - Phase 3 research (Candidate 4 + prior) available for institutional distribution materials
+
+**Project Status Summary**:
+- 🔴 **stockbot**: Code production-ready with 3 robustness features + feature mismatch fix. Engine restart pending (T-13 hours).
+- 🟡 **resistance-research**: Phase 1-3 research 100% complete. Distribution path decision pending.
+- ✅ **All other projects**: Blocked on user actions (mfg-farm test print, seedwarden verification, etc.)
+
+**Next Session Actions** (priority order):
+1. **CRITICAL**: Verify stockbot engine restart status (check process running)
+   - If restarted: Monitor paper trading through market open, confirm signal generation
+   - If NOT restarted: Urgent reminder (window closing rapidly)
+2. If resistance-research path decided: Execute pre-launch checklist + Phase 1 distribution
+3. If both blocked: Continue Phase 3 research (Candidate 5 or next item)
+
+**Token Usage**: ~82k tokens used in Session 556 (Phase 3 research agent + orchestration). Reset 2026-04-29 00:00 UTC.
+
+---
+
+## Previous Session (Session 555 — 2026-04-28 00:25 UTC — Phase 3 Candidate 3 Research Complete)
 
 **Status**: 🟢 **PHASE 3 CANDIDATE 3 COMPLETE** — Adversary response modeling + resilience architecture research finished. Opposition playbook analysis across 5 historical cases, domain-specific obstruction mechanisms, asymmetric advantages, resilience design principles. All projects blocked on user decisions (stockbot engine restart, resistance-research path decision, mfg-farm test print).
 
