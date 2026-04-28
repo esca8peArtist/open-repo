@@ -7,7 +7,7 @@
 
 ## Overall Project Status
 
-**Phase**: Phase 2 domain expansion COMPLETE (Session 538 verification). Distribution measurement infrastructure now complete (Session 546). 38-domain framework production-ready (Domains 27, 28, 29 added; Domains 1, 6 created as standalone files; Domains 19f, 33, 35 updated). Distribution awaiting user Path A/B/Hybrid decision. Session 538 audit: all Phase 2 work items verified complete; FISA 702 April 30 outcome tracking queued.
+**Phase**: April-May 2026 Domain Content Maintenance COMPLETE (current session). Phase 2 domain expansion COMPLETE (Session 538 verification). Distribution measurement infrastructure now complete (Session 546). 38-domain framework production-ready with April 28 updates. Domain content maintenance: Domain 19f (Iran case study + NATO/Taiwan geopolitical vectors + Section 14), Domain 28 (Venezuela-Iran post-May 1 synthesis), Domain 29 (SPLC case trajectory + nonproft sector response), Domain 6 (Powell-Warsh-Slaughter timing), Domain 35 (Warsh confirmation + Foote denial), Domain 1 (BISC 155-bill count + FISA pre-vote assessment), surveillance-tracking.md (FISA pre-vote + expanded outcome checklist). Distribution awaiting user Path A/B/Hybrid decision. FISA April 30 outcome still pending — fill checklist after vote.
 
 **35-Domain Diagnostic Framework**: COMPLETE AND PRODUCTION-READY. All 35 domains + 6 April 2026 updates documented. Distribution templates cover all distribution channels. Session 535 added: phase-2-expansion-roadmap.md (1,900 words), Domain 33 Section 1.3a (6-state simultaneous action map, ~1,300 words, 10 new sources), surveillance-tracking.md FISA post-deadline checklist.
 

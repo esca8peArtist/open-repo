@@ -208,7 +208,18 @@ Phase 3 research should focus on **structural deepening and real-time crisis mon
 
 ---
 
-### Phase 3 Candidate 2 (High Priority): Institutional Playbooks — Sector-Specific Implementation Tactics
+### ~~Phase 3 Candidate 2 (OUTLINE COMPLETE — Session 580): Institutional Playbooks — Sector-Specific Implementation Tactics~~
+
+**Status**: OUTLINE COMPLETE (2026-04-28 Session 580) — 7,000-word structured analysis ready for full playbook expansion
+
+File: `phase-3-institutional-playbooks-outline.md` (7,000+ words)
+
+**Outline Contents**:
+- 8 constituencies analyzed (AGs, Civil Service Unions, Labor Unions, Religious Coalitions, Media Organizations, Law School Clinics, State Legislators, Federal Judges)
+- For each: leverage analysis, actionable domains, Year 1-3 sequencing, case studies, constraints, natural allies, conflicts
+- Cross-constituency alliance clusters and conflict mitigation strategies
+- Implementation wave assignments (Wave 1, 2, 3)
+- Assessment for full playbook expansion
 
 **Why this is the gap:** The proposal's implementation roadmap (Part IV) identifies actors (executive, Congress, states, courts, civil society) and sequencing (3-wave recovery). But it does not provide **sector-specific implementation playbooks** that would guide actual reform constituencies (civil service unions, AG coalitions, state legislatures, law school clinics) on what to do in specific scenarios. The current proposal is a diagnostic + vision + theory-of-change + macro architecture. What's missing is: **if you are a state AG, here's the three-month action plan for Domain 6 (judicial independence)**. If you are a law school, here's how to operationalize Domain 27 (academic freedom). If you are a labor union, here's Domain 11 (healthcare) + Domain 15 (labor rights) coordination strategy.
 
