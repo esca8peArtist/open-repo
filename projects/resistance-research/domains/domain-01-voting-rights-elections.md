@@ -255,3 +255,39 @@ Sources: [NPR: After 2 failed votes, Mike Johnson unveils new plan to extend FIS
 *Domain 1 created: 2026-04-27 | Session 529 | Priority 1 — Direct Electoral Democracy Impact*
 *Word count: approximately 2,200 words*
 *April 2026 content: Section 2 (SAVE Act Senate failure, coalition-fracture analysis, defector profiles, vulnerability windows)*
+
+---
+
+## Section 6: April 28, 2026 — Ballot Initiative Suppression Scale, FISA Pre-Deadline Status, and State Restriction Bill Count
+
+**Updated**: April 28, 2026 (current session)
+
+### 6.1 Updated Scale: 155 Bills in 31 States (BISC March 2026 Tracker)
+
+The Ballot Initiative Strategy Center's most recent tracker documents a substantially larger scale of anti-direct-democracy legislation than the "100+ bills in 15+ states" figure cited in earlier research. As of March 30, 2026, BISC is monitoring **155 bills related to direct democracy filed in legislatures across 31 states and Washington D.C.** The Fairness Project's count identifies "over 100 bills targeting the ballot measure process in the opening days of 2026" — the discrepancy reflects different counting methodologies (BISC counts all direct-democracy-adjacent bills; Fairness Project counts only ballot-measure-specific restriction bills). Both counts significantly exceed the "unprecedented" 295 bills in 43 states documented for 2025 in total, suggesting the 2026 pace is continuing at an accelerated level.
+
+**The pattern BISC documents**: Attacks on ballot initiatives are "no longer isolated, reactive, or limited to election cycles. They are increasingly systematic, institutionalized, and forward-looking — designed not just to block individual measures, but to permanently constrain the People's Tool itself." The characterization is analytically precise: the supermajority threshold bills, geographic distribution requirements, and signature collection restrictions documented in Section 5.2 are structural changes to the process itself, not responses to specific initiative campaigns.
+
+**The six-state supermajority push**: Oklahoma, Arizona, Missouri, North Dakota, South Dakota, and Idaho are among the states where legislators are attempting to raise the winning threshold for ballot issues to a 60% supermajority. In Arizona's case, this creates a direct collision: voters are simultaneously circulating a voting rights initiative (Section 5.3) while the legislature is attempting to raise the threshold for passing it from simple majority to 60%. If the threshold-raising measure reaches the ballot before the voting rights initiative is submitted, and if voters approve the threshold increase, it could retroactively increase the burden for the same voting rights measure.
+
+Sources: [Ballot Initiative Strategy Center: Attacks + Threats tracker](https://ballot.org/attacks-threats/); [BISC Hot Sheet — March 30, 2026](https://ballot.org/the-hot-sheet/); [Davis Vanguard: Direct Democracy Under Attack as States Seek to Raise Ballot Measure Threshold](https://davisvanguard.org/2026/02/states-introduce-bills-to-limit-ballot-access/); [PBS NewsHour: How lawmakers are restricting citizen-led ballot initiatives](https://www.pbs.org/newshour/show/how-lawmakers-are-restricting-citizen-led-ballot-initiatives); [EPI: The battle for the ballot — Southern legislatures restricting access](https://www.epi.org/blog/the-battle-for-the-ballot-how-southern-legislatures-are-trying-to-block-economic-progress-by-restricting-access-to-ballot-initiatives/)
+
+### 6.2 FISA April 30 Status — Live Tracking
+
+As of April 28, 2026, FISA Section 702 has a hard expiration date of **April 30, 2026** (the 10-day extension Congress passed on April 17 expires Thursday). The current status of negotiations:
+
+**Speaker Johnson's three-year proposal**: Johnson released a proposal to renew Section 702 for three years with modest compliance reporting requirements but without the warrant amendment that privacy-focused Republicans and House Freedom Caucus members have sought. The EFF characterized Johnson's proposal as "insufficient" — placing no meaningful limits on backdoor searches of Americans' communications. Just Security documented the proposal would "place no limits on backdoor searches." Multiple House Republicans who blocked the five-year and 18-month clean renewals in overnight votes on April 17 have not yet committed to the three-year version.
+
+**The April 29-30 vote dynamic**: The House is expected to vote April 29-30. The range of possible outcomes:
+1. **Three-year renewal passes (most likely per current vote counts)**: Section 702 continues without warrant protections; administration retains full surveillance authority including over election officials and journalists
+2. **Three-year renewal fails, brief lapse**: Section 702 lapses briefly; DOJ/NSA scramble for emergency extension; significant political pressure on Johnson to pass any extension; privacy reformers lose leverage once lapse is declared a national security emergency
+3. **Warrant amendment attached and passes**: The least likely outcome but the reform-favorable one; would require coalition of privacy-focused Republicans (Paul, Amash-aligned members) and Democrats voting together against leadership on both sides
+
+**The election security implication (Domain 1 connection)**: Without warrant protections, Section 702's backdoor search authority extends to U.S. persons' communications when one party to the communication is a targeted foreign national. Ballot initiative campaign organizers who communicate with international election monitors, foreign-based civil society funders, or foreign counterparts on democracy issues could theoretically be swept into surveillance without a warrant. This is not hypothetical: the FISA Court has documented multiple instances of FBI backdoor searches targeting politically sensitive U.S. persons. The absence of a warrant requirement means these searches do not require individualized suspicion.
+
+Sources: [Spectrum Local News: House set to vote this week on FISA (April 27, 2026)](https://spectrumlocalnews.com/us/snplus/politics/2026/04/27/fisa-section-702-house-vote); [The Hill: House Republicans face FISA challenges (April 28, 2026)](https://thehill.com/homenews/house/5848368-house-republicans-fisa-section-702-reconciliation/); [EFF: Congress Must Reject New Insufficient 702 Reauthorization Bill](https://www.eff.org/deeplinks/2026/04/congress-must-reject-new-insufficient-702-reauthorization-bill); [Just Security: Johnson Section 702 proposal — no limits on backdoor searches](https://www.justsecurity.org/137206/johnson-section-702-warrant/); [CNN: US intel officials scramble to keep surveillance law running amid Iran war tensions (April 13, 2026)](https://www.cnn.com/2026/04/13/politics/fisa-section-702-suveillance-law-expiration-congress); [Brennan Center: Section 702 of FISA 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page); [CNBC: Three things to know about FISA Section 702](https://www.cnbc.com/2026/04/17/section-702-fisa-congress-surveillance.html)
+
+---
+
+*Section 6 added: April 28, 2026 (current session)*
+*Key new data: BISC tracker documents 155 bills in 31 states and DC (as of March 30) — significantly more than the 100+ in 15+ figure; six-state supermajority push (OK, AZ, MO, ND, SD, ID) includes direct collision with Arizona voting rights initiative; FISA April 30 hard deadline with three-year-no-warrant-amendment proposal as likeliest outcome; warrant protections absent = election organizer surveillance window remains open; BISC characterizes restriction pattern as "systematic, institutionalized, and forward-looking" — not reactive to individual campaigns.*

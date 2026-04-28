@@ -1,7 +1,7 @@
 # Domain 6: Judicial Independence and Reform
 
 **Document created**: 2026-04-27 (Session 529)
-**April 2026 Update**: Trump v. Wilcox shadow-docket removal-power ruling; post-Loper Bright presidential removal authority; appellate judicial capture vectors documented
+**April 2026 Update**: Trump v. Wilcox shadow-docket removal-power ruling; post-Loper Bright presidential removal authority; appellate judicial capture vectors documented; Section 6 added (April 28 current): DOJ drops Powell probe, Warsh confirmation clears, Powell chair expires May 15 — Slaughter-Wilcox timing intersection; Fed carve-out durability analysis
 **Priority designation**: Phase 2 Expansion — active transformation requiring adaptive reform planning
 **Cross-domain connections**: Domain 2 (Executive Accountability), Domain 13 (Constitutional Amendments), Domain 29 (DOJ Capture), Domain 34 (Congressional Power of the Purse), Domain 35 (Supreme Court OT2026 Term)
 
@@ -315,3 +315,48 @@ Sources: [MONDAQ/Butler Snow: The NLRB in April 2026 — Operating Again, But St
 
 *Section 5 added: April 28, 2026 (Session 571)*
 *Key findings: Slaughter still pending (late June 2026 expected); Powell term expires May 15 creating Fed-carve-out crisis intersection; NLRB 2-1 Republican majority already operationalizing capture (Biden precedents reversed); FTC 2-member quorum conducting inverted enforcement priorities; CFPB approaching full operational collapse; 8-week advocacy window for state private rights of action and AG enforcement funding before Slaughter eliminates agency independence doctrine.*
+
+---
+
+## Section 6: Late April 2026 — Powell Transition, Warsh Confirmation, and the Fed Carve-Out Crisis
+
+**Updated**: April 28, 2026 (current session)
+
+### 6.1 The Powell Succession as Constitutional Stress Test
+
+The most consequential immediate development intersecting with the *Trump v. Slaughter* removal power analysis is the Federal Reserve chair succession. Jerome Powell's term as chair expires **May 15, 2026** — a date that arrives approximately six weeks before the expected *Slaughter* decision. This timing creates a live constitutional stress test of the single carve-out the Supreme Court preserved in its May 2025 *Wilcox* shadow order.
+
+The sequence of events in April 2026:
+
+**The DOJ criminal probe and its termination.** The DOJ opened a criminal investigation into Powell in January 2026 over the Fed headquarters renovation project. The probe was widely characterized as prosecutorial pressure to force resignation rather than a genuine criminal matter. On April 24, Axios reported that the DOJ had dropped the probe — simultaneously with confirmation that Kevin Warsh's nomination hearing had proceeded and that the administration was "expect[ing] to have Warsh in place" by the May 15 chair expiration date.
+
+**The Tillis clearance.** The most politically significant pre-hearing development was Senator Thom Tillis (R-NC) initially placing a hold on Warsh's nomination, citing concerns about Fed independence and administration pressure. Tillis dropped the blockade after the confirmation hearing, per NBC News — but his willingness to use the hold mechanism signals that the institutionalist faction is watching the Fed transition for administration overreach signals. Tillis's release is conditional in its effect: the hold is gone but the scrutiny is not.
+
+**Warsh's "independent but in the lane" positioning.** At his April 21 Senate Banking Committee confirmation hearing, Warsh stated he would be "strictly independent," rejected Trump's demand for immediate rate cuts, and asserted that the Fed must "stay in its lane" to maintain independence. Warsh's testimony was designed to establish a public record of Fed independence commitments — commitments that would be legally relevant if Trump attempted to remove him before his term expired on any grounds other than the statutory "for cause" standard (which the *Wilcox* shadow order's carve-out preserves for the Fed).
+
+**The constitutional significance of the transition.** The *Wilcox* shadow order's Fed carve-out ("we express no view" on the Fed) preserved Fed independence as a political accommodation, not a constitutional doctrine. When Warsh is confirmed and assumes the chair position, the carve-out's status depends on whether the *Slaughter* opinion articulates a Fed-specific exception with doctrinal grounding. If the opinion merely repeats the "we express no view" formulation without explanation, the carve-out remains fragile: it is the Court's political accommodation to financial market stability, not a constitutional rule. If the opinion provides a structural rationale — the Fed's "uniquely structured, quasi-private" character, its explicit statutory independence provisions, its role in systemic financial stability — the carve-out gains some durability. The Warsh confirmation hearing record becomes relevant: Warsh's testimony asserting independence creates a congressional record that a subsequent court could use to identify Congress's intent to preserve Fed independence as a structural matter.
+
+Sources: [CNN: Trump says he'll fire Powell next month if he stays in his role](https://www.cnn.com/2026/04/15/economy/powell-trump-fire-fed-chair); [Axios: DOJ drops criminal probe into Fed chair Jerome Powell](https://www.axios.com/2026/04/24/fed-powell-trump-doj); [CNBC: Fed chair nominee Kevin Warsh clears a hurdle to Senate hearing](https://www.cnbc.com/2026/04/13/fed-chair-nominee-kevin-warsh-senate-confirmation-hearing.html); [CNN: Kevin Warsh vows not to be Trump's 'sock puppet'](https://www.cnn.com/2026/04/21/business/live-news/kevin-warsh-fed-confirmation-hearing); [CNBC: Kevin Warsh says Fed must 'stay in its lane' to maintain independence](https://www.cnbc.com/2026/04/20/kevin-warsh-fed-confirmation-senate.html); [NBC News: Sen. Thom Tillis drops blockade of Trump's Fed chair nominee](https://www.nbcnews.com/politics/congress/thom-tillis-drops-blockade-fed-chair-nominee-kevin-warsh-jerome-powell-rcna342163); [NPR: Once again, Trump threatens to fire Fed Chair Jerome Powell](https://www.npr.org/2026/04/15/nx-s1-5786478/trump-federa-reserve-jerome-powell); [UPI: Trump vs. Powell — interest rates, investigation and a replacement](https://www.upi.com/Top_News/US/2026/04/22/jerome-powell-trump-federal-reserve-chair-investigation/7511776867847/)
+
+### 6.2 The Slaughter-Wilcox Convergence Timeline
+
+With Powell's chair expiration on May 15, the Warsh confirmation expected shortly thereafter, and *Trump v. Slaughter* expected in late June 2026, the three-event sequence compresses the removal power analysis into an approximately 6-week window:
+
+**Event 1 (May 15): Powell chair expires.** If Powell stays on as a governor, his removal protection derives solely from the *Wilcox* carve-out — which remains undoctrinated. If Trump attempts to fire Powell from the Board of Governors position (which runs until January 2028) before *Slaughter* is decided, the resulting litigation would be the first actual test of the carve-out's legal force. Financial market reaction would be immediate and severe; the administration has reportedly been counseled that firing Powell before Warsh is confirmed would trigger a crisis.
+
+**Event 2 (May-June): Warsh confirmation.** Once Warsh is confirmed and assumes the chair, the removal pressure on Powell as governor decreases — the administration's primary goal (installing Warsh) is achieved. But the *Slaughter* decision still determines whether any subsequent Fed board member removal would be subject to "for cause" protection or at-will presidential discretion.
+
+**Event 3 (Late June): Slaughter decision.** The opinion's treatment of the Fed carve-out determines the constitutional baseline for all removal-protection disputes going forward. A broad overruling of *Humphrey's Executor* without a clear Fed exception would immediately expose all subsequent Fed appointments to removal pressure — giving future presidents leverage over monetary policy that has not existed since the creation of the modern Fed structure.
+
+The reform advocacy window identified in Section 5.3 — approximately 8 weeks before *Slaughter* is decided — runs from late April through mid-to-late June. State private rights of action (California AB 1456, New York S.8234) and the state AG enforcement expansion for CFPB must be completed before the *Slaughter* opinion finalizes the doctrinal landscape.
+
+### 6.3 Domain 35 Cross-Reference: The Cert Grant Window
+
+The *Slaughter* decision's arrival in late June 2026 will coincide with the closure of the October 2025 term. By that time, the Court will also have issued its final cert grants for the October 2026 term. Domain 35 documents the expected OT2026 docket (Second Amendment cluster, Section 230, Article III adjudication). The removal power implications of *Slaughter* will shape which OT2026 cases present viable challenges to regulatory agency structure under the new constitutional baseline. Any OT2026 cert grant in the agency-adjudication or independent-agency spaces must be read against *Slaughter*'s holding, not against the pre-*Slaughter* *Humphrey's Executor* doctrine that governed those agency structures for ninety years.
+
+Sources: [SCOTUSblog: Trump v. Slaughter case page](https://www.scotusblog.com/cases/case-files/trump-v-slaughter-2/); [CBS News: Supreme Court seems open to allowing Trump to fire agency officials without cause](https://www.cbsnews.com/news/supreme-court-arguments-trump-firing-ftc-commissioner/); [Lawfare: 'Slaughter'-ing Humphrey's Executor](https://www.lawfaremedia.org/article/slaughter--ing-humphrey-s-executor/)
+
+---
+
+*Section 6 added: April 28, 2026 (current session)*
+*Key new developments: DOJ drops Powell probe (April 24) — pressure mechanism removed after achieving political goal; Warsh confirmed before Senate Banking Committee (April 21) — vows independence; Tillis blockade dropped — institutionalist faction monitoring but not blocking; Powell chair expires May 15 — transition compresses removal power analysis to 6-week window; Slaughter expected late June — Fed carve-out durability depends on doctrinal grounding in opinion, not merely political accommodation; state private rights of action and AG enforcement advocacy window closes approximately when Slaughter is issued.*

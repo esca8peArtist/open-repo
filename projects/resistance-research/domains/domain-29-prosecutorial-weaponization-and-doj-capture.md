@@ -1,7 +1,7 @@
 # Domain 29: Prosecutorial Weaponization and DOJ Capture
 
 **Created**: Session 505 (2026-04-27)
-**Updated**: 2026-04-27 (Session 523) — Section 4.2 expanded: DOJ state bar proposed rule (April 25) documented as final accountability mechanism; House Judiciary Patel investigation added; dual-track suppression analysis (Patel lawsuit + SPLC indictment same week) integrated
+**Updated**: 2026-04-27 (Session 523) — Section 4.2 expanded: DOJ state bar proposed rule (April 25) documented as final accountability mechanism; House Judiciary Patel investigation added; dual-track suppression analysis (Patel lawsuit + SPLC indictment same week) integrated; Section 14 added (April 28 current): SPLC assigned Trump-appointed Judge Emily Marks; DOJ state bar comment period closed April 6 (pre-indictment); accountability suppression sequence documented; First Amendment dismissal ground identified
 **Priority designation**: HIGH — May Day 2026; active case studies in real-time
 **Cross-domain connections**: Domain 6 (Judicial Independence), Domain 2 (Civil Service/Executive Accountability), Domain 26 (Government Accountability and Institutional Resilience), Domain 9 (First Amendment/Press Freedom)
 
@@ -504,3 +504,53 @@ Sources: [NEA: May Day Toolkit](https://www.nea.org/mayday-toolkit); [DSA: May D
 
 *Section 13 added: April 28, 2026 (Session 571)*
 *Key developments: SPLC retained Bradley Arant Boult Cummings LLP (corporate defense firm, Fifth Circuit expertise); no motion to dismiss filed yet (expected post-arraignment, early May); expert consensus predicts dismissal before trial on Thompson bank fraud defect and wire fraud victim-absence grounds; 100+ organization mutual defense coalition operational with legal fund and program risk-sharing; Jared Taylor adversarial disclaim undermines victim framing; May Day assessment pending.*
+
+---
+
+## Section 14: Late April 2026 — SPLC Case Procedural Posture and the State Bar Rule's Comment Period Closes
+
+**Updated**: April 28, 2026 (current session)
+
+### 14.1 Assigned Judge and Initial Procedural Posture
+
+The SPLC case has been assigned to **U.S. District Judge Emily Marks** in the Middle District of Alabama (Montgomery). Judge Marks is a Trump appointee. The choice of judge is not controllable by the SPLC — the Middle District of Alabama has a limited number of Article III judges and case assignment follows standard protocol — but the Trump-appointee status of the presiding judge is a relevant variable in pre-trial motion practice. A motion to dismiss based on legal insufficiency will be evaluated by a judge whose jurisprudential orientation may be less receptive to the defects former prosecutors have identified than a Democratic appointee would be.
+
+The case is in its initial procedural phase. As of April 28, 2026, no arraignment date has been formally announced, though under the standard Federal Rules of Criminal Procedure timeline, arraignment would occur within a reasonable time after indictment. The SPLC has retained **Bradley Arant Boult Cummings LLP** — a major corporate defense firm headquartered in Birmingham with deep Fifth Circuit experience. No motion to dismiss has been filed; the standard sequence is: arraignment, plea, court-set motion briefing schedule, motion to dismiss filed within that schedule.
+
+**The First Amendment argument flagged by legal experts**: Several criminal defense scholars and law professors have noted a dimension of the SPLC indictment's vulnerability not fully explored in earlier analysis: the prosecution's theory that paying individuals whose activities included "racist postings" constituted fraud may expose the government to a First Amendment challenge at the charging stage itself. If the informant program's value was monitoring protected speech, and if the government argues that funding such monitoring constitutes fraud, the First Amendment argument operates as an independent pre-trial dismissal ground beyond the *Thompson* bank fraud defect and wire fraud victim-absence grounds.
+
+Sources: [CNN: What to know about the Trump Justice Department's case against the SPLC (April 23, 2026)](https://www.cnn.com/2026/04/23/politics/what-to-know-criminal-case-southern-poverty-law-center); [Alabama Reflector: Legal experts skeptical of DOJ's case](https://alabamareflector.com/2026/04/23/legal-experts-skeptical-of-dojs-criminal-case-against-southern-poverty-law-center/); [CBS News: Former prosecutors see legal flaws in DOJ's indictment](https://www.cbsnews.com/news/southern-poverty-law-center-justice-department-indictment-legal-flaws/)
+
+### 14.2 The DOJ State Bar Rule: Comment Period Closed, Litigation Pending
+
+The DOJ's proposed rule allowing the Attorney General to intercept state bar complaints against federal prosecutors (published in the Federal Register March 5, 2026) reached the end of its comment period on **April 6, 2026** — closing before the SPLC indictment was announced on April 21. The timing matters: the comment period that closed on April 6 did not include comments specifically addressing the SPLC prosecution's relationship to the accountability mechanism the rule would undermine. The SPLC indictment arrives after the regulatory comment window closed, meaning the rule's critics could not use the SPLC case as concrete evidence of why the bar shield is necessary.
+
+**Comment record and opposition**: Multiple legal organizations submitted formal opposition before the April 6 deadline:
+- The New York City Bar Association submitted detailed comments opposing the rule as inconsistent with the McDade-Murtha Amendment
+- The California State Bar submitted formal opposition (comments submitted April 6)
+- The ABA and state bar associations filed opposition on constitutional grounds
+- Multiple Democratic state attorneys general filed opposition letters
+- Democracy Forward is publicly committed to challenging any final rule in court
+
+**The regulatory timeline**: With the comment period closed, the DOJ is in the review-and-final-rule drafting phase. A final rule is typically issued 60-180 days after the comment period closes, suggesting a final rule in June-October 2026. Once a final rule is issued, litigation by the ABA and state bars challenging the rule under the McDade-Murtha Amendment can proceed. The McDade-Murtha Amendment (passed 1998) explicitly requires federal prosecutors to follow state professional responsibility rules — a requirement the proposed rule directly overrides by giving DOJ first-review authority over state bar complaints before the state bars can act.
+
+**The structural significance for the SPLC case**: If the DOJ state bar rule is finalized and upheld, any state bar complaint against DOJ prosecutors involved in the SPLC prosecution — alleging that they filed charges lacking good-faith factual basis, as the former prosecutors' public analysis would support — would be routed to the DOJ's own review process before reaching state bar disciplinary authorities. This creates a closed accountability loop: DOJ prosecutors accused of misconduct in a DOJ political prosecution would have their misconduct complaints reviewed by DOJ itself before external accountability could proceed. The structural relationship between the SPLC prosecution and the bar shield rule is not incidental — the rule, announced four days after the indictment, appears designed to foreclose precisely the accountability mechanism that would otherwise be available to SPLC's defense team and critics.
+
+Sources: [Federal Register: Review of State Bar Complaints and Allegations Against DOJ Attorneys (March 5, 2026)](https://www.federalregister.gov/documents/2026/03/05/2026-04390/review-of-state-bar-complaints-and-allegations-against-department-of-justice-attorneys); [NPR: DOJ wants to shield its lawyers from outside scrutiny (April 25, 2026)](https://www.npr.org/2026/04/25/g-s1-118356/justice-department-ethics-rules-state-bar); [Democracy Forward: Proposed Rule — DOJ Review of State Bar Complaints](https://democracyforward.org/work/regulations/proposed-rule-doj-review-of-state-bar-complaints-and-allegations-against-department-of-justice-attorneys/); [NYC Bar Association: Comment on DOJ proposed rule](https://www.nycbar.org/reports/comment-on-the-department-of-justices-proposed-rule-regarding-state-bar-complaints-against-doj-attorneys/); [Davis Vanguard: California bar fights DOJ rule](https://davisvanguard.org/2026/04/california-bar-fights-doj-rule/); [The Dupree Report: Bondi Rule Would Block State Bar DOJ Ethics Probes](https://www.thedupreereport.com/2026/03/bondi-doj-state-bar-rule-mcdade/)
+
+### 14.3 Pattern Tracking Update: The April Cluster
+
+The SPLC indictment (April 21), Patel lawsuit against The Atlantic (April 20), and DOJ state bar rule comment closure (April 6) form an April 2026 cluster that Protect Democracy's retaliatory action tracker should document as a coordinated accountability-suppression sequence:
+
+1. **April 6**: DOJ state bar comment period closes — shielding DOJ prosecutors from state bar complaints about misconduct in politically directed prosecutions
+2. **April 20**: Patel files $250M defamation suit against The Atlantic — chilling effect on press reporting about FBI director's conduct
+3. **April 21**: SPLC indicted — landmark civil rights organization targeted for informant program work
+
+The sequencing is analytically significant: the accountability suppression mechanism (state bar rule) closes its public comment window before the most publicly criticized prosecution in DOJ's recent history is announced. Whatever the intent, the effect is that the most powerful remaining external accountability tool for DOJ prosecutor misconduct was locked down before the prosecution most likely to generate misconduct complaints was announced.
+
+Sources: [Protect Democracy Retaliatory Action Tracker](https://protectdemocracy.org/work/retaliatory-action-tracker/); [CNN: Patel Atlantic lawsuit (April 20, 2026)](https://www.cnn.com/2026/04/20/media/kash-patel-fbi-atlantic-lawsuit-sarah-fitzpatrick)
+
+---
+
+*Section 14 added: April 28, 2026 (current session)*
+*Key new developments: SPLC assigned to Trump-appointed Judge Emily Marks (Middle District of Alabama); no arraignment date yet; First Amendment argument identified as additional dismissal ground beyond Thompson bank fraud and wire fraud victim-absence defects; DOJ state bar rule comment period closed April 6 — pre-SPLC indictment, meaning comments don't capture the SPLC case as evidence; regulatory final rule expected June-October 2026; ABA and state bars committed to immediate legal challenge; accountability suppression sequence (state bar close → Patel lawsuit → SPLC indictment) documented as coordinated April 2026 cluster.*

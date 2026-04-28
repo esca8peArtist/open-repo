@@ -104,7 +104,18 @@
 
 ## Document Status
 
-**In progress** — updating domains 19f through 33 with May 2026 civic developments
-**Target completion**: Full updates to all 8 priority domains
-**Commit target**: All updates to local master by session end
+**COMPLETE** — All 8 priority domains updated with April-May 2026 developments.
+
+### Completion Record (April 28, 2026 — current session)
+
+| Domain | Status | Key Additions |
+|--------|--------|---------------|
+| 19f — War Powers Reform | COMPLETE | Section 13: $200B supplemental revolt; Murkowski funding precondition; Collins Appropriations leverage; Wicker hearing; reconciliation trap |
+| 06 — Judicial Independence | COMPLETE | Section 6: DOJ drops Powell probe; Warsh confirmation path cleared; May 15 chair expiration; Fed carve-out timing analysis |
+| 29 — Prosecutorial Weaponization | COMPLETE | Section 14: SPLC assigned Trump-appointed Judge Marks; state bar comment period closed April 6 (pre-indictment); First Amendment dismissal ground; accountability sequence documented |
+| 35 — Supreme Court OT2026 | COMPLETE | Section 11: Warsh confirmation resolves Powell succession via appointment not removal; carve-out question deferred not resolved; doctrinal basis still needed in Slaughter |
+| 01 — Voting Rights/Elections | COMPLETE | Section 6: BISC 155 bills in 31 states (updated count); six-state supermajority push; FISA April 30 hard deadline status; three-year-no-warrant outcome tracking |
+| 28 — War Powers Venezuela | COMPLETE | Section 11: $200B supplemental cross-reference; fiscal accountability synthesis (Venezuela + Iran share same accountability-avoidance structure); reprogramming loophole reform recommendation |
+| 33 — State Legislative Autocratization | Already current through Session 535 — 155-bill count, six-state supermajority push, and coordination table already documented. No additional updates required. |
+| Domain 21/25 — Surveillance | No standalone domain exists for these topics; FISA analysis integrated into Domain 1 Section 6.2 |
 

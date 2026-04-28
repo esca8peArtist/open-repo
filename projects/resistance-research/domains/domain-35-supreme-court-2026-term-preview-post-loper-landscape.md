@@ -442,6 +442,31 @@ Source: [SCOTUSblog: Foote v. Ludlow cert denied April 20, 2026](https://www.sco
 
 ---
 
+## Section 11: Late April 2026 Precision Update — Warsh Confirmation and the Fed Carve-Out Resolution
+
+**Updated**: April 28, 2026 (current session)
+
+### 11.1 Warsh Confirmation Clears the Powell Problem Before Slaughter Decides It
+
+The most significant April 2026 development for the *Slaughter*-Fed carve-out analysis is that Trump has effectively resolved the Fed chair succession question through appointment rather than removal. Kevin Warsh was nominated as Fed Chair in January 2026, appeared before the Senate Banking Committee on April 21, 2026, and his confirmation path has been cleared following Senator Tillis dropping a prior blockade. The administration expects Warsh to be in place by May 15 (Powell's chair term expiration).
+
+**How this changes the Slaughter analysis**: The administration's April 2026 moves have maneuvered the Fed carve-out question out of the *Slaughter* litigation's immediate scope in a procedurally clever way. By replacing Powell through the appointment power (chairmanship reappointment) rather than through removal (Board of Governors firing), the administration avoids directly triggering the carve-out test. The *Wilcox* shadow order's "we express no view" on the Fed was preserving a question that hasn't yet needed to be answered if the succession occurs via appointment.
+
+**Why the carve-out question remains live**: Powell retains his Board of Governors seat through January 2028 regardless of the chairmanship succession. If Trump wants to exercise direct control over Powell's remaining influence — including his votes on the FOMC regarding interest rates — removal from the Board would require invoking the "for cause" standard that the administration has asserted does not apply. The *Slaughter* decision will determine whether "for cause" protection survives for Board members. Even with Warsh as chair, a *Slaughter* ruling that eliminates removal protection would give Trump the power to remove Powell (and other Board members) from their governor seats at will — converting FOMC monetary policy decisions into instruments of potential executive pressure.
+
+**The DOJ probe closure as preparation**: The DOJ dropped its criminal probe into Powell on April 24, 2026 — specifically after the Warsh confirmation hearing, and specifically in a context where Senate Banking Committee chair Tim Scott needed to be able to move the confirmation forward without the probe creating a distraction. The probe's closure was a tactical step in the appointment-not-removal strategy, clearing the political environment for a smooth Warsh confirmation that resolves the chair succession without requiring *Slaughter* to address the Fed question under political duress.
+
+**Strategic implication for reform advocates**: The Warsh appointment-not-removal sequence, while resolving the immediate market stability question, does not resolve the underlying constitutional question. A future Trump attempt to remove Powell (or any subsequent governor) from the Board of Governors would immediately regenerate the carve-out test. *Slaughter*'s treatment of the Fed must still articulate a durable doctrinal basis for removal protection — not merely the "we express no view" accommodation — or every future Board member appointment will carry removal risk during any administration that wants to use monetary policy as a political tool.
+
+Sources: [CNBC: Fed chair nominee Kevin Warsh clears hurdle to Senate hearing (April 13, 2026)](https://www.cnbc.com/2026/04/13/fed-chair-nominee-kevin-warsh-senate-confirmation-hearing.html); [CNN: Warsh vows not to be Trump's "sock puppet" at confirmation hearing (April 21, 2026)](https://www.cnn.com/2026/04/21/business/live-news/kevin-warsh-fed-confirmation-hearing); [CNBC: Warsh says Fed must "stay in its lane" (April 20, 2026)](https://www.cnbc.com/2026/04/20/kevin-warsh-fed-confirmation-senate.html); [NBC News: Tillis drops blockade of Warsh nomination (April 2026)](https://www.nbcnews.com/politics/congress/thom-tillis-drops-blockade-fed-chair-nominee-kevin-warsh-jerome-powell-rcna342163); [Axios: DOJ drops Powell probe (April 24, 2026)](https://www.axios.com/2026/04/24/fed-powell-trump-doj); [Lawfare: Repealing Humphrey's Executor and the Problem of the Federal Reserve](https://www.lawfaremedia.org/article/repealing-humphrey-s-executor-and-the-problem-of-the-federal-reserve)
+
+---
+
+*Section 11 added: April 28, 2026 (current session)*
+*Key development: Warsh confirmation path cleared — administration uses appointment power to resolve Fed chair succession without triggering carve-out test before Slaughter is decided; DOJ probe closure (April 24) was tactical preparation for Warsh confirmation; Powell remains on Board of Governors through January 2028, meaning carve-out question is deferred but not resolved; Slaughter still must provide doctrinal basis for Fed Board-member removal protection or Board seats remain removal-vulnerable under any future administration.*
+
+---
+
 ## Sources
 
 1. [Loper Bright Enterprises v. Raimondo — Supreme Court Opinion (June 28, 2024)](https://www.supremecourt.gov/opinions/23pdf/22-451_7m58.pdf)
