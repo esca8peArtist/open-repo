@@ -5,40 +5,63 @@
 
 ---
 
-## Since Last Check-in (Session 595 — 2026-04-28 17:42–18:10 UTC)
+## Since Last Check-in (Session 595 — 2026-04-28 17:42–19:10 UTC)
 
-🔍 **Stockbot Buying Power Issue — Root Cause Identified**
+✅ **Stockbot Investigation + Phase 3 Research Completion** — Two major work items executed
 
 ### What Happened
 
-**Inbox Item Processed**: "Investigate why there is insufficient buying power for the stockbot and reply to me in the stockbot channel"
+**1. Stockbot Buying Power Issue — Investigation Complete** (17:42–18:05 UTC):
+- Processed inbox item: "Investigate why there is insufficient buying power for the stockbot and reply to me in the stockbot channel"
+- Root cause identified: Alpaca paper trading account is either **unfunded** (balance = $0) OR **misconfigured as margin account** (should be cash account per documentation)
+- Evidence: Trading logs show repeated error 40310000 across all 11 tickers; database empty (fresh account); OrderExecutor correctly uses paper trading endpoint
+- **BLOCKED.md updated** with detailed investigation, specific actionable steps for user: verify account type = CASH, balance > $0 at https://app.alpaca.markets/ → Paper Trading tab, then restart engine
 
-1. **Investigation Scope** (17:42–18:05 UTC):
-   - Reviewed trading logs (trading_20260428.log) — confirmed repeated error 40310000 across all 11 tickers
-   - Analyzed OrderExecutor code — correctly initialized with `TradingClient(api_key, secret_key, paper=True)` using paper trading endpoint
-   - Checked trading database — confirmed empty (0 bytes), fresh account with zero trades
-   - Cross-referenced with live-trading-readiness.md Section 2a documentation requirements
-   
-2. **Root Cause**: Alpaca paper trading account is either **unfunded** (balance = $0) OR **misconfigured as margin account** (should be cash account per documentation). Either case prevents order execution with daytrading_buying_power: 0 error.
+**2. Phase 3 Candidate 3 Research — Complete** (18:10–19:10 UTC):
+- **Media Freedom and Journalistic Protection Recovery** ✅ 
+  - 10,106 words, 62 academic/policy/journalistic sources
+  - Five sections: First Amendment doctrine, media ownership structure, journalist protection, international precedent, recovery pathways
+  - Key finding: Layered suppression model (legal threat, economic pressure, information access denial, infrastructure elimination, harassment amplification) — PRESS Act as most immediately achievable single action; full recovery requires coherent cross-layer response
+  - Committed: commit 29a97c0
+  - Marks Phase 3 Candidates 1-3 (Civil Service, Judicial Independence, Media Freedom) all complete — 29,300+ total words, 185+ sources
 
-3. **BLOCKED.md Updated** (18:07 UTC): Detailed investigation findings added with specific actionable steps for user to resolve (verify account type = CASH, balance > $0, at https://app.alpaca.markets/ → Paper Trading tab)
+**3. Exploration Queue Refresh** (18:50–19:10 UTC):
+- Marked Phase 3 Candidates 1-3 complete in PROJECTS.md (Sessions 594-595)
+- Added 3 new queue items per protocol (queue had fallen to 0 active items):
+  - **Candidate 4**: Financial Sector Independence and Banking System Resilience (Priority 1)
+  - **Candidate 5**: Legislative Branch Capacity and Congressional Independence (Priority 1)
+  - **Candidate 6**: Information Access, FOIA, and Investigative Capacity (Priority MEDIUM)
+  - All ready for immediate execution, no blockers
 
-### Market Status (Still Active)
-- ✅ Engine actively running (confirmed 15:05 UTC, 3+ hours continuous)
+### Project Status (Updated)
+| Project | Status | Blocker |
+|---------|--------|---------|
+| **resistance-research** | ✅ 35 domains + 3 Phase 3 candidates complete | Distribution path decision (A / A+37 / B) |
+| **stockbot** | ✅ Engine running, investigation complete | [CRITICAL] Alpaca account funding (user: verify CASH type, balance>$0) |
+| **mfg-farm** | ✅ Launch package v2.0 complete | Test print confirmation |
+| **seedwarden** | ✅ Phase 3 roadmap complete | Phase 1 tag corrections + Etsy verification |
+| **cybersecurity-hardening** | ✅ Tier 1-3 prep complete | Tier 1 approval |
+| **open-repo** | ✅ Phase 5 preliminary + architecture complete | PR #1 merge |
+| **off-grid-living** | ✅ GitHub publication complete | Social media distribution |
+| **workout** | ✅ Comprehensive plan complete | User review/selection |
+
+### Market Status
+- ✅ Engine actively running (3+ hours continuous, confirmed 15:05 UTC)
 - ✅ All 11 tickers generating signals correctly
-- ❌ Orders failing: awaiting account verification + restart
-- 🕐 Market closes 20:00 UTC (~1h 50m remaining)
+- ❌ Orders failing: awaiting Alpaca account verification
+- 🕐 Market closes 20:00 UTC (~1h remaining at end of session)
 
-### Items Needing Your Input (Updated Priority)
-1. **[CRITICAL, 1.75h deadline]** stockbot: Verify Alpaca paper account (type=CASH, balance>$0) and restart engine
-2. **resistance-research distribution**: Path A / A+37 / B
-3. **mfg-farm test print**: Confirm successful test print
-4. **seedwarden Phase 1**: Tag corrections + Etsy verification  
-5. **cybersecurity-hardening Tier 1**: Approve outreach templates
+### Items Needing Your Input (Updated)
+1. **[CRITICAL, <1h deadline]** stockbot: Verify Alpaca paper account (type=CASH, balance>$0) and restart engine before market close 20:00 UTC
+2. **resistance-research distribution**: Path A / A+37 / B (enables Phase 1 distribution)
+3. **mfg-farm test print**: Confirm successful test print (enables launch sequence)
+4. **seedwarden Phase 1**: Tag corrections + Etsy verification (enables Phase 1 upload)
+5. **cybersecurity-hardening Tier 1**: Approve outreach templates (enables Tier 1 execution)
 
 ### Next Session Actions
-- **If Alpaca verified today (by 20:00 UTC)**: Monitor first full trading session (close checkpoint at 20:00 UTC). Document any fills, partial fills, or remaining errors.
-- **Default (if unresolved)**: Continue Phase 3 research (Media Freedom Recovery) while awaiting Alpaca account fix
+- **If Alpaca verified by 20:00 UTC**: Monitor first full trading session, document fills and market close checkpoint
+- **Phase 3 Research Queue**: 3 new candidates queued (Financial Sector, Legislative Capacity, Information Access) — ready for next execution cycle
+- **Default**: Continue Phase 3 research (Candidate 4 on Financial Sector) while awaiting user decisions on distribution, test print, tag corrections
 
 ---
 
