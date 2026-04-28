@@ -4,6 +4,32 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 — seedwarden — Zone Quick-Start Card Content Specification
+
+**Deliverable**: `projects/seedwarden/ZONE_QUICKSTART_CARD_SPEC.md` (~3,000 words, production-ready)
+
+**Scope**: Full content specification for the Phase 2 lead magnet — a zone-personalized single-page printable PDF (Canva/PDF) for USDA Zones 3–10. Designed to be handed to a Canva builder or graphic designer.
+
+**Eight sections**:
+1. Conversion rationale — why zone personalization reduces unsubscribe rate and increases perceived value vs. the existing generic 5-variety guide
+2. Format and delivery — 8 individual zone PDFs (Zones 3–10), 8.5×11 portrait, 300 DPI, under 1.5 MB, hosted Google Drive
+3. Layout structure — ASCII mockup of three-column layout (frost dates / quick-start crops / storage tips) + variety spotlight band + footer
+4. Brand and design spec — hex palette from Concept 1 "The Keeper" (logo-concepts.md), zone color band by temperature range, typography spec (Playfair Display + Montserrat), icon set direction
+5. Per-zone content tables — all 8 zones (3–10): frost dates, growing season, example cities, 3 "This Month" April 2026 tasks, 3 quick-start crops with variety specifics, 3 storage/preservation tips, 2–3 variety spotlight entries. Data sourced from zone-seed-starting-calendar.md (Seedwarden's own product).
+6. Email personalization strategy — Kit form dropdown (Zone 3–10), Option A (8 automations) vs. Option B (reply-based manual tagging), welcome Email 1 copy edit
+7. Landing page copy — full headline, subheadline, body, form fields, CTA, below-form trust copy
+8. Production checklist — per-zone 18-item checklist + global 10-item QA checklist + seasonal refresh protocol (30-minute monthly "This Month" update)
+
+**Design decisions**:
+- 8 individual PDFs preferred over one multi-zone document — personalization at the file level, easier to update, stays under 1.5 MB
+- Option B (reply-based zone identification) recommended at launch — simpler Kit form (no dropdown friction), generates subscriber reply which improves deliverability
+- "This Month" block separated as the only seasonally-updated element — all other content (frost dates, variety spotlight, storage tips) is stable and requires no monthly designer involvement
+- Variety selections drawn from zone-seed-starting-calendar.md heirloom/OP variety list, not invented — consistent with existing Seedwarden product data
+
+**Files created**: `projects/seedwarden/ZONE_QUICKSTART_CARD_SPEC.md`
+
+---
+
 ## 2026-04-28 Session 560 (Phase 2 Execution) — seedwarden: Wild-Edibles Photos 18/18 Complete + PDF Verified
 
 **Wild-edibles habit photos**: Added 16/16 remaining species. Task is now 18/18 complete.
