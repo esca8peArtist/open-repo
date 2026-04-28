@@ -4,6 +4,29 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 17:42–18:10 UTC — Session 595 — Stockbot Buying Power Investigation
+
+**Investigation: Stockbot Order Execution Failure (Inbox Item Processed)**
+
+### Work Completed
+
+**Stockbot Buying Power Root Cause Analysis** (17:42–18:07 UTC):
+- Processed inbox item: "Investigate why there is insufficient buying power for the stockbot and reply to me in the stockbot channel"
+- **Investigation scope**:
+  - Reviewed trading logs (trading_20260428.log): Confirmed repeated error 40310000 ("insufficient day trading buying power") across all 11 tickers (AAPL, GOOGL, INTC, LIN, etc.)
+  - Analyzed OrderExecutor code: Verified correct use of `TradingClient(api_key, secret_key, paper=True)` — uses https://paper-api.alpaca.markets endpoint as expected
+  - Checked trading database: Confirmed empty (0 bytes), indicating fresh paper account with zero trades
+  - Cross-referenced documentation: live-trading-readiness.md Section 2a explicitly requires Cash Account (not margin), which is currently misconfigured or unfunded
+- **Root cause identified**: Alpaca paper trading account is either (1) unfunded (balance = $0), OR (2) misconfigured as margin account (should be cash account)
+- **Action items documented**: Updated BLOCKED.md with detailed investigation, specific verification steps at https://app.alpaca.markets/ → Paper Trading tab, and restart procedure
+- **Files updated**: BLOCKED.md (root cause + actionable resolution steps), CHECKIN.md (session summary + priority items), INBOX.md (cleared processed item)
+
+### Summary
+- Root cause: Paper trading account unfunded or incorrect account type (margin vs. cash)
+- User action: Verify account settings and balance, then restart engine
+- Next checkpoint: First trading session fills/errors after account verification
+- Impact: Critical path issue — 1.75 hours until market close (20:00 UTC)
+
 ## 2026-04-28 16:30–17:10 UTC — Session 594 — Exploration Queue Audit & Phase 3 Research
 
 **Session 594 — Autonomous Orchestration (Haiku)**

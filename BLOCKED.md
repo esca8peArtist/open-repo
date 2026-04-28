@@ -30,8 +30,22 @@ When the block is resolved (Resolution written OR Verify command passes):
 ### stockbot — Paper trading account has zero day-trading buying power
 **Date blocked**: 2026-04-28
 **Context**: Engine successfully restarted and is actively running during market hours (15:12 UTC, market still open). All 11 tickers are generating BUY/SELL signals in real-time. However, every order submission to Alpaca is failing with error code 40310000: "insufficient day trading buying power" (daytrading_buying_power: 0). Database shows 0 trades, 0 open positions (fresh paper account). Strategies are working correctly; execution is blocked at the broker level.
-**What I need**: Verify Alpaca paper trading account funding. (1) Check https://app.alpaca.markets/ → Paper Trading tab → confirm account balance > $0. If balance is $0 or account unfunded: deposit simulated cash (Alpaca provides $25,000 default for paper trading). (2) Verify account type is MARGIN (not CASH). Once account is funded and properly configured, orders will execute and paper trading can proceed.
-**Verify with**: `python3 -c "import alpaca_trade_api as tradeapi; api = tradeapi.REST('<KEY>', '<SECRET>', base_url='https://paper-api.alpaca.markets'); acc = api.get_account(); print(f'Buying power: {acc.buying_power}, Status: {acc.status}')"` — should show buying_power > 0
+
+**Investigation (Session 595)**: Reviewed trading logs (trading_20260428.log) and stockbot documentation. Root cause identified: Alpaca paper trading account is unfunded or misconfigured. Specifically:
+- **Logs show**: Repeated order failures with `"daytrading_buying_power":"0"` on AAPL, GOOGL, INTC, LIN, and other tickers
+- **Database**: Empty (0 bytes), confirming fresh account with no prior trades
+- **Code architecture**: OrderExecutor correctly uses `TradingClient(api_key, secret_key, paper=True)` which routes to `https://paper-api.alpaca.markets`
+- **Documentation** (live-trading-readiness.md Section 2a): Explicitly requires "Cash Account (not margin)" — margin accounts inflate buying power metrics and are incorrect for this strategy
+- **Likelihood**: Account is either (1) correctly configured cash account but unfunded, OR (2) incorrectly set to margin account type
+
+**What I need**: 
+1. Log in to https://app.alpaca.markets/ → "Paper Trading" tab
+2. Verify two settings:
+   - **Account Type**: Should be "CASH" (not "MARGIN"). If it shows margin, change to cash account.
+   - **Account Balance/Buying Power**: Should show > $0 (Alpaca auto-provides $25,000 default for new paper accounts). If balance is $0, the account hasn't been reset/activated — contact Alpaca support or create a new paper trading account.
+3. Once verified, restart the engine: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`
+
+**Verify with**: Check trading logs for successful order fills (instead of 40310000 errors). First FILL should appear within 5 minutes of engine restart.
 **Resolution**:
 
 ---

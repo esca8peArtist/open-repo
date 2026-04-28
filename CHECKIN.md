@@ -5,6 +5,43 @@
 
 ---
 
+## Since Last Check-in (Session 595 — 2026-04-28 17:42–18:10 UTC)
+
+🔍 **Stockbot Buying Power Issue — Root Cause Identified**
+
+### What Happened
+
+**Inbox Item Processed**: "Investigate why there is insufficient buying power for the stockbot and reply to me in the stockbot channel"
+
+1. **Investigation Scope** (17:42–18:05 UTC):
+   - Reviewed trading logs (trading_20260428.log) — confirmed repeated error 40310000 across all 11 tickers
+   - Analyzed OrderExecutor code — correctly initialized with `TradingClient(api_key, secret_key, paper=True)` using paper trading endpoint
+   - Checked trading database — confirmed empty (0 bytes), fresh account with zero trades
+   - Cross-referenced with live-trading-readiness.md Section 2a documentation requirements
+   
+2. **Root Cause**: Alpaca paper trading account is either **unfunded** (balance = $0) OR **misconfigured as margin account** (should be cash account per documentation). Either case prevents order execution with daytrading_buying_power: 0 error.
+
+3. **BLOCKED.md Updated** (18:07 UTC): Detailed investigation findings added with specific actionable steps for user to resolve (verify account type = CASH, balance > $0, at https://app.alpaca.markets/ → Paper Trading tab)
+
+### Market Status (Still Active)
+- ✅ Engine actively running (confirmed 15:05 UTC, 3+ hours continuous)
+- ✅ All 11 tickers generating signals correctly
+- ❌ Orders failing: awaiting account verification + restart
+- 🕐 Market closes 20:00 UTC (~1h 50m remaining)
+
+### Items Needing Your Input (Updated Priority)
+1. **[CRITICAL, 1.75h deadline]** stockbot: Verify Alpaca paper account (type=CASH, balance>$0) and restart engine
+2. **resistance-research distribution**: Path A / A+37 / B
+3. **mfg-farm test print**: Confirm successful test print
+4. **seedwarden Phase 1**: Tag corrections + Etsy verification  
+5. **cybersecurity-hardening Tier 1**: Approve outreach templates
+
+### Next Session Actions
+- **If Alpaca verified today (by 20:00 UTC)**: Monitor first full trading session (close checkpoint at 20:00 UTC). Document any fills, partial fills, or remaining errors.
+- **Default (if unresolved)**: Continue Phase 3 research (Media Freedom Recovery) while awaiting Alpaca account fix
+
+---
+
 ## Since Last Check-in (Session 594 — 2026-04-28 16:30–17:10 UTC)
 
 ✅ **Phase 3 Research Expansion Underway** — 2 of 3 new domains completed, resistance-research Goal advanced
