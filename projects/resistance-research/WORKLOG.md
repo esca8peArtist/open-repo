@@ -2,6 +2,57 @@
 
 ---
 
+## April 28, 2026 (General Research Agent) — Phase 3 Candidate 8: Civil Service Hiring and Protections Post-Capture
+
+**Session type**: Phase 3 domain deep-dive — civil service meritocracy, political weaponization, and structural reform pathways
+**Files created**:
+- `projects/resistance-research/domains/phase-3-candidate-8-civil-service-hiring-protections.md` (~9,200 words, 66 sources, production-ready)
+
+### What Was Done
+
+Full Phase 3 candidate research document on civil service hiring protections and post-capture structural reform. Fills the explicit gap in the ACTIVATION_ARCHITECTURE.md Domain 2 framework — which references civil service restoration as a Phase 1 priority but provides only a one-paragraph action row without comparative depth.
+
+**Central finding**: Political weaponization of the civil service is not reversed by electing different officials — it is reversed by building structural protections that survive changes in administration. The international evidence consistently shows that statutory or constitutional protections with automatic enforcement consequences survive authoritarian pressure; convention and norm-based protections do not.
+
+**Current situation documented** (Sections 1.2-1.3):
+- Three-layer capture architecture: DOGE workforce reduction (386,826 departures), reclassification (Schedule Policy/Career + Schedule G), adjudicative body capture (MSPB 2,100% case backlog + *Trump v. Slaughter*)
+- Career SES fell 28% from 8,127 to 5,837 (25-year low); non-career political appointments at 40-year high
+- Schedule Policy/Career (effective March 9, 2026) strips protections from ~50,000 positions
+- Schedule G (July 2025 EO) creates new at-will political appointee category without Senate confirmation
+- 17 IGs fired January 2025; court found illegal but declined to reinstate
+
+**Five comparative case studies** (Section 2):
+- Germany 1949: Article 33(5) Basic Law constitutional protection for Berufsbeamtentum principles — survives five government changes without erosion; negative example of Law 131 (1951) reintegration showing constitutional protection cuts both ways
+- UK: Permanent Secretary dual accountability to minister AND Parliament; Civil Service Commission independence; 2023 Lords Constitution Committee report identifying PM direct appointment authority as structural vulnerability
+- Canada: PSC independent merit authority + PSST adjudicative tribunal under 2003 PSEA; resisted Harper government pressure 2006-2015 through procedural insulation
+- Poland: Tusk government's de-PiSification challenges — purge vs. structural reform tension; merit audit mechanism identified as the missing design element
+- Japan (cautionary): 2014 Cabinet Bureau centralization producing "kantei kanryo" risk-aversion, document alteration (Moritomo/Kake), morale collapse
+
+**Litigation landscape** (Section 3):
+- *Trump v. Slaughter* (argued December 8, 2025): likely to narrow or eliminate *Humphrey's Executor*; direct consequence for MSPB independence
+- *AFGE et al. v. Trump* (Second Amended Complaint, March 4, 2026): statutory definition conflict argument under post-*Loper Bright* independent review
+- IG ecosystem: Judge Reyes ruling + refiring cycle = structural gap requiring Senate confirmation + two-thirds removal requirement
+
+**Four-component statutory reform package** (Section 4):
+1. Saving the Civil Service Act (H.R. 492/S. 134) strengthened: supermajority amendment requirement, private right of action, performance evaluation prohibition
+2. Civil Service Independence Commission Act (new): five-member staggered terms, independent budget, direct congressional accountability
+3. MSPB Reconstruction Act: convert to Article I court, supermajority confirmation, independent litigation authority (no DOJ intermediary)
+4. SES structural reform: reduce non-career cap to 7% with automatic enforcement, prohibit career-reserved conversion, ban "political loyalty" performance criteria
+
+**Merit Restoration Audit mechanism** (Section 4.3): Post-capture recovery tool that distinguishes legitimate political appointments from merit-based career appointments — addresses Poland's de-PiSification design problem.
+
+**International implementation timelines** (Section 5): Germany 10-year reconstruction; South Korea 5-year meritocratization post-1987; Canada 5-year PSEA implementation. Calibrates realistic expectations for US recovery.
+
+**Phase 1-5 implementation roadmap** (Section 6): Non-legislative actions (amicus briefs, MSPB emergency appropriation, documentation), legislative introduction (June-September 2026), institutional rebuilding (2027), constitutional consolidation (2029-2036 civil service article).
+
+**Cross-references** (Section 7): Integration with ACTIVATION_ARCHITECTURE.md Domain 2, Domain 6 (*Slaughter* MSPB implications), Domain 26 (IG ecosystem structural fix), Domain 29 (DOJ capture and MSPB independent litigation authority).
+
+### Research Sources
+
+Primary searches conducted: Schedule Policy/Career litigation; *Trump v. Slaughter* SCOTUS; German Article 33(5) Basic Law; UK permanent secretary system and Lords Constitution Committee 2023 report; Canada PSEA 2003; Poland Tusk de-PiSification; Japan 2014 civil service centralization; MSPB case backlog and Harris firing; Saving the Civil Service Act H.R. 492/S. 134; Schedule G July 2025 EO; Partnership for Public Service SES politicization April 2026 report; DOGE workforce reduction scale and expertise loss; OPM DOGE data access; 17 IG firings and Judge Reyes ruling; AFGE Second Amended Complaint March 2026.
+
+---
+
 ## April 28, 2026 (Session 554) — Phase 3 Candidate 3: Adversary Response Modeling and Resilience Architecture
 
 **Session type**: Phase 3 structural deepening — opposition modeling and resilience architecture
