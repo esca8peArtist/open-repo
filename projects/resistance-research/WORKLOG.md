@@ -2,6 +2,87 @@
 
 ---
 
+## April 28, 2026 (Session 611) — Phase 3 Candidate 5: Legislative Branch Capacity Domain
+
+**Session type**: Primary research and domain document production
+**Task**: Build `domains/domain-legislative-branch-capacity.md` — Phase 3 Candidate 5 on congressional institutional independence and legislative capacity
+
+### Output
+
+**File created**: `projects/resistance-research/domains/domain-legislative-branch-capacity.md` (~9,800 words, 5 main sections + executive summary + 57 sources)
+
+**Key findings and content produced:**
+- Executive Summary: Four structural vulnerabilities framed (staff expertise collapse, support agency assault, procedural capture, oversight obstruction); legislative capacity positioned as prerequisite for all other resistance framework reforms
+- Section 1 (Staffing Expertise Crisis): Quantified CRS/GAO/committee staff declines since 1979 (28-44% reductions); House Republican 49% GAO cut documented in detail ($415.4M proposed vs $828M baseline); OTA defunding and 30-year restoration failure; revolving door 60% spike to 866 transitions in 2025
+- Section 2 (Committee Independence): Rules Committee closed rules at 84% of legislation in first half of 119th Congress; five-month "single legislative day" manipulation to freeze resolution of inquiry clocks; Senate Judiciary Rule 4 subversion; OCC shutdown documented; nuclear option use on nominee confirmations; H.Res.78 on resolution of inquiry rules; seven-member rule chair-approval requirement
+- Section 3 (Legislative Process Protections): Rules Committee as governing instrument; closed rules as default; OBBBA reconciliation procedure analysis; filibuster mechanics and minority protection tension; executive non-compliance pattern (DOGE, ICE access, document refusals, Ways and Means blocked resolutions of inquiry)
+- Section 4 (International Precedent): UK select committee elected chairs model; German Bundestag Wissenschaftliche Dienste (100 staff, 4,300 annual requests) and Enquete-Kommission mechanism; Canadian PBO independence design and self-publication protection; European Parliament EPRS (200+ staff, 85 policy areas) and proportional committee model
+- Section 5 (Recovery Pathways): Six specific reform proposals — Legislative Branch Support Agency Protection Act (mandatory funding floor + Comptroller General standing), Congressional Staff Capacity Restoration Act (mandatory staffing levels + career civil service track + OTA at $75M + revolving door cooling off), Committee Independence and Minority Rights Act (elected chairs + open-rules default + statutory minority day + resolution of inquiry protection + seven-member rule restoration), Oversight Enforcement Reform (Congressional Oversight Officer + automatic civil referral + agency access mandate + 72-hour public disclosure), Ethics Enforcement Independence Act, OTA Restoration Act
+- Section 6: Implementation sequencing; political economy analysis; cross-domain dependency map showing legislative capacity as enabling condition for Domains 34, 35, 26, 19f, 29, 27
+
+### Files Modified
+
+| File | Change | Words Added |
+|------|--------|-------------|
+| `domains/domain-legislative-branch-capacity.md` | Created — Phase 3 Candidate 5 production document | ~9,800 |
+| `WORKLOG.md` | This entry | ~350 |
+
+---
+
+## April 28, 2026 (Session 610) — Tier 1 Outreach Execution Plan (cybersecurity-hardening)
+
+**Session type**: Operational planning document
+**Task**: Create day-by-day outreach execution playbook for cybersecurity-hardening Tier 1 distribution campaign
+
+### Output
+
+**File created**: `projects/cybersecurity-hardening/TIER1_OUTREACH_EXECUTION_PLAN.md` (~4,200 words, 7 sections)
+
+**Key content produced:**
+- Pre-launch checklist: Gist verification procedure, Bitly analytics setup, Gmail label/filter architecture (7 labels), five response template library (R1-Engagement through R5-OOO), tracking spreadsheet schema (15 columns)
+- Day-by-day schedule: Week 1 (Days 1-5, 25 Tier 1A contacts, 7–9 AM EDT send window), Week 2 (Days 8–12, 25 Tier 1B/1C contacts), Week 3 (Days 15–19, remainder + follow-ups), Weeks 4+ (follow-up loop only)
+- Personalization framework: 4-source research stack (website, news, LinkedIn, social) with 8–12 minute time budget, domain-specific personalization notes for legal aid / community / mutual aid / law school audiences, Sunday batch-research method to pre-populate tracking spreadsheet before each week
+- Response handling: Five response classes (Engagement, Acknowledgment, Declination, OOO, Bounce) with Gmail label assignments, escalation paths, prepared answers for five anticipated question types, 24-hour SLA for engagement responses, 10-day interval for follow-ups, hard two-contact-per-org cutoff
+- Tracking and pivot triggers: Daily log protocol, weekly Friday summary table, three pivot triggers with diagnostic steps (sub-10% after Week 1, sub-5% after Week 2, category-specific zero response)
+- Logistics: Gmail template/filter setup, duplicate avoidance, bounce rerouting, Bitly weekly dashboard check, Friday CSV backup
+- Contingency plans: Gmail rate limiting response, spam folder mitigation, hybrid LinkedIn escalation path for top 10 non-responders, phone escalation for five named national orgs, mutual aid channel pivot if institutional outreach underperforms
+
+### Files Modified
+
+| File | Change | Words Added |
+|------|--------|-------------|
+| `projects/cybersecurity-hardening/TIER1_OUTREACH_EXECUTION_PLAN.md` | Created | ~4,200 |
+| `projects/resistance-research/WORKLOG.md` | This entry | ~300 |
+
+---
+
+## April 28, 2026 (Session 609) — Phase 3 Unified Crisis Monitoring Document
+
+**Session type**: Research synthesis and production document creation
+**Task**: Expand Phase 3 Candidate 1 outline into full production document integrating monitoring-infrastructure-2026.md and phase-3-monitoring-infrastructure-2026.md
+
+### Output
+
+**File created**: `projects/resistance-research/phase-3-real-time-crisis-monitoring.md` (~6,400 words, Parts I-VII)
+
+**Key findings and content added:**
+- Part I: Complete 35-domain three-tier monitoring matrix (6 Tier 1 automated domains, 20 Tier 2 human-curated monthly/quarterly, 9 Tier 3 coalition-fed; 24 monthly / 10 quarterly / 3 annual cadence)
+- Part II: Formalized monthly crisis snapshot protocol — 8-section structure, urgency escalation criteria, coalition communication format (Development Alerts vs. Monthly Current Alerts excerpt)
+- Part III: Six pre-designed contingency decision trees covering all major 2026 decision points: Iran WPR (May), Slaughter (June), 2026 Midterms (November), Medicaid work requirements (January 2027), CISA defunding (September-December), FISA 702 lapse (May); each with 2-3 outcome branches and specific domain-level + roadmap adaptations
+- Part IV: Coalition feedback intake process, domain prioritization logic by contact tier, feedback solicitation cadence
+- Part V: Publication vs. coalition-internal data guidance; authority maintenance mechanism
+- Part VI: Five specific integration points between real-time monitoring and the three-wave implementation roadmap (monthly assumption checks, election trigger pre-planning, domain vs. roadmap update thresholds, structural refresh timing, revision cycle)
+- Part VII: Technical automation specs — what is fully automatable vs. requires human review; tool inventory with costs; dashboard recommendation (Markdown file or Airtable free tier; no custom build required)
+
+### Files Modified
+
+| File | Change | Words Added |
+|------|--------|-------------|
+| `phase-3-real-time-crisis-monitoring.md` | Created — unified production document | ~6,400 |
+| `WORKLOG.md` | This entry | ~300 |
+
+---
+
 ## April 28, 2026 (Session 608) — Domain Content Maintenance: Research Integrity Correction + Domain 01 Section 7
 
 **Session type**: Domain content maintenance audit + research integrity correction
