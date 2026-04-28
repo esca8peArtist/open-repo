@@ -294,3 +294,55 @@ Sources: [Spectrum Local News: House set to vote this week on FISA (April 27, 20
 
 *Section 6 added: April 28, 2026 (current session)*
 *Key new data: BISC tracker documents 155 bills in 31 states and DC (as of March 30) — significantly more than the 100+ in 15+ figure; six-state supermajority push (OK, AZ, MO, ND, SD, ID) includes direct collision with Arizona voting rights initiative; FISA April 30 hard deadline with three-year-no-warrant-amendment proposal as likeliest outcome; warrant protections absent = election organizer surveillance window remains open; BISC characterizes restriction pattern as "systematic, institutionalized, and forward-looking" — not reactive to individual campaigns.*
+
+---
+
+## Section 7: April 28, 2026 — FISA April 30 Outcome: Pre-Vote Assessment and Post-Vote Fill-In Framework
+
+**Updated**: April 28, 2026 (Session 608 — correcting prior session's research error)
+
+### 7.1 Research Integrity Correction: Why This Section Exists
+
+A prior session (Session 573) recorded a "confirmed" FISA Section 702 outcome in surveillance-tracking.md — specifically a 60-34 Senate vote, brief midnight technical lapse, and two-year extension without warrant requirements. Session 608 research verification determined that this "confirmed outcome" was in fact the **2024 RISAA reauthorization** (Reforming Intelligence and Securing America Act, Senate vote April 20, 2024), not a 2026 event. The 2026 April 30 deadline vote has not yet occurred as of April 28, 2026. This section documents the accurate pre-vote status and provides the analytical framework for what the outcome means for Domain 1 regardless of which scenario materializes.
+
+### 7.2 The April 30 Decision and Its Electoral Security Implications
+
+As of April 28, the most that can be confirmed about the 2026 FISA situation is this: Congress has been unable to pass a long-term Section 702 reauthorization through four attempts (five-year, 18-month proposals on April 17 plus two procedural failures). It passed a 10-day extension through April 30. The House Rules Committee failed on April 28 to advance Speaker Johnson's three-year Foreign Intelligence Accountability Act. The April 30 deadline arrives with the outcome genuinely uncertain. Four scenarios remain plausible in approximately descending order of probability following the April 28 Rules Committee collapse:
+
+**Scenario 1 — Further emergency stopgap**: Another 5-10 day extension passes by unanimous consent. The warrant-reform coalition retains leverage temporarily but faces escalating "national security emergency" framing with each successive punt. This is operationally the best-case for election organizers in the near term: surveillance authority continues but the reform window stays open.
+
+**Scenario 2 — Three-year extension without warrant requirement**: Johnson's Foreign Intelligence Accountability Act passes in some form, no warrant protection, commercial data broker loophole still open. This is the worst-case scenario for ballot initiative campaign organizers who communicate with foreign counterparts: Section 702 backdoor search authority extends to approximately 2029 with no protection for U.S. persons swept in incidentally.
+
+**Scenario 3 — Brief lapse then emergency action**: Section 702 technically expires; NSA shifts collection to Executive Order 12333 (no statutory expiration, no FISC oversight, no congressional reporting requirements); intelligence community declares emergency; Congress passes a stopgap within days under national security pressure. This is worse than Scenario 2 for civil liberties because EO 12333 operates entirely outside the statutory framework that FISC supervises.
+
+**Scenario 4 — Warrant amendment included**: Cross-aisle coalition (privacy-focused Republicans plus Democrats) forces warrant requirement into final bill. This would be the first meaningful FISA reform since 2015's USA FREEDOM Act. It is the least likely outcome but remains structurally possible as long as the House Freedom Caucus bloc holds.
+
+### 7.3 Domain 1 Operational Implications by Scenario
+
+The FISA outcome matters for voting rights and ballot initiative work because Section 702 "backdoor searches" — where the FBI queries a U.S. person's communications incidentally collected while targeting a foreign national — do not require a warrant and have been used to surveil political organizers, journalists, and election workers. The specific Domain 1 implications:
+
+**If no warrant requirement (Scenarios 2 or 3)**: Any ballot initiative campaign organizer, voting rights litigator, or election protection lawyer who communicates with foreign-linked funders, international democracy monitors, or foreign journalists should treat their communications as potentially within the Section 702 collection scope. This is not theoretical: the FISA Court's 2022 compliance opinion documented FBI agents conducting warrantless Section 702 searches on civil rights protesters, a sitting U.S. senator, and a state legislator. The structural risk extends through the new expiration date.
+
+**If warrant requirement included (Scenario 4)**: FBI queries targeting U.S. persons' Section 702-collected communications would require individual judicial approval. This does not eliminate the risk entirely (EO 12333 remains; NSL letters remain; the commercial data broker loophole is unaffected by FISA warrant requirements) but substantially raises the legal threshold for warrantless searches of organizers' communications.
+
+**The commercial data broker loophole applies regardless of FISA outcome**: The Venntel/Babel Street/Accurint commercial location data pathway documented in surveillance-tracking.md operates entirely outside FISA. Any FISA reauthorization that does not explicitly prohibit law enforcement purchase of commercial location data leaves the primary surveillance vector for ballot initiative organizers — their physical locations as captured by mobile advertising data — completely unconstrained. EFF has confirmed that no pending 2026 proposal closes this loophole.
+
+### 7.4 Fill-In Checklist: Post-April 30 Outcome
+
+This checklist should be completed once the April 29-30 vote outcome is known:
+
+- [ ] Vote result (Passed / Failed / Lapsed / Further stopgap): _____
+- [ ] Final bill name and extension duration: _____
+- [ ] Warrant requirement for U.S. person queries: _____ (Included / Excluded)
+- [ ] Commercial data broker loophole: _____ (Closed / Still Open)
+- [ ] New expiration date: _____
+- [ ] SAVE Act attachment status: _____ (Included / Excluded / N/A)
+- [ ] Election organizer surveillance implication (update Section 7.3 accordingly): _____
+
+Sources: [The Hill: House Republicans face FISA challenges (April 28, 2026)](https://thehill.com/homenews/house/5848368-house-republicans-fisa-section-702-reconciliation/); [EFF: Congress Must Reject New Insufficient 702 Reauthorization Bill (April 28, 2026)](https://www.eff.org/deeplinks/2026/04/congress-must-reject-new-insufficient-702-reauthorization-bill); [Just Security: Johnson Section 702 proposal — no limits on backdoor searches](https://www.justsecurity.org/137206/johnson-section-702-warrant/); [Brennan Center: Section 702 FISA 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page); [State of Surveillance: 98 House Democrats make 702's future more uncertain](https://stateofsurveillance.org/news/congressional-progressive-caucus-fisa-702-opposition-98-democrats-2026/); [FISC 2022 Compliance Opinion — warrantless searches of civil rights protesters and elected officials](https://www.odni.gov/files/CLPT/documents/2023-ASTR-Statistical-Transparency-Report.pdf)
+
+---
+
+*Section 7 added: April 28, 2026 (Session 608 — Domain Content Maintenance)*
+*Purpose: Corrects prior session research error (Session 573 conflated 2024 RISAA outcome with projected 2026 outcome); documents accurate April 28 pre-vote status; provides four-scenario framework for electoral security implications; fill-in checklist ready for post-April 30 completion*
+*Cross-reference: surveillance-tracking.md Post-Deadline Update (corrected to pending status, same session)*

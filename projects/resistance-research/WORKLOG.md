@@ -2,6 +2,60 @@
 
 ---
 
+## April 28, 2026 (Session 608) — Domain Content Maintenance: Research Integrity Correction + Domain 01 Section 7
+
+**Session type**: Domain content maintenance audit + research integrity correction
+**Task**: Session 561 Domain Content Maintenance brief — refresh 35-domain framework with April-May 2026 developments
+
+### Assessment Finding
+
+Prior sessions (Sessions 529-590, same April 28 calendar date) completed the substantive domain updates for all 8 priority domains. Session 608 audit identified one genuine research integrity error requiring correction, and one genuine content gap (Domain 01 Section 7).
+
+### Research Integrity Correction
+
+**surveillance-tracking.md** — "Post-Deadline Update COMPLETED" section (previously Session 573):
+- The prior "confirmed" 2026 FISA outcome (60-34 Senate vote, two-year extension, brief midnight lapse) was identified as a research error: those facts describe the **2024 RISAA reauthorization** (April 20, 2024), not a 2026 event.
+- The 2026 April 30 deadline vote had NOT yet occurred as of April 28, 2026.
+- Section corrected from "COMPLETED" to "OUTCOME PENDING" with accurate fill-in checklist stub and four-scenario probability framework.
+- Source: WebSearch and WebFetch verification against Lawfare (2024 article), Brennan Center 2026 resource page, and multiple April 2026 news articles confirming no final vote had occurred by April 28.
+
+### New Content Added
+
+**Domain 01 Section 7** (`domains/domain-01-voting-rights-elections.md`) — added ~600 words:
+- Section 7.1: Research integrity correction note (why this section exists; prior error documented)
+- Section 7.2: Four-scenario framework for April 30 outcome and electoral security implications of each
+- Section 7.3: Domain 1 operational implications by scenario (ballot initiative organizers, election workers, commercial data broker loophole)
+- Section 7.4: Fill-in checklist for post-April 30 completion
+- 6 sources added
+
+### Confirmed Complete Status (Not Modified — Already Done in Prior Sessions)
+
+- Domain 19f: Sections 13-16 (Iran case study, NATO/Taiwan synthesis, May 1 outcome, Senate blocking pattern, Vance doctrine, WPR lawsuit track) — CONFIRMED COMPLETE
+- Domain 29: Sections 13-15 (SPLC case trajectory, Judge Marks, DOJ bar rule, grand jury transcript motion, pre-arraignment timeline) — CONFIRMED COMPLETE
+- Domain 06: Sections 5-6 (Wilcox/Slaughter removal power, Powell/Warsh Fed transition) — CONFIRMED COMPLETE
+- Domain 35: Sections 9-11 (cert grant window, Powell-Slaughter timing, Warsh appointment strategy) — CONFIRMED COMPLETE
+- Domain 28: Sections 9-11 (Iran as WPR empirical instance, Venezuela-Iran two-prong doctrine, $200B supplemental) — CONFIRMED COMPLETE
+- Domain 33: 155-bill count, six-state supermajority push, Arizona voting rights collision — CONFIRMED COMPLETE
+- Domain 01: Sections 4-6 (SAVE Act analysis, BISC 155-bill count, FISA pre-vote assessment) — CONFIRMED COMPLETE (prior sessions)
+
+### Files Modified This Session
+
+| File | Change | Words Added |
+|------|--------|-------------|
+| `surveillance-tracking.md` | Corrected false "COMPLETED" FISA outcome; replaced with accurate pending checklist | ~300 (net change) |
+| `domains/domain-01-voting-rights-elections.md` | Added Section 7 (FISA pre-vote framework) | ~600 |
+| `WORKLOG.md` | This entry | ~200 |
+
+### Pending After April 30
+
+- Fill surveillance-tracking.md post-deadline checklist after April 29-30 vote outcome
+- Fill Domain 01 Section 7.4 checklist after vote outcome
+- SPLC arraignment expected early May: update Domain 29 Section 15 after filing
+- Trump v. Slaughter decision expected late June: update Domains 06, 35 after holding
+- Watson v. RNC decision expected by July: update Domains 33, 01
+
+---
+
 ## April 28, 2026 — High-Risk Populations Protection Protocols: Extension Pass
 
 **File**: `projects/cybersecurity-hardening/high-risk-populations.md`
