@@ -1,0 +1,711 @@
+{
+  "project": "ModRun Cable Management System",
+  "launch_date": "2026-04-28",
+  "execution_status": "ready-for-post-test-print",
+  "phases": [
+    {
+      "phase": "pre-launch",
+      "week": 1,
+      "timeline": "Week of April 28 - May 4, 2026",
+      "description": "Etsy store setup, supplier outreach, inventory printing",
+      "owner": "user",
+      "tasks": [
+        {
+          "task_id": "pre-001",
+          "task": "Business registration (LLC or sole proprietor)",
+          "status": "pending",
+          "deadline": "2026-04-30",
+          "priority": "critical",
+          "time_estimate_minutes": 120,
+          "dependencies": [],
+          "success_criteria": "Business entity registered, EIN obtained (if LLC)"
+        },
+        {
+          "task_id": "pre-002",
+          "task": "Product liability insurance activated",
+          "status": "pending",
+          "deadline": "2026-04-30",
+          "priority": "critical",
+          "time_estimate_minutes": 60,
+          "dependencies": ["pre-001"],
+          "success_criteria": "Insurance policy active, certificate received"
+        },
+        {
+          "task_id": "pre-003",
+          "task": "Create Etsy shop account (shop name, location, hours)",
+          "status": "pending",
+          "deadline": "2026-05-01",
+          "priority": "critical",
+          "time_estimate_minutes": 30,
+          "dependencies": [],
+          "success_criteria": "Shop created, settings saved, name locked in"
+        },
+        {
+          "task_id": "pre-004",
+          "task": "Connect bank account to Etsy payments",
+          "status": "pending",
+          "deadline": "2026-05-01",
+          "priority": "critical",
+          "time_estimate_minutes": 15,
+          "dependencies": ["pre-001", "pre-003"],
+          "success_criteria": "Bank account linked, verification deposits pending (2-3 days)"
+        },
+        {
+          "task_id": "pre-005",
+          "task": "Submit tax identification form (W-9 or EIN)",
+          "status": "pending",
+          "deadline": "2026-05-01",
+          "priority": "critical",
+          "time_estimate_minutes": 10,
+          "dependencies": ["pre-001"],
+          "success_criteria": "Tax ID submitted in Etsy system, form complete"
+        },
+        {
+          "task_id": "pre-006",
+          "task": "Create shipping profiles (USPS Ground Advantage, Priority Mail optional)",
+          "status": "pending",
+          "deadline": "2026-05-01",
+          "priority": "critical",
+          "time_estimate_minutes": 20,
+          "dependencies": ["pre-003"],
+          "success_criteria": "Profiles created, zone rates verified, test checkout works"
+        },
+        {
+          "task_id": "pre-007",
+          "task": "Configure return policy (30-day satisfaction guarantee)",
+          "status": "pending",
+          "deadline": "2026-05-01",
+          "priority": "high",
+          "time_estimate_minutes": 10,
+          "dependencies": ["pre-003"],
+          "success_criteria": "Return policy active, seller pays for returns enabled"
+        },
+        {
+          "task_id": "pre-008",
+          "task": "Create policy pages (About, Terms, Privacy, Return policy)",
+          "status": "pending",
+          "deadline": "2026-05-01",
+          "priority": "high",
+          "time_estimate_minutes": 45,
+          "dependencies": ["pre-003"],
+          "success_criteria": "All policy pages published, terms legally sound"
+        },
+        {
+          "task_id": "pre-009",
+          "task": "Upload shop banner and profile image",
+          "status": "pending",
+          "deadline": "2026-05-01",
+          "priority": "medium",
+          "time_estimate_minutes": 20,
+          "dependencies": ["pre-003"],
+          "success_criteria": "Banner visible on shop, professional appearance"
+        },
+        {
+          "task_id": "pre-010",
+          "task": "Product photography (5 photos per SKU minimum)",
+          "status": "pending",
+          "deadline": "2026-05-02",
+          "priority": "critical",
+          "time_estimate_minutes": 180,
+          "dependencies": [],
+          "success_criteria": "5 photos per product, 2048x2048px, hero + context + detail shots"
+        },
+        {
+          "task_id": "pre-011",
+          "task": "Write product descriptions (5 listings, 2000+ characters each)",
+          "status": "pending",
+          "deadline": "2026-05-02",
+          "priority": "critical",
+          "time_estimate_minutes": 120,
+          "dependencies": ["pre-010"],
+          "success_criteria": "All 5 product descriptions drafted, SEO-optimized, warranty info included"
+        },
+        {
+          "task_id": "pre-012",
+          "task": "Research and assign product tags (13 tags per listing, eRank verification)",
+          "status": "pending",
+          "deadline": "2026-05-02",
+          "priority": "high",
+          "time_estimate_minutes": 75,
+          "dependencies": ["pre-011"],
+          "success_criteria": "All tags verified via eRank, 10K+ monthly search volume, <5K listings"
+        },
+        {
+          "task_id": "pre-013",
+          "task": "Set pricing for 5 SKUs (verify ≥60% gross margin)",
+          "status": "pending",
+          "deadline": "2026-05-02",
+          "priority": "critical",
+          "time_estimate_minutes": 20,
+          "dependencies": [],
+          "success_criteria": "Pricing set, margin calculation confirmed, competitive positioning verified"
+        },
+        {
+          "task_id": "pre-014",
+          "task": "Initial inventory printing (40-50 units mixed SKUs)",
+          "status": "pending",
+          "deadline": "2026-05-03",
+          "priority": "critical",
+          "time_estimate_minutes": 480,
+          "dependencies": [],
+          "success_criteria": "40-50 units printed, QC passed, organized by SKU"
+        },
+        {
+          "task_id": "pre-015",
+          "task": "Organize STL files for GitHub upload (folder structure, README, license)",
+          "status": "pending",
+          "deadline": "2026-05-02",
+          "priority": "high",
+          "time_estimate_minutes": 45,
+          "dependencies": [],
+          "success_criteria": "STL files organized, README.md complete, CC-BY-NC license applied"
+        },
+        {
+          "task_id": "pre-016",
+          "task": "Send eSUN wholesale inquiry (supplier-negotiation-playbook.md)",
+          "status": "pending",
+          "deadline": "2026-05-02",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": [],
+          "success_criteria": "Email sent to eSUN wholesale contact, realistic volume stated, awaiting response"
+        },
+        {
+          "task_id": "pre-017",
+          "task": "Pre-qualify Anycubic 50kg pallet order (verify pricing and availability)",
+          "status": "pending",
+          "deadline": "2026-05-02",
+          "priority": "high",
+          "time_estimate_minutes": 20,
+          "dependencies": [],
+          "success_criteria": "Anycubic contacted, 50kg pallet availability confirmed, $10.49/kg verified"
+        }
+      ]
+    },
+    {
+      "phase": "launch",
+      "week": 2,
+      "timeline": "Week of May 5 - May 11, 2026",
+      "description": "Product listing upload, Etsy shop launch, first 100 units printed",
+      "owner": "user",
+      "tasks": [
+        {
+          "task_id": "launch-001",
+          "task": "Upload 5 product listings to Etsy (draft status)",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "critical",
+          "time_estimate_minutes": 240,
+          "dependencies": ["pre-010", "pre-011", "pre-012", "pre-013"],
+          "success_criteria": "All 5 listings in draft status, photos uploaded, pricing set, tags assigned"
+        },
+        {
+          "task_id": "launch-002",
+          "task": "Final review of all listings (pricing, description, photos, tags)",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "critical",
+          "time_estimate_minutes": 45,
+          "dependencies": ["launch-001"],
+          "success_criteria": "All listings reviewed, no spelling errors, prices verified, photos optimized"
+        },
+        {
+          "task_id": "launch-003",
+          "task": "Publish all 5 listings simultaneously (make live on Etsy)",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "critical",
+          "time_estimate_minutes": 5,
+          "dependencies": ["launch-002"],
+          "success_criteria": "All 5 listings live on Etsy shop, search results confirm visibility"
+        },
+        {
+          "task_id": "launch-004",
+          "task": "Verify shop is live (search for ModRun in Etsy, confirm all products visible)",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "critical",
+          "time_estimate_minutes": 10,
+          "dependencies": ["launch-003"],
+          "success_criteria": "Shop appears in Etsy search, all 5 products visible, images load correctly"
+        },
+        {
+          "task_id": "launch-005",
+          "task": "Test purchase flow (add item to cart, verify checkout process)",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "high",
+          "time_estimate_minutes": 15,
+          "dependencies": ["launch-003"],
+          "success_criteria": "Can add item to cart, shipping calculates correctly, payment flow works"
+        },
+        {
+          "task_id": "launch-006",
+          "task": "Announce launch on social media or email (if applicable)",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "medium",
+          "time_estimate_minutes": 30,
+          "dependencies": ["launch-004"],
+          "success_criteria": "Launch announcement posted, Etsy shop URL shared"
+        },
+        {
+          "task_id": "launch-007",
+          "task": "Print first 100 units for launch inventory (priority: all SKUs represented)",
+          "status": "pending",
+          "deadline": "2026-05-07",
+          "priority": "critical",
+          "time_estimate_minutes": 720,
+          "dependencies": [],
+          "success_criteria": "100 units printed, QC passed, organized by SKU, ready for order fulfillment"
+        },
+        {
+          "task_id": "launch-008",
+          "task": "Set up Pirate Ship account for USPS label printing",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "high",
+          "time_estimate_minutes": 20,
+          "dependencies": [],
+          "success_criteria": "Account created, payment method on file, test label generation works"
+        },
+        {
+          "task_id": "launch-009",
+          "task": "Create print queue tracking spreadsheet (Google Sheets or paper log)",
+          "status": "pending",
+          "deadline": "2026-05-05",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": [],
+          "success_criteria": "Spreadsheet ready, columns defined (Order ID, Product, Status, Print time, etc.)"
+        },
+        {
+          "task_id": "launch-010",
+          "task": "Monitor shop for first 24 hours (check messages, address technical issues)",
+          "status": "pending",
+          "deadline": "2026-05-06",
+          "priority": "high",
+          "time_estimate_minutes": 120,
+          "dependencies": ["launch-004", "launch-005"],
+          "success_criteria": "No critical errors, customer messages responded to, technical issues resolved"
+        }
+      ]
+    },
+    {
+      "phase": "post-launch-monitoring",
+      "week": "3-4",
+      "timeline": "Week of May 12 - May 25, 2026",
+      "description": "Track KPIs, fulfill orders, validate fulfillment workflow, prepare scaling decision",
+      "owner": "user",
+      "tasks": [
+        {
+          "task_id": "monitor-001",
+          "task": "Daily: Check Etsy orders and add to print queue",
+          "status": "pending",
+          "deadline": "ongoing",
+          "priority": "critical",
+          "time_estimate_minutes": 15,
+          "dependencies": ["launch-009"],
+          "success_criteria": "Orders added to queue same-day, print jobs started next morning"
+        },
+        {
+          "task_id": "monitor-002",
+          "task": "Daily: Print, finish, and ship orders (2-business-day promise)",
+          "status": "pending",
+          "deadline": "ongoing",
+          "priority": "critical",
+          "time_estimate_minutes": 240,
+          "dependencies": ["launch-007"],
+          "success_criteria": "All orders shipped within 2 business days, no delays, tracking provided"
+        },
+        {
+          "task_id": "monitor-003",
+          "task": "Weekly: Review shop analytics (traffic, conversion rate, top products)",
+          "status": "pending",
+          "deadline": "2026-05-12",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": ["launch-004"],
+          "success_criteria": "Traffic data collected, conversion rate calculated (target: 0.5-2%), top products identified"
+        },
+        {
+          "task_id": "monitor-004",
+          "task": "Weekly: Review customer messages and respond within 24 hours",
+          "status": "pending",
+          "deadline": "ongoing",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": [],
+          "success_criteria": "All customer inquiries answered, response time <24 hours"
+        },
+        {
+          "task_id": "monitor-005",
+          "task": "Weekly: Track print success rate (target: ≥97%)",
+          "status": "pending",
+          "deadline": "2026-05-12",
+          "priority": "high",
+          "time_estimate_minutes": 15,
+          "dependencies": ["launch-009"],
+          "success_criteria": "Failed print rate logged, <3% rejection acceptable, investigate if >5%"
+        },
+        {
+          "task_id": "monitor-006",
+          "task": "Validate fulfillment workflow (meets 2-day promise, quality, shipping)",
+          "status": "pending",
+          "deadline": "2026-05-15",
+          "priority": "high",
+          "time_estimate_minutes": 60,
+          "dependencies": ["monitor-001", "monitor-002"],
+          "success_criteria": "Workflow documented, 2-day promise consistently met, zero shipping complaints"
+        },
+        {
+          "task_id": "monitor-007",
+          "task": "Track received orders via customer feedback (check Etsy reviews, messages)",
+          "status": "pending",
+          "deadline": "2026-05-20",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": ["monitor-004"],
+          "success_criteria": "Customer feedback collected, first reviews appearing, sentiment positive"
+        },
+        {
+          "task_id": "monitor-008",
+          "task": "End-of-week: Reorder inventory (reprint SKUs below 7-day supply trigger)",
+          "status": "pending",
+          "deadline": "2026-05-10",
+          "priority": "high",
+          "time_estimate_minutes": 60,
+          "dependencies": ["monitor-001"],
+          "success_criteria": "Inventory levels maintained, reorder triggers documented, no stockouts"
+        },
+        {
+          "task_id": "monitor-009",
+          "task": "Track return rate (target: <5%)",
+          "status": "pending",
+          "deadline": "2026-05-20",
+          "priority": "high",
+          "time_estimate_minutes": 15,
+          "dependencies": ["monitor-004"],
+          "success_criteria": "Return rate tracked, <5% acceptable, root cause documented if >5%"
+        },
+        {
+          "task_id": "monitor-010",
+          "task": "Mid-month: Analyze supplier responses (eSUN, Anycubic)",
+          "status": "pending",
+          "deadline": "2026-05-15",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": ["pre-016", "pre-017"],
+          "success_criteria": "Supplier responses received or follow-up sent, negotiation terms clarified"
+        }
+      ]
+    },
+    {
+      "phase": "month-1-analysis",
+      "week": "4-5",
+      "timeline": "Week of May 19 - May 30, 2026",
+      "description": "Month 1 wrap-up, analyze metrics, validate assumptions, plan Month 2 scaling",
+      "owner": "user",
+      "tasks": [
+        {
+          "task_id": "analysis-001",
+          "task": "Month 1 KPI Summary: units sold, revenue, COGS, margin, reviews, return rate",
+          "status": "pending",
+          "deadline": "2026-05-31",
+          "priority": "critical",
+          "time_estimate_minutes": 60,
+          "dependencies": ["monitor-001", "monitor-003", "monitor-005"],
+          "success_criteria": "All KPIs summarized: 5-10 sales expected, margin ≥60%, reviews >2, return rate <5%"
+        },
+        {
+          "task_id": "analysis-002",
+          "task": "Validate fulfillment workflow (actual vs. projected timelines, issues identified)",
+          "status": "pending",
+          "deadline": "2026-05-31",
+          "priority": "high",
+          "time_estimate_minutes": 45,
+          "dependencies": ["monitor-006"],
+          "success_criteria": "Workflow validated, 2-day promise met consistently, efficiency measured"
+        },
+        {
+          "task_id": "analysis-003",
+          "task": "Validate COGS actuals vs. projections (material costs, supplier pricing, labor)",
+          "status": "pending",
+          "deadline": "2026-05-31",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": [],
+          "success_criteria": "Actual COGS within ±10% of projections, margin targets confirmed or adjusted"
+        },
+        {
+          "task_id": "analysis-004",
+          "task": "Review product feedback (Etsy reviews, customer messages, quality issues)",
+          "status": "pending",
+          "deadline": "2026-05-31",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": ["monitor-004", "monitor-007"],
+          "success_criteria": "Customer feedback summarized, design strengths/weaknesses identified, improvements planned"
+        },
+        {
+          "task_id": "analysis-005",
+          "task": "Finalize supplier partnership (commit to eSUN wholesale or Anycubic pallet if Month 2 demand supports)",
+          "status": "pending",
+          "deadline": "2026-05-31",
+          "priority": "high",
+          "time_estimate_minutes": 60,
+          "dependencies": ["pre-016", "pre-017", "analysis-001"],
+          "success_criteria": "Supplier locked in (wholesale pricing agreed), first Month 2 order placed"
+        },
+        {
+          "task_id": "analysis-006",
+          "task": "Month 2 scaling decision: Add second printer? Expand inventory? Adjust pricing?",
+          "status": "pending",
+          "deadline": "2026-05-31",
+          "priority": "high",
+          "time_estimate_minutes": 45,
+          "dependencies": ["analysis-001"],
+          "success_criteria": "Scaling decision documented, Month 2 operational plan finalized, resource allocation planned"
+        },
+        {
+          "task_id": "analysis-007",
+          "task": "Document Month 1 learnings (print failures, shipping issues, customer preferences, optimization ideas)",
+          "status": "pending",
+          "deadline": "2026-05-31",
+          "priority": "medium",
+          "time_estimate_minutes": 30,
+          "dependencies": ["analysis-001", "analysis-004"],
+          "success_criteria": "Learnings documented, process improvements identified, Month 2 adjustments planned"
+        }
+      ]
+    },
+    {
+      "phase": "month-2-scaling",
+      "week": "1-4",
+      "timeline": "June 2026",
+      "description": "Execute scaling based on Month 1 results: expand inventory, optimize workflow, track growth",
+      "owner": "user",
+      "tasks": [
+        {
+          "task_id": "scale-001",
+          "task": "Activate supplier partnership (receive first wholesale filament order)",
+          "status": "pending",
+          "deadline": "2026-06-07",
+          "priority": "critical",
+          "time_estimate_minutes": 30,
+          "dependencies": ["analysis-005"],
+          "success_criteria": "First wholesale filament order received, quality validated, COGS reduction confirmed"
+        },
+        {
+          "task_id": "scale-002",
+          "task": "Scale inventory printing (target: 50-100 units/month based on Month 1 sales)",
+          "status": "pending",
+          "deadline": "2026-06-15",
+          "priority": "critical",
+          "time_estimate_minutes": 480,
+          "dependencies": ["scale-001"],
+          "success_criteria": "50-100 units printed, organized by SKU, quality consistent, fulfillment capacity validated"
+        },
+        {
+          "task_id": "scale-003",
+          "task": "Optimize print queue (batch printing, color change efficiency, per-day throughput)",
+          "status": "pending",
+          "deadline": "2026-06-10",
+          "priority": "high",
+          "time_estimate_minutes": 60,
+          "dependencies": ["analysis-002"],
+          "success_criteria": "Print queue optimized, throughput improved to 15+ units/day, efficiency measured"
+        },
+        {
+          "task_id": "scale-004",
+          "task": "Month 2 KPI tracking (convert rate, units sold, revenue, margin, reviews)",
+          "status": "pending",
+          "deadline": "ongoing",
+          "priority": "high",
+          "time_estimate_minutes": 30,
+          "dependencies": ["scale-001"],
+          "success_criteria": "Month 2 target: 15-25 sales, $300-600 revenue, 5+ reviews, margin ≥60%"
+        },
+        {
+          "task_id": "scale-005",
+          "task": "Evaluate second printer addition (if Month 2 velocity justifies 100+ units/month capacity)",
+          "status": "pending",
+          "deadline": "2026-06-30",
+          "priority": "high",
+          "time_estimate_minutes": 90,
+          "dependencies": ["scale-004"],
+          "success_criteria": "Decision made: proceed with printer 2 (if 100+ units/month demand), or continue single printer"
+        },
+        {
+          "task_id": "scale-006",
+          "task": "Explore adjacent products (if primary sales solid, research Phase 3 candidates per ITEM9)",
+          "status": "pending",
+          "deadline": "2026-06-30",
+          "priority": "medium",
+          "time_estimate_minutes": 120,
+          "dependencies": ["scale-004"],
+          "success_criteria": "Phase 3 product candidates identified (desk accessories, premium bundles, etc.), design roadmap started"
+        }
+      ]
+    },
+    {
+      "phase": "success-criteria",
+      "week": "post-month-2",
+      "timeline": "July 2026+",
+      "description": "Success metrics for launch phase completion",
+      "owner": "system",
+      "success_metrics": [
+        {
+          "metric": "Month 1 Unit Sales",
+          "target": "5-10 units",
+          "acceptable_range": "3-15 units",
+          "status": "pending",
+          "measurement": "Etsy order count"
+        },
+        {
+          "metric": "Month 2 Unit Sales",
+          "target": "15-25 units",
+          "acceptable_range": "10-40 units",
+          "status": "pending",
+          "measurement": "Etsy order count"
+        },
+        {
+          "metric": "Gross Margin (all SKUs average)",
+          "target": "≥60%",
+          "acceptable_range": "≥55%",
+          "status": "pending",
+          "measurement": "Revenue - COGS / Revenue"
+        },
+        {
+          "metric": "Fulfillment Speed (average days to ship)",
+          "target": "<2 days",
+          "acceptable_range": "<3 days",
+          "status": "pending",
+          "measurement": "Etsy fulfillment tracking"
+        },
+        {
+          "metric": "Return Rate",
+          "target": "<5%",
+          "acceptable_range": "<7%",
+          "status": "pending",
+          "measurement": "Returned orders / Total orders"
+        },
+        {
+          "metric": "Customer Reviews (by end Month 2)",
+          "target": "≥15 reviews",
+          "acceptable_range": "≥10 reviews",
+          "status": "pending",
+          "measurement": "Etsy review count"
+        },
+        {
+          "metric": "Average Rating (reviews)",
+          "target": "≥4.5 stars",
+          "acceptable_range": "≥4.0 stars",
+          "status": "pending",
+          "measurement": "Etsy average star rating"
+        },
+        {
+          "metric": "Print Success Rate",
+          "target": "≥97%",
+          "acceptable_range": "≥95%",
+          "status": "pending",
+          "measurement": "Successful prints / Total print jobs"
+        },
+        {
+          "metric": "Repeat Customer Rate (Month 2+)",
+          "target": ">10%",
+          "acceptable_range": ">5%",
+          "status": "pending",
+          "measurement": "Repeat customers / Total customers"
+        },
+        {
+          "metric": "Supplier Negotiation Complete",
+          "target": "Primary supplier locked in at ≤$12/kg",
+          "acceptable_range": "Primary + backup secured, ≤$13/kg",
+          "status": "pending",
+          "measurement": "Supplier contract signed or email confirmation"
+        }
+      ]
+    }
+  ],
+  "risk_mitigation": [
+    {
+      "risk": "Low Month 1 sales (fewer than 3 units)",
+      "impact": "high",
+      "probability": "medium",
+      "mitigation": "Extend pre-launch marketing, adjust pricing if competitive analysis suggests too high, review product photos/copy quality"
+    },
+    {
+      "risk": "Fulfillment delays (exceed 2-business-day promise)",
+      "impact": "high",
+      "probability": "low",
+      "mitigation": "Maintain 2-week inventory buffer, streamline print queue process, plan daily ship times in advance"
+    },
+    {
+      "risk": "Print quality issues (reject rate >5%)",
+      "impact": "medium",
+      "probability": "low",
+      "mitigation": "Validate test print thoroughly, maintain printer (nozzle check, bed leveling weekly), use fresh filament"
+    },
+    {
+      "risk": "Supplier delays or price increase (filament unavailable or >$15/kg)",
+      "impact": "medium",
+      "probability": "low",
+      "mitigation": "Maintain 3-week inventory buffer, pre-qualify backup supplier (Anycubic), lock in 6-month commitment early"
+    },
+    {
+      "risk": "High return rate (>10%)",
+      "impact": "high",
+      "probability": "low",
+      "mitigation": "Ensure test print meets quality standards, validate QC process, respond to customer feedback quickly, improve design if needed"
+    },
+    {
+      "risk": "Etsy algorithm penalizes shop (poor visibility)",
+      "impact": "high",
+      "probability": "low",
+      "mitigation": "Optimize tags/keywords, encourage reviews, maintain fast shipping, respond to messages, consider Etsy ads after Month 1"
+    }
+  ],
+  "financial_projections": {
+    "month_1": {
+      "expected_units": 8,
+      "average_price": "18.99",
+      "gross_revenue": "151.92",
+      "expected_cogs": "60",
+      "expected_margin_percent": "60.5",
+      "net_margin_after_fees": "45"
+    },
+    "month_2": {
+      "expected_units": 20,
+      "average_price": "22.50",
+      "gross_revenue": "450.00",
+      "expected_cogs": "150",
+      "expected_margin_percent": "66.7",
+      "net_margin_after_fees": "200"
+    },
+    "month_3": {
+      "expected_units": 60,
+      "average_price": "24.00",
+      "gross_revenue": "1440.00",
+      "expected_cogs": "400",
+      "expected_margin_percent": "72.2",
+      "net_margin_after_fees": "800"
+    },
+    "assumptions": "Conservative estimates assuming 5-10 sales Month 1, 15-25 Month 2, 50-80 Month 3. Price represents mix of tiers. COGS based on $11/kg wholesale filament, $0.25 packaging, $4-5 shipping per order."
+  },
+  "document_metadata": {
+    "created": "2026-04-28",
+    "status": "ready-for-execution",
+    "confidence_level": "high",
+    "related_documents": [
+      "post-test-print-launch-prep.md",
+      "supplier-negotiation-playbook.md",
+      "fulfillment-workflow.md",
+      "multi-printer-architecture.md",
+      "pricing-strategy.md",
+      "market-research.md"
+    ],
+    "next_review_date": "2026-05-31",
+    "owner": "user"
+  }
+}
