@@ -2,6 +2,34 @@
 
 ---
 
+## April 29, 2026 (Session 612) — Phase 3 Candidate 6: Information Access, FOIA, and Investigative Capacity
+
+**Session type**: Primary research and domain document production
+**Task**: Build `domains/domain-information-access-recovery.md` — Phase 3 Candidate 6 on information access infrastructure and its systematic dismantlement
+
+### Output
+
+**File created**: `projects/resistance-research/domains/domain-information-access-recovery.md` (~9,800 words, 5 main sections + executive summary + 60 sources)
+
+**Key findings and content produced:**
+- Executive Summary: Three-channel simultaneous attack (FOIA, classification, whistleblower protections) framed as structurally coherent rather than coincidental; information access positioned as prerequisite for all other domains in the framework; "information moat" thesis — democratic accountability becomes structurally impossible when all three channels are degraded simultaneously
+- Section 1 (FOIA Mechanics and Degradation): FY2024 government-wide statistics (1.5M requests, 25% YoY increase); 2025-2026 backlog surge documented by agency (DoD +42%, State +31%, Transportation +40%); FOIA litigation nearly doubled (1,000 lawsuits in 15 months vs 591 equivalent Biden period); targeted staff eliminations (CDC 22-person FOIA office, DOE administrative closure policy, CBP director firing, ODNI two employees fired for Venezuela memo release); Roman Jankowski appointment as DHS FOIA chief; fee waiver denial data (6% grant rate); Exemption 5 / OLC "secret law" documented
+- Section 2 (Classification System Abuse): $18 billion annual classification cost; 75-90% overclassification estimate; ISOO stopped publishing statistics because data "too poor"; NARA capture — Shogan fired February 2025 in violation of statute, Rubio as Acting Archivist conflict of interest, Senator Wyden Boston Globe inquiry on FVRA violation; NARA budget cut $93M below FY2024; DOGE Presidential Records Act gambit (records kept from public until 2034); Signalgate and Signal/Slack records destruction
+- Section 3 (Investigative Capacity): Congressional information gap — ICE facility access denied, DOGE document refusal, Ways and Means blocked resolutions of inquiry, apportionment data withheld from GAO; Energy Department IG whistleblower retaliation 5 to 45 investigations (900% increase); CIGIE illegal defunding; USAID IG fired after capacity report; proposed rule stripping senior employee whistleblower protections; FCA record $6.8B recovery as counterpoint (financial incentive model durability)
+- Section 4 (International Precedent): EU Regulation 1049/2001 partial disclosure mandate and transparency-default principle; Canada ATIA with independent Information Commissioner binding order authority (post-2019 reform); UK FOIA 2000 compliance data (90% in-time in Q3 2025, 20-day deadline); Moynihan Commission framing; UNCAC anti-corruption access to information nexus
+- Section 5 (Recovery Pathways): Four statutory reform proposals — Transparency Enforcement Act (mandatory fee waivers for late responses + FOIA ombudsperson with binding order authority + partial disclosure mandate + minimum staffing floors + Exemption 5 limitation), NARA Independence Act (tenure protection + acting archivist restriction + budget floor + records management independence), Classification Reform for Transparency Act (mandatory 25-year declassification trigger + cost accountability + overclassification penalty + expanded PIDB authority), Whistleblower Comprehensive Protection Act (universal coverage + FCA-modeled financial incentives + independent Whistleblower Court + anti-gag universalization), Congressional Records Access Act (direct standing + automatic disclosure trigger + DOGE/EOP transparency)
+- Section 6: Information-access-first sequencing argument — every other domain depends on accurate information; administrative reversals vs statutory durability; three-tier implementation schedule
+- Section 7: Cross-domain links to Domains 5, 16, 26, 29, 34, 35, and Phase 3 Candidate 5 (structural pair)
+
+### Files Modified
+
+| File | Change | Words Added |
+|------|--------|-------------|
+| `domains/domain-information-access-recovery.md` | Created — Phase 3 Candidate 6 production document | ~9,800 |
+| `WORKLOG.md` | This entry | ~400 |
+
+---
+
 ## April 28, 2026 (Session 611) — Phase 3 Candidate 5: Legislative Branch Capacity Domain
 
 **Session type**: Primary research and domain document production
