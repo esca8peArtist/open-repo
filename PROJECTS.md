@@ -484,9 +484,17 @@
 - Phase 2 native plants PDF: ✅ READY (4.91 MB, Etsy-compliant)
 - Phase 2 zone quick-start card spec: ✅ COMPLETE (production-ready)
 
+**✅ COMPLETED (Session 599)** — Phase 3 Product Expansion Roadmap:
+- **Deliverable**: `phase-3-product-expansion-roadmap.md` (5,825 words, 11 parts) + `phase-3-product-specifications.json` (12 products, 13 fields, 3 bundles, price test matrix)
+- **Key Addition**: Part 11 — Four execution options (A: Conservative, B: Standard, C: Aggressive, D: Focused Single-Cohort) with trigger conditions, rationale, and decision logic
+  - Each option maps Phase 1 signals (sales count, conversion rate, cohort concentration) to specific Phase 3 launch sequence
+  - Enables automatic decision-making upon Phase 1 data arrival (45-day mark)
+  - Revenue models: $900–$3,800/month range M6 depending on option
+- **Status**: Phase 3 strategy locked, ready for Phase 1 launch trigger
+
 **Deferred Work** (awaiting Phase 1 data/decisions):
 - **Photography execution**: Awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY.md user decision
-- **Phase 2 product development**: Deferred until Phase 1 generates 30+ days conversion data
+- **Phase 3 product development**: Deferred until Phase 1 data triggers Phase 3 option selection (45-day mark post-launch)
 
 **✅ COMPLETED (Session 500)**:
 - **Mockup Tooling** — All 21 products have three mockup angles (tablet, phone, interior)
