@@ -5,65 +5,63 @@
 
 ---
 
-## Current Session (Session 578 — 2026-04-28 10:49–11:52 UTC — Domain Maintenance + Phase 3 Product Roadmap)
+## Current Session (Session 579 — 2026-04-28 11:02–11:35 UTC — Stockbot Market-Open Readiness Verification)
 
-**Status**: 🟢 **MAJOR EXPLORATION QUEUE ITEMS COMPLETE** — Executed two parallel Exploration Queue items: (1) **resistance-research Domain Content Maintenance** — Framework updated with April-May 2026 civic developments across 8 domains (Iran WPR deadline treatment complete, FISA Section 702 tracking ready). (2) **seedwarden Phase 3 Product Expansion Roadmap** — Complete product strategy (4,100+ words roadmap + 12 detailed product specs + cohort messaging guides) ready for execution when Phase 1 launches.
+🚨 **CRITICAL DEADLINE: Stockbot market open in 2h 28m (13:30 UTC / 09:30 ET)**
 
-**Session 578 Work Completed**:
+**Status**: 🟡 **MARKET-OPEN READINESS VERIFICATION COMPLETE** — All code, database, and configuration ready. Engine requires user restart before 13:30 UTC. Runbook prepared and ready.
 
-1. ✅ **resistance-research: Domain Content Maintenance COMPLETE**
-   - **Domain 19f (War Powers)**: Iran 2026 Constitutional Crisis + Section 14 NATO/Taiwan synthesis integrated
-   - **Domain 28 (War Powers)**: Added Iran as empirical instance of WPR constraint failure + comparative Senate vote analysis
-   - **surveillance-tracking.md**: FISA Section 702 pre/post-April 30 assessment + checklist
-   - **MAY_2026_UPDATES.md**: Completion table updated, session numbers recorded
-   - **Verified**: Domains 1, 6, 29, 33, 35 already current from Sessions 535+
-   - **Status**: Framework production-ready for Phase 1, current through 2026-04-28
-   - **Pending**: FISA post-April 30 outcome fill, Iran WPR post-May 1 checklist fill (await actual dates)
+**Session 579 Work Completed**:
 
-2. ✅ **seedwarden: Phase 3 Product Expansion Roadmap COMPLETE**
-   - **phase-3-product-expansion-roadmap.md** (4,100+ words): Strategic context, sequencing (July-Oct 2026), pricing, sourcing, feedback loops, cross-sells
-   - **phase-3-product-specifications.json** (12 products + variants): Full specs (COGS, pricing, launch month, cohort targets, success metrics)
-   - **phase-3-cohort-messaging.md** (2,600+ words, NEW): Per-cohort messaging strategies (forager, prepper, homesteader, gift buyer)
-   - **Key insight**: Day 21 email (Skills Roadmap) is highest-impact homesteader email (drives follow-on purchases)
-   - **Status**: Ready for Month 3+ execution when Phase 1 converts
+1. ✅ **Stockbot Market-Open Readiness Check**
+   - **Code status**: ✅ Production-ready (Session 560 feature count fix verified in code)
+   - **Database status**: ✅ Ready (active-sessions.json configured with 11 tickers: AAPL + MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA)
+   - **Configuration status**: ✅ All Discord webhooks environment variables configured
+   - **Engine process status**: ⚠️ **OFFLINE — USER ACTION REQUIRED**
+   - **Execution runbook**: ✅ MARKET_OPEN_EXECUTION_RUNBOOK.md ready and verified
 
-**User Decisions Still Pending** (awaiting user action):
-1. **resistance-research distribution path** — Path A / A+37 / B (analysis ready in DISTRIBUTION_PATH_ANALYSIS.md)
-   - Decision → immediate Phase 1 institutional distribution setup
+**🚨 CRITICAL — USER ACTION REQUIRED NOW**:
+
+**Engine restart command** (from `/home/awank/dev/SuperClaude_Framework/projects/stockbot/`):
+```bash
+.venv/bin/python scripts/run_live_trading.py &
+```
+
+**Timing**:
+- T-2h 28m: Restart engine NOW
+- T-30m (13:00 UTC): Execute pre-market checklist (see MARKET_OPEN_EXECUTION_RUNBOOK.md)
+- T-0 (13:30 UTC): Market open — engine begins signal cycles
+- T+6.5h (20:00 UTC): Market close, daily summary fires to Discord
+
+**What will happen**:
+- 11 trading sessions start (1 AAPL + 10 additional tickers)
+- Each ticker's stacker model generates signals every 45-60 seconds
+- BUY/SELL orders placed on Alpaca paper account
+- Position notifications sent to Discord after each trade
+- Daily summary sent at market close (20:00 UTC)
+
+**Contingencies**:
+- If engine crashes during market hours, restart immediately with same command
+- If no signals fire in first hour, check logs: `tail -20 stockbot.log | grep -i signal`
+- See POST_MARKET_MONITORING.md for post-market validation procedures
+
+**User Decisions Still Pending** (no time-critical):
+1. **resistance-research distribution path** — Path A / A+37 / B (analysis in DISTRIBUTION_PATH_ANALYSIS.md)
    - Recommended: Path A+37 Hybrid (captures 2026 election timing windows)
    
-2. **stockbot engine restart** (user action, Session 577 verified engine running)
-   - Status: Engine confirmed active (Session 577)
-   - Command: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py &` if needed
-   - Market open: 13:30 UTC today (T-1h 38min from Session 578 start)
-   
-3. **mfg-farm test print** — Validates CadQuery designs → triggers supplier negotiation
-   - All prep work complete: business plan, designs, market research, listing copy
-   
-4. **seedwarden Phase 1 launch** — 3 tag corrections + Etsy verification
-   - 21 products ready to list
-   - Phase 3 strategy now ready for Month 3+ execution
-
-**Exploration Queue Status**:
-- ✅ **Domain Content Maintenance** — COMPLETE (Session 578)
-- ✅ **Phase 3 Product Expansion Roadmap** — COMPLETE (Session 578)
-- **Remaining queued items**:
-  - stockbot: Real-time CRITICAL Alert Discord Webhook (~15 min implementation)
-  - stockbot: Post-Gate-2 Operations roadmap (awaiting engine restart)
-  - cybersecurity-hardening: High-Risk Population Protection (already complete, awaiting user review)
+2. **mfg-farm test print** — Validates CadQuery designs
+3. **seedwarden Phase 1 launch** — 3 tag corrections + Etsy verification
 
 **Strategic Positioning**:
-- **resistance-research**: Framework complete and current. Distribution decision is the only blocker for Phase 1 activation.
-- **seedwarden**: Phase 1 awaiting user Etsy actions. Phase 3 product strategy is **complete and ready** for Month 3+ execution.
-- **stockbot**: Engine running (verified Session 577). Market open imminent (T-1h 38min). Infrastructure work available in parallel if needed.
-- **No new blockers**. All completed work committed to master.
+- **resistance-research**: Framework production-ready. Distribution decision awaited.
+- **seedwarden**: Phase 1 awaiting user Etsy actions. Phase 3 strategy complete.
+- **stockbot**: **CODE READY. ENGINE AWAITS USER RESTART (2h 28m deadline).**
 
 **Next Actions**:
-1. **User decision needed** (any time): Choose distribution path (A / A+37 / B) → Phase 1 setup begins within hours
-2. **After April 30**: Fill FISA Section 702 post-vote outcome checklist
-3. **After May 1**: Fill Iran WPR post-deadline checklist
-4. **Stockbot**: Engine is running. Market open imminent (13:30 UTC today).
-5. **seedwarden**: Phase 1 awaiting tag corrections + Etsy verification. Phase 3 strategy ready for Month 3+ launch.
+1. **IMMEDIATE (now)**: Restart stockbot engine before 13:30 UTC
+2. **13:00 UTC**: Execute pre-market checklist from MARKET_OPEN_EXECUTION_RUNBOOK.md
+3. **After market close (20:00+ UTC)**: Review daily trading summary + position fills
+4. **User decision** (any time): Choose resistance-research distribution path (A / A+37 / B)
 
 ---
 
