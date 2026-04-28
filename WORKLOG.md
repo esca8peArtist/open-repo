@@ -4,6 +4,145 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 — open-repo — Phase 5 Offline Export Preliminary Implementation
+
+**Session**: Phase 5 preliminary work (parallel with PR #1 review)
+
+**All 7 deliverables completed. 84/84 tests pass.**
+
+**Files created**:
+
+1. `projects/open-repo/docs/phase-5-kiwix-integration-guide.md` (~2,200 words)
+   - Complete Kiwix ecosystem overview, python-libzim installation/version constraints
+   - ZIM metadata structure (mandatory vs. optional fields), naming convention with code examples
+   - Integration points with Phase 4 data model, CDN cost analysis (R2 vs B2 vs S3)
+   - OPDS catalog strategy, offline reader distribution paths
+
+2. `projects/open-repo/docs/phase-5-export-strategy.md` (~1,800 words)
+   - Three export variants: Full (50-80 MB), Domain-Specific (5-10 MB), Reference (permanent archive)
+   - Scoping rules per variant, content query logic, internal link resolution policy
+   - Incremental update strategy, versioning scheme (YYYY-MM with suffix), export schedule
+   - Accessibility requirements (alt text, screen readers, WCAG AA), storage/retention policy
+
+3. `projects/open-repo/docs/phase-5-implementation-plan.md` (~2,400 words)
+   - Dependency tree (Levels 0-5), effort estimates (preliminary: 7.5 days, full: 16-27 days)
+   - 5 integration checkpoints with Phase 4, 10 known risks with mitigations
+   - Complete success criteria (functional, infrastructure, quality, distribution)
+   - Post-launch maintenance plan (update frequency, retention, cost monitoring)
+
+4. `projects/open-repo/backend/app/services/export/zim_writer.py` (~580 lines)
+   - ZimWriter, ZimMetadata, ZimEntry, ExportConfig, ExportScope, ZimWriteResult classes
+   - Full interface contracts with comprehensive docstrings and TODO markers at integration points
+   - Attribution footer for federated content, nopic image filtering, zimcheck subprocess integration
+   - Period computation and filename building static methods
+
+5. `projects/open-repo/backend/app/services/export/opds_generator.py` (~420 lines)
+   - OPDSGenerator, OPDSEntry, OPDSVersionEntry classes
+   - OPDS 1.2 root catalog and acquisition feed XML generation (stdlib xml.etree)
+   - OPDS XML validator, version history in entries, OpenSearch description
+   - Complete namespace handling (Atom, OPDS, DC, OpenSearch)
+
+6. `projects/open-repo/infrastructure/cdn-deployment.yaml` (~350 lines)
+   - Cloudflare R2 bucket config: CORS, cache headers, lifecycle rules, access policies
+   - Backblaze B2 + Cloudflare CDN config (scale alternative)
+   - AWS S3 explicitly documented as not recommended (egress cost analysis)
+   - Cloudflare Worker script for latest-redirect logic
+   - URL patterns, backup strategy, required environment variables
+
+7. `projects/open-repo/backend/tests/integration/test_export_pipeline.py` (~600 lines)
+   - 84 tests: ZimMetadata (8), ExportConfig (7), ZimEntry (9), ZimWriter (20), OPDSEntry (9), OPDSGenerator (14), end-to-end (3)
+   - Synthetic Phase 4 data: 6 content items (5 local + 1 federated across 3 domains)
+   - Zero external dependencies, zero network calls, all mocked via stub ZimWriter
+   - Tests attribution footer injection, nopic image filtering, period suffix logic, OPDS XML validation
+
+**Key design decisions**:
+- ZimWriter uses buffer-then-create pattern now; TODO markers guide post-PR switch to streaming Creator
+- OPDS XML uses stdlib xml.etree (no feedgen dependency needed in stub phase); feedgen migration documented
+- Retention policy: keep current + previous month + 30-day safety window (openZIM v2 standard)
+- R2 recommended for MVP (zero egress, 10 GB free tier covers early exports); B2+CF at >50 GB
+
+## 2026-04-28 Session 591 (14:14–present UTC) — Orchestrator: Parallel Exploration Queue Execution
+
+**Status**: 🟢 Market operating, US trading hours 13:30–20:00 UTC active until 20:00 UTC (~6 hours remaining).
+
+**Parallel Work Completed**:
+
+### 1. resistance-research — Domain Content Maintenance (Session 590 Completion)
+
+**Status**: ✅ COMPLETE (agent a296b4de16be9c338)
+
+**Finding**: Earlier sessions (573-578) had already completed 6 of 8 planned domain updates. This session found and extended remaining work.
+
+**Work executed**:
+- **Domain 19f Section 15** — New research (~1,400 words, 9 sources):
+  - Frozen conflict scenario analysis (~55-60% probability): ceasefire-in-name-blockade-in-fact (38+ ships blocked/turned April 13)
+  - Iran Hormuz peace proposal (reopen strait, defer nuclear talks) vs. Trump unlikely acceptance → stalemate scenario
+  - UN warning of global food emergency from Strait closure
+  - Senate GOP 90-day authorization track emerging (Thorne hasn't closed door on conditional AUMF with 60+ vote potential)
+  - **Key finding**: May-August 2026 is highest-stakes WPR reform window in 50-year history (confirmed non-compliance + bipartisan authorization + $200B fiscal + midterm timeline)
+
+**Files modified**:
+- `projects/resistance-research/domains/domain-19f-war-powers-reform.md` — Section 15 added
+- `projects/resistance-research/domains/MAY_2026_UPDATES.md` — Status updated, Session 590 row added
+- `projects/resistance-research/WORKLOG.md` — Session 590 entry added
+
+**Pending (next session)**:
+- FISA Section 702 outcome (vote Apr 29-30) → fill post-deadline checklist in surveillance-tracking.md
+- Iran post-May 1 confirmed outcomes → document Collins/Murkowski public demand, peace deal status, authorization vehicle introduction
+- Trump v. Slaughter decision (expected late June) → fill in holding in Domains 06/35
+
+**Commit**: Automatically handled by resistance-research agent
+
+**Status**: ✅ COMPLETE (agent a296b4de16be9c338)
+
+---
+
+### 2. mfg-farm — Post-Test-Print Launch Package v2.0 COMPLETE
+
+**Status**: ✅ COMPLETE (agent af4cc9d616977c456)
+
+**Scope**: Expand all 4 mfg-farm launch deliverables from Session 590 baseline to full scope requirements (repeating from earlier log for clarity).
+
+**Files committed** (commit b07835a):
+1. `post-test-print-launch-prep.md` (4,200 words)
+2. `supplier-negotiation-playbook.md` (2,800 words)
+3. `fulfillment-workflow.md` (2,900 words)
+4. `launch-checklist.json` (127 items, 9 phases)
+
+**Status**: All 4 deliverables production-ready, committed to master. Ready for user handoff upon test print confirmation.
+
+---
+
+### 3. stockbot — Post-Gate-2 Operations & Live Trading Scaling Roadmap COMPLETE
+
+**Status**: ✅ COMPLETE (agent a34df22178d63c2b5)
+
+**Deliverable**: `projects/stockbot/docs/stockbot-post-gate-2-roadmap.md` (10,219 words, 589 lines)
+
+**Scope**: Strategic planning for scaling paper trading success into institutional-grade trading and multi-asset expansion. Eight sections covering operational architecture, regulatory compliance, infrastructure scaling, and contingency planning.
+
+**Key Content**:
+1. **Multi-Asset Class Expansion** (~2,100 words): ES/NQ/YM futures with roll-yield features, options theta-harvest strategies, crypto (BTC/ETH) with dedicated regime model, sector rotation mechanics, notional exposure limits per asset class
+2. **Institutional Risk Management** (~1,700 words): Position-level caps, correlation cluster limits, 85% margin utilization hard stop, 10% MDD institutional threshold, leverage controls per asset, counterparty risk, operational resilience
+3. **Regulatory and Compliance** (~1,400 words): SEC registration thresholds ($100M AUM), 10b5-1 plan mechanics, FINRA/state registration scope, compliance roadmap for AUM management, confirmed zero regulatory burden for personal trading
+4. **Performance Attribution & Scaling Decision Framework** (~1,000 words): Triple-gate simultaneous requirements, scaling priority matrix, model refresh schedule, drift retraining triggers, failure scenario criteria
+5. **Infrastructure Scaling** (~900 words): SQLite→PostgreSQL migration path, Redis job queue, Phase 1/2 infrastructure milestones (20-25 sessions, 99.9% uptime targets)
+6. **Multi-Tier Operational Playbook** (~1,100 words): Tier 1 paper trading, Tier 2 single-asset live, Tier 3 multi-asset institutional with specific monitoring protocols and success metrics
+7. **Contingency Scenarios** (~900 words): Five failure modes with sequential diagnostics (Gate 1 fail, systemic drawdown, latency spike, market halt, catastrophic loss)
+8. **Timeline and Checkpoint Schedule** (~700 words): Six dated checkpoints from Day 14 (2026-05-12) through Day 214 (2026-11-28) with pass/fail criteria and action triggers
+
+**Key Decision Frameworks**:
+- Gate 1+2+3 all simultaneous for 3 months → clear signal for multi-asset expansion
+- Sharpe-drop 20% → triggers retraining; 15% backtest-to-live SHAP divergence → drift audit
+- Four pivot options if Gates 1+2 fail simultaneously: strategy modification, meta-strategy ensemble, fixed-income shift, strategic halt
+- Infrastructure phases: current (single machine 11-ticker), Phase 1 (PostgreSQL, Redis job queue, 20-25 sessions), Phase 2 (multi-region deployment, Grafana extension)
+
+**Integration**: Builds on Session 549 (live-trading-operations-suite.md), Session 557 (dashboard), Session 542 (performance attribution)
+
+**Commit**: `0c9aaf1`
+
+**Status**: Production-ready for user review and post-Gate-2-pass decision-making
+
 ## 2026-04-28 (Session 591) — mfg-farm — Post-Test-Print Launch Package v2.0 COMPLETE
 
 **Scope**: Expand all 4 mfg-farm launch deliverables from Session 590 baseline to full scope requirements.
