@@ -328,7 +328,7 @@
 
 0. ✅ **CRITICAL — Fix feature count mismatch so engine actually trades** (Session 560 COMPLETE): Feature count bug identified and fixed. Root cause: ensemble stackers expect 61 features with `1d_` prefix; fallback was using `FeatureEngineer.transform()` which produces different feature names. New `_build_daily_mtf_features()` helper generates correct features. All fallback paths updated. AAPL models produce non-zero predictions. Committed. User action: Restart engine before 13:30 UTC market open.
 
-1. **Discord position notifications**: Send a Discord message every time any strategy opens or closes a position. Include: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized or realized P&L. Wire into `on_trade_executed` in `src/models/model_strategy.py` (currently only logs to debug). **Use `STOCKBOT_DISCORD_WEBHOOK_URL` (stockbot channel) — NOT `DISCORD_WEBHOOK_URL` (general/orchestrator channel).** `STOCKBOT_DISCORD_WEBHOOK_URL` is already defined and used by `src/remote/hetzner_budget.py` — follow the same pattern.
+1. ✅ **Discord position notifications** (Session 570 COMPLETE): Feature already implemented in `src/notifications/discord.py` and wired into `ModelBasedStrategy.on_trade_executed()`. Session 570 fixed feature parity gap: `MTFModelBacktestStrategy` now also implements `on_trade_executed()` with identical behavior. Commit: `06a3014`. All 19 notification tests passing. Includes: ticker, side, quantity, price, strategy name, P&L. Uses `STOCKBOT_DISCORD_WEBHOOK_URL`. Production-ready for engine restart.
 
 2. **Market open verification** (2026-04-28, first clean market session):
    - Pre-open (before 13:15 UTC): Verify engine is running and connected to Alpaca paper account

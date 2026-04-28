@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 570 (07:48–08:00 UTC) — Orchestrator: Stockbot Discord Notifications + Critical Deadline Alert
+
+**Work Completed**:
+
+1. ✅ **Orientation & Block Processing** (07:48–07:55 UTC)
+   - Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md
+   - Verified calibration block RESOLVED (Session 569)
+   - Confirmed no new INBOX items
+   - Assessment: No active autonomous work on high-priority projects (all blocked on user actions or external review)
+
+2. ✅ **stockbot: Discord Position Notifications Feature Parity** (subagent completed)
+   - Previous sessions implemented `send_position_notification()` in `src/notifications/discord.py` and wired into `ModelBasedStrategy.on_trade_executed()`
+   - Gap found: `MTFModelBacktestStrategy` missing identical implementation, causing feature parity violation
+   - **Fix**: Added `on_trade_executed()` to `MTFModelBacktestStrategy` (commit `06a3014`)
+   - **Tests**: 5 new tests added, all 19 notification tests passing
+   - **Status**: Discord position notifications now fully implemented across all strategy types
+   - All code committed to stockbot submodule; production-ready for engine restart
+
+3. ✅ **Critical User Alert** (07:55 UTC)
+   - Sent Discord notification to general channel: stockbot engine restart required by 13:30 UTC (09:30 ET)
+   - Deadline: 5h 35min remaining
+   - Message includes: command to run, notes on code readiness, impact of missing deadline
+   - Reminder: Feature count bug (Session 560) + robustness improvements (Session 552) + Discord notifications (Session 570) all complete and tested
+
+**Session Summary**:
+- All orchestration files read and processed
+- Stockbot feature parity gap identified and fixed
+- Critical deadline communicated to user
+- No further autonomous work available (all projects blocked on user decisions)
+- Ready for engine restart and market-open validation
+
+**Commits**: `06a3014` (stockbot submodule) — Discord notification parity fix
+
+---
+
 ## 2026-04-28 Session 569 (08:15–08:45 UTC) — stockbot: Discord Position Notifications + Market-Open Verification Logging
 
 **Work Completed**:

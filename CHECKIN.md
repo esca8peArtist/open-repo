@@ -5,9 +5,18 @@
 
 ---
 
-## Current Session (Session 569 — 2026-04-28 07:15–08:45 UTC — Pre-Market Robustness: Discord Notifications + Market-Open Verification)
+## Current Session (Session 570 — 2026-04-28 07:48–08:00 UTC — Orchestrator Orientation + Stockbot Feature Parity Fix)
 
-**Status**: 🟢 **MARKET-CRITICAL WORK COMPLETE** — Discord position notifications and market-open verification logging fully implemented, tested, and committed. Engine now production-ready for 13:30 UTC market open. **CRITICAL DEADLINE: Stockbot engine restart by 13:30 UTC (T-5h 45min remaining).** All projects dependent on user actions.
+**Status**: 🟢 **CRITICAL DEADLINE COMMUNICATED** — Orchestrator completed session orientation, confirmed all high-priority projects blocked on user actions, fixed stockbot Discord notification feature parity gap, and sent critical engine-restart reminder to Discord. **CRITICAL DEADLINE: Stockbot engine restart by 13:30 UTC (09:30 ET, T-5h 35min remaining).** No autonomous work available; all projects awaiting user decisions or engine restart.
+
+**Session 570 Summary**:
+- ✅ Orientation complete — read ORCHESTRATOR_STATE, PROJECTS, BLOCKED, INBOX
+- ✅ Stockbot Discord notification feature parity fixed (commit `06a3014`)
+  - `MTFModelBacktestStrategy` now implements `on_trade_executed()` matching `ModelBasedStrategy`
+  - 5 new tests added; all 19 notification tests passing
+- ✅ Critical engine-restart deadline alert sent to Discord
+- ⏳ No autonomous work available on top-3 priorities (all user-action blocked)
+- **Next session**: Await engine restart, monitor first market open signals
 
 **Session 569 Summary**:
 - ✅ Orientation complete — calibration check passed (Sonnet 0.0%, All-models 8.0%, budget healthy)
