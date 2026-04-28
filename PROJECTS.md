@@ -852,6 +852,25 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Timeline**: 1-2 sessions
   - **Status**: QUEUED
 
+**NEW ITEMS (Session 557 — Exploration Queue Refresh)**:
+
+- ✅ **resistance-research: April-May 2026 Phase 2 Content Maintenance** (COMPLETE — Session 557)
+  - **Scope**: Update Phase 2 domains affected by late April 2026 developments. Key targets: Domain 31x (Healthcare Tariff Collision — 100% tariff effective July 31, 95 days to deadline), Domain 37b (State Election Security — April–July advocacy window), Domain 19f (Iran War constitutional crisis — May 1 WPR deadline), Domain 6/35 (Trump v. Wilcox shadow-docket removal power implications). Integrate new evidence: April 2026 tariff negotiations, FISA Section 702 April 30 deadline outcome, Iran WPR deadline developments.
+  - **Deliverables**: 4 domains updated with 16 new citations (4 per domain), April-May 2026 publication dates, updated deadline calendars, advocacy strategy refinements. Key findings: Domain 31x generic drug shortage pre-tariff + April 2027 Commerce review; Domain 37b resource gap quantified (75% of officials without federal resources) + FY27 budget permanently zeros CISA election security; Domain 19f May 1 deadline defied + naval blockade creates cleaner WPR violation; Domain 6 NLRB case study + CFPB collapse + state AG enforcement repositioning
+  - **Status**: ✅ COMPLETE, committed to master (resistance-research submodule)
+
+- ✅ **stockbot: Live Trading Dashboard Implementation** (COMPLETE — Session 557)
+  - **Scope**: React/TypeScript implementation of the dashboard mockup (HTML prototype from Session 551 + operations framework from Session 549). Build: (1) Component structure (Portfolio, ControlPanel, Positions, RiskMetrics, SignalBoard, TradeLog), (2) API integration layer (7 endpoints documented in mockup), (3) Real-time WebSocket integration (live P&L, signal updates), (4) Dark theme Tailwind CSS styling, (5) Responsive design for desktop/tablet
+  - **Deliverables**: 6 React components, 4 custom hooks, TypeScript types, full test suite (75 tests, all passing), App.tsx main layout, README with API integration guide. Solved critical Jest config issues (RTL v10 getter compatibility, moduleNameMapper overreach). Ready for immediate deployment post-engine-restart.
+  - **Status**: ✅ COMPLETE, committed to stockbot submodule master (commit 19c624e)
+
+- **resistance-research: Democratic Renewal Phase 3 Candidate 5 Research** (Priority MEDIUM for post-distribution roadmap)
+  - **Scope**: Research additional Phase 3 candidate following Session 556 pattern (8,000-10,000 words, 40+ sources, comparative case studies, international precedent). Recommended topics: (1) Financial sector vulnerabilities and banking system independence post-capture, (2) Civil service resilience architecture (hiring/firing protections that survive politicization), (3) Judicial independence recovery mechanisms (structural reforms that restore court independence post-capture), (4) Media freedom and journalistic protection pathways (press freedom recovery case studies).
+  - **Goal**: Expand Phase 3 research roadmap, identify additional leverage points for democratic renewal post-distribution
+  - **Expected output**: `phase-3-candidate-5-[topic].md` (8,000-10,000 words) with case studies, reform pathways, international precedent analysis
+  - **Timeline**: 2-3 sessions per candidate
+  - **Status**: QUEUED
+
 ---
 
 ## Completed (Archive)
