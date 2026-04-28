@@ -4,6 +4,27 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 566 — 2026-04-28 — Phase 3 Cohort Messaging Guide
+
+**Task**: Create `projects/seedwarden/phase-3-cohort-messaging.md` (the third Phase 3 deliverable). Verified the first two deliverables (roadmap, JSON specs) were already complete from Session 565. Wrote the cohort messaging guide from scratch.
+
+**Deliverable created**:
+
+1. **`projects/seedwarden/phase-3-cohort-messaging.md`** (~2,600 words)
+   - Part 1: High-intent forager (20–25%) — Phase 3 products (Wild Edibles Quick Reference, Flashcard Set, Habitat Photo Pack, Regional Forager Bundle), messaging posture (precision, seasonal urgency, visual evidence), 4-email sequence (Day 1/7/21/45), Etsy/Pinterest/Ads angles
+   - Part 2: Survival prepper (15–20%) — Phase 3 products (Master Preserver Bundle $52, Pressure Canning Meat Guide, Dehydrating Guide), messaging posture (capability gaps, concrete numbers, self-sufficiency framing), 4-email sequence, Etsy/Pinterest/Ads angles
+   - Part 3: Homesteader (30–35%) — Phase 3 products (Seed Library System, Medicinal Herb Guide, Homestead Skills Roadmap, Preservation Planner), messaging posture (project progression, systems integration, community), 4-email sequence, Etsy/Pinterest/Ads angles
+   - Part 4: Gift buyer (15–20%) — Phase 3 products (Expanded Homesteader Gift Set $62, Preservation Planner, Starter Bundle), messaging posture (gift framing, perceived value, social proof), 3-email sequence, Etsy/Pinterest/Ads angles
+   - Part 5: Cross-cohort principles — CC BY-SA attribution requirements, educational tone, no medical claims, email frequency discipline
+
+**Design decisions**:
+- Each cohort section structured identically (who, products, posture, email sequence, promotional angles) for operational use — the person writing an Etsy listing or email can open to the relevant section and execute directly
+- Email sequences written as subject + body approach, not as boilerplate copy — templates require personalization to perform; providing the strategy rather than the fill-in-the-blank text prevents cargo-cult execution
+- Medicinal Herb Guide no-medical-claims constraint covered explicitly in both the homesteader section and Part 5 because it is the most frequently violated policy in this product category
+- Gift buyer sequence is 3 emails not 4 because the Day 45 email is occasion-gated (skipped in off-season months) — explicitly noted to avoid mechanical application
+
+---
+
 ## Session 565 — 2026-04-28 — Phase 3 Product Expansion Roadmap (Root-Level Deliverables)
 
 **Task**: Develop Phase 3 Product Expansion Roadmap as production-ready files in `projects/seedwarden/` (root level), meeting the exact deliverable spec: 3,500–4,500 word strategy document and a JSON specifications file using the required schema (name, category, description, target_cohort, estimated_cogs, estimated_price, margin, phases_1_dependency, supplier, launch_month, customer_feedback_signal, cross_sell_bundle, success_metric).
