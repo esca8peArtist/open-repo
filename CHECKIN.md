@@ -5,16 +5,16 @@
 
 ---
 
-## Current Session (Session 572 — 2026-04-28 08:56 UTC — Pre-Market Monitoring + Autonomous Project Assessment)
+## Current Session (Session 573 — 2026-04-28 09:08–09:20 UTC — April-May 2026 Domain Updates)
 
-**Status**: 🟢 **MARKET-OPEN READY** — Stockbot engine restart deadline **T-4h 31min** (13:30 UTC market open). **COMPREHENSIVE READINESS VERIFICATION COMPLETE:**
-- ✅ Engine process active (PID 971200, running since Apr26)
-- ✅ Databases actively updated (model_registry.db @ 09:48 UTC today, trading.db @ 08:42 UTC)
-- ✅ All critical code features verified: market-aware idle, ticker enforcement, daily Discord summary, position notifications, market-open detection logging
-- ✅ Unit tests passing (55+ tests verified successful)
-- ✅ POST_MARKET_MONITORING.md guide complete and current (from Session 564, 05:45 UTC)
-- **No code changes warranted** — stability is priority within 4.5 hours of critical deadline
-- All auxiliary systems production-ready; awaiting 13:30 UTC market open execution
+**Status**: 🟢 **MARKET-OPEN READY + DOMAIN UPDATES COMPLETE** — Stockbot engine restart deadline **T-4h 10min** (13:30 UTC market open). **APRIL-MAY 2026 DOMAIN CONTENT UPDATES COMPLETE:**
+- ✅ Exploration Queue Item 1 (Domain Content Maintenance) COMPLETE
+- ✅ 7 domains updated with April-May 2026 civic calendar developments (241 insertions)
+- ✅ Critical deadlines tracked: Iran WPR May 1, FISA April 30, Trump v. Wilcox/Warsh Slaughter intersection, SPLC indictment case, ballot-initiative suppression 155-bill wave
+- ✅ All proposal content production-ready and current through 2026-04-28
+- ✅ Phase 1 distribution infrastructure fully pre-positioned (awaiting user path decision: A / A+37 / B)
+- ✅ Stockbot code stable — no changes in pre-market window (4h 10min to critical deadline)
+- All auxiliary systems production-ready; awaiting engine restart + market-open execution
 
 **Session 571 Summary**:
 - ✅ Resolved calibration block archived in BLOCKED.md (Session 571 start)

@@ -4,6 +4,45 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 573 (09:08–09:20 UTC) — Orchestrator: April-May 2026 Domain Content Updates (Exploration Queue Item 1)
+
+**Work Completed**:
+
+1. ✅ **Orientation & Block Processing** (09:08–09:10 UTC)
+   - Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md
+   - Confirmed: 4h 12min remaining to stockbot market open (13:30 UTC)
+   - Active block: mfg-farm test print (manual verification, no auto-resolve available)
+   - No new INBOX items
+   - Assessment: Pre-market window — prioritize research (zero code risk), avoid stockbot modifications
+
+2. ✅ **resistance-research: April-May 2026 Domain Content Maintenance COMPLETE** (Agent ae674bec32391706c, 09:10–09:18 UTC)
+   - **Scope**: Update 35-domain framework with April-May 2026 civic calendar developments (8 domains identified)
+   - **Priority 1 domains (executed)**:
+     - **Domain 19f (War Powers Reform)**: Iran WPR May 1 deadline. New Section 13: Pentagon $200B supplemental request (scaled to $80-100B by White House), bipartisan GOP/Dem leverage points (Murkowski transparency/AUMF, Collins Appropriations, Wicker hearing), reconciliation-vehicle authorization risk, legalization-through-appropriation bidirectional leverage
+     - **Domain 6 (Judicial Independence)**: Trump v. Wilcox/Slaughter update. New Section 6: Warsh Fed confirmation strategy sidesteps carve-out test pre-Slaughter decision, DOJ probe closure (April 24) as tactical preparation, Powell Board-member removal question deferred to Slaughter ruling (late June), state private-rights-of-action advocacy window (AB 1456, S.8234) closes at Slaughter decision
+     - **Domain 29 (Prosecutorial Weaponization)**: SPLC indictment case study. New Section 14: DOJ state bar accountability rule timing (comment closed April 6, indictment April 21 — 15-day sequencing), Judge Emily Marks assignment, Thompson bank fraud + wire fraud + First Amendment dismissal grounds, state bar accountability loop closed pre-SPLC indictment
+   - **Priority 2 domains (executed)**:
+     - **Domain 35 (Supreme Court 2026)**: Slaughter/Warsh update. New Section 11: Warsh appointment-via-confirmation sidesteps Wilcox carve-out test, Powell Board seat through January 2028, deferred carve-out question
+     - **Domain 1 (Voting Rights/Elections)**: SAVE Act + ballot restriction bills + FISA deadline. New Section 6: BISC tracker 155 bills (31 states), six-state 60% supermajority push (OK, AZ, MO, ND, SD, ID), Arizona initiative collision (174% signatures, May 3 submission, simultaneous 60% threshold measure), FISA April 30 hard deadline (three-year clean extension likely), systematic ballot-initiative suppression characterized as institutionalized forward-looking (not just blocking measures, constraining the Tool itself)
+     - **Domain 28 (War Powers Venezuela)**: Fiscal accountability cross-reference. New Section 11: Venezuela+Iran share identical fiscal-accountability structures (avoid authorization = eliminate fiscal oversight), $200B Iran + $28M/day Venezuela both reprogramming-until-forced, reform recommendation: prohibit defense reprogramming >$1B or 30 days without supplemental authorization
+   - **Not addressed** (no standalone domains/already current):
+     - Domain 33 (Ballot Restrictions): Already current from Session 535
+     - Domains 21/25 (Surveillance): FISA integrated into Domain 1 Section 6.2
+   - **Deliverables**: 7 domain files updated, 241 net insertions, all April 28 publication dates, 11 sources documented
+   - **Status**: Production-ready for Phase 1 institutional distribution — content now current through 2026-04-28
+   - **Commit**: `5000a56` on master
+
+**Session Summary**:
+- Pre-market stability maintained (zero stockbot code work)
+- Exploration Queue Item 1 (Domain Content Maintenance) COMPLETE
+- Proposal currency improved with April-May 2026 developments (Iran deadline May 1, FISA April 30, Warsh/Slaughter intersection, SPLC indictment, ballot-initiative suppression 155-bill wave)
+- All critical deadlines tracked in domain content
+- Ready for Phase 1 institutional distribution subject to user path decision (A / A+37 / B)
+
+**Critical Deadline Remains**: Stockbot engine restart required by 13:30 UTC (T-4h 12min at session end, 09:20 UTC)
+
+---
+
 ## 2026-04-28 Session 571 (08:01–09:00 UTC) — Orchestrator: Domain Updates + Exploration Queue Execution
 
 **Work Completed**:
