@@ -5,6 +5,65 @@
 
 ---
 
+## Since Last Check-in (Session 603 — 2026-04-28 19:28–20:50 UTC)
+
+✅ **3 Exploration Queue Items Complete** — Parallel agent execution (resistance-research + general-research + general-research)
+
+### What Happened
+
+**Session 603 Work** (19:28–20:50 UTC):
+- **Status on arrival**: Two active blocks (stockbot engine restart, mfg-farm test print). Exploration Queue >3 items. Three queued autonomous items identified and ready to work.
+- **Action taken**: Spawned 3 parallel agents simultaneously for independent research tasks (wall-clock duration ~1.5 hours total).
+
+**✅ resistance-research: May 2026 Civic Developments Tracker** COMPLETE
+- **Deliverable**: `projects/resistance-research/MAY_2026_TRACKER.md` (production-ready)
+- **Scope**: Structured weekly monitoring framework for May 2026 civic developments across 6 categories (War Powers, Prosecutorial Weaponization, Voting Rights, SCOTUS, Election Security, Fiscal/Congressional)
+- **Content**:
+  - Week 1 (May 1–7) fully populated: 10 tracked items with urgency tiers (CRITICAL/HIGH/MONITOR)
+  - Domain cross-reference guide (how each item affects Domains 1–37)
+  - Domain 38 Candidates assessment (3 potential new domains identified)
+  - Weeks 2–4 templates with pre-populated known deadlines
+  - Urgent action list for April 28–May 7 (5 items, Crenshaw Nashville ruling highest-priority watch)
+- **Key Urgencies**: Iran WPR May 1 deadline (CRITICAL), Abrego Garcia Nashville ruling (CRITICAL), FISA 702 April 30 outcome (CRITICAL), DHS payroll cliff May 4–8 (CRITICAL)
+- **Status**: Framework established, Week 1 populated, ready for ongoing weekly updates
+
+**✅ cybersecurity-hardening: High-Risk Population Protection Protocols** COMPLETE
+- **Deliverable**: `projects/cybersecurity-hardening/high-risk-populations.md` (5 new scenario playbooks added)
+- **Scope**: Extended with production-actionable scenario playbooks (5 total):
+  1. Activist Arrested at Protest — pre-arrest, arrest-moment script, jail call protocol, post-release documentation
+  2. Dissident/Asylum Seeker Leaving US — 72-hour departure protocol, Canada Bill C-12 updates (March 26, 2026), country guidance (Ireland/Germany/Iceland)
+  3. Attorney Targeted by Government Retaliation — EO challenge protocol, Mark Zaid injunction framework, client notification, Signal-mandatory communications
+  4. Domestic Violence Survivor with Security Concerns — stalkerware detection, safe device strategy, carrier account separation, post-departure digital hygiene
+  5. Transnational Repression Target — World Uyghur Congress attack analysis, WeChat abandonment, Lockdown Mode/GrapheneOS, Interpol red notice response
+- **Resources**: Updated to 20 organizations across 5 categories (legal defense, asylum, attorney protection, transnational repression, DV tech safety)
+- **Status**: Production-ready for distribution to at-risk communities
+
+**✅ mfg-farm: Amazon FBA vs. Etsy Fulfillment Strategy Analysis** COMPLETE
+- **Deliverables**: 
+  - `projects/mfg-farm/amazon-fba-analysis.md` (3,500 words) — 8-part comprehensive analysis
+  - `projects/mfg-farm/hybrid-launch-roadmap.md` (1,400 words) — 3-phase phased rollout strategy
+- **Key Recommendation**: Launch on Etsy first (NOT Amazon FBA initially)
+  - **Reason**: FBA fee load (30%+ at sub-20 units/month) vs. Etsy (11% effective rate) creates 19-point margin delta ($28.99 sale: Etsy 61% net vs. FBA 40% net)
+  - **FBA Phase 2 Trigger**: 20+ units/month + 4.8+ stars + 15+ reviews. Capital requirement: $350–400 (self-funds from Phase 1 revenue)
+  - **Hybrid at scale**: 100+ units/month (50/50 split) generates ~85% more revenue than Etsy-only
+- **Key Insight**: Amazon cold-start problem solved via Vine enrollment (New Seller Incentives, 90-day window) — free reviews without ad spend
+- **Status**: Production-ready for post-test-print decision-making
+
+### Current Status
+
+- ✅ 3 exploration queue items: Production-ready, committed to projects
+- ✅ Parallel execution: 3 agents completed in ~1.5 hours wall-clock
+- ✅ Research quality: 9 total sources cited across deliverables (17 + 20 + 9 sources respectively)
+- 🟡 Active blocks unchanged: stockbot engine restart (CRITICAL deadline 2026-04-29 13:30 UTC), mfg-farm test print
+
+### Next Steps
+
+1. **Immediate**: Commit session work to master
+2. **Pending user action**: Engine restart (CRITICAL, ~17 hours remaining)
+3. **If/when engine restarts**: Stockbot post-Gate-2 roadmap becomes available for autonomous work
+
+---
+
 ## Since Last Check-in (Session 602 — 2026-04-28 20:14–20:25 UTC)
 
 ✅ **Autonomous Exploration Work Complete** — Post-market daily analysis automation implemented

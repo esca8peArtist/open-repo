@@ -47,6 +47,98 @@
 
 ---
 
+## 2026-04-28 19:28–20:32 UTC — Session 603 — Parallel Exploration Queue Execution (2 of 3 items)
+
+**Orchestrator Orientation** (19:28 UTC):
+- **Status**: Two active blocks (stockbot engine restart, mfg-farm test print). Exploration Queue >3 items. Three queued autonomous items identified: (1) May 2026 Civic Tracker, (2) cybersecurity-hardening high-risk protocols, (3) mfg-farm FBA analysis.
+- **Action**: Spawned two parallel agents simultaneously (resistance-research + general-research).
+
+**WORK COMPLETED**:
+
+**✅ resistance-research: May 2026 Civic Developments Tracker** (19:28–20:03 UTC)
+- **Deliverable**: `projects/resistance-research/MAY_2026_TRACKER.md` (production-ready)
+- **Content**:
+  - Header with domain cross-reference guide + urgency system (CRITICAL/HIGH/MONITOR)
+  - Week 1 (May 1–7) fully populated: 10 tracked items across 6 categories
+    - Domain A (War Powers): Iran WPR May 1 deadline + ceasefire/Hormuz standoff
+    - Domain B (Prosecutorial Weaponization): Abrego Garcia Nashville ruling (highest watch), SPLC indictment, DOJ retaliation
+    - Domain C (Voting Rights): SAVE Act state wave (FL/MS/SD/UT signed; TX/GA/AZ floor votes Week 1 watch)
+    - Domain D (SCOTUS): Trump v. Slaughter late-June decision + circuit vacancies
+    - Domain E (Election Security): CISA gutting + state architecture replacement, FISA 702 April 30 carry-forward
+    - Domain F (Fiscal/Congressional): ICE/DHS Reconciliation 2.0 ($70B/$140B), DHS payroll cliff May 4–8
+  - Weeks 2–4: Pre-populated with known deadlines
+  - Domain Update Recommendations table (8 rows, highest priorities: Domain 19f, surveillance-tracking.md, Domain 29)
+  - Domain 38 Candidates: (A) Counter-Court Prosecutorial Retaliation, (B) Fiscal Constitution Under Duress, (C) Iran Economic Fallout
+  - Urgent action list for April 28–May 7 (5 items, Crenshaw ruling is highest-priority watch)
+- **Key Sources**: 17 sources across Foreign Policy, Al Jazeera, Just Security, SCOTUSblog, Democracy Docket, etc.
+- **Status**: COMPLETE, framework established, Week 1 populated, ready for ongoing weekly updates
+
+**✅ cybersecurity-hardening: High-Risk Population Protection Protocols** (19:28–20:22 UTC)
+- **Deliverable**: `projects/cybersecurity-hardening/high-risk-populations.md` (5 scenario playbooks added)
+- **New Content** (Part 6: Scenario Playbooks):
+  - **Playbook A — Activist Arrested at Protest**: NLG hotline number, arrest-moment script, jail call protocol, post-release evidence documentation (sources: NLG Manual August 2025, ACLU)
+  - **Playbook B — Dissident/Asylum Seeker Leaving US**: Pre-departure legal checklist, 72-hour protocol, Canada Bill C-12 changes (March 26, 2026), country-by-country guidance (Ireland, Germany, Iceland), first-48-hours post-arrival steps
+  - **Playbook C — Attorney Targeted by Government Retaliation**: 2025–2026 pattern analysis (every firm challenging EOs prevailed through June 2025), Mark Zaid December 2025 injunction as establishment of First Amendment retaliation doctrine, client notification, Signal-mandatory communications, ABA/NACDL institutional support
+  - **Playbook D — Domestic Violence Survivor with Security Concerns**: NNEDV Safety Net Project core principle (do not remove monitoring tech without safety plan), stalkerware indicators, carrier account separation, vehicle GPS detection, post-departure digital hygiene
+  - **Playbook E — Transnational Repression Target**: March 2025 World Uyghur Congress trojanized-text-editor attack analysis, WeChat abandonment, Apple Lockdown Mode/GrapheneOS, identity verification, FBI reporting, Interpol red notice response (Fair Trials International)
+  - **Updated Key Resources**: 20 organizations across 5 categories (legal defense, asylum, attorney protection, transnational repression, DV tech safety)
+- **Key Sources**: 20+ sources including NLG, Canada Bill C-12, Citizen Lab, Freedom House, CFR transnational repression, Front Line Defenders
+- **Status**: COMPLETE, production-ready for distribution to at-risk communities
+
+---
+
+## 2026-04-28 — General Research Agent — mfg-farm: Amazon FBA vs. Etsy Fulfillment Strategy Analysis
+
+**Task**: Research and produce Amazon FBA vs. Etsy fulfillment strategy for ModRun cable management system. Session 602 Exploration Queue item — independent of test print blocking gate.
+
+**Status**: COMPLETE
+
+**Deliverables**:
+- `projects/mfg-farm/amazon-fba-analysis.md` (~3,500 words) — 8-part analysis:
+  - Part 1: Amazon FBA 2026 fee structure (referral 15%, fulfillment $3.11–3.70/unit by weight, storage $0.78–2.40/ft³, inbound placement $0.21–0.30/unit, April 17 fuel surcharge +3.5%, aged inventory surcharge tiers)
+  - Part 2: Etsy-only approach (listing $0.20, transaction 6.5%, payment 3%+$0.25, Offsite Ads threshold mechanics, strengths/weaknesses)
+  - Part 3: Cost comparison matrix — 10/50/100+ units/month scenarios with specific margin calculations (Etsy 61–67% vs. FBA 40–57% by volume)
+  - Part 4: Fulfillment timelines (Etsy 3–7 days made-to-order vs. FBA 1–2 days Prime)
+  - Part 5: Seller reputation mechanics (Etsy Star Seller criteria, Amazon ODR/LSR/VTR/OTDR thresholds, A9/COSMO algorithm cold-start problem)
+  - Part 6: Capital requirements and cash flow (Etsy $40 launch vs. FBA $400 setup; payment cycle comparison)
+  - Part 7: Risk assessment (platform concentration, stranded inventory, cold-start, fee creep, account suspension)
+  - Part 8: Decision matrix + recommendation (Etsy-only Phase 1 → Amazon FBA Phase 2 conditional on 20+ units/month and 4.8+ stars)
+- `projects/mfg-farm/hybrid-launch-roadmap.md` (~1,400 words) — 3-phase roadmap with explicit go/no-go metrics at each gate
+
+**Key Findings**:
+- Recommendation: Etsy-only launch. FBA fee load (30%+ total) vs. Etsy (11%) makes Amazon economically destructive below 20 units/month.
+- Amazon Phase 2 trigger: 20+ units/month Etsy + 4.8+ stars + 15+ reviews. Capital requirement: $350–400 (self-funded by Phase 1 revenue).
+- Amazon Handmade + FBA is the right Amazon path for 3D-printed original-design products (not standard FBA). Handmade waives the $39.99/month Professional plan fee post-approval.
+- Stranded inventory is the primary FBA risk at low volume. Aged inventory surcharge starts at Day 181 and escalates sharply.
+- Vine enrollment (New Seller Incentives, first 90 days) is the critical action to break Amazon's cold-start review problem without advertising cost.
+- Hybrid model at 100+ units/month generates 85% more total revenue than Etsy-only despite lower per-unit Amazon margins.
+
+---
+
+## 2026-04-28 — General Research Agent — cybersecurity-hardening: High-Risk Population Playbooks
+
+**Task**: Extend `projects/cybersecurity-hardening/high-risk-populations.md` with scenario playbooks and updated sourcing (Session 538 Exploration Queue item #3).
+
+**Status**: COMPLETE
+
+**What existed**: 5-part document covering identity compartmentalization, physical security, legal defense, asylum options, and emergency protocols. ~4,200 words. No scenario playbooks. Good but not production-actionable for people mid-crisis.
+
+**What was added**:
+- **Part 6: Scenario Playbooks** — five fully operational playbooks (~9,400 words added):
+  - **Playbook A: Activist Arrested at a Protest** — pre-arrest baseline, arrest moment, booking, jail call script, release steps, common failure modes; sourced to NLG Hotline Manual (August 2025), *Berghuis v. Thompkins*, *Riley v. California*
+  - **Playbook B: Dissident/Asylum Seeker Leaving the US** — 72-hour departure protocol, device/financial/document prep, country-by-country destination guidance updated for Canada Bill C-12 (March 2026 STCA changes), Ireland IPO, Germany BAMF, Iceland; departure-day checklist; sourced to UNHCR, Irish Refugee Council, Canadian IRCC, Relocate.World 2026
+  - **Playbook C: Attorney Targeted by Government Retaliation** — security clearance revocation response (citing Mark Zaid injunction December 2025), EO challenge protocol (all 5 challenged firms prevailed), client notification obligations, communications hardening; sourced to ABA June 2025 lawsuit, ABA amicus April 2026, International Day of Endangered Lawyers 2026 US report
+  - **Playbook D: DV Survivor with Security Concerns** — stalkerware detection, safe device strategy, safety planning timeline, vehicle GPS, carrier account separation, post-departure digital hygiene; sourced to NNEDV Safety Net Project, Coalition Against Stalkerware, National DV Hotline
+  - **Playbook E: Transnational Repression Target (Uyghur/Iranian/Turkish)** — Chinese state hacking vectors (World Uyghur Congress spear-phishing March 2025, trojanized text editor), WeChat risk, Apple Lockdown Mode and GrapheneOS, Interpol red notice response (Fair Trials International), Front Line Defenders emergency contact; sourced to Citizen Lab, CFR 2025, Freedom House, CSOHATE
+- **Updated Key Resources** — reorganized into five categories with 20 resources total; added NLG Federal Defense Hotline number, NLG Hotline Manual direct PDF link, NACDL, Irish Refugee Council, Canadian CCR, Front Line Defenders emergency contact, Fair Trials International, NDVH, Safety Net Project, Coalition Against Stalkerware
+- **Updated Confidence and Limitations** — added high-confidence note for playbooks, updated Canada note for Bill C-12, added Citizen Lab monitoring note for transnational repression, added rural DV gap note
+
+**Final document**: 14,620 words, 777 lines
+
+**File**: `projects/cybersecurity-hardening/high-risk-populations.md`
+
+---
+
 ## 2026-04-28 20:30–22:00 UTC — Session 601 — Orchestrator Status Verification
 
 **System Assessment** (20:30–22:00 UTC):

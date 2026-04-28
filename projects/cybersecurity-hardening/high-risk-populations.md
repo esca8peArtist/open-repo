@@ -2,10 +2,11 @@
 title: "High-Risk Population Protection Protocols: Dissidents, Activists, and Asylum Seekers"
 project: cybersecurity-hardening
 created: 2026-04-27
+updated: 2026-04-28
 status: complete
 depends_on: threat-model.md, palantir-threat-model.md, opsec-playbook.md, device-hardening-guide.md
-confidence: high — grounded in documented case law, confirmed investigative methods, EFF/ACLU/NLG guidance, UNHCR frameworks, and public court records
-audience: activists, dissidents, asylum seekers, journalists facing government-level targeting
+confidence: high — grounded in documented case law, confirmed investigative methods, EFF/ACLU/NLG guidance, UNHCR frameworks, public court records, and ABA litigation outcomes through April 2026
+audience: activists, dissidents, asylum seekers, journalists, attorneys, and domestic violence survivors facing government-level or intimate-partner targeting
 ---
 
 # High-Risk Population Protection Protocols
@@ -367,6 +368,344 @@ The following trigger conditions should result in immediate escalation to the ne
 
 ---
 
+## Part 6: Scenario Playbooks
+
+These playbooks are operationally sequenced for real situations. Each one identifies the threat context, time windows, step-by-step actions, specific tools, relevant contacts, and common failure modes. They are designed for people already in or entering a crisis — not for theoretical preparation that never gets tested.
+
+Read the playbook for your situation *before* you need it. The middle of a crisis is not the time to learn a new protocol.
+
+---
+
+### Playbook A: Activist Arrested at a Protest
+
+**Threat context**: You are arrested at a demonstration. Charges range from misdemeanor disorderly conduct to felony rioting or assault on a law enforcement officer. You may be held for hours or days. Law enforcement may attempt to gather intelligence during booking, transport, or holding.
+
+**Pre-arrest baseline (should already be in place)**:
+
+Before attending any demonstration with arrest risk:
+- Write the NLG legal hotline number for your city in permanent marker on your arm. Do not rely on your phone — it may be seized. NLG hotline numbers vary by city; find yours at [nlg.org/chapters](https://www.nlg.org/chapters/) before the day of the action. The national Federal Defense Hotline is (212) 679-2811 for federal repression incidents.
+- Leave your primary device at home or in a secure location not accessible to law enforcement at the scene. If you bring a phone, it should be your Layer 2 device with full-disk encryption enabled and a strong alphanumeric passcode. Power it off before any anticipated police contact — this puts it in BFU state, which maximizes extraction resistance.
+- Do not bring: notebooks with contact lists, documents linking you to organizational roles, large amounts of cash, or anything that constitutes evidence of activity beyond your presence at the demonstration.
+- Designate a jail support contact (someone not attending the demonstration) who will receive your call if arrested, knows your bail fund registration, and has your attorney's name and number.
+
+**At the moment of arrest** (0-5 minutes):
+
+1. Do not physically resist, regardless of whether you believe the arrest is lawful. Physical resistance creates additional charges and eliminates Fourth Amendment standing.
+2. Say clearly: "I am invoking my right to remain silent and my right to an attorney." Do not qualify this statement or answer any follow-up questions, including "why won't you cooperate?" or "can you just tell me your name?" You are not required to answer questions. You are required to provide ID in states with "stop and identify" statutes (approximately 24 states), but not to answer substantive questions.
+3. If police ask to search you or your belongings: say "I do not consent to this search." Even if they search anyway (which they may, and can in certain circumstances), your stated non-consent creates a record for a suppression motion.
+4. Do not unlock your phone for any officer. Do not provide your passcode. If pressed, repeat: "I do not consent to searches of my device."
+5. Observe and memorize: officer badge numbers, patrol car numbers, agency (city police vs. sheriff vs. federal), and the time and location of arrest.
+
+**During transport and booking** (5 minutes — hours):
+
+- You will likely be in a vehicle with officers who attempt conversation. This is an intelligence-gathering technique. Remain silent or make only social pleasantries unrelated to the action. Do not discuss charges, other participants, or your organizational role.
+- Do not discuss the case with other arrestees in any shared space. Holding cells are audible to staff and in many jurisdictions have cameras with microphones.
+- At booking, you will be asked basic identification questions. Provide your legal name, address, and date of birth if required (refusal can result in extended holding for identity verification). Do not provide anything beyond what is legally required for booking.
+- When given the opportunity to make a phone call, call: (1) your pre-identified criminal defense attorney; (2) if no answer, the NLG hotline for your jurisdiction; (3) your designated jail support contact. Do not discuss facts of the case on this call — it is recorded.
+
+**Call script for jail call** (use exactly):
+> "My name is [name]. I was arrested at [location] at approximately [time] on [date]. I am invoking my right to remain silent and need an attorney. Please contact [attorney name] at [number] and my bail support contact at [number]. I am at [facility name if known]."
+
+**Post-booking, pre-release** (hours — up to 72 hours):
+
+- If bail is set and you are registered with your local bail fund, they will typically act within hours of being notified. The National Bail Fund Network directory is at [bailfundnetwork.org](https://bailfundnetwork.org) — pre-registration dramatically reduces response time.
+- If you are held without charge for more than 48-72 hours (varies by jurisdiction), your attorney should file a writ of habeas corpus. This is urgent.
+- If you are a non-citizen, immigration consequences can attach immediately upon arrest, before conviction. ICE has placed immigration holds (detainers) at local jails for protesters. Your attorney must address both criminal and immigration dimensions simultaneously — if they are not an immigration attorney, they need to coordinate with one immediately.
+
+**After release**:
+
+1. Document everything within one hour: officer descriptions, badge numbers, precise sequence of events, exact words spoken, any physical harm. Photograph injuries. Photograph damaged property.
+2. Contact your attorney before speaking to anyone about the facts of the case, including media or your own organization. Anything you say publicly can be used against you and can affect co-defendants.
+3. Review your bail conditions carefully. Typical conditions include restrictions on re-arrest, geographic limitations, and (for federal cases) monitoring. Violating bail conditions is a separate criminal offense.
+4. Do not post on social media about the arrest, the demonstration, or what you observed. This is one of the primary ways protest defendants create new evidence against themselves and their co-defendants.
+5. Activate Tier B digital protocols: transition organizing communications to your Layer 2 device, review what data was on any device that was seized, and inform your network (using pre-agreed code language) that you have been arrested.
+
+**Common failure modes**:
+- Talking to police in booking, believing you are "clearing things up." Everything said is recorded and may be used.
+- Calling an unsecured contact who discusses the case over the phone.
+- Posting bail fund contact information or jail location on public social media, which documents co-defendant networks.
+- Failing to have a pre-identified attorney and assuming a public defender will be quickly available (public defenders are assigned at arraignment, which may be 24-72 hours after arrest).
+
+**Sources**: [NLG Mass Defense Program](https://www.nlg.org/massdefenseprogram/), [NLG Hotline Manual (August 2025)](https://www.nlg.org/wp-content/uploads/2025/08/BW-NLG-Hotline-Manual-Guide.pdf), [ACLU Protesters' Rights](https://www.aclu.org/know-your-rights/protesters-rights), *Berghuis v. Thompkins* (2010) on right to silence invocation, *Riley v. California* (2014) on phone searches.
+
+---
+
+### Playbook B: Dissident or Asylum Seeker Preparing to Leave the United States
+
+**Threat context**: You are a non-citizen (visa holder, lawful permanent resident, or undocumented person), or a US citizen with documented government persecution, and you have assessed that departure from the United States is necessary for your safety. This playbook covers the 72-hour pre-departure window and the asylum filing process in receiving countries.
+
+**Who this applies to**: International students whose visas have been revoked (see Öztürk, Section 1.5 of this document), activists facing imminent federal prosecution, non-citizens with active removal orders who have credible fear claims, and US citizens who have experienced documented First Amendment retaliation and meet asylum eligibility criteria in receiving countries.
+
+**Threat assessment before departure decision** (complete before acting):
+
+Departure during pending removal proceedings is typically treated as voluntary departure and may bar re-entry for 3-10 years. Criminal charges survive departure — if a US arrest warrant exists, you will be arrested upon re-entry. Consult an attorney before departure if any of the following are true:
+- Active federal criminal charges or arrest warrant
+- Pending removal (deportation) proceedings
+- Court-ordered restrictions on travel or surrender of passport
+- Upcoming grand jury appearance (flight from a grand jury subpoena creates separate criminal exposure)
+
+If none of the above apply: departure is legally permissible and the decision is yours.
+
+**72-hour pre-departure protocol**:
+
+**Device preparation** (do 48 hours before departure):
+- Factory reset your primary phone. Reinstall only essential apps. Log out of all cloud accounts. This creates a clean device for travel that does not expose historical data at the border.
+- Ensure your Layer 3 (air-gap) device is fully powered down and stored separately from your travel luggage.
+- Export and encrypt any critical documents (personal records, legal filings, organizational evidence you may need for an asylum claim) to a ProtonDrive account under a pseudonymous email you created before this crisis. Store the access credentials physically in a sealed envelope, not on any device.
+- Generate a Monero wallet if you have not already. Acquire a small amount via cash-to-crypto kiosk (Coinstar locations that accept cash to Bitcoin can be combined with a Monero swap; alternatively, LocalMonero.co accepts in-person cash trades). This provides purchasing power that does not require a US-linked bank account in the receiving country.
+
+**Financial preparation** (do 48 hours before departure):
+- Withdraw cash — enough for 30 days of basic expenses in the receiving country. Do not withdraw an unusual amount in a single transaction from your primary account (this flags bank monitoring systems). Spread withdrawals over 3-4 days if time permits.
+- Notify your bank of international travel if you intend to continue using your primary card briefly. Do not notify them of your final destination if it would trigger account flags.
+- Open a Wise (formerly TransferWise) account in advance if you have not done so. Wise allows international money transfers with relatively low documentation requirements and is accessible from most receiving countries. Note that Wise requires identity verification — it is not anonymous, but it is functional where US bank cards may be declined.
+
+**Documentation preparation** (do 48 hours before departure):
+- Gather originals: US passport, any immigration documents (I-551, I-797, I-589 receipt if applicable), court orders establishing your legal status, birth certificate, marriage certificate if relevant.
+- Make physical copies and store them separately from the originals (give copies to a trusted contact who is not traveling with you).
+- If your basis for asylum is political persecution, gather supporting documentation: social media posts documenting government action against you, news articles, organizational membership records, correspondence with attorneys, court filings. These will substantiate your asylum claim.
+
+**Destination selection** (decide 48 hours before departure):
+
+*Canada*: Most geographically accessible. File refugee protection claim immediately upon arrival. As of March 2026 (Bill C-12), new restrictions apply — **you must file within 14 days of entry** and avoid entry at land border crossings, which are subject to the Safe Third Country Agreement. **Fly to Toronto, Vancouver, or Montreal.** The STCA does not apply to air arrivals. Contact the Canadian Council for Refugees ([ccrweb.ca](https://ccrweb.ca)) for legal referral after arrival. Filing under the Convention Refugee or Protected Persons framework triggers access to the IRB (Immigration and Refugee Board of Canada).
+
+*Ireland*: No visa required for US nationals. File the asylum application at the International Protection Office (IPO) in Dublin within 72 hours of arrival. Accessible via direct flights from many US cities. Initial decision timeline is approximately 13 weeks under normal circumstances. Contact the Irish Refugee Council ([irishrefugeecouncil.ie](https://www.irishrefugeecouncil.ie)) for legal referral upon arrival. The IPO address is 79-83 Lower Mount Street, Dublin 2.
+
+*Germany*: File at a German Foreigners Office (Ausländerbehörde) or Federal Office for Migration and Refugees (BAMF) office. German asylum processing has well-developed infrastructure for political cases. Contact AWO (Workers' Welfare Association) or Diakonie for legal referral. Note: if you transit through a third country with your own asylum facilities before reaching Germany, this may affect eligibility under the Dublin Regulation (though this applies differently to US nationals than to those with EU entry stamps).
+
+*Iceland*: File with the Directorate of Immigration (utl.is) upon arrival. Iceland is not part of the Schengen Dublin system in the same way; US nationals can file claims there. The UNHCR Iceland helpline is at [help.unhcr.org/iceland](https://help.unhcr.org/iceland/).
+
+**Day-of departure protocol**:
+
+1. Power off your primary phone before arriving at the airport — not at the gate, but before you enter the terminal.
+2. Do not check in online using your home network in the hours before departure — this creates a record of your location and device.
+3. Travel light. Bring only what you need for 2 weeks and can carry as cabin luggage. Checked luggage is subject to inspection and can be delayed.
+4. At departure security: your phone in BFU state. If CBP or TSA asks about travel purpose, you may decline to answer beyond "personal travel." You are not required to disclose your destination reason.
+5. Do not post travel plans or location on any social media, directly or by implication, until you have filed your asylum claim.
+
+**Immediately after arrival in receiving country**:
+
+1. Find a secure communications device (a local prepaid SIM, or a library computer) before contacting your network. Do not use your US-SIM phone for calls identifying your location until you have assessed local surveillance risk.
+2. Contact the NGO or legal referral organization for the receiving country (listed above).
+3. File your asylum or refugee protection claim as soon as legally possible — delays weaken claims procedurally.
+4. Contact your US attorney by Signal or ProtonMail to notify them of your status and coordinate document transmission if needed.
+
+**Common failure modes**:
+- Departing with active criminal charges without consulting an attorney first — departure can waive certain legal rights and complicate criminal defense.
+- Arriving in Canada at a land border crossing — this triggers STCA return to the US. Fly.
+- Waiting to file the asylum claim, assuming you can settle in first. Filing delays can be used against you.
+- Using your primary US-linked phone in the receiving country, which creates a location record linking your legal identity to the destination.
+
+**Sources**: [Canada–US STCA](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/agreements/safe-third-country-agreement.html), [Bill C-12 asylum changes (March 2026)](https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/03/new-immigration-and-asylum-measures-from-bill-c-12-the-strengthening-canadas-immigration-system-and-borders-act-have-become-law.html), [UNHCR Iceland](https://help.unhcr.org/iceland/), [Irish Refugee Council](https://www.irishrefugeecouncil.ie), [Relocate.World US Asylum Abroad 2026](https://www.relocate.world/articles/us-citizens-seeking-asylum-abroad-2026), EFF Border Crossing Guide at [ssd.eff.org](https://ssd.eff.org).
+
+---
+
+### Playbook C: Attorney Targeted by Government Retaliation
+
+**Threat context**: This playbook addresses attorneys facing government-initiated retaliatory action — including executive orders restricting law firm access to federal buildings or security clearances, DOJ investigations, security clearance revocations, bar disciplinary referrals initiated through political pressure, or surveillance of attorney-client communications. This has become a documented and ongoing threat category in 2025-2026: at least five executive orders targeted specific law firms, and the ABA filed suit in June 2025 to halt what it characterized as "a campaign to intimidate the entire legal profession." As of April 2026, the ABA's amicus brief supports ongoing DC Circuit challenges.
+
+**Threat severity assessment**:
+
+The threat to attorneys differs from the threat to activists in several important ways:
+1. Attorneys retain professional obligations that cannot be abandoned under pressure — they cannot simply stop representing disfavored clients without ethical consequences to clients.
+2. Attorney-client privilege is both a shield (communications are protected) and a target (government actors have attempted to pierce privilege through surveillance and disciplinary proceedings).
+3. The chilling effect on the broader legal community means that even attorneys who are not targeted directly may face difficulty retaining clients or co-counsel for politically sensitive matters.
+4. International Day of the Endangered Lawyer 2026 focused on the United States specifically — [The Fulcrum's coverage](https://thefulcrum.us/rule-of-law/endangered-lawyer-day-usa-rule-of-law-under-threat) documents the coordinated campaign.
+
+**Immediate actions when you receive notice of adverse government action**:
+
+*Security clearance revocation* (within 24 hours of notice):
+1. Do not accept the revocation as final. In December 2025, a federal judge blocked the Trump administration from revoking the clearance of whistleblower attorney Mark Zaid, finding that "Zaid's representation of whistleblowers and other clients adverse to the government was the sole reason for summarily revoking his security clearance." Zaid's constitutional challenge succeeded on First Amendment retaliation grounds.
+2. Immediately contact the ABA's litigation support infrastructure: the ABA filed suit in June 2025 and has maintained amicus support in ongoing appeals. Reaching out to the ABA's Center for Human Rights or Office of the President creates a record of your targeting and may connect you to ongoing litigation.
+3. Retain a constitutional law attorney (separate from yourself) to file for injunctive relief. The firms that sued immediately after EO targeting (Perkins Coie, Paul Weiss, Jenner & Block, WilmerHale) prevailed on preliminary injunctions. Speed matters.
+4. Document the nexus between the adverse action and your protected legal work. Courts have required the government to justify clearance revocations on non-retaliatory grounds; a documented connection between the revocation and your representation of disfavored clients is the core of a First Amendment retaliation claim.
+
+*Executive order restricting federal access*:
+- File for emergency injunctive relief in DC District Court. All firms that challenged EOs in court through June 2025 prevailed.
+- Coordinate with your bar association. The State Bar of California ([calbar.ca.gov](https://www.calbar.ca.gov/news/state-bar-raises-concerns-over-federal-overreach-law-firm-executive-orders-and-doj-discipline-rule)), the New York City Bar Association, and the ABA have all filed formal statements or briefs against the EO targeting. Your state bar's formal position strengthens judicial challenges.
+- Assess whether you need to notify clients. If an EO limits your ability to access federal courts or agencies on a client's behalf, you have an ethical obligation to inform them promptly so they can arrange alternative counsel if needed.
+
+*DOJ bar disciplinary referral*:
+- Contact the National Association of Criminal Defense Lawyers (NACDL) at [nacdl.org](https://www.nacdl.org). NACDL has been actively tracking politically-motivated disciplinary referrals and can provide referral to experienced disciplinary counsel.
+- Do not respond to a disciplinary inquiry without a disciplinary defense attorney. The rules governing disciplinary proceedings differ from civil litigation — what you say in a disciplinary response can be used in subsequent criminal proceedings.
+
+**Communications security for targeted attorneys**:
+
+Attorney-client privilege does not physically prevent surveillance — it creates legal grounds for suppression after the fact. To minimize the risk of surveillance in the first place:
+- All client communications: Signal with disappearing messages set to 1 week. ProtonMail for email with clients who can use it. Do not use your firm's standard email for any communication with clients you have reason to believe are under government surveillance.
+- Legal strategy discussions with co-counsel: assume any non-E2E channel is potentially monitored. The Jan. 6 prosecutions included documented instances where prosecutors obtained attorney discussions that had been shared through non-privileged channels.
+- Physical meetings with clients: if you have reason to believe your office is under surveillance, meet in a different location. A government building (a federal courthouse lobby, for example) is ironic but effective — government surveillance in those locations has legal exposure for the surveillance operators.
+- Do not discuss case strategy on mobile calls. Calls generate carrier metadata and are subject to CALEA intercept capabilities. Use Signal calls if you must communicate by voice.
+
+**Protecting your clients during your targeting**:
+
+Your targeting is often specifically designed to harm your clients by disrupting their representation. Steps to minimize client harm:
+1. Maintain meticulous documentation of all adverse government actions against you so that any eventual client prejudice is documentable.
+2. Brief your clients clearly on what is happening and what it means for their representation. Clients have a right to seek alternative counsel; that right must not be impeded by your uncertainty about your own situation.
+3. Identify backup counsel for each active matter — ideally someone who has already been briefed on the case and can step in without extensive onboarding.
+4. If you are forced to withdraw from representation (e.g., because a security clearance revocation prevents you from accessing classified information needed for the case), provide a formal, documented withdrawal notice and sufficient notice for the client to obtain successor counsel.
+
+**Personal security for the individual attorney**:
+
+Security clearance revocations and EO targeting have been accompanied, in several documented instances, by increased personal surveillance, social media monitoring, and attempts to identify confidential sources through analysis of public filings. The physical and digital security protocols in Parts 1 and 2 of this document apply fully to targeted attorneys:
+- Review your social media presence immediately. Any public post that could be characterized as indicative of political motivation for your legal work is a potential exhibit in a retaliation narrative.
+- Enable Signal for all sensitive network contacts. The surveillance techniques documented in the `palantir-threat-model.md` — particularly social network mapping through communications metadata — apply to attorneys as readily as to activists.
+- If you are a solo practitioner or small-firm attorney, your financial vulnerability is significantly higher than a large-firm attorney. The ABA's pro bono matching infrastructure and the NACDL's resources for targeted counsel include financial assistance components — contact them before your resources are depleted.
+
+**Common failure modes**:
+- Accepting adverse government action without legal challenge — every firm that challenged EO targeting in court prevailed, at least at the preliminary injunction stage.
+- Failing to notify clients promptly, creating additional ethical exposure.
+- Continuing to use standard firm email for privileged communications with high-risk clients.
+- Conflating your personal legal defense with your clients' defense — these require separate counsel.
+
+**Sources**: [ABA lawsuit (June 2025)](https://www.americanbar.org/news/abanews/aba-news-archives/2025/06/aba-files-suit-to-halt-govt-intimidation/), [ABA amicus brief (April 2026)](https://www.americanbar.org/news/abanews/aba-news-archives/2026/04/aba-amicus-brief-law-firms-executive-orders/), [Mark Zaid security clearance injunction (December 2025)](https://abcnews.go.com/US/wireStory/judge-blocks-trump-effort-strip-security-clearance-attorney-128680628), [International Day of the Endangered Lawyer 2026 US report (The Fulcrum)](https://thefulcrum.us/rule-of-law/endangered-lawyer-day-usa-rule-of-law-under-threat), [Law Society UK — Keep Your Hands Off the Lawyers](https://www.lawsociety.org.uk/Topics/Research/Keep-your-hands-off-the-lawyers), [NACDL](https://www.nacdl.org/Media/DefendingProtestersFacingCriminalCharges), [Wikipedia — Targeting of law firms and lawyers under the second Trump administration](https://en.wikipedia.org/wiki/Targeting_of_law_firms_and_lawyers_under_the_second_Trump_administration).
+
+---
+
+### Playbook D: Domestic Violence Survivor with Security Concerns Leaving an Abuser
+
+**Threat context**: Survivors of intimate partner violence face a distinct and often under-recognized digital and physical threat model. The abuser's threat is not governmental but may in some respects exceed the government's technical capability — a cohabitating abuser has physical access to devices, accounts, vehicles, and social networks. Ninety-nine percent of intimate partner violence survivors also experience financial abuse, which compounds the surveillance problem: shared bank accounts, shared phone plans, and shared cloud accounts give abusers continuous visibility into location, communications, and activities.
+
+This playbook treats the abuser as an adversary with high physical access and moderate technical sophistication, and applies the same layered security model used in the rest of this document to that specific threat.
+
+**Critical distinction before any action**: The safety planning principle from the NNEDV Safety Net Project is foundational: **do not remove monitoring technology or change security practices without a comprehensive safety plan.** Abusers frequently escalate violence when they lose surveillance capability. Every step in this playbook should be preceded by a safety planning conversation with a domestic violence advocate. The National Domestic Violence Hotline is available 24/7: call 1-800-799-SAFE (7233), text START to 88788, or chat at [thehotline.org](https://www.thehotline.org). Use a device not connected to any shared account or the abuser's network for this contact.
+
+**Threat assessment for your specific situation**:
+
+Before implementing any counter-surveillance measures, assess which of the following monitoring vectors are active in your situation. The NNEDV Safety Net Project's stalkerware guide at [techsafety.org/spyware-and-stalkerware-phone-surveillance](https://www.techsafety.org/spyware-and-stalkerware-phone-surveillance) provides detailed technical indicators.
+
+- **Device-level spyware**: Signs include unexpected battery drain, spikes in mobile data usage, the device appearing to operate independently (screen activating, apps opening), and the abuser appearing to know conversation content they should not know. The Coalition Against Stalkerware offers detection guidance at [stopstalkerware.org](https://stopstalkerware.org/information-for-survivors/).
+- **Account-level monitoring**: Shared iCloud or Google accounts give the monitoring party access to photos, location history, contacts, messages, and browsing history. If your phone is on a shared Apple Family Sharing or Google Family plan, your location is shared continuously unless you have disabled it.
+- **GPS tracking devices**: Physical trackers (AirTags, Tile, commercial GPS trackers) can be placed on vehicles, in bags, or in clothing. iPhones running iOS 14+ alert users to unknown AirTags traveling with them; Android devices require the AirTag Detector app or the Tracker Detect app from Apple. Commercial GPS trackers require RF scanning equipment to detect. Ask your local domestic violence shelter or a trusted mechanic to help inspect your vehicle.
+- **Carrier-level monitoring**: Family plan administrators can access call records, text content (on most carriers), and real-time location through the carrier's family monitoring tools (AT&T FamilyMap, T-Mobile FamilyMode, etc.). Contact your carrier's domestic violence policy line — most major US carriers have DV-specific account separation processes that do not require notifying the account holder.
+- **Financial monitoring**: Joint accounts, shared credit cards, and mutual financial advisors create continuous monitoring of spending patterns, locations, and activities.
+
+**The safe device strategy** (do this first, before any other change):
+
+1. Identify a device that the abuser does not have physical access to and that is not connected to any shared account. This may be a library computer, a friend's phone, or a new prepaid device purchased with cash. This is your secure communication device from this point forward.
+2. From the secure device: create a new email account at ProtonMail or Gmail (a new account, not connected to your existing Google account) under a non-identifying username.
+3. From the secure device: download Signal and register it using a Google Voice number created with the new email account. This is your new secure communications channel.
+4. Contact your domestic violence advocate, attorney, and any shelter or housing resources from this secure device only. Do not conduct any safety planning from your primary device until you have assessed and mitigated its monitoring status.
+
+**Safety planning timeline** (coordinate with DV advocate on specific timing):
+
+*T-7 to T-14 days before planned departure*:
+- Contact a domestic violence shelter or service organization for a safety planning conversation. Find shelters at [domesticshelters.org](https://www.domesticshelters.org) using a secure device.
+- Open a personal bank account at a different bank than any shared account, using a branch physically removed from your usual location. Use a P.O. Box or a trusted friend's address as the mailing address if you do not yet have a secure residence.
+- Gather important documents in a portable format (ID, passport, social security card, birth certificates for children, immigration documents, medical records, school records, financial records). If originals are not accessible, request replacement copies from the issuing agencies.
+- If you have children, consult a family law attorney about custody implications before departure. Leaving the jurisdiction with children can create legal complications even when there is no custody order in place. Most domestic violence legal advocates can refer you to a family law attorney.
+
+*T-48 hours before departure*:
+- Notify your domestic violence advocate of your planned departure date and destination.
+- Arrange transportation that does not use a vehicle known to the abuser and that does not rely on a ride-share app linked to your primary account (where ride history is visible).
+- If you must use your primary phone before departure: know that it may be monitored. Use it only for normal-pattern activities. Do all planning and communication on your secure device.
+- If you have workplace contacts who need to be aware (e.g., if you are changing your emergency contact or need FMLA leave): do not use work email or phone for this communication if the abuser knows your work contact. Use the secure channel.
+
+*Day of departure*:
+- Leave when the abuser is not present if at all possible.
+- Take your document packet, the secure device, cash, and essential medications.
+- Do not tell the abuser directly that you are leaving. This is the moment of maximum escalation risk.
+- Go directly to a shelter, a trusted contact's home, or a hotel booked under a third party's name or with cash. Do not go to the first location the abuser would look for you (parents' home, close friend's home the abuser knows well).
+- Inform the DV hotline or shelter of your location so that welfare checks are possible.
+
+*After departure*:
+- Within 48 hours: change passwords for all accounts the abuser may have access to — email, financial, social media, cloud storage, streaming services. Do this from a new device or after verifying that your device is free of stalkerware.
+- Contact your carrier's DV policy line to separate your account from the shared plan. Most carriers have processes to do this without notifying the account holder.
+- File for a protective order (restraining order) in the jurisdiction where you currently reside. Legal aid organizations can help at no cost — find your local legal aid at [lawhelp.org](https://lawhelp.org). A protective order creates a legal record of the threat and provides grounds for police response if violated.
+- Inform your workplace HR and security team. This is uncomfortable but important — abusers frequently appear at workplaces, and your employer's security team needs to be aware in order to protect you. You control what level of detail you share.
+- If you have children, consult a family law attorney about establishing a formal custody arrangement or emergency custody order as soon as possible.
+
+**Digital hygiene after departure** (critical, often skipped):
+
+- If you used your primary device during planning, assume it may have been compromised. Get a forensic evaluation (through your DV shelter's tech safety advocate, not a commercial phone repair shop) before using it for sensitive communications.
+- Turn off location services on all apps on any device you continue using. Review app permissions thoroughly — many apps (including social media, weather apps, and games) share location data.
+- Review your social media privacy settings. The abuser (and people they enlist) can use public posts to track your location, activities, and new network. Set all accounts to private and review your follower/friend lists.
+- If you shared cloud photo libraries: create a new iCloud or Google Photos account and stop contributing to the shared library. Assume the abuser has already downloaded your previous photos.
+
+**Supporting networks and organizations**:
+- **National Domestic Violence Hotline**: 1-800-799-SAFE; chat at [thehotline.org](https://www.thehotline.org)
+- **Safety Net Project (NNEDV)**: [techsafety.org](https://www.techsafety.org) — detailed tech safety guides
+- **Coalition Against Stalkerware**: [stopstalkerware.org](https://stopstalkerware.org) — detection guides, partner with NNEDV
+- **DomesticShelters.org**: shelter directory at [domesticshelters.org](https://www.domesticshelters.org)
+- **LawHelp.org**: local legal aid referrals for protective orders
+
+**Common failure modes**:
+- Changing digital practices suddenly before safety planning is complete — this can trigger escalation before protective infrastructure is in place.
+- Using a shared device for any safety planning communication.
+- Assuming that the abuser "wouldn't know how to" use stalkerware — stalkerware apps are commercially available, legally purchasable, and do not require technical sophistication to install on a device the installer has physical access to.
+- Not addressing the vehicle GPS question — location tracking via vehicle tracker has been used to find survivors after departure in documented cases.
+- Using ride-share apps linked to the primary account, creating a record of departure route and destination.
+
+**Sources**: [NNEDV Safety Net Project](https://www.techsafety.org/resources-survivors), [National DV Hotline internet safety](https://www.thehotline.org/plan-for-safety/internet-safety/), [Coalition Against Stalkerware](https://stopstalkerware.org/information-for-survivors/), [Safety Net Technology Safety Plan](https://www.techsafety.org/resources-survivors/technology-safety-plan), [Double Awareness Month 2025 (NNEDV/Safety Net)](https://www.techsafety.org/blog/2025/10/28/double-awareness-month-2025-domestic-violence-and-cybersecurity-1).
+
+---
+
+### Playbook E: Uyghur, Iranian, or Other Transnational Repression Target in the United States
+
+**Threat context**: Transnational repression differs from domestic government targeting in a specific way: the threat originates from a foreign government, may involve both that government's intelligence apparatus and diaspora informants, and can use vectors that US law enforcement cannot (or will not) address quickly. The People's Republic of China's campaign against Uyghur activists is the most documented example: a 2025 investigation found that 60 of 105 interviewed Uyghur dissidents across 23 countries believed they had been surveilled by Chinese agents. Tactics include social media hacking (especially via spear-phishing to deliver malware through apparently legitimate tools — in March 2025, World Uyghur Congress leaders were targeted via a trojanized Uyghur-language text editor), family member coercion in the country of origin, and direct threats by WeChat or phone.
+
+The Council on Foreign Relations documented that transnational repression grew in 2025 and is expected to continue expanding. The Freedom House Transnational Repression database identifies China, Russia, Iran, Saudi Arabia, Turkey, and Ethiopia as the six most prolific practitioners.
+
+**Threat model for this population**:
+
+*Primary vectors for Chinese state targeting*:
+- Spear-phishing emails impersonating trusted NGO partners or community organizations, delivering malware via documents or installers
+- Compromise of WeChat and WhatsApp accounts (Chinese authorities have direct access to WeChat; WhatsApp accounts can be compromised via malicious links)
+- Infiltration of diaspora community organizations by agents posing as activists or community members
+- Direct phone calls from Chinese police officers making threats (documented in the 2025 investigation cited above)
+- Family coercion: relatives in China are interrogated or threatened as leverage
+
+*Primary vectors for Iranian state targeting*:
+- Phishing infrastructure impersonating Western human rights organizations
+- Legal requests through international channels (Interpol red notices — though Freedom House research documents Germany's resistance to honoring politically-motivated notices against Iranian dissidents)
+- Social engineering of diaspora community leaders
+
+*Primary vectors for Turkish state targeting*:
+- Interpol red notices for politically-motivated charges
+- Cooperation requests to hosting countries' intelligence services
+- Surveillance of Gülenist and Kurdish community networks in Europe and the US
+
+**Immediate protective measures** (these are more device-intensive than for domestic threat actors):
+
+*Device hygiene*:
+- Do not install any application received through community channels, even if it appears to be from a trusted organization, without first verifying with the sending organization via a channel separate from the one through which you received the file. The World Uyghur Congress 2025 attack used a trojanized version of a legitimate Uyghur-language text editor — exactly the kind of tool that would be trusted by community members.
+- Move all community communications off WeChat. For Uyghur community members, this is directly relevant: WeChat is operated by Tencent, which has near-total compliance with PRC government data requests. Signal or Briar are the appropriate replacements. If network members will not leave WeChat, treat everything on that platform as compromised.
+- Enable Google Advanced Protection Program or Apple Lockdown Mode on all primary devices. Lockdown Mode (iOS 16+/macOS Ventura+) is specifically designed for high-risk users targeted by sophisticated attackers: it disables most zero-click attack surfaces including message link previews, complex WebKit features, and incoming FaceTime calls from unknown contacts. The tradeoff in usability is significant but appropriate for this threat level.
+- For Android users in this threat tier: GrapheneOS provides the most robust security hardening currently available on Android hardware. It is available for Google Pixel devices at [grapheneos.org](https://grapheneos.org).
+
+*Communications compartmentalization*:
+- Do not discuss sensitive political activities on any platform linked to a real-name account that the home-country government can access. This includes Facebook (which has responded to Chinese and other government requests), Instagram, and TikTok (ByteDance).
+- Verify the identity of new community members before including them in any organizing conversation. The HK 47 prosecution and documented Iranian exile network infiltrations both involved agents who had established community trust over months before providing information to authorities.
+
+*Protecting family members in the country of origin*:
+- Compartmentalize your advocacy activities from any communication with family members. If your relatives' communications are monitored, they cannot testify to what they do not know.
+- Establish a safe signal with family — a regular check-in that, if interrupted or altered in character, indicates duress. This is the equivalent of the network check-in protocol in Section 2.2 of this document.
+- Contact Freedom House's Transnational Repression documentation project and your local Human Rights Watch or Amnesty International office if you receive a threat. Documented threats create a record that strengthens asylum claims and may trigger international human rights mechanisms.
+
+**If you receive a direct threat** (phone call from home-country police, WeChat message from government actor, in-person confrontation):
+
+1. Do not comply with any demand in the threat before consulting an attorney and a human rights organization.
+2. Document the threat immediately: date, time, platform, content of the message, any phone number or account identifier used.
+3. Report to the FBI's transnational repression reporting line. The FBI has a specific program addressing foreign government harassment of persons in the United States — contact the local field office. Reporting does not resolve the threat but creates a US government record.
+4. Contact Front Line Defenders at [frontlinedefenders.org](https://www.frontlinedefenders.org) via their emergency contact form. Front Line Defenders provides emergency grants, temporary relocation assistance, and case documentation for at-risk human rights defenders. They have processed cases from Uyghur, Iranian, and Tibetan activists in the United States.
+5. Contact Access Now's Digital Security Helpline at [accessnow.org/help](https://www.accessnow.org/help) for a forensic assessment of your device if you have reason to believe you have been targeted with spyware. Access Now's team has experience specifically with state-sponsored spyware targeting diaspora communities.
+
+**Interpol red notice and extradition risk**:
+
+If your home country government has filed or threatens to file an Interpol red notice:
+- Contact Fair Trials International ([fairtrials.org](https://www.fairtrials.org)) — an organization that specifically litigates against politically-motivated Interpol notices.
+- Consult an immigration attorney about documenting the political basis of any charges that form the basis for an extradition request. Most US extradition treaties include a "political offense exception" that bars extradition for acts that are of a political character.
+- Avoid travel to countries with poor track records of Interpol notice independence, particularly countries that have extradited nationals of your home country on politically-motivated charges.
+
+**Common failure modes**:
+- Continuing to use WeChat for any organizing communications
+- Installing community-distributed software without verification from a separate channel
+- Assuming that a new community member is trustworthy because they know other trusted people — infiltration typically builds on that assumption
+- Not reporting direct threats to the FBI because of distrust of US authorities — in this specific context, a documented FBI report strengthens asylum claims and may result in investigation of the threatening actor
+
+**Sources**: [CFR Transnational Repression 2025](https://www.cfr.org/expert-brief/transnational-repression-grew-2025-and-it-will-only-get-worse), [CSOHATE — Chinese Transnational Repression 2025](https://www.csohate.org/2025/09/02/chinese-transnational-repression/), [Citizen Lab — Uyghur Language Software Hijacked](https://citizenlab.ca/research/uyghur-language-software-hijacked-to-deliver-malware/), [Freedom House Transnational Repression](https://freedomhouse.org/report/transnational-repression), [Front Line Defenders Global Analysis 2025](https://frontlinedefenders.shorthandstories.com/frontline-defenders-global-analysis-2025/index.html), [Access Now Digital Security Helpline](https://www.accessnow.org/help), [Human Rights Foundation — Lasting Impacts of Transnational Repression](https://hrf.org/latest/the-lasting-impacts-of-transnational-repression/).
+
+---
+
 ## Integration with Core Playbook
 
 This document extends the following sections of the core playbooks:
@@ -380,14 +719,42 @@ This document extends the following sections of the core playbooks:
 
 ## Key Resources
 
+**Legal defense and arrest support**:
 - **EFF Surveillance Self-Defense**: https://ssd.eff.org — maintained guides for journalists, activists, and at-risk populations
-- **Access Now Digital Security Helpline**: https://www.accessnow.org/help — 24/7 direct technical assistance in 9 languages
-- **National Lawyers Guild Mass Defense Program**: https://www.nlg.org/massdefenseprogram — legal hotlines, jail support, and mass defense coordination
-- **National Bail Fund Network**: https://www.bailfunds.github.io — directory of local bail funds
+- **National Lawyers Guild Mass Defense Program**: https://www.nlg.org/massdefenseprogram — legal hotlines, jail support, and mass defense coordination. Federal Defense Hotline: (212) 679-2811
+- **NLG Hotline Manual (August 2025)**: https://www.nlg.org/wp-content/uploads/2025/08/BW-NLG-Hotline-Manual-Guide.pdf — operational arrest support protocol
+- **National Bail Fund Network**: https://bailfundnetwork.org — directory of local bail funds
 - **ACLU Know Your Rights — Protesters**: https://www.aclu.org/know-your-rights/protesters-rights
+- **NACDL (criminal defense attorneys)**: https://www.nacdl.org — referrals for criminal defense in protest and political cases
+
+**Asylum and international sanctuary**:
 - **UNHCR Asylum Process (Iceland)**: https://help.unhcr.org/iceland/
-- **Tor Project Bridges**: https://bridges.torproject.org
+- **Irish Refugee Council**: https://www.irishrefugeecouncil.ie — legal referrals for Ireland asylum process
+- **Canadian Council for Refugees**: https://ccrweb.ca — Canadian refugee protection legal referrals
+- **Relocate.World — US Asylum Abroad 2026**: https://www.relocate.world/articles/us-citizens-seeking-asylum-abroad-2026
+
+**Attorneys targeted by government**:
+- **ABA Center for Human Rights**: https://www.americanbar.org/groups/human_rights/ — supports attorneys under government pressure
+- **Law Society UK — Endangered Lawyers 2026 report**: https://www.lawsociety.org.uk/Topics/Research/Keep-your-hands-off-the-lawyers
+
+**Transnational repression**:
+- **Access Now Digital Security Helpline**: https://www.accessnow.org/help — 24/7 direct technical assistance in 9 languages; specializes in state-sponsored spyware
 - **Freedom House Transnational Repression Research**: https://freedomhouse.org/report/transnational-repression
+- **Front Line Defenders Emergency Contact**: https://www.frontlinedefenders.org/en/programme/emergency-contact — emergency grants and relocation for at-risk defenders
+- **Fair Trials International (Interpol red notices)**: https://www.fairtrials.org
+
+**Domestic violence and intimate partner tech safety**:
+- **National Domestic Violence Hotline**: 1-800-799-SAFE; chat at https://www.thehotline.org; text START to 88788
+- **Safety Net Project (NNEDV)**: https://www.techsafety.org — comprehensive tech safety guides for survivors
+- **Coalition Against Stalkerware**: https://stopstalkerware.org — detection and removal guides
+- **DomesticShelters.org**: https://www.domesticshelters.org — shelter directory
+- **LawHelp.org**: https://lawhelp.org — local legal aid for protective orders
+
+**Technical tools** (referenced throughout this document):
+- **Tor Project Bridges**: https://bridges.torproject.org
+- **Briar (mesh messenger)**: https://briarproject.org
+- **GrapheneOS**: https://grapheneos.org
+- **ProtonMail / ProtonDrive**: https://proton.me
 
 ---
 
@@ -397,8 +764,14 @@ This document extends the following sections of the core playbooks:
 
 **High confidence**: The case studies (Khalil, Öztürk, Jan. 6 geofence prosecutions, HK 47) are drawn from public court records, Wikipedia's documented case lists, and mainstream press coverage with named parties.
 
-**Moderate confidence**: The international sanctuary section reflects the legal framework and documented precedents as of early 2026. Asylum processing timelines, Safe Third Country Agreement interpretations, and political will in receiving countries change rapidly. Consult an immigration attorney before making departure decisions.
+**High confidence**: The scenario playbooks (Part 6) are grounded in confirmed organizational protocols (NLG Hotline Manual August 2025, Safety Net Project, Front Line Defenders), documented case outcomes (ABA/EO litigation, Mark Zaid injunction December 2025, World Uyghur Congress spear-phishing March 2025), and current statutes. They represent best-practice synthesis, not legal advice for individual cases.
 
-**Gap**: This document does not cover Pegasus-class zero-click spyware attacks, which represent a distinct threat tier requiring separate analysis (see EFF's Threat Lab reporting and Amnesty International's Security Lab forensic methodology). If you have reason to believe you are a Pegasus target, contact Access Now's Digital Security Helpline immediately.
+**Moderate confidence**: The international sanctuary section reflects the legal framework and documented precedents as of early 2026, including Canada's Bill C-12 changes (effective March 26, 2026). Asylum processing timelines, Safe Third Country Agreement interpretations, and political will in receiving countries change rapidly. Consult an immigration attorney before making departure decisions.
+
+**Moderate confidence**: The transnational repression sections describe threat patterns documented in Freedom House, Citizen Lab, and CFR research. The specific technical attack vectors used by Chinese, Iranian, and Turkish state actors evolve rapidly; check Citizen Lab ([citizenlab.ca](https://citizenlab.ca)) for current analysis.
+
+**Gap**: This document does not cover Pegasus-class zero-click spyware attacks in detail, which represent a distinct threat tier requiring separate analysis (see EFF's Threat Lab reporting and Amnesty International's Security Lab forensic methodology). If you have reason to believe you are a Pegasus target, contact Access Now's Digital Security Helpline immediately — they have the forensic methodology to verify and document it.
 
 **Gap**: Specific bail fund contacts, NLG chapter hotlines, and local criminal defense attorney referrals require local research — this document provides the framework and national resources but not city-specific contacts.
+
+**Gap**: Playbook D (domestic violence) does not address the specific legal and safety challenges in rural areas, where shelter availability and law enforcement cooperation are substantially different from urban contexts. The Safety Net Project and National DV Hotline provide rural-specific guidance.
