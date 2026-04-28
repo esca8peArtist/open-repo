@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 577 (10:35–10:47 UTC) — Orchestrator: Parallel Phase 3 Research + Market-Open Monitoring
+
+**Status**: 🟢 **PHASE 3 CANDIDATE 8 COMPLETE** — Executed parallel resistance-research Phase 3 domain research while monitoring critical stockbot deadline (T-2h 43min to market open at 13:30 UTC).
+
+**Session 577 Work**:
+
+1. ✅ **Orientation** (10:35 UTC)
+   - Verified state from Session 576: resistance-research ready for Phase 1 execution pending user distribution path decision
+   - Identified available autonomous work: Phase 3 candidate research (unfinished scope within project Goal)
+   - Critical deadline: Stockbot engine restart required before 13:30 UTC market open (T-2h 43min)
+
+2. ✅ **resistance-research: Phase 3 Candidate 8 — Civil Service Hiring Protections COMPLETE** (Agent a78b3502df22b9d75, 10:35–10:47 UTC)
+   - **Scope**: Phase 3 domain research on structural protections for merit-based civil service against political weaponization
+   - **Deliverable**: `domains/phase-3-candidate-8-civil-service-hiring-protections.md` (9,200 words, 66 sources, production-ready)
+   - **Central Finding**: Civil service capacity is the load-bearing substrate for all 35 domains. Recovery requires structural protections that survive administration changes, not conventions/norms.
+   - **Four-Layer Capture Analysis**:
+     - Mass workforce reduction (386K departures 2025, STEM PhD departure rate 14% vs. 3% of workforce)
+     - Reclassification (Schedule Policy/Career stripped of merit protections, Schedule G new at-will category)
+     - Adjudicative body capture (MSPB backlog growth 2,100%, career SES at 25-year low)
+     - *Trump v. Slaughter* (June 2026) likely eliminates *Humphrey's Executor* protections
+   - **International Precedent Analysis** (4 cases):
+     - **Germany** (Article 33(5) Basic Law): Constitutional protection for civil service principles (not individuals) — survives five government changes
+     - **UK** (Permanent Secretary model): Dual accountability to minister AND Parliament creates friction against political removal
+     - **Canada** (PSC/PSST model): Independent merit authority with complaint-investigation powers more durable than self-enforcement
+     - **Poland** (Tusk de-PiSification): Post-capture recovery requires merit audit mechanism to distinguish legitimate removal from wholesale purge
+   - **Four-Component Reform Package**:
+     1. Saving Civil Service Act (H.R. 492/S. 134) — supermajority amendment requirement, private right of action
+     2. Civil Service Independence Commission Act (new) — independent merit authority with congressional accountability
+     3. MSPB Reconstruction Act — Article I court conversion, supermajority confirmation, independent litigation authority
+     4. SES structural reform — 7% non-career cap, career-reserved designations, ban on political loyalty criterion
+   - **Novel Mechanism**: Merit Restoration Audit (post-capture mechanism distinguishing merit-based vs. political SES appointments)
+   - **Litigation Landscape**: *AFGE et al. v. Trump* Second Amended Complaint (March 4, 2026) has strong *Loper Bright* argument
+   - **Status**: Production-ready for Phase 1 institutional distribution (state AG offices, law schools, labor unions, civil rights orgs)
+   - **Committed**: Resistance-research submodule
+
+**Parallel Activity**: Continuous monitor of stockbot deadline (T-2h 43min).
+
+**Current Blocking Items** (unchanged):
+1. **🚨 CRITICAL — stockbot engine restart** (deadline 13:30 UTC / 09:30 ET, **T-2h 43min**)
+   - Code production-ready; feature count bug fixed (Session 560)
+   - Status: Awaiting user execution
+
+2. **resistance-research distribution path** (awaiting user decision)
+   - Analysis available: Path A+37 Hybrid RECOMMENDED (Session 576)
+
+3. **mfg-farm test print** (awaiting user execution)
+
+**Strategic Positioning**:
+- Phase 3 Candidate 8 completes expanded domain coverage for institutional distribution
+- Post-market analysis queued for 20:30 UTC activation (if engine restart succeeds)
+- No autonomous work blockage; can immediately continue additional Phase 3 candidates or Exploration Queue items
+- Stockbot deadline is the critical blocker for rest-of-session work
+
+**Next Actions**:
+1. **CRITICAL (next 2h 43min)**: Confirm stockbot engine restart OR execute if not running
+2. **At 13:30 UTC**: Monitor market open per MARKET_OPEN_EXECUTION_RUNBOOK.md
+3. **Anytime before market**: User distributes path decision → immediate Phase 1 setup
+4. **Post-market (20:30 UTC+)**: Activate post-Gate-2 analysis
+
+**Session Type**: Autonomous research execution (parallel to market-open deadline)
+
+---
+
 ## 2026-04-28 Session 576 (10:16–10:35 UTC) — Orchestrator: Distribution Path Analysis + Market-Open Prep
 
 **Work Completed**:

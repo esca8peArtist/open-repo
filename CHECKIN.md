@@ -5,7 +5,53 @@
 
 ---
 
-## Current Session (Session 576 — 2026-04-28 10:16–10:35 UTC — Distribution Path Analysis + Market-Open Prep)
+## Current Session (Session 577 — 2026-04-28 10:47 UTC — Phase 3 Research + Market-Open Monitoring)
+
+**Status**: 🟢 **PHASE 3 CANDIDATE 8 COMPLETE + AWAITING CRITICAL STOCKBOT ENGINE RESTART** — Executed parallel Phase 3 domain research (Civil Service Hiring Protections, 9,200 words, 66 sources). **CRITICAL DEADLINE: Stockbot engine restart required before 13:30 UTC market open (T-2h 43min).**
+
+**Session 577 Work**:
+- ✅ resistance-research Phase 3 Candidate 8 — Civil Service Hiring Protections COMPLETE
+  - Deliverable: `domains/phase-3-candidate-8-civil-service-hiring-protections.md` (9,200 words, 66 sources)
+  - Central finding: Civil service is load-bearing substrate for all 35 domains; requires structural protections vs. norms
+  - Four-layer capture analysis + international precedent + reform package (4 bills) + merit restoration audit mechanism
+  - Production-ready for Phase 1 institutional distribution
+  - Committed to resistance-research submodule
+
+**Critical Blocking Items** (UNCHANGED):
+1. **🚨 CRITICAL — stockbot engine restart** (deadline 13:30 UTC / 09:30 ET, **T-2h 43min**)
+   - Code production-ready; feature count bug fixed (Session 560)
+   - Command: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py &`
+   - Status: **AWAITING USER EXECUTION** — if not done before 13:30 UTC, market-open trading fails
+   
+2. **resistance-research distribution path** (awaiting user decision)
+   - Analysis available: Path A+37 Hybrid RECOMMENDED (Session 576, `DISTRIBUTION_PATH_ANALYSIS.md`)
+   - Decision triggers Phase 1 institutional distribution immediately
+   
+3. **mfg-farm test print** (user action anytime)
+   - Business plan + designs + market research all complete
+   
+4. **seedwarden Phase 1 launch** (user action anytime)
+   - 3 tag corrections + Etsy verification → 21 products ready
+
+**Strategic Positioning**:
+- **Post-market work queued** (if engine restart succeeds):
+  - 20:30 UTC: Post-Gate-2 operations analysis
+  - Additional Phase 3 candidates available in Exploration Queue
+  - Dashboard testing, position monitoring setup
+- **User decisions pending**: distribution path (analysis ready), test print, Etsy launch
+- **All infrastructure complete**: Phase 1 distribution ready (awaiting path decision)
+
+**Next Actions**:
+1. **CRITICAL (next 2h 43min)**: Restart stockbot engine OR confirm already running
+   - Check: `ps aux | grep "spawn_main" | grep -v grep`
+   - If no process: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py &`
+2. **At 13:30 UTC**: Monitor market open using MARKET_OPEN_EXECUTION_RUNBOOK.md
+3. **Anytime**: Review DISTRIBUTION_PATH_ANALYSIS.md and decide Path A / A+37 / B
+4. **Post-market (20:30 UTC)**: Activate post-Gate-2 analysis if engine restart succeeds
+
+---
+
+## Previous Session (Session 576 — 2026-04-28 10:16–10:35 UTC — Distribution Path Analysis + Market-Open Prep)
 
 **Status**: 🟢 **DISTRIBUTION PATH DECISION ANALYSIS READY** — Completed comprehensive comparison of resistance-research distribution paths (A / A+37 Hybrid / B). Analysis recommends **Path A+37 Hybrid** based on 2026 election timing windows (NVRA quiet period Aug 7, DOJ consent decrees May 30, spring legislative sessions, FISA 702 April 30). Awaiting user decision to activate Phase 1 immediately. Stockbot engine restart remains **CRITICAL deadline 13:30 UTC** (2h 50m remaining). Post-market analysis queued for 20:30+ UTC.
 
