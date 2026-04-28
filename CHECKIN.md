@@ -5,7 +5,48 @@
 
 ---
 
-## Since Last Check-in (Session 608 — 2026-04-28 20:52–21:47 UTC)
+## Since Last Check-in (Session 609 — 2026-04-28 22:08–22:25 UTC)
+
+### ✅ Phase 3 Exploration: Real-Time Crisis Monitoring Infrastructure Complete
+
+**Session Status**: All major projects blocked on user decisions. Executed Phase 3 research expansion from Exploration Queue.
+
+**What Happened**:
+
+#### ✅ resistance-research — Phase 3 Candidate 1: Real-Time Crisis Monitoring Infrastructure
+- **Deliverable**: `projects/resistance-research/phase-3-real-time-crisis-monitoring.md` (445 lines, ~5,500 words)
+- **Task**: Expanded complete outline (from Session 573) into unified production-ready document
+- **What This Document Does**:
+  - **Part I**: Unified three-tier monitoring matrix (24 monthly, 10 quarterly, 3 annual domain reviews) with explicit snapshot feed
+  - **Part II**: Formalized monthly crisis snapshot protocol (4 named weeks, time estimates, deliverables, 5 urgency escalation criteria)
+  - **Part III**: All 6 pre-designed contingency decision trees + simultaneous trigger protocol for resolving outcome conflicts
+  - **Part IV**: Integrated coalition intake form + feedback-to-priority-action loop
+  - **Part V**: Monthly update brief publication strategy (key insight: without monthly updates, institutional adoption degrades over time regardless of quality)
+  - **Part VI**: 5 specific integration points with proposal Part IV (implementation roadmap), including monthly assumption checks, election trigger pre-planning, domain vs. roadmap update thresholds, structural refresh timing, formal revision cycle
+  - **Part VII**: Custom-build vs. off-shelf evaluation (no custom build needed — Markdown or Airtable free tier sufficient) + day-one coordinator checklist
+
+- **Why This Matters**: Proposal diagnoses 35 crises + provides vision + theory-of-change + implementation architecture. **Missing piece**: formal real-time monitoring infrastructure to track crisis developments, manage contingency scenarios, and integrate coalition feedback as circumstances evolve. This document fills that gap.
+
+- **Supersedes**: Two predecessor documents (`monitoring-infrastructure-2026.md`, `phase-3-monitoring-infrastructure-2026.md`) are consolidated into single unified resource
+- **Status**: Production-ready for implementation post-distribution decision
+- **Commit**: `34c88e8` + state update commit `d091cc5`
+
+**What's Next**:
+- Phase 3 Candidates 2-4 remain in Exploration Queue (all with complete outlines, ready for expansion):
+  - **Candidate 2**: Institutional Playbooks (8 constituencies, 1,500-2,000 words each)
+  - **Candidate 3**: Adversary Response Modeling & Resilience Architecture
+  - **Candidate 4**: International Precedent Deepening (post-distribution research)
+- **User Decision Needed**: Continue Phase 3 expansion or proceed to distribution execution?
+
+**Session Output**:
+- 1 Phase 3 research deliverable COMPLETE
+- 1 research commit + 1 state commit
+- All work production-ready
+- Total session duration: 17 minutes
+
+---
+
+## Session 608 Summary (2026-04-28 20:52–21:47 UTC) — *Archived*
 
 ### ✅ Parallel Autonomous Work: resistance-research + seedwarden (2 Major Deliverables)
 
@@ -88,22 +129,25 @@
 
 ## Needs Your Input
 
-### 🔴 CRITICAL: Stockbot Engine Restart (User Action)
-- **Status**: Engine offline since April 28 08:36 UTC
-- **Deadline**: Before next market session (2026-04-29 13:30 UTC, if trading live) or ongoing paper trading
+### 🔴 CRITICAL: Stockbot Engine Restart (User Action) 
+- **Status**: Engine offline since April 28 08:36 UTC; **Alpaca paper account configuration needs verification**
+- **Deadline**: Before next market session (varies based on market hours)
 - **Action Required**: 
-  1. Verify Alpaca account (log in to https://app.alpaca.markets/, check Paper Trading account status)
+  1. Verify Alpaca account (log in to https://app.alpaca.markets/ → Paper Trading tab → check Account Type = CASH, Account Balance > $0)
   2. Run: `.venv/bin/python scripts/run_live_trading.py` from `projects/stockbot/` directory
-- **Why This Unblocks**: Once engine restarts, signal threshold analysis can be deployed to 11-ticker paper trading, Gate 1 achievement path begins
+- **Why This Unblocks**: Once engine restarts, signal threshold analysis (Option A: 0.40 threshold_multiplier) can be deployed to 11-ticker paper trading, Gate 1 achievement path begins
 
-### 🟡 IMPORTANT: Signal Threshold Analysis Feedback
-- **Document**: `projects/stockbot/signal-threshold-analysis.md`
-- **Review Item**: Recommendations for threshold_multiplier optimization (Option A: 0.40 vs Option B: 0.30)
-- **Input Needed**: Does the analysis align with your understanding? Any historical context on why 0.5 was chosen? Preference for conservative (A) vs aggressive (B) approach?
+### 🟡 IMPORTANT: Phase 3 Research Expansion Decision
+- **Completed**: Phase 3 Candidate 1 (Real-Time Crisis Monitoring Infrastructure) now production-ready
+- **Available**: Phase 3 Candidates 2-4 in Exploration Queue (all with complete outlines, ready for full expansion)
+  - Candidate 2: Institutional Playbooks (8 constituencies × 1,500-2,000 words each)
+  - Candidate 3: Adversary Response Modeling & Resilience Architecture
+  - Candidate 4: International Precedent Deepening
+- **Decision Needed**: Continue Phase 3 expansion or proceed directly to distribution execution?
 
 ### 🟡 BLOCKING: resistance-research Distribution Path Decision
-- **Options**: Path A / Path A+Domain37 Hybrid / Path B
-- **Status**: All 35 domains complete and production-ready; distribution templates finalized
+- **Options**: Path A / Path A+Domain37 Hybrid (Recommended) / Path B
+- **Status**: All 35 domains complete + production-ready; Phase 3 Candidate 1 complete; distribution templates finalized
 - **Next Step**: User selects distribution path → orchestrator executes Phase 1 immediately
 
 ### 🟡 BLOCKING: mfg-farm Test Print
