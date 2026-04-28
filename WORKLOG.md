@@ -4,7 +4,7 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-28 Session 571 (08:01–08:10 UTC) — Orchestrator: Calibration Block Archive + Seedwarden Phase 3 Expansion
+## 2026-04-28 Session 571 (08:01–09:00 UTC) — Orchestrator: Domain Updates + Exploration Queue Execution
 
 **Work Completed**:
 
@@ -26,13 +26,27 @@
    - **Status**: Production-ready for Phase 3 execution once Phase 1 generates conversion data (estimated Month 3-6 post-launch)
    - **Commits**: seedwarden project master (included in agent output)
 
-**Session Summary**:
-- Calibration block archive complete
-- Seedwarden Phase 3 expansion fully scoped and documented
-- Code ready for immediate Phase 3 launch planning
-- Critical stockbot deadline reminder maintained (5h 20min remaining at session end)
+3. ✅ **resistance-research: April-May 2026 Domain Content Maintenance** (Agent aaeb2d5f9700d69c5, 08:10–09:00 UTC)
+   - **Scope**: Update 35-domain framework with April-May 2026 civic calendar developments (Iran WPR deadline May 1, SPLC indictment, Trump v. Wilcox, SAVE Act, FISA vote, ballot initiative suppression)
+   - **Deliverables**: 5 domain files updated with ~4,000 words of substantive analysis
+     - **Domain 19f (War Powers Reform)**: GOP AUMF authorization track (Murkowski) + Hormuz dual-blockade legal analysis
+     - **Domain 29 (Prosecutorial Weaponization)**: SPLC indictment defense details + 100+ org mutual defense coalition
+     - **Domain 6 (Judicial Independence)**: Trump v. Slaughter + Powell reappointment intersection + NLRB/FTC/CFPB status
+     - **Domain 1 (Voting Rights)**: SAVE Act state signings (4 states) + state ballot measure restriction bills (150+) + Arizona/Michigan initiatives + FISA April 30 vote status
+     - **Domain 35 (SCOTUS)**: Powell-Slaughter + Foote v. Ludlow cert denial + political timing analysis
+   - **Key findings**: Bifurcated post-May 1 strategy (WPR failure + AUMF authorization track); constitutional amendment only enforcement mechanism; FISA vote is this week (not May 20); ballot initiative suppression is coordinated 43-state wave
+   - **Status**: Production-ready for distribution (content now current through 2026-04-28)
+   - **Commit**: `410592a` on master (resistance-research submodule)
 
-**Critical Deadline Remains**: Stockbot engine restart required by 13:30 UTC (T-5h 20min) — no user action taken as of 08:10 UTC
+**Session Summary**:
+- Calibration block archive complete (Session 571 start)
+- Seedwarden Phase 3 expansion fully scoped (Session 571 start)
+- Resistance-research domains updated with April-May 2026 content (NEW, Session 571 continuation)
+- All Exploration Queue items currently available are now complete or verified
+- Code ready for immediate Phase 3 launch + distribution prep
+- Critical stockbot deadline reminder maintained (4h 30min remaining at session end)
+
+**Critical Deadline Remains**: Stockbot engine restart required by 13:30 UTC (T-4h 30min at 09:00 UTC) — no user action taken as of session end
 
 ---
 

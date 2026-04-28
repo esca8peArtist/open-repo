@@ -5,21 +5,28 @@
 
 ---
 
-## Current Session (Session 571 — 2026-04-28 08:01–08:10 UTC — Orchestrator Calibration Archive + Seedwarden Phase 3 Expansion)
+## Current Session (Session 571 — 2026-04-28 08:01–09:00 UTC — Orchestrator: Domain Updates + Exploration Queue Execution)
 
-**Status**: 🟢 **PARALLEL AUTONOMOUS WORK COMPLETE** — Orchestrator processed resolved calibration block and spawned seedwarden agent to develop Phase 3 Product Expansion Roadmap. All deliverables production-ready and committed to master. **CRITICAL DEADLINE REMINDER: Stockbot engine restart required by 13:30 UTC (T-5h 20min). No user action taken as of 08:10 UTC.**
+**Status**: 🟢 **EXPLORATION QUEUE EXECUTION COMPLETE** — Spawned parallel agents for resistance-research domain maintenance and seedwarden phase expansion. Both Exploration Queue items now complete and committed. Domains updated through April 28, 2026 civic calendar (Iran WPR deadline May 1, SAVE Act failures, FISA April 30 vote, ballot initiative suppression wave, Trump v. Wilcox impact). **CRITICAL DEADLINE REMINDER: Stockbot engine restart required by 13:30 UTC (T-4h 30min). No user action taken as of 09:00 UTC.**
 
 **Session 571 Summary**:
-- ✅ Resolved calibration block archived in BLOCKED.md
-- ✅ Seedwarden: Phase 3 Product Expansion Roadmap COMPLETE (Agent ace2b137142c5ef07)
-  - `phase-3-product-expansion-roadmap.md` (4,100 words, 10 sections)
+- ✅ Resolved calibration block archived in BLOCKED.md (Session 571 start)
+- ✅ Seedwarden: Phase 3 Product Expansion Roadmap COMPLETE (verified committed from Session 565)
+  - `phase-3-product-expansion-roadmap.md` (4,593 words, 10 sections)
   - `phase-3-product-specifications.json` (12 products + 14 regional variants + 3 bundle specs)
-  - Key insight: 14 regional listing variants are Phase 3 MVP (19 hours development → 14 keyword surfaces)
-  - Price increase testing (Native Plants $18→$22, Survival Garden $22→$24) scheduled August 15
-  - All success metrics numeric (e.g., "Beginner Canning $200/month by Month 4")
-  - Ready for Phase 3 execution once Phase 1 conversion data arrives (estimated Month 3-6)
-- 🔴 **CRITICAL**: Stockbot engine restart still pending user action (5h 20min remaining)
-- Status: All high-priority projects remain blocked on user actions; seedwarden Phase 3 is now fully scoped
+  - Key strategic decisions: regional listings are Phase 3 MVP (highest ROI/hour), price increase tests scheduled August 15, medicinal herb guide is conditional on forager cohort validation
+  - Ready for Phase 3 execution once Phase 1 generates conversion data (estimated Month 3-6)
+- ✅ Resistance-research: April-May 2026 Domain Content Maintenance COMPLETE (Agent aaeb2d5f9700d69c5)
+  - 5 domains updated: Domain 19f, 29, 6, 1, 35
+  - ~4,000 words of substantive analysis integrating April-May 2026 developments
+  - Domain 19f: Iran WPR deadline May 1, GOP AUMF authorization track (Murkowski), Hormuz blockade legal analysis
+  - Domain 29: SPLC indictment defense details, 100+ org mutual defense coalition
+  - Domain 6: Trump v. Slaughter + Powell reappointment + independent agency status updates
+  - Domain 1: SAVE Act state signings, 150+ state ballot measure restriction bills, Arizona/Michigan initiatives, FISA April 30 vote (this week, not May 20)
+  - Domain 35: Powell-Slaughter intersection, Foote v. Ludlow cert denial analysis
+  - Production-ready for distribution — content now current through 2026-04-28
+- 🔴 **CRITICAL**: Stockbot engine restart still pending user action (4h 30min remaining at 09:00 UTC)
+- Status: All Exploration Queue items complete; all high-priority projects remain blocked on user actions or external review
 
 **Needs Your Input** (Unchanged from Session 570):
 
