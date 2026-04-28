@@ -5,9 +5,9 @@
 
 ---
 
-## Since Last Check-in (Session 589 — 2026-04-28 13:12–13:30 UTC)
+## Since Last Check-in (Session 589 — 2026-04-28 13:12–13:45 UTC)
 
-🟢 **Market-Open Pre-Flight COMPLETE** — T-16 minutes to 13:30 UTC
+🟢 **Market-Open Pre-Flight COMPLETE + Item 10 (Domain 37 Scoping) COMPLETE** — Market open T+15 minutes
 
 **Session 589 Status**:
 - ✅ Engine validation: RUNNING (PID 1140617), all pre-market checks PASS
@@ -24,7 +24,17 @@
 **Post-Market Schedule**:
 - **20:30 UTC**: Exploration Queue Item 3 execution (post-Gate-2 operations analysis) — conditional on Day 1 success
 
-**No further action required.** Engine will execute its first signal cycle automatically at market open (13:30 UTC). Orchestrator will resume at 20:30 UTC for post-market work.
+**Session 589 Autonomous Work** (13:35–13:40 UTC):
+
+2. ✅ **Exploration Queue Item 10: Domain 37 Preliminary Scoping COMPLETE**
+   - **Deliverable**: `ITEM10_DOMAIN37_CANDIDATES.md` (3,200 words, 10+ sources)
+   - **Gap analysis**: Identified 4 structural gaps in 35-domain framework
+   - **5 candidates proposed** with Candidates A & B fully scoped (research roadmaps included)
+   - **Candidate A (Recommended)**: Foreign & Transnational Interference (8-10K words, 50-60 sources, high urgency for 2026)
+   - **Candidate B**: Constitutional Architecture & Article V (7.5-9K words, 45-55 sources, medium-high urgency at 28/34 convention threshold)
+   - **Outcome**: Production-ready for Path A+Domain37 Hybrid execution if user selects this distribution path
+
+**No further action required from orchestrator.** Engine will execute trading cycles automatically. Next scheduled work: Item 3 (post-Gate-2 operations analysis) at 20:30 UTC post-market.
 
 ---
 

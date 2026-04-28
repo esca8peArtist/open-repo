@@ -122,16 +122,17 @@
 
 ---
 
-### Item 10: resistance-research Domain 37 Preliminary Scoping (Session 586)
-**Status**: QUEUED — Conditional on user selecting Path A+Domain37 Hybrid
-**Trigger**: User selects Hybrid path, or available now for exploratory research
+### ✅ Item 10: resistance-research Domain 37 Preliminary Scoping (Session 589)
+**Status**: COMPLETED 2026-04-28 13:40 UTC
 **Scope**: Identify potential Domain 37 candidate (gap analysis on existing 36 domains), preliminary research strategy, scope definition
 **Deliverables**: 
-- 3–5 Domain 37 candidate topics (with rationale for each as gap-filler)
-- Preliminary research roadmap (sources, scope, estimated production time)
-- Executive summary template for Domain 37 (consistent with existing 36-domain format)
-**Owner**: orchestrator (exploratory scoping, enables fast execution if Hybrid path chosen)
-**Context**: If user chooses Hybrid, orchestrator can execute Domain 37 research immediately without multi-session cycle time.
+- ✅ `ITEM10_DOMAIN37_CANDIDATES.md` (3,200 words, 10+ sources)
+- ✅ 5 Domain 37 candidate topics (A-E, with full gap analysis and rationale)
+- ✅ Research roadmaps for top 2 candidates (Candidate A: Foreign & Transnational Interference, Candidate B: Constitutional Architecture & Article V)
+- ✅ Format consistency verified (matches existing domain structure)
+**Key findings**: 4 structural gaps identified; Candidates A and B are highest-priority (8-10K words each, 50-60 sources each)
+**Outcome**: Production-ready for Path A+Domain37 Hybrid execution. If user selects Hybrid path, orchestrator can begin Domain 37 research immediately.
+**Timeline**: Session 589 (13:35–13:40 UTC, 5 min elapsed)
 
 ---
 

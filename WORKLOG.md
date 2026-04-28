@@ -4,12 +4,13 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-28 Session 589 (13:12–13:30 UTC) — Orchestrator: Market-Open Pre-Flight Validation
+## 2026-04-28 Session 589 (13:12–13:45 UTC) — Orchestrator: Market-Open Pre-Flight Validation + Item 10 Execution
 
-**Status**: 🟢 **T-16 MINUTES TO MARKET OPEN** — Engine running (PID 1140617), all pre-market validation checks PASS. Standing by for 13:30 UTC market open.
+**Status**: 🟢 **MARKET OPEN T+15 MINUTES** — Engine running (PID 1140617), all pre-market validation checks PASS. Stockbot executing live trades. Item 10 (Domain 37 preliminary scoping) COMPLETE.
 
 **Session 589 Work**:
 1. ✅ **Engine Status Verification** (13:12 UTC)
+2. ✅ **Exploration Queue Item 10: Domain 37 Preliminary Scoping COMPLETE** (13:35–13:40 UTC)
    - Confirmed engine running: PID 1140617 active
    - Engine started before Session 588 completion — critical user deadline met ✓
 
@@ -13172,4 +13173,34 @@ With T-4h 31min remaining to critical market open and all high-priority projects
 1. Monitor market execution (13:30–14:30 UTC) if user restarts engine
 2. Post-market research execution (20:30 UTC) → Item 3 production (4–6k word roadmap on multi-asset + institutional scaling)
 3. Monitor Day 1 trading outcome via dashboard
+
+
+## 2026-04-28 Session 589 Detail (13:35–13:40 UTC) — Exploration Queue Item 10
+
+**Item 10 Execution**: Domain 37 Preliminary Scoping for resistance-research
+
+**Work completed**:
+1. ✅ Gap analysis — identified 4 structural gaps in the 35-domain framework
+   - Gap 1: Foreign and transnational interference (marked as highest priority — acute for 2026 midterms)
+   - Gap 2: Constitutional architecture and Article V reform (28 of 34 states toward convention)
+   - Gap 3: Tribal sovereignty and Indigenous democratic traditions
+   - Gap 4: US international democratic leadership restoration
+   
+2. ✅ 5 Domain 37 candidates proposed (A–E)
+   - **Candidate A (Recommended)**: Foreign and Transnational Interference (8-10K words, 50-60 sources, high urgency)
+   - **Candidate B (Secondary)**: Constitutional Architecture and Article V (7.5-9K words, 45-55 sources, medium-high urgency)
+   - Candidates C–E: Tribal sovereignty, international democratic leadership, PR deepening
+
+3. ✅ Research roadmaps for top 2 candidates
+   - Both include: key research questions, source strategy, scope definition, cross-domain connections
+   - Format verified to match existing domain structure
+   - Ready for immediate execution if user selects Path A+Domain37 Hybrid
+
+**Deliverable**: `/projects/resistance-research/ITEM10_DOMAIN37_CANDIDATES.md` (3,200 words, 10+ sources)
+
+**Quality**: Production-ready for user review and decision on distribution path
+
+**Outcome**: Enables fast execution of Domain 37 research if user chooses Hybrid path; provides strategic input for path selection decision
+
+**Next steps**: (1) User selects distribution path (A/A+37/B), (2) If Hybrid selected, execute Domain 37 full research immediately
 
