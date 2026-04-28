@@ -1,0 +1,11 @@
+Tier,Product Variant,Unit COGS (0-500/mo),Unit COGS (500-2K/mo),Unit COGS (2K+/mo),Single Unit Retail,Single Unit Margin %,3-Pack Bundle Price,3-Pack COGS,3-Pack Margin %,Bundle Description
+Economy,Basic Clips (PLA),1.40,1.25,1.10,8.99,54.3%,22.99,4.20,59.4%,"3 versatile desk clips, standard sizes"
+Economy,Rail System (single),1.80,1.60,1.45,12.99,62.0%,32.99,5.40,63.6%,"Single rail with mounting hardware"
+Standard,Premium Clips (PETG/Multi-Color),2.10,1.85,1.65,14.99,60.0%,38.99,6.15,62.2%,"3 colored clips, premium material, ergonomic design"
+Standard,Modular Rail Kit,2.40,2.15,1.95,18.99,63.4%,48.99,7.05,63.6%,"Rail + 4 mounting clips, expandable"
+Standard,Starter Bundle,3.50,3.10,2.85,28.99,65.6%,74.99,10.50,72.0%,"1 rail + 3 standard clips + mounting hardware"
+Premium,Designer Clips (PETG Colors),2.80,2.45,2.20,22.99,63.1%,59.99,8.40,65.0%,"3 premium clips, multiple color options, lifetime warranty"
+Premium,Professional Rail System,3.20,2.85,2.60,32.99,67.3%,85.99,9.60,67.8%,"Heavy-duty rail, 6 premium clips, professional installation guide"
+Premium,"Deluxe Professional Kit",5.50,4.80,4.35,69.99,71.5%,179.99,16.80,72.8%,"2 rails, 8 premium clips, 6 specialty clips, deluxe packaging, pro support"
+Standard,Single Premium Clip,2.10,1.85,1.65,17.99,62.0%,N/A,N/A,N/A,"Individual premium clip option"
+Premium,Corporate Bulk (20+ clips),2.80,2.45,2.20,19.99,56.0%,N/A,N/A,N/A,"Bulk corporate order pricing"
