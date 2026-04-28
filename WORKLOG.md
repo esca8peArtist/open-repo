@@ -4,6 +4,57 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 578 (10:49–11:52 UTC) — Orchestrator: Domain Maintenance Complete + Phase 3 Product Roadmap
+
+**Status**: 🟢 **MAJOR EXPLORATION QUEUE WORK COMPLETE** — Executed two parallel Exploration Queue items: (1) resistance-research Domain Content Maintenance (April-May 2026 updates across 8 domains, Iran WPR deadline urgent), (2) seedwarden Phase 3 Product Expansion Roadmap (complete product strategy for post-Phase-1 launch). Framework now current through 2026-04-28, Phase 3 product planning ready for execution.
+
+**Session 578 Work**:
+
+1. ✅ **Orientation & Task Selection** (10:49 UTC)
+   - Read ORCHESTRATOR_STATE, BLOCKED, INBOX, PROJECTS
+   - INBOX: empty (no new tasks)
+   - Active blocks: mfg-farm test print (manual/user), resistance-research distribution decision (awaiting user), stockbot engine restart (awaiting user)
+   - **Decision**: Execute parallel Exploration Queue items — no external blockers, high priority work available
+   - Identified 2 ready items: (a) resistance-research Domain Content Maintenance, (b) seedwarden Phase 3 Product Expansion Roadmap
+
+2. ✅ **resistance-research: Domain Content Maintenance COMPLETE** (Agent aa2130d8ac5bd6873, 10:49–11:35 UTC)
+   - **Scope**: Update 35-domain framework with April-May 2026 civic developments (Exploration Queue item, Priority 1)
+   - **Work Completed**:
+     - **Domain 19f**: Integrated Iran 2026 Constitutional Crisis case study + Section 14 NATO/Taiwan geopolitical vectors + Vance constitutional rejection + State Dept. strategic weakness (committed: 72d0e30)
+     - **Domain 28**: Added Section 9 — Iran as larger empirical instance of WPR constraint failure + comparative Senate vote table + comparative fiscal accountability structure + 10 U.S.C. §§ 2805-2808 reform proposal (committed: 3fe4d6a)
+     - **surveillance-tracking.md**: Added pre-April 30 FISA Section 702 assessment + post-deadline checklist (committed: 208a4ca)
+     - **MAY_2026_UPDATES.md**: Updated completion table with session numbers + corrected Domain 28 entry (committed: f01ac95)
+     - **Verified Prior Sessions**: Domains 1, 6, 29, 33, 35 already have current April 2026 updates (Session 535+)
+   - **Pending**: FISA Section 702 post-April 30 outcome fill (awaits April 29-30 vote result), Iran WPR post-May 1 checklist fill (awaits May 1+ developments)
+   - **Status**: Framework is production-ready and current through 2026-04-28. Ready for Phase 1 institutional distribution once user decides distribution path.
+   - **Files modified**: domain-19f-war-powers-reform.md, domain-28-war-powers-venezuela.md, surveillance-tracking.md, MAY_2026_UPDATES.md
+
+3. ✅ **seedwarden: Phase 3 Product Expansion Roadmap COMPLETE** (Agent a3d965a92185c4e94, 10:49–11:52 UTC)
+   - **Scope**: Design Phase 3 product expansion strategy for post-Phase-1 launch (Exploration Queue item, Priority 2)
+   - **Deliverables**:
+     - **phase-3-product-expansion-roadmap.md**: Complete (Session 565, 4,100+ words) — strategic context, month-by-month sequencing (July-October 2026), pricing rationale, supplier sourcing, customer feedback integration, cross-sell pathways, execution timeline, success metrics
+     - **phase-3-product-specifications.json**: Complete (Session 565) — 12 full-spec products (name, category, description, target_cohort, COGS, price, margin, phases dependency, supplier, launch month, feedback signal, cross-sell bundle, success metric), plus 14-listing regional variant summary, 3-bundle summary, revenue projections (May-December 2026, conservative/moderate/optimistic scenarios)
+     - **phase-3-cohort-messaging.md**: Created this session (2,600+ words) — Per-cohort messaging strategies across 5 parts (forager, prepper, homesteader, gift buyer, cross-cohort). Key insight: Day 21 email introducing Skills Roadmap is the highest-impact homesteader email (drives subsequent purchases).
+   - **Status**: All Phase 3 deliverables complete and committed to master. Ready for execution once Phase 1 launches (May 2026) and initial conversion data arrives (Week 2-3 post-launch).
+   - **Files created**: phase-3-cohort-messaging.md (committed to master this session)
+
+**Strategic Positioning**:
+- **resistance-research**: Framework current through 2026-04-28, production-ready for Phase 1. Distribution decision (Path A / A+37 / B) is the only remaining blocker. Domain Content Maintenance Exploration Queue item is **COMPLETE**.
+- **seedwarden**: Phase 3 product planning is **COMPLETE**. When Phase 1 launches (awaiting user tag corrections + Etsy verification), Phase 3 strategy is ready for Month 3+ execution.
+- **Exploration Queue**: Marked Domain Content Maintenance as complete. Next items: seedwarden Phase 3 (complete), stockbot Real-time CRITICAL Alert Discord Webhook (quick 15-min implementation), stockbot Post-Gate-2 Operations (awaiting engine restart).
+- **No new blockers introduced**. All work committed to respective project directories or master.
+
+**Next Actions** (for future sessions):
+1. **User decision required** (anytime before Phase 1): Choose distribution path (A / A+37 / B) → Phase 1 setup begins immediately
+2. **Post-April 30**: Fill FISA Section 702 post-deadline checklist once vote result is known
+3. **Post-May 1**: Fill Iran WPR post-deadline checklist once developments emerge
+4. **Stockbot pending**: Engine restart (user action) → activates market-open operations. Infrastructure work (Discord webhook, etc.) available in parallel.
+5. **seedwarden Phase 1** (awaiting user): 3 tag corrections + Etsy verification → Phase 1 launch. Phase 3 strategy ready for execution Month 3+.
+
+**Session Type**: Autonomous research execution (parallel Exploration Queue items, independent of user-action blockers)
+
+---
+
 ## 2026-04-28 Session 577 (10:35–10:47 UTC) — Orchestrator: Parallel Phase 3 Research + Market-Open Monitoring
 
 **Status**: 🟢 **PHASE 3 CANDIDATE 8 COMPLETE** — Executed parallel resistance-research Phase 3 domain research while monitoring critical stockbot deadline (T-2h 43min to market open at 13:30 UTC).
