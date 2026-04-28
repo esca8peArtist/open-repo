@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 16:30–17:10 UTC — Session 594 — Exploration Queue Audit & Phase 3 Research
+
+**Session 594 — Autonomous Orchestration (Haiku)**
+
+### Work Completed
+
+**1. Exploration Queue Maintenance** (16:30–16:45 UTC)
+- Audited 3 queue items from Sessions 590-592
+- Found ALL COMPLETE: mfg-farm launch prep (commit b07835a), stockbot Discord webhook (Session 571, commit 5422e3a), open-repo Phase 5 preliminary (commit d5c2e84)
+- Updated PROJECTS.md to mark completed items and archive into "✅ COMPLETED" section
+- Added 3 new Phase 3 research items to Exploration Queue per protocol (queue fell to 0 active items after completion audit)
+- Committed PROJECTS.md update (commit c8594b4)
+
+**2. Phase 3 Research Implementation** (16:45–17:10 UTC)
+- **Phase 3 Candidate 1: Civil Service Resilience and Protection** ✅ COMPLETE
+  - 9,400 words, 63 academic/policy/journalistic sources
+  - 5 sections: Structural Protections, International Precedent, Current Vulnerabilities, Recovery Pathways, Implementation Timeline
+  - File: `projects/resistance-research/domains/domain-civil-service-resilience.md` (65 KB, 371 lines)
+  - Committed: commit 263a525
+  - Key findings: Merit System Principles are fully revocable by statute; MSPB lacks self-executing authority; Germany's constitutional entrenchment model vs. UK convention-based approach; Schedule F threat vectors; four-component legislative package for recovery
+  
+- **Phase 3 Candidate 2: Judicial Independence Recovery Mechanisms** ✅ COMPLETE
+  - 9,800 words, 60 academic/case law/constitutional sources
+  - 5 sections: Court-by-Court Recovery, Judicial Branch Autonomy, International Precedent, Accountability Mechanisms, Implementation Sequencing
+  - File: `projects/resistance-research/domains/domain-judicial-independence-recovery.md` (77 KB, 407 lines)
+  - Committed: commit ed01249
+  - Key findings: Three distinct recovery timescales (immediate/midterm/longterm); Germany December 2024 BVerfG constitutional amendment model; Poland's failed recovery anatomy (institutional capture); circuit composition data showing 1st/4th/9th/10th/D.C./Federal retain Democratic plurality; JCDA enforcement gap (2 clerk complaints filed in 2025 vs. 106 documented misconduct instances)
+
+### Summary
+
+- **Exploration Queue Status**: Refreshed with 3 new Phase 3 research items (Civil Service Resilience ✅, Judicial Independence Recovery ✅, Media Freedom Recovery QUEUED)
+- **resistance-research Advancement**: Added 2 of 3 Phase 3 candidates (19,200 words total, 123 citations), advancing Goal by identifying civil service and judiciary as critical leverage points for democratic renewal
+- **Next Phase**: Media Freedom Recovery Research (Phase 3 Candidate 3) for next session; queued at priority 1
+- **System Status**: All projects remain at user-action wait state; Phase 3 research provides unblocked autonomous work pathway
+
 ## 2026-04-28 — open-repo — Phase 5 Offline Export Preliminary Implementation
 
 **Session**: Phase 5 preliminary work (parallel with PR #1 review)

@@ -5,6 +5,61 @@
 
 ---
 
+## Since Last Check-in (Session 594 — 2026-04-28 16:30–17:10 UTC)
+
+✅ **Phase 3 Research Expansion Underway** — 2 of 3 new domains completed, resistance-research Goal advanced
+
+### What Happened
+
+1. **Exploration Queue Audit & Refresh** (16:30–16:45 UTC): 
+   - Verified all 3 previous queue items COMPLETE (mfg-farm launch prep v2.0, stockbot Discord webhook Session 571, open-repo Phase 5 preliminary with 84 passing tests)
+   - Per protocol: when queue falls below 3 active items, added 2-3 new items from unfinished project Goals
+   - Added 3 new Phase 3 research candidates to queue (all Priority 1, all unblocked)
+
+2. **Phase 3 Candidate Research** (16:45–17:10 UTC):
+   - **Civil Service Resilience and Protection** ✅ 9,400 words, 63 sources
+     - Merit System Principles structural vulnerabilities, MSPB authority gaps, Schedule F threat vectors
+     - Comparative analysis: Germany constitutional entrenchment, UK convention-based, Poland/Hungary failures
+     - Four-component legislative recovery package + Merit Restoration Audit mechanism
+   - **Judicial Independence Recovery Mechanisms** ✅ 9,800 words, 60 sources
+     - Court-by-court recovery pathways (circuit composition data, SCOTUS demographic analysis, state supreme court models)
+     - Trump v. Slaughter outcome scenarios (June 2026) with downstream implications
+     - Poland failed recovery anatomy (captured institutions blocking restoration), Germany December 2024 constitutional amendment model
+     - JCDA enforcement gap: 2 clerk complaints vs. 106 documented misconduct cases
+
+### Project Status (no changes from Session 593)
+
+| Project | Status | Blocker |
+|---------|--------|---------|
+| **resistance-research** | ✅ 35 domains + 2 Phase 3 candidates complete | Distribution path decision (A / A+37 / B) |
+| **stockbot** | ✅ Engine running, Discord alerts active | Alpaca account funding ($25K simulated) |
+| **mfg-farm** | ✅ Launch package v2.0 complete | Test print confirmation |
+| **seedwarden** | ✅ Phase 3 roadmap complete | Phase 1 tag corrections + Etsy verification |
+| **cybersecurity-hardening** | ✅ Tier 1-3 prep complete | Tier 1 approval |
+| **open-repo** | ✅ Phase 5 preliminary + architecture complete | PR #1 merge |
+| **off-grid-living** | ✅ GitHub publication complete | Social media distribution |
+| **workout** | ✅ Comprehensive plan complete | User review/selection |
+
+### Market Status
+- ✅ Engine actively running (confirmed 15:05 UTC, still running)
+- ✅ All 11 tickers generating signals  
+- ❌ Orders failing due to Alpaca paper account $0 buying power (awaiting user funding)
+- 🕐 Market closes 20:00 UTC (2h 50m remaining at end of session)
+
+### Items Needing Your Input (unchanged)
+1. **resistance-research distribution**: Path A (immediate) / A+Domain37 (hybrid, recommended) / B (continue updates)
+2. **Alpaca account**: Verify balance > $0 in paper trading tab
+3. **mfg-farm test print**: Confirm successful test print + photos
+4. **seedwarden Phase 1**: 3 tag corrections + Etsy verification
+5. **cybersecurity-hardening Tier 1**: Approve initial outreach templates
+
+### Next Session Actions
+- **If distributed**: Continue Phase 3 research (Media Freedom Recovery)
+- **If unblocked**: Execute stockbot CRITICAL alert Discord webhook testing + Phase 5 full implementation post-PR merge
+- **Default**: Media Freedom Recovery (Phase 3 Candidate 3) — 8,000-10,000 words, ready to begin
+
+---
+
 ## Since Last Check-in (Session 592 — 2026-04-28 15:29–16:50 UTC)
 
 🟢 **All Autonomous Work Items Verified Complete** — No additional autonomous work available
