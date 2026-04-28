@@ -48,6 +48,81 @@
 1. **User decision required** (anytime before Phase 1): Choose distribution path (A / A+37 / B) → Phase 1 setup begins immediately
 2. **Post-April 30**: Fill FISA Section 702 post-deadline checklist once vote result is known
 3. **Post-May 1**: Fill Iran WPR post-deadline checklist once developments emerge
+
+---
+
+## 2026-04-28 Session 580 (11:10–11:22 UTC) — Orchestrator: Stockbot Verification + Phase 3 Candidate 2 Institutional Playbooks Outline
+
+**Status**: 🟢 **PHASE 3 CANDIDATE 2 OUTLINE COMPLETE** — Pre-market-open verification confirms stockbot production-ready; Phase 3 institutional playbooks structured outline delivered (7,000+ words, complete intellectual scaffolding).
+
+**Session 580 Work**:
+
+1. ✅ **Orientation & State Verification** (11:10 UTC)
+   - Current time: 2026-04-28T11:10 UTC
+   - Market open: 13:30 UTC (2h 20m remaining)
+   - **Stockbot Status**: Session 579 verification complete — code production-ready, 57-ticker configuration active, engine offline (awaiting user restart)
+   - **Verification Spot-Check**: Confirmed active-sessions.json has 57 stackers configured across 11-core + 46-expansion tickers; all market-open 09:30 ET ready
+   - **Exploration Queue**: Phase 3 Candidates (2-4) available; no external blockers on resistance-research or other projects
+
+2. ✅ **Phase 3 Candidate 2 Research: Institutional Playbooks (Agent, 11:10–11:18 UTC)**
+   - **Assignment**: Structured outline for 6-8 institutional playbooks covering reform constituencies
+   - **Deliverable**: `phase-3-institutional-playbooks-outline.md` (7,000+ words)
+   - **Contents**:
+     - **8 constituencies analyzed**: State AGs, Civil Service Unions, Labor Unions, Religious Coalitions, Media Organizations, Law School Clinics, State Legislators, Federal Judges
+     - **Tier A (partial playbooks existing)**: AGs, law schools, state legislatures — outline adds Year 1-3 electoral sequencing, conflict analysis
+     - **Tier B (entirely new)**: Civil service unions, labor unions, religious coalitions, media organizations — complete leverage/domain/sequencing analysis
+     - **For each constituency**: leverage analysis, 3-5 actionable domains, Year 1-3 sequencing framework, case study, constraints, natural allies, conflicts
+     - **Cross-constituency mapping**: Alliance clusters (Legal Defense, Electoral/Institutional, Information/Legitimacy); conflict mitigation table
+     - **Wave assignments**: Wave 1 (0-18m) Constraint Coalition, Wave 2 (6-36m) Alternative Infrastructure, Wave 3 (24-48+m) Reform Coalition
+
+3. ✅ **Commit & Documentation** (11:22 UTC)
+   - **Commit**: 3d2ac44 — Phase 3 Candidate 2 outline created and committed to master
+   - **EXPLORATION_QUEUE.md**: Updated to mark Candidate 2 complete with outline status
+
+**Key Findings from Institutional Playbooks Outline**:
+
+**Constituency Leverage Highlights**:
+- **State AGs**: 22-state coalition, 71 active lawsuits, ~79% win rate; leverage rests on parens patriae standing, litigation infrastructure, multistate coordination
+- **Civil Service Unions**: AFGE/NTEU/AFSCME 1.3M+ members; Schedule Policy/Career litigation plaintiff capacity; Saving Civil Service Act has bipartisan support
+- **Labor Unions**: AFL-CIO 12.5M+ members; 2026 GOTV mobilization targeting 8M voter households; NLRB capture creates simultaneous vulnerability and urgency
+- **Religious Coalitions**: 380,000 congregations, 70M+ weekly attendance; Interfaith Alliance (#LoveNotICE 18K volunteers), Faith in Elections Playbook, FUSD Poll Chaplains (9-state deployment expandable to 20+)
+- **Media Organizations**: Investigative capacity for institutional documentation; CPB defunding consolidating press freedom coalition; Domain 8 reforms directly beneficial
+- **Law School Clinics**: 72-hour rapid-response capability (Harvard post-Loper model); amicus brief production capacity; law review integration pipeline
+- **State Legislators**: 26 SOS races + redistricting control in 2026/2028 elections; Minnesota 2023 omnibus as template (voting access before other reform)
+- **Federal Judges**: Advisory/educational role via Judicial Conference; judicial ethics enforcement and independence defense pathway
+
+**Case Studies Embedded in Outline**:
+1. **AGs**: IEEPA Tariff Coalition — 24-state simultaneous filing model
+2. **Civil Service Unions**: AFGE inauguration-night litigation — pre-staged rapid response framework
+3. **Labor Unions**: AFL-CIO bipartisan federal worker bill — single-bill focus for electoral leverage
+4. **Religious Coalitions**: Civil Rights Movement Black church infrastructure — five-element model
+5. **Media**: CPB defunding rural coalition — constituency pressure on competitive-district representatives
+6. **Law School Clinics**: Harvard 72-hour post-Loper response — template for future rapid-response
+7. **State Legislators**: Minnesota 2023 omnibus — packaging strategy for electoral conditions
+8. **Federal Judges**: Judicial independence defense via Judicial Conference (governance pathway)
+
+**Conflicts Identified & Mitigation**:
+- **AGs vs. Federal Courts** (universal injunction authority) → Frame as complementary mechanisms (state parens patriae + APA vacatur)
+- **Labor vs. Building Trades** (climate/environment) → Just transition + infrastructure jobs expansion
+- **Faith vs. Civil Rights** (reproductive rights) → Domain-specific coalition composition
+- **Media vs. Labor** (antitrust) → Distinguish corporate media owners from journalism workers (guild/AFL-CIO)
+- **Civil Service vs. AGs** (trade policy) → Tactical separation (challenge authority, not workers)
+
+**Assessment for Full Playbook Expansion**:
+- **Current**: 7,000-word structured outline with all intellectual scaffolding complete
+- **Needs**: Prose expansion (1,500-2,000 words per constituency), scenario decision trees, fiscal capacity analysis, coordination protocols
+- **Timeline**: Each constituency 1,500-2,000 words = 12,000-15,000 words total playbook (expandable from outline in 1-2 sessions)
+- **Structure options**: Single comprehensive document (~15,000w) OR eight sector-specific files (distribution flexibility)
+
+**Strategic Positioning**:
+- **resistance-research**: Phase 3 Candidate 2 outline COMPLETE and production-ready. Can be expanded to full playbook (1-2 sessions) once user confirms distribution path (Phase 1 starts before Phase 3 full playbooks needed)
+- **stockbot**: Ready for market open at 13:30 UTC; awaiting user engine restart (must happen before market opens at 09:30 ET); all autonomous code work complete (Session 560 feature fix verified in place)
+- **Market monitoring**: Scheduled to activate at 20:30 UTC post-market (after 13:30-20:30 trading window completes) using POST_MARKET_EXECUTION_PLAN.md
+
+**Next Session Actions**:
+1. **At 13:30 UTC (market open)**: Transition to POST_MARKET_MONITORING.md mode
+2. **At 20:30 UTC (post-market)**: Begin Exploration Queue Item 3 (post-Gate-2 analysis if time permits)
+3. **Phase 3 Candidate 2 expansion**: Scheduled for post-distribution-decision context (once user decides Path A/A+37/B)
 4. **Stockbot pending**: Engine restart (user action) → activates market-open operations. Infrastructure work (Discord webhook, etc.) available in parallel.
 5. **seedwarden Phase 1** (awaiting user): 3 tag corrections + Etsy verification → Phase 1 launch. Phase 3 strategy ready for execution Month 3+.
 

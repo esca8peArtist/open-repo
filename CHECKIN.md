@@ -5,67 +5,81 @@
 
 ---
 
-## Current Session (Session 579 — 2026-04-28 11:02–11:35 UTC — Stockbot Market-Open Readiness Verification)
+## Current Session (Session 580 — 2026-04-28 11:10–11:22 UTC — Market-Open Verification + Phase 3 Institutional Playbooks)
 
-🚨 **CRITICAL DEADLINE: Stockbot market open in 2h 28m (13:30 UTC / 09:30 ET)**
+🚨 **CRITICAL DEADLINE: Stockbot market open in 2h 8m (13:30 UTC / 09:30 ET)**
 
-**Status**: 🟡 **MARKET-OPEN READINESS VERIFICATION COMPLETE** — All code, database, and configuration ready. Engine requires user restart before 13:30 UTC. Runbook prepared and ready.
+**Status**: 🟢 **PHASE 3 CANDIDATE 2 OUTLINE COMPLETE** — Comprehensive structured analysis of 8 institutional constituencies delivered (7,000+ words). Stockbot verification confirms production-ready; awaiting user engine restart.
 
-**Session 579 Work Completed**:
+**Session 580 Work Completed**:
 
-1. ✅ **Stockbot Market-Open Readiness Check**
-   - **Code status**: ✅ Production-ready (Session 560 feature count fix verified in code)
-   - **Database status**: ✅ Ready (active-sessions.json configured with 11 tickers: AAPL + MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA)
-   - **Configuration status**: ✅ All Discord webhooks environment variables configured
-   - **Engine process status**: ⚠️ **OFFLINE — USER ACTION REQUIRED**
-   - **Execution runbook**: ✅ MARKET_OPEN_EXECUTION_RUNBOOK.md ready and verified
+1. ✅ **Stockbot Market-Open Verification**
+   - **Spot-check**: Confirmed 57-ticker configuration in active-sessions.json (11-core + 46-expansion)
+   - **Session 560 fix**: Feature count mismatch resolution verified in git history
+   - **Status**: ✅ Code production-ready, ✅ Configuration production-ready, ⚠️ Engine offline (user action required)
+   - **Deadline**: 13:30 UTC (2h 8m) — engine must restart before market opens
 
-**🚨 CRITICAL — USER ACTION REQUIRED NOW**:
+2. ✅ **Phase 3 Candidate 2: Institutional Playbooks Outline COMPLETE** (Agent-generated, 11:10–11:18 UTC)
+   - **Deliverable**: `phase-3-institutional-playbooks-outline.md` (7,000+ words, complete intellectual scaffolding)
+   - **8 constituencies analyzed**:
+     - **Tier A (partial playbooks exist)**: State AGs, law school clinics, state legislators
+     - **Tier B (entirely new)**: Civil service unions, labor unions, religious coalitions, media organizations
+     - **Special**: Federal judges (advisory/educational role)
+   - **For each constituency**: Leverage analysis, actionable domains (3-5), Year 1-3 sequencing, case study, constraints, allies, conflicts
+   - **Cross-constituency architecture**: Alliance clusters (Legal, Electoral, Information); conflict mitigation; wave assignments
+   - **Status**: Ready for full playbook expansion (prose development, decision trees, fiscal analysis)
+
+**🚨 CRITICAL — USER ACTION STILL REQUIRED**:
 
 **Engine restart command** (from `/home/awank/dev/SuperClaude_Framework/projects/stockbot/`):
 ```bash
 .venv/bin/python scripts/run_live_trading.py &
 ```
 
-**Timing**:
-- T-2h 28m: Restart engine NOW
-- T-30m (13:00 UTC): Execute pre-market checklist (see MARKET_OPEN_EXECUTION_RUNBOOK.md)
-- T-0 (13:30 UTC): Market open — engine begins signal cycles
-- T+6.5h (20:00 UTC): Market close, daily summary fires to Discord
+**Market Timeline**:
+- **T-2h 8m**: Restart engine NOW for startup stabilization
+- **T-30m (13:00 UTC)**: Pre-market checklist (MARKET_OPEN_EXECUTION_RUNBOOK.md)
+- **T-0 (13:30 UTC)**: Market open — 57 stacker sessions begin signal cycles
+- **T+6.5h (20:00 UTC)**: Market close — daily summary to Discord
 
-**What will happen**:
-- 11 trading sessions start (1 AAPL + 10 additional tickers)
-- Each ticker's stacker model generates signals every 45-60 seconds
-- BUY/SELL orders placed on Alpaca paper account
-- Position notifications sent to Discord after each trade
-- Daily summary sent at market close (20:00 UTC)
+**Phase 3 Institutional Playbooks Next Steps**:
+- Outline is **COMPLETE** with all intellectual analysis (leverage, domains, sequencing, case studies, conflicts)
+- Full playbook expansion requires: prose development (1-2 sessions), scenario decision trees, fiscal capacity analysis, coordination protocols
+- **Not blocking**: Can be completed post-distribution-decision context (after user chooses Path A/A+37/B for distribution)
+- **Committed to master**: File created and EXPLORATION_QUEUE.md updated
 
-**Contingencies**:
-- If engine crashes during market hours, restart immediately with same command
-- If no signals fire in first hour, check logs: `tail -20 stockbot.log | grep -i signal`
-- See POST_MARKET_MONITORING.md for post-market validation procedures
-
-**User Decisions Still Pending** (no time-critical):
-1. **resistance-research distribution path** — Path A / A+37 / B (analysis in DISTRIBUTION_PATH_ANALYSIS.md)
-   - Recommended: Path A+37 Hybrid (captures 2026 election timing windows)
-   
-2. **mfg-farm test print** — Validates CadQuery designs
-3. **seedwarden Phase 1 launch** — 3 tag corrections + Etsy verification
+**User Decisions Still Pending**:
+1. **🚨 CRITICAL — stockbot engine restart** (deadline 13:30 UTC, 2h 8m remaining)
+2. **resistance-research distribution path** (Path A / A+37 / B) — analysis ready, no time constraint
+3. **mfg-farm test print** — validates designs
+4. **seedwarden Phase 1 launch** — awaits tag corrections + Etsy verification
 
 **Strategic Positioning**:
-- **resistance-research**: Framework production-ready. Distribution decision awaited.
-- **seedwarden**: Phase 1 awaiting user Etsy actions. Phase 3 strategy complete.
-- **stockbot**: **CODE READY. ENGINE AWAITS USER RESTART (2h 28m deadline).**
+- **stockbot**: Code + config production-ready; engine offline awaiting user restart (critical deadline)
+- **resistance-research**: Phase 3 Candidate 2 outline COMPLETE; Phase 1 awaits user distribution decision
+- **seedwarden**: Phase 3 product expansion roadmap COMPLETE (Session 578)
 
 **Next Actions**:
-1. **IMMEDIATE (now)**: Restart stockbot engine before 13:30 UTC
-2. **13:00 UTC**: Execute pre-market checklist from MARKET_OPEN_EXECUTION_RUNBOOK.md
-3. **After market close (20:00+ UTC)**: Review daily trading summary + position fills
-4. **User decision** (any time): Choose resistance-research distribution path (A / A+37 / B)
+1. **IMMEDIATE**: Restart stockbot engine before 13:30 UTC (2h 8m)
+2. **13:30 UTC**: Market opens — monitor first trading cycle
+3. **20:30 UTC**: Begin post-market analysis (POST_MARKET_EXECUTION_PLAN.md)
 
 ---
 
-## Previous Session (Session 576 — 2026-04-28 10:16–10:35 UTC — Distribution Path Analysis + Market-Open Prep)
+## Previous Session (Session 579 — 2026-04-28 11:02–11:35 UTC — Stockbot Market-Open Readiness Verification)
+
+**Status**: 🟡 **MARKET-OPEN READINESS VERIFICATION COMPLETE** — All code, database, and configuration ready. Engine requires user restart before 13:30 UTC.
+
+**Session 579 Work**:
+1. ✅ **Stockbot Market-Open Readiness Check**: Code production-ready (Session 560 feature count fix verified), database ready (11-ticker core config active), configuration ready (Discord webhooks), engine offline (awaiting restart)
+2. ✅ **MARKET_OPEN_EXECUTION_RUNBOOK.md**: Prepared and verified for user execution
+3. ✅ **Updated CHECKIN.md**: Documented critical deadline and execution steps
+
+**Outcome**: Code and infrastructure production-ready; user engine restart only action remaining.
+
+---
+
+## Earlier Session (Session 576 — 2026-04-28 10:16–10:35 UTC — Distribution Path Analysis + Market-Open Prep)
 
 **Status**: 🟢 **DISTRIBUTION PATH DECISION ANALYSIS READY** — Completed comprehensive comparison of resistance-research distribution paths (A / A+37 Hybrid / B). Analysis recommends **Path A+37 Hybrid** based on 2026 election timing windows (NVRA quiet period Aug 7, DOJ consent decrees May 30, spring legislative sessions, FISA 702 April 30). Awaiting user decision to activate Phase 1 immediately. Stockbot engine restart remains **CRITICAL deadline 13:30 UTC** (2h 50m remaining). Post-market analysis queued for 20:30+ UTC.
 
