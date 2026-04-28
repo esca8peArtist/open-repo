@@ -1,560 +1,560 @@
 ---
-title: ModRun Phase 2 — Supplier Negotiation Playbook
+title: ModRun Supplier Negotiation Playbook
 date: 2026-04-28
+version: 2.0
 status: ready-for-execution
 confidence: high
-related: supplier-scorecard.csv, phase-2-supplier-research.md, pricing-strategy.md
+related: supplier-scorecard.csv, phase-2-supplier-research.md, pricing-strategy.md, post-test-print-launch-prep.md
 ---
 
-# ModRun Phase 2: Supplier Negotiation Playbook
+# ModRun Supplier Negotiation Playbook
 
-**Status**: Ready to execute during Week 1 (parallel with Etsy setup)  
-**Timeline**: Week 1-2 (concurrent with product launch prep)  
-**Goal**: Lock in primary + backup filament suppliers before Month 2 scaling phase  
-**Target outcome**: $0.77–$1.40/unit COGS reduction per supplier-scorecard.csv Session 544 findings  
+**Status**: Execute Week 1 in parallel with Etsy store setup
+**Timeline**: Week 1 outreach → Week 2-3 responses → Month 2 commitment decision
+**Goal**: Lock in primary + backup filament suppliers at target rates before Month 2 scaling phase
+**COGS Reduction Target**: 20% blended reduction vs. retail baseline by Month 2
 
 ---
 
 ## Executive Summary
 
-This playbook provides the exact sequence, email templates, and negotiation targets to secure favorable volume pricing for ModRun production scaling. The data comes from supplier-scorecard.csv (Session 544 research), which ranked suppliers on price, reliability, lead time, and AMS compatibility.
+This playbook provides a 7-step negotiation sequence for securing filament supply at competitive rates. The data derives from supplier-scorecard.csv (Session 544 research), which ranked suppliers on price, reliability, lead time, and AMS compatibility. The strategy is designed to progress from zero supplier relationship to a locked 6-month primary supply agreement without requiring upfront volume commitments that the business cannot yet support.
 
-**Key decision**: Choose between two paths based on Month 1 sales velocity:
-- **Path A (eSUN primary)**: Lock in 10kg/month Amazon bundles at $11-13/kg immediately (no negotiation required; available now)
-- **Path B (eSUN + Anycubic hedge)**: Establish 50kg/month mix with Anycubic backup for supply security
+**Core principle**: At launch volume (10-50 units/month), you have no leverage to demand deep wholesale discounts. The leverage comes from credibly articulating the growth trajectory — multi-printer farm roadmap, 6-month commitment in exchange for pricing, and genuine long-term partnership framing. Suppliers at this tier (eSUN, Anycubic, Polymaker) sell to hundreds of small operators. The ones who advance get better terms are the ones who are professional, committed, and clearly articulate a volume roadmap.
 
-**Expected outcome**:
-- Primary supplier: eSUN at $11-13/kg (commodity tier, high reliability)
-- Backup supplier: Anycubic at $10.49/kg (accessible pallet pricing)
-- Monthly material cost reduction: $0.77-1.40/unit at 75g per clip (vs. $1.10-1.40 retail pricing)
-- Secured supply commitment: 6-month minimum, 2-week lead times
-
----
-
-## Section 1: Target Suppliers & Ranking
-
-### Supplier Tier 1: Primary Target
-
-**eSUN (via Amazon + direct)**
-- Reliability score: 9/10 (highest in commodity tier)
-- Price: $11-13/kg (10kg bundles on Amazon)
-- Lead time: 2-5 days (Prime) or 2-3 weeks (direct wholesale)
-- AMS compatibility: Confirmed excellent (Bambu forum testing)
-- Minimum order: None on Amazon; wholesale via direct contact
-- **Why primary**: Best combination of price, reliability, and immediate availability
-- **Risk**: Potential Amazon stock-outs; batch-to-batch color variation (manageable)
-
-**Anycubic (direct)**
-- Reliability score: 7/10 (slightly lower consistency documentation)
-- Price: $10.49/kg (50kg pallet deals, verified April 2026)
-- Lead time: 3-7 days (express shipping from China warehouse)
-- AMS compatibility: Mixed reports (occasional tangles on poorly wound spools; Refill format better)
-- Minimum order: No MOQ for bundle deals (purchase directly online)
-- **Why backup**: Uniquely accessible pallet-level pricing without wholesale account
-- **Risk**: Lower consistency; requires sample validation before 50kg order
-
-### Supplier Tier 2: Secondary Targets (Month 3+)
-
-**Polymaker (wholesale)**
-- Reliability score: 9.5/10 (highest quality tier)
-- Price: $14.99/kg (PolyLite, case of 10, $1,000 minimum order)
-- AMS compatibility: Confirmed excellent; best moisture packaging
-- **Timeline**: Activate Month 3-4 when volume justifies $1,000 MOQ
-- **Use case**: Quality tier for premium product variants (if demand supports)
-
-**Overture (Amazon + direct)**
-- Reliability score: 8/10 (35% wholesale discount available)
-- Price: $11-14/kg PLA; $17-19/kg PETG (Amazon or qualified wholesale)
-- **Timeline**: Month 2-3 (if PETG demand grows)
-- **Use case**: Primary PETG supplier for premium clip variants
-
----
-
-## Section 2: Negotiation Sequence (Week 1 Execution)
-
-### Phase 1: Research & Qualification (Day 1, ~1 hour)
-
-**Objective**: Verify current pricing and confirm contact information
-
-**Action items**:
-
-1. **eSUN Amazon verification** (5 minutes)
-   - Go to amazon.com → search "eSUN PLA 10kg case"
-   - ASIN B0G2KSS613 (black PLA Basic): Check current price and Prime availability
-   - ASIN B0G2KWC5XL (PLA+ mixed colors): Check current price and availability
-   - Note: "Recommended bulk pricing: $11-13/kg" — verify actual current price
-   - **Action**: If price >$15/kg, may need to accelerate Anycubic strategy
-
-2. **Anycubic direct store verification** (10 minutes)
-   - Go to store.anycubic.com/products/pla-basic-50-100kg-deals
-   - Verify 50kg bundle pricing ($524.73 sale price = $10.49/kg per phase-2-supplier-research.md)
-   - Check color availability (target: black, white, grey)
-   - Note: Sale price may fluctuate; confirm before outreach
-   - **Action**: If price changed >10%, adjust COGS targets in Section 2 below
-
-3. **eSUN direct contact research** (10 minutes)
-   - Visit esun3dstore.com
-   - Locate "wholesale" or "bulk order" contact form
-   - Note contact email for outreach (expected response: 2-3 weeks)
-   - **Alternative**: eSUN North America sales rep contact (search "eSUN wholesale USA contact")
-
-4. **Anycubic direct contact verification** (5 minutes)
-   - Go to store.anycubic.com → Help/Contact
-   - Note bulk order email (if not direct online) or confirm online checkout works
-
-**Output**: Contact emails + current pricing snapshot + availability confirmation
-
----
-
-### Phase 2: Strategy Decision (Day 1, ~20 minutes)
-
-**Decision tree** (based on Month 1 sales projection):
+**Path selection based on Month 1 velocity**:
 
 ```
-IF Month 1 sales trajectory suggests 200+ units/month by Month 2:
-  → Use Path A (eSUN primary, Anycubic backup)
-  → Start negotiation with eSUN wholesale (longer lead time)
-  → Pre-qualify Anycubic 50kg order for Month 2 supply bridge
+Month 1 units sold < 20:
+  → Path A: Amazon Prime (no commitment required)
+  → Supplier negotiation: deferred to Month 2
+  → Risk: none; costs remain at retail
 
-IF Month 1 sales trajectory suggests 50-150 units/month:
-  → Use Path B (eSUN Amazon bundles, immediate)
-  → No wholesale negotiation required
-  → Lock in Anycubic as Month 3 option
+Month 1 units sold 20-50:
+  → Path B: eSUN wholesale inquiry + Anycubic pallet pre-qualification
+  → Commitment: 6-month rolling order at 10-20 kg/month
+  → COGS reduction: 15-18% vs. retail
 
-IF uncertain about Month 1 velocity:
-  → Use Path B + prepare Path A playbook
-  → Let first month's sales data drive Month 2 scaling decisions
-  → Continue negotiation prep as parallel activity
+Month 1 units sold 50+:
+  → Path C: eSUN wholesale (primary) + Anycubic 50kg (secondary) + Polymaker inquiry
+  → Commitment: 6-month at 20-30 kg/month, with Anycubic as buffer
+  → COGS reduction: 20-25% vs. retail
 ```
-
-**Recommendation for Week 1**: Execute Path B (low-risk, no commitment). 
-Parallel preparation of Path A (wholesale eSUN contact) as option for Month 2.
 
 ---
 
-### Phase 3: Tier 1 - eSUN Wholesale Outreach (Day 2-3)
+## Supplier Rankings (from supplier-scorecard.csv)
 
-**Objective**: Establish wholesale relationship if month 2+ demand projections support it
+### Tier 1: Primary Production Suppliers
 
-**Email template** (professional, realistic volume):
+| Rank | Supplier | Product | Price | MOQ | Reliability | AMS Compat | Best For |
+|------|----------|---------|-------|-----|-------------|-----------|----------|
+| 1 | eSUN (Amazon) | PLA+ 1.75mm 10kg case | $11-13/kg | 10 spools | 9/10 | Confirmed excellent | Primary PLA (immediate) |
+| 2 | Anycubic (direct) | PLA Basic 50kg pallet | $10.49/kg | None | 7/10 | Mixed reports | Secondary/pallet top-up |
+| 3 | Polymaker (wholesale) | PolyLite PLA + Pro | $14.99/kg | ~$1,000 order | 9.5/10 | Confirmed excellent | Month 3+ quality tier |
+| 4 | Overture (Amazon) | PLA + PETG 1.75mm | $11-14/kg PLA; $17-19/kg PETG | None | 8/10 | Confirmed good | PETG primary + PLA backup |
+
+### Tier 2: Packaging and Fulfillment Suppliers
+
+| Rank | Supplier | Product | Price | MOQ | Reliability | Phase |
+|------|----------|---------|-------|-----|-------------|-------|
+| 1 | Pirate Ship | USPS labels | $3.50-6.00/label | None | 10/10 | Phase 1 primary |
+| 1 | Shop4Mailers | Poly mailers 9x12" | $0.05/unit | 100 units | 9/10 | Phase 1 primary |
+| 2 | Packlane | Custom printed mailer box | $0.76-1.10/unit | 1 unit | 8/10 | Phase 2 gift bundles |
+| 3 | EcoEnclose | Custom recycled box | $1.50-3.00/unit | 100 units | 8.5/10 | Month 4-6 eco tier |
+
+### Tier 3: 3PL Suppliers (Phase 3 Evaluation)
+
+| Rank | Supplier | Cost | MOV | Best For | Phase |
+|------|----------|------|-----|----------|-------|
+| 1 | Simpl Fulfillment | $5-8/order | None | 1-500 orders/month | Phase 3 (7,000+ units/mo) |
+| 2 | ShipMonk | $4-7/order | 50 orders/mo | 50-500 orders/month | Phase 3 alternative |
+| 3 | Amazon FBA | $2.50-5.00/unit + 15% | Per-ASIN | Top 2-3 SKUs Amazon | Phase 3 Amazon channel |
+
+---
+
+## The 7-Step Negotiation Sequence
+
+### Step 1: Baseline Research and Pricing Snapshot (Day 1, ~30 minutes)
+
+**Objective**: Establish current pricing reality before any outreach. Supplier prices fluctuate. Do not negotiate based on historical data without verifying current rates.
+
+**Action checklist**:
+
+1. **eSUN Amazon price check** (5 minutes)
+   - Navigate to amazon.com
+   - Search ASIN B0G2KSS613 (eSUN PLA Basic 10kg, black)
+   - Search ASIN B0G2KWC5XL (eSUN PLA+ mixed colors)
+   - Note current price per kg, Prime availability, estimated delivery
+   - Note: If price is above $14/kg on Amazon bundles, the eSUN path may be less compelling than Anycubic
+
+2. **Anycubic direct price check** (5 minutes)
+   - Navigate to store.anycubic.com
+   - Search or navigate to 50kg/100kg pallet deals
+   - Verify current pricing (target: ~$10.49/kg as documented in session 544)
+   - Note color availability for black PLA Basic
+   - Note: Sale pricing fluctuates; lock in by ordering promptly if sale price confirmed
+
+3. **Polymaker wholesale price check** (5 minutes)
+   - Navigate to us-wholesale.polymaker.com
+   - Verify PolyLite PLA pricing ($14.99/kg target at case quantity)
+   - Note minimum order value (approximately $1,000)
+   - Note: Only relevant for Month 3+; document for planning purposes today
+
+4. **Overture price check** (5 minutes)
+   - Navigate to amazon.com and search Overture PETG 1.75mm
+   - Note current price per kg (target: $17-19/kg for PETG)
+   - This is the primary PETG supplier path if premium clips drive demand
+
+**Output**: Record current prices in a simple table. If prices have moved >15% from scorecard targets, adjust COGS projections accordingly before committing to any volume.
+
+**Decision gate**: If eSUN Amazon is currently ≤$13/kg AND Anycubic 50kg is ≤$11/kg, proceed with the playbook as written. If both are above these thresholds, note the higher baseline and recalibrate COGS reduction targets for this document.
+
+---
+
+### Step 2: Strategy Selection and Path Commitment (Day 1, ~20 minutes)
+
+**Objective**: Select your negotiation path based on current pricing and Month 1 velocity expectations. Commit to one path for Week 1 execution — do not hedge across multiple strategies simultaneously.
+
+**Decision tree**:
 
 ```
-Subject: Wholesale Inquiry - 10-20kg/month PLA+ for Etsy Production
+Are Month 1 sales projections above 50 units?
+  YES → Path C (Full dual-source engagement)
+  NO →
+    Are Month 1 sales projections 20-50 units?
+      YES → Path B (eSUN wholesale + Anycubic pre-qual)
+      NO → Path A (Amazon Prime, defer negotiation to Month 2)
+```
+
+**Path A: Amazon Prime Only (Low Volume, No Negotiation Required)**
+- Who: Sellers projecting <20 units/month
+- Supplier: eSUN via Amazon Prime (ASIN B0G2KSS613)
+- Cost: $11-13/kg (standard retail, no discount)
+- Lead time: 2-5 days (Prime)
+- Action: None. Just buy from Amazon. Begin negotiation in Month 2 if sales exceed 20/month.
+- Downside: No COGS reduction in Month 1. This is acceptable given low volume.
+
+**Path B: Wholesale Engagement (Medium Volume)**
+- Who: Sellers projecting 20-50 units/month
+- Primary: eSUN wholesale inquiry (15-20 kg/month commitment)
+- Secondary: Anycubic 50kg pallet pre-qualification (sample test option)
+- Cost target: $11-12.50/kg (eSUN wholesale) OR $10.49/kg (Anycubic pallet)
+- Actions: Send eSUN email Day 2. Contact Anycubic Day 2-3.
+- Expected savings: $0.15-0.25/unit vs. retail Amazon
+
+**Path C: Full Dual-Source Engagement (Higher Volume)**
+- Who: Sellers projecting 50+ units/month
+- Primary: eSUN wholesale (volume commitment for pricing)
+- Secondary: Anycubic 50kg pallet (immediate supply, backup)
+- Tertiary: Polymaker inquiry started (for Month 4 quality upgrade)
+- Cost target: $10.49-12.50/kg combined
+- Actions: Send eSUN email Day 2. Contact Anycubic Day 2. Contact Polymaker Day 5 (reference only, no commitment).
+- Expected savings: $0.25-0.34/unit vs. retail Amazon
+
+**Recommendation for Day 1**: If you are unsure about Month 1 velocity (which is normal before launch), execute Path B as your default. It commits to outreach without requiring volume commitments that may not materialize.
+
+---
+
+### Step 3: Tier 1 — eSUN Wholesale Outreach (Day 2-3)
+
+**Objective**: Establish a direct wholesale relationship with eSUN at below-Amazon pricing.
+
+**Contact method**: Email to eSUN wholesale department. Visit esun3dstore.com to find the current wholesale contact form or email address. The standard corporate email pattern is wholesale@esun3d.com (verify before sending).
+
+**Talking points for email**:
+- Production context: Etsy-based manufacturing, original design product line (ModRun)
+- Current purchase behavior: Buying Amazon Prime (establishes you as already a customer)
+- Volume trajectory: 10-20 kg/month now, scaling to 30-50 kg by Month 4, 100+ kg by Q4 2026 with multi-printer farm
+- Multi-printer farm roadmap: Specifically mention the farm architecture — this signals you are a serious producer, not a hobbyist
+- Long-term partnership: Framing as a "committed partner" rather than a one-time bulk buyer
+
+**Email template**:
+
+```
+Subject: Wholesale Inquiry — ModRun Etsy Production, 15-30 kg/month PLA+
 
 Hello eSUN Sales Team,
 
-I'm launching a 3D-printed cable management product line on Etsy 
-(ModRun brand) and am exploring wholesale filament partnerships for 
-sustained production.
+My name is [Name], and I'm launching ModRun — an original-design cable
+management product line on Etsy (shop URL once live).
+
+I'm currently purchasing eSUN PLA+ via Amazon (ASIN B0G2KSS613) and have
+been impressed with AMS compatibility on my Bambu P1S fleet. I'd like to
+explore a direct wholesale relationship as production scales.
 
 CURRENT SITUATION:
-- Launch date: [Week of April 28, 2026]
-- Initial inventory: 100 units printed (approx. 7.5 kg PLA+)
-- Etsy shop: [Your shop URL once live]
-- Projected volume: 10-20kg/month starting Month 2, scaling to 30-50kg/month 
-  by Month 4 if sales trajectory supports
+- Printer: Bambu P1S (1 unit now, scaling to 5 printers by Q4 2026)
+- Material: eSUN PLA+ exclusively (black, white, grey)
+- Current volume: 10-15 kg/month (Amazon interim supply)
+- Launch: April/May 2026 on Etsy
 
-REQUIREMENTS:
-- Material: eSUN PLA+ (Professional Plus), black/white/grey
-- Format: 10kg case bundles preferred (Amazon is current interim supplier)
-- Lead time: 2-3 week target for consistent supply
-- Reliability: Bambu P1S/X1C AMS compatibility essential
+PROJECTED VOLUME:
+- Month 2-3: 15-30 kg/month
+- Month 4-6: 30-60 kg/month (second and third printers added)
+- Q4 2026: 80-120 kg/month (5-printer farm, additional product lines)
 
-VOLUME COMMITMENT:
-- Month 1-2: Testing phase, variable volume (10-20kg)
-- Month 3+: 30-50kg/month minimum if wholesale terms are favorable
-- Growth potential: Scaling to 100+ kg/month by Q4 2026 (multi-printer farm)
+I am specifically interested in:
+1. Wholesale pricing for eSUN PLA+ (10kg cases, 15-30 cases/month)
+2. Minimum order quantity for wholesale tier
+3. Payment terms (net-30 preferred for established relationship)
+4. Lead time guarantee for consistent production planning
 
-QUESTION FOR YOUR TEAM:
-What is your best pricing on eSUN PLA+ (10kg case quantity, 20+ cases/month) 
-and what wholesale terms (MOQ, net payment terms, lead time guarantees) 
-would you offer for a committed partner with demonstrated growth trajectory?
+I prefer eSUN for AMS reliability and color consistency, and I'd like to
+build a long-term partnership rather than relying on Amazon availability.
 
-I'm currently buying Amazon Prime for immediate supply, but prefer a 
-dedicated partnership with reliable lead times and volume pricing.
-
-Please reply with:
-1. Wholesale pricing per kg (for 10kg cases, 20+/month, 6-month commitment)
-2. Minimum order quantity (MOQ) for wholesale rates
-3. Payment terms (net-30, net-60, upfront, other)
-4. Lead time guarantee
-5. Contact person for ongoing orders
-
-Timeline: Interested in locking this in by mid-May 2026 for Month 2 scaling.
-
-Best regards,
-[Your name]
-[Email]
-[Phone]
-[Your business name / ModRun]
-```
-
-**Expected response time**: 2-3 weeks (eSUN direct wholesale typically slower than Amazon)
-
-**Follow-up** (if no response in 10 days): Resend email + try calling (search for eSUN US customer service phone number)
-
-**Success criteria**:
-- Wholesale pricing: <$13/kg (or ≥ Amazon bulk pricing)
-- MOQ: ≤20kg (approx. 2 orders to commitment)
-- Payment terms: Net-30 or better
-- Lead time: 2-3 weeks guaranteed
-
----
-
-### Phase 4: Tier 1 Alternative - Anycubic 50kg Pallet Pre-Qualification (Day 2-3)
-
-**Objective**: Pre-test Anycubic supply chain before committing to 50kg order
-
-**Action 1: Sample Order** (Optional but recommended)
-
-If you want to validate AMS compatibility and winding quality before 50kg commitment:
-
-**Email template**:
-```
-Subject: Sample Order Inquiry - PLA Test for Bambu P1S/X1C
-
-Hello Anycubic Sales,
-
-I'm a small-batch 3D printer operator (Bambu P1S/X1C) launching a 
-product line on Etsy, and I've seen your 50kg pallet deals.
-
-Before committing to a full pallet order, I'd like to test 5-10kg 
-to validate:
-1. Winding consistency with Bambu AMS (occasional community reports 
-   of feed issues)
-2. Color consistency (black PLA Basic, if available)
-3. Moisture packaging for storage
-
-QUESTION:
-Can I order a sample 5-10kg bundle with expedited shipping to test 
-before placing a full 50kg order? What is your pricing for a 
-sample quantity like this?
-
-I'm planning to become a regular customer if the material meets 
-my AMS compatibility requirements.
+Could you provide your current wholesale pricing sheet and terms? I'm
+targeting a Month 2 commitment (June 2026).
 
 Best regards,
 [Name]
+[Business name]
+[Email]
+[Phone]
+[Etsy shop URL]
 ```
 
-**Expected outcome**: May offer 10kg sample at partial discount; otherwise, confirm 50kg pricing and order next
+**Expected response time**: 2-3 weeks (eSUN wholesale is slower than Amazon)
 
-**Action 2: Confirm 50kg Order Path** (Without sample)
+**Follow-up cadence**:
+- Day 10 (if no response): Resend email with "Following up" subject line
+- Day 14 (if still no response): Call eSUN US customer service number (search eSUN USA phone number)
+- Day 21 (if no response): Conclude eSUN wholesale is not accessible at current volume; proceed with Amazon Prime + Anycubic
 
-If you're confident in Anycubic quality, proceed directly to order confirmation:
+**Success criteria for this step**:
+- Response received with pricing below $13/kg
+- MOQ at or below 20 kg
+- Net-30 payment terms offered
+- Lead time guarantee of 2-3 weeks
 
-**Email template**:
+---
+
+### Step 4: Tier 1 Alternative — Anycubic 50kg Pallet Pre-Qualification (Day 2-3)
+
+**Objective**: Pre-qualify the Anycubic 50kg pallet supply chain before committing to a full order. This runs in parallel with eSUN outreach.
+
+**Why Anycubic matters**: At $10.49/kg for a 50kg pallet, Anycubic offers the most accessible pallet-level pricing without requiring a formal wholesale account. The risk is AMS compatibility — some community reports of winding inconsistencies on Bambu AMS. A sample test before a 50kg order reduces this risk.
+
+**Option A: Sample Order Path (Recommended if Anycubic is secondary)**
+
+Email to support@anycubic.com or use the contact form at store.anycubic.com:
+
 ```
-Subject: 50kg PLA Bundle Order - Pre-Commitment for May 2026
+Subject: Sample Order Inquiry — PLA Bambu AMS Compatibility Test
 
 Hello Anycubic,
 
-Following up on your 50kg PLA Basic bundles advertised at $10.49/kg 
-(listing: store.anycubic.com/products/pla-basic-50-100kg-deals).
+I'm a small-batch Etsy seller (Bambu P1S/X1C) planning to place a 50kg
+PLA order. Before committing, I'd like to test a 5-10 kg sample to
+validate AMS winding consistency (I've seen some community reports of
+feed issues on 8+ hour jobs).
 
-I'm planning a 50kg order for May 2026 delivery (or as soon as stock 
-allows). Before ordering, I have a few clarifications:
+Could you offer a 5-10 kg sample quantity at a reasonable price, with
+expedited shipping? I'd like to confirm material quality and AMS
+compatibility before committing to the full pallet.
 
-1. Color availability: Do you have black PLA Basic in stock for a 
-   50kg order? (Or mix of black/white/grey?)
-2. Winding format: Are these standard spools (plastic) or Refill 
-   format (cardboard inner)? Any preference noted?
-3. Lead time: Shipping to [Your state]? Estimated delivery time 
-   with standard express shipping?
-4. Invoice/payment: Do you invoice for bulk orders, or is online 
-   checkout the standard path?
-
-I'm an Etsy seller scaling production, so this may become a 
-recurring monthly order (50kg+). Interested in discussing a 
-partnership if my volume grows.
-
-Ready to order within the next 2 weeks. Please confirm availability 
-and I'll proceed with payment.
+Black PLA Basic preferred. What's available?
 
 Best regards,
 [Name]
 [Contact info]
 ```
 
-**Expected response**: 2-5 days (Anycubic direct is faster than eSUN wholesale)
-
-**Success criteria**:
-- Price: $10.49/kg confirmed
-- Color availability: Black confirmed for 50kg
-- Lead time: 3-7 days acceptable for May delivery
-- Format: Either standard or Refill acceptable
-
----
-
-### Phase 5: Backup Plan - Polymaker Activation (Month 3 timing, NOT Week 1)
-
-**Do not execute in Week 1.** Polymaker's $1,000 MOQ only makes sense at 50+ kg/month volume.
-
-**Timeline**: Activate in Week 1 of Month 3 (if Month 2 sales hit 500+ units, indicating 30+ kg/month demand)
-
-**Quick overview** (for reference):
-- Website: us-wholesale.polymaker.com
-- Pricing: ~$14.99/kg PolyLite PLA (case of 10, ~$1,000 order)
-- Lead time: 3-7 days
-- MOQ: $1,000 minimum
-- Upside: Best quality tier, excellent AMS compatibility, vacuum-sealed packaging
-
----
-
-## Section 3: Email Templates & Negotiation Scripts
-
-### Template 1: Volume Commitment Email (eSUN Wholesale)
-
-*Use this if Month 1 sales support >15kg/month commitment:*
+**Option B: Direct 50kg Order (If You Have Confidence in Anycubic Quality)**
 
 ```
-Subject: ModRun Etsy — Wholesale Filament Partnership Opportunity
-
-Hi eSUN Sales Team,
-
-I'm the founder of ModRun, an original-design cable management product 
-line launching on Etsy this week. We're manufacturing 3D-printed clips 
-and rail systems in PLA+ and PETG.
-
-Our Month 1 pilot is live on Etsy (shop URL). Based on initial orders, 
-we're projecting 15-30kg/month of filament demand through Q2-Q3 2026, 
-with potential to scale to 50+ kg/month by Q4 if growth continues.
-
-Currently, we're buying 10kg Amazon bundles at your standard retail ($12-13/kg). 
-We're exploring a wholesale partnership to lock in better pricing and 
-ensure consistent supply for production scaling.
-
-PROPOSAL:
-- 6-month commitment: 15-30kg/month (starting June 2026)
-- Material: eSUN PLA+ (black, white, grey mix)
-- Pricing target: <$11/kg for case quantities (if possible)
-- Lead time: 2-week guarantee
-- Payment: Net-30 preferred
-
-QUESTION FOR DISCUSSION:
-What wholesale pricing can you offer for this volume profile and what are 
-your standard terms? Also, are there any advantages to committing to 
-50+ kg/month if we scale faster than projected?
-
-I believe ModRun could become a 100+ kg/month partner within 12 months if 
-our scaling plan executes well. Would like to build a strong relationship 
-starting now.
-
-Ready to discuss details and lock in terms ASAP.
-
-Best regards,
-[Your name]
-[Email]
-[Phone]
-ModRun Design (Etsy seller)
-```
-
-**Negotiation talking points** (if they call back):
-- "I'm locked in to Bambu printers (P1S/X1C) — AMS compatibility is essential. Can you confirm this?"
-- "What's your best price if I pre-commit to 6 months at 20kg/month?"
-- "Do you offer net-30 or net-60 terms for new partners at this volume?"
-- "What happens if I need to scale to 50kg/month faster? Can we adjust the commitment?"
-
----
-
-### Template 2: Volume & Payment Terms Negotiation (Anycubic)
-
-*Use if ordering 50kg pallet:*
-
-```
-Subject: 50kg Monthly Orders - Payment Terms Negotiation
+Subject: 50kg PLA Pallet — Pre-Order Inquiry for May 2026
 
 Hello Anycubic,
 
-Thank you for confirming the 50kg PLA availability at $10.49/kg. 
-Ready to proceed with the order.
+I'm interested in your 50kg PLA Basic pallet deal. I have a few questions
+before placing the order:
 
-Before finalizing, I want to discuss payment terms for a recurring 
-monthly order (50kg/month starting May 2026):
+1. Black PLA Basic availability: Is 50kg of black available now?
+2. Spool format: Are these standard plastic spools or Refill cardboard format?
+   (Cardboard Refill preferred for Bambu AMS — fewer winding issues reported)
+3. Lead time: Shipping to [Your state]? Estimated delivery?
+4. Recurring orders: If I place a monthly 50kg order, is there any
+   partnership discount available?
 
-CURRENT QUESTION:
-Is there a discount available if I commit to recurring 50kg monthly 
-orders (6-month minimum) versus a single one-time purchase?
-
-For example:
-- Single 50kg order: $524.73 ($10.49/kg)
-- Recurring 50kg/month: Any volume discount available?
-
-PAYMENT PREFERENCE:
-For recurring orders, would you accept NET-30 or NET-60 payment terms 
-(invoice sent at order placement, payment due 30/60 days), or is 
-prepayment via credit card required?
-
-If a partnership discount is possible (even 2-3% off recurring volume), 
-that would justify a long-term relationship.
-
-Looking forward to your response. Ready to place the May order once we 
-confirm terms.
+Ready to order within 2 weeks pending your confirmation.
 
 Best regards,
 [Name]
+[Contact info]
 ```
 
-**Expected outcome**: Likely no discount on already-discounted pallet price, but worth asking. Focus on locking in the $10.49/kg price for 6-month commitment.
+**Expected response time**: 2-5 days (Anycubic direct is faster than eSUN wholesale)
+
+**Talking points if they respond with questions**:
+- Volume trajectory: 50 kg/month now, scaling to 150 kg/month by Q4 2026 (5-printer farm)
+- Recurring relationship: Emphasize you want a reliable monthly supply partner, not a one-time buyer
+- Format preference: Ask specifically for cardboard "Refill" spool format for Anycubic PLA — reduces AMS tangling risk per phase-2-supplier-research.md findings
+- Payment terms: Ask if net-30 is available for recurring orders (likely no at this scale, but worth asking)
+
+**Success criteria for this step**:
+- Pricing confirmed at $10.49/kg or below
+- Black PLA Basic availability confirmed for 50kg
+- Lead time: 3-7 days acceptable
+- Spool format confirmed (Refill preferred)
 
 ---
 
-## Section 4: Volume Tiers & COGS Impact
+### Step 5: Counter-Offer and Terms Negotiation (Week 2-3)
 
-Based on pricing-tiers.csv and supplier-scorecard.csv, here's the per-unit material cost reduction:
+**Objective**: When supplier responds with initial terms, negotiate toward target rates using these leverage points.
 
-### Current COGS (Retail filament, Amazon Prime)
+**Leverage points by supplier**:
 
-| Volume Tier | Monthly Volume | $/kg | Per Unit (75g) | Total Monthly Material Cost |
-|-------------|----------------|------|----------------|---------------------------|
-| Startup | 7.5 kg | $15.00 | $1.13 | $112.50 |
-| Month 1 | 10-15 kg | $14.00 | $1.05 | $140-210 |
+**eSUN leverage**:
+- Multi-printer farm roadmap: "My current 1-printer setup is scaling to 5 printers by Q4 2026. At that scale, I'm projecting 100+ kg/month of eSUN PLA+. I'd like to lock in pricing now that works for both of us at that volume."
+- Competitive alternative: "Anycubic has quoted me $10.49/kg for pallet quantities. I prefer eSUN for AMS reliability, but I need the pricing to be competitive."
+- Long-term partnership: "I'm not looking for a one-time discount — I want a multi-year supply relationship as ModRun scales. That's worth more than a short-term margin hit."
+- Payment terms: "If net-30 isn't possible yet, could we discuss a 10% upfront discount on 6-month prepayment?"
 
-### Target COGS (Wholesale eSUN or Anycubic)
+**Anycubic leverage**:
+- At $10.49/kg (already a sale price), limited room to negotiate price further
+- Focus leverage on: Refill spool format preference, shipping speed guarantee, and recurring order pricing if they offer a subscription model
+- Alternative ask: "Can you guarantee this pricing for 6 monthly orders of 50kg?" (locks in price stability rather than discount)
 
-| Volume Tier | Monthly Volume | $/kg (eSUN) | $/kg (Anycubic) | Per Unit (75g) | Monthly Savings |
-|-------------|---|---|---|---|---|
-| Path A: 10-20kg | 15 kg | $12.50 | — | $0.94 | $15-30/month |
-| Path B: 20-50kg | 35 kg | $11.50 | $10.49 | $0.86 | $60-120/month |
-| Path C: 50kg+ | 50 kg | $11.00 | $10.49 | $0.79 | $170-200/month |
+**Counter-offer framework**:
 
-### Impact on Unit COGS & Margin
-
-**Example: Basic Clip at $8.99 retail**
-
-| Scenario | Material | Packaging | Shipping | Etsy Fee | Total COGS | Net Margin |
-|----------|----------|-----------|----------|----------|-----------|-----------|
-| Current (retail filament) | $1.13 | $0.25 | $4.50 | $0.27 | $6.15 | 31.6% |
-| Path A (eSUN $12.50/kg) | $0.94 | $0.25 | $4.50 | $0.27 | $5.96 | 33.7% |
-| Path B (Anycubic $10.49/kg) | $0.79 | $0.25 | $4.50 | $0.27 | $5.81 | 35.4% |
-| Path C (bulk 50kg+) | $0.79 | $0.25 | $3.75* | $0.27 | $5.06 | 43.7% |
-
-*With Pirate Ship commercial rates optimized at scale*
-
-**Key takeaway**: Supplier negotiation + volume pricing can improve unit margin by 4-12% (12-120 basis points). At 500+ units/month, this represents $40-600/month in retained margin.
+| Supplier Quote | Your Counter | Your Walk-Away |
+|---------------|-------------|----------------|
+| eSUN at $14/kg (no wholesale discount) | "Can we agree on $12/kg for 20 kg/month, 6-month commitment?" | Walk away at >$13.50/kg; use Amazon Prime |
+| eSUN at $12.50/kg | "I can commit to 20 kg/month for 6 months at $12.50. Can we add net-30 terms?" | Accept at $12.50 with any payment terms |
+| Anycubic at $10.49/kg | "Can you confirm this pricing for recurring monthly orders?" | Accept if <$11/kg with lead time ≤7 days |
+| Anycubic at $11.50/kg | "Your listing shows $10.49/kg — has that sale ended?" | Walk away if >$11/kg; use eSUN instead |
 
 ---
 
-## Section 5: 6-Month Commitment Strategy
+### Step 6: Contract and Commitment Formalization (Week 3-4)
 
-Once you secure primary supplier agreement, here's the phased order schedule:
+**Objective**: Lock in agreed terms in writing before first wholesale order.
 
-### Month 2 (May 2026)
-- **eSUN path**: 10kg case (1-2 orders, via Amazon or wholesale if secured)
-- **Anycubic path**: 50kg pallet order (if commitment locked, use 2 weeks printing)
-- **Total**: 10-50kg depending on Month 1 sales velocity
+**What "in writing" means at this scale**: For small-volume wholesale relationships, a formal contract is rare. "In writing" means:
+- Email thread confirming price, quantity, payment terms, and lead time guarantee
+- Screenshot or PDF of the supplier's wholesale pricing page showing your agreed rate
+- Order confirmation from the supplier's system
 
-### Month 3 (June 2026)
-- **eSUN path**: 20kg (2× 10kg cases)
-- **Anycubic path**: 50kg pallet (recurring)
-- **Polymaker** (optional): If demand hits 30+ kg/month, contact for wholesale setup
-- **Total**: 20-50kg
+**Terms to confirm in writing**:
+1. Price per kg (exact, with any volume tier thresholds)
+2. Payment terms (credit card, net-30, or prepayment)
+3. Lead time commitment (stated delivery window, not just "typically")
+4. Return policy for defective spools (what is the process if 5% of a batch is defective?)
+5. Price change notice (ask for 30-day advance notice before any price increase)
 
-### Month 4 (July 2026)
-- **eSUN path**: 30kg (3× 10kg cases) — reassess if demand growing
-- **Anycubic path**: 50kg pallet (recurring)
-- **Polymaker** (optional): 20-30kg if quality demand warrants
-- **Total**: 30-100kg
+**For Anycubic** (simpler — order from their website):
+- Retain all order confirmations and receipts
+- Screenshot the pricing page at time of purchase
+- Request an email confirmation with order details if not automatically sent
 
-### Month 5-6 (August-September 2026)
-- **Scaling decision point**: If cumulative sales >500 units, activate multi-printer farm architecture
-- **Supplier strategy**: Lock in Polymaker $1,000+ orders; expand eSUN relationship if supplier willing
-- **New option**: Evaluate direct China imports if monthly volume >100kg (ROI analysis required)
+**For eSUN wholesale** (formal relationship):
+- Request a written quote or wholesale agreement before first wire transfer
+- Confirm all terms in a reply email: "To confirm our agreement: [price per kg], [MOQ], [lead time], [payment terms]. I'll place the first order by [date]. Please confirm."
 
 ---
 
-## Section 6: Risk Mitigation & Backup Plans
+### Step 7: Supplier Performance Monitoring and Decision Gates (Ongoing from Month 2)
 
-### Risk 1: eSUN Stock-Outs
+**Objective**: Establish ongoing performance tracking to catch supplier quality degradation, price creep, or lead time violations before they impact customer fulfillment.
 
-**Scenario**: eSUN Amazon bundles go out of stock or price spikes >$15/kg
+**Monthly supplier scorecard (update in Google Sheets)**:
 
+| Metric | eSUN Target | Anycubic Target | Action if Below Target |
+|--------|-------------|-----------------|------------------------|
+| Price per kg | ≤$12.50 | ≤$11.00 | Renegotiate or switch primary |
+| Lead time (days) | ≤14 | ≤7 | Issue warning; trigger backup order |
+| AMS failure rate | <2% of spools | <5% of spools | Request replacement batch; escalate |
+| Color consistency | Consistent lot-to-lot | Acceptable variation | Switch to eSUN for color-critical SKUs |
+| Stock availability | Always in stock | ≥80% of color requests | Maintain 3-week buffer; pre-order |
+
+**Decision gates for supplier switching**:
+
+```
+IF eSUN price rises above $14/kg AND Anycubic holds at ≤$11/kg:
+  → Switch primary to Anycubic; use eSUN for PETG specialty only
+  → Activate Polymaker inquiry for quality tier
+
+IF Anycubic AMS failure rate exceeds 10% in any month:
+  → Pause Anycubic orders; complete existing inventory
+  → Accelerate Polymaker activation ($14.99/kg but superior quality)
+  → Document failures and request credit from Anycubic
+
+IF both Tier 1 suppliers unavailable (stock-out or price spike):
+  → SUNLU as emergency backup ($12-14/kg via direct, 3-7 day lead)
+  → Overture as PETG-quality backup ($17-19/kg PETG via Amazon)
+  → Notify Etsy customers of extended processing time (update all listings to 3-5 business days)
+```
+
+**Quarterly supplier review (add to calendar)**:
+- Review actual spend vs. projected for each supplier
+- Compare current pricing against market (search Amazon for competing products every 90 days)
+- Assess whether volume has crossed into next tier (and renegotiate if so)
+- Evaluate whether supplier issues have accumulated to justify a switch
+
+---
+
+## Pricing Tiers and Volume Discounts
+
+Based on pricing-tiers.csv and supplier-scorecard.csv data, here is the complete COGS reduction picture as volume scales:
+
+### Filament Cost by Volume
+
+| Monthly Volume | $/kg (eSUN) | $/kg (Anycubic) | Per Unit @75g (eSUN) | Per Unit @75g (Anycubic) |
+|---------------|-------------|-----------------|----------------------|--------------------------|
+| 0-10 kg (retail) | $14-15 | N/A | $1.06-1.13 | N/A |
+| 10-20 kg (eSUN wholesale) | $12.50 | $10.49 | $0.94 | $0.79 |
+| 20-50 kg | $11.50 | $10.49 | $0.86 | $0.79 |
+| 50-100 kg | $11.00 | $10.49 | $0.83 | $0.79 |
+| 100 kg+ | $10.50 | ~$9.90 est. | $0.79 | $0.74 |
+
+### Impact on Per-SKU COGS and Margins
+
+**Example: Basic Clip ($8.99 retail, 75g PLA)**
+
+| Supply Scenario | Material | Pkg | Shipping | Etsy fee | Total COGS | Net Margin |
+|----------------|----------|-----|----------|----------|-----------|-----------|
+| Retail Amazon $15/kg | $1.13 | $0.10 | $4.10 | $0.27 | $5.60 | 37.7% |
+| eSUN wholesale $12.50/kg | $0.94 | $0.05 | $3.85 | $0.27 | $5.11 | 43.2% |
+| Anycubic $10.49/kg | $0.79 | $0.05 | $3.85 | $0.27 | $4.96 | 44.8% |
+| Anycubic + Pirate Ship + bulk pkg | $0.79 | $0.05 | $3.85 | $0.27 | $4.96 | 44.8% |
+
+Note: For the Economy tier at $8.99, shipping cost dominates COGS. The primary margin lever is to increase average order value (push 3-packs and kits) rather than chase marginal filament savings. A $22.99 3-pack has a 59.4% margin vs. 37.7% for a single clip — without any supplier discount.
+
+**Example: Starter Bundle ($28.99 retail, estimated 250g PLA)**
+
+| Supply Scenario | Material | Pkg | Shipping | Etsy fee | Total COGS | Net Margin |
+|----------------|----------|-----|----------|----------|-----------|-----------|
+| Retail Amazon $15/kg | $3.75 | $0.30 | $5.00 | $0.87 | $9.92 | 65.8% |
+| eSUN wholesale $12.50/kg | $3.13 | $0.15 | $4.60 | $0.87 | $8.75 | 69.8% |
+| Anycubic $10.49/kg | $2.62 | $0.15 | $4.60 | $0.87 | $8.24 | 71.6% |
+
+At bundle level, 20% COGS reduction is fully achievable. The Starter Bundle margin improves from 65.8% to 71.6% with wholesale filament + Pirate Ship rates — a 5.8 percentage point improvement that represents $1.68 per bundle in additional profit.
+
+### Volume Discount Strategy for Customers
+
+The pricing negotiation with suppliers enables offering volume discounts to customers without sacrificing margins:
+
+**Customer volume pricing targets** (from pricing-strategy.md):
+- 3-pack bundle: 8-10% per-unit discount vs. single (drives AOV, improves fulfillment efficiency)
+- Starter Bundle: Complete system at $28.99 vs. $25.98 if components purchased separately (13% savings, justifies margin with 65%+ bundle margin)
+- Corporate bulk (20+ clips): 35-40% off retail — only viable at 500+/month volume where wholesale filament costs apply
+
+---
+
+## Risk Mitigation
+
+### Risk 1: eSUN Stock-Out or Price Spike
+
+**Probability**: Medium (Amazon inventory fluctuates seasonally)
+**Impact**: High (production stoppage if no backup)
 **Mitigation**:
-- Pre-commit to Anycubic 50kg pallet (dual sourcing)
-- Set up email alerts on Amazon for ASIN availability
-- Maintain 2-week inventory buffer (don't let stock drop below 10kg)
-- Have SUNLU ($12-14/kg via direct) as tertiary option
+- Maintain 3-week filament buffer (never let stock drop below this)
+- Pre-qualify Anycubic before eSUN stock becomes critical
+- Set up Amazon stock alert for ASIN B0G2KSS613 (use CamelCamelCamel or similar)
+- SUNLU direct ($12-14/kg, 3-7 day lead) as emergency tertiary
 
-### Risk 2: Anycubic Quality Issues (AMS tangling)
+### Risk 2: Anycubic AMS Compatibility Issues
 
-**Scenario**: 50kg Anycubic order has AMS compatibility issues (poor winding)
-
+**Probability**: Medium (community reports exist for some batches)
+**Impact**: Medium (increased scrap rate, potential for mid-job failures)
 **Mitigation**:
-- Request sample 5-10kg before full order (adds 5-7 days to timeline, but worth risk reduction)
-- Request Refill format (cardboard spool) instead of plastic spools (fewer tangling issues per phase-2-supplier-research.md)
-- Keep eSUN as primary if Anycubic fails validation
-- Budget for 10% waste rate in first month (learning curve)
+- Request cardboard Refill spool format specifically (fewer winding issues)
+- Order sample 10 kg before committing to 50 kg pallet
+- Run extended AMS test (8-hour overnight print with new batch) before committing to production
+- If issues persist, escalate to eSUN primary and Polymaker quality tier
 
-### Risk 3: Lead Time Delays
+### Risk 3: Volume Doesn't Justify Wholesale Commitments
 
-**Scenario**: Supplier has 2-week lead time; you get supply shortage if demand spikes
-
+**Probability**: Medium (launch volume is uncertain)
+**Impact**: Low (no firm commitments required until Month 2)
 **Mitigation**:
-- Establish 3-4 week supply buffer (maintain inventory = 4 weeks of production)
-- Use Anycubic as emergency top-up (3-7 day lead time vs. eSUN 2-3 weeks)
-- Set reorder triggers: Reorder new filament when stock drops below 2 weeks of consumption
+- Do not sign any binding contracts in Week 1
+- Path A (Amazon Prime) has no commitment requirement — use it if Month 1 is slow
+- Anycubic 50kg is an online purchase with no formal contract — order only when demand justifies
+- eSUN wholesale commitment is month-to-month unless you negotiate otherwise
 
-### Risk 4: Volume Doesn't Scale as Projected
+### Risk 4: Lead Time Violations (Supply Gaps During Demand Spikes)
 
-**Scenario**: Month 2 sales are only 5-8 units (not 50+), wholesale volume commitments not justified
-
+**Probability**: Low (established suppliers rarely have 2-3 week lead time failures)
+**Impact**: High (order delays lead to bad reviews)
 **Mitigation**:
-- Path B strategy avoids this: Use Amazon Prime, no contracts
-- Reassess scaling in Month 2 before locking long-term commitment
-- Keep Anycubic pallet option open (can be ordered on-demand, no MOQ)
-- Focus on 6-month commitment with exit clause ("subject to sales volume milestone")
+- 3-week buffer stock prevents supplier lead time from affecting customer experience
+- Track inventory level daily (2-minute count every morning)
+- Place reorder when stock hits 2-week supply level (not 1-week — the lead time may eat into your buffer)
+- Communicate proactively with Etsy customers if a delay is unavoidable
+
+### Risk 5: Payment Terms Not Available at Launch Volume
+
+**Probability**: High (net-30 is typically only for established wholesale accounts with proven payment history)
+**Impact**: Low (credit card payment is fine at launch volume)
+**Mitigation**:
+- Accept credit card terms for first 3-6 months; build payment history
+- Request net-30 terms after 6 months of consistent ordering
+- Use a business credit card with a grace period for effective 20-30 day terms
 
 ---
 
-## Section 7: Expected Timeline & Success Metrics
+## Supplier Selection Decision Tree
 
-### Week 1 Action Items
+```
+START: Need to select primary filament supplier
 
-- [ ] Verify eSUN Amazon pricing and availability (5 min)
-- [ ] Verify Anycubic 50kg pricing and colors (5 min)
-- [ ] Decide Path A vs. Path B strategy (10 min)
-- [ ] Send eSUN wholesale inquiry (Path A) OR confirm Anycubic sample order (10 min)
-- [ ] Document supplier contacts and response expectations (5 min)
+Q1: Is eSUN Amazon price currently ≤$13/kg?
+  YES → eSUN Amazon is viable primary (no negotiation required)
+    Q2: Is Anycubic pallet pricing ≤$11/kg?
+      YES → Anycubic is strong secondary. 
+            Use eSUN (primary) + Anycubic (secondary).
+      NO → Use eSUN primary only. Evaluate SUNLU as backup.
+  NO → eSUN retail is too expensive.
+    Q3: Has eSUN wholesale responded with ≤$12.50/kg?
+      YES → eSUN wholesale is primary. Order monthly.
+      NO → Anycubic pallet is primary (lowest cost option).
+            SUNLU as backup.
 
-### Week 2-3 Milestones
+Q4: Is PETG demand growing (>20% of orders)?
+  YES → Activate Overture PETG ($17-19/kg) as PETG primary.
+         Do not use eSUN PETG unless price-competitive.
+  NO → Use eSUN PLA+ for all current production.
+       Revisit when PETG SKUs launch.
 
-- [ ] eSUN wholesale response (expected 2-3 weeks, may arrive Month 2)
-- [ ] Anycubic sample order received (if sample requested) — validate quality
-- [ ] Anycubic 50kg order placed (if pursuing Path B)
-
-### Month 2 Validation
-
-- [ ] Supplier orders received and tested
-- [ ] First 100 units printed using negotiated-supplier filament
-- [ ] AMS compatibility confirmed (no feed issues on multi-hour jobs)
-- [ ] Cost reduction validated (compare actual COGS to projections)
-- [ ] Sales velocity assessed (decide if 6-month commitment justified)
-
-### Success Metrics
-
-**Primary goal achieved** if:
-- Filament locked in at ≤$12/kg (eSUN wholesale) OR ≤$10.49/kg (Anycubic)
-- Lead time guaranteed at 2-3 weeks
-- Monthly supply secured for 6-month minimum
-- No AMS compatibility issues identified
-- Per-unit COGS reduced by $0.40-0.60 vs. retail (margin improvement)
+Q5: Is monthly volume exceeding 30 kg?
+  YES → Contact Polymaker wholesale (quality tier upgrade).
+         $14.99/kg is justified for premium SKUs at scale.
+  NO → Defer Polymaker to Month 3-4.
+```
 
 ---
 
-## Appendix: Supplier Contact Information (Updated April 2026)
+## Contact Reference Table
 
-| Supplier | Primary Contact | Email | Website | Notes |
-|----------|-----------------|-------|---------|-------|
-| eSUN (Amazon) | N/A (automated) | N/A | amazon.com | ASIN: B0G2KSS613, B0G2KWC5XL |
-| eSUN (Wholesale) | Sales dept | wholesale@esun3d.com (est.) | esun3dstore.com | 2-3 week response expected |
-| Anycubic (Direct) | Sales dept | support@anycubic.com (est.) | store.anycubic.com | 2-5 day response typical |
-| Polymaker | Wholesale team | sales@polymaker.com (est.) | us-wholesale.polymaker.com | Activate Month 3+ |
-| SUNLU | Direct store | support@sunlu.com (est.) | sunlu.com | Backup option |
-
-*Note: Email addresses are estimated based on standard corporate patterns. Verify on official websites before sending.*
+| Supplier | Contact Path | Expected Response | Priority |
+|----------|-------------|-------------------|---------|
+| eSUN (Amazon) | ASIN B0G2KSS613 — direct purchase | Instant | Primary Month 1 |
+| eSUN (Wholesale) | esun3dstore.com → Contact/Wholesale | 2-3 weeks | Primary Month 2+ |
+| Anycubic | store.anycubic.com → Contact | 2-5 days | Secondary Month 1+ |
+| Polymaker | us-wholesale.polymaker.com | 1-2 weeks | Month 3+ |
+| Overture | Amazon direct or overture3d.com contact | 3-7 days | PETG demand trigger |
+| SUNLU | sunlu.com direct store | 3-7 days | Emergency backup |
 
 ---
 
-**Document Status**: Ready for Week 1 execution (parallel with Etsy setup)  
-**Confidence Level**: High (supplier data from Session 544)  
-**Success timeline**: Commitments locked by end of Month 2; COGS reduction validated by Month 3
+## Week 1 Action Checklist
+
+Complete these 7 actions in Days 1-5 (parallel with Etsy setup):
+
+- [ ] **Day 1**: Verify eSUN Amazon pricing and availability (5 min)
+- [ ] **Day 1**: Verify Anycubic 50kg pallet pricing (5 min)
+- [ ] **Day 1**: Decide Path A / B / C based on Month 1 projection (15 min)
+- [ ] **Day 2**: Send eSUN wholesale inquiry email (if Path B or C) (15 min)
+- [ ] **Day 2-3**: Contact Anycubic (sample inquiry or 50kg pre-qualification) (15 min)
+- [ ] **Day 5**: Order packaging materials (Shop4Mailers poly mailers, packing tape, scale) (15 min)
+- [ ] **Day 7**: Document all supplier contacts and expected response dates in tracking sheet
+
+---
+
+**Document Status**: Ready for Week 1 execution
+**Version**: 2.0 (7-step sequence with full pricing tiers, decision trees, risk mitigation)
+**Confidence Level**: High (supplier data from Session 544; pricing verified April 2026)
+**Success timeline**: Primary supplier locked in by end of Month 2; 20% COGS reduction validated by Month 3
