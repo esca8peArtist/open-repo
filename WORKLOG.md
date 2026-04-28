@@ -47,6 +47,43 @@
 
 ---
 
+## 2026-04-28 20:19 UTC — Session 605 — Critical Deadline: Stockbot Engine Restart
+
+**Orchestrator Orientation** (20:19 UTC):
+- **Time**: 2026-04-28 20:19 UTC (current)
+- **Market open**: 2026-04-29 13:30 UTC (~17 hours away)
+- **Engine status**: Offline since 19:36 UTC (19:36 UTC on April 28). Shutdown reason: UNKNOWN. Graceful shutdown detected, no process running.
+- **Projects status**: All blocked on user actions or awaiting external events
+- **Assessment**: No autonomous work available. System positioned for engine restart.
+
+**Actions Taken**:
+1. ✅ **Verified engine readiness**:
+   - Engine script exists: `projects/stockbot/scripts/run_live_trading.py` (38 KB, timestamp Mar 21)
+   - 41-ticker configuration live: `projects/stockbot/active-sessions.json` (53 KB)
+   - Session inventory: AAPL + 40 other stackers (11 core + 30 expansion tickers from Sessions 521–535)
+   - Daily analysis script ready: `projects/stockbot/scripts/daily_market_analysis.py` (25.5 KB, 61 unit tests passing)
+   
+2. ✅ **Updated CHECKIN.md** with critical deadline:
+   - Added "Session 605" check-in section
+   - Clear user action: (1) Verify Alpaca account (browser), (2) Restart engine with provided command
+   - Emphasized 17-hour deadline and why it matters
+   - Documented what's ready and what happens after restart
+
+**Assessment**: 
+- **Autonomous work available**: NONE (all projects blocked on user actions)
+- **Exploration queue status**: Fully depleted (Session 604 completed 4 items, queue has no active items)
+- **Critical path**: Engine restart is the only meaningful work available. User must act within 17 hours.
+- **Recommendation**: User should restart engine immediately (not wait for next session) to capture market open opportunity
+
+**Next Session Actions** (after user restarts engine):
+1. Verify engine is running and connected to Alpaca
+2. Confirm all 41 sessions loaded from active-sessions.json
+3. Monitor first market cycle (13:30–20:00 UTC on 2026-04-29)
+4. Verify post-market analysis script runs and appends to paper_trading_daily.jsonl
+5. Check for successful order fills (non-zero signals across portfolio)
+
+---
+
 ## 2026-04-28 20:51–21:50 UTC — Session 604 — Autonomous Exploration Queue: 4 Complete Items
 
 **Orchestrator Orientation** (20:51 UTC):

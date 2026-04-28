@@ -5,6 +5,44 @@
 
 ---
 
+## Since Last Check-in (Session 605 — 2026-04-28 20:19 UTC)
+
+### 🚨 CRITICAL: Stockbot Engine Restart Required — ~17 hours to market open (2026-04-29 13:30 UTC)
+
+**Status**: Engine offline since 19:36 UTC on April 28 (shutdown reason: UNKNOWN). All 41-ticker configuration ready. User action REQUIRED before market open.
+
+**What you need to do RIGHT NOW:**
+1. **Verify Alpaca paper trading account** (must be done in browser):
+   - Log in to https://app.alpaca.markets/
+   - Click "Paper Trading" tab
+   - Confirm: Account Type = "CASH" (not MARGIN)
+   - Confirm: Account Balance > $0 (Alpaca default is $25,000 for new paper accounts)
+   - If issues: Reset account or contact Alpaca support
+2. **Restart the engine** (run this command from `projects/stockbot/` directory):
+   ```bash
+   .venv/bin/python scripts/run_live_trading.py
+   ```
+
+**Why this is critical:**
+- Market opens 2026-04-29 13:30 UTC (~17 hours from now)
+- Engine must be running before 13:30 UTC to capture Day 1 trading signals
+- 41 stacker models configured and ready (AAPL + 40 other tickers)
+- Delaying restart past market open wastes the entire day's trading opportunity
+
+**What's ready for you:**
+- ✅ Engine restart script: `/projects/stockbot/scripts/run_live_trading.py` (proven working)
+- ✅ 41-ticker portfolio configured in `active-sessions.json` (11 from Session 521, 15 from Session 527, 10 from Session 528, 5 from Session 535)
+- ✅ Post-market analysis script ready: `scripts/daily_market_analysis.py` (runs at 20:00 UTC, logs to `logs/paper_trading_daily.jsonl`)
+- ✅ Open position from April 26 safe: BUY 36 AAPL @ $271.04 is persisted in database
+
+**After you restart:**
+- Engine will attempt to load all 41 sessions from `active-sessions.json`
+- Initial market cycle: 13:30–20:00 UTC on 2026-04-29 (Day 3 of paper trading)
+- Daily analysis runs automatically at 20:00 UTC (snapshot appended to `logs/paper_trading_daily.jsonl`)
+- Next session will verify: engine running, sessions active, signals generated, orders executed
+
+---
+
 ## Since Last Check-in (Session 604 — 2026-04-28 20:51–21:22 UTC)
 
 ✅ **3 Exploration Queue Items Complete** — Parallel agent execution (amazon FBA, May 2026 tracker, high-risk protocols)
