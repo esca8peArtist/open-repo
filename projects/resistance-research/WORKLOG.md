@@ -2,6 +2,34 @@
 
 ---
 
+## April 29, 2026 (Session 614) — Domain 37 Candidate A: Foreign and Transnational Interference in US Democratic Institutions
+
+**Session type**: Primary research and domain document production
+**Task**: Build `domains/domain-foreign-interference-in-democratic-institutions.md` — comprehensive domain document on foreign interference mechanisms, counterintelligence capacity collapse, democracy promotion withdrawal, comparative defenses, and statutory reform architecture
+
+### Output
+
+**File created**: `projects/resistance-research/domains/domain-foreign-interference-in-democratic-institutions.md` (~10,200 words, 7 main sections + executive summary + 68 sources)
+
+**Key findings and content produced:**
+- Executive Summary: Simultaneous dismantlement of all three US counterinterference channels (counterintelligence, law enforcement, democracy promotion) during the same window adversary operations are intensifying; first Annual Threat Assessment since 2017 to omit foreign election interference threats; key structural vulnerabilities enumerated; central thesis: the threat is the institutional dismantlement, not merely the adversary operations
+- Section 1 (Documented Mechanisms): Russia's five-volume SSCI report findings; Tenet Media $9.7M GRU-funded domestic influencer operation; GRU/CGE AI deepfake network (100+ fake news websites, Dugin connection, Treasury sanctions); Storm-1516 doubling output in Q1 2026; Iran IRGC hack-and-leak (three actors indicted); Proud Boys false-flag voter intimidation; China Spamouflage down-ballot congressional targeting; dark money Citizens United structural loophole
+- Section 2 (Capacity Dismantlement): Bondi memorandum simultaneous three-body disbanding (FITF, KleptoCapture, Kleptocracy Initiative); CISA election security infrastructure collapse (130 employees, 10 regional advisers); FMIC statutory gutting (Election Threats Executive eliminated); GEC closure (Rubio "censorship" framing); FARA criminal enforcement deprioritized to espionage-only standard; 2026 ATА omission documented with Warner-Gabbard exchange
+- Section 3 (Democracy Promotion Collapse): USAID 97% democracy/governance program termination ($80B+ cuts); NED impoundment lawsuit and $95M injunction; IRI/NDI mass office closures; DRL 80% staff reduction and Democracy Fund elimination; Freedom House 20th consecutive year of global freedom decline
+- Section 4 (Comparative International Evidence): Australia FITS Act 2018 (improved FARA model, 2024 reforms); EU Democracy Shield + European Centre for Democratic Resilience + DSA Article 40 researcher access rights; Nordic-Baltic whole-of-society model (Finland media literacy, Latvia three-pillar model, Denmark Task Force Interference); Germany NetzDG and streitbare Demokratie
+- Section 5 (Reform Pathways): Four statutory proposals — FARA Enforcement and Transparency Act (mandatory civil penalties, LDA loophole closure, beneficial ownership disclosure, independent enforcement unit, public registry); Democratic Defense Infrastructure Act (statutory FICC with fixed-term director, ETE restoration, CISA election security protection, counter-disinformation office, mandatory pre-election threat reports); Foreign Interference Commission Act (12-member bipartisan, subpoena authority, 9/11 Commission model); Democracy Promotion Restoration Act and Authoritarian Influence Registry ($400M NED floor, $2B USAID floor, DRL 300-FTE mandate, $50K threshold registry for country-of-concern funding)
+- Section 6 (Cross-Domain Synthesis): Domain 37 (Storm-1516 amplifies domestic voter confidence suppression); Domain 29 (inverted enforcement — SPLC prosecution vs. Tenet Media non-prosecution); Domain 8 (dark money as foreign interference channel); Domain 7 (NATO alliance democratic solidarity dimension); Domain 21 (SAVE database as counterintelligence vulnerability); democratic resilience deficit analysis; Hungary 2026 election as case study in mobilization overcoming structural manipulation
+- Section 7 (Implementation Timeline): Immediate (state FARA equivalents, qui tam FARA enforcement, GEC litigation, allied intelligence coordination); Near-term (national security framing for DISCLOSE Act bipartisan coalition); Long-term (mandatory appropriations insulation design principle derived from 2025 institutional collapse experience)
+
+### Files Modified
+
+| File | Change | Words Added |
+|------|--------|-------------|
+| `domains/domain-foreign-interference-in-democratic-institutions.md` | Created — Domain 37 Candidate A production document | ~10,200 |
+| `WORKLOG.md` | This entry | ~450 |
+
+---
+
 ## April 29, 2026 (Session 612) — Phase 3 Candidate 6: Information Access, FOIA, and Investigative Capacity
 
 **Session type**: Primary research and domain document production
