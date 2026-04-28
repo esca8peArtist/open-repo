@@ -1053,29 +1053,43 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 **NEW ITEMS (Session 594 — Phase 3 Research Queue)**:
 
-- **resistance-research: Phase 3 Candidate 1 — Civil Service Resilience and Protection** (Priority 1, HIGH-ROI for Goal advancement)
-  - **Scope**: Comprehensive research on civil service independence mechanisms that survive politicization. (1) Structural protections: MSPB/OPM rulemaking authority, Senior Executive Service (SES) career protections, merit system principle enforcement, (2) International precedent: UK civil service neutrality codes, German Beamtentum, Canada/Australia protective legislation, (3) Vulnerability analysis: current Schedule F threat, DOGE precedent, personnel security clearance politicization, (4) Recovery pathways: statutory hiring/firing protections, inspector general independence, inspector general investigative mandate expansion, (5) Implementation timeline: recovery-phase recruitment, institutional memory preservation, merit system restoration
-  - **Goal**: Advance resistance-research Phase 3 by identifying civil service as a critical leverage point for democratic recovery
-  - **Expected output**: `domains/domain-civil-service-resilience.md` (8,000-10,000 words, 40+ sources), reform pathways, international case studies, implementation timeline
-  - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED — ready for immediate execution, no blockers
-  - **Notes**: Complements Phase 2 prosecution/civil rights work by addressing government workforce autonomy
+- ✅ **resistance-research: Phase 3 Candidate 1 — Civil Service Resilience and Protection** (COMPLETE — Session 594)
+  - **Deliverable**: `domains/domain-civil-service-resilience.md` (9,400 words, 63 sources)
+  - **Status**: ✅ COMPLETE, committed to master (commit 263a525)
 
-- **resistance-research: Phase 3 Candidate 2 — Judicial Independence Recovery Mechanisms** (Priority 1, HIGH-ROI for Goal advancement)
-  - **Scope**: Research on structural reforms that restore and protect judicial independence post-capture. (1) Court-by-court recovery: circuit court composition assessment, SCOTUS reform options (jurisdiction stripping, court-packing, 18-year term limits), state supreme court restoration, (2) Judicial branch autonomy: budget autonomy, personnel independence, ethics enforcement, (3) International precedent: Poland judicial recovery (mechanism vs. actual performance), Germany constitutional court independence, India judicial independence under pressure, (4) Accountability mechanisms: judicial misconduct discipline, recusal standards, conflict-of-interest enforcement, (5) Implementation sequencing: immediate stabilization vs. structural reform vs. long-term composition rebalancing
-  - **Goal**: Advance resistance-research Phase 3 by providing roadmap for judicial system recovery
-  - **Expected output**: `domains/domain-judicial-independence-recovery.md` (8,000-10,000 words, 40+ sources), reform pathways with implementation barriers, comparative case studies, institutional repair blueprint
-  - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED — ready for immediate execution, no blockers
-  - **Notes**: Directly supports Phase 2 Domain 6 (Judicial Branch) by extending recovery pathways
+- ✅ **resistance-research: Phase 3 Candidate 2 — Judicial Independence Recovery Mechanisms** (COMPLETE — Session 594)
+  - **Deliverable**: `domains/domain-judicial-independence-recovery.md` (9,800 words, 60 sources)
+  - **Status**: ✅ COMPLETE, committed to master (commit ed01249)
 
-- **resistance-research: Phase 3 Candidate 3 — Media Freedom and Journalistic Protection Recovery** (Priority 1, MEDIUM-ROI for Goal advancement)
-  - **Scope**: Research on structural protections for press freedom and journalistic independence. (1) First Amendment doctrine post-capture: defamation law reform, SLAPP litigation risks, editorial independence protections, (2) Media ownership structure: antitrust enforcement, public broadcasting autonomy, local news financial viability, nonprofit journalism models, (3) Journalist protection: shield laws, confidential source protections, border search restrictions, subpoena defense mechanisms, (4) International precedent: Europe press freedom directives, Mexico journalist protection programs, Turkey/Hungary repression mechanics (as counterexample), (5) Recovery pathways: legislative protection expansion, DOJ prosecutorial guidelines, FTC media ownership enforcement, public funding infrastructure
-  - **Goal**: Advance resistance-research Phase 3 by identifying media independence as prerequisite for informed democracy
-  - **Expected output**: `domains/domain-media-freedom-recovery.md` (8,000-10,000 words, 40+ sources), reform options, journalist protection roadmap, media infrastructure resilience blueprint
+- ✅ **resistance-research: Phase 3 Candidate 3 — Media Freedom and Journalistic Protection Recovery** (COMPLETE — Session 595)
+  - **Deliverable**: `domains/domain-media-freedom-recovery.md` (10,106 words, 62 sources)
+  - **Status**: ✅ COMPLETE, committed to master (commit 29a97c0)
+
+**NEW ITEMS (Session 595 — Exploration Queue Refresh)**:
+
+- **resistance-research: Phase 3 Candidate 4 — Financial Sector Independence and Banking System Resilience** (Priority 1, HIGH-ROI for Goal advancement)
+  - **Scope**: Research on structural protections for financial system independence post-capture. (1) Banking system architecture: Federal Reserve independence and governance, FDIC authority, OCC/Federal Reserve overlapping jurisdiction, (2) Financial sector vulnerabilities: politicization of banking regulation, selective enforcement targets, capital allocation weaponization, (3) Historical precedent: 2008 financial crisis and regulatory capture mechanics, Argentina banking collapse 2001-2002, Turkey's financial weaponization 2016-2023, (4) International precedent: EU banking union independence model, Canada central bank autonomy, IMF safeguards, (5) Recovery pathways: Fed independence restoration, regulatory agency structural reform, anti-corruption enforcement within financial sector
+  - **Goal**: Identify financial sector as critical node for democratic resilience (capital access to non-compliant organizations, funding for civic institutions, economic independence)
+  - **Expected output**: `domains/domain-financial-sector-independence.md` (8,000-10,000 words, 40+ sources), reform pathways, international case studies
   - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED — ready for immediate execution, no blockers
-  - **Notes**: Supports democratic participation by ensuring information access; precursor to Phase 1 distribution effectiveness
+  - **Status**: QUEUED — ready for immediate execution
+  - **Notes**: Complements Phase 3 civil service/judiciary/media work by addressing economic power asymmetry
+
+- **resistance-research: Phase 3 Candidate 5 — Legislative Branch Capacity and Congressional Independence** (Priority 1, MEDIUM-ROI for Goal advancement)
+  - **Scope**: Research on structural reforms for congressional institutional independence and legislative capacity. (1) Congressional staffing and expertise: CRS budget/authority, GAO independence, JCT independence, historical institutional knowledge loss, (2) Committee independence: subcommittee autonomy, minority party voice, ethics enforcement, (3) Legislative process protections: filibuster mechanics and democratic outcomes, rules committee autonomy, amendment process, (4) International precedent: UK parliamentary procedure independence, German Bundestag commissioning structure, European parliament powers, (5) Recovery pathways: congressional modernization, expert staffing restoration, budget/authority protection via statute
+  - **Goal**: Address institutional capacity required for effective legislative oversight and separation of powers
+  - **Expected output**: `domains/domain-legislative-branch-capacity.md` (8,000-10,000 words, 40+ sources), reform roadmap, institutional redesign options
+  - **Timeline**: 2-3 sessions
+  - **Status**: QUEUED — ready for immediate execution
+  - **Notes**: Addresses "checks and balances" structural integrity via legislative capacity
+
+- **resistance-research: Phase 3 Candidate 6 — Information Access, FOIA, and Investigative Capacity** (Priority MEDIUM, HIGH complementarity to media freedom work)
+  - **Scope**: Research on structural protections for public information access and investigative capacity. (1) FOIA mechanics and degradation: withholding authority expansion, processing delays, fee mechanisms, (2) Classification system abuse: overclassification trends, declassification politics, NARA independence, (3) Investigative capacity: congressional investigative authority, inspector general independence (expanded in Phase 3 Candidate 1), whistleblower protections, (4) International precedent: EU transparency directives, Canada Access to Information Act, UK Freedom of Information Act usage data, (5) Recovery pathways: FOIA reform, classification limits, whistleblower statute expansion, NARA independence via statute
+  - **Goal**: Identify information access as prerequisite for democratic accountability (no public oversight without public information)
+  - **Expected output**: `domains/domain-information-access-recovery.md` (7,000-9,000 words, 35+ sources), reform package, implementation barriers
+  - **Timeline**: 1-2 sessions
+  - **Status**: QUEUED — ready for immediate execution
+  - **Notes**: Deepens Phase 2 Domain 16 (Transparency & Accountability) and strengthens Phase 1 distribution effectiveness
 
 ---
 

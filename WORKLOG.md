@@ -4,6 +4,21 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 18:10–18:50 UTC — Session 595 (Continuation) — Phase 3 Candidate 3 Research + Queue Refresh
+
+**Phase 3 Candidate 3 Research Execution** (18:10–18:50 UTC):
+- **Media Freedom and Journalistic Protection Recovery** ✅ COMPLETE
+  - 10,106 words, 62 academic/policy/journalistic sources
+  - 5 sections: First Amendment doctrine, media ownership structure, journalist protection, international precedent, recovery pathways
+  - File: `projects/resistance-research/domains/domain-media-freedom-recovery.md` (98 KB)
+  - Committed: commit 29a97c0
+  - Key findings: Layered suppression model identifying 5 simultaneous mechanisms (legal threat, economic pressure, information access denial, infrastructure elimination, harassment amplification). PRESS Act as most immediately achievable single action, but full recovery requires coherent cross-layer response.
+
+**Queue Status Update**:
+- Completed Phase 3 Candidate 3 (Media Freedom Recovery) from queue
+- Exploration Queue now has 0 active items (Candidates 1-2 complete in Session 594, Candidate 3 complete this session)
+- Per orchestrator protocol: adding 2-3 new queue items since queue <3 items
+
 ## 2026-04-28 17:42–18:10 UTC — Session 595 — Stockbot Buying Power Investigation
 
 **Investigation: Stockbot Order Execution Failure (Inbox Item Processed)**
