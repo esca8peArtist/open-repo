@@ -91,17 +91,18 @@
 
 ---
 
-### Item 8: stockbot Multi-Asset Class & Regulatory Preliminary Research (Session 586)
-**Status**: QUEUED — Preliminary research to accelerate Item 3 execution post-market
-**Trigger**: Now (Session 586, pre-market, 12:35–13:30 UTC)
+### ✅ Item 8: stockbot Multi-Asset Class & Regulatory Preliminary Research (Session 587)
+**Status**: COMPLETED 2026-04-28 13:10 UTC
 **Scope**: Preliminary research on multi-asset class integration (equities + options + crypto + futures), SEC/FINRA regulatory compliance, Kelly criterion risk management, institutional scaling architecture patterns
 **Deliverables**: 
-- Regulatory compliance matrix (per-asset-class SEC/FINRA rules, PDT restrictions, state-by-state constraints)
-- Risk management architecture (Kelly criterion application, circuit breaker strategies, stress test scenarios)
-- Multi-asset integration patterns (data feed architecture, position tracking across classes, reporting consolidation)
-- Research notes for Item 3 execution at 20:30 UTC
-**Owner**: orchestrator (Session 586, 30–45 min preliminary research, accelerates Item 3)
-**Value**: When Item 3 executes at 20:30 UTC post-market, Item 8 groundwork eliminates research friction → faster 6,000–7,000 word production document
+- `projects/stockbot/RESEARCH_NOTES_ITEM8.md` (6,919 words, 804 lines)
+- Regulatory compliance matrix (22 specific rules, 4 asset classes: equities, options, crypto, futures)
+- Risk management architecture (Kelly Criterion derivation, multi-asset matrix formulation, worked example for equity vs. crypto position sizing)
+- Multi-asset integration patterns (data feed architecture, position schema, P&L aggregation)
+- Research methodology observations (7 architecture gaps, 7 high-priority questions for Item 3)
+**Key findings**: PDT counter missing in architecture, options Greeks schema needed, futures rollover logic needed, crypto circuit breaker timing ambiguous. FIT21 + CA DFAL tracking for regulatory evolution.
+**Outcome**: Production-ready for Item 3 execution at 20:30 UTC — Item 3 can cite/build directly without research friction
+**Timeline**: Session 587 (12:44–13:10 UTC, 26 min elapsed)
 
 ---
 

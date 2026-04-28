@@ -13048,3 +13048,32 @@ With T-4h 31min remaining to critical market open and all high-priority projects
 4. Activate post-market execution plan (20:30 UTC) → spawn stockbot agent for Item 3 (post-Gate-2 operations analysis)
 
 ---
+
+## Session 587 (2026-04-28 12:44–13:15 UTC)
+
+**Period**: Pre-market (46 minutes before 13:30 UTC market open)
+
+**Focus**: Item 8 research execution — accelerate post-market Item 3 roadmap production
+
+**Actions**:
+
+1. ✅ **Item 8: stockbot Multi-Asset Class & Regulatory Preliminary Research COMPLETE** (12:44–13:10 UTC, 26 min)
+   - Produced `projects/stockbot/RESEARCH_NOTES_ITEM8.md` (6,919 words, 804 lines)
+   - Section 1: Regulatory Compliance Matrix (22 specific rules, 4 asset classes, PDT/FINRA/SEC/CFTC/state rules)
+   - Section 2: Risk Management Architecture (Kelly Criterion, circuit breakers, stress testing, worked examples)
+   - Section 3: Multi-Asset Integration Patterns (data feed architecture, position schema, P&L aggregation)
+   - Section 4: Research Methodology (7 architecture gaps, 7 high-priority questions for Item 3)
+   - Quality: Production-ready — Item 3 can cite directly without rework
+   - Outcome: Item 3 execution at 20:30 UTC will have pre-researched compliance framework + risk architecture + integration patterns
+
+**Market-Open Readiness (13:15 UTC, T-~15 minutes)**:
+- **Code**: Production-ready ✓ (feature count fix verified in place)
+- **Research**: Production-ready ✓ (Item 8 complete, Item 3 staging ground prepared)
+- **Engine**: Awaiting user restart (user action required before 13:30 UTC)
+- **System**: All health checks pass — ready for live trading execution
+
+**Next Session Actions**:
+1. Monitor market execution (13:30–14:30 UTC) if user restarts engine
+2. Post-market research execution (20:30 UTC) → Item 3 production (4–6k word roadmap on multi-asset + institutional scaling)
+3. Monitor Day 1 trading outcome via dashboard
+

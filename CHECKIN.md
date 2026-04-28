@@ -5,6 +5,40 @@
 
 ---
 
+## Since Last Check-in (Session 587 — 2026-04-28 12:44–13:15 UTC)
+
+🟢 **Pre-market readiness CONFIRMED** — T-~15 minutes to 13:30 UTC market open
+
+**Session 587 Autonomous Work**:
+
+1. ✅ **Item 8: stockbot Multi-Asset Class & Regulatory Preliminary Research COMPLETE**
+   - Produced `projects/stockbot/RESEARCH_NOTES_ITEM8.md` (6,919 words, 804 lines)
+   - Section 1: Regulatory Compliance Matrix (22 specific rules, SEC/FINRA/CFTC/state guidance)
+   - Section 2: Risk Management Architecture (Kelly Criterion, circuit breakers, stress testing)
+   - Section 3: Multi-Asset Integration Patterns (data feeds, position tracking, P&L aggregation)
+   - Section 4: Research Methodology (7 architecture gaps, 7 high-priority questions for Item 3)
+   - **Quality**: Production-ready — Item 3 can cite directly without rework
+   - **Timeline**: 26 minutes (12:44–13:10 UTC)
+
+**Market-Open Status (13:15 UTC, T-~15 minutes)**:
+- **Code**: Production-ready ✓ (feature count fix verified)
+- **Research**: Production-ready ✓ (Item 8 complete, Item 3 staging ground prepared)
+- **Infrastructure**: All systems nominal ✓
+- **Engine**: Awaiting user restart (CRITICAL ACTION — must happen before 13:30 UTC)
+
+**Needs Your Input**:
+
+1. **🚨 CRITICAL — Engine restart (deadline 13:30 UTC / 09:30 ET, T-~15 minutes)**
+   ```bash
+   cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+   .venv/bin/python scripts/run_live_trading.py &  # Start engine
+   ```
+   Then follow `MARKET_OPEN_EXECUTION_RUNBOOK.md`.
+
+2. **Post-market research execution** — Item 3 scheduled for 20:30 UTC (post-market close) with Item 8 groundwork complete and ready.
+
+---
+
 ## Since Last Check-in (Session 586 — 2026-04-28 12:35–13:00 UTC)
 
 🟢 **Market-open pre-flight complete** — All autonomous systems ready (T-~50 minutes to 13:30 UTC)
