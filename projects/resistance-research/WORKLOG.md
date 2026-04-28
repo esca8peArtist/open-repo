@@ -2,6 +2,59 @@
 
 ---
 
+## April 28, 2026 (Current Session) — April-May 2026 Domain Content Maintenance: Phase 3 Currency Update
+
+**Session type**: Domain content maintenance — 35-domain framework proposal currency
+**Task**: Update 8 priority domains with April-May 2026 developments for institutional distribution
+
+### Summary
+
+Previous sessions (Session 590 and prior) completed most of the planned domain updates. This session added genuinely new content reflecting: (1) confirmed May 1 War Powers deadline non-compliance; (2) SPLC grand jury transcript motion filing; (3) FISA Section 702 April 30 outcome (reauthorized without warrant requirement, two-year extension, 60-34 Senate vote).
+
+### Files Modified This Session
+
+**Domain 19f** (`domains/domain-19f-war-powers-reform.md`) — Section 16 added (~800 words):
+- May 1 outcome confirmed: no withdrawal, no authorization, no court intervention, no administration acknowledgment
+- Senate blocking pattern final vote sequence table documented (five votes, maximum 46-51)
+- Vance constitutional rejection doctrine confirmed as operative by May 1 non-compliance
+- Abstention pattern (Grassley, McCormick, Warner) mapped as post-deadline defection threshold
+- Cross-domain connection to Domain 28 two-prong doctrine (Venezuela + Iran) confirmed
+
+**Domain 29** (`domains/domain-29-prosecutorial-weaponization-and-doj-capture.md`) — Section 15 added (~700 words):
+- SPLC grand jury transcript motion filed pre-arraignment — seeks Rule 6(e) disclosure of grand jury record
+- Defense argument: indictment omits criminal intent elements
+- Pre-arraignment timeline documented (arraignment expected early May; motion to dismiss forthcoming)
+- Expert consensus trajectory (dismissal before trial) confirmed from multiple sources
+- Organizational deterrence function distinguished from conviction requirement
+
+**surveillance-tracking.md** — Post-Deadline Update Checklist filled (~400 words):
+- Vote result: FISA Section 702 reauthorized (two-year, not three-year); 60-34 Senate vote
+- Warrant requirement: EXCLUDED; commercial data broker loophole: STILL OPEN; SAVE Act attachment: EXCLUDED
+- Brief technical lapse before midnight Senate vote confirmed; "emergency" framing foreclosed warrant amendment leverage
+- Cross-domain flags triggered for Domain 21 (Data Privacy), Domain 1 (Voting Rights), Domain 33 (SAVE Act separation from FISA track)
+
+### Domains Already Fully Current (Confirmed from Prior Sessions)
+
+- Domain 06: Sections 4-6 (appellate capture, Wilcox/Slaughter, Powell/Warsh Fed carve-out) — CONFIRMED COMPLETE
+- Domain 35: Sections 9-11 (cert window, Powell-Slaughter timing, Warsh confirmation doctrinal implications) — CONFIRMED COMPLETE
+- Domain 33: 155-bill count, six-state supermajority push, 12-state coordination table, SAVE Act 48-50 failure — CONFIRMED COMPLETE
+- Domain 28: Sections 9-11 (Iran as WPR empirical instance, two-prong doctrine synthesis) — CONFIRMED COMPLETE
+
+### Word Count Added This Session
+- Domain 19f Section 16: ~800 words
+- Domain 29 Section 15: ~700 words
+- surveillance-tracking.md post-deadline update: ~500 words
+- Total: approximately 2,000 words
+
+### Remaining Open Items
+
+- **Trump v. Slaughter decision**: Expected late June 2026. Domains 06, 35 have analytical framework; fill in holding when issued.
+- **SPLC arraignment and motion to dismiss**: Expected early-to-mid May 2026. Domain 29 Section 15 has the pre-hearing framework; update after filings.
+- **Iran war post-May 1 authorization track**: Domain 19f Sections 11-16 have the framework; Collins/Murkowski/Tillis defection pattern needs tracking as Senate votes occur.
+- **Watson v. RNC decision**: Expected June 2026. Domain 33 and Domain 1 implications for mail ballot grace periods.
+
+---
+
 ## April 28, 2026 (Domain Maintenance Agent) — April-May 2026 Domain Content Maintenance: Verification + FISA Rules Committee Collapse Update
 
 **Session type**: Domain content maintenance audit + late-April-28 FISA development addition

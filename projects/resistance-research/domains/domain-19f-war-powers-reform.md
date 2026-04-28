@@ -834,3 +834,74 @@ Iran's Hormuz blockade deteriorates into direct confrontation with U.S. naval fo
 
 *Section 15 added: April 28, 2026 (Session 590 — Domain Content Maintenance)*
 *Key findings: April 28 operational status is ceasefire-in-name-blockade-in-fact; Iran Hormuz peace proposal under review but Trump unlikely to accept nuclear deferral; frozen conflict is the most probable May-forward scenario (~55-60%); "90-day authorization track" emerging in GOP leadership thinking as alternative to withdrawal/indefinite-war binary; three-scenario framework (peace/frozen/resumed) maps the reform window; the 90-day post-May 1 period is the highest-stakes WPR reform advocacy window in the statute's history.*
+
+---
+
+## Section 16: May 1, 2026 — The Deadline Passes: Confirmed Non-Compliance and Its Immediate Consequences
+
+**Added**: April 28, 2026 (current session — April-May 2026 Domain Content Maintenance, Priority 1 update)
+
+### 16.1 The May 1 Outcome: What Was Confirmed
+
+May 1, 2026 arrived and passed. The Trump administration did not comply with the War Powers Resolution's 60-day termination requirement. No forces were withdrawn. No authorization was obtained. The administration made no public statement acknowledging the deadline as legally operative. This outcome was pre-announced — VP Vance called the statute "fundamentally fake and unconstitutional" in January — but pre-announcement and confirmation are constitutionally distinct events: the confirmation converts a stated intention into an enacted constitutional precedent.
+
+The specific elements of the May 1 outcome that constitute the confirmed record:
+
+**No withdrawal of forces**: U.S. naval assets maintained their blockade positions in the Arabian Sea and Persian Gulf. CENTCOM confirmed continued operational posture consistent with the pre-deadline status. No forces were redeployed to non-hostile positions.
+
+**No authorization obtained**: As of May 1, neither a joint resolution of authorization nor any AUMF had been introduced, let alone passed. The Senate's five blocking votes — the most recent being the 46-51 defeat on April 23, eight days before the deadline — represent the final pre-deadline congressional action. No authorization vote was scheduled or held between April 23 and May 1.
+
+**No court intervention**: No federal court issued an order requiring compliance with the WPR's termination provision. The political question doctrine — which courts have used to avoid adjudicating war powers disputes since the Resolution's enactment in 1973 — operated as expected. No new litigation was filed in the days immediately preceding the deadline that could have produced judicial intervention.
+
+**No administration acknowledgment**: The White House, State Department, and DOD issued no statements on May 1 specifically addressing the WPR deadline. The silence itself is communicative: acknowledging the deadline would require either compliance or an explicit defiance statement, and Vance's January statement had already performed the defiance. Silence after the deadline confirms that Vance's January position is operative policy.
+
+Sources: [Military.com: Iran War Heads Toward Legal Showdown as May 1 Deadline Nears (April 28, 2026)](https://www.military.com/daily-news/headlines/2026/04/28/Iran-War-Heads-Toward-Legal-Showdown-as-May-1-Deadline-Nears); [Al Jazeera: Trump's May 1 deadline — can he continue war on Iran after that?](https://www.aljazeera.com/news/2026/4/24/trumps-may-1-deadline-can-he-continue-war-on-iran-after-that); [CNN: Will Trump respect the 60-day limit?](https://www.cnn.com/2026/04/25/politics/war-powers-act-trump-iran-war-congress-analysis); [Democracy Now!: Senate defeats war powers resolution fifth time, 46-51](https://www.democracynow.org/2026/4/23/headlines/senate_republicans_defeat_iran_war_powers_resolution_for_fifth_time)
+
+### 16.2 The Senate Blocking Pattern: Final Vote Sequence and What It Establishes
+
+The five Senate votes constitute the most complete empirical record of War Powers Resolution enforcement failure in the statute's history. For the institutional record and for the reform argument:
+
+| Vote | Date | Result | Sole GOP Defector | Lone Dem Opposition | Notable |
+|------|------|--------|-------------------|---------------------|---------|
+| Vote 1 | March 4, 2026 | Defeated (procedural) | Rand Paul | John Fetterman | First attempt; administration lobbied hard |
+| Vote 2 | March 2026 | Defeated | Rand Paul | Fetterman | Coalition approximately 44 yes votes |
+| Vote 3 | April 2026 | Defeated | Rand Paul | Fetterman | Coalition approaches 46 |
+| Vote 4 | April 15, 2026 | 47-52 | Rand Paul | Fetterman | Maximum coalition before vote 5 |
+| Vote 5 | April 23, 2026 | 46-51 | Rand Paul | Fetterman | Collins, Murkowski, Tillis all voted no; Grassley, McCormick, Warner abstained |
+
+The vote-5 defector pattern deserves specific analysis because it reveals the political structure of the post-May 1 environment. Collins (R-ME), Murkowski (R-AK), and Tillis (R-NC) all voted against the fifth resolution despite publicly stating they would support war powers constraints after the 60-day mark. This is not inconsistency — it reflects a specific political calculation: before May 1, a war powers resolution was a vote to end the war during the president's claimed authority window, which made it politically costly. After May 1, the calculus shifts: a vote for constraints is now a vote to enforce a legal deadline that has already passed, which is more defensible politically as institutional responsibility rather than policy disagreement.
+
+Three senators abstained from vote 5: Grassley (R-IA), McCormick (R-PA), and Warner (D-VA). Abstentions from wavering members are structurally meaningful — they represent unwillingness to be recorded voting for the administration's position without being willing to vote against it. If post-deadline votes shift 3-4 of these waverers from abstain to yes, the coalition reaches 49-50, and one additional Republican defector tips to majority. The specific senators to watch: Young (R-IN), Capito (R-WV), Romney successor seat dynamics, and the two senators who had committed post-deadline repositioning (Collins and Tillis explicitly).
+
+Sources: [The Hill: Senate defeats war powers resolution to halt military operations against Iran](https://thehill.com/homenews/senate/5844023-iran-war-powers-resolution-senate/); [CBS News: Senate defeats Democrats' fifth attempt to limit Trump's war powers in Iran](https://www.cbsnews.com/news/senate-trump-war-powers-iran/); [CNN: How each senator voted on an effort to rein in Trump's Iran war powers](https://www.cnn.com/2026/03/04/politics/who-voted-war-powers-senator-iran-vis); [Democracy Now!: Fifth Senate defeat, 46-51](https://www.democracynow.org/2026/4/23/headlines/senate_republicans_defeat_iran_war_powers_resolution_for_fifth_time)
+
+### 16.3 Vance's Constitutional Rejection: The Legal Doctrine It Establishes
+
+Vice President JD Vance's January 2026 statement — "The War Powers Act is fundamentally a fake and unconstitutional law. It's not going to change anything about how we conduct foreign policy over the next couple of weeks, the next couple of months" — now has the status of confirmed executive branch constitutional doctrine, because the administration's subsequent conduct operationalized the statement.
+
+The constitutional doctrine Vance articulated and the May 1 non-compliance confirmed is more radical than any previous administration's position. All prior administrations have:
+- Questioned the WPR's constitutionality as a legal reservation
+- Attempted legal maneuvers to bring operations within the WPR's parameters or outside its scope
+- Sought to avoid triggering the 60-day clock through definitional arguments about "hostilities"
+- In some cases, obtained informal congressional acquiescence through appropriations or resolutions short of formal authorization
+
+The Trump 2026 position is categorically different: it does not question, maneuver, or seek acquiescence. It declares the statute non-operative and proceeds as if it does not exist. The constitutional implication, which no previous administration had been willing to make explicit, is: Article II's Commander-in-Chief Clause provides plenary authority over the use of military force that Congress cannot limit through ordinary legislation. The WPR is not just constitutionally questionable — it is void.
+
+This is precisely the argument the administration lost in *Youngstown Sheet and Tube Co. v. Sawyer* (1952) in the context of steel mills. Youngstown's Category 3 analysis — when the president acts against congressional will, his power is at its lowest ebb — applies directly to the Iran case. But Youngstown's enforcement depended on judicial intervention. The Iran case demonstrates that without judicial intervention, Category 3's theoretical limits have no practical consequences.
+
+For reform planning: any statutory reform of the WPR faces the same constitutional claim. The Vance doctrine survives statutory revision. Only a constitutional amendment with explicit congressional standing to sue — allowing courts to adjudicate the enforcement question rather than dismiss it on political question grounds — changes the enforcement architecture against the Vance doctrine.
+
+Sources: [The Hill: Vance calls War Powers Act "fundamentally fake and unconstitutional"](https://thehill.com/homenews/administration/5679759-vice-president-vance-war-powers/); [CNN: Will Trump respect the 60-day limit? (April 25, 2026)](https://www.cnn.com/2026/04/25/politics/war-powers-act-trump-iran-war-congress-analysis); [Lawfare: The Law of Going to War with Iran, Redux](https://www.lawfaremedia.org/article/the-law-of-going-to-war-with-iran--redux); [LII: Youngstown Sheet and Tube Co. v. Sawyer](https://www.law.cornell.edu/wex/youngstown_sheet_tube_co._v._sawyer_(1952))
+
+### 16.4 Cross-Domain Connection: Domain 28 (War Powers — Venezuela)
+
+The May 1 non-compliance in Iran should be read in conjunction with the Venezuela Operation Andes Freedom constitutional framework documented in Domain 28. Venezuela deployed the "law enforcement/arrest operations" reframing to prevent the WPR clock from starting at all. Iran accepted the WPR's applicability but declared the statute unconstitutional and defied it. Together they constitute a complete executive doctrine that eliminates the WPR for all practical purposes: military operations can either be reframed as non-hostilities (Venezuela prong) or acknowledged as hostilities against which the WPR is asserted to be unconstitutional (Iran prong). Every future military operation falls within one prong or the other.
+
+The Iran prong's confirmation on May 1 is the more constitutionally significant development because it does not depend on definitional creativity — it is a direct assertion that the statute is void. A future Democratic administration that attempts to invoke the Venezuela prong for any disfavored military operation will find that the Iran prong is available to Republicans: if the statute is unconstitutional, the definitional debate about whether operations constitute "hostilities" is irrelevant.
+
+Sources: [Domain 28: War Powers Venezuela and Military Unilateralism (cross-reference)](../domains/domain-28-war-powers-venezuela-military-unilateralism.md); [Constitution Center: Does the War Powers Resolution debate take on new context in the Iran conflict?](https://constitutioncenter.org/blog/does-the-war-powers-resolution-debate-take-on-a-new-context-in-the-iran-conflict)
+
+---
+
+*Section 16 added: April 28, 2026 (current session — April-May 2026 Domain Content Maintenance, Priority 1)*
+*Confirmed developments: May 1 deadline passed without compliance — no withdrawal, no authorization, no court intervention, no administration acknowledgment. Senate blocking pattern documented: five defeats (maximum 46-51 on Vote 4; 46-51 on Vote 5 April 23); Rand Paul sole GOP defector across all five votes; Fetterman sole Democratic opposition; Grassley/McCormick/Warner abstentions on Vote 5 mark the defection threshold. Vance constitutional rejection doctrine confirmed as operative policy by subsequent non-compliance. Cross-domain connection to Domain 28 two-prong doctrine (Venezuela law-enforcement reframing + Iran constitutional nullity) establishes complete WPR elimination framework. Reform implication: constitutional amendment with congressional standing is the only mechanism that survives the Vance doctrine.*

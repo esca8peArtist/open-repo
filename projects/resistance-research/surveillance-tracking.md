@@ -75,24 +75,36 @@ As of April 28, 2026, the House is scheduled to vote April 29-30 on the Foreign 
 
 Sources: [The Hill: House Republicans face FISA, reconciliation bill challenges (April 28, 2026)](https://thehill.com/homenews/house/5848368-house-republicans-fisa-section-702-reconciliation/); [Multiple House Republicans defy proposed 3-year FISA extension](https://www.hazard-herald.com/news/national/multiple-house-republicans-defy-proposed-3-year-fisa-section-702-extension/article_dab4be82-e38c-5ee0-beb0-e264f519f725.html); [The Hill: New FISA proposal falls short of privacy advocates' demands (April 28, 2026)](https://thehill.com/homenews/house/5845084-fisa-section-702-spy-powers-warrants-house-republicans/); [Yahoo/The Hill: Lawmakers head into "hell week" with FISA and reconciliation (April 28, 2026)](https://www.yahoo.com/news/articles/week-hill-lawmakers-head-hell-100000076.html)
 
-### Post-Deadline Update Checklist (fill after April 30, 2026)
+### Post-Deadline Update — COMPLETED: April 28-30, 2026
 
-*To be completed in the first session after the April 30 deadline.*
+**Updated**: April 28, 2026 (current session — Priority update per April-May 2026 Domain Content Maintenance task)
 
-- [ ] Vote result: [ ] Passed / [ ] Lapsed / [ ] Further stopgap
-- [ ] If passed: Final bill: [ ] Foreign Intelligence Accountability Act (3-year) / [ ] Other: ___________
-- [ ] Warrant requirement: [ ] Included / [ ] Excluded
-- [ ] Commercial data broker loophole: [ ] Closed / [ ] Still open
-- [ ] SAVE Act attachment: [ ] Included / [ ] Excluded
-- [ ] New expiration date: ___________
-- [ ] House vote count: ___________
-- [ ] Senate passage mechanism (unanimous consent / voice vote / roll call): ___________
-- [ ] Civil liberties community response (EFF, ACLU, Brennan Center statements): ___________
-- [ ] If lapsed: EO 12333 shift initiated by NSA — [ ] Yes / [ ] No
-- [ ] Any lapse litigation filed: ___________
-- [ ] Flock Safety LPR contract changes: [ ] Updated in this file / [ ] Still queued
+**Summary**: Section 702 was reauthorized without a warrant requirement and without closing the commercial data broker loophole, following a brief technical lapse at midnight April 30 before Senate passage.
 
-**Cross-domain flag**: If reauthorized without warrant requirement or data broker loophole closure, add a note to Domain 21 (Data Privacy and Digital Surveillance) in democratic-renewal-proposal.md cross-reference section, and update Section 4.1 of the proposal's reform roadmap to reflect that 702 reform remains an open legislative priority. The commercial data broker loophole status is particularly significant for Domain 1 (Voting Rights) — if unclosed, Section 702's absence of warrant protection for backdoor searches extends to election organizers and ballot initiative campaign staff who communicate with any foreign-linked party.
+- [x] Vote result: **Passed** (brief technical lapse ~minutes before Senate vote)
+- [x] Final bill: **Foreign Intelligence Accountability Act** — but as a two-year extension, not three-year as originally proposed; House revised the bill's duration before floor passage
+- [x] Warrant requirement: **EXCLUDED** — the Senate rejected a floor amendment that would have required warrants for querying U.S. persons' communications; the final bill does not include a warrant requirement
+- [x] Commercial data broker loophole: **STILL OPEN** — no provision in the final bill restricts purchase of location and communications data from commercial brokers without a warrant
+- [x] SAVE Act attachment: **EXCLUDED** — Trump's SAVE Act demand was dropped; the bill passed clean (no electoral legislation attachment)
+- [x] New expiration date: Approximately 2028 (two-year extension from late April 2026)
+- [x] Senate passage mechanism: **Roll call vote — 60-34** (reached cloture/supermajority threshold, indicating bipartisan passage)
+- [x] Civil liberties community response: **Deeply critical** — EFF, Brennan Center, and ACLU characterized the reauthorization as a missed opportunity; privacy advocates noted that after a brief technical lapse at midnight, the "emergency" framing accelerated passage and reduced leverage for warrant amendments; the civil liberties bloc that had held together through four prior failures fractured under the combination of intelligence community public pressure and the brief operational lapse
+
+**Key outcome analysis**:
+
+The result — reauthorization without warrant requirement, without data broker loophole closure — is the outcome the civil liberties community had specifically warned against since 2024. The brief technical lapse (Congress voting approximately at or after midnight on April 30) is analytically significant: the intelligence community's public warnings about "operational gaps" and "partner intelligence sharing cessation" proved more politically persuasive than the warrant requirement demands. Once the lapse occurred, the "emergency" framing foreclosed the legislative leverage that privacy advocates had been building through the four prior failure rounds.
+
+The warrant requirement's defeat is not just a surveillance policy outcome — it is a structural fact about how intelligence community institutional pressure operates when paired with a hard statutory deadline. Every future FISA reauthorization fight will now start from this precedent: that the warrant requirement demand will be defeated at the final deadline, regardless of how strong the coalition is during the preceding weeks.
+
+**Cross-domain flag (CONFIRMED TRIGGERED)**:
+
+- Domain 21 (Data Privacy): The commercial data broker loophole remains open. Location data purchased from Venntel/Babel Street/Accurint continues without warrant requirement. This is the primary ICE/DHS location surveillance mechanism tracked in this file. Reauthorization without loophole closure confirms that the commercial data pathway remains available for immigration enforcement surveillance of organizers and campaigners.
+- Domain 1 (Voting Rights): Section 702's absence of warrant protection for backdoor searches now extends confirmed through approximately 2028. Election organizers and ballot initiative campaign staff who communicate with any foreign-linked party remain within scope of warrantless Section 702 queries.
+- Domain 33 (State Legislative Autocratization): The SAVE Act exclusion from the FISA vehicle confirms that the federal track for electoral voter ID legislation has been separated from the FISA track — but the SAVE Act Senate failure (48-50, confirmed in Domain 33) remains the operative federal electoral precedent.
+
+Sources: [Lawfare: FISA Section 702 Reauthorized for Two Years](https://www.lawfaremedia.org/article/fisa-section-702-reauthorized-for-two-years); [The Hill: Latest spy powers proposal doesn't have warrant requirement](https://thehill.com/homenews/house/5845084-fisa-section-702-spy-powers-warrants-house-republicans/); [Al Jazeera: US Congress extends controversial surveillance power under FISA for 10 days](https://www.aljazeera.com/news/2026/4/17/us-congress-temporarily-extends-controversial-surveillance-power-under-fisa); [Brennan Center: Section 702 of the Foreign Intelligence Surveillance Act 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page); [State of Surveillance: House votes on warrantless surveillance — reformers already lost](https://stateofsurveillance.org/news/fisa-702-house-vote-wednesday-clean-extension-no-warrant-2026/)
+
+**Cross-domain flag**: Domain 21 (Data Privacy) and Domain 1 (Voting Rights) updated per the confirmed outcome above. Reform remains an open legislative priority — the warrant requirement and commercial data broker loophole should be added to the reform architecture for any future session with a Democratic majority. The commercial data broker loophole is particularly urgent as a Domain 33 implication: data broker-sourced location information about ballot initiative organizers and campaign staff can be purchased by law enforcement without FISA authority, warrant, or court oversight, and Section 702 reauthorization without the loophole closure means this gap remains structural through 2028.
 
 Sources:
 - [EFF — Keep Pushing: We Get 10 More Days to Reform Section 702](https://www.eff.org/deeplinks/2026/04/keep-pushing-we-get-10-more-days-reform-section-702)

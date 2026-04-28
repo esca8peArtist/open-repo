@@ -554,3 +554,50 @@ Sources: [Protect Democracy Retaliatory Action Tracker](https://protectdemocracy
 
 *Section 14 added: April 28, 2026 (current session)*
 *Key new developments: SPLC assigned to Trump-appointed Judge Emily Marks (Middle District of Alabama); no arraignment date yet; First Amendment argument identified as additional dismissal ground beyond Thompson bank fraud and wire fraud victim-absence defects; DOJ state bar rule comment period closed April 6 — pre-SPLC indictment, meaning comments don't capture the SPLC case as evidence; regulatory final rule expected June-October 2026; ABA and state bars committed to immediate legal challenge; accountability suppression sequence (state bar close → Patel lawsuit → SPLC indictment) documented as coordinated April 2026 cluster.*
+
+---
+
+## Section 15: Late April 2026 — SPLC Grand Jury Transcript Motion and Pre-Arraignment Litigation Strategy
+
+**Updated**: April 28, 2026 (current session — Priority 2 update per April-May 2026 Domain Content Maintenance)
+
+### 15.1 The Grand Jury Transcript Motion: A Novel Pre-Arraignment Challenge
+
+Before the formal arraignment in *United States v. Southern Poverty Law Center* — expected in early May 2026 — the SPLC's defense team has taken an unusual pre-arraignment litigation step: seeking disclosure of the grand jury transcripts that produced the April 21 indictment.
+
+CBS News confirmed that the SPLC filed a motion seeking disclosure of grand jury transcripts in the Montgomery, Alabama federal proceedings. The SPLC's attorneys argued that the indictment "omits elements of criminal intent" — meaning the charges on their face do not allege that the SPLC had the knowledge and purpose that the wire fraud and bank fraud statutes require — and that the grand jury transcripts will show that the government's evidentiary presentation to the grand jury was similarly deficient.
+
+The procedural significance of this motion is substantial and goes beyond the SPLC case:
+
+**Grand jury transcripts are almost never disclosed pre-trial.** Federal Rule of Criminal Procedure 6(e) provides strong secrecy protections for grand jury proceedings. Courts will order disclosure only upon a showing of "particularized need" that outweighs the interest in secrecy. The SPLC's motion represents a high-risk, high-reward litigation strategy: if it succeeds, the defense obtains the evidentiary record of what the government presented to the grand jury — which may reveal the selective presentation documented in Section 7.2 (the rule that prosecutors need not present exculpatory evidence to grand juries). If it fails, the SPLC has established a public record that the indictment omits required elements, which strengthens the forthcoming motion to dismiss.
+
+**The "omits elements of criminal intent" argument is the strongest legal claim.** This argument is distinct from the substantive legal defects analyzed in Section 1.2 (the *Thompson v. United States* bank fraud defect, the wire fraud victim-absence problem). The criminal intent argument is structural: even if the charged conduct could theoretically constitute a crime, the indictment itself must allege that the defendant knew their conduct was fraudulent. An indictment that charges wire fraud without adequately alleging knowledge that the fundraising omission was intentionally deceptive fails to state an offense. Former prosecutor Kyle Boynton's statement — "I don't think any prosecutor with white-collar experience would look at this indictment and believe it makes out the elements of a crime" — is consistent with this legal theory.
+
+**Why this matters for the prosecutorial weaponization framework**: The grand jury transcript motion, if litigated, would create a public record of the government's pre-indictment evidentiary theory. This directly addresses the systemic problem documented in Section 7 of this domain: the charging stage is where prosecutorial power is most dangerous and where judicial oversight is minimal. The SPLC defense team is attempting to move judicial oversight upstream — into the grand jury record — rather than waiting for trial. Even if the motion is denied, litigating it creates discovery disputes that the court must resolve on record, reducing the government's ability to control the evidentiary narrative.
+
+Sources: [CBS News: Southern Poverty Law Center seeks disclosure of grand jury transcripts in criminal case](https://www.cbsnews.com/news/southern-poverty-law-center-seeks-disclosure-of-grand-jury-transcripts-in-criminal-case/); [CBS News: Former federal prosecutors see legal flaws in DOJ's indictment of SPLC](https://www.cbsnews.com/news/southern-poverty-law-center-justice-department-indictment-legal-flaws/); [Alabama Reflector: Legal experts skeptical of DOJ's criminal case against SPLC](https://alabamareflector.com/2026/04/23/legal-experts-skeptical-of-dojs-criminal-case-against-southern-poverty-law-center/)
+
+### 15.2 Pre-Arraignment Timeline: What Comes Next
+
+As of late April 2026, the procedural posture of *United States v. Southern Poverty Law Center* is as follows:
+
+**Indictment**: Returned April 21, 2026, 11 counts (6 wire fraud, 4 false statements to bank, 1 money laundering conspiracy).
+
+**Defense counsel**: Bradley Arant Boult Cummings LLP (Birmingham, major corporate defense firm with Fifth Circuit expertise). The selection of a non-progressive corporate firm is analytically significant — the SPLC is treating this as a serious criminal matter requiring the highest-tier defense, not as a political cause.
+
+**Grand jury transcript motion**: Filed pre-arraignment; argues indictment omits elements of criminal intent; seeks production of transcripts to support motion to dismiss.
+
+**Arraignment**: Expected early May 2026. At arraignment, the SPLC will enter a plea (expected: not guilty), and the court will set a scheduling order for pre-trial motions.
+
+**Motion to dismiss**: Defense counsel has stated a motion to dismiss is "forthcoming" — standard post-arraignment practice after the scheduling order is set. The motion will likely assert: (1) failure to state an offense (*Thompson v. United States* bank fraud defect); (2) wire fraud victim-absence (no identified donor claims to have been deceived); (3) First Amendment grounds (funding speech, even extremist speech, is constitutionally protected); (4) selective prosecution (if discovery reveals the pattern documented in Section 2 of this domain).
+
+**Expert consensus on trajectory**: Every former federal prosecutor who has publicly analyzed the indictment — Weissmann (Just Security), Zelinsky, Boynton — predicted dismissal before trial. The Alabama Reflector reported: "I would be surprised if this case made it very far in the process. I would be absolutely shocked if it went all the way to a conviction. I think it will get dismissed earlier in the process." The legal defects are independent and additive: any one of the three primary defects (Thompson bank fraud, wire fraud victim-absence, First Amendment) is individually sufficient for dismissal; all three together represent a near-complete legal vulnerability.
+
+**The institutional deterrence operates regardless**: As documented in Section 6.3 (the McCarthy comparison) and Section 7.3 (the charging stage/trial stage distinction), the indictment's organizational disruption function — forcing SPLC to spend millions on defense, conducting grand jury discovery of informant files, creating donor uncertainty — is separate from whether the charges survive motion practice. The deterrent effect on civil rights organizations that maintained similar informant programs is not contingent on conviction. It is contingent on the existence of the charges alone.
+
+Sources: [CBS News: SPLC seeks disclosure of grand jury transcripts](https://www.cbsnews.com/news/southern-poverty-law-center-seeks-disclosure-of-grand-jury-transcripts-in-criminal-case/); [CNN: What to know about the Trump Justice Department's case against the SPLC (April 23, 2026)](https://www.cnn.com/2026/04/23/politics/what-to-know-criminal-case-southern-poverty-law-center); [Alabama Reflector: Legal experts skeptical of DOJ's criminal case](https://alabamareflector.com/2026/04/23/legal-experts-skeptical-of-dojs-criminal-case-against-southern-poverty-law-center/); [Just Security: The Poverty of the DOJ Indictment of the SPLC](https://www.justsecurity.org/137171/indictment-southern-poverty-law-center-splc/)
+
+---
+
+*Section 15 added: April 28, 2026 (current session — Priority 2 update)*
+*Key developments: SPLC files pre-arraignment motion seeking grand jury transcript disclosure — argues indictment omits criminal intent elements; this is an unusual pre-trial litigation step that creates a public evidentiary record of the government's grand jury presentation; motion likely to fail on Rule 6(e) secrecy grounds but creates discovery disputes the court must resolve on record; motion to dismiss "forthcoming" per defense counsel after arraignment (expected early May); expert consensus confirms dismissal before trial as the expected trajectory; organizational deterrence function operates independently of whether charges survive motion practice — the disruption is the point.*
