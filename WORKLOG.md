@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 564 (05:34 UTC) — Orchestrator: Phase 3 Candidate 5 Research Complete
+
+**Work Completed**:
+
+1. ✅ **resistance-research: Phase 3 Candidate 5 — Finance & Fiscal Architecture COMPLETE**
+   - **Deliverable**: `projects/resistance-research/domains/phase-3-candidate-5-fiscal-architecture.md` (8,667 words)
+   - **Scope**: Structural analysis of post-capture fiscal policy recovery mechanisms with international case studies (Brazil 2022, Argentina 2023+, Peru 2022, Mexico 2025)
+   - **Key Findings**: 
+     - Taxonomy of self-enforcing vs. will-dependent fiscal mechanisms
+     - Judicial independence ↔ tax enforcement feedback loop (Mexico case: 12-18 month sovereign downgrade cycle)
+     - Five US reform pathways sequenced by feasibility (IRS Independence Act → Tax Enforcement Restoration Act)
+     - Post-*Loper Bright* analysis: de novo judicial review creates opportunity for more specific statutory language
+   - **Sources**: 15+ citations (IMF, OECD, Morgan Stanley, Yale Budget Lab, CRS, CBPP)
+   - **Commit**: `aa57dca` — "chore(resistance-research): Session 564 — Phase 3 Candidate 5 fiscal architecture deep-dive"
+   - **Status**: Production-ready for Phase 1 institutional distribution (policy influencers, think tanks, law schools)
+
+**Orchestration Status**:
+- Exploration Queue now EMPTY after Phase 3 Candidate 5 completion — adding 3 new items per protocol
+- No new blocks to process
+- Critical deadline: Stockbot engine restart required by 13:30 UTC (T-7h 56min remaining)
+
+**Next Actions**:
+- Add new exploration queue items (3 candidates proposed below)
+- Commit orchestration files on master
+- Monitor stockbot pre-market readiness (user restart still required)
+
+**Exploration Queue Status After This Session**:
+- ~~Phase 3 Candidate 5: Finance & Fiscal Architecture~~ ✅ COMPLETE
+- **NEW ITEMS** (to be added):
+  - Phase 3 Candidate 6: Democratic Participation & Election Security
+  - Phase 3 Candidate 7: Technology Governance & Digital Rights  
+  - Stockbot: Post-Gate-2 Operations & Scaling Roadmap
+
+---
+
 ## 2026-04-28 Session 563 (04:07 UTC) — Orchestrator: Critical Deadline Monitor + Domain Maintenance Queue
 
 **Orchestration Work**:

@@ -686,11 +686,28 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Integration Status**: Coordinates with Session 551 UI mockup and Session 542 performance attribution framework. Ready for immediate use post-engine-restart.
   - **Status**: COMPLETE, production-ready, committed to master
 
-- **resistance-research: Phase 3 Candidate 5 — [Finance & Fiscal Architecture]** (Priority 1 for Phase 1 distribution)
-  - **Scope**: Structural analysis of post-capture fiscal policy recovery mechanisms. Case studies: Brazil 2022 fiscal framework + central bank autonomy restoration, Argentina 2023+ Milei fiscal restructuring (comparative fiscal discipline without institutional erosion), Peru 2022 fiscal transparency after Castillo escape, Mexico 2025 judicial-fiscal feedback loop.
-  - **Goal**: Identify fiscal policy levers that are self-enforcing vs. constituency-dependent, integration points with institutional recovery (judicial independence ↔ tax enforcement, transparency requirements ↔ audit bureau independence)
-  - **Expected outcome**: `phase-3-candidate-5-fiscal-architecture.md` (7,000-8,000 words, 35-40 sources) — ready for Phase 1 institutional distribution
-  - **Status**: ACTIVE (Session 554+ — top queue priority, no blockers)
+- ✅ **resistance-research: Phase 3 Candidate 5 — Finance & Fiscal Architecture** (Priority 1 for Phase 1 distribution) — **COMPLETE (Session 564)**
+  - **Deliverable**: `phase-3-candidate-5-fiscal-architecture.md` (8,667 words, 15+ sources)
+  - **Key Findings**: Self-enforcing vs. will-dependent mechanisms taxonomy; judicial-fiscal feedback loop (Mexico 12-18 month cycle); five US reform pathways (IRS Independence → Tax Enforcement Restoration); post-*Loper Bright* statutory leverage
+  - **Status**: Production-ready for Phase 1 institutional distribution (commit `aa57dca`)
+
+- **resistance-research: Phase 3 Candidate 6 — Democratic Participation & Election Security** (Priority 2)
+  - **Scope**: Voting systems resilience, ballot access equity, campaign finance reform post-*Citizens United* reversibility, ranked choice voting implementation feasibility, distributed election administration for audit resilience, voter registration infrastructure (NVRA linkage to civic participation)
+  - **Goal**: Identify institutional mechanisms that make elections both secure (resistant to interference/capture) and participatory (maximizing eligible voter turnout and voice)
+  - **Expected outcome**: `phase-3-candidate-6-election-security.md` (7,000-8,000 words, 35-40 sources)
+  - **Status**: QUEUED (Session 564+)
+
+- **resistance-research: Phase 3 Candidate 7 — Technology Governance & Digital Rights** (Priority 3)
+  - **Scope**: Federal AI governance expansion (beyond existing Domain 36), surveillance accountability mechanisms, biometric regulation and data protection, cryptography standards and key escrow, private right of action for algorithmic harms, Section 230 reform post-*Loper Bright*
+  - **Goal**: Structure digital-age governance to protect democratic rights, prevent surveillance capture, and enable institutional oversight of algorithmic systems
+  - **Expected outcome**: `phase-3-candidate-7-technology-governance.md` (7,000-8,000 words, 40+ sources)
+  - **Status**: QUEUED (Session 564+)
+
+- **stockbot: Post-Gate-2 Operations & Live Trading Scaling Roadmap** (Unblocked when engine restarts)
+  - **Scope**: What to do once live trading completes initial gate: scaling to multi-asset classes (crypto, commodities, fixed income), institutional risk management frameworks, regulatory compliance (SEC, FINRA, CTA), performance attribution and meta-analysis, continuity planning for Jetson operation
+  - **Goal**: Design the operational and regulatory architecture for scaling paper trading success into institutional-grade trading
+  - **Expected outcome**: `stockbot-post-gate-2-roadmap.md` (6,000-7,000 words, operations/regulatory focus)
+  - **Status**: QUEUED (after market open, Session 564+)
 
 - **stockbot: Real-time CRITICAL Alert Discord Webhook Implementation** (Priority 2 for live operations)
   - **Scope**: Implement real-time CRITICAL alert Discord webhook (identified gap from Session 553 `live-trading-operations.md` design spec). (1) Add `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` env var + configuration, (2) Implement `_send_critical_discord_alert()` method in TradingSession, (3) Wire into 6 alert categories (drift, circuit breaker, drawdown, regime shift, position-specific, prediction error), (4) Test alert firing logic (mock webhook, verify message format, throttle duplicate alerts), (5) Integration with existing daily summary pattern (similar POST pattern, different webhook URL)
