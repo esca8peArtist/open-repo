@@ -4,6 +4,32 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 569 (08:15–08:45 UTC) — stockbot: Discord Position Notifications + Market-Open Verification Logging
+
+**Work Completed**:
+
+1. **Task 1 — Discord Position Notifications** (`src/trading/trading_session.py`)
+   - Wired `send_position_notification()` (from existing `src/notifications/discord.py`)
+     into `_process_ticker()` after every confirmed BUY and SELL fill.
+   - Uses `STOCKBOT_DISCORD_WEBHOOK_URL` env var (same as daily summary).
+   - Embed includes: ticker, side, quantity, fill price, strategy name, total value.
+   - Gracefully no-ops when env var is absent or webhook unreachable.
+   - 8 new unit tests in `TestPositionNotifications`.
+
+2. **Task 2 — Market Open Verification Logging** (`src/trading/trading_session.py`)
+   - Added `_market_was_open_last_cycle: bool` field to `TradingSession.__init__`.
+   - Emits `"Market open detected, beginning signal cycle"` on first closed→open transition per session.
+   - Per-ticker signal log: `"Ticker X: signal generated (predicted_return=N, action=ACT)"`.
+   - Order activity log: `"Order submitted: {ticker} {side} {qty} (price={price})"`.
+   - Fill tracking log: `"Fill confirmed: {order_id} (fill_price={price})"`.
+   - 7 new unit tests in `TestMarketOpenVerificationLogging`.
+
+**Test Results**: 64/64 tests pass in test_trading_session_improvements.py (+15 new). Full suite: 4346 passed, 150 pre-existing failures (unchanged). 0 regressions.
+
+**Commits**: `cdd207d`, `c97859c` in stockbot submodule.
+
+---
+
 ## 2026-04-28 Session 568 (07:01–07:21 UTC) — Orchestrator: Post-Gate-2 Operations Roadmap + Final Checks
 
 **Work Completed**:
