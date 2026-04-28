@@ -2,6 +2,59 @@
 
 ---
 
+## April 28, 2026 (Session 590) — Domain Content Maintenance: April-May 2026 Updates
+
+**Session type**: Domain content maintenance — 35-domain framework currency
+**Task**: Refresh 8 priority domains with April-May 2026 developments (Iran WPR deadline, SPLC, Trump v. Wilcox/Slaughter, SAVE Act, FISA 702, ballot initiatives)
+
+### Assessment Finding
+
+Sessions 573-578 (same April 28 calendar date, earlier in the day) completed the planned updates for all 8 priority domains:
+- Domain 19f: Sections 13 (supplemental revolt), 14 (NATO/Taiwan/four-theater synthesis), Case Study (Iran Constitutional Crisis)
+- Domain 06: Sections 5 (Wilcox removal power), 6 (Powell/Warsh/Fed carve-out crisis)
+- Domain 29: Sections 13 (SPLC case trajectory), 14 (SPLC judge assignment, First Amendment grounds)
+- Domain 35: Sections 9-11 (cert grant window, Powell-Slaughter timing, Warsh confirmation doctrinal implications)
+- Domain 01: Sections 4-6 (ballot initiatives, SAVE Act state wave, BISC 155-bill count, FISA pre-vote assessment)
+- Domain 28: Sections 9-11 (Iran empirical instance, post-May 1 precedent, $200B supplemental fiscal synthesis)
+- Domain 33: Already current from Session 535
+
+### Session 590 Work Completed
+
+**Domain 19f — Section 15 added** (primary new content for this session):
+
+Pre-deadline final assessment with three major additions:
+
+1. **April 28 Operational Status** (Section 15.1): Documented the ceasefire-in-name-blockade-in-fact reality — U.S. naval blockade effective April 13 (38+ ships stopped), dual blockade stalemate, Iran Hormuz peace proposal under review but Trump unlikely to accept nuclear deferral terms. Legal analysis confirming the naval blockade constitutes ongoing "hostilities" defeating the administration's ceasefire-clock-reset argument.
+
+2. **Frozen Conflict Risk** (Section 15.2): Structural analysis of why the frozen conflict scenario (most probable, ~55-60%) is strategically favorable to the administration while being most damaging to WPR enforcement architecture. ICG Crisis Monitor characterization: "neither side is negotiating for peace; both sides are negotiating for position."
+
+3. **Post-May 1 Congressional Landscape** (Section 15.3): The 90-day authorization track — Senate GOP leadership opening to conditional authorization vote at 90 days rather than either withdrawal or indefinite war. Structural analysis distinguishing the three available legislative vehicles (withdrawal resolution vs. AUMF-style authorization vs. appropriations rider) and why the conditional authorization is more politically viable than the withdrawal votes that failed five times.
+
+4. **Three-Scenario Forecast** (Section 15.4): Probability-weighted scenario framework — peace deal (10-15%), frozen conflict (55-60%), resumed hostilities (25-30%) — with WPR reform implications for each scenario. Identified the May-August 2026 90-day window as the highest-stakes WPR reform advocacy window in the statute's 50-year history.
+
+**MAY_2026_UPDATES.md**: Updated status to COMPLETE + EXTENDED; added Session 590 row to completion record.
+
+### Files Modified
+
+- `domains/domain-19f-war-powers-reform.md` — Section 15 added (~1,400 words, 9 new sources)
+- `domains/MAY_2026_UPDATES.md` — status updated, Session 590 completion row added
+
+### Pending After This Session
+
+- **FISA Section 702 outcome**: Vote scheduled April 29-30. Post-deadline checklist in surveillance-tracking.md needs filling after vote. Most likely outcome: three-year extension without warrant protections. Cross-domain flag to Domain 1 (election organizer surveillance) and Domain 21 (data privacy) in democratic-renewal-proposal.md pending vote result.
+- **Iran post-May 1 confirmed outcome**: Section 15 provides the scenario framework; actual post-May 1 developments need to be logged once they occur (Senate Collins/Murkowski defection pattern; peace deal status; authorization vehicle introduction if any).
+- **Trump v. Slaughter decision**: Expected late June 2026. Domain 06 and Domain 35 have the analytical framework in place; fill in the holding when issued.
+
+### Key Sources Used This Session
+
+- [Al Jazeera: Iran war live blog (April 28, 2026)](https://www.aljazeera.com/news/liveblog/2026/4/28/iran-war-live-trump-reviews-peace-plan-un-calls-for-hormuz-to-reopen)
+- [Axios: Iran offers US Hormuz deal (April 27, 2026)](https://www.axios.com/2026/04/27/iran-us-hormuz-strait-nuclear-talks-proposal-pakistan)
+- [CNN: Trump unlikely to accept Iran's proposal (April 27, 2026)](https://www.cnn.com/2026/04/27/world/live-news/iran-war-trump-israel)
+- [International Crisis Group: Iran Crisis Monitor #2 (April 21, 2026)](https://www.crisisgroup.org/sites/default/files/2026-04/icg-icm-%232-21iv26.pdf)
+- [Military.com: Iran War Heads Toward Legal Showdown (April 28, 2026)](https://www.military.com/daily-news/headlines/2026/04/28/Iran-War-Heads-Toward-Legal-Showdown-as-May-1-Deadline-Nears)
+
+---
+
 ## April 28, 2026 (General Research Agent) — Phase 3 Candidate 8: Civil Service Hiring and Protections Post-Capture
 
 **Session type**: Phase 3 domain deep-dive — civil service meritocracy, political weaponization, and structural reform pathways

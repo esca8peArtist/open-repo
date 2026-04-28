@@ -759,3 +759,78 @@ Sources: [CFR: Conflicts to Watch in 2026](https://www.cfr.org/report/conflicts-
 
 *Section 14 added: April 28, 2026 (current session — April-May 2026 Domain Content Maintenance)*
 *Key findings: NATO withdrawal threats (April 8, Leavitt confirmation) represent treaty commitment unilateralism parallel to Iran statutory unilateralism; Taiwan strategic ambiguity exploitation creates third theater where executive war powers claims operate without congressional constraint; four-theater synthesis (Venezuela + Iran + NATO + Taiwan) establishes systematic plenary executive authority claim across all categories of military and security engagement; constitutional amendment with explicit treaty withdrawal procedure, offensive operations definition, and judicial standing provisions is the only mechanism that closes all four flanks simultaneously.*
+
+---
+
+## Section 15: April 28, 2026 — Pre-Deadline Final Assessment: Hormuz Negotiations, Frozen Conflict Risk, and the Post-May 1 Congressional Landscape
+
+**Added**: April 28, 2026 (Session 590 — Domain Content Maintenance)
+
+### 15.1 The April 28 Operational Status: Ceasefire-in-Name, Blockade-in-Fact
+
+Three days before the May 1 War Powers deadline, the operational situation is neither full-scale hostilities nor genuine peace. The United States and Iran declared a ceasefire on April 8, but the ceasefire exists alongside:
+
+- **A U.S. naval blockade of Iran** effective April 13 — Trump ordered the U.S. Navy to stop any ships traveling to or from Iranian ports and to destroy any Iranian vessels laying mines in the Strait of Hormuz. CENTCOM confirmed 38+ ships have been stopped or turned around. The U.S. government characterizes this as "enforcement" rather than "hostilities" under its ceasefire interpretation; Iran, Pakistan (the mediating party), and most international law analysts characterize it as a continuing act of war.
+
+- **A dual-blockade stalemate**: Iran has kept commercial shipping through the Strait of Hormuz largely blocked — the agreement to reopen the Strait is the central unsettled term of any peace deal. The UN has warned the standoff threatens a global food emergency; approximately 20% of the world's oil transited the Strait before the war.
+
+- **Active diplomatic negotiation in motion**: On April 27, Iran transmitted a new proposal to U.S. national security advisers through Pakistani intermediaries: reopen the Strait of Hormuz and halt all hostilities in exchange for deferring nuclear program negotiations to a later stage. As of April 28, Trump's team is reviewing the proposal. CNN reported April 27 that Trump is "unlikely to accept" Iran's current terms because the nuclear program deferral is unacceptable to the administration's core demand for verified denuclearization. The Hormuz reopening terms (free navigation without Iranian tolls, simultaneous U.S. naval drawdown) remain the primary obstacle.
+
+**The War Powers Act interpretation of the blockade**: Legal scholars who have reviewed the ceasefire framing identify the naval blockade as the clearest continuing "hostilities" under the WPR's operative language. A naval blockade — which the U.S. Navy has enforced through vessel interception and the stated willingness to use lethal force against Iranian vessels laying mines — is a classic act of war under both domestic law and the law of armed conflict. The ceasefire-clock-reset theory (Section 7.2 of this domain) does not survive this analysis: "hostilities" within the meaning of the WPR are ongoing, the ceasefire notwithstanding.
+
+Sources: [Al Jazeera: Iran war live blog — Trump reviews Iran peace plan (April 28, 2026)](https://www.aljazeera.com/news/liveblog/2026/4/28/iran-war-live-trump-reviews-peace-plan-un-calls-for-hormuz-to-reopen); [Axios: Iran offers US deal to reopen Hormuz strait, postpone nuclear talks (April 27, 2026)](https://www.axios.com/2026/04/27/iran-us-hormuz-strait-nuclear-talks-proposal-pakistan); [CNN: Trump unlikely to accept Iran's latest proposal (April 27, 2026)](https://www.cnn.com/2026/04/27/world/live-news/iran-war-trump-israel); [CNBC: Trump discussed Iran's Hormuz Strait proposal with top aides (April 27, 2026)](https://www.cnbc.com/2026/04/27/trump-iran-war-strait-of-hormuz-rubio.html); [Wikipedia: 2026 Iran war ceasefire](https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire)
+
+### 15.2 The "Frozen Conflict" Risk: What Happens If No Deal Is Reached
+
+The April 28 situation creates a specific risk profile that the existing WPR enforcement analysis does not fully address: the "frozen conflict" scenario. A frozen conflict — neither active hostilities with troops under fire nor genuine peace — is the operational state most favorable to the administration's position while being the state most destructive to war powers enforcement architecture.
+
+**Why the frozen conflict benefits the administration**:
+- The ceasefire creates political pressure on Congress not to force withdrawal ("we're not at war, why escalate?")
+- The naval blockade maintains strategic pressure on Iran without producing the casualty rates that historically trigger domestic political opposition
+- The administration can simultaneously cite the ceasefire to argue the WPR clock stopped and cite the blockade to extract diplomatic concessions
+- No resolution forces the legal question: if there is neither a withdrawal nor an authorization, the status quo is indefinite
+
+**Why the frozen conflict damages WPR enforcement**:
+- Every day under the ceasefire normalizes executive control of war termination without congressional input
+- The administration's "ceasefire reset" clock argument, even if legally unpersuasive (Section 7.2), becomes politically persuasive to moderate Republicans who want to avoid forcing a vote
+- If Collins and Murkowski were willing to defect on authorization post-May 1, the ceasefire makes their defection more politically costly — they would be forcing an authorization vote during apparent peace talks
+- A frozen conflict that becomes a permanent state of naval blockade is functionally equivalent to an indefinite war: it denies Iran maritime commerce, imposes humanitarian costs on third parties, and keeps U.S. forces in a combat-ready posture — all without congressional authorization
+
+The International Crisis Group's Iran Crisis Monitor #2 (April 21, 2026) warned explicitly about the frozen conflict risk: "Neither side is negotiating for peace; both sides are negotiating for position." The peace proposals being exchanged as of April 28 — Iran's Hormuz offer, U.S. nuclear denuclearization demand — are sufficiently far apart that a genuine peace agreement before May 1 is not realistically achievable in three days.
+
+Sources: [International Crisis Group: Iran Crisis Monitor #2 (April 21, 2026)](https://www.crisisgroup.org/sites/default/files/2026-04/icg-icm-%232-21iv26.pdf); [House of Commons Library: US-Iran ceasefire and nuclear talks in 2026](https://commonslibrary.parliament.uk/research-briefings/cbp-10637/); [CSIS: Last Rounds? Status of Key Munitions at the Iran War Ceasefire](https://www.csis.org/analysis/last-rounds-status-key-munitions-iran-war-ceasefire)
+
+### 15.3 Post-May 1 Congressional Landscape: The 90-Day Authorization Track
+
+The most significant development in the GOP defection calculus since the fifth Senate vote (April 23, 46-51) is the emergence of a "90-day authorization track" as an alternative to the current binary of immediate withdrawal or indefinite war.
+
+Senate GOP leadership — specifically Thorne (Majority Leader) — has not publicly committed, but has "not ruled out taking [a Senate vote on authorizing military force] after 90 days, if the conflict hasn't wound down" per reporting from multiple outlets. This is structurally significant: it suggests Republican leadership is preparing for a scenario where the peace talks fail, the frozen conflict continues, and political pressure from the Collins-Murkowski-Curtis bloc makes some form of authorization vote unavoidable.
+
+The 90-day authorization track operates differently from the existing war powers resolution votes:
+- A war powers resolution under 50 U.S.C. § 1544 requires a majority to pass and directs withdrawal — the administration has blocked this through five defeats
+- A Senate joint resolution of authorization (under the AUMF model) requires 60 votes in the Senate (subject to filibuster) and can include conditions, oversight requirements, and geographic/temporal limitations
+- An appropriations rider (Collins-Murkowski-Tillis approach) requires 60 votes for cloture but could be attached to must-pass funding bills that create leverage
+
+The "90-day track" that Senate leadership is discussing appears to be an authorization resolution with conditions — modeled on the 2001 AUMF's broad structure but with Murkowski-drafted limitations on geographic scope, Rules of Engagement, and reporting requirements. If this vehicle is drafted, introduced, and cosponsored before the frozen conflict becomes politically normalized, it has the potential to pass with bipartisan support that the withdrawal resolutions have not been able to achieve.
+
+**The reform architecture implication**: A conditional authorization — even a flawed one — would be the first time since 1991 that Congress formally exercised its war powers through a specific authorization rather than a blank check. Even an authorization with weak conditions would establish the precedent that the president needed congressional approval. That precedent, if set, is harder for future administrations to erase than a pure non-compliance with no congressional response at all.
+
+Sources: [CNN: Senate GOP leadership opens door to authorization vote at 90 days (April 22, 2026)](https://www.cnn.com/2026/04/22/world/live-news/iran-war-us-trump-blockade-ceasefire); [Axios: Iran offers US deal (April 27, 2026)](https://www.axios.com/2026/04/27/iran-us-hormuz-strait-nuclear-talks-proposal-pakistan); [Military.com: Iran War Heads Toward Legal Showdown as May 1 Deadline Nears (April 28, 2026)](https://www.military.com/daily-news/headlines/2026/04/28/Iran-War-Heads-Toward-Legal-Showdown-as-May-1-Deadline-Nears); [Foreign Policy: Trump Iran War Approaches 60-Day Congressional War Powers Deadline (April 23, 2026)](https://foreignpolicy.com/2026/04/23/trump-iran-war-congress-war-powers-60-days/)
+
+### 15.4 Three Scenarios for the Post-May 1 Period (May 2026 Forward)
+
+**Scenario A — Peace deal reached (lowest probability, ~10-15%)**
+Iran accepts U.S. nuclear terms; Hormuz reopens; U.S. naval blockade lifts; operations end. WPR implications: administration claims victory and argues May 1 deadline was overtaken by events. No enforcement action. The precedent of defiance without consequence is established even in success — future presidents will cite the 2026 Iran case as proof that the WPR does not constrain presidential war-making.
+
+**Scenario B — Frozen conflict continues (highest probability, ~55-60%)**
+No peace deal; naval blockade continues; ceasefire technically holds with violations; no major new offensive operations. WPR implications: administration continues to assert ceasefire reset; Congress holds further votes that fail 47-51 or 48-50; Collins-Murkowski-Curtis bloc pushes for conditional authorization vehicle; June-July 2026 becomes the next decision point as appropriations bills approach. The frozen conflict can continue indefinitely because neither side has an immediate operational need to escalate.
+
+**Scenario C — Resumed hostilities (medium probability, ~25-30%)**
+Iran's Hormuz blockade deteriorates into direct confrontation with U.S. naval forces; ceasefire collapses; major operations resume. WPR implications: ceasefire-clock-reset argument becomes untenable; administration forced to submit supplemental appropriations request; Collins Appropriations leverage activates; defection coalition increases from 3-4 to potentially 5-7 senators; conditional authorization becomes genuinely achievable.
+
+**What this means for domain reform advocacy**: The 90-day window between May 1 and August 2026 is the most consequential period for WPR reform advocacy in the statute's 50-year history. The combination of: (1) confirmed non-compliance; (2) a nascent bipartisan authorization track; (3) the $200B supplemental creating fiscal pressure; and (4) the midterm election timeline (November 2026) forcing Republican senators to take accountable positions — creates a reform window that has not existed since the WPR's passage in 1973. The constitutional amendment track (Section 8 of this domain) requires multi-year legislative preparation; the near-term advocacy target is the conditional authorization vehicle and the appropriations rider.
+
+---
+
+*Section 15 added: April 28, 2026 (Session 590 — Domain Content Maintenance)*
+*Key findings: April 28 operational status is ceasefire-in-name-blockade-in-fact; Iran Hormuz peace proposal under review but Trump unlikely to accept nuclear deferral; frozen conflict is the most probable May-forward scenario (~55-60%); "90-day authorization track" emerging in GOP leadership thinking as alternative to withdrawal/indefinite-war binary; three-scenario framework (peace/frozen/resumed) maps the reform window; the 90-day post-May 1 period is the highest-stakes WPR reform advocacy window in the statute's history.*

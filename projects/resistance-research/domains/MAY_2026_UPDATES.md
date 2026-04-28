@@ -104,9 +104,9 @@
 
 ## Document Status
 
-**COMPLETE** — All 8 priority domains updated with April-May 2026 developments.
+**COMPLETE + EXTENDED** — All 8 priority domains updated with April-May 2026 developments. Session 590 added Section 15 to Domain 19f (pre-deadline final assessment, frozen conflict scenario framework, 90-day authorization track, three-scenario post-May 1 forecast).
 
-### Completion Record (April 28, 2026 — Sessions 573-578)
+### Completion Record (April 28, 2026 — Sessions 573-578, 590)
 
 | Domain | Status | Key Additions | Session |
 |--------|--------|---------------|---------|
@@ -116,6 +116,7 @@
 | 29 — Prosecutorial Weaponization | COMPLETE | Section 13: SPLC case trajectory; Section 14: SPLC Judge Marks assignment; state bar comment period closed April 6 (pre-indictment); First Amendment dismissal ground; accountability sequence documented | Session 575 |
 | 35 — Supreme Court OT2026 | COMPLETE | Section 9: Final cert grant window; Section 10: Powell-Slaughter timing; Section 11: Warsh confirmation resolves Powell succession via appointment not removal; carve-out question deferred; doctrinal basis still needed in Slaughter | Session 575 |
 | 01 — Voting Rights/Elections | COMPLETE | Section 4: State ballot initiatives; Section 5: State SAVE Act wave; Section 6: BISC 155 bills in 31 states (updated count); six-state supermajority push; FISA April 30 hard deadline status; three-year-no-warrant outcome tracking | Session 575 |
+| 19f — War Powers Reform | EXTENDED | Section 15: April 28 operational status (ceasefire-blockade duality); Hormuz peace proposal under review; frozen conflict scenario analysis; 90-day authorization track emerging; three-scenario framework (peace/frozen/resumed hostilities) with probability assessments; WPR reform advocacy window analysis | Session 590 |
 | 28 — War Powers Venezuela | COMPLETE | Section 9: Iran as larger empirical instance; two-operation constitutional theory synthesis; $200B fiscal accountability cross-reference; reprogramming loophole reform; comparative Senate vote table; Domain cross-references (19f, 6, 34) | Session 578 |
 | 33 — State Legislative Autocratization | Already current through Session 535 — 155-bill count, six-state supermajority push, and coordination table already documented. No additional updates required. | Session 535 |
 | surveillance-tracking.md (Domain 21/25 FISA proxy) | COMPLETE | Pre-vote assessment (April 28): Foreign Intelligence Accountability Act three-year proposal analysis; SAVE Act attachment complication; post-deadline checklist with Flock Safety, EO 12333 shift flag, Domain 1 cross-domain election organizer surveillance implication. Post-April 30 outcome: CHECKLIST PENDING — fill after April 30 vote | Session 575/578 |
