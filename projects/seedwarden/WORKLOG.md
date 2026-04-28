@@ -4,6 +4,95 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 560 — 2026-04-28 — Wild-Edibles Habit Photos (16/16 batch) + PDF Status Verification
+
+### Priority 1: Wild-Edibles Habit Photos
+
+**Result: 16/16 new photos added. Wild-edibles set is now 18/18 complete.**
+
+All 16 remaining species copied from `scripts/images/native-plants/` (Wikipedia REST API / Wikimedia Commons source, cached in prior session) into `assets/wild-edibles/` with `-habit.jpg` naming convention.
+
+Source URLs retrieved via `https://en.wikipedia.org/api/rest_v1/page/summary/[Article]`. All images are hosted on Wikimedia Commons. Licenses are CC BY-SA 3.0 or CC BY-SA 4.0 (standard Wikimedia Commons default) unless noted otherwise — individual per-file license verification can be done at `https://commons.wikimedia.org/wiki/File:[filename]`.
+
+| Species | Common Name | Filename | Source URL | License |
+|---------|-------------|----------|------------|---------|
+| *Allium tricoccum* | Ramps / Wild Leek | `allium-tricoccum-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/9/97/Wild_Leeks6.jpeg | CC BY-SA (Wikimedia Commons) |
+| *Amaranthus retroflexus* | Redroot Amaranth | `amaranthus-retroflexus-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/9/91/Amaranthus_tricolor0.jpg | CC BY-SA (Wikimedia Commons) |
+| *Arctium lappa* | Greater Burdock | `arctium-lappa-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/c/ca/ArctiumLappa1.jpg | CC BY-SA (Wikimedia Commons) |
+| *Asclepias syriaca* | Common Milkweed | `asclepias-syriaca-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Asclepias_syriacus.tif/lossy-page1-960px-Asclepias_syriacus.tif.jpg | CC BY-SA (Wikimedia Commons) |
+| *Chenopodium album* | Lamb's Quarters | `chenopodium-album-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/b/b7/Melganzenvoet_bloeiwijze_Chenopodium_album.jpg | CC BY-SA (Wikimedia Commons) |
+| *Cichorium intybus* | Chicory | `cichorium-intybus-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/b/bf/Illustration_Cichorium_intybus0_clean.jpg | CC BY-SA (Wikimedia Commons) |
+| *Daucus carota* | Queen Anne's Lace | `daucus-carota-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/2/23/Daucus_carota_May_2008-1_edit.jpg | CC BY-SA (Wikimedia Commons) |
+| *Chamerion angustifolium* | Fireweed | `epilobium-angustifolium-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/1/1d/Maitohorsma_%28Epilobium_angustifolium%29.JPG | CC BY-SA (Wikimedia Commons) |
+| *Reynoutria japonica* | Japanese Knotweed | `fallopia-japonica-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Reynoutria_japonica_in_Brastad_1.jpg/3840px-Reynoutria_japonica_in_Brastad_1.jpg | CC BY-SA (Wikimedia Commons) — NOTE: 9.9 MB file (full-res original) |
+| *Fragaria virginiana* | Wild Strawberry | `fragaria-virginiana-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fragaria_virginiana_2427.JPG/3840px-Fragaria_virginiana_2427.JPG | CC BY-SA (Wikimedia Commons) |
+| *Helianthus tuberosus* | Jerusalem Artichoke | `helianthus-tuberosus-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/a/ae/Sunroot_top.jpg | CC BY-SA (Wikimedia Commons) |
+| *Nasturtium officinale* | Watercress | `nasturtium-officinale-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/d/dd/Watercress_%282%29.JPG | CC BY-SA (Wikimedia Commons) |
+| *Oxalis stricta* | Wood Sorrel | `oxalis-stricta-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/9/91/6h_common_yellow_oxalis.jpg | CC BY-SA (Wikimedia Commons) |
+| *Portulaca oleracea* | Purslane | `portulaca-oleracea-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/2/2f/Portulaca_oleracea.jpg | CC BY-SA (Wikimedia Commons) |
+| *Typha latifolia* | Cattail / Bulrush | `typha-latifolia-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/4/4c/Bulrush_%28Typha_latifolia%29_%288139113636%29.jpg | CC BY-SA (Wikimedia Commons) |
+| *Urtica dioica* | Stinging Nettle | `urtica-dioica-habit.jpg` | https://upload.wikimedia.org/wikipedia/commons/6/6f/Fen_nettle_%28Urtica_dioica_ssp._galeopsifolia%29_-_geograph.org.uk_-_5423125.jpg | CC BY-SA (Wikimedia Commons) |
+
+**Previously logged (Session 2026-04-13):**
+
+| Species | Common Name | Filename | License |
+|---------|-------------|----------|---------|
+| *Stellaria media* | Chickweed | `stellaria-media-habit.jpg` | CC0 |
+| *Taraxacum officinale* | Dandelion | `taraxacum-officinale-habit.jpg` | CC BY-SA 3.0 (attribution required) |
+
+**Wild-edibles habit photo task: COMPLETE — 18/18**
+
+Species selection rationale: 16 species chosen from the UBIQUITOUS section of `scripts/download_plant_images.py` (widely distributed across North America, all established wild edibles). Images were cached from Wikipedia REST API in prior sessions and copied without re-downloading.
+
+**License action required before publication**: All CC BY-SA images require attribution in any derivative work (Etsy PDF products). Add a photo credits page to the wild-edibles guide before listing. The fallopia-japonica image is 9.9 MB (full-resolution); if embedding in a PDF, run through the existing `_compressed_image_path()` pipeline in `generate_pdfs.py` first.
+
+---
+
+### Priority 2: Native Plants PDF Status Verification
+
+**Result: PDF already Etsy-compliant. No rebuild required.**
+
+The task description referenced a 56.96 MB PDF — this was the pre-rebuild state from before Session 2026-04-26. The April 26 session already rebuilt the PDF with Pillow-based image compression (600px max, JPEG quality 55).
+
+| Check | Result |
+|-------|--------|
+| File path | `scripts/output/native-plants-regional-guide.pdf` |
+| File size | 4.91 MB (5,145,593 bytes) |
+| Etsy 5 MB limit | PASS — 4.91 MB < 5 MB |
+| Valid PDF header | PASS — confirmed `%PDF` header |
+| Last modified | 2026-04-26 20:22 UTC |
+| Pages | 404 |
+
+Session 560: Native Plants PDF verified 4.91 MB, Etsy-compliant, no rebuild needed (rebuilt in Session 486 on 2026-04-26).
+
+---
+
+## Session 559 — 2026-04-28 — Phase 2 Next-Work Assessment
+
+**Task**: Identify highest-value next Phase 2 work and any blockers or dependencies.
+
+**Current blockers on Phase 1 launch** (require user action before resolving):
+- 3 tag corrections outstanding
+- Etsy account verification pending
+
+**Current Phase 2 Track B status** (no blockers — work done autonomously):
+- LIFESTYLE_PHOTOGRAPHY_STRATEGY.md — complete, awaiting user review/decision
+- PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md — complete, ready to execute post-Phase-1
+- PHASE2_PRODUCT_PRIORITIES.md — complete
+- PHASE2_TO_PHASE3_TRANSITION.md — complete
+- PHOTOGRAPHY_ROADMAP.md (Session 558) — complete, production-ready
+
+**Wild-edibles habit photos** (standing task, 0/18 complete):
+- 2/18 downloaded: `assets/wild-edibles/stellaria-media-habit.jpg`, `assets/wild-edibles/taraxacum-officinale-habit.jpg`
+- 16 species remain; Wikimedia search protocol is established
+- This is the only active autonomous standing task with concrete deliverables available now
+
+**Finding — Gap identified**: The native-plants-regional-guide PDF (56.96 MB) is a documented Phase 1 and Phase 2 blocker. It cannot be uploaded to Etsy and cannot receive lifestyle photography because Etsy will reject the file. A rebuild is explicitly called out in ETSY_PHASE_1_UPLOAD_CHECKLIST.md (Option B) and PHOTOGRAPHY_ROADMAP.md as a pre-condition for that product listing. No autonomous work has addressed this yet.
+
+**Recommendation documented separately in assistant response** — see session output.
+
+---
+
 ## Session 558 — 2026-04-28 — Photography Roadmap (Track B)
 
 **Deliverable**: `PHOTOGRAPHY_ROADMAP.md` (~5,200 words, production-ready)

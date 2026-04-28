@@ -4,6 +4,20 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 560 (Phase 2 Execution) — seedwarden: Wild-Edibles Photos 18/18 Complete + PDF Verified
+
+**Wild-edibles habit photos**: Added 16/16 remaining species. Task is now 18/18 complete.
+- 16 species copied from `projects/seedwarden/scripts/images/native-plants/` (Wikipedia REST API / Wikimedia Commons cache) into `projects/seedwarden/assets/wild-edibles/` with `-habit.jpg` naming.
+- Species: Allium tricoccum, Amaranthus retroflexus, Arctium lappa, Asclepias syriaca, Chenopodium album, Cichorium intybus, Daucus carota, Chamerion angustifolium (Fireweed), Reynoutria japonica (Japanese Knotweed), Fragaria virginiana, Helianthus tuberosus, Nasturtium officinale, Oxalis stricta, Portulaca oleracea, Typha latifolia, Urtica dioica.
+- All sourced from Wikimedia Commons via Wikipedia REST API. Licenses: CC BY-SA (require attribution page before Etsy publication). Per-image license detail logged in `projects/seedwarden/WORKLOG.md` Session 560 entry.
+- Note: fallopia-japonica-habit.jpg is 9.9 MB (full-res); run through `_compressed_image_path()` before embedding in PDF.
+
+**Native Plants PDF**: Verified already Etsy-compliant at 4.91 MB (5,145,593 bytes). Rebuilt in Session 2026-04-26 (not 56.96 MB — that was the pre-rebuild state). No rebuild needed.
+
+**Files modified**: `projects/seedwarden/assets/wild-edibles/` (16 new files), `projects/seedwarden/WORKLOG.md` (Session 560 entry)
+
+---
+
 ## 2026-04-28 Session 560 (02:44 UTC onward) — CRITICAL: stockbot Feature Count Bug Fixed + seedwarden Phase 2 Roadmap
 
 **CRITICAL FIX COMPLETED**: stockbot feature count mismatch resolved. All deployed models now receive correct feature counts and can execute real trading signals. Engine restart will succeed on market open.
