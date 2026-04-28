@@ -59,19 +59,38 @@ The Foreign Intelligence Accountability Act does not close this loophole. Neithe
 - Senate Majority Leader Thune's vote-counting and timeline for Senate action if House passes the FISA bill
 - Whether a lapse occurs and what legal challenges are filed in response
 
+### Pre-Vote Assessment: April 28, 2026
+
+**Updated**: April 28, 2026 (current session — April-May 2026 Domain Content Maintenance)
+
+As of April 28, 2026, the House is scheduled to vote April 29-30 on the Foreign Intelligence Accountability Act — Speaker Johnson's three-year reauthorization proposal. The legislative situation:
+
+**The bill's terms (as introduced)**: Three-year extension; monthly Civil Liberties Protection Officer reviews of U.S. person queries; attorney-level approval for queries (replacing field supervisor approval); expanded GAO audit authority; no warrant requirement for queries on U.S. persons; commercial data broker loophole remains open.
+
+**Why the vote is uncertain**: The coalition that blocked the five-year (April 17, 20-Republican revolt) and 18-month (April 17, same coalition) proposals has not publicly committed to the three-year version. The House Rules Committee's closed rule — blocking floor amendments — prevented a warrant amendment from being added, which was the civil liberties coalition's demand. The civil liberties bloc (Freedom Caucus members on surveillance grounds + progressive Democrats) could still block the three-year version if they coordinate.
+
+**Trump's SAVE Act condition**: As of April 27, Trump has demanded SAVE Act provisions be attached as his price for signature. This creates a Democratic vote barrier: Democrats who might accept the surveillance terms reject any vehicle that also passes SAVE Act citizenship documentation requirements. The SAVE Act condition appears to be a bargaining position, but its persistence complicates head counts.
+
+**Most likely outcome**: Three-year reauthorization passes without warrant protections, without data broker loophole closure. Brief lapse remains possible if the civil liberties coalition holds and no deal is reached before April 30. Emergency extension (5-10 day stopgap) remains available procedurally if the three-year bill fails.
+
 ### Post-Deadline Update Checklist (fill after April 30, 2026)
 
 *To be completed in the first session after the April 30 deadline.*
 
 - [ ] Vote result: [ ] Passed / [ ] Lapsed / [ ] Further stopgap
-- [ ] Final bill: [ ] Foreign Intelligence Accountability Act (3-year) / [ ] Other: ___________
+- [ ] If passed: Final bill: [ ] Foreign Intelligence Accountability Act (3-year) / [ ] Other: ___________
 - [ ] Warrant requirement: [ ] Included / [ ] Excluded
 - [ ] Commercial data broker loophole: [ ] Closed / [ ] Still open
+- [ ] SAVE Act attachment: [ ] Included / [ ] Excluded
 - [ ] New expiration date: ___________
+- [ ] House vote count: ___________
+- [ ] Senate passage mechanism (unanimous consent / voice vote / roll call): ___________
 - [ ] Civil liberties community response (EFF, ACLU, Brennan Center statements): ___________
+- [ ] If lapsed: EO 12333 shift initiated by NSA — [ ] Yes / [ ] No
 - [ ] Any lapse litigation filed: ___________
+- [ ] Flock Safety LPR contract changes: [ ] Updated in this file / [ ] Still queued
 
-**Cross-domain flag**: If reauthorized without warrant requirement or data broker loophole closure, add a note to Domain 21 (Data Privacy and Digital Surveillance) in democratic-renewal-proposal.md cross-reference section, and update Section 4.1 of the proposal's reform roadmap to reflect that 702 reform remains an open legislative priority.
+**Cross-domain flag**: If reauthorized without warrant requirement or data broker loophole closure, add a note to Domain 21 (Data Privacy and Digital Surveillance) in democratic-renewal-proposal.md cross-reference section, and update Section 4.1 of the proposal's reform roadmap to reflect that 702 reform remains an open legislative priority. The commercial data broker loophole status is particularly significant for Domain 1 (Voting Rights) — if unclosed, Section 702's absence of warrant protection for backdoor searches extends to election organizers and ballot initiative campaign staff who communicate with any foreign-linked party.
 
 Sources:
 - [EFF — Keep Pushing: We Get 10 More Days to Reform Section 702](https://www.eff.org/deeplinks/2026/04/keep-pushing-we-get-10-more-days-reform-section-702)
