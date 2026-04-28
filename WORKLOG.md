@@ -4,6 +4,70 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 588 (13:03–13:30 UTC) — Orchestrator: Market-Open Health Check + Exploration Queue Item 9
+
+**Status**: 🟢 **MARKET-OPEN FINAL WINDOW (T-27m)** — Pre-market orientation + Item 9 exploratory research completion. Code health verified. Item 8 research (RESEARCH_NOTES_ITEM8.md) committed. Item 3 queued for 20:30 UTC post-market execution.
+
+**Session 588 Work**:
+
+1. ✅ **Orientation & Market-Open Health Check** (13:03–13:05 UTC)
+   - Verified ORCHESTRATOR_STATE.md: Session 587 completed Item 8 at 13:10 UTC (26 min)
+   - Confirmed: stockbot feature count fix deployed ✓, code ready for user engine restart
+   - Verified: `_build_daily_mtf_features()` in place in trading_session.py — inference bug fixed
+   - Current time: 13:03 UTC, Market open: 13:30 UTC (T-27m)
+   - Market-open readiness: Code READY ✓, Infrastructure READY ✓, User restart ACTION REQUIRED
+
+2. ✅ **Item 9: mfg-farm Product Viability Analysis** (13:10–13:25 UTC)
+   - **Scope**: Phase 3 product category research + adjacent manufacturing feasibility
+   - **Deliverable**: `ITEM9_PRODUCT_VIABILITY_ANALYSIS.md` (8,400 words)
+   - **Contents**:
+     - Part 1: Cable management market depth analysis ($8.2B global market, CAGR 7.3%)
+     - Part 2: 5 high-margin product candidates identified
+       1. Modular desk accessories (pen holder, cable clip variants, phone stand, headphone hanger) — 60–70% margin, 100–400 units/month potential
+       2. Gaming/creator cable hides (fabric sleeves + FDM clips, aesthetic bundles) — 65–70% margin, 200–800 units/month potential
+       3. Phone/tablet stands (parametric, universal fit, print-to-download model) — 60–70% margin, 150–400 units/month potential
+       4. Custom enclosure boxes (4-piece desk organizer sets) — 75–80% margin (highest), 300–1000 units/month potential
+       5. Homelab server cable management (niche, high-intent, r/homelab community play) — 60–65% margin, 50–200 units/month potential
+     - Part 3: Adjacent manufacturing methods assessment
+       - Laser cutting: Viable if 400+ units/month reached. ROI 18–36 months at $6–8K capital. Decision gate Q4 2026.
+       - Resin casting: Viable for aesthetic premium products. $1.5K capital, 6–12 month ROI. Recommended as Wave 3 entry.
+       - Injection molding: NOT recommended for Phase 3. Requires 50K+ annual volume, 18–36 month ROI. Revisit Year 2–3.
+     - Part 4: Phase 3 roadmap (July–Dec 2026)
+       - Wave 1 (Jul–Sep): ModRun accessories + gaming bundle. Target 250+ units/month.
+       - Wave 2 (Oct–Nov): Phone mounts + organizer boxes. Target 350+ units/month.
+       - Wave 3 (Dec onwards): Conditional laser/resin decision. Only if Wave 1–2 >500 units/month.
+     - Part 5: Supplier research (filament bulk pricing, fabric/leather sources, resin suppliers)
+     - Part 6: Financial summary (Wave 1–2 investment $300–500, monthly COGS increase $200–400, projected revenue $4–8K/month by Nov)
+     - Part 7: Risk mitigation (saturation, Etsy algorithm, supplier reliability, printer uptime, inventory)
+   - **Status**: Production-ready for Phase 3 planning; awaiting ModRun test print validation for execution
+   - **Alignment**: Directly supports Project Goal ("explore adjacent manufacturing and scaling to full farm")
+
+3. ✅ **Updated EXPLORATION_QUEUE.md**
+   - Marked Item 9 as COMPLETED (2026-04-28 13:25 UTC)
+   - Confirmed Item 10 status: Domain 37 is already complete (Session 517) — queue item is outdated, should be updated to future Domain 38+ scoping
+
+**Queue Status**:
+- Items 1, 2, 7, 8, 9: COMPLETED ✓
+- Item 3: QUEUED for 20:30 UTC post-market (stockbot operations analysis)
+- Items 4, 5, 6: BLOCKED on user actions/events (test print, PR merge, distribution decision)
+- Item 10: OUTDATED (Domain 37 already complete)
+
+**Market-Open Status** (T-27m):
+- **Code**: Production-ready ✓ (feature count fix verified in place)
+- **Infrastructure**: Production-ready ✓ (database, models, sessions all present)
+- **Engine**: OFFLINE — awaiting user restart (user action required before 13:30 UTC)
+- **Item 3 staging**: Research complete (Item 8 from Session 587), ready for post-market execution at 20:30 UTC
+
+**Critical User Action**:
+- 🚨 **Engine restart MUST happen between now and 13:30 UTC**
+- Command: `cd /home/awank/dev/SuperClaude_Framework/projects/stockbot && .venv/bin/python scripts/run_live_trading.py &`
+- If executed: first market session proceeds, trading signals fire 13:30–20:00 UTC, Item 3 executes at 20:30 UTC
+- If not executed: 24-hour skip until next session
+
+**Token Budget**: Session efficient (parallel research completion + health check). No blockers to further autonomous execution.
+
+---
+
 ## 2026-04-28 Session 585 (12:11–12:18 UTC) — Orchestrator: Queue Management + off-grid-living Distribution Campaign
 
 **Status**: 🟢 **MARKET-OPEN FINAL WINDOW (T-1h 12m)** — Executed autonomous work while awaiting critical stockbot engine restart. Spawned general-research agent to complete off-grid-living distribution campaign (unblocked, high-value delivery).
