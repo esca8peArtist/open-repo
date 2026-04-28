@@ -4,6 +4,48 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 553 (01:35 UTC onward) — Exploration Queue: Stockbot Operations + Seedwarden Photography Planning
+
+**Orchestration Status**: Two parallel Exploration Queue items executed. Primary projects (resistance-research, stockbot, cybersecurity-hardening) remain blocked on user actions. Available autonomous work: Exploration Queue research + lower-priority project Track B execution.
+
+**Work Completed**:
+
+1. ✅ **stockbot: Live Trading Infrastructure and Risk Management COMPLETE**
+   - **Deliverable**: `projects/stockbot/docs/live-trading-operations.md` (7,578 words, 1,135 lines, production-ready)
+   - **Scope**: Complete operational design for monitoring, alerting, emergency response, and runbooks for live trading post-engine-restart.
+   - **Key Content**:
+     - **Dashboard Architecture** (5 subsections): Three monitoring layers (5-min operational health, 30-min performance tracking, daily model health). Maps Session 551 UI mockup panels to data sources, API endpoints, update cadence. Exact column definitions for position tracker and signal board.
+     - **Alert Triggers** (6 categories with concrete numeric thresholds): Drift detection (example: TSLA backtest Sharpe 1.10 → Orange alert fires when rolling 30-trade live Sharpe <0.55 AND win rate <37%). Circuit breakers (3 consecutive losses = 9.1% P(event) = unusual threshold). Drawdown limits, regime shifts, position-specific alerts.
+     - **Emergency Exit Procedures** (4 response levels): Level 2 controlled liquidation (liquidation order: largest first, TSLA/NVDA/AVGO before defensives, AAPL last). Level 3 panic liquidation (curl command for full close). "What killing the engine does NOT do" error prevention box.
+     - **Operational Runbooks** (6 runbooks with branch logic): Five incident types (drift alert, regime shift, drawdown, portfolio shock, model prediction error). Self-contained branch logic. Post-incident review checklist (24-hour completion requirement).
+     - **Integration Points**: Gap identified — no real-time CRITICAL alerts to Discord (only daily summary exists). Design spec for `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` provided as actionable TODO.
+     - **Pre/During/Post-Market Checklist** (1-page, routing table): Maps all alert types to runbook sections — incident execution requires no document hunting.
+   - **Integration Status**: Coordinates with Session 551 UI mockup and Session 542 performance attribution framework. Ready for immediate use post-engine-restart.
+   - **Critical Gap Identified**: Real-time CRITICAL alert Discord webhook not yet implemented — design spec ready, implementation is ~15 min hook-up.
+   - **Exploration Queue Item**: #3 (stockbot post-Gate-2 operations) — **COMPLETE**
+   - **Committed**: Committed to master by stockbot agent
+
+2. ✅ **seedwarden: Track B Phase 2 Photography Roadmap COMPLETE**
+   - **Deliverable**: `projects/seedwarden/PHOTOGRAPHY_ROADMAP.md` (~5,200 words, production-ready)
+   - **Scope**: Execution plan for hybrid lifestyle + stock photography strategy (Session 523 document, 4,200 words) for all 21 Phase 2 products.
+   - **Key Content**:
+     - **Product Photography Map**: All 21 products assigned (15 physical, 6 stock). Priority order: four highest-ticket products ($18–$22 range) get Week 1 stock sourcing, earliest conversion measurement.
+     - **Shot Lists — 15 Physical Products**: Every product has 2–4 named shots with surface, arrangement, angle, lighting, visual element, styling notes. Example: Companion Planting Chart gets wall-mount print shot (more differentiated than flat-lay). Cluster C (food preservation) includes safety notes for high-capsaicin peppers.
+     - **Stock Sourcing Plan — 6 Products**: 5–8 search queries per product (free sources: Unsplash/Pexels/Pixabay; iStock only if needed). Budget allocation: $60–$99 total (under $80–$160 ceiling). License tracking requirement for Wikimedia Commons (CC BY-SA attribution).
+     - **3-Week Sprint Plan**: Day-by-day time estimates. Decision gate at end of Day 1 (free-source scan results determine iStock credit needs). Dependency map: physical shoot is only true constraint. Flagged blocker: Native Plants listing cannot upload images until PDF rebuild completes (56.96 MB file is currently blocked from Etsy).
+     - **Conversion Metrics Design**: Per-product success thresholds (10–20% lift range per strategy). Revenue impact: Survival Garden at 10% lift = 2 sales/month = +$44/month (pays back all iStock spend in Month 1). Hunting/Trapping Manual identified as highest-value A/B test candidate. Cohort integration: visual tone (field context, kitchen, urban small-space) maps to customer segment, feeds back to cohort analytics spreadsheet.
+   - **Production Status**: Ready to execute post-Phase-1-launch (May 2026). No Phase 1 blockers.
+   - **Blockers Identified**: Native Plants PDF must be rebuilt before Phase 2 image upload begins (not a blocker for roadmap, but noted for execution sequencing).
+   - **Session 551 Integration**: Coordinates with customer cohort analysis framework and conversion metrics.
+   - **Committed**: Committed to master by seedwarden agent
+
+**Exploration Queue Update**:
+- ✅ **Item #3 (stockbot post-Gate-2 operations)** — COMPLETE. Document is production-ready, identifies one implementation gap (Discord webhook).
+- **Remaining active items**: (check PROJECTS.md for full list)
+- **Queue maintenance**: 2 items completed (Session 551 #1–#2, this session #3). Maintain minimum 3 active items per protocol.
+
+---
+
 ## 2026-04-28 Session 558 — Seedwarden — Photography Roadmap (Track B)
 
 **Deliverable**: `projects/seedwarden/PHOTOGRAPHY_ROADMAP.md` (~5,200 words)
