@@ -4,6 +4,31 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 562 (04:13 UTC) — stockbot: Discord Position Notifications COMPLETE
+
+**Work Completed**:
+
+1. ✅ **stockbot NEXT WORK #1: Discord Position Notifications — COMPLETE**
+   - **Deliverables**: 
+     - New module `src/notifications/discord.py` (114 lines) — `send_position_notification()` function with Discord embed formatting
+     - Updated `src/models/model_strategy.py` — wired `on_trade_executed()` hook to dispatch Discord notifications
+     - Integration: Uses `STOCKBOT_DISCORD_WEBHOOK_URL` env var (same pattern as existing `hetzner_budget.py`)
+     - Stdlib-only urllib.request POST, graceful failure if webhook URL not set
+   - **Test Coverage**: 12 new unit tests (100% pass rate)
+     - 9 tests in `tests/unit/test_notifications/test_discord.py`: BUY/SELL formatting, P&L display, emoji indicators, webhook POST, failure handling, payload serialization
+     - 3 tests in `tests/unit/test_models/test_model_strategy_discord.py`: strategy integration, action handling, strategy name accuracy
+   - **Code Quality**: Backward compatible, zero schema changes, zero new dependencies
+   - **Committed**: stockbot submodule commit a7298a5 (6 files, 408 insertions)
+
+**Critical Deadline Context**:
+- ⏳ Engine restart required: 2026-04-28 13:30 UTC (T-9h 17min from session end)
+- Discord position notifications now ready to monitor 11-ticker portfolio during paper trading
+- All infrastructure prerequisites complete; waiting on user engine restart action
+
+**Next Action**: Monitor for engine restart. Upon restart, Discord webhooks will fire on every trade execution.
+
+---
+
 ## 2026-04-28 Session 562 (03:46 UTC) — Orchestrator: Task Selection + Token Limit
 
 **Analysis Completed**:

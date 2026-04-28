@@ -1,28 +1,53 @@
-## Current Session (Session 562 — 2026-04-28 03:46 UTC — Task Selection + Token Limit Hit)
+## Current Session (Session 562 — 2026-04-28 04:13 UTC — Discord Notifications Implementation)
 
-**Status**: ⏳ **TOKEN LIMIT HIT** — Identified two parallel autonomous work items ready for execution, but token allocation exhausted at agent spawn time. Will retry after reset (~06:00 UTC, 2h 14min from session start).
+**Status**: ✅ **DISCORD POSITION NOTIFICATIONS COMPLETE** — Implemented NEXT WORK item #1 for stockbot. Discord notifications will now fire on every trade execution, providing real-time position awareness during paper trading and live trading.
 
-**Work Items Identified & Queued**:
+**Work Completed**:
 
-1. **stockbot NEXT WORK #1: Discord Position Notifications** (1-2 hours)
-   - **Scope**: Sends Discord alert when any strategy opens/closes a position with: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized/realized P&L
-   - **Implementation**: Wire into `on_trade_executed` in `src/models/model_strategy.py`, follow pattern from `src/remote/hetzner_budget.py`, use `STOCKBOT_DISCORD_WEBHOOK_URL`
-   - **Quality gates**: Tests first, all model types (stock, options, rule-based, ensemble, MTF), all tests pass before commit
-   - **Status**: No blockers, ready to execute
-   - **Queued for**: Parallel agent execution post-reset
+1. ✅ **stockbot NEXT WORK #1: Discord Position Notifications — COMPLETE**
+   - **Scope**: Automatic Discord notifications on trade execution with ticker, action (BUY/SELL), quantity, price, strategy name, optional P&L
+   - **Implementation**:
+     - New module: `src/notifications/discord.py` — `send_position_notification()` function with Discord embed formatting
+     - Updated: `src/models/model_strategy.py` — wired `on_trade_executed()` hook to dispatch Discord notifications
+     - Uses: `STOCKBOT_DISCORD_WEBHOOK_URL` env var (same pattern as `hetzner_budget.py`), stdlib-only urllib.request
+     - Graceful failure: logs warning if webhook URL not set, never crashes trading logic
+   - **Test Coverage**: 12 new unit tests (9 in test_discord.py, 3 in test_model_strategy_discord.py), all passing:
+     - BUY/SELL notification formatting, P&L display (unrealized/realized), negative P&L emoji indicators
+     - Webhook POST serialization, graceful failure handling, timestamp accuracy
+     - Model strategy integration (uses strategy name, correct field mapping)
+   - **Quality**: Backward compatible, zero schema changes, zero new dependencies, production-ready
+   - **Files Modified**: 
+     - New: `src/notifications/discord.py`, `src/notifications/__init__.py`, tests
+     - Modified: `src/models/model_strategy.py` (2 lines: import + on_trade_executed call)
+   - **Committed**: stockbot submodule commit a7298a5 (6 files changed, 408 insertions)
 
-2. **resistance-research Distribution Fixes** (<2 hours)
-   - **Scope**: Preemptive administrative work to unblock final distribution execution
-   - **Tasks**: (1) Resolve canonical file location, (2) Fill URL placeholders in templates, (3) Fill contact field in README.md, (4) Create Distribution Ready Checklist
-   - **Outcome**: When user decides on Path A/A+37/B, materials are fully ready
-   - **Status**: No functional blockers, user decision is only real blocker
-   - **Queued for**: Parallel agent execution post-reset
+**Critical Context — T-9h 17min to Market Open (13:30 UTC 2026-04-28)**:
+- Stockbot engine restart STILL PENDING (user action) — **CRITICAL DEADLINE**
+- Discord notifications now ready to monitor paper trading upon engine restart
+- All NEXT WORK items #0–3 prerequisites now complete; awaiting engine restart for execution
 
-**Critical Context — T-9h 44min to Market Open (13:30 UTC 2026-04-28)**:
-- Stockbot engine restart STILL PENDING (user action)
-- Discord notifications implementation will support post-restart monitoring
+**Status Summary**:
+- ✅ Feature count bug (Session 560)
+- ✅ Market-aware idle sleep (Session 552)
+- ✅ Ticker enforcement guard (Session 552)
+- ✅ Daily Discord summary (Session 552)
+- ✅ Discord position notifications (Session 562) — **TODAY**
+- ⏳ Engine restart (user action, **DEADLINE 13:30 UTC TODAY**)
+- ⏳ Market open verification (after restart)
 
-**Next Action**: Resume after token reset at ~06:00 UTC; spawn both agents in parallel.
+**Needs Your Input**:
+1. **[CRITICAL]** Restart stockbot engine before 2026-04-28 13:30 UTC (9.25 hours remaining):
+   ```bash
+   cd projects/stockbot
+   .venv/bin/python scripts/run_live_trading.py
+   ```
+   Engine will load 11-ticker portfolio, monitor open AAPL position, execute multi-ticker paper trading. All Discord webhooks (position notifications + daily summary + CRITICAL alerts) active.
+
+2. **[OPTIONAL]** Set `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` env var for real-time CRITICAL alerts (drift, drawdown, circuit breaker) — separate from position notifications. If not set, daily summary only.
+
+**Next Session Actions**:
+1. If engine has been restarted: Monitor paper trading through market open (13:30–20:00 UTC). Verify 11 strategies generate signals, positions populate correctly, P&L calculations accurate.
+2. If engine NOT restarted: Escalate urgency — market open is hours away, critical deadline.
 
 ---
 
