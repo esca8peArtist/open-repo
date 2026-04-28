@@ -33,7 +33,7 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
 **What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
 **Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**:
+**Resolution**: RESOLVED 2026-04-28 Session 569 — Calibration check passed. Sonnet 0.0%, All-models 8.0%. Limits: Sonnet 8,935,000/week, All-models 13,205,975/week. Saved to PROJECTS.md. Budget healthy.
 <!-- AUTO:CALIBRATION:END -->
 
 
