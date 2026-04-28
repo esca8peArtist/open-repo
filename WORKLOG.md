@@ -4,6 +4,46 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 567 (06:37–ongoing UTC) — Orchestrator: Deadline Monitor + Post-Gate-2 Roadmap Preparation
+
+**Work Completed**:
+
+1. ✅ **Session 566 Verification & Orchestration** 
+   - Reviewed Session 566 deliverables (resistance-research Phase 1 distribution infrastructure, seedwarden Phase 1 revenue projections)
+   - Confirmed all major exploration queue items either complete or awaiting user actions/engine restart
+   - Updated CHECKIN.md with Session 567 status
+
+2. ✅ **stockbot: Post-Gate-2 Operations & Scaling Roadmap COMPLETE** (Agent aa524b51e46154b87, 437s elapsed)
+   - **Deliverable**: `projects/stockbot/docs/post-gate-2-operations-roadmap.md` (9,400 words, 578 lines)
+   - **Structure**: 8 sections covering Gate 1 success criteria, multi-asset expansion (Treasury/commodities/crypto/options/international), institutional risk management, architecture upgrades, phasing timeline (Phase 1-5, Weeks 1-16+), cost structure, regulatory/licensing requirements, research roadmap
+   - **Key Insights**:
+     - Gate 1 validation timeline: 3-4 weeks of live trading (non-waivable 63-calendar-day requirement from model-graduation-criteria.md)
+     - Treasury ETFs (SHY/IEF/TLT) as Phase 2 (simplest expansion, zero new infrastructure — MTF extractor already asset-class-agnostic)
+     - Options at Phase 4 (requires OptionsFeatureExtractor, Greeks tracking, separate execution model — three dependent systems)
+     - Equity/Treasury positive correlation risk (regime-conditional per 2020-2023 inflation period) requires CVaR monitoring post-multi-asset
+     - Cost escalation: $0/month (paper) → $150-200 (Phase 1 live) → $500-800 (Phase 2-3) → $1,500-3,000 (Phase 4-5)
+     - Regulatory milestone: personal capital trading never requires license regardless of complexity; institutional AUM triggers Form ADV filing (15 clients / $150M threshold)
+   - **Grounding**: Sections anchored to existing codebase (gate criteria from `live-trading-readiness.md`, risk management from `live-trading-operations.md`, cost assumptions from real Alpaca/CBOE/Coinbase Prime pricing)
+   - **Status**: Production-ready for immediate post-market-open execution (expected after Session 567 deadline passes at 13:30 UTC)
+   - **Commit**: `23f8039` to stockbot submodule master
+
+**Orchestration Status**:
+- **Active Blocks**: 1 (mfg-farm test print — user action, cannot auto-verify)
+- **Critical Deadline**: Stockbot engine restart required by **13:30 UTC (T-6h 53min remaining at 06:37 UTC start)**
+- **Engine Status**: Code verified production-ready (Session 560, 560, 552), awaiting user restart
+- **Post-deadline work**: stockbot post-Gate-2 roadmap ready for immediate execution once market opens and engine restarts
+- **Exploration Queue**: Top 3 items all addressed (Phase 1 distribution infrastructure, Phase 1 revenue roadmap, post-Gate-2 roadmap)
+
+**Next Priorities**:
+1. **[CRITICAL]** Monitor stockbot engine restart at 13:30 UTC market open (T-6h 53min)
+2. **[POST-RESTART]** Execute stockbot post-Gate-2 operations roadmap deployment (integration with monitoring, phase timeline, risk management checklist)
+3. **[PARALLEL]** Awaiting user decisions: resistance-research distribution path (A / A+37 / B), mfg-farm test print, seedwarden tag corrections
+4. **[OPTIONAL]** Domain content maintenance (April-May 2026 updates completed Session 563) or cybersecurity-hardening high-risk protocols (queued exploration item)
+
+**Blockers**: None new. Stockbot engine restart remains user action (required before 13:30 UTC for market open).
+
+---
+
 ## 2026-04-28 Session 566 (06:10–07:45 UTC) — Orchestrator: Parallel Autonomous Work — Phase 1 Distribution Infrastructure + Revenue Projections
 
 **Work Completed**:
