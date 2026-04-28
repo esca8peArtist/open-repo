@@ -91,6 +91,46 @@
 
 ---
 
+### Item 8: stockbot Multi-Asset Class & Regulatory Preliminary Research (Session 586)
+**Status**: QUEUED — Preliminary research to accelerate Item 3 execution post-market
+**Trigger**: Now (Session 586, pre-market, 12:35–13:30 UTC)
+**Scope**: Preliminary research on multi-asset class integration (equities + options + crypto + futures), SEC/FINRA regulatory compliance, Kelly criterion risk management, institutional scaling architecture patterns
+**Deliverables**: 
+- Regulatory compliance matrix (per-asset-class SEC/FINRA rules, PDT restrictions, state-by-state constraints)
+- Risk management architecture (Kelly criterion application, circuit breaker strategies, stress test scenarios)
+- Multi-asset integration patterns (data feed architecture, position tracking across classes, reporting consolidation)
+- Research notes for Item 3 execution at 20:30 UTC
+**Owner**: orchestrator (Session 586, 30–45 min preliminary research, accelerates Item 3)
+**Value**: When Item 3 executes at 20:30 UTC post-market, Item 8 groundwork eliminates research friction → faster 6,000–7,000 word production document
+
+---
+
+### Item 9: mfg-farm Product Category & Adjacent Manufacturing Viability (Session 586)
+**Status**: QUEUED — Exploratory research for Phase 3 product line expansion
+**Trigger**: Now (Session 586, preliminary research while test print awaits)
+**Scope**: High-margin product category analysis (cable management market depth, competing designs, price elasticity); adjacent manufacturing viability (laser cutting integration, resin printing, CNC feasibility for mfg-farm's equipment tier)
+**Deliverables**: 
+- High-margin product category matrix (market size, margin potential, competition, design originality required)
+- Laser/resin/CNC integration feasibility assessment (capital cost, skill curve, lead time, regulatory requirements)
+- 3–5 product candidates for Phase 3 with rough COGS, retail pricing, supplier contacts
+**Owner**: orchestrator (exploratory research, no blocker dependency)
+**Context**: Supports Phase 3 planning after test print confirms ModRun manufacturability. Project Goal explicitly mentions exploring adjacent manufacturing and scaling to full farm.
+
+---
+
+### Item 10: resistance-research Domain 37 Preliminary Scoping (Session 586)
+**Status**: QUEUED — Conditional on user selecting Path A+Domain37 Hybrid
+**Trigger**: User selects Hybrid path, or available now for exploratory research
+**Scope**: Identify potential Domain 37 candidate (gap analysis on existing 36 domains), preliminary research strategy, scope definition
+**Deliverables**: 
+- 3–5 Domain 37 candidate topics (with rationale for each as gap-filler)
+- Preliminary research roadmap (sources, scope, estimated production time)
+- Executive summary template for Domain 37 (consistent with existing 36-domain format)
+**Owner**: orchestrator (exploratory scoping, enables fast execution if Hybrid path chosen)
+**Context**: If user chooses Hybrid, orchestrator can execute Domain 37 research immediately without multi-session cycle time.
+
+---
+
 ## Completed Items Archive
 
 *(Archived items from Sessions 571-585)*

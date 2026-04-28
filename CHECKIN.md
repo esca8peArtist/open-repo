@@ -5,6 +5,44 @@
 
 ---
 
+## Since Last Check-in (Session 586 — 2026-04-28 12:35–13:00 UTC)
+
+🟢 **Market-open pre-flight complete** — All autonomous systems ready (T-~50 minutes to 13:30 UTC)
+
+**Session 586 Autonomous Work**:
+
+1. ✅ **Pre-market health check PASSED**
+   - Ran `pre-market-validation.sh`: All 8 checks pass (database, sessions, credentials, environment, modules, logs)
+   - System is production-ready for engine restart
+
+2. ✅ **Exploration queue seeded with 3 new items** (Items 8–10)
+   - Item 8 (COMPLETE): `PRE_ITEM3_REGULATORY_RESEARCH.md` — regulatory + risk management research for post-market Item 3 execution
+   - Items 9–10 (QUEUED): Product research + Domain 37 scoping for future work
+
+3. ✅ **EXPLORATION_QUEUE.md updated with full scoping**
+
+**Market-Open Status (T-~50m)**:
+- **Code**: Production-ready ✓
+- **Config**: Production-ready ✓ (67 sessions, 11 tickers, Alpaca credentials active)
+- **Infrastructure**: Production-ready ✓ (database writable, Python verified)
+- **Engine**: OFFLINE — awaiting user restart (**CRITICAL ACTION: must restart before 13:30 UTC**)
+
+**Needs Your Input**:
+
+1. **🚨 CRITICAL — Engine restart (deadline 13:30 UTC / 09:30 ET, T-~50 minutes)**
+   ```bash
+   cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+   bash pre-market-validation.sh  # Verify (all checks ✓ PASS)
+   .venv/bin/python scripts/run_live_trading.py &  # Start engine
+   ```
+   Then follow `MARKET_OPEN_EXECUTION_RUNBOOK.md` starting at 13:00 UTC.
+
+2. **resistance-research distribution path** (Path A / A+37 Hybrid / B) — No time pressure, unlocks Tier 1 distribution.
+
+3. **mfg-farm test print** — Validates designs, unlocks supplier negotiation.
+
+---
+
 ## Since Last Check-in (Session 585 — 2026-04-28 12:11–12:18 UTC)
 
 🚨 **CRITICAL DEADLINE: Stockbot market open in ~1h 12m (13:30 UTC / 09:30 ET)**

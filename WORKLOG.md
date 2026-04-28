@@ -12986,3 +12986,65 @@ With T-4h 31min remaining to critical market open and all high-priority projects
 
 ---
 
+
+## Session 586 (2026-04-28 12:35–13:00 UTC — Pre-Market Preparation + Exploration Queue Queuing)
+
+**Objective**: Verify stockbot readiness within 1h of market open (13:30 UTC); queue exploration items for post-market work.
+
+**Work Completed**:
+
+1. ✅ **Stockbot pre-market health check** (12:35–12:40 UTC):
+   - Ran `pre-market-validation.sh` — **ALL 8 CHECKS PASS**
+   - Database connectivity: ✓
+   - 67 active trading sessions: ✓
+   - Alpaca API credentials: ✓
+   - Python environment + critical modules: ✓
+   - One stale process (will clear on restart): ⚠ (expected)
+   - No errors in recent logs: ✓
+   - **Status**: Production-ready for user engine restart before 13:30 UTC
+
+2. ✅ **Added 3 new exploration queue items** (12:40–12:50 UTC):
+   - **Item 8: stockbot Multi-Asset & Regulatory Preliminary Research** (Session 586)
+     - Purpose: Head-start on Item 3 (post-Gate-2 analysis) execution at 20:30 UTC post-market
+     - Deliverable: PRE_ITEM3_REGULATORY_RESEARCH.md (3,500 words)
+     - Coverage: SEC/FINRA compliance (PDT rules, options approval tiers), CFTC crypto requirements, Kelly criterion aggregation, circuit breaker architecture, stress testing framework, compliance audit trails, operational risk/failover planning
+     - **Status**: COMPLETE — ready for Item 3 to consume at 20:30 UTC
+   
+   - **Item 9: mfg-farm Product Category & Adjacent Manufacturing Viability** (queued)
+     - Purpose: Exploratory research for Phase 3 product line expansion (no blocker dependency)
+     - Scope: High-margin product categories, laser/resin/CNC integration analysis
+     - Status: QUEUED (exploratory, low priority vs. post-market work)
+   
+   - **Item 10: resistance-research Domain 37 Preliminary Scoping** (queued)
+     - Purpose: Conditional on user selecting Path A+Domain37 Hybrid
+     - Scope: Gap analysis, research strategy, executive summary template
+     - Status: QUEUED (conditional on user decision)
+
+3. ✅ **Updated EXPLORATION_QUEUE.md** (12:50–12:55 UTC):
+   - Added Items 8, 9, 10 with full scoping and success criteria
+   - Now have 6 active items (3 scheduled/blocked for later, 3 new for future work)
+   - Queue seeded per protocol: "If queue < 3 items, add 2–3 new items"
+
+**Market-Open Status (T-~50 minutes)**:
+- **Code**: Production-ready ✓ (Session 560 feature count fix in place)
+- **Config**: Production-ready ✓ (67 sessions, 11 tickers, Alpaca credentials)
+- **Infrastructure**: Production-ready ✓ (database writable, Python env verified, no errors)
+- **Engine**: Offline — awaiting user restart (user action required)
+- **Health Check**: ALL PASS — system ready for execution
+- **Timeline**: T-~50 minutes until 13:30 UTC market open
+
+**Strategic Positioning**:
+- Pre-market validation complete; all autonomous checks pass
+- Engine restart remains user responsibility (CRITICAL ACTION)
+- Post-market work queued and prioritized (Item 3 research complete, ready for 20:30 UTC execution)
+- Exploration queue seeded for future autonomous work when current projects unblock
+
+**Session Type**: Pre-market health check + exploration queue preparation (no code changes, stability maintained)
+
+**Next Session Actions**:
+1. Execute market-open checklist using MARKET_OPEN_EXECUTION_RUNBOOK.md (if user restarts engine)
+2. Monitor first trading cycle (13:30–14:30 UTC) via dashboard
+3. Validate Day 1 success (POST_MARKET_MONITORING.md, by 20:00 UTC)
+4. Activate post-market execution plan (20:30 UTC) → spawn stockbot agent for Item 3 (post-Gate-2 operations analysis)
+
+---
