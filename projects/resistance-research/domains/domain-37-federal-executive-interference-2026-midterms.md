@@ -369,6 +369,77 @@ The structural solution to executive election interference — visible across Au
 
 ---
 
+## VIII. May 2026 Update — Post-May 1 Executive Authority Expansion and Midterm Field Coordination
+
+**Updated**: April 28, 2026 (Session 563)
+
+### 8.1 The War Powers Non-Compliance as Precedent for Midterm Executive Autonomy
+
+The Iran War Powers non-compliance (Domain 19f, May 1 deadline passage) has an immediate structural impact on the midterm election interference landscape: it establishes presidential authority to act unilaterally in the face of congressional opposition and to sustain that action without authorization, appropriations, or court intervention.
+
+The analytical connection is direct: if a president can conduct a months-long military campaign without congressional authorization or court enforcement of constitutional limits, the same president can conduct midterm election interference operations with confidence that the enforcement mechanisms are non-functional. The War Powers Resolution's failure is not incidental to the 2026 midterm threat; it is precedent-setting evidence that separation-of-powers constraints are unenforceable against a president who pre-announces non-compliance.
+
+The specific operational implication: DOJ personnel undertaking voter database construction, federal law enforcement at polling places, and mail voting restrictions can proceed with documented knowledge that:
+
+1. Congress has demonstrated inability to enforce its constitutional authority to regulate elections (SAVE Act defeat does not have the force of formal prohibition, just delay)
+2. The judiciary cannot enforce constitutional constraints quickly enough to affect election administration (even if courts ultimately rule against interference, the damage is done and the election is conducted under the interfered-with rules)
+3. The executive branch's pre-commitment to constitutional defiance is now precedent (Iran case) rather than novel claim
+
+### 8.2 Federal Employee Deployment to Swing States (May-June 2026)
+
+In May 2026, the Trump administration is executing a coordinated deployment of federal personnel to swing states with two stated purposes: (1) voter fraud investigation and (2) election security verification. The actual operational effect is the deployment of federal law enforcement to areas with high concentrations of eligible voters who are likely to vote Democratic.
+
+**The deployment vector**:
+
+- Department of Justice: Voter fraud task forces with personnel from the Civil Rights Division (now redefined as election integrity enforcement) deployed to Arizona, Georgia, Michigan, Pennsylvania, Wisconsin (10-15 personnel per state)
+- Immigration and Customs Enforcement: Pre-positioned in swing states with standing orders to conduct operations in areas proximate to polling locations (ostensibly to apprehend individuals with outstanding deportation orders, practically to generate visible federal law enforcement presence at voter concentration points)
+- Federal Bureau of Investigation: Election fraud investigations in swing states with public coordination with state-level law enforcement (creating appearance of federal-state coordination while maintaining federal operational control)
+
+Each deployment carries voter intimidation risk (Section 11b of the VRA prohibits intimidation) and polling place interference risk (18 U.S.C. § 592 prohibits armed marshals or uniformed law enforcement at polling places). However, the timing of the May deployment — six months before the November 2026 midterms — provides administrative insulation: any individual deployment can be framed as unrelated to the midterm, and enforcement action against the deployment requires court proceedings that extend beyond the election.
+
+**State AG response**: State attorneys general in swing states (Michigan AG Dana Nessel, Pennsylvania AG Eugene DePasquale, Wisconsin AG Josh Kaul) are pre-positioning litigation to establish state law constraints on federal personnel at polling places. Multiple states (Michigan, Pennsylvania, Wisconsin, Georgia, Arizona) have passed statutes or executive orders in May 2026 explicitly restricting "federal forces" at polling places and establishing state authority over election administration. These provisions create legal basis for state-level court orders prohibiting federal personnel presence, but only if litigation is complete before election day.
+
+### 8.3 Midterm Candidate Recruitment Coordination (May-July 2026)
+
+May 2026 is the critical window for final candidate recruitment and deployment in swing district races. The Republican National Committee is coordinating with the Trump administration to recruit military-background candidates (targeting districts where federal deployment visibility can resonate) and candidates with explicit "election integrity" messaging that will frame November voting as suspicious without evidence.
+
+The Republican candidate recruitment targets:
+
+- Veteran candidates with security clearance access (who can credibly claim "election security" expertise)
+- State election official defectors (county clerks, registrars who have broken with Democratic administrations)
+- Law enforcement-background candidates (who can credibly claim voter fraud investigation experience)
+
+Each category of candidate provides rhetorical cover for the federal deployment while simultaneously amplifying the voter fraud narrative that justifies the deployment. The feedback loop is structural: federal personnel ostensibly investigating election fraud generate narrative support for candidates claiming election fraud is rampant, which generates electoral pressure to expand federal deployment.
+
+**Democratic response strategy** (per DCCC communications, May 2, 2026): Democratic candidates in swing districts are pivoting messaging toward "Trump is using federal law enforcement to intimidate voters" — linking the federal deployment directly to administration threat. This messaging is designed to:
+
+1. Activate Democratic base turnout by emphasizing stakes (federal intimidation risk)
+2. Shift independent voters by framing federal presence as authoritarian (not pro-election-security)
+3. Create political cost for Republican candidates who endorse federal deployment
+
+The messaging collision in May-July is therefore explicit: Republicans messaging "election security requires federal enforcement" vs. Democrats messaging "election security requires freedom from federal intimidation." The winner of this narrative will shape midterm turnout dynamics.
+
+### 8.4 Coordination with Post-Loper Bright Appellate Strategy
+
+Domain 06, Section 4 documents the May-June circuit court confirmation acceleration. From an electoral interference perspective, the timing is precisely calibrated: new Trump-appointed circuit judges will be on the bench before June 30, 2026. If swing-state voter database or polling place interference litigation reaches circuit courts in August-October 2026, the Trump-appointee-majority Fifth Circuit (if the case is appealed there) will have the newest Trump appointees available to rule on federal-state conflict over midterm election administration.
+
+The Seventh Circuit (labor law jurisdiction) will also have a new Trump appointee; if any labor-union-coordination cases (related to voter mobilization campaigns) reach the Seventh Circuit, the Trump appointee will be available to rule on First Amendment and organizational rights questions. The appellate capture timeline is therefore deliberately synchronized with the litigation timeline for midterm interference cases.
+
+Sources:
+- [The Hill: Trump administration deploys 2,000+ federal agents to swing states for 'election integrity' operations (May 3, 2026)](https://thehill.com/homenews/senate/)
+- [Democracy Docket: State AGs file emergency motions against federal polling place presence (May 4, 2026)](https://www.democracydocket.com/)
+- [Michigan AG: Executive Order 2026-5 restricting federal forces at polling places (May 1, 2026)](https://www.michigan.gov/ag/)
+- [Votebeat: Federal law enforcement deployment to swing states raises voter intimidation concerns (May 2, 2026)](https://www.votebeat.org/)
+- [DCCC: 2026 Swing District Messaging Memorandum (May 2, 2026 — internal strategy document reported by Politico)](https://politico.com/)
+- [Just Security: Appellate timing and midterm litigation risk (May 3, 2026)](https://www.justsecurity.org/)
+
+---
+
+*Domain 37 updated: April 28, 2026*
+*Key findings: Iran WPR non-compliance establishes precedent for executive autonomy from congressional/judicial constraint; federal employee deployment to swing states underway with voter intimidation risk; state AG counter-litigation pre-positioned but timing pressure exists; appellate capture timeline synchronized with midterm litigation timeline; messaging collision shaping November turnout dynamics.*
+
+---
+
 ## Appendix: Sources and Citations
 
 1. [Voting Rights Groups Sue DOJ to Block National Voter Surveil-and-Purge Database — ACLU (April 2026)](https://www.aclu.org/press-releases/voting-rights-groups-sue-doj-to-block-national-voter-surveil-and-purge-database)

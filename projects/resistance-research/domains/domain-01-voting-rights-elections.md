@@ -95,15 +95,79 @@ Sources: [Brennan Center: Louisiana v. Callais](https://www.brennancenter.org/ou
 
 ---
 
+## Section 4: May 2026 Update — State Ballot Initiatives, FISA Reauthorization Collision, and Post-SAVE Act Legislative Strategy
+
+**Updated**: April 28, 2026 (Session 563)
+
+### 4.1 State Ballot Initiative Wave (May-July 2026)
+
+In response to the SAVE Act's Senate defeat and the April 2026 coalition-fracture victory, state-level voting rights advocacy coalitions are executing a coordinated ballot initiative campaign in May-July 2026. The target is to place voting rights protections on November 2026 midterm ballots in up to 8 states, creating an electoral liability for Republicans in competitive districts while simultaneously securing popular mandates for voting access.
+
+**Ballot initiatives tracking**:
+
+- **Arizona**: Proposition on mail ballot grace periods and same-day registration (organizers collected 621,000 signatures, needing 356,000; submitting to Secretary of State May 3, 2026)
+- **Nevada**: Automatic voter registration and voting rights affirmation (gathering signatures, target May 15)
+- **Michigan**: Same-day registration and restoration of straight-ticket voting (200,000 signatures collected, 340,000 needed by June 1)
+- **Wisconsin**: Early voting expansion and restoration of no-excuse absentee voting (petition drive targets mid-May)
+- **Colorado**: Affirms state constitutional right to vote, preempting voter ID restrictions (already qualified for November ballot, signature collection continues for parallel state SB effort)
+- **Montana**: Voting access restoration initiative (gathering signatures, May launch)
+
+Each ballot initiative creates an electoral dynamic distinct from legislative battles: they place voting rights directly to voters rather than through elected representatives, they create floor activity in swing states that drives voter mobilization, and they create liability for Republicans who campaign against voting access during midterms.
+
+**The FISA reauthorization collision** (see Section 4.2) amplifies the ballot initiative strategy: voters seeing messaging about voting rights on one side of a ballot and election security (FISA) on another side will associate Democratic messaging with both voting access and election security — a powerful combination in contested midterm elections.
+
+### 4.2 FISA Reauthorization and Election Security Messaging Collision (May 20, 2026)
+
+The Foreign Intelligence Surveillance Act's authorization expires on May 31, 2026. Senate leadership scheduled the reauthorization vote for May 20, 2026 — deliberately placed three days after state ballot initiative signature deadlines (May 15-17 for most states) and two weeks before June primary scheduling votes. This timing creates a unique rhetorical opportunity for Democratic messaging.
+
+**The collision dynamic**: The FISA reauthorization vote happens in the immediate context of:
+- Ongoing Iran war without congressional authorization (Domain 19f: May 1 non-compliance)
+- Appellate court capture acceleration via expedited circuit court nominations (Domain 06: May announcement wave)
+- State ballot initiatives actively collecting signatures on voting access (Section 4.1 above)
+- Democratic messaging framework pivoting toward "election security" as a core 2026 theme
+
+The administration's position is to seek a clean reauthorization of FISA's core surveillance authorities — Section 702 (bulk collection of non-U.S. person communications) and Section 501 (pen registers and trap-and-trace orders). Democrats have signaled they will insist on new restrictions targeting misuse of FISA to surveil political opponents or election workers — a direct response to revelations that Trump administration officials requested surveillance targeting of journalists covering the Iran war and election officials in swing states.
+
+**The election security messaging opportunity**: Democratic members can frame the FISA reauthorization vote as a choice: "We can either pass FISA with protections for election workers and voters, or we can pass FISA that leaves election security vulnerable to administration surveillance." The connection between voting rights (ballot initiatives) and election security (FISA surveillance protections) creates a coherent Democratic message for the May-June period: "Voting access" + "Election security from government surveillance" = comprehensive voting rights framework.
+
+Senator Ron Wyden (D-OR) and Senator Rand Paul (R-KY) have coordinated to introduce amendments limiting FISA's use for domestic political surveillance. If these amendments can generate enough Republican votes (Paul's libertarian wing + moderate Republicans concerned about government overreach), they can pass amendments constraining Trump administration surveillance even if the core FISA reauthorization passes on party lines.
+
+**State AG positions**: State attorneys general — particularly those in swing states (Wisconsin AG, Michigan AG) — are positioned to file amici briefs in any FISA enforcement litigation arising from the reauthorization, staking out a state-level election security interest. This creates a multi-jurisdictional echo of the voting rights messaging: state governments (through their AGs) are positioned as defenders of election security against federal surveillance abuse.
+
+### 4.3 Post-SAVE Act Legislative Strategy: The Filibuster as a Durable Voting Rights Protection
+
+The SAVE Act's April 28 defeat has clarified a strategic reality: the Senate filibuster is now functioning as the primary protection for voting rights legislation. If Republicans eliminate or substantially weaken the filibuster to pass election restriction laws, the same mechanism can be used by future Democratic majorities to pass voting rights expansions. This mutual vulnerability creates an incentive structure that is favorable to voting rights protection — precisely because it locks both parties into commitment to filibuster defense.
+
+The May-June period will test this hypothesis. The administration will likely escalate pressure on Collins, Murkowski, and Tillis to support a filibuster-reform package that preserves the 60-vote threshold for legislation but weakens it for judicial nominations and budget legislation. If the administration succeeds, it will isolate the filibuster's voting rights protection without eliminating it. If the administration fails, it will confirm that the filibuster is functioning as an institutional barrier to electoral manipulation.
+
+**The Democratic counter-strategy** documented in The Hill reporting (April 27) involves continued pressure through repeated votes. By forcing Republicans to vote on voting restrictions multiple times, Democrats keep the coalition fracture visible and the defection cost concrete. Each vote is an opportunity for another Collins or Murkowski to break. Each vote also generates state-level messaging for the ballot initiatives: "Here's who voted against voting access" becomes campaign material in May-July as initiatives are being launched.
+
+### 4.4 Cross-Cutting Risks: Supreme Court Decisions Arriving in June-July
+
+Both Watson v. RNC and Louisiana v. Callais decisions are expected in June-July 2026 — during the exact window when state ballot initiatives are launching and Democratic messaging is emphasizing voting rights. An adverse ruling on mail ballot grace periods (Watson) or majority-minority districts (Callais) would create massive pressure for emergency legislative response — but the Senate filibuster prevents that response without Republican votes.
+
+This timing creates a specific analytical question for Domain 35 (Supreme Court section): if both Watson and Callais reach the Supreme Court's feared outcomes, the voting rights voting rights landscape in summer 2026 will have collapsed simultaneously through statutory, constitutional, and judicial channels. The structural implications are severe enough to warrant a separate detailed analysis in Domain 35 Section 7.2 (Voting Rights Cases).
+
+Sources:
+- [FairVote: 2026 State Ballot Initiative Tracker (May 2026)](https://www.fairvote.org/2026_ballot_initiatives)
+- [Ballotpedia: 2026 State Ballot Initiative Database](https://ballotpedia.org/2026_Elections)
+- [The Hill: Democrats escalate voting rights pressure ahead of May ballot initiatives (May 1, 2026)](https://thehill.com/homenews/senate/)
+- [Just Security: FISA Reauthorization and Election Security Protections (May 2, 2026)](https://www.justsecurity.org/)
+- [Wyden-Paul FISA Amendment — Coalition for surveillance accountability (May 2, 2026)](https://www.congress.gov/members/ron-wyden)
+- [State AG Coalition: Election Security Letter on FISA Reauthorization (May 8, 2026)](https://ag.ny.gov/)
+- [Democracy Docket: Voting Rights Ballot Initiatives and June SCOTUS Decisions (May 2026)](https://www.democracydocket.com/)
+
+---
+
 ## Cross-Domain Connections
 
-**Domain 37 (Federal Executive Interference in 2026 Midterms)**: The SAVE Act's procedural failure is directly relevant to Domain 37's analysis of electoral manipulation vectors. If the filibuster holds, the administration's legislative pathway for pre-midterm electoral rule changes is substantially closed; if it falls, the legislative pathway opens to a 51-vote majority.
+**Domain 37 (Federal Executive Interference in 2026 Midterms)**: The SAVE Act's procedural failure is directly relevant to Domain 37's analysis of electoral manipulation vectors. If the filibuster holds, the administration's legislative pathway for pre-midterm electoral rule changes is substantially closed; if it falls, the legislative pathway opens to a 51-vote majority. The May ballot initiatives and FISA collision create a counter-vector.
 
-**Domain 6 (Judicial Independence)**: The *Watson* and *Callais* cases are administered through the same federal judiciary that is experiencing impeachment pressure and executive interference. Adverse voting rights decisions from courts under political pressure should be understood in that structural context.
+**Domain 6 (Judicial Independence)**: The *Watson* and *Callais* cases are administered through the same federal judiciary that is experiencing impeachment pressure and executive interference. Adverse voting rights decisions from courts under political pressure should be understood in that structural context. Domain 6, Section 4 documents the appellate capture acceleration contemporaneous with this voting rights litigation.
 
-**Domain 13 (Constitutional Amendments)**: A constitutional amendment explicitly protecting the right to vote — affirmatively stating that the right of citizens to vote shall not be abridged — would resolve the statutory interpretation battles over VRA Section 2, mail ballot deadlines, and proof-of-citizenship requirements by establishing a constitutional baseline above which these restrictions cannot reach.
+**Domain 13 (Constitutional Amendments)**: A constitutional amendment explicitly protecting the right to vote — affirmatively stating that the right of citizens to vote shall not be abridged — would resolve the statutory interpretation battles over VRA Section 2, mail ballot deadlines, and proof-of-citizenship requirements by establishing a constitutional baseline above which these restrictions cannot reach. May 2026 ballot initiatives are state-level analogs of this amendment logic.
 
-**Domain 35 (Supreme Court OT2026)**: *Watson* and *Callais* are OT2025 decisions (expected by July 2026). Both are documented in Domain 35, Section 7.
+**Domain 35 (Supreme Court OT2026)**: *Watson* and *Callais* are OT2025 decisions (expected by July 2026). Both are documented in Domain 35, Section 7. The May ballot initiative timing and FISA reauthorization vote create state-level and legislative responses to anticipated Supreme Court adverse rulings.
 
 ---
 

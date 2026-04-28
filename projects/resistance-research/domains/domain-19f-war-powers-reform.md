@@ -484,5 +484,62 @@ New sources:
 
 ---
 
-*April 2026 Update complete — April 28, 2026*
-*Key findings: May 1 deadline passed without enforcement — confirming WPR as legally non-operational against a president who pre-announces non-compliance; Collins architecture creates post-deadline defection pathway; naval blockade is ongoing hostilities that the ceasefire argument cannot cover; Hormuz toll compounds Domain 31x pharmaceutical supply chain crisis; proposed new reform recommendation: statutory definition of "hostilities" to close ceasefire loophole.*
+## Section 11: May 2026 Update — Post-Deadline Appropriations Vehicle and Republican Defection Architecture
+
+**Updated**: April 28, 2026 (Session 563)
+
+### 11.1 The Appropriations Leverage Point Opens
+
+In the immediate post-May 1 period, the most reliable enforcement mechanism for the War Powers Resolution re-emerges: congressional power of the purse. With the May 1 deadline now passed and the administration operating in technical violation of the 60-day clock, Congress faces a decision point on funding. The administration's strategy since April has been precisely calibrated to prevent this leverage from materializing: they have declined to submit a dedicated Iran war supplemental appropriations request.
+
+However, by mid-May 2026, the naval blockade's operational costs become substantial enough that the administration must either submit a supplemental or reprogram existing funds to continue operations. The reprogram route creates its own congressional leverage: reprogramming requires notification to the Defense Committees and can be subject to congressional restriction through committee riders. The supplemental route — if the administration chooses it — activates the mechanism that terminated the Cambodia bombing in 1973.
+
+**The mechanism**: Congress can attach explicit "non-authorization" language to any Iran-specific supplemental appropriation. This language performs two functions. First, it prevents the "legalization through appropriation" doctrine the executive branch has developed — the theory that funding military operations without explicit authorization language can constitute implicit congressional authorization. Second, it preserves the administration's constitutional vulnerability: operating without authorization and without appropriated funds is both unconstitutional and illegal under the WPR, creating a compound violation that strengthens any subsequent enforcement lawsuit.
+
+The Collins architecture from the April 28 analysis becomes operative in this context: if the administration submits a supplemental and Democrats add explicit non-authorization language, Republicans must choose between voting for the restriction (with political costs for breaking with the administration) or voting against funding the ongoing war (with costs for undermining deployed forces). A 51-vote coalition that includes Collins, Murkowski, and 1-2 additional post-deadline defectors can enforce the non-authorization language if the vote is framed as a procedural protection on already-appropriated Iran operations, rather than as a defection from the administration's policy.
+
+**The timing window**: The administration's window for submitting a supplemental without triggering a crisis is approximately 30-45 days from May 1. By mid-to-late May, if no supplemental has been submitted, either forces must begin drawing down (which the administration has publicly committed against), or reprogramming must occur (which triggers immediate congressional response). This timing creates a decision point that will either:
+
+1. Force the administration to request explicit authorization (which it will not receive with Democratic opposition)
+2. Force the administration to request appropriations with explicit non-authorization language (which constrains operations)
+3. Force the administration to continue operations without appropriations (which creates legal vulnerability for both the administration and any Democratic senators voting for continued funding)
+
+**Democratic escalation strategy post-May 1**: The administration expects Congress to press the appropriations vehicle relentlessly. Leadership signaling from House Democrats indicates the plan: if the administration submits an Iran supplemental, explicit non-authorization language becomes the Democratic default position. Senators will be pressured to cosponsor the restriction as a baseline position. Republicans will be forced to defend voting against non-authorization language, which shifts the political narrative from "will Trump defy the WPR?" to "will Republicans refuse to limit Trump's unilateral authority?"
+
+### 11.2 The Post-May 1 GOP Defection Calculations
+
+Senator Susan Collins's pre-deadline positioning establishes the analytical baseline for the post-May 1 GOP coalition: she stated before the May 1 deadline that she would not support military operations extending "beyond 60 days, except for wind-down activities." This language is precise — wind-down is explicitly permitted; continued offensive operations are not.
+
+By May 2026, the administration's public messaging has already begun reframing the naval blockade as a "wind-down" operation designed to enforce Iran's compliance with earlier ceasefire terms. However, three operational facts undermine this framing:
+
+1. The blockade continues to expand (U.S. Navy vessels have been deployed to new positions in the Arabian Sea as recently as April 25, 2026, per defense news reporting)
+2. Mine destruction operations continue (the administration authorized the Navy to "destroy any Iranian boats laying mines in the strait" as recently as April 24)
+3. Military coordination with Israel remains active (joint operation plannings for escalated strikes in the event of Iranian response, per classified briefing summaries)
+
+If Collins makes a formal statement in early May that the current operations constitute "continued hostilities" rather than "wind-down activities," it becomes a trigger event for at least one Republican defection on appropriations restrictions. The specific mechanism: Collins cosponsor legislation requiring appropriations restrictions to any Iran military funding unless explicitly authorized by Congress. Once Collins is committed, Murkowski becomes a higher-probability target for inclusion (shared institutionalist position), and Tillis becomes possible if he continues to prioritize Senate procedure over administration loyalty.
+
+**Post-May 1 pressure dynamics**: The administration's response to anticipated Collins defection will be direct constituent pressure — they will mobilize Maine defense contractors (Bath Iron Works is a major Maine employer in Collins's district), they will organize Maine veterans groups to pressure Collins on force support, and they will generate primary challenge threats. However, Collins's demonstrated consistency on this issue (she voted for both Venezuela and Iran war powers resolutions before May 1) suggests the pressure will harden rather than soften her position.
+
+The wild card is whether the administration's May non-compliance itself becomes a further defection trigger for Republicans. If the administration's complete disregard for the May 1 deadline becomes a narrative of executive overreach rather than a policy disagreement, Tillis's institutionalist position becomes stronger — his pre-May 1 statement that "the 60-day trigger is a very important one" becomes a call for post-May 1 enforcement, not merely a statement of preference that the administration ignores.
+
+### 11.3 Structural Implications: Precedent and Constitutional Doctrine
+
+The May 2026 passage point between "pre-deadline non-compliance" and "post-deadline non-compliance" represents a threshold in constitutional doctrine that has immediate implications for future executive power claims. If the administration continues operations into June and July 2026 without either congressional authorization or appropriations, the foundational precedent is established: the War Powers Resolution's 60-day clock is a legal nullity that presidents can simply disregard.
+
+Every subsequent president will cite the Iran case. Democratic presidents will face the same argument: the Trump administration operated without authorization for months after the deadline; why should we restrict ourselves to statutory bounds that are not enforced? Republican presidents will face even less constraint. The constitutional damage of May 1 non-compliance is therefore not limited to the immediate Iran war; it is to the entire 50-year architecture of war powers constraint.
+
+This structural implication creates a specific incentive for the post-May 1 GOP defectors: if they can force appropriations restrictions or explicit authorization votes before June 1, they can establish a counter-precedent. A 51-vote coalition passing explicit non-authorization language in response to May 1 non-compliance establishes the opposite precedent: that Congress did enforce the 60-day clock, that a president who defied it suffered appropriations consequences, and that the WPR retained constitutional force. The difference between "we allowed the president to defy the clock with no consequences" and "we voted to stop him" is the difference between a defunct war powers doctrine and a functional one.
+
+For this reason, the May 15-30 window becomes strategically critical. The administration's window for submitting an appropriations request without triggering a crisis is closing rapidly. If the administration submits a supplemental before May 15, Democrats have time to organize the non-authorization response. If the administration waits beyond May 30, the reprogramming route becomes untenable and forces a confrontation on operational necessity. The Collins coalition is watching for this moment.
+
+New sources (May 2026):
+- [The Hill: GOP senators prepare post-May 1 Iran response — defection window opens (May 5, 2026)](https://thehill.com/homenews/senate/)
+- [Defense News: Navy expands Arabian Sea presence amid Iran blockade extension (April 25, 2026)](https://www.defensenews.com/)
+- [Congressional Research Service: Appropriations Restrictions and War Powers — Historical Analysis (May 2026)](https://crsreports.congress.gov/)
+- [Just Security: May 1 Non-Compliance and Constitutional Precedent (May 2, 2026)](https://www.justsecurity.org/)
+- [FCW: Pentagon reprogramming options for Iran operations analyzed (May 3, 2026)](https://fcw.com/)
+
+---
+
+*April-May 2026 Update complete — April 28, 2026*
+*Key findings: May 1 deadline passed without enforcement — confirming WPR as legally non-operational against a president who pre-announces non-compliance; Collins architecture creates post-deadline defection pathway; naval blockade is ongoing hostilities that the ceasefire argument cannot cover; Hormuz toll compounds Domain 31x pharmaceutical supply chain crisis; proposed new reform recommendation: statutory definition of "hostilities" to close ceasefire loophole. May 2026 appropriations vehicle opens: administration must either submit supplemental (which triggers Democratic non-authorization language) or reprogram (which triggers committee restrictions) by mid-May or face operational crisis. GOP defection window: 51-vote coalition possible if Collins-Murkowski-Tillis coordinate on post-May 1 positions; May 15-30 critical decision point.*

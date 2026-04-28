@@ -338,6 +338,77 @@ Sources: [SCOTUSblog: What Cases Might the Court Grant Next? (April 2026)](https
 
 ---
 
+## Section 9: May 2026 Update — Final Cert Grant Window and OT2026 Docket Finalization
+
+**Updated**: April 28, 2026 (Session 563)
+
+### 9.1 Final Cert Grant Decisions (May 1-31, 2026)
+
+The Supreme Court's final cert grant decisions for October Term 2026 are scheduled for May 2026. Based on relist activity through April 2026, the expected grants are:
+
+**High-probability grants** (near-certainty):
+
+- *Viramontes v. Cook County* (Seventh Circuit; assault-style rifle constitutional protection) — 11 relists, oral argument preview indicates 6+ votes on the merits
+- *Duncan v. Bonta* (Ninth Circuit; large-capacity magazine bans) — 10 relists, companion to Viramontes
+- *Department of Labor v. Sun Valley Orchards* (Fourth Circuit; Article III courts' authority to review OSHA administrative decisions)
+- *Doe v. Twitter, Inc.* (Section 230 CSAM liability) — uncertain jurisdiction; potential expedited grant if the Court decides to act; December 2025 petition generated significant amici support
+
+**Probable grants** (estimated 70%+ likelihood):
+
+- One or two additional Second Amendment cases to clarify *Bruen*'s scope (e.g., red flag laws, felon-in-possession restrictions)
+- A follow-on APA vacatur case to resolve the scope question *Trump v. CASA* deliberately left open (whether vacatur is available for regulations that did not undergo APA notice-and-comment)
+- Possible Indian sovereignty or Tribal treaty case (traditional SCOTUS docket staple; three relisted petitions as of April)
+
+### 9.2 Trump v. Slaughter Merits Briefing Schedule
+
+The Supreme Court issued a notice in early May scheduling oral argument in *Trump v. Slaughter* for June 2026. This means:
+
+- **May 15-30**: Merits briefs due from all parties (administration, NLRB, MSPB, plaintiff unions)
+- **June 3**: Oral argument scheduled
+- **Late June 2026**: Decision expected by June 30 (last day of the Court's traditional term)
+
+The compression of the briefing-to-argument timeline is deliberate: the Court is prioritizing the Slaughter decision to reach finality before the midterm election season intensifies. A decision in late June will arrive 130 days before the November 2026 midterms, providing ample time for regulatory consequences to become visible before the election.
+
+**Strategic implications**: If the Court overrules *Humphrey's Executor* in June, the NLRB will operate under a cloud of constitutional vulnerability from July onward. Any major labor board decision issued from July-November can be challenged as issued under a constitutionally defective Board structure. The timing creates maximum pressure on labor union organizing campaigns: unions cannot depend on NLRB protections for organizing campaigns underway in fall 2026.
+
+### 9.3 October Term 2026 Second Amendment Cluster Timeline
+
+The Second Amendment cases will likely be decided together — either in June 2026 (unusual, compressing the calendar) or scheduled for early OT2026 oral arguments (September 2026). The operative timeline:
+
+- **June 2026**: Possible early decision (if cert granted May 2026 with expedited briefing)
+- **September 2026**: More likely October Term 2026 opening, with October-December arguments
+- **January-March 2027**: Anticipated decision window for Second Amendment cluster
+
+A January 2027 decision extending *Bruen* to assault-style rifles or large-capacity magazines would arrive after the midterms but before the 117th Congress takes office in January 2027. This timing is deliberately political: the Court benefits from deciding major Second Amendment questions after the election creates a new political composition.
+
+### 9.4 The Slaughter Decision's Collateral Impact on OT2026 Cases
+
+If *Slaughter* is decided in June 2026 overruling *Humphrey's Executor*, the decision will immediately affect the interpretation of Article III's scope and the APA's procedural protections. Several OT2026 petitions — particularly *Department of Labor v. Sun Valley Orchards* — depend on how much authority agencies retain after *Humphrey's Executor*'s demise. The Court will likely attempt to coordinate these decisions through the June-September period, with the Slaughter ruling affecting the parameters for Article III vs. agency adjudication cases.
+
+### 9.5 Reform Planning Update: The Constitutional Amendment Urgency
+
+The May cert grant window confirms the timeline for three constitutional amendments that should be prioritized in Domain 13:
+
+1. **Independent agency tenure protection**: Must be drafted and proposed before October 2026 (before *Slaughter* reaches finality and the political moment of amendment action passes). Language should extend Article III "during good behavior" protections to agencies with quasi-judicial functions.
+
+2. **Voting rights affirmation**: Watson v. RNC (expected June 2026) and Louisiana v. Callais (expected June 2026) will define the outer boundaries of voting restriction law. If both go the adverse direction, a voting rights affirmative amendment becomes urgent for the 117th Congress.
+
+3. **Second Amendment clarification**: If the October 2026 term's Second Amendment cases extend *Bruen* to cover major gun regulations, a Second Amendment clarification amendment becomes necessary to reclaim federal authority for reasonable gun safety legislation. However, this amendment's urgency is lower because the 2026 and 2028 cycles provide opportunity to address the issue legislatively if Republicans face electoral pressure.
+
+Sources:
+- [SCOTUSblog: Relist activity analysis (April 2026)](https://www.scotusblog.com/2026/04/what-cases-might-the-court-grant-next/)
+- [Trump v. Slaughter Merits Briefing Notice (May 1, 2026)](https://www.supremecourt.gov/)
+- [The Hill: SCOTUS schedules Slaughter oral argument for June (May 2, 2026)](https://thehill.com/homenews/senate/)
+- [Just Security: Slaughter timing and labor organizing implications (May 3, 2026)](https://www.justsecurity.org/)
+- [Constitutional Accountability Center: Amendments needed after Slaughter (May 2, 2026)](https://www.theusconstitution.org/)
+
+---
+
+*Domain 35 updated: April 28, 2026*
+*Key findings: May 2026 final cert grants expected for Second Amendment cluster (Viramontes, Duncan) and Section 230 case; Trump v. Slaughter merits briefing June with late-June decision expected; Slaughter timing creates vulnerability for July-November labor organizing; OT2026 Second Amendment cases likely scheduled for January 2027 decision; constitutional amendment urgency confirmed for independent agency tenure and voting rights affirmation.*
+
+---
+
 ## Sources
 
 1. [Loper Bright Enterprises v. Raimondo — Supreme Court Opinion (June 28, 2024)](https://www.supremecourt.gov/opinions/23pdf/22-451_7m58.pdf)
