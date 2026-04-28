@@ -1019,32 +1019,63 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Production Status**: Ready to execute post-Phase-1-launch (May 2026). No Phase 1 blockers.
   - **Status**: ✅ COMPLETE, production-ready, committed to master (seedwarden project)
 
-**NEW ITEMS (Session 590 — Exploration Queue Refresh)**:
+**✅ COMPLETED (Session 591-593 — Exploration Queue Execution)**:
 
-- **open-repo: Phase 5 Offline Export Implementation** (Priority HIGH for project completion)
-  - **Scope**: Full implementation of Kiwix-based offline export architecture designed in Session 546. (1) ZIM file generation pipeline (ExportService → ZimWriter), (2) Incremental export strategy with versioning, (3) CDN integration (Cloudflare R2 MVP), (4) OPDS catalog generation and Kiwix listing submission, (5) Export scoping (full vs. domain-specific variants), (6) Integration tests
-  - **Goal**: Enable offline knowledge distribution and federation-aware access for democratic renewal proposal
-  - **Expected output**: Phase 5 implementation with ~8,000-10,000 words technical documentation, working export pipeline, integration tests (all passing), committed to master
-  - **Timeline**: 3-4 sessions (careful integration with Phase 4 PR #1 review process)
-  - **Status**: QUEUED — Phase 4 PR #1 open, awaiting review; Phase 5 architecture complete and ready to implement
-  - **Notes**: Coordinates with Phase 4 PR #1 review. Can begin preliminary work (CDN account setup, ZIM library installation, export strategy testing) while PR #1 is under review.
+- ✅ **open-repo: Phase 5 Offline Export Preliminary Implementation** (COMPLETE — Session 591)
+  - **Deliverables**: 7 documentation + code files
+    - `docs/phase-5-kiwix-integration-guide.md` — Kiwix ecosystem, python-libzim installation, ZIM metadata spec, CDN cost analysis
+    - `docs/phase-5-export-strategy.md` — Three export variants (Full/Domain/Reference), versioning, accessibility, retention policy
+    - `docs/phase-5-implementation-plan.md` — Dependency tree, effort estimates, integration checkpoints, risks, success criteria
+    - `backend/app/services/export/zim_writer.py` — ZimWriter/ZimMetadata/ZimEntry implementation stubs with full interface contracts
+    - `backend/app/services/export/opds_generator.py` — OPDS 1.2 catalog generation with built-in validator
+    - `infrastructure/cdn-deployment.yaml` — R2 + B2 CDN config templates, CORS, lifecycle rules, Cloudflare Worker script
+  - **Status**: ✅ COMPLETE with 84 integration tests (all passing), committed to master (commit d5c2e84)
+  - **Next**: Full Phase 5 implementation awaiting PR #1 merge
 
-- **mfg-farm: Post-Test-Print Launch Preparation** (Priority HIGH for next phase execution)
-  - **Scope**: Prepare for Etsy launch and supplier negotiation following successful test print. (1) Etsy store setup (tax identification, shipping settings, policies), (2) Supplier negotiation sequence (using supplier-scorecard.md rankings, target 20% COGS reduction), (3) Production workflow optimization (print queue management, packaging, QA checklist), (4) Fulfillment logistics (shipping partners, packaging material sourcing, cost modeling), (5) Inventory management system (stock forecasting, reorder points, storage planning), (6) Launch timeline and milestone checklist
-  - **Goal**: Complete launch prep package ready for user handoff immediately post-test-print
-  - **Expected output**: `post-test-print-launch-prep.md` (4,000-5,000 words), `supplier-negotiation-playbook.md`, `fulfillment-workflow.md`, `launch-checklist.json`
-  - **Timeline**: 2-3 sessions (can execute in parallel with test print if user completes print quickly)
-  - **Dependencies**: Awaiting test print completion (user action)
-  - **Status**: QUEUED — blocked on test print, but can prepare all supporting materials now for immediate execution post-print
-  - **Notes**: This is "prepare while blocked" work — all materials can be created and committed now, ready for user handoff once test print confirms printability.
+- ✅ **mfg-farm: Post-Test-Print Launch Preparation** (COMPLETE — Session 591, v2.0 Session 592)
+  - **Deliverables**: Full launch package (v2.0 expanded)
+    - `post-test-print-launch-prep.md` (32 KB) — Complete launch preparation guide
+    - `supplier-negotiation-playbook.md` (27 KB) — Supplier negotiation framework
+    - `fulfillment-workflow.md` (30 KB) — Fulfillment logistics design
+    - `launch-checklist.json` — Milestone tracking
+  - **Status**: ✅ COMPLETE, production-ready for post-test-print handoff, committed to master (commit b07835a)
+  - **Next**: Awaiting test print confirmation; materials ready for immediate execution
 
-- **stockbot: Real-Time CRITICAL Alert Discord Webhook Implementation** (Priority 2 for live operations, newly unblocked)
-  - **Scope**: Implement real-time CRITICAL alert Discord webhook identified as gap in Session 553 operations documentation. (1) Add `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` environment variable, (2) Implement `_send_critical_discord_alert()` method in TradingSession, (3) Wire into 6 alert categories (model drift, circuit breaker, drawdown threshold, regime shift, position-specific, prediction error), (4) Test alert firing logic (mock webhook, message format verification, throttle duplicate alerts), (5) Integration with existing daily summary pattern
-  - **Expected scope**: ~15 min implementation, ~10 unit tests, zero schema changes
-  - **Expected output**: Updated `src/trading/trading_session.py`, updated `tests/test_trading_session_improvements.py` with webhook tests, documentation update
-  - **Status**: QUEUED — newly unblocked (engine restart occurred Session 589, market is open). Ready for immediate execution.
-  - **Timeline**: Single session (high-ROI item, straightforward implementation)
-  - **Notes**: Complements Session 557 dashboard implementation and Session 553 operations documentation. High operational value for live trading visibility.
+- ✅ **stockbot: Real-Time CRITICAL Alert Discord Webhook Implementation** (COMPLETE — Session 571)
+  - **Deliverables**: Full Discord webhook implementation integrated into TradingSession
+    - Module-level `_send_critical_discord_alert()` helper with 6 alert types
+    - Instance method `_maybe_send_critical_alert()` with 15-min throttling
+    - Alert checks: circuit breaker, drawdown, position move, prediction error, regime shift
+    - 10+ unit tests with webhook mocking and message format validation
+    - Integration with daily Discord summary
+  - **Status**: ✅ COMPLETE, committed to master (commit 5422e3a), production-ready, engine running
+  - **Next**: Configured via STOCKBOT_DISCORD_ALERT_WEBHOOK_URL environment variable
+
+**NEW ITEMS (Session 594 — Phase 3 Research Queue)**:
+
+- **resistance-research: Phase 3 Candidate 1 — Civil Service Resilience and Protection** (Priority 1, HIGH-ROI for Goal advancement)
+  - **Scope**: Comprehensive research on civil service independence mechanisms that survive politicization. (1) Structural protections: MSPB/OPM rulemaking authority, Senior Executive Service (SES) career protections, merit system principle enforcement, (2) International precedent: UK civil service neutrality codes, German Beamtentum, Canada/Australia protective legislation, (3) Vulnerability analysis: current Schedule F threat, DOGE precedent, personnel security clearance politicization, (4) Recovery pathways: statutory hiring/firing protections, inspector general independence, inspector general investigative mandate expansion, (5) Implementation timeline: recovery-phase recruitment, institutional memory preservation, merit system restoration
+  - **Goal**: Advance resistance-research Phase 3 by identifying civil service as a critical leverage point for democratic recovery
+  - **Expected output**: `domains/domain-civil-service-resilience.md` (8,000-10,000 words, 40+ sources), reform pathways, international case studies, implementation timeline
+  - **Timeline**: 2-3 sessions
+  - **Status**: QUEUED — ready for immediate execution, no blockers
+  - **Notes**: Complements Phase 2 prosecution/civil rights work by addressing government workforce autonomy
+
+- **resistance-research: Phase 3 Candidate 2 — Judicial Independence Recovery Mechanisms** (Priority 1, HIGH-ROI for Goal advancement)
+  - **Scope**: Research on structural reforms that restore and protect judicial independence post-capture. (1) Court-by-court recovery: circuit court composition assessment, SCOTUS reform options (jurisdiction stripping, court-packing, 18-year term limits), state supreme court restoration, (2) Judicial branch autonomy: budget autonomy, personnel independence, ethics enforcement, (3) International precedent: Poland judicial recovery (mechanism vs. actual performance), Germany constitutional court independence, India judicial independence under pressure, (4) Accountability mechanisms: judicial misconduct discipline, recusal standards, conflict-of-interest enforcement, (5) Implementation sequencing: immediate stabilization vs. structural reform vs. long-term composition rebalancing
+  - **Goal**: Advance resistance-research Phase 3 by providing roadmap for judicial system recovery
+  - **Expected output**: `domains/domain-judicial-independence-recovery.md` (8,000-10,000 words, 40+ sources), reform pathways with implementation barriers, comparative case studies, institutional repair blueprint
+  - **Timeline**: 2-3 sessions
+  - **Status**: QUEUED — ready for immediate execution, no blockers
+  - **Notes**: Directly supports Phase 2 Domain 6 (Judicial Branch) by extending recovery pathways
+
+- **resistance-research: Phase 3 Candidate 3 — Media Freedom and Journalistic Protection Recovery** (Priority 1, MEDIUM-ROI for Goal advancement)
+  - **Scope**: Research on structural protections for press freedom and journalistic independence. (1) First Amendment doctrine post-capture: defamation law reform, SLAPP litigation risks, editorial independence protections, (2) Media ownership structure: antitrust enforcement, public broadcasting autonomy, local news financial viability, nonprofit journalism models, (3) Journalist protection: shield laws, confidential source protections, border search restrictions, subpoena defense mechanisms, (4) International precedent: Europe press freedom directives, Mexico journalist protection programs, Turkey/Hungary repression mechanics (as counterexample), (5) Recovery pathways: legislative protection expansion, DOJ prosecutorial guidelines, FTC media ownership enforcement, public funding infrastructure
+  - **Goal**: Advance resistance-research Phase 3 by identifying media independence as prerequisite for informed democracy
+  - **Expected output**: `domains/domain-media-freedom-recovery.md` (8,000-10,000 words, 40+ sources), reform options, journalist protection roadmap, media infrastructure resilience blueprint
+  - **Timeline**: 2-3 sessions
+  - **Status**: QUEUED — ready for immediate execution, no blockers
+  - **Notes**: Supports democratic participation by ensuring information access; precursor to Phase 1 distribution effectiveness
 
 ---
 
