@@ -386,6 +386,65 @@ Sources: [Just Security — War powers reform analysis](https://www.justsecurity
 
 ---
 
+## Section 9: April-May 2026 — Iran as the Larger Empirical Instance of War Powers Constraint Failure
+
+**Added**: April 28, 2026 (Session 578 — April-May 2026 Domain Content Maintenance)
+
+The Venezuela operation (January 3, 2026) established the constitutional template. The Iran operation (February 28, 2026) proved the template was not anomalous — it was doctrine. Iran is the larger empirical instance of the same constraint failure, and its scale and duration make it analytically decisive: whatever ambiguity attached to Venezuela (small operation, disputed "arrest" framing, ceasefire within weeks) cannot survive the Iran case, where the U.S. and Israel conducted a sustained multi-theater military campaign for 60+ days without congressional authorization, the executive pre-announced non-compliance with the 60-day deadline, and five Senate votes all failed to enforce the War Powers Resolution.
+
+### 9.1 The Two-Operation Synthesis: Shared Constitutional Theory
+
+Venezuela and Iran share a single underlying constitutional claim: the president has plenary authority over all decisions relating to war and the use of force, authority that statutory constraints cannot meaningfully limit regardless of their textual clarity. The mechanisms differ — Venezuela used the "law enforcement / arrest operation" framing to argue the WPR did not apply at all; Iran used the "inherent Article II authority" argument to assert the WPR is unconstitutional — but the constitutional end point is identical: the executive branch will not comply with the Resolution's 60-day termination requirement under any framing.
+
+The strategic significance of the two-operation sequence: Venezuela was sufficiently short and ambiguously framed that it might have been dismissed as an edge case. Iran — a declared, sustained military campaign involving hundreds of aircraft, naval forces, missile exchanges, and an ongoing naval blockade — cannot be framed as anything other than a war. The Iran case therefore transforms Venezuela from an outlier into evidence of a pattern. The pattern is: the administration will characterize military operations to avoid WPR requirements, and when the characterization fails, it will assert the WPR is unconstitutional.
+
+### 9.2 The Fiscal Accountability Structure: Both Operations Share the Same Avoidance Architecture
+
+The $200 billion supplemental appropriations request (originally submitted at $200B, later scaled to an estimated $80-100B range after bipartisan revolt) applies to the Iran operation but reveals a fiscal accountability structure identical to Venezuela's. In both cases:
+
+**Reprogramming authority was used before supplemental appropriations were sought.** In Venezuela, initial operation costs were funded through existing DOD authorities without a specific supplemental request. In Iran, the administration similarly drew on existing operational accounts for the first 60 days — the supplemental was submitted only after congressional pressure made the "existing authority" framing politically untenable. This sequencing is structurally significant: by the time a supplemental is requested, forces are already committed, costs are already sunk, and the political calculus shifts from "should we authorize this?" to "should we defund troops in the field?" The supplemental's timing transforms the fiscal question from prospective authorization to retroactive legitimization.
+
+**The "legalization through appropriation" risk applies to both operations.** Just Security's analysis, originally written for the Iran context, applies with equal force to any Venezuela supplemental: appropriating funds without explicit "non-authorization" language constitutes implied congressional authorization under executive branch doctrine. Congress must include explicit statutory language denying authorization whenever it funds operations the executive has characterized as not requiring WPR compliance — or face the executive claiming retroactive congressional consent. Democrats have committed to this language; Republicans who fund either operation without it are implicitly authorizing it under administration legal theory.
+
+**A reprogramming loophole reform is needed for both operations.** The specific reform required: Congress should amend the existing reprogramming authorities (10 U.S.C. §§ 2805-2808) to require affirmative notification to the Armed Services and Appropriations Committees before reprogramming funds to any new military operation, with a 30-day waiting period unless the president certifies immediate necessity and the Armed Services Committee chairs concur. This reform is Venezuela-specific in its immediate application but structural in its scope — it would apply to any future operation funded through reprogramming before supplemental authorization is sought.
+
+Sources: [Just Security: Iran, War Powers, and the Power of the Purse](https://www.justsecurity.org/133361/iran-war-powers-purse-leverage-legalization/); [The Hill: $200B Pentagon supplemental revolt](https://thehill.com/homenews/house/5846206-democrats-iran-war-powers-votes/); [Defense One: Inside Operation Absolute Resolve](https://www.defenseone.com/threats/2026/01/inside-absolute-resolve-regime-change-assault-venezuela/410440/); [Congress.gov: DOD Reprogramming Authorities](https://www.congress.gov/crs-product/R44059)
+
+### 9.3 The Senate Blocking Pattern: Comparative Vote Analysis
+
+The Senate vote records for Venezuela and Iran exhibit the same structural pattern — an administration-loyal Republican bloc, a small defection pool, and a threshold that falls just short of 51 votes:
+
+| Operation | Vote | Result | Key Defectors |
+|-----------|------|--------|---------------|
+| Venezuela | Advance (Jan 8) | 52-47 — advanced | Collins, Murkowski, Paul crossed yes |
+| Venezuela | Final (Jan 15) | 51-50 — defeated | Vance tiebreaker; Hawley, Young flipped after "(circumstances permitting)" assurance |
+| Iran | Vote 1 (March) | Failed — procedural | Administration lobbying held Republicans |
+| Iran | Vote 2 (March) | Failed — circa 42 yes | Coalition building |
+| Iran | Vote 3 (April) | Failed — circa 44 yes | Coalition expanding |
+| Iran | Vote 4 (April 15) | 52-47 — defeated | Collins, Murkowski did not cross |
+| Iran | Vote 5 (April 23) | 46-51 — defeated | Only Paul crossed; Fetterman lone Democrat no |
+
+The comparative pattern reveals three findings:
+
+**Finding 1**: The same senators (Collins, Murkowski, Paul) represent the durable defection pool. Paul is a consistent libertarian anti-interventionist. Collins and Murkowski have broken selectively — crossing on Venezuela's advance vote but declining on Iran through five attempts. Their stated position: they will require authorization after the 60-day mark expires, not before.
+
+**Finding 2**: The Hawley-Young flip on Venezuela (from yes to no after Rubio's "(circumstances permitting)" assurance) demonstrates the administration's ability to hold wavering Republicans through private diplomatic assurances. The same dynamic is documented in Iran: senators who expressed war powers concerns privately received White House commitments about consultation and wind-down planning, and did not vote yes.
+
+**Finding 3**: The threshold math is available — mathematically, 3-5 Republican defectors after May 1, 2026, could produce a majority. The political will to cross has consistently been blocked by administration pressure and by the timing ambiguity (senators arguing they "support the president's authority within the 60-day window" while reserving post-deadline judgment).
+
+### 9.4 Cross-Domain Connections and Reform Integration
+
+**Domain 19f (War Powers Reform)**: The structural reforms proposed in Domain 19f apply to both Venezuela and Iran. Specifically: (1) the automatic appropriations cutoff mechanism (requiring a positive vote to authorize continued funding, rather than a positive vote to stop it) would have changed the fiscal dynamic for both operations; (2) the statutory standing to sue reform would have enabled judicial review of both operations that the political question doctrine currently bars; (3) the prospective AUMF requirement (specific geographic and enemy identification, sunset clause, reporting requirements) would have applied to Iran's claimed inherent Article II justification.
+
+**Domain 6 (Judicial Independence)**: The political question doctrine — courts' systematic refusal to adjudicate war powers disputes — is the enabling condition for both Venezuela and Iran. Without judicial enforceability, both operations demonstrate that executive defiance of the WPR faces no legal consequence. The Youngstown framework categorizes the Iran position as Category 3 (lowest ebb of presidential authority) but the enforcement mechanism is absent in practice.
+
+**Domain 34 (Congressional Power of the Purse)**: The fiscal accountability failure in both operations is a power-of-the-purse failure, not simply a war powers failure. Congress allowed both operations to proceed without using its ultimate constitutional weapon. The Venezuela case provides the model for why: appropriations cutoffs require political will to be seen as "cutting off troops in the field" — a framing the administration deploys successfully to prevent fiscal enforcement even when legal enforcement has failed.
+
+Sources: [Al Jazeera: Senate advance vote (Venezuela, Jan 8)](https://www.aljazeera.com/news/2026/1/8/us-senate-passes-measure-to-restrict-trumps-military-actions-in-venezuela); [NBC News: Senate blocks after Trump flips two Republicans (Venezuela, Jan 15)](https://www.nbcnews.com/politics/congress/senate-blocks-measure-restrict-venezuela-strikes-trump-flips-two-repub-rcna253836); [Democracy Now!: Senate defeats Iran war powers resolution fifth time (April 23)](https://www.democracynow.org/2026/4/23/headlines/senate_republicans_defeat_iran_war_powers_resolution_for_fifth_time); [Foreign Policy: 60-Day Iran War Powers Deadline](https://foreignpolicy.com/2026/04/23/trump-iran-war-congress-war-powers-60-days/)
+
+---
+
 *Domain 28 created: 2026-04-27 | Session 506 | High priority — live constitutional confrontation*
-*Word count: approximately 5,600 words*
+*Section 9 added: April 28, 2026 | Session 578 | Iran as empirical synthesis; fiscal accountability cross-reference; comparative vote table; domain cross-references*
+*Word count: approximately 7,200 words*
 *Cross-reference: Domain 19f (War Powers Reform — Iran/structural), first-amendment-suppression.md Section 1.8 (Seth Harp)*
