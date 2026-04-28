@@ -26,7 +26,19 @@
    - **Status**: Production-ready for Phase 3 execution once Phase 1 generates conversion data (estimated Month 3-6 post-launch)
    - **Commits**: seedwarden project master (included in agent output)
 
-3. ✅ **resistance-research: April-May 2026 Domain Content Maintenance** (Agent aaeb2d5f9700d69c5, 08:10–09:00 UTC)
+3. ✅ **stockbot: Real-time CRITICAL Alert Discord Webhook — Enhancements** (Agent a386dc06a1afa52cf, 09:00–09:15 UTC)
+   - **Scope**: Feature already implemented (Session 558) — added Session 571 enhancements per live-trading-operations.md spec
+   - **Enhancements delivered**:
+     - Alert level + color coding (CRITICAL=red, HIGH=orange, MEDIUM=yellow) in embed title + "Alert Level" field
+     - Throttle window raised from 5 min → 15 min (prevents alert spam)
+     - Drawdown threshold lowered from 20% → 8% (intra-session limit per spec)
+     - "Timestamp" field formatting (YYYY-MM-DD HH:MM:SS UTC)
+   - **Test coverage**: 13 new tests (7 for color coding, 2 for timestamp, 4 for 15-min throttling)
+   - **Results**: 77 tests passing, zero regressions
+   - **Status**: Production-ready for post-engine-restart deployment
+   - **Commit**: Committed to stockbot submodule master
+
+4. ✅ **resistance-research: April-May 2026 Domain Content Maintenance** (Agent aaeb2d5f9700d69c5, 08:10–09:00 UTC)
    - **Scope**: Update 35-domain framework with April-May 2026 civic calendar developments (Iran WPR deadline May 1, SPLC indictment, Trump v. Wilcox, SAVE Act, FISA vote, ballot initiative suppression)
    - **Deliverables**: 5 domain files updated with ~4,000 words of substantive analysis
      - **Domain 19f (War Powers Reform)**: GOP AUMF authorization track (Murkowski) + Hormuz dual-blockade legal analysis

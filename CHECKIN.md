@@ -16,6 +16,12 @@
   - `phase-3-product-specifications.json` (12 products + 14 regional variants + 3 bundle specs)
   - Key strategic decisions: regional listings are Phase 3 MVP (highest ROI/hour), price increase tests scheduled August 15, medicinal herb guide is conditional on forager cohort validation
   - Ready for Phase 3 execution once Phase 1 generates conversion data (estimated Month 3-6)
+- ✅ Stockbot: Real-time CRITICAL Alert Discord Webhook Enhancements COMPLETE (Agent a386dc06a1afa52cf)
+  - Alert level color coding (CRITICAL/HIGH/MEDIUM)
+  - 15-min throttle window (was 5 min)
+  - 8% drawdown threshold (was 20%)
+  - 13 new tests, all passing
+  - Production-ready for post-engine-restart deployment
 - ✅ Resistance-research: April-May 2026 Domain Content Maintenance COMPLETE (Agent aaeb2d5f9700d69c5)
   - 5 domains updated: Domain 19f, 29, 6, 1, 35
   - ~4,000 words of substantive analysis integrating April-May 2026 developments
