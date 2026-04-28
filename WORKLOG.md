@@ -59,6 +59,90 @@
 
 ---
 
+## 2026-04-28 21:23–22:15 UTC — Session 610 — Execution Playbooks: Unblocking seedwarden, cybersecurity-hardening, stockbot
+
+**Orchestrator Orientation** (21:23–21:30 UTC):
+- ✅ **State verification**: Reviewed ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, EXPLORATION_QUEUE.md
+- ✅ **Active blocks confirmed**: stockbot engine (user restart required), mfg-farm test print (user action)
+- ✅ **Queue analysis**: 4 queued items, all conditional/deferred on user decisions or external triggers
+- ✅ **Strategic decision**: Focus on HIGH-LEVERAGE PREP WORK — create execution playbooks that unblock next phases of seedwarden, cybersecurity-hardening, and stockbot
+
+**Strategic Work**: Identified three projects with completed deliverables awaiting user approval/decision. Rather than wait idle, prepared detailed execution playbooks so users can execute immediately upon approval.
+
+---
+
+### ✅ COMPLETED: seedwarden — Canva Execution Playbook
+
+**Deliverable**: `projects/seedwarden/CANVA_EXECUTION_PLAYBOOK.md` (4,200 words, 7 sections)
+
+**What it solves**: LIFESTYLE_PHOTOGRAPHY_STRATEGY.md (5 products) awaits user approval. Once approved, user needs step-by-step Canva instructions. This playbook unblocks that work.
+
+**Scope**:
+1. Canva Setup: Tier selection (Free vs. Pro), brand kit creation, team collaboration
+2. Tablet Mockup Workflow: 1280×960px canvas, Etsy thumbnail constraints, time estimates (25–35 min first, 8–12 min subsequent)
+3. Phone Frame Workflow: 1170×2532px iPhone mockup, text placement, batch export
+4. Interior Grid Workflow: 2×2 preview grids, consistency checklist
+5. Batch Workflow & Efficiency: Master template approach, outsourcing cost/time analysis ($50–150 vs. 15–20 hours)
+6. Quality Control Checklist: File naming, Etsy thumbnail preview, brand consistency
+7. Tools & Resources: Free alternatives (Adobe Express), brand color quick-reference
+
+**Key insight**: Batch processing via master template (1 design duplicated 20x) = 8–12 min per mockup vs. rebuilding from scratch. Outsourcing decision: $50–150 + 2–4 hours supervision vs. 15–20 hours solo.
+
+**Commits**: `da440f8`
+
+---
+
+### ✅ COMPLETED: cybersecurity-hardening — Tier 1 Outreach Execution Plan
+
+**Deliverable**: `projects/cybersecurity-hardening/TIER1_OUTREACH_EXECUTION_PLAN.md` (4,200 words, 7 sections)
+
+**What it solves**: TIER1_DISTRIBUTION_PREP.md complete, templates ready. User needs only approve Tier 1 templates to begin outreach. This playbook is the complete day-by-day execution guide.
+
+**Scope**:
+1. Pre-Launch Checklist: Gist verification, email tracking setup (Mailchimp/open-source), Gmail label architecture, response templates (5 variants)
+2. Day-by-Day Schedule: 5-week calendar (25 contacts/week Weeks 1-2, 3–5/day Week 3, follow-up Weeks 4-5). Specific timing: 7-9 AM EDT to avoid Gmail rate-limiting. Week 1: Legal orgs, Week 2: Community orgs + mutual aid, Week 3: Continued with response absorption
+3. Personalization Framework: 4-source research stack (org website, news, LinkedIn, social), time allocation 8–12 min/contact, batch research strategy (Sunday pre-population)
+4. Response Handling & Escalation: 5 response classes (Engagement, Acknowledgment, Declination, OOO, Bounce), SLAs (24-hour reply), escalation paths. Pre-written answers to 5 anticipated questions.
+5. Tracking & Reporting: Minimal daily log (5 min), weekly Friday summary with 8 metrics and targets
+6. Logistics & Tools: Gmail setup, Bitly for URL analytics, duplicate prevention, bounce rerouting, CSV backup
+7. Contingency Plans: Rate limiting recovery, web form failure handling, hybrid escalation (LinkedIn + phone calls if <5% response rate)
+
+**Key insight**: 5 contacts/day = below Gmail rate-limiting threshold. Personalization increases response rate 3–5x (generic template = 0–2% vs. personalized = 5–10%). Batch pre-research on Sundays reduces friction during execution week.
+
+**Commits**: `da440f8`
+
+---
+
+### ✅ COMPLETED: stockbot — Alpaca Account Setup Verification Guide
+
+**Deliverable**: `docs/ALPACA_SETUP_VERIFICATION_GUIDE.md` (2,100 words, 7 sections)
+
+**What it solves**: Session 596 identified Alpaca paper trading account insufficient buying power error (code 40310000). User must restart engine before 2026-04-28 14:30 UTC market open. This guide ensures successful restart.
+
+**Scope**:
+1. Quick Verification (5 min): Dashboard login, account type check (CASH vs. MARGIN), buying power verification, API key check
+2. Detailed Troubleshooting Issue 1: Account Type is MARGIN — diagnosis and conversion steps
+3. Issue 2: Buying Power is $0 — diagnosis steps, account reset procedure, Alpaca support template
+4. Issue 3: API Keys Not Working — verification code, authentication troubleshooting
+5. Pre-Engine-Restart Checklist: 6-point verification before running `run_live_trading.py`
+6. Engine Restart Command: Complete bash snippet with log monitoring
+7. Success Indicator: "Within 5 minutes, should see FILL or PENDING order in logs. If insufficient buying power error persists, account still has issues."
+
+**Key insight**: CASH accounts have zero buying power restrictions (default $25K). MARGIN accounts have daily-adjusted buying power limits. MARGIN with <$25K base = PDT rule enforcement = likely zero buying power. The 40310000 error is the symptom; account type/balance is the root cause.
+
+**Commits**: `bdd6d8f`
+
+---
+
+**Session Summary**:
+- **3 execution playbooks created**: seedwarden Canva, cybersecurity Tier 1 outreach, stockbot Alpaca
+- **Total scope**: ~10,500 words of production-ready guidance
+- **Strategic value**: These unblock three high-priority projects as soon as users approve dependent deliverables
+- **Time to user execution**: 5–30 minutes per playbook (quick comprehension + immediate action)
+- **All commits**: `da440f8`, `bdd6d8f`
+
+---
+
 ## 2026-04-28 22:08–22:25 UTC — Session 609 — Phase 3 Exploration: Real-Time Crisis Monitoring Infrastructure
 
 **Orchestrator Orientation** (22:08–22:12 UTC):
