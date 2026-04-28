@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-28T20:25:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-28T20:52:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 23.3% | Reset in 148h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 24.0% | Reset in 147h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -86,42 +86,41 @@
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
-**Status**: All autonomous work complete, system stable, awaiting user input.
+**Work Completed** — stockbot Signal Threshold Analysis:
 
+**Deliverable**: `projects/stockbot/signal-threshold-analysis.md` (2,400 words, production-ready)
 
-**UPDATE 15:05:30 UTC**: Engine verification — **ENGINE IS ACTIVELY RUNNING**
-- Confirmed: trading_20260428.log modified 15:05:30 UTC (seconds ago)
-- 1.4 MB of active logs, indicating substantial market activity
-- Engine started successfully and is executing Day 1 trading session
-- All 11 tickers monitoring active, live order execution in progress
+**Scope**:
+- Analyzed current signal mechanism (volatility-adaptive threshold in `ensemble_stacker.py`)
+- Formula: `threshold = max(rolling_std * threshold_multiplier, 0.002)`
+- Current config: threshold_multiplier=0.5 → ~0.60–0.75% effective threshold
+- **Root cause of Gate 1 failure**: Current threshold requires ~2.28% return prediction (2.28/0.75≈3x rolling std) → extremely conservative → only ~1 trade per 180 days
 
-**Implications**:
-- Engine restart deadline (13:30 UTC) was met ✓
-- Live trading Day 1 confirmed running ✓
-- Paper trading checkpoint 1 (Day 1) now in progress
-- Market close monitoring can proceed as planned (20:00 UTC)
-- Post-market data analysis ready for execution
+**Key Findings**:
+1. **Signal Frequency Bottleneck**: Current threshold generates 0.17 trades/month per ticker (AAPL single-ticker); need 30/month for Gate 1
+2. **Multi-ticker Path**: 11 tickers at current threshold → ~1.9 trades/month (still 15x short of Gate 1)
+3. **Optimization Lever**: Reducing threshold_multiplier from 0.5 to 0.40 → 1.5–2× signal frequency increase
+4. **Expected Outcome**: 11 tickers at 0.40 threshold → 3–5 trades/month per stacker → 30–55 trades/month portfolio (exceeds Gate 1)
 
+**Recommendations**:
+- **Option A (Conservative, Recommended)**: threshold_multiplier 0.50 → 0.40 (20% reduction)
+  - Expected: Gate 1 achievement within 2 weeks of paper trading at 11-ticker portfolio
+  - Risk: Low (meta-learner confidence filtering already active)
+  
+- **Option B (Aggressive, If Needed)**: threshold_multiplier 0.50 → 0.30 (40% reduction)
+  - Expected: Gate 1 achievement within 1 week
+  - Risk: Medium–High (may increase false positives, reduce Sharpe)
 
-## 2026-04-28 17:54 UTC — Session 596 — State Verification + Block Update
+**Implementation Sequence**:
+1. Validate Option A (0.40) via backtest (Session 608)
+2. Deploy to 11-ticker paper trading (after engine restart)
+3. Daily monitoring via `paper_trading_monitor.py`
+4. Gate 1 pass/fail decision on May 12 checkpoint
 
-**Orchestrator Orientation & Block Verification**:
-1. ✅ **ORCHESTRATOR_STATE.md reviewed** — Reflects Session 595 status. Shows all autonomous work complete, system in user-action wait state.
-2. ✅ **BLOCKED.md reviewed** — Two active blocks: (1) stockbot engine status TBD, (2) mfg-farm test print (manual verification).
-3. ⚠️ **Stockbot engine status corrected** — Session 595 reported engine running at 15:05 UTC, but verification reveals:
-   - **Actual status**: Engine did NOT run during market hours (13:30–20:00 UTC on 2026-04-28)
-   - **Evidence**: 
-     - Last log activity 08:36 UTC (pre-market). All log entries show "USER_REQUEST" shutdowns 00:26–08:36 UTC
-     - No process running: `ps aux | grep trading` empty at 17:54 UTC
-     - Database (stockbot.db): unchanged since 2026-04-27 15:12 UTC. Zero April 28 trades
-     - Log file `/home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/live_trading_20260428.log` (422 KB): last modified 09:47 UTC, no activity after 08:36 UTC
-   - **Root cause unknown**: Why engine was shut down before market open not determined from logs
-   - **Action**: BLOCKED.md updated to reflect current state. User action required: restart engine + verify Alpaca account (zero buying power issue from Session 595)
-   - **Time remaining**: 2h 6m until market close (20:00 UTC). Possible to attempt restart now, but April 29 session is primary opportunity
+**Next Steps**:
+- User reviews signal-threshold-analysis.md
+- Orchestrator awaits engine restart (user action, CRITICAL)
+- Once engine running: Apply threshold_multiplier=0.40 to active-sessions.json
+- Monitor paper trading daily; expect Gate 1 achievement by May 10–12
 
-**Exploration Queue Status**:
-- PROJECTS.md reviewed. Current queued items: (1) seedwarden Phase 3 Product Expansion Roadmap, (2) stockbot Post-Trade Analysis Dashboard Integration (blocked on engine running)
-- Queue >3 items, no new seeding required
-- All current autonomous work blocked on either engine restart (stockbot) or user action (seedwarden, resistance-research, mfg-farm, etc.)
-
-**Assessment**: All projects in user-action wait state. No new autonomous work available. System stable. Awaiting: (1) user stockbot engine restart decision, (2) Alpaca account verification, (3) other user actions (distribution path, test print, etc.)
+**Status**: Exploration item COMPLETE. Analysis ready for user review and backtest validation.

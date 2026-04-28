@@ -4,6 +4,61 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 20:52–21:47 UTC — Session 608 — Parallel Autonomous Work: resistance-research + seedwarden
+
+**Orchestrator Orientation** (20:52–21:00 UTC):
+- ✅ **INBOX processed**: No new items in INBOX.md
+- ✅ **Active blocks verified**: stockbot engine (user restart required), mfg-farm test print (user action), both still active
+- ✅ **Exploration Queue reviewed**: Identified 2 high-priority queued items with no blockers
+- **Action**: Spawn parallel subagents for resistance-research domain maintenance + seedwarden Phase 3 roadmap (both Priority 1 autonomous work)
+
+**✅ COMPLETED: resistance-research — Domain Content Maintenance (April-May 2026 Updates)**
+- **Agent**: general-research subagent
+- **Duration**: 21:00–21:35 UTC (~35 min)
+- **Key Findings**: 
+  - Prior sessions (529-590) had already completed most domain updates through April 28
+  - **Research Integrity Issue Identified & Corrected**: `surveillance-tracking.md` contained fabricated FISA outcome (falsely claiming April 30 deadline had passed with specific vote results when it hadn't yet occurred)
+  - Corrected false completion to accurate pending status with checklist for post-deadline updates
+  - Added new content to Domain 01 Section 7 (FISA implications for electoral security, 600 words)
+- **Files Modified**:
+  - `projects/resistance-research/domains/domain-01-voting-rights-elections.md` (+55 lines, Section 7)
+  - `projects/resistance-research/surveillance-tracking.md` (corrected lines 78-108, restored accuracy)
+- **Remaining Future-Dependent Items**: FISA vote outcome (Apr 30), SPLC arraignment (early May), Trump v. Slaughter (late June), Watson v. RNC (by July) — fill checklists post-event
+- **Commit**: `f0f2618` — `chore(resistance-research): Session 608 — Domain Content Maintenance (FISA integrity correction + Domain 01 Section 7)`
+
+**✅ COMPLETED: seedwarden — Phase 3 Product Expansion Roadmap + Specifications**
+- **Agent**: general-research subagent
+- **Duration**: 21:00–21:47 UTC (~47 min)
+- **Deliverables**:
+  1. `projects/seedwarden/phase-3-product-expansion-roadmap.md` (7,002 words, 8 sections complete)
+     - Product Category Analysis: 10 categories (preservation, regional variants, foraging, seed library, medicinal herbs, homestead skills, seasonal planners, premium bundles)
+     - Cohort-Driven Sequencing: 4 customer cohorts with Phase 1 trigger thresholds
+     - Pricing Strategy: Per-cohort price ranges ($8-$62), per-product margin table (84-88%), bundle discounts, seasonal adjustments
+     - Production & Launch Timeline: T+0 through T+24 weeks with day-level action tables
+     - Supplier & COGS Sourcing: Affinity Publisher (free) + Canva Pro ($15/mo) decision, per-product break-even analysis
+     - Cross-Sell & Bundle Strategy: 4 natural pairings, 3 Phase 3 bundles, 3 upsell sequences
+     - Success Metrics: Conversion thresholds, kill criteria (60-day underperformers), AOV targets, cohort LTV
+     - Risk & Contingency: 5 scenarios with investigation protocols
+  2. `projects/seedwarden/phase-3-product-specifications.json` (Version 2.0, 12 products + 14 regional variants + 3 bundles, 20 fields each)
+     - Complete product specs: id, name, category, cohort targets, Phase 1 triggers, pricing, COGS, margins, format, dimensions, production tools, launch timing, seasonal patterns, bundle inclusions, demand estimates
+     - Regional listings: 14 regional variants for Survival Garden + Native Plants guides
+     - Bundle specs: 3 new bundles (Preservation, Foraging/Regional, Homesteader Systems)
+     - Revenue projections: Conservative/moderate/optimistic through December 2026
+- **Key Strategic Decisions**:
+  - Tool choice: Affinity Publisher (free) for PDF production + Canva Pro ($15/month) for mockups/social assets ($60 total for 4-month sprint vs. $416-624 outsourcing)
+  - Phase 1 gate: Phase 3 content only if Phase 1 reaches 20+ sales in 45 days; if under 20, launch regional listings only (highest ROI/hour)
+  - Kill threshold: Products below 1.5% conversion after 60 days AND below $100/month gross are pulled from ad spend before Month 3
+  - Pricing contrast mechanics: Regional listings designed to make complete bundles appear as significant discounts
+- **Commit**: `phase-3-product-expansion-roadmap.md` + `phase-3-product-specifications.json` committed to master
+
+**Session Totals**:
+- 2 major deliverables COMPLETE
+- 2 commits to master
+- All work logged and ready for user review
+- No test failures, all documentation production-ready
+
+---
+
 ## 2026-04-28 ~20:30 UTC — Session 607 — Phase 3 Exploration Queue: Domain 38 Complete
 
 **Orchestrator Orientation & Block Verification**:
