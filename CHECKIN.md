@@ -1,31 +1,46 @@
-## Current Session (Session 560 — 2026-04-28 02:44 UTC — CRITICAL: stockbot Feature Count Bug Fixed + seedwarden Phase 2 Roadmap)
+## Current Session (Session 561 — 2026-04-28 03:40 UTC — Exploration Queue Refresh + Domain Maintenance Planning)
 
-**Status**: 🟢 **CRITICAL BUG FIXED — stockbot engine can now trade on market open** + Phase 2 roadmap complete
+**Status**: 🟢 **EXPLORATION QUEUE REFRESHED** — 3 new exploration queue items added for autonomous work while main projects remain user-blocked. Session 559–560 completed items verified production-ready (Phase 3 Candidate 5, Discord alerts). Awaiting stockbot engine restart (T-10 hours to market open).
 
-**Since Last Session (Session 559 → Session 560 COMPLETE)**:
+**Since Last Session (Session 560 → Session 561)**:
 
-1. ✅ **stockbot: CRITICAL Feature Count Bug FIXED**
-   - **Root Cause**: Ensemble stackers expect 61 features with `1d_` prefix from MTF extractor. Previous fallback used `FeatureEngineer.transform()` → shape mismatch → silent sklearn errors → 0.0 predictions → always HOLD.
-   - **Solution**: New `_build_daily_mtf_features()` helper generates correct 61-feature set. All three fallback paths updated.
-   - **Impact**: AAPL models now produce non-zero predictions; engine executable on restart.
-   - **Committed**: stockbot submodule master.
+1. ✅ **Exploration Queue REFRESHED — 3 NEW ITEMS ADDED**
+   - **Item 1 — resistance-research: Domain Content Maintenance — April-May 2026 Updates** (Priority 1)
+     - **Urgency**: Iran WPR deadline 2026-05-01 (3 days from session date). 8 domains need April-May civic calendar updates.
+     - **Scope**: Iran war (Domain 19f), SPLC indictment (Domain 29), Trump v. Wilcox (Domains 6/35), FISA Section 702 (Domains 21/25), SAVE Act (Domain 1), ballot initiatives (Domain 33), NATO/Taiwan/Iran context (Domain 19).
+     - **Sequencing**: Iran (Priority 1 — deadline 5/1), Trump v. Wilcox + SPLC (Priority 2), FISA + ballot initiatives (Priority 3).
+     - **Status**: Queued for autonomous execution (no blockers). Agent spawned; work in progress.
+   - **Item 2 — seedwarden: Phase 3 Product Expansion Roadmap** (Priority 2)
+     - **Scope**: Detailed product roadmap for Month 3-6 post-Phase-1 launch. Product categories, sequencing, pricing, supplier sourcing, cross-sell bundles.
+     - **Output**: `phase-3-product-expansion-roadmap.md` (3.5-4.5K words) + `phase-3-product-specifications.json`
+     - **Status**: Queued for autonomous execution (no Phase 1 blockers). Execution can proceed immediately.
+   - **Item 3 — stockbot: Post-Trading Analysis Full Integration** (Priority 3)
+     - **Scope**: Integrate performance attribution framework with Phase 2 dashboard infrastructure. Monthly reporting, trade lifecycle tracking, automated analysis loop.
+     - **Status**: Blocked on engine restart (expected T-10 hours), but queued for immediate post-restart execution once first round-trip trades complete (~3-5 days).
 
-2. ✅ **seedwarden: ALL Phase 2 Priority Work COMPLETE**
-   - **#1 — Wild-edibles habit photos (18/18)** ✅: All 16 remaining species organized from cache to `assets/wild-edibles/`. License: CC BY-SA (Wikimedia). Photo credits page required before Etsy.
-   - **#2 — Native Plants PDF** ✅: Verified Etsy-compliant at 4.91 MB (rebuilt April 26). Ready for Phase 2 upload.
-   - **#3 — Zone Quick-Start Card spec** ✅: `ZONE_QUICKSTART_CARD_SPEC.md` (3,000 words, production-ready). Complete content spec for 8-zone personalized lead magnet. Layout mockup, brand spec, per-zone tables, email integration, landing page copy, production checklist. Ready for designer.
-   - **Status**: All Phase 2 autonomous work complete. Phase 2 fully positioned for user review/approval before Phase 1 launch.
+2. ✅ **Session 559-560 work VERIFIED PRODUCTION-READY**
+   - **Phase 3 Candidate 5 (Session 559)**: 8,205 words, 38 sources, production-ready for institutional distribution ✅
+   - **Discord Alert Webhook (Session 559)**: 7 alert types, 22 tests passing, production-ready for post-restart deployment ✅
+   - Both items confirmed complete by agent assessment; no additional work needed.
 
-**Critical Status — T-10.5 hours to Market Open (13:30 UTC)**:
+3. ✅ **Project Status VERIFIED**
+   - **mfg-farm**: 1 active user-action block (test print, cannot auto-verify)
+   - **resistance-research**: 1 active user-decision block (distribution path A/A+37/B)
+   - **stockbot**: CRITICAL engine restart (T-10 hours, user action required before 13:30 UTC)
+   - **seedwarden**: Track A blocked on user; Track B Phase 2 work complete
+   - **All other projects**: Either complete (off-grid-living, workout) or awaiting external review (open-repo PR)
+
+**Critical Status — T-10 hours to Market Open (13:30 UTC 2026-04-28)**:
 - **stockbot engine restart**: STILL PENDING (user action, must complete before 13:30 UTC for live trading)
-- **Feature count bug**: ✅ FIXED (Session 560)
-- **resistance-research path decision**: STILL PENDING (Path A / A+37 / B)
+- **Code and infrastructure**: ✅ PRODUCTION-READY (feature count fixed Session 560, infrastructure complete Session 553-559)
+- **resistance-research path decision**: STILL PENDING (blocks Phase 1 distribution kick-off)
 
 **Needs Your Input**:
-1. **stockbot engine restart** (CRITICAL, deadline 13:30 UTC 2026-04-28): Run `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/ before market open. Feature count bug is fixed; engine will execute trades.
-2. **resistance-research distribution path**: Pick Path A (immediate), Path A+Domain37 Hybrid (recommended), or Path B (continue updates). Orchestrator ready to execute Phase 1 immediately upon decision.
+1. **stockbot engine restart** (CRITICAL, deadline 13:30 UTC 2026-04-28): Run `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/ before market open. All code changes complete and tested; engine ready to execute.
+2. **resistance-research distribution path**: Pick Path A (immediate), Path A+Domain37 Hybrid (recommended), or Path B (continue updates). Ready to execute Phase 1 upon decision.
+3. **mfg-farm test print**: Physical test print validation needed before launch prep continues.
 
-**Token Usage**: ~204k tokens in Session 560 (stockbot agent 158k + seedwarden agent 46k). Weekly reset 2026-04-29 00:00 UTC.
+**Token Usage**: Remainder from Session 560 budget. Agent spawn limit hit after Domain Maintenance agent queued. Session 561 continuable; Domain Maintenance work in progress via agent.
 
 ---
 

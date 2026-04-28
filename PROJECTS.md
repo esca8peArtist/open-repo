@@ -772,6 +772,39 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Effort revision**: 24–37 days total for complete Phase 5 (9–14 days additive to prior 15–23 day estimate)
   - **Status**: COMPLETE (committed to master)
 
+**NEW ITEMS (Session 561 — Exploration Queue Refresh)**:
+
+- **resistance-research: Domain Content Maintenance — April-May 2026 Updates** (Priority 1 for proposal currency)
+  - **Scope**: Refresh 35-domain framework content with April-May 2026 developments. Eight domains require updates identified in Session 538:
+    - Domain 19f: Iran war WPR deadline (May 1, 2026 — in 3 days), Senate blocking pattern, Vance constitutional rejection
+    - Domain 28: Add Iran as larger empirical instance of war powers constraint failure
+    - Domain 29: SPLC indictment (April 21) as prosecutorial weaponization case study
+    - Domains 6 & 35: Trump v. Wilcox shadow-docket removal power ruling (Humphrey's Executor overruled)
+    - Domain 1: SAVE Act Senate failure (4 GOP defectors) as coalition-fracture proof-of-concept
+    - Domains 21, 25: FISA Section 702 April 30 deadline outcome tracking
+    - Domain 33: 100+ bills in 15+ states targeting ballot initiatives in 2026 (strengthen empirical foundation)
+    - Domain 19: NATO withdrawal threats + Taiwan pressure + Iran geopolitical cascade
+  - **Goal**: Keep 35-domain framework current through April-May civic calendar. Essential for institutional distribution credibility (updated as of 2026-04-28).
+  - **Expected scope**: 2-4 sessions depending on depth; prioritize Iran (5/1 deadline is in 3 days), SPLC, and Trump v. Wilcox updates first
+  - **Status**: QUEUED — no blockers, can execute immediately
+  - **Integration**: Each update references existing domain, extends with new case law/developments, maintains source count and citation standards
+
+- **seedwarden: Phase 3 Product Expansion Roadmap** (Priority 2 for post-Phase-1 planning)
+  - **Scope**: Detailed product roadmap for Phase 3 expansion, executing post-Phase-1 launch and conversion data (estimated Month 3-6 post-launch). Strategic decisions: (1) Which new product categories (medicinal herbs, seed packets, preservation containers, seasonal bundles, regional guides), (2) Product sequencing and rollout timing, (3) Pricing strategy for expanded line, (4) Supplier sourcing and COGS targets, (5) Social proof and customer feedback integration, (6) Cross-sell bundles with Phase 1 winners
+  - **Goal**: Have Phase 3 product specifications and go-to-market strategy ready when Phase 1 launches (estimated May-June 2026), so product development can begin immediately in parallel with Phase 1 conversion tracking
+  - **Dependencies**: None on Phase 1 blockers; strategy can be developed now, execution deferred until conversion data arrives (Week 2-3 post-Phase-1 launch)
+  - **Expected output**: `phase-3-product-expansion-roadmap.md` (3,500-4,500 words) + `phase-3-product-specifications.json` (detailed specs for 8-12 new products)
+  - **Status**: QUEUED — no blockers, can execute immediately
+  - **Timeline**: 1-2 sessions for complete roadmap + specifications
+
+- **stockbot: Post-Trading Analysis Full Integration with Phase 2 Dashboard** (Priority 3 for operational readiness)
+  - **Scope**: Full integration of performance attribution framework (Session 542) with Phase 2 dashboard infrastructure (Session 551) and operations runbooks (Session 553). Current state: performance_attribution_framework.md + post_trade_analysis.py exist, but dashboard integration is incomplete. Scope: (1) Wire post-trade analysis CLI output into dashboard data pipeline, (2) Build end-to-end trade lifecycle tracking (entry context → execution → attribution analysis → monthly summary), (3) Create automated monthly reporting loop that aggregates trade performance data and feeds to Discord summary, (4) Integration testing with Phase 2 dashboard prototype, (5) Operational runbook for monthly review process
+  - **Goal**: Ready for Day-1 post-engine-restart integration. User can run monthly analysis immediately; dashboard can display historical performance attribution on demand.
+  - **Dependencies**: Requires engine restart (user action, expected 2026-04-28 before 13:30 UTC). Can execute immediately after engine is live and generates first round-trip trades (~3-5 days into market open).
+  - **Expected scope**: 2-3 sessions (dashboard integration, monthly automation, testing, documentation)
+  - **Expected output**: Updated `post_trade_analysis.py` with dashboard integration, updated dashboard UI (`ui-mockup/dashboard.html`) with attribution display, monthly reporting automation (`trading_session.py` monthly loop), integration tests
+  - **Status**: QUEUED — blocked on engine restart, but available for execution once market trading begins (expected after Session 561)
+
 **✅ COMPLETED (Session 545 — Exploration Queue Execution)**:
 
 - ✅ **resistance-research Phase 3: Real-Time Crisis Monitoring Infrastructure** (COMPLETE — verified from prior session)
