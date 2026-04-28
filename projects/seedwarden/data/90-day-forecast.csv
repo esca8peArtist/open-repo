@@ -1,0 +1,45 @@
+scenario,month,month_label,views,blended_conv_rate_pct,total_orders,individual_orders,bundle_orders,avg_individual_aov,avg_bundle_aov,blended_aov,gross_revenue,etsy_fees_pct,etsy_processing_per_order,net_revenue,cumulative_orders,cumulative_gross,cumulative_net,notes
+conservative,1,May 2026,400,0.80,3,2,1,12.00,34.00,19.33,58.00,6.50,0.25,51.04,3,58.00,51.04,Phase 1 launch. Listing freshness boost gives initial visibility. Zero reviews.
+conservative,2,Jun 2026,540,0.90,5,4,1,12.50,34.00,14.90,74.50,6.50,0.25,65.58,8,132.50,116.62,Month 2: First reviews expected (3-5). Pinterest pins starting to index. Email list at 20-40 subs.
+conservative,3,Jul 2026,730,1.00,7,5,2,13.00,34.00,19.14,134.00,6.50,0.25,117.96,15,266.50,234.58,Month 3: Preservation season begins. Phase 3 regional listings start if M2 gate met.
+conservative,90_day_total,,1670,,15,11,4,,,17.77,266.50,,,,15,266.50,234.58,Conservative 90-day total
+realistic,1,May 2026,400,0.80,3,2,1,13.00,34.00,20.00,60.00,6.50,0.25,52.95,3,60.00,52.95,Phase 1 launch. Realistic assumes slightly higher AOV mix from one bundle sale.
+realistic,2,Jun 2026,540,1.00,5,4,1,13.50,34.00,14.60,73.00,6.50,0.25,64.27,8,133.00,117.22,Month 2: Social media and Pinterest beginning to contribute. Email list 50-80 subs.
+realistic,3,Jul 2026,730,1.20,9,6,3,14.00,34.00,17.11,154.00,6.50,0.25,135.36,17,287.00,252.58,Month 3: Multiple Phase 3 regional listings live. Preservation season driving search volume.
+realistic,90_day_total,,1670,,17,12,5,,,16.88,287.00,,,,17,287.00,252.58,Realistic 90-day total
+optimistic,1,May 2026,500,1.20,6,4,2,14.00,34.00,20.33,122.00,6.50,0.25,107.20,6,122.00,107.20,Optimistic: One or two listings hit page 1 of Etsy search within first week.
+optimistic,2,Jun 2026,750,1.50,11,7,4,14.50,34.00,21.55,237.00,6.50,0.25,208.24,17,359.00,315.44,Month 2: Pinterest referrals active. Hot Sauce and Companion Planting Chart breakout.
+optimistic,3,Jul 2026,1100,1.80,20,12,8,15.00,34.00,22.60,452.00,6.50,0.25,397.22,37,811.00,712.66,Month 3: Phase 3 live. Preservation season peak. Social traffic compounding.
+optimistic,90_day_total,,2350,,37,23,14,,,21.92,811.00,,,,37,811.00,712.66,Optimistic 90-day total
+phase1_gate_checks,m1_gate,Month 1 Gate (Jun 1),,,,,,,,,,,,,,,,"Target: >=20 sales. Green: proceed Phase 2. Red (<10): hold Phase 2, audit listings."
+phase1_gate_checks,m2_gate,Month 2 Gate (Jul 1),,,,,,,,,,,,,,,,"Cumulative target: >=50. Green: authorize Phase 2 photos + Phase 3 planning. Yellow (30-49): continue prep no iStock spend. Red (<30): hold Phase 2."
+phase1_gate_checks,m3_gate,Month 3 Gate (Aug 1),,,,,,,,,,,,,,,,"Cumulative target: >=100. Repeat buyer rate >=15%. Green: full Phase 3 expansion."
+product_price_reference,companion_planting_chart,Companion Planting Chart,,,,,,,,,5.00,,,,,,,Tier 1 entry-point product. Highest search volume keyword. Impulse buy.
+product_price_reference,food_sovereignty_guide,Food Sovereignty Starter Guide,,,,,,,,,8.00,,,,,,,Brand flagship. Sets tone. Forager + sovereignty cohort entry point.
+product_price_reference,apartment_seed_starting_kit,Apartment Seed Starting Kit,,,,,,,,,9.00,,,,,,,Low price high value. Homesteader + urban cohort.
+product_price_reference,12_month_urban_planner,12-Month Urban Growing Planner,,,,,,,,,7.00,,,,,,,Printable planner. Broad appeal.
+product_price_reference,container_growing_blueprint,Container Growing Blueprint Pack,,,,,,,,,12.00,,,,,,,Mid-tier. Homesteader cohort.
+product_price_reference,seed_swap_hosting_kit,Seed Swap Hosting Kit,,,,,,,,,10.00,,,,,,,Sovereignty cohort. Community focus.
+product_price_reference,heirloom_variety_guide,Heirloom Variety Selection Guide,,,,,,,,,11.00,,,,,,,Seed saver cohort.
+product_price_reference,fermented_preserved_harvest,Fermented and Preserved Harvest Handbook,,,,,,,,,13.00,,,,,,,Preservation cohort entry.
+product_price_reference,grow_your_own_hot_sauce,Grow Your Own Hot Sauce,,,,,,,,,15.00,,,,,,,Passion niche. High shareability.
+product_price_reference,anti_catalog_30_heirlooms,Anti-Catalog: 30 Heirlooms Worth Growing,,,,,,,,,10.00,,,,,,,Seed saver cohort.
+product_price_reference,small_scale_livestock,Small-Scale Livestock Field Manual,,,,,,,,,18.00,,,,,,,Premium. Homesteader + prepper cohort.
+product_price_reference,meat_fish_preservation,Meat and Fish Preservation Field Manual,,,,,,,,,18.00,,,,,,,Premium. Homesteader + prepper cohort.
+product_price_reference,harvest_preservation,Harvest Preservation Field Manual,,,,,,,,,16.00,,,,,,,Premium. Preservation cohort.
+product_price_reference,native_plants_regional,Native Plants Regional Guide,,,,,,,,,18.00,,,,,,,Premium. Forager cohort. 404pp.
+product_price_reference,apartment_plant_catalog,Apartment Plant Catalog,,,,,,,,,14.00,,,,,,,Urban cohort. Mid-tier.
+product_price_reference,survival_garden_plans,Survival Garden Regional Plans,,,,,,,,,22.00,,,,,,,Highest individual price. Prepper + homesteader cohort.
+product_price_reference,hunting_fishing_trapping,Hunting Fishing and Trapping Field Manual,,,,,,,,,20.00,,,,,,,Premium. Prepper cohort. Specialist niche.
+product_price_reference,apartment_growing_complete,Apartment Growing Complete Guide,,,,,,,,,13.00,,,,,,,Mid-tier. Urban cohort.
+product_price_reference,zone_seed_starting_calendar,Zone-by-Zone Seed Starting Calendar,,,,,,,,,10.00,,,,,,,Broad appeal. Seasonal peak Jan-Apr.
+product_price_reference,seed_saving_field_manual,Seed Saving Field Manual,,,,,,,,,14.00,,,,,,,Seed saver cohort core product.
+product_price_reference,free_lead_magnet,5 Easiest Vegetables Lead Magnet,,,,,,,,,0.00,,,,,,,Free. Email list builder. PDF end-page CTA.
+bundle_price_reference,apartment_grower_bundle,Apartment Grower Bundle,,,,,,,,,32.00,,,,,,,4 products. Save $10 vs individual ($42).
+bundle_price_reference,food_sovereignty_bundle,Food Sovereignty Bundle,,,,,,,,,30.00,,,,,,,4 products. Save $12 vs individual ($42).
+bundle_price_reference,regional_self_sufficiency,Regional Self-Sufficiency Bundle,,,,,,,,,28.00,,,,,,,2 products. Save $8 vs individual ($36).
+bundle_price_reference,preservation_bundle,Preservation Bundle,,,,,,,,,38.00,,,,,,,3 products. Save $9 vs individual ($47).
+bundle_price_reference,homesteaders_complete,Homesteaders Complete Bundle,,,,,,,,,50.00,,,,,,,4 products. Save $22 vs individual ($72).
+fee_calc_reference,etsy_transaction_fee,Etsy transaction fee,,,,,,,,,6.50,,,,,,,Percent of sale price. Applied to all sales.
+fee_calc_reference,etsy_payment_processing,Etsy payment processing,,,,,,,,,3.00,,,,,,,Percent + $0.25 per order. Applied to all sales.
+fee_calc_reference,effective_net_margin_example,Example: $13.50 sale net margin,,,,,,,,,88.70,,,,,,,Net after all fees: ~$11.98 on a $13.50 sale.

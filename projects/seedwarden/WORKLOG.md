@@ -4,6 +4,51 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 564 — 2026-04-28 — Phase 1 Revenue Projections
+
+**Task**: Build detailed 90-day revenue forecasts, conversion targets, KPI dashboard, and Phase 1-to-Phase-2 go/no-go decision matrix. All queued from Exploration Queue with no blockers.
+
+**Deliverables created**:
+
+1. **`projects/seedwarden/docs/phase-1-revenue-roadmap.md`** (~2,800 words)
+   - Part 1: Baseline conversion rate estimates by cohort (forager 20–25%, prepper 15–20%, homesteader 30–35%, gift buyer 15–20%) with blended 0.8% store conversion for a new Etsy digital shop
+   - Part 2: Month-by-month revenue projections (3 scenarios): Conservative ($219 gross/90 days, 15 orders), Realistic ($326 gross/90 days, 17 orders), Optimistic ($777 gross/90 days, 37 orders). All grounded in 400 views/month M1 baseline (Etsy new-shop organic) and product pricing from product-audit-2026-04-11.md
+   - Part 3: CAC analysis by channel — Etsy organic ($0 CAC), Pinterest organic ($0 CAC), Email list (tertiary, $0 CAC). 24-month LTV by cohort: forager $69 net, prepper $93 net, homesteader $60 net, gift buyer $29 net. Homesteader cohort is highest-LTV despite lower AOV due to 70% retention × 3x annual purchases
+   - Part 4: Payback period and break-even analysis. Effective break-even is the first sale (no ongoing fixed costs). Time-investment payback requires Phase 3 run rate to recover; explicit calculation provided.
+   - Part 5: Phase 1-to-Phase-2 transition criteria with three numbered gates (June 1, July 1, August 1) and numeric thresholds
+   - Part 6: Monthly KPI dashboard spec — 12 metrics, all with alert thresholds and action rules
+   - Part 7: Comparison to Year 1 business plan goals ($8K–$30K Year 1 gross). Phase 1 contributes $360–$1,200 of that; Phase 3 is the growth engine. Year 1 floor achievable in realistic scenario if Phase 2+3 execute on schedule.
+
+2. **`projects/seedwarden/data/90-day-forecast.csv`**
+   - Month-by-month projections for all 3 scenarios (Conservative, Realistic, Optimistic)
+   - All 21 individual product prices and 5 bundle prices as reference rows
+   - Etsy fee structure reference
+   - Phase 1 gate check rows (M1, M2, M3 decision dates and thresholds)
+
+3. **`projects/seedwarden/docs/kpi-dashboard.md`** (~2,000 words)
+   - 12 metrics: Blended Conversion Rate, AOV, Repeat Buyer Rate, Email Signup Rate, Pinterest Saves, Pinterest Outbound Clicks, Top-3 Listing Concentration, Listing Health Score, Review Accumulation Rate, Net Revenue per Order, Email Open Rate (Welcome Sequence), Bundle Revenue Share
+   - Each metric: definition, how-to-calculate instructions, healthy range, alert threshold, specific action if triggered
+   - Monthly scorecard table (12-month log grid)
+   - Alert summary reference card (Red/Yellow/Green with specific actions)
+   - Seasonal alert calendar (avoids misreading seasonal patterns as KPI failures)
+
+4. **`projects/seedwarden/docs/phase-1-to-phase-2-decision-matrix.md`** (~1,800 words)
+   - Gate 1 (June 1): ≥20 sales = Green; <10 = Red with listing audit protocol
+   - Gate 2 (July 1): ≥50 cumulative = Green; <30 = Red; 30–49 = Yellow (conditional)
+   - Gate 3 (August 1): ≥100 cumulative + ≥15% repeat rate = Green Phase 3 expansion; <60 or <10% repeat = Red
+   - Investment authorization table: maps each Phase 2/3 cash expenditure to its gate requirement
+   - Red metric diagnostic table: maps each failing metric to its most likely cause, diagnostic action, and fix
+   - Contingency protocol for significant underperformance (sub-40 orders by Gate 3)
+
+**Design decisions**:
+- Revenue projections are intentionally below the product-audit-2026-04-11.md estimates ($460–$1,150/month) because the audit projected mature-store steady-state; this document projects Month 1–3 launch numbers
+- Homesteader cohort identified as highest-LTV due to 70% retention × 3 annual purchases compounding over 24 months — informs product prioritization for cross-sells
+- Gate thresholds (≥20/≥50/≥100 cumulative sales) chosen to map to real go/no-go decision points: 20 proves product-market fit exists, 50 validates organic reach, 100 validates repeat and retention
+- KPI dashboard designed for 80-minute monthly execution (not 90+) — tight enough to be sustainable for a solo operator
+- Phase 3 expansion roadmap (Session 563) already complete; this document's Part 7 cross-references it as the growth engine for Year 1 targets
+
+---
+
 ## Session 563 — 2026-04-28 — Phase 3 Product Expansion Roadmap
 
 **Task**: Create Phase 3 product expansion roadmap (Month 3–6 post-Phase-1 launch, July–October 2026).
