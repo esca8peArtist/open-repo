@@ -4,6 +4,30 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 569 — 2026-04-28 — Phase 3 Roadmap: Execution Timeline Options Added
+
+**Task**: Add missing "3–4 execution timeline options (conservative/standard/aggressive)" section required by task brief scope.
+
+**Gap identified**: Both deliverables were complete from Session 565, but the roadmap lacked a dedicated section naming execution options for post-Phase-1 decision-making. The revenue scenarios (conservative/moderate/optimistic) existed in the JSON but were not surfaced as actionable named paths in the roadmap document.
+
+**Change made**: Added Part 11 ("Execution Timeline Options") to `phase-3-product-expansion-roadmap.md`. Four named options:
+- Option A: Conservative — Phase 1 underwhelms (<0.5% conversion); regional listings only, content deferred
+- Option B: Standard — Phase 1 converts at expected range (0.5–1.5%); proceed per Part 7 schedule
+- Option C: Aggressive — Phase 1 overperforms (1.5%+ conversion on 3+ products); compress to 10–12 week execution with cohort-specific front-loading
+- Option D: Focused Single-Cohort — one cohort exceeds 45% of purchases; concentrate product depth on that cohort in Month 3–4
+
+Each option includes: trigger condition, logic, what launches/what pauses, timeline, revenue target, and decision date. Summary decision table closes the section.
+
+**Updated word count**: ~5,400 words (up from 4,593; Part 11 added ~810 words).
+
+**Files modified**:
+- `phase-3-product-expansion-roadmap.md` — Part 11 added at end of document
+
+**Files unchanged**:
+- `phase-3-product-specifications.json` — already complete and schema-valid; no changes required
+
+---
+
 ## Session 568 — 2026-04-28 — Phase 3 Product Expansion Roadmap (Verification + Log)
 
 **Task**: Develop Phase 3 Product Expansion Roadmap — produce `phase-3-product-expansion-roadmap.md` and `phase-3-product-specifications.json`.

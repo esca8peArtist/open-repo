@@ -333,4 +333,101 @@ Phase 3 requires 125–140 hours of development across 16 weeks — approximatel
 
 ---
 
+## Part 11: Execution Timeline Options
+
+The task brief calls for post-Phase-1 decision-making flexibility. The four options below are not guesses — they are structured responses to specific Phase 1 outcome scenarios. Select the option that matches the Phase 1 signal set observed at Week 2–3.
+
+---
+
+### Option A: Conservative (Phase 1 underwhelms)
+
+**Trigger condition**: Phase 1 reaches fewer than 20 sales in the first 45 days, or overall conversion rate below 0.5% after 30 days.
+
+**Logic**: Do not expand a catalog that is not converting. Every development hour spent on Phase 3 products has an opportunity cost. If Phase 1 is underperforming, the root cause is almost certainly listing quality (mockup images, title copy, keyword tags) — not catalog breadth. Fixing Phase 1 listings returns 3–5x more revenue per hour than launching new Phase 3 products.
+
+**What launches**: Regional listing variants only (P3-05 to P3-18). These are the sole exception because they require no new content and add keyword surface area with minimal risk — they live or die on Etsy search rank, not on conversion optimization of existing listings.
+
+**What pauses**: All 12 new Phase 3 content products. Development does not begin until Phase 1 reaches 0.75%+ conversion on at least 5 listings.
+
+**Timeline adjustment**: Phase 3 content launch shifts to Month 5–6 (September–October) rather than Month 3. The October gift set and preservation planner still hit the holiday window because those were already the last scheduled launches.
+
+**Revenue impact**: Conservative scenario targets (from `phase-3-product-specifications.json`) — approximately $900–$1,100/month gross in the July–August window rather than $1,100–$1,800. The gap comes from missing the preservation season peak with underdeveloped new products.
+
+**Decision date**: July 1 — 45 days post-Phase-1 launch. If conversion is below 0.5%, activate Option A. If it exceeds 0.5%, move to Option B or C.
+
+---
+
+### Option B: Standard (Phase 1 converts at expected range)
+
+**Trigger condition**: Phase 1 reaches 20–50 sales in the first 45 days, overall conversion rate 0.5%–1.5%, no single category overwhelmingly dominant.
+
+**Logic**: Proceed with the Phase 3 plan as written in Parts 2 and 7. This is the baseline scenario; all dates and development hours in Part 7 assume Option B.
+
+**What launches**: All products on their planned schedule — regional listings July 1, preservation derivatives July 15, Wild Edibles Quick Reference July 15, then bundled progression through October.
+
+**Development priority order**: Regional listings (highest ROI/hour) → preservation derivatives (seasonal window dependency) → foraging products (mid-season) → original new-content products (no hard seasonal urgency except Medicinal Herb Guide in September).
+
+**Timeline**: 125–140 development hours over 16 weeks (July–October). Approximately 9 hours/week.
+
+**Revenue target**: Moderate scenario — $1,300/month gross by August, $1,900 by September, $2,500 by October.
+
+**Decision date**: No special decision needed — proceed per Part 7. Review at August 28 analytics check to determine if any products need listing revision before Option B continues into Month 5.
+
+---
+
+### Option C: Aggressive (Phase 1 overperforms)
+
+**Trigger condition**: Phase 1 reaches 50+ sales in the first 45 days, conversion rate above 1.5% on multiple products, or one cohort (forager, prepper, or homesteader) visibly overrepresented in purchases.
+
+**Logic**: When Phase 1 proves strong demand, Phase 3 should front-load its highest-cohort-match products rather than following the seasonal-calendar sequence. The goal is to capture repeat purchases from the overperforming cohort before they find a competitor.
+
+**What changes from Standard**:
+- Compress July development into 2 weeks instead of 4: hire a Canva contractor for mockup batch (estimated $200–$300 for 26 mockups at $8–$12/mockup), freeing the operator for content writing.
+- If forager cohort overperforms: prioritize Wild Edibles Quick Reference and Native Plants Flashcard Set before preservation derivatives. Launch both by July 8 instead of July 15 and August 21.
+- If prepper cohort overperforms: move Master Preserver Bundle to July 21 rather than August 15. The bundle requires no new products — it is a listing that references already-developed products.
+- If homesteader cohort overperforms: move Homestead Skills Assessment forward to August 1 instead of September 28. This is the cross-sell multiplier — getting it live sooner compounds every other product's AOV.
+
+**Timeline**: Same 125–140 hours total but compressed into 10–12 weeks rather than 16. Requires 12–14 hours/week during the peak July–August window.
+
+**Revenue target**: Optimistic scenario — $1,900/month gross by July, $2,500 by August, $3,800 by October.
+
+**Decision date**: June 15 (2 weeks after Phase 1 launch, before Phase 3 development begins). If 14-day conversion rate is above 1.5% on 3+ products, activate Option C.
+
+---
+
+### Option D: Focused Single-Cohort (one cohort dominates)
+
+**Trigger condition**: Phase 1 data at Week 3 shows one cohort accounting for 50%+ of purchases. This is the highest-signal scenario — it means Phase 3 can optimize for depth in one direction rather than breadth across all four cohorts.
+
+**Logic**: Cohort concentration in Phase 1 is rare (the product mix was specifically designed to spread across cohorts) but possible if a single product goes viral on one platform or a niche community links to one specific guide. If it happens, responding with cohort-specific product depth is higher-return than the full 26-SKU spread.
+
+**Forager-dominant scenario**: Launch Wild Edibles Quick Reference, Native Plants Flashcards, Medicinal Herb Guide, and 7 Native Plants regional listings in July (cohort-focused batch). Defer all preservation derivatives and Survival Garden regional listings to Month 5–6.
+
+**Prepper-dominant scenario**: Launch all 4 preservation derivatives, 7 Survival Garden regional listings, and the Master Preserver Bundle in July. Defer foraging products and the Medicinal Herb Guide until Phase 1 forager signal appears.
+
+**Homesteader-dominant scenario**: Front-load Seed Library Organization System and Homestead Skills Assessment and Learning Roadmap to July (both can be developed in 18 hours). These two products cross-sell the entire existing catalog and generate AOV lift faster than any other Phase 3 products. Defer foraging and preservation derivatives to August.
+
+**Gift-buyer-dominant scenario**: This scenario is unlikely in May–June (off-season for gift buying). If it appears in October Phase 1 data, the Expanded Homesteader Gift Set should launch as early as October 7 rather than October 15 to capture extra weeks of holiday window.
+
+**Timeline**: Same total development hours, but 60–70% concentrated in the dominant-cohort product cluster in Month 3–4. Less context-switching means faster per-product output.
+
+**Revenue target**: Between moderate and optimistic scenarios depending on cohort, because the concentrated product depth drives higher repeat purchase rates from the dominant cohort (estimated 25–35% 90-day repeat rate vs. the 15% standard baseline).
+
+**Decision date**: Week 3 post-Phase-1 launch. If any cohort exceeds 45% of observed purchases, activate Option D. If no single cohort dominates, revert to Option B or C.
+
+---
+
+### Summary Decision Table
+
+| Phase 1 Signal at Week 3–6 | Recommended Option | Phase 3 Launch Tempo | Revenue Target (M6) |
+|---|---|---|---|
+| <20 sales in 45 days or <0.5% conversion | A: Conservative | Regional listings only; content deferred | $900–$1,100 |
+| 20–50 sales, 0.5–1.5% conversion, balanced | B: Standard | Full schedule per Part 7 | $1,800–$2,500 |
+| 50+ sales or 1.5%+ conversion on 3+ products | C: Aggressive | Compressed 10–12 week execution | $2,800–$3,800 |
+| One cohort >45% of purchases | D: Focused | Cohort-specific product depth batch first | $2,200–$3,200 |
+
+The default assumption is Option B. Options A, C, and D require active decisions based on Phase 1 data. If no data review happens by July 1, treat it as Option B and proceed with the Part 7 schedule.
+
+---
+
 *Cross-references: `phase-3-product-specifications.json`, `phase-3-social-media-growth-strategy.md`, `customer-cohort-analysis-framework.md`, `marketing/annual-product-plan.md`, `etsy-seo-market-research.md`, `docs/phase-1-revenue-roadmap.md`*
