@@ -2,6 +2,20 @@
 
 ---
 
+## April 28, 2026 — High-Risk Populations Protection Protocols: Extension Pass
+
+**File**: `projects/cybersecurity-hardening/high-risk-populations.md`
+**Task**: Deepen and extend existing document with three targeted additions
+
+**Additions**:
+1. **Hong Kong 2019-2020 case study** (added to Section 3.5): Distinguishes pre-NSL protest network tactics (LIHKG, AirDrop, Telegram, "leaderless" coordination model, Ivan Ip arrest/group exposure) from post-NSL diaspora adaptation (platform migration, division-of-labor between public-facing and operational members, diaspora media). Four discrete operational lessons for US activists.
+2. **Jan 6 geofence SCOTUS update** (added to Section 3.5): Notes April 27, 2026 oral argument in *Chatrie v. United States*; justices were skeptical of government position; decision pending; suppression motion implications for pending cases if ruling narrows geofence warrant authority.
+3. **Playbook B-2: Device Will Be Seized in Six Hours** (new playbook, inserted between Playbooks B and C): 13-step emergency evidence preservation protocol addressing the pre-seizure window. Covers: attorney contact, secure backup with SHA-256 hashing, Signal conversation preservation, cloud account logout, network notification via pre-agreed codes, factory reset legal threshold (key distinction: not obstruction before legal process; potentially obstruction after), BFU state maximization, Layer 2/3 device physical separation, and post-seizure documentation. Integrates with device-hardening-guide.md BFU/AFU analysis. Addresses the legal bright line at 18 U.S.C. § 1519.
+
+**Sources used**: EFF border crossing guide, Signal support documentation, activist security checklist, Telegram/Hong Kong Free Press HK protest reporting, Wikipedia HK protest tactics, NPR/CNN/Constitutional Accountability Center geofence SCOTUS coverage (April 27, 2026).
+
+---
+
 ## April 28, 2026 (Current Session) — April-May 2026 Domain Content Maintenance: Phase 3 Currency Update
 
 **Session type**: Domain content maintenance — 35-domain framework proposal currency

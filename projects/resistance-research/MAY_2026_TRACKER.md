@@ -367,6 +367,23 @@
 
 ---
 
+## MONITORING PRIORITY RANKING
+
+*For proposal currency — ranked by: (a) proximity to irreversible harm, (b) active advocacy window, (c) speed at which a development would obsolete existing domain content.*
+
+| Rank | Category | Reason for Priority | Proposal currency risk if unmonitored |
+|------|----------|--------------------|-----------------------------------------|
+| 1 | War Powers (Domain A) | May 1 WPR deadline is a live constitutional confrontation; administration defiance sets a precedent that instantly obsoletes Domain 19f's reform pathway analysis | Domain 19f Section 16 (post-deadline enforcement) does not exist yet; any Domain 28 Iran synthesis becomes stale within days of a breach |
+| 2 | Fiscal/Congressional Authority (Domain F) | Reconciliation 2.0's May 15 committee deadline + ICA constitutional challenge = fastest-moving structural threat; a court win for the administration's ICA position makes Domain 34's appropriations analysis obsolete | Domain 34 was written assuming ICA enforcement is operative; if the administration gets a circuit win on ICA unconstitutionality, the entire domain's strategic recommendations change |
+| 3 | SCOTUS Activity (Domain D) | Slaughter decision expected June 2026; all six conservative justices signaled overruling Humphrey's Executor; a broad ruling makes Domains 6, 35, and 34 simultaneously outdated | If Humphrey's Executor is overruled before the proposal circulates, readers will know the proposal underestimates the scope of the independent agency problem |
+| 4 | Prosecutorial Weaponization (Domain B) | Nashville Crenshaw ruling imminent; SPLC early motions in progress; each development either confirms or complicates the pattern-and-practice case in Domain 29 | Domain 29's 22-case retaliatory pattern count will change; the counter-court retaliation pattern (Abrego Garcia) may require Domain 29 expansion |
+| 5 | Voting Rights (Domain C) | State SAVE Act wave is active through May legislative sessions; swing-state enactments directly affect 2026 midterm framing in Domain 37 | If TX, GA, or AZ enact citizenship proof requirements before the proposal circulates, Domain 37's voter suppression documentation is incomplete |
+| 6 | Election Security (Domain E) | Critical for midterm security but the harm horizon is the 2026 election — still months away; advocacy window (April–July) is open but not yet closing; Domain 37b scope document awaits full research execution | Domain 37b does not yet exist as a complete domain; this is a gap more than a currency risk for existing content |
+
+**Key insight**: Categories 1 and 2 are the most time-sensitive for proposal currency because they involve developments that will happen whether or not a session is scheduled to monitor them, and both have active deadlines in May 2026. Category 3 (SCOTUS) has a known decision window (June) that allows advance preparation. Categories 4-6 are important but their developments are less likely to create overnight obsolescence in existing domain documents.
+
+---
+
 ## TRACKER ADMINISTRATION
 
 **Update frequency**: Weekly (each session should open this file, check prior week's fill-in items, and add new entries)

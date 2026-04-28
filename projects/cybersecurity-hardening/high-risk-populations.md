@@ -3,7 +3,7 @@ title: "High-Risk Population Protection Protocols: Dissidents, Activists, and As
 project: cybersecurity-hardening
 created: 2026-04-27
 updated: 2026-04-28
-status: complete
+status: complete — extended with HK 2019-2020 case study, geofence SCOTUS update, and Playbook B-2 (device seizure in 6 hours)
 depends_on: threat-model.md, palantir-threat-model.md, opsec-playbook.md, device-hardening-guide.md
 confidence: high — grounded in documented case law, confirmed investigative methods, EFF/ACLU/NLG guidance, UNHCR frameworks, public court records, and ABA litigation outcomes through April 2026
 audience: activists, dissidents, asylum seekers, journalists, attorneys, and domestic violence survivors facing government-level or intimate-partner targeting
@@ -253,7 +253,21 @@ After release on bail or following charges being dropped, assume that your commu
 
 **Jan. 6 prosecutions (digital evidence lessons)**: The FBI issued geofence warrants to Google that captured location data on 5,723 devices present at the Capitol. Of those, 1,535 names were identified and turned over to investigators. Google Location History data was cited in 128 prosecutions. Social media posts — posted publicly and voluntarily — formed the factual basis for the majority of charges. The lesson is direct: **the FBI did not need to break any encryption to charge most January 6 defendants**. The evidence was already public. Operational security failure was not technical — it was behavioral.
 
+*April 2026 update*: On April 27, 2026, the Supreme Court heard oral arguments in *Chatrie v. United States*, a direct challenge to geofence warrant constitutionality under the Fourth Amendment. The case involves the FBI's demand that Google search its database of all location records for every user within a geofence perimeter at a specific time — a mechanism that produced the Jan. 6 identification list. A ruling narrowing geofence warrants would retroactively affect pending Jan. 6 cases and prospectively limit law enforcement's ability to perform mass-identification from cell-location data. No decision has been issued as of late April 2026; oral argument reporting indicates multiple justices were skeptical of the government's claim to unrestricted access. Defense attorneys representing clients in politically-sensitive cases should monitor the ruling closely — a favorable outcome creates suppression motion grounds in any case where geofence data was the primary identification mechanism.
+
 **HK 47 prosecution (2021)**: In January 2021, 55 Hong Kong pro-democracy figures were arrested under the National Security Law for organizing and participating in an informal legislative primary. Thirty-five percent of all NSL arrests were predicated on online speech. The prosecution used defendants' own social media posts, Telegram messages, and public media appearances as primary evidence. The case illustrates: in political prosecutions, the prosecution's goal is often not to prove criminal intent but to establish factual predicate for legal theories (conspiracy, subversion) that are broadly written. Operational security for political defendants means minimizing the documentation of organizing activities that could be reframed by a hostile legal theory.
+
+**Hong Kong protest network (2019-2020 adaptation)**: The 2019 Anti-Extradition Bill protests and the subsequent National Security Law (July 2020) produced one of the best-documented case studies in real-time activist operational security adaptation. The trajectory has direct lessons for US-based activists.
+
+*Phase 1 — Pre-NSL (June-December 2019)*: Protesters coordinated using LIHKG (a Reddit-like forum), Telegram channels, and AirDrop. The "leaderless" model was deliberate — by decentralizing decision-making through open voting on LIHKG rather than through identified leaders, protesters reduced the value of any single arrest to law enforcement. AirDrop was used to distribute leaflets inside MTR trains and public spaces in ways that bypassed China's censorship because AirDrop operates peer-to-peer without network routing. Telegram was the primary organizing tool. However, Telegram's security architecture has a critical flaw: by default, it allows any user to match a phone number in their contacts to a Telegram username — meaning police who arrested protesters could potentially identify other protesters in the arrested person's contact list. Telegram was eventually pressured to disable this feature for Hong Kong users. Ivan Ip's arrest illustrates the risk: as administrator of a 20,000-person Telegram group, he was forced to provide device access, potentially exposing all 20,000 members.
+
+*Phase 2 — Post-NSL (July 2020 onward)*: The National Security Law, enacted June 30, 2020, made "subversion," "secession," and "collusion" crimes punishable by life imprisonment. The response was immediate and documented: pro-democracy organizations disbanded; prominent figures including Nathan Law fled Hong Kong; activists deleted social media accounts and digital archives; diaspora networks established division of labor between public-facing members (willing to accept reputational exposure) and operational-support members (maintaining deep cover). The diaspora adaptation involved creating diaspora media outlets, shifting organizing to end-to-end encrypted platforms that Telegram is not by default, and compartmentalizing knowledge — supporters in Hong Kong who had no operational knowledge could not provide it under coercive questioning.
+
+*Operational lessons for US activists*:
+1. Platform security defaults matter at scale: Telegram's default contact-matching feature exposed entire networks in a single arrest. Always audit and harden platform privacy settings before a crisis, not during it.
+2. Leaderless coordination is resilient to decapitation but requires shared decision-making infrastructure that is itself secure. LIHKG's open-access model worked because the forum was outside the PRC's technical reach; US equivalents (Signal groups, secure forums) require hardened access control.
+3. The window for operational security adjustment is before legislative or enforcement escalation, not after. The NSL created a 48-72 hour window during which activists could assess their exposure and make departure or cover decisions. Most who waited beyond that window had fewer options.
+4. Diaspora division of labor is a structural model worth adopting early: not all members of a network need the same exposure profile. Mapping who can operate publicly vs. operationally is a planning step, not an emergency response. In January 2021, 55 Hong Kong pro-democracy figures were arrested under the National Security Law for organizing and participating in an informal legislative primary. Thirty-five percent of all NSL arrests were predicated on online speech. The prosecution used defendants' own social media posts, Telegram messages, and public media appearances as primary evidence. The case illustrates: in political prosecutions, the prosecution's goal is often not to prove criminal intent but to establish factual predicate for legal theories (conspiracy, subversion) that are broadly written. Operational security for political defendants means minimizing the documentation of organizing activities that could be reframed by a hostile legal theory.
 
 **Asylum seeker defense (ongoing)**: For asylum seekers facing deportation, the legal defense framework is distinct — it runs through immigration court, not criminal court. The key pre-crisis steps are: filing an I-589 (Asylum Application) as early as possible (this establishes a legal record and triggers certain due process protections), obtaining legal representation before any removal proceedings are initiated, and documenting the basis for fear of persecution with as much corroborating evidence as possible (country condition reports, organizational membership documentation, news articles, medical records if persecution involved physical harm).
 
@@ -496,6 +510,76 @@ If none of the above apply: departure is legally permissible and the decision is
 - Using your primary US-linked phone in the receiving country, which creates a location record linking your legal identity to the destination.
 
 **Sources**: [Canada–US STCA](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/agreements/safe-third-country-agreement.html), [Bill C-12 asylum changes (March 2026)](https://www.canada.ca/en/immigration-refugees-citizenship/news/2026/03/new-immigration-and-asylum-measures-from-bill-c-12-the-strengthening-canadas-immigration-system-and-borders-act-have-become-law.html), [UNHCR Iceland](https://help.unhcr.org/iceland/), [Irish Refugee Council](https://www.irishrefugeecouncil.ie), [Relocate.World US Asylum Abroad 2026](https://www.relocate.world/articles/us-citizens-seeking-asylum-abroad-2026), EFF Border Crossing Guide at [ssd.eff.org](https://ssd.eff.org).
+
+---
+
+### Playbook B-2: Device Will Be Seized in Six Hours — Emergency Evidence Preservation
+
+**Threat context**: You have credible reason to believe your device will be seized by law enforcement within hours — a warrant is being executed, you are about to be arrested, law enforcement is en route, or you have been told to surrender a device. This playbook addresses the window between warning and seizure. It is the most time-compressed scenario in this document.
+
+**The two competing priorities**: Evidence preservation (protecting data you want to keep accessible for your own defense) and evidence minimization (ensuring law enforcement cannot use your device as a source of evidence against you or your network) are in tension. Both are legitimate goals but they require different actions and must be prioritized by threat type.
+
+- If you are primarily trying to **protect your own defense evidence** (documents, communications showing government misconduct, correspondence with your attorney): focus on secure backup before seizure.
+- If you are primarily trying to **prevent your device from being used as a source of evidence against you or your network**: focus on minimization and BFU state.
+- In most cases, both matter. The sequence below addresses both, in priority order given time constraints.
+
+**Immediate assessment (do this first, takes 2 minutes)**:
+
+1. How much time do you actually have? Be realistic — if you have 20 minutes, that changes what is achievable compared to 6 hours.
+2. What is on this device that you most need to protect? Identify the three highest-priority categories: (a) material you need for your own defense, (b) contacts and network information that would expose others, (c) personal data with no legal relevance.
+3. Is your attorney already aware of this situation? If not, contact them before anything else. Evidence preservation strategy should be directed by your attorney — what you preserve and how may affect privilege and admissibility.
+
+**Hour 0-1: Contact attorney and begin secure backup**
+
+Step 1 — Attorney contact (do this first): Signal your attorney or call on an encrypted line. Tell them what is happening and that a device seizure appears imminent. Ask whether they want you to preserve any specific materials. Their direction takes priority over this playbook — they know your legal situation.
+
+Step 2 — Export critical legal defense documents: Any documents that support your legal position — attorney correspondence, court filings, documentary evidence of government misconduct, organizational records — should be uploaded to an end-to-end encrypted location your attorney can access. ProtonDrive (end-to-end encrypted) or a secured Backblaze B2 archive are appropriate. Do not upload to Google Drive, iCloud (without Advanced Data Protection enabled), or Dropbox — these respond to law enforcement process. Signal your attorney the access credentials via a message set to disappear in 24 hours.
+
+Step 3 — Hash critical files immediately: For any file that you intend to use as evidence, compute a SHA-256 hash (on Mac: `shasum -a 256 filename`; on Linux: `sha256sum filename`; on Windows: `CertUtil -hashfile filename SHA256`). Store the hash value in a message to your attorney. This creates a cryptographic proof that the file has not been modified, which is essential for evidentiary admissibility if you later argue government tampering.
+
+Step 4 — Screenshot and archive Signal conversations relevant to your defense: Signal's disappearing messages may destroy evidence you need before your attorney can review it. If conversations are directly relevant to your legal defense and have not been reviewed by your attorney, screenshot them and include them in your secure backup. Do this selectively — your attorney should know what you are preserving. Preserve only what has legal significance; preserving everything creates an unmanageable archive and may include material that harms your defense.
+
+**Hour 1-3: Network notification and minimization**
+
+Step 5 — Notify your network (using pre-agreed code language): Use your Layer 2 device (not the device about to be seized) to alert key contacts. Use a pre-agreed code signal — not explicit language — because even your Layer 2 communications may be monitored if law enforcement is executing a warrant against you. The goal is to let your network know to activate their own protocols without disclosing your specific situation over potentially monitored channels.
+
+Step 6 — Review and reduce your network exposure on the device being seized: Do not delete communications in bulk — this may constitute obstruction of justice if you are under active investigation and the data is responsive to a warrant. However, if disappearing messages are already set on Signal conversations, let them run — you did not specifically delete them in response to legal process (they were already set to expire). The legal distinction matters: a pre-existing disappearing message timer is defensible; a bulk deletion after receiving a target letter is not.
+
+Step 7 — Log out of cloud accounts: Log out of iCloud, Google, Dropbox, and any other cloud service from the device. CBP and law enforcement have argued that cloud data accessible from a device at the time of seizure is "on" the device for search purposes. Logging out means the data requires a separate warrant directed at the cloud provider — a higher legal bar. This is not obstruction; it is a recognized privacy protection step. (Note: this step is explicitly recommended in EFF's border crossing guide and applies equally to domestic device seizure contexts.)
+
+Step 8 — Enable additional authentication on accounts: Enable a hardware key or additional authentication factor on any account that has not already been hardened. This prevents law enforcement from using password reset vectors to access accounts even after obtaining your device. If you use a TOTP authenticator, ensure the seeds are not stored on the device being seized.
+
+**Hour 3-5: Device preparation**
+
+Step 9 — Decide whether to factory reset: **This is a legally consequential decision that you must discuss with your attorney.** Factory resetting a device after receiving a target letter or grand jury subpoena that covers that device's contents can constitute obstruction of justice (18 U.S.C. § 1519, destruction of evidence). If no active legal process has been served requiring preservation of the device's contents, a factory reset is a legal act. If you have received any legal process requiring preservation, do not reset without attorney direction.
+
+If your attorney advises that reset is legally permissible: A full factory reset returns the device to BFU state and destroys all user data. On iPhone, Settings → General → Transfer or Reset iPhone → Erase All Content and Settings. On Android, Settings → General Management → Reset → Factory Data Reset. A factory reset does not erase data from forensic recovery tools in all circumstances — it removes the file system pointers, but some data may be recoverable from flash storage by advanced forensics tools. However, it substantially reduces the evidentiary value of the device.
+
+Step 10 — If you are not resetting: Power off the device fully. Do not leave it in airplane mode or screen-locked. A powered-off device is in BFU state; the encryption keys are not in memory. As documented in `device-hardening-guide.md`, a device in BFU state with a strong alphanumeric passcode and no unpatched extraction vulnerability is substantially resistant to Cellebrite extraction. The longer the device has been powered off, the lower the risk of memory-resident key extraction.
+
+**Hour 5-6: Final actions**
+
+Step 11 — Secure your Layer 2 device: Your Layer 2 (burner) device and your Layer 3 (air-gap) device should be in someone else's physical custody before any law enforcement contact. Do not have them in the same location as the device being seized. If law enforcement executes a search warrant on your home or person, all devices present are typically subject to seizure. Get your secondary devices out of the physical search radius.
+
+Step 12 — Document what is on the device: Before seizure, create a written memo to your attorney (via secure channel) summarizing what the device contains — especially what categories of data are on it, what applications are installed, and what cloud accounts were linked. This helps your attorney assess what law enforcement has obtained and prepares them to file suppression motions if appropriate.
+
+Step 13 — Do not consent to the search: When law enforcement arrives, state clearly: "I do not consent to searches." Even if they have a warrant and will execute the search regardless, your stated non-consent preserves your right to challenge the warrant's validity and scope in court. Request to see the warrant — you are entitled to inspect it. Note what it specifically covers, because a warrant for "electronic devices" may or may not legally cover specific cloud accounts, and over-execution of the warrant scope is grounds for suppression.
+
+**After seizure**:
+
+- Assume the device is permanently compromised. Do not use it for sensitive communications if it is returned.
+- Request a Form 6051D (custody receipt) documenting what was seized — this creates a record for use in any suppression motion.
+- Do not attempt to reconstruct destroyed or reset data — this may be inadvertent obstruction if the device is under active legal process.
+- Your attorney should immediately request a copy of any search warrant affidavit that can be unsealed (some are sealed during investigation; unsealing can be sought once charges are filed or the investigation becomes public).
+
+**Common failure modes**:
+- Bulk-deleting communications after receiving legal process — this is obstruction regardless of the content. Let disappearing timers run; do not manually mass-delete.
+- Logging out of cloud accounts but leaving the device unlocked at seizure — law enforcement can often still access cached data and session tokens even after logout. Power-off is the stronger posture.
+- Notifying your network over the same device that is about to be seized — if that device is monitored, your warning reveals your network to investigators.
+- Resetting the device without attorney direction when legal process requiring preservation has been served.
+- Preserving evidence in a location law enforcement can also compel — such as an iCloud backup without Advanced Data Protection, which Apple will produce under a warrant.
+
+**Sources**: [EFF Border Crossing Guide (which covers device seizure generally)](https://ssd.eff.org/module/things-consider-when-crossing-us-border), [Signal Secure Backups documentation](https://support.signal.org/hc/en-us/articles/9708267671322-Signal-Secure-Backups), [Signal Disappearing Messages](https://support.signal.org/hc/en-us/articles/360007320771-Set-and-manage-disappearing-messages), [Activist Security Checklist — Signal](https://activistchecklist.org/signal/), [18 U.S.C. § 1519 (evidence tampering)](https://www.law.cornell.edu/uscode/text/18/1519), BFU/AFU forensic state analysis from `device-hardening-guide.md`.
 
 ---
 

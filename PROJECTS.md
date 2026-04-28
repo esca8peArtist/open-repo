@@ -1110,13 +1110,12 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 **NEW ITEMS (Session 595 — Exploration Queue Refresh)**:
 
-- **resistance-research: Phase 3 Candidate 4 — Financial Sector Independence and Banking System Resilience** (Priority 1, HIGH-ROI for Goal advancement)
-  - **Scope**: Research on structural protections for financial system independence post-capture. (1) Banking system architecture: Federal Reserve independence and governance, FDIC authority, OCC/Federal Reserve overlapping jurisdiction, (2) Financial sector vulnerabilities: politicization of banking regulation, selective enforcement targets, capital allocation weaponization, (3) Historical precedent: 2008 financial crisis and regulatory capture mechanics, Argentina banking collapse 2001-2002, Turkey's financial weaponization 2016-2023, (4) International precedent: EU banking union independence model, Canada central bank autonomy, IMF safeguards, (5) Recovery pathways: Fed independence restoration, regulatory agency structural reform, anti-corruption enforcement within financial sector
-  - **Goal**: Identify financial sector as critical node for democratic resilience (capital access to non-compliant organizations, funding for civic institutions, economic independence)
-  - **Expected output**: `domains/domain-financial-sector-independence.md` (8,000-10,000 words, 40+ sources), reform pathways, international case studies
-  - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED — ready for immediate execution
-  - **Notes**: Complements Phase 3 civil service/judiciary/media work by addressing economic power asymmetry
+- ✅ ~~**resistance-research: Phase 3 Candidate 4 — Financial Sector Independence and Banking System Resilience** (Priority 1, HIGH-ROI)~~ **COMPLETE (Session 607)**
+  - **File**: `domains/domain-38-financial-sector-independence.md` (9,577 words, 64 sources)
+  - **Completion date**: 2026-04-28 Session 607
+  - **Critical finding**: Four-vector coordinated siege on Fed independence (DOJ weaponization, Trump v. Cook constitutional detonator, Basel III softening, fintech regulatory capture)
+  - **Cross-domain connections**: Linked to Domains 34, 35, 6, 29
+  - **Status**: Production-ready for Phase 3 distribution (finance-sector academics, policy orgs, progressive think tanks)
 
 - **resistance-research: Phase 3 Candidate 5 — Legislative Branch Capacity and Congressional Independence** (Priority 1, MEDIUM-ROI for Goal advancement)
   - **Scope**: Research on structural reforms for congressional institutional independence and legislative capacity. (1) Congressional staffing and expertise: CRS budget/authority, GAO independence, JCT independence, historical institutional knowledge loss, (2) Committee independence: subcommittee autonomy, minority party voice, ethics enforcement, (3) Legislative process protections: filibuster mechanics and democratic outcomes, rules committee autonomy, amendment process, (4) International precedent: UK parliamentary procedure independence, German Bundestag commissioning structure, European parliament powers, (5) Recovery pathways: congressional modernization, expert staffing restoration, budget/authority protection via statute
