@@ -47,6 +47,62 @@
 
 ---
 
+## 2026-04-28 20:51–21:22 UTC — Session 604 — Autonomous Exploration Queue: 3 Parallel Agents
+
+**Orchestrator Orientation** (20:51 UTC):
+- **Block Status**: Stockbot engine verification failed — crashed at 19:36 UTC with unknown shutdown. Block remains active. All major projects blocked on user actions.
+- **Exploration Queue**: 3 active items identified. No new items needed.
+- **Action**: Spawn 3 parallel agents on exploration queue items (independent research tasks).
+
+**WORK COMPLETED**:
+
+✅ **1. Amazon FBA vs. Etsy Fulfillment Strategy Analysis** (mfg-farm)
+- **File**: `projects/mfg-farm/amazon-fba-analysis.md` (5,765 words, 546 lines)
+- **Key Findings**:
+  - **Economics**: At 100 units/month, Amazon FBA takes $557 more in fees than Etsy on $2,899 revenue
+  - **Decision**: Etsy-only for Phase 1 (best margins until 50+ monthly sales)
+  - **FBA Inflection Point**: Phase 2 adds FBA only after 50 units/month with 15+ Etsy reviews @ 4.8+
+  - **Cost Matrices**: Per-unit economics at 10/50/100 unit scales, plus Etsy vs. FBA fee breakdown
+  - **Cold-Start Strategy**: Amazon Vine ($200 credit) + Sponsored Products ($3/day × 60 days) to break review dependency
+- **Recommendation**: Hybrid phasing (Etsy launch → FBA at 50+ units) matches capital constraints and market demand signals
+- **Status**: Production-ready for mfg-farm post-test-print launch planning
+
+✅ **2. May 2026 Civic Developments Tracker** (resistance-research)
+- **File**: `projects/resistance-research/MAY_2026_TRACKER.md` (production-ready baseline established)
+- **Key Findings**:
+  - **Week 1 (April 28–May 4) Critical Convergence**: War Powers 60-day deadline (May 1, Iran) + Senate Reconciliation 2.0 (May 15 committee deadline for ICE/DHS funding)
+  - **Domain 38 Candidates Identified**:
+    - 38-A: Counter-court prosecutorial retaliation (Abrego Garcia pattern)
+    - 38-B: Fiscal Constitution Under Duress (Reconciliation 2.0 + ICA challenge + Iran supplemental)
+    - 38-C: Iran War Economic Fallout (defer to Domain 31x instead)
+  - **Most Urgent Updates Needed** (post-May 1): Domain 19f (Iran breach documentation), Domain 6 (Fed independence post-Trump v. Slaughter)
+  - **Priority Ranking**: War Powers > Fiscal Authority > SCOTUS > Election Security > Prosecutorial > Voting Rights (by likelihood of overnight proposal obsolescence)
+- **Status**: Baseline week populated with all 6 monitoring categories, ready for weekly updates
+
+✅ **3. High-Risk Population Protection Protocols** (cybersecurity-hardening)
+- **File**: `projects/cybersecurity-hardening/high-risk-populations.md` (expanded to 861 lines)
+- **New Content Added**:
+  - **Hong Kong Protest Network Case Study** (2019–2020): Two-phase analysis
+    - Pre-NSL: LIHKG voting model, AirDrop peer-to-peer, Telegram contact-matching vulnerability
+    - Post-NSL: organizational disbandment, diaspora flight, digital archive deletion
+    - Operational lessons: platform defaults matter at scale; leaderless coordination needs secure infrastructure; adjustment windows close fast; diaspora division of labor should be pre-mapped
+  - **New Playbook B-2**: Device seizure emergency protocol (13-step procedure, 6-hour notice)
+    - Attorney contact first; SHA-256 hash before cloud upload; pre-agreed network notification codes; BFU state maximization; Layer 2/3 physical separation
+  - **April 27, 2026 Update**: SCOTUS oral arguments (*Chatrie v. United States*) on geofence warrants; justices skeptical of unrestricted-access claim; favorable ruling could create retroactive suppression grounds
+- **Status**: Production-ready for institutional distribution to immigration legal aid, activism networks, diaspora organizations
+
+**Integration Notes**:
+- Amazon FBA analysis: Awaits mfg-farm user test print completion before deployment
+- May 2026 Tracker: Ready for weekly updates through May/June; decision points for Domain 38 research trigger post-May-1
+- High-Risk Protocols: Ready for immediate distribution (complements existing device-hardening-guide.md)
+
+**Next Session Items** (if all main projects remain blocked):
+- Continue weekly May 2026 tracker updates
+- Stockbot post-Gate-2 operations roadmap (blocked on engine restart)
+- Seedwarden email list building strategy (blocked on Phase 1 conversion data)
+
+---
+
 ## 2026-04-28 19:28–20:32 UTC — Session 603 — Parallel Exploration Queue Execution (2 of 3 items)
 
 **Orchestrator Orientation** (19:28 UTC):

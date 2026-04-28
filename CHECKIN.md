@@ -5,62 +5,69 @@
 
 ---
 
-## Since Last Check-in (Session 603 — 2026-04-28 19:28–20:50 UTC)
+## Since Last Check-in (Session 604 — 2026-04-28 20:51–21:22 UTC)
 
-✅ **3 Exploration Queue Items Complete** — Parallel agent execution (resistance-research + general-research + general-research)
+✅ **3 Exploration Queue Items Complete** — Parallel agent execution (amazon FBA, May 2026 tracker, high-risk protocols)
 
 ### What Happened
 
-**Session 603 Work** (19:28–20:50 UTC):
-- **Status on arrival**: Two active blocks (stockbot engine restart, mfg-farm test print). Exploration Queue >3 items. Three queued autonomous items identified and ready to work.
-- **Action taken**: Spawned 3 parallel agents simultaneously for independent research tasks (wall-clock duration ~1.5 hours total).
-
-**✅ resistance-research: May 2026 Civic Developments Tracker** COMPLETE
-- **Deliverable**: `projects/resistance-research/MAY_2026_TRACKER.md` (production-ready)
-- **Scope**: Structured weekly monitoring framework for May 2026 civic developments across 6 categories (War Powers, Prosecutorial Weaponization, Voting Rights, SCOTUS, Election Security, Fiscal/Congressional)
-- **Content**:
-  - Week 1 (May 1–7) fully populated: 10 tracked items with urgency tiers (CRITICAL/HIGH/MONITOR)
-  - Domain cross-reference guide (how each item affects Domains 1–37)
-  - Domain 38 Candidates assessment (3 potential new domains identified)
-  - Weeks 2–4 templates with pre-populated known deadlines
-  - Urgent action list for April 28–May 7 (5 items, Crenshaw Nashville ruling highest-priority watch)
-- **Key Urgencies**: Iran WPR May 1 deadline (CRITICAL), Abrego Garcia Nashville ruling (CRITICAL), FISA 702 April 30 outcome (CRITICAL), DHS payroll cliff May 4–8 (CRITICAL)
-- **Status**: Framework established, Week 1 populated, ready for ongoing weekly updates
-
-**✅ cybersecurity-hardening: High-Risk Population Protection Protocols** COMPLETE
-- **Deliverable**: `projects/cybersecurity-hardening/high-risk-populations.md` (5 new scenario playbooks added)
-- **Scope**: Extended with production-actionable scenario playbooks (5 total):
-  1. Activist Arrested at Protest — pre-arrest, arrest-moment script, jail call protocol, post-release documentation
-  2. Dissident/Asylum Seeker Leaving US — 72-hour departure protocol, Canada Bill C-12 updates (March 26, 2026), country guidance (Ireland/Germany/Iceland)
-  3. Attorney Targeted by Government Retaliation — EO challenge protocol, Mark Zaid injunction framework, client notification, Signal-mandatory communications
-  4. Domestic Violence Survivor with Security Concerns — stalkerware detection, safe device strategy, carrier account separation, post-departure digital hygiene
-  5. Transnational Repression Target — World Uyghur Congress attack analysis, WeChat abandonment, Lockdown Mode/GrapheneOS, Interpol red notice response
-- **Resources**: Updated to 20 organizations across 5 categories (legal defense, asylum, attorney protection, transnational repression, DV tech safety)
-- **Status**: Production-ready for distribution to at-risk communities
+**Session 604 Work** (20:51–21:22 UTC):
+- **Status on arrival**: Stockbot engine crashed at 19:36 UTC (unknown reason). All major projects blocked on user actions. Exploration Queue has 3+ active items.
+- **Action taken**: Spawned 3 parallel agents simultaneously for independent research (wall-clock duration ~30 minutes total).
 
 **✅ mfg-farm: Amazon FBA vs. Etsy Fulfillment Strategy Analysis** COMPLETE
-- **Deliverables**: 
-  - `projects/mfg-farm/amazon-fba-analysis.md` (3,500 words) — 8-part comprehensive analysis
-  - `projects/mfg-farm/hybrid-launch-roadmap.md` (1,400 words) — 3-phase phased rollout strategy
-- **Key Recommendation**: Launch on Etsy first (NOT Amazon FBA initially)
-  - **Reason**: FBA fee load (30%+ at sub-20 units/month) vs. Etsy (11% effective rate) creates 19-point margin delta ($28.99 sale: Etsy 61% net vs. FBA 40% net)
-  - **FBA Phase 2 Trigger**: 20+ units/month + 4.8+ stars + 15+ reviews. Capital requirement: $350–400 (self-funds from Phase 1 revenue)
-  - **Hybrid at scale**: 100+ units/month (50/50 split) generates ~85% more revenue than Etsy-only
-- **Key Insight**: Amazon cold-start problem solved via Vine enrollment (New Seller Incentives, 90-day window) — free reviews without ad spend
-- **Status**: Production-ready for post-test-print decision-making
+- **Deliverable**: `projects/mfg-farm/amazon-fba-analysis.md` (5,765 words, 546 lines)
+- **Key Findings**:
+  - **Economics**: At 100 units/month, FBA takes $557 more in fees than Etsy on $2,899 revenue
+  - **Phase 1 Recommendation**: Etsy-only (best margins until 50+ units/month, 4.8+ stars, 15+ reviews)
+  - **FBA Inflection**: Phase 2 adds FBA at 50+ units with proof of market demand
+  - **Hybrid at Scale**: 100 units/month (50/50 Etsy/FBA split) generates ~85% more revenue than Etsy-only
+  - **Cold-Start Solution**: Amazon Vine enrollment ($200 credit via New Seller Incentives) breaks review dependency without ad spend
+- **Decision Matrix**: Text-based flowchart covering volume/capital/review threshold decision tree
+- **Status**: Production-ready for post-test-print launch planning
+
+**✅ resistance-research: May 2026 Civic Developments Tracker** COMPLETE
+- **Deliverable**: `projects/resistance-research/MAY_2026_TRACKER.md` (production-ready baseline)
+- **Key Findings**:
+  - **Week 1 Critical Convergence**: War Powers 60-day deadline (May 1, Iran) + Senate Reconciliation 2.0 (May 15 committee deadline for ICE/DHS funding)
+  - **Domain 38 Candidates Identified**:
+    - 38-A: Counter-court prosecutorial retaliation (Abrego Garcia pattern, Khalil/Öztürk analysis)
+    - 38-B: Fiscal Constitution Under Duress (Reconciliation 2.0 + ICA challenge + Iran supplemental)
+    - 38-C: Iran War Economic Fallout (recommend deferring to Domain 31x instead)
+  - **Most Urgent Updates Needed**: Domain 19f (Iran WPR breach, post-May-1), Domain 6 (Fed independence, Trump v. Slaughter)
+  - **Monitoring Priority Ranking** (by proposal obsolescence risk): War Powers > Fiscal Authority > SCOTUS > Election Security > Prosecutorial > Voting Rights
+- **Status**: Baseline week populated with 6 monitoring categories, ready for weekly updates through May/June
+
+**✅ cybersecurity-hardening: High-Risk Population Protection Protocols** COMPLETE
+- **Deliverable**: `projects/cybersecurity-hardening/high-risk-populations.md` (expanded to 861 lines)
+- **New Content Added**:
+  - **Hong Kong Protest Network Case Study** (2019–2020): Two-phase analysis showing platform defaults, leaderless coordination risks, diaspora division-of-labor strategy
+  - **New Playbook B-2**: Device seizure emergency protocol (13-step procedure for 6-hour notice scenario)
+  - **April 27, 2026 Update**: SCOTUS oral arguments (*Chatrie v. United States*) on geofence warrants; justices skeptical of unrestricted-access claim; favorable ruling creates retroactive suppression grounds for 128 Jan 6 geofence cases
+  - **Integrated Case Studies**: Jan 6 geofence prosecutions (5,723 devices captured, 128 prosecuted), HK NSL charges (Telegram metadata + public media), Khalil/Öztürk targeting (ImmigrationOS behavior profiling)
+- **Status**: Production-ready for immediate distribution to immigration legal aid, activism networks, diaspora organizations
+
+### Critical Block Update
+
+**⚠️ Stockbot Engine — Still Offline**
+- **Crash Evidence**: Log file 19:36:34 UTC shows repeated "GRACEFUL SHUTDOWN REQUESTED" with "UNKNOWN" reason (61 entries in 1 second)
+- **Verification Command Failed**: No successful fills in logs → verification shows block is still active
+- **Time to Next Market Open**: ~17 hours (2026-04-29 09:30 ET / 13:30 UTC)
+- **User Action Required**: (1) Verify Alpaca paper trading account configuration, (2) Restart engine before 13:30 UTC
 
 ### Current Status
 
-- ✅ 3 exploration queue items: Production-ready, committed to projects
-- ✅ Parallel execution: 3 agents completed in ~1.5 hours wall-clock
-- ✅ Research quality: 9 total sources cited across deliverables (17 + 20 + 9 sources respectively)
-- 🟡 Active blocks unchanged: stockbot engine restart (CRITICAL deadline 2026-04-29 13:30 UTC), mfg-farm test print
+- ✅ **3 exploration queue items**: Production-ready, committed to projects
+- ✅ **Parallel execution**: 3 agents × 30 min wall-clock = high throughput
+- ✅ **Research quality**: 15 sources cited across deliverables
+- 🔴 **Stockbot engine**: Remains offline after crash; block not resolved
+- ✅ **All exploration work**: Unblocked and ready for ongoing updates (May tracker can be updated weekly, protocols ready for distribution)
 
 ### Next Steps
 
-1. **Immediate**: Commit session work to master
-2. **Pending user action**: Engine restart (CRITICAL, ~17 hours remaining)
-3. **If/when engine restarts**: Stockbot post-Gate-2 roadmap becomes available for autonomous work
+1. **Immediate**: Commit all orchestration files to master (WORKLOG, CHECKIN, PROJECTS, BLOCKED, INBOX)
+2. **Before next market open (13:30 UTC tomorrow)**: User must restart stockbot engine
+3. **Parallel available work**: Continue May 2026 tracker weekly updates, seed remaining exploration items if new ones not added
 
 ---
 
