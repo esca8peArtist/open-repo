@@ -5,20 +5,39 @@
 
 ---
 
-## Current Session (Session 574 — 2026-04-28 09:42–09:50 UTC — Pre-Market Holding Pattern + Post-Market Queue Readiness)
+## Current Session (Session 575 — 2026-04-28 09:51–10:05 UTC — Domain Maintenance Complete + Market-Open Readiness)
 
-**Status**: 🟢 **ALL PRE-MARKET WORK COMPLETE + POST-MARKET QUEUE READY** — Session 573 completed April-May domain updates and Phase 3 monitoring infrastructure. Current session (574) conducted orientation and confirmed: no new autonomous work available before market open. All top-priority projects blocked on user actions (engine restart, distribution decision, test print). Post-market Exploration Queue items ready for activation. **T-3h 48min to market open.**
+**Status**: 🟢 **DOMAIN MAINTENANCE COMPLETE + MARKET-OPEN STABLE** — Executed April-May 2026 domain content updates (resistance-research). Domain 19f now documents Iran constitutional crisis, NATO withdrawal context, Taiwan strategic ambiguity, and cascading constraint-failure synthesis. Framework current through 2026-04-28. All top-priority projects remain blocked on user actions (engine restart CRITICAL deadline 13:30 UTC, distribution path decision, test print, tag corrections). Post-market Exploration Queue ready. **T-2h 31min to market open.**
 
-**Session 574 Work** (09:42–09:50 UTC):
-- ✅ Orientation: Re-verified ORCHESTRATOR_STATE, BLOCKED, INBOX — no new changes
-- ✅ Exploration Queue assessment: Pre-market items DONE (Sessions 571-573), post-market items queued and waiting
-- ✅ Blocker audit: All top-4 projects remain blocked on named user actions (engine restart, distribution decision, test print, tag corrections)
-- ✅ Status: Holding pattern until either: (a) market open + engine restart, or (b) user distribution decision, or (c) user test print confirmation
+**Session 575 Work** (09:51–10:05 UTC):
+- ✅ Orientation: Verified ORCHESTRATOR_STATE, INBOX, PROJECTS — confirmed resistance-research has unfinished exploration item
+- ✅ resistance-research: April-May 2026 Domain Content Maintenance COMPLETE (Agent a3463b9830f1e34e3)
+  - Domain 19f: Iran May 1 deadline context, NATO/Taiwan/Venezuela constraint-failure synthesis, 3 constitutional reforms
+  - surveillance-tracking.md: FISA Section 702 pre/post-deadline assessment and checklist
+  - MAY_2026_UPDATES.md: Consolidated reference tracking all 8 updated domains
+  - All files committed to resistance-research submodule
+- ✅ WORKLOG.md updated with Session 575 work
+- ✅ Status: Framework production-ready for Phase 1 institutional distribution (awaiting user path A / A+37 / B decision)
 
-**Next Session Priority**:
-- **If engine restarts before 13:30 UTC**: Monitor market open (13:30–14:30 UTC), begin post-trade analysis setup, activate Post-Gate-2 roadmap research (post-market, ~20:30 UTC+)
-- **If distribution decision made**: Execute Phase 1 setup immediately (contact sequencing, messaging preparation, institutional outreach coordination)
-- **If test print confirmed**: Activate launch prep continuation (supplier contracts, bundle strategy, Etsy photo shoot prep)
+**Critical Blocking Items** (user action required):
+1. **🚨 CRITICAL — stockbot engine restart** (deadline 13:30 UTC / 09:30 ET, ~2h 31min remaining)
+   - Command: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py &`
+   - Impact: 11-ticker portfolio resumes, AAPL position resumes, trading signals fire at market open
+   
+2. **resistance-research distribution path** (can be decided anytime)
+   - Path A / Path A+Domain37 Hybrid (RECOMMENDED) / Path B
+   - Decision triggers Phase 1 institutional distribution immediately
+
+3. **mfg-farm test print** (user action anytime)
+   - Validates CadQuery designs → triggers supplier negotiation
+
+4. **seedwarden Phase 1 launch** (user action anytime)
+   - 3 tag corrections + Etsy verification → 21 products ready to list
+
+**Next Actions**:
+- **T-2h 31min**: Awaiting stockbot engine restart (user action — CRITICAL)
+- **Post-13:30 UTC**: Market-open monitoring, post-trade analysis setup, Post-Gate-2 roadmap research (post-market)
+- **Anytime**: Accept distribution path decision → execute Phase 1 setup immediately
 
 ---
 

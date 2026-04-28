@@ -4,6 +4,56 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 575 (09:51–10:05 UTC) — Orchestrator: Domain Content Maintenance + Market-Open Readiness
+
+**Work Completed**:
+
+1. ✅ **Orientation & Status Assessment** (09:51–09:52 UTC)
+   - Read ORCHESTRATOR_STATE.md, INBOX.md, PROJECTS.md
+   - Confirmed: ~2h 31min remaining to stockbot market open (13:30 UTC)
+   - INBOX: No new items
+   - Usage: Nominal, no throttle
+   - Assessment: resistance-research has unfinished exploration queue item (Domain Content Maintenance)
+
+2. ✅ **resistance-research: April-May 2026 Domain Content Maintenance COMPLETE** (Agent a3463b9830f1e34e3, 09:52–10:00 UTC)
+   - **Scope**: Integrate April-May 2026 civic developments into 35-domain framework
+   - **Deliverables**: 
+     - Domain 19f (War Powers): New case study on Iran 2026 constitutional crisis, NATO withdrawal context, Taiwan strategic ambiguity, cascading constraint-failure synthesis
+     - surveillance-tracking.md: FISA Section 702 pre-deadline assessment and post-deadline checklist
+     - MAY_2026_UPDATES.md: Consolidated reference tracking all eight updated domains
+   - **Impact**: Proposal content current through 2026-04-28. Framework ready for Phase 1 institutional distribution whenever user selects Path A / A+37 / B.
+   - **Status**: All files committed to resistance-research submodule
+
+**Current Blocking Items**:
+1. **CRITICAL — stockbot engine restart** (user action, deadline 13:30 UTC / 09:30 ET)
+   - Code ready (feature count bug FIXED in Session 560)
+   - Command: `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/
+   - Open AAPL position (36 shares @ $271.04) will resume once engine restarts
+   - Post-market work depends on engine successfully restarting
+
+2. **resistance-research distribution path decision** (user action)
+   - Options: Path A (immediate distribution) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (continue optional updates)
+   - 35 domains complete, policy influencer mapping complete, Tier 1-3 messaging templates ready
+   - Once user decides → orchestrator executes Phase 1 immediately
+
+3. **mfg-farm test print confirmation** (user action)
+   - Business plan, designs, market research, supplier analysis all complete
+   - Blocking Phase 2: supplier negotiation + manufacturing prep
+
+4. **seedwarden Phase 1 launch** (user action)
+   - 3 tag corrections + Etsy account verification needed
+   - Once complete → 21 Phase 1 products ready for immediate upload
+   - Phase 2 all autonomous work done; deferred until Phase 1 conversion data arrives
+
+**Next-Phase Work**:
+- **Immediate (post-market open)**: Market-open monitoring, stockbot position tracking, post-trade analysis dashboard prep
+- **Post-13:30 UTC**: Activate Exploration Queue Item 2 (Post-Gate-2 Operations & Live Trading Scaling Roadmap)
+- **User decisions pending**: trigger Phase 1 institutional distribution (resistance-research) and Phase 2 supplier launch (mfg-farm)
+
+**Session Type**: Research completion + market-open coordination (zero code changes, stability maintained through critical deadline)
+
+---
+
 ## 2026-04-28 Session 574 (09:42–09:50 UTC) — Orchestrator: Pre-Market-Open Holding Pattern Assessment
 
 **Status**: 🟢 **ALL PRE-MARKET AUTONOMOUS WORK COMPLETE** — Session 573 completed all available pre-market Exploration Queue items (Domain updates + Phase 3 Candidate 1). Current session (574) conducted orientation assessment to identify next-phase work. **Result**: All top-priority projects blocked on user actions or market-open event. Post-market Exploration Queue items queued and ready.
