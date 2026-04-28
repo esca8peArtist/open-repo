@@ -470,12 +470,14 @@
   - Conversion-focused metrics: Primary watch on 4 high-ticket products ($18–$22 range)
   - Status: Ready for user review and approval
 
-**Phase 2 Next Work (Session 560 assessment)** — Highest-value autonomous priorities:
-1. **#1 — Wild-edibles habit photos** (16 remaining of 18): Wikimedia search protocol established, 2 complete. No blockers. Est. 1–2 sessions.
-2. **#2 — Native Plants PDF rebuild**: Unblock $20 product frozen at 56.96 MB (Etsy 5 MB limit). Image compression rebuild. Est. 1 session.
-3. **#3 — Zone Quick-Start Card spec**: Lead magnet upgrade for email automation. No blockers. Est. 1 session.
-4. **Deferred — Photography execution**: Awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY.md user decision.
-5. **Deferred — Phase 2 product development**: Premature without Phase 1 conversion data (30-day minimum).
+**✅ COMPLETED (Session 560)** — Phase 2 Autonomous Work:
+1. **#1 — Wild-edibles habit photos (18/18)** ✅: All 16 remaining species copied from native-plants image cache to `assets/wild-edibles/` with `-habit.jpg` naming. Species: Ramps, Redroot Amaranth, Greater Burdock, Common Milkweed, Lamb's Quarters, Chicory, Queen Anne's Lace, Fireweed, Japanese Knotweed, Wild Strawberry, Jerusalem Artichoke, Watercress, Wood Sorrel, Purslane, Cattail, Stinging Nettle. All CC BY-SA (Wikimedia standard). Photo credits page required before Etsy publication.
+2. **#2 — Native Plants PDF** ✅: Already rebuilt April 26 (56.96 MB → 4.91 MB). Current state Etsy-compliant, ready for upload.
+3. **#3 — Zone Quick-Start Card spec**: Lead magnet upgrade for email automation. No blockers. Est. 1 session. Ready for next session.
+
+**Deferred Work**:
+- **Photography execution**: Awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY.md user decision.
+- **Phase 2 product development**: Premature without Phase 1 conversion data (30-day minimum).
 
 **✅ COMPLETED (Session 500)**:
 - **Mockup Tooling** — All 21 products have three mockup angles (tablet, phone, interior)
