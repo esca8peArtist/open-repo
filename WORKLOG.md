@@ -4,6 +4,57 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 585 (12:11–12:18 UTC) — Orchestrator: Queue Management + off-grid-living Distribution Campaign
+
+**Status**: 🟢 **MARKET-OPEN FINAL WINDOW (T-1h 12m)** — Executed autonomous work while awaiting critical stockbot engine restart. Spawned general-research agent to complete off-grid-living distribution campaign (unblocked, high-value delivery).
+
+**Session 585 Work**:
+
+1. ✅ **Orientation & Queue Analysis** (12:11–12:12 UTC)
+   - Verified ORCHESTRATOR_STATE, PROJECTS, BLOCKED, INBOX
+   - Identified: Active blocks on stockbot (engine restart), resistance-research (distribution path), mfg-farm (test print), seedwarden (tag corrections)
+   - Queue assessment: EXPLORATION_QUEUE has 0 immediately available items (2 completed + 1 scheduled post-market + 3 blocked)
+   - **Decision**: Per protocol, add 2-3 new queue items and execute top unblocked work
+
+2. ✅ **off-grid-living: Cross-Platform Distribution Campaign** (12:12–12:18 UTC, Agent a47162ca966fb6540)
+   - **Deliverables**: 
+     - `distribution-campaign-plan.md` (2,400 words) — 5-channel strategy (Reddit, HN, Twitter/X, Dev.to, Medium), 7-day phased rollout, content repurposing map, metrics
+     - `social-posting-templates.md` (1,100 words) — 3-4 copy variants per channel, CTA phrasing, link formatting
+   - **Key insights**: Phased 7-day calendar avoids spam filters, Reddit text posts 2-3x better engagement, Medium last for SEO value, GitHub stars as compound metric
+   - **Status**: Immediately executable by user (review 5min, execute same day)
+   - **Commit**: ef2912d
+
+3. ✅ **Updated EXPLORATION_QUEUE.md**
+   - Marked Item 7 (off-grid-living distribution) as COMPLETED
+   - Confirmed Item 3 scheduled for 20:30 UTC (stockbot post-Gate-2 analysis)
+   - Queue ready for next wave
+
+**Market-Open Status** (T-1h 12m):
+- **Code**: Production-ready ✓ (Sessions 560–584 validation pass)
+- **Config**: Production-ready ✓ (67 sessions, 11 tickers, webhooks)
+- **Infrastructure**: Production-ready ✓ (database, modules, files all present)
+- **Engine**: OFFLINE — awaiting user restart `.venv/bin/python scripts/run_live_trading.py &`
+- **Next**: Monitor until 13:30 UTC for engine restart signal
+
+**Critical User Action Remaining**:
+- **🚨 Engine restart required before 13:30 UTC** (T-1h 12m from session start)
+- Command: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py &`
+- If executed: market open proceeds, first trading signals fire at 13:30 UTC, daily summary posts at 20:00 UTC
+- If not executed by 13:30 UTC: market window closes, 24-hour wait for next session
+
+**Token Budget**: Session completed in parallel work; no blockers to further autonomous execution before market close.
+
+---
+
+## 2026-04-28 — off-grid-living — Cross-platform distribution campaign plan
+
+Produced two immediately-executable distribution files for the off-grid-living GitHub publication:
+
+- `projects/off-grid-living/distribution-campaign-plan.md` (~2,400 words): Executive summary, channel-by-channel strategies (Reddit x3 communities, Hacker News, Twitter/X, Dev.to, Medium), content repurposing map, 7-day phased rollout calendar, metrics framework, shadow ban / spam risk mitigation.
+- `projects/off-grid-living/social-posting-templates.md` (~1,100 words): 3-4 copy variants per channel (Reddit r/offgrid, r/preppers, r/homesteading; HN; Twitter threads x3; Dev.to), CTA reference table, link formatting by platform.
+
+Key decisions: Prioritized Reddit + HN + Twitter as primary channels; excluded LinkedIn and Product Hunt (audience mismatch); sequenced posts 48h apart to avoid spam detection; GitHub stars as primary success metric.
+
 ## 2026-04-28 Session 584 (12:03–12:07 UTC) — Orchestrator: Exploration Queue Seeding + Market-Open Final Readiness
 
 **Status**: 🟢 **ALL AUTONOMOUS WORK COMPLETE — READY FOR MARKET OPEN** — Created EXPLORATION_QUEUE.md with 4 active items. All projects awaiting user decisions or time-dependent events. Next autonomous work scheduled for 20:30 UTC post-market analysis (conditional on Day 1 trading success).

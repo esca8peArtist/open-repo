@@ -5,6 +5,45 @@
 
 ---
 
+## Since Last Check-in (Session 585 — 2026-04-28 12:11–12:18 UTC)
+
+🚨 **CRITICAL DEADLINE: Stockbot market open in ~1h 12m (13:30 UTC / 09:30 ET)**
+✅ **Autonomous work continues in parallel — off-grid-living distribution campaign complete**
+
+**Session 585 Autonomous Work**:
+
+1. ✅ **off-grid-living Distribution Campaign COMPLETE**
+   - Created `distribution-campaign-plan.md` (2,400 words) + `social-posting-templates.md` (1,100 words)
+   - 5-channel strategy with 7-day phased rollout (Reddit, HN, Twitter, Dev.to, Medium)
+   - Immediately executable by user (plan is ready to review and execute same day)
+   - **Commit**: ef2912d
+   - **Status**: Production-ready for user distribution execution
+
+**Market-Open Status**:
+- **Code**: Production-ready ✓ (all validation checks pass)
+- **Config**: Production-ready ✓ (67 sessions, 11 tickers, credentials configured)
+- **Infrastructure**: Production-ready ✓ (database writable, Python environment verified)
+- **Engine**: OFFLINE — awaiting user restart (CRITICAL ACTION REQUIRED)
+- **Timeline**: T-1h 12m remaining until 13:30 UTC market open
+
+**Needs Your Input (CRITICAL — Time-Sensitive)**:
+
+1. **🚨 CRITICAL — Stockbot engine restart (deadline 13:30 UTC / 09:30 ET, T-~1h 12m)**
+   ```bash
+   cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+   bash pre-market-validation.sh  # Verify all systems pass
+   .venv/bin/python scripts/run_live_trading.py &  # Start engine in background
+   ```
+   Then follow `MARKET_OPEN_EXECUTION_RUNBOOK.md` starting at 13:00 UTC.
+
+2. **resistance-research distribution path** (Path A / A+37 / B) — No time pressure. Unlocks Tier 1 distribution execution.
+
+3. **mfg-farm test print** — Validates designs, unlocks supplier negotiation.
+
+4. **off-grid-living social distribution** — Plan now ready for immediate user execution.
+
+---
+
 ## Since Last Check-in (Session 584 — 2026-04-28 12:06 UTC)
 
 🚨 **CRITICAL DEADLINE: Stockbot market open in ~1h 24m (13:30 UTC / 09:30 ET)**
