@@ -4,6 +4,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 570 — 2026-04-28 — Phase 3 Specs JSON: Schema Upgrade to v1.1
+
+**Task**: Execute Phase 3 product expansion roadmap queue item. Confirmed both deliverables exist and are production-complete. Identified gap in JSON schema vs. task brief requirements.
+
+**Gap identified**: `phase-3-product-specifications.json` v1.0 was missing four task-required per-product fields:
+- `sku` — unique product identifier (SW-P3-01 through SW-P3-12; regional SW-P3-R01 to R14; bundles SW-P3-B01 to B03)
+- `supplier_sources` — array format with primary and secondary sources (vs. single-string `supplier` field)
+- `prep_effort` — explicit hour estimate per product with task breakdown
+- `dependencies` — renamed and expanded from `phases_1_dependency` to include hard vs. soft dependency classification
+
+**Changes made to `phase-3-product-specifications.json`**:
+- Bumped version: 1.0 -> 1.1
+- Added `sku` field to all 12 products (SW-P3-01 through SW-P3-12)
+- Added `sku_range` to phase3_regional_listings block
+- Added `sku` to all 3 bundle_summary entries (SW-P3-B01 through SW-P3-B03)
+- Renamed `supplier` -> `supplier_sources` (array with 2 entries per product: primary and secondary source)
+- Added `prep_effort` field to all 12 products with hour breakdown
+- Renamed `phases_1_dependency` -> `dependencies` with hard vs. soft dependency language
+- Renamed `margin` -> `margin_target` for schema consistency with metadata header
+- Updated metadata.schema string to reflect new field names
+- Added `margin_target_all` and `sku_prefix` to metadata block
+
+**Roadmap document**: No changes required. `phase-3-product-expansion-roadmap.md` at 5,825 words with 11 parts (including Part 11 execution timeline options added Session 569) is production-complete. Exceeds 3,500-4,500 word target; additional words are substantive content.
+
+**Validation**: python3 schema check confirms all 15 required fields present on all 12 products. JSON parses cleanly.
+
+**Files modified**:
+- `phase-3-product-specifications.json` — v1.1 schema upgrade
+
+**Files unchanged**:
+- `phase-3-product-expansion-roadmap.md` — production-complete, no changes
+
+---
+
 ## Session 569 — 2026-04-28 — Phase 3 Roadmap: Execution Timeline Options Added
 
 **Task**: Add missing "3–4 execution timeline options (conservative/standard/aggressive)" section required by task brief scope.
