@@ -2,6 +2,103 @@
 
 ---
 
+## April 28, 2026 (Session 554) — Phase 3 Candidate 3: Adversary Response Modeling and Resilience Architecture
+
+**Session type**: Phase 3 structural deepening — opposition modeling and resilience architecture
+**Files created**:
+- `projects/resistance-research/adversary-response-modeling.md` (~6,800 words, production-ready)
+- `projects/resistance-research/resilience-architecture.md` (~3,800 words, production-ready)
+
+### What Was Done
+
+**adversary-response-modeling.md** — Fills the gap identified in Phase 3 planning: the proposal identifies reform pathways but does not model how opposition would respond to implementation or what resilience mechanisms are required. This document does that work systematically.
+
+**Five historical case studies** (Section 1):
+- South Korea 2024–2025: martial law crisis, institutional defense, constitutional reform (National Assembly's July 2025 self-enforcing martial law amendments as resilience design model)
+- Spain 1975–1981: Búnker hardliner opposition, reform-through-law strategy, 23-F coup attempt defeat, EC accession as durability anchor
+- Uruguay 1980–1985: military amnesty extraction, party institutional resilience as the decisive recovery variable, 25-year accountability delay from transition pact impunity
+- Poland 1989–2025: PiS judicial capture, Tusk coalition's obstruction landscape (CT veto, presidential veto, parallel constitutional claims), EU leverage as the most effective pressure point
+- Hungary 2010–2026: full entrenchment architecture (cardinal laws, fixed appointments, media capture, electoral redesign), Tisza's 2026 supermajority victory and remaining obstacles
+
+**Domain-specific obstruction mechanisms** (Section 2): All 35 domains mapped to primary threat and resilience requirement, organized by obstruction type (court defiance, legislative reversal, administrative circumvention, process weaponization, informal enforcement evasion, self-enforcing vs. external pressure).
+
+**Asymmetric advantages** (Section 3): Coalition structural strengths in constitutional supremacy, institutional location (state AGs, independent circuits, CFPB), public support polling, international precedent for each domain, enforcement mechanism multiplicity.
+
+**Integration with Part IV of implementation roadmap** (Section 4): Three new derailment vectors (institutional capture survival, legal theory void, coalition fragility under attrition). Specific modifications to Wave 1, Wave 2, and the 11-vector derailment analysis.
+
+**resilience-architecture.md** — Companion document on design principles for making reforms durable against the opposition playbook.
+
+**Resilience design principles** (Part I): Four principles with historical grounding — statutory durability mechanisms (supermajority requirements, automatic consequence triggers, sunset-prevention clauses, concurrent constitutional track); constituency-based enforcement (AVR as clearest model, public financing, labor rights); institutional redundancy (multiple enforcement pathways); transparency and targeted public attention (mandatory reporting, independent monitors, public dashboards).
+
+**Domain mapping table** (Part II): All 35 domains mapped to primary obstruction risk, self-enforcing status, primary resilience mechanism, secondary mechanism.
+
+**Enforcement architecture** (Part III): Three-tier classification — self-enforcing (AVR, 18-year term limits, IG restoration, Schedule F notification), constituency-enforced (small-dollar public financing, Medicaid/ACA, labor sectoral bargaining, environmental citizen suits), externally-anchored (climate commitments, EU data adequacy, Inter-American Court, WTO). Full sequencing architecture: first-act priorities, first-year priorities, 24-60 month constitutional consolidation.
+
+**Spain vs. Hungary case study** (Part IV): Four-factor analysis of why Spain's consolidation succeeded (reform through existing legal authority, cross-party constitutional legitimacy, EC accession anchor, Moncloa social pact) vs. why Hungary failed for 16 years (speed of entrenchment, fixed appointments without external accountability, media capture, electoral system redesign preventing supermajority). US implications explicit.
+
+**Implementation implications** (Part V): Non-negotiable first-100-day reforms (IG restoration, Schedule F reversal, defiance documentation mechanism) with rationale tied to sequencing logic from comparative cases.
+
+### Research Conducted
+
+- South Korea 2024–2025: Wikipedia martial law crisis; CNN Yoon conviction February 2026; KEIA year-in-review December 2025; Brookings, The Diplomat, Harvard Political Review analyses; India TV News / Asia Live on July 2025 martial law amendment; IDEA Democracy Tracker Republic of Korea July 2025; Constitutional Court April 2025 unanimous ruling
+- Spain 1975–1981: Wikipedia Spanish transition; Wikipedia 23-F coup attempt; Friedrich Naumann Foundation (Suárez); Real Instituto Elcano (international dimensions); ConstitutionNet (constitutional transition); WMU ScholarWorks, Colby College honors thesis (pacted transitions comparative analysis)
+- Uruguay 1980–1985: Library of Congress country studies; Wikipedia Ley de Caducidad; McGill Journal of Political Science; Amnesty International; Al Jazeera (justice crossroads)
+- Poland 1989–2025: Verfassungsblog (polishing broken tribunal); Anna Wójcik/FES February 2025; German Marshall Fund rule of law; Centre for European Reform; IConnectBlog ruling P3/25; Judges for Democracy / fundsforNGOs November 2025
+- Hungary 2010–2026: Al Jazeera April 12 2026; LSE European Politics April 17 2026; Balkan Forum April 21 2026; HRW April 14 2026; OCCRP Polish warning; FSI Stanford; ECPR Loop (patronal system collapse); Verfassungsblog (essential but not enough); Social Europe; Democratic Erosion March 2026
+- Resilience design: IFES paths to democratic resilience; International IDEA designing resilient institutions; V-Dem WP 149; PMC two-stage process; Tandfonline resilience of democracies; Carnegie Endowment April 2025 recovery synthesis
+- US obstruction mechanisms: Washington Post (one-third court defiance July 2025); Brennan Center; Just Security (consent decrees)
+
+### Integration Points
+
+- Section 4 directly modifies `implementation-roadmap.md` Part IV (3 new derailment vectors, Wave 1 and Wave 2 additions)
+- Domain obstruction analysis references specific domain subsections from `democratic-renewal-proposal.md`
+- Spain/Hungary comparison deepens `phase-4-comparative-democratic-recovery.md` Cases 2 and 4
+- Resilience tier sequencing integrates with Wave 1/2/3 architecture in `implementation-roadmap.md`
+- All 35 domains cross-referenced in domain mapping table (resilience-architecture.md Part II)
+
+---
+
+## April 28, 2026 (Session 539) — Phase 3 Monitoring Infrastructure Deep Design
+
+**Session type**: Phase 3 structural deepening — monitoring infrastructure gap-filling
+**Files created**:
+- `projects/resistance-research/phase-3-monitoring-infrastructure-2026.md` (~4,200 words, production-ready)
+
+### What Was Done
+
+**phase-3-monitoring-infrastructure-2026.md** — Extends monitoring-infrastructure-2026.md (Session 531) by resolving four design gaps that document left at the intention level:
+
+1. **Contingency decision trees** — Six high-probability near-term triggers fully branched with specific domain-text changes required at each outcome: Iran WPR May 2026 (3 branches), Trump v. Slaughter June 2026 (3 branches), 2026 midterms (3 branches), Medicaid work requirements January 2027 (2 branches), CISA FY27 defunding (2 branches), FISA post-April 30 (2 branches). Each branch specifies exactly which domain numbers to update, what section to add, and what the implementation roadmap adaptation is.
+
+2. **Domain review cadence matrix** — Full 37-domain assignment to Monthly/Quarterly/Annual cadence with rationale and primary alert source for each. Summary: 24 monthly, 10 quarterly, 3 annual. Maintenance load estimate: 6-8 hours per month for full monitoring pass.
+
+3. **Technical automation specifications** — Implementation details for CourtListener docket alerts (specific cases to set), Federal Register agency subscriptions (CMS, HHS, DOJ, OPM, EPA), LegiScan free tier vs. push API, SCOTUS Monday orders list protocol, Democracy Docket newsletter, OMB apportionment monitoring via Google Alert, KFF/Georgetown CCF manual check schedule. Integrated dashboard option (Airtable free tier vs. Markdown table).
+
+4. **Coalition feedback form** — Full structured intake form with five sections: domain assessment with rating scale and gap identification; operational intelligence questions (pending decisions, most urgent update, active legislative vehicles); framework utility assessment; Phase 2 research direction ranking; and signals-requiring-revision checklist. Processing protocol for completed forms included.
+
+**Part V (Publishing/Authority Strategy)** — Comparative analysis of two think tank models: Just Security's daily manual screening model (weekday screening team, near-real-time currency, labor-intensive) vs. Brennan Center's periodic comprehensive report + update brief model. Hybrid recommendation for the proposal. Explicit distinction between what triggers immediate publication (trigger events, domain updates), what is published monthly (current alerts snapshot), and what stays internal (trigger log, coalition intelligence, distribution pipeline).
+
+### Research Conducted
+
+- CourtListener API documentation (v4.3 authentication, webhook delivery, RSS coverage)
+- Just Security tracker relaunch (confirmed weekday manual screening methodology)
+- LegiScan API documentation (push API timing, keyword alert setup, free vs. paid tiers)
+- Iran WPR status as of April 28 (5 Senate defeats confirmed; May 1 deadline; Branch A as highest-probability outcome)
+- Trump v. Slaughter status (argued December 8, 2025; decision expected June 2026 end of term; conservative majority signaled support for Trump position)
+- Federal Register subscription options (agency-specific email alerts, custom keyword search alerts)
+- OMB apportionment data restoration (taken down March 2025, restored August 15, 2025 per court order; monitoring protocol documented)
+- USASpending.gov API documentation (obligation data, ICA monitoring)
+- FEC reporting lag confirmation (1-hour cache on API; pre-election filing deadlines)
+
+### Integration Points
+
+- Contingency trees reference specific domain document sections from Sessions 529-530 updates
+- Cadence matrix cross-references Tier 1/2/3 classification from monitoring-infrastructure-2026.md
+- Coalition feedback form integrates with coalition-feedback-tracker.md processing protocol
+- Publishing strategy cross-references policy-influencer-mapping.md distribution channels
+
+---
+
 ## April 27, 2026 (Session 538) — Phase 2 Domain Expansion Verification and Content Audit
 
 **Session type**: Phase 2 completion verification, cross-reference integrity check, FISA 702 outcome tracking
