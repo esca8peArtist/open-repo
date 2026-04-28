@@ -5,6 +5,34 @@
 
 ---
 
+## Since Last Check-in (Session 611 — 2026-04-28 22:25–23:55 UTC)
+
+### ✅ Exploration Queue: Objection Handling Framework + Threat Model Implementation Guides
+
+**What Happened**: Identified two high-priority Exploration Queue items with no external blockers. Spawned parallel agents to execute both simultaneously.
+
+#### 1️⃣ resistance-research — Objection Handling & Rebuttal Framework COMPLETE
+- **File**: `projects/resistance-research/objection-handling-framework.md` (468 lines)
+- **Scope**: 20 objections across 6 categories (policy, constitutional, economic, institutional, mechanism skepticism, philosophical)
+- **Key Feature**: Every rebuttal sourced to named domain or Phase 4 document; quick-reference matrix for outreach use
+- **Impact**: Directly unblocks Phase 1 distribution execution — provides pre-vetted responses for policy contacts
+- **Status**: Production-ready, pending batch commit
+
+#### 2️⃣ cybersecurity-hardening — Threat Model-Specific Implementation Guides COMPLETE
+- **Files**: 4 guides (journalist, immigration attorney, undocumented immigrant, activist) + README
+- **Scope**: 
+  - Journalist guide: Source protection, ADP enabling, border protocols, Tails OS
+  - Attorney guide: Client communication security, ProtonMail, California AB 60/AB 1766 verification
+  - Immigrant guide: ICE detection evasion, ELITE system counters, California DROP platform
+  - Activist guide: Surveillance ops, IMSI catcher defense (Rayhunter), financial compartmentalization (Monero)
+- **Format**: ~1,500 words each, Week 1 / Month 1 / Month 3 timelines, verification checklists
+- **Impact**: Makes hardening guide immediately actionable for four distinct threat profiles
+- **Status**: Production-ready, pending batch commit
+
+**Strategic Outcome**: Both items advance distribution readiness without depending on user decisions. Once Phase 1 execution begins (upon distribution path decision), both frameworks are immediately actionable.
+
+---
+
 ## Since Last Check-in (Session 610 — 2026-04-28 21:23–22:15 UTC)
 
 ### ✅ High-Leverage Execution Playbooks: Unblocking seedwarden, cybersecurity-hardening, stockbot

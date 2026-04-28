@@ -71,6 +71,81 @@
 
 ---
 
+## 2026-04-28 22:25–23:55 UTC — Session 611 — Parallel Autonomous Work: resistance-research + cybersecurity-hardening (Exploration Queue Items)
+
+**Orchestrator Orientation** (22:25–22:30 UTC):
+- ✅ **INBOX processed**: No new items
+- ✅ **Active blocks reviewed**: stockbot (user engine restart), mfg-farm (test print) — both unchanged, still active
+- ✅ **Work identification**: Identified 2 queued Exploration Queue items with no external blockers:
+  1. resistance-research: Objection Handling & Rebuttal Framework
+  2. cybersecurity-hardening: Threat Model-Specific Implementation Guides
+- ✅ **Decision**: Spawn parallel agents for both projects (independent work, high distribution impact)
+
+### ✅ COMPLETED: resistance-research — Objection Handling & Rebuttal Framework
+
+**Deliverable**: `projects/resistance-research/objection-handling-framework.md` (468 lines, production-ready)
+
+**Scope**: 
+- 20 common objections across 6 categories:
+  - **Category I — Policy Critiques** (4 objections): Proportional representation stability, carbon tax regressivity, citizens' assembly legitimacy, land value tax radicalism
+  - **Category II — Constitutional** (4 objections): SCOTUS term limits pathways, Citizens United campaign finance, redistricting authority, presidential immunity
+  - **Category III — Economic/Fiscal** (3 objections): Total cost ($650B-1T/year), labor reforms, reparations fiscal responsibility
+  - **Category IV — Institutional Viability** (4 objections): No viable majorities, capture too deep, already at Hungary, reforms will be reversed
+  - **Category V — Mechanism Skepticism** (3 objections): 3.5% threshold methodology, pre-populated tax blocking, voting security naivety (with correction-of-record on remote voting opposition)
+  - **Category VI — Philosophical** (3 objections): Too radical/backlash risk, antidemocratic imposition, elite-designed vs. demand-driven
+
+**Key Features**:
+- Every rebuttal sourced to named domain or Phase 4 document
+- Quick-reference matrix for real-time use during outreach
+- Structured for copy-paste use by policy contacts, think tanks, law schools, civil society
+
+**Impact**: Directly supports Phase 1 distribution execution once user selects distribution path (A / A+Domain37 / B)
+
+**Commit**: Pending (will commit with cybersecurity-hardening batch)
+
+### ✅ COMPLETED: cybersecurity-hardening — Threat Model-Specific Implementation Guides
+
+**Deliverables**: Four profile-specific guides + navigation README
+
+1. **journalist-implementation-guide.md** (1,610 words)
+   - Threat focus: Source protection, communication confidentiality, device hardening
+   - Timeline: Week 1 (ADP enabling + Signal setup), Month 1 (iPhone hardening + border protocols), Month 3 (dedicated source device + Tails OS)
+   - Key mechanisms: IRS LCA social network mapping → source exposure via carrier metadata; CBP border seizure
+
+2. **immigration-attorney-implementation-guide.md** (1,591 words)
+   - Threat focus: Client communication confidentiality, subpoena vulnerability, document protection
+   - Timeline: Week 1 (ProtonMail + encrypted file storage), Month 1 (tiered client protocols), Month 3 (California AB 60/AB 1766 ID verification)
+   - Key mechanisms: U.S.-cloud subpoena exposure; conduit threat from single legal process
+
+3. **undocumented-immigrant-implementation-guide.md** (1,819 words)
+   - Threat focus: ICE detection, address confidence scores, identity exposure
+   - Timeline: Week 1 (data broker opt-outs + California DROP platform), Month 1 (communication hardening), Month 3 (advanced compartmentalization)
+   - Key mechanisms: ELITE system (address confidence pulling from IRS, Medicaid, DMV, utilities, commercial brokers)
+   - Accessibility focus: Non-technical language, accessible from library computer
+
+4. **activist-implementation-guide.md** (1,947 words)
+   - Threat focus: Government surveillance, infiltration, pattern-of-life analysis, IMSI catcher risk
+   - Timeline: Week 1 (phone compartmentalization + Signal ops), Month 1 (Rayhunter IMSI deployment), Month 3 (financial compartmentalization + Monero)
+   - Key mechanisms: Palantir Gotham's pattern-of-life analysis in LAPD/NYPD; co-location failure mode
+
+**Key Features**:
+- Each guide ~1,500 words: accessible yet operationally detailed
+- Cross-references to primary corpus (device-hardening-guide.md, palantir-threat-model.md)
+- Actionable step-by-step, verification checklists
+- README navigation hub updated
+
+**Impact**: Makes comprehensive hardening guide immediately usable for four distinct threat models. Ready for distribution to journalists, legal aid orgs, immigrant advocacy groups, activist networks.
+
+**Commit**: Pending (batch commit with resistance-research work)
+
+**Session Totals**:
+- ✅ 2 Exploration Queue items COMPLETED
+- ✅ ~9,400 words production-ready material created
+- ✅ Both directly support Phase 1 distribution execution (resistance-research objection handling + cybersecurity-hardening implementation guides)
+- Ready for batch commit to master
+
+---
+
 ### ✅ COMPLETED: seedwarden — Canva Execution Playbook
 
 **Deliverable**: `projects/seedwarden/CANVA_EXECUTION_PLAYBOOK.md` (4,200 words, 7 sections)
