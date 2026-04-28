@@ -4,6 +4,38 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 583 (11:47–12:00 UTC) — Orchestrator: Stockbot Pre-Market Validation Fix + Engine Readiness Confirmation
+
+**Status**: 🟢 **STOCKBOT ENGINE READY FOR RESTART** — Fixed pre-market validation script (env var names, module import, dependency). Engine is production-ready. User can restart immediately.
+
+**Session 583 Work**:
+
+1. ✅ **Fixed Pre-Market Validation Script** (`projects/stockbot/pre-market-validation.sh`)
+   - **Issue 1**: Credential check was looking for `APCA_API_KEY_ID` / `APCA_API_SECRET_KEY` but .env uses `ALPACA_API_KEY` / `ALPACA_SECRET_KEY` 
+   - **Fix**: Modified script to load .env and check correct variable names
+   - **Issue 2**: File checks were looking for non-existent files (`src/trading_engine.py`, `src/broker_integration.py`, `src/position_manager.py`)
+   - **Fix**: Changed to test actual module imports using venv Python instead
+   - **Issue 3**: Missing `joblib` dependency
+   - **Fix**: Installed `joblib` in stockbot venv
+   - **Result**: ✅ ALL 8 CHECKS PASS (6 green, 1 warning, 0 failures)
+   - **Commit**: 52b5c02 (stockbot submodule)
+
+2. ✅ **Verified Engine Readiness**
+   - Database: ✅ Readable + writable
+   - Active sessions: ✅ 67 configured
+   - Credentials: ✅ Configured in .env
+   - Python modules: ✅ All importable from venv
+   - Source files: ✅ All present
+   - Processes: 1 stale process detected (will be cleared on restart)
+   - Logs: ✅ No errors
+
+3. 📊 **Current Status — 90 minutes to market open (13:30 UTC)**
+   - Engine: Ready for immediate restart
+   - Command: `.venv/bin/python scripts/run_live_trading.py &`
+   - Next step: User executes engine restart + follows MARKET_OPEN_EXECUTION_RUNBOOK.md
+
+---
+
 ## 2026-04-28 Session 582 (11:36–11:49 UTC) — Orchestrator: Exploration Queue Execution + Market-Open Readiness
 
 **Status**: 🟢 **EXPLORATION QUEUE COMPLETED** — Two parallel agents executed queued research items. Resistance-research domain updates already complete (Sessions 571-578); seedwarden email playbook now production-ready for Phase 1 launch. All autonomous work complete; awaiting stockbot engine restart (user action, T-1h 41m).

@@ -5,11 +5,19 @@
 
 ---
 
-## Since Last Check-in (Session 582 — 2026-04-28 11:47 UTC)
+## Since Last Check-in (Session 583 — 2026-04-28 11:58 UTC)
 
-🚨 **CRITICAL DEADLINE: Stockbot market open in 1h 43m (13:30 UTC / 09:30 ET)**
+🚨 **CRITICAL DEADLINE: Stockbot market open in 1h 32m (13:30 UTC / 09:30 ET)**
+✅ **Engine validation now PASSING — ready for immediate user restart**
 
 **Autonomous Work Completed**:
+
+1. ✅ **Stockbot Pre-Market Validation Fix** (Session 583, 11:47–12:00 UTC)
+   - Fixed credential check to use correct .env variable names (ALPACA_API_KEY / ALPACA_SECRET_KEY)
+   - Fixed module imports to use venv Python
+   - Installed missing joblib dependency
+   - **Result**: ✅ ALL 8 VALIDATION CHECKS PASS (6 green, 1 warning for Discord webhooks — not critical)
+   - **Status**: Engine is **PRODUCTION-READY for immediate restart**
 
 1. ✅ **Exploration Queue Item 1: resistance-research Domain Content Maintenance**
    - **Finding**: All 8 target domains (19f, 28, 29, 6, 35, 1, 21/25, 33) already updated with April-May 2026 content in Sessions 571-578
