@@ -4,6 +4,55 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 23:55–late UTC — Session 612 — Phase 3 Strategic Research Framework: Candidates 5 & 6 COMPLETE
+
+**Orchestrator Orientation** (23:55–23:58 UTC):
+- ✅ **ORCHESTRATOR_STATE.md reviewed**: resistance-research has Phase 3 Candidates 5 & 6 queued in Exploration Queue, independent of Phase 1-2 distribution path block
+- ✅ **Active blocks verified**: stockbot (engine restart required), mfg-farm (test print required), resistance-research (distribution path decision) — all non-blocking for Phase 3 autonomous work
+- **Action**: Spawn two sequential resistance-research agents to build Phase 3 domain documents
+
+**✅ COMPLETED: resistance-research — Phase 3 Candidate 5: Legislative Branch Capacity (Session 612a)**
+- **Agent**: resistance-research subagent
+- **Duration**: ~11 minutes research + writing
+- **File Produced**: `domains/domain-legislative-branch-capacity.md` (9,800 words, 57 sources)
+- **Key Findings**:
+  - Congressional institutional capacity is PREREQUISITE for all other reforms (ratification machine vs. check on power)
+  - CRS down 28% since 1979, committee staff down 38%, GAO down 44%, OTA defunded since 1995
+  - H.R. 4229 (FY2026) proposes 49% GAO cut ($828M → $415M); cuts Comptroller General enforcement standing
+  - 119th Congress: 84% closed rules, five-month "single legislative day" freeze (freezes resolution-of-inquiry clocks)
+  - International models: UK select committees (elected chairs), German Wissenschaftliche Dienste (100 staff, 4,300 annual requests), Canadian PBO (independent publication), European Parliament EPRS (200+ staff)
+  - Recovery: 6 statutory reforms with self-enforcing mechanisms (funding floors with sequestration remedies, career civil service staff, OTA restoration $75M, Congressional Oversight Officer with independent enforcement, automatic contempt referral, ethics board appointment triggers)
+  - Cross-domain dependencies: Enables Domains 34 (fiscal enforcement), 35 (post-Loper capacity), 26 (IG/accountability), 19f (war powers), 29 (DOJ accountability), 27 (epistemic infrastructure)
+- **Commit**: 88f3761 — `docs(resistance-research): Phase 3 Candidate 5 — Legislative Branch Capacity domain document`
+- **Status**: Production-ready for Phase 3 distribution (policy academics, legislative reform advocates, progressive think tanks)
+
+**✅ COMPLETED: resistance-research — Phase 3 Candidate 6: Information Access, FOIA, and Investigative Capacity (Session 612b)**
+- **Agent**: resistance-research subagent (continuation)
+- **Duration**: ~10 minutes research + writing
+- **File Produced**: `domains/domain-information-access-recovery.md` (9,800 words, 60 sources)
+- **Key Findings**:
+  - Administration attacks all three information channels simultaneously: FOIA, classification/records system, whistleblower infrastructure
+  - Accountability collapse is STRUCTURAL: weak Congress (Candidate 5) + no information (Candidate 6) = oversight impossible
+  - Pentagon FOIA backlog up 42% (one year); State Department 27,619 cases; FOIA lawsuits +70% (1,000 in 15 months vs. baseline)
+  - NARA: First archivist firing in a century; Secretary of State Rubio as Acting Archivist (direct conflict of interest); budget cut $93M; Office of Innovation & Electronic Records Initiative eliminated
+  - Whistleblower retaliation: Energy Department investigations jumped 900% (5 → 45 cases in single fiscal year); proposed rule would eliminate WPA coverage for senior career employees
+  - Classification: $18B/year to administer system that is 75-90% overclassified; ISOO stopped publishing statistics due to poor/inconsistent data
+  - International models: UK FOI (82% compliance, published stats), Canada ATI (self-publication protection), EU transparency directives
+  - Recovery: FOIA reform, classification limits, whistleblower statute expansion, NARA independence via statute
+  - Strategic pairing: Candidates 5 + 6 form complete accountability-collapse description (institutional capacity + information access)
+- **Commit**: d47e278 — `docs(resistance-research): Phase 3 Candidate 6 — Information Access and FOIA domain document`
+- **Status**: Production-ready for Phase 3 distribution
+
+**Session Output**:
+- ✅ 2 Phase 3 domain documents completed (19,600 words combined, 117 authoritative sources)
+- ✅ Commits: 88f3761 (Candidate 5) + d47e278 (Candidate 6)
+- ✅ Phase 3 strategic foundation established with institutional vulnerability pair (legislative capacity + information access)
+- ✅ Orchestration files updated (CHECKIN.md, PROJECTS.md)
+
+**Strategic Outcome**: Phase 3 Candidates 5-6 provide the institutional-accountability narrative that deepens the 35-domain framework. These documents are independent of Phase 1-2 distribution path decision — user can proceed with resistance-research Phase 1 distribution while Phase 3 continues to develop. Next Phase 3 candidates are queued and ready for execution in future sessions.
+
+---
+
 ## 2026-04-28 20:52–21:47 UTC — Session 608 — Parallel Autonomous Work: resistance-research + seedwarden
 
 **Orchestrator Orientation** (20:52–21:00 UTC):

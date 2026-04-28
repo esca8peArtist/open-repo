@@ -1130,21 +1130,19 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Cross-domain connections**: Linked to Domains 34, 35, 6, 29
   - **Status**: Production-ready for Phase 3 distribution (finance-sector academics, policy orgs, progressive think tanks)
 
-- **resistance-research: Phase 3 Candidate 5 — Legislative Branch Capacity and Congressional Independence** (Priority 1, MEDIUM-ROI for Goal advancement)
-  - **Scope**: Research on structural reforms for congressional institutional independence and legislative capacity. (1) Congressional staffing and expertise: CRS budget/authority, GAO independence, JCT independence, historical institutional knowledge loss, (2) Committee independence: subcommittee autonomy, minority party voice, ethics enforcement, (3) Legislative process protections: filibuster mechanics and democratic outcomes, rules committee autonomy, amendment process, (4) International precedent: UK parliamentary procedure independence, German Bundestag commissioning structure, European parliament powers, (5) Recovery pathways: congressional modernization, expert staffing restoration, budget/authority protection via statute
-  - **Goal**: Address institutional capacity required for effective legislative oversight and separation of powers
-  - **Expected output**: `domains/domain-legislative-branch-capacity.md` (8,000-10,000 words, 40+ sources), reform roadmap, institutional redesign options
-  - **Timeline**: 2-3 sessions
-  - **Status**: QUEUED — ready for immediate execution
-  - **Notes**: Addresses "checks and balances" structural integrity via legislative capacity
+- ✅ ~~**resistance-research: Phase 3 Candidate 5 — Legislative Branch Capacity and Congressional Independence** (Priority 1, MEDIUM-ROI for Goal advancement)~~ **COMPLETE (Session 612)**
+  - **File**: `domains/domain-legislative-branch-capacity.md` (9,800 words, 57 sources)
+  - **Completion date**: 2026-04-28 Session 612
+  - **Key Findings**: CRS staffing down 28%, GAO down 44%, OTA defunded 1995–present; H.R. 4229 proposes 49% GAO cut. Recovery via 6 statutory reforms with self-enforcing mechanisms (funding floors, contempt referral, ethics board triggers).
+  - **Cross-domain connections**: Enables Domains 34 (fiscal enforcement), 35 (post-Loper capacity), 26 (IG/accountability), 19f (war powers), 29 (DOJ accountability), 27 (epistemic infrastructure)
+  - **Status**: Production-ready for Phase 3 distribution (policy academics, legislative reform advocates)
 
-- **resistance-research: Phase 3 Candidate 6 — Information Access, FOIA, and Investigative Capacity** (Priority MEDIUM, HIGH complementarity to media freedom work)
-  - **Scope**: Research on structural protections for public information access and investigative capacity. (1) FOIA mechanics and degradation: withholding authority expansion, processing delays, fee mechanisms, (2) Classification system abuse: overclassification trends, declassification politics, NARA independence, (3) Investigative capacity: congressional investigative authority, inspector general independence (expanded in Phase 3 Candidate 1), whistleblower protections, (4) International precedent: EU transparency directives, Canada Access to Information Act, UK Freedom of Information Act usage data, (5) Recovery pathways: FOIA reform, classification limits, whistleblower statute expansion, NARA independence via statute
-  - **Goal**: Identify information access as prerequisite for democratic accountability (no public oversight without public information)
-  - **Expected output**: `domains/domain-information-access-recovery.md` (7,000-9,000 words, 35+ sources), reform package, implementation barriers
-  - **Timeline**: 1-2 sessions
-  - **Status**: QUEUED — ready for immediate execution
-  - **Notes**: Deepens Phase 2 Domain 16 (Transparency & Accountability) and strengthens Phase 1 distribution effectiveness
+- ✅ ~~**resistance-research: Phase 3 Candidate 6 — Information Access, FOIA, and Investigative Capacity** (Priority MEDIUM, HIGH complementarity to media freedom work)~~ **COMPLETE (Session 612)**
+  - **File**: `domains/domain-information-access-recovery.md` (9,800 words, 60 sources)
+  - **Completion date**: 2026-04-28 Session 612
+  - **Key Findings**: Pentagon FOIA backlog up 42%; whistleblower retaliation +900%; NARA budget cut $93M + first archivist firing in a century; classification system 75-90% overclassified at $18B/year cost. Structural pairing with Candidate 5: legislative capacity is useless without information access (both must be addressed in tandem).
+  - **Cross-domain connections**: Deepens Domain 16 (Transparency & Accountability), strengthens Phase 1 distribution effectiveness
+  - **Status**: Production-ready for Phase 3 distribution
 
 ---
 
