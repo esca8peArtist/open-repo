@@ -27,6 +27,16 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+<!-- AUTO:CALIBRATION:START -->
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-04-28 (auto-added each Tuesday by reset-usage-budget.sh)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
+**Verify with**: `bash scripts/verify-calibration.sh`
+**Resolution**:
+<!-- AUTO:CALIBRATION:END -->
+
+
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
