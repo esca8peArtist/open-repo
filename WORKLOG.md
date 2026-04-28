@@ -4,6 +4,43 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 563 (04:07 UTC) — Orchestrator: Critical Deadline Monitor + Domain Maintenance Queue
+
+**Orchestration Work**:
+
+1. ✅ **Status Assessment & Critical Deadline Tracking**
+   - Engine status: NOT RUNNING (user restart still pending)
+   - Market open: 2026-04-28 13:30 UTC (9h 23min remaining)
+   - Code readiness: PRODUCTION-READY (Session 560 feature fix + Session 562 Discord notifications)
+   - Action required: User engine restart (cannot be automated)
+
+2. ⏳ **Exploration Queue Item #1 — resistance-research Domain Maintenance — AGENT QUEUED**
+   - **Priority**: HIGH (Iran WPR deadline 2026-05-01 — in 3 days)
+   - **Scope**: 8 domains need April-May 2026 civic updates (Iran war, Trump v. Wilcox, SPLC, FISA 702, ballot initiatives)
+   - **Agent limit**: Hit during spawn (resets 05:00 UTC, ~53 minutes)
+   - **Plan**: Retry spawn post-reset
+
+3. ✅ **Orchestration Files Updated**
+   - CHECKIN.md: New Session 563 entry with critical deadline alert
+   - WORKLOG.md: This entry
+
+**Why Session 563 Work is Minimal**:
+- **Dependency**: Resistance-research agent work requires execution, which hit agent limit
+- **Constraint**: Cannot proceed with other major projects without blocking resolutions
+  - mfg-farm: User test print action required
+  - stockbot: User engine restart (CRITICAL, blocking market monitoring)
+  - seedwarden: User tag corrections + Etsy verification
+  - open-repo: External PR review pending
+- **Strategy**: Maximized preparation (critical alerts, agent queued), will resume autonomous work post-limit-reset
+
+**Next Actions**:
+1. At 05:00 UTC: Agent limit reset — spawn resistance-research domain maintenance agent
+2. Continuously: Monitor for stockbot engine restart (user action, T-9h remaining)
+3. At 13:30 UTC: If engine has restarted, begin market open verification (monitor signals, positions, P&L)
+4. End of session: Commit orchestration files with final status
+
+---
+
 ## 2026-04-28 Session 562 (04:13 UTC) — stockbot: Discord Position Notifications COMPLETE
 
 **Work Completed**:
