@@ -4,6 +4,26 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 558 — 2026-04-28 — Photography Roadmap (Track B)
+
+**Deliverable**: `PHOTOGRAPHY_ROADMAP.md` (~5,200 words, production-ready)
+
+**Scope**: Full photography execution roadmap for Phase 2 Track B, operationalizing the hybrid strategy from `LIFESTYLE_PHOTOGRAPHY_STRATEGY.md`. Complements and extends `PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md` with five specific deliverables:
+
+1. **Product Photography Map** — all 21 products mapped to physical vs. stock method with priority order and rationale
+2. **Comprehensive Shot List** — all 15 physical products with 2–4 specific shots each: exact arrangements, camera angles, lighting notes, prop specifications, styling and safety notes
+3. **Stock Photography Sourcing Plan** — all 6 stock products with per-product search queries (5–8 per product across Unsplash/Pexels/Pixabay/iStock), budget allocation by product, composite instructions, license tracking requirements
+4. **3-Week Sprint Plan** — day-by-day with time estimates, dependency map, decision gates (e.g., Day 1 EOD: how many products need iStock vs. free sources), go/no-go criteria
+5. **Conversion Metrics Design** — 4 high-ticket products ($18–$22), per-product success thresholds, A/B testing plan using Etsy Experiments, cohort integration with Session 551 framework, monthly tracking cadence
+6. **Equipment and Setup** — camera selection (phone vs. DSLR guidance), lighting setup (two options with cost), props master list with substitutions, post-processing workflow (7-step with Lightroom/Snapseed/RawTherapee), social media double-duty asset capture guide
+
+**Key decisions documented**:
+- Native Plants Regional Guide ($20) is blocked from Etsy upload (PDF exceeds 5 MB limit per UPLOAD_READY_CHECKLIST.md) — lifestyle photography is ready to execute but uploading must wait for PDF rebuild
+- Survival Garden Regional Plans is flagged as a hybrid candidate — if outdoor garden access is available during Week 2 shoot, physical photography may outperform stock for this $22 product
+- iStock budget priority order: Livestock Manual > Hunting/Trapping > Meat/Fish Preservation > Survival Garden > Native Plants (Wikimedia covers botanical component)
+
+---
+
 ## Session: 2026-04-27 — Wholesale & Affiliate Partnership Strategy
 
 Built `projects/seedwarden/marketing/wholesale-and-affiliate-strategy.md` (~4,100 words), the B2B and affiliate channel strategy for Phase 2–3 growth beyond direct-to-consumer Etsy.
