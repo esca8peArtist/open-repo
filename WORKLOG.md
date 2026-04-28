@@ -4,6 +4,38 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 571 (08:01–08:10 UTC) — Orchestrator: Calibration Block Archive + Seedwarden Phase 3 Expansion
+
+**Work Completed**:
+
+1. ✅ **Block Processing** (08:01–08:02 UTC)
+   - Moved calibration block "Usage limits — weekly calibration reminder" from Active Blocks to Resolved Archive in BLOCKED.md
+   - Block was RESOLVED in Session 569; now properly archived
+   - Committed BLOCKED.md on master (commit `059d526`)
+
+2. ✅ **seedwarden: Phase 3 Product Expansion Roadmap COMPLETE** (Agent ace2b137142c5ef07, 08:02–08:10 UTC)
+   - **Deliverables**: 2 production-ready files
+     - `phase-3-product-expansion-roadmap.md` (4,100 words) — Complete strategic product expansion framework
+     - `phase-3-product-specifications.json` — 12 full-spec products + regional listing variants + bundle specs
+   - **Key Decisions**:
+     - 12 Phase 3 products derived from Phase 1 content (preservation derivatives, medicinal herb guide)
+     - 14 regional listing variants (7 Native Plants, 7 Survival Garden) highest-ROI Phase 3 action (19 hours → 14 keyword surfaces)
+     - Pricing held at $8–$14 tier (gateway conversion + bundle upgrade strategy)
+     - Three Phase 1 price increase tests (Native Plants $18→$22, Survival Garden $22→$24, Hunting Manual $20→$22) scheduled August 15 with September 28 decision date
+     - All success metrics numeric with explicit timeframes (e.g., "Beginner Canning at $200/month by Month 4")
+   - **Status**: Production-ready for Phase 3 execution once Phase 1 generates conversion data (estimated Month 3-6 post-launch)
+   - **Commits**: seedwarden project master (included in agent output)
+
+**Session Summary**:
+- Calibration block archive complete
+- Seedwarden Phase 3 expansion fully scoped and documented
+- Code ready for immediate Phase 3 launch planning
+- Critical stockbot deadline reminder maintained (5h 20min remaining at session end)
+
+**Critical Deadline Remains**: Stockbot engine restart required by 13:30 UTC (T-5h 20min) — no user action taken as of 08:10 UTC
+
+---
+
 ## 2026-04-28 Session 570 (07:48–08:00 UTC) — Orchestrator: Stockbot Discord Notifications + Critical Deadline Alert
 
 **Work Completed**:
