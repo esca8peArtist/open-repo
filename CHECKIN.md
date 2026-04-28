@@ -5,64 +5,68 @@
 
 ---
 
-## Current Session (Session 580 — 2026-04-28 11:10–11:22 UTC — Market-Open Verification + Phase 3 Institutional Playbooks)
+## Current Session (Session 581 — 2026-04-28 11:29–11:40 UTC — Pre-Market-Open Final Validation)
 
-🚨 **CRITICAL DEADLINE: Stockbot market open in 2h 8m (13:30 UTC / 09:30 ET)**
+🚨 **CRITICAL DEADLINE: Stockbot market open in ~2h (13:30 UTC / 09:30 ET)**
 
-**Status**: 🟢 **PHASE 3 CANDIDATE 2 OUTLINE COMPLETE** — Comprehensive structured analysis of 8 institutional constituencies delivered (7,000+ words). Stockbot verification confirms production-ready; awaiting user engine restart.
+**Status**: 🟢 **FINAL PRE-MARKET CHECKS COMPLETE** — Stockbot production-ready (code + config verified). Created pre-market-validation.sh script. Engine restart is the only action required before 13:30 UTC.
 
-**Session 580 Work Completed**:
+**Session 581 Work Completed**:
 
-1. ✅ **Stockbot Market-Open Verification**
-   - **Spot-check**: Confirmed 57-ticker configuration in active-sessions.json (11-core + 46-expansion)
-   - **Session 560 fix**: Feature count mismatch resolution verified in git history
-   - **Status**: ✅ Code production-ready, ✅ Configuration production-ready, ⚠️ Engine offline (user action required)
-   - **Deadline**: 13:30 UTC (2h 8m) — engine must restart before market opens
+1. ✅ **Pre-Market-Open Health Checks**
+   - Verified stockbot code + config production-ready (continuation of Session 579-580 verification)
+   - Confirmed 67 active trading sessions, database connectivity, Python environment
+   - Verified clean shutdown log, no critical errors detected
+   
+2. ✅ **Created pre-market-validation.sh Script**
+   - Automated 8-point validation checklist for user execution
+   - Checks database, sessions, Discord webhooks, Alpaca credentials, Python env, source files, processes, logs
+   - User must run: `bash projects/stockbot/pre-market-validation.sh`
+   - If PASS → proceed with engine restart
+   - If FAIL → fix reported issues before restart
 
-2. ✅ **Phase 3 Candidate 2: Institutional Playbooks Outline COMPLETE** (Agent-generated, 11:10–11:18 UTC)
-   - **Deliverable**: `phase-3-institutional-playbooks-outline.md` (7,000+ words, complete intellectual scaffolding)
-   - **8 constituencies analyzed**:
-     - **Tier A (partial playbooks exist)**: State AGs, law school clinics, state legislators
-     - **Tier B (entirely new)**: Civil service unions, labor unions, religious coalitions, media organizations
-     - **Special**: Federal judges (advisory/educational role)
-   - **For each constituency**: Leverage analysis, actionable domains (3-5), Year 1-3 sequencing, case study, constraints, allies, conflicts
-   - **Cross-constituency architecture**: Alliance clusters (Legal, Electoral, Information); conflict mitigation; wave assignments
-   - **Status**: Ready for full playbook expansion (prose development, decision trees, fiscal analysis)
+**🚨 CRITICAL — USER ACTION REQUIRED (T-2h 1m remaining)**:
 
-**🚨 CRITICAL — USER ACTION STILL REQUIRED**:
+**STEP 1: Run validation script** (now, takes 1 min)
+```bash
+cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+bash pre-market-validation.sh
+```
 
-**Engine restart command** (from `/home/awank/dev/SuperClaude_Framework/projects/stockbot/`):
+**STEP 2: Fix any issues reported by validation script** (if needed)
+
+**STEP 3: Restart engine** (from `/home/awank/dev/SuperClaude_Framework/projects/stockbot/`)
 ```bash
 .venv/bin/python scripts/run_live_trading.py &
 ```
+This starts the engine in background mode. It will execute its first signal cycle automatically at 13:30 UTC.
 
 **Market Timeline**:
-- **T-2h 8m**: Restart engine NOW for startup stabilization
-- **T-30m (13:00 UTC)**: Pre-market checklist (MARKET_OPEN_EXECUTION_RUNBOOK.md)
-- **T-0 (13:30 UTC)**: Market open — 57 stacker sessions begin signal cycles
-- **T+6.5h (20:00 UTC)**: Market close — daily summary to Discord
-
-**Phase 3 Institutional Playbooks Next Steps**:
-- Outline is **COMPLETE** with all intellectual analysis (leverage, domains, sequencing, case studies, conflicts)
-- Full playbook expansion requires: prose development (1-2 sessions), scenario decision trees, fiscal capacity analysis, coordination protocols
-- **Not blocking**: Can be completed post-distribution-decision context (after user chooses Path A/A+37/B for distribution)
-- **Committed to master**: File created and EXPLORATION_QUEUE.md updated
+- **NOW (11:40 UTC)**: Run pre-market-validation.sh + fix any issues
+- **12:30 UTC (T-1h)**: Restart engine (allows startup stabilization)
+- **13:00 UTC (T-30m)**: Run MARKET_OPEN_EXECUTION_RUNBOOK.md pre-market checklist
+- **13:30 UTC (T-0)**: Market open — 67 stacker sessions begin signal cycles
+- **13:30–14:30 UTC (T+0 to T+1h)**: Monitor first trading hour (see MARKET_OPEN_EXECUTION_RUNBOOK.md)
+- **20:00 UTC (T+6.5h)**: Market close — daily Discord summary
+- **20:30 UTC (T+7h)**: Optional post-market analysis begins (awaiting market success validation)
 
 **User Decisions Still Pending**:
-1. **🚨 CRITICAL — stockbot engine restart** (deadline 13:30 UTC, 2h 8m remaining)
-2. **resistance-research distribution path** (Path A / A+37 / B) — analysis ready, no time constraint
-3. **mfg-farm test print** — validates designs
+1. **🚨 CRITICAL — stockbot engine restart** (deadline 13:30 UTC, T-2h 1m)
+2. **resistance-research distribution path** (Path A / A+37 / B) — ready for Phase 1, no time constraint
+3. **mfg-farm test print** — validates designs, unblocks launch prep
 4. **seedwarden Phase 1 launch** — awaits tag corrections + Etsy verification
 
 **Strategic Positioning**:
-- **stockbot**: Code + config production-ready; engine offline awaiting user restart (critical deadline)
-- **resistance-research**: Phase 3 Candidate 2 outline COMPLETE; Phase 1 awaits user distribution decision
-- **seedwarden**: Phase 3 product expansion roadmap COMPLETE (Session 578)
+- **stockbot**: Code + config production-ready ✓; engine offline awaiting restart ⚠️ (CRITICAL DEADLINE)
+- **resistance-research**: Phase 3 Candidate 2 outline complete ✓; Phase 1 awaits distribution decision
+- **open-repo**: PR #1 ready for merge (194 tests passing ✓)
+- **seedwarden**: Phase 3 roadmap complete ✓; Phase 1 blocked on user actions
+- **all other projects**: Awaiting user review/action
 
-**Next Actions**:
-1. **IMMEDIATE**: Restart stockbot engine before 13:30 UTC (2h 8m)
-2. **13:30 UTC**: Market opens — monitor first trading cycle
-3. **20:30 UTC**: Begin post-market analysis (POST_MARKET_EXECUTION_PLAN.md)
+**Next Actions** (user):
+1. **IMMEDIATE (T-2h 1m)**: Run validation script and restart engine
+2. **13:00–13:30 UTC**: Follow MARKET_OPEN_EXECUTION_RUNBOOK.md
+3. **20:30 UTC**: Orchestrator will activate POST_MARKET_EXECUTION_PLAN.md if market open successful
 
 ---
 
