@@ -1019,6 +1019,33 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Production Status**: Ready to execute post-Phase-1-launch (May 2026). No Phase 1 blockers.
   - **Status**: ✅ COMPLETE, production-ready, committed to master (seedwarden project)
 
+**NEW ITEMS (Session 590 — Exploration Queue Refresh)**:
+
+- **open-repo: Phase 5 Offline Export Implementation** (Priority HIGH for project completion)
+  - **Scope**: Full implementation of Kiwix-based offline export architecture designed in Session 546. (1) ZIM file generation pipeline (ExportService → ZimWriter), (2) Incremental export strategy with versioning, (3) CDN integration (Cloudflare R2 MVP), (4) OPDS catalog generation and Kiwix listing submission, (5) Export scoping (full vs. domain-specific variants), (6) Integration tests
+  - **Goal**: Enable offline knowledge distribution and federation-aware access for democratic renewal proposal
+  - **Expected output**: Phase 5 implementation with ~8,000-10,000 words technical documentation, working export pipeline, integration tests (all passing), committed to master
+  - **Timeline**: 3-4 sessions (careful integration with Phase 4 PR #1 review process)
+  - **Status**: QUEUED — Phase 4 PR #1 open, awaiting review; Phase 5 architecture complete and ready to implement
+  - **Notes**: Coordinates with Phase 4 PR #1 review. Can begin preliminary work (CDN account setup, ZIM library installation, export strategy testing) while PR #1 is under review.
+
+- **mfg-farm: Post-Test-Print Launch Preparation** (Priority HIGH for next phase execution)
+  - **Scope**: Prepare for Etsy launch and supplier negotiation following successful test print. (1) Etsy store setup (tax identification, shipping settings, policies), (2) Supplier negotiation sequence (using supplier-scorecard.md rankings, target 20% COGS reduction), (3) Production workflow optimization (print queue management, packaging, QA checklist), (4) Fulfillment logistics (shipping partners, packaging material sourcing, cost modeling), (5) Inventory management system (stock forecasting, reorder points, storage planning), (6) Launch timeline and milestone checklist
+  - **Goal**: Complete launch prep package ready for user handoff immediately post-test-print
+  - **Expected output**: `post-test-print-launch-prep.md` (4,000-5,000 words), `supplier-negotiation-playbook.md`, `fulfillment-workflow.md`, `launch-checklist.json`
+  - **Timeline**: 2-3 sessions (can execute in parallel with test print if user completes print quickly)
+  - **Dependencies**: Awaiting test print completion (user action)
+  - **Status**: QUEUED — blocked on test print, but can prepare all supporting materials now for immediate execution post-print
+  - **Notes**: This is "prepare while blocked" work — all materials can be created and committed now, ready for user handoff once test print confirms printability.
+
+- **stockbot: Real-Time CRITICAL Alert Discord Webhook Implementation** (Priority 2 for live operations, newly unblocked)
+  - **Scope**: Implement real-time CRITICAL alert Discord webhook identified as gap in Session 553 operations documentation. (1) Add `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` environment variable, (2) Implement `_send_critical_discord_alert()` method in TradingSession, (3) Wire into 6 alert categories (model drift, circuit breaker, drawdown threshold, regime shift, position-specific, prediction error), (4) Test alert firing logic (mock webhook, message format verification, throttle duplicate alerts), (5) Integration with existing daily summary pattern
+  - **Expected scope**: ~15 min implementation, ~10 unit tests, zero schema changes
+  - **Expected output**: Updated `src/trading/trading_session.py`, updated `tests/test_trading_session_improvements.py` with webhook tests, documentation update
+  - **Status**: QUEUED — newly unblocked (engine restart occurred Session 589, market is open). Ready for immediate execution.
+  - **Timeline**: Single session (high-ROI item, straightforward implementation)
+  - **Notes**: Complements Session 557 dashboard implementation and Session 553 operations documentation. High operational value for live trading visibility.
+
 ---
 
 ## Completed (Archive)
