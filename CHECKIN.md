@@ -5,6 +5,29 @@
 
 ---
 
+## Since Last Check-in (Session 589 — 2026-04-28 13:12–13:30 UTC)
+
+🟢 **Market-Open Pre-Flight COMPLETE** — T-16 minutes to 13:30 UTC
+
+**Session 589 Status**:
+- ✅ Engine validation: RUNNING (PID 1140617), all pre-market checks PASS
+- ✅ Confirmed engine active since before Session 588 completion
+- ✅ Final health check: ALL 8 checks green (database, sessions, credentials, Python env, source files, logs)
+- ⏳ Standing by for market open at 13:30 UTC (T-16m)
+
+**Market-Open Readiness**:
+- **Code**: Production-ready ✓ (feature count fix verified)
+- **Config**: Production-ready ✓ (67 sessions, 11 tickers, credentials set)
+- **Infrastructure**: Production-ready ✓ (database active, logs nominal)
+- **Engine**: RUNNING ✓ (PID 1140617, awaiting 13:30 UTC market open signal)
+
+**Post-Market Schedule**:
+- **20:30 UTC**: Exploration Queue Item 3 execution (post-Gate-2 operations analysis) — conditional on Day 1 success
+
+**No further action required.** Engine will execute its first signal cycle automatically at market open (13:30 UTC). Orchestrator will resume at 20:30 UTC for post-market work.
+
+---
+
 ## Since Last Check-in (Session 588 — 2026-04-28 13:03–13:30 UTC)
 
 🟢 **Pre-market health check COMPLETE + Item 9 exploratory research COMPLETE** — Ready for market open at 13:30 UTC (T-~0 minutes)
