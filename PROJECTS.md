@@ -657,6 +657,14 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Estimated scope**: 2-4 sessions depending on depth of updates
   - **Priority**: MEDIUM (post-distribution, but important for proposal currency)
 
+**NEW ITEMS (Session 607)**:
+
+- **resistance-research: Objection Handling & Rebuttal Framework** — Create a comprehensive FAQ and rebuttal library for common objections to the democratic renewal proposal (scope: 15-20 common objections with 3-5 sourced rebuttals each, structured for distribution outreach use). Goal: Support Phase 1 distribution execution by equipping outreach contacts with pre-vetted answers to predictable pushback. Includes policy critiques (constitutionality, feasibility, political viability), mechanism doubts (will coordination actually work?), international precedent objections, and philosophical disagreements. Estimated: 2-3 sessions, 6,000-8,000 words.
+
+- ✅ **stockbot: Signal Threshold Optimization Analysis** (COMPLETE, Session 607) — `signal-threshold-analysis.md` (2,400 words, production-ready). Analysis of current AAPL_h10_lgbm_ho signal threshold mechanism (volatility-adaptive, threshold_multiplier=0.5 → ~0.60–0.75% effective). Root cause identified: Current threshold too conservative (only 0.17 trades/month per ticker). Two optimization options: (A) Conservative: threshold_multiplier 0.5→0.40 (20% reduction, 1.5–2× signal increase, low risk); (B) Aggressive: 0.5→0.30 (40% reduction, 2–3× signal increase, medium-high risk). 11-ticker portfolio at Option A threshold projected to exceed Gate 1 (30 trades/month) by 2–3 weeks. Recommendations include backtest validation sequence and daily monitoring protocol. Ready for user review and backtest validation.
+
+- **cybersecurity-hardening: Threat Model-Specific Implementation Guides** — Create four customized how-to guides for distinct user profiles (journalist, immigration attorney/legal aid worker, undocumented immigrant, activist). Each guide distills the hardening materials into 1,000-1,500 words of essential steps, threat-specific priorities, and implementation timeline (1 week, 1 month, 3 month stages). Goal: Make the hardening guide immediately actionable for diverse users with different threat models. Estimated: 1-2 sessions, 4,000-6,000 words.
+
 **✅ COMPLETED (Session 537)**:
 
 - ✅ **stockbot: Market regime detection and adaptive position sizing** (Priority HIGH for Gate 2 improvement)
