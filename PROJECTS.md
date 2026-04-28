@@ -742,6 +742,32 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Expected outcome**: `high-risk-populations.md` (4,000-5,000 words) + operational playbooks for 3-4 scenario types
   - **Status**: ACTIVE (Session 554+ — queue item #3, available for parallel execution)
 
+**NEW ITEMS (Session 602 — Autonomous Work Queue Refresh)**:
+
+- ✅ **stockbot: Post-market daily analysis automation** (COMPLETE — Session 602)
+  - **Scope**: Automated daily analysis script that runs at 20:00 UTC (market close). Parses live_trading_*.log, computes signals-per-ticker summary, updates paper_trading_daily.jsonl with daily performance snapshot.
+  - **Deliverables**: 
+    - `projects/stockbot/scripts/daily_market_analysis.py` (25.5 KB) — Standalone script with log parsing (7 regex patterns), daily metrics computation, atomic JSON append with file locking
+    - `projects/stockbot/tests/unit/test_daily_analysis.py` (30.5 KB) — 61 unit tests, all passing (0.62s runtime)
+  - **Key Features**: Standalone (no stockbot imports), DB read-only, P&L from DB (authoritative) + log fallback, atomic writes prevent corruption
+  - **Integration**: Cron at 20:00 UTC daily, appends to paper_trading_daily.jsonl (no wiring changes needed)
+  - **Commit**: `bca307d`
+  - **Status**: COMPLETE
+
+- **mfg-farm: Amazon FBA vs. Etsy fulfillment strategy analysis** (Priority — informs post-test-print decisions)
+  - **Scope**: Research Amazon Fulfillment by Amazon (FBA) program, cost structure, shipping rates, seller reputation mechanics, fulfillment timelines. Compare FBA vs. Etsy-only vs. hybrid launch strategy for ModRun cable management system (and future 3D-printed products). Identify optimal path given capital constraints, shipping economics, and volume projections.
+  - **Deliverables**: `projects/mfg-farm/amazon-fba-analysis.md` (cost comparison matrix, fulfillment timelines, seller reputation impact, decision matrix), hybrid launch roadmap
+  - **Expected outcome**: Data-driven decision framework for post-test-print launch strategy
+  - **Timeline**: 1-2 sessions
+  - **Status**: QUEUED (ready to begin now — independent of test print completion)
+
+- **May 2026 Civic Developments Tracker** (resistance-research — ongoing secondary goal)
+  - **Scope**: Monitor and synthesize May 2026 civic developments across domains relevant to resistance-research framework. Track: (1) War Powers — Iran/NATO/Taiwan escalation, (2) Prosecutorial Weaponization — DOJ cases, (3) Voting Rights — state-level restrictions, (4) SCOTUS activity — June 2026 term decisions on Slaughter case + others, (5) Election Security — midterm preparation, (6) Fiscal/Congressional Authority — spending disputes. Identify which developments warrant Domain 38 research vs. updates to existing domain documents.
+  - **Deliverables**: `projects/resistance-research/MAY_2026_TRACKER.md` (structured weekly log + domain update recommendations), quarterly synthesis (may warrant Domain 38 research proposal)
+  - **Expected outcome**: Current-status reference for framework maintenance, decision trigger for Phase 2 expansion research
+  - **Timeline**: 2-3 sessions to establish pattern, then weekly updates (1 hour/week)
+  - **Status**: QUEUED (ready to begin now)
+
 **NEW ITEMS (Session 542 — Parallel Exploration Queue Execution)**:
 
 - ✅ **stockbot: Performance Attribution & Post-Trade Analysis Framework** (COMPLETE — Session 542)
