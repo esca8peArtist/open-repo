@@ -1,4 +1,41 @@
-## Current Session (Session 559 — 2026-04-28 01:54 UTC — Exploration Queue Refresh: Phase 3 Candidate 5 + Discord Alerts)
+## Current Session (Session 560 — 2026-04-28 02:44 UTC — CRITICAL: stockbot Feature Count Bug Fixed + seedwarden Phase 2 Roadmap)
+
+**Status**: 🟢 **CRITICAL BUG FIXED — stockbot engine can now trade on market open** + Phase 2 roadmap complete
+
+**Since Last Session (Session 559 → Session 560)**:
+
+1. ✅ **stockbot: CRITICAL Feature Count Bug FIXED (Session 560)**
+   - **Root Cause**: Ensemble stackers expect 61 features with `1d_` prefix from MTF extractor. Previous fallback logic used `FeatureEngineer.transform()` which produces different feature names → shape mismatch → silent sklearn errors → 0.0 predictions → always HOLD.
+   - **Solution**: New `_build_daily_mtf_features()` helper generates correct 61-feature set. All three fallback paths updated.
+   - **Impact**: AAPL models now produce non-zero predictions; engine executable on restart.
+   - **Retraining**: NOT required (inference bug, not model training bug).
+   - **Files**: feature_engineer.py, options_model_api.py, trading_session.py, test files (8 new tests).
+   - **Committed**: stockbot submodule master.
+   - **Next**: User restarts engine before 13:30 UTC market open.
+
+2. ✅ **seedwarden: Phase 2 Next Work Identified and Prioritized**
+   - **Assessment**: Phase 2 planning complete; only execution work remains (blocked on Phase 1 launch).
+   - **Highest-value autonomous work** (prioritized):
+     - #1: Wild-edibles habit photos (16 remaining) — No blockers, 1–2 sessions
+     - #2: Native Plants PDF rebuild ($20 product unblocked) — 56.96 MB → <5 MB, 1 session
+     - #3: Zone Quick-Start Card spec (lead magnet) — 1 session
+   - **Deferred**: Photography execution (awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY.md user decision), Phase 2 product dev (awaiting Phase 1 data)
+   - **Status**: Ready for execution; priorities documented.
+
+**Critical Status — T-10.5 hours to Market Open (13:30 UTC)**:
+- **stockbot engine restart**: STILL PENDING (user action, must complete before 13:30 UTC for live trading)
+- **Feature count bug**: ✅ FIXED (Session 560)
+- **resistance-research path decision**: STILL PENDING (Path A / A+37 / B)
+
+**Needs Your Input**:
+1. **stockbot engine restart** (CRITICAL, deadline 13:30 UTC 2026-04-28): Run `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/ before market open. Feature count bug is fixed; engine will execute trades.
+2. **resistance-research distribution path**: Pick Path A (immediate), Path A+Domain37 Hybrid (recommended), or Path B (continue updates). Orchestrator ready to execute Phase 1 immediately upon decision.
+
+**Token Usage**: ~204k tokens in Session 560 (stockbot agent 158k + seedwarden agent 46k). Weekly reset 2026-04-29 00:00 UTC.
+
+---
+
+## Previous Session (Session 559 — 2026-04-28 01:54 UTC — Exploration Queue Refresh: Phase 3 Candidate 5 + Discord Alerts)
 
 **Status**: 🟢 **TWO EXPLORATION QUEUE ITEMS COMPLETE** — Phase 3 Candidate 5 Fiscal Architecture research (8,205 words, production-ready) + Real-time CRITICAL Discord alert webhook implementation (7 alert types, 22 tests, all passing). Exploration queue refreshed with 3 active items (minimum maintained). All primary projects remain blocked on user actions (stockbot engine restart T-11.5h to market open, resistance-research path decision, mfg-farm test print).
 

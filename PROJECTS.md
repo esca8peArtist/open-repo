@@ -278,12 +278,12 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — **Multi-ticker training verified COMPLETE (Session 533), ready for market open 2026-04-28 09:30 ET** — awaiting engine restart
+**Status**: Active — **Feature count bug FIXED (Session 560), ready for market open 2026-04-28 09:30 ET** — awaiting user engine restart
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: **BLOCKED — Feature count mismatch prevents real trading (2026-04-28)**. Jetson container has been running 40+ hours but has never executed a real strategy trade. Root cause: feature engineer generates 58 features, deployed models expect 116. Every prediction cycle fatal-errors and falls back to HOLD. Pi has newer mtf-format models (61 features) also not deployed. There is a silent bug in `_add_economic_features` in `src/features/feature_engineer.py` — log line prints literal `%d` (format string never applied), indicating the FRED macro feature step is crashing silently and dropping ~3 features (61→58 gap). Fix sequence: (1) debug `_add_economic_features`, (2) get correct feature count, (3) retrain AAPL models, (4) DEPLOY_READY outside market hours, (5) verify predictions succeed in logs next day. See BLOCKED.md for full context.
+**Current focus**: **Session 560 FIX COMPLETE**. Feature count mismatch resolved. Root cause: Ensemble stackers expect 61 features with `1d_` prefix from MTF extractor + PipelineIntegrator. Previous fallback logic called `FeatureEngineer.transform()` which produces different feature names, causing shape mismatch → silent sklearn errors → 0.0 predictions → always HOLD. New `_build_daily_mtf_features()` helper generates correct 61-feature set. All three fallback paths in `_generate_stacker_signal` now call this helper. AAPL models predict correctly with full feature set (no retraining needed — inference bug was the issue, not model training). Committed to stockbot submodule. **Next user action: Restart engine with `.venv/bin/python scripts/run_live_trading.py` from projects/stockbot/ before 13:30 UTC market open.**
 - Single-ticker rate: 0.17/month. Gate 1 requires 30/month (175x gap).
 - **Session 520 multi-ticker training**: 10 new stackers trained (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA). 11-ticker portfolio projects to ~8/month (47x improvement, but still 4x short of Gate 1).
 - **Session 521 integration**: All 11 sessions wired into database model_runs table. `/projects/stockbot/active-sessions.json` updated. Created 107 parametrized integration tests — all pass. Full test suite: 140 tests, 0 failures.
@@ -326,7 +326,7 @@
 
 **NEXT WORK (priority order)**:
 
-0. **CRITICAL — Fix feature count mismatch so engine actually trades**: See BLOCKED.md. Steps: (a) Open `src/features/feature_engineer.py`, find `_add_economic_features`, fix the `%d` logging bug and determine whether FRED API calls succeed (check for missing env var / API key). (b) Run feature engineer locally against sample data, count output features. (c) Retrain AAPL mtf models against the correct feature count (`models/mtf/AAPL_*.joblib`). (d) Outside 13:30–20:00 UTC: `touch DEPLOY_READY` to trigger Jetson deploy. (e) Next session: `ssh awank@100.120.18.84 "docker logs stockbot --tail 50 2>&1"` — confirm no more `LightGBM [Fatal]` lines and at least one non-HOLD prediction logged.
+0. ✅ **CRITICAL — Fix feature count mismatch so engine actually trades** (Session 560 COMPLETE): Feature count bug identified and fixed. Root cause: ensemble stackers expect 61 features with `1d_` prefix; fallback was using `FeatureEngineer.transform()` which produces different feature names. New `_build_daily_mtf_features()` helper generates correct features. All fallback paths updated. AAPL models produce non-zero predictions. Committed. User action: Restart engine before 13:30 UTC market open.
 
 1. **Discord position notifications**: Send a Discord message every time any strategy opens or closes a position. Include: ticker, side (BUY/SELL), quantity, price, strategy name, unrealized or realized P&L. Wire into `on_trade_executed` in `src/models/model_strategy.py` (currently only logs to debug). **Use `STOCKBOT_DISCORD_WEBHOOK_URL` (stockbot channel) — NOT `DISCORD_WEBHOOK_URL` (general/orchestrator channel).** `STOCKBOT_DISCORD_WEBHOOK_URL` is already defined and used by `src/remote/hetzner_budget.py` — follow the same pattern.
 
@@ -469,6 +469,13 @@
   - Budget: $80–160 (mostly iStock credits); Timeline: 3 weeks (10–14 hours)
   - Conversion-focused metrics: Primary watch on 4 high-ticket products ($18–$22 range)
   - Status: Ready for user review and approval
+
+**Phase 2 Next Work (Session 560 assessment)** — Highest-value autonomous priorities:
+1. **#1 — Wild-edibles habit photos** (16 remaining of 18): Wikimedia search protocol established, 2 complete. No blockers. Est. 1–2 sessions.
+2. **#2 — Native Plants PDF rebuild**: Unblock $20 product frozen at 56.96 MB (Etsy 5 MB limit). Image compression rebuild. Est. 1 session.
+3. **#3 — Zone Quick-Start Card spec**: Lead magnet upgrade for email automation. No blockers. Est. 1 session.
+4. **Deferred — Photography execution**: Awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY.md user decision.
+5. **Deferred — Phase 2 product development**: Premature without Phase 1 conversion data (30-day minimum).
 
 **✅ COMPLETED (Session 500)**:
 - **Mockup Tooling** — All 21 products have three mockup angles (tablet, phone, interior)
