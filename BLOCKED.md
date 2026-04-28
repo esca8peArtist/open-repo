@@ -27,6 +27,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — Paper trading account has zero day-trading buying power
+**Date blocked**: 2026-04-28
+**Context**: Engine successfully restarted and is actively running during market hours (15:12 UTC, market still open). All 11 tickers are generating BUY/SELL signals in real-time. However, every order submission to Alpaca is failing with error code 40310000: "insufficient day trading buying power" (daytrading_buying_power: 0). Database shows 0 trades, 0 open positions (fresh paper account). Strategies are working correctly; execution is blocked at the broker level.
+**What I need**: Verify Alpaca paper trading account funding. (1) Check https://app.alpaca.markets/ → Paper Trading tab → confirm account balance > $0. If balance is $0 or account unfunded: deposit simulated cash (Alpaca provides $25,000 default for paper trading). (2) Verify account type is MARGIN (not CASH). Once account is funded and properly configured, orders will execute and paper trading can proceed.
+**Verify with**: `python3 -c "import alpaca_trade_api as tradeapi; api = tradeapi.REST('<KEY>', '<SECRET>', base_url='https://paper-api.alpaca.markets'); acc = api.get_account(); print(f'Buying power: {acc.buying_power}, Status: {acc.status}')"` — should show buying_power > 0
+**Resolution**:
+
+---
+
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.

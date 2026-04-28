@@ -147,6 +147,50 @@
 
 **Scope**: Expand all 4 mfg-farm launch deliverables from Session 590 baseline to full scope requirements.
 
+---
+
+## 2026-04-28 Session 593 (15:12 UTC onwards) — Orchestrator: Engine Status Verification
+
+### **CRITICAL ISSUE: Engine Running But Buying Power Depleted**
+
+**Time**: 15:12 UTC, Market still open (13:30–20:00 UTC window)
+
+**Status**: 🔴 **Paper Trading Blocked** — Engine IS actively running (PID 1142174) but all BUY orders failing.
+
+**Finding**: 
+- Engine started and running during market hours (confirmed: Python process holding lock on trading_20260428.log)
+- Last log entry: 15:12:46 UTC (seconds ago, real-time updates confirming live execution)
+- 11-ticker portfolio generating signals across HON, NKE, DE, ABBV, DIS, ADBE, GS, GOOGL, AAPL, etc.
+- **ALL BUY orders failing** with Alpaca error: `insufficient day trading buying power` (daytrading_buying_power: 0)
+- Database state: 0 open positions, 0 total trades (fresh paper account)
+
+**Root Cause Analysis**:
+- Paper trading account is properly connected to Alpaca
+- Strategies are generating valid signals (50%+ predicted returns logged)
+- Orders being submitted to Alpaca in real-time
+- Alpaca returning: `{"code":40310000, "cost_basis":"9960.24", "daytrading_buying_power":"0"}`
+- Consistent failure pattern: every BUY signal rejected, multiple SELL signals generated but no positions to close
+
+**Implications**:
+- Account appears to have zero day-trading buying power despite fresh initialization
+- Possible causes: (1) account never funded, (2) cash account vs. margin account misconfiguration, (3) day-trading buying-power rule violation
+- Without buying power, paper trading cannot execute ANY orders
+- Live trading session is logging orders but producing zero fills
+- Paper trading validation gates blocked: cannot generate round trips → Gate 1 unfeasible
+
+**Immediate User Action Required**:
+1. Verify Alpaca paper trading account has been funded (check: https://app.alpaca.markets/ → Paper Trading → Account Balance)
+2. If unfunded: deposit simulated cash (Alpaca paper trading provides $25,000 default)
+3. If already funded: verify account type (should be MARGIN, not CASH) — log into Alpaca and check "Account Type"
+4. Once funding confirmed/fixed: engine will continue trading automatically (no restart required)
+
+**Next Session**:
+- Once account funding verified: monitor Day 1 paper trading execution
+- Track order fills, position creation, signal generation success rate
+- If orders still failing: escalate to account configuration troubleshooting (account type, day-trading rules, API key permissions)
+
+**Files modified**: None (issue found but not fixed — requires user action on Alpaca account)
+
 **Files committed** (commit b07835a):
 
 1. `projects/mfg-farm/post-test-print-launch-prep.md` (v2.0, ~4,200 words)

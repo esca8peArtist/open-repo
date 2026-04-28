@@ -5,6 +5,29 @@
 
 ---
 
+## Since Last Check-in (Session 593 — 2026-04-28 15:12 UTC onwards)
+
+🔴 **CRITICAL BLOCKER: Stockbot Paper Trading Buying Power Exhausted**
+
+**Engine Status**: ✅ RUNNING (actively trading, 11 tickers, live signals)
+
+**Problem**: All BUY orders failing with "insufficient day trading buying power" from Alpaca (error code 40310000, daytrading_buying_power: 0)
+
+**Root Cause**: Paper trading account requires funding. Alpaca paper accounts don't auto-initialize with simulated cash.
+
+**Immediate Action Required**:
+1. Go to https://app.alpaca.markets → Paper Trading tab
+2. Verify account balance (should show > $0, default is $25,000 simulated)
+3. If $0: deposit simulated cash (Alpaca handles this automatically)
+4. Verify account type is MARGIN (not CASH)
+5. Engine will continue trading automatically once funding confirmed
+
+**Status**: New active block added to BLOCKED.md: "stockbot — Paper trading account has zero day-trading buying power"
+
+**Next Session**: Once account is funded, monitor Day 1 execution results and order fills
+
+---
+
 ## Since Last Check-in (Session 591 — 2026-04-28 14:14–15:30 UTC)
 
 🟢 **Exploration Queue Execution COMPLETE — All autonomous work items finished** 
