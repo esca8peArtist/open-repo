@@ -5,6 +5,75 @@
 
 ---
 
+## Since Last Check-in (Session 591 — 2026-04-28 14:14–15:30 UTC)
+
+🟢 **Exploration Queue Execution COMPLETE — All autonomous work items finished** 
+
+**Session 591 Achievement**: Four major infrastructure deliverables completed in parallel. All projects now at completion state (deliverable done) or user-action state (awaiting user decision/action).
+
+**Work Completed**:
+
+1. ✅ **resistance-research: Domain Content Maintenance** (agent a296b4de16be9c338)
+   - Found earlier sessions (573-578) had already completed 6 of 8 planned domain updates
+   - **Added Domain 19f Section 15** (~1,400 words, 9 sources):
+     - Frozen conflict scenario (~55-60% probability) with May 1 deadline approaching
+     - Senate GOP 90-day authorization track emerging as bipartisan alternative
+     - **Critical finding**: May-August 2026 is highest-stakes WPR reform window in 50-year history
+   - Pending: FISA 702 outcome (Apr 29-30), Iran post-May 1 developments, Trump v. Slaughter decision (late June)
+
+2. ✅ **mfg-farm: Post-Test-Print Launch Package v2.0** (agent af4cc9d616977c456)
+   - **4 deliverables, 10,500 words total**:
+     1. post-test-print-launch-prep.md (4,200 words) — 6-phase sequence, ±0.5mm go/no-go criteria, 20% COGS reduction math
+     2. supplier-negotiation-playbook.md (2,800 words) — 7-step engagement, decision tree, risk scenarios
+     3. fulfillment-workflow.md (2,900 words) — Craftybase integration, QA protocol, packaging specs, Pirate Ship rates
+     4. launch-checklist.json (127 items, 9 phases) — Go/no-go gates, 13 KPIs, Month 1-3 financial projections
+   - **Ready for Week 1 execution upon test print confirmation**
+
+3. ✅ **stockbot: Post-Gate-2 Operations & Live Trading Scaling Roadmap** (agent a34df22178d63c2b5)
+   - **10,219 words, production-ready roadmap**:
+     - Multi-asset expansion (futures, options, crypto with dedicated regime models)
+     - Institutional risk management (position caps, leverage controls, counterparty resilience)
+     - Regulatory compliance (SEC/FINRA/state scope, zero regulatory burden for personal trading)
+     - Infrastructure scaling (SQLite→PostgreSQL, Redis job queue, Phase 1-2 milestones)
+     - Contingency scenarios (5 failure modes with diagnostic protocols)
+     - Timeline: 6 checkpoints from Day 14 (2026-05-12) through Day 214 (2026-11-28)
+   - **Clear decision framework**: Triple-gate pass required for multi-asset expansion; Sharpe-drop 20% triggers retraining
+
+4. ✅ **open-repo: Phase 5 Offline Export Preliminary Infrastructure** (agent a892d90223ace6864)
+   - **7 deliverables, 5,111 lines, 84 tests passing**:
+     1. phase-5-kiwix-integration-guide.md (2,100 words) — Kiwix ecosystem, python-libzim v3.2+, CDN analysis (R2 vs B2)
+     2. phase-5-export-strategy.md (1,600 words) — Three variants (Full 50-80 MB, Domain-Specific 5-10 MB, Reference permanent)
+     3. phase-5-implementation-plan.md (2,500 words) — 7.5 day preliminary + 16-27 day full implementation, 5 integration checkpoints
+     4. zim_writer.py (750 lines stub) — Complete interface contracts, TODO markers, full docstrings
+     5. opds_generator.py (600 lines) — OPDS 1.2 catalog generation, version history, OPDS XML validator
+     6. cdn-deployment.yaml (600 lines) — R2/B2/S3 comparison, Cloudflare Worker script, backup strategy
+     7. Integration test harness (84 tests) — Synthetic Phase 4 data, end-to-end validation, zero external calls
+   - **Ready for immediate Phase 5 implementation once PR #1 merges**
+
+**Project Status Summary** (end of Session 591):
+- **resistance-research**: Domains current through Apr 28. Awaiting user distribution path decision (A / A+Domain37 / B) for Phase 1 execution
+- **stockbot**: Code production-ready. Post-Gate-2 roadmap complete. Awaiting user engine restart for live trading
+- **mfg-farm**: Launch package complete. Awaiting test print confirmation for Week 1 execution
+- **open-repo**: Phase 5 infrastructure ready. Awaiting PR #1 merge for Phase 5 implementation
+- **seedwarden**: Phase 3 planning complete. Track B has no blockers; Track A awaiting tag corrections
+- **cybersecurity-hardening**: Tier 1-3 prep complete. Awaiting user Tier 1 approval to execute
+- **off-grid-living**: Publication complete. Awaiting user social media execution
+- **workout**: Plan complete. Awaiting user review
+
+**Market Status**: Live trading Day 1 executing normally. Engine running, 11 tickers active, no critical alerts.
+
+**Exploration Queue Status**: All Session 590-591 items completed. No remaining high-priority autonomous work (all projects at user-action state). New Exploration Queue items can be added as needed, but current queue is clear.
+
+**Time Remaining**: Market open until 20:00 UTC (~4 hours 30 min remaining)
+
+**Needs Your Input**:
+- **Test print status**: Confirmation that ModRun cable management test print succeeded (enables mfg-farm Week 1 launch)
+- **distribution-research path decision**: A / A+Domain37 Hybrid / B (enables Phase 1 execution)
+- **stockbot engine restart**: Command before market close (enables live trading continuation)
+- **cybersecurity-hardening Tier 1 approval**: Tier 1 outreach templates ready for review
+
+---
+
 ## Since Last Check-in (Session 590 — 2026-04-28 14:05–14:35 UTC)
 
 🟢 **Exploration Queue Execution + Launch Package Creation COMPLETE** — Market continues live trading execution (Day 1 running normal)

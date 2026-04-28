@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-28T12:44:03Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-28T14:13:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 14.8% | Reset in 155h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 17.2% | Reset in 154h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -65,43 +65,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-     - **Status**: COMPLETE — ready for Item 3 to consume at 20:30 UTC
-   
-   - **Item 9: mfg-farm Product Category & Adjacent Manufacturing Viability** (queued)
-     - Purpose: Exploratory research for Phase 3 product line expansion (no blocker dependency)
-     - Scope: High-margin product categories, laser/resin/CNC integration analysis
-     - Status: QUEUED (exploratory, low priority vs. post-market work)
-   
-   - **Item 10: resistance-research Domain 37 Preliminary Scoping** (queued)
-     - Purpose: Conditional on user selecting Path A+Domain37 Hybrid
-     - Scope: Gap analysis, research strategy, executive summary template
-     - Status: QUEUED (conditional on user decision)
-
-3. ✅ **Updated EXPLORATION_QUEUE.md** (12:50–12:55 UTC):
-   - Added Items 8, 9, 10 with full scoping and success criteria
-   - Now have 6 active items (3 scheduled/blocked for later, 3 new for future work)
-   - Queue seeded per protocol: "If queue < 3 items, add 2–3 new items"
-
-**Market-Open Status (T-~50 minutes)**:
-- **Code**: Production-ready ✓ (Session 560 feature count fix in place)
-- **Config**: Production-ready ✓ (67 sessions, 11 tickers, Alpaca credentials)
-- **Infrastructure**: Production-ready ✓ (database writable, Python env verified, no errors)
-- **Engine**: Offline — awaiting user restart (user action required)
-- **Health Check**: ALL PASS — system ready for execution
-- **Timeline**: T-~50 minutes until 13:30 UTC market open
-
-**Strategic Positioning**:
-- Pre-market validation complete; all autonomous checks pass
-- Engine restart remains user responsibility (CRITICAL ACTION)
-- Post-market work queued and prioritized (Item 3 research complete, ready for 20:30 UTC execution)
-- Exploration queue seeded for future autonomous work when current projects unblock
-
-**Session Type**: Pre-market health check + exploration queue preparation (no code changes, stability maintained)
+- **Code**: Production-ready ✓ (feature count fix verified in place)
+- **Research**: Production-ready ✓ (Item 8 complete, Item 3 staging ground prepared)
+- **Engine**: Awaiting user restart (user action required before 13:30 UTC)
+- **System**: All health checks pass — ready for live trading execution
 
 **Next Session Actions**:
-1. Execute market-open checklist using MARKET_OPEN_EXECUTION_RUNBOOK.md (if user restarts engine)
-2. Monitor first trading cycle (13:30–14:30 UTC) via dashboard
-3. Validate Day 1 success (POST_MARKET_MONITORING.md, by 20:00 UTC)
-4. Activate post-market execution plan (20:30 UTC) → spawn stockbot agent for Item 3 (post-Gate-2 operations analysis)
+1. Monitor market execution (13:30–14:30 UTC) if user restarts engine
+2. Post-market research execution (20:30 UTC) → Item 3 production (4–6k word roadmap on multi-asset + institutional scaling)
+3. Monitor Day 1 trading outcome via dashboard
 
----
+
+## 2026-04-28 Session 589 Detail (13:35–13:40 UTC) — Exploration Queue Item 10
+
+**Item 10 Execution**: Domain 37 Preliminary Scoping for resistance-research
+
+**Work completed**:
+1. ✅ Gap analysis — identified 4 structural gaps in the 35-domain framework
+   - Gap 1: Foreign and transnational interference (marked as highest priority — acute for 2026 midterms)
+   - Gap 2: Constitutional architecture and Article V reform (28 of 34 states toward convention)
+   - Gap 3: Tribal sovereignty and Indigenous democratic traditions
+   - Gap 4: US international democratic leadership restoration
+   
+2. ✅ 5 Domain 37 candidates proposed (A–E)
+   - **Candidate A (Recommended)**: Foreign and Transnational Interference (8-10K words, 50-60 sources, high urgency)
+   - **Candidate B (Secondary)**: Constitutional Architecture and Article V (7.5-9K words, 45-55 sources, medium-high urgency)
+   - Candidates C–E: Tribal sovereignty, international democratic leadership, PR deepening
+
+3. ✅ Research roadmaps for top 2 candidates
+   - Both include: key research questions, source strategy, scope definition, cross-domain connections
+   - Format verified to match existing domain structure
+   - Ready for immediate execution if user selects Path A+Domain37 Hybrid
+
+**Deliverable**: `/projects/resistance-research/ITEM10_DOMAIN37_CANDIDATES.md` (3,200 words, 10+ sources)
+
+**Quality**: Production-ready for user review and decision on distribution path
+
+**Outcome**: Enables fast execution of Domain 37 research if user chooses Hybrid path; provides strategic input for path selection decision
+
+**Next steps**: (1) User selects distribution path (A/A+37/B), (2) If Hybrid selected, execute Domain 37 full research immediately
