@@ -4,6 +4,43 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 563 — 2026-04-28 — Phase 3 Product Expansion Roadmap
+
+**Task**: Create Phase 3 product expansion roadmap (Month 3–6 post-Phase-1 launch, July–October 2026).
+
+**Deliverables created**:
+
+1. **`projects/seedwarden/docs/phase-3-product-expansion-roadmap.md`** (~4,000 words)
+   - Month 3–4 (July–August): 4 preservation derivatives, 9 native plants regional listings, 7 survival garden regional listings, 1 wild edibles quick reference, 2 preservation bundles
+   - Month 5–6 (September–October): Wild edibles photo pack, native plants flashcards, seed library system, medicinal herb guide, homestead skills roadmap, preservation planner, expanded gift bundle
+   - Pricing strategy: premium positioning rationale, bundle economics, seasonal pricing calendar, 3 price increase tests (August 15 implementation, September 28 decision)
+   - Supplier/vendor analysis: Etsy, Kit, Canva, Wikimedia Commons — all digital, no physical inventory
+   - Cross-sell matrix: Phase 1 first-purchase → Phase 3 upgrade pathway for all 14 entry products
+   - Fulfillment workflow: SKU naming convention, ZIP delivery for photo pack and bundles, listing inventory spreadsheet spec
+   - Timeline: week-by-week critical path for July–October, 3 identified risk items
+   - Revenue projections: M1 $400–700 → M6 $1,800–3,200 (4.5x growth at conservative midpoint)
+
+2. **`projects/seedwarden/data/phase-3-product-specifications.json`** (structured data)
+   - 25 individual product entries (P3-01 through P3-25) + 4 bundle entries (P3-B1, P3-B2, P3-B3, P3-26)
+   - Per-product: SKU, price, pricing tier, source content, PDF filename, page count, development hours, launch date, seasonal peak months, primary keywords, Etsy tags (13 per product), cross-sells, bundle pathway, mockup paths, license notes
+   - Price increase test configuration: 3 products, August 15 implementation, 30-day observation, September 28 decision, revert triggers
+   - Revenue projections: month-by-month May–October conservative/moderate/optimistic
+   - Fulfillment config: SKU convention, ZIP delivery specs, listing inventory file reference
+   - Seasonal availability windows: 5 windows with product lists and promotional actions
+   - Critical path items: 5 items with risk level, deadline, dependency, fallback
+
+**New directories created**: `projects/seedwarden/docs/`, `projects/seedwarden/data/`
+
+**Design decisions**:
+- Regional listing batch (14 listings from 2 existing PDFs) is the highest-ROI Phase 3 action — 14 new keyword surfaces from zero new content development, ~19 hours total
+- Wild Edibles Quick Reference (P3-19) is the only new-content product that draws directly on Phase 2 image work (18 habit photos from assets/wild-edibles/)
+- Photo attribution page for P3-19 is a hard requirement before publication — all 16 Session 560 images are CC BY-SA
+- Medicinal Herb Guide (P3-23) is the only genuinely new-research product in Phase 3; all others derive from existing catalog content
+- Price increases (Native Plants $18→$22, Survival Garden $22→$24, Hunting $20→$22) are framed as tests with defined revert triggers, not permanent changes
+- P3-24 Homestead Skills Roadmap is positioned as a catalog navigation product — every section cross-references a Seedwarden product, making it the most powerful cross-sell driver in the Phase 3 catalog
+
+---
+
 ## Session 560 — 2026-04-28 — Wild-Edibles Habit Photos (16/16 batch) + PDF Status Verification
 
 ### Priority 1: Wild-Edibles Habit Photos
