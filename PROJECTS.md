@@ -686,27 +686,28 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Integration Status**: Coordinates with Session 551 UI mockup and Session 542 performance attribution framework. Ready for immediate use post-engine-restart.
   - **Status**: COMPLETE, production-ready, committed to master
 
-- ✅ **resistance-research: Phase 3 Candidate 5 — Finance & Fiscal Architecture** (Priority 1 for Phase 1 distribution) — **COMPLETE (Session 564)**
+- ✅ **resistance-research: Phase 3 Candidate 5 — Finance & Fiscal Architecture** (Priority 1) — **COMPLETE (Session 564)**
   - **Deliverable**: `phase-3-candidate-5-fiscal-architecture.md` (8,667 words, 15+ sources)
-  - **Key Findings**: Self-enforcing vs. will-dependent mechanisms taxonomy; judicial-fiscal feedback loop (Mexico 12-18 month cycle); five US reform pathways (IRS Independence → Tax Enforcement Restoration); post-*Loper Bright* statutory leverage
-  - **Status**: Production-ready for Phase 1 institutional distribution (commit `aa57dca`)
+  - **Key Findings**: Self-enforcing vs. will-dependent mechanisms taxonomy; judicial-fiscal feedback loop (Mexico 12-18 month cycle); five US reform pathways; post-*Loper Bright* statutory leverage
+  - **Commit**: `aa57dca`
+  - **Status**: Production-ready for Phase 1 institutional distribution
 
-- **resistance-research: Phase 3 Candidate 6 — Democratic Participation & Election Security** (Priority 2)
-  - **Scope**: Voting systems resilience, ballot access equity, campaign finance reform post-*Citizens United* reversibility, ranked choice voting implementation feasibility, distributed election administration for audit resilience, voter registration infrastructure (NVRA linkage to civic participation)
-  - **Goal**: Identify institutional mechanisms that make elections both secure (resistant to interference/capture) and participatory (maximizing eligible voter turnout and voice)
-  - **Expected outcome**: `phase-3-candidate-6-election-security.md` (7,000-8,000 words, 35-40 sources)
-  - **Status**: QUEUED (Session 564+)
+- ✅ **resistance-research: Phase 3 Candidate 6 — Democratic Participation & Election Security** (Priority 2) — **COMPLETE (Session 564)**
+  - **Deliverable**: `phase-3-candidate-6-democratic-participation-election-security.md` (8,006 words, 50 sources)
+  - **Key Findings**: Election security/participation trilemma is false; certification refusal is novel structural threat; Colorado RLA key state model; AVR turnout paradox resolves at net level; FEC operationally dead; post-*Loper Bright* reforms need private right of action
+  - **Commit**: `d37dada`
+  - **Status**: Production-ready for Phase 1 institutional distribution
 
-- **resistance-research: Phase 3 Candidate 7 — Technology Governance & Digital Rights** (Priority 3)
-  - **Scope**: Federal AI governance expansion (beyond existing Domain 36), surveillance accountability mechanisms, biometric regulation and data protection, cryptography standards and key escrow, private right of action for algorithmic harms, Section 230 reform post-*Loper Bright*
-  - **Goal**: Structure digital-age governance to protect democratic rights, prevent surveillance capture, and enable institutional oversight of algorithmic systems
-  - **Expected outcome**: `phase-3-candidate-7-technology-governance.md` (7,000-8,000 words, 40+ sources)
-  - **Status**: QUEUED (Session 564+)
+- ✅ **resistance-research: Phase 3 Candidate 7 — Technology Governance & Digital Rights** (Priority 3) — **COMPLETE (Session 564)**
+  - **Deliverable**: `phase-3-candidate-7-technology-governance-digital-rights.md` (7,800 words, 50 sources)
+  - **Key Findings**: Innovation/rights trilemma false; WISeR is diagnostic accountability failure; Section 702 unresolved (expires Apr 30); Canada AIDA shows enforcement design failure; post-*Loper Bright* requires EU AI Act specificity; post-quantum crypto transition bipartisan; data broker loophole is Fourth Amendment + election security issue
+  - **Commit**: `ee93d69`
+  - **Status**: Production-ready for Phase 1 institutional distribution
 
 - **stockbot: Post-Gate-2 Operations & Live Trading Scaling Roadmap** (Unblocked when engine restarts)
-  - **Scope**: What to do once live trading completes initial gate: scaling to multi-asset classes (crypto, commodities, fixed income), institutional risk management frameworks, regulatory compliance (SEC, FINRA, CTA), performance attribution and meta-analysis, continuity planning for Jetson operation
-  - **Goal**: Design the operational and regulatory architecture for scaling paper trading success into institutional-grade trading
-  - **Expected outcome**: `stockbot-post-gate-2-roadmap.md` (6,000-7,000 words, operations/regulatory focus)
+  - **Scope**: What to do once live trading completes initial gate: scaling to multi-asset classes, institutional risk management, regulatory compliance, performance attribution, continuity planning
+  - **Goal**: Design operational and regulatory architecture for scaling paper trading success into institutional-grade trading
+  - **Expected outcome**: `stockbot-post-gate-2-roadmap.md` (6,000-7,000 words)
   - **Status**: QUEUED (after market open, Session 564+)
 
 - **stockbot: Real-time CRITICAL Alert Discord Webhook Implementation** (Priority 2 for live operations)
