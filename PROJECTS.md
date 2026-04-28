@@ -670,11 +670,24 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Integration Status**: Coordinates with Session 551 UI mockup and Session 542 performance attribution framework. Ready for immediate use post-engine-restart.
   - **Status**: COMPLETE, production-ready, committed to master
 
+- **resistance-research: Phase 3 Candidate 5 — [Finance & Fiscal Architecture]** (Priority 1 for Phase 1 distribution)
+  - **Scope**: Structural analysis of post-capture fiscal policy recovery mechanisms. Case studies: Brazil 2022 fiscal framework + central bank autonomy restoration, Argentina 2023+ Milei fiscal restructuring (comparative fiscal discipline without institutional erosion), Peru 2022 fiscal transparency after Castillo escape, Mexico 2025 judicial-fiscal feedback loop.
+  - **Goal**: Identify fiscal policy levers that are self-enforcing vs. constituency-dependent, integration points with institutional recovery (judicial independence ↔ tax enforcement, transparency requirements ↔ audit bureau independence)
+  - **Expected outcome**: `phase-3-candidate-5-fiscal-architecture.md` (7,000-8,000 words, 35-40 sources) — ready for Phase 1 institutional distribution
+  - **Status**: ACTIVE (Session 554+ — top queue priority, no blockers)
+
+- **stockbot: Real-time CRITICAL Alert Discord Webhook Implementation** (Priority 2 for live operations)
+  - **Scope**: Implement real-time CRITICAL alert Discord webhook (identified gap from Session 553 `live-trading-operations.md` design spec). (1) Add `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` env var + configuration, (2) Implement `_send_critical_discord_alert()` method in TradingSession, (3) Wire into 6 alert categories (drift, circuit breaker, drawdown, regime shift, position-specific, prediction error), (4) Test alert firing logic (mock webhook, verify message format, throttle duplicate alerts), (5) Integration with existing daily summary pattern (similar POST pattern, different webhook URL)
+  - **Expected scope**: ~15 min implementation, ~10 unit tests, zero schema changes
+  - **Deliverable**: Updated `src/trading/trading_session.py` + updated `tests/test_trading_session_improvements.py` with webhook tests
+  - **Integration**: Immediately deployable post-engine-restart; coordinates with Session 551 dashboard + Session 553 operations runbooks
+  - **Status**: ACTIVE (Session 554+ — available after Phase 3 Candidate 5 starts)
+
 - **cybersecurity-hardening: High-Risk Population Protection Protocols** (Priority 3 for advanced OpSec)
   - **Scope**: Beyond baseline OpSec playbook — design comprehensive protection for activists, dissidents, lawyers, vulnerable populations facing government targeting. (1) Identity compartmentalization (burner phones, secondary SIM architectures, VPN/Tor layering), (2) Physical security (surveillance detection, safe house networks, low-profile movement patterns), (3) Legal defense coordination (attorney networks, bail funds, criminal defense playbooks), (4) International sanctuary options (asylum processes, travel security, international NGO coordination), (5) Emergency protocols (asset recovery, family safety, evidence preservation)
   - **Goal**: Actionable protocols for high-risk populations, grounded in case studies (HK activists, US Jan 6 defendants, EU dissident networks)
   - **Expected outcome**: `high-risk-populations.md` (4,000-5,000 words) + operational playbooks for 3-4 scenario types
-  - **Status**: QUEUED (identified by Session 538 orchestrator — available now)
+  - **Status**: ACTIVE (Session 554+ — queue item #3, available for parallel execution)
 
 **NEW ITEMS (Session 542 — Parallel Exploration Queue Execution)**:
 

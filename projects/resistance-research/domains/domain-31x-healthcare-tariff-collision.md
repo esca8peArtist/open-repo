@@ -186,3 +186,63 @@ The scope document identifies the core analytical framework. Full research shoul
 *Scope document complete. Ready for full research execution in next session.*
 *Primary tariff sources confirmed accessible as of April 27, 2026.*
 *Most urgent Phase 2 item: 95 days to July 31 tariff effective date.*
+
+---
+
+## **April 2026 Update**
+
+**Added**: April 28, 2026 (Phase 2 Content Maintenance)
+
+---
+
+### MFN Deal Architecture: What 17 Agreements Actually Deliver
+
+The most significant development since the scope document was written is the April 23 announcement completing the first round of 17 Most-Favored-Nation pricing agreements, with Regeneron as the final signatory. The administration claims these deals cover "86% of the branded drug market." The tariff-deal linkage is now formally operational: participating companies receive a three-year suspension from pharmaceutical import tariffs in exchange for pricing commitments — the clearest evidence yet of the political economy the scope document theorized.
+
+What the deals deliver for Medicaid is materially different from what they deliver for Medicare. The Regeneron agreement commits to "Medicaid's best-available price, aligned with the MFN benchmark" for existing products. CMS has clarified that supplemental rebates under the administration's GENEROUS model do not change Medicaid Best Price calculations and therefore do not affect 340B ceiling prices. This clarification is critical: it means the administration is claiming Medicaid will benefit from MFN pricing *without* activating the Medicaid Best Price floor mechanism that would ordinarily reduce 340B discounts. However, independent analysts and Patients for Affordable Drugs have noted that the deals have "fallen short of the president's promises" in terms of direct patient-level price reductions — the Regeneron cholesterol drug Praluent is available at $225 through TrumpRx, but this price is available only through the direct-to-consumer TrumpRx.gov platform, not through standard pharmacy benefit channels. Medicaid managed care plans and their formularies are not directly integrated into TrumpRx pricing.
+
+The mandatory enforcement backstop for companies that do not sign voluntary deals is severe: the GLOBE and GUARD models impose a Civil Monetary Penalty equal to 125% of the incremental rebate amount for non-compliance, with CMS explicitly reserving referral authority to DOJ, Treasury, and HHS OIG for persistent violations. The bifurcation between signatories (tariff-exempt) and non-signatories (tariff-exposed plus CMP risk) has created strong coercive pressure, and all 17 of the initially targeted companies have now signed. The next phase — which Gibson Dunn characterizes as "voluntary deals giving way to mandatory rules" — will extend the architecture beyond the initial 17 to a broader mandatory model expected to be finalized before October 2026.
+
+**The Medicaid access gap that MFN deals do not close**: The scope document's core argument remains intact. The 17 MFN deals cover patented branded drugs — the tariff-exempt beneficiaries. They do not address the generic drug API supply chain problem, which operates through a different mechanism: generic APIs sourced from India and China face tariff pressure regardless of whether branded manufacturers have signed MFN agreements. The NEJM published in 2025 (updated in 2026 with tariff-era data) the clearest statement of this gap: "the risks of pharmaceutical tariffs for generic drug availability" document that approximately 30% of the 100 drugs identified as most vulnerable to supply disruption are *already* in active FDA shortage — before tariff implementation. These are sterile injectables, oncology drugs, and antibiotics that represent the backbone of hospital formularies for uninsured and Medicaid-dependent patients. MFN deals, which are exclusively about branded pricing, offer no relief for this population.
+
+**The Commerce Department's one-year review mandate**: A detail from the April 2 Proclamation that deserves specific advocacy attention: Commerce is required, within one year of the Proclamation (by April 2, 2027), to advise the President whether circumstances warrant extending Section 232 tariffs to generic pharmaceuticals and their associated ingredients. This is a dormant threat to the generic exemption that the scope document treated as stable. If generic APIs face the same tariff structure as patented APIs by April 2027, the supply chain scenario the scope document describes — thin-margin Indian manufacturers exiting the U.S. market — becomes far more acute. The April 2027 Commerce review is an advocacy deadline that does not yet appear in any major tracking calendar.
+
+### Supply Chain Deterioration: USP Data and the NEJM Warning
+
+The U.S. Pharmacopeia's updated vulnerable medicines list, published February 2026, identifies 100 drugs at elevated supply risk. Thirty of those are already in active FDA shortage. The starting material sourcing bottlenecks flagged by FiercePharma (April 2026) document that the U.S. generic drug supply chain faces three compounding stressors simultaneously: (1) tariff cost pass-through from Chinese API manufacturers to Indian formulation plants; (2) Strait of Hormuz shipping disruption affecting the Arabian Sea route from India; and (3) existing single-source manufacturing concentration for critical injectables. The NEJM piece is the clearest peer-reviewed statement of shortage risk from pharmaceutical tariffs; its argument that generic sterile injectables represent the highest-risk category aligns precisely with the scope document's hospital formulary analysis.
+
+**Logistics viewpoints analysis (April 10, 2026)**: The supply chain restructuring underway in response to pharmaceutical tariffs is producing a "friend-shoring" pattern in which larger manufacturers are attempting to shift API sourcing away from China toward India, Vietnam, and domestic suppliers. This transition, however, requires 3-7 years for new manufacturing capacity to come online — meaning the July 31 tariff effective date arrives before any meaningful supply chain restructuring can be completed. The advocacy window documented in the scope document's timeline is therefore the window before structural supply chain adjustment is possible, making it the most dangerous period for drug availability.
+
+### Advocacy Window Update: June 2026 HHS Guidance Deadline Approaching
+
+The HHS work requirement guidance deadline remains June 2026. KFF's Medicaid tracker confirms no guidance has been issued as of late April 2026. The comment period that would precede final guidance has not been formally opened. This is itself an advocacy trigger: delay in opening the comment period compresses the time available for healthcare providers, patient advocates, and state officials to submit substantive comments. Organizations tracking this timeline should formally notify HHS that failure to open a comment period with adequate time for preparation (at minimum 60 days) would constitute a procedural violation of the Administrative Procedure Act's notice-and-comment requirements for guidance with binding effect.
+
+**New advocacy lever — the Commerce generic review**: Patient advocacy organizations, generic pharmaceutical manufacturers, safety-net hospitals, and state Medicaid programs should file comments with the Commerce Department now — before the one-year review is triggered — documenting the specific harm to generic drug availability that would result from extending tariffs to generic APIs. Pre-filing creates a paper record that the Commerce Secretary must address in its required Presidential report. A record of documented harm could also support standing for a legal challenge if the generic API tariff is extended.
+
+### Deadline Calendar Update
+
+| Date | Event | Action Required |
+|------|-------|----------------|
+| **May 2026** | HHS comment period should open for OBBBA work requirement guidance | File APA procedural challenge if comment period not opened with 60+ days notice |
+| **June 2026** | HHS work requirement guidance due | Submit evidence of tariff-collision harm to Medicaid beneficiaries; file if guidance is inadequate |
+| **July 31, 2026** | 100% pharmaceutical tariff effective (most companies) | Coalition cost-impact documentation for public release |
+| **September 2026** | 100% tariff effective for 17 Annex IV large manufacturers | Second shock; formulary changes visible in MCO communications |
+| **October 2026** | Pre-election coverage disenrollment notices | Document connection to tariff-driven formulary restriction |
+| **April 2027** | Commerce Department generic drug tariff review due | Pre-file comments documenting generic supply chain harm NOW |
+| **January 1, 2027** | OBBBA work requirements effective | Coverage cliff: simultaneous disenrollment + full tariff costs |
+
+New sources:
+- [White House Fact Sheet: Regeneron MFN Deal (April 23, 2026)](https://www.whitehouse.gov/fact-sheets/2026/04/fact-sheet-president-donald-j-trump-announces-deal-with-regeneron-to-bring-most-favored-nation-pricing-to-american-patients/)
+- [STAT News: Trump celebrates closing 17 MFN deals (April 23, 2026)](https://www.statnews.com/2026/04/23/trump-drug-price-deal-regeneron-mfn-negotiations/)
+- [Gibson Dunn / Biotech Briefings: MFN Drug Pricing in 2026 — Voluntary Deals Giving Way to Mandatory Rules](https://biotechbriefings.gibsondunn.com/mfn-drug-pricing-in-2026-voluntary-deals-are-giving-way-to-mandatory-rules-five-things-life-sciences-companies-need-to-know/)
+- [Patients For Affordable Drugs: Response to Regeneron Deal (April 23, 2026)](https://www.patientsforaffordabledrugs.org/2026/04/23/p4ad-responds-to-regeneron-mfn-deal-and-gene-therapy-approval/)
+- [AJMC: Trump Strikes 9 New Pricing Agreements (April 2026)](https://www.ajmc.com/view/trump-strikes-9-new-pricing-agreements-as-drugmakers-navigate-tariff-regulatory-pressure)
+- [NEJM: The Risks of Pharmaceutical Tariffs for Generic Drug Availability](https://www.nejm.org/doi/full/10.1056/NEJMp2508626)
+- [FiercePharma: Starting material sourcing bottlenecks increase US drug shortage risks (April 2026)](https://www.fiercepharma.com/manufacturing/usp-flags-hamstrung-starting-material-sourcing-latest-us-vulnerable-medicines-update)
+- [Logistics Viewpoints: Pharmaceutical Tariffs and the Restructuring of Global Drug Supply Chains (April 10, 2026)](http://logisticsviewpoints.com/2026/04/10/pharmaceutical-tariffs-and-the-restructuring-of-global-drug-supply-chains/)
+- [PharmiWeb: Impact of MFN Pricing and Tariff Exemptions Reshaping Global Drug Supply Chains](https://www.pharmiweb.com/article/impact-of-us-administration-pharmaceutical-policies-mfn-pricing-and-tariff-exemptions-reshaping-global-drug-pricing-and-supply-chains)
+
+---
+
+*April 2026 Update complete — April 28, 2026*
+*Key finding: MFN deals cover branded drugs but leave generic API supply chain unprotected; Commerce's April 2027 generic review is an untracked advocacy deadline; 30% of most-vulnerable drugs already in shortage before tariff activation.*

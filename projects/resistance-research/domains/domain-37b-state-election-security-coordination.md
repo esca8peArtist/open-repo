@@ -173,3 +173,79 @@ The governance implication is not simply "restore CISA funding" — though that 
 
 *Scope document complete. Ready for full research execution in next session.*
 *Sources confirmed accessible as of April 27, 2026.*
+
+---
+
+## **April 2026 Update**
+
+**Added**: April 28, 2026 (Phase 2 Content Maintenance)
+
+---
+
+### Brennan Center Election Officials Survey: Quantifying the Support Collapse
+
+The most significant new primary source for this domain is the Brennan Center's April 2026 survey of local election officials — the most comprehensive data set on the ground-level impact of federal election security withdrawal. Key findings that directly answer the scope document's core questions:
+
+**The resource gap is not being filled at the state level**: 75% of local election officials have not received additional resources from their state or local government to address federal cuts to election security services. The scope document hypothesized that states were adopting replacement mechanisms; the survey data shows those mechanisms are not reaching the local level where election administration actually occurs. The gap is primarily at the county and municipal level, not the state capital level — and the scope document's state-level replacement analysis (National Guard cyber units, legislative appropriations) does not address this bottom-tier vulnerability.
+
+**Federal satisfaction has collapsed**: Officials' satisfaction with federal support decreased from 53% in 2024 to 45% in 2026. The CDC-parallel question — what happens to public health infrastructure when federal support drops below a threshold of adequacy — is now live for election security. The satisfaction drop came despite 89% of officials reporting they plan to coordinate with at least one other local or state agency, confirming that the coordination intent exists but the resources and trust do not.
+
+**Safety and threat environment**: 36% of election officials reported experiencing harassment or abuse; 16% reported being threatened because of their job. This is directly relevant to the AI-enhanced social engineering threat vector identified in the scope document — officials who are already experiencing threats and harassment are more susceptible to tailored spear-phishing attacks that leverage publicly available personal information. The combination of reduced institutional support and elevated personal threat environment makes the 2026 election worker population the most vulnerable since direct administration of elections became professionalized.
+
+**60% are concerned about federal cuts**: This number confirms that the scope document's concern about the coordination gap is held by election officials themselves — it is not an externally-imposed assessment. The fact that 87% say it is important for state and local government to provide additional resources, while 75% have not received them, documents the gap between political acknowledgment and resource allocation.
+
+Source: [Brennan Center: Survey Finds Election Officials Remain Concerned About Safety, Lack of Government Support (April 2026)](https://www.brennancenter.org/our-work/analysis-opinion/survey-finds-election-officials-remain-concerned-about-safety-lack); [Local Election Officials Survey 2026 PDF](https://www.brennancenter.org/media/15483/download/2026_local_election_officials_final_0.pdf?inline=1)
+
+### SAVE Program: A New Federal Interference Vector Against Election Officials
+
+The DHS Systematic Alien Verification for Entitlements (SAVE) program has emerged as a major new threat to election security that the scope document did not address — and that operates through a different mechanism from cybersecurity threats. SAVE is being used to build a national voter database that Democratic secretaries of state and election security experts characterize as a voter suppression tool, while the administration frames it as a noncitizen voter verification system.
+
+**The April 2026 developments**:
+- Internal DOJ documents revealed in April 2026 show that DOJ officials planned to share voter rolls with DHS earlier than they publicly admitted, raising questions about the process by which voter data entered the federal surveillance architecture.
+- DHS has flagged more than 24,000 names on U.S. voter rolls as potential noncitizens — a dataset Brennan Center analysts characterize as generating significant false positives that wrongly flag U.S. citizens.
+- A DOJ privacy officer resigned in April 2026 as the agency prepared to share voter data with DHS, citing concerns about the data transfer.
+- CNN reporting (April 21, 2026) documents Trump's effort to "build a massive voter database" that election officials fear will be weaponized to challenge legitimate voters before November.
+
+The SAVE program creates a structural threat that interacts with the CISA security vacuum in a specific way: when states participate in SAVE, they hand voter roll data to a federal agency that has no statutory obligation to protect it from political use, and no independent oversight (the FEC's authority over voter suppression is limited; CISA, which might have flagged data security vulnerabilities, has been defunded for election security purposes). The states most likely to be targeted by SAVE-driven voter challenges are the same competitive states that have the largest cybersecurity gaps — creating a dual vulnerability.
+
+**Partisan split on SAVE**: Democratic secretaries of state (12 signed a December 2025 letter opposing SAVE) uniformly opposed the program; Republican secretaries of state generally embraced it. This partisan alignment means that in competitive states with Republican secretaries of state — Georgia, Arizona, North Carolina — both the cybersecurity gap (documented) and the SAVE-based voter roll challenge threat are simultaneously operative. In states with Democratic secretaries of state who have refused SAVE — Michigan, Pennsylvania, Wisconsin, Nevada, Minnesota — the primary threat remains cybersecurity, not voter roll manipulation through the federal program.
+
+Sources: [Brennan Center: Homeland Security's SAVE Program Exacerbates Risks to Voters](https://www.brennancenter.org/our-work/research-reports/homeland-securitys-save-program-exacerbates-risks-voters); [NPR: DOJ prepares to share voter data with DHS, privacy officer resigns (April 3, 2026)](https://www.npr.org/2026/04/03/nx-s1-5768455/privacy-doj-dhs-voter-data); [CNN: Trump building a massive voter database (April 5, 2026)](https://www.cnn.com/2026/04/05/politics/trump-voter-database-election-fraud); [Democracy Docket: Emails reveal DOJ planned voter roll sharing earlier (April 2026)](https://www.democracydocket.com/news-alerts/emails-reveal-doj-officials-planned-to-share-voter-rolls-with-dhs-much-earlier-than-they-admitted/)
+
+### CISA FY27 Budget Cut: The Permanent Defunding Proposal
+
+The scope document documented CISA's existing budget cuts and staff reductions. The Trump administration's FY27 budget proposal, released April 2026, takes the next step: it proposes cutting CISA's election security program entirely. This is no longer a discretionary administrative decision — it is a legislative proposal to permanently zero out federal election security infrastructure in the appropriations baseline. If enacted, it would require a future Congress and president to specifically appropriate funding to restore any election security function, rather than the current situation where election security programs continue unless affirmatively defunded.
+
+This development transforms the advocacy framing: the current CISA cuts are administratively reversible (a future administration could restore funding without new legislation); a zero appropriation embedded in the FY27 baseline would require affirmative legislative action to undo. The window to prevent the baseline zeroing is the FY27 appropriations process — which, under the 120th Congress elected in November 2026, may be more or less favorable depending on midterm outcomes. This creates a direct link between election security and the midterms: the elections being run under compromised security conditions will determine whether the legal infrastructure for election security can be restored.
+
+Source: [USC Election Cybersecurity Initiative Round-Up: April 4-10, 2026](https://electionsecurity.usc.edu/2026/04/20/election-cybersecurity-round-up-april-4-april-10-2026/)
+
+### State-Level Incident Documentation: April 2026
+
+The USC Election Cybersecurity Initiative's weekly round-ups from April 2026 document specific incidents that ground the scope document's theoretical vulnerability analysis in actual events:
+
+**Georgia** (April 4-10 round-up): State lawmakers concluded their legislative session without addressing voting system vulnerabilities ahead of the 2026 midterms. Georgia is a documented high-vulnerability competitive state in the scope document's analysis; legislative inaction on documented vulnerabilities confirms the worst-case scenario for this state.
+
+**Arizona** (April 11-17 round-up): A judge's ruling on election administration procedures carries implications for midterm voting processes. Arizona also appeared in prior round-ups when state officials declined to report a suspected Iran-linked hacking incident to CISA, citing distrust in how CISA would handle sensitive vulnerability information. This is the clearest documented case of the trust breakdown the scope document analyzes: even when an incident occurs that CISA would ordinarily investigate, the trust destruction the scope document documents has made state officials unwilling to use the one remaining federal-state channel.
+
+**AI disinformation escalation**: Both April round-ups documented AI-generated political disinformation as a growing threat — fabricated political advertisements and supply chain attacks on technology companies used by election vendors. The scope document identified AI-enhanced social engineering as the leading 2026 threat vector; the weekly round-up documentation confirms this assessment is grounded in ongoing observed activity.
+
+Sources: [USC Election Cybersecurity Round-Up: April 4-10, 2026](https://electionsecurity.usc.edu/2026/04/20/election-cybersecurity-round-up-april-4-april-10-2026/); [USC Election Cybersecurity Round-Up: April 11-17, 2026](https://electionsecurity.usc.edu/2026/04/20/election-cybersecurity-round-up-april-11-april-17-2026/); [Votebeat: Arizona officials declined to report hacking incident to CISA (January 2026)](https://www.votebeat.org/2026/01/15/cisa-election-security-trust-broken-trump-chris-krebs-denise-merrill/)
+
+### Advocacy Window Update: April-July 2026 Priority Actions
+
+The scope document's April-July advocacy window is now active. Based on the April 2026 evidence, the following are the most urgent priorities:
+
+**Immediate (April-May 2026)**:
+1. State legislatures with sessions still open should pass emergency appropriations for election security, specifically targeting county-level EDR deployment. The Brennan Center survey confirms the resource gap is at the county level, not the state capital. Target states: Georgia (session ended without action — document the failure for electoral accountability), Arizona ($650,000 appropriation documented as inadequate — push for supplemental), Nevada, Wisconsin.
+2. File formal opposition to the FY27 budget's election security zero-out with both the House and Senate Appropriations Committees. Framing: a budget proposing to eliminate election security infrastructure while the United States is engaged in a military conflict with Iran (which has been documented targeting U.S. infrastructure including oil, gas, and water sites) constitutes a national security vulnerability, not merely a partisan policy choice.
+3. Civil society organizations (Brennan Center, Verified Voting, CDT) should accelerate direct technical assistance to county election offices in competitive states — particularly in Georgia, where state legislative inaction has left county offices without updated security guidance.
+
+**May-July 2026**:
+4. Paid MS-ISAC membership coordination: NASS should facilitate a bloc membership arrangement for all competitive-state secretaries of state who have not yet converted to paid MS-ISAC membership. The bloc purchase reduces per-state cost and ensures that the competitive states have at least the minimum threat-intelligence sharing function.
+5. Legal challenge to DOJ voter roll data sharing with DHS: The DOJ privacy officer's resignation and the internal document evidence of early planning create a factual record that the data sharing violated Privacy Act protections. ACLU and Democracy Docket have standing to challenge the data transfer; the April 2026 CNN and NPR reporting provides the evidentiary foundation.
+
+---
+
+*April 2026 Update complete — April 28, 2026*
+*Key findings: 75% of local officials lack replacement resources; SAVE program is a new dual threat (voter suppression + data security); FY27 budget proposes permanent election security zero-out; Georgia failed to act on voting system vulnerabilities before session ended; Arizona officials declining to report hacking to CISA confirms trust collapse.*

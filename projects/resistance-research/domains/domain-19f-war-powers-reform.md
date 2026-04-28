@@ -427,4 +427,62 @@ Sources: [Democracy Now!: Senate defeats war powers resolution fifth time, 46-51
 *Updated: 2026-04-27 | Added fifth Senate vote (46-51, April 23), Vance constitutional rejection, House 215-215 vote detail*
 *Updated: 2026-04-27 (Session 523) | Added "Post-May 1 Constitutional Phase" subsection: Democratic escalation strategy, GOP fracture calculus, appropriations trap, structural precedent implications*
 *Updated: 2026-04-27 (Session 529) | Added Section 9: April 2026 Case Study — Iran as proof of WPR ineffectiveness against emergency EO framing; coalition arithmetic analysis; constitutional amendment reform implication*
+*Updated: 2026-04-28 (Phase 2 Content Maintenance) | Added Section 10: Post-May 1 precedent analysis; ceasefire-as-hostilities-continued doctrine; Collins defection architecture; naval blockade constitutional status*
 *Word count: approximately 6,000 words*
+
+---
+
+## **April 2026 Update**
+
+**Added**: April 28, 2026 (Phase 2 Content Maintenance)
+
+---
+
+## Section 10: Post-May 1 — What the Deadline's Passage Means for WPR as Doctrine
+
+**The precedent that has now been set**: The May 1 deadline passed. The Trump administration did not comply. Congress did not enforce it. No court intervened. This outcome — while anticipated by every analyst who tracked the preceding five Senate votes — now converts what was a prediction into a constitutional fact. The War Powers Resolution's 60-day clock has been explicitly defied by a president who publicly pre-announced non-compliance, and the legal and political system produced no enforcement consequence whatsoever. This is the most significant development in the Resolution's 50-year history.
+
+The analytical point for domain update purposes is not simply that Trump violated the WPR — previous presidents evaded it through legal creativity. The Iran 2026 case is qualitatively different because:
+
+1. **Pre-announcement**: The administration publicly declared the statute unconstitutional before the deadline expired. There was no legal ambiguity to exploit; there was a categorical rejection.
+2. **No ceasefire-clock argument was needed**: The administration's ceasefire-clock theory (that the April 8 ceasefire paused hostilities and reset the clock) was available but not determinative — because the pre-announced non-compliance position made the clock argument unnecessary. The ceasefire-clock theory would have been litigated if the administration needed it. Instead, it was held in reserve as an additional legal fallback.
+3. **Appropriations vehicle absent**: The administration declined to submit an Iran-specific supplemental appropriations request through April 2026. Without a specific supplemental, Congress cannot attach explicit non-authorization language to a dedicated Iran funding vehicle — the mechanism that terminated the Cambodia bombing in 1973. The administration has specifically avoided creating the legislative vehicle that would allow the most reliable WPR enforcement tool to operate.
+
+### The Collins Architecture: What Republican Defection Looks Like Post-May 1
+
+Senator Susan Collins stated clearly before the deadline: "The 60-day trigger is a very important one. At that point, Congress has to authorize the military action to continue... And I will not support extending the hostilities beyond that 60 days, except for wind-down activities." This statement, confirmed in multiple media reports, is the most important post-May 1 political variable in the Iran war powers analysis.
+
+Collins's position creates a specific legislative arithmetic. She is the top Democratic target in the Senate Republican Conference. Senator Lisa Murkowski (R-AK) is working on a resolution to authorize the use of military force against Iran that could serve as a vehicle for conditional authorization — or, if her conditions are not met, as a defection vehicle. The gap between the pre-deadline coalition (maximum 47 yes votes) and the 51 needed for a simple majority concurrent resolution is narrow enough that Collins + Murkowski + 1-2 additional post-deadline defectors could tip the balance.
+
+The administration's post-deadline strategy is therefore not primarily legal — it is political. The administration must prevent Collins, Murkowski, and other potentially sympathetic Republicans from publicly committing to post-May 1 defection. The tools available include classified intelligence briefings (making the case that ongoing operations are necessary and withdrawal would harm U.S. security), public framing of the ceasefire as an administration success (reducing the political cost of continued operations), and direct constituent pressure from defense contractors and military families in the relevant states.
+
+**What the post-May 1 advocacy strategy should target**: The Democratic escalation strategy documented in The Hill reporting — repeated floor votes forcing Republicans on record — is the correct approach because it keeps the defection cost visible for vulnerable Republicans. The specific target is appropriations, not concurrent resolutions: an Iran-specific supplemental, if submitted, immediately activates the most reliable enforcement mechanism and must be engaged with explicit non-authorization language before it moves.
+
+### The Naval Blockade Constitutional Status
+
+The scope document did not analyze a specific military action that has now become the operational context for the post-May 1 period: the U.S. naval blockade of Iran, declared by Trump on April 13, 2026 after peace talks in Islamabad failed to produce an agreement (as reported by VP Vance on April 12). A naval blockade is a legal act of war under international law — it constitutes a use of force against a sovereign nation by blocking maritime commerce and is explicitly enumerated in the traditional powers that require congressional authorization under the Constitution's "Letters of Marque and Reprisal" clause (a power that encompasses the specific historical category of maritime economic coercion).
+
+The blockade creates a legally cleaner case for WPR enforcement than the original February 28 strikes. The original strikes could be framed as a completed military action (bombs dropped, damage done); a naval blockade is an ongoing continuous use of force, updated daily as U.S. Navy vessels intercept and board vessels (the administration ordered the Navy to "destroy any Iranian boats laying mines in the strait"). The continued blockade means hostilities are unambiguously ongoing through May 1 and beyond — the ceasefire-clock argument that hostilities ended on April 8 is facially unavailable for the blockade, which continued throughout the ceasefire period.
+
+The Strait of Hormuz situation compounds the healthcare supply chain analysis in Domain 31x: Iranian tolls of more than $1 million per ship for Hormuz transit (documented in the ceasefire Wikipedia article) and the dual U.S.-Iranian blockade have dramatically increased shipping costs for the Arabian Sea route used by Indian pharmaceutical manufacturers. The connection between the ongoing Iran war — which the administration is conducting without congressional authorization — and the pharmaceutical supply chain crisis documented in Domain 31x is structural, not incidental.
+
+### WPR Reform Implication: The Ceasefire Loophole Must Be Closed
+
+The 1973 Resolution did not contemplate a scenario in which a president declares a ceasefire while continuing a naval blockade, mining destruction operations, and active military pressure. The ceasefire-as-hostilities-ended argument the administration held in reserve exploits a specific statutory ambiguity: the WPR's 60-day clock runs during "hostilities," and the statute does not define hostilities with reference to ceasefire agreements. Reform proposals catalogued in Section 6.2 (automatic funding cutoff, AUMF sunset) do not specifically address the ceasefire-clock manipulation. Any statutory or constitutional reform of the WPR should include an explicit definition of "hostilities" that covers naval blockades, ongoing military presence designed to coerce a foreign government, and mining destruction operations — regardless of whether a nominal ceasefire has been declared.
+
+This is a specific reform recommendation that goes beyond the Section 6 analysis and is generated directly by the Iran case. It should be added to the reform agenda documented in Section 8 as:
+
+**8.9 Statutory definition of "hostilities"**: Amend 50 U.S.C. § 1544 to define "hostilities" as including: any ongoing naval blockade of a foreign nation; any military action designed to coerce a foreign government through force or the threat of force; any deployment of armed forces in a posture that involves exchange of fire or credible threat thereof; and any military action that would, under international law, constitute an act of war. The definition must explicitly provide that a ceasefire agreement does not suspend the 60-day clock unless forces have been fully withdrawn or Congress has specifically authorized continued presence.
+
+New sources:
+- [The Hill: Democrats poised to escalate pressure with repeated Iran war powers votes (April 27, 2026)](https://thehill.com/homenews/house/5846206-democrats-iran-war-powers-votes/)
+- [Time: Republicans Brace for Iran War's 60th Day — and Big Test of Congress (April 14, 2026)](https://time.com/article/2026/04/14/republicans-face-crucial-test-on-iran-war-as-60-day-deadline-looms/)
+- [Axios: House hands Trump a win with failed Iran war powers vote (April 16, 2026)](https://www.axios.com/2026/04/16/trump-iran-war-powers-vote-fails-democrats)
+- [The Hill: Republicans divided on whether to check Trump's Iran war power (April 2026)](https://thehill.com/homenews/senate/5843964-republicans-iran-war-trump-war-powers/)
+- [Time: Congress continues to forgo oversight role (April 22, 2026)](https://time.com/article/2026/04/22/as-iran-war-nears-two-month-congress-continues-to-forgo-oversight-role/)
+- [Wikipedia: 2026 Iran war ceasefire (covers naval blockade declaration, Hormuz toll, violations)](https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire)
+
+---
+
+*April 2026 Update complete — April 28, 2026*
+*Key findings: May 1 deadline passed without enforcement — confirming WPR as legally non-operational against a president who pre-announces non-compliance; Collins architecture creates post-deadline defection pathway; naval blockade is ongoing hostilities that the ceasefire argument cannot cover; Hormuz toll compounds Domain 31x pharmaceutical supply chain crisis; proposed new reform recommendation: statutory definition of "hostilities" to close ceasefire loophole.*

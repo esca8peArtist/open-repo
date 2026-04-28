@@ -138,6 +138,61 @@ Sources: [Brennan Center: Structural Reforms to the Federal Judiciary](https://w
 
 ---
 
+## **April 2026 Update: Removal Power Operationalized — NLRB, CFPB, and State Enforcement Architecture**
+
+**Added**: April 28, 2026 (Phase 2 Content Maintenance)
+
+---
+
+### Trump v. Slaughter: Decision Still Pending, Practical Reality Already in Force
+
+As of late April 2026, the Supreme Court has not yet issued its formal ruling in *Trump v. Slaughter* — the decision is expected in late June 2026. But the practical consequences of the May 2025 shadow docket stay have now been in effect for nearly thirteen months. The constitutional doctrine is therefore being written by the post-*Wilcox* factual reality, not by the forthcoming opinion. This is the shadow docket's most consequential institutional feature: by the time the Court issues a formal ruling, the disruption to independent agency operations is complete, the case law is settled in the lower courts (the D.C. Circuit's December 2025 ruling on the merits already holds that NLRB and MSPB removal protections are unconstitutional), and the only question for the formal opinion is how broadly the constitutional principle is stated and whether any carve-outs survive.
+
+The four plausible outcomes and their practical significance as of April 2026:
+
+**Full overruling of *Humphrey's Executor***: All independent agency commissioners — FTC, FEC, FCC, NLRB, MSPB, EEOC, NRC — lose statutory removal protection. The Federal Reserve's carve-out (explicitly preserved in the *Wilcox* shadow order) would be tested in subsequent litigation. The CFPB, whose single-director structure was already partially addressed in *Seila Law* (2020), would see its removal protections definitively eliminated.
+
+**Functional narrowing**: *Humphrey's Executor* is limited to agencies performing quasi-judicial functions with no enforcement authority. Under this framing, the FTC and NLRB — which have substantial enforcement authority — lose protection, while entities like the Merit Systems Protection Board and Administrative Conference of the United States might retain it. The practical effect is similar to full overruling for the most consequential regulatory agencies.
+
+**Prospective-only limitation**: The least likely outcome, now that the D.C. Circuit has already upheld the firings on the merits.
+
+**Federal Reserve carve-out preserved**: The strongest judicial signals from oral argument indicated that the majority may preserve the Federal Reserve's removal protection, characterizing it as "uniquely structured." The political economy of this carve-out is significant: financial markets priced in Federal Reserve independence as a baseline for dollar stability, and the conservative justices who are most sympathetic to executive power over regulatory agencies have obvious institutional incentives to preserve the carve-out. Treasury Secretary and Wall Street have historically been more protective of Fed independence than of labor board or consumer protection agency independence.
+
+Sources: [SCOTUSblog: Trump v. Slaughter case page](https://www.scotusblog.com/cases/case-files/trump-v-slaughter-2/); [Ward and Smith: SCOTUS signals possible turning point for agency independence](https://www.wardandsmith.com/article/trump-v-slaughter-the-supreme-court-signals-a-possible-turning-point-for-agency-independence); [Lawfare: Repealing Humphrey's Executor and the Federal Reserve problem](https://www.lawfaremedia.org/article/repealing-humphrey-s-executor-and-the-problem-of-the-federal-reserve); [Fisher Phillips: FP Predictions — SCOTUS will expand president's power to fire agency members](https://www.fisherphillips.com/en/news-insights/fp-predictions-scotus-will-expand-presidents-power-to-fire-members-of-independent-agencies.html)
+
+### NLRB in April 2026: What a Captured Board Looks Like in Operation
+
+The NLRB's April 2026 status is the clearest available case study of what the *Wilcox*-to-*Slaughter* trajectory means for regulatory agency function in practice. The Board has a quorum of three members: Chairman James R. Murphy (Trump-appointed), Member Scott A. Mayer (Trump-appointed), and Member David M. Prouty (Biden-appointed). The 2-1 Republican majority means:
+
+- **The Board is issuing decisions** — but under a Republican majority that will reverse Biden-era precedents where it can. Under longstanding Board practice, reversal of precedent generally requires three aligned members. The 2-1 composition means overruling major Biden-era decisions (joint employer standard, expanded protected concerted activity doctrine) requires one additional Republican member — two of five seats remain vacant.
+- **The General Counsel is independent from the Board**. Crystal Stowe Carey, Biden's GC appointee (sworn in January 2026), issued case-handling guidance directing regional offices to "focus on priority investigations and the protection of employees' rights of free association." The GC controls prosecution — which cases the NLRB prosecutes as Unfair Labor Practices. The Republican-majority Board controls adjudication — how those cases are decided on the merits. This split creates a structural tension: the GC can bring pro-worker cases; the Board can decide them against workers.
+- **The removal power ruling creates ongoing structural instability**. The D.C. Circuit's December 2025 ruling that the president can remove NLRB members without cause means that any of the current members — including Prouty and Carey — can be removed by executive action before *Slaughter* is even decided. The Board is operating on a foundation that could be pulled at any time.
+
+**The quorum-less period's legacy**: From May 2025 (when the Supreme Court's *Wilcox* shadow order took effect) through January 2026 (when the new members were sworn in), the NLRB could not issue binding decisions for approximately eight months. During that period, the Poster Compliance Center estimated that thousands of unfair labor practice cases and union election proceedings were delayed or dismissed for administrative reasons related to the quorum gap. This is the most direct democratic accountability impact of the removal power expansion: not the formal legal ruling, but the operational disruption to the agency's enforcement function while the constitutional question was being litigated.
+
+Sources: [MONDAQ/Butler Snow: The NLRB in April 2026 — Operating Again, But Still in Flux](https://www.mondaq.com/unitedstates/employee-rights-labour-relations/1776522/the-nlrb-in-april-2026-operating-again-but-still-in-flux); [Georgetown Poverty Journal: The Uncertain Future of the NLRB](https://www.law.georgetown.edu/poverty-journal/blog/the-uncertain-future-of-the-nlrb/); [Labor Relations Update: Board Resumes Decisions, Affirms Regional Directors' Authority](https://www.laborrelationsupdate.com/2026/01/the-board-is-back-nlrb-resumes-decisions-affirms-regional-directors-authority-without-a-quorum/)
+
+### CFPB Operational Collapse and the D.C. Circuit Standoff
+
+The CFPB's April 2026 status completes the independent agency capture picture. The Consumer Financial Protection Bureau has withdrawn over a dozen final and proposed rules under its deregulatory agenda, closed 76% of its supervisory actions, and reduced its workforce to approximately 556 employees (per DOJ workforce reduction plan). A D.C. Circuit showdown over the CFPB's structure was active as of April 22, 2026 — plaintiffs were opposing efforts to fast-track agency downsizing while also "surprisingly support[ing] remand to district court." The D.C. Circuit proceeding is the last live judicial contest over the CFPB's institutional survival.
+
+The Consumer Financial Protection Act gives state attorneys general direct authority to enforce the CFPA's federal consumer protection provisions. This is the statutory state enforcement pathway the reform section documents as "viable architecture." Multiple state AGs — New York (Leticia James), California (Rob Bonta), Oregon (Dan Rayfield) — have explicitly positioned themselves as the enforcement substitute for the CFPB's federal role. Skadden's March 2026 analysis identifies the specific states where AG consumer financial enforcement is most active, with New York and California leading in staffing expansion with attorneys who have prior federal enforcement experience.
+
+The practical limitation of state AG enforcement as a CFPB substitute: state AG enforcement reaches companies that do business in the state, but cannot establish national precedent, cannot access CFPB's supervisory authority over large bank holding companies, and cannot initiate the type of systematic market monitoring that the CFPB's examination function performed. A state AG enforcement action against a single predatory lender in one state does not provide the systemic deterrence that CFPB's market-wide supervision created. The state enforcement substitute is better than nothing; it is not equivalent.
+
+Sources: [Consumer Finance Monitor: D.C. Circuit CFPB showdown (April 22, 2026)](https://www.consumerfinancemonitor.com/2026/04/22/d-c-circuit-showdown-over-cfpb-plaintiffs-oppose-effort-to-fast-track-agency-downsizing-but-surprisingly-support-remand-to-district-court-for-it-to-first-consider-modifying-the-preliminary-injunctio/); [EPI: Trump administration attempts to close the CFPB](https://www.epi.org/policywatch/trump-administration-closes-the-cfpb/); [Skadden: Consumer Financial Enforcement — States to Watch in 2026 (March 2026)](https://www.skadden.com/insights/publications/2026/03/consumer-financial-enforcement-states-to-watch-in-2026); [Regulatory Oversight: State AGs and Junk Fees Enforcement (April 2026)](https://www.regulatoryoversight.com/2026/04/state-attorneys-general-and-continued-enforcement-against-junk-fees-in-2026/)
+
+### Revised Reform Architecture: What April 2026 Confirms
+
+The reform assessment in Section 3 remains accurate but requires two updates based on April 2026 developments:
+
+**Private rights of action are now the most time-sensitive priority**. With the NLRB operating under a partisan majority, the CFPB operationally collapsed, and *Slaughter* pending, the window for preserving any worker and consumer protection depends on whether private enforcement rights are explicitly created before agencies lose their enforcement capacity permanently. The pattern in current NLRB operation is instructive: General Counsel Carey can file cases, but the Board can decide them against workers. Private rights of action bypass the Board's adjudicative function entirely. State legislatures in California, New York, Illinois, Washington, and Minnesota have jurisdiction to create private rights of action under state labor and consumer protection law that track federal standards — and should do so before the *Slaughter* ruling creates a formal constitutional precedent that weakens the argument for federal agency enforcement in courts.
+
+**The state AG enforcement architecture is more developed than the reform section suggests**. The pattern identified in Skadden (March 2026) and Morgan Lewis (May 2025) — state AGs explicitly repositioning as enforcement substitutes for federal agencies — represents a genuine systemic adaptation, not merely individual enforcement actions. The advocacy implication: organizations doing state-level work should prioritize supporting AG budget requests for dedicated federal-enforcement-substitute units, and should facilitate information sharing between AG offices about enforcement strategies against national companies that operate in multiple states.
+
+---
+
 *Domain 6 created: 2026-04-27 | Session 529 | Priority 2 Phase Expansion*
-*Word count: approximately 2,400 words*
-*April 2026 content: Sections 2.1–2.3 (post-Loper Bright removal authority, appellate capture vectors, Slaughter pending ruling)*
+*Updated: 2026-04-28 (Phase 2 Content Maintenance) | Added: NLRB April 2026 operational status (2-1 partisan board, GC independence, quorum-loss legacy); CFPB collapse and D.C. Circuit standoff; *Slaughter* four outcome scenarios with Federal Reserve carve-out analysis; state AG enforcement architecture update; private rights of action urgency*
+*Word count: approximately 3,900 words*
+*April 2026 content: Session 529 Sections 2.1–2.3 + Phase 2 Maintenance Update (NLRB/CFPB operational status, Slaughter pending outcomes, state AG enforcement)*
