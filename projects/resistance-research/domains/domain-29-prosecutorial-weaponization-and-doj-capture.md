@@ -456,3 +456,51 @@ This is COINTELPRO's successor logic applied through formal legal process rather
 The accountability system designed to prevent this — independent DOJ, inspector general oversight, professional responsibility enforcement, special counsel independence — has been systematically dismantled. What remains are courts, which have shown willingness to dismiss legally defective charges when they reach judicial review; grand juries, which retain the power to refuse indictment; external professional responsibility enforcement, which is now under direct attack through the state bar rule; and civil society solidarity, which is organizing.
 
 None of these remaining checks operates at the stage where prosecutorial power is most dangerous — the charging decision itself, made in secret, before courts are involved. Restoring meaningful accountability at that stage is the structural reform this domain requires.
+
+---
+
+## Section 13: April-May 2026 Update — SPLC Case Trajectory and Nonprofit Sector Response
+
+**Updated**: April 28, 2026 (Session 571)
+
+### 13.1 SPLC Defense Team and Pre-Trial Posture
+
+The SPLC has retained Bradley Arant Boult Cummings LLP (headquartered in Birmingham, Alabama — strategically significant as a major Southern firm with federal court experience in the jurisdiction where the case is pending in Montgomery) to represent the organization. The choice of defense counsel is analytically significant: Arant is not a progressive public interest firm. It is a corporate defense firm with deep roots in the Fifth Circuit and Alabama federal court practice. This selection signals that the SPLC is treating the indictment as a serious criminal matter requiring the highest-tier defense resources — not as a purely political cause.
+
+No motion to dismiss has been filed as of April 28, 2026. Under Federal Rule of Criminal Procedure 12(b), motions to dismiss for failure to state an offense may be filed before trial but must be filed within the time the court sets or, if none, by the time of arraignment. Given that the indictment was returned April 21, the arraignment is expected in early May 2026. Following arraignment, briefing schedules for pre-trial motions will be set; a motion to dismiss is expected to be the SPLC's first major litigation step.
+
+**Expert prediction consensus**: Multiple former federal prosecutors — Weissmann (Just Security), Zelinsky, Boynton — predicted before or shortly after indictment that the case "will get dismissed earlier in the process" (Alabama Reflector). The prediction is based not on sympathy but on legal analysis: the *Thompson v. United States* bank fraud defect and the wire fraud omission theory's absence of identifiable victims are independent grounds for dismissal. The government's burden at trial would require producing a victim who can testify that the informant disclosure would have changed their donation decision — and the SPLC's donor response (documented in The Intercept: 20 donors contacted, all supportive or indifferent) suggests that pool does not exist.
+
+Sources: [Alabama Reflector: Legal experts skeptical of DOJ's criminal case against Southern Poverty Law Center (April 23, 2026)](https://alabamareflector.com/2026/04/23/legal-experts-skeptical-of-dojs-criminal-case-against-southern-poverty-law-center/); [CBS News: Former prosecutors see legal flaws in DOJ's indictment of SPLC](https://www.cbsnews.com/news/southern-poverty-law-center-justice-department-indictment-legal-flaws/); [Just Security: The Poverty of the DOJ Indictment of the Southern Poverty Law Center](https://www.justsecurity.org/137171/indictment-southern-poverty-law-center-splc/)
+
+### 13.2 The Nonprofit Sector Coalition Response
+
+The SPLC indictment has activated the largest organized nonprofit mutual-defense response in recent civil society history. Over 100 organizations — including CAIR (Council on American-Islamic Relations), labor unions, and religious organizations — signed a mutual defense pact in the immediate post-indictment period. CAIR's statement was explicit: "We are standing with the SPLC and with the entire civil rights community."
+
+The organizational coalition response has three practical components:
+
+**Legal defense fund pooling**: Mutual defense pact signatories have committed to contribute to a coordinated legal defense fund. This addresses the deterrent mechanism identified in Section 12 (fiscal scope): smaller organizations that cannot individually bear $2-5M defense costs can sustain defense capacity through shared resources. The fund model reduces the financial coercive effect of indictment — which does not require conviction to impose costs.
+
+**Program risk-sharing**: Multiple civil rights organizations that maintained similar informant programs — including organizations that shared intelligence with the FBI's Civil Rights Division through formal memoranda of understanding — are now conducting internal legal reviews. The mutual defense framework includes a commitment to pool findings from those reviews and share analysis of what program modifications eliminate criminal exposure under the current DOJ's legal theory, as opposed to those that simply shut down monitoring programs entirely. The goal is to preserve the organizational capacity to monitor extremism while minimizing prosecution risk.
+
+**Public narrative coordination**: The Ms. Magazine analysis (April 24) and the United States News civil rights response (April 23) both document coordinated messaging: the administration's simultaneous pardon of seditious conspiracy convicts (Proud Boys, Oath Keepers) and prosecution of the organization that monitored and reported on those groups is being characterized as "a declaration of war on the civil rights movement aimed at intimidation rather than accountability."
+
+**A notable adversarial data point**: White nationalist Jared Taylor, in a post documented by People For the American Way, stated that the SPLC indictment "doesn't make sense" — a rare instance in which the administration's claimed target class rejected the framing that the SPLC had harmed them. This is not a legal development, but it is a political one: the government's theory that SPLC-monitored organizations were victims is undermined when those organizations' most prominent ideological representatives publicly disclaim victim status.
+
+Sources: [Fox News: CAIR and other nonprofits rally behind SPLC amid federal indictments](https://www.foxnews.com/politics/radical-activist-groups-circle-wagons-around-southern-poverty-law-center-amid-federal-charges); [US News: Civil rights groups condemn Southern Poverty Law Center's indictment and prepare for legal fights (April 23, 2026)](https://www.usnews.com/news/politics/articles/2026-04-23/civil-rights-groups-condemn-southern-poverty-law-centers-indictment-and-prepare-for-legal-fights); [Ms. Magazine: Civil rights response to SPLC prosecution (April 24, 2026)](https://msmagazine.com/2026/04/24/southern-poverty-law-center-trump-civil-rights-feminist/); [People For: White nationalist Jared Taylor says SPLC indictment "doesn't make sense"](https://www.peoplefor.org/rightwingwatch/white-nationalist-jared-taylor-says-splc-indictment-doesnt-make-sense)
+
+### 13.3 The May Day Outcome: Initial Assessment
+
+May Day 2026 (May 1) was the first major protest event after the SPLC indictment. The NEA-coordinated National Day of Action, DSA May Day mobilizations, and labor-federation May Day marches proceeded nationwide. As of April 28 — the day before — the tactical guidance documented in Section 9.2 remains operative. The SPLC indictment's deterrent effect on protest participation is not yet measurable; the extent to which May Day attendance is affected by prosecution risk will be visible in post-event reporting. The mutual defense framework's practical test begins with May Day organizers' experience in the weeks following the event.
+
+Key post-May Day indicators to track:
+1. Whether DOJ files FACE Act, § 111, or conspiracy charges against May Day participants beyond what has been filed in prior protest waves
+2. Whether any May Day organizers receive grand jury subpoenas in June-July 2026 (following the established pattern of charging delay)
+3. Whether the nonprofit sector's program modifications (reducing or restructuring informant programs) produce observable organizational capacity losses in extremism monitoring
+
+Sources: [NEA: May Day Toolkit](https://www.nea.org/mayday-toolkit); [DSA: May Day 2026](https://democraticleft.dsausa.org/2026/04/20/dsa-prepares-for-may-day-2026-and-beyond/)
+
+---
+
+*Section 13 added: April 28, 2026 (Session 571)*
+*Key developments: SPLC retained Bradley Arant Boult Cummings LLP (corporate defense firm, Fifth Circuit expertise); no motion to dismiss filed yet (expected post-arraignment, early May); expert consensus predicts dismissal before trial on Thompson bank fraud defect and wire fraud victim-absence grounds; 100+ organization mutual defense coalition operational with legal fund and program risk-sharing; Jared Taylor adversarial disclaim undermines victim framing; May Day assessment pending.*

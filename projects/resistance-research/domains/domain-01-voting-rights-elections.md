@@ -185,6 +185,66 @@ Sources:
 - [Brennan Center: SAVE Act Reaches Senate](https://www.brennancenter.org/our-work/analysis-opinion/save-act-reaches-senate)
 - [Center for American Progress: The SAVE Act — Overview and Facts](https://www.americanprogress.org/article/the-save-act-overview-and-facts/)
 - [19th News: What is the SAVE America Act? And has it passed?](https://19thnews.org/2026/03/save-america-act-explained/)
+
+---
+
+## Section 5: Late April 2026 — State SAVE Act Wave, 150+ Restriction Bills, and Ballot Initiative Ground Truth
+
+**Updated**: April 28, 2026 (Session 571)
+
+### 5.1 State SAVE Acts Signed: Four States Move Unilaterally
+
+While the federal SAVE Act remains blocked in the Senate by the filibuster (48-50 April 2026 defeat), four Republican governors signed state-level SAVE Act legislation in the months following the House's February 2026 passage. The enacted state laws create proof-of-citizenship requirements for state-administered elections, creating a patchwork that may affect federal elections when state and federal voter rolls are shared:
+
+**Florida**: Governor Ron DeSantis signed Florida's SAVE Act in April 2026. The bill requires documentary proof of U.S. citizenship for voter registration in Florida. The law's major provisions will not take effect until after the 2026 midterms — a deliberate timing decision that limits its immediate electoral impact while establishing the infrastructure for 2028 application. Florida's implementation challenges are substantial: approximately 1.5 million eligible Florida voters lack passports and may lack accessible birth certificates (per Brennan Center Florida voter analysis). Florida's SAVE Act also includes a private right of action against local election officials who register voters without documentary proof — creating liability that will chill registrar behavior even before the law's effective date.
+
+**Mississippi, South Dakota, Utah**: Governors in all three states signed analogous state SAVE Act legislation, establishing proof-of-citizenship requirements for state voter registration. South Dakota and Utah apply the requirement to all elections administered by the state, including federal races. Mississippi's law mirrors the federal SAVE Act's structure most closely.
+
+**Implementation challenge the laws share**: Federal law (the National Voter Registration Act) establishes a federal voter registration form that states must accept. The NVRA form requires only attestation of citizenship — not documentary proof. State SAVE Act laws require documentary proof for state-administered registration, but cannot unilaterally override the NVRA's attestation-only standard for the federal form. This creates a structural inconsistency: voters who register using the federal NVRA form may not be captured by state SAVE Act requirements. Litigation over whether state SAVE Acts can operate in parallel with NVRA requirements — or are preempted — is expected to produce the first post-SAVE-Act federal court decisions in late 2026.
+
+Sources: [Governor Ron DeSantis Signs Florida SAVE Act (Florida Executive Office press release)](https://www.flgov.com/eog/news/press/2026/governor-ron-desantis-signs-florida-save-act-strengthen-election-integrity-and-security); [NPR: The SAVE Act faces long odds in the Senate — GOP-led states are picking up the cause (March 19, 2026)](https://www.npr.org/2026/03/19/nx-s1-5750510/state-save-acts-florida); [Time: States advancing voting restrictions as Senate weighs federal SAVE Act (April 3, 2026)](https://time.com/article/2026/04/03/voting-restrictions-citizenship-proof-state-laws-ballot-measures-trump-save-act/); [Brennan Center: New SAVE Act Bills Would Still Block Millions of Americans From Voting](https://www.brennancenter.org/our-work/analysis-opinion/new-save-act-bills-would-still-block-millions-americans-voting)
+
+### 5.2 The 150+ State Restriction Bill Wave
+
+The Ballot Initiative Strategy Center and Brennan Center have both documented an unprecedented wave of state legislative action restricting the ballot measure process itself — targeting the citizen initiative process that democratic resistance coalitions are using to bypass state legislatures. In 2025, lawmakers introduced or passed more than 150 bills restricting the ballot measure process through:
+
+**Signature collection restrictions**:
+- Arkansas enacted a law increasing the county signature threshold from 15 to 50 counties — making it structurally harder to collect signatures without physically covering the entire state.
+- Multiple states introduced bills barring payment-per-signature for petition circulators, which would eliminate professional signature gathering organizations and require exclusively volunteer-based campaigns.
+- Washington state bills would add a front-end 1,000-signature viability requirement before formal petitioning can begin — adding a gatekeeping step not present in any existing state law.
+
+**Geographic distribution requirements**: States are increasingly requiring that a threshold percentage of signatures come from each county or legislative district — not just a statewide total. These requirements are specifically designed to prevent urban-concentrated signature drives from qualifying initiatives with statewide implications.
+
+**Supermajority passage requirements**: Four states are placing or have placed measures on 2026 ballots requiring citizen-initiated constitutional amendments to pass by supermajority (60%):
+- Missouri: requires passage in each congressional district (effectively a geographic veto)
+- North Dakota: 60% supermajority for constitutional amendments
+- South Dakota: 60% supermajority for constitutional amendments
+- Utah: 60% supermajority for citizen-initiated measures with tax implications
+
+These supermajority requirements are specifically targeted at voting rights and Medicaid expansion initiatives, which have passed in multiple red states in recent cycles — demonstrating popular support that exceeds state legislative majorities. The supermajority requirements are designed to ensure that initiatives reflecting majority popular support can still fail if not distributed sufficiently across conservative districts.
+
+**The ballot initiative suppression context**: The Ballot Initiative Strategy Center's "Attacks + Threats" tracker documents these restrictions as a coordinated response to the pattern of successful citizen-initiated voting access, Medicaid, minimum wage, and marijuana legalization measures in Republican-controlled states. The strategy is not to prevent ballot measures but to increase the threshold for success — ensuring that even majority-supported measures require concentrated rural support that progressive-leaning issues typically lack.
+
+Sources: [Brennan Center: Politicians Take Aim at Ballot Initiatives](https://www.brennancenter.org/our-work/research-reports/politicians-take-aim-ballot-initiatives); [Ballot Initiative Strategy Center: Attacks + Threats tracker](https://ballot.org/attacks-threats/); [Ballotpedia: 2026 Ballot Measures](https://ballotpedia.org/2026_ballot_measures); [Ballotpedia: Ballot Measure Petition Deadlines and Requirements, 2026](https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026)
+
+### 5.3 Ballot Initiative Ground Truth: Arizona, Michigan, and the Signature Math
+
+The state ballot initiative wave documented in Section 4.1 has operational ground truth that differs from the planning-stage projections. The most significant updates:
+
+**Arizona**: The voting rights ballot initiative campaign has already collected 621,000 signatures against a 356,000-signature requirement — 174% of the threshold. This is the strongest signature performance of any 2026 voting rights initiative. Arizona's Secretary of State deadline for submission is May 3, 2026 — the campaign intends to submit early with a 65% buffer. The Arizona initiative addresses mail ballot grace periods (directly preempting the *Watson v. RNC* adverse ruling scenario) and same-day registration.
+
+**Michigan**: The same-day registration initiative has collected approximately 200,000 of 340,000 required signatures with a June 1 deadline. The gap is significant — 140,000 signatures in approximately 5 weeks — and requires sustained volunteer mobilization. Michigan's initiative addresses voter ID law reform passed by the Republican legislature in 2023, which removed no-excuse absentee voting. The stakes are higher in Michigan than most states because the Republican state legislature has demonstrated willingness to act unilaterally on voting restrictions.
+
+**FISA Reauthorization collision — revised assessment**: The FISA situation as of April 28 is more complicated than the May 20 timeline projected in Section 4.2. The April 30 FISA expiration deadline (short-term extension through April 30, not May 31 as previously noted) means the FISA vote is happening this week — not in May. Speaker Johnson proposed a three-year clean extension without warrant amendment; House GOP rebels blocked the procedural rule as of April 24-25. The vote is now expected to occur April 29-30, with uncertain outcome: if passed without privacy protections, Section 702 continues for three years without the election worker surveillance limitations Democrats sought; if the three-year extension fails, 702 may briefly lapse before a new extension is negotiated.
+
+**The FISA outcome matters for Domain 1 analysis**: If Section 702 passes without warrant protections targeting domestic election officials and journalists (as Democrats and some Republicans proposed), it extends the window during which federal surveillance of voting rights organizers, ballot initiative campaign staff, and election workers can occur without warrant. The advocacy implication: any state ballot initiative campaign handling sensitive donor information and organizer lists should assume FISA-reachable communications for federal election law purposes.
+
+Sources: [NPR: After 2 failed votes, Mike Johnson unveils new plan to extend FISA (April 24, 2026)](https://www.npr.org/2026/04/24/nx-s1-5797964/after-2-failed-votes-mike-johnson-unveils-new-plan-to-extend-key-u-s-spy-powers); [House set to vote this week on FISA (Spectrum Local News, April 27, 2026)](https://spectrumlocalnews.com/us/snplus/politics/2026/04/27/fisa-section-702-house-vote); [GOP rebels block leaders' last-minute FISA Section 702 spy powers deal (The Hill)](https://thehill.com/homenews/house/5835879-fisa-702-spy-powers-vote/); [Nextgov/FCW: House readies vote to renew FISA 702 without warrant amendment](https://www.nextgov.com/policy/2026/04/house-readies-vote-renew-fisa-702-without-warrant-amendment/412856/); [Al Jazeera: US Congress extends FISA for 10 days (April 17, 2026)](https://www.aljazeera.com/news/2026/4/17/us-congress-temporarily-extends-controversial-surveillance-power-under-fisa); [Brennan Center: Section 702 of FISA 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page)
+
+---
+
+*Section 5 added: April 28, 2026 (Session 571)*
+*Key developments: Florida SAVE Act signed by DeSantis (effective post-2026 midterms); MS, SD, UT also signed SAVE Act analogs; NVRA preemption litigation expected late 2026; 150+ state ballot measure restriction bills (Arkansas county threshold to 50; supermajority requirements in 4 states); Arizona ballot initiative at 174% threshold, submitting May 3; Michigan initiative needs 140K more signatures by June 1; FISA vote happening this week (not May 20), outcome affects election worker surveillance window; three-year clean extension vs. brief lapse pending.*
 - [Democracy Docket: Watson v. RNC — mail ballot case](https://www.democracydocket.com/news-alerts/live-blog-supreme-court-hears-gop-case-that-could-decimate-mail-in-voting/)
 - [Brennan Center: Louisiana v. Callais](https://www.brennancenter.org/our-work/research-reports/louisiana-v-callais)
 - [NPR: The SAVE Act faces long odds in the Senate](https://www.npr.org/2026/03/19/nx-s1-5750510/state-save-acts-florida)

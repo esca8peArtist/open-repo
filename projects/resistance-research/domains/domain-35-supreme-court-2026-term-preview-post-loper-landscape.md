@@ -409,6 +409,39 @@ Sources:
 
 ---
 
+## Section 10: Late April 2026 Precision Update — Powell Term, Slaughter Intersection, and the Two-Variable Crisis
+
+**Updated**: April 28, 2026 (Session 571)
+
+### 10.1 The Powell-Slaughter Timing Intersection
+
+Federal Reserve Chair Jerome Powell's term as Fed Chair expires May 15, 2026. Trump has stated multiple times he wants to fire Powell before his term expires — most explicitly on April 18, 2026, before partially walking back the threat following market turbulence. The *Trump v. Slaughter* decision, expected in late June 2026, is six weeks away from the Powell term-end date.
+
+This timing creates two distinct scenarios that the existing *Wilcox* shadow order's Federal Reserve carve-out does not cleanly address:
+
+**Scenario A — Term expiration**: Powell's term as Fed Chair expires May 15. He becomes a Board of Governors member (a separate appointment) with a full term through January 2028. Trump can simply decline to reappoint Powell as Chair and name a replacement chair — a power that exists independently of the removal question. This appointment authority is not constrained by any removal protection; the Fed Chair serves "at the pleasure of the president" with respect to the chairmanship (though not the Board membership). A new Trump-appointed Fed Chair could be in place by late May — before the *Slaughter* decision, and before any *Slaughter* ruling needs to address the Powell situation.
+
+**Scenario B — Attempted removal as Governor**: If Trump attempts to remove Powell from the Board of Governors (a separate question from the chairmanship), the *Wilcox* carve-out's "uniquely structured, quasi-private entity" language would be directly tested. The shadow order explicitly did not decide this question; it is the most significant open question the *Slaughter* decision will need to address. Financial markets have already demonstrated sensitivity to the issue — Treasury yields rose and the dollar weakened in response to Trump's April 18 statement about firing Powell.
+
+**The analytical implication**: The Slaughter decision must now navigate a situation where the most politically sensitive element of the *Humphrey's Executor* question — Fed independence — has become live before the Court can issue formal guidance. If Trump fires or declines to reappoint Powell as Chair before *Slaughter* is decided, the Court may no longer have the political space to issue the narrow carve-out ruling that appeared likely at oral argument.
+
+Sources: [Lawfare: Repealing Humphrey's Executor and the Problem of the Federal Reserve](https://www.lawfaremedia.org/article/repealing-humphrey-s-executor-and-the-problem-of-the-federal-reserve); [PBS: Supreme Court hears arguments on Trump's power over independent agencies](https://www.pbs.org/newshour/show/supreme-court-hears-arguments-on-trumps-power-over-independent-agencies); [CBS News: Supreme Court seems open to allowing Trump to fire agency officials without cause](https://www.cbsnews.com/news/supreme-court-arguments-trump-firing-ftc-commissioner/)
+
+### 10.2 *Foote v. Ludlow* Denial and Parental Rights Docket Status
+
+The Supreme Court denied certiorari in *Foote v. Ludlow School Committee* on April 20, 2026, after 12 relists — a significant data point. The Court decided not to take the most-relisted parental rights case. This signals either (a) the Court wants a cleaner factual record than *Foote* presented, or (b) there is not yet a stable five-vote majority on the parental rights question in school gender policies. The denial does not foreclose the issue; it delays it. *Littlejohn v. School Board of Leon County* (Florida) remains as a future vehicle if circuit conflicts develop.
+
+The *Foote* denial is relevant to the democratic resistance analysis because it suggests the Court is being more cautious about parental rights expansion than about independent agency elimination — an asymmetry that may reflect the political salience of the parental rights question for the 2026 midterms. Parental rights backlash in suburban districts has been documented as a 2024 electoral driver; another high-profile SCOTUS decision in the same direction before November 2026 creates electoral risk for Republicans in competitive House districts.
+
+Source: [SCOTUSblog: Foote v. Ludlow cert denied April 20, 2026](https://www.scotusblog.com/)
+
+---
+
+*Section 10 added: April 28, 2026 (Session 571)*
+*New developments: Powell term expires May 15 — chairmanship appointment power vs. Board removal question clarified; Trump April 18 market-moving statement about firing Powell; two-scenario analysis (term expiration vs. Governor removal) establishes that Slaughter ruling may arrive too late to prevent appointee-based Fed manipulation; Foote v. Ludlow cert denied (12 relists) — Court caution on parental rights before midterms.*
+
+---
+
 ## Sources
 
 1. [Loper Bright Enterprises v. Raimondo — Supreme Court Opinion (June 28, 2024)](https://www.supremecourt.gov/opinions/23pdf/22-451_7m58.pdf)

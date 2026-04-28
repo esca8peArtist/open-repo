@@ -264,3 +264,54 @@ Sources:
 
 *Section 4 added: April 28, 2026*
 *Key findings: May-June 2026 appellate capture acceleration — 4-6 circuit court vacancies opening simultaneously; Federalist Society nomination pipeline ready; confirmation target is 50+ circuit judges (28% of circuit bench) by August 2026; Fifth Circuit approaching supermajority (9 of 14 Trump-appointed); Seventh Circuit labor docket capture via St. Eve senior status + Trump appointment; multi-circuit docket control emerging as enforcement mechanism; state AG counter-vector limited by timing pressure.*
+
+---
+
+## Section 5: Late April 2026 — Trump v. Wilcox Removal Power Doctrine and Pre-Slaughter Landscape
+
+**Updated**: April 28, 2026 (Session 571)
+
+### 5.1 Where Trump v. Slaughter Stands: Status as of April 28, 2026
+
+The Supreme Court's decision in *Trump v. Slaughter* has not been issued as of April 28, 2026. Oral arguments concluded December 8, 2025. The expected decision date is late June 2026 — the end of the October 2025 term. This means the formal constitutional doctrine destroying *Humphrey's Executor* will arrive approximately when:
+
+- The May-June circuit court confirmation wave is completing (creating the capture architecture before the NLRB and FTC lose their final structural protections)
+- The 2026 midterm election season is beginning (creating political pressure to campaign on "government accountability" vs. "agency independence")
+- The Iran war post-May 1 appropriations fight is at its peak (requiring congressional attention that competes with independent agency defense)
+
+The convergence is not accidental. The structural capture of appellate courts (Section 4) and the formal abolition of independent agency protection (*Slaughter*) operate on a timeline calibrated to complete before the 2026 midterms create political accountability.
+
+**What is already known from oral argument**: Solicitor General Sauer called *Humphrey's Executor* "egregiously wrong" and "not withstood the test of time." The six conservative justices — particularly Alito, Thomas, and Gorsuch — signaled comfort with full overruling. Kavanaugh and Roberts appeared more interested in narrower functional tests. Barrett's questioning focused on whether the Federal Reserve carve-out could be preserved on structural grounds. The most likely outcome remains some form of *Humphrey's Executor* limitation — either full overruling for all enforcement agencies or functional narrowing that eliminates NLRB and FTC removal protection while preserving the Fed. The D.C. Circuit's December 2025 ruling on the merits (upholding the firings) establishes the lower-court baseline; the Supreme Court will be writing on top of that foundation.
+
+Sources: [SCOTUSblog: Trump v. Slaughter case page](https://www.scotusblog.com/cases/case-files/trump-v-slaughter-2/); [PBS: Supreme Court hears Trump v. Slaughter, seems likely to back Trump's power to fire agency board members](https://www.pbs.org/newshour/politics/listen-live-supreme-court-hears-trump-v-slaughter-in-another-test-of-presidential-power); [CBS News: Supreme Court seems open to allowing Trump to fire agency officials without cause](https://www.cbsnews.com/news/supreme-court-arguments-trump-firing-ftc-commissioner/); [Ward and Smith: Trump v. Slaughter — Supreme Court signals possible turning point](https://www.wardandsmith.com/article/trump-v-slaughter-the-supreme-court-signals-a-possible-turning-point-for-agency-independence); [Constitutional Accountability Center: Trump v. Slaughter case page](https://www.theusconstitution.org/litigation/slaughter-v-trump/)
+
+### 5.2 The Removal Power Expansion: Four-Agency Analysis
+
+With *Slaughter* pending, the practical reality is that independent agency removal protections are already functionally eliminated for most enforcement agencies. The formal doctrine will follow the factual reality. The four-agency analysis of what this means in practice as of late April 2026:
+
+**NLRB**: Operating under a 2-1 Republican majority following the post-*Wilcox* quorum gap (May 2025 - January 2026). The Biden-appointed General Counsel (Carey) controls prosecution but the Republican Board majority controls adjudication. Key Biden-era precedents under active challenge: the joint employer standard (*Browning-Ferris* revival, reversed November 2025); the expanded protected concerted activity doctrine (narrowed January 2026); the election bar and blocking charge rules (under review). The *Slaughter* decision, even if it arrives after the midterms, will formalize that any remaining Biden-appointed NLRB member can be removed at will — likely prompting immediate removal of Prouty (the only Biden member remaining) and Carey if she reaches an adverse decision in a high-profile case.
+
+**FTC**: Commissioner Rebecca Kelly Slaughter and Alvaro Bedoya remain formally out of office pending the *Slaughter* ruling. The FTC is operating as a 2-member commission (Andrew Ferguson, chair; Mark Meador) — below its statutory 5-member composition, but with a quorum for action since the agency's quorum is 2 of 3 present. The FTC under the current 2-member Republican composition has reversed Biden-era merger guidelines, dropped multiple Big Tech enforcement actions, and redirected its investigation capacity toward "DEI discrimination" in corporate practices. This is the functional reality of captured independent agency operation: the enforcement priorities are inverted without requiring formal rule changes.
+
+**CFPB**: As documented in the April 28 update (Section 3b), the CFPB has withdrawn over a dozen rules, closed 76% of supervisory actions, and reduced to ~556 employees. The D.C. Circuit showdown (as of April 22) is the last live judicial contest over CFPB institutional survival. A *Slaughter* ruling that full-overrules *Humphrey's Executor* will foreclose the CFPB's structural arguments entirely, likely triggering further operational shutdown.
+
+**Federal Reserve**: The *Wilcox* shadow order's explicit Fed carve-out — "we express no view" on the Fed — remains the only protection as of April 28. The carve-out has no doctrinal basis; it is a political accommodation by the conservative majority to avoid triggering financial market panic. Any *Slaughter* ruling will need to either restate this carve-out (strengthening its doctrinal basis) or explain its absence (triggering immediate legal challenges to Fed Chair Powell's tenure). Powell's term expires May 15, 2026. Trump has previously stated he wants to fire Powell; that statement, combined with a *Slaughter* ruling that does not preserve the Fed carve-out, creates a governance crisis with global financial market implications.
+
+Sources: [Lawfare: Repealing Humphrey's Executor and the problem of the Federal Reserve](https://www.lawfaremedia.org/article/repealing-humphrey-s-executor-and-the-problem-of-the-federal-reserve); [Alliance for Justice: Supreme Court prepares to dismantle independent agencies](https://afj.org/article/supreme-court-prepares-to-dismantle-independent-agencies-in-favor-of-partisan-chaos/); [Employment Law Worldview: Trump v. Slaughter and the potential impact on agency independence](https://www.employmentlawworldview.com/trump-v-slaughter-and-the-potential-impact-on-agency-independence-us/)
+
+### 5.3 Reform Planning: What Must Be Done Before the Slaughter Decision
+
+With *Slaughter* expected in late June 2026, the advocacy window for protective action is approximately 8 weeks. The critical actions:
+
+**State-level private right of action creation (URGENT — 4-6 week window)**: California AB 1456 (Ting) creates a private right of action for NLRA violations in California, bypassing the NLRB's adjudicative function. New York S.8234 (Ramos) is the parallel legislation. Both are in committee as of April 2026. These bills would survive a *Slaughter* ruling because they operate under state labor law authority, not federal agency authority. If they do not pass before *Slaughter* is decided, the urgency increases immediately; if they pass before, they create the enforcement architecture that survives independent agency abolition.
+
+**State AG CFPB enforcement expansion (URGENT — ongoing)**: The state AG enforcement substitute (documented in Section 3b's April 28 update) requires budget appropriations for dedicated federal-enforcement-substitute units. State legislative appropriations committees in New York, California, and Illinois are scheduled to pass budget bills in May-June 2026 — the window for funding these units before the *Slaughter* decision triggers an immediate CFPB operational vacuum.
+
+**Congressional amendment drafting**: Any amendment to NLRA or FTC Act that creates explicit congressional findings justifying removal protection (addressing the Solicitor General's "egregiously wrong" argument) must be drafted and introduced before *Slaughter* is decided, so it is available for floor action when the decision activates public pressure. Sen. Bernie Sanders' proposed amendment codifying NLRB independence is in draft; it must be introduced and cosponsored before the decision, not after.
+
+Sources: [MONDAQ/Butler Snow: The NLRB in April 2026 — Operating Again, But Still in Flux](https://www.mondaq.com/unitedstates/employee-rights-labour-relations/1776522/the-nlrb-in-april-2026-operating-again-but-still-in-flux); [Consumer Finance Monitor: D.C. Circuit CFPB showdown (April 22, 2026)](https://www.consumerfinancemonitor.com/2026/04/22/d-c-circuit-showdown-over-cfpb-plaintiffs-oppose-effort-to-fast-track-agency-downsizing-but-surprisingly-support-remand-to-district-court-for-it-to-first-consider-modifying-the-preliminary-injunctio/)
+
+---
+
+*Section 5 added: April 28, 2026 (Session 571)*
+*Key findings: Slaughter still pending (late June 2026 expected); Powell term expires May 15 creating Fed-carve-out crisis intersection; NLRB 2-1 Republican majority already operationalizing capture (Biden precedents reversed); FTC 2-member quorum conducting inverted enforcement priorities; CFPB approaching full operational collapse; 8-week advocacy window for state private rights of action and AG enforcement funding before Slaughter eliminates agency independence doctrine.*
