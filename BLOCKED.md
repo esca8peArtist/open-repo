@@ -27,25 +27,27 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Paper trading account has zero day-trading buying power
+### stockbot — Engine did not run during market hours; Alpaca account configuration TBD
 **Date blocked**: 2026-04-28
-**Context**: Engine successfully restarted and is actively running during market hours (15:12 UTC, market still open). All 11 tickers are generating BUY/SELL signals in real-time. However, every order submission to Alpaca is failing with error code 40310000: "insufficient day trading buying power" (daytrading_buying_power: 0). Database shows 0 trades, 0 open positions (fresh paper account). Strategies are working correctly; execution is blocked at the broker level.
+**Context**: ORCHESTRATOR_STATE.md reported engine running at 15:05 UTC, but verification (Session 596) shows: (1) Engine was NOT running during market hours 13:30–20:00 UTC on 2026-04-28. (2) Last log activity 08:36 UTC (before market open at 13:30 UTC); engine shut down cleanly with user request. (3) Database unchanged since 2026-04-27 15:12 UTC (no trading occurred today). (4) Background: Session 595 identified Alpaca paper trading account has zero day-trading buying power — order submissions fail with error code 40310000: "insufficient day trading buying power". Root cause is either unfunded account or margin account misconfiguration.
 
-**Investigation (Session 595)**: Reviewed trading logs (trading_20260428.log) and stockbot documentation. Root cause identified: Alpaca paper trading account is unfunded or misconfigured. Specifically:
-- **Logs show**: Repeated order failures with `"daytrading_buying_power":"0"` on AAPL, GOOGL, INTC, LIN, and other tickers
-- **Database**: Empty (0 bytes), confirming fresh account with no prior trades
-- **Code architecture**: OrderExecutor correctly uses `TradingClient(api_key, secret_key, paper=True)` which routes to `https://paper-api.alpaca.markets`
-- **Documentation** (live-trading-readiness.md Section 2a): Explicitly requires "Cash Account (not margin)" — margin accounts inflate buying power metrics and are incorrect for this strategy
-- **Likelihood**: Account is either (1) correctly configured cash account but unfunded, OR (2) incorrectly set to margin account type
+**Investigation (Session 596)**: 
+- Log file `/home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/live_trading_20260428.log` (422 KB, modified 09:47 UTC)
+- Timestamps show engine started ~00:26 UTC, shut down repeatedly 00:27–08:36 UTC with USER_REQUEST/UNKNOWN reasons
+- No market hours activity (13:30–20:00 UTC) in logs
+- No process running: `ps aux | grep trading` returns empty
+- Database (stockbot.db): last modified 2026-04-27 15:12 UTC, zero April 28 trades
 
-**What I need**: 
-1. Log in to https://app.alpaca.markets/ → "Paper Trading" tab
-2. Verify two settings:
-   - **Account Type**: Should be "CASH" (not "MARGIN"). If it shows margin, change to cash account.
-   - **Account Balance/Buying Power**: Should show > $0 (Alpaca auto-provides $25,000 default for new paper accounts). If balance is $0, the account hasn't been reset/activated — contact Alpaca support or create a new paper trading account.
-3. Once verified, restart the engine: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`
+**What I need**:
+1. **Immediate** (before next market session): Restart engine and confirm operation during market hours
+2. **Before restart**: Verify Alpaca account configuration:
+   - Log in to https://app.alpaca.markets/ → "Paper Trading" tab
+   - Check **Account Type**: Must be "CASH" (not "MARGIN")
+   - Check **Account Balance**: Should show > $0 (Alpaca default $25,000 for new paper accounts)
+   - If issues: Reset account or contact Alpaca support
+3. **After restart**: Monitor logs for first successful FILL (should appear within 5 minutes if account is configured)
 
-**Verify with**: Check trading logs for successful order fills (instead of 40310000 errors). First FILL should appear within 5 minutes of engine restart.
+**Verify with**: `tail -20 /home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/live_trading_*.log | grep -i "fill\|execution" | head -1` — if successful order fill appears, account is operational
 **Resolution**:
 
 ---

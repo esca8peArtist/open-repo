@@ -1163,3 +1163,52 @@ Session 586 COMPLETE. System ready.
 
 **Assessment**: All autonomous infrastructure complete. Live execution underway. System stable and functioning as designed. Ready for post-market analysis and user-action execution.
 
+
+---
+
+## Since Last Check-in (Session 596 — 2026-04-28 17:54 UTC)
+
+⚠️ **Engine Status Correction: NOT Running During Market Hours**
+
+### What Happened
+
+**Orchestrator Verification (17:54 UTC)**:
+- ✅ ORCHESTRATOR_STATE.md reviewed — reflects Session 595 status (appears accurate on surface)
+- ⚠️ **Stockbot engine status CORRECTED** — Session 595 reported engine running at 15:05 UTC, but verification revealed incorrect status:
+  - **Actual finding**: Engine did NOT run during market hours (13:30–20:00 UTC on 2026-04-28)
+  - **Evidence**: 
+    - Last log activity: 08:36 UTC (pre-market). All timestamps show "USER_REQUEST" shutdowns between 00:26–08:36 UTC
+    - Current process: `ps aux | grep trading` returns empty (no running process at 17:54 UTC)
+    - Database: stockbot.db unchanged since 2026-04-27 15:12 UTC. Zero trades on April 28
+    - Log file: `/projects/stockbot/logs/live_trading_20260428.log` (422 KB) last modified 09:47 UTC, no entries after 08:36 UTC
+  - **Root cause**: Unknown why engine shut down before 13:30 UTC market open. Session 595 logged stale/incorrect information.
+  - **Action**: BLOCKED.md updated with current state. User action required for next attempt.
+  - **Time remaining**: 2h 6m until market close (20:00 UTC). Tomorrow's session is primary opportunity.
+
+### Project Status (Updated)
+| Project | Status | Blocker | Last Action |
+|---------|--------|---------|------------|
+| **stockbot** | ✅ Code ready | Engine not running today; Alpaca account config TBD | Verification found engine shut down pre-market; needs restart + account verification |
+| **resistance-research** | ✅ 35 domains complete | Distribution path decision (A / A+37 / B) | Awaiting user decision |
+| **mfg-farm** | ✅ Launch package complete | Test print confirmation | Awaiting user confirmation |
+| **seedwarden** | ✅ Phase 3 complete | Phase 1 tag corrections + Etsy verification | Awaiting user actions |
+| **cybersecurity-hardening** | ✅ Tier 1-3 prep complete | Tier 1 approval | Awaiting user approval |
+| **open-repo** | ✅ Phase 5 infrastructure | PR #1 merge | Awaiting external review/merge |
+| **off-grid-living** | ✅ Publication complete | Social media distribution | Awaiting user execution |
+| **workout** | ✅ Plan complete | User review/selection | Awaiting user review |
+
+### Items Needing Your Input
+1. **stockbot engine restart** — Critical for next market session (April 29):
+   - Verify Alpaca account: Log into https://app.alpaca.markets → Paper Trading tab
+   - Check: Account Type = CASH (not MARGIN), Balance > $0 (default $25K)
+   - Then: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py &`
+2. **resistance-research distribution path** — A / A+37 Hybrid / B (no time constraint)
+3. **mfg-farm test print** — Confirmation that designs printed successfully
+4. **seedwarden Phase 1** — 3 tag corrections + Etsy verification
+5. **cybersecurity-hardening Tier 1** — Approve templates for initial outreach
+
+### Assessment
+- **Autonomous work status**: All projects at user-action wait state. No autonomous work available.
+- **System status**: Stable. All deliverables ready for execution once user actions complete.
+- **Stockbot correction**: Session 595 reported engine running, but April 28 market session did not execute. Engine must be restarted for April 29 market session.
+- **Time remaining today**: 2h 6m until market close (20:00 UTC). No new autonomous work possible before close.
