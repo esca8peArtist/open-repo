@@ -194,8 +194,11 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
-### Item 13: workforce/labor market research for mfg-farm scaling
-**Status**: QUEUED — Ready to execute immediately (no dependencies)
+### ✅ Item 13: workforce/labor market research for mfg-farm scaling
+**Status**: COMPLETED 2026-04-28 16:25 UTC (Session 593)
+**Deliverable**: `projects/mfg-farm/workforce-scaling-research.md` (35 KB, 400 lines, 15 sources)
+**Key findings**: Hiring threshold at $8K-10K/month; contractor trigger at $2.5K-5K/month; solo operator max 3-4 P1S before labor ceiling; laser engraver ROI 5-8 weeks
+**Outcome**: Production-ready for integration with post-test-print launch sequence once user confirms test print success
 **Trigger**: Manual queue decision or test print confirmation
 **Scope**: Research cost of labor substitution in manufacturing (automation vs. hiring for growth), contractor management, supplier team coordination models from successful small manufacturers
 **Deliverables**: `mfg-farm_workforce_scaling_research.md` (3,000-4,000 words)
