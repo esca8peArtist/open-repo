@@ -60,18 +60,32 @@
 - Autonomous work maximized for current availability
 - All deliverables committed to master and production-ready
 
-**Needs Your Input**:
+**Needs Your Input** (Session 573):
 
-1. **[🚨 CRITICAL: Due 13:30 UTC, T-4h 34min]** Stockbot engine restart status check
-   - **Current status (08:56 UTC)**: Engine process verified running (PID 971200, active since Apr26). Most recent logs show 09:48 BST today — market-aware idle + ticker enforcement + daily Discord summary features operational.
-   - **Verification**: `ps aux | grep "spawn_main"` shows active multiprocessing
-   - **Decision point**: If engine is NOT currently serving live trading requests at market open (13:30 UTC), may need user intervention. Autonomous monitoring in effect.
+1. **[🚨 CRITICAL: Due 13:30 UTC, T-~3h 55min (as of 09:36 UTC)]** Stockbot engine restart required
+   - **Current status**: Code production-ready (Session 560 fix + Sessions 569-570 features: Discord notifications, market-open verification logging)
+   - **Command**: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py &`
+   - **Expected outcome**: Engine initializes, loads 11-ticker portfolio (AAPL + MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA), waits for market open, fires first trading signals at 13:30 UTC
+   - **Success metrics**: (1) No startup errors, (2) All 11 tickers loaded, (3) Market-aware idle until 13:30 UTC, (4) Position notifications post to Discord on fills, (5) Daily summary posts to Discord at 20:00 UTC
+   - **Monitoring**: Use `projects/stockbot/MARKET_OPEN_EXECUTION_RUNBOOK.md` and `POST_MARKET_MONITORING.md`
 
 2. **[HIGH: Decision needed]** Resistance-research Phase 1 distribution path
-   - **Path A**: Immediate distribution (conservative)
-   - **Path A+37 Hybrid**: Path A + Domain 37 (Federal Executive Interference in 2026 Midterms) — **RECOMMENDED**
-   - **Path B**: Continue Phase 3 research before launch
-   - **Decision impact**: Awaiting your direction to activate Phase 1 institutional outreach. All pre-launch infrastructure production-ready.
+   - **Path A**: Immediate institutional distribution (conservative, 34-domain baseline)
+   - **Path A+37 Hybrid**: Path A + Domain 37 (Federal Executive Interference 2026 Midterms) — **RECOMMENDED** for maximum pre-election impact
+   - **Path B**: Continue Phase 3 research (Institutional Playbooks, Adversary Response Modeling, International Precedent Deepening) before launch
+   - **Decision impact**: Phase 1 execution begins immediately upon your decision; all infrastructure ready. Phase 3 research (Candidate 1 monitoring infrastructure now complete) can proceed post-distribution.
+
+3. **[MEDIUM: Anytime]** Mfg-farm test print
+   - **Status**: Physical test print required to validate CadQuery designs (modrun_rail.py, modrun_clip.py)
+   - **Next step**: Confirm print successful → launch prep continues with supplier negotiations
+
+---
+
+**Suggested Priorities for Next Session** (2026-04-28 14:00 UTC or later):
+
+1. **Monitor market-open execution** (13:30–14:30 UTC): Validate stockbot engine restart, track first trading signals, verify Discord notifications post successfully
+2. **Await distribution path decision**: Once you select Path A / A+37 Hybrid / B, orchestrator can execute Phase 1 immediately
+3. **Activate post-market execution plan** (20:30 UTC+): If market-open validates successfully, pivot to Exploration Queue Item 3 (Post-Gate-2 analysis) at market close
 
 3. **[MEDIUM]** Mfg-farm test print
    - Required: Physical test print of CadQuery designs (rail + clip) to validate printability
