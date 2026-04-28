@@ -2,6 +2,58 @@
 
 ---
 
+## April 28, 2026 (Domain Maintenance Agent) — April-May 2026 Domain Content Maintenance: Verification + FISA Rules Committee Collapse Update
+
+**Session type**: Domain content maintenance audit + late-April-28 FISA development addition
+**Task**: Verify completion of 8 priority domain updates (Sessions 573-590) and integrate new April 28 development
+
+### Assessment
+
+All 8 priority domain updates were confirmed complete from Sessions 573-590 (same calendar date, earlier sessions). Full verification of each file conducted:
+
+- **Domain 19f**: Sections 13, 14, 15 (Case Study + NATO/Taiwan synthesis + pre-deadline final assessment) — CONFIRMED COMPLETE
+- **Domain 06**: Sections 5-6 (Wilcox/Slaughter removal power; Powell/Warsh/Fed carve-out) — CONFIRMED COMPLETE
+- **Domain 29**: Sections 13-14 (SPLC case trajectory, Judge Marks assignment, DOJ state bar rule) — CONFIRMED COMPLETE
+- **Domain 35**: Sections 9-11 (cert grant window, Powell-Slaughter timing, Warsh confirmation doctrinal implications) — CONFIRMED COMPLETE
+- **Domain 01**: Sections 4-6 (ballot initiatives, SAVE Act state wave, BISC 155-bill count, FISA pre-vote assessment) — CONFIRMED COMPLETE
+- **Domain 28**: Sections 9-10 (Iran as larger WPR empirical instance, comparative Senate vote table, cross-domain synthesis) — CONFIRMED COMPLETE
+- **Domain 33**: 155-bill count, six-state supermajority push, 12-state coordination table — CONFIRMED COMPLETE (updated Session 535)
+- **surveillance-tracking.md (Domain 21/25 FISA proxy)**: Pre-vote assessment April 28 — CONFIRMED COMPLETE
+
+### New Content Added This Session
+
+**Late April 28 development — FISA Rules Committee collapse** (most significant development since Session 590):
+
+The House Rules Committee met April 28 to advance Johnson's three-year FISA reauthorization but recessed without acting. More than a dozen Republicans publicly signaled opposition on Fourth Amendment warrant grounds — identical to the coalition that killed the five-year and 18-month proposals on April 17. Massie-Boebert introduced the Surveillance Accountability Act as an alternative (warrant requirement + private right of action). This collapse with 48 hours before the April 30 deadline has materially elevated the probability of either a brief lapse or further emergency stopgap over the previously most-likely clean three-year passage.
+
+**Files updated**:
+- `projects/resistance-research/surveillance-tracking.md` — Pre-vote assessment extended with Rules Committee collapse analysis; revised probability framework for April 29-30 outcomes; 4 new sources
+- `projects/resistance-research/domains/domain-01-voting-rights-elections.md` — Section 6.2 FISA vote dynamic updated with Rules Committee collapse; four-outcome probability framework replacing three-outcome framework
+
+### Cross-Domain Implications of Updated FISA Assessment
+
+If Section 702 lapses briefly (now approximately co-equal probability with three-year passage):
+- NSA shifts to EO 12333 collection (no statutory expiration, no congressional oversight)
+- FBI loses prospective 702 query authority; existing data unaffected
+- Intelligence community declares national security emergency; stopgap passes under pressure
+- Civil liberties reformers lose warrant-requirement leverage once the "emergency" framing takes hold
+- Domain 1 implication: EO 12333 shift is operationally worse for election organizers than Section 702 renewal, because EO 12333 has no FISC oversight at all
+
+### Pending After April 30
+
+- **FISA outcome**: Fill post-deadline checklist in surveillance-tracking.md after April 29-30 vote. See CHECKIN.md item 0.
+- **Iran WPR post-May 1**: Fill Section 15 scenario outcomes after May 1. Collins/Murkowski positioning; authorization vehicle introduction tracking. See CHECKIN.md pending.
+
+---
+
+## April 28, 2026 — mfg-farm Workforce Scaling Research
+
+**File**: `projects/mfg-farm/workforce-scaling-research.md`
+**Scope**: Comprehensive guide to labor substitution economics, contractor management, multi-printer coordination, hiring thresholds, and 4-phase scaling roadmap for ModRun print farm
+**Key findings**: Solo operator viable to 15-25 printers (well beyond 12-month horizon); $5K/month revenue is the contractor trigger; Bambu Farm Manager + Printago extend single-person capacity to 5-10 printers; formal W-2 hire justified at $8K-10K/month revenue; three case studies (Brevard County $967K solo op, NextGenModeling top-2.5% Etsy, Slant 3D industrial benchmark). 15 sources, ~3,800 words.
+
+---
+
 ## April 28, 2026 (Session 590) — Domain Content Maintenance: April-May 2026 Updates
 
 **Session type**: Domain content maintenance — 35-domain framework currency
