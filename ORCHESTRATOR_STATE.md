@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-27T22:53:18Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-28T05:52:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 48.8% (2,452,439 tokens) | All-models 67.2% | Reset in 1h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.0% (0 tokens) | All-models 6.2% | Reset in 162h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -32,8 +32,8 @@
 **Focus**: Session 499 (2026-04-27 evening): **TIER 2 MESSAGING TEMPLATES COMPLETE**. Agent-created:
 
 ### stockbot
-**Status**: Active — **Multi-ticker training verified COMPLETE (Session 533), ready for market open 2026-04-28 09:30 ET** — awaiting engine restart
-**Focus**: **Session 533 (2026-04-27): Multi-ticker stacker training VERIFIED** — All 11 tickers (AAPL + MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA) trained and integrated in active-sessions.json. 63 ensemble tests passing. Gate 1 projection: ~124 trades/month (4x threshold). Engine OFFLINE — 
+**Status**: Active — **Feature count bug FIXED (Session 560), ready for market open 2026-04-28 09:30 ET** — awaiting user engine restart
+**Focus**: **Session 560 FIX COMPLETE**. Feature count mismatch resolved. Root cause: Ensemble stackers expect 61 features with `1d_` prefix from MTF extractor + PipelineIntegrator. Previous fallback logic called `FeatureEngineer.transform()` which produces different feature names, causing shape mismatch → s
 **Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
 
 ### seedwarden
@@ -65,43 +65,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
 ---
 
-## Session 548 — 2026-04-27 (late evening)
-
-**Orientation**: Checked ORCHESTRATOR_STATE and PROJECTS.md. All high-priority projects blocked on user action (engine restart, distribution path decision, test print, tag corrections). Exploration Queue has 3 items: (1) resistance-research implementation toolkit, (2) stockbot post-Gate-2 operations (queued), (3) mfg-farm manufacturing automation (queued). Selected top item for autonomous execution.
+## 2026-04-28 Session 552 (00:05 UTC) — Stockbot Pre-Market Robustness
 
 **Work Completed**:
 
-1. ✅ **resistance-research: Implementation Toolkit for Institutional Adoption — COMPLETE**
-   - Agent-researched and wrote comprehensive toolkit bridging 35-domain framework to institutional execution
-   - Deliverables: 6 files, 10,222 words total
-     - `implementation-toolkit.md` (2,028 words) — Toolkit guide, common pitfalls, case studies, quarterly tracking template
-     - `legislative-implementation-guide.md` (1,443 words) — 5-step decision tree for state legislatures and congressional offices
-     - `advocacy-implementation-guide.md` (1,605 words) — 5-step decision tree for advocacy coalitions and NGOs
-     - `academic-implementation-guide.md` (1,679 words) — 5-step decision tree for universities and research institutions
-     - `state-government-implementation-guide.md` (1,610 words) — 5-step decision tree for state executive/administrative agencies
-     - `institutional-resilience-implementation-guide.md` (1,857 words) — 5-step decision tree for foundations, think tanks, civil society
-   - Key design: Each guide includes "Monday morning question" (concrete operating scenario), 5-step decision tree (prescriptive not advisory), domain applications (exact mechanism from proposal), common mistakes (sector-specific failure modes), case studies (real institutions, real strategies)
-   - Sources: 10+ authoritative sources including ACLU, States United, Governors Safeguarding Democracy, Brookings, International IDEA, Journal of Democracy
-   - Value: Bridges gap between proposal (what should be done) and execution (how organizations actually do it). Ready for post-distribution Phase 1 institutional outreach.
+1. ✅ **stockbot: Pre-Market Robustness Improvements** (3 features, 27 tests, all pass)
+   - **Session timing**: Executed 13.5 hours before market open (09:30 ET / 13:30 UTC). Window used for code hardening before engine restart.
+   - **Deliverables**:
+     - **Market-aware idle sleep** (commit 26697dd): Fixes ~15,000 "market closed — skipping cycle" log lines per day. Implementation: `_next_market_prewake(now)` computes next Mon–Fri 13:15 UTC; sessions sleep full duration when `market_open=False`. Minimum 60s floor. File: `src/trading/trading_session.py`. Tests: 7 unit tests (wake time computation, weekend skip, timezone aware, same-day/next-day transitions). All pass.
+     - **Ticker enforcement guard** (commit 26697dd): Prevents silent misconfiguration. Added `_enforce_ticker_match()` to verify model's trained ticker matches session's assigned ticker (case-insensitive). Raises `ValueError` on mismatch. Backward compatible (no-op if metadata missing ticker key, skips multi-ticker sessions). Wired into `_load_strategy`, `_load_stacker_strategy`, `_load_mtf_strategy`. File: `src/trading/trading_session.py`. Tests: 8 unit tests (no-op with missing metadata, pass on match, raise on mismatch, case-insensitive, error message format, multi-ticker exemption, error handler integration). All pass.
+     - **Daily Discord summary** (commit 26697dd): Post-market reporting at 20:00 UTC. Three methods: `_maybe_send_daily_discord_summary(now)` (fires once per calendar day, idempotent), `_build_daily_discord_payload(date_str, now)` (aggregates cycle_logs into Discord embed with signals per ticker, orders, trades, mode, strategy, errors), `_send_discord_summary(payload)` (stdlib-only urllib.request POST to `STOCKBOT_DISCORD_WEBHOOK_URL`, fails gracefully if env var missing). File: `src/trading/trading_session.py`. Tests: 12 unit tests (payload structure, date inclusion, ticker count, signal counts, fires at 20:00 UTC only, idempotency, daily reset, graceful missing env). All pass.
+   - **Test summary**: 27 new unit tests in new file `tests/test_trading_session_improvements.py`. All pass. 182 existing tests unchanged and passing. Total: 209 tests pass, 0 regressions.
+   - **Code quality**: No external dependencies added. Stdlib-only for Discord POST. Backward compatible. No breaking changes.
+   - **Files modified**: `src/trading/trading_session.py` (main implementation), `tests/test_trading_session_improvements.py` (new, 27 tests)
+   - **Committed to**: stockbot submodule master (commit 26697dd)
+   - **Status**: Production-ready. Engine can be restarted without code regression risk.
 
-**Orchestration Files to Update**:
-   - ✅ PROJECTS.md: Mark implementation toolkit as COMPLETE, add replacement exploration queue item
-   - ✅ WORKLOG.md: logging session 548 work (this entry)
+**Orchestration work**:
+- Updated PROJECTS.md: Marked items 1, 2, 4 of NEXT WORK as completed in new "Completed (Session 552)" section
+- Updated CHECKIN.md: New session entry documenting improvements and maintaining critical deadline reminder
 
-**Project Status Assessment**:
-   - **resistance-research**: 35-domain framework + implementation toolkit + measurement framework COMPLETE. Blocked on user distribution path decision. Ready to execute Phase 1 immediately upon user decision + admin fixes.
-   - **stockbot**: Engine restart critical (due 2026-04-28 09:30 ET, ~12 hours). Multi-ticker training complete, paper trading started.
-   - **All others**: Blocked on user action (engine restart, test print, tag corrections, maintainer review, Tier 1 approval).
-   - Exploration Queue: 1 item complete (toolkit), 2 remaining (stockbot post-Gate-2, mfg-farm manufacturing). Added 1 new replacement item.
+**Session 552 Summary**:
+- 1 autonomous project (stockbot) improved with 3 critical robustness features
+- Total autonomous work: 27 unit tests, 3 production features, 0 blockers encountered
+- All work committed to stockbot submodule; ready for engine restart
+- Critical deadline: stockbot engine restart required before 2026-04-28 09:30 ET (13.5 hours remaining)
 
-**Commits** (to be made):
-   - 6 new implementation guide files in projects/resistance-research/
-   - PROJECTS.md: Mark toolkit item complete, add replacement item
-   - WORKLOG.md: Session 548 log entry
+**Next Session**: 
+1. CRITICAL: Verify stockbot engine has been restarted by user
+2. If restarted: Monitor paper trading through market open; confirm multi-ticker portfolio signals
+3. If not restarted: Urgent reminder to user
+4. If time permits: Continue exploration queue item #3 (stockbot post-Gate-2 operations)
 
-**Session Summary**: All high-priority projects blocked on user action. Executed Exploration Queue Priority 1 (implementation toolkit) with resistance-research agent. Produced 10,222-word toolkit spanning main guide + 5 sector-specific implementation guides (legislative, advocacy, academic, state government, institutional resilience). Toolkit bridges gap between proposal and execution, designed for institutional actors to use the 35-domain framework in their own work. All files production-ready and syncing to Obsidian. Ready for Phase 1 institutional outreach once user distribution path is decided and admin fixes completed (<2 hours user work).
+**Blockers**: None new. stockbot engine restart remains user action (required before market open).
 
----
+**Exploration Queue Status**:
+- Item #1 (stockbot dashboard UI mockup): ✅ **COMPLETE (Session 551)**
+- Item #2 (seedwarden customer cohort analysis): ✅ **COMPLETE (Session 551)**
+- Item #3 (stockbot post-Gate-2 operations): Queued for next session

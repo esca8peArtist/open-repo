@@ -953,6 +953,37 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Timeline**: 2-3 sessions per candidate
   - **Status**: QUEUED
 
+**NEW ITEMS (Session 565 — Exploration Queue Refresh for Multi-Project Readiness)**:
+
+- **resistance-research: Phase 1 Distribution Pre-Launch Infrastructure** (Priority 1 for distribution readiness)
+  - **Scope**: Pre-position all Phase 1 distribution infrastructure for immediate execution once user decides on path (A / A+37 / B). Build: (1) Refined influencer contact database (35-domain responsibility matrix), (2) Tiered messaging templates (Tier 1 senators/think tanks, Tier 2 academics/media, Tier 3 practitioners), (3) Distribution timeline and sequencing strategy (contact frequency, follow-up cadence, success metrics), (4) Tracking dashboard specification (influencer contact log, engagement tracking, decision capture), (5) Media brief and talking points per domain, (6) Post-distribution adoption measurement framework
+  - **Goal**: Eliminate delay between user path decision and Phase 1 execution. Everything ready to deploy within 48h of user decision.
+  - **Expected output**: `phase-1-distribution-infrastructure.md` (4,000-5,000 words) + `influencer-contact-database.json` (structured with tier/sector/decision-authority fields) + `messaging-templates.md` (3-4 templates per tier with personalization parameters) + `distribution-timeline.md` (week-by-week sequencing)
+  - **Dependencies**: None — can execute immediately
+  - **Expected scope**: 2-3 sessions
+  - **Status**: QUEUED — no blockers, can execute immediately
+  - **Timeline estimate**: 2-3 sessions (~2-4 hours autonomous work)
+
+- ✅ **mfg-farm: Pricing Tier Analysis & Margin Optimization** (COMPLETE — Session 565)
+  - **Scope**: Comprehensive pricing model for ModRun product line, ready for post-test-print supplier negotiation and Etsy launch
+  - **Deliverables**: 
+    - `pricing-tiers.csv` (10 SKUs across 3 tiers with volume-based COGS: 0–500 units/month → 500–2K → 2K+ units/month)
+    - `pricing-strategy.md` (2,878 words) — Competitive analysis (5 Etsy competitors mapped), margin architecture (54–73% gross), break-even calculations (310 units/month Economy / 68 Standard / 12 Deluxe), volume discounts (40% wholesale, 35–45% corporate), seasonal pricing (Q1-Q4 campaigns)
+    - `bundle-strategy.md` (4,023 words) — 5-tier bundle funnel (Essentials $8.99 → Starter $28.99 → Pro Expansion $38.99 → Professional $99.99 → Deluxe Kit $179.99), cohort targeting, upsell sequence, photography kit, email automation, 50%+ revenue-from-bundles target
+  - **Key Pricing Output**: Economy ($8.99–$12.99, 54–63% margin) | Standard ($14.99–$28.99, 62–72% margin) | Premium ($22.99–$179.99, 63–73% margin)
+  - **Competitive Findings**: Robbosales $10.99, Infinaprint3d $14.98, PETG Premium $18.50–$22.50, Sim Rig $14–$99.99, Honeycomb $24.20 — ModRun positioned as premium original-design alternative vs. generic
+  - **Status**: Production-ready for post-test-print user handoff
+  - **Commit**: `693bdf9`
+
+- **seedwarden: Phase 1 Revenue Projections & Conversion Roadmap** (Priority 3 for launch planning)
+  - **Scope**: Build detailed 90-day revenue forecasts and conversion targets for Phase 1 launch. Develop: (1) Baseline conversion rate estimates (by cohort and product tier), (2) Month-by-month revenue projections (conservative/realistic/optimistic scenarios), (3) Customer acquisition cost (CAC) analysis by channel (Etsy organic, search, Pinterest, direct), (4) Payback period and break-even analysis, (5) Phase 1→Phase 2 transition criteria and decision gates, (6) Monthly KPI dashboard specification (metrics to track, alert thresholds, decision rules), (7) Comparison to seedwarden business plan goals and risk mitigation
+  - **Goal**: Pre-launch planning reduces post-launch surprises and enables rapid Phase 2 scaling decision. Clear decision criteria for when to launch Phase 2 vs. optimize Phase 1.
+  - **Expected output**: `phase-1-revenue-roadmap.md` (2,500-3,000 words) + `90-day-forecast.csv` (month-by-month projections, 3 scenarios) + `kpi-dashboard.md` (monthly metrics checklist with decision logic) + `phase-1-to-phase-2-decision-matrix.md` (explicit go/no-go criteria)
+  - **Dependencies**: None — uses industry benchmarks and Phase 1 product data already in place
+  - **Expected scope**: 1-2 sessions
+  - **Status**: QUEUED — no blockers, can execute immediately
+  - **Timeline estimate**: 1-2 sessions (~1-2 hours autonomous work)
+
 **✅ COMPLETED (Session 553 — Parallel Exploration Queue Execution)**:
 
 - ✅ **stockbot: Live Trading Infrastructure and Risk Management** (COMPLETE — Session 553)
