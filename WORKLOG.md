@@ -4,6 +4,59 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 (Session 591) — mfg-farm — Post-Test-Print Launch Package v2.0 COMPLETE
+
+**Scope**: Expand all 4 mfg-farm launch deliverables from Session 590 baseline to full scope requirements.
+
+**Files committed** (commit b07835a):
+
+1. `projects/mfg-farm/post-test-print-launch-prep.md` (v2.0, ~4,200 words)
+   - Full 6-phase launch sequence (test print through Month 2 scaling)
+   - ±0.5mm dimensional go/no-go criteria (dimensional tolerances for all engagement surfaces)
+   - 20% COGS reduction math (retail $15/kg → Anycubic $10.49/kg, Pirate Ship savings, bulk packaging)
+   - Production workflow: batch rules, color change protocol, validated PLA/PETG print settings
+   - Inventory reorder points with 14-day safety stock calculations
+   - Etsy original design compliance note (June 2025 rule — ModRun CadQuery design is fully compliant)
+   - Phased launch timeline (Day 0 through Month 2 gates with success criteria)
+
+2. `projects/mfg-farm/supplier-negotiation-playbook.md` (v2.0, 7 steps, ~2,800 words)
+   - Expanded from 5 to 7 negotiation steps
+   - Full supplier rankings table from supplier-scorecard.csv (Tier 1, 2, 3)
+   - Pricing tiers extracted from pricing-tiers.csv with margin impact per scenario
+   - Counter-offer framework with walk-away prices and leverage talking points
+   - Supplier selection decision tree (full flowchart logic)
+   - 5 risk scenarios with mitigations (stock-out, AMS quality, lead time, volume, payment terms)
+
+3. `projects/mfg-farm/fulfillment-workflow.md` (v2.0, ~2,900 words)
+   - Craftybase integration workflow added (setup, daily routine, auto-COGS tracking)
+   - Packaging specifications: exact box/mailer sizes per SKU, Phase 1 and Phase 2 branded versions
+   - Branded packaging print template spec (CMYK, 300 DPI, bleed, safe zone, design elements)
+   - QA checklist: ±0.5mm tolerance standards with caliper measurement protocol
+   - Per-unit visual QA (10 criteria) + defect classification (Critical/Major/Minor/Cosmetic)
+   - Cost modeling by fulfillment method (in-house P1 vs 3PL comparison)
+   - Pirate Ship 2026 rate table (with 8% temporary USPS surcharge through Jan 17, 2027)
+   - 3-stage scaling timeline (single printer → 2 printers → 5-printer farm)
+
+4. `projects/mfg-farm/launch-checklist.json` (v2.0, 127 items, 9 phases)
+   - Expanded from 40 items to 127 items across 9 phases
+   - Phases: test print evaluation, business foundation, Etsy config, listing prep,
+     production setup, launch day, ongoing operations, marketing, Month 1 analysis
+   - Go/no-go criteria at each phase gate with explicit pass/fail conditions
+   - 13 quantified success metrics with targets and acceptable minimums
+   - 8-item risk register with probabilities, impacts, and mitigations
+   - Financial projections: Month 1 ($156) → Month 2 ($450) → Month 3 ($1,440)
+
+**Research sources used**:
+- Pirate Ship 2026 USPS rate data (8% temporary surcharge confirmed)
+- Craftybase pricing and Etsy integration features (Studio $49/month)
+- Etsy creativity standards June 2025 update (original design requirement for 3D printing)
+- Packaging suppliers: Vistaprint, Smart Shipping Supply, Packlane, EcoEnclose
+- All existing mfg-farm files: pricing-tiers.csv, pricing-strategy.md, supplier-scorecard.csv, multi-printer-architecture.md
+
+**Status**: All 4 deliverables production-ready, committed to master. Ready for user handoff upon test print confirmation.
+
+---
+
 ## 2026-04-28 Session 590 (13:50–14:10 UTC) — Orchestrator: Parallel Exploration Queue Verification
 
 **Status**: 🟢 Market operating normally. Engine running and executing live trades (verified Session 589).
