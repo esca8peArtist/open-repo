@@ -191,6 +191,38 @@
 
 **Files modified**: None (issue found but not fixed — requires user action on Alpaca account)
 
+---
+
+## 2026-04-28 Session 593 (Continued, 15:20–16:25 UTC) — Exploration Queue Execution
+
+### **COMPLETED: Item 13 — mfg-farm Workforce Scaling Research**
+
+**Status**: ✅ COMPLETE
+
+**Deliverable**: `projects/mfg-farm/workforce-scaling-research.md` (35 KB, 400 lines, 15 sources)
+
+**Key Findings**:
+1. **Hiring threshold**: Formal W-2 hiring justified at $8K-10K/month revenue with 8+ hours/day operations. Cost: ~$1,300/month fully-burdened for part-time (20h/week) production assistant.
+2. **Contractor trigger**: $15/hour contractor packaging ($0.50/order) economically viable at 300+ orders/month revenue threshold (~$2,500/month).
+3. **Printer scaling**: Solo operator can manage 3-4 P1S units before labor exceeds 4-5 hours/day. Add 2nd printer when 1st runs 16+ hours/day for 2 consecutive weeks.
+4. **Automation ROI**: xTool laser engraver ($800-1,200) pays for itself in 5-8 weeks at $3-5/unit personalization premium on 150-200 units/week.
+5. **Software stack by scale**:
+   - 1-2 printers: OrcaSlicer native (free)
+   - 3-5 printers: Bambu Farm Manager (free) + Printago (free tier)
+   - 5-10 printers: Printago paid tier with Shopify/Etsy integration
+6. **Scaling roadmap**: Phase 1 (0-3 mo, 1 printer, $500-2K/mo) → Phase 2 (3-6 mo, 1-2 printers, contractor, $2-5K/mo) → Phase 3 (6-12 mo, 2-3 printers, $5-12K/mo) → Phase 4 (12+ mo, 4-5 printers, hire assessment, $10-20K/mo)
+7. **Case studies included**: $967K solo-operator precedent (Brevard County FL), NextGenModeling Etsy top-2.5%, Slant 3D industrial benchmark
+
+**Sources**: 15 primary sources (3DCentral, ADP Industries, Printago docs, Bambu Lab wiki, Slant 3D, xTool, SBA, ZipRecruiter labor benchmarks)
+
+**Integration**: Directly feeds Phase 2 planning (post-test-print supplier sequence). Ready for user review alongside post-test-print-launch-prep.md and supplier-negotiation-playbook.md.
+
+**Quality**: Production-ready, fully sourced, actionable recommendations with ROI analysis and timing thresholds.
+
+**Time**: Executed 15:20–16:25 UTC (65 minutes elapsed, general-research agent)
+
+**Next**: Awaits user test print confirmation to integrate into Week 1 launch execution.
+
 **Files committed** (commit b07835a):
 
 1. `projects/mfg-farm/post-test-print-launch-prep.md` (v2.0, ~4,200 words)

@@ -159,3 +159,50 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 3. **governance research expansion** — analyze voting system comparative framework (proportional representation, ranked choice, consensus-based alternatives) as potential resistance-research Domain 38
 4. **seedwarden Phase 2 preparation** — design Kickstarter campaign architecture for hardware manufacturing expansion (post-Phase 1 email list validation)
 5. **open-repo Phase 6 roadmap** — enterprise-grade federation patterns, cross-organizational coordination, post-Phase-5 maturity trajectory
+
+---
+
+## New Items (Session 593 — Queue Replenishment)
+
+### Item 11: cybersecurity-hardening Tier 2 Distribution Design (Conditional — Post-Tier 1)
+**Status**: QUEUED — Ready to execute upon Tier 1 approval received
+**Trigger**: Tier 1 outreach begins (user approval of TIER1_MESSAGING_TEMPLATES.md)
+**Scope**: Design Tier 2 messaging templates for 4 sector groups (digital rights, academic, researcher, journalist) with customized language/framing per sector's strengths
+**Deliverables**: `TIER2_MESSAGING_TEMPLATES_VARIANTS.md` (3,000–4,000 words) with 4 templates showing sector-specific framing variations
+**Key areas**:
+- Digital rights organizations: civil liberties framing vs. harm reduction framing (strategic choice per org type)
+- Academic cybersecurity: methodology defensibility vs. practical training opportunity positioning
+- Researcher communities: peer review opportunity vs. open-access vulnerability admission
+- Journalists: source protection gap angle vs. training/reporting split
+**Owner**: cybersecurity-hardening agent (autonomous execution, estimated 45–60 min)
+**Prerequisites**: Tier 1 execution started by user
+
+---
+
+### Item 12: resistance-research Domain 38 Candidate Research (Conditional — Post-Path-A-Hybrid decision)
+**Status**: QUEUED — Depends on user selection of Path A+Domain37 Hybrid (or Domain 37 completion desire)
+**Trigger**: User completes Domain 37 research, or requests Domain 38 expansion
+**Scope**: Identify highest-impact Domain 38 candidate from gap analysis; preliminary research and scope definition
+**Deliverables**: `ITEM12_DOMAIN38_CANDIDATES.md` (2,500–3,000 words) with 2-3 candidates + full research roadmaps
+**Key candidates to evaluate**:
+- **Voting Systems Architecture** (proportional representation, ranked choice voting, consensus models, blockchain voting — comparative analysis)
+- **Energy Infrastructure & Democratic Decentralization** (grid modernization, renewable energy governance, cooperative utility models)
+- **Intelligence Oversight & Accountability** (FOIA accessibility, Inspector General structure, whistleblower protection mechanisms)
+- **Property Rights & Economic Democratization** (land value capture, community land trusts, cooperative ownership models, antitrust enforcement)
+**Owner**: resistance-research agent (autonomous execution, estimated 2–3 hours research + writing)
+**Prerequisites**: User selects Hybrid path or requests Domain 37 completion
+
+---
+
+### Item 13: workforce/labor market research for mfg-farm scaling
+**Status**: QUEUED — Ready to execute immediately (no dependencies)
+**Trigger**: Manual queue decision or test print confirmation
+**Scope**: Research cost of labor substitution in manufacturing (automation vs. hiring for growth), contractor management, supplier team coordination models from successful small manufacturers
+**Deliverables**: `mfg-farm_workforce_scaling_research.md` (3,000-4,000 words)
+**Key areas**:
+- Freelancer/contractor market for post-print quality control and finishing (costs, reliability, vetting)
+- Supplier coordination models for multi-factory management (shared inventory, staggered scheduling, failover)
+- Automation candidates by product (marking, quality checks, packaging, fulfillment)
+- Scaling roadmap: 1-person operation → contractor team → light hiring thresholds with ROI analysis
+**Owner**: mfg-farm agent (autonomous execution, estimated 2 hours research)
+**Notes**: Executable regardless of test print status; builds foundation for Wave 2-3 planning
