@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 XX:XX–XX:XX UTC — Session 614 — Domain 37 Candidate A: Foreign Interference Framework Research
+
+**Orchestrator Orientation & Block Resolution** (~5 minutes):
+- ✅ **ORCHESTRATOR_STATE.md reviewed** — All projects' statuses assessed
+- ✅ **BLOCKED.md reviewed** — Only 1 active block remaining (mfg-farm test print, manual verification)
+- ✅ **Block archive verified** — stockbot engine restart block moved to Resolved Archive (2026-04-29 00:16:41 UTC)
+- ✅ **INBOX.md reviewed** — No new items
+
+**✅ COMPLETED: resistance-research — Domain 37 Candidate A: Foreign and Transnational Interference in Democratic Institutions (Session 614)**
+- **Agent**: resistance-research subagent
+- **File Produced**: `domains/domain-foreign-interference-in-democratic-institutions.md` (10,200 words, 68 authoritative sources)
+- **Scope**: Complete domain research document covering:
+  - Documented mechanisms of foreign information operations (Tenet Media case study, GRU/CGE AI deepfake network, Storm-1516, IRGC operations, China's Spamouflage)
+  - Systematic dismantlement of US counterintelligence capacity (FITF elimination, CISA collapse, FMIC gutting, GEC closure, FARA deprioritization)
+  - Global strategic consequences (97% USAID democracy program termination, NED defunding, 20-year global freedom decline)
+  - Comparative international precedent (Australia's FITS Act, EU Democracy Shield, Nordic-Baltic resilience models, Germany's constitutional democracy tradition)
+  - Four statutory reform proposals with specific drafting detail:
+    1. FARA Enforcement Act (mandatory renewal, civil penalties, independent FARA Commission, automatic criminal referral)
+    2. Foreign Interference Commission (bipartisan, permanent, mandatory pre-election reporting)
+    3. NED and Democracy Promotion Restoration Act (baseline funding floor, statutory independence)
+    4. Authoritarian Influence Registry (public database of foreign government investments in US institutions)
+- **Key Structural Contribution**: Documents the 90-day window convergence (January–April 2025) where every institution designed to defend against foreign interference was simultaneously dismantled
+- **Status**: Production-ready for institutional distribution (national security scholars, election-protection organizations, foreign policy communities)
+- **Integration Path**: Connects through Domains 37 (election interference amplification), 29 (inverted FARA enforcement), 8 (dark money foreign spending channel); reaches new distribution audience (intelligence oversight, foreign policy organizations)
+- **Commit**: `fabc364` (to master)
+
+**Session Output**:
+- ✅ 1 Domain 37 candidate research document (10,200 words, 68 sources)
+- ✅ Extends framework depth independent of distribution path decision
+- ✅ Commit: `fabc364` (domain-foreign-interference-in-democratic-institutions.md to master)
+
+**Strategic Context**: Domain 37 Candidate A research proceeds independently of the Phase 1 distribution path decision (A / A+37 Hybrid / B). This work provides immediate value regardless of path chosen, extends the framework's reach to national security and foreign policy communities, and is actionable for the August 2026 primary / November 2026 midterm timelines.
+
+---
+
 ## 2026-04-29 00:20–00:50 UTC — Session 613 — Blockage Resolution + Phase 3 Candidate 7 Research
 
 **Orchestrator Orientation & Block Resolution** (00:20–00:25 UTC):

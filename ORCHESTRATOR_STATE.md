@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-28T22:44:33Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-28T23:34:56Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.2% (17,300 tokens) | All-models 25.9% | Reset in 145h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.3% (24,438 tokens) | All-models 26.8% | Reset in 144h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -53,26 +53,6 @@
 **Status**: Active
 **Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers (no equipment, bands, full gym) × multiple frequencies (3/4/5/6 days), with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols. Awaiting user review and selection.
 ## Active Blocks
-### stockbot — Engine did not run during market hours; Alpaca account configuration TBD
-**Date blocked**: 2026-04-28
-**Context**: ORCHESTRATOR_STATE.md reported engine running at 15:05 UTC, but verification (Session 596) shows: (1) Engine was NOT running during market hours 13:30–20:00 UTC on 2026-04-28. (2) Last log activity 08:36 UTC (before market open at 13:30 UTC); engine shut down cleanly with user request. (3) Database unchanged since 2026-04-27 15:12 UTC (no trading occurred today). (4) Background: Session 595 identified Alpaca paper trading account has zero day-trading buying power — order submissions fail with error code 40310000: "insufficient day trading buying power". Root cause is either unfunded account or margin account misconfiguration.
-**Investigation (Session 596)**: 
-- Log file `/home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/live_trading_20260428.log` (422 KB, modified 09:47 UTC)
-- Timestamps show engine started ~00:26 UTC, shut down repeatedly 00:27–08:36 UTC with USER_REQUEST/UNKNOWN reasons
-- No market hours activity (13:30–20:00 UTC) in logs
-- No process running: `ps aux | grep trading` returns empty
-- Database (stockbot.db): last modified 2026-04-27 15:12 UTC, zero April 28 trades
-**What I need**:
-1. **Immediate** (before next market session): Restart engine and confirm operation during market hours
-2. **Before restart**: Verify Alpaca account configuration:
-   - Log in to https://app.alpaca.markets/ → "Paper Trading" tab
-   - Check **Account Type**: Must be "CASH" (not "MARGIN")
-   - Check **Account Balance**: Should show > $0 (Alpaca default $25,000 for new paper accounts)
-   - If issues: Reset account or contact Alpaca support
-3. **After restart**: Monitor logs for first successful FILL (should appear within 5 minutes if account is configured)
-**Verify with**: `tail -20 /home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/live_trading_*.log | grep -i "fill\|execution" | head -1` — if successful order fill appears, account is operational
-**Resolution**:
----
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.

@@ -5,6 +5,51 @@
 
 ---
 
+## Since Last Check-in (Session 614 — 2026-04-29)
+
+### ✅ Domain 37 Candidate A: Foreign Interference Framework COMPLETE
+
+**Status**: resistance-research framework extended with production-ready foreign interference domain research. Work proceeds independently of distribution path decision.
+
+**What Happened**:
+
+#### Domain 37 Candidate A — Foreign and Transnational Interference in Democratic Institutions
+- **File**: `projects/resistance-research/domains/domain-foreign-interference-in-democratic-institutions.md` (10,200 words, 68 sources)
+- **Key Structural Finding**: 90-day window convergence (January–April 2025) where every US institution designed to defend democratic processes from foreign interference was eliminated simultaneously
+- **Documented Mechanisms**: Tenet Media $9.7M GRU operation (FARA enforcement gap case study), GRU/CGE AI deepfake network, Storm-1516 operations doubling in Q1 2026, IRGC hack-and-leak campaigns, China's Spamouflage down-ballot targeting
+- **Capacity Dismantlement Analysis**: Five simultaneous structural eliminations (FITF + KleptoCapture, CISA election security, FMIC gutting, GEC closure, FARA deprioritization)
+- **Global Consequences**: 97% USAID democracy program termination, NED defunding, International IDEA: 20th consecutive year of global democratic decline, authoritarian powers filling US-vacated democracy promotion space
+- **International Precedent**: Australia's FITS Act (operative improved FARA model), EU Democracy Shield framework, Nordic-Baltic whole-of-society resilience (Finland media literacy, Latvia three-pillar, Denmark Task Force Interference), Germany constitutional militant democracy tradition
+- **Statutory Reform Proposals** (with specific drafting):
+  1. FARA Enforcement Act: mandatory renewal, civil penalties, independent FARA Commission (removed from DOJ), automatic criminal referral
+  2. Foreign Interference Commission: bipartisan, permanent, mandatory pre-election public reporting (modeled on Canada's Critical Election Incident Protocol)
+  3. NED Restoration Act: baseline funding floor (0.05% federal discretionary spending), statutory independence from executive defunding, restored grant-making protocols
+  4. Authoritarian Influence Registry: public database of foreign government/sovereign wealth fund investments in US media, think tanks, universities, political nonprofits
+
+**Strategic Value**:
+- Extends framework reach to national security scholars, foreign policy organizations, election-protection organizations (new distribution channels)
+- Actionable for August 2026 primaries and November 2026 midterms
+- Provides complete picture of how foreign interference interacts with domestic vulnerability cascades (Domains 37, 29, 8, 7)
+- Independent of Phase 1 distribution path decision — valuable regardless of which path user selects
+
+**Session Output**:
+- ✅ 1 Domain 37 candidate research document (10,200 words, production-ready)
+- ✅ Commit: `fabc364` (domain-foreign-interference-in-democratic-institutions.md to master)
+
+**Current Project Status**:
+| Project | Status | Blocker | Next Action |
+|---------|--------|---------|------------|
+| **resistance-research** | ✅ 35 domains + Phase 3-7 + Domain 37A complete | **Distribution path decision (A / A+37 / B)** | **User selects path → Phase 1 execution** |
+| **stockbot** | ✅ Engine running, multi-ticker paper trading live | Monitor market close (today 20:00 UTC) | Post-market analysis for execution verification |
+| **mfg-farm** | ✅ Launch package complete | Test print confirmation (manual) | User confirms print success |
+| **seedwarden** | ✅ Phase 1-3 complete | Phase 1 tag corrections + Etsy verification | User completes actions → Phase 1 launch |
+| **cybersecurity-hardening** | ✅ Tier 1-3 prep complete | Tier 1 approval | User approves → Tier 1 outreach execution |
+| **open-repo** | ✅ Phase 4 complete | PR #1 merge | External review/merge, then Phase 5 (offline export) |
+| **off-grid-living** | ✅ Publication complete | Social media distribution | User executes social media launch |
+| **workout** | ✅ Plan complete | User review/selection | User reviews and selects equipment tier |
+
+---
+
 ## Since Last Check-in (Session 613 — 2026-04-29 00:20–00:50 UTC)
 
 ### ✅ Stockbot Engine RUNNING + Phase 3 Candidate 7 COMPLETE
