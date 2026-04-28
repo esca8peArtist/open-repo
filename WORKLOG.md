@@ -4,6 +4,50 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 Session 584 (12:03–12:07 UTC) — Orchestrator: Exploration Queue Seeding + Market-Open Final Readiness
+
+**Status**: 🟢 **ALL AUTONOMOUS WORK COMPLETE — READY FOR MARKET OPEN** — Created EXPLORATION_QUEUE.md with 4 active items. All projects awaiting user decisions or time-dependent events. Next autonomous work scheduled for 20:30 UTC post-market analysis (conditional on Day 1 trading success).
+
+**Session 584 Work**:
+
+1. ✅ **Created EXPLORATION_QUEUE.md** (12:03–12:07 UTC)
+   - **Items 1-2 (Completed)**: Archived prior work (resistance-research domain updates, seedwarden email playbook)
+   - **Item 3 (Queued)**: stockbot Post-Gate-2 Operations Analysis — scheduled for 20:30+ UTC post-market (6,000–7,000 word institutional scaling roadmap, regulatory compliance, risk management, performance attribution)
+   - **Item 4 (Queued)**: mfg-farm Supplier Negotiation & Production Scaling — blocked on user test print confirmation, ready to execute immediately upon signal
+   - **Item 5 (Queued)**: open-repo Phase 5 Architecture — blocked on PR #1 merge, ready to execute immediately upon signal
+   - **Item 6 (Queued)**: resistance-research Tier 1 Distribution Execution — blocked on user distribution path decision, ready to execute immediately upon signal
+   - **Future research areas documented** (cybersecurity Tier 2, workout Phase 2, off-grid social distribution, governance expansion, seedwarden Kickstarter)
+
+2. ✅ **Updated CHECKIN.md**
+   - Archived Session 583 into "Previous Session"
+   - Documented Session 584 orientation and queue seeding
+   - Confirmed all market-open systems ready; user engine restart only remaining action
+   - Timeline: ~84 minutes remaining until 13:30 UTC
+
+3. ✅ **Market-Open Readiness Summary**
+   - Code: Production-ready ✓ (Session 560 feature count fix verified, all validation checks pass)
+   - Config: Production-ready ✓ (67 trading sessions, 11 tickers, Discord webhooks, Alpaca credentials)
+   - Infrastructure: Production-ready ✓ (database writable, Python modules importable, source files present)
+   - Engine: OFFLINE — awaiting user restart (command: `.venv/bin/python scripts/run_live_trading.py &` from projects/stockbot/)
+   - Post-market plan: READY (POST_MARKET_MONITORING.md + Exploration Queue Item 3 scheduled for 20:30 UTC)
+
+**All Projects Status**:
+- ✅ **stockbot**: Code + config verified ready; engine restart required before 13:30 UTC (user action, T-84m)
+- ✅ **resistance-research**: Phase 1-5 + domain maintenance complete; awaiting distribution path decision (user action) to unlock Exploration Queue Item 6
+- ✅ **seedwarden**: Email playbook complete; Phase 1 awaits tag corrections + Etsy verification (user action)
+- ✅ **cybersecurity-hardening**: Tier 1-3 distribution prep complete; awaiting Tier 1 approval (user action)
+- ✅ **mfg-farm**: CadQuery designs, supplier research complete; awaiting test print confirmation (user action) to unlock Exploration Queue Item 4
+- ✅ **open-repo**: PR #1 ready for review/merge (user action) to unlock Exploration Queue Item 5
+- ⏳ **all others**: Deliverables complete, awaiting user review/execution
+
+**Strategic Positioning**:
+- **Immediate (T-84m)**: User engine restart is CRITICAL for market open
+- **At market open (13:30 UTC)**: Orchestrator will monitor first trading hour (logs, errors, signals)
+- **Post-market (20:30 UTC+)**: Conditional activation of post-Gate-2 analysis if Day 1 successful
+- **Exploration Queue**: Seeded with 4 active items (3 await user triggers, 1 scheduled post-market)
+
+---
+
 ## 2026-04-28 Session 583 (11:47–12:00 UTC) — Orchestrator: Stockbot Pre-Market Validation Fix + Engine Readiness Confirmation
 
 **Status**: 🟢 **STOCKBOT ENGINE READY FOR RESTART** — Fixed pre-market validation script (env var names, module import, dependency). Engine is production-ready. User can restart immediately.
