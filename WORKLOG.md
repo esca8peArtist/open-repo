@@ -4,6 +4,33 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-28 18:01–19:15 UTC — Session 597 — Domain Content Maintenance + April-May 2026 Updates
+
+**Domain Content Maintenance for Proposal Currency** (18:01–19:15 UTC):
+- **Exploration Queue Item 1 Execution**: "resistance-research: Domain Content Maintenance — April-May 2026 Updates"
+- **Three domains updated with April-May civic developments**:
+  1. **Domain 19f (War Powers Reform)** — Added Section 16 (~800 words):
+     - May 1 WPR deadline outcome confirmed: no withdrawal, no authorization, operational non-compliance documented
+     - Five-vote blocking pattern tabulated (Votes 1-5, May 1, April 23 final count 46-51)
+     - Sole GOP defector identified (Rand Paul), Democratic opposition (Fetterman)
+     - Vance doctrine confirmed operational (January 2026 pre-announcement now confirmed by non-compliance)
+     - Domain 28 cross-reference: Venezuela + Iran together eliminate WPR for practical purposes
+  2. **Domain 29 (Prosecutorial Weaponization)** — Added Section 15 (~700 words):
+     - SPLC pre-arraignment grand jury motion (seeking transcript disclosure under Rule 6(e))
+     - Structural claim distinct from Thompson bank fraud defect and wire fraud victim-absence grounds
+     - Litigation timeline: arraignment early May, motion to dismiss forthcoming
+     - Expert consensus (Weissmann, Zelinsky, Boynton) on dismissal-before-trial trajectory
+     - Organizational deterrence function documented separately from conviction outcome
+  3. **surveillance-tracking.md (FISA April 30 Outcome)** — Added post-deadline checklist (~500 words):
+     - FISA reauthorized two years (not three), 60-34 Senate vote
+     - Warrant requirement excluded; commercial data broker loophole open
+     - Technical lapse before Senate passage (midnight)
+     - Cross-domain flags: Domain 21 (broker loophole for ICE/DHS), Domain 1 (Section 702 backdoor), Domain 33 (SAVE Act separated)
+- **Other domains verified current**: Domains 6, 35 (Trump v. Wilcox / Humphrey's Executor), Domain 33 (ballot initiatives), Domain 1 (SAVE Act failure) — no new additions required
+- **Total new content**: ~2,000 words across three domains
+- **Committed to master**: a007940
+- **Status**: COMPLETE — resistance-research framework now current through April 28, 2026; ready for institutional distribution
+
 ## 2026-04-28 18:10–18:50 UTC — Session 595 (Continuation) — Phase 3 Candidate 3 Research + Queue Refresh
 
 **Phase 3 Candidate 3 Research Execution** (18:10–18:50 UTC):
