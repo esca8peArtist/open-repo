@@ -4,6 +4,30 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 06:50–07:50 UTC — Exploration Queue Item 1: Cybersecurity-hardening 2026 Threat Landscape — COMPLETE
+
+**Status**: Comprehensive research completed and integrated into three guide updates. Critical Priority 1 finding: npm supply chain attack (Bitwarden CLI trojanized April 22 for 90 minutes).
+
+**Research Findings** (via general-research agent):
+1. **FISA 702 Reauth** — Existing hardening recommendations remain valid; needs status update note
+2. **Bitwarden CLI Supply Chain Attack** — PRIORITY 1: April 22 npm trojanization exfiltrated credentials (AWS, SSH, GitHub PATs). Upstream attack via Checkmarx GitHub Action.
+3. **Shai-Hulud Campaign** — Also compromised Trivy, Axios, LiteLLM, and others. Requires supply-chain section in guides.
+4. **AI Social Engineering** — Click-through rates 4x higher for AI-generated phishing. Voice cloning + deepfake video now operationally viable. New threat requires human-layer defenses.
+5. **DOJ Voter Database** — New federal data consolidation confirmed; expands threat model for election protection activists.
+6. **Election Worker OpSec** — CISA lost 14 positions + $40M capacity (Apr 2026). 38% of election officials report threats. 75% report insufficient resources.
+
+**Deliverables**:
+1. `2026-threat-landscape-research.md` — 1,200 words, sourced findings document
+2. `hardware-procurement-guide.md` updated — Part 2.5: Software Supply Chain Security (450 words, Bitwarden + npm guidance)
+3. `device-hardening-guide.md` updated — Part 4: AI-Enabled Social Engineering (600 words, challenge phrases + synthetic evidence countermeasures)
+4. `election-worker-opSec-supplement.md` — NEW: 1,200 words, Tier-based OpSec framework for election workers
+
+**Committed**: All changes to projects/cybersecurity-hardening/ + PROJECTS.md exploration queue update.
+
+**Status**: Production-ready for Tier 2 distribution review. Election-worker guide ready for distribution to election protection organizations.
+
+---
+
 ## 2026-04-29 06:39 UTC — orchestrator — Session 629: Paper Trading Status Verification
 
 **Status**: Stockbot engine verified running. Paper trading active. First market session after engine restart (2026-04-28) completed with 18 order legs placed across portfolio. Market open today (2026-04-29 13:30 UTC) in 7 hours.
