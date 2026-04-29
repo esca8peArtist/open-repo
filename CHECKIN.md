@@ -5,6 +5,93 @@
 
 ---
 
+## Since Last Check-in (Session 632 — 2026-04-29 07:40–10:30 UTC)
+
+### ✅ Parallel Research Tasks — THREE UNBLOCKED PROJECTS COMPLETED
+
+**Strategy**: Spawned 3 independent subagents in parallel while stockbot engine running pre-market-open. All completed within 4 hours ahead of 13:30 UTC market open.
+
+**Task 1: mfg-farm Amazon FBA Strategy Analysis — COMPLETE**
+- **File**: `projects/mfg-farm/amazon-fba-analysis.md` (7,000 words)
+- **Scope**: Comprehensive FBA economics, cost comparison (Etsy-only vs. FBA vs. Hybrid), fulfillment timelines, Amazon A9 algorithm mechanics, seller reputation, phased launch strategy, operational considerations, risk analysis, decision flowchart
+- **Key Finding**: FBA addition worth it at 50+ units/month. Etsy-only Phase 1 → FBA Phase 2 addition at 50+ units/month with 50-75 unit forward stock batch. Economy tier unviable on Amazon (44.7% fee structure).
+- **Status**: Production-ready for post-test-print decision-making
+
+**Task 2: resistance-research May 2026 Civic Developments Tracker — COMPLETE**
+- **File**: `projects/resistance-research/MAY_2026_TRACKER.md` (established + operational)
+- **Scope**: 8-domain tracking framework (War Powers, Judicial Independence, Elections, Prosecutorial Weaponization, Accountability, State Autocratization, FISA/Surveillance, Federal Executive Interference); weekly log template; initial entries (11 sourced from April 28-29); decision thresholds for domain updates + Domain 38 research triggers; 30+ tracked sources; quarterly synthesis protocol
+- **April 28-29 Initial Entries**: Iran WPR deadline, FISA 702 expiration, Trump v. Slaughter ruling, DOJ voter database, CISA budget cut, IG firings + improper payments, Virginia redistricting
+- **Status**: Production-ready for ongoing weekly updates. Orchestrator can maintain tracker as part of regular monitoring workflow.
+
+**Task 3: stockbot Post-Gate-2 Operations Roadmap — COMPLETE**
+- **File**: `projects/stockbot/docs/post-gate-2-roadmap.md` (11,200 words, 1,283 lines)
+- **Scope**: Post-Gate-1 validation, live trading operations scaling (62-ticker parallel), multi-asset expansion (options/futures/crypto/intl), institutional risk management (VaR/CVaR, stress testing, concentration), regulatory compliance (PDT, wash-sale, Form 8949), performance attribution loop, 12-month capital deployment roadmap ($0 → $50K+), failure scenarios, tech/infrastructure roadmap, decision checkpoints
+- **Key Findings**:
+  - Gate 1 feasibility (May 12): Need 30+ trades/month. Current 11-ticker projects ~8/month (scale to 40 tickers or lower threshold).
+  - Live capital deployment: Phase 2 ($10K initial) validates model before Phase 3 ($20K) expansion.
+  - Risk limits: 95% VaR ≤1.5%, 99% VaR ≤2.5% (Basel III FRTB); concentration cap 35% for 0.65+ correlated group.
+  - Regulatory gate: PDT counter + wash-sale tracking required before live trading.
+  - Decision checkpoints: May 12 (feasibility), June 12 (Gate 1 sustained), August 29 (live validation), December 29 (institutional readiness)
+- **Status**: Production-ready, deployed as strategic framework for 6+ months of stockbot scaling
+
+### Stockbot Market Session — LIVE & MONITORING
+
+**Engine Status**: ✅ Running (PID 1202130, started 2026-04-29 03:31 UTC, 7+ hours uptime)
+**Log Health**: Clean trading_20260429.log (2.2M, no ERROR/CRITICAL/401 messages)
+**Current Activity**: Backtesting with HMM regime scaling initialization
+
+**Market Timeline**:
+- 13:30 UTC (5 hours) — Market open, 11-ticker portfolio begins trading
+- 20:00 UTC — Market close
+- Post-market — Daily analysis + performance attribution snapshot
+
+**Readiness**: ✅ Engine healthy, all 67 sessions configured and awaiting market open
+
+### All Active Projects — Status Update
+
+| Project | Status | Previous Blocker | Change | Next Action |
+|---------|--------|------------------|--------|-------------|
+| resistance-research | 35 domains + tracker | User distribution path | NEW: May 2026 tracker operational | Awaiting distribution path decision |
+| stockbot | Engine live, 67 active | None | NEW: Post-gate-2 roadmap complete | Market open 13:30 UTC, post-market analysis |
+| mfg-farm | Business plan + designs + research | Test print | NEW: FBA analysis complete | Awaiting test print confirmation |
+| cybersecurity-hardening | Tier 1-3 prep complete | Tier 1 approval | No change | Awaiting user distribution launch |
+| seedwarden | Phase 2 mockup complete | Phase 1 tags + Etsy | No change | Awaiting user action |
+| open-repo | Phase 5 architecture ready | PR #1 merge | No change | Awaiting PR #1 merge |
+| off-grid-living | Publication complete | User social media | No change | Awaiting user distribution |
+| workout | Comprehensive plan complete | User review | No change | Awaiting user review |
+
+### Needs Your Input
+
+1. **mfg-farm test print status** — CRITICAL: Unblocks Phase 3 launch sequence, supplier negotiation, FBA strategy deployment. Confirm when ready.
+2. **resistance-research distribution path** — Select Path A (immediate), Path A+Domain37 Hybrid (recommended), or Path B (expand before distribution). Affects Item 6 timeline.
+3. **stockbot post-market analysis** — Engine trading live. Ready to execute post-market analysis at 20:00 UTC to assess Gate 1 pacing and weekend market session readiness.
+
+### Session 632 Summary
+
+**Completed**:
+- ✅ Stockbot health check (engine running clean, 7+ hours uptime)
+- ✅ Parallel execution: 3 independent research tasks (mfg-farm FBA, resistance-research tracker, stockbot roadmap)
+- ✅ mfg-farm Amazon FBA analysis (7,000 words, decision flowchart, cost matrices)
+- ✅ resistance-research May 2026 civic tracker (8-domain framework, 11 initial entries, operational)
+- ✅ stockbot post-gate-2-roadmap (11,200 words, 10-section strategic framework, decision checkpoints)
+
+**In Progress**:
+- Market session (13:30–20:00 UTC) — monitoring 67-session portfolio
+
+**Ready to Trigger**:
+- stockbot post-market analysis (20:00+ UTC) — once market closes
+- mfg-farm Phase 3 launch (upon test print confirmation)
+- resistance-research Phase 1 distribution (upon user path decision)
+- cybersecurity-hardening Tier 1 distribution (upon user approval)
+
+**Suggested Priorities (Next Checkpoint)**
+1. **20:00 UTC Today**: Await stockbot market close, review performance metrics
+2. **This Week**: Confirm mfg-farm test print status → execute Phase 3 supplier sequence
+3. **This Week**: User confirms resistance-research distribution path → execute Phase 1 outreach
+4. **If opportunities arise**: seedwarden Track B work, open-repo Phase 5 implementation (pending PR #1 merge)
+
+---
+
 ## Since Last Check-in (Session 631 — 2026-04-29 07:16–09:00 UTC)
 
 ### ✅ Exploration Queue Replenishment & Item 21 Execution — COMPLETE

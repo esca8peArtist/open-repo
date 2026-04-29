@@ -47,6 +47,87 @@
 
 ---
 
+## 2026-04-29 07:40–09:15 UTC — Orchestrator Session 632 — Stockbot Health Check + Parallel Research Tasks
+
+**Status**: Completed. Two unblocked research tasks executed in parallel while stockbot engine running pre-market-open.
+
+**Summary**:
+
+### Stockbot Health Check (07:40 UTC)
+- **Engine Status**: ✅ Running (PID 1202130, started 2026-04-29 03:31 UTC)
+- **Log Activity**: Clean trading_20260429.log (2.2M, last update 06:30 UTC)
+- **Errors**: None (no ERROR/CRITICAL/401 messages in recent log tail)
+- **Current Activity**: Backtesting with HMM regime scaling initialization
+- **Market Open**: 13:30 UTC (5h 50m away) — engine ready for paper trading session
+
+### Parallel Task 1: mfg-farm Amazon FBA Strategy Analysis (Status: COMPLETE)
+- **File**: `projects/mfg-farm/amazon-fba-analysis.md` (7,000 words, comprehensive)
+- **Agent**: general-research (parallel execution)
+- **Deliverables**:
+  1. 2026 FBA fee schedule with April 17 fuel surcharge baked in
+  2. Cost comparison matrix (Etsy-only vs. FBA vs. Hybrid) across 3 volume scenarios (10/50/100 units/month)
+  3. Fulfillment timelines and Prime conversion lift (+15-40% vs. Etsy-fulfilled)
+  4. A9 algorithm metrics and Amazon seller reputation mechanics
+  5. Phased launch strategy with explicit exit criteria (20+ units/month → Phase 2, 50+ → hybrid)
+  6. Operational considerations (prep workflow, inventory float, 3PL logistics)
+  7. Risk analysis (stranded inventory, account suspension, fee instability)
+  8. Decision flowchart (volume-based, capital-aware)
+  9. Three case studies (recommended Etsy-first model: Robbosales)
+
+**Key Finding**: FBA addition worth it at 50+ units/month ($1,085/month Etsy-only → $1,622 hybrid). Economy tier unviable on Amazon at 44.7% fee structure. Standard/Premium tiers are FBA candidates.
+
+**Recommendation**: Etsy-only made-to-order Phase 1 → FBA Phase 2 addition at 50+ units/month with 50-75 unit forward stock batch.
+
+**Status**: Ready for user post-test-print decision-making.
+
+### Parallel Task 2: resistance-research May 2026 Civic Tracker (Status: COMPLETE)
+- **File**: `projects/resistance-research/MAY_2026_TRACKER.md` (established + operational)
+- **Agent**: resistance-research (parallel execution)
+- **Deliverables**:
+  1. 8-domain tracking framework (War Powers, Judicial Independence, Elections, Prosecutorial Weaponization, Accountability, State Autocratization, FISA/Surveillance, Federal Executive Interference)
+  2. Weekly log template (date | category | development | significance | domain impact | citation | recommendation)
+  3. Initial entries table: 11 sourced developments from April 28-29, 2026
+  4. Domain update thresholds and Domain 38 research triggers
+  5. Tracked sources index (30+ sources: news, legal databases, advocacy, academic)
+  6. Success metrics (2-3 domain updates/month, quarterly synthesis protocol)
+
+**April 28-29 Initial Entries** (all sourced):
+- Iran WPR 60-day deadline approaching → Domain A (TRACK-UPDATE)
+- FISA 702 one day before expiration → Domain E/21 (TRACK-UPDATE)
+- Trump v. Slaughter decision pending → Domain D (TRACK-UPDATE)
+- DOJ national voter database → Domain C (WARRANT-38 conditional)
+- CISA gutted / VOTE-ISAC emerging → Domain E (TRACK-UPDATE)
+- IG firings + $186B improper payments → Domain H (TRACK-UPDATE)
+
+**Status**: Production-ready for ongoing weekly updates. Orchestrator can maintain tracker as part of regular monitoring workflow.
+
+### Parallel Task 3: stockbot Post-Gate-2 Operations Roadmap (Status: COMPLETE)
+- **File**: `projects/stockbot/docs/post-gate-2-roadmap.md` (11,200 words, 1,283 lines)
+- **Agent**: stockbot (autonomous research)
+- **Deliverables**:
+  1. Post-Gate-1 Validation Checklist — 30+ trades/month, Sharpe ≥1.0, MDD ≤20%, consistency, walk-forward verification
+  2. Live Trading Operations Scaling — current 3-layer monitoring, 6-alert-category Discord system, 62-ticker parallel operation
+  3. Multi-Asset Expansion Strategy — options (Sharpe ≥1.5 gate), futures (90+ days live gate), crypto (separate 2-state HMM), intl equities
+  4. Institutional Risk Management — VaR/CVaR limits (95% VaR ≤1.5%, 99% VaR ≤2.5%), stress testing (2008/2020/2022/2026), concentration caps, SIPC tracking
+  5. Regulatory Compliance — PDT counter, wash-sale detection, Form 8949/Schedule D automation, professional account upgrade criteria
+  6. Performance Attribution Loop — monthly review (5-decision taxonomy: RETRAIN/THRESHOLD_ADJUST/DISABLE_HMM/POSITION_SIZE_ADJUST/HALT_TICKER), quarterly walk-forward, annual architecture review
+  7. Capital Deployment Roadmap — 12-month phased plan (Phase 1: $0 paper, Phase 2: $10K live, Phase 3: $20K expansion, Phase 4: $50K+ institutional)
+  8. Failure Scenarios & Recovery — 4-branch decision trees (model failure, operational failure, regulatory issues, regime change, >20% drawdown halt)
+  9. Technology & Infrastructure Roadmap — Phase 1 Pi → Phase 2 Jetson → Phase 3 microservices → Phase 4 Kubernetes
+  10. Decision Checkpoints — May 12 feasibility, June 12 Gate 1 sustained, August 29 live validation, December 29 institutional readiness
+
+**Key Findings**:
+- Gate 1 feasibility checkpoint (May 12): Need 30+ trades/month baseline. Current 11-ticker portfolio projects ~8/month (options: (A) scale to ~40 tickers, (B) lower threshold).
+- Live trading capital deployment: Phase 2 ($10K initial) validates model on real capital before Phase 3 ($20K) expansion to second asset class.
+- Risk limits: 95% VaR ≤1.5%, 99% VaR ≤2.5% (Basel III FRTB standard); concentration cluster cap 35% for any 0.65+ correlated group.
+- Regulatory gate: PDT counter + wash-sale tracking required before live trading; professional account upgrade at $20M notional/day threshold.
+
+**Integration**: Feeds into monthly operational cycles (Session 553 live-trading-operations.md, Session 542 performance-attribution-framework.md). Coordinates with May 12 feasibility checkpoint for Gate 1 readiness decision.
+
+**Status**: Production-ready, committed to master. Deployed as strategic framework for 6+ months of stockbot scaling operations.
+
+---
+
 ## 2026-04-29 — cybersecurity-hardening — 2026 Threat Model Updates (April–May) — COMPLETE
 
 **File**: `projects/cybersecurity-hardening/2026-threat-updates.md`
