@@ -243,17 +243,21 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
-### Item 21: mfg-farm Phase 3 — Product Validation & Market Sizing Research (Independent — Start Now)
-**Status**: ACTIVE — Executable immediately (no blocker)
-**Trigger**: Autonomous execution can begin now; test print outcome will validate manufacturing assumptions only
+### ✅ Item 21: mfg-farm Phase 3 — Product Validation & Market Sizing Research (Session 631 COMPLETE)
+**Status**: COMPLETED 2026-04-29 08:54 UTC
 **Scope**: Market validation for Phase 3 product candidates (laser-engraved items, resin-printed specialty products, injection-molded commodity items); customer sizing, competitive benchmarking, pricing validation
-**Deliverables**: 
-- `phase-3-product-validation-research.md` (3,500–4,000 words) — Market research on Phase 3 candidates (gaming cable organizers, desk accessories, homelab mounts, specialty organizers), TAM/SAM sizing, competitive SWOT, customer willingness-to-pay surveys
-- `phase-3-pricing-strategy.md` (2,000 words) — Pricing benchmarks vs. competitors, margin targets, volume-based pricing tiers, pre-order strategy
-- Updated `ITEM9_PRODUCT_VIABILITY_ANALYSIS.md` with Phase 3 market validation data (append-only)
-**Key areas**: Reddit/Discord communities for pricing research (r/homelab, r/CableMgmt, gaming subreddits), competitor pricing analysis (AliExpress, Amazon, Etsy), direct customer surveys (Phase 1 Etsy reviews as sample population)
-**Owner**: general-research agent (autonomous execution, estimated 2–3 hours research)
-**Prerequisites**: None — Item 9 and 18 provide manufacturing/economics foundation; Phase 1 test print not required for market research
+**Deliverables** (all production-ready, committed to master): 
+- `phase-3-product-validation-research.md` (4,000 words) — Market research across all 5 candidate categories, TAM/SAM/SOM analysis, competitive benchmarking, customer WTP validation
+- `phase-3-pricing-strategy.md` (2,000 words) — Three-tier pricing models (Standard/Premium/Specialty) with COGS/margin tables for top 3 candidates
+- `phase-3-competitive-swot.md` (2,200 words) — SWOT analysis + cross-category positioning matrix vs. AliExpress, Etsy makers, premium brands
+- Updated `ITEM9_PRODUCT_VIABILITY_ANALYSIS.md` with market-validated findings (Appendix C, 600 words)
+**Key Findings**:
+- **Priority Revision**: Homelab accessories elevated from #5 to #1 Wave 1 priority (r/homelab 946K subscribers, 10-inch mini rack ecosystem, zero FDM competition)
+- **Pricing Validated**: Homelab $22–65/unit (72–83% net), Desk $45–80 (70–81%), Gaming $35–55 (65%)
+- **Tariff Tailwind**: 35% US duties raise Chinese competition cost floor; mfg-farm FDM now price-competitive
+- **Year 1 SOM**: $10K–20K/month Wave 1 ($120K–240K/year gross), scaling to $20–40K/month by Dec 2026
+- **Outcome**: Production-ready for Phase 3 Wave 1 launch upon test print confirmation
+**Timeline**: Session 631 (08:54 UTC, ~2h research)
 
 ---
 

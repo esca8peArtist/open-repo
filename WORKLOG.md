@@ -4,20 +4,46 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-29 07:17 — Orchestrator Session 631 — Orientation & Queue Replenishment
+## 2026-04-29 07:17–08:54 UTC — Orchestrator Session 631 — Orientation, Queue Replenishment & Item 21 Execution
 
-**Status**: Session initiated, all active projects assessed.
+**Status**: Session in progress. Orientation complete, Item 21 (mfg-farm Phase 3) COMPLETED.
 
-**Key findings**:
-1. **stockbot engine** — Verified running (2 processes active). Market open at 13:30 UTC (6h remaining).
-2. **All active projects** — Deliverables complete or awaiting user input. Most exploration queue items (1-2, 7-10, 12-18) are COMPLETED. Blocked items: 3 (4-5, 6, 11) on user decisions/approval.
-3. **Exploration Queue Status** — Item 3 (stockbot post-Gate-2 analysis) scheduled for 20:30 UTC tonight (post-market). Items 4-6, 11 blocked on user input. Queue needs replenishment per protocol.
-4. **Action Taken** — Added 3 new queue items:
-   - **Item 19** (workout Phase 2): Sports science periodization research (post Phase 1 approval)
-   - **Item 20** (seedwarden Phase 3): Kickstarter campaign & hardware scaling (post Phase 1 launch)
-   - **Item 21** (mfg-farm Phase 3): Product validation & market sizing (ACTIVE NOW — no blockers)
+**Summary**:
 
-**Next**: Spawning general-research agent for Item 21 (mfg-farm market validation) to execute autonomously.
+### Orientation (07:17–07:25 UTC)
+- stockbot engine verified running (2 processes active). Market open at 13:30 UTC.
+- All active projects assessed: deliverables complete or awaiting user input.
+- Exploration Queue Status: Items 1-2, 7-10, 12-18 COMPLETED. Items 3, 4-6, 11 blocked on user decisions.
+- Action: Added 3 new queue items (19, 20, 21) to maintain continuity.
+
+### Item 21: mfg-farm Phase 3 — Product Validation & Market Sizing — COMPLETED (08:54 UTC)
+
+**Executed by**: general-research agent (2h autonomous research)
+
+**Deliverables** (all production-ready, committed to master):
+1. `phase-3-product-validation-research.md` — 4,000 words, market research across 5 candidate categories
+2. `phase-3-pricing-strategy.md` — 2,000 words, three-tier pricing models with COGS/margin tables
+3. `phase-3-competitive-swot.md` — 2,200 words, SWOT analysis + cross-category positioning
+4. Updated `ITEM9_PRODUCT_VIABILITY_ANALYSIS.md` — Appendix C with market-validated recommendations
+
+**Key Findings**:
+- **Priority Revision**: Homelab accessories elevated from #5 to #1 Wave 1 priority
+  - r/homelab: 946K subscribers, high purchasing intent ($2K–10K per setup)
+  - 10-inch mini rack ecosystem exploded 2025; near-zero parametric FDM competition on Etsy
+  - PETG/ABS requirement (70–75°C heat deflection) gives mfg-farm genuine technical differentiator
+  - Community-first GTM (free STL + r/homelab, then sell pre-printed): proven precedent, zero upfront inventory risk
+- **Market-Grounded Pricing**:
+  - Homelab: $22–65 per piece; $85–135 for 6-piece kits. Net margin 72–83%
+  - Desk accessories (4-piece): $45–80. Net margin 70–81%
+  - Gaming bundle: $35–55 (or $65–80 with coiled cable). Net margin 65–77%
+- **Tariff Tailwind**: 35% US import duties on Chinese electronics (2026) raise cost floor. Chinese cable management (~$8→$10–12 post-tariff). mfg-farm FDM COGS ($5–8) now price-competitive.
+- **TAM/SAM/SOM**:
+  - Desk accessories TAM: ~$75M/year (North America, Etsy-grade)
+  - Homelab accessories TAM: ~$14–43M/year (market still forming)
+  - Year 1 SOM (mfg-farm): $10K–20K/month Wave 1; $20–40K/month Wave 2 (Dec 2026)
+  - Net margin at 1,500 units/month: 52–58% (after fees, shipping, packaging)
+
+**Next Action**: Awaits mfg-farm ModRun test print confirmation to execute Phase 3 Wave 1 launch sequence (homelab accessories first).
 
 ---
 

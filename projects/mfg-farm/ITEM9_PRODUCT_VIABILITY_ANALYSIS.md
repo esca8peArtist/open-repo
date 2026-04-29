@@ -442,3 +442,58 @@ ModRun Phase 1 uses **FDM 3D printing only** (low capital, fast iteration, excel
 *Item 9 Analysis Complete. Ready for Phase 3 execution upon ModRun test print validation.*  
 **Session**: 588 (2026-04-28 13:10–13:25 UTC)  
 **Status**: Production-ready for user review
+
+---
+
+## Appendix C: Market Research Validation — Item 21 (2026-04-29)
+
+*This section appends findings from the Item 21 comprehensive market research execution. It updates and validates the Item 9 candidate analysis against live market data.*
+
+### Priority Ranking Revision
+
+Item 9 sequenced Wave 1 as: (1) Modular desk accessories, (2) Gaming cable bundle. Item 21 market research revises this ranking based on competitive landscape data:
+
+**Revised Wave 1 Priority:**
+1. **Homelab server accessories** — Previously identified as Candidate 5 (lowest priority in Item 9). Item 21 elevated to #1 based on: near-zero parametric FDM competition on Etsy, 946K r/homelab community with demonstrated purchase intent, PETG/ABS material advantage over incumbent sellers (who use PLA), and the 10-inch mini rack ecosystem's explosive growth in 2025–2026. The greenfield opportunity here is more defensible than the crowded desk accessories category.
+2. **Modular desk accessories** — Remains high priority. WTP confirmed at $35–75 for 4-piece sets. Cable-routing integration (no mass-market competitor offers this) is validated as the key differentiator.
+3. **Gaming cable bundle** — Validated but revised: lead with FDM accessories (cable routing clips + tray), not a standalone coiled cable. CableMod's documented quality complaints ($30–35 cables failing after 2–6 months) create a positioning opening.
+
+### Pricing Recommendations (Market-Grounded)
+
+Item 9 identified approximate retail price ranges. Item 21 replaces these with market-validated targets:
+
+| Candidate | Item 9 Est. Retail | Item 21 Validated Retail | Key Driver |
+|---|---|---|---|
+| Desk accessories (4-piece set) | $45–65 | $65–80 (premium) / $45–55 (standard) | Laser engraving premium confirmed; $75 WTP for custom set |
+| Gaming cable bundle | $35–50 | $55–75 (bundle) / $22–42 (FDM only) | FDM accessories + cable coherence; avoid standalone cable competition |
+| Phone/tablet mount | $20–28 | $22–38 (standard) / $40–60 (creator) | Creator niche WTP confirmed; generic mount WTP ceiling ~$20 |
+| Organizer boxes (4-piece) | $35–50 | $30–50 (set) | Commodity anchoring risk; bundle framing critical |
+| Homelab accessories | $35–120 | $22–65 (standard) / $85–135 (6-piece kit) | Validated by Etsy homelab rack sellers ($20–65 per accessory) |
+
+### TAM/SAM Validation
+
+Item 9 did not include explicit TAM estimates. Item 21 establishes:
+
+- **Desk accessories TAM** (North America, Etsy-grade premium): ~$75M annually
+- **Homelab accessories TAM** (community-based, US): ~$14M–$43M annually (emerging market)
+- **Gaming cable accessories TAM**: ~$20M annually (sub-segment of $13B+ gaming accessories market)
+- **mfg-farm Year 1 SOM goal**: $10K–$20K/month (Wave 1), scaling to $20K–$40K/month (Wave 2 by Dec 2026)
+
+### Competitive Findings That Update Item 9
+
+1. **AliExpress is not the primary competitor for homelab accessories** — that niche isn't served there. The competition is free-STL hobbyists, not Chinese manufacturers.
+2. **Tariff environment is now a structural tailwind** — 35% duties on Chinese electronics accessories (2026) raise AliExpress and Amazon third-party's cost floor. US-made FDM is now within 20–40% of landed Chinese pricing at retail, vs. 50–70% premium in 2023. The "US-made" story is now price-defensible, not just narrative.
+3. **Etsy WTP ceiling is $65 for single premium items, $80–110 for complete sets** — higher than Item 9's original estimates for most categories. Key: must clear $65 with strong photography and differentiation story, or reviews of "expensive for plastic" appear.
+4. **Community-first (free STL → buy pre-printed) has proven traction** in the homelab space specifically. This is the recommended go-to-market for the homelab category, which Item 9 identified as a strategic direction but didn't validate with community data.
+
+### Confirmed High-Priority Actions
+
+Unchanged from Item 9, but with revised sequencing:
+1. Design homelab accessory line (fan mount, cable pass-through, Pi tray) in CadQuery. Print in PETG/ABS.
+2. Post free STLs on Printables.com + r/homelab introduction post. Seed organic traffic before Etsy listing.
+3. Launch desk accessories 4-piece set on Etsy. Lead with cable-routing-integrated designs. Price at $65–75.
+4. Wave 2 (October 2026): Phone mounts + organizer boxes as AOV supplement.
+5. Gaming bundle: do not launch until homelab + desk accessories are established (Etsy reviews needed before entering competitive gaming space).
+
+*Full documentation: phase-3-product-validation-research.md, phase-3-pricing-strategy.md, phase-3-competitive-swot.md*  
+*Item 21 Update — Session 2026-04-29*
