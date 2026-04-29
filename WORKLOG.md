@@ -4,6 +4,28 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 04:25 UTC — off-grid-living — Regional Implementation Guides (Exploration Queue)
+
+**Task**: Create climate-specific regional adaptation guides for 5-6 geographic regions. Main guide published; regional guides are expansion for practical utility.
+
+**Completion**: ✅ ALL 5 REGIONS COMPLETE AND COMMITTED
+- Pacific Northwest (regional-guide-pacific-northwest.md) — FOUND ALREADY COMPLETE
+- Southwest Desert (regional-guide-southwest-desert.md) — FOUND ALREADY COMPLETE  
+- South Atlantic (regional-guide-south-atlantic.md) — FOUND ALREADY COMPLETE
+- **Upper Midwest** (regional-guide-upper-midwest.md) — NEWLY WRITTEN (4,321 words)
+  - Focus: 5-6 month heating season, -25°F to -35°F design temps, short-season varieties, R-40 wall spec, 42-60 inch frost depth, 5-day solar autonomy, tornado shelter
+  - Key findings: woodstove capacity = 4-5 cords/winter, double-stud walls + thick insulation mandatory, well drilling 50-300 ft depth, basement frost requirements enable tornado shelter
+- **Northeast** (regional-guide-northeast.md) — NEWLY WRITTEN (5,493 words)
+  - Focus: Forest management as economic foundation, maple syrup ($3-4K/year on 40 acres), woodlot energy (30 acres = 15 cords/year), micro-hydro priority assessment
+  - Key findings: Ice storms (not blizzards) as primary threat; 1998 Quebec and 2008 NH events as reference; micro-hydro formula (P = Flow × Head × 0.085 × efficiency) best power source where available; tick-borne disease highest in country (Lyme disease incidence constraint)
+  - Cross-references: main guide chapters by number for forest/water/energy sections
+
+**Status**: Exploration Queue item COMPLETE. All 5 regional guides committed to master. Ready for GitHub publication with main guide. Adds ~10K words of regional adaptation content to off-grid-living project, increasing practical utility for regional implementers.
+
+**Next**: off-grid-living is now feature-complete with regional guides. Awaiting user execution of social media distribution (separate task).
+
+---
+
 ## 2026-04-29 03:50 UTC — cybersecurity-hardening — TIER 3 Threat Model and Implementation Guide
 
 **Task**: Research and write TIER 3 threat model and implementation guide for sophisticated adversaries (state intelligence, federal law enforcement with FISA authority, organized crime with technical capability).
