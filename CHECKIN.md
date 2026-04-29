@@ -5,6 +5,19 @@
 
 ---
 
+## Since Last Check-in (Session 634 — 2026-04-29 12:35–ONGOING UTC — Market Monitoring Underway)
+
+### 🎯 Market Session Live (13:30–20:00 UTC)
+
+**Status**: Engine running (PID 1202130). Three monitoring checkpoints scheduled:
+1. **14:00 UTC** — Signal generation + engine status
+2. **16:00 UTC** — Alpaca orders + position updates
+3. **20:15 UTC** — Discord summary + trade count + final analysis
+
+**Expected Outcome**: If ≥3 of 6 success criteria pass (engine cycling, signals generated, API working, no auth errors, Discord posted, no critical errors), validate feature count fix and proceed to May 12 Gate 1 checkpoint.
+
+---
+
 ## Since Last Check-in (Session 633 — 2026-04-29 10:15–12:25 UTC — Resistance-Research Prep Complete + Stockbot Monitoring Setup)
 
 ### ✅ Pre-Market Health Check Complete
