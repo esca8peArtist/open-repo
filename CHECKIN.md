@@ -1,3 +1,52 @@
+## Since Last Check-in (Session 643 — 2026-04-29 16:30 UTC — EXPLORATION QUEUE: CRYPTO FUTURES FEASIBILITY ANALYSIS)
+
+### ✅ Work Completed: Stockbot Crypto Futures Feasibility Analysis
+
+**Session 643 Work** (16:15–16:30 UTC):
+
+**What was accomplished**:
+1. ✅ **Orientation complete**: Read ORCHESTRATOR_STATE, INBOX, PROJECTS, BLOCKED, CHECKIN
+   - All major projects remain blocked on user action
+   - 1 new block identified: stockbot Alpaca buying power insufficient (2026-04-29 14:30 UTC)
+   - Exploration Queue items #22–25 complete (prior sessions); item #26 available
+
+2. ✅ **Crypto Futures Feasibility Research** (Exploration Queue Item #26)
+   - **Deliverables**:
+     1. `crypto-futures-architecture.md` (2,300 words)
+        - Feature pipeline: 40% transfer cleanly, 25% break, 35% require crypto-native (funding rate, liquidation, on-chain)
+        - Profitability: BTC Sharpe 0.4–0.6 full-cycle; funding rate = -$5,500/yr bleed on $100K position
+        - Integration: Bybit + crypto-conditional modules, 66–96 hours (6–10 weeks)
+     2. `asset-class-decision-tree.md` (Go/No-Go gates)
+        - Gate 1: Equity Gate 1 (May 12)
+        - Gate 2: Equity Options pilot (Sharpe ≥1.0)
+        - Gate 3: Crypto Spot pilot (July, Sharpe ≥0.5)
+        - Only if Gate 3 passes invest in perpetuals infrastructure
+        - BTC perp first, cap leverage 3–5x, use separate broker (Binance/Bybit)
+   - **Status**: Both files committed to stockbot submodule
+
+**Current Project Status**:
+- 🔴 **stockbot**: Engine running, signals perfect, orders blocked by Alpaca buying power ($200–700 vs $5,000–10,000). Awaiting funding.
+- 🔴 **resistance-research**: 100% production-ready; awaiting distribution path decision
+- 🔴 **mfg-farm**: Design/planning complete; awaiting test print
+- 🔴 **seedwarden**: Phase 1 ready; awaiting tag corrections + Etsy verification
+
+**Blocked Items**:
+- **stockbot — Alpaca buying power** (NEW 2026-04-29): Account $200–700, need $5,000–10,000 for 11-ticker trading
+- **mfg-farm — Test print required** (unchanged)
+- **resistance-research — Distribution decision** (awaiting user Path A/A+37/B)
+- **seedwarden — Tag corrections + Etsy** (unchanged)
+
+**Next Steps** (all user action):
+1. Fund Alpaca account ($5,000–10,000)
+2. Distribute resistance-research (Path A/A+37/B)
+3. Complete Etsy account + tag corrections
+4. Complete test print
+5. Monitor equity Gate 1 checkpoint (May 12) for crypto roadmap activation
+
+**Session Summary**: Crypto futures research complete. No further unblocked autonomous work available.
+
+---
+
 ## Since Last Check-in (Session 642 — 2026-04-29 14:56 UTC — PARALLEL EXPLORATION QUEUE EXECUTION: DOMAIN UPDATES + PHASE 3 PLANNING)
 
 ### ✅ Work Completed: April-May Domain Updates + Seedwarden Phase 3 Product Analysis

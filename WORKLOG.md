@@ -4,6 +4,53 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 16:30 UTC — Orchestrator Session 643 — Exploration Queue: Stockbot Crypto Futures Feasibility Analysis Complete
+
+**Status**: ✅ Crypto futures asset class feasibility research complete. 2,300-word deep analysis + Go/No-Go decision tree produced. All projects remain blocked on user action; no further autonomous work available without user decisions.
+
+**Session 643 Work** (16:15–16:30 UTC):
+
+1. ✅ **Orientation Complete** (16:15 UTC):
+   - Read ORCHESTRATOR_STATE.md, INBOX.md (empty), PROJECTS.md, BLOCKED.md, CHECKIN.md
+   - Status: 6 major projects blocked on user action; 1 new block (stockbot Alpaca buying power, 2026-04-29)
+   - Exploration Queue status: Items #22–25 complete (from Sessions 641–642)
+   - Available work: Crypto futures feasibility analysis (unblocked Exploration Queue item from Session 635)
+
+2. ✅ **Crypto Futures Feasibility Research Agent Deployed** (16:16 UTC):
+   - Subagent: general-research
+   - Task: 2,000–2,500 word analysis + decision tree covering feature applicability, Greeks/volatility, profitability, integration, Go/No-Go gates
+   - Execution time: 6.6 minutes (399 seconds)
+
+3. ✅ **Agent Results: Crypto Futures Research Complete** (16:22 UTC):
+   - **File 1**: `projects/stockbot/crypto-futures-architecture.md` (2,300 words, 5 sections + sources)
+     - Feature Pipeline: 40% transfer cleanly, 25% break (earnings irrelevant), 35% require crypto-native features (funding rate, liquidation data, on-chain flows)
+     - Greeks/IV Arbitrage: Only relevant for Deribit options; perpetual futures P&L is mark-price delta + funding
+     - Profitability: BTC Sharpe 2.42 (2025), 0.4–0.6 full-cycle; funding rate bleed -$5,500/yr on $100K position before P&L
+     - Integration: `BybitFuturesProvider` + `CryptoFuturesTradingSession` subclasses, separate continuous-session backtester, 4 new guardrails, 66–96 hours (6–10 weeks)
+   - **File 2**: `projects/stockbot/asset-class-decision-tree.md` (Go/No-Go decision tree)
+     - Recommendation: Gate behind Equity Gate 1 (May 12), Equity Options pilot (Gate 2), Crypto Spot pilot (July 2026)
+     - Only if Spot pilot Sharpe ≥0.5 does 6–10 week perpetuals infra investment make sense
+     - Asset selection: BTC perp first, ETH second; never altcoins; leverage cap 3–5x at daily-bar resolution
+     - Regulatory note: Alpaca crypto API is spot-only; futures require separate broker (Binance, Bybit) = counterparty risk
+   - **Commits**: Both files committed to stockbot submodule (message: "chore(stockbot): Exploration Queue — crypto futures feasibility analysis (Session 643)")
+
+4. **Exploration Queue Status Update**:
+   - ✅ Item #26: Crypto futures feasibility analysis — COMPLETE (Session 643)
+   - All other unblocked items are dependent on external user decisions (resistance-research distribution, mfg-farm test print, etc.)
+
+**Blocked Items (Updated)**:
+- 🔴 **stockbot — Alpaca account insufficient buying power** (2026-04-29 NEW)
+  - Engine running, signals perfect, orders failing with code 40310000
+  - Account: $200–700 available; Required: $5,000–10,000 for 11-ticker simultaneous trading
+  - Resolution: User deposits funds OR reconfigures account
+- 🔴 **mfg-farm — Test print required** (2026-04-12, unchanged)
+- 🔴 **resistance-research — Distribution path decision** (awaiting user Path A / A+Domain37 / B)
+- 🔴 **seedwarden — Tag corrections + Etsy account** (awaiting user action)
+
+**Session Summary**: Crypto futures research complete. All major projects now blocked on user action. No further unblocked autonomous work available. Awaiting user: (1) Alpaca funding, (2) Distribution decision, (3) Etsy setup, (4) Test print.
+
+---
+
 ## 2026-04-29 14:56 UTC — Orchestrator Session 642 — Parallel Domain Updates + Phase 3 Planning Complete
 
 **Status**: ✅ April-May 2026 domain updates (2 new developments added). Phase 3 physical product evaluation complete. Both exploration queue items delivered.
