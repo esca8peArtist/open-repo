@@ -5,6 +5,70 @@
 
 ---
 
+## Since Last Check-in (Session 624 — 2026-04-29 04:30–05:45 UTC)
+
+### ✅ Exploration Queue Setup & Gate 2 HMM Validation Framework — COMPLETE
+
+**Status**: All projects blocked on user decisions. Added 3 new exploration queue items; completed high-value Stockbot research.
+
+**Exploration Queue Items Added**:
+1. ✅ **Stockbot: Gate 2 HMM Regime Scaling Validation Framework** — COMPLETE THIS SESSION
+   - Deliverable: `projects/stockbot/docs/gate-2-hmm-validation-framework.md` (465 lines, comprehensive protocol)
+   - Scope: Backtest protocol (walk-forward across regimes), live monitoring metrics (regime accuracy ≥95%, performance by regime, position sizing distribution), activation decision rules (halt conditions, confidence scoring), May 12 checkpoint decision tree
+   - Key value: Provides rigorous validation methodology for HMM position scaling; integrates with paper_trading_monitor.py; directly informs Gate 2 readiness verdict
+   - Next step: Execute backtest validation (Priority 1: next 3-5 days)
+   - **Status**: Ready for immediate backtest execution
+
+2. Cybersecurity-hardening Phase 2: Supply-Chain and Hardware Security — QUEUED (3-5 day priority)
+   - Scope: Secure hardware procurement research, verified parts sourcing, hardware attestation, supply-chain threat modeling
+   - Feeds into: Existing device-hardening-guide.md with upstream security focus
+
+3. Resistance-research Phase 2: Electoral Interference Detection Framework — QUEUED (secondary priority)
+   - Scope: International forensics research (Hungary, Poland, Taiwan, Serbia), detection methodologies, institutional coordination
+   - Feeds into: Domain 37 expansion and movement coordination infrastructure
+
+### ✅ Stockbot Engine Health — Verified RUNNING
+
+**Status**: Engine healthy and running since 03:31 UTC (approximately 110 minutes ago)
+- Process: `.venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper` (PID 1202130)
+- CPU usage: 0.2%, Memory: 8.0% (stable, nominal)
+- Sessions: All 11 multi-ticker paper trading sessions initialized and running
+- Log file: `logs/trading_20260429.log` (2.1 MB, active writes)
+- Status: Market-aware, sleeping until 13:30 UTC market open today
+- Errors: NONE (no 401 auth failures, no regime detection issues, clean shutdown of previous session)
+- **Verdict**: ✅ HEALTHY — ready for market open at 13:30 UTC (9.5 hours from now)
+
+### Project Status Summary
+
+| Project | Status | Blocker | Next Action |
+|---------|--------|---------|-------------|
+| stockbot | ✅ ACTIVE | None — engine running | Monitor at market open 13:30 UTC; begin multi-ticker paper trading |
+| resistance-research | Awaiting decision | User path selection (A/A+37/B) | User picks distribution strategy; Phase 1 execution begins immediately |
+| cybersecurity-hardening | ✅ ACTIVE | User Tier 1 approval | User reviews templates; Tier 1 outreach begins (4-week lead time to Tier 2) |
+| seedwarden | Awaiting decision | User tag corrections + Etsy verification | User completes 3 tag corrections; Phase 1 launches immediately |
+| mfg-farm | Awaiting action | Test print required | User runs CadQuery scripts, prints, tunes tolerances; supplier negotiation follows |
+| open-repo | ✅ ACTIVE | PR #1 merge | Phase 5 architecture complete; ready for implementation post-merge |
+| off-grid-living | ✅ COMPLETE | User social distribution | User executes marketing plan (guide now published on GitHub) |
+| workout | ✅ COMPLETE | User review/selection | Comprehensive plan ready; user selects preferred protocol |
+| resistance-research | — | — | — |
+
+### Needs Your Input
+
+**CRITICAL — Before May 12 Checkpoint**:
+- **Resistance-research distribution path**: Pick Path A (immediate distribution), Path A+Domain37 Hybrid (recommended), or Path B (continue updates) → unlocks Phase 1 execution
+
+**Within 1–2 weeks**:
+- **Cybersecurity Tier 1 approval**: Review TIER1_MESSAGING_TEMPLATES.md; approve digital rights organization outreach → Tier 1 launch
+- **Seedwarden Phase 1 launch**: Complete 3 tag corrections + Etsy account verification → all 21 Phase 1 products live immediately
+- **mfg-farm test print**: Run CadQuery designs, print, verify tolerances → supplier negotiation begins
+
+**Stockbot market monitoring** (today, 13:30 UTC):
+- Verify multi-ticker sessions begin trading correctly
+- Confirm no Alpaca connectivity issues
+- Check first trade executions and signal quality
+
+---
+
 ## Since Last Check-in (Session 623 — 2026-04-29 03:45–05:15 UTC)
 
 ### ✅ Exploration Queue Progress — Two Items COMPLETE
