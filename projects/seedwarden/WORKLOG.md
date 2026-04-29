@@ -4,6 +4,48 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 645 — 2026-04-29 — Phase 3 Market Research + Physical Product Evaluation
+
+**Task**: Conduct Etsy market research for Phase 3 product categories; evaluate physical product expansion (seed packets, preservation containers, seed bundles); verify existing Phase 3 roadmap completeness; fill identified gap in physical product documentation.
+
+**Finding**: The Phase 3 product package (roadmap, specifications JSON, decision framework, cohort messaging, index) was already production-ready from Session 644. The single confirmed gap was the absence of a documented physical product evaluation — the roadmap assumed digital-only without recording the analysis.
+
+**Market research conducted**:
+- Medicinal herb guides on Etsy: Active market, competition at $8–$25 range, strong favorites signal (Medicinal Herbs Reference Chart by HolisticLifestyle101 at 306 favorites; herbal growing ebook at multiple Etsy storefronts). Seedwarden's $14 Medicinal Herb Guide is competitively priced and differentiated by cultivation focus (not remedies/medical claims).
+- Foraging and wild edibles guides: Market exists, one foraging guide showing 4,041 favorites; 97-page guides selling competitively. Seedwarden's visual-first 18-species format addresses a gap (compact, field-reference-style) vs. text-heavy competitors.
+- Canning/preservation digital guides: Market active; pressure canning guides, canning journals, and beginner guides all present. Seedwarden's preservation derivatives are correctly differentiated as method-specific guides (beginner canning, fermentation, dehydrating, meat canning) versus the chart/journal format competitors.
+- Seed library organization: Printable seed packet templates and seed organization products active on Etsy; Seedwarden's system (10 templates, 48 pages) is more comprehensive than typical listings.
+- Digital bundle strategy: Bundles priced at 20–30% below individual total perform best; $6+ absolute savings is the "feels real" threshold; bundles of 4–7 items outperform bundles of 1–3 in digital graphics (applicable to Seedwarden's 7-guide gift set at $62).
+- Digital vs. physical margin comparison: Digital products: 85–95% gross margin. Physical products: 40–60% gross margin before fulfillment; 5–15% net after overhead. Fulfillment can consume 50% of revenue in seed supply models.
+- Physical seed packets (SeedGeeks benchmark): MOQ-compatible wholesale at $0.75–$1.50/packet; retail $2.50–$4.50; 7,514 favorites on flagship product. However, net margin 5–15% — structurally incompatible with Seedwarden's 70%+ margin target.
+- Physical seed bundles (curated gift): COGS $9.60–$14.85, retail $25–$35, net margin 27–46% — borderline and operationally complex.
+- Physical preservation containers: Commodity market, Amazon-dominated, no brand differentiation available.
+
+**Gap filled**: Added Appendix B ("Physical Product Evaluation") to `phase-3-product-expansion-roadmap.md`. Documents the evaluated-and-rejected decision for 4 physical product categories (seed packets, preservation containers, curated seed bundles, physical seed library systems) with COGS data, margin analysis, and Phase 4 gate conditions where applicable. Approximately 750 words added.
+
+**Files modified**:
+- `projects/seedwarden/phase-3-product-expansion-roadmap.md` — Appendix B added (~750 words)
+
+**Key conclusions**:
+1. Phase 3 digital-only decision is validated by market data: physical products offer 5–46% net margins vs. 84–88% on digital. No physical category passes Seedwarden's 70%+ gross margin threshold within Phase 3 constraints.
+2. Physical seed bundles are a legitimate Phase 4 opportunity — gated on gift cohort performance, $2K/mo revenue, and supplier identification.
+3. All 12 Phase 3 digital product categories are competitively positioned. Medicinal herb, foraging, and preservation guides all have active Etsy markets with competitors at or below Seedwarden's planned price points and content depth.
+4. Bundle pricing strategy (20–30% discount, $6+ absolute savings, 4–7 items) is consistent with market best practices.
+
+---
+
+## Session 643 — 2026-04-29 — Financial Sustainability Model
+
+**Task**: Build complete financial model covering revenue forecasts, COGS, break-even analysis (three scenarios), cash flow visualization, and Phase 2/3 impact modeling. Write 24-month CSV projection template pre-filled with Scenario B baseline.
+
+**Files produced**:
+- `projects/seedwarden/financial-sustainability-model.md` (~2,700 words): Full five-part financial model. Part 1: cohort-level revenue forecasting with seasonality and traffic ramp assumptions. Part 2: Etsy fee breakdown (6.5% transaction, 3%+$0.25 payment processing, $0.20 listing), COGS = $0 marginal, authoring cost amortization at $504/month full-cost basis. Part 3: Three scenarios — Scenario A (0.75% conversion, cash positive Month 1, full-cost break-even never within 24 months), Scenario B (1.5% conversion, full-cost break-even Month 16-18, Year 1 $2,654 gross), Scenario C (2.5% conversion with Phase 2/3, full-cost break-even Month 4-5, Year 1 $7,500 gross). Part 4: Month-by-month Scenario B cash flow table with all fee line items; decision-gate success thresholds for Months 1/2/3/6/12. Part 5: Phase 2 photography ROI ($120 investment, <2-month effective payback at compound traffic), Phase 3 expansion ($750 investment, 2.6-month payback, $3,240-3,780/year incremental revenue). Includes decision tree linking Phase 1 data to Phase 3 options A/B/C/D. Sourced from eRank, Gold City Ventures, Etsy legal fee page, Printful, Thunderbit, LinkMyBooks, Gelato, Outfy, and all relevant internal Seedwarden documents.
+- `projects/seedwarden/cash-flow-projection-template.csv` (24 rows): Jan 2026-Apr 2028. Columns: Month, Period, Phase, Visits (forecast/actual), Conversion rate (forecast/actual), Sales count (forecast/actual), Product mix notes, Gross revenue, Etsy transaction fee, Payment processing, Net revenue (forecast/actual), Fixed COGS, Operating costs, Net profit (forecast/actual), Cumulative P/L (forecast/actual), Scenario notes. Pre-filled Scenario B forecasts through Month 24. Actual columns empty for user data entry starting May 2026. Month 3 includes Phase 2 photography cost ($120). Seasonal patterns annotated in Product_Mix_Notes column.
+
+**Key findings**: Cash break-even is immediate in all scenarios (digital product zero marginal cost). Full-cost break-even at Scenario B is Month 16-18. Phase 2 photography is the highest-ROI available investment. Phase 3 trigger window is Month 3-6 data review per existing decision framework.
+
+---
+
 ## Session 638+ — 2026-04-29 — Phase 1+ Email List Building Playbook
 
 **Task**: Write production-ready email list building playbook for Phase 1+ scaling infrastructure, covering all seven specified sections.
