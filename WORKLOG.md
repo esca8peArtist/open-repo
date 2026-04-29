@@ -4,6 +4,30 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 23:15 UTC — Orchestrator Session 658 — Supplier Economics Research + Market Readiness
+
+**Status**: ✅ COMPLETE — mfg-farm supplier economics research + stockbot April 30 readiness verification.
+
+**Work Completed**:
+
+1. **Stockbot April 30 Market Readiness** ✅
+   - Engine verification: Process running (PID 1241288, 10+ hrs uptime)
+   - Log activity: Clean signals and data fetches through market-closed period
+   - Assessment: Ready for April 30 13:15 UTC market open
+
+2. **mfg-farm: Supplier Economics Research Package** ✅
+   - **Status**: COMPLETE — two deliverables written for pre-negotiation supplier phase.
+
+**Files written**:
+- `/home/awank/dev/SuperClaude_Framework/projects/mfg-farm/supplier-economics.md` (~2,200 words) — structured research document covering service bureau economics, filament pricing tiers (1/5/10/25/50kg breakpoints), safety stock calculations applied to ModRun parameters, cost sensitivity analysis, negotiation leverage map, and supplier diversification strategy including tariff sensitivity thresholds.
+- `/home/awank/dev/SuperClaude_Framework/projects/mfg-farm/material-sourcing-scorecard.csv` — 16-row comparison table covering all filament, packaging, shipping, 3PL, and emergency bureau suppliers with unit cost, bulk breakpoints, lead times, reliability scores, MOQ, negotiation potential, tariff risk, and domestic status.
+
+**Key findings**:
+1. In-house FDM production delivers $0.79–$1.03/clip vs. $10–$30/clip from service bureaus — bureau model is emergency-only, not a production path
+2. Anycubic 50kg pallet at $10.49/kg (no negotiation needed, listed price) is the single highest-impact immediate action — saves $0.34/unit vs. $12/kg baseline, or $510/month at 500 bundles/month
+3. Tariff escalation tripwire: Chinese filament is 100–150% more expensive than US-domestic right now; if Chinese tariffs increase another 20+ points, domestic push (Push Plastic, IC3D) narrows to 40–60% premium — worth pre-qualifying both now
+4. AOV lever outweighs all supplier optimization: single clip at 38% margin vs. 3-clip bundle at 67% margin, driven entirely by fixed $5 shipping amortization — bundle strategy is the primary margin mechanism
+
 ## 2026-04-29 22:35–22:45 UTC — Orchestrator Session 657 — Engine Status Verification + Database Integrity Check
 
 **Status**: ✅ COMPLETE — Engine running stably; April 29 trading confirmed successful; database integrity verified.

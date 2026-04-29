@@ -1,35 +1,48 @@
-## Since Last Check-in (Session 657 — 2026-04-29 22:35–22:45 UTC — ENGINE STABILITY VERIFICATION)
+## Since Last Check-in (Session 658 — 2026-04-29 23:15 UTC — SUPPLIER ECONOMICS RESEARCH + MARKET READINESS)
 
-### ✅ Work Completed: Engine Health and Database Integrity Confirmed
+### ✅ Work Completed: mfg-farm Supplier Research + stockbot April 30 Readiness Verified
 
-**Session 657 Summary**: Verified engine stability and database integrity post-market close. All systems operating normally; 49 April 29 trades confirmed in database with fill prices populated. Engine continues running stably ahead of April 30 market session. No blockers or issues identified.
+**Session 658 Summary**: Completed comprehensive mfg-farm supplier economics research; verified stockbot engine ready for April 30 market open. Two actionable deliverables written; no blockers identified.
 
 **What was accomplished**:
 
-1. ✅ **Engine Process Health**
-   - Engine running stably (PID 1241288, 10+ hours uptime)
-   - Log shows continuous operation with proper market-closed skipping logic
-   - No crash indicators or error cascades detected
+1. ✅ **stockbot Market Readiness Verified for April 30**
+   - Engine process: Running stably (PID 1241288, 10+ hours uptime, 11% CPU, 8.5% memory)
+   - Log activity: Clean signal generation and data fetches through market-closed period at 22:42 UTC
+   - Assessment: System nominal, ready for April 30 13:15 UTC market open
+   - No errors, no auth issues during verification window
 
-2. ✅ **Database Integrity**
-   - Queried stockbot.db: 49 trades confirmed for April 29
-   - All orders: BUY (49) / SELL (0) — correct for Day 1 of trading cycle
-   - Fill prices: 100% populated (no NULL values)
-   - Sample fills: AAPL (36 @ $267.91), WMT (78 @ $126.36), PG (67 @ $148.37), SHW (30 @ $319.15), MRK (90 @ $108.97)
+2. ✅ **mfg-farm Supplier Economics Research Package Complete**
+   - **File 1**: `supplier-economics.md` (~2,200 words, structured research)
+     - Service bureau economics analysis: In-house FDM wins 10–25x at all ModRun volumes
+     - Filament pricing breakpoints (1/5/10/25/50kg) with per-supplier costs
+     - Safety stock and order cycle analysis applied to actual ModRun parameters (75g/unit, 2–7 day lead)
+     - Cost sensitivity analysis: shipping (59% of COGS) > filament (32%) — AOV bundling is the primary margin lever
+     - Tariff sensitivity mapping: Chinese goods at 20+ point escalation trigger
+   - **File 2**: `material-sourcing-scorecard.csv` (16-row comparison table)
+     - All filament suppliers: eSUN, Anycubic, SUNLU, Overture, Polymaker, Push Plastic, IC3D
+     - All auxiliary suppliers: packaging, shipping (Pirate Ship), 3PL, emergency bureaus
+     - Metrics per supplier: unit cost, bulk breakpoints, lead times, reliability scores, MOQ, negotiation potential, tariff risk, domestic status
+
+3. ✅ **Key Findings for Post-Test-Print Phase**
+   - **Tier 1 Action (Month 1)**: Anycubic 50kg pallet at $10.49/kg (no negotiation needed, listed price) = $0.34/unit savings vs. retail
+   - **Bundle Strategy**: Single-clip order 38% margin vs. 3-clip bundle 67% margin — bundling drives 29pt margin improvement with zero supplier change
+   - **Tariff Hedge**: 4-tier supplier strategy (eSUN primary, Anycubic secondary, Polymaker quality tier, Push Plastic/IC3D domestic hedge). Pre-qualify domestic suppliers NOW via bulk-pricing applications
+   - **Safety Stock**: Reorder trigger ~38kg on hand at 30 units/day production; ~32kg safety stock (four 10kg Amazon cases)
 
 **Assessment**:
-- ✅ Engine operating nominally post-market close
-- ✅ April 29 market session results preserved correctly in database
-- ✅ Multi-ticker portfolio (20+ tickers) executing as designed
-- ✅ Gate 1 pace (49 trades in ~3 days = ~150/month annualized) significantly exceeds 30-trade threshold
-- ✅ Ready for April 30 market session
+- ✅ mfg-farm supplier research complete and pre-negotiation ready
+- ✅ stockbot engine stable and ready for market open
+- ✅ No blockers identified
+- ✅ Both projects advancing toward next phase
 
-**Next Steps**:
-- Monitor April 30 13:15–20:00 UTC market session for continued stability
-- Collect daily metrics toward May 12 Gate 1 checkpoint
-- Continue paper trading through checkpoint date
+**Needs your input**: None at this time. Ready for April 30 market monitoring and post-test-print supplier execution.
 
-**Needs your input**: None at this time. Engine is running and paper trading is proceeding normally.
+---
+
+## Session 657 — 2026-04-29 22:35–22:45 UTC — Engine Stability Verification (HISTORY)
+
+✅ Verified engine stability and database integrity post-market close. All systems nominal; 49 April 29 trades confirmed. Ready for April 30 market session. [Full details in WORKLOG.md]
 
 ---
 
