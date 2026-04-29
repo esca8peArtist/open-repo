@@ -349,3 +349,65 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 **Risk mitigation**: Graceful degradation (24h staleness cache), Federation Security Response Protocol, public health monitoring dashboard
 
 **Status**: Production-ready for Phase 6 architectural planning (post-Phase 5 merge); fully grounded in Phase 5 CQRS foundation
+
+---
+
+## New Items (Session 633 — Queue Replenishment)
+
+### Item 22: resistance-research Phase 2 Domain Selection Framework (Conditional — Post-Distribution-Launch)
+**Status**: QUEUED — Ready to execute after Phase 1 distribution results assessed (~4 weeks post-distribution launch)
+**Trigger**: Phase 1 distribution live for 2+ weeks + initial contact response metrics available
+**Scope**: Decision framework for prioritizing Domains 38-40 research; phase sequencing optimization based on distribution effectiveness
+**Deliverables**: 
+- `phase-2-domain-selection-framework.md` (3,000 words) — Scoring matrix for Domain 38-40 candidates (urgency, coalition strength, research complexity, policy window, impact)
+- `domain-phasing-roadmap.md` (2,000 words) — Recommended sequence (staggered vs. parallel), resource allocation per domain, timeline with decision gates
+- `impact-attribution-tracking.md` (1,500 words) — Metrics to measure Phase 1 effectiveness (contact conversion, institutional adoption, media mentions, legislative signals) and their impact on Phase 2 prioritization
+**Owner**: resistance-research agent (autonomous execution, estimated 3-4 hours research)
+**Prerequisites**: Phase 1 distribution live and generating measurable contact responses
+**Key areas**: Comparative urgency assessment (FISA 702 vs. Voting Rights vs. Surveillance), coalition building efficiency, research ROI per domain
+
+---
+
+### Item 23: stockbot Options Pre-Architecture Research (Conditional — Post-Gate-1-Validation)
+**Status**: QUEUED — Ready to execute after Gate 1 paper trading threshold met
+**Trigger**: Paper trading validates 30+ trades/month (Gate 1 pass) → options strategy research begins
+**Scope**: Options trading architecture preliminary research; covered calls, spreads, option-adjusted return models, integration with equity ensemble signals
+**Deliverables**: 
+- `options-strategy-research.md` (4,000 words) — Covered calls mechanics, spread strategies (debit/credit), Greeks management, liquidity constraints per underlying
+- `covered-call-overlay-architecture.md` (2,500 words) — Integration pattern with equity positions (notation, signal coordination, Greeks aggregation)
+- `regulatory-compliance-options.md` (2,000 words) — SEC 10b5-1 plan rules, FINRA margin requirements, wash sale rules, expiration/assignment mechanics
+- `performance-attribution-framework.md` (1,500 words) — Return decomposition (equity return vs. premium capture), Sharpe/sortino impact, position management efficiency metrics
+**Owner**: stockbot agent (autonomous execution, estimated 4-5 hours research)
+**Prerequisites**: Gate 1 validation (30+ trades/month demonstrated over 30-day rolling window)
+**Key areas**: Capital efficiency, volatility surface trading, portfolio Greeks management, tax optimization
+
+---
+
+### Item 24: mfg-farm Wave 2-3 Product Expansion Research (Conditional — Post-Wave-1-Validation)
+**Status**: QUEUED — Ready to execute after Wave 1 (homelab accessories) launches and generates 4+ weeks of sales data
+**Trigger**: Wave 1 live on Etsy for 4+ weeks, sales velocity established
+**Scope**: Market research for Wave 2-3 product expansion (adjacent categories, new customer segments, manufacturing method expansion)
+**Deliverables**: 
+- `wave-2-product-candidates.md` (3,500 words) — Market research on 5-8 product candidates in adjacency categories (cable management extension, mounting systems, storage solutions, boutique components)
+- `manufacturing-expansion-analysis.md` (2,500 words) — Capacity planning for laser engraving + resin printing rollout, supplier coordination, multi-factory scheduling
+- `segment-expansion-roadmap.md` (2,000 words) — B2B opportunities (corporate gifts, corporate ergonomic solutions, educational institutions), pricing strategy variation per segment
+- `wave-2-financial-projections.md` (1,500 words) — Margin modeling with new manufacturing methods, capital requirements, breakeven timelines, competitive positioning
+**Owner**: mfg-farm agent (autonomous execution, estimated 4-5 hours research)
+**Prerequisites**: Wave 1 (homelab) executing for 4+ weeks with sales data available
+**Key areas**: Segment TAM expansion, manufacturing method economics (laser vs. resin), supply chain de-risking, pricing power per customer type
+
+---
+
+### Item 25: seedwarden Track A Contingency & Concurrent Launch Strategy (Conditional — Mid-Phase-1)
+**Status**: QUEUED — Ready to execute if Phase 1 tag corrections take >2 weeks OR user approves concurrent Track B launch
+**Trigger**: (1) Tag corrections not completed by Day 14 of Phase 1, OR (2) User explicitly approves concurrent execution
+**Scope**: Contingency planning for Track A delays; concurrent Track B (mockup/social) execution strategy to maintain momentum
+**Deliverables**: 
+- `phase-1-contingency-decision-tree.md` (2,000 words) — Decision logic for Day 14 checkpoint (if tags incomplete: delay upload? launch without tags? launch Track B separately?)
+- `concurrent-track-execution-plan.md` (2,500 words) — Resource allocation for simultaneous Phase 1 (email/Etsy) + Phase 2 (mockup/social), timeline interlock, risk mitigation
+- `track-b-independent-launch-roadmap.md` (2,000 words) — Phase 2 can proceed independently (mockups ready, social calendar ready, pin templates ready); launch conditions, success metrics, audience overlap strategy
+- `combined-execution-metrics.md` (1,500 words) — Measurement framework for tracking both tracks simultaneously; early indicators of traction; contingency trigger points
+**Owner**: seedwarden agent (autonomous execution, estimated 2-3 hours research)
+**Prerequisites**: Day 14 of Phase 1 execution OR user approval
+**Key areas**: Parallel execution efficiency, resource constraints (time/attention), audience building velocity, revenue path flexibility
+
