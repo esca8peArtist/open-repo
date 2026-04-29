@@ -4,6 +4,48 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 20:15–21:00 UTC — Orchestrator Session 651 — Allocation Bug Fixes & Multi-Ticker Validation
+
+**Status**: ✅ Two critical allocation bugs discovered and fixed. Multi-ticker paper trading now operational with correct budget allocation. Gate 1 monitoring established.
+
+**Work Summary**:
+
+### Stockbot Allocation Bug Fixes (Commits d74afa3, 136bf34)
+
+**Bug 1 — Dict Key Mismatch (Critical)**:
+- `compute_allocated_budgets()` built dict keyed by `session_00`, `session_01`, ... but lookups used hex session IDs (e.g. `33a4afe676cae12a`)
+- Every `TradingSession` got `allocated_budget=None`, falling back to full account equity — recreating the collision problem Session 650 was meant to fix
+- **Fix**: `pre_allocate_budgets()` now accepts optional `session_ids` list; `launch_stacker_sessions.py` extracts actual hex IDs before calling
+
+**Bug 2 — Fractional Share Rejection**:
+- Both BUY and SELL paths checked `if qty < 1` and skipped, even though Alpaca supports fractional down to 0.001
+- High-price tickers (AVGO @ $399) were getting very small fractional quantities, then silently rejected
+- **Fix**: Added `_MIN_FRACTIONAL_QTY = 0.001` constant; replaced both guards to allow fractional execution
+
+**Tests Added**: 10 new `TestBudgetAllocation` tests. All 53 strategy coordinator tests pass.
+
+### Multi-Ticker Monitoring (2026-04-29 19:40 UTC Snapshot)
+
+- **Total trades**: 41 order legs (up from 18)
+- **Round trips completed**: 0 (all entries, no exits yet)
+- **Active tickers**: 19 of 67 configured (AAPL, GOOGL, UNH, INTC, MA, PG, WMT, MRK, DIS, COP, HON, AVGO, CAT, RTX, NEE, LIN, SHW, +2 more)
+- **AVGO status**: NOW TRADING (allocation fix enables high-price tickers)
+- **Gate 1 pace**: 0 round trips from 41 entries. Monitoring for first SELL signal generation.
+
+### HMM Regime Scaling Readiness
+
+- **Status**: 858 unit tests passing, integration points identified
+- **Missing wiring**: 2 lines + 1 constructor parameter (zero-risk wiring with `_hmm_enabled=False` by default)
+- **Recommendation**: Wire price feed hook now; defer activation to post-Gate-1 (May 12)
+
+**Files Changed**:
+- `src/trading/strategy_coordinator.py` — budget allocation dict key fix
+- `src/trading/trading_session.py` — fractional share guards fixed
+- `scripts/launch_stacker_sessions.py` — session ID extraction for budget lookup
+- `tests/unit/test_trading/test_strategy_coordinator.py` — 10 new allocation tests
+
+---
+
 ## 2026-04-29 19:40–20:15 UTC — Orchestrator Session 649 — Live Market Monitoring + Status Review
 
 **Status**: ✅ Verified stockbot live trading status during market hours. Engine running, signals generating continuously, 26 orders executed during market open (sufficient buying power early session). Buying power depleted by 14:30 UTC, halting further order attempts (capital constraint confirmed). Market close monitoring in progress; Discord summary pending at 20:00 UTC.
