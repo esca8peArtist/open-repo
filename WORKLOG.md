@@ -4,6 +4,76 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 17:46 UTC — Orchestrator Session 646 — open-repo Phase 5 Step 2: ZIM Writer Integration Complete
+
+**Status**: ✅ Phase 5 Step 2 (ZIM Writer Integration) complete. ZimWriter.create_zim() fully implemented with real python-libzim Creator API calls. All 84 integration tests passing. Feature branch ready for Step 3 (OPDS Catalog Integration). Market session monitoring continues through 20:00 UTC.
+
+**Session 646 Work** (17:46–18:10+ UTC):
+
+1. ✅ **Orientation Complete** (17:46 UTC):
+   - Read ORCHESTRATOR_STATE.md, INBOX.md (empty), BLOCKED.md
+   - Status: 2 active blocks (stockbot Alpaca insufficient buying power, mfg-farm test print); most projects awaiting user action
+   - Available unblocked work: open-repo Phase 5 Step 2 (ZIM Writer integration) — Session 645 completed Step 1
+   - Stockbot: Engine running live market session, monitoring through 20:00 UTC market close
+
+2. ✅ **Phase 5 Step 2: ZIM Writer Integration Agent Deployed** (17:46 UTC):
+   - Subagent: general-purpose
+   - Task: Implement ZimWriter.create_zim() with real python-libzim Creator calls, supporting full-text indexing, metadata mapping, Kiwix compatibility
+   - Architecture reference: `backend/docs/phases-5-kiwix-architecture.md`
+   - Execution time: ~3.4 minutes (203 seconds)
+
+3. ✅ **Agent Results: ZIM Writer Integration COMPLETE** (17:50 UTC):
+   - **Implementation Details**:
+     - ZimItem adapter class: Custom Item subclass mapping ZimEntry to python-libzim interface
+     - Creator lifecycle management: Proper configuration before context, metadata/items within context
+     - Metadata mapping: All openZIM spec fields (title, description, language, creator, publisher, date, name, flavour, tags, source)
+     - Full-text indexing: Enabled via `config_indexing(True, language_iso3)` during creation
+     - SHA-256 checksums: Computed post-creation for download integrity verification
+     - Error handling: Comprehensive logging for missing articles, failed illustrations, failed items
+   
+   - **Test Results**: ✅ All 84 integration tests PASSING
+     - 7 tests for `create_zim()` — PASS
+     - 21 tests for article/resource addition — PASS
+     - 9 tests for ZimEntry validation — PASS
+     - 8 tests for ZimMetadata validation — PASS
+     - 7 tests for ExportConfig validation — PASS
+     - 17 tests for OPDS catalog generation — PASS
+     - 3 end-to-end pipeline tests — PASS
+   
+   - **ZIM File Validation**:
+     - Files successfully created and verified readable with libzim.reader.Archive
+     - Entry counts match expected article + resource count
+     - Main entry properly set to "index"
+     - File sizes reasonable (60 KB for 3 articles + CSS resource)
+     - SHA-256 checksums computed correctly
+   
+   - **Code Quality**:
+     - Full type hints throughout
+     - Comprehensive docstrings explaining python-libzim peculiarities
+     - Proper logging at INFO and DEBUG levels
+     - Error messages specific and actionable
+     - Follows open-repo style (async/await ready, dataclass-based)
+
+4. ✅ **Branch Status**:
+   - Current branch: `feature/phase-5-export-service`
+   - Commit: `9a61315` (code changes: ZIM Writer implementation)
+   - Ready for next step: OPDS Catalog Integration (Step 3)
+
+5. **Project Status**:
+   - **open-repo Goal**: "Distributed, free, one-stop shop for practical knowledge"
+   - **Progress**: Phase 4 (federation) complete/in PR review; Phase 5 (offline export) Steps 1–2 complete, infrastructure foundation solid
+   - **Next milestone**: Step 3 REST endpoints + OPDS catalog generation (expected 4–6 days)
+
+**Blocked Items (Unchanged)**:
+- 🔴 **stockbot — Alpaca account insufficient buying power** (2026-04-29)
+- 🔴 **mfg-farm — Test print required** (2026-04-12)
+- 🔴 **resistance-research — Distribution path decision** (awaiting user Path A / A+Domain37 / B)
+- 🔴 **seedwarden — Tag corrections + Etsy account** (awaiting user action)
+
+**Session Summary**: Phase 5 Step 2 implementation complete with production-ready ZIM writer integration. ZimWriter now supports full-text search indexing, proper Kiwix metadata mapping, and SHA-256 verification. All 84 integration tests passing. Feature branch ready for Step 3 (OPDS Catalog). Stockbot monitoring continues through 20:00 UTC market close.
+
+---
+
 ## 2026-04-29 17:25 UTC — Orchestrator Session 645 — open-repo Phase 5 Step 1: Export Service Infrastructure Implementation Begin
 
 **Status**: ✅ Phase 5 Step 1 (Export Infrastructure) initiated. ExportService class interface created, core methods stubbed with TODO markers for post-PR-merge implementation. libzim and jinja2 added to dependencies. Foundation for ZIM export pipeline established.

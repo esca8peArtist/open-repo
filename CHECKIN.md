@@ -1,3 +1,53 @@
+## Since Last Check-in (Session 646 — 2026-04-29 17:46–20:00 UTC — PARALLEL: OPEN-REPO PHASE 5 STEP 2 + STOCKBOT MARKET MONITORING)
+
+### ✅ Work Completed: open-repo Phase 5 Step 2 — ZIM Writer Integration (Parallel with Market Monitoring)
+
+**Session 646 Work** (17:46–18:10+ UTC, parallel with Session 645 market monitoring):
+
+**What was accomplished**:
+1. ✅ **Orientation complete**: Reviewed ORCHESTRATOR_STATE, INBOX, BLOCKED
+   - All major projects remain blocked on user action (distribution decisions, Alpaca funding, test print)
+   - open-repo Phase 5 Step 1 completed in Session 645; Step 2 available as unblocked work
+   - Stockbot engine running live market session (monitoring continues through 20:00 UTC)
+
+2. ✅ **Phase 5 Step 2: ZIM Writer Integration Complete** (unblocked project work)
+   - **Deliverable**: ZimWriter.create_zim() fully implemented with real python-libzim Creator API calls
+   - **Key Features**: 
+     - ZimItem adapter class mapping ZimEntry to python-libzim interface
+     - Creator lifecycle management with proper configuration/context patterns
+     - Full openZIM spec metadata support (title, description, language, creator, publisher, date, name, flavour, tags, source)
+     - Full-text search indexing via config_indexing(True, language_iso3)
+     - SHA-256 checksums for download integrity verification
+     - Comprehensive error handling and logging
+   - **Testing**: ✅ All 84 integration tests PASSING
+   - **Code Quality**: Full type hints, comprehensive docstrings, follows open-repo style (async/await ready)
+   - **Branch**: feature/phase-5-export-service, Commit 9a61315
+   - **Status**: Ready for Phase 5 Step 3 (OPDS Catalog Integration)
+
+**Current Project Status**:
+- 🟢 **open-repo**: Phase 5 Step 2 COMPLETE, Step 3 ready (OPDS Catalog Integration, expected 4–6 days)
+- 🟡 **stockbot**: Engine LIVE during market session (monitoring through 20:00 UTC). Alpaca buying power constraint ongoing.
+- 🔴 **resistance-research**: 100% production-ready; awaiting distribution path decision
+- 🔴 **mfg-farm**: Awaiting test print
+- 🔴 **seedwarden**: Awaiting tag corrections + Etsy verification
+- 🟢 **cybersecurity-hardening**: Phase 1 execution plan ready; awaiting approval
+
+**Blocked Items** (unchanged):
+- **stockbot — Alpaca buying power insufficient** (2026-04-29, confirmed)
+- **mfg-farm — Test print required** (2026-04-12)
+- **resistance-research — Distribution path decision** (awaiting Path A/A+37/B)
+- **seedwarden — Tag corrections + Etsy account** (awaiting user action)
+
+**Items needing your input**:
+1. **resistance-research**: Which Path? A (all 25 Tier 1 by May 1) / A+37 (20 by May 1, 5 with Domain 37 on May 15, RECOMMENDED) / B (defer)?
+2. **cybersecurity-hardening**: Approve Tier 1A sequencing and messaging? Ready to begin execution?
+3. **stockbot**: Fund Alpaca account? ($5K–10K minimum for 11-ticker simultaneous trading)
+4. **mfg-farm**: Complete test print to unblock launch prep
+
+**Session Summary**: open-repo Phase 5 Step 2 complete with all 84 tests passing. ZIM export infrastructure now supports full-text search, Kiwix metadata mapping, and download verification. Phase 5 Step 3 (OPDS Catalog, REST endpoints) ready for next session. Stockbot market monitoring continues through 20:00 UTC (parallel Session 645).
+
+---
+
 ## Since Last Check-in (Session 645 — 2026-04-29 16:11–20:00 UTC — STOCKBOT LIVE MARKET SESSION MONITORING)
 
 ### ✅ Work Completed: Stockbot Live Market Session Monitoring + Market Close Checkpoint
