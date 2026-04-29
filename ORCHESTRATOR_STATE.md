@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-29T08:06:38Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-29T10:15:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.5% (48,020 tokens) | All-models 37.2% | Reset in 136h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.5% (48,020 tokens) | All-models 38.2% | Reset in 134h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -65,42 +65,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- Added to PROJECTS.md Exploration Queue
+     - Time decay model aligned to h=10 hold horizon
+     - Portfolio Greeks aggregator (net delta/Vega/theta)
+  4. **Phased Implementation**:
+     - Phase 1 (May-Aug 2026): Infrastructure build concurrent with equity paper trading
+     - Phase 2 (Sep-Nov 2026): Options paper trading post-Gate-2
+     - Phase 3 (Dec 2026+): Live options after 60+ days paper trading
+  5. **Integration Architecture**:
+     - Ensemble signal upstream (no standalone options trades)
+     - Covered calls layer on top of equity positions
+     - StrategyCoordinator extension to track options leg alongside equity leg
+     - Avoids double-entry when covered call written against position
 
-**Primary Work Item — Stockbot Engine Orchestration Script**:
+**Status**: Committed to stockbot submodule (commit 803d9ec). Production-ready for review. Feeds into post-Gate-1 roadmap.
 
-**Deliverable**: `projects/stockbot/scripts/launch_stacker_sessions.py` (360 lines, production-ready)
+### Market Session Preparation (Today 13:30 UTC)
+- **Critical Observation**: April 29 is the first live market session since engine restart on 03:31 UTC
+- **Expected Activity**:
+  - 11-ticker portfolio (AAPL, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA + 1 other)
+  - Each ticker running h=10 LGBM ensemble stacker (180-day backtest baseline: ~0.17-2 trades/month/ticker = ~2-22 trades/month aggregate)
+  - HMM regime scaling enabled (adaptive position sizing based on market regime)
+  - Market-aware sleep logic: when market closes at 20:00 UTC, engine sleeps until 13:15 UTC next day
+- **Monitoring Checklist**:
+  - ✅ Engine running pre-market (verified 08:07 UTC)
+  - ⏳ Engine cycle execution during 13:30-20:00 UTC trading hours
+  - ⏳ Signal generation per ticker (currently all tickers producing 0.0 predicted return?)
+  - ⏳ Order submission to Alpaca paper trading account
+  - ⏳ Fill confirmation + position table updates
+  - ⏳ Discord notification at market close (20:00 UTC) with: signals/ticker, orders placed/filled, total trades, mode, strategy
+- **Key Question**: Will multi-ticker portfolio generate ≥1 trade today? Current rate (0.17-2/month/ticker) suggests ~10-15% chance per single day. 11-ticker portfolio → ~60% ensemble chance of at least 1 signal across all tickers today.
 
-**Scope**: Create wrapper script that reads `active-sessions.json` and launches all configured stacker-based trading sessions in parallel on a shared asyncio event loop.
+**Next Steps**: 
+1. **14:00 UTC** (1h into market): Verify engine is cycling and generating signals
+2. **16:00 UTC** (during market): Check logs for order submissions
+3. **20:15 UTC** (post-market close): Verify Discord summary posted; record round trip count
+4. **May 1 Checkpoint**: After 2-3 market sessions, assess whether signal generation thresholds need adjustment
 
-**Key Features**:
-- Reads `active-sessions.json` configuration (67 sessions loaded in test)
-- Creates TradingSession instances directly with proper stacker strategy parsing ("stacker:<uuid>" format)
-- Launches all sessions in parallel with graceful lifecycle management
-- Supports paper/live mode selection via --mode flag
-- Proper signal handling for clean shutdown (Ctrl+C)
-- Comprehensive logging and error handling
-- CLI args: --config PATH, --mode {paper,live}, --verbose, --dry-run
+**Blocked on**: Nothing. Engine ready. Paper trading validation in progress. No autonomous work pending.
 
-**Architecture Decision**: Direct use of TradingSession class instead of retrofitting run_live_trading.py CLI script. TradingSession already supports stacker strategies natively — script just needed to bridge the gap between JSON configuration and TradingSession instantiation.
-
-**Testing**:
-- Syntax validation: ✓ Passed (`py_compile`)
-- Config loading: ✓ Loaded active-sessions.json (67 sessions)
-- Session creation: ✓ Created 67 TradingSession instances without errors
-- Session startup: ✓ All 67 sessions started and running on event loop
-- Graceful timeout: ✓ Sessions responded to timeout signal as expected
-
-**Usage**:
-```bash
-cd projects/stockbot
-.venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper
-```
-
-**Next Steps**:
-- User verifies Alpaca API credentials are valid and account has sufficient buying power
-- User restarts engine with new orchestration script before next market open (2026-04-29 13:30 UTC)
-- Orchestrator monitors process and verifies no 401 auth errors in logs
-- Once engine running successfully, BLOCKED.md item is resolved
-
-**Status**: Exploration item COMPLETE. Orchestration script production-ready and tested. Stockbot engine startup is now unblocked — remaining blocker is user Alpaca account verification.
+**Status**: SESSION IN PROGRESS

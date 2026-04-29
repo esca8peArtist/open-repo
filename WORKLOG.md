@@ -4,9 +4,47 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-29 09:40–ONGOING UTC — Orchestrator Session 632 — Stockbot Options Research + Market Open Monitoring
+## 2026-04-29 10:15–ONGOING UTC — Orchestrator Session 633 — Stockbot Market Session Monitoring Setup
 
-**Status**: Session in progress. Engine healthy, market opens 13:30 UTC (~4h away). Options strategy research completed.
+**Status**: Session in progress. Market opens 13:30 UTC (~3.25h away). Pre-market health check complete. Monitoring scheduled.
+
+**Summary**:
+
+### Pre-Market Health Check (10:15–10:20 UTC)
+- **Engine status**: ✅ Running PID 1202130, 8% memory (been running since 03:31 UTC = 6.5 hours)
+- **Log health**: ✅ Latest trading_20260429.log (2.2 MB, written 06:30 UTC) shows clean startup sequence, HMM regime scaling initialization, no errors
+- **Database connectivity**: ✅ All 11 tickers loaded, position recovery successful
+- **Pre-market readiness**: ✅ Engine in market-aware sleep mode (quiet since 06:30 UTC when market closed)
+
+### Market Session Monitoring — Scheduled (10:20–10:25 UTC)
+Created three one-time cron jobs for today's monitoring checkpoints:
+
+1. **14:00 UTC — 1h into market** (task ID: eee5dcd2)
+   - Check: engine still running, signal generation per ticker, critical errors
+   
+2. **16:00 UTC — mid-market** (task ID: cf144531)
+   - Check: Alpaca order submissions, position table updates, auth errors
+   
+3. **20:15 UTC — post-market close** (task ID: bc2279d9)
+   - Check: Discord summary posted, total trade count, per-ticker signal stats, P&L calculation
+
+### Context: First Live Session Since Engine Restart
+- **Critical timeline**: April 28 gap (engine missed entire market session). April 29 is first real validation.
+- **Expected activity**: 11-ticker portfolio, each running h=10 LGBM ensemble stacker. Historical rate: 0.17–2 trades/month/ticker = ~2–22/month aggregate
+- **Probability analysis**: 11-ticker portfolio → ~60% chance of ≥1 signal across all tickers today
+- **Key metric**: Will multi-ticker portfolio generate any trades? (Validates feature count fix from Session 560)
+
+**Next steps**: 
+- Monitor at scheduled times (14:00, 16:00, 20:15 UTC)
+- Document findings in WORKLOG.md
+- Compare actual trade generation against baseline expectations
+- Update May 12 checkpoint assessment if needed
+
+---
+
+## 2026-04-29 09:40–10:15 UTC — Orchestrator Session 632 — Stockbot Options Research + Market Open Monitoring
+
+**Status**: Session complete. Engine health verified, market monitoring setup, ready for live session validation.
 
 **Summary**:
 
