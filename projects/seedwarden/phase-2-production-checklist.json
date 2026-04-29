@@ -1,0 +1,621 @@
+{
+  "meta": {
+    "title": "Seedwarden Phase 2 — Lifestyle Photography Production Checklist",
+    "version": "1.0",
+    "prepared": "2026-04-29",
+    "trigger": "Phase 1 conversion data greenlight (Week 2-3 post-Phase-1-launch)",
+    "total_products": 21,
+    "physical_products": 15,
+    "stock_products": 6,
+    "budget_ceiling_usd": 160,
+    "budget_floor_usd": 80,
+    "references": [
+      "LIFESTYLE_PHOTOGRAPHY_STRATEGY.md",
+      "PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md",
+      "PHOTOGRAPHY_ROADMAP.md",
+      "phase-2-execution-timeline.md",
+      "photographer-briefing-package.md"
+    ]
+  },
+
+  "decision_gate": {
+    "label": "Phase 1 to Phase 2 Transition Gate",
+    "timing": "Week 2-3 post-Phase-1-launch",
+    "responsible": "Owner",
+    "items": [
+      {
+        "id": "DG-01",
+        "task": "Record baseline Etsy Stats for all live listings (views, conversion rate, revenue, favorites)",
+        "status": "pending",
+        "tool": "Etsy Stats dashboard",
+        "output": "Baseline data logged in WORKLOG.md or analytics spreadsheet"
+      },
+      {
+        "id": "DG-02",
+        "task": "Identify any listing with 20+ views and under 2% conversion rate — flag as high-priority photo target",
+        "status": "pending",
+        "output": "Priority adjustment list (modifies default Tier ranking if needed)"
+      },
+      {
+        "id": "DG-03",
+        "task": "Verify which Phase 1 listings are live and searchable (blocked listings cannot have slots 4-5 added)",
+        "status": "pending",
+        "note": "Native Plants Regional Guide PDF rebuild may still be pending at this point"
+      },
+      {
+        "id": "DG-04",
+        "task": "Confirm $80-$160 budget available for Phase 2 execution",
+        "status": "pending"
+      },
+      {
+        "id": "DG-05",
+        "task": "Make go/no-go decision: proceed with Phase 2 photography on Week 4 schedule",
+        "status": "pending",
+        "no_go_condition": "If Phase 1 shows near-zero conversions across all listings after 3 weeks, defer Phase 2 and investigate root cause (keyword mismatch, pricing, description gaps) before spending photography budget"
+      }
+    ]
+  },
+
+  "pre_phase2_preparation": {
+    "label": "Pre-Phase-2 Preparation (run in parallel with Phase 1, before decision gate)",
+    "timing": "Week 0-1 (immediately upon strategy approval)",
+    "responsible": "Owner",
+    "items": [
+      {
+        "id": "PREP-01",
+        "task": "Photographer briefing package finalized and ready to send",
+        "status": "complete",
+        "output": "photographer-briefing-package.md"
+      },
+      {
+        "id": "PREP-02",
+        "task": "If contracting external photographer: send briefing package, secure shoot date in their calendar",
+        "status": "pending",
+        "note": "Photographers need 2-3 week lead time — book before Phase 1 data arrives"
+      },
+      {
+        "id": "PREP-03",
+        "task": "Review props list against what is on hand; identify gaps",
+        "status": "pending",
+        "props_needed": [
+          "4-6 seed envelopes (hand-labeled)",
+          "Germination tray or egg carton with starter mix",
+          "2-3 terracotta or ceramic pots (4-6 inch)",
+          "Small garden trowel or hand fork",
+          "3-5 mason jars (at least 1 with visible contents)",
+          "Wooden cutting board (11x15 inch or larger)",
+          "2-4 small potted plants (herbs or small houseplants)",
+          "5-10 dried or fresh chili peppers",
+          "Kitchen cloth or linen napkin",
+          "Wooden spoon or ladle",
+          "Paper calendar or journal",
+          "Plain ceramic mug (no branding)",
+          "Pen or pencil",
+          "Tablet (charged, screen brightness max, all PDF covers staged)"
+        ]
+      },
+      {
+        "id": "PREP-04",
+        "task": "Determine shooting location for each cluster",
+        "status": "pending",
+        "locations_needed": {
+          "cluster_a": "Wooden surface near window (kitchen table, workshop, outdoor potting bench)",
+          "cluster_b": "Window sill, balcony, or indoor plant shelf with urban context visible",
+          "cluster_c": "Kitchen counter or wooden table with mason jar setup"
+        }
+      },
+      {
+        "id": "PREP-05",
+        "task": "Identify a 3-4 hour morning window (9am-2pm) in Week 5 for the physical shoot",
+        "status": "pending"
+      },
+      {
+        "id": "PREP-06",
+        "task": "Begin free stock image search for 6 Cluster D/E products (can start immediately, no approval needed)",
+        "status": "pending",
+        "products": [
+          "Survival Garden Regional Plans",
+          "Hunting, Fishing & Trapping Manual",
+          "Small-Scale Livestock Field Manual",
+          "Meat/Fish Preservation Field Manual",
+          "Native Plants Regional Guide"
+        ],
+        "sources": ["Unsplash", "Pexels", "Pixabay", "Wikimedia Commons (Native Plants)"]
+      }
+    ]
+  },
+
+  "week_4": {
+    "label": "Week 4 — Stock Images for 6 Cluster D/E Products",
+    "timing": "Week 4 post-Phase-1-launch",
+    "responsible": "Owner",
+    "budget_allocated_usd": 60,
+    "items": [
+      {
+        "id": "W4-01",
+        "task": "Search free sources (Unsplash, Pexels, Pixabay) for all 6 Cluster D/E products",
+        "status": "pending",
+        "time_estimate_hours": 2.5,
+        "output": "3-5 candidate images per product saved to staging folder",
+        "products": [
+          {
+            "product": "Small-Scale Livestock Field Manual",
+            "free_source_risk": "high",
+            "search_queries": ["backyard chickens", "homestead goats", "small farm lifestyle", "backyard poultry"]
+          },
+          {
+            "product": "Hunting, Fishing & Trapping Manual",
+            "free_source_risk": "high (trapping imagery)",
+            "search_queries": ["fly fishing stream", "foraging basket forest", "rural hunting lifestyle", "forest foraging wild plants"]
+          },
+          {
+            "product": "Meat/Fish Preservation Field Manual",
+            "free_source_risk": "medium",
+            "search_queries": ["smoked meat", "salted fish preservation", "dry cured sausage", "artisan smokehouse"]
+          },
+          {
+            "product": "Survival Garden Regional Plans",
+            "free_source_risk": "low-medium",
+            "search_queries": ["raised bed garden rows aerial", "homestead food garden", "large vegetable garden rows", "survival garden homestead"]
+          },
+          {
+            "product": "Native Plants Regional Guide",
+            "free_source_risk": "low (Wikimedia primary)",
+            "search_queries_wikimedia": ["native wildflower meadow", "Echinacea purpurea habitat", "Solidago canadensis", "Asclepias syriaca", "foraging basket wild plants"]
+          }
+        ]
+      },
+      {
+        "id": "W4-02",
+        "task": "End-of-Day-1 gap assessment: identify products where free sources returned no usable image",
+        "status": "pending",
+        "decision": "If 5-6 products have gaps: subscribe iStock Essential ($40/month) for 1 month. If 3-4 gaps: buy on-demand credits ($12-15/image). If 0-2 gaps: skip iStock entirely.",
+        "istock_priority_order": [
+          "Small-Scale Livestock Field Manual (highest gap risk)",
+          "Hunting/Fishing/Trapping Manual (trapping imagery not on free sites)",
+          "Meat/Fish Preservation Field Manual (artisan smokehouse gap)",
+          "Survival Garden Regional Plans (regional specificity gap)",
+          "Native Plants Regional Guide (likely $0 iStock spend)"
+        ]
+      },
+      {
+        "id": "W4-03",
+        "task": "Purchase iStock credits for confirmed gaps only (on-demand, not subscription, unless 5+ gaps)",
+        "status": "pending",
+        "budget_limit_usd": 60,
+        "note": "Do not pre-purchase. Buy only after free-source gap assessment is complete."
+      },
+      {
+        "id": "W4-04",
+        "task": "Log every sourced image in WORKLOG.md: product name, source URL, license type, filename",
+        "status": "pending",
+        "required_for": "Wikimedia CC BY-SA images require attribution in listing description footer"
+      },
+      {
+        "id": "W4-05",
+        "task": "Composite each stock image with product PDF cover overlay (Canva or Photoshop)",
+        "status": "pending",
+        "time_estimate_hours": 2,
+        "technique": "Stock image as background; product PDF cover appears as printed page resting on surface in the scene, or as tablet display in mid-ground",
+        "export_spec": "2400x2400px, JPEG 90%, sRGB"
+      },
+      {
+        "id": "W4-06",
+        "task": "Save all composited images to naming convention",
+        "status": "pending",
+        "naming_convention": "[product-slug]-slot4.jpg and [product-slug]-slot5.jpg",
+        "save_location": "/projects/seedwarden/marketing/lifestyle-photos/etsy-ready/"
+      },
+      {
+        "id": "W4-07",
+        "task": "QA: verify 12 images exist (2 per product x 6 products), spot-check 4 at full resolution",
+        "status": "pending",
+        "qa_criteria": [
+          "Dimensions exactly 2400x2400px",
+          "JPEG format, under 1MB",
+          "Product identifiable in at least one of the two images",
+          "No competing brand logos visible",
+          "Lighting soft and even",
+          "Warm color temperature (no cool/blue cast)"
+        ]
+      },
+      {
+        "id": "W4-08",
+        "task": "Upload Cluster D/E lifestyle images to Etsy slots 4-5 for all 6 products",
+        "status": "pending",
+        "note": "Do not upload Native Plants if listing is still blocked by PDF file size issue. Store images in etsy-ready/ folder for immediate upload when listing goes live.",
+        "output": "Record upload date in WORKLOG.md — conversion measurement window starts from this date"
+      }
+    ]
+  },
+
+  "week_5": {
+    "label": "Week 5 — Physical Photography for 15 Cluster A/B/C Products",
+    "timing": "Week 5 post-Phase-1-launch",
+    "responsible": "Owner or contracted photographer",
+    "budget_allocated_usd": 50,
+    "items": [
+      {
+        "id": "W5-01",
+        "task": "Props gathering (complete 2 days before shoot, not morning-of)",
+        "status": "pending",
+        "time_estimate_hours": 1.5
+      },
+      {
+        "id": "W5-02",
+        "task": "Pre-load all 15 product PDF covers on tablet; confirm screen brightness at maximum",
+        "status": "pending"
+      },
+      {
+        "id": "W5-03",
+        "task": "Shoot Day 1: Cluster A (8 products — Seeds/Garden)",
+        "status": "pending",
+        "time_estimate_hours": 1.5,
+        "schedule": [
+          { "time": "9:00-9:25", "action": "Cluster A setup (wooden surface, window, props out)" },
+          { "time": "9:25-10:45", "action": "Shoot all 8 Cluster A products (8 min each: 1 flat-lay + 1 contextual per product)" }
+        ],
+        "products": [
+          "Seed Saving Field Manual",
+          "Heirloom Variety Selection Guide",
+          "Anti-Catalog: 30 Heirlooms",
+          "Companion Planting Chart",
+          "Zone-by-Zone Seed Starting Calendar",
+          "Food Sovereignty Starter Guide",
+          "Apartment Seed Starting Kit",
+          "12-Month Urban Growing Planner"
+        ],
+        "note": "Print Companion Planting Chart and Zone Calendar for flat-lay shots — tablet is less effective for these two products"
+      },
+      {
+        "id": "W5-04",
+        "task": "Shoot Day 1: Cluster B (4 products — Container/Urban Growing)",
+        "status": "pending",
+        "time_estimate_hours": 1,
+        "schedule": [
+          { "time": "10:45-11:05", "action": "Cluster B setup (move to window sill or balcony, add potted plants)" },
+          { "time": "11:05-12:05", "action": "Shoot all 4 Cluster B products (10 min each)" }
+        ],
+        "products": [
+          "Container Growing Blueprint Pack",
+          "Apartment Growing Complete Guide",
+          "Apartment Plant Catalog",
+          "Seed Swap Hosting Kit"
+        ]
+      },
+      {
+        "id": "W5-05",
+        "task": "Shoot Day 1 or Day 2: Cluster C (3 products — Food Preservation)",
+        "status": "pending",
+        "time_estimate_hours": 0.75,
+        "schedule": [
+          { "time": "12:05-12:20", "action": "Cluster C setup (kitchen counter, mason jars, cutting board, peppers)" },
+          { "time": "12:20-13:05", "action": "Shoot all 3 Cluster C products (10 min each)" }
+        ],
+        "products": [
+          "Fermented & Preserved Harvest Handbook",
+          "Harvest Preservation Field Manual",
+          "Grow Your Own Hot Sauce"
+        ],
+        "safety_note": "Wear gloves or wash hands after handling high-capsaicin peppers before touching eyes"
+      },
+      {
+        "id": "W5-06",
+        "task": "Capture bonus social media assets during shoot (portrait/vertical frames for Instagram/TikTok, wide landscape for Pinterest/Etsy banner)",
+        "status": "pending",
+        "bonus_capture_targets": [
+          "15-second video of hands packing mason jar (Cluster C — TikTok B-roll)",
+          "10-second video of seeds poured from envelope (Cluster A — TikTok B-roll)",
+          "1 wide establishing shot per cluster setup (for Pinterest 2:3 pin or Etsy banner)"
+        ]
+      },
+      {
+        "id": "W5-07",
+        "task": "Editing Day: import photos, edit first image per cluster, batch-apply settings",
+        "status": "pending",
+        "time_estimate_hours": 2,
+        "editing_parameters": {
+          "exposure": "+0.2 to +0.5",
+          "contrast": "+15 to +25",
+          "highlights": "-20 to -40",
+          "shadows": "+15 to +25",
+          "white_balance_kelvin": "5500-6000",
+          "saturation_greens": "+10 to +15",
+          "saturation_yellows": "+10",
+          "saturation_blues": "-10",
+          "crop": "1:1 square (apply last)"
+        },
+        "export_spec": {
+          "resolution": "2400px long edge",
+          "format": "JPEG",
+          "quality": "90%",
+          "color_space": "sRGB"
+        },
+        "tools": ["Lightroom Mobile (free)", "Snapseed (free)", "VSCO (free tier)", "RawTherapee (free, desktop)"]
+      },
+      {
+        "id": "W5-08",
+        "task": "File size check: run all exports through Squoosh (squoosh.app) — confirm each under 1MB",
+        "status": "pending"
+      },
+      {
+        "id": "W5-09",
+        "task": "Review all exports at 100% zoom; flag images for reshoot",
+        "status": "pending",
+        "flag_criteria": [
+          "Product not clearly visible in either shot",
+          "Harsh shadows cutting across surface or product",
+          "Background too cluttered to read on-theme",
+          "Lighting too dark (exposure cannot be recovered without visible noise)"
+        ]
+      },
+      {
+        "id": "W5-10",
+        "task": "Reshoot buffer: reshoot only flagged images (typically 2-4 images maximum)",
+        "status": "pending",
+        "fallback": "If physical photo fails for any product, use stock image fallback from Unsplash/Pexels — $0 cost, 30 minutes per product"
+      }
+    ]
+  },
+
+  "week_6": {
+    "label": "Week 6 — Final Compositing, QA, and Etsy Upload",
+    "timing": "Week 6 post-Phase-1-launch",
+    "responsible": "Owner",
+    "items": [
+      {
+        "id": "W6-01",
+        "task": "Compositing: for any physical photo where product is not literally in frame, overlay PDF cover as flat printed-page in Canva",
+        "status": "pending",
+        "time_estimate_hours": 1.5,
+        "note": "5 minutes per image; only needed for images where product is implied but not visible. Not needed if tablet was in the shot."
+      },
+      {
+        "id": "W6-02",
+        "task": "Final QA — all 42 images",
+        "status": "pending",
+        "time_estimate_minutes": 45,
+        "qa_checklist": {
+          "technical": [
+            "42 images total (2 per product x 21 products) — count and verify",
+            "All images 2400x2400px — verify dimensions",
+            "All files JPEG, under 1MB — verify",
+            "All files sRGB color space — verify",
+            "All files named by naming convention — verify"
+          ],
+          "etsy_compliance": [
+            "No text overlay that duplicates the listing title",
+            "No watermarks or photographer branding visible in frame",
+            "No competing brand logos or product labels visible",
+            "No imagery that implies a physical product will be shipped"
+          ],
+          "conversion_criteria": [
+            "Product identifiable in at least one of the two images per product",
+            "Props support the product theme — tell the same story as the product title",
+            "Lighting soft and even — no harsh shadows across the product",
+            "Hands (if present) look working — unpainted, mid-task",
+            "Background clean enough not to distract; busy on-theme backgrounds are acceptable"
+          ],
+          "brand_consistency": [
+            "Warm color temperature throughout (5500-6000K range)",
+            "No shot reads as aspirational or wealthy-homestead aesthetic",
+            "Earthy and practical tone across all images"
+          ],
+          "licensing": [
+            "Every stock image logged in WORKLOG.md with source URL and license type",
+            "Wikimedia CC BY-SA images have attribution noted for listing description footer",
+            "iStock images have image ID and standard license confirmation logged"
+          ]
+        }
+      },
+      {
+        "id": "W6-03",
+        "task": "Etsy upload: add lifestyle images to slots 4 and 5 for all remaining 15 Cluster A/B/C listings",
+        "status": "pending",
+        "time_estimate_hours": 1.5,
+        "instructions": [
+          "Open each listing in Etsy Seller Dashboard",
+          "Add slot 4 image (flat-lay or lifestyle shot)",
+          "Add slot 5 image (in-use or contextual shot)",
+          "Verify thumbnail crop in 1:1 preview shows product clearly",
+          "Do not change any other listing element during this upload — isolate the photography variable"
+        ]
+      },
+      {
+        "id": "W6-04",
+        "task": "Record upload date for each listing in WORKLOG.md",
+        "status": "pending",
+        "note": "The 30-day conversion measurement window starts from the upload date, not from the beginning of Phase 2"
+      },
+      {
+        "id": "W6-05",
+        "task": "Verify all 21 listings are at 5-image status (slots 1-5 complete)",
+        "status": "pending",
+        "exception": "Native Plants Regional Guide may still be at 3-image status if PDF rebuild is not complete — this is acceptable; do not block the rest of Phase 2"
+      }
+    ]
+  },
+
+  "conversion_measurement": {
+    "label": "30-Day Conversion Measurement Window",
+    "timing": "Week 10 post-Phase-1-launch (30 days after last upload)",
+    "responsible": "Owner",
+    "items": [
+      {
+        "id": "CM-01",
+        "task": "Day 7 check-in: scan for any change in favorites rate or sales directly referencing listings",
+        "status": "pending"
+      },
+      {
+        "id": "CM-02",
+        "task": "Day 14 interim read: are views trending up or flat? Any conversion rate shift for Cluster D/E (uploaded in Week 4)?",
+        "status": "pending"
+      },
+      {
+        "id": "CM-03",
+        "task": "Day 30 full comparison: calculate percentage change per metric for all 4 high-ticket products",
+        "status": "pending",
+        "metrics_to_compare": [
+          "Views per listing (30-day post vs. 30-day pre)",
+          "Views-to-purchase conversion rate",
+          "Add-to-favorites count",
+          "Revenue (30-day)",
+          "Search impressions"
+        ],
+        "success_threshold": "10-20% conversion rate lift is 'strong signal'. Under 5% lift across all products: evaluate whether Etsy Ads or Pinterest promoted pins are a better next investment than further photography.",
+        "high_ticket_products_to_watch": [
+          { "product": "Survival Garden Regional Plans", "price_usd": 22, "revenue_at_threshold_per_month_usd": 44 },
+          { "product": "Hunting, Fishing & Trapping Manual", "price_usd": 20, "revenue_at_threshold_per_month_usd": 40 },
+          { "product": "Native Plants Regional Guide", "price_usd": 20, "revenue_at_threshold_per_month_usd": 40 },
+          { "product": "Small-Scale Livestock Field Manual", "price_usd": 18, "revenue_at_threshold_per_month_usd": 36 }
+        ]
+      },
+      {
+        "id": "CM-04",
+        "task": "Decision: if conversion lift is 10%+, prioritize Phase 3 social media content using best-performing lifestyle images as visual anchors",
+        "status": "pending"
+      },
+      {
+        "id": "CM-05",
+        "task": "Decision: if conversion rate lift is under 5% across all 4 products after 30 days, investigate alternative levers (Etsy Ads, description improvements, pricing) before additional photography investment",
+        "status": "pending"
+      }
+    ]
+  },
+
+  "budget_tracking": {
+    "ceiling_usd": 160,
+    "line_items": [
+      {
+        "item": "iStock credits — Small-Scale Livestock Field Manual",
+        "estimated_range_usd": "24-30",
+        "actual_usd": null,
+        "notes": "2 images if free sources fail; highest gap risk product"
+      },
+      {
+        "item": "iStock credits — Hunting/Fishing/Trapping Manual",
+        "estimated_range_usd": "24-30",
+        "actual_usd": null,
+        "notes": "2 images; trapping imagery not available on free sites"
+      },
+      {
+        "item": "iStock credits — Meat/Fish Preservation Field Manual",
+        "estimated_range_usd": "0-24",
+        "actual_usd": null,
+        "notes": "0-2 images; some artisan charcuterie content on free sites"
+      },
+      {
+        "item": "iStock credits — Survival Garden Regional Plans",
+        "estimated_range_usd": "0-15",
+        "actual_usd": null,
+        "notes": "0-1 image; generic raised-bed content available free"
+      },
+      {
+        "item": "iStock credits — Native Plants Regional Guide",
+        "estimated_range_usd": "0",
+        "actual_usd": null,
+        "notes": "Wikimedia Commons primary source; likely $0 iStock spend"
+      },
+      {
+        "item": "LED softbox (if natural light insufficient)",
+        "estimated_range_usd": "40-60",
+        "actual_usd": null,
+        "notes": "Skip entirely if window light is adequate. Check before purchasing."
+      },
+      {
+        "item": "Props (seeds, jars, peppers, linen napkin)",
+        "estimated_range_usd": "0-30",
+        "actual_usd": null,
+        "notes": "Most should be on hand or sourced locally; $30 covers any gaps"
+      },
+      {
+        "item": "Printed product pages for flat-lay shots",
+        "estimated_range_usd": "5-10",
+        "actual_usd": null,
+        "notes": "Color printing at library or print shop; only needed for Companion Planting Chart and Zone Calendar"
+      },
+      {
+        "item": "TOTAL ESTIMATED",
+        "estimated_range_usd": "53-145",
+        "actual_usd": null,
+        "notes": "Stays within $160 ceiling; lower end achievable if free sources cover most Cluster D/E products"
+      }
+    ]
+  },
+
+  "contingencies": [
+    {
+      "id": "CONT-01",
+      "risk": "Photographer cancels or is unavailable",
+      "mitigation": "Execute physical shoot independently using DIY setup from PHOTOGRAPHY_ROADMAP.md Section 5. Shot lists are identical. Phone camera with window light is sufficient for all 15 physical products.",
+      "reschedule_window": "1-week delay (shoot in Week 6 instead of Week 5) does not materially change Phase 2 outcomes — Cluster D/E stock images go live in Week 4 regardless"
+    },
+    {
+      "id": "CONT-02",
+      "risk": "Physical shoot produces unusable images (poor lighting, cluttered background, product not legible)",
+      "mitigation": "Use reshoot buffer (W5-10). For any product where physical photo fails entirely, fall back to stock: Unsplash/Pexels cover all Cluster A/B/C themes. Fallback cost: $0. Fallback time: 30 minutes per product.",
+      "decision_rule": "A mediocre physical shot should be replaced with a strong stock image rather than uploaded. Quality threshold applies equally to all images."
+    },
+    {
+      "id": "CONT-03",
+      "risk": "iStock budget runs out before all Cluster D/E gaps are filled",
+      "mitigation": "Execute strict priority order: Livestock Manual and Hunting/Trapping get iStock credits first. If budget runs out, Survival Garden and Native Plants have adequate free-stock coverage. Launch without the last 1-2 images rather than overspend.",
+      "decision_rule": "Never delay the entire Phase 2 upload because one product does not have lifestyle photos. Upload the products that are ready."
+    },
+    {
+      "id": "CONT-04",
+      "risk": "Compositing creates unconvincing product-in-scene appearance",
+      "mitigation": "Test compositing approach on one product before committing to all 12 stock images. If the overlay looks obviously digital (wrong perspective, mismatched lighting), switch to a flat 2D overlay in the corner of the stock image, clearly labeled 'Digital Download'. This is less immersive but still communicates context.",
+      "test_first": true
+    },
+    {
+      "id": "CONT-05",
+      "risk": "Phase 1 conversion data suggests lifestyle photos are low priority",
+      "mitigation": "If Phase 1 shows listings converting at 3%+, lifestyle photography is still worth doing but no longer urgent. Defer to Month 2. If Phase 1 shows near-zero conversions across all listings, defer Phase 2 entirely and investigate root causes (keyword mismatch, pricing, descriptions) before spending photography budget.",
+      "trigger_for_deferral": "Under 5 total purchases across all listings after 3 weeks live"
+    },
+    {
+      "id": "CONT-06",
+      "risk": "Native Plants Regional Guide still blocked (PDF exceeds Etsy 5MB limit)",
+      "mitigation": "Source and prepare stock images for this product on schedule, but do not upload slots 4-5 until the listing is active. Store composited images in etsy-ready/ folder. Upload immediately when the PDF rebuild is complete and the listing goes live.",
+      "non_blocking": true
+    }
+  ],
+
+  "qa_gate": {
+    "label": "What Constitutes an 'Approved Photo' for Etsy Upload",
+    "description": "An image must pass all items in each category below before it is uploaded to Etsy. An image that fails any single item is either replaced from alternates, re-edited, or reshot.",
+    "categories": {
+      "technical": [
+        "Dimensions exactly 2400x2400px",
+        "JPEG format",
+        "File size under 1MB",
+        "Color space sRGB",
+        "No visible pixelation at 100% zoom"
+      ],
+      "etsy_compliance": [
+        "No text overlay duplicating the listing title",
+        "No watermarks or photographer branding",
+        "No competing brand logos or product labels in frame",
+        "No imagery implying a physical product will be shipped"
+      ],
+      "conversion_quality": [
+        "Product identifiable (tablet screen, printed page, or clearly implied) in at least one of the two slot images",
+        "Props are thematically appropriate to the product",
+        "Lighting is soft and even — no harsh shadows across the product or surface",
+        "Hands (if present) look working — unpainted, mid-task",
+        "Background is clean enough to read as intentional; on-theme busy backgrounds acceptable"
+      ],
+      "brand_consistency": [
+        "Warm color temperature (5500-6000K range) — no cool or blue cast",
+        "Earthy and practical tone — not aspirational or polished",
+        "No Pottery Barn aesthetic (no pristine white kitchen, no perfect produce on marble)"
+      ],
+      "licensing": [
+        "Stock image source URL and license type logged in WORKLOG.md",
+        "Wikimedia CC BY-SA images: attribution text noted for listing description footer",
+        "iStock images: image ID and standard license confirmation logged"
+      ]
+    }
+  }
+}

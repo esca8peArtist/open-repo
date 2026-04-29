@@ -4,6 +4,30 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 627b — 2026-04-29 — Phase 2 Photography Execution Package
+
+**Task**: Create Phase 2 lifestyle photography execution timeline, photographer briefing package, and structured production checklist. Independent of Phase 1 blockers; supports Phase 2 launch preparation.
+
+**Files produced**:
+- `projects/seedwarden/phase-2-execution-timeline.md` (~4,200 words): Complete execution roadmap anchored to Phase 1 launch date. Covers Phase 1-to-Phase-2 decision gate (Week 2-3 post-launch), Week 4 stock image sprint (6 Cluster D/E products), Week 5 physical shoot (15 Cluster A/B/C products), Week 6 QA and Etsy upload. Includes priority ranking of all 21 products by revenue impact and photography complexity, budget allocation per line item, seasonal timing notes, bundle dependency notes, and 5 contingency paths.
+- `projects/seedwarden/photographer-briefing-package.md` (~6,100 words): Professional briefing package ready to send to a contracted photographer. Covers brand overview and visual identity, technical specs (camera, lighting, backgrounds), detailed shot list for all 15 physical products (2 shots per product with composition, styling, and safety notes), approval workflow with 4 stages, delivery milestones, usage rights and licensing terms (perpetual non-exclusive, 24-month competitor exclusion), and appendices (product summary table, styling quick-reference, file naming convention).
+- `projects/seedwarden/phase-2-production-checklist.json` (~3,200 words): Structured JSON checklist with IDs, status fields, and responsible parties. Covers decision gate (5 items), pre-Phase-2 prep (6 items), Week 4 stock (8 items), Week 5 physical shoot (10 items), Week 6 QA and upload (5 items), 30-day conversion measurement (5 items), budget tracking with line-item actuals fields, 6 contingency scenarios, and QA gate definition.
+
+**Context files read**:
+- `LIFESTYLE_PHOTOGRAPHY_STRATEGY.md` — hybrid rationale, cluster assignments, cost analysis, stock source guidance
+- `PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md` — logistics, QA checklist, iStock strategy, risk mitigation
+- `PHOTOGRAPHY_ROADMAP.md` — per-product shot lists (all 15 physical products), stock sourcing plan, production sprint, equipment and setup guide
+- `PHASE2_PRODUCT_PRIORITIES.md` — Tier 1-3 product sequencing by revenue and conversion potential
+- `WORKLOG.md` — session history for context
+
+**Key decisions made in these documents**:
+1. Decision gate is Week 2-3 post-Phase-1-launch, not a fixed calendar date — Phase 2 greenlight requires either conversion data (preferred) or 3-week elapsed time without data (fallback).
+2. Photographer briefing written for an external contracted photographer, not DIY — DIY fallback is documented in the timeline contingency section.
+3. Budget ceiling of $160 held: estimated total $53-$145, with iStock on-demand credits (not subscription) for Cluster D/E gaps.
+4. Week 4 stock images (Cluster D/E) upload to Etsy immediately after QA, before the Week 5 physical shoot — highest-ticket products get their measurement window earliest.
+
+---
+
 ## Session 572b — 2026-04-29 — Phase 2 Social Media Strategy
 
 **Task**: Create comprehensive Phase 2 social media strategy and 90-day content calendar for execution immediately post-Phase-1-launch.
