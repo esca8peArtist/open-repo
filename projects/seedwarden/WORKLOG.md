@@ -4,6 +4,25 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 646 — 2026-04-29 — Phase 1 Contingency Planning + Track B Independent Launch Strategy
+
+**Task**: Phase 1 upload has been blocked for multiple sessions (tag corrections + Etsy account verification, no ETA). Contingency trigger for Item 25 met. Produce three production-ready documents: Phase 1 contingency decision tree, concurrent track execution plan, and Track B independent launch roadmap.
+
+**Context read**: ETSY_PHASE_1_UPLOAD_CHECKLIST.md, UPLOAD_READY_CHECKLIST.md, UPLOAD_SEQUENCE.md, LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, phase-2-social-content-calendar-60day.md, pin-template-specs.md, marketing/social-media-calendar-may-july-2026.md, docs/phase-1-to-phase-2-decision-matrix.md, docs/phase-1-revenue-roadmap.md, PHASE2_TO_PHASE3_TRANSITION.md, WORKLOG.md.
+
+**Files produced**:
+- `projects/seedwarden/phase-1-contingency-decision-tree.md` (~2,200 words): Decision logic for Day 14+ checkpoint. Four options (Wait / Temp tags launch / Track B only / Hybrid concurrent) with risk analysis for each. Recommendation: Option D (hybrid concurrent) with fallback to Option C if Etsy account unavailable. Addresses the temporary tags question specifically: editing tags after listing creation is fully supported by Etsy; no re-listing penalty. Decision summary table provided for quick reference.
+- `projects/seedwarden/concurrent-track-execution-plan.md` (~2,600 words): Track A (Etsy upload) and Track B (social + photography) resource requirements mapped explicitly. Dependency chain diagram. Critical path to first Etsy sale identified (account active + shop setup + one listing = same-day revenue possible). Resource allocation modeled at 3 hrs/week, 8 hrs/week, and 15+ hrs/week scenarios. Five risk mitigations including Gumroad fallback if Etsy remains blocked past Day 21. Success metrics table for Week 2 and Week 4 cross-track check.
+- `projects/seedwarden/track-b-independent-launch-roadmap.md` (~2,400 words): Five launch conditions (all independent of Phase 1). First-21-day launch sequence with specific daily actions. Audience overlap analysis: social followers and Etsy organic buyers are the same demographic at different intent stages; email list bridges the two. Three contingency escalation triggers (500+ followers, 100+ email subscribers, 1,000+ Pinterest pin impressions) that each have specific Phase 1 urgency responses. 90-day success thresholds table across Instagram, Pinterest, TikTok, and email.
+
+**Key conclusions**:
+1. Phase 1 and Track B are not mutually exclusive. The upload is 2.5-3 hours of user action. Track B content production runs in parallel with no shared dependencies.
+2. Track B can launch before Phase 1 with a Kit email capture as the link-in-bio destination; "opening soon" framing has a ~3-week shelf life before it becomes a credibility issue.
+3. If Phase 1 remains blocked past Day 21 from initial target date (May 19, 2026), Gumroad or Payhip are viable immediate alternatives for digital product sales with no verification requirements.
+4. Lifestyle photography is not required for Track B Week 1-2; existing 2400x2400px mockup images are sufficient for audience-building content. Photography investment is triggered by Etsy listing view counts, not by calendar date.
+
+---
+
 ## Session 645 — 2026-04-29 — Phase 3 Market Research + Physical Product Evaluation
 
 **Task**: Conduct Etsy market research for Phase 3 product categories; evaluate physical product expansion (seed packets, preservation containers, seed bundles); verify existing Phase 3 roadmap completeness; fill identified gap in physical product documentation.
