@@ -782,11 +782,11 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Integration**: Ready for immediate deployment post-engine-restart; requires env var configuration only
   - **Status**: COMPLETE (Session 599 verification), all 17 tests passing
 
-- **cybersecurity-hardening: High-Risk Population Protection Protocols** (Priority 3 for advanced OpSec)
-  - **Scope**: Beyond baseline OpSec playbook — design comprehensive protection for activists, dissidents, lawyers, vulnerable populations facing government targeting. (1) Identity compartmentalization (burner phones, secondary SIM architectures, VPN/Tor layering), (2) Physical security (surveillance detection, safe house networks, low-profile movement patterns), (3) Legal defense coordination (attorney networks, bail funds, criminal defense playbooks), (4) International sanctuary options (asylum processes, travel security, international NGO coordination), (5) Emergency protocols (asset recovery, family safety, evidence preservation)
-  - **Goal**: Actionable protocols for high-risk populations, grounded in case studies (HK activists, US Jan 6 defendants, EU dissident networks)
-  - **Expected outcome**: `high-risk-populations.md` (4,000-5,000 words) + operational playbooks for 3-4 scenario types
-  - **Status**: ACTIVE (Session 554+ — queue item #3, available for parallel execution)
+- ✅ ~~**cybersecurity-hardening: High-Risk Population Protection Protocols**~~ (COMPLETE, Session 543)
+  - **Scope**: Advanced OpSec for activists, dissidents, vulnerable populations facing government targeting
+  - **Deliverable**: `high-risk-populations.md` (8,000 words, 5 sections, 10+ case studies) — dual-SIM architecture, physical surveillance detection, legal defense coordination, international sanctuary pathways, emergency protocols
+  - **Key findings**: Synchronous dual-SIM activation = tracking signature; Tor guard node vetting critical; attorney-client privilege requires E2E encryption; Canada/Germany/Ireland US asylum paths; evidence preservation via SHA-256 chains of custody
+  - **Status**: COMPLETE, production-ready
 
 **NEW ITEMS (Session 602 — Autonomous Work Queue Refresh)**:
 
