@@ -5,6 +5,81 @@
 
 ---
 
+## Since Last Check-in (Session 628 — 2026-04-29 07:00–10:35 UTC)
+
+### ✅ Parallel Exploration Queue Execution — 3 Subagents — COMPLETE
+
+**Status**: Three independent exploration queue items executed in parallel. All delivered, tested, and committed to master.
+
+#### 1. ✅ resistance-research: Objection Handling & Rebuttal Framework — COMPLETE
+**Deliverables**: 
+- `objection-handling-framework.md` (revised, Category VI International/Trade added + 3 new objections with sourced rebuttals)
+- `quick-reference-rebuttal-matrix.md` (NEW: 2-page scannable table, 20 objections × 6 categories, 11-audience routing guide, left/right skeptic response patterns)
+
+**Key additions**: Missing Category VI (International/Trade Implications) with rebuttals sourced from Domain 23 (trade policy), Learning Resources v. Trump Feb 2026 SCOTUS ruling, Yale Budget Lab April 2026 tariff data, Carnegie/Freedom House foreign policy research.
+
+**Status**: Production-ready for Phase 1 institutional outreach. Committed.
+
+#### 2. ✅ mfg-farm: Amazon FBA vs. Etsy Fulfillment Analysis — COMPLETE
+**Deliverables**:
+- `amazon-fba-analysis.md` (confirmed current with April 17, 2026 FBA fuel surcharge verified)
+- `fulfillment-decision-matrix.csv` (NEW: 12 volume scenarios, break-even at 30+ units/month, clear channel recommendations)
+- `hybrid-launch-roadmap.md` (confirmed current, 90-day integration plan)
+
+**Decision Framework**: Etsy-only until 30–50 units/month, then hybrid expansion. FBA is purely additive (new Amazon buyers), never more margin-efficient than Etsy per unit.
+
+**Status**: Production-ready for post-test-print launch decision. Committed.
+
+#### 3. ✅ seedwarden: Phase 2 Execution Timeline & Photographer Briefing — COMPLETE
+**Deliverables**:
+- `phase-2-execution-timeline.md` (4,200 words, anchored to Phase 1 Day 0 for immediate usability)
+- `photographer-briefing-package.md` (6,100 words, professional photographer-ready with all 15 product specs)
+- `phase-2-production-checklist.json` (structured JSON with QA gates, budget tracking, contingency scenarios)
+
+**Budget**: $53–$145 within $80–$160 ceiling. Timeline: Phase 1 Day 0 → Week 2-3 conversion data gate → Week 4-7 photography execution → Week 8 approval/upload.
+
+**Status**: Production-ready for Phase 1 launch trigger (estimated May 2026). Committed.
+
+---
+
+### Stockbot Engine Status (as of 10:35 UTC)
+- Process running (PID 1202130) since 2026-04-29 03:31 UTC (Session 622)
+- 67 sessions initialized, all active
+- Next market open: 2026-04-29 13:30 UTC (3h remaining)
+- No errors in logs, no auth failures
+
+### Usage Budget
+Sonnet: 0.5% (48,020 tokens) | All-models: 34.7% | Reset in 138h | Healthy
+
+### What's Next — Priorities for Next Session
+
+**Priority 1: Stockbot Market Open Verification (2026-04-29 13:30 UTC)**
+- Monitor first full trading session post-HMM activation
+- Verify: (a) no execution errors, (b) signals across tickers, (c) HMM scalar impact on position sizing
+- Log results to `logs/paper_trading_daily.jsonl`
+- Expected completion: 20:00 UTC (market close)
+
+**Priority 2: resistance-research Distribution Path Decision**
+- User must decide: Path A (immediate 34-domain distribution) / Path A+Domain37 (sequence election integrity into election-protection orgs) / Path B (continue Phase 2 research before distribution)
+- Once decision made: Phase 1 distribution execution (Tier 1 institutional outreach, 2-4 weeks)
+- Objection handling framework + rebuttal matrix ready for deployment
+
+**Priority 3: mfg-farm Test Print**
+- User action: Execute test print of ModRun rail + clip designs
+- Once confirmed printable: Launch preparation sequence (supplier negotiation, Etsy listing, FBA decision per fulfillment matrix)
+
+**Priority 4: seedwarden Phase 1**
+- User action: Submit 3 tag corrections + complete Etsy account verification
+- Once complete: Phase 1 upload (all 21 products ready)
+- Phase 2 photographer briefing package will be deployed immediately thereafter
+
+**Items Needing User Input**:
+1. **resistance-research**: Distribution path decision (A / A+37 / B) — blocks Phase 1 execution
+2. **mfg-farm**: Test print confirmation — blocks post-test-print launch sequence
+3. **seedwarden**: Tag corrections + Etsy verification — blocks Phase 1 upload
+
+---
+
 ## Since Last Check-in (Session 627 — 2026-04-29 05:31–06:50 UTC)
 
 ### ✅ Exploration Queue Research — Parallel Subagents — COMPLETE

@@ -4,6 +4,65 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 07:00–10:35 UTC — orchestrator — Session 628: Parallel Exploration Queue Execution (3 subagents) COMPLETE
+
+**Status**: Three parallel agents executed independent exploration queue research items. All completed and committed to master.
+
+---
+
+### 1. ✅ resistance-research: Objection Handling & Rebuttal Framework — COMPLETE
+
+**Deliverables**:
+1. `projects/resistance-research/objection-handling-framework.md` — Revised and expanded to include missing Category VI (International/Trade Implications). Added 3 new objections + rebuttals focused on: trade leverage (Section 122 CIT oral argument evidence, DOJ cost-benefit gap), foreign policy priority sequencing, and international institutional adoption feasibility.
+2. `projects/resistance-research/quick-reference-rebuttal-matrix.md` — NEW: Two-page scannable table (20 objections × 6 categories) with: objection phrasing | domain reference | one-sentence empirical rebuttal | supporting evidence citations. Includes 11-audience-type routing guide and left/right skeptic response patterns. Ready for real-time use during Phase 1 distribution outreach.
+
+**Key Sourcing Decisions**:
+- Category I (Implementation Feasibility): Germany MMP proportional voting + IRS Direct File precedent
+- Category II (Constitutional): Presidential Commission 2021 term limits + AIRC 2015 redistricting
+- Category III (Institutional Viability): Poland 2023 reversal + Carnegie recovery research
+- Category IV (Economic): Germany/Denmark labor + Yale Budget Lab April 2026 trade tariff data
+- Category V (Political Realism): Gilens-Page incrementalism failure + Ireland 2018 citizens' assemblies
+- Category VI (International/Trade): Learning Resources v. Trump Feb 2026 SCOTUS ruling + Carnegie/Freedom House foreign policy data
+
+**Status**: Production-ready for Phase 1 institutional outreach. Committed to master.
+
+---
+
+### 2. ✅ mfg-farm: Amazon FBA vs. Etsy Fulfillment Analysis — COMPLETE
+
+**Deliverables**:
+1. `projects/mfg-farm/amazon-fba-analysis.md` — Existed and confirmed current (2,600+ words, 2026 FBA fees incl. April 17 surcharge, ModRun-specific cost tables, 3 case studies, decision flowchart, all 9 analytical parts). April 17, 2026 fuel surcharge ($111/bbl WTI + Iran war oil spike) verified and integrated.
+2. `projects/mfg-farm/fulfillment-decision-matrix.csv` — CREATED NEW: 12-row volume/margin scenario matrix (5–500 units/month), ModRun-specific calculations using actual COGS ($3.10–4.20), Etsy fees (11.1%), FBA fees (incl. 3.5% April 2026 surcharge), break-even volume at ~30 units/month, clear channel recommendation per row.
+3. `projects/mfg-farm/hybrid-launch-roadmap.md` — Existed and confirmed current (90-day phased integration plan, 3 go/no-go gates, operational checklists, capital deployment schedule).
+
+**Key quantitative findings**:
+- Etsy net margin: 73.3% at 10 units, 74.8% at 50 units, 77.0% at 200+ units
+- FBA net margin: 42.5% at 10 units, 55.1% at 50 units, 59.9% at 500 units (structural 14-20pt gap vs Etsy persists at all volumes)
+- FBA becomes net-positive (above setup amortization) at 30+ units/month: $123/mo net add
+- Clear hybrid inflection at 50 units/month: hybrid generates $1,404/mo vs $1,084 Etsy-only (+29%)
+- At 100 units/month hybrid: $2,824/mo vs $2,169 Etsy-only (+30%) — FBA is purely additive channel expansion
+
+**Decision Framework**: Launch Etsy-only, made-to-order. Add FBA at 30–50 unit/month threshold when capital + velocity + reviews align. FBA is never cheaper per unit than Etsy; justification is purely channel expansion for new Amazon buyers who wouldn't find product on Etsy.
+
+**Status**: Production-ready for post-test-print user handoff. Committed to master.
+
+---
+
+### 3. ✅ seedwarden: Phase 2 Execution Timeline & Photographer Briefing Package — COMPLETE
+
+**Deliverables**:
+1. `projects/seedwarden/phase-2-execution-timeline.md` (4,200 words) — Core execution roadmap anchored to Phase 1 launch Day 0 (makes timeline immediately usable when Phase 1 goes live). Week 2-3 decision gate handles both normal/sparse traffic scenarios. Cluster D/E stock images scheduled Week 4 ahead of physical shoot Week 5 to prioritize highest-ticket products for earliest conversion measurement.
+2. `projects/seedwarden/photographer-briefing-package.md` (6,100 words) — Professional photographer-ready briefing with 15 products, per-product shot specifications (composition, camera angle, lighting direction, styling elements), usage rights, approval workflow, day-of logistics, file naming convention, folder structure. Can be sent immediately upon photographer engagement without follow-up questions.
+3. `projects/seedwarden/phase-2-production-checklist.json` (3,200 words) — Structured JSON with item IDs, status fields, responsible parties, output descriptions, QA gates, budget tracking ($53–$145 within $80–$160 ceiling), 6 contingency scenarios with risk/mitigation/decision-rule fields.
+
+**Budget Tracking**: Estimated range $53–$145 depending on free vs. iStock imagery for livestock/hunting products. Primary variable: whether Unsplash/Pexels/Pixabay cover Cluster D livestock and hunting imagery.
+
+**Timeline Anchoring**: Phase 1 launch = Day 0. Week 2-3 = conversion data decision gate. Week 4 = stock image sourcing. Week 5 = physical shoot. Week 6-7 = retouching. Week 8 = approval cycle → upload → integration.
+
+**Status**: Production-ready for execution upon Phase 1 launch. Committed to master.
+
+---
+
 ## 2026-04-29 — research-agent — mfg-farm ModRun: Amazon FBA vs. Etsy Fulfillment Decision Matrix COMPLETE
 
 **Task**: Produce quantitative fulfillment strategy analysis for ModRun cable management system post-test-print launch decision.
