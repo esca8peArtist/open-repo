@@ -15036,3 +15036,64 @@ With T-4h 31min remaining to critical market open and all high-priority projects
 
 **Status**: Exploration item COMPLETE. Analysis ready for user review and backtest validation.
 
+
+## 2026-04-29 03:07 UTC — Session 621 — Stockbot Engine Orchestration Script COMPLETE
+
+**Orchestrator Orientation & Block Verification**:
+1. ✅ **ORCHESTRATOR_STATE.md reviewed** — All projects blocked on user action or awaiting decisions
+2. ✅ **BLOCKED.md reviewed** — Two active blocks: (1) stockbot engine, (2) mfg-farm test print
+3. ✅ **INBOX.md reviewed** — No new items
+4. ✅ **Stockbot engine status diagnosis** — Session 620 investigation + Session 621 root cause analysis completed
+
+**Stockbot Engine Diagnosis (Session 620/621 combined)**:
+- Engine status: NOT running (verified via `ps aux`)
+- Previous session's "resolution" claim was FALSE — engine never actually started
+- Root causes identified: (1) Script architecture gap — `run_live_trading.py` CLI doesn't support active-sessions.json format ("strategy: stacker:<uuid>"), (2) 401 Alpaca auth errors (credential verification required)
+- **Resolution path created**: New orchestration script `launch_stacker_sessions.py` (Session 621 work item)
+
+**Exploration Queue Seeding**:
+- Current queue had 0 active items (all marked complete)
+- Per protocol: added 3 new items:
+  1. **resistance-research: Objection Handling & Rebuttal Framework** (HIGH priority, pre-distribution)
+  2. **stockbot: Engine Startup Orchestration Script** (HIGH priority, unblocks engine) — **COMPLETED THIS SESSION** ✅
+  3. **seedwarden: Phase 2 Execution Timeline** (MEDIUM priority)
+- Added to PROJECTS.md Exploration Queue
+
+**Primary Work Item — Stockbot Engine Orchestration Script**:
+
+**Deliverable**: `projects/stockbot/scripts/launch_stacker_sessions.py` (360 lines, production-ready)
+
+**Scope**: Create wrapper script that reads `active-sessions.json` and launches all configured stacker-based trading sessions in parallel on a shared asyncio event loop.
+
+**Key Features**:
+- Reads `active-sessions.json` configuration (67 sessions loaded in test)
+- Creates TradingSession instances directly with proper stacker strategy parsing ("stacker:<uuid>" format)
+- Launches all sessions in parallel with graceful lifecycle management
+- Supports paper/live mode selection via --mode flag
+- Proper signal handling for clean shutdown (Ctrl+C)
+- Comprehensive logging and error handling
+- CLI args: --config PATH, --mode {paper,live}, --verbose, --dry-run
+
+**Architecture Decision**: Direct use of TradingSession class instead of retrofitting run_live_trading.py CLI script. TradingSession already supports stacker strategies natively — script just needed to bridge the gap between JSON configuration and TradingSession instantiation.
+
+**Testing**:
+- Syntax validation: ✓ Passed (`py_compile`)
+- Config loading: ✓ Loaded active-sessions.json (67 sessions)
+- Session creation: ✓ Created 67 TradingSession instances without errors
+- Session startup: ✓ All 67 sessions started and running on event loop
+- Graceful timeout: ✓ Sessions responded to timeout signal as expected
+
+**Usage**:
+```bash
+cd projects/stockbot
+.venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper
+```
+
+**Next Steps**:
+- User verifies Alpaca API credentials are valid and account has sufficient buying power
+- User restarts engine with new orchestration script before next market open (2026-04-29 13:30 UTC)
+- Orchestrator monitors process and verifies no 401 auth errors in logs
+- Once engine running successfully, BLOCKED.md item is resolved
+
+**Status**: Exploration item COMPLETE. Orchestration script production-ready and tested. Stockbot engine startup is now unblocked — remaining blocker is user Alpaca account verification.
+
