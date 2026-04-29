@@ -142,8 +142,9 @@ Sources:
 - [Fox News: Mike Johnson faces revolt from GOP privacy hawks as FISA renewal deadline looms (April 29, 2026)](https://www.foxnews.com/politics/mike-johnson-faces-revolt-from-gop-privacy-hawks-threatening-kill-fisa-renewal-deadline-looms)
 - [CBS News: Renewal of FISA surveillance program in limbo ahead of Thursday deadline (April 29, 2026)](https://www.cbsnews.com/news/renewal-fisa-section-702-surveillance-program-house-vote-thursday-deadline/)
 
-*Checklist status: PENDING — fill after April 29-30 floor vote. April 29 evening update: Rules Committee advanced three-year bill; floor vote imminent; no-warrant version now most likely outcome.*
+*Checklist status: PENDING — fill after Senate vote and presidential signature confirmed. April 29 evening update: Rules Committee advanced three-year bill; procedural rule passed 215-210 (held open 2+ hours); final House floor vote imminent as of 1:32 PM April 29; three-year no-warrant passage now most probable outcome.*
 *Correction note: Session 608 (April 28, 2026) identified and corrected prior session's research error conflating 2024 RISAA outcome with projected 2026 outcome*
+*Session 652 note: Full outcome analysis — legislative history, civil liberties implications, commercial data broker gap, Domains 1/6/35 cross-references, advocacy roadmap 2026-2029 — documented in `domains/domain-25-fisa-702-april-2026-outcome.md`. Update checklist above and this note when Senate vote and signature confirmed.*
 
 Sources (April 29 additions):
 - [The American Prospect: As FISA Bill Implodes, Himes Boosted Version He Called 'Unacceptable' (April 28, 2026)](https://prospect.org/2026/04/28/implausible-deniability-fisa-section-702-congress-himes/)

@@ -2,6 +2,45 @@
 
 ---
 
+## April 29, 2026 — Session 652: FISA Section 702 April 30 Deadline — Outcome Documentation
+
+**Session type**: Time-critical domain update — FISA April 30 deadline
+**Task**: Option A — FISA Section 702 post-April-30 outcome determination and domain documentation
+
+### Research Findings
+
+The April 30 FISA deadline was active as of session start (April 29, 2026, 19:50 UTC). The vote outcome was still pending — final House floor passage vote was scheduled for "later in the day" on April 29 per CBS News article timestamped 1:32 PM April 29. However, the decisive procedural evidence is clear: the House Rules Committee advanced the three-year Foreign Intelligence Accountability Act (S. 1318) on April 29, and the procedural rule passed 215-210 on the floor with the vote held open 2+ hours — meaning leadership secured the votes. This makes final House passage the most probable outcome.
+
+**Key confirmed facts as of session end:**
+- S. 1318 (Foreign Intelligence Accountability Act) is the vehicle: three-year extension, no warrant requirement, CBDC ban attached, SAVE Act NOT attached
+- House procedural rule: 215-210 (held open 2+ hours — leadership had to flip Republicans)
+- If passed: new expiration April 30, 2029
+- Senate passage still required (Thune had filed cloture for companion three-year bill)
+- Civil liberties community pre-committed to judicial challenges regardless of outcome
+- Commercial data broker loophole: unaddressed by any proposal — the actual surveillance accountability gap
+
+**Research integrity maintained:** Distinguished 2024 RISAA outcome (60-34 Senate, two-year) from 2026 legislative trajectory. Prior session error (Session 573) had conflated these.
+
+### Files Created This Session
+
+1. **`projects/resistance-research/domains/domain-25-fisa-702-april-2026-outcome.md`** — Full outcome document (8 sections, ~2,800 words, 22 sources): legislative history of four failed attempts; confirmed S. 1318 terms; April 28-29 procedural sequence; most probable outcome + lapse scenario; cross-domain implications for Domains 1, 6, 35; civil liberties community response framework; commercial data broker structural gap analysis; outcome checklist; advocacy implications 2026-2029
+
+### Files Updated This Session
+
+- **`projects/resistance-research/surveillance-tracking.md`** — Cross-reference to new domain file added (pending — see next step)
+- **`projects/resistance-research/WORKLOG.md`** — This entry
+
+### What Remains Pending (for next session to fill)
+
+- Confirm House final passage vote count
+- Confirm Senate vote timing and count
+- Confirm presidential signature date
+- Fill outcome checklist in both domain-25 file and surveillance-tracking.md
+- Confirm whether FISC extension ruling actually extends collection through 2027 (reported but unverified)
+- Monitor EFF/ACLU for first litigation filing announcement
+
+---
+
 ## April 29, 2026 — Resistance Research Agent: April-May 2026 Civic Developments Refresh
 
 **Session type**: Multi-domain content maintenance — May 1 deadline critical update
