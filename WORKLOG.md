@@ -4,6 +4,27 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 — research-agent — Cybersecurity Hardening Phase 2: Hardware Procurement and Supply-Chain Security Guide COMPLETE
+
+**Task**: Session 625 exploration queue task — produce production-ready supply-chain security guide for journalists, attorneys, activists, undocumented immigrants.
+
+**Deliverable**: `projects/cybersecurity-hardening/hardware-procurement-guide.md` (~3,800 words)
+
+**Key findings**:
+1. Interdiction is confirmed operational capability (NSA ANT catalog, TAO photos leaked via Intercept, Cisco CEO letter to Obama) — not theoretical threat
+2. Purism Librem 14 is the only consumer laptop with commercial anti-interdiction service, PureBoot + HOTP tamper detection, hardware kill switches, and IME disablement in one package — appropriate for Tier 3
+3. System76 Thelio desktop is the only mass-market US-assembled device with open firmware (Denver, Colorado manufacturing)
+4. Framework Laptop has a documented BIOS reset vulnerability via chassis switch (Pen Test Partners 2024) — disqualifying for Tier 2+
+5. Lenovo has three documented firmware backdoor/supply-chain incidents (SuperFish 2015, LSE rootkit 2015, SecureBackDoor UEFI 2022) — avoid for elevated-risk users
+6. FIPS 140-2 certifies cryptographic math only; does not address firmware, hardware, or supply chain integrity — does not improve security against documented threat actors
+7. Hardware security key supply chain: Nitrokey is open-source firmware and hardware (Germany); YubiKey is closed-source but manufactured in Sweden/US
+8. Framework has tiered decision tree (Tier 1/2/3) integrated with existing opsec-playbook.md tier architecture
+9. Vendor comparison table covers 9 devices/configurations across 6 security dimensions
+
+**Sources**: NSA ANT catalog (EFF), The Intercept supply-chain investigations, Purism vendor documentation, Pen Test Partners disclosure, ESET UEFI research, NIST SP 800-161r1, EFF IME analysis, Lebanon pager attacks (2024), System76 firmware documentation
+
+---
+
 ## 2026-04-29 04:36–10:00 UTC — orchestrator — Session 626: Stockbot Gate 2 HMM Backtest Validation Priority 1 COMPLETE
 
 **Single subagent spawned for high-priority stockbot work:**
