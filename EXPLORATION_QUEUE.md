@@ -3,7 +3,7 @@
 > Research items queued for autonomous execution between project work.
 > Cross out items as they complete. If queue falls below 3 items, add more.
 >
-> **Last updated**: Session 584 (2026-04-28 12:06 UTC)
+> **Last updated**: Session 651 (2026-04-29 19:45 UTC) — Added Items 11–13 (seedwarden Phase 3, stockbot HMM validation, resistance-research tracker enrichment)
 
 ---
 
@@ -142,11 +142,58 @@
 
 ---
 
+### Item 11: seedwarden Phase 3 Product Development Strategy (Session 651)
+**Status**: QUEUED — Pending Phase 1 launch and 45-day data collection window
+**Trigger**: Phase 1 launch trigger (user tag corrections + Etsy verification complete)
+**Scope**: Develop comprehensive Phase 3 product expansion strategy based on Phase 1 performance signals
+**Deliverables**:
+- Phase 3 go-to-market strategy for 12 new products identified in Item 9 (ITEM9_PRODUCT_VIABILITY_ANALYSIS.md)
+- Pricing and positioning matrix for Wave 1–3 products (July–Dec 2026)
+- Marketing and launch sequencing strategy (social, email, partnerships)
+- Budget allocation and cash flow modeling for scaled operations
+- Supplier onboarding playbook for Phase 3 materials/services
+**Owner**: seedwarden agent (autonomous execution upon Phase 1 data arrival at 45-day checkpoint)
+**Context**: Phase 3 product roadmap foundation laid in Session 599. Wave 1–3 candidates identified with margin analysis. Execution depends on Phase 1 conversion rates, customer cohort concentration, and margin validation.
+
+---
+
+### Item 12: stockbot HMM Regime Validation Framework (Session 651)
+**Status**: QUEUED — Pending Gate 1 checkpoint validation (May 12)
+**Trigger**: Gate 1 passes (multi-ticker ≥30 round trips/month achieved)
+**Scope**: Design and implement post-Gate-1 HMM regime scaling validation framework
+**Deliverables**:
+- HMM regime validation test plan (market conditions: bull/bear/chop, volatility ranges, correlation regimes)
+- Sharpe/MDD improvement targets with statistical significance criteria (p<0.05 minimum)
+- A/B test framework: vol-only vs. vol+HMM signal comparison with rolling window rebalancing
+- Performance attribution metrics (regime-specific returns, drawdown reduction, Sortino improvement)
+- Decision criteria for HMM graduation to live trading (Pass/Fail thresholds per metric)
+**Owner**: stockbot agent (autonomous execution post-Gate-1)
+**Context**: HMM module fully implemented (858 tests passing, Session 537). Integration wiring planned for Session 651+. Gate 2 validation will compare regime-aware position sizing against baseline vol scalar.
+
+---
+
+### Item 13: resistance-research Tracker Infrastructure & Data Enrichment (Session 651)
+**Status**: QUEUED — Post-Phase-1-distribution optional expansion
+**Trigger**: Phase 1 distribution execution begins (user selects Path A / A+37 / B)
+**Scope**: Enhance resistance-research trackers (first-amendment, environmental-rollbacks, police-brutality, prosecutorial-weaponization) with improved data sources and automation
+**Deliverables**:
+- Tracker data source audit (identify 5+ new sources per tracker category)
+- Automated ingestion pipeline design (where legally permissible; FOIA sources, public databases, press release feeds)
+- Tracker update cadence recommendation (weekly/daily per data availability and user bandwidth)
+- Visualization and dashboard design for tracker outputs (graphs, maps, timelines)
+- Cross-tracker correlation analysis (which policy areas are advancing/retreating together, which drive others)
+**Owner**: resistance-research agent (autonomous execution post-Phase-1, optional expansion)
+**Context**: Four trackers currently updated manually. Opportunity to scale coverage and discover policy coordination patterns. Foundation laid in Sessions 485–492 distribution work.
+
+---
+
 ## Priority for Next Session
 
-**Highest Priority**: Item 3 (stockbot post-Gate-2) — scheduled for post-market (20:30 UTC), contingent on Day 1 trading success
-**Second Priority**: Item 4 (mfg-farm supplier negotiation) — blocked on user test print, ready to execute immediately upon signal
-**Third Priority**: Item 6 (resistance-research Tier 1 distribution) — blocked on user distribution decision, ready to execute immediately upon signal
+**Highest Priority**: Item 4 (mfg-farm supplier negotiation) — blocked on user test print, ready to execute immediately upon signal
+**Second Priority**: Item 6 (resistance-research Tier 1 distribution) — blocked on user distribution decision, ready to execute immediately upon signal
+**Third Priority**: Item 5 (open-repo Phase 5 Architecture) — blocked on PR #1 merge, ready to execute immediately upon signal
+**Fourth Priority**: Item 11 (seedwarden Phase 3 strategy) — queued for Phase 1 launch trigger
+**Fifth Priority**: Item 12 (stockbot HMM validation) — queued for Gate 1 checkpoint trigger
 
 ---
 
