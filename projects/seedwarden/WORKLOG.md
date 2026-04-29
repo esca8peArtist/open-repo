@@ -4,6 +4,100 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 572 — 2026-04-29 — Item 16: Phase 2 Photography and Social Media Strategy
+
+**Task**: Execute Exploration Queue Item 16 — Design lifecycle photography strategy and mockup production plan for Phase 2 products. Enable Track B content production to proceed in parallel with Phase 1 approval/launch.
+
+**Files read before writing** (to avoid duplication and integrate with existing work):
+- `LIFESTYLE_PHOTOGRAPHY_STRATEGY.md` — hybrid rationale, cluster assignments, cost analysis
+- `PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md` — 3-week execution checklist, iStock strategy
+- `PHOTOGRAPHY_ROADMAP.md` — per-product shot lists, product photography map
+- `CANVA_EXECUTION_PLAYBOOK.md` — Canva workflow, Brand Kit hex codes and fonts
+- `PHASE2_PRODUCT_PRIORITIES.md` — Tier 1–3 sequencing by revenue
+- `WORKLOG.md` — full session history for context
+- `marketing/social-media-calendar.md` — 30-day launch calendar
+- `marketing/social-media-calendar-may-july-2026.md` — May–July week-by-week
+- `marketing/phase-3-platform-asset-specs.md` — platform dimensions and specs
+- `etsy-store-copy.md` — product names, prices, brand voice
+- `bundle-listings.md` — bundle product details
+
+**Deliverables produced**:
+
+1. **`projects/seedwarden/phase-2-photography-strategy.md`** (~2,100 words)
+   - Styling philosophy: 4 pillars (earthy/tactile, working not display, warm and honest, contained and practical)
+   - Mood board: 15 specific reference examples with URLs across all 5 product clusters — Unsplash, Pexels, iStock, Wikimedia Commons, blog references, and Etsy seller examples
+   - Lighting specifications: natural window light setup, artificial softbox fallback, exact color temperature parameters, full editing preset table (9 parameters with values and purpose)
+   - Camera and angle guidelines: flat-lay (overhead, product occupying 35–45% frame) and contextual (45–60 degree, one hand in frame)
+   - License and attribution tracking: per-license-type guidance (CC0, CC BY-SA, Unsplash/Pexels, iStock Standard), WORKLOG log format
+
+2. **`projects/seedwarden/phase-2-mockup-production-plan.md`** (~2,200 words)
+   - Variant inventory table: 7 mockup types per product, status (3 complete, 4 to produce)
+   - Tier 1 (5 products): per-product slot 4 + slot 5 specs with source image search strings, composite method, file output names, time estimates, physical photography Y/N
+   - Tier 2 products: all remaining Cluster A, B, C products with batch session assignments and prop variation notes
+   - Production schedule summary: week-by-week with estimated hours
+   - Full output file specification: naming convention table, all 21 product slugs, technical requirements
+   - AI-generated composite option: use cases, tool suggestions, Etsy policy note (AI images not permitted as primary listing image)
+
+3. **`projects/seedwarden/phase-2-social-content-calendar-60day.md`** (~3,000 words)
+   - Platform cadence table: Instagram (4–5/week), Pinterest (7–10 pins/week), TikTok (3–4/week)
+   - Week-by-week calendar with specific posts, formats, hooks, captions, hashtag stacks, and product tie-ins for all 8 weeks
+   - Week 1: Tier 1 product announcement, Pinterest batch build (5–7 pins), lifestyle photo launch posts
+   - Weeks 2–4: Cluster A seeds/garden, Cluster C preservation, Cluster B container/urban — each with its own Reel, carousel, and single-image posts
+   - Week 5: Analytics review protocol — Etsy Stats, Instagram Insights, Pinterest Analytics — with documentation instruction for WORKLOG
+   - Weeks 6–7: Preservation season ramp (ahead of July–September peak), board optimization, promoted pin experiment ($25 budget)
+   - Week 8: Phase 2 close, Phase 3 transition teasers, 60-day content bank build
+   - Posting time table: platform-specific optimal windows
+   - Product showcase sequencing table: 60-day product order with rationale
+   - Content pillar mix targets: 6 pillars with percentage targets
+
+4. **`projects/seedwarden/pin-template-specs.md`** (~2,400 words)
+   - 5 complete template designs ready for Canva implementation:
+     - Template 1 (Product Mockup Pin): 5 vertical zones, exact px heights, hex codes, font sizes, copy guidelines, Pinterest description field template with example
+     - Template 2 (Educational Hook Pin): layout for photo-background and flat-background variants, full hook text library (15+ ready-to-use hooks across 5 topic areas)
+     - Template 3 (Lifestyle Flat-Lay Pin): minimal overlay spec, cropping guide from 2400×2400px Etsy images to 1000×1500px Pinterest format
+     - Template 4 (Values/Perspective Pin): botanical illustration source guidance, 8 ready-to-use brand statements
+     - Template 5 (Carousel Pin Cover + Inner Slide Template): number/hook layout, inner slide consistency spec
+   - Canva implementation workflow: one-time setup, per-pin production (4–7 minutes/pin once templates configured)
+   - Full Phase 2 pin library target: 50–60 total pins, 5–7 hour batch production estimate
+
+**Design decisions**:
+- All 4 documents are written as additive to the existing photography strategy suite (LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md, PHOTOGRAPHY_ROADMAP.md, CANVA_EXECUTION_PLAYBOOK.md) — they do not duplicate content from those files. Cross-references are explicit.
+- Phase 2 photography strategy document focuses on the "what should this look like" question that the existing documents do not fully answer with mood board references and concrete visual examples.
+- The mockup production plan synthesizes the cluster-based approach from multiple prior documents into a single actionable per-product reference with specific search strings and composite instructions for each product.
+- The 60-day social calendar is explicitly sequenced by product revenue priority (Tier 1 first) rather than by cluster or alphabetical order — this ensures the highest-revenue-impact products receive social promotion immediately when the lifestyle photos are live.
+- The pin templates use the established Brand Kit (from CANVA_EXECUTION_PLAYBOOK.md Section 1.2) with no new color or font decisions — full consistency maintained.
+- The values/perspective template (Template 4) is included as a distinct template type because Seedwarden's political brand voice is a specific differentiator from other homesteading/gardening brands, and it needs its own design system to execute consistently without looking like it was added as an afterthought.
+
+**Files created**:
+- `phase-2-photography-strategy.md`
+- `phase-2-mockup-production-plan.md`
+- `phase-2-social-content-calendar-60day.md`
+- `pin-template-specs.md`
+
+---
+
+## Session 571 — 2026-04-28 — Canva Execution Playbook: Phase 2 Lifestyle Photography
+
+**Task**: Write step-by-step Canva execution guide for Phase 2 lifestyle photography following approved hybrid strategy (physical photos for 15 products, iStock for 6).
+
+**Deliverable**: `projects/seedwarden/CANVA_EXECUTION_PLAYBOOK.md` — 3,600 words, 7 sections.
+
+**Sections produced**:
+1. Canva Setup — account tier decision (Free vs. Pro, $15/month for background remover), Brand Kit with all 6 hex codes and 3 font pairings, team/Fiverr collaboration setup, master template strategy
+2. Tablet Mockup Workflow — 1280×960px canvas, 6-step build process, text sizing rules for Etsy thumbnails (minimum 18px), keyboard shortcuts, export to 2400×2400
+3. Phone Frame Workflow — 1170×2532px canvas, Canva Pro vs. free PNG mockup option, text placement rules, square crop technique for Etsy
+4. Interior Grid / Stock Compositing Workflow — 1200×900px, stock photo compositing steps, 80% opacity workaround for Free tier (no BG remover), brand consistency strip specification
+5. Batch Workflow and Efficiency — master template duplication discipline, round-by-round work order, Canva Pro Bulk Create feature, Fiverr outsourcing cost/time analysis (solo: 15–20 hrs, outsourced: 2–4 hrs)
+6. Quality Control Checklist — file naming convention with all 21 product slugs, technical specs, Etsy thumbnail preview test, brand consistency verification, export settings table
+7. Tools and Resources — Canva alternatives (Adobe Express, GIMP, Figma, Photoshop), design inspiration sources, brand quick-reference block
+
+**Integration**: Document links to LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md, and MOCKUP_STRATEGY.md. Product slug table uses exact filenames from existing `/mockups/` directory.
+
+**Files created**:
+- `CANVA_EXECUTION_PLAYBOOK.md`
+
+---
+
 ## Session 570 — 2026-04-28 — Phase 3 Specs JSON: Schema Upgrade to v1.1
 
 **Task**: Execute Phase 3 product expansion roadmap queue item. Confirmed both deliverables exist and are production-complete. Identified gap in JSON schema vs. task brief requirements.
