@@ -1144,6 +1144,23 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Cross-domain connections**: Deepens Domain 16 (Transparency & Accountability), strengthens Phase 1 distribution effectiveness
   - **Status**: Production-ready for Phase 3 distribution
 
+**NEW ITEMS (Session 621 — Exploration Queue Refresh)**:
+
+- **resistance-research: Objection Handling & Rebuttal Framework** (Priority HIGH, pre-distribution ROI)
+  - **Scope**: Create a structured framework for anticipating and rebutting common objections to the 35-domain democratic renewal proposal (bureaucratic inefficiency, political feasibility, implementation cost, international implications, legal barriers). Develop 3-5 evidence-based rebuttals per objection category with citations to existing research and case studies.
+  - **Rationale**: Pre-distribution preparation before wide dissemination (Path A/A+37/B decision). High-ROI for increasing stakeholder engagement and countering predictable counterarguments from policy institutions. 2-3 sessions estimate.
+  - **Status**: QUEUED
+
+- **stockbot: Engine Startup Orchestration Script** (Priority HIGH, unblocks live trading)
+  - **Scope**: Resolve the mismatch between `active-sessions.json` configuration and `run_live_trading.py` CLI argument model. Either: (1) create wrapper script `launch_stacker_engine.py` that reads active-sessions.json and spawns multi-ticker stacker sessions, or (2) refactor `run_live_trading.py` to support config-file-based startup with `--config active-sessions.json` flag. Validate Alpaca API authentication and test multi-ticker session startup.
+  - **Rationale**: Currently blocking engine restart (critical path to Gate 1 pass). Script incompatibility is preventing automated multi-ticker deployment. 2-3 sessions estimate.
+  - **Status**: QUEUED
+
+- **seedwarden: Phase 2 Execution Timeline and Photographer Briefing Package** (Priority MEDIUM, Phase 2 launch prep)
+  - **Scope**: Create production timeline for Phase 2 lifestyle photography (based on approved LIFESTYLE_PHOTOGRAPHY_STRATEGY.md decision): deliverable schedule, photographer briefing, product selection rationale, shot list with composition notes, styling guide, approval workflow, and integration with Phase 1 upload. Output: `PHASE2_EXECUTION_TIMELINE.md` + `photographer-briefing-package.md`.
+  - **Rationale**: Bridges Phase 1 launch (awaiting tag corrections) and Phase 2 execution (awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY approval). High-ROI for maintaining production momentum post-Phase-1-launch. 1-2 sessions estimate.
+  - **Status**: QUEUED
+
 ---
 
 ## Completed (Archive)
