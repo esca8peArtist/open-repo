@@ -4,6 +4,34 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 662 — 2026-04-30 — Phase 2 Mockup Sourcing Execution + Pin Production Schedule
+
+**Task**: Execute Phase 2 mockup sourcing inventory audit, produce pin production schedule, identify and log blockers. Track B scope — independent of Phase 1 Etsy status.
+
+**Context read**: `phase-2-mockup-sourcing-inventory.md`, `phase-2-canva-pin-production-checklist.md`, `phase-2-execution-timeline.md`, `phase-2-mockup-production-plan.md`, `TRACK_B_LAUNCH_STATUS.md`, `WORKLOG.md`.
+
+**Files produced**:
+- `projects/seedwarden/phase-2-execution-log.md`: Running production log for all Phase 2 mockup sourcing. Documents all 21 products across clusters A/B/C/D/E with per-product per-slot status (shot/edited/etsy-ready). Confirms 63 existing mockup files (slots 1–3, all 21 products) are complete and consistently named. Includes April 30 calendar note recommending front-loading Cluster A shoot into Week 1. Logs the three newly created staging directories.
+- `projects/seedwarden/pin-production-schedule.md`: Four-part schedule covering (A) Canva template build plan with session structure for all 9 master files, (B) batch production timeline with 4 sessions mapped to weeks, (C) scheduling tool selection — recommends Pinterest Native + Meta Business Suite (free) over Later Starter ($18/month) for Phase 2 volume, with Later upgrade trigger defined, (D) launch date estimate with three scenarios recommending Week 1 launch using Template 1 product pins (no lifestyle image dependency).
+- `projects/seedwarden/phase-2-blockers.md`: Two active blockers (Canva Brand Kit not configured; lifestyle photos not yet produced) and one advisory (slug inconsistency on Hunting/Fishing/Trapping Manual — correct slug is `hunting-fishing-trapping-field-manual`).
+
+**Directories created**:
+- `projects/seedwarden/assets/stock-raw/` — staging directory for raw stock downloads before compositing
+- `projects/seedwarden/marketing/lifestyle-photos/etsy-ready/` — final output for slot 4/5 images (2400×2400px JPEG)
+- `projects/seedwarden/marketing/lifestyle-photos/pins/` — Pinterest pin output (1000×1500px JPEG)
+
+**Image downloads this session**: 0 (sourcing sprint not yet executed — stock sourcing requires iStock/Pexels access and user scheduling)
+
+**Key findings**:
+1. Slots 1–3 for all 21 products are complete (63 files confirmed). Zero slot 4/5 images exist. Full Phase 2 mockup production scope is 42 images to produce (2 per product × 21 products).
+2. Template 1 product mockup pins (21 pins) are buildable immediately using existing mockup images — no lifestyle photos required. These can publish Week 1 once Brand Kit is configured.
+3. Free scheduling tools (Pinterest Native + Meta Business Suite) cover full Phase 2 needs. Later Starter ($18/month) is the upgrade path if pin volume exceeds 30/month per profile.
+4. The critical path to first published pins is entirely user-side: Canva Brand Kit setup (30 min). All downstream work is unblocked after that action.
+5. Cluster A front-loading to Week 1 is feasible if props (seed envelopes, mason jars, dried chilis) are on hand or can be sourced locally within 1–2 days.
+6. Slug discrepancy for Hunting Manual noted: `hunting-fishing-trapping-field-manual` is the correct slug (matches existing mockup filenames); sourcing docs sometimes omit `-field-`. Must use correct slug at compositing time.
+
+---
+
 ## Session 646 — 2026-04-29 — Phase 1 Contingency Planning + Track B Independent Launch Strategy
 
 **Task**: Phase 1 upload has been blocked for multiple sessions (tag corrections + Etsy account verification, no ETA). Contingency trigger for Item 25 met. Produce three production-ready documents: Phase 1 contingency decision tree, concurrent track execution plan, and Track B independent launch roadmap.
