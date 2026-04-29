@@ -4,6 +4,74 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 19:50–21:15 UTC — Orchestrator Session 652 — Live Market Verification + Phase 2 Updates
+
+**Status**: 🔄 IN PROGRESS — Stockbot agent ✅ COMPLETE (critical issues identified), resistance-research agent pending
+
+**Stockbot Live Market Verification (Agent ada86140026dfcdaa) ✅ COMPLETE**:
+
+### Engine Status & Signal Generation
+- ✅ **Engine RUNNING** — PID 1241288, started 12:27 UTC (operational ~9 hours)
+- ✅ **All 11 target tickers generated signals** — 153-156 signals each during market hours (13:30-20:00 UTC)
+- ✅ **All 67 configured tickers active** — no silent ticker failures or exits
+- ✅ **26 orders submitted** to Alpaca during market hours (AAPL, AMZN, UNH, INTC, CAT, HON, SHW, WMT, CVX, COP, LIN, COST, MRK, PG, NEE, etc.)
+
+### Session 651 Bug Fixes — VALIDATED
+- ✅ **No `allocated_budget=None` warnings** (budget key mismatch fixed)
+- ✅ **Zero qty<1 rejections** (fractional share guard active with no false positives)
+- ✅ `_MIN_FRACTIONAL_QTY = 0.001` guard confirmed operational
+
+### Critical Issues Identified
+
+| Issue | Severity | Impact | Status |
+|-------|----------|--------|--------|
+| **Fill confirmation failures** | 🔴 CRITICAL | 0/26 orders confirmed filled; all show "pending_new" in Alpaca API. Orders accepted but poll timeout prevents confirmation. Actual fills likely async but unverified. | Requires Alpaca API check at 2026-04-30 09:00 UTC to verify fills |
+| **Duplicate order submissions** | 🔴 CRITICAL | INTC (3 dupes), AMZN (2), UNH (3) — poll timeout causes re-entry into signal path and resubmit. Creates unintended double-orders. | Need to trace poll loop and add idempotency guard |
+| **Discord webhook URLs unset** | 🔴 CRITICAL | `STOCKBOT_DISCORD_WEBHOOK_URL` and `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` not in engine process environment. All 241 drawdown alerts + daily market-close summary silently skipped. | Set env vars in Jetson deployment or launcher script |
+| **Database sync broken** | 🔴 CRITICAL | `stockbot.db` shows 0 trades recorded today (no `created_at = 2026-04-29` rows). Positions going to Alpaca paper API, not local DB. Blocks Gate 1 round-trip tracking. | Need to wire Alpaca fills → trades table when fills confirmed |
+| **Feature mismatch LightGBM** | 🟡 MEDIUM | Pre-existing: 61 vs 116 feature mismatch, falls back to `predicted_return=0.5, action=HOLD` | Already documented, lower priority |
+| **MTF 15Min feature failures** | 🟡 LOW | Intermittent, fallback to daily-MTF active, signals not blocked | Acceptable, monitoring |
+
+### Log Analysis
+- Trading log size: 14,577 lines as of 20:53 UTC
+- False positives detected: "TRADING HALTED CRITICAL" lines confirmed as pytest test artifacts (temp DB names: `test-session-001`, `tmplsb6ggri.db`), not live engine
+- Rate limit retries: Low volume, self-recovering
+
+### Next Checkpoint
+- **2026-04-30 13:15 UTC** — Verify engine still running pre-market-open
+- **2026-04-30 post-market-close** — Check Alpaca paper account for actual fill status on 26 orders
+- **Immediate actions needed**:
+  1. Set Discord webhook environment variables before next market session
+  2. Investigate poll timeout causing duplicate submissions
+  3. Verify database sync from Alpaca fills to local DB
+  4. Check if AVGO and high-price tickers are actually executing (allocation fix should enable, but database shows 0 trades)
+
+**Commits made by agent**: stockbot submodule `6888b35` (local WORKLOG update)
+
+**Work Spawned** (parallel agents):
+1. **stockbot monitoring** (agent ada86140026dfcdaa):
+   - Verify engine process still running post-market-close (20:00 UTC)
+   - Check trading logs for 2026-04-29 execution: signals generated, orders placed, trades completed
+   - Validate allocation bugs are fixed in live execution (fractional shares executing, no qty<1 rejections)
+   - Verify Discord daily summary posted
+   - Check AVGO and other high-price tickers are executing (allocation fix enabled these)
+   - Report: engine status, trading summary, any allocation issues found
+
+2. **resistance-research Phase 2 updates** (agent a34e75436f211e34b):
+   - FISA Section 702 post-April-30 outcome update (outcome determination today/tomorrow)
+   - Electoral forensics framework integration into Domain 37
+   - SAVE Act Senate failure case study for Domain 1
+   - State legislative autocratization ballot-initiative data update for Domain 33
+   - Priority: FISA 702 (time-critical) → Electoral Forensics → Voting Rights → State Autocratization
+
+**Orchestration Work** (parallel, non-overlapping):
+- Process INBOX.md: ✅ No new items
+- Prepare WORKLOG updates for completion
+- Stage BLOCKED.md review for mfg-farm test print status (no change)
+- Prepare session completion and master commit
+
+---
+
 ## 2026-04-29 20:15–21:00 UTC — Orchestrator Session 651 — Allocation Bug Fixes & Multi-Ticker Validation
 
 **Status**: ✅ Two critical allocation bugs discovered and fixed. Multi-ticker paper trading now operational with correct budget allocation. Gate 1 monitoring established.

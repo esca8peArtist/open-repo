@@ -1,3 +1,37 @@
+## Since Last Check-in (Session 652 — 2026-04-29 19:50–TBD UTC — LIVE MARKET VERIFICATION & PHASE 2 UPDATES)
+
+### ✅ Work In Progress: Two Parallel Agents (Stockbot Monitoring + Resistance-Research Updates)
+
+**Agents Spawned** (2026-04-29 ~19:50 UTC):
+1. **Stockbot monitoring** (ada86140026dfcdaa) — ✅ COMPLETE
+2. **Resistance-research Phase 2** (a34e75436f211e34b) — ⏳ IN PROGRESS
+
+**What was accomplished**:
+
+### 1. ✅ Stockbot Live Market Verification (Session 652 Agent Work)
+
+**Engine & Signal Status**:
+- ✅ Engine running (PID 1241288, ~9 hours uptime)
+- ✅ **All 11 target tickers + 67 configured tickers generating signals** (153-156 signals each during market hours)
+- ✅ **26 orders successfully submitted** to Alpaca (AAPL, AMZN, UNH, INTC, CAT, HON, SHW, WMT, CVX, COP, LIN, COST, MRK, PG, NEE, etc.)
+- ✅ **Session 651 bug fixes validated**: No `allocated_budget=None`, zero qty<1 rejections, fractional share guard active
+
+**Critical Issues Identified** (require immediate attention before 2026-04-30 market open):
+1. 🔴 **Fill confirmation failures** (0/26 confirmed) — Orders show "pending_new" in Alpaca; fills may be asynchronous but unconfirmed. Need Alpaca API check at 2026-04-30 post-market.
+2. 🔴 **Duplicate order submissions** — INTC (3x), AMZN (2x), UNH (3x) due to poll timeout re-entry creating unintended double-orders.
+3. 🔴 **Discord webhook env vars missing** — All notifications silently skipped (241 drawdown alerts + daily summary). Must set `STOCKBOT_DISCORD_WEBHOOK_URL` + `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` before next session.
+4. 🔴 **Database sync broken** — `stockbot.db` shows 0 trades recorded today; positions in Alpaca API, not local DB. Blocks Gate 1 round-trip tracking.
+5. 🟡 Pre-existing: LightGBM feature mismatch (61 vs 116), falls back to HOLD
+
+**Next Checkpoint**: 2026-04-30 13:15 UTC (pre-market verification)
+
+**Agent commits**: stockbot submodule `6888b35` (local WORKLOG)
+
+### 2. ⏳ Resistance-Research Phase 2 Updates (Session 652 Agent Work)
+- [Awaiting agent completion notification...]
+
+---
+
 ## Since Last Check-in (Session 651 — 2026-04-29 20:15–21:00 UTC — ALLOCATION BUG FIXES & MULTI-TICKER VALIDATION)
 
 ### ✅ Work Completed: Two Critical Allocation Bugs Fixed; Multi-Ticker Paper Trading Validated

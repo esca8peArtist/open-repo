@@ -286,6 +286,15 @@
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
 **Current focus**: 
+**Session 652 (2026-04-29) — LIVE MARKET EXECUTION ISSUES IDENTIFIED**:
+1. **Critical: Fill confirmation failures** — 26 orders submitted but 0/26 confirmed filled. All show "pending_new" in Alpaca. Requires Alpaca API verification at 2026-04-30 to confirm async fills.
+2. **Critical: Duplicate order submissions** — INTC (3x), AMZN (2x), UNH (3x) due to poll timeout re-entry. Need idempotency guard.
+3. **Critical: Discord webhook env vars unset** — All notifications silently skipped (241 alerts + daily summary). Set env vars before next session.
+4. **Critical: Database sync broken** — `stockbot.db` shows 0 trades today. Positions in Alpaca API, not local DB. Blocks Gate 1 tracking.
+5. **Validated**: Session 651 bug fixes working (no allocation=None, fractional shares active, 26 orders submitted successfully)
+6. **Validated**: All 11 target tickers + 67 configured tickers generating signals (153-156 signals each during market hours)
+7. **Action required before 2026-04-30 market open**: Check Alpaca paper account for fill status, set Discord env vars, add idempotency guard to prevent duplicate orders
+
 **Session 651 (2026-04-29) — ALLOCATION BUG FIXES COMPLETE**:
 1. **Critical Dict Key Mismatch Bug** — `compute_allocated_budgets()` keyed by `session_00`, `session_01`, but lookups used hex session IDs. Every session got `allocated_budget=None`, recreating the collision. **Fix**: `pre_allocate_budgets()` now accepts `session_ids` list; `launch_stacker_sessions.py` extracts actual IDs before calling.
 2. **Fractional Share Rejection Bug** — BUY/SELL paths checked `if qty < 1` and skipped, even though Alpaca supports fractional down to 0.001. High-price tickers got silently rejected. **Fix**: Added `_MIN_FRACTIONAL_QTY = 0.001` constant; guards now allow fractional execution.
