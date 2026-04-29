@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-28T23:34:56Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-29T00:36:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.3% (24,438 tokens) | All-models 26.8% | Reset in 144h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.5% (48,020 tokens) | All-models 28.9% | Reset in 143h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -58,6 +58,12 @@
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
+**Resolution**:
+### stockbot — Engine not running; Alpaca account setup required
+**Date blocked**: 2026-04-29
+**Context**: Orchestrator Session 615 verification: (1) Process check shows engine NOT running (`ps aux | grep run_live_trading` returns empty). (2) Previous resolution log (2026-04-29 00:16:41 UTC) claimed engine restarted with 11 tickers loaded, but verification reveals engine never actually ran on 2026-04-28 during market hours. (3) No production trades recorded on 2026-04-28 despite 17 open BUY positions from 2026-04-27. (4) Last actual trade in database: DIS BUY on 2026-04-27. (5) Earlier block (Session 596) identified root cause: Alpaca account had zero day-trading buying power (error 40310000). Orchestrator cannot restart engine without addressing account setup first.
+**What I need**: (1) Verify Alpaca account has sufficient buying power for paper trading. (2) Run engine startup with proper environment: `cd projects/stockbot && nohup uv run python scripts/run_live_trading.py --strategy stacker --tickers AAPL MSFT GOOGL NVDA AMZN META JPM ... &`. (3) Confirm engine logs to `/projects/stockbot/logs/trading_YYYYMMDD.log` and shows active trades during market hours.
+**Verify with**: `ps aux | grep run_live_trading | grep -v grep` — should show running process; if present + log file has recent activity, block is resolved.
 **Resolution**:
 ---
 

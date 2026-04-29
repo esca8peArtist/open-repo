@@ -152,17 +152,15 @@
 
 ## Active Exploration Items (Session 616+)
 
-### ✅ Item 16: seedwarden Track B - Phase 2 Photography & Social Media Mockup Strategy (Session 616)
-**Status**: QUEUED — Ready to execute immediately (independent of Phase 1 blockers)
+### ✅ Item 16: seedwarden Track B - Phase 2 Photography & Social Media Mockup Strategy (Session 617 COMPLETE)
+**Status**: COMPLETED 2026-04-29 06:15 UTC
 **Scope**: Design lifestyle photography strategy and mockup production for Phase 2 products; align with social media organic growth (Instagram/Pinterest/TikTok)
-**Deliverables**: 
-- Photography reference guide (mood board, styling, 10-15 reference examples)
-- Mockup production plan (tablet, phone, lifestyle variants for each Phase 2 product)
-- Social media content calendar template (60-day roadmap for Phase 2 launch)
-- Pinterest/Instagram pin templates optimized for seedwarden aesthetic
-**Owner**: seedwarden agent
-**Timeline**: 2-3 hours
-**Outcome**: Enables Track B independent execution once Phase 1 tag corrections approved
+**Deliverables** (all committed to master, commit 3d9bc05): 
+- `phase-2-photography-strategy.md` — Visual direction brief with 15+ reference examples, lighting specs, camera angles, Lightroom preset values
+- `phase-2-mockup-production-plan.md` — Per-product assignment (stock vs. physical), iStock search strings, production schedule with time estimates, Tier 1 detailed first
+- `phase-2-social-content-calendar-60day.md` — Day-by-day 8-week calendar with specific hooks, content formats, platform assignments, product showcase sequencing
+- `pin-template-specs.md` — 5 pin templates with exact pixel specs, hex codes, font names/sizes, ready-to-use hook library, Canva workflow estimates
+**Outcome**: Track B execution can proceed immediately without Phase 1 tag corrections. Photography guide is actionable (preset values + reference links), mockup assignments eliminate guesswork, social calendar is product-priority ordered, pin templates are ready for Canva batch production.
 
 ---
 
@@ -185,18 +183,22 @@
 
 ---
 
-### ✅ Item 18: mfg-farm Laser/Resin/Injection Economics Deep-Dive (Session 616)
-**Status**: QUEUED — Ready to execute immediately (independent of test print status)
-**Scope**: Research adjacent manufacturing technologies for Phase 3-4 product candidates; build detailed ROI models
-**Deliverables**:
-- Laser engraving economics: equipment costs, per-unit variable costs, setup time, learning curve, competitive benchmarking
-- Resin printing economics: equipment, materials, post-processing labor, failure rates, market demand
-- Injection molding options: contract manufacturers, tooling costs, minimum order quantities, unit economics
-- Technology comparison matrix (investment required, breakeven, annual revenue ceiling per technology)
-- 12-month rollout plan with capital allocation
-**Owner**: mfg-farm agent
-**Timeline**: 2-3 hours
-**Outcome**: Enables post-test-print supplier negotiation to include adjacent technology recommendations; supports Phase 3 roadmap execution
+### ✅ Item 18: mfg-farm Laser/Resin/Injection Economics Deep-Dive (Session 617 COMPLETE)
+**Status**: COMPLETED 2026-04-29 06:15 UTC
+**Scope**: Research adjacent manufacturing technologies for Phase 3-4 product candidates; build detailed ROI models and capital allocation plans
+**Deliverables** (all committed to master):
+- `ITEM18_ADJACENT_MANUFACTURING_ECONOMICS.md` (~9,000 words, 692 lines) — Complete technology analysis with equipment costs, variable costs, break-even analysis, market opportunity, competitive benchmarking, risk assessment
+- `technology-comparison-matrix.csv` (8-row structured matrix) — FDM baseline vs. laser/resin/injection molding with equipment cost, COGS @100/1K units, break-even volume
+- `12-month-rollout-capital-plan.md` (352 lines) — Month-by-month rollout with capital gates, decision trees, validation approach
+
+**Key findings**:
+- **Laser engraving (Tier 1)**: xTool S1 40W ($1,899) is the right machine. Break-even at 100 units/month: 5.1 months. Contract-shop validation costs only $50-150. Annual ceiling: $30K-60K net from laser products.
+- **Resin printing (Tier 2)**: Elegoo Saturn 4 Ultra ($574 all-in) is low-risk exploratory investment. Post-processing labor (20-25 min/part) is constraint — 3-4x FDM COGS. Viable only for specialty products (transparent organizers, gaming pieces), not commodity clips. Formlabs Form 4 only justified at >$800/month resin revenue.
+- **Injection molding (Tier 3)**: Break-even vs. FDM at ~4,600 cumulative units (9.2 months at 500/mo). Only pursue at >500 sustained units/month single SKU. Fictiv recommended (10-15 day T1, no stated MOQ).
+
+**Recommended sequence**: Month 1 contract-shop test ($150) → Month 3 buy xTool S1 if >50 engraved/month → Month 4 buy Elegoo Saturn 4 ($574) → Month 6+ Formlabs Form 4 only if >$800/month resin revenue → Month 7+ injection molding gate check only if >500/month single SKU
+
+**Outcome**: Production-ready for post-test-print supplier negotiation. Informs capital allocation decisions and technology sequencing. Supports Phase 3 roadmap execution with data-driven recommendations.
 
 ---
 

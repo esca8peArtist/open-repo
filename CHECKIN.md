@@ -5,7 +5,88 @@
 
 ---
 
-## Since Last Check-in (Session 616 — 2026-04-29 03:50 UTC — Current)
+## Since Last Check-in (Session 617 — 2026-04-29 06:20 UTC — Current)
+
+### ✅ Exploration Queue Items 16 & 18 COMPLETE | Parallel Execution
+
+**Status**: All high-priority projects continue blocked on user actions (stockbot engine restart, mfg-farm test print, resistance-research distribution decision, seedwarden Etsy verification, cybersecurity Tier 1 approval, open-repo PR merge). Executed Items 16 & 18 from exploration queue in parallel.
+
+---
+
+### What Happened
+
+#### ✅ Item 16: seedwarden Phase 2 Photography & Social Media Strategy COMPLETE
+- **Files created** (committed master, commit 3d9bc05):
+  1. `phase-2-photography-strategy.md` — Visual direction brief with 15+ reference examples, lighting specs, camera angles, Lightroom preset values
+  2. `phase-2-mockup-production-plan.md` — Per-product assignment (stock vs. physical), iStock search strings, production schedule with time estimates
+  3. `phase-2-social-content-calendar-60day.md` — Day-by-day 8-week calendar with specific hooks, content formats, platform assignments, product showcase sequencing
+  4. `pin-template-specs.md` — 5 pin templates with exact pixel specs, hex codes, font names/sizes, ready-to-use hook library, Canva workflow estimates
+
+- **Key deliverables**: Photography guide is actionable (preset values + reference links). Mockup assignments eliminate guesswork (Tier 1 products detailed first). Social calendar is product-priority ordered. Pin templates ready for Canva batch production.
+
+- **Status**: Production-ready for Phase 2 launch. Track B execution can proceed immediately without Phase 1 blockers (tag corrections).
+
+#### ✅ Item 18: mfg-farm Laser/Resin/Injection Economics Deep-Dive COMPLETE
+- **Files created** (committed master):
+  1. `ITEM18_ADJACENT_MANUFACTURING_ECONOMICS.md` (~9,000 words, 692 lines) — Complete technology analysis
+  2. `technology-comparison-matrix.csv` (8-row comparison: FDM baseline vs. laser/resin/injection molding)
+  3. `12-month-rollout-capital-plan.md` (352 lines, decision trees)
+
+- **Key findings**:
+  - **Laser engraving (Tier 1)**: xTool S1 40W ($1,899) is right machine. Break-even at 100 units/month: 5.1 months. Contract-shop validation: $50-150.
+  - **Resin printing (Tier 2)**: Elegoo Saturn 4 ($574) is low-risk entry. Post-processing labor 20-25 min/part is constraint (3-4x FDM COGS). Viable only for specialty products (transparent organizers, gaming pieces).
+  - **Injection molding (Tier 3)**: Break-even ~4,600 units (9.2 months at 500/month). Only pursue at >500 sustained single SKU.
+
+- **Recommended sequence**: Month 1 contract-shop test ($150) → Month 3 buy xTool S1 if >50 engraved/month → Month 4 buy Elegoo Saturn 4 → Month 6+ Formlabs Form 4 if >$800/month resin → Month 7+ IM gate check if >500/month.
+
+- **Status**: Production-ready for post-test-print supplier negotiation. Informs capital allocation decisions.
+
+---
+
+### 📊 Parallel Execution Summary
+
+**Execution model**: 2 concurrent agents (seedwarden + general-research)
+
+**Items completed**: 2 (Items 16 & 18)
+
+**Duration**: ~22 minutes total (research + analysis + writing + commits)
+
+**Output**: 7 production-ready files across 2 projects (seedwarden, mfg-farm)
+
+**Outcome**: Exploration queue remains healthy (>3 active items). Both deliverables immediately actionable without project blockers. Track B for seedwarden can proceed in parallel with Phase 1 tag corrections. Adjacent manufacturing roadmap ready for post-test-print supplier decisions.
+
+---
+
+### 📌 Current Project Status (Updated 2026-04-29 06:20 UTC)
+
+| Project | Status | Blocker | Notes |
+|---------|--------|---------|-------|
+| **resistance-research** | ✅ READY | User distribution decision | Framework complete: 35 domains + Phase 1-5 + Domain 39 candidates identified. |
+| **stockbot** | 🔴 BLOCKED | Engine restart (CRITICAL) | Engine not running. Feature bug fixed. Awaiting restart before market hours. |
+| **mfg-farm** | ✅ READY | Test print confirmation | Business plan + CadQuery designs + supplier research + Item 18 economics complete. |
+| **seedwarden** | ✅ READY (Track B) | Phase 1 tag corrections (Track A) | Phase 1-3 complete. Track B photography strategy (Item 16) now complete—no blockers. |
+| **cybersecurity-hardening** | ✅ READY | Tier 1 approval | All 3 distribution tiers production-ready + Tier 2 messaging (Item 14) complete. |
+| **open-repo** | ⏳ WAITING | PR #1 merge | Phase 4 complete. Phase 5-6 architectures ready. |
+| **off-grid-living** | ✅ COMPLETE | Social media distribution | Publication + campaign plan complete. Awaiting user execution. |
+| **workout** | ✅ COMPLETE | User review | Comprehensive plan complete (1,053 lines). Awaiting user selection. |
+
+---
+
+### ⚡ Action Items Needing User Input (Prioritized)
+
+1. **[CRITICAL — before 13:30 UTC any market day]** stockbot engine restart — Engine NOT running. Command: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`. Without this, Gate 1 validation cannot proceed.
+
+2. **[HIGH PRIORITY]** resistance-research distribution path — Choose Path A / Path A+Domain37 Hybrid / Path B. Once chosen, Phase 1 institutional outreach begins immediately.
+
+3. **[MEDIUM PRIORITY — no sequential dependency]** seedwarden Phase 1 upload — Provide 3 tag corrections + Etsy account verification. Track B (photography, social calendar) is now complete and can proceed in parallel.
+
+4. **[MEDIUM PRIORITY]** mfg-farm test print — Run test print of CadQuery designs. Item 18 adjacent manufacturing research is now complete and ready for post-test-print supplier negotiation.
+
+5. **[MEDIUM PRIORITY]** cybersecurity-hardening Tier 1 approval — Approve TIER1_MESSAGING_TEMPLATES.md so Tier 1 outreach can begin.
+
+---
+
+## Since Last Check-in (Session 616 — 2026-04-29 03:50 UTC)
 
 ### ✅ Exploration Queue Item 17 COMPLETE | Domain 39 Candidate Scoping
 
