@@ -4,6 +4,23 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 05:10 UTC — open-repo — Phase 5 Federation Conflict Resolution Architecture
+
+**Task**: Research and design federation conflict resolution and scaling architecture for Phase 5 (post-PR#1 merge planning).
+
+**Completion**: ✅ COMPLETE — `phase-5-conflict-resolution-architecture.md` (6,700 words, committed 7aeee83)
+
+**Key Research**:
+- Five federation conflict scenarios analyzed with subtlety: content conflict (LWW loses edits silently), version divergence (ActivityPub has no catch-up), trust cascades (compromised partner broadcasts bad data network-wide), split-brain (accept divergence, surface for review), rollback (forward-update via new activity + event log)
+- Architecture recommendation: version vectors + append-only event log + quarantine trust state (handles all 5 for up to ~50 nodes, avoids consensus + CRDT schema migrations)
+- Consensus protocols (Raft, PBFT) rejected: break voluntary federation model
+- CRDTs endorsed for commutative counters only, not structured metadata
+- Sources: CRDTs (Shapiro), Raft, vector clocks, Cassandra Dynamo, Matrix StateRes, IPFS Merkle DAG, Git merge, ActivityPub spec, Gossip protocols, Wikimedia Knowledge Integrity
+
+**Strategic Impact**: Phase 5 implementation now has concrete architectural foundation. PR #1 merge unblocks immediate Phase 5 development. Exploration queue item COMPLETE.
+
+---
+
 ## 2026-04-29 04:25 UTC — off-grid-living — Regional Implementation Guides (Exploration Queue)
 
 **Task**: Create climate-specific regional adaptation guides for 5-6 geographic regions. Main guide published; regional guides are expansion for practical utility.
