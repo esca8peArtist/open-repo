@@ -108,7 +108,41 @@ Sources: [The Hill: House Republicans face FISA, reconciliation bill challenges 
 - Domain 1 (Voting Rights): warrant requirement status determines election organizer surveillance window
 - Domain 33 (SAVE Act separation): SAVE Act was on or off the FISA vehicle — confirm separation
 
-*Checklist status: PENDING — fill after April 29-30 outcome. April 29 update: bill appears to have imploded; emergency stopgap most likely outcome.*
+### April 29 Evening Update — Rules Committee Advances Bill
+
+**Updated**: April 29, 2026 (evening)
+
+Late on April 29, the House Rules Committee advanced a procedural rule to allow floor consideration of three major bills: the Foreign Intelligence Accountability Act (three-year FISA reauthorization), the Farm Bill, and the Senate-passed budget reconciliation blueprint. The Rules Committee vote came after a marathon hearing stretching over two days in which Democrats offered amendment after amendment. The three-year FISA extension — without a warrant requirement for U.S. person queries — is now positioned for a full House floor vote on April 29-30.
+
+This represents a significant procedural development: the bill that was described as having "imploded" on April 28 (when the Rules Committee recessed without acting) was revived within 24 hours. The earlier collapse appears to have been a negotiating posture rather than a final breakdown.
+
+**What the three-year bill contains (confirmed)**:
+- Three-year extension of Section 702 authority
+- Monthly Civil Liberties Protection Officer reviews of U.S. person queries
+- Attorney-level approval for queries (replacing field supervisor approval)
+- Expanded GAO audit authority
+- Strengthened criminal liability for FBI employees who misuse the program
+- No warrant requirement for queries on U.S. persons
+- Commercial data broker loophole remains open
+
+**What changed to revive it**: Not fully clear from available reporting. The bill text is substantively the same as the April 24 version that was criticized as "Fool's Gold" by Just Security. The Rules Committee's overnight turnaround suggests leadership made vote-count commitments to previously opposed Freedom Caucus members that are not yet public.
+
+**Republican opposition bloc status**: The confirmed opposition bloc (Burchett, Norman, Self, Massie, Boebert + approximately 10 more) on Fourth Amendment warrant grounds is still formally in place as of April 29 morning. Whether any of these members will break in the final floor vote is the outstanding variable. With a 53-seat margin in the House, Republicans can lose approximately 2-3 members if Democrats vote no (which 98 House Democrats are committed to doing under the CPC letter).
+
+**Updated probability framework (evening April 29)**:
+1. Three-year renewal, no warrant requirement: **most likely** — Rules Committee advancement is the decisive procedural step; leadership would not advance unless vote count was secured
+2. Brief lapse followed by emergency action: **second most likely** — if Freedom Caucus bloc holds and procedural rule fails on the floor
+3. Further emergency stopgap by unanimous consent: **third** — path of last resort if floor vote fails; increasingly unlikely given Rules Committee has acted
+4. Warrant amendment attached and passes: **least likely** — no change
+
+**Surveillance reform implication**: If the three-year renewal passes without the warrant requirement, the civil liberties community's assessment is that Section 702 will remain unreformed until at minimum 2029 — beyond the next election cycle. EFF, CDT, and ACLU have all indicated they will seek judicial challenges to any renewal that preserves the warrantless U.S. person query authority. The commercial data broker loophole, unaddressed by any pending proposal, will continue to enable ICE/DHS location surveillance of immigrant communities and protest organizers through Venntel/Babel Street/Accurint relationships documented in Parts 1-3 of this tracker.
+
+Sources:
+- [The Hill: House Rules Committee advances FISA Section 702, farm bill, ICE funding (April 29, 2026)](https://thehill.com/homenews/house/5853444-house-rules-fisa-farm-bill-dhs/)
+- [Fox News: Mike Johnson faces revolt from GOP privacy hawks as FISA renewal deadline looms (April 29, 2026)](https://www.foxnews.com/politics/mike-johnson-faces-revolt-from-gop-privacy-hawks-threatening-kill-fisa-renewal-deadline-looms)
+- [CBS News: Renewal of FISA surveillance program in limbo ahead of Thursday deadline (April 29, 2026)](https://www.cbsnews.com/news/renewal-fisa-section-702-surveillance-program-house-vote-thursday-deadline/)
+
+*Checklist status: PENDING — fill after April 29-30 floor vote. April 29 evening update: Rules Committee advanced three-year bill; floor vote imminent; no-warrant version now most likely outcome.*
 *Correction note: Session 608 (April 28, 2026) identified and corrected prior session's research error conflating 2024 RISAA outcome with projected 2026 outcome*
 
 Sources (April 29 additions):

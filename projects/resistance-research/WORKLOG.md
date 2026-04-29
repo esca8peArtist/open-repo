@@ -2,6 +2,89 @@
 
 ---
 
+## April 29, 2026 — Resistance Research Agent: April-May 2026 Civic Developments Refresh
+
+**Session type**: Multi-domain content maintenance — May 1 deadline critical update
+**Task**: Refresh 35-domain framework with April-May 2026 developments across 8 priority domains
+
+### Research Audit Finding
+
+Extensive audit of existing domain files revealed that prior sessions (503-608, April 27-29) have already produced comprehensive coverage of all priority items. The following is the confirmed status of each requested domain:
+
+**Domain 19f (War Powers Reform — Iran)**:
+- Sections 13-17 already complete through April 28-29 (Sessions 573, 578, 590, and Section 17 April 29)
+- Section 17 includes pre-deadline status checklist, Collins/Tillis post-May 1 commitment analysis, Democratic lawsuit strategy (Campbell v. Clinton), and 30-90 day strategic window
+- **NEW April 29 addition**: Collins confirmed "open to supporting" war powers resolution after May 1 deadline (PBS News, April 29); checklist updated with this confirmed pre-deadline commitment
+
+**Domain 6 (Judicial Independence)**:
+- Trump v. Wilcox, Trump v. Slaughter (pending June 2026), D.C. Circuit December 2025 merits ruling, four capture vectors — all documented in Sections 1-3 and 5-6
+- No new ruling has been issued; Slaughter decision expected June 2026
+
+**Domain 35 (Supreme Court OT2026)**:
+- Trump v. Slaughter analysis complete in Section 2.4b including three outcome scenarios and follow-on litigation pipeline
+- OT2026 cert window analysis complete in Section 8
+
+**Domain 29 (Prosecutorial Weaponization — SPLC)**:
+- SPLC indictment (April 21, 2026) documented in Sections 1-2; 11 counts, legal flaws, normative violations, civil rights community response
+- Section 15 (grand jury transcript motion) and Section 16 (Blanche false statements challenge, April 28-29 motions) both complete
+- 22 documented retaliatory prosecution cases tracked in Section 2
+
+**Domain 1 (Voting Rights — SAVE Act)**:
+- SAVE Act Senate failure (48-50, Collins/Murkowski/Tillis/McConnell) documented in Sections 1-2 with defector analysis and coalition fracture mechanics
+- State SAVE Act wave and ballot initiative tracking in later sections
+
+**Domain 33 (State Autocratization — Ballot Initiatives)**:
+- 155 bills in 31 states as of March 30 (BISC), 6-state supermajority push, 12-state coordination table documented in Section 1.3a (Session 535)
+- Missouri geographic distribution requirement, Florida HB 1205, Oklahoma SB 1027, Utah, Nebraska, Arizona, Montana, Arkansas — all with three-mechanism simultaneous action map
+
+**Domain 28 (Venezuela War Powers)**:
+- Section 9 (Iran as larger empirical instance), Section 10 (May 2026 post-deadline), Section 11 (fiscal accountability synthesis) — all complete
+- Two-flanks synthesis: Venezuela arrest-operation framing + Iran constitutional nullity = complete WPR elimination documented
+
+**Domains 21/25 (FISA — no standalone domain)**:
+- surveillance-tracking.md contains full FISA 702 analysis through April 29
+- Domain 1 Section 6.2 contains election security cross-reference
+- **NEW April 29 addition**: FISA Rules Committee advanced three-year no-warrant bill April 29 evening — floor vote imminent; surveillance-tracking.md updated with this development and revised probability framework
+
+### Files Modified This Session
+
+1. **`projects/resistance-research/domains/domain-19f-war-powers-reform.md`** — Added Collins April 29 confirmed post-deadline commitment to Section 17 checklist; PBS/NOTUS sources added
+2. **`projects/resistance-research/surveillance-tracking.md`** — Added April 29 evening Rules Committee advancement of three-year FISA bill; revised probability framework; detailed bill contents confirmed; surveillance reform implications documented
+
+### Research Methodology
+
+- Conducted parallel web searches on all 8 priority domains
+- Verified existing file content against current web sources
+- Confirmed that prior sessions had accurately documented all major developments through April 28
+- Identified genuinely new April 29 developments: Collins statement, FISA Rules Committee revival
+- All additions cite primary sources with dates
+
+---
+
+## April 29, 2026 — General Research Agent: Phase 2 Domain Selection Framework
+
+**Session type**: Resistance-research project — Phase 2 planning document
+**Task**: Draft the Phase 2 domain selection framework — a data-driven decision instrument for converting Phase 1 distribution feedback into prioritized Phase 2 research decisions.
+
+### File Written
+
+**`projects/resistance-research/phase-2-domain-selection-framework.md`** (~2,400 words)
+
+Seven-section structure per spec:
+1. Phase 1 Data Collection Window (Weeks 1–6): five trackable metrics (citation frequency by domain, institutional adoption by sector, question frequency, topic clustering in feedback, domain skip rate), plus infrastructure (Google Form 5-question template, email reply tagging protocol, social monitoring)
+2. Audience Segmentation Analysis (Weeks 5–6): sector-resonance table mapping six institutional sectors to Phase 1 domains and likely Phase 2 gaps
+3. Gap Analysis Triggers (Weeks 4–6): three binary trigger rules — Trigger A (3+ contacts from different institutional types on same missing topic), Trigger B (cross-sector spillover indicating structural gap), Trigger C (hard-deadline domains: Domain E by July 2026, Domain G after *Trump v. Barbara* ruling, FISA 702 on outcome)
+4. Phase 2 Domain Prioritization: three-tier structure — Tier 1 (2,000–4,000 words, Weeks 7–10), Tier 2 (1,000–1,500 words, Weeks 10–11), Tier 3 (conditional on institutional partnership formation)
+5. Candidate Inventory: ten pre-scoped candidates with source document references, scope estimates, and trigger conditions
+6. Implementation Timeline: 12-week post-launch schedule with weekly activities
+7. Decision Tree: explicit binary flowchart from Phase 1 signal to Tier assignment, producing Tier 1/2/3 lists for Week 6 WORKLOG entry
+
+**Key design choice**: Framework is feedback-driven, not pre-determined. Pre-launch Tier 1 candidates (Domain E, Domain F, Domain B) are named but subject to confirmation by Phase 1 data. Hard-deadline domains bypass the collection window. Decision tree collapses all parts into a single-pass instrument.
+
+**Sourcing used**: measurement-and-iteration-framework.md (existing adoption metrics infrastructure), phase-2-expansion-candidates.md (candidate scoping), EXPLORATION_QUEUE.md (queue candidates), VoterVoice 2024 Advocacy Benchmark Report (NGO email feedback rates), Overton Impact Tracking methodology, policy diffusion citation research (multidimensional citation features literature).
+
+---
+
 ## April 29, 2026 — General Research Agent: TIER 3 Threat Model + Implementation Guide (cybersecurity-hardening)
 
 **Session type**: Cybersecurity-hardening project — TIER 3 production

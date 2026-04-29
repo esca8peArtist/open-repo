@@ -938,12 +938,16 @@ As of April 29, 2026, 48 hours before the May 1 War Powers Resolution deadline, 
 
 **The critical two-week window**: Section 11.1 documented the administration's 30-45 day window before supplemental appropriations become unavoidable. The window opens May 1 and closes approximately June 1-15. If no supplemental is submitted and reprogramming is used instead, the best Democratic leverage is lost. The May 15-30 period is the strategic inflection point: whether Democrats can force a public confrontation on appropriations before the administration exhausts available reprogramming authority determines whether the WPR has any practical enforcement consequence in the Iran case.
 
+**April 29 update — Collins confirms post-deadline position**: Senate Appropriations Chair Susan Collins stated on April 29, 2026 that she is "open to supporting a resolution to end U.S. military involvement" if the 60-day deadline passes without congressional approval. This is the clearest pre-deadline commitment from a Republican who voted against war powers resolutions during the 60-day window. Collins's framing — that she previously supported the administration's claimed 60-day authority but now sees a different standard applying after May 1 — confirms the political structure documented in the Senate blocking pattern analysis: before May 1, a no vote was support for presidential authority; after May 1, a no vote is ratification of statutory defiance. The Collins statement, combined with Tillis's explicit filibuster-protection rationale, puts the post-May 1 defection coalition at minimum two confirmed Republicans if the floor dynamics identified in Section 16.2 materialize.
+
 **What to fill in after May 1**: The post-deadline outcome checklist:
 - [ ] Administration response on May 1: _____ (compliance statement / silence / continued operations announcement)
-- [ ] Collins public statement post-May 1: _____ (defection commitment / continued deferral)
+- [x] Collins public statement pre-May 1: Confirmed "open to supporting" war powers resolution after deadline (April 29, 2026)
 - [ ] Any court filing: _____ (WPR lawsuit filed / not filed / standing challenge)
 - [ ] Next Senate floor vote scheduled: _____ (date / vehicle)
 - [ ] Iran supplemental appropriations request: _____ (submitted / not submitted / reprogramming used)
+
+Sources: [PBS News: House rejects effort to withdraw U.S. forces from Iran war, Collins signals post-deadline position (April 29, 2026)](https://www.pbs.org/newshour/politics/house-rejects-effort-to-withdraw-u-s-forces-from-iran-war-as-gop-lawmakers-stick-with-trump); [NOTUS: Trump's War Powers Deadline on Iran Is Almost Up — Will Republicans Act? (April 2026)](https://www.notus.org/congress/trump-war-powers-deadline-iran-republican-response)
 
 Sources: [Military.com: Iran War Heads Toward Legal Showdown as May 1 Deadline Nears (April 28, 2026)](https://www.military.com/daily-news/headlines/2026/04/28/Iran-War-Heads-Toward-Legal-Showdown-as-May-1-Deadline-Nears); [Al Jazeera: Trump's May 1 deadline: Can he continue war on Iran after that? (April 24, 2026)](https://www.aljazeera.com/news/2026/4/24/trumps-may-1-deadline-can-he-continue-war-on-iran-after-that); [CNN: Analysis — Will Trump respect the 60-day limit? (April 25, 2026)](https://www.cnn.com/2026/04/25/politics/war-powers-act-trump-iran-war-congress-analysis); [Truthout: May 1 Marks a Crucial "War Powers" Deadline for Trump's War in Iran](https://truthout.org/articles/may-1-marks-a-crucial-war-powers-deadline-for-trumps-war-in-iran/)
 
