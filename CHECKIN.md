@@ -5,9 +5,11 @@
 
 ---
 
-## Since Last Check-in (Session 629 — 2026-04-29 06:39–07:50 UTC)
+## Since Last Check-in (Session 629 — 2026-04-29 06:39–08:20 UTC)
 
-### ✅ Exploration Queue Item 1: Cybersecurity-hardening 2026 Threat Landscape — COMPLETE
+### ✅ Two Exploration Queue Items Complete
+
+#### Item 1: Cybersecurity-hardening 2026 Threat Landscape — COMPLETE
 
 **Summary**: Comprehensive 2026 threat landscape research completed and integrated into three guide updates. Critical findings: npm supply chain attack, AI social engineering, DOJ voter database expansion, CISA capacity loss, election worker threats.
 
@@ -26,6 +28,22 @@
 
 **Status**: Committed to master. All guides updated and ready for pre-distribution review. Election-worker guide ready for distribution to election protection organizations and state officials.
 
+#### Item 2: Mfg-farm Material Sourcing and Supplier Economics — COMPLETE
+
+**Summary**: Comprehensive material sourcing research completed. Key insight: shipping cost dominates COGS (79%), not material sourcing (18%). PLA+ confirmed optimal; PETG justified as premium variant. Bulk purchasing break-even at 500 units/month.
+
+**Findings**:
+- Material: PLA+ default (heat deflection 55–60°C), PETG premium (70–75°C, +$0.22–0.37/unit)
+- COGS breakdown at single unit: material 18%, shipping 79%, other 3%
+- Bundle strategy (3-pack) yields +7% margin vs. single unit (more impactful than supplier optimization)
+- Bulk purchasing ROI: break-even ~500 units/month; negotiation worth operator time at 750+/month
+- Supplier tiers: eSUN/Overture (retail), Anycubic (bulk test), Polymaker (wholesale), Push Plastic (tariff hedge)
+- Supplier scoring matrix (155-point) with trigger conditions for changes
+
+**Deliverable**: `material-sourcing-supplier-economics.md` (1,800 words, decision tree, cost sensitivity matrix, 12 supplier references)
+
+**Status**: Committed to master. Ready for post-test-print negotiation phase.
+
 ### Stockbot Paper Trading Status — VERIFIED
 
 **Summary**: Engine running cleanly. 18 order legs placed in first market session (2026-04-28). Today (2026-04-29) market session begins 13:30 UTC, will complete 20:00 UTC.
@@ -36,6 +54,40 @@
 - Gate 1: FAIL (0.0/month, need 30); Gate 2: FAIL (Sharpe 0.0, need 1.0); Gate 3: FAIL (1 day, need 63)
 
 **Next Checkpoint**: 2026-04-29 20:00 UTC (market close) — monitor for session completion and signal execution
+
+---
+
+## Session 629 Summary
+
+**Status**: Productive exploration work completed. Two exploration queue items finished. Stockbot monitoring scheduled.
+
+**Completed**:
+- ✅ Stockbot paper trading status verified (18 legs placed, engine running cleanly)
+- ✅ Cybersecurity-hardening 2026 threat landscape research (3 guide updates + 1 new supplement)
+- ✅ Mfg-farm material sourcing research (supplier framework + cost analysis)
+- ✅ Market close monitoring scheduled for 20:00 UTC
+
+**Updated Projects**:
+1. **cybersecurity-hardening** — hardware-procurement-guide.md (Part 2.5 Software Supply Chain), device-hardening-guide.md (Part 4 AI Social Engineering), + election-worker-opSec-supplement.md
+2. **mfg-farm** — material-sourcing-supplier-economics.md (decision tree, supplier matrix)
+3. **stockbot** — Market monitoring scheduled
+
+**Unblocked Status**:
+- resistance-research: Blocked on user distribution path decision (Path A / A+37 / B)
+- stockbot: Engine running, monitoring in progress
+- cybersecurity-hardening: All guides updated, ready for distribution
+- mfg-farm: Material research complete, awaiting test print
+- seedwarden: Blocked on user tag corrections + Etsy verification
+- open-repo: Awaiting PR #1 review/merge
+- off-grid-living: Complete, awaiting user social media execution
+- workout: Awaiting user review
+- open-source-rideshare: Paused
+
+**Next Session Priority**:
+1. Check market close results (20:00 UTC today) — verify paper trading executed signals
+2. Awaiting user decisions on: resistance-research distribution path, seedwarden tag corrections
+3. Awaiting test print results from user: mfg-farm
+4. Exploration Queue Item 3 (if time): resistance-research post-distribution institutional adoption tracking
 
 ---
 
