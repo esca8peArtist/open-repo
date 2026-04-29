@@ -689,6 +689,14 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - `activist-implementation-guide.md` (1,947 words): IMSI catcher defense (Rayhunter), pattern-of-life evasion, financial compartmentalization (Monero)
   - Each guide: Week 1 / Month 1 / Month 3 timelines, verification checklists, cross-referenced to primary corpus. Production-ready for distribution to journalists, legal aid orgs, immigrant advocacy groups, activist networks.
 
+**NEW ITEMS (Session 635 — 2026-04-29)**:
+
+- **resistance-research: Feedback integration and institutional adaptation tracking** — Once framework distributed (awaiting user decision Path A/A+37/B), institutions will adapt it differently based on sector and capacity. Research: (1) What are expected adaptation patterns by sector? (2) How will different institutions modify the proposal based on their constraints? (3) What feedback mechanisms should be built in to track and catalyze productive adaptations? (4) Post-distribution measurement framework for diffusion/impact. Produces: `feedback-integration-roadmap.md` (decision trees, feedback loops, success patterns). Deepens post-distribution execution strategy. Ready post-distribution-decision.
+
+- **seedwarden: Financial sustainability and scaling economics model** — Business plan is complete, but no 6-12 month cash flow projection. Research: (1) Revenue forecasting by product tier and season (foragers, preppers, homesteaders cohort-specific seasonality); (2) COGS, platform fees (Etsy 6.5%), fulfillment economics; (3) Break-even analysis (when does Phase 2 expansion pay for itself?); (4) 12-month profitability runway under 3 growth scenarios (conservative, standard, aggressive). Produces: `financial-sustainability-model.md` + `cash-flow-projection-template.csv`. Critical for Phase 2 decision-making post-Phase-1-launch. Ready immediately.
+
+- **stockbot: Crypto futures and emerging asset class feasibility analysis** — Current framework is equity-only; Goal mentions options and crypto. Research: (1) Are current feature pipeline (MTF, earnings, volatility) applicable to crypto 24/5? (2) What new features (blockchain metrics, liquidation data, DEX spreads) would be needed? (3) Futures-specific challenges (contract rolls, liquidation mechanics, leverage risks)? (4) Integration pathway with existing h10_lgbm ensemble and stacker architecture. Produces: `crypto-futures-architecture.md` + `asset-class-decision-tree.md` (which asset classes are viable post-equity validation). Scope: 2,000–2,500 words. Ready when Gate 1 completion triggers post-May-12 roadmap.
+
 **✅ COMPLETED (Session 537)**:
 
 - ✅ **stockbot: Market regime detection and adaptive position sizing** (Priority HIGH for Gate 2 improvement)
