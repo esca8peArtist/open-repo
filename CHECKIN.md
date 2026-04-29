@@ -5,16 +5,37 @@
 
 ---
 
-## Since Last Check-in (Session 634 — 2026-04-29 12:35–ONGOING UTC — Market Monitoring Underway)
+## Since Last Check-in (Session 634 — 2026-04-29 11:00–ONGOING UTC — Pre-Market Verification Complete)
 
-### 🎯 Market Session Live (13:30–20:00 UTC)
+### ✅ Orientation + System Verification Complete
 
-**Status**: Engine running (PID 1202130). Three monitoring checkpoints scheduled:
-1. **14:00 UTC** — Signal generation + engine status
-2. **16:00 UTC** — Alpaca orders + position updates
-3. **20:15 UTC** — Discord summary + trade count + final analysis
+**Engine Status (11:00 UTC)**:
+- ✅ PID 1202130 running continuously (7.5 hours since restart at 03:31 UTC)
+- ✅ All 11 tickers loaded: AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA
+- ✅ Market-aware sleep active: sessions sleeping until 13:15 UTC (15 min before market open)
+- ✅ Tests passing: `.venv/bin/python -m pytest tests/unit/` exit code 0
+- ✅ Discord webhook configured and ready
+- ✅ Latest logs clean with no errors
 
-**Expected Outcome**: If ≥3 of 6 success criteria pass (engine cycling, signals generated, API working, no auth errors, Discord posted, no critical errors), validate feature count fix and proceed to May 12 Gate 1 checkpoint.
+**Project Status**:
+- **resistance-research**: COMPLETE (35 domains, all distribution paths ready) → BLOCKED ON USER DECISION
+- **stockbot**: Engine RUNNING, ready for market open validation
+- All other projects: Either blocked on user actions or complete
+
+**No Autonomous Work Available**: All active projects require either user decisions (resistance-research distribution path, cybersecurity-hardening Tier 1 approval, mfg-farm test print) or are awaiting external events (stockbot market session, open-repo PR review). Exploration Queue has items but all are conditional on future milestones.
+
+### 🎯 Market Session Today (13:30–20:00 UTC)
+
+**Context**: First live trading session since Session 622 engine restart (03:31 UTC). April 28 gap (engine offline) is being recovered. Multi-ticker feature count fix (Session 560) is being validated.
+
+**Monitoring Scheduled** (via cron):
+1. **14:00 UTC** — Engine status + signal generation check
+2. **16:00 UTC** — Alpaca order submissions + position updates
+3. **20:15 UTC** — Discord summary + trade count + P&L
+
+**Success Criteria**: ≥3 of 6 metrics (engine wakes, cycles, signals, orders, Discord, no auth errors) → validation pass.
+
+**Expected outcome**: Aggregate ~60% probability of ≥1 trade across 11 tickers today. If trades occur, validates feature count fix and multi-ticker baseline ready for May 12 Gate 1 checkpoint.
 
 ---
 
