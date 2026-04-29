@@ -282,6 +282,74 @@ Cloud backup is an attack surface. Local backup is a physical security dependenc
 
 ---
 
+## Part 4: AI-Enabled Social Engineering (April 2026 Update)
+
+Device hardening protects against technical attacks — exploits, malware, surveillance implants. But a parallel threat has accelerated in 2026: AI-generated social engineering that bypasses technical defenses entirely by targeting the human operator instead.
+
+### 4.1 The Threat Landscape
+
+**Voice cloning**: Real-time voice synthesis from a 30-second audio sample is now operationally viable. An attacker can:
+- Record a 30-second voice clip from a public source (a podcast, a conference talk, a recording)
+- Use open-source tools (e.g., Tortoise TTS, XTTS v2) or commercial APIs to synthesize speech in that person's voice
+- Call you with a convincing voice impersonation of someone you know, asking for sensitive information or actions
+
+**Video deepfakes**: Real-time deepfake video calls are now possible, enabling:
+- Synchronizing facial movements and expressions to live audio
+- Creating convincing video evidence of conversations that never happened
+- Showing a trusted contact appearing to give instructions they never gave
+
+**Text-based impersonation**: AI can:
+- Forge emails and messages in someone's writing style with high fidelity
+- Create lengthy, coherent messages that appear authentic
+- Generate credible-looking documents (screenshots, PDFs, websites)
+
+**Phishing resilience**: Click-through rates for AI-generated phishing emails are **4x higher than human-crafted equivalents** (2026 research). The reason: AI generates contextual, personalized messaging that avoids the telltale grammar errors and awkwardness of traditional phishing.
+
+### 4.2 Social Engineering Countermeasures
+
+Device hardening cannot prevent social engineering. Instead, operational security (human factors) is the primary defense.
+
+**Tier 1 — General awareness**:
+- Treat unexpected requests from known contacts as suspicious until verified through a separate channel
+- If someone you know asks for sensitive information (passwords, credentials, documents), contact them through a phone number you have independently verified, not one provided in the message
+- Be skeptical of requests that create urgency ("Your account is being closed," "Immediate action required")
+
+**Tier 2 — Out-of-band verification protocol**:
+- For requests that match your threat model (sensitive information, system access, financial transfers), use a separate communication channel to verify
+- Example: If you receive an email from your supervisor asking for AWS credentials, call them on a phone number in your contacts (not a number in the email) and confirm the request
+- Document unusual requests: "I received an email asking for X. When I called directly to verify, they said Y." This creates a record if deception happened.
+
+**Tier 3 — Pre-agreed challenge phrases**:
+- Before facing high-risk operations (election protection work, sensitive journalism, legal proceedings), establish pre-agreed phrases with trusted collaborators
+- Example: "What was the name of the restaurant where we first met?" — a question both parties can answer but an impersonator cannot
+- Use these challenges for any unexpected requests, especially over video or voice calls
+- Share challenge-phrase keys in advance through separate, secure channels
+
+### 4.3 Synthetic Evidence and Disinformation
+
+A distinct threat to activists and researchers is the fabrication of evidence:
+- **Deepfake video of you saying something incriminating**: An attacker creates video of you appearing to commit a crime, confess something, or violate your own ethical standards
+- **Forged documents**: AI-generated screenshots, emails, or documents framing you in a false light
+- **Synthetic audio**: Manipulated or completely fabricated audio clips of your voice
+
+**Countermeasures**:
+- Record your own communications when legally permissible (check state/jurisdiction law, as some places require two-party consent)
+- Use cryptographic signatures (GPG) for sensitive documents and communications
+- For public statements, use live, unedited video or written records with provenance (published timestamps, archival services like archive.org)
+- If deepfake evidence appears alleging you did something you did not, document the claim with timestamps, publish an immediate denial through your verified channels (website, official social media), and preserve the original false evidence as part of your defense record
+
+### 4.4 What Device Hardening Cannot Fix
+
+Device hardening — Signal, iCloud Advanced Data Protection, GrapheneOS — protects your communications infrastructure. It does not protect against:
+- An attacker calling you and impersonating someone you trust
+- A convincing AI-synthesized video of someone asking you to do something
+- Social pressure, emotional manipulation, or appeals to authority
+- Someone you already trust being compromised and becoming an unwitting vector
+
+The defense is organizational and behavioral: pre-agreed challenge protocols, out-of-band verification, and awareness that technical defenses alone are insufficient against sophisticated social engineering.
+
+---
+
 ## Confidence Assessment and Gaps
 
 **High confidence** (primary sources available):

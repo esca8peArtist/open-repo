@@ -150,6 +150,75 @@ The following assessment evaluates hardware vendors on six dimensions relevant t
 
 ---
 
+## Part 2.5: Software Supply Chain Security (April 2026 Update)
+
+While Part 2 focuses on hardware vendors and firmware integrity, an equally critical threat emerged in April 2026: compromised package managers and open-source repositories used to install security tools themselves.
+
+### 2.5.1 The April 2026 Supply-Chain Campaign ("Shai-Hulud")
+
+On April 22, 2026, the **Bitwarden CLI npm package** was trojanized for 90 minutes (5:57–7:30 PM ET). The attack vector was upstream: the Checkmarx GitHub Action used in Bitwarden's own CI/CD pipeline was compromised, allowing attackers to inject malicious code into the official npm package. The trojanized version exfiltrated:
+- Cloud provider tokens (AWS, Azure, GCP credentials)
+- SSH private keys
+- GitHub Personal Access Tokens (PATs)
+- Arbitrary environment variables
+
+This was part of a larger "Shai-Hulud" campaign that compromised multiple security-critical packages:
+- **Trivy** (container vulnerability scanner)
+- **Axios** (HTTP client library, ~300M weekly downloads)
+- **LiteLLM** (LLM API wrapper)
+- **Other packages**: dependencies used by developers across critical infrastructure
+
+**Critical finding**: Security tools are trusted with access to sensitive credentials and systems. A compromised security tool becomes an attack platform with elevated access. Users installing or updating security software during the 90-minute window may have had credentials exfiltrated to attacker infrastructure.
+
+### 2.5.2 Installation Source Verification — Tier 3 Recommendation
+
+For users handling sensitive credentials or data, the source of security software installation matters critically.
+
+**Recommended practice**:
+- **Tier 1**: Install from official websites or package managers (e.g., `npm install @bitwarden/cli` from npm, or download from bitwarden.com/download). Verify checksums on official sites.
+- **Tier 2**: Additionally, verify GPG signatures when available. Example: `npm install` followed by GPG signature verification of the installed binary. For packages without signatures, research the vendor's security practices.
+- **Tier 3**: Do not install security tools from package managers at all. Instead:
+  - Download binaries directly from vendor official websites (verify HTTPS)
+  - Verify GPG signatures against published keys (preferably keys committed in the project's primary repository with long history)
+  - For CLI tools without available signatures, compile from source code if the tool is open source
+  - Alternatively, maintain offline versions of tools in source control with known-good versions
+
+**Bitwarden-specific mitigation**: Do not install `@bitwarden/cli` via npm. Instead:
+- Download the precompiled binary directly from bitwarden.com/download
+- Use the official Bitwarden desktop or mobile apps (not affected by the npm supply-chain incident)
+- If development requires the CLI, compile from source: `git clone https://github.com/bitwarden/cli`, `npm ci` (not `npm install`) to use locked dependencies, `npm run build`
+
+If you ran `npm install @bitwarden/cli` between April 22 17:57 ET and 19:30 ET (a 90-minute window):
+- Immediately rotate all credentials the system could access (cloud provider tokens, SSH keys, GitHub PATs, database passwords)
+- Audit access logs for those credentials across all services
+- If credentials are used in production, treat as potential breach and monitor for unauthorized access
+
+### 2.5.3 Package Manager Integrity
+
+The npm package manager is a single point of failure for millions of projects. Countermeasures:
+
+1. **Use `npm ci` instead of `npm install`** when installing dependencies (especially critical security tools):
+   - `npm install` resolves the latest minor/patch versions (`^` and `~` ranges in package.json)
+   - `npm ci` uses exact versions from `package-lock.json`, providing reproducible builds
+   - For security tools, reproducibility is essential — avoiding unexpected updates that might include malicious code
+
+2. **Lock files should be in version control**:
+   - Commit `package-lock.json` (or `yarn.lock` for Yarn) to your git repository
+   - Review changes to lock files in pull requests — unexpected new dependencies or version changes may indicate a supply-chain attack
+   - If a lock file changes unexpectedly, investigate the source
+
+3. **Verify checksums when available**:
+   - Most security tools publish SHA-256 checksums of released binaries
+   - After download, verify: `sha256sum -c <file>.sha256`
+   - Do not rely solely on package manager checksums (the repository itself may be compromised)
+
+4. **Monitor for supply-chain advisories**:
+   - Subscribe to GitHub security advisories for projects you depend on
+   - Use `npm audit` regularly to check for known vulnerabilities
+   - For Tier 3, subscribe to security research communities (e.g., The Hacker News, CISA advisories) that report supply-chain incidents earlier than public notifications
+
+---
+
 ## Part 3: Component-Level Security
 
 ### 3.1 USB Peripherals: The Easiest Attack Vector
