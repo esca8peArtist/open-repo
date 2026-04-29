@@ -4,9 +4,38 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 09:40–ONGOING UTC — Orchestrator Session 632 — Stockbot Options Research + Market Open Monitoring
+
+**Status**: Session in progress. Engine healthy, market opens 13:30 UTC (~4h away). Options strategy research completed.
+
+**Summary**:
+
+### Orientation & Block Resolution (09:40–09:42 UTC)
+- **Blocks resolved**: stockbot engine restart blocks (2) already marked RESOLVED in BLOCKED.md from Session 622 (03:31 UTC restart). Engine running PID 1202130, all 67 sessions active.
+- **INBOX.md**: No new items (processed 2026-04-25).
+- **Project assessment**: All top-6 priorities blocked on user action (distribution decision, test print, tag corrections) or completed (deliverables done, awaiting user review/merge).
+- **Action**: Identified Exploration Queue Item "stockbot: Options trading strategy" as executable now (preliminary research ≠ May 12 baseline dependency).
+
+### Exploration Queue Work: Stockbot Options Trading Strategy Research (09:42–09:55 UTC)
+**Executed by**: stockbot subagent  
+**Deliverable**: `projects/stockbot/options-trading-strategy.md` (~2,500 words + decision tree)
+
+**Key findings**:
+1. **Infrastructure already exists** — Black-Scholes, spreads, Greeks manager, walk-forward backtesting, options executor all implemented in codebase
+2. **Three structural constraints**:
+   - Position-size guardrail limits covered calls to 5 tickers (AAPL, AMZN, JPM, JNJ, XOM); NVDA/TSLA/META/UNH exceed $30k limit
+   - No DB persistence for options positions (engine restart would orphan positions)
+   - StrategyCoordinator doesn't aggregate options delta for risk guardrails
+3. **Implementation gate structure**: Gate 1 prerequisite (equity Sharpe > 0.5 annualized from 2 weeks live data) → Gate 2 covered calls (23–34 hours integration labor) → Gate 3 spreads → Gate 4 IV arbitrage
+4. **Schedule**: Gate 2 implementation ready for May 12+ checkpoint once baseline established
+
+**Next**: Market monitoring 13:30–20:00 UTC today (engine cycle execution, signal generation, order fills, Discord post-market notification).
+
+---
+
 ## 2026-04-29 07:17–08:54 UTC — Orchestrator Session 631 — Orientation, Queue Replenishment & Item 21 Execution
 
-**Status**: Session in progress. Orientation complete, Item 21 (mfg-farm Phase 3) COMPLETED.
+**Status**: Session complete. Orientation complete, Item 21 (mfg-farm Phase 3) COMPLETED.
 
 **Summary**:
 
