@@ -4,6 +4,17 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 638+ — 2026-04-29 — Phase 1+ Email List Building Playbook
+
+**Task**: Write production-ready email list building playbook for Phase 1+ scaling infrastructure, covering all seven specified sections.
+
+**File produced**:
+- `projects/seedwarden/email-list-building-playbook.md` (~3,800 words): Full strategic playbook covering: (1) Lead magnet design with three options evaluated (Zone Quick-Start Card recommended, email course and bundle code compared); (2) Welcome sequence Day 0–10 with email-by-email logic and behavioral tagging rationale; (3) Monthly seasonal campaign calendar (January–December) plus re-engagement and product launch sequences; (4) Segmentation and personalization for four cohorts (forager, prepper, homesteader, gift-buyer) with behavioral tag mechanics; (5) ESP evaluation (Kit vs. Mailchimp vs. Substack, Kit recommended), Zapier/Make.com Etsy integration options, Etsy compliance notes, and pre-launch technical setup checklist; (6) Growth trajectory model (three scenarios), six core metrics dashboard, LTV impact analysis; (7) Week 1–4 implementation timeline + Month 2–3 scaling calendar. Includes five case studies (Prairie Homestead, Etsy Seller Handbook, Kit platform data, Print and Grain, Insight Agent digital seller). Sourced from 14 external references.
+
+**Cross-references**: `email-growth-playbook.md` (operations companion), `customer-cohort-analysis-framework.md`, `phase-3-cohort-messaging.md`, `phase-3-social-media-growth-strategy.md`.
+
+---
+
 ## Session 627b — 2026-04-29 — Phase 2 Photography Execution Package
 
 **Task**: Create Phase 2 lifestyle photography execution timeline, photographer briefing package, and structured production checklist. Independent of Phase 1 blockers; supports Phase 2 launch preparation.
