@@ -5,6 +5,28 @@
 
 ---
 
+## Since Last Check-in (Session 629 — 2026-04-29 06:39–06:50 UTC)
+
+### Stockbot Paper Trading Status — VERIFIED
+
+**Summary**: Stockbot engine running cleanly after Session 622 restart. First full market session (2026-04-28) completed with 18 order legs placed. No errors, no auth failures. Paper trading track record: 1 day, 0 round trips. Today's market session begins 13:30 UTC.
+
+**Engine Status**:
+- Running: PID 1202130 (started 2026-04-29 03:31 UTC)
+- Config: 67 sessions in active-sessions.json
+- Mode: Paper trading, sleeping until 13:15 UTC (market pre-wake)
+
+**Paper Trading Progress**:
+- Total legs: 18 (AAPL: 2, 16 other tickers: 1 each)
+- Round trips: 0 (no SELL signals yet)
+- Gate 1 (30 trades/month): FAIL (0.0/month after 1 day, need >= 30)
+- Gate 2 Sharpe: FAIL (0.0, need >= 1.0)
+- Gate 3 Duration: FAIL (1 day, need >= 63)
+
+**Action Items**: None — monitoring. Next checkpoint after market close (20:00 UTC).
+
+---
+
 ## Since Last Check-in (Session 628 continued — 2026-04-29 07:35–10:45 UTC)
 
 ### ✅ Three Parallel Subagents — Exploration Queue Execution — COMPLETE
