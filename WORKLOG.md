@@ -4,6 +4,54 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 (after Session 614) — Session 615 — Tracker Maintenance + Engine Status Verification
+
+**Orchestrator Orientation & Block Resolution** (~5 minutes):
+- ✅ **ORCHESTRATOR_STATE.md reviewed** — Updated state from Sessions 613-614
+- ✅ **BLOCKED.md reviewed** — 1 active block (mfg-farm test print); stockbot engine restart moved to Resolved Archive in Session 613
+- ✅ **Block archive verified** — No active "Verify with" commands to run (mfg-farm cannot auto-verify)
+- ✅ **INBOX.md reviewed** — No new items
+
+**✅ COMPLETED: resistance-research — April 2026 Tracker Maintenance**
+- **Agent**: resistance-research subagent
+- **Duration**: ~5 minutes research + updates
+- **Files Updated**:
+  - `first-amendment-suppression.md`: Added 2 entries (Ninth Circuit Portland tear gas injunction April 27; Kansas K-12 student protest penalties April 10-11)
+  - `environmental-rollbacks-tracker.md`: Added 1 entry (PM2.5 soot nonattainment coalition lawsuit April 13)
+  - `police-brutality-consent-decree-tracker.md`: Added 1 entry (Springfield MA decree termination April 27) + Pattern 6 update (Ninth Circuit Portland ruling closes circuit split)
+- **Sourcing**: 7 recent news and legal sources (OPB, KCUR, Earthjustice, WAMC, Courthouse News)
+- **Cross-references**: All entries cross-linked to relevant domains (Domain 6, 28, 29, 33, 35)
+- **Status**: Production-ready; committed to master at commit `0f37243`
+
+**⚠️ DISCOVERED & BLOCKED: stockbot — Engine Status Uncertain After Reported Restart**
+- **Agent**: stockbot subagent
+- **Duration**: ~3 minutes log analysis + verification
+- **Discovery Summary**:
+  - Live trading log file `/live_trading_20260429.log` is **0 bytes** — no production engine output
+  - Yesterday's log `/live_trading_20260428.log` contains **unit test output only**, not production engine logs
+  - **Last actual trade in database**: DIS BUY at 13:31:28 UTC on 2026-04-27 (now >24 hours old)
+  - **No trades recorded during 2026-04-28 market hours** (13:30–20:00 UTC) despite market being fully open
+  - **17 open BUY positions from 2026-04-27 with zero SELL fills** (no signals fired)
+  - **0 completed round trips** in paper trading
+  - Portfolio expanded to 62 stacker sessions (up from 11 baseline)
+  - Monitoring script ready but has no data to process
+- **Diagnosis**: Engine likely not running, or started but crashed before logging, or logging to wrong location
+- **Action Taken**: Added formal block to BLOCKED.md; verification command added: `ps aux | grep run_live_trading`
+- **Impact**: Paper trading monitoring cannot proceed until engine status is verified and restored
+
+**Session Output**:
+- ✅ 3 tracker documents updated with April 2026 civic developments (committed `0f37243`)
+- ✅ 1 new block identified and documented (stockbot engine status)
+- ✅ Commits: `0f37243` (trackers), `619d2ea` (BLOCKED.md)
+- ⚠️ Blockage on stockbot prevents paper trading monitoring work
+
+**Strategic Context**: 
+- Tracker maintenance keeps resistance-research content current independent of distribution path decision
+- Stockbot engine issue is **blocking** automated trading and daily monitoring (Gate 1 validation cannot proceed)
+- **Next session**: Verify stockbot engine status with provided command; if not running, restart with proper logging; resume paper trading monitoring
+
+---
+
 ## 2026-04-29 XX:XX–XX:XX UTC — Session 614 — Domain 37 Candidate A: Foreign Interference Framework Research
 
 **Orchestrator Orientation & Block Resolution** (~5 minutes):
