@@ -166,17 +166,22 @@
 
 ---
 
-### ✅ Item 17: resistance-research Domain 39 Preliminary Scoping (Session 616)
-**Status**: QUEUED — Ready to execute immediately (post-Domain-38 expansion planning)
+### ✅ Item 17: resistance-research Domain 39 Preliminary Scoping (Session 616 COMPLETE)
+**Status**: COMPLETED 2026-04-29 03:47 UTC
 **Scope**: Identify highest-impact Domain 39 candidate from gap analysis; research roadmap for post-Domain-38 work
-**Deliverables**:
-- Gap analysis of existing 36-domain framework (identify missing angles)
-- 4-5 Domain 39 candidate topics with rationale and research roadmap
-- Priority ranking and feasibility assessment
-- Format consistency check (matches existing domain structure)
-**Owner**: resistance-research agent
-**Timeline**: 1-2 hours
-**Outcome**: Enables continuous framework expansion post-Path A execution; supports long-horizon "unlimited domains" vision
+**Deliverables**: ✅ COMPLETE
+- ✅ Gap analysis of 38-domain framework (identified 5 structural gaps)
+- ✅ 5 Domain 39 candidate topics fully evaluated with rationale:
+  1. **Reproductive Rights and Democratic Authority** (RANKED #1 — strongest 2026 urgency + coalition)
+  2. **Labor Rights and Democratic Participation** (RANKED #2 — existing infrastructure lever)
+  3. Debt, Precarity, and Civic Participation (Ranked #3)
+  4. Technology Platforms and Democratic Infrastructure (Ranked #4)
+  5. International Trade and Democratic Sovereignty (Ranked #5)
+- ✅ Full research roadmaps for top 2 candidates (Reproductive Rights: 14-18 hours; Labor Rights: 12-16 hours)
+- ✅ Comparative impact assessment matrix with 4 ranking criteria
+- ✅ Format consistency verified against Items 10, 12
+**File created**: `projects/resistance-research/ITEM17_DOMAIN39_CANDIDATES.md` (18,500 words, production-ready)
+**Outcome**: Framework now positioned for Phase 2 expansion decision. Domains 39-40 candidates identified with high-confidence research roadmaps. Reproductive Rights and Labor Rights are immediate priority candidates for post-distribution Phase 2 work.
 
 ---
 
