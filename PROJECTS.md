@@ -690,14 +690,18 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 **NEW ITEMS (Session 622)**:
 
-- **off-grid-living: Regional Implementation Guides** (Priority MEDIUM for practical utility)
-  - **Scope**: Adapt comprehensive guide to 5–6 specific climate zones and geographic regions. Current guide is global/generic; regional guides provide climate-specific material selection, resource availability, infrastructure requirements.
-  - **Regions**: Pacific Northwest (temperate, high rainfall), Southwest Desert (arid, extreme heat, water scarcity), South Atlantic (hot-humid, hurricane zone), Upper Midwest (extreme cold, short season), Northeast (four seasons, limited space). Optional: Tropical Pacific, Mountain West.
-  - **Adaptation depth**: Food production calendars, shelter materials/insulation specs, water system design (rainwater vs. well vs. river), energy generation (solar/wind potential), seasonal maintenance protocols, regional hazard-specific preparedness (wildfire, tornado, flood, cold-snap)
-  - **Deliverable format**: 5 standalone `.md` files (one per region) with cross-references to main guide sections
-  - **Expected scope**: 2,000–3,000 words per region × 5–6 regions = 15,000–20,000 words total
-  - **Timeline**: 3–4 hours for research + writing
-  - **Value**: Makes off-grid guide actionable for readers in specific locations; increases relevance and adoption
+- ✅ ~~**off-grid-living: Regional Implementation Guides**~~ (COMPLETE, Session 623)
+  - **Scope**: Adapted comprehensive guide to 5 climate zones and geographic regions with climate-specific material selection, resource availability, infrastructure requirements
+  - **Regions COMPLETE**: 
+    - Pacific Northwest (4,200 words, founded on temperate patterns) — already existed
+    - Southwest Desert (4,800 words, arid design, water scarcity mitigation) — already existed
+    - South Atlantic (4,600 words, hot-humid, hurricane design) — already existed
+    - **Upper Midwest (4,321 words, extreme cold -25°F to -35°F, 5-6 month heating, R-40 walls, 42-60 ft frost depth)** — NEW
+    - **Northeast (5,493 words, forest management as economic foundation, maple syrup $3-4K/yr, micro-hydro priority, ice storms as primary threat, tick-borne disease)** — NEW
+  - **Adaptation depth**: Food production calendars, shelter/insulation specs, water systems, energy generation, seasonal maintenance, regional hazard preparedness for each region
+  - **Deliverable format**: 5 markdown files with main guide cross-references, committed to master
+  - **Actual scope**: 23,414 total words across 5 regions (exceeded 15K-20K estimate due to regional depth)
+  - **Value achieved**: Off-grid guide now actionable for specific regional readers; regional guides published alongside main guide on GitHub
 
 - **cybersecurity-hardening: TIER 3 Threat Model & Implementation** (Priority MEDIUM for comprehensive coverage)
   - **Scope**: Develop TIER 3 threat model (highest sophistication: targeted by well-resourced actors such as state intelligence, law enforcement with warrants, organized crime). Current TIER 1–2 cover individual privacy and law enforcement with limited resources.
