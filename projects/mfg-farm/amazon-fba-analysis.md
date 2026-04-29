@@ -1,8 +1,8 @@
 ---
 title: Amazon FBA vs. Etsy Fulfillment Strategy Analysis — ModRun Cable Management
-date: 2026-04-28
+date: 2026-04-29
 status: active
-version: 2.0
+version: 2.1
 tags: [mfg-farm, amazon, etsy, fulfillment, strategy, modrun]
 related: pricing-strategy.md, fulfillment-workflow.md, market-research.md
 ---
@@ -94,6 +94,23 @@ A batch of 50 ModRun Starter Bundles (packaged) occupies approximately 0.5–0.7
 - Days 365+: $6.90/ft³/month
 
 At 50-unit forward stock, the 180-day sell-through window is the critical constraint. If the FBA batch stalls — due to poor reviews, listing suppression, or algorithm cold-start — aged inventory fees begin compounding at day 181. A failed 50-unit batch at 270+ days accrues $0.50–$5.45/ft³/month in surcharges plus regular storage, plus eventual removal fees of $0.97–$1.90/unit. Total downside on a failed 50-unit FBA batch: $100–200 in losses on top of the ~$175 inventory investment.
+
+**Low Inventory Level Fee (LILL — expanded January 2026):**
+
+Beginning January 2026, Amazon expanded the Low Inventory Level Fee to include bulky items and now calculates it at the individual FNSKU level (not the parent ASIN). The fee fires when both the 30-day and 90-day average days-of-supply fall below 28 days simultaneously.
+
+| Days of Supply Remaining | Per-Unit Fee (small standard) |
+|---|---|
+| 21–28 days | $0.32/unit |
+| 14–21 days | $0.63/unit |
+| 0–14 days | $0.89/unit |
+
+**Exemptions that protect ModRun's first FBA batch:**
+- Products new to FBA: 180-day exemption from first inventory receipt date. A 50-unit test batch is fully exempt from LILL for its first six months, which covers the entire Phase 2 test window.
+- Products selling fewer than 20 units in the last 7 days: At ModRun's early FBA volumes, this threshold often applies.
+- New professional sellers: 365-day protection from first inventory receipt.
+
+**Practical implication for Phase 2:** The 180-day new-ASIN exemption effectively eliminates LILL risk during the test batch window. However, when the seller restocks for Phase 3, the exemption expires and LILL becomes a real operational concern. At 100 units/month FBA velocity, a 75-unit batch (22.5-day supply at 3.3 units/day) sits in the 21–28 day tier ($0.32/unit) almost immediately after receiving. Batch size decisions in Phase 3 must account for this: target 60-day supply batches to stay comfortably above the 28-day threshold.
 
 **Inbound placement fee (restructured 2026):**
 - Minimal split (single fulfillment center): ~$0.21–$0.30/unit
@@ -616,6 +633,9 @@ START: What is current monthly unit volume?
 - [Amazon vs Etsy: Which Marketplace Wins for Sellers in 2026? — Willow Commerce](https://willowcommerce.ai/amazon-vs-etsy/)
 - [Amazon FBA Long-Term Storage Fees 2026 — Liquidate Products](https://liquidateproducts.com/blog/amazon-fba-liquidation-2026-ltsf-avoid-fees/)
 - [Amazon Inbound Placement FBA Fees Explained in 2026 — AMZ Prep](https://amzprep.com/amazon-inbound-placement-fees/)
+- [Amazon Low Inventory Level Fee Explained: How to Avoid Charges — AMZ Prep](https://amzprep.com/amazon-low-inventory-level-fee/)
+- [Amazon FBA Fuel Surcharge April 2026: What Operators Need to Do Before April 17 — Fast FBA 3PL](https://fastfba3pl.com/blog/amazon-fba-3-5-surcharge-what-sellers-need-to-know-april-2026/)
+- [Amazon to apply 3.5% fuel and logistics surcharge on fulfillment — Supply Chain Dive](https://www.supplychaindive.com/news/amazon-fba-2026-fuel-surcharge-increase/816462/)
 - [Selling 3D-Printed Products on Amazon — FBA Help](https://fba.help/blog/tips/selling-3d-printed-products-on-amazon)
 - [Amazon Seller Performance Metrics 2026: Thresholds — Feedvisor](https://feedvisor.com/university/seller-performance-measurements/)
 - [Best 3D Printing Business Ideas To Start From Home In 2026 — Alidropship](https://alidropship.com/3d-printing-business-ideas/)
