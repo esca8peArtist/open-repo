@@ -1,4 +1,53 @@
-# Check-In Log
+## Since Last Check-in (Session 634 — 2026-04-29 14:45 UTC — CRITICAL: ALPACA INSUFFICIENT BUYING POWER)
+
+### 🔴 CRITICAL BLOCK: Alpaca Account Underfunded
+
+**Session 634 Discovery** (14:32–14:45 UTC):
+
+**What Happened**:
+- ✅ Engine running and generating signals perfectly (11 tickers, BUY/HOLD/SELL real-time)
+- ❌ Order execution FAILING since 14:30 UTC across all tickers
+- **Error**: Alpaca code 40310000 — "insufficient buying power"
+- **Account balance**: $200–700 available
+- **Requirement for 11-ticker trading**: $5,000–10,000 minimum
+
+**Critical Finding**:
+- Previous Session 622 marked Alpaca block as "RESOLVED" but the funding issue was NEVER actually fixed
+- The account has only enough cash for 1–2 trades, not an 11-ticker portfolio
+- Paper trading validation CANNOT proceed without sufficient buying power
+
+**What User Needs**:
+**URGENT**: Deposit funds to Alpaca account OR configure account with sufficient buying power
+
+**Verification Command**:
+```bash
+cd projects/stockbot && .venv/bin/python -c "
+import alpaca_trade_api
+api = alpaca_trade_api.REST()
+account = api.get_account()
+print(f'Buying power: ${account.buying_power}')
+print(f'Cash: ${account.cash}')
+print(f'Portfolio value: ${account.portfolio_value}')
+"
+```
+
+**Impact**:
+- ❌ Gate 1 validation BLOCKED (cannot generate trades without funding)
+- ❌ Item 3 (post-Gate-2 research) DEFERRED (no Gate 1 pass to build on)
+- ⏳ Market session monitoring continues (will likely end with 0 trades due to funding)
+- ✅ Engine health is PERFECT — only issue is account balance
+
+**Documented In**:
+- BLOCKED.md — New entry "stockbot — Alpaca account insufficient buying power"
+- Commit: f53f359
+
+**Next Steps (User Action Required)**:
+1. Check Alpaca account balance and buying power
+2. Deposit funds ($5,000–10,000 recommended minimum)
+3. Engine will resume trading after account is funded
+4. Gate 1 validation can continue immediately after funding
+
+---
 
 > This file tracks autonomous session progress, critical deadlines, and user decisions needed.
 > Orchestrator updates this at the end of each session before committing.

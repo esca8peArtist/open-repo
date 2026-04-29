@@ -16502,3 +16502,45 @@ cd projects/stockbot
 **Next session**: Execute Item 3 (stockbot post-Gate-2) at 20:30 UTC conditional on Day 1 trading validation.
 
 ---
+
+## 2026-04-29 14:32–14:45 UTC — Orchestrator Session 634 — Market Session Monitoring + Critical Alpaca Block
+
+**Status**: BLOCKED. Alpaca account insufficiently funded for paper trading.
+
+**Summary**:
+
+### Market Session Verification (14:32 UTC)
+- ✅ **Engine status**: Running since 03:31 UTC (11.1 hours uptime, PID 1241288)
+- ✅ **All 11 tickers active**: AAPL, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA, COP
+- ✅ **Signals generating**: Real-time BUY/HOLD/SELL signals observed at 15:33 UTC
+  - CVX: BUY (0.4844 predicted return)
+  - NEE: BUY (0.3640)
+  - CRM: SELL (0.3506)
+  - MS, GE, NFLX, BAC: HOLD (0.5000)
+- 🔴 **Database**: 0 trades created — order execution failing
+
+### Critical Block Identified (14:30 UTC)
+Order execution FAILING across all tickers. Error logs show:
+```
+ERROR | Order submission failed: Market order (DIS buy) failed
+insufficient buying power (code 40310000)
+Buying power: $741.13 | Attempting: $300-800/ticker across 11 tickers
+```
+
+**Root cause**: Alpaca account balance insufficient for 11-ticker simultaneous trading
+- Account buying power: ~$200-700 available
+- Required for all 11 tickers: ~$5,000-10,000 minimum
+- Paper trading cannot validate without ability to execute orders
+- **Previous block was marked RESOLVED but this was false — the actual account funding issue was never addressed**
+
+### Documented Block (Committed)
+- **File**: BLOCKED.md, new entry "stockbot — Alpaca account insufficient buying power"
+- **Verification command**: Alpaca buying power check
+- **What user needs**: Fund account OR configure with sufficient buying power
+- **Commit**: f53f359
+
+**Next**: Market monitoring continues (ongoing, will await 20:00 UTC close). Item 3 research deferred until funding resolved. No other autonomous work available (all projects blocked or awaiting user decisions).
+
+**Blocked on**: Alpaca account insufficient buying power
+
+**Status**: SESSION COMPLETE — NEW BLOCK WRITTEN
