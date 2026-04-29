@@ -97,6 +97,55 @@
 
 ---
 
+## 2026-04-29 03:50 UTC — Session 616 — Exploration Queue Item 17 Execution
+
+**Context**: Orchestrator identified that all high-priority projects have active blocks (user actions, external dependencies). Exploration queue had 0 immediately-actionable items (Items 3-6, 11 all queued on triggers). Added 3 new exploration items (16-18) and executed Item 17 (resistance-research Domain 39 scoping).
+
+---
+
+### ✅ **Item 17: resistance-research — Domain 39 Candidate Scoping COMPLETE**
+**Agent**: Orchestrator (autonomous execution)
+**Duration**: ~45 minutes research + analysis + writing
+**File created**: `projects/resistance-research/ITEM17_DOMAIN39_CANDIDATES.md`
+**Word count**: 18,500+ words
+**Candidates evaluated**:
+1. **Labor Rights and Democratic Participation** (Union density decline, electoral correlation, co-determination international precedent) — Ranked #2 (strong infrastructure lever, longer-cycle organizing)
+2. **Technology Platforms and Democratic Infrastructure** (Algorithmic recommendation, content moderation, data access, Section 230 reform) — Ranked #4 (emerging crisis but lower 2026 urgency)
+3. **Debt, Precarity, and Civic Participation** (Housing, student, medical debt as civic-participation barriers) — Ranked #3 (direct causal chain, measurable 2026 impact)
+4. **International Trade and Democratic Sovereignty** (ISDS, WTO constraints, transnational governance) — Ranked #5 (long-cycle, lower 2026 urgency)
+5. **Reproductive Rights and Democratic Authority** (Post-Dobbs state abortion bans, women's political equality, reproductive autonomy as democratic precondition) — **RANKED #1** (strongest 2026 urgency + coalition-building potential)
+
+**Final ranking**: 
+| Rank | Candidate | Key Advantage | Feasibility |
+|------|-----------|---------------|-------------|
+| 1 | **Reproductive Rights** | Strongest coalition (women voters + reproductive justice movement); highest 2026 electoral urgency (21 state bans in effect); direct democratic-equality pathway | Constitutional reversal required (Dobbs entrenched); long-term movement building |
+| 2 | **Labor Rights** | Existing mass organizations; substantial international precedent (Germany co-determination, Scandinavia); direct democratic-infrastructure lever | Union power declining; rebuilding requires Democratic majorities (2028+) |
+| 3 | Debt & Precarity | Direct participation-suppression causal chain; multiple reform pathways (debt forgiveness, prevention, management) | Long-cycle; coalition fragmentation; capital investment required |
+| 4 | Tech Platforms | Novel synthesis; EU regulatory precedent (DSA); 2026 platform-information impact | Requires architectural change; coalition fragmentation on priorities |
+| 5 | International Trade | Clear structural problem; USMCA renegotiation window; long-term sustainability | Transnational governance abstracted; low 2026 urgency |
+
+**Key findings**:
+- **Reproductive Rights** has the strongest grassroots infrastructure (organized coalition, ballot initiative success in 6 states, documented voter mobilization)
+- **Labor Rights** has strong structural importance but faces declining membership and requires long-term organizing (2-3 year cycles)
+- Candidates 1-2 receive full research roadmaps (14-18 hours and 12-16 hours respectively); Candidates 3-5 identified for post-election Phase 2 work
+- Framework now positioned for Phase 2 expansion: Domains 39-40 candidates identified with production-ready research roadmaps
+
+**Research roadmap details**:
+- **Reproductive Rights roadmap**: Constitutional doctrine analysis, voting-behavior changes post-Dobbs, reproductive control as democratic-constraint mechanism, international case studies (Ireland repeal, New Zealand decriminalization, Hungary/Poland/Turkey autocratization), ballot initiative success patterns, reform pathways (constitutional amendment vs. statutory codification), cross-domain connections
+- **Labor Rights roadmap**: Union decline trajectory and political correlates, empirical electoral impact, international comparative (Germany co-determination, Scandinavia), US labor law reform options (state and federal), 2026 swing-state union capacity, connection to inequality and wealth concentration, cross-domain synthesis
+
+**Sources**: 40+ sources spanning constitutional law (Yale Law Forum, Slate, Supreme Court briefs), political science (Pew Research, ANES, electoral behavior), comparative governance (Oxford, Cambridge, NYU law journals), labor economics (EPI, BLS, AFL-CIO), international precedent (German Bundestag, Scandinavian union confederations, reproductive rights organizations)
+
+**Status**: Production-ready framework expansion material. Reproductive Rights and Labor Rights are immediate priority candidates for Domain 39/40 post-distribution Phase 2 work (pending user distribution-path decision on current 35-domain framework). Framework is now mature for institutional adoption and long-term expansion planning.
+
+**Next steps**: 
+- User distribution decision (Path A / A+Domain37 Hybrid / Path B) gates Phase 1 execution
+- Post-Phase 1 distribution: Either begin Domain 38 research (Intelligence Oversight, ranked #1 by Item 12) or Domain 39 research (Reproductive Rights, ranked #1 by Item 17)
+- Domains 39-40 research roadmaps ready for immediate execution upon signal
+- Integration of all 35-40 domains into publication materials would require ~40-60 hours additional work (Phase 2 completion)
+
+---
+
 ## 2026-04-29 — cybersecurity-hardening — Item 14: Tier 2 Messaging Analysis
 
 **Task**: Sector-specific messaging analysis for Tier 2 distribution phase of OpSec corpus
