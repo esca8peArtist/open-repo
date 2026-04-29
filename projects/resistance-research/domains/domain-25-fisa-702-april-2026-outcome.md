@@ -158,21 +158,23 @@ The combined architecture means the Section 702 outcome — whether warrantless 
 
 ---
 
-## Section 7: Outcome Checklist (Complete After Senate and Presidential Action)
+## Section 7: Outcome Checklist
+
+*Updated April 29, 2026 (Session 658) — House vote confirmed. Senate and presidential action pending.*
 
 - [x] House procedural rule vote: 215-210 (confirmed April 29)
-- [ ] House final passage vote: _____ (pending as of April 29, 1:32 PM)
-- [ ] Warrant requirement: Excluded (confirmed in bill text; fill vote count)
-- [ ] CBDC ban attached: Yes (confirmed sweetener)
-- [ ] SAVE Act attachment: Excluded (dropped before floor vote)
-- [ ] Commercial data broker loophole: Still Open (confirmed — not addressed in bill)
-- [ ] Senate vote: _____ (pending)
-- [ ] Presidential signature: _____ (expected)
-- [ ] New expiration date: April 30, 2029 (if passed as written)
-- [ ] Civil liberties challenge filed: _____ (EFF/ACLU pre-committed; monitoring for first filing)
-- [ ] FISC extension ruling: Reported to extend collection through 2027 regardless of statutory lapse — confirm or deny after May 1
+- [x] House final passage vote: **235-191** (confirmed April 29, bipartisan — more than 20 GOP privacy hawks voted no; most House Democrats voted no)
+- [x] Warrant requirement: **Excluded** (confirmed in enacted bill text)
+- [x] CBDC ban attached: **Yes** (attached to House-passed version; Thune warned "dead on arrival" in Senate — likely to be stripped)
+- [x] SAVE Act attachment: **Excluded** (Trump dropped this condition before floor vote)
+- [x] Commercial data broker loophole: **Still Open** (not addressed in any version)
+- [ ] Senate vote: **Pending** — Thune secured unanimous consent for cloture vote on S.4344 (companion three-year clean bill) no later than May 1, 2026. CBDC provision expected to be stripped in Senate; House will need to accept Senate amendment or go to conference.
+- [ ] Presidential signature: **Pending** — Trump expected to sign; his SAVE Act condition was dropped
+- [ ] New expiration date: April 30, 2029 (if S.1318 / S.4344 passed as written)
+- [ ] Civil liberties challenge filed: EFF/ACLU pre-committed; monitoring for first post-enactment filing
+- [ ] FISC extension ruling: Domain 1 Section 4.2 documents reported FISC one-year extension of existing collection orders — verify and confirm after Senate action
 
-**Update instruction**: Fill this checklist in surveillance-tracking.md when Senate vote and presidential signature are confirmed. Cross-post confirmed outcome to PROJECTS.md under "Active Trackers."
+**Update instruction**: Fill Senate vote count and presidential signature date when confirmed. Cross-post to surveillance-tracking.md FISA outcome checklist and PROJECTS.md "Active Trackers" section. If Senate strips CBDC and House accepts, note the final enacted text omits CBDC ban.
 
 ---
 
@@ -194,6 +196,38 @@ The combined architecture means the Section 702 outcome — whether warrantless 
 **2026-2029 monitoring:**
 - Annual FBI compliance reports to ODNI Civil Liberties Protection Officer — FOIA these when published. They constitute the first paper trail of warrantless query patterns that could support a Carpenter-doctrine Fourth Amendment challenge.
 - EFF/Just Security tracking of FBI compliance failures — these are the empirical foundation for the next reauthorization reform push.
+
+---
+
+## Section 9: Post-April 29 — What the Final House Vote Confirms
+
+*Added April 29, 2026 (Session 658)*
+
+### 9.1 Final House Vote: 235-191
+
+The House passed S.1318 (the Foreign Intelligence Accountability Act, three-year warrantless renewal) on April 29, 2026 by a **235-191 bipartisan vote**. The bipartisan character of the vote is inverted from the normal pattern: bipartisan means bipartisan opposition, not bipartisan support. More than 20 GOP privacy hawks voted no on constitutional grounds; most House Democrats voted no on civil liberties grounds. The 235 "yes" votes came predominantly from House Republicans who accepted the attorney-level approval compromise as sufficient reform.
+
+The 235-191 margin is materially wider than the 215-210 procedural rule vote — which means some members who voted yes on procedure voted yes on final passage after leadership extracted additional commitments in the two-hour hold. The gap (20 votes) is consistent with vote-trading on the CBDC ban attachment, committee assignment commitments, or other considerations not reflected in public reporting.
+
+### 9.2 The CBDC Problem and Senate Resolution Path
+
+Speaker Johnson attached a permanent CBDC ban to the House bill as a Freedom Caucus sweetener. Senate Majority Leader Thune immediately warned this provision is "dead on arrival" in the Senate, where Democrats oppose it unanimously and it cannot reach 60 votes for cloture.
+
+The expected Senate resolution path: the Senate passes S.4344 (the companion clean three-year extension without the CBDC ban) under Thune's unanimous consent agreement (cloture vote by May 1). The House then faces a choice: accept the Senate's CBDC-free version (losing the Freedom Caucus sweetener) or insist on conference (risking lapse beyond April 30). Given the intelligence community's stated urgency, House acceptance of the Senate version is the most probable outcome. This means the enacted law will likely:
+- Extend Section 702 for three years (through April 30, 2029)
+- Contain the attorney-level approval and monthly ODNI CLPO review provisions
+- Not contain a CBDC ban
+- Not contain a warrant requirement
+- Not address the commercial data broker loophole
+
+### 9.3 The Civil Liberties Community's Post-Passage Position
+
+The Freedom Caucus-progressive Democrat coalition that nearly blocked reauthorization (holding together long enough to defeat two proposals before splitting) represents the largest bipartisan surveillance reform bloc since RISAA (2024). The 2029 reform window is the next legislative moment. Organizations to watch:
+
+- **EFF**: Will file FOIA requests for FBI U.S. person query justifications under the new monthly ODNI CLPO reporting requirement. These constitute the empirical record for the 2029 reform fight and potential Carpenter-doctrine Fourth Amendment challenge.
+- **ACLU**: U.S. v. Hasbajrami (Second Circuit) is the active judicial challenge to warrantless Section 702 back-end queries. This case is the most likely vehicle for a warrant requirement ruling short of a statutory fix.
+- **Just Security / Brennan Center**: Will publish post-enactment legal analysis within 48-72 hours of signing. Monitor for specific challenge vectors.
+- **Wyden-Davidson Government Surveillance Reform Act**: This remains the legislative vehicle for the 2029 reauthorization cycle. The coalition that voted no in 2026 is the political nucleus of the 2029 reform push.
 
 ---
 
@@ -220,3 +254,9 @@ The combined architecture means the Section 702 outcome — whether warrantless 
 - [BGOV Bill Analysis: House-Amended S. 1318, 3-Year FISA Extension](https://news.bgov.com/bloomberg-government-news/bgov-bill-analysis-house-amended-s-1318-3-year-fisa-extension)
 - [Wyden letter to DHS OIG on ICE location data purchasing (March 3, 2026)](https://www.wyden.senate.gov/imo/media/doc/wyden_letter_to_dhs_oig_on_ice_purchasing_location_datapdf.pdf)
 - [EFF: Keep Pushing — We Get 10 More Days to Reform Section 702 (April 17)](https://www.eff.org/deeplinks/2026/04/keep-pushing-we-get-10-more-days-reform-section-702)
+- [The Hill: House approves reauthorization of FISA 702 warrantless spy powers, 235-191 (April 29)](https://thehill.com/homenews/house/5856102-warrantless-spy-powers-fisa-702/)
+- [Fox News: House passes FISA Section 702 renewal as Senate faces midnight deadline (April 29)](https://www.foxnews.com/politics/house-passes-fisa-renewal-bipartisan-vote-putting-pressure-senate-looming-deadline)
+- [Senate Daily Press: Tuesday April 28, 2026 — Thune UC agreement on S.4344 cloture by May 1](https://www.dailypress.senate.gov/tuesday-april-28-2026/)
+- [Congress.gov: Text — S.4344 — 119th Congress — three-year FISA Section 702 extension](https://www.congress.gov/bill/119th-congress/senate-bill/4344/text)
+- [House Republicans Pivot to FISA Bill to Push Permanent CBDC Ban (Gate News)](https://www.gate.com/news/detail/house-republicans-pivot-to-fisa-bill-to-push-permanent-cbdc-ban-after-20673842)
+- [U.S. v. Hasbajrami — Second Circuit challenge to warrantless Section 702 back-end queries (active litigation)](https://www.aclu.org/cases/aclu-v-united-states)

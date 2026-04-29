@@ -41,19 +41,41 @@ Requires user action to distribute — see session notes for channel strategy.
 
 ## Urgent / Time-Sensitive
 
-### 0. Section 702 FISA Expiration — APRIL 30 (2 DAYS OUT) — OUTCOME PENDING
+### 0. Section 702 FISA — HOUSE PASSED 235-191 (April 29) — SENATE ACTION PENDING BY MAY 1
 
-Section 702 of FISA expires April 30, 2026. As of April 28, the House has not yet voted. House expected to vote April 29-30 on the Foreign Intelligence Accountability Act (three-year, no warrant requirement, no data broker loophole closure, SAVE Act attachment demanded by Trump). Vote outcome uncertain.
+**Updated April 29, 2026 (Session 658)**
 
-**Pre-vote assessment documented in surveillance-tracking.md** — most likely outcome is three-year renewal without privacy protections; brief lapse remains possible if civil liberties coalition holds.
+The House passed S.1318 (Foreign Intelligence Accountability Act, three-year warrantless renewal) **235-191 on April 29**. The April 30 deadline will not produce a lapse. Senate cloture vote on companion S.4344 is set for no later than May 1 (Thune UC agreement). Presidential signature expected after Senate passage. The CBDC ban attached to the House version is expected to be stripped in the Senate.
 
-**After April 30**: Fill the post-deadline checklist in surveillance-tracking.md. Specifically flag: (a) whether warrant requirement was included; (b) whether data broker loophole was closed; (c) whether a lapse occurred and for how long; (d) any litigation filed.
+**What is confirmed:**
+- (a) Warrant requirement: NOT included
+- (b) Commercial data broker loophole: NOT closed
+- (c) Lapse: Did not occur; collection authority continues
+- (d) New expiration date: April 30, 2029 (pending Senate passage)
+- (e) SAVE Act attachment: Not included (Trump dropped this condition)
 
-**Cross-domain implications**: If reauthorized without warrant/broker protections, update Domain 21 section in democratic-renewal-proposal.md and note in Domain 1 that election organizer surveillance window extends.
+**What still needs to be filled** (after Senate vote and presidential signature):
+- Senate vote count on S.4344 or amended S.1318
+- Date of presidential signature
+- Whether CBDC ban survived into enacted text (expected: no)
+- First EFF/ACLU post-passage challenge filing
 
-**Where to track**: [EFF 702 Campaign](https://epic.org/campaigns/fisa-section-702-reform-or-sunset/) | [Brennan Center 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page) | [Nextgov — House readies vote](https://www.nextgov.com/policy/2026/04/house-readies-vote-renew-fisa-702-without-warrant-amendment/412856/)
+**Where to update**: surveillance-tracking.md (FISA outcome checklist), domain-25-fisa-702-april-2026-outcome.md Section 7 checklist (partially updated this session), PROJECTS.md "Active Trackers"
 
-*Research filed to: surveillance-tracking.md (Part 1, Section 702 — pre-vote assessment April 28)*
+**Research filed to**: domain-25-fisa-702-april-2026-outcome.md (Section 7 updated + Section 9 added), domain-01-voting-rights-elections.md Section 4.2 (corrected "lapsed" framing), domains/MAY_2026_UPDATES.md (April 29-30 developments section added)
+
+---
+
+### 0a. Distribution Placeholder Audit — COMPLETE (Session 658)
+
+Full placeholder audit completed for all three distribution template files. Results documented in DISTRIBUTION_GUIDE.md at the top (new "DISTRIBUTION READINESS: PLACEHOLDER AUDIT" section). Summary:
+
+- **URL placeholders**: All `[link]` fields in Substack, Reddit, and institutional templates point to 6 canonical documents. Cannot be filled until public URLs (GitHub Gists) are created. This is the sole blocker for distribution launch.
+- **Contact fields**: `[Your name]` and `[Contact information]` appear in all 11 institutional outreach templates; user must fill before sending.
+- **Canonical file ambiguity**: Resolved. Two executive summary versions (96-line print-ready vs. 132-line analytical version) serve different audiences. No conflict.
+- **Pre-launch time estimate**: approximately 90 minutes of user action to create Gists, fill URL placeholders, and fill contact fields — path-independent.
+
+**No agent action required** — audit is informational. When user decides path, execution begins immediately from this documented state.
 
 ---
 

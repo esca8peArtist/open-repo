@@ -124,6 +124,48 @@
 
 ### Pending After April 30
 
-- **FISA Section 702**: Post-deadline checklist in surveillance-tracking.md needs filling after April 30 vote. Most likely outcome: three-year reauthorization without warrant requirement. If lapsed: EO 12333 shift flag needs immediate update.
+- **FISA Section 702**: Post-deadline checklist in surveillance-tracking.md needs filling after Senate vote and presidential signature are confirmed. House passed 235-191 on April 29. Senate cloture vote set for no later than May 1 (Thune UC agreement on S.4344). CBDC ban expected to be stripped in Senate before final enactment. See domain-25-fisa-702-april-2026-outcome.md Section 7 (updated checklist) and Section 9 (post-April-29 analysis).
 - **Iran WPR Post-May 1**: Domain 19f Section 14 (and Case Study) frame the post-May 1 landscape. After May 1, fill: (a) whether Collins/Murkowski defect on appropriations; (b) whether reconciliation vehicle proceeds; (c) any court filing on WPR enforcement.
+
+---
+
+## April 29-30 Developments (Session 658)
+
+### FISA Section 702 — April 29 Final House Vote: 235-191
+
+**Most important development in the queue.** The House passed S.1318 (Foreign Intelligence Accountability Act, three-year warrantless renewal) on April 29, 2026 by **235-191**. This is a confirmed final House passage vote, not a procedural vote. Key confirmed facts:
+
+- **Bipartisan "no" coalition**: More than 20 GOP privacy hawks voted no; most House Democrats voted no. The 235 yes votes came from House Republicans who accepted the attorney-level approval compromise.
+- **CBDC ban attached** to House-passed version; Senate Majority Leader Thune warned it is "dead on arrival" in Senate. Expected resolution: Senate passes S.4344 (companion clean three-year bill), House accepts.
+- **No warrant requirement** in enacted or pending text.
+- **No commercial data broker loophole closure**.
+- **SAVE Act**: Dropped as Trump signature condition before floor vote — Section 702 renewal passed as a standalone vehicle.
+- **Senate timeline**: Cloture vote on S.4344 must occur by May 1, 2026 (Thune UC agreement, Senate Daily Press April 28, 2026).
+
+**Cross-domain updates required after Senate/signature confirmation:**
+- surveillance-tracking.md: Fill FISA outcome checklist (Part 1, Section 702 post-deadline)
+- domain-01-voting-rights-elections.md Section 4.2: Correct the "effectively lapsed" framing (that section was written speculatively on April 28 before the actual April 29 House vote; it should be updated to reflect the 235-191 passage)
+- PROJECTS.md: Update "Active Trackers" note for surveillance-tracking.md
+
+### Domain 1 — Section 4.2 Correction Flag
+
+Domain 1 Section 4.2 (written April 28, Session 563) describes FISA as having "effectively lapsed" and the House Rules Committee as having "indefinitely postponed" its meeting. This was accurate as of April 28 but was overtaken by events on April 29: the Rules Committee revived the bill 9-4, the procedural rule passed 215-210, and the House passed final passage 235-191. Section 4.2 needs a correction note at the top and the "lapsed" description updated to "three-year renewal passed House, Senate action pending." The civil liberties advocacy implications (warrant requirement push for next cycle, Fourth Amendment Is Not For Sale Act) remain accurate.
+
+### State Ballot Initiatives — April 2026 Status
+
+Multiple states advancing ballot initiatives as documented in Domain 1 Section 4.1:
+- **Four states (FL, MS, SD, UT)** enacted their own proof-of-citizenship voting laws in April 2026 (state SAVE Act analogs, without the Senate filibuster barrier)
+- **Arizona**: 621,000 signatures collected for mail ballot grace period initiative (needed 356,000); submission to Secretary of State targeted May 3
+- **Michigan**: ~200,000 of 340,000 needed signatures collected for same-day registration initiative (June 1 deadline)
+- **Nevada, Wisconsin, Montana**: Signature drives ongoing, mid-May targets
+
+The state-level SAVE Act wave and the federal SAVE Act Senate defeat are happening simultaneously. State enactments will face immediate litigation from Brennan Center and Democracy Docket in states without state constitutional voting rights provisions.
+
+Sources:
+- [The Hill: House approves reauthorization of FISA 702 warrantless spy powers (April 29)](https://thehill.com/homenews/house/5856102-warrantless-spy-powers-fisa-702/)
+- [Fox News: House passes FISA renewal, 235-191 (April 29)](https://www.foxnews.com/politics/house-passes-fisa-renewal-bipartisan-vote-putting-pressure-senate-looming-deadline)
+- [Senate Daily Press: Tuesday April 28, 2026 — Thune UC agreement on S.4344](https://www.dailypress.senate.gov/tuesday-april-28-2026/)
+- [19th News: GOP states taking up voting laws modeled after SAVE America Act (April 2026)](https://19thnews.org/2026/04/voting-citizenship-proof-laws-trump-save-america-act/)
+- [Time: States advancing proof-of-citizenship voting restrictions (April 3, 2026)](https://time.com/article/2026/04/03/voting-restrictions-citizenship-proof-state-laws-ballot-measures-trump-save-act/)
+- [Democracy Docket: As SAVE America Act stalls, GOP states enacting their own proof of citizenship laws](https://www.democracydocket.com/news-alerts/as-save-america-act-stalls-gop-states-are-quietly-enacting-their-own-proof-of-citizenship-laws/)
 

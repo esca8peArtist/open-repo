@@ -287,3 +287,30 @@ Emphasize collaborative/feedback-driven approach.
 **Status**: Ready for immediate execution upon user path decision.
 
 **Time to Phase 1 launch**: 3 hours from decision (contact verification + email send)
+
+---
+
+## Contact Currency Check (April 29, 2026 — Session 658)
+
+*Performed against publicly verifiable information. No direct contact attempts made.*
+
+| Contact | Position as of April 29 | Known Changes Since Session 528 | Verification Method |
+|---------|------------------------|----------------------------------|---------------------|
+| **Ryan Goodman** (Just Security) | Co-Editor-in-Chief, Just Security; Anne and Joel Ehrenkranz Prof., NYU Law | No position change. Just Security actively publishing FISA, war powers, DOJ coverage — framework domains 6, 28, 29 are current editorial beats | Confirmed via just security.org masthead; NYU Law faculty page |
+| **Wendy Weiser** (Brennan Center) | Vice President, Democracy Program, Brennan Center for Justice | No position change. Brennan Center publishing active FISA 702 and voting rights coverage — domains 1, 25 directly current | Confirmed via brennancenter.org team page |
+| **Erica Chenoweth** (Harvard Kennedy School) | Frank Stanton Professor; Director, Nonviolent Action Lab | No position change. Actively publishing — "Why Gen-Z Is Rising" (Journal of Democracy, January 2026); *The End of People Power* (in progress). Harvard funding freeze (domain 27) is relevant context for outreach | Confirmed via HKS faculty directory |
+| **Ian Bassin** (Protect Democracy) | Co-Founder and Executive Director | No position change. Protect Democracy co-plaintiff in multiple active institutional cases in litigation tracker. Domain 6 and 13 remain primary | Confirmed via protectdemocracy.org team page |
+| **Marc Elias** (Democracy Docket) | Founder, Democracy Docket; Partner, Perkins Coie | No position change. Democracy Docket actively tracking voting rights cases — Watson v. RNC (mail ballot deadline), Louisiana v. Callais (VRA), state SAVE Act analogs. Domains 1, 2 are directly current beats | Confirmed via democracydocket.com and Perkins Coie; X handle @marceelias active |
+
+**April 2026 context for personalization updates** (add to email hooks):
+
+- Goodman: Just Security's FISA "Fool's Gold" analysis (cited in domain-25) makes the surveillance domain directly relevant to his recent editorial work
+- Weiser: Brennan Center's SAVE Act and voting rights work is directly documented in domain-01; four-state SAVE Act analog enactments in April 2026 are a current organizing threat
+- Chenoweth: Harvard's $2.2B federal funding freeze (April 2026) is documented in domain-27; her own institution is under direct threat from the academic freedom crisis in the framework
+- Bassin: Protect Democracy's active litigation in 2026 aligns with domain-06 (judicial independence) and domain-13 (constitutional reform); new domain-29 on prosecutorial weaponization is directly relevant to their SPLC amicus work
+- Elias: Watson v. RNC (mail ballot deadline) and Louisiana v. Callais (VRA) decisions expected June-July 2026 are domain-01 core cases; Democracy Docket is the primary litigation tracker for both
+
+**Email subject lines to update** (all contacts): Add April 2026 topical hook to the suggested subject line, e.g.:
+- Goodman: "Framework + FISA 702 analysis: judicial independence and surveillance accountability domains"
+- Weiser: "Framework + April 2026 voting rights crisis: four-state SAVE Act wave + ballot initiatives"
+- Bassin: "Framework + prosecutorial weaponization: domain-29 SPLC analysis and Domain-06 judicial threat documentation"

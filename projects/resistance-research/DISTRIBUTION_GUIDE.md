@@ -13,6 +13,60 @@ This guide is for anyone who wants to share the Democratic Renewal proposal, tra
 
 ---
 
+## DISTRIBUTION READINESS: PLACEHOLDER AUDIT
+
+*Completed: April 29, 2026 (Session 658). Updated to reflect actual template file state — independent of path decision.*
+
+**Overall status**: Distribution templates are content-complete and ready for immediate use once the user fills the placeholder fields below. No path decision (A / A+37 / B) is required to complete the pre-launch checklist — all items below can be done in advance.
+
+### URL Placeholders (Required Before Any Distribution)
+
+All three distribution template files (Substack, Reddit, institutional outreach) contain `[link]` placeholders that point to the same 6 canonical documents. These cannot be filled until public URLs exist (GitHub Gist or equivalent). **This is the only blocker for Path A / Path A+37 immediate execution.**
+
+The 6 documents requiring public URLs:
+
+| # | Document | Local File | Template Locations |
+|---|----------|------------|--------------------|
+| 1 | Full 28-domain proposal | `democratic-renewal-proposal.md` | Substack Posts 1-7 (CTA); Reddit Posts 1-8; Institutional Templates 1-11 |
+| 2 | Two-page executive summary | `democratic-renewal-executive-summary.md` | Substack Posts 1-7 (CTA); Reddit Posts 1-5; Institutional Templates 1-11 |
+| 3 | Litigation Tracker 2026 | `litigation-tracker-2026.md` | Institutional Template 1-A, 1-B, 2-A; Reddit Post 1 (r/law), Post 4 |
+| 4 | First Amendment Suppression Tracker | `first-amendment-suppression.md` | Substack Post 4; Reddit Post 3; Institutional Templates 2-A, 3-A, 4-A |
+| 5 | Environmental Rollbacks Tracker | `environmental-rollbacks-tracker.md` | Substack Post 4; Reddit Post 3; Institutional Templates 4-A |
+| 6 | Police Consent Decree Tracker | `police-brutality-consent-decree-tracker.md` | Substack Post 4; Reddit Post 3; Institutional Templates 1-B, 3-A |
+
+**How to fill**: Create a public GitHub Gist (https://gist.github.com) for each document. Copy the Markdown content. The Gist URL is the `[link]` value. Alternatively, publish to a Substack page (not a post) and use the page URL. Takes approximately 30 minutes for all 6 documents.
+
+**The May Day Action Guide** is already live at https://gist.github.com/esca8peArtist/2c5ba783bd06405749b7c3decebaa6d4 — this demonstrates the Gist workflow works.
+
+### Contact/Identity Fields (Required for Institutional Outreach Only)
+
+| Field | Appears In | What to Fill |
+|-------|-----------|--------------|
+| `[Your name]` | All 11 institutional outreach templates (sign-off) | Your preferred name for professional outreach |
+| `[Contact information]` | All 11 institutional outreach templates (sign-off) | Email address; Signal handle (optional); website (optional) |
+
+These fields appear at the bottom of every institutional outreach email template in `distribution-institutional-outreach-templates.md`. Reddit and Substack posts do not require identity fields (pseudonymous distribution is explicitly supported).
+
+### Canonical File Location (Resolved)
+
+Session 544 flagged a "canonical file location" ambiguity. Status as of audit:
+
+- `democratic-renewal-executive-summary.md` (root level, 96 lines) — the print-ready 2-page version; this is the distribution-facing document
+- `executive-summary.md` (root level, 132 lines) and `published/executive-summary.md` (132 lines, identical content) — the extended analytical version
+- The templates reference `democratic-renewal-executive-summary.md` as the "two-page executive summary" and `executive-summary.md` as the "full analytical version"
+- **No conflict**: both versions serve different audiences. The 2-page version goes to general public; the full version goes to policy professionals. Both should have public URLs when distributing.
+
+### Summary: Pre-Launch Checklist (Path-Agnostic)
+
+- [ ] **6 GitHub Gists created** (30 min) — one per canonical document; URLs recorded
+- [ ] **URL fields filled** in all three template files — find-replace `[link]` with actual Gist URLs per document type (~20 min)
+- [ ] **Name and contact fields filled** in `distribution-institutional-outreach-templates.md` — replace `[Your name]` and `[Contact information]` at sign-off of all 11 templates (~10 min)
+- [ ] **Batch 1 contact emails verified** — see `BATCH_1_CONTACT_VERIFICATION.md` for 5-contact verification protocol (~30 min)
+
+**Total pre-launch time**: approximately 90 minutes of user action, path-independent.
+
+---
+
 ## What You Are Distributing
 
 The core documents, in order of distribution priority:

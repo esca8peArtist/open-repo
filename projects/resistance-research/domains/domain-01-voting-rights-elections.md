@@ -99,9 +99,20 @@ Sources: [Brennan Center: Louisiana v. Callais](https://www.brennancenter.org/ou
 
 **Updated**: April 28, 2026 (Session 563)
 
-### 4.1 State Ballot Initiative Wave (May-July 2026)
+### 4.1 State Ballot Initiative Wave (May-July 2026) and State SAVE Act Enactments
 
-In response to the SAVE Act's Senate defeat and the April 2026 coalition-fracture victory, state-level voting rights advocacy coalitions are executing a coordinated ballot initiative campaign in May-July 2026. The target is to place voting rights protections on November 2026 midterm ballots in up to 8 states, creating an electoral liability for Republicans in competitive districts while simultaneously securing popular mandates for voting access.
+*Updated April 29, 2026 (Session 658) — confirmed state enactments added*
+
+In response to the SAVE Act's Senate defeat and the April 2026 coalition-fracture victory, state-level voting rights advocacy coalitions are executing a coordinated ballot initiative campaign in May-July 2026. The target is to place voting rights protections on November 2026 midterm ballots in up to 8 states. Simultaneously, four states enacted their own proof-of-citizenship voting laws in April 2026, creating an immediate litigation front.
+
+**State SAVE Act analogs enacted (April 2026) — confirmed**:
+
+- **Florida**: Proof-of-citizenship law signed by Governor; immediately challenged by voting rights organizations
+- **Mississippi**: Proof-of-citizenship law enacted
+- **South Dakota**: Proof-of-citizenship law enacted
+- **Utah**: Proof-of-citizenship law enacted
+
+These state-level enactments sidestep the Senate filibuster barrier that blocked the federal SAVE Act. Brennan Center and Democracy Docket have identified immediate litigation pathways: states without state constitutional provisions affirmatively protecting voting rights are most vulnerable to these restrictions; states with stronger state constitutional voting rights (Michigan, Colorado) offer more durable litigation defense.
 
 **Ballot initiatives tracking**:
 
@@ -111,16 +122,25 @@ In response to the SAVE Act's Senate defeat and the April 2026 coalition-fractur
 - **Wisconsin**: Early voting expansion and restoration of no-excuse absentee voting (petition drive targets mid-May)
 - **Colorado**: Affirms state constitutional right to vote, preempting voter ID restrictions (already qualified for November ballot, signature collection continues for parallel state SB effort)
 - **Montana**: Voting access restoration initiative (gathering signatures, May launch)
+- **Arkansas, Arizona, Kansas, Alaska**: Ballot initiatives to constitutionally restrict voting to citizens (sponsored by Americans for Citizen Voting coalition — the restriction side of the ballot initiative landscape)
 
-Each ballot initiative creates an electoral dynamic distinct from legislative battles: they place voting rights directly to voters rather than through elected representatives, they create floor activity in swing states that drives voter mobilization, and they create liability for Republicans who campaign against voting access during midterms.
+Each pro-voting-access ballot initiative creates an electoral dynamic distinct from legislative battles: they place voting rights directly to voters rather than through elected representatives, they create floor activity in swing states that drives voter mobilization, and they create electoral liability for Republicans who campaign against voting access during midterms.
 
-**The FISA reauthorization collision** (see Section 4.2) amplifies the ballot initiative strategy: voters seeing messaging about voting rights on one side of a ballot and election security (FISA) on another side will associate Democratic messaging with both voting access and election security — a powerful combination in contested midterm elections.
+**The FISA reauthorization collision** (see Section 4.2) amplifies the ballot initiative strategy: voters seeing messaging about voting rights on one side of a ballot and election security on another will associate Democratic messaging with both voting access and election security — a powerful combination in contested midterm elections.
 
-### 4.2 FISA Section 702 April 30, 2026 Lapse — Outcome Documentation
+Sources:
+- [19th News: GOP states taking up voting laws modeled after SAVE America Act (April 2026)](https://19thnews.org/2026/04/voting-citizenship-proof-laws-trump-save-america-act/)
+- [Time: States advancing voting restrictions (April 3, 2026)](https://time.com/article/2026/04/03/voting-restrictions-citizenship-proof-state-laws-ballot-measures-trump-save-act/)
+- [Democracy Docket: As SAVE America Act stalls, GOP states quietly enacting own citizenship laws](https://www.democracydocket.com/news-alerts/as-save-america-act-stalls-gop-states-are-quietly-enacting-their-own-proof-of-citizenship-laws/)
+- [Brennan Center: New SAVE Act bills would still block millions from voting](https://www.brennancenter.org/our-work/analysis-opinion/new-save-act-bills-would-still-block-millions-americans-voting)
 
-**Status as of April 29-30, 2026**: FISA Section 702 authority has effectively lapsed after Congress failed three consecutive times to pass a long-term renewal. The Foreign Intelligence Surveillance Court issued a one-year extension of existing collection orders under the FAA's sunset provision — meaning collection continues under prior FISC authorization, but the underlying statutory authority has expired. Congress failed to resolve the program before the April 30 deadline despite a 10-day emergency extension that pushed the original April 20 sunset to April 30.
+### 4.2 FISA Section 702 — April 29 House Passage, Senate Action Pending
 
-**The failure sequence**: House GOP leadership attempted and failed twice in a single week to pass FISA reauthorization. A proposed five-year reauthorization failed 228-197 after 20 Republican members broke with leadership, primarily Freedom Caucus members demanding warrant requirements before FBI agents can search Americans' communications collected under the program. A second attempt (18-month renewal) also failed. Trump signed a 10-day stopgap extension April 18 pushing the deadline to April 30. Speaker Johnson then unveiled a proposed three-year renewal without a warrant requirement — and as of April 28, the House Rules Committee indefinitely postponed its scheduled meeting on procedures for that vote, unable to assemble sufficient votes. The Senate, which had prepared a parallel clean three-year extension, also postponed its vote.
+**Accuracy note (updated April 29, 2026, Session 658)**: This section was written on April 28 based on the pre-vote status — at that point the House Rules Committee had collapsed and the outcome was genuinely uncertain. Events moved quickly on April 29. The "effectively lapsed" framing below was overtaken by events: the Rules Committee revived the bill 9-4 on April 29, the procedural rule passed 215-210 (held open more than two hours), and the House passed final passage **235-191**. Section 702 did not lapse on April 30. The Senate has a cloture vote set for no later than May 1 on S.4344 (companion three-year bill). Presidential signature is expected after Senate passage. The legislative and cross-domain analysis in this section remains accurate; only the factual description of the April 30 outcome needs the following correction.
+
+**Corrected status as of April 29, 2026**: The House passed S.1318 (Foreign Intelligence Accountability Act, three-year warrantless renewal) 235-191 on April 29. Senate action pending by May 1. The bill as House-passed contains a CBDC ban that Senate Majority Leader Thune has called "dead on arrival" in the Senate; the likely resolution is Senate passage of the companion S.4344 (clean three-year bill, no CBDC ban). If enacted, Section 702 authority extends through April 30, 2029 with attorney-level approval requirements and monthly ODNI Civil Liberties Protection Officer reviews — but no warrant requirement and no commercial data broker loophole closure.
+
+**The failure sequence leading to passage**: House GOP leadership attempted and failed twice in a single week to pass FISA reauthorization. A proposed five-year reauthorization failed when 20 Republican members broke with leadership demanding warrant requirements. An 18-month renewal also failed. Trump signed a 10-day stopgap extension April 18 pushing the deadline to April 30. Speaker Johnson unveiled a three-year renewal — as of April 28 the Rules Committee had collapsed, but it revived on April 29, and final passage followed later that day.
 
 **Why the warrant requirement matters for election security**: The central sticking point — whether FBI agents must obtain a court warrant before querying Americans' communications collected incidentally under Section 702 — has a direct democracy-security dimension. Section 702 collects communications of non-U.S. persons abroad; because communications often involve U.S. persons on the other end, American citizens' data ends up in the government's possession routinely. Privacy advocates, civil liberties organizations, and a bipartisan coalition of House members have argued that without a warrant requirement, the administration could use existing collected data to surveil election workers, journalists, political opposition, and state election officials — none of whom would necessarily know their communications had been captured. The Trump administration's documented history of using DOJ and FBI resources against political opponents (documented in Domain 29, Section 2) makes this concern empirically grounded rather than hypothetical.
 
