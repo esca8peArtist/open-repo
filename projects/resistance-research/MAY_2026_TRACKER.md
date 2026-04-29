@@ -1,8 +1,8 @@
 # MAY 2026 CIVIC DEVELOPMENTS TRACKER
 
 **Created**: April 28, 2026 (Session 603)
-**Last research pass**: April 29, 2026 (Session 619 — Week 1 pre-population); May 1–7 research pass (Session 628 — Week 1 fill-in and outcome confirmation)
-**Purpose**: Weekly log of civic developments across six domains critical to the resistance-research framework. Each entry cross-references affected domain documents (1–37) and flags potential Domain 38 candidates.
+**Last research pass**: April 29, 2026 (Session 619 — Week 1 pre-population; 8-domain structure established); May 1–7 research pass (Session 628 — Week 1 fill-in and outcome confirmation)
+**Purpose**: Weekly log of civic developments across eight domains critical to the resistance-research framework. Each entry cross-references affected domain documents (1–37) and flags potential Domain 38 candidates.
 **Update cadence**: Weekly (open file at each session, confirm prior week fill-in items, add new entries)
 **Companion files**: `litigation-tracker-2026.md`, `surveillance-tracking.md`, `CHECKIN.md`
 **Synthesis calendar**: Week 1 fill-in complete (Session 628). Week 2 pre-population added. Cross-domain pattern analysis updated after Week 1 confirmation pass.
@@ -11,16 +11,18 @@
 
 ## How to Use This Tracker
 
-**Six monitored domains** (scope defined in PROJECTS.md Session 602):
+**Eight monitored domains** (structure established April 29, 2026; Domains A-F defined Session 602, Domains G-H added April 29):
 
-| # | Domain | Primary document cross-references |
-|---|--------|-----------------------------------|
-| A | War Powers — Iran/NATO/Taiwan escalation | Domain 19f, Domain 28 |
-| B | Prosecutorial Weaponization — DOJ cases | Domain 29, litigation-tracker-2026.md Cat. 10 |
-| C | Voting Rights — state-level restrictions | Domain 01, Domain 33, Domain 37 |
-| D | SCOTUS — OT2026 term decisions | Domain 35, Domain 06 |
-| E | Election Security — midterm preparation | Domain 37, Domain 37b |
-| F | Fiscal/Congressional Authority — spending | Domain 34, Domain 23 |
+| # | Domain | Framework domains | Primary document cross-references |
+|---|--------|-------------------|-----------------------------------|
+| A | War Powers — Iran/NATO/Taiwan escalation | Domain 19, 19f | Domain 19f, Domain 28 |
+| B | Prosecutorial Weaponization — DOJ cases | Domain 29 | Domain 29, litigation-tracker-2026.md Cat. 10 |
+| C | Voting Rights — state-level restrictions | Domain 2, 37 | Domain 01, Domain 33, Domain 37 |
+| D | SCOTUS — OT2026 term decisions | Domain 6, 35 | Domain 35, Domain 06 |
+| E | Election Security — midterm preparation | Domain 37, 37b | Domain 37, Domain 37b |
+| F | Fiscal/Congressional Authority — spending | Domain 34, 23 | Domain 34, Domain 23 |
+| G | Judicial Independence — court composition/defiance | Domain 6 | Domain 06, litigation-tracker-2026.md |
+| H | Government Accountability — watchdog dismantlement | Domain 26 | Domain 26, consent-decree-defiance-tracker.md |
 
 **Urgency tiers**:
 - CRITICAL — court deadline, vote occurring within 7 days, or active defiance of court order
@@ -28,6 +30,36 @@
 - MONITOR — developing situation with medium-term advocacy window
 
 **Domain 38 flag** — used when a development does not fit cleanly into any existing domain 1–37 and may warrant a new standalone domain.
+
+**Recommendation column codes** (for table entries):
+- TRACK-UPDATE — development materially changes strategic landscape in an existing domain; update that document
+- WARRANT-38 — issue is structurally new, not a variation on an existing domain; propose standalone research
+- CAPTURED — adequately covered by existing domain content; no update needed now
+
+**Domain 38 threshold**: A development warrants a Domain 38 proposal when it represents a new institutional mechanism requiring a governance response that has no adequate analytical home in Domains 1–37. Current Domain 38 candidates are tracked in the "Domain 38 Candidates" section below.
+
+**Quarterly synthesis protocol**: At the end of each calendar month, open this file and run a synthesis pass: (1) confirm all PENDING items have either been filled or explicitly deferred; (2) update the Domain Update Recommendations table; (3) produce a one-paragraph cross-domain pattern summary for the month; (4) open the next month's tracker file.
+
+---
+
+## INITIAL ENTRIES: April 28–29, 2026
+
+*Baseline snapshot. These are the live issues as of the tracker's creation date. They form the standing state against which Week 1 developments are measured.*
+
+| Date | Category | Development | Significance | Domain Impact | Citation | Recommendation |
+|------|----------|-------------|--------------|---------------|----------|----------------|
+| Apr 28 | A — War Powers | Iran WPR 60-day clock approaching May 1 deadline; Senate defeated 5th WPR resolution 52-47; Democrats exploring lawsuit if operations continue post-deadline | Constitutional clock expiry imminent; no AUMF, no withdrawal; VP Vance called WPR "fundamentally a fake and unconstitutional law" | Domain 19f: Section 16 (post-deadline enforcement) does not yet exist — create it when deadline passes | [Al Jazeera — May 1 analysis](https://www.aljazeera.com/news/2026/4/24/trumps-may-1-deadline-can-he-continue-war-on-iran-after-that) / [TIME — Democrats explore lawsuit](https://time.com/article/2026/04/28/exclusive-democrats-explore-suing-trump-if-congress-doesn-t-authorize-iran-war/) | TRACK-UPDATE |
+| Apr 28 | A — War Powers | Iran ceasefire fragile; U.S. captured Iranian cargo ship *Touska* April 14; Iran military: "it is still a war situation"; Strait of Hormuz mutual blockade; peace talks to Islamabad canceled | Active military operations continue despite ceasefire declaration; Hormuz closure compounding pharma/energy supply chains | Domain 19f, Domain 28 (Venezuela-Iran synthesis), Domain 31x (pharma API disruption) | [CNN — Hormuz](https://www.cnn.com/2026/04/23/politics/us-military-plans-iran-targets-strait-of-hormuz) / [NPR — deadlock](https://www.npr.org/2026/04/28/nx-s1-5802283/iran-middle-east-updates) | TRACK-UPDATE |
+| Apr 29 | E / Domain 21 | FISA Section 702 expiring April 30; 10-day extension expires; House readying vote on 3-year renewal (Foreign Intelligence Accountability Act) without warrant requirement or data broker loophole closure | If passed without reforms: surveillance authority extended through 2028, covering full midterm and presidential cycles; no warrant required for U.S.-person queries | Domain 21 (surveillance), Domain 01 (election organizer surveillance), surveillance-tracking.md | [Nextgov — House readies vote](https://www.nextgov.com/policy/2026/04/house-readies-vote-renew-fisa-702-without-warrant-amendment/412856/) / [EFF — reject bill](https://www.eff.org/deeplinks/2026/04/congress-must-reject-new-insufficient-702-reauthorization-bill) | TRACK-UPDATE |
+| Apr 29 | D — SCOTUS | *Trump v. Slaughter* (FTC firing; *Humphrey's Executor* challenge): oral arguments December 2025; conservative majority favored Trump; decision expected late June 2026 | If *Humphrey's Executor* is narrowed/overruled: removes for-cause removal protection for NLRB, FTC, CFPB, Federal Reserve, all independent agencies | Domain 35 (SCOTUS doctrine), Domain 06 (judicial/agency independence) | [SCOTUSblog explainer](https://www.scotusblog.com/2025/12/trump-v-slaughter-an-explainer/) / [Democracy Docket](https://www.democracydocket.com/news-alerts/supreme-court-trump-ftc-slaughter-dismissal-independent-agencies/) | TRACK-UPDATE (update Domain 35 immediately upon decision) |
+| Apr 29 | B — Prosecutorial Weaponization | Nashville: Judge Crenshaw ruling on Abrego Garcia vindictive prosecution motion described as "imminent"; prior sealed order found "realistic likelihood of vindictiveness"; DOJ email labels prosecution "top priority" post-SCOTUS ruling | If Crenshaw dismisses: documented judicial finding that DOJ chain of command acted with retaliatory motive against a federal court ruling — strongest individual-case evidence of Domain 29 systemic pattern | Domain 29 (Section 13), litigation-tracker-2026.md Cat. 2/10 | [The Intercept — who decided to indict](https://theintercept.com/2026/04/28/kilmar-abrego-garcia-trump-justice-department/) | TRACK-UPDATE (highest-priority when ruling issues) |
+| Apr 29 | B — Prosecutorial Weaponization | SPLC indicted April 21 (11 counts, wire fraud/bank fraud/money laundering); SPLC attorneys filed 2 pretrial motions including grand jury weaponization disclosure motion; DOJ response ordered May 5 | Grand jury weaponization motion is a new pattern — administration potentially using grand jury process as offensive tool; may prefigure similar tactics in future cases | Domain 29 (Pattern Case 23; update Section 13 with grand jury weaponization development) | [Just Security analysis](https://www.justsecurity.org/137171/indictment-southern-poverty-law-center-splc/) / [Alabama Reflector](https://alabamareflector.com/2026/04/27/the-southern-poverty-law-center-prosecution-is-absurd-that-may-be-the-point/) | TRACK-UPDATE |
+| Apr 29 | C — Voting Rights | DOJ demanding voter roll data from all 50 states; suing 30 states to compel; 12 states voluntarily complied; building national voter database cross-referenced with SAVE (citizenship verification, known error-prone) | First-ever federal national voter purge database; ACLU/Common Cause filed lawsuit to block; error-prone SAVE data risks purging naturalized citizens before November 2026 | Domain 01 (new sub-section needed: federal voter removal infrastructure), Domain 29 (DOJ as voter suppression enforcement arm) | [ACLU — database lawsuit](https://www.aclu.org/press-releases/voting-rights-groups-sue-doj-to-block-national-voter-surveil-and-purge-database) / [Votebeat](https://www.votebeat.org/national/2026/04/21/voting-rights-groups-lawsuit-trump-department-justice-state-voter-roll-requests/) | WARRANT-38 (if database survives litigation and operates at scale before Nov 2026) |
+| Apr 29 | C — Voting Rights | Florida, Mississippi, South Dakota, Utah enacted state SAVE Act analogs; Utah law takes effect May 6 (bifurcated ballot, proof of citizenship for full participation); Arizona constitutional amendment on November ballot | Wave of proof-of-citizenship laws now in implementation phase — first real-world stress tests; June primaries will produce enforcement data | Domain 01 (update with effective dates), Domain 33 (state legislative autocratization), Domain 37 | [Democracy Docket — state proof laws](https://www.democracydocket.com/news-alerts/as-save-america-act-stalls-gop-states-are-quietly-enacting-their-own-proof-of-citizenship-laws/) | TRACK-UPDATE |
+| Apr 29 | E — Election Security | CISA: Trump FY27 budget proposes eliminating CISA election security program entirely ($707M cut); EI-ISAC and MS-ISAC funding already ended; trust "broken" with state officials; Arizona SoS Fontes proposing VOTE-ISAC as replacement | Federal election security architecture eliminated before 2026 midterms; states building informal replacements; CDT (Geoff Hale, former CISA) launched complementary initiative | Domain 37b (VOTE-ISAC as anchoring case study — ready for full research execution), Domain 37 | [Nextgov — FY27 CISA cut](https://www.nextgov.com/cybersecurity/2026/04/trump-proposes-cutting-cisa-election-security-program-fy27-budget/412672/) / [Democracy Docket — VOTE-ISAC](https://www.democracydocket.com/news-alerts/arizona-secretary-of-state-proposes-alternative-to-defunded-national-election-security-program/) | TRACK-UPDATE |
+| Apr 29 | H — Government Accountability | IGs: 17+ fired January 2025; CIGIE dismantlement attempted September 2025; IG offices lost 16.6% of workforce by early 2026; replacements often have administration ties; GAO reports $186B in improper payments (April 2026) — no IG oversight capacity to investigate | Accountability infrastructure capacity degraded across federal government; improper payment scale ($186B) with no functional oversight is a compounding fiscal and governance failure | Domain 26 (government accountability, watchdog architecture) | [Public Citizen — IG update](https://www.citizen.org/article/undoing-accountability/) / [GAO — $186B improper payments](https://www.govexec.com/oversight/2026/04/agencies-doled-out-186b-improper-payments-last-year-gao-says/413142/) | TRACK-UPDATE |
+| Apr 29 | G — Judicial Independence | Virginia Supreme Court (April 27-28): oral arguments on GOP challenge to voter-approved redistricting amendment; if court invalidates, voids statewide vote that would net Democrats 4 House seats; SCOTUS (April 27) reinstated Republican-favored Texas redistricting map along 6-3 ideological lines | Judicial bodies being used to override voter-approved democratic outcomes; the Virginia challenge is the clearest current example of judicial mechanisms deployed against direct democracy | Domain 06 (judicial independence and democratic accountability), Domain 33 (redistricting/autocratization) | [PBS — Virginia redistricting](https://www.pbs.org/newshour/politics/virginia-supreme-court-considers-gop-challenge-to-voter-approved-redistricting-plan-favoring-democrats) / [Al Jazeera — SCOTUS Texas map](https://www.aljazeera.com/news/2026/4/27/us-supreme-court-reinstates-republican-favoured-texas-electoral-map) | TRACK-UPDATE |
+| Apr 29 | F — Fiscal Authority | Senate passed $70B DHS/ICE reconciliation budget resolution 50-48 on April 23; DHS partial shutdown at 65+ days (longest ever); payroll cliff expected May 4-8; House not yet voted on companion resolution | Reconciliation bypass routes $140B in enforcement funding outside normal appropriations — removes Collins Appropriations Committee leverage; signals template for funding any executive priority outside congressional control | Domain 34 (fiscal authority), Domain 23 (trade/enforcement convergence) | [Al Jazeera — Senate reconciliation](https://www.aljazeera.com/news/2026/4/23/us-senate-passes-ice-funding-resolution-after-vote-a-rama-whats-next) | TRACK-UPDATE |
 
 ---
 
@@ -324,6 +356,83 @@ Key confirmed outcomes from the May 1–7 research pass:
 
 ---
 
+### DOMAIN G — JUDICIAL INDEPENDENCE
+
+*Distinct from Domain D (SCOTUS term decisions). Domain G tracks the structural integrity of courts as democratic institutions — appointments, defiance, and court composition battles at state level.*
+
+#### G.1 — Virginia Supreme Court Redistricting Challenge: Overriding Voter-Approved Maps
+**Urgency**: HIGH
+**Date**: April 27, 2026 (oral arguments)
+**What happened**: The Virginia Supreme Court heard oral arguments April 27 in a Republican challenge to a voter-approved constitutional amendment that would have given Democrats 4 additional U.S. House seats via mid-decade redistricting. The redistricting amendment won a statewide voter referendum by a narrow margin in April 2026. Republicans argue the General Assembly violated procedural requirements by advancing the amendment during "the election" period. If the court invalidates the amendment, the statewide vote is retroactively nullified.
+
+**Why this matters for judicial independence**: This is a case of a state supreme court being asked to use a procedural technicality to void a democratic referendum outcome. Regardless of the procedural merits, the structural dynamic — courts deployed to override voter-approved outcomes on procedural grounds — is the same mechanism documented in Domain 06's judicial independence analysis. Courts functioning as veto points against direct democracy represent a qualitatively different threat from courts functioning as checks on the executive.
+
+**Pattern connection**: The U.S. Supreme Court separately reinstated a Republican-drawn Texas congressional map along 6-3 ideological lines (April 27, 2026), signaling that the federal courts and state courts are simultaneously moving to favor Republican-drawn maps. This is not coincidental — it reflects the coordinated redistricting counter-offensive documented in Domain 33.
+
+**What to watch Week 1-2**: Virginia Supreme Court decision timeline — ruling could come any time from weeks to months. Check Democracy Docket docket for Scott v. McDougle.
+
+**Domains affected**: 06 (judicial independence), 33 (state legislative autocratization), 37 (election outcomes)
+**Sources**: [PBS — Virginia redistricting challenge](https://www.pbs.org/newshour/politics/virginia-supreme-court-considers-gop-challenge-to-voter-approved-redistricting-plan-favoring-democrats) | [Democracy Docket — Virginia blocks, appeal coming](https://www.democracydocket.com/news-alerts/virginia-court-blocks-voter-approved-redistricting-appeal-coming/) | [Virginia Mercury](https://virginiamercury.com/2026/04/27/supreme-court-of-virginia-weighs-challenge-to-redistricting-amendment/) | [Al Jazeera — SCOTUS reinstates Texas map](https://www.aljazeera.com/news/2026/4/27/us-supreme-court-reinstates-republican-favoured-texas-electoral-map)
+
+---
+
+#### G.2 — Circuit Court Vacancy Pipeline: 6-8 Openings May-June 2026
+**Urgency**: HIGH
+**Status**: Domain 06 (updated Session 575) documents 6-8 circuit court vacancies expected to open May-June 2026 and confirms the Federalist Society nomination pipeline is in accelerated mode. Each confirmation locks in post-*Loper Bright*, post-*Humphrey's Executor* circuit doctrine for decades. Unlike SCOTUS terms (where the impact is measured in specific rulings), circuit appointments compound cumulatively — the appellate courts that will adjudicate the 2026 election challenges, the Trump v. Slaughter implementation cases, and the WPR standing questions over the next decade are being seated now.
+
+**What to watch**: Senate Judiciary Committee confirmation hearings scheduled for May. Track any nominees with documented views on war powers standing, WPR enforceability, or independent agency removal authority — these are the doctrine-shaping appointments.
+
+**Domains affected**: 06, 35
+
+---
+
+#### G.3 — State Court Composition: Court-Packing and Judicial Retaliation
+**Urgency**: MONITOR
+**What happened**: Utah Republicans attempted to expand the size of the Utah Supreme Court after the court ruled against them on redistricting (protecting a voter-approved redistricting reform). Mississippi's legislature advanced legislation in 2026 to restructure the state judiciary. These are distinct from federal court composition battles — they represent partisan responses to state supreme court rulings unfavorable to the majority party.
+
+**Pattern**: When courts protect direct democracy (voter-approved initiatives, redistricting reforms), the response from legislative majorities in single-party states has been to attempt court-packing, jurisdiction-stripping, or legislative override. This is the same dynamic at state level that Domain 06 documents at federal level.
+
+**Domain 38 consideration**: State judicial independence as a distinct research need — Domain 06 focuses primarily on federal courts. A Domain 06 expansion (Section 15: State Judicial Independence) may be warranted if the court-packing attempts succeed in two or more additional states.
+
+**Domains affected**: 06, 33
+**Sources**: [Bolts — 2026 state supreme court elections guide](https://boltsmag.org/your-state-by-state-guide-to-the-2026-supreme-court-elections/) | [State Court Report — what to watch in 2026](https://statecourtreport.org/our-work/analysis-opinion/what-were-watching-2026-elections/)
+
+---
+
+### DOMAIN H — GOVERNMENT ACCOUNTABILITY
+
+*Domain 26 (Government Accountability) — watchdog dismantlement, oversight capacity erosion, and the structural consequences of IG/GAO/CIGIE degradation.*
+
+#### H.1 — Inspector General Mass Firing: Accountability Infrastructure Status, April 2026
+**Urgency**: HIGH (ongoing; not acute but structurally irreversible without executive action)
+**Date**: January 24, 2025 (mass firing); ongoing through April 2026
+**What happened**: President Trump fired 17+ inspectors general on January 24, 2025 — more IG firings than all prior presidents combined. In September 2025, the administration attempted to dismantle CIGIE (the Council of Inspectors General for Integrity and Efficiency) entirely. By early 2026, IG offices across the federal government had lost 16.6% of their workforce. Many firings were directly preceded by IG reports critical of administration actions or IG transmission of whistleblower disclosures to Congress. Replacement appointees disproportionately have ties to the administration or have histories of conduct adverse to independent oversight.
+
+**April 2026 accountability consequence**: The GAO reported in April 2026 that federal agencies issued $186 billion in improper payments in the prior fiscal year — with no independent IG infrastructure capable of investigating the underlying waste and fraud. The $186B figure is a downstream consequence of gutting the oversight architecture.
+
+**Strategic significance for the framework**: Domain 26 analyzes government accountability mechanisms. The IG dismantlement is not a single dramatic event but a compound degradation — each IG firing removes an independent oversight node. After 16+ months, the cumulative effect is a federal government that is systematically opaque to accountability at scale. This matters for the framework because advocacy proposals that rely on "government accountability mechanisms" (FOIA, IG referrals, congressional oversight) must account for those mechanisms being non-functional.
+
+**What to watch**: Any court ruling on the legality of IG firings (Public Citizen and others have filed challenges). Any whistleblower case that would have been protected under pre-2025 IG protocols. Any Senate confirmation hearing for a replacement IG nominee with documented anti-independence record.
+
+**Domains affected**: 26 (primary), 34 (fiscal accountability void), 29 (DOJ self-oversight absence)
+**Sources**: [Public Citizen — IG update 2026](https://www.citizen.org/article/undoing-accountability/) | [Partnership for Public Service — Trump IG cuts](https://ourpublicservice.org/blog/trump-inspector-general-cuts-undermine-capacity/) | [Campaign Legal Center — significance of IG firings](https://campaignlegal.org/update/significance-firing-inspectors-general-explained) | [Government Executive — $186B improper payments](https://www.govexec.com/oversight/2026/04/agencies-doled-out-186b-improper-payments-last-year-gao-says/413142/) | [CBPP — undercutting oversight hurts taxpayers](https://www.cbpp.org/research/federal-budget/trump-administrations-undercutting-of-oversight-hurts-taxpayers-and)
+
+---
+
+#### H.2 — ProPublica "Take Over" Investigation: Systematic Federal Capture of 2026 Midterm Infrastructure
+**Urgency**: HIGH (advocacy window: now through August 2026 NVRA quiet period)
+**Date**: ProPublica investigation published approximately April 14-17, 2026
+**What happened**: ProPublica published a major investigative piece documenting Trump's effort to "nationalize" the 2026 midterm elections through systematic personnel replacement at DHS, DOJ, and other departments. Key findings: at least 75 career officials who played central roles in elections work at DHS, DOJ, and related departments have left or been fired; a group of political appointees (calling themselves "Team America") convened at DHS headquarters to implement Trump's March 2025 elections executive order; the group was led by David Harvilicz (DHS assistant secretary, election infrastructure security) and three top staffers. Judges have blocked key parts of the March 2025 EO, and Trump issued a new April 2026 elections EO attempting to extend federal control over mail-in voting and voter eligibility.
+
+**Structural significance**: The ProPublica investigation is the most comprehensive single-source documentation of how the midterm capture effort works at the operational level — specific people, specific positions, specific decisions. It fills the evidentiary gap between Domain 37's structural analysis (the five-mechanism interference framework) and the actual implementation actors. If institutional decision-makers or courts are going to act, this investigation is the evidentiary foundation.
+
+**What to watch**: Any legal challenge to the April 2026 elections EO. Any court order blocking the mail-in voting restrictions. Any state refusal to comply with DOJ voter roll demands citing the ProPublica findings as evidence of bad faith.
+
+**Domains affected**: 37 (primary — ProPublica investigation should be cited as primary source in Domain 37's accountability section), 26 (government accountability — systematic replacement of career officials), 29 (DOJ elections weaponization)
+**Sources**: [ProPublica — "Take Over" investigation](https://www.propublica.org/article/trump-midterm-elections-takeover) | [PBS Amanpour — ProPublica findings](https://www.pbs.org/wnet/amanpour-and-company/video/propublica-goes-inside-trumps-effort-to-take-over-the-midterm-elections-ppxvjw-2-2/) | [Daily Kos — federal guardrails gone](https://www.dailykos.com/stories/2026/4/23/800026255/community/the-federal-guardrails-for-free-fair-elections-are-gone/)
+
+---
+
 ## WEEKS 2–4 TEMPLATES
 
 *Fill as events develop. Use the same entry format: urgency tier, date, what happened, what to watch, domains affected, sources.*
@@ -368,6 +477,16 @@ Key confirmed outcomes from the May 1–7 research pass:
 - [ ] May 15 Senate committee reconciliation bill submission: ICE/CBP language released?
 - [ ] Iran $200B supplemental: first signals of the war-funding appropriations track
 
+**G — Judicial Independence**
+- [ ] Virginia Supreme Court ruling in Scott v. McDougle (redistricting challenge): Check Democracy Docket docket. A ruling voiding the voter-approved map is the highest-stakes outcome.
+- [ ] Senate Judiciary Committee confirmation hearings for circuit court nominees: Any nominee with documented war powers standing, WPR enforceability, or independent agency removal views?
+- [ ] Any additional state court-packing or jurisdiction-stripping bills advancing to floor votes?
+
+**H — Government Accountability**
+- [ ] Any court ruling on legality of IG firings (Public Citizen litigation)?
+- [ ] Any congressional action on CIGIE reconstitution?
+- [ ] ProPublica follow-up reporting on "Team America" DHS elections group: any new disclosures about specific actions taken?
+
 ---
 
 ### WEEK 3: May 15–21, 2026
@@ -407,6 +526,8 @@ Key confirmed outcomes from the May 1–7 research pass:
 | 37b — Election Security | VOTE-ISAC (Fontes) named and active; CDT Geoff Hale initiative launched | Elevate from scope document to full research execution: VOTE-ISAC + CDT as dual pillars of post-CISA architecture | HIGH — advocacy window is now | PENDING |
 | 01 — Voting Rights | Utah HB 209 effective May 6 (bifurcated ballot system); DOJ national voter database lawsuit (Common Cause v. DOJ) filed; intervention motion filed against Utah voter roll demand | (1) Note May 6 effective date; (2) Add new sub-section on DOJ national voter database project and Common Cause lawsuit; (3) Document bifurcated ballot mechanism | HIGH — Utah in effect | PENDING |
 | surveillance-tracking.md | FISA 702 reauthorized for two years WITHOUT warrant requirement; chaotic House vote; 13-day emergency extension preceded final passage | Fill post-deadline checklist: 2-year reauthorization confirmed, no warrant, no data broker fix, brief lapse possible; note implications for midterm surveillance window | CRITICAL — complete this session | PENDING |
+| 06 — Judicial Independence | Virginia Supreme Court oral arguments April 27 on challenge to voter-approved redistricting; Utah court-packing attempt; SCOTUS Texas map reinstatement along ideological lines | Add Section 15 (State Judicial Independence): document state court composition battles, court-packing attempts, and use of courts to void voter-approved outcomes; update federal track with circuit vacancy data | HIGH | PENDING |
+| 26 — Government Accountability | IG offices at 16.6% workforce reduction; $186B improper payments with no oversight; ProPublica "Team America" investigation documents systematic replacement of career election officials | Update Domain 26 with: (1) IG workforce loss quantification; (2) $186B improper payments consequence; (3) ProPublica findings as primary source for election capture personnel analysis | HIGH | PENDING |
 
 ---
 
@@ -469,12 +590,14 @@ Key confirmed outcomes from the May 1–7 research pass:
 
 ### Pattern 1: Institutional Constraint Failure at Scale
 
-The most significant Week 1 finding is that institutional constraints on executive power are simultaneously failing across all six domains — not sequentially, but in parallel:
+The most significant Week 1 finding is that institutional constraints on executive power are simultaneously failing across all eight domains — not sequentially, but in parallel:
 
 - **War Powers (A)**: The constitutional clock ran out. Congress has no enforcement mechanism. No court has accepted standing. The WPR is effectively unenforceable as written.
 - **Fiscal Authority (F)**: Congress's power of the purse is being structurally bypassed — not through impoundment (which courts have blocked) but through reconciliation mechanics that create mandatory enforcement spending Congress cannot claw back annually.
 - **SCOTUS (D)**: The June *Slaughter* ruling is expected to eliminate for-cause removal protections for independent agencies, removing the last structural protection for the fourth branch of government.
 - **Surveillance (E/FISA)**: Section 702 reauthorization without warrant protections extends warrantless surveillance through the midterm cycle; the DOJ national voter database adds a second data aggregation vector.
+- **Judicial Independence (G)**: Courts are being used to void voter-approved outcomes (Virginia redistricting), while state legislatures respond to unfavorable rulings by attempting court-packing (Utah). The mechanisms for courts to function as democratic checks are degrading in both directions.
+- **Government Accountability (H)**: The IG infrastructure — the primary internal accountability mechanism for executive branch agencies — has lost 16.6% of its workforce and had multiple nodes replaced with administration-aligned figures. The $186B improper payments figure is the fiscal consequence of zero-accountability governance.
 
 **What this pattern means for the framework**: Domain 34 (Congressional Fiscal Authority), Domain 06 (Judicial Independence), and Domain 19f (War Powers Reform) all assume that institutional constraints remain operative but are being weakened. The Week 1 evidence suggests the weakness has advanced to the point that the constraints are non-functional in practice even if technically on the books. This may require a recalibration in how the framework's reform proposals are framed — from "restoring weakened institutions" to "rebuilding institutions that have functionally collapsed."
 
@@ -556,3 +679,93 @@ The FISA 702 two-year reauthorization without warrant protections represents a n
 | May 20 | FISA follow-on vote (if short extension) | MOOT — 2-year deal passed | Remove from calendar |
 | Late May–June | SCOTUS *Slaughter* decision | UPCOMING | New D.3 entry when issued; immediate Domain 35 update required |
 | May 31 | End of Month | | Cross-domain synthesis pass; archive Week 1–4; open JUNE_2026_TRACKER.md |
+
+---
+
+## TRACKED SOURCES INDEX
+
+*Primary sources used across all tracker domains. Organized by source type. Each outlet's coverage area and reliability tier noted.*
+
+### News Outlets
+
+| Outlet | Coverage strength | Use for |
+|--------|-----------------|---------|
+| Associated Press | Breaking news; federal court rulings; congressional votes | First-confirmation of court decisions and legislation |
+| ProPublica | Investigative; federal agency personnel; elections capture | Deep institutional accountability (H.2 primary source) |
+| Politico | Congressional procedural; Senate vote counts; legislative scheduling | Vote timing, amendment tracking, conference outcomes |
+| Nextgov/FCW | Federal technology; CISA; election security | Domain E (CISA architecture, election infrastructure) |
+| Votebeat | State election administration; voter roll management | Domain C (voting rights implementation) |
+| The Intercept | DOJ leaks; executive accountability; national security | Domain B (prosecutorial weaponization sourcing) |
+| Foreign Policy | War powers; international law; Iran coverage | Domain A (war powers constitutional analysis) |
+| Military.com | Active military operations; Iran war; congressional authorization | Domain A (operational military developments) |
+| Alabama Reflector | SPLC indictment; Alabama federal courts; Deep South state politics | Domain B (SPLC prosecution coverage) |
+| Virginia Mercury | Virginia redistricting; state supreme court | Domain G (Virginia redistricting challenge) |
+| Tennessee Lookout | Nashville federal court; Abrego Garcia | Domain B (Nashville Crenshaw docket) |
+| Michigan Advance, Oregon Capital Chronicle | State-level voter roll resistance | Domain C (state compliance tracking) |
+
+### Legal Databases and Trackers
+
+| Resource | What it covers | Domain priority |
+|----------|---------------|-----------------|
+| SCOTUSblog | Supreme Court cases, cert grants, case schedules | D (SCOTUS), G (judicial independence) |
+| Democracy Docket | Voting rights litigation; election law; redistricting | C, G |
+| Just Security | National security law; executive power; war powers | A, B, D |
+| Lawfare | Constitutional law; surveillance; national security | E (FISA), D |
+| CourtListener (PACER) | Federal district/circuit dockets | B (Nashville docket: 3:25-cr-00115) |
+| State Court Report (Brennan Center) | State supreme court elections; judicial independence | G |
+| Bolts Magazine | State judicial races; democracy | G, H |
+| ACLU case tracker | Civil liberties; voting rights; detention | C, B |
+
+### Advocacy Organizations (Primary Research Sources)
+
+| Organization | Research specialty | Key resources |
+|-------------|------------------|---------------|
+| Brennan Center for Justice | Voting rights; SCOTUS; elections security; judicial independence | Domain C, D, E, G primary source |
+| Democracy Docket (Marc Elias) | Election law litigation; voting rights cases | C, G litigation tracking |
+| Protect Democracy | Executive power; election security; watchdog dismantlement | H, E institutional tracking |
+| Electronic Frontier Foundation | Surveillance; FISA; digital civil liberties | E, Domain 21 |
+| EPIC (Electronic Privacy Information Center) | FISA; surveillance law | E (FISA) |
+| Campaign Legal Center | Election law; redistricting; state voting rights acts | C, G |
+| Just Security (NYU Reiss Center) | War powers; national security law; constitutional analysis | A, B, D |
+| Public Citizen | IG accountability; government watchdogs | H |
+| Partnership for Public Service | Federal workforce; IG capacity; civil service | H |
+| Common Cause | Voting rights; redistricting; government accountability | C, H |
+| ACLU (national) | Voting rights; surveillance; immigration | C, E; litigation tracker |
+| Center for Democracy and Technology | Election security; cybersecurity | E (VOTE-ISAC tracking) |
+
+### Academic and Policy Research
+
+| Institution/Publication | Research specialty | Domain priority |
+|------------------------|-----------------|-----------------|
+| Voting Rights Lab | State voting legislation tracking; real-time legislative monitoring | C |
+| State Court Report (Brennan Center) | State judicial elections; democracy health | G |
+| CRS (Congressional Research Service) | Statutory analysis; legislative history | A (WPR), F (ICA) |
+| 270toWin / Ballotpedia | Primary calendar; state legislative elections; ballot measures | C, G |
+| NCSL (National Conference of State Legislatures) | State primary dates; election law taxonomy | C |
+| Duke Center for Firearms Law | SCOTUS cert watch; Second Amendment litigation | D (cert monitoring) |
+| Missouri Law Review | Emerging constitutional doctrine (Trump v. Wilcox analysis) | D |
+
+---
+
+## SUCCESS METRICS
+
+*Criteria for tracker effectiveness. Evaluated at the monthly synthesis pass (May 31).*
+
+**Identification targets**:
+- 2-3 domain update recommendations per month that materially change the strategic landscape documented in affected domain files
+- Early identification of 1-2 issues per month that may warrant Domain 38 standalone research proposals (threshold: new institutional mechanism with no adequate analytical home in Domains 1-37)
+- Quarterly synthesis ready for user decision on Phase 2 expansion by June 1, 2026
+
+**Domain 38 threshold** (per tracker protocol):
+A development warrants a formal Domain 38 research proposal when: (a) it represents a qualitatively new institutional mechanism; (b) no existing domain provides adequate analytical architecture for it; (c) the issue has an actionable advocacy window where framework-level analysis would be strategically useful. Candidates must meet all three criteria. Issues that are variations on existing domain themes — even significant ones — should be handled as domain expansion sections, not new domains.
+
+**Existing domain update threshold**:
+A domain document needs an update when a tracker development: (a) adds a new empirical fact that materially changes the reform proposal's strategic landscape; (b) introduces a new actor, mechanism, or precedent not covered in the existing analysis; or (c) forecloses or opens an advocacy pathway documented in the domain. Incremental news that confirms existing analysis does not require a document update.
+
+**May 2026 monthly synthesis (due May 31)**:
+- Confirm all 8 domains have been assessed for updates
+- Identify which Domain 38 candidates have crossed the research-proposal threshold
+- Run Pattern 5+ identification (does the eighth week of tracking reveal a new cross-domain pattern not visible from Week 1?)
+- Produce cross-domain synthesis paragraph for May for inclusion in the framework's ongoing monitoring log
+- Open `JUNE_2026_TRACKER.md` with the same 8-domain structure; carry forward all PENDING items
+- Confirm whether user has made the Phase 1 distribution path decision (A / A+37 / B) — this determines whether the May tracker's domain updates go into the distributed version or are held for Phase 2
