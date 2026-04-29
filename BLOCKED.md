@@ -34,11 +34,11 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
 
-### stockbot — Engine status uncertain after reported restart
+### stockbot — Engine not running; Alpaca account setup required
 **Date blocked**: 2026-04-29
-**Context**: BLOCKED.md Resolved Archive shows engine was restarted at 2026-04-29 00:16:41 UTC with all 11 tickers loaded. However, Session 614 orchestrator verification discovered: (1) Today's log file `/live_trading_20260429.log` is 0 bytes with no entries, (2) Yesterday's log `/live_trading_20260428.log` contains only unit test output, not production engine logs, (3) No production trades recorded on 2026-04-28 during market hours (13:30–20:00 UTC) despite 17 open BUY positions from 2026-04-27, (4) Last actual trade in database: DIS BUY at 13:31:28 UTC on 2026-04-27, (5) No SELL signals have fired yet (0 completed round trips). Engine may not be running, or running but logging to wrong location, or crashed after startup.
-**What I need**: Verify engine process is alive (`ps aux | grep run_live_trading`), check actual log file location, confirm Alpaca connection is active, restart engine if needed with proper log redirection.
-**Verify with**: `ps aux | grep run_live_trading | grep -v grep` — should show running process; if none, engine is not running and needs restart.
+**Context**: Orchestrator Session 615 verification: (1) Process check shows engine NOT running (`ps aux | grep run_live_trading` returns empty). (2) Previous resolution log (2026-04-29 00:16:41 UTC) claimed engine restarted with 11 tickers loaded, but verification reveals engine never actually ran on 2026-04-28 during market hours. (3) No production trades recorded on 2026-04-28 despite 17 open BUY positions from 2026-04-27. (4) Last actual trade in database: DIS BUY on 2026-04-27. (5) Earlier block (Session 596) identified root cause: Alpaca account had zero day-trading buying power (error 40310000). Orchestrator cannot restart engine without addressing account setup first.
+**What I need**: (1) Verify Alpaca account has sufficient buying power for paper trading. (2) Run engine startup with proper environment: `cd projects/stockbot && nohup uv run python scripts/run_live_trading.py --strategy stacker --tickers AAPL MSFT GOOGL NVDA AMZN META JPM ... &`. (3) Confirm engine logs to `/projects/stockbot/logs/trading_YYYYMMDD.log` and shows active trades during market hours.
+**Verify with**: `ps aux | grep run_live_trading | grep -v grep` — should show running process; if present + log file has recent activity, block is resolved.
 **Resolution**:
 
 ---
