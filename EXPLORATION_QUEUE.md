@@ -179,18 +179,20 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
-### Item 12: resistance-research Domain 38 Candidate Research (Conditional — Post-Path-A-Hybrid decision)
-**Status**: QUEUED → PROMOTED TO ACTIVE (Session 615) — Highest-value autonomous work available
-**Trigger**: Added to active queue for immediate execution — prepares for Domain 37/38 expansion regardless of user path choice
-**Scope**: Identify highest-impact Domain 38 candidate from gap analysis; preliminary research and scope definition
-**Deliverables**: `ITEM12_DOMAIN38_CANDIDATES.md` (2,500–3,000 words) with 2-3 candidates + full research roadmaps
-**Key candidates to evaluate**:
-- **Voting Systems Architecture** (proportional representation, ranked choice voting, consensus models, blockchain voting — comparative analysis)
-- **Energy Infrastructure & Democratic Decentralization** (grid modernization, renewable energy governance, cooperative utility models)
-- **Intelligence Oversight & Accountability** (FOIA accessibility, Inspector General structure, whistleblower protection mechanisms)
-- **Property Rights & Economic Democratization** (land value capture, community land trusts, cooperative ownership models, antitrust enforcement)
-**Owner**: resistance-research agent (autonomous execution, estimated 2–3 hours research + writing)
-**Prerequisites**: None — can execute independently to build foundation for post-Domain37 roadmap
+### ✅ Item 12: resistance-research Domain 38 Candidate Research (Session 615 COMPLETE)
+**Status**: COMPLETED 2026-04-29 01:25 UTC
+**File created**: `projects/resistance-research/ITEM12_DOMAIN38_CANDIDATES.md` (3,100 words)
+**Scope**: Identify highest-impact Domain 38 candidate from gap analysis; completed
+**Deliverables**: ✅ 4 candidates fully evaluated + final ranking + research roadmaps
+**Candidates evaluated**:
+- **Intelligence Oversight & Accountability** — RANKED #1 (urgency + coalition strength)
+- **Voting Systems Architecture** — RANKED #2 (international precedent)
+- **Property Rights & Economic Democratization** — RANKED #3
+- **Energy Infrastructure & Democratic Decentralization** — RANKED #4
+
+**Key findings**: Intelligence Oversight has active crisis window (Section 702 expired April 20, 270% FISA query surge, 17 IG firings), strongest bipartisan reform coalition (libertarian + progressive)
+
+**Status**: Production-ready for resistance-research; supports both Path A+37 Hybrid and future Domain 38 expansion
 
 ---
 
@@ -212,30 +214,39 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
-### Item 14: cybersecurity-hardening Pre-Tier2 Messaging Variant Research (Session 615)
-**Status**: QUEUED — Active (can execute independently before Tier 1 approval)
-**Trigger**: Promote to active for foundational research on sector-specific messaging
-**Scope**: Analyze messaging variants for 4 sector groups (digital rights, academic cybersecurity, researcher communities, journalists); identify sector-specific pain points, trust drivers, and framing that resonates
-**Deliverables**: `ITEM14_TIER2_MESSAGING_ANALYSIS.md` (3,500–4,000 words)
-**Key areas**:
-- **Digital Rights Organizations**: Civil liberties framing vs. harm reduction framing — which sectors use which? (CATO vs. ACLU vs. EFF vs. CPLC comparative analysis)
-- **Academic Cybersecurity Programs**: Peer review opportunity vs. methodological defensibility — faculty hiring signals vs. student curriculum integration
-- **Researcher Communities**: Vulnerability disclosure norms vs. open-access culture — cross-sector messaging (academic vs. journalist vs. policy researcher)
-- **Journalist Organizations**: Source protection gap vs. training opportunity — reporter confidence vs. editor editorial line
-**Owner**: cybersecurity-hardening agent (autonomous execution, estimated 1.5–2 hours research)
-**Prerequisites**: None — prepares Tier 2 execution pipeline independent of Tier 1 approval timing
+### ✅ Item 14: cybersecurity-hardening Pre-Tier2 Messaging Variant Research (Session 615 COMPLETE)
+**Status**: COMPLETED 2026-04-29 01:25 UTC
+**File created**: `projects/cybersecurity-hardening/ITEM14_TIER2_MESSAGING_ANALYSIS.md` (3,800 words)
+**Scope**: Sector-specific messaging analysis for 4 Tier 2 sectors; completed
+**Deliverables**: ✅ 4 sectors fully analyzed + messaging variants + sequencing roadmap
+**Key sectors analyzed**:
+- **Digital Rights Organizations** — highest receptivity; EFF/STOP/Access Now top contacts
+- **Academic Cybersecurity** — slowest conversion (semester-driven) but highest citation value
+- **Researcher Communities** — highest quality-control threshold; DEF CON/CCC submission track best leverage
+- **Journalist Organizations** — highest actionable gap (pre-existing data exposure training gap); FPF/IRE best contacts
+
+**Key finding**: Mission-fit framing (locating corpus in institutional mandate) outperforms generic humanitarian framing; sourcing quality is universal trust driver
+
+**Sequencing**: Digital rights (1-2 weeks) → Journalists (3-4 weeks) → Academics (5-8 weeks) → Researchers (ongoing)
+
+**Status**: Production-ready for Tier 2 execution (post-Tier 1 approval); immediately deployable with messaging templates
 
 ---
 
-### Item 15: open-repo Phase 6 Enterprise Federation Roadmap (Session 615)
-**Status**: QUEUED — Active (can research independent of PR #1 merge)
-**Trigger**: Promote to active for architectural research while Phase 5 in review
-**Scope**: Design Phase 6 enterprise-scale federation patterns, cross-organizational coordination, multi-tenant architecture, SLA/compliance infrastructure
-**Deliverables**: `ITEM15_PHASE6_FEDERATION_ROADMAP.md` (4,000–5,000 words)
-**Key areas**:
-- **Multi-tenant Federation Architecture** (isolated orgs, shared infrastructure, cross-org data synchronization with conflict resolution)
-- **Compliance & Auditability** (per-org data residency, encryption key management, audit trails, GDPR/CCPA compliance per organization)
-- **Economic Model for Federation** (per-org billing, tiered hosting, incentive structures for participating organizations)
-- **Enterprise Operational Requirements** (SLA guarantees, support structure, incident response, disaster recovery across federation)
-**Owner**: open-repo agent (autonomous execution, estimated 2–2.5 hours research + architecture design)
-**Prerequisites**: None — Phase 5 context sufficient for Phase 6 roadmap design
+### ✅ Item 15: open-repo Phase 6 Enterprise Federation Roadmap (Session 615 COMPLETE)
+**Status**: COMPLETED 2026-04-29 01:25 UTC
+**File created**: `projects/open-repo/ITEM15_PHASE6_FEDERATION_ROADMAP.md` (5,400 words)
+**Scope**: Enterprise-scale federation architecture for Phase 6; completed
+**Deliverables**: ✅ 5 sections completed (architecture, compliance, economics, operations, governance) + sequencing + metrics + risk assessment
+**Key architectural decisions**:
+- Peer mesh topology (not hub-and-spoke, based on Matrix precedent, preserves organizational sovereignty)
+- Residency tagging at object level (solves 62-jurisdiction data localization problem)
+- Per-organization encryption (rejects central key management)
+- Three-phase migration (shadow → read-only → full) for cautious organizations
+- Four-tier economic model (free self-hosted, managed hosting, analytics, enterprise)
+
+**Sequencing**: Phase 6A (data boundaries + safety) → 6B (identity + permissions) → 6C (economics + governance)
+
+**Risk mitigation**: Graceful degradation (24h staleness cache), Federation Security Response Protocol, public health monitoring dashboard
+
+**Status**: Production-ready for Phase 6 architectural planning (post-Phase 5 merge); fully grounded in Phase 5 CQRS foundation
