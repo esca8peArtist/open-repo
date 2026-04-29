@@ -5,6 +5,43 @@
 
 ---
 
+## Since Last Check-in (Session 632 — 2026-04-29 09:40–14:00 UTC — Exploration Queue: Options Research + Market Monitoring)
+
+### ✅ Exploration Queue Item Complete: Stockbot Options Trading Strategy Research
+
+**Deliverable**: `projects/stockbot/options-trading-strategy.md` (2,500 words + decision tree, committed)
+
+**Key Findings**:
+- **Infrastructure Discovery**: Black-Scholes, spreads strategies, Greeks manager, walk-forward backtesting, and options executor already implemented in codebase (`src/models/options/`, `src/backtesting/options_backtest.py`, `src/trading/options_executor.py`)
+- **Three Structural Constraints**:
+  1. **Position-size guardrail** limits covered calls to 5 tickers (AAPL, AMZN, JPM, JNJ, XOM @ <$240/share); excludes NVDA, TSLA, META, UNH (>$30k notional at 100 shares)
+  2. **No DB persistence** for options positions — engine restart orphans open options. Must add OptionPosition schema + persistence layer first
+  3. **StrategyCoordinator delta aggregation** missing — covered call short delta not netted against long equity for guardrail calculations
+- **Implementation Timeline**: Gate 2 covered calls (23–34 hours integration work) ready for May 12+ checkpoint once Gate 1 equity baseline established
+- **Gate 1 Prerequisite**: Equity portfolio Sharpe > 0.5 annualized from 2 weeks live trading data (validates signal quality sufficient for options)
+- **Architecture**: Existing infrastructure enables phased rollout (Gate 1 equity validation → Gate 2 covered calls → Gate 3 spreads → Gate 4 IV arbitrage)
+
+**Status**: Production-ready analysis, decision tree ready for May 12 feasibility review. Feeds post-Gate-2 roadmap.
+
+### 📊 Market Session Monitoring (2026-04-29 13:30–20:00 UTC — LIVE)
+
+**Pre-Market Status** (09:55 UTC):
+- ✅ Engine running (PID 1202130, started 03:31 UTC)
+- ✅ All 67 stacker sessions active, market-aware sleep active
+- ✅ 11-ticker portfolio loaded (AAPL, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA + 1 other)
+- ✅ HMM regime scaling enabled
+- ⏳ Market opens 13:30 UTC (~3.5 hours away)
+
+**Today's Monitoring Checklist**:
+- 13:30 UTC: Engine wakes and begins trading cycle
+- 14:00–18:00 UTC: Monitor signal generation, order submissions, fills
+- 20:00 UTC: Market close, verify Discord notification posted with daily summary
+- 20:15 UTC: Log round-trip count, P&L, regime indicators
+
+**Expected Activity**: 11-ticker portfolio at 0.17–2 trades/month/ticker baseline = ~10-15% ensemble chance of ≥1 trade today. Gate 1 baseline window: April 29-May 12 (2 weeks of live market data).
+
+---
+
 ## Since Last Check-in (Session 633 — 2026-04-29 08:07 UTC — Stockbot Options Strategy + Market Prep)
 
 ### ✅ Exploration Queue Item Complete: Stockbot Options Trading Strategy Analysis
