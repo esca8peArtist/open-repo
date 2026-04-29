@@ -4,6 +4,39 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 14:35 UTC — Session 620 — May 2026 Civic Developments Tracker (resistance-research)
+
+**Context**: Highest-priority autonomous work: resistance-research framework currency maintenance. stockbot is blocked on engine restart (user action); mfg-farm blocked on test print. resistance-research distributed path decision pending. Created May 2026 tracking document to monitor ongoing civic developments across 6 key domains — enables framework to stay current regardless of distribution path decision.
+
+**Agent**: resistance-research subagent
+**Duration**: ~9 minutes research + document generation
+**File created** (committed to master):
+1. `projects/resistance-research/MAY_2026_TRACKER.md` (513 lines, production-ready) — Week 1 tracking across 6 domains:
+   - **Domain A (War Powers)**: Iran WPR May 1 deadline; Democratic lawsuit threat; ceasefire-as-clock-pause legal theory; VP Vance position
+   - **Domain B (Prosecutorial Weaponization)**: SPLC grand jury weaponization early motions; Abrego Garcia trial date cancellation; informant transparency updates
+   - **Domain C (Voting Rights)**: Utah proof-of-citizenship law (May 6), South Dakota effective before June primaries, Arizona November ballot, DOJ national voter database project + litigation
+   - **Domain D (SCOTUS)**: June 2026 term preview (Slaughter case pending); Humphrey's Executor aftermath; universal injunctions eliminated
+   - **Domain E (Election Security)**: VOTE-ISAC formally proposed (Arizona Fontes); CDT election security initiative launched; FISA 702 pre-vote intelligence (April 29)
+   - **Domain F (Fiscal/Congressional Authority)**: DHS payroll cliff (May 4-8); House companion budget resolution tracking; May 15 committee submission deadline
+
+**Key Findings**:
+- Cross-domain pattern analysis: Three structural patterns identified across all six domains simultaneously: (1) institutional constraint failure at scale, (2) federal infrastructure repurposed from defense to offense against democratic participation, (3) litigation race with finite bandwidth
+- 5 critical immediate follow-up action items (checklists in tracker) with post-May-1, post-April-30, post-Crenshaw-ruling triggers
+- Domain 38 Candidate identified: "Centralized Federal Voter Suppression Infrastructure" (DOJ national voter database crosses domain lines)
+- 14 authoritative sources cited (TIME, Al Jazeera, NBC News, Lawfare, The Hill, ACLU, Democracy Docket, Votebeat, 19th News, Ballotpedia, NPR, CNBC, StateScoop, Tennessee Lookout)
+
+**Strategic Value**: 
+- Framework currency maintained for May 2026 through April 30 developments
+- Independent of distribution path decision (A/A+Domain37/B)
+- Ongoing weekly update cycle established (tracker administration section scheduled through May 31)
+- Synthesis calendar enables automatic escalation of critical domain findings to Phase 1 distribution timing if user selects immediate-distribution paths
+
+**Integration**: MAY_2026_TRACKER.md added to projects/resistance-research directory; links to 6 base domain files + Domain 19f; metadata tracked in project PROJECTS.md.
+
+**Status**: Production-ready. Weekly updates will continue through May (1 hour/week maintenance cost).
+
+---
+
 ## 2026-04-29 01:30 UTC — Session 619 — resistance-research Phase 1 Execution Materials Prep
 
 **Context**: Most projects are blocked on user actions (stockbot engine restart, mfg-farm test print, resistance-research path decision). Executed proactive prep work to enable immediate Phase 1 execution upon user path decision.
