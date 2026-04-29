@@ -5,6 +5,101 @@
 
 ---
 
+## Since Last Check-in (Session 616 — 2026-04-29 03:50 UTC — Current)
+
+### ✅ Exploration Queue Item 17 COMPLETE | Domain 39 Candidate Scoping
+
+**Status**: All high-priority projects blocked on user input. Exploration queue Items 16-18 added as immediately-actionable work. Item 17 executed: resistance-research Domain 39 candidate scoping complete.
+
+---
+
+### What Happened
+
+#### ✅ Item 17: resistance-research — Domain 39 Candidate Scoping COMPLETE
+- **File**: `projects/resistance-research/ITEM17_DOMAIN39_CANDIDATES.md` (18,500 words, production-ready)
+- **Candidates evaluated**: 5 total
+  1. **Reproductive Rights and Democratic Authority** — **RANKED #1**
+     - Strongest 2026 urgency (21 state abortion bans in effect)
+     - Strongest coalition-building potential (women voters, reproductive justice movement, documented grassroots infrastructure)
+     - Key research: post-Dobbs voting behavior changes, reproductive control as democratic-constraint mechanism, ballot initiative success patterns
+  2. **Labor Rights and Democratic Participation** — **RANKED #2**
+     - Existing mass organizations (union voter contact infrastructure)
+     - Strong international precedent (Germany co-determination, Scandinavia union strength)
+     - Key research: union-decline political correlates, electoral impact, state-level pathways (CA model, AZ/NV ballot initiatives)
+  3. Debt, Precarity, and Civic Participation (Ranked #3)
+  4. Technology Platforms and Democratic Infrastructure (Ranked #4)
+  5. International Trade and Democratic Sovereignty (Ranked #5)
+
+- **Research roadmaps**: Full roadmaps produced for top 2 candidates
+  - Reproductive Rights: 14-18 hour research scope (constitutional doctrine, voting behavior, international cases, reform pathways)
+  - Labor Rights: 12-16 hour research scope (union economics, electoral impact, international comparative, reform options)
+
+- **Framework positioning**: Framework now mature for Phase 2 expansion. Domains 39-40 candidates identified with production-ready research roadmaps. Structure and sourcing matched to Items 10 and 12 (existing domain candidate analyses).
+
+#### 📊 Comparative Rankings (4 Criteria)
+| Criterion | Rank 1 | Rank 2 | Rank 3 | Rank 4 | Rank 5 |
+|-----------|--------|--------|--------|--------|--------|
+| Democratic Leverage | Labor | Debt | Reproductive | Tech | Trade |
+| 2026 Urgency | Reproductive | Debt | Labor | Tech | Trade |
+| International Precedent | Labor | Reproductive | Tech | Debt | Trade |
+| Coalition-Building | Reproductive | Labor | Debt | Tech | Trade |
+
+**Final weighted ranking favors Reproductive Rights** due to strongest 2026 electoral timing + strongest grassroots coalition already mobilized.
+
+---
+
+#### 📋 Items 16-18 Added to Exploration Queue
+- **Item 16**: seedwarden Track B — Phase 2 Photography & Social Media Strategy (2-3 hrs, immediately actionable)
+- **Item 17**: ✅ COMPLETE (Domain 39 scoping)
+- **Item 18**: mfg-farm Laser/Resin/Injection Economics Deep-Dive (2-3 hrs, immediately actionable)
+
+**Queue status**: Now has 3 queued items (3, 4, 5, 6, 11) + 2 new immediately-actionable items (16, 18). Queue health stable.
+
+---
+
+### 📌 Current Project Status (Updated 2026-04-29 03:50 UTC)
+
+| Project | Status | Blocker | Notes |
+|---------|--------|---------|-------|
+| **resistance-research** | ✅ READY | User distribution decision (A / A+37 / B) | Framework complete: 35 domains + Phase 1-5. Domain 39 candidates identified. Phase 2 expansion roadmaps production-ready. |
+| **stockbot** | 🔴 BLOCKED | Engine restart (user action, CRITICAL) | Engine not running. Feature bug fixed (Session 560), awaiting restart before market hours. Exploration Item 3 queued post-market. |
+| **mfg-farm** | ✅ READY | Test print confirmation (manual) | Business plan + CadQuery designs + supplier research complete. Exploration Item 18 queued. |
+| **seedwarden** | ✅ READY (Track B) | Phase 1 tag corrections + Etsy verification (Track A only) | Phase 1-3 complete. Track B has no blockers. Exploration Item 16 queued. |
+| **cybersecurity-hardening** | ✅ READY | Tier 1 approval (user decision) | All 3 distribution tiers production-ready. Tier 2 messaging analysis complete. Awaiting Tier 1 approval. |
+| **open-repo** | ⏳ WAITING | PR #1 merge (external review) | Phase 4 complete. Awaiting GitHub maintainer review. Phase 5 architecture ready. Phase 6 roadmap ready (Exploration Item 15 complete). |
+| **off-grid-living** | ✅ COMPLETE | Social media distribution (user execution) | Publication complete. Distribution campaign plan ready. Awaiting user social media launch. |
+| **workout** | ✅ COMPLETE | User review/selection | Comprehensive plan complete (1,053 lines). Awaiting user review. |
+
+---
+
+### ⚡ Action Items Needing User Input (Prioritized)
+
+1. **[CRITICAL — 2026-04-29 before 13:30 UTC]** stockbot engine restart — Engine is NOT running. Command: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py` with proper logging. Without this, Gate 1 validation cannot proceed.
+
+2. **[HIGH PRIORITY]** resistance-research distribution path decision — Choose Path A (distribution execution) / Path A+Domain37 Hybrid (immediate + election protection focus) / Path B (optional Phase 2 expansion). Once chosen, Phase 1 institutional outreach can begin immediately.
+
+3. **[MEDIUM PRIORITY]** seedwarden Phase 1 upload — Provide 3 tag corrections + Etsy account verification so Phase 1 products can go live (May 2026).
+
+4. **[MEDIUM PRIORITY]** cybersecurity-hardening Tier 1 approval — Approve TIER1_MESSAGING_TEMPLATES.md so Tier 1 distribution outreach can begin (25 law schools, think tanks, policy orgs).
+
+5. **[MEDIUM PRIORITY]** mfg-farm test print — Run test print of CadQuery designs; confirm tolerances. Once confirmed, supplier negotiation and Phase 2 supplier sequence can begin.
+
+---
+
+### 📊 Session 616 Work Summary
+
+**Execution model**: Orchestrator autonomous execution (single agent, sequential research + writing)
+
+**Deliverable**: 1 production-ready exploration research document (18,500 words)
+
+**Items completed**: 1 (Item 17)
+
+**Duration**: ~45 minutes (research + analysis + writing + commits)
+
+**Outcome**: resistance-research framework now has Domain 39 candidates identified with priority ranking and production-ready research roadmaps. Framework positioned for long-term Phase 2 expansion work post-distribution.
+
+---
+
 ## Since Last Check-in (Session 615 Continuation — 2026-04-29 01:30 UTC — Current)
 
 ### ✅ Exploration Queue Replenished | 3 Research Items Completed in Parallel
