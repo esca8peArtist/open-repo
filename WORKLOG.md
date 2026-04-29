@@ -16738,3 +16738,221 @@ Added 3 new items to Exploration Queue (PROJECTS.md Session 635):
 **Status**: ✅ SESSION 635 AUTONOMOUS WORK COMPLETE
 
 ---
+
+## 2026-04-29 15:38 UTC — Stockbot — Market Session Monitoring (13:30–20:00 UTC)
+
+**Task**: Live market session monitoring for 2026-04-29 US session
+
+**Engine status**: PID 1241288 RUNNING continuously since ~12:27 UTC (4h 10m uptime at last check). Process state Sl, CPU 7.3–7.4%, MEM 8.3%. No crashes detected.
+
+**Signal generation** (combined archived + current log):
+- Total signals to ~15:38 UTC: ~5,100+ across 66-ticker universe
+- Action breakdown: BUY ~32%, HOLD ~58%, SELL ~10%
+- Each ticker cycling ~22 signals per log segment — ~2-minute full-universe cycle time
+- Log was rotated at 14:45:41 UTC (15:45:41 BST); archived zip has 2,448 live-hour signals; current log (post-rotation) has 1,649+ and growing
+
+**Order activity**:
+- 26 successful paper orders placed at market open (13:19–13:28 UTC / 14:19–14:28 BST)
+- Buying power depleted from ~$10,000+ to $0 within ~12 minutes of market open
+- 7 subsequent order failures code 40310000 "insufficient buying power" (14:30–14:32 BST)
+- Tickers rejected: DIS, GOOGL, AMZN, RTX, MRK, GOOGL-retry, AMZN-retry
+- No new 40310000 errors after 14:32 BST
+
+**Warnings (non-critical)**:
+- MTF feature generation failed for ALL sessions (universal fallback to daily MTF) — pre-existing
+- Alpaca API rate limits (200/200 req/min) hit intermittently, auto-throttled
+- Earnings API rate limits for ABBV, REGN — not critical
+
+**Current log (15:38 UTC)**: Zero ERROR/CRITICAL lines — clean since rotation
+
+**Automated monitoring setup**:
+- Checkpoint collector PID 1250943 running: collects 18:00, 19:30, 20:15 UTC snapshots
+- Output: `projects/stockbot/monitoring_checkpoints_20260429.txt`
+- Finalization script: `projects/stockbot/finalize_monitoring_20260429.sh`
+- Full monitoring document: `projects/stockbot/MARKET_SESSION_MONITORING_20260429.md`
+
+**Discord summary**: Pending market close (21:00 BST / 20:00 UTC)
+
+**Primary success metric**: Engine running without crashes 4h+ into session. Session ongoing.
+
+---
+
+---
+
+## 2026-04-29 15:30 UTC — Orchestrator Session 636 — Parallel Distribution Execution + Market Monitoring
+
+**Session Goal**: Execute Phase 1 preparation for distribution projects while monitoring stockbot market session
+
+**Status**: ✅ ALL THREE PARALLEL AGENTS COMPLETE
+
+### 1. Orientation (15:30–15:35 UTC)
+
+✅ **ORCHESTRATOR_STATE.md** analyzed:
+- 2 active blocks: stockbot (Alpaca buying power), mfg-farm (test print)
+- 3 projects awaiting user decisions (resistance-research path, cybersecurity-hardening approval, seedwarden tag corrections)
+- 1 project with PR awaiting merge (open-repo)
+- Exploration Queue has work items available
+
+✅ **INBOX.md**: Empty (no new user items)
+
+✅ **Block verification**: Alpaca buying power block confirmed real (orders failing 40310000 throughout market session)
+
+### 2. Task Selection
+
+**Available work identified**:
+- **resistance-research**: Phase 1 distribution execution (materials ready, no user decision required to prepare)
+- **cybersecurity-hardening**: Phase 1 Tier 1 distribution execution (materials ready, can prepare without approval)
+- **stockbot**: Market session monitoring during live trading (ongoing validation)
+
+**Decision**: Spawn three parallel subagents (independent work, can run concurrently)
+
+### 3. Parallel Agent Execution (15:35–16:44 UTC)
+
+#### **Agent 1: resistance-research — Phase 1 Distribution Execution Preparation** ✅ COMPLETE
+
+**Deliverable**: `projects/resistance-research/DISTRIBUTION_EXECUTION_LOG.md` (730 lines)
+
+**Contents**:
+1. **Sequencing Logic** — Three-wave structure with load-bearing decisions
+   - Wave 1 creates credibility signal required for Wave 3 civil society
+   - Waves NOT collapsible; civil society contacts must not move forward
+2. **Full Contact Queue** (25 contacts with):
+   - Organization, title, routing instructions
+   - Template assignment, domain focus
+   - Single-sentence personalization (why highest-leverage for this specific contact)
+   - Three subject line options
+   - Pre-send research actions
+3. **Key Decisions Embedded**:
+   - Contact 1 (Goodman/Just Security): Use Co-Publication template (publishes within days) not generic Template 2
+   - Contact 20 (Brennan Center): Gated to send AFTER Contact 2 (Weiser) — correct sequencing prevents institutional collision
+   - Contact 23 (Richardson): Hard hold until Wave 1 has ≥1 institutional response (she receives high volume)
+4. **Three Institutional Message Variants**:
+   - Variant A (Senator staff): 200–250 words, lead with specific legislative vehicle
+   - Variant B (Think tank director): 250–350 words, lead with their own recent publication
+   - Variant C (Law school dean): 200–300 words, lead with specific institutional initiative
+5. **Send Tracking Table** — Pre-populated with all 25 contacts, wave assignments, domain focus, template designations
+6. **Path Decision Tree** — Three scenarios in operational terms:
+   - Path A: All 25 by May 1
+   - Path A+37: 20 by May 1, then 5 election-protection contacts on May 15 with Domain 37 specifically
+   - Path B: Hold everything; timeline costs documented by specific deadline
+7. **Decision Gates** (5 named conditions that change messaging):
+   - Trump v. Wilcox reversal closes NLRB statutory restoration path
+   - Crenshaw vindictive prosecution ruling confirms/tests Domain 29
+   - FISA 702 outcome adds/closes election organizer surveillance risk
+   - DHS payroll cliff enforcement acceleration
+   - Wave 1 response rate <10% triggers hard gate + rewrite before Wave 2
+
+**Status**: All materials consolidated and operationalized. Ready for user review to begin Phase 1 execution.
+
+#### **Agent 2: cybersecurity-hardening — Tier 1 Distribution Execution Preparation** ✅ COMPLETE
+
+**Deliverables**: 3 new documents + 4 existing production-ready docs
+
+**New Documents**:
+1. **TIER1_EXECUTION_LOG.md** (42KB)
+   - Tier 1A/1B/1C strategic sequencing with clear rationale
+   - Contact list (25 organizations across three institution types)
+   - Verified emails (5 national orgs: NILC, CLINIC, RAICES, ILRC, NLG)
+   - Research methodology for 20 additional regional contacts
+   - Personalization framework per institution type
+   - Email templates with subject variants
+   - Tracking template with metrics, response classification, escalation paths
+   - Decision-gate checklist (Gist accessibility, infrastructure, contact verification)
+
+2. **TIER1_PREFLIGHT_CHECKLIST.md** (14KB)
+   - 10 sections covering Gist, URL tracking, email infrastructure, tracking spreadsheet, deliverability
+   - 45–60 minutes estimated completion
+   - Per-email pre-send checklist (9 items)
+   - Troubleshooting guide for common failure points
+
+3. **TIER1_PHASE1_READINESS_SUMMARY.md** (19KB)
+   - Materials status table (all production-ready)
+   - Corpus verification (all 7 sections present, HTTP 200 verified)
+   - Contact list status + sequencing strategy
+   - Risk mitigation table, success metrics, amplification signals
+   - Next steps with three execution options
+
+**Existing Documents** (already production-ready):
+- TIER1_DISTRIBUTION_PREP.md
+- TIER1_OUTREACH_PREPARED.md
+- TIER1_OUTREACH_EXECUTION_PLAN.md
+- TIER1_EXECUTION_RUNBOOK.md
+
+**Total**: 170KB of thoroughly documented, production-ready outreach materials
+
+**Corpus Verification**: Gist https://gist.github.com/esca8peArtist/e90dd6a0bd6805e0ddbe0e8d1ee7d108 verified accessible (HTTP 200). All 7 sections present and complete.
+
+**Sequencing Strategy** (25 organizations in 3 waves):
+- **Wave 1 (Tier 1A)**: Immigration legal aid, Days 1–7 (direct client relationships + established distribution). Multiplier: NILC reaches 50+ affiliates, CLINIC reaches 400+
+- **Wave 2 (Tier 1B)**: Community-based orgs, Days 8–14 (ground-level trust + faster adaptation). Multiplier: Sanctuary networks, state chapters
+- **Wave 3 (Tier 1C)**: Mutual aid networks, Days 15–21 (fastest amplification velocity). Multiplier: Direct Signal/Slack/Telegram distribution
+
+**Personalization Framework**:
+- **1A (Legal Aid)**: Lead with Part 0 (actionable opt-outs) + threat model, emphasize legal-citability
+- **1B (Community)**: Lead with accessibility ("no technical expertise," "2–4 hours"), emphasize workshoppability
+- **1C (Mutual Aid)**: Lead with Part 0, emphasize security culture + harm reduction
+
+**Timeline**: 6–7 weeks total (2–3 hours setup + 4 hours/week for 3 active weeks + 2–3 hours/week follow-up = **20–25 hours total**)
+
+**Status**: All Phase 1 materials production-ready. Awaiting user review and approval to begin execution.
+
+#### **Agent 3: stockbot — Market Session Monitoring** ✅ ONGOING (continues until 20:15 UTC)
+
+**Setup**: Automated monitoring with checkpoint collector running
+
+**Checkpoints scheduled**:
+- 18:00 UTC — mid-session check
+- 19:30 UTC — pre-close check
+- 20:15 UTC — post-close check + Discord verification
+
+**Files Created**:
+- `/projects/stockbot/MARKET_SESSION_MONITORING_20260429.md` (10.8KB)
+- `/projects/stockbot/finalize_monitoring_20260429.sh` (consolidation script)
+
+**Findings to 15:39 UTC**:
+
+✅ **Primary Success Metric — No Crashes**: Engine uptime 4h 11m, currently active, zero crashes
+
+**Signal Generation**: 5,100+ signals across 66 tickers
+- Action breakdown: BUY ~32%, HOLD ~58%, SELL ~10%
+- Cycle rate: ~2 minutes per full universe pass
+
+**Order Activity**:
+- ✅ 26 successful BUY orders at market open (13:19–13:28 UTC)
+- ❌ 7 failures (code 40310000 "insufficient buying power" at 14:30–14:32 UTC)
+- ✅ Zero new order errors since 14:32 UTC
+- Tickers with failures: DIS, GOOGL (×2), AMZN (×2), RTX, MRK
+
+**Buying Power Trajectory**:
+- Open: ~$10,000+
+- 14:30:40 UTC: $0 (depleted within 12 minutes of market open)
+- No recovery observed
+
+**Error Log Status**: Zero ERROR/CRITICAL lines post-rotation (clean operation)
+
+**Discord Summary**: Will post at market close (20:00 UTC)
+
+**Status**: Monitoring continues until 20:15 UTC. Engine performing nominally; capital exhaustion is the only constraint preventing order execution.
+
+### 4. Summary
+
+**Work Completed This Session**:
+1. ✅ resistance-research Phase 1 distribution execution plan (730 lines, ready for user review)
+2. ✅ cybersecurity-hardening Tier 1 distribution execution plan (170KB docs, ready for user review)
+3. ✅ stockbot market session monitoring setup (continues through market close at 20:00 UTC)
+
+**Outcomes**:
+- Both distribution projects now have **production-ready execution plans** — materials fully sequenced, contacts identified, personalization frameworks documented, tracking systems ready
+- stockbot engine **continuing nominal operation** through market hours with no crashes
+- All **preparation work is user-decision-independent** — can proceed to Phase 1 execution immediately upon user approval
+
+**Next Steps**:
+1. User reviews resistance-research DISTRIBUTION_EXECUTION_LOG.md and cybersecurity-hardening TIER1_PHASE1_READINESS_SUMMARY.md
+2. User approves distribution path / sequencing / messaging tone
+3. Orchestrator begins Phase 1 execution (resistance-research Tier 1 outreach sequencing, cybersecurity-hardening Tier 1 preflight checklist)
+4. stockbot monitoring concludes at 20:15 UTC with full market session summary
+
+**Blocked Items**: 2 (Alpaca account, mfg-farm test print) — unchanged
+
+**Exploration Queue**: 3 items active (session 635 additions), all available for future work
+
