@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "created": "2026-04-30",
+    "session": "662",
+    "status": "position-verified-email-pending-final-check",
+    "position_verification_date": "2026-04-29",
+    "email_verification_status": "institutional-pattern-confirmed-final-spot-check-required-before-send",
+    "source_documents": [
+      "BATCH_1_CONTACT_VERIFICATION.md (Session 658)",
+      "PHASE_1_EXECUTION_READINESS.md (Session 662)",
+      "distribution-timeline.md",
+      "PHASE1_EXECUTION_MATERIALS/TIER1_OUTREACH_STRATEGY.md"
+    ],
+    "notes": "All five positions verified as of April 29, 2026. Email addresses are confirmed institutional patterns; final spot-verification (2-5 minutes per contact) is required immediately before Block 6 send. Record verified email in the 'verified_email' field before proceeding."
+  },
+  "batch_1_contacts": [
+    {
+      "id": "T1-001",
+      "send_order": 1,
+      "name": {
+        "full": "Ryan Goodman",
+        "first": "Ryan",
+        "preferred_salutation": "Ryan"
+      },
+      "position": {
+        "title": "Co-Editor-in-Chief, Just Security; Anne and Joel Ehrenkranz Professor of Law",
+        "organization_primary": "Just Security",
+        "organization_secondary": "NYU School of Law",
+        "verified_date": "2026-04-29",
+        "verification_source": "justsecurity.org masthead; NYU Law faculty page"
+      },
+      "contact": {
+        "email_primary_pattern": "ryan.goodman@nyu.edu",
+        "email_pattern_note": "NYU format: first.last@nyu.edu — confirmed institutional pattern",
+        "email_alternate": "ryan@justsecurity.org",
+        "email_alternate_note": "Just Security editorial contact; try if NYU address bounces",
+        "verified_email": null,
+        "verification_url_primary": "https://www.law.nyu.edu/faculty/profiles/GOODMANR",
+        "verification_url_alternate": "https://justsecurity.org/about-us/",
+        "social_x": "@rgoodman",
+        "social_x_verified": true
+      },
+      "personalization": {
+        "template_file": "PHASE_1_EMAIL_TEMPLATES.md",
+        "template_section": "Email 1: Ryan Goodman",
+        "domain_lead": ["Domain 28 — War Powers, Venezuela", "Domain 29 — Prosecutorial Weaponization", "Domain 6 — Judicial Independence"],
+        "domain_lead_rationale": "Just Security's editorial focus is national security law, rule of law, and executive accountability — Domains 28, 29, and 6 are exact editorial beats. Just Security published FISA 702 analysis (Domain 25 hook), war powers analysis (Domain 28), and prosecutorial accountability pieces (Domain 29) in April 2026.",
+        "key_hook": "Domain 28 OLC memo constitutional analysis: internal contradiction of applying two-part war powers test to 'law enforcement' characterization; forward-reach implication for DEA indictments in Iran, North Korea, Lebanon, Russia",
+        "secondary_hook": "Domain 29 SPLC indictment (April 21) legal defect analysis; April 25 state bar interference rulemaking (McDade-Murtha)",
+        "april_2026_topical_hook": "Just Security's FISA 'Fool's Gold' analysis (cited in Domain 25) makes surveillance domain directly relevant; SPLC indictment (April 21) is April 2026 Domain 29 core case",
+        "ask_type": "Feedback on OLC memo analysis accuracy + consideration of Domain 28 or Domain 29 as Just Security forum submission",
+        "placeholder_to_fill": "{{RECENT_JUST_SECURITY_ARTICLE}} — visit justsecurity.org/author/ryan-goodman/ for most recent piece"
+      },
+      "subject_lines": {
+        "option_a": "Domain 28 / Operation Absolute Resolve — OLC memo analysis + statutory gap — Just Security forum piece?",
+        "option_b": "Independent research: prosecutorial weaponization (Domain 29, SPLC indictment) + war powers — seeking Just Security feedback",
+        "option_c": "Framework + FISA 702 analysis: judicial independence and surveillance accountability — for Just Security review",
+        "recommended": "option_a",
+        "recommendation_note": "Option A is the most specific and curiosity-generating; it names the operation and the specific analytical contribution (statutory gap). Option B works if Goodman's most recent work is on prosecutorial accountability rather than war powers."
+      },
+      "path_specific_additions": {
+        "path_a": "The complete 35-domain framework is production-ready and available now.",
+        "path_a_37": "The 35-domain framework is in Phase 1 distribution; Domain 37 (Federal Executive Interference, 2026 Midterms) is available as a separately targeted document for election-protection contacts.",
+        "path_b": "The framework is in active development — I'm soliciting practitioner feedback at this stage, before wider distribution. Your read on what the analysis gets wrong is particularly valuable right now."
+      },
+      "tracking": {
+        "date_sent": null,
+        "time_sent_utc": null,
+        "email_address_used": null,
+        "open_detected": null,
+        "response_received": null,
+        "response_date": null,
+        "response_summary": null,
+        "follow_up_sent": null,
+        "follow_up_date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "T1-002",
+      "send_order": 2,
+      "name": {
+        "full": "Wendy R. Weiser",
+        "first": "Wendy",
+        "preferred_salutation": "Wendy"
+      },
+      "position": {
+        "title": "Vice President, Democracy Program",
+        "organization_primary": "Brennan Center for Justice",
+        "organization_secondary": "NYU School of Law",
+        "verified_date": "2026-04-29",
+        "verification_source": "brennancenter.org team page"
+      },
+      "contact": {
+        "email_primary_pattern": "wweiser@brennancenter.org",
+        "email_pattern_note": "Brennan Center format: first-initial + last@brennancenter.org — confirmed",
+        "email_alternate": null,
+        "email_alternate_note": "No confirmed alternate; if primary bounces, route through brennancenter.org contact form",
+        "verified_email": null,
+        "verification_url_primary": "https://www.brennancenter.org/experts/wendy-r-weiser",
+        "verification_url_alternate": null,
+        "social_x": "@WeWeiser",
+        "social_x_verified": true
+      },
+      "personalization": {
+        "template_file": "PHASE_1_EMAIL_TEMPLATES.md",
+        "template_section": "Email 2: Wendy Weiser",
+        "domain_lead": ["Domain 1 — Voting Rights and Elections", "Domain 33 — State Legislative Autocratization"],
+        "domain_lead_rationale": "Brennan Center is the primary institutional tracker of voting rights litigation and state-level suppression — Domains 1 and 33 draw on Brennan Center data extensively. Weiser leads the Democracy Program directly.",
+        "key_hook": "Four-state SAVE Act analog enactment wave (FL, MS, SD, UT, April 2026) as evidence of coordinated state-level fallback after Senate defeat; coalition fracture analysis (Collins, Murkowski, Tillis, McConnell bloc) as institutionalist target",
+        "secondary_hook": "Domain 1 FISA/election security collision; Arizona ballot initiative (621K signatures); Domain 33 ballot initiative suppression wave (295 bills in 43 states, 2025)",
+        "april_2026_topical_hook": "Brennan Center actively publishing FISA 702 and voting rights coverage — Domains 1 and 25 directly current. Four-state SAVE Act wave is the most recent state-level development in Domain 1.",
+        "ask_type": "Scholarly feedback — two specific questions about the coordination framing and institutionalist bloc durability",
+        "placeholder_to_fill": "{{RECENT_BRENNAN_CENTER_PUBLICATION}} — check brennancenter.org/our-work for most recent Weiser piece or Brennan Center voting rights report"
+      },
+      "subject_lines": {
+        "option_a": "Framework + April 2026 voting rights crisis: four-state SAVE Act wave + ballot initiative suppression — Brennan Center feedback",
+        "option_b": "Independent research on voting rights and federalism — builds on Brennan Center work — seeking feedback",
+        "option_c": "35-domain democratic reform framework — Domain 1 (electoral reform) — academic review requested",
+        "recommended": "option_a",
+        "recommendation_note": "Option A is the most topical for April 2026 — directly references events Weiser is currently tracking. Option B is safer but less specific."
+      },
+      "path_specific_additions": {
+        "path_a": "The complete 35-domain framework is production-ready and available now.",
+        "path_a_37": "Domain 37 (Federal Executive Interference, 2026 Midterms) is being distributed separately to election-protection contacts in Week 2–3, given its targeted institutional relevance to Democracy Docket, Campaign Legal Center, and state AGs in competitive states.",
+        "path_b": "The framework is in active development — practitioner feedback at this stage directly shapes Phase 2 expansion priorities."
+      },
+      "tracking": {
+        "date_sent": null,
+        "time_sent_utc": null,
+        "email_address_used": null,
+        "open_detected": null,
+        "response_received": null,
+        "response_date": null,
+        "response_summary": null,
+        "follow_up_sent": null,
+        "follow_up_date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "T1-003",
+      "send_order": 3,
+      "name": {
+        "full": "Erica Chenoweth",
+        "first": "Erica",
+        "preferred_salutation": "Erica"
+      },
+      "position": {
+        "title": "Frank Stanton Professor of the Practice of Public Leadership; Director, Nonviolent Action Lab",
+        "organization_primary": "Harvard Kennedy School",
+        "organization_secondary": "Nonviolent Action Lab (HKS)",
+        "verified_date": "2026-04-29",
+        "verification_source": "HKS faculty directory"
+      },
+      "contact": {
+        "email_primary_pattern": "echenoweth@hks.harvard.edu",
+        "email_pattern_note": "HKS faculty format: first-initial + last@hks.harvard.edu — confirmed",
+        "email_alternate": null,
+        "email_alternate_note": "No confirmed alternate; if primary bounces, try echenoweth@harvard.edu",
+        "verified_email": null,
+        "verification_url_primary": "https://www.hks.harvard.edu/faculty/erica-chenoweth",
+        "verification_url_alternate": "https://scholar.harvard.edu/ericheno",
+        "social_x": "@erica_chenoweth",
+        "social_x_verified": true
+      },
+      "personalization": {
+        "template_file": "PHASE_1_EMAIL_TEMPLATES.md",
+        "template_section": "Email 3: Erica Chenoweth",
+        "domain_lead": ["Theory of change / resistance meta-analysis", "Domain 27 — Higher Education", "Domain 29 — Prosecutorial Weaponization"],
+        "domain_lead_rationale": "The framework's theory of change section is built directly on Chenoweth's 3.5% threshold finding and the 'End of People Power' complicating argument. Her institutional context (Harvard funding freeze, Domain 27) adds personal relevance.",
+        "key_hook": "3.5% threshold as organizing metric — 7M No Kings participants vs. 11.6M U.S. threshold; application of Poland/South Africa comparative methodology to current U.S. trajectory; academic question about whether U.S. is closer to Poland or Hungary on reversibility spectrum",
+        "secondary_hook": "Harvard $2.2B funding freeze documented in Domain 27 — her own institution is in the framework's evidentiary record",
+        "april_2026_topical_hook": "Chenoweth's 'Why Gen-Z Is Rising' (Journal of Democracy, January 2026) and in-progress 'End of People Power' are both pre-filled in template. Harvard funding freeze (April 2026) is the most recent topical hook.",
+        "most_recent_work_default": "Why Gen-Z Is Rising, Journal of Democracy, January 2026",
+        "ask_type": "Scholarly feedback — two specific questions about the Poland/Hungary reversibility assessment and the organizational depth comparison",
+        "placeholder_to_fill": "{{RECENT_CHENOWETH_WORK}} — default is pre-filled; verify it is still the most recent at hks.harvard.edu/faculty/erica-chenoweth"
+      },
+      "subject_lines": {
+        "option_a": "Research builds on your 3.5% threshold — seeking correction on nonviolent action application to current U.S. context",
+        "option_b": "35-domain democratic renewal framework — theory of change grounded in Chenoweth nonviolent action research — academic feedback",
+        "option_c": "Harvard Kennedy School research collaboration: democratic renewal diagnostic & mobilization strategy",
+        "recommended": "option_a",
+        "recommendation_note": "Option A is the strongest — it leads with the specific threshold finding and frames the ask as a correction request rather than an endorsement request. Option B is acceptable but less specific."
+      },
+      "path_specific_additions": {
+        "path_a": "The complete 35-domain framework is production-ready and available now.",
+        "path_a_37": "The 35-domain framework is in Phase 1 distribution; Domain 37 (Federal Executive Interference, 2026 Midterms) will be distributed to election-protection organizations in a targeted Phase 2.",
+        "path_b": "The framework is at an active development stage — academic feedback before wider distribution is exactly what shapes the analysis's defensibility in institutional contexts."
+      },
+      "tracking": {
+        "date_sent": null,
+        "time_sent_utc": null,
+        "email_address_used": null,
+        "open_detected": null,
+        "response_received": null,
+        "response_date": null,
+        "response_summary": null,
+        "follow_up_sent": null,
+        "follow_up_date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "T1-004",
+      "send_order": 4,
+      "name": {
+        "full": "Ian Bassin",
+        "first": "Ian",
+        "preferred_salutation": "Ian"
+      },
+      "position": {
+        "title": "Co-Founder and Executive Director",
+        "organization_primary": "Protect Democracy",
+        "organization_secondary": null,
+        "verified_date": "2026-04-29",
+        "verification_source": "protectdemocracy.org team page"
+      },
+      "contact": {
+        "email_primary_pattern": "ian@protectdemocracy.org",
+        "email_pattern_note": "Protect Democracy format: first@protectdemocracy.org — confirmed for executive directors",
+        "email_alternate": null,
+        "email_alternate_note": "If primary bounces, use Protect Democracy contact form at protectdemocracy.org/contact",
+        "verified_email": null,
+        "verification_url_primary": "https://protectdemocracy.org/about/team/",
+        "verification_url_alternate": "https://protectdemocracy.org/contact/",
+        "social_x": "@ibassin",
+        "social_x_verified": true
+      },
+      "personalization": {
+        "template_file": "PHASE_1_EMAIL_TEMPLATES.md",
+        "template_section": "Email 4: Ian Bassin",
+        "domain_lead": ["Domain 6 — Judicial Independence", "Domain 29 — Prosecutorial Weaponization / SPLC", "Domain 13 — Constitutional Reform"],
+        "domain_lead_rationale": "Protect Democracy is co-plaintiff or amicus in multiple active cases documented in Domains 6 and 29. Bassin's litigation posture spans judicial independence and retaliatory prosecution — both are framework core domains. Protect Democracy is also the Common Cause plaintiff in the national voter database lawsuit (Domain 37 hook for Path A+37).",
+        "key_hook": "Domain 6 enforcement gap analysis (the three-track response is structurally insufficient when DOJ institutional capture prevents federal criminal referral) — genuine question about whether Protect Democracy's active docket addresses this gap through creative standing or equitable enforcement theories",
+        "secondary_hook": "Domain 29 SPLC indictment amicus work; SPLC's April 28 defense motions (Judge Emily Marks, N.D. Ala.) — most recent Domain 29 development",
+        "april_2026_topical_hook": "Protect Democracy's active co-plaintiff status in multiple Domain 6 and Domain 29 cases; Common Cause voter database lawsuit (Domain 37) for Path A+37",
+        "ask_type": "Meeting request (20 minutes) — most valuable contact type for implementation strategy feedback",
+        "placeholder_to_fill": "{{RECENT_PROTECT_DEMOCRACY_FILING}} — check protectdemocracy.org/work for most recent case or publication (case name, court, filing date). Also fill {{YOUR_AVAILABILITY}} with 2–3 specific time windows."
+      },
+      "subject_lines": {
+        "option_a": "Framework + prosecutorial weaponization: domain-29 SPLC analysis and domain-06 judicial threat documentation — Protect Democracy input",
+        "option_b": "Litigation & implementation strategy: democratic renewal framework (judicial independence + constitutional reform) — brief call?",
+        "option_c": "Independent research on DOJ capture and judicial independence — builds on Protect Democracy litigation — seeking 20 minutes",
+        "recommended": "option_b",
+        "recommendation_note": "Option B is cleanest for a meeting-request template — specific domains named, clear ask in subject line. Option A works if Bassin's most recent work is on prosecutorial accountability specifically."
+      },
+      "path_specific_additions": {
+        "path_a": "The complete 35-domain framework is production-ready and available now.",
+        "path_a_37": "Domain 37 (Federal Executive Interference, 2026 Midterms) includes a section specifically on Protect Democracy's Common Cause national voter database lawsuit and the post-CASA vacatur pathway — I'm distributing that document separately to election-protection contacts in Week 2.",
+        "path_b": "The framework is in active development — practitioner input on the enforcement gap and litigation strategy shapes the implementation pathways section directly."
+      },
+      "tracking": {
+        "date_sent": null,
+        "time_sent_utc": null,
+        "email_address_used": null,
+        "open_detected": null,
+        "response_received": null,
+        "response_date": null,
+        "response_summary": null,
+        "follow_up_sent": null,
+        "follow_up_date": null,
+        "notes": ""
+      }
+    },
+    {
+      "id": "T1-005",
+      "send_order": 5,
+      "name": {
+        "full": "Marc Elias",
+        "first": "Marc",
+        "preferred_salutation": "Marc"
+      },
+      "position": {
+        "title": "Founder, Democracy Docket; Partner and Chair, Election & Democracy Practice",
+        "organization_primary": "Democracy Docket",
+        "organization_secondary": "Perkins Coie LLP",
+        "verified_date": "2026-04-29",
+        "verification_source": "democracydocket.com; Perkins Coie firm site"
+      },
+      "contact": {
+        "email_primary_pattern": "melias@perkinscoie.com",
+        "email_pattern_note": "Perkins Coie format: first-initial + last@perkinscoie.com — confirmed from firm directory",
+        "email_alternate": "marc@democracydocket.com",
+        "email_alternate_note": "Democracy Docket editorial contact; try if Perkins Coie address bounces",
+        "verified_email": null,
+        "verification_url_primary": "https://www.perkinscoie.com/people/marc-e-elias",
+        "verification_url_alternate": "https://www.democracydocket.com/about/",
+        "social_x": "@marceelias",
+        "social_x_verified": true,
+        "social_x_note": "@marceelias is active on X — confirmed posting in April 2026"
+      },
+      "personalization": {
+        "template_file": "PHASE_1_EMAIL_TEMPLATES.md",
+        "template_section": "Email 5: Marc Elias",
+        "domain_lead": ["Domain 1 — Voting Rights and Elections (litigation tracker)", "Litigation Tracker 2026"],
+        "domain_lead_rationale": "Democracy Docket is the primary institutional source for active voting rights litigation — it is cited extensively in Domain 1 and in the Litigation Tracker 2026. Elias's June–July 2026 decision timeline (Watson v. RNC, Louisiana v. Callais) creates immediate topical relevance. Democracy Docket is cited 12+ times in Domain 37 as the primary NVRA enforcement vehicle — especially high-value for Path A+37.",
+        "key_hook": "Watson v. RNC (mail ballot deadline) and Louisiana v. Callais (VRA Section 2) — both expected June–July 2026; Domain 1 case strategy analysis; Litigation Tracker 2026 as working tool for Democracy Docket's documentation",
+        "secondary_hook": "NVRA 90-day quiet period (August 7, 2026) pre-filing strategy — cited in P.S. of email template; this is the highest-ROI Domain 37 hook for Elias",
+        "april_2026_topical_hook": "Four-state SAVE Act analog enactment wave (FL, MS, SD, UT) is Domain 1 most recent development. Watson v. RNC and Louisiana v. Callais are active Democracy Docket tracked cases.",
+        "ask_type": "Feedback request + co-publication potential (litigation tracker additions)",
+        "placeholder_to_fill": "Verify current status of Watson v. RNC and Louisiana v. Callais at democracydocket.com — update Domain 1 case status references in template if anything has changed since last check"
+      },
+      "subject_lines": {
+        "option_a": "Democracy Docket collaboration: electoral reform framework + litigation tracker alignment",
+        "option_b": "Framework + Watson v. RNC / Louisiana v. Callais analysis — domain 1 litigation tracker — Democracy Docket feedback",
+        "option_c": "Independent research on electoral reform and voter suppression — builds on Democracy Docket tracking — seeking input",
+        "recommended": "option_b",
+        "recommendation_note": "Option B is strongest — names the specific active cases that Elias is tracking, signaling the sender has read Democracy Docket's work rather than sent a generic outreach email."
+      },
+      "path_specific_additions": {
+        "path_a": "The complete 35-domain framework is production-ready and available now.",
+        "path_a_37": "Domain 37 (Federal Executive Interference, 2026 Midterms) is being distributed to election-protection contacts in a targeted Phase 2 (Week 2–3). It includes the NVRA quiet period analysis, DOJ consent decree clock, and SAVE error-rate litigation strategy in significant detail. Democracy Docket is cited 12+ times in that domain as the primary NVRA quiet period enforcement vehicle. You'll receive that document directly when Phase 2 distributes.",
+        "path_b": "The framework is in active development — Democracy Docket's practitioner perspective on what the litigation tracker is missing would be the highest-value input I could receive at this stage."
+      },
+      "tracking": {
+        "date_sent": null,
+        "time_sent_utc": null,
+        "email_address_used": null,
+        "open_detected": null,
+        "response_received": null,
+        "response_date": null,
+        "response_summary": null,
+        "follow_up_sent": null,
+        "follow_up_date": null,
+        "notes": ""
+      }
+    }
+  ],
+  "gist_url_log": {
+    "proposal": null,
+    "executive_summary": null,
+    "litigation_tracker": null,
+    "first_amendment_tracker": null,
+    "environmental_rollbacks_tracker": null,
+    "police_consent_decree_tracker": null,
+    "domain_37": null,
+    "notes": "Fill these URLs after Block 1 (Gist creation) in PHASE_1_EXECUTION_CHECKLIST.md. Use these URLs to populate {{PROPOSAL_URL}}, {{EXEC_SUMMARY_URL}}, and {{LITIGATION_TRACKER_URL}} in PHASE_1_EMAIL_TEMPLATES.md."
+  },
+  "batch_1_success_metric": {
+    "target": "2 of 5 contacts respond substantively within 7 days of first send",
+    "substantive_response_definition": "Any reply that goes beyond 'received, thank you' — includes a question, a correction, a referral, or a request for more material",
+    "assessment_date_note": "Check T+7 from date_sent of Contact 1 (Goodman)",
+    "if_below_target": "Review personalization quality; check email delivery logs for bounces; consider A/B subject line variant for Batch 2"
+  }
+}

@@ -1,6 +1,7 @@
 ---
 title: "Distribution Timeline — Phase 1 Week-by-Week Sequencing"
 created: 2026-04-28
+updated: 2026-04-30 (Session 662 — Week 0 execution infrastructure added)
 session: 565
 status: ready-for-activation-on-user-decision
 trigger: "User path decision (A / A+Domain37 / B) sets T-Day 0"
@@ -9,13 +10,42 @@ companion_docs:
   - messaging-templates.md
   - execution/distribution-sequence.md
   - execution/tier-1-contact-batches.md
+  - PHASE_1_EXECUTION_CHECKLIST.md
+  - PHASE_1_EMAIL_TEMPLATES.md
+  - PHASE_1_CONTACT_VERIFICATION.json
+  - PHASE_1_EXECUTION_TEMPLATES.md
 ---
 
 # Distribution Timeline — Phase 1
 
 **April 28, 2026 — Session 565**
+**Updated: April 30, 2026 — Session 662 (Week 0 execution infrastructure added; four new execution files built)**
 
 T-Day 0 is the day the user decides on Path A / A+Domain37 / B. All timelines below are relative to that decision. The prep window (T-48h to T-Day 0) can begin as soon as the user indicates a path is likely.
+
+---
+
+## WEEK 0 EXECUTION INFRASTRUCTURE (Built Session 662, April 30)
+
+The following four files were built in Session 662 and are ready for immediate use upon path decision. They replace the placeholder references in the pre-launch window below with production-ready materials:
+
+| File | Purpose | Status |
+|------|---------|--------|
+| `PHASE_1_EXECUTION_CHECKLIST.md` | Step-by-step launch guide — Block 0 through Block 7, with time estimates and decision gates | Ready |
+| `PHASE_1_EMAIL_TEMPLATES.md` | Five Batch 1 email drafts — all `{{placeholder}}` fields identified, path-specific additions labeled | Ready |
+| `PHASE_1_CONTACT_VERIFICATION.json` | Structured contact data for all five Batch 1 contacts — positions verified April 29, email patterns confirmed, tracking fields pre-populated | Ready |
+| `PHASE_1_EXECUTION_TEMPLATES.md` | Gist creation guide — step-by-step for all 6 (or 7 for A+37) documents, find-replace URL map, social scheduling platform links | Ready |
+
+**What still requires user action before T-Day 0**:
+1. Path decision (30 seconds — the trigger for all execution)
+2. Domain 1 Section 4.2 FISA correction (5 minutes — language ready in CHECKIN.md item 0)
+3. GitHub Gist creation (30–45 minutes — guide in `PHASE_1_EXECUTION_TEMPLATES.md`)
+4. URL fill-in across template files (20–30 minutes — find-replace map in `PHASE_1_EXECUTION_TEMPLATES.md`)
+5. Contact email final spot-verification (30–45 minutes — verification URLs in `PHASE_1_CONTACT_VERIFICATION.json`)
+6. Email personalization (60–90 minutes — drafts with `{{placeholder}}` fields in `PHASE_1_EMAIL_TEMPLATES.md`)
+7. Send sequence (15–20 minutes — order and rationale in `PHASE_1_EXECUTION_CHECKLIST.md` Block 6)
+
+**Total estimated time from path decision to Batch 1 emails sent: 3.0–4.5 hours.**
 
 This document provides the week-by-week contact sequencing, target metrics, follow-up cadence, and decision gates. The fuller tactical detail for individual contacts is in `execution/tier-1-contact-batches.md`. The full distribution sequence narrative is in `execution/distribution-sequence.md`.
 
