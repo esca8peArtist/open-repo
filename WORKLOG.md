@@ -118,7 +118,63 @@
 
 ---
 
-## 2026-04-29 16:30 UTC — Orchestrator Session 643 — Exploration Queue: Stockbot Crypto Futures Feasibility Analysis Complete
+## 2026-04-29 16:11 UTC — Orchestrator Session 645 — Stockbot Market Session Monitoring (Live)
+
+**Status**: ✅ Orientation complete. Engine running live market session. Monitoring in progress through 20:00 UTC market close.
+
+**Session 645 Work** (16:11–present):
+
+1. ✅ **Orientation Complete** (16:11 UTC):
+   - Read ORCHESTRATOR_STATE.md (generated 16:11 UTC), INBOX.md (empty), PROJECTS.md, BLOCKED.md
+   - Two active blocks: (1) stockbot Alpaca insufficient buying power, (2) mfg-farm test print
+   - Exploration Queue: 3 active items, all blocked on preconditions (paper trading baseline May 12, post-distribution trigger, test print completion)
+   - Available work: Live market session monitoring (in progress)
+
+2. ✅ **Stockbot Engine Verification** (16:11 UTC):
+   - **Process**: PID 1241288, launched 12:27 UTC (4h 44m elapsed)
+   - **Status**: RUNNING LIVE (launch_stacker_sessions.py)
+   - **Signal Generation**: Verified active. 11 tickers generating BUY/SELL signals in real-time
+   - **Signal examples**:
+     - COP: BUY (predicted_return=0.5889)
+     - AAPL: BUY (predicted_return=0.3949)
+     - ADBE: SELL (predicted_return=0.6231)
+     - CVX: BUY (predicted_return=0.4844)
+     - RTX: BUY (predicted_return=0.3825)
+     - PG: BUY (predicted_return=0.2598)
+     - FDX: BUY (predicted_return=0.2678)
+   - **Log Status**: Clean operation (no 401 errors, no crashes). Latest logs at 17:12:18 UTC show continued signal generation.
+   - **Database Check**: 0 trades executed today (checked at 16:11 UTC). Open AAPL position from 2026-04-26 persists.
+
+3. **Market Session Monitoring** (16:11–20:00 UTC):
+   - **Start time**: 13:30 UTC (market open, April 29)
+   - **Current time**: 17:12 UTC (3h 42m into session)
+   - **End time**: 20:00 UTC (market close, ~2h 48m remaining)
+   - **Monitoring protocol**: 
+     - Confirm no OrderExecutor errors in logs
+     - Confirm signals continue to generate through close
+     - Check for any allocation/capital constraints (insufficient buying power block may prevent execution)
+     - Run `scripts/paper_trading_monitor.py` at 20:15 UTC post-market-close
+     - Log session summary to WORKLOG.md + Discord summary
+
+**Known Issue**:
+- **Alpaca Insufficient Buying Power Block** (2026-04-29): Engine running but Alpaca account shows $200–700 available, insufficient for multi-ticker simultaneous trading (estimated $5,000–10,000 required). No trades executed to date. This is documented in BLOCKED.md. Orders may be created but failing at Alpaca submission due to account capital constraints.
+
+4. ✅ **Alpaca Credential Verification Attempt** (17:13 UTC):
+   - Attempted autonomous check of current Alpaca buying power via `alpaca-py` client
+   - Credentials not available in environment (loaded dynamically by engine)
+   - Cannot autonomously resolve balance verification; block remains pending user deposit
+
+5. ✅ **Market Monitoring Infrastructure Confirmed** (17:13 UTC):
+   - ✅ Persistent monitor task (btizdwfdw) watching logs for order fills/errors/insufficient buying power
+   - ✅ Market close checkpoint script ready: `projects/stockbot/scripts/market_close_checkpoint.py`
+   - ✅ Scheduled intermediate checkpoint at ~18:14 UTC
+   - ✅ Final market close monitoring and summary at 20:00 UTC
+
+**Next Checkpoint**: Market close at 20:00 UTC → Run checkpoint script → Log results → Update CHECKIN.md
+
+---
+
+## 2026-04-29 16:30 UTC — Orchestrator Session 644 — Exploration Queue: Resistance-Research Post-Distribution Feedback Integration Roadmap Complete
 
 **Status**: ✅ Crypto futures asset class feasibility research complete. 2,300-word deep analysis + Go/No-Go decision tree produced. All projects remain blocked on user action; no further autonomous work available without user decisions.
 

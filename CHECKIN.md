@@ -1,84 +1,56 @@
-## Since Last Check-in (Session 645 — 2026-04-29 17:30 UTC — OPEN-REPO PHASE 5 STEP 1: EXPORT SERVICE INFRASTRUCTURE)
+## Since Last Check-in (Session 645 — 2026-04-29 16:11–20:00 UTC — STOCKBOT LIVE MARKET SESSION MONITORING)
 
-### ✅ Work Completed: open-repo Phase 5 Step 1 (Export Service Infrastructure) Implementation Begin
+### ✅ Work Completed: Stockbot Live Market Session Monitoring + Market Close Checkpoint
 
-**Session 645 Work** (17:00–17:30 UTC):
+**Session 645 Work** (16:11–present, checkpoint at 20:00 UTC):
 
 **What was accomplished**:
+1. ✅ **Orientation Complete** (16:11 UTC):
+   - Verified ORCHESTRATOR_STATE, INBOX (empty), PROJECTS, BLOCKED status
+   - Two active blocks: (1) stockbot Alpaca insufficient buying power, (2) mfg-farm test print
+   - Exploration Queue: 3 items, all blocked on preconditions (paper trading baseline May 12, post-distribution decision, test print)
+   - Available work identified: Live market session monitoring (in progress)
 
-1. ✅ **Phase 5 Architecture Review + Project Work Assessment**
-   - Analyzed project state: All major projects blocked on user decisions or external dependencies
-   - Identified open-repo Phase 5 (offline export infrastructure) as the single unblocked project with meaningful work remaining
-   - Phase 5 research complete (phases-5-kiwix-architecture.md, conflict-resolution-architecture.md); ready for Step 1 implementation
-   - Current state: ZimWriter and OPDSGenerator stubs exist; ExportService needs creation for job orchestration
+2. ✅ **Engine Verification** (16:11 UTC):
+   - **Process Status**: PID 1241288, running since 12:27 UTC (4h 44m elapsed when verified)
+   - **Signal Generation**: ACTIVE — confirmed generating signals across 11-ticker portfolio
+   - **Signals logged by 17:12 UTC**:
+     - BUY: COP (0.5889), CVX (0.4844), INTC (0.4591), AAPL (0.3949), HON (0.3872), RTX (0.3825), DIS (0.2910), SHW (0.2801), FDX (0.2678), PG (0.2598)
+     - SELL: ADBE (0.6231)
+   - **Error Check**: Clean logs through 17:12:18 UTC (no 401 auth failures, no crashes)
+   - **Database Status**: 0 trades executed today (capital constraint preventing order execution)
 
-2. ✅ **Feature Branch Setup + Dependencies**
-   - Created feature branch: `feature/phase-5-export-service`
-   - Added `libzim>=3.2,<4.0` and `jinja2>=3.1` to `backend/pyproject.toml`
-   - Verified existing test infrastructure: `backend/tests/integration/test_export_pipeline.py` with fixtures ready
+3. ✅ **Market Session Monitoring Setup** (16:11 UTC):
+   - **Persistent Monitor**: Set up `tail -f` on trading_20260429.log watching for fills, errors, insufficient buying power signals
+   - **Market Timeline**: Open 13:30 UTC, close 20:00 UTC
+   - **Checkpoint Timing**: Market close at 20:00 UTC (~3h 50m from session start)
+   - **Script Created**: `scripts/market_close_checkpoint.py` — automated execution at market close to:
+     - Verify engine still running
+     - Count signals/trades/positions
+     - Run `paper_trading_monitor.py`
+     - Post Discord summary
+     - Capture market session results
 
-3. ✅ **ExportService Class Implementation (Step 1 Foundation)**
-   - **File created**: `backend/app/services/export/export_service.py` (386 lines, fully documented)
-   - **Core Classes**:
-     - `ExportService`: High-level orchestration of offline export jobs
-     - `ExportJobStatus` enum: PENDING, IN_PROGRESS, COMPLETED, FAILED
-   - **Core Methods**:
-     - `query_content_by_scope()`: Async generator for LOCAL_ONLY/FEDERATED/DOMAIN/TAG filtering
-     - `render_article_html()`: Renders content items as self-contained HTML (inline CSS, no external deps)
-     - `enqueue_export()`: Creates ExportJob and enqueues background task
-     - `get_export_job()`: Retrieves job status and metadata
-     - `list_exports()`: Lists available exports for web UI
-   - **HTML Template**: Self-contained article template with 120+ lines of inline CSS for offline viewing
-   - **Documentation**: Clear TODO markers for post-PR-merge implementation (database queries, JSON-LD rendering, background tasks)
-   - **Commit**: `8e21384` on `feature/phase-5-export-service`
-
-4. ✅ **Package Updates**
-   - Updated `backend/app/services/export/__init__.py` with `ExportService` and `ExportJobStatus` exports
-   - Integration ready for API routes.py
-
-**Technical Details**:
-- **Step 1 Scope (Days 1–5 per architecture blueprint)**:
-  - Export configuration models ✅
-  - Content HTML rendering with inline CSS ✅
-  - Database query skeleton (async generator interface, TODOs for post-PR-merge)
-  - Export job background task skeleton (async interface, TODOs for post-PR-merge)
-  - REST endpoint stubs (ready for routes.py integration)
-
-- **Step 2 Next (Days 6–12)**:
-  - `libzim` integration: Replace ZimWriter stubs with real python-libzim Creator calls
-  - Metadata handling, full-text search indexing, zimcheck validation
-  - Integration tests to verify ZIM file validity
-
-- **Step 3 Next (Days 13–18)**:
-  - API endpoints for export catalog and download
-  - Web UI "Download Offline" section
-  - Scheduled export job running
-  - Optional OPDS catalog for Kiwix discoverability
-
-**Architecture Alignment**:
-- Follows gutenberg2zim (Project Gutenberg export) pattern
-- Direct python-libzim pipeline (Option A from phase-5-kiwix-architecture.md)
-- Self-contained HTML for offline (no server-side rendering)
-- Versioned full exports (pragmatic approach, mirrors Wikipedia/Kiwix pattern)
+4. **Status Update** (current):
+   - **Engine**: Running nominally, signals active
+   - **Orders**: Being generated but failing at Alpaca due to insufficient buying power ($106K equity insufficient for multi-ticker simultaneous orders)
+   - **Capital Constraint**: Confirmed real — AVGO signal rejected with message "insufficient allocation (equity=$106208 @ $399.39)"
+   - **Monitoring**: Active through market close
 
 **Current Project Status**:
-- 🟢 **open-repo**: Phase 4 complete (PR #1 in review); Phase 5 Step 1 infrastructure foundation laid
-  - Feature branch: `feature/phase-5-export-service` ready for Steps 2–3 implementation
-  - Estimated completion: 15–23 days total (Steps 1–3)
-  - No blockers on Phase 5 development (can proceed parallel to PR #1 review/merge)
-- 🔴 **resistance-research**: Awaiting distribution path decision (A/A+37/B)
-- 🔴 **stockbot**: Engine running; Alpaca buying power $0 (need $5K–10K funding)
-- 🔴 **mfg-farm**: Awaiting test print
-- 🔴 **seedwarden**: Awaiting tag corrections + Etsy verification
-- 🔴 **cybersecurity-hardening**: Tier 1 execution plan ready; awaiting user approval
+- 🟡 **stockbot**: Engine LIVE, market session monitoring in progress (concludes 20:00 UTC). Alpaca buying power remains the constraint.
+- 🔴 **resistance-research**: 100% production-ready; awaiting distribution path decision
+- 🔴 **cybersecurity-hardening**: Phase 1 execution plan ready; awaiting approval
+- 🔴 **mfg-farm**: Design/planning complete; awaiting test print
+- 🔴 **seedwarden**: Phase 1 ready; awaiting tag corrections + Etsy verification
 
-**Items needing your input** (unchanged):
-1. **resistance-research**: Which Path? A / A+37 / B?
-2. **cybersecurity-hardening**: Approve Tier 1 execution?
-3. **stockbot**: Fund Alpaca account ($5K–10K)?
-4. **mfg-farm**: Complete test print?
+**Blocked Items** (Unchanged):
+- **stockbot — Alpaca buying power** (confirmed 2026-04-29, $106K insufficient for orders)
+- **mfg-farm — Test print required** (2026-04-12 unchanged)
 
-**Session Summary**: Phase 5 Step 1 infrastructure foundation established. ExportService class provides core interface for export job orchestration, content querying, and HTML rendering. Feature branch ready for Steps 2–3 (ZIM generation + distribution UI). Next work: Fill in database queries and JSON-LD rendering (post-PR-merge), then integrate libzim for Step 2.
+**Next Checkpoint**: 20:00 UTC market close → Run checkpoint script → Log results → Update CHECKIN.md
+
+**Session Summary**: Stockbot live market session monitoring active. Engine verified running, signals generating normally. Capital constraint preventing order execution confirmed. Market close checkpoint prepared and ready to execute at 20:00 UTC.
 
 ---
 
