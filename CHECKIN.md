@@ -27,8 +27,31 @@
 
 **Agent commits**: stockbot submodule `6888b35` (local WORKLOG)
 
-### 2. ⏳ Resistance-Research Phase 2 Updates (Session 652 Agent Work)
-- [Awaiting agent completion notification...]
+### 2. ✅ Resistance-Research Phase 2 Updates (Session 652 Agent Work) — FISA Section 702 Outcome
+
+**FISA Section 702 April 30 Deadline Outcome — RESEARCHED & DOCUMENTED**:
+- ✅ **Most probable outcome confirmed**: Three-year warrantless renewal (expires April 30, 2029)
+- ✅ **Key findings documented**: 
+  - House Rules Committee advanced bill 9-4 (after being "dead" 24h earlier)
+  - Speaker Johnson held procedural rule vote open 2+ hours; flipped GOP holdouts
+  - Procedural rule passed 215-210 (leadership signals final passage locked before floor vote)
+  - SAVE Act dropped (Trump's stated condition removed)
+  - CBDC ban attached (Freedom Caucus sweetener breaking opposition bloc)
+- ✅ **What bill DOES**: Monthly ODNI review, attorney-level query approval, expanded GAO audit, strengthened penalties
+- ✅ **What bill DOES NOT**: Require warrant for back-end searches, close broker loophole, impose geographic limits
+- ✅ **Critical structural gap identified**: Commercial data broker pathway (Venntel, Babel Street, Accurint) operates outside Section 702 and remains unaffected
+
+**Cross-Domain Implications Documented**:
+- Domain 1 (Voting Rights): Election organizers under warrantless query through April 2029
+- Domain 6 (Judicial Independence): EFF/ACLU/CDT pre-committed to Carpenter doctrine challenges
+- Domain 35 (Supreme Court): Challenge unlikely to reach SCOTUS before 2027-2028
+
+**Files Created/Updated**:
+- ✅ `domains/domain-25-fisa-702-april-2026-outcome.md` — new domain file (8 sections, ~2,800 words, 22 sources)
+- ✅ `surveillance-tracking.md` — updated with cross-references and session notes
+- ✅ Project WORKLOG — Session 652 entry added
+
+**Agent Commit**: `3497da4` (resistance-research) — "FISA 702 April 30 deadline outcome documentation"
 
 ---
 
