@@ -5,7 +5,50 @@
 
 ---
 
-## Since Last Check-in (Session 632 — 2026-04-29 09:40–14:00 UTC — Exploration Queue: Options Research + Market Monitoring)
+## Since Last Check-in (Session 633 — 2026-04-29 10:15–ONGOING UTC — Market Session Validation + Monitoring Setup)
+
+### ✅ Pre-Market Health Check Complete
+
+**Engine Status** (10:20 UTC):
+- ✅ Running PID 1202130 (continuous since 03:31 UTC = 6.5 hours)
+- ✅ Memory usage 8%, stable
+- ✅ Logs healthy: Latest trading_20260429.log (2.2M, written 06:30 UTC) shows clean startup with no errors
+- ✅ All 11 tickers loaded: AAPL, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA + 1 other
+- ✅ HMM regime scaling initialized
+- ✅ Market-aware sleep active (quiet since 06:30 when market closed)
+
+### 📍 Market Session Monitoring — SCHEDULED FOR 2026-04-29 13:30–20:00 UTC
+
+**Three Monitoring Checkpoints Created** (one-time cron jobs):
+1. **14:00 UTC** (task eee5dcd2) — 1h into market: verify engine cycling, signal generation per ticker
+2. **16:00 UTC** (task cf144531) — Mid-market: check Alpaca order submissions, position updates
+3. **20:15 UTC** (task bc2279d9) — Post-market: verify Discord summary, trade count, P&L
+
+**Context**: First live market session since Session 622 engine restart (03:31 UTC). April 28 gap identified (engine missed entire market session). April 29 validates whether feature count fix (Session 560) resolves core trading issue.
+
+**Expected Signal Rate**: 11-ticker portfolio baseline = 0.17–2 trades/month/ticker. Aggregate probability of ≥1 trade today across 11 tickers: ~60%.
+
+### 📊 Current Holdings (Paper Trading)
+- **Open Position**: 36 AAPL @ $271.04 (BUY entry 2026-04-26 17:06 UTC)
+- **Trades to Date**: 9 legs total (1 BUY position open, 0 complete round trips)
+- **P&L**: Floating (awaiting SELL signal on AAPL)
+
+### 🎯 Success Criteria for Today
+1. ✅ Engine wakes at 13:15 UTC (market-aware sleep)
+2. ⏳ Sessions begin cycle execution at 13:30 UTC (no shutdown errors)
+3. ⏳ Signals generated for ≥1 ticker (validates feature pipeline)
+4. ⏳ Alpaca order submissions logged (validates API integration)
+5. ⏳ Discord summary posted at 20:00 UTC (validates notification system)
+6. ⏳ No 401 auth errors or critical log entries
+
+**Outcome**: If ≥3 of 6 criteria pass → validation successful, proceed to May 12 checkpoint (Gate 1 feasibility review). If <3 pass → investigate root cause, adjust configuration.
+
+### 📋 Items Needing User Input
+None currently awaiting user decision for this phase.
+
+---
+
+## Since Last Check-in (Session 632 — 2026-04-29 09:40–10:15 UTC — Exploration Queue: Options Research)
 
 ### ✅ Exploration Queue Item Complete: Stockbot Options Trading Strategy Research
 
