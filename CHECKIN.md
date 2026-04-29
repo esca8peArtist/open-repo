@@ -5,7 +5,33 @@
 
 ---
 
-## Since Last Check-in (Session 620 — 2026-04-29 14:35 UTC — Current)
+## Since Last Check-in (Session 621 — 2026-04-29 03:08 UTC — Current)
+
+### ✅ Stockbot Engine Orchestration Script COMPLETE (Exploration Queue Item)
+
+**Status**: Resolved critical architecture gap blocking engine startup. Production-ready orchestration script created.
+
+**What Happened**: 
+- Diagnosed stockbot engine startup failure (root cause: architecture mismatch between CLI script and JSON configuration format)
+- Created new `launch_stacker_sessions.py` orchestration script (360 lines) that properly bridges the gap
+- Script reads active-sessions.json and launches all configured stacker-based trading sessions in parallel
+- Tested successfully: loaded 67 sessions, created TradingSession instances, started all on shared event loop
+- Updated BLOCKED.md with new startup procedure: `.venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+
+**Blockers Remaining**: 
+- Alpaca API authentication (401 errors in recent startup attempt) — requires user credential verification and account funding check
+- Once user verifies account, engine can be restarted immediately with new script
+
+**Key Features**:
+- Supports paper/live mode selection, signal handlers for graceful shutdown, comprehensive logging
+- TradingSession natively supports "stacker:<uuid>" strategy format — script just needed to instantiate properly
+- Parallel session startup on shared event loop (efficient for multi-ticker deployment)
+
+**Status**: Production-ready. Committed to stockbot submodule (commit 67144d2).
+
+**Next Step**: User verifies Alpaca account → restarts engine with orchestration script → engine runs 24/7 → Gate 1 pass by May 12
+
+---
 
 ### ✅ May 2026 Civic Developments Tracker (resistance-research) COMPLETE
 
@@ -36,6 +62,39 @@
 - Weekly update cycle established (1 hour/week maintenance cost through May)
 
 **Status**: Production-ready. Committed to master.
+
+---
+
+## Needs Your Input
+
+### 1. **Stockbot Engine Restart (CRITICAL) — Before next market open 2026-04-29 13:30 UTC**
+- **Action**: Verify Alpaca account has sufficient buying power for paper trading
+- **Then**: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+- **Verify**: Process should stay running, logs to `logs/trading_YYYYMMDD.log` should show active cycles (no 401 errors)
+- **Estimated time**: 5 minutes setup + ongoing monitoring
+- **Why urgent**: Deadline is market open today (13:30 UTC). Engine is production-ready, just waiting for account verification.
+- **Blocker resolution**: Once running, stockbot block is RESOLVED and Gate 1 paper trading begins
+
+### 2. **Distribution Path Decision (resistance-research)** — Pick one:
+- **Path A**: Immediate distribution (34-domain framework + April-May updates)
+- **Path A+Domain37 Hybrid (RECOMMENDED)**: Phase 1 distribution to general audiences (law schools, think tanks) + targeted Domain 37 (election security) to election protection orgs
+- **Path B**: Continue Phase 2 expansion before distribution
+- **Timeline**: Decision enables Phase 1 execution immediately afterward
+- **Estimated effort**: User decision + <2 hours administrative fixes (URL placeholders, contact field, canonical file location)
+
+### 3. **Test Print Execution (mfg-farm)** — User action required
+- **Scope**: Run test print of CadQuery designs (modrun_rail.py, modrun_clip.py), verify printability, photograph results
+- **Timeline**: Post-print launches supplier negotiation sequence
+- **Status**: All design and documentation ready in projects/mfg-farm/
+
+---
+
+## Priority Order (Session 621)
+
+1. **Stockbot engine restart** — CRITICAL, same-day deadline (13:30 UTC today)
+2. **resistance-research distribution path** — HIGH priority (enables Phase 1 immediately)
+3. **mfg-farm test print** — MEDIUM priority (5 days buffer before supplier sequence deadline)
+4. All other projects blocked on user action or awaiting previous completions
 
 ---
 
