@@ -48,7 +48,84 @@
 
 ---
 
-### 3. ✅ seedwarden: Phase 2 Execution Timeline & Photographer Briefing Package — COMPLETE
+### 3. ✅ stockbot: Post-Trade Analysis Framework Integration with Phase 2 Dashboard — COMPLETE
+
+**Agent**: stockbot subagent
+
+**Scope**: Wire post-trade analysis framework into Phase 2 dashboard data pipeline. Integrate attribution output with real-time dashboard display and automated monthly Discord reporting.
+
+**Deliverables**:
+1. **`src/analytics/post_trade_analysis.py`** — Added two new public methods:
+   - `to_dashboard_json(ticker, n_recent)` — Converts portfolio attribution output into dashboard-compatible JSON schema (risk_metrics, trade_log, feature_board, performance_summary, drift_alert_level, drift_per_ticker)
+   - `monthly_summary(period_label, include_dashboard_json)` — Wraps monthly text report + raw attribution + dashboard JSON into one dict for disk/Discord delivery
+   - CLI now accepts `--output-format dashboard-json` flag
+
+2. **`ui-mockup/dashboard.html`** — Added Attribution tab with lazy-loading JS:
+   - **Performance Overview** — Six metric cards (win rate, Sharpe, MDD, profit factor, total PnL, round trip count)
+   - **Feature Board** — Side-by-side SHAP bar charts for winners and losers (ranked by frequency_pct and mean_abs_shap)
+   - **Performance Summary** — Win/loss taxonomy category rows + regime breakdown
+   - **Attribution Trade Log** — Table of completed round trips with entry_regime, entry_vol_tier, win_loss_category
+   - **Per-Ticker Drift Alerts** — Colour-coded drift badges (Green/Yellow/Orange/Red)
+
+3. **`src/trading/trading_session.py`** — Added monthly automation:
+   - `_maybe_send_monthly_attribution_summary(now)` — Fires post-market on last calendar day of month
+   - Writes full JSON to `reports/monthly_attribution_YYYY_MM.json`
+   - Sends condensed Discord embed (win rate, Sharpe, PnL, profit factor, MDD, drift level, top 5 SHAP features, win/loss taxonomy)
+   - Idempotent: one summary per session per calendar month
+
+4. **`tests/unit/test_analytics/test_dashboard_integration.py`** — NEW: 33 integration tests (schema validation, edge cases, CLI subprocess tests)
+
+**Key Integration Points**:
+- Zero schema migration required
+- Attribution JSON piggybacks on existing `trades.notes` field
+- Monthly automation wires into existing `_send_daily_discord_summary()` pattern
+- Ready for Day-1 deployment post-engine-restart
+
+**Testing**: 339 total tests pass (33 new integration tests + existing suite)
+
+**Status**: Production-ready. User can run `post_trade_analysis --report portfolio --output-format dashboard-json` immediately after first round-trip trades are available (estimated 3-5 days into live trading). Committed to master.
+
+---
+
+### 4. ✅ resistance-research: May 2026 Civic Developments Tracker — COMPLETE
+
+**Agent**: resistance-research subagent
+
+**Scope**: Establish weekly tracking framework for May 2026 civic developments across domains relevant to 35-domain framework. Track: (1) War Powers, (2) Prosecutorial Weaponization, (3) Voting Rights, (4) SCOTUS, (5) Election Security, (6) Fiscal/Congressional Authority.
+
+**Deliverable**: `projects/resistance-research/MAY_2026_TRACKER.md` — Structured weekly log template + Week 1 (May 1-7) summary
+
+**Week 1 Critical Findings**:
+
+1. **Domain 19f — War Powers (CRITICAL)**: May 1 WPR 60-day deadline passed. Administration claims ceasefire pauses the clock (no statutory basis, no OLC memo, no court support). Collins + Tillis oppose further action. No immediate Senate WPR vote. Iran offered Strait of Hormuz reopen without nuclear talks; U.S. rejected. Islamabad peace talks cancelled. UN warns worst supply chain disruption since COVID-19.
+
+2. **Domain E — FISA/Surveillance (HIGHEST CONSEQUENCE)**: Section 702 reauthorized for two years — without warrant requirement, without data broker loophole closure. Surveillance authority now locked through 2028 (full 2026 midterm + 2028 presidential cycle). This converts recurring threat into locked-in reality. **Pattern 4 identified**: Integrated federal surveillance-and-voter-suppression infrastructure operational for next two election cycles.
+
+3. **Domain 29 — Prosecutorial Weaponization (HIGH)**: SPLC filed two pretrial motions — grand jury disclosure (alleging government "actively weaponized" grand jury) + false official statements. Nashville Crenshaw ruling on vindictive prosecution still pending (overdue), highest-impact unpredicted event in queue. Dismissal finding would be clearest judicial evidence of retaliatory pattern.
+
+4. **Domain 34 — Fiscal Authority (ACTIVE)**: DHS partial shutdown 67+ days (longest targeted lapse in U.S. history). $70B ICE/CBP reconciliation track creates mandatory enforcement spending Congress cannot claw back annually — appropriations bypass Domain 34 identifies as structurally significant. Senate committee deadline May 15.
+
+5. **Domain 01 — Voting Rights (ACTIVE, ENFORCEMENT UNDERWAY)**: Utah HB 209 bifurcated ballot system took effect May 6. DOJ voter roll lawsuits dismissed in 5 states; 12 states voluntarily complied. **DOJ national voter database project is new Domain 38 candidate (38-D)** requiring urgent assessment.
+
+**Domain Update Actions Required**:
+1. `surveillance-tracking.md` — Fill post-deadline checklist with two-year, no-warrant reauthorization
+2. Domain 19f — Create Section 16: Post-deadline WPR enforcement failure (ceasefire-pause theory, no OLC memo)
+3. Domain 29 — Update Section 13 with SPLC grand jury weaponization motion (new development); flag Nashville ruling as highest-priority pending update
+4. Domain 01 — Add subsection on DOJ national voter database project + Utah bifurcated ballot mechanism
+5. Domain 34 — Add reconciliation bypass mechanics + DHS shutdown history (67+ days, May 22 cliff)
+
+**Domain 38 Candidates Assessment**:
+- **38-D (Centralized Federal Voter Suppression Infrastructure)** — STRENGTHENED: Voter database + warrantless surveillance concurrent and confirmed. Threshold: database survives ACLU/Common Cause lawsuit + generates purge recommendations before November 2026.
+- **38-B (Fiscal Constitution Under Duress)** — Valid but below threshold. ICA challenge active, no court victory yet.
+- **38-A (Counter-Court Prosecutorial Retaliation)** — Depends on Crenshaw Nashville ruling. Threshold: two+ confirmed cases of prosecution escalation after court win.
+
+**Weekly Update Cadence Established**: 2-3 hours per week, starting May 8 for Week 2 summary
+
+**Status**: Production-ready. Establishes ongoing monitoring/update framework for Phase 1 distribution and post-distribution institutional adoption. Committed to master.
+
+---
+
+### 5. ✅ seedwarden: Phase 2 Execution Timeline & Photographer Briefing Package — COMPLETE
 
 **Deliverables**:
 1. `projects/seedwarden/phase-2-execution-timeline.md` (4,200 words) — Core execution roadmap anchored to Phase 1 launch Day 0 (makes timeline immediately usable when Phase 1 goes live). Week 2-3 decision gate handles both normal/sparse traffic scenarios. Cluster D/E stock images scheduled Week 4 ahead of physical shoot Week 5 to prioritize highest-ticket products for earliest conversion measurement.

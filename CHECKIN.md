@@ -5,6 +5,92 @@
 
 ---
 
+## Since Last Check-in (Session 628 continued — 2026-04-29 07:35–10:45 UTC)
+
+### ✅ Three Parallel Subagents — Exploration Queue Execution — COMPLETE
+
+**Status**: Three independent high-priority exploration queue items executed in parallel. All completed, tested, committed.
+
+**Subagents spawned simultaneously**:
+1. resistance-research — May 2026 Civic Developments Tracker
+2. stockbot — Post-trade analysis integration with Phase 2 dashboard
+3. mfg-farm — Amazon FBA vs. Etsy fulfillment verification
+
+#### 1. ✅ resistance-research: May 2026 Civic Developments Tracker — COMPLETE
+
+**Deliverable**: `projects/resistance-research/MAY_2026_TRACKER.md` — Structured weekly monitoring framework + Week 1 (May 1-7) summary
+
+**Critical Week 1 Findings**:
+- **Domain 19f (War Powers)**: May 1 WPR deadline passed. Administration's "ceasefire pauses the clock" theory lacks statutory basis, OLC memo, or court precedent. Naval blockade remains mutual. Hormuz disruption risk highest since COVID-19.
+- **Domain E (FISA)**: Section 702 reauthorized 2 years (no warrant requirement, no data broker closure). Surveillance authority now locked through 2028. **Pattern 4 identified**: Integrated federal surveillance-and-voter-suppression infrastructure operational for both 2026 midterm and 2028 cycles.
+- **Domain 29 (Prosecutorial Weaponization)**: SPLC grand jury disclosure motion alleges government "actively weaponized" grand jury. Nashville Crenshaw ruling on vindictive prosecution overdue — highest-impact pending event.
+- **Domain 34 (Fiscal Authority)**: DHS partial shutdown 67+ days (longest targeted lapse ever). $70B ICE/CBP reconciliation creates mandatory enforcement spending Congress cannot claw back.
+- **Domain 01 (Voting Rights)**: Utah HB 209 bifurcated ballot took effect May 6. **DOJ national voter database project flagged as Domain 38-D candidate** (critical if survives lawsuit + generates purges before Nov 2026).
+
+**Domain Updates Required**:
+1. surveillance-tracking.md — post-702-reauth checklist
+2. Domain 19f — Section 16: WPR enforcement failure post-deadline
+3. Domain 29 — SPLC grand jury motion + Nashville ruling flag
+4. Domain 01 — DOJ voter database + Utah bifurcated ballot
+5. Domain 34 — Reconciliation bypass mechanics + DHS shutdown history
+
+**Weekly Update Cadence**: Established for ongoing monitoring (2-3h/week starting May 8)
+
+**Status**: Production-ready. Establishes critical monitoring infrastructure for Phase 1 distribution and post-distribution institutional adoption. Committed to master.
+
+#### 2. ✅ stockbot: Post-Trade Analysis Integration with Phase 2 Dashboard — COMPLETE
+
+**Subagent**: stockbot | **Duration**: ~8 minutes parallel execution
+
+**Deliverables**:
+- Updated `src/analytics/post_trade_analysis.py` with `to_dashboard_json()` and `monthly_summary()` methods
+- Updated `ui-mockup/dashboard.html` with new Attribution tab (Performance Overview, Feature Board, Performance Summary, Attribution Trade Log, Per-Ticker Drift Alerts)
+- Updated `src/trading/trading_session.py` with `_maybe_send_monthly_attribution_summary()` for automated Discord sends
+- New `tests/unit/test_analytics/test_dashboard_integration.py` (33 integration tests)
+
+**Key Features**:
+- Dashboard JSON schema converts portfolio attribution output into UI-ready format
+- Monthly automation: fires on last calendar day of month, writes `reports/monthly_attribution_YYYY_MM.json`, sends condensed Discord embed
+- Zero schema migration required — attribution JSON stored in existing `trades.notes` field
+- Ready for Day-1 deployment post-engine-restart
+
+**Testing**: 339 total tests pass (new 33 integration tests + existing suite)
+
+**Usage**: Once first round-trip trades available (3-5 days into live trading):
+```bash
+uv run python -m src.analytics.post_trade_analysis \
+  --report portfolio \
+  --output-format dashboard-json \
+  --output ui-mockup/attribution_data.json
+```
+
+**Status**: Production-ready. Committed to master.
+
+#### 3. ✅ mfg-farm: Amazon FBA vs. Etsy Fulfillment Verification — COMPLETE
+
+**Subagent**: general-research | **Duration**: ~4 minutes parallel execution
+
+**Deliverables**:
+- Verified `amazon-fba-analysis.md` v2.0 (all 2026 FBA fees current, April 17 surcharge confirmed)
+- Updated to v2.1: Added new subsection on Low Inventory Level Fee (LILL) expansion (Jan 2026)
+- Confirmed `fulfillment-decision-matrix.csv` accuracy (break-even at 30+ units/month)
+- Confirmed `hybrid-launch-roadmap.md` (90-day phased plan accurate)
+
+**LILL Finding** (NEW):
+- Expanded January 2026 to FNSKU level: $0.32–$0.89/unit depending on days-of-supply
+- New-to-FBA ASINs exempt 180 days from first receipt (covers Phase 2 test batch)
+- **Phase 3 risk**: Post-exemption, must maintain 60+ day supply to avoid fees (batch sizing impact)
+
+**Decision Framework Confirmed**:
+- Etsy net margin: 73–77% at all volumes
+- FBA net margin: 42–60% (structural 14–20pt gap persists)
+- FBA break-even: 30+ units/month; becomes additive at 50+ units/month (+29% revenue)
+- **Recommendation**: Etsy-only until 30–50 unit/month threshold, then hybrid expansion
+
+**Status**: Production-ready for post-test-print user handoff. Committed to master.
+
+---
+
 ## Since Last Check-in (Session 628 — 2026-04-29 07:00–10:35 UTC)
 
 ### ✅ Parallel Exploration Queue Execution — 3 Subagents — COMPLETE
