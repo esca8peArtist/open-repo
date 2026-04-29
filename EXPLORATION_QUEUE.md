@@ -150,6 +150,51 @@
 
 ---
 
+## Active Exploration Items (Session 616+)
+
+### ✅ Item 16: seedwarden Track B - Phase 2 Photography & Social Media Mockup Strategy (Session 616)
+**Status**: QUEUED — Ready to execute immediately (independent of Phase 1 blockers)
+**Scope**: Design lifestyle photography strategy and mockup production for Phase 2 products; align with social media organic growth (Instagram/Pinterest/TikTok)
+**Deliverables**: 
+- Photography reference guide (mood board, styling, 10-15 reference examples)
+- Mockup production plan (tablet, phone, lifestyle variants for each Phase 2 product)
+- Social media content calendar template (60-day roadmap for Phase 2 launch)
+- Pinterest/Instagram pin templates optimized for seedwarden aesthetic
+**Owner**: seedwarden agent
+**Timeline**: 2-3 hours
+**Outcome**: Enables Track B independent execution once Phase 1 tag corrections approved
+
+---
+
+### ✅ Item 17: resistance-research Domain 39 Preliminary Scoping (Session 616)
+**Status**: QUEUED — Ready to execute immediately (post-Domain-38 expansion planning)
+**Scope**: Identify highest-impact Domain 39 candidate from gap analysis; research roadmap for post-Domain-38 work
+**Deliverables**:
+- Gap analysis of existing 36-domain framework (identify missing angles)
+- 4-5 Domain 39 candidate topics with rationale and research roadmap
+- Priority ranking and feasibility assessment
+- Format consistency check (matches existing domain structure)
+**Owner**: resistance-research agent
+**Timeline**: 1-2 hours
+**Outcome**: Enables continuous framework expansion post-Path A execution; supports long-horizon "unlimited domains" vision
+
+---
+
+### ✅ Item 18: mfg-farm Laser/Resin/Injection Economics Deep-Dive (Session 616)
+**Status**: QUEUED — Ready to execute immediately (independent of test print status)
+**Scope**: Research adjacent manufacturing technologies for Phase 3-4 product candidates; build detailed ROI models
+**Deliverables**:
+- Laser engraving economics: equipment costs, per-unit variable costs, setup time, learning curve, competitive benchmarking
+- Resin printing economics: equipment, materials, post-processing labor, failure rates, market demand
+- Injection molding options: contract manufacturers, tooling costs, minimum order quantities, unit economics
+- Technology comparison matrix (investment required, breakeven, annual revenue ceiling per technology)
+- 12-month rollout plan with capital allocation
+**Owner**: mfg-farm agent
+**Timeline**: 2-3 hours
+**Outcome**: Enables post-test-print supplier negotiation to include adjacent technology recommendations; supports Phase 3 roadmap execution
+
+---
+
 ## Research Areas for Future Queuing
 
 If the queue falls below 3 items (excluding blocked items), consider adding:
