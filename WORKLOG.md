@@ -4,6 +4,59 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 12:57 UTC — Orchestrator Session 641 — Market Day Start: Options Research + Monitoring Setup
+
+**Status**: ✅ Engine ready for market open (13:30 UTC). Options research complete. Market monitoring active.
+
+**Session 641 Work** (12:50–12:57 UTC):
+
+1. ✅ **Orientation & block status** (12:50–12:51 UTC):
+   - ORCHESTRATOR_STATE read: All active blocks are user-action dependent (mfg-farm test print, resistance-research distribution decision, seedwarden tag corrections)
+   - BLOCKED.md: Only 1 active block (mfg-farm test print); all stockbot blocks resolved as of Session 622 (03:31 UTC engine restart)
+   - INBOX.md: Empty — no new user items
+   - Stockbot status: Engine running (PID 1241288), 8% memory, will wake at 13:15 UTC (17 min before market open)
+
+2. ✅ **Options strategy research** (12:50–12:57 UTC):
+   - Spawned general-research agent to explore options trading feasibility for post-Gate-1 expansion
+   - **Result**: `options-strategy-research.md` (production-ready, 1,600+ words, decision tree)
+   - **Key finding**: Options viable as complement to equities post-Gate-1; NOT pre-Gate-1
+   - **Alpaca confirmation**: Paper accounts have Level 3 options enabled by default; all modeling infrastructure exists
+   - **Engineering estimate**: 24–35 hours for covered-call implementation (Gate 2)
+   - **File**: `/home/awank/dev/SuperClaude_Framework/projects/stockbot/options-strategy-research.md` (committed)
+
+3. ✅ **Market monitoring setup** (12:51–12:57 UTC):
+   - Monitor task deployed: Watching `tail -f logs/trading_*.log` for market-open + signal events (1-hour window, 13:15 UTC wake through ~14:15 UTC first hour)
+   - Stockbot process verified: still running, memory stable
+   - All 11 equity sessions initialized and market-aware (will wake 15 min before market open)
+   - **Expected**: ~38 minutes until sessions wake; ~43 minutes until market open
+
+**Available parallel work during market hours**:
+- **seedwarden Track B**: Phase 2 work complete; awaiting user decisions on Phase 2 photography + Phase 3
+- **Exploration Queue**: Item 23 (options) COMPLETE; Items 22, 24, 25 available if needed
+
+**Next checkpoint**: 13:15 UTC (sessions wake), 13:30 UTC (market open). Monitor will emit events as trading resumes.
+
+---
+
+## 2026-04-29 14:00 UTC — Stockbot Research — Options Strategy Feasibility Research (Session 641)
+
+**File**: `projects/stockbot/options-strategy-research.md`
+
+**Lead finding**: Options trading is technically feasible in current architecture. Alpaca paper accounts have Level 3 options enabled by default (confirmed from docs). The codebase already contains all required modeling infrastructure (Black-Scholes, OptionsBacktestEngine, OptionsExecutor, OptionsPositionTracker). The financial case for pre-Gate-1 options is weak; post-Gate-1 covered calls are the recommended entry point.
+
+**New content vs. prior Session 633 design**:
+- Confirmed Alpaca paper options API endpoints and limitations (3:15 PM ET cutoff, day/gtc TIF only, no WebSocket assignment events)
+- Quantified IV crush: NVDA ~48% average, META ~40%, AAPL ~25-35% from 2024-2025 data
+- Added verified bid-ask spread table by ticker with round-trip cost percentages
+- Resolved `/v2/assets?asset_class=option` question: correct endpoint is `?attributes=options_enabled`
+- Added real-account $100-$500 viability analysis (verdict: paper trading only; spreads only if $2k+)
+- Updated decision tree with timeline estimates through August 2026
+- Added 10-item ordered engineering prerequisite list for Gate 2
+
+**Decision tree answer**: Options as complement to equity positions (post-Gate-1), not standalone pre-Gate-1. Gate 2 activation: May 12-31 if equity Sharpe ≥ 0.5.
+
+---
+
 ## 2026-04-29 12:15 UTC — Orchestrator Session 640 — Market Day Monitoring Setup + Status Verification
 
 **Status**: ✅ ONLINE. Engine verified running and healthy. Market monitoring set up for critical trading day. Engine PID 1241288, all 11 sessions initialized and market-aware sleeping until 13:15 UTC wake.
