@@ -24,10 +24,44 @@
 
 **Blockers Status**:
 - **resistance-research**: Awaiting user distribution path decision (A / A+37 / B) → Phase 1 execution ready to execute same day
-- **stockbot**: Engine not running (user action required before 2026-04-28 09:30 ET — MISSED, now requires restart for 2026-04-29+ trading)
+- **stockbot**: Engine not currently running; needs restart for 2026-04-29+ trading. **Note**: Archived logs confirm engine DID run on 2026-04-28 (17:21-17:22 UTC), generated signals for GOOGL/UNH/MA/NEE and issued BUY orders. Process stopped after market close; likely working as designed. Root cause of trades not executing may be: (a) Alpaca account permissions/buying power, (b) paper trading vs. live mode misconfiguration, or (c) order submission failures post-signal. Recommend user restart and monitor live logs 2026-04-29 13:30 UTC market open.
 - **mfg-farm**: Test print required (user action, manual)
 - **seedwarden Track A**: Tag corrections + Etsy account (user action)
 - All other projects: Awaiting user approval/action or blocked on external dependencies
+
+---
+
+## Items Needing User Input
+
+1. **resistance-research distribution path decision**: Choose Path A (immediate 28-domain distribution) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (continue optional updates before distribution). Once chosen, Phase 1 execution launches immediately with pre-prepared materials.
+
+2. **stockbot engine restart**: Verify Alpaca account has sufficient buying power for paper trading. Restart live trading engine for 2026-04-29 13:30 UTC market open: `cd projects/stockbot && nohup uv run python scripts/run_live_trading.py --strategy stacker --tickers AAPL MSFT GOOGL NVDA AMZN META JPM VZ KO UNH MA NEE V BMY NVDA GOOGL &` Monitor logs for trade execution.
+
+3. **mfg-farm test print**: Run test print of ModRun cable management designs; confirm printability and tolerance feedback.
+
+4. **seedwarden Phase 1 upload**: Provide 3 tag corrections and verify Etsy account setup; Phase 1 (21 products) ready to list immediately upon completion.
+
+5. **cybersecurity-hardening Tier 1 distribution**: Review and approve Tier 1 messaging templates; outreach can begin immediately upon approval.
+
+---
+
+## Suggested Next Session Priorities
+
+1. **Immediate** (if decisions made):
+   - If user decides on resistance-research path → execute Phase 1 distribution (Tier 1 outreach begins immediately)
+   - If user restarts stockbot engine → monitor Day 1 trading 2026-04-29 13:30 UTC
+
+2. **Short-term** (1–2 weeks):
+   - mfg-farm test print confirmation → supplier negotiation (post-print work ready)
+   - seedwarden Phase 1 upload confirmation → launch Week 1 tracking
+   - cybersecurity-hardening Tier 1 approval → outreach execution
+
+3. **Exploration Queue** (when project blockers resolve):
+   - Item 3: stockbot Post-Gate-2 Operations (post Day 1 trading success)
+   - Item 4: mfg-farm Post-Test-Print Supplier Negotiation (post test confirmation)
+   - Item 5: open-repo Phase 5 Architecture Deep-Dive (post PR #1 merge)
+   - Item 6: resistance-research Tier 1 Distribution Execution (post path decision)
+   - Item 11: cybersecurity-hardening Tier 2 Distribution Design (post Tier 1 approval)
 
 ---
 
