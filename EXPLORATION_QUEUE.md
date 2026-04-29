@@ -187,6 +187,51 @@
 
 ---
 
+### Item 26: stockbot Momentum Trader Pre-Architecture Research (Conditional — Post-Gate-1-Validation)
+**Status**: QUEUED — Ready to execute after Gate 1 paper trading threshold met
+**Trigger**: Paper trading validates 30+ trades/month (Gate 1 pass) → momentum strategy research begins
+**Scope**: Preliminary architecture for complementary momentum trading strategy (pairs trading, trend-following, mean reversion detection)
+**Deliverables**: 
+- `momentum-strategy-research.md` (4,000 words) — Pairs trading mechanics (correlation/covariance signals), trend-following (volatility expansion detection), mean reversion (Bollinger band triggers)
+- `momentum-signal-integration.md` (2,500 words) — How momentum signals integrate with ensemble stack signals (ensemble = fundamental value, momentum = timing refinement)
+- `backtest-framework-momentum.md` (2,000 words) — Test harness for evaluating momentum vs. ensemble-only across market regimes (bull/bear/choppy), walk-forward validation approach
+- `gate-2-pre-requisites-momentum.md` (1,500 words) — Feature engineering for momentum (volatility scalar, correlation matrix, trend detection), implementation roadmap for post-Gate-1
+**Owner**: stockbot agent (autonomous execution, estimated 3-4 hours research)
+**Prerequisites**: Gate 1 validation (30+ trades/month demonstrated over 30-day rolling window)
+**Key areas**: Pairs correlation matrix, trend-following entry/exit, mean reversion confirmation, multi-timeframe signal fusion
+
+---
+
+### Item 27: cybersecurity-hardening Regional Adaptation Research (Conditional — Post-Tier-1-Rollout)
+**Status**: QUEUED — Ready to execute after Tier 1 rollout begins and initial contact categories emerge
+**Trigger**: Tier 1 distribution live for 1+ week, initial sector responses tallied
+**Scope**: Regional/jurisdictional adaptation for cybersecurity recommendations (EU GDPR implications, Canada Digital Charter alignment, Five Eyes cooperation issues, non-aligned state hostile-ops variations)
+**Deliverables**: 
+- `regional-threat-model-analysis.md` (3,500 words) — Threat model differences: US government mass surveillance vs. EU commercial data broker risk vs. authoritarian state actor targeting (China/Russia) vs. criminal-only contexts
+- `regional-operational-security-variants.md` (3,000 words) — OpSec playbook variants for 5 jurisdictions: US (domestic + asylum seekers), EU (GDPR safe harbor shifting), Canada (Five Eyes partner), refugee camp contexts, authoritarian exile populations
+- `regulatory-compliance-checklist.md` (2,000 words) — Which recommendations conflict with local law (China device fingerprinting ban, EU encryption backdoor proposals), which need amplification per jurisdiction (Canada digital sovereignty, Brazil data localization)
+- `international-distribution-roadmap.md` (2,500 words) — Translation + localization roadmap; highest-impact secondary languages (Spanish, Arabic, Mandarin, Farsi); institutional partners per region
+**Owner**: cybersecurity-hardening agent (autonomous execution, estimated 4-5 hours research)
+**Prerequisites**: Tier 1 initial responses show clear sectoral/regional patterns; user approves Tier 2 expansion scope
+**Key areas**: Threat model localization, jurisdictional regulatory compliance, international institutional leverage points
+
+---
+
+### Item 28: resistance-research Tracker Modernization & Automation Research (Conditional — Post-Phase-1-Launch)
+**Status**: QUEUED — Ready to execute 2-3 weeks after Phase 1 distribution launch
+**Trigger**: Phase 1 distribution live for 2+ weeks, confirming tracker utility signals
+**Scope**: Modernize and partially automate four trackers (first-amendment, environmental-rollbacks, police-brutality, prosecutorial-weaponization); design data source expansion, visualization, and optional automation pipeline
+**Deliverables**: 
+- `tracker-data-source-audit.md` (3,500 words) — Each of 4 trackers: audit existing sources (completeness, freshness, bias), identify 5+ new sources (public DBs, FOIA feeds, API data, news APIs, judicial records), cost/legal feasibility analysis
+- `tracker-automation-design.md` (3,000 words) — Which tracker updates can be automated (legal/ethical constraints): news API ingestion for first-amendment + prosecutorial; PACER API for DOJ case clustering; police department press release parsing; environmental agency regulatory feed ingestion
+- `tracker-visualization-spec.md` (2,500 words) — Dashboard mockups for each tracker (maps, timelines, charts); data formats for embedding in proposal or institutional briefings; accessibility considerations
+- `tracker-maintenance-playbook.md` (2,000 words) — Weekly/daily update cadence per tracker; role definitions (user manual review vs. automated ingestion); escalation for validation/accuracy checks; community contribution process
+**Owner**: resistance-research agent (autonomous execution, estimated 4-5 hours research)
+**Prerequisites**: Phase 1 distribution live for 2+ weeks; user confirms tracker visibility is valuable; optional: user approves automation scope
+**Key areas**: FOIA request automation, API data pipeline design, falsifiability standards for tracker entries, institutional briefing formats
+
+---
+
 ## Priority for Next Session
 
 **Highest Priority**: Item 4 (mfg-farm supplier negotiation) — blocked on user test print, ready to execute immediately upon signal
@@ -194,6 +239,9 @@
 **Third Priority**: Item 5 (open-repo Phase 5 Architecture) — blocked on PR #1 merge, ready to execute immediately upon signal
 **Fourth Priority**: Item 11 (seedwarden Phase 3 strategy) — queued for Phase 1 launch trigger
 **Fifth Priority**: Item 12 (stockbot HMM validation) — queued for Gate 1 checkpoint trigger
+**Sixth Priority**: Item 26 (stockbot momentum trader) — queued for Gate 1 trigger
+**Seventh Priority**: Item 27 (cybersecurity regional adaptation) — queued for Tier 1 rollout trigger
+**Eighth Priority**: Item 28 (resistance-research tracker automation) — queued for Phase 1 launch trigger
 
 ---
 
