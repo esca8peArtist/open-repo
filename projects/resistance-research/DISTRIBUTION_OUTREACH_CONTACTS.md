@@ -168,6 +168,25 @@ Note: Heather Gerken (now Ford Foundation President) is listed in Section 1A abo
 
 ---
 
+## Pillar 6: Faith Coalitions and Faith Leaders
+
+### Why faith coalitions
+
+Faith-based organizations represent the largest organized membership base in the United States (150+ million faith adherents) and have existing infrastructure for internal education, organizing, and political mobilization. Faith leaders have unique moral authority and credibility with constituencies that might not initially engage with academic or policy documents. The proposal's emphasis on institutional integrity, social justice, and democratic participation aligns with faith-based social justice frameworks. Key domains for faith outreach: Domain 3 (civic participation), Domain 14 (criminal justice reform), Domain 18 (social safety net), Domain 22 (reparations and racial justice).
+
+| # | Name | Title | Organization | Contact | Value Proposition | Source |
+|---|------|-------|-------------|---------|-------------------|--------|
+| 1 | Reverend William Barber II | Co-Chair | Poor People's Campaign | Contact via poorpeoplescampaign.org; 919.956.5891 | Domain 3 (civic participation — Poor People's Campaign directly organizes grassroots mobilization), Domain 18 (social safety net poverty focus), Domain 22 (racial justice), full proposal for moral authority angle | [Poor People's Campaign](https://www.poorpeoplescampaign.org/) |
+| 2 | Faith in Action (National Leadership) | Executive Director | Faith in Action | Contact via faithinaction.org; 202.216.1818 | Domain 3 (civic infrastructure — Faith in Action runs voter registration + civic engagement through faith networks), Domain 14 (criminal justice), Domain 18 (housing and social safety net) | [Faith in Action](https://www.faithinaction.org/) |
+| 3 | Jennifer Butler | Executive Director | Faith in Public Life | Contact via faithinpubliclife.org | Domain 3 (civic participation through faith), Domain 7 (civil rights), Domain 22 (racial justice faith angle), Domain 14 (criminal justice reform with faith framing) | [Faith in Public Life](https://www.faithinpubliclife.org/contact/) |
+| 4 | Rev. Paul Brandeis Raushenbush | Director | Religion and Public Life | Princeton University / Religion and Public Life Program | Contact via princeton.edu | Domain 3 (civic infrastructure — academic leadership in faith and democracy research), Domain 2 (institutional integrity through faith framework), theology of democracy alignment | [Princeton Religion and Public Life](https://religiousstudies.princeton.edu/) |
+| 5 | Christian Democracy Alliance | Leadership | Christian Democracy Alliance | Contact via christiandemocracyalliance.org | Domain 2 (democracy as theological value), Domain 3 (civic participation), full proposal — organization explicitly dedicated to Christian democratic theory | [Christian Democracy Alliance](https://www.christiandemocracyalliance.org/) |
+| 6 | Presiding Bishop Michael Curry | Office | The Episcopal Church | Contact via episcopalchurch.org; 212.716-6000 | Domain 22 (racial justice — Presiding Bishop's "Love the Neighborhood" agenda), Domain 18 (social safety net), full proposal for institutional leadership voice | [The Episcopal Church](https://www.episcopalchurch.org/) |
+| 7 | Interfaith Worker Justice | Director | Interfaith Worker Justice | Contact via iwj.org; 202.547.8010 | Domain 17 (labor justice), Domain 14 (immigrant rights and criminal justice), Domain 22 (racial justice in labor), Domain 3 (civic organizing through faith) | [Interfaith Worker Justice](https://iwj.org/) |
+| 8 | Jewish Federation of North America | Director, Policy and Advocacy | Jewish Federation | Contact via jewishfederations.org | Domain 22 (Jewish community advocacy for racial justice), Domain 7 (civil rights), Domain 16 (immigrant protection — Jewish theology of stranger), Domain 18 (social safety net) | [Jewish Federation of North America](https://www.jewishfederations.org/) |
+
+---
+
 ## Contact Management Notes
 
 **Priority order for initial outreach wave:**
