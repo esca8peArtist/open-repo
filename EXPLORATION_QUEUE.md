@@ -26,9 +26,9 @@
 
 ---
 
-### Item 3: stockbot Post-Gate-2 Operations Analysis (Scheduled for 20:30 UTC 2026-04-28, post-market)
-**Status**: QUEUED — Ready to execute after market close (conditional on Day 1 successful trading)
-**Trigger**: Market open execution complete + Day 1 trading validation pass (20:30 UTC)
+### Item 3: stockbot Post-Gate-2 Operations Analysis (Rescheduled for 20:30 UTC 2026-04-29, post-market)
+**Status**: QUEUED — Ready to execute after market close (conditional on Day 1 trading validation)
+**Trigger**: Market close (20:00 UTC) + Day 1 trading session validation pass → initiate analysis at 20:30 UTC April 29
 **Scope**: Institutional-grade scaling architecture, multi-asset class integration, regulatory compliance framework, risk management design
 **Deliverables**: `stockbot-post-gate-2-roadmap.md` (6,000–7,000 words)
 **Key areas**:

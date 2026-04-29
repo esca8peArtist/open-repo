@@ -5,18 +5,22 @@
 
 ---
 
-## Since Last Check-in (Session 631 — 2026-04-29 07:16–07:25 UTC)
+## Since Last Check-in (Session 631 — 2026-04-29 07:16–09:00 UTC)
 
-### ✅ Exploration Queue Replenishment — IN PROGRESS
+### ✅ Exploration Queue Replenishment & Item 21 Execution — COMPLETE
 
 **Action Taken**: Added 3 new research queue items to maintain continuity while current items await user input or time triggers.
 
 **New Items Added**:
 1. **Item 19** (workout Phase 2) — Sports science & periodization research (post-Phase-1-approval)
 2. **Item 20** (seedwarden Phase 3) — Kickstarter campaign & hardware scaling (post-Phase-1-launch)
-3. **Item 21** (mfg-farm Phase 3) — Product validation & market sizing research (ACTIVE — executing now)
+3. **Item 21** (mfg-farm Phase 3) — Product validation & market sizing research — COMPLETED ✅
 
-**Status**: Item 21 is immediately executable (no blockers). General-research agent assigned for autonomous execution.
+**Item 21 Completion Summary**:
+- **Delivered**: 4 production-ready research documents (market validation, pricing strategy, competitive SWOT, updated Item 9)
+- **Key Finding**: Homelab accessories elevated from #5 to #1 Wave 1 priority
+- **Market Validation**: $10K–20K/month Year 1 SOM, 52–58% net margin at 1,500 units/month
+- **Status**: Production-ready for Phase 3 Wave 1 launch upon test print confirmation
 
 ### Stockbot Market Session — LIVE
 
@@ -49,12 +53,40 @@
 2. **mfg-farm test print status** — Confirmation needed for CadQuery designs; unblocks Item 4 (supplier negotiation).
 3. **stockbot post-Gate-2 analysis** — Scheduled for tonight 20:30 UTC post-market close. Will provide Phase 2 roadmap if Gate 2 validation passes.
 
-### Suggested Priorities (Next Session)
+### Session 631 Timeline
 
-1. **If Item 3 (stockbot) completed successfully** → Integrate findings into PROJECTS.md; begin Phase 2 scaling architecture planning
+| Time (UTC) | Event | Status |
+|------------|-------|--------|
+| 07:16 | Session starts — Orientation complete | ✅ |
+| 07:25 | Added Items 19-21 to queue | ✅ |
+| 08:54 | Item 21 (mfg-farm market validation) completed | ✅ |
+| 09:00 | Session summary prepared; ready for market monitoring | ✅ |
+| 13:30 | Market open (4.5 hours away) | ⏳ Upcoming |
+| 20:00 | Market close | ⏳ Upcoming |
+| 20:30 | Item 3 (stockbot post-market analysis) scheduled | ⏳ Upcoming |
+
+### Session 631 Summary
+
+**Completed**:
+- ✅ Orientation + all project status assessed
+- ✅ Queue replenishment (Items 19-21 added)
+- ✅ Item 21 research executed (mfg-farm Phase 3 market validation) — 4 deliverables
+- ✅ Item 3 rescheduled for tonight post-market (20:30 UTC)
+
+**Ready for Trigger**:
+- Item 3 (stockbot) — 20:30 UTC tonight post-market
+- Item 4 (mfg-farm) — Awaits test print confirmation
+- Item 5 (open-repo) — Awaits PR #1 merge
+- Item 6 (resistance-research) — Awaits user distribution path decision
+- Item 11 (cybersecurity-hardening) — Awaits Tier 1 approval
+
+**Suggested Priorities (Next Session / Tonight Post-Market)**
+
+1. **Tonight 20:30 UTC**: Execute Item 3 (stockbot post-Gate-2 analysis) if market session successful
 2. **If mfg-farm test print confirmed** → Execute Item 4 (supplier negotiation) immediately
 3. **If resistance-research path selected** → Execute Item 6 (Tier 1 distribution) immediately
-4. **Default if all blocked** → Execute Item 21 (mfg-farm market validation) results; review recommendations
+4. **If PR #1 merged** → Execute Item 5 (open-repo Phase 5) immediately
+5. **Item 21 results ready** → Review mfg-farm Phase 3 findings; incorporate into launch planning
 
 ---
 
