@@ -34,6 +34,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
 
+### stockbot — Engine status uncertain after reported restart
+**Date blocked**: 2026-04-29
+**Context**: BLOCKED.md Resolved Archive shows engine was restarted at 2026-04-29 00:16:41 UTC with all 11 tickers loaded. However, Session 614 orchestrator verification discovered: (1) Today's log file `/live_trading_20260429.log` is 0 bytes with no entries, (2) Yesterday's log `/live_trading_20260428.log` contains only unit test output, not production engine logs, (3) No production trades recorded on 2026-04-28 during market hours (13:30–20:00 UTC) despite 17 open BUY positions from 2026-04-27, (4) Last actual trade in database: DIS BUY at 13:31:28 UTC on 2026-04-27, (5) No SELL signals have fired yet (0 completed round trips). Engine may not be running, or running but logging to wrong location, or crashed after startup.
+**What I need**: Verify engine process is alive (`ps aux | grep run_live_trading`), check actual log file location, confirm Alpaca connection is active, restart engine if needed with proper log redirection.
+**Verify with**: `ps aux | grep run_live_trading | grep -v grep` — should show running process; if none, engine is not running and needs restart.
+**Resolution**:
+
 ---
 
 ## Resolved Archive
