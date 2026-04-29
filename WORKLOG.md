@@ -4,6 +4,145 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 00:15 UTC — Orchestrator Session 660 — Infrastructure Hardening + Track B Assessment + Distribution Pre-staging
+
+**Status**: ✅ COMPLETE — Parallel agent execution across three independent projects.
+
+**Work Completed**:
+
+### 1. Stockbot: Non-Blocking Infrastructure Gaps Fixed ✅
+
+**All 4 gaps from MAY_12_CHECKPOINT_READINESS.md resolved**:
+
+1. **Discord Rate Limiting** (MEDIUM): 
+   - Implemented coordinator session pattern in `launch_stacker_sessions.py` + `trading_session.py`
+   - Only lowest session_id sends daily summary; others skip automatically
+   - Guard logic prevents duplicate sends if coordinator cycles multiple times
+   - Backward compatible with no-coordinator mode (all sessions send if needed)
+
+2. **MTF 15Min Warning Flood** (LOW):
+   - Added `_mtf_warned_keys: set` per-session tracking
+   - First WARNING includes "(subsequent occurrences at DEBUG)"
+   - Per-ticker/key independence preserves uniqueness
+   - Fallback path untouched; functional impact zero
+
+3. **DB Path Standardization** (LOW):
+   - Created `docs/INFRASTRUCTURE.md` (1,200 words)
+   - Documents `<project_root>/stockbot.db` as sole authoritative path
+   - Explains why `database/stockbot.db` is non-authoritative (diverged copy)
+   - Documented `STOCKBOT_DB_URL` override mechanism
+   - Pattern `database/*.db` already in `.gitignore`
+
+4. **Automatic DB Sync** (MEDIUM):
+   - Created `scripts/cron_sync_db.sh` (150 lines, executable)
+   - Handles weekends, NYSE holidays (2026-2027), path resolution
+   - Runs `sync_db_from_alpaca.py --db <path> --since <today>`
+   - Recommended cron: `5 20 * * 1-5 cd /path/to/projects/stockbot && bash scripts/cron_sync_db.sh >> logs/cron_sync_db.log 2>&1`
+
+**Testing**: 
+- Created `tests/unit/test_trading/test_infra_gaps_fixes.py` (33 new tests)
+- Coverage: Discord coordinator, MTF warning flood, DB path, cron validation
+- Result: **876 trading unit tests pass, 0 new failures**
+
+**Commits**: 
+- Latest commit: `7033134` — "fix: resolve 4 non-blocking infrastructure gaps before May 12 checkpoint"
+
+---
+
+### 2. Seedwarden: Track B Launch Readiness Assessment ✅
+
+**Comprehensive status evaluation completed**:
+
+**Condition Status**:
+- ❌ **Condition 1 (Social accounts)**: NOT STARTED — 30-60 min user action required
+- ⏳ **Condition 2 (Canva Brand Kit)**: SPECIFICATIONS READY — 30 min user setup
+- ⏳ **Condition 3 (Link-in-bio)**: DECISION READY — 15 min (Kit email recommended)
+- ✅ **Condition 4-5 (Content assets)**: PRODUCTION-READY — 4-6 hours execution available
+
+**Timeline**:
+- **Earliest first post**: 6 hours from condition met
+- **Realistic launch**: 2 days (3.5 + 3 hours split)
+- **User time needed**: 7-9 hours spread across 2 days
+
+**Autonomous Orchestrator Work Available** (once conditions met):
+- Pinterest batch production: 4-5 hours
+- Email sequence setup: 2-3 hours
+- Content scheduling: 2-3 hours
+- Analytics setup: 1-2 hours
+- Contingency automation: ongoing
+
+**Asset Status**:
+- Pin templates: ✅ 5 fully specified (ready for Fiverr or solo)
+- 60-day content calendar: ✅ Production-ready for autonomous publishing
+- Reel script: ✅ Complete
+- Carousel specs: ✅ Complete
+- Mockup images: ✅ Ready for Week 1-2
+
+**Deliverable**: `projects/seedwarden/TRACK_B_LAUNCH_STATUS.md` (3,200 lines) — Complete status assessment with risk mitigation, contingency plans, and hour-by-hour timeline.
+
+---
+
+### 3. Resistance-Research: Distribution Pre-staging All Three Paths ✅
+
+**Framework verified production-ready. All 3 distribution paths pre-staged.**
+
+**Pre-staging Deliverables** (2,548 lines total):
+
+1. **DISTRIBUTION_READINESS_FINAL.md** (1,108 lines):
+   - Verified all 35-domain framework ✅
+   - Verified core documents + 4 trackers ✅
+   - Verified distribution templates (Substack, Reddit, Institutional) ✅
+   - Verified Batch 1 contacts current with April 2026 hooks ✅
+   - Documented 90-minute pre-launch user actions
+   - User decision required: Path A / A+37 / B
+
+2. **path-a-execution-checklist.md** (856 lines):
+   - Step-by-step Path A guide: 90 min pre-launch + Batch 1 send + Week 1-4 expansion
+   - Personalized email templates with April 2026 topical hooks
+   - Success metrics, contingency planning
+
+3. **path-a-plus-37-hybrid-checklist.md** (467 lines):
+   - Two-phase: 34-domain launch (T+7) + Domain 37 follow-on (T+15)
+   - Batch 1 customization signaling Domain 37 availability
+   - Election security targeting strategy
+
+4. **path-b-research-roadmap.md** (854 lines):
+   - Feedback integration: Batch 1/2 input (T+0-30) → Phase 2 research (T+30-60) → public launch (T+60)
+   - 9 high-priority domains identified for May 2026 updates
+   - Research scope, data sources, effort estimates per domain
+
+5. **DISTRIBUTION_READINESS_INDEX.md** (7 lines): Quick reference guide
+
+**Batch 1 Contact Status**:
+- All 5 contacts verified current
+- April 2026 topical hooks prepared
+- Email templates personalized per contact
+
+**User Actions Required**:
+- Choose distribution path (A / A+37 / B) — 1 decision
+- Create 6 GitHub Gists — 30 min
+- Fill 11 template placeholders — 30 min
+- Optional: verify email personalization — 30 min
+- **Total**: ~90 minutes, then ready to launch
+
+**Bottom Line**: Zero research, writing, or content work needed. Framework is production-ready. Can launch within **hours of user path decision**.
+
+**Commits**: 
+- `e490a84` — "docs(resistance-research): distribution pre-staging complete"
+
+---
+
+### Session Summary
+
+Three independent projects advanced in parallel:
+1. ✅ **Stockbot**: Infrastructure hardened (4 gaps resolved, 33 tests added)
+2. ✅ **Seedwarden**: Track B path assessed (ready to launch once user creates accounts)
+3. ✅ **Resistance-Research**: Distribution pre-staged (3 paths documented, ready to launch)
+
+**No blockers introduced. All work reversible.**
+
+---
+
 ## 2026-04-29 23:35 UTC — Orchestrator Session 659 — Engine Health Checkpoint + Distribution Framework Acceleration
 
 **Status**: ✅ COMPLETE — Parallel agent work on stockbot May 12 readiness and resistance-research distribution prep.

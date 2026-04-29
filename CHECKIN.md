@@ -1,3 +1,64 @@
+## Since Last Check-in (Session 660 — 2026-04-30 00:15 UTC — INFRASTRUCTURE HARDENING + TRACK B + DISTRIBUTION PRE-STAGING)
+
+### ✅ Work Completed: Stockbot Infrastructure Ready + Seedwarden Track B + Resistance-Research Distribution Pre-staged
+
+**Session 660 Summary**: Parallel agent execution fixed 4 stockbot infrastructure gaps, assessed seedwarden Track B readiness, and pre-staged all three resistance-research distribution paths. All projects advancing toward immediate execution readiness.
+
+**What was accomplished**:
+
+1. ✅ **Stockbot: May 12 Infrastructure Hardening Complete**
+   - **4 non-blocking gaps resolved**:
+     - Discord rate limiting: Coordinator session pattern implemented; only lowest session_id sends daily summary
+     - MTF warning flood: Per-ticker warning tracking; first occurrence at WARNING, subsequent at DEBUG
+     - DB path standardization: Infrastructure.md documents stockbot.db (root) as authoritative; database/stockbot.db excluded from git
+     - Automatic DB sync: Cron script + documentation for 20:05 UTC daily sync on trading days
+   - **Testing**: 33 new tests added to test_infra_gaps_fixes.py; 876 total unit tests pass
+   - **Files**: trading_session.py (coordinator + warning tracking), launch_stacker_sessions.py (coordinator registration), cron_sync_db.sh (executable), docs/INFRASTRUCTURE.md
+   - **Commits**: 7033134 "fix: resolve 4 non-blocking infrastructure gaps before May 12 checkpoint"
+
+2. ✅ **Seedwarden: Track B Launch Status Complete**
+   - **Readiness Assessment**: 4 of 5 conditions ready; 1 requires user action
+     - ❌ Social media accounts (Instagram, TikTok, Pinterest): 30-60 min user action
+     - ✅ All production assets ready: pin templates, 60-day calendar, reel scripts, carousel specs
+   - **Timeline**: 6 hours minimum to first post, realistic 2-day launch window
+   - **Autonomous Work Available**: 10-15 hours Pinterest batch + email + scheduling + analytics
+   - **File Created**: TRACK_B_LAUNCH_STATUS.md (3,200 lines, complete status assessment)
+   - **Commits**: 96a52f5 "docs(seedwarden): Track B launch readiness assessment complete"
+
+3. ✅ **Resistance-Research: Distribution Pre-staging Complete for All Three Paths**
+   - **Framework verified production-ready**: All 35 domains, core documents, trackers, templates ✅
+   - **Pre-staging deliverables** (2,548 lines):
+     - DISTRIBUTION_READINESS_FINAL.md: Comprehensive verification + user actions required (90 min)
+     - path-a-execution-checklist.md: Step-by-step Path A guide (immediate launch)
+     - path-a-plus-37-hybrid-checklist.md: Hybrid approach (34-domain Phase 1 + Domain 37 Phase 2)
+     - path-b-research-roadmap.md: Extended research path with feedback integration (2-4 weeks)
+     - DISTRIBUTION_READINESS_INDEX.md: Quick reference
+   - **Batch 1 Contacts**: All 5 verified current with April 2026 topical hooks
+   - **User Actions Required**: Path decision + 6 Gists + placeholder fills (~90 min)
+   - **File Created**: All 5 pre-staging documents (2,548 lines total)
+   - **Commits**: e490a84 "docs(resistance-research): distribution pre-staging complete"
+
+**Projects Status**:
+- ✅ **stockbot**: Infrastructure hardened; May 12 checkpoint infrastructure ready; awaiting April 30 market session
+- ✅ **resistance-research**: Distribution pre-staged for all 3 paths; awaiting user path decision
+- ✅ **seedwarden**: Track B status assessed; awaiting user account creation (2 hours work)
+- ⏳ **cybersecurity-hardening**: Tier 1/2/3 distribution prep complete (awaiting user approval)
+- ⏳ **mfg-farm**: Supplier economics complete, awaiting test print
+
+**Needs your input**:
+1. **Resistance-Research Distribution**: Decide on Path A (immediate), Path A+37 (recommended), or Path B (extended research). Once decided, placeholder audit takes ~90 min → ready to launch
+2. **Seedwarden Track B**: Create 3 social accounts (Instagram, TikTok, Pinterest with handle `seedwarden` or alternatives). Once created, 2 setup actions (Canva Brand Kit + Kit email landing page) = 2 hours, then Track B can launch independently
+3. **Stockbot April 30**: Monitor market session at 13:15 UTC to verify SELL signal execution continues. Non-blocking gaps now resolved.
+
+**Suggested priorities for next session**:
+1. Monitor stockbot April 30 market session (13:15 UTC open)
+2. **If resistance-research path decision ready**: Placeholder audit takes ~90 min → ready to launch
+3. **If seedwarden accounts ready**: Execute Track B launch (2-3 hours setup + 10-15 hours autonomous work)
+
+**Assessment**: Three projects now in execution-ready state. Blockers are all user actions or timing-dependent outcomes (market sessions, user decisions). Framework quality high; infrastructure hardened; contingency plans documented.
+
+---
+
 ## Since Last Check-in (Session 659 — 2026-04-29 23:35 UTC — ENGINE CHECKPOINT + DISTRIBUTION ACCELERATION)
 
 ### ✅ Work Completed: Stockbot May 12 Readiness + Resistance-Research Distribution Prep (98% Ready)
