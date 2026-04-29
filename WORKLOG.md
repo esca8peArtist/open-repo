@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 17:25 UTC — Orchestrator Session 645 — open-repo Phase 5 Step 1: Export Service Infrastructure Implementation Begin
+
+**Status**: ✅ Phase 5 Step 1 (Export Infrastructure) initiated. ExportService class interface created, core methods stubbed with TODO markers for post-PR-merge implementation. libzim and jinja2 added to dependencies. Foundation for ZIM export pipeline established.
+
+**Session 645 Work** (17:00–17:25 UTC):
+
+1. ✅ **Orientation and Analysis** (17:00–17:10 UTC):
+   - Analyzed project state: 6 major projects blocked on user decisions or external dependencies
+   - Identified open-repo Phase 5 (offline export infrastructure) as unblocked project work
+   - Phase 5 architecture research already complete (phases-5-kiwix-architecture.md); ready for Step 1 implementation
+   - Current state: ZimWriter and OPDSGenerator stubs exist; ExportService needs creation
+   - Implementation scope: 15-23 days per architecture blueprint; Step 1 is Days 1-5
+
+2. ✅ **Branch and Dependency Setup** (17:10–17:15 UTC):
+   - Created feature branch: `feature/phase-5-export-service`
+   - Added `libzim>=3.2,<4.0` and `jinja2>=3.1` to backend/pyproject.toml
+   - Verified existing test file: `backend/tests/integration/test_export_pipeline.py` with fixtures ready
+
+3. ✅ **ExportService Implementation (Step 1)** (17:15–17:25 UTC):
+   - **File created**: `backend/app/services/export/export_service.py` (386 lines)
+   - **Core interface implemented**:
+     - `ExportService`: High-level service orchestrating export jobs
+     - `ExportJobStatus`: Enum for tracking job progress (PENDING, IN_PROGRESS, COMPLETED, FAILED)
+     - `query_content_by_scope()`: Async generator for filtering content by LOCAL_ONLY/FEDERATED/DOMAIN/TAG
+     - `render_article_html()`: Renders single content item as self-contained HTML (inline CSS, no external deps)
+     - `enqueue_export()`: Creates ExportJob record and enqueues background task
+     - `get_export_job()`: Retrieves job status and metadata
+     - `list_exports()`: Lists available exports for download UI
+   - **HTML template**: Self-contained article template with inline CSS (no external stylesheets)
+   - **Documentation**: All TODO markers clearly indicate post-PR-merge implementation points
+
+4. ✅ **Commit and Export Package Update** (17:25 UTC):
+   - Committed to `feature/phase-5-export-service`: "feat(open-repo): Phase 5 Step 1 - Export Service infrastructure"
+   - Commit: `8e21384`
+   - Updated `backend/app/services/export/__init__.py` with ExportService exports
+
+**Technical Details**:
+- **ExportService.ARTICLE_TEMPLATE**: Jinja2 template with 120+ lines of inline CSS for offline viewing
+- **Database query stubs**: Marked for post-PR-merge (expect ContentItem model from Phase 4)
+- **Background task stubs**: Ready for Celery or FastAPI BackgroundTasks integration
+- **Step 2 next**: ZimWriter python-libzim integration (add to ZimWriter stub, replace create_zim() placeholder)
+- **Step 3 scope**: API endpoints, download streaming, scheduled regeneration, OPDS catalog
+
+**Project Status**:
+- **open-repo Goal**: "Distributed, free, one-stop shop for practical knowledge"
+- **Progress**: Phase 4 (federation) complete/in PR review; Phase 5 (offline export) infrastructure foundation laid
+- **Blockers**: None; PR #1 in review but does not block Phase 5 feature development
+
+**Next Steps (Session 646+)**:
+- Step 2: ZIM generation via python-libzim (expected 5–8 days)
+  - Implement ZimWriter.create_zim() with real Creator calls
+  - Add metadata, full-text indexing, zimcheck validation
+  - Integration tests to verify ZIM file validity
+- Step 3: Distribution and UI (expected 4–6 days)
+  - API endpoints for export catalog and download
+  - Web UI "Download Offline" section
+  - Scheduled export job running
+  - Optional OPDS catalog for Kiwix discoverability
+
+**Time Note**: Session performed during stockbot market hours (13:30–20:00 UTC); Phase 5 work is independent and non-blocking.
+
+---
+
 ## 2026-04-29 16:47 UTC — Orchestrator Session 644 — Exploration Queue: Resistance-Research Post-Distribution Feedback Integration Roadmap Complete
 
 **Status**: ✅ Post-distribution institutional feedback integration roadmap complete. 3,900-word strategic document produced for institutional adoption tracking and adaptive iteration post-distribution. All major projects remain blocked on user action.
