@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-29T10:15:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-29T11:17:37Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.5% (48,020 tokens) | All-models 38.2% | Reset in 134h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.5% (48,020 tokens) | All-models 40.0% | Reset in 133h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -65,42 +65,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-     - Time decay model aligned to h=10 hold horizon
-     - Portfolio Greeks aggregator (net delta/Vega/theta)
-  4. **Phased Implementation**:
-     - Phase 1 (May-Aug 2026): Infrastructure build concurrent with equity paper trading
-     - Phase 2 (Sep-Nov 2026): Options paper trading post-Gate-2
-     - Phase 3 (Dec 2026+): Live options after 60+ days paper trading
-  5. **Integration Architecture**:
-     - Ensemble signal upstream (no standalone options trades)
-     - Covered calls layer on top of equity positions
-     - StrategyCoordinator extension to track options leg alongside equity leg
-     - Avoids double-entry when covered call written against position
+   
+3. **20:15 UTC checkpoint** (Task 79813706) — Post-market close
+   - Verify: Discord summary, final trade count, P&L, session sleep
 
-**Status**: Committed to stockbot submodule (commit 803d9ec). Production-ready for review. Feeds into post-Gate-1 roadmap.
+**Expected outcome**: Multi-ticker ensemble portfolio generates ≥1 trade today (validates feature count fix from Session 560). Probability: ~60% across 11 tickers based on historical 0.17–2/month/ticker rate.
 
-### Market Session Preparation (Today 13:30 UTC)
-- **Critical Observation**: April 29 is the first live market session since engine restart on 03:31 UTC
-- **Expected Activity**:
-  - 11-ticker portfolio (AAPL, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA + 1 other)
-  - Each ticker running h=10 LGBM ensemble stacker (180-day backtest baseline: ~0.17-2 trades/month/ticker = ~2-22 trades/month aggregate)
-  - HMM regime scaling enabled (adaptive position sizing based on market regime)
-  - Market-aware sleep logic: when market closes at 20:00 UTC, engine sleeps until 13:15 UTC next day
-- **Monitoring Checklist**:
-  - ✅ Engine running pre-market (verified 08:07 UTC)
-  - ⏳ Engine cycle execution during 13:30-20:00 UTC trading hours
-  - ⏳ Signal generation per ticker (currently all tickers producing 0.0 predicted return?)
-  - ⏳ Order submission to Alpaca paper trading account
-  - ⏳ Fill confirmation + position table updates
-  - ⏳ Discord notification at market close (20:00 UTC) with: signals/ticker, orders placed/filled, total trades, mode, strategy
-- **Key Question**: Will multi-ticker portfolio generate ≥1 trade today? Current rate (0.17-2/month/ticker) suggests ~10-15% chance per single day. 11-ticker portfolio → ~60% ensemble chance of at least 1 signal across all tickers today.
+### Resistance-Research Distribution Roadmaps — All Three Paths Complete (10:25–11:10 UTC)
 
-**Next Steps**: 
-1. **14:00 UTC** (1h into market): Verify engine is cycling and generating signals
-2. **16:00 UTC** (during market): Check logs for order submissions
-3. **20:15 UTC** (post-market close): Verify Discord summary posted; record round trip count
-4. **May 1 Checkpoint**: After 2-3 market sessions, assess whether signal generation thresholds need adjustment
+**Files committed** (commit 979b8ee):
+- ✅ `path-a-execution-roadmap.md` (6,200 words) — Immediate 3-week distribution
+- ✅ `path-a-37-execution-roadmap.md` (10,223 words) — **RECOMMENDED** phased with Domain 37 election focus
+- ✅ `path-b-continuation-roadmap.md` (5,200 words) — Optional maintenance cycles
 
-**Blocked on**: Nothing. Engine ready. Paper trading validation in progress. No autonomous work pending.
+**Production status**: All infrastructure gaps filled (faith coalition contacts added), no planning delays. Upon user decision, Phase 1 execution begins immediately.
 
-**Status**: SESSION IN PROGRESS
+**User decision required**: Select Path A / Path A+37 Hybrid / Path B for distribution.
+
+### Exploration Queue Replenishment (11:05–11:10 UTC)
+
+**Four new conditional items added** (commit dfc4dcd):
+- Item 22: Phase 2 domain selection framework (post-Phase-1 results)
+- Item 23: Options pre-architecture research (post-Gate-1 validation)
+- Item 24: Wave 2-3 product expansion research (post-Wave-1 sales)
+- Item 25: Seedwarden contingency & concurrent launch (if Phase 1 delays)
+
+**Queue status**: Comprehensive conditional research pipeline ready for execution as milestones are reached.
+
+### Session Summary
+- ✅ Pre-market verification complete
+- ✅ Market monitoring scheduled (3 checkpoints automated)
+- ✅ Distribution paths ready for immediate execution
+- ✅ Exploration queue replenished with 4 new items
+- ✅ All changes committed to master
+- ⏳ Awaiting market open (13:30 UTC) and user distribution decision
+
+**No autonomous work pending** until market close or user provides distribution path decision.
+
+**Next session**: Execute Item 3 (stockbot post-Gate-2) at 20:30 UTC conditional on Day 1 trading validation.
+
+---
