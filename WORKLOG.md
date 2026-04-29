@@ -15805,3 +15805,77 @@ cd projects/stockbot
 
 **Status**: Exploration item COMPLETE. Orchestration script production-ready and tested. Stockbot engine startup is now unblocked — remaining blocker is user Alpaca account verification.
 
+---
+
+## 2026-04-29 08:07–08:25 UTC — Orchestrator Session 633 — Stockbot Options Strategy Research + Market Session Prep
+
+**Status**: In progress. Market open in 5.25 hours (13:30 UTC). Engine running (PID 1202130). Ready for live trading verification.
+
+**Summary**:
+
+### Stockbot Engine Status Verification (08:07 UTC)
+- **Engine Running**: ✅ PID 1202130, uptime 4.5 hours (started 2026-04-29 03:31 UTC)
+- **Memory**: 8.0% (661 MB) — stable, normal
+- **Log Status**: trading_20260429.log (2.3 MB, last activity 06:30 UTC during pre-market backtests)
+- **April 28 Gap**: ⚠️ Engine NOT running during April 28 market hours (13:30-20:00 UTC). Last activity April 28 00:07 UTC (post-market close). Gap analysis:
+  - Stopped: 2026-04-28 00:07:33 UTC
+  - Restarted: 2026-04-29 03:31 UTC
+  - **Impact**: Missed first live multi-ticker session (11 tickers). **NOTE**: This was pre-market paper trading. No positions were lost. Session can restart fresh today.
+- **Paper Trading Monitor**: Latest snapshot 06:40 UTC shows 18 total trades across 17 tickers (all from April 26-27 backtest runs before engine restart). 0 completed round trips. All positions still open from test entries.
+- **Market Readiness**: Engine ready for April 29 market session start (13:30 UTC). All 11 tickers configured and active.
+
+### Exploration Item: Stockbot Options Trading Strategy Analysis (COMPLETE)
+- **Deliverable**: `projects/stockbot/docs/options-strategy-analysis.md` (2,400 words, committed)
+- **Agent**: general-research
+- **Key Findings**:
+  1. **Viable Strategies** (April 2026 conditions, VIX 18.7-19):
+     - Covered calls on AAPL @$273: $3-5 premium/contract, 14-15% annualized yield
+     - Cash-secured puts: equivalent to expressing BUY thesis at 5-10% discount
+     - Bull put spreads: capital-efficient ($890 margin → $110 credit → 12.4% ROI) for $10K accounts
+  2. **April 2026 Market Constraints**:
+     - AAPL earnings April 30, IV spike to 55 (vs. 31 normal)
+     - GOOGL earnings April 29, IV at 78 (vs. 25-44 normal)
+     - Viable entry window: May 2-7 (post-announcement IV normalization)
+  3. **Feature Requirements** (not yet built):
+     - IVR calculator (IV percentile ranking)
+     - IV term structure + skew detection
+     - Time decay model aligned to h=10 hold horizon
+     - Portfolio Greeks aggregator (net delta/Vega/theta)
+  4. **Phased Implementation**:
+     - Phase 1 (May-Aug 2026): Infrastructure build concurrent with equity paper trading
+     - Phase 2 (Sep-Nov 2026): Options paper trading post-Gate-2
+     - Phase 3 (Dec 2026+): Live options after 60+ days paper trading
+  5. **Integration Architecture**:
+     - Ensemble signal upstream (no standalone options trades)
+     - Covered calls layer on top of equity positions
+     - StrategyCoordinator extension to track options leg alongside equity leg
+     - Avoids double-entry when covered call written against position
+
+**Status**: Committed to stockbot submodule (commit 803d9ec). Production-ready for review. Feeds into post-Gate-1 roadmap.
+
+### Market Session Preparation (Today 13:30 UTC)
+- **Critical Observation**: April 29 is the first live market session since engine restart on 03:31 UTC
+- **Expected Activity**:
+  - 11-ticker portfolio (AAPL, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA + 1 other)
+  - Each ticker running h=10 LGBM ensemble stacker (180-day backtest baseline: ~0.17-2 trades/month/ticker = ~2-22 trades/month aggregate)
+  - HMM regime scaling enabled (adaptive position sizing based on market regime)
+  - Market-aware sleep logic: when market closes at 20:00 UTC, engine sleeps until 13:15 UTC next day
+- **Monitoring Checklist**:
+  - ✅ Engine running pre-market (verified 08:07 UTC)
+  - ⏳ Engine cycle execution during 13:30-20:00 UTC trading hours
+  - ⏳ Signal generation per ticker (currently all tickers producing 0.0 predicted return?)
+  - ⏳ Order submission to Alpaca paper trading account
+  - ⏳ Fill confirmation + position table updates
+  - ⏳ Discord notification at market close (20:00 UTC) with: signals/ticker, orders placed/filled, total trades, mode, strategy
+- **Key Question**: Will multi-ticker portfolio generate ≥1 trade today? Current rate (0.17-2/month/ticker) suggests ~10-15% chance per single day. 11-ticker portfolio → ~60% ensemble chance of at least 1 signal across all tickers today.
+
+**Next Steps**: 
+1. **14:00 UTC** (1h into market): Verify engine is cycling and generating signals
+2. **16:00 UTC** (during market): Check logs for order submissions
+3. **20:15 UTC** (post-market close): Verify Discord summary posted; record round trip count
+4. **May 1 Checkpoint**: After 2-3 market sessions, assess whether signal generation thresholds need adjustment
+
+**Blocked on**: Nothing. Engine ready. Paper trading validation in progress. No autonomous work pending.
+
+**Status**: SESSION IN PROGRESS
+

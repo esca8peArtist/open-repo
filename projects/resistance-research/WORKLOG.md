@@ -2,6 +2,71 @@
 
 ---
 
+## April 29, 2026 — General Research Agent: Stockbot Options Strategy Analysis
+
+**Session type**: Cross-project research — stockbot post-Gate-2 options expansion design
+**Task**: Analyze options strategy viability for stockbot integration post-equity-Gate-2, grounded in April 2026 market conditions and existing MTF + ensemble infrastructure
+
+### Files Produced
+
+**`projects/stockbot/docs/options-strategy-analysis.md`** (~2,400 words)
+- Strategic overview: why options come after equity baseline (attribution clarity, additive not remedial)
+- April 2026 market context: VIX ~18.7–19, AAPL pre-earnings IV at 55 vs. 31 normal, GOOGL weekly IV at 78 vs. 25–44 normal; post-earnings IV crush mechanics documented
+- Viable strategies ranked: (1) covered calls on AAPL/GOOGL — 1.39% per 30-day cycle, $380 premium at 0.25 delta strike on $273 AAPL; (2) cash-secured puts — 0.68% per cycle, capital-efficient Wheel entry; (3) bull/bear vertical spreads — 12.4% return on margin for $25K account at current IV
+- Greeks management: delta retention by HMM regime (0.20–0.25 delta in Bull, 0.30–0.35 in Sideways); theta 50% rule (close at 21 DTE or 50% profit); Vega limit 0.5% of account equity per 1% IV change; gamma exit rule (close 7 days before expiry)
+- Feature requirements: IVR calculator (52-week rolling), IV term structure + skew snapshot, time decay modeling aligned to h=10 hold horizon, portfolio Greeks aggregator
+- Profitability thresholds: break-even tables for covered call vs. spread on $25K account; bid-ask slippage quantified (4–18% depending on strategy/liquidity)
+- Phased implementation: Phase 1 (May–Aug 2026, infrastructure build), Phase 2 (Sep–Nov 2026, options paper trading), Phase 3 (Dec 2026 earliest, live options)
+- Integration path: ensemble signal gates options layer (not standalone), MTF models as regime confirmation, StrategyCoordinator extension for options-equity position tracking
+- Decision gate: 5 binary criteria for proceeding to Phase 2
+
+---
+
+## April 29, 2026 — General Research Agent: Item 21 — Phase 3 Product Validation Research (mfg-farm)
+
+**Session type**: Exploration Queue Item 21 — mfg-farm Phase 3 market research
+**Task**: Comprehensive market validation for Phase 3 product candidates; pricing strategy; competitive SWOT; TAM/SAM/SOM estimates
+
+### Files Produced
+
+**`projects/mfg-farm/phase-3-product-validation-research.md`** (~4,000 words)
+- Market research by category for all 5 candidates: desk accessories, gaming cable bundles, phone/tablet mounts, organizer boxes, homelab accessories
+- Community intelligence: r/homelab (946K subscribers), r/battlestations (5.2M), r/MechanicalKeyboards (1M+) — subscriber counts, WTP signals, pain points
+- Competitive benchmarking: AliExpress floor, Amazon mid, Etsy premium, mfg-farm target — for each category
+- Customer WTP analysis: price sweet spots by category ($35–80 for sets), inflection points, Etsy AOV data ($48 average)
+- TAM/SAM/SOM: desk accessories $75M Etsy-grade TAM; homelab $14–43M (emerging); gaming $20M; Year 1 SOM target $10K–20K/month
+- Priority revision: homelab elevated to #1 Wave 1 product (near-zero parametric FDM competition, high-intent community)
+
+**`projects/mfg-farm/phase-3-pricing-strategy.md`** (~2,000 words)
+- Three-tier pricing (Standard/Premium/Specialty) for homelab accessories, desk accessories, gaming bundles
+- Full COGS models at each tier with net margin calculations (72–83% at Standard/Premium for homelab; 70–81% for desk accessories)
+- Volume pricing logic: single → 2–3 pack → 6-pack → bulk 25+ units
+- Etsy vs. Amazon channel pricing differential (+15–25% for Amazon to maintain equivalent net margin)
+- Validated pricing rules: no product below 65% net margin at Standard tier
+
+**`projects/mfg-farm/phase-3-competitive-swot.md`** (~2,200 words)
+- Full 2×2 SWOT for top 3 candidates: homelab accessories, desk accessories, gaming cable bundle
+- Positioning strategy vs. AliExpress, Etsy artisans, premium brands (NZXT/Corsair/CableMod) per category
+- Cross-category competitive positioning matrix (5 axes: price, customization, cable integration, material quality, ecosystem)
+- Risk register with 7 identified threats and specific mitigations
+
+**`projects/mfg-farm/ITEM9_PRODUCT_VIABILITY_ANALYSIS.md`** — Appendix C appended
+- Priority ranking revision (homelab #1, desk accessories #2, gaming bundle #3)
+- Market-grounded price validation vs. Item 9 estimates
+- TAM summary
+- Tariff tailwind documented (35% China import duties = US FDM structural advantage)
+- Confirmed go-to-market sequence: homelab STL seeding → Etsy desk accessories → gaming accessories
+
+### Key Findings
+
+1. Homelab is the strongest Phase 3 Wave 1 opportunity: greenfield, high-intent, parametric FDM = clear material advantage (PETG vs. PLA incumbents), community-first entry model proven by Jeff Geerling mini-rack ecosystem
+2. 35% China tariffs (2026) create structural US FDM manufacturing tailwind — US-made positioning now price-defensible, not just narrative
+3. CableMod documented quality failure pattern (Amazon reviews) is a positioning opening in gaming accessories
+4. Etsy WTP ceiling: $65 for single premium items, $75–80 for 4-piece sets; above this requires strong brand narrative or demonstrated utility
+5. Net margin 70–83% achievable at Standard/Premium tiers for homelab and desk accessories
+
+---
+
 ## April 29, 2026 — General Research Agent: 2026 Threat Landscape for Cybersecurity-Hardening
 
 **Session type**: Pre-distribution threat landscape research

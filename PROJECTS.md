@@ -328,17 +328,18 @@
 
 **NEXT WORK (priority order)**:
 
-0. ✅ **CRITICAL — Fix feature count mismatch so engine actually trades** (Session 560 COMPLETE): Feature count bug identified and fixed. Root cause: ensemble stackers expect 61 features with `1d_` prefix; fallback was using `FeatureEngineer.transform()` which produces different feature names. New `_build_daily_mtf_features()` helper generates correct features. All fallback paths updated. AAPL models produce non-zero predictions. Committed. User action: Restart engine before 13:30 UTC market open.
+0. ✅ **CRITICAL — Fix feature count mismatch so engine actually trades** (Session 560 COMPLETE): Feature count bug identified and fixed. Root cause: ensemble stackers expect 61 features with `1d_` prefix; fallback was using `FeatureEngineer.transform()` which produces different feature names. New `_build_daily_mtf_features()` helper generates correct features. All fallback paths updated. AAPL models produce non-zero predictions. Committed. User action: Restart engine before 13:30 UTC market open. ✅ Engine restarted 2026-04-29 03:31 UTC.
 
 1. ✅ **Discord position notifications** (Session 570 COMPLETE): Feature already implemented in `src/notifications/discord.py` and wired into `ModelBasedStrategy.on_trade_executed()`. Session 570 fixed feature parity gap: `MTFModelBacktestStrategy` now also implements `on_trade_executed()` with identical behavior. Commit: `06a3014`. All 19 notification tests passing. Includes: ticker, side, quantity, price, strategy name, P&L. Uses `STOCKBOT_DISCORD_WEBHOOK_URL`. Production-ready for engine restart.
 
-2. **Market open verification** (2026-04-28, first clean market session):
-   - Pre-open (before 13:15 UTC): Verify engine is running and connected to Alpaca paper account
-   - At open (13:30 UTC): Confirm sessions detect market open and begin cycle (no shutdowns)
-   - During session: Log whether each of the 11 strategies generates a signal
-   - At close (20:00 UTC): Write post-market report to `logs/paper_trading_daily.jsonl` with: signals per ticker, orders submitted, fills confirmed, positions held, realized P&L
-   - Key question: did any strategy generate a real signal and place a real order with Alpaca? If zero signals across all 11 tickers in a full session, the signal threshold may be too high
-   - **Do not shut down or restart the engine between 13:15–20:15 UTC under any circumstances**
+2. **Market session verification — 2026-04-29 (LIVE TODAY)**:
+   - **Pre-open (07:30-13:15 UTC)**: ✅ Engine verified running (08:07 UTC check: PID 1202130, 8% memory, clean logs)
+   - **At open (13:30 UTC)**: Confirm sessions detect market open and begin cycle (no shutdowns)
+   - **During session (13:30-20:00 UTC)**: Log whether each of the 11 tickers generates a signal; track order submissions to Alpaca
+   - **At close (20:00 UTC)**: Verify Discord summary posted with: signals/ticker, orders placed/filled, total trades, mode, strategy
+   - **Critical question**: Will multi-ticker portfolio generate ≥1 trade today? Current rate (0.17-2/month/ticker) suggests ~60% aggregate chance across 11 tickers.
+   - **Do NOT shut down or restart engine between 13:15–20:15 UTC under any circumstances**
+   - **Note**: April 28 gap identified (engine missed entire market session). April 29 is first real live session since restart.
 
 **May 12 Feasibility Assessment (Session 519 — COMPLETE)**:
 - Full report: `projects/stockbot/may-12-feasibility-checkpoint.md`
