@@ -2,6 +2,82 @@
 
 ---
 
+## April 29, 2026 — General Research Agent: TIER 3 Threat Model + Implementation Guide (cybersecurity-hardening)
+
+**Session type**: Cybersecurity-hardening project — TIER 3 production
+**Task**: Write complete TIER 3 threat model and implementation guide for state-level adversaries (NSA, FBI with FISA authority, foreign intelligence services, organized crime with technical sophistication)
+
+### Files Written
+
+**`projects/cybersecurity-hardening/tier-3-threat-model.md`** (~5,400 words)
+
+Six-section structure per spec:
+1. Threat actor profiles — NSA (Section 702 / EO 12333 / PRISM / XKEYSCORE), FBI (NSLs, FISA Title I, Section 702 backdoor queries, parallel construction), CBP/DHS (border search authority), foreign state intelligence (BADBAZAAR/MOONSHINE, WUC spyware targeting, confirmed DHS SS7 advisories), organized crime (nation-state proxies, I-Soon leak, Pegasus/Graphite/PARAGON)
+2. Attack surface expansion — SS7/3GPP carrier-level interception, hardware keyloggers/ANT catalog, supply chain interdiction (DEITYBOUNCE, ESPecter), forensic toolkits (Cellebrite UFED, GrayKey, Magnet Axiom, NIST SP 800-101), border seizure (47,047 FY2024 searches, EFF Third Circuit brief March 2026)
+3. Realistic countermeasures mapped to each vector with explicit limitations
+4. Organizational security — HUMINT threat primacy, four-tier channel architecture, dead drops, minimal contact protocol
+5. TIER 1-2 integration layering strategy with coverage gap table
+6. Failure modes and limitations — legal compulsion, endpoint compromise, informants, metadata persistence, tool-specific failures (Signal linked device, Tor traffic correlation, VPN provider compulsion), jurisdictional limits, human factor
+
+**`projects/cybersecurity-hardening/tier-3-implementation-guide.md`** (~3,650 words)
+
+Three-phase timeline structure:
+- Week 1: Immediate actions (iOS 18.1+ update, biometrics off, Lockdown Mode, iCloud backup off, Signal audit, legal counsel identification)
+- Month 1: Infrastructure build-out (three-tier compartmentalization, non-attributable Tier B identity, air-gap hardware purchase + Tails/Qubes setup, border crossing protocol)
+- Month 3: Organizational security (group channel architecture, dead drop protocol, backup communication channels, device degradation schedule)
+
+Includes: phased verification checklists for each milestone, legal strategy integration (702 suppression, parallel construction challenge, geofence warrant challenge, border search challenge), cross-reference table to entire primary corpus
+
+### Research incorporated (new since last session)
+
+- FBI Section 702 queries of U.S. persons up 35% in 2025 (Nextgov/FCW, March 2026)
+- FISA Court found ongoing 702 compliance violations extending beyond FBI, March 2026
+- BADBAZAAR + MOONSHINE joint advisory (IC3/CISA, April 2025) — confirmed targeting of Uyghur, Tibetan, Taiwanese diaspora via community-language trojanized apps
+- World Uyghur Congress targeted with trojanized Uyghur-language word processor, March 2025 (Citizen Lab)
+- EFF Third Circuit amicus brief on border device warrant requirement, March 2026
+- GrapheneOS confirmed effective against Cellebrite since 2022 (Osservatorio Nessuno, March 2025)
+- Nation-state/organized crime proxy convergence confirmed by NCA 2025 and I-Soon leak (Chatham House, March 2026)
+
+---
+
+## April 29, 2026 — General Research Agent: MAY_2026_TRACKER.md Late-Intelligence Sweep
+
+**Session type**: Resistance-research project maintenance — May 2026 tracker update
+**Task**: Populate tracker with late April / early Week 2 intelligence across six monitoring domains; add Week 2 early entries to existing MAY_2026_TRACKER.md (which was already advanced through Week 1 by Sessions 603, 619, 628)
+
+### File Modified
+
+**`projects/resistance-research/MAY_2026_TRACKER.md`** (existing file extended)
+
+Six new substantive Week 2 early entries added:
+
+1. **W2.A — War Powers / NATO / Taiwan** — NATO withdrawal held off after April 8 Rutte meeting but stated as under active consideration by WH; 57% of Taiwanese doubt U.S. would defend Taiwan (SCMP poll); WPR unenforceability template applies to Taiwan Strait scenarios; Six Assurances to Taiwan Act still pending in House
+2. **W2.B — Prosecutorial Weaponization** — Grand jury rebuffed DOJ attempt to indict 6 Democratic lawmakers (4th+ no-bill in politically charged cases); historical anomaly documented (FY2016 baseline: 6 no-bills in 69,451 cases); SPLC DOJ response due May 5; grand jury resistance documented as counter-pattern for Domain 29 Section 13
+3. **W2.C — Voting Rights** — Arizona DOJ voter roll lawsuit dismissed April 28 by Trump-appointed judge (7th state win); statutory theory "not subject to AG request" differs from prior procedural grounds; Sixth Circuit expedited review of Michigan case remains key appellate vehicle before November 2026
+4. **W2.D — SCOTUS** — Slaughter still pending (late June); Bost v. Illinois 7-2 ruling grants standing to challenge mail ballot receipt deadlines (merits forthcoming); NRSC v. FEC on party coordination limits also active this term
+5. **W2.F — Fiscal Authority** — OMB Category C apportionments at 8.64% of FY2026 total (up from 6.06% in FY2025), 43% proportional increase year-over-year; quantified evidence of fiscal control escalation; Lawfare analysis as primary source
+6. **W2.H — AI Governance** — WISeR clarified as Medicare AI program (not election system); federal election AI governance void confirmed: no legislation, EAC guidance non-binding, CISA gutted; AI campaign spending scaling for 2026 midterms
+
+### Domain Update Recommendations Added
+
+Six new rows added to the Domain Update Recommendations table:
+- Domain 01: Arizona dismissal + Bost mail ballot standing
+- Domain 34: OMB Category C escalation data
+- Domain 29: Grand jury resistance counter-pattern
+- Domain 35: Bost standing ruling + NRSC v. FEC watch
+- Domain 19f: NATO withdrawal status + Taiwan deterrence erosion note
+- Domain 36/37: AI election governance void confirmed; WISeR correction
+
+### Key Research Findings
+
+**Most significant new development**: Arizona dismissal by Trump-appointed judge (April 28) is the strongest evidentiary signal that DOJ's voter-roll theory is legally weak even within the administration's own judicial appointee pool. This strengthens Domain 01's litigation section and may influence the 12 states that voluntarily complied.
+
+**Confidence gap**: WISeR reference in the original task brief was a category error — WISeR is a CMS Medicare program. No federal election AI system by that name exists. The Domain 36 AI Governance section should not include a WISeR reference.
+
+**Cross-domain pattern confirmed**: Category C OMB escalation (8.64%) + ICA unconstitutionality claim + reconciliation bypass = three concurrent fiscal authority erosion vectors, as analyzed in Candidate 38-B ("Fiscal Constitution Under Duress").
+
+---
+
 ## April 29, 2026 — General Research Agent: Stockbot Options Strategy Analysis
 
 **Session type**: Cross-project research — stockbot post-Gate-2 options expansion design
