@@ -5,6 +5,48 @@
 
 ---
 
+## Since Last Check-in (Session 633 — 2026-04-29 08:07 UTC — Stockbot Options Strategy + Market Prep)
+
+### ✅ Exploration Queue Item Complete: Stockbot Options Trading Strategy Analysis
+
+**Deliverable**: `projects/stockbot/docs/options-strategy-analysis.md` (2,400 words, committed)
+
+**Key Findings**:
+- **Viable Strategies** (April 2026 VIX 18.7-19): Covered calls (AAPL @$273, $3-5 premium = 14-15% annualized yield), bull put spreads (capital-efficient for $10K accounts), cash-secured puts (equivalent to directional BUY thesis at 5-10% discount)
+- **Market Constraint**: AAPL/GOOGL earnings April 29-30 cause IV spike (AAPL IV 55 vs. 31 normal); viable entry window May 2-7 post-announcement
+- **Feature Requirements** (not yet built): IVR calculator, IV term structure/skew detection, time decay model, portfolio Greeks aggregator
+- **Implementation Timeline**: Phase 1 infrastructure (May-Aug), Phase 2 paper trading (Sep-Nov), Phase 3 live (Dec 2026+)
+- **Architecture**: Ensemble signal upstream (no standalone options trades), covered calls layer on equity, StrategyCoordinator extension to track options leg
+
+**Status**: Production-ready, ready for design review. Feeds post-Gate-1 roadmap. Committed to stockbot submodule.
+
+### Stockbot Engine Status Verification (08:07 UTC)
+
+**Critical Finding**: Engine running but missed April 28 market session (13:30-20:00 UTC). Timeline:
+- Stopped: 2026-04-28 00:07:33 UTC (post-market close on April 27-28)
+- Restarted: 2026-04-29 03:31 UTC (fresh start, 03:31 UTC)
+- **Gap**: ~27 hours without trading. April 28 was first scheduled live market day post-restart.
+
+**Impact Assessment**:
+- Paper trading baseline not yet established (needs full market session data)
+- All 11-ticker portfolio configured and ready
+- Engine memory stable (8%), logs clean (no ERROR/401 messages)
+- Ready for April 29 live market session (TODAY 13:30-20:00 UTC)
+
+**Paper Trading Monitor Status**:
+- Snapshot from 06:40 UTC: 18 total trades across 17 tickers (all from April 26-27 backtest runs pre-engine restart)
+- 0 completed round trips (all positions still open from test entries)
+- Gate 1 baseline: pending today's market session data
+
+**Market Open Readiness**:
+- ✅ Engine running (PID 1202130)
+- ✅ All 11 tickers configured in active-sessions.json
+- ✅ HMM regime scaling enabled
+- ✅ Market-aware sleep logic active (will sleep at 20:00 UTC until 13:15 UTC next day)
+- ⏳ Ready for 2026-04-29 13:30 UTC market open
+
+---
+
 ## Since Last Check-in (Session 632 — 2026-04-29 07:40–10:30 UTC)
 
 ### ✅ Parallel Research Tasks — THREE UNBLOCKED PROJECTS COMPLETED
