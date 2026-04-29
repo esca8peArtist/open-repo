@@ -4,6 +4,26 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 — research-agent — mfg-farm ModRun: Amazon FBA vs. Etsy Fulfillment Decision Matrix COMPLETE
+
+**Task**: Produce quantitative fulfillment strategy analysis for ModRun cable management system post-test-print launch decision.
+
+**Deliverables**:
+1. `projects/mfg-farm/amazon-fba-analysis.md` — existed and confirmed current (2,600+ words, 2026 FBA fees incl. April 17 surcharge, ModRun-specific cost tables, 3 case studies, decision flowchart, all 9 analytical parts)
+2. `projects/mfg-farm/fulfillment-decision-matrix.csv` — CREATED NEW: 12-row volume/margin scenario matrix (5–500 units/month), ModRun-specific calculations using actual COGS ($3.10–4.20), Etsy fees (11.1%), FBA fees (incl. 3.5% April 2026 surcharge), break-even volume at ~30 units/month (Gate 1), clear channel recommendation per row
+3. `projects/mfg-farm/hybrid-launch-roadmap.md` — existed and confirmed current (90-day phased integration plan, 3 go/no-go gates, operational checklists, capital deployment schedule)
+
+**Key quantitative findings**:
+- Etsy net margin: 73.3% at 10 units, 74.8% at 50 units, 77.0% at 200+ units
+- FBA net margin: 42.5% at 10 units, 55.1% at 50 units, 59.9% at 500 units (structural 14-20pt gap vs Etsy persists at all volumes)
+- FBA becomes net-positive (above setup amortization) at 30+ units/month: $123/mo net add
+- Clear hybrid inflection at 50 units/month: hybrid generates $1,404/mo vs $1,084 Etsy-only (+29%)
+- At 100 units/month hybrid: $2,824/mo vs $2,169 Etsy-only (+30%) — FBA is purely additive
+
+**Data currency**: April 17, 2026 FBA fuel surcharge (3.5%) confirmed and incorporated in all calculations.
+
+---
+
 ## 2026-04-29 — research-agent — Cybersecurity Hardening Phase 2: Hardware Procurement and Supply-Chain Security Guide COMPLETE
 
 **Task**: Session 625 exploration queue task — produce production-ready supply-chain security guide for journalists, attorneys, activists, undocumented immigrants.

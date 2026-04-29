@@ -1,0 +1,12 @@
+Volume_Units_Per_Month,COGS_Per_Unit,Etsy_Net_Per_Unit,Etsy_Margin_Pct,FBA_Net_Per_Unit,FBA_Margin_Pct,Etsy_Only_Monthly_Net,FBA_Only_Monthly_Net,Hybrid_Monthly_Net,FBA_Addl_Units_Per_Month,FBA_Setup_Amortized_6mo,Hybrid_Net_After_Setup_Cost,Recommendation,Channel_Strategy,Notes
+5,4.20,21.24,73.3,8.33,28.7,106,42,123,2,62.5,-5.5,Etsy-only,Etsy,"FBA margin collapses — $39.99 Pro plan = $8/unit at this volume. Do not open Amazon."
+10,4.20,21.24,73.3,12.33,42.5,212,123,262,4,62.5,23.5,Etsy-only,Etsy,"Pro plan eats $4/unit. FBA margin 30 pts below Etsy. Build reviews and capital first."
+20,3.75,21.69,74.8,14.78,51.0,434,296,552,8,62.5,55.5,Etsy-only (bank capital),Etsy,"FBA incremental adds $118/mo gross but setup amortization leaves only $56/mo net. Capital not yet justified unless $400+ available and 15+ Etsy reviews at 4.8+."
+30,3.75,21.69,74.8,15.45,53.3,651,464,836,12,62.5,122.5,Etsy-only or Phase 2 if Gate 1 met,Etsy,"At 30 units, FBA adds $123/mo net above setup. Viable if Gate 1 criteria met: $400+ capital AND 15+ reviews at 4.8+."
+50,3.75,21.69,74.8,15.98,55.1,1084,799,1404,20,62.5,257.5,Add FBA — 50-unit test batch,Hybrid,"Hybrid adds $320/mo FBA incremental. Clear ROI above setup cost ($257 net/mo). Etsy stays made-to-order; FBA is additive channel."
+75,3.75,21.69,74.8,16.25,56.0,1626,1219,2114,30,62.5,424.5,Full Hybrid — expand FBA,Hybrid,"$487/mo FBA incremental gross. Restock at 75-unit batches. Run Sponsored Products at $3-5/day."
+100,3.75,21.69,74.8,16.38,56.5,2169,1638,2824,40,62.5,592.5,Full Hybrid — scale both channels,Hybrid,"Hybrid generates $655/mo additional vs Etsy-only. Expand to 2-3 SKUs on FBA. Pro plan amortizes to $0.40/unit."
+150,3.75,21.69,74.8,16.51,57.0,3253,2477,4244,60,62.5,925.5,Full Hybrid — aggressive FBA investment,Hybrid,"FBA adds $991/mo gross. Increase batch sizes to 100+ units. Consider A+ Content and Brand Registry."
+200,3.10,22.34,77.0,17.23,59.4,4467,3446,5846,80,62.5,1320.5,Full Hybrid — optimize both channels,Hybrid,"COGS drops to $3.10 at 200+/mo. Etsy margin improves to 77%. FBA margin improves to 59.4%. Combined monthly $5,846."
+300,3.10,22.34,77.0,17.30,59.7,6701,5190,8777,120,62.5,2015.5,Full Hybrid — consider Shopify DTC,Hybrid,"Third channel (Shopify DTC) becomes viable here for email capture and margin maximization. FBA adds $2,078/mo gross."
+500,3.10,22.34,77.0,17.35,59.9,11168,8675,14638,200,62.5,3412.5,Full Hybrid + DTC + bulk corporate,Hybrid,"Scale warrants dedicated FBA restock workflow. Consider 3PL prep center. Shopify DTC at 10-15% of volume for email list."
