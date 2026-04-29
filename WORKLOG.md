@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 06:15 UTC — Session 617 — Exploration Queue Items 16 & 18 (Parallel Execution)
+
+**Context**: All high-priority projects remain blocked on user actions (stockbot engine restart, mfg-farm test print, resistance-research distribution path decision, seedwarden Etsy verification, cybersecurity Tier 1 approval, open-repo PR merge). Executing Items 16 & 18 from exploration queue in parallel to maximize session output.
+
+**Active Exploration Items**:
+- **Item 16**: seedwarden Phase 2 Photography Strategy (2-3 hours, independent of Phase 1 blockers)
+- **Item 18**: mfg-farm Laser/Resin/Injection Economics (2-3 hours, independent of test print status)
+
+**Execution**: Spawning parallel agents for both items. Will update as work completes.
+
+---
+
+### COMPLETE — Item 18: mfg-farm Adjacent Manufacturing Economics
+
+**Agent**: general-research (autonomous)
+**Deliverables**:
+1. `projects/mfg-farm/ITEM18_ADJACENT_MANUFACTURING_ECONOMICS.md` (~9,000 words, 692 lines)
+2. `projects/mfg-farm/technology-comparison-matrix.csv` (8-row structured matrix)
+3. `projects/mfg-farm/12-month-rollout-capital-plan.md` (~1,700 words, 352 lines, with decision trees)
+
+**Key findings**:
+- **Laser engraving**: xTool S1 40W ($1,899) is the highest-ROI adjacent technology. Contract-shop validation costs $50–150; equipment gate triggers at >50 engraved units/month. Break-even at 100 units/month: 5.1 months. Annual ceiling: $30,000–60,000 net from laser-only products.
+- **Resin printing**: Elegoo Saturn 4 Ultra 16K ($499 + $75 wash/cure = $574 all-in) is the correct entry point. Post-processing labor (20–25 min/part) is the critical cost constraint — resin is 3–4x FDM COGS. Formlabs Form 4 ($3,499) only justified at >$800/month resin revenue. Not suitable for commodity cable clips; viable for transparent display pieces, gaming accessories, precision components.
+- **Injection molding**: Break-even vs. FDM at ~4,600 cumulative units (single-cavity aluminum mold at $3,000). Only pursue at >500 units/month sustained for 60+ days. Fictiv is the recommended domestic supplier (10–15 day T1 samples, no stated MOQ).
+- **CNC**: Confirmed not recommended per cnc-capabilities-analysis.md; laser engraving is the correct alternative.
+
+**Capital allocation**:
+- Conservative path (laser only): $2,499 over 12 months
+- Recommended path (laser + resin entry): $3,161 over 12 months
+- Full path (all gates trigger): ~$11,160 over 12 months
+
+**Sources**: 30+ including xTool/Formlabs/Elegoo/Fictiv vendor pricing, Etsy market data, Formlabs injection molding cost analysis, Fictiv economics comparison, JAYCON 2025 injection molding guide.
+
+---
+
 ## 2026-04-29 01:25 UTC — Session 615 — Exploration Queue Item Completions (Parallel Execution)
 
 **Context**: Orchestrator identified all high-priority projects blocked on user actions. Exploration queue had 0 autonomous items. Added 3 new items (12, 14, 15) and executed in parallel.
