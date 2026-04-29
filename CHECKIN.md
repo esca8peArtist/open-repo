@@ -76,6 +76,18 @@
 
 ---
 
+### What's Next — Immediate Priorities
+
+**2026-04-29 13:30 UTC (8 hours from session end)**: Market open — monitor first trading session with HMM regime scaling active. Log results to `logs/paper_trading_daily.jsonl` and verify: (a) no execution errors, (b) signals generated across tickers, (c) position adjustments reflect HMM scalar values.
+
+**Resistance-research (P1)**: Awaiting user distribution path decision (A / A+Domain37 / B). All content production complete (35 domains + Phase 2 frameworks). Once user decides, Phase 1 distribution execution can begin immediately.
+
+**Stockbot (P2)**: Gate 1 multi-ticker paper trading in Day 2. Gate 2 HMM activation framework complete. Next checkpoint May 12 (Day 16 feasibility assessment).
+
+**Exploration Queue**: All 3 items from Session 624 are now COMPLETE. No pending items.
+
+---
+
 ## Since Last Check-in (Session 626 — 2026-04-29 04:36–10:00 UTC)
 
 ### ✅ Stockbot Gate 2 HMM Backtest Validation Priority 1 — COMPLETE + LIVE ACTIVATION
