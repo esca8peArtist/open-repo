@@ -1,3 +1,87 @@
+## Since Last Check-in (Session 645 — 2026-04-29 17:30 UTC — OPEN-REPO PHASE 5 STEP 1: EXPORT SERVICE INFRASTRUCTURE)
+
+### ✅ Work Completed: open-repo Phase 5 Step 1 (Export Service Infrastructure) Implementation Begin
+
+**Session 645 Work** (17:00–17:30 UTC):
+
+**What was accomplished**:
+
+1. ✅ **Phase 5 Architecture Review + Project Work Assessment**
+   - Analyzed project state: All major projects blocked on user decisions or external dependencies
+   - Identified open-repo Phase 5 (offline export infrastructure) as the single unblocked project with meaningful work remaining
+   - Phase 5 research complete (phases-5-kiwix-architecture.md, conflict-resolution-architecture.md); ready for Step 1 implementation
+   - Current state: ZimWriter and OPDSGenerator stubs exist; ExportService needs creation for job orchestration
+
+2. ✅ **Feature Branch Setup + Dependencies**
+   - Created feature branch: `feature/phase-5-export-service`
+   - Added `libzim>=3.2,<4.0` and `jinja2>=3.1` to `backend/pyproject.toml`
+   - Verified existing test infrastructure: `backend/tests/integration/test_export_pipeline.py` with fixtures ready
+
+3. ✅ **ExportService Class Implementation (Step 1 Foundation)**
+   - **File created**: `backend/app/services/export/export_service.py` (386 lines, fully documented)
+   - **Core Classes**:
+     - `ExportService`: High-level orchestration of offline export jobs
+     - `ExportJobStatus` enum: PENDING, IN_PROGRESS, COMPLETED, FAILED
+   - **Core Methods**:
+     - `query_content_by_scope()`: Async generator for LOCAL_ONLY/FEDERATED/DOMAIN/TAG filtering
+     - `render_article_html()`: Renders content items as self-contained HTML (inline CSS, no external deps)
+     - `enqueue_export()`: Creates ExportJob and enqueues background task
+     - `get_export_job()`: Retrieves job status and metadata
+     - `list_exports()`: Lists available exports for web UI
+   - **HTML Template**: Self-contained article template with 120+ lines of inline CSS for offline viewing
+   - **Documentation**: Clear TODO markers for post-PR-merge implementation (database queries, JSON-LD rendering, background tasks)
+   - **Commit**: `8e21384` on `feature/phase-5-export-service`
+
+4. ✅ **Package Updates**
+   - Updated `backend/app/services/export/__init__.py` with `ExportService` and `ExportJobStatus` exports
+   - Integration ready for API routes.py
+
+**Technical Details**:
+- **Step 1 Scope (Days 1–5 per architecture blueprint)**:
+  - Export configuration models ✅
+  - Content HTML rendering with inline CSS ✅
+  - Database query skeleton (async generator interface, TODOs for post-PR-merge)
+  - Export job background task skeleton (async interface, TODOs for post-PR-merge)
+  - REST endpoint stubs (ready for routes.py integration)
+
+- **Step 2 Next (Days 6–12)**:
+  - `libzim` integration: Replace ZimWriter stubs with real python-libzim Creator calls
+  - Metadata handling, full-text search indexing, zimcheck validation
+  - Integration tests to verify ZIM file validity
+
+- **Step 3 Next (Days 13–18)**:
+  - API endpoints for export catalog and download
+  - Web UI "Download Offline" section
+  - Scheduled export job running
+  - Optional OPDS catalog for Kiwix discoverability
+
+**Architecture Alignment**:
+- Follows gutenberg2zim (Project Gutenberg export) pattern
+- Direct python-libzim pipeline (Option A from phase-5-kiwix-architecture.md)
+- Self-contained HTML for offline (no server-side rendering)
+- Versioned full exports (pragmatic approach, mirrors Wikipedia/Kiwix pattern)
+
+**Current Project Status**:
+- 🟢 **open-repo**: Phase 4 complete (PR #1 in review); Phase 5 Step 1 infrastructure foundation laid
+  - Feature branch: `feature/phase-5-export-service` ready for Steps 2–3 implementation
+  - Estimated completion: 15–23 days total (Steps 1–3)
+  - No blockers on Phase 5 development (can proceed parallel to PR #1 review/merge)
+- 🔴 **resistance-research**: Awaiting distribution path decision (A/A+37/B)
+- 🔴 **stockbot**: Engine running; Alpaca buying power $0 (need $5K–10K funding)
+- 🔴 **mfg-farm**: Awaiting test print
+- 🔴 **seedwarden**: Awaiting tag corrections + Etsy verification
+- 🔴 **cybersecurity-hardening**: Tier 1 execution plan ready; awaiting user approval
+
+**Items needing your input** (unchanged):
+1. **resistance-research**: Which Path? A / A+37 / B?
+2. **cybersecurity-hardening**: Approve Tier 1 execution?
+3. **stockbot**: Fund Alpaca account ($5K–10K)?
+4. **mfg-farm**: Complete test print?
+
+**Session Summary**: Phase 5 Step 1 infrastructure foundation established. ExportService class provides core interface for export job orchestration, content querying, and HTML rendering. Feature branch ready for Steps 2–3 (ZIM generation + distribution UI). Next work: Fill in database queries and JSON-LD rendering (post-PR-merge), then integrate libzim for Step 2.
+
+---
+
 ## Since Last Check-in (Session 644 — 2026-04-29 16:47 UTC — EXPLORATION QUEUE: POST-DISTRIBUTION FEEDBACK INTEGRATION ROADMAP)
 
 ### ✅ Work Completed: Resistance-Research Post-Distribution Feedback Integration Roadmap
