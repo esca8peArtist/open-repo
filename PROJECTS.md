@@ -1218,6 +1218,14 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Rationale**: Bridges Phase 1 launch (awaiting tag corrections) and Phase 2 execution (awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY approval). High-ROI for maintaining production momentum post-Phase-1-launch. 1-2 sessions estimate.
   - **Status**: QUEUED
 
+**NEW ITEMS (Session 650 — 2026-04-29)**:
+
+- **stockbot: Multi-session budget coordination post-deployment monitoring** — Account-level budget allocation coordinator (Option C) now active. Research: (1) Verify allocation prevents position-sizing collisions across all 52 sessions in live trading, (2) Monitor whether fractional share sizes improve entry execution consistency, (3) Assess whether current 10% position_size_pct is optimal per-session or if adjustment to 5-8% improves Gate 1 outcome. (4) Characterize allocation performance under varied market regimes (high-vol, low-vol, sideways). Scope: Monitoring framework + decision criteria for position_size_pct tuning. Deliverable: `budget-coordinator-monitoring.md` (1,500 words, decision tree). Ready for May 12 feasibility checkpoint.
+
+- **resistance-research: Democratic legitimacy and capital formation constraints post-Loper** — Supreme Court's Loper Bright overrule of Chevron deference removes administrative law infrastructure that enables redistributive regulation (environmental protection, labor standards, healthcare access). Research: (1) How does post-Loper world constrain capital formation mechanisms for cooperative/CDFI sector (Domains 27-29 implementation critical paths)? (2) What statutory reforms enable cooperative expansion without agency rulemaking authority (e.g., congressional price floors vs. agency rule)? (3) International precedent: How do EU/Canada maintain CDFI regulation post-Loper-equivalent doctrinal shifts? Scope: 2,000 words + decision tree for Domains 27-29 implementation viability post-Loper. Ready for post-distribution phase planning.
+
+- **seedwarden: Phase 1→Phase 2 Analytics Transition Framework** — Phase 1 launches May 2026 (awaiting user tag corrections). Phase 2 triggers 45 days post-launch when initial cohort conversion data arrives. Research: (1) Which Phase 1 cohort segments predict Phase 2 product success? (2) How to use Week 1-3 conversion data to make Phase 2 option decision (A/B/C/D)? (3) Automated decision criteria: Which analytics metrics trigger which Phase 2 action? Produces: `phase1-phase2-transition-framework.md` (decision tables + trigger conditions + go/no-go criteria). Scope: 1,500 words. Ready post-Phase-1-launch (May 2026).
+
 ---
 
 ## Completed (Archive)
