@@ -1,7 +1,7 @@
 # MAY 2026 CIVIC DEVELOPMENTS TRACKER
 
 **Created**: April 28, 2026 (Session 603)
-**Last research pass**: April 29, 2026 (Session 619 — Week 1 pre-population; 8-domain structure established); May 1–7 research pass (Session 628 — Week 1 fill-in and outcome confirmation)
+**Last research pass**: April 29, 2026 (Session 619 — Week 1 pre-population; 8-domain structure established); May 1–7 research pass (Session 628 — Week 1 fill-in and outcome confirmation); April 29, 2026 (General Research Agent — late April intelligence sweep; Arizona DOJ dismissal confirmed, NATO hold confirmed, OMB Category C escalation confirmed, DOJ grand jury failure pattern documented)
 **Purpose**: Weekly log of civic developments across eight domains critical to the resistance-research framework. Each entry cross-references affected domain documents (1–37) and flags potential Domain 38 candidates.
 **Update cadence**: Weekly (open file at each session, confirm prior week fill-in items, add new entries)
 **Companion files**: `litigation-tracker-2026.md`, `surveillance-tracking.md`, `CHECKIN.md`
@@ -489,6 +489,118 @@ Key confirmed outcomes from the May 1–7 research pass:
 
 ---
 
+### WEEK 2 EARLY ENTRIES — Late April / Week 2 Pre-Population (General Research Agent, April 29)
+
+*The following entries are confirmed from the April 29 late-intelligence research sweep. They supplement the Week 1 summary and provide starting conditions for Week 2 monitoring. Some developments are dated April 28, falling in the late Week 1 / Week 2 overlap window.*
+
+---
+
+#### W2.A — War Powers: NATO Withdrawal Held Off; Taiwan Confidence Eroding
+
+**Urgency**: MONITOR (near-term) / HIGH (structural)
+**Date range**: April 1–28, 2026
+**What happened**: After Trump publicly called NATO a "paper tiger" and stated he was "absolutely" considering withdrawal (April 1, CNN), the administration held a high-stakes meeting with NATO Secretary-General Mark Rutte (April 8). Trump stopped short of formal withdrawal announcement. White House Press Secretary Karoline Leavitt confirmed withdrawal was something the president "has discussed." Trump's stated rationale: European NATO members refused to directly participate in Iran war operations or aid reopening the Strait of Hormuz. The administration is using the Iran war to pressure NATO allies toward burden-sharing targets — but has not triggered the statutory withdrawal process (which requires a two-thirds Senate vote or congressional approval under the 2023 NDAA).
+
+**Taiwan dimension**: A South China Morning Post poll (April 2026) found 57% of Taiwanese respondents do not believe the U.S. would send troops to defend Taiwan if war broke out in the Taiwan Strait. The Global Taiwan Institute characterized Trump's second-term policy as compounding "strategic ambiguity" in ways that weaken deterrence. The Taiwan Assurance Implementation Act, signed into law in early 2026, requires regular State Department reviews of U.S.-Taiwan relations — but provides no binding defense commitment. The Six Assurances to Taiwan Act (H.R. 3452, 119th Congress) is still in House, not yet passed.
+
+**Why this matters for Week 2**: The Iran war WPR standoff sets the template for Taiwan Strait scenarios. If the administration can conduct 60+ days of air combat without congressional authorization — and no court will accept standing to enforce the WPR — the same theory applies to any future Taiwan Strait operation. Taiwan's eroding confidence in U.S. commitment tracks with the real deterioration of the WPR enforcement mechanism.
+
+**Domain 38 consideration**: The connection between WPR unenforceability and Taiwan deterrence erosion is not currently analyzed in Domain 19f (which focuses on Iran). A Domain 19f Section 17 on "Taiwan Strait War Powers Implications" may be warranted after the *Slaughter* decision if the removal-protection ruling further concentrates executive war-initiation authority.
+
+**Domains affected**: 19f (Sections 14 and 16), 28 (international security synthesis)
+**Recommendation**: MONITOR for Week 2; update Domain 19f Section 14 if any formal NATO withdrawal notice is transmitted
+**Sources**: [CNN — Trump "absolutely" considering NATO withdrawal](https://edition.cnn.com/2026/04/01/middleeast/trump-nato-us-withdrawal-intl) | [Al Jazeera — Trump mulls NATO withdrawal](https://www.aljazeera.com/news/2026/4/8/trump-administration-says-it-is-mulling-nato-withdrawal-after-iran-war) | [Washington Post — Trump floats pullout](https://www.washingtonpost.com/politics/2026/04/08/trump-nato-withdrawal-rutte/) | [CFR — NATO 77th anniversary analysis](https://www.cfr.org/articles/nato-is-marking-its-seventy-seventh-anniversary-will-it-be-its-last) | [Global Taiwan Institute — Trump Taiwan policy](https://globaltaiwan.org/2026/01/trumps-policy-toward-taiwan/) | [SCMP — Taiwan poll doubts U.S. defense](https://www.scmp.com/news/china/politics/article/3350926/trump-effect-taiwan-poll-reveals-deep-doubts-about-us-military-protection)
+
+---
+
+#### W2.B — Prosecutorial Weaponization: Grand Jury Failure Rate Documented; Retaliatory Pattern Hardening
+
+**Urgency**: HIGH
+**Date range**: February–April 2026
+**What happened**: A federal grand jury in Washington, D.C. rebuffed the DOJ's attempt to indict six Democratic lawmakers — all military or intelligence veterans — over a 90-second video reminding troops they can refuse illegal orders. The indictment was pursued by U.S. Attorney Jeanine Pirro's office (D.C., Trump appointee). This is at least the fourth or fifth instance where a grand jury has returned a "no bill" in a politically charged case brought by the current DOJ — an anomaly measured against the department's historical indictment success rate (in FY2016, only 6 "no bill" outcomes in 69,451 felony cases sought).
+
+**Pattern documentation**: Protect Democracy's retaliatory action tracker documents the pattern across multiple agencies. The DOJ dismantled its Public Integrity Section — the post-Watergate unit designed to prevent politically motivated prosecutions — and has not replaced its oversight function. ABC News catalogued the growing list of targeted individuals: James Comey, Lisa Cook, Mark Kelly, and others.
+
+**SPLC update entering Week 2**: DOJ response to SPLC's two pretrial motions (grand jury disclosure and prejudicial statements) was due May 5. The SPLC's formal Rule 12(b) motion to dismiss was described by counsel as "forthcoming" as of Week 1 close. The case remains before U.S. Magistrate Judge Kelly Fitzgerald Pate in Montgomery, Alabama. No arraignment date has been set. Former federal prosecutors citing Just Security analysis assess dismissal before trial as "plausible" given the wire fraud count's reliance on an undemonstrated donor-deception element and the absence of any donor-complainants.
+
+**Domain 29 status**: The grand jury failure rate in politically charged cases is new evidence for Domain 29's systemic pattern analysis. Section 13 should note: (a) grand jury weaponization as offensive tool (SPLC motions); (b) grand jury as resistance node — when presented with weak political prosecutions, grand juries have repeatedly declined to indict. This is a counter-pattern that Domain 29 has not fully documented.
+
+**Domains affected**: 29 (Sections 13 and counter-pattern documentation), litigation-tracker-2026.md Category 10
+**Recommendation**: TRACK-UPDATE — add grand jury resistance sub-pattern to Domain 29 Section 13
+**Sources**: [The Dupree Report — grand jury rebuffs DOJ](https://www.thedupreereport.com/2026/02/grand-jury-indictment-democrats/) | [NBC News — DOJ fails to secure indictment](https://www.nbcnews.com/politics/trump-administration/doj-fails-secure-indictment-democrats-involved-illegal-orders-video-rcna258385) | [ABC News — DOJ uphill battle on indictments](https://abcnews.com/US/doj-faced-uphill-battle-securing-indictments-administration-opponents/story?id=130113916) | [Protect Democracy — retaliatory action tracker](https://protectdemocracy.org/work/retaliatory-action-tracker/) | [CNN — Trump failed to weaponize justice](https://www.cnn.com/2026/02/12/politics/trump-pam-bondi-mark-kelly-justice-department-analysis) | [Davis Vanguard — DOJ charges SPLC](https://davisvanguard.org/2026/04/doj-charges-splc-fraud/)
+
+---
+
+#### W2.C — Voting Rights: Arizona DOJ Voter Roll Lawsuit DISMISSED; 7th State Win
+
+**Urgency**: HIGH
+**Date**: April 28, 2026
+**What happened**: U.S. District Judge Susan Brnovich (a Trump appointee, sitting in Arizona) dismissed the DOJ's lawsuit demanding Arizona's detailed voter records. Judge Brnovich held that Arizona's statewide voter registration list is "not a document subject to request by the Attorney General" under federal law. This is the most significant dismissal to date because: (1) it was issued by a Trump-appointed judge, undermining the DOJ's claim that its voter-roll authority is legally settled; (2) Arizona was a high-profile battleground state target; (3) the dismissal used a statutory interpretation theory — "not subject to request" — that differs from the standing/procedural grounds used in earlier dismissals, creating a circuit split if the Ninth Circuit affirms.
+
+**Cumulative dismissal score**: Courts have now dismissed DOJ voter-roll lawsuits in Rhode Island, California, Massachusetts, Michigan, Oregon, Georgia (procedural, refiled elsewhere), and now Arizona. Seven state-level dismissals, including one Trump-appointed judge. The DOJ has appealed all decisions and sought expedited review of the Michigan case in the Sixth Circuit. Appellate decisions expected before the November 2026 midterms.
+
+**What to watch Week 2–4**: (1) Sixth Circuit expedited review of the Michigan dismissal — this is the most likely vehicle for a circuit ruling on DOJ voter-roll authority before November 2026. (2) Whether the 12 states that voluntarily complied begin resisting compliance after the Arizona dismissal and the Trump-judge precedent. (3) Voting rights group counter-lawsuit against the DOJ national voter database — JURIST confirmed the ACLU-led coalition has filed.
+
+**Domain 01 update required**: The Arizona dismissal should be added to Domain 01's litigation section. The Trump-appointed judge dimension is important — it indicates the DOJ's voter-roll theory is losing not just from Democratic-appointed courts but from Trump's own nominees. This is a significant evidentiary development for any presentation to institutional audiences.
+
+**Domains affected**: 01 (primary — add Arizona dismissal + Trump-judge dimension to litigation section), 29 (DOJ voter roll strategy as systemic pattern), litigation-tracker-2026.md
+**Recommendation**: TRACK-UPDATE
+**Sources**: [Washington Times — Arizona dismissal](https://www.washingtontimes.com/news/2026/apr/28/federal-judge-dismisses-doj-lawsuit-arizona-seeking-voter-data/) | [NBC News — Arizona dismissal](https://www.nbcnews.com/politics/justice-department/judge-dismisses-doj-lawsuit-seeking-arizona-voter-data-rcna342613) | [JURIST — voting rights group sues DOJ national database](https://www.jurist.org/news/2026/04/voting-rights-group-sues-doj-over-national-voter-database/) | [Washington State Standard — WA voter rolls can move forward](https://washingtonstatestandard.com/2026/04/07/months-later-doj-lawsuit-to-obtain-wa-voter-rolls-can-move-forward/) | [National Law Review — DOJ voter roll lawsuits primer](https://natlawreview.com/article/dojs-voter-roll-lawsuits-primer) | [DOJ press release — four additional state lawsuits](https://www.justice.gov/opa/pr/justice-department-sues-four-additional-states-and-one-locality-failure-comply-federal)
+
+---
+
+#### W2.D — SCOTUS: Slaughter Track Confirmed; Mail Ballot Counting Case (Bost) Has Threshold Implications
+
+**Urgency**: HIGH (Slaughter); MONITOR (Bost)
+**Date range**: OT2025 term, ongoing
+**Slaughter status**: No opinion issued as of April 29. Oral arguments were December 8, 2025. Court observers assess a 6-3 conservative majority will either narrow or overrule *Humphrey's Executor*. Decision expected late June/early July. The 6-3 shadow docket stay (September 2025) is documented in Domain 35.
+
+**Mail ballot counting case (Bost v. Illinois)**: In a 7-2 ruling, the Court held that Republican challenger Michael Bost meets the legal threshold to bring a lawsuit challenging Illinois' policy of counting mail-in ballots received after Election Day. The Court did not decide the merits of whether counting late-arriving ballots is legal — it only ruled Bost has standing to sue. The case will now proceed to the merits. This is a direct threat to post-Election Day mail ballot counting policies in any state with similar rules. The 2026 midterms will produce additional standing vehicles for similar challenges. Pattern connection: Domain 33 (state legislative autocratization) and Domain 01 (voting rights restrictions) both need an entry on SCOTUS validating challenges to mail ballot receipt deadlines.
+
+**National Republican Senatorial Committee v. FEC**: The Court will reconsider its 2001 ruling on party coordination limits in campaign advertising (from the same term). A ruling loosening coordination limits would substantially advantage Republican party infrastructure by allowing unlimited coordination between Senate campaigns and party committees — effectively eliminating the distinction between candidate spending and party spending. Domain 02 (campaign finance) and Domain 35 should both track this.
+
+**Domains affected**: 35 (primary — update with Bost standing ruling and NRSC v. FEC watch); 01 (Bost mail ballot implication); 02 (NRSC v. FEC)
+**Recommendation**: TRACK-UPDATE on Domain 35 when Bost merits briefing schedule announced; TRACK-UPDATE on Domain 01 to add mail ballot receipt deadline threat vector
+**Sources**: [Democracy Forward — 2025-26 SCOTUS guide](https://democracyforward.org/work/research/peoples-guide-scotus-25-26/) | [SCOTUSblog — Slaughter case file](https://www.scotusblog.com/cases/case-files/trump-v-slaughter/) | [SCOTUSblog — Slaughter explainer](https://www.scotusblog.com/2025/12/trump-v-slaughter-an-explainer/) | [Alliance for Justice — term preview](https://afj.org/why-courts-matter/2025-2026-supreme-court-term-preview/) | [Democracy Docket — Slaughter independent agencies](https://www.democracydocket.com/news-alerts/supreme-court-trump-ftc-slaughter-dismissal-independent-agencies/)
+
+---
+
+#### W2.F — Fiscal Authority: OMB Category C Apportionments Escalating; Transparency Restored but Pattern Deepens
+
+**Urgency**: HIGH (structural erosion ongoing)
+**Date range**: FY2025–2026
+**What happened**: OMB's use of "Category C" apportionments — a mechanism that allows OMB to attach conditions to the release of congressionally appropriated funds, effectively imposing restrictions Congress never authorized — has escalated sharply. In FY2025, OMB issued 374 Category C apportionments (6.06% of total). In FY2026 as of March 18, 2026, OMB had already issued 345 Category C apportionments (8.64% of total, up 43% in proportional terms year-over-year). Federal News Network confirmed that apportionments "are playing a decisive role in how Congress' funding decisions are actually carried out" — with OMB conditions regularly restricting spending in ways that deviate from congressional intent.
+
+**Transparency context**: OMB took down its public apportionment database on March 24, 2025. In response to a court order, OMB restored public access August 15, 2025. The transparency was restored, but the pattern of Category C expansion continued. The CBPP documented that the administration "abused spending safeguards to advance its agenda — and illegally hid its actions." Protect Democracy has a dedicated Restoring Spending Transparency project tracking this.
+
+**Connection to ICA challenge**: The Category C escalation is the softer version of the ICA unconstitutionality claim — rather than openly defying the Impoundment Control Act, OMB is using apportionment conditions to achieve the same practical result (restricting congressionally appropriated spending) while maintaining technical legal cover. If the *Slaughter* ruling expands presidential removal power and the ICA unconstitutionality theory reaches SCOTUS, the Category C mechanism will have created the evidentiary record of how far executive fiscal authority has already stretched.
+
+**Domain 34 update required**: The 8.64% Category C figure and year-over-year escalation should be added to Domain 34's "fiscal control mechanisms" section. The FY2025 → FY2026 acceleration is the clearest quantitative measure of the trend. The Lawfare "Breaking Down OMB's Growing Use of Category C" analysis is the primary source.
+
+**Domains affected**: 34 (primary — Category C escalation as quantified fiscal control mechanism), 26 (accountability void — OMB secrecy then court-ordered restoration)
+**Recommendation**: TRACK-UPDATE — add Category C escalation data to Domain 34 Section on fiscal control mechanisms
+**Sources**: [Lawfare — Breaking Down OMB's Growing Use of Category C](https://www.lawfaremedia.org/article/breaking-down-omb-s-growing-use-of-category-c) | [Federal News Network — apportionments decisive role](https://federalnewsnetwork.com/budget/2026/04/apportionments-are-playing-a-decisive-role-in-how-congresss-funding-decisions-are-actually-carried-out/) | [CBPP — Trump abused spending safeguards](https://www.cbpp.org/research/federal-budget/trump-administration-abused-spending-safeguards-to-advance-its-agenda-and) | [Protect Democracy — restoring spending transparency](https://protectdemocracy.org/work/restoring-spending-transparency/)
+
+---
+
+#### W2.H — AI Governance: Federal Election Security Drawdown; AI Campaign Spending Scaling Up
+
+**Urgency**: MONITOR — structural
+**Date range**: April 2026
+**What happened**: The federal drawdown of election support infrastructure — documented in Domain E.1 (CISA gutting) — has a parallel AI-governance dimension. Nextgov/FCW reported that federal election security support drawdown has "destroyed ongoing relationships" with state and local officials who previously relied on CISA's AI-assisted threat monitoring tools (April 2026). Concurrently, AI spending on 2026 campaign trail operations is accelerating (Quartz), with AI used for voter targeting, deepfake content, and disinformation at scale. The EAC published AI safeguards guidance in 2026, but it is non-binding.
+
+**WISeR clarification**: The "WISeR" acronym in the original task brief refers to a CMS Medicare model (Wasteful and Inappropriate Service Reduction), not a federal election AI system. No federal election AI system called WISeR exists as of the research sweep. Domain 36 (AI Governance) should not include this reference unless a different context is identified.
+
+**Election-adjacent AI risk**: AI systems are being deployed in 2026 campaign infrastructure (voter targeting, advertising, synthetic media) without federal governance requirements. The AI + Elections Clinic (mentioned in EAC context) is conducting 2026 training sessions for election officials on responsible AI tool implementation. No federal legislation specifically governing AI use in elections is currently enacted.
+
+**Domain 36 status**: If the framework includes a Domain 36 on AI Governance, the election-adjacent AI dimension (deepfakes, targeting, synthetic media, CISA gap) should be added as a subsection. The federal governance void — CISA defunded, no AI election law, EAC guidance non-binding — is the current state.
+
+**Domains affected**: 36 (AI Governance — election-adjacent deployment), 37 (election security), 37b (VOTE-ISAC / CDT as governance gap fillers)
+**Recommendation**: MONITOR; conditional TRACK-UPDATE for Domain 36 if federal AI election governance becomes active issue before November 2026
+**Sources**: [Nextgov/FCW — federal election support drawdown](https://www.nextgov.com/cybersecurity/2026/04/federal-drawdown-election-support-destroyed-ongoing-relationships-experts-say/413181/) | [Quartz — AI spending 2026 campaign trail](https://qz.com/ai-2026-election-policy-regulation) | [EAC — AI and Election Administration](https://www.eac.gov/AI) | [Federal News Network — federal AI sovereign infrastructure](https://federalnewsnetwork.com/commentary/2026/04/the-future-of-federal-ai-building-sovereign-infrastructure-from-the-ground-up/) | [Brennan Center — AI safeguards for election administration](https://www.brennancenter.org/our-work/research-reports/safeguards-using-artificial-intelligence-election-administration) | [If You Can Keep It — AI coming for 2026 election](https://www.ifyoucankeepit.org/p/ai-is-coming-for-the-2026-election)
+
+---
+
 ### WEEK 3: May 15–21, 2026
 
 #### Pre-calendar deadlines entering Week 3:
@@ -528,6 +640,11 @@ Key confirmed outcomes from the May 1–7 research pass:
 | surveillance-tracking.md | FISA 702 reauthorized for two years WITHOUT warrant requirement; chaotic House vote; 13-day emergency extension preceded final passage | Fill post-deadline checklist: 2-year reauthorization confirmed, no warrant, no data broker fix, brief lapse possible; note implications for midterm surveillance window | CRITICAL — complete this session | PENDING |
 | 06 — Judicial Independence | Virginia Supreme Court oral arguments April 27 on challenge to voter-approved redistricting; Utah court-packing attempt; SCOTUS Texas map reinstatement along ideological lines | Add Section 15 (State Judicial Independence): document state court composition battles, court-packing attempts, and use of courts to void voter-approved outcomes; update federal track with circuit vacancy data | HIGH | PENDING |
 | 26 — Government Accountability | IG offices at 16.6% workforce reduction; $186B improper payments with no oversight; ProPublica "Team America" investigation documents systematic replacement of career election officials | Update Domain 26 with: (1) IG workforce loss quantification; (2) $186B improper payments consequence; (3) ProPublica findings as primary source for election capture personnel analysis | HIGH | PENDING |
+| 01 — Voting Rights | Arizona DOJ voter roll lawsuit dismissed April 28 by Trump-appointed judge (7th state win); statutory theory ("not subject to AG request") creates circuit-split potential | Add Arizona dismissal + Trump-judge dimension to Domain 01 litigation section; update cumulative dismissal count; add note on Bost v. Illinois mail ballot standing ruling | HIGH | PENDING (General Research Agent pass) |
+| 34 — Congressional Fiscal Authority | OMB Category C apportionments at 8.64% of FY2026 total (up from 6.06% FY2025, 43% proportional increase) — quantified fiscal control escalation | Add Category C escalation data and year-over-year trend to Domain 34's fiscal control mechanisms section; cite Lawfare analysis as primary source | HIGH | PENDING (General Research Agent pass) |
+| 29 — Prosecutorial Weaponization | Grand jury resistance pattern: DOJ failed to indict Democratic lawmakers (4th+ no-bill in politically charged cases); historical anomaly documented (FY2016: 6 no-bills in 69,451 felony cases) | Add "grand jury resistance" as counter-pattern sub-section in Domain 29 Section 13 alongside weaponization documentation; cite ABC/NBC reporting | MEDIUM | PENDING (General Research Agent pass) |
+| 35 — SCOTUS | Bost v. Illinois: 7-2 ruling grants standing to challenge mail-ballot receipt deadline; NRSC v. FEC on party coordination limits also pending this term | Add Bost standing ruling to Domain 35 mail ballot section; add NRSC v. FEC watch for campaign finance domain | HIGH | PENDING (General Research Agent pass) |
+| 19f — War Powers Reform | NATO withdrawal held off (April 8 Rutte meeting) but stated as under active consideration; Taiwan confidence poll: 57% of Taiwanese doubt U.S. defense commitment; WPR unenforceability template applicable to Taiwan Strait | Add NATO withdrawal status to Section 14; add Taiwan deterrence erosion note cross-referencing WPR enforcement failure; flag as pending Domain 19f Section 17 candidate | MEDIUM | PENDING (General Research Agent pass) |
 
 ---
 
@@ -658,6 +775,15 @@ The FISA 702 two-year reauthorization without warrant protections represents a n
 **Cross-reference maintenance**: When an entry triggers a domain update, add a note to the relevant domain file header and to this tracker's "Domain Update Recommendations" table
 **CHECKIN.md protocol**: Any CRITICAL-tier item that requires user decision should be flagged in CHECKIN.md under "Urgent / Time-Sensitive"
 
+**General Research Agent (April 29) housekeeping notes**:
+- Arizona DOJ voter roll lawsuit dismissed April 28 by Trump appointee — add to Domain 01 litigation section and update C.3 dismissal count from 6 to 7 states
+- OMB Category C apportionments at 8.64% — add to Domain 34 fiscal control mechanisms section
+- Grand jury resistance pattern documented — add counter-pattern note to Domain 29 Section 13
+- Bost v. Illinois standing ruling (7-2) — add to Domain 35 and Domain 01
+- NATO withdrawal: held off April 8 but stated as under consideration — update Domain 19f Section 14
+- WISeR (federal election AI) — clarified as Medicare program, NOT election system; remove from Domain 36 tracking if present
+- AI in elections: no federal AI election governance law enacted; EAC guidance non-binding; CISA gap confirmed — add to Domain 36 or Domain 37 AI subsection
+
 **Session 628 housekeeping notes**:
 - surveillance-tracking.md post-deadline checklist needs updating (FISA 702 two-year reauthorization confirmed, no warrant) — do next session if not done this one
 - Domain 19f needs Section 16 on post-deadline WPR enforcement failure — first-priority domain document update
@@ -678,6 +804,8 @@ The FISA 702 two-year reauthorization without warrant protections represents a n
 | May 15 | Iran $200B supplemental request expected | UPCOMING | New A.4 entry in Week 2 |
 | May 20 | FISA follow-on vote (if short extension) | MOOT — 2-year deal passed | Remove from calendar |
 | Late May–June | SCOTUS *Slaughter* decision | UPCOMING | New D.3 entry when issued; immediate Domain 35 update required |
+| April 28 | Arizona DOJ voter roll lawsuit dismissed (Trump appointee) | CONFIRMED — 7th state wins; statutory theory | Add to Domain 01 litigation section; update cumulative count |
+| April 29 | General Research Agent late-intelligence sweep | COMPLETED — 6 new confirmed items added to Week 2 | See housekeeping notes above |
 | May 31 | End of Month | | Cross-domain synthesis pass; archive Week 1–4; open JUNE_2026_TRACKER.md |
 
 ---

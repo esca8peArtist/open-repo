@@ -2,7 +2,7 @@
 title: Amazon FBA vs. Etsy Fulfillment Strategy Analysis — ModRun Cable Management
 date: 2026-04-29
 status: active
-version: 2.1
+version: 2.2
 tags: [mfg-farm, amazon, etsy, fulfillment, strategy, modrun]
 related: pricing-strategy.md, fulfillment-workflow.md, market-research.md
 ---
@@ -43,6 +43,11 @@ Amazon becomes compelling exactly when Etsy's ceiling becomes visible: when mont
 Fulfillment by Amazon (FBA) means shipping inventory to Amazon's fulfillment centers in advance. Amazon stores, picks, packs, and ships individual orders. Products become Prime-eligible, which is the single largest conversion lever on the platform.
 
 Amazon Handmade is a separate storefront within Amazon for artisan-made goods. 3D-printed original designs qualify. Handmade sellers can use either FBA (batch-print forward stock, ship to warehouse) or FBM (fulfill each order yourself). For ModRun, FBM on Amazon is a structural compromise: it captures neither Etsy's audience alignment nor Amazon Prime's delivery advantage.
+
+**Amazon Handmade category approval and Professional plan waiver:**
+Amazon Handmade requires a Professional selling account — the Individual plan is not eligible. The application covers two areas: "About you" (seller background, production methods) and "Your products and process" (materials, how items are made). Amazon reviews applications manually; vague answers are rejected more frequently than detailed ones. For 3D-printed items, the key requirement is demonstrating that designs are original: upload photos of the production process, describe the design tool (CadQuery), and describe the material (PLA/PETG, Bambu P1S printer). Amazon waives the $39.99/month Professional plan fee from the second month onward for approved Handmade sellers — a $480/year saving. This changes the break-even calculus significantly: at approved Handmade status, the Professional plan effectively costs $39.99 for the first month only, then $0 thereafter. ModRun qualifies cleanly as an original-design artisan product. The approved categories that fit cable management include Home, Kitchen & Dining, and Sporting Goods (desk/office accessories fall under Home).
+
+ModRun's products fall under 13 approved Handmade categories: Accessories, Artwork, Baby, Beauty & Personal Care, Clothing/Shoes/Handbags, Home, Outdoor & Home Care, Jewelry & Watches, Kitchen & Dining, Pet Supplies, Sporting Goods, Stationery & Party Supplies, and Toys & Games. Cable management clips and rails fit naturally under Home or Kitchen & Dining. Food and electronics are excluded — not relevant here.
 
 ### 2026 Fee Schedule
 
@@ -127,6 +132,23 @@ Beginning January 2026, Amazon expanded the Low Inventory Level Fee to include b
 - FBA New Selection: free storage, liquidations, and customer returns for new ASINs (first 90 days)
 
 Total potential value: approximately $600+ in first-year benefits, but each requires specific enrollment steps and timing. The Vine credit is the most strategically important — it enables generating the first 30 reviews without paying per-review, bypassing the cold-start problem partially.
+
+**Inventory capacity limits and IPI score (2026 updates):**
+
+Amazon measures FBA capacity in cubic feet per storage type (standard-size, oversize, apparel, footwear). New professional seller accounts receive unlimited capacity for their first 39 weeks (approximately 9 months), after which capacity is governed by the Inventory Performance Index (IPI) score.
+
+IPI score ranges and their effects:
+
+| IPI Score | Status | Capacity Impact |
+|---|---|---|
+| 600+ | Excellent | Full capacity, no restrictions |
+| 500–600 | Good | Standard capacity, minor flexibility limits |
+| 400–500 | Average | Restricted capacity, additional scrutiny |
+| Below 400 | At risk | Storage limits imposed, restock restrictions |
+
+The current IPI minimum threshold is 400, reduced from 450 in prior years. Sellers below 400 face hard restock limits and may be unable to send new inventory to Amazon warehouses. For ModRun in Phase 2, this is not an operational concern — new sellers begin with unlimited capacity for nine months, and a 50–75-unit batch of small standard-size items occupies 0.5–1.0 cubic feet total. The IPI score becomes relevant only when FBA volume reaches the multi-SKU, 100+ unit/batch scale (Phase 3+).
+
+**Capacity limit changes since mid-2025:** Amazon reduced FBA storage limits by approximately 75% for established sellers in May 2025, cutting the storage window from six months of forecasted sales to five months. For new sellers protected by the 39-week unlimited window, this change does not affect Phase 1 or Phase 2 operations. Phase 3 planning should account for the five-month cap when projecting forward stock levels.
 
 ---
 
@@ -644,3 +666,12 @@ START: What is current monthly unit volume?
 - [How to Start and Scale a 3D Print Farm Business: The Complete Guide — 3DCentral Solutions Inc.](https://3dcentral.ca/how-to-start-and-scale-a-3d-print-farm-business-the-complete-guide/)
 - [Turn Your 3D Printer Into Profit: 14 Business Ideas for Selling Online in 2026 — Amazon Selling](https://sell.amazon.com/blog/printing-business-ideas)
 - [Etsy or Amazon Handmade? Platform Comparison for 3D Printing Sellers — eufymake US](https://www.eufymake.com/blogs/business-ideas/amazon-handmade-vs-etsy)
+- [Amazon Handmade: Everything Sellers Need To Know In 2026 — SellerApp](https://www.sellerapp.com/blog/amazon-handmade/)
+- [How to Apply for Amazon Handmade in 2025 (Step-by-Step Guide) — Craftybase](https://craftybase.com/blog/how-to-apply-for-amazon-handmade)
+- [2026 Amazon Restock Limits: Overview, Tips, and More — ZonGuru](https://www.zonguru.com/blog/amazon-restock-limits)
+- [Ins And Outs Of Amazon Inventory Performance Index in 2026 — SellerApp](https://www.sellerapp.com/blog/amazon-inventory-performance-index-ipi/)
+- [Amazon FBA Capacity Limits Cut By 75%: The Guide For Sellers In 2026 — AMZ Prep](https://amzprep.com/amazon-fba-capacity-cut-seller-guide/)
+- [Amazon FBA Inventory Management & Capacity Limits — Brandwoven](https://gobrandwoven.com/resources/articles/understanding-amazon-capacity-limits-for-fba-inventory-amazon-seller-central-inventory-management-explained/)
+- [Amazon IPI Score 2025: Avoid FBA Storage Fees and Restock Limits — Seller Labs](https://www.sellerlabs.com/blog/amazon-ipi-score-2025/)
+- [Selling 3D Prints on Amazon: Costs, Products & Strategies — BeBold Digital](https://www.bebolddigital.com/blog/how-to-sell-3d-prints-on-amazon)
+- [Would 3D prints I design and print myself qualify for Amazon Handmade? — Amazon Seller Central Forums](https://sellercentral.amazon.com/seller-forums/discussions/t/164d0ec7-988c-46a3-a276-40cf326d092a)
