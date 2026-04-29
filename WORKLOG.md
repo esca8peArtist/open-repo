@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 03:50 UTC — cybersecurity-hardening — TIER 3 Threat Model and Implementation Guide
+
+**Task**: Research and write TIER 3 threat model and implementation guide for sophisticated adversaries (state intelligence, federal law enforcement with FISA authority, organized crime with technical capability).
+
+**Files created**:
+- `projects/cybersecurity-hardening/tier-3-threat-model.md` (~4,800 words, 39KB)
+- `projects/cybersecurity-hardening/tier-3-implementation-guide.md` (~5,000 words, 36KB)
+
+**Threat model coverage**:
+- NSA XKEYSCORE/upstream collection, PRISM, Section 702 (349,823 targets confirmed 2025), NSL authority
+- FBI parallel construction, Section 702 backdoor searches confirmed against protesters/journalists/political donors
+- CBP border search: 47,047 device searches FY2024, no-warrant authority confirmed via Directive 3340-049A
+- SS7/3GPP attacks: location tracking, SMS interception, call rerouting — confirmed active exploitation by surveillance vendor July 2025
+- GrayKey November 2024 leak: iOS 18.1+ = no extraction; iOS 18/18.0.1 = partial only; iPhone 11 = full
+- Cellebrite UFED4PC DHS test results April 2025 cited
+- Magnet Axiom DHS test results March 2025 cited
+- NSA ANT catalog hardware implants (COTTONMOUTH, DEITYBOUNCE), supply chain interdiction
+- Signal vulnerabilities: linked device injection (active Russian intelligence technique 2025), desktop client plaintext attachments, TeleMessage on CISA KEV
+- Three practical scenarios: IC journalist, adversary-nation dissident, federal-target organizer
+- TIER 4+ boundary defined: zero-click exploits, global passive Tor deanonymization, chip-level forensics, legal compulsion
+
+**Implementation guide coverage**:
+- Three-tier device architecture (Public/Sensitive/Air-gapped) with setup protocols
+- Tails/Qubes OS selection rationale; Pixel/GrapheneOS vs Samsung forensic comparison
+- iOS: Lockdown Mode, PIN vs biometrics compellability, iCloud disable, 72h auto-reboot
+- Carrier: non-attributable SIM, SS7 countermeasures, Wi-Fi-only device option
+- Border crossing: three options assessed (clean device, remote wipe, PIN refusal)
+- Dead drop and minimal contact protocols for groups
+- Legal countermeasures: Section 702 suppression ruling (Feb 2025), parallel construction challenge, geofence warrant Supreme Court case
+- FOIA filing guidance
+- Hardware replacement schedules, device retirement destruction
+- Implementation checklist
+
+**Key sources**: Freedom of the Press Foundation GrayKey leak, DHS test results for Cellebrite/Axiom, Brennan Center FISA 2026 resource page, TechCrunch SS7 surveillance vendor July 2025, NSA ANT catalog (Grokipedia), CBP Directive November 2024.
+
 ## 2026-04-29 03:31 UTC — Session 622 — Stockbot Engine Restart + Exploration Queue Verification
 
 **Primary Task**: Resolve critical BLOCKED.md item — stockbot engine restart before market open
