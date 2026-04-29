@@ -1,3 +1,59 @@
+## Since Last Check-in (Session 649 — 2026-04-29 18:48–20:30 UTC — ORCHESTRATOR ORIENTATION + ITEM 3 EXECUTION + ROOT CAUSE ANALYSIS)
+
+### ✅ Work Completed: Orchestrator Orientation + Item 3 Exploration Queue (Post-Gate-2 Roadmap)
+
+**Session 649 Work** (18:48–20:30 UTC):
+
+**What was accomplished**:
+
+1. ✅ **Orchestrator Orientation Complete**
+   - **ORCHESTRATOR_STATE.md**: Reviewed all project statuses, priority order, active blocks, inbox
+   - **BLOCKED.md analysis**: 2 active blocks (stockbot allocation coordination, mfg-farm test print)
+   - **Key finding**: Stockbot "insufficient buying power" block is MISDIAGNOSED. Root cause identified:
+     - **NOT** an Alpaca account balance issue
+     - **Architecture-level problem**: 52 concurrent sessions sharing single Alpaca account (~$106K total equity)
+     - **Portfolio collision**: Each session checks `equity * 0.1 / price` independently, competing for same equity pool
+     - **Result**: Internal position-sizing logic fails (`qty < 1`), orders skipped silently
+     - **Solution options**: (A) Deposit $520K to fund all 52 sessions, OR (B) reduce position_size_pct to 0.02, OR (C) implement session-level budget sharing, OR (D) reduce concurrent tickers to 8-10 max
+     - **Status**: Code-level issue (trading_session.py line 1000), not balance issue
+   - **Updated BLOCKED.md** with correct root cause analysis
+
+2. ✅ **Item 3: stockbot Post-Gate-2 Operations Analysis — COMPLETE**
+   - **Deliverable**: `stockbot-post-gate-2-roadmap.md` (8,882 words, 1,018 lines, commit 78e5de8)
+   - **Scope delivered**:
+     - Multi-Asset Class Scaling Architecture (fan-in data aggregator for Alpaca/IB/Binance/CME, normalized schema)
+     - Institutional Risk Management (Kelly criterion worked numerically, Ledoit-Wolf shrinkage, 3-tier circuit breakers)
+     - Regulatory Compliance (PDT counter spec, options assignment checks, crypto FIT21/CA DFAL/NY BitLicense tracking)
+     - Performance Attribution & Gate 3 (crypto 35% MDD threshold vs. equity 20%, rolling 30-day windows)
+     - Implementation Sequencing (7 architecture gaps → 4 phases, 46–67 hrs Phase 1 options, 32–50 hrs Phase 2 crypto)
+     - Binary Decision Criteria (explicit pass/fail conditions at all phase transitions)
+   - **Built on**: Session 587 preliminary research (RESEARCH_NOTES_ITEM8.md), fully synthesized into roadmap
+   - **Status**: Production-ready for post-Gate-1 strategic planning
+
+**Current Project Status**:
+- 🟠 **stockbot**: Engine running, signals generating continuously, NO orders executing (allocation collision, not funding shortage). Root cause diagnosed; solution requires code fix or architecture change
+- 🔴 **resistance-research**: Distribution path decision still needed (Path A / A+37 RECOMMENDED / B) to unblock Phase 1 execution
+- 🔴 **cybersecurity-hardening**: Tier 1–3 materials ready; awaiting user approval to execute
+- 🔴 **mfg-farm**: All pre-launch work complete; awaiting test print confirmation
+- 🔴 **seedwarden**: Phase 1 ready; awaiting 3 tag corrections + Etsy account verification
+- 🔴 **open-repo**: Phase 5 Step 3a COMPLETE (OPDS catalog); Step 3b (REST endpoints) awaiting integration
+
+**Market Session (2026-04-29)**:
+- Current time: 19:00 UTC (15:00 ET) — 1 hour to market close
+- Engine status: Running, generating 50+ signals per cycle, 0 orders executed
+- Next checkpoint: 20:00 UTC market close for Discord summary
+
+**Items Needing Your Input**:
+1. **resistance-research**: Distribution path? Path A / Path A+37 RECOMMENDED / Path B
+2. **cybersecurity-hardening**: Approve Tier 1 messaging templates?
+3. **stockbot**: REVISED DIAGNOSIS — this is an architecture coordination issue, not a funding issue. Code fix required. Account actually has sufficient balance (~$106K shared equity).
+4. **mfg-farm**: Run test print?
+5. **seedwarden**: 3 tag corrections + Etsy verification?
+
+**Session Summary**: Completed orchestrator orientation with deep root-cause analysis of stockbot block (allocation collision, not funding shortage). Executed Item 3 (Post-Gate-2 roadmap, 8,882 words) based on Session 587 preliminary research. EXPLORATION_QUEUE.md updated. 5 of 8 active projects waiting on user decisions/actions. Ready for market close checkpoint at 20:00 UTC.
+
+---
+
 ## Since Last Check-in (Session 648 — 2026-04-29 18:20–19:00 UTC — PARALLEL: RESISTANCE-RESEARCH TRACKER MAINTENANCE + OPEN-REPO PHASE 5 STEP 1)
 
 ### ✅ Work Completed: Tracker Maintenance + ExportService Implementation

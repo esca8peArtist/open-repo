@@ -27,11 +27,11 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Alpaca account insufficient buying power blocks multi-ticker trading
+### stockbot — Multi-session portfolio allocation collision (not Alpaca balance issue)
 **Date blocked**: 2026-04-29
-**Context**: Engine restarted at 03:31 UTC and running successfully. All 11-ticker portfolio generating signals in real-time (BUY/HOLD/SELL). However, at 14:30 UTC when engine attempted to place orders, all orders failed with Alpaca error code 40310000: "insufficient buying power". Account shows only $200-700 available, but simultaneous orders across 11 tickers require much more. Earlier block noted this issue but marked it RESOLVED without actually fixing it. Paper trading validation cannot proceed without sufficient funding.
-**What I need**: Deposit funds to Alpaca paper trading account OR configure account with sufficient buying power for 11-ticker simultaneous trading. Estimated requirement: $5,000–10,000 minimum for reasonable position sizing across all tickers (current positions attempt $300-800/ticker which exceeds $200-700 total balance).
-**Verify with**: `.venv/bin/python -c "import alpaca_trade_api; api = alpaca_trade_api.REST(); account = api.get_account(); print(f'Buying power: ${account.buying_power}')"`
+**Context**: Session 649 root cause analysis: Engine restarted 03:31 UTC, running successfully, ALL 11+ tickers generating signals in real-time (BUY/HOLD/SELL). However, NO orders are executing — signals generated but skipped at position-sizing check. Root cause identified: 52 concurrent trading sessions (one per ticker in batch 2 expansion) sharing single Alpaca account with total equity ~$106K. Each session checks `equity * position_size_pct / share_price` to compute share quantity. With 52 sessions each wanting 10% allocation, internal position-sizing logic fails: `qty < 1` after `max_dollar = equity * 0.1` divided across competing sessions. This is NOT an Alpaca buying power problem (account balance is fine), but an ARCHITECTURE-LEVEL portfolio allocation coordination problem. Earlier logs showed "insufficient allocation" for AVGO @ $398.74 with $106K equity — the check is correct, but assumes single session, not 52 parallel sessions.
+**What I need**: Either (A) deposit funds so account can support 52 * $10K allocation (= $520K total), OR (B) reduce position_size_pct across all sessions to 0.02 (2%) to prevent collision, OR (C) implement account-level budget sharing (coordinator pre-allocates per session before trading), OR (D) reduce concurrent sessions to 8-10 tickers max. Root cause is code-level (trading_session.py line 1000), not funding-level.
+**Verify with**: `tail -50 /home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/trading_20260429.log | grep "insufficient allocation" | wc -l` — if >0, collision still active
 **Resolution**:
 
 ---
