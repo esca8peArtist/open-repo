@@ -4,6 +4,26 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 04:30 UTC — orchestrator — Session 624 Orientation + Stockbot Engine Verification + Exploration Queue Setup
+
+**Status Check**:
+- Stockbot engine: ✅ HEALTHY — running since 03:31 UTC (91 minutes), all 11 paper trading sessions initialized, no errors, market close detected correctly (sleeping until 13:30 UTC market open today)
+- All other projects: Blocked on user decisions (resistance-research path selection, cybersecurity Tier 1 approval, mfg-farm test print, seedwarden tag corrections)
+- Exploration queue: 0/3 active items — added 3 new items to queue
+
+**Exploration Queue Additions** (Session 624):
+1. ✅ **Stockbot: Gate 2 HMM Regime Scaling Validation Framework** — COMPLETE
+   - Deliverable: `docs/gate-2-hmm-validation-framework.md` (comprehensive validation framework, 400+ lines)
+   - Scope: Backtest protocol (walk-forward across regimes), live monitoring metrics (regime accuracy, performance by regime), activation decision rules (halt conditions, confidence thresholds), May 12 checkpoint decision tree
+   - Value: Directly informs Gate 2 approval decision; establishes rigorous HMM validation methodology; integrates with paper_trading_monitor.py
+   - Next step: Execute backtest validation (Priority 1: next 3-5 days) → regime quality audit → stress test validation → confidence scoring
+
+2. Cybersecurity-hardening Phase 2: Supply-Chain and Hardware Security — PENDING (queued)
+
+3. Resistance-research Phase 2: Electoral Interference Detection Framework — PENDING (queued)
+
+---
+
 ## 2026-04-29 05:10 UTC — open-repo — Phase 5 Federation Conflict Resolution Architecture
 
 **Task**: Research and design federation conflict resolution and scaling architecture for Phase 5 (post-PR#1 merge planning).
