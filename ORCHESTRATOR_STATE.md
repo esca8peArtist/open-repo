@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-29T20:05:44Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-29T21:25:11Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.5% (48,020 tokens) | All-models 50.1% | Reset in 124h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.5% (48,020 tokens) | All-models 52.0% | Reset in 123h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -64,42 +64,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+**Root cause**: `_poll_fill()` timed out without confirming fills, but code treated it as success and cleared idempotency guard. Next cycle would resubmit duplicate orders.
 
-## Session 650 — 2026-04-29 19:30 UTC
+**Fix**: 
+- Changed `_poll_fill()` return type from `float` → `(float, str)` to return both price AND final status
+- Only clear idempotency guard if order is confirmed filled/settled
+- If order still "pending_new" after polling, keep guard and return "buy_pending"/"sell_pending"
+- This prevents resubmission when polls timeout
 
-**Project Focus**: stockbot portfolio allocation collision resolution
+**Code changes**:
+- `src/trading/trading_session.py` lines 1355-1394: Updated `_poll_fill()` signature and logic
+- `src/trading/trading_session.py` lines 1149-1170: Updated BUY order handling for pending orders
+- `src/trading/trading_session.py` lines 1219-1243: Updated SELL order handling for pending orders
+- Tests: Updated all `_poll_fill` mocks to return tuple format (4 instances in test_execution_params_integration.py)
 
-**Work Completed**:
-1. ✅ **Diagnosed Active Block** — Verified stockbot multi-session collision still active (AVGO hitting "insufficient allocation" errors in trading logs)
+**Impact**: Eliminates duplicate order submissions; orders now tracked accurately through fill confirmation process.
 
-2. ✅ **Implemented Option C: Account-Level Budget Coordinator**
-   - Enhanced `StrategyCoordinator` (strategy_coordinator.py): Added `set_budget_allocation()`, `get_allocated_budget()`, `pre_allocate_budgets()` methods
-   - Modified `TradingSession` (trading_session.py): 
-     - Added `allocated_budget` parameter to `__init__`
-     - Position-sizing logic now uses allocated_budget if set, fallback to account equity
-     - Changed from integer floor to fractional shares (Alpaca-supported)
-   - Updated `MultiSessionOrchestrator` (launch_stacker_sessions.py):
-     - Computes per-session allocation: `per_session = total_equity / num_sessions`
-     - With 52 sessions and $106K: $2,038 per session
-     - Passes allocated_budget to each TradingSession
+### Issue 2: Missing Discord Alert Webhook URL
+**Root cause**: `.env` file only had `STOCKBOT_DISCORD_WEBHOOK_URL` but code expected both `STOCKBOT_DISCORD_WEBHOOK_URL` and `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL`. Critical alerts (drawdown, losses) were silently skipped.
 
-3. ✅ **Validated Fix**
-   - OLD collision: 52 × 26 shares = 1,352 shares @ $399 = $540K+ (exceeds $106K)
-   - NEW allocation: 52 × 0.51 fractional shares = 26.58 shares @ $399 = $10,600 (safe)
-   - Fractional shares prevent "insufficient allocation" at small allocations
+**Fix**: 
+- Added `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` to `.env` (using same webhook as daily summary for now)
+- Added documentation in `.env` explaining both webhooks and how to use separate channels if desired
 
-4. ✅ **Resolved Block** — Moved stockbot allocation collision from Active Blocks to Resolved Archive with full documentation of solution
+**Impact**: Critical Discord alerts now functional; can be customized with separate alert channel if needed.
 
-5. ✅ **Committed Changes**
-   - Commit 0747453 (stockbot submodule): Core budget allocation implementation
-   - Commit 3343cf8 (parent repo): BLOCKED.md documentation and archive
+### Testing
+- All 20 tests in `test_execution_params_integration.py` pass ✅
+- Idempotency guard behavior verified in unit tests
+- New pending_new status handling tested
 
-**Technical Impact**:
-- 52 concurrent trading sessions now share single $106K account without position-sizing failures
-- Engine can generate BUY/SELL signals and execute orders (previously skipped due to qty < 1)
-- Fractional shares maximize capital utilization without integer flooring errors
+### Database Sync Status
+- Fill confirmation now properly tracked: only recorded when status is "filled"
+- Pending orders retained in open_order_ids for next cycle
+- Next market session will verify fills actually recorded in stockbot.db
 
-**Next Work** (Session 651+):
-- Monitor stockbot trading execution (verify AVGO and other high-price tickers execute successfully)
-- If allocation collision fully resolved, next focus: Gate 1 validation (30+ trades/month threshold)
-- Consider whether to enable HMM regime scaling for Gate 2 validation (Sharpe ≥1.0)
+**Next checkpoint**:
+- 2026-04-30 13:15 UTC: Verify engine restarts and monitoring resumes
+- 2026-04-30 20:00 UTC: Check Alpaca account for actual fill status on pending orders
+- Monitor stockbot.db for trade records matching Alpaca fills
