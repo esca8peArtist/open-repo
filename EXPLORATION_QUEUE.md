@@ -214,6 +214,49 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
+## New Items (Session 631 — Queue Replenishment)
+
+### Item 19: workout Phase 2 — Sports Science & Periodization Research (Conditional — Post-Phase-1-Approval)
+**Status**: QUEUED — Ready to execute upon user approves comprehensive plan
+**Trigger**: User reviews and approves `comprehensive-plan.md`, requests Phase 2 content
+**Scope**: Deep-dive on periodization models, progressive overload frameworks, deload scheduling, injury prevention protocols, sport-specific adaptations
+**Deliverables**: 
+- `phase-2-periodization-roadmap.md` (4,000–5,000 words) — Block periodization (linear, undulating, conjugate), macro/meso/microcycle planning, intensity distribution methods
+- `exercise-progression-database.md` (3,000 words) — Progression schemes by movement pattern (squat, hinge, push, pull, carry), load management curves, plateau-breaking protocols
+- `sports-specific-adaptation-guide.md` (2,500 words) — Endurance, strength sports, power, mobility sport periodization templates
+**Owner**: general-research agent (autonomous execution, estimated 4–5 hours research)
+**Prerequisites**: Phase 1 comprehensive plan approved by user
+
+---
+
+### Item 20: seedwarden Phase 3 — Kickstarter & Scaling Research (Conditional — Post-Phase-1-Launch)
+**Status**: QUEUED — Ready to execute upon Phase 1 email list validation
+**Trigger**: Phase 1 email list reaches 100+ subscribers OR user approves Phase 3 planning
+**Scope**: Kickstarter campaign architecture, hardware manufacturing scaling roadmap, supply chain coordination, community engagement model, funding timeline
+**Deliverables**: 
+- `kickstarter-campaign-plan.md` (3,000–4,000 words) — Campaign story arc, backer reward tiers, manufacturing timeline, risk mitigation, fulfillment logistics
+- `seedwarden-hardware-scaling-roadmap.md` (3,500 words) — Injection molding transition, multi-sku manufacturing, inventory management, regional fulfillment
+- `phase-3-financial-projections.md` (2,000 words) — Break-even analysis, margin modeling, funding requirements, 24-month P&L forecast
+**Key areas**: Backer community engagement (post-campaign), manufacturing risk (tooling lead times), supply chain resilience (dual-source strategy)
+**Owner**: general-research agent (autonomous execution, estimated 3–4 hours research)
+**Prerequisites**: Phase 1 email list established; Phase 2 social content calendar executing
+
+---
+
+### Item 21: mfg-farm Phase 3 — Product Validation & Market Sizing Research (Independent — Start Now)
+**Status**: ACTIVE — Executable immediately (no blocker)
+**Trigger**: Autonomous execution can begin now; test print outcome will validate manufacturing assumptions only
+**Scope**: Market validation for Phase 3 product candidates (laser-engraved items, resin-printed specialty products, injection-molded commodity items); customer sizing, competitive benchmarking, pricing validation
+**Deliverables**: 
+- `phase-3-product-validation-research.md` (3,500–4,000 words) — Market research on Phase 3 candidates (gaming cable organizers, desk accessories, homelab mounts, specialty organizers), TAM/SAM sizing, competitive SWOT, customer willingness-to-pay surveys
+- `phase-3-pricing-strategy.md` (2,000 words) — Pricing benchmarks vs. competitors, margin targets, volume-based pricing tiers, pre-order strategy
+- Updated `ITEM9_PRODUCT_VIABILITY_ANALYSIS.md` with Phase 3 market validation data (append-only)
+**Key areas**: Reddit/Discord communities for pricing research (r/homelab, r/CableMgmt, gaming subreddits), competitor pricing analysis (AliExpress, Amazon, Etsy), direct customer surveys (Phase 1 Etsy reviews as sample population)
+**Owner**: general-research agent (autonomous execution, estimated 2–3 hours research)
+**Prerequisites**: None — Item 9 and 18 provide manufacturing/economics foundation; Phase 1 test print not required for market research
+
+---
+
 ## New Items (Session 593 — Queue Replenishment)
 
 ### Item 11: cybersecurity-hardening Tier 2 Distribution Design (Conditional — Post-Tier 1)

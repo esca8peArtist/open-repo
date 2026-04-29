@@ -2,6 +2,26 @@
 
 ---
 
+## April 29, 2026 — General Research Agent: 2026 Threat Landscape for Cybersecurity-Hardening
+
+**Session type**: Pre-distribution threat landscape research
+**Task**: Assess April–May 2026 developments for impact on cybersecurity-hardening guide set (device-hardening-guide.md, hardware-procurement-guide.md, Tier 1–3 distribution templates)
+
+### File Produced
+
+**`projects/cybersecurity-hardening/2026-threat-landscape-research.md`**
+- FISA Section 702 reauthorization status (April 29: still contested, FISC extended authority through 2027; no warrant protections added)
+- AI-enabled social engineering threat assessment: deepfakes, voice cloning, synthetic spear-phishing — new section recommended for activist and Tier 3 implementation guides
+- Bitwarden CLI npm supply chain compromise (April 22, 90-minute window) — Priority 1 guide update flagged; Trivy and Axios npm also compromised in same Shai-Hulud campaign
+- DOJ federal voter database project: 12 states complying, cross-referenced into DHS citizenship verification pipeline; CISA election security cuts leaving 75% of local officials without adequate resources
+- ICE at polls: formal DHS commitment not to target polls but retains arrest authority; practical OpSec guidance for election workers recommended
+- Four priority update actions ranked: (1) Bitwarden note, (2) AI social engineering section, (3) threat model addendum for FISA/voter DB, (4) election OpSec addendum
+
+### Key Finding
+Hardware vendor recommendations (Purism, System76, Framework) need no updates. The Bitwarden CLI supply chain compromise is the only immediately actionable item requiring guide edits before distribution. FISA and AI social engineering require new content, not changes to existing recommendations.
+
+---
+
 ## April 29, 2026 — Session 628: Objection Handling Framework and Quick-Reference Matrix
 
 **Session type**: Pre-distribution preparation — Phase 1 institutional outreach materials

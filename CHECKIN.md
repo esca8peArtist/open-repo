@@ -5,6 +5,61 @@
 
 ---
 
+## Since Last Check-in (Session 631 — 2026-04-29 07:16–07:25 UTC)
+
+### ✅ Exploration Queue Replenishment — IN PROGRESS
+
+**Action Taken**: Added 3 new research queue items to maintain continuity while current items await user input or time triggers.
+
+**New Items Added**:
+1. **Item 19** (workout Phase 2) — Sports science & periodization research (post-Phase-1-approval)
+2. **Item 20** (seedwarden Phase 3) — Kickstarter campaign & hardware scaling (post-Phase-1-launch)
+3. **Item 21** (mfg-farm Phase 3) — Product validation & market sizing research (ACTIVE — executing now)
+
+**Status**: Item 21 is immediately executable (no blockers). General-research agent assigned for autonomous execution.
+
+### Stockbot Market Session — LIVE
+
+**Status**: Engine running cleanly. Market opens 13:30 UTC (6 hours from session start). All 67 trading sessions active and awaiting pre-market wake.
+
+**Timeline**:
+- 13:15 UTC — Pre-market wake (5m remaining)
+- 13:30 UTC — Market open, trading begins
+- 20:00 UTC — Market close, session ends
+- 20:30 UTC — Post-market analysis (Item 3) scheduled
+
+**Next Checkpoint**: 20:00 UTC (market close) for post-market analysis initiation
+
+### All Active Projects — Status Snapshot
+
+| Project | Status | Blocker | Next Action |
+|---------|--------|---------|------------|
+| resistance-research | 35 domains complete | User distribution path (A/B/Hybrid) | Await user decision |
+| stockbot | Engine live, 67 sessions active | None — monitoring | Post-market analysis 20:30 UTC |
+| cybersecurity-hardening | Tier 1, 2, 3 prep complete | Tier 1 approval for distribution | Awaiting user execution |
+| mfg-farm | Business plan + designs + research complete | Test print confirmation | Item 21 (market validation) active |
+| seedwarden | Phase 2 mockup strategy complete | Phase 1 tag corrections + Etsy verification | Item 20 (Kickstarter research) queued |
+| open-repo | Phase 6 roadmap complete | PR #1 merge | Phase 5 architecture pending merge |
+| off-grid-living | Distribution campaign plan complete | User social media execution | Awaiting user action |
+| workout | Comprehensive plan complete | User review + approval | Item 19 (Phase 2 research) queued |
+
+### Needs Your Input
+
+1. **resistance-research distribution path** — Please confirm: Path A (immediate 35-domain), Path A+Domain37 Hybrid (recommended), or Path B (expand to 35+ domains before distribution). Affects Item 6 execution timeline.
+2. **mfg-farm test print status** — Confirmation needed for CadQuery designs; unblocks Item 4 (supplier negotiation).
+3. **stockbot post-Gate-2 analysis** — Scheduled for tonight 20:30 UTC post-market close. Will provide Phase 2 roadmap if Gate 2 validation passes.
+
+### Suggested Priorities (Next Session)
+
+1. **If Item 3 (stockbot) completed successfully** → Integrate findings into PROJECTS.md; begin Phase 2 scaling architecture planning
+2. **If mfg-farm test print confirmed** → Execute Item 4 (supplier negotiation) immediately
+3. **If resistance-research path selected** → Execute Item 6 (Tier 1 distribution) immediately
+4. **Default if all blocked** → Execute Item 21 (mfg-farm market validation) results; review recommendations
+
+---
+
+## History
+
 ## Since Last Check-in (Session 630 — 2026-04-29 07:01–07:15 UTC)
 
 ### ✅ Cybersecurity-hardening: 2026 Threat Landscape Expansion — COMPLETE
