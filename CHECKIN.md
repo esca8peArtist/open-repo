@@ -48,6 +48,25 @@
 
 ---
 
+#### 3. ✅ Resistance-research: Electoral Interference Detection & Documentation Framework — COMPLETE
+**Deliverable**: `projects/resistance-research/electoral-forensics-framework.md` (production-ready, 5 parts + 16 sources)
+
+**CRITICAL FINDING**: Institutional infrastructure inversion.
+- FBI Foreign Influence Task Force dissolved, CISA EI-ISAC terminated, ODNI Foreign Malign Influence Center downsized
+- Same federal apparatus running 'legal machinery to subvert 2026 election' (DOJ national voter database with 81%+ error rate, DOGE matching, voter purges)
+- Requires three-category interference framework (foreign + private domestic + federal domestic), not prior two-category models
+
+**Framework covers**:
+1. Detection methodologies: Temporal synchrony, content replication, account provenance; Russian/China/Iran operational signatures; cross-platform amplification pathways (94% AUC); deepfake detection
+2. Documentation standards: RFC 3161 trusted timestamping, C2PA Content Credentials, DFRLab takedown datasets, platform-specific capture protocols
+3. Legal liability: 52 USC § 30121, 18 USC § 241, CFAA, defamation risk, FCEA certification challenge pathways
+4. Institutional coordination: Taiwan 2024 five-layer model (built over 5 years, now replicable), Estonia RIA hybrid, U.S. NASS/NGO coalition
+5. 2026 U.S. applicability: Four operational windows (infrastructure seeding, primary amplification, hack-and-leak, certification); actionable statutes + reform needs
+
+**Status**: Ready for Week 6-8 Domain 37 post-distribution deployment.
+
+---
+
 ### Stockbot Engine Status
 - ✅ Process running (PID 1202130) since 2026-04-29 03:31 UTC
 - ✅ 62 sessions initialized, all active
