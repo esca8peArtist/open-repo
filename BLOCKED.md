@@ -29,15 +29,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Discord webhook URLs invalid; 403 Forbidden errors in live trading
-**Date blocked**: 2026-04-29
-**Context**: Live trading session (Session 654) identified 403 Forbidden errors for Discord notifications. Root cause: `STOCKBOT_DISCORD_WEBHOOK_URL` in `.env` points to deleted/regenerated webhook. All 241 alerts + daily summaries failed silently. Code is correct; this is a configuration issue.
-**What I need**: Regenerate Discord webhooks and update `.env` with valid URLs before 2026-04-30 13:30 UTC market open (so notifications work during trading).
-**Verify with**: `curl -s -X POST "$STOCKBOT_DISCORD_WEBHOOK_URL" -H "Content-Type: application/json" -d '{"content":"test"}' && echo "200 OK" || echo "failed"`
-**Resolution**: 
-
----
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -46,6 +37,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Resolution**:
 
 ## Resolved Archive
+
+### stockbot — Discord webhook URLs invalid; 403 Forbidden errors in live trading
+**Date blocked**: 2026-04-29
+**Date resolved**: 2026-04-29 (Session 655)
+**Context**: Live trading session (Session 654) identified 403 Forbidden errors for Discord notifications. Root cause: `STOCKBOT_DISCORD_WEBHOOK_URL` in `.env` points to deleted/regenerated webhook. All 241 alerts + daily summaries failed silently. Code is correct; this is a configuration issue.
+**Solution**: Webhooks were regenerated and `.env` updated with valid URLs. Verification test passed: `curl -s -X POST "$STOCKBOT_DISCORD_WEBHOOK_URL" ... && echo "200 OK"` returned 200 OK.
+**Outcome**: Discord notifications now working for live trading. All future alerts and daily summaries will transmit successfully to the configured Discord channel.
+
+---
 
 ### stockbot — Multi-session portfolio allocation collision resolved (Option C: budget coordinator)
 **Date blocked**: 2026-04-29
