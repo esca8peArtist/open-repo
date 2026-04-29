@@ -27,12 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Multi-session portfolio allocation collision (not Alpaca balance issue)
-**Date blocked**: 2026-04-29
-**Context**: Session 649 root cause analysis: Engine restarted 03:31 UTC, running successfully, ALL 11+ tickers generating signals in real-time (BUY/HOLD/SELL). However, NO orders are executing — signals generated but skipped at position-sizing check. Root cause identified: 52 concurrent trading sessions (one per ticker in batch 2 expansion) sharing single Alpaca account with total equity ~$106K. Each session checks `equity * position_size_pct / share_price` to compute share quantity. With 52 sessions each wanting 10% allocation, internal position-sizing logic fails: `qty < 1` after `max_dollar = equity * 0.1` divided across competing sessions. This is NOT an Alpaca buying power problem (account balance is fine), but an ARCHITECTURE-LEVEL portfolio allocation coordination problem. Earlier logs showed "insufficient allocation" for AVGO @ $398.74 with $106K equity — the check is correct, but assumes single session, not 52 parallel sessions.
-**What I need**: Either (A) deposit funds so account can support 52 * $10K allocation (= $520K total), OR (B) reduce position_size_pct across all sessions to 0.02 (2%) to prevent collision, OR (C) implement account-level budget sharing (coordinator pre-allocates per session before trading), OR (D) reduce concurrent sessions to 8-10 tickers max. Root cause is code-level (trading_session.py line 1000), not funding-level.
-**Verify with**: `tail -50 /home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/trading_20260429.log | grep "insufficient allocation" | wc -l` — if >0, collision still active
-**Resolution**:
 
 ---
 
@@ -44,6 +38,20 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Resolution**:
 
 ## Resolved Archive
+
+### stockbot — Multi-session portfolio allocation collision resolved (Option C: budget coordinator)
+**Date blocked**: 2026-04-29
+**Date resolved**: 2026-04-29 (Session 650)
+**Context**: 52 concurrent trading sessions sharing single Alpaca account with $106K equity. Each session independently checked `equity * position_size_pct` for position sizing, causing collision: 52 × (10% of $106K) = 52 × $10,600 = $550K+ demand on $106K account. Signals generated but skipped at position-sizing check (`qty < 1`).
+**Solution Implemented** (Option C — Budget Coordinator):
+1. **StrategyCoordinator enhancement** (`strategy_coordinator.py`): Added `set_budget_allocation()`, `get_allocated_budget()`, and `pre_allocate_budgets()` methods for coordinated account budget distribution.
+2. **TradingSession parameter** (`trading_session.py`): Added `allocated_budget` parameter to `__init__`. Position-sizing logic now uses allocated_budget (if set) instead of full account equity. Changed position-sizing from integer floor to fractional shares (Alpaca-supported) to maximize usable capital.
+3. **MultiSessionOrchestrator logic** (`launch_stacker_sessions.py`): Computes per-session allocation before creating sessions: `per_session_budget = total_equity / num_sessions`. With 52 sessions and $106K: per_session = $2,038. Each session now uses 10% of $2,038 = $203.85 → 0.51 shares at $399/share (safe, no collision).
+4. **Validation**: Old collision model: 52 × 26 shares = 1,352 shares @ $399 = $540K+ (exceeds $106K). New model: 52 × 0.51 shares = 26.58 shares @ $399 = $10,600 (safe, within account).
+**Outcome**: Engine can now support 52+ concurrent sessions without position-sizing failures. Signals execute as BUY/SELL/HOLD without allocation errors.
+**Commits**: Modified `strategy_coordinator.py`, `trading_session.py`, `launch_stacker_sessions.py`
+
+---
 
 ### stockbot — Engine not running; Alpaca auth errors + infrastructure gap resolved
 **Date blocked**: 2026-04-29
