@@ -1,3 +1,47 @@
+## Since Last Check-in (Session 665 — 2026-04-30 00:35 UTC — EXPLORATION QUEUE REPLENISHMENT + DOMAIN 40 ANALYSIS)
+
+### ✅ Work Completed: Phase 2 Pipeline Planning — Domain 40 Candidates Analyzed
+
+**Session 665 Summary**: Executed Item 26 from exploration queue (Domain 40 candidate analysis) while all projects remain blocked on user decisions. Phase 2 expansion pipeline now complete with top 2 research roadmaps ready for implementation decision.
+
+**What was accomplished**:
+
+1. ✅ **Resistance-Research: Phase 2 Expansion Pipeline Complete**
+   - **Added 3 new exploration items** (Items 26-28) to queue since all active projects are legitimately blocked on user decisions
+   - **Executed Item 26: Domain 40 Candidate Analysis**
+     - **5 candidates identified and scored**: Constitutional Architecture (#1, composite 32), Congressional Fiscal Authority (#2, composite 31), Tribal Sovereignty (#3, composite 29), Property Rights (#4, composite 24), Technology Platforms (#5, composite 19)
+     - **Output**: `ITEM26_DOMAIN40_CANDIDATES.md` (9,600 words, 489 lines, 2.7× target depth)
+     - **Format**: Matches Items 12 & 17 (Domains 38 & 39) precision and structure; production-ready for Phase 2 decision-making
+     - **Strategic insight**: Top 2 candidates close the "how do you get there?" gap in current framework:
+       - **Constitutional Architecture**: Pathway for structural reform (Article V, constitutional amendments, international precedent)
+       - **Congressional Fiscal Authority**: Infrastructure for statutory reform (appropriations authority, emergency bypass prevention)
+     - **File**: Committed to master (`6a71349`)
+   - **Outcome**: Phase 2 expansion fully scoped. Domains 38-40 candidates + top research roadmaps ready for post-Phase-1 execution whenever user decides path
+   - **Queue status**: Items 27-28 now queued (seedwarden Phase 3, cybersecurity Tier 2 regional adaptation) ready to execute upon their triggers
+
+**Projects Status**:
+- ✅ **resistance-research**: Phase 1 infrastructure COMPLETE + approved for launch; Phase 2 pipeline (Domains 38-40) COMPLETE with implementation roadmaps; awaiting user distribution path decision (A / A+37 / B) to execute Phase 1 → unlocks Phase 2 wave planning
+- ✅ **stockbot**: Engine running, April 29 market session successful (49 fills, 5x Gate 1 pace); next checkpoint April 30 13:15 UTC market open
+- ⏳ **seedwarden**: Phase 2 production ready; Phase 3 Kickstarter planning queued (Item 27, trigger = Phase 1 launch)
+- ⏳ **cybersecurity-hardening**: Tier 1 distribution ready; Tier 2 regional adaptation queued (Item 28, trigger = Tier 1 approval)
+- ⏳ **mfg-farm**: All prep complete; awaiting test print
+
+**Assessment**: No autonomous work available outside exploration queue. All projects have named blockers (user decisions or market events). Phase 2 planning now feature-complete; awaiting Phase 1 execution trigger. Next scheduled event: April 30 13:15 UTC stockbot market open verification.
+
+**Needs your input** (unchanged from Session 664):
+1. **Resistance-Research Distribution Path**: Select A, A+37 (Recommended), or B → unlocks Phase 1 execution (3-4.5 hours to Batch 1 send)
+2. **Domain 1 Section 4.2 FISA Correction** (5 min): Change "effectively lapsed" to "renewed for three years without warrant requirement"
+3. **Seedwarden Track B Canva Brand Kit**: Set up in existing account (30 min) → enables pin production immediately
+4. **Stockbot May 12 Checkpoint**: Monitor SELL signal execution May 1-9; use findings to inform position-sizing decision
+
+**Suggested priorities for next session**:
+1. **April 30 13:15 UTC**: Monitor stockbot market open (confirm engine health, sessions detect open, begin trading)
+2. **If distribution path selected**: Execute Phase 1 (3-4.5 hours from decision to Batch 1 send; infrastructure ready in PHASE_1_EXECUTION_CHECKLIST.md)
+3. **If Domain 1 correction done**: Phase 1 Gist creation can proceed immediately
+4. **If Canva Brand Kit ready**: Execute seedwarden pin production (10-15 hours mockup + batch + scheduling)
+
+---
+
 ## Since Last Check-in (Session 664 — 2026-04-30 00:47 UTC — ENGINE HEALTH VERIFICATION + APRIL 30 CHECKPOINT PREP)
 
 ### ✅ Work Completed: Stockbot Engine Health Verified + Ready for Market Open

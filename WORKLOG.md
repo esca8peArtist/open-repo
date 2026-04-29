@@ -4,6 +4,58 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 00:35 UTC — Orchestrator Session 665 — Exploration Queue Replenishment + Domain 40 Analysis
+
+**Status**: ✅ COMPLETE — Added 3 new exploration items; executed Item 26 (Domain 40 candidates).
+
+**Work Completed**:
+
+### Exploration Queue Replenishment (Items 26-28) ✅
+- **Item 26**: resistance-research Domain 40 Candidate Analysis — ✅ EXECUTED
+- **Item 27**: seedwarden Phase 3 Kickstarter Campaign & Scaling Strategy — QUEUED (ready for Phase 1 trigger)
+- **Item 28**: cybersecurity-hardening Tier 2 Regional Adaptation Framework — QUEUED (ready for Tier 1 trigger)
+
+### Item 26: Domain 40 Candidate Analysis COMPLETE ✅
+- **Output file**: `projects/resistance-research/ITEM26_DOMAIN40_CANDIDATES.md` (9,600 words, 489 lines)
+- **Delivered at**: 2.7× target depth (matching Items 12 & 17 research quality)
+- **Committed**: `6a71349` on master
+- **Five candidates evaluated and ranked**:
+  1. **Constitutional Architecture and Amendment Process** (composite 32) — RANKED #1
+     - Addresses structural omission: Article V pathways for constitutional reforms (20 active Convention of States applications, Michigan rescission vote Nov 2026)
+     - Strongest coalition: Common Cause, Brennan Center, NAACP, AFL-CIO, constitutional scholars
+     - Research roadmap: Article V architecture, convention threat, democratic-reform case, international comparison (Germany, Ireland, South Africa, Canada), rescission campaign, reform synthesis
+     - Estimated 10-12 hours; all sources identified and cited
+  
+  2. **Congressional Fiscal Authority Restoration** (composite 31) — RANKED #2
+     - Implementation enabling condition: ICA repeal + emergency-authority bypass prevent spending on all Domains 1-39 reforms
+     - Ongoing crisis: administration announced ICA countdown-to-expiration usage; H.R.1180 would repeal outright
+     - Research roadmap: Appropriations Clause, 2026 impoundment crisis, emergency misuse, international comparison, reform pathways
+     - Estimated 8-10 hours; most feasible of five candidates
+  
+  3. **Tribal Sovereignty and Nation-to-Nation Relations** (composite 29)
+  4. **Property Rights and Economic Democracy** (composite 24)
+  5. **Technology Platforms and Democratic Infrastructure** (composite 19)
+
+- **Strategic finding**: Top two candidates are structurally complementary:
+  - Constitutional Architecture = pathway for structural democratic change (constitutional amendments)
+  - Congressional Fiscal Authority = implementation infrastructure for statutory democratic change (appropriations)
+  - Together they close the "how do you get there?" gap that current 35-domain framework leaves open
+- **Format consistency**: Matches Items 12 (Domain 38) and 17 (Domain 39); production-ready for Phase 2 decision-making
+- **Outcome**: Ready to support immediate post-Phase-1 expansion OR deferred Phase 2 planning per user decision
+
+**Projects Status**:
+- ✅ **resistance-research**: Phase 1 APPROVED FOR LAUNCH; Phase 2 pipeline (Domains 38-40) now complete with top 2 research roadmaps ready; awaiting user distribution path decision
+- ⏳ **stockbot**: Engine running; April 30 13:15 UTC market open checkpoint approaching
+- ⏳ **seedwarden**: Phase 2 production ready; Phase 3 planning queued (Item 27)
+- ⏳ **cybersecurity-hardening**: Tier 2 regional adaptation queued (Item 28)
+- ⏳ **mfg-farm**: All prep complete; awaiting test print
+
+**Next checkpoint**: 
+- 2026-04-30 13:15 UTC market open (stockbot engine health verification)
+- Awaiting user decisions: resistance-research distribution path, seedwarden Canva setup, cybersecurity-hardening Tier 1 approval, mfg-farm test print
+
+---
+
 ## 2026-04-30 00:47 UTC — Orchestrator Session 664 — Engine Health Verification + Next Checkpoint Readiness
 
 **Status**: ✅ COMPLETE — Engine health verification ahead of April 30 market open checkpoint (13:15 UTC).

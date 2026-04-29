@@ -506,3 +506,47 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 **Prerequisites**: Day 14 of Phase 1 execution OR user approval
 **Key areas**: Parallel execution efficiency, resource constraints (time/attention), audience building velocity, revenue path flexibility
 
+---
+
+### ✅ Item 26: resistance-research Domain 40 Candidate Analysis (Session 665 COMPLETE)
+**Status**: COMPLETED 2026-04-30 00:25 UTC
+**Scope**: Identify top 3 Domain 40 candidates from gap analysis; design research roadmaps for post-Domain-39 Phase 2 expansion
+**Deliverables**: 
+- `ITEM26_DOMAIN40_CANDIDATES.md` (3,500 words) — 5 candidates evaluated with full gap analysis, urgency assessment, coalition strength, research complexity
+- Research roadmaps for top 2 candidates (8-10K words each format)
+- Format consistency verified against Items 10, 12, 17 (existing domain candidate analysis)
+**Owner**: resistance-research agent (autonomous execution, estimated 2-3 hours research)
+**Prerequisites**: Items 17, 12, 10 complete (Items 38, 39 candidates analyzed)
+**Key areas**: Governance/institutional gaps, international precedent, 2026-2028 policy windows, coalition building potential
+**Rationale**: Phase 2 expansion candidates (Domains 38-40) support multi-wave distribution strategy. Enables user decision-making for post-Phase-1 research priorities.
+
+---
+
+### Item 27: seedwarden Phase 3 Kickstarter Campaign Architecture (Session 665)
+**Status**: QUEUED (ready to execute after Item 11)
+**Trigger**: Phase 1 launch (user tag corrections + Etsy verification) — OR execute now for planning purposes
+**Scope**: Design Kickstarter campaign strategy, hardware manufacturing scaling roadmap, community engagement model, 12-month Phase 3 financial projections
+**Deliverables**: 
+- `phase-3-kickstarter-campaign.md` (3,500 words) — Campaign story arc, backer reward tiers (Standard/Deluxe/Founder levels), stretch goal sequencing, manufacturing timeline, risk mitigation
+- `phase-3-hardware-scaling-roadmap.md` (3,000 words) — Injection molding transition, multi-SKU production, supplier coordination, inventory management, regional fulfillment
+- `phase-3-financial-projections.md` (2,500 words) — Break-even analysis per tier, margin modeling, funding requirements, 24-month P&L forecast with sensitivity analysis
+- `phase-3-community-engagement-playbook.md` (2,000 words) — Post-campaign backer community management, feedback integration, product iteration process, long-term retention
+**Owner**: seedwarden agent (autonomous execution, estimated 3-4 hours research)
+**Prerequisites**: Phase 2 production planning complete (✅ Session 662), Phase 1 email list established (trigger condition)
+**Key areas**: Hardware manufacturing scaling, backer fulfillment logistics, community-driven product development, venture economics modeling
+
+---
+
+### Item 28: cybersecurity-hardening Tier 2 Regional Adaptation Framework (Session 665)
+**Status**: QUEUED (ready to execute after Tier 1 approval)
+**Trigger**: Tier 1 outreach underway (user approval) — OR execute now for contingency planning
+**Scope**: Design Tier 2 messaging variants for 5 jurisdictions; regional threat model analysis; regulatory compliance matrix; international distribution roadmap
+**Deliverables**: 
+- `tier-2-regional-messaging.md` (3,500 words) — 5 jurisdiction-specific messaging variants (US domestic/asylum, EU/GDPR, Canada/Five Eyes, refugee camps, authoritarian exile)
+- `regional-threat-model-analysis.md` (2,500 words) — Threat model divergence by jurisdiction (domestic surveillance vs. commercial risk vs. authoritarian state vs. criminal-only)
+- `regional-compliance-matrix.md` (2,000 words) — Which recommendations conflict with local law, which amplified per jurisdiction, regulatory evolution tracking
+- `international-distribution-roadmap.md` (1,500 words) — Secondary language priorities, institutional partners per region, translation resourcing
+**Owner**: cybersecurity-hardening agent (autonomous execution, estimated 2-3 hours research)
+**Prerequisites**: Tier 1 execution underway (trigger condition) OR execute proactively for contingency planning
+**Key areas**: Jurisdictional threat model localization, regulatory compliance per region, international institutional leverage points
+
