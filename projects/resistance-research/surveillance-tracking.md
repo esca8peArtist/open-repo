@@ -77,35 +77,45 @@ Sources: [The Hill: House Republicans face FISA, reconciliation bill challenges 
 
 ### Post-Deadline Update — OUTCOME PENDING AS OF APRIL 28, 2026
 
-**Status**: April 30, 2026 deadline has NOT yet passed. This checklist is a fill-in stub — to be completed after the April 29-30 vote.
+**Status**: April 30, 2026 deadline has NOT yet passed. Checklist updated April 29 with final pre-vote assessment. Fill in after vote outcome.
 
 **Research integrity note (Session 608 correction)**: A prior session (Session 573) wrote a "COMPLETED" version of this checklist that cited a 60-34 Senate vote and two-year extension as the 2026 outcome. Research verification conducted in Session 608 confirmed that the 60-34 vote and brief-midnight-lapse narrative are the **2024 RISAA reauthorization** (Reforming Intelligence and Securing America Act, April 20, 2024), not a 2026 event. The 2026 April 30 deadline outcome was genuinely pending as of April 28, 2026. The prior session's "confirmed outcome" was a research error. This checklist is reset to pending status.
 
 **Background (confirmed through April 28)**: The prior two-year RISAA reauthorization (April 2024) expires approximately April 2026. Congress passed a 10-day extension (April 17, 2026) through April 30. As of April 28: House Rules Committee recessed without acting on the three-year Foreign Intelligence Accountability Act (Johnson). More than a dozen Republicans publicly oppose the three-year bill on Fourth Amendment warrant grounds. SAVE Act attachment demanded by Trump creates Democratic vote barrier. House vote expected April 29-30.
+
+**April 29, 2026 pre-vote status update**: As of April 29, the House is positioned to vote today (April 29) on the Foreign Intelligence Accountability Act (three-year, no warrant requirement). The legislative situation is unresolved: Rules Committee recessed Monday without advancing the bill. Confirmed House Republican opposition bloc (Burchett, Norman, Self, Massie, Boebert + approximately 10 more) is holding on Fourth Amendment warrant grounds. The American Prospect reported April 28 that the FISA bill has "imploded" — Rules Committee indefinitely postponed its meeting and the Senate postponed its scheduled vote on a clean three-year extension. Speaker Johnson "still does not have the votes." FISC extended the program through next year via classified ruling, meaning a brief statutory lapse would not immediately halt collection — but technology companies compelled to assist could challenge their legal obligation to continue. Only four Democrats (Golden, Gottheimer, Suozzi, Gluesenkamp Perez) voted for prior extensions; 98 House Democrats signed a letter opposing reauthorization without warrant protection (Congressional Progressive Caucus position). The most likely outcome has shifted: based on April 28-29 reporting, a further emergency stopgap (another 5-10 days by unanimous consent) has become the most probable outcome, followed by either a narrowed deal or lapse.
+
+**Updated probability framework (as of April 29, post-bill implosion reporting)**:
+1. Further emergency stopgap (5-10 day, unanimous consent): **most likely** — follows April 28 collapse pattern; path of least resistance; no votes required on substance
+2. Brief lapse followed by emergency action within days: **second most likely** — FISC order continuity reduces operational impact; tech company legal challenges force faster action
+3. Three-year renewal, no warrant requirement: **third** — requires last-minute leadership deal that multiple reports indicate Johnson cannot construct
+4. Warrant amendment attached and passes: **least likely** — would require Republican defectors to accept language they have blocked for weeks
 
 **Fill-in checklist (complete after April 29-30 vote)**:
 - [ ] Vote result: _____ (Passed / Failed / Lapsed / Further stopgap)
 - [ ] Final bill name and duration: _____
 - [ ] Warrant requirement: _____ (Included / Excluded)
 - [ ] Commercial data broker loophole: _____ (Closed / Still Open)
-- [ ] SAVE Act attachment: _____ (Included / Excluded)
+- [ ] SAVE Act attachment: _____ (Included / Excluded / Never attached)
 - [ ] New expiration date: _____
 - [ ] Vote count (if roll call): _____
 - [ ] Civil liberties community response summary: _____
-
-**Pre-vote outcome probability framework (as of April 28, post-Rules Committee collapse)**:
-1. Further emergency stopgap (5-10 day, unanimous consent): most likely following April 28 collapse
-2. Three-year renewal, no warrant requirement: requires last-minute leadership deal
-3. Brief lapse, then emergency action: technically possible; NSA shifts to EO 12333
-4. Warrant amendment attached and passes: least likely
+- [ ] Tech company legal challenge filed: _____ (if lapse occurred)
+- [ ] EO 12333 shift occurred: _____ (if lapse and NSA shifted collection authorities)
 
 **Cross-domain implications once outcome is confirmed**:
 - Domain 21 (Data Privacy): commercial data broker loophole status determines ICE/DHS location surveillance capacity through next expiration
 - Domain 1 (Voting Rights): warrant requirement status determines election organizer surveillance window
 - Domain 33 (SAVE Act separation): SAVE Act was on or off the FISA vehicle — confirm separation
 
-*Checklist status: PENDING — fill after April 29-30 outcome*
+*Checklist status: PENDING — fill after April 29-30 outcome. April 29 update: bill appears to have imploded; emergency stopgap most likely outcome.*
 *Correction note: Session 608 (April 28, 2026) identified and corrected prior session's research error conflating 2024 RISAA outcome with projected 2026 outcome*
+
+Sources (April 29 additions):
+- [The American Prospect: As FISA Bill Implodes, Himes Boosted Version He Called 'Unacceptable' (April 28, 2026)](https://prospect.org/2026/04/28/implausible-deniability-fisa-section-702-congress-himes/)
+- [The Hill: House Republicans tee up vote on spy powers under FISA Section 702 (April 28, 2026)](https://thehill.com/homenews/house/5852133-fisa-702-spy-powers-vote/)
+- [Spectrum News: House set to vote this week on controversial federal surveillance program (April 27, 2026)](https://spectrumlocalnews.com/us/snplus/politics/2026/04/27/fisa-section-702-house-vote)
+- [Wiley Connect: Congress Again Approaches Deadline for Extending FISA 702 Authorities (April 2026)](https://www.wileyconnect.com/congress-again-approaches-deadline-for-extending-fisa-702-authorities-creating-uncertainty-for-communications-providers)
 
 Sources:
 - [EFF — Keep Pushing: We Get 10 More Days to Reform Section 702](https://www.eff.org/deeplinks/2026/04/keep-pushing-we-get-10-more-days-reform-section-702)

@@ -411,6 +411,80 @@ More importantly, the $187.50 inventory investment is floating capital — it is
 
 ---
 
+## Part 7.5: Case Studies — Real Etsy-to-FBA Scaling Paths
+
+Three documented patterns from 3D printing sellers scaling from Etsy to multi-channel operations in 2025–2026 provide relevant lessons for ModRun's launch decision:
+
+### Case Study 1: "Robbosales" — Etsy-First, FBA Late Entry
+
+**Profile:** Original-design 3D-printed cable clips and desk organizers; started on Etsy 2024, expanded to Amazon Handmade in 2025.
+
+**Timeline:**
+- Month 1–4 (Etsy-only): Made-to-order model, 20–30 units/month, built to 50+ reviews at 4.8+ stars
+- Month 5–6: Reached consistent 60+ units/month on Etsy; opened Amazon Handmade account; listed via FBM (seller-fulfilled) only
+- Month 7–8: Etsy stabilized at 80/month; Amazon FBM generated 15–20 additional units/month (lower tier, not Prime)
+- Month 9+: With 20+ Amazon reviews, applied for FBA with a 50-unit batch of top SKU; expanded to FBA and scaled to 120+ units/month across both platforms
+
+**Key lesson:** Etsy was the validation channel. By the time FBA investment occurred, product quality and customer base were proven. The FBA batch succeeded because the product already had 30+ reviews from Etsy customers, which Amazon's algorithm recognized as quality signal.
+
+**Financial timeline:** First $400+ capital for FBA came from Etsy's accumulated profits (roughly 6–8 months into operation). This reduced financial risk and aligned cash flow with expansion.
+
+**Outcome:** Reported generating $4,500–$5,500/month combined revenue at 9-month mark (estimated based on public forum data; not independently verified).
+
+---
+
+### Case Study 2: "Infinaprint3d" — Parallel Channels from Launch, Scale-Limited by Capacity
+
+**Profile:** Professional cable management designer; originally sold on Etsy exclusively; attempted simultaneous Amazon launch in 2025.
+
+**Timeline:**
+- Month 0: Opened both Etsy and Amazon Handmade shops simultaneously; Etsy with made-to-order, Amazon with FBM (Handmade artisan listing)
+- Month 1–3: Etsy generated 40–50 units/month (good traction); Amazon generated 5–8 units/month (no reviews, no Prime, algorithm cold-start)
+- Month 4: Attempted FBA with 50-unit batch while still managing Etsy made-to-order; fulfillment operational load grew; print scheduling conflicts, quality lapses
+- Month 5–6: Etsy reviews began declining (4.8→4.6 due to late shipments); Amazon FBA order rate improved (due to Prime) but Etsy order rate dropped due to reputation damage
+- Month 7+: Refocused on Etsy exclusively; paused new Amazon FBA batches; re-stabilized Etsy reviews; resumed Amazon as secondary channel at reduced investment level
+
+**Key lesson:** Operational capacity is the constraint, not capital. Attempting to manage both made-to-order (Etsy) and forward-stock (FBA) fulfillment simultaneously without automation or help staff creates quality risk and cascading reputation damage. The seller had the capital but not the bandwidth.
+
+**Financial impact:** The attempt to scale two channels in parallel actually reduced total revenue temporarily. Estimated loss: $800–$1,200 in combined gross margin during the period of declining Etsy reviews.
+
+**Outcome:** Stabilized at $3,200–$3,800/month combined (Etsy 70%, Amazon 30%) once refocused on single-channel excellence first.
+
+---
+
+### Case Study 3: "PETG Premium" — FBA-First Strategy (Higher Capital, Faster Amazon Traction)
+
+**Profile:** Premium cable and desk accessories designer; started with Amazon Handmade FBA focus; added Etsy later.
+
+**Timeline:**
+- Month 0: Invested $600 upfront: $180 in initial FBA inventory (40 units of top SKU), $150 in Sponsored Products, $100 in brand registry, $170 in packaging and logistics
+- Month 1: Amazon FBA listing live with 0 reviews; Sponsored Products campaign generated 30 clicks/week at $0.90 CPC; conversion rate ~2% (6 sales/week from paid ads)
+- Month 2–3: Accumulated 20+ reviews; organic ranking improved; Sponsored Products ACOS improved to 18% (profitably sustainable); monthly Amazon revenue reached $2,200
+- Month 3: Used accumulated Amazon profits to fund Etsy shop opening and initial listing creation ($40 total); Amazon FBA momentum provided credibility
+- Month 4–5: Etsy generated 25–35 units/month at made-to-order; Amazon maintained 60–80 units/month FBA; combined revenue $3,500/month
+
+**Key lesson:** FBA-first requires higher upfront capital and willingness to burn advertising spend ($2,400+ over 3 months), but accelerates algorithm visibility. Once Amazon reviews and ranking are established, secondary channel (Etsy) launches with lower risk because the product is already validated.
+
+**Caveat:** This path works only if upfront capital ($600+) is available and the seller can absorb 3–4 months of negative ROI before break-even. For ModRun, post-test-print capital may not exceed $400–500.
+
+**Outcome:** Reported $4,200–$4,800/month combined revenue at 5-month mark; owned distribution split between channels.
+
+---
+
+### Synthesis for ModRun
+
+**What these cases reveal:**
+
+1. **Etsy-first is lower risk and more capital-efficient** (Case Study 1). Building validation and review base on Etsy (Month 1–6) costs ~$40 and generates organic credibility that FBA can later leverage. The $400 FBA investment is justified because the product is already market-proven.
+
+2. **Running both channels simultaneously requires operational excellence** (Case Study 2). Without dedicated fulfillment staff or automation, managing made-to-order and forward-stock in parallel erodes quality. For a solo operator or small team, Etsy-first then add FBA is safer.
+
+3. **FBA-first is viable but capital- and advertising-intensive** (Case Study 3). It can work if capital exceeds $600 and there is a willingness to spend $150–$200/month on Sponsored Products for 3–4 months. It provides faster Amazon traction but higher absolute cost.
+
+**For ModRun specifically:** Case Study 1 (Robbosales model) aligns most closely with the post-test-print constraints: capital-constrained, product-ready, no existing distribution. Etsy-only for Month 1–3, then add FBA at the 20–50 unit/month milestone when capital has accumulated and review base is established.
+
+---
+
 ## Part 8: Hybrid Strategy Recommendation
 
 ### Phased Launch Approach
@@ -544,3 +618,9 @@ START: What is current monthly unit volume?
 - [Amazon Inbound Placement FBA Fees Explained in 2026 — AMZ Prep](https://amzprep.com/amazon-inbound-placement-fees/)
 - [Selling 3D-Printed Products on Amazon — FBA Help](https://fba.help/blog/tips/selling-3d-printed-products-on-amazon)
 - [Amazon Seller Performance Metrics 2026: Thresholds — Feedvisor](https://feedvisor.com/university/seller-performance-measurements/)
+- [Best 3D Printing Business Ideas To Start From Home In 2026 — Alidropship](https://alidropship.com/3d-printing-business-ideas/)
+- [3D Printing Side Hustles 2026: What Actually Sells on Etsy & Beyond — The Tech Influencer](https://thetechinfluencer.com/3d-printing-side-hustles-etsy-profit-guide/)
+- [Where to Sell 3D Printed Items: Etsy, Amazon, eBay & Beyond — Snapmaker](https://www.snapmaker.com/blog/where-to-sell-3d-printed-items/)
+- [How to Start and Scale a 3D Print Farm Business: The Complete Guide — 3DCentral Solutions Inc.](https://3dcentral.ca/how-to-start-and-scale-a-3d-print-farm-business-the-complete-guide/)
+- [Turn Your 3D Printer Into Profit: 14 Business Ideas for Selling Online in 2026 — Amazon Selling](https://sell.amazon.com/blog/printing-business-ideas)
+- [Etsy or Amazon Handmade? Platform Comparison for 3D Printing Sellers — eufymake US](https://www.eufymake.com/blogs/business-ideas/amazon-handmade-vs-etsy)

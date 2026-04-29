@@ -2,6 +2,79 @@
 
 ---
 
+## April 29, 2026 — April-May 2026 Domain Content Maintenance: Final Pre-Deadline Updates
+
+**Session type**: Targeted domain content maintenance with live research
+**Task**: Verify prior session completion of 8-domain April-May 2026 maintenance task; identify genuine gaps; add new developments as of April 29
+
+### Scope Assessment
+
+Prior sessions (529-590) completed the core April-May 2026 maintenance work on all 8 target domains. This session confirmed completion via file verification and identified three genuine April 29 additions not covered by prior sessions.
+
+### New Additions Made
+
+**Domain 29 — Section 16: SPLC April 28 Blanche False-Statement Motions**
+
+Three new SPLC motions filed April 28, 2026 — not captured in the Section 15 grand jury transcript motion written the same day. The new motions challenge Blanche's public false claims that SPLC shared nothing with law enforcement. Documented instances: Charlottesville 2017 pre-rally intelligence provision; Atomwaffen Division 2019 Las Vegas terrorism warning. Third motion seeks prohibition on further prejudicial government statements. Section 16 frames this as an escalation from legal-theory challenge (Section 15) to factual-accuracy challenge — potentially grounds for dismissal with prejudice if grand jury heard same false claims. Adds connection to Domain 6 (same Blanche accountability pattern). ~700 words, 4 sources.
+
+**Domain 19f — Section 17: Final Pre-Deadline Status (April 29, 48 Hours Out)**
+
+Confirmed final pre-deadline factual state: blockade continues (ongoing hostilities), no administration compliance move, no authorization request submitted, no court filing. Collins/Tillis post-deadline accountability structure documented — their public pre-deadline commitments are now operative political constraints. May 1-June 15 strategic window for appropriations confrontation identified as the inflection point. Post-May 1 fill-in checklist added for next-session completion. ~400 words, 4 sources.
+
+**Surveillance-tracking.md — FISA Checklist April 29 Update**
+
+Updated pre-vote probability framework based on April 28 reporting: bill has "imploded" (American Prospect, April 28); Rules Committee indefinitely postponed; Johnson lacks votes. Emergency stopgap now most likely outcome, not three-year renewal. Added tech company legal challenge flag and EO 12333 shift flag to checklist. Updated probability ordering. 5 additional sources added.
+
+### Prior Session Completion Status (Verified)
+
+All 8 target domains confirmed complete in prior sessions:
+- Domain 19f: Sections 9-16.5 (Sessions 523, 529, 530, 573, 578, 590) — COMPLETE through April 28
+- Domain 28: Section 9 Iran synthesis (Session 578) — COMPLETE
+- Domain 29: Sections 13-15 SPLC trajectory (Sessions 571, April 28) — COMPLETE through April 28; Section 16 added this session
+- Domain 6: Sections 5-6 Wilcox + Powell/Warsh (Session 575) — COMPLETE
+- Domain 35: Sections 9-11 OT2026 cert window + Slaughter (Session 575) — COMPLETE
+- Domain 1: Sections 4-6 ballot initiatives + SAVE Act + FISA (Session 575) — COMPLETE
+- Domain 33: Section 1.3 155-bill count + six-state supermajority push (Sessions 523, 530, 535) — COMPLETE
+- Surveillance-tracking.md: FISA pre-vote assessment (Sessions 575, 578) + April 29 update (this session) — PENDING OUTCOME
+
+### Files Modified
+
+| File | Change | Words Added |
+|------|--------|-------------|
+| `domains/domain-29-prosecutorial-weaponization-and-doj-capture.md` | Added Section 16: SPLC April 28 Blanche false-statement motions | ~700 |
+| `domains/domain-19f-war-powers-reform.md` | Added Section 17: Final pre-deadline status (April 29, 48 hours out) | ~400 |
+| `surveillance-tracking.md` | Updated FISA checklist probability framework; added April 29 pre-vote status; 5 new sources | ~300 |
+| `WORKLOG.md` | This entry | ~350 |
+
+---
+
+## April 29, 2026 (ITEM12 Execution) — Domain 38 Candidate Scoping: Four-Candidate Evaluation
+
+**Session type**: Research scoping and candidate evaluation
+**Task**: Produce `ITEM12_DOMAIN38_CANDIDATES.md` — evaluate four candidates for the next framework expansion domain beyond Domain 38 (Financial Sector Independence)
+
+### Output
+
+**Deliverable**: `projects/resistance-research/ITEM12_DOMAIN38_CANDIDATES.md` (~3,000 words)
+
+**Candidates Evaluated**:
+1. Voting Systems Architecture (proportional representation, RCV, STV, MMP) — 500-600 words with 10 sources
+2. Energy Infrastructure and Democratic Decentralization (cooperative grids, rural broadband, civic participation) — 500-600 words with 10 sources
+3. Intelligence Oversight and Accountability (FISA 702, IG firings, whistleblower protection) — 500-600 words with 10 sources
+4. Property Rights and Economic Democratization (CLTs, worker co-ops, antitrust, housing-turnout causal chain) — 500-600 words with 10 sources
+
+**Final Ranking**:
+1. Intelligence Oversight and Accountability — active 2026 crisis window (702 expiration, 270% surge in political queries, IG decapitation); strongest bipartisan coalition (Rand Paul-Wyden axis)
+2. Voting Systems Architecture — strongest international precedent (Germany MMP, Ireland STV, New Zealand); DC June 2026 primary as live implementation case
+3. Property Rights and Economic Democratization — documented housing-turnout causal chain; 308 CLTs nationally; UN 2025 International Year of Cooperatives
+4. Energy Infrastructure — most long-cycle democratic impact; IRA defunding removes primary implementation vehicle
+
+**Research Roadmaps**: Full roadmaps produced for top two candidates (Intelligence Oversight: 12-16 hours; Voting Systems: 8-12 hours), including key research questions, source categories, and output format specifications.
+
+**Status**: Scoping complete. Ready for user selection of which domain to develop into a full document.
+
+---
+
 ## April 29, 2026 (Session 614) — Domain 37 Candidate A: Foreign and Transnational Interference in US Democratic Institutions
 
 **Session type**: Primary research and domain document production

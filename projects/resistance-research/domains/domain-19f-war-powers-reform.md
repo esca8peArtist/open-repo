@@ -919,4 +919,36 @@ Sources: [Domain 28: War Powers Venezuela and Military Unilateralism (cross-refe
 
 *Section 16 added: April 28, 2026 (current session — April-May 2026 Domain Content Maintenance, Priority 1)*
 *Section 16 updated (April 28, 2026, same session): Section 16.4 added — Democrats explore WPR lawsuit track (Time exclusive, April 28); congressional standing analysis (Campbell v. Clinton Kosovo precedent); political question doctrine obstacle; strategic value of lawsuit as public record and discovery vehicle even if legal theory fails; renumbered prior 16.4 to 16.5.*
+
+---
+
+## Section 17: April 29, 2026 — Final Pre-Deadline Status (48 Hours Out)
+
+**Updated**: April 29, 2026
+
+As of April 29, 2026, 48 hours before the May 1 War Powers Resolution deadline, the following facts are confirmed:
+
+**On the military situation**: The Iran ceasefire remains technically in effect but fragile. The U.S. naval blockade of Iran, declared April 13, continues — an ongoing use of military force that the ceasefire does not address. Iran seized a vessel near the Strait of Hormuz on April 24; the U.S. Navy has orders to destroy Iranian vessels laying mines. Hostilities have not ended; they have shifted from air strikes to maritime economic coercion. The WPR's 60-day clock runs on "hostilities" and the blockade is unambiguously an active military operation.
+
+**On the administration's position**: The administration has not submitted a request for congressional authorization. It has not acknowledged the May 1 deadline as legally binding. No senior official has publicly indicated any plan to comply with the WPR's withdrawal requirement. The Vance doctrine — the WPR is "fundamentally fake and unconstitutional" — remains the operative executive branch position.
+
+**On the congressional response**: Democrats are pursuing two simultaneous tracks: (1) repeated floor votes to force Republicans on record, and (2) early-stage discussion of a WPR enforcement lawsuit. The lawsuit track faces the Campbell v. Clinton precedent obstacle documented in Section 16.4. The floor vote track has produced five Senate failures, but the post-May 1 environment changes the political framing: senators who vote no after the deadline are voting to ratify unconstitutional military operations, not merely to support the administration during its claimed 60-day window.
+
+**On the post-deadline GOP defection question**: Collins and Tillis made pre-deadline statements that are now legally operative commitments — they said they would not support military operations beyond the 60-day mark without authorization. These statements create a political accountability structure: if they vote against post-May 1 appropriations restrictions, they have contradicted explicit public commitments. This accountability structure did not exist before the deadline.
+
+**The critical two-week window**: Section 11.1 documented the administration's 30-45 day window before supplemental appropriations become unavoidable. The window opens May 1 and closes approximately June 1-15. If no supplemental is submitted and reprogramming is used instead, the best Democratic leverage is lost. The May 15-30 period is the strategic inflection point: whether Democrats can force a public confrontation on appropriations before the administration exhausts available reprogramming authority determines whether the WPR has any practical enforcement consequence in the Iran case.
+
+**What to fill in after May 1**: The post-deadline outcome checklist:
+- [ ] Administration response on May 1: _____ (compliance statement / silence / continued operations announcement)
+- [ ] Collins public statement post-May 1: _____ (defection commitment / continued deferral)
+- [ ] Any court filing: _____ (WPR lawsuit filed / not filed / standing challenge)
+- [ ] Next Senate floor vote scheduled: _____ (date / vehicle)
+- [ ] Iran supplemental appropriations request: _____ (submitted / not submitted / reprogramming used)
+
+Sources: [Military.com: Iran War Heads Toward Legal Showdown as May 1 Deadline Nears (April 28, 2026)](https://www.military.com/daily-news/headlines/2026/04/28/Iran-War-Heads-Toward-Legal-Showdown-as-May-1-Deadline-Nears); [Al Jazeera: Trump's May 1 deadline: Can he continue war on Iran after that? (April 24, 2026)](https://www.aljazeera.com/news/2026/4/24/trumps-may-1-deadline-can-he-continue-war-on-iran-after-that); [CNN: Analysis — Will Trump respect the 60-day limit? (April 25, 2026)](https://www.cnn.com/2026/04/25/politics/war-powers-act-trump-iran-war-congress-analysis); [Truthout: May 1 Marks a Crucial "War Powers" Deadline for Trump's War in Iran](https://truthout.org/articles/may-1-marks-a-crucial-war-powers-deadline-for-trumps-war-in-iran/)
+
+---
+
+*Section 17 added: April 29, 2026*
+*Key developments: Final pre-deadline status confirmed — blockade continues, WPR clock unambiguously running, administration has made no compliance move; Collins/Tillis post-deadline accountability structure documented; two-week strategic window identified (May 1-June 15 appropriations confrontation window); post-May 1 fill-in checklist created for next-session completion.*
 *Confirmed developments: May 1 deadline passed without compliance — no withdrawal, no authorization, no court intervention, no administration acknowledgment. Senate blocking pattern documented: five defeats (maximum 46-51 on Vote 4; 46-51 on Vote 5 April 23); Rand Paul sole GOP defector across all five votes; Fetterman sole Democratic opposition; Grassley/McCormick/Warner abstentions on Vote 5 mark the defection threshold. Vance constitutional rejection doctrine confirmed as operative policy by subsequent non-compliance. Cross-domain connection to Domain 28 two-prong doctrine (Venezuela law-enforcement reframing + Iran constitutional nullity) establishes complete WPR elimination framework. Reform implication: constitutional amendment with congressional standing is the only mechanism that survives the Vance doctrine.*
