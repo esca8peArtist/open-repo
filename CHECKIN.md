@@ -5,6 +5,80 @@
 
 ---
 
+## Since Last Check-in (Session 637 — 2026-04-29 12:35 UTC — PRE-MARKET HEALTH CHECK + EXPLORATION QUEUE WORK)
+
+### ✅ Pre-Market Verification + Parallel Research Completed
+
+**Market Session Readiness** (12:35 UTC):
+- ⏱️ **Time to market open**: 55 minutes (13:30 UTC)
+- ✅ **Engine status**: Process PID 1241288 running cleanly (started 12:27 UTC)
+- ✅ **All 11 tickers initialized**: Confirmed in logs (11 session IDs active, sleeping until 13:15 UTC)
+- ✅ **Market-aware sleep**: Engine sleeping 1.78h until 13:15 UTC (15 min pre-market wake)
+- ✅ **Logs clean**: No errors, no auth failures, no initialization issues
+
+**Exploration Queue Work Completed** (parallel agents, 11:45–12:35 UTC):
+
+1. ✅ **mfg-farm: Amazon FBA Analysis Enhanced (v2.1 → v2.2)**
+   - **File**: `projects/mfg-farm/amazon-fba-analysis.md` (677 lines, ~4,500 words)
+   - **What was added**: 
+     - Amazon Handmade category approval process (critical detail: Professional plan fee waiver from month 2 onwards)
+     - IPI score mechanics and FBA storage capacity limits
+     - 10 new sources (Handmade guides, capacity analysis, seller forums)
+   - **Key finding**: Handmade Professional fee waiver ($39.99→$0 from month 2) significantly improves FBA economics vs. Etsy-only
+   - **Status**: READY FOR USER REVIEW — post-test-print execution decision
+
+2. ✅ **resistance-research: May 2026 Civic Tracker Enhanced (Week 2 entries)**
+   - **File**: `projects/resistance-research/MAY_2026_TRACKER.md` (700+ lines pre-existing, Week 2 enhanced)
+   - **What was added**:
+     - 6 new civic developments (NATO withdrawal status, DOJ grand jury refusals, Arizona voter-roll dismissal, SCOTUS cases, OMB Category C escalation, AI governance void)
+     - 21 new sources (Al Jazeera, WaPo, CFR, NBC, Protect Democracy, Lawfare, Brennan Center, etc.)
+     - Domain update recommendations (Domain 19f needs Taiwan section, Domain 29 needs grand jury resistance, etc.)
+   - **Critical finding**: DOJ grand jury refusals show counter-pattern to weaponization narrative (4-5 no-bills vs. historical 6/69K baseline)
+   - **Status**: READY FOR USER REVIEW — framework maintenance input for Phase 1 execution
+
+### Project Status (Updated 2026-04-29 12:35 UTC)
+
+| Project | Status | Next |
+|---------|--------|------|
+| **stockbot** | ✅ Engine running, 11-ticker portfolio live | Market session 13:30–20:00 UTC (live trading validation) |
+| **resistance-research** | ✅ 35 domains + 3 roadmaps complete | BLOCKED: User distribution path decision (Path A / A+37 / B) |
+| **cybersecurity-hardening** | ✅ All tiers ready | BLOCKED: User Tier 1 approval before outreach |
+| **mfg-farm** | ✅ Design + FBA analysis enhanced | BLOCKED: Test print execution (user action) |
+| **seedwarden** | ✅ Phase 1 + Phase 2 mockups | BLOCKED: User tag corrections + Etsy account |
+| **open-repo** | ✅ PR #1 open | BLOCKED: GitHub review/merge |
+| **off-grid-living** | ✅ Published | Awaiting user social media distribution |
+| **workout** | ✅ Comprehensive plan complete | Awaiting user review and selection |
+
+### Items Needing Your Input
+
+1. **Pre-market (next 55 min)**:
+   - No action needed — engine will auto-wake and begin trading at 13:15 UTC
+   - Orchestrator monitoring live market session (13:30–20:00 UTC)
+
+2. **Post-market (this evening)**:
+   - Check Discord summary at 20:15 UTC (automated daily summary)
+   - Review results: Did multi-ticker portfolio generate ≥1 trade? (Probability ~60%)
+
+3. **High-priority user decisions** (whenever ready):
+   - **resistance-research**: Distribution path (Path A / A+37 Hybrid / B) — ready for immediate Phase 1 execution once decided
+   - **mfg-farm**: Test print status — ready to launch FBA strategy once complete
+   - **cybersecurity-hardening**: Tier 1 outreach approval — templates ready, 33 organizations identified
+   - **seedwarden**: Tag corrections + Etsy account verification — blocks Phase 1 launch
+
+### Assessment
+
+- **Autonomous work this session**: ✅ COMPLETED
+  - Pre-market health check: all green
+  - Exploration queue items (2): research + enhancement complete
+  - All project blockers remain external (user decisions, physical actions, third-party reviews)
+- **System readiness**: ✅ OPTIMAL
+  - Engine healthy, 11-ticker portfolio live for first real market session
+  - Logs clean, no errors or auth issues
+  - Market monitoring automation active (3 checkpoints: 14:00, 16:00, 20:15 UTC)
+- **Next autonomous action**: Post-market analysis at 20:15 UTC (daily log parse + Discord summary)
+
+---
+
 ## Since Last Check-in (Session 636 — 2026-04-29 11:28 UTC — ENGINE CRITICAL RESTART + 52-TICKER CONFIRMATION)
 
 ### ⚠️ Engine Restart Required and Executed

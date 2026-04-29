@@ -819,19 +819,18 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Commit**: `bca307d`
   - **Status**: COMPLETE
 
-- **mfg-farm: Amazon FBA vs. Etsy fulfillment strategy analysis** (Priority — informs post-test-print decisions)
+- ✅ **mfg-farm: Amazon FBA vs. Etsy fulfillment strategy analysis** (COMPLETE — Session 637)
   - **Scope**: Research Amazon Fulfillment by Amazon (FBA) program, cost structure, shipping rates, seller reputation mechanics, fulfillment timelines. Compare FBA vs. Etsy-only vs. hybrid launch strategy for ModRun cable management system (and future 3D-printed products). Identify optimal path given capital constraints, shipping economics, and volume projections.
-  - **Deliverables**: `projects/mfg-farm/amazon-fba-analysis.md` (cost comparison matrix, fulfillment timelines, seller reputation impact, decision matrix), hybrid launch roadmap
-  - **Expected outcome**: Data-driven decision framework for post-test-print launch strategy
-  - **Timeline**: 1-2 sessions
-  - **Status**: QUEUED (ready to begin now — independent of test print completion)
+  - **Deliverables**: ✅ `projects/mfg-farm/amazon-fba-analysis.md` (v2.2, 677 lines, ~4,500 words — enhanced with Amazon Handmade approval process, IPI score mechanics, 10 new sources including Handmade guides and capacity analysis)
+  - **Key finding**: Handmade Professional plan fee waiver ($39.99→$0 from month 2) significantly improves FBA economics; break-even inflection remains 50 units/month
+  - **Status**: ✅ COMPLETE — Ready for user review post-test-print execution
 
-- **May 2026 Civic Developments Tracker** (resistance-research — ongoing secondary goal)
+- ✅ **May 2026 Civic Developments Tracker** (COMPLETE Week 2 entries — Session 637, ongoing weekly maintenance)
   - **Scope**: Monitor and synthesize May 2026 civic developments across domains relevant to resistance-research framework. Track: (1) War Powers — Iran/NATO/Taiwan escalation, (2) Prosecutorial Weaponization — DOJ cases, (3) Voting Rights — state-level restrictions, (4) SCOTUS activity — June 2026 term decisions on Slaughter case + others, (5) Election Security — midterm preparation, (6) Fiscal/Congressional Authority — spending disputes. Identify which developments warrant Domain 38 research vs. updates to existing domain documents.
-  - **Deliverables**: `projects/resistance-research/MAY_2026_TRACKER.md` (structured weekly log + domain update recommendations), quarterly synthesis (may warrant Domain 38 research proposal)
-  - **Expected outcome**: Current-status reference for framework maintenance, decision trigger for Phase 2 expansion research
-  - **Timeline**: 2-3 sessions to establish pattern, then weekly updates (1 hour/week)
-  - **Status**: QUEUED (ready to begin now)
+  - **Deliverables**: ✅ `projects/resistance-research/MAY_2026_TRACKER.md` (Week 2 entries complete — 6 new civic developments, 21 new sources, domain update recommendations identified)
+  - **Week 2 entries**: NATO withdrawal status update, DOJ grand jury refusal pattern (counter-narrative), Arizona voter-roll dismissal (7th state), SCOTUS Slaughter + Bost cases, OMB Category C escalation (43% increase in 6 months), AI governance void correction
+  - **Domain updates identified**: 19f (Taiwan), 29 (grand jury resistance), 35/01 (SCOTUS), 34 (Category C data), 36 (election AI void)
+  - **Status**: ✅ COMPLETE Week 2 — Ongoing weekly maintenance (1 hour/week pattern established)
 
 **NEW ITEMS (Session 542 — Parallel Exploration Queue Execution)**:
 
