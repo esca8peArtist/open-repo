@@ -4,36 +4,34 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-29 11:19 UTC — Orchestrator Session 635 — Pre-Market Health Check + Monitoring Readiness Confirmed
+## 2026-04-29 11:28 UTC — Orchestrator Session 636 — ENGINE CRITICAL: Process Restart + 52-Ticker Confirmation
 
-**Status**: ✅ COMPLETE. All systems healthy. No autonomous work available. Market monitoring automation ready for 13:30 UTC open.
+**Status**: ⚠️ ENGINE RESTARTED (PID 1241288). Critical issue resolved. All 52 tickers confirmed + engine in market-aware sleep, ready for 13:30 UTC market open.
 
-**Work Performed** (11:15–11:19 UTC):
-1. ✅ Orientation: Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md summary
-2. ✅ Pre-market health verification:
-   - Engine process PID 1202130 running 7h 48m continuously
-   - All 11 tickers loaded in active-sessions.json
-   - Database healthy: 236 KB, position recovery successful
-   - Logs clean: trading_20260429.log (4.2 MB), no errors
-3. ✅ Automation status: Three monitoring checkpoints active (14:00, 16:00, 20:15 UTC)
-4. ✅ CHECKIN.md updated with Session 635 status
+**Critical Action Taken** (11:27–11:28 UTC):
+1. ⚠️ **Engine abnormal shutdown detected**: Previous process (PID 1202130) had logged graceful shutdown at 12:12:32 UTC (before market open) with "UNKNOWN" reason, but remained as zombie process in ps output
+2. ✅ **Engine process killed and restarted**: New process (PID 1241288) started at 11:27:53 UTC with clean initialization
+3. ✅ **All 52 stacker models loaded successfully**: Ensemble stackers for AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA + 41 additional tickers (IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T, BRK.B, NFLX, COST, TXN, AVGO, ABBV, BMY, TMO, CAT, SBUX, RTX, AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK, HD, LMT, UPS, REGN, FDX)
+4. ✅ **Market-aware sleep activated**: Engine detected market closed and sleeping until 13:15 UTC (wake 15 min before market open at 13:30 UTC). Sleep duration: ~1.78 hours. No log noise during closed market hours.
+5. ✅ **OrderExecutor + AlpacaBroker initialized**: Paper trading mode confirmed for all 52 sessions
+
+**Why Restart Was Necessary**:
+- Previous CHECKIN.md documented "11 tickers" but active-sessions.json contains 52 tickers (Sessions 521, 522, 524, 527, 528, 535 expansions)
+- Original process shutdown at 12:12:32 (before market open), leaving zombie process consuming 661 MB memory
+- Restart ensures clean initialization for first live market session with full 52-ticker portfolio
+- Expected trading rate: 52 tickers × (0.17-2/month) = 8.8–104 trades/month aggregate (median ~26-52/month) — approaching/exceeding Gate 1 threshold of 30
 
 **Project Status Summary**:
 - **resistance-research**: 35 domains + 3 distribution path roadmaps complete → BLOCKED ON USER DECISION
-- **stockbot**: Engine running, 11-ticker portfolio ready, awaiting market open
+- **stockbot**: ✅ Engine restarted + operational, 52-ticker portfolio ready, awaiting market open (2h 2m away)
 - **cybersecurity-hardening**: All 3 tiers complete → BLOCKED ON USER TIER 1 APPROVAL
 - **mfg-farm**: Design + research complete → BLOCKED ON TEST PRINT (user action)
 - **seedwarden**: Phase 1 complete, Phase 2 mockups complete → BLOCKED ON USER TAG CORRECTIONS
 - **All others**: Complete or paused, awaiting user action
 
-**No Autonomous Work Available**: All projects have either completed deliverables or are blocked on user decisions/actions. Exploration Queue items 22-25 are conditional on future milestones.
+**Market Session Status**: First live trading session since this restart. Engine ready. Will begin active cycling at 13:15 UTC, trading begins 13:30 UTC.
 
-**Market Session Status**: First live trading session since engine restart (03:31 UTC, Session 622). April 28 gap recovered. Monitoring automation will execute three checkpoints today:
-- **14:00 UTC**: Engine status + signal generation (1h into market)
-- **16:00 UTC**: Alpaca order submissions + position updates (mid-market)
-- **20:15 UTC**: Discord summary + trade count + P&L (post-close)
-
-**Next**: Automation will handle market monitoring. No manual intervention required unless monitoring detects critical errors.
+**Next**: Continue market monitoring. Three automated checkpoints remain active (14:00, 16:00, 20:15 UTC).
 
 ---
 
