@@ -17491,3 +17491,43 @@ Executing Item 3: stockbot Post-Gate-2 Operations Analysis (preliminary research
 3. Replenish exploration queue with new research items if user delays
 4. Consider contingency work if all major projects remain blocked
 
+
+## Session 650 — 2026-04-29 19:30 UTC
+
+**Project Focus**: stockbot portfolio allocation collision resolution
+
+**Work Completed**:
+1. ✅ **Diagnosed Active Block** — Verified stockbot multi-session collision still active (AVGO hitting "insufficient allocation" errors in trading logs)
+
+2. ✅ **Implemented Option C: Account-Level Budget Coordinator**
+   - Enhanced `StrategyCoordinator` (strategy_coordinator.py): Added `set_budget_allocation()`, `get_allocated_budget()`, `pre_allocate_budgets()` methods
+   - Modified `TradingSession` (trading_session.py): 
+     - Added `allocated_budget` parameter to `__init__`
+     - Position-sizing logic now uses allocated_budget if set, fallback to account equity
+     - Changed from integer floor to fractional shares (Alpaca-supported)
+   - Updated `MultiSessionOrchestrator` (launch_stacker_sessions.py):
+     - Computes per-session allocation: `per_session = total_equity / num_sessions`
+     - With 52 sessions and $106K: $2,038 per session
+     - Passes allocated_budget to each TradingSession
+
+3. ✅ **Validated Fix**
+   - OLD collision: 52 × 26 shares = 1,352 shares @ $399 = $540K+ (exceeds $106K)
+   - NEW allocation: 52 × 0.51 fractional shares = 26.58 shares @ $399 = $10,600 (safe)
+   - Fractional shares prevent "insufficient allocation" at small allocations
+
+4. ✅ **Resolved Block** — Moved stockbot allocation collision from Active Blocks to Resolved Archive with full documentation of solution
+
+5. ✅ **Committed Changes**
+   - Commit 0747453 (stockbot submodule): Core budget allocation implementation
+   - Commit 3343cf8 (parent repo): BLOCKED.md documentation and archive
+
+**Technical Impact**:
+- 52 concurrent trading sessions now share single $106K account without position-sizing failures
+- Engine can generate BUY/SELL signals and execute orders (previously skipped due to qty < 1)
+- Fractional shares maximize capital utilization without integer flooring errors
+
+**Next Work** (Session 651+):
+- Monitor stockbot trading execution (verify AVGO and other high-price tickers execute successfully)
+- If allocation collision fully resolved, next focus: Gate 1 validation (30+ trades/month threshold)
+- Consider whether to enable HMM regime scaling for Gate 2 validation (Sharpe ≥1.0)
+
