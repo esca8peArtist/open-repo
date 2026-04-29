@@ -2,6 +2,34 @@
 
 ---
 
+## April 29, 2026 — Session 628: Objection Handling Framework and Quick-Reference Matrix
+
+**Session type**: Pre-distribution preparation — Phase 1 institutional outreach materials
+**Task**: Create comprehensive objection handling and rebuttal framework + standalone quick-reference matrix for 35-domain democratic renewal proposal
+
+### Files Produced
+
+**`objection-handling-framework.md`** (revised from Session 611)
+- Reorganized from 6 ad hoc categories to the 6 operational categories for Phase 1 outreach: Policy/Implementation Feasibility, Constitutional/Legal Barriers, Institutional Viability, Economic/Fiscal Impact, Political Realism, International/Trade Implications
+- Added Category VI (International/Trade Implications, 3 objections) — previously missing; sourced from Domain 23 (Trade Policy, Learning Resources SCOTUS ruling, Yale Budget Lab April 2026), Domain 19, and phase-4-comparative-democratic-recovery.md
+- Added Objection 2.4 (Loper Bright / administrative law trifecta) sourced from Domain 35
+- Added Objection 4.3 (tariff reform weakens trade leverage) sourced from Domain 23
+- Total: 20 objections, 3-5 sourced rebuttals each, embedded quick-reference matrix, audience-routing guidance
+- Left/right skeptic routing coverage: incremental-left (Gilens-Page empirical failure of incrementalism), conservative-right (Friedman on LVT, Alaska Permanent Fund, ROI data)
+
+**`quick-reference-rebuttal-matrix.md`** (new standalone file)
+- Two-page scannable lookup table: objection number | common phrasing | domain reference | key rebuttal | supporting evidence
+- Six category sections, 20 objections total
+- Audience routing guide (11 contact types with highest-priority objection and rebuttal strategy per contact)
+- Left/right skeptic routing section
+- Designed for real-time use during live outreach — no reading verbatim, one sharp data point per row
+
+### Key Findings
+- The strongest empirical rebuttals across all categories are: Germany/Sweden/NZ international evidence (Categories I, IV); AIRC (2015) and Learning Resources (2026) SCOTUS citations (Categories II, VI); Carnegie/Chenoweth/Lijphart comparative data (Categories III, V); Yale Budget Lab April 2026 distributional analysis (Category VI trade)
+- The International/Trade category (Category VI) is the only category without prior treatment in the existing framework — added three objections with full sourcing from Domain 23 and Domain 19 files
+
+---
+
 ## April 29, 2026 — April-May 2026 Domain Content Maintenance: Final Pre-Deadline Updates
 
 **Session type**: Targeted domain content maintenance with live research
