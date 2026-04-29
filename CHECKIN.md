@@ -71,6 +71,12 @@
 
 ---
 
+## Usage & Status
+
+**Token usage** (Session 620): 86.7K tokens (Sonnet 0.5% of weekly, All-models 30.2%)
+**Session duration**: ~13 minutes for MAY_2026_TRACKER.md research + development
+**All orchestration files**: Committed to master (commit 4f9295b)
+
 ## Items Needing User Input
 
 1. **resistance-research distribution path decision**: Choose Path A (immediate 28-domain distribution) / Path A+Domain37 Hybrid (RECOMMENDED) / Path B (continue optional updates before distribution). Once chosen, Phase 1 execution launches immediately with pre-prepared materials.
@@ -87,21 +93,24 @@
 
 ## Suggested Next Session Priorities
 
-1. **Immediate** (if decisions made):
-   - If user decides on resistance-research path → execute Phase 1 distribution (Tier 1 outreach begins immediately)
-   - If user restarts stockbot engine → monitor Day 1 trading 2026-04-29 13:30 UTC
+**Status**: All queued autonomous work complete (MAY_2026_TRACKER.md + amazon-fba-analysis.md from Session 618). All higher-priority projects blocked on user decisions or actions.
 
-2. **Short-term** (1–2 weeks):
-   - mfg-farm test print confirmation → supplier negotiation (post-print work ready)
-   - seedwarden Phase 1 upload confirmation → launch Week 1 tracking
-   - cybersecurity-hardening Tier 1 approval → outreach execution
+1. **Immediate (TODAY)** — If user can act within 2 hours:
+   - **2026-04-29 13:30 UTC**: stockbot engine must be restarted for market open. Command ready in PROJECTS.md. Monitor first hour of trading for signal generation and order execution.
+   
+2. **Immediate** (if user decisions made):
+   - If user decides on **resistance-research distribution path** → Phase 1 outreach execution begins immediately (all materials pre-prepared, 24h turnaround)
+   - If user **confirms test print** of mfg-farm ModRun designs → post-test supplier negotiation + Etsy listing execution ready to begin
+   - If user **approves cybersecurity-hardening Tier 1 templates** → outreach execution ready to begin
 
-3. **Exploration Queue** (when project blockers resolve):
-   - Item 3: stockbot Post-Gate-2 Operations (post Day 1 trading success)
-   - Item 4: mfg-farm Post-Test-Print Supplier Negotiation (post test confirmation)
-   - Item 5: open-repo Phase 5 Architecture Deep-Dive (post PR #1 merge)
-   - Item 6: resistance-research Tier 1 Distribution Execution (post path decision)
-   - Item 11: cybersecurity-hardening Tier 2 Distribution Design (post Tier 1 approval)
+3. **Short-term** (1–2 weeks):
+   - **stockbot**: Monitor Day 1 trading 2026-04-29 13:30–20:00 UTC. If engine runs and signals fire, next work is post-gate-2 operations roadmap
+   - **mfg-farm**: Once test print confirmed, begin supplier negotiation sequence (post-test-print-7-step sequence documented in PROJECTS.md)
+   - **seedwarden**: Phase 1 upload waiting for 3 tag corrections + Etsy verification (user action)
+   - **open-repo**: PR #1 awaiting maintainer review/merge; Phase 5 architecture ready to execute afterward
+
+4. **Continuous** (weekly, 1 hr/week):
+   - **resistance-research**: MAY_2026_TRACKER.md weekly updates through May 31 (scheduled synthesis calendar in document)
 
 ---
 
