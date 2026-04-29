@@ -17841,3 +17841,52 @@ Executing Item 3: stockbot Post-Gate-2 Operations Analysis (preliminary research
 - If allocation collision fully resolved, next focus: Gate 1 validation (30+ trades/month threshold)
 - Consider whether to enable HMM regime scaling for Gate 2 validation (Sharpe ≥1.0)
 
+---
+
+## 2026-04-29 21:15–22:30 UTC — Orchestrator Session 653 — Critical Fill Confirmation & Discord Webhook Fixes
+
+**Status**: ✅ COMPLETE — Fixed duplicate order submissions and missing Discord webhook configuration
+
+**Stockbot Critical Fixes (Commits 0550404, 3fa8700)**:
+
+### Issue 1: Duplicate Order Submissions (INTC 3x, AMZN 2x, UNH 3x)
+**Root cause**: `_poll_fill()` timed out without confirming fills, but code treated it as success and cleared idempotency guard. Next cycle would resubmit duplicate orders.
+
+**Fix**: 
+- Changed `_poll_fill()` return type from `float` → `(float, str)` to return both price AND final status
+- Only clear idempotency guard if order is confirmed filled/settled
+- If order still "pending_new" after polling, keep guard and return "buy_pending"/"sell_pending"
+- This prevents resubmission when polls timeout
+
+**Code changes**:
+- `src/trading/trading_session.py` lines 1355-1394: Updated `_poll_fill()` signature and logic
+- `src/trading/trading_session.py` lines 1149-1170: Updated BUY order handling for pending orders
+- `src/trading/trading_session.py` lines 1219-1243: Updated SELL order handling for pending orders
+- Tests: Updated all `_poll_fill` mocks to return tuple format (4 instances in test_execution_params_integration.py)
+
+**Impact**: Eliminates duplicate order submissions; orders now tracked accurately through fill confirmation process.
+
+### Issue 2: Missing Discord Alert Webhook URL
+**Root cause**: `.env` file only had `STOCKBOT_DISCORD_WEBHOOK_URL` but code expected both `STOCKBOT_DISCORD_WEBHOOK_URL` and `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL`. Critical alerts (drawdown, losses) were silently skipped.
+
+**Fix**: 
+- Added `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` to `.env` (using same webhook as daily summary for now)
+- Added documentation in `.env` explaining both webhooks and how to use separate channels if desired
+
+**Impact**: Critical Discord alerts now functional; can be customized with separate alert channel if needed.
+
+### Testing
+- All 20 tests in `test_execution_params_integration.py` pass ✅
+- Idempotency guard behavior verified in unit tests
+- New pending_new status handling tested
+
+### Database Sync Status
+- Fill confirmation now properly tracked: only recorded when status is "filled"
+- Pending orders retained in open_order_ids for next cycle
+- Next market session will verify fills actually recorded in stockbot.db
+
+**Next checkpoint**:
+- 2026-04-30 13:15 UTC: Verify engine restarts and monitoring resumes
+- 2026-04-30 20:00 UTC: Check Alpaca account for actual fill status on pending orders
+- Monitor stockbot.db for trade records matching Alpaca fills
+

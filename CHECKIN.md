@@ -1,3 +1,46 @@
+## Since Last Check-in (Session 653 — 2026-04-29 21:15–22:30 UTC — CRITICAL FILL CONFIRMATION & DUPLICATE ORDER FIXES)
+
+### ✅ Work Completed: Fixed Duplicate Order Submissions and Discord Webhook Configuration
+
+**Session 653 Summary**: Fixed critical Session 652 issues causing duplicate order submissions (INTC 3x, AMZN 2x, UNH 3x). Root cause: `_poll_fill()` timeout cleared idempotency guard prematurely, allowing resubmission. Solution: Modified `_poll_fill()` to return status tuple, only clear guard when order confirmed filled. Also added missing `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` to .env configuration.
+
+**What was accomplished**:
+
+1. ✅ **Fixed Duplicate Order Submissions**
+   - **Root Cause**: `_poll_fill()` timed out without confirming fills, but code cleared idempotency guard anyway. Next cycle would resubmit same order.
+   - **Solution**: Changed return type from `float` → `Tuple[float, str]` to return both price AND final status
+   - **Implementation**:
+     - Only clear `_open_order_ids` guard when order confirmed filled or settled
+     - If still "pending_new" after polling, keep guard and return "buy_pending"/"sell_pending"
+     - Next cycle will re-check status instead of resubmitting
+   - **Code Changes**:
+     - `src/trading/trading_session.py` lines 1355-1394: Updated `_poll_fill()` signature
+     - `src/trading/trading_session.py` lines 1149-1170: BUY order handling for pending orders
+     - `src/trading/trading_session.py` lines 1219-1243: SELL order handling for pending orders
+   - **Impact**: Eliminates duplicate submissions; orders now tracked accurately through entire fill process
+
+2. ✅ **Added Missing Discord Alert Webhook**
+   - **Issue**: Code expects `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` for critical alerts (drawdown, losses)
+   - **Fix**: Added env var to `.env` file with same webhook as daily summary
+   - **Documentation**: Added comments explaining how to use separate alert channel if desired
+   - **Impact**: Critical Discord alerts now functional; can be customized later
+
+3. ✅ **Test Updates & Verification**
+   - Updated all test mocks for `_poll_fill()` to return tuple format (4 instances)
+   - All 20 tests in `test_execution_params_integration.py` pass ✅
+   - Verified idempotency guard behavior works correctly with new status tracking
+
+**Code Commits**:
+- `0550404` (stockbot): Critical fill confirmation and duplicate order handling
+- `3fa8700` (parent): Update stockbot submodule pointer
+
+**Next Checkpoint** (2026-04-30):
+- 13:15 UTC: Verify engine restarts with fixed code
+- 20:00 UTC: Check Alpaca account for fill status on pending orders
+- Monitor stockbot.db for trade records matching Alpaca fills
+
+---
+
 ## Since Last Check-in (Session 655 — 2026-04-29 22:43–23:15 UTC — DISCORD WEBHOOK RESOLVED + IDEMPOTENCY HARDENED)
 
 ### ✅ Work Completed: Discord Webhook Block Resolved; Idempotency Guards Hardened
