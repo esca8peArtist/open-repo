@@ -5,6 +5,94 @@
 
 ---
 
+## Since Last Check-in (Session 618 — 2026-04-29 13:50 UTC — Current)
+
+### ✅ Autonomous Work Execution Complete | Priority Queued Items
+
+**Status**: Two priority autonomous work items from project queues executed in parallel. All high-priority projects continue blocked on user actions.
+
+---
+
+### What Happened
+
+#### ✅ resistance-research: Domain Content Maintenance — April-May 2026 Updates COMPLETE
+- **Files updated** (committed master, commit 3888d15):
+  1. `domain-19f-war-powers-reform.md` — Section 17 added: final pre-deadline status (May 1 deadline 48h away), naval blockade ongoing, post-deadline GOP accountability structure documented, May 15-30 appropriations window strategic inflection point
+  2. `domain-29-prosecutorial-weaponization-and-doj-capture.md` — Section 16 added: SPLC motions vs. AG Blanche false statements (Charlottesville 2017, Atomwaffen 2019), factual-accuracy defect strengthens dismissal-with-prejudice case
+  3. `surveillance-tracking.md` — Checklist updated: FISA bill "imploded" (April 28), Rules Committee/Senate postponed votes, probability shifted to emergency stopgap > three-year renewal
+
+- **Key developments documented**:
+  - **Domain 19f**: Iran blockade continues as active hostilities. Administration has not submitted WPR authorization request. Collins/Tillis pre-deadline statements are now legally operative constraints. Strategic inflection point: May 15-30 appropriations confrontation determines if WPR has enforcement consequence.
+  - **Domain 29**: SPLC's April 28 motions introduce factual-accuracy defect (Blanche false statements) alongside prior legal-theory defects. Qualitatively stronger pre-trial dismissal case.
+  - **FISA/21-25**: Probability shifted from "likely three-year renewal" to "emergency stopgap most likely". If lapse occurs, NSA shifts to EO 12333 (collection continues, less oversight, no sunset forcing future review).
+
+- **Pending post-deadline work documented**: FISA outcome April 30, Iran WPR post-May 1
+
+- **Status**: Framework currency improved for distribution. All 35 domains + maintenance updates production-ready.
+
+#### ✅ mfg-farm: Amazon FBA vs. Etsy Fulfillment Strategy Analysis COMPLETE
+- **File created** (committed master, commit 3888d15):
+  1. `amazon-fba-analysis.md` (6,723 words, 9 sections, 30+ sources, April 2026 current)
+
+- **Key deliverables**:
+  - **FBA Program Overview**: 2026 current fees including April 17 fuel surcharge. ModRun fulfillment: $3.22–$3.83/unit. New Seller Incentives + Vine enrollment value documented.
+  - **Economics Comparison**: Etsy 11–13% effective fee vs. Amazon 27–35% (15% referral + 3–4% fulfillment + other). Cost models at 10, 50, 100 units/month.
+  - **Capital & Cash Flow**: Etsy-only $40 upfront (self-funding). FBA Phase 2 $412–462 total. Cash flow: Etsy 5–8 days post-shipment vs. Amazon 14–30 days.
+  - **Case Studies** (3 real 2025–2026 3D printer sellers):
+    1. Robbosales: Etsy-first validation (6–8 mo) → FBA expansion ($4,500–$5,500/mo by Month 9)
+    2. Infinaprint3d: Parallel channels fail — operational capacity constraint, Etsy reviews drop 4.8→4.6
+    3. PETG Premium: FBA-first requires $600+ capital + $150–200/mo ads
+  - **Decision Framework**: Launch Etsy-only post-test-print ($40). FBA trigger: 50+ units/month + $400 capital + 20+ reviews @ 4.8+. At 50/mo hybrid: 49% more revenue ($1,622 vs $1,085). Below 50/mo: Etsy superior margins (74.8% vs 56%).
+
+- **Critical insight**: Operational capacity is the bottleneck, not capital. Parallel channels cause quality damage (Infinaprint3d case). Recommend: Etsy excellence first, scale to FBA when demand justifies.
+
+- **Status**: Production-ready for post-test-print launch decision. Directly informs fulfillment + supplier strategy.
+
+---
+
+### 📊 Parallel Execution Summary
+
+**Execution model**: 2 concurrent agents (resistance-research + general-purpose)
+
+**Items completed**: 2 (resistance-research domain maintenance + mfg-farm FBA analysis)
+
+**Duration**: ~20 minutes total (research + analysis + writing + commits)
+
+**Output**: 2 production-ready files (both committed to master)
+
+**Outcome**: Priority queued autonomous work executed. Framework currency improved for resistance-research distribution. Market strategy analysis ready for mfg-farm post-test-print launch planning. No new blockers identified.
+
+---
+
+### 📌 Current Project Status (Updated 2026-04-29 13:50 UTC)
+
+| Project | Status | Blocker | Notes |
+|---------|--------|---------|-------|
+| **resistance-research** | ✅ READY | User distribution decision | Framework: 35 domains complete + April-May 2026 updates complete. Awaiting Path A / A+37 / B decision for Phase 1 outreach. |
+| **stockbot** | 🔴 BLOCKED | Engine restart (CRITICAL) | Engine not running. Awaiting user restart before market hours. Feature bug fixed (Session 560). |
+| **mfg-farm** | ✅ READY | Test print confirmation | Business plan + designs + supplier research + Amazon FBA strategy (NEW) complete. Awaiting test print go/no-go. |
+| **seedwarden** | ✅ READY (Track B) | Phase 1 tag corrections (Track A) | Phase 1-3 + Track B photography complete (Session 617 Item 16). No autonomous blockers on Track B. |
+| **cybersecurity-hardening** | ✅ READY | Tier 1 approval | All 3 distribution tiers production-ready. Awaiting Tier 1 messaging approval for outreach. |
+| **open-repo** | ⏳ WAITING | PR #1 merge | Phase 4-5-6 complete. Awaiting PR #1 review/merge before Phase 5 implementation. |
+| **off-grid-living** | ✅ COMPLETE | Social media distribution | Publication + campaign plan complete. Awaiting user execution. |
+| **workout** | ✅ COMPLETE | User review | Comprehensive plan complete (1,053 lines). Awaiting user selection. |
+
+---
+
+### ⚡ Action Items Needing User Input (Prioritized)
+
+1. **[CRITICAL — before 13:30 UTC any market day]** **stockbot engine restart** — Engine NOT running. Without restart, Gate 1 validation cannot proceed. Command: `cd projects/stockbot && .venv/bin/python scripts/run_live_trading.py`
+
+2. **[HIGH PRIORITY]** **resistance-research distribution path** — Choose Path A / Path A+Domain37 Hybrid / Path B. Framework complete + April-May 2026 updates done. Ready for Phase 1 institutional outreach immediately upon decision.
+
+3. **[MEDIUM PRIORITY — no dependencies]** **mfg-farm test print** — Run test print of CadQuery designs. Amazon FBA strategy (NEW) ready for post-print supplier negotiation. Capital plan + economics complete.
+
+4. **[MEDIUM PRIORITY]** **seedwarden Phase 1 upload** — Provide 3 tag corrections + Etsy account verification. Track B (photography, social calendar) already complete and ready to execute in parallel.
+
+5. **[MEDIUM PRIORITY]** **cybersecurity-hardening Tier 1 approval** — Approve Tier 1 messaging templates so outreach can begin. All 3 distribution tiers production-ready.
+
+---
+
 ## Since Last Check-in (Session 617 — 2026-04-29 06:20 UTC — Current)
 
 ### ✅ Exploration Queue Items 16 & 18 COMPLETE | Parallel Execution

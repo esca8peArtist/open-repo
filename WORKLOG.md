@@ -4,6 +4,54 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 13:45 UTC — Session 618 — Autonomous Domain Maintenance + Market Strategy (Parallel Execution)
+
+**Context**: High-priority projects blocked on user actions (stockbot engine restart, mfg-farm test print, resistance-research distribution path decision). Executed two priority autonomous work items: resistance-research Domain Content Maintenance (Priority 1 project, QUEUED) and mfg-farm Amazon FBA Strategy (Priority 4 project, QUEUED).
+
+**Parallel agents spawned**:
+- **resistance-research agent**: Domain Content Maintenance for April-May 2026 developments
+- **general-purpose agent**: mfg-farm Amazon FBA vs. Etsy fulfillment strategy analysis
+
+---
+
+### ✅ **resistance-research: Domain Content Maintenance — April-May 2026 Updates COMPLETE**
+
+**Agent**: resistance-research (autonomous)
+**Duration**: ~12 minutes research + writing
+**Files updated** (committed to master, commit 3888d15):
+1. `projects/resistance-research/domains/domain-19f-war-powers-reform.md` — Section 17 added (final pre-deadline status, May 1 in 48h, naval blockade ongoing, post-deadline GOP accountability structure, strategic inflection point documented)
+2. `projects/resistance-research/domains/domain-29-prosecutorial-weaponization-and-doj-capture.md` — Section 16 added (SPLC motions vs. AG Blanche false statements, Charlottesville 2017 + Atomwaffen 2019 cases, factual-accuracy defect strengthens dismissal case)
+3. `projects/resistance-research/surveillance-tracking.md` — Checklist updated (FISA Section 702 bill "imploded" April 28, Rules Committee postponed, Senate postponed vote, probability shift to emergency stopgap > three-year renewal, EO 12333 shift flag added)
+
+**Key findings from April 28-29 developments**:
+- **Domain 19f urgency**: May 1 deadline 48 hours away. Naval blockade continues as active hostilities (not addressed by ceasefire). Administration has not requested authorization or acknowledged WPR deadline as binding. Collins/Tillis pre-deadline statements now legally operative constraints on post-May 1 votes. May 15-30 appropriations window is strategic inflection point.
+- **Domain 29 update**: SPLC filed two additional April 28 motions against Blanche false statements (Charlottesville intelligence, Atomwaffen warning). If false claims in press conference, same false claims in grand jury room are dismissal-with-prejudice grounds. Legal significance escalation from theory defect to factual accuracy defect.
+- **FISA/Domains 21-25**: FISA bill has "imploded" (American Prospect April 28). Rules Committee/Senate both postponed votes. Probability distribution shifted: emergency stopgap now most likely outcome ahead of three-year renewal. If lapse occurs, NSA shifts to EO 12333 (collection continues, less oversight, no statutory expiration forcing future Congressional review).
+
+**Status**: Production-ready for distribution framework currency. Pending post-deadline items logged for next session: FISA outcome April 30, Iran WPR post-May 1.
+
+---
+
+### ✅ **mfg-farm: Amazon FBA vs. Etsy Fulfillment Strategy Analysis COMPLETE**
+
+**Agent**: general-purpose (autonomous)
+**Duration**: ~8 minutes research + writing
+**File created** (committed to master, commit 3888d15):
+1. `projects/mfg-farm/amazon-fba-analysis.md` (6,723 words, 9 sections, 30+ sources, April 2026 current)
+
+**Deliverables**:
+- **Part 1: FBA Program Overview** — 2026 fee structure including April 17, 2026 fuel surcharge. ModRun-specific fulfillment fees: $3.22–$3.83 per unit. New Seller Incentives ($600+ value potential), Vine enrollment ($200 credit), inbound placement fees.
+- **Part 3: Fulfillment Economics Comparison** — Cost models at 10, 50, 100 units/month. Etsy-only effective fee rate 11–13%. Amazon effective fee rate 27–35% (15% referral + 3–4% fulfillment + other fees). ModRun COGS integration ($1.55–$4.20 per unit depending on tier).
+- **Part 6: Capital & Cash Flow Analysis** — Etsy-only launch: $40 upfront, self-funding from first order. FBA Phase 2: $412–462 total. Etsy cash flow 5–8 days post-shipment vs. Amazon 14–30 days post-order. FBA inventory float: $188–250 tied-up capital.
+- **Part 7.5: Case Studies** — 3 real 2025–2026 3D printer seller examples: (1) Robbosales Etsy-first validation then FBA (6–8 months, $4,500–$5,500/month combined at Month 9); (2) Infinaprint3d parallel-channel risk (operational capacity constraint, Etsy reviews dropped 4.8→4.6, estimated $800–$1,200 margin loss); (3) PETG Premium FBA-first strategy (higher capital $600+, faster Amazon traction).
+- **Part 9: Decision Framework & Recommendation** — Primary: Launch Etsy-only immediately post-test-print ($40, made-to-order model). FBA trigger point: 50+ units/month with $400 available capital and 20+ Etsy reviews at 4.8+. At 50/month: hybrid generates 49% more combined revenue ($1,622 vs $1,085 Etsy-only). At 100/month: hybrid generates 78% more revenue ($3,962 vs $2,229). Below 50/month: Etsy margins superior (74.8% vs 56% FBA).
+
+**Critical insight**: Operational capacity is the constraint, not capital. Infinaprint3d case shows parallel channels (Etsy made-to-order + FBA forward-stock) simultaneously cause quality damage and reputation loss. Recommended: Etsy excellence first, then scale to FBA once market demand and reviews justify capital investment.
+
+**Status**: Production-ready for post-test-print launch decision. Directly informs supplier negotiation and fulfillment strategy planning.
+
+---
+
 ## 2026-04-29 06:15 UTC — Session 617 — Exploration Queue Items 16 & 18 (Parallel Execution)
 
 **Context**: All high-priority projects remain blocked on user actions (stockbot engine restart, mfg-farm test print, resistance-research distribution path decision, seedwarden Etsy verification, cybersecurity Tier 1 approval, open-repo PR merge). Executing Items 16 & 18 from exploration queue in parallel to maximize session output.
