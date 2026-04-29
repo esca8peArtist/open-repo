@@ -48,6 +48,72 @@
 
 ---
 
+## Since Last Check-in (Session 647 — 2026-04-29 18:06–20:00 UTC — PARALLEL: DISTRIBUTION PREP + MARKET MONITORING)
+
+### ✅ Work Completed: Parallel Distribution Execution Planning + Stockbot Market Session Monitoring
+
+**Session 647 Work** (18:06–20:00 UTC, parallel with market close monitoring):
+
+**What was accomplished**:
+1. ✅ **cybersecurity-hardening Tier 1 Execution Checklist COMPLETE**:
+   - **Deliverable**: `TIER1_EXECUTION_CHECKLIST.md` (4,474 words, 6 sections)
+   - **Contents**:
+     - Pre-launch verification (5 checklist items): Contact DB accuracy, template completeness, notifications, fallback methods, timing
+     - Per-contact workflow: Parse → Select template → Personalize → Schedule → Log
+     - Success metrics: Tailored for 1A (legal), 1B (community), 1C (mutual aid) org types
+     - Failure recovery: Bounce recovery, invalid contact escalation, no-response follow-ups
+     - Daily/weekly cadence: 2–5 sends/day, weekly summaries, 6-week timeline
+     - Execution log template: 14-column tracker with engagement levels
+   - **Status**: Ready for user approval to begin Tier 1 outreach execution
+   - **Commit**: `c01ecaa`
+
+2. ✅ **resistance-research Pre-Decision Execution Plan COMPLETE**:
+   - **Deliverable**: `DISTRIBUTION_EXECUTION_PLAN.md` (867 lines, path-agnostic)
+   - **Design**: Identical Phase 1-2 infrastructure for all three paths (A, A+37 Hybrid, B), diverges at Phase 3 based on user selection
+   - **Contents**:
+     - Phase 1: Foundation setup (days 1-5) — domain verification, channel setup, tracking infrastructure
+     - Phase 2: Contact outreach (weeks 1-4) — 158+ contact database, three-wave sequencing, Substack/Reddit schedule
+     - Phase 3: Path divergence — Three execution branches (A: immediate full distribution, A+37 Hybrid: 34 domains Phase 1 + Domain 37 Phase 2, B: deferral + maintenance)
+     - Contact DB structure, response classifications, engagement tiers, success thresholds (25+ institutional engagements, 5+ Level 3 adoptions, 3+ law schools)
+   - **Status**: Ready for user decision (Path A / A+37 RECOMMENDED / B) to trigger Phase 1 launch
+   - **Commit**: `4869904`
+
+3. **Stockbot Market Session Monitoring**:
+   - **Status**: Engine running throughout market hours (13:30–20:00 UTC)
+   - **Signal Generation**: Confirmed continuous across all 11 tickers (100+ signals generated)
+   - **Critical Question**: Are orders actually executing? (0 trades recorded in database as of 18:06 UTC; awaiting market close logs)
+   - **Monitoring Plan**: Watch for Discord summary at 20:00 UTC post-market close (will show: signals/ticker, orders placed/filled, trades, P&L)
+   - **Next**: Check logs at 20:00 UTC for definitive assessment
+
+**Current Project Status**:
+- 🟢 **cybersecurity-hardening**: Tier 1 execution checklist complete → Ready for user approval to launch outreach
+- 🟢 **resistance-research**: Pre-decision execution plan complete → Ready for user path selection (A/A+37/B)
+- 🟡 **stockbot**: Market session ongoing (monitoring through 20:00 UTC). Order execution status TBD pending market close logs.
+- 🟡 **open-repo**: Phase 5 Step 2 complete (Session 646), Step 3 ready for next session
+- 🔴 **mfg-farm**: Awaiting test print
+- 🔴 **seedwarden**: Awaiting tag corrections + Etsy verification
+
+**Items Needing Your Input** (updated priority):
+1. **IMMEDIATE DECISION**: resistance-research distribution path — Path A (immediate full 35-domain) / Path A+37 Hybrid (RECOMMENDED: 34 domains Phase 1 + Domain 37 targeted to election orgs Phase 2) / Path B (defer for maintenance)
+   - **Why recommended**: A+37 Hybrid maximizes timeliness (core framework distributed April 30) while ensuring election-protection domain reaches highest-urgency subset by May 12
+   - **Impact**: User decision here triggers Phase 1 launch immediately using pre-decision execution plan just completed
+
+2. **IMMEDIATE APPROVAL**: cybersecurity-hardening Tier 1 execution — Review TIER1_EXECUTION_CHECKLIST.md and approve messaging/sequencing for 25 high-leverage contacts
+   - **Timeline**: If approved, Tier 1 outreach can begin May 1; Tier 2 follows 4 weeks later; Tier 3 follows 12 weeks later
+   - **Impact**: Full trilogy distribution (Gist + three tiers) can execute sequentially
+
+3. **FUNDING**: stockbot Alpaca account — Deposit funds ($5K–10K recommended for 11-ticker simultaneous trading) to resolve insufficient buying power constraint
+   - **Status**: Engine running, signals generating, but orders failing due to insufficient capital
+   - **Impact**: Multi-ticker paper trading validation blocked without funding; Gates 1-3 cannot be validated
+
+4. **TEST PRINT**: mfg-farm — Run test print of ModRun designs to confirm printability and unblock supplier sequencing
+   - **Status**: All design, pricing, copy, mockups complete; only physical validation needed
+   - **Impact**: Post-print, can negotiate with suppliers immediately (scorecard pre-ranked in supplier-research.md)
+
+**Session Summary**: Two production-ready distribution execution plans created (cybersecurity-hardening + resistance-research). Both await user decisions/approvals. Stockbot market session monitoring active through 20:00 UTC market close; order execution status TBD. All work from Session 647 committed to master. Next user inputs can trigger simultaneous distribution launches across two projects.
+
+---
+
 ## Since Last Check-in (Session 645 — 2026-04-29 16:11–20:00 UTC — STOCKBOT LIVE MARKET SESSION MONITORING)
 
 ### ✅ Work Completed: Stockbot Live Market Session Monitoring + Market Close Checkpoint
