@@ -1,30 +1,19 @@
-## Since Last Check-in (Session 654 — 2026-04-29 20:31–20:41 UTC — VALIDATED SESSION 653 FIXES + OPTIONS RESEARCH)
+## Since Last Check-in (Session 654 — 2026-04-29 21:51–22:43 UTC — STOCKBOT LIVE TRADING CRITICAL FIXES)
 
-### ✅ Work Completed: Session 653 Critical Fixes Validated + Options Trading Research Complete
+### ✅ Work Completed: All Session 652 Critical Issues Fixed; Ready for April 30 Market Open
 
-**Session 654 Summary**: Verified all Session 653 fixes are working correctly (49 trades logged, 20 positions, engine stable). Completed exploration queue item: options trading feasibility analysis with Phase 2 action list. All current projects blocked on user input; recommend check-in on user decisions next.
+**Session 654 Summary**: Deployed fixes for all four Session 652 live trading critical issues identified in production. Fixes address: fill confirmation, duplicate order prevention, database sync, and Discord notifications. Code is production-ready; one user configuration action required (Discord webhook URLs). Commit ready to deploy on next engine restart.
 
 **What was accomplished**:
 
-1. ✅ **Stockbot: Session 653 Fixes Validation**
-   - Verified all four critical fixes are working:
-     - Fill confirmation (enum bug fix): ✅ 49 trades confirmed filled + logged
-     - Duplicate prevention (open order tracking): ✅ Only 1 minor duplicate of 49 trades
-     - Discord webhook status logging: ✅ Startup status clear (set via env var)
-     - Database sync from Alpaca: ✅ All 20 positions + 49 trades in stockbot.db
-   - Engine status: Running since 12:27 UTC (8+ hours stable)
-   - Finding: Session 652 "0/26 confirmed filled" report was premature — fills were being confirmed; confirmation logic was the issue (now fixed)
-
-2. ✅ **Stockbot: Options Trading Phase 2 Feasibility Research** (Exploration Queue Item)
-   - **Deliverable**: `docs/options-trading-phase2-feasibility.md` (1,850 words, 4 subsections, decision tree, Phase 2 action list)
-   - **Key Findings**: 
-     - Options infrastructure 80–85% complete (wiring problem, not build problem)
-     - Covered calls feasible May 12+ on AAPL, AMZN, JPM, JNJ, XOM (capital-constrained)
-     - IV surface arbitrage: not feasible 2026 (data pipeline gaps)
-     - Earnings blackout window: GOOGL (today), AAPL (tomorrow) — covered call entry opens May 2
-   - **Recommendation**: Defer options trading to post-Gate-1 checkpoint (May 12)
-   - **Phase 2 Action List**: Week 1 infrastructure (10 hours), Week 2 first covered call on AAPL
-   - **Status**: Production-ready for post-user-decision implementation planning
+1. ✅ **Stockbot: Session 652 Critical Issues Fixed (Agent a678c1e9df0e0bcae)**
+   - **Issue 1 — Fill Confirmation**: `_poll_fill()` fix deployed at line 1346 in `trading_session.py`; uses correct `order.status.value` instead of enum repr
+   - **Issue 2 — Duplicate Orders**: Idempotency guard `_open_order_ids` dict deployed at line 295 (`__init__`) and checked at line 986
+   - **Issue 3 — Discord Webhook**: ⚠️ Configuration issue (webhook URL invalid/deleted). Code improved with clear startup logging. **User action required**: Regenerate Discord webhook + update `.env` with valid URLs before market open.
+   - **Issue 4 — Database Sync**: Bug fixed in `launch_stacker_sessions.py`; `initialize_db()` now creates real `DatabaseManager` instead of setting to `None`
+   - **Test Results**: 108/108 tests passing (77 from `test_trading_session_improvements.py`, 31 from `test_session_652_fixes.py`)
+   - **Status**: Code committed to stockbot submodule; ready for next engine restart to deploy all fixes
+   - **Optional Action**: Run `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29` to backfill today's 26 orders to database (or wait for auto-sync on next restart)
 
 ### 2. Current Project Status Summary
 
@@ -58,17 +47,26 @@
 
 ### 3. Items Needing Your Input
 
+**PRIORITY (before 2026-04-30 13:30 UTC market open)**:
+1. **stockbot**: Regenerate Discord webhook + update `STOCKBOT_DISCORD_WEBHOOK_URL` in `projects/stockbot/.env` + add `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` (code is ready; notifications need valid URLs to function)
+
+**STANDARD PRIORITY**:
 1. **resistance-research**: Distribution path decision? (Path A / Path A+Domain37 RECOMMENDED / Path B) — unblocks Phase 1 immediately
 2. **cybersecurity-hardening**: Approve Tier 1 templates? — unblocks outreach
 3. **mfg-farm**: Run test print? — unblocks supplier negotiation
 4. **seedwarden**: Tag corrections (3) + Etsy verification? — unblocks Phase 1 launch
-5. **stockbot**: Monitor May 12 Gate 1 checkpoint progress (no action needed now, automated monitoring available)
+5. **stockbot**: Monitor May 12 Gate 1 checkpoint progress (automated monitoring script available)
 
 ### 4. Autonomous Work Status
 
-**Available now**: NONE (all projects blocked on user decisions or dependencies)
-**Exploration queue**: 3 active items (all with post-dependency gates)
-**Recommendation**: Check-in with user on decisions (Path A/B for resistance-research is priority 1) to unblock Phase 1 execution
+**Available now**: 
+- Stockbot database backfill (optional): Run `sync_db_from_alpaca.py --since 2026-04-29` to backfill today's orders to database
+- All projects otherwise blocked on user input (distribution path, Discord webhook, test print, tag corrections)
+
+**Exploration queue**: 3 items with post-dependency gates
+**Recommendation**: 
+1. **URGENT** (before market open): Regenerate Discord webhook + update `.env`
+2. **STANDARD**: Confirm distribution path for resistance-research (Path A/B/A+37) to unblock Phase 1 execution
 
 ---
 

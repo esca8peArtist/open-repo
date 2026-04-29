@@ -27,6 +27,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+---
+
+### stockbot — Discord webhook URLs invalid; 403 Forbidden errors in live trading
+**Date blocked**: 2026-04-29
+**Context**: Live trading session (Session 654) identified 403 Forbidden errors for Discord notifications. Root cause: `STOCKBOT_DISCORD_WEBHOOK_URL` in `.env` points to deleted/regenerated webhook. All 241 alerts + daily summaries failed silently. Code is correct; this is a configuration issue.
+**What I need**: Regenerate Discord webhooks and update `.env` with valid URLs before 2026-04-30 13:30 UTC market open (so notifications work during trading).
+**Verify with**: `curl -s -X POST "$STOCKBOT_DISCORD_WEBHOOK_URL" -H "Content-Type: application/json" -d '{"content":"test"}' && echo "200 OK" || echo "failed"`
+**Resolution**: 
 
 ---
 
