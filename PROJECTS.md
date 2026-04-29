@@ -687,6 +687,33 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
   - **Expected outcome**: Amplified distribution impact, policy influencer pre-engagement before Phase 1 distribution
   - **Sources**: Congress.gov committee assignments, think tank leadership, media outlet editorial boards, academic department rankings
   - **Timeline**: 2-3 sessions for mapping + strategy
+
+**NEW ITEMS (Session 622)**:
+
+- **off-grid-living: Regional Implementation Guides** (Priority MEDIUM for practical utility)
+  - **Scope**: Adapt comprehensive guide to 5–6 specific climate zones and geographic regions. Current guide is global/generic; regional guides provide climate-specific material selection, resource availability, infrastructure requirements.
+  - **Regions**: Pacific Northwest (temperate, high rainfall), Southwest Desert (arid, extreme heat, water scarcity), South Atlantic (hot-humid, hurricane zone), Upper Midwest (extreme cold, short season), Northeast (four seasons, limited space). Optional: Tropical Pacific, Mountain West.
+  - **Adaptation depth**: Food production calendars, shelter materials/insulation specs, water system design (rainwater vs. well vs. river), energy generation (solar/wind potential), seasonal maintenance protocols, regional hazard-specific preparedness (wildfire, tornado, flood, cold-snap)
+  - **Deliverable format**: 5 standalone `.md` files (one per region) with cross-references to main guide sections
+  - **Expected scope**: 2,000–3,000 words per region × 5–6 regions = 15,000–20,000 words total
+  - **Timeline**: 3–4 hours for research + writing
+  - **Value**: Makes off-grid guide actionable for readers in specific locations; increases relevance and adoption
+
+- **cybersecurity-hardening: TIER 3 Threat Model & Implementation** (Priority MEDIUM for comprehensive coverage)
+  - **Scope**: Develop TIER 3 threat model (highest sophistication: targeted by well-resourced actors such as state intelligence, law enforcement with warrants, organized crime). Current TIER 1–2 cover individual privacy and law enforcement with limited resources.
+  - **Threat actor profile**: State intelligence (signals intelligence, forensic capability, legal authority), federal law enforcement (NSA, FBI with FISA, subpoena authority), organized crime with technical capability
+  - **Attack surface expansion**: Phone network intercept (SS7/3GPP), hardware keyloggers, supply chain compromise, border confiscation with forensic toolkit, forensic techniques (NIST bias, Magnet Axiom, GrayKey), secure communications sabotage
+  - **Countermeasure research**: Compartmentalization (air-gapped systems, separate networks), dead drops (physical exchange), obsolescence strategy (hardware degradation plan), legal strategy (warrant challenges, international jurisdiction), group operational security
+  - **Deliverable**: `tier-3-threat-model.md` (3,000–4,000 words) + `tier-3-implementation-guide.md` (2,000 words)
+  - **Timeline**: 2–3 hours for research + documentation
+  - **Value**: Extends hardening guide to organizational/activist use cases; provides realistic countermeasures for targeted adversaries
+
+- **open-repo: Federation Conflict Resolution & Scaling Architecture** (Priority MEDIUM for Phase 5 readiness)
+  - **Scope**: Deep analysis of federation conflict scenarios and resolution strategies. Phase 4 completes federation infrastructure basics; Phase 5 needs to handle: conflicting domain data (same resource, different content), version divergence (federation participants update asynchronously), trust cascades (if partner A is compromised, what's the domain-wide impact?), split-brain scenarios (partition tolerance when federation mesh fragments)
+  - **Research questions**: Byzantine fault tolerance for distributed repositories, content hash conflict resolution, transaction journal pruning (garbage collection of old versions), rollback semantics (if a bad version propagates, can it be reverted across all nodes?), network partition recovery (when federation segments reconnect, how do they reconcile?)
+  - **Deliverable**: `phase-5-conflict-resolution-architecture.md` (3,000–4,000 words) with 4–5 conflict scenarios, resolution strategies, trade-offs, and references to distributed systems literature (CRDT, IPFS conflict handling, Git merge semantics)
+  - **Timeline**: 2–3 hours for research + architecture design
+  - **Value**: Identifies critical architecture questions before Phase 5 implementation; prevents costly rework during live federation operation
   - **Status**: QUEUED (identified as post-distribution execution planning)
 
 - **seedwarden: Email list building and organic growth playbook** (Priority MEDIUM for Phase 1+ scaling)
