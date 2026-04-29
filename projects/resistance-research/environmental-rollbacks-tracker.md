@@ -3,7 +3,7 @@ title: "Environmental Regulation Rollbacks Tracker — Trump Administration 2025
 subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
-last_updated: "2026-04-27"
+last_updated: "2026-04-29"
 april_2026_entries: "entries 25–30 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup; entry 28 (OOOO methane flaring rule) added April 27; entry 29 (CCR coal ash proposed rollback) added April 27; entry 30 (plastic pyrolysis Clean Air Act reclassification) added April 27"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
@@ -634,4 +634,30 @@ The following organizations are actively litigating environmental rollbacks and 
 
 ---
 
-*This document is part of the resistance-research project. It is intended as a public reference. Cite primary sources (Federal Register citations, agency press releases, court filings) for legal proceedings. Last compiled April 26, 2026.*
+---
+
+## VI-B. April 29, 2026 Additions
+
+### 31. PM2.5 Nonattainment Designations — Coalition Sues Trump EPA for Failure to Implement 2024 Soot Standard (April 13, 2026)
+
+**Rule at issue**: 2024 Biden EPA final rule tightening the annual PM2.5 primary NAAQS from 12.0 to 9.0 µg/m³ (entry 3 in this tracker)
+**Code**: 40 CFR Part 50; Clean Air Act Section 107(d) (nonattainment designation obligation)
+**Status**: [LITIGATION FILED — April 13, 2026]
+
+**What happened**: On April 13, 2026, a coalition of seventeen health, environmental, and community groups — including Earthjustice, the Clean Air Task Force, EDF, American Thoracic Society, CleanAIRE NC, and Georgia Interfaith Power & Light — filed suit in U.S. District Court for the Northern District of California against the Trump EPA for failing to make required nonattainment designations under the 2024 PM2.5 standard.
+
+**The legal obligation**: Under Clean Air Act Section 107(d), once a NAAQS is finalized, EPA must designate which areas are in "nonattainment" — meaning their air quality does not meet the standard — within one year. This designation triggers state obligations to reduce pollution and ultimately protect public health. The 2024 Biden rule had a February 7, 2026 deadline for EPA to issue initial designation decisions or notify local governments of its plans to do so. EPA missed both the deadline and the notification requirement entirely.
+
+**Why EPA is not complying**: Rather than implement the 2024 standard through nonattainment designations, the Trump EPA has filed a court motion to vacate the 2024 rule (entry 3 in this tracker) and restore the prior 12.0 µg/m³ standard. Until that vacatur motion is resolved, EPA is in the anomalous position of being legally required to implement a rule it is simultaneously trying to undo. The agency did not issue a final rule suspending the 2024 standard; it simply did not act.
+
+**Cities documented as violating the 9.0 µg/m³ standard**: Environmental monitoring shows air quality in Nashville, Atlanta, Macon, Charlotte, Birmingham, and other Southern cities at levels exceeding the 2024 standard. These cities would be designated nonattainment and required to adopt pollution reduction plans under a functioning implementation regime.
+
+**The coalition's ask**: The lawsuit requests the court compel EPA to: (1) make the required nonattainment designations; and (2) do so within 150 days of the court's order — an expedited timeline given the ongoing health harm from the implementation delay. The 2024 standard is projected to prevent 4,500 premature deaths annually, 800,000 cases of asthma symptoms, and 2,000 emergency room visits once implemented.
+
+**Context within the tracker**: This lawsuit is the enforcement mechanism for a rule that EPA is simultaneously attempting to repeal (entry 3). It is a documented example of the gap between formal regulatory status (the 2024 standard is still technically effective as of the filing date) and practical implementation (no designations, no state obligations, no health protection). Combined with the Endangerment Finding rescission (entry 1, effective April 20, 2026), the enforcement collapse (entry 12, Q1 2026: $3.37 million nationally), and the Good Neighbor Plan abeyance (entry 7), this lawsuit illustrates the multiple simultaneous vectors through which the soot pollution regulatory system is being dismantled.
+
+**Sources**: [Earthjustice — coalition lawsuit press release](https://earthjustice.org/press/2026/coalition-sues-trump-epa-for-failure-to-implement-life-saving-national-soot-standard) | [EDF — coalition filing](https://www.edf.org/media/coalition-sues-trump-epa-failure-implement-life-saving-national-soot-standard) | [CleanAIRE NC — press release](https://cleanairenc.org/blog/2026/04/14/press-release-coalition-sues-trump-epa-for-failure-to-implement-life-saving-national-soot-standard) | [Nashville Scene — local air quality data](https://www.nashvillescene.com/news/pithinthewind/state-of-nashville-air-quality-2026/article_281a2b03-702c-4706-8135-f4f744b9bab6.html) | [WSMV Nashville — coalition findings](https://www.wsmv.com/2026/04/15/unhealthy-levels-dangerous-pollution-found-nashville-coalition-says-it-sues-epa-over-air-quality-standards-enforcement/) | [Smart Cities Dive — cities sue EPA](https://www.smartcitiesdive.com/news/cities-sue-epa-soot-standard-naaqs/818558/)
+
+---
+
+*This document is part of the resistance-research project. It is intended as a public reference. Cite primary sources (Federal Register citations, agency press releases, court filings) for legal proceedings. Last compiled April 26, 2026; updated April 29, 2026 (entry 31 added — PM2.5 nonattainment coalition lawsuit, April 13, 2026).*

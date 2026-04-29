@@ -1,7 +1,7 @@
 ---
 title: "First Amendment Suppression — Press Crackdowns, Protest Restrictions, Deplatforming, and SLAPP Suits"
 description: "A reference document tracking First Amendment violations and suppression across press freedom, protest rights, government-coerced deplatforming, and strategic litigation. Covers 2024–2026 with case law context."
-last_updated: 2026-04-27
+last_updated: 2026-04-29
 status: active
 phase: 3
 project: resistance-research
@@ -14,7 +14,7 @@ cross_references:
 
 # First Amendment Suppression — Reference Document
 
-*Phase 3 — Distributable. Last updated: April 27, 2026. April 2026 additions: Section 1.7 (WHCD shooting + journalist petition updated with suspect detail), Section 1.6 updated (Don Lemon/Fort charges — April status), Section 1.8 (Seth Harp congressional subpoena), Section 1.9 (LAPD baton strikes on journalists at LA immigration protest — April 11), Section 4.6 (Kash Patel v. The Atlantic — $250M SLAPP), Section 4.6 updated (Figliuzzi suit dismissed April 21), Section 5.2 updated, Section 7 added (SPLC indictment — April 21, 2026 — civil society prosecution as First Amendment suppression mechanism).*
+*Phase 3 — Distributable. Last updated: April 29, 2026. April 2026 additions: Section 1.7 (WHCD shooting + journalist petition updated with suspect detail), Section 1.6 updated (Don Lemon/Fort charges — April status), Section 1.8 (Seth Harp congressional subpoena), Section 1.9 (LAPD baton strikes on journalists at LA immigration protest — April 11), Section 4.6 (Kash Patel v. The Atlantic — $250M SLAPP), Section 4.6 updated (Figliuzzi suit dismissed April 21), Section 5.2 updated, Section 7 added (SPLC indictment — April 21, 2026 — civil society prosecution as First Amendment suppression mechanism), Section A.4 (Ninth Circuit Portland final ruling — April 27, tear gas injunctions reversed), Section A.5 (Kansas student protest law enacted via veto override — April 10–11).*
 
 **Lead finding**: The United States is experiencing a coordinated, multi-vector assault on First Amendment rights. Government actors are suppressing press freedom through exclusion, warrant raids, and funding retaliation; restricting protest through state anti-protest laws and immigration enforcement used as political punishment; pressuring platforms to silence dissent through administrative subpoenas; and weaponizing defamation litigation to impose financial ruin on critics. Courts have provided partial relief, but enforcement gaps and the administration's willingness to defy injunctions mean legal wins do not always translate to protected speech.
 
@@ -505,3 +505,50 @@ Former federal prosecutor Aaron Zelinsky identified that the bank fraud counts a
 *Updated April 27, 2026. Additions: Section A.1 (10th Circuit Denver ruling — April 21); Section A.2 (SCOTUS Villarreal cert denial — March 23); Section A.3 (Accountability Now NPS enforcement threat suit); Section 1.9 (LAPD journalist assaults — April 11, 2026).*
 
 *This document is intended as a factual reference. It reflects verified reporting and legal records as of April 27, 2026. Confidence is high for documented court proceedings and verified reporting from named outlets; moderate for ongoing litigation where status may have changed. Verify current case status with CourtListener, PACER, and the sources linked above before relying on this document in legal or advocacy contexts.*
+
+---
+
+## April 29, 2026 Additions
+
+### A.4 Ninth Circuit Rules Federal Agents Have Broad Discretion to Deploy Tear Gas at Portland ICE Protests — Reversal of District Court Injunctions (April 27, 2026)
+
+**What happened**: On April 27, 2026, a 2-1 panel of the Ninth Circuit Court of Appeals reversed two district court injunctions that had restricted Department of Homeland Security and ICE use of tear gas and other crowd-control weapons against protesters outside the Portland ICE detention facility. The ruling eliminates those restrictions entirely.
+
+**The decision**: The majority — authored by Judge Eric Tung and joined by Judge Kenneth Lee, both Trump appointees — held: (1) that the protesters failed to demonstrate federal officers targeted demonstrators for First Amendment activity; (2) that DHS policies expressly prohibit targeting First Amendment activity, and plaintiffs had not rebutted that; and (3) that residents of a nearby affordable housing complex (Gray's Landing) have no constitutional right to be free from tear gas exposure near their homes — a claim the court dismissed as a "'NIMBY' cause better suited for a tort claim." The court dismissed the Gray's Landing tenants' case entirely on a 2-1 vote.
+
+**The dissent**: Judge Ana de Alba (Biden appointee) dissented, arguing that the record showed federal officers successfully protected the ICE facility during the temporary restraining order period without deploying tear gas — undercutting the government's necessity argument — and that documented instances showed tear gas use "frequently disconnected from any law enforcement purposes."
+
+**Legal significance — circuit split hardening**: This ruling directly contradicts the Tenth Circuit's April 21, 2026 decision in *Epps v. City of Denver* (Section A.1 of this document and Section 3 of `police-brutality-consent-decree-tracker.md`), which held that use of less-lethal munitions against unthreatening protesters is unconstitutionally excessive. The two circuits are now in explicit tension. The Tenth Circuit says constitutional violations occur when force is used against protesters who have not committed serious offenses; the Ninth Circuit says there is no general constitutional right to be free from such force when deployed near federal property. This circuit split affects millions of Americans in different jurisdictions.
+
+**Implications for First Amendment enforcement**: The ruling means that in the Ninth Circuit — California, Oregon, Washington, Arizona, Nevada, Montana, Idaho, Hawaii, Alaska — the primary available remedy against tear gas deployment at protests near federal facilities is now political and civil litigation rather than injunctive relief. The decision removes the intermediate legal tool (a federal court order) that protesters and journalists had used to seek protection from chemical weapons during demonstrations. This matters particularly for the LAPD journalist assault cases (Section 1.9), No Kings protest policing (Section 2.4), and any future demonstrations at federal facilities in the circuit.
+
+**Context in the Portland protest policing timeline**: The district court injunctions that were just reversed had been entered after years of documented federal agent use of tear gas, flash-bang grenades, and pepper-ball munitions against protesters — including freelance journalists — outside the Portland ICE facility. The Ninth Circuit had paused the restrictions on March 26, 2026, two days before the No Kings March (Section 2.4), a timing that permitted tear gas deployment that day. The April 27 ruling makes that pause permanent.
+
+**Sources**: [OPB — full ruling detail](https://www.opb.org/article/2026/04/27/federal-appeals-court-grants-crowd-control-weapons-ice-portland-building/) | [Courthouse News — ruling summary](https://www.courthousenews.com/feds-clear-to-use-tear-gas-chemicals-at-portland-ice-facility/) | [KOIN — ruling reverses order](https://www.koin.com/news/portland/appeals-court-says-tear-gas-use-can-resume-outside-portland-ice-facility/) | [AllSides — ICE win framing](https://www.allsides.com/news/2026-04-28-0700/immigration-ninth-circuit-just-handed-ice-major-win-portland)
+
+---
+
+### A.5 Kansas Enacts First State Law Restricting Student Protest Participation — Veto Override, April 10–11, 2026
+
+**What happened**: Kansas became the first state to enact a law specifically restricting K–12 students' participation in public protests when the Republican-controlled legislature overrode Governor Laura Kelly's line-item veto on April 10–11, 2026. The law — inserted as a budget proviso — takes effect immediately.
+
+**What the law does**:
+- Requires students to obtain written parental permission before participating in any protest during school hours
+- Students who walk out to attend a protest must complete makeup instructional time
+- School districts that organize, encourage, or fail to adequately discipline students for unauthorized protest face fines of up to **$100,000 per day**, paid to the state general fund
+
+**Context — direct legislative response to anti-ICE protests**: The legislation was explicitly motivated by student-led anti-ICE walkouts in January 2026, when Kansas students across the state — including groups that reached the state capitol — walked out to protest immigration enforcement. Republican legislators described the law as a response to those events. Governor Kelly's veto message called the law an infringement on First Amendment rights. Republicans simultaneously passed a free speech bill honoring slain conservative activist Charlie Kirk — a juxtaposition that Democratic legislators called "ironic" on the House floor.
+
+**Constitutional analysis — *Tinker v. Des Moines* and its limits**: *Tinker v. Des Moines Independent Community School District*, 393 U.S. 503 (1969), established that students do not "shed their constitutional rights... at the schoolhouse gate" and that schools may not suppress student political expression absent evidence of substantial disruption. The Kansas law does not directly prohibit student speech — it imposes procedural requirements (parental permission) and re-entry penalties (makeup time) for off-campus protest participation. It also targets the funding of organizing institutions. Whether this constitutes a cognizable First Amendment infringement on off-campus, off-hours political activity is an open question. The ACLU of Kansas has identified the law as a First Amendment concern and actively tracked it through the legislature; no constitutional challenge had been filed as of late April 2026.
+
+**Significance in the anti-protest wave**: Section 2.1 of this document tracks 55+ state anti-protest laws enacted since 2017. The Kansas statute is distinct in two ways: (1) it specifically targets youth political participation, imposing institutional financial penalties on schools whose students engage in constitutionally protected activity; and (2) it was enacted as a direct, documented governmental response to identifiable protected speech (the anti-ICE walkouts). That second factor — direct government response to specific political activity — is the factual pattern that *Tinker* protections were designed to address.
+
+**Sources**: [KCUR — full legislative history](https://www.kcur.org/education/2026-04-12/kansas-republicans-vote-to-restrict-student-protests-in-school-in-response-to-ice-walkouts) | [Kansas Reflector — veto override](https://kansasreflector.com/2026/04/11/kansas-students-to-face-punishment-for-protests-after-lawmakers-override-veto/) | [KWCH — new statute](https://www.kwch.com/2026/04/17/new-kansas-statute-limits-student-protests-school/) | [ACLU of Kansas — 2026 legislative tracking](https://www.aclukansas.org/2026-legislative-hub/)
+
+---
+
+### 5.2 Update — Ninth Circuit Portland Ruling Added to Active Litigation Section
+
+**Portland protest policing — Ninth Circuit (April 27, 2026 FINAL RULING)**: The Ninth Circuit issued its merits ruling on April 27, 2026. A 2-1 Trump-appointed majority reversed both district court injunctions restricting federal agent use of tear gas outside the Portland ICE facility, finding no constitutional right to be free from tear gas and no demonstrated First Amendment targeting. Judge de Alba dissented. The case as to Gray's Landing tenants was dismissed entirely. See Section A.4 for full analysis.
+
+*Updated April 29, 2026. Late April additions: Section A.4 (Ninth Circuit Portland final ruling — April 27, reversing protest policing injunctions); Section A.5 (Kansas student protest veto override law — April 10–11, 2026); Section 5.2 updated (Portland case now final).*

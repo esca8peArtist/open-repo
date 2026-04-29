@@ -1,7 +1,7 @@
 ---
 title: "Police Brutality Consent Decree Tracker — Compliance, Defiance, and the Federal Withdrawal"
 description: "City-by-city reference tracking active and terminated police consent decrees, specific provision violations, monitoring gaps, and the 2025 collapse of federal pattern-or-practice enforcement. For use by activists, civil rights lawyers, and journalists."
-last_updated: 2026-04-27
+last_updated: 2026-04-29
 status: active
 phase: 3
 project: resistance-research
@@ -403,4 +403,42 @@ The Denver ruling also reinforces the consent decree accountability function: ha
 
 ---
 
-*Cross-references: `consent-decree-defiance-tracker.md` (legal framework, Castañon Nava immigration consent decree, Section 70302 contempt limitation) | `first-amendment-suppression.md` (protest monitor retaliation, crowd management policy violations, First Amendment provisions in police decrees) | `litigation-tracker-2026.md`*
+---
+
+## April 29, 2026 Additions
+
+### Springfield — Springfield Police Department (SPD), Massachusetts — Termination Filing, April 27, 2026
+
+**Decree**: Federal consent decree *United States v. City of Springfield*, entered **April 2022**, following a DOJ investigation that found the Narcotics Bureau "engaged in a pattern or practice of excessive force." The decree required extensive use-of-force reforms, new officer training programs, and revised conduct policies.
+
+**Termination filing**: On April 27, 2026, the U.S. Attorney's Office for the District of Massachusetts and Springfield's city attorneys jointly filed a motion in U.S. District Court (Massachusetts) requesting termination of the decree. The filing states that the court-appointed Compliance Evaluation Team — the monitoring body — found that "all material requirements of the agreement have been satisfied." The filing is currently designated as draft and awaiting court action.
+
+**Significance as a pattern case**: At four years, the Springfield decree is among the shortest-duration federal police consent decrees in recent history, compared with Oakland (22 years), New Orleans (13 years), and Seattle (13 years). The speed of compliance under the Trump administration's DOJ posture is notable: the Trump DOJ is simultaneously closing investigations (Phoenix, Trenton, Memphis, Oklahoma City) and withdrawing from proposed decrees (Minneapolis, Louisville) while co-signing termination of fully-operative decrees like Springfield where compliance is found. The pattern is consistent with the administration's broader posture — no new oversight commitments, and joint exit from existing decrees where legally viable — rather than enforcement or extension of oversight.
+
+**What "all material requirements satisfied" actually means**: The Springfield decree covered the Narcotics Bureau specifically — a narrower scope than city-wide reform decrees like Baltimore or Chicago. Smaller scope means faster compliance timelines and faster exit. The city's joint motion with the U.S. Attorney's Office (rather than a contested proceeding) follows the model of Newark (2025), New Orleans (2025), and Seattle (2025). Unlike those cases, however, the exit motion comes at a moment when the Trump administration has an institutional interest in demonstrating consent decree exits — which creates a potential incentive to accept compliance certifications that a more adversarial federal party might contest.
+
+**Sources**: [WAMC — termination filing report](https://www.wamc.org/news/2026-04-28/officials-seek-end-to-springfield-police-departments-consent-decree) | [DOJ — original Springfield consent decree](https://www.justice.gov/usao-ma/pr/us-v-springfield-police-department-and-city-springfield)
+
+---
+
+### Pattern 6 Update — Ninth Circuit Portland Final Ruling Resolves Circuit Split in Federal Agents' Favor (April 27, 2026)
+
+Pattern 6 in Section 3 of this tracker noted that the Ninth Circuit's March 26, 2026 stay of district court restrictions had created a geographic zone of differential accountability between the Tenth and Ninth Circuits. On April 27, 2026, the Ninth Circuit issued its final merits ruling on the Portland ICE protest policing litigation — and the circuit split is now definitive.
+
+**The ruling**: A 2-1 panel (Trump-appointed majority; Biden-appointed dissent) reversed both district court injunctions limiting DHS and ICE's use of tear gas and crowd-control weapons outside the Portland ICE facility. The majority found: (1) no demonstrated First Amendment targeting of protesters; (2) no constitutional right protecting residents of a nearby housing complex from tear gas exposure near their homes (dismissed that case entirely). Judge de Alba dissented, noting federal officers successfully protected the ICE facility during the TRO period without tear gas and that documented uses were "frequently disconnected from any law enforcement purposes."
+
+**Implications for the consent decree tracker**: The ruling is directly relevant to police consent decree enforcement for two reasons:
+
+First, consent decrees governing protest policing — including the First Amendment provisions of the Minneapolis MDHR decree and the now-dismissed Baltimore consent decree sections — drew their constitutional floor from the same body of law the protesters invoked in Portland. The Ninth Circuit's ruling narrows that floor for federal agents, and signals an appellate posture that is skeptical of protest policing injunctions generally.
+
+Second, the ruling makes civil litigation — the slower, more expensive accountability pathway — the primary recourse for protesters subject to federal crowd-control weapons in the Ninth Circuit. Cities in the circuit without active consent decrees (LAPD, SPD post-termination) now face even weaker accountability mechanisms: no decree contempt power, and a circuit-level ruling that is skeptical of injunctive relief.
+
+**Cross-reference**: `first-amendment-suppression.md` Section A.4 for the full constitutional analysis of this ruling.
+
+**Sources**: [OPB — full ruling](https://www.opb.org/article/2026/04/27/federal-appeals-court-grants-crowd-control-weapons-ice-portland-building/) | [Courthouse News](https://www.courthousenews.com/feds-clear-to-use-tear-gas-chemicals-at-portland-ice-facility/)
+
+---
+
+*Updated April 29, 2026. Additions: Springfield consent decree termination filing (April 27, 2026); Pattern 6 updated with Ninth Circuit final Portland ruling (April 27, 2026).*
+
+*Cross-references: `consent-decree-defiance-tracker.md` (legal framework, Castañon Nava immigration consent decree, Section 70302 contempt limitation) | `first-amendment-suppression.md` (protest monitor retaliation, crowd management policy violations, First Amendment provisions in police decrees, Section A.4 Ninth Circuit Portland ruling) | `litigation-tracker-2026.md`*
