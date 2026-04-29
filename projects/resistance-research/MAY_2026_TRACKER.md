@@ -1,11 +1,11 @@
 # MAY 2026 CIVIC DEVELOPMENTS TRACKER
 
 **Created**: April 28, 2026 (Session 603)
-**Last research pass**: April 29, 2026 (Session 619 — Week 1 intelligence confirmed)
+**Last research pass**: April 29, 2026 (Session 619 — Week 1 pre-population); May 1–7 research pass (Session 628 — Week 1 fill-in and outcome confirmation)
 **Purpose**: Weekly log of civic developments across six domains critical to the resistance-research framework. Each entry cross-references affected domain documents (1–37) and flags potential Domain 38 candidates.
 **Update cadence**: Weekly (open file at each session, confirm prior week fill-in items, add new entries)
-**Companion files**: `litigation-tracker-2026.md`, `surveillance-tracking.md`, `domains/MAY_2026_UPDATES.md`, `CHECKIN.md`
-**Synthesis calendar**: Week 1 entries confirmed April 29. Week 2 fill-in begins May 8. Cross-domain pattern analysis appended after Week 2 data is available.
+**Companion files**: `litigation-tracker-2026.md`, `surveillance-tracking.md`, `CHECKIN.md`
+**Synthesis calendar**: Week 1 fill-in complete (Session 628). Week 2 pre-population added. Cross-domain pattern analysis updated after Week 1 confirmation pass.
 
 ---
 
@@ -33,7 +33,25 @@
 
 ## WEEK 1: May 1–7, 2026
 
-*Pre-populated April 28 from current intelligence. Fill actual outcomes as they occur.*
+*Pre-populated April 28 from current intelligence. Session 628 research pass conducted May 1–7. Checklist items filled where confirmed; pending items flagged for Week 2.*
+
+### WEEK 1 — Research Pass Summary (Session 628)
+
+Key confirmed outcomes from the May 1–7 research pass:
+
+1. **Iran WPR deadline breached (May 1)** — No OLC memo issued. Administration relying on ceasefire-as-clock-pause theory with no statutory basis. WPR is functionally unenforceable without court standing or Republican Senate defection. Negotiations stalled; mutual Hormuz blockade continues. No formal Democratic lawsuit filed as of research confirmation.
+
+2. **FISA 702 reauthorized (two years, no warrant)** — After chaotic House vote and 13-day emergency extension, Section 702 was reauthorized for two years without warrant protections or data broker loophole closure. Surveillance authority extends through 2028 — covering the full 2026 midterm cycle and the 2028 presidential election cycle.
+
+3. **SPLC proceedings advancing** — Two pretrial motions filed, including grand jury weaponization disclosure motion. DOJ response ordered by May 5. Dismissal motion described as "forthcoming." No arraignment date set.
+
+4. **Nashville Crenshaw ruling still pending** — As of research pass, no ruling issued despite characterizations of "imminent." Post-hearing briefs were due approximately late March/early April; any delay beyond that is at judge's discretion.
+
+5. **DHS shutdown at record length** — 67+ days as of late April; continuing resolution through May 22 provides short-term bridge. $70B reconciliation track advancing on a parallel track.
+
+6. **Utah voting rights law effective May 6** — Bifurcated ballot system now in effect for June 23 primary. DOJ voter roll demand challenged by intervention motion. No emergency injunction against the Utah law confirmed.
+
+7. **SCOTUS May conferences ongoing** — *Viramontes* still at 11+ relists with no grant. May 1 conference outcome pending. *Slaughter* decision expected June.
 
 ---
 
@@ -53,13 +71,13 @@
 - Tillis and Collins have stated they won't approve further action after May 1; Murkowski working on an AUMF draft; no votes have been announced
 - Iran's military stated April 28 "it is still a war situation" — the administration's ceasefire-as-clock-pause theory is already undercut
 
-**FILL AFTER MAY 1**:
-- [ ] Did the administration issue a formal legal justification (OLC memo, WH statement) for continuing post-deadline?
-- [ ] Did any court accept a standing challenge to WPR enforcement? (Persistent judicial avoidance issue)
-- [ ] Did Collins or Murkowski take any concrete legislative action on the $200B supplemental?
-- [ ] Did any senator from the prior 52-47 advance coalition flip?
-- [ ] Was a Democratic lawsuit formally filed?
-- [ ] Did the ceasefire collapse (any resumed hostilities)?
+**FILL AFTER MAY 1 — CONFIRMED (Session 628 research pass)**:
+- [x] Administration legal justification: No OLC memo released. Administration position is that the ceasefire pauses the 60-day clock — a theory with no statutory basis. VP Vance's prior statement calling the WPR "fundamentally a fake and unconstitutional law" remains the operative White House position. No formal WH legal statement issued.
+- [x] Court standing challenges: No court accepted standing as of the research pass. Historical pattern continues — courts have historically declined to adjudicate WPR standing.
+- [x] Collins/Murkowski legislative action: Collins and Tillis both stated they won't approve further action post-May 1, but no formal AUMF draft or supplemental appropriations hold has been announced. Murkowski was working on an AUMF draft; no floor action taken Week 1.
+- [x] Senator flips from prior 52-47 coalition: None confirmed as of research pass. The 6th Senate WPR vote (post-May 1) is expected — track when scheduled.
+- [x] Democratic lawsuit filed: As of research confirmation, no formal lawsuit filed. TIME reported April 28 that discussions were "still in the early stages." No filing confirmed in Week 1.
+- [x] Ceasefire collapse/resumed hostilities: The ceasefire was fragile but holding as of the research confirmation point. The U.S. had fired on and captured the Iranian cargo ship *Touska* near the Strait of Hormuz in mid-April, which Iran cited as a violation. Iranian military continued to characterize the situation as "still a war situation." No major resumed air combat confirmed.
 
 **Advocacy window**: The appropriations nexus is the operational lever. Collins chairs Senate Appropriations. Any $200B supplemental war-funding request is the vehicle where Collins' leverage could be exercised. Monitor roll call on the supplemental when it materializes.
 
@@ -73,10 +91,12 @@
 **Date range**: Ongoing; ceasefire declared April 7–8, fragile as of April 28
 **What happened**: A two-week ceasefire was agreed April 7–8 following more than five weeks of active air combat (began February 28). Trump extended the ceasefire April 21 but kept the naval blockade in place. Iran refuses to reopen the Strait of Hormuz pending U.S. lifting the blockade. Trump canceled the U.S. negotiators' trip to Pakistan (April 25), signaling negotiations breakdown. Iran's military stated as of April 28 "it is still a war situation."
 
-**Convergence with Domain 31x (Healthcare/Tariffs)**: The Strait of Hormuz blockade is now intersecting with the pharmaceutical API supply chain crisis flagged in domain-31x-healthcare-tariff-collision.md. If the blockade continues through July 31, it compounds the Section 232 pharmaceutical tariff disruption. This convergence is active now.
+**Week 1 Update — Negotiations stalled, Hormuz blockade mutual**: Iran offered a proposal to reopen the Strait of Hormuz and end the war with nuclear negotiations postponed for a later stage. The U.S. rejected this framing — Secretary Rubio stated "the nuclear question is the reason why we're in this in the first place." With both sides maintaining blockades (U.S. naval, Iranian commercial shipping restrictions), the Strait remains effectively closed to full transit. UN Secretary-General Guterres warned the standoff risks "the worst supply chain disruption since COVID-19 and the war in Ukraine." The UAE announced it would withdraw from OPEC and OPEC+ this week. Peace talks that were scheduled in Islamabad were cancelled by U.S. envoys (late April); no replacement date scheduled.
+
+**Convergence with Domain 31x (Healthcare/Tariffs)**: Active. The Strait blockade is compounding the pharmaceutical API supply chain crisis. With July 31 pharmaceutical tariff effective date 95 days out, the convergence window is narrowing for advocacy intervention.
 
 **Domains affected**: 19f, 28, 31x (scope document), 23 (Trade/Tariffs)
-**Sources**: [Wikipedia — 2026 Iran war ceasefire](https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire) | [Al Jazeera — Iran army statement April 28](https://www.aljazeera.com/news/liveblog/2026/4/28/iran-war-live-trump-reviews-peace-plan-un-calls-for-hormuz-to-reopen) | [CNN — US military plans for Hormuz](https://www.cnn.com/2026/04/23/politics/us-military-plans-iran-targets-strait-of-hormuz)
+**Sources**: [Wikipedia — 2026 Iran war ceasefire](https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire) | [Al Jazeera — Iran army statement April 28](https://www.aljazeera.com/news/liveblog/2026/4/28/iran-war-live-trump-reviews-peace-plan-un-calls-for-hormuz-to-reopen) | [CNN — US military plans for Hormuz](https://www.cnn.com/2026/04/23/politics/us-military-plans-iran-targets-strait-of-hormuz) | [NPR — Deadlock](https://www.npr.org/2026/04/28/nx-s1-5802283/iran-middle-east-updates) | [Axios — Iran Hormuz proposal](https://www.axios.com/2026/04/27/iran-us-hormuz-strait-nuclear-talks-proposal-pakistan) | [Al Jazeera — Iran proposal analysis](https://www.aljazeera.com/news/2026/4/28/whats-in-irans-latest-proposal-and-how-has-the-us-responded)
 
 ---
 
@@ -105,11 +125,11 @@
 
 **Retaliatory pattern context**: This indictment is Case 23 in the 22-case retaliatory prosecution pattern documented in Domain 29. The grand jury weaponization motion filed by SPLC is a new development not anticipated in Domain 29's framework — it raises the possibility that prosecutorial misconduct reaches into the grand jury process itself.
 
-**FILL Week 1–2**:
-- [ ] Arraignment date set?
-- [ ] Any Rule 12(b) dismissal motion filed?
-- [ ] Civil rights mutual defense pact producing amicus coordination?
-- [ ] Any scheduling order from Judge Marks?
+**FILL Week 1–2 — PARTIAL CONFIRMATION (Session 628)**:
+- [x] Arraignment: No arraignment date confirmed as of research pass. Case is before U.S. Magistrate Judge Kelly Fitzgerald Pate for initial proceedings. No scheduling orders reported.
+- [x] Dismissal motion: SPLC attorneys filed two pretrial motions: (1) motion for disclosure of grand jury transcripts, arguing the government may have "actively weaponized" the grand jury; (2) motion addressing false and prejudicial statements from administration officials. A formal Rule 12(b) motion to dismiss was described by SPLC counsel as "forthcoming." DOJ was ordered to respond to SPLC's motions by May 5.
+- [ ] Civil rights mutual defense pact amicus coordination: Not confirmed. Monitor for amicus briefs or coordination announcements.
+- [ ] Scheduling order from Judge Marks: Not reported.
 
 **Domains affected**: 29 (primary — update Section 13 with the grand jury weaponization motion), litigation-tracker-2026.md Category 10
 **Sources**: [DOJ press release](https://www.justice.gov/opa/pr/federal-grand-jury-charges-southern-poverty-law-center-wire-fraud-false-statements-and) | [Just Security analysis](https://www.justsecurity.org/137171/indictment-southern-poverty-law-center-splc/) | [Alabama Reflector — "absurd" editorial](https://alabamareflector.com/2026/04/27/the-southern-poverty-law-center-prosecution-is-absurd-that-may-be-the-point/) | [NBC News — informants not secret](https://www.nbcnews.com/politics/justice-department/southern-poverty-law-center-says-informants-werent-secret-doj-rcna342519) | [Lawfare — indictment analysis](https://www.lawfaremedia.org/article/southern-poverty-law-center-indicted-on-federal-fraud-charges)
@@ -124,10 +144,12 @@
 
 **Why this is the highest-watch item this week**: If Crenshaw dismisses on vindictive prosecution grounds, it: (a) eliminates DOJ's rationale for keeping Abrego Garcia in U.S. criminal jurisdiction; (b) restructures the Maryland civil case entirely; (c) provides a documented judicial finding that a federal prosecutor acted with retaliatory motive — the clearest individual-case evidence of Domain 29's systemic pattern to date. Crenshaw has already found "realistic likelihood of vindictiveness" in a prior sealed order (unsealed December 2025).
 
-**FILL when ruling issues**:
-- [ ] Outcome: dismissed / not dismissed / deferred?
-- [ ] Did Crenshaw make findings about DOJ chain of command / Deputy AG?
-- [ ] Maryland civil case impact?
+**FILL when ruling issues — PENDING (Session 628)**:
+- [ ] Outcome: dismissed / not dismissed / deferred? — NOT YET ISSUED as of research pass. Multiple sources describe ruling as "imminent" and "at any time" as of late April 2026. Post-hearing briefs were due 30 days after the February 26 hearing transcript was filed, placing the post-brief deadline around late March/early April 2026. Ruling is overdue by standard scheduling but courts can take additional time.
+- [ ] Did Crenshaw make findings about DOJ chain of command / Deputy AG? — Pending ruling.
+- [ ] Maryland civil case impact? — Pending ruling.
+
+**Context for monitoring**: If ruling issues during Week 2 or later, it is the single highest-impact individual case development in the tracker. A dismissal finding that DOJ acted with retaliatory motive would provide documented judicial confirmation of Domain 29's systemic pattern at the chain-of-command level.
 
 **Domain 38 flag**: Counter-court prosecutorial retaliation — see Candidate 38-A entry below.
 
@@ -159,7 +181,7 @@
 
 **New development — DOJ National Voter Database (CRITICAL)**: The DOJ has demanded confidential voter data from all 50 states and D.C., suing 30 states to compel disclosure. At least 12 states have voluntarily complied. DOJ is reportedly building a national voter database to run against the SAVE (Systematic Alien Verification Entitlements) database — which immigration advocates describe as "flawed and inaccurate." Common Cause, ACLU, and Protect Democracy filed a federal lawsuit (April 2026) to block the national database project. Judges in Michigan, Oregon, California, Massachusetts, and Rhode Island have dismissed DOJ voter-roll lawsuits in those states. A separate intervention motion was filed against the DOJ's demand for Utah voter rolls. This is a new development that was not in Domain 01's BISC count.
 
-**Week 1 watch**: Utah law takes effect May 6 — watch for any litigation challenging enforcement ahead of June 23 primary. Arizona constitutional amendment goes to November ballot — track signature/ballot certification process.
+**Week 1 update — Utah law effective May 6**: Utah's HB 209 took effect May 6, 2026, two months before the June 23 primaries. The law creates a bifurcated ballot system: voters who provide documentary proof of citizenship (passport, birth certificate, naturalization certificate, or a state ID that verifies citizenship) may vote in all races; voters who do not provide proof may vote in federal-only races. Existing registered voters whose citizenship cannot be confirmed must be notified and provide documentation by July 1, 2026 to remain on rolls. A voting rights coalition filed a motion to dismiss the DOJ's companion voter roll lawsuit against Utah (U.S. v. Henderson), arguing DOJ has no legal right to unredacted voter rolls. No emergency injunction against HB 209 itself was confirmed as of the research pass. Arizona constitutional amendment track: both chambers referred the amendment to November ballot — signature/certification is an administrative process, not a floor vote.
 
 **Domains affected**: 01 (primary — update Section 5 with law-in-effect dates; add DOJ national database project), 33, 37
 **Domain 38 flag**: The DOJ national voter database project crosses domain lines (voting rights + DOJ weaponization + data aggregation). If the database project is not blocked, it represents a new category of federal voter suppression tool that has no direct parallel in Domain 01's current analysis.
@@ -203,7 +225,7 @@
 
 **Why this matters for the Week 1 setup**: The May cert grant window (the last major opportunity to add OT2026 cases) runs throughout May. *Slaughter* is OT2025 (decided this term); the OT2026 cert picture is what shapes the October 2026–June 2027 term.
 
-**OT2026 cert watch**: As of April 22, 2026 (SCOTUSblog Granted/Noted List), the assault weapons cluster — *Viramontes v. Cook County* (11 relists) and *Duncan v. Bonta* (11 relists) — has still not been granted. A grant in May would be significant and would affect Domain 35's OT2026 preview section.
+**OT2026 cert watch — Week 1 update**: The Court's conference on May 1 was the first post-deadline conference. As of the April 27 SCOTUSblog Gun Watch update, *Viramontes v. Cook County* and similar assault weapon cases had been relisted 11+ times without a grant. Duke Center for Firearms Law confirmed no grant as of April 27. The May 1 conference outcome is not yet confirmed in the research pass. A grant in *Viramontes* would be significant and warrant a Domain 35 update — the case has been relisted more times than almost any other pending cert petition. The May conference dates run through May 29; any grant from May conferences would be announced shortly thereafter.
 
 **Domains affected**: 35 (primary), 06 (judicial independence)
 **Sources**: [SCOTUSblog — Slaughter explainer](https://www.scotusblog.com/2025/12/trump-v-slaughter-an-explainer/) | [Oyez — case record](https://www.oyez.org/cases/2025/25-332) | [Constitutional Accountability Center](https://www.theusconstitution.org/litigation/slaughter-v-trump/) | [Ward and Smith analysis](https://www.wardandsmith.com/article/trump-v-slaughter-the-supreme-court-signals-a-possible-turning-point-for-agency-independence) | [SCOTUSblog — Granted/Noted List April 22](https://www.supremecourt.gov/orders/25grantednotedlist.pdf)
@@ -252,15 +274,17 @@
 - GOP rebels' demand was an 18-month clean extension; Johnson is offering three years with modest reforms
 - Sen. Grassley called for a clean extension after securing transparency reforms to FISC proceedings
 
-**FILL AFTER APRIL 30 (PRIORITY ONE)**:
-- [ ] Did the Foreign Intelligence Accountability Act pass? (Y/N + vote count)
-- [ ] Was a warrant requirement included? (Almost certainly No)
-- [ ] Was the data broker loophole closed? (Almost certainly No)
-- [ ] Did Section 702 lapse at all, even briefly? (Brief lapse is possible if House fails to vote before midnight)
-- [ ] Any litigation filed challenging reauthorization terms?
-- [ ] Final duration of reauthorization (18 months vs. 3 years)?
+**FILL AFTER APRIL 30 — OUTCOME CONFIRMED (Session 628)**:
+- [x] Foreign Intelligence Accountability Act passage: CONFIRMED PASSED. Lawfare confirmed Section 702 reauthorized for two years (the Foreign Intelligence Accountability Act, or a variant thereof). The House passed a version after chaotic late-night voting that involved multiple failed amendments. The Senate then cleared the bill. A 13-day emergency extension was used to bridge the gap after the initial April 30 expiration.
+- [x] Warrant requirement: NOT INCLUDED. Confirmed. Senate rejected the warrant requirement amendment. The reauthorization passed without warrant protections for U.S. person queries.
+- [x] Data broker loophole: NOT CLOSED. Confirmed. The data broker loophole closure amendment was also rejected.
+- [x] Brief lapse: LIKELY YES. The initial 10-day extension expired April 30; a chaotic overnight House vote produced a 13-day emergency extension (Fox News reported "emergency FISA extension" after "chaotic overnight vote"), suggesting the authority may have lapsed briefly before the emergency extension passed. This sequence requires confirmation.
+- [ ] Litigation filed challenging reauthorization: Not confirmed. Monitor for EFF or ACLU legal challenge to the expanded ECSP definition.
+- [x] Duration: TWO YEARS. Confirmed by Lawfare. Congress will revisit Section 702 again in 2028.
 
-**Cross-reference**: See surveillance-tracking.md post-deadline checklist (which has the full outcome matrix). Domain 01 Section 6.2 needs update if reauthorized without warrant protection — election organizer surveillance window extends through the midterm cycle. This is the highest immediate update priority for surveillance-tracking.md.
+**Cross-reference update required**: Update surveillance-tracking.md to reflect the two-year reauthorization without warrant protection. Update Domain 01 Section 6.2 to note that election organizer surveillance authority extends through November 2026 midterms and the full 2028 cycle. This is an immediate action item.
+
+**Sources**: [Fox News — 13-day emergency extension](https://www.foxnews.com/politics/reporters-notebook-house-chaos-sparks-emergency-fisa-extension) | [Lawfare — Section 702 reauthorized for two years](https://www.lawfaremedia.org/article/fisa-section-702-reauthorized-for-two-years) | [State of Surveillance — reformers lost](https://stateofsurveillance.org/news/fisa-702-house-vote-wednesday-clean-extension-no-warrant-2026/)
 
 **Domains affected**: 01 (Section 6.2), 21 (surveillance), surveillance-tracking.md
 **Sources**: [The Hill — GOP rebels block FISA deal](https://thehill.com/homenews/house/5835879-fisa-702-spy-powers-vote/) | [Nextgov — House readies vote without warrant](https://www.nextgov.com/policy/2026/04/house-readies-vote-renew-fisa-702-without-warrant-amendment/412856/) | [Just Security — "fool's gold"](https://www.justsecurity.org/137206/johnson-section-702-warrant/) | [EFF — reject insufficient bill](https://www.eff.org/deeplinks/2026/04/congress-must-reject-new-insufficient-702-reauthorization-bill) | [Brennan Center — 2026 resource page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page) | [Al Jazeera — 10-day extension](https://www.aljazeera.com/news/2026/4/17/us-congress-temporarily-extends-controversial-surveillance-power-under-fisa)
@@ -275,11 +299,13 @@
 
 **April 29 update — Payroll cliff is real and immediate**: DHS emergency funds (from the 2025 One Big Beautiful Bill Act multiyear mandatory spending accounts) will run out after the first May payroll, creating a genuine crisis for 270,000 DHS employees if the House does not act before May 4–8. As of April 29, the House had not voted on a companion budget resolution. The House Rules Committee was slated to consider the resolution April 27. If the House passes a different version than the Senate, the differences must be reconciled — adding days to the timeline. If House Republicans push to expand the scope of the enforcement funding beyond the Senate's $70B, that triggers a conference.
 
-**FILL Week 1 (by May 8)**:
-- [ ] Did the House Budget Committee pass a companion resolution?
-- [ ] Did the full House vote on the companion resolution?
-- [ ] DHS payroll: any missed paychecks? Any enforcement-capacity reduction?
-- [ ] Any ICE enforcement surge before the payroll cliff (as political pressure tactic)?
+**FILL Week 1 (by May 8) — PARTIAL CONFIRMATION (Session 628)**:
+- [x] House Budget Committee companion resolution: Rules Committee consideration was scheduled April 27. House Republican leaders signaled the chamber would vote on the Senate's budget resolution as-is. The House passed H.R. 7744 (DHS Appropriations Act, 221-209) in an earlier vote, but the Senate passed a different "skinny" bill. A continuing resolution (H.R. 7147) extended DHS funding through May 22, 2026. The reconciliation budget resolution companion vote was the outstanding item entering Week 1.
+- [ ] Full House vote on reconciliation budget resolution (the $70B ICE/CBP track): STATUS UNCLEAR as of research pass. House Republican leaders indicated they planned to vote before the DHS shutdown payroll cliff (May 4–8). Monitor for outcome.
+- [x] DHS payroll status: DHS emergency funds from the OBBBA were projected to run out after the first May payroll (May 4–8). Government Executive confirmed DHS would miss paychecks beginning May 22 without congressional action. The partial shutdown had already entered its 67th day — the longest partial/targeted DHS shutdown in U.S. history.
+- [ ] ICE enforcement surge: Not confirmed. Watch for CBP/ICE arrest data in early May for any pre-payroll-cliff surge pattern.
+
+**New detail — DHS shutdown is older and larger than characterized**: The partial DHS shutdown began February 14, 2026 and by late April had reached 67+ days — far exceeding any prior DHS funding lapse. DHS has been operating on emergency funds from OBBBA mandatory spending. H.R. 7147 (a continuing resolution through May 22) was passed to provide a bridge. The $70B reconciliation track is the Republicans' mechanism to fund ICE/CBP on a long-term basis outside normal appropriations — bypassing Collins Appropriations Committee leverage.
 
 **Why this matters for congressional authority**: This reconciliation package funds enforcement agencies outside the normal FY2026 appropriations process — a bypass that removes Collins Appropriations Committee leverage. The $140B aggregate borrowing authority (House + Senate combined) for immigration enforcement is the largest single-purpose executive resource expansion in modern budget history without a wartime authorization.
 
@@ -306,37 +332,41 @@
 
 ### WEEK 2: May 8–14, 2026
 
-#### Priority items entering Week 2 (pre-populated from Week 1 watch list):
+#### Priority items entering Week 2 (updated from Week 1 carry-forward):
 
 **A — War Powers**
-- [ ] Post-deadline congressional response: Did Collins/Murkowski take any action on the $200B supplemental?
-- [ ] Any WPR enforcement litigation filed (court standing question)?
-- [ ] Iran ceasefire status — did the April 28 "war situation" statement lead to resumed hostilities?
+- [ ] 6th Senate WPR vote: When scheduled? Outcome? Any Republican defection from the 51-46 blocking coalition?
+- [ ] Collins/Tillis/Murkowski: Any concrete AUMF draft or supplemental appropriations hold? Both stated opposition to further action post-May 1 but no legislative vehicle materialized.
+- [ ] Democratic lawsuit: Any formal filing? As of Week 1 end, still described as "early stages."
+- [ ] Iran ceasefire/Hormuz: Any major development in negotiations? U.S. rejected Iran's Hormuz-without-nuclear deal. Next move from either side?
+- [ ] Iran $200B war supplemental appropriations request: Expected to materialize mid-May. Tracking for Domain F and A convergence.
 
 **B — Prosecutorial Weaponization**
-- [ ] Nashville Crenshaw ruling (if not issued by May 7): vindictive prosecution finding?
-- [ ] SPLC arraignment and first motions: any Rule 12(b)(6) or First Amendment dismissal motion?
+- [ ] Nashville Crenshaw ruling: HIGHEST-WATCH ITEM. Still pending. Monitor CourtListener docket for United States v. Abrego Garcia, M.D. Tenn. 3:25-cr-00115.
+- [ ] SPLC: DOJ response to grand jury disclosure and prejudicial statements motions due May 5. Any response filed? Any Rule 12(b) dismissal motion filed by SPLC as promised?
 - [ ] Any new retaliatory indictment in Pattern Cases 24+?
 
 **C — Voting Rights**
 - [ ] Texas, Georgia, Arizona: floor votes on SAVE Act analogs?
-- [ ] Ballot initiative signature collection: any suppression incidents?
-- [ ] Any new State VRA passage?
+- [ ] Utah HB 209: Any litigation filed now that law is in effect (May 6+)?
+- [ ] DOJ voter roll lawsuits: outcomes in remaining cases; did any judge follow Michigan/Oregon/California/Massachusetts/Rhode Island in dismissing?
+- [ ] South Dakota: Law takes effect before June 2 primaries — any litigation filed?
 
 **D — SCOTUS**
-- [ ] Any OT2026 cert grants issued? (*Viramontes* watch)
+- [ ] May conference cert grant announcements: *Viramontes* watch continues.
 - [ ] Any Trump v. Slaughter orders or partial opinions?
 - [ ] Circuit court vacancy nominations announced?
 
 **E — Election Security**
-- [ ] FISA 702 outcome filled (from April 30 carry-forward)
-- [ ] Arizona Fontes non-profit coordination structure: any formal launch?
-- [ ] Congressional Homeland Security appropriations: CISA rehiring provision status?
+- [ ] FISA 702 outcome: CONFIRMED (2-year, no warrant). Update surveillance-tracking.md this session.
+- [ ] VOTE-ISAC (Fontes): Any formal nonprofit structure launched? Any state commitments beyond Arizona?
+- [ ] Congressional Homeland Security appropriations: CISA rehiring provision (10 regional advisors) — is it in the current continuing resolution or the reconciliation bill language?
 
 **F — Fiscal/Congressional Authority**
-- [ ] House Budget Committee companion resolution vote?
-- [ ] DHS payroll status (May 4–8 cliff)
-- [ ] May 15 Senate committee reconciliation bill submission: language released?
+- [ ] House Budget Committee companion resolution vote (reconciliation $70B track)?
+- [ ] DHS payroll status (May 4–8 and May 22 deadlines): Did any employees miss a paycheck?
+- [ ] May 15 Senate committee reconciliation bill submission: ICE/CBP language released?
+- [ ] Iran $200B supplemental: first signals of the war-funding appropriations track
 
 ---
 
@@ -365,18 +395,18 @@
 
 ## DOMAIN UPDATE RECOMMENDATIONS
 
-*Developments this week that should trigger updates to existing domain documents. April 29 research pass added new rows.*
+*Developments confirmed in Week 1 research pass (Session 628). Rows marked [DONE] indicate updates executed; [PENDING] indicates action still needed.*
 
-| Domain | Trigger development | Recommended update | Priority |
-|--------|--------------------|--------------------|----------|
-| 19f — War Powers Reform | May 1 deadline breach — no authorization, no withdrawal | Add Section 16: Post-deadline enforcement failure; document administration's ceasefire-as-clock-pause theory; track Collins/Murkowski/Fitzpatrick response; document Democratic lawsuit filing if it occurs | IMMEDIATE after May 1 |
-| 28 — War Powers Venezuela | Iran ceasefire fragility + Hormuz/pharma convergence | Add cross-reference to domain-31x in Section 9 synthesis | HIGH |
-| 29 — Prosecutorial Weaponization | SPLC grand jury weaponization motions filed; Abrego Garcia Nashville ruling imminent | Update Section 13 with SPLC grand jury disclosure motion (new development); add Section 15 or Domain 29 expansion if Crenshaw issues findings on DOJ chain of command | HIGH (Crenshaw triggers immediate update) |
-| 35 — SCOTUS OT2026 | OT2026 cert grant window actively open; *Viramontes* at 11 relists | Update *Viramontes* relist count each conference date; add Week 1 cert grant developments | ONGOING |
-| 34 — Congressional Fiscal Authority | ICE Reconciliation 2.0 payroll cliff (May 4–8) + ICA challenge | Add Section: Reconciliation bypass mechanics; May 4–8 payroll cliff outcome; ICA constitutional challenge track | HIGH — payroll cliff is this week |
-| 37b — Election Security | VOTE-ISAC (Fontes) named and active; CDT Geoff Hale initiative launched | Elevate from scope document to full research execution: VOTE-ISAC + CDT as dual pillars of post-CISA architecture | HIGH — advocacy window is now |
-| 01 — Voting Rights | Utah law takes effect May 6; South Dakota effective before June 2 primaries; DOJ national voter database lawsuit filed | (1) Update Section 5 with in-effect dates; (2) Add new sub-section on DOJ national voter database project and litigation; (3) Update BISC count if TX/GA/AZ floor votes occur | HIGH — Utah May 6 effective date is this week |
-| surveillance-tracking.md | FISA 702 April 30 outcome | Fill post-deadline checklist immediately after April 30 vote outcome — first priority | CRITICAL — due today/tomorrow |
+| Domain | Trigger development | Recommended update | Priority | Status |
+|--------|--------------------|--------------------|----------|--------|
+| 19f — War Powers Reform | May 1 deadline breach — no OLC memo, no withdrawal, ceasefire-as-clock-pause theory deployed | Add Section 16: Post-deadline enforcement failure — document ceasefire-as-clock-pause theory, absence of OLC memo, and Collins/Murkowski non-action; add weekly Senate WPR vote outcomes as they occur | IMMEDIATE | PENDING — no Domain 19f edit made yet; required this session or next |
+| 28 — War Powers Venezuela | Iran ceasefire fragility + Hormuz/pharma convergence confirmed; UAE leaving OPEC; peace talks cancelled | Add cross-reference to domain-31x in Section 9 synthesis; note Hormuz blockade mutual status | HIGH | PENDING |
+| 29 — Prosecutorial Weaponization | SPLC grand jury weaponization motions filed; May 5 DOJ response deadline; Nashville ruling still pending | Update Section 13 with SPLC grand jury disclosure motion; note DOJ May 5 response; flag Nashville ruling as still outstanding | HIGH (Crenshaw triggers immediate update when issued) | PENDING |
+| 35 — SCOTUS OT2026 | May 1 conference held; *Viramontes* still awaiting grant at 11+ relists | Update *Viramontes* relist count; add May 1 conference outcome when confirmed | ONGOING | PENDING |
+| 34 — Congressional Fiscal Authority | DHS shutdown at 67+ days (longest ever); continuing resolution through May 22; $70B reconciliation track advancing; ICA challenge ongoing | Add Section: DHS partial shutdown history (67+ days as of late April); reconciliation bypass mechanics; May payroll cliff status; ICA constitutional challenge track | HIGH | PENDING |
+| 37b — Election Security | VOTE-ISAC (Fontes) named and active; CDT Geoff Hale initiative launched | Elevate from scope document to full research execution: VOTE-ISAC + CDT as dual pillars of post-CISA architecture | HIGH — advocacy window is now | PENDING |
+| 01 — Voting Rights | Utah HB 209 effective May 6 (bifurcated ballot system); DOJ national voter database lawsuit (Common Cause v. DOJ) filed; intervention motion filed against Utah voter roll demand | (1) Note May 6 effective date; (2) Add new sub-section on DOJ national voter database project and Common Cause lawsuit; (3) Document bifurcated ballot mechanism | HIGH — Utah in effect | PENDING |
+| surveillance-tracking.md | FISA 702 reauthorized for two years WITHOUT warrant requirement; chaotic House vote; 13-day emergency extension preceded final passage | Fill post-deadline checklist: 2-year reauthorization confirmed, no warrant, no data broker fix, brief lapse possible; note implications for midterm surveillance window | CRITICAL — complete this session | PENDING |
 
 ---
 
@@ -433,7 +463,7 @@
 
 ## CROSS-DOMAIN PATTERN ANALYSIS — Week 1
 
-*First pattern analysis from April 29 research pass. Updated after each weekly entry cycle.*
+*First pattern analysis from April 29 research pass. Updated Session 628 (Week 1 outcomes confirmed).*
 
 ---
 
@@ -475,18 +505,26 @@ Courts are the primary constraint on all three patterns above, but the bandwidth
 
 ---
 
+### Pattern 4 (New — Week 1 Confirmation): Surveillance Infrastructure Locked In for Midterm Cycle
+
+The FISA 702 two-year reauthorization without warrant protections represents a new confirmed pattern: federal surveillance capacity is now locked in through 2028, covering the entire 2026 midterm cycle and the 2028 presidential election. Combined with the DOJ national voter database project (C.3) and the DHS payroll/reconciliation track that funds ICE/CBP outside Collins' appropriations oversight, Week 1 confirms that the executive branch is simultaneously (a) extending its domestic surveillance authority, (b) building a federal voter roll aggregation system, and (c) securing long-term enforcement funding outside traditional congressional control. These three developments together represent an integrated enforcement infrastructure that will be operational during both the 2026 midterms and the 2028 cycle.
+
+**For framework currency**: This integrated infrastructure pattern is not yet analyzed as a single construct in any domain document. It spans Domains 01, 21, 29, 34, and 37. The Domain 38 candidate "Centralized Federal Voter Suppression Infrastructure" (38-D) is strengthened by this pattern — the FISA surveillance track and the voter database track are now both confirmed and concurrent.
+
+---
+
 *For proposal currency — ranked by: (a) proximity to irreversible harm, (b) active advocacy window, (c) speed at which a development would obsolete existing domain content.*
 
-| Rank | Category | Reason for Priority | Proposal currency risk if unmonitored |
-|------|----------|--------------------|-----------------------------------------|
-| 1 | War Powers (Domain A) | May 1 WPR deadline is a live constitutional confrontation; administration defiance sets a precedent that instantly obsoletes Domain 19f's reform pathway analysis | Domain 19f Section 16 (post-deadline enforcement) does not exist yet; any Domain 28 Iran synthesis becomes stale within days of a breach |
-| 2 | Fiscal/Congressional Authority (Domain F) | Reconciliation 2.0's May 15 committee deadline + ICA constitutional challenge = fastest-moving structural threat; a court win for the administration's ICA position makes Domain 34's appropriations analysis obsolete | Domain 34 was written assuming ICA enforcement is operative; if the administration gets a circuit win on ICA unconstitutionality, the entire domain's strategic recommendations change |
-| 3 | SCOTUS Activity (Domain D) | Slaughter decision expected June 2026; all six conservative justices signaled overruling Humphrey's Executor; a broad ruling makes Domains 6, 35, and 34 simultaneously outdated | If Humphrey's Executor is overruled before the proposal circulates, readers will know the proposal underestimates the scope of the independent agency problem |
-| 4 | Prosecutorial Weaponization (Domain B) | Nashville Crenshaw ruling imminent; SPLC early motions in progress; each development either confirms or complicates the pattern-and-practice case in Domain 29 | Domain 29's 22-case retaliatory pattern count will change; the counter-court retaliation pattern (Abrego Garcia) may require Domain 29 expansion |
-| 5 | Voting Rights (Domain C) | State SAVE Act wave is active through May legislative sessions; swing-state enactments directly affect 2026 midterm framing in Domain 37 | If TX, GA, or AZ enact citizenship proof requirements before the proposal circulates, Domain 37's voter suppression documentation is incomplete |
-| 6 | Election Security (Domain E) | Critical for midterm security but the harm horizon is the 2026 election — still months away; advocacy window (April–July) is open but not yet closing; Domain 37b scope document awaits full research execution | Domain 37b does not yet exist as a complete domain; this is a gap more than a currency risk for existing content |
+| Rank | Category | Reason for Priority | Week 1 Status | Proposal currency risk going forward |
+|------|----------|--------------------|--------------------|--------------------------------------|
+| 1 | War Powers (Domain A) | May 1 WPR deadline breached; administration relying on ceasefire-as-clock-pause theory; Hormuz blockade mutual; negotiations stalled | CONFIRMED — deadline passed, no authorization, ceasefire fragile | Domain 19f Section 16 (post-deadline enforcement failure) must be created; the administration's legal theory needs documenting before it hardens into precedent |
+| 2 | Surveillance/Election Infrastructure (Domains E + C) | FISA 702 two-year renewal (no warrant) CONFIRMED; DOJ national voter database project active; Utah voting law in effect | CONFIRMED — surveillance locked through 2028; voter suppression infrastructure operational | Pattern 4 (surveillance + voter database) is not yet in any domain document; this integrated infrastructure is an active harm ongoing through the midterm cycle |
+| 3 | Fiscal/Congressional Authority (Domain F) | DHS shutdown at record 67+ days; reconciliation bypass advancing; ICA unconstitutionality claim active | IN PROGRESS — May 22 cliff still live; $70B reconciliation language due May 15 | Domain 34's analysis must incorporate the reconciliation bypass mechanics and DHS shutdown history |
+| 4 | SCOTUS Activity (Domain D) | Slaughter decision expected late June; Humphrey's Executor overruling likely; May conferences adding cert grants | ONGOING — no decision yet | Slaughter is the single highest-impact foreseeable court ruling for institutional structure; Domain 35 must be updated immediately upon decision |
+| 5 | Prosecutorial Weaponization (Domain B) | Nashville Crenshaw ruling still pending; SPLC motions advancing; DOJ response due May 5 | PENDING — no ruling as of research pass | Domain 29's retaliatory pattern analysis hangs on the Nashville ruling; Crenshaw finding on chain of command would be the most significant evidence yet |
+| 6 | Voting Rights (Domain C) | Utah law in effect; Arizona on ballot; 4 states enacted; Texas/Georgia outstanding | ACTIVE — enforcement has begun | If TX, GA enact citizenship proof requirements before proposal circulates, Domain 37's voter suppression documentation is incomplete |
 
-**Key insight**: Categories 1 and 2 are the most time-sensitive for proposal currency because they involve developments that will happen whether or not a session is scheduled to monitor them, and both have active deadlines in May 2026. Category 3 (SCOTUS) has a known decision window (June) that allows advance preparation. Categories 4-6 are important but their developments are less likely to create overnight obsolescence in existing domain documents.
+**Key insight from Week 1 confirmation**: The most significant single development is the FISA 702 two-year reauthorization without warrant protection, because it converts a threat (expiring authority) into a locked-in reality (extended authority through 2028). Combined with the DOJ voter database project, this creates a confirmed, operational, midterm-covering surveillance-and-suppression infrastructure that must be documented in the framework as a new integrated pattern rather than individual domain developments.
 
 ---
 
@@ -497,17 +535,24 @@ Courts are the primary constraint on all three patterns above, but the bandwidth
 **Cross-reference maintenance**: When an entry triggers a domain update, add a note to the relevant domain file header and to this tracker's "Domain Update Recommendations" table
 **CHECKIN.md protocol**: Any CRITICAL-tier item that requires user decision should be flagged in CHECKIN.md under "Urgent / Time-Sensitive"
 
+**Session 628 housekeeping notes**:
+- surveillance-tracking.md post-deadline checklist needs updating (FISA 702 two-year reauthorization confirmed, no warrant) — do next session if not done this one
+- Domain 19f needs Section 16 on post-deadline WPR enforcement failure — first-priority domain document update
+- Nashville Crenshaw ruling: when it lands, it is the single most significant update trigger in the tracker — update Domain 29 Section 13 and litigation-tracker-2026.md Category 10 immediately
+
 ### Synthesis Calendar
 
-| Date | Event | Tracker action |
-|------|-------|----------------|
-| April 30 | FISA 702 expiration | Fill E.2 checklist immediately; update surveillance-tracking.md |
-| May 1 | Iran WPR 60-day deadline | Fill A.1 checklist; create Domain 19f Section 16 if administration defies |
-| May 4–8 | DHS payroll cliff | Fill F.1 checklist; flag if enforcement surge occurs |
-| May 6 | Utah proof-of-citizenship law takes effect | Note in C.1; watch for litigation filings |
-| ~May 1–7 | Nashville Crenshaw ruling (imminent) | Fill B.2 checklist immediately upon ruling; update Domain 29 |
-| May 8 | Week 2 begins — fill all FILL items from Week 1 | |
-| May 15 | Senate committee reconciliation language due | New F.3 entry in Week 2 |
-| May 15 | Iran $200B supplemental request expected | New A.4 entry in Week 2 |
-| Late May–June | SCOTUS *Slaughter* decision | New D.3 entry when issued; will require immediate Domain 35 update |
-| May 31 | End of Month | Cross-domain synthesis pass; archive Week 1–4; open JUNE_2026_TRACKER.md |
+| Date | Event | Status | Tracker action |
+|------|-------|--------|----------------|
+| April 30 | FISA 702 expiration | COMPLETED — 2-year renewal, no warrant | Update surveillance-tracking.md (PENDING this session) |
+| May 1 | Iran WPR 60-day deadline | COMPLETED — deadline breached, no authorization | Domain 19f Section 16 needed (PENDING) |
+| May 4–8 | DHS payroll cliff | IN PROGRESS — continuing resolution through May 22 bridges immediate cliff | Monitor reconciliation track; note if any pay disruption occurs |
+| May 5 | DOJ response to SPLC motions due | PENDING confirmation | Check docket; add to B.1 in Week 2 |
+| May 6 | Utah proof-of-citizenship law takes effect | COMPLETED — law in effect | Domain 01 update needed; litigation monitoring |
+| ~May 1–7 | Nashville Crenshaw ruling (imminent) | STILL PENDING — overdue by standard scheduling | Monitor CourtListener; highest-priority carry-forward into Week 2 |
+| May 8 | Week 2 begins | | Fill all remaining Week 1 items |
+| May 15 | Senate committee reconciliation language due | UPCOMING | New F.3 entry in Week 2 |
+| May 15 | Iran $200B supplemental request expected | UPCOMING | New A.4 entry in Week 2 |
+| May 20 | FISA follow-on vote (if short extension) | MOOT — 2-year deal passed | Remove from calendar |
+| Late May–June | SCOTUS *Slaughter* decision | UPCOMING | New D.3 entry when issued; immediate Domain 35 update required |
+| May 31 | End of Month | | Cross-domain synthesis pass; archive Week 1–4; open JUNE_2026_TRACKER.md |
