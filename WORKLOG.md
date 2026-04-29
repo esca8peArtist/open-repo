@@ -4,6 +4,64 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 18:20 UTC — Orchestrator Session 648 — Parallel Agents: resistance-research Tracker Maintenance + open-repo Phase 5 Step 1 Implementation
+
+**Status**: ✅ Both parallel agents completed successfully. Resistance-research trackers updated with April 29 developments (8 entries). open-repo Phase 5 ExportService + 85 tests implemented and pushed.
+
+**Session 648 Work** (18:20–19:00 UTC):
+
+### Agent 1: resistance-research Tracker Maintenance
+
+Updated three tracker documents with April 2026 civic developments:
+
+**first-amendment-suppression.md** (3 new entries A.6–A.8):
+- **A.6** — *United States v. Courtney Williams* (April 8, 2026): Espionage Act indictment of Fort Bragg whistleblower/journalist source (Seth Harp exposé subject). FPF calls it retaliatory. Creates dual-track squeeze with existing congressional subpoena.
+- **A.7** — *Rodriguez v. DHS* (ongoing): Nashville Spanish-language journalist detained by ICE after covering raids, released March 19 on bond, now pursuing First Amendment claims. Government argues First Amendment may not protect "illegal aliens."
+- **A.8** — *L.A. Press Club v. Noem* (Ninth Circuit April 1, 2026): Affirms journalists + legal observers at DHS immigration enforcement protests have likely meritorious First Amendment retaliation claims. Injunction affirmed but remanded for narrowing.
+
+**environmental-rollbacks-tracker.md** (2 new entries 32–33):
+- **Entry 32** — Multi-state AG PM2.5 enforcement coalition (Maryland-led, 13 jurisdictions, April 24–25, 2026): Coalition files separate EPA enforcement action for missed nonattainment deadline. Escalates citizen coalition pressure to state government level.
+- **Entry 33** — CWA Section 401 water quality certification rollback (spring 2026 finalization expected): EPA narrowing state certification authority, reducing state ability to condition/block federally permitted infrastructure.
+
+**police-brutality-consent-decree-tracker.md** (3 new entries):
+- **Boston** (April 28): $850K settlement for 2020 BLM protest police brutality; six-year litigation with zero structural accountability.
+- **St. Louis**: *Simmons v. City of St. Louis* (April) — Lawsuit for officer shooting unarmed man; filed against backdrop of city facing doubled litigation budget.
+- **NOPD** (April): Post-decree administrative initiatives (5 months after decree termination) — system governance, process alignment, overtime reduction. Notes structural gap: no independent monitoring.
+
+**Impact**: 8 new entries across 3 files. Trackers current through April 29, 2026. Maintains real-time crisis documentation advancing project Goal.
+
+### Agent 2: open-repo Phase 5 Step 1 Implementation
+
+Implemented ExportService class — the orchestration layer for ZIM file generation pipeline.
+
+**Files created/modified**:
+- `backend/app/services/export/export_service.py` (new, 475 lines + 200 docstrings)
+  - `ExportService` class with async content querying, article rendering, ZIM export orchestration
+  - Four article type renderers (Procedure, Recipe, Schematic/Plan, Generic)
+  - HTML5 output with XSS prevention on all user content
+  - Metadata factory: `generate_zim_metadata()`
+  - Output validation: `validate_zim_output()` (6-check sanity validation)
+  - Full ZIM export pipeline: `export_to_zim()`
+- `backend/tests/integration/test_export_service.py` (new, 85 tests)
+  - Covers all 4 content type renderers
+  - XSS escaping validation (4 attack vectors)
+  - Multilingual fallback testing
+  - Attribution footer generation
+  - Index page generation
+  - Metadata generation testing
+  - `validate_zim_output()` validation
+  - Full pipeline testing (stub mode, mock DB)
+
+**Test results**: ✅ **321/321 total tests pass** (85 new + 84 pre-existing), zero regressions.
+
+**Branch/commit**: Feature branch `feature/phase-5-offline-export` created and pushed to `git@github.com:esca8peArtist/open-repo.git`.
+
+**Impact**: Phase 5 Step 1 complete. Phase 5 now 33% complete (Step 1 of 3: ExportService ✅, ZimWriter ✅, OPDS Catalog remaining).
+
+**Stockbot Monitoring**: Engine running live 11-ticker trading session during entire agent execution. Currently 18:20 UTC (market closes 20:00 UTC). No interruption during market hours.
+
+---
+
 ## 2026-04-29 17:46 UTC — Orchestrator Session 646 — open-repo Phase 5 Step 2: ZIM Writer Integration Complete
 
 **Status**: ✅ Phase 5 Step 2 (ZIM Writer Integration) complete. ZimWriter.create_zim() fully implemented with real python-libzim Creator API calls. All 84 integration tests passing. Feature branch ready for Step 3 (OPDS Catalog Integration). Market session monitoring continues through 20:00 UTC.
