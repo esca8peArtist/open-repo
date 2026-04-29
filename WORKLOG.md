@@ -4,6 +4,35 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 — cybersecurity-hardening — 2026 Threat Model Updates (April–May) — COMPLETE
+
+**File**: `projects/cybersecurity-hardening/2026-threat-updates.md`
+
+**Four threat vectors documented with April–May 2026 sourcing**:
+1. **FISA 702** — Confirmed no warrant requirement added. FISC extended operational authority through 2027 regardless of legislative outcome. Three-year extension without warrant reform before May 1 House vote. Threat model: confirmed, no change to Signal/ADP recommendations needed.
+2. **AI Deepfake / Synthetic Identity** — WEF Jan 2026: face-swap + camera injection defeats liveness checks in wide range of KYC systems. Voice cloning crossed indistinguishable threshold. RSF documented 100 journalists targeted by deepfakes. New required practices: out-of-band verification, code words, synthetic evidence response protocol.
+3. **Shai-Hulud Supply Chain Campaign** — Bitwarden CLI npm trojanized April 22 (90 min window); CanisterSprawl self-propagating worm; Checkmarx KICS, Axios, Trivy, xinference also hit. prt-scan AI-powered GitHub Actions campaign (500+ repos compromised). Critical distinction: Bitwarden desktop/app store users unaffected; CLI-via-npm users in window should rotate all credentials.
+4. **Election Protection** — DOJ voter database (first-ever national compilation, cross-referenced into DHS/immigration environment, 12 states complied). CISA lost $40M + 14 positions in election security (April 2026). ICE at polls: legally prohibited but threat of presence produces suppression effect.
+
+**Deliverable**: Structured 2,500-word threat model update with updated threat matrix (14 rows), Tier 1/2/3 integration notes, hardware procurement tier guide (no changes from existing), software procurement updated (Bitwarden installation channel guidance), and 30-source citation list.
+
+---
+
+## 2026-04-29 — mfg-farm — Material Sourcing and Supplier Economics Research — COMPLETE
+
+**File**: `projects/mfg-farm/material-sourcing-supplier-economics.md`
+
+**Key findings**:
+1. PLA+ confirmed as correct default production material. PETG justified only for premium "heat-resistant" SKU at Standard/Premium tier (heat deflection 70–75°C vs PLA+'s 55–60°C is the functional boundary).
+2. Material cost is only ~18% of single-unit COGS. Shipping (79% of COGS on single-unit orders) is the dominant variable. Bundle strategy (3-pack, 6-pack) is the highest-leverage margin improvement — moves gross margin from ~54% to ~61% with no material cost change.
+3. Bulk purchasing break-even: not worth supplier relationship overhead until ~500 units/month (~$225–282/month saved). Negotiation worth operator time at ~750+ units/month ($600+ filament spend).
+4. Supplier evaluation framework: weighted scoring matrix (155-point scale). eSUN and Overture tied at 126/155; Polymaker at 122/155; Anycubic at 109/155 (correctly secondary); Push Plastic at 100/155 (domestic tariff hedge).
+5. Print success rate differential: PLA 92–95% vs PETG 77–91% initial. Real cost per successful PETG print ~$0.58 vs PLA $0.42 — factor this into PETG SKU COGS.
+6. Bulk purchasing decision tree: 5 volume tiers (under 10 kg, 10–25 kg, 25–50 kg, 50–100 kg, 100+ kg/month) with specific supplier actions per tier.
+7. Scope deliberately excludes supplier profile details already covered in phase-2-supplier-research.md (no duplication).
+
+---
+
 ## 2026-04-29 06:50–07:50 UTC — Exploration Queue Item 1: Cybersecurity-hardening 2026 Threat Landscape — COMPLETE
 
 **Status**: Comprehensive research completed and integrated into three guide updates. Critical Priority 1 finding: npm supply chain attack (Bitwarden CLI trojanized April 22 for 90 minutes).
