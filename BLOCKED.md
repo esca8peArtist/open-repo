@@ -27,14 +27,21 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — Alpaca account insufficient buying power blocks multi-ticker trading
+**Date blocked**: 2026-04-29
+**Context**: Engine restarted at 03:31 UTC and running successfully. All 11-ticker portfolio generating signals in real-time (BUY/HOLD/SELL). However, at 14:30 UTC when engine attempted to place orders, all orders failed with Alpaca error code 40310000: "insufficient buying power". Account shows only $200-700 available, but simultaneous orders across 11 tickers require much more. Earlier block noted this issue but marked it RESOLVED without actually fixing it. Paper trading validation cannot proceed without sufficient funding.
+**What I need**: Deposit funds to Alpaca paper trading account OR configure account with sufficient buying power for 11-ticker simultaneous trading. Estimated requirement: $5,000–10,000 minimum for reasonable position sizing across all tickers (current positions attempt $300-800/ticker which exceeds $200-700 total balance).
+**Verify with**: `.venv/bin/python -c "import alpaca_trade_api; api = alpaca_trade_api.REST(); account = api.get_account(); print(f'Buying power: ${account.buying_power}')"`
+**Resolution**:
+
+---
+
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
-
----
 
 ## Resolved Archive
 
