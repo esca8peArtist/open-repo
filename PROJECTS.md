@@ -68,7 +68,11 @@
 **Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 575 (2026-04-28): April-May 2026 Domain Content Maintenance COMPLETE**; **Session 528-529 (2026-04-27): Policy Influencer Mapping + April 2026 Domain Updates COMPLETE**. 
+**Current focus**: **Session 659 (2026-04-29 23:35 UTC): FISA April 30 Outcome Research + Distribution Placeholder Audit COMPLETE**. Framework 98% ready for distribution execution.
+- **FISA Section 702 April 30 Outcome** (Session 659): House vote confirmed 235-191 (April 29); Senate vote expected by May 1 per unanimous consent agreement; warrant requirement NOT included in scope; CBDC ban (Freedom Caucus sweetener) expected to be dropped in Senate; state workaround: FL, MS, SD, UT enacted proof-of-citizenship voting laws (April 2026); active judicial vehicle: U.S. v. Hasbajrami (Second Circuit warrantless query challenge). Updated domain-25, domain-01, MAY_2026_UPDATES.md with confirmed outcomes and sourcing.
+- **Distribution Framework Placeholder Audit** (Session 659): Created comprehensive `DISTRIBUTION_GUIDE.md` with placeholder audit identifying: (a) 6 GitHub Gists needed (proposal, 2x executive summaries, 3x trackers), (b) 11 template field locations requiring user fill (name, contact, subject lines), (c) canonical file ambiguity resolution, (d) 90-minute pre-launch checklist (path-independent). Contact verification completed for Batch 1 influencers with April 2026 topical hooks for personalization.
+- **Distribution Readiness**: 35 domains production-ready, all templates written, 150+ influencer contacts sequenced, placeholder audit complete. Next: User creates 6 Gists + fills template fields (~90 min) → ready for Path A/A+37/B execution.
+- **Pending Items** (user action, May 1-2): Fill domain-25 Section 7 checklist post-Senate vote (Senate vote count, presidential signature, CBDC outcome in final text).
 - **April-May 2026 Domain Maintenance** (Session 575): Integrated urgent April-May 2026 civic developments across 8 domains:
   - **Domain 19f (War Powers)**: NEW case study section on Iran 2026 constitutional crisis (May 1 deadline), NATO withdrawal context, Taiwan strategic ambiguity monetization, cascading constraint-failure synthesis (Venezuela law enforcement framing, Iran constitutional nullity, NATO treaty unilateralism, Taiwan security ambiguity). Section 14: NATO/Taiwan/Iran/Venezuela four-theater institutional constraint failure. Three constitutional amendment implications: statutory hostilities definition, congressional standing, automatic appropriations cutoff.
   - **surveillance-tracking.md**: FISA Section 702 pre-deadline assessment (April 28) + post-deadline checklist (April 30 outcome determination). Most likely outcome: three-year renewal without warrant protections.
@@ -286,6 +290,20 @@
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
 **Current focus**: 
+**Session 659 (2026-04-29 23:35 UTC) — MAY 12 CHECKPOINT READINESS DOCUMENT CREATED**:
+- **Engine Health Verified** ✅: PID 1241288 running 10h 32m, CPU 11.1%, MEM 8.5%, all 67/67 sessions generating signals
+- **Database Integrity** ✅: All 49 April 29 fills confirmed (100% fill_price populated, $4,581 unrealized P&L +1.11%)
+- **Test Suite Fixed**: 843 trading unit tests pass (fixed 6 tests expecting bare float from `_poll_fill()`; updated for tuple return)
+- **Discord Monitoring**: Webhook functional (confirmed 21:14 UTC daily summary); rate limiting from 67 concurrent POSTs identified
+- **May 12 Checkpoint Readiness Document** ✅: Created `docs/MAY_12_CHECKPOINT_READINESS.md` with:
+  1. **Non-blocking gaps** (4 identified):
+     - Discord rate limiting (MEDIUM): Designate coordinator session for daily summary
+     - DB sync automation (MEDIUM): Add cron at 20:05 UTC daily for `sync_db_from_alpaca.py`
+     - DB path standardization (LOW): One copy (stockbot.db vs database/stockbot.db)
+     - MTF 15Min warning flood (LOW): Rate-limit to first-occurrence per session
+  2. **Gate 1 Trajectory**: 49 trades in ~3 days = 5x threshold; SELL execution May 1–9 completes validation
+- **Next Checkpoint**: 2026-04-30 13:15 UTC market open (verify auth errors do not recur); May 1–9 SELL signal execution; May 12 formal Gate 1 checkpoint validation
+
 **Session 656 (2026-04-29 21:26–22:46 UTC) — MARKET SESSION VERIFICATION COMPLETE**:
 - **Engine Status**: ✅ RUNNING (PID 1241288, 8.5+ hours uptime)
 - **Market Session Results** (2026-04-29 13:30–20:00 UTC):

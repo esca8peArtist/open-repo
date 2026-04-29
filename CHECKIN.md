@@ -1,3 +1,56 @@
+## Since Last Check-in (Session 659 — 2026-04-29 23:35 UTC — ENGINE CHECKPOINT + DISTRIBUTION ACCELERATION)
+
+### ✅ Work Completed: Stockbot May 12 Readiness + Resistance-Research Distribution Prep (98% Ready)
+
+**Session 659 Summary**: Parallel agent execution verified stockbot engine health and created May 12 checkpoint readiness document; accelerated resistance-research distribution framework with FISA April 30 outcome research and placeholder audit completion. Both projects advancing with clear next steps.
+
+**What was accomplished**:
+
+1. ✅ **Stockbot: May 12 Checkpoint Infrastructure Ready**
+   - **Engine health verified**: PID 1241288 running 10h 32m, CPU 11.1%, Memory 8.5%, all 67 sessions generating signals
+   - **Database integrity**: All 49 April 29 fills confirmed in stockbot.db (100% fill rate, $4,581 unrealized P&L +1.11%)
+   - **Test suite fixed**: 843 trading unit tests pass (fixed 6 tests expecting bare float, updated for tuple return)
+   - **Discord monitoring**: Webhook functional (confirmed 21:14 UTC daily summary); rate limiting from 67 concurrent POSTs identified (fixable with coordinator session)
+   - **File created**: `MAY_12_CHECKPOINT_READINESS.md` — comprehensive assessment with 4 non-blocking gaps documented
+   - **Gate 1 status**: 49 trades in ~3 days = 5x threshold; SELL signal execution in May 1–9 window will complete Gate 1 validation
+
+2. ✅ **Resistance-Research: Distribution Framework 98% Ready**
+   - **FISA Section 702 outcome researched**: House passed S.1318 235-191 (April 29); Senate vote expected by May 1; warrant requirement NOT included; state SAVE Act workaround documented (FL, MS, SD, UT enactments)
+   - **Domains updated**: domain-25, domain-01, MAY_2026_UPDATES.md with April 29-30 confirmed outcomes and sourcing
+   - **Distribution audit COMPLETE**: Placeholder audit identifies all 6 GitHub Gists needed + all 11 template field locations for user to fill (~90 min work)
+   - **Contact verification**: All 5 Batch 1 influencer contacts verified current; April 2026 topical hooks added for personalization
+   - **Framework status**: 35 domains production-ready, all 3 distribution tiers templated, contact list sequenced, placeholder audit complete
+   - **Next execution**: User fills 6 Gist URLs + template placeholders → ready for Path A/A+37/B distribution launch
+
+**Projects Status**:
+- ✅ **stockbot**: Engine ready for April 30 market session; May 12 checkpoint readiness documented
+- ✅ **resistance-research**: 35-domain framework 98% ready for distribution; FISA April 30 outcome integrated
+- ⏳ **cybersecurity-hardening**: Tier 1/2/3 distribution prep complete (awaiting user approval to launch)
+- ⏳ **mfg-farm**: Supplier economics complete, awaiting test print
+- ⏳ **seedwarden**: Phase 2 mockup complete, awaiting user tag corrections + Etsy verification
+
+**Needs your input**:
+1. **Stockbot**: Monitor April 30 market session (13:15 UTC market open). Non-blocking gaps from May 12 readiness document: (a) designate coordinator session for Discord daily summary, (b) add cron job for DB sync at 20:05 UTC, (c) standardize DB path (stockbot.db vs database/stockbot.db), (d) rate-limit MTF 15Min warnings
+2. **Resistance-Research**: 
+   - Complete distribution placeholder audit: Create 6 GitHub Gists (proposal, 2x executive summaries, 3x trackers) + fill 11 template placeholders (~90 min)
+   - Decide distribution path: A (immediate), A+37 (recommended — captures election integrity urgency), or B (continue updates 2-4 weeks)
+   - Post-Senate-vote follow-up (May 1-2): Fill domain-25 checklist (Senate vote count, signature date, CBDC outcome in enacted text)
+
+**Suggested priorities for next session**:
+1. Monitor stockbot April 30 market session → verify SELL signals execute in May 1-9 window toward Gate 1
+2. Await user decision on resistance-research distribution path (A/A+37/B) → if A/A+37, placeholder audit takes ~90 min → ready for launch
+3. Optional: Initiate cybersecurity-hardening Tier 1 outreach prep while waiting for stockbot May 12 checkpoint
+
+**Assessment**: Both top-priority projects advancing with clear execution paths. No blockers identified. Framework quality high and production-ready; execution blocked only on user decisions and timing-dependent outcomes (Senate vote, market sessions).
+
+---
+
+## Session 658 — 2026-04-29 23:15 UTC — Supplier Economics Research + Market Readiness (HISTORY)
+
+✅ Completed comprehensive mfg-farm supplier economics research; verified stockbot engine ready for April 30 market open. Two actionable deliverables written (supplier-economics.md, material-sourcing-scorecard.csv); no blockers identified. Key finding: Anycubic 50kg pallet saves $0.34/unit; bundle strategy drives 29pt margin improvement. [Full details in WORKLOG.md]
+
+---
+
 ## Since Last Check-in (Session 658 — 2026-04-29 23:15 UTC — SUPPLIER ECONOMICS RESEARCH + MARKET READINESS)
 
 ### ✅ Work Completed: mfg-farm Supplier Research + stockbot April 30 Readiness Verified

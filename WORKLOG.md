@@ -4,6 +4,102 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 23:35 UTC — Orchestrator Session 659 — Engine Health Checkpoint + Distribution Framework Acceleration
+
+**Status**: ✅ COMPLETE — Parallel agent work on stockbot May 12 readiness and resistance-research distribution prep.
+
+**Work Completed**:
+
+### 1. Stockbot: Engine Health Verification + May 12 Checkpoint Readiness ✅
+
+**Current Status**:
+- Process: Running stably (PID 1241288, 10h 32m uptime, started 12:27 UTC)
+- CPU: 11.1%, Memory: 8.5% (705 MB RSS)
+- Sessions: 67/67 active, generating signals, cycling with "Market closed" skip logic
+- Database integrity: PRAGMA check = ok
+
+**Fill Confirmation Validation**:
+- All 49 fills from April 29 market session confirmed in stockbot.db
+- 0 trades with NULL fill_price or order_id
+- Unrealized P&L: +$4,581 (+1.11%) across 20 open positions
+- Session 652's `_poll_fill()` tuple fix verified working correctly
+
+**Discord Monitoring**:
+- Webhook functional; confirmed daily summary sent 21:14 UTC April 29
+- HTTP 403 errors from 67 sessions posting simultaneously = Discord rate limiting, not config failure
+- Recommendation: Designate single coordinator session for daily summary
+
+**Test Suite Fixed**:
+- Fixed 6 tests in test_session_652_fixes.py expecting bare float return; updated to unpack (fill_price, status) tuple
+- Result: 843 trading unit tests passed, 0 failed ✅
+
+**Files Created**:
+- `projects/stockbot/docs/MAY_12_CHECKPOINT_READINESS.md` — comprehensive readiness document with 4 non-blocking gaps identified:
+  1. **Discord rate limiting** (MEDIUM): 67 sessions POSTing simultaneously → designate coordinator
+  2. **No automatic DB sync** (MEDIUM): Add cron job at 20:05 UTC daily to `sync_db_from_alpaca.py`
+  3. **DB path split** (LOW): Standardize between stockbot.db (root) and database/stockbot.db (sync target)
+  4. **MTF 15Min warning flood** (LOW): Either fix 15Min path or rate-limit warnings to first-occurrence-per-session
+
+**Assessment**: Gate 1 trajectory 5x threshold (49 trades in 3 days vs 30/month target). May 12 checkpoint will validate SELL signal execution; infrastructure ready.
+
+---
+
+### 2. Resistance-Research: Framework Acceleration + Distribution Audit ✅
+
+**FISA Section 702 April 30 Outcome Research** ✅
+- House vote (April 29): S.1318 passed 235-191
+- Vote breakdown: 20+ GOP privacy hawks voted no (Fourth Amendment grounds); most Dems voted no (civil liberties); leadership held procedural rule open 2 hours
+- CBDC attachment: Permanent CBDC ban (Freedom Caucus sweetener) → Senate called "dead on arrival"; expected resolution = Senate passes clean S.4344, House accepts without CBDC
+- Senate timeline: Unanimous consent agreement requiring cloture by May 1, 2026
+- Warrant requirement: NOT in procedural rule scope
+- State workaround: FL, MS, SD, UT enacted proof-of-citizenship laws (April 2026), sidestepping federal Senate filibuster
+- Active judicial vehicle: U.S. v. Hasbajrami (Second Circuit) challenging warrantless 702 back-end queries
+
+**Files Updated**:
+1. **`domains/domain-25-fisa-702-april-2026-outcome.md`**
+   - Section 7 checklist: Filled in confirmed House vote (235-191), CBDC status, SAVE Act status
+   - Section 9 (NEW): Post-April-29 analysis — final vote implications, CBDC resolution path, civil liberties monitoring strategy (EFF FOIA roadmap, Hasbajrami, Wyden-Davidson 2029 coalition)
+   - Sources: Added 7 new citations (Hill, Fox, Senate Daily Press, Congress.gov, Gate News, ACLU v. Hasbajrami)
+
+2. **`domains/domain-01-voting-rights-elections.md`**
+   - Section 4.1: Added 4-state SAVE Act enactments (FL, MS, SD, UT), expanded ballot initiative tracking (AK, AR, AZ, KS counter-initiatives)
+   - Section 4.2: Added accuracy note flagging April 28 framing overtaken by April 29 events; added corrected status with 235-191 vote; preserved downstream advocacy analysis
+   - Sources: Added 4 new citations
+
+3. **`domains/MAY_2026_UPDATES.md`**
+   - "Pending After April 30" corrected to reflect House passage
+   - NEW "April 29-30 Developments (Session 659)" section: confirmed vote count, CBDC Senate problem, cross-domain update instructions for post-Senate action, state ballot initiative enactments
+   - Domain 1 Section 4.2 correction flag added
+
+4. **`DISTRIBUTION_GUIDE.md`** (NEW)
+   - Comprehensive "DISTRIBUTION READINESS: PLACEHOLDER AUDIT" section added
+   - Table identifying all 6 documents requiring public URLs
+   - Identified location of each `[link]` placeholder across templates
+   - Identified contact/identity field locations (6 templates)
+   - Canonical file ambiguity resolution guidance
+   - 90-minute pre-launch checklist (path-independent)
+
+5. **`BATCH_1_CONTACT_VERIFICATION.md`**
+   - NEW "Contact Currency Check (April 29, 2026 — Session 659)" section
+   - Confirmed all 5 Batch 1 contacts in same positions as Session 528 mapping
+   - April 2026 context updates for personalization (FISA for Goodman, state SAVE Act wave for Weiser, Harvard freeze for Chenoweth, SPLC/Domain-29 for Bassin, Watson/Callais for Elias)
+   - Subject line update suggestions incorporating April 2026 topical hooks
+
+6. **`CHECKIN.md`** 
+   - Item 0 (FISA): Updated from "OUTCOME PENDING" to confirmed House vote with specific Senate pending items
+   - Item 0a (NEW): Distribution placeholder audit complete
+
+**Distribution Framework Status**:
+- 35-domain diagnostic framework: Production-ready ✅
+- Distribution templates: All 11 institutional outreach templates written ✅
+- Influencer contact list: 150+ contacts with Tier 1/2/3 sequencing verified ✅
+- Placeholder audit: COMPLETE — 90-minute pre-launch checklist ready ✅
+- Next: User fills 6 Gist URLs + 11 template name/contact fields → Framework ready for Path A/A+37/B execution
+
+**Assessment**: Framework is 98% ready for distribution execution. Remaining: (a) 3 post-Senate-vote domain checklist items (Senate vote, signature, CBDC outcome), (b) user creates 6 GitHub Gists + fills template placeholders (~90 min), (c) user selects Path A/A+37/B.
+
+---
+
 ## 2026-04-29 23:15 UTC — Orchestrator Session 658 — Supplier Economics Research + Market Readiness
 
 **Status**: ✅ COMPLETE — mfg-farm supplier economics research + stockbot April 30 readiness verification.
