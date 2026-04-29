@@ -1,3 +1,51 @@
+## Since Last Check-in (Session 644 — 2026-04-29 16:47 UTC — EXPLORATION QUEUE: POST-DISTRIBUTION FEEDBACK INTEGRATION ROADMAP)
+
+### ✅ Work Completed: Resistance-Research Post-Distribution Feedback Integration Roadmap
+
+**Session 644 Work** (16:30–16:47 UTC):
+
+**What was accomplished**:
+1. ✅ **Orientation complete**: Read ORCHESTRATOR_STATE, INBOX, PROJECTS, BLOCKED
+   - All major projects remain blocked on user action
+   - Stockbot Alpaca buying power block, mfg-farm test print block unchanged
+   - Identified exploration queue work: post-distribution institutional feedback integration roadmap
+
+2. ✅ **Post-Distribution Feedback Integration Roadmap** (Exploration Queue preparation)
+   - **Deliverable**: `projects/resistance-research/feedback-integration-roadmap.md` (3,900 words, 44KB)
+   - **Purpose**: Strategic framework for institutional adoption tracking and adaptive iteration post-distribution
+   - **Key Sections**:
+     1. **Adaptation Patterns by Sector**: State legislatures (3–5 domain-specific bills via session calendar), federal circuit courts (doctrinal hook differentiation by judge ideology), law schools (SDG adoption model, 2-year clinic timeline), think tanks (single-issue brief distillation with citation risk), civil rights organizations (horizontal extraction with 3.5% coordination threshold)
+     2. **Feedback Mechanisms**: Sector-divergence tracking, quality degradation detection, Path A+37 signal feed loops
+     3. **Success Metrics**: Implementation conversion benchmarks (GDPR Brussels Effect 5–15% 12-month enactment), domain pull ranking, velocity metrics
+     4. **Decision Trees**: Unexpected adoption response tree, domain update vs. accept protocols, contradictory sector feedback handling
+     5. **Iteration Strategy**: Domain 31x/37b urgency overrides, crypto-democracy routing to academic law reviews, GDPR Brussels Effect as 5-year reference model
+   - **Sources**: 14 cited (GDPR implementation, New Deal patterns, ILO peer effects, policy diffusion measurement)
+   - **Status**: Production-ready, path-agnostic (applies regardless of user choice A/A+37/B)
+
+**Current Project Status**:
+- 🔴 **resistance-research**: 100% production-ready; awaiting distribution path decision (A/A+37/B). Post-distribution tracking framework now complete.
+- 🔴 **stockbot**: Engine running; Alpaca buying power $0 (need $5K–10K). Awaiting funding.
+- 🔴 **mfg-farm**: Awaiting test print
+- 🔴 **seedwarden**: Awaiting tag corrections + Etsy verification
+- 🔴 **cybersecurity-hardening**: Phase 1 execution plan ready; awaiting user approval to begin
+- 🟢 **open-repo**: PR #1 open, awaiting merge
+
+**Blocked Items** (unchanged):
+- **stockbot — Alpaca buying power insufficient** (2026-04-29 14:30 UTC, real and confirmed)
+- **mfg-farm — Test print required** (2026-04-12, pending user action)
+- **resistance-research — Distribution path decision** (awaiting Path A/A+37/B selection)
+- **seedwarden — Tag corrections + Etsy account** (awaiting user action)
+
+**Items needing your input**:
+1. **resistance-research**: Which Path? A (all 25 Tier 1 by May 1) / A+37 (20 by May 1, 5 with Domain 37 on May 15, RECOMMENDED) / B (defer for more updates)?
+2. **cybersecurity-hardening**: Approve Tier 1A sequencing and messaging? Ready to begin Phase 1 execution?
+3. **stockbot**: Fund Alpaca account? ($5K–10K minimum for 11-ticker simultaneous trading)
+4. **mfg-farm**: Complete test print to unblock launch prep
+
+**Session Summary**: Post-distribution institutional feedback integration roadmap complete. Strategic framework now ready for institutional adoption tracking once user decides on distribution path. All major projects remain blocked on user action.
+
+---
+
 ## Since Last Check-in (Session 636 — 2026-04-29 15:30 UTC — PARALLEL DISTRIBUTION EXECUTION PREP + MARKET MONITORING)
 
 ### ✅ Work Completed: Distribution Execution Preparation + Stockbot Market Monitoring
