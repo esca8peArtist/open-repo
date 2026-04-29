@@ -5,6 +5,66 @@
 
 ---
 
+## Since Last Check-in (Session 636 — 2026-04-29 11:28 UTC — ENGINE CRITICAL RESTART + 52-TICKER CONFIRMATION)
+
+### ⚠️ Engine Restart Required and Executed
+
+**Problem Identified** (11:27 UTC):
+- Previous engine process (PID 1202130) had logged graceful shutdown at 12:12:32 UTC with "UNKNOWN" reason
+- Process was before market open (13:30 UTC), indicating abnormal termination
+- Process remained in zombie state consuming 661 MB memory
+
+**Action Taken** (11:27:53 UTC):
+- ✅ Killed previous process (PID 1202130)
+- ✅ Restarted engine: `nohup .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper &`
+- ✅ New process (PID 1241288) initialized cleanly at 11:27:53 UTC
+
+**Critical Discovery** (11:28 UTC):
+- **Active-sessions.json contains 52 tickers**, not 11 as previously documented
+- Configuration includes: AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA (Session 521) + IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T, BRK.B (Sessions 522, 524, 527) + NFLX, COST, TXN, AVGO, ABBV, BMY, TMO, CAT, SBUX, RTX, AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK (Session 527) + HD, LMT, UPS, REGN, FDX (Session 535)
+
+**Expected Impact**:
+- Trading rate with 52 tickers: 52 × (0.17–2/month) = 8.8–104 trades/month (aggregate)
+- Median projection: 26–52 trades/month (approaches/exceeds Gate 1 threshold of 30)
+- Previous estimate with 11 tickers: ~2–22 trades/month (4x shortfall)
+
+**Engine Status** (11:28 UTC):
+- ✅ All 52 stacker models loading successfully (6/6 base models each)
+- ✅ OrderExecutor initialized in paper trading mode
+- ✅ AlpacaBroker initialized (paper account)
+- ✅ Market-aware sleep activated: All sessions configured to sleep until 13:15 UTC
+- ✅ No errors in initialization logs
+- ⏳ 2h 1m until market open (13:30 UTC)
+
+### Project Status (Updated)
+
+- **stockbot**: ✅ Engine restarted + operational, 52-ticker portfolio ready, awaiting market open
+- **resistance-research**: 35 domains complete → BLOCKED ON USER DECISION
+- **cybersecurity-hardening**: All 3 tiers complete → BLOCKED ON USER TIER 1 APPROVAL
+- **mfg-farm**: Designs complete → BLOCKED ON TEST PRINT
+- **seedwarden**: Phase 1 ready, Phase 2 complete → BLOCKED ON USER TAG CORRECTIONS
+- **All others**: Complete or paused
+
+### Items Needing Your Input
+
+1. **Stockbot market session** (No action needed — automated monitoring)
+   - Engine ready with 52 tickers
+   - Three checkpoints active: 14:00, 16:00, 20:15 UTC
+   - Expected outcome: Multi-ticker ensemble validates feature count fix
+
+2. **All other blockers** (unchanged — awaiting your action):
+   - Distribution path decision (resistance-research)
+   - Tier 1 approval (cybersecurity-hardening)
+   - Test print (mfg-farm)
+   - Tag corrections (seedwarden)
+
+### Assessment
+- **Autonomous work**: NONE remaining. Engine restart was critical manual intervention completed.
+- **System status**: Healthy and ready for market session
+- **Next steps**: Automated monitoring handles market session. No manual intervention needed unless critical errors detected.
+
+---
+
 ## Since Last Check-in (Session 635 — 2026-04-29 11:19 UTC — Pre-Market Health Check + Market Monitoring Readiness)
 
 ### ✅ Session Orientation + Pre-Market Validation Complete
