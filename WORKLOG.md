@@ -4,6 +4,105 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-29 04:30–05:30 UTC — orchestrator — Session 625 Parallel Research: Stockbot Expansion, Seedwarden Phase 2 Strategy, Resistance-research Domain 37
+
+**Three subagents spawned in parallel to advance blocked projects toward their Goals:**
+
+### ✅ Stockbot: Multi-Ticker Quality Diversification Analysis — COMPLETE
+**Agent**: stockbot subagent | **Duration**: 257 seconds
+**Deliverable**: `projects/stockbot/ticker-expansion-analysis.md` (comprehensive analysis)
+
+**Critical Finding**: Portfolio already at 62 tickers (not 11). Sessions 522–535 added 51 tickers in four batches. **Gate 1 is structurally met**: 62 tickers × 2 rt/month = 124 rt/month >> 30 rt/month threshold. 4.1x margin.
+
+**New Task Scope**: Which 10 tickers improve portfolio quality (diversification, volatility fit, sector balance)?
+
+**Top 10 Tickers Recommended**:
+1. **FCX** (Freeport-McMoRan, Copper) — highest diversification, near-orthogonal correlation (0.10–0.25), ~3 rt/month expected
+2. **NEM** (Newmont, Gold) — counter-cyclical hedge, 0.05–0.25 correlation, can be negative in risk-off
+3. **CLF** (Cleveland-Cliffs, Steel) — industrial cycle proxy, 45–65% vol (upper boundary), ~3.5 rt/month expected
+4. **LRCX** (Lam Research, Semicon Equipment) — supply chain gap filler, 0.50–0.65 pairwise vs. fab-light cluster
+5. **DHR** (Danaher, Life Sciences Tools) — healthcare equipment gap, 0.40–0.55 vs. ISRG
+6. **SPGI** (S&P Global, Financial Data) — decorrelated financials, 0.40–0.55 vs. NIM cycle
+7. **BLK** (BlackRock, Asset Management) — AUM-driven sub-sector entirely absent, 0.55–0.65 vs. banks
+8. **DHI** (D.R. Horton, Homebuilders) — no homebuilder exposure, rate-sensitive via mortgage demand (different mechanism), ~2.8 rt/month
+9. **MCK** (McKesson, Healthcare Distribution) — orthogonal to pharma patent revenue, 0.35–0.50 vs. MRK/PFE
+10. **EW** (Edwards Lifesciences, Cardiac Devices) — cardiac device sub-sector gap, clinical data readouts fit h=10 model well
+
+**Optimal vol band**: 20–45% annualized (all 10 candidates within or just above). Training sequence: FCX+CLF Day 1 AM, NEM+LRCX Day 1 PM, SPGI+DHR Day 2 AM, BLK+MCK Day 2 PM, DHI+EW Day 3 AM (~60 min total using `train_multi_ticker_batch.py --workers 2`).
+
+**Impact**: Diversification improves from tech-heavy skew; reduces correlation risk; maintains Gate 1 feasibility headroom.
+
+---
+
+### ✅ Seedwarden: Phase 2 Social Media Strategy & 90-Day Content Calendar — COMPLETE
+**Agent**: seedwarden subagent | **Duration**: 457 seconds
+**Deliverable**: `projects/seedwarden/phase-2-social-media-strategy.md` (9,403 words)
+
+**Scope**: Complete social media strategy ready to execute 30 days after Phase 1 launch (June 1, 2026 projected).
+
+**Five Strategic Decisions**:
+1. **Pinterest is anchor platform** (not TikTok) — Pinterest generates buyers with 18+ month passive traffic; TikTok is top-of-funnel awareness only
+2. **YouTube deferred** — Zero budget capacity (<5hr/wk total) without cutting active platforms; passive Shorts archive only until Phase 3 proves formats
+3. **Zone Quick-Start Card is email capture spine** — Every platform touchpoint per week drives to landing page; zone-specific personalization actively featured (not just offer mention)
+4. **Intentional 12-week staging**: Weeks 1–4 establish identity + email capture, Weeks 5–8 build community deliberately (before Phase 3 product launch), Weeks 9–12 activate conversion with seasonal urgency (preservation peak)
+5. **Every hook and theme sourced from existing assets** — 12 wild edibles species from 18-species habit library; preservation timing aligned to zone data in ZONE_QUICKSTART_CARD_SPEC.md; no invented content
+
+**Content Pillars**: Native plants/wild edibles education, homesteading DIY, survival/preparedness, product teasers, community engagement
+
+**Execution readiness**: All templates, hooks, species selection, timing, collaboration framework ready. Only needs user Phase 1 data to trigger execution.
+
+---
+
+### ✅ Resistance-research: Domain 37 Research + Path A+Domain37 Implementation Plan — COMPLETE
+**Agent**: resistance-research subagent | **Duration**: 684 seconds
+**Deliverables**: 
+1. `projects/resistance-research/domains/domain-37-foreign-transnational-interference-democratic-institutions.md` (7,594 words, 38 citations)
+2. `projects/resistance-research/phase-1-path-a-plus-37-implementation.md` (5,137 words)
+
+**Critical Finding**: Path A+Domain37 is MORE compelling than originally framed. Election security package (domestic + foreign interference together) is analytically more powerful and strategically more urgent than either domain alone.
+
+**Domain 37 Key Findings**:
+- US enters 2026 midterm cycle with foreign interference defense architecture more dismantled than any point since 2016
+- FBI Foreign Influence Task Force disbanded Feb 5, 2025 (50 agents, 3 squads)
+- Gen. Tim Haugh (2024 election defender, NSA/Cyber Command) fired April 2025
+- DNI Gabbard removed foreign election interference from threat assessment (first since 2017)
+- CISA election security program faces $700M cuts + complete elimination
+- Russia info ops budget +54% for 2026 ($458M); China $10B+; USAID democracy grants -97%
+
+**Four Reform Pathways**:
+1. FARA Structural Reform Act (mandatory renewal, real penalties, closed exemptions)
+2. Foreign Interference Early Warning Commission (statutory bipartisan, state briefing mandate)
+3. Democracy Promotion Restoration Act (statutory NED floor, multilateral architecture)
+4. Authoritarian Influence Registry (public database of foreign investments in US info infrastructure)
+
+**Phase 1 Path A+Domain37 Implementation** (60-day timeline):
+- Days 1-14: 25 Tier 1 contacts (8 Senate, 8 think tanks, 5 law schools, 4 civil society)
+- Days 14-28: Follow-up + seed 2-3 media mentions (Substack, Just Security op-ed, Reddit)
+- Days 28-56: 45-55 Tier 2 (20 academics, 12 journalists, 10 law reviews)
+- Days 56-84: 55+ Tier 3 (labor, civil rights, state networks)
+
+**Everything already built**: Templates, contact database (158 contacts), Reddit posts, Substack drafts, objection handlers. Only needs <2 hours user action: publishing URL confirmation, batch verification, personalization.
+
+**Phase 2 Entry Gate**: 5 substantive Tier 1 responses + 1 media mention + 3 coalition conversations.
+
+---
+
+## Orchestrator Assessment
+
+All three projects had visible unfinished scope toward their Goals despite being "awaiting user decision":
+- **stockbot**: Gate 1 feasible; researched quality diversification to strengthen portfolio beyond minimum threshold
+- **seedwarden**: Researched execution infrastructure (social strategy) so Phase 2 launches immediately post-Phase-1-data
+- **resistance-research**: Researched Domain 37 and implementation so user can make informed decision on Path A+37 with concrete deliverables visible
+
+**Token efficiency**: 241K tokens spent on 3 high-value subagent parallel research tasks (67K + 77K + 97K). Produced 28.3K words of production-ready strategy and implementation materials.
+
+**Next checkpoints**:
+- **Stockbot**: Market open verification at 13:30 UTC (7 hours)
+- **Resistance-research**: User distribution path decision enables Phase 1 execution
+- **Seedwarden**: Phase 1 launch enables Phase 2 content execution
+
+---
+
 ## 2026-04-29 04:30 UTC — orchestrator — Session 624 Orientation + Stockbot Engine Verification + Exploration Queue Setup
 
 **Status Check**:
