@@ -1,3 +1,46 @@
+## Since Last Check-in (Session 670 — 2026-04-30 01:31–03:00 UTC — PARALLEL PRODUCTION PLANNING)
+
+### ✅ Work Completed: Seedwarden Phase 2 + Stockbot Infrastructure Verification
+
+**Session 670 Summary**: Parallel execution of two autonomous workstreams. Stockbot infrastructure verified 100% ready (engine running, no auth errors, all 4 gaps fixed, cron installed). Seedwarden Phase 2 production roadmap completed with 5 major planning documents (photo shoot, zone card timeline, bundle strategy, seasonal content calendar, Phase 3 readiness checklist). Both streams committed to master.
+
+**What was accomplished**:
+
+1. ✅ **Stockbot: April 30 Market-Open Readiness — 100% VERIFIED**
+   - **Engine status**: PID 1241288 running 14h 6m. No 401/403 auth errors in live sessions.
+   - **Configuration verified**: 67 sessions in active-sessions.json, all sleeping until 13:15 UTC wake-up
+   - **Infrastructure gaps**: All 4 gaps (Discord rate limiting, DB sync cron, DB path standardization, MTF warning flood) already fixed in prior sessions
+   - **Cron verification**: DB sync job confirmed installed (`5 20 * * 1-5` — April 30 fills will auto-sync at 20:05 UTC)
+   - **Test verification**: 33 infrastructure tests pass (test_infra_gaps_fixes.py)
+   - **Outcome**: Zero blockers. Engine 100% ready for today's market session.
+   - **Next**: Monitor 13:15 UTC market pre-wake, collect daily metrics through May 12
+
+2. ✅ **Seedwarden Phase 2: Complete Production Planning Documents**
+   - `PHOTO_SHOOT_PLANNING.md` (2,500w): 15 product lifestyle photo shot list with props, angles, styling. Cluster-based batching (A: 3.5-4.5h, B: 1.5-2h, C: 1.5-2h). Research-grounded (5+ images lift conversion 20-40%, lifestyle converts 3× vs flat lay).
+   - `ZONE_CARD_PRODUCTION_TIMELINE.md` (2,000w): Week-by-week Canva build (Week 0: 30-min setup, Weeks 1-4: ~10h total zone PDFs). Includes 8 email automations, landing page, launch checklist.
+   - `PHASE_2_BUNDLE_STRATEGY.md` (1,800w): 3 sequential tests (Spring Forager $22, Harvest $28). Pricing psychology: dollar framing > percentage. Per-cohort bundle appeal mapped.
+   - `PHASE_2_SEASONAL_CONTENT_CALENDAR.md` (2,500w): 6-month rolling (May-Oct). Per-month lead products, social pillars, 13-email sequence with survey at Day 157 for Phase 3 data collection.
+   - `PHASE_3_READINESS_CHECKLIST.md` (1,800w): Pre-production checklists for Options A/B/C/D. Universal block + option-specific. Enables immediate production when Phase 1 data arrives Week 6.
+   - **Outcome**: Phase 2 production roadmap 100% complete. Awaiting Phase 1 launch data (Track A) or user approval (photo strategy execution).
+
+**Projects Status**:
+- ✅ **stockbot**: Engine ready, infrastructure verified, monitoring active through May 12
+- ✅ **seedwarden**: Phase 2 Track B complete; Phase 1 blocked on user tag corrections (3) + Etsy verification
+- ⏳ **resistance-research**: Phase 1 ready; awaiting user path decision (A / A+37 / B)
+- ⏳ **cybersecurity-hardening**: Tiers 1-3 ready; awaiting user execution
+- ⏳ **open-repo**: PR #1 awaiting maintainer review
+- 🚫 **mfg-farm**: Test print block remains (manual user action)
+
+**Needs your input**:
+1. **Stockbot**: Market session monitoring begins 13:15 UTC today — verify engine generates signals ✓ (automated)
+2. **Seedwarden Track A**: 3 tag corrections + Etsy verification → Phase 1 ready to upload
+3. **Seedwarden Track B**: User approval on `LIFESTYLE_PHOTOGRAPHY_STRATEGY.md` → photo shoot execution
+4. **Resistance-Research**: Distribution path decision (A / A+37 / B) → Phase 1 launches immediately
+
+**Usage**: Sonnet 2.1% (190,109 → ~220K tokens), ~6h 20m to Tuesday reset.
+
+---
+
 ## Since Last Check-in (Session 669 — 2026-04-30 02:40 UTC — ORIENTATION + ITEM 11: SEEDWARDEN PHASE 3 STRATEGY)
 
 ### ✅ Work Completed: Orientation + Exploration Queue Item 11 (seedwarden Phase 3)
