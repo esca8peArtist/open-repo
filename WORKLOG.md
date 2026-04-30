@@ -6,6 +6,30 @@
 
 ---
 
+## 2026-04-30 — open-repo — Phase 5 Architecture Document (PHASE_5_ARCHITECTURE.md)
+
+**File**: `projects/open-repo/docs/PHASE_5_ARCHITECTURE.md`
+**Status**: Complete, committed to master
+
+**What was written**: Unified Phase 5 architecture covering (1) offline export strategy — ZIM format
+pipeline with three export variants (Full, Domain, Reference), data preparation pipeline, file size
+targets by channel (USB/archive.org/IPFS/GitHub Releases), validation and signed releases, retention
+policy; (2) distributed node sync — peer discovery, four transport option analysis (Git, BitTorrent,
+IPFS, ActivityPub pull-sync), recommended three-layer hybrid architecture, security model, edge device
+constraints for Raspberry Pi; (3) technology evaluation matrix for export formats (ZIM/SQLite/JSON/CAR)
+and sync transports; (4) implementation roadmap — Wave 5.1 (Kiwix pipeline, 16–22 days), Wave 5.2
+(distributed sync, 14–20 days), Wave 5.3 (mobile client stretch, 10–15 days), risk register, timeline.
+
+**Key decisions recorded**: IPFS (Kubo) as primary archive distribution transport (CAR files for
+offline/sneakernet); ActivityPub pull-sync extends Phase 4 for ContentItem sync; BitTorrent as
+secondary distribution channel; Git for metadata tracking only. ZIM is primary export format;
+SQLite and JSON deferred to Phase 5.1.
+
+**Prior docs preserved**: Five preliminary Phase 5 documents remain valid technical references;
+this document supersedes them as the canonical Phase 5 spec and extends scope to distributed sync.
+
+---
+
 ## 2026-04-30 13:05–13:40 UTC — Session 700 — Parallel Exploration Queue Research × 3 (Market Monitoring Standby)
 
 **Status**: COMPLETE — Three independent exploration queue items executed in parallel during pre-market window
