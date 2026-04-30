@@ -4,6 +4,49 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 670 — 2026-04-30 — Phase 2 Track B Production Prep: Documents Assessment + Readiness Checklist
+
+**Task**: Advance Phase 2 Track B execution prep. Review PHOTO_SHOOT_PLANNING.md and ZONE_CARD_PRODUCTION_TIMELINE.md for completeness; produce consolidated equipment checklist, shot-by-shot timing breakdown, location prep guide, photography consistency rules, Canva workflow checklist, calendar extraction, asset gap assessment, blocker register update, and consolidated readiness checklist.
+
+**Context read**: PHOTO_SHOOT_PLANNING.md, ZONE_CARD_PRODUCTION_TIMELINE.md, phase-2-blockers.md, TRACK_B_LAUNCH_STATUS.md, LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, WORKLOG.md (Sessions 669, 662, 646).
+
+**Files produced**:
+
+- `TRACK_B_READINESS_CHECKLIST.md` (~2,200 words): Consolidated pre-production checklist for both photo shoot and Canva zone card tracks. Six sections: (1) Photo shoot readiness — equipment checklist (5 items, no purchases required for most setups), props checklist by cluster with cost estimates (Cluster A $3–20, Cluster B $3–38, Cluster C $3–26; total $14–84), background surfaces checklist (4 surfaces, most can be sourced from household items), digital asset prep (printed pages + tablet PDFs), location prep guide (window scouting, between-session transitions, session start protocol), photography consistency guide (white balance, angle consistency, shadow handling, focal point discipline, hands-in-frame protocol, batch editing sequence); (2) Canva zone card readiness — account and asset checklist, template existence assessment (zero templates exist; full build starts from scratch), Canva build calendar extracted to week-by-week table, asset dependency table (all assets free, no purchases required), one user decision required (Canva Free vs. Pro); (3) Parallel vs. sequential execution — both tracks are fully independent and can run simultaneously; (4) Blockers assessment — photo shoot has zero hard blockers; Canva track has one blocker (BLOCKER-01: Brand Kit setup); (5) User decisions required before production — 5 low-stakes reversible decisions; (6) Consolidated next actions — 12 steps sorted by dependency with owner, time, and what each step unblocks. Grand total: 18–22 hours across 4 weeks.
+
+**Production documents assessed**:
+
+PHOTO_SHOOT_PLANNING.md assessment: COMPLETE and production-ready. Covers all 7 required areas: technical specs (2400px, sRGB, JPEG 88–90%, manual white balance), capture mode guidance (portrait vs. standard by distance), editing pipeline (Lightroom Mobile/Snapseed, batch workflow, 8 specific adjustments), location guide (window positioning, backdrop surfaces, avoid list), master props by cluster, per-product shot descriptions (all 30 shots across 15 products), batch shooting schedule (3 sessions, time estimates by cluster), styling guidelines (5 universal rules + per-cluster tone table), Etsy research grounding (5+ image rule, lifestyle vs. flat lay conversion ratio, authenticity signal), and post-shoot file handling (naming convention, WORKLOG protocol, slot assignment). No gaps identified.
+
+ZONE_CARD_PRODUCTION_TIMELINE.md assessment: COMPLETE and production-ready. Covers all required areas: Week 0 Brand Kit setup (30-minute, 6-step checklist, 10 colors, 2 fonts, 5 icons, logo), Week 1 master template build (Session 1A layout 90 min, Session 1B content population 60 min + Zone 6 build 30 min), Weeks 2–3 zone duplication in correct order (median first, then cool, warm, hot — prevents zone-band color errors propagating through duplicates), full-set review checklist (10 check criteria + print test), Week 4 Kit delivery integration (8-step setup, email template, landing page options), launch readiness checklist (15 items across content/technical/integration categories), monthly "This Month" refresh protocol (20 min/month). No gaps identified.
+
+**Key findings from assessment**:
+1. Both production documents are fully self-contained — a user with no prior context could execute either from the document alone without additional briefing.
+2. The photo shoot requires 30 total captures (2 shots per product × 15 products), not 15. The document title references "15 photos" as the product count; the actual capture target is 30 shots.
+3. BLOCKER-01 (Canva Brand Kit) is the only technical blocker for the entire Canva track and resolves in 30 minutes of user action.
+4. There are zero hard blockers for the photo shoot. The single soft dependency (printed pages) requires 20–30 minutes of prep.
+5. Etsy account verification (Track A) does not block photo shooting — it only blocks the upload step. Shooting now creates zero delay once the account unlocks.
+6. Both tracks are fully parallel — no shared dependencies between the photo shoot and the Canva zone card build.
+7. The Brand Kit spec in ZONE_CARD_PRODUCTION_TIMELINE.md (10 colors, 2 fonts for zone cards) and TRACK_B_LAUNCH_STATUS.md (6 colors, 3 fonts for pin templates) are different Brand Kits for different purposes. The zone card kit is a more specialized subset. Note for user: if building both simultaneously, clarify whether these merge into one Brand Kit or stay separate.
+
+**Image downloads this session**: 0
+
+**Key decisions documented**:
+1. Photo shoot sequencing: Session 1 (Cluster A, 8 products, 25 min setup + 3.5–4.5 hr shooting) is the highest complexity and should be scheduled first with a full morning window (9am–1pm). Sessions 2 and 3 can combine on the same day (2.75–3.75 hr total).
+2. Canva build sequencing: Zone 5 first as master template, then Zone 6 (same color band, validates master), then cool (3–4), warm (7–8), hot (9–10). This is already documented in ZONE_CARD_PRODUCTION_TIMELINE.md and confirmed correct.
+3. Editing is a batch-after-all-sessions task, not per-session. Editing in one sitting across all 30 photos produces the most consistent look.
+4. The "This Month" blocks in the zone cards need to reflect the actual launch month — if cards launch in May rather than April, update those blocks before publishing. User decision needed.
+5. Kit free tier is sufficient for the zone card delivery workflow. No paid email platform required for Phase 2 zone card delivery.
+
+**User decisions pending**:
+1. Photo shoot scheduling — 2 shooting days needed; user to confirm availability.
+2. Canva Free vs. Canva Pro ($15/month) — Pro recommended for Brand Kit shortcut; free tier works with ~60 min additional time.
+3. Kit (ConvertKit) account status — confirm existing or new account needed.
+4. Zone card "This Month" content — confirm whether April or May tasks are used at initial launch.
+5. Landing page: Kit (free) vs. Carrd.co ($19/year) — Kit recommended for Phase 2 volume.
+
+---
+
 ## Session 669 — 2026-04-30 — Phase 2 Track B Production Documents (Photo Shoot, Zone Card Timeline, Bundles, Content Calendar, Phase 3 Readiness)
 
 **Task**: Advance Phase 2 Track B deliverables. No blockers. Five production documents created covering: lifestyle photo shoot planning, zone card production timeline, bundle pricing strategy, seasonal content calendar, and Phase 3 option readiness checklists.
