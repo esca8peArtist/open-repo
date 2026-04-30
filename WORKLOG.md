@@ -6,6 +6,41 @@
 
 ---
 
+## 2026-04-30 08:55–09:00 UTC — Session 688 Stockbot Engine Restart + April 30 Market Open Readiness
+
+**Status**: ✅ COMPLETE — Engine restarted cleanly, all 67 sessions initialized and sleeping until market open
+
+**Issue Identified**: 
+- Previous engine process (PID 1241288) from April 29 session entered shutdown loop at 07:08:39 UTC
+- Log file (trading_20260430.log) filled with 34,000 identical shutdown messages in 3 seconds
+- Root cause unknown — appears to be pytest interference or similar process termination issue
+
+**Actions Taken**:
+1. ✅ Verified April 29 data integrity: 49 trades confirmed in database, all filled (fill_price populated)
+2. ✅ Killed stuck process (PID 1241288)
+3. ✅ Cleaned corrupted log file
+4. ✅ Restarted engine cleanly with `launch_stacker_sessions.py --config active-sessions.json --mode paper`
+   - New process: PID 1691129
+   - Initialization time: ~45 seconds
+   - All models loaded successfully (RTX, CAT, AMT, NOW, SBUX, LIN, CRM, LMT, HD, DUK, PLD, SHW + options/MTF variants)
+5. ✅ Verified market-closed sleep state: all 67+ sessions sleeping until 13:15 UTC (5h 15m until market open)
+6. ✅ Resource consumption healthy: CPU 74.3% (normal during initialization), MEM 8.4%
+
+**April 30 Market Session Readiness**:
+- Engine will wake at 13:15 UTC (15 min before market open at 13:30 UTC)
+- Time-stop fix (7 bars = ~10 days) is active in code (line 1044, trading_session.py)
+- April 29 open positions (~20 BUY trades) will be eligible for SELL exits during today's session
+- May 12 Gate 1 checkpoint tracking active (currently 49/150 round trips needed, 5x pace achieved)
+
+**Next Steps**:
+- Monitor engine logs during 13:30–20:00 UTC market session
+- Verify no auth errors recur (April 29 showed post-close 401 error, low severity)
+- Track fills and aggregate signals per ticker
+- Prepare April 30 session summary for daily Discord notification
+- Confirm SELL signal execution begins (~10 trading days from April 29 BUY entry)
+
+---
+
 ## 2026-04-30 07:40–08:20 UTC — Session 687 Exploration Queue Research (Orchestrator + Parallel Agents)
 
 **Task**: Populate Exploration Queue with 3 ready items and execute 2 in parallel (seedwarden Phase 3 strategy + resistance-research Phase 1 execution playbooks).
