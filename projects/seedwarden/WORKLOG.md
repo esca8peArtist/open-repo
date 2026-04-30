@@ -4,6 +4,37 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session Item 27 — 2026-04-30 — Phase 3 Kickstarter Campaign Architecture (EXPLORATION_QUEUE Item 27)
+
+**Task**: Produce four production-ready Phase 3 Kickstarter planning documents covering campaign architecture, hardware scaling, financial projections, and backer community engagement.
+
+**Context read before writing**: PHASE2_TO_PHASE3_TRANSITION.md, phase-3-strategic-deep-dive.md, phase-3-product-expansion-roadmap.md, financial-sustainability-model.md, PHASE3_ROADMAP_INDEX.md, WORKLOG.md (recent sessions).
+
+**Research conducted**: Kickstarter reward tier psychology and pricing best practices; hardware campaign manufacturing delays and risk mitigation; injection molding vs. print-on-demand transition decision frameworks; backer community management post-campaign; hardware COGS and break-even unit economics; Kickstarter stretch goal sequencing; GreenStalk vertical garden campaign case study; Garden Stack case study; crowdfunding fulfillment pitfalls.
+
+### Files produced
+
+| File | Words (approx.) | Purpose |
+|---|---|---|
+| `phase-3-kickstarter-campaign.md` | ~3,500 | Campaign story arc, tier structure (Standard/Deluxe/Founder), stretch goal sequence, manufacturing timeline, risk mitigation |
+| `phase-3-hardware-scaling-roadmap.md` | ~3,000 | Injection molding transition, multi-SKU production, supplier coordination, inventory management, regional fulfillment |
+| `phase-3-financial-projections.md` | ~2,500 | Break-even per tier, COGS build-up, 24-month P&L in three scenarios, sensitivity analysis |
+| `phase-3-community-engagement-playbook.md` | ~2,000 | Post-campaign communication architecture, backer-to-subscriber conversion, feedback integration, repeat purchase mechanics |
+
+**Key decisions documented in the documents:**
+- Campaign primary goal: $30,000 (MOQ threshold for injection-molded lid tooling)
+- Tier pricing: Standard $79 / Deluxe $149 / Founder $299 (100-unit cap)
+- Campaign launch window: January 15 – February 14, 2027 (peak planning season)
+- Email list minimum before launch: 800 subscribers (required for Day 1 algorithmic momentum)
+- All stretch goals pre-scoped before campaign launch — no mid-campaign improvisation
+- Post-campaign retail simplifies from region-specific to national editions
+- Seed COGS sourced from Seed Savers Exchange, Baker Creek, Southern Exposure (quotes from all three before MOQ order)
+- Annual Seed Collection (10 new varieties, $29) as primary repeat purchase mechanic for Year 2
+
+**No conflicting information found** between this work and the existing Phase 3 roadmap documents. All tier pricing, cohort targeting, and timeline dates are consistent with the digital expansion plan.
+
+---
+
 ## Session 686 — 2026-04-30 — Phase 2 Track B: Stock Image Sourcing Sprints (Clusters D and E) + Cluster C Props Plan
 
 **Task**: Execute Cluster D stock image sourcing sprint (8 images, 4 products), Cluster E Wikimedia sourcing (2 images, 1 product), and create Cluster C props acquisition plan.
