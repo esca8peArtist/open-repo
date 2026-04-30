@@ -1,7 +1,7 @@
 ---
 title: "Domain 25: FISA Section 702 — April 2026 Reauthorization Outcome"
-date: 2026-04-29
-session: 652
+date: 2026-04-30
+session: 686
 project: resistance-research
 type: domain-update
 parent-tracker: surveillance-tracking.md
@@ -10,7 +10,8 @@ parent-tracker: surveillance-tracking.md
 # Domain 25: FISA Section 702 — April 2026 Deadline Outcome
 
 *Written: April 29, 2026 (Session 652)*
-*Status: Pre-vote confirmed / post-vote pending Senate action*
+*Updated: April 30, 2026 (Session 686) — House passage confirmed (235-191); Senate position divergence documented*
+*Status: House passed 3-year warrantless renewal; Senate pursuing short-term extension delay strategy*
 *Research integrity note: An earlier session (Session 573) erroneously wrote a "confirmed" 2026 outcome that was actually the 2024 RISAA (60-34 Senate, two-year extension). Session 608 corrected the record. This document reflects the actual April 2026 legislative trajectory based on confirmed reporting through April 29, 2026.*
 
 ---
@@ -75,17 +76,40 @@ The House voted 215-210 on the procedural rule opening floor debate — a party-
 
 ---
 
-## Section 3: Most Probable Outcome and Confirmed Implications
+## Section 3: Confirmed Outcome — House Passes Three-Year Extension; Senate Position Diverges
 
-### Most Probable Outcome: Three-Year Passage, No Warrant Requirement
+### The April 29-30 Legislative Sequence: Divergence Between Chambers
 
-Based on the April 29 procedural rule vote clearing 215-210 after being held open for two hours:
-- Final House passage of S. 1318 is the most probable outcome
-- Senate passage likely to follow under Thune's filed cloture (three-year companion bill)
-- Presidential signature is expected (Trump's SAVE Act condition was dropped; he had demanded a longer extension)
-- New Section 702 expiration date: April 30, 2029
+**April 29 — House Floor Passage CONFIRMED**
+- House passed S. 1318 (Foreign Intelligence Accountability Act) on April 29, 2026 by a vote of **235-191**
+- Vote breakdown: 207 Republicans + 28 Democrats in support; 159 Democrats + 32 Republicans against
+- The three-year warrantless renewal passed with bipartisan support but also bipartisan opposition
+- Passage included no warrant requirement for U.S. person queries; commercial data broker loophole remains open
+- CBDC ban attached as appendage to secure Freedom Caucus votes; Freedom Caucus members who flipped (Massie, Norman, Self) voted no on final passage despite CBDC inclusion, confirming they continue to oppose on Fourth Amendment grounds
+- Trump expected to sign; administration had dropped SAVE Act attachment, indicating acceptance of three-year timeline
 
-**Confirmation required:** Exact House final passage vote count; Senate vote timing and count; date of presidential signature.
+**April 30 — Senate Position: Short-Term Extension Preferred, Not Three-Year**
+- Senate Majority Leader Thune, who had filed cloture for a three-year companion bill, reversed course as of April 30
+- New Senate position: Instead of passing the three-year extension, Senate leadership is drafting another short-term extension (10-30 days) to allow for continued negotiations with the House
+- Rationale per Senate reporting: The Senate recognized that a three-year extension passes with bipartisan opposition (28 D's support, 159 D's oppose), indicating that a majority of Democrats strongly oppose the no-warrant-requirement framework — making the bill vulnerable to 2026 electoral politics
+- The Senate's short-term extension strategy aims to delay the decision past the 2026 election cycle
+- Presidential signature expected on whatever vehicle Senate produces, given Trump's statement that he wants "at least 18 months to 3 years"
+
+### Outcome Summary: Three-Year Warrantless Renewal in House; Senate Holdout for Delay
+
+**Confirmed:**
+- House: 235-191 passage of three-year warrantless renewal (S. 1318)
+- Senate: Preparing alternative short-term extension vehicle
+- Result: Divided government produces either (A) conference committee reconciling chambers post-April 30 midnight, or (B) short-term extension to May 30-June 30 while chambers negotiate
+
+**Civil Liberties Community Assessment:**
+- EFF, ACLU, and Brennan Center view the April 29 House outcome as a structural defeat regardless of Senate outcome
+- The three-year extension (whether passed now or after Senate delay-and-reconcile) represents the definitive closure of the warrant-requirement reform window until 2029
+- Next meaningful legislative reform opportunity: April 2029 reauthorization
+
+**Implications for Distribution Timeline:**
+- This outcome (divided chambers, Senate delay) confirms the distribution framework's April 28-29 assessment was accurate through April 30
+- Domain 25 is current through April 30; framework distribution can proceed with confirmed legislative context
 
 ### If Lapse Occurred (Second-Most-Probable Scenario)
 If the Freedom Caucus bloc held and the floor vote failed, or the Senate did not act before April 30 midnight:
