@@ -9,23 +9,25 @@ path_compatibility: "Identical across Path A / Path A+37 / Path B through Block 
 # Phase 1 Execution Checklist
 
 **Trigger**: User announces path decision (A / A+37 / B)
-**Estimated time to Batch 1 emails sent**: 3.0–4.5 hours from decision
-**Who executes**: User (email sending, Gist creation, personalization sign-off); agent available for content support on request
+**Current status (Session 685)**: ✅ All 6 Gists created and public (Session 678). User action: approve path + make URL replacements in templates (30 min). Then orchestrator executes Phase 1 (3.5–4.5 hours autonomous).
+**Estimated time to Batch 1 emails sent**: 30 min (user setup) + 3.5–4.5 hours (orchestrator execution) = 4–5 hours total from decision
+**Who executes**: Orchestrator (email sending, contact verification, response monitoring); user (path decision + URL replacement + email review before send)
 
 ---
 
 ## Pre-Conditions (verify before starting clock)
 
-- [ ] `democratic-renewal-proposal.md` — file exists, no uncommitted edits outstanding
-- [ ] `democratic-renewal-executive-summary.md` — file exists, production-ready
-- [ ] `litigation-tracker-2026.md` — file exists
-- [ ] `first-amendment-suppression.md` — file exists
-- [ ] `environmental-rollbacks-tracker.md` — file exists
-- [ ] `police-brutality-consent-decree-tracker.md` — file exists
-- [ ] GitHub account is logged in at gist.github.com
-- [ ] Email client is open and sending-capable
-- [ ] `PHASE_1_EMAIL_TEMPLATES.md` is open (built this session — contains all five Batch 1 drafts)
-- [ ] `PHASE_1_CONTACT_VERIFICATION.json` is open (built this session — contains verified contact data)
+**Infrastructure** — all complete:
+- [x] All 6 Gists created and public (Session 678):
+  1. https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 (Proposal)
+  2. https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4 (Executive Summary)
+  3. https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0 (Litigation Tracker)
+  4. https://gist.github.com/esca8peArtist/10d0a86e386e6c3c11c3830295a6503c (First Amendment)
+  5. https://gist.github.com/esca8peArtist/87e2bdb931b77480e56a08044c567bc4 (Environmental Rollbacks)
+  6. https://gist.github.com/esca8peArtist/1f5cb28527c98d12526c14302c725731 (Police Consent Decrees)
+- [x] Contacts verified (150+ across all paths, no blank emails)
+- [x] Templates ready (PHASE_1_EMAIL_TEMPLATES.md)
+- [x] Tracker ready (PHASE_1_CONTACT_VERIFICATION.json)
 
 **Block 0 status: COMPLETE (confirmed current session)**:
 Domain 1 Section 4.2 FISA framing was corrected in Session 658. The section now opens with a full "Accuracy note (updated April 29, 2026, Session 658)" block documenting the House passage 235-191 and corrected outcome status. No correction needed before Gist creation — proceed directly to Block 1.
@@ -45,59 +47,21 @@ Domain 1 Section 4.2 FISA framing was corrected in Session 658. The section now 
 
 ---
 
-## Block 1: Gist Creation (30–45 minutes)
+## Block 1: Gist Creation — ✅ COMPLETE (Session 678)
 
-**Who**: User
-**Dependency**: Block 0 complete
-**Tool**: https://gist.github.com (account: esca8peArtist — the May Day Guide confirms this workflow works)
+**Status**: All 6 Gists already created and public (Session 678, verified Session 685)
 
-Create one public Gist per document. For each Gist:
-1. Go to gist.github.com → click "+" or "New gist"
-2. Paste the file name in the filename field (e.g., `democratic-renewal-proposal.md`)
-3. Paste the Markdown content (copy from local file)
-4. Set to "Public" (not Secret)
-5. Click "Create public gist"
-6. Copy the resulting URL — record it in the URL log below
+**Gist URLs** (ready for template integration):
+1. **Proposal**: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+2. **Executive Summary**: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
+3. **Litigation Tracker**: https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0
+4. **First Amendment Suppression**: https://gist.github.com/esca8peArtist/10d0a86e386e6c3c11c3830295a6503c
+5. **Environmental Rollbacks**: https://gist.github.com/esca8peArtist/87e2bdb931b77480e56a08044c567bc4
+6. **Police Consent Decrees**: https://gist.github.com/esca8peArtist/1f5cb28527c98d12526c14302c725731
 
-**Document 1: Full Proposal**
-- Local file: `projects/resistance-research/democratic-renewal-proposal.md`
-- Gist filename to use: `democratic-renewal-proposal.md`
-- URL recorded: `_______________________________________________`
-- Estimated Gist creation time: 8–10 minutes (large file)
+**User action required**: Copy these URLs into templates (see Block 2 below). Orchestrator will verify accessibility and handle template integration during Phase 1 execution.
 
-**Document 2: Executive Summary**
-- Local file: `projects/resistance-research/democratic-renewal-executive-summary.md`
-- Gist filename to use: `democratic-renewal-executive-summary.md`
-- URL recorded: `_______________________________________________`
-- Estimated Gist creation time: 3–4 minutes
-
-**Document 3: Litigation Tracker**
-- Local file: `projects/resistance-research/litigation-tracker-2026.md`
-- Gist filename to use: `litigation-tracker-2026.md`
-- URL recorded: `_______________________________________________`
-- Estimated Gist creation time: 5–6 minutes
-
-**Document 4: First Amendment Suppression Tracker**
-- Local file: `projects/resistance-research/first-amendment-suppression.md`
-- Gist filename to use: `first-amendment-suppression.md`
-- URL recorded: `_______________________________________________`
-- Estimated Gist creation time: 3–4 minutes
-
-**Document 5: Environmental Rollbacks Tracker**
-- Local file: `projects/resistance-research/environmental-rollbacks-tracker.md`
-- Gist filename to use: `environmental-rollbacks-tracker.md`
-- URL recorded: `_______________________________________________`
-- Estimated Gist creation time: 3–4 minutes
-
-**Document 6: Police Consent Decree Tracker**
-- Local file: `projects/resistance-research/police-brutality-consent-decree-tracker.md`
-- Gist filename to use: `police-brutality-consent-decree-tracker.md`
-- URL recorded: `_______________________________________________`
-- Estimated Gist creation time: 3–4 minutes
-
-**Path A+37 only — Document 7: Domain 37**
-- Local file: `projects/resistance-research/domains/domain-37-federal-executive-interference-2026-midterms.md`
-- Gist filename to use: `domain-37-federal-executive-interference-2026-midterms.md`
+**Time**: ✅ 0 minutes (already complete)
 - URL recorded: `_______________________________________________`
 - Estimated Gist creation time: 6–8 minutes (large file)
 
