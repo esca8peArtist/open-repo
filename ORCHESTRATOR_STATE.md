@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-30T03:15:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-30T04:35:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.1% (190,109 tokens) | All-models 59.4% | Reset in 117h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.1% (190,109 tokens) | All-models 61.5% | Reset in 115h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -64,42 +64,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-**Root cause**: `_poll_fill()` timed out without confirming fills, but code treated it as success and cleared idempotency guard. Next cycle would resubmit duplicate orders.
-
-**Fix**: 
-- Changed `_poll_fill()` return type from `float` → `(float, str)` to return both price AND final status
-- Only clear idempotency guard if order is confirmed filled/settled
-- If order still "pending_new" after polling, keep guard and return "buy_pending"/"sell_pending"
-- This prevents resubmission when polls timeout
-
-**Code changes**:
-- `src/trading/trading_session.py` lines 1355-1394: Updated `_poll_fill()` signature and logic
-- `src/trading/trading_session.py` lines 1149-1170: Updated BUY order handling for pending orders
-- `src/trading/trading_session.py` lines 1219-1243: Updated SELL order handling for pending orders
-- Tests: Updated all `_poll_fill` mocks to return tuple format (4 instances in test_execution_params_integration.py)
-
-**Impact**: Eliminates duplicate order submissions; orders now tracked accurately through fill confirmation process.
-
-### Issue 2: Missing Discord Alert Webhook URL
-**Root cause**: `.env` file only had `STOCKBOT_DISCORD_WEBHOOK_URL` but code expected both `STOCKBOT_DISCORD_WEBHOOK_URL` and `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL`. Critical alerts (drawdown, losses) were silently skipped.
-
-**Fix**: 
-- Added `STOCKBOT_DISCORD_ALERT_WEBHOOK_URL` to `.env` (using same webhook as daily summary for now)
-- Added documentation in `.env` explaining both webhooks and how to use separate channels if desired
-
-**Impact**: Critical Discord alerts now functional; can be customized with separate alert channel if needed.
-
-### Testing
-- All 20 tests in `test_execution_params_integration.py` pass ✅
-- Idempotency guard behavior verified in unit tests
-- New pending_new status handling tested
-
-### Database Sync Status
-- Fill confirmation now properly tracked: only recorded when status is "filled"
-- Pending orders retained in open_order_ids for next cycle
-- Next market session will verify fills actually recorded in stockbot.db
 
 **Next checkpoint**:
 - 2026-04-30 13:15 UTC: Verify engine restarts and monitoring resumes
 - 2026-04-30 20:00 UTC: Check Alpaca account for actual fill status on pending orders
 - Monitor stockbot.db for trade records matching Alpaca fills
+
+---
+
+## 2026-04-30 03:35 UTC — Orchestrator Session 677 — STOCKBOT HEALTH VERIFICATION + MONITORING BUG IDENTIFICATION
+
+**Status**: ✅ IN PROGRESS — Engine verified running; identified non-critical monitoring bug; awaiting May 12 checkpoint validation.
+
+**Stockbot Engine Status** ✅:
+- **Process**: Running (PID 1241288, 88:28 uptime since 2026-04-29 03:31 UTC)
+- **Database**: 49 filled trades confirmed April 29, all with correct fill_price + fill_time
+- **Network**: No 401/403 errors in recent logs; engine idle (market closed)
+- **Next event**: Market open 2026-04-30 13:15 UTC (9.9 hours from now)
+
+**Trade Database Verification**:
+```
+Filled trades: 49 (all from 2026-04-29 13:34-13:35 UTC market open)
+Sample trades: WMT BUY 78@$126.36, PG BUY 67@$148.37, AAPL BUY 36@$267.91, etc.
+Filled today (Apr 30): 0 (expected — market closed)
+Mode: PAPER (all trades properly tagged)
+```
+
+**Monitoring Bug Identified** (non-critical):
+- **Issue**: `paper_trading_monitor.py` script fails to find trades because they're recorded with `strategy_name='live_paper_sync'` instead of per-ticker names like `AAPL_h10_lgbm_ho`
+- **Impact**: Script outputs "No paper trades found" but trades ARE being recorded and executed correctly
+- **Root cause**: Trade recording pipeline isn't preserving per-ticker strategy names from active-sessions.json
+- **Severity**: LOW — doesn't affect trading functionality, only monitoring visibility
+- **Fix status**: Identified but deferred (low priority vs. continued monitoring through May 12 checkpoint)
+
+**Next Checkpoints** (from PROJECTS.md):
+1. **2026-04-30 13:15 UTC**: Market open (today) — verify engine detects market open, no auth errors
+2. **2026-05-01 to 2026-05-09**: Monitor SELL signal execution (expected ~10 trading days after BUY)
+3. **2026-05-12**: Gate 1 checkpoint validation (49 trades in ~3 days = 5x threshold pace)
+
+**No blocking issues identified**. Engine ready for continued monitoring through May 12 checkpoint.
