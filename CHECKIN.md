@@ -20,9 +20,28 @@
 - 🚫 **open-repo**: PR #1 awaiting review
 - ⏳ **off-grid-living**: Publication complete, awaiting social media execution
 
+**Seedwarden Competitive Analysis COMPLETE**:
+- ✅ **`competitor-landscape.md`** (3,800 words, committed `fd839bc`)
+- **Market findings**: Archetype C (substantive guides) has thin competition; three structural pricing gaps identified ($22–35 single guides, $35–55 bundles, regional content)
+- **Strategic recommendations**: Phase 1 — raise Native Plants Regional Guide to $18 min; Phase 2 — use lifestyle photography to defend premium pricing; Phase 3 — own regional keyword territory first (zero competition)
+- **Business value**: Phase 2/3 pricing and expansion roadmap locked in before Phase 1 launch
+
+**Session 681 Summary**:
+- **Time span**: 04:51 UTC (session start) → 05:15 UTC (current)
+- **Autonomous work completed**: 
+  1. ✅ resistance-research domain updates (domains 25 + 19f) verified committed
+  2. ✅ seedwarden competitive analysis complete with strategic pricing roadmap
+  3. ⏳ stockbot market open checkpoint preparation (13:30 UTC, ~8h away)
+- **Commits**: 3 (resistance-research domain verify, orchestration updates, seedwarden competitive analysis complete, PROJECTS.md update)
+- **Projects status**: resistance-research production-ready, seedwarden roadmap locked, stockbot monitoring verified, all unblocked work advancing
+
 **Immediate Next Actions**:
 - **2026-04-30 13:15 UTC**: Stockbot market open checkpoint (verify engine, trading, auth stability)
-- **User input required**: (1) resistance-research distribution path decision (A / A+37 / B), (2) seedwarden photo scheduling + Brand Kit setup, (3) mfg-farm test print confirmation
+- **User input required** (blocking further autonomous work):
+  1. **resistance-research**: Distribution path decision (A / A+37 / B) → Phase 1 launch
+  2. **seedwarden**: Photo shoot scheduling + Brand Kit setup decision → Track B execution
+  3. **mfg-farm**: Test print confirmation → launch prep advance
+  4. **open-repo**: External — awaiting PR #1 review/merge
 
 ---
 
