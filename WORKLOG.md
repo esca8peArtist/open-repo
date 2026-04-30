@@ -20203,3 +20203,59 @@ At 20:00 UTC: Execute Gate 1 Post-Market Analysis Framework.
 - Prepare for May 12 checkpoint validation
 
 ---
+
+---
+
+## 2026-04-30 11:19–11:35 UTC — Session 698 — Exploration Queue: Options Trading Strategy Research
+
+**Status**: COMPLETE — Research document ready for post-May-12 decision-making
+
+### stockbot: Options Trading Strategy Design & Profitability Analysis
+
+**Exploration Queue item executed** (ready when paper trading baseline established = May 12+)
+
+**Research scope**: 1,850 words, comprehensive options integration analysis
+
+**Key findings**:
+
+1. **Infrastructure assessment**: Options framework is 80% complete (Greeks manager, spread strategies, backtesting engine, dynamic risk model all production-ready). Missing: IV surface data pipeline, Alpaca options order execution wrapper.
+
+2. **Viable strategies by viability tier**:
+   - **HIGH**: Protective puts (downside insurance) + covered calls (income generation)
+   - **MEDIUM**: Iron condors (IV rank-based income)
+   - **LOW without IV surface**: Directional spreads (bull call, bear call, etc.)
+
+3. **Profitability constraints**:
+   - IV crush: options drop in value immediately if realized vol < implied vol
+   - Bid-ask spread: 4-5% of option premium vs. 0.003% for equities
+   - Capital efficiency: 4-8x leverage on options requires proportional risk management
+   - **Conclusion**: Options edge lower than equity edge; only viable as complementary hedging, not profit center
+
+4. **Integration roadmap** (post-May-12 decision tree):
+   - **Phase 1** (4 weeks): Protective puts for downside capping
+   - **Phase 2** (4 weeks): Covered calls for income on accumulated positions
+   - **Phase 3** (6-8 weeks): IV-based iron condors (requires IV surface data)
+
+5. **Go/no-go decision gate**:
+   - IF equity Gate 1 passes (≥150 fills) → Proceed to Phase 1
+   - IF equity Sharpe ≥0.8 → Proceed to Phase 2
+   - IF IV data available → Proceed to Phase 3
+
+**Deliverable**: `projects/stockbot/docs/options-trading-strategy-research.md` (committed to submodule, commit `638a296`)
+
+**Use case**: Informs capital allocation decision between (a) deepening equity stacker model, (b) layering hedging options overlay, (c) rebalancing to mixed equity+options portfolio
+
+---
+
+## 2026-04-30 13:30 UTC (SCHEDULED) — Session 698 — Stockbot Market Monitoring
+
+**Next scheduled action**: Market monitoring script execution at 13:30 UTC
+
+**Actions to take**:
+1. Run market monitoring script: `bash projects/stockbot/monitor_april_30_market.sh`
+2. Verify Discord webhook fires (market-open confirmation)
+3. Log fill count and status to WORKLOG.md after market close (20:00 UTC)
+4. Run post-market analysis framework at 20:00 UTC
+
+**Current status**: Engine running (PID from previous session 1241288), all 67 stacker sessions initialized and sleeping until market open.
+
