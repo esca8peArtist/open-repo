@@ -4,6 +4,67 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 05:20 UTC — Orchestrator Session 680 — RESISTANCE-RESEARCH APRIL 30 / MAY 1 CRISIS DOMAIN UPDATES + EXPLORATION QUEUE INITIALIZATION
+
+**Status**: ✅ COMPLETE — Resistance-research domain updates executed. Exploration Queue initialized with 3 new items. Framework current through May 1, 2026 for Phase 1 distribution.
+
+**Work Completed**:
+
+### Resistance-Research Crisis Domain Updates ✅
+
+**Exploration Item Executed**: April 30 / May 1, 2026 crisis tracking (IMMEDIATE priority, time-sensitive)
+
+**Domain-25 (FISA Section 702 Surveillance)**:
+- **Research**: Verified House vote outcome (235-191, April 29) + Senate status through April 30
+- **Findings**: 
+  - House passed WITHOUT warrant requirement (confirmed final)
+  - Senate vote NOT yet confirmed in published sources (pending May 1 cloture vote)
+  - Two probable Senate outcomes: (1) 45-day short-term extension (likely), (2) S.4344 three-year extension (both no warrant requirement)
+- **Update**: Added Section 10 ("Session 680 Update — April 30 / May 1, 2026 Outcome")
+  - 10.1: Senate status through April 30, two probable outcomes documented with legislative sources
+  - 10.2: What House vote confirms about final law (no warrant requirement confirmed regardless of Senate path)
+  - 10.3: Civil liberties defeat analysis and 2029 reform window implications
+- **Citations**: All verified against NPR, Axios, Political Wire, Senate Daily Press, House Rules Committee
+- **Status**: Ready for Phase 1 distribution; flagged for follow-up when Senate vote confirmed
+
+**Domain-19f (War Powers Reform)**:
+- **Status**: Section 18 already complete (verified in prior Session 680 execution)
+- **Outcome**: May 1 deadline non-compliance confirmed
+  - Trump: "Don't rush me" — no withdrawal order issued
+  - Naval blockade continues (ongoing hostilities)
+  - WPR enforcement lawsuit not filed as deadline-day action
+  - Iran war cost: $25 billion (Pentagon testimony April 29); 15 U.S. killed, 538 wounded
+  - Vance doctrine completes WPR elimination framework across Venezuela (Prong 1) + Iran (Prong 2)
+- **Status**: Current and ready for Phase 1 distribution
+
+**Overall Impact**: Resistance-research framework verified current through May 1, 2026. All 35 domains production-ready for Phase 1 distribution. Awaiting only user distribution path decision (A / A+37 / B).
+
+### Exploration Queue Initialization ✅
+
+**Added 3 new exploration items to PROJECTS.md**:
+
+1. **IMMEDIATE: Resistance-Research April 30 / May 1 2026 Crisis Domain Updates** — ✅ COMPLETED THIS SESSION
+   - Business value: Framework currency through Phase 1 launch window
+   - Scope: 2-3 hours research + domain writing
+   
+2. **Stockbot Advanced Risk Management Framework Research** (deferred to May 12+)
+   - Portfolio-level correlation-based hedging, VaR, scenario analysis, stress testing
+   - Deliverable: `risk-management-framework.md` (design doc for Gate 3 improvements)
+   - Business value: Prepares roadmap for risk enhancements post-Gate-1
+
+3. **Seedwarden Competitive Landscape & Pricing Strategy Analysis** (ready when: pre-Phase-1 launch or post-week-2 conversion data)
+   - Top 20 Etsy competitors, pricing analysis, bestseller patterns, market gaps
+   - Deliverable: `competitor-landscape.md` (informs Phase 2/3 strategy)
+   - Business value: Competitive positioning for Phase 2 expansion
+
+**Queue Status**: Populated for future sessions; allows meaningful autonomous work availability even during user-decision-blocking periods.
+
+**Commits**: 
+- feat(resistance-research): cb1ab6d — April 30/May 1 crisis domain updates
+- chore(orchestrator): domain-25 Section 10 verified; exploration queue initialized
+
+---
+
 ## 2026-04-30 04:55 UTC — Orchestrator Session 679 — STOCKBOT MONITORING BUG FIX + SEEDWARDEN TRACK B PRODUCTION SPECS
 
 **Status**: ✅ COMPLETE — Monitoring bug fixed and verified. Seedwarden Track B production documents created. No new blocks.
