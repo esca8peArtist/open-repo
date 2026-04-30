@@ -4,6 +4,35 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 669 — 2026-04-30 — Phase 2 Track B Production Documents (Photo Shoot, Zone Card Timeline, Bundles, Content Calendar, Phase 3 Readiness)
+
+**Task**: Advance Phase 2 Track B deliverables. No blockers. Five production documents created covering: lifestyle photo shoot planning, zone card production timeline, bundle pricing strategy, seasonal content calendar, and Phase 3 option readiness checklists.
+
+**Context read**: LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, ZONE_QUICKSTART_CARD_SPEC.md, phase-2-social-content-calendar-60day.md, financial-sustainability-model.md, customer-cohort-analysis-framework.md, bundle-listings.md, phase-3-product-development-strategy.md, PHASE3_ROADMAP_INDEX.md, phase-3-decision-framework.md, etsy-store-copy.md.
+
+**Files produced**:
+
+- `PHOTO_SHOOT_PLANNING.md` (~2,100 words): Complete shot list for all 15 physical product lifestyle photos across Clusters A, B, and C. Per-product scene descriptions for Slot 4 (flat lay or scene-based) and Slot 5 (in-use detail). Includes technical specs (2400px, sRGB, JPEG 88–90%), location and backdrop guidance, master props list by cluster, batch shooting schedule (3 sessions), styling guidelines with per-cluster tone direction, and post-shoot file handling convention. Research-grounded: Etsy 5+ image rule (20–40% conversion lift), lifestyle shots 3x better than flat lays alone for digital products, authenticity priority for craft/artisan sellers.
+
+- `ZONE_CARD_PRODUCTION_TIMELINE.md` (~1,600 words): Week-by-week implementation plan for building all 8 zone PDFs in Canva. Week 0 covers the 30-minute Brand Kit setup (10-color palette, 2 fonts, 5 icons, logo — full checklist). Weeks 1–3 cover the master template build and zone-by-zone production sequence (Zones 5 and 6 first as median zones, then cool zones 3–4, warm zones 7–8, hot zones 9–10). Week 4 covers Kit email delivery setup: PDF upload, zone-selection sign-up form, 8 welcome email automations, landing page. Launch readiness checklist of 14 items. Monthly "This Month" refresh protocol (20 min/month). Total: ~10 hours across 4 weeks.
+
+- `PHASE_2_BUNDLE_STRATEGY.md` (~1,600 words): Three Phase 2 bundle tests with pricing analysis. Bundle 1: Spring Forager Bundle (Wild Edibles + Zone Card, $22). Bundle 2: Forager–Zone cross-sell at $22 vs. $25 individual total. Bundle 3: Harvest Season Bundle (all three preservation guides, $28, 26% discount). Pricing psychology section: three discount depth zones (under 15% = convenience, 15–25% = compelling, 26–35% = urgency); dollar savings framing outperforms percentage framing on Etsy; "usually $38, this bundle is $28" is the highest-converting format. Sequential A/B test plan for Months 1–3. Per-cohort bundle appeal table: forager vs. homesteader vs. prepper vs. gift buyer.
+
+- `PHASE_2_SEASONAL_CONTENT_CALENDAR.md` (~2,100 words): 6-month rolling calendar (May–October 2026). Per-month structure: lead product, supporting products, social content pillars (3–4 per month with specific hooks and formats), email sequence with subject lines and CTAs. Covers all 13 nurture emails mapped to dates (Day 5 through Day 157). Zone-based email segmentation starting Month 5. Seasonal cohort activation calendar: homesteader + forager (May–June), all cohorts (July–August), homesteader + prepper (September–October), prepper + gift buyer (October). Gift buyer activation timeline (October seeds, November–December peak). Phase 3 survey email in October (Email 13).
+
+- `PHASE_3_READINESS_CHECKLIST.md` (~1,200 words): Pre-production checklists for all four Phase 3 options. Universal section: 16 pre-launch checks covering Etsy account status, analytics, email platform, and content assets. Option A (Conservative): regional listings only, 19-hour scope, launch calendar for July 1–14. Option B (Standard): full 12-product Wave 1 and 2 content specs, designer brief status, Canva confirmation. Option C (Aggressive): 12-week compressed calendar with hourly breakdown by week, 10+ hrs/week requirement, optional Pinterest ads budget. Option D (Focused): 4 cohort-specific tracks with product sequences for forager-dominant, homesteader-dominant, prepper-dominant, and gift-dominant scenarios. Production time summary table for all options.
+
+**Image downloads this session**: 0
+
+**Key decisions documented**:
+1. Photo shoot batch order: Cluster A first (8 products, 16 shots — highest complexity), B second, C third. Total 5–7.5 hours shooting across 3 sessions.
+2. Zone Card build order: Zones 5 and 6 first (master template + median zone content), then cool (3–4), warm (7–8), hot (9–10). Prevents zone-band color errors propagating.
+3. Bundle discount floors: 15% minimum for any bundle to avoid "convenience-only" perception. Harvest Season Bundle at 26% ($38→$28) is the deepest discount and the seasonal anchor for August.
+4. Phase 3 Option D forager track is the fastest to execute (60 hours, ~$0–50 out-of-pocket) and produces the highest per-hour ROI if forager cohort dominates Phase 1 data.
+5. Email 13 (Month 6, Day 157) is a survey email, not a product email — it collects demand data to validate the Phase 3 option at the exact moment the Phase 3 go/no-go decision is needed.
+
+---
+
 ## Session 668 — 2026-04-30 — Phase 3 Product Development Strategy (Exploration Queue Item 11)
 
 **Task**: Build comprehensive Phase 3 Product Development Strategy document — 6-section, ~7,200 words — integrating findings from ITEM9 (incl. Item 21 Appendix C), ITEM18, and the existing Phase 3 roadmap docs.
