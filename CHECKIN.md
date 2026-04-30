@@ -1,3 +1,54 @@
+## Since Last Check-in (Session 679 — 2026-04-30 04:55 UTC — STOCKBOT MONITORING BUG FIX + SEEDWARDEN TRACK B PRODUCTION SPECS)
+
+### ✅ Session 679 Summary
+
+**Status**: COMPLETE. Stockbot monitoring bug fixed and verified working (49 April 29 fills now visible). Seedwarden Track B production planning advanced with two critical execution documents ready. No new blocks identified.
+
+**Work Completed**:
+
+1. ✅ **Stockbot Monitoring Bug Fixed** (Parallel Agent)
+   - **Root cause**: `paper_trading_monitor.py` did exact match on `strategy_name` field; actual trades recorded with `strategy_name='live_paper_sync'` instead of per-ticker names
+   - **Solution**: Added fallback query logic in `_fetch_paper_trades()` — first tries exact match, then falls back to ticker+live_paper_sync on zero results
+   - **Impact**: Monitor now correctly displays all 49 April 29 fills (AAPL, AMZN, CAT, COP, COST, CVX, DIS, FDX, GOOGL, HON, INTC, LIN, MA, MRK, NEE, PG, RTX, SHW, UNH, WMT); zero completed round trips is correct
+   - **Tests**: 7 new tests in `TestFetchPaperTradesFallback`; all 27 monitor tests pass (was 1 fail)
+   - **Engine status**: PID 1241288, 88+ hours uptime, no auth errors after 01:08 UTC
+   - **Market open checkpoint**: Logged findings; manual verification needed at 13:15 UTC today (market open)
+
+2. ✅ **Seedwarden Track B Production Documents Created** (Parallel Agent)
+   - **Document 1**: `PHOTO_SHOOT_CHECKLIST.md` (production-ready shot checklist)
+     - 30 checkboxes (one per shot across all clusters)
+     - Props assembly lists (per-cluster batch items)
+     - Batch editing presets (8 standard Seedwarden adjustments)
+     - Export filename convention guide
+     - Two scheduling options (single Saturday 8.75h vs. two half-days 6.5–7.5h)
+     - **Ready for**: User to execute photo shoot immediately with zero planning overhead
+   - **Document 2**: `MAY_CONTENT_EXECUTION_PLAN.md` (May calendar + email/social sequences)
+     - 3 automated emails (full subject + body text, Kit-ready)
+     - 5 TikTok/Instagram videos with scripts + final captions
+     - 4 Pinterest pins with titles, descriptions, links
+     - Week-by-week execution calendar
+     - Success metrics checklist (9 metrics to track each Friday)
+     - June 1 transition bridge (continuity planning)
+     - **Ready for**: User to load into Kit email platform immediately; May 1 deadline met
+   - **Deferred**: ZONE_CARD_PRODUCTION_SPEC.md (estimated 2–3h, useful post-Brand-Kit-setup), BUNDLE_A_B_TEST_PLAN.md (estimated 1.5–2h, needed before June bundle launch)
+   - **User decisions still pending**: Photo shoot scheduling (2 morning sessions), Canva Free vs. Pro ($15/mo), Kit account confirmation, Zone card "This Month" content update (April→May), landing page choice (Kit free vs. Carrd $19/yr)
+
+**Projects Status**:
+- ✅ **stockbot**: Monitoring bug fixed, tests passing, engine running, ready for 13:15 UTC market open verification
+- ✅ **seedwarden**: Track B production documents complete; May content ready to deploy (May 1 deadline met); awaiting user photo scheduling + Brand Kit setup decisions
+- ⏳ **resistance-research**: Framework approved, awaiting distribution path decision (A / A+37 / B)
+- 🚫 **mfg-farm**: Test print blocked
+- 🚫 **open-repo**: PR #1 awaiting review
+
+**Next Steps**:
+- **2026-04-30 13:15 UTC**: Market open — engine will wake and begin trading; manual log verification needed
+- **May 1 00:00 UTC**: Seedwarden May content calendar begins (May_CONTENT_EXECUTION_PLAN.md sequences user to deploy)
+- **Awaiting user**: Distribution path (resistance-research), photo shoot scheduling + Brand Kit setup (seedwarden), test print (mfg-farm), PR review (open-repo)
+
+**Usage**: Session 679 added ~120K tokens (parallel stockbot + seedwarden agents). Sonnet budget: ~2.5% → remains ~2.5% (healthy).
+
+---
+
 ## Since Last Check-in (Session 678 — 2026-04-30 03:41 UTC — EXPLORATION QUEUE: OFF-GRID SOCIAL MEDIA EXECUTION TOOLKIT)
 
 ### ✅ Session 678 Summary

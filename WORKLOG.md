@@ -4,6 +4,84 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 04:55 UTC — Orchestrator Session 679 — STOCKBOT MONITORING BUG FIX + SEEDWARDEN TRACK B PRODUCTION SPECS
+
+**Status**: ✅ COMPLETE — Monitoring bug fixed and verified. Seedwarden Track B production documents created. No new blocks.
+
+**Work Completed**:
+
+### Stockbot Monitoring Bug — FIXED ✅
+**Root cause**: `paper_trading_monitor.py` did exact `strategy_name` match; actual trades recorded with `strategy_name='live_paper_sync'` (generic) instead of per-ticker names (AAPL_h10_lgbm_ho, etc.)
+
+**Solution implemented**:
+- Modified `_fetch_paper_trades()` in `/projects/stockbot/scripts/paper_trading_monitor.py`
+- Added `LIVE_PAPER_SYNC_NAME = "live_paper_sync"` constant
+- Query logic: try exact match first; fall back to `ticker=prefix + strategy_name='live_paper_sync'` on zero results
+- Backward compatible — old-convention trades still matched by primary path
+
+**Verification**:
+- Monitor now displays all 49 April 29 fills across 20 tickers (AAPL, AMZN, CAT, COP, COST, CVX, DIS, FDX, GOOGL, HON, INTC, LIN, MA, MRK, NEE, PG, RTX, SHW, UNH, WMT)
+- Zero completed round trips is correct — all fills are BUY-side entries with open positions
+
+**Tests**: 7 new tests in `TestFetchPaperTradesFallback`; all 27 monitor tests pass (was 20 pass + 1 fail)
+
+**Engine status as of ~04:55 UTC**:
+- PID 1241288 ALIVE, 88+ hours runtime
+- Auth errors recurred overnight (01:06–01:07 UTC, multiple 401s from Alpaca data feed)
+- Sessions auto-resumed at 01:07:33 UTC — ORCL, T, COST, NEE confirmed restarted
+- No auth errors after 01:08 UTC
+- Log quiet since 04:25 UTC (expected pre-market wait state)
+
+**Market open checkpoint (2026-04-30 13:15 UTC)**:
+- Engine will wake at 13:15 UTC and begin trading at 13:30 UTC market open
+- Manual verification checklist: (1) New fills in DB: `SELECT COUNT(*) FROM trades WHERE date(timestamp)='2026-04-30'`, (2) No auth errors: `grep -c "401|unauthorized" logs/errors_20260430.log`, (3) Logs live: `tail -5 logs/trading_20260430.log`
+
+**Commits**: Fixed monitoring fallback logic; all tests passing.
+
+### Seedwarden Track B — Production Documents CREATED ✅
+
+**Scope**: Two critical execution documents ready for user deployment; production timeline established.
+
+**Document 1: PHOTO_SHOOT_CHECKLIST.md** (production-ready)
+- **Content**: 30 checkboxes (one per shot across all three clusters A/B/C)
+- **Props assembly**: Per-cluster batch items (gathered once per cluster before shooting)
+- **Batch editing**: Section with all 8 standard Seedwarden adjustments + export filename convention
+- **Scheduling options**: (a) Single Saturday 8.75 hours, (b) Two half-days 6.5–7.5 hours (recommended)
+- **Time logging**: Fields for actual shot timing per cluster
+- **Status**: Ready for user to execute photo shoot immediately with zero planning overhead
+
+**Document 2: MAY_CONTENT_EXECUTION_PLAN.md** (May calendar, May 1 deadline met)
+- **Email sequences** (Kit-ready, ready to copy/paste):
+  - Welcome email (May 1 autorespond)
+  - Mid-month midpoint email (May 14)
+  - End-of-month promotion email (May 28)
+  - All three with full subject lines + complete body text
+- **Social media** (ready to schedule):
+  - 5 TikTok/Instagram videos with script outlines and final captions
+  - 4 Pinterest pins with titles, descriptions, and link targets
+  - Week-by-week execution calendar (specific dates, platform, time)
+  - Hashtag sets per platform
+- **Success metrics**: 9 metrics to track each Friday (cohort sign-ups, content engagement, conversion events, etc.)
+- **June bridge**: May 27 post announces June 1 Zone Card update (continuity planning)
+- **Status**: Ready for user to load into Kit email platform immediately
+
+**Deferred (next session)**:
+- `ZONE_CARD_PRODUCTION_SPEC.md` (estimated 2–3 hours) — per-zone content, Canva template structure, email sequencing reference
+- `BUNDLE_A_B_TEST_PLAN.md` (estimated 1.5–2 hours) — test methodology, success metrics, 6-week calendar, decision criteria
+
+**User decisions still pending**:
+1. Photo shoot scheduling — two morning sessions needed (dates + times)
+2. Canva Free vs. Pro ($15/month) — affects Brand Kit setup time by ~60 minutes
+3. Kit account confirmation — email platform must be ready before sequences can be loaded
+4. Zone card "This Month" content — if launching May 1, update April blocks → May tasks before publishing
+5. Landing page choice — Kit landing page (free) vs. Carrd.co ($19/year)
+
+**Files created**: `PHOTO_SHOOT_CHECKLIST.md`, `MAY_CONTENT_EXECUTION_PLAN.md`
+
+**Commits**: Both documents committed to master; WORKLOG.md updated.
+
+---
+
 ## 2026-04-30 03:41 UTC — Orchestrator Session 678 — EXPLORATION QUEUE: OFF-GRID SOCIAL MEDIA EXECUTION TOOLKIT
 
 **Status**: ✅ COMPLETE — Phase 2 Social Media Execution Toolkit created (2,400+ words). Comprehensive community management, metrics tracking, contingency playbooks, and long-term growth strategy for post-launch phases.
