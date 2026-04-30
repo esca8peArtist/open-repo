@@ -4,6 +4,49 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 684 production agent — 2026-04-30 — Phase 2 Track B: Bundle Testing Infrastructure
+
+**Task**: Build the data collection and decision infrastructure for the May–July 2026 bundle tests. BUNDLE_A_B_TEST_PLAN.md was complete but lacked the operational layer needed to execute May 1. Three files produced.
+
+**Context read**: BUNDLE_A_B_TEST_PLAN.md (full), ZONE_CARD_PRODUCTION_TIMELINE.md (full), PHASE_2_SEASONAL_CONTENT_CALENDAR.md (full), ZONE_QUICKSTART_CARD_SPEC.md (Part 1–4), WORKLOG.md (Sessions 683, 672, 671, 670).
+
+**Files produced**:
+
+- `BUNDLE_TEST_DATA.csv` — Pre-populated tracking spreadsheet for the full May–July test window. 35 rows covering: April 21–27 pre-test baseline (both individual products), all four May tracking weeks for the Spring Forager Bundle test (bundle + two individual products per week), all four June tracking weeks for Harvest Season Bundle seasonal tracking (bundle + three preservation products per week), and two July fortnight periods for the pricing test ($28 control and $25 test). Columns: Week_Start, Week_End, Phase, Test_Name, Listing_Name, SKU, Variant, Impressions, Views, Clicks, Conversions, Revenue, AOV, Conversion_Rate_Pct, Notes. All data fields blank for user to fill — structure and row sequence are pre-built so the user never has to set up the spreadsheet, only fill it.
+
+- `BUNDLE_TEST_TRACKING.md` (~1,400 words) — Weekly 12–18 minute data collection procedure. Covers: step-by-step Etsy Stats panel navigation, which six values to capture per listing per week, how to calculate AOV from raw values, which listings to track by month (table), how to enter data into the CSV, the weekly cannibalization check formula (individual product ratio against baseline), known Etsy analytics limitations with workarounds (four documented: no per-listing CSV export, visits-based conversion rate, 24–48 hour data lag, no returning-buyer data per listing). Manual log template for weekly narrative notes. Monthly data summary template for end-of-month handoff to BUNDLE_TEST_ANALYSIS.md.
+
+- `BUNDLE_TEST_ANALYSIS.md` (~2,000 words) — Decision framework across five named gates (Gate 0 through Gate 4). Gate 0: May 1 listing sanity check (6 items). Gate 1: May 8 early cannibalization check with decision rule table and natural variance note. Gate 2: June 1 post-test decision tree with three named outcomes (Success, Ambiguous, Failure) — each outcome has an exact next action, not a vague recommendation. Gate 3: July 1 seasonal demand validation with normalization formula and three-tier success threshold (30%/40%/50% depending on June result). Gate 4: August 1 pricing decision with unit normalization for unequal test periods and three named outcomes. Catastrophic failure protocol (four triggers, five-step response). Common misinterpretations section (four documented: small-number variance, impressions vs. views, seasonal traffic shifts, unequal period comparison). Phase 2 Bundle Test Results Summary template for August 1 WORKLOG entry.
+
+**Zone Card and Seasonal Calendar assessment** (Priority 2 and 3 review):
+
+- ZONE_CARD_PRODUCTION_TIMELINE.md: Assessed complete. Style guide is detailed (10 colors, 2 fonts, 5 icons, all with hex values and Canva field names). Zone personalization logic is documented — subscriber selects zone via Kit form dropdown at sign-up; Kit delivers matching PDF by automation rule. Email delivery integration is fully documented in Week 4. No gaps requiring new files.
+
+- PHASE_2_SEASONAL_CONTENT_CALENDAR.md: Assessed complete and actionable. 6 months of product launch timing, social pillars with platform notes, and 13 email bodies covered from May through October. Batch production note aligns with May 1 start. No structural gaps requiring new files. Email sequences are actionable as written.
+
+**Image downloads this session**: 0
+
+**What the user needs to do before May 1 (tomorrow)**:
+1. Export April 21–27 Etsy Stats for Wild Edibles Guide and Zone Calendar (baseline capture). Enter into BUNDLE_TEST_DATA.csv rows 2 and 3. Do this today before midnight.
+2. Create the Spring Forager Bundle listing on Etsy (see BUNDLE_A_B_TEST_PLAN.md Part 1 for title and description framing).
+3. Complete Gate 0 checklist in BUNDLE_TEST_ANALYSIS.md before recording any test data.
+
+---
+
+## Session 683 research agent — 2026-04-30 — Phase 2 Premium Product Taxonomy Research
+
+**Task**: Conduct competitive market research for Phase 2 product strategy — competitor profiles, product gap analysis, pricing psychology, and seasonal demand curves.
+
+**Files produced**:
+
+- `phase-2-premium-taxonomy-research.md` (~2,500 words): Full Phase 2 research document. Eight named competitors profiled with pricing, review counts, distribution channel, and positioning gaps. Competitive feature matrix (8 sellers × 6 factors). Five whitespace opportunities quantified with demand signals: regional foraging+medicinal combo ($25–$35), mushroom ID deep-dive ($18–$28), seasonal preservation bundle ($38–$50), native plant propagation + seed saving combo ($22–$32), beginner canning quick-start ($15–$18). Pricing psychology analysis with three buyer tier segments, four price premium drivers, and charm vs. round-number recommendation. Monthly demand index table for four product categories across 12 months (foraging, seed/garden, preservation, survival/prepper). Phase 2 seasonal launch calendar (Q2–Q4 2026 + Q1 2027). Pricing recommendation table for Phase 2 bundles and Phase 3 products. Feature differentiation summary vs. all named competitors. 27 sources cited.
+
+**Key finding for user**: The $35–$55 "mid-premium" bundle tier is functionally empty on Etsy. Gubba Homestead anchors $70 from a Shopify shop with 12 total reviews and no Etsy presence. Seedwarden's Phase 2 Harvest Season Bundle ($28) and planned Prepper Essentials Bundle ($45) enter uncontested price territory with Etsy algorithmic distribution. No named competitor combines regional content + lifestyle photography + multi-cohort catalog depth on Etsy.
+
+**Image downloads this session**: 0
+
+---
+
 ## Session 672 — 2026-04-30 — Phase 2 Track B: Execution Kickoff Documents
 
 **Task**: Advance Phase 2 Track B execution toward lifestyle photo shoot coordination and Canva design production. Review all Phase 2 production docs and create the execution workflow documents that bridge from "planning complete" to "user is actively producing."

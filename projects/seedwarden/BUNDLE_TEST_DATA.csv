@@ -1,0 +1,35 @@
+Week_Start,Week_End,Phase,Test_Name,Listing_Name,SKU,Variant,Impressions,Views,Clicks,Conversions,Revenue,AOV,Conversion_Rate_Pct,Notes
+2026-04-21,2026-04-27,Pre-test,Baseline,Wild Edibles Quick Reference Guide,SW-WILD-001,Individual,,,,,,,,"Pre-test baseline week — capture before bundle goes live"
+2026-04-21,2026-04-27,Pre-test,Baseline,Zone-by-Zone Seed Starting Calendar,SW-ZONE-001,Individual,,,,,,,,"Pre-test baseline week — capture before bundle goes live"
+2026-05-01,2026-05-07,Month 1,Spring Forager Bundle Test,Spring Forager Bundle,SW-BUND-001,Bundle $22,,,,,,,,"Test launch week 1 — monitor daily for cannibalization signal"
+2026-05-01,2026-05-07,Month 1,Spring Forager Bundle Test,Wild Edibles Quick Reference Guide,SW-WILD-001,Individual,,,,,,,,"Individual control week 1 — compare vs April 21-27 baseline"
+2026-05-01,2026-05-07,Month 1,Spring Forager Bundle Test,Zone-by-Zone Seed Starting Calendar,SW-ZONE-001,Individual,,,,,,,,"Individual control week 1 — compare vs April 21-27 baseline"
+2026-05-08,2026-05-14,Month 1,Spring Forager Bundle Test,Spring Forager Bundle,SW-BUND-001,Bundle $22,,,,,,,,
+2026-05-08,2026-05-14,Month 1,Spring Forager Bundle Test,Wild Edibles Quick Reference Guide,SW-WILD-001,Individual,,,,,,,,
+2026-05-08,2026-05-14,Month 1,Spring Forager Bundle Test,Zone-by-Zone Seed Starting Calendar,SW-ZONE-001,Individual,,,,,,,,
+2026-05-15,2026-05-21,Month 1,Spring Forager Bundle Test,Spring Forager Bundle,SW-BUND-001,Bundle $22,,,,,,,,
+2026-05-15,2026-05-21,Month 1,Spring Forager Bundle Test,Wild Edibles Quick Reference Guide,SW-WILD-001,Individual,,,,,,,,
+2026-05-15,2026-05-21,Month 1,Spring Forager Bundle Test,Zone-by-Zone Seed Starting Calendar,SW-ZONE-001,Individual,,,,,,,,
+2026-05-22,2026-05-31,Month 1,Spring Forager Bundle Test,Spring Forager Bundle,SW-BUND-001,Bundle $22,,,,,,,,"Final May week — 10 days; adjust Conversion_Rate_Pct accordingly (per-10-day not per-7-day)"
+2026-05-22,2026-05-31,Month 1,Spring Forager Bundle Test,Wild Edibles Quick Reference Guide,SW-WILD-001,Individual,,,,,,,,
+2026-05-22,2026-05-31,Month 1,Spring Forager Bundle Test,Zone-by-Zone Seed Starting Calendar,SW-ZONE-001,Individual,,,,,,,,
+2026-06-01,2026-06-07,Month 2,Harvest Season Seasonal Tracking,Harvest Season Bundle,SW-BUND-002,Bundle $28,,,,,,,,"Month 2 launch week — seasonal baseline begins"
+2026-06-01,2026-06-07,Month 2,Harvest Season Seasonal Tracking,Fermented and Preserved Harvest Handbook,SW-FERM-001,Individual,,,,,,,,
+2026-06-01,2026-06-07,Month 2,Harvest Season Seasonal Tracking,Harvest Preservation Field Manual,SW-HARV-001,Individual,,,,,,,,
+2026-06-01,2026-06-07,Month 2,Harvest Season Seasonal Tracking,Grow Your Own Hot Sauce,SW-HOTS-001,Individual,,,,,,,,
+2026-06-08,2026-06-14,Month 2,Harvest Season Seasonal Tracking,Harvest Season Bundle,SW-BUND-002,Bundle $28,,,,,,,,
+2026-06-08,2026-06-14,Month 2,Harvest Season Seasonal Tracking,Fermented and Preserved Harvest Handbook,SW-FERM-001,Individual,,,,,,,,
+2026-06-08,2026-06-14,Month 2,Harvest Season Seasonal Tracking,Harvest Preservation Field Manual,SW-HARV-001,Individual,,,,,,,,
+2026-06-08,2026-06-14,Month 2,Harvest Season Seasonal Tracking,Grow Your Own Hot Sauce,SW-HOTS-001,Individual,,,,,,,,
+2026-06-15,2026-06-21,Month 2,Harvest Season Seasonal Tracking,Harvest Season Bundle,SW-BUND-002,Bundle $28,,,,,,,,
+2026-06-15,2026-06-21,Month 2,Harvest Season Seasonal Tracking,Fermented and Preserved Harvest Handbook,SW-FERM-001,Individual,,,,,,,,
+2026-06-15,2026-06-21,Month 2,Harvest Season Seasonal Tracking,Harvest Preservation Field Manual,SW-HARV-001,Individual,,,,,,,,
+2026-06-15,2026-06-21,Month 2,Harvest Season Seasonal Tracking,Grow Your Own Hot Sauce,SW-HOTS-001,Individual,,,,,,,,
+2026-06-22,2026-06-30,Month 2,Harvest Season Seasonal Tracking,Harvest Season Bundle,SW-BUND-002,Bundle $28,,,,,,,,"Final June week — 9 days"
+2026-06-22,2026-06-30,Month 2,Harvest Season Seasonal Tracking,Fermented and Preserved Harvest Handbook,SW-FERM-001,Individual,,,,,,,,
+2026-06-22,2026-06-30,Month 2,Harvest Season Seasonal Tracking,Harvest Preservation Field Manual,SW-HARV-001,Individual,,,,,,,,
+2026-06-22,2026-06-30,Month 2,Harvest Season Seasonal Tracking,Grow Your Own Hot Sauce,SW-HOTS-001,Individual,,,,,,,,
+2026-07-01,2026-07-07,Month 3 Control,Pricing Test $28,Harvest Season Bundle,SW-BUND-002,Pricing control $28,,,,,,,,"Pricing test begins — $28 control fortnight (July 1-14)"
+2026-07-08,2026-07-14,Month 3 Control,Pricing Test $28,Harvest Season Bundle,SW-BUND-002,Pricing control $28,,,,,,,,
+2026-07-15,2026-07-21,Month 3 Test,Pricing Test $25,Harvest Season Bundle,SW-BUND-002,Pricing test $25,,,,,,,,"Price lowered to $25 — test fortnight (July 15-31)"
+2026-07-22,2026-07-31,Month 3 Test,Pricing Test $25,Harvest Season Bundle,SW-BUND-002,Pricing test $25,,,,,,,,"Final July period — 10 days"
