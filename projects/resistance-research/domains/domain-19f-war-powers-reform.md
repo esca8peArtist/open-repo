@@ -1029,3 +1029,50 @@ Sources: [Domain 28: War Powers Venezuela and Military Unilateralism (cross-refe
 
 *Section 18 added: April 30, 2026*
 *Key updates: Post-May 1 outcome checklist completed — all five items confirmed as non-compliance (no withdrawal, no authorization, no court filing, no supplemental submitted, continued operations); Vance doctrine deepened against Youngstown — three Youngstown premises identified that the Vance doctrine discards simultaneously; Category 3 enforcement gap diagnosed — political question doctrine bars judicial resolution of the only scenario where Youngstown should provide maximum constraint; constitutional amendment with congressional standing and designated Article III war powers court identified as the structural fix for the Youngstown gap; Domain 28 synthesis completed empirically — both prongs of two-prong executive doctrine are now demonstrated operational facts, not theories; third-theater Goldwater v. Carter connection established as downstream precedent risk.*
+
+---
+
+## Section 19: April 30, 2026 — Confirmed Non-Compliance Status and Immediate Post-Deadline Developments
+
+**Added**: April 30, 2026 (Session 689)
+
+### 19.1 The April 30 Confirmation: Non-Compliance as Operating Fact
+
+Section 18.1 filled the outcome checklist based on events through May 1. This section records the April 30 developments — the day before the deadline — that confirm the non-compliance was complete, deliberate, and consequential.
+
+**Trump's April 30 statement**: When asked by reporters about the May 1 War Powers deadline, Trump stated: "Don't rush me." This is the administration's only public acknowledgment of the deadline's existence — a statement that dismisses rather than engages the legal requirement. Combined with the Vance pre-commitment (WPR is "fundamentally fake"), Trump's "Don't rush me" confirms the administration's position: the deadline is a political inconvenience, not a legal obligation.
+
+**The absence of a supplemental appropriations request**: As of April 30, the administration had not submitted a supplemental appropriations request for Operation Epic Fury. Pentagon officials and congressional appropriations staff estimated the war's cost through Day 45 at $50-70 billion (updated from the Day 6 CSIS estimate of $11.3 billion). The deliberate withholding of a supplemental request is a strategic choice: it avoids triggering the fiscal accountability mechanism documented in Section 4 and delays the appropriations leverage moment that Collins and other moderate Republicans could activate.
+
+**The Democratic lawsuit: pre-deadline final status**: As of April 30, no lawsuit had been filed. Democrats described their discussions as "early stage." The Campbell v. Clinton (2000) precedent — which rejected war powers standing for individual members of Congress — remains the central obstacle. The TIME exclusive (April 28) identified Rep. Ted Lieu (D-CA) and Senator Adam Schiff (D-CA) as among the most vocal advocates for the judicial track. The legal theory being explored would attempt to distinguish Campbell on the grounds that: (1) the current violation is more complete (the full 60-day clock has run, vs. Kosovo where the question was still contested); and (2) Congress has actively tried but been blocked from exercising its institutional role, creating a stronger standing argument than prior individual-member suits. These distinctions may or may not survive judicial scrutiny — the political question doctrine applies to institutions as well as individuals.
+
+**Schiff's scheduled post-deadline vote**: Senator Adam Schiff announced he would force a sixth war powers vote in the Senate "at the end of this week" — timed to coincide with the 60-day deadline. This would be the first post-deadline vote, and its framing shifts from "force a pre-deadline authorization" to "retroactively authorize or formally oppose an ongoing unconstitutional war." The Collins post-deadline accountability statement (Section 17) is the key variable: does she vote yes on a post-May 1 resolution or find another way to satisfy her pre-deadline commitment without actually constraining the administration?
+
+### 19.2 What the April 30 Congressional Calendar Reveals
+
+The House was scheduled to vote on DHS appropriations and the FISA bill (S.1318) on April 30 — before departing for a weeklong recess. The concurrent legislative calendar on April 30 (FISA deadline + WPR deadline + DHS funding) created the most constitutionally concentrated single day in the 119th Congress:
+
+- **FISA authority expiring midnight April 30**: The 10-day emergency extension from April 18 running out
+- **WPR 60-day clock expiring May 1**: Final day of the legal window
+- **DHS appropriations vehicle on House floor**: Carrying ICE funding provisions relevant to Domain 25's commercial data broker surveillance architecture
+
+The convergence of these three timelines on a single legislative calendar date is not coincidental — it reflects the administration's strategy of overwhelming Congress with simultaneous crises so that no single constitutional confrontation receives the institutional focus required to produce a response. This "constitutional flooding" pattern is documented across multiple domains (Domain 29 on prosecutorial weaponization, Domain 37 on midterm interference, Domain 36 on AI governance) and represents a deliberate executive branch tactic to prevent the focused deliberative attention that constitutional constraints require.
+
+### 19.3 The May-Forward Enforcement Calendar
+
+The confirmed non-compliance as of May 1 opens a specific enforcement calendar that Section 15.3's "90-day authorization track" anticipated. Key inflection points now confirmed:
+
+**May 1-June 15 (Strategic Window 1)**: Whether the administration submits an Iran supplemental appropriations request. If submitted, this activates the Collins Appropriations leverage; if not submitted and reprogramming is used, Democrats lose their best fiscal enforcement vector until the next appropriations cycle.
+
+**May-June 2026 (Schiff vote + Republican accountability)**: The sixth and subsequent Senate votes post-May 1. These votes carry different political weight because senators who vote no are no longer supporting a president's claimed authority — they are ratifying a completed statutory violation. Collins's pre-deadline statement creates accountability pressure; whether it translates to a vote is the critical question.
+
+**June-July 2026 (Conditional authorization track)**: The "90-day authorization track" identified in Section 15.3 — a Senate joint resolution of authorization with conditions, possibly led by Murkowski, with geographic scope limits and reporting requirements. If GOP defectors from the Collins-Murkowski-Curtis bloc provide enough votes for cloture (60 senators), a conditional authorization is more politically achievable than a withdrawal resolution.
+
+**November 2026 (Midterm accountability)**: The full cycle of unconstitutional military conduct without consequences — if that is the trajectory — runs directly into the 2026 midterm election. Republicans in swing districts who voted against every war powers resolution will need to defend those votes. Democrats have committed to repeated floor votes that create a public record. The midterm accountability pressure is the most powerful long-run enforcement mechanism available: it cannot terminate the war, but it can impose political costs that shape the post-election calculation.
+
+Sources: [Time (exclusive): Democrats May Sue Trump Over 'Illegal' Iran War (April 28, 2026)](https://time.com/article/2026/04/28/exclusive-democrats-explore-suing-trump-if-congress-doesn-t-authorize-iran-war/); [The National: Trump's war against Iran could soon be considered illegal (April 29, 2026)](https://www.thenationalnews.com/news/us/2026/04/29/iran-war-illegal-congress-war-powers-resolution/); [The Conversation: Under US law, Trump faces an impending deadline to end the Iran war (April 28, 2026)](https://theconversation.com/under-us-law-trump-faces-an-impending-deadline-to-end-the-iran-war-what-happens-if-he-ignores-it-281728); [Spectrum News: More lawmakers calling to end Iran war ahead of 60-day mark (April 21, 2026)](https://spectrumnews1.com/oh/columbus/news/2026/04/21/iran-war-60-day-congress); [Al Jazeera: After 60 days of war in Iran, does US Congress want a say? (April 28, 2026)](https://www.aljazeera.com/news/2026/4/28/after-60-days-of-war-in-iran-does-us-congress-want-a-say); [Truthout: May 1 Marks a Crucial War Powers Deadline for Trump's War in Iran](https://truthout.org/articles/may-1-marks-a-crucial-war-powers-deadline-for-trumps-war-in-iran/); [Time: Democrats accused Hegseth of misleading Trump on Iran war progress (April 29, 2026)](https://time.com/article/2026/04/29/in-hostile-hearing-democrats-accuse-hegseth-of-misleading-trump-and-country-on-iran-war-progress/)
+
+---
+
+*Section 19 added: April 30, 2026 (Session 689)*
+*Key updates: Trump's "Don't rush me" statement documented as the only administration acknowledgment of the deadline; Schiff sixth post-deadline vote announcement recorded; Democratic lawsuit track final pre-deadline status (early-stage, not filed, Campbell v. Clinton obstacle remains); deliberate withholding of Iran supplemental appropriations request documented as strategic fiscal delay; April 30 concurrent legislative calendar (FISA + WPR + DHS) analyzed as "constitutional flooding" tactic; May-November 2026 enforcement calendar outlined (supplemental window, conditional authorization track, midterm accountability).*

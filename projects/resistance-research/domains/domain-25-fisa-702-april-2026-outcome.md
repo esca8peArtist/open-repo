@@ -202,6 +202,71 @@ The combined architecture means the Section 702 outcome — whether warrantless 
 
 ---
 
+## Section 9: April 30, 2026 — Senate Divergence Confirmed; S.4344 Cloture Track
+
+**Added**: April 30, 2026 (Session 689)
+
+### 9.1 What Happened on April 30
+
+As of the April 30 session, the two-chamber FISA standoff produced a clear outcome: **Section 702 authority is at legal lapse risk, and the Senate's path diverges sharply from the House-passed bill.**
+
+The confirmed sequence:
+
+**April 29 (final House action):** House passed S.1318 (Foreign Intelligence Accountability Act) 235-191. Vote breakdown notable for its collapse in Democratic support: only 42 Democrats voted yes, compared to 147 Democrats who supported the 2024 RISAA. This is the sharpest erosion in civil liberties community confidence in any reauthorization vote in the program's history. The defection of 32 Republicans (privacy hawks, Freedom Caucus members who refused to flip despite the CBDC sweetener) means the bill passed on a coalition that is narrower and more fragile than any prior Section 702 reauthorization.
+
+**April 29 (Senate response):** Senate Majority Leader Thune announced the Senate plans a 45-day clean extension (no CBDC, no oversight provisions from S.1318) extending authority to approximately June 12, 2026. This would be sent back to the House, which would need to accept the Senate amendment or reject it and force a conference committee. Thune's stated rationale: the CBDC provision is "not happening" in the Senate. Under Senate rules, the CBDC ban cannot be stripped from S.1318 without returning the bill to the House — so the Senate must pass its own vehicle.
+
+**April 29-30 (cloture track):** Thune received unanimous consent for a cloture vote on S.4344 (Senate's companion 3-year clean extension, without CBDC) no later than Friday, May 1. The cloture vote — requiring 60 votes to advance — is the critical procedural threshold. If cloture fails, the Senate cannot pass even the clean extension without unanimous consent. If cloture succeeds, final passage follows quickly. Cloture outcome was not confirmed before the April 30 deadline.
+
+**Midnight April 30 (authorization status):** The 10-day emergency extension signed April 18 expires at midnight Thursday. If the Senate did not pass an extension or unanimous consent agreement before midnight, Section 702 authority lapsed. Intelligence community officials have noted that collection under existing FISC orders can continue during a brief lapse — but technology companies compelled to provide assistance would have legal grounds to challenge their compliance obligations, and partner intelligence services have historically reduced cooperation during periods of legal uncertainty.
+
+### 9.2 The Senate "Jam" Strategy
+
+Political Wire reported April 29 that the Senate plans to "jam" the House on FISA. The mechanism: the Senate passes its own clean 45-day extension, which the House would be forced to either accept (abandoning the three-year bill) or reject (forcing a conference committee). Given that the midnight deadline creates enormous pressure, Speaker Johnson would face a choice between accepting Senate terms or allowing the authority to lapse.
+
+This is structurally similar to the April 17 cycle: the House couldn't pass a long-term bill, the Senate passed a short-term extension by unanimous consent, the House accepted. The difference is the April 30 timeline is harder, because the House is departing for recess Thursday and the Senate procedural vehicle (S.4344 cloture) cannot be fast-tracked without unanimous consent in the same way the April 17 voice-vote extension was.
+
+### 9.3 The Civil Liberties Significance of the 42-vs-147 Democratic Vote Comparison
+
+The collapse in Democratic support for FISA reauthorization — from 147 yes votes in April 2024 to 42 yes votes in April 2026 — is the most significant structural shift in the Section 702 political landscape since the program's first contested reauthorization in 2012.
+
+The 2024 RISAA passed largely because it was framed as a security necessity in an election year. The 2026 environment is different: the Trump administration's use of law enforcement and surveillance powers against political opponents (documented in Domain 29 — prosecutorial weaponization; Domain 25 Sections 4 and 6 — commercial data broker architecture; Domain 37 — federal executive midterm interference) has made Democratic members acutely aware that reauthorizing warrantless surveillance authority means reauthorizing it for an administration they believe to be using federal power for partisan enforcement. The "trust the government with these powers" argument does not work in that political environment.
+
+This creates a paradox for Section 702 reauthorization going forward: the security community needs Democratic votes to reach 60 in the Senate (where the filibuster requires bipartisan support), but Democratic members have structural reasons not to provide them. The bipartisan civil liberties coalition (Lofgren-Davidson-Wyden-Lee + Freedom Caucus privacy hawks) may be able to block any reauthorization that lacks warrant protections even if the administration and intelligence community want a clean extension.
+
+### 9.4 April 30 Outcome Checklist (Updated)
+
+| Item | Status | Detail |
+|------|--------|--------|
+| House passage | CONFIRMED | 235-191 (April 29, 2026) |
+| Warrant requirement | EXCLUDED | Not in S.1318 or S.4344 |
+| CBDC ban | HOUSE ONLY | Dead on arrival in Senate per Thune |
+| Senate vote on S.1318 | NOT TAKEN | Senate will not pass House version |
+| Senate vote on S.4344 (3-yr clean) | CLOTURE SCHEDULED | By May 1; outcome unconfirmed by deadline |
+| Senate 45-day extension | IN PROGRESS | Thune statement April 29; vehicle TBD |
+| Authority lapse | POSSIBLE | If no Senate action before midnight April 30 |
+| Presidential signature | PENDING | Trump wants 18 months to 3 years; will sign any extension |
+| Civil liberties challenge | PRE-COMMITTED | EFF, ACLU regardless of outcome |
+| Commercial data broker loophole | OPEN | No bill addresses it |
+
+### 9.5 Next Decision Point: May-June 2026
+
+If the Senate passed a 45-day extension (or if there was a brief lapse followed by emergency action), the new deadline is approximately June 12-14, 2026. This aligns the FISA reauthorization deadline with the approaching summer appropriations season and the mid-2026 congressional recess pressure. Key developments to track:
+
+- Whether Senate strips the CBDC provision and House accepts (short circuit to passage)
+- Whether the civil liberties coalition (Lofgren-Davidson-Wyden-Lee) can extract warrant protections in the Senate before the June deadline
+- Whether an extended lapse triggers technology company legal challenges (the EFF's preferred outcome — creates litigation vehicle)
+- Whether the Wyden/DHS OIG investigation into Venntel FTC order compliance produces evidence the FBI has continued commercial data purchases in violation of the January 2025 order (which would strengthen the civil liberties position in any reauthorization negotiation)
+
+Sources: [Roll Call: House Sends Spy Reauthorization Bill to Uncertain Senate Fate (April 29, 2026)](https://rollcall.com/2026/04/29/house-sends-spy-reauthorization-bill-to-uncertain-senate-fate/); [Political Wire: Senate Plans to Jam House on FISA Extension (April 29, 2026)](https://politicalwire.com/2026/04/29/senate-plans-to-jam-house-on-fisa-extension/); [ABC News: House Passes 3-Year FISA Reauthorization That Will Face Challenges in the Senate (April 29, 2026)](https://abcnews.com/Politics/house-passes-3-year-fisa-reauthorization-face-challenges/story?id=132516696); [Axios: House Passes FISA Reauthorization, Senate Roadblock Awaits (April 29, 2026)](https://www.axios.com/2026/04/29/house-passes-fisa-intelligence-bill-senate-opposition); [NPR: House Advances 3-Year Extension of FISA 702 Surveillance Program (April 29, 2026)](https://www.npr.org/2026/04/29/g-s1-119094/congress-fisa-702); [Nextgov: House Passes 3-Year FISA 702 Extension (April 29-30, 2026)](https://www.nextgov.com/policy/2026/04/house-passes-3-year-fisa-702-extension/413223/); [Senate Daily Press: Wednesday April 29, 2026 — S.4344 cloture scheduled](https://www.dailypress.senate.gov/wednesday-april-29-2026/); [Common Dreams: 42 House Democrats Help GOP Send Trump Spying Bill to Senate (April 29, 2026)](https://www.commondreams.org/news/fisa-section-702-reauthorization); [Deseret News: Government Surveillance Powers at Risk of Expiring (April 29, 2026)](https://www.deseret.com/politics/2026/04/29/house-flounders-on-fisa-vote/)
+
+---
+
+*Section 9 added: April 30, 2026 (Session 689)*
+*Key updates: April 30 Senate divergence confirmed — Senate will not pass House's CBDC-attached S.1318; Senate pursuing 45-day clean extension via S.4344 cloture track (scheduled by May 1) or unanimous consent for shorter stopgap; midnight April 30 lapse possible if neither vehicle passes; 42-vs-147 Democratic vote collapse documented as structural shift in Section 702 political landscape; civil liberties coalition blocking dynamic identified for June 2026 deadline; outcome checklist updated.*
+
+---
+
 ## Section 8: Advocacy and Action Implications
 
 **Immediate (April 30 — May 7):**
