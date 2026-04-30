@@ -4,6 +4,23 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 — Seedwarden — Competitive Landscape & Pricing Strategy Analysis
+
+**Task**: Research competitive landscape in homesteading/survival Etsy niche and deliver strategic pricing/positioning analysis.
+**Agent**: general-research
+**Deliverable**: `projects/seedwarden/competitor-landscape.md` (~3,800 words)
+
+**Key findings**:
+- Etsy homesteading/foraging/survival digital niche has three archetypes: template sellers (saturated, $2–12), bulk PLR bundles (volume play, declining quality), and substantive single-topic guides (Seedwarden's competitive set — thin competition at content-depth level Seedwarden operates)
+- Named competitors documented: Gubba Homestead ($14.95–$69.95, independent Shopify shop), OntarioTactical (survival bundles, 29 reviews), multiple Etsy foraging/herb/homesteading guide sellers with low review counts
+- Critical pricing gap: $22–35 single guides and $35–55 curated bundles are nearly empty in this niche — Seedwarden's Phase 2/3 opportunity
+- Regional content (zone-specific) faces almost zero direct digital competition on Etsy — confirmed as highest ROI Phase 3 action
+- Lifestyle photography enables 15–25% price premium justified by Etsy's mobile-first visual discovery environment
+- Phase 1 pricing mostly correct; recommend raising Native Plants Regional Guide to $18 minimum pre-launch
+- Three strategic priorities: own regional keyword territory, use Phase 2 photography to reposition pricing, build the $35–55 bundle tier that doesn't exist
+
+**Commit**: docs(seedwarden): competitive landscape & pricing strategy analysis
+
 ## 2026-04-30 05:51 UTC — Orchestrator Session 681 Continued — RESISTANCE-RESEARCH APRIL 30-MAY 1 DOMAIN UPDATES VERIFIED + PARALLEL WORK INITIATED
 
 **Status**: ✅ COMPLETE — resistance-research domain updates (domains 25 + 19f) committed and verified. Framework now current through May 1, 2026. Phase 1 distribution-ready pending only user path decision.
