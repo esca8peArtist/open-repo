@@ -71,11 +71,37 @@
 
 ---
 
+### Item 32: stockbot Gate 2 Strategic Roadmap (Session 695 — PRE-WORK FOR POST-GATE-1)
+
+**Status**: COMPLETE — 4 comprehensive documents committed to master at b4b8388
+
+**Deliverables** (all production-ready):
+- ✅ `gate-2-architecture-blueprint.md` (3,100 words) — Covered call overlay integration with 8-step write decision tree, delta-adjusted notional aggregation, uncovered call prevention system, full wiring diagrams for equity entry and exit scenarios
+- ✅ `gate-2-crypto-integration-roadmap.md` (2,500 words) — Spot-only (no perpetuals) Phase 2 architecture, rolling 24h UTC kill switch, feature pipeline (40% unchanged, 25% modified, 35% crypto-native), Glassnode exchange net flow as primary on-chain indicator
+- ✅ `gate-2-validation-framework.md` (2,200 words) — Explicit binary pass/fail criteria (6 Phase 1 conditions, 6 Phase 2 conditions, 10 Gate 2 overall), statistical significance p<0.05, minimum 20 option cycles / 10 crypto round trips
+- ✅ `gate-2-implementation-sequencing.md` (1,800 words) — Week-by-week timeline (181–228 dev hours over 7 weeks), June 10 progress review (not final determination), Phase 3 (HMM) embedded as parallel work
+
+**Key Architectural Decisions**:
+- **IVR gate at >80** (implied volatility rank) guards call writing (new over Item 26 research)
+- **Spot-only crypto** (no futures) for Phase 2 eliminates exchange liquidation risk; system-controlled 35% auto-exit is only forced close
+- **Sequential rollout** (options first, then crypto) — simultaneous rollout creates confounded attribution and double error surface
+- **Wash sale rules** don't apply to crypto (correctly identified as not applicable under current law)
+- **Pass/fail decision gates**: Every phase has binary crisp thresholds; nothing left to interpretation
+
+**Rationale**: Gate 2 roadmap is production-ready for immediate June deployment (if Gate 1 passes May 12). Addresses all 7 architecture gaps from Item 3 (post-Gate-2 operations). Uses Items 26–27 options/crypto research as foundation; extends to implementation sequencing, decision criteria, risk mitigation.
+
+**Outcome**: Developers can execute directly from this roadmap: read the documents, understand architecture, implement phases, validate at each gate. Removes all ambiguity.
+
+**Commit**: b4b8388
+
+---
+
 ### Current Capacity Status
-- **Next milestone**: 13:30 UTC stockbot market open monitoring (3.75 hours away)
-- **Preparation status**: Monitor script pre-staged and validated; database schema confirmed; Discord webhook active
+- **Engine status**: Running healthy (PID 1691129, 8.4% memory, 0.2% CPU)
+- **Next milestone**: 13:30 UTC stockbot market open monitoring (3h 15m away)
+- **Preparation status**: Monitor script pre-staged and validated; database schema confirmed; Discord webhook active; engine ready
 - **Post-market task**: 20:00 UTC execution of GATE_1_POST_MARKET_ANALYSIS framework
-- **Idle time**: 09:47–13:30 UTC available for additional async work if needed
+- **Current time**: 10:14 UTC
 
 ---
 
