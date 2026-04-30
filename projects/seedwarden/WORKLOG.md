@@ -4,6 +4,39 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 672 — 2026-04-30 — Phase 2 Track B: Execution Kickoff Documents
+
+**Task**: Advance Phase 2 Track B execution toward lifestyle photo shoot coordination and Canva design production. Review all Phase 2 production docs and create the execution workflow documents that bridge from "planning complete" to "user is actively producing."
+
+**Context read**: PHOTO_SHOOT_PLANNING.md, ZONE_CARD_PRODUCTION_TIMELINE.md, PHASE_2_BUNDLE_STRATEGY.md, PHASE_2_SEASONAL_CONTENT_CALENDAR.md, MAY_CONTENT_EXECUTION_PLAN.md, LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, PHOTO_SHOOT_CHECKLIST.md, ZONE_QUICKSTART_CARD_SPEC.md (full), TRACK_B_READINESS_CHECKLIST.md, WORKLOG.md (Sessions 669–671).
+
+**Files produced**:
+
+- `TRACK_B_EXECUTION_KICKOFF.md` (~2,400 words): Day-by-day two-week execution checklist that converts all prior production planning into sequenced action items. Day 1: Canva Brand Kit setup (full hex table included, 10 colors) + Kit account + social bio drafts + props sourcing list. Days 2–3: Zone 5 master template build + Zone 6 (first duplicate). Days 4–5: landing page + props acquisition + printed pages. Days 6–7: Photo Shoot Day 1 (Cluster A, 16 shots). Day 8: Zones 3 and 4 Canva build. Day 9: Zones 7 and 8 Canva build. Days 10–11: Photo Shoot Day 2 (Clusters B + C, 14 shots) + batch editing. Days 12–13: Zones 9 and 10 + full 8-card review. Day 14: Kit delivery integration complete + WORKLOG update. End-of-week-2 output summary table. Pre-start decisions log template.
+
+- `PHOTO_SHOOT_EQUIPMENT_BRIEF.md` (~2,200 words): Equipment and location brief synthesized from LIFESTYLE_PHOTOGRAPHY_STRATEGY.md and PHOTO_SHOOT_PLANNING.md. Covers: camera requirements (phone model qualification table, mode selection rules), white balance setup procedure by phone OS, tripod alternatives (book stack method), lighting guide (window direction, time of day, overcast vs. sunny, softbox specs and why ring lights are explicitly excluded), surface/backdrop specs for each cluster (four surfaces, priority order, cost, acceptable substitutes, and what not to use with reasons), props by cluster with source and max cost columns, pre-shoot night-before checklist for both shoot days, and a technical error quick-reference table (8 errors with specific corrections).
+
+- `CANVA_ZONE_CARD_BATCH_WORKFLOW.md` (~3,000 words): Canva operator's production reference. Build order table (correct sequencing to avoid zone-band color errors). Per-session workflow (13-step sequence for each duplicate card). Complete per-zone content tables for all 8 zones (3–10) with all text ready to paste into Canva: zone number, region line, frost dates, growing season, example cities, This Month tasks (May 2026), three Quick-Start Crops, Storage and Preservation Tips, and Variety Spotlight for all 8 zones. Zone band color quick reference table with Canva workflow for changing colors. Six-point pre-export quality check. Export naming table (all 8 filenames). Kit upload tracking table (checkboxes for all 8 zones). Monthly This Month refresh workflow (20-minute protocol, recurring calendar reminder guidance).
+
+**Image downloads this session**: 0
+
+**What these documents add vs. prior sessions**:
+
+Sessions 669–670 produced the full production planning documents (spec, timeline, strategy). Session 671 produced the shoot-day checklist and the May social/email copy. This session bridges the gap: the kickoff checklist sequences all prior planning into a day-level execution order (the user knows exactly what to do on Day 1, Day 2, etc.); the equipment brief answers pre-shoot questions without requiring the user to re-read the full strategy doc; the Canva workflow doc contains all per-zone content as copy-pasteable text so the user never has to compose content mid-build.
+
+**Remaining items not yet produced** (both from Session 671 "what remains" list):
+- `BUNDLE_A_B_TEST_PLAN.md` — full A/B test methodology, success metrics, 6-week calendar, decision criteria. Needed before Spring Forager Bundle goes live (June launch per PHASE_2_BUNDLE_STRATEGY.md). Estimated: 1.5–2 hours to produce.
+
+**User decisions still pending** (carried forward from Sessions 670–671):
+1. Photo shoot scheduling — two shooting days needed; user to confirm availability.
+2. Canva Free vs. Canva Pro ($15/month).
+3. Kit (ConvertKit) account status — confirm existing or new account needed.
+4. Zone card "This Month" content — confirm May tasks are used at initial launch (correct choice if launching in May 2026).
+5. Landing page: Kit (free) vs. Carrd.co ($19/year).
+6. LIFESTYLE_PHOTOGRAPHY_STRATEGY.md — awaiting user approval on hybrid vs. stock-only photography route.
+
+---
+
 ## Session 671 — 2026-04-30 — Phase 2 Track B: Photo Shoot Checklist + May Content Execution Plan
 
 **Task**: Advance Track B production planning with the two highest-impact remaining items: (1) a shot-by-shot photo shoot checklist ready for shoot day, and (2) a fully-drafted May content execution plan with complete email bodies and social post copy.
