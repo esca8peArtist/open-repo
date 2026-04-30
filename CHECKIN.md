@@ -22,11 +22,17 @@
 2. Other projects remain awaiting prior decisions (seedwarden, mfg-farm, cybersecurity, open-repo).
 
 **Suggested Next**:
-- Review PHASE_1_DECISION_REQUIRED.md during market hours (13:30–20:00 UTC)
-- If decision made: Execute immediately post-market-close (20:00 UTC+, giving 3.5–4.5h window)
-- If no decision yet: Framework remains ready for execution at any time
+- **During market hours (13:30–20:00 UTC)**: Review PHASE_1_DECISION_REQUIRED.md and decide path (A / A+37 / B)
+- **If decision made**: Execute immediately post-market-close (20:00 UTC+, providing 3.5–4.5h execution window)
+- **If no decision**: Framework locked and ready — can execute immediately anytime through May 12
+- **Post-market analysis (20:15 UTC)**: Run `bash projects/stockbot/scripts/april_30_postmarket_analysis.sh` to extract fills and update Gate 1 metrics
 
-**Usage**: Session 692 ~8K tokens (framework creation + auditing). Weekly cumulative: ~74% budget. Reset in ~100 hours.
+**Critical files ready**:
+- 📄 PHASE_1_DECISION_REQUIRED.md — One-page decision guide (read this to choose path)
+- 📄 SESSION_692_MILESTONE_TIMELINE.md — Complete timeline for April 30 + Phase 1 execution windows
+- 🔧 april_30_postmarket_analysis.sh — Post-market reporting script (ready to run at 20:15 UTC)
+
+**Usage**: Session 692 ~9K tokens (framework creation + timeline + auditing). Weekly cumulative: ~75% budget. Reset in ~99 hours.
 
 ---
 
