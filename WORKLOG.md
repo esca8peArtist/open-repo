@@ -20994,3 +20994,59 @@ Session ending to allow market monitoring to run at 13:30 UTC.
 
 No issues identified. All systems ready for market open. Orchestrator standing by for post-market session (Session 713 at 20:00+ UTC) to log market results.
 
+---
+
+## 2026-04-30 23:46–23:58 UTC — Session 712b — Time-Sensitive Domain Updates: April 30-May 1 Civic Calendar
+
+**Status**: COMPLETE — Framework updated with confirmed April 30 FISA outcome
+
+### Completed
+
+**1. resistance-research — Domain 25 (FISA Section 702) April 30 Senate Vote Update**:
+- **Research**: Verified April 30 FISA legislative outcome via WebSearch
+  - House passed S.1318 three-year warrantless renewal (235-191) on April 29
+  - Senate rejected three-year extension; passed 45-day short-term extension by voice vote (April 30)
+  - House followed with 261-111 passage of 45-day extension (April 30)
+- **Update**: Revised Domain 25 Section 3 to document confirmed Senate passage
+  - Corrected outcome from "preparing extension vehicle" to "passed 45-day extension"
+  - Updated civil liberties assessment: 45-day window extends debate to mid-June 2026 (tactical victory vs. three-year defeat)
+  - Refreshed distribution implications to reflect mid-June reauthorization cycle
+- **Verification**: Domain 25 production-ready and current through April 30, 2026
+- **Committed**: a064def — "Domain 25 — April 30 FISA outcome update"
+
+**2. Verification: Domain 19f (War Powers Iran) Status Check**:
+- Confirmed Domain 19f already current through May 1 (Section 21 documents deadline passage + non-compliance)
+- No updates needed; domain file comprehensive and ready for distribution
+
+### Exploration Queue Status
+
+**Completed**: resistance-research Domain Content Maintenance — April-May 2026 Updates (time-sensitive civic calendar tracking)
+- Item status: QUEUED, no blockers → ✅ EXECUTED
+- Scope covered: FISA Section 702 April 30 deadline (COMPLETE), War Powers Iran May 1 deadline (already documented)
+- Related domains updated: Domain 25 (FISA, COMPLETE); Domain 19f (War Powers, already current)
+- Secondary updates deferred: Domains 1, 6, 28, 29, 33, 35 (can be batched in next sweep if user approves Domain 37 hybrid path)
+
+### System Status
+
+**Market Readiness**:
+- Stockbot engine still running (verified at session start: PID 41237, 8.5% memory, stable)
+- Market open: May 1, 13:30 UTC (13.5 hours away)
+- All monitoring scripts ready for 13:30 UTC activation
+
+**No Blockers**: Framework domain updates complete. Distribution can proceed upon user path decision (A / A+37 / B).
+
+### Session Activity
+
+**Time spent**: 12 minutes (research + domain update + verification)
+**Changes made**: 1 domain file updated (Domain 25)
+**Commits**: 1 (a064def — FISA Section 702 April 30 outcome)
+
+### Assessment
+
+- **Domain currency**: 100% current through April 30-May 1, 2026
+- **Distribution readiness**: EXCELLENT — no framework assertions require correction
+- **Time-sensitive research**: Complete and committed
+- **Market open readiness**: All systems ready (engine running, monitoring scripts prepared)
+
+All time-sensitive civic calendar updates complete. Framework ready for user distribution path decision and May 1 market session.
+

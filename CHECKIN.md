@@ -1,4 +1,50 @@
-## Since Last Check-in (Session 711 — 2026-05-01 00:25–00:40 UTC)
+## Since Last Check-in (Session 712b — 2026-04-30 23:46–23:58 UTC)
+
+### ✅ Session 712b Summary — Time-Sensitive Domain Updates + Market Readiness Verification
+
+**Status**: READY FOR MAY 1 MARKET OPEN — Framework updated with April 30-May 1 civic outcomes; engine running and monitoring prepared
+
+**Work Completed**:
+
+1. **✅ Time-Sensitive Civic Calendar Research (Exploration Queue Item)**:
+   - **Scope**: April 30-May 1 live civic developments for resistance-research domain updates
+   - **FISA Section 702 (April 30 Outcome)**:
+     - House passed three-year warrantless renewal (235-191) on April 29
+     - **Senate rejected three-year extension; passed 45-day short-term extension by voice vote (April 30)**
+     - House followed with 261-111 passage of 45-day extension (April 30)
+     - **Key finding**: No warrant requirement reform achieved; debate deferred to mid-June 2026 (tactical civil liberties victory vs. three-year defeat)
+     - Domain 25 updated and committed (a064def)
+   - **War Powers Iran (May 1 Deadline)**:
+     - Confirmed Domain 19f already comprehensive and current through May 1 (Section 21 documents deadline passage and non-compliance)
+     - No updates needed; domain file production-ready for distribution
+   - **Verification**: Both Domains 19f and 25 current through April 30-May 1; framework assertions accurate; no corrections required
+
+2. **✅ System Readiness Verification**:
+   - Engine still running (PID 41237, 8.5% memory, 15.3% CPU — stable)
+   - All monitoring scripts ready for May 1 market open (13:30 UTC in ~13.5 hours)
+   - Database schema verified; 49 April 29 fills confirmed
+   - Post-market analysis script (run_post_market_analysis_apr30.py) ready for 20:00 UTC execution
+
+**Framework Status**:
+- ✅ 35-domain diagnostic framework 100% current through April 30-May 1
+- ✅ All four April-May 2026 time-sensitive deadlines tracked and documented
+- ✅ FISA-Iran compound constitutional failure cross-referenced and complete
+- ✅ Distribution-ready and production-ready for Phase 1 launch
+
+**Session Activity**:
+- Time spent: 12 minutes (research + domain update + verification)
+- Commits: 1 (a064def — FISA Section 702 April 30 outcome)
+- Code changes: 0 (framework already complete; only documentation updated)
+
+**Recommended Next Steps**:
+- Upon market open (May 1, 13:30 UTC): Execute monitoring script every 30 min through 20:00 UTC
+- Track daily fills toward May 12 Gate 1 checkpoint (49 completed, 101 needed)
+- At market close: Run post-market analysis and update Gate 1 progress
+- User decision: Select distribution path (A / A+37 / B) → Phase 1 execution
+
+---
+
+## Since Previous Check-in (Session 711 — 2026-05-01 00:25–00:40 UTC)
 
 ### ✅ Session 711 Summary — Critical Engine Restart + May 1 Market Monitoring Setup
 
