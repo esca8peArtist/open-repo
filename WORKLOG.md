@@ -30,6 +30,24 @@
 
 ---
 
+## 2026-04-30 — mfg-farm — Production Scaling & Automation Deepening Analysis
+
+**Status**: COMPLETE
+
+**Deliverables**:
+- `projects/mfg-farm/production-scaling-research.md` — 3,200-word manufacturing playbook covering all 6 sections (batch production best practices, turnaround time modeling, supplier sourcing, cost structure, automation opportunities, failure mode prevention)
+- `projects/mfg-farm/cost-model-spreadsheet.csv` — Full cost model at 1/5/20/50/100 units/week with sensitivity scenarios, scaling decision thresholds, and assumption documentation
+
+**Key findings**:
+- Plate utilization is the #1 leverage point: 12-clip batches reduce effective print time per clip to 3–4 min vs. 10–15 min solo
+- Both ModRun parts are support-free; post-processing is <5 sec/clip and <50 sec/rail at standard finish
+- Startup capital recovered in Month 1 at 20 units/week; gross margins 67–73% at target throughput
+- Snap arm (1.4mm, SNAP_ARM_THICKNESS) is the highest mechanical risk point; functional test protocol specified
+- Pirate Ship + Bambu Farm Manager + Printago free tier provide full automation stack at $0 cost
+- Second printer trigger: 30–40 units/week sustained; payback 3–5 weeks
+
+---
+
 ### stockbot: April 30 Market Session Readiness
 
 **Pre-market verification completed** (Session 696, market open 13:30 UTC)
@@ -20054,5 +20072,20 @@ At 20:00 UTC: Execute Gate 1 Post-Market Analysis Framework.
 - Committed to stockbot submodule: commit `95d0528`
 
 **Critical Monitoring Metric**: `SELECT COUNT(*) FROM trades WHERE action='SELL'` — if this stays at 0, capital remains locked and Gate 1 fails.
+
+---
+
+### mfg-farm: Production Scaling & Automation Research
+
+✅ **COMPLETED** (Session 697, 10:48–10:56 UTC):
+- Research: Production scaling strategy (batch sizing, turnaround modeling, supplier sourcing, cost structure, automation, failure prevention)
+- Critical finding: **FDM_TOLERANCE calibration from test print is prerequisite** (0.05mm swing between click-fit and rattle-loose)
+- Cost analysis: COGS \$0.08–\$0.13/clip, \$1.79–\$2.38/rail; 72–73% gross margin at 20 units/week
+- Profitability model: \$950 startup capital recovered Month 1; \$7k–\$8.5k/month net profit at 100 units/week
+- Zero-cost automation stack (Pirate Ship + Bambu Farm Manager + Printago) viable through 50 units/week
+- Files: production-scaling-research.md (3,200 words), cost-model-spreadsheet.csv (scaling thresholds + sensitivity analysis)
+- Committed to master: commit `dda7a31`
+
+**Pre-test-print action**: Use FDM_TOLERANCE calibration as key evaluation metric during test print. Snap arm (1.4mm cantilever) is highest risk feature; must print with PLA+, 5-second layer time, 0.20mm height.
 
 ---
