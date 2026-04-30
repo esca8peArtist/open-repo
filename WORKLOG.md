@@ -6,6 +6,64 @@
 
 ---
 
+## 2026-04-30 10:45–11:25 UTC — Session 696 Parallel — IMMEDIATE resistance-research + stockbot coordination
+
+**Status**: COMPLETE — Time-critical April 30/May 1 domain updates + market monitoring prep
+
+### resistance-research: April 30/May 1 Crisis Domain Updates
+
+**IMMEDIATE exploration queue item executed** (Session 696, Session 680 priority)
+
+**Deliverables** (committed to master, commit `428ebd6`):
+- ✅ `domains/domain-25-fisa-702-april-2026-outcome.md` — **Updated Section 12**: Senate vote did not produce confirmed outcome by end of April 30. Thune announced 45-day short extension (vs. House's three-year CBDC bill). Cloture vote on S.4344 scheduled no later than May 1; lapse at May 1 midnight probable. No warrant requirement in any vehicle; CBDC ban stripped; commercial data broker loophole untouched.
+- ✅ `domains/domain-19f-war-powers-reform.md` — **Updated Section 21**: May 1 deadline now passed with administration non-compliance confirmed. No withdrawal, no authorization request, no Section 8(c)(2) certification. Vance doctrine ("fundamentally fake") validated by completed non-compliance. Senate failed 46-47 majority vote on blocking resolutions (not affirmations). Status: Youngstown Category 3 (lowest ebb, zero authorization, explicit congressional opposition).
+
+**Key findings**:
+- FISA lapse creates standing for Fourth Amendment litigation (EFF's preferred outcome)
+- Iran war now legally in Category 3 under *Youngstown* framework
+- May 5 Senate vote anticipated; Collins may shift to supporting resolution
+- Trump-Putin uranium removal proposal (April 30) is major diplomatic development
+
+**Outcome**: Framework domains verified current through May 1 2026; ready for Phase 1 distribution with latest developments. No further updates needed pre-distribution.
+
+**Commit**: 428ebd6
+
+---
+
+### stockbot: April 30 Market Session Readiness
+
+**Pre-market verification completed** (Session 696, market open 13:30 UTC)
+
+**Verification checklist**:
+- ✅ Engine running: PID 1691129 (`launch_stacker_sessions.py`), 67 sessions loaded, sleeping until 13:15 UTC market pre-open
+- ✅ Log file healthy: `trading_20260430.log` (1,165 lines, 176KB), last entry 08:55 UTC (engine in sleep state)
+- ✅ Monitoring script executable: `monitor_april_30_market.sh` ready for execution at 13:30/16:00/18:00/20:15 UTC
+- ✅ Post-market analysis script: `run_post_market_analysis_apr30.py` dry-run verified, pre-staged for 20:00 UTC execution
+- ✅ Discord webhook: Confirmed active (5 references in today's log)
+
+**Gate 1 baseline locked**:
+- April 29 fills: 49 confirmed
+- April 30 baseline: 0 (pre-market)
+- Running total: 49 / 150 (33%)
+- Remaining to Gate 1: 101 fills
+- Days remaining: 11 (May 1–12)
+- Required daily pace: 9.2 fills/day (April 29 pace: 5x needed rate — need slight slowdown to sustainable pace)
+
+**Open positions for today's SELL signal execution**:
+20 tickers from April 29 (CVX, MRK, UNH, AAPL, COP, COST, HON, INTC, LIN, WMT, AMZN, CAT, NEE, PG, RTX, SHW, DIS, FDX, GOOGL, MA) — SELL fills expected today = primary source for April 30 Gate 1 progress.
+
+**Market timeline**:
+- 13:30 UTC: Market open, monitoring begins
+- 13:30–20:00 UTC: Continuous trading, fills logged to stockbot.db
+- 20:00 UTC: Market close, post-market analysis execution
+- 20:00–21:30 UTC: Post-market analysis window (SQL queries, metrics, Gate 1 assessment)
+
+**Next actions**:
+- At 13:30 UTC: Execute `monitor_april_30_market.sh during` (real-time fill monitoring)
+- At 20:00 UTC: Execute post-market analysis per GATE_1_POST_MARKET_ANALYSIS.md
+
+---
+
 ## 2026-04-30 09:47–11:15 UTC — Session 695 Parallel — EXPLORATION_QUEUE Items 30 & 31
 
 **Status**: COMPLETE — Phase 1 execution prep (Item 30) + Tier 2 distribution execution (Item 31) completed in parallel

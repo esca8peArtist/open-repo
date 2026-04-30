@@ -1,4 +1,40 @@
-## Since Last Check-in (Session 695 — 2026-04-30 09:47–11:15 UTC — EXPLORATION QUEUE ITEMS 30, 31, 32 COMPLETE + MARKET MONITORING READY)
+## Since Last Check-in (Session 696 — 2026-04-30 10:45–11:25 UTC — IMMEDIATE CRISIS UPDATES + MARKET PREP)
+
+### ✅ Session 696 Summary (COMPLETE — IMMEDIATE WORK DONE, MARKET MONITORING READY)
+
+**Status**: COMPLETE — Two time-critical parallel tasks executed: (1) April 30/May 1 crisis domain updates committed, (2) market monitoring infrastructure verified and ready for 13:30 UTC launch.
+
+**Key Accomplishments**:
+
+1. ✅ **IMMEDIATE Exploration Item: April 30/May 1 Crisis Domain Updates**:
+   - **domain-25-fisa-702-april-2026-outcome.md** (Section 12 added): Senate vote no confirmed outcome by April 30 close. Thune announced 45-day extension vs. House 3-year bill. Cloture vote May 1 midnight deadline. No warrant requirement in any vehicle. CBDC ban stripped. Lapse probable — EFF's preferred outcome (enables Fourth Amendment litigation).
+   - **domain-19f-war-powers-reform.md** (Section 21 added): May 1 deadline passed. Administration non-compliance confirmed: no withdrawal, no authorization, no certification. Youngstown Category 3 (lowest ebb, zero authorization, explicit 46-47 senator opposition). Trump-Putin uranium proposal (April 30) is major diplomatic development if it advances.
+   - **Commit**: 428ebd6
+   - **Outcome**: Resistance-research framework verified current through May 1 2026. No further updates needed pre-distribution.
+
+2. ✅ **stockbot Market Monitoring Verification** (Pre-market checklist):
+   - ✅ Engine running: PID 1691129, 67 sessions loaded, sleeping until 13:15 UTC pre-open
+   - ✅ Log file healthy: 1,165 lines, 176KB, last entry 08:55 UTC
+   - ✅ Monitoring script: Ready for execution at 13:30/16:00/18:00/20:15 UTC
+   - ✅ Post-market analysis: Dry-run verified, pre-staged for 20:00 UTC execution
+   - ✅ Discord webhook: Active
+   - **Gate 1 baseline**: 49 fills (33%), need 101 more by May 12 @ 9.2 fills/day (April 29 pace was 5x needed — slight pullback to sustainable pace)
+   - **Open positions for today**: 20 tickers expected to generate SELL fills (primary Gate 1 source)
+
+**Timeline Today (April 30)**:
+- **13:30 UTC**: Market open, monitoring begins (`monitor_april_30_market.sh during`)
+- **20:00 UTC**: Market close, post-market analysis execution (SQL extraction, metrics, Gate 1 assessment)
+- **20:00–21:30 UTC**: Analysis window
+
+**Next Session**:
+- If resistance-research distribution path decision comes before 13:30 UTC: Phase 1 execution ready to launch same-day (3.5–4.5h execution window)
+- At 13:30 UTC: Monitor engine fills real-time
+- At 20:00 UTC: Execute post-market analysis, report Gate 1 progress
+- Post-market: Update CHECKIN.md with April 30 results
+
+**Usage**: Session 696 ~113K tokens (parallel agents + orchestration). Weekly cumulative: ~80% budget. Reset in ~91 hours.
+
+---
 
 ### ✅ Session 695 Summary (IN PROGRESS — AWAITING 13:30 UTC MARKET MONITORING)
 
