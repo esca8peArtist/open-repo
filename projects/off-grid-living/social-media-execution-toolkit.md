@@ -115,15 +115,15 @@ The tightest audience fit. Post first so that early engagement comes from people
 
 Rationale for posting r/offgrid before HN: HN readers sometimes discover Reddit posts and link to them, not the reverse. Building Reddit traction first means HN commenters may find an existing conversation to reference.
 
-**Day 2 — Wednesday, 13:00–15:00 UTC: HackerNews "Show HN"**
+**Day 2 — Wednesday, 12:00–15:00 UTC: HackerNews "Show HN"**
 
-HN's peak engagement window for Show HN posts is US morning hours, specifically 13:00–15:00 UTC (08:00–10:00 ET). Multiple independent analyses converge on this window as the highest-probability slot for staying visible on the front page long enough to gain the early velocity (5+ points in the first 30 minutes) required for algorithmic lift.
+HN's peak engagement window for Show HN posts centers on 12:00 UTC, which a large-scale analysis of Show HN submissions identifies as the single top-performing hour (12.2% breakout rate, defined as 30+ votes). The broader golden window is 11:00–16:00 UTC, all above 10.5% breakout rate. A contrarian option supported by data: Sunday at 12:00–16:00 UTC achieves the highest breakout rates (11.75% overall vs ~9.5% on weekdays, with Sunday 11:00–16:00 UTC reaching 12–14%) because competition is lower while engagement remains strong. If you are willing to monitor on a Sunday, posting at 12:00–13:00 UTC Sunday is arguably the higher-probability slot. If you prefer a weekday, Wednesday 12:00 UTC is the recommended choice.
 
 Title format: "Show HN: A 17-domain open-source guide to off-grid and disaster preparedness" — factual, specific, no hyperbole. Link to the GitHub README, not a Medium article. HN readers go to source material.
 
 Monitor every 30 minutes for the first 2 hours. Respond to all comments within the first 3 hours while the post is still on the front page or new queue. A prompt, substantive response to the first critical comment is disproportionately valuable.
 
-Bimodal expectation: Either the post gains traction (10+ upvotes in the first hour, resulting in 200–2,000 views) or it does not (2–5 upvotes, 50–100 views). There is limited middle ground. Do not resubmit if it fails — HN prohibits resubmission of the same URL.
+Bimodal expectation: A 2024–2025 study tracking 138 AI/documentation repo launches on HN found that repositories gaining traction average 121 stars in the first 24 hours, 189 stars in 48 hours, and 289 stars in 7 days — but median values run much lower. Either the post gains early velocity (10+ upvotes in the first hour) or it does not. There is limited middle ground. Do not resubmit if it fails — HN prohibits resubmission of the same URL. Posting timing alone can mean a difference of ~200 stars vs the counterfactual, per the same study.
 
 **Day 2 evening or Day 3 — Wednesday 18:00 UTC or Thursday 13:00–15:00 UTC: Twitter/X thread**
 
@@ -384,3 +384,5 @@ Research used in constructing this document:
 - [Reddit Replaces Subreddit Member Totals With Active User Stats — digitalmarketreports.com](https://digitalmarketreports.com/news/48297/reddit-replaces-subreddit-member-totals-with-active-user-stats/)
 - [Similar Subreddits To r/preppers By User Overlap — subredditstats.com](https://subredditstats.com/subreddit-user-overlaps/preppers)
 - [Similar Subreddits To r/homesteading By User Overlap — subredditstats.com](https://subredditstats.com/subreddit-user-overlaps/homesteading)
+- [Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools (2024–2025 study, 138 repositories) — arxiv.org](https://arxiv.org/abs/2511.04453)
+- [Best Time to Post on Show HN — Myriade analysis of breakout rates by hour and day](https://www.myriade.ai/blogs/when-is-it-the-best-time-to-post-on-show-hn)

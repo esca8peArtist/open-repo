@@ -15,7 +15,7 @@ Use this as a week-by-week execution checklist. Replace `[DATE]` with actual dat
 | Day | Platform | UTC Window | Angle | Action |
 |-----|----------|-----------|-------|--------|
 | Day 1 — Tuesday | r/offgrid | 10:00–12:00 | Full guide: real specs, interconnected systems | Post text thread; respond to first 5 comments within 1 hour |
-| Day 2 — Wednesday | HackerNews | 13:00–15:00 | "Show HN: 17-domain open-source off-grid guide" | Submit; monitor every 30 min for 2 hours; respond to all comments |
+| Day 2 — Wednesday | HackerNews | 12:00–15:00 UTC (or Sunday 12:00–14:00 UTC for higher breakout rate) | "Show HN: 17-domain open-source off-grid guide" | Submit; monitor every 30 min for 2 hours; respond to all comments |
 | Day 2 evening | Twitter/X | 18:00–20:00 | 7-tweet thread; pin tweet 1 | Post thread; do not add to it for 48 hours |
 | Day 4 — Friday | r/preppers | 10:00–12:00 | Disaster/nuclear angle, FEMA/CDC sources | Post text thread; respond to comments; flag factual questions to GitHub |
 | Day 5 — Weekend | Dev.to | Any time | "Open-source knowledge infrastructure — project structure" | Publish; add tags: #opensource #homesteading #tools |
