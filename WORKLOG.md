@@ -4,6 +4,61 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 04:30 UTC — Orchestrator Session 676 — DOMAIN UPDATES + POST-TRADING ANALYSIS INTEGRATION
+
+**Status**: ✅ COMPLETE — Urgent resistance-research domain updates executed (Iran May 1 WPR deadline passed, SPLC indictment + Wilcox ruling integrated). Stockbot post-trading analysis framework integrated with Phase 2 dashboard; trade lifecycle hooks (entry context/attribution) wired; 21 new tests passing.
+
+**Work Completed**:
+
+### Resistance-Research Domain Updates (Parallel Agent) ✅
+**Scope**: Three urgent domain updates following May 1 deadline + April 2026 developments
+
+1. **Domain 19f (War Powers Reform) — Section 18 added**
+   - **Context**: Iran WPR 60-day deadline passed May 1, 2026 without authorization/withdrawal/court filing
+   - **Update**: Added Trump "Don't rush me" non-response; deepened Vance/Youngstown analysis (three Youngstown premises Vance doctrine discards); Goldwater v. Carter downstream risk for NATO/Taiwan
+   - **Sources**: Al Jazeera, CNN, Time, The Hill; 9+ new citations
+
+2. **Domain 29 (Prosecutorial Weaponization) — Section 17 added**
+   - **Context**: SPLC arraignment confirmed May 7, 2026; covers government charging theory replicability at state AG level
+   - **Update**: Added state fraud statute template effect; identified state shield legislation as protective counter-measure
+   - **Sources**: The Hill (April 29), Alabama Reporter (April 29), court dockets
+
+3. **Domains 6 & 35 (Executive Power & Judicial Capture) — Sections 7 & 12 added**
+   - **Context**: Trump v. Wilcox shadow-docket effectively overruled Humphrey's Executor (NLRB, FTC, CFPB documented structural collapses)
+   - **Update**: Documented functional overruling via two-stage Wilcox mechanism; 8-week advocacy window before Slaughter ruling; state legislative vehicles (CA AB 1456, NY S.8234)
+   - **Sources**: SCOTUSblog, Lawfare, Supreme Court opinions, Missouri Law Review
+
+**Files updated**: domains/19f, 29, 6, 35 + WORKLOG.md (resistance-research subagent tracking)
+
+### Stockbot Post-Trading Analysis Integration (Parallel Agent) ✅
+**Scope**: Wire performance attribution framework → Phase 2 dashboard pipeline
+
+1. **Trade lifecycle hooks implemented**:
+   - **`_post_buy_attribution_hook()`**: Records entry context (HMM regime, volatility tier, SHAP features, Kelly/vol/HMM scalars) immediately after BUY confirmation
+   - **`_post_sell_attribution_hook()`**: Attributes round-trip (P&L categorization, regime correlation, feature importance) after SELL confirmation; writes to SELL trade notes
+   - **Both hooks**: Fully non-blocking (errors logged at WARNING, trading continues)
+
+2. **Monthly archive infrastructure**:
+   - Changed path: `reports/monthly_attribution_YYYY_MM.json` → `logs/monthly_attribution/YYYY-MM.json` (matches cron_sync_db.sh directory)
+   - `_maybe_send_monthly_attribution_summary()` now writes to correct path with directory creation
+
+3. **Cron snapshot for dashboard pipeline**:
+   - `scripts/cron_sync_db.sh` extended: after Alpaca sync, runs `post_trade_analysis.py --output-format dashboard-json --mode ALL` → `ui-mockup/attribution_data.json`
+   - Dashboard.html Attribution tab already calls `fetch('attribution_data.json')` on open — pipeline complete
+   - Non-fatal failure (doesn't block trading)
+
+4. **Integration testing**: 21 new tests in `test_post_trade_integration.py`
+   - Full BUY→context→SELL→attribution lifecycle
+   - Hook isolation (None indicators, no db_path, no matching BUY)
+   - Monthly archive naming, cron CLI snapshot, Discord payload structure
+   - **All pass**: 360 analytics tests, 881 trading session tests
+
+**Constraint honored**: Entry-context recording fires on every BUY, but April 29 fills (pre-commit) have no entry context. First SELL legs (expected May 9+) will attribute via price-delta categorization only. Zero schema changes to trading_session.db.
+
+**Files updated**: trading_session.py, scripts/cron_sync_db.sh, test_post_trade_integration.py (new)
+
+---
+
 ## 2026-04-30 03:50 UTC — Orchestrator Session 675 — STOCKBOT HEALTH VERIFICATION + SEEDWARDEN PHASE 2 TRACK B READINESS ASSESSMENT
 
 **Status**: ✅ COMPLETE — Stockbot engine health verified (April 30 pre-market); all systems ready for 13:15 UTC market open. Seedwarden Phase 2 Track B readiness fully assessed; zero hard blockers identified. Consolidated checklist created for photo shoot and Canva zone card production.

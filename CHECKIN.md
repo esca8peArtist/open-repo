@@ -1,3 +1,40 @@
+## Since Last Check-in (Session 676 — 2026-04-30 04:30 UTC — DOMAIN UPDATES + POST-TRADING INTEGRATION)
+
+### ✅ Session 676 Summary
+
+**Status**: COMPLETE. Resistance-research domain updates executed (Iran May 1 deadline + SPLC/Wilcox rulings). Stockbot post-trading framework integrated with Phase 2 dashboard; trade lifecycle hooks + monthly archival + cron snapshot pipeline complete. 21 new tests passing.
+
+**Work Completed**:
+
+1. ✅ **Resistance-Research Domain Updates** (Parallel Agent)
+   - **Domain 19f (War Powers)**: Iran WPR deadline passed May 1; Vance/Youngstown analysis deepened; Goldwater v. Carter downstream risk (NATO/Taiwan)
+   - **Domain 29 (Prosecutorial Weaponization)**: SPLC arraignment May 7; state AG template effect + shield legislation counter-measure
+   - **Domains 6+35 (Executive Power & Judicial Capture)**: Wilcox shadow-docket functional overruling; NLRB/FTC/CFPB structural collapse; 8-week advocacy window before Slaughter ruling
+   - **Sources**: 15+ new citations (Al Jazeera, CNN, Time, The Hill, SCOTUSblog, Lawfare, Supreme Court opinions)
+
+2. ✅ **Stockbot Post-Trading Analysis Integration** (Parallel Agent)
+   - **Trade lifecycle hooks**: `_post_buy_attribution_hook()` (entry context) + `_post_sell_attribution_hook()` (attribution) wired post-fill
+   - **Monthly archival**: Path corrected (`logs/monthly_attribution/YYYY-MM.json`), directory creation automated
+   - **Cron snapshot**: `cron_sync_db.sh` extended to generate dashboard JSON; `attribution_data.json` fed to dashboard.html Attribution tab
+   - **Tests**: 21 new integration tests (all pass); full lifecycle coverage (BUY→context→SELL→attribution)
+   - **Constraint**: April 29 fills (pre-commit) have no entry context; first SELL legs May 9+ will use price-delta attribution
+
+**Projects Status**:
+- ✅ **resistance-research**: Domain updates complete (19f, 29, 6, 35); Phase 1 framework approved, awaiting distribution path decision
+- ✅ **stockbot**: Engine running, post-trading integration complete, tests passing, ready for May 12 checkpoint
+- ⏳ **seedwarden**: Phase 2 Track B planning complete, awaiting Brand Kit setup (user action)
+- 🚫 **mfg-farm**: Test print blocked
+- 🚫 **open-repo**: PR #1 awaiting review
+
+**Next Steps**:
+- **April 30, 13:15 UTC**: Stockbot market open; monitor for first SELL signal execution (expected May 1–9)
+- **May 1+**: May 2026 civic tracker weekly update (scheduled routine)
+- **Awaiting user**: Distribution path (resistance-research), Brand Kit setup (seedwarden), test print (mfg-farm)
+
+**Usage**: Session 676 added ~120K tokens (parallel agents for domain updates + post-trading integration). Sonnet budget: ~2.5% → minimal remaining.
+
+---
+
 ## Since Last Check-in (Session 675 — 2026-04-30 03:50 UTC — STOCKBOT + SEEDWARDEN PARALLEL VERIFICATION)
 
 ### ✅ Session 675 Summary
