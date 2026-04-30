@@ -20896,3 +20896,17 @@ Session ending to allow market monitoring to run at 13:30 UTC.
 - **Business Value**: Eliminates ambiguity at May 12 checkpoint; provides explicit go/no-go criteria for each scenario
 - **Status**: READY FOR USER REFERENCE during May 1-12 monitoring period
 
+
+**Exploration Queue Item Completed: resistance-research Domain 37 Pre-Distribution Baseline Metrics**:
+- **Deliverable**: `projects/resistance-research/domain-37-baseline-metrics.md` (176 lines, production-ready)
+- **Content**: 4 quantified baseline metrics established as of May 1, 2026 (pre-distribution):
+  - DOJ voter roll litigation: 23 active cases (tracked via PACER)
+  - CISA election security budget: $700M proposed cut (tracked via Congress.gov)
+  - DHS/DOJ election denier appointments: 11+ positions (tracked via federal databases)
+  - Section 3 litigation readiness: 3-5 state AGs prepared (tracked via AG statements + court filings)
+- **Measurement Infrastructure**: Spreadsheet templates (created now, populated ongoing), 4-phase implementation plan (May 2026 → 2027+)
+- **Success Metrics**: Binary (framework cited Y/N) + directional trends (count changes, policy outcomes)
+- **Business Value**: Enables rigorous pre-post measurement of framework impact on institutional adoption; supports Phase 1 launch evaluation
+- **Critical Windows**: Budget vote (Sept 30), Section 3 litigation (Dec 2026 onward)
+- **Status**: READY FOR USER REFERENCE post-Phase-1-launch-decision
+
