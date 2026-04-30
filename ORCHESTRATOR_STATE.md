@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-30T01:07:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-30T01:53:05Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.1% (190,109 tokens) | All-models 56.9% | Reset in 119h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.1% (190,109 tokens) | All-models 57.5% | Reset in 118h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -37,7 +37,7 @@
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
-**Focus**: **Phase 2 Production Planning COMPLETE (Session 662)**. Mockup sourcing status: 63 mockups complete (slots 1-3, all 21 products). Missing: 42 lifestyle/in-use images (slots 4-5, rolling production per Cluster schedule). Pin production ready: first 21 pins buildable this week; can launch within 3-5 d
+**Focus**: **Phase 2 Track B planning COMPLETE (Session 670)**. Five new production documents created: `PHOTO_SHOOT_PLANNING.md` (shot list for all 15 physical lifestyle photos, Clusters A/B/C, 6.5-8.5h batching), `ZONE_CARD_PRODUCTION_TIMELINE.md` (week-by-week Canva build plan for 8 zone PDFs + Kit email del
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
