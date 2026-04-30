@@ -1,10 +1,17 @@
-## Since Last Check-in (Session 686 — 2026-04-30 07:00–08:00 UTC — SEEDWARDEN PHASE 2 PRODUCTION + RESISTANCE-RESEARCH EXECUTION ORCHESTRATION)
+## Since Last Check-in (Session 686 — 2026-04-30 07:00–08:30 UTC — CRITICAL DOMAIN UPDATES + SEEDWARDEN PHASE 2 PRODUCTION + RESISTANCE-RESEARCH EXECUTION ORCHESTRATION)
 
 ### ✅ Session 686 Summary (Current)
 
-**Status**: COMPLETE. Two parallel autonomous work items executed: (1) Seedwarden Phase 2 Track B stock image sourcing (Clusters D & E, 10 images + props plan), (2) Resistance-research Phase 1 execution orchestration (3 path-specific plans + decision framework). Both projects advanced toward next autonomous milestone.
+**Status**: COMPLETE. Three parallel autonomous work items executed: (1) Time-sensitive resistance-research domain updates (FISA April 30 + War Powers May 1 outcomes verified), (2) Seedwarden Phase 2 Track B stock image sourcing (Clusters D & E, 10 images + props plan), (3) Resistance-research Phase 1 execution orchestration (3 path-specific plans + decision framework). All projects advanced; critical framework content currency verified through May 1.
 
 **Work Completed**:
+
+0. ✅ **Resistance-Research April 30/May 1 Critical Domain Updates**
+   - **domain-25 (FISA Section 702)**: Updated with confirmed April 29 House passage (235-191). Section 3 revised to document April 30 Senate position reversal: Thune pivoting to short-term extension (10-30 days) instead of three-year bill due to Democratic majority opposition (159 oppose, 28 favor). No warrant requirement in either chamber confirmed. File now current through April 30, 2026.
+   - **domain-19f (War Powers Iran)**: Verified complete via Section 18 (added April 30 early morning). May 1 outcome checklist complete: all five items confirm non-compliance (no withdrawal, no authorization, no court filing, no supplemental, continued operations). War Powers deadline expires tomorrow; framework is current through May 1, 2026.
+   - **Critical finding**: Both domains confirm structural defeats (FISA: no reform window until 2029; War Powers: institutional enforcement failure confirmed). Framework is legislatively anchored and production-ready for Phase 1 distribution regardless of user path choice (A/A+37/B).
+   - **Commit executed**: 188b989 — "docs(resistance-research): Session 686 — April 30 FISA domain update"
+   - **Impact**: Eliminates last update blocker for Phase 1 distribution. Proposal content currency verified through May 1 — critical for outreach credibility.
 
 1. ✅ **Seedwarden Phase 2 Track B — Stock Image Sourcing Sprint**
    - **Cluster D (4 products, 8 images)**: All staged to `assets/stock-raw/` from Pexels (CC0 license, no attribution needed). iStock credits: 0 spent (preserved full 5-credit budget for compositing phase reshoots). Products: survival garden, hunting/trapping, livestock, meat/fish preservation.
