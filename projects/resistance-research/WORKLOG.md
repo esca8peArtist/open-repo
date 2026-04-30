@@ -2,6 +2,38 @@
 
 ---
 
+## April 30, 2026 — FISA April 30 Outcome + Iran May 1 Deadline Verification Session
+
+**Session type**: Mandatory pre-distribution domain verification — both crisis deadline domains
+**Files updated**: domain-19f-war-powers-reform.md (Section 19.1a added), PROJECTS.md (monitoring flags resolved)
+
+### Research Conducted
+
+**FISA Section 702 (April 30 deadline)**: Conducted 12+ targeted web searches for Senate vote outcome (S.4344 cloture, Thune 45-day extension). Verified: House passed S.1318 235-191 on April 29 (confirmed in all sources). Senate cloture vote on S.4344 scheduled "no later than May 1" per UC agreement; Senate action after midnight April 30 not yet reflected in indexed reporting as of this session. Two most probable outcomes (45-day short extension by voice vote, OR three-year S.4344 via cloture) both documented in Domain 25 Sections 9-10. Domain 25 is current through April 30 — outcome fills into checklist when Senate action confirmed.
+
+**Iran War Powers (May 1 deadline)**: Verified that Domain 19f Sections 18 and 19 (added Session 689) already document the confirmed non-compliance outcome across all five checklist items. "Don't rush me" Trump statement confirmed. No court filing. No supplemental. Operations continuing. Senate Schiff sixth vote announced for "end of this week." Collins pre-deadline commitment documented. Framework is complete.
+
+**New facts identified this session** (not previously documented in domain files):
+- Hegseth April 29 House Armed Services hearing: $25 billion cost confirmed in testimony; no end date given; "biggest adversary" framing; Pentagon firings pressed by Democrats
+- USS Gerald R. Ford carrier strike group expected to leave Middle East "in coming days"
+- Trump spoke with Putin about potentially removing Iran's enriched uranium from Iranian territory — most significant diplomatic development since Islamabad talks collapsed
+- Brent crude $125/barrel; EU $600M daily losses; U.S. gas $4.23/gallon ($1.98 rise since February 28)
+
+### Files Updated
+
+1. **`domains/domain-19f-war-powers-reform.md`** — Section 19.1a added with Hegseth testimony, Ford carrier, Trump-Putin uranium discussion, oil prices; header updated
+2. **`PROJECTS.md`** — Overall status updated to "current through May 1, 2026"; Session 678 monitoring flags resolved with confirmed status of both FISA and WPR domains; pending items listed for next session
+
+### What Remains Pending
+
+- FISA Senate vote mechanism and outcome (voice vote 45-day OR cloture S.4344 three-year); presidential signature date; new expiration date
+- Schiff sixth Senate war powers vote — scheduling and outcome
+- Collins post-May 1 position (did pre-deadline commitment produce a yes vote?)
+- Iran supplemental appropriations submission window (May 15-30)
+- EFF/ACLU FISA litigation filing announcement (expected within 30-60 days of enactment)
+
+---
+
 ## April 30, 2026 — Domain Updates: Iran May 1, SPLC Arraignment, Trump v. Wilcox/Slaughter
 
 **Session type**: Three-domain content update — May 1 deadline critical, SPLC state-level pattern, Wilcox/Slaughter removal power
