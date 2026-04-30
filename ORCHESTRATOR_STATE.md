@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-30T13:20:50Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-30T15:49:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.1% (190,109 tokens) | All-models 71.6% | Reset in 107h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.1% (190,109 tokens) | All-models 73.2% | Reset in 104h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
