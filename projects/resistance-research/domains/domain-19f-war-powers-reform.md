@@ -1,7 +1,7 @@
 # Domain 19f: War Powers Reform
 
 **Diagnostic domain created**: Session 502 (2026-04-27)
-**Last updated**: April 30, 2026 (~11:15 UTC) — Section 20 added: May 1 deadline current-session verification; non-compliance trajectory confirmed across all indicators; Collins post-deadline accountability commitment documented; Schiff sixth Senate vote announced; supplemental appropriations not submitted; ceasefire clock-pause theory identified as probable post-May 1 administration legal move; FISA-Iran compound constitutional failure cross-reference. Prior (Session 689): Section 19 supplemented — Hegseth House Armed Services hearing April 29 documented; $25 billion cost estimate confirmed; USS Gerald R. Ford carrier departure confirmed; Trump-Putin uranium removal discussion. Section 18 added: May 1 outcome checklist completed (non-compliance confirmed across all five items); Vance doctrine deepened against Youngstown; Domain 28 two-prong doctrine synthesis completed. Prior: April 28, 2026 — Added Sections 13-17.
+**Last updated**: April 30, 2026 (end-of-day) — Section 21 added: May 1 deadline confirmed passed without compliance; administration non-compliance documented; Schiff sixth vote announced for week of May 5; Collins accountability commitment tracking; Hegseth "illegal war" framing adopted by Senate Democrats; Trump asserts ceasefire clock-pause theory informally; diplomatic track (Trump-Putin uranium proposal) still live; enforcement calendar opened. Prior (~11:15 UTC): Section 20 added: May 1 deadline current-session verification; non-compliance trajectory confirmed across all indicators; Collins post-deadline accountability commitment documented; Schiff sixth Senate vote announced; supplemental appropriations not submitted; ceasefire clock-pause theory identified as probable post-May 1 administration legal move; FISA-Iran compound constitutional failure cross-reference. Prior (Session 689): Section 19 supplemented — Hegseth House Armed Services hearing April 29 documented; $25 billion cost estimate confirmed; USS Gerald R. Ford carrier departure confirmed; Trump-Putin uranium removal discussion. Section 18 added: May 1 outcome checklist completed (non-compliance confirmed across all five items); Vance doctrine deepened against Youngstown; Domain 28 two-prong doctrine synthesis completed. Prior: April 28, 2026 — Added Sections 13-17.
 **Crisis window**: February-May 2026 (Operation Epic Fury / 60-day War Powers deadline)
 **Priority designation**: Priority 1 per post-Domain-26 completeness audit
 **Cross-domain connections**: Domain 19 (National Security/Foreign Policy), Domain 18 (Social Safety Net/Defense Budget), Domain 2 (Civil Service/Executive Accountability), Domain 5 (Fiscal Reform), Domain 6 (Judicial Independence)
@@ -1159,3 +1159,97 @@ Sources:
 *Section 20 added: April 30, 2026 (~11:15 UTC)*
 *Status: May 1 WPR deadline non-compliance trajectory confirmed as of April 30 morning — no administration compliance statement, no withdrawal order, no congressional authorization, no lawsuit filed. Naval blockade continues. Collins post-deadline accountability commitment documented. Schiff sixth vote announced for end of week. Supplemental appropriations request not submitted (May 15-30 window remains). Ceasefire clock-pause theory identified as probable post-May 1 administration legal move but not yet formally asserted. FISA-Iran compound constitutional failure cross-reference established.*
 *Key updates: Trump's "Don't rush me" statement documented as the only administration acknowledgment of the deadline; Schiff sixth post-deadline vote announcement recorded; Democratic lawsuit track final pre-deadline status (early-stage, not filed, Campbell v. Clinton obstacle remains); deliberate withholding of Iran supplemental appropriations request documented as strategic fiscal delay; April 30 concurrent legislative calendar (FISA + WPR + DHS) analyzed as "constitutional flooding" tactic; May-November 2026 enforcement calendar outlined (supplemental window, conditional authorization track, midterm accountability).*
+
+---
+
+## Section 21: May 1, 2026 — 60-Day Deadline Confirmed Passed; Non-Compliance Operative
+
+**Added**: April 30, 2026 (end-of-day) / May 1, 2026
+
+### 21.1 The Deadline Has Now Passed: What Is Confirmed
+
+As of May 1, 2026, the 60-day window under the War Powers Resolution has expired. The confirmed facts as of end-of-business April 30:
+
+**Administration (confirmed non-compliance across all indicators):**
+- No withdrawal order issued
+- No request for congressional authorization submitted to either chamber
+- No Section 8(c)(2) certification of unavoidable military necessity for the 30-day withdrawal extension submitted
+- Naval blockade of Iranian ports continues; USS Gerald R. Ford departure does not constitute cessation of hostilities under WPR terminology
+- Trump's only public statement on the deadline: "Don't rush me" — active dismissal, not engagement
+- Vance doctrine ("fundamentally fake and unconstitutional law") operative; no administration official has publicly retreated from this position
+- State Department Rubinstein memo (April 21) remains the administration's legal record — it addresses international law, not the WPR 60-day clock, and the "ceasefire clock-pause" and "ongoing conflict since June 2025" theories it implies have not been formally invoked in any congressional communication
+
+**Congressional status as of deadline passage:**
+- Five Senate war powers resolutions blocked; maximum affirmative vote was 47 senators on the fifth resolution (April 23, 46-51)
+- House failed 215-215 on H.Con.Res. 38 — Speaker held floor open 20+ minutes to prevent passage
+- Senator Schiff announced he will force a sixth Senate vote at the end of the week of May 5 — the first post-deadline vote, carrying different framing: no longer pre-emptive prevention, now post-hoc enforcement of a violated statute
+- Senator Collins stated she is "open to supporting" a war powers resolution after the deadline — first Republican senator to explicitly cross this threshold as a stated position (Rand Paul has voted yes throughout, but as a libertarian-constitutionalist position, not specifically tied to the 60-day clock)
+- Senator Murkowski's AUMF draft still in circulation; no text released publicly; no cosponsors confirmed
+- No lawsuit filed as of April 30; Democratic leadership described as in "early stage" discussions; Campbell v. Clinton (D.C. Circuit, 1999) standing obstacle remains the primary legal barrier
+
+**Diplomatic track (most significant development — could affect hostilities assessment):**
+- Trump-Putin call on April 30 included discussion of removing Iran's enriched uranium stockpile from Iranian territory under international supervision as part of a potential resolution framework
+- This is the most significant diplomatic development since the Islamabad talks collapsed April 25
+- If Iranian uranium is removed and a formal ceasefire agreement is signed with verification mechanisms, the administration will likely argue hostilities have ceased — potentially satisfying WPR's termination provision without a congressional vote and without a military withdrawal
+- This diplomatic scenario is not yet confirmed; Iran boycotted the most recent negotiation round, and the U.S. maintains the blockade
+
+### 21.2 What Non-Compliance Means: The Precedent Is Now Set
+
+The most consequential fact about May 1, 2026 is not that the administration violated the War Powers Resolution — every administration since Nixon has questioned its constitutionality and acted contrary to its literal requirements in some form. The precedent that is now set is the public explicitness of the defiance:
+
+**The Vance doctrine is now post-hoc validated by inaction.** The January 2026 "fundamentally fake and unconstitutional law" statement was a pre-announcement of non-compliance. Non-compliance on May 1 transforms that statement from a political position into an operative constitutional precedent. Every future administration — of any party — will cite April-May 2026 as the moment the 60-day clock was publicly and explicitly ignored without consequence.
+
+**The Youngstown Category 3 problem is now fully mature.** Under *Youngstown*, the president's power is "at its lowest ebb" when acting against express congressional will. The Senate's five blocking votes were blocking resolutions to end the war — they were not affirmative authorizations. Blocking resolutions that fail are not the same as congressional authorization. The administration is conducting extended military operations with no affirmative congressional authorization and against the express opposition of 46-47 senators. This is unambiguously in *Youngstown*'s Category 3 — but the enforcement mechanism does not exist.
+
+**The enforcement gap is now documented in the most direct way possible.** The 50-year history of the War Powers Resolution has always been that no court has forced presidential compliance and no Congress has successfully invoked the termination mechanism. That history is now extended with the most explicit case: an administration that publicly pre-announced it would not comply, did not comply, and faced no judicial or legislative consequence as of the deadline.
+
+### 21.3 The Post-May 1 Enforcement Calendar: Confirmed Live Tracks
+
+The following enforcement mechanisms are now active as of May 1, 2026:
+
+**Track 1 — Schiff sixth Senate vote (week of May 5):**
+This vote is the first to carry the post-deadline framing. The question is no longer whether to prevent Trump from going past 60 days — he already has. The question is whether the Senate will vote to require retroactive authorization or force withdrawal. The political significance: senators who vote no on the sixth vote are no longer deferring to a president's claimed authority within the 60-day window. They are ratifying a completed statutory violation.
+
+Collins's pre-deadline statement creates accountability pressure for Vote 6. If she votes no again, the statement becomes meaningless and the bipartisan coalition strategy loses its most viable Republican recruit. If she votes yes, it is the first Republican defection other than Rand Paul on a war powers vote, and the 47-vote ceiling rises — potentially reaching the 51 needed for simple majority passage in a future reconciliation or appropriations vehicle context.
+
+**Track 2 — Democratic lawsuit (developing):**
+Time's April 28 reporting confirmed Democrats are in "early stage" discussions about suing Trump if he continues past the deadline. The lawsuit would face the Campbell v. Clinton standing obstacle — courts have repeatedly held that individual members of Congress lack standing to enforce the WPR against the executive because they have not exhausted legislative remedies (appropriations restriction being the primary unexhausted remedy). For a lawsuit to succeed, Democrats would need to either exhaust the appropriations remedy first or find a plaintiff with broader standing (e.g., a service member compelled to serve in an unauthorized conflict).
+
+**Track 3 — Appropriations restriction (Strategic Window 1: May 15-30):**
+If the Iran supplemental appropriations request is submitted in this window, the Collins Appropriations Committee leverage activates. If the administration delays the supplemental and uses reprogramming, this leverage window closes until the next appropriations cycle. The administration's strategic incentive is to delay the supplemental precisely to prevent the appropriations leverage from crystallizing.
+
+**Track 4 — Conditional AUMF (Murkowski track, June-July 2026):**
+A conditional authorization — geographic scope limits, exit conditions, congressional reporting requirements, sunset provision — is more politically achievable than an open-ended authorization or a withdrawal resolution. The Murkowski draft, if it reaches the floor, represents the Republican alternative to Democratic enforcement pressure. Its danger from a civil liberties and war powers reform perspective: a conditional AUMF retroactively legalizes the February 28 strikes under congressional authorization doctrine, potentially immunizing the administration from any WPR enforcement claim.
+
+**Track 5 — Diplomatic resolution (Trump-Putin uranium removal proposal):**
+If Iranian uranium is removed and a formal settlement is reached, the administration will argue the war is over and the WPR question is moot. This is the outcome the administration most prefers because it sidesteps the WPR enforcement question while claiming a "deal" as political victory. Monitor for any Iranian response to the uranium removal proposal.
+
+### 21.4 What This Means for Distribution Framework and Domain Accuracy
+
+For the framework's Phase 1 distribution purposes, the domain-19f record through May 1 is accurate and current. The key facts to surface in any distributed content:
+
+1. The 60-day War Powers clock expired May 1 with no authorization and no withdrawal. The administration expressly pre-announced non-compliance. This is now completed historical fact.
+2. Congress has not authorized and cannot force compliance through floor votes alone — the appropriations mechanism is the primary remaining enforcement lever.
+3. The ceasefire is live but fragile (Iran boycotted the last round; blockade continues; shipping disruption ongoing at $600M/day EU losses; Brent crude $125/barrel).
+4. A diplomatic resolution (uranium removal framework) is live but unconfirmed — this could change the hostilities assessment.
+5. The post-deadline vote by Senator Schiff (week of May 5) is the next accountability inflection point. Watch Collins's vote.
+
+Sources:
+- [CSMonitor: Congress Presses Hegseth on Iran War Justification, Spending, and Conduct (April 30, 2026)](https://www.csmonitor.com/USA/Politics/2026/0430/hegseth-iran-war-congress-deadline)
+- [Time: Republicans Brace for Iran War's 60th Day — and Big Test of Congress (April 14, 2026)](https://time.com/article/2026/04/14/republicans-face-crucial-test-on-iran-war-as-60-day-deadline-looms/)
+- [Fox News: War Powers Act Deadline Looms as Senate Republicans Block Iran War Vote](https://www.foxnews.com/politics/senate-gop-blocks-fifth-dem-bid-end-trumps-iran-war-divisions-grow)
+- [Time: Scoop — Democrats May Sue Trump Over 'Illegal' Iran War (April 28, 2026)](https://time.com/article/2026/04/28/exclusive-democrats-explore-suing-trump-if-congress-doesn-t-authorize-iran-war/)
+- [Responsible Statecraft: GOP Senators Want to Give Trump Official Blessing for Iran War](https://responsiblestatecraft.org/iran-war-aumf/)
+- [Al Jazeera: After 60 Days of War in Iran, Does US Congress Want a Say? (April 28, 2026)](https://www.aljazeera.com/news/2026/4/28/after-60-days-of-war-in-iran-does-us-congress-want-a-say)
+- [The Conversation: Under US Law, Trump Faces an Impending Deadline to End the Iran War (April 28, 2026)](https://theconversation.com/under-us-law-trump-faces-an-impending-deadline-to-end-the-iran-war-what-happens-if-he-ignores-it-281728)
+- [Al Jazeera: Trump's May 1 Deadline: Can He Continue War on Iran After That? (April 24, 2026)](https://www.aljazeera.com/news/2026/4/24/trumps-may-1-deadline-can-he-continue-war-on-iran-after-that)
+- [CNN: Analysis — Will Trump Respect the 60-Day Limit? (April 25, 2026)](https://www.cnn.com/2026/04/25/politics/war-powers-act-trump-iran-war-congress-analysis)
+- [CBS News: Iran War Live Updates — Diplomatic Developments (April 30, 2026)](https://www.cbsnews.com/live-updates/iran-war-trump-warning-strait-of-hormuz-bab-el-mandeb-threat-oil-prices/)
+- [CFR: Trump Extended the Iran War Ceasefire. Now What?](https://www.cfr.org/articles/trump-extended-the-iran-war-ceasefire-now-what)
+- [Wikipedia: 2026 Iran War Ceasefire](https://en.wikipedia.org/wiki/2026_Iran_war_ceasefire)
+- [Military.com: Iran War Heads Toward Legal Showdown as May 1 Deadline Nears (April 28, 2026)](https://www.military.com/daily-news/headlines/2026/04/28/Iran-War-Heads-Toward-Legal-Showdown-as-May-1-Deadline-Nears)
+
+---
+
+*Section 21 added: April 30, 2026 (end-of-day)*
+*Status: May 1 WPR 60-day deadline confirmed passed without administration compliance — no withdrawal, no authorization request, no certification, no court order. Vance doctrine operative and now validated by completed non-compliance. Youngstown Category 3 precedent set explicitly. Five enforcement tracks now active: Schiff sixth vote (week of May 5), Democratic lawsuit (early stage, standing obstacle), appropriations restriction (May 15-30 window), Murkowski conditional AUMF (June-July), diplomatic uranium removal (live but unconfirmed). Collins post-deadline accountability commitment under scrutiny — her vote on Schiff's sixth resolution is the primary Republican defection variable. Distribution framework domains current through May 1, 2026.*

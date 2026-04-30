@@ -12,7 +12,8 @@ parent-tracker: surveillance-tracking.md
 *Written: April 29, 2026 (Session 652)*
 *Updated: April 30, 2026 (Session 686) — House passage confirmed (235-191); Senate position divergence documented*
 *Updated: April 30, 2026 (~11:15 UTC) — Section 11 added: April 30 Senate vote outcome status documented as pending at time of writing; real-time assessment of most probable paths; tracker checklist for post-vote update*
-*Status: House passed 3-year warrantless renewal; Senate outcome PENDING (vote expected US afternoon/evening April 30) — most probable path: 45-day short-term extension, CBDC provision stripped*
+*Updated: April 30, 2026 (end-of-day) — Section 12 added: close-of-business status; Senate did not pass either S.1318 or S.4344 by midnight deadline based on available reporting; brief lapse probable; next legislative vehicle to carry FISA extension expected early May; structural civil liberties conclusions unchanged*
+*Status: House passed 3-year warrantless renewal 235-191; Senate did not pass either the House bill or S.4344 before April 30 midnight based on available reporting — lapse likely; next deadline approximately late May/early June 2026 if short extension follows*
 *Research integrity note: An earlier session (Session 573) erroneously wrote a "confirmed" 2026 outcome that was actually the 2024 RISAA (60-34 Senate, two-year extension). Session 608 corrected the record. This document reflects the actual April 2026 legislative trajectory based on confirmed reporting through April 29, 2026.*
 
 ---
@@ -509,3 +510,77 @@ Sources:
 
 *Section 11 added: April 30, 2026 (~11:15 UTC)*
 *Status: Senate outcome PENDING at time of writing — vote expected later April 30 (US afternoon/evening). Most probable path: 45-day short-term extension by unanimous consent or voice vote. No warrant requirement confirmed in any likely vehicle. CBDC ban to be stripped in Senate. Section 702 structural civil liberties defeat confirmed regardless of Senate vehicle choice. Tracker items require update when Senate action is confirmed in subsequent reporting.*
+
+---
+
+## Section 12: April 30, 2026 — Close-of-Business Status; Probable Brief Lapse
+
+**Added**: April 30, 2026 (end-of-day)
+
+### 12.1 Senate Action Through April 30 Midnight: Available Reporting Summary
+
+Based on all reporting available through end of business April 30, 2026, the Senate did not pass either S.1318 (the House-passed three-year CBDC-attached bill) or S.4344 (the companion clean three-year extension) before the April 30 midnight expiration of the 10-day emergency extension. The cloture vote on S.4344 was scheduled no later than May 1 under the UC agreement — meaning it was not required to occur before midnight April 30. No unanimous consent short-term stopgap has been confirmed in publicly available reporting as of this writing.
+
+**What this means procedurally**: If no Senate action preceded midnight April 30, Section 702 authority under the FISA Amendments Act lapsed at midnight for the first time in the program's 18-year history. This does not immediately halt collection: the FISC has reportedly issued a classified order extending existing collection authority through approximately 2027, and NSA collection under those orders is expected to continue. However, the statutory hook compelling technology companies (Google, Microsoft, Apple, Meta, and others) to provide assistance becomes legally contestable during a lapse.
+
+**Caveat on confirmation**: The Senate's April 30 evening session is not yet fully reflected in available published reporting. It is possible that a short-term extension passed by unanimous consent or voice vote late Thursday, consistent with the April 17 precedent, in which case no lapse occurred. This section will require update if subsequent reporting confirms Senate action before midnight.
+
+### 12.2 The Probable Lapse Scenario: What It Changes and What It Does Not
+
+**What changes if lapse confirmed:**
+- Technology companies' compelled assistance obligations become legally contestable during the lapse period. This is the EFF's preferred outcome: it creates standing for a Fourth Amendment challenge that would otherwise require a plaintiff with documented knowledge they were surveilled.
+- Intelligence community-allied legislative pressure intensifies for emergency action — the same dynamic that produced the April 17 10-day extension will recur within 24-72 hours.
+- Senate procedural path becomes more urgent: S.4344 cloture vote (scheduled by May 1 under the UC agreement) will occur within hours of the lapse.
+
+**What does not change:**
+- No warrant requirement was in any vehicle available to the Senate (S.1318 or S.4344). A lapse followed by emergency action produces the same structural civil liberties outcome: no warrant protection in the enacted law.
+- FISC classified collection orders reportedly remain operative through 2027 regardless of statutory status. Intelligence community "collection gap" claims are therefore overstated for operational purposes, though technically accurate for statutory authorization purposes.
+- The commercial data broker loophole is entirely unaffected by FISA statutory status — ICE and DHS can purchase location data from Venntel/Babel Street regardless of whether Section 702 is active.
+
+### 12.3 Next Legislative Vehicle: Expected Timeline
+
+Senate leadership is expected to move S.4344 cloture within 24-48 hours of the midnight deadline, consistent with the UC agreement. The most probable enacted outcome, now slightly delayed:
+
+1. Senate passes S.4344 (clean three-year extension, no CBDC) via cloture + final passage, approximately May 1-3
+2. House accepts Senate amendment (dropping CBDC ban) or passes identical clean version
+3. Trump signs — he has stated his preference for 18 months to 3 years and dropped the SAVE Act condition; signature expected within days
+4. Enacted law: three-year extension through approximately April 30, 2029; attorney-level approval for FBI U.S. person queries; monthly ODNI CLPO review; no warrant requirement; no CBDC ban; commercial data broker loophole open
+
+Alternative: Senate passes another short-term extension (30-45 days) by unanimous consent, setting the next deadline for approximately June 1-14, 2026. This would push the long-term question into the summer appropriations window.
+
+### 12.4 Updated Outcome Checklist (End of Day April 30)
+
+| Item | Status |
+|------|--------|
+| House passage | CONFIRMED — 235-191 (April 29) |
+| Warrant requirement in any vehicle | EXCLUDED — confirmed in all vehicles (S.1318 and S.4344) |
+| CBDC ban | HOUSE ONLY — confirmed stripped from Senate vehicle |
+| Senate vote on S.1318 | NOT TAKEN — Senate will not pass House version |
+| Senate vote on S.4344 / short extension | NOT CONFIRMED before midnight — lapse probable |
+| Brief statutory lapse | PROBABLE — confirmation pending subsequent reporting |
+| Next Senate action | Expected May 1-3 under UC agreement cloture schedule |
+| Presidential signature | PENDING — expected within days of Senate passage |
+| New expiration date | April 30, 2029 (3-yr) or ~June 1-14 (45-day) — pending |
+| EFF/ACLU lapse litigation | POSSIBLE — lapse creates preferred litigation vehicle; monitoring |
+| FISC classified orders | OPERATIVE through ~2027 regardless of statutory status |
+| Commercial data broker loophole | OPEN — unaffected by any FISA vehicle |
+
+### 12.5 War Powers / FISA Compound Failure: End-of-Day April 30 Assessment
+
+Both the FISA lapse and the War Powers Resolution midnight deadline now coincide at the same calendar moment. April 30-May 1, 2026 represents the simultaneous failure of two major statutory constraints on executive power: Section 702 authority lapsed (or will lapse) without a warrant-protected replacement, and the War Powers Resolution 60-day clock expired without authorization or withdrawal. No congressional enforcement mechanism has stopped either failure. Both represent the administration's deliberate strategy of treating statutory limits as negotiable rather than binding.
+
+The compound effect documented in Section 10.5 and Domain 19f Section 20.3 — the Iran war's wartime urgency was used to suppress warrant amendment demands during the FISA reauthorization fight — is now the completed narrative of April 2026. The two failures are causally linked, not merely contemporaneous.
+
+Sources:
+- [Roll Call: House Sends Spy Reauthorization Bill to Uncertain Senate Fate (April 29, 2026)](https://rollcall.com/2026/04/29/house-sends-spy-reauthorization-bill-to-uncertain-senate-fate/)
+- [Political Wire: Senate Plans to Jam House on FISA Extension (April 29, 2026)](https://politicalwire.com/2026/04/29/senate-plans-to-jam-house-on-fisa-extension/)
+- [Fox News: House Passes FISA Section 702 Renewal as Senate Faces Midnight Deadline (April 29, 2026)](https://www.foxnews.com/politics/house-passes-fisa-renewal-bipartisan-vote-putting-pressure-senate-looming-deadline)
+- [Deseret News: Government Surveillance Powers at Risk of Expiring After House Advances Controversial Provision (April 29, 2026)](https://www.deseret.com/politics/2026/04/29/house-flounders-on-fisa-vote/)
+- [Nextgov: House Passes 3-Year FISA 702 Extension (April 29-30, 2026)](https://www.nextgov.com/policy/2026/04/house-passes-3-year-fisa-702-extension/413223/)
+- [Axios: House Passes FISA Reauthorization, Senate Roadblock Awaits (April 29, 2026)](https://www.axios.com/2026/04/29/house-passes-fisa-intelligence-bill-senate-opposition)
+- [Senate Daily Press: Wednesday April 29, 2026 — S.4344 cloture scheduled by May 1](https://www.dailypress.senate.gov/wednesday-april-29-2026/)
+
+---
+
+*Section 12 added: April 30, 2026 (end-of-day)*
+*Status: Senate did not pass S.1318 or S.4344 before midnight April 30 based on available reporting — brief statutory lapse probable. FISC classified orders maintain operational collection authority through ~2027. Next Senate action expected May 1-3 per UC agreement cloture schedule. No warrant requirement in any vehicle. CBDC ban stripped from Senate vehicle. Enacted law when signed expected to be three-year extension through April 30, 2029 without warrant protection. Lapse creates EFF/ACLU preferred litigation vehicle — monitoring. Compound FISA + War Powers constitutional failure at April 30-May 1 documented. Update required when Senate vote confirmed.*
