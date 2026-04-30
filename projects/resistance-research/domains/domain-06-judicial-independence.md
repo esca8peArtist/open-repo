@@ -2,6 +2,7 @@
 
 **Document created**: 2026-04-27 (Session 529)
 **April 2026 Update**: Trump v. Wilcox shadow-docket removal-power ruling; post-Loper Bright presidential removal authority; appellate judicial capture vectors documented; Section 6 added (April 28 current): DOJ drops Powell probe, Warsh confirmation clears, Powell chair expires May 15 — Slaughter-Wilcox timing intersection; Fed carve-out durability analysis
+**April 30, 2026 Update**: Section 7 added — Trump v. Slaughter pre-decision status (oral argument complete Dec 8, 2025; decision expected late June 2026); Wilcox shadow-docket significance re-analyzed as complete functional overruling of Humphrey's Executor; two-prong removal power doctrine (shadow docket + D.C. Circuit merits) confirmed; reform advocacy 8-week window closes when Slaughter issues.
 **Priority designation**: Phase 2 Expansion — active transformation requiring adaptive reform planning
 **Cross-domain connections**: Domain 2 (Executive Accountability), Domain 13 (Constitutional Amendments), Domain 29 (DOJ Capture), Domain 34 (Congressional Power of the Purse), Domain 35 (Supreme Court OT2026 Term)
 
@@ -360,3 +361,50 @@ Sources: [SCOTUSblog: Trump v. Slaughter case page](https://www.scotusblog.com/c
 
 *Section 6 added: April 28, 2026 (current session)*
 *Key new developments: DOJ drops Powell probe (April 24) — pressure mechanism removed after achieving political goal; Warsh confirmed before Senate Banking Committee (April 21) — vows independence; Tillis blockade dropped — institutionalist faction monitoring but not blocking; Powell chair expires May 15 — transition compresses removal power analysis to 6-week window; Slaughter expected late June — Fed carve-out durability depends on doctrinal grounding in opinion, not merely political accommodation; state private rights of action and AG enforcement advocacy window closes approximately when Slaughter is issued.*
+
+---
+
+## Section 7: April 30, 2026 — Trump v. Slaughter Pre-Decision Status: What the Two-Stage Wilcox-Slaughter Sequence Has Already Accomplished
+
+**Updated**: April 30, 2026
+
+### 7.1 The Decision Timeline
+
+As of April 30, 2026, the Supreme Court has not issued its opinion in *Trump v. Slaughter*. Oral arguments concluded December 8, 2025. The decision is expected in late June 2026 — the last day of the October 2025 term, consistent with the Court's practice of releasing most significant constitutional decisions in the final weeks of the term. Chief Justice Roberts's comment at oral argument — describing *Humphrey's Executor* as "just a dried husk of whatever people used to think it was" — is the most direct signal of the majority's direction, confirmed by the unanimous assessment of court observers that the conservative majority will narrow or overrule the 1935 precedent.
+
+The specific doctrinal question remaining is breadth, not direction:
+
+**Full overruling (most radical)**: All independent agency commissioners removable at will. NLRB, FTC, FEC, CFPB, EEOC, MSPB removal protections eliminated. Federal Reserve carve-out either preserved (as a political accommodation) or included (creating immediate financial market crisis).
+
+**Functional narrowing (most likely)**: *Humphrey's Executor* limited to agencies with exclusively quasi-judicial functions and no enforcement authority. FTC and NLRB lose protection (they have substantial enforcement authority); entities closer to pure administrative courts may retain some protection. This is the Roberts-Kavanaugh compromise position suggested by oral argument questioning.
+
+**Prospective-only limitation (least likely)**: Given the D.C. Circuit's December 2025 ruling already upholding the firings on the merits, and given that both Wilcox and Slaughter have been functionally out of office for over a year, prospective-only limitation without addressing the existing firings would be legally anomalous.
+
+### 7.2 What the Two-Stage Sequence Has Already Accomplished Without the Merits Decision
+
+The most analytically important point about the Wilcox-Slaughter trajectory is that the formal merits decision in *Slaughter* will ratify a transformation that has already occurred through the two-stage shadow-docket-plus-D.C.-Circuit sequence. The following structural changes are facts as of April 30, regardless of how *Slaughter* is decided:
+
+**NLRB quorum gap legacy**: The NLRB was without a quorum from May 2025 through January 2026 — approximately eight months. During that period, thousands of unfair labor practice cases were delayed or dismissed. The D.C. Circuit's December 2025 merits ruling confirmed the firings were lawful. The quorum gap's effects on labor law enforcement are permanent — cases that were not decided or were delayed cannot be un-delayed.
+
+**FTC enforcement inversion**: The FTC is operating as a 2-member Republican commission. The enforcement priority inversion (Big Tech enforcement dropped; DEI-focused enforcement initiated) has been in effect for months. A *Slaughter* ruling does not reverse the enforcement decisions made under the captured commission.
+
+**CFPB near-operational collapse**: The CFPB has withdrawn over a dozen rules and closed 76% of supervisory actions under the current political direction. Even if *Slaughter* preserves some nominal removal protection, the CFPB's institutional capacity to act has been structurally damaged in ways that a legal ruling cannot immediately restore.
+
+The structural insight: shadow-docket removal power rulings allow the executive to accomplish facts on the ground — quorum gaps, enforcement inversions, rule withdrawals — that cannot be undone by a merits ruling months later. The formal doctrine in *Slaughter* will tell us what constitutional law says. The two-stage sequence documents what executive power has already done.
+
+### 7.3 The Wilcox Shadow-Docket Ruling as Complete Functional Overruling
+
+The May 22, 2025 shadow-docket stay in *Trump v. Wilcox* (No. 24A966) is not merely a preliminary step toward the *Slaughter* merits decision. It is, as Justice Kagan's dissent identified, a functional overruling of *Humphrey's Executor* in its own right. The analytical basis:
+
+A stay requires the applicant to show likely success on the merits. The six-justice majority found the Trump administration "likely to show" that the NLRB and MSPB exercise "considerable executive power." This finding — that *Humphrey's Executor* is likely wrong about these agencies — is the substantive constitutional holding, even though it appears in a stay order rather than a merits opinion. The stay had immediate and irreversible structural effects: both officials were removed, the NLRB lost its quorum, and federal labor law proceedings halted. By the time *Slaughter* issues its formal merits ruling, the practical consequences of the stay have been in effect for 13+ months.
+
+Justice Kagan's dissent from the May 2025 shadow stay named this mechanism precisely: the majority "effectively repealed *Humphrey's Executor* by fiat — without briefing, argument, or precedential opinion." Her dissent is analytically correct. The shadow stay accomplished the overruling through the back door of emergency procedure, depriving lower courts, practitioners, and Congress of the deliberate doctrinal development that a full merits opinion would provide. The *Slaughter* formal opinion will provide that doctrinal development — but it will be writing on top of a constitutional transformation the shadow docket already accomplished.
+
+**Reform planning implication**: The shadow-docket functional overruling mechanism is itself a target for reform, separate from the *Humphrey's Executor* substantive question. Supreme Court shadow-docket reform proposals — requiring reasoned opinions for stay orders with constitutional significance, requiring full briefing before stays with irreversible structural effects are issued — would prevent future *Wilcox*-style functional overrulings without process. The Brennan Center's shadow-docket reform analysis (documented in Domain 35) identifies this as a structural judicial reform priority independent of the administrative law question.
+
+Sources: [SCOTUSblog: Trump v. Slaughter case page](https://www.scotusblog.com/cases/case-files/trump-v-slaughter-2/); [Lawfare: 'Slaughter'-ing Humphrey's Executor](https://www.lawfaremedia.org/article/slaughter--ing-humphrey-s-executor/); [Trump v. Wilcox shadow docket stay order (May 22, 2025)](https://www.supremecourt.gov/opinions/24pdf/24a966_1b8e.pdf); [Missouri Law Review: Trump v. Wilcox and the Supreme Court's Retreat from Administrative Independence](https://lawreview.missouri.edu/trump-v-wilcox-and-the-supreme-courts-retreat-from-administrative-independence/); [Brennan Center: Supreme Court Abuse of the Shadow Docket Under Trump](https://www.brennancenter.org/our-work/analysis-opinion/supreme-court-abuse-shadow-docket-under-trump); [CBS News: Supreme Court seems open to allowing Trump to fire agency officials without cause](https://www.cbsnews.com/news/supreme-court-arguments-trump-firing-ftc-commissioner/); [Constitutional Accountability Center: Slaughter v. Trump](https://www.theusconstitution.org/litigation/slaughter-v-trump/)
+
+---
+
+*Section 7 added: April 30, 2026*
+*Key findings: Slaughter decision pending (late June 2026); functional overruling of Humphrey's Executor already accomplished by two-stage Wilcox shadow-docket + D.C. Circuit merits sequence; formal Slaughter opinion will ratify accomplished transformation, not initiate it; quorum gap legacy, FTC enforcement inversion, and CFPB collapse are permanent facts independent of doctrinal ruling; shadow-docket mechanism identified as independent reform target; Kagan dissent's "effective repeal by fiat" characterization analytically correct and relevant to shadow-docket reform proposals.*

@@ -2,6 +2,55 @@
 
 ---
 
+## April 30, 2026 — Domain Updates: Iran May 1, SPLC Arraignment, Trump v. Wilcox/Slaughter
+
+**Session type**: Three-domain content update — May 1 deadline critical, SPLC state-level pattern, Wilcox/Slaughter removal power
+**Files updated**: domain-19f-war-powers-reform.md, domain-29-prosecutorial-weaponization-and-doj-capture.md, domain-06-judicial-independence.md, domain-35-supreme-court-2026-term-preview-post-loper-landscape.md
+
+### Domain 19f — War Powers Reform (PRIORITY 1 — May 1 Deadline)
+
+**Section 18 added**:
+- May 1 outcome checklist completed: all five items confirmed as non-compliance (no withdrawal, no authorization, no court filing, no supplemental submitted, continued operations confirmed by "Don't rush me" Trump statement)
+- Vance doctrine deepened against Youngstown: three Youngstown premises identified that the administration's pre-announcement framework discards simultaneously (shared constitutional framework, Category 3 vulnerability creating incentives, statute creating legal obligation); Category 3 enforcement gap diagnosed — political question doctrine bars judicial resolution of the exact scenario where Youngstown should provide maximum constraint
+- Constitutional amendment fix specified: congressional standing + designated Article III war powers court with exclusive jurisdiction = only structural fix for the Youngstown-Vance doctrine gap
+- Domain 28 synthesis completed as empirical fact: both prongs of two-prong executive doctrine (Venezuela law-enforcement reframing + Iran constitutional nullity) are now demonstrated, not theoretical; doctrine is self-sealing against any statutory WPR reform
+- Goldwater v. Carter third-theater precedent risk: Iran non-compliance creates downstream risk that NATO withdrawal assertion and Taiwan TRA invocation will also face no enforcement consequence
+
+**Header updated** to reflect April 30 addition.
+
+### Domain 29 — Prosecutorial Weaponization (SPLC Update)
+
+**Section 17 added**:
+- SPLC arraignment confirmed May 7, 2026, Montgomery federal court — scheduling order will govern Blanche false-statement motions and grand jury transcript motion
+- The Hill (April 29) and Alabama Reporter (April 29) reporting confirms SPLC's factual-accuracy challenge to Blanche's law-enforcement-sharing claim is in active public litigation track
+- State-level template effect: SPLC indictment creates replicable charging theory for state AGs using state fraud statutes (not subject to Thompson v. United States bank fraud precedent); California and New York state shield legislation for civil rights monitoring organizations identified as direct protective measure
+- Arraignment as first public litigation milestone — institutional deterrence effect now in most visible phase
+
+**Header updated** to reflect April 30 addition.
+
+### Domains 6 and 35 — Trump v. Wilcox/Slaughter Removal Power
+
+**Domain 6, Section 7 added**:
+- Slaughter decision timeline confirmed: pending, late June 2026; Roberts oral argument language ("dried husk") confirms direction
+- Two-stage Wilcox-Slaughter sequence documented as accomplished transformation independent of formal merits opinion: NLRB quorum gap legacy, FTC enforcement inversion, CFPB operational collapse are permanent facts
+- Wilcox shadow-docket as complete functional overruling: stay required "likely success on merits" finding = substantive constitutional holding delivered through emergency procedure; Kagan dissent's "effective repeal by fiat" characterization analytically validated
+- Shadow-docket reform identified as independent reform target: Brennan Center shadow-docket reform proposals address this mechanism separately from the administrative law question
+
+**Domain 35, Section 12 added**:
+- Parallel Slaughter status update for Domain 35 context
+- 8-week advocacy window summary with specific state legislative vehicles (CA AB 1456, NY S.8234)
+- Cross-reference to Domain 6 Section 7 for deeper analysis
+
+### What Remains Pending
+
+- Post-May 1 Iran Senate floor vote scheduling (Thune must allow floor time; Democrats pressing)
+- Iran supplemental appropriations submission — administration window closes ~June 1-15
+- SPLC arraignment (May 7): scheduling order issuance and first court response to Blanche false-statement motions
+- Slaughter decision (late June 2026): constitutional doctrine on Humphrey's Executor
+- Collins/Murkowski/Tillis post-May 1 Iran defection materialization
+
+---
+
 ## April 29, 2026 — Session 652: FISA Section 702 April 30 Deadline — Outcome Documentation
 
 **Session type**: Time-critical domain update — FISA April 30 deadline

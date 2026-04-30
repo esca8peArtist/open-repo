@@ -4,6 +4,7 @@
 **Updated**: April 27, 2026 — Section 5.1 expanded with two-stage Humphrey's Executor collapse: shadow docket (Trump v. Wilcox, May 2025) + D.C. Circuit merits ruling (December 2025); Section 6.1 Point 2 updated to present-tense
 **Updated**: April 27, 2026 (Session 523) — Section 2.4b added: post-Slaughter OT2026 independent agency landscape; Fed carve-out status; follow-on litigation pipeline; reform planning implications confirmed
 **Updated**: April 27, 2026 (Session 529) — Section 8 added: OT2026 cert window closing analysis; presidential immunity litigation full closure as of April 2026; three-part OT2026 reform feasibility assessment (independent agency amendment, SAVE Act filibuster survival, Second Amendment OT2026 implications)
+**Updated**: April 30, 2026 — Section 12 added: Slaughter decision timeline confirmed (late June 2026); Wilcox shadow-docket as complete functional overruling; removal power two-stage transformation accomplished facts; reform advocacy 8-week window closes with Slaughter; cross-reference to Domain 6 Section 7 for deeper analysis.
 **Judicial landscape status**: Active transformation — three foundational doctrines reshaped since June 2024; NLRB quorum gone since May 2025
 **Priority designation**: Phase 2 Expansion — essential for adaptive reform planning (Domains 2, 6, 13)
 **Cross-domain connections**: Domain 2 (Executive Power / Presidential Immunity), Domain 6 (Judicial Independence and Reform), Domain 13 (Constitutional Amendments), Domain 29 (DOJ Capture), Domain 34 (Congressional Power of the Purse)
@@ -464,6 +465,51 @@ Sources: [CNBC: Fed chair nominee Kevin Warsh clears hurdle to Senate hearing (A
 
 *Section 11 added: April 28, 2026 (current session)*
 *Key development: Warsh confirmation path cleared — administration uses appointment power to resolve Fed chair succession without triggering carve-out test before Slaughter is decided; DOJ probe closure (April 24) was tactical preparation for Warsh confirmation; Powell remains on Board of Governors through January 2028, meaning carve-out question is deferred but not resolved; Slaughter still must provide doctrinal basis for Fed Board-member removal protection or Board seats remain removal-vulnerable under any future administration.*
+
+---
+
+## Section 12: April 30, 2026 — Trump v. Slaughter Pending Status and the Accomplished Transformation
+
+**Added**: April 30, 2026
+
+### 12.1 Decision Status as of April 30
+
+*Trump v. Slaughter* has not been decided as of April 30, 2026. Oral arguments concluded December 8, 2025. The decision is expected late June 2026 — the end of the October 2025 term. The conservative majority's direction is not in doubt: Chief Justice Roberts characterized *Humphrey's Executor* as "just a dried husk of whatever people used to think it was," and Solicitor General Sauer called it "egregiously wrong." The question is breadth, not direction.
+
+The two most likely outcomes remain:
+
+**Outcome 1 — Full overruling**: *Humphrey's Executor* eliminated for all independent agency officers. NLRB, FTC, FEC, CFPB, MSPB, EEOC removal protections gone. Federal Reserve carve-out preserved as structural exception based on quasi-private entity and historical arguments. This outcome makes every independent agency position functionally at-will for the executive.
+
+**Outcome 2 — Functional narrowing**: *Humphrey's Executor* limited to agencies with exclusively quasi-judicial functions, eliminating protection for FTC and NLRB (which have enforcement authority) while potentially preserving it for entities closer to the administrative court model. The D.C. Circuit's December 2025 ruling already establishes this outcome in the lower courts; the Supreme Court would be endorsing and providing the constitutional basis for it.
+
+### 12.2 What Has Already Been Accomplished: The Shadow-Docket Functional Overruling
+
+The analytical point that must be integrated into reform planning is that *Humphrey's Executor* has already been functionally overruled through the two-stage sequence — regardless of how the formal merits opinion reads. The sequence is documented fully in Section 5.1 of this domain and in Domain 6 Section 7:
+
+**Stage 1 (May 22, 2025)**: The *Wilcox* shadow-docket stay kept Wilcox and Harris out of office, destroyed the NLRB quorum, and halted federal labor proceedings — without a merits briefing, argument, or reasoned opinion. The stay required a finding that the administration "likely" would succeed on the merits, i.e., that *Humphrey's Executor* likely does not protect NLRB and MSPB officers. This is the substantive constitutional holding, delivered through emergency procedure.
+
+**Stage 2 (December 2025)**: The D.C. Circuit reversed the district court and upheld the firings on the merits, holding that *Humphrey's Executor* does not protect officers exercising "substantial executive power." Both officials are formally out. The NLRB operates under a 2-1 Republican majority with the Wilcox seat still vacant.
+
+The *Slaughter* merits opinion will provide the formal doctrinal statement, but it will be writing on top of a structural transformation that has been complete for over a year. The reform advocacy implications identified in Section 9.3 (state private rights of action, CFPB AG enforcement expansion) are urgent precisely because the formal ruling's arrival closes a window for protective action — not because it initiates the transformation.
+
+### 12.3 Reform Advocacy: The 8-Week Closing Window
+
+With *Slaughter* expected in late June 2026, the advocacy window for protective measures is approximately 8 weeks from April 30:
+
+**State private rights of action (most time-sensitive)**: California AB 1456 (Ting) and New York S.8234 (Ramos) create private enforcement rights under state labor law that bypass the NLRB's adjudicative function. Both are in committee. A *Slaughter* ruling that formally eliminates NLRB removal protection will not directly invalidate these state laws — they operate under state authority — but the political urgency to pass them is highest before the federal court landscape finalizes.
+
+**State AG CFPB enforcement funding**: State legislative appropriations bills in New York, California, and Illinois are in the final May-June 2026 budget window. Dedicated federal-enforcement-substitute units in these AG offices can receive budget appropriations now that provide durable CFPB-substitute capacity regardless of what *Slaughter* holds about CFPB structure.
+
+**Constitutional amendment drafting**: The Independent Agency Protection Amendment priority identified in Section 6.3 and Section 8.3 of this domain must be in draft form and introduced in Congress before *Slaughter* issues, so the amendment response is ready when the decision creates maximum public pressure for structural remedy.
+
+Cross-reference: Domain 6 Section 7 provides the deeper analysis of the two-stage Wilcox-Slaughter sequence and the shadow-docket reform implications.
+
+Sources: [SCOTUSblog: Trump v. Slaughter case page](https://www.scotusblog.com/cases/case-files/trump-v-slaughter-2/); [Lawfare: 'Slaughter'-ing Humphrey's Executor](https://www.lawfaremedia.org/article/slaughter--ing-humphrey-s-executor/); [Trump v. Wilcox shadow docket stay order (May 22, 2025)](https://www.supremecourt.gov/opinions/24pdf/24a966_1b8e.pdf); [D.C. Circuit upholds NLRB and MSPB firings — Ogletree (December 2025)](https://ogletree.com/insights-resources/blog-posts/d-c-circuit-upholds-presidential-power-to-remove-nlrb-and-mspb-members-without-cause/); [Ward and Smith: Trump v. Slaughter signals possible turning point for agency independence](https://www.wardandsmith.com/article/trump-v-slaughter-the-supreme-court-signals-a-possible-turning-point-for-agency-independence); [Constitution Center: Supreme Court to reconsider landmark precedent limiting presidential firing powers](https://constitutioncenter.org/blog/supreme-court-to-reconsider-landmark-precent-limiting-presidential-firing-powers)
+
+---
+
+*Section 12 added: April 30, 2026*
+*Key findings: Slaughter decision pending (late June 2026); functional overruling of Humphrey's Executor accomplished through Wilcox shadow-docket + D.C. Circuit two-stage sequence; formal opinion will ratify transformation already in effect; reform advocacy 8-week window closes with Slaughter — state private rights of action and AG enforcement funding are time-critical; constitutional amendment drafting should be introduced pre-decision to enable post-decision floor action; cross-reference Domain 6 Section 7 for shadow-docket functional overruling analysis.*
 
 ---
 
