@@ -6,6 +6,70 @@
 
 ---
 
+## 2026-04-30 — seedwarden — Phase 2 Production Timeline & Dependency Map (Exploration Queue Item 35)
+
+**Status**: COMPLETE — Two files committed to master
+
+### Deliverables
+
+**1. `projects/seedwarden/phase-2-execution-timeline.md`** (~4,000 words, 7 sections)
+- Section 1: Critical path analysis — 6 nodes from germination tray (Apr 30) through live launch (May 30), with parallel pre-conditions (location confirmation, crew) documented and separated from the serial chain
+- Section 2: Gantt-style timeline — all 12 task streams mapped across April 30 – May 30 with [CP] / [F x days] float annotations; shows exact clock times for shoot day sessions
+- Section 3: Dependency graph — full text representation of critical path chain, Parallel Path A (email automation), Parallel Path B (Canva zone cards), and convergence at launch
+- Section 4: Slack and risk mitigation — 5 risks documented with 3 mitigation options each; worst-case stacked delay = June 15 (2-week slip from May 30)
+- Section 5: Resource requirements — 36–45 hours user time (or 25–32 with Fiverr retouching outsourced); $200–360 total budget; equipment assumed existing
+- Section 6: Five key questions requiring user confirmation — germination tray, user availability, Track A parallel operation, Canva skill level, crew availability
+- Section 7: Phase 2 / Phase 1 integration — confirms Phase 2 is independent; Phase 1 benefits from Phase 2 assets but does not gate Phase 2 production
+
+**2. `projects/seedwarden/phase-2-dependency-graph.csv`** (33 tasks + header row)
+- Schema: task_id, task_name, duration_days, start_date, end_date, dependencies, resource_required, notes
+- Covers all tasks from April 30 pre-production through May 30 launch coordination
+- Import-ready for any project management tool (Notion, Airtable, Trello, Asana)
+- Critical path: task_001 → task_007 → task_008 → task_009 → task_010 → task_012 → task_030 → task_033
+- Parallel path A (email): task_020 → task_026 → task_031
+- Parallel path B (Canva): task_013 → task_019
+- Launch gate (task_033): depends on task_019 + task_030 + task_031 + task_032
+
+### Key findings recorded
+- Germination tray start (Apr 30) is the only same-day hard deadline in the entire Phase 2 critical path
+- May 30 launch is achievable if tray starts today and shoot holds May 10–11
+- If shoot pushes to May 17–18, launch pushes to June 6 (7-day slip, no revenue impact)
+- Worst-case stacked delay scenario: June 15 launch (2-week slip)
+- Canva zone card production has 0-day float at May 30 — must begin May 15 without delay
+- Email automation has 5-day float — can start as late as May 20 and still be live by May 25
+- Phase 2 does not depend on Phase 1 Etsy listings being live; both tracks are independent
+
+---
+
+## 2026-04-30 14:55–15:40 UTC — Session 702 — Parallel Phase 2 Track B + Phase 5 Architecture Kickoff
+
+**Status**: COMPLETE — Two parallel autonomous subagents executed Phase 2 production start + Phase 5 architecture design
+
+### Execution Summary
+
+**1. seedwarden — Phase 2 Track B Production Kickoff** (seedwarden agent)
+- **Deliverables** (committed to master):
+  - `CANVA_ZONE_CARD_DESIGN_GUIDE.md` — Production-ready step-by-step Canva build guide for 8-zone Quick-Start Card series. Includes: template decision (blank US Letter, 90-min build), zone band colors (all 8 zones with hex values), three-column + spotlight band layout, "This month" seed-starting task content for all zones, duplication checklist, footer copy verification (placeholder URLs), export settings (PDF Print, flatten), Kit upload sequence, directory creation.
+  - `PHOTO_SHOOT_SCHEDULE_AND_PROPS.md` — Finalized May 10–11 photo shoot schedule (Cluster A Saturday 9am–2pm, 16 shots; Clusters B+C Sunday, 14 shots). Critical deadline: **germination tray must start today (April 30)** for May 10 sprout readiness. Props list for all 15 products with cost and sourcing guidance. Print materials list. Pre-shoot checklist. Filename table for all 30 images. Email release coordination (photos feed newsletter Weeks 3–6, full rotation Week 7+). **Key insight**: Email funnel launch does not wait for photos; both run in parallel.
+- **Timeline**: May 10–11 shoot, May 12–14 image processing, May 15 photo funnel live (integrated into email automation)
+- **Next user action**: Source props/prints by May 9; user can execute Canva zone cards immediately (no blockers)
+
+**2. open-repo — Phase 5 Architecture Document** (general-research agent)
+- **Deliverable** (committed to master):
+  - `projects/open-repo/docs/PHASE_5_ARCHITECTURE.md` — Comprehensive Phase 5 design covering:
+    - **Offline Export Strategy** (~1,700 words): ZIM format pipeline, three export variants (Full/Domain/Reference), file size targets by channel (USB 4 GB FAT32 limit, GitHub Releases 2 GB, R2/IPFS unlimited), five-stage pipeline with zimcheck validation, GPG-signed manifest for chain of trust
+    - **Distributed Node Sync** (~2,200 words): Four transport evaluation (Git/BitTorrent/IPFS/ActivityPub), recommended hybrid: ActivityPub pull-sync for records (extends Phase 4 HTTP Signature), IPFS+CDN for ZIM files (Kubo on Pi 4, CAR fallback for constrained hardware), Git for metadata only
+    - **Technology Matrix**: 10-criteria comparison for four export formats (ZIM, SQLite, JSON, CAR) and four sync transports
+    - **Implementation Roadmap**: Wave 5.1 Kiwix pipeline (16–22 days), Wave 5.2 distributed sync (14–20 days), Wave 5.3 mobile PWA (10–15 days stretch), total 40–57 days over 9–12 weeks
+- **Key decision**: ZIM + IPFS CAR for resilience; ActivityPub pull-sync for structured record sync; no new P2P stack introduced
+- **Prior work preserved**: Five preliminary Phase 5 docs superseded but retained as technical references
+
+### Projects Affected
+- **seedwarden**: Phase 2 Track B unblocked — can now execute Canva zone card design + start photo shoot prep
+- **open-repo**: Phase 5 architecture locked in — ready for Wave 5.1 implementation planning
+
+---
+
 ## 2026-04-30 — open-repo — Phase 5 Architecture Document (PHASE_5_ARCHITECTURE.md)
 
 **File**: `projects/open-repo/docs/PHASE_5_ARCHITECTURE.md`

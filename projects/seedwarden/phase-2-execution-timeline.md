@@ -1,362 +1,338 @@
 ---
-title: "Seedwarden Phase 2 — Lifestyle Photography Execution Timeline"
-prepared: 2026-04-29
-status: ready-to-execute
-trigger: Phase 1 conversion data (Week 2–3 post-Phase-1-launch)
-photography-window: Week 4–6 post-Phase-1-launch
-total_budget: $80–$160
-total_products: 21 (15 physical, 6 stock)
+title: "Phase 2 Production Timeline & Dependency Map"
+date: 2026-04-30
+status: planning-complete
+context: Exploration Queue Item 35 — critical path, dependencies, realistic May/June 2026 timeline
 references:
   - LIFESTYLE_PHOTOGRAPHY_STRATEGY.md
-  - PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md
-  - PHOTOGRAPHY_ROADMAP.md
-  - PHASE2_PRODUCT_PRIORITIES.md
+  - PHOTO_SHOOT_SCHEDULE_AND_PROPS.md
+  - CANVA_ZONE_CARD_DESIGN_GUIDE.md
+  - ZONE_CARD_PRODUCTION_TIMELINE.md
+  - PHASE_2_EMAIL_STRATEGY.md
+  - PHASE_2_BUNDLE_STRATEGY.md
+  - concurrent-track-execution-plan.md
 ---
 
-# Seedwarden Phase 2 — Lifestyle Photography Execution Timeline
+# Phase 2 Production Timeline & Dependency Map
+## Critical Path, Sequencing Logic, and May 30 Launch Readiness
 
-## Purpose
-
-This document establishes the concrete execution roadmap for Phase 2 lifestyle photography, anchored to Phase 1 launch dates rather than relative weeks. It defines the decision gate that triggers Phase 2, sequences the 15-product physical shoot and 6-product stock sourcing sprint, and specifies contingency paths for the most likely failure modes.
-
-Phase 2 photography is independent of Phase 1 completion blockers. Photographer briefing, prop sourcing, and stock image research can begin immediately upon strategy approval. The physical shoot is the only action that waits on Phase 1 data.
-
----
-
-## Phase 1 → Phase 2 Trigger: The Decision Gate
-
-### Why Phase 1 Data Comes First
-
-Phase 2 photography adds lifestyle images (slots 4–5) to all 21 Etsy listings. Lifestyle photos lift conversion rate, but the size of that lift varies by product. Phase 1 establishes baseline conversion data — views, clicks, and purchases with mockup-only listings (slots 1–3). That baseline determines which products are the highest-priority photography targets and whether the photography budget is justified at all.
-
-The two scenarios that determine Phase 2 timing:
-
-**Scenario A — Conversion data is available and actionable (most likely)**
-
-Phase 1 launches. After 2–3 weeks, Etsy Stats shows enough view data to calculate per-listing conversion rates. Any listing with 20+ views and a conversion rate under 2% is a strong lifestyle photo candidate. Any listing with 20+ views and a conversion rate above 3% is still worth photographing but is lower urgency. Phase 2 greenlight happens in Week 2–3 post-Phase-1-launch based on this data.
-
-**Scenario B — Phase 1 data is sparse (possible for first 2 weeks)**
-
-If Phase 1 listings have fewer than 20 views each after 2 weeks (possible for a new shop with no prior SEO history), there is not enough data to make per-product decisions. In this case: proceed with Phase 2 on schedule using the priority ranking from `PHASE2_PRODUCT_PRIORITIES.md` (Tier 1 = highest ticket first) rather than conversion data. Do not delay photography beyond Week 4 post-launch waiting for data that may not arrive quickly enough.
-
-### Decision Gate Checklist (complete in Week 2–3 post-Phase-1-launch)
-
-- [ ] Record baseline conversion rate for each listing from Etsy Stats (views, conversion %, revenue)
-- [ ] Identify any listing with 20+ views and under 2% conversion rate — flag as highest-priority photo target
-- [ ] Confirm which Phase 1 listings are live and verified (any that are still blocked cannot have slots 4–5 uploaded yet — skip them in Phase 2 sequencing)
-- [ ] Confirm $80–$160 budget is available for Phase 2 execution
-- [ ] Greenlight decision: proceed with full Phase 2 photography on Week 4 schedule
+**Purpose**: Phase 2 production documents are complete across all four workstreams (lifestyle photography strategy, Canva zone card design guide, email strategy, bundle strategy). What was missing is a single document that maps the execution sequence, names every dependency, quantifies realistic time investment, and surfaces the decisions the user must confirm today. This document answers: in what order does everything happen, what blocks what, and what is the honest worst-case launch date if any component slips?
 
 ---
 
-## Absolute Timeline — Anchored to Phase 1 Launch Date
+## Section 1: Critical Path Analysis
 
-The following timeline treats Phase 1 launch as Day 0 (the day the first Etsy listing goes live and is publicly searchable). Adjust all dates relative to the actual Phase 1 launch date.
+The critical path is the longest chain of dependent tasks. Any delay on the critical path delays the launch date. Tasks off the critical path have slack — they can slip without moving the May 30 launch date, as long as they resolve before their downstream dependent task begins.
 
-### Pre-Phase-2 Preparation Window (Day 0 – Week 3)
+### Critical Path (Must Not Slip)
 
-These actions happen in parallel with Phase 1 and do not require Phase 1 to be complete.
+**Node 1 — Germination tray start: April 30**
 
-**Week 0–1 (immediately upon strategy approval, before Phase 1 launch):**
-- Photographer briefing package finalized and ready to send (see `photographer-briefing-package.md`)
-- Props list reviewed; gather what is already on hand; identify gaps
-- Determine shooting location for each cluster (indoor window, balcony, kitchen)
-- Identify a 3–4 hour morning window in Weeks 4–5 for the physical shoot
-- If contracting a photographer: send briefing package and secure a date in their calendar now (photographers with a 2–3 week lead time need to be booked before Phase 1 data arrives)
+This is the single action that locks or unlocks the May 10 shoot date. Sprouts for Products 5 (Zone-by-Zone Seed Starting Calendar) and 7 (Seed Saving Field Manual) need 5–10 days of germination time. A germination tray started April 30 produces 5–7-day-old sprouts by May 5–7, and 10–13-day-old sprouts by May 10–13 — both within the usable photogenic window. A tray started May 1 is still workable for May 10 (9-day sprouts). A tray started May 3 or later raises the risk of shoots being too young or too leggy by the shoot date. This is a 15-minute task. It has no upstream dependencies. The only risk is not doing it today.
 
-**Week 1–2 (post-Phase-1-launch):**
-- Monitor Etsy Stats daily; log views and favorites per listing
-- Begin free stock image search for 6 Cluster D/E products (this can happen in parallel with Phase 1 monitoring — it does not require any approval or data)
-- Draft iStock credit purchase list based on free-source gaps identified during search
-- Do not upload lifestyle images to Etsy yet — upload only after the full Phase 2 QA pass
+**Node 2 — Props sourcing and assembly: May 7–9**
 
-**Week 2–3 (decision gate week):**
-- Collect 30-day baseline data snapshot for all live listings
-- Make go/no-go decision on Phase 2 based on criteria above
-- If go: confirm photographer booking (if external) or block personal shooting time
-- Purchase iStock credits for confirmed stock image gaps
+The props list is documented in full in PHOTO_SHOOT_SCHEDULE_AND_PROPS.md. Sourcing is not a single-trip purchase — it is a 2–3 day window to gather items that may come from multiple places (garden shed, grocery store, hardware store, print shop). The three items that require lead time are (1) printed PDF pages for the shoot (color printing at a library or print shop — 24-hour minimum), (2) seed envelopes if not already on hand, and (3) any ceramic or terracotta pots that need to be sourced rather than grabbed from existing stock. Props assembly completed by end of May 9 means Day 1 setup on May 10 begins without scramble.
 
----
+Budget: $40–80 for props that are not already on hand. The CLUSTER_C_PROPS_ACQUISITION_PLAN.md documents specific sourcing options for the Cluster C kitchen props.
 
-### Phase 2 Active Execution (Weeks 4–6 post-Phase-1-launch)
+**Node 3 — Photo shoot: May 10–11**
 
-#### Week 4 — Stock Images for 6 Cluster D/E Products
+Two-day schedule per PHOTO_SHOOT_SCHEDULE_AND_PROPS.md. Day 1 (May 10): Cluster A (Products 1–8, 16 shots, 4.5–5 hours) + Cluster B (Products 9–12, 8 shots, 2 hours). Day 2 (May 11): Cluster C (Products 13–15, 6 shots, 1.5–2 hours). Total yield: 30 RAW images. Shoot day is entirely dependent on Nodes 1 and 2 — germination tray sprouts present and props assembled. Location confirmation and crew coordination (below) are parallel pre-conditions, not serial ones.
 
-These 6 products (Survival Garden Regional Plans, Hunting/Fishing/Trapping Manual, Small-Scale Livestock Field Manual, Meat/Fish Preservation Field Manual, Native Plants Regional Guide, and the livestock-adjacent content in the Hunting manual) require settings that cannot be staged in a kitchen or balcony — rural property, wilderness, livestock operations. Stock photography is the correct approach.
+Critical shoot-day constraint: Cluster A requires morning window light (9am–2pm). The two-day format produces better Cluster A images than a single-day marathon. If the shoot is compressed to one day, Cluster C quality degrades because it happens in afternoon light or artificial light rather than morning light. For product images that will live on Etsy listings for 12–18 months, the two-day format is worth the additional planning.
 
-**Day 1 of Week 4 (2–3 hours) — Free source search:**
+**Node 4 — Image processing: May 12–14**
 
-Work through all 6 products simultaneously using three browser tabs (Unsplash, Pexels, Pixabay). Specific search queries per product are documented in `PHOTOGRAPHY_ROADMAP.md` Section 3. The selection priority within free sources:
+Three days of processing follow the shoot. Day 1 (May 12): culling — editing 80–100 RAW captures down to 30 selects. Day 2–3 (May 13–14): retouching and color grading — apply Lightroom presets from LIFESTYLE_PHOTOGRAPHY_STRATEGY.md Section 2, batch-process by cluster, then generate 60 variant crops at different aspect ratios for social content (1:1 Etsy, 4:5 Instagram, 16:9 Pinterest/Story). Deliverable: 30 final Etsy-ready images + 60 social variant crops, all exported at 2400px JPEG 90%, saved to `/projects/seedwarden/marketing/lifestyle-photos/etsy-ready/`.
 
-1. Resolution: 4000px minimum on long edge (Etsy needs 2400px; headroom is essential for cropping)
-2. Tone: natural light, real environment (not studio), working hands if hands appear
-3. No competing brand logos, no visible commercial livestock operations
-4. Horizontal or square composition preferred (Etsy is 1:1; horizontal gives more crop flexibility)
+**Node 5 — Photo funnel live: May 15**
 
-Collect 3–5 candidates per product. Do not finalize selection until all candidates are assembled — comparative ranking across candidates is faster than evaluating each in isolation.
+The email funnel does not require photos to launch (PHASE_2_EMAIL_STRATEGY.md confirms this explicitly — zone cards, not photos, are the functional lead magnet). However, May 15 is when photos become available for email template enrichment and social posting. The photo funnel going live on May 15 means the Week 3–6 newsletter releases can use lifestyle images rather than mockups, which increases click-through rate in those sends. This node is a dependency for email automation setup being visually complete, not for it being functionally live.
 
-**End of Day 1 decision gate:** For each of the 6 products, assess whether free sources returned a usable image. A usable image meets all technical and brand criteria without requiring significant post-processing to fix lighting or composition problems.
+**Node 6 — Live launch: May 30**
 
-- If 5–6 products have usable free images: skip iStock purchase. Proceed to compositing.
-- If 3–4 products have gaps: purchase iStock credits for gaps only. Do not subscribe to a plan — buy on-demand credits at $12–$15 each.
-- If 5–6 products have gaps: subscribe to iStock Essential ($40/month) for one month and cancel after downloads are complete.
+All four Phase 2 workstreams converge here: (a) Canva zone cards complete and uploaded to Kit delivery, (b) email automation live and tested, (c) social content queue scheduled, (d) Etsy lifestyle images uploaded to all 21 listings. Launch is coordinated: Etsy listing updates first (no announcement), then email campaign trigger, then social posting staggered by 2–4 hours to prevent reach overlap on the same platform within the same day.
 
-**Day 2 of Week 4 (1–2 hours) — iStock purchases and compositing:**
+### Parallel Pre-Conditions (Not on the Critical Path, But Must Resolve Before Node 3)
 
-Purchase any iStock credits identified on Day 1. Priority order for iStock spend (most to least likely to require paid sourcing):
+**Location confirmation** needs to happen by April 30 — same day as germination. The shoot location (window light source for Cluster A, window sill or balcony for Cluster B, kitchen counter for Cluster C) must be confirmed as accessible and unobstructed for both May 10 and May 11 mornings. This is a 5-minute confirmation call or walk-through, not a booking process. It is listed as a separate node in the dependency graph because overlooking it has caused more last-minute shoot scrambles than any other single factor.
 
-1. Small-Scale Livestock Field Manual — backyard livestock imagery is thin on free sites
-2. Hunting/Fishing/Trapping Manual — trapping/snare imagery rarely appears on free sites
-3. Meat/Fish Preservation Field Manual — artisan smokehouse content is a gap on Unsplash/Pexels
-4. Survival Garden Regional Plans — generic raised-bed content is available free; regional specificity is the gap
-5. Native Plants Regional Guide — Wikimedia Commons is the primary source; this product may need $0 iStock spend
-
-Composite each stock image with the product's PDF cover overlay using Canva or Photoshop. The stock image is the background; the product appears as a printed page resting on a surface in the scene, or as a tablet display. Export at 2400×2400px JPEG 90%.
-
-**Day 3 of Week 4 (30 minutes) — Week 4 QA:**
-
-- Verify 12 files exist (2 per product × 6 products = 12 images)
-- Spot-check 4 images at full resolution against the QA criteria in `PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md` Section 5
-- Upload to Etsy slots 4–5 for these 6 products immediately after QA passes — do not wait for Week 6
-
-**Week 4 deliverable:** 6 Etsy listings upgraded from 3-image to 5-image. Conversion measurement clock starts for the highest-ticket products (Survival Garden $22, Hunting/Trapping $20, Native Plants $20, Livestock $18).
+**Crew coordination** for the May 10–11 shoot was noted as confirmed in the session 702 production log. The PHOTO_SHOOT_SCHEDULE_AND_PROPS.md assumes a 2–3 person team. If crew availability changes before May 10, the solo-with-tripod contingency extends the shoot timeline by approximately 20% (adding 45–60 minutes to Day 1 for self-timer repositioning) and requires bracketed composition changes — wider framing to allow crop adjustment rather than relying on a second person to hold or angle props.
 
 ---
 
-#### Week 5 — Physical Photography, 15 Products (Clusters A, B, C)
+## Section 2: Timeline Gantt Chart
 
-Physical photography is the primary Week 5 task. The shoot covers all 15 products across three clusters: Seeds/Garden (8 products), Container/Urban Growing (4 products), and Food Preservation (3 products).
+The following chart maps all 12 tasks across the April 30 – May 30 production window. Tasks on the critical path are marked [CP]. Tasks with float (slack) are marked [F x days] indicating how many days they can slip without affecting the May 30 launch.
 
-**Props gathering (1–2 hours, complete 2 days before the shoot — not the morning of):**
+```
+APRIL 30
+  [CP] Germination tray start ─────────────────────────── sprouts ready May 10
+  [F 0] Location confirmation ─ done today
+  [F 0] Crew coordination ─ confirmed (session 702)
 
-Props list for all three clusters:
-- Seed envelopes: 4–6 (hand-labeled preferred; any variety from hardware store or garden)
-- Germination tray with starter mix (or egg carton with damp soil as substitute)
-- 2–3 terracotta or ceramic pots, 4–6 inch size
-- Small garden trowel or hand fork
-- Mason jars: 3–5 (at least 1 with visible contents — dried herbs, dried beans, or a ferment)
-- Wooden cutting board (11×15 inch or larger)
-- 2–4 small potted plants (herbs — basil, mint, thyme — or any small houseplants)
-- 5–10 dried or fresh chili peppers (any variety; grocery jalapeños work)
-- Kitchen cloth or linen napkin
-- Wooden spoon or ladle
-- Paper calendar or journal (for 12-Month Urban Growing Planner)
-- Plain ceramic mug (no branding)
-- Pen or pencil
-- Tablet: charged to 100%, all product PDF covers staged in a folder, screen brightness at maximum
+MAY 1–6
+  [F 3] Props sourcing begins (ongoing as items identified)
 
-**Shooting Day 1 (3–4 hours) — Clusters A and B:**
+MAY 7–9
+  [CP] Props sourcing & assembly ──────────── shoot-ready by May 9 EOD
+         └── print shop run by May 8 (24-hr turnaround for printed PDFs)
+         └── grocery/garden sourcing by May 9
 
-Morning window required (9am–2pm). Window light or a 45W daylight LED softbox at 45 degrees. One clean wooden surface.
+MAY 10 (Saturday)
+  [CP] Photo shoot Day 1 ──────────────────── 9am–5pm
+         Session 1: Cluster A (9am–1:30pm, 16 shots)
+         Session 2: Cluster B (3pm–5pm, 8 shots)
 
-9:00–9:25 — Cluster A setup (8 products: seed/garden theme)
-9:25–10:45 — Shoot all 8 Cluster A products (8 minutes per product; 5 frames per shot type, keep 2)
-- Per product: 1 flat-lay overhead shot + 1 contextual/hand-action shot
-- Do not change the background setup between Cluster A products — swap only the tablet content (open next product PDF)
-10:45–11:05 — Cluster B setup (move to window sill, balcony, or indoor plant shelf; add potted herbs)
-11:05–12:05 — Shoot all 4 Cluster B products (8–10 minutes per product)
+MAY 11 (Sunday)
+  [CP] Photo shoot Day 2 ──────────────────── morning
+         Session 3: Cluster C (9am–11am, 6 shots)
 
-If time and energy permit, continue to Cluster C the same day:
-12:05–12:20 — Cluster C setup (kitchen counter, mason jars, cutting board, peppers)
-12:20–13:05 — Shoot all 3 Cluster C products (8–10 minutes per product)
+MAY 12
+  [CP] Image culling ──────────────────────── 80 RAW → 30 selects
 
-Total Day 1 time: 3–4 hours if Cluster C is included; 2–2.5 hours if Cluster C is deferred to Day 2.
+MAY 13–14
+  [CP] Retouching + color grading ─────────── 30 finals + 60 social variants
 
-**Shooting Day 2 (optional, 1–1.5 hours) — Cluster C only:**
+MAY 15
+  [CP] Photo funnel live ─ images available for email templates + social queue
 
-Use this day if Cluster C was not completed on Day 1, or if any individual shot was flagged as unusable during a quick review immediately after Day 1 shooting.
+MAY 15–25 (parallel workstream, [F 5 days])
+  [F 5] Email automation setup ────────────── Kit configured, sequences live, test sends complete
+         └── Subscriber segmentation rules
+         └── Welcome sequence + zone card delivery automation
+         └── Post-purchase sequence
+         └── Template design (can use Kit pre-built templates to save ~4 hrs)
+         └── Test sends (3 test subscriber accounts minimum)
 
-**Editing Day (1.5–2.5 hours):**
+MAY 15–30 (parallel workstream, [F 0 at May 30])
+  [CP after May 28] Canva zone card production ───────── 8 cards complete
+         └── Week 1 (May 15–17): Brand Kit setup + master template + Zones 5–6 (4 hrs)
+         └── Week 2 (May 18–24): Zones 3, 4, 7, 8 (4 hrs @ 60 min each)
+         └── Week 3 (May 25–29): Zones 9, 10 + full-set review + placeholder URL replacement (3 hrs)
+         └── Week 4 (May 30): Final export + Kit upload + delivery test (1 hr)
 
-Import all photos. Edit the first image from each cluster to the final visual specification, then batch-apply those settings to all remaining images in that cluster.
+MAY 20–29 (parallel workstream, [F 1 day])
+  [F 1] Social content preparation ────────── posts scheduled for May 30+
+         └── 30 lifestyle images → select 10 best for launch week social
+         └── Write captions (5 Instagram, 3 Pinterest, 2 Facebook)
+         └── Schedule in Buffer/Later for May 30 + 3 days post-launch
 
-Standard editing parameters (apply in Lightroom Mobile, Snapseed, or RawTherapee):
-- Exposure: +0.2 to +0.5
-- Contrast: +15 to +25
-- Highlights: -20 to -40
-- Shadows: +15 to +25
-- White balance: 5500–6000K (warm)
-- Saturation: greens +10 to +15, yellows +10, blues -10
-- Crop: 1:1 square (apply last)
-- Export: 2400px long edge, JPEG 90%, sRGB
-
-Run all exports through Squoosh (squoosh.app) to confirm each file is under 1MB.
-
-**Reshoot buffer (Day 3, optional, 1–2 hours):**
-
-Review all exports at 100% zoom. Flag any image where: product is not clearly visible, lighting created harsh shadows across the surface, or background is too cluttered to read cleanly. Reshoot only flagged images. Typical reshoot volume: 2–4 images out of 30.
-
-**Week 5 deliverable:** 30 physical photos edited, exported, and confirmed for products 1–15.
+MAY 30 — PHASE 2 LIVE LAUNCH
+  10:00am: Etsy lifestyle image upload (all 21 listings updated)
+  12:00pm: Email campaign trigger (Kit sends launch email to full list)
+  2:00pm–4:00pm: Social posts go live (staggered across platforms)
+```
 
 ---
 
-#### Week 6 — Final Compositing, QA, and Etsy Upload
+## Section 3: Dependency Graph
 
-**Days 1–2 (1–2 hours) — Compositing:**
+The following dependency map uses indentation to show which tasks unlock which downstream tasks. A task at any level cannot begin until all items at the level above it in its chain are complete.
 
-Review all 30 physical photos. For any shot where the product (tablet or printed page) is not literally in frame — the shot shows context only — composite the PDF cover as a flat printed-page overlay in Canva. This is a 5-minute process per image and is only needed for images where the product is implied but not visible.
+```
+CRITICAL PATH:
 
-Export composited versions at the same specification (2400×2400px, JPEG 90%).
+germination tray start (Apr 30)
+  └── sprouts present (May 10)
+        └── photo shoot Day 1 (May 10)
+              ├── [also requires] props assembled (May 9)
+              ├── [also requires] location confirmed (Apr 30)
+              └── [also requires] crew confirmed (done)
+                    └── photo shoot Day 2 (May 11)
+                          └── image culling (May 12)
+                                └── retouching + color grading (May 13–14)
+                                      ├── photo funnel live (May 15)
+                                      │     └── email template enrichment (May 15+)
+                                      │
+                                      └── social content preparation (May 20–29)
+                                            └── social posts scheduled (May 29)
 
-**Day 3 (45 minutes) — Final QA:**
+PARALLEL PATH A (email automation — floats to May 25):
 
-Full QA checklist (from `PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md` Section 5):
-- Count: 42 images total (2 per product × 21 products)
-- Dimensions: 2400×2400px for all files
-- Filenames: `[product-slug]-slot4.jpg` and `[product-slug]-slot5.jpg`
-- Spot-check: 8–10 images at full resolution for brand logo visibility, lighting quality, product legibility, clean background
-- QA gate: an image that fails any item is either replaced from alternates or re-edited; it does not go live
+Kit account configuration (May 15)
+  └── subscriber segmentation rules (May 15–16)
+        └── automation sequences built (May 17–20)
+              └── template design (May 20–22)
+                    └── test sends (May 22–24)
+                          └── email automation live (May 25)
 
-**Days 4–5 (1–2 hours) — Etsy upload:**
+PARALLEL PATH B (Canva zone cards — floats to May 28):
 
-Open each listing in Etsy Seller Dashboard. Add slot 4 (lifestyle/flat-lay) and slot 5 (in-use or contextual) images. After adding each image: verify the 1:1 thumbnail crop in the preview shows the product clearly. Do not modify any other listing element during this upload — isolating the photography variable is essential for clean before/after conversion measurement.
+Brand Kit setup (May 15, 30 min)
+  └── master template + Zones 5–6 (May 15–17)
+        └── Zones 3, 4, 7, 8 (May 18–24)
+              └── Zones 9, 10 (May 25–27)
+                    └── full-set review + URL replacement (May 27–29)
+                          └── final export + Kit upload + delivery test (May 29–30)
 
-Record the upload date for each product in WORKLOG.md. The 30-day conversion measurement window starts from the upload date, not from the beginning of Phase 2.
+CONVERGENCE AT LAUNCH:
 
-**Week 6 deliverable:** All 21 Etsy listings at 5-image status. Conversion measurement window active for all products.
-
----
-
-## Priority Ranking: Which Products Get Photographed First
-
-The priority ranking below integrates four factors: price (revenue per conversion), photography complexity, seasonal relevance, and bundle dependencies. Within any given shoot session, sequencing follows cluster logic (all same-cluster products shot in one setup), but the order in which clusters are prioritized is as follows.
-
-### Tier 1 — Photograph Immediately (Week 4, Days 1–3)
-
-These are stock-sourced products and do not require a physical shoot. They go live at the end of Week 4, ahead of the physical shoot in Week 5.
-
-| Rank | Product | Price | Method | Why First |
-|------|---------|-------|--------|-----------|
-| 1 | Survival Garden Regional Plans | $22 | Stock | Highest ticket; conversion data window opens earliest |
-| 2 | Hunting, Fishing & Trapping Manual | $20 | Stock | Second-highest ticket; field-context photo most differentiated from competitors |
-| 3 | Native Plants Regional Guide | $20 | Stock (Wikimedia) | High ticket; photo unblocked even if listing PDF rebuild is pending |
-| 4 | Small-Scale Livestock Field Manual | $18 | Stock | Highest iStock risk product; source first to allow time to find alternatives if iStock falls short |
-| 5 | Meat/Fish Preservation Field Manual | $18 | Stock | Completes the full Cluster D set in one session |
-
-### Tier 2 — Physical Shoot Priority (Week 5, Shoot Day 1)
-
-These are physical photography products. They are sequenced by revenue impact within the cluster-batch shooting discipline. Higher-ticket products are shot first within each cluster session, so that if the shoot runs long or is cut short, the highest-value products are already captured.
-
-| Rank | Product | Price | Cluster | Shoot Sequence |
-|------|---------|-------|---------|----------------|
-| 6 | Container Growing Blueprint Pack | $18 | B | First in Cluster B; highest ticket in cluster |
-| 7 | Apartment Growing Complete Guide | $18 | B | Second in Cluster B |
-| 8 | Fermented & Preserved Harvest Handbook | $18 | C | First in Cluster C; highest ticket |
-| 9 | Harvest Preservation Field Manual | $18 | C | Second in Cluster C |
-| 10 | Seed Saving Field Manual | $14 | A | First in Cluster A; highest-volume search intent |
-
-### Tier 3 — Physical Shoot (Week 5, Remaining Products)
-
-| Rank | Product | Price | Notes |
-|------|---------|-------|-------|
-| 11 | Heirloom Variety Selection Guide | $14 | Cluster A; same setup as Seed Saving — no additional props |
-| 12 | Apartment Plant Catalog | $14 | Cluster B; same window-sill setup |
-| 13 | Seed Swap Hosting Kit | $14 | Cluster B; add seed envelope table setup |
-| 14 | Grow Your Own Hot Sauce | $14 | Cluster C; pepper-focused — distinct from mason jar setup |
-| 15 | 12-Month Urban Growing Planner | $14 | Cluster A; add mug and paper calendar props |
-| 16 | Anti-Catalog: 30 Heirlooms | $10 | Cluster A; same basic setup |
-| 17 | Companion Planting Chart | $5 | Cluster A; print the chart for the wall-mount shot |
-| 18 | Zone-by-Zone Seed Starting Calendar | $8 | Cluster A; print for the flat-lay detail shot |
-| 19 | Food Sovereignty Starter Guide | $8 | Cluster A; simplest setup — one pot and seed packet |
-| 20 | Apartment Seed Starting Kit | $8 | Cluster B; window-sill focus |
-| 21 | 12-Month Urban Growing Planner (free) | $0 | Last; zero revenue impact |
-
-### Bundle and Dependency Notes
-
-Three products are sold as bundles on Etsy. Their lifestyle photos should use consistent visual vocabulary — same surface, same light quality, same props style — so that the bundle listing image (which typically aggregates all product covers into one image) is visually coherent with the individual listing images.
-
-- Apartment Seed Starting Kit + Apartment Plant Catalog + Apartment Growing Complete Guide — shoot all three in the same Cluster B session, same window-sill background
-- Fermented & Preserved Harvest Handbook + Harvest Preservation Field Manual — shoot both in the same Cluster C session, same mason-jar table setup; the bundle image should be sourceable from the same session
-- Seed Saving Field Manual + Heirloom Variety Selection Guide — shoot in the same Cluster A session; both use seed envelopes and wooden surface
-
-### Seasonal Timing Note
-
-The physical shoot in Week 5 is not seasonally constrained for most products — indoor setups work year-round. The two exceptions:
-
-- Grow Your Own Hot Sauce: fresh peppers are most available June–October. If shooting before June, use grocery store peppers (jalapeños and red bell peppers are year-round) or dried chilis.
-- Harvest Preservation Field Manual: fresh harvest produce is most available August–October. If shooting outside this window, use preserved goods from a prior season (jarred items, dried herbs, stored root vegetables) as the prop. The story is "from harvest to jar" — jars with contents communicate this even without fresh produce in frame.
+[email automation live] + [zone cards in Kit] + [social posts scheduled] + [Etsy images uploaded]
+  └── PHASE 2 LIVE LAUNCH (May 30)
+```
 
 ---
 
-## Budget Allocation
+## Section 4: Slack and Risk Mitigation
 
-Total ceiling: $80–$160, per the strategy document.
+### Risk 1 — Germination tray not started today
 
-| Line Item | Estimated Cost | Notes |
-|-----------|---------------|-------|
-| iStock credits — Livestock Manual | $24–$30 (2 images) | Highest free-source gap risk |
-| iStock credits — Hunting/Trapping | $24–$30 (2 images) | Trapping imagery not on free sites |
-| iStock credits — Meat/Fish Preservation | $0–$24 (0–2 images) | Free sites have some artisan charcuterie coverage |
-| iStock credits — Survival Garden | $0–$15 (0–1 image) | Generic raised-bed available free; regional specificity is the gap |
-| iStock credits — Native Plants | $0 | Wikimedia Commons is the primary source |
-| LED softbox (if natural light insufficient) | $40–$60 | Skip if window light is adequate |
-| Props (seeds, jars, peppers, linen) | $0–$30 | Most should be on hand or sourced locally |
-| Printed product pages for shoot props | $5–$10 | Color printing at library or print shop |
-| **Total** | **$53–$145** | Stays within $160 ceiling |
+**Trigger condition**: User does not start the germination tray on April 30 or May 1.
 
-**Budget safety rule:** Execute stock sourcing (Day 1, free sources) before purchasing any iStock credits. Do not pre-purchase credits. Buy only the credits for confirmed gaps identified during the free search pass.
+**Impact assessment**: A May 3 start gives 7-day sprouts by May 10 — technically in range but on the younger end of the photogenic window. A May 5 start gives 5-day sprouts by May 10, which are borderline for visual interest (seedlings are very small, difficult to compose around). A May 7 start requires pushing the shoot to May 17–18.
 
----
+**Mitigation options**:
+- Option A: Start tray today (April 30) or May 1. Zero-cost fix.
+- Option B: Use grocery-store bean sprout or microgreen trays as a prop substitute for the germination scene. Quality degradation: 40% (the visual variety is narrower, and microgreens don't have the "germination in progress" look the guide references). Still usable for Etsy.
+- Option C: Use stock photography for the 2 products that feature sprouts specifically (Seed Starting Calendar, Seed Saving Field Manual). Full-quality alternative but loses the brand authenticity of real props.
 
-## Integration With Phase 1 Conversion Data
+**Launch impact**: If May 17–18 shoot, launch pushes to June 6. The Week 1 email funnel runs June 6–12 instead of May 30 – June 5. No revenue impact — email list is pre-launch and doesn't depend on a specific calendar date.
 
-The lifestyle photography decisions are modulated by Phase 1 conversion data in the following specific ways:
+### Risk 2 — Photo shoot rescheduled (weather, crew, personal conflict)
 
-**If a high-ticket listing (Tier 1) shows 3%+ conversion rate after 2–3 weeks live:**
-Lifestyle photos are still the right next step — a 3% conversion rate is good but not a ceiling. However, the urgency drops. Do not rush the shoot or cut corners on quality to hit Week 4. Week 5 or 6 is acceptable for that specific listing.
+**Trigger condition**: May 10–11 window is unavailable.
 
-**If a low-ticket listing ($5–$10) shows under 1% conversion rate:**
-The lifestyle photo ROI is still thin here. Do not advance the Tier 3 products ahead of schedule based on poor conversion rate — low conversion on low-ticket products may reflect pricing or keyword mismatch, not lifestyle photo absence. Fix the root cause first.
+**Next available window**: May 17–18 (same weekend structure). This pushes processing to May 19–21, photo funnel to May 22, and launch to June 6.
 
-**If the Native Plants Regional Guide is still blocked (PDF exceeds Etsy 5MB limit):**
-Source and prepare the stock images for this product on schedule, but do not upload slots 4–5 until the listing is active. Store the composited images in the `etsy-ready/` folder. Upload immediately when the listing goes live.
+**Impact assessment**: 7-day slip. No compounding effect on revenue — Etsy listings without lifestyle photos still generate sales during the slip period. The launch week social push simply happens June 6 rather than May 30.
 
-**If Phase 1 shows that any specific cluster (A, B, or C) has 3x the conversion rate of others:**
-Prioritize that cluster's physical shoot first within Week 5, even if it means reordering the within-cluster sequence. The data is more reliable than the priority estimate.
+**Mitigation**: Confirm crew availability for both May 10–11 AND May 17–18 as backup. If both windows are unavailable, a solo shoot with tripod can happen any morning with good window light. Solo adds approximately 60 minutes to the total shoot time.
 
----
+### Risk 3 — Image processing bottleneck
 
-## Contingency Plans
+**Trigger condition**: User lacks time for 3-day editing window (May 12–14) or Lightroom/editing competency introduces quality issues.
 
-### Contingency 1 — Photographer Cancels or is Unavailable
+**Mitigation options**:
+- Option A: Outsource batch retouching to Fiverr. Cost: $150–250 for 30 images with color grading and crop variants. Turnaround: 48–72 hours from file delivery. Send files May 12 morning, receive May 14 afternoon. Timeline holds.
+- Option B: Use Canva's built-in photo editing for color grading (free, less precise than Lightroom but sufficient for Etsy quality). Time savings: 2–3 hours vs. Lightroom preset workflow.
+- Option C: Skip variant crops (60 social variants) in the first pass and add them in the week following launch. Etsy images are the priority; social variants can be generated from final Etsy images at any point.
 
-If an external photographer is being used and cancels: execute the physical shoot independently using the DIY setup documentation in `PHOTOGRAPHY_ROADMAP.md` Section 5. The shot lists and styling notes are identical whether shooting DIY or directing a photographer. The quality ceiling is lower for DIY but the brief is the same. A phone camera with window light can produce Etsy-quality lifestyle images for all 15 physical products.
+**Budget impact**: Fiverr retouching adds $150–250 to the $200–300 props estimate, bringing Phase 2 production total to $350–550. Still well within range for a digital products business with 21 Etsy listings.
 
-**Reschedule window:** If the photographer cancels with less than 72 hours notice, a 1-week delay (shooting in Week 6 instead of Week 5) does not materially change Phase 2 outcomes. The Cluster D/E stock images go live in Week 4 regardless. A 1-week delay only affects the 15 physical products.
+### Risk 4 — Canva zone card production runs over 12 hours
 
-### Contingency 2 — Physical Shoot Produces Unusable Images
+**Trigger condition**: User's Canva familiarity is lower than 90-minute-per-card estimate, or design iterations add time.
 
-If lighting problems, cluttered backgrounds, or poor product legibility make the Day 1 images unusable: the Reshoot buffer in Week 5 Day 3 exists specifically for this. Additionally, every physical product has a stock-image fallback — Unsplash and Pexels have coverage for all Cluster A/B/C themes. A mediocre physical shot should be replaced with a strong stock image rather than uploaded.
+**Assessment**: The 90-minute estimate is for an experienced Canva user following the CANVA_ZONE_CARD_DESIGN_GUIDE.md step-by-step. A user new to Canva's Brand Kit and template duplication workflow should budget 2.5–3 hours per card for the first 2 cards, dropping to 75–90 minutes by cards 5–8 as the duplication pattern becomes automatic. This adds 2–4 hours to the total production estimate, which is fully absorbed by the May 15–30 float window.
 
-Fallback time cost: 30 minutes of stock search per product. Fallback budget cost: $0 (free sites cover all Cluster A/B/C themes adequately).
+**Mitigation options**:
+- Option A: Spend 2 hours in Week 0 (before May 15) setting up Brand Kit and building the master template. This is front-loaded time that eliminates per-card design decisions.
+- Option B: Simplify designs for Zones 9 and 10 (the lowest-traffic zones) using direct template duplication with color-only changes. Saves 1–1.5 hours.
+- Option C: Build only the 4 highest-traffic zone cards by May 30 (Zones 5, 6, 7, 8 — the continental mid-range zones that cover the majority of the US population) and release Zones 3, 4, 9, 10 in the first week of June. This reduces the zone card deliverable to 4 cards at launch with a June 7 full release. Email automation can deliver zone-specific cards only if the user's zone is one of the 4 live; otherwise deliver a "coming soon" zone card placeholder.
 
-### Contingency 3 — Budget Runs Out Before All iStock Gaps Are Filled
+### Risk 5 — Email automation setup takes longer than estimated
 
-Execute in strict priority order: Livestock Manual and Hunting/Trapping Manual get iStock credits first, as they have the highest free-source gaps and the highest revenue potential. If budget runs out at Survival Garden or Native Plants, those products launch with 3-image listings and receive lifestyle photos in a second pass when budget allows.
+**Trigger condition**: Kit UI unfamiliarity, automation logic errors, or deliverability issues extend setup beyond the May 15–25 window.
 
-**Never delay the entire Phase 2 upload because one product does not have its lifestyle photos.** Upload the products that are ready. A partial 5-image upgrade is better than a delayed full upgrade.
+**Mitigation options**:
+- Option A: Use Kit's pre-built welcome sequence template and modify copy rather than building from scratch. Saves 3–4 hours. The full custom email copy lives in `marketing/email-and-launch-plan.md` — this copy can be pasted directly into the pre-built template structure.
+- Option B: Launch with only Priority 1 (Welcome Sequence) and Priority 2 (Post-Purchase Sequence) automations live. The weekly newsletter and win-back campaign can be configured post-launch during the first two weeks of June without any customer impact.
+- Option C: If Kit setup is genuinely blocked (account issue, payment issue, deliverability hold), launch Phase 2 with Mailchimp free tier as a temporary bridge. The email copy is platform-agnostic. Migrate to Kit when the account issue resolves.
 
-### Contingency 4 — Phase 1 Data is Negative (Listings Not Converting)
+### Worst-Case Stacked Delay Scenario
 
-If Phase 1 shows near-zero conversion rates across all listings after 3 weeks, lifestyle photography is unlikely to be the root cause. The root causes of low conversion at this stage are more likely: keyword mismatch (listings not appearing in relevant searches), price point resistance, or listing description gaps. In this scenario: defer Phase 2 photography and invest the $80–$160 in Etsy Ads to drive more targeted traffic first. Measure conversion rate under paid traffic conditions before spending on lifestyle photos.
-
-This is the only scenario in which Phase 2 photography should be delayed past Week 6.
+If germination misses (tray starts May 3), shoot pushes to May 17–18, processing runs May 19–23, and Canva cards need the full 15 hours (not 12), the latest realistic launch date is June 15. This represents a 2-week slip from May 30 and a 3-week slip from the original goal. June 15 is still well within the Phase 2 production window and does not affect Phase 3 planning, which begins 30 days post-Phase-2-launch regardless of calendar date.
 
 ---
 
-## Weekly Milestone Summary
+## Section 5: Resource Requirements
 
-| Week | Action | Deliverable | Decision Gate |
-|------|--------|-------------|---------------|
-| Week 0 (pre-Phase-1) | Briefing package finalized; props list reviewed; photographer booked if external | Briefing package sent | Strategy approval |
-| Week 1–2 (post-launch) | Monitor Etsy Stats; run free stock image search | Stock candidate images collected | — |
-| Week 3 | Decision gate: review conversion data; confirm Phase 2 greenlight | Go/no-go decision; iStock purchase list | Conversion data available |
-| Week 4, Day 1 | Free stock image search for all 6 Cluster D/E products | Stock image candidates for 6 products | — |
-| Week 4, Day 2 | iStock purchases; compositing | 12 Etsy-ready lifestyle images for Cluster D/E | Free-source gap assessment |
-| Week 4, Day 3 | QA; upload to Etsy | 6 listings at 5-image status; measurement clock starts | QA pass |
-| Week 5, Day 1 | Physical shoot (Clusters A, B, C) | 30+ raw photos; editing pass | Morning window, window light |
-| Week 5, Day 2–3 | Editing; reshoot buffer | 30 edited and exported images | — |
-| Week 6, Day 1–2 | Compositing for physical shots | 30 composited and final images | — |
-| Week 6, Day 3 | Full QA (all 42 images) | QA sign-off | All 42 images pass QA |
-| Week 6, Day 4–5 | Etsy upload (remaining 15 listings) | All 21 listings at 5-image status | QA passed |
-| Week 10 (30 days post-upload) | Conversion comparison: before vs. after | Data decision on Phase 3 photography investment | — |
+### User Time Investment
+
+| Task | Estimated Hours | Window |
+|---|---|---|
+| Germination tray start | 0.25 | April 30 |
+| Location confirmation | 0.1 | April 30 |
+| Props sourcing + print run | 2–3 | May 7–9 |
+| Props assembly + shoot prep | 1 | May 9 evening |
+| Photo shoot (2 days) | 8–10 | May 10–11 |
+| Image culling | 1.5 | May 12 |
+| Image retouching + export (self) | 3–4 | May 13–14 |
+| Canva Brand Kit + master template | 2 | May 15–17 |
+| Canva zone cards 3–10 (6 remaining) | 7–9 | May 18–29 |
+| Kit account setup + segmentation | 2 | May 15–16 |
+| Email automation sequences | 3–4 | May 17–20 |
+| Email template design + test sends | 2 | May 22–24 |
+| Social content preparation | 2–3 | May 20–28 |
+| Etsy lifestyle image upload (21 listings) | 1.5 | May 30 |
+| Launch coordination (email trigger, social) | 1 | May 30 |
+| **Total** | **36–45 hours** | May 7–30 |
+
+Note: 36–45 hours over 24 calendar days (May 7–30) averages 1.5–2 hours per day. This is achievable on weekday evenings + weekends if the user can protect morning time on May 10–11 for the shoot itself. The Canva work (9–11 hours) and Kit setup (7–8 hours) are the largest continuous blocks and both fall in the May 15–30 window — a period with no other hard deadlines.
+
+If image processing is outsourced to Fiverr, the user's total personal time investment drops to 25–32 hours.
+
+### External Resources
+
+| Item | Cost | When Needed | Notes |
+|---|---|---|---|
+| Fiverr batch retouching (optional) | $150–250 | May 12 (file delivery) | 30 images + 60 crops; 48-hr turnaround |
+| Props (seeds, pots, jars, linen, peppers) | $40–80 | May 7–9 | Most may be on hand; CLUSTER_C_PROPS_ACQUISITION_PLAN.md has sourcing detail |
+| Print shop run (PDF pages for props) | $8–15 | May 8 (24-hr turnaround) | Color prints, 3–5 pages per product cluster |
+| Kit account (free tier) | $0 | May 15 | Free tier supports list-building + welcome sequence; upgrade if list exceeds 1,000 |
+| Canva Pro (if not active) | $13/month | May 15 | Required for Brand Kit feature; 30-day free trial available |
+| **Total** | **$200–360** | | Without Fiverr: $50–100. With Fiverr: $200–360. |
+
+### Equipment (Existing)
+
+All the following are assumed to already be available per the photography strategy documents:
+
+- Camera or smartphone with manual exposure capability
+- Lightroom Mobile, Snapseed, or RawTherapee (free tiers sufficient)
+- Canva account (Pro preferred, free tier workable)
+- Window with good morning light on May 10 (east or south-facing window)
+- Kitchen counter space for Cluster C
+
+No new equipment purchases are required or recommended for the shoot. A $40–60 LED softbox is documented as optional in the budget allocation (LIFESTYLE_PHOTOGRAPHY_STRATEGY.md) but is specifically flagged as skip-if-window-light-is-adequate.
+
+---
+
+## Section 6: Five Key Questions for User Confirmation
+
+These questions require a confirmed answer before any production planning is treated as locked. Each maps to a specific critical path node.
+
+**Question 1 — Germination tray: Was it started today (April 30)?**
+
+If yes: May 10 shoot is confirmed on the critical path. Node 1 is complete.
+If no: Start tonight or first thing tomorrow (May 1) — still workable. Starting May 3 or later introduces shoot risk. This question must be answered before the week ends.
+
+**Question 2 — User availability: Can 20–25 hours be dedicated May 15–30?**
+
+If yes at full 25 hours: All workstreams (Canva, Kit, social) proceed at the pace documented above.
+If only 15 hours available: Prioritize Kit automation first (email list is the highest-leverage Phase 2 asset), then Canva cards (lead magnet quality), then social. Outsource retouching to Fiverr to reclaim 3–4 hours from the May 12–14 window.
+If under 10 hours available: Focus May 15–30 entirely on Kit automation and 4 zone cards. Defer the remaining 4 zone cards and social scheduling to June 1–15. Launch May 30 with partial Canva set.
+
+**Question 3 — Track A parallel operation: Is Phase 1 Etsy upload happening simultaneously?**
+
+If Track A is proceeding concurrently (per the concurrent-track-execution-plan.md Option D recommendation): Add 2.5–3 hours of Track A upload work to the May 7–20 window. This is not on the Phase 2 critical path but does compete for user time. The Track A upload is documented as approximately 45–60 minutes per day for 3 days — low enough to run in parallel with Phase 2 without significant conflict.
+If Track A is deferred until after Phase 2 launch: Phase 2 proceeds unencumbered. Phase 1 Etsy listings do not yet have lifestyle images, which may affect first-impression conversion on those listings. Acceptable trade-off given Phase 2 is the priority.
+If Track A is blocked (account hold, payment setup issue): Phase 2 is completely independent and proceeds on schedule regardless.
+
+**Question 4 — Canva skill level: Experienced or novice?**
+
+Experienced (uses Canva regularly, comfortable with layers and text boxes): 90-minute-per-card estimate holds. 12-hour total for 8 cards is realistic in the May 15–30 window.
+Intermediate (uses Canva occasionally): Budget 2 hours per card, 16 hours total. Still achievable in the May 15–30 window with focused sessions. The CANVA_ZONE_CARD_DESIGN_GUIDE.md step-by-step build reference is specifically written to reduce guesswork during the session.
+Novice (minimal Canva experience): Budget 2.5–3 hours per card for the first two, dropping to 90 minutes by card 4+. Consider watching one Canva Brand Kit tutorial video (20 min) before Week 0 setup. Full 8-card set is still achievable by May 30 with two 4-hour weekend sessions.
+
+**Question 5 — Crew availability: Is the May 10–11 crew confirmed?**
+
+If crew confirmed for both days: Schedule stands as documented. Proceed.
+If crew confirmed for May 10 only: Cluster C (May 11) becomes a solo shoot. Cluster C is a kitchen counter shoot — the easiest of the three clusters for solo execution. No material quality impact.
+If crew is unavailable for both days: Solo shoot with tripod for all 30 images. Add 60 minutes to Day 1 and 30 minutes to Day 2. Switch to a slightly wider framing convention for all shots. Still fully achievable — the PHOTO_SHOOT_CHECKLIST.md solo-shoot notes cover this case.
+If crew confirmed for May 10–11 but cancels within 72 hours: Execute solo shoot or push to May 17–18 and source replacement crew from local photographer community (Facebook groups, photography school alumni networks).
+
+---
+
+## Section 7: Phase 2 and Phase 1 Integration
+
+Phase 2 Track B can and should proceed independently of Phase 1 Track A. The dependency relationship runs one direction only: Phase 1 Etsy listings benefit from Phase 2 lifestyle images (added to slots 4–5), but Phase 2 production does not need Phase 1 to be live before beginning.
+
+The two workstreams share the user's time, not each other's assets. The concurrent-track-execution-plan.md documents this explicitly. The practical implication for May 2026:
+
+- Etsy account setup and Phase 1 listing uploads can happen during the same week as props sourcing (May 7–9) without conflict — they use different hours and different platforms.
+- Phase 2 lifestyle images, once produced on May 12–14, can immediately be used to upgrade Phase 1 listings if those listings are already live. If Phase 1 has not yet launched, the images are staged in the etsy-ready folder and uploaded the moment Phase 1 listings go live.
+- The email automation setup (Kit, May 15–25) benefits from Phase 1 being live because the post-purchase sequence requires confirmed Etsy purchase events to trigger correctly. If Phase 1 is not live by May 15, configure the welcome sequence and lead magnet delivery first; wire the post-purchase automation after Phase 1 launch.
+
+**Phase 2 is not waiting on Phase 1. Start Phase 2 production today.**
