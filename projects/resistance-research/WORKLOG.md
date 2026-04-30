@@ -2,6 +2,27 @@
 
 ---
 
+## May 1, 2026 — DISTRIBUTION_PATH_ANALYSIS.md: Phase 1 Decision Support Document
+
+**Session type**: General Research Agent — decision support document
+**Files updated**: `projects/resistance-research/DISTRIBUTION_PATH_ANALYSIS.md` (full rewrite, 3,800+ words)
+
+### Research Conducted
+
+Read all primary source files: PHASE_1_EXECUTION_READINESS.md (April 30 audit, verdict APPROVED), DOMAIN_37_SEQUENCING_PLAN.md (Session 522), ITEM10_DOMAIN37_CANDIDATES.md, ITEM12_DOMAIN38_CANDIDATES.md, ITEM17_DOMAIN39_CANDIDATES.md, ITEM26_DOMAIN40_CANDIDATES.md, EXPLORATION_QUEUE.md.
+
+### Key Findings
+
+Comprehensive analysis of three distribution paths grounded in the existing research corpus. Path A (22-domain immediate launch) is viable and low-overhead; primary limitation is Domain 37 election-protection timing gap during post-launch expansion. Path A+37 Hybrid captures both general framework credibility and maximum election-urgency impact at marginal additional execution cost (45–60 minutes over Path A); recommended. Path B (Domains 38–40 research before launch) adds Intelligence Oversight, Reproductive Rights, and Voting Systems Architecture but imposes 4–6 week delay that compresses the May 30, June 30, and August 7 election advocacy windows to near-zero utility. Domains 38–40 are better delivered as rolling post-launch updates to contacts already engaged with the 22-domain framework.
+
+Decision matrix, election timeline reference (all five Domain 37 advocacy window dates), tiebreaker questions, and per-path decision criteria included.
+
+### Recommendation
+
+Path A+37 Hybrid. Full rationale in document.
+
+---
+
 ## April 30, 2026 — cybersecurity-hardening Item 31: Tier 2 Distribution Execution
 
 **Session type**: Exploration Queue Item 31 — COMPLETED
