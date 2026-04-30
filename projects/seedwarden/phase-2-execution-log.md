@@ -35,18 +35,20 @@ The following table tracks stock image sourcing for the 4 Cluster D products. Ea
 
 | Product | Slug | Slot | Source Platform | Search String Used | File Staged | Composited | Etsy-Ready |
 |---------|------|------|-----------------|--------------------|-------------|-----------|------------|
-| Survival Garden Regional Plans | `survival-garden-regional-plans` | 4 | iStock / Pexels | `raised bed garden rows planning overhead` | No | No | No |
-| Survival Garden Regional Plans | `survival-garden-regional-plans` | 5 | iStock / Pexels | `hands garden planning outdoor table` | No | No | No |
-| Hunting, Fishing and Trapping Manual | `hunting-fishing-trapping-field-manual` | 4 | iStock | `fly fishing stream rustic lifestyle` | No | No | No |
-| Hunting, Fishing and Trapping Manual | `hunting-fishing-trapping-field-manual` | 5 | iStock | `hands open field guide outdoor nature` | No | No | No |
-| Small-Scale Livestock Field Manual | `small-scale-livestock-field-manual` | 4 | Pexels / iStock | `backyard chickens small farm` | No | No | No |
-| Small-Scale Livestock Field Manual | `small-scale-livestock-field-manual` | 5 | Pexels / iStock | `homesteader reading outdoors farm` | No | No | No |
-| Meat and Fish Preservation Field Manual | `meat-fish-preservation-field-manual` | 4 | Pexels / iStock | `home meat preservation artisan` | No | No | No |
-| Meat and Fish Preservation Field Manual | `meat-fish-preservation-field-manual` | 5 | Pexels | `hands slicing cured meat wooden board` | No | No | No |
+| Survival Garden Regional Plans | `survival-garden-regional-plans` | 4 | Pexels | `raised bed garden rows planning overhead` | Yes | No | No |
+| Survival Garden Regional Plans | `survival-garden-regional-plans` | 5 | Pexels | `hands garden planning outdoor table` | Yes | No | No |
+| Hunting, Fishing and Trapping Manual | `hunting-fishing-trapping-field-manual` | 4 | Pexels | `fly fishing stream rustic lifestyle` | Yes | No | No |
+| Hunting, Fishing and Trapping Manual | `hunting-fishing-trapping-field-manual` | 5 | Pexels | `hands open field guide outdoor nature` | Yes | No | No |
+| Small-Scale Livestock Field Manual | `small-scale-livestock-field-manual` | 4 | Pexels | `backyard chickens small farm` | Yes | No | No |
+| Small-Scale Livestock Field Manual | `small-scale-livestock-field-manual` | 5 | Pexels | `homesteader reading outdoors farm` | Yes | No | No |
+| Meat and Fish Preservation Field Manual | `meat-fish-preservation-field-manual` | 4 | Pexels | `home meat preservation artisan` | Yes | No | No |
+| Meat and Fish Preservation Field Manual | `meat-fish-preservation-field-manual` | 5 | Pexels | `hands slicing cured meat wooden board` | Yes | No | No |
 
 **iStock credit budget**: 5 credits maximum. Allocation priority: Hunting/Trapping (2 credits), Livestock (1 credit), Survival Garden (1 credit), Meat/Fish (1 credit if Pexels insufficient).
 
-**Status**: Stock sourcing sprint not yet started. Ready to execute as Sprint 1 (Days 1–3 per sourcing timeline).
+**iStock credits spent this session**: 0. All 8 Cluster D images sourced from Pexels (free, Pexels License / CC0). Full 5-credit budget preserved for compositing-phase reshoots or future sprints.
+
+**Status**: Sprint 1 complete (Session 686, 2026-04-30). All 8 images staged. Awaiting compositing.
 
 ---
 
@@ -54,14 +56,14 @@ The following table tracks stock image sourcing for the 4 Cluster D products. Ea
 
 | Product | Slug | Slot | Source Platform | Search String / Category | File Staged | Composited | Etsy-Ready |
 |---------|------|------|-----------------|--------------------------|-------------|-----------|------------|
-| Native Plants Regional Guide | `native-plants-regional-guide` | 4 | Wikimedia Commons | `native wildflower meadow habitat North America` | No | No | No |
-| Native Plants Regional Guide | `native-plants-regional-guide` | 5 | Pexels / Wikimedia | `foraging wild plants hands` | No | No | No |
+| Native Plants Regional Guide | `native-plants-regional-guide` | 4 | Wikimedia Commons | `native wildflower meadow habitat North America` | Yes | No | No |
+| Native Plants Regional Guide | `native-plants-regional-guide` | 5 | Pexels | `foraging wild plants hands` | Yes | No | No |
 
 **License requirement**: CC BY-SA or CC0 only. Attribution text must be logged in WORKLOG.md when downloaded.
 
 **iStock credits**: 0 — Wikimedia is the primary source.
 
-**Status**: Sprint 2 (Day 8 per sourcing timeline). Not yet started.
+**Status**: Sprint 2 complete (Session 686, 2026-04-30). Both images staged. Slot 4 requires CC BY-SA 3.0 attribution in composited file credits. Awaiting compositing.
 
 ---
 
@@ -135,12 +137,50 @@ This timing adjustment is feasible if mason jars, seed envelopes, and dried chil
 
 ---
 
+## Session 686 — 2026-04-30 — Stock Image Sourcing Sprint: Clusters D and E + Cluster C Props Plan
+
+### Cluster D Stock Sourcing Sprint (Sprint 1) — COMPLETE
+
+All 8 Cluster D stock images sourced from Pexels (free, Pexels License / CC0) and staged to `assets/stock-raw/`. No iStock credits spent. Full 5-credit budget preserved.
+
+**Images downloaded and staged**:
+
+| Slug | Slot | Final File | Pexels ID | Photographer | License |
+|------|------|------------|-----------|--------------|---------|
+| survival-garden-regional-plans | 4 | `survival-garden-regional-plans-slot4.jpg` | 16664902 | Kelly | Pexels License |
+| survival-garden-regional-plans | 5 | `survival-garden-regional-plans-slot5.jpg` | 29502895 | Maren Ferraro | Pexels License |
+| hunting-fishing-trapping-field-manual | 4 | `hunting-fishing-trapping-field-manual-slot4.jpg` | 33341431 | Caleb Park | Pexels License |
+| hunting-fishing-trapping-field-manual | 5 | `hunting-fishing-trapping-field-manual-slot5.jpg` | 4504017 | yaroslav-shuraev | Pexels License |
+| small-scale-livestock-field-manual | 4 | `small-scale-livestock-field-manual-slot4.jpg` | 4270954 | Cheney Media Productions | Pexels License |
+| small-scale-livestock-field-manual | 5 | `small-scale-livestock-field-manual-slot5.jpg` | 9149313 | Ioanamtc | Pexels License |
+| meat-fish-preservation-field-manual | 4 | `meat-fish-preservation-field-manual-slot4.jpg` | 37256489 | Eduard Perez | Pexels License |
+| meat-fish-preservation-field-manual | 5 | `meat-fish-preservation-field-manual-slot5.jpg` | 37133316 | Mauricio Thomsen | Pexels License |
+
+Candidate alternates (2–3 per slot) also retained in each subdirectory for user review before compositing.
+
+### Cluster E Sourcing Sprint (Sprint 2) — COMPLETE
+
+Both Cluster E images sourced and staged to `assets/stock-raw/native-plants-regional-guide/`.
+
+| Slug | Slot | Final File | Source | Author | License | Attribution Required |
+|------|------|------------|--------|--------|---------|----------------------|
+| native-plants-regional-guide | 4 | `native-plants-regional-guide-slot4.jpg` | Wikimedia Commons | Joe Mabel | CC BY-SA 3.0 | Yes — "Joe Mabel, CC BY-SA 3.0" |
+| native-plants-regional-guide | 5 | `native-plants-regional-guide-slot5.jpg` | Pexels | Alfo Medeiros (ID 11553549) | Pexels License | No |
+
+Slot 4 Wikimedia source: `https://upload.wikimedia.org/wikipedia/commons/c/ca/Mount_Rainier_-_flowers_in_alpine_meadow_at_Paradise_01.jpg` — Mount Rainier alpine wildflower meadow. Attribution text for compositing credit block: "Joe Mabel, CC BY-SA 3.0, via Wikimedia Commons".
+
+### Cluster C Props Acquisition Plan — COMPLETE
+
+`CLUSTER_C_PROPS_ACQUISITION_PLAN.md` created in `projects/seedwarden/`. See that file for full sourcing list, cost estimates, and shoot prep timeline.
+
+---
+
 ## Outstanding Actions for Next Session
 
-1. Execute Stock Sourcing Sprint 1 (Cluster D, 4 products, 8 images) — run all 5 search strings listed in `phase-2-mockup-sourcing-inventory.md` Section "First 5 Search Examples"
-2. Log each download in WORKLOG.md with: product name, source URL, license, staged filename
-3. If iStock is used, record credit consumption against the 5-credit budget
-4. After all 8 stock images staged, composite each with the product PDF cover overlay in Canva
-5. QA composited images against `PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md` Section 5 checklist
-6. Execute Stock Sourcing Sprint 2 (Cluster E, Native Plants, 2 images) — Wikimedia primary, record CC license attribution
-7. Schedule physical shoot sessions (Clusters C, A, B) — verify prop availability before scheduling
+1. ~~Execute Stock Sourcing Sprint 1 (Cluster D, 4 products, 8 images)~~ — DONE (Session 686)
+2. ~~Execute Stock Sourcing Sprint 2 (Cluster E, Native Plants, 2 images)~~ — DONE (Session 686)
+3. Composite each staged stock image with product PDF cover overlay in Canva (10 composites total)
+4. QA composited images against `PHASE2_PHOTOGRAPHY_EXECUTION_PLAN.md` Section 5 checklist
+5. Review Cluster C props plan and confirm acquisition — user action required before shoot
+6. Schedule physical shoot sessions (Clusters C, A, B) — verify props in hand before booking
+7. Review candidate alternates in each stock-raw subdirectory and confirm final selections before compositing

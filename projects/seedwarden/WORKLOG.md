@@ -4,6 +4,54 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 686 — 2026-04-30 — Phase 2 Track B: Stock Image Sourcing Sprints (Clusters D and E) + Cluster C Props Plan
+
+**Task**: Execute Cluster D stock image sourcing sprint (8 images, 4 products), Cluster E Wikimedia sourcing (2 images, 1 product), and create Cluster C props acquisition plan.
+
+**iStock credits spent this session**: 0 of 5. All 10 images sourced free — 9 from Pexels, 1 from Wikimedia Commons. Full iStock budget preserved.
+
+### Cluster D — Image Downloads (8 images)
+
+All images are Pexels License (free for commercial use, no attribution required).
+
+| Product | Slot | Staged Filename | Pexels ID | Photographer | Source URL |
+|---------|------|-----------------|-----------|--------------|------------|
+| Survival Garden Regional Plans | 4 | `survival-garden-regional-plans-slot4.jpg` | 16664902 | Kelly | https://www.pexels.com/photo/top-view-of-a-vegetable-garden-16664902/ |
+| Survival Garden Regional Plans | 5 | `survival-garden-regional-plans-slot5.jpg` | 29502895 | Maren Ferraro | https://www.pexels.com/photo/hands-reviewing-architectural-blueprints-outdoors-29502895/ |
+| Hunting, Fishing and Trapping Manual | 4 | `hunting-fishing-trapping-field-manual-slot4.jpg` | 33341431 | Caleb Park | https://www.pexels.com/photo/33341431/ |
+| Hunting, Fishing and Trapping Manual | 5 | `hunting-fishing-trapping-field-manual-slot5.jpg` | 4504017 | yaroslav-shuraev | https://www.pexels.com/photo/4504017/ |
+| Small-Scale Livestock Field Manual | 4 | `small-scale-livestock-field-manual-slot4.jpg` | 4270954 | Cheney Media Productions | https://www.pexels.com/photo/free-range-chickens-behind-the-fence-4270954/ |
+| Small-Scale Livestock Field Manual | 5 | `small-scale-livestock-field-manual-slot5.jpg` | 9149313 | Ioanamtc | https://www.pexels.com/photo/9149313/ |
+| Meat and Fish Preservation Field Manual | 4 | `meat-fish-preservation-field-manual-slot4.jpg` | 37256489 | Eduard Perez | https://www.pexels.com/photo/rustic-hanging-sausages-in-sunlit-workshop-37256489/ |
+| Meat and Fish Preservation Field Manual | 5 | `meat-fish-preservation-field-manual-slot5.jpg` | 37133316 | Mauricio Thomsen | https://www.pexels.com/photo/chef-slicing-cured-meat-on-wooden-board-37133316/ |
+
+Note: 2–3 candidate alternates also retained per slot in each subdirectory under `assets/stock-raw/`. User should review candidates before compositing and confirm or swap final selection.
+
+### Cluster E — Image Downloads (2 images)
+
+| Product | Slot | Staged Filename | Source | Photographer | License | Attribution Text | Source URL |
+|---------|------|-----------------|--------|--------------|---------|-----------------|------------|
+| Native Plants Regional Guide | 4 | `native-plants-regional-guide-slot4.jpg` | Wikimedia Commons | Joe Mabel | CC BY-SA 3.0 | "Joe Mabel, CC BY-SA 3.0, via Wikimedia Commons" | https://commons.wikimedia.org/wiki/File:Mount_Rainier_-_flowers_in_alpine_meadow_at_Paradise_01.jpg |
+| Native Plants Regional Guide | 5 | `native-plants-regional-guide-slot5.jpg` | Pexels | Alfo Medeiros | Pexels License | None required | https://www.pexels.com/photo/11553549/ |
+
+CC BY-SA 3.0 note: The Mount Rainier meadow image (Slot 4) requires attribution in any published composite. When this image is used in a Canva composite for Etsy listing, include a small credit line in the image footer or in the Etsy listing description: "Background photo: Joe Mabel, CC BY-SA 3.0, via Wikimedia Commons." This satisfies the ShareAlike clause.
+
+### Files produced
+
+- `assets/stock-raw/survival-garden-regional-plans/` — 3 files (slot4-a, slot4-b as candidate, slot5-a + final named copies)
+- `assets/stock-raw/hunting-fishing-trapping-field-manual/` — 3 files
+- `assets/stock-raw/small-scale-livestock-field-manual/` — 3 files
+- `assets/stock-raw/meat-fish-preservation-field-manual/` — 3 files
+- `assets/stock-raw/native-plants-regional-guide/` — 4 files (slot4-a, slot5-a, slot5-b candidates + final named copies)
+- `CLUSTER_C_PROPS_ACQUISITION_PLAN.md` — props acquisition plan for Cluster C physical shoot
+
+**What the user needs to do next**:
+1. Review candidate alternates in each `assets/stock-raw/` subdirectory — confirm or swap final selection before compositing
+2. Review `CLUSTER_C_PROPS_ACQUISITION_PLAN.md` and confirm which props to acquire before Week 2 shoot
+3. When compositing Native Plants Slot 4 in Canva, add attribution credit: "Joe Mabel, CC BY-SA 3.0, via Wikimedia Commons"
+
+---
+
 ## Session 684 production agent — 2026-04-30 — Phase 2 Track B: Bundle Testing Infrastructure
 
 **Task**: Build the data collection and decision infrastructure for the May–July 2026 bundle tests. BUNDLE_A_B_TEST_PLAN.md was complete but lacked the operational layer needed to execute May 1. Three files produced.
