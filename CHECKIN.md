@@ -1,3 +1,44 @@
+## Since Last Check-in (Session 684 — 2026-04-30 07:30 UTC — EXPLORATION QUEUE RESEARCH: OFF-GRID SOCIAL MEDIA TOOLKIT + SEEDWARDEN PREMIUM TAXONOMY)
+
+### ✅ Session 684 Summary (Current)
+
+**Status**: COMPLETE. Two parallel research agents executed from Exploration Queue (no blockers identified). Both deliverables are production-ready and immediately actionable for user distribution planning.
+
+**Work Completed**:
+
+1. ✅ **off-grid-living: Phase 2 Social Media Execution Toolkit**
+   - **Deliverables**: `social-media-execution-toolkit.md` (1,900 words) + `community-posting-calendar-template.md` (900 words)
+   - **Key finding**: r/preppers is the single highest-leverage platform (585K–650K subscribers, 2x engagement vs. r/offgrid, accepts nuclear content)
+   - **Cross-platform sequencing**: Recommended order with specific timing (r/offgrid Day 1 Tue 10:00–12:00 UTC → HackerNews Wed 13:00–15:00 UTC → Twitter → r/preppers Fri)
+   - **Growth modeling**: 80–200 stars Month 1 (conservative), 200–500 (moderate), 500–1,500 (high, requires HN traction)
+   - **Community mechanics**: Reddit upvote velocity in first 1–3 hours drives algorithmic reach; r/preppers/r/offgrid overlap 30–40% (post within 48h triggers spam detection)
+   - **Readiness**: User can execute Phase 2 distribution immediately
+
+2. ✅ **seedwarden: Phase 2 Premium Product Taxonomy Research**
+   - **Deliverable**: `phase-2-premium-taxonomy-research.md` (2,500 words)
+   - **Competitive analysis**: Eight named sellers profiled (Gubba, OntarioTactical, GrowSelfSufficiency, Home Apothecary, mushroom sellers, others); Gubba has deepest content (10 products $14.95–$69.95) but zero Etsy presence (12 total reviews)
+   - **Structural finding**: $25–$50 premium bundle tier is completely vacant on Etsy. Seedwarden will have Etsy algorithmic distribution where competitors don't.
+   - **Five whitespace opportunities** identified: Regional foraging + medicinal ($25–$35), Mushroom ID deep-dive ($18–$28), Seasonal preservation ($38–$50), Native plant propagation ($22–$32), Beginner canning ($15–$18)
+   - **Seasonal demand**: Foraging peaks March–May (175%), Sept–Oct (145–155%). Seeds Jan–April (175–190%). Preservation July–Sept (145–170%). Prepper/survival Sept–Nov (140–175%)
+   - **Pricing psychology**: $20–$50 converts 2–4%, round numbers beat charm pricing above $20, regional customization justifies +20–35% premium
+   - **Readiness**: User can immediately make Phase 2 product selection, pricing, launch timing decisions
+
+**Projects Status**:
+- ✅ **off-grid-living**: Research complete, distribution-ready, awaiting user social media execution
+- ✅ **seedwarden**: Phase 2 product research complete, all prior Phase 2 work complete, Track A blocked on user tag corrections, Track B unblocked and ready
+- ⏳ **stockbot**: Gate 1 time-stop fix deployed (DEPLOY_READY created Apr 30 07:09 UTC), live trading session Apr 30 13:30 UTC
+- ⏳ **resistance-research**: Phase 1 distribution-ready, awaiting user path decision
+
+**Exploration Queue Status**: 
+- ✅ Completed: off-grid-living social media, seedwarden premium taxonomy
+- ⏳ Queued for future: resistance-research post-distribution impact measurement (starts after user chooses path), seedwarden phase 1→2 analytics transition (May 2026), others
+
+**Usage**: Session 684 ~130K tokens. All-models budget: 65% used. Reset in ~112h.
+
+**Next**: Market open 2026-04-30 13:30 UTC — stockbot live trading with Gate 1 time-stop optimization deployed
+
+---
+
 ## Since Last Check-in (Session 683 — 2026-04-30 07:10 UTC — STOCKBOT GATE 1 TIME-STOP FIX + SEEDWARDEN BUNDLE A/B TEST PLAN + DEPLOY READY)
 
 ### ✅ Session 683 Summary (Current)

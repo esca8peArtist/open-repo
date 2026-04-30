@@ -4,6 +4,24 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 — Off-Grid Living — Phase 2 Social Media Execution Toolkit
+
+**Task**: Create research-backed Phase 2 social media execution toolkit for the off-grid-living-guide GitHub repo.
+**Agent**: general-research
+**Deliverables**:
+- `/home/awank/dev/SuperClaude_Framework/projects/off-grid-living/social-media-execution-toolkit.md` (~1,900 words)
+- `/home/awank/dev/SuperClaude_Framework/projects/off-grid-living/community-posting-calendar-template.md` (~900 words)
+
+**Key findings**:
+- r/preppers (~600K+ subscribers) is the highest-leverage single channel for this guide due to size and direct content alignment with disaster/nuclear preparedness domains
+- Reddit engagement velocity in first 1–3 hours is the primary algorithmic signal; Tuesday–Thursday 10:00–14:00 UTC is the optimal window supported by multiple independent analyses
+- HackerNews Show HN: optimal window is 13:00–15:00 UTC Tuesday–Wednesday; bimodal outcome (either 200–2,000 views or <100), no resubmission possible
+- Recommended sequencing: r/offgrid Day 1 → HN Day 2 → Twitter Day 2 evening → r/preppers Day 4 → Dev.to Day 5 → r/homesteading Day 6 → Medium Day 7
+- GitHub stars growth model for niche knowledge-base project: conservative 80–200 by Month 1, moderate 200–500, high 500–1,500 (viral HN required)
+- Fork:star ratio benchmark: 10–25% is healthy; below 5% indicates passive bookmarking rather than active use
+- Reddit replaced public member counts with weekly-visitor metrics in late 2025; subscriber numbers are now estimates from pre-change analytics
+- Risk register covers: spam filter mitigation, HN failure contingency, "AI-generated" challenge response, single-platform concentration, star stagnation after Week 2
+
 ## 2026-04-30 — Seedwarden — Competitive Landscape & Pricing Strategy Analysis
 
 **Task**: Research competitive landscape in homesteading/survival Etsy niche and deliver strategic pricing/positioning analysis.
