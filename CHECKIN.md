@@ -2,10 +2,15 @@
 
 ### ✅ Session 694 Summary (COMPLETE)
 
-**Status**: COMPLETE — Post-market analysis framework corrected and pre-staged; Phase 2 Track B production documents finalized
+**Status**: COMPLETE — All focus areas advanced: stockbot infrastructure ready, seedwarden production finalized, resistance-research framework currency updated
 
 **Key Accomplishments**:
-1. ✅ **Stockbot post-market analysis infrastructure READY**:
+1. ✅ **IMMEDIATE Exploration Item COMPLETE: Resistance-Research Domain Updates**:
+   - FISA Section 702 (domain-25): Added Section 11 tracking April 30 Senate status. House passed 235-191 (April 29). Senate expected to pass 45-day clean extension (no warrant requirement). Warrant off table through June+ 2026.
+   - Iran War Powers (domain-19f): Added Section 20 documenting May 1 outcome. Trump confirmed non-compliance. Five Senate votes blocked 46-51. Collins indicated openness to post-deadline vote. Appropriations leverage May 15-30.
+   - Framework now current through April 30–May 1 verified outcomes. Ready for Phase 1 distribution decision.
+
+2. ✅ **Stockbot post-market analysis infrastructure READY**:
    - Market monitoring script (`monitor_april_30_market.sh`) fixed: rewrote SQL blocks for Python/sqlite3, corrected column names (filled_at→timestamp, side→action, trade_id→id)
    - GATE_1_POST_MARKET_ANALYSIS.md corrected: 6 schema mismatches fixed (symbol→ticker, net_pnl→realized_pnl, strategy→strategy_name); removed non-existent columns
    - Pre-staged Python script (`run_post_market_analysis_apr30.py`) ready for 20:00 UTC execution
