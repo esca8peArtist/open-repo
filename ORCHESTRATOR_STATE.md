@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-04-30T21:19:50Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-04-30T23:24:36Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.2% (192,433 tokens) | All-models 74.4% | Reset in 99h | check: claude.ai → Settings → Usage & billing
+🟡 Usage: Sonnet 3.0% (271,516 tokens) | All-models 76.3% | Reset in 97h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -64,42 +64,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+- ✅ Clear decision framework for each pending user action
 
+**5. EXPLORATION_QUEUE.md Updated**:
+- ✅ Added Items 22, 23, 24 to Active Items section
+- ✅ Queue now has 9 items (6 pending on external events, 3 new items for immediate support of user decisions)
 
-## Session 705 (2026-04-30 16:02 UTC — Live Market Monitoring)
-
-**Orientation**: Single active block (mfg-farm test print); no INBOX items. Highest-priority projects:
-- resistance-research (priority 1): Awaiting user distribution path decision (A / A+37 / B)
-- stockbot (priority 2): Engine running (PID 1691129, 8.9% mem), April 29: 49 fills, April 30: 0 fills so far (market still open until 20:00 UTC)
-- Exploration Queue: 14+ active queued items available
-
-**Task Selection**: stockbot post-market analysis scheduled 20:00 UTC today. Engine health verified: running normally, 49 April 29 fills confirmed in DB.
-
-**Pre-Market-Close Work** (16:02–20:00 UTC):
-- Engine status: ✅ RUNNING (pid 1691129), CPU 4.1%, MEM 8.9%, uptime 7h 7m
-- Database: ✅ HEALTHY (49 April 29 fills confirmed, 0 April 30 fills so far)
-- Post-market script: ✅ READY (`run_post_market_analysis_apr30.py` verified)
-- Gate 1 forecast: ✅ CURRENT (`gate-1-fill-rate-forecast.md` shows 47% pass probability, 11.2 fills/day required pace)
-
-**Scheduled Actions**:
-1. **20:00 UTC**: Execute post-market analysis → extract April 30 fills, calculate May 12 Gate 1 trajectory
-2. **20:15 UTC**: Log fills and forecast update to WORKLOG.md
-3. **20:30 UTC**: Prepare CHECKIN.md with market close results
-
-
-### 16:04 UTC Status Check
-- Engine running: ✅ (PID 1691129, 7h 9m uptime)
-- Database ready: ✅ (0.3 MB, April 29 trades confirmed)
-- Analysis script verified: ✅ (`run_post_market_analysis_apr30.py` ready)
-- Pre-analysis: 0 April 30 fills as of 16:04 UTC (market still open, fills typically come in bursts)
-- **Status**: Monitoring through 20:00 UTC market close, standing by for post-market analysis execution
+### Commits (all to local master, no remote push)
+- 93efdb4 — docs: resistance-research distribution path analysis
+- c44cd62 — docs: stockbot May 12 Gate 1 contingency roadmap  
+- caa3a4d — docs: mfg-farm Day 1 operations and fulfillment procedures
 
 ---
 
-### Post-Market Analysis Plan (20:00 UTC)
-1. Execute `python3 run_post_market_analysis_apr30.py` at market close
-2. Extract April 30 fills and update Gate 1 trajectory
-3. Log fills, current pace, and May 12 forecast to WORKLOG.md
-4. Update CHECKIN.md with market results and next-session priorities
+## 2026-04-30 22:35–22:40 UTC — Session 709 — Autonomous Orchestration: Critical Engine Restart (May 1 Market Open)
+
+**Status**: RESOLVED — Engine restarted, all 67 sessions active, ready for May 1 market open
+
+### Completed
+
+**stockbot — Engine Restart (Critical Block Resolution)**:
+- **Block Context**: Engine crashed post-market April 30 at 22:13 UTC due to transient DNS failure. Gate 1 checkpoint (May 12) requires 101 additional fills in 11 market days. Engine had to restart before May 1 13:30 UTC market open or face missed entire market day.
+- **Action Executed**: Standard restart procedure at 22:35 UTC
+  - Command: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+  - Process started: PID 4253, 8.4% memory, 19.2% CPU
+  - All 67 trading sessions created successfully (AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA, IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, and others)
+  - Budget allocation: 67 sessions × $1,582.09 per session = $106,000 total account
+- **Verification**: 
+  - Process running: ✅ `ps aux | grep launch_stacker_sessions.py` shows PID 4253 active
+  - Log file: ✅ `trading_20260430.log` (9.87 MB, initialized at 22:38 UTC)
+  - Log quality: ✅ First 100 lines show NO ERROR, FAIL, or INVALID messages
+  - Broker status: ✅ OrderExecutor and AlpacaBroker initialized in paper mode
+  - Data fetching: ✅ Bar data successfully fetching for all symbols
+- **Outcome**: Engine fully operational and ready for May 1 13:30 UTC market open (15+ hours remaining). No risk of missing market day.
+
+### BLOCKED.md Updates
+- Moved "stockbot — Engine must restart..." from Active Blocks to Resolved Archive
+- Resolution documented with full details of restart verification
 
 ---
