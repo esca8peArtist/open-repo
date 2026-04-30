@@ -9,6 +9,12 @@
 
 **Phase**: April-May 2026 Domain Content Maintenance COMPLETE (current session). Phase 2 domain expansion COMPLETE (Session 538 verification). Distribution measurement infrastructure now complete (Session 546). 38-domain framework production-ready with April 28 updates. Domain content maintenance: Domain 19f (Iran case study + NATO/Taiwan geopolitical vectors + Section 14), Domain 28 (Venezuela-Iran post-May 1 synthesis), Domain 29 (SPLC case trajectory + nonproft sector response), Domain 6 (Powell-Warsh-Slaughter timing), Domain 35 (Warsh confirmation + Foote denial), Domain 1 (BISC 155-bill count + FISA pre-vote assessment), surveillance-tracking.md (FISA pre-vote + expanded outcome checklist). Distribution awaiting user Path A/B/Hybrid decision. FISA April 30 outcome still pending — fill checklist after vote.
 
+**Session 678 — April 30 Monitoring Flags** (pre-flight verification completed; all three paths ready for execution):
+- FISA Senate vote (S.4344 or 45-day extension): Senate has not acted as of April 30 searches. Thune indicated possible 45-day extension rather than 3-year House bill. Fill surveillance-tracking.md checklist and Domain 25 Section 7 once Senate acts.
+- Iran WPR post-May 1: 60-day deadline hit May 1. Three-scenario framework (peace/frozen/resumed) in Domain 19f Section 15 ready to fill. No enforcement mechanism activated. Fill selected scenario once post-May 1 congressional response clears.
+- No April 30 development found requiring Domain 37 update before distribution.
+- Pre-flight verification: DISTRIBUTION_PATH_VERIFICATION.md (created Session 678). Quick reference: DISTRIBUTION_PATH_QUICK_REFERENCE.md (created Session 678).
+
 **35-Domain Diagnostic Framework**: COMPLETE AND PRODUCTION-READY. All 35 domains + 6 April 2026 updates documented. Distribution templates cover all distribution channels. Session 535 added: phase-2-expansion-roadmap.md (1,900 words), Domain 33 Section 1.3a (6-state simultaneous action map, ~1,300 words, 10 new sources), surveillance-tracking.md FISA post-deadline checklist.
 
 **28-Domain Diagnostic Framework**: COMPLETE. All 28 domains researched and documented in `democratic-renewal-proposal.md` and domain-specific files. Distribution templates updated (Substack, Reddit, institutional outreach) — all references corrected from "22-domain" to "28-domain" — awaiting user execution.
