@@ -1,3 +1,51 @@
+## Since Last Check-in (Session 674 — 2026-04-30 03:48 UTC — STOCKBOT CHECKPOINT + EXPLORATION QUEUE RESEARCH)
+
+### ✅ Session 674 Summary
+
+**Status**: COMPLETE. Stockbot health verified; engine ready for today's 13:15 UTC market open. Exploration queue research completed: comprehensive options trading strategy analysis (2,200+ words) documenting viability, profitability, and implementation roadmap for post-Gate-1 feature expansion.
+
+**Work Completed**:
+
+1. ✅ **Stockbot Engine Health Verification**
+   - **Process status**: PID 1241288 running continuously since 2026-04-29 12:27 UTC (15+ hours)
+   - **Resource consumption**: CPU 9.5%, Memory 7.2% (596 MB) — excellent; no drift
+   - **Database**: 49 fills from April 29 confirmed, all with fill_price populated
+   - **Non-blocking gaps**: All 4 gaps from May 12 checkpoint readiness document are either FIXED or ACCEPTABLE
+     - DB sync automation: ✅ Cron installed (runs 20:05 UTC weekdays)
+     - Discord coordinator: ✅ No 403 errors; mechanism working correctly
+     - MTF fallback: ✅ Logging present, not blocking
+     - DB path standardization: ✅ Noted, not urgent
+   - **Market readiness**: Engine will wake at 13:15 UTC for today's market open. All systems nominal.
+
+2. ✅ **Exploration Queue Research: Options Trading Strategy** (NEW DELIVERABLE)
+   - **File**: `projects/stockbot/docs/options_trading_strategy_research.md` (2,200+ words)
+   - **Key sections**:
+     - Options fundamentals & Greeks (Delta, Gamma, Vega, Theta) with stockbot implications
+     - 4 viable strategies evaluated: short volatility, vertical spreads, calendar spreads, directional spreads
+     - Feature pipeline integration (6 new IV/Greeks/earnings features needed; complexity: MEDIUM)
+     - Profitability analysis: Options 2–6x more capital-efficient BUT require operational complexity
+     - Realistic edge: 0.5–1.5% monthly if tied to equity alpha; requires 100+ concurrent positions for spreads
+     - Implementation roadmap: 3-phase sequence (Q2–Q4 2026); triggers keyed to Gate 1 pass
+     - Recommendation: **Vertical spreads on SPY/QQQ only** — best fit for risk management
+   - **Outcome**: Removes decision uncertainty; provides concrete post-May-12 roadmap for options integration
+
+**Projects Status** (unchanged):
+- ✅ **stockbot**: Engine LIVE, health verified, non-blocking gaps assessed; ready for today's market
+- ⏳ **resistance-research**: Phase 1 framework approved; awaiting user path decision
+- ⏳ **seedwarden**: Track B planning complete; Phase 1 blocked on user (tag corrections)
+- 🚫 **mfg-farm**: Test print blocked
+- 🚫 **open-repo**: PR awaiting review
+- ✅ **off-grid-living**: Publication complete; awaiting user execution
+
+**Next Steps**: 
+- **Immediate**: Market open at 13:15 UTC today; monitoring continues through May 12 checkpoint
+- **Post-Gate-1 (May 12)**: Options trading strategy becomes priority if equity validation successful
+- **Awaiting user**: Distribution path (resistance-research), photo approval (seedwarden), test print (mfg-farm)
+
+**Usage**: ~2.5% Sonnet (estimated 280K tokens from this session), ample budget for Tuesday reset
+
+---
+
 ## Since Last Check-in (Session 673 — 2026-04-30 02:37–02:48 UTC — EXPLORATION QUEUE EXPANSION & CONTINUITY CHECK)
 
 ### ✅ Session 673 Summary
