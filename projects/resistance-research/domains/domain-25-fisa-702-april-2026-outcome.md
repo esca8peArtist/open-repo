@@ -90,28 +90,32 @@ The House voted 215-210 on the procedural rule opening floor debate — a party-
 - CBDC ban attached as appendage to secure Freedom Caucus votes; Freedom Caucus members who flipped (Massie, Norman, Self) voted no on final passage despite CBDC inclusion, confirming they continue to oppose on Fourth Amendment grounds
 - Trump expected to sign; administration had dropped SAVE Act attachment, indicating acceptance of three-year timeline
 
-**April 30 — Senate Position: Short-Term Extension Preferred, Not Three-Year**
-- Senate Majority Leader Thune, who had filed cloture for a three-year companion bill, reversed course as of April 30
-- New Senate position: Instead of passing the three-year extension, Senate leadership is drafting another short-term extension (10-30 days) to allow for continued negotiations with the House
-- Rationale per Senate reporting: The Senate recognized that a three-year extension passes with bipartisan opposition (28 D's support, 159 D's oppose), indicating that a majority of Democrats strongly oppose the no-warrant-requirement framework — making the bill vulnerable to 2026 electoral politics
-- The Senate's short-term extension strategy aims to delay the decision past the 2026 election cycle
-- Presidential signature expected on whatever vehicle Senate produces, given Trump's statement that he wants "at least 18 months to 3 years"
+**April 30 — Senate Passage: 45-Day Short-Term Extension**
+- Senate Majority Leader Thune reversed course on the three-year companion bill on April 30
+- Senate passed a 45-day short-term extension by unanimous voice vote, hours before midnight deadline
+- House followed with 261-111 passage of the short-term extension under suspension of the rules
+- Both chambers thus rejected the three-year warrantless framework in favor of deferring the larger debate
+- The 45-day extension will expire approximately mid-June 2026, reopening the legislative conflict during the pre-midterm election period
+- Trump expected to sign; the pragmatic outcome reflects Senate recognition that three-year warrantless renewal carries Democratic supermajority opposition and electoral risk
 
-### Outcome Summary: Three-Year Warrantless Renewal in House; Senate Holdout for Delay
+### Outcome Summary: House Three-Year Rejected; Both Chambers Passed 45-Day Extension
 
 **Confirmed:**
-- House: 235-191 passage of three-year warrantless renewal (S. 1318)
-- Senate: Preparing alternative short-term extension vehicle
-- Result: Divided government produces either (A) conference committee reconciling chambers post-April 30 midnight, or (B) short-term extension to May 30-June 30 while chambers negotiate
+- House: Initial passage of 235-191 on three-year warrantless renewal (S. 1318, April 29)
+- Senate: Rejected three-year extension; passed 45-day alternative by voice vote (April 30)
+- House: Followed with 261-111 passage of 45-day extension (April 30)
+- Result: No warrant requirement reform achieved; debate deferred to mid-June 2026 (post-election-primary season, during midterm preparation)
 
 **Civil Liberties Community Assessment:**
-- EFF, ACLU, and Brennan Center view the April 29 House outcome as a structural defeat regardless of Senate outcome
-- The three-year extension (whether passed now or after Senate delay-and-reconcile) represents the definitive closure of the warrant-requirement reform window until 2029
-- Next meaningful legislative reform opportunity: April 2029 reauthorization
+- EFF, ACLU, and Brennan Center view the April 29 House passage of three-year warrantless renewal as a defeat, but the Senate's April 30 choice of a 45-day extension represents a tactical victory
+- The 45-day window (to mid-June 2026) remains within the primary/midterm election season, keeping warrant-requirement reform as a viable 2026 election issue
+- Civil liberties litigation (Carpenter doctrine expansion, FISC adversarial proceedings, Fourth Amendment challenges) proceeds regardless of legislative timeline
+- Next legislative reform window: Mid-June 2026 reauthorization cycle (compressed timeline, midterm context)
 
 **Implications for Distribution Timeline:**
-- This outcome (divided chambers, Senate delay) confirms the distribution framework's April 28-29 assessment was accurate through April 30
+- This outcome (House three-year/Senate 45-day divergence resolved through short-term extension) confirms the distribution framework's April 28-29 legislative assessment was accurate through April 30, 2026
 - Domain 25 is current through April 30; framework distribution can proceed with confirmed legislative context
+- Key finding: No warrant requirement reform achieved, but debate timeline extended to mid-June 2026 (high election salience period)
 
 ### If Lapse Occurred (Second-Most-Probable Scenario)
 If the Freedom Caucus bloc held and the floor vote failed, or the Senate did not act before April 30 midnight:
