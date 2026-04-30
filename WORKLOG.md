@@ -4,7 +4,38 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-04-30 — Resistance Research — Phase 1 Execution Plans (Paths A / A+37 / B)
+## 2026-04-30 08:00 UTC — Seedwarden — Phase 2 Track B Stock Image Sourcing Sprint + Cluster C Props Plan
+
+**Task**: Execute stock image sourcing for Clusters D (4 products, 8 images) and E (1 product, 2 images) + create Cluster C physical shoot props acquisition plan.
+**Agent**: seedwarden
+**Status**: COMPLETE
+**Deliverables**:
+- **Cluster D Stock Images (8)**: All sourced from Pexels.com (CC0 license, no attribution required, commercial use allowed)
+  - Survival Garden Regional Plans (slots 4–5): Garden planning overhead + hands on outdoor table
+  - Hunting, Fishing & Trapping Manual (slots 4–5): Fly fishing stream + field guide outdoors
+  - Small-Scale Livestock Field Manual (slots 4–5): Backyard chickens + homesteader reading
+  - Meat & Fish Preservation Field Manual (slots 4–5): Home meat preservation + slicing cured meat
+  - **iStock credits spent**: 0 (Pexels sourcing preserved full 5-credit budget for compositing phase reshoots)
+- **Cluster E Images (2)**: Wikimedia Commons + Pexels
+  - Native Plants Regional Guide (slot 4): Mount Rainier alpine wildflower meadow (Wikimedia CC BY-SA 3.0, Joe Mabel — attribution required in composite)
+  - Native Plants Regional Guide (slot 5): Foraging hands (Pexels CC0, no attribution)
+- **Cluster C Props Plan**: `CLUSTER_C_PROPS_ACQUISITION_PLAN.md` (production-ready) with complete checklist, sourcing notes (hardware stores, grocers, kitchen), budget estimate ($5–$10 groceries), safety notes (gloves for chilis), pre-shoot timeline
+- **All files staged**: 10 final images + 1–2 candidate alternates per product in `assets/stock-raw/`
+- **Files updated**: `phase-2-execution-log.md` (Session 686 section added, Cluster D/E tables marked "File Staged: Yes")
+
+**Key outcomes**:
+- Phase 2 production unblocked: User can now begin Canva compositing without waiting for additional sourcing
+- iStock budget preserved for compositing phase reshoots (common need)
+- CC BY-SA attribution requirements documented for Wikimedia image
+- Cluster C props acquisition no longer a blocker — user has complete shopping/prep checklist
+
+**Next (user action)**:
+1. Review candidate image alternates in `assets/stock-raw/` subdirectories
+2. Read Cluster C props plan; do kitchen inventory check
+3. Set up Canva Brand Kit (30 min)
+4. Begin compositing (overlay product PDFs onto background images)
+
+## 2026-04-30 08:00 UTC — Resistance Research — Phase 1 Execution Plans (Paths A / A+37 / B)
 
 **Task**: Create path-specific execution plans for Phase 1 distribution so orchestrator can execute immediately upon user path decision.
 **Agent**: general-research
