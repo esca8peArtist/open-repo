@@ -4,6 +4,36 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 671 — 2026-04-30 — Phase 2 Track B: Photo Shoot Checklist + May Content Execution Plan
+
+**Task**: Advance Track B production planning with the two highest-impact remaining items: (1) a shot-by-shot photo shoot checklist ready for shoot day, and (2) a fully-drafted May content execution plan with complete email bodies and social post copy.
+
+**Context read**: PHOTO_SHOOT_PLANNING.md, ZONE_CARD_PRODUCTION_TIMELINE.md, PHASE_2_BUNDLE_STRATEGY.md, PHASE_2_SEASONAL_CONTENT_CALENDAR.md, WORKLOG.md (Sessions 669, 670), TRACK_B_READINESS_CHECKLIST.md, ZONE_QUICKSTART_CARD_SPEC.md (head).
+
+**Files produced**:
+
+- `PHOTO_SHOOT_CHECKLIST.md` (~2,600 words): Shot-day execution guide with one checkbox per shot across all 30 captures (15 products × 2 slots each). Organized by cluster session. Each product entry lists: backdrop and surface, active props in frame, angle and mode, two-hand shot flag, tripod/timer flag, and a completion checkbox with time log field. Pre-session setup checklists for all three cluster sessions (Cluster A: 20 props listed, Cluster B: 14 props listed, Cluster C: 19 props listed). Batch editing section with per-cluster preset instructions and the 8 standard Seedwarden adjustments. Complete export filename list (all 30 filenames in convention format). Two shoot scheduling options: Option A (single Saturday, 8.75 hours) and Option B (two half-days, recommended, 6.5–7.5 hours). Common mistakes quick-reference table (8 mistakes and corrections). WORKLOG entry template for post-shoot logging.
+
+- `MAY_CONTENT_EXECUTION_PLAN.md` (~2,800 words): Complete Month 1 execution document for May 2026. Pre-May launch checklist (8 items). Week-by-week schedule table for all four weeks. All three automated email bodies written in full (Email 1: welcome + Zone Card delivery; Email 2: seed saving hook at Day 5; Email 3: companion planting hook at Day 12). 9 social posts with full captions, hashtag sets, hooks, and platform notes (5 TikTok/Instagram videos, 4 Pinterest pins). 2 batch Pinterest sessions documented (Week 1 and Week 4). Platform-specific scheduling guidance. May success metrics table (9 metrics with week 1 and week 4 targets and where to check each). Diagnostic guidance if subscriber count underperforms at Week 2. June transition bridge (Zone Card update workflow ties May into June content without a gap).
+
+**Image downloads this session**: 0
+
+**Why these two documents first**:
+Both items were identified in the task as highest-impact for immediate execution. PHOTO_SHOOT_CHECKLIST.md is the shoot-day companion — the user can carry it into a shoot with no additional planning work needed. MAY_CONTENT_EXECUTION_PLAN.md is time-critical: May starts tomorrow (May 1, 2026) and email sequences must be loaded into Kit before the first subscriber arrives.
+
+**What remains for Phase 2 Track B production planning**:
+- `ZONE_CARD_PRODUCTION_SPEC.md` — per-zone content table, Canva template structure guide, email sequencing reference, success metrics. Estimated: 2–3 hours to produce. This document adds value once the user is in the Canva build phase (Week 1 of ZONE_CARD_PRODUCTION_TIMELINE.md).
+- `BUNDLE_A_B_TEST_PLAN.md` — full A/B test methodology, success metrics, 6-week calendar, decision criteria. Estimated: 1.5–2 hours to produce. This document is needed before the Spring Forager Bundle goes live (June launch per the strategy).
+
+**User decisions still pending from Session 670**:
+1. Photo shoot scheduling — 2 shooting days needed; user to confirm availability.
+2. Canva Free vs. Canva Pro ($15/month) — Pro recommended; free tier works with 60 min additional time.
+3. Kit (ConvertKit) account status — confirm existing or new account needed before email sequences can be loaded.
+4. Zone card "This Month" content — confirm whether April or May tasks are used at initial launch (May 1 is tomorrow — May tasks are the correct choice if launching in May).
+5. Landing page: Kit landing page (free) vs. Carrd.co ($19/year).
+
+---
+
 ## Session 670 — 2026-04-30 — Phase 2 Track B Production Prep: Documents Assessment + Readiness Checklist
 
 **Task**: Advance Phase 2 Track B execution prep. Review PHOTO_SHOOT_PLANNING.md and ZONE_CARD_PRODUCTION_TIMELINE.md for completeness; produce consolidated equipment checklist, shot-by-shot timing breakdown, location prep guide, photography consistency rules, Canva workflow checklist, calendar extraction, asset gap assessment, blocker register update, and consolidated readiness checklist.
