@@ -20861,3 +20861,25 @@ Session ending to allow market monitoring to run at 13:30 UTC.
 
 ---
 
+
+## 2026-05-01 00:25 UTC — Session 711 — Orchestrator: Critical Engine Restart for May 1 Market Open
+
+**Status**: CRITICAL ACTION COMPLETED — Engine restarted and running for May 1 market session (opens 13:30 UTC)
+
+### Completed
+
+**stockbot — CRITICAL Engine Restart (May 1 Market Open)**:
+- **Issue Identified**: Engine process was NOT running at session start (00:25 UTC), despite April 30 restart verification in Session 709
+  - Log file (trading_20260430.log) was last updated 00:05 UTC with normal "Market closed — skipping cycle" messages
+  - No error logs detected — process likely exited cleanly after market close
+  - Process not found in system ps output (nohup may have lost association after shell exit)
+- **Action Taken**: Immediate engine restart using nohup persistence (00:25 UTC)
+  - Command: `cd projects/stockbot && nohup .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper > logs/engine_restart_$(date +%s).log 2>&1 &`
+  - Persistence method: nohup ensures engine survives shell exit and terminal disconnect
+- **Verification**: ✅ Process confirmed running (3 processes: 41235, 41237, 41300)
+- **Timeline**: Engine verified running as of 00:27 UTC, ~13.3 hours before May 1 13:30 UTC market open
+- **Impact**: Gate 1 checkpoint on track. April 29 baseline (49 fills) + May 1 session + May 2-12 = 150+ fills feasible
+
+**Key Finding**: Standalone python process without nohup+background persistence is insufficient for 24/7 trading engine. Recommend: (1) systemd service, (2) supervisor daemon, or (3) tmux session for future restarts to ensure persistence through terminal disconnects.
+
+---

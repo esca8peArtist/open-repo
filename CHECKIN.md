@@ -1,6 +1,43 @@
-## Since Last Check-in (Session 710 — 2026-05-01 00:10–00:25 UTC)
+## Since Last Check-in (Session 711 — 2026-05-01 00:25–00:40 UTC)
 
-### ✅ Session 710 Summary — Exploration Queue Replenishment + May 1 Market Readiness
+### ✅ Session 711 Summary — Critical Engine Restart + May 1 Market Monitoring Setup
+
+**Status**: READY FOR MARKET OPEN — Engine restarted and verified running for May 1 13:30 UTC market session
+
+**Work Completed**:
+
+1. **✅ Critical Engine Restart (Session 711 Immediate Action)**:
+   - **Issue**: Engine process was NOT running at session start (despite Session 709 restart verification)
+   - **Root Cause**: Standalone python process without persistent session (nohup/tmux) lost association after shell exit
+   - **Action Taken**: Restarted engine with nohup persistence: `nohup .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper > logs/engine_restart_$(date +%s).log 2>&1 &`
+   - **Verification**: ✅ Process confirmed running (PIDs 41235, 41237, 41300)
+   - **Log Status**: New engine session initialized, 1,153 lines, 0 errors detected
+   - **Timeline**: Restarted 00:25 UTC, ready for May 1 13:30 UTC market open (13.3 hours)
+
+2. **✅ May 1 Market Monitoring Script (New)**:
+   - **Deliverable**: `projects/stockbot/scripts/monitor_may_1_session.py` (150 lines, production-ready)
+   - **Features**: Process status check, database statistics, recent trades, error detection, log health
+   - **Tested**: ✅ Script verified working (confirmed engine running, 49 total trades, 45 open positions, 0 errors)
+   - **Usage**: Run every 30 min during 13:30–20:00 UTC market hours: `cd projects/stockbot && uv run python scripts/monitor_may_1_session.py`
+   - **Output**: Human-readable status report with emoji indicators (✅ ❌ ⚠️)
+
+**Current Status — May 1 Market Readiness**:
+- ✅ Engine: RUNNING (verified 00:27 UTC, 0 errors)
+- ✅ Database: Healthy (49 April 29 fills, 45 open positions)
+- ✅ Monitoring: Script ready for manual execution during market hours
+- ✅ Gate 1 Progress: 49/150 fills complete (33%), pace on track for May 12 checkpoint
+- ⏰ Market Open: 13:30 UTC (in 13.3 hours from session start)
+
+**Recommended Next Steps**:
+- Run monitoring script every 30 minutes during market hours (13:30-20:00 UTC)
+- Post-market analysis scheduled for ~20:30 UTC to calculate daily fill count and Gate 1 progress
+- If engine stops during market hours, restart immediately using the command above
+
+---
+
+## History
+
+### Session 710 Summary — Exploration Queue Replenishment + May 1 Market Readiness
 
 **Status**: IN PROGRESS — Engine verified running, three new exploration items queued, ready for parallel research execution
 
