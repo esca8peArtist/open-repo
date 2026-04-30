@@ -294,6 +294,12 @@
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
 **Current focus**: 
+**Session 694 (2026-04-30 10:45–11:15 UTC) — POST-MARKET ANALYSIS FRAMEWORK PRE-STAGED FOR EXECUTION**:
+- **Market Monitoring Script FIXED** ✅: `monitor_april_30_market.sh` rewritten (sqlite3 binary issue, column mismatches: filled_at→timestamp, side→action, trade_id→id). Database health confirmed: 49 April 29 baseline, 0 fills today (pre-market), 20 open positions. Discord webhook active.
+- **Post-Market Analysis Framework CORRECTED** ✅: GATE_1_POST_MARKET_ANALYSIS.md had 6 schema mismatches; all corrected (symbol→ticker, net_pnl→realized_pnl, strategy→strategy_name, removed non-existent columns). Pre-staged script `run_post_market_analysis_apr30.py` ready for 20:00 UTC execution.
+- **Execution Plan**: 13:30–20:00 UTC market monitoring; 20:00–21:30 UTC post-market analysis (fill extraction, Gate 1 progress calc: 49+today count vs. 150-fill May 12 target).
+- **Next Checkpoint**: 2026-04-30 13:15 UTC market open; 20:00 UTC post-market analysis execution; May 1–9 SELL signal execution tracking; May 12 formal Gate 1 checkpoint validation.
+
 **Session 659 (2026-04-29 23:35 UTC) — MAY 12 CHECKPOINT READINESS DOCUMENT CREATED**:
 - **Engine Health Verified** ✅: PID 1241288 running 10h 32m, CPU 11.1%, MEM 8.5%, all 67/67 sessions generating signals
 - **Database Integrity** ✅: All 49 April 29 fills confirmed (100% fill_price populated, $4,581 unrealized P&L +1.11%)
@@ -306,7 +312,6 @@
      - DB path standardization (LOW): One copy (stockbot.db vs database/stockbot.db)
      - MTF 15Min warning flood (LOW): Rate-limit to first-occurrence per session
   2. **Gate 1 Trajectory**: 49 trades in ~3 days = 5x threshold; SELL execution May 1–9 completes validation
-- **Next Checkpoint**: 2026-04-30 13:15 UTC market open (verify auth errors do not recur); May 1–9 SELL signal execution; May 12 formal Gate 1 checkpoint validation
 
 **Session 656 (2026-04-29 21:26–22:46 UTC) — MARKET SESSION VERIFICATION COMPLETE**:
 - **Engine Status**: ✅ RUNNING (PID 1241288, 8.5+ hours uptime)
@@ -515,7 +520,11 @@
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: **Phase 2 Track B planning COMPLETE (Session 670)**. Five new production documents created: `PHOTO_SHOOT_PLANNING.md` (shot list for all 15 physical lifestyle photos, Clusters A/B/C, 6.5-8.5h batching), `ZONE_CARD_PRODUCTION_TIMELINE.md` (week-by-week Canva build plan for 8 zone PDFs + Kit email delivery setup, ~10 hours total across 4 weeks), `PHASE_2_BUNDLE_STRATEGY.md` (3 bundle tests with pricing psychology, sequential A/B plan), `PHASE_2_SEASONAL_CONTENT_CALENDAR.md` (6-month content calendar May–Oct with email sequences + social pillars per month), `PHASE_3_READINESS_CHECKLIST.md` (per-option pre-production checklists for Options A/B/C/D). Phase 1 is still the critical path — awaiting user tag corrections (3) + Etsy account verification. All Phase 2 autonomous production planning complete.
+**Current focus**: **Phase 2 Track B production FINALIZED (Session 694)**. All Phase 2 Track B production documents completed and committed:
+- **PHOTO_SHOOT_PLANNING.md**: Pre-Shoot Status Summary added — identifies 4 critical gaps (props Clusters A/B, printed pages list, germination tray timing for May shoot, worn gloves). Early May production timeline confirmed viable: Cluster A (4.5–5h), Clusters B+C (3.5–4.5h), can be batched same-day or consecutive mornings.
+- **ZONE_CARD_PRODUCTION_TIMELINE.md**: Pre-Canva Content Verification Checklist added — specifies zone content readiness, footer copy lock (Etsy Zone Calendar link, Kit landing page URL), design system decisions locked (portrait, 8 PDFs, monthly cadence). **CRITICAL**: May task currency check needed (Spec has April tasks; update to May before Canva export).
+- **PHASE_2_EMAIL_STRATEGY.md** (NEW): Consolidated all email + automation architecture into single production plan. Zone card to email delivery mapping (sign-up dropdown, 8 zone-specific email variants). Photo-to-newsletter release coordination (launch text-only, add lifestyle photos cluster-by-cluster). 7-step Kit platform setup. Dependency map shows PDFs are only hard blocking dependency; everything else layers in afterward.
+- **Session 670 documents**: PHASE_2_BUNDLE_STRATEGY.md, PHASE_2_SEASONAL_CONTENT_CALENDAR.md, PHASE_3_READINESS_CHECKLIST.md all finalized. Phase 1 critical path: awaiting user tag corrections (3) + Etsy account verification. All Phase 2 autonomous production planning now COMPLETE.
 
 **Track A — Phase 1 launch (blocked on user)**: 3 tag corrections and Etsy account verification required before upload (documented in `UPLOAD_READY_CHECKLIST.md`). Once user completes those, all 21 Phase 1 products are ready to list immediately (8 text-heavy + native plants guide). All PDFs Etsy-compliant (≤900 KB except guide at 4.91 MB). All listing copy, tags, pricing, and mockups complete.
 
