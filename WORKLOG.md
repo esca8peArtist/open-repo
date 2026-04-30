@@ -4,6 +4,102 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 07:45 UTC — Orchestrator Session 681 — PARALLEL EXECUTION: SEEDWARDEN TRACK B + RESISTANCE-RESEARCH PHASE 1 PREP + STOCKBOT MONITORING FIX
+
+**Status**: ✅ COMPLETE — Three parallel agents executed successfully. Seedwarden Track B is production-ready; Resistance-research Phase 1 fully prepared; Stockbot monitoring bug fixed.
+
+**Work Completed**:
+
+### Seedwarden Track B Production Execution ✅
+**Agent**: seedwarden
+**Deliverables**: 3 new documents committed to master
+1. **`TRACK_B_EXECUTION_KICKOFF.md`** — Day-by-day execution plan (Days 1–14)
+   - Day 1: Canva Brand Kit setup (10 hex values embedded), social bio drafts, props sourcing
+   - Days 2–5: Zone cards 5–6 (master template + first duplicate)
+   - Days 6–11: Photo shoots (Clusters A, B, C) with cluster-specific task sequencing
+   - Days 12–14: Zones 7–10, Kit delivery integration, WORKLOG update
+   - End-of-week-2 deliverables table confirms completion criteria
+   - **Ready for**: User to execute immediately with zero planning overhead
+
+2. **`PHOTO_SHOOT_EQUIPMENT_BRIEF.md`** — Pre-shoot equipment & technique reference
+   - Phone model qualification (iPhone/Pixel/Galaxy criteria)
+   - Camera mode rule (portrait vs. standard by distance)
+   - White balance settings (per phone OS: iPhone Halide, Pixel Pro, Samsung Pro)
+   - Ring light exclusion rationale (catch-light pattern conflict with brand)
+   - Props table per cluster (source, cost, notes)
+   - Two-day pre-shoot checklist + 8 common technical errors with corrections
+
+3. **`CANVA_ZONE_CARD_BATCH_WORKFLOW.md`** — Canva operator reference (open during build)
+   - Build order with sequencing rationale
+   - 13-step per-card build sequence (zone first, band color second, region line third)
+   - Complete per-zone content for all 8 zones (frost dates, growing season, example cities, May 2026 tasks, crops, storage tips, variety spotlight)
+   - Zone band color quick reference
+   - 6-point pre-export quality check
+   - Kit upload tracking table (checkboxes for all 8)
+
+**Status**: Track B ready for immediate execution. User decisions still needed: (1) Canva Pro vs. Free, (2) Kit account setup, (3) Landing page choice (Kit vs. Carrd), (4) Photo shoot dates (2 sessions needed).
+
+**Remaining Track B work** (deferred): BUNDLE_A_B_TEST_PLAN.md (needed before June bundle launch, not blocking May execution).
+
+### Resistance-Research Phase 1 Execution Prep ✅
+**Agent**: resistance-research
+**Deliverables**: 2 commits
+
+1. **Gap 1 Resolution Verified**
+   - Domain 1 Section 4.2 FISA correction was already completed in Session 658
+   - Updated `PHASE_1_EXECUTION_READINESS.md` to mark Gap 1 as RESOLVED
+   - Updated `PHASE_1_EXECUTION_CHECKLIST.md` Block 0 to reflect completed status
+   - Commits: `4277d07` (Gap 1 resolution), `9d85a3c` (Block 0 completion mark)
+
+2. **Domain 37 Summary: Federal Executive Interference in 2026 Midterms**
+   - 543 lines, production-ready
+   - Documents five-mechanism Trump administration interference strategy
+   - Mechanism 1: National voter surveillance + SAVE system purge (81% false-positive rate)
+   - Mechanism 2: March 31 EO on mail voting + DHS citizenship list (under legal challenge)
+   - Mechanism 3: DOJ Civil Rights Division capture + nationwide election jurisdiction
+   - Mechanism 4: ICE-at-polls voter intimidation infrastructure
+   - Mechanism 5: Strategic disinformation + psychological intimidation
+   - Key findings: Constitutional gap allows civilian federal law enforcement in electoral contexts; Hungary April 2026 lesson (77% turnout overcomes structural disadvantage); four-layer resistance architecture (litigation, state action, organizational infrastructure, statutory reform)
+   - **Supports Path A+37 Hybrid**: Domain 37 targeted for election security specialists in Week 2–3 post-Phase-1 launch
+
+**Status**: Phase 1 fully ready for execution. Awaiting only user distribution path decision (A / A+37 / B).
+
+### Stockbot Monitoring Bug Fix ✅
+**Agent**: stockbot
+**Deliverables**: 2 commits + new checkpoint planning document
+
+1. **Root Cause Fix Completed**
+   - **Layer 1** (Session 678): `paper_trading_monitor.py` fallback query logic added (first tries per-ticker match, then falls back to live_paper_sync on zero results)
+   - **Layer 2** (this session): `sync_db_from_alpaca.py` updated to properly load per-ticker strategy names from active-sessions.json
+   - New methods: `load_ticker_strategy_map()`, `resolve_strategy_name()` with fallback logic
+   - Added `--sessions-file` CLI argument pointing to active-sessions.json by default
+   - Commit: `061c081` (root-cause fix)
+
+2. **Verification Complete**
+   - Monitor `--no-log` run shows: 49 total order legs, 20 active tickers (all April 29 BUY entries, correct)
+   - 0 completed round trips is correct (no SELL executions yet)
+   - 47/47 tests passing (27 monitor tests + 20 new sync tests)
+   - 301/302 full backtesting suite tests pass (1 pre-existing yfinance skip)
+   - Engine status: PID 1241288, running, no auth errors
+
+3. **`GATE_1_CHECKPOINT_PLAN.md`** — May 12 checkpoint validation plan
+   - Daily verification checklist (process alive, market-open detection, fill validation, auth error counts)
+   - Pass criteria: ≥15 round trips in 12 trading days (projects to ≥30/month), fill_price non-zero for all trades, 0 auth errors
+   - Fail criteria + recovery actions for each failure mode
+   - Concrete SQL/bash commands for May 12 checkpoint run
+   - Post-Gate-1 action items for pass/fail outcomes
+
+**Status**: Monitoring fully functional. Engine ready for Gate 1 checkpoint verification (May 12).
+
+**Projects Status After Session 681**:
+- ✅ **seedwarden**: Track B production documents complete, execution-ready (awaiting user photo scheduling + Brand Kit setup decisions)
+- ✅ **resistance-research**: Phase 1 fully prepared (awaiting user distribution path decision A/A+37/B)
+- ✅ **stockbot**: Monitoring bug fixed, Gate 1 checkpoint plan ready (engine healthy, awaiting May 12 verification)
+- ⏳ **cybersecurity-hardening**: Templates complete, ready for user execution
+- 🚫 **mfg-farm**: Test print blocked (user action required)
+- 🚫 **open-repo**: PR #1 awaiting review
+- ⏳ **off-grid-living**: Publication complete, awaiting user social media execution
+
 ## 2026-04-30 05:20 UTC — Orchestrator Session 680 — RESISTANCE-RESEARCH APRIL 30 / MAY 1 CRISIS DOMAIN UPDATES + EXPLORATION QUEUE INITIALIZATION
 
 **Status**: ✅ COMPLETE — Resistance-research domain updates executed. Exploration Queue initialized with 3 new items. Framework current through May 1, 2026 for Phase 1 distribution.
