@@ -1,3 +1,61 @@
+## Since Last Check-in (Session 668 — 2026-04-30 02:40 UTC — EXPLORATION QUEUE COMPLETION: OPTIONS TRADING + POST-DISTRIBUTION TRACKING)
+
+### ✅ Work Completed: Exploration Queue Items 2/2 Complete + Market Open Monitoring Scheduled
+
+**Session 668 Summary**: Executed two exploration queue items in parallel while stockbot engine runs successfully toward Gate 1 checkpoint. Options trading strategy research complete; post-distribution tracking framework ready for Phase 1 post-launch use. Engine running 89+ hours, 49 trades April 29 (5× Gate 1 pace). Daily market open verification monitoring now active (13:10 UTC weekdays).
+
+**What was accomplished**:
+
+1. ✅ **Stockbot: Options Trading Strategy Analysis COMPLETE**
+   - **Output file**: `projects/stockbot/options-strategy-analysis.md` (4,900 words, 34 KB)
+   - **Key findings**: 
+     - Feature pipeline gap: MTF extractor lacks live IV data → volatility-relative strategies not feasible without Gate 4 feature engineering
+     - Five strategies ranked: Covered calls (HIGH feasibility, 70% structural win rate), CSPs (MEDIUM-HIGH, capital-intensive), Bull-call spreads (MEDIUM), Protective puts (NOT RECOMMENDED), Long straddles (LOW, requires IV data)
+     - IV crush quantified: NVDA 48% post-earnings; bid-ask spreads 3.3-7.1% round-trip; vol estimation error ±3-8% (favors writers)
+     - Integration effort: 21-31 hours across 7 gaps (OptionsPositionTracker, equity polling, delta aggregation, earnings blackout, assignment handling)
+     - Three-phase roadmap: Phase 1 covered calls (May 12–31), Phase 2 spreads+CSPs (July), Phase 3 volatility strategies (August)
+   - **Decision gating**: Covered calls activate on May 12 Sharpe >= 0.5, backtest win rate >= 60%, capital efficiency >= 15%
+   - **Status**: Production-ready research; no code changes; decision roadmap ready for post-Gate-1 implementation planning
+
+2. ✅ **Resistance-Research: Post-Distribution Institutional Adoption Tracking Framework COMPLETE**
+   - **Output file**: `projects/resistance-research/post-distribution-tracking.md` (decision trees + metrics + timelines, 55 KB)
+   - **Key findings**:
+     - **Domain adoption hotspots**: Domains 29 (Prosecutorial Weaponization), 6 (Judicial Independence), 28 (War Powers) fastest adoption (48-96h response cycles)
+     - **Sector-pathway analysis**: State AGs (2-4 weeks), law schools (4-8 weeks), think tanks (6-12 weeks), civil rights coalitions (8-16 weeks)
+     - **Impact metrics hierarchy**: Legal citations > policy proposals > media reach > endorsements
+     - **Adoption signal interpretation**: Domain silence at 60d = distribution problem first, verify delivery before revising content
+     - **Adaptation tracking**: Scope extensions (domain applied to new problem) = highest-value generativity signal
+     - **Success scenario**: 12-month "partial success" (2-3 domains driving Tier 1 adoption) flagged as most likely; prevents premature abandonment
+     - **Data collection**: Google Scholar alerts, PACER/CourtListener, legislative databases, media monitoring, institutional announcements
+   - **Status**: Production-ready; activated upon Phase 1 user decision
+
+3. ✅ **Stockbot Market Open Monitoring Setup**
+   - **Daily verification scheduled**: 13:10 UTC weekdays (5 min before market pre-wake)
+   - **Checkpoint tasks**: Verify engine running, sessions generating signals, trades recorded, no auth errors
+   - **Duration**: Runs through May 12 checkpoint (12 days)
+   - **Automation**: Cron job added (job ID: 9554d8c1); durable across session restarts
+
+**Engine Status**:
+- 🟢 **Stockbot LIVE**: PID 1241288, 89+ hours uptime, 49 trades (April 29), 20 open positions
+- **Gate 1 pace**: 49 trades in ~3 days = **5× threshold** (30/month required) ✅
+- **Market open checkpoint**: 2026-04-30 13:15 UTC (in 10.5 hours) — engine will wake and resume trading
+
+**Projects Status**:
+- ✅ **stockbot**: Engine healthy, monitoring active, Gate 1 trajectory on track
+- ✅ **resistance-research**: Exploration queue complete; Phase 1 infrastructure production-ready; **awaiting user path decision (A / A+37 / B)**
+- ✅ **Exploration queue**: All recent items complete (options analysis, post-distribution tracking)
+- ⏳ **seedwarden/cybersecurity-hardening**: Production-ready; awaiting user approval/setup
+- ⏳ **mfg-farm**: All autonomous work done; awaiting test print
+- 🚫 **open-repo**: PR #1 awaiting maintainer review/merge
+
+**Needs your input**:
+1. **Resistance-Research Distribution Path**: A, A+37 (Recommended), or B → Phase 1 execution ready (3-4.5h to Batch 1)
+2. **Domain 1 Section 4.2 FISA Correction** (5 min): Update per Session 659 feedback
+3. **Seedwarden Track B**: Canva Brand Kit setup (30 min) → enables pin production
+4. **Stockbot options trading decision**: Roadmap complete; implement covered calls post-Gate-1 or defer to optimization phase?
+
+---
+
 ## Since Last Check-in (Session 667 — 2026-04-30 20:15 UTC — EXPLORATION: FEEDBACK INTEGRATION ROADMAP)
 
 ### ✅ Work Completed: Post-Distribution Feedback Framework Ready for Phase 1 Execution
