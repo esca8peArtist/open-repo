@@ -439,6 +439,53 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
+## New Items (Session 695 — Queue Replenishment)
+
+### ⏱️ Item 30: resistance-research Phase 1 Execution Prep (Session 695)
+**Status**: QUEUED — Execute now (parallel with user decision, 3-4 hour research)
+**Scope**: Prepare Phase 1 execution infrastructure and assets even though user hasn't selected distribution path (A/A+37/B). Build reusable components: Substack publication setup, draft outreach email templates, contact list structure, email sequence framework.
+**Deliverables**:
+- `phase-1-substack-setup-guide.md` (1,500 words) — Publication name variants per path, SEO optimization, initial post strategy, embedding strategy for domain content
+- `phase-1-outreach-email-templates.md` (2,500 words) — 3 template variants (for law schools, think tanks, policy orgs), personalization variables, subject line A/B options
+- `phase-1-contact-list-structure.md` (1,000 words) — Database schema for 25 Tier 1 institutions, metadata fields (sector, contact person, institutional mandate alignment)
+- `phase-1-email-sequence-framework.md` (1,500 words) — Multi-email nurture sequence (3-5 touchpoints per institution), timeline, success metrics
+**Rationale**: User needs to decide on distribution path A/A+37/B. While awaiting decision, prep work is path-agnostic and enables rapid launch once user chooses. Substack + outreach templates can serve all three paths; only contact lists need path-specific variants.
+**Owner**: resistance-research agent
+**Prerequisites**: Framework complete; items 10, 12, 17, 26 (domain candidates) complete
+**Key areas**: Institutional messaging consistency, multi-variant email templates, audience segmentation structure
+
+---
+
+### ✅ Item 31: cybersecurity-hardening Tier 2 Distribution Execution (Session 695 COMPLETE)
+**Status**: COMPLETED 2026-04-30
+**Scope**: Item 27 completed regional messaging prep. Executed: created targeted outreach email templates for each Tier 2 sector, built contact lists, designed distribution sequence calendar.
+**Deliverables** (all committed to master):
+- ✅ `tier-2-sector-contact-lists.md` (751 lines) — 44 verified contacts across 4 sectors (digital rights, academic cybersecurity, researcher communities, journalists); named decision-makers, confirmed emails, sourcing notes per entry
+- ✅ `tier-2-outreach-email-templates.md` (375 lines) — 4 sector-specific templates with subject line variants (20+), personalization variables, sector-specific {{CURRICULUM_ANGLE}}, {{JOURNALIST_ORG_SPECIFIC}}, {{TECHNICAL_SPECIFIC_GAP}} fill-in blocks; builds directly on ITEM14 messaging analysis
+- ✅ `tier-2-distribution-calendar.md` (269 lines) — 4-week rollout (May 5–30, 2026): Week 1 Digital Rights, Week 2 Journalists, Week 3 Academic, Week 4 Researcher; follow-up structure (Day 7 and Day 14); September re-engagement wave framework
+- ✅ `tier-2-success-metrics.md` (212 lines) — Per-sector open rate targets (45%/35%/40%/50%), reply rate targets (20%/10%/15%/25%), conversion definitions, full spreadsheet column schema, iteration framework (2-week audit, 4-week full review, September re-engagement)
+**Key contacts confirmed**: EFF (Saira Hussain, saira@eff.org), STOP (Michelle Dahl, info@stopspying.org), Access Now (Mohammed Al-Maskati, help@accessnow.org), CDT (Tom Bowman), EPIC (Jeramie Scott), FPF training (training@freedom.press), CMU CyLab (Lorrie Cranor, lorrie@cs.cmu.edu), UC Berkeley CLTC (Ann Cleaveland, ann.cleaveland@berkeley.edu), MIT IPRI (ipri-contact@mit.edu), DEF CON 34 CFP (talks@defcon.org, deadline May 1 2026)
+**Time-sensitive action**: DEF CON 34 CFP closes May 1, 2026 — if talk submission planned, must execute immediately
+**Owner**: cybersecurity-hardening agent (or general-research agent)
+**Prerequisites**: Item 27 (Tier 2 regional adaptation) complete
+
+---
+
+### ⏱️ Item 32: stockbot Gate 2 Strategic Roadmap (Session 695)
+**Status**: QUEUED — Execute post-Gate-1-validation (May 12)
+**Trigger**: Gate 1 checkpoint passes (≥150 fills, ≥95% execution rate, ≤2% slippage, ≥98% uptime, ≥98% alert delivery)
+**Scope**: Gate 2 represents entry into multi-asset-class and advanced strategies territory. Design comprehensive roadmap bridging Gate 1 success to Gate 2 launch (May 13–31): options overlay strategy, crypto integration, HMM regime validation, institutional infrastructure.
+**Deliverables**:
+- `gate-2-architecture-blueprint.md` (4,000 words) — Detailed architecture for covered call overlay + equity ensemble integration, covered call triggering logic, Greeks management, capital efficiency modeling
+- `gate-2-crypto-integration-roadmap.md` (3,000 words) — Crypto signal integration design, 24/7 trading logic, liquidation handling, regulatory compliance (Form 8949, crypto tax treatment)
+- `gate-2-validation-framework.md` (2,500 words) — Testing strategy for options + crypto simultaneously, A/B test design, Sharpe/Sortino improvement targets, statistical significance criteria (p<0.05)
+- `gate-2-implementation-sequencing.md` (2,000 words) — Phase 1 options overlay (14–21 days), Phase 2 crypto integration (21–28 days), phase gates with binary pass/fail criteria
+**Owner**: stockbot agent (autonomous execution post-Gate-1)
+**Context**: Item 3 (post-Gate-2 operations) and Items 26/27 (options + crypto preliminary research) provide foundation. Gate 2 roadmap bridges research → implementation → Gate 3.
+**Prerequisites**: Gate 1 passes (May 12)
+
+---
+
 ## New Items (Session 633 — Queue Replenishment)
 
 ### Item 22: resistance-research Phase 2 Domain Selection Framework (Conditional — Post-Distribution-Launch)
