@@ -29,15 +29,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Engine must restart for May 1 market open (11 hours remaining)
-**Date blocked**: 2026-04-30
-**Context**: Engine stopped running post-market April 30 due to transient DNS failure at 22:13:04 UTC. April 30 fills: 0 (all 49 April 29 fills still valid). Network is now HEALTHY (ping + curl to Alpaca API both succeed). Gate 1 checkpoint (May 12) requires 101 additional fills in 11 market days (9.2/day pace). Engine must be restarted before May 1 13:30 UTC market open, or we miss an entire market day and further reduce odds of reaching Gate 1 target.
-**What I need**: Restart engine using standard procedure: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`. Confirm all 67 sessions launch without errors and logs show "Market closed — skipping cycle" or "cycle ready" messages.
-**Verify with**: `ps aux | grep launch_stacker_sessions.py | grep -v grep && echo "Engine running"` should show process; Log file `/projects/stockbot/logs/trading_2026050*.log` should exist and show no ERROR messages for first 100 lines.
-**Resolution**:
-
----
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -46,6 +37,17 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Resolution**:
 
 ## Resolved Archive
+
+---
+
+### stockbot — Engine must restart for May 1 market open (11 hours remaining)
+**Date blocked**: 2026-04-30
+**Date resolved**: 2026-04-30 (Session 709)
+**Context**: Engine stopped running post-market April 30 due to transient DNS failure at 22:13:04 UTC. April 30 fills: 0 (all 49 April 29 fills still valid). Network was healthy (ping + curl to Alpaca API both succeed). Gate 1 checkpoint (May 12) required 101 additional fills in 11 market days (9.2/day pace). Engine had to restart before May 1 13:30 UTC market open to avoid missing entire market day.
+**Solution**: Executed standard restart procedure: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`. All 67 sessions launched successfully without errors.
+**Outcome**: Engine restarted successfully at 22:38 UTC. `launch_stacker_sessions.py` running (PID 4253), all 67 sessions created and launching. Log file `trading_20260430.log` initialized (9.87 MB) with no ERROR messages. All brokers initialized in paper mode. Data fetching active. Engine ready for May 1 13:30 UTC market open (15 hours remaining).
+
+---
 
 ### stockbot — Discord webhook URLs invalid; 403 Forbidden errors in live trading
 **Date blocked**: 2026-04-29

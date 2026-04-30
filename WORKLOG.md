@@ -20772,3 +20772,30 @@ Session ending to allow market monitoring to run at 13:30 UTC.
 
 ---
 
+## 2026-04-30 22:35–22:40 UTC — Session 709 — Autonomous Orchestration: Critical Engine Restart (May 1 Market Open)
+
+**Status**: RESOLVED — Engine restarted, all 67 sessions active, ready for May 1 market open
+
+### Completed
+
+**stockbot — Engine Restart (Critical Block Resolution)**:
+- **Block Context**: Engine crashed post-market April 30 at 22:13 UTC due to transient DNS failure. Gate 1 checkpoint (May 12) requires 101 additional fills in 11 market days. Engine had to restart before May 1 13:30 UTC market open or face missed entire market day.
+- **Action Executed**: Standard restart procedure at 22:35 UTC
+  - Command: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+  - Process started: PID 4253, 8.4% memory, 19.2% CPU
+  - All 67 trading sessions created successfully (AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA, IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, and others)
+  - Budget allocation: 67 sessions × $1,582.09 per session = $106,000 total account
+- **Verification**: 
+  - Process running: ✅ `ps aux | grep launch_stacker_sessions.py` shows PID 4253 active
+  - Log file: ✅ `trading_20260430.log` (9.87 MB, initialized at 22:38 UTC)
+  - Log quality: ✅ First 100 lines show NO ERROR, FAIL, or INVALID messages
+  - Broker status: ✅ OrderExecutor and AlpacaBroker initialized in paper mode
+  - Data fetching: ✅ Bar data successfully fetching for all symbols
+- **Outcome**: Engine fully operational and ready for May 1 13:30 UTC market open (15+ hours remaining). No risk of missing market day.
+
+### BLOCKED.md Updates
+- Moved "stockbot — Engine must restart..." from Active Blocks to Resolved Archive
+- Resolution documented with full details of restart verification
+
+---
+
