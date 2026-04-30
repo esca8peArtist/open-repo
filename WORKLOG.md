@@ -4,6 +4,26 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 — Resistance Research — Phase 1 Execution Plans (Paths A / A+37 / B)
+
+**Task**: Create path-specific execution plans for Phase 1 distribution so orchestrator can execute immediately upon user path decision.
+**Agent**: general-research
+**Deliverables**:
+- `projects/resistance-research/execution-plans/EXECUTION_PLAN_PATH_A.md` — Immediate 35-domain distribution, 3–4 hour checklist, filled email template example
+- `projects/resistance-research/execution-plans/EXECUTION_PLAN_PATH_A_PLUS_37.md` — Two-wave execution: general 34-domain (Day 0) + Domain 37 to 12 election protection orgs (Day 1–3)
+- `projects/resistance-research/execution-plans/EXECUTION_PLAN_PATH_B.md` — Phase 2 domain maintenance (7 domains, 14–28 days) then full 42-domain distribution
+- `projects/resistance-research/execution-plans/EXECUTION_PATHS_DECISION_FRAMEWORK.md` — One-page path comparison table + decision guide + immediate execution command format
+- `projects/resistance-research/PROJECTS.md` — Updated with Session 686 execution plan references
+
+**Key decisions embedded in plans**:
+- All 6 canonical Gists already created (Session 678) — no Gist creation needed for Path A or A+37 Phase 1a; only Domain 37 standalone Gist needed for Path A+37 Phase 1b
+- Path A+37 tightened to Day 1–3 stagger (not 14-day gap) — NVRA August 7 deadline and May 30 DOJ consent decree clock support faster Phase 1b
+- Path B scope specified as 42 domains with exact word counts per domain update and session estimates
+- Filled email example (Ryan Goodman, Path A variant) included for immediate reference
+- Phase 1b email templates for Democracy Docket and ACLU Voting Rights included
+
+**Confidence level**: High. All plans grounded in PHASE_1_EXECUTION_READINESS.md (Session 662), DISTRIBUTION_GIST_URLS.md (Session 678), DISTRIBUTION_PATH_ANALYSIS.md, PHASE_1_EMAIL_TEMPLATES.md, and DOMAIN_37_SEQUENCING_PLAN.md.
+
 ## 2026-04-30 — Off-Grid Living — Phase 2 Social Media Execution Toolkit
 
 **Task**: Create research-backed Phase 2 social media execution toolkit for the off-grid-living-guide GitHub repo.
