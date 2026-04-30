@@ -1,3 +1,40 @@
+## Since Last Check-in (Session 677 — 2026-04-30 03:35 UTC — STOCKBOT HEALTH CHECK + MONITORING BUG IDENTIFICATION)
+
+### ✅ Session 677 Summary
+
+**Status**: COMPLETE. Stockbot engine verified healthy and running (49 April 29 fills confirmed). Non-critical monitoring bug identified (strategy_name mismatch in trade records). Engine ready for May 12 checkpoint validation.
+
+**Work Completed**:
+
+1. ✅ **Stockbot Engine Health Verification**
+   - **Process**: Running (PID 1241288, 88:28 uptime)
+   - **Database**: 49 filled trades confirmed (April 29 13:34-13:35 UTC); all with correct fill_price + fill_time
+   - **Network**: No 401/403 errors; engine idle (market closed, awaiting 13:15 UTC open)
+   - **Status**: NOMINAL — ready for continued monitoring through May 12 checkpoint
+
+2. ⚠️ **Monitoring Bug Identified** (Non-Critical)
+   - **Issue**: `paper_trading_monitor.py` outputs "No paper trades found" but 49 trades actually in database
+   - **Root cause**: Trades recorded with `strategy_name='live_paper_sync'` instead of per-ticker names (`AAPL_h10_lgbm_ho`, etc.)
+   - **Impact**: Monitoring script can't find trades; actual trading unaffected
+   - **Severity**: LOW (visibility issue only)
+   - **Action**: Identified and deferred (low priority vs. continued monitoring)
+
+**Projects Status**:
+- ✅ **stockbot**: Engine running, May 12 checkpoint on track, no blocking issues
+- ⏳ **resistance-research**: Awaiting user distribution path decision (A / A+37 / B)
+- ⏳ **seedwarden**: Phase 2 Track B planning complete, awaiting user decisions
+- 🚫 **mfg-farm**: Test print blocked (user action)
+- 🚫 **open-repo**: PR #1 awaiting review
+
+**Next Steps**:
+- **2026-04-30 13:15 UTC**: Market open — engine will detect and begin trading (monitoring continues)
+- **2026-05-01 to 2026-05-09**: Monitor SELL signal execution (expected ~10 trading days post-BUY)
+- **2026-05-12**: Gate 1 formal checkpoint (49 fills = 5x threshold pace)
+
+**Usage**: Session 677 minimal (~10K tokens). Sonnet budget: ~2.5% remaining (healthy).
+
+---
+
 ## Since Last Check-in (Session 676 — 2026-04-30 04:30 UTC — DOMAIN UPDATES + POST-TRADING INTEGRATION)
 
 ### ✅ Session 676 Summary

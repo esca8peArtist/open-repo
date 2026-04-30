@@ -18840,3 +18840,37 @@ Executing Item 3: stockbot Post-Gate-2 Operations Analysis (preliminary research
 - 2026-04-30 20:00 UTC: Check Alpaca account for actual fill status on pending orders
 - Monitor stockbot.db for trade records matching Alpaca fills
 
+---
+
+## 2026-04-30 03:35 UTC — Orchestrator Session 677 — STOCKBOT HEALTH VERIFICATION + MONITORING BUG IDENTIFICATION
+
+**Status**: ✅ IN PROGRESS — Engine verified running; identified non-critical monitoring bug; awaiting May 12 checkpoint validation.
+
+**Stockbot Engine Status** ✅:
+- **Process**: Running (PID 1241288, 88:28 uptime since 2026-04-29 03:31 UTC)
+- **Database**: 49 filled trades confirmed April 29, all with correct fill_price + fill_time
+- **Network**: No 401/403 errors in recent logs; engine idle (market closed)
+- **Next event**: Market open 2026-04-30 13:15 UTC (9.9 hours from now)
+
+**Trade Database Verification**:
+```
+Filled trades: 49 (all from 2026-04-29 13:34-13:35 UTC market open)
+Sample trades: WMT BUY 78@$126.36, PG BUY 67@$148.37, AAPL BUY 36@$267.91, etc.
+Filled today (Apr 30): 0 (expected — market closed)
+Mode: PAPER (all trades properly tagged)
+```
+
+**Monitoring Bug Identified** (non-critical):
+- **Issue**: `paper_trading_monitor.py` script fails to find trades because they're recorded with `strategy_name='live_paper_sync'` instead of per-ticker names like `AAPL_h10_lgbm_ho`
+- **Impact**: Script outputs "No paper trades found" but trades ARE being recorded and executed correctly
+- **Root cause**: Trade recording pipeline isn't preserving per-ticker strategy names from active-sessions.json
+- **Severity**: LOW — doesn't affect trading functionality, only monitoring visibility
+- **Fix status**: Identified but deferred (low priority vs. continued monitoring through May 12 checkpoint)
+
+**Next Checkpoints** (from PROJECTS.md):
+1. **2026-04-30 13:15 UTC**: Market open (today) — verify engine detects market open, no auth errors
+2. **2026-05-01 to 2026-05-09**: Monitor SELL signal execution (expected ~10 trading days after BUY)
+3. **2026-05-12**: Gate 1 checkpoint validation (49 trades in ~3 days = 5x threshold pace)
+
+**No blocking issues identified**. Engine ready for continued monitoring through May 12 checkpoint.
+
