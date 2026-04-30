@@ -1,3 +1,49 @@
+## Since Last Check-in (Session 686 — 2026-04-30 07:00–08:00 UTC — SEEDWARDEN PHASE 2 PRODUCTION + RESISTANCE-RESEARCH EXECUTION ORCHESTRATION)
+
+### ✅ Session 686 Summary (Current)
+
+**Status**: COMPLETE. Two parallel autonomous work items executed: (1) Seedwarden Phase 2 Track B stock image sourcing (Clusters D & E, 10 images + props plan), (2) Resistance-research Phase 1 execution orchestration (3 path-specific plans + decision framework). Both projects advanced toward next autonomous milestone.
+
+**Work Completed**:
+
+1. ✅ **Seedwarden Phase 2 Track B — Stock Image Sourcing Sprint**
+   - **Cluster D (4 products, 8 images)**: All staged to `assets/stock-raw/` from Pexels (CC0 license, no attribution needed). iStock credits: 0 spent (preserved full 5-credit budget for compositing phase reshoots). Products: survival garden, hunting/trapping, livestock, meat/fish preservation.
+   - **Cluster E (1 product, 2 images)**: Wikimedia Commons (CC BY-SA 3.0 with attribution required) + Pexels for native plants regional guide. Slot 4 is alpine wildflower meadow (Joe Mabel, CC BY-SA); Slot 5 is foraging hands (CC0 Pexels).
+   - **Deliverable**: `CLUSTER_C_PROPS_ACQUISITION_PLAN.md` — complete checklist for physical shoot props (mason jars, chilis, etc.) with sourcing notes and budget ($5–$10 for groceries). Ready for user kitchen inventory review before shoots.
+   - **Files staged**: 10 source images with 1–2 candidate alternates per product. `phase-2-execution-log.md` updated (Session 686 section + Cluster D/E tables marked "File Staged: Yes").
+   - **Status**: Phase 2 production unblocked. Next: User Canva Brand Kit setup (30 min), then compositing of all 10 images into product mockups.
+
+2. ✅ **Resistance-research Phase 1 Execution Orchestration**
+   - **4 execution plan documents created** in `execution-plans/` directory:
+     1. `EXECUTION_PLAN_PATH_A.md` — Immediate 34-domain distribution (3–4 hours: gist fill + template fill + send). Includes filled email example (Ryan Goodman) with all placeholders populated.
+     2. `EXECUTION_PLAN_PATH_A_PLUS_37.md` — Hybrid (34 domains to general audiences Day 0, Domain 37 + election protection emails Day 1–3). Two Phase 1b email examples included (Democracy Docket, ACLU).
+     3. `EXECUTION_PLAN_PATH_B.md` — Defer Phase 1 until Phase 2 domain updates complete (2–4 weeks research, then execute). Seven domains specified with word-count estimates, sources, priority sequence.
+     4. `EXECUTION_PATHS_DECISION_FRAMEWORK.md` — One-page comparison table (time to launch, domain count, use case, recommendation logic). User can choose Path A/A+37/B without additional questions.
+   - **Status**: Framework eliminates all execution ambiguity. User selects path → orchestrator executes immediately with no decision points.
+   - **PROJECTS.md updated**: Cross-reference added to execution-plans directory.
+
+**Projects Status** (end of session 686):
+- ✅ **seedwarden**: Phase 2 Track B stock sourcing complete. Cluster D (4 products, 8 images) + Cluster E (1 product, 2 images) staged. Cluster C props plan created. Next: User Canva Brand Kit setup (30 min) → compositing → Canva batch pin production.
+- ✅ **resistance-research**: Phase 1 execution plans created for all three distribution paths. User can choose Path A/A+37/B and orchestrator executes Phase 1 immediately. Decision framework eliminates all ambiguity.
+- ⏳ **stockbot**: DEPLOY_READY flag active. Market opens 2026-04-30 13:30 UTC (6h 30m from session start). No active work; monitoring ready.
+- ⏳ **mfg-farm**: Test print blocked (user action).
+- ⏳ **cybersecurity-hardening**: Distribution prep complete, awaiting user execution of Tier 1 outreach.
+- ⏳ **open-repo**: PR #1 awaiting review/merge.
+
+**Key Achievements**:
+- Seedwarden Phase 2 production unblocked; all sourcing for non-lifestyle products complete
+- Resistance-research execution time reduced from "user must decide" to "user chooses path → immediate launch" (eliminates ~2h decision friction)
+- Both projects advanced toward user-facing execution milestones
+
+**Usage**: Session 686 ~120K tokens (two agents, ~2h). All-models budget: 63.8% used. Reset in ~113h.
+
+**Next Steps**:
+1. Monitor stockbot market session (13:30–20:00 UTC today)
+2. User action: Seedwarden Canva Brand Kit setup (30 min) → Phase 2 compositing begins
+3. User action: Resistance-research path selection (choose A/A+37/B) → Phase 1 launch immediate
+
+---
+
 ## Since Last Check-in (Session 684 — 2026-04-30 07:30 UTC — EXPLORATION QUEUE RESEARCH: OFF-GRID SOCIAL MEDIA TOOLKIT + SEEDWARDEN PREMIUM TAXONOMY)
 
 ### ✅ Session 684 Summary (Current)
