@@ -1,7 +1,7 @@
 # Domain 19f: War Powers Reform
 
 **Diagnostic domain created**: Session 502 (2026-04-27)
-**Last updated**: April 30, 2026 — Section 19 supplemented (this session): Hegseth House Armed Services hearing April 29 documented; $25 billion cost estimate confirmed in congressional testimony; USS Gerald R. Ford carrier departure from Middle East confirmed; Trump-Putin call on Iranian enriched uranium removal documented. Section 18 added: May 1 outcome checklist completed (non-compliance confirmed across all five items); Vance doctrine deepened against Youngstown three-premise framework (Category 3 enforcement gap + political question doctrine intersection); Domain 28 two-prong doctrine synthesis completed as empirical fact; Goldwater v. Carter third-theater precedent risk documented. Prior: April 28, 2026 — Added Sections 13-17 (see prior header entries for detail).
+**Last updated**: April 30, 2026 (~11:15 UTC) — Section 20 added: May 1 deadline current-session verification; non-compliance trajectory confirmed across all indicators; Collins post-deadline accountability commitment documented; Schiff sixth Senate vote announced; supplemental appropriations not submitted; ceasefire clock-pause theory identified as probable post-May 1 administration legal move; FISA-Iran compound constitutional failure cross-reference. Prior (Session 689): Section 19 supplemented — Hegseth House Armed Services hearing April 29 documented; $25 billion cost estimate confirmed; USS Gerald R. Ford carrier departure confirmed; Trump-Putin uranium removal discussion. Section 18 added: May 1 outcome checklist completed (non-compliance confirmed across all five items); Vance doctrine deepened against Youngstown; Domain 28 two-prong doctrine synthesis completed. Prior: April 28, 2026 — Added Sections 13-17.
 **Crisis window**: February-May 2026 (Operation Epic Fury / 60-day War Powers deadline)
 **Priority designation**: Priority 1 per post-Domain-26 completeness audit
 **Cross-domain connections**: Domain 19 (National Security/Foreign Policy), Domain 18 (Social Safety Net/Defense Budget), Domain 2 (Civil Service/Executive Accountability), Domain 5 (Fiscal Reform), Domain 6 (Judicial Independence)
@@ -1093,4 +1093,69 @@ Sources: [Time (exclusive): Democrats May Sue Trump Over 'Illegal' Iran War (Apr
 
 *Section 19 added: April 30, 2026 (Session 689)*
 *Section 19.1a supplemented: April 30, 2026 (this session) — Hegseth $25B cost testimony; carrier Ford departure confirmed; Trump-Putin uranium removal discussion; Brent crude $125/barrel; Hegseth "biggest adversary" framing documented.*
+
+---
+
+## Section 20: April 30, 2026 (~11:15 UTC) — May 1 Deadline Current-Session Verification
+
+**Added**: April 30, 2026 (~11:15 UTC)
+
+This section records the current-session verification of the May 1 WPR deadline status based on real-time reporting through April 30 morning. It supplements the Section 18 checklist and Section 19 confirmed-facts record.
+
+### 20.1 May 1 Deadline Status: Confirmed Non-Compliance Trajectory
+
+The following is confirmed from reporting through April 30, 2026:
+
+**Administration position (confirmed):**
+- Trump stated "Don't rush me" when asked about the WPR deadline — the administration's only public acknowledgment, framed as dismissal, not engagement
+- No compliance statement, withdrawal order, or congressional authorization request has been submitted
+- Vance doctrine ("fundamentally fake and unconstitutional law") remains operative policy
+- Naval blockade continues; USS Gerald R. Ford carrier departure confirmed but does not constitute withdrawal from hostilities as defined by WPR
+- $25 billion cost estimate confirmed in Hegseth's April 29 House Armed Services testimony — first government acknowledgment of war cost
+
+**Congressional status (confirmed):**
+- Five Senate blocking votes (maximum 46-51 on Votes 4 and 5); Rand Paul sole GOP defector across all five votes; Fetterman (D-PA) sole Democratic opposition
+- House failed 215-215 on H.Con.Res. 38
+- Collins stated April 29 she is "open to supporting" a war powers resolution after the deadline — the key post-May 1 defection variable
+- Senator Schiff announced he would force a sixth Senate war powers vote "at the end of this week" — first post-deadline vote, changing the framing from pre-deadline prevention to post-deadline enforcement
+- No lawsuit filed as of April 30; Democrats in "early stage" discussions (Time, April 28); Campbell v. Clinton standing obstacle remains
+
+**What is not yet confirmed (as of ~11:15 UTC April 30, May 1 deadline is ~12.75 hours away):**
+- Whether the administration will issue any statement acknowledging the deadline's passage
+- Whether Collins votes yes on Schiff's post-deadline resolution or finds another way to satisfy her stated commitment
+- Whether Democrats file a WPR enforcement lawsuit in the coming days
+- Whether the supplemental appropriations request is submitted before May 15-30 (the strategic window for appropriations leverage)
+- Whether diplomatic track (Trump-Putin call on Iranian uranium removal) produces ceasefire terms that change the hostilities assessment
+
+### 20.2 The Ceasefire Clock-Pause Theory: Current Status
+
+The administration's most likely legal maneuver post-May 1 is to assert the April 8 ceasefire paused or reset the WPR 60-day clock. This theory has been identified by legal analysts as the administration's most probable "legal gymnastics" move (Brennan Center's Katherine Yon Ebright, quoted in Time reporting). The theory's legal weaknesses are documented in Section 3 of this domain:
+
+- Ceasefire has been violated by both sides
+- Naval blockade constitutes ongoing hostilities under any ordinary reading of "hostilities"
+- U.S. seizure of Iranian cargo ship Touska during ceasefire period
+- Trump ordered naval forces to destroy Iranian boats laying mines — an active offensive operation during the nominal ceasefire
+
+The clock-pause theory has not been formally asserted in any administration legal document as of April 30. The State Department memo (Section 3 of this domain) does not make this argument, relying instead on the "ongoing conflict since June 2025" theory. If the clock-pause argument surfaces after May 1, it should be added to this section as Subsection 20.2a.
+
+### 20.3 Cross-Domain: FISA-Iran Convergence on April 30
+
+The concurrent April 30 FISA deadline (Section 702 statutory authority expiring midnight April 30) and May 1 WPR deadline create the "constitutional flooding" pattern documented in Section 19.2. For cross-reference to Domain 25: the Senate's April 30 FISA vote (outcome pending as of this writing) is structurally connected to the Iran war through the intelligence community's public argument that a FISA lapse during active hostilities would cause an immediate surveillance gap against Iranian targets (CNN, April 13). This Iran-urgency argument is part of why the warrant requirement was blocked: reforming surveillance law "during an active hot war" carries higher political cost for warrant advocates.
+
+The two domain outcomes — FISA warrantless renewal and WPR non-compliance — should be read as a compound constitutional failure, not two independent events.
+
+Sources:
+- [CBS News: Iran war live updates — carrier departure, diplomatic developments (April 30, 2026)](https://www.cbsnews.com/live-updates/iran-war-trump-warning-strait-of-hormuz-bab-el-mandeb-threat-oil-prices/)
+- [Time: Democrats May Sue Trump Over 'Illegal' Iran War (April 28, 2026)](https://time.com/article/2026/04/28/exclusive-democrats-explore-suing-trump-if-congress-doesn-t-authorize-iran-war/)
+- [CNN: Analysis — Will Trump Respect the 60-Day Limit? (April 25, 2026)](https://www.cnn.com/2026/04/25/politics/war-powers-act-trump-iran-war-congress-analysis)
+- [Al Jazeera: Trump's May 1 Deadline: Can He Continue War on Iran After That? (April 24, 2026)](https://www.aljazeera.com/news/2026/4/24/trumps-may-1-deadline-can-he-continue-war-on-iran-after-that)
+- [Military.com: Iran War Heads Toward Legal Showdown as May 1 Deadline Nears (April 28, 2026)](https://www.military.com/daily-news/headlines/2026/04/28/Iran-War-Heads-Toward-Legal-Showdown-as-May-1-Deadline-Nears)
+- [The Conversation: Under US Law, Trump Faces an Impending Deadline to End the Iran War (April 28, 2026)](https://theconversation.com/under-us-law-trump-faces-an-impending-deadline-to-end-the-iran-war-what-happens-if-he-ignores-it-281728)
+- [CSMonitor: Congress Presses Hegseth on Iran War Justification, Spending, and Conduct (April 30, 2026)](https://www.csmonitor.com/USA/Politics/2026/0430/hegseth-iran-war-congress-deadline)
+- [Al Jazeera: After 60 Days of War in Iran, Does US Congress Want a Say? (April 28, 2026)](https://www.aljazeera.com/news/2026/4/28/after-60-days-of-war-in-iran-does-us-congress-want-a-say)
+
+---
+
+*Section 20 added: April 30, 2026 (~11:15 UTC)*
+*Status: May 1 WPR deadline non-compliance trajectory confirmed as of April 30 morning — no administration compliance statement, no withdrawal order, no congressional authorization, no lawsuit filed. Naval blockade continues. Collins post-deadline accountability commitment documented. Schiff sixth vote announced for end of week. Supplemental appropriations request not submitted (May 15-30 window remains). Ceasefire clock-pause theory identified as probable post-May 1 administration legal move but not yet formally asserted. FISA-Iran compound constitutional failure cross-reference established.*
 *Key updates: Trump's "Don't rush me" statement documented as the only administration acknowledgment of the deadline; Schiff sixth post-deadline vote announcement recorded; Democratic lawsuit track final pre-deadline status (early-stage, not filed, Campbell v. Clinton obstacle remains); deliberate withholding of Iran supplemental appropriations request documented as strategic fiscal delay; April 30 concurrent legislative calendar (FISA + WPR + DHS) analyzed as "constitutional flooding" tactic; May-November 2026 enforcement calendar outlined (supplemental window, conditional authorization track, midterm accountability).*

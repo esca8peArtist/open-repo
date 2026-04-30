@@ -6,6 +6,27 @@
 
 ---
 
+## 2026-04-30 11:15–11:45 UTC — Resistance Research — April 30 FISA + May 1 Iran WPR Domain Updates
+
+**Status**: COMPLETE — Both domain files updated; changes committed to master
+
+### Key Findings
+
+**FISA Section 702 (domain-25-fisa-702-april-2026-outcome.md)**:
+- Senate vote outcome PENDING at time of writing (~11:15 UTC April 30). House passed S.1318 235-191 on April 29 (confirmed). Senate will not pass House version due to CBDC ban attachment ("dead on arrival" per Thune). Most probable Senate path: 45-day short-term extension by unanimous consent, same mechanism as April 17 10-day extension. Cloture vote on S.4344 (clean 3-year extension) scheduled by May 1 as fallback. No warrant requirement in any likely vehicle. Section 702 lapse risk exists if Senate objectors block unanimous consent. Added Section 11 with real-time assessment, probability-ordered outcomes, and tracker checklist for post-vote update.
+
+**Iran War Powers Resolution (domain-19f-war-powers-reform.md)**:
+- Document was already comprehensively updated through April 30 (Session 689) with Section 18 (May 1 non-compliance checklist, Vance doctrine deepening) and Section 19 (April 30 confirmed facts including Hegseth testimony, carrier departure, Trump-Putin call). Added Section 20 with current-session verification: non-compliance trajectory confirmed across all indicators, no compliance statement, no withdrawal, no lawsuit filed, no supplemental submitted. Collins post-deadline accountability commitment documented. Schiff sixth vote announced. Ceasefire clock-pause theory flagged as probable post-May 1 administration legal move.
+
+### Files Updated
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/domains/domain-25-fisa-702-april-2026-outcome.md` — Section 11 added (Senate vote outcome pending; probability-ordered scenarios; tracker checklist)
+- `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/domains/domain-19f-war-powers-reform.md` — Section 20 added (May 1 verification; non-compliance trajectory; FISA-Iran compound failure cross-reference)
+
+### Framework Currency Note
+Both domains current through April 30 ~11:15 UTC. FISA Senate vote outcome requires one further update when US afternoon/evening reporting confirms Senate action. Iran WPR non-compliance is the confirmed trajectory; May 1 deadline will pass without administration compliance.
+
+---
+
 ## 2026-04-30 10:45–11:15 UTC — Session 694 — Stockbot Market Prep + Seedwarden Phase 2 Track B Production Finalization
 
 **Status**: COMPLETE — Post-market analysis framework corrected and pre-staged; Phase 2 Track B production documents finalized and committed

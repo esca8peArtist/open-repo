@@ -11,7 +11,8 @@ parent-tracker: surveillance-tracking.md
 
 *Written: April 29, 2026 (Session 652)*
 *Updated: April 30, 2026 (Session 686) — House passage confirmed (235-191); Senate position divergence documented*
-*Status: House passed 3-year warrantless renewal; Senate pursuing short-term extension delay strategy*
+*Updated: April 30, 2026 (~11:15 UTC) — Section 11 added: April 30 Senate vote outcome status documented as pending at time of writing; real-time assessment of most probable paths; tracker checklist for post-vote update*
+*Status: House passed 3-year warrantless renewal; Senate outcome PENDING (vote expected US afternoon/evening April 30) — most probable path: 45-day short-term extension, CBDC provision stripped*
 *Research integrity note: An earlier session (Session 573) erroneously wrote a "confirmed" 2026 outcome that was actually the 2024 RISAA (60-34 Senate, two-year extension). Session 608 corrected the record. This document reflects the actual April 2026 legislative trajectory based on confirmed reporting through April 29, 2026.*
 
 ---
@@ -433,3 +434,78 @@ Sources for Section 10:
 
 *Section 10 added: April 30, 2026 (Session 680)*
 *Key updates: Senate outcome pending confirmation — two most probable paths documented (45-day short extension or clean three-year S.4344); warrant exclusion in any enacted law confirmed via House vote; CBDC ban expected stripped in Senate; civil liberties defeat confirmed structurally regardless of Senate vehicle; 2029 reform window now the primary target; Iran war / FISA surveillance nexus documented as compounding constitutional failure.*
+
+---
+
+## Section 11: April 30, 2026 — Senate Vote Outcome (Current-Session Status)
+
+**Added**: April 30, 2026 (~11:15 UTC)
+
+### 11.1 What Is Confirmed as of This Session
+
+The Senate vote on FISA 702 had not yet occurred as of the latest published reporting accessible at the time of this update (~11:15 UTC, April 30). The legislative situation is genuinely unresolved in real time. The following are the confirmed facts from reporting through the morning of April 30:
+
+**Confirmed:**
+- House passed S.1318 (Foreign Intelligence Accountability Act) 235-191 on April 29
+- Senate Majority Leader Thune stated the Senate plans to send back a 45-day clean extension, not the House's three-year CBDC-attached bill
+- Thune secured a unanimous consent agreement for a cloture vote on S.4344 (companion clean three-year extension, no CBDC) no later than Friday, May 1, 2026
+- The CBDC provision is "dead on arrival" in the Senate per Thune; the Senate will not pass S.1318 as received from the House
+- The April 18 10-day emergency extension expires at midnight April 30 — creating lapse risk if no Senate action occurs before then
+- Two most probable paths remain as documented in Section 10.1
+
+**Not yet confirmed (as of ~11:15 UTC April 30):**
+- Whether the Senate passed a 45-day short-term extension by unanimous consent (most probable path; lowest procedural bar; would prevent lapse)
+- Whether S.4344 cloture vote occurred and succeeded (requires 60 votes; uncertain partisan math)
+- Whether Section 702 authority lapsed at midnight (possible if Senate objectors blocked unanimous consent on any vehicle)
+- Presidential signature date
+
+### 11.2 Real-Time Assessment: Most Probable April 30 Outcome
+
+Based on the full legislative record and Senate procedural history, the most probable outcome in descending order of likelihood:
+
+1. **Senate passes short-term extension (45 days) by unanimous consent or voice vote** — The same mechanism used for the April 17 10-day extension. This avoids the 60-vote cloture threshold. If Thune can hold unanimous consent among Republican senators and Democrats don't object, this passes in minutes. Prevents lapse. Most likely Senate action given time pressure. Sets new deadline approximately June 12-14, 2026.
+
+2. **Senate passes S.4344 (clean three-year extension, no CBDC) via cloture and final passage** — Requires 60 votes for cloture. Partisan math is uncertain but possible if moderate Democrats provide votes. If this passes, the House must accept the Senate amendment (dropping CBDC ban) or go to conference. Intelligence community and Trump administration pressure for the longer extension makes this the preferred executive outcome.
+
+3. **Brief lapse followed by emergency action** — FISC classified orders reported to maintain collection authority through approximately 2027 regardless of statutory expiration. A brief lapse of hours or days would create compliance uncertainty for technology companies compelled to assist but might not immediately disrupt operational collection. Emergency stopgap following lapse within 24-48 hours is the historical pattern.
+
+4. **Extended lapse (multiple days or weeks)** — Least probable given intelligence community urgency during Iran war. Would provide EFF/ACLU their preferred litigation vehicle.
+
+### 11.3 What the Outcome Does Not Change
+
+Regardless of which Senate path materialized, the structural civil liberties conclusions documented in Sections 3, 9, and 10 are unaffected:
+
+- No warrant requirement will be in any enacted vehicle (confirmed by S.1318 text and S.4344 structure — neither contains warrant language)
+- Commercial data broker loophole remains completely unaddressed
+- The 42-vs-147 Democratic vote collapse remains the defining structural shift in Section 702 politics
+- The reform window through 2029 is the next meaningful legislative target
+- EFF/ACLU judicial challenge commitment stands regardless of statutory vehicle
+
+### 11.4 Tracker: Update Required When Senate Outcome Confirmed
+
+The following items require filling when Senate action is confirmed in subsequent reporting:
+
+- [ ] Senate vehicle: 45-day extension / S.4344 cloture passage / lapse / other — **PENDING**
+- [ ] Senate vote mechanism: unanimous consent / voice vote / roll call / cloture — **PENDING**
+- [ ] Vote count (if roll call): _____ — **PENDING**
+- [ ] Section 702 lapse: Yes (_____ hours/days) / No — **PENDING**
+- [ ] New expiration date: _____ — **PENDING**
+- [ ] Presidential signature date: _____ — **PENDING**
+- [ ] CBDC ban in enacted law: Stripped (expected) / Retained (unexpected) — **PENDING**
+
+**Update instruction**: Fill this checklist when Senate outcome appears in subsequent reporting. Cross-post to surveillance-tracking.md FISA outcome tracker and PROJECTS.md "Active Trackers." If 45-day extension: set next-deadline tracker for approximately June 12-14, 2026.
+
+Sources:
+- [Roll Call: House Sends Spy Reauthorization Bill to Uncertain Senate Fate (April 29, 2026)](https://rollcall.com/2026/04/29/house-sends-spy-reauthorization-bill-to-uncertain-senate-fate/)
+- [Political Wire: Senate Plans to Jam House on FISA Extension (April 29, 2026)](https://politicalwire.com/2026/04/29/senate-plans-to-jam-house-on-fisa-extension/)
+- [Axios: House Passes FISA Reauthorization, Senate Roadblock Awaits (April 29, 2026)](https://www.axios.com/2026/04/29/house-passes-fisa-intelligence-bill-senate-opposition)
+- [Fox News: House Passes FISA Section 702 Renewal as Senate Faces Midnight Deadline (April 29, 2026)](https://www.foxnews.com/politics/house-passes-fisa-renewal-bipartisan-vote-putting-pressure-senate-looming-deadline)
+- [NPR: House Advances 3-Year Extension of FISA 702 Surveillance Program (April 29, 2026)](https://www.npr.org/2026/04/29/g-s1-119094/congress-fisa-702)
+- [ABC News: House Passes 3-Year FISA Reauthorization That Will Face Challenges in the Senate (April 29, 2026)](https://abcnews.com/Politics/house-passes-3-year-fisa-reauthorization-face-challenges/story?id=132516696)
+- [WGLT/NPR: House Extends a Controversial Spy Tool, But Senate Path Is Unclear Ahead of Deadline (April 29, 2026)](https://www.wglt.org/2026-04-29/house-extends-a-controversial-spy-tool-but-senate-path-is-unclear-ahead-of-deadline)
+- [Nextgov/FCW: House Passes 3-Year FISA 702 Extension (April 29-30, 2026)](https://www.nextgov.com/policy/2026/04/house-passes-3-year-fisa-702-extension/413223/)
+
+---
+
+*Section 11 added: April 30, 2026 (~11:15 UTC)*
+*Status: Senate outcome PENDING at time of writing — vote expected later April 30 (US afternoon/evening). Most probable path: 45-day short-term extension by unanimous consent or voice vote. No warrant requirement confirmed in any likely vehicle. CBDC ban to be stripped in Senate. Section 702 structural civil liberties defeat confirmed regardless of Senate vehicle choice. Tracker items require update when Senate action is confirmed in subsequent reporting.*
