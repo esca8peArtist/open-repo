@@ -4,6 +4,33 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 13:45 UTC — Orchestrator Session 666 — Stockbot April 30 Checkpoint + Cron Setup
+
+**Status**: ✅ COMPLETE — Engine verified running, all 11 tickers confirmed active, test suite validated, cron job installed.
+
+**Work Completed**:
+
+### Stockbot April 30 Market Checkpoint ✅
+- **Engine Status**: PID 1241288 RUNNING (88h+ uptime); all 67 sessions sleeping until 13:15 UTC market open
+- **Tickers Confirmed**: All 11 requested (AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA) active in config
+- **April 29 Fills**: 49 confirmed BUY fills persisted (13:30–13:35 UTC); 20 open positions; 0 SELL signals yet (expected Day 2 of ~10-day window)
+- **Auth Health**: No 401/unauthorized errors; Discord webhook confirmed working
+- **Test Suite**: 4546 passed / 154 failed (pre-existing) / 117 skipped; no regressions from Sessions 652–659
+- **Bug Fixed**: `test_gate2_hmm_backtest.py` yfinance importorskip guard added (test collection no longer crashes)
+- **May 12 Readiness**: Architecture healthy; Gate 1 pace confirmed at 5x threshold; SELL signal monitoring active
+
+### Critical Actions Completed
+- ✅ **Cron Job Installed**: `sync_db_from_alpaca.py` scheduled daily 20:05 UTC Mon–Fri (committed to crontab)
+- ✅ **DB Sync Ready**: Daily automatic fill capture from Alpaca account now automated
+- ✅ **Checkpoint Report Created**: `/projects/stockbot/SESSION_CHECKPT_REPORT.md` (committed)
+
+**Project Status**:
+- ✅ **stockbot**: Engine LIVE + market monitoring active; April 30 market session 13:15–20:00 UTC in progress
+- ⏸️ **resistance-research**: Phase 1 approved, awaiting user distribution path decision (A / A+37 / B)
+- 🚫 **other projects**: No autonomous work available (awaiting user decisions/reviews)
+
+---
+
 ## 2026-04-30 00:35 UTC — Orchestrator Session 665 — Exploration Queue Replenishment + Domain 40 Analysis
 
 **Status**: ✅ COMPLETE — Added 3 new exploration items; executed Item 26 (Domain 40 candidates).
