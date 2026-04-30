@@ -3,7 +3,7 @@ title: "Photo Shoot Planning — Lifestyle Images for 15 Physical Product Shots"
 date: 2026-04-30
 status: production-ready
 context: Phase 2, Track B — lifestyle photography content planning
-references: LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, phase-2-execution-log.md, etsy-store-copy.md
+references: LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, phase-2-execution-log.md, etsy-store-copy.md, PHOTO_SHOOT_CHECKLIST.md, CLUSTER_C_PROPS_ACQUISITION_PLAN.md
 ---
 
 # Photo Shoot Planning
@@ -12,6 +12,63 @@ references: LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, phase-2-execution-log.md, etsy-st
 **Purpose**: This document is the scene-by-scene production guide for the 15 physical product lifestyle shots that will fill Etsy slots 4 and 5 for Seedwarden's five core product clusters. It is written for the person setting up and shooting — no prior photography experience assumed. The hybrid photography approach from LIFESTYLE_PHOTOGRAPHY_STRATEGY.md is the operating assumption: physical photography for Clusters A, B, and C (15 products); stock compositing for Clusters D and E (6 products). This doc covers only the physical photography scope.
 
 **Decision note**: LIFESTYLE_PHOTOGRAPHY_STRATEGY.md is awaiting user approval. This doc advances production planning so that once the user confirms the physical photography route, the shoot can begin immediately with no additional planning work needed.
+
+---
+
+## Pre-Shoot Status Summary (as of 2026-04-30)
+
+### Gaps to Resolve Before Shooting
+
+The following items are the only open blockers between the current state and production-start. Everything else — shot list, scene descriptions, props list, editing pipeline, file naming, and batch schedule — is finalized in this document.
+
+**Gap 1: Props confirmation for Clusters A and B**
+
+Cluster C props are fully planned in `CLUSTER_C_PROPS_ACQUISITION_PLAN.md`. Clusters A and B props are listed in Part 2 of this document and in `PHOTO_SHOOT_CHECKLIST.md` (Session 1 and Session 2 setup sections). Before the shoot, walk through both setup lists and mark what is already on hand vs. what needs sourcing. Expected sourcing time: one hardware/garden store run (30–45 minutes), likely needed items:
+
+- Cluster A: seed envelopes (kraft, plain — most craft stores carry them; 10-pack for $3–$6), small ceramic or terracotta pots if not on hand ($4–$8 at a garden center)
+- Cluster B: if a balcony or window shelf setting is not available, a grow light creates the apartment context for Product 10 ($25–$45 for a single LED grow bar)
+
+**Gap 2: Printed pages — print before the shoot day**
+
+All Cluster A and B shots call for printed PDF pages. The printed pages must exist before the shoot begins. Print the following before shoot day (standard home printer is sufficient):
+
+| What to print | Product | Slot |
+|---|---|---|
+| Seed Saving Field Manual — cover + seed anatomy diagram page | Product 1 | 4 and 5 |
+| Heirloom Guide — cover + variety comparison table | Product 2 | 4 |
+| Anti-Catalog — cover page | Product 3 | 4 |
+| Companion Planting Chart — full chart (must print, not tablet) | Product 4 | 4 and 5 |
+| Zone Calendar — one monthly spread (April or May) | Product 5 | 4 |
+| Food Sovereignty Guide — cover + interior list page | Product 6 | 4 and 5 |
+| Apartment Seed Starting Kit — cover | Product 7 | 4 |
+| 12-Month Urban Growing Planner — monthly spread | Product 8 | 4 and 5 |
+| Apartment Growing Complete Guide — cover | Product 10 | 4 |
+| Apartment Plant Catalog — cover + plant profile page | Product 11 | 4 and 5 |
+| Seed Swap Hosting Kit — event planning section | Product 12 | 4 and 5 |
+| All three Cluster C product covers | Products 13, 14, 15 | 4 |
+| Hot Sauce — bottling/finishing section | Product 15 | 5 |
+
+Print at standard letter size (8.5x11). No special paper. Black and white is acceptable — the printed page is a prop, not the deliverable.
+
+**Gap 3: Germination tray for Products 5 and 7 (optional, high-value)**
+
+Products 5 and 7 both call for a germination tray with sprouted seedlings. Basil or lettuce germinates in 5–7 days at room temperature. If the shoot is planned for the week of May 5–10, start seeds in a tray by April 28–30 to have 5–7-day-old sprouts ready. Seeds needed: any packet of basil (grocery store herb seeds are fine). Setup time: 5 minutes. This prop is optional but adds significant authenticity to those two shots.
+
+**Gap 4: Gardening gloves (worn pair) for Product 2 and Product 10**
+
+The Heirloom Guide (Product 2, Slot 5) and Container Blueprint (Product 9, Slot 5) both call for a worn gardening glove in frame. New gloves from a store read as staged. Source a used pair or, if buying new, briefly scuff them with garden soil before the shoot.
+
+### Timeline Realism Check — Early May Production
+
+The following assumes a shoot window during the week of May 5–13, 2026:
+
+| Session | Batch | Time Required | Viable May Dates |
+|---|---|---|---|
+| Session 1 (Cluster A) | Morning, 9am–1:30pm | 4.5–5 hours | Any weekday morning or Saturday May 10 |
+| Session 2 + 3 (Clusters B and C) | Morning or afternoon | 3.5–4.5 hours | Same day as Session 1 (afternoon) or separate day |
+| Batch editing | Flexible | 1.5–2 hours | Evening after shoot |
+
+**Verdict**: Early May start is realistic. The only time-sensitive prep item is starting seeds for the germination tray (must begin by April 28–30 for a May 7+ shoot). All other prep can happen the day before the shoot.
 
 ---
 

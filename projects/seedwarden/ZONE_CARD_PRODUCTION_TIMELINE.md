@@ -19,6 +19,57 @@ references: ZONE_QUICKSTART_CARD_SPEC.md, email-growth-playbook.md, email-list-b
 
 ---
 
+## Pre-Canva Content Verification Checklist
+
+Complete this checklist before opening Canva for the first time. The Canva build is faster and produces fewer errors when all content decisions are locked before the design session begins. This checklist covers the content layer; the Canva layer (colors, fonts, icons) is covered in Week 0.
+
+### Zone Content Readiness
+
+Confirm the following source data is available and finalized for all 8 zones before Week 1. All data lives in ZONE_QUICKSTART_CARD_SPEC.md Part 5. This checklist is a verification step, not a research step — if any item is missing, resolve it in the spec first.
+
+| Item | Source | Confirmed? |
+|---|---|---|
+| Last frost date range for each zone (3–10) | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| First frost date range for each zone | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| Growing season length (days) for each zone | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| 2–3 example cities per zone | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| "This Month" tasks (3 per zone, current month) | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| Quick-Start Crops (3 per zone, with one-line notes) | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| Storage and Preservation tips (2–3 per zone) | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| Heirloom Variety Spotlight (3 varieties per zone, one-line each) | ZONE_QUICKSTART_CARD_SPEC.md Part 5 | [ ] |
+| Zone band colors confirmed against color table | ZONE_CARD_PRODUCTION_TIMELINE.md Week 0 | [ ] |
+
+**This Month task currency**: The "This Month" block is the only time-sensitive element in the card. For a May 2026 launch, the tasks should reflect May planting priorities, not April. If the spec currently has April tasks, update them before building the cards — it is faster to update 8 spec entries than to re-export 8 PDFs after the fact.
+
+### Footer Copy Lock
+
+The card footer contains two links that must be finalized before export. Do not build cards with placeholder text that gets forgotten. Lock these now:
+
+| Footer Element | Status | Confirmed Value |
+|---|---|---|
+| Etsy store URL for Zone Calendar product | [ ] Live / [ ] Placeholder | ___________________________ |
+| Lead magnet landing page URL (seedwarden.com/zone or Kit URL) | [ ] Live / [ ] Placeholder | ___________________________ |
+
+If either URL is not live at build time, use clearly marked placeholder text (e.g., `[ETSY-LINK-INSERT]`) in the card and do a find-and-replace update before final export. Do not leave placeholder text without a visual marker — it is the single most common cause of launching cards with broken links.
+
+### Design System Decisions
+
+Confirm these three decisions before starting the Canva build. Each is a choice that affects every card and cannot be changed without rebuilding:
+
+**Decision 1: Portrait vs. landscape orientation**
+
+The spec recommends portrait (8.5x11 vertical). If the landing page or email template has an image that requires landscape, resolve this now. **Default: portrait.**
+
+**Decision 2: One PDF per zone vs. interactive multi-zone document**
+
+The spec recommends individual zone PDFs (one per zone, 8 total). If Kit's delivery mechanism requires a different format, resolve this before building. **Default: 8 individual zone PDFs.**
+
+**Decision 3: "This Month" update cadence**
+
+Decide now whether the "This Month" block will be updated monthly or quarterly. Monthly updates keep the card seasonally useful but require a recurring 20-minute maintenance task. Quarterly updates require less maintenance but mean the card is 1–3 months out of date for some subscribers. **Default: monthly update, first business day of each month.**
+
+---
+
 ## Week 0 — Pre-Work: Canva Brand Kit Setup (30-Minute User Action)
 
 This is the only task in the timeline that requires direct user action before any card can be built. Every card, every template, and every future Seedwarden Canva design depends on getting this right once. It takes 30 minutes.

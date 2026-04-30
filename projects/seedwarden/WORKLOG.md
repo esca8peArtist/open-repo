@@ -4,6 +4,54 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — 2026-04-30 — Phase 2 Track B Production Planning Finalization
+
+**Task**: Advance Phase 2 Track B toward production across three work streams: photo shoot planning finalization, zone card production timeline finalization (with pre-Canva checklist), and email sequence production plan creation.
+
+**Context read before writing**: PHOTO_SHOOT_PLANNING.md, ZONE_CARD_PRODUCTION_TIMELINE.md, LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, PHOTO_SHOOT_CHECKLIST.md, CLUSTER_C_PROPS_ACQUISITION_PLAN.md, email-growth-playbook.md, marketing/email-and-launch-plan.md, marketing/email-automation-blueprint.md, ZONE_QUICKSTART_CARD_SPEC.md, WORKLOG.md (Sessions 686, Item 27).
+
+**No conflicting information found** between this session's work and existing documents. All decisions (Kit platform, 8 zone card variants, welcome sequence structure, photo batch sessions, behavioral tagging) are consistent with prior session outputs.
+
+### Files modified
+
+| File | Change |
+|---|---|
+| `PHOTO_SHOOT_PLANNING.md` | Added "Pre-Shoot Status Summary" section at the top of the document: gap analysis (props, printed pages, germination tray, worn gloves), printing list for all 15 products, timeline realism check for early May production. No existing content changed. |
+| `ZONE_CARD_PRODUCTION_TIMELINE.md` | Added "Pre-Canva Content Verification Checklist" section before Week 0: zone content readiness table, footer copy lock table, three design system decisions (orientation, format, update cadence). No existing content changed. |
+| `PHASE_2_EMAIL_STRATEGY.md` | New file created. 9-part production plan coordinating email sequence structure, zone card delivery mapping, photo release sequencing, Kit platform setup (7-step sequence), copy themes, work stream dependency map, and launch readiness checklist. |
+
+### Key decisions documented
+
+- Email funnel can launch before any lifestyle photos are available — photos improve but do not block the funnel
+- Email 1 requires 8 zone-specific variants (zone routing via Kit conditional automation)
+- Zone card PDFs must be uploaded to Kit before the sign-up form is published anywhere
+- "This Month" block in zone cards defaults to monthly update (first business day of each month)
+- SEEDWARDEN15 coupon is a communicated deadline (5 days), not a Kit-enforced timer — track manually below 2,000 subscribers
+- Newsletter launch can begin immediately with text-only product spotlight, adding lifestyle images cluster by cluster as shoot sessions complete
+
+### What the user needs to do next
+
+**Photo shoot (blocks lifestyle images for newsletter):**
+1. Start basil or lettuce seeds in a germination tray by April 28–30 for May 7+ shoot
+2. Confirm props on hand for Clusters A and B using PHOTO_SHOOT_CHECKLIST.md setup lists
+3. Source missing props (seed envelopes, worn gloves) — one garden center run
+4. Print all 15 product pages per the printing table in PHOTO_SHOOT_PLANNING.md Pre-Shoot Status Summary
+
+**Zone cards (blocks email funnel launch):**
+1. Verify "This Month" tasks in ZONE_QUICKSTART_CARD_SPEC.md are updated to May (not April)
+2. Set up Canva Brand Kit (30 min, per Week 0 in ZONE_CARD_PRODUCTION_TIMELINE.md)
+3. Build master template starting with Zone 5 (Week 1 sessions)
+4. Export all 8 PDFs (Weeks 1–3)
+
+**Email platform (launch after zone cards are ready):**
+1. Create Kit account; authenticate sender domain (SPF/DKIM)
+2. Upload all 8 zone card PDFs; log all 8 Kit download URLs in WORKLOG.md
+3. Build sign-up form with zone dropdown; load welcome sequence (Emails 1–5)
+4. Build zone routing automation; run end-to-end test for Zone 5 and one other zone
+5. Publish landing page URL to Etsy bio, listing descriptions, and automated thank-you message
+
+---
+
 ## Session Item 27 — 2026-04-30 — Phase 3 Kickstarter Campaign Architecture (EXPLORATION_QUEUE Item 27)
 
 **Task**: Produce four production-ready Phase 3 Kickstarter planning documents covering campaign architecture, hardware scaling, financial projections, and backer community engagement.
