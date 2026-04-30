@@ -56,7 +56,7 @@
 **Status**: Active — ready to prototype
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/mfg-farm/`
-**Current focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis complete (`market-research.md`). Etsy and Amazon listing copy complete (`etsy-listing-modrun.md`). **Phase 2 supplier research COMPLETE** (Session 544: `phase-2-supplier-research.md`, `supplier-scorecard.csv` — top 5 suppliers ranked, $0.77–1.40/unit COGS savings identified, post-test-print sequence documented). **Lead product: ModRun cable management system** — original design, Etsy-compliant, 65–72% net margins. **BLOCKING GATE: test print required.** User needs to: (1) run `pip install cadquery` in mfg-farm env or system Python, (2) run `python modrun_clip.py --output-dir ./stl/` and `python modrun_rail.py --output-dir ./stl/` to generate STL files, (3) test print and tune tolerance parameters, (4) photograph finished set, (5) list on Etsy. All copy, pricing, tags, photo brief ready in `etsy-listing-modrun.md`. Post-test-print supplier sequence documented — negotiate immediately after print.
+**Current focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis complete (`market-research.md`). Etsy and Amazon listing copy complete (`etsy-listing-modrun.md`). **Phase 2 supplier research COMPLETE** (Session 544: `phase-2-supplier-research.md`, `supplier-scorecard.csv` — top 5 suppliers ranked, $0.77–1.40/unit COGS savings identified, post-test-print sequence documented). **Production Scaling & Automation Research COMPLETE** (Session 697: `production-scaling-research.md`, `cost-model-spreadsheet.csv` — 3,200 words covering batch optimization, turnaround modeling, supplier sourcing, cost structure at scale, automation opportunities, failure prevention). **Key Finding**: FDM_TOLERANCE calibration (0.05mm swing between click-fit and rattle-loose) MUST be evaluated during test print — snap arm 1.4mm thickness is highest risk feature. Cost model: \$0.08–\$0.13 COGS/clip, 72–73% gross margin at 20 units/week, \$950 startup capital recovered Month 1. **Lead product: ModRun cable management system** — original design, Etsy-compliant, 65–72% net margins. **BLOCKING GATE: test print required.** User needs to: (1) run `pip install cadquery` in mfg-farm env or system Python, (2) run `python modrun_clip.py --output-dir ./stl/` and `python modrun_rail.py --output-dir ./stl/` to generate STL files, (3) test print and evaluate FDM_TOLERANCE (print settings: 0.20mm layer height, 20–25% infill, 3 walls, 220–225°C, PLA+), (4) tune tolerance parameters, (5) photograph finished set, (6) list on Etsy. All copy, pricing, tags, photo brief ready in `etsy-listing-modrun.md`. Post-test-print supplier sequence documented — negotiate immediately after print.
 **Blocked on**: Test print (user action required — see focus above)
 **Notes**: Automation is the core constraint — products and workflows must be designed for minimal human touchpoints per unit. Physical products mean real fulfillment costs (packaging, shipping, storage) — factor these in from the start. Etsy and Amazon have different fee structures and audiences; may want both. Scaling from 1→N printers requires thinking about file management, queue management, quality control, and packaging throughput — not just the printers themselves.
 
@@ -294,6 +294,13 @@
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
 **Current focus**: 
+**Session 697 (2026-04-30 10:42–10:57 UTC) — GATE 1 FILL RATE FORECASTING + MARKET MONITORING PREP**:
+- **Gate 1 Fill Rate Analysis** ✅: April 29's 49 fills were capital-depletion anomaly (12-minute exhaustion of \$10k allocation, 104:1 signal-to-fill ratio), not sustainable signal frequency
+- **Key Finding**: Real Gate 1 success metric is SELL signal execution (not fill count). April 29 open positions exit May 9–13 — right at May 12 deadline. Must track `SELECT COUNT(*) FROM trades WHERE action='SELL'` daily
+- **Baseline Forecast**: 153 fills by May 12 (55% probability of pass); pessimistic 103 (miss); optimistic 232 (clear pass)
+- **Files Created** ✅: gate-1-fill-rate-forecast.md (3,004 words), gate-1-daily-projections.csv (daily rolling projections, confidence intervals)
+- **Market Monitoring Readiness**: All systems verified; monitoring script `monitor_april_30_market.sh` ready for 13:30 UTC execution
+
 **Session 694 (2026-04-30 10:45–11:15 UTC) — POST-MARKET ANALYSIS FRAMEWORK PRE-STAGED FOR EXECUTION**:
 - **Market Monitoring Script FIXED** ✅: `monitor_april_30_market.sh` rewritten (sqlite3 binary issue, column mismatches: filled_at→timestamp, side→action, trade_id→id). Database health confirmed: 49 April 29 baseline, 0 fills today (pre-market), 20 open positions. Discord webhook active.
 - **Post-Market Analysis Framework CORRECTED** ✅: GATE_1_POST_MARKET_ANALYSIS.md had 6 schema mismatches; all corrected (symbol→ticker, net_pnl→realized_pnl, strategy→strategy_name, removed non-existent columns). Pre-staged script `run_post_market_analysis_apr30.py` ready for 20:00 UTC execution.
@@ -605,11 +612,19 @@
   - ✅ Published to GitHub via git subtree push
   - ✅ Drafted social media posts (Reddit × 3, X/Twitter thread, email draft)
 
-**Next Phase**: User execution of social media distribution per `social-media-launch-posts.md`:
-  - Post to r/offgrid, r/preppers, r/homesteading (slightly different angle for each)
+**Session 697 (2026-04-30) — Phase 2 Social Media Execution Toolkit COMPLETE** ✅:
+- **Community Research** (1,500–2,000 words): r/offgrid, r/preppers, r/homesteading audience analysis, optimal post timing, platform-specific content angles
+- **Cross-Platform Sequencing**: Launch sequence decision tree, HN timing optimization (12:00 UTC optimal, Sunday 11.75% breakout rate)
+- **GitHub Growth Modeling**: Empirical benchmarks (121→289 stars, 24h–7d trajectory) from arxiv study tracking 138 repo launches (2024–2025)
+- **Community Engagement Patterns**: Upvote velocity, comment sentiment, crossover audience analysis
+- **Files Created**: `social-media-execution-toolkit.md` (4,304 words, 6-part framework), `community-posting-calendar-template.md` (1,164 words, Week 1–12 sequencing + metrics spreadsheet template)
+
+**Next Phase**: User execution of social media distribution using the toolkit guidance:
+  - Post to r/offgrid, r/preppers, r/homesteading (angles from toolkit)
   - Post X/Twitter thread (7 tweets)
+  - Consider Show HN launch (timing: Sunday 12:00 UTC for max breakout probability)
   - Optional: email announcement to mailing list
-  - Timing: stagger Reddit posts Tue–Fri, X thread over 2–3 days
+  - Timing: use community-posting-calendar-template.md for sequencing guidance
 
 **Blocked on**: —
 **Notes**: Instagram and TikTok require separate visual/video production — defer until GitHub traction established and user decides to invest in visual content. All 17 domains production-ready. Repo live and accessible.
