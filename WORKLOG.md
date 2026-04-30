@@ -96,12 +96,16 @@
 
 ---
 
-### Current Capacity Status
-- **Engine status**: Running healthy (PID 1691129, 8.4% memory, 0.2% CPU)
-- **Next milestone**: 13:30 UTC stockbot market open monitoring (3h 15m away)
-- **Preparation status**: Monitor script pre-staged and validated; database schema confirmed; Discord webhook active; engine ready
-- **Post-market task**: 20:00 UTC execution of GATE_1_POST_MARKET_ANALYSIS framework
-- **Current time**: 10:14 UTC
+### Session 695 Idle Period — Scheduled Wakeups
+
+**Current status**: All autonomous work complete. Waiting for market events.
+- **Current time**: 10:16 UTC
+- **Scheduled wakeup 1**: 12:16 UTC (1h interim check)
+- **Scheduled wakeup 2** (to be scheduled at 12:16 UTC): 13:15 UTC pre-market monitoring
+- **Market open**: 13:30 UTC
+- **Post-market analysis**: 20:00 UTC
+
+**Idle work available**: None. All projects blocked on external conditions or user decisions.
 
 ---
 
