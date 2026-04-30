@@ -20043,3 +20043,16 @@ At 20:00 UTC: Execute Gate 1 Post-Market Analysis Framework.
 - Post-market analysis window: 20:00–21:30 UTC (execute framework)
 
 ---
+
+### Stockbot: Gate 1 Fill Rate Forecasting Research
+
+✅ **COMPLETED** (Session 697, 10:42–10:48 UTC):
+- Research: April 29 anomaly analysis (49 fills = capital exhaustion, not signal frequency)
+- Key finding: Real Gate 1 success metric is SELL signal execution (not fill count)
+- Forecast: Baseline 153 fills by May 12 (55% probability), pessimistic 103 (miss), optimistic 232 (clear pass)
+- Files: gate-1-fill-rate-forecast.md (3,004 words), gate-1-daily-projections.csv (baseline/optimistic/pessimistic scenarios)
+- Committed to stockbot submodule: commit `95d0528`
+
+**Critical Monitoring Metric**: `SELECT COUNT(*) FROM trades WHERE action='SELL'` — if this stays at 0, capital remains locked and Gate 1 fails.
+
+---
