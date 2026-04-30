@@ -4,6 +4,54 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — 2026-04-30 — Phase 2 Track B Production Execution (Canva Design Guide + Photo Shoot Schedule)
+
+**Task**: Phase 2 Track B production execution — two highest-impact tasks selected from the task set: (1) Canva Zone Card Design Guide, (2) Photo Shoot Schedule and Props List. Task selection rationale: zone card build is the critical path gate for the entire email funnel; photo shoot has a hard real-world deadline today (germination tray must start April 30 for May 10 shoot).
+
+**Context read before writing**: ZONE_CARD_PRODUCTION_TIMELINE.md, ZONE_QUICKSTART_CARD_SPEC.md (all 8 zone content tables, Parts 1–7), PHASE_2_EMAIL_STRATEGY.md, PHOTO_SHOOT_PLANNING.md, PHOTO_SHOOT_CHECKLIST.md, CLUSTER_C_PROPS_ACQUISITION_PLAN.md, TRACK_B_EXECUTION_KICKOFF.md, WORKLOG.md (prior session), logos/ and assets/ directory structure.
+
+**No conflicting information found** across reference documents. All decisions, hex values, filenames, zone content, and delivery architecture are internally consistent with prior session outputs.
+
+### Files produced or modified
+
+| File | Change |
+|---|---|
+| `CANVA_ZONE_CARD_DESIGN_GUIDE.md` | New file. Production-ready Canva session guide: footer copy verification (confirmed both URLs as placeholder-until-live), template selection rationale (blank canvas vs. pre-made — blank wins), step-by-step build sequence for all 4 blocks (header, three-column body, variety spotlight, footer), zone band color table, duplication change checklist for all 8 zones, May 2026 "This Month" task content for all 8 zones (derived from zone-seed-starting-calendar product), export settings (PDF Print, 300 DPI), file naming convention, Kit upload sequence with WORKLOG logging format, and design decision log. |
+| `PHOTO_SHOOT_SCHEDULE_AND_PROPS.md` | New file. Finalized May schedule targeting May 10 (Cluster A) and May 11 (Clusters B and C); complete props list organized by cluster with on-hand-check column, source, and cost; germination tray setup instructions with explicit today-deadline call; complete print list (20–25 pages, all 15 products); pre-shoot checklist (props, prints, camera, location); post-shoot file handling with exact filename table for all 30 images; email-to-newsletter release timeline. |
+| `assets/zone-cards/` | Directory created. Ready to receive 8 exported zone card PDFs. |
+
+### Key decisions documented
+
+- Canva template: blank US Letter canvas, not a pre-made template — no pre-made template matches the three-column + spotlight band structure; blank canvas is faster
+- Footer URLs: both are placeholder-until-live at build time; `[ETSY-ZONE-CALENDAR-LINK]` and `seedwarden.com/zone` are the build-time values
+- May 2026 "This Month" block: full May task content written for all 8 zones (in CANVA_ZONE_CARD_DESIGN_GUIDE.md Part 5)
+- Shoot target: May 10 (Cluster A morning) + May 11 (Clusters B and C) — two-day format preferred over single Saturday
+- Grow light for Product 10 Slot 5: desk lamp with warm-white bulb is an acceptable substitute if no grow light is on hand ($0 vs. $25–$45 purchase)
+
+### What the user needs to do next — ordered by urgency
+
+**Today (April 30) — hard deadline:**
+1. Start the germination tray: potting soil in any tray, scatter basil or lettuce seeds, cover with plastic wrap, place in warmest spot in the house. 5 minutes. Required for Products 5 and 7 shots on May 10.
+
+**This week (May 1–7) — sourcing run:**
+2. Walk through PHOTO_SHOOT_SCHEDULE_AND_PROPS.md Part 2 and mark every prop as "have it" or "need it." One hardware/garden center run should cover all gaps.
+3. Source: seed envelopes (kraft, plain), worn gardening gloves or new pair to scuff, fresh hot peppers (buy day-before shoot), canning funnel if not on hand.
+
+**By May 9 (day before shoot) — setup:**
+4. Print all 20–25 pages per the print list in PHOTO_SHOOT_SCHEDULE_AND_PROPS.md Part 4. Store flat.
+5. Complete all items in the pre-shoot checklist (Part 5 of PHOTO_SHOOT_SCHEDULE_AND_PROPS.md).
+
+**Week of April 30 – May 7 — Canva zone card build:**
+6. Complete Brand Kit setup (30 min, per ZONE_CARD_PRODUCTION_TIMELINE.md Week 0 and CANVA_ZONE_CARD_DESIGN_GUIDE.md Part 2).
+7. Build Zone 5 master template following CANVA_ZONE_CARD_DESIGN_GUIDE.md Parts 3 and 4 (approximately 90 min for first build).
+8. Duplicate and build Zone 6 (30 min). Weeks 1–3 per production timeline.
+
+**After zone cards are built:**
+9. Export all 8 PDFs to `assets/zone-cards/`; upload to Kit; log all 8 Kit download URLs in WORKLOG.md using the format in CANVA_ZONE_CARD_DESIGN_GUIDE.md Part 8.
+10. Launch Kit email funnel per PHASE_2_EMAIL_STRATEGY.md Part 4.
+
+---
+
 ## Session — 2026-04-30 — Phase 2 Track B Production Planning Finalization
 
 **Task**: Advance Phase 2 Track B toward production across three work streams: photo shoot planning finalization, zone card production timeline finalization (with pre-Canva checklist), and email sequence production plan creation.
