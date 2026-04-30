@@ -27,23 +27,21 @@ path_compatibility: "Identical across Path A / Path A+37 / Path B through Block 
 - [ ] `PHASE_1_EMAIL_TEMPLATES.md` is open (built this session — contains all five Batch 1 drafts)
 - [ ] `PHASE_1_CONTACT_VERIFICATION.json` is open (built this session — contains verified contact data)
 
-**Known pending correction (5 minutes, do this first)**:
-Domain 1 Section 4.2 still contains "effectively lapsed" FISA framing that was overtaken by the April 29 House passage of S.1318. Before creating Gists, add one sentence at the top of Section 4.2: "Updated April 29: House passed S.1318 235-191; Senate action pending by May 1. The lapse did not occur. Civil liberties advocacy shifts to next-cycle warrant reform." The correction language is ready in CHECKIN.md item 0. This is the only content correction needed before Gist creation.
+**Block 0 status: COMPLETE (confirmed current session)**:
+Domain 1 Section 4.2 FISA framing was corrected in Session 658. The section now opens with a full "Accuracy note (updated April 29, 2026, Session 658)" block documenting the House passage 235-191 and corrected outcome status. No correction needed before Gist creation — proceed directly to Block 1.
 
 ---
 
-## Block 0: Domain 1 FISA Correction (5 minutes)
+## Block 0: Domain 1 FISA Correction — COMPLETE
 
-**Who**: User or agent
-**Dependency**: None — do this first, before Gist creation
+**Status**: Done (Session 658, confirmed current session)
+**Verification**: `domains/domain-01-voting-rights-elections.md` Section 4.2 opens with "Accuracy note (updated April 29, 2026, Session 658)" confirming House passage 235-191. The section heading is now "FISA Section 702 — April 29 House Passage, Senate Action Pending."
 
-- [ ] Open `domains/domain-01-voting-rights-elections.md`
-- [ ] Navigate to Section 4.2
-- [ ] Insert correction sentence at top of Section 4.2 (language in CHECKIN.md item 0)
-- [ ] Save file
-- [ ] Mark complete — proceed to Block 1
+- [x] Correction applied
+- [x] File saved
+- [x] Verified — proceed directly to Block 1
 
-**Time**: 5 minutes
+**Time**: 0 minutes (already done)
 
 ---
 
@@ -397,7 +395,7 @@ Blocks 1–7 above, plus:
 
 | Block | Task | Time Estimate | Who | Can Parallelize With |
 |-------|------|---------------|-----|---------------------|
-| 0 | FISA correction | 5 min | User or agent | Nothing — do first |
+| 0 | FISA correction | COMPLETE | — | Done (Session 658) |
 | 1 | Gist creation | 30–45 min | User | — |
 | 2 | URL fill-in | 20–30 min | User | Block 3 (different browser tab) |
 | 3 | Contact email verification | 30–45 min | User | Block 2 |
@@ -415,7 +413,7 @@ Blocks 1–7 above, plus:
 
 | Gate | Condition | Action if Not Met |
 |------|-----------|------------------|
-| Before Block 1 | Block 0 (FISA correction) complete | Complete correction before creating Gists |
+| Before Block 1 | Block 0 (FISA correction) complete | ALREADY DONE — proceed to Block 1 immediately |
 | Before Block 4 | All 6 Gist URLs recorded, template URLs filled | Complete Blocks 1–2 first |
 | Before Block 4 | All 5 contact emails verified | Complete Block 3 first |
 | Before Block 6 | All 5 emails drafted, addressed, and reviewed | Complete Block 4 first |
