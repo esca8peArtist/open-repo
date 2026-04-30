@@ -1,7 +1,7 @@
 ---
 title: "Phase 1 Execution Readiness — Final Audit"
 created: 2026-04-28
-updated: 2026-04-30 (Session 662)
+updated: 2026-04-30 (Session 662 + current session — Gap 1 resolved)
 status: APPROVED FOR PHASE 1 LAUNCH
 auditor: resistance-research agent
 scope: "Final completeness audit, content currency verification, contact list validation, and path-agnostic execution checklist"
@@ -32,7 +32,7 @@ scope: "Final completeness audit, content currency verification, contact list va
 
 **Content standard compliance** — spot-checked 4 domains:
 
-- **Domain 1 (Voting Rights and Elections)**: 372 lines, YAML-equivalent header, 6 sections, April 29 update integrated (FISA lapsed framing corrected, state SAVE Act analog wave documented with sources), full sourcing throughout. One open correction flag: Section 4.2 still uses "effectively lapsed" framing for FISA that was accurate April 28 but overtaken by April 29 House passage. The CHECKIN.md and MAY_2026_UPDATES.md both flag this — it is a known pending correction, not an undiscovered gap.
+- **Domain 1 (Voting Rights and Elections)**: 373 lines, YAML-equivalent header, 7 sections, April 29 update fully integrated (FISA Section 4.2 corrected in Session 658 — "accuracy note" block documents House passage 235-191; state SAVE Act analog wave documented with sources; Arizona 174%-threshold ballot initiative confirmed). Full sourcing throughout. No open correction flags — Section 4.2 framing is current through April 29.
 - **Domain 6 (Judicial Independence)**: 362 lines, Section 6 added April 28 (Powell-Warsh-Slaughter timing), full sourcing, cross-domain connections explicit. Current through April 28. Section documenting May 2026 circuit vacancy wave outlined in MAY_2026_UPDATES.md but not yet added — flagged in that document as a planned addition, not a gap in existing content.
 - **Domain 29 (Prosecutorial Weaponization)**: 644 lines, most recent domain update April 29 (SPLC April 28 motions documented, Judge Emily Marks assignment), 16 sections, fully sourced. This is the most recently updated production domain in the corpus.
 - **Domain 37 (Federal Executive Interference, 2026 Midterms)**: 543 lines, production-ready, current through April 27. The Hungary April 2026 election outcome (53.6% opposition landslide) is integrated as comparative evidence. The five-mechanism interference structure is complete with named actors, sources, and timeline.
@@ -48,7 +48,7 @@ scope: "Final completeness audit, content currency verification, contact list va
 | Development | Domain(s) Updated | Status |
 |------------|-------------------|--------|
 | SAVE Act Senate 48-50 defeat (four GOP defectors: Collins, Murkowski, Tillis, McConnell) | Domain 1 Sections 2.1-2.2 | Complete |
-| FISA Section 702: House passage 235-191 (April 29), Senate cloture set by May 1 | Domain 25, Domain 1 Section 4.2 (partially), surveillance-tracking.md | Domain 25 complete; Domain 1 Section 4.2 has a known pending correction flagged in CHECKIN.md |
+| FISA Section 702: House passage 235-191 (April 29), Senate cloture set by May 1 | Domain 25, Domain 1 Section 4.2, surveillance-tracking.md | Complete — Domain 25 and Domain 1 Section 4.2 both corrected in Session 658; accuracy note at top of Section 4.2 documents House passage and corrected status |
 | SPLC indictment (April 21) and April 28 motions | Domain 29 Sections 1, 4.2, 14, 15, 16 | Complete |
 | Iran WPR 60-day clock | Domain 19f Sections 10-15 | Complete through April 28; post-May 1 outcome pending |
 | Trump v. Wilcox shadow-docket + DOJ drops Powell probe + Warsh confirmation | Domain 6 Sections 5-6 | Complete |
@@ -61,7 +61,7 @@ scope: "Final completeness audit, content currency verification, contact list va
 
 **What is pending but non-blocking**:
 
-- Domain 1 Section 4.2: "effectively lapsed" FISA framing needs a one-sentence correction noting the April 29 House passage. The information is already in Domain 25 and surveillance-tracking.md; this is a cross-reference synchronization issue, not missing research.
+- Domain 1 Section 4.2: RESOLVED (Session 658). The "effectively lapsed" framing has been replaced with a full accuracy note documenting the April 29 House passage 235-191. No further action needed.
 - Senate vote on S.4344 (FISA companion) and presidential signature: post-April 30 outcome. Domain 25 Section 7 checklist will be filled once confirmed. Senate cloture was set for no later than May 1 — outcome likely known by the time user reads this.
 - Iran WPR post-May 1 outcome: Domain 19f Section 15 provides the three-scenario framework (peace / frozen conflict / resumed hostilities); actual post-May 1 developments fill the scenario selected. Non-blocking for Phase 1 distribution.
 - DHS payroll cliff (week of May 4-8): Documented in CHECKIN.md as a monitoring item; not a domain research gap.
@@ -103,10 +103,10 @@ All 5 Batch 1 contacts verified current as of April 29, 2026. Positions and inst
 
 ## Identified Gaps
 
-There are four gaps, all non-blocking for Phase 1 launch. None requires resolution before the user makes the path decision.
+There are four gaps documented below. Gap 1 has been resolved (Session 658). The remaining three are non-blocking for Phase 1 launch. None requires resolution before the user makes the path decision.
 
-**Gap 1 — Domain 1 Section 4.2 FISA framing correction** (Non-blocking, ~5 minutes to fix)
-Section 4.2 describes FISA as having "effectively lapsed" and the House Rules Committee as having "indefinitely postponed" its meeting. This was accurate at time of writing (April 28) but was overtaken by events on April 29 when the House passed S.1318 235-191. The civil liberties advocacy guidance in that section (warrant requirement push for next cycle, Fourth Amendment Is Not For Sale Act) remains accurate and is more important than the procedural framing. Correction: add one sentence at the top of Section 4.2 noting "Updated April 29: House passed S.1318 235-191; Senate action pending by May 1. The lapse did not occur. Civil liberties advocacy shifts to next-cycle warrant reform." This is a clarification, not a research failure.
+**Gap 1 — Domain 1 Section 4.2 FISA framing correction** (RESOLVED — Session 658)
+This gap was resolved in Session 658 before this audit document was written. Section 4.2 of `domain-01-voting-rights-elections.md` now opens with an "Accuracy note (updated April 29, 2026, Session 658)" block that correctly documents: Rules Committee revived 9-4 on April 29; procedural rule passed 215-210 (held open two hours); House passed final passage 235-191; Section 702 did not lapse on April 30; Senate cloture vote set for no later than May 1 on S.4344 (companion three-year bill). The full corrected status is documented at Section 4.2 lines 1-12. The "effectively lapsed" language the CHECKIN.md flagged has been replaced. No further action required. Block 0 of PHASE_1_EXECUTION_CHECKLIST.md is complete — verified April 30 session.
 
 **Gap 2 — Three scope documents (domain-37a, domain-37b, domain-31x) are not full research domains** (Non-blocking for Phase 1; relevant for Path A+37 and Path B)
 These three files are explicitly marked as "scope documents — ready for full research." They contain research outlines, primary source lists, and analytical frameworks, but not the fully executed domain research (4,000-6,000 words with sourced evidence per section). They are Phase 2 domain candidates, not Phase 1 distribution content. For Path A (35 domains immediate): these three files are not included in the distribution-facing framework, which is the `democratic-renewal-proposal.md` and the production-ready domain files. For Path A+37: domain-37b (state election security) and domain-37a (post-election certification) are the most time-sensitive scope documents; full research on domain-37b is estimated at 1 session and could be completed before first distribution wave reaches election-protection contacts. For Path B: the staged approach creates space for these domains to be fully researched during the distribution window.
@@ -213,7 +213,7 @@ Send in order, spaced approximately 30 minutes apart within a 4-hour window:
 
 1. **Content completeness**: The 35-domain framework is production-ready. The `democratic-renewal-proposal.md` documents 29 numbered domains with full evidence, international benchmarks, and fiscal estimates. The `/domains/` folder contains 22+ fully researched supplemental domain files. Total research output substantially exceeds the distribution-facing scope.
 
-2. **Content currency**: All production-ready domains are current through at least April 27, 2026, with the highest-priority domains (1, 6, 25, 29, 37) updated through April 28-29. April 2026 developments — SAVE Act defeat, FISA passage, SPLC indictment, Hungary opposition win, Harvard funding freeze, state ballot initiative wave — are integrated where relevant. The one pending correction (Domain 1 Section 4.2 FISA framing) is a 5-minute fix that does not affect the integrity of the document.
+2. **Content currency**: All production-ready domains are current through at least April 27, 2026, with the highest-priority domains (1, 6, 25, 29, 37) updated through April 28-29. April 2026 developments — SAVE Act defeat, FISA passage, SPLC indictment, Hungary opposition win, Harvard funding freeze, state ballot initiative wave — are integrated where relevant. Domain 1 Section 4.2 FISA framing correction confirmed complete (Session 658) — no pending corrections remain in any production-ready domain.
 
 3. **Contact infrastructure**: 150+ contacts documented across 3 tiers. Batch 1 (5 contacts) verified as of April 29, 2026. Email personalization templates, domain-specific openers, and April 2026 contextual hooks are all documented and ready to execute. Position currency is confirmed; email addresses require only final 2-5 minute verification per contact before send.
 
@@ -238,8 +238,8 @@ Send in order, spaced approximately 30 minutes apart within a 4-hour window:
 - Iran WPR post-May 1 outcome (fills Domain 19f Section 15 scenario; domain is distributable either way)
 - Whether user wants to fully research domain-37b before Path A+37 election-security contacts (optional, 1 session)
 
-**One action the user should take before path decision** (not a blocker, but highest-ROI pre-decision step): Spend 5 minutes adding the one-sentence FISA correction to Domain 1 Section 4.2 so all documents are fully synchronized before Gists are created. The CHECKIN.md "0. Section 702 FISA" entry has the correction language ready.
+**All pre-decision preparation is complete.** Domain 1 Section 4.2 FISA correction is resolved (Session 658). PHASE_1_EXECUTION_CHECKLIST.md is built (Session 662). All five Batch 1 contacts are position-verified (April 29). The sole remaining trigger is the user's path decision.
 
 ---
 
-*Audit completed: April 30, 2026 (Session 662). All source documents reviewed. No undiscovered gaps found beyond the four flagged above, all non-blocking.*
+*Audit completed: April 30, 2026 (Session 662). Updated: April 30, 2026 (current session) — Gap 1 (Domain 1 Section 4.2 FISA correction) confirmed resolved per Session 658 edits; readiness verdict upgraded to reflect zero pending corrections in production-ready domains. Three non-blocking gaps remain (Gaps 2-4).*
