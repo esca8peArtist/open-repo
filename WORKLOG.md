@@ -6,6 +6,22 @@
 
 ---
 
+## 2026-04-30 — Session 689 — resistance-research crisis domain updates (FISA + Iran WPR)
+
+**Status**: COMPLETE
+
+### Files updated
+- `projects/resistance-research/domains/domain-19f-war-powers-reform.md` — Section 19 added (April 30 confirmation: Trump's "Don't rush me" statement, Schiff sixth vote announcement, Democratic lawsuit pre-deadline status, deliberate supplemental withholding as fiscal delay, April 30 concurrent calendar as "constitutional flooding" tactic, May-November enforcement calendar)
+- `projects/resistance-research/domains/domain-25-fisa-702-april-2026-outcome.md` — Section 9 added (April 30 Senate divergence confirmed: Senate will not pass CBDC-attached S.1318; Senate pursuing S.4344 cloture track or 45-day stopgap; midnight lapse possible; 42-vs-147 Democratic vote collapse documented; June 2026 deadline structure outlined)
+- `projects/resistance-research/domains/APRIL_30_CRISIS_UPDATES.md` — NEW: Crisis summary covering both developments, confirmed facts vs. unconfirmed (Senate midnight FISA vote), framework implications, complete source list
+
+### Key confirmed findings
+- **Iran WPR non-compliance**: All five checklist items confirmed (no withdrawal, no authorization, no court filing, no supplemental, Trump "Don't rush me"). Vance doctrine as operative constitutional policy confirmed. Most complete WPR non-compliance in 52-year history.
+- **FISA Senate divergence**: House passed 235-191 (only 42 Democrats — sharpest Democratic erosion in program history). Senate will not pass CBDC-attached House bill. S.4344 cloture scheduled by May 1; 45-day clean stopgap alternative. Senate midnight vote outcome unconfirmed.
+- **Structural synthesis**: April 30 convergence of FISA expiration + WPR deadline + DHS appropriations analyzed as "constitutional flooding" tactic.
+
+---
+
 ## 2026-04-30 08:55–09:20 UTC — Session 688 Stockbot Engine Restart + Exploration Queue Research
 
 **Status**: ✅ COMPLETE — Engine restarted, market monitoring prepared, post-distribution impact framework researched
