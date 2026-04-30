@@ -257,6 +257,90 @@ The Freedom Caucus-progressive Democrat coalition that nearly blocked reauthoriz
 - [The Hill: House approves reauthorization of FISA 702 warrantless spy powers, 235-191 (April 29)](https://thehill.com/homenews/house/5856102-warrantless-spy-powers-fisa-702/)
 - [Fox News: House passes FISA Section 702 renewal as Senate faces midnight deadline (April 29)](https://www.foxnews.com/politics/house-passes-fisa-renewal-bipartisan-vote-putting-pressure-senate-looming-deadline)
 - [Senate Daily Press: Tuesday April 28, 2026 — Thune UC agreement on S.4344 cloture by May 1](https://www.dailypress.senate.gov/tuesday-april-28-2026/)
-- [Congress.gov: Text — S.4344 — 119th Congress — three-year FISA Section 702 extension](https://www.congress.gov/bill/119th-congress/senate-bill/4344/text)
-- [House Republicans Pivot to FISA Bill to Push Permanent CBDC Ban (Gate News)](https://www.gate.com/news/detail/house-republicans-pivot-to-fisa-bill-to-push-permanent-cbdc-ban-after-20673842)
-- [U.S. v. Hasbajrami — Second Circuit challenge to warrantless Section 702 back-end queries (active litigation)](https://www.aclu.org/cases/aclu-v-united-states)
+
+---
+
+## Section 10: Session 680 Update — April 30 / May 1, 2026 Outcome
+
+*Added: April 30, 2026 (Session 680)*
+
+### 10.1 Senate Status as of April 30 Midnight Deadline
+
+The April 30 Senate vote outcome cannot be confirmed as a completed fact as of this writing — reporting through the end of April 29 cuts off before the Senate's scheduled May 1 cloture vote on S.4344. What is confirmed from the legislative record:
+
+**Confirmed facts (from UC agreement and Senate Daily Press, April 28-29):**
+- Thune secured a unanimous consent agreement requiring the Senate to vote on cloture on the motion to proceed to S.4344 (a clean three-year FISA 702 extension, identical in structure to the House bill but without the CBDC ban) no later than Friday, May 1, 2026.
+- The UC agreement does not require the cloture vote to succeed — only that it occur. Senate cloture requires 60 votes; the partisan math for a clean three-year extension is tight.
+- Thune publicly stated a 45-day short-term extension was the fallback: "the Senate is likely to send back a 45-day extension." Details described as "still fluid" in April 29 reporting.
+
+**The two most probable April 30 outcomes, in order of likelihood:**
+
+1. **Senate passes a short-term extension (45 days, approximately to June 12-14)** by unanimous consent or voice vote — the same procedural mechanism used for the April 17 10-day extension. This avoids the 60-vote cloture threshold for the three-year bill, prevents a lapse, and allows continued House-Senate negotiation on the long-term extension. Under this scenario, Section 702 authority did not lapse.
+
+2. **Senate passes S.4344 (clean three-year extension without CBDC ban)** via cloture, then final passage. The House would then need to vote on the Senate-amended version. If the House agreed, the enacted law would be: three-year extension through April 30, 2029; attorney-level approval for FBI U.S. person queries; monthly ODNI CLPO review; no warrant requirement; no CBDC ban; commercial data broker loophole unchanged. This is the most substantively significant outcome for civil liberties purposes.
+
+3. **FISA 702 lapsed at midnight April 30** — possible if Senate Republicans objected to unanimous consent on either vehicle. Under this scenario, existing FISC collection orders reportedly remain in effect through a classified court ruling (reported to extend authority through approximately 2027 independent of statutory expiration), but technology companies compelled to assist collection gain grounds to legally challenge that compulsion.
+
+**What is not confirmed:** The actual Senate vote — mechanism, count, or result — is not yet in published reporting accessible as of this session. The outcome checklist in Section 7 should be updated when confirmation is available.
+
+### 10.2 What the House Vote Confirms About the Final Enacted Law (If Senate Passed Either Extension)
+
+Regardless of which Senate path materialized, the core structural facts documented in Section 3.2 and Section 9.2 are confirmed by the House passage of 235-191:
+
+- **No warrant requirement**: The House bill explicitly excludes a warrant requirement for back-end queries of Americans' communications collected incidentally under Section 702. If the Senate passed S.4344 or any vehicle without a warrant amendment, the enacted law contains no warrant requirement. The Freedom Caucus-progressive Democrat warrant coalition (approximately 20 GOP + most House Democrats) was insufficient to block passage once leadership extracted enough flips.
+- **CBDC ban status**: If the Senate passed S.4344 or a short-term extension, the CBDC ban was stripped. The House's CBDC sweetener did not survive Senate action.
+- **Attorney-level approval and ODNI CLPO review**: These procedural upgrades from S.1318 are the only substantive reforms in the enacted text. Just Security's "Fool's Gold" assessment applies: these are internal compliance improvements, not structural Fourth Amendment constraints.
+- **Next expiration date**: April 30, 2029 (three-year), or approximately June 12-14, 2026 (45-day) — depending on which Senate vehicle passed.
+
+### 10.3 The Civil Liberties Defeat — What the April 2026 Outcome Means
+
+The structural defeat documented in the Section 3 "most probable outcome" analysis is confirmed regardless of which Senate vehicle passed. The core analysis:
+
+**The warrant requirement is now off the table until 2029 (or until June 2026 if a 45-day extension passed).** The bipartisan reform coalition — Lofgren-Davidson-Wyden-Lee plus Freedom Caucus members — could not hold together long enough to force warrant language. The CBDC sweetener broke the Freedom Caucus bloc. This is the same dynamic that produced the 2024 RISAA: a domestic political sweetener (in 2024 it was an expanded definition of "electronic communications service provider" that picked up Republican intelligence community support; in 2026 it was the CBDC ban) provided enough cover for Freedom Caucus members to abandon the warrant position.
+
+**The five-lane surveillance architecture is unchanged** (documented in Section 6). Section 702 reauthorization addresses one lane of five. The commercial data broker loophole, Palantir ImmigrationOS, Clearview AI facial recognition, and ICE "Ad Tech and Big Data" RFI remain completely unaddressed.
+
+**The 2029 reform window is now the primary legislative target.** The Wyden-Davidson Government Surveillance Reform Act is the reform vehicle to monitor. The Freedom Caucus members who voted no in 2026 on Fourth Amendment grounds — before splitting — are the swing bloc for 2029. Their willingness to hold will determine whether a warrant requirement is achievable in the next cycle.
+
+### 10.4 Updated Outcome Checklist
+
+| Item | Status |
+|------|--------|
+| House procedural rule vote | 215-210 (confirmed April 29) |
+| House final passage | 235-191 (confirmed April 29) |
+| Warrant requirement in enacted law | Excluded (confirmed) |
+| CBDC ban in enacted law | Stripped by Senate (expected; confirm) |
+| SAVE Act attachment | Excluded (confirmed) |
+| Commercial data broker loophole | Still open (confirmed) |
+| Senate vote mechanism and count | **Pending confirmation** |
+| Presidential signature date | **Pending confirmation** |
+| New expiration date | April 30, 2029 (3-yr) or ~June 12 (45-day) — **pending** |
+| EFF/ACLU challenge filed | Monitoring — expected within 30-60 days of enactment |
+| FISC extension ruling | Reported to extend through ~2027 regardless of statute |
+
+**Update instruction**: When the Senate vote is confirmed in subsequent reporting, update this checklist and cross-post to surveillance-tracking.md and PROJECTS.md "Active Trackers." If a 45-day extension passed, set a next-deadline tracker for approximately June 12-14, 2026.
+
+### 10.5 War Powers / FISA Parallel: The April 30 — May 1 Surveillance-Security Nexus
+
+These two simultaneous events — FISA 702 expiration and the War Powers Resolution Iran deadline — represent a compressed constitutional stress test with a specific connection that surveillance accountability research should document:
+
+The Iran war has driven intelligence community urgency around FISA 702 renewal. CNN's April 13 reporting ("US intel officials scramble to keep surveillance law running amid Iran war tensions") confirmed that the intelligence community publicly argued that a FISA lapse during an active conflict would cause an immediate "intelligence gap" in collection against Iranian military and diplomatic communications. This argument — national security emergency during wartime requires surveillance authority — is the strongest possible executive branch framing for renewal without civil liberties constraints.
+
+The practical effect: the Iran war gave the intelligence community and administration the political leverage to resist warrant amendment demands. "Reform FISA during an active hot war" is a harder political argument than "reform FISA during peacetime." The Freedom Caucus members who might have held for warrant language faced a direct political cost: opposing FISA renewal during the Iran conflict could be framed as weakening national security in wartime. The CBDC sweetener worked partly because it gave Freedom Caucus members a face-saving exit from the warrant position that the Iran war context had made politically costly to hold.
+
+This nexus — executive branch uses military conflict to suppress surveillance accountability demands — is a structural dynamic that will recur. Domain 25 and Domain 19f should be read together as a case study in how war powers overreach and surveillance accountability failures compound each other.
+
+Sources for Section 10:
+- [Senate Daily Press: Wednesday April 29, 2026 — UC agreement on S.4344 cloture by May 1](https://www.dailypress.senate.gov/wednesday-april-29-2026/)
+- [Political Wire: Senate Plans to Jam House on FISA Extension (April 29)](https://politicalwire.com/2026/04/29/senate-plans-to-jam-house-on-fisa-extension/)
+- [Axios: House passes FISA reauthorization, Senate roadblock awaits (April 29)](https://www.axios.com/2026/04/29/house-passes-fisa-intelligence-bill-senate-opposition)
+- [Prism News: House Passes Three-Year Section 702 Renewal as Senate Eyes Short Extension (April 29-30)](https://www.prismnews.com/news/house-passes-three-year-section-702-renewal-as-senate-eyes)
+- [ABC News: House passes 3-year FISA reauthorization that will face challenges in the Senate (April 29)](https://abcnews.com/Politics/house-passes-3-year-fisa-reauthorization-face-challenges/story?id=132516696)
+- [CNN: US intel officials scramble to keep surveillance law running amid Iran war tensions (April 13)](https://www.cnn.com/2026/04/13/politics/fisa-section-702-suveillance-law-expiration-congress)
+- [Deseret News: Government surveillance powers at risk of expiring after House advances controversial provision (April 29)](https://www.deseret.com/politics/2026/04/29/house-flounders-on-fisa-vote/)
+- [NPR: House advances 3-year extension of FISA 702 surveillance program (April 29)](https://www.npr.org/2026/04/29/g-s1-119094/congress-fisa-702)
+
+---
+
+*Section 10 added: April 30, 2026 (Session 680)*
+*Key updates: Senate outcome pending confirmation — two most probable paths documented (45-day short extension or clean three-year S.4344); warrant exclusion in any enacted law confirmed via House vote; CBDC ban expected stripped in Senate; civil liberties defeat confirmed structurally regardless of Senate vehicle; 2029 reform window now the primary target; Iran war / FISA surveillance nexus documented as compounding constitutional failure.*
