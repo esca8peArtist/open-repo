@@ -4,6 +4,54 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-04-30 02:40 UTC — Orchestrator Session 668 — Exploration Queue: Options Trading + Post-Distribution Tracking
+
+**Status**: ✅ COMPLETE — Completed 2 exploration queue items in parallel (stockbot + resistance-research)
+
+**Work Completed**:
+
+### Stockbot Exploration Item: Options Trading Strategy Analysis ✅
+- **Output file**: `projects/stockbot/options-strategy-analysis.md` (4,900 words, 34 KB)
+- **Agent**: stockbot subagent (model building, research, analysis)
+- **Key findings**:
+  1. **Feature pipeline gap**: MTF extractor lacks live IV data → volatility-relative strategies not feasible without Gate 4 feature engineering
+  2. **Five strategies ranked by feasibility**:
+     - Covered calls (HIGH: 70% structural win rate, no new signal model needed)
+     - Cash-secured puts (MEDIUM-HIGH: capital-intensive, 37.5% NAV reserved)
+     - Bull-call debit spreads (MEDIUM: needs `raw_prediction` threshold filter)
+     - Protective puts (NOT RECOMMENDED: 4-12% annualized drag, redundant with guardrails)
+     - Long straddles / IV arbitrage (LOW: requires live IV data, Gate 4 priority)
+  3. **Constraint quantification**: IV crush (NVDA 48% post-earnings), bid-ask spreads (3.3-7.1% round-trip cost), vol estimation error (±3-8%, slightly favors writers)
+  4. **Integration roadmap**: 21-31 hours work across 7 gaps (OptionsPositionTracker, equity position polling, delta aggregation, earnings blackout, symbol lock, assignment handling, end-to-end tests)
+  5. **Three-phase timeline**: Phase 1 covered calls (May 12–31), Phase 2 spreads+CSPs (July), Phase 3 volatility strategies (August, conditional on IV classifier)
+- **Decision gating**: Covered calls activate on May 12 Sharpe >= 0.5, then backtest win rate >= 60%, then capital efficiency >= 15%
+- **Status**: Production-ready research; no code changes, purely informational
+
+### Resistance-Research Exploration Item: Post-Distribution Institutional Adoption Tracking Framework ✅
+- **Output file**: `projects/resistance-research/post-distribution-tracking.md` (decision trees, metrics, timelines, 55 KB)
+- **Agent**: resistance-research subagent (political analysis, institutional tracking)
+- **Key findings**:
+  1. **Domain adoption hotspots**: Domains 29 (Prosecutorial Weaponization), 6 (Judicial Independence), 28 (War Powers) fastest adoption due to tight feedback loops (48-96 hour policy response cycles)
+  2. **Sector-pathway analysis** (not tier-based): State AGs (2-4 weeks), law schools (4-8 weeks), think tanks (6-12 weeks), civil rights coalitions (8-16 weeks)
+  3. **Impact metrics hierarchy**: Legal citations (highest value) > policy proposals > media reach > endorsements
+  4. **Adoption signal interpretation**: Domain silence at 60 days = distribution problem first, not content problem; verify delivery before revising content
+  5. **Adaptation tracking**: Scope extensions (domain applied to new problem) = highest-value signal of framework generativity
+  6. **Success scenario**: 12-month "partial success" (2-3 domains driving Tier 1 adoption) flagged as most likely outcome; prevents premature abandonment
+  7. **Data collection**: Google Scholar alerts, PACER/CourtListener tracking, legislative bill databases, media monitoring, institutional announcements
+- **Status**: Production-ready for Phase 1 post-execution use; awaits user distribution path decision
+
+**Engine Status**:
+- 🟢 **Stockbot LIVE**: PID 1241288, 89+ hours uptime, 49 trades (April 29), 20 open positions
+- **Gate 1 pace**: 49 trades in 3 days = 5× threshold (30/month required) ✅
+- **Next checkpoint**: 2026-04-30 13:15 UTC market pre-wake (12.5 hours from now)
+- **Market session verification**: Confirm engine wakes, sessions begin trading, Discord monitoring active
+
+**Project Status**:
+- ✅ **resistance-research**: Exploration queue Item complete; all Phase 1 supporting infrastructure ready (templates, feedback framework, adoption tracking, playbooks)
+- ✅ **stockbot**: Options trading research complete; roadmap ready for post-Gate-1 integration decision
+- 🟢 **Engine readiness**: Verified running, monitoring scheduled for 13:15–20:00 UTC market session
+- ⏸️ **other projects**: No autonomous work available (mfg-farm/seedwarden blocked on user, open-repo awaiting PR merge)
+
 ## 2026-04-30 20:15 UTC — Orchestrator Session 667 — Exploration: Feedback Integration Roadmap
 
 **Status**: ✅ COMPLETE — Created post-distribution feedback integration and institutional adaptation framework.
