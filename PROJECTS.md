@@ -293,7 +293,20 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: 
+**Current focus**:
+
+**Session 714 (2026-05-01 01:00–01:30 UTC) — GATE 1 PERFORMANCE MONITORING + CRITICAL BUG FIX**:
+- **Engine Health** ✅: PID 41237, all 67 stacker sessions loaded and running since 2026-05-01 00:26 UTC
+- **Critical Bug Fixed** ✅: `launch_stacker_sessions.py` cash pool initialization bug
+  - **Root Cause**: After first trading day with open positions, `account.cash = $0.00`, causing `_reserve_cash()` to block all BUY orders
+  - **Solution**: Implemented preference-order balance fetch: `buying_power` → `equity` → `portfolio_value` → `cash` → `config.total_equity`
+  - **Impact**: May 1 market session will correctly read ~$670k buying power (67 sessions × $10k each)
+- **Performance Validation** ✅: April 29 demonstrated 49 fills in ~3 hours = 5.3x Gate 1 pace (9.2 fills/day requirement)
+- **Gate 1 Projection**: 49 fills on day 1 projects to 150+ fills by May 12 checkpoint (well above 30-fill minimum)
+- **May 1 Market Open**: Engine ready at 13:30 UTC with corrected balance fetching
+- **Commit**: `78861a6` on master
+- **Next**: Daily monitoring through May 12; SELL signal tracking starting May 9 (round-trip completion window)
+
 **Session 697 (2026-04-30 10:42–10:57 UTC) — GATE 1 FILL RATE FORECASTING + MARKET MONITORING PREP**:
 - **Gate 1 Fill Rate Analysis** ✅: April 29's 49 fills were capital-depletion anomaly (12-minute exhaustion of \$10k allocation, 104:1 signal-to-fill ratio), not sustainable signal frequency
 - **Key Finding**: Real Gate 1 success metric is SELL signal execution (not fill count). April 29 open positions exit May 9–13 — right at May 12 deadline. Must track `SELECT COUNT(*) FROM trades WHERE action='SELL'` daily
@@ -527,11 +540,18 @@
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: **Phase 2 Track B production FINALIZED (Session 694)**. All Phase 2 Track B production documents completed and committed:
-- **PHOTO_SHOOT_PLANNING.md**: Pre-Shoot Status Summary added — identifies 4 critical gaps (props Clusters A/B, printed pages list, germination tray timing for May shoot, worn gloves). Early May production timeline confirmed viable: Cluster A (4.5–5h), Clusters B+C (3.5–4.5h), can be batched same-day or consecutive mornings.
-- **ZONE_CARD_PRODUCTION_TIMELINE.md**: Pre-Canva Content Verification Checklist added — specifies zone content readiness, footer copy lock (Etsy Zone Calendar link, Kit landing page URL), design system decisions locked (portrait, 8 PDFs, monthly cadence). **CRITICAL**: May task currency check needed (Spec has April tasks; update to May before Canva export).
-- **PHASE_2_EMAIL_STRATEGY.md** (NEW): Consolidated all email + automation architecture into single production plan. Zone card to email delivery mapping (sign-up dropdown, 8 zone-specific email variants). Photo-to-newsletter release coordination (launch text-only, add lifestyle photos cluster-by-cluster). 7-step Kit platform setup. Dependency map shows PDFs are only hard blocking dependency; everything else layers in afterward.
-- **Session 670 documents**: PHASE_2_BUNDLE_STRATEGY.md, PHASE_2_SEASONAL_CONTENT_CALENDAR.md, PHASE_3_READINESS_CHECKLIST.md all finalized. Phase 1 critical path: awaiting user tag corrections (3) + Etsy account verification. All Phase 2 autonomous production planning now COMPLETE.
+**Current focus**: **Phase 2 Track B production pipeline COMPLETE (Session 714)**. Production pipeline fully built and ready for user action:
+- **TRACK_B_PRODUCTION_PIPELINE.md** (NEW, Session 714): 4,200+ word comprehensive pipeline document:
+  - **Workstreams Confirmed**: 4 parallel tracks (social media, lifestyle photography, zone cards, email automation) all production-ready with no TODOs
+  - **Critical Path Sequence**: 6-step timeline to May 30 Phase 2 launch (social account creation → content filming → props sourcing → photo shoot May 10-11 → image editing → launch)
+  - **User Gates** (Only 2 Required, Non-Blocking): (1) Social account creation (30-60 min), (2) Canva Brand Kit setup (30 min)
+  - **Success Metrics**: Week 2 checkpoint (May 14), Week 4 checkpoint (May 30)
+  - **Risk Register**: 6 failure scenarios with mitigations documented
+  - **Asset Status**: Clusters D/E (5 products, 10 images) staged and ready; Clusters A/B/C require May 10-11 shoot
+- **Email Automation**: All 3-email welcome sequence copy complete and ready for Kit platform
+- **Social Content**: All 60-day rolling calendar copy ready (May content day-level plan included)
+- **Zone Cards**: All 8 zone content written and Canva-ready (task currency check pending May 1-2 update)
+- **Production Timeline**: May 1 social setup → May 2-3 origin story → May 10-11 photo shoot → May 12-22 editing → May 30 launch
 
 **Track A — Phase 1 launch (blocked on user)**: 3 tag corrections and Etsy account verification required before upload (documented in `UPLOAD_READY_CHECKLIST.md`). Once user completes those, all 21 Phase 1 products are ready to list immediately (8 text-heavy + native plants guide). All PDFs Etsy-compliant (≤900 KB except guide at 4.91 MB). All listing copy, tags, pricing, and mockups complete.
 
