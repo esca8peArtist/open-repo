@@ -33,12 +33,23 @@
 - ✅ `run_post_market_analysis_may1.py` — post-market analysis
 - ✅ `MAY_1_MONITORING_CHECKLIST.md` — alert thresholds documented
 
-### Spawned Agents (In Progress)
+### Spawned Agents (Parallel Execution)
 
-1. **Stockbot Agent** (a088c4111e2f88db7) — Engine verification complete ✅; working on Gate 1 fill rate modeling research
-2. **Resistance-research Agent** (a9b27f729ab93fa1a) — Working on Phase 1 impact framework and post-distribution research
+1. **Stockbot Agent** (a088c4111e2f88db7)
+   - ✅ Engine verification complete (healthy, running, ready for 13:30 UTC market open)
+   - 🟡 Working on: Gate 1 daily fill rate modeling research (Exploration Queue Item, high ROI for May 12 checkpoint)
 
-**Note**: Sessions 715-716 completed major prep work; agents continuing with research expansion items from Exploration Queue.
+2. **Resistance-research Agent** (a9b27f729ab93fa1a)
+   - 🟡 Working on: Phase 1 execution infrastructure pre-staging (may overlap with Session 715 work)
+   - 🟡 Working on: Post-distribution impact measurement framework (adoption tracking, metrics, failure modes)
+
+3. **Mfg-farm Agent** (a7cbbdbf8bc1d47b6) — *Just spawned*
+   - 🟡 Working on: Scaling & Automation Deepening research (Exploration Queue Item)
+   - Scope: Batch production optimization, turnaround modeling, supplier sourcing, QC/failure prevention, cost structure modeling (1→5→20→50 units/week), automation ROI analysis
+   - Output: 3,500-word research + cost-model spreadsheet
+   - High ROI for post-test-print scaling decisions
+
+**Exploration Queue Status**: Items 22-24 complete (Sessions 715-716); Items 5-7 in active research (Session 717, agents 1-3)
 
 ---
 
