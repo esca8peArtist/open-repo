@@ -48,19 +48,49 @@
 
 **Next Step**: When Tier 1 launch proceeds, use 90-day engagement data to make Tier 2 launch go/no-go decision.
 
-#### 🟡 Two Agents in Active Research
+#### ✅ Stockbot Agent Complete
 
-1. **Stockbot Research** (Agent: a088c4111e2f88db7)
-   - Deliverable: Gate 1 daily fill rate forecasting model + contingency triggers
-   - Expected impact: Enables real-time May 12 checkpoint decision-making
-   - Status: IN PROGRESS
+**Agent a088c4111e2f88db7 — COMPLETED** (commit eac03cf)
 
-2. **Mfg-farm Scaling Analysis** (Agent: a7cbbdbf8bc1d47b6)
-   - Deliverables: Scaling & automation research (3,500 words) + cost-model spreadsheet
-   - Expected impact: Post-test-print scaling decisions
-   - Status: IN PROGRESS
+**CRITICAL FINDINGS** (requires user attention):
+- Engine status: ✅ HEALTHY and running, 67 sessions ready for market open
+- **Gate 1 probability revised: ~35%** (down from 47% due to zero buying power on May 1)
+- **Key problem**: April 29 positions are at day h+9 on May 12 (Gate 1 checkpoint), but h=10 SELL exits fire May 13 (one day after gate)
+- **Buying power**: $0.00 (all capital in open positions — no new BUYs possible until SELL recycling begins May 8)
+- **Critical checkpoint**: May 7 end — if <1 SELL fill, activate 3-month extension contingency
 
-**Estimated remaining completion**: ~1 hour from now
+**Monitoring Required**:
+- May 7 end: ≥1 SELL fill (decision point for extension)
+- May 8 end: ≥60 total fills (on track)
+- May 11 end: ≥100 total fills (strong)
+- May 12 13:30 UTC: Live monitoring for final count
+
+**Deliverables**: gate-1-fill-rate-forecast.md (v3), gate-1-daily-projections.csv (v3), monitoring commands
+
+#### ✅ Mfg-farm Agent Complete
+
+**Agent a7cbbdbf8bc1d47b6 — COMPLETED**
+
+**CRITICAL DISCOVERY** (pre-batch validation):
+- **Snap arm cantilever orientation risk**: If printed in Z-axis (vertical), elongation-at-break drops 30-50%
+- **Action required**: 10-cycle installation test in test print, inspect snap arm root for stress-whitening per Protolabs FDM snap-fit guidelines
+- **Tolerance correction**: FDM_TOLERANCE in CAD is 0.15mm (not 0.05mm) — achievable but at tolerance floor for Bambu P1S
+
+**Cost Model Highlights**:
+- 20 units/week: $8.28 COGS, 69.9% margin, $1,650 monthly profit
+- Startup $950 recovered in ~3 weeks at 20 units/week
+- 72-73% margin target IS achievable (requires 10kg bulk filament pricing, AOV >$27, scrap <5%)
+
+**Automation ROI** (ranked by payback):
+1. Pirate Ship (free, $2-2.50/order savings)
+2. Bambu AI failure detection (free)
+3. Google Sheets QC log (free)
+4. Postal scale ($25-35, 2-3 month payback)
+5. Filament dry-box ($35-55, 2-4 month payback)
+6. Thermal label printer ($150-180, 6-12 month payback)
+7. SimplyPrint ($45/mo at 3+ printers)
+
+**Deliverables**: scaling-production-research.md (3,500 words), scaling-cost-model.csv
 
 #### Immediate User Input Required (within 24 hours)
 
