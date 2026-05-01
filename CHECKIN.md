@@ -35,7 +35,20 @@
 
 **Next Step**: User selects distribution path (A / A+37 / B) → Phase 1 executes within 55 minutes
 
-#### 🟡 Three Agents in Active Research
+#### ✅ Cybersecurity-hardening Agent Complete
+
+**Agent a320e8280d59e0462 — COMPLETED**
+
+**Deliverables**:
+- post-distribution-impact-tracker.md (3,828 words) — 5-stage adoption model, realistic benchmarks, assessment gates
+- feedback-collection-template.csv (20 orgs) — Three-tier follow-up protocol with referral generation strategy
+- adoption-tracking-dashboard-spec.md (1,576 words) — Free tools for Gist traffic, social media, policy tracking
+
+**Key Finding**: Tier 2 launch prerequisite is only Stage 2+ engagement from Tier 1 (not full conversion). 90-day question 3 ("Is there someone else...?") generates warm referrals without additional outreach.
+
+**Next Step**: When Tier 1 launch proceeds, use 90-day engagement data to make Tier 2 launch go/no-go decision.
+
+#### 🟡 Two Agents in Active Research
 
 1. **Stockbot Research** (Agent: a088c4111e2f88db7)
    - Deliverable: Gate 1 daily fill rate forecasting model + contingency triggers
@@ -45,11 +58,6 @@
 2. **Mfg-farm Scaling Analysis** (Agent: a7cbbdbf8bc1d47b6)
    - Deliverables: Scaling & automation research (3,500 words) + cost-model spreadsheet
    - Expected impact: Post-test-print scaling decisions
-   - Status: IN PROGRESS
-
-3. **Cybersecurity-hardening Impact Assessment** (Agent: a320e8280d59e0462)
-   - Deliverables: Impact tracker + feedback templates + dashboard spec
-   - Expected impact: Post-Tier-1 launch evaluation infrastructure
    - Status: IN PROGRESS
 
 **Estimated remaining completion**: ~1 hour from now
