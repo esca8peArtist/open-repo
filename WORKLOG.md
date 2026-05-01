@@ -46,6 +46,67 @@
 
 ---
 
+## 2026-05-01 00:23–01:15 UTC — Session 715 — Orchestrator Parallel Pre-staging: Stockbot Market Readiness + Seedwarden Phase 1&2 Launch + Resistance-Research Distribution
+
+**Status**: COMPLETE — All three top projects pre-staged for immediate execution
+
+### Completed
+
+**1. stockbot — May 1 Market Readiness Pre-staging**:
+- **Engine Status**: PID 41237 confirmed running (started 00:26 UTC, all 67 sessions active, zero ERROR lines)
+- **Pre-market Check Script**: `pre_market_check_may1.sh` created — runs at 13:00 UTC to verify engine health, Discord webhook, database integrity, Alpaca connectivity
+- **Intraday Monitoring**: `monitor_may_1_session.py` created + DB_PATH bug fixed (was pointing to nonexistent `database/stockbot.db`, now uses correct `stockbot.db`)
+- **Post-market Analysis**: `run_post_market_analysis_may1.py` created — runs after 20:00 UTC for fill count, Gate 1 progress, signal/fill ratio, per-ticker analysis
+- **Daily Checklist**: `MAY_1_MONITORING_CHECKLIST.md` created with hourly fill-count tracking table (13:30–20:00 UTC), alert thresholds, post-market decision tree
+- **Gate 1 Projections**: `gate-1-daily-projections.csv` corrected — April 30 actual fills (0, not 6-15) recalculated; new May 12 baseline range: 131–195 fills (was 137–210 with incorrect April 30 estimate)
+- **Pre-market Check Result**: PASSED (8 PASS, 1 WARN, 0 FAIL — Discord webhook live POST confirmed working)
+- **Required Pace**: 10.1 fills/day over 10 remaining market days (May 1–12) to reach Gate 1 checkpoint
+- **Status**: **✅ READY FOR 13:30 UTC MARKET OPEN** (11h remaining)
+- **Execution**: Pre-market check at 13:00 UTC, hourly monitoring 13:30–20:00, post-market analysis after 20:00 UTC
+
+**2. seedwarden — Phase 1 Launch + Phase 2 Orchestrator Tasks**:
+- **Phase 1 Execution Document**: `PHASE_1_EXECUTION_READY.md` created with:
+  - All 3 tag corrections (exact replacement sets, Survival Garden 22-char issue corrected)
+  - 21-product upload sequence (single table format with PDF filename, mockup filename, price, tag source)
+  - Print-friendly tag block for Phase 1 products (user can keep open during Etsy session, copy-paste directly)
+- **Phase 2 Orchestrator Tasks**: `PHASE_2_ORCHESTRATOR_TASKS.md` created with:
+  - Section 1: Immediately executable tasks (directory verification, Cluster D/E stock confirmation, tag audit for 10 backlog products)
+  - Section 2: Image editing workflow (May 12-15 after photo shoot)
+  - Section 3: Zone card build sequence (exact Canva hex codes, build order, time estimates, output paths)
+  - Section 4: Kit email automation (3-email welcome sequence, contingent on user Kit account creation)
+  - Section 5: Launch-week social content preparation
+  - Section 6: Calendar-ordered daily work queue
+- **Phase 1 User Requirements** (blocking): 3 tag corrections (10-15 min) + Etsy account verification + 1 social account ready
+- **Phase 1 User Requirements** (non-blocking): Etsy Payments connected, launch post ready
+- **Phase 2 Status**: All orchestrator tasks staged to run in parallel with user's May 1-9 actions (social setup, filming, props, shoot prep)
+- **Status**: **✅ READY FOR USER ACTION** (3 tag corrections are the only blocker)
+
+**3. resistance-research — Phase 1 Distribution Execution Pre-staging**:
+- **Execution Staging Document**: `PHASE_1_EXECUTION_STAGING.md` created with all 3 paths pre-staged:
+  - **Path A** (Immediate, 34 domains): 5 Batch 1 emails ready, Gists public (Session 678), deploy checklist with send order and timing
+  - **Path A+Domain37 (RECOMMENDED)**: Same as A + 5-min Gist creation for Domain 37 + Phase B sequencing plan (7 Tier 1 contacts per advocacy window)
+  - **Path B** (Research first, distribute May 12): 4 confirmed priority domains, 3.5-hour research window, hard stop May 12
+- **Timeline Corrected**: Actual time from path decision to Batch 1 send is ~55 minutes (not 3-4.5 hours) — Gist creation and template writing already complete
+- **Contact Verification**: All 5 Batch 1 contacts verified current as of April 29, final spot-check (15-25 min) required immediately before send
+- **Gist Status**: 6 Gists public (Session 678), Domain 37 Gist still needs creation (5-min task at start of Path A+37 execution)
+- **Deploy Checklists**: Path A and Path A+Domain37 checklists ready with exact find-replace mappings for URL placeholders
+- **Status**: **✅ READY FOR USER DECISION** (awaiting Path A / A+Domain37 / B selection)
+
+### Summary
+
+**All three top projects now pre-staged for immediate execution:**
+- **stockbot** (Priority 2): May 1 market open in ~11 hours — all monitoring scripts created, pre-market checks passed, Gate 1 projected 131–195 fills by May 12
+- **seedwarden** (Priority 5): Phase 1 blocked only on 3 user tag corrections (~15 min) — Phase 2 fully orchestrator-ready for May 1 critical path start
+- **resistance-research** (Priority 1): Awaiting user path decision (A / A+37 / B) — execution happens in ~55 minutes once decision made
+
+**Next steps**: 
+1. **User input required**: Resistance-research path decision (any of 3 options)
+2. **User input required**: Seedwarden tag corrections (10-15 min)
+3. **Automated execution**: Stockbot pre-market check at 13:00 UTC, monitoring 13:30–20:00 UTC, post-market at 20:00 UTC
+4. **Automated execution**: Seedwarden Phase 2 tasks execute May 1-30 in parallel with user actions
+
+---
+
 ## 2026-05-01 00:06–01:30 UTC — Session 714 — Orchestrator Orientation + Stockbot Gate 1 Optimization + Seedwarden Phase 2 Track B Pipeline
 
 **Status**: COMPLETE — stockbot engine optimized for May 1 market open, seedwarden production pipeline finalized

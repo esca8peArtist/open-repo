@@ -1,3 +1,76 @@
+## Since Last Check-in (Session 715 — 2026-05-01 00:23–01:15 UTC)
+
+### ✅ Session 715 Summary — Parallel Pre-staging: Stockbot Market Ready + Seedwarden Phase 1&2 Launch Ready + Resistance-Research Distribution Ready
+
+**Status**: ALL THREE TOP PROJECTS PRE-STAGED FOR IMMEDIATE EXECUTION
+
+**Work Completed**:
+
+1. **✅ stockbot — May 1 Market Readiness Pre-staging**:
+   - **Engine Status**: PID 41237 running (started 00:26 UTC), all 67 sessions active, zero ERROR lines
+   - **Scripts Created**:
+     - `pre_market_check_may1.sh` — Run at 13:00 UTC (engine health, Discord, database, Alpaca)
+     - `monitor_may_1_session.py` — Run hourly 13:30–20:00 UTC (DB_PATH bug fixed)
+     - `run_post_market_analysis_may1.py` — Run after 20:00 UTC (fills, Gate 1 progress, per-ticker)
+     - `MAY_1_MONITORING_CHECKLIST.md` — Hourly tracking table with alert thresholds
+   - **Data Corrections**: `gate-1-daily-projections.csv` recalculated (April 30: 0 actual fills, not 6-15)
+   - **Gate 1 Baseline Updated**: 131–195 fills by May 12 (was 137–210)
+   - **Pre-market Check Result**: ✅ PASSED (8 PASS, 1 WARN, 0 FAIL)
+   - **Status**: **READY FOR 13:30 UTC MARKET OPEN** (11 hours away)
+
+2. **✅ seedwarden — Phase 1 + Phase 2 Launch Readiness**:
+   - **Phase 1 Document**: `PHASE_1_EXECUTION_READY.md` — Tag corrections + 21-product upload sequence + print-friendly tag block
+   - **Phase 2 Document**: `PHASE_2_ORCHESTRATOR_TASKS.md` — 5 sections (immediate tasks, image editing, zone cards, email automation, social prep)
+   - **Phase 1 Blockers** (only 2, ~15 min total):
+     - 3 tag corrections (exact sets provided)
+     - Etsy account verification + social account creation
+   - **Phase 2 Status**: ✅ Fully ready to execute May 1-30 in parallel with user actions
+   - **Status**: **READY FOR USER ACTION** (3 tag corrections)
+
+3. **✅ resistance-research — Phase 1 Distribution Execution Pre-staging**:
+   - **Execution Document**: `PHASE_1_EXECUTION_STAGING.md` — All 3 paths with deploy checklists and contact verification
+   - **Key Finding**: Actual execution time is ~55 minutes (not 3-4.5 hours) — Gist creation and templates already complete
+   - **Paths Ready**:
+     - Path A: 5 Batch 1 emails ready, deploy checklist with send order
+     - Path A+Domain37 (RECOMMENDED): Same as A + 5-min Gist creation for Domain 37 + Phase B sequencing
+     - Path B: 4-domain research queue, hard stop May 12
+   - **Contact Verification**: All 5 Batch 1 verified current (April 29), final spot-check 15-25 min before send
+   - **Status**: **READY FOR USER DECISION** (awaiting path selection)
+
+### Items Needing User Input (URGENT)
+
+1. **IMMEDIATE** (resistance-research): Select Phase 1 distribution path
+   - Option A: Immediate distribution (34 domains)
+   - Option A+Domain37 (RECOMMENDED): Add Domain 37 targeted outreach phase
+   - Option B: Research 4 more domains first, distribute May 12
+   - **Action**: Reply with choice → execution happens in ~55 minutes
+
+2. **HIGH PRIORITY** (seedwarden, ~15 min):
+   - Apply 3 tag corrections from `PHASE_1_EXECUTION_READY.md` Part 1
+   - Verify Etsy seller account + Etsy Payments connected
+   - Confirm social account created (Instagram/TikTok/Pinterest with handle `seedwarden`)
+
+3. **MONITORING** (stockbot, automated):
+   - 13:00 UTC: Run pre-market check (automated)
+   - 13:30–20:00 UTC: Hourly fill monitoring (automated)
+   - 20:00 UTC: Post-market analysis (automated)
+
+### Framework Status Summary
+
+| Project | Priority | Status | Next Action |
+|---------|----------|--------|------------|
+| **resistance-research** | 1 | ✅ READY | User path decision (A/A+37/B) |
+| **stockbot** | 2 | ✅ READY | May 1 market monitoring (automated) |
+| **seedwarden** | 5 | ✅ READY | User tag corrections (15 min) |
+
+### Recommended Next Steps
+
+1. **Within 1 hour**: Select resistance-research distribution path (enables Batch 1 send immediately)
+2. **Before May 2**: Apply seedwarden tag corrections (unblocks Phase 2 May 2-3 execution)
+3. **Continuous**: Monitor stockbot daily through May 12 Gate 1 checkpoint
+
+---
+
 ## Since Last Check-in (Session 714 — 2026-05-01 01:00–01:30 UTC)
 
 ### ✅ Session 714 Summary — Stockbot Gate 1 Optimization + Seedwarden Phase 2 Pipeline Complete
