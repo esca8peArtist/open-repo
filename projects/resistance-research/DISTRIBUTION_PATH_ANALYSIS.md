@@ -1,317 +1,339 @@
 ---
-title: "Distribution Path Analysis — Phase 1 Launch Decision Support"
+title: "Distribution Path Analysis — Phase 1 Launch Decision Support (Session 715 Revision)"
 created: 2026-05-01
 updated: 2026-05-01
+session: 715
 status: DECISION REQUIRED
-purpose: "Comprehensive analysis of three distribution paths for the resistance-research Phase 1 launch. Supports user decision between Path A (22-domain immediate), Path A+37 Hybrid (22 core + Domain 37 simultaneous), and Path B (Domains 38–40 research before launch)."
+purpose: "Comprehensive tradeoff analysis for Phase 1 distribution path selection. All three paths are execution-ready. This document supports the user's decision between Path A (immediate 35-domain), Path A+37 Hybrid (phased with election protection urgency), and Path B (optional domain updates before launch). Supersedes earlier framing from Session 686 decision framework."
 sources:
-  - PHASE_1_EXECUTION_READINESS.md
-  - ITEM10_DOMAIN37_CANDIDATES.md
-  - ITEM12_DOMAIN38_CANDIDATES.md
-  - ITEM17_DOMAIN39_CANDIDATES.md
-  - ITEM26_DOMAIN40_CANDIDATES.md
+  - execution-plans/EXECUTION_PLAN_PATH_A.md
+  - execution-plans/EXECUTION_PLAN_PATH_A_PLUS_37.md
+  - execution-plans/EXECUTION_PLAN_PATH_B.md
+  - execution-plans/EXECUTION_PATHS_DECISION_FRAMEWORK.md
   - DOMAIN_37_SEQUENCING_PLAN.md
+  - PHASE_1_EXECUTION_READINESS.md
+  - EXPLORATION_QUEUE.md
+  - PROJECTS.md
 ---
 
 # Distribution Path Analysis — Phase 1 Launch Decision Support
 
 **Prepared**: May 1, 2026
-**Decision required by**: User (no agent can make this call)
-**All three paths are fully infrastructure-ready.** The path decision is the only remaining trigger for Phase 1 execution.
+**Decision required by**: User
+**Framework status**: 35 domains production-ready, verified through May 1, 2026. All distribution infrastructure (6 canonical Gists live, 5 Batch 1 email templates ready, Tier 1 contact list verified April 29) approved for Phase 1 launch per PHASE_1_EXECUTION_READINESS.md.
+
+The three paths differ in launch scope, sequencing, and how they balance the pull between speed-to-impact and framework comprehensiveness. None requires new research infrastructure to execute. The decision is purely strategic.
 
 ---
 
-## Decision Summary
+## Context: What Is Already True
 
-The 35-domain framework is production-ready. Domain 37 (Federal Executive Interference in the 2026 Midterms) is fully researched and documented at 8,857 words with 50 citations. All distribution infrastructure — Gist publication templates, Substack drafts, Reddit templates, institutional outreach templates for 11 contact categories, 150+ named contacts across 3 tiers — exists and has been audited (PHASE_1_EXECUTION_READINESS.md, April 30 verdict: APPROVED FOR PHASE 1 LAUNCH).
+Before comparing paths, the following facts bound the decision space:
 
-The three paths differ in scope, sequencing, and the tradeoff between launch speed and framework comprehensiveness. None requires additional research infrastructure to execute. The question is purely strategic: what is the most effective deployment of what already exists?
-
-**Path A**: Launch 22-domain core framework immediately. Post-launch expansion to Domains 23–37 within 4–8 weeks.
-
-**Path A+37 Hybrid (Recommended)**: Launch 22 core domains to general audiences simultaneously with Domain 37 targeted distribution to election-protection organizations. Domain 37's urgency and its specialized institutional audience make parallel-track deployment strategically superior to either including it in the general launch or withholding it until post-launch.
-
-**Path B**: Complete Domains 38–40 research (Intelligence Oversight, Reproductive Rights/Labor, Voting Systems Architecture) before any launch. 4–6 week delay; 40-domain corpus at launch.
+- The 35-domain framework is production-ready and current through May 1, 2026. Domains 1–22 (core), plus Domains 23, 27–29, 31, 33–36, 19f, and Domain 37 are all documented, cross-referenced, and distribution-verified.
+- Domain 37 (Federal Executive Interference in the 2026 Midterms) is the single most time-sensitive domain in the corpus. Its five advocacy windows — May 30 (DOJ consent decrees), June 30 (emergency EO routing), August 7 (NVRA quiet period), September (pre-election litigation), October (poll observer deployment) — are fixed calendar deadlines unaffected by distribution timing.
+- The election protection organizations that most need Domain 37 — Democracy Docket, Brennan Center Democracy Program, ACLU Voting Rights Project, Campaign Legal Center, Lawyers' Committee, Protect Democracy, States United Democracy Center — are actively litigating right now. Campaign Legal Center sued Texas over voter purges in March 2026; Democracy Forward sued the EAC for records in April 2026; Common Cause sued DOJ on April 21, 2026, to block the national voter database. These organizations are in motion. The question is when the research reaches them.
+- Path B's "optional updates" (Domains 38–40 scope candidates: Intelligence Oversight, Reproductive Rights/Labor, Voting Systems Architecture) are genuine intellectual priorities — but they do not affect any of the Domain 37 election deadlines. They extend the framework's diagnostic scope; they do not change the election-protection urgency calculus.
+- The institutional adoption cycle for Tier 1 contacts is 6–8 weeks from receipt to first operational use. Content received by May 15 is operationally active by late June. Content received by June 15 is operationally active by early August — leaving approximately one week before the August 7 NVRA quiet period deadline.
 
 ---
 
-## 1. Path A: Immediate 22-Domain Launch
+## 1. Path A: Immediate 35-Domain Distribution
+
+### What Happens
+
+Path A deploys the complete 35-domain framework to all channels in a single wave on Day 0. All Batch 1 contacts — Ryan Goodman (Just Security), Wendy Weiser (Brennan Center), Erica Chenoweth (Harvard Kennedy School), Ian Bassin (Protect Democracy), Marc Elias (Democracy Docket) — receive the same send including Domain 37 simultaneously with every other domain.
+
+**Day 0 execution** (3–4 hours from decision to Batch 1 sent):
+
+- Block 1 (0:00–0:30): Gist URL verification (all 6 Gists already live)
+- Block 2 (0:30–0:55): Template URL replacement in distribution files
+- Block 3 (0:55–1:40): Batch 1 email verification (5 contacts, position-confirmed April 29)
+- Block 4 (1:40–3:10): Email personalization (6 fields per email, 5 contacts)
+- Block 5 (3:10–3:30): Tracking setup
+- Block 6 (3:30–4:00): Send Batch 1 (5 emails, 30-minute spacing)
+
+**Days 1–7**: Monitor Batch 1 signals. Stage Reddit posts (T+2) and Substack Post 1 (T+3). Prepare Batch 2 (5–7 contacts from Tier 1 pool).
+
+**Day 7**: Batch 2 send. Substack Post 1 published. Reddit posts submitted to 4–5 subreddits.
+
+**Days 14–30**: Batches 3–4 per DISTRIBUTION_PHASE_ORDER.md. Monthly iteration cycle begins.
 
 ### Scope
 
-Path A deploys the 22-domain core framework — Domains 1–22 as documented in the production-ready corpus. This is not a truncated product. The 22-domain core covers:
+35 domains total. The 22-domain core framework (Domains 1–22) plus 13 Phase 2 domains (23, 27–29, 31, 33–36, 19f, and Domain 37). Domain 37 reaches general academic, think tank, and law school contacts simultaneously with election-protection organizations — Marc Elias and Wendy Weiser receive it as part of the general Batch 1 send rather than in a Domain 37-specific targeted email.
 
-- **Electoral architecture**: Domain 1 (Voting Rights and Elections), Domain 3 (Citizens' Assemblies and Participatory Democracy), Domain 33 (State Legislative Autocratization)
-- **Institutional integrity**: Domain 2 (Executive Power and Civil Service), Domain 26 (Inspector General Independence), Domain 29 (Prosecutorial Weaponization), Domain 34 (Congressional Fiscal Authority)
-- **Judicial system**: Domain 6 (Judicial Independence), Domain 35 (Supreme Court OT2026)
-- **Rights and liberties**: Domain 7 (First Amendment and Press Freedom), Domain 14 (Criminal Justice), Domain 16 (Immigration and Civil Rights), Domain 21 (Data Privacy and Surveillance), Domain 22 (Reparations and Racial Justice)
-- **Economic architecture**: Domain 4 (Digital Government and Economic Policy), Domain 5 (Income Inequality and Fiscal Reform), Domain 17 (Labor and Employment), Domain 18 (Social Safety Net), Domain 20 (Antitrust), Domain 23 (Trade Policy)
-- **Policy and infrastructure**: Domain 8 (Media Ecosystem and Disinformation), Domain 27 (Higher Education and Academic Freedom)
+### Resource Requirements
 
-The democratic-renewal-proposal.md — the flagship distribution document — documents all 22 core domains with full evidence, international benchmarks, and fiscal estimates. Cross-domain synthesis, the 13-reinforcing-feedback-loop architecture, and the three-scenario theory of change are present and complete.
+**User time**: 3–4 hours Day 0 execution. 10–15 hours over the following 30 days for Batches 2–4 personalization and send (estimated 8–10 additional contacts, 10–12 min per contact personalization).
 
-### Speed-to-Impact
+**Ongoing**: 2–3 hours/month for the monthly iteration cycle (domain currency checks, update passes). Assumes 10–20 hours/week total orchestrator availability; Path A requires the low end of that range (2–4 hours/week for the first month).
 
-The primary advantage of Path A is immediacy. The pre-launch checklist from the PHASE_1_EXECUTION_READINESS.md audit (Blocks 1–7) requires 3–4.5 hours of user execution from decision to Batch 1 emails sent. Distribution timeline from decision day:
+### Post-Launch Expansion Opportunity
 
-- **Week 1**: GitHub Gist publication, Reddit posts, Substack Post 1, Batch 1 emails (Ryan Goodman / Just Security, Wendy Weiser / Brennan Center, Erica Chenoweth / Harvard Kennedy School, Ian Bassin / Protect Democracy, Marc Elias / Democracy Docket)
-- **Week 2–3**: Institutional outreach — law schools, think tanks, unions (Tier 2 contacts from DISTRIBUTION_OUTREACH_CONTACTS.md, ~35–40 named contacts)
-- **Week 4**: Batch 1 email send complete; Substack serialization underway; initial Reddit engagement tracked
+Path B domains (the optional scope extensions — Intelligence Oversight, Reproductive Rights/Labor, Voting Systems Architecture) can be added incrementally after launch. Each of the three is a standalone research project requiring 1–2 sessions (8–16 hours research); they can be targeted to appropriate follow-up contacts as they are completed without disrupting the main distribution. The measurement framework's rolling update design explicitly supports this model.
 
-Resource requirements are minimal: all templates are ready, all contacts are verified, all Gist content exists. The only user actions are GitHub Gist creation (30–45 minutes), URL fill-in in templates (20–30 minutes), email personalization (60–90 minutes), and send (15–20 minutes).
+### Risk Profile
 
-### Post-Launch Expansion
+**What Path A gains**: Maximum simplicity. Single wave, no staging decisions, no separate contact list management. Domain 37 reaches every Tier 1 contact at the same time. Organizations like Protect Democracy and Brennan Center, which work across both general democracy reform and election protection, receive the full corpus at once.
 
-Path A's post-launch roadmap is well-defined and pre-researched. The corpus contains Domains 23–37, all at production-ready status, with DOMAIN_37_SEQUENCING_PLAN.md providing a complete election-protection outreach plan. The 4–8 week post-launch expansion is not a research task — it is a sequencing task. Contacts who received the 22-domain framework in Week 1 receive domain-specific follow-ups as the serialization progresses.
+**What Path A trades away**: Domain 37's strategic value to election-protection specialists is partly diluted when it arrives embedded in a 35-domain general framework send. A litigation-focused contact at Democracy Docket or Campaign Legal Center has to locate Domain 37 within a large document rather than receiving it with a subject line and framing keyed to their active docket. The ACLU Voting Rights Project's response rate to a 35-domain general send is likely lower than their response rate to a Domain 37 targeted send leading with the NVRA quiet period analysis they are currently litigating around.
 
-**Election-protection gap**: Domain 37 (Federal Executive Interference in the 2026 Midterms) would reach election-protection organizations as part of the post-launch expansion — not at launch. Given the May 30 DOJ consent decree deadline, June 30 emergency EO routing window, and August 7 NVRA quiet period (the most time-sensitive advocacy deadlines in the entire framework), a 4–8 week post-launch delay for Domain 37 is operationally costly. Path A captures launch speed but sacrifices election-protection timing precision.
+**Risk level**: Low for general distribution. Moderate for election-protection conversion rates. No strategic risk to the framework's validity or credibility.
 
-### Risk and Mitigation
-
-**Risk**: A 22-domain launch may be perceived as incomplete by contacts who know the framework contains more material.
-
-**Mitigation**: The distribution framing addresses this directly. The 22-domain core is a complete intellectual architecture. Contacts are told in the outreach templates that the framework is in active development and that domain-specific follow-ups will arrive. The "evolving framework" framing is already built into Path A messaging. No Tier 1 institutional contact will decline to engage because 13 additional domains are in the pipeline — they engage because the 22-domain core addresses their work directly.
-
-**Risk**: Domain 37 election-protection window narrows during post-launch expansion.
-
-**Mitigation**: The Phase 2 expansion sequencing (DISTRIBUTION_PHASE_ORDER.md) places Domain 37 as the first follow-up send, not the last. With a Week 1 launch, the Domain 37 targeted outreach reaches election-protection organizations by Week 5–6 at the latest — before the August 7 NVRA quiet period, before the September pre-election litigation window, and while the June 30 emergency EO routing window is still open.
-
-**Confidence assessment**: Path A is viable and would generate real institutional impact. The primary limitation is the Domain 37 timing gap during post-launch expansion — which is the core reason Path A+37 Hybrid is the recommended approach.
+**When to choose Path A**: If you have direct personal relationships with Democracy Docket, Campaign Legal Center, or state AG election protection staff — people who will internally route Domain 37 to the right litigation team regardless of how it arrives. Or if your primary distribution channel is Substack (general audience framing is an advantage for a full-framework public post). Or if you want the cleanest possible single-event launch with no coordination overhead.
 
 ---
 
-## 2. Path A+37 Hybrid Analysis
+## 2. Path A+37 Hybrid: Phased with Election Protection Urgency
 
-### Scope and Rationale
+### What Happens
 
-Path A+37 Hybrid deploys the 22-domain core framework to general audiences while simultaneously distributing Domain 37 as a targeted send to election-protection and voting-rights organizations. This is not a two-phase sequential deployment — it is two parallel tracks launching at the same time from separate starting points.
+Path A+37 executes in two sequential waves separated by 1–3 days. The framing rationale — establishing the general framework's credibility before Domain 37 reaches its highest-value audience — converts even a 24-hour gap between sends into a sequenced rather than simultaneous outreach.
 
-The rationale is structural. Domain 37 occupies a categorically different position than any other domain in the framework:
+**Phase 1a — Day 0 (3–4 hours)**: Distribute the 34-domain framework (all domains except Domain 37) to general Tier 1–3 audiences via Batch 1 email (5 contacts), Reddit (4–5 subreddits staged for T+2), and Substack Post 1 (staged for T+3). Execution is identical to Path A Blocks 1–6, with one modification: each email includes the [PATH A+37] paragraph block noting that Domain 37 is being distributed separately to election-protection contacts.
 
-1. **Institutional audience specificity**: Domain 37's primary value accrues to a defined set of organizations — Democracy Docket, Campaign Legal Center, ACLU Voting Rights Project, Protect Democracy, Lawyers' Committee for Civil Rights VRP, Common Cause, States United Democracy Center, state ACLU affiliates in competitive states, election law clinics, Democratic Attorneys General Association — who are actively litigating or legislating in the exact policy space the domain documents. These organizations have different needs than general think tank, law school, or union contacts receiving the 22-domain corpus.
+**Phase 1b — Days 1–3 (1–2 hours)**: Send Domain 37 as a targeted, standalone outreach to 12 election protection organizations. Phase 1b is triggered when Phase 1a Batch 1 emails are confirmed sent — not after waiting for open/response signals.
 
-2. **Time-sensitivity is date-anchored**: Domain 37's five advocacy windows are fixed calendar events that do not adjust to distribution timing. May 30 (DOJ consent decrees), June 30 (emergency EO routing), August 7 (NVRA quiet period), September (pre-election litigation), October (poll observer deployment) are not affected by when the general distribution begins. An election-protection organization that receives Domain 37 in late July has approximately three weeks before the NVRA quiet period closes. The same organization receiving Domain 37 in May has eleven weeks — sufficient for coordinated multi-state preliminary injunction preparation.
+Phase 1b Block 7 (0:00–0:30): Create Domain 37 standalone Gist (Domain 37 is already in the main proposal Gist; the standalone makes the election-org outreach cleaner — recipients get a focused document rather than a link to the full 35-domain corpus).
 
-3. **Domain 37 is self-contained**: At 8,857 words with 50 citations, Domain 37 is the highest-citation-density document in the standalone corpus. It contains its own executive summary, five-mechanism interference analysis, personnel network documentation, and full advocacy window calendar. It does not require the 22-domain framework as context — it stands alone as a professional research briefing.
+Phase 1b Block 8 (0:30–1:30): Personalize 12 election protection org emails with Domain 37 emphasis, tailored subject lines, and per-organization impact language keyed to each organization's active docket.
 
-### Distribution Sequencing
+Phase 1b Block 9 (1:30–1:50): Send Phase 1b emails (Tier 1 nationals first, Tier 2 state networks after, 15–20 minute spacing).
 
-**General audience launch (22-domain core)**:
+**Days 7–14**: Monitor Phase 1a Batch 1 signal. Prepare Batch 2 general outreach (7–10 contacts). Post Reddit and Substack. Monitor Phase 1b election org signal (response requests, litigation integration signals).
 
-All existing distribution channels execute simultaneously: GitHub Gist publication of the democratic-renewal-proposal.md and five companion documents; Substack Post 1 (executive summary framing); Reddit distribution across four subreddit-tailored posts; Batch 1 institutional outreach to law schools, think tanks, and unions. This is identical to Path A general distribution.
+**Days 14–30**: Batches 2–3 general distribution. Monthly iteration begins.
 
-**Domain 37 targeted distribution (simultaneous, separate channel)**:
+### Domain 37 Timing Rationale
 
-Domain 37 is published as a standalone Gist simultaneously with the general launch. The DOMAIN_37_SEQUENCING_PLAN.md Tier 1 contacts (7 national election-protection organizations) receive a targeted email separate from the general Batch 1 institutional outreach. The email template (Template D37-1 in DOMAIN_37_SEQUENCING_PLAN.md) is already written, with subject line, core findings bullets, five advocacy windows summary, and per-organization personalization blocks.
+Domain 37's five advocacy windows are not theoretical — they are already active. As of May 1, 2026:
 
-This is not additional infrastructure. The Gist creation adds 5–10 minutes to Block 1 of the pre-launch checklist. The Tier 1 Domain 37 email list (7 contacts) adds one additional send batch to Block 6. The total additional time for the Hybrid path over Path A is approximately 45–60 minutes of user execution.
+- **29 days to May 30**: The DOJ consent decree deadline requires election-protection organizations to have brief, pre-filed challenge strategies ready. Organizations receiving Domain 37 on May 2 have 28 days of preparation. Organizations receiving it on June 1 have zero.
+- **60 days to June 30**: The emergency EO routing window requires administrative law briefings before this date. Path A+37 provides 8+ weeks of lead time. Path B at its realistic 21-day timeline provides 4–5 weeks.
+- **98 days to August 7**: The NVRA 90-day quiet period prohibits systematic voter removals within 90 days of November 4, 2026. The 90-day calculation from the election date (November 4) counts back to August 7. The 6–8 week institutional adoption cycle means Domain 37 must be in operational hands by mid-June for the August 7 window to be actionable. Path A+37 Day 3 delivery achieves this with 10+ weeks of margin. Path B's realistic timeline (21 days) achieves this with approximately 6 weeks of margin — borderline.
+- The Protect The Vote 2026 Poll Worker and Observer Academy runs May 15 through August 31 — organizations coordinating legal hotlines need their research frameworks in place before training begins, not after.
 
-### Timeline Impact
+**The November 4 fixed endpoint**: The 2026 midterm general election is November 4 (first Tuesday after the first Monday in November). All advocacy windows count backward from this date. Every day of distribution delay compresses the available preparation window for organizations that operate on litigation dockets.
 
-The 1–2 week extension cited in some prior analysis reflects the original DOMAIN_37_SEQUENCING_PLAN.md design — which staged Domain 37 distribution 2 weeks after Phase A general launch to allow credibility to accumulate. The current analysis recommends a simpler approach: simultaneous parallel tracks.
+### Stakeholder Prioritization Logic
 
-The Domain 37 parallel track does not require domain-37b (state election security) or domain-37a (post-election certification) to be fully researched first. Both are scope documents, not distribution-ready domains, and their absence does not diminish Domain 37's standalone value to election-protection organizations. Domain-37b research (estimated at 1 session) is an optional enhancement that can proceed after launch.
+The sequencing of stakeholders within Path A+37 reflects a structural insight: the framework has two distinct primary audiences that require fundamentally different first-impression framings.
 
-**Time-to-launch**: Identical to Path A. 3–4.5 hours from decision to Batch 1 emails + Domain 37 targeted send.
+**General Tier 1 (Phase 1a)**: Law schools, think tanks, civil society researchers, academic institutions. These contacts engage with the 35-domain integrated framework as an intellectual architecture. Their value is citation, synthesis, and long-run institutional adoption. The appropriate first-impression document is the full proposal — they benefit from seeing the cross-domain connections.
 
-### Orchestrator Burden
+**Election protection specialists (Phase 1b)**: Organizations with active litigation dockets and fixed advocacy deadlines. These contacts need Domain 37 to function as a professional research briefing — specific enough to connect immediately to their current work, not embedded in a larger corpus that requires navigation. Democracy Docket's team reads around 50 litigation-relevant documents per week. The probability that Domain 37 gets routed to the right litigator is higher when it arrives standalone than when it arrives in a 35-domain corpus.
 
-Moderate. The main additional work beyond Path A is:
+The 1–3 day gap between Phase 1a and Phase 1b is not a delay — it is a framing mechanism. "I'm distributing the general framework to policy and academic contacts; given your organization's specific work, I wanted to send Domain 37 directly" is a more compelling outreach after Phase 1a has already been sent than before it. The sequence creates a credibility signal that the framework is in active distribution.
 
-- One additional Gist creation (Domain 37 standalone document)
-- One additional email send batch (7 Tier 1 election-protection contacts using the pre-written Template D37-1)
-- Per-organization personalization for Domain 37 contacts (DOMAIN_37_SEQUENCING_PLAN.md provides the value proposition for each organization)
-- Optional: within 2–4 weeks of launch, a Tier 2 state-level Domain 37 send (state ACLU affiliates, state LWV chapters, election law clinics in AZ, GA, MI, PA, WI)
+### Resource Requirements
 
-The Domain 37 research is complete. The contacts are documented. The templates are written. The additional burden is execution logistics, not research.
+**User time**: 4–5 hours total (3–4 hours Phase 1a + 1–2 hours Phase 1b across Days 0–3). The additional 1–2 hours over Path A covers: one additional Gist creation (Domain 37 standalone), 12 election-org email personalizations (each keyed to the organization's active docket per DOMAIN_37_SEQUENCING_PLAN.md), and the Phase 1b send.
 
-### Risk and Mitigation
+**Ongoing**: Same as Path A — 2–3 hours/month iteration cycle. The two-track contact log (general / Domain 37 election orgs) requires a tracking spreadsheet with two tabs; this is approximately 30 minutes of additional setup over the single-track Path A log.
 
-**Risk**: Added complexity of parallel tracks increases coordination overhead.
+**Why "Hybrid"**: The name captures the actual design — maximum immediacy of the general framework launch combined with election integrity urgency without waiting for full Phase 2 completion. Path A+37 is not a compromise between A and B; it is a deployment strategy that treats Domain 37's institutional audience as categorically different from the general Tier 1 audience.
 
-**Mitigation**: The two tracks do not interact mechanically. General distribution proceeds on the standard checklist. Domain 37 is a separate send with a separate contact list and separate template. A tracking spreadsheet with two tabs (General / Domain 37) is sufficient to manage both.
+### Risk Profile
 
-**Risk**: Domain 37 isolation — the five interference mechanisms gain explanatory depth when read against the 22-domain backdrop (Domain 6 appellate capture timeline, Domain 29 DOJ capture, Domain 19f war powers non-compliance as precedent). Sending Domain 37 without the general framework context may reduce analytical coherence for some recipients.
+**What Path A+37 gains**: Domain 37 reaches its highest-value audience (election-protection litigators) with targeted framing and sufficient lead time on all five advocacy windows. The general framework reaches academic, policy, and think tank contacts simultaneously. Maximum first-impression coherence for both audiences.
 
-**Mitigation**: Domain 37's email template explicitly references the full 22-domain framework ("full research framework available at [link]"). Election-protection lawyers and researchers are accustomed to reading standalone legal analysis briefs. The Domain 37 document's cross-references (e.g., "see Domain 6, Section 8.4 for the appellate capture timing analysis") function as discovery prompts for the framework, not as dead ends.
+**What Path A+37 trades away**: Two-wave complexity. The coordination is minimal (two send events, 1–3 days apart, separate contact lists, separate templates), but it is more complex than Path A's single wave. Three contacts appear on both lists (Wendy Weiser, Marc Elias, Ian Bassin) and receive two emails — the general Batch 1 send and the Domain 37 targeted follow-up. This is a feature for organizations that operate across both portfolios, but it requires clear framing to avoid appearing duplicative.
 
-**Risk**: Organizations like Brennan Center and Protect Democracy are on both the general Batch 1 list and the Domain 37 Tier 1 election-protection list. Some contacts receive two emails.
-
-**Mitigation**: This is a feature, not a bug, for organizations that operate across both general democracy-reform and election-protection portfolios. The Domain 37 email explicitly frames itself as a targeted follow-up: "I'm also sending Domain 37 separately because of its specific relevance to your election protection work."
-
-### Why This Is the Recommended Approach
-
-Path A+37 Hybrid provides both general framework credibility and urgent election focus in a single launch window. The election-protection organizations are the most time-constrained institutional audience in the framework. They operate on litigation dockets with fixed deadlines. Getting Domain 37 to Democracy Docket, the ACLU Voting Rights Project, and state election law clinics in the same week the 22-domain framework reaches law schools and think tanks means the organizational preparation for May 30 and August 7 advocacy begins at the same time as the general institutional adoption process — not 4–8 weeks later.
-
-The DOMAIN_37_SEQUENCING_PLAN.md contains a complete execution architecture for this distribution. No new research, no new templates, no new contacts are required. The Hybrid path costs 45–60 additional minutes of user execution and captures the highest-urgency institutional audience at the optimal moment.
+**Risk level**: Low. The primary operational risk — that the two-wave approach appears disorganized — is mitigated by the "separate targeted follow-up" framing already written into Phase 1b email templates.
 
 ---
 
-## 3. Path B: Extended Phase 2 Before Launch
+## 3. Path B: Extend Phase 2 Before Distribution
 
-### Scope
+### What It Means
 
-Path B defers all distribution until Domains 38–40 have been fully researched, adding three new domains to the framework before the first Batch 1 email is sent. The candidate domains for 38–40, based on ITEM12_DOMAIN38_CANDIDATES.md, ITEM17_DOMAIN39_CANDIDATES.md, and ITEM26_DOMAIN40_CANDIDATES.md, are:
+Path B defers all Phase 1 distribution until the optional Phase 2 domain updates have been researched and integrated. Based on the current EXPLORATION_QUEUE.md candidates and EXECUTION_PLAN_PATH_B.md scope, Path B adds seven domain update sections across six existing domains plus up to three genuinely new domain research projects.
 
-**Domain 38: Intelligence Oversight and Accountability** (top-ranked candidate from ITEM12)
+**Phase 2 domain updates (from EXECUTION_PLAN_PATH_B.md)**:
 
-The active crisis case is strong. The Trump administration fired 17 Inspectors General in January 2025 without the legally required 30-day Congressional notification. NSA Director Gen. Timothy Haugh was fired in April 2025. FISA Section 702 queries of political and religious organizations surged 270 percent (227 → 839) from 2024 to 2025. The FISA Accountability and Extension Act of 2026 (S.3696) would require warrants for US-person content queries — a reform that failed by a 212-212 House tie vote in 2024. The bipartisan coalition (Rand Paul/libertarian Republicans + progressive Democrats) is the most durable cross-partisan alliance in Congress. ITEM12 ranks Intelligence Oversight first among all four candidates on urgency, coalition-building potential, and leverage on democratic structures. Research estimate: 12–16 hours (highest complexity due to partially classified primary sources and rapidly changing Section 702 legislative landscape).
+- **Domain 1 (Voting Rights)**: FISA Section 702 final outcome (Senate vote + presidential signature), state SAVE Act analog wave update, Arizona ballot initiative qualification outcome. Estimated 700–1,000 new words. 1 session (2–3 hours).
+- **Domain 6 (Judicial Independence)**: May–June 2026 circuit vacancy acceleration (8 vacancies opening), multi-state AG enforcement coalition strategy. Estimated 600–900 new words. 1 session (2–3 hours).
+- **Domain 19f (War Powers / Iran)**: Post-May 1 outcome fill (which of three scenarios materialized), congressional response patterns, Iran-Venezuela synthesis. Estimated 500–800 new words. 1 session (2–3 hours) — cannot begin before May 1 outcome fully documented.
+- **Domain 25 (FISA/Surveillance)**: Senate vote count, presidential signature date, whether warrant requirement survived, post-702 EO 12333 shift assessment. Estimated 400–700 new words. 30–60 minutes after Senate vote confirmed.
+- **Domain 33 (State Legislative Autocratization)**: May–June 2026 state legislative session ballot initiative targeting update, 2026 Secretary of State and state supreme court race landscape. Estimated 400–600 new words. 1 session (2–3 hours).
+- **Domain 35 (SCOTUS OT2026)**: OT2026 term preview, anticipated cert grants, Loper Bright downstream cases, Warsh confirmation impact. Estimated 300–500 new words. 1 session (2–3 hours).
+- **Domain 6 / Domain 35 cross-reference addendum (Loper Bright)**: Circuit court split developing in post-Loper Bright APA litigation. 200–400 new words integrated into existing sections. Part of Domain 6 or 35 session.
 
-**Domain 39: Reproductive Rights and Democratic Authority** (top-ranked candidate from ITEM17)
+**Optional scope extensions (new domain research, not yet scoped in execution plans)**:
 
-Reproductive rights as a democratic-mobilization mechanism and coalition-strength indicator. Post-Dobbs ballot initiative record (seven state constitutional amendments passed 2022–2024, including in conservative states) demonstrates that reproductive rights function as democratic-participation multipliers in electoral contexts. The 2026 midterms have six state-level reproductive rights ballot initiatives already filed. Coalition connection to healthcare (Domain 31), racial justice (Domain 22), and state legislative autocratization (Domain 33) is tight. Research estimate: 10–14 hours.
+These are identified in EXPLORATION_QUEUE.md as Phase 3 candidates but could be folded into a Path B delay:
 
-**Domain 40: Voting Systems Architecture** (second-ranked from ITEM12; top-ranked from ITEM26 under "international feasibility proof")
+- **Intelligence Oversight and Accountability**: FISA political query surge (270% increase, 2024–2025), 17 Inspector General firings, NSA Director Haugh firing, bipartisan Section 702 warrant coalition. Estimated 12–16 hours research. Complexity: high (partially classified primary source context, rapidly changing legislative landscape).
+- **Reproductive Rights and Democratic Coalition Strength**: Post-Dobbs ballot initiative record (7 state constitutional amendments passed 2022–2024), 6 state-level 2026 initiatives already filed, mobilization multiplier analysis. Estimated 10–14 hours research.
+- **Voting Systems Architecture**: Proportional representation and RCV deep-dive, DC June 2026 primary as real-time case study, Fair Representation Act (H.R. 4632), RCV backlash (12 state bans enacted 2024–2025) vs. 49 US jurisdictions currently using RCV. Estimated 8–12 hours research.
 
-Comparative deep-dive on proportional representation and ranked-choice voting — STV, MMP, and open-list variants — with US-specific VRA interaction analysis, the DC June 2026 primary as a real-time implementation case, and the Fair Representation Act (H.R. 4632) as the federal pathway. The RCV backlash (12 states enacted statewide bans 2024–2025) and the 49 US jurisdictions currently using RCV create an active policy contest that a comprehensive domain would directly inform. Research estimate: 8–12 hours.
+### Timeline Extension
 
-### Timeline Impact
+**Optimistic Path B (14 days)**: Domain updates only, sequential sessions, all complete by May 15. Requires research sessions on approximately consecutive days, which does not reflect realistic session availability.
 
-Each domain requires dedicated research sessions at 14–18 hours of research time, with 50–60 primary source citations expected at domain standard. Three domains in sequence:
+**Realistic Path B (21–28 days)**: Domain 19f cannot begin before May 1 outcome is confirmed in reporting; Domain 35 benefits from waiting for the May cert conference; sessions typically require revisiting as new developments emerge. Realistic first distribution date: May 22–29, 2026.
 
-- Domain 38 (Intelligence Oversight): 12–16 hours research → ~2 research sessions
-- Domain 39 (Reproductive Rights): 10–14 hours research → 1–2 research sessions
-- Domain 40 (Voting Systems Architecture): 8–12 hours research → 1–2 research sessions
+**With new domain research (Domains 38–40)**: Add 30–42 hours research across 3 domains. Realistic first distribution date: mid-June 2026.
 
-**Conservative estimate**: 5–6 full research sessions before launch readiness.
-**Calendar translation**: 4–6 weeks from today (May 1) = mid-May to early June 2026 launch.
+| Scenario | Research Time | Launch Date | Days Delayed from May 1 |
+|----------|--------------|-------------|------------------------|
+| Domain updates only (optimistic) | 5–7 sessions (~12–14 hours) | May 15, 2026 | 14 days |
+| Domain updates only (realistic) | 5–7 sessions + review | May 22–29, 2026 | 21–28 days |
+| + 1 new domain (Intelligence Oversight) | + 12–16 hours | June 1–8, 2026 | 31–38 days |
+| + 2 new domains (Intelligence + Reproductive) | + 22–30 hours | June 15–22, 2026 | 45–52 days |
+| Full Path B (all 3 new domains) | + 30–42 hours | Late June–Early July | 55–61 days |
 
-### Orchestrator Burden
+### Completeness Rationale
 
-High. Each domain follows the established production standard: 4,000–8,000 words with full evidence sections, international benchmarks, reform proposals, implementation pathways, and cross-domain connections. Source verification, primary document analysis, and synthesis require structured research sessions, not quick drafts.
+The genuine argument for Path B is not speed — it is the quality of what arrives in institutional hands. A framework that includes:
 
-Domain 38 is the most demanding: Intelligence Oversight requires engagement with classified-context analysis, FISA court architecture, and a rapidly changing legislative landscape. The 270-percent surge in political-organization FISA queries is documented in PCLOB reports; the IG network collapse has produced conflicting court rulings (Judge Reyes declined reinstatement in September 2025 despite finding statutory violation). This domain requires careful source triangulation that extends research time.
+- Domain 1 with the confirmed FISA 702 outcome (not the pre-Senate-vote "pending" framing)
+- Domain 19f with the confirmed Iran WPR post-May 1 scenario filled in (not "three scenarios, select one")
+- Domain 6 with the circuit vacancy wave documented as it is actually unfolding
+- Domain 35 with the cert grants known
 
-Domains 39 and 40 are somewhat more accessible: Reproductive Rights has a rich public record (state constitutional amendments, ballot initiative data, litigation tracking from Center for Reproductive Rights), and Voting Systems Architecture has strong primary source availability (New Zealand Electoral Commission, Ireland Electoral Commission, FairVote, DC Board of Elections). But the per-domain research investment is still substantial.
+...is a more complete document than the current May 1 version. For the subset of Tier 1 contacts who will specifically probe these gaps — Senate Judiciary staffers, FISA-specialized litigators, appellate court reform scholars — the Path B version is more defensible.
 
-### Advantage: Comprehensiveness
+The "democracy renewal vs. crisis response" framing reflects this distinction. The current 35-domain framework is a crisis-response document — it documents the crisis in real time with April 2026 updates. A Path B framework launched in late May (with post-May 1 outcomes integrated) would begin to read as a more considered democratic diagnosis rather than a document produced in the heat of the crisis. For some institutional audiences — Congressional Research Service contacts, comparative politics scholars, international democracy monitors — that distinction matters for credibility.
 
-Path B's genuine advantage is framework scope. A 40-domain corpus at launch is more defensible than a 22-domain corpus in institutional contexts where contacts may be familiar with specific domains that are not in the core 22. Intelligence oversight scholars and surveillance researchers (potential Batch 1 contacts at EFF, CDT, Brennan Center national security program) have a relevant domain waiting for them. Reproductive rights advocates and labor-coalition contacts receive domains that directly address their organizational priorities. Electoral reform researchers and state legislators working on RCV implementation receive the voting systems architecture analysis they need.
+### Risk: Delivery Delay in the Critical 2026 Election Window
 
-This is a real strategic advantage, not a nominal one. The framework's institutional credibility scales with scope. A 40-domain corpus published in early June 2026 would be a more comprehensive document than a 22-domain corpus published in May 2026.
+The decisive cost of Path B is structural, not marginal. Every week of delay is a week when:
 
-### Risk: Market Timing
+**May 30 window compresses or closes**: If Path B takes 28 days (realistic, domain updates only), the framework reaches election-protection organizations on May 29 — one day before the DOJ consent decree deadline. One day is not enough lead time for any organization to develop a challenge strategy, brief litigation teams, or coordinate with co-counsel. At 14 days (optimistic), organizations receive the framework on May 15, giving them 15 days — borderline for a coordinated challenge but potentially workable if the research is immediately actionable.
 
-The decisive argument against Path B is not quality — it is timing. The 2026 midterm election calendar does not pause for framework completion.
+**August 7 NVRA margin narrows**: Under realistic Path B (May 22–29 launch), the 6–8 week adoption cycle puts operational use at July 3–17. August 7 is approximately 3 weeks after that window — minimal margin for coordinated multi-state emergency injunction preparation. Campaign Legal Center's March 2026 Texas voter purge lawsuit demonstrates the litigation tempo organizations are already operating at; they need Domain 37 analysis integrated into that tempo, not arriving after their strategies are already set.
 
-**May 30, 2026 (29 days from today)**: DOJ consent decrees finalized or blocked — the first window for legal challenge and public pressure on voter roll maintenance. Organizations need Domain 37's consent decree analysis *before* this deadline to position challenge strategies. A mid-May launch gives 2 weeks of lead time; an early-June launch gives zero.
+**Spring legislative sessions close**: Arizona, Ohio, and Nebraska state legislatures typically adjourn by mid-May. Domain 37's Brennan Center model legislation for ICE-at-polls restrictions needs to reach state AG contacts and legislative staff before adjournment. A May 22 launch finds most relevant legislatures in recess.
 
-**August 7, 2026**: NVRA 90-day quiet period begins. Emergency injunction templates for systematic SAVE-based voter purges must be pre-filed and coordinated across Democracy Docket, Campaign Legal Center, and ACLU Voting Rights Project. The measurement framework's 6–8 week institutional adoption timeline means content received in early June reaches operational use by late July — leaving approximately one week before the August 7 deadline. That is insufficient for coordinated multi-state preliminary injunction preparation.
-
-**Spring legislative sessions (ending May–June)**: Arizona, Ohio, Nebraska, and other state legislatures typically adjourn by mid-May. Domain 37's Brennan Center ICE-at-polls model legislation needs to reach state AG and legislative contacts before adjournment. A May 1 launch captures the final weeks of these sessions. An early-June launch finds most state legislatures in recess until fall.
-
-**June 30, 2026**: Emergency EO routing window — the second Domain 37 advocacy deadline — falls within the Path B research period. Organizations that receive Domain 37 in early June have thirty days to act on this analysis; organizations that receive it in May have sixty.
-
-**Influence window compression**: Every week of Path B research is a week that the framework is not in institutional hands. The 6–8 week Tier 1 adoption cycle means a May 1 launch produces its first institutional citations and policy briefs in mid-June. An early-June launch produces those first citations in late July — after two of the five Domain 37 advocacy windows have closed and the third (August 7) is imminent.
-
-The three domains added by Path B — Intelligence Oversight, Reproductive Rights, Voting Systems Architecture — are genuinely important additions to the framework. But they do not address election interference. They extend the framework's scope into surveillance accountability, reproductive coalition strength, and electoral system design. The domains that are most directly time-critical for 2026 — Domains 1, 6, 29, 33, and 37 — are all present in the 22-domain core and in Domain 37's standalone document. Path B adds comprehensiveness while the election window is narrowing.
-
-**The iterated-distribution alternative**: The measurement framework explicitly supports rolling updates. Tier 1 contacts who receive the 22-domain framework in May 2026 can receive domain-specific follow-ups as Domains 38–40 are completed in June–July 2026. This approach captures both the May launch window and eventual 40-domain comprehensiveness — without requiring the two goals to compete. Path B forecloses this by making completeness a prerequisite rather than a parallel process.
+**The iterated-distribution alternative**: Path B's completeness advantage can be substantially captured without delay. Tier 1 contacts who receive the 35-domain framework on May 1 can receive targeted follow-up emails when the post-May 1 Iran outcome is confirmed (likely by May 8–15) and when the FISA Senate vote is final. A "here is the update" follow-up email is a second touchpoint that reinforces credibility, not an admission that the original document was incomplete. Path B treats completeness as a launch prerequisite; the rolling update model treats it as an ongoing feature.
 
 ---
 
-## 4. Comparative Decision Matrix
+## 4. Comparative Matrix
 
-The following matrix maps each path against the decision factors most relevant to a May 2026 Phase 1 launch.
-
-| Factor | Path A | Path A+37 Hybrid | Path B |
-|--------|--------|-----------------|--------|
-| **Launch speed** | Immediate (Day 0) | Immediate (Day 0) | +4–6 weeks |
-| **Domain scope at launch** | 22 domains | 23 (22 core + Domain 37) | 25–26 (22 + partial 38–40) |
-| **Election urgency coverage** | Domain 37 in post-launch queue | Domain 37 at launch (parallel track) | Domain 37 at launch but delayed overall |
-| **May 30 DOJ consent decree window** | Covered if expansion fast | Covered at launch | At risk (launch may fall after deadline) |
-| **August 7 NVRA quiet period** | Covered with 6+ weeks lead time | Covered with 6+ weeks lead time | Marginal (2–3 weeks lead time at best) |
-| **Resource overhead** | Minimal (all templates ready) | Moderate (+45–60 min execution) | High (5–6 research sessions, 4–6 weeks) |
-| **Batch 1 timing** | ~4 weeks from decision | ~4 weeks from decision | 10–12 weeks from decision |
-| **Election-protection org access** | Post-launch (4–8 weeks) | At launch (parallel) | At launch but 4–6 weeks later overall |
-| **Tier 1 institutional adoption cycle** | Full 6–8 week cycle before August 7 | Full 6–8 week cycle before August 7 | Compressed cycle, minimal window before August 7 |
-| **Framework comprehensiveness** | 22 domains (strong core) | 23 domains (core + election focus) | 25–26 domains (broadest scope) |
-| **Influencer impact** | Credible — complete intellectual architecture | Maximum impact — election focus + general framework | Delayed — broadest scope but timing cost is structural |
-| **Phase 2 domains remaining** | 13–15 domains (23–37) | 12–14 domains (23–36, excluding 37) | 10–12 domains (domains 40+ plus scope docs) |
-| **Rolling update compatibility** | High — post-launch adds are natural follow-ups | High — parallel tracks extend naturally | Low — Path B is a sequential gate, not a rolling model |
-| **User execution burden** | Low (3–4.5 hours) | Low-moderate (4–5 hours) | Very high (research + execution, 6+ weeks calendar) |
+| Dimension | Path A | Path A+37 Hybrid | Path B |
+|-----------|--------|------------------|--------|
+| **Launch delay from decision** | 3–4 hours | 3–4 hours (Phase 1a) + 1–3 days (Phase 1b) | 14–28 days (updates only); 45–61 days (+ new domains) |
+| **Domain count at launch** | 35 (all domains, single wave) | 34 (Phase 1a) → 35 (Phase 1b Day 1–3) | 35–38 (updates only) or 38–41 (with new domains) |
+| **Election-org Tier 1 send timing** | Day 0 (embedded in general send) | Days 1–3 (targeted Domain 37 send) | Day 14 (optimistic) to Day 61 (full Path B) |
+| **May 30 DOJ consent decree window** | 29 days lead time (adequate) | 27–28 days lead time (adequate) | 1–15 days lead time (marginal to zero) |
+| **August 7 NVRA quiet period margin** | 10+ weeks lead time (strong) | 10+ weeks lead time (strong) | 3–6 weeks (marginal under realistic timeline) |
+| **Tier 1 launch date (Batch 1 sent)** | May 1, 2026 | May 1–4, 2026 | May 15–29 (updates only); June–July (with new domains) |
+| **Domain 37 framing for election orgs** | Embedded in general send (unfocused) | Standalone targeted send (focused, docket-specific) | Integrated into updated framework; delayed overall |
+| **Election timing optimization** | Good — reaches orgs in time for all advocacy windows | Best — Domain 37 reaches specialists with targeted framing and full lead time | Poor to marginal — May 30 window at serious risk |
+| **Institutional coverage at launch** | Full 35 domains | Full 35 domains (staggered) | Same plus incremental updates |
+| **Research completeness** | Strong (current through May 1) | Strong (current through May 1) | Stronger (post-May 1 outcomes integrated) |
+| **Scope narrative** | "Crisis-response diagnostic" | "Crisis-response diagnostic with election urgency" | "Democratic diagnosis with current outcomes" |
+| **Orchestrator bandwidth required** | Low (4–8 hours total first 30 days) | Low-moderate (5–10 hours total first 30 days) | Very high (12–18 hours research + 4–8 hours distribution) |
+| **Post-launch expansion model** | Rolling updates; Path B domains added incrementally | Rolling updates; Tier 2 election org Domain 37 send in weeks 2–4 | Domain expansions pre-completed; rolling model less central |
+| **Primary risk** | Domain 37 diluted in general send; lower election-org conversion rate | Parallel-track coordination overhead (minimal) | Delivery delay makes May 30 and August 7 windows unactionable |
+| **Best suited for** | Users with direct election-org relationships; Substack-primary distribution | Most users — election protection is priority; maximizes lead time | Users with specific strategic delay rationale not in research record |
 
 ---
 
 ## 5. Decision Framework
 
-### Choose Path A if:
+The right path depends on which of three priorities governs the decision. All three are legitimate strategic choices. The framework below is neutral between them — it names the conditions under which each path is the correct answer, without weighting those conditions.
 
-**Speed is the overriding priority and you want to test infrastructure quickly.** Path A puts the framework into institutional hands in the fastest possible timeline. If your primary goal is verifying that the distribution infrastructure works — that the templates convert, that Batch 1 contacts respond, that the Substack post generates engagement — Path A provides that signal within 2 weeks of decision.
+### Primary Decision Variables
 
-**You have direct relationships with election-protection contacts.** If you can route Domain 37 to Democracy Docket, ACLU Voting Rights Project, or Campaign Legal Center through a personal contact who will immediately direct it to the right internal staff, the Hybrid path's strategic value partially collapses. A phone call to Marc Elias's office is faster than any email template.
+**Variable 1: Election protection urgency**
 
-**You prefer integrated framework coherence over targeted sequencing.** Some researchers and institutional contacts benefit most from receiving a complete, integrated document where every cross-reference is immediately followable. The 22-domain core is that document.
+How much does the May 30 / June 30 / August 7 advocacy window calendar matter to you?
 
-### Choose Path A+37 Hybrid if:
+- If these deadlines feel like real operational constraints — if you want Democracy Docket, ACLU Voting Rights Project, and Campaign Legal Center to have Domain 37 analysis in their litigation planning before these windows close — then the distribution decision is primarily about getting Domain 37 into specialist hands as early as possible. That points to Path A+37 Hybrid (or Path A if you have direct relationships with those organizations).
+- If these deadlines feel secondary — if your primary impact vector is long-run institutional credibility with think tanks, law schools, and Congressional staff rather than immediate election-protection litigation support — then the timing pressure partially relaxes, and Path B's completeness argument becomes more competitive.
 
-**The 2026 midterms are the primary urgency driver.** If election protection work is the most important immediate impact vector, Hybrid is the clear choice. Domain 37 reaches the organizations that can act on it — before the May 30 and June 30 advocacy windows close — without delaying the general framework launch.
+**Variable 2: Completeness vs. speed**
 
-**You want maximum first-impression impact.** The most influential institutional contacts for election 2026 are the election-protection organizations, not general think tanks. Getting Domain 37 into their hands at the same time the 22-domain framework reaches academic and policy contacts is the highest-leverage deployment of the existing research.
+Which is more valuable in your institutional context: a 35-domain framework available now, or a 38–41-domain framework available in 4–8 weeks?
 
-**You are comfortable managing two parallel contact lists.** The additional execution burden is real but small (45–60 minutes). The DOMAIN_37_SEQUENCING_PLAN.md does the strategic work; execution is mechanical.
+- If your Tier 1 contacts include contacts who will specifically probe for gaps (Senate Judiciary staffers who will ask "why isn't Iran WPR post-May 1 updated?", FISA litigators who will flag the pending FISA outcome as a caveat), Path B's post-outcome integration is worth the delay.
+- If your Tier 1 contacts are researchers, civil society organizations, and electoral reform advocates who engage with frameworks at the level of analytical rigor rather than day-of-publication currency, the 35-domain current-through-May-1 document is already maximally credible for their purposes.
 
-**You find the timing analysis compelling.** If the May 30 DOJ consent decree deadline, June 30 emergency EO routing window, and August 7 NVRA quiet period feel like urgent real deadlines (they are documented at those dates in Domain 37, Section 6), Hybrid is the appropriate response to that urgency.
+**Variable 3: Orchestrator bandwidth**
 
-### Choose Path B if:
+How much research capacity is realistically available May–June 2026?
 
-**Framework comprehensiveness is more strategically valuable than speed in your context.** If your primary distribution audience is surveillance researchers, intelligence oversight scholars, or electoral systems reform practitioners — who will be most compelled by a framework that includes Domains 38–40 — Path B's additional scope is worth the timing cost.
+- Path B's domain update research (5–7 sessions, ~12–14 hours) is a serious commitment alongside other ongoing work. New domain research (Intelligence Oversight, Reproductive Rights, Voting Systems Architecture) adds 30–42 additional hours. If 15–20 hours/week total orchestrator bandwidth is available, Path B with domain updates only (14-day realistic timeline) is feasible. Path B with all three new domains (55–61 day timeline) requires nearly all available bandwidth for two months.
+- Path A and A+37 require 4–5 hours Day 0 and 2–3 hours/week ongoing. This is the low end of the stated bandwidth range (10–20 hours/week) and leaves substantial capacity for monitoring, tracker updates, and Phase 3 work.
 
-**You have 6+ weeks of research capacity available May–June 2026.** Path B is only realistic if sufficient research sessions can be allocated to three full-domain research projects within the next 6 weeks. Each domain requires 12–18 hours of dedicated research. This is a substantial commitment alongside other ongoing work.
+### Conditional Recommendation
 
-**The election protection window is not your primary focus.** If institutional credibility with reproductive rights advocates, intelligence community reformers, and electoral systems researchers matters more than reaching election-protection organizations before the August 7 deadline, Path B serves those priorities.
+**If election protection is the highest priority**: Choose Path A+37 Hybrid. It deploys Domain 37 to election-protection specialists with targeted framing, sufficient lead time on all five advocacy windows, and negligible additional cost over Path A. The 1–2 extra hours of execution are the lowest-cost path to maximum election-protection impact.
 
-**You have a specific June publication anchor.** If there is a planned publication date, conference, or institutional presentation in early June that makes early-June launch timing strategically superior to early-May launch timing, Path B aligns with that anchor. An early-May launch would also work, but it would not be synchronized to the planned event.
+**If comprehensive democratic diagnosis is the priority**: Choose Path B (domain updates only, 14–28 day realistic timeline). Accept the compression of the May 30 window as the tradeoff for post-outcome integration. Do not attempt the full three-domain expansion unless 45–61 days of delay is strategically acceptable.
 
-### Tiebreaker Questions
+**If speed and momentum are the priority**: Choose Path A. Single wave, no coordination overhead, Domain 37 in all Batch 1 contacts' hands on Day 0, framework in public circulation via Reddit and Substack within 48 hours. If you have direct relationships with Marc Elias, Wendy Weiser, or state AG election protection staff, your personal route to those conversations is faster than any email template.
 
-If the decision is not clear from the above, three questions should resolve it:
-
-**Question 1: How urgent is the 2026 midterm election protection window?**
-
-If your answer is "very urgent — the May 30, June 30, and August 7 deadlines matter and I want Domain 37 in election-protection organizational hands before they pass," the answer is Path A+37 Hybrid. If your answer is "election protection matters but my primary impact vector is institutional credibility with think tanks and law schools," the answer is Path A. Path B only makes sense here if the election protection window is explicitly deprioritized.
-
-**Question 2: How important is maximum initial scope versus rolling expansion?**
-
-If you believe that a 25-domain corpus at launch is significantly more compelling than a 22-domain corpus with a 3-domain follow-up six weeks later, Path B has real strategic merit. If you believe that rolling updates are a natural and credible way to demonstrate an "evolving, living framework," Paths A and A+37 are superior — they put the strongest existing content into institutional hands now and position the subsequent expansions as evidence of ongoing research depth.
-
-**Question 3: How much additional research capacity exists May 1–31?**
-
-Path B requires 5–6 full research sessions in the next 30 days before launch. If that capacity exists and can be prioritized, Path B is feasible. If research capacity is limited or competing with other priorities, attempting Path B and launching late with an incomplete corpus (e.g., only Domain 38 completed) is worse than Path A. Do not start Path B unless you are confident all three domains can be completed before distribution begins.
+**The one decision rule to hold onto**: If Path B takes longer than 21 days — which is likely under realistic session availability — the May 30 DOJ consent decree window will be unactionable for election-protection organizations. If that deadline is important to you, do not choose Path B.
 
 ---
 
-## 6. Election Timeline Reference
+## 6. Explicit Tradeoffs
 
-The advocacy window calendar from Domain 37, Section 6 is reproduced here for reference in this decision:
+### Path A
 
-| Date | Advocacy Window | Relevance to Distribution Decision |
-|------|----------------|-------------------------------------|
-| **May 30, 2026** | DOJ consent decrees finalized or blocked | First window for legal challenge and public pressure on voter roll maintenance. Requires Domain 37 in election-protection organizational hands 2+ weeks prior for meaningful preparation. Path A+37: domain reaches orgs at launch. Path A: domain in post-launch queue, may arrive with minimal lead time. Path B: domain may not reach orgs before this deadline. |
-| **June 30, 2026** | Emergency EO routing window | Administrative law challenge opportunity for emergency election security executive orders. Organizations need to brief legal teams before this date. Path A+37: 8 weeks lead time from May 1 launch. Path B: 0–2 weeks lead time if launched in early June. |
-| **August 7, 2026** | NVRA 90-day quiet period begins | Prohibits systematic voter removals within 90 days of November 4. Emergency injunctions must be pre-filed. 6–8 week institutional adoption cycle means content must arrive by late June for operational use by August 7. Path A and A+37: full cycle available. Path B: compressed to 1–2 weeks at best. |
-| **September 2026** | Pre-election litigation positioning | Section 3 disqualifications, preliminary injunctions, voter roll restoration litigation. Path A and A+37 allow organizations to begin case development 3–4 months in advance. Path B reduces this window by 6 weeks. |
-| **October 2026** | Poll observer deployment and monitoring | Legal hotline readiness, real-time election monitoring infrastructure. All paths deliver Domain 37 well before this window unless Path B extends well past June. |
-| **November 4, 2026** | Election Day | The fixed endpoint that makes all earlier windows structurally significant. |
+**Gains**: Maximum simplicity. A single send event. Domain 37 reaches every Tier 1 contact on Day 0. No coordination overhead. Strong credibility from launch day — the full 35-domain framework lands as an integrated, comprehensive document.
+
+**Trades away**: Election-protection specialist conversion. Domain 37 embedded in a 35-domain general send is less likely to be immediately routed to the right litigation team at Democracy Docket or the ACLU Voting Rights Project than a standalone targeted send with a subject line keyed to the organization's active docket.
+
+**Leaves room for**: Full Phase 2 expansion (Domains 38–40) added incrementally as rolling updates post-launch. The rolling update model is the natural ongoing cadence for this framework; Path A launches that model immediately.
+
+### Path A+37 Hybrid
+
+**Gains**: Both things. General framework credibility established at launch; election-protection specialist access with targeted Domain 37 framing and full lead time on all five advocacy windows. The "best of both?" framing in the task brief is accurate — it captures the election urgency without the Phase 2 delay, and it captures the general launch without sacrificing election-protection targeting.
+
+**Trades away**: The cleanness of a single-wave launch. Two contact lists, two send events, three contacts receiving two emails. The coordination overhead is real but small — the DOMAIN_37_SEQUENCING_PLAN.md does the strategic pre-work; execution is mechanical.
+
+**The asymmetric risk**: If you choose Path A+37 and it works suboptimally, the worst case is that election-protection organizations receive two emails from the same researcher in three days (mild annoyance, easily addressed with the "targeted follow-up" framing already written into Phase 1b templates). If you choose Path A and Domain 37's election-protection value is diluted, you have lost the May 30 and June 30 windows.
+
+### Path B
+
+**Gains**: A more complete document at launch. Post-May 1 outcomes integrated. FISA final outcome documented. Iran WPR scenario filled. Circuit vacancy wave current. For the specific subset of contacts who will scrutinize these gaps, Path B is more defensible.
+
+**Trades away**: All five Domain 37 advocacy windows are compressed or lost. The May 30 window almost certainly closes before Path B's realistic launch date. August 7 goes from 10+ weeks of margin to 3–6 weeks (marginal). Spring legislative session windows close.
+
+**Risk of delivery delay in the critical 2026 election window**: This is not a marginal risk — it is the central structural cost of Path B. The 2026 midterm calendar is fixed. The NVRA quiet period begins August 7 whether the framework launches in May or July. Every week of Path B research is a week during which election-protection organizations are making strategic decisions without Domain 37's five-mechanism federal interference analysis.
+
+**The Path B case is strongest if**: Your primary distribution audience is not election-protection organizations; you have a specific publication or institutional anchor in June that makes that timing superior; or your Tier 1 contacts are specifically the category of scholars and staffers who will probe post-May 1 currency gaps as a credibility test.
 
 ---
 
-## 7. Recommended Decision: Path A+37 Hybrid
+## 7. Election Timeline Reference (Fixed Dates)
 
-The recommendation is Path A+37 Hybrid for the following reasons:
+| Date | Advocacy Window | Path A | Path A+37 | Path B (realistic) |
+|------|----------------|--------|-----------|-------------------|
+| **May 30, 2026** | DOJ consent decrees — voter roll challenge window | 29 days lead time | 27–28 days lead time | 1–15 days (marginal to zero) |
+| **June 30, 2026** | Emergency EO routing window | 60 days lead time | 58–60 days lead time | 32–38 days |
+| **August 7, 2026** | NVRA quiet period begins — systematic removal ban | 10+ weeks lead time | 10+ weeks lead time | 6 weeks (borderline) |
+| **September 2026** | Pre-election litigation positioning | 4+ months lead time | 4+ months lead time | 3–3.5 months |
+| **October 2026** | Poll observer deployment | All paths adequate | All paths adequate | All paths adequate |
+| **November 4, 2026** | General election | Fixed endpoint | Fixed endpoint | Fixed endpoint |
 
-**It costs almost nothing additional over Path A.** The only incremental work is one Gist creation and one email send batch (7 contacts, pre-written template). The total additional execution burden is 45–60 minutes. The strategic benefit — Domain 37 in election-protection organizational hands before the May 30 advocacy window — is substantial relative to that marginal cost.
-
-**The election calendar makes the Hybrid's election-protection track the highest-leverage deployment of existing research.** Domain 37 is the most time-sensitive document in the corpus. Its primary audience (Democracy Docket, ACLU Voting Rights Project, Campaign Legal Center, state AGs in competitive states) has the most to gain from receiving it early. The Hybrid captures this without sacrificing the general launch.
-
-**Path B's comprehensiveness advantage does not outweigh its timing cost in the 2026 context.** Domains 38–40 are genuine research priorities — Intelligence Oversight in particular is an active crisis domain with strong bipartisan coalition potential. But they do not affect the May 30 or August 7 election-protection deadlines. Their addition in a post-launch rolling update (6–8 weeks after Phase 1 launch) is strategically equivalent to their presence at launch, except that the rolling update model also captures the election protection window.
-
-**Path B is best executed as rolling updates, not as a launch prerequisite.** The measurement framework's design supports monthly iteration. Domains 38, 39, and 40 are most efficiently delivered to contacts who have already received and engaged with the 22-domain framework — as targeted follow-ups to organizations whose interests align with each domain's specific scope. That delivery mechanism is only available if the 22-domain launch has already occurred.
-
-If the user's strategic context contains factors not visible in the research record — a planned public announcement, a specific June publication partnership, a decision to prioritize surveillance reform audiences over election-protection audiences — Path B may be the appropriate choice. But on the available evidence, Path A+37 Hybrid provides the best combination of launch speed, election-protection coverage, and platform for subsequent expansion.
+**On the NVRA quiet period specifically**: Under 52 U.S.C. § 20507(c)(2), systematic voter roll removals are prohibited within 90 days of a federal election. Counting back 90 days from November 4, 2026 yields August 7. Emergency injunction templates for SAVE-based systematic removals must be pre-filed and coordinated across Democracy Docket, Campaign Legal Center, and ACLU Voting Rights Project before this date. The 6–8 week institutional adoption cycle means Domain 37 must arrive by approximately June 22 for organizations to have meaningful operational use by August 7. Path A and A+37 deliver with 10+ weeks of margin. Path B (realistic, domain updates only) delivers with approximately 6 weeks — workable but tight. Path B with new domain research delivers with 4 weeks or less.
 
 ---
 
-*Sources: PHASE_1_EXECUTION_READINESS.md (April 30, 2026 audit, verdict: APPROVED FOR PHASE 1 LAUNCH); DOMAIN_37_SEQUENCING_PLAN.md (Session 522, April 27); ITEM10_DOMAIN37_CANDIDATES.md (Session ITEM10, April 28); ITEM12_DOMAIN38_CANDIDATES.md (Session ITEM12, April 29); ITEM17_DOMAIN39_CANDIDATES.md (Session ITEM17, April 29); ITEM26_DOMAIN40_CANDIDATES.md (Session ITEM26, April 30); Domain 37 advocacy window calendar from domains/domain-37-federal-executive-interference-2026-midterms.md, Section 6.*
+## 8. Immediate Action
 
-*Prepared by: General Research Agent, May 1, 2026.*
+Upon path selection, execution begins immediately from the fully prepared state.
+
+**User-specific fields required (apply to all paths)**:
+- `{{YOUR_NAME}}` — name for email sign-off
+- `{{YOUR_CONTACT_INFO}}` — email address, website, or phone
+- For each Batch 1 email: one recent publication from the contact's institution (5–10 minutes research per contact before sending)
+
+**Everything else is already prepared**:
+- All 6 canonical Gists are live (Session 678)
+- All 5 Batch 1 email templates are ready with `{{placeholder}}` fields
+- All URL replacements are mapped in `DISTRIBUTION_GIST_URLS.md`
+- Batch 1 contacts position-verified April 29, 2026
+- Domain 37 contact list (12 election protection organizations) in `DOMAIN_37_SEQUENCING_PLAN.md`
+- Path-specific email paragraph blocks (`[PATH A]`, `[PATH A+37]`, `[PATH B]`) pre-written in `PHASE_1_EMAIL_TEMPLATES.md`
+
+---
+
+*Sources consulted: execution-plans/EXECUTION_PLAN_PATH_A.md, EXECUTION_PLAN_PATH_A_PLUS_37.md, EXECUTION_PLAN_PATH_B.md, EXECUTION_PATHS_DECISION_FRAMEWORK.md (all Session 686, April 30, 2026); EXPLORATION_QUEUE.md (Session 513 and 531 updates); PROJECTS.md (Session 686–690 state); DOMAIN_37_SEQUENCING_PLAN.md; PHASE_1_EXECUTION_READINESS.md. External: Democracy Docket case tracker (democracydocket.com), Campaign Legal Center SAVE Act litigation (campaignlegal.org), Protect The Vote 2026 planning timeline (protectthevote2026.org), 52 U.S.C. § 20507(c)(2) NVRA quiet period text, Washington Spectator "Emergency Planning" (washingtonspectator.org). Prepared Session 715, May 1, 2026.*
