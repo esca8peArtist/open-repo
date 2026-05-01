@@ -125,18 +125,46 @@ Agent discovered that comprehensive impact measurement framework already exists 
 
 **Next Phase**: When Tier 1 launch proceeds, use this framework to measure Stage 2 engagement at 90-day mark as prerequisite for Tier 2 launch go/no-go decision.
 
+### ✅ Mfg-farm Agent Completed (Agent a7cbbdbf8bc1d47b6)
+
+**Status**: DELIVERED — Two files committed to master
+
+**Deliverables**:
+1. **scaling-production-research.md** (3,500+ words)
+   - 6-section analysis: batch optimization, turnaround modeling, supplier sourcing, QC/failure prevention, cost structure, automation ROI
+   - Critical finding: snap arm orientation (Z-axis cantilever risk) is the #1 undocumented risk — must validate in test print before any batch investment
+   - Correction: FDM_TOLERANCE in CAD is 0.15mm (not 0.05mm as cited in prior brief) — within achievable FDM range
+   - FDM dimensional accuracy documented: ±0.2–0.5mm X/Y; ±0.1–0.3mm Z (industry 2026 data)
+   - Snap arm 0.5mm clearance recommendation from Protolabs for FDM snap-fits vs. 0.15mm used — flag for test print validation
+   - Shipping: USPS Ground Advantage 8% surcharge confirmed Apr 26 2026 – Jan 17 2027
+   - Automated tier analysis: Pirate Ship + Bambu AI detection (free, immediate ROI); postal scale ($25, 2-month payback); SimplyPrint at 3+ printers (~$45/month)
+
+2. **scaling-cost-model.csv** (multi-tier spreadsheet)
+   - Rows: 1, 5, 20, 50, 100 units/week
+   - Columns: Material, Labor, Packaging, Machine depreciation, Electricity, Platform fees, Shipping, Scrap allowance, Total COGS, Revenue, Gross margin
+   - Key data: 44% margin at 1/week → 70% at 20/week → 70% at 100/week (compression from 2nd printer + contractor)
+   - Sensitivity scenarios: conservative (single units, 46% margin), realistic (bundles, 70%), optimistic (PETG premium, 71%), tariff shock ($22/kg filament, 67%), shipping surcharge extension
+   - All decision thresholds with capital requirements, payback periods, trigger conditions
+
+**Key research findings**:
+- Snap arm cantilever orientation: if printed in Z, elongation-at-break drops 30–50% (Protolabs/Hubs 2026)
+- FDM tolerance floor: ±0.2mm X/Y for well-calibrated desktop FDM; 0.15mm FDM_TOLERANCE in CAD is achievable but right at the tolerance floor
+- Filament pricing May 2026: eSUN PLA+ $15–18/kg retail; $11–13/kg at 10kg bulk; $10.49/kg at 50kg direct
+- 41.1% failure rate in open FDM environments (ScienceDirect) vs. 3–7% expected for controlled production — the gap is locked profiles + enclosed printer + maintenance discipline
+- Second printer payback: 2–3 weeks at full utilization (fastest ROI in the operation)
+- Monthly net at 20/week: ~$1,650 gross profit (69.9% margin); $950 startup capital recovered in 3 weeks
+
 **Remaining Agents**:
 - 🟡 Stockbot Agent (a088c4111e2f88db7) — Gate 1 fill rate modeling
-- 🟡 Mfg-farm Agent (a7cbbdbf8bc1d47b6) — Scaling & automation research
 
 **Exploration Queue Status**: 
 - ✅ Items 22-24 complete (Sessions 715-716)
 - ✅ resistance-research Item 5 complete (Session 717)
 - ✅ cybersecurity-hardening Item 6 complete (Session 717)
+- ✅ mfg-farm Item 8 complete (Session 717)
 - 🟡 Item 7 (stockbot) in active research
-- 🟡 Item 8 (mfg-farm) in active research
-- **Remaining**: 0 unstarted items
-- **Estimated total completion**: ~1 hour from now
+- **Remaining**: 1 item (stockbot)
+- **Estimated total completion**: ~30 min
 
 ---
 

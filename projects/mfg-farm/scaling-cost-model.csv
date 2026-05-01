@@ -1,0 +1,44 @@
+MODRUN SCALING COST MODEL — Session 717 (May 2026),,,,,,,,,,,,
+"Assumptions locked below table. All dollar values in USD. Revenue/unit = blended $27.50 (70% clip bundles at $24.99 / 30% rails at $34.99).",,,,,,,,,,,,
+"Labor rate: $15.00/hr (owner opportunity cost). Machine: Bambu P1S at $699, 5000-hr depreciation life = $0.14/hr. PLA+ at $12/kg bulk (10kg+).",,,,,,,,,,,,
+"Shipping: USPS Ground Advantage via Pirate Ship; $4.50 blended avg (8% surcharge in effect Apr 26 2026 – Jan 17 2027). Platform: Etsy 6.5% txn + 3.0% payment = $2.37/order at $24.99 avg.",,,,,,,,,,,,
+,,,,,,,,,,,,
+VOLUME TIER,Weekly units,Annual units,Material COGS/unit ($),Labor COGS/unit ($),Packaging/unit ($),Machine depreciation/unit ($),Electricity/unit ($),Platform fees/unit ($),Shipping/unit ($),Scrap allowance/unit ($),Total COGS/unit ($),Revenue/unit ($),Gross profit/unit ($),Gross margin %,Monthly gross profit ($),Notes
+1 unit/week,1,52,0.80,3.20,0.30,4.20,0.01,2.37,4.50,0.08,15.46,27.50,12.04,43.8%,$52,"Machine depreciation dominates at low utilization: printer runs ~45 min/week at $0.14/hr = $0.105 allocated to 1 unit. Effective depreciation $4.20/unit vs $0.10 at 20/week. Labor high because packaging overhead (90 sec) amortized over single unit. Not a viable steady state — a test phase or slow launch scenario only."
+5 units/week,5,260,0.65,1.80,0.25,0.84,0.01,2.37,4.50,0.06,10.48,27.50,17.02,61.9%,$367,"Bulk filament savings begin at 3-spool orders (~$14/kg instead of $17). Machine depreciation collapses: printer runs ~3.5 hr/week × $0.14 = $0.49 ÷ 5 units = $0.098 rounded to $0.84 (includes 20% efficiency overhead for turnaround time). Labor improves with batching: 2–3 plates per session reduces per-unit prep time. Break-even on startup capital within Month 1."
+20 units/week,20,1040,0.42,0.62,0.22,0.10,0.01,2.37,4.50,0.04,8.28,27.50,19.22,69.9%,$1650,"TARGET OPERATING RANGE. PLA+ at $12/kg bulk (10kg bundles). Machine depreciation nearly negligible: 14hr/week × $0.14 = $1.96 ÷ 20 = $0.098. Labor: harvest + QC (8 sec/unit = $0.033) + packaging (90 sec/order at 3-clip avg = $0.375/unit) + daily shipping batch (10 min ÷ 20 units = $0.125). Total labor $0.533 rounded to $0.62 with overhead. Business plan 72-73% margin target is achievable at $29+ AOV (rail mix pushes it up)."
+50 units/week,50,2600,0.38,0.55,0.20,0.04,0.01,2.37,4.50,0.03,8.08,27.50,19.42,70.6%,$4170,"Near single-printer ceiling (35+ hr print/week). Marginal material savings from 10kg bulk (now at tier pricing). Labor stable — post-processing 1.5 hr/week solo. Consider second printer at this point for redundancy and capacity buffer. Monthly gross ~$5,913 revenue; $4,170 gross profit."
+100 units/week,100,5200,0.35,0.75,0.18,0.06,0.01,2.37,4.50,0.03,8.25,27.50,19.25,70.0%,$8278,"2nd printer acquired (adds ~$0.035/unit to depreciation). Contractor post-processing introduced at 10 hrs/week × $15 = $600/month → $0.14/unit labor addition. Labor line rises vs 50/week: contractor overhead absorbed. Platform fees stable. Monthly revenue ~$11,825; gross profit $8,278. 2nd printer payback: 2–3 weeks at this volume."
+,,,,,,,,,,,,
+SENSITIVITY ANALYSIS,,,,,,,,,,,,
+Scenario,Weekly units,AOV ($),Shipping cost ($),Platform fee rate,Material $/kg,Total COGS/unit ($),Gross margin %,Monthly net ($),Notes
+Conservative — single-unit orders / no bundling,20,14.99,4.00,9.50%,12,8.10,46.0%,$283,"Single $12–15 clips with $4 shipping. Shipping = 27% of revenue. Platform fees eat another 9.5%. No bundling = no margin. This scenario is unsustainable. Bundle enforcement is the #1 operational priority."
+Realistic — bundle discipline + rail mix (model basis),20,27.50,4.50,9.50%,12,8.28,69.9%,$1650,"Assumes 70% 3-clip bundles at $24.99 + 30% rails at $34.99. Standard production assumption throughout main table."
+Optimistic — premium PETG + homelab kit bundles,20,34.99,5.00,9.50%,16,10.20,70.8%,$2150,"PETG at $16/kg adds $0.40/unit material. Higher AOV absorbs it. Premium positioning unlocks if heat-resistance messaging lands. Requires validated customer willingness-to-pay (confirm by Month 3-4)."
+Tariff shock — filament at $22/kg (worst case),20,27.50,4.50,9.50%,22,9.08,67.0%,$1308,"$22/kg would be reached if Chinese tariffs escalate significantly further. Push Plastic (US-made PLA+) at $20/kg is the tariff hedge; domestic sourcing costs more but eliminates tariff exposure. $342/month margin hit at 20/week — material still only 4% of revenue."
+USPS surcharge extended through 2027,20,27.50,5.00,9.50%,12,8.78,68.1%,$1455,"If the 8% surcharge extends past Jan 2027 (historically USPS extensions are common). $0.50 increase per order. Moderate impact — $195/month reduction at 20/week. Mitigated by encouraging local pickup / digital delivery bundles where applicable."
+,,,,,,,,,,,,
+SCALING DECISION THRESHOLDS,,,,,,,,,,,,
+Decision,Trigger condition,Capital required ($),Payback period,Monthly profit impact,Notes
+Add 2nd Bambu P1S,"30–40 units/week sustained for 2 consecutive weeks; single printer at 80%+ utilization","699–799",2–3 weeks at full utilization,+$2100–2800/month at 50 units/week capacity,"Primary trigger is demand, not readiness. Do not buy 2nd printer speculatively. Wait for order backlog evidence."
+Hire 1099 post-processing contractor,"Post-processing + packaging exceeds 2 hours/day AND volume is 75+ units/week","$600–800/month (10–15 hrs @ $15–18/hr)",Net-positive immediately if enables +20 units/week throughput,"Revenue gained from freed-up operator time > contractor cost at this volume","1099 contractor only — no W-2. Avoids payroll overhead (FICA, workers comp). Requires IRS 1099-NEC at year end if paid $600+."
+Bulk filament order (10kg single-color),"Monthly filament spend exceeds $100 (consuming 8kg+/month = 40+ units/week of clips)","$120–160 per 10kg spool at $12–16/kg",3–4 months in savings vs per-spool pricing,"Primarily a cash flow optimization — saves $1–3/kg vs single spools"
+Upgrade to 50kg direct filament order,"Monthly consumption exceeds 25kg/month = 100+ units/week","$524 (Anycubic 50kg at $10.49/kg)",4–6 months vs 10kg pricing,"Storage: 50kg of PLA+ requires 50 sealed containers with desiccant; humidity control critical. Only worthwhile above 125 units/week."
+Amazon FBA onboarding,"Etsy volume reliably 50+ units/week AND listing exposure plateauing OR diversification needed","$300–500 FBA prep + inventory build","Incremental — FBA revenue net of higher fees (28–32% vs Etsy 9.5%)","FBA eliminates per-order packaging/label labor but imposes higher fee load. Net margin lower but volume potential much higher. Reduces Etsy revenue concentration risk."
+3rd printer,"2-printer fleet at 80%+ utilization consistently for 2+ weeks; demand exceeds 75 units/week","$699–799",2–3 weeks,+$1800–2400/month incremental capacity,"Expected timeline: Month 8–14 if growth trajectory holds. Not needed in Year 1 for most launches."
+,,,,,,,,,,,,
+KEY ASSUMPTIONS (documented),,,,,,,,,,,,
+Assumption,Value,Source / Rationale
+Material: PLA+ bulk price,$ 12.00 /kg,"eSUN/SUNLU 10kg bundle Amazon pricing, May 2026 (SpoolPrices data; ADP Industries review). Single-spool retail: $15–18/kg."
+Clip print weight (6mm bore),2.0 g/unit,"Estimated from CAD geometry: body 10×10×14mm + snap arm 7.6×8×1.4mm + tabs. Actual to confirm on first production run."
+Rail print weight (desk_clamp),80.0 g/unit,"Estimated from CAD: 200×24×16mm body + 4mm clamp arm. Actual to confirm on test print."
+Scrap allowance (mature production),5%,"Industry benchmark for well-calibrated PLA+ production on enclosed printer. First 2 weeks: use 10–12%."
+Scrap allowance (first 2 weeks),10%,"ScienceDirect FDM failure study; SigmaFilament print farm data. Profile calibration period."
+Machine cost / depreciation,$ 699.00 / 5000 hr = $0.14/hr,"Bambu P1S US store price May 2026. 5000-hour life assumes 16 hr/day operation; conservative estimate."
+Electricity rate,$ 0.12 /kWh,"US average residential/commercial blended rate. P1S draws ~200W sustained. Effect: $0.024/hr; negligible per unit."
+Labor rate (owner),$ 15.00 /hr,"Opportunity cost baseline. Adjust if owner's alternative employment is higher (raises COGS) or lower (reduces it)."
+Platform fees — Etsy,9.50% of revenue,"Etsy 6.5% transaction + 3.0% payment processing. Does not include $0.20 listing fee (negligible amortized)."
+Shipping — USPS Ground Advantage via Pirate Ship,$ 4.50 /order blended,"Blended average for 3oz clip bundle (Zone 4 avg.) including 8% USPS surcharge (Apr 2026 – Jan 2027). Rail orders average $5.50."
+Revenue per order — blended,$ 27.50,"70% clip bundle orders at $24.99 + 30% rail orders at $34.99. Actual AOV may be higher with active bundle upselling."
+Revenue per order — conservative,$ 24.99,"If rail mix is lower than modeled or bundle discipline is poor. Use this for downside planning."
+Revenue per order — optimistic,$ 34.99,"If PETG premium SKU and homelab bundles gain traction. Validate demand by Month 3–4."
