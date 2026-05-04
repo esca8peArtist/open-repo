@@ -1,3 +1,29 @@
+## Since Last Check-in (Session tonight — 2026-05-04 UTC)
+
+### Stockbot: 2-Session Jetson Deploy + Position Closures
+
+**Status**: COMPLETE — architecture reduced, Jetson stack healthy, 19 positions staged for close
+
+**What happened tonight**:
+
+1. **Fix 1 — Session seeding**: `_seed_sessions_from_json()` added to `src/api/dashboard_api.py`. When the DB has no active runs, it auto-seeds from `active-sessions.json`. Eliminates blank-slate restart failures.
+
+2. **Fix 2 — Readiness endpoint**: `/api/health` now returns session count. New `/api/ready` endpoint returns 503 when sessions=0, enabling clean health checks and deploy gates.
+
+3. **Architecture reduction**: Dropped from 67 sessions to 2. Running sessions: AAPL lgbm_ho + AAPL ridge_wf on Jetson. All other sessions decommissioned.
+
+4. **Docker update**: `docker-compose.jetson.yml` updated with `active-sessions.json` volume mount. Stack confirmed healthy — `/api/ready` returns `{"status":"ready","sessions":2}`.
+
+5. **19 positions closed (execute May 5 13:30 UTC open)**: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL.
+
+6. **AAPL position held**: 108 shares, +$924 unrealized — stays open.
+
+7. **Usage**: ~82-84% of all-models budget. USAGE_PAUSE_OVERRIDE active. Reset at 00:00 UTC Tuesday.
+
+**Action required**: Confirm 19-position close fills after 13:30 UTC May 5 market open.
+
+---
+
 ## Since Last Check-in (Session 717 — 2026-05-01 00:51–[ongoing] UTC)
 
 ### Session 717 Parallel Orchestration — 3 Agents in Active Research

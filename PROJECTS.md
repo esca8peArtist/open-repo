@@ -288,12 +288,21 @@
 ### stockbot
 **Goal**: Build a full-stack model building and automated trading platform with both a web app and iOS app integration. The platform should allow creation, backtesting, and optimization of trading models across multiple model types (stock, options, rule-based, ensemble, multi-timeframe). The end goal is fully automated live trading — but only after models are rigorously vetted and confidence is established through paper trading. Model training and optimization costs must stay under $20/month. Once a model is sufficiently validated through paper trading performance, it graduates to live trading. Profit maximization is the north star, but capital preservation and risk management are non-negotiable constraints.
 **Priority**: High
-**Status**: Active — **Engine LIVE + April 29 market session SUCCESSFUL (49 fills confirmed, 5x Gate 1 pace)** — advancing toward Gate 1 checkpoint (May 12)
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
 **Current focus**:
+
+**Session tonight (2026-05-04) — 2-SESSION JETSON DEPLOY + POSITION CLOSURES**:
+- **Architecture change**: Reduced from 67 sessions to 2 (AAPL lgbm_ho + AAPL ridge_wf) running on Jetson
+- **Fix 1 deployed**: `_seed_sessions_from_json()` in `src/api/dashboard_api.py` — auto-seeds DB from `active-sessions.json` when no active runs exist
+- **Fix 2 deployed**: `/api/health` returns session count; `/api/ready` endpoint returns 503 when sessions=0
+- **Docker**: `docker-compose.jetson.yml` updated with `active-sessions.json` volume mount; `/api/ready` confirmed `{"status":"ready","sessions":2}`
+- **Position closures (May 5 13:30 UTC open)**: 19 positions closed — INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL
+- **AAPL position held**: 108 shares, +$924 unrealized — remains open
+- **Next**: Confirm 19-position close fills at May 5 market open; monitor 2-session engine health
 
 **Session 714 (2026-05-01 01:00–01:30 UTC) — GATE 1 PERFORMANCE MONITORING + CRITICAL BUG FIX**:
 - **Engine Health** ✅: PID 41237, all 67 stacker sessions loaded and running since 2026-05-01 00:26 UTC
@@ -370,7 +379,7 @@
 - **Session 521 integration**: All 11 sessions wired into database model_runs table. `/projects/stockbot/active-sessions.json` updated. Created 107 parametrized integration tests — all pass. Full test suite: 140 tests, 0 failures.
 - **Two options to reach Gate 1**: (A) scale to ~40 tickers (pipeline ready, each trains in ~90s); (B) reduce threshold multiplier (requires retrain + revalidation).
 - See `projects/stockbot/may-12-feasibility-checkpoint.md` for full analysis.
-- **Next step (user action)**: Restart engine before 2026-04-28 09:30 ET. Command: `.venv/bin/python scripts/run_live_trading.py` (from projects/stockbot)
+- **Engine restart block RESOLVED**: Jetson 2-session stack confirmed running as of 2026-05-04 session
 
 **Paper Trading Status (Session 519 — 2026-04-27 07:11 UTC — Day 2)**:
 - Paper trading started: 2026-04-26

@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-01T00:51:23Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-04T21:11:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 3.0% (271,516 tokens) | All-models 79.8% | Reset in 95h | check: claude.ai → Settings → Usage & billing
+🟡 Usage: Sonnet 3.7% (332,412 tokens) | All-models 81.2% | Reset in 3h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -32,9 +32,9 @@
 **Focus**: Session 499 (2026-04-27 evening): **TIER 2 MESSAGING TEMPLATES COMPLETE**. Agent-created:
 
 ### stockbot
-**Status**: Active — **Engine LIVE + April 29 market session SUCCESSFUL (49 fills confirmed, 5x Gate 1 pace)** — advancing toward Gate 1 checkpoint (May 12)
-**Focus**: **Current focus**:
-**Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
+**Status**: Active — **2-session Jetson-only architecture deployed** (AAPL lgbm_ho + AAPL ridge_wf). Reduced from 67 sessions. AAPL position (108 shares, +$924 unrealized) stays open. 19 Alpaca positions close at May 5 13:30 UTC open (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL).
+**Focus**: Fix 1: `_seed_sessions_from_json()` deployed in `src/api/dashboard_api.py` — auto-seeds DB from `active-sessions.json` when no active runs. Fix 2: `/api/health` returns session count; `/api/ready` returns 503 when sessions=0. `docker-compose.jetson.yml` updated with `active-sessions.json` volume mount. Jetson stack confirmed healthy: `/api/ready` → `{"status":"ready","sessions":2}`.
+**Blocked**: None — monitor May 5 13:30 UTC for 19-position close confirmation
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
