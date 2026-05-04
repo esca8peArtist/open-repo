@@ -1,8 +1,8 @@
 ---
 title: "Phase 2 Production Timeline & Dependency Map"
-date: 2026-04-30
-status: planning-complete
-context: Exploration Queue Item 35 — critical path, dependencies, realistic May/June 2026 timeline
+date: 2026-05-04
+status: production-ready
+context: Exploration Queue Item — critical path, dependencies, realistic May/June 2026 timeline
 references:
   - LIFESTYLE_PHOTOGRAPHY_STRATEGY.md
   - PHOTO_SHOOT_SCHEDULE_AND_PROPS.md
@@ -14,325 +14,210 @@ references:
 ---
 
 # Phase 2 Production Timeline & Dependency Map
-## Critical Path, Sequencing Logic, and May 30 Launch Readiness
 
-**Purpose**: Phase 2 production documents are complete across all four workstreams (lifestyle photography strategy, Canva zone card design guide, email strategy, bundle strategy). What was missing is a single document that maps the execution sequence, names every dependency, quantifies realistic time investment, and surfaces the decisions the user must confirm today. This document answers: in what order does everything happen, what blocks what, and what is the honest worst-case launch date if any component slips?
+**Baseline assumption**: Phase 1 Etsy store launches May 2026. Phase 2 go-live target: May 30, 2026. Worst-case recovery: June 15, 2026.
 
----
-
-## Section 1: Critical Path Analysis
-
-The critical path is the longest chain of dependent tasks. Any delay on the critical path delays the launch date. Tasks off the critical path have slack — they can slip without moving the May 30 launch date, as long as they resolve before their downstream dependent task begins.
-
-### Critical Path (Must Not Slip)
-
-**Node 1 — Germination tray start: April 30**
-
-This is the single action that locks or unlocks the May 10 shoot date. Sprouts for Products 5 (Zone-by-Zone Seed Starting Calendar) and 7 (Seed Saving Field Manual) need 5–10 days of germination time. A germination tray started April 30 produces 5–7-day-old sprouts by May 5–7, and 10–13-day-old sprouts by May 10–13 — both within the usable photogenic window. A tray started May 1 is still workable for May 10 (9-day sprouts). A tray started May 3 or later raises the risk of shoots being too young or too leggy by the shoot date. This is a 15-minute task. It has no upstream dependencies. The only risk is not doing it today.
-
-**Node 2 — Props sourcing and assembly: May 7–9**
-
-The props list is documented in full in PHOTO_SHOOT_SCHEDULE_AND_PROPS.md. Sourcing is not a single-trip purchase — it is a 2–3 day window to gather items that may come from multiple places (garden shed, grocery store, hardware store, print shop). The three items that require lead time are (1) printed PDF pages for the shoot (color printing at a library or print shop — 24-hour minimum), (2) seed envelopes if not already on hand, and (3) any ceramic or terracotta pots that need to be sourced rather than grabbed from existing stock. Props assembly completed by end of May 9 means Day 1 setup on May 10 begins without scramble.
-
-Budget: $40–80 for props that are not already on hand. The CLUSTER_C_PROPS_ACQUISITION_PLAN.md documents specific sourcing options for the Cluster C kitchen props.
-
-**Node 3 — Photo shoot: May 10–11**
-
-Two-day schedule per PHOTO_SHOOT_SCHEDULE_AND_PROPS.md. Day 1 (May 10): Cluster A (Products 1–8, 16 shots, 4.5–5 hours) + Cluster B (Products 9–12, 8 shots, 2 hours). Day 2 (May 11): Cluster C (Products 13–15, 6 shots, 1.5–2 hours). Total yield: 30 RAW images. Shoot day is entirely dependent on Nodes 1 and 2 — germination tray sprouts present and props assembled. Location confirmation and crew coordination (below) are parallel pre-conditions, not serial ones.
-
-Critical shoot-day constraint: Cluster A requires morning window light (9am–2pm). The two-day format produces better Cluster A images than a single-day marathon. If the shoot is compressed to one day, Cluster C quality degrades because it happens in afternoon light or artificial light rather than morning light. For product images that will live on Etsy listings for 12–18 months, the two-day format is worth the additional planning.
-
-**Node 4 — Image processing: May 12–14**
-
-Three days of processing follow the shoot. Day 1 (May 12): culling — editing 80–100 RAW captures down to 30 selects. Day 2–3 (May 13–14): retouching and color grading — apply Lightroom presets from LIFESTYLE_PHOTOGRAPHY_STRATEGY.md Section 2, batch-process by cluster, then generate 60 variant crops at different aspect ratios for social content (1:1 Etsy, 4:5 Instagram, 16:9 Pinterest/Story). Deliverable: 30 final Etsy-ready images + 60 social variant crops, all exported at 2400px JPEG 90%, saved to `/projects/seedwarden/marketing/lifestyle-photos/etsy-ready/`.
-
-**Node 5 — Photo funnel live: May 15**
-
-The email funnel does not require photos to launch (PHASE_2_EMAIL_STRATEGY.md confirms this explicitly — zone cards, not photos, are the functional lead magnet). However, May 15 is when photos become available for email template enrichment and social posting. The photo funnel going live on May 15 means the Week 3–6 newsletter releases can use lifestyle images rather than mockups, which increases click-through rate in those sends. This node is a dependency for email automation setup being visually complete, not for it being functionally live.
-
-**Node 6 — Live launch: May 30**
-
-All four Phase 2 workstreams converge here: (a) Canva zone cards complete and uploaded to Kit delivery, (b) email automation live and tested, (c) social content queue scheduled, (d) Etsy lifestyle images uploaded to all 21 listings. Launch is coordinated: Etsy listing updates first (no announcement), then email campaign trigger, then social posting staggered by 2–4 hours to prevent reach overlap on the same platform within the same day.
-
-### Parallel Pre-Conditions (Not on the Critical Path, But Must Resolve Before Node 3)
-
-**Location confirmation** needs to happen by April 30 — same day as germination. The shoot location (window light source for Cluster A, window sill or balcony for Cluster B, kitchen counter for Cluster C) must be confirmed as accessible and unobstructed for both May 10 and May 11 mornings. This is a 5-minute confirmation call or walk-through, not a booking process. It is listed as a separate node in the dependency graph because overlooking it has caused more last-minute shoot scrambles than any other single factor.
-
-**Crew coordination** for the May 10–11 shoot was noted as confirmed in the session 702 production log. The PHOTO_SHOOT_SCHEDULE_AND_PROPS.md assumes a 2–3 person team. If crew availability changes before May 10, the solo-with-tripod contingency extends the shoot timeline by approximately 20% (adding 45–60 minutes to Day 1 for self-timer repositioning) and requires bracketed composition changes — wider framing to allow crop adjustment rather than relying on a second person to hold or angle props.
+Phase 2 has four parallel workstreams — lifestyle photography, Canva zone card production, Kit email platform setup, and social content preparation — that all converge at a single launch event on May 30. This document maps the execution sequence, names every hard dependency, quantifies realistic time investment per workstream, and models the critical path recovery if any single component slips.
 
 ---
 
-## Section 2: Timeline Gantt Chart
+## Photo Shoot Logistics
 
-The following chart maps all 12 tasks across the April 30 – May 30 production window. Tasks on the critical path are marked [CP]. Tasks with float (slack) are marked [F x days] indicating how many days they can slip without affecting the May 30 launch.
+### Timing — May 10–11 Window
 
-```
-APRIL 30
-  [CP] Germination tray start ─────────────────────────── sprouts ready May 10
-  [F 0] Location confirmation ─ done today
-  [F 0] Crew coordination ─ confirmed (session 702)
+The photo shoot is scheduled as a two-day event: May 10 (Saturday) for Clusters A and B, May 11 (Sunday) for Cluster C. The two-day split is not preference — it is structural. Cluster A (seed and garden products, 8 products, 16 shots) requires morning window light between 9am and 2pm for consistent soft illumination. Compressing all three clusters into one day forces Cluster C into afternoon light or artificial light, which produces a visual inconsistency that is visible to buyers comparing listing images.
 
-MAY 1–6
-  [F 3] Props sourcing begins (ongoing as items identified)
+May was selected over June for one reason: germination timing. Two products in the catalog — the Zone-by-Zone Seed Starting Calendar and the Seed Saving Field Manual — are most effectively shot with live germination trays showing 7–13-day-old sprouts. A tray started April 30 produces shoot-ready sprouts by May 10. A June shoot date would require a second tray start in late May, adding a full month to the timeline with no benefit.
 
-MAY 7–9
-  [CP] Props sourcing & assembly ──────────── shoot-ready by May 9 EOD
-         └── print shop run by May 8 (24-hr turnaround for printed PDFs)
-         └── grocery/garden sourcing by May 9
+**If May 10–11 is unavailable**: The next workable window is May 17–18 (same structure). This pushes image processing to May 19–21, photo delivery to May 22, and the launch date from May 30 to June 6 — a 7-day slip with no compounding effect on revenue.
 
-MAY 10 (Saturday)
-  [CP] Photo shoot Day 1 ──────────────────── 9am–5pm
-         Session 1: Cluster A (9am–1:30pm, 16 shots)
-         Session 2: Cluster B (3pm–5pm, 8 shots)
+### Props List
 
-MAY 11 (Sunday)
-  [CP] Photo shoot Day 2 ──────────────────── morning
-         Session 3: Cluster C (9am–11am, 6 shots)
+Props are organized by the three shoot clusters. Most items are likely already on hand; sourcing should be completed by May 9.
 
-MAY 12
-  [CP] Image culling ──────────────────────── 80 RAW → 30 selects
+**Cluster A — Seeds and Garden (Products 1–8)**
+Seed envelopes (filled, closed), ceramic or terracotta pots (2–3 sizes), small trowel or hand rake, germination tray with 7–13-day sprouts, mason jar filled with saved seeds, printed color pages from 2–3 product PDFs, wooden surface or potting bench, linen fabric swatch for layering.
 
-MAY 13–14
-  [CP] Retouching + color grading ─────────── 30 finals + 60 social variants
+**Cluster B — Container and Urban Growing (Products 9–12)**
+Potted herbs (basil, mint, or rosemary in a 4–6 inch container), small raised bed or balcony railing as background, compact grow light (if available), second printed product page or tablet showing a PDF cover.
 
-MAY 15
-  [CP] Photo funnel live ─ images available for email templates + social queue
+**Cluster C — Food Preservation (Products 13–15)**
+Mason jars with visible contents (fermented vegetables, dried herbs, or preserved fruit), canning pot or large stockpot, dehydrator tray with dried items, whole peppers or garlic as accent items, wood cutting board, kitchen counter as base surface.
 
-MAY 15–25 (parallel workstream, [F 5 days])
-  [F 5] Email automation setup ────────────── Kit configured, sequences live, test sends complete
-         └── Subscriber segmentation rules
-         └── Welcome sequence + zone card delivery automation
-         └── Post-purchase sequence
-         └── Template design (can use Kit pre-built templates to save ~4 hrs)
-         └── Test sends (3 test subscriber accounts minimum)
+**Print shop run** — required by May 8: 3–5 pages of color-printed product content for props (the product pages appear in frame as physical objects, not as a tablet screen). 24-hour turnaround minimum from a print shop or library.
 
-MAY 15–30 (parallel workstream, [F 0 at May 30])
-  [CP after May 28] Canva zone card production ───────── 8 cards complete
-         └── Week 1 (May 15–17): Brand Kit setup + master template + Zones 5–6 (4 hrs)
-         └── Week 2 (May 18–24): Zones 3, 4, 7, 8 (4 hrs @ 60 min each)
-         └── Week 3 (May 25–29): Zones 9, 10 + full-set review + placeholder URL replacement (3 hrs)
-         └── Week 4 (May 30): Final export + Kit upload + delivery test (1 hr)
+**Props budget**: $40–80 for items not already on hand. CLUSTER_C_PROPS_ACQUISITION_PLAN.md documents specific sourcing options for Cluster C kitchen items.
 
-MAY 20–29 (parallel workstream, [F 1 day])
-  [F 1] Social content preparation ────────── posts scheduled for May 30+
-         └── 30 lifestyle images → select 10 best for launch week social
-         └── Write captions (5 Instagram, 3 Pinterest, 2 Facebook)
-         └── Schedule in Buffer/Later for May 30 + 3 days post-launch
+### Location Options
 
-MAY 30 — PHASE 2 LIVE LAUNCH
-  10:00am: Etsy lifestyle image upload (all 21 listings updated)
-  12:00pm: Email campaign trigger (Kit sends launch email to full list)
-  2:00pm–4:00pm: Social posts go live (staggered across platforms)
-```
+No external location booking is required. All three clusters can be executed in a standard apartment or house with the following:
+
+- Cluster A and B: east- or south-facing window with unobstructed morning light, May 10–11 between 9am and 1:30pm. A window that gets 3+ hours of direct or near-direct morning light is sufficient.
+- Cluster C: kitchen counter near any window. Afternoon light is acceptable for this cluster.
+
+**Outdoor option**: If an outdoor garden or balcony is available, Cluster A produces stronger images outside on an overcast day (overcast acts as a natural softbox). Direct sunlight creates harsh shadows and should be avoided for flat-lay shots.
+
+### Shots Needed
+
+Total: 30 RAW compositions, from which 30 final edited images are produced.
+
+- Day 1, Session 1 (9am–1:30pm): Cluster A, 16 shots — 8 flat-lay compositions and 8 contextual/in-use compositions for the 8 seed and garden products
+- Day 1, Session 2 (3pm–5pm): Cluster B, 8 shots — 4 flat-lay and 4 contextual for the 4 container and urban growing products
+- Day 2, Session 3 (9am–11am): Cluster C, 6 shots — 3 flat-lay and 3 contextual for the 3 food preservation products
+
+Each product needs two usable shots (Etsy slots 4 and 5). The flat-lay is shot directly overhead; the contextual shot shows the product in a use scenario (hands holding a page, guide open next to props, tablet propped on a surface).
 
 ---
 
-## Section 3: Dependency Graph
+## Canva Production Critical Path
 
-The following dependency map uses indentation to show which tasks unlock which downstream tasks. A task at any level cannot begin until all items at the level above it in its chain are complete.
+### Which PDFs Need Variants
 
-```
-CRITICAL PATH:
+The zone quick-start cards are the primary Canva deliverable for Phase 2. Eight cards are required — one per USDA hardiness zone (3 through 10). Each card is a single-page PDF designed in Canva and exported for delivery via Kit.
 
-germination tray start (Apr 30)
-  └── sprouts present (May 10)
-        └── photo shoot Day 1 (May 10)
-              ├── [also requires] props assembled (May 9)
-              ├── [also requires] location confirmed (Apr 30)
-              └── [also requires] crew confirmed (done)
-                    └── photo shoot Day 2 (May 11)
-                          └── image culling (May 12)
-                                └── retouching + color grading (May 13–14)
-                                      ├── photo funnel live (May 15)
-                                      │     └── email template enrichment (May 15+)
-                                      │
-                                      └── social content preparation (May 20–29)
-                                            └── social posts scheduled (May 29)
+Zones 5 and 6 are built first (Week 1, May 15–17) because they represent the largest US population concentration and establish the master template that all subsequent zones duplicate from. Zones 3, 4, 7, and 8 are built in Week 2 (May 18–24) via template duplication with zone-specific content substituted. Zones 9 and 10 are built last (May 25–27) as the lowest-traffic zones.
 
-PARALLEL PATH A (email automation — floats to May 25):
+The only other Canva work in Phase 2 is the email header image for the Kit landing page — one image, added after Session 1 photos are available, approximately 30 minutes of work.
 
-Kit account configuration (May 15)
-  └── subscriber segmentation rules (May 15–16)
-        └── automation sequences built (May 17–20)
-              └── template design (May 20–22)
-                    └── test sends (May 22–24)
-                          └── email automation live (May 25)
+### Upload Sequence
 
-PARALLEL PATH B (Canva zone cards — floats to May 28):
+1. Build Canva Brand Kit (Week 0 or May 15): Lock brand colors (Seedwarden palette) and fonts before building any card. This is a one-time setup that makes all future cards consistent without per-card design decisions.
+2. Build master template on Zone 5 card (May 15–16): Three-column layout, spotlight band, footer with URLs. This is the most time-intensive card — budget 3–4 hours including iteration.
+3. Duplicate master to Zone 6 (May 16–17): Substitute zone-specific content only. Verify color band. Export and test-open PDF.
+4. Duplicate to Zones 3, 4, 7, 8 (May 18–24): ~60–90 minutes each. Color band and city reference are the primary per-zone changes.
+5. Duplicate to Zones 9, 10 (May 25–27): Same process.
+6. Full-set review (May 27–28): Visual QA all 8 cards. Confirm placeholder text has been replaced (especially footer URLs — Etsy store link and Kit landing page URL must be live before export).
+7. Export all 8 as PDF Print quality and upload to Kit Content > Files (May 29). Log each download URL in WORKLOG.md immediately.
 
-Brand Kit setup (May 15, 30 min)
-  └── master template + Zones 5–6 (May 15–17)
-        └── Zones 3, 4, 7, 8 (May 18–24)
-              └── Zones 9, 10 (May 25–27)
-                    └── full-set review + URL replacement (May 27–29)
-                          └── final export + Kit upload + delivery test (May 29–30)
+### Pricing Tiers to Set in Kit
 
-CONVERGENCE AT LAUNCH:
+The zone cards are a free lead magnet — no pricing is set on the cards themselves. However, the Kit setup must configure the following correctly before launch:
 
-[email automation live] + [zone cards in Kit] + [social posts scheduled] + [Etsy images uploaded]
-  └── PHASE 2 LIVE LAUNCH (May 30)
-```
+- Email 5 of the welcome sequence includes coupon code SEEDWARDEN15 (15% off) — this code must be active in Etsy before the first subscriber reaches Day 10 of the welcome sequence. Create the coupon in Etsy Shop Manager before the Kit automation goes live.
+- Bundle pricing (from PHASE_2_BUNDLE_STRATEGY.md): Phase 2 introduces up to three new Etsy bundle listings. Bundle prices are set directly in Etsy, not in Kit. The email automation references bundle products by Etsy listing URL — confirm URLs before loading email copy into Kit.
 
 ---
 
-## Section 4: Slack and Risk Mitigation
+## Email Platform Setup
 
-### Risk 1 — Germination tray not started today
+### Kit Configuration Steps
 
-**Trigger condition**: User does not start the germination tray on April 30 or May 1.
+Kit (formerly ConvertKit) is the selected platform. Free tier supports up to 10,000 subscribers with full automation and conditional routing — no cost through Phase 3 scale.
 
-**Impact assessment**: A May 3 start gives 7-day sprouts by May 10 — technically in range but on the younger end of the photogenic window. A May 5 start gives 5-day sprouts by May 10, which are borderline for visual interest (seedlings are very small, difficult to compose around). A May 7 start requires pushing the shoot to May 17–18.
+**Step 1 — Account and sender authentication (30 min)**: Create account at kit.com. Set From name to "Seedwarden." Set From email to a Seedwarden-branded address. Add SPF and DKIM DNS records to the domain registrar. Without authentication, welcome emails land in spam at a high rate. If a custom domain email does not exist yet, use a Gmail address temporarily and migrate before the list reaches 500 subscribers.
 
-**Mitigation options**:
-- Option A: Start tray today (April 30) or May 1. Zero-cost fix.
-- Option B: Use grocery-store bean sprout or microgreen trays as a prop substitute for the germination scene. Quality degradation: 40% (the visual variety is narrower, and microgreens don't have the "germination in progress" look the guide references). Still usable for Etsy.
-- Option C: Use stock photography for the 2 products that feature sprouts specifically (Seed Starting Calendar, Seed Saving Field Manual). Full-quality alternative but loses the brand authenticity of real props.
+**Step 2 — Upload zone card PDFs (15 min)**: In Kit, navigate to Content > Files. Upload all 8 zone card PDFs in sequence. After each upload, copy the download URL into a local note labeled by zone number. Verify each URL in an incognito browser window before proceeding. These URLs are the primary CTA in Email 1 — a broken URL at this step breaks the entire lead magnet delivery.
 
-**Launch impact**: If May 17–18 shoot, launch pushes to June 6. The Week 1 email funnel runs June 6–12 instead of May 30 – June 5. No revenue impact — email list is pre-launch and doesn't depend on a specific calendar date.
+**Step 3 — Build sign-up form with zone dropdown (20 min)**: New Form > Landing Page. Two required fields: First Name and Email. Add a required Growing Zone dropdown with values 3 through 10. CTA button text: "Send me my zone card." Publish and record the landing page URL — this URL goes in the Etsy shop bio, listing descriptions, and PDF end-pages.
 
-### Risk 2 — Photo shoot rescheduled (weather, crew, personal conflict)
+**Step 4 — Load welcome sequence (60 min)**: New Sequence named "Seedwarden Welcome." Build 8 variants of Email 1 — identical body copy with the zone reference and download link substituted per zone. Build Emails 2–5 as single variants (zone-agnostic). Set delays: Email 1 immediate, Email 2 Day 2, Email 3 Day 5, Email 4 Day 7, Email 5 Day 10.
 
-**Trigger condition**: May 10–11 window is unavailable.
+**Step 5 — Build welcome automation (10 min)**: Trigger: Form submitted. Actions: tag "new-subscriber," add to sequence, and apply conditional zone routing (if zone = X, send Email 1 variant X). Publish.
 
-**Next available window**: May 17–18 (same weekend structure). This pushes processing to May 19–21, photo funnel to May 22, and launch to June 6.
+**Step 6 — End-to-end test (15 min)**: Submit form with test email address, Zone 5 selected. Confirm Email 1 arrives within 60 seconds. Open the download link — confirm Zone 5 PDF opens. Check that the email did not land in spam. Repeat for one additional zone (e.g., Zone 3). Do not publish the landing page URL anywhere until this test passes.
 
-**Impact assessment**: 7-day slip. No compounding effect on revenue — Etsy listings without lifestyle photos still generate sales during the slip period. The launch week social push simply happens June 6 rather than May 30.
+**Total Kit setup time**: 2.5 hours for a first-time user. 90 minutes for someone familiar with Kit.
 
-**Mitigation**: Confirm crew availability for both May 10–11 AND May 17–18 as backup. If both windows are unavailable, a solo shoot with tripod can happen any morning with good window light. Solo adds approximately 60 minutes to the total shoot time.
+### Subscriber Segmentation
 
-### Risk 3 — Image processing bottleneck
+Three behavioral segments are built through click-tracking in Emails 3 and 4 of the welcome sequence:
 
-**Trigger condition**: User lacks time for 3-day editing window (May 12–14) or Lightroom/editing competency introduces quality issues.
+- "seed-saver": subscriber clicked the Seed Saving Field Manual link in Email 3 or the food sovereignty link in Email 4
+- "city-grower": subscriber clicked the apartment/container link in Email 4
+- "preservationist": subscriber clicked the preservation link in Email 4
 
-**Mitigation options**:
-- Option A: Outsource batch retouching to Fiverr. Cost: $150–250 for 30 images with color grading and crop variants. Turnaround: 48–72 hours from file delivery. Send files May 12 morning, receive May 14 afternoon. Timeline holds.
-- Option B: Use Canva's built-in photo editing for color grading (free, less precise than Lightroom but sufficient for Etsy quality). Time savings: 2–3 hours vs. Lightroom preset workflow.
-- Option C: Skip variant crops (60 social variants) in the first pass and add them in the week following launch. Etsy images are the priority; social variants can be generated from final Etsy images at any point.
+Subscribers who click nothing are tagged "unclassified" and receive the general newsletter without segment-specific product spotlights until they reveal a preference through a purchase.
 
-**Budget impact**: Fiverr retouching adds $150–250 to the $200–300 props estimate, bringing Phase 2 production total to $350–550. Still well within range for a digital products business with 21 Etsy listings.
+### 3-Email Welcome Automation Outline
 
-### Risk 4 — Canva zone card production runs over 12 hours
+The full 5-email welcome sequence is documented in `marketing/email-and-launch-plan.md`. The three most operationally important emails:
 
-**Trigger condition**: User's Canva familiarity is lower than 90-minute-per-card estimate, or design iterations add time.
+**Email 1 (immediate)**: Zone card delivery. The download link is the primary and largest element. Body copy is warm and brief — founder voice, not brand voice. Zone number is named explicitly in the subject line and opening sentence.
 
-**Assessment**: The 90-minute estimate is for an experienced Canva user following the CANVA_ZONE_CARD_DESIGN_GUIDE.md step-by-step. A user new to Canva's Brand Kit and template duplication workflow should budget 2.5–3 hours per card for the first 2 cards, dropping to 75–90 minutes by cards 5–8 as the duplication pattern becomes automatic. This adds 2–4 hours to the total production estimate, which is fully absorbed by the May 15–30 float window.
+**Email 3 (Day 5)**: Seed saving mistake story. First behavioral tag link embedded. This email is the inflection point for list quality — subscribers who open and click here are the highest-intent segment. Open rate on Email 3 is the leading indicator for Email 5 coupon redemption.
 
-**Mitigation options**:
-- Option A: Spend 2 hours in Week 0 (before May 15) setting up Brand Kit and building the master template. This is front-loaded time that eliminates per-card design decisions.
-- Option B: Simplify designs for Zones 9 and 10 (the lowest-traffic zones) using direct template duplication with color-only changes. Saves 1–1.5 hours.
-- Option C: Build only the 4 highest-traffic zone cards by May 30 (Zones 5, 6, 7, 8 — the continental mid-range zones that cover the majority of the US population) and release Zones 3, 4, 9, 10 in the first week of June. This reduces the zone card deliverable to 4 cards at launch with a June 7 full release. Email automation can deliver zone-specific cards only if the user's zone is one of the 4 live; otherwise deliver a "coming soon" zone card placeholder.
-
-### Risk 5 — Email automation setup takes longer than estimated
-
-**Trigger condition**: Kit UI unfamiliarity, automation logic errors, or deliverability issues extend setup beyond the May 15–25 window.
-
-**Mitigation options**:
-- Option A: Use Kit's pre-built welcome sequence template and modify copy rather than building from scratch. Saves 3–4 hours. The full custom email copy lives in `marketing/email-and-launch-plan.md` — this copy can be pasted directly into the pre-built template structure.
-- Option B: Launch with only Priority 1 (Welcome Sequence) and Priority 2 (Post-Purchase Sequence) automations live. The weekly newsletter and win-back campaign can be configured post-launch during the first two weeks of June without any customer impact.
-- Option C: If Kit setup is genuinely blocked (account issue, payment issue, deliverability hold), launch Phase 2 with Mailchimp free tier as a temporary bridge. The email copy is platform-agnostic. Migrate to Kit when the account issue resolves.
-
-### Worst-Case Stacked Delay Scenario
-
-If germination misses (tray starts May 3), shoot pushes to May 17–18, processing runs May 19–23, and Canva cards need the full 15 hours (not 12), the latest realistic launch date is June 15. This represents a 2-week slip from May 30 and a 3-week slip from the original goal. June 15 is still well within the Phase 2 production window and does not affect Phase 3 planning, which begins 30 days post-Phase-2-launch regardless of calendar date.
+**Email 5 (Day 10)**: First offer. SEEDWARDEN15 coupon, 5-day expiration (communicated in copy, not enforced by a timer). The offer is framed as a genuine gesture rather than a sales tactic — Seedwarden's audience is sophisticated about marketing manipulation, and countdown timer language will erode trust.
 
 ---
 
-## Section 5: Resource Requirements
+## Live Launch Coordination
 
-### User Time Investment
+Phase 2 launch is a coordinated event, not a gradual rollout. All four workstreams must be complete and staged before the launch sequence begins.
 
-| Task | Estimated Hours | Window |
-|---|---|---|
-| Germination tray start | 0.25 | April 30 |
-| Location confirmation | 0.1 | April 30 |
-| Props sourcing + print run | 2–3 | May 7–9 |
-| Props assembly + shoot prep | 1 | May 9 evening |
-| Photo shoot (2 days) | 8–10 | May 10–11 |
-| Image culling | 1.5 | May 12 |
-| Image retouching + export (self) | 3–4 | May 13–14 |
-| Canva Brand Kit + master template | 2 | May 15–17 |
-| Canva zone cards 3–10 (6 remaining) | 7–9 | May 18–29 |
-| Kit account setup + segmentation | 2 | May 15–16 |
-| Email automation sequences | 3–4 | May 17–20 |
-| Email template design + test sends | 2 | May 22–24 |
-| Social content preparation | 2–3 | May 20–28 |
-| Etsy lifestyle image upload (21 listings) | 1.5 | May 30 |
-| Launch coordination (email trigger, social) | 1 | May 30 |
-| **Total** | **36–45 hours** | May 7–30 |
+**Pre-launch staging (May 29)**:
+- All 21 Etsy lifestyle images uploaded but not yet visible (Etsy listings updated with new images do not require re-publishing — images are live immediately on upload, so do the upload at a time when you are ready for it to go live)
+- Social posts written and scheduled in Buffer or Later for May 30 2pm–4pm
+- Email launch broadcast drafted and staged in Kit (not yet sent)
+- Zone card delivery automation confirmed live and accepting subscribers
 
-Note: 36–45 hours over 24 calendar days (May 7–30) averages 1.5–2 hours per day. This is achievable on weekday evenings + weekends if the user can protect morning time on May 10–11 for the shoot itself. The Canva work (9–11 hours) and Kit setup (7–8 hours) are the largest continuous blocks and both fall in the May 15–30 window — a period with no other hard deadlines.
+**Launch sequence — May 30**:
+- 10:00am: Upload lifestyle images to all 21 Etsy listings (this is the de facto launch — listings are immediately visible to buyers with 5-image stacks)
+- 12:00pm: Send launch email broadcast to full list via Kit. Confirm that the welcome automation is NOT paused during the broadcast send — new subscribers who sign up on launch day should still receive the welcome sequence, not the broadcast
+- 2:00pm–4:00pm: Social posts go live, staggered by platform with a 2-hour gap between platforms to avoid same-audience reach overlap within one day
 
-If image processing is outsourced to Fiverr, the user's total personal time investment drops to 25–32 hours.
-
-### External Resources
-
-| Item | Cost | When Needed | Notes |
-|---|---|---|---|
-| Fiverr batch retouching (optional) | $150–250 | May 12 (file delivery) | 30 images + 60 crops; 48-hr turnaround |
-| Props (seeds, pots, jars, linen, peppers) | $40–80 | May 7–9 | Most may be on hand; CLUSTER_C_PROPS_ACQUISITION_PLAN.md has sourcing detail |
-| Print shop run (PDF pages for props) | $8–15 | May 8 (24-hr turnaround) | Color prints, 3–5 pages per product cluster |
-| Kit account (free tier) | $0 | May 15 | Free tier supports list-building + welcome sequence; upgrade if list exceeds 1,000 |
-| Canva Pro (if not active) | $13/month | May 15 | Required for Brand Kit feature; 30-day free trial available |
-| **Total** | **$200–360** | | Without Fiverr: $50–100. With Fiverr: $200–360. |
-
-### Equipment (Existing)
-
-All the following are assumed to already be available per the photography strategy documents:
-
-- Camera or smartphone with manual exposure capability
-- Lightroom Mobile, Snapseed, or RawTherapee (free tiers sufficient)
-- Canva account (Pro preferred, free tier workable)
-- Window with good morning light on May 10 (east or south-facing window)
-- Kitchen counter space for Cluster C
-
-No new equipment purchases are required or recommended for the shoot. A $40–60 LED softbox is documented as optional in the budget allocation (LIFESTYLE_PHOTOGRAPHY_STRATEGY.md) but is specifically flagged as skip-if-window-light-is-adequate.
+The 2-hour gap between Etsy update and email send is intentional: if a buyer discovers the store organically in the 10am–12pm window and purchases before the email goes out, they enter the post-purchase sequence before receiving the launch broadcast. This is correct behavior — do not suppress the post-purchase automation for launch-day buyers.
 
 ---
 
-## Section 6: Five Key Questions for User Confirmation
+## Risk Dependencies and Critical Path Recovery
 
-These questions require a confirmed answer before any production planning is treated as locked. Each maps to a specific critical path node.
+### Primary Risk: Photo Shoot Delayed 2 Weeks
 
-**Question 1 — Germination tray: Was it started today (April 30)?**
+**Scenario**: May 10–11 shoot is unavailable. Next window is May 17–18.
 
-If yes: May 10 shoot is confirmed on the critical path. Node 1 is complete.
-If no: Start tonight or first thing tomorrow (May 1) — still workable. Starting May 3 or later introduces shoot risk. This question must be answered before the week ends.
+**Recovery sequence**:
+- May 17–18: Shoot executes as planned (2 days, same structure)
+- May 19–21: Image processing (culling, retouching, export)
+- May 22: Photos available for email templates and social content
+- May 22–28: Social content preparation, email template enrichment
+- June 6: Phase 2 launch (7-day slip from May 30)
 
-**Question 2 — User availability: Can 20–25 hours be dedicated May 15–30?**
+**What does not slip**: Canva zone card production and Kit email setup are completely independent of photography. Both can begin May 15 and complete by May 29 regardless of when the shoot happens. A 2-week photo delay does not cascade into the email funnel or zone card workstream.
 
-If yes at full 25 hours: All workstreams (Canva, Kit, social) proceed at the pace documented above.
-If only 15 hours available: Prioritize Kit automation first (email list is the highest-leverage Phase 2 asset), then Canva cards (lead magnet quality), then social. Outsource retouching to Fiverr to reclaim 3–4 hours from the May 12–14 window.
-If under 10 hours available: Focus May 15–30 entirely on Kit automation and 4 zone cards. Defer the remaining 4 zone cards and social scheduling to June 1–15. Launch May 30 with partial Canva set.
+**Revenue impact**: Zero. Phase 1 Etsy listings are generating sales throughout the slip period. Phase 2 launch email goes to the same list on June 6 rather than May 30. Subscriber count is marginally lower (6 fewer days of organic list-building) — the difference at this list size is single digits.
 
-**Question 3 — Track A parallel operation: Is Phase 1 Etsy upload happening simultaneously?**
+### Secondary Risk: Canva Zone Cards Run Over Estimate
 
-If Track A is proceeding concurrently (per the concurrent-track-execution-plan.md Option D recommendation): Add 2.5–3 hours of Track A upload work to the May 7–20 window. This is not on the Phase 2 critical path but does compete for user time. The Track A upload is documented as approximately 45–60 minutes per day for 3 days — low enough to run in parallel with Phase 2 without significant conflict.
-If Track A is deferred until after Phase 2 launch: Phase 2 proceeds unencumbered. Phase 1 Etsy listings do not yet have lifestyle images, which may affect first-impression conversion on those listings. Acceptable trade-off given Phase 2 is the priority.
-If Track A is blocked (account hold, payment setup issue): Phase 2 is completely independent and proceeds on schedule regardless.
+**Scenario**: User is new to Canva Brand Kit — actual time is 2.5–3 hours per card instead of 90 minutes.
 
-**Question 4 — Canva skill level: Experienced or novice?**
+**Float available**: Zone card production has 2 days of float at the May 30 launch date. Even at 3 hours per card, all 8 cards are completable within the May 15–30 window with focused sessions.
 
-Experienced (uses Canva regularly, comfortable with layers and text boxes): 90-minute-per-card estimate holds. 12-hour total for 8 cards is realistic in the May 15–30 window.
-Intermediate (uses Canva occasionally): Budget 2 hours per card, 16 hours total. Still achievable in the May 15–30 window with focused sessions. The CANVA_ZONE_CARD_DESIGN_GUIDE.md step-by-step build reference is specifically written to reduce guesswork during the session.
-Novice (minimal Canva experience): Budget 2.5–3 hours per card for the first two, dropping to 90 minutes by card 4+. Consider watching one Canva Brand Kit tutorial video (20 min) before Week 0 setup. Full 8-card set is still achievable by May 30 with two 4-hour weekend sessions.
+**Minimum viable launch path**: If time pressure is acute, launch May 30 with 4 zone cards (Zones 5, 6, 7, 8 — the highest-traffic zones covering the majority of US buyers) and release Zones 3, 4, 9, 10 during the first week of June. Email automation delivers a "your zone is coming soon" placeholder for the four deferred zones, with a follow-up email sent when those cards go live.
 
-**Question 5 — Crew availability: Is the May 10–11 crew confirmed?**
+### Worst-Case Stacked Scenario
 
-If crew confirmed for both days: Schedule stands as documented. Proceed.
-If crew confirmed for May 10 only: Cluster C (May 11) becomes a solo shoot. Cluster C is a kitchen counter shoot — the easiest of the three clusters for solo execution. No material quality impact.
-If crew is unavailable for both days: Solo shoot with tripod for all 30 images. Add 60 minutes to Day 1 and 30 minutes to Day 2. Switch to a slightly wider framing convention for all shots. Still fully achievable — the PHOTO_SHOOT_CHECKLIST.md solo-shoot notes cover this case.
-If crew confirmed for May 10–11 but cancels within 72 hours: Execute solo shoot or push to May 17–18 and source replacement crew from local photographer community (Facebook groups, photography school alumni networks).
+Germination tray starts May 3 (not April 30), shoot pushes to May 17–18, processing runs May 19–23, and Canva work requires the full 18 hours at 2.5 hours per card. Latest realistic launch: **June 15**. This is a 2-week slip from May 30 and does not affect Phase 3 planning, which begins 30 days post-Phase-2-launch regardless of calendar date.
 
 ---
 
-## Section 7: Phase 2 and Phase 1 Integration
+## Realistic Phase 2 Timeline
 
-Phase 2 Track B can and should proceed independently of Phase 1 Track A. The dependency relationship runs one direction only: Phase 1 Etsy listings benefit from Phase 2 lifestyle images (added to slots 4–5), but Phase 2 production does not need Phase 1 to be live before beginning.
+Assuming Phase 1 launches May 2026, the complete Phase 2 timeline from first action to first Phase 2 sale is:
 
-The two workstreams share the user's time, not each other's assets. The concurrent-track-execution-plan.md documents this explicitly. The practical implication for May 2026:
+| Date | Milestone |
+|---|---|
+| April 30 | Germination tray started; location and crew confirmed |
+| May 7–9 | Props sourced; print shop run completed |
+| May 10–11 | Photo shoot: 30 RAW images captured across all 3 clusters |
+| May 12 | Image culling: 80–100 RAW files narrowed to 30 selects |
+| May 13–14 | Retouching and export: 30 finals + 60 social variant crops |
+| May 15 | Photos available; Kit account setup begins; Canva Brand Kit locked |
+| May 15–17 | Canva master template built; Zones 5 and 6 complete |
+| May 15–16 | Kit sender authentication; sign-up form built and published |
+| May 17–19 | Kit welcome sequence loaded; automation built and tested |
+| May 18–24 | Canva Zones 3, 4, 7, 8 built |
+| May 20–24 | Post-purchase automation built; email template design; test sends |
+| May 25 | Email automation live and accepting subscribers |
+| May 25–27 | Canva Zones 9, 10 built |
+| May 27–28 | Zone card full-set QA review; footer URL replacement |
+| May 28–29 | Zone cards exported and uploaded to Kit; social posts scheduled |
+| May 30 | Phase 2 live launch: 21 listings at 5-image status, email broadcast sent, social posts live |
+| June 1–14 | First Phase 2 sales recorded; welcome sequence running for new subscribers |
 
-- Etsy account setup and Phase 1 listing uploads can happen during the same week as props sourcing (May 7–9) without conflict — they use different hours and different platforms.
-- Phase 2 lifestyle images, once produced on May 12–14, can immediately be used to upgrade Phase 1 listings if those listings are already live. If Phase 1 has not yet launched, the images are staged in the etsy-ready folder and uploaded the moment Phase 1 listings go live.
-- The email automation setup (Kit, May 15–25) benefits from Phase 1 being live because the post-purchase sequence requires confirmed Etsy purchase events to trigger correctly. If Phase 1 is not live by May 15, configure the welcome sequence and lead magnet delivery first; wire the post-purchase automation after Phase 1 launch.
+**First Phase 2 sale**: expected within 72 hours of launch email send, based on email 5 coupon redemption targeting 8–15% of list. At 50 subscribers on launch day and an 8% redemption rate, 4 coupon purchases are projected in the first 5-day window.
 
-**Phase 2 is not waiting on Phase 1. Start Phase 2 production today.**
+**User time investment**: 36–45 hours across May 7–30, averaging 1.5–2 hours per day. The two largest continuous blocks are Canva zone card production (9–11 hours, May 15–29) and Kit setup plus email automation (7–8 hours, May 15–25). Both fall in the same window and can be split across evenings and a single weekend.
+
+---
+
+*Generated: 2026-05-04. Source documents: LIFESTYLE_PHOTOGRAPHY_STRATEGY.md, PHASE_2_EMAIL_STRATEGY.md, ZONE_CARD_PRODUCTION_TIMELINE.md, PHASE_2_BUNDLE_STRATEGY.md, concurrent-track-execution-plan.md. Dependency graph: phase-2-dependency-graph.csv.*

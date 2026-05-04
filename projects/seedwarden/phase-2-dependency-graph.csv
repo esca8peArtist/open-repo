@@ -1,34 +1,35 @@
-task_id,task_name,duration_days,start_date,end_date,dependencies,resource_required,notes
-task_001,Germination tray start,0,2026-04-30,2026-04-30,none,user,Critical path start — 15 min task; sprouts ready by May 10 if started today
-task_002,Location confirmation,0,2026-04-30,2026-04-30,none,user,Confirm window light access May 10–11 morning; east or south-facing window required for Cluster A
-task_003,Crew coordination,0,2026-04-30,2026-04-30,none,confirmed,2–3 person team confirmed per session 702; confirm backup availability May 17–18
-task_004,Props sourcing — print run,1,2026-05-08,2026-05-08,none,user+$8-15,Color prints of PDF pages for shoot props; 24-hr turnaround from print shop
-task_005,Props sourcing — physical items,3,2026-05-07,2026-05-09,none,user+$40-80,Seeds/pots/mason jars/linen/peppers/trowel; see CLUSTER_C_PROPS_ACQUISITION_PLAN.md
-task_006,Props assembly + shoot-day prep,0,2026-05-09,2026-05-09,task_004/005,user,Stage all props by cluster; charge tablet to 100%; load all PDF covers in shoot folder
-task_007,Photo shoot Day 1 — Clusters A+B,1,2026-05-10,2026-05-10,task_001/002/003/006,user+crew,Session 1 Cluster A 9am–1:30pm (16 shots) + Session 2 Cluster B 3pm–5pm (8 shots)
-task_008,Photo shoot Day 2 — Cluster C,1,2026-05-11,2026-05-11,task_007,user,Session 3 Cluster C 9am–11am (6 shots); kitchen counter shoot — no window light dependency
-task_009,Image culling and selection,1,2026-05-12,2026-05-12,task_007/008,user,80–100 RAW captures → 30 selects; flag any reshoot candidates immediately
-task_010,Image retouching and color grading,2,2026-05-13,2026-05-14,task_009,user OR Fiverr ($150-250),Apply Lightroom presets per LIFESTYLE_PHOTOGRAPHY_STRATEGY.md; batch by cluster
-task_011,Social variant crop generation,1,2026-05-14,2026-05-14,task_010,user,60 variant crops: 1:1 Etsy + 4:5 Instagram + 16:9 Pinterest per image (2 crops × 30 images)
-task_012,Photo funnel live,0,2026-05-15,2026-05-15,task_010/011,system,30 finals + 60 variants exported to /marketing/lifestyle-photos/etsy-ready/; email templates enriched
-task_013,Canva Brand Kit setup,0,2026-05-15,2026-05-15,none,user,Brand colors + fonts locked in Brand Kit before any card build; 30 min; required for duplication workflow
-task_014,Canva master template + Zones 5–6,2,2026-05-15,2026-05-17,task_013,user,Three-column layout + spotlight band + footer; first two cards establish the pattern (~4 hrs total)
-task_015,Canva Zones 3 4 7 8,6,2026-05-18,2026-05-24,task_014,user,Four mid-range zone cards via template duplication; ~60–90 min each after pattern is established
-task_016,Canva Zones 9 10,2,2026-05-25,2026-05-27,task_015,user,Two low-traffic zones; duplication from existing template; 60–90 min each
-task_017,Zone card full-set review,1,2026-05-27,2026-05-28,task_016,user,Visual QA all 8 cards: placeholder URL check + color band verification + content accuracy + footer links
-task_018,Zone card final export and Kit upload,1,2026-05-29,2026-05-29,task_017,user,PDF Print export per card; upload to Kit delivery; tag each file to correct zone segment
-task_019,Zone card delivery test,0,2026-05-30,2026-05-30,task_018,user,Subscribe as test user in each zone segment; confirm correct card delivered; verify PDF opens
-task_020,Kit account configuration,1,2026-05-15,2026-05-15,task_012,user,Create account; connect domain; configure sender name + reply-to; verify DNS records
-task_021,Subscriber segmentation rules,1,2026-05-15,2026-05-16,task_020,user,Create zone tags (3–10); create cohort tags (urban-grower/homesteader/prepper/forager); tag logic documented in PHASE_2_EMAIL_STRATEGY.md
-task_022,Welcome sequence automation build,3,2026-05-17,2026-05-19,task_021,user,5-email sequence with zone card delivery at Email 1; copy from marketing/email-and-launch-plan.md
-task_023,Post-purchase sequence automation build,2,2026-05-20,2026-05-21,task_022,user,3-email sequence triggered by Etsy purchase tag; requires Phase 1 Etsy listings live to test fully
-task_024,Email template design,2,2026-05-20,2026-05-22,task_022,user,Apply brand colors and fonts to Kit email templates; header image from lifestyle photos (task_012)
-task_025,Test sends — all automation sequences,2,2026-05-22,2026-05-24,task_023/024,user,Minimum 3 test subscriber accounts; verify delivery timing + link functionality + mobile rendering
-task_026,Email automation live,0,2026-05-25,2026-05-25,task_025,system,All Priority 1 + 2 automations active; funnel accepting new subscribers
-task_027,Social content selection,1,2026-05-20,2026-05-20,task_012,user,Select 10 best lifestyle images from 30 finals for launch week social content
-task_028,Social caption writing,2,2026-05-21,2026-05-22,task_027,user,5 Instagram captions + 3 Pinterest descriptions + 2 Facebook posts; tone per PHASE_2_EMAIL_STRATEGY.md voice guidelines
-task_029,Social post scheduling,1,2026-05-28,2026-05-29,task_027/028,user,Schedule in Buffer or Later: May 30 launch post + 3 days post-launch follow-up posts
-task_030,Etsy lifestyle image upload,1,2026-05-30,2026-05-30,task_010/011,user,Upload slots 4–5 for all 21 listings; verify 1:1 thumbnail crop shows product clearly; do not modify other listing elements
-task_031,Launch coordination — email trigger,0,2026-05-30,2026-05-30,task_026/030,user,Send launch email to full list at 12pm; confirm automation is paused during send to prevent duplicate delivery
-task_032,Launch coordination — social posting,0,2026-05-30,2026-05-30,task_029/031,user,Social posts go live 2pm–4pm staggered; 2-hr gap between platforms to prevent same-audience reach overlap
-task_033,Phase 2 launch complete,0,2026-05-30,2026-05-30,task_019/030/031/032,system,All 21 Etsy listings at 5-image status; email funnel live; social queue active; zone cards in Kit delivery
+task,duration_days,depends_on,owner,blocker
+Germination tray start,0,,user,Must happen by May 3 at absolute latest; April 30 preferred — miss this and May 10 shoot is at risk
+Location confirmation,0,,user,East or south-facing window needed for Cluster A morning light; must be unobstructed May 10–11 9am–2pm
+Crew coordination,0,,user,2–3 person team; confirm backup window May 17–18 in case primary dates slip
+Print shop run for PDF props,1,,user,24-hr turnaround; submit by May 8 EOD for May 9 pickup; color prints of 3–5 product pages
+Props sourcing — physical items,3,,user,Seeds / pots / mason jars / linen / peppers / trowel; most likely on hand — verify by May 7
+Props assembly and shoot-day prep,0,"Print shop run for PDF props,Props sourcing — physical items",user,All props staged by cluster the evening of May 9; tablet charged; PDF covers loaded in shoot folder
+Photo shoot Day 1 — Clusters A and B,1,"Germination tray start,Location confirmation,Crew coordination,Props assembly and shoot-day prep",user,Window light 9am–2pm is hard constraint for Cluster A; shoot cannot start late
+Photo shoot Day 2 — Cluster C,1,Photo shoot Day 1 — Clusters A and B,user,Kitchen counter shoot — less light-sensitive than Clusters A and B; solo-executable if crew unavailable Day 2
+Image culling,1,"Photo shoot Day 1 — Clusters A and B,Photo shoot Day 2 — Cluster C",user,80–100 RAW captures narrowed to 30 selects; flag any reshoot candidates same day
+Image retouching and color grading,2,Image culling,user or autonomous,Lightroom preset workflow per LIFESTYLE_PHOTOGRAPHY_STRATEGY.md; Fiverr outsource option at $150–250 if user time is constrained
+Social variant crop generation,1,Image retouching and color grading,user,60 crops: 1:1 Etsy + 4:5 Instagram + 16:9 Pinterest for each of 30 finals
+Photos available for email and social,0,"Image retouching and color grading,Social variant crop generation",autonomous,Export to /marketing/lifestyle-photos/etsy-ready/; no action needed — this is a milestone checkpoint
+Canva Brand Kit setup,0,,user,Lock brand colors and fonts before any card build; 30 min; must precede master template build
+Canva master template and Zones 5–6,2,Canva Brand Kit setup,user,Three-column layout + spotlight band + footer; first two cards establish the duplication pattern; budget 4 hrs
+Canva Zones 3 4 7 8,6,"Canva master template and Zones 5–6",user,Template duplication with zone-specific content substitution; 60–90 min each after pattern is established
+Canva Zones 9 10,2,"Canva Zones 3 4 7 8",user,Lowest-traffic zones; same duplication process; 60–90 min each
+Zone card full-set QA review,1,"Canva Zones 9 10",user,Visual check all 8 cards: placeholder URLs replaced / color bands correct / footer links live
+Zone card PDF export and Kit upload,1,Zone card full-set QA review,user,PDF Print quality export; upload to Kit Content > Files; log each download URL in WORKLOG.md immediately
+Zone card delivery test,0,Zone card PDF export and Kit upload,user,Subscribe with test address in each zone segment; confirm correct card delivered; verify PDF opens
+Kit account and sender authentication,1,,user,SPF and DKIM DNS records must propagate before send; 24–48 hr DNS propagation is the hidden blocker — do this first
+Subscriber segmentation rules,1,Kit account and sender authentication,user,Create zone tags 3–10; create cohort tags seed-saver / city-grower / preservationist; behavioral tag logic per PHASE_2_EMAIL_STRATEGY.md
+Welcome sequence automation build,3,Subscriber segmentation rules,user,5-email sequence; 8 variants of Email 1 (one per zone); copy from marketing/email-and-launch-plan.md; zone routing conditional logic
+Post-purchase sequence automation build,2,Welcome sequence automation build,user,3-email sequence triggered by Etsy purchase tag; requires Phase 1 Etsy listings live to test post-purchase trigger fully
+Email template design,2,Welcome sequence automation build,user,Apply brand colors and fonts to Kit templates; add landing page hero image after Cluster A photos are available
+Test sends — all automation sequences,2,"Post-purchase sequence automation build,Email template design",user,Minimum 3 test subscriber accounts; verify delivery timing + link functionality + mobile rendering for each automation
+Email automation live,0,Test sends — all automation sequences,autonomous,All Priority 1 and 2 automations active; funnel accepting new subscribers — milestone only
+Social content image selection,1,Photos available for email and social,user,Select 10 best lifestyle images from 30 finals for launch week social content
+Social caption writing,2,Social content image selection,user,5 Instagram captions + 3 Pinterest descriptions + 2 Facebook posts; voice per PHASE_2_EMAIL_STRATEGY.md
+Social posts scheduled,1,"Social content image selection,Social caption writing",user,Schedule in Buffer or Later for May 30 launch post + 3 days post-launch; 2-hr gap between platforms
+Etsy coupon code activation,0,,user,SEEDWARDEN15 coupon must be active in Etsy before Email 5 reaches any subscriber on Day 10; create in Etsy Shop Manager before Kit automation goes live
+Etsy lifestyle image upload — all 21 listings,1,"Image retouching and color grading,Social variant crop generation",user,Upload slots 4–5 for all 21 listings; images go live immediately on upload — do at 10am launch day
+Launch email broadcast send,0,"Email automation live,Etsy lifestyle image upload — all 21 listings",user,Send at 12pm May 30; confirm welcome automation is not paused during broadcast; new subscribers that day should still receive welcome sequence
+Social posts go live,0,"Social posts scheduled,Launch email broadcast send",autonomous,Posts release at 2pm–4pm staggered; 2-hr gap between platforms prevents same-audience reach overlap
+Phase 2 launch complete,0,"Zone card delivery test,Launch email broadcast send,Social posts go live",autonomous,All 21 listings at 5-image status; email funnel live; zone cards in Kit delivery; social queue active
