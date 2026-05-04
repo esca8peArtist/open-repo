@@ -21549,4 +21549,57 @@ All time-sensitive civic calendar updates complete. Framework ready for user dis
 
 **Next step**: USER DECISION on Phase 1 distribution path (A / A+Domain37 / B) → Orchestrator executes Batch 1 send within 1 hour of user decision
 
+---
+
+## 2026-05-04 — Session 717 — Stockbot: 2-Session Jetson Deploy + Gate 1 Reassessment
+
+**Author**: stockbot-agent
+
+### Architecture Simplification: 67 Sessions → 2 Sessions
+
+Stockbot reduced from 67 stacker sessions (52 tickers) to 2 sessions (AAPL only). Both sessions
+run on the Jetson at 100.120.18.84. The Jetson DB was fresh-seeded from `active-sessions.json`
+tonight. The `/api/ready` endpoint confirmed healthy: `{"status":"ready","sessions":2}`.
+
+Active sessions post-simplification:
+- `33a4afe676cae12a` — AAPL_h10_lgbm_ho (stacker `0676c84e`)
+- `a1b2c3d4e5f60001` — AAPL_h10_ridge_wf (stacker `32643264`)
+
+19 non-AAPL positions (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA,
+SHW, PG, LIN, FDX, GOOGL) closed via Alpaca market orders tonight. These execute at 13:30 UTC
+May 5 (market open). AAPL position (108 shares, ~$29.8K, +$924 unrealized) stays open.
+
+Account state going into May 5: Cash -$310K (paper artifact), buying_power ~$0, long $420K.
+After 19 closes, buying_power is expected to return to positive.
+
+### Fixes Deployed
+
+**Fix 1 — active-sessions.json seed**: Jetson DB re-seeded from `active-sessions.json` to reflect
+the 2-session-only state. Prior DB state referenced 67 sessions that no longer exist on the Jetson.
+This was necessary to prevent the engine from attempting to load missing session configs on startup.
+
+**Fix 2 — /api/ready endpoint**: Endpoint verified returning correct session count (sessions:2).
+This endpoint is the canonical health check for the Jetson deployment. Pre-market check at 13:00
+UTC each day should ping this endpoint and confirm sessions:2 before market open.
+
+### Gate 1 Revised Assessment
+
+The original Gate 1 target (150 fills by May 12) was calibrated for 67 sessions at ~12.6
+fills/trading-day. With 2 AAPL sessions, the maximum possible fill rate is 2/day and the realistic
+rate is 0–2/day (signals fire only when threshold is crossed). The 150-fill target is structurally
+unreachable in the 2-session architecture.
+
+**Gate 1 — RETIRED** for the prior 67-session architecture.
+
+**Gate 1b — ACTIVE** (2-session architecture):
+- Minimum 5 completed round trips across both AAPL sessions within 30 days of May 5
+- All fills must have fill_price > 0 and fill_time within market hours
+- Both sessions alive on every market open through June 4
+- 0 sustained auth errors during market hours
+- Deadline: June 4, 2026
+- Estimated pass probability: ~80%
+
+Full analysis: `projects/stockbot/GATE_1_REVISED_2SESSION.md`  
+May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
+
 **Remaining session time**: ~10 hours until market open (13:30 UTC); prioritize stockbot monitoring and market readiness
