@@ -21,6 +21,8 @@
 - No April 30 development found requiring Domain 37 update before distribution.
 - Pre-flight verification: DISTRIBUTION_PATH_VERIFICATION.md (created Session 678). Quick reference: DISTRIBUTION_PATH_QUICK_REFERENCE.md (created Session 678).
 
+**Session 717 — Domain 37 Pre-Distribution Baseline Metrics COMPLETE**: `domains/domain-37-baseline-metrics.md` created (May 4, 2026). Seven quantified baselines established: DOJ lawsuit count (24 active + DC; 6 dismissed), CISA cuts ($39.6M election security confirmed cut; $707M FY27 proposal), election denier appointments (8 named senior officials; 11+ Election Integrity Network affiliates), Section 3 litigation posture (Griswold-to-AG transition documented; 0 active 2026 disqualification proceedings), restrictive voting laws (32 in 2025; 31 in effect for midterms), SAVE error rate (81% false positive; 24,000+ flagged nationally). Measurement protocol for post-distribution re-measurement included.
+
 **Pending (next session)**:
 - FISA Senate outcome confirmation (voice vote or cloture result; presidential signature date; new expiration date)
 - Schiff sixth war powers Senate vote scheduling and outcome
