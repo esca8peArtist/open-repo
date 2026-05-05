@@ -1,38 +1,58 @@
-## Since Last Check-in (Session 745 — 2026-05-05 11:35–11:50 UTC) — Engine Restart + Code Refactor + Pre-Market Standby
+## Since Last Check-in (Session 745 — 2026-05-05 11:35–13:30+ UTC) — Engine Restart + Queue Replenishment + Pre-Market Monitoring
 
-### Overall Status: ✅ ENGINE RESTARTED + CODE REFACTORED — Stockbot engine operational (PID 177133, 52 sessions). Database consistency refactors committed. Pre-market health check at 13:00 UTC. Market open at 13:30 UTC with 19-position closes. System ready.
+### Overall Status: ✅ SYSTEM READY FOR MARKET OPEN — Stockbot engine operational (PID 177133, 52 ticker sessions). Engine health verified (log actively updated 12:39 UTC). All sessions sleeping until 13:15 UTC wake-up (15 min before 13:30 UTC market open). Background log monitoring active (captures wake-up and market open events). Exploration queue replenished with 3 new high-leverage items (Domain 41, Track B contingency, production runbook).
 
-**Session 745 Work**:
-- ✅ **Code Quality Improvements**: Database manager refactoring committed
-  - Fixed database URL resolution to use project root for `stockbot.db` path
-  - Added missing model class imports (ModelRun, OptimizationJob, OptimizationTrial, PendingOrder)
-  - Updated `get_database_stats()` to include all 10 tables (was missing 4 newly added tables)
-  - Updated test assertions for correct table count (10, not 6)
+**Session 745 Work (Post-Engine-Restart Phase)**:
+- ✅ **Session 745 Early Phase** (11:35–11:50 UTC): Engine restart + code refactoring completed (see prior checkin entry)
+  - Engine restarted at 11:39 UTC (PID 177133)
+  - 52 ticker sessions configured and initialized
   - All 25 unit tests passing
-  - Commits: 1e4d90c (stockbot), aa59e8f (parent)
+  
+- ✅ **Orientation** (11:45–11:55 UTC):
+  - Verified all projects blocked on user input: resistance-research (path decision), mfg-farm (test print), seedwarden (tag corrections), open-repo (PR review)
+  - Verified stockbot in healthy pre-market standby (sessions sleeping until 13:15 UTC)
+  - Exploration queue audit: 5 queued items all blocked on external triggers
+  
+- ✅ **Queue Replenishment** (11:55–12:05 UTC):
+  - Per protocol: queue < 3 unblocked items → add 2-3 new autonomous items
+  - Added 3 items to EXPLORATION_QUEUE.md (Items 44-46):
+    - **Item 44**: resistance-research Domain 41 Candidate Analysis (extend Domains 37-40 framework; 2-3h research)
+    - **Item 45**: seedwarden Track B Pre-Contingency Launch (fallback if Phase 1 lags >2 weeks; 1.5-2.5h research)
+    - **Item 46**: stockbot Post-Gate-1 Production Operations Runbook (May 12-June 30 operational procedures; 2-3h documentation)
+  - All items unblocked; staged for execution when current project blockers resolve
 
-- ✅ **Engine Status**: Engine was offline (shut down 09:32:35 UTC); restarted at 11:39 UTC
-  - Verified 52 ticker sessions configured in active-sessions.json
-  - Engine running (PID 177133) in paper trading mode
-  - Ready for market open at 13:30 UTC
-
-- ⏳ **Pre-Market Readiness**:
-  - 19 non-AAPL positions closing at market open (13:30 UTC)
-  - AAPL position (108 shares, +$924 unrealized) scheduled to hold at h+4
-  - Pre-market health check at 13:00 UTC will verify engine operational
+- ✅ **Engine Health Verification** (12:40 UTC):
+  - Process status: Running (PID 177133, CPU 4.1%, ~26 MB RAM per session)
+  - Log file: trading_20260505.log (3.8 MB, last update 12:39:27 UTC — actively writing)
+  - Session status: All 52 tickers initialized in paper mode, sleeping until 13:15 UTC
+  - Status: ✅ No errors, no auth failures, market-aware sleep logic working correctly
+  
+- ✅ **Monitoring Setup** (12:42 UTC):
+  - Started background log tail monitoring (45-minute duration)
+  - Will capture: 13:15 UTC engine wake-up → 13:30 UTC market open → 19-position close executions
   
 **Scheduled Actions Today**:
-- **13:00 UTC** (75 min): Pre-market health check — verify engine ready, confirm close orders queued
-- **13:30 UTC** (105 min): Market open — execute 19 position closes, observe AAPL hold
-- **20:00 UTC**: Post-market analysis — assess fills against Gate 1b projection
+- **13:00 UTC** (20 min remaining): Pre-market health check — verify engine ready, Jetson connectivity, close orders queued
+- **13:15 UTC** (33 min remaining): Engine wake-up (15 min before market open)
+- **13:30 UTC** (47 min remaining): **MARKET OPEN** — execute 19 non-AAPL position closes (expected fills: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL), AAPL hold at h+4
+- **13:45 UTC**: Verify 19 closes executed and posted to database with realized P&L
+- **20:00 UTC**: Post-market analysis — query May 5 fills, assess fill rate vs. base-case projection, update Gate 1b trajectory estimate
 
-**Items Needing Your Input**:
-1. **Distribution path decision** (resistance-research) — **AWAITING**: Path A / A+37 Hybrid / Path B
-2. **mfg-farm test print** — **AWAITING**: Run test print, evaluate FDM_TOLERANCE
-3. **seedwarden tag corrections** — **AWAITING**: Etsy account verification for Phase 1
-4. **Other approvals**: cybersecurity-hardening Tier 1, open-repo PR #1 merge
+**Items Needing Your Input** (unchanged):
+1. **Distribution path decision** (resistance-research) — **AWAITING YOUR SELECTION**: Path A / Path A+37 Hybrid (recommended) / Path B
+   - **Why now**: Phase 1 execution is ready to launch immediately upon your decision (3-4 hours to Gist publication)
+2. **mfg-farm test print** — **AWAITING EXECUTION**: Run test print, evaluate FDM_TOLERANCE, photograph results
+   - **Blocking**: Items 4, 37 (supplier negotiation, post-print action checklist) are queued and will execute immediately upon test print confirmation
+3. **seedwarden tag corrections** — **AWAITING COMPLETION**: Etsy account tag fixes for Phase 1 email campaign upload
+   - **Contingency Ready**: Item 45 (Track B contingency launch) is queued if Phase 1 tag corrections lag >2 weeks
+4. **Other approvals**: 
+   - cybersecurity-hardening Tier 1 execution (messaging templates COMPLETE, ready for launch)
+   - open-repo PR #1 merge (code COMPLETE, awaiting your review)
 
-**Session 745 complete** (2026-05-05 11:35–11:50 UTC) — Engine operational; code refactored; ready for pre-market health check at 13:00 UTC.
+**Commits This Session**:
+- `067d04e`: chore(orchestrator): session 745+ — queue Items 44-46 (domain analysis, track B contingency, production runbook)
+
+**Session 745 summary**: ✅ Engine restarted and healthy. ✅ Exploration queue replenished. ✅ Pre-market monitoring active. Ready for 13:00 UTC health check and 13:30 UTC market open. All autonomous work staged for execution post-user-decisions.
 
 ---
 
