@@ -66,6 +66,56 @@ Orchestrator initiated with 0 active exploration queue items (all 35 prior items
 
 **Outcome**: Complete pre-staging for rapid post-test-print execution. Once user confirms test print success, orchestrator can execute 5 parallel actions in <2 hours (send supplier emails, schedule photographer, draft Etsy listing, set up ops dashboard, launch performance tracking). Expected market entry: 2–3 weeks post-test-print confirmation.
 
+### ✅ Item 38: resistance-research Tracker Automation Design (COMPLETE)
+
+**Deliverables** (all to `projects/resistance-research/`):
+1. ✅ `tracker-data-source-audit.md` (508 lines) — Real, verified APIs for all 4 trackers
+   - **Press Freedom Tracker API** — Best new source for First Amendment tracker (free, open source, FPF+CPJ maintained)
+   - **Federal Register API** — Best for environmental rollbacks (free, daily at 8:45 AM ET)
+   - **DOJ USAO RSS + CourtListener RECAP** — Covers prosecutorial weaponization (free, real-time)
+   - **GDELT DOC 2.0** — Free coverage of all 4 trackers (requires filtering)
+   - 15+ sources evaluated with cost analysis, API documentation links
+2. ✅ `tracker-automation-architecture.md` (530 lines) — Complete pipeline design
+   - Ingestion → Normalization → Validation → Deduplication → Database → Publishing
+   - Tech stack: Python + APScheduler, SQLite/PostgreSQL, Datasette for web interface
+   - Governance matrix: auto-publish (high confidence) vs human review (medium/low)
+   - **Estimated cost**: $6–30/month total
+3. ✅ `tracker-dashboard-mockups.md` (480 lines) — Three output products
+   - Static PDF briefing for institutional partners (Pandoc + Jinja2)
+   - Live Datasette web interface (free, open source)
+   - Weekly text-only email for low-bandwidth partners
+   - iCalendar export (`.ics` files) for deadline tracking — unique differentiator
+4. ✅ `tracker-maintenance-playbook.md` (416 lines) — Operational procedures
+   - Daily/weekly/monthly update cadence (tracker-specific)
+   - 10-item validation checklist (in-scope, accurate, no duplicates, credible source)
+   - False-positive monitoring: per-source rate thresholds, escalation paths
+   - Community contribution moderation policy (optional)
+
+**Critical Gap Identified**:
+- Prosecutorial weaponization tracker currently has no standalone file (entries scattered across `first-amendment-suppression.md` and `litigation-tracker-2026.md`)
+- Recommendation: Bootstrap with manual file creation + seed with existing entries before automation
+
+**Implementation Sequence**:
+- **Wave 1** (free, ready now): CourtListener RECAP, Federal Register, DOJ USAO RSS, Press Freedom Tracker, Regulations.gov
+- **Wave 2** (weeks 3–6, $10–30/mo): GDELT filtering, Media Cloud, PACER, state AG feeds
+
+**Outcome**: Production-ready automation design for post-Phase-1 expansion. Tracker automation will significantly increase framework utility for institutional partners by providing real-time updates, data exports, and visualization. All 4 documents reference real APIs with documentation links, not hypothetical solutions.
+
+---
+
+## Session 729 Summary (Autonomous Orchestrator)
+
+**Duration**: 04:03–04:17+ UTC (14+ minutes active session time, ~8–9 hours agent work time)
+**Exploration Queue Work**: Items 36, 37, 38 complete (3 items, ~7,500 lines delivered)
+**Deliverables**: 13 new documents (8 mfg-farm files, 4 resistance-research files, 1 stockbot submodule update)
+
+**Next steps for user/orchestrator**:
+- ✅ **Item 36** (stockbot): Pre-market health check at 13:00 UTC (8h 43m from now)
+- ✅ **Item 37** (mfg-farm): Ready to execute upon test print confirmation
+- ✅ **Item 38** (resistance-research): Ready for Phase 1 post-launch expansion planning
+- **Market monitoring**: 13:00 UTC pre-checks, 13:30–20:00 UTC live session monitoring
+- **Gate 1b checkpoint**: June 4, 2026 (5 completed round trips across 2 AAPL sessions)
+
 ---
 
 ## 2026-05-05 03:27–04:00 UTC — Orchestrator Session 728 (Continuation) — Block resolution + seedwarden Track B execution prep
