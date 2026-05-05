@@ -1,3 +1,48 @@
+## Since Last Check-in (Session 785 — 2026-05-05 22:17 UTC) — Post-Phase-1 Measurement Infrastructure Complete
+
+### ✅ SESSION 785 COMPLETE — Committed previous session files, replenished exploration queue, executed Item 17 (resistance-research post-distribution measurement strategy)
+
+**Work Accomplished**:
+
+1. **✅ Committed Session 784 Research Deliverables** (4 production-ready files):
+   - `attribution-measurement-plan.md` — Four-test attribution framework for Phase 1 success tracking
+   - `phase-1-baseline-metrics.md` — Five quantified baselines (vocabulary, institutional contact, litigation, citation, contingency failure)
+   - `100-unit-operations-blueprint.md` — Manufacturing architecture for 100+ units/week scale
+   - `scaling-transition-roadmap.md` — Month-by-month scaling roadmap with capital requirements
+   - Commit: bf18b477
+
+2. **✅ Exploration Queue Refresh** (added 3 new items, now 4-6 items active):
+   - Item 15: seedwarden B2B Distribution & Wholesale Strategy
+   - Item 16: mfg-farm Multi-Color & Adjacent Manufacturing Capability Roadmap
+   - Item 17: resistance-research Post-Distribution Measurement & Phase 2 Sequencing (EXECUTED)
+
+3. **✅ Exploration Queue Item 17 EXECUTED** (resistance-research post-Phase-1 measurement infrastructure):
+   - `phase-1-measurement-dashboard-spec.md` — 4-view dashboard with weekly/monthly cadence and full automation specification
+   - `phase-2-domain-research-priority-matrix.md` — 8 Phase 2 domain candidates (Domains 39-46) with scoring matrix and decision rules
+   - `phase-2-research-acceleration-model.md` — Token budgets, parallel research pairings, specialist requirements, contingency scenarios
+   - `stakeholder-feedback-integration-protocol.md` — Feedback template, red flags with routing implications, 3-step iteration cycle
+   - **Key outcomes**: Phase 1 measurement ready for Day 1 launch; Phase 2 domains data-driven (not calendar-driven); Month 1-2 priority: Domain 42 (Drug Policy, DEA June 29 deadline) + Domain 39 (Reproductive Rights, Nov 2026 ballot)
+   - Status: Production-ready, immediately usable at Phase 1 launch
+   - Commit: 3c604e57
+
+**Project Status**:
+- **resistance-research**: Phase 1 measurement + Phase 2 planning infrastructure complete; blocking item is user distribution path decision (A / A+37 / B)
+- **All other projects**: Unchanged (blocked on external dependencies or time gates)
+
+**Items Still Needing User Input**:
+1. **May 6 13:30 UTC** (~10 hours away): Verify Alpaca DTBP reset (stockbot block)
+2. **resistance-research**: Distribution path decision (A / A+37 / B) to begin Phase 1 launch
+3. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md architecture direction (ARCH-1 through ARCH-7)
+4. **mfg-farm**: Execute test print and provide tolerance feedback
+
+**Exploration Queue Status**: 4 active items (3 queued, 1 completed); queue healthy. Items 15-16 ready for execution if needed.
+
+**Next**: Awaiting user distribution path decision to execute Phase 1 launch. All measurement infrastructure and Phase 2 planning materials ready Day 1.
+
+**Usage**: Session 785 used ~60K tokens (research agent 95K from agent result summary, net new orchestration overhead minimal)
+
+---
+
 ## Since Last Check-in (Session 783 — 2026-05-05 21:30 UTC) — Exploration Queue Completion & Refresh: Verified 2 items complete + Added 2 new items
 
 ### ✅ SESSION 783 COMPLETE — Verified cybersecurity-hardening + resistance-research queue items complete; refreshed queue with 2 new items; queued for immediate execution

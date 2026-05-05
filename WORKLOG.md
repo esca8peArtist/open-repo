@@ -6,6 +6,54 @@
 
 ---
 
+## 2026-05-05 22:17 UTC — [Session 785] Committed Previous Session Files + Exploration Queue Execution (Item 17)
+
+**Task**: Process untracked files from Session 784, replenish exploration queue, and execute high-priority Item 17.
+
+**Work accomplished**:
+
+1. **✅ Committed Session 784 Research Deliverables** — 4 production-ready files from previous session
+   - `projects/resistance-research/attribution-measurement-plan.md` (5,667 words) — Four-test attribution framework with measurement windows
+   - `projects/resistance-research/phase-1-baseline-metrics.md` (5,024 words) — Five quantified baselines with measurement protocols
+   - `projects/mfg-farm/100-unit-operations-blueprint.md` (4,800 words) — Manufacturing operation at 100+ units/week scale
+   - `projects/mfg-farm/scaling-transition-roadmap.md` (3,200 words) — Month-by-month milestones and capital requirements
+   - Commit: bf18b477
+
+2. **✅ Exploration Queue Refresh** — Added 3 new items to maintain queue depth
+   - **Item 15**: seedwarden B2B Distribution & Wholesale Strategy (active, ready for autonomous work)
+   - **Item 16**: mfg-farm Multi-Color & Adjacent Manufacturing Roadmap (active, ready for scoping)
+   - **Item 17**: resistance-research Post-Distribution Measurement & Phase 2 Sequencing Plan (active, ready for autonomous work)
+   - Queue status: 4 active items (Items 4-6 blocked on external dependencies, Items 12-13 time-gated)
+
+3. **✅ Exploration Queue Item 17 EXECUTED** — Complete post-Phase-1 measurement infrastructure
+   - **Deliverables** (all 4 files completed):
+     - `phase-1-measurement-dashboard-spec.md` (2,600 words) — 4-view dashboard (summary, institutional tiers, domain heatmap, reliability scoring)
+     - `phase-2-domain-research-priority-matrix.md` (2,200 words) — 8 Phase 2 domain candidates with scoring matrix and sequencing rules
+     - `phase-2-research-acceleration-model.md` (1,800 words) — Token budget, parallel pairings, specialist requirements, contingency scenarios
+     - `stakeholder-feedback-integration-protocol.md` (1,300 words) — Feedback template, red flags, 3-step iteration cycle
+   - **Key outcomes**:
+     - Phase 1 measurement dashboard ready for launch on Day 1 (4-week cadence, fully automated where possible)
+     - Phase 2 domains prioritized: Domain 42 (Drug Policy, DEA June 29 deadline) + Domain 39 (Reproductive Rights, Nov 2026 ballot) for Month 1-2 immediate start
+     - Phase 2 research capacity model accounts for token budget constraints and parallel execution patterns
+     - Feedback integration protocol enables data-driven Phase 2 sequencing (not calendar-driven)
+   - **Status**: Production-ready, immediately usable at Phase 1 launch
+   - Commit: 3c604e57
+
+**Project status**:
+- **resistance-research**: Phase 1 measurement & Phase 2 planning infrastructure complete; blocking item remains user distribution path decision (A / A+37 / B)
+- **All other projects**: Unchanged (blocked on external dependencies, time gates, or user action)
+- **Exploration queue**: 4 active items (3 queued, 1 newly completed)
+
+**Time elapsed**: ~50 minutes wall-clock (research agent 579s, orchestration/commits 2min)
+
+**Items still needing user input**:
+1. May 6 13:30 UTC: Verify Alpaca DTBP reset (stockbot block)
+2. resistance-research: Distribution path decision (A / A+37 / B) for Phase 1 launch
+3. stockbot: Review CODE_REVIEW_SYNTHESIS.md and approve architecture direction
+4. mfg-farm: Execute test print + provide tolerance feedback
+
+---
+
 ## 2026-05-05 21:30 UTC — [Session 783] Exploration Queue Completion & Refresh: Verified 2 items complete + Added 2 new items
 
 **Task**: All major projects blocked on external dependencies (user decisions, time-gated events). Per protocol: (1) verify exploration queue items complete, (2) add new items if queue < 3, (3) work on high-priority ready items or commit status.

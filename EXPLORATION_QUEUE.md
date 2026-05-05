@@ -185,6 +185,54 @@
 
 ---
 
+### Item 15: seedwarden B2B Distribution & Wholesale Strategy (Session 785)
+**Status**: ACTIVE — Ready for autonomous exploration
+**Scope**: Develop B2B distribution channels for Phase 2+ products (seed packets, guides, digital content partnerships)
+**Deliverables**:
+- B2B partner identification (gardening suppliers, seed cooperatives, agricultural extension networks, garden centers, homesteading blogs)
+- Wholesale pricing matrix and margin models (vs. Etsy direct)
+- Partnership outreach templates and negotiation framework
+- Digital affiliate + referral program design
+- Resale rights licensing strategy for PDF products
+**Key questions**: Which products have highest B2B demand? What margins are viable? Which channels have lowest acquisition friction?
+**Owner**: seedwarden agent
+**Context**: Phase 2 product expansion complete; current strategy assumes Etsy/social direct-to-consumer. B2B channel could provide 10-50x scaling lever without capex or additional SKU development. Foundation: Phase 3 product strategy already documented in `phase-3-product-development-strategy.md`.
+
+---
+
+### Item 16: mfg-farm Multi-Color & Adjacent Manufacturing Capability Roadmap (Session 785)
+**Status**: ACTIVE — Ready for autonomous exploration (post-test-print)
+**Scope**: Design production pathway to multi-color printing, multi-material (resin, SLS), and adjacent manufacturing (laser, CNC)
+**Deliverables**:
+- Multi-color FDM strategy (hardware options: Bambu P1S AMS, E3D ToolChanger, dual-nozzle vs. sequential batch), cost/time tradeoffs, first product targets
+- Resin printing viability (product candidates: thin-wall precision parts, transparent components, jewelry)
+- Laser cutting capability assessment (panel designs, gaskets, custom jigs, leather goods)
+- CNC capability assessment (metal inserts, hardened plastic, tooling)
+- 12-month capability roadmap with trigger conditions ($10K revenue threshold, order volume triggers)
+- Supplier ecosystem planning (equipment leasing, outsourcing hybrid model, facility expansion)
+**Key questions**: Does ModRun click-fit improve with multi-color? What new products become viable with resin? Which adjacent manufacturing increases margins?
+**Owner**: mfg-farm agent
+**Context**: Item 9 product viability analysis identified Wave 3 laser capability decision gate (requires $6-8K capital). Multi-color enables premium product tier. Foundation: Session 697 production-scaling-research.md.
+
+---
+
+### ✅ Item 17: resistance-research Post-Distribution Measurement & Phase 2 Sequencing Plan (Session 785)
+**Status**: COMPLETED 2026-05-05 22:15 UTC
+**Scope**: Design Phase 1→Phase 2 measurement strategy and determine optimal Phase 2 domain sequencing based on Phase 1 results
+**Deliverables** (ALL COMPLETE):
+- ✅ `phase-1-measurement-dashboard-spec.md` (2,600 words) — 4-view dashboard (summary, institutional tiers, domain heatmap, reliability scoring) with weekly/monthly cadence and automation strategy
+- ✅ `phase-2-domain-research-priority-matrix.md` (2,200 words) — 8 Phase 2 domain candidates (Domains 39-46) scored on institutional demand, complexity, urgency; sequencing tiers with specific decision rules and trigger conditions
+- ✅ `phase-2-research-acceleration-model.md` (1,800 words) — Token budget by complexity, parallel research pairings, specialist validation requirements, 4 contingency scenarios for Phase 1 underperformance
+- ✅ `stakeholder-feedback-integration-protocol.md` (1,300 words) — 3-question feedback template, 5 red flags with Phase 2 routing implications, 3-step iteration cycle (Month 1→2→3)
+**Key findings**: 
+  - Month 1-2 priority domains: Domain 42 (Drug Policy, DEA June 29 deadline) + Domain 39 (Reproductive Rights, Nov 2026 ballot)
+  - Strongest Phase 2 signals: convergent gap identification (multiple contacts independently identify same missing topic) and routing lead protocol (warm introductions → second-order diffusion)
+  - Measurement reliability threshold: 5/10 score minimum before Phase 2 go/no-go decisions
+**Outcome**: Phase 1 execution ready to launch with real-time measurement infrastructure. Phase 2 domain selection can now be data-driven and responsive to institutional feedback, rather than calendar-driven. All Phase 2 preparation materials ready for immediate use post-Phase-1-launch.
+**Commit**: 3c604e57
+
+---
+
 ### ✅ Item 14: cybersecurity-hardening Step-by-Step Implementation Guides (Session 752)
 **Status**: COMPLETED 2026-05-05 16:20 UTC
 **Scope**: Convert comprehensive OpSec playbook into executable step-by-step guides for each strategy
