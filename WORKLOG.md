@@ -6,7 +6,7 @@
 
 ---
 
-## 2026-05-05 21:30–21:55 UTC — Session 759 — Parallel Exploration Research: resistance-research + cybersecurity-hardening Phase 2 Prep
+## 2026-05-05 21:30–22:10 UTC — Session 759 — Parallel Exploration Research: resistance-research + cybersecurity-hardening + stockbot May 12 Contingency
 
 **Work Completed**:
 
@@ -54,9 +54,34 @@
 - Combined execution time: ~8 minutes wall-clock (sequential would be ~15–20 min)
 - Efficiency gain: 3.5x token savings via parallel execution
 
+3. ✅ **Exploration Queue Item: stockbot — May 12 Contingency Planning & Hedging Strategy** (Agent ac9294ebb1b83547b)
+   - **Deliverable**: `projects/stockbot/gate-1-contingency-playbook.md` (4,757 words, v5 supersedes v4 from May 5)
+   - **Contents**:
+     - **Part 1: May 12 Outcome Scenarios** (3 branches with updated probabilities per current 2-session architecture)
+       - Scenario A (Pass): confirmed_round_trips ≥3 (~20–25% probability); AAPL h+9 position reaches h=10 on May 13–14 (1 day after checkpoint), reachable only via early exits or May 12 session strength
+       - Scenario B (Near-Miss): 1–2 round trips (~30% probability); three sub-patterns (B1: timing gap only, B2: threshold too tight, B3: capital not redeploying); first AAPL SELL lands May 13–15 and June 4 holds without extension
+       - Scenario C (Far-Miss): 0 round trips; requires C1/C2 disambiguation (timing artifact vs. true execution failure) before applying recovery option
+     - **Part 2: Options Overlay** (covered calls + protective puts)
+       - Covered calls: VRP-driven ~70% structural win rate, ~14.6% annualized yield after friction (Scenario A only, Sharpe ≥0.5, shares ≥100)
+       - Protective puts: Not cost-justified at +$924 unrealized PnL
+       - Collars: Post-Gate-2 tool
+     - **Part 3: Leverage & Tier Scaling**
+       - Concentration on outperformers: Requires 10+ round trips per session before comparison is statistically meaningful; HMM regime classifier required to distinguish model outperformance from regime luck
+     - **Part 4: Full Decision Tree** (ASCII tree with go/no-go thresholds at every branch)
+       - Executable at 20:00 UTC May 12 with master checkpoint SQL query output
+     - **Part 5: Timeline Adjustment** (scenario-dependent live trading launch dates)
+       - Scenario A: September 2026; Scenario B: October 2026; Scenario C+fixes: October–November 2026 (C4 option extends to July 12)
+   - **Strategic Value**:
+     - Eliminates "what do we do if Gate 1 fails?" ambiguity at May 12 checkpoint
+     - Four recovery options (C1/C2/C3/C4) with resource estimates and trade-offs
+     - Options overlay strategy ready for Scenario A activation
+     - Timeline adjustments pre-computed for all branches
+   - **Readiness**: Production-ready for May 12 execution
+
 **Next Actions**:
 - resistance-research: User selects Path A/A+37/B → orchestrator executes using phase-1-execution-checklist.md
 - cybersecurity-hardening: Tier 1 kickoff → use tier-1-effectiveness-framework.md + recipient-feedback-template.md for Day 0-30 data collection and Phase 2 gate assessment
+- stockbot: May 12 checkpoint → use gate-1-contingency-playbook.md for outcome assessment and recovery strategy selection if needed
 
 ---
 
