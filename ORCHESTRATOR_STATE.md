@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-05T11:11:54Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-05T14:10:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.7% (58,904 tokens) | All-models 14.0% | Reset in 157h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.4% (127,601 tokens) | All-models 17.0% | Reset in 154h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -56,6 +56,12 @@
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 ---
+### stockbot — CRITICAL: Alpaca account has zero day-trading buying power (May 5 market hours)
+**Date blocked**: 2026-05-05 14:46 UTC
+**Context**: May 5 market open at 13:30 UTC. Engine restarted at 14:46 UTC with bug fix (get_order_by_id). All 52 ticker sessions generating trading signals correctly. However, all BUY orders fail immediately with Alpaca error 40310000: "insufficient day trading buying power" (daytrading_buying_power=0). Account is properly funded for paper trading, but day-trading buying power is explicitly zero. This blocks ALL position opens and position adjustments. 20 positions remain OPEN (from April 29) with +$4,581 unrealized P&L. SELL orders (for position closes) may still work, but cannot open new positions or scale existing positions. This is the same account-level issue flagged April 28 (Session 595: Alpaca account configuration TBD).
+**What I need**: Check Alpaca account settings for day-trading buying power. Either: (1) Account needs margin enabled (Account → Settings → Leverage), (2) Account needs equity/cash deposit, or (3) Account requires specific day-trading account configuration. Confirm daytrading_buying_power > 0 before market close 20:00 UTC to avoid missing Gate 1b trading window.
+**Verify with**: `curl -s -X GET "https://api.alpaca.markets/v2/account" -H "Authorization: Bearer $APCA_API_KEY_ID" | jq '.daytrading_buying_power'`
+**Resolution**:
 ---
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
@@ -68,42 +74,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-### Assessment
-- **Autonomous work**: Exploration queue item complete. Next work available: (1) if user provides distribution path decision → Phase 1 execution begins immediately, (2) if stockbot contingency scenarios materialize → decision framework deployed, (3) May 6-12 continuous market monitoring per contingency playbook.
-- **System status**: Stockbot engine healthy, all other projects at external-dependency wait state
-- **Confidence**: HIGH — contingency playbook is production-ready and actionable on May 12
+   - Updated get_database_stats() to report all 10 tables (was missing 4)
+   - Updated test assertions to reflect current schema (10 tables, not 6)
+   - All 25 unit tests passing (verified)
+   - Commits: 1e4d90c (stockbot submodule), aa59e8f (parent repo)
 
-**Next session options**:
-- **13:00 UTC today** (Session 733): Pre-market health check for market open (if within 2h of scheduled event)
-- **20:00 UTC today**: Post-market analysis and stockbot contingency monitoring trigger
-- **Anytime**: User provides distribution path decision → immediate Phase 1 execution begins (estimated 3-4h autonomous execution)
+2. ✅ **Engine Restart**: 
+   - Discovered engine was not running (shut down at 09:32:35 UTC with USER_REQUEST)
+   - Verified active-sessions.json has 52 ticker sessions configured (AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA, IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T, BRK.B, NFLX, COST, TXN, AVGO, ABBV, BMY, TMO, CAT, SBUX, RTX, AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK, HD, LMT, UPS, REGN, FDX)
+   - Restarted launch_stacker_sessions.py with active-sessions.json config at 11:39 UTC
+   - Engine now running (PID 177133)
+   - Ready for 13:30 UTC market open with position closes
 
-**Session 732 complete** (2026-05-05 05:28–06:10 UTC) — Token usage: 85,988 (subagent). Orchestration commit pending.
-
-
----
-
-## Session 743 (2026-05-05 08:55–09:10 UTC) — Orientation Complete: All Projects Blocked, Standing by for Pre-Market Health Check
-
-### Overall Status: ✅ SESSION ORIENTATION COMPLETE — All main projects blocked on user input/actions; exploration queue lower priority given 4h window to market event (13:30 UTC). Pre-market health check scheduled for 13:00 UTC.
-
-**Session Work**:
-1. ✅ **Orientation**: Read ORCHESTRATOR_STATE.md, verified Session 742 just completed (08:55 UTC)
-2. ✅ **Block resolution check**: No active BLOCKED.md items with Resolution field empty
-3. ✅ **INBOX processing**: No new user items in INBOX.md
-4. ✅ **Project status verification**:
-   - **resistance-research** (#1): Framework 100% ready, awaiting user distribution path decision (A / A+37 / B) → Phase 1 execution estimated 3–4h upon decision
-   - **stockbot** (#2): Engine configured, 19 positions scheduled to close at market open (13:30 UTC), AAPL position staying open
-   - **All others**: Blocked on user test print, tag corrections, approvals, external PR review, etc.
-5. ✅ **Exploration queue status**: Items 39–41 complete; 5+ items remain (lower priority than market event)
-6. ✅ **Pre-market scheduling**: Scheduled `/standup` health check for 13:00 UTC via CronCreate (job ID: 89b01da5)
-
-**Reasoning**: All autonomous coding/research work requires user input to unblock. Exploration queue items are available but lower priority than the 4-hour window to market open (13:30 UTC with 19-position close). Rather than start a multi-hour exploration task and interrupt it at market open, best approach is: (1) stand by until 13:00 UTC, (2) execute pre-market health check (engine verification, close order confirmation), (3) monitor market open 13:30 UTC for position fills, (4) post-market analysis at 20:00 UTC.
+3. ⏳ **Pre-Market Readiness**:
+   - Engine operational with 52 ticker sessions configured in paper trading mode
+   - 19 non-AAPL positions scheduled to close at 13:30 UTC market open
+   - AAPL position (108 shares, +$924 unrealized) scheduled to hold at h+4
+   - Pre-market health check at 13:00 UTC will verify engine readiness
+   
+**Timeline**:
+- **Current time**: 11:45 UTC
+- **Pre-market health check**: 13:00 UTC (75 min away) — verify engine operational
+- **Market open**: 13:30 UTC (105 min away) — execute position closes
+- **Post-market analysis**: 20:00 UTC — assess fills and Gate 1 trajectory
 
 **Next Actions**:
-- **13:00 UTC**: Execute pre-market health check (`/standup` — engine readiness, close order verification, AAPL position status)
-- **13:30 UTC**: Market open (observe 19-position closes, AAPL hold)
-- **20:00 UTC**: Post-market analysis (fill verification, Gate 1 progress)
-- **Anytime**: If user provides distribution path decision → immediate Phase 1 execution (~3–4h autonomous work)
+- Stand by until 13:00 UTC for pre-market health check
+- Monitor engine logs for startup issues
+- Prepare market open monitoring at 13:30 UTC
 
-**Session token usage**: Minimal (orientation + scheduling only, no code/research execution).
+**Session work complete** (code refactored, engine restarted, ready for market event)
+
+**Market Monitoring Status** (12:32 UTC):
+- ✅ Engine running (PID 177133, verified at 12:32 UTC)
+- ✅ Log file last updated at 12:39 UTC (all 52 sessions initialized, sleeping until 13:15 UTC)
+- ⏳ **Scheduled Events**:
+  - **13:15 UTC** (~43 min): Engine wake-up (sessions begin trading 15 min before market open)
+  - **13:30 UTC** (~58 min): US market open — execute 19 non-AAPL position close orders (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL)
+  - **13:45 UTC**: Verify close orders posted to database with realized P&L
+  - **20:00 UTC**: Post-market analysis — query May 5 fills, assess Gate 1b trajectory

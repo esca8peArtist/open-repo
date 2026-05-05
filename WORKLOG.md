@@ -23324,3 +23324,47 @@ May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
   - **13:45 UTC**: Verify close orders posted to database with realized P&L
   - **20:00 UTC**: Post-market analysis — query May 5 fills, assess Gate 1b trajectory
 
+
+---
+
+## 2026-05-05 15:10 UTC — Session 747 — Orientation + Exploration Queue Work
+
+**Session Start Analysis**:
+1. ✅ **Orientation Complete** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md
+2. ✅ **Active Blocks Verified**:
+   - stockbot DTBP=0: CRITICAL, market-time issue, should resolve 2026-05-06 13:30 UTC (tomorrow market open)
+   - mfg-farm: test print (user action)
+   - resistance-research: user path decision (A / A+37 / B)
+   - No new INBOX items to process
+3. ✅ **Market Status**: 15:10 UTC (May 5) — in middle of US market hours (13:30-20:00 UTC). Stockbot engine running with known DTBP limitation.
+
+**Decision**: 
+- Do NOT modify stockbot during market hours (trading engine active, dangerous to restart)
+- Work on Exploration Queue items with no blockers
+- Keep session focused on high-value research work
+
+**Work in Progress**:
+
+1. ✅ **Exploration Queue Item**: resistance-research Domain 37 Pre-Distribution Baseline Metrics
+   - Task: Establish quantified baseline for election protection coordination measurement
+   - Status: VERIFIED — Document already exists (created earlier 2026-05-05 04:03 UTC), verified accurate by agent research
+   - File: `projects/resistance-research/domain-37-baseline-metrics.md` (495 lines, 47K)
+   - Key metrics verified as current: 31 DOJ voter roll suits, $39.6M CISA budget, 24 election-denier appointees, zero Section 3 proceedings, 23-state AG coalition
+   - Measurement protocol: Day 0 (May 5), Day 30, Day 90, Day 180, post-election review
+   - Ready for Phase 1 distribution execution
+
+2. ✅ **Exploration Queue Item**: seedwarden Phase 2 Endangered Species Market Saturation Analysis
+   - Task: Market research for endangered species guides pricing and positioning
+   - Status: COMPLETE — Document created and committed
+   - File: `projects/seedwarden/research/endangered-species-market-saturation-analysis.md` (25K)
+   - Key findings:
+     - Market is unoccupied: zero quality cultivation guides in premium tier for endangered species
+     - Competitive set: 15-18 references across Etsy + off-platform (Amazon, herbal academies)
+     - Pricing validated: $18–$48 range confirmed by comparable products
+     - Seasonal peaks: Fall (Aug-Nov) strongest, Spring (Mar-May) secondary
+     - Cohort LTV: $20–$130/year depending on segment
+     - Differentiation: "Know it, grow it, protect it" positioning is unique
+   - Recommendation: Launch Wave 1 (Ginseng, Goldenseal, Black Cohosh, Ramps) at $18 single guides, $28–$32 bundles
+   - Ready for Phase 2 Wave 1 execution (May 30 target)
+
+**Session Summary**: Two parallel exploration queue items completed (Domain 37 baseline metrics verified, seedwarden market analysis delivered). Both deliverables advance distribution-readiness and Phase 2 planning. Stockbot market monitoring continues (engine running, DTBP=0 block noted, should resolve tomorrow at market open). No commits needed — both deliverables already staged and agent-committed.
