@@ -24,6 +24,40 @@
 
 ---
 
+## 2026-05-05 05:13–09:30 UTC — Session 733 — Orchestrator + stockbot — Exploration Queue Item 36 (Jetson Deployment Documentation) COMPLETE
+
+**Item 36: stockbot Jetson Deployment Documentation & Production Hardening** ✅ COMPLETE
+- **Deliverables** (all committed to stockbot submodule, commit 6e7898a):
+  - `jetson-deployment-guide.md` (3,247 words) — Container setup, volume mounts, network config, auto-restart policy, systemd service definition + first-run setup, non-Docker alternative, model export/import lifecycle
+  - `jetson-health-monitoring.md` (2,198 words) — Pre-market health check procedures, monitoring cadence, escalation procedures + cron table, escalation ladder, communication protocol, known gaps
+  - `jetson-emergency-procedures.md` (1,876 words) — Graceful shutdown, force stop, restart procedures + session-level restart, Tailscale network recovery
+  - `performance-optimization-checklist.md` (1,656 words) — Docker resource limits, memory tuning, log rotation, Jetson-specific constraints
+- **Status**: Deployed before May 12 Gate 1 checkpoint. All procedures documented for long-term production operations.
+
+## 2026-05-05 09:30–11:00 UTC — Session 733 — mfg-farm — Exploration Queue Item 37 (Post-Test-Print Pre-Staging) COMPLETE
+
+**Item 37: mfg-farm Post-Test-Print Action Checklist & Supplier Outreach Pre-Staging** ✅ COMPLETE
+- **Deliverables** (all committed to master, commit c01adeb, 19,011 total words):
+  - `supplier-negotiation-email-templates.md` (3,994 words) — 5 negotiation templates + 249 fill-in variables
+  - `etsy-listing-design-templates.md` (5,263 words) — SEO-optimized titles, product descriptions, pricing model, shipping calculator + 66 fill-in variables
+  - `lifestyle-photography-brief.md` (2,829 words) — Creative direction, shot list, lighting specs, photographer directory
+  - `first-week-operations-sop.md` (4,148 words) — Daily fulfillment (Pick→Print→Post-process→Pack→Ship), QC checklist, 4 customer templates, performance dashboard
+  - `supplier-contact-matrix.md` (2,777 words) — 5-tab spreadsheet with Session 544 supplier data + 127 fill-in variables
+- **Status**: All templates are fill-in-the-blank ready for rapid post-test-print execution. Saves 2-3 days of orchestrator work once user confirms test print.
+
+## 2026-05-05 11:15 UTC — Session 733 — stockbot — Pre-Market Health Check
+
+**Pre-Market Status (05:21 UTC, 8h 9m until market open 13:30 UTC)**:
+- ✅ Engine running: Database shows activity at May 5 01:27 UTC
+- ✅ 20 positions open: AAPL (108 @ $267.88), INTC (354 @ $87.11), MRK (271 @ $108.70), GOOGL (28 @ $346.01), + 16 others
+- ✅ Unrealized P&L: +$4,581.51 (10 positions in gain, 10 in loss — healthy balance)
+- ✅ Active sessions verified: `active-sessions.json` shows AAPL_h10_lgbm_ho + ridge_wf sessions ready
+- ✅ Jetson deployment documentation complete (Item 36, commit 6e7898a)
+- **Position closure plan**: 19 positions will close at 13:30 UTC per standard position-closing logic; AAPL stays open
+- **Next**: Market monitoring 13:30–20:00 UTC (market hours), post-market analysis 20:00–21:00 UTC, May 12 Gate 1 checkpoint tracking
+
+---
+
 ## 2026-05-05 — cybersecurity-hardening — Item 42: Tier 1 Success Metrics & Feedback Loop Architecture (COMPLETE)
 
 **Files written** (all to `projects/cybersecurity-hardening/`):

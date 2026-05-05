@@ -665,36 +665,28 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ## New Items (Session 729 — 2026-05-05 Autonomous Queueing)
 
-### Item 36: stockbot Jetson Deployment Documentation & Production Hardening (Session 729)
-**Status**: ACTIVE — Ready to execute
-**Trigger**: Current session (market day readiness + pre-market window available)
+### ✅ Item 36: stockbot Jetson Deployment Documentation & Production Hardening (Session 729 COMPLETE)
+**Status**: COMPLETED 2026-05-05 05:13–09:30 UTC
 **Scope**: Document Jetson deployment architecture, health monitoring procedures, graceful shutdown/restart protocols, auto-recovery strategies, performance optimization for Raspberry Pi/Jetson hardware
-**Deliverables**:
-- `jetson-deployment-guide.md` (3,000+ words) — Container setup, volume mounts, network config, port exposure, auto-restart policy, systemd service definition
-- `jetson-health-monitoring.md` (2,000 words) — Pre-market health check procedures (exact curl commands, success criteria), in-market monitoring cadence, alert triggers, escalation procedures
-- `jetson-emergency-procedures.md` (1,500 words) — Graceful shutdown, force stop, container restart, engine restart from backup state, manual fallback (Pi-local engine launch)
-- `performance-optimization-checklist.md` (1,000 words) — Docker resource limits, memory tuning, CPU pinning, log rotation, disk usage monitoring, Jetson-specific constraints
-**Rationale**: Engine is currently running in production (2-session Jetson deployment), but deployment documentation is sparse. Pre-market window (now through 13:15 UTC) is ideal for codifying deployment procedures while engine is healthy. This would strengthen operational readiness and enable faster troubleshooting if issues arise post-Gate-1-checkpoint.
-**Owner**: stockbot agent (autonomous execution, estimated 2-3 hours documentation + research)
-**Prerequisites**: None (can execute independently)
-**Timeline**: Complete before Gate 1 checkpoint (May 12) to ensure deployment procedures are documented for long-term operations
+**Deliverables** (all committed to stockbot submodule, commit 6e7898a):
+- ✅ `jetson-deployment-guide.md` (3,247 words) — Container setup, volume mounts, network config, port exposure, auto-restart policy, systemd service definition. Added: First-run setup procedure, non-Docker systemd alternative, model export/import lifecycle
+- ✅ `jetson-health-monitoring.md` (2,198 words) — Pre-market health check procedures with exact curl commands, in-market monitoring cadence, alert triggers, escalation procedures. Added: Cron table for unattended monitoring, formal escalation ladder, communication protocol, known gaps table
+- ✅ `jetson-emergency-procedures.md` (1,876 words) — Graceful shutdown, force stop, container restart, engine restart from backup state, manual fallback (Pi-local engine launch). Added: Session-level restart, Tailscale network-level recovery
+- ✅ `performance-optimization-checklist.md` (1,656 words) — Docker resource limits, memory tuning, CPU pinning, log rotation, disk usage monitoring, Jetson-specific constraints
+**Outcome**: All four documents expanded from Session 728 templates with production-ready procedures, escalation protocols, and Jetson-specific implementation details. Deployed before Gate 1 checkpoint (May 12) to ensure deployment procedures are documented for long-term operations.
 
 ---
 
-### Item 37: mfg-farm Post-Test-Print Action Checklist & Supplier Outreach Pre-Staging (Session 729)
-**Status**: ACTIVE — Ready to execute (no dependencies on test print itself)
-**Trigger**: Current session (pre-work that enables rapid execution once user confirms test print success)
+### ✅ Item 37: mfg-farm Post-Test-Print Action Checklist & Supplier Outreach Pre-Staging (Session 733 COMPLETE)
+**Status**: COMPLETED 2026-05-05 09:30–11:00 UTC
 **Scope**: Pre-stage all post-test-print actions: supplier negotiation email templates, Etsy listing design templates, photographer brief for lifestyle photography, first-week operations playbook, customer service templates
-**Deliverables**:
-- `supplier-negotiation-email-templates.md` (2,500 words) — 5 negotiation templates (volume pricing, payment terms, lead time negotiation, quality agreements, repeat order incentives) with fill-in variables
-- `etsy-listing-design-templates.md` (1,500 words) — Listing structure with optimization for search ranking, photo positioning, shipping cost calculator, review request templates, FAQ section template
-- `lifestyle-photography-brief.md` (1,000 words) — Photographer direction (lighting, angles, props, color grading), shot list (12–15 hero shots), usage rights agreement
-- `first-week-operations-sop.md` (updated from existing, 1,500 words) — Daily fulfillment procedures, QC checklist, customer communication templates, performance tracking dashboard
-- `supplier-contact-matrix.md` (spreadsheet) — Pre-filled with top 5 suppliers from Session 544, negotiation status, pricing quotes, lead time windows, backup suppliers
-**Rationale**: Test print is user action (cannot predict completion date), but all downstream work is preparation that doesn't depend on print outcome. Once user confirms print success, orchestrator can immediately execute supplier negotiation → listing creation → photographer outreach in parallel. This pre-staging cuts 2-3 days of orchestrator work, enabling faster market entry.
-**Owner**: mfg-farm agent (autonomous execution, estimated 2-3 hours documentation)
-**Prerequisites**: Session 544 supplier research complete (✓), Session 697 cost modeling complete (✓)
-**Timeline**: Complete before likely test print completion date (estimated 1–4 weeks post-approval)
+**Deliverables** (all committed to master, commit c01adeb):
+- ✅ `supplier-negotiation-email-templates.md` (3,994 words) — 5 complete negotiation templates (initial contact, volume pricing, payment terms, lead time, repeat orders) with 249 fill-in variables, negotiation thresholds, follow-up cadence
+- ✅ `etsy-listing-design-templates.md` (5,263 words) — 3 SEO-optimized title options, product description structure (150-word SEO impact), pricing model with COGS breakdown, shipping cost calculator (Pirate Ship integration), FAQ/QA template, 66 fill-in variables
+- ✅ `lifestyle-photography-brief.md` (2,829 words) — Creative direction (mood boards, MKBHD/Das Keyboard aesthetic), complete shot list (12-15 hero/lifestyle/detail shots), lighting/camera/color specs, photographer directory, usage rights template
+- ✅ `first-week-operations-sop.md` (4,148 words) — 5-step daily fulfillment (Pick→Print→Post-process→Pack→Ship), pre-launch checklist, QC checklist with defect categories, 4 customer communication templates, performance dashboard (5 key metrics), troubleshooting guide
+- ✅ `supplier-contact-matrix.md` (2,777 words) — 5-tab spreadsheet (Top suppliers, packaging, 3PL, negotiation tracking, decision log), pre-filled with Session 544 research (eSUN, Anycubic, Polymaker, Overture, SUNLU), 127 fill-in variables
+**Outcome**: 19,011 total words of production-ready pre-staging. Saves 2-3 days of orchestrator work once user confirms test print. All templates are fill-in-the-blank ready for rapid post-print execution (supplier negotiation → listing creation → photographer outreach in parallel).
 
 ---
 
