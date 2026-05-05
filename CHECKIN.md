@@ -1,3 +1,50 @@
+## Since Last Check-in (Session 782 — 2026-05-05 21:15 UTC) — Exploration Queue Refresh: Added 3 new items + Completed mfg-farm Production Workflow
+
+### ✅ SESSION 782 COMPLETE — Added 3 new exploration queue items per protocol; completed mfg-farm production workflow research (1 of 3 new items)
+
+**Work Accomplished**:
+
+1. **✅ Exploration Queue Refresh** — Added 3 new items per protocol (queue was fully satisfied Session 781):
+   - **mfg-farm: Post-test-print production workflow & scaling roadmap** — Ready for exploration; production-ready operational blueprint for post-test-print execution
+   - **cybersecurity-hardening: Q2 2026 threat landscape expansion** — May 2026 threat update (supply chain escalation, election interference, AI deepfakes, Palantir IRS contract, FISA outcome)
+   - **resistance-research: Post-Phase-1 institutional adaptation patterns** — Pre-launch feedback loop design for Phase 1→Phase 2 transition smoothness
+
+2. **✅ mfg-farm Production Workflow — COMPLETE**
+   - **Deliverable**: `projects/mfg-farm/production-workflow-v1.md` (294 lines, 2,500 words)
+   - **Sections**: (1) Post-test-print workflow (STL, slicing, printing, post-processing, packaging), (2) Batch queueing (single-printer 20 units/week, two-printer 50 units/week), (3) Quality gates (2% rejection target, acceptance criteria), (4) Monthly targets Month 1-6, (5) Automation decisions, (6) Implementation checklist, (7) Risk mitigation
+   - **Key findings**:
+     - Per-unit timeline: 36 calendar hours, 28 active labor minutes (Mon start → Wed ship)
+     - Batch economics: 5 units/batch, 4.3 hours print time, 2.5 hours post-process labor
+     - Month 1: 80 units, $185 COGS, $1,999 revenue (90.7% gross margin)
+     - Single printer handles 20-80 units/week; trigger 2nd printer at 50+ units/week consistent demand
+     - AutoFarm3D door opener ROI: 4.3 weeks payback, enables unattended overnight operation
+   - **Status**: Production-ready, eliminates post-test-print planning paralysis; enables immediate Month 1 launch upon approval
+
+**Project Status Update**:
+- **mfg-farm**: Production workflow blueprint COMPLETE. Test print is current blocking gate (expected May 6-15). Post-approval, all Month 1 launch planning can proceed with zero ambiguity using production-workflow-v1.md.
+- **All other projects**: Unchanged (awaiting user input or time-gated events)
+
+**Items Still Needing User Input**:
+1. **May 6 13:30 UTC** (16 hours from session): Verify Alpaca DTBP resets from 0 to >$0 (verification command in BLOCKED.md)
+2. **resistance-research**: Distribution path decision (A / A+37 / B) unlocks Phase 1 execution (3-4 hour timeline)
+3. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md architecture decisions (ARCH-1 through ARCH-7) before May 12
+4. **mfg-farm**: Execute test print (May 6-15 window expected)
+
+**Exploration Queue Status**:
+- Session 781: Completed 3 items (gate-1-recovery, phase-1-baseline-metrics, 100-unit-ops), queue fully satisfied
+- Session 782: Added 3 new items, completed 1 (mfg-farm production workflow), 2 remaining (cybersecurity-hardening threat update, resistance-research feedback integration)
+- Queue depth healthy; no risk of idle sessions
+
+**Status Summary**:
+- All autonomous research work complete through May 12 for stockbot
+- All autonomous prep work complete for mfg-farm (production workflow ready for post-test-print execution)
+- System remains at maximum execution readiness, awaiting: (a) user distribution path decision, (b) May 6 DTBP reset, (c) May 12 Gate 1 outcome, (d) test print completion
+- Next autonomous work: May 6 DTBP verification, May 12 Gate 1 evaluation, or upon user decisions triggering Phase 1/Phase 2 execution
+
+**Token Usage**: Session 782 used ~95K tokens
+
+---
+
 ## Since Last Check-in (Session 781 — 2026-05-05 20:48+ UTC) — Exploration Queue Deepening: Gate 1 Recovery + Baseline Metrics + Manufacturing Operations
 
 ### ✅ SESSION 781 COMPLETE — Executed 3 parallel exploration queue research tasks (stockbot Gate 1 failure recovery deep analysis + resistance-research Phase 1 baseline metrics + mfg-farm 100-unit manufacturing operations design). All three production-ready for post-May-12 and post-test-print execution.

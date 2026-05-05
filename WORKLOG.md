@@ -6,6 +6,48 @@
 
 ---
 
+## 2026-05-05 21:15 UTC — [Session 782] Exploration Queue Deepening: Added 3 new items + mfg-farm Production Workflow
+
+**Task**: All major projects blocked on user action (test print, distribution path decision, May 6 DTBP reset, May 12 checkpoint). Per protocol, added 2-3 new exploration queue items and worked on highest-priority ready item.
+
+**Work accomplished**:
+
+1. **✅ Added 3 new exploration queue items to PROJECTS.md**:
+   - **mfg-farm: Post-test-print production workflow & scaling roadmap** — Marked "Ready for exploration now"; production-ready operational blueprint (2,500 words). Research: STL approval, slicing params, print execution, post-processing, batch queueing strategy (single-printer Month 1-3, two-printer Month 4-6), quality gates, failure recovery, monthly volume projections. Business value: Eliminates post-test-print planning paralysis; enables immediate Month 1 supplier negotiation and production launch.
+   - **cybersecurity-hardening: Q2 2026 threat landscape expansion** — May 2026 mid-quarter threat update (supply chain escalation Shai-Hulud campaign, election-specific threats NRSC deepfakes, AI-assisted social engineering, Palantir IRS relationship-mapping contract, FISA 702 reauth outcome). Produces: `2026-threat-landscape-q2-update.md` (~2,500 words). Business value: Ensures Phase 1 distribution threat model current through May 2026 before Tier 1 launch.
+   - **resistance-research: Post-Phase-1 institutional adaptation patterns** — Once Phase 1 launches, institutions will adapt framework for their contexts. Research: expected adaptation patterns by sector, feedback collection mechanisms, iterative refinement cycles, sector-specific modification protocols, adoption velocity benchmarks. Produces: `feedback-integration-roadmap.md` + survey templates. Business value: Post-distribution execution smoother with pre-planned feedback loops.
+
+2. **✅ Completed mfg-farm production workflow research**:
+   - **Deliverable**: `projects/mfg-farm/production-workflow-v1.md` (294 lines, ~2,500 words)
+   - **Content**: 7 parts covering (1) Post-test-print workflow (STL approval, slicing, print execution, post-processing, packaging), (2) Batch queueing strategy (single-printer 20 units/week, two-printer 50 units/week, AutoFarm3D ROI), (3) Quality gates & failure recovery (acceptance criteria, rejection rate 2%, reprint protocol), (4) Monthly production targets Month 1-6 (20→100 units/week), (5) Automation decisions (AutoFarm3D, bulk filament, post-processing), (6) Implementation checklist, (7) Risk mitigation
+   - **Key findings**:
+     - Per-unit timeline: 36 calendar hours (Mon start → Wed ship), 28 active labor minutes
+     - Batch strategy: 5 units/batch, 4.3 hours/batch print time, 2.5 hours labor per batch
+     - Rejection rate: ~2% (typical FDM tolerance variance)
+     - Month 1 economics (80 units): $185 COGS, $1,999 revenue, 90.7% gross margin
+     - Single printer sustains 20-80 units/week; two-printer at 50+ units/week threshold
+     - AutoFarm3D door opener ROI: 4.3 weeks payback at 25+ units/week
+   - **Status**: Production-ready, ready for post-test-print execution (May 15-20 window)
+
+**Project status**:
+- **mfg-farm**: Production workflow blueprint complete. Test print is current blocker (May 6-15 window). Upon approval, Month 1 launch planning and supplier negotiation can proceed immediately with zero ambiguity.
+- **All other projects**: Unchanged (awaiting user decisions or time-gated events: May 6 DTBP reset, May 12 Gate 1 checkpoint, user distribution path decision for resistance-research)
+
+**Queue status**:
+- Added 3 new exploration items per protocol (queue fully satisfied previous session)
+- Completed 1 of 3 (mfg-farm production workflow)
+- Queue now has: 2 active + 3 pending = healthy depth for future sessions
+
+**Next work**:
+- May 6 13:30 UTC: Verify Alpaca DTBP reset (automated check possible via verification command in BLOCKED.md)
+- May 12: Gate 1 checkpoint evaluation (stockbot contingency playbook ready for execution if Gate 1 fails)
+- Upon user distribution path decision: Phase 1 execution infrastructure readiness audit (resistance-research)
+- Upon test print completion: Month 1 production launch with production-workflow-v1.md
+
+**Token usage**: Session 782 used ~95K tokens (research + document creation)
+
+---
+
 ## 2026-05-05 — mfg-farm — 100-Unit Operations Blueprint + Scaling Roadmap (Session 2)
 
 **Task**: Produce production-ready manufacturing scaling documents for ModRun print farm: 100-unit operations blueprint and scaling transition roadmap. Deepened and extended prior research session.
