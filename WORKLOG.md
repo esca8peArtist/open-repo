@@ -6,6 +6,26 @@
 
 ---
 
+## 2026-05-04 — workout — Strength programming deepening: periodization, home gym, recovery
+
+**File**: `projects/workout/strength-programming-deepening.md`
+
+**Key findings**:
+- LP phase produces 30–50 lb squat gain, 40–70 lb deadlift gain, 15–25 lb bench gain before stalling at ~3–6 months; ends when three consecutive sessions fail to set a new record
+- Block periodization: accumulation (65–75% × 4–5 sets of 5–8, RPE 6–7.5) → intensification (78–88% × 3–4 sets of 3–5, RPE 7.5–8.5) → 2–3 week peak; volume is the manipulation variable, not intensity
+- Peaking mechanics: volume drops 30–35% at 3 weeks out; first heavy singles at 90–93% at 2 weeks out; only openers touched in final week; proper peak yields 5–10% PR jump
+- RPE/RIR autoregulation: work sets at RPE 7–8.5 (RIR 1–3) for best stimulus/fatigue tradeoff; accuracy requires 6+ months training before relying on it as primary loading tool
+- Deload triggers: weight stalled 2+ sessions, HRV 10–20% below 30-day baseline, elevated resting HR 5–8 BPM for 3+ days, motivation crash, joint aches before warmup
+- Home gym squat: loaded BSS (4×8/leg with heavy dumbbells) matches moderate barbell squat stimulus; Spanish squat with bands for quad isolation
+- Deadlift alternatives: RDL (eccentric-dominant, 3–4s down) is the primary home gym posterior chain lift; trap bar deadlift allows 15–25% more load than conventional with reduced spinal shear
+- Pike press → feet-elevated pike → partial wall HSPU → full wall HSPU pipeline loads 66–100% of bodyweight overhead; wall HSPU is a genuinely heavy press
+- CWI blunts hypertrophy (2024 meta-analysis, Pinero et al.): reduces type II fiber growth, suppresses mTOR pathway; avoid post-strength training; if used for wellbeing, wait 4–6 hours post-session
+- Sleep: same-time schedule is the highest-leverage habit; 65–68°F bedroom; eliminate screens 60 min before bed; morning bright light anchors circadian clock
+- Active recovery: evidence supports subjective improvement (soreness, readiness) but not objective performance recovery over passive rest; 20–40 min easy walk or cycling is the validated range
+- HRV: RMSSD via HRV4Training, Elite HRV, Oura, or WHOOP; compare daily to rolling 30-day baseline; >20% below = rest day; no RCT evidence that HRV-guided training improves strength specifically (only endurance)
+
+---
+
 ## 2026-05-04 — cybersecurity-hardening — AI surveillance and deepfake threat analysis 2026
 
 **File**: `projects/cybersecurity-hardening/ai-surveillance-threat-analysis.md`
