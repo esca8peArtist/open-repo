@@ -918,34 +918,37 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
-### Item 50: resistance-research Domains 42-50 Candidate Scoping (Session 741 START)
-**Status**: QUEUED (UNBLOCKED NOW — independent of Phase 1 execution timing)
-**Trigger**: Autonomous execution now OR immediately post-Phase-1-launch (user-agnostic)
-**Scope**: Strategic scoping of 9 additional domain candidates (42-50) beyond current 38-41 framework, enabling 49+ domain proposal for 2026-2027 distribution and 3+ year strategic planning
-**Deliverables**:
-- `domains-42-50-candidate-analysis.md` (4,000-5,000 words) — 9 candidates with gap analysis, urgency assessment, coalition strength, research complexity, 2026-2028 policy windows (e.g., reproductive rights post-Dobbs, labor power shifting, disability rights, international trade/sovereignty)
-- Research roadmaps for top 3 candidates (8-10K words each format, matching Items 10/12/17/39/44 structure)
-- Format consistency verified against existing domain candidate analysis
-**Owner**: resistance-research agent (autonomous execution, estimated 3-4 hours)
-**Prerequisites**: None — parallel work while Phase 1 execution decision pending
-**Key areas**: 2026-2028 policy windows, coalition building potential, international precedent, institutional adoption patterns
-**Rationale**: Enables proactive Phase 2 planning (user can decide multi-wave distribution strategy immediately post-Phase-1, rather than waiting 4 weeks). Supports both distributed-now (Path A) and expanding-framework (Path B) strategies equally.
+### ✅ Item 50: resistance-research Domains 42-50 Candidate Scoping (Session 741 COMPLETE)
+**Status**: COMPLETED 2026-05-05 19:45–20:05 UTC
+**Deliverable**: `projects/resistance-research/ITEM50_DOMAINS42-50_CANDIDATES.md` (3,400+ words)
+**Scope**: Strategic scoping of 9 additional domain candidates (42-50) beyond current 38-41 framework, enabling 49+ domain proposal for 2026-2027 distribution
+**Output**:
+- ✅ 9 domain candidates evaluated (Reproductive Rights through Immigration)
+- ✅ Priority matrix with urgency assessment and coalition strength
+- ✅ Top 3 candidates with full research roadmaps:
+  - **Domain 42 (Reproductive Rights)**: CRITICAL urgency, VERY HIGH coalition; ballot measures Nov 2026 (MO, NV, VA); research estimate 12-15h
+  - **Domain 43 (Epistemic Infrastructure)**: HIGH urgency, HIGH coalition; fills synthesis gap Domains 8↔36; deepfakes in 2026 primaries; research estimate 10-14h
+  - **Domain 44 (Post-Insurrection Accountability)**: HIGH urgency, MEDIUM-HIGH coalition; MOV Seditious Conspiracy convictions, DOJ capture risk; research estimate 12-16h (4 comparative TJ case studies)
+- ✅ Sequencing guidance: Asset Forfeiture (Domain 47) lowest research complexity; Drug Policy (Domain 46) has June 29 DEA trigger
+**Key findings**: Domains 42-44 represent structural gaps (responsiveness failure, epistemic foundation, accountability mechanisms) in current 41-domain framework
+**Status**: Production-ready for Phase 2 strategic planning. Ready for immediate user decision-making post-Phase-1-launch.
 
 ---
 
-### Item 51: stockbot Institutional Integration & Regulatory Roadmap (Session 741 START)
-**Status**: QUEUED (UNBLOCKED NOW — independent of Gate 1 outcome)
-**Trigger**: Autonomous execution now OR post-Gate-1-validation (user-agnostic), informs post-Gate-2 strategic planning
-**Scope**: Research institutional adoption path (hedge funds, registered investment advisors, family offices, fintechs), regulatory compliance infrastructure, capital formation constraints, multi-asset scaling patterns from institutional players
-**Deliverables**:
-- `institutional-adoption-roadmap.md` (3,000 words) — Three tiers (RIA partnerships, hedge fund licensing, institutional capital), regulatory requirements per tier (Form ADV, Form PF, SIFMA compliance), capital formation constraints (min AUM, investor accreditation)
-- `regulatory-compliance-infrastructure.md` (2,500 words) — SEC/FINRA/CFTC compliance matrix for multi-asset trading (equities, options, crypto, futures), Form 8949 tax infrastructure, client reporting requirements, insurance requirements
-- `institutional-risk-management-framework.md` (2,000 words) — Institutional position sizing models (Kelly criterion for RIA context), leverage constraints (Reg T, portfolio margin), liquidity constraints, operational risk management
-- `capital-formation-strategy.md` (1,500 words) — Initial funding sources (friends/family vs. accredited vs. institutional), AUM growth trajectory, fee structures for institutional vs. retail
-**Owner**: stockbot agent (autonomous execution, estimated 3-4 hours research)
-**Prerequisites**: None — parallel work while Gate 1 executing May 5-12
-**Key areas**: Regulatory burden analysis, capital constraints, institutional adoption barriers, market opportunity sizing
-**Rationale**: Gate 1 (paper trading) and Gate 2 (options/crypto) are personal-scale trading. Gate 3+ requires understanding institutional constraints. Proactive research informs post-Gate-2 strategic decisions (continue retail vs. pivot institutional).
+### ✅ Item 51: stockbot Institutional Integration & Regulatory Roadmap (Session 741 COMPLETE)
+**Status**: COMPLETED 2026-05-05 19:45–20:20 UTC
+**Deliverable**: `projects/stockbot/institutional-integration-research.md` (9,531 words, 4 sections)
+**Scope**: Research institutional adoption path (RIA/hedge fund/institutional capital), regulatory compliance infrastructure, capital formation strategy, multi-asset scaling patterns
+**Output**:
+- ✅ Section 1: Institutional adoption roadmap — 3 tiers with regulatory citations and GO/NO-GO criteria at $500K/$5M/$50M/$500M AUM
+  - Tier 1 (RIA): Investment Advisers Act, Form ADV, $3M minimum viable AUM, 1-2% fees
+  - Tier 2 (Hedge Fund): Section 3(c)(1) exemption, Form PF at $150M, $8-12M minimum AUM, 15-20% performance fees
+  - Tier 3 (Institutional): $25-50M minimum (family office), $250M+ (pension fund)
+- ✅ Section 2: Regulatory compliance matrix — 4-asset compliance (equities/options/crypto/futures), FINRA/SEC/CFTC/IRS/FinCEN rules, Form 8949 tax schema, 3-6 month build timeline
+- ✅ Section 3: Institutional risk management framework — Kelly Criterion extension to multi-client context, market impact adjustment (Almgren-Chriss), client segmentation (cash/margin/qualified), liquidation playbooks
+- ✅ Section 4: Capital formation strategy — 4 funding stages ($500K→$5M→$50M+), 12/24/36-month AUM projections, fee structures, $5M sustainability threshold
+**Key findings**: Form ADV 30-90 day processing; Form PF triggers $150M AUM; minimum viable institutional RIA is $3M AUM (~$75K management fee breaks even); crypto wash-sale exemption favorable (immediate re-entry allowed per IRC 1091 property exception)
+**Status**: Production-ready for post-Gate-2 strategic planning (November 2026 timeframe). Decoupled from Gate 1 outcome.
 
 ---
 

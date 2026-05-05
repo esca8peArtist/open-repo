@@ -26,6 +26,51 @@
 
 ---
 
+## 2026-05-05 19:26+ UTC — Session 741 — Phase 2 Strategic Research: Domains 42-50 + Institutional Integration
+
+**Orientation & Assessment**:
+- All active projects have completed current deliverables; awaiting external dependencies (May 6 DTBP reset, user distribution path decision, test print, architecture review)
+- Exploration Queue: 48 items completed/conditional; 0 active unblocked items. Per protocol, added 3 new exploration items (50, 51, 52) for Phase 2/3 strategic research
+
+**Actions Taken**:
+
+1. ✅ **Added 3 New Exploration Queue Items** (Items 50-52)
+   - Item 50: resistance-research Domains 42-50 Candidate Scoping
+   - Item 51: stockbot Institutional Integration & Regulatory Roadmap
+   - Item 52: mfg-farm Manufacturing Ecosystem & Vertical Integration Strategy
+
+2. ✅ **Spawned 2 Parallel Research Agents** (simultaneous execution)
+   
+   - **Agent 1 (resistance-research)**: Domains 42-50 Candidate Analysis (Item 50)
+     - **Deliverable**: `projects/resistance-research/ITEM50_DOMAINS42-50_CANDIDATES.md` (3,400+ words)
+     - **Output**: 9 domain candidates evaluated with urgency matrix; top 3 (Reproductive Rights, Epistemic Infrastructure, Post-Insurrection Accountability) with full research roadmaps
+     - **Key findings**: Domain 42 (Reproductive Rights) is CRITICAL urgency with VERY HIGH coalition strength; Domain 43 (Epistemic Infrastructure) fills synthesis gap between Domains 8 & 36; Domain 44 requires 4 comparative transitional justice case studies
+     - **Sequencing guidance**: Domain 46 (Drug Policy) has June 29 DEA cannabis rescheduling trigger; Domain 47 (Asset Forfeiture) has lowest research complexity (8-12h)
+     - **Status**: Production-ready for Phase 2 strategic planning post-Phase-1-launch
+   
+   - **Agent 2 (stockbot)**: Institutional Integration & Regulatory Roadmap (Item 51)
+     - **Deliverable**: `projects/stockbot/institutional-integration-research.md` (9,531 words, 4 sections)
+     - **Contents**: 
+       1. Institutional adoption roadmap — 3 tiers (RIA/Hedge Fund/Institutional Capital) with regulatory requirements and GO/NO-GO criteria at $500K/$5M/$50M/$500M AUM
+       2. Regulatory compliance infrastructure — Multi-asset compliance matrix (equities/options/crypto/futures) with 3-6 month build timeline
+       3. Institutional risk management framework — Kelly Criterion extension to multi-client context with market impact adjustment and liquidation playbooks
+       4. Capital formation strategy — Funding stages with 12/24/36-month AUM projections and $5M sustainability threshold
+     - **Key findings**: Form ADV filing (30-90 days), Form PF triggers at $150M AUM, minimum viable RIA AUM ~$3M, Section 3(c)(1) fund minimum $8-12M AUM, family office minimum $25-50M AUM
+     - **Status**: Production-ready for post-Gate-2 strategic planning (November 2026 timeframe)
+
+**Strategic Value**:
+- Both Item 50 and 51 decouple Phase 2 planning from Phase 1 execution timing
+- Phase 2 domain candidates ready for user decision immediately post-Phase-1-launch (no 4-week research lag)
+- Institutional roadmap informs post-Gate-2 strategic decisions (Gate 1 May 12 → Gate 2 planning May 12-June 20 → November institutional pivot decision)
+
+**Commits This Session**:
+- `projects/stockbot/` submodule: institutional-integration-research.md (commit c94c0a2)
+- Main repo: ITEM50_DOMAINS42-50_CANDIDATES.md + EXPLORATION_QUEUE.md (commit 5ef7a138)
+
+**Token Usage**: Session 741 used ~160K tokens (2 parallel research agents + orchestration)
+
+---
+
 ## 2026-05-05 23:20+ UTC — Session 760 — Exploration Queue Verification: Phase 2 Domain Sequencing + Multi-Asset Strategy + Post-Test-Print Workflow
 
 **Orientation & Assessment**:

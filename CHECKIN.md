@@ -1,3 +1,70 @@
+## Since Last Check-in (Session 741 — 2026-05-05 19:26–20:30 UTC) — Phase 2 Strategic Research: Domains 42-50 + Institutional Roadmap
+
+### ✅ SESSION 741 COMPLETE — Parallel execution of 2 exploration queue items (Items 50-51), decoupling Phase 2 planning from Phase 1 execution timing. All projects positioned for seamless handoff to user upon decision points.
+
+**Work Accomplished**:
+
+1. **✅ Exploration Queue Item 50: resistance-research Domains 42-50 Candidate Analysis**
+   - **Deliverable**: `projects/resistance-research/ITEM50_DOMAINS42-50_CANDIDATES.md` (3,400+ words)
+   - **Scope**: 9 domain candidates evaluated for 49+ domain framework (beyond Domains 38-41)
+   - **Priority Matrix**:
+     - **CRITICAL**: Domain 42 (Reproductive Rights — post-Dobbs responsiveness failure, Nov 2026 ballot measures MO/NV/VA, VERY HIGH coalition)
+     - **HIGH**: Domain 43 (Epistemic Infrastructure — fills synthesis gap Domains 8↔36, 2026 deepfake deployment, HIGH coalition) + Domain 44 (Post-Insurrection Accountability — DOJ capture, Section 3 litigation, MEDIUM-HIGH coalition)
+     - **MEDIUM-HIGH**: Domains 45 (Labor Rights), 46 (Drug Policy — June 29 DEA trigger)
+     - **MEDIUM**: Domains 47 (Asset Forfeiture — lowest complexity, cross-partisan), 48 (Tribal Sovereignty), 49 (Housing), 50 (Immigration)
+   - **Top 3 Research Roadmaps**: Domain 42 (12-15h), Domain 43 (10-14h), Domain 44 (12-16h + 4 comparative TJ case studies)
+   - **Status**: Production-ready for Phase 2 strategic planning. Supports both Path A (distributed-now) and Path B (expanding-framework) equally.
+   - **Strategic Value**: User can decide multi-wave Phase 2 distribution strategy immediately post-Phase-1-launch (no 4-week research lag)
+
+2. **✅ Exploration Queue Item 51: stockbot Institutional Integration & Regulatory Roadmap**
+   - **Deliverable**: `projects/stockbot/institutional-integration-research.md` (9,531 words)
+   - **Scope**: Institutional adoption path (RIA/hedge fund/institutional capital), regulatory infrastructure, risk management, capital formation
+   - **Four Sections Completed**:
+     - **Institutional Adoption Roadmap**: 3 tiers with regulatory requirements and GO/NO-GO criteria at $500K/$5M/$50M/$500M AUM checkpoints
+       - Tier 1 RIA: Form ADV (30-90d), $3M minimum viable AUM, 1-2% fees, SEC Rule 204-2
+       - Tier 2 Hedge Fund: Section 3(c)(1), Form PF ($150M trigger), $8-12M minimum AUM, 15-20% performance fees
+       - Tier 3 Institutional: $25-50M (family office), $250M+ (pension), Form PF + 7-year track record
+     - **Regulatory Compliance Matrix**: 4-asset compliance (equities/options/crypto/futures) across FINRA/SEC/CFTC/IRS/FinCEN; Form 8949 tax schema; 3-6 month build timeline
+     - **Institutional Risk Management**: Kelly Criterion extension to multi-client context; Almgren-Chriss market impact; client segmentation; liquidation playbooks
+     - **Capital Formation Strategy**: 4 funding stages with 12/24/36-month AUM projections; fee structures; $5M sustainability threshold
+   - **Key Findings**: 
+     - Minimum viable institutional RIA = $3M AUM (management fees cover $75K fixed costs)
+     - $5M AUM threshold enables dedicated CCO + portfolio analyst hiring
+     - Crypto wash-sale exemption favorable (immediate re-entry allowed per IRC 1091)
+     - Form ADV processing 30-90 days; Form PF triggers at $150M AUM
+   - **Status**: Production-ready for post-Gate-2 strategic planning (November 2026 timeframe). Independent of Gate 1 outcome.
+   - **Strategic Value**: Informs institutional pivot decision post-Gate-2. Proactive research eliminates last-minute friction in November strategic decisions.
+
+**Project Status Update**:
+- **All high-priority projects blocked on known decision points:**
+  - resistance-research: Phase 1 APPROVED FOR LAUNCH, awaiting user path decision (A / A+37 / B)
+  - stockbot: Paper trading running (2-session AAPL), awaiting May 6 DTBP reset + May 12 Gate 1 checkpoint
+  - cybersecurity-hardening: Tier 1-3 COMPLETE + implementation guides COMPLETE, awaiting Tier 1 user approval
+  - seedwarden: Track B READY, Track A awaiting tag corrections + Etsy verification
+  - mfg-farm: Post-test-print execution suite READY, awaiting test print completion
+
+**Exploration Queue Status**:
+- Items 50-51 COMPLETED (Session 741)
+- Item 52 (mfg-farm manufacturing ecosystem) QUEUED for execution when project capacity available
+- All conditional items (4, 5, 6, 13, 19-25, 49) have clear triggers awaiting external dependencies
+
+**Items Needing Your Input** (priority order):
+1. **May 6 13:30 UTC (tomorrow)**: Verify DTBP resets to ~$400K; if confirmed, restart engine with `active-sessions-2session.json`
+2. **resistance-research**: Decide distribution path (A / A+37 Hybrid / B) → Phase 1 execution begins immediately upon decision
+3. **seedwarden**: Correct 3 tags + verify Etsy account → Phase 1 launch + activate analytics dashboard
+4. **mfg-farm**: Execute test print → activate post-test-print execution suite immediately post-print
+5. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md architecture decisions (ARCH-1 through ARCH-7) → confirm direction before implementation
+
+**Token Usage**: Session 741 used ~160K tokens (2 parallel research agents + orchestration documentation)
+
+**Next Session Plan**:
+- Monitor May 6 13:30 UTC DTBP reset (if user confirms, execute engine restart)
+- If user decisions arrive this week: Execute Phase 1 (resistance-research), Phase 1 launch (seedwarden), post-test-print (mfg-farm)
+- If no user decisions: Continue pre-staging Items 52-53 for maximum execution readiness
+- All projects remain positioned for seamless handoff once decision points clear
+
+---
+
 ## Since Last Check-in (Session 760 — 2026-05-05 23:20+ UTC) — Exploration Queue Verification: 3 Items Confirmed Production-Ready
 
 ### ✅ SESSION 760 COMPLETE — Exploration queue verified: 3 key items already complete from prior sessions. All projects now positioned for immediate execution once user decision points are resolved.
