@@ -335,15 +335,41 @@
 
 ---
 
+### Item 42: cybersecurity-hardening Tier 1 Success Metrics & Feedback Loop Architecture (Session 732 — in progress)
+**Status**: ACTIVE — Ready to execute now
+**Trigger**: Pre-launch research (blocks no projects, complements Tier 1 readiness)
+**Scope**: Design measurement framework for Tier 1 outreach success, institutional adoption patterns, feedback integration, success metric hierarchy
+**Deliverables**: 
+- `tier-1-success-metrics-framework.md` (2,500 words) — Metric hierarchy (Tier 1: sent/replied/active, Tier 2: referral/secondary distribution, Tier 3: curriculum/policy adoption), per-organization tracking, attribution methodology
+- `tier-1-feedback-collection-protocol.md` (1,500 words) — Survey design for recipient orgs, follow-up cadence, CRM integration, success signal thresholds
+- `tier-1-measurement-dashboard-spec.md` (800 words) — Real-time tracking visualization, monthly reporting template, institution-specific analysis
+**Key areas**: Institutional adoption timelines, pattern differentiation (academic vs. legal vs. policy vs. think-tank adoption), realistic success rates per sector, feedback loop design for Phase 2 adaptation
+**Owner**: general-research agent (research-heavy, 2-3 hours)
+**Value**: Eliminates guesswork on measurement once Tier 1 launches; enables rapid feedback integration for Phase 2 scope adjustment
+
+---
+
+### Item 43: open-repo Phase 1-2 Transition Metrics & Community Health Framework (Session 732 — queued)
+**Status**: ACTIVE — Ready to execute now  
+**Trigger**: Ready to execute now (blocks no projects, prepares for PR #1 merge signal)
+**Scope**: Define success metrics for open-repo growth, community health measurement, engagement tracking, contribution sustainability
+**Deliverables**: 
+- `phase-1-success-metrics.md` (1,800 words) — GitHub metrics (stars, forks, issues, PRs, contributor count, merge time), engagement signals (comment/review quality, discussion patterns), sustainability indicators (contributor retention, time-to-response)
+- `community-health-dashboard-spec.md` (1,200 words) — Weekly/monthly tracking template, anomaly detection (declining engagement, toxic patterns), comparative benchmarks (vs. similar-sized federation/P2P projects)
+- `phase-2-activation-triggers.md` (1,000 words) — What metrics signal readiness for Phase 2 expansion? Growth trajectory gates, community stability thresholds, federation readiness criteria
+**Owner**: open-source-rideshare agent (can leverage similar community-building patterns from rideshare project)
+**Value**: Ready to implement measurement immediately upon PR #1 merge; prevents metric selection paralysis during critical post-launch window
+
+---
+
 ## Research Areas for Future Queuing
 
 If the queue falls below 3 items (excluding blocked items), consider adding:
 
-1. **cybersecurity-hardening Tier 2 Distribution** — design Tier 2 messaging variant templates for sector-specific outreach (after Tier 1 approval received)
-2. **workout Phase 2 Research** — sports science deep-dive on periodization, load management, injury prevention protocols (post-user approval of Phase 1 plan)
-3. **governance research expansion** — analyze voting system comparative framework (proportional representation, ranked choice, consensus-based alternatives) as potential resistance-research Domain 38
-4. **seedwarden Phase 2 preparation** — design Kickstarter campaign architecture for hardware manufacturing expansion (post-Phase 1 email list validation)
-5. **open-repo Phase 6 roadmap** — enterprise-grade federation patterns, cross-organizational coordination, post-Phase-5 maturity trajectory
+1. **workout Phase 2 Research** — sports science deep-dive on periodization, load management, injury prevention protocols (post-user approval of Phase 1 plan)
+2. **governance research expansion** — analyze voting system comparative framework (proportional representation, ranked choice, consensus-based alternatives) as potential resistance-research Domain 38
+3. **seedwarden Phase 2 preparation** — design Kickstarter campaign architecture for hardware manufacturing expansion (post-Phase 1 email list validation)
+4. **open-repo Phase 6 roadmap** — enterprise-grade federation patterns, cross-organizational coordination, post-Phase-5 maturity trajectory
 
 ---
 
