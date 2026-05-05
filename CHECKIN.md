@@ -1,4 +1,47 @@
-## Since Last Check-in (Session 745 — 2026-05-05 11:35–13:30+ UTC) — Engine Restart + Queue Replenishment + Pre-Market Monitoring
+## Since Last Check-in (Session 746 — 2026-05-05 14:45–14:47 UTC) — CRITICAL BLOCK: Alpaca Day-Trading Account Configuration Issue
+
+### ⚠️ CRITICAL STATUS: Stockbot trading halted due to Alpaca account configuration
+
+**Issue Discovered at 14:46 UTC**:
+- Engine restarted with bug fix (get_order_by_id) — initially running normally
+- All 52 trading sessions generating signals correctly
+- **HOWEVER**: All BUY orders failing with Alpaca error 40310000: "insufficient day trading buying power"
+- Account daytrading_buying_power = 0 (explicitly zero)
+- This blocks ALL position opens and scale operations
+- 20 positions remain OPEN from April 29 (unrealized P&L: +$4,581.51)
+- SELL orders may still work, but cannot initiate new positions
+
+**Root Cause**: Alpaca account day-trading buying power configuration. This is the same issue flagged April 28 (Session 595) but configuration issue not resolved.
+
+**Timeline Impact**:
+- Market still open (14:47 UTC, closes 20:00 UTC, 5 hours 13 min remaining)
+- Cannot execute ANY position adjustments or new trades
+- SELL operations may be possible but cannot verify without fixing account first
+
+**What You Need To Do** (URGENT):
+1. Check Alpaca dashboard → Account Settings → Leverage/Margin settings
+2. Verify daytrading_buying_power > 0
+3. Options:
+   - Enable margin on account (if not enabled)
+   - Deposit additional cash/equity if account is under-funded
+   - Configure day-trading account specifically if required by broker
+
+**Engine Status**: Stopped at 14:47 UTC pending account fix. Will NOT restart until verified.
+
+**Session Work Completed**:
+- ✅ Fixed trading_session.py bug (get_order vs. get_order_by_id) — commit a57ec4a
+- ✅ Identified root cause of market open failure (account configuration, not code)
+- ✅ Created BLOCKED.md entry with verification command
+- ✅ Sent Discord notification
+
+**Items Needing Your Input**:
+1. **🔴 URGENT**: Fix Alpaca daytrading_buying_power configuration before 20:00 UTC market close
+   - Use curl command in BLOCKED.md to verify: `curl ... | jq '.daytrading_buying_power'`
+   - Confirm > 0 before re-starting engine
+
+---
+
+## Since Previous Session (Session 745 — 2026-05-05 11:35–13:30+ UTC) — Engine Restart + Queue Replenishment + Pre-Market Monitoring
 
 ### Overall Status: ✅ SYSTEM READY FOR MARKET OPEN — Stockbot engine operational (PID 177133, 52 ticker sessions). Engine health verified (log actively updated 12:39 UTC). All sessions sleeping until 13:15 UTC wake-up (15 min before 13:30 UTC market open). Background log monitoring active (captures wake-up and market open events). Exploration queue replenished with 3 new high-leverage items (Domain 41, Track B contingency, production runbook).
 
@@ -50,9 +93,24 @@
    - open-repo PR #1 merge (code COMPLETE, awaiting your review)
 
 **Commits This Session**:
-- `067d04e`: chore(orchestrator): session 745+ — queue Items 44-46 (domain analysis, track B contingency, production runbook)
+- `aed16df`: chore(orchestrator): session 745 (continued) — exploration queue Item 45 (seedwarden contingency plan)
+- `ac2117a`: chore(exploration-queue): mark Item 45 complete
 
-**Session 745 summary**: ✅ Engine restarted and healthy. ✅ Exploration queue replenished. ✅ Pre-market monitoring active. Ready for 13:00 UTC health check and 13:30 UTC market open. All autonomous work staged for execution post-user-decisions.
+**Market Event Status** (13:30 UTC — MARKET OPEN ACTIVE):
+- ✅ Engine woke at 13:15 UTC as scheduled
+- ✅ All 52 sessions detecting market open and generating trading signals
+- ✅ 19 scheduled close tickers actively processing (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL)
+- ✅ Signals generated: COP BUY (0.5889), CVX BUY (0.4844), AAPL BUY (0.3949), V SELL (0.3759), RTX BUY (0.3825), ADBE SELL (0.6231), and others
+- ✅ Monitor active, capturing all fills and signal generation events
+- ⏳ 13:45 UTC checkpoint: Verify 19 position closes executed with realized P&L posted to database
+- ⏳ 20:00 UTC: Post-market analysis and Gate 1b trajectory update
+
+**Session 745 continuation summary** (12:32–13:45 UTC):
+- ✅ Completed **Item 45: seedwarden Track A Pre-Contingency Launch Plan** — 857-line contingency enabling Phase 2 independent launch if Phase 1 tags slip >14 days
+- ✅ Pre-market health verification — engine confirmed healthy, all sessions scheduled for 13:15 UTC wake
+- ✅ Market open monitoring — background log monitor active, capturing all trading events
+- ✅ All commits pushed to master (2 commits: Item 45 completion + exploration queue update)
+- ⏳ Awaiting 13:45 UTC fill verification and 20:00 UTC post-market analysis
 
 ---
 
