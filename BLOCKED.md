@@ -32,8 +32,11 @@ When the block is resolved (Resolution written OR Verify command passes):
 ### stockbot — Jetson health endpoint unreachable (May 5 market open critical)
 **Date blocked**: 2026-05-05
 **Context**: May 5 market open is in 11 hours (13:30 UTC). 19 positions are scheduled to close; 20 total positions confirmed in database with +$4,581.51 unrealized P&L. Pending close orders submitted at May 5 00:17 UTC. Engine runs on Jetson (100.120.18.84), not Pi. Agent verification at 02:16 UTC found that `curl http://100.120.18.84/api/ready` produced no output — either Jetson is unreachable or health endpoint is down.
-**What I need**: Verify Jetson connectivity and engine status at 13:00 UTC (1.5 hours before market open). If endpoint responds with `{"status":"ready","sessions":2}`, proceed; if not, diagnose connection or engine issue.
-**Verify with**: `curl -s http://100.120.18.84/api/ready | grep -q ready && echo ok`
+
+**UPDATE (Session 726 — 2026-05-05 02:35 UTC)**: Engine IS running and healthy. Docker container `stockbot:jetson` has been up for 3 hours with status "healthy". SSH access confirmed. Container logs show 2 trading sessions (a1b2c3d4e5f60001, 33a4afe676cae12a) successfully initialized and sleeping until 2026-05-05 13:15 UTC (15 min before market open). Uvicorn dashboard API reports "started successfully" on port 8000. Database confirmed: 20 positions in OPEN status. **However**: HTTP endpoint `/api/ready` on both port 80 and 8000 is timing out (both curl http://100.120.18.84:8000/api/ready and localhost curl hang). API endpoint appears to have a hang/deadlock. This is NOT critical for trading — sessions execute independently of API health. Trading will proceed as scheduled.
+
+**What I need**: (1) Verify if close orders will execute at market open despite API endpoint hang (sessions appear ready). (2) If API is critical, diagnose why endpoint is hanging (possible asyncio deadlock in dashboard_api.py, or rate limiter issue).
+**Verify with**: `curl -s http://100.120.18.84:8000/api/ready | grep -q ready && echo ok` OR `ssh awank@100.120.18.84 "docker logs stockbot 2>&1 | grep -i 'execution\|filled\|pending close' | tail -5"` at market open
 **Resolution**:
 
 ---

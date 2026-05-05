@@ -9,8 +9,8 @@ distribution_status: "Awaiting user path decision (A / A+37 / B)"
 
 # Domain 37: Pre-Distribution Baseline Metrics
 
-**Created**: May 4, 2026 (Session 717)
-**Purpose**: Establish quantified baselines across six interference vectors before Phase 1 distribution so that post-distribution impact can be measured against a fixed reference point. These numbers represent the state of federal executive interference in the 2026 midterm elections as of early May 2026.
+**Created**: May 4, 2026 (Session 717); **Updated**: May 5, 2026 (Session 726) — Six material developments post-May 4 incorporated
+**Purpose**: Establish quantified baselines across six interference vectors before Phase 1 distribution so that post-distribution impact can be measured against a fixed reference point. These numbers represent the state of federal executive interference in the 2026 midterm elections as of early May 2026. Updated May 5 with April 30 – May 5 2026 developments.
 
 ---
 
@@ -18,9 +18,9 @@ distribution_status: "Awaiting user path decision (A / A+37 / B)"
 
 **Baseline figure: 24 active lawsuits + DC (as of May 4, 2026)**
 
-The Justice Department has filed voter roll lawsuits against 30 states plus the District of Columbia. Current status breakdown:
+**UPDATED (May 5, 2026)**: The Justice Department has filed voter roll lawsuits against 30 states plus the District of Columbia. Current status breakdown:
 
-- **Dismissed on merits** (5 states + Arizona): California, Massachusetts, Michigan, Oregon, Rhode Island, and Arizona (April 28, 2026). Arizona's dismissal is the most recent, with Judge Brnovich ruling the DOJ "failed to state the basis for the demand." ([Votebeat](https://www.votebeat.org/arizona/2026/04/28/department-justice-trump-adrian-fontes-unredacted-voter-rolls-lawsuit-dismissed-brnovich-ruling/))
+- **Dismissed on merits** (6 states): California, Massachusetts, Michigan, Oregon, Rhode Island, and Arizona (April 28, 2026). Arizona's dismissal is the most recent, with Judge Brnovich ruling the DOJ "failed to state the basis for the demand." ([Votebeat](https://www.votebeat.org/arizona/2026/04/28/department-justice-trump-adrian-fontes-unredacted-voter-rolls-lawsuit-dismissed-brnovich-ruling/)) Most significantly, U.S. District Judge Mustafa T. Kasubhai issued a ruling in Oregon finding the DOJ "can no longer be presumed to act in good faith" and revealing an "improper purpose" — linking voter data collection to immigration enforcement rather than election integrity — directly undermining the legal rationale across all active cases. ([Democracy Docket](https://www.democracydocket.com/news-alerts/federal-judge-rules-doj-can-no-longer-be-trusted-in-voter-roll-crusade/))
 - **Settled — data surrendered** (1 state): Oklahoma agreed to provide full voter files in exchange for dismissal, triggering a 45-day mandatory removal window for SAVE-flagged names. ([Brennan Center tracker](https://www.brennancenter.org/our-work/research-reports/tracker-justice-department-requests-voter-information))
 - **Dismissed on venue, refiled** (1 state): Georgia — initial filing in wrong district; DOJ refiled.
 - **Active/pending** (24 states + DC): Colorado, Connecticut, Delaware, DC, Hawaii, Idaho, Illinois, Kentucky, Maine, Maryland, Minnesota, Nevada, New Hampshire, New Jersey, New Mexico, New York, Pennsylvania, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, and the refiled Georgia case. ([University of Wisconsin State Democracy tracker](https://statedemocracy.law.wisc.edu/tracker-doj-lawsuits-states-voter-data/))
@@ -28,6 +28,8 @@ The Justice Department has filed voter roll lawsuits against 30 states plus the 
 - **Voluntary compliance** (12 states): Alaska, Arkansas, Indiana, Louisiana, Mississippi, Nebraska, Ohio, Oklahoma, South Dakota, Tennessee, Texas, Wyoming have provided voter files without litigation.
 
 **Legal trend line**: Every district court to rule on the merits has rejected DOJ's authority. No court has yet found for the government. The surviving legal theory (Civil Rights Act of 1960, Section 303 "voting records" argument) is being actively litigated in nine states with completed briefing. A Sixth Circuit ruling on the Michigan appeal is the highest-stakes pending outcome. ([Ohio Capital Journal explainer](https://ohiocapitaljournal.com/2026/04/06/the-department-of-justice-is-suing-states-for-sensitive-voter-data-%E2%88%92-an-election-law-scholar-explains/))
+
+**NEW (May 2026 — post-May 4 baseline)**: The DOJ has filed motions requesting amended complaints ("do-overs") in approximately 13 of its active cases, signaling that the original legal theory is not holding in court. Additionally, a coalition of voting rights organizations (ACLU, Protect Democracy, CREW, Common Cause) filed suit in April 2026 — **Common Cause v. DOJ** — challenging the constitutional legality of building a national voter surveillance database from the collected state voter files. This is the first lawsuit challenging the *destination* of the data (not just the collection process) and represents a separate legal vector attacking the infrastructure of the voter roll seizure program. ([Democracy Docket](https://www.democracydocket.com/news-alerts/new-lawsuit-aims-to-block-trump-doj-from-building-national-voter-database-via-state-voter-roll-grab/)) | ([ACLU](https://www.aclu.org/press-releases/voting-rights-groups-sue-doj-to-block-national-voter-surveil-and-purge-database))
 
 **Post-distribution re-measure**: Track dismissed vs. active count monthly. Metric improves if: appellate courts affirm dismissals; additional district courts dismiss on merits; DOJ drops cases in response to legal pressure. Metric worsens if: Sixth or Ninth Circuit reverses; settlement agreements proliferate; more states voluntarily surrender data.
 
@@ -55,7 +57,11 @@ Two distinct cuts must be tracked separately:
 
 **Critical distinction**: The FY2026 operational gutting (already executed via DOGE and administrative leave) is not contingent on congressional approval. The agency's practical election security capacity has already collapsed regardless of budget outcomes. The FY2027 budget proposal would codify and deepen that collapse.
 
-**Post-distribution re-measure**: Track congressional appropriations response to FY2027 CISA request; EI-ISAC operational status; number of states with no CISA advisor support; any emergency supplemental appropriations for election security in pre-election period.
+**Election Security Group (ESG) — Binary Infrastructure Indicator** (NEW, May 5, 2026): The Election Security Group — the NSA and U.S. Cyber Command joint task force activated for every election since 2020 — **has not been activated for the 2026 midterms** as of April 30, 2026. General Josh Rudd, director of Cyber Command and NSA, testified to Congress: "I don't know that an ESG has been established yet." ([CNN](https://www.cnn.com/2026/04/30/politics/cyber-team-midterm-elections-foreign-meddling)) This is the single most precise measurable indicator of federal election security capability degradation: **ESG operational status = 0 as of May 5, 2026** (binary metric: either activated or not). With six months remaining before the November 2026 election, the absence of ESG activation is unprecedented.
+
+**State-level resource crisis** (NEW, May 5, 2026): A survey of state and local election officials found that **75% report their governments lack sufficient resources to compensate for the CISA funding cuts**. This is the first quantified measure of downstream state capacity shortfall directly attributable to federal funding elimination. ([Nextgov/FCW](https://www.nextgov.com/cybersecurity/2026/04/federal-drawdown-election-support-destroyed-ongoing-relationships-experts-say/413181/))
+
+**Post-distribution re-measure**: (1) ESG operational status: activated or not (binary check at 30-day, 60-day, 90-day marks and pre-election). (2) Congressional appropriations response to FY2027 CISA request. (3) EI-ISAC operational status. (4) Number of states with independent election cybersecurity contracts replacing CISA advisor support. (5) Any emergency supplemental appropriations for election security in pre-election period.
 
 ---
 
@@ -99,6 +105,8 @@ The Section 3 landscape as of this baseline:
 
 **Griswold's transition**: Colorado Secretary of State Jena Griswold — the respondent in *Anderson v. Griswold* and nationally recognized election security figure — announced her candidacy for Colorado Attorney General in April 2025. ([Colorado Sun](https://coloradosun.com/2025/04/07/jena-griswold-colorado-attorney-general/)) If elected in November 2026, Griswold would hold state enforcement authority with demonstrated institutional will and direct litigation experience. Her Democratic primary is June 30, 2026. This transition is a structural development in state-level Section 3 enforcement capacity — she moves from the election administration position where she was constrained by *Trump v. Anderson* to a law enforcement position where she would hold independent enforcement authority over state officers.
 
+**March 31, 2026 Election Executive Order** (NEW, May 5, 2026): Trump signed a sweeping election integrity executive order on March 31, 2026. The order restricts mail balloting, adds new documentation requirements, and threatens millions of eligible voters including military and overseas voters. A coalition of voting rights organizations (ACLU, Protect Democracy, Campaign Legal Center, Common Cause) filed suit in federal court challenging it as illegal interference with federal elections. ([ACLU](https://www.aclu.org/press-releases/voting-rights-groups-challenge-executive-order-on-mail-in-ballots-as-illegal-interference-in-elections)) This is a new election interference vector created post-May 4 baseline.
+
 **State AG coalition**: 22 Democratic state AGs plus DC have adopted coordinated legal strategy on election protection, with over 75 lawsuits filed against the Trump administration in 2025. Washington AG Bob Ferguson has filed suit to block the March 31 elections executive order. ([Washington State AG](https://www.atg.wa.gov/news/news-releases/ag-brown-sues-block-executive-order-undermines-voting-rights)) The coalition is functionally operative as an election protection infrastructure; Section 3 enforcement against state candidates would fit within its mandate.
 
 **Legislative gap**: No bill to create the federal Section 5 "appropriate legislation" required by *Trump v. Anderson* has advanced in the current Congress. The enforcement gap remains open.
@@ -140,7 +148,11 @@ The SAVE database interference vector is measurable across three dimensions:
 
 **Scale**: DHS has flagged more than 24,000 names on U.S. voter rolls as potentially registered noncitizens, as of April 23, 2026. ([Washington Times](https://www.washingtontimes.com/news/2026/apr/23/dhs-identified-24000-potential-noncitizens-voter-rolls/)) This figure covers states with voluntary sharing agreements; the DOJ litigation is designed to expand this to all 30+ defendant states.
 
-**Error rate**: Missouri's November 2025 cross-check showed SAVE flagged 691 registered voters as potential noncitizens. After immediate verification, 35% (approximately 242) were confirmed naturalized citizens. After passport cross-referencing, the list fell to 133 — an 81% false positive rate. Missouri county clerks (both Republican and Democrat) formally warned state leadership that SAVE "repeatedly flags individuals we know to be U.S. citizens." ([ProPublica SAVE analysis](https://www.propublica.org/article/save-voter-citizenship-tool-mistakes-confusion))
+**Error rate**: Two states now have documented SAVE false-positive rates:
+
+- **Missouri** (November 2025): SAVE flagged 691 registered voters as potential noncitizens. After immediate verification, 35% (approximately 242) were confirmed naturalized citizens. After passport cross-referencing, the list fell to 133 — an **81% false positive rate**. Missouri county clerks (both Republican and Democrat) formally warned state leadership that SAVE "repeatedly flags individuals we know to be U.S. citizens." ([ProPublica SAVE analysis](https://www.propublica.org/article/save-voter-citizenship-tool-mistakes-confusion))
+
+- **Idaho** (April 2026 — NEW): Idaho's state review using SAVE initially flagged 760 potential noncitizens among 1.1 million voters. After investigation, only approximately 36 were referred to law enforcement — a **95%+ false positive rate**, significantly higher than Missouri's 81%. ([Popular Information](https://popular.info/p/the-broken-database-that-could-upend)) This two-state evidence pattern (Missouri 81%, Idaho 95%) is more resistant to the "outlier" rebuttal and strengthens the baseline documentation of systemic SAVE unreliability.
 
 **Nationwide scale applied to error rate**: If the 81% Missouri error rate holds at the 24,000 figure, approximately 19,440 of the flagged individuals are eligible citizens. Under the Oklahoma consent decree model, states have 45 days to remove flagged voters. A wrongful removal at this scale, executed in the 90-day NVRA quiet period (which begins August 7, 2026), would be a per se federal law violation.
 

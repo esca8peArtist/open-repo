@@ -6,6 +6,41 @@
 
 ---
 
+## 2026-05-05 02:33 UTC — resistance-research — Domain 37 baseline metrics updated with May 5 developments
+
+**Completion**: 60-minute exploration queue research on Domain 37 pre-distribution baseline metrics
+
+### Summary
+
+Executed comprehensive baseline metrics research for Domain 37 (Federal Executive Interference in 2026 Midterms) using resistance-research agent. Purpose: establish quantified baseline across six interference vectors BEFORE Phase 1 distribution, enabling rigorous pre-post impact measurement post-distribution.
+
+### Six Key Findings (NEW — post-May 4 baseline)
+
+1. **Common Cause v. DOJ lawsuit** (April 2026): ACLU, Protect Democracy, CREW, Common Cause jointly sued to block DOJ from building a national voter surveillance database. This is the first lawsuit targeting the *destination* of collected voter data (not just collection), representing a new legal vector.
+
+2. **Judge Kasubhai bad-faith finding** (Oregon): Judge ruled DOJ "can no longer be presumed to act in good faith" and found "improper purpose" — linking voter data to immigration enforcement rather than election integrity. Directly undermines DOJ's legal rationale across all 24 active cases.
+
+3. **Election Security Group NOT activated** (as of April 30, 2026): Gen. Josh Rudd testified ESG has not been activated for 2026. ESG has operated since 2020; non-activation is unprecedented binary infrastructure indicator: ESG status = 0 with 6 months to election.
+
+4. **Idaho SAVE database 95%+ error rate** (April 2026): Idaho flagged 760 voters, confirmed only ~36 after investigation — 95%+ false positive rate (vs. Missouri's 81%). Two-state evidence pattern now established, reducing "outlier" rebuttal risk.
+
+5. **March 31 Executive Order + litigation** (March 31, 2026): Trump signed election integrity EO restricting mail ballots, adding documentation requirements. Voting rights coalition (ACLU, Protect Democracy, CLC, Common Cause) filed suit. New interference vector post-May 4 baseline.
+
+6. **State-level resource crisis** (April 2026): Survey shows 75% of state/local election officials report insufficient resources to compensate for CISA cuts. First quantified downstream state capacity shortfall.
+
+### File Updates
+
+Updated `/projects/resistance-research/domains/domain-37-baseline-metrics.md`:
+- Metric 1 (DOJ Voter Roll Lawsuits): Added Common Cause v. DOJ lawsuit, Kasubhai bad-faith ruling, DOJ amended complaint strategy
+- Metric 2 (CISA Budget): Added ESG non-activation status (binary indicator), state resource crisis data
+- Metric 4 (Section 3 Readiness): Added March 31 EO and voting rights coalition lawsuit
+- Metric 6 (SAVE Database): Added Idaho 95% error rate to strengthen documentation of systemic SAVE unreliability
+- Header: Updated creation timestamp to reflect May 5 additions
+
+**Status**: Domain 37 baseline metrics production-ready for Phase 1 distribution under any path decision (A/A+37/B). All six metrics now have complete baseline data + measurement protocol for post-distribution re-measurement at 30/60/90-day intervals.
+
+---
+
 ## 2026-05-05 02:16 UTC — stockbot — Market readiness verification for May 5 open (19-position closures)
 
 **Current time**: 02:16 UTC — market opens in ~11h 14m (13:30 UTC)
