@@ -30,9 +30,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 
-
 ---
 
+### stockbot — CRITICAL: Alpaca account has zero day-trading buying power (May 5 market hours)
+**Date blocked**: 2026-05-05 14:46 UTC
+**Context**: May 5 market open at 13:30 UTC. Engine restarted at 14:46 UTC with bug fix (get_order_by_id). All 52 ticker sessions generating trading signals correctly. However, all BUY orders fail immediately with Alpaca error 40310000: "insufficient day trading buying power" (daytrading_buying_power=0). Account is properly funded for paper trading, but day-trading buying power is explicitly zero. This blocks ALL position opens and position adjustments. 20 positions remain OPEN (from April 29) with +$4,581 unrealized P&L. SELL orders (for position closes) may still work, but cannot open new positions or scale existing positions. This is the same account-level issue flagged April 28 (Session 595: Alpaca account configuration TBD).
+**What I need**: Check Alpaca account settings for day-trading buying power. Either: (1) Account needs margin enabled (Account → Settings → Leverage), (2) Account needs equity/cash deposit, or (3) Account requires specific day-trading account configuration. Confirm daytrading_buying_power > 0 before market close 20:00 UTC to avoid missing Gate 1b trading window.
+**Verify with**: `curl -s -X GET "https://api.alpaca.markets/v2/account" -H "Authorization: Bearer $APCA_API_KEY_ID" | jq '.daytrading_buying_power'`
+**Resolution**:
 
 ---
 
