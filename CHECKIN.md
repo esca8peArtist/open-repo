@@ -1,3 +1,31 @@
+## Since Last Check-in (Session 735+ — 2026-05-05 07:13 UTC) — Calibration Verified + Pre-Market Prep
+
+### Overall Status: ✅ CALIBRATION VERIFIED + PREP FOR MARKET OPEN — Stockbot engine status assessed (not currently running, will wake at 13:15 UTC per market-aware sleep logic). Pre-market health check scheduled for 13:00 UTC (5h 47m away). No autonomous work identified before market open; all main projects blocked on user input or external events.
+
+**Session Work**:
+
+1. ✅ **Orchestrator: Calibration Block Resolution** — `bash scripts/verify-calibration.sh` verified OK (limits calibrated 2026-04-28, within 7-day window). Block moved to Resolved Archive in BLOCKED.md, committed.
+
+2. **Stockbot: Engine Status Assessment** (Pre-Market Prep)
+   - **Current status**: Engine not running; will wake at 13:15 UTC (market-aware sleep configured)
+   - **Database status**: 49 BUY trades filled (April 29), 0 SELL trades filled yet, AAPL position 3 buys open
+   - **Today's tasks**: Confirm 19-position close fills at 13:30 UTC market open, hold AAPL position open
+   - **Next checkpoint**: 13:00 UTC pre-market health check (confirm engine health, verify close orders loaded)
+   - **Post-market**: 20:00 UTC post-market analysis (verify close fills, calculate Gate 1 progress)
+
+**Awaiting Next Actions**:
+- **CRITICAL — User Input**: Resistance-research distribution path decision (A / A+37 / B) → Phase 1 execution is 3-4h upon approval
+- **Market monitoring**: 13:00 UTC pre-market check, 13:30 UTC market open (19-position close + AAPL hold), 20:00 UTC post-market analysis
+- **Exploration Queue**: 2 active items (seedwarden analytics [deferred], rideshare [blocked on PR#1 merge]); queue at threshold
+
+**Next priorities**:
+1. **13:00 UTC**: Pre-market health check (engine readiness, close order verification)
+2. **13:30–20:00 UTC**: Market monitoring (watch for fills, AAPL position health)
+3. **20:00 UTC**: Post-market analysis (calculate Gate 1 progress, verify close fills)
+4. **Anytime**: If user provides distribution path decision → immediate Phase 1 execution (3-4h)
+
+---
+
 ## Since Last Check-in (Session 734 — 2026-05-05 05:58–06:30 UTC) — THREE Exploration Items Complete
 
 ### Overall Status: ✅ THREE EXPLORATION ITEMS COMPLETE — Legal liability assessment + May threat update + off-grid-living social distribution framework delivered; 7h until market open (13:30 UTC); ready for stockbot pre-market health check at 13:00 UTC
