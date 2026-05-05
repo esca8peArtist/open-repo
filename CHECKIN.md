@@ -1,4 +1,19 @@
-## Since Last Check-in (Session 744 — 2026-05-05 09:04–10:25 UTC) — Exploration Queue Verification Complete: ALL 4 ITEMS PRODUCTION-READY
+## Since Last Check-in (Session 745 — 2026-05-05 09:30–10:35 UTC) — Callais v. Landry SCOTUS Domain Updates: Voting Rights Framework Refreshed
+
+### Overall Status: ✅ SESSION 745 IN PROGRESS — Updated resistance-research domains with April 29 Callais v. Landry SCOTUS ruling (VRA Section 2 evisceration). Three files updated: Domain 1 (voting rights), Domain 33 (state autocratization), litigation-tracker-2026 (case entry). All main projects remain blocked on user input. Pre-market health check window opens at 11:00 UTC (55 minutes from session start). Market monitoring scheduled for 13:30 UTC.
+
+**Session 745 Work Completed**:
+
+1. ✅ **Callais v. Landry SCOTUS Ruling Integration** (April 29, 2026 6-3 decision):
+   - **Domain 1 Section 3.2**: Full Callais analysis (490 words) — decision shifted VRA Section 2 from "discriminatory effect" to "intentional discrimination" standard; Louisiana's majority-Black district struck down; Alabama, Georgia, other states in immediate redistricting jeopardy; 130 days to November 2026 creates time-pressure for state implementation
+   - **Domain 33 Section 1.7**: NEW subsection documenting Callais impact on state-level autocratization (430 words) — removes federal VRA check on discriminatory maps; state courts now only remaining federal recourse (but under dark money capture pressure); strengthens state ballot initiative strategy and state constitutional protections
+   - **Litigation Tracker 7.5**: NEW SCOTUS decision entry with full case analysis (480 words), immediate litigation forecast (multi-state emergency challenges expected before Nov 2026), and impact on pending redistricting cases (LULAC v. Abbott, Missouri, North Carolina)
+   - **Total additions**: 1,400+ words across 3 documents, 8 sources integrated
+   - **Commit**: Committed to master as `be972cf`
+
+2. ✅ **Cross-domain verification**: Confirmed all three domain updates reference each other appropriately (Domain 1 → Domain 33 → Domain 9 Federalism, litigation impacts on pending cases)
+
+3. ⏳ **Next immediate work**: Pre-market health check at 11:00 UTC (stockbot engine, positions, auth status, error logs)
 
 ### Overall Status: ✅ SESSION 744 COMPLETE — Verified all 4 active exploration queue items are production-ready. Executed cybersecurity-hardening post-Tier-1 framework research (3 new deliverables). All main projects remain blocked on user input/decisions. Pre-market health check scheduled for 13:00 UTC (~2h 35m). Standing by for market open 13:30 UTC.
 
