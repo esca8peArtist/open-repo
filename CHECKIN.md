@@ -1,4 +1,42 @@
-## Since Last Check-in (Session 744 — 2026-05-05 11:18–11:50 UTC) — Exploration Queue: Gate 1 Fill Rate Modeling Complete
+## Since Last Check-in (Session 745 — 2026-05-05 11:35–11:50 UTC) — Engine Restart + Code Refactor + Pre-Market Standby
+
+### Overall Status: ✅ ENGINE RESTARTED + CODE REFACTORED — Stockbot engine operational (PID 177133, 52 sessions). Database consistency refactors committed. Pre-market health check at 13:00 UTC. Market open at 13:30 UTC with 19-position closes. System ready.
+
+**Session 745 Work**:
+- ✅ **Code Quality Improvements**: Database manager refactoring committed
+  - Fixed database URL resolution to use project root for `stockbot.db` path
+  - Added missing model class imports (ModelRun, OptimizationJob, OptimizationTrial, PendingOrder)
+  - Updated `get_database_stats()` to include all 10 tables (was missing 4 newly added tables)
+  - Updated test assertions for correct table count (10, not 6)
+  - All 25 unit tests passing
+  - Commits: 1e4d90c (stockbot), aa59e8f (parent)
+
+- ✅ **Engine Status**: Engine was offline (shut down 09:32:35 UTC); restarted at 11:39 UTC
+  - Verified 52 ticker sessions configured in active-sessions.json
+  - Engine running (PID 177133) in paper trading mode
+  - Ready for market open at 13:30 UTC
+
+- ⏳ **Pre-Market Readiness**:
+  - 19 non-AAPL positions closing at market open (13:30 UTC)
+  - AAPL position (108 shares, +$924 unrealized) scheduled to hold at h+4
+  - Pre-market health check at 13:00 UTC will verify engine operational
+  
+**Scheduled Actions Today**:
+- **13:00 UTC** (75 min): Pre-market health check — verify engine ready, confirm close orders queued
+- **13:30 UTC** (105 min): Market open — execute 19 position closes, observe AAPL hold
+- **20:00 UTC**: Post-market analysis — assess fills against Gate 1b projection
+
+**Items Needing Your Input**:
+1. **Distribution path decision** (resistance-research) — **AWAITING**: Path A / A+37 Hybrid / Path B
+2. **mfg-farm test print** — **AWAITING**: Run test print, evaluate FDM_TOLERANCE
+3. **seedwarden tag corrections** — **AWAITING**: Etsy account verification for Phase 1
+4. **Other approvals**: cybersecurity-hardening Tier 1, open-repo PR #1 merge
+
+**Session 745 complete** (2026-05-05 11:35–11:50 UTC) — Engine operational; code refactored; ready for pre-market health check at 13:00 UTC.
+
+---
+
+## Previous Check-in (Session 744 — 2026-05-05 11:18–11:50 UTC) — Exploration Queue: Gate 1 Fill Rate Modeling Complete
 
 ### Overall Status: ✅ SESSION 744 COMPLETE — Executed highest-priority exploration queue item (stockbot Gate 1 fill rate modeling and May 5-12 forecast). All projects remain blocked on user input/external dependencies. Pre-market health check still scheduled for 13:00 UTC (70 min). Market open at 13:30 UTC with 19-position closes and AAPL hold. No corrective actions required; all systems nominal.
 

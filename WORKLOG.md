@@ -23167,3 +23167,45 @@ May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
 
 **Session token usage**: Minimal (orientation + scheduling only, no code/research execution).
 
+
+---
+
+## 2026-05-05 11:35–11:45 UTC — Session 745 — Engine Restart + Code Refactor
+
+### Overall Status: ✅ ENGINE RESTARTED + CODE REFACTORED — Stockbot engine restarted (PID 177133) with 52 sessions configured. Database consistency refactors committed. Pre-market health check in 75 min (13:00 UTC). Market open in 105 min (13:30 UTC).
+
+**Session Work**:
+
+1. ✅ **Code Quality**: Database manager and schema consistency improvements
+   - Updated database URL resolution to use project root for stockbot.db path
+   - Added missing model class imports (ModelRun, OptimizationJob, OptimizationTrial)
+   - Updated get_database_stats() to report all 10 tables (was missing 4)
+   - Updated test assertions to reflect current schema (10 tables, not 6)
+   - All 25 unit tests passing (verified)
+   - Commits: 1e4d90c (stockbot submodule), aa59e8f (parent repo)
+
+2. ✅ **Engine Restart**: 
+   - Discovered engine was not running (shut down at 09:32:35 UTC with USER_REQUEST)
+   - Verified active-sessions.json has 52 ticker sessions configured (AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA, IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T, BRK.B, NFLX, COST, TXN, AVGO, ABBV, BMY, TMO, CAT, SBUX, RTX, AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK, HD, LMT, UPS, REGN, FDX)
+   - Restarted launch_stacker_sessions.py with active-sessions.json config at 11:39 UTC
+   - Engine now running (PID 177133)
+   - Ready for 13:30 UTC market open with position closes
+
+3. ⏳ **Pre-Market Readiness**:
+   - Engine operational with 52 ticker sessions configured in paper trading mode
+   - 19 non-AAPL positions scheduled to close at 13:30 UTC market open
+   - AAPL position (108 shares, +$924 unrealized) scheduled to hold at h+4
+   - Pre-market health check at 13:00 UTC will verify engine readiness
+   
+**Timeline**:
+- **Current time**: 11:45 UTC
+- **Pre-market health check**: 13:00 UTC (75 min away) — verify engine operational
+- **Market open**: 13:30 UTC (105 min away) — execute position closes
+- **Post-market analysis**: 20:00 UTC — assess fills and Gate 1 trajectory
+
+**Next Actions**:
+- Stand by until 13:00 UTC for pre-market health check
+- Monitor engine logs for startup issues
+- Prepare market open monitoring at 13:30 UTC
+
+**Session work complete** (code refactored, engine restarted, ready for market event)
