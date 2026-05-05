@@ -4,6 +4,44 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session — 2026-05-04 — Native Plants Guide Expansion
+
+**Task**: Expand the native plants guide with four new content sections for pre-launch incorporation.
+
+**Documents read this session**: products/native-plants-regional-guide.md (structure, voice, format),
+competitor-landscape.md (market positioning, pricing gaps, differentiation context),
+products/companion-planting-chart.md (format reference), products/seed-saving-field-manual.md (tone reference),
+WORKLOG.md (prior sessions).
+
+**Content produced**:
+
+All four sections written and delivered to `native-plants-guide-expansion.md`. Approximate word counts:
+- Section A (Zone-by-Zone Companion Planting Guilds): ~900 words — 8 guilds across zones 3-8,
+  2 guilds per zone with anchor species, support species, functional rationale, and establishment notes.
+- Section B (Native Plants for Specific Use Cases): ~650 words — rain gardens, drought-tolerant
+  landscapes, pollinators (monarchs/native bees/hummingbirds), privacy screening. 5-8 species per
+  category with 1-2 sentence descriptions.
+- Section C (Seed Saving Calendar): ~700 words — month-by-month (Jan-Dec) with species, ripeness
+  indicators, and storage method for each. Covers 25+ native species.
+- Section D (Troubleshooting): ~1,100 words — 10 common establishment problems with root-cause
+  diagnosis and actionable solutions.
+
+**Positioning notes**: Content is calibrated to Seedwarden's voice (practical, direct, no hedging,
+field-manual register). Species selection prioritizes species already referenced in the main guide
+or mentioned in companion products. Zone coverage matches the zone 3-8 hardiness range referenced
+in existing zone card products.
+
+**Image downloads this session**: 0 — content writing session only.
+
+### Files Produced
+
+| File | Change |
+|------|--------|
+| `native-plants-guide-expansion.md` | New file. Four expansion sections (~3,350 words total) for incorporation into the Native Plants Regional Guide before launch. |
+| `WORKLOG.md` | This session entry added. |
+
+---
+
 ## Session 715 — 2026-05-01 — Phase 1 and Phase 2 Execution Readiness Preparation
 
 **Task**: Prepare Phase 1 execution script and Phase 2 orchestrator task plan for immediate
