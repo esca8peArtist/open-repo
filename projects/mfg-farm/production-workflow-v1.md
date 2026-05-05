@@ -43,11 +43,22 @@ Once functional test passes, lock the production STLs before running any product
 
 **CadQuery regeneration command (from repo root):**
 ```bash
-uv run python cadquery/modrun_clip.py --export stl/v1.0/modrun_clip_6mm_v1.0.stl
-uv run python cadquery/modrun_rail.py --export stl/v1.0/modrun_rail_deskclamp_v1.0.stl
+# Generate clips with different bore sizes (6mm, 8mm, 12mm)
+uv run python cadquery/modrun_clip_b123d.py --bore 6 --output-dir stl/v1.0/
+uv run python cadquery/modrun_clip_b123d.py --bore 8 --output-dir stl/v1.0/
+uv run python cadquery/modrun_clip_b123d.py --bore 12 --output-dir stl/v1.0/
+
+# Generate rail (desk_clamp)
+uv run python cadquery/modrun_rail_b123d.py --output-dir stl/v1.0/
 ```
 
-Generate all bore-diameter variants you plan to sell at launch (6mm, 8mm, 12mm are the primary three). Each variant becomes a separate production STL file.
+**To adjust FDM_TOLERANCE without editing Python files,** add the `--tolerance` flag:
+```bash
+# Regenerate with adjusted tolerance (0.10, 0.15, or 0.20)
+uv run python cadquery/modrun_clip_b123d.py --bore 6 --tolerance 0.20 --output-dir stl/v1.0/
+```
+
+Each bore size variant becomes a separate production STL file. Tolerance adjustments (0.10/0.15/0.20mm) can be generated and tested without editing the Python source.
 
 **Directory structure to establish immediately:**
 
@@ -506,6 +517,23 @@ This checklist gates the first customer shipment. Every item must be checked bef
 
 ### 5.3 Supplier Setup
 
+**Post-Test-Print Supplier Action Sequence (Gates All Timelines):**
+
+| Timeline | Action | Objective |
+|---|---|---|
+| **Hour 0** (test print passes) | Place Amazon order for eSUN PLA+ 10kg bundle (ASIN B0G2KSS613) if filament stock <3 spools | Secure filament supply immediately; 2-day delivery |
+| **Hour 0-1** | Verify eSUN wholesale inquiry template (`supplier-negotiation-playbook.md`) is ready; confirm Anycubic 50kg pallet pricing at store.anycubic.com | Prepare outreach; no-regret action |
+| **Day 1** | Send eSUN wholesale inquiry (target: $10–12/kg at 10kg+ volumes); request samples if available | Lock wholesale pricing for Month 1 ramp |
+| **Day 1-2** | Place Anycubic test order: 5kg black PLA direct to the printer location | Pre-qualify supplier filament compatibility before committing to 50kg pallet |
+| **Week 1-2** | Anycubic test order arrives; run 3-hour continuous AMS test job (modrun_clip files), measure 5 parts with calipers, record lot number | Validate AMS feed reliability, print quality, and dimensional consistency |
+| **Week 2-3** | eSUN response arrives; evaluate against $12/kg target. Accept if at/below; call if no response | Lock wholesale supplier for Month 1 |
+| **Month 1** (Day 30 decision gate) | If 20+ units/week velocity confirmed, commit to either eSUN wholesale or Anycubic pallet (whichever passed pre-qualification) | Avoid overcommitting to volume before demand is proven |
+| **Do not commit to 50kg pallet volume before Month 1 velocity is confirmed** | — | Risk mitigation: avoid filament waste if demand stalls |
+
+Once Amazon filament arrives (typically Day 2-3), begin Month 1 production immediately — do not wait for wholesale negotiation outcomes.
+
+**Supplier Setup Checklist:**
+
 - [ ] eSUN PLA+ 10kg bundle ordered (Amazon Prime); at minimum 2 colors (black, white)
 - [ ] Pirate Ship account created; Etsy shop connected; test shipping label printed
 - [ ] 100+ poly mailers (9×12") on hand
@@ -557,6 +585,59 @@ For each order received:
 9. Record ship date in tracking spreadsheet
 
 **Processing time commitment:** Aim to ship every order within 2 business days of receipt, regardless of the stated 3–5 day Etsy processing time. Beating the stated SLA consistently is the single highest-leverage action for generating 5-star reviews.
+
+---
+
+## Section 6: Weekly Metrics Tracking
+
+Log these metrics every week. They are the diagnostic heartbeat of the production system — use them to catch problems early and validate assumptions.
+
+**Weekly Metrics to Log (every Sunday or end-of-week):**
+
+| Metric | Target / Benchmark | Frequency | Where to log |
+|---|---|---|---|
+| **Production** | | | |
+| Units printed (by SKU) | Per sales forecast | Weekly | production-metrics.csv |
+| Units passed QC | >92% at steady state | Weekly | production-qc-log.csv |
+| Scrap rate | <5% target; <8% acceptable Month 1 | Weekly | production-qc-log.csv |
+| Printer active hours | Track vs. projected capacity | Weekly | production-metrics.csv |
+| **Filament consumption** | | | |
+| Filament used (kg/week) | ~1.5 kg @ 20 units/week | Weekly | production-metrics.csv |
+| Cost per kg actual vs. target | Target $12/kg | Weekly | production-metrics.csv |
+| Filament waste / scrap loss | Visible in weekly consumption variance | Weekly | production-metrics.csv |
+| **Shipping & Fulfillment** | | | |
+| Orders received (count) | Gauge demand trend | Weekly | order-tracking.csv |
+| Orders shipped (count) | Target: 95%+ within 2 business days | Weekly | order-tracking.csv |
+| Average order-to-ship time (days) | Target: under 2 business days | Weekly | order-tracking.csv |
+| USPS actual shipping cost per order | Model baseline: $4.00–$4.50 | Weekly | order-tracking.csv |
+| **Quality** | | | |
+| Field failures reported (count) | Target: 0; track by SKU | Weekly | quality-incident-log.csv |
+| Customer returns / replacements | Target: <1% of shipped units | Weekly | quality-incident-log.csv |
+| Average customer review rating | Target: >4.5 stars after first 20 reviews | Monthly | Etsy Analytics |
+| **Finance** | | | |
+| Gross revenue (USD) | Per six-month projection | Weekly | finance-summary.csv |
+| COGS (materials + shipping) | Per cost model | Weekly | finance-summary.csv |
+| Net profit after Etsy fees (USD) | Per six-month projection | Weekly | finance-summary.csv |
+| Effective gross margin % | Target: 65–75% | Monthly | finance-summary.csv |
+
+**Key Decision Points:**
+
+- **Scrap rate climbing above 8% two weeks straight:** Run printer maintenance (nozzle cold pull, Z-offset recalibration, PEI plate inspection)
+- **Order-to-ship time exceeding 3 days consistently:** Increase finished goods buffer or reduce production volume
+- **Field failure rate >1% in a single week:** Halt production, inspect QC logs for which filament lot/production day, pull inventory from same lot, re-run Gate 3
+- **USPS actual shipping costs >$5.50 per order:** Investigate package weight overages; revisit box selection
+- **Actual filament consumption >25% higher than projected:** Check for extrusion multiplier drift or unexpected scrap
+- **Monthly revenue tracking <80% of projection three weeks straight:** Investigate Etsy visibility (SEO, search placement, conversion rate); consider paid ads
+
+**Spreadsheet Templates to Create:**
+
+1. `production-metrics.csv` — Units printed, passed, failed, scrap rate, printer hours, filament consumption by color
+2. `production-qc-log.csv` — Already defined in Section 4.5; expanded with weekly aggregation
+3. `order-tracking.csv` — Order received date, ship date, shipping cost, customer review (after fulfillment)
+4. `quality-incident-log.csv` — Field failure reports by SKU, replacement shipments, root cause analysis
+5. `finance-summary.csv` — Weekly revenue, COGS, fees, net profit, margin %
+
+These five spreadsheets are the complete operational dashboard. Review all five together every Sunday to spot trends.
 
 ---
 

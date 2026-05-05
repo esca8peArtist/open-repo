@@ -2,6 +2,7 @@
 title: "Recipient Feedback Template — Tier 1 Distribution"
 project: cybersecurity-hardening
 created: 2026-05-05
+revised: 2026-05-05
 status: production-ready
 use: Survey (async email) + interview script (synchronous call or Signal exchange)
 companion: tier-1-effectiveness-framework.md, tier-1-feedback-collection-protocol.md
@@ -9,256 +10,349 @@ companion: tier-1-effectiveness-framework.md, tier-1-feedback-collection-protoco
 
 # Recipient Feedback Template
 
-**Purpose**: Structured feedback collection from Tier 1 organizations at the 90-day mark. Used in two modes: (1) async email survey for contacts who have engaged but are unlikely to take a call, and (2) interview script for contacts who have indicated willingness to discuss in depth (Stage 2+).
+**Purpose**: Structured feedback collection from the 33-organization Tier 1 amplifier cohort at the 90-day mark. Cohort sectors: digital rights organizations, academic cybersecurity programs, researcher communities, and journalist organizations. Used in two modes: (1) async email survey for contacts who have engaged but are unlikely to take a call, and (2) interview script for contacts who have indicated willingness to discuss in depth (Stage 2+, meaning they are either actively using, citing, or distributing the corpus).
 
-**Design principle**: The hardest implementation feedback to collect is also the most valuable: what prevented adoption, not what enabled it. Most survey instruments optimize for positive confirmation. This template is calibrated to surface barriers and gaps because those are the inputs that drive corpus revision before Phase 2.
+**Design principle**: The hardest implementation feedback to collect is also the most valuable — what prevented adoption, not what enabled it. Most survey instruments optimize for positive confirmation. This template is calibrated to surface barriers and gaps because those are the inputs that drive corpus revision before Phase 2. Every question has an explicit "what you are listening for" note and a "Phase 2 implication" note, because every answer should map to a specific Phase 2 decision.
 
-**Privacy note**: Do not record or transcript calls without explicit consent. Do not attribute specific quotes to organizations without permission. Use anonymized aggregates in any public-facing reporting ("two immigration legal aid organizations reported...").
+**Duration**: Async survey: 5–8 minutes. Interview script: 25–40 minutes. Skip questions where you already have the answer from prior exchanges.
 
----
-
-## Part 1: Async Email Survey (90-Day Mark)
-
-Send to all contacts at Stage 1 or above who have not explicitly opted out of follow-up. This is the full written version; a briefer version appears in the Day 90 follow-up template in `tier-1-feedback-collection-protocol.md`. Use this longer version when a contact has shown substantive engagement and you want richer data.
+**Privacy**: Do not record or transcript calls without explicit consent. Do not attribute specific quotes to organizations without permission. Use anonymized aggregates in any public-facing reporting ("two immigration legal aid organizations reported...").
 
 ---
 
-**Subject**: Three questions about the OpSec guide — 5 minutes, your call whether to answer
+## Part 1: Async Email Survey (Day 90)
+
+Send to all contacts at Stage 1 or above who have not explicitly opted out. The survey uses checkboxes for speed and a single open-text slot per question. Even a partial reply (checkboxes only, no open text) produces usable data.
+
+---
+
+**Subject**: Three months in — quick check-in on the ICE surveillance threat model (5 minutes)
 
 > Hi [Name],
 >
-> Three months since I sent the digital security guide for immigration legal teams. A few specific questions — not a survey form, just reply with whatever is useful. Any response, even partial, helps shape the next version.
+> Three months since I sent the digital security guide and ELITE threat model documentation. A few specific questions — reply with whatever you have. Checkboxes only is fine. Even "none of the above" is useful.
 >
-> **Question 1 — Did your organization look at it?**
-> Any of these:
-> - [ ] Yes, [Name] reviewed it
-> - [ ] We shared it with [team or partner]
-> - [ ] It's on our list but hasn't happened yet
-> - [ ] It's not the right fit for our work
+> ---
 >
-> **Question 2 — If you or a colleague looked at it: what section mattered most?**
-> - [ ] Part 0 (data broker opt-outs — the immediate action section)
-> - [ ] The threat model (what the ELITE system actually does)
-> - [ ] The implementation guide (device setup, Signal, Tor)
-> - [ ] The Tier 1 checklist (the "start here" summary)
+> **Q1 — Did your organization look at it?**
+> - [ ] Yes — [Name] reviewed it
+> - [ ] We shared it with [team, department, or partner org]
+> - [ ] It's on the list but hasn't happened yet
+> - [ ] Not the right fit for our work right now
+>
+> *If you checked "shared it": who did you share it with? (One line — org name or role is enough.)*
+>
+> ---
+>
+> **Q2 — If anyone looked at it: what section mattered most?**
+> - [ ] The threat model (what the ELITE/Palantir system does and its primary data sources)
+> - [ ] Part 0 (data broker opt-outs — the immediate action section for at-risk individuals)
+> - [ ] The implementation guide (device setup, Signal, Tor, VeraCrypt)
+> - [ ] The California DROP platform pathway (AB 60 → DELETE Act for undocumented residents)
+> - [ ] The sourcing and primary documentation (FOIA disclosures, government contracts)
 > - [ ] Haven't gotten to it yet
 >
-> **Question 3 — What's the biggest gap?**
-> What should the guide cover that it currently doesn't — or what did you find missing for your specific work or clients?
+> ---
 >
-> (One sentence is fine. "No gap" is a valid answer.)
+> **Q3 — What's the biggest gap?**
+> What should the guide cover that it doesn't — or what was missing for your specific work or audience?
 >
-> **Question 4 — What made implementation harder than expected?**
-> If you or your clients tried any steps: what got in the way?
-> - [ ] Too technical for clients/staff without tech background
-> - [ ] Clients primarily use phones, not laptops — instructions don't apply
-> - [ ] No Spanish-language version (critical gap for our client base)
-> - [ ] Gist URL format is hard to share internally or print
-> - [ ] Legal questions — unclear whether certain steps create documentation we'd prefer not to have
-> - [ ] Staff capacity — couldn't prioritize it during active enforcement period
-> - [ ] Other: [free text]
+> (One sentence is fine. "No gap" is a valid answer. A specific scenario or use case that came up is the most useful answer.)
 >
-> **Question 5 — Who else should have this?**
-> Is there a colleague, partner organization, or network that you think would find this directly useful?
-> (If comfortable sharing a name or contact, that's helpful. If not, describing the type of organization is enough.)
+> ___
 >
-> That's the full ask. Reply with whatever you have — even a single word per question is useful.
+> ---
+>
+> **Q4 — What made it harder to use or share than expected?**
+> - [ ] Too long to forward as a single resource — a shorter summary would help
+> - [ ] Gist URL format is hard to distribute internally or include in a publication
+> - [ ] The sourcing needs peer review or institutional vetting before we can cite it
+> - [ ] The threat model covers confirmed capabilities but doesn't note uncertainty or limitations explicitly enough
+> - [ ] Staff capacity — couldn't prioritize during a busy period
+> - [ ] We need a version formatted for a specific use (print, course syllabus, training slide deck)
+> - [ ] Other: ___
+>
+> ---
+>
+> **Q5 — Is the threat model sourced well enough to use publicly?**
+> The guide's threat model is based on Palantir government contracts, FOIA disclosures, court filings, and government data-sharing agreements. Is that level of sourcing sufficient for your organization to cite, link to, or share with your audience?
+> - [ ] Yes — the sourcing is sufficient for our use
+> - [ ] Partially — the primary sources are solid but the interpretation needs strengthening
+> - [ ] No — we'd need independent verification before citing
+> - [ ] Can't assess — we haven't reviewed the sourcing in detail
+>
+> *If partially or no: what would make the sourcing stronger for your context?*
+>
+> ___
+>
+> ---
+>
+> **Q6 — Who else should have this?**
+> A colleague, partner org, or network that would find this directly useful:
+>
+> ___ (Name/org, or just "type of org" if you prefer)
+>
+> ---
+>
+> That's the full ask. Reply with whatever you have — even one checkbox per question is useful.
 >
 > [Your name]
 
 ---
 
-## Part 2: Interview Script (Stage 2+ Contacts)
+## Part 2: Interview Script (Stage 2+ Contacts, 25–40 minutes)
 
-For contacts who indicate willingness to speak (by replying positively to the email survey or previously expressing interest in discussing). Use for a 20–30 minute call or synchronous Signal exchange. Skip questions where the email survey already provided a clear answer.
-
-**Before the interview**: Review what you already know from their replies. The interview should deepen, not repeat, what the email collected.
+For contacts who indicate willingness to speak in depth. Use for synchronous calls or Signal exchanges. Before starting: review what you already know from their prior replies. Skip questions where email responses already provided a clear answer — the interview deepens, it does not repeat.
 
 ---
 
 ### Opening (2 minutes)
 
-> Thanks for taking the time. I have four areas I'd like to cover — adoption barriers, gaps in the guide's content, whether the threat model matched what your organization actually faces, and how it fits your sector's work specifically. We can stop at any point and I'll take whatever you're comfortable sharing.
+> Thanks for making time. I have four areas: adoption barriers, content gaps, threat model accuracy, and how the guide fits your sector specifically. We can stop at any point and I'll take whatever you're comfortable sharing.
 >
-> Before I start: anything you share will be used to improve the guide. I won't attribute quotes to [Organization] by name without asking you first. Is that okay?
+> One ground rule: I won't attribute anything to [Organization] by name without asking you first. Everything I use from this conversation will be anonymized unless you say otherwise. OK?
 
 ---
 
-### Section A: Adoption Barriers
+### Section A: Adoption Barriers (8–10 minutes)
 
-These questions diagnose what delayed or prevented implementation. The goal is to understand the obstacle before assuming a content fix is the right solution.
+These questions diagnose what delayed or prevented implementation, citation, or sharing. The goal is to understand the obstacle before assuming a content fix is the right solution. For this cohort (digital rights, academic, researcher, journalist organizations), the most common barriers are credibility/sourcing concerns, format friction, and internal vetting requirements — not technical capacity.
 
-**A1. Route to the right people**
+**A1. Where did the guide land?**
 
-> When the guide arrived, where did it land in your organization? Did it go directly to someone who could act on it, or did it take some routing?
+> When the guide arrived, where did it go in your organization? Did it reach someone who could act on it directly — who could review, share, or publish it — or did it need routing first?
 
-*What you are listening for*: Routing failures (landed with communications staff, not program staff). If so: probe which role or department should have received it.
+*What you are listening for*: Routing failure (general inbox instead of the relevant policy team, security team, or faculty). For digital rights organizations, the relevant person is a staff attorney, security researcher, or policy analyst — not a communications or development staffer. For academic programs, the relevant person is a faculty researcher or department director, not a department administrator.
 
-> If it needed to be routed, what happened — did it reach the right person eventually?
+*Phase 2 implication*: If routing failure appears in 2+ organizations in the same sector, the Phase 2 contact list for that sector needs to identify role-specific contacts. A Sector A organization should be addressed to its surveillance policy team, not its press address. A Sector B academic program should be addressed to a faculty researcher, not the department's general inquiry address.
 
-**A2. Time and capacity**
+> Did it eventually reach the right person? What happened?
 
-> Immigration legal organizations are under a lot of active pressure right now. Did staff capacity affect whether anyone had time to review this?
+**A2. Internal vetting and credibility threshold**
 
-*What you are listening for*: Timing effects — the guide may be valuable but the distribution moment was wrong. Note whether a follow-up at a different time (e.g., after an enforcement pressure wave passes) would be more effective.
+> Did your organization have an internal review process for the threat model before it could be used or shared publicly? What does that process look like — who reviews new research before your org cites or publishes it?
 
-**A3. Technical accessibility**
+*What you are listening for*: Whether the corpus passed the organization's credibility bar, or whether it is still in review. Digital rights organizations and academic programs often have explicit review standards — EFF's team vets security research claims before publishing; university programs require peer review or institutional sign-off before citing non-peer-reviewed sources. Understanding the vetting process for each sector tells you how to strengthen Phase 2 submissions.
 
-> The implementation guide covers device hardening, encrypted messaging, and network configuration. For your clients or staff — what's the realistic technical baseline? Are people primarily using phones? Do they have reliable internet access?
+*Phase 2 implication*:
+- If the vetting concern is sourcing depth: add a sourcing appendix listing primary sources with direct links
+- If the vetting concern is author credentialing: consider whether a co-publication or endorsement from an established organization would satisfy the credibility threshold
+- If the vetting concern is claims accuracy: offer to share the underlying documentation for independent review before publication
 
-*What you are listening for*: Phone-first vs. laptop-first populations; low-bandwidth or intermittent internet access; clients who rely on shared devices (public computers at legal aid offices). These constraints require different format solutions than the current Gist-format guide.
+**A3. Format friction**
 
-**A4. Legal and documentation concerns**
+> The guide was distributed as a Gist link. Was that format easy to work with — easy to review, share internally, or include in your own resources?
 
-> Some organizations have raised questions about whether documenting that clients took security steps could create records that would complicate legal proceedings. Did that concern come up for your team?
+*What you are listening for*: Format barriers specific to this cohort. Digital rights organizations often want PDFs they can post on their website or include in resource guides. Academic programs often want documents formatted for course management systems. Journalist organizations often want printable, citable documents with clear authorship and date. A Gist is a functional format for reading but a poor format for institutional distribution.
 
-*What you are listening for*: Legal caution about documentation trail (attorney-client privilege implications of writing down that a client changed their phone settings). This is a real concern in immigration legal practice and may require an explicit disclaimer in the corpus.
+*Phase 2 implication*: If 3+ organizations in any sector cite format as a barrier, produce a PDF version with a clear title, date, and authorship line before Phase 2. This is a 2-hour fix with high adoption-barrier resolution value for institutional audiences.
 
-**A5. Language**
+**A4. Capacity and timing**
 
-> For Tier 1B/1C only — your clients primarily communicate in [Spanish / other language]. The guide is currently English-only. Did that limit how you could use it?
+> Did staff or faculty capacity affect whether anyone had time to review this? Was there a point when the timing felt wrong — a deadline, a major campaign, a semester transition?
+
+*What you are listening for*: Timing effects. Digital rights organizations have publication and campaign cycles that absorb bandwidth. Academic programs have semester transitions where faculty are unavailable. Journalist organizations have editorial cycles. A well-timed re-engagement window — after a major campaign ends, at the start of an academic term, after a news cycle breaks — can produce a different outcome than the initial send.
+
+*Phase 2 implication*: If timing was the barrier, not content, the corpus does not need revision. Note the contact's bandwidth cycle and plan a re-engagement window accordingly. For academic programs: January (start of spring term) and August (start of fall term) are the optimal re-engagement windows.
+
+**A5. Differentiation from existing resources**
+
+> Are there other surveillance threat models or security guides your organization already uses or recommends? Where does this guide fit relative to what you already have?
+
+*What you are listening for*: Whether the corpus is perceived as redundant. EFF, CDT, and similar organizations already have surveillance threat resources and security guides. If the corpus is not clearly differentiated from what they already have, they have no adoption incentive. The specific differentiators to probe: the ELITE/Palantir contract documentation, the DROP platform pathway (California-specific), the behavioral tier structure, and the integration of data broker sourcing with device hardening guidance.
+
+*Phase 2 implication*: If an organization cannot name what the corpus does differently from existing resources after reading it, the Phase 2 cover message needs to lead with explicit differentiation before asking for engagement.
 
 ---
 
-### Section B: Guide Gaps
+### Section B: Guide Gaps (8–10 minutes)
 
-These questions identify missing content. The goal is to find scenarios the guide doesn't address, not just features the recipient would like to see.
+These questions identify missing content — scenarios the guide does not address, not features the recipient would like to see.
 
-**B1. Scenario coverage**
+**B1. A scenario the guide didn't cover**
 
 > Think about a client situation you've encountered in the past few months that felt like a security risk. Was there anything in that situation the guide didn't address?
 
-*What you are listening for*: Specific scenarios — a client who had already been stopped by ICE and wanted to know if their phone was compromised; a client whose landlord was potentially reporting information to authorities; a family where some members had documents and others didn't. These are real threat scenarios that may not map to the guide's current tier structure.
+*What you are listening for*: Specific operational scenarios — a client whose landlord may be informing to authorities; a client who had already been stopped by ICE and wanted to know if their device was compromised; a mixed-status family where one member was a DACA recipient and another was undocumented. These are real Tier 1 threat scenarios that may not map to the corpus's current structure.
 
-**B2. The DROP platform and California-specific path**
+*Examples of high-priority missing scenario signals*:
+- "Client was detained and their phone may have been searched — what do they do now?" → post-detention scenario, not currently in any section; high-stakes gap
+- "Client's employer is reporting to ICE — the risk is at work, not at home" → employer surveillance vector not currently addressed
+- "Client is a DACA recipient worried about DOGE-related admin database access" → distinct from undocumented threat tier; may need separate guidance
 
-> For California-based organizations — did the section on the California DELETE Act DROP platform and the AB 60 ID pathway make sense for your clients? Were there steps missing, or was it hard to explain to clients without a driver's license?
+**B2. The California DROP platform path**
 
-*What you are listening for*: Procedural gaps in the DROP platform walkthrough. The AB 60 state ID to DELETE Act pathway is the guide's most distinctive contribution for California-based undocumented residents. Any report that it was unclear or incomplete is a high-priority fix.
+> For California-based organizations — did the section on the California DELETE Act DROP platform and the AB 60 ID pathway make sense? Were there steps missing, or was it hard to explain to clients without a driver's license?
 
-**B3. The "what happens after I take these steps" question**
+*What you are listening for*: Procedural gaps in the DROP platform walkthrough. The AB 60 → DELETE Act pathway is the corpus's most distinctive contribution for California-based undocumented residents. Any report that it was unclear or incomplete is a Category (a) wording fix with high priority — this section is the highest-confidence attribution signal for corpus impact.
 
-> Did clients or staff ask what happens after they complete the opt-outs — whether brokers actually process them, how long it takes, whether it makes a meaningful difference?
+> Did clients attempt the DROP platform enrollment? What did they encounter?
 
-*What you are listening for*: A gap in the guide around outcome expectations. The guide documents how to opt out, but may not adequately explain what to expect after opting out. Unrealistic expectations (belief that opt-outs make someone invisible to ICE) are a potential harm; under-realistic expectations (belief that opt-outs do nothing) undermine motivation. Both require content additions.
+**B3. What happens after the opt-outs**
 
-**B4. Missing scenarios for specific populations**
+> Did clients or staff ask what happens after completing the opt-outs — whether brokers actually process them, how long it takes, whether it makes a meaningful difference?
 
-> Are there populations your organization serves that the guide doesn't seem written for? Elderly clients, clients without smartphones, clients who are DACA recipients vs. undocumented, mixed-status families?
+*What you are listening for*: A gap in the guide around outcome expectations. The guide documents how to opt out but does not adequately explain what to expect after opting out. Unrealistic expectations (belief that opt-outs make someone invisible to ICE immediately) are a potential harm; under-realistic expectations (belief that opt-outs do nothing) undermine motivation. Both require additions.
 
-*What you are listening for*: Audience gaps. The guide's Tier 1 population is implicitly mobile-phone-enabled, English-literate or Spanish-literate, and individually at risk. Elderly clients, clients with disabilities, or clients embedded in surveillance-heavy housing situations (detention-adjacent environments) may require different countermeasure logic.
+*Phase 2 implication*: If this gap is mentioned by 2+ organizations, add a "What to expect after opting out" section: broker processing timelines (60–90 days for most), DROP platform timeline (August 1, 2026 broker processing deadline), partial vs. complete removal, and a realistic statement about what opt-outs accomplish vs. what they cannot.
+
+**B4. Missing populations**
+
+> Are there populations your organization serves that the guide doesn't seem written for? Elderly clients, clients without smartphones, DACA recipients vs. undocumented, mixed-status families?
+
+*What you are listening for*: The guide's implicit population is mobile-phone-enabled, English-literate or Spanish-literate, individually at risk. Populations outside these parameters — clients with disabilities, elderly clients, clients in detention-adjacent housing — may require different countermeasure logic.
+
+*Phase 2 implication*: Document any population gap. If a specific gap is mentioned by 2+ organizations, it becomes a required section for the next version before Phase 2 distribution to community organizations. If mentioned by 1 organization, document and note as a Phase 2 enhancement.
 
 ---
 
-### Section C: Threat Model Accuracy
+### Section C: Threat Model Accuracy (6–8 minutes)
 
-These questions determine whether the guide's description of the ELITE system and its data sources matches what organizations actually observe on the ground. This is the hardest feedback to collect but the most important for credibility.
+These questions determine whether the guide's description of ELITE and its data sources matches what organizations observe on the ground. This is the most important feedback to collect for long-term credibility.
 
-**C1. Does the ELITE documentation match what you see?**
+**C1. Does the ELITE documentation match what you observe?**
 
 > The guide's threat model describes ICE using Palantir's ELITE system to generate deportation targeting scores by pulling from data brokers, Medicaid records, and DMV records. Does that match what you're seeing in your clients' cases — how ICE seems to be finding people?
 
-*What you are listening for*: Ground-level corroboration or contradiction. If legal aid attorneys say their clients are being found through employer records, school records, or social media rather than the commercial data broker pipeline, that is important signal — the guide's emphasis on data broker opt-outs may be overweighted relative to other threat vectors.
+*What you are listening for*: Ground-level corroboration or contradiction. If attorneys say their clients are being found through employer records, school records, or social media rather than the commercial data broker pipeline, that is Category (c) feedback — the guide's emphasis on data broker opt-outs may be overweighted.
 
-**C2. Threat tiers**
+*Phase 2 implication*:
+- **If confirmed accurate**: This is Phase 2 social proof. "Immigration attorneys at [Tier 1 org type] have confirmed the threat model accurately describes the risks their clients face." Quote-permissioned if possible.
+- **If partially accurate**: Document the discrepancy specifically. Determine whether the additional threat vector (employer records, utility records, social media) is documented in any primary source. If yes, add to threat model. If anecdotal, add to "Known gaps and limitations."
+- **If inaccurate in a confirmed pattern**: Category (c) response — HOLD Phase 2, update threat model, re-verify with this organization before continuing.
 
-> The guide divides risk into tiers based on how visible someone is in the enforcement system — whether they've had prior encounters with ICE, whether they're in removal proceedings, etc. Did that tier structure map onto how your organization thinks about client risk levels?
+**C2. Threat tier structure**
 
-*What you are listening for*: Whether the tier framework resonates with practitioners who are already assessing client risk. If legal aid organizations use a different risk categorization model in their own practice, the guide's tier structure may need adjustment to align with how practitioners already work.
+> The guide divides risk into tiers — Tier 1 (general population with low enforcement history), Tier 2 (individuals with prior encounters or in removal proceedings), Tier 3 (individuals facing active surveillance). Did that tier structure map onto how your organization thinks about client risk levels?
 
-**C3. Current threat landscape accuracy**
+*What you are listening for*: Whether the tier framework resonates with practitioners who are already assessing client risk. If legal aid organizations use a different risk categorization in their practice (and many do — the "priority" framework from the Obama-era DHS memos still shapes legal practice), the guide's tier structure may create friction rather than alignment.
 
-> The guide was documented in early 2026. Have you seen any developments since then — new data sources ICE is using, new enforcement patterns, new risks — that the guide doesn't reflect?
+*Phase 2 implication*: If the tier structure conflicts with how practitioners already categorize clients, add a "Mapping to existing practitioner risk frameworks" note that translates between the corpus's tier language and the frameworks attorneys already use.
 
-*What you are listening for*: Temporal gaps. The threat model is built from documents available as of early 2026. If there have been FOIA disclosures, court filings, or enforcement incidents since then that reveal new ELITE capabilities or data sources, those need to be incorporated in the next version.
+**C3. Temporal updates**
+
+> The guide was built from documents available in early 2026. Have you seen any developments since then — new data sources ICE is using, new enforcement patterns, new risks — that the guide doesn't reflect?
+
+*What you are listening for*: Temporal gaps. If there have been FOIA disclosures, court filings, or enforcement incidents since the corpus was written that reveal new ELITE capabilities or data sources, those need to be incorporated before Phase 2.
+
+*Phase 2 implication*: Any temporal update confirmed by primary source must be incorporated before Tier 2 distribution to digital rights organizations and academic programs — those audiences will notice outdated threat model documentation.
 
 ---
 
-### Section D: Organizational Fit
+### Section D: Organizational Fit and Phase 2 Readiness (5–7 minutes)
 
-These questions identify which organizational types found the guide most useful — and why — to calibrate Tier 2 outreach.
+These questions identify how the guide was actually used and what Phase 2 framing will resonate with broader audiences.
 
-**D1. Your organization's use case**
+**D1. Most useful actual use**
 
 > Looking back at the past three months — what is the most useful thing the guide ended up doing for your organization, even if it wasn't how you expected to use it?
 
-*What you are listening for*: Unanticipated use cases. The guide may have been most useful not as a client education tool but as a staff training reference, or not as a data broker opt-out guide but as a threat model for litigation purposes.
+*What you are listening for*: Unanticipated use cases that signal Phase 2 framing angles:
+- "It's the best-sourced single document we've seen on Palantir's government contracts" → lead Phase 2 with sourcing quality for policy and journalism audiences
+- "We're using it to update our own surveillance threat briefings" → lead Phase 2 with the framing "organizations publishing their own threat analyses have been using this as a foundation"
+- "A faculty member is citing it in a paper on commercial surveillance-as-service" → lead Phase 2 with academic rigor framing
+- "We recommended it to a source who was worried about ICE" → the corpus is being used as an operational resource, not just a policy document — this is a high-value signal for journalist training programs
 
-**D2. Fit relative to peer organizations**
+**D2. Sector generalizability**
 
-> In your network — other organizations doing similar work — do you think this guide would be useful to them, or would it face the same barriers you experienced?
+> In your network — organizations doing similar work — do you think this guide would be useful to them, or would they face the same barriers you experienced?
 
-*What you are listening for*: Sector-wide generalizability. If the barriers this organization faced are idiosyncratic (specific staff capacity issue, specific client population constraint), the guide may still be broadly useful. If the barriers are structural to the sector (all high-volume immigration legal organizations are understaffed), the guide needs adaptation, not just distribution.
+*What you are listening for*: Whether the barriers this organization faced are idiosyncratic or structural to the sector. If structural, Phase 2 framing for that sector needs to acknowledge and address the barrier directly. If idiosyncratic, proceed to Phase 2 without changes.
 
-**D3. What this guide does that others don't**
+*Phase 2 implication*:
+- "All organizations like us want primary-source citations before we can share it publicly" → structural credibility barrier for Sector A; Phase 2 should provide a sourcing reference document as a companion to the corpus
+- "Our specific issue was our editorial backlog, but other orgs wouldn't have that" → idiosyncratic timing barrier; proceed to Phase 2 as planned for this sector
+- "Researchers I know would find this useful — the FOIA sourcing is actually better than most academic sources on this" → strong Phase 2 signal for Sector C and Sector B outreach framing
 
-> Are there other security guides or resources your organization uses? What does this guide do differently from what you already have?
+**D3. What would make this more citable or shareable**
 
-*What you are listening for*: Differentiation signal. If the guide duplicates resources organizations already have, adoption will not happen regardless of quality. If it fills a genuine gap (the ELITE documentation angle, the DROP platform path, the Tier 1 checklist structure), that differentiation is what to emphasize in Phase 2 outreach.
+> If you were going to share or cite this more widely — what would you need that isn't currently there?
+
+*What you are listening for*: Specific format or credibility additions that would unlock broader sharing. Common answers from this cohort:
+- "A clear author or organizational affiliation — anonymity creates credibility questions" → Phase 2 decision point: maintain anonymity or provide organizational context
+- "An abstract or executive summary formatted as a standalone page" → 2-hour fix; produce a one-page brief version for institutional sharing
+- "A version that's been reviewed or endorsed by [named organization]" → Phase 2 strategy: request endorsement from highest-Stage Sector A contact before Phase 2 launch
+- "More explicit uncertainty language — 'confirmed in X court filing' vs. 'believed to include' — so we know which claims are verified vs. inferred" → high-value improvement to the threat model's epistemics for academic and journalist audiences
 
 ---
 
 ### Closing (2 minutes)
 
-> That covers everything I wanted to ask. Is there anything that came up in our conversation that you'd want me to know — something I didn't ask about?
+> That covers everything I wanted to ask. Anything that came up in our conversation you'd want me to know — something I didn't ask about?
 
-> One last question: if I improve the guide based on feedback like yours — would [Organization] be willing to be named as an early user in future outreach to organizations like EFF or IRE? No obligation at all, and I understand if you prefer to stay anonymous.
+> One last question: if I improve the guide based on feedback like yours and reach out to broader audiences for the next distribution phase — would [Organization] be willing to be named as an early user or reviewer? Even a general description ("a digital rights organization" or "an academic cybersecurity program") helps enormously with credibility. No obligation, and I understand if you prefer to stay anonymous.
 
-*If yes*: Log as "named citation permitted" and record what specifically they're comfortable being cited on (e.g., "used guide in client intake" vs. "confirmed threat model accuracy").
+*If yes*: Log as "named citation permitted." Record what specifically they are comfortable with being cited on (e.g., "used guide in client intake" vs. "confirmed threat model accuracy" — these are different and you may need both separately).
 
-*If no*: Log as "anonymous only" — use organization type but not name in any Phase 2 communications.
+*If no*: Log as "anonymous only." Use organization type but not name in any Phase 2 communication ("a Tier 1A immigration legal aid organization confirmed...").
 
 ---
 
 ## Part 3: Aggregation Key
 
-After collecting survey and interview data from 90-day contacts, aggregate responses into these four buckets before using feedback to make Phase 2 decisions.
+After collecting survey and interview data at the 90-day mark, aggregate responses into these four categories before making Phase 2 decisions. The aggregation should produce a one-page summary that drives the Phase 2 launch assessment.
 
-### Adoption Barriers Aggregation
+### A. Adoption Barriers Summary
 
-| Barrier | Count | Organizations | Response Required |
-|---|---|---|---|
-| Technical complexity above client capacity | | | Add simpler Part 0 summary |
-| Phone-first / no laptop access | | | Produce mobile-optimized version |
-| Spanish-language gap | | | Produce Spanish Part 0 |
-| PDF format needed (not Gist) | | | Produce PDF before Tier 2 sends |
-| Legal / documentation concerns | | | Add legal-context disclaimer |
-| Staff capacity (timing problem, not content problem) | | | Re-engage at lower-enforcement-pressure moment |
-| Wrong routing (communications, not programs staff) | | | Research program-staff contacts before re-engagement |
+| Barrier | Count | Organizations (sector) | Triage Category | Phase 2 Action Required |
+|---------|-------|----------------------|-----------------|------------------------|
+| Credibility / sourcing concern (won't cite without verification) | | | (a) sourcing fix | Add sourcing reference document with primary source links |
+| Format (PDF needed, not Gist) | | | (a) format | Produce PDF version before Phase 2 sends |
+| Too long / needs executive summary | | | (a) format | Produce 1-page brief version |
+| Author/affiliation anonymous — reduces institutional credibility | | | Decision point | Assess whether to provide organizational context |
+| Internal vetting backlog (will review, hasn't yet) | | | Neither — re-engage later | Flag for 30-day re-engagement |
+| Wrong routing (general address instead of relevant team/faculty) | | | Neither — contact fix | Update contact list with role-specific contacts |
+| Staff/faculty capacity (timing, not content) | | | Neither — timing | Note; re-engage at semester start or after campaign cycle |
+| Redundancy with existing resources (not differentiated) | | | (d) framing fix | Revise cover message to lead with differentiators explicitly |
+| Uncertainty language insufficient (can't distinguish confirmed vs. inferred claims) | | | (b) missing section | Add epistemics annotations to threat model claims |
 
-**Threshold for action**: Any barrier cited by ≥2 organizations is a required fix before Tier 2 launch.
+**Decision rule**: Any barrier cited by ≥3 organizations is a required fix before Phase 2 launch. Barriers cited by 1–2 organizations are Phase 2 enhancements. Routing and timing barriers are not content problems — do not revise corpus in response to them.
 
-### Guide Gaps Aggregation
+### B. Guide Gaps Summary
 
-| Gap | Count | Organizations | Phase 2 Priority |
-|---|---|---|---|
-| DROP platform instructions incomplete | | | Critical — most distinctive content |
-| Post-opt-out outcome expectations missing | | | High |
-| Scenario coverage (specific populations not addressed) | | | Medium — document; prioritize if ≥3 orgs cite |
-| Temporal update needed (new ELITE capabilities) | | | Critical if factual; Medium if contextual |
-| Mixed-status family scenarios | | | Medium |
+| Gap | Count | Organizations (type) | Priority | Phase 2 Timing |
+|-----|-------|----------------------|----------|----------------|
+| DROP platform instructions incomplete | | | Critical | Fix before any Phase 2 |
+| Post-opt-out outcome expectations missing | | | High | Required if ≥2 orgs cite |
+| Post-detention scenario missing | | | High | Required if ≥1 org cites |
+| Specific population not addressed | | | Medium | Required if ≥2 orgs cite |
+| Temporal update needed (new ELITE sources) | | | Critical if factual | Fix before Phase 2 if confirmed |
 
-### Threat Model Accuracy Aggregation
+### C. Threat Model Accuracy Summary
 
-| Assessment | Count | Organizations |
-|---|---|---|
-| Confirmed accurate (threat model matches what orgs observe) | | |
-| Partially accurate (some elements match, others less central) | | |
-| Inaccurate in specific area (describe): | | |
-| Can't assess (not seeing enough enforcement activity to evaluate) | | |
+| Assessment | Count | Organizations (type) |
+|------------|-------|----------------------|
+| Confirmed accurate across the board | | |
+| Partially accurate (specific discrepancies noted below) | | |
+| Inaccurate in confirmed pattern: [describe] | | |
+| Can't assess (insufficient enforcement visibility) | | |
 
-**Threshold for action**: Any factual inaccuracy cited by ≥1 organization requires immediate verification against primary sources before Tier 2 distribution.
+Discrepancies noted:
+- 
+- 
 
-### Organizational Fit Aggregation
+**Decision rule**: Any factual inaccuracy confirmed by ≥1 organization requires primary-source verification before Phase 2. One organization is sufficient for a Category (c) hold — do not wait for corroboration before investigating.
 
-| Sector | Most Useful Section | Unanticipated Use Case | Referral to Tier 2 Type |
-|---|---|---|---|
-| Immigration legal aid (1A) | | | |
-| Community-based org (1B) | | | |
-| Mutual aid network (1C) | | | |
+### D. Phase 2 Readiness Indicators
 
-Use the "Most Useful Section" column to calibrate Tier 2 messaging. If Tier 1A organizations most value the threat model (not Part 0), lead the Tier 2 digital rights outreach with the sourcing quality angle. If Tier 1B organizations most value Part 0, lead the Tier 2 journalist outreach with the source protection practical gap angle.
+For each Phase 2 audience segment, which Tier 1 signal is present? This cohort (33 organizations across Sectors A–D) constitutes the Tier 1 amplifier layer. Phase 2 will reach broader public, policymaker, or practitioner audiences who will rely on this cohort's adoption as social proof.
+
+| Phase 2 Audience Segment | Required Tier 1 Signal | Signal Present? | Source (anon) | Phase 2 Framing |
+|---|---|---|---|---|
+| Policymakers and legislative staff | Sector A org (EFF, CDT, Privacy International) has cited or linked to corpus in any published output | Y/N | | "Leading digital rights organizations have been using this threat model to..." |
+| Broader civil society / advocacy coalitions | Sector A or D adoption confirmed; ≥2 organizations at "Understood" level | Y/N | | "Organizations working on digital rights and journalist protection have..." |
+| Technical practitioner communities | Sector C researcher adoption confirmed; any technical critique incorporated | Y/N | | "Security researchers have reviewed and contributed to the threat model..." |
+| Academic / research audiences | Sector B academic program has indicated curriculum interest or citation intent | Y/N | | "Academic cybersecurity programs are integrating this into..." |
+| Media and public audiences | Sector D journalist org has incorporated into training OR published coverage exists | Y/N | | "Journalist security organizations have incorporated this..." |
+
+**Decision rule**: Phase 2 outreach to a given audience segment requires its specific Tier 1 signal. Do not lead with social proof that is not present. If a required signal is absent, Phase 2 outreach to that segment should be delayed — not because the corpus is insufficient, but because the framing will be weaker without corroboration from a recognizable institutional source.
+
+**Cross-sector rule**: If signals are present from ≥3 of 4 sectors, Phase 2 outreach may use multi-source framing: "Organizations across the digital rights, academic, and journalist security communities have engaged with this threat model." This framing is stronger than any single-sector citation for general audiences.
 
 ---
 
-*Template complete. The async email survey (Part 1) is ready to send at Day 90 post-launch. The interview script (Part 2) is ready to use for any Stage 2+ contact who indicates willingness to speak. Log all responses in the `feedback-collection-template.csv` file under the relevant columns. See `tier-1-effectiveness-framework.md` Section 5 for how feedback results map to the Condition A / B / C triage framework.*
+*Template complete. Calibrated for the 33-organization amplifier cohort (digital rights, academic cybersecurity, researcher communities, journalist organizations). The async email survey (Part 1) deploys at Day 90. The interview script (Part 2) deploys for any Stage 2+ contact who indicates willingness to speak. Log all responses in the feedback tracking spreadsheet. Cross-reference Section 5 of `tier-1-effectiveness-framework.md` for the four-category triage framework (wording fix / missing section / wrong threat model / framework isn't landing) and the Go/No-Go decision tree in Section 6.*
+
+*Note: A separate feedback template for the direct-service cohort (12 organizations: immigration legal aid, community-based, mutual aid) uses the prior version of this document's Q4 (phone-first clients, Spanish gap, legal documentation concerns) and the Q5 framing about ground-level threat model observation. Do not use the amplifier cohort template for the direct-service cohort — the barriers and feedback goals are structurally different.*
+
+*Last revised: 2026-05-05*

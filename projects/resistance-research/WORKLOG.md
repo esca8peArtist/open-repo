@@ -2,6 +2,49 @@
 
 ---
 
+## May 5, 2026 — Cybersecurity-Hardening: Tier 1 Effectiveness Framework + Recipient Feedback Template (v3 — cohort recalibration)
+
+**Session type**: General Research Agent — cybersecurity-hardening project
+**Files revised**:
+- `projects/cybersecurity-hardening/tier-1-effectiveness-framework.md` — Recalibrated for 33-organization amplifier cohort. Key changes: (1) YAML frontmatter updated with cohort-size and sectors fields; (2) sector taxonomy replaced from 1A/1B/1C (direct-service cohort) to Sectors A–D (digital rights, academic, researcher, journalist) with sector-specific success tables for each; (3) all quantified thresholds updated from "of 12" to "of 33" with recalibrated percentages; (4) Day 30/90/180 threshold tables updated with sector-coverage metric and citation/external-sharing metrics; (5) Go/No-Go decision tree updated with 33-org counts, Sector coverage requirements in Gate 3, and accelerate triggers; (6) Phase 2 readiness section rewritten for amplifier cohort — signals now predict readiness for policymaker, academic, media, and civil society audiences rather than Tier 2 amplifier audiences (who are now the Tier 1 cohort); (7) Note distinguishing amplifier cohort from direct-service cohort added to footer.
+- `projects/cybersecurity-hardening/recipient-feedback-template.md` — Recalibrated for amplifier cohort. Key changes: (1) Purpose note updated to name 33-organization cohort and four sectors; (2) Async survey Q1–Q6 rewritten — Q4 now covers format friction, vetting concerns, and sourcing rather than phone-first/Spanish gaps; Q5 now asks about sourcing sufficiency rather than ground-level threat model observation; Q6 unchanged; (3) Section A (adoption barriers) in interview script rewritten — covers credibility/vetting concerns, format friction, internal review process, capacity/timing, and differentiation rather than client population barriers; (4) Section D (organizational fit) rewritten — focuses on unanticipated use cases, sector generalizability, and what would make corpus more citable; (5) Adoption barriers summary table in Part 3 replaced with amplifier-appropriate barriers; (6) Phase 2 readiness indicator table updated to map to Phase 2 audience segments (policymakers, civil society, technical practitioners, academic, media); (7) Footer note distinguishing amplifier and direct-service cohort templates added.
+
+**Key issue resolved**: Prior versions used 12-organization thresholds calibrated for the direct-service cohort (immigration legal aid, community-based, mutual aid). The task specifies 33 organizations across digital rights, academic, researcher, and journalist sectors — the amplifier cohort that is the Tier 1 distribution layer for this campaign phase. All quantified thresholds and sector-specific guidance has been rebuilt for the correct cohort.
+
+---
+
+## May 5, 2026 — Phase 1 User Execution Checklist
+
+**Session type**: General Research Agent — resistance-research project
+**File created**: `projects/resistance-research/phase-1-execution-checklist.md` (~2,700 words)
+
+**What it is**: Step-by-step execution checklist for all three distribution paths immediately after path decision. Covers Path A (immediate 35-domain distribution), Path A+37 (recommended hybrid with Domain 37 election-protection track), and Path B (content updates first, then rolling release). Each path has numbered steps detailed enough to execute without questions — specific file names, specific URLs to visit for contact verification, specific field-fill instructions, specific send orders and timing windows.
+
+**Structure**: Three path sections. Path A: 51 numbered steps across 8 blocks (Gist creation, URL fill-in, contact verification, email personalization, tracking setup, send sequence, social scheduling, Day 4-8 monitoring). Path A+37: 39a-numbered steps extending Path A with Domain 37 Gist creation, integration verification, Phase B election-protection track preparation and launch, and advocacy window framing. Path B: 21b-numbered steps covering priority domain updates (Domains 25, 19, 1, 33, 21 in priority order), Path B messaging substitutions, rolling release calendar setup. Universal contingency section at the end covers 8 common failure conditions across all paths.
+
+**Key design decisions**:
+- Decision gates after each major block (URL verification, remaining bracket audit, all-5-contacts log check) — these catch real-world failure conditions before they compound.
+- Path A+37 date check at the top: if May 30 window is within 14 days, send order changes (Weiser and Elias move forward).
+- Path B minimum viable update set defined: Domain 25 + Domain 19 only (60-75 minutes total) — makes Path B executable without requiring all five domain updates.
+- Every contingency names a specific action, not just "assess the situation."
+
+---
+
+## May 5, 2026 — Cybersecurity-Hardening: Tier 1 Effectiveness Framework + Recipient Feedback Template (v2, revised)
+
+**Session type**: General Research Agent — cybersecurity-hardening project
+**Files revised**:
+- `projects/cybersecurity-hardening/tier-1-effectiveness-framework.md` (~3,800 words) — Full rewrite. Added: (1) explicit "Read / Understood / Implemented" behavioral threshold definitions with observable indicators; (2) quantified success targets table with Below Threshold / On Track / Strong columns at Day 30, 90, 180; (3) four-condition triage taxonomy — (a) minor wording fix, (b) missing section, (c) wrong threat model, (d) framework isn't landing — each with distinguishing test, signal patterns, and Phase 2 hold conditions; (4) five-gate Go/No-Go decision tree adding Gate 5 for threat model integrity; (5) if/then Phase 2 readiness predictions per early-adopter signal type.
+- `projects/cybersecurity-hardening/recipient-feedback-template.md` (~2,200 words) — Substantially expanded. Added: Phase 2 implication notes after every interview question; Phase 2 readiness indicator table in Part 3 aggregation (mapping Tier 2 audience to required Tier 1 signal); Q5 (threat model accuracy) added to async email survey; sharpened if/then examples throughout; decision rules for aggregation sections.
+
+**Key additions in this session**:
+- Category (c) wrong-threat-model triage condition added — the prior framework omitted it. This is the highest-severity condition and the one requiring a Phase 2 hold; it needed explicit treatment distinct from content gaps.
+- Gate 5 (threat model integrity) added to the decision tree — catches factual inaccuracy before it propagates to Tier 2 audiences who will scrutinize it more carefully.
+- "Read / Understood / Implemented" behavioral threshold structure added — resolves the prior ambiguity between engagement and adoption.
+- Phase 2 readiness indicator table makes explicit what was previously implicit: each Tier 2 audience requires a specific form of Tier 1 credentialing before outreach is effective.
+
+---
+
 ## May 5, 2026 — Item 50: Seedwarden Post-Phase-1 Analytics & Customer Retention Tracking Framework
 
 **Session type**: General Research Agent — Seedwarden project (projects/seedwarden/), not resistance-research
