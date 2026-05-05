@@ -18,7 +18,9 @@
 1. **Distribution path decision** (resistance-research) — HIGH PRIORITY — Path A / A+37 Hybrid (recommended) / Path B
 2. **Other blockers**: mfg-farm test print, seedwarden tag corrections, cybersecurity-hardening Tier 1 approval, open-repo PR #1 merge
 
-**Recommendation**: Stand by for 13:00 UTC pre-market health check. No session commitment needed until work resumes post-market or upon user distribution decision.
+**Recommendation**: Stand by mode. No autonomous work available. If orchestrator is still running at 13:00 UTC (within 2h of market event), execute `/standup` pre-market health check. Otherwise, next session can execute post-market analysis at 20:00 UTC or act upon user distribution decision if available.
+
+**Session 747 complete** (2026-05-05 10:28–10:35 UTC) — Orientation only; all projects blocked; no work committed; standing by for market event.
 
 ---
 
