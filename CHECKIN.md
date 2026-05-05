@@ -1,38 +1,68 @@
-## Since Last Check-in (Session 756 — 2026-05-05 18:30–19:15 UTC) — Exploration Queue: 2 Items Complete
+## Since Last Check-in (Session 757 — 2026-05-05 22:20–23:15 UTC) — Exploration Queue: 2 Items Completed + Critical Fixes Applied
 
-### ✅ SESSION 756 COMPLETE — Two exploration queue items researched and completed. Cybersecurity-hardening measurement framework + mfg-farm scaling roadmap staged for user execution.
+### ✅ SESSION 757 COMPLETE — Exploration queue items refined and completed. Cybersecurity-hardening measurement framework improved with deep-dive architecture revision. Mfg-farm production workflow corrected: 3 critical actionability blockers fixed. Both projects now production-ready.
 
 **Work Accomplished**:
 
-1. **Exploration Queue Item: cybersecurity-hardening — Tier 1 Effectiveness Measurement & Phase 2 Trigger Design** ✅ COMPLETE
-   - **Deliverables**: Two production-ready documents
-     - `tier-1-effectiveness-framework.md` (2,500 words) — Sector-specific success definitions, measurement timeline (Days 0–180), three-condition triage (Go / Revise / Overwhelming Demand), Phase 2 decision tree
-     - `recipient-feedback-template.md` (1,000 words) — Survey + interview script for adoption barriers, guide gaps, threat model validation
-   - **Key Findings**:
-     - Sector-specific metrics: Immigration legal aid adopts differently than community orgs vs. mutual aid networks
-     - California DROP platform = highest-confidence impact signal (direct chain: corpus distributed → individual protection in ELITE database)
-     - Vocabulary migration at Days 30–90 predicts institutional integration better than reply rates
-     - Overwhelming Demand scenario: if CLINIC (400+ affiliates) adopts, triggers Part 0 production + Tier 2 acceleration
-   - **Strategic Value**: Measurement infrastructure ready before Tier 1 launch. Enables data-driven Phase 2 decisions.
+1. **Exploration Queue Item: cybersecurity-hardening — Tier 1 Effectiveness Framework** ✅ REVISED & IMPROVED
+   - **Agent work (aeefc72c)**: Deep-dive architecture review identified and fixed prior-version gaps
+   - **Improvements Made**:
+     - Triage framework: Expanded from 3 to 4 categories (minor wording / missing section / wrong threat model / framework isn't landing) with distinguishing tests
+     - Read/understood/implemented: Chain now explicit with observable behavioral indicators at each stage
+     - Go/No-Go decision tree: Extended to 5 gates, adding Gate 5 (threat model integrity check) — prevents Phase 2 launch if category-c inaccuracy confirmed
+     - Email survey: Added Q5 on threat model accuracy for non-phone-call feedback channel
+     - Phase 2 readiness: New mapping table showing each Tier 2 audience (digital rights orgs / academics / journalists) → required Tier 1 signals
+   - **Files**: `tier-1-effectiveness-framework.md` (refined), `recipient-feedback-template.md` (enhanced)
+   - **Strategic Value**: Tier 1 can now launch with rigorous impact measurement. Phase 2 decisions data-driven.
 
-2. **Exploration Queue Item: mfg-farm — Post-Test-Print Production Workflow & Scaling Roadmap** ✅ COMPLETE
-   - **Deliverable**: Complete `production-workflow-v1.md` rewrite (~2,400 words)
-   - **Sections**: Test-print evaluation protocol (snap arm flex → cable retention → dimensional check decision tree), slicer profile specification (minimum layer time 8 sec = critical parameter), capacity math (20 units/week = 65% utilization; 100+ units requires 2 printers), QC protocol (3-gate system with failure disposition), Month 1 launch checklist (35 items)
-   - **Strategic Value**: All post-test-print workflows documented. Month 1 launch ready upon test-print completion.
+2. **Exploration Queue Item: mfg-farm — Production Workflow Critical Fixes** ✅ 3 BLOCKERS RESOLVED
+   - **Agent work (a106c0b3)**: Gap analysis found production-workflow-v1.md was complete but had 3 critical actionability issues
+   - **Fix 1 — STL Generation Commands Corrected** (Section 1.2):
+     - Issue: Commands referenced `modrun_clip.py` (doesn't exist) with `--export` flag (unsupported)
+     - Fixed: Changed to `modrun_clip_b123d.py --bore 6 --output-dir stl/v1.0/`
+     - Added: `--tolerance` flag for easy FDM_TOLERANCE adjustment without Python editing
+     - Impact: User no longer gets file-not-found error at first production step
+   - **Fix 2 — Supplier Action Sequence Added** (Section 5.3):
+     - New: Hour 0 / Day 1-2 / Week 2-3 / Month 1 timeline for eSUN wholesale + Anycubic qualification
+     - Includes: ASIN B0G2KSS613 for Amazon backup, store.anycubic.com for pallet
+     - Impact: Prevents supplier decision paralysis; enables Month 1 launch while wholesale negotiations occur
+   - **Fix 3 — Weekly Metrics Tracking Dashboard Added** (Section 6):
+     - New: 8-metric production/filament/shipping/quality/finance tracking list
+     - Decision thresholds: scrap >8% = maintenance, field failure >1% = production halt
+     - Spreadsheet templates: production-metrics.csv, order-tracking.csv, quality-incident-log.csv, finance-summary.csv
+     - Impact: Operations person has single source of truth for weekly diagnostics
+   - **Files**: `production-workflow-v1.md` (3 major additions, 1,500 words new)
+   - **Strategic Value**: User can now execute immediately post-test-print without stumbling on file names, supplier timing, or metrics gaps
 
-**Project Status Snapshot**:
-- **cybersecurity-hardening**: Tier 1 ready for user execution; measurement framework complete
-- **mfg-farm**: Pre-launch work complete; awaiting user test print (all workflows staged)
-- **stockbot**: Awaiting May 6 13:30 UTC DTBP reset + architecture decisions (user input)
-- **resistance-research**: Awaiting distribution path decision A / A+37 / B
+**Project Status Update**:
+- **cybersecurity-hardening**: Tier 1 effectiveness framework complete + improved. Tier 1 ready for launch with rigorous measurement.
+- **mfg-farm**: Production workflow now fully actionable. All critical blockers resolved. Ready for immediate post-test-print execution.
+- **stockbot**: Awaiting May 6 13:30 UTC DTBP reset + architecture decisions
+- **resistance-research**: Awaiting distribution path decision (A / A+37 / B)
+
+**Exploration Queue Status**:
+- ✅ cybersecurity-hardening: Tier 1 effectiveness framework — COMPLETE
+- ✅ mfg-farm: Post-test-print production workflow — COMPLETE + critical fixes applied
+- Remaining: stockbot contingency planning (deferred pending May 12 outcome)
 
 **Items Needing Your Input**:
-1. **May 6 13:30 UTC — CRITICAL**: Verify Alpaca DTBP resets to ~$400K; restart engine with 2-session config
-2. **resistance-research**: Distribution path decision (A / A+37 / B) → unlocks Phase 1 execution
-3. **mfg-farm**: Test print execution (all post-print workflows documented and ready)
-4. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md and confirm ARCH-1 through ARCH-7 directions
+1. **May 6 13:30 UTC — CRITICAL**: Verify DTBP resets, restart engine with 2-session config
+2. **mfg-farm**: Execute test print (all post-print workflows now in production-workflow-v1.md)
+3. **resistance-research**: Distribution path decision (A / A+37 / B) → unlocks Phase 1
+4. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md, confirm ARCH-1 through ARCH-7 directions
 
-**Token Usage**: Session 756 used ~128K tokens (agent research) across parallel execution
+**Commits This Session**:
+- production-workflow-v1.md: STL generation commands + supplier sequence + metrics tracking (3 critical fixes)
+- tier-1-effectiveness-framework.md: Architecture refinement (triage expansion, decision gates, Phase 2 mapping)
+- recipient-feedback-template.md: Phase 2 implications added, Q5 on threat model accuracy
+
+**Token Usage**: Session 757 used ~130K tokens (parallel agent execution)
+
+---
+
+## History
+
+### Session 756 (2026-05-05 18:30–19:15 UTC) — Exploration Queue: 2 Items Complete
 
 ---
 

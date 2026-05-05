@@ -6,6 +6,53 @@
 
 ---
 
+## 2026-05-05 22:20–23:15 UTC — Session 757 — Exploration Queue Completion: cybersecurity-hardening Framework Refinement + mfg-farm Workflow Critical Fixes
+
+**Work Completed**:
+
+1. **Exploration Queue Item: cybersecurity-hardening — Tier 1 Effectiveness Measurement Framework** ✅ REVISED & IMPROVED
+   - **Agent work (Agent aeefc72c)**: Full-depth framework redesign addressing prior version gaps
+   - **Gap fixes applied**:
+     - Triage framework: Expanded from 3 to 4 distinct categories (minor wording, missing section, wrong threat model, framework isn't landing) with distinguishing tests for each
+     - Read/understood/implemented chain: Made explicit with observable behavioral indicators at each stage
+     - Go/No-Go decision tree: Extended to 5 gates, adding new Gate 5 (threat model integrity) that prevents Phase 2 if any category-c inaccuracy confirmed by primary source
+     - Email survey: Added Q5 on threat model accuracy for lower-friction feedback collection
+     - Phase 2 readiness: New indicator table mapping each Tier 2 audience (digital rights orgs, academics, journalists) to specific Tier 1 signals required for effective outreach
+   - **Files updated**: `projects/cybersecurity-hardening/tier-1-effectiveness-framework.md` + `projects/cybersecurity-hardening/recipient-feedback-template.md`
+   - **Strategic value**: Data-driven Phase 2 go/no-go, prevents weak Phase 2 messaging before it launches
+
+2. **Exploration Queue Item: mfg-farm — Production Workflow Critical Fixes** ✅ 3 ACTIONABILITY BLOCKERS RESOLVED
+   - **Agent work (Agent a106c0b3)**: Gap analysis identified production-workflow-v1.md was 94% complete but had 3 critical actionability issues
+   - **Fix 1 — STL generation commands corrected** (Section 1.2):
+     - Was: `uv run python cadquery/modrun_clip.py --export stl/v1.0/modrun_clip_6mm_v1.0.stl`
+     - Now: `uv run python cadquery/modrun_clip_b123d.py --bore 6 --output-dir stl/v1.0/`
+     - Added: `--tolerance` flag for easy FDM_TOLERANCE adjustment without Python editing
+     - Impact: User no longer gets `file not found` error at first production step
+   - **Fix 2 — Supplier action sequence table added** (Section 5.3):
+     - New: Hour 0 / Day 1-2 / Week 2-3 / Month 1 gate timeline for eSUN wholesale + Anycubic pre-qualification
+     - Specific: ASIN B0G2KSS613 for Amazon backup filament, store.anycubic.com pallet sourcing
+     - Prevents: Supplier decision paralysis post-test-print; enables Month 1 launch while negotiations occur
+   - **Fix 3 — Weekly metrics tracking dashboard added** (Section 6):
+     - New: 8-metric tracking list organized by category (production, filament, shipping, quality, finance)
+     - Includes: Decision thresholds (e.g., scrap >8% two weeks = maintenance; field failure >1% = production halt)
+     - Spreadsheet templates: production-metrics.csv, order-tracking.csv, quality-incident-log.csv, finance-summary.csv
+     - Impact: Operations person has a single source of truth for weekly diagnostics
+   - **Files updated**: `projects/mfg-farm/production-workflow-v1.md` (3 major additions, 1,500 words new content)
+   - **Strategic value**: User can now execute immediately post-test-print without stumbling on file names, supplier timing, or metrics confusion
+
+**Project Status Update**:
+- **cybersecurity-hardening**: Tier 1 effectiveness measurement framework complete and production-ready. Tier 1 can now launch with rigorous impact tracking.
+- **mfg-farm**: Production workflow now fully actionable. All three critical blockers resolved. Ready for immediate post-test-print execution.
+- **stockbot**: Awaiting May 6 13:30 UTC DTBP reset. Architecture decisions pending user discussion.
+- **resistance-research**: Awaiting user distribution path decision (A / A+37 / B).
+
+**Exploration Queue Status**: 
+- ✅ cybersecurity-hardening: Tier 1 effectiveness — COMPLETE
+- ✅ mfg-farm: Post-test-print workflow — COMPLETE + critical fixes applied
+- Remaining active items: (1) stockbot May 12 contingency planning (3 items), (2) seedwarden Phase 3 product expansion (deferred pending Phase 1 data)
+
+---
+
 ## 2026-05-05 18:30–19:15 UTC — Session 756 — Exploration Queue: cybersecurity-hardening + mfg-farm research
 
 **Work Completed**:
