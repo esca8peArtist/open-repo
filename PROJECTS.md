@@ -587,6 +587,15 @@
   - Revenue models: $900–$3,800/month range M6 depending on option
 - **Status**: Phase 3 strategy locked, ready for Phase 1 launch trigger
 
+**Phase 2 Analytics Infrastructure** (Session 758 COMPLETE):
+- **Phase 2 Post-Launch Analytics Framework** — `phase-2-post-launch-analytics-framework.md` (3,200 words, production-ready)
+  - Measurement system: 4 data sources (Etsy API, GA4 custom events, Kit survey, manual LTV)
+  - Dashboards: Daily (10 min), Weekly (30 min), Monthly (2 hours) with specific metrics and action questions
+  - Phase 2 decision framework: 6-criterion go/no-go scoring model (5-of-6 pass = launch)
+  - Failure mode recovery: Red flag diagnostics for low revenue, high churn, cohort imbalance
+  - Ready for Day 1 operationalization upon Phase 1 launch
+  - **Strategic value**: Data-driven Phase 2 decisions (30-90 days post-Phase-1), not calendar-driven
+
 **Deferred Work** (awaiting Phase 1 data/decisions):
 - **Photography execution**: Awaiting LIFESTYLE_PHOTOGRAPHY_STRATEGY.md user decision
 - **Phase 3 product development**: Deferred until Phase 1 data triggers Phase 3 option selection (45-day mark post-launch)
@@ -776,6 +785,18 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 - ~~**resistance-research: Post-Domain 26 completeness audit**~~ — **Done (Session 501)**: `assessment/post-domain-26-completeness-audit.md` (4,666 words) — Comprehensive audit of 26-domain framework identifying 4 priority gaps: (1) Domain 19f War Powers Reform (Iran war constitutional crisis, May 1 deadline — Priority 1), (2) Pharmaceutical tariff collision (100% tariff effective July 31 — Domain 11 cross-ref), (3) Indigenous Sovereignty subsection 22f (trust responsibility, treaty law — Priority 2), (4) Disability Justice deepening post-OBBBA (Domain 18e update). Population pattern analysis complete. Distribution readiness verdict: Not ready until Domain 26 research + Domain 19f are executed.
 
 - ~~**seedwarden: Phase 3 social media and paid-ads growth strategy**~~ — **Done (Session 501)**: `phase-3-social-media-growth-strategy.md` (4,866 words) — Complete Phase 3 roadmap for post-Phase 1 launch. Includes: (1) TikTok competitive analysis (top creators: @itsbreellis 772K, @thermal_and_oaks 367K; optimal format 30-60s educational; #homestead 5.4B views), (2) Instagram + Pinterest strategy (Pinterest is highest-ROI organic for Etsy; 33% more referral traffic than Facebook), (3) Creator breakdown (5 success traits: hyper-specific niche, practical content, 12-24mo consistency, email list ownership, $5-$15 price point), (4) Paid advertising strategy (Shopping/Gifts $0.34 CPC benchmark; 2.0x ROAS target; Pinterest CPA $8 most cost-effective), (5) Influencer partnerships (direct outreach model, 20-30% response rate, $100-$250 flat fee + commission), (6) Three-month phased implementation plan (Month 1: infrastructure, Month 2: test ads $300-500 + outreach, Month 3: scale winners kill losers). Ready for execution when Phase 1 converts.
+
+**NEW ITEMS (Session 758 — 2026-05-05 23:16+ UTC)**:
+
+- ✅ **seedwarden: Phase 2 Post-Launch Analytics Framework** (COMPLETE, Session 758) — `phase-2-post-launch-analytics-framework.md` (3,200 words, 8 parts). Production-ready measurement system for Phase 1 launch. Key components: (1) Analytics objectives (cohort identification, product performance, Phase 2 triggers); (2) 4-source measurement system (Etsy API, GA4 custom events, Kit survey, manual LTV); (3) Daily/weekly/monthly dashboards with action questions; (4) Implementation checklist (pre-launch setup, Day 0, Week 1-2, Day 30); (5) Phase 2 decision framework (6-criterion go/no-go model, 5-of-6 threshold); (6) Failure mode recovery (red flag diagnostics + actions); (7) Privacy & governance; (8) Industry benchmarks. **Strategic value**: Enables Day 1 data collection (Phase 1 launch imminent), prevents "what happened?" guessing, provides quantified Phase 2 gates (data-driven vs. calendar-driven). Ready for immediate operationalization.
+
+- **stockbot: May 12 Contingency Planning & Hedging Strategy** (Session 701, active) — Gate 1 forecast shows 47-51% pass probability. Research contingency scenarios: (1) If Gate 1 fails (April 29–May 12 fill rate insufficient), what recovery strategies exist? (2) Options hedging overlay (protective puts on open positions, covered call generation on small account)? (3) Leverage trading tier scaling (double-down on winners vs. hedge losers)? (4) Timeline reprojection (what would achieve Gate 1 by June 12 instead?)? **Produces**: `gate-1-contingency-playbook.md` (decision tree + scenario analysis, 1,500 words). **Business value**: Provides May 12 decision-making roadmap if baseline trajectory falters. **Ready**: READY for exploration (informational research), execution at May 12 checkpoint.
+
+- **resistance-research: Phase 1 User Execution Checklist** (NEW, Session 758) — User decision on distribution path (A / A+37 / B) is imminent. Once decided, Phase 1 execution requires specific sequenced steps. Research: (1) For each path (A, A+37, B), what are the exact steps to execute? (2) Step-by-step: Gist creation → template field fill → contact verification → email send + social scheduling. (3) Sequencing: which steps can run in parallel, which must wait? (4) Decision gates (when to pause/adjust based on intermediate results). (5) Contingency planning (what if a Tier 1 contact bounces, what if email has low open rate?). **Produces**: `phase-1-execution-checklist.md` (3 path variants, 40-60 items each, 2,500 words total). **Business value**: Enables user to execute immediately post-path-decision without clarifying questions. **Ready**: READY for exploration (planning document), execution at user path decision.
+
+- **open-source-rideshare: Phase 2 Pilot City Selection & Governance Model** (NEW, Session 758) — PR #1 awaiting merge (not yet blocked). Once merged, Phase 2 kickoff can begin. Preparatory research: (1) Detailed analysis of top 3-4 pilot cities (Portland OR, Denver CO, Madison WI, Minneapolis MN) — regulatory landscape, cooperative precedent, insurance costs, driver supply, demand. (2) Governance model comparison (CoopCycle/Loomio model vs. traditional DAO vs. cooperative federation). (3) MVP feature set prioritization (P0 matching/payments/insurance, P1 governance portal, P2+ ML/carpooling). (4) Go-to-market timeline (driver recruitment 30-45 days, closed beta 45-60 days, public launch 60-90 days). **Produces**: `phase-2-city-selection-analysis.md` (city profiles + decision matrix, 2,500 words) + `governance-model-recommendation.md` (3 models compared, 1,500 words). **Business value**: Enables immediate Phase 2 work upon PR merge; reduces post-merge decision paralysis. **Ready**: READY for exploration (comparative analysis), execution post-PR-merge.
+
+---
 
 **NEW ITEMS (Session 550–551)**:
 
