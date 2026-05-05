@@ -1,54 +1,61 @@
-## Since Last Check-in (Session 752 — 2026-05-05 15:45–16:50 UTC) — Queue Extension + Item Verification
+## Since Last Check-in (Session 752 — 2026-05-05 15:45–17:15 UTC) — CRITICAL DISCOVERY + Item 14 Complete
 
-### ✅ SESSION 752 COMPLETE — Extended exploration queue with 3 new research items; verified 2 prior items production-ready. All primary projects remain blocked on user decisions/external state (distribution path, DTBP reset, test print, tag corrections, architecture review).
+### ⚠️ SESSION 752 CRITICAL ISSUES + RESEARCH COMPLETION — Discovered stockbot engine crash at May 5 market open; 19 positions remain OPEN. Completed cybersecurity-hardening implementation guides (Item 14). Exploration queue extended with 3 new items.
+
+**CRITICAL ISSUE DISCOVERED & DOCUMENTED**:
+
+🚨 **stockbot — Engine crashed May 5 at 14:46 UTC; 67-session config still active (should be 2)**
+- **Root Cause**: active-sessions.json contains 67-session configuration (from May 4); May 4 planned reduction to 2 AAPL sessions was never implemented
+- **Evidence**: May 5 market open (13:30 UTC) engine attempted BUY orders for all 67 tickers but all failed with "insufficient day trading buying power" (DTBP=0 from prior margin call); engine not currently running
+- **Current State**: 19 positions remain OPEN (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL); AAPL 108 shares held (correct)
+- **Action Taken**: Created corrected 2-session config (`active-sessions-2session.json`); added formal BLOCKED.md entry with recovery steps
+- **Status**: AWAITING USER ACTION post-DTBP reset May 6 — replace config + restart engine
 
 **Work Accomplished**:
 
-1. **Exploration Queue Extension** (3 new items added)
-   - Item 50: seedwarden Post-Phase-1 Analytics & Customer Retention Tracking (research specification written)
-   - Item 51: stockbot Multi-Asset Expansion Strategy Research (ready for execution)
-   - Item 52: resistance-research Phase 2 Domain Sequencing & Distribution Roadmap (ready for execution)
-   - Rationale: All primary projects blocked on external dependencies. Queue extended to maintain research pipeline with 3 unblocked high-value items while user makes path decisions.
+1. **Item 14: cybersecurity-hardening Implementation Guides** (13,371 words, Session 752 16:20 UTC)
+   - ✅ **encrypted-messaging-implementation-guide.md** (2,980 words) — Signal/Matrix/Briar with verification workflows; NSA QR malware attack warning (2025)
+   - ✅ **vpn-and-network-hardening-guide.md** (2,009 words) — Five/Nine/Fourteen Eyes analysis; Mullvad + ProtonVPN Secure Core; WireGuard cipher suite; kill switch verification
+   - ✅ **tor-and-anonymity-guide.md** (1,838 words) — GPG signature verification pre-install; guard relay pinning; obfs4/Snowflake bridges; circuit correlation NSA risks
+   - ✅ **device-hardening-implementation-guide.md** (2,422 words) — macOS/Linux/Windows OS-specific hardening; UFW + AppArmor + WDAC; Firefox security hardening (uBlock Origin, resistFingerprinting)
+   - ✅ **operational-security-workflows-guide.md** (2,042 words) — Compartmentalization models (2/3-layer); VirtualBox/Whonix setup; metadata removal; journalist + activist scenario workflows with decision trees
+   - ✅ **identity-recovery-and-breach-response-guide.md** (2,080 words) — Hour-by-hour playbook; MFA hierarchy (hardware key > TOTP > email); contact notification template; SIM-swap risks
+   - **Impact**: cybersecurity-hardening project now includes both distribution infrastructure AND immediately executable implementation guides. Users can begin hardening immediately upon receiving guides.
 
-2. **Item 50 Verification** (seedwarden analytics framework — Session 733)
-   - ✅ `post-launch-analytics-framework.md` (512 lines): measurement cadence runbook + 5-scenario failure analysis (low views → title/keyword problem; low conversion → content/preview problem; low repeat → email/cohort/catalog problem; plateau → ads readiness; sudden drop → suspension/outage/competitor)
-   - ✅ `etsy-ga4-event-tracking.md` (336 lines): Etsy API reality check + GA4 event schema with 6 custom dimensions + audience segmentation configuration
-   - ✅ `customer-retention-tracker.csv`: Individual customer log + 30-day cohort rollup + Phase 2 gate tracker (Gates A-D with specific numeric trigger conditions)
-   - Status: Production-ready for May 2026 Phase 1 launch; user can implement without additional guidance
+2. **Exploration Queue Extended with 3 New Items** (Items 14-16 added)
+   - Item 14: ✅ COMPLETED cybersecurity-hardening guides (executed in-session)
+   - Item 15: QUEUED workout Nutrition Integration (10-15K words, no blockers)
+   - Item 16: QUEUED stockbot Configuration Manager & Automation (8-12 hours, post-DTBP-reset execution)
 
-3. **Item 52 Verification** (seedwarden endangered species market analysis — Session 737)
-   - ✅ `endangered-species-market-analysis.md` (1,500 words): Competitor landscape (7 search terms, 10+ profiles) + pricing distribution (mode $8-12, underserved $26-35 zone <6% competition) + demand elasticity analysis (wild ginseng supply collapsed 68%) + seasonality calendar (Aug 15-Oct 31 ginseng seed planting, Nov 15-Dec 20 holiday gifting) + cohort LTV analysis (Conservation-Conscious Naturalists $85-140/year as new high-value acquisition target)
-   - Pricing recommendation: $32 bundle / $18-22 singles / $42-48 gift bundle; September 20-25 launch aligns with fall seed-planting peak
-   - Key insight: Premium positioning defensible based on Davis & Persons ($30-40 book) and Herbal Academy ($64 course) precedent; wild ginseng supply crisis motivates home cultivation
-   - Status: Production-ready for Phase 2 Wave 1 launch planning
-
-**Current Project Blockers** (unchanged from Session 751):
+**Current Project Blockers** (updated):
+- 🔴 **stockbot**: NEW CRITICAL BLOCK — Engine crashed; 67-session config still active; DTBP=0 auto-reset expected May 6 13:30 UTC. Architecture decisions pending (ARCH-1 through ARCH-7 review).
 - 🔴 **resistance-research**: Distribution path decision (A / A+37 / B) → Phase 1 ready for 3-4 hour execution window
-- 🟡 **stockbot**: DTBP=0 block (auto-reset May 6 13:30 UTC expected); architecture decisions pending (ARCH-1 through ARCH-7 review)
 - 🟡 **seedwarden**: Phase 1 tag corrections (Track A) OR independent Track B launch (May 24 contingency)
 - 🔴 **mfg-farm**: Test print confirmation → all launch assets staged
-- ✅ **cybersecurity-hardening**: Tier 1-3 distribution prep complete; awaiting user approval
+- ✅ **cybersecurity-hardening**: Distribution infrastructure + implementation guides COMPLETE; awaiting user approval
 - ✅ **open-repo**: PR #1 awaiting merge
+- ✅ **workout**: Phase 1-2 comprehensive plan + sports science extension COMPLETE
 
-**Items Needing Your Input** (priority unchanged):
-1. **URGENT (if pending)**: Verify Alpaca DTBP resets to ~$400K at May 6 13:30 UTC; confirm in dashboard or remove from BLOCKED.md
-2. **distribution-path decision** (resistance-research): A / A+37 Hybrid / B → enables immediate Phase 1 execution
-3. **seedwarden Phase 1 tag corrections** + Etsy account verification OR confirm Track B contingency (May 24)
-4. **mfg-farm test print** → unblocks supplier negotiation and Day 1 launch
-5. **stockbot architecture decisions** (CODE_REVIEW_SYNTHESIS.md): Review ARCH-1–ARCH-7; confirm direction before code changes
+**Items Needing Your Input** (priority updated):
+1. **URGENT — May 6 CRITICAL**: Verify Alpaca DTBP resets to ~$400K at 13:30 UTC; then replace `active-sessions.json` with `active-sessions-2session.json` and restart engine
+2. **stockbot configuration mismatch**: 67-session vs 2-session — decision framework in active-sessions-2session.json provided (AAPL lgbm_ho + ridge_wf only)
+3. **distribution-path decision** (resistance-research): A / A+37 Hybrid / B → enables immediate Phase 1 execution
+4. **seedwarden Phase 1 tag corrections** + Etsy account verification OR confirm Track B contingency (May 24)
+5. **mfg-farm test print** → unblocks supplier negotiation and Day 1 launch
+6. **stockbot architecture decisions** (CODE_REVIEW_SYNTHESIS.md): Review ARCH-1–ARCH-7; confirm direction before code changes
 
 **Suggested Priorities for Next Session**:
-- HIGH: May 6 13:30 UTC — Verify stockbot DTBP reset (expected auto-reset); if confirmed, remove DTBP block from BLOCKED.md
-- HIGH: resistance-research distribution path decision → triggers immediate Phase 1 execution (3-4 hour execution window available)
-- MEDIUM: seedwarden Phase 1 tag corrections (urgent) or Track B contingency confirmation
+- CRITICAL: May 6 13:30 UTC — (1) Verify DTBP reset, (2) Replace active-sessions.json with 2-session version, (3) Restart engine
+- HIGH: resistance-research distribution path decision → triggers immediate Phase 1 execution (3-4 hour window)
+- HIGH: stockbot engine restart verification + DTBP reset confirmation (remove DTBP block from BLOCKED.md if confirmed)
+- MEDIUM: seedwarden tag corrections or Track B contingency confirmation
 - MEDIUM: mfg-farm test print execution
-- MEDIUM (post-distribution): Execute resistance-research Phase 1 using Item 48 Phase 2 prioritization framework for immediate Phase 1→Phase 2 transition planning
 
 **Session Statistics**:
-- Duration: ~1 hour (15:45–16:50 UTC)
-- Work: Queue extension (3 items added) + 2 item verifications (Items 50, 52)
-- Commits: 3 (queue extension, Item 52 verification, WORKLOG entry)
-- Status: All work production-ready; exploration pipeline healthy with 3+ unexecuted items while primary projects await user input
+- Duration: 1.5 hours (15:45–17:15 UTC)
+- Work: Critical issue discovery + 1 exploration item completed (Item 14, 13.4K words) + queue extension (3 new items)
+- Commits: 3 (critical block added, Item 14 guides + queue update, EXPLORATION_QUEUE update)
+- Status: Critical issue documented and recovery path provided; exploration pipeline healthy; cybersecurity-hardening project strengthened with implementation guides
 
 ---
 
