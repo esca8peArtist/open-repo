@@ -511,7 +511,114 @@ At the start of each month, complete this 1-page reporting template. It is the o
 
 ---
 
-*Dashboard Spec version 1.0 — April 30, 2026. Activates on distribution launch. The five components can be built in a single 3-hour session using free tools (Google Alerts, Google Scholar Alerts, CourtListener, LegiScan, a spreadsheet). Cross-reference: post-distribution-impact-measurement-framework.md (the analytical framework this dashboard operationalizes), measurement-and-iteration-framework.md (the iteration logic), post-distribution-tracking.md (the first 30-day roadmap).*
+## Component 7: Success Indicators by Domain — Checkpoint Tables
+
+These tables translate the success framework from post-distribution-impact-measurement-framework.md into specific, checkable indicators for each priority domain. Use these tables at the 1-year, 3-year, and 5-year review points.
+
+### Priority Tier A Domains — Fastest Expected Adoption
+
+**Domain 1: Voting Rights and Electoral Reform**
+
+| Checkpoint | Success indicator | Data source | Status |
+|-----------|------------------|-------------|--------|
+| 1-year (May 2027) | AG litigation filing cites domain's VRA Section 2 analysis or *Callais* response | PACER RECAP search | — |
+| 1-year | Democracy Docket or Campaign Legal Center publication uses domain evidence | democracydocket.com; campaignlegalcenter.org | — |
+| 3-year | State legislative proposal cites domain's electoral reform comparative analysis | LegiScan full-text | — |
+| 3-year | AG confirms domain shaped 2028 election protection litigation strategy | Direct contact | — |
+| 5-year | Law review article indexed with subsequent citations cites Domain 1 | Westlaw/Lexis | — |
+
+**Domain 6: Judicial Independence**
+
+| Checkpoint | Success indicator | Data source | Status |
+|-----------|------------------|-------------|--------|
+| 1-year (May 2027) | Published law review article or accepted submission cites domain's comparative methodology | Google Scholar | — |
+| 1-year | Tier 1 think tank brief uses domain's international judicial appointment comparison | Brennan Center, Protect Democracy publication monitoring | — |
+| 3-year | Congressional testimony in judicial reform hearing cites domain analysis | Congress.gov testimony search | — |
+| 3-year | Law school course syllabi include domain as assigned reading (2+ courses confirmed) | Direct contact with faculty | — |
+| 5-year | Domain reform proposals appear in legislative vehicle (state or federal court reform bill) | Congress.gov, LegiScan | — |
+
+**Domain 29: Prosecutorial Weaponization**
+
+| Checkpoint | Success indicator | Data source | Status |
+|-----------|------------------|-------------|--------|
+| 1-year (May 2027) | SPLC or named defendant organization confirms domain evidence reviewed by legal team | Direct contact | — |
+| 1-year | Just Security or Lawfare publishes analysis citing domain's 22-case retaliatory pattern | justsecurity.org RSS | — |
+| 3-year | Congressional oversight hearing or inspector general investigation uses domain's accountability framework | Congress.gov | — |
+| 5-year | DOJ inspector general report or reform legislation cites domain's norm-violation taxonomy | Direct monitoring | — |
+
+**Domain 37: Election Interference**
+
+| Checkpoint | Success indicator | Data source | Status |
+|-----------|------------------|-------------|--------|
+| 1-year (May 2027) | Amicus brief or litigation filing cites domain's quantified baselines (SAVE error rates, appointee count, etc.) | PACER RECAP | — |
+| 1-year | Three or more advocacy orgs actively use domain evidence in public communications | Google News, direct contact | — |
+| 1-year | Congressional testimony in election security appropriations hearing uses domain data | Congress.gov | — |
+| 3-year | State AG confirms domain shaped 2028 election protection strategy | Direct contact | — |
+| 5-year | Domain 37 methodology or evidence base cited in Overton-indexed policy document | Overton search | — |
+
+---
+
+### Priority Tier B Domains — Moderate Expected Adoption
+
+**Domain 17: Labor Rights**
+
+| Checkpoint | Success indicator | Data source | Status |
+|-----------|------------------|-------------|--------|
+| 1-year | EPI issue brief cites domain analysis | epi.org RSS | — |
+| 1-year | AFL-CIO newsletter distributes EPI brief citing domain (second-order signal) | AFL-CIO communications | — |
+| 3-year | Union legislative testimony cites EPI brief (third-order signal) | Congress.gov testimony | — |
+| 5-year | Domain's co-determination comparative evidence cited in collective bargaining materials | Direct contact; union publications | — |
+
+**Domain 27: Higher Education and Academic Freedom**
+
+| Checkpoint | Success indicator | Data source | Status |
+|-----------|------------------|-------------|--------|
+| 1-year | AAUP publication or Chronicle of Higher Education cites domain evidence | aaup.org; chronicle.com | — |
+| 1-year | University legal counsel confirms domain's accreditation defense analysis reviewed | Direct contact | — |
+| 3-year | Course assigned at 2+ law schools or political science programs | Direct faculty contact | — |
+| 5-year | Academic freedom litigation cites domain's comparative international evidence | PACER; Westlaw | — |
+
+**Domain 28: War Powers / Venezuela**
+
+| Checkpoint | Success indicator | Data source | Status |
+|-----------|------------------|-------------|--------|
+| 1-year | Just Security or national security law journal cites domain's Venezuela OLC memo analysis | justsecurity.org; Google Scholar | — |
+| 3-year | Congressional war powers debate references domain's "law enforcement" loophole analysis | Congress.gov | — |
+| 5-year | AUMF reform legislation or OLC policy guidance cites domain's definitional reform proposals | Congress.gov; OLC public opinions | — |
+
+---
+
+### Lagging Domains — Watch for Delayed Activation
+
+**Domain 34: Congressional Fiscal Authority**
+- 1-year marker: Any appropriations-focused think tank (Committee for a Responsible Federal Budget, Bipartisan Policy Center) publication cites domain
+- 3-year marker: Antideficiency Act enforcement action or congressional budget oversight hearing uses domain framework
+- 5-year marker: Domain reform proposals in any impoundment control or emergency authority reform legislation
+
+**Domain 9: Federalism**
+- 1-year marker: Brookings or equivalent governance think tank publication cites domain's preemption analysis
+- 3-year marker: Municipal law organization (National League of Cities, National Association of Counties) uses domain framework in preemption litigation
+- 5-year marker: Federal floor legislation protecting municipal democracy cites domain's comparative federalism analysis
+
+---
+
+## Component 8: Corporate and Fiduciary Sector Monitoring Calendar
+
+This sector operates on a longer timeline and requires lower-intensity monitoring in Phase 1. Activate higher monitoring intensity in Phase 3 (Year 2-3).
+
+| Check | Cadence | Method | What to look for |
+|-------|---------|--------|-----------------|
+| ISS (Institutional Shareholder Services) publications | Quarterly | iss.com governance research | ESG risk language matching domain framing (regulatory instability, rule of law risk) |
+| Glass Lewis proxy reports | Quarterly | glasslewis.com | Governance risk classifications using democratic institutional language |
+| SEC EDGAR ESG disclosures | Quarterly | Full-text search: "rule of law" "democratic institutions" proxy filings | Proxy statements or sustainability reports citing institutional risk in domain-aligned terms |
+| Harvard Law School Corporate Governance Forum | Monthly | corpgov.law.harvard.edu | Publications on governance risk citing democratic institutional degradation |
+| Law firm governance client alerts | Monthly | Major firms with governance practices (Wachtell, Sullivan & Cromwell, Latham) — client alert subscriptions | Alerts on regulatory risk that use framework framing |
+
+**Activation trigger**: If any SEC-filed ESG disclosure uses language that matches domain evidence (judicial independence risk, election security risk, regulatory predictability), log as corporate adoption event even without direct framework citation.
+
+---
+
+*Dashboard Spec version 2.0 — May 5, 2026 (Session 741). Added Component 7 (domain checkpoint tables) and Component 8 (corporate/fiduciary monitoring). Previous version: April 30, 2026. Activates on distribution launch. Cross-reference: post-distribution-impact-measurement-framework.md (the analytical framework), measurement-and-iteration-framework.md (the iteration logic).*
 
 ---
 

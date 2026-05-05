@@ -2,6 +2,73 @@
 
 ---
 
+## May 5, 2026 — Item 39: Post-Distribution Impact Measurement Framework (Session 741)
+
+**Session type**: Exploration Queue Item 39 — Phase 1 execution prep
+**Files created/updated**:
+- `projects/resistance-research/post-distribution-impact-measurement-framework.md` — Version 2.0, supersedes Session 688 version (~3,800 words)
+- `projects/resistance-research/adoption-tracking-dashboard-spec.md` — Version 2.0, added Components 7 and 8 (~900 words added)
+
+### Research Conducted
+
+Web-searched: policy diffusion measurement frameworks (ScienceDirect, Cambridge Core); Overton policy citation index methodology (MIT QSS, 2022; LSE Impact blog, 2025); Green New Deal / Build Back Better citation diffusion patterns; GPPI think tank impact research (2023); think tank policy-to-legislation time lag literature; state AG adoption patterns; corporate governance / fiduciary duty democratic risk frameworks; legal citation tracking tools (Westlaw Shepard's, Lexis KeyCite); Project 2025 adoption tracker methodology (CPR, 2026).
+
+### What Was Built
+
+**post-distribution-impact-measurement-framework.md (v2.0)**:
+Five-sector institutional adoption pathway analysis with realistic diffusion timelines (AGs, law schools, think tanks, advocacy organizations, corporate/fiduciary advisors — last sector was a gap in the prior version). Impact metrics framework with five measurement layers and citation search query templates for Google Scholar, PACER, LegiScan, Westlaw/Lexis, Congress.gov, and policy databases. Domain-level variance analysis with three adoption probability tiers (high/moderate/low) based on crisis adjacency, institutional infrastructure, and structural reform content. Time-to-adoption curve based on Sabatier ACF, GPPI research, and Green New Deal case study. Failure mode detection for four misapplication types with intervention thresholds, course correction mechanisms, and the 90-day passivity rule. Success thresholds at 1-year, 3-year, and 5-year checkpoints across all domains.
+
+**adoption-tracking-dashboard-spec.md (v2.0 additions)**:
+Component 7: Domain checkpoint tables for all priority domains with specific, checkable success indicators per year tier and data source for each indicator. Component 8: Corporate and fiduciary sector monitoring calendar with 5 monitoring channels, cadences, and activation trigger for ESG disclosure detection.
+
+### Key analytical contributions over prior version
+
+1. Corporate/fiduciary sector added as a fifth sector (was absent from Session 688 version) — framed via fiduciary duty of care and ESG risk reporting as the adoption mechanism
+2. Domain-level variance analysis distinguishes adoption probability tiers rather than treating all domains as equally likely to diffuse
+3. Time-to-adoption curve provides realistic expectations vs. the prior version's Day 90/Day 365 binary framing
+4. Four failure mode types with distinct detection triggers, course correction modes, and the critical "intervene vs. let organic adoption continue" distinction
+5. The 90-day passivity rule is a new operative principle not in any prior measurement document
+
+---
+
+## May 5, 2026 — Item 38: Tracker Automation Infrastructure Design (Four-Document Suite)
+
+**Session type**: General Research Agent — tracker automation infrastructure
+**Files created/updated**:
+- `projects/resistance-research/tracker-data-source-audit.md` (~3,600 words, updated with API corrections)
+- `projects/resistance-research/tracker-automation-architecture.md` (~3,000 words, updated with 2025 PACER rotation policy)
+- `projects/resistance-research/tracker-dashboard-mockups.md` (~2,200 words)
+- `projects/resistance-research/tracker-maintenance-playbook.md` (~2,100 words)
+
+### Research Conducted
+
+Web-searched current status of: PACER/CourtListener API (v4, 5,000 req/hr, 180-day password rotation), Federal Register API (295+ EPA documents in 2026, free, no key), Regulations.gov API (POST restricted August 8, 2025; GET/read still available), Press Freedom Tracker API (`/api/edge/` base, no auth, IPFS mirror), GDELT DOC 2.0, Media Cloud (2B stories indexed, 4,000 req/week default), MuckRock API, Mapping Police Violence (Airtable public base), Harvard EELP (no RSS but change-detection viable), Protect Democracy tracker (no formal API, change-detection), GovInfo CREC endpoints, Datasette 1.0a28 (active development as of April 2026).
+
+### Key Findings
+
+1. **Regulations.gov POST API shut down August 8, 2025** by GSA — restricted to approved federal agencies. GET/read API remains available. This affects comment submission workflows but not document/docket reading for tracker monitoring. Updated data source audit and architecture credential rotation table to reflect this.
+2. **CourtListener confirmed at 5,000 req/hr** for authenticated users. PACER accounts now require 180-day password rotation (2025 federal judiciary policy). Updated architecture credential table.
+3. **Press Freedom Tracker API confirmed**: base URL is `/api/edge/` (not `/api/edge/incidents/` as previously documented). No auth required. IPFS mirror available. Updated data source audit.
+4. **Media Cloud stable at ~2B stories**, 4,000 API requests/week default for registered users. Research/nonprofit access still free.
+5. All four tracker documents are implementation-ready. No proprietary or paywalled sources required. Total Wave 1 implementation cost: $0. Production hosting: $6–30/month.
+
+---
+
+## May 5, 2026 — post-distribution-impact-measurement.md: Attribution Methodology and Adoption Metrics
+
+**Session type**: General Research Agent — Day 0 measurement reference document
+**Files created**: `projects/resistance-research/post-distribution-impact-measurement.md` (~2,100 words)
+
+### Research Conducted
+
+Read all three prior measurement framework documents (post-distribution-adoption-framework.md, post-distribution-impact-framework.md, post-distribution-impact-measurement-framework.md) and post-distribution-tracking.md to identify what was already covered and avoid duplication. Prior documents covered: historical precedent and diffusion typology, sector adoption pathways and dashboard KPIs, tool stack and failure modes, week-by-week roadmap. Gap: no unified attribution methodology document consolidating the four attribution tests, the four-tier metric structure, baseline capture protocol, and decision framework.
+
+### Key Findings
+
+Document synthesizes the attribution problem into four operational tests (vocabulary marker, structural convergence, timing-and-contact, network trace) with explicit confidence thresholds. Defines sector-specific adoption at granular level (AG structural convergence without citation counts as adoption; law school adoption has three distinct levels on different timelines). Establishes four-tier metric structure with sector-specific examples for each tier. Includes comparative framework analysis grounding the tier system in MPC, ABA Model Rules, Brennan Center AVR, and EU AI Act adoption patterns. Provides Day 0 baseline capture protocol (what to measure today and how) and decision framework for acting on 6-month and 12-month results.
+
+---
+
 ## May 1, 2026 — DISTRIBUTION_PATH_ANALYSIS.md: Phase 1 Decision Support Document
 
 **Session type**: General Research Agent — decision support document
