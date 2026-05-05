@@ -6,6 +6,44 @@
 
 ---
 
+## 2026-05-05 19:15–19:35 UTC — Session 754 — mfg-farm Days 1–30 Production Workflow (Exploration Queue Item)
+
+**Work Completed**:
+
+1. ✅ **Exploration Queue Item: mfg-farm Post-Test-Print Production Workflow & Scaling Roadmap** (COMPLETE)
+   - **Deliverable**: Added "Days 1–30 Batch Scheduling Template" section (1.9) to `projects/mfg-farm/production-workflow-v1.md`
+   - **Scope**: Day-by-day operational guide for first month of production, from test print validation through profitable 20-unit/week steady state
+   - **Content added** (~1,100 words across 5 subsections):
+     - **Days 1–3: Profile Validation** — gate the production profile (tolerance adjustment, QC validation, functional test)
+     - **Days 4–7: First Sales Batch** — activate Etsy listing, launch with day-by-day rhythm (AM: check orders/harvest; PM: pack/queue overnight run)
+     - **Days 8–14: Week 2 Cadence** — establish Sunday-night queueing anchor; achieve 10–15 units/week throughput; collect first reviews
+     - **Days 15–21: Week 3 Process Tightening** — diagnose QC patterns; perform printer preventive maintenance if scrap rate exceeds 8%; increase to 4 overnight runs/week; measure order-to-ship time (target: <2 business days)
+     - **Days 22–30: Month 1 Close** — review Etsy metrics (views, conversion, reviews, repeat customers); decision point for Month 2 scaling (accelerate to daily runs or add second printer)
+   - **Additional critical section: Batch Interleaving Logic** — ensures printer utilization while maintaining continuous fulfillment (while plate is printing = time for harvest + QC + packaging + label prep)
+   - **Links to existing documents**: References supplier negotiation playbook, email templates, first-week operations SOP in `/projects/mfg-farm/`
+   - **Readiness**: Immediately executable post-test-print. Anya can follow day-by-day with clear success metrics and decision gates per volume tier.
+
+**File Location**: `projects/mfg-farm/production-workflow-v1.md` section 1.9 (inserted between Listing & Fulfillment and Scaling Roadmap)
+
+**Commit**: 4456022 — "feat(mfg-farm): Add Days 1-30 batch scheduling template to production workflow"
+
+**Strategic Value**:
+- Eliminates guesswork in Month 1 operations — every day has clear objectives and success criteria
+- Provides decision gates for scaling decisions (Days 22-30 metrics trigger Month 2 hardware/process changes)
+- Completes the workflow documentation: pre-production (post-test-print workflow) + Month 1-6 scaling roadmap now fully specified
+- Integrates with existing supplier negotiation + fulfillment SOP documents for continuity
+
+**Project Status**:
+- **mfg-farm**: Production workflow now fully documented from test print through 100+ units/week. Ready for user test print execution. All autonomous pre-launch work complete.
+- All primary projects remain blocked on user actions (stockbot DTBP reset May 6, resistance-research distribution path decision, seedwarden tag corrections, architecture decisions)
+
+**Session Statistics**:
+- Duration: ~20 minutes (research + file edit + commit)
+- Work: 1 exploration queue item completed (mfg-farm days 1-30 scheduling template)
+- Status: Exploration queue flowing; all unblocked work assignments executed; primary projects awaiting user actions
+
+---
+
 ## 2026-05-05 18:10–18:25 UTC — Session 753 — Parallel Exploration Queue Execution (Items 51, 52)
 
 **Work Completed**:

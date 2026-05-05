@@ -1,3 +1,46 @@
+## Since Last Check-in (Session 754 — 2026-05-05 19:15–19:35 UTC) — mfg-farm Days 1–30 Template Complete
+
+### ✅ SESSION 754 COMPLETE — Exploration queue item (mfg-farm Days 1–30 batch scheduling) completed. Production workflow now fully documented pre-launch.
+
+**Work Accomplished**:
+
+1. **Exploration Queue Item: mfg-farm Post-Test-Print Production Workflow — Days 1–30 Scheduling Template** ✅ COMPLETE
+   - **Deliverable**: Added section 1.9 to `projects/mfg-farm/production-workflow-v1.md` (~1,100 words)
+   - **Scope**: Day-by-day operational roadmap for first month of production
+   - **Key sections**:
+     - **Days 1–3 Profile Validation**: Test print outcome assessment, FDM_TOLERANCE tuning, QC gate validation
+     - **Days 4–7 First Sales Batch**: Etsy listing activation, daily rhythm (AM: harvest/check orders; PM: pack/queue overnight runs)
+     - **Days 8–14 Week 2 Cadence**: Sunday-night queueing anchor established; 1–2 week finished goods buffer target
+     - **Days 15–21 Week 3 Tightening**: QC pattern diagnosis; preventive maintenance (PEI plate, Z-offset, nozzle cleaning); 4× overnight runs/week
+     - **Days 22–30 Month 1 Close**: Etsy metrics review (conversion, reviews, repeats); scaling decision point for Month 2
+     - **Batch Interleaving Logic**: Continuous scheduling (print → parallel harvest/QC/packing during next print cycle)
+   - **Readiness**: Immediately actionable post-test-print. Clear success metrics per day, decision gates for scaling.
+
+**Project Status Update**:
+- **mfg-farm**: All pre-launch work complete. Production workflow fully documented (post-test-print → Month 1-6 scaling). Ready for user test print execution.
+- **resistance-research**: Phase 1 ready + Phase 2 roadmap ready (awaiting user distribution path decision A/A+37/B)
+- **stockbot**: Multi-asset expansion strategy ready + critical architectural prerequisite (ARCH-2) identified (awaiting user DTBP reset verification May 6)
+- All other projects remain blocked on user actions
+
+**Commits This Session**:
+- 4456022: mfg-farm Days 1–30 batch scheduling template
+
+**Suggested Priorities for Next Session**:
+- CRITICAL (May 6 13:30 UTC): Verify Alpaca DTBP resets to ~$400K; confirm 2-session engine restart
+- HIGH: resistance-research distribution path decision (A/A+37/B) → triggers Phase 1 execution
+- HIGH: mfg-farm test print execution (all workflows staged, ready to go)
+- MEDIUM: seedwarden tag corrections or Track B contingency confirmation
+- MEDIUM: stockbot architecture decisions (ARCH-1 through ARCH-7 review)
+
+**Items Needing Your Input**:
+1. **May 6 13:30 UTC**: Verify DTBP reset; replace active-sessions.json with 2-session version; restart engine
+2. **distribution-path decision** (resistance-research): A / A+37 Hybrid / B
+3. **mfg-farm test print** → unblocks all production workflows (estimated 2 weeks to validate + launch)
+4. **stockbot architecture decisions** (CODE_REVIEW_SYNTHESIS.md): ARCH-1 through ARCH-7 review before multi-asset expansion
+5. **seedwarden Phase 1 tag corrections** + Etsy account verification OR confirm Track B contingency (May 24)
+
+---
+
 ## Since Last Check-in (Session 753 — 2026-05-05 18:10–18:25 UTC) — Parallel Exploration Execution Complete (Items 51, 52)
 
 ### ✅ SESSION 753 COMPLETE — Executed two high-priority exploration queue items in parallel (stockbot multi-asset expansion framework + resistance-research Phase 2 distribution roadmap). Both items unblocked and independent. No user input required — deliverables complete and committed.
