@@ -129,6 +129,75 @@ Listing is already prepared (per the Etsy launch kit). After successful test pri
 
 Fulfillment SLA: ship within 3 business days of order. At 1–5 units/week, a same-day or next-day print-and-ship cadence is easily achievable.
 
+### 1.9 Days 1–30 Batch Scheduling Template
+
+After the test print succeeds, follow this day-by-day schedule to move from validation to profitable production. Assumes test print confirmed snap arm flex, cable fit, and basic dimensional accuracy.
+
+**Days 1–3: Profile Validation**
+
+- **Day 1 AM**: Print first production plate (12 clips, ModRun-PLA-Production-v1 profile). Run all three QC gates on all 12 units. Expected scrap: 1–2 units (8–15% calibration loss is normal). **Do not sell from this plate** — this is calibration validation only.
+- **Day 1 PM**: Review QC results. If Gate 3 (functional fit test) reveals binding or rattle, adjust FDM_TOLERANCE in CadQuery (tighten to 0.10mm if rattle; loosen to 0.20mm if binding). Regenerate STL, re-slice, label as v1.0 (or v1.1 if tolerance adjusted). Print validation batch #2.
+- **Day 2 AM**: Harvest and run Gate 3 on all units from validation batch #2. If all pass: production profile is locked. If not: diagnose printer (nozzle temp? minimum layer time? wall count?), adjust, retry.
+- **Day 3 AM**: Print a mixed validation plate (1 rail + 4 clips) to confirm rail slot deburring time and rail-clip functional compatibility. Run all three gates. After approval, you are production-ready.
+
+**Days 4–7: First Sales Batch**
+
+- **Night of Day 3**: Queue overnight clip run (12 clips, 1 plate). This will be your first sellable stock. **Mark this run as "BATCH 001 PRODUCTION."** Use a Sharpie on the PEI plate if needed.
+- **Day 4 AM**: Harvest batch 001, run all three QC gates on all 12 units. Transfer passing units to "FINISHED GOODS STOCK" bin. Discard or rework any failures (stringing is rework-able; snap arm cracks are disposal).
+- **Day 4 afternoon**: Activate Etsy listing (mark as "In stock: 12"). This signals buyers that ModRun is live.
+- **Days 4–7 rhythm**: 
+  - Daily morning: check Etsy order inbox (target: 1–3 orders for clips, 0–2 for rails)
+  - Print-to-order for any rail requests (queue at start of workday, ship next business day)
+  - Pull clips from finished goods stock; pack orders; ship same-day or next-day
+  - Evening: queue next overnight clip run if stock is dropping below 10 units
+  - Log every QC event (pass/fail, product type, reason if failed) in a spreadsheet: `production-qc-log.csv`
+
+**Days 8–14: Week 2 Cadence and Steady State**
+
+- **Sunday (end of Week 1)**: Establish **Sunday night queueing** as your weekly anchor. Queue a 2-plate overnight run (24 clips) for Monday harvest.
+- **Mon/Wed/Fri**: Overnight clip runs (1–2 plates = 12–24 clips per night). This builds a 1–2 week finished goods buffer.
+- **Tue/Thu daytime**: Rail runs as orders arrive (print to order, no stock).
+- **Daily ritual**: AM (check orders, harvest previous night's plate), PM (pack orders, queue next run if stock dropping).
+- **Target by end of Week 2**: 10–15 units shipped, 0–2 returns reported, 2+ reviews requested in order messages.
+- **Scrap tracking**: If scrap rate is exceeding 8%, diagnose before Week 3: check PEI plate adhesion, Z-offset accuracy, or filament moisture.
+
+**Days 15–21: Week 3 Process Tightening**
+
+- **Monday of Week 3**: Review QC log from Weeks 1–2. Identify any pattern: specific plate position failing? particular time of day? filament lot issue?
+- **If scrap rate > 8%**: Before printing Week 3 batch, perform printer preventive maintenance:
+  - IPA wipe and inspection of PEI plate; if surface is degraded, replace ($15)
+  - Check Z-offset with calibration sheet; adjust if drifting
+  - Cold-pull nozzle cleaning (load filament to nozzle, allow to cool, pull firmly)
+  - Re-run bed leveling calibration in Bambu Studio
+- **Increase overnight clip frequency to 4 nights/week** if order rate is exceeding 15 units/week.
+- **Begin measuring order-to-ship time**: Record ship date minus order date for each order. Target: ship within 2 business days. This beats the 3-business-day SLA and drives positive reviews.
+- **Week 3 target**: Scrap rate trending toward 3–5%. Overnight runs running reliably 4 nights/week. 1–2 week finished goods buffer in place.
+
+**Days 22–30: Month 1 Close and Decision Point**
+
+- **Day 22**: Review Etsy shop stats for Month 1 (if Phase 1 launched around Day 4):
+  - Views-to-favorite ratio (target: >5% favorites, indicates good listing appeal)
+  - Conversion rate (target: >2% — if below, adjust listing images or copy on Day 25)
+  - Review count and average rating (target: 5+ reviews, 4.8+ avg rating)
+  - Repeat customer count (track separately in a spreadsheet)
+- **Day 25 (if needed)**: If conversion rate is <2%, swap a listing image or edit product description. Common improvements: add a use-case photo (clip on cables, not just product shot), clarify bore size range, mention satisfaction guarantee.
+- **Day 27**: Filament status check. If under 1.5 spools remaining, order 10kg bundle now (takes 2–3 days to ship; you'll need it for Month 2).
+- **Day 28**: Check PEI plate condition. If heavily scored, plan a replacement ($15). If still pristine, continue.
+- **Day 30 business decision**:
+  - **If orders are arriving faster than production:** Accelerate to daily clip runs instead of 3–4/week. Consider a second P1S for Month 2 (payback: 3–5 weeks at 50-unit/week demand).
+  - **If orders are arriving at a steady 20/unit/week pace:** Continue the current weekly rhythm into Month 2. No hardware expansion needed yet.
+  - **If orders are arriving slower than 15/unit/week:** Review conversion metrics and listing strategy. Consider running a $10 Etsy Ad campaign in Month 2 once you have 10+ reviews (social proof improves ad ROI).
+
+**Batch Interleaving Logic** (Critical for productivity):
+
+While one 12-clip plate is printing (40–50 minutes), use that time productively:
+- Harvest and QC the previous plate (5 min)
+- Pack any completed orders (5–10 min)
+- Print shipping labels in Pirate Ship (2 min for batch of orders)
+- Prepare packaging materials for the next orders (3 min)
+
+The printer is your worker; you are the scheduler and quality guardian. **Never be waiting for a print to finish.** When a print starts, you have 50 minutes of productive hands-on time before harvest.
+
 ---
 
 ## 2. Scaling Roadmap
