@@ -1,3 +1,51 @@
+## Since Last Check-in (Session 755 — 2026-05-05 21:35–22:15 UTC) — stockbot Gate 2 Readiness Assessment Complete
+
+### ✅ SESSION 755 COMPLETE — Exploration queue item (stockbot Gate 2 readiness assessment) completed. May 12 checkpoint preparation framework ready. Exploration queue refreshed with 3 new items.
+
+**Work Accomplished**:
+
+1. **Exploration Queue Item: stockbot — Gate 2 Paper Trading Readiness Assessment** ✅ COMPLETE
+   - **Deliverables**: Two comprehensive documents (6.3K words total)
+     - `gate-2-readiness-assessment.md` (3,800 words) — Sharpe/MDD/PF definitions, AAPL benchmarks, sample size warnings, May 12 measurement plan, decision tree, improvement roadmap
+     - `statistical-confidence-guide.md` (2,500 words) — Confidence intervals, bootstrap methodology, anomaly detection, May 12 analysis checklist
+   - **Key Findings**:
+     - Baseline Sharpe expectation: 0.75 (fails Gate 2 threshold of 1.0, but realistic given single-stock risk + May 2026 volatility)
+     - By May 12: expect 15–25 round trips (20 midpoint) = 20 trades total
+     - At 20 trades: Sharpe confidence band ±0.24 (e.g., measured 0.75 → true range [0.51, 0.99])
+     - MDD convergence: expect 20–25% (borderline at Gate 2 threshold 20%)
+     - Decision framework: Use confidence intervals + decision tree to interpret borderline outcomes rigorously
+   - **Strategic Value**: Enables robust May 12 interpretation even with small sample. Prevents false confidence in high-uncertainty metrics.
+
+2. **Exploration Queue Refresh**:
+   - Added 3 new items (Session 755):
+     1. **resistance-research: Institutional Adoption Framework** — DEFERRED (discovered extensive prior work complete; recommend user review docs instead of duplication)
+     2. **stockbot: Gate 2 Readiness Assessment** — COMPLETE (this session)
+     3. **cybersecurity-hardening: Tier 1 Effectiveness Measurement** — Added to queue
+
+**Project Status Update**:
+- **stockbot**: Gate 2 readiness framework complete, ready for May 12 checkpoint. Awaiting May 6 DTBP reset + architecture decisions (user input).
+- **resistance-research**: Phase 1 ready + all Phase 2 measurement infrastructure complete. Awaiting distribution path decision.
+- **cybersecurity-hardening**: Tier 1 ready for user execution, Tier 2 templates complete. Tier 1 effectiveness measurement framework queued.
+- All other projects unchanged (blocked on user actions).
+
+**Critical Timeline**:
+- **May 6 13:30 UTC**: DTBP reset verification, engine restart required
+- **May 12 20:00 UTC**: Gate 1/2 checkpoint (compute Sharpe, MDD, PF; apply decision framework from this session)
+- **May 26**: If Gate 1 passes, formal 30-day baseline assessment
+
+**Commits This Session**:
+- a3f8611: chore(orchestrator) — Session 755 summary + exploration queue updates
+- a3222e5: docs(gate-2) — readiness assessment + statistical confidence guide
+- c06eaab: chore — update stockbot submodule ref
+
+**Items Needing Your Input**:
+1. **May 6 13:30 UTC — CRITICAL**: (a) Verify DTBP reset to ~$400K via Alpaca API, (b) replace active-sessions.json with 2-session version, (c) restart engine
+2. **distribution-path decision** (resistance-research): Select A / A+37 / B before Phase 1 launch
+3. **stockbot architecture decisions** (CODE_REVIEW_SYNTHESIS.md): Review ARCH-1 through ARCH-7 before proceeding
+4. **May 12 20:00 UTC — DECISION POINT**: Measure Sharpe, MDD, PF; use framework from gate-2-readiness-assessment.md to interpret results
+
+---
+
 ## Since Last Check-in (Session 754 — 2026-05-05 19:15–19:35 UTC) — mfg-farm Days 1–30 Template Complete
 
 ### ✅ SESSION 754 COMPLETE — Exploration queue item (mfg-farm Days 1–30 batch scheduling) completed. Production workflow now fully documented pre-launch.
