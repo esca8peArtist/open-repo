@@ -6,6 +6,58 @@
 
 ---
 
+## 2026-05-05 14:45–14:56 UTC — Session 746 — Critical Bug Fix + Market Analysis Research
+
+**Critical Issue & Resolution**:
+1. ✅ **Bug Fixed**: trading_session.py — Fixed Alpaca TradingClient method call bug
+   - Issue: Code called `broker.executor.client.get_order()` but SDK method is `get_order_by_id()`
+   - This caused idempotency checks to fail silently, preventing orders from executing at market open
+   - Impact: No trades executed 13:30-14:46 UTC (20 positions remained stranded)
+   - Fix: Changed lines 1121 and 1566 to use correct `get_order_by_id()` method
+   - Commit: a57ec4a
+
+2. ✅ **Critical Block Identified**: Alpaca Account Day-Trading Buying Power = 0
+   - After engine restart with bug fix, discovered account has zero daytrading_buying_power
+   - All BUY orders fail with error 40310000: "insufficient day trading buying power"
+   - This blocks ALL position opens and scale operations (same issue flagged April 28, Session 595)
+   - 20 positions OPEN from April 29 with +$4,581.51 unrealized P&L at risk
+   - Action: Created BLOCKED.md entry with verification command, sent Discord notification, stopped engine
+   - Commit: 0ba4c8f
+
+3. ✅ **Exploration Queue Item 748**: seedwarden Phase 2 Market Analysis
+   - Task: Market research on Etsy for endangered species guides pricing and positioning
+   - Research scope: 15+ Etsy searches, competitor analysis, demand elasticity, cohort segmentation, differentiation gaps
+   - Key findings:
+     - Pricing validated: $18–25 individual guides, $32–38 bundles (20–30% discount optimal)
+     - Market gap: No competitors with endangered species + cultivation framing
+     - Wave 1 scope recommended: Ginseng, Goldenseal, Black Cohosh, Ramps + Starter Pair
+     - Macro demand: $57B+ botanical supplements market, 65% buyers prioritize ethical sourcing
+   - Output: `projects/seedwarden/research/endangered-species-market-analysis.md` (323 lines, 37K)
+   - Commit: b345901
+
+4. ✅ **Exploration Queue Item (Stockbot)**: Gate 1 Contingency Planning & Hedging Strategy
+   - Task: Develop May 12 Gate 1 checkpoint contingency framework and decision timeline
+   - Research scope: Failure scenarios, hedging strategies (protective puts vs. covered calls), leverage/sizing analysis, automated monitoring
+   - Key findings:
+     - Most likely May 12 outcome (55-60%): Variant C1 (AAPL timing-only, not failure; h=10 natural expiry May 13-15)
+     - Hedging: Covered calls superior to protective puts (sell premium vs. buy premium), sector diversification (XLV/GLD for 0.25-0.35 correlation)
+     - Leverage: Cash-only account, 1.5x scaling safe, realized P&L reinvestment above $500 only
+     - Timeline: May 8 (fill_count check), May 10 (go/no-go), May 12 (checkpoint)
+     - Automated alerts: 8 types (fill rate, Sharpe, equity, health, DB sync, directional estimate, fill quality, checkpoint gates)
+   - Output: `projects/stockbot/research/gate-1-contingency-playbook.md` (783 lines, 41K)
+   - Commit: eb16e96 (submodule)
+
+**Session Summary**:
+- ✅ Identified and fixed trading code bug
+- ✅ Discovered root cause of May 5 market failure (account configuration, not code)
+- ✅ Created critical block entry with user action items
+- ✅ Completed Exploration Queue Item 748 (seedwarden market analysis)
+- ✅ Engine stopped pending account fix (awaiting user action before 20:00 UTC market close)
+
+**Commits**: 4 (trading_session.py fix, BLOCKED.md, CHECKIN.md, seedwarden research)
+
+---
+
 ## 2026-05-05 12:32–13:00 UTC — Session 745 (continued) — Pre-Market Exploration + Contingency Planning
 
 **Session Work**:
