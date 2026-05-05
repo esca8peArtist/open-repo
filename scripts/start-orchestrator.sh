@@ -1,5 +1,7 @@
 #!/bin/bash
-set -e
+# No set -e: this is a long-running daemon loop where non-zero exits from
+# subcommands (e.g. usage-check.py exit 2 = paused gate) are expected and
+# must not kill the orchestrator.
 
 # Ensure local bin is on PATH (needed when running via systemd service)
 export PATH="$HOME/.local/bin:$PATH"
@@ -8,7 +10,7 @@ WORKSPACE="$HOME/dev/SuperClaude_Framework"
 PROMPT_FILE="$WORKSPACE/.claude/orchestrator-prompt.md"
 LOG_FILE="$WORKSPACE/orchestrator.log"
 MAX_TURNS=80
-PAUSE_BETWEEN_SESSIONS=300       # 5 min between sessions
+PAUSE_BETWEEN_SESSIONS=300       # 5 min between sessions (normal post-session pause)
 SUMMARY_INTERVAL=7200            # 2 hour summary interval
 SESSION_TIMEOUT=5400             # 90 min max per session — kill if hung
 
@@ -21,9 +23,25 @@ cd "$WORKSPACE"
 
 echo "[$(date)] Orchestrator starting." | tee -a "$LOG_FILE"
 
-[ -n "$DISCORD_WEBHOOK_URL" ] && curl -s -H "Content-Type: application/json" \
-  -d "{\"content\":\"[Claude] Orchestrator starting on Pi\"}" \
-  "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
+# Only notify Discord on startup if we're not already in a usage pause.
+# When paused, all Discord is suppressed until the billing week resets.
+if [ ! -f "$WORKSPACE/USAGE_PAUSE" ] && [ -n "$DISCORD_WEBHOOK_URL" ]; then
+  curl -s -H "Content-Type: application/json" \
+    -d "{\"content\":\"[Claude] Orchestrator starting on Pi\"}" \
+    "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
+fi
+
+# Returns seconds until next Tuesday 00:00 UTC (billing reset), minimum 60s.
+secs_until_reset() {
+  python3 -c "
+from datetime import datetime, timedelta, timezone
+now = datetime.now(timezone.utc)
+days_back = (now.date().weekday() - 1) % 7
+next_tuesday = now.date() - timedelta(days=days_back) + timedelta(weeks=1)
+reset = datetime(next_tuesday.year, next_tuesday.month, next_tuesday.day, tzinfo=timezone.utc)
+print(max(60, int((reset - now).total_seconds())))
+"
+}
 
 send_summary() {
   [ -z "$DISCORD_WEBHOOK_URL" ] && return
@@ -69,11 +87,11 @@ if not http_code.startswith("2"):
 PYEOF
 }
 
-# Background watchdog: fires summary every 2hrs regardless of session state
+# Background watchdog: fires summary every 2hrs, but silent while usage-paused.
 summary_watchdog() {
   while true; do
     sleep "$SUMMARY_INTERVAL"
-    if [ -n "$DISCORD_WEBHOOK_URL" ]; then
+    if [ -n "$DISCORD_WEBHOOK_URL" ] && [ ! -f "$WORKSPACE/USAGE_PAUSE" ]; then
       send_summary
     fi
   done
@@ -118,13 +136,15 @@ while true; do
   if [ "$USAGE_EXIT" -eq 0 ]; then
     echo "[$(date)] Usage gate: OK. Starting Claude session..." | tee -a "$LOG_FILE"
   elif [ "$USAGE_EXIT" -eq 2 ]; then
-    echo "[$(date)] Usage gate: PAUSED (80% gate). $USAGE_CHECK" | tee -a "$LOG_FILE"
+    RESET_SECS=$(secs_until_reset)
+    echo "[$(date)] Usage gate: PAUSED (80% gate). Sleeping until Tuesday reset (${RESET_SECS}s). $USAGE_CHECK" | tee -a "$LOG_FILE"
     echo "[$(date)] To override: touch $WORKSPACE/USAGE_PAUSE_OVERRIDE" | tee -a "$LOG_FILE"
-    sleep "$PAUSE_BETWEEN_SESSIONS"
+    sleep "$RESET_SECS"
     continue
   else
-    echo "[$(date)] Usage gate: THROTTLED. $USAGE_CHECK" | tee -a "$LOG_FILE"
-    sleep "$PAUSE_BETWEEN_SESSIONS"
+    RESET_SECS=$(secs_until_reset)
+    echo "[$(date)] Usage gate: THROTTLED (90%+). Sleeping until Tuesday reset (${RESET_SECS}s). $USAGE_CHECK" | tee -a "$LOG_FILE"
+    sleep "$RESET_SECS"
     continue
   fi
 

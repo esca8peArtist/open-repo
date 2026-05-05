@@ -25,6 +25,19 @@ echo "[$(date)] reset-usage-budget.sh: Tuesday plan reset triggered." | tee -a "
 rm -f "$WORKSPACE/USAGE_PAUSE" "$WORKSPACE/USAGE_PAUSE_OVERRIDE"
 echo "[$(date)] Cleared USAGE_PAUSE and USAGE_PAUSE_OVERRIDE." | tee -a "$LOG_FILE"
 
+# ── 1a. Restart orchestrator service if it is not running ─────────────────────
+# Normally the orchestrator loop keeps running and picks up the cleared gate
+# within 1 hour on its own. This handles the case where the service was
+# manually stopped or crashed and was not auto-restarted.
+if systemctl --user is-active --quiet claude-orchestrator.service 2>/dev/null; then
+    echo "[$(date)] Orchestrator service is running — will pick up cleared gate on next loop iteration." | tee -a "$LOG_FILE"
+else
+    echo "[$(date)] Orchestrator service not active — restarting..." | tee -a "$LOG_FILE"
+    systemctl --user restart claude-orchestrator.service >> "$LOG_FILE" 2>&1 \
+        && echo "[$(date)] Orchestrator service restarted." | tee -a "$LOG_FILE" \
+        || echo "[$(date)] WARNING: Could not restart orchestrator service (may need manual start)." | tee -a "$LOG_FILE"
+fi
+
 # ── 2. Clear usage-monitor threshold state ────────────────────────────────────
 rm -f "$WORKSPACE/.usage-monitor-state.json"
 echo "[$(date)] Cleared usage-monitor state (thresholds will re-arm)." | tee -a "$LOG_FILE"
