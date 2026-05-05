@@ -6,6 +6,58 @@
 
 ---
 
+## 2026-05-05 21:35–22:15 UTC — Session 755 — stockbot: Gate 2 Readiness Assessment (Exploration Queue)
+
+**Work Completed**:
+
+1. ✅ **Exploration Queue Item: stockbot — Gate 2 Paper Trading Readiness Assessment** (COMPLETE)
+   - **Primary Deliverable**: `projects/stockbot/docs/gate-2-readiness-assessment.md` (3,800 words)
+     - Part 1: What Gate 2 actually measures (Sharpe, MDD, PF definitions)
+     - Part 2: AAPL stacker benchmarks & realistic expectations (published literature + AAPL-specific tailwinds/headwinds)
+     - Part 3: Sample size warnings & statistical confidence (convergence rates, failure mode detection)
+     - Part 4: May 12 checkpoint go/no-go decision framework (measurement plan + decision tree)
+     - Part 5: Improvement roadmap (HMM regime scaling, multi-ticker reversion, threshold tuning options)
+     - Part 6: Timeline & monitoring checklist
+   - **Secondary Deliverable**: `projects/stockbot/docs/statistical-confidence-guide.md` (2,500 words)
+     - Sharpe ratio convergence & sample size (confidence interval formulas)
+     - Bootstrap CI alternative method
+     - MDD & PF convergence uncertainty
+     - "Insufficient data" protocol for May 12
+     - Anomaly detection (weird trades, model disagreement)
+   
+   - **Key Findings**:
+     - Baseline Sharpe expectation for 2-session AAPL: 0.75 (realistic given AAPL single-stock risk + May 2026 vol environment)
+     - Baseline Sharpe 0.75 **fails Gate 2** (threshold 1.0) — this is expected, not exceptional
+     - By May 12, expect 15–25 round trips = 20 total trades (midpoint)
+     - At 20 trades: Sharpe confidence band ±0.24 (e.g., measured 0.75 → true range [0.51, 0.99])
+     - MDD convergence: Expect 20–25% (borderline on Gate 2 threshold of 20%)
+     - Decision rule: If Sharpe **upper confidence bound** < 1.0, fail gate 2; if lower bound > 1.0, likely pass
+   
+   - **Strategic Value**:
+     - Provides interpretation framework for May 12 results even with small sample size
+     - Explains why measured Sharpe 0.75 ≠ automatic failure (confidence bands matter)
+     - Gives clear decision tree for borderline outcomes (e.g., "BORDERLINE — continue monitoring to May 26")
+     - Prevents false confidence in metrics with high uncertainty
+     - Ready for user consumption; can be referenced in May 12 checkpoint CHECKIN.md
+
+   - **Readiness**: Both documents production-ready. May be refined with actual live data post-May 6 DTBP reset, but framework is solid.
+
+**Context**: May 12 Gate 1/2 checkpoint is only 7 days away. Engine is currently 2-session AAPL setup (lgbm_ho + ridge_wf), starting from ~10 days live data (April 29–May 5 + May 6 onward post-DTBP reset). Two blocks still active: (1) DTBP=0 waiting for May 6 reset, (2) Architecture decisions from CODE_REVIEW_SYNTHESIS.md awaiting user input.
+
+**File Locations**:
+- `projects/stockbot/docs/gate-2-readiness-assessment.md`
+- `projects/stockbot/docs/statistical-confidence-guide.md`
+
+**Exploration Queue Updates**:
+- Added 3 new items (Session 755):
+  1. **resistance-research: Institutional Adoption Framework & Phase 1 Impact Measurement Setup** — But discovered extensive prior work already complete; item remains in queue for documentation/refinement if needed
+  2. **stockbot: Gate 2 Paper Trading Readiness Assessment** — COMPLETE (this session)
+  3. **cybersecurity-hardening: Tier 1 Effectiveness Measurement & Phase 2 Trigger Design** — Added to queue
+
+**Next Checkpoint**: May 12, 2026 at 20:00 UTC (post-market close) — Compute actual Sharpe, MDD, PF values and apply decision framework
+
+---
+
 ## 2026-05-05 19:15–19:35 UTC — Session 754 — mfg-farm Days 1–30 Production Workflow (Exploration Queue Item)
 
 **Work Completed**:
