@@ -4,6 +4,43 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 51 — 2026-05-05 — Phase 2 Endangered Species Market Saturation Analysis
+
+**Task**: Deep Etsy market research for endangered species plant guides (Phase 2 Wave 1 launch scope and pricing strategy). Full rewrite of existing `endangered-species-market-analysis.md` with quantified competitor data, price distribution, cohort LTV comparison, and specific seasonality recommendations.
+
+**Deliverables produced / updated**:
+
+1. `endangered-species-market-analysis.md` — **Full rewrite** (~1,600 words). New sections:
+   - Section 1.1: 7-search-term coverage table with listing count estimates, dominant format, seller archetype, and price mode for each term
+   - Section 1.2: 10-competitor profile table (GrowSelfSufficiency, Home Apothecary Seller, OntarioTactical, Mushroom Foraging Calendar, Digital Foraging Journal, Herbalism Ebook, Discovering Endangered Species, Davis & Persons, Herbal Academy, Gubba Homestead) with format, estimated price, estimated reviews, star rating, and strategic notes
+   - Section 1.3: Price distribution table (6 price bands from $3–7 to $36–50+) with estimated listing share, typical format, and quality signal; mode ($8–12), median ($13–15), underserved zone ($26–35) quantified
+   - Section 2: Demand elasticity and pricing analysis grounded in macro data (ginseng $744M, herbal supplement $13.23B/5.4% growth, wild ginseng harvest -68% from pre-2015 baseline)
+   - Section 3: Three-cohort LTV comparison table (Conservation-Conscious Naturalist $85–140, Herbalist/Practitioner $55–95, Homesteader/Survivalist $40–70) with explicit cross-reference to customer-cohort-analysis-framework.md
+   - Section 3.1: Month-by-month seasonality table with demand drivers, peak species, and keyword opportunities; paid ad spend windows specified (Aug 15 – Oct 31; Nov 15 – Dec 20)
+   - Section 3.3: Regional demand variation (Appalachian corridor, Northeast, Pacific Northwest, Midwest)
+   - Section 4: Differentiation gap analysis (4 specific content elements absent from all current Etsy competitors)
+   - Section 5: Revenue projection table (30–200 sales/month scenarios) + break-even calculation (~40 bundle sales)
+   - Pricing Recommendation: Single paragraph decision at $32 bundle / $18–22 singles / $42–48 gift bundle
+
+**Key analytical contributions**:
+- Wild ginseng 2024 harvest data (below 20,000 lbs, down from 62,000 lbs pre-2015) provides the strongest buyer motivation argument: supply collapse makes home cultivation economically rational, not just ecologically virtuous
+- Price mode/median/distribution quantified for the first time for this niche: mode $8–12, median $13–15, underserved zone $26–35
+- Cohort LTV comparison reveals Conservation-Conscious Naturalists are the highest-value Phase 2 audience ($85–140 LTV vs. $40–70 for homesteaders) despite being a new-to-Seedwarden cohort
+- Specific paid ad calendar (Aug 15 – Oct 31 for cultivation urgency; Nov 15 – Dec 20 for gift bundles) replaces vague "fall launch" guidance
+
+**Sources consulted**:
+- American Ginseng Alliance 2024 season report (americanginseng.com/market-outlook)
+- HerbalGram US herbal supplement sales data 2023 and 2024
+- Future Market Insights ginseng and herbal supplement market reports
+- Cognitive Market Research American ginseng market analysis
+- eRank/EverBee category-level Etsy data (via public reports and documentation)
+- Etsy Seller Handbook Spring/Summer 2026 trend report
+- EtsyHunt best-selling plants data 2026
+- Accio.com Etsy digital downloads growth statistics
+- Multiple Etsy listing searches across 7 search terms (403-blocked to direct scraping; estimated from search index inspection)
+
+---
+
 ## Item 50 — 2026-05-05 — Post-Phase-1 Analytics & Customer Retention Tracking Framework
 
 **Task**: Design comprehensive Phase 1 performance measurement system and Phase 2 decision-gate framework. Three deliverables per task spec.
