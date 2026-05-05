@@ -55,18 +55,20 @@ SLS nylon powder printers (Formlabs Fuse 1, EOS, HP Multi Jet Fusion) begin at $
 
 ### 2.1 Chinese-Origin Tier (Current Primary: eSUN, Anycubic, SUNLU, Overture)
 
-All four primary recommended suppliers are manufactured in China and US-warehoused (some) or shipped direct from China. Current tariff exposure is already embedded in April 2026 pricing — commodity PLA that was $9–11/kg in 2024 is now $10–14/kg due to accumulated tariff increases.
+All four primary recommended suppliers are manufactured in China and US-warehoused (some) or shipped direct from China. Current tariff exposure is already embedded in May 2026 pricing — commodity PLA that was $9–11/kg in 2024 is now $10–14/kg due to accumulated tariff increases.
 
-**Pricing breakpoints (PLA standard 1.75mm, US delivery, April 2026):**
+**Pricing breakpoints (PLA standard 1.75mm, US delivery, May 2026):**
 
 | Volume Breakpoint | eSUN | Anycubic | Overture | SUNLU |
 |---|---|---|---|---|
-| 1 kg (single spool) | $15–$20 | $12–$16 | $13–$18 | $14–$16 |
+| 1 kg (single spool) | ~$10.49–$18 (deal: 2-pack @ $10.49/kg) | $12–$16 | $13.98–$18 | $13.99–$16 |
 | 5 kg (~5 spools) | $13–$17 | $11–$14 | $11–$14 | $12–$14 |
 | 10 kg (case/bundle) | **$11–$13** | ~$10.50 | **$11–$14** | $12–$14 |
 | 25 kg | ~$9–$12 (eBay wholesale) | ~$10.50 | Quote required | ~$11–$13 (reseller) |
 | 50 kg | Quote via esun3dstore.com | **$10.49** (listed) | Quote required | ~$10–$12 (reseller) |
 | 100 kg | Quote; est. $8.50–$10 | ~$9–$10 est. | Quote required | ~$9–$11 (reseller) |
+
+*Note: eSUN 2-pack deal (2×1kg) was confirmed at $20.98 ($10.49/kg) via SlickDeals/Amazon in April 2026 — a frequently available Lightning Deal price point. Standard single-spool retail remains $15–$18/kg.*
 
 **Lead times:**
 - Amazon Prime (eSUN 10kg bundle, Overture 10kg bundle): 2–5 business days — this is the fastest path and should be the default for safety stock replenishment.
@@ -75,7 +77,66 @@ All four primary recommended suppliers are manufactured in China and US-warehous
 
 **Rush premium**: None of these suppliers offer formal rush services. Amazon Prime is de facto rush — 2-day delivery at no filament premium. If stock runs out and Prime is not fast enough, a local FDM service bureau is the only real-time fallback.
 
-### 2.2 US-Domestic Tier (Hedge Suppliers: Push Plastic, IC3D, 3D-Fuel, American Filament)
+### 2.2 Mid-Market Amazon Tier: Hatchbox and Amazon Basics
+
+These two brands deserve a dedicated subsection because they appear frequently in the commodity search results and both lack a compelling use-case for ModRun production at any volume tier. Understanding why clarifies the sourcing decision.
+
+#### Hatchbox
+
+Hatchbox is a US-distributed PLA brand with an exceptionally strong consumer reputation — nearly 41,000 Amazon reviews, 4.7-star average, and consistent praise for batch-to-batch color matching and dimensional accuracy (±0.03mm). It ships via Amazon Prime and is widely stocked.
+
+**The production problem:** Hatchbox is priced as a premium consumer brand, not a production input.
+
+| Volume | Price/kg (May 2026) | vs. eSUN 10kg bundle | Per-unit premium (75g clip) |
+|---|---|---|---|
+| 1 kg (single spool) | ~$22–$28 | +$10–$15/kg | +$0.75–$1.13/unit |
+| No bulk/wholesale tier | — | — | premium does not compress at volume |
+
+At $22–$28/kg with no published bulk discount structure (their wholesale program requires business registration and Amazon resellers are explicitly excluded), Hatchbox is pricing in a tier between commodity eSUN and premium Polymaker — but without Polymaker's wholesale program to unlock volume pricing. A 10kg eSUN bundle at $12/kg versus Hatchbox at $25/kg costs $0.98 more per 75g clip. At 500 clips/month that is $490/month in avoidable material cost with zero quality benefit for a cable management clip.
+
+**AMS compatibility:** Confirmed good. Bambu community testing rates Hatchbox as AMS-reliable with no noted winding issues. Spool geometry is AMS-compatible. This is Hatchbox's strongest production argument — but eSUN and Overture match it at 40–60% lower cost.
+
+**Verdict for ModRun:** Do not use for production. The reputation premium is priced in; there is no bulk price break available that makes it competitive. The only legitimate use case is a product line where you are selling Hatchbox-printed parts specifically because customers associate the brand with quality — not relevant for cable management clips.
+
+**Reliability score:** 8.5/10 (quality is real; value at production scale is not).
+
+---
+
+#### Amazon Basics PLA
+
+Amazon Basics entered the filament market to capture budget-conscious buyers already shopping on Prime. The product is manufactured by third-party contract manufacturers and white-labeled by Amazon.
+
+**Pricing structure (May 2026):**
+
+| Volume | Price/kg |
+|---|---|
+| 1 kg single spool | $12.48–$14.68 (regular $14.68, sale $12.48 with 15% coupon) |
+| 5-spool multi-pack (5kg, 5 assorted colors) | ~$13.60–$15/kg (B07H9BM162; multi-color bundle) |
+| No 10kg bundle SKU exists | — |
+
+**The structural problem:** Amazon Basics PLA has no 10kg bundle, no wholesale tier, and no multi-color monochrome bulk option. The only multi-pack available (ASIN B07H9BM162, 5-spool assorted colors) forces you to accept five different colors regardless of your velocity needs — not useful when you need 10kg of black and 5kg of white.
+
+**AMS compatibility:** Mixed. Community reports indicate the product works adequately on single-spool prints but has been noted for diameter inconsistency (±0.04–0.05mm in some lots), which causes intermittent AMS feed errors on extended 4+ hour jobs. Not recommended for an AMS-dependent print farm.
+
+**Price per gram:** $0.0125–$0.0147/g at retail. eSUN at $12/kg on a 10kg bundle is $0.012/g — essentially the same price, with better AMS compatibility, better bulk availability, and a documented wholesale path.
+
+**Verdict for ModRun:** Do not use for production. The pricing is not lower than eSUN at 10kg bundle quantities, the bulk structure does not exist, and the AMS reliability is worse. It is a consumer convenience product, not a production input.
+
+**Reliability score:** 6.5/10 (adequate for hobbyist use; not suited to AMS farm production).
+
+---
+
+**Summary comparison — the "why not these two" table:**
+
+| Brand | 1kg price/kg | 10kg price/kg | Bulk path exists? | AMS reliability | Production verdict |
+|---|---|---|---|---|---|
+| Hatchbox | $22–$28 | No 10kg bundle | No public tier | 8.5/10 | No — premium without bulk path |
+| Amazon Basics | $12.48–$14.68 | No 10kg bundle | No | 6.5/10 | No — same cost as eSUN, worse reliability |
+| eSUN (reference) | $10.49–$18 | $11–$13 | Yes (Amazon + direct) | 9/10 | Primary recommendation |
+
+---
+
+### 2.3 US-Domestic Tier (Hedge Suppliers: Push Plastic, IC3D, 3D-Fuel, American Filament)
 
 US-made filament is the tariff hedge — if Chinese goods tariffs increase another 20–30%, domestic suppliers' price premium narrows from the current ~100–150% premium to potentially 40–60%, which approaches justifiable at high production volumes.
 
@@ -95,7 +156,7 @@ US-made filament is the tariff hedge — if Chinese goods tariffs increase anoth
 
 **When to activate domestic tier**: If Chinese filament tariffs increase by 15+ percentage points in a single action, recalculate the domestic break-even at that moment. The domestic premium shrinks to approximately $0.40–$0.60/unit at that threshold — still margin-positive at current pricing, and worth the supply chain security.
 
-### 2.3 PETG Pricing Breakpoints
+### 2.4 PETG Pricing Breakpoints
 
 PETG for the Standard/Premium ModRun SKUs commands a higher per-kg price due to material complexity. Key PETG pricing data:
 
@@ -388,3 +449,13 @@ Moving a customer from a single-clip purchase to a 3-clip bundle improves gross 
 - [Craftybase — How to Calculate Reorder Point](https://craftybase.com/blog/how-to-calculate-reorder-point)
 - [InfoFlow Inventory — Reorder Point Formula and Safety Stock](https://www.inflowinventory.com/blog/reorder-point-formula-safety-stock/)
 - [MarketsandMarkets — Trump Tariffs Impact on 3D Printing Market](https://www.marketsandmarkets.com/ResearchInsight/trump-tariffs-impact-3d-printing-market-analysis.asp)
+- [Best Third-Party PLA Filament for Bambu Lab Printers 2026 — 3D Printed Decor](https://3dprinteddecor.com/best-third-party-pla-filament-bambu-lab-printers/)
+- [Best Bambu Lab Filament Brands 2026: Tested and Ranked — ADP Industries](https://www.adpindustries.com/blog/best-bambu-lab-filament-brands-2026/)
+- [HATCHBOX Wholesale Program](https://www.hatchbox3d.com/pages/wholesale)
+- [HATCHBOX 1.75mm Black PLA 3D Printer Filament — Amazon](https://www.amazon.com/HATCHBOX-3D-Filament-Dimensional-Accuracy/dp/B00J0ECR5I)
+- [Amazon Basics PLA 3D Printer Filament 1.75mm 1kg Spool — Amazon](https://www.amazon.com/AmazonBasics-Printer-Filament-1-75mm-Spool/dp/B07X1YH7C1)
+- [Amazon Basics PLA 5 Assorted Colors 5-Spool Bundle — Amazon](https://www.amazon.com/AmazonBasics-Premium-Printer-Filament-Assorted/dp/B07H9BM162)
+- [eSUN 2-pack PLA Basic deal ($20.98 = $10.49/kg) — SlickDeals April 2026](https://slickdeals.net/f/19443984-esun-pla-basic-filament-1-75mm-3d-printer-filament-high-speed-pla-20-99)
+- [Bambu Lab Filament Bulk Sale — US Store](https://us.store.bambulab.com/pages/promotions/filament-bulk-sale)
+- [9×12 Poly Mailer Bulk Pricing — Interplas.com](https://www.interplas.com/poly-mailers/poly-mailer-bags/bulk-poly-mailers-p-pm0912)
+- [Best Poly Mailers for Etsy & Amazon Sellers 2026 — Seller Gear](https://www.listing-forge.com/gear/poly-mailers)
