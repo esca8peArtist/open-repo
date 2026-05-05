@@ -918,6 +918,53 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
+### Item 50: resistance-research Domains 42-50 Candidate Scoping (Session 741 START)
+**Status**: QUEUED (UNBLOCKED NOW — independent of Phase 1 execution timing)
+**Trigger**: Autonomous execution now OR immediately post-Phase-1-launch (user-agnostic)
+**Scope**: Strategic scoping of 9 additional domain candidates (42-50) beyond current 38-41 framework, enabling 49+ domain proposal for 2026-2027 distribution and 3+ year strategic planning
+**Deliverables**:
+- `domains-42-50-candidate-analysis.md` (4,000-5,000 words) — 9 candidates with gap analysis, urgency assessment, coalition strength, research complexity, 2026-2028 policy windows (e.g., reproductive rights post-Dobbs, labor power shifting, disability rights, international trade/sovereignty)
+- Research roadmaps for top 3 candidates (8-10K words each format, matching Items 10/12/17/39/44 structure)
+- Format consistency verified against existing domain candidate analysis
+**Owner**: resistance-research agent (autonomous execution, estimated 3-4 hours)
+**Prerequisites**: None — parallel work while Phase 1 execution decision pending
+**Key areas**: 2026-2028 policy windows, coalition building potential, international precedent, institutional adoption patterns
+**Rationale**: Enables proactive Phase 2 planning (user can decide multi-wave distribution strategy immediately post-Phase-1, rather than waiting 4 weeks). Supports both distributed-now (Path A) and expanding-framework (Path B) strategies equally.
+
+---
+
+### Item 51: stockbot Institutional Integration & Regulatory Roadmap (Session 741 START)
+**Status**: QUEUED (UNBLOCKED NOW — independent of Gate 1 outcome)
+**Trigger**: Autonomous execution now OR post-Gate-1-validation (user-agnostic), informs post-Gate-2 strategic planning
+**Scope**: Research institutional adoption path (hedge funds, registered investment advisors, family offices, fintechs), regulatory compliance infrastructure, capital formation constraints, multi-asset scaling patterns from institutional players
+**Deliverables**:
+- `institutional-adoption-roadmap.md` (3,000 words) — Three tiers (RIA partnerships, hedge fund licensing, institutional capital), regulatory requirements per tier (Form ADV, Form PF, SIFMA compliance), capital formation constraints (min AUM, investor accreditation)
+- `regulatory-compliance-infrastructure.md` (2,500 words) — SEC/FINRA/CFTC compliance matrix for multi-asset trading (equities, options, crypto, futures), Form 8949 tax infrastructure, client reporting requirements, insurance requirements
+- `institutional-risk-management-framework.md` (2,000 words) — Institutional position sizing models (Kelly criterion for RIA context), leverage constraints (Reg T, portfolio margin), liquidity constraints, operational risk management
+- `capital-formation-strategy.md` (1,500 words) — Initial funding sources (friends/family vs. accredited vs. institutional), AUM growth trajectory, fee structures for institutional vs. retail
+**Owner**: stockbot agent (autonomous execution, estimated 3-4 hours research)
+**Prerequisites**: None — parallel work while Gate 1 executing May 5-12
+**Key areas**: Regulatory burden analysis, capital constraints, institutional adoption barriers, market opportunity sizing
+**Rationale**: Gate 1 (paper trading) and Gate 2 (options/crypto) are personal-scale trading. Gate 3+ requires understanding institutional constraints. Proactive research informs post-Gate-2 strategic decisions (continue retail vs. pivot institutional).
+
+---
+
+### Item 52: mfg-farm Manufacturing Ecosystem & Vertical Integration Strategy (Session 741 START)
+**Status**: QUEUED (UNBLOCKED NOW — independent of test print outcome; informs post-launch scaling)
+**Trigger**: Autonomous execution now OR post-Wave-1-launch, informs Wave 2-3 supplier and manufacturing decisions
+**Scope**: Strategic research on manufacturing partnerships, vertical integration opportunities, supply chain resilience, quality assurance models, multi-facility scaling patterns from successful 3D printing product companies
+**Deliverables**:
+- `manufacturing-partner-ecosystem.md` (3,000 words) — Contract manufacturers (SLA/FDM/resin), print-on-demand fulfillment networks (Printful, Shapeways, etc.), quality assurance partners, packaging partners (Pirate Ship integration), customer service outsourcing options. Cost analysis and service-level comparison per partner type.
+- `vertical-integration-decision-framework.md` (2,500 words) — Build vs. partner analysis for each manufacturing stage (design, printing, post-processing, assembly, QA, shipping). ROI analysis for in-house printing vs. contract vs. hybrid models at $10K/month, $50K/month, $200K/month scale.
+- `supply-chain-resilience-strategy.md` (2,000 words) — Dual-sourcing model for consumables (filament, resin), multi-facility redundancy patterns, inventory optimization, failure scenario playbooks (printer down, supplier delay, QA failure)
+- `multi-facility-operations-framework.md` (1,500 words) — Scaling from 1 printer → 5 printer → contract partnership model. Operational complexity at each stage. Team structure and hiring thresholds.
+**Owner**: mfg-farm agent (autonomous execution, estimated 3-4 hours research)
+**Prerequisites**: None — parallel work while test print decision pending
+**Key areas**: Partner evaluation, operational complexity, capital efficiency, risk mitigation
+**Rationale**: Current research (Items 21, 24, 37) covers product strategy and supplier selection. Manufacturing ecosystem research bridges supplier relationship to multi-facility operations (Wave 2-3 scaling). Informs Wave 1 supplier negotiation approach.
+
+---
+
 ## New Items (Session 703 — 2026-04-30 Orchestration)
 
 ### ✅ Item 33: stockbot May 12 Contingency Planning & Hedging Strategy (Session 703 COMPLETE)
