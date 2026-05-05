@@ -22484,3 +22484,70 @@ May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
 5. **Cybersecurity-hardening**: Tier 1 approval → outreach launch
 
 **Session token usage**: 138,465 tokens (three parallel research agents, 6 deliverables, ~9,800 lines). Sonnet usage still 0.7–1.5%, plenty of budget remaining.
+
+---
+
+## Session 732 (2026-05-05 05:28–06:10 UTC) — Exploration Queue Item: Gate 1 Contingency Planning Research Complete
+
+### Overall Status: ✅ EXPLORATION QUEUE ITEM COMPLETE — Stockbot contingency playbook delivered
+
+**Session Work**:
+1. ✅ **Orientation**: Reviewed ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, CHECKIN.md
+   - Confirmed all autonomous project code work is complete
+   - All projects blocked on named external dependencies (user decisions, manual actions, external reviews)
+   - Only active exploration queue item: stockbot May 12 contingency planning
+
+2. ✅ **Exploration Queue Management**: Added 2 new research items to PROJECTS.md:
+   - **resistance-research: Legal Liability & Risk Assessment for Framework Authors** — Pre-distribution legal exposure research (CFAA, state election law, tradecraft security)
+   - **seedwarden: Post-Phase-1 Analytics & Customer Cohort Tracking** — GA4 event schema + Etsy API tracking for Phase 1 launch metrics
+   - These maintain >3 active items in the queue per orchestrator protocol
+
+3. ✅ **Stockbot Subagent: Gate 1 Contingency Planning** (Completed)
+   - **Deliverable**: `projects/stockbot/research/gate-1-contingency-playbook.md` (committed at f7358c4)
+   - **Contents**: 
+     - Decision tree (ASCII format): Routes May 12 checkpoint confirmation → Pass / Partial / Fail / Timing-variant
+     - **Scenario A (Pass)**: 3+ confirmed round trips with positive cumulative PnL → activate HMM read-only mode, run covered call backtest, deploy if Sharpe ≥ 0.5
+     - **Scenario B (Fail)**: Five differentiated recovery options (Extend / Options hedge / Leverage scaling / Signal tuning / Abort) tied to root cause diagnosis
+     - **Scenario C (Partial, 1-2 round trips)**: Quality filter (Sharpe, MDD < 15%, execution slippage) with explicit extend-vs-pivot logic
+     - **Cross-scenario**: Capital preservation (8% drawdown trigger, $97K hard floor), options hedging mechanics (covered calls preferred), Jetson monitoring requirements, HMM regime outlook (VIX 13-15 base case)
+     - **Timeline**: Four explicit checkpoints (May 6, 9, 11, 12) with SQL queries and decision triggers
+   - **Business Value**: Reduces May 12 decision uncertainty, enables proactive hedging, protects account equity with defined stopping points
+   - **Token Usage**: 85,988 (stockbot subagent)
+
+### Project Status (Updated)
+
+| Project | Status | Blocker | Next |
+|---------|--------|---------|------|
+| **resistance-research** | ✅ 35 domains complete | User path decision | Awaiting A / A+37 / B selection |
+| **stockbot** | ✅ Engine running, contingency plan ready | — | May 5 13:30 UTC market open (6.5h), May 6-12 contingency monitoring |
+| **mfg-farm** | ✅ Launch package ready | Test print confirmation | Awaiting user confirmation |
+| **seedwarden** | ✅ Phase 2 research complete | Phase 1 launch needed | Awaiting user tag corrections + activation |
+| **cybersecurity-hardening** | ✅ All tiers ready | Tier 1 approval | Awaiting user approval |
+| **open-repo** | ✅ Phase 5 infrastructure | PR #1 merge | Awaiting external review |
+| **off-grid-living** | ✅ Published | Social distribution | Awaiting user execution |
+| **workout** | ✅ Complete | User review | Awaiting user selection |
+
+### Awaiting User Input (Unchanged)
+1. **Resistance-research**: Distribution path decision (A / A+37 / B) — **HIGH PRIORITY / TIME-SENSITIVE**
+2. **Stockbot**: Pre-market monitoring (13:00 UTC today), post-market verification (20:00 UTC)
+3. **Other blockers**: Test print, tag corrections, tier 1 approval, PR merge, social distribution
+
+### Timeline
+- **Current time**: 2026-05-05 05:28 UTC
+- **Market pre-market checklist**: 13:00 UTC (7h 32m away)
+- **Market open**: 13:30 UTC (8h 2m away)
+- **May 12 Gate 1 checkpoint**: 7 days away
+- **Exploration queue**: 3+ active items (stockbot contingency COMPLETE, 2 new items added for next session)
+
+### Assessment
+- **Autonomous work**: Exploration queue item complete. Next work available: (1) if user provides distribution path decision → Phase 1 execution begins immediately, (2) if stockbot contingency scenarios materialize → decision framework deployed, (3) May 6-12 continuous market monitoring per contingency playbook.
+- **System status**: Stockbot engine healthy, all other projects at external-dependency wait state
+- **Confidence**: HIGH — contingency playbook is production-ready and actionable on May 12
+
+**Next session options**:
+- **13:00 UTC today** (Session 733): Pre-market health check for market open (if within 2h of scheduled event)
+- **20:00 UTC today**: Post-market analysis and stockbot contingency monitoring trigger
+- **Anytime**: User provides distribution path decision → immediate Phase 1 execution begins (estimated 3-4h autonomous execution)
+
+**Session 732 complete** (2026-05-05 05:28–06:10 UTC) — Token usage: 85,988 (subagent). Orchestration commit pending.
+
