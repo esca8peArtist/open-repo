@@ -6,6 +6,27 @@
 
 ---
 
+## 2026-05-05 — mfg-farm — 100-Unit Operations Blueprint + Scaling Roadmap (Session 2)
+
+**Task**: Produce production-ready manufacturing scaling documents for ModRun print farm: 100-unit operations blueprint and scaling transition roadmap. Deepened and extended prior research session.
+
+**Research conducted**:
+- Bambu P1S vs Prusa MK4S vs Creality K1 Max 2026 production comparison (ADP Industries six-printer operator source); P1S confirmed as farm recommendation
+- 3DQue AutoFarm3D Door Opener availability ($129/printer, shipping in 2026, requires AutoFarm3D software $9.99–40/month)
+- 3PL pricing verification: Simpl Fulfillment flat-rate per-order pricing with $750/month minimum; ShipMonk per-pick fee ~$3 + storage; 3PL viable at 400+ orders/month, not at 100
+- Electrical capacity planning: 3 printers max on 15A circuit, 4–5 on dedicated 20A circuits (community forum + safety guidance)
+- Post-processing automation landscape: vibratory tumbling, support removal — concluded not applicable for support-free ModRun design
+
+**Files created**:
+- `projects/mfg-farm/100-unit-operations-blueprint.md` — ~4,800 words; covers printer selection, throughput modeling, layout, queue software, post-processing, facility/cooling/electrical/storage/safety, labor economics, 3PL comparison
+- `projects/mfg-farm/scaling-transition-roadmap.md` — ~3,200 words; month-by-month milestones (1→5 printers), capital requirements table, risk mitigation (MTBF, demand volatility, quality, supply chain), decision gates with pass criteria
+
+**Key findings**:
+1. Two Bambu P1S printers handles 100+ units/week with headroom; single printer is sufficient for 20–80 units/week depending on mix
+2. AutoFarm3D Door Opener ($129/printer) enables fully unattended overnight production — the automation lever that unlocks lights-out operation at 5 printers
+3. 3PL is not cost-effective until 400+ orders/month; in-house self-fulfillment with Pirate Ship + thermal label printer is the correct model through 200 units/week
+4. Total capital to 5-printer capacity: ~$5,012 spread over 6 months; monthly operating overhead at 5 printers: ~$885 including contractor
+
 ## 2026-05-05 — mfg-farm — 100-Unit Manufacturing Operations Design
 
 **Task**: Design the manufacturing operation at 100+ units/week scale for ModRun print farm.
@@ -24353,6 +24374,72 @@ During market hours (15:55 UTC), discovered that:
 - Both exploration queue items completed and production-ready
 - No further autonomous work available until: (a) user selects distribution path (resistance-research), (b) May 12 Gate 1 checkpoint (stockbot), (c) May 6 DTBP reset verification (stockbot)
 - Next meaningful autonomous work: May 12 contingency evaluation or exploration queue deepening if user unblocks other projects
+
+---
+
+## 2026-05-05 20:48+ UTC — Session 779 — Exploration Queue Deepening (Parallel Research)
+
+**Orientation & Status**:
+- Read ORCHESTRATOR_STATE.md & PROJECTS.md: Identified 3 unfinished Exploration Queue items from Session 778
+- All higher-priority projects blocked on user decisions or external time-gated events
+- Spawned 3 parallel subagents for autonomous research work
+
+**Actions Taken**:
+
+✅ **Parallel Agent 1: Stockbot Gate 1 Failure Recovery Roadmap (Deep Analysis)** (COMPLETE)
+- **Task**: Deep analysis of Gate 1 failure recovery options beyond contingency playbook
+- **Deliverable**: `projects/stockbot/gate-1-recovery-deep-analysis.md` (804 lines, ~6,000 words)
+- **Key findings**:
+  - Root cause of Gate 1 structural strain: threshold formula sits at 75th percentile of 10-day AAPL return distribution; 2-session ceiling is 0.34 round trips/30-day
+  - **Five recovery levers** with implementation costs and timelines:
+    1. **Portfolio rebalancing (SPY/QQQ)** — Add SPY first (4-6h, $20K capital), +2.5-3.5 round trips/10d; June 4 pass probability 85%
+    2. **Threshold sensitivity (0.50→0.40 multiplier)** — 1.8-2.5x signal increase, 30-60m implementation, PF degradation acceptable
+    3. **Signal model reweighting (SHAP+HMM)** — VIX-indexed thresholds, HMM activation 15m, no new capital required
+    4. **Multi-ticker expansion (10-20 tickers by June 12)** — 2-3 day wall-clock path (Jetson validation, parallel backtesting, feature parity)
+    5. **Capital efficiency (Kelly + Covered Calls)** — 5% position cap at Gate 1b, covered call overlay only post-Scenario A confirmation
+  - **Critical insight**: 30 round trips/month mathematically requires 20-30 tickers at threshold 0.35; impossible at 2 sessions. Gate 1b rescaling to 5 round trips/30d is correct.
+  - **Decision tree**: Clear go/no-go thresholds for each scenario (Pass/Near-Miss/Far-Miss) with branch-specific actions
+- **Business value**: Enables immediate May 12 post-analysis execution if Gate 1 fails; prevents decision paralysis
+- **Status**: Production-ready, ready for May 12 deployment
+
+✅ **Parallel Agent 2: Resistance-Research Phase 1 Baseline Metrics & Attribution Framework** (COMPLETE)
+- **Task**: Establish quantified baseline metrics and attribution methodology before Phase 1 launch
+- **Deliverables**: Two complementary documents:
+  - `projects/resistance-research/phase-1-baseline-metrics.md` — 5 fully quantified baselines with measurement protocols
+  - `projects/resistance-research/attribution-measurement-plan.md` — Four-test attribution framework with measurement windows
+- **Key findings**:
+  - **Vocabulary baseline (Metric 1)**: "35-domain framework" returns zero Google Scholar/Westlaw/SSRN results (May 5 baseline); clean zero-point for post-distribution attribution
+  - **Institutional contact baseline (Metric 2)**: 103 Tier 1-2 targets confirmed at zero framework awareness across 23 AG offices, 22 law schools, 11 think tanks
+  - **Litigation baseline (Metric 3)**: ~275-300 active federal cases, normal churn ~8-12/week; 4 high-attribution-potential domains (29, 37, 28, 4) identified
+  - **Citation pipeline baseline (Metric 4)**: Tier A-C publishers at zero framework citations; monitoring infrastructure (6 free tools) documented
+  - **Contingency failure metrics (Metric 5)**: Hard failure triggers defined (structural vs. content diagnostics)
+  - **Attribution methodology**: Four tests (vocabulary marker, structural convergence, timing-and-contact, counterfactual baseline) with decision protocol, sector-specific interpretation, Rogers S-curve positioning
+  - **Measurement timeline**: Five fixed windows (Day 0-30, Month 2-3, Month 4-6, Month 7-12) with success metrics per sector
+- **Business value**: Enables rigorous pre-post measurement on Day 1; prevents "did the framework cause X?" guessing
+- **Critical near-term action**: Activate 6 monitoring tools on Phase 1 launch day (Metric 4.2)
+- **Status**: Production-ready, ready for Phase 1 distribution
+
+✅ **Parallel Agent 3: mfg-farm 100+ Units/Week Manufacturing Operations Design** (COMPLETE)
+- **Task**: Design manufacturing operation at 100+ units/week scale
+- **Deliverables**: Two complementary documents:
+  - `projects/mfg-farm/100-unit-operations-blueprint.md` (~4,800 words) — Architecture, throughput, automation, 3PL, labor
+  - `projects/mfg-farm/scaling-transition-roadmap.md` (~3,200 words) — Month-by-month milestones, capital requirements, decision gates
+- **Key findings**:
+  - **Printer selection**: Bambu P1S is unambiguous production choice (3x fewer nozzle clogs vs Prusa, 40% faster throughput, farm-native software)
+  - **Throughput reality**: Single P1S can produce 1,260 clips/week at capacity (far beyond 100/week); binding constraint is demand, not production; two printers handles 100+ comfortably
+  - **Automation lever**: AutoFarm3D Door Opener ($129/printer, $9.99-40/month software) enables fully unattended overnight production — difference between morning harvest intervention and lights-out operation
+  - **3PL economics**: 3PL viable at 400+ orders/month; self-fulfillment with Pirate Ship + thermal printer costs $4.90/order at 100 units/week; do not outsource until 400+ orders
+  - **Electrical planning**: Max 3 printers on 15A circuit, 4-5 on dedicated 20A; 5 printers require two 20A circuits
+  - **Decision gate**: Add printer when existing fleet runs 80%+ utilization for 2 consecutive weeks AND unfulfilled orders occurred
+  - **Critical insight**: Scaling sequence bottleneck is Etsy organic ranking, not hardware; 1 printer with top-3 search placement > 5 printers with poor ranking
+- **Business value**: Enables informed post-test-print scaling decisions; identifies capital requirements ($5,012 to 5-printer capacity)
+- **Status**: Production-ready, ready for post-test-print execution
+
+**Status Summary**:
+- Three exploration queue items deepened and production-ready
+- All provide critical decision support for upcoming checkpoints (May 6 DTBP reset, May 12 Gate 1, post-test-print scaling)
+- Next meaningful work: Waiting for (a) May 6 DTBP reset verification (time-gated), (b) user distribution path decision (resistance-research), (c) May 12 Gate 1 outcome (time-gated), (d) user test print execution (mfg-farm)
+- Exploration queue now fully satisfied; no new items to queue
 
 ---
 

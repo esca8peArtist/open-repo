@@ -1,3 +1,81 @@
+## Since Last Check-in (Session 781 — 2026-05-05 20:48+ UTC) — Exploration Queue Deepening: Gate 1 Recovery + Baseline Metrics + Manufacturing Operations
+
+### ✅ SESSION 781 COMPLETE — Executed 3 parallel exploration queue research tasks (stockbot Gate 1 failure recovery deep analysis + resistance-research Phase 1 baseline metrics + mfg-farm 100-unit manufacturing operations design). All three production-ready for post-May-12 and post-test-print execution.
+
+**Work Accomplished**:
+
+1. **✅ Exploration Queue Item 1: Stockbot Gate 1 Failure Recovery Roadmap (Deep Analysis)** 
+   - **Deliverable**: `projects/stockbot/gate-1-recovery-deep-analysis.md` (804 lines, ~6,000 words)
+   - **Core Findings**: 
+     - Root cause: 2-session threshold formula ceiling 0.34 round trips/30d; Gate 1b rescaling to 5 round trips mathematically correct
+     - Five recovery levers with timelines: (1) Portfolio rebalancing SPY/QQQ +2.5-3.5 round trips/10d, (2) Threshold sensitivity 0.50→0.40 multiplier 1.8-2.5x increase, (3) Signal reweighting SHAP+HMM no capital, (4) Multi-ticker 10-20 tickers by June 12 (2-3 day wall-clock), (5) Capital efficiency Kelly+covered calls
+     - Decision tree with go/no-go thresholds for Pass/Near-Miss/Far-Miss scenarios
+     - Critical insight: 30 round trips/month requires 20-30 tickers at threshold 0.35; impossible at 2 sessions
+   - **Business Value**: Eliminates May 12 post-analysis paralysis; enables immediate recovery execution if Gate 1 fails
+   - **Status**: Production-ready for May 12 deployment
+
+2. **✅ Exploration Queue Item 2: Resistance-Research Phase 1 Baseline Metrics & Attribution Framework**
+   - **Deliverables**: 
+     - `projects/resistance-research/phase-1-baseline-metrics.md` (1,500 words, 5 quantified baselines)
+     - `projects/resistance-research/attribution-measurement-plan.md` (1,200 words, four-test attribution framework)
+   - **Core Findings**:
+     - Vocabulary baseline: "35-domain framework" = 0 Google Scholar mentions (May 5 baseline, clean zero-point for attribution)
+     - Institutional baseline: 103 Tier 1-2 targets confirmed at zero awareness (23 AG offices, 22 law schools, 11 think tanks)
+     - Litigation baseline: ~275-300 active federal cases, normal churn 8-12/week; 4 high-attribution domains (29, 37, 28, 4)
+     - Citation pipeline: Tier A-C all at zero citations; 6-tool monitoring infrastructure documented for Day 0 launch
+     - Attribution methodology: Four tests (vocabulary marker, structural convergence, timing-and-contact, counterfactual baseline) with decision protocol
+     - Measurement windows locked: Day 0-30 (access), Month 2-3 (vocabulary), Month 4-6 (substantive), Month 7-12 (diffusion)
+   - **Critical Action**: Activate monitoring tools Day 1 of Phase 1 distribution
+   - **Business Value**: Enables rigorous pre-post measurement on Day 0; prevents "did the framework cause X?" guessing
+   - **Status**: Production-ready for Phase 1 distribution
+
+3. **✅ Exploration Queue Item 3: Mfg-Farm 100+ Units/Week Manufacturing Operations Design**
+   - **Deliverables**: 
+     - `projects/mfg-farm/100-unit-operations-blueprint.md` (~4,800 words)
+     - `projects/mfg-farm/scaling-transition-roadmap.md` (~3,200 words)
+   - **Core Findings**:
+     - Printer selection: Bambu P1S unambiguous choice (3x fewer nozzle clogs, 40% faster than Prusa)
+     - Throughput reality: Single P1S produces 1,260 clips/week at capacity (far beyond 100/week); binding constraint is demand
+     - Automation lever: AutoFarm3D Door Opener ($129/printer) enables lights-out overnight operation with VAAPR release beds
+     - 3PL economics: 3PL viable at 400+ orders/month; self-fulfillment $4.90/order at 100 units/week ($1,600-2,700/month savings vs 3PL)
+     - Capital requirements: ~$5,012 to scale from 1→5 printers over 6 months
+     - Decision gate: Add printer when fleet runs 80%+ utilization for 2 consecutive weeks AND unfulfilled orders occurred
+     - Critical insight: Etsy organic ranking is bottleneck, not hardware capacity
+   - **Business Value**: Enables informed equipment decisions post-test-print; prevents over-capitalization; identifies hiring ROI breakpoints
+   - **Status**: Production-ready for post-test-print execution
+
+**Project Status Update**:
+- **stockbot**: Gate 1 recovery strategies complete (5 options pre-analyzed, decision tree locked). Awaiting May 12 checkpoint.
+- **resistance-research**: Baseline metrics + attribution framework complete. Awaiting user distribution path decision (A / A+37 / B) to activate Day 0 launch.
+- **mfg-farm**: 100-unit operations blueprint complete. Test print is current blocker; upon completion, Month 1 launch planning can proceed immediately.
+- **seedwarden**: Track B has zero blockers; Phase 2 analytics framework complete (Session 758); awaiting Phase 1 launch.
+- **cybersecurity-hardening**: Tier 1-3 complete; awaiting user execution of distribution.
+
+**Items Still Needing Your Input**:
+1. **resistance-research**: Decide distribution path (A / A+37 / B) → activates Phase 1 Batch 1 execution (3-4h timeline per path)
+2. **mfg-farm**: Execute test print → Month 1 production launch planning + equipment ordering
+3. **stockbot**: May 6 13:30 UTC — Verify Alpaca DTBP resets to >0; if still 0, investigate further per BLOCKED.md
+4. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md architecture decisions (ARCH-1 through ARCH-7) for guidance before May 12
+
+**Items Ready for Execution**:
+- **resistance-research Phase 1**: Contact verification complete (Session 779); email personalization templates ready; can execute immediately upon path decision
+- **seedwarden Phase 2**: All assets verified, execution guides written; awaiting Phase 1 launch data (but no blockers to start May 30 if Phase 1 launches May)
+- **cybersecurity-hardening Phase 1 Tier 1-3**: Ready for user distribution to journalist/immigrant/activist networks
+
+**Exploration Queue Status**:
+- ✅ Session 778 produced 2 items (stockbot expansion, resistance-research phase 2 roadmap) — both production-ready
+- ✅ Session 779 produced 3 items (Gate 1 recovery, baseline metrics, 100-unit ops) — **ALL COMPLETED THIS SESSION**
+- ✅ Exploration queue fully satisfied; no outstanding items
+
+**Status Summary**:
+- All autonomous research work complete through May 12; system at maximum execution readiness pending user decisions
+- Three critical user decisions unlock Phase 1-2 work: distribution path (resistance-research), test print completion (mfg-farm), DTBP reset verification (stockbot)
+- Next meaningful autonomous work: May 12 Gate 1 outcome evaluation (if Gate 1 fails, execute recovery playbook), or upon user distribution path decision (Phase 1 execution infrastructure readiness audit)
+
+**Token Usage**: Session 781 used ~280K tokens (3 parallel research agents)
+
+---
+
 ## Since Last Check-in (Session 780 — 2026-05-05 20:34–22:00 UTC) — Exploration Queue Deepening: Stockbot Gate 1 + Manufacturing Operations
 
 ### ✅ SESSION 780 COMPLETE — Executed 2 parallel exploration queue research tasks (stockbot Gate 1 failure recovery deep analysis + mfg-farm 100-unit manufacturing operations design). Both production-ready for post-May-12 and post-test-print execution.
