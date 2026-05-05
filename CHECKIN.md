@@ -1,3 +1,48 @@
+## Since Last Check-in (Session 750 — 2026-05-05 14:44–15:30 UTC) — Queue Extension + Workout Phase 2 Research
+
+### ✅ SESSION 750 COMPLETE — Replenished exploration queue with 3 new research items. Executed Item 47 (workout Phase 2 periodization research) while main projects await user decisions.
+
+**Work Accomplished**:
+1. **Queue Replenishment** (3 new items)
+   - Item 47: ✅ Workout Phase 2 Periodization Research (EXECUTED, 10,000 words, 4 files committed)
+   - Item 48: resistance-research Phase 2 Candidate Comparison Framework (queued for post-Phase-1 distribution)
+   - Item 49: off-grid-living Phase 2 Distribution Strategy (queued for post-Phase-1)
+
+2. **Workout Phase 2 Research Complete** (Item 47)
+   - `phase-2-periodization-research.md` — Linear/undulating/conjugate models with evidence (ACSM meta-analysis, LP vs UP superiority for intermediates)
+   - `exercise-progression-database.md` — Movement-specific progression curves, load management (ACWR framework <1.5 recommended), plateau protocols
+   - `sports-specific-adaptation-guide.md` — Periodization for 4 sport types; concurrent training (6h separation optimal for strength+endurance)
+   - `injury-prevention-protocols.md` — Tissue adaptation timelines (muscle 4-8w, tendon 10-26w, bone 6-12m), mobility prerequisites, contingency modifications
+   - Status: Production-ready for user implementation upon Phase 1 approval
+
+**Current Blockers** (unchanged):
+- 🔴 resistance-research: Distribution path decision (A / A+37 / B) — Phase 1 assets ready to ship on 3-4 hour timeline
+- 🟡 stockbot: DTBP=0 (auto-reset expected May 6 13:30 UTC); architecture review pending; operations runbook now documented
+- 🟡 seedwarden: Phase 1 tag corrections (Track A) or independent Track B launch (May 24 contingency available)
+- 🔴 mfg-farm: Test print confirmation → enables Day 1 launch playbook (supplier outreach, Etsy listing, photographer brief all staged)
+- ✅ workout: Phase 1 comprehensive plan complete → Phase 2 research now staged
+
+**Items Needing Your Input**:
+1. **URGENT (if not resolved)**: Verify Alpaca DTBP resets to ~$400K at May 6 13:30 UTC (auto-reset expected, confirm in dashboard)
+2. **distribution-path decision** (resistance-research): A / A+37 Hybrid / B → enables 3-4 hour Phase 1 execution immediately
+3. **seedwarden Phase 1 tag corrections** + Etsy account verification → or confirm Track B contingency (May 24 launch if A slips >14 days)
+4. **mfg-farm test print** → unblocks Day 1 launch playbook execution
+5. **stockbot architecture decisions** (CODE_REVIEW_SYNTHESIS.md): Confirm direction on ARCH-1 through ARCH-7 decisions
+
+**Suggested Priorities for Next Session** (after user decisions):
+- HIGH: Verify DTBP reset May 6 → if confirmed, remove block and document
+- HIGH: resistance-research distribution path → execute Phase 1 immediately (3-4 hour window)
+- MEDIUM: seedwarden Phase 1 execution or Track B contingency trigger (May 24 deadline)
+- MEDIUM: mfg-farm test print → enables supplier negotiation sequence
+
+**Session Statistics**:
+- Duration: 46 min (14:44–15:30 UTC)
+- Work items completed: 4 (queue items 47-49 added, Item 47 executed)
+- Research produced: 10,000 words across 4 production-ready markdown files
+- Commits: 1 (workout Phase 2 research, commit b20176a)
+
+---
+
 ## Since Last Check-in (Session 748 — 2026-05-05 14:26–16:15 UTC) — Parallel Exploration Queue Execution (Items 40, 44, 46)
 
 ### ✅ SESSION 748 COMPLETE — Executed 3 high-value queued exploration items in parallel while main projects await user decisions.

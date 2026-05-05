@@ -834,6 +834,52 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
+## New Items (Session 750 — 2026-05-05 Autonomous Queueing)
+
+### Item 47: workout Phase 2 — Periodization, Load Management & Sports Science Research (Conditional — Ready to Execute Now)
+**Status**: READY FOR EXECUTION — Phase 1 comprehensive plan is complete; Phase 2 research can proceed proactively
+**Trigger**: User approves comprehensive plan (triggers Phase 2 implementation; research can start independently)
+**Scope**: Deep-dive on periodization models, progressive overload frameworks, deload scheduling, injury prevention protocols, sport-specific adaptations
+**Deliverables**: 
+- `phase-2-periodization-research.md` (4,000–5,000 words) — Block periodization (linear, undulating, conjugate), macro/meso/microcycle planning, intensity distribution methods, example periodization calendars for 3-month/6-month blocks
+- `exercise-progression-database.md` (3,000 words) — Progression schemes by movement pattern (squat, hinge, push, pull, carry), load management curves, plateau-breaking protocols with decision trees, regression/deload protocols
+- `sports-specific-adaptation-guide.md` (2,500 words) — Periodization templates for endurance, strength sports, power, mobility; time-domain allocation, peaking strategy, tapering protocols
+- `injury-prevention-protocols.md` (2,000 words) — Overuse injury risk factors, volume tolerance thresholds, mobility prerequisites per movement, contingency modifications
+**Owner**: general-research agent (autonomous execution, estimated 3–4 hours)
+**Prerequisites**: None — Phase 1 comprehensive plan ready; this is proactive Phase 2 prep
+**Key areas**: Deload frequency, intensity scaling, volume ceiling per muscle group, recovery patterns, sport-specific periodization (hypertrophy vs. strength vs. power vs. endurance)
+
+---
+
+### Item 48: resistance-research Phase 2 Candidate Comparison Framework (Conditional — Post-Phase-1-Launch)
+**Status**: QUEUED — Research can proceed independently while Phase 1 distribution executes
+**Trigger**: Phase 1 distribution execution begins (any path: A, A+37, or B)
+**Scope**: Decision framework for comparing Domains 38-40 candidates by urgency, coalition strength, research complexity, policy window, and implementation feasibility; enable Phase 2 prioritization post-Phase-1
+**Deliverables**:
+- `phase-2-domain-prioritization-matrix.md` (3,000 words) — Scoring matrix across 8 criteria (urgency score 0-10, coalition strength, field maturity, research scope in hours, policy window months, litigation vector strength, media narrative gap, implementation difficulty), composite ranking
+- `domain-38-40-strategic-analysis.md` (4,000 words) — Candidate-by-candidate deep-dive (8-10 pages per Domains 38, 39, 40) comparing urgency windows, coalition alignment, research prerequisites, likely Phase 2 execution timeline
+- `phase-2-execution-roadmap.md` (2,000 words) — Sequential vs. parallel implementation for Domains 38-40, resource allocation, decision gates, success metrics per domain
+**Owner**: general-research agent (autonomous execution, estimated 3–4 hours research)
+**Prerequisites**: Phase 1 distribution live and generating initial contact response data
+**Key areas**: Comparative urgency (FISA 702 renewal vs. Voting Rights vs. Surveillance), constituency alignment, research ROI per domain, impact attribution methodology
+
+---
+
+### Item 49: off-grid-living Phase 2 — Content Repurposing & Multi-Platform Distribution Strategy (Conditional — Post-User-Execution-of-Phase-1)
+**Status**: QUEUED — Phase 1 publication is live; Phase 2 can prepare multi-channel distribution strategy
+**Trigger**: User confirms Phase 1 GitHub publication is live and accessible
+**Scope**: Design distribution campaign across Reddit, Twitter/X, HackerNews, YouTube, Substack, Discord communities; content repurposing strategy (guide→thread→video→podcast snippets)
+**Deliverables**:
+- `phase-2-distribution-calendar-90day.md` (2,500 words) — 12-week rollout calendar across 5+ platforms, phased strategy (Reddit text/links in Week 1, Twitter thread in Week 2, HackerNews in Week 3, YouTube script prep in Week 4, ongoing organic), engagement targets per platform
+- `content-repurposing-playbook.md` (2,000 words) — How to adapt guide sections into Reddit posts, Twitter threads, HackerNews Show HN, YouTube video outline, podcast interview talking points, Discord community intros
+- `community-partnership-outreach.md` (1,500 words) — 20+ target communities (r/offgrid, r/homesteading, r/preppers, HN, permaculture forums, YouTube channels, Substack publications), outreach email templates, partnership collaboration models
+- `success-metrics-framework.md` (1,000 words) — Viewership targets per platform, time-to-engagement benchmarks, cross-platform traffic attribution, community reception signals
+**Owner**: general-research agent (autonomous execution, estimated 2–3 hours research)
+**Prerequisites**: Phase 1 GitHub publication live and user has executed initial distribution
+**Key areas**: Audience segmentation by platform, organic growth mechanics, community building vs. broadcast strategy, content format adaptation
+
+---
+
 ## New Items (Session 703 — 2026-04-30 Orchestration)
 
 ### ✅ Item 33: stockbot May 12 Contingency Planning & Hedging Strategy (Session 703 COMPLETE)

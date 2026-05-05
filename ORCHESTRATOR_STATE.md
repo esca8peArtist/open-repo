@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-05T14:10:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-05T14:44:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.4% (127,601 tokens) | All-models 17.0% | Reset in 154h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.8% (161,414 tokens) | All-models 18.1% | Reset in 153h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -56,60 +56,75 @@
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 ---
-### stockbot — CRITICAL: Alpaca account has zero day-trading buying power (May 5 market hours)
+### stockbot — Alpaca DTBP=0; waiting for May 6 market open reset
 **Date blocked**: 2026-05-05 14:46 UTC
-**Context**: May 5 market open at 13:30 UTC. Engine restarted at 14:46 UTC with bug fix (get_order_by_id). All 52 ticker sessions generating trading signals correctly. However, all BUY orders fail immediately with Alpaca error 40310000: "insufficient day trading buying power" (daytrading_buying_power=0). Account is properly funded for paper trading, but day-trading buying power is explicitly zero. This blocks ALL position opens and position adjustments. 20 positions remain OPEN (from April 29) with +$4,581 unrealized P&L. SELL orders (for position closes) may still work, but cannot open new positions or scale existing positions. This is the same account-level issue flagged April 28 (Session 595: Alpaca account configuration TBD).
-**What I need**: Check Alpaca account settings for day-trading buying power. Either: (1) Account needs margin enabled (Account → Settings → Leverage), (2) Account needs equity/cash deposit, or (3) Account requires specific day-trading account configuration. Confirm daytrading_buying_power > 0 before market close 20:00 UTC to avoid missing Gate 1b trading window.
-**Verify with**: `curl -s -X GET "https://api.alpaca.markets/v2/account" -H "Authorization: Bearer $APCA_API_KEY_ID" | jq '.daytrading_buying_power'`
+**Context**: `daytrading_buying_power=0` due to prior-day margin call from 52-session over-leveraged state (last_maintenance_margin=$127K exceeded $112K equity). Alpaca zeros DTBP until next trading day recalculation. Today ends clean: only AAPL open, $82K cash, maintenance_margin=$9K. DTBP should reset to ~$400K at May 6 13:30 UTC market open.
+Jetson old sessions issue **RESOLVED 2026-05-05**: 5 stale is_active rows cleared via Python in container, container restarted. `/api/health` returns `{"status":"ok","sessions":2}`, `/api/ready` returns 200. Both AAPL sessions (lgbm_ho + ridge_wf) running correctly.
+User decision: wait for tomorrow's reset (cannot reset paper account without creating a new one, which would require new API keys).
+**What I need**: Verify DTBP at May 6 13:30 UTC before market open. If still 0, investigate further.
+**Verify with**: `curl -s "https://paper-api.alpaca.markets/v2/account" -H "APCA-API-KEY-ID: PKM03F5PK1LPV8LSBIP0" -H "APCA-API-SECRET-KEY: W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw" | python3 -c "import json,sys; a=json.load(sys.stdin); print('DTBP:', a['daytrading_buying_power'])"`
+**Resolution**:
+---
+### stockbot — Architecture decisions from full code review (discuss before implementing)
+**Date blocked**: 2026-05-05
+**Context**: Full 4-layer Opus code review complete (see `projects/stockbot/CODE_REVIEW_SYNTHESIS.md`). 15 safe issues were auto-fixed. 7 architecture decisions require discussion before code changes proceed.
+**What I need**: Review the items below and confirm direction. Full detail in `CODE_REVIEW_SYNTHESIS.md`.
+**ARCH-1 — `live_engine.py` fate** (HIGH, 4–12h): Two parallel engine implementations exist. `TradingSession` is production; `LiveEngine` is dead. Options: delete it, keep as deprecated reference (already done), or backport its `RiskManager`/`PnLCalculator`/`ShutdownHandler` into `TradingSession`.
+**ARCH-2 — Alert threshold divergence** (HIGH, ~3h): `alerts.py` has a 25% single-ticker position cap; `trading_session.py` has 5%. Drawdown limit: 20% vs 8%. `AlertManager` is never called in production — the `alerts.jsonl` log is always empty. Fix: extract shared `thresholds.py` and wire `AlertManager` into the session lifecycle.
+**ARCH-3 — Dual session registry** (HIGH, ~2h): `/api/trading/heartbeat` and `/api/status` only see `app.state.active_trading_session` (legacy). Sessions started via the current path are invisible to those endpoints. Fix: remove the legacy field, update heartbeat/status to use `paper_trading_sessions` dict.
+**ARCH-4 — `integration.py` + `ModelAdapter` dead in production** (~2h): All 6 functions in `integration.py` are test-only. `ModelAdapter` only used by `integration.py`. Recommend: delete both after porting acceptance tests to use `ModelBasedStrategy` directly.
+**ARCH-5 — Phase 6 analytics stack** (~2h): `MetricsCollector`, `StrategyAnalyzer`, `MetricsExporter` were superseded by `PostTradeAnalyzer` but never deleted. Only used by tests. Decide: delete or wire into the trading session.
+**ARCH-6 — No schema migration system** (~4h): `create_all()` won't add new columns to existing tables. No Alembic, no ALTER TABLE runner. Risk: silent schema drift on column additions.
+**ARCH-7 — Three `PerformanceMetrics` classes** (~2h): ORM model, analytics calculator, backtesting calculator — all named `PerformanceMetrics`. Recommend: rename ORM model to `PerformanceSnapshot`.
+**Verify with**: `# manual — user review of CODE_REVIEW_SYNTHESIS.md required`
 **Resolution**:
 ---
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
-**Verify with**: `# manual — cannot auto-verify`
-**Resolution**:
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - Updated get_database_stats() to report all 10 tables (was missing 4)
-   - Updated test assertions to reflect current schema (10 tables, not 6)
-   - All 25 unit tests passing (verified)
-   - Commits: 1e4d90c (stockbot submodule), aa59e8f (parent repo)
 
-2. ✅ **Engine Restart**: 
-   - Discovered engine was not running (shut down at 09:32:35 UTC with USER_REQUEST)
-   - Verified active-sessions.json has 52 ticker sessions configured (AAPL, MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, UNH, TSLA, IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T, BRK.B, NFLX, COST, TXN, AVGO, ABBV, BMY, TMO, CAT, SBUX, RTX, AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK, HD, LMT, UPS, REGN, FDX)
-   - Restarted launch_stacker_sessions.py with active-sessions.json config at 11:39 UTC
-   - Engine now running (PID 177133)
-   - Ready for 13:30 UTC market open with position closes
+**Session Start Analysis**:
+1. ✅ **Orientation Complete** — Read ORCHESTRATOR_STATE.md, BLOCKED.md, PROJECTS.md, INBOX.md
+2. ✅ **Active Blocks Verified**:
+   - stockbot DTBP=0: CRITICAL, market-time issue, should resolve 2026-05-06 13:30 UTC (tomorrow market open)
+   - mfg-farm: test print (user action)
+   - resistance-research: user path decision (A / A+37 / B)
+   - No new INBOX items to process
+3. ✅ **Market Status**: 15:10 UTC (May 5) — in middle of US market hours (13:30-20:00 UTC). Stockbot engine running with known DTBP limitation.
 
-3. ⏳ **Pre-Market Readiness**:
-   - Engine operational with 52 ticker sessions configured in paper trading mode
-   - 19 non-AAPL positions scheduled to close at 13:30 UTC market open
-   - AAPL position (108 shares, +$924 unrealized) scheduled to hold at h+4
-   - Pre-market health check at 13:00 UTC will verify engine readiness
-   
-**Timeline**:
-- **Current time**: 11:45 UTC
-- **Pre-market health check**: 13:00 UTC (75 min away) — verify engine operational
-- **Market open**: 13:30 UTC (105 min away) — execute position closes
-- **Post-market analysis**: 20:00 UTC — assess fills and Gate 1 trajectory
+**Decision**: 
+- Do NOT modify stockbot during market hours (trading engine active, dangerous to restart)
+- Work on Exploration Queue items with no blockers
+- Keep session focused on high-value research work
 
-**Next Actions**:
-- Stand by until 13:00 UTC for pre-market health check
-- Monitor engine logs for startup issues
-- Prepare market open monitoring at 13:30 UTC
+**Work in Progress**:
 
-**Session work complete** (code refactored, engine restarted, ready for market event)
+1. ✅ **Exploration Queue Item**: resistance-research Domain 37 Pre-Distribution Baseline Metrics
+   - Task: Establish quantified baseline for election protection coordination measurement
+   - Status: VERIFIED — Document already exists (created earlier 2026-05-05 04:03 UTC), verified accurate by agent research
+   - File: `projects/resistance-research/domain-37-baseline-metrics.md` (495 lines, 47K)
+   - Key metrics verified as current: 31 DOJ voter roll suits, $39.6M CISA budget, 24 election-denier appointees, zero Section 3 proceedings, 23-state AG coalition
+   - Measurement protocol: Day 0 (May 5), Day 30, Day 90, Day 180, post-election review
+   - Ready for Phase 1 distribution execution
 
-**Market Monitoring Status** (12:32 UTC):
-- ✅ Engine running (PID 177133, verified at 12:32 UTC)
-- ✅ Log file last updated at 12:39 UTC (all 52 sessions initialized, sleeping until 13:15 UTC)
-- ⏳ **Scheduled Events**:
-  - **13:15 UTC** (~43 min): Engine wake-up (sessions begin trading 15 min before market open)
-  - **13:30 UTC** (~58 min): US market open — execute 19 non-AAPL position close orders (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL)
-  - **13:45 UTC**: Verify close orders posted to database with realized P&L
-  - **20:00 UTC**: Post-market analysis — query May 5 fills, assess Gate 1b trajectory
+2. ✅ **Exploration Queue Item**: seedwarden Phase 2 Endangered Species Market Saturation Analysis
+   - Task: Market research for endangered species guides pricing and positioning
+   - Status: COMPLETE — Document created and committed
+   - File: `projects/seedwarden/research/endangered-species-market-saturation-analysis.md` (25K)
+   - Key findings:
+     - Market is unoccupied: zero quality cultivation guides in premium tier for endangered species
+     - Competitive set: 15-18 references across Etsy + off-platform (Amazon, herbal academies)
+     - Pricing validated: $18–$48 range confirmed by comparable products
+     - Seasonal peaks: Fall (Aug-Nov) strongest, Spring (Mar-May) secondary
+     - Cohort LTV: $20–$130/year depending on segment
+     - Differentiation: "Know it, grow it, protect it" positioning is unique
+   - Recommendation: Launch Wave 1 (Ginseng, Goldenseal, Black Cohosh, Ramps) at $18 single guides, $28–$32 bundles
+   - Ready for Phase 2 Wave 1 execution (May 30 target)
+
+**Session Summary**: Two parallel exploration queue items completed (Domain 37 baseline metrics verified, seedwarden market analysis delivered). Both deliverables advance distribution-readiness and Phase 2 planning. Stockbot market monitoring continues (engine running, DTBP=0 block noted, should resolve tomorrow at market open). No commits needed — both deliverables already staged and agent-committed.
