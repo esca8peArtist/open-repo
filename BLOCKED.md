@@ -32,11 +32,55 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — CRITICAL: Alpaca account has zero day-trading buying power (May 5 market hours)
+### stockbot — CRITICAL: Alpaca DTBP=0 due to prior-day margin call; Jetson still running old sessions
 **Date blocked**: 2026-05-05 14:46 UTC
-**Context**: May 5 market open at 13:30 UTC. Engine restarted at 14:46 UTC with bug fix (get_order_by_id). All 52 ticker sessions generating trading signals correctly. However, all BUY orders fail immediately with Alpaca error 40310000: "insufficient day trading buying power" (daytrading_buying_power=0). Account is properly funded for paper trading, but day-trading buying power is explicitly zero. This blocks ALL position opens and position adjustments. 20 positions remain OPEN (from April 29) with +$4,581 unrealized P&L. SELL orders (for position closes) may still work, but cannot open new positions or scale existing positions. This is the same account-level issue flagged April 28 (Session 595: Alpaca account configuration TBD).
-**What I need**: Check Alpaca account settings for day-trading buying power. Either: (1) Account needs margin enabled (Account → Settings → Leverage), (2) Account needs equity/cash deposit, or (3) Account requires specific day-trading account configuration. Confirm daytrading_buying_power > 0 before market close 20:00 UTC to avoid missing Gate 1b trading window.
-**Verify with**: `curl -s -X GET "https://api.alpaca.markets/v2/account" -H "Authorization: Bearer $APCA_API_KEY_ID" | jq '.daytrading_buying_power'`
+**Context**: Two separate issues confirmed via direct API inspection and log analysis:
+
+**Issue 1 — daytrading_buying_power=0 (root cause identified)**
+The account has `multiplier=4` (margin account), `pattern_day_trader=true`, `equity=$112K`, `regt_buying_power=$194K` — all healthy. But `daytrading_buying_power=0`.
+Root cause: Yesterday the account held ~$420K in long positions (52 sessions) on $112K equity with `last_maintenance_margin=$127,213` which EXCEEDED equity. This triggered a Day Trading Buying Power Call. Alpaca zeros DTBP when a DTBP call is outstanding and does not recalculate mid-day. The 19 positions closed today (cash now +$82K, only AAPL open), so tomorrow's DTBP should recover to ~$400K (4 × (equity - maintenance)).
+The engine code is correct. This is purely an Alpaca account state issue.
+
+**Issue 2 — Jetson still running ~52 old sessions**
+Logs show BUY attempts for LIN, HON, MRK, COP, SHW, GOOGL, COST, FDX, WMT, AVGO, UNH, AMZN, PG, DIS, NEE, MA, CAT at 14:46 UTC — the supposedly-closed sessions. The Jetson DB still has old `is_active=True` rows. The seeder only triggers when `not runs_to_resume`, so those old rows are preventing the 2-session config from loading.
+
+**What I need**:
+Option A (recommended — wait): Do nothing today. DTBP should reset at tomorrow's market open (2026-05-06 13:30 UTC) since today ends with a healthy balance sheet (only AAPL, $82K cash). Verify tomorrow: `curl -s "https://paper-api.alpaca.markets/v2/account" -H "APCA-API-KEY-ID: PKM03F5PK1LPV8LSBIP0" -H "APCA-API-SECRET-KEY: W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw" | python3 -c "import json,sys; a=json.load(sys.stdin); print(a['daytrading_buying_power'])"`
+
+Option B (trade today): Reset the paper trading account at paper.alpaca.markets → Settings → Reset Account. Loses the AAPL position (+$1,277 unrealized) but gets a fresh $100K account with DTBP=$400K immediately.
+
+**For Jetson old sessions** (needed regardless of which option above): SSH to Jetson, run:
+```
+docker exec stockbot sqlite3 /app/database/stockbot.db "UPDATE model_runs SET is_active=0, ended_at=datetime('now') WHERE session_id NOT IN ('33a4afe676cae12a','a1b2c3d4e5f60001') AND is_active=1;"
+docker restart stockbot
+```
+This deactivates all non-AAPL sessions so the seeder loads only the 2 configured sessions.
+
+**Verify with**: `curl -s "https://paper-api.alpaca.markets/v2/account" -H "APCA-API-KEY-ID: PKM03F5PK1LPV8LSBIP0" -H "APCA-API-SECRET-KEY: W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw" | python3 -c "import json,sys; a=json.load(sys.stdin); print('DTBP:', a['daytrading_buying_power'])"`
+**Resolution**:
+
+---
+
+### stockbot — Architecture decisions from full code review (discuss before implementing)
+**Date blocked**: 2026-05-05
+**Context**: Full 4-layer Opus code review complete (see `projects/stockbot/CODE_REVIEW_SYNTHESIS.md`). 15 safe issues were auto-fixed. 7 architecture decisions require discussion before code changes proceed.
+**What I need**: Review the items below and confirm direction. Full detail in `CODE_REVIEW_SYNTHESIS.md`.
+
+**ARCH-1 — `live_engine.py` fate** (HIGH, 4–12h): Two parallel engine implementations exist. `TradingSession` is production; `LiveEngine` is dead. Options: delete it, keep as deprecated reference (already done), or backport its `RiskManager`/`PnLCalculator`/`ShutdownHandler` into `TradingSession`.
+
+**ARCH-2 — Alert threshold divergence** (HIGH, ~3h): `alerts.py` has a 25% single-ticker position cap; `trading_session.py` has 5%. Drawdown limit: 20% vs 8%. `AlertManager` is never called in production — the `alerts.jsonl` log is always empty. Fix: extract shared `thresholds.py` and wire `AlertManager` into the session lifecycle.
+
+**ARCH-3 — Dual session registry** (HIGH, ~2h): `/api/trading/heartbeat` and `/api/status` only see `app.state.active_trading_session` (legacy). Sessions started via the current path are invisible to those endpoints. Fix: remove the legacy field, update heartbeat/status to use `paper_trading_sessions` dict.
+
+**ARCH-4 — `integration.py` + `ModelAdapter` dead in production** (~2h): All 6 functions in `integration.py` are test-only. `ModelAdapter` only used by `integration.py`. Recommend: delete both after porting acceptance tests to use `ModelBasedStrategy` directly.
+
+**ARCH-5 — Phase 6 analytics stack** (~2h): `MetricsCollector`, `StrategyAnalyzer`, `MetricsExporter` were superseded by `PostTradeAnalyzer` but never deleted. Only used by tests. Decide: delete or wire into the trading session.
+
+**ARCH-6 — No schema migration system** (~4h): `create_all()` won't add new columns to existing tables. No Alembic, no ALTER TABLE runner. Risk: silent schema drift on column additions.
+
+**ARCH-7 — Three `PerformanceMetrics` classes** (~2h): ORM model, analytics calculator, backtesting calculator — all named `PerformanceMetrics`. Recommend: rename ORM model to `PerformanceSnapshot`.
+
+**Verify with**: `# manual — user review of CODE_REVIEW_SYNTHESIS.md required`
 **Resolution**:
 
 ---
