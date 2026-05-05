@@ -748,6 +748,52 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
+### Item 44: resistance-research Domain 41 Candidate Analysis (Session 745)
+**Status**: QUEUED — Ready to execute during queue standing gap (no external blockers)
+**Trigger**: Autonomous — execute immediately if all projects are blocked on external dependencies
+**Scope**: Identify 5 potential Domain 41 candidates from gap analysis on existing 40-domain framework; design research roadmaps for post-Phase-1-distribution Phase 2 expansion planning
+**Deliverables**: 
+- `ITEM44_DOMAIN41_CANDIDATES.md` (3,500–4,000 words) — 5 candidates fully evaluated with gap analysis, urgency assessment, coalition strength, research complexity, 2026-2028 policy windows
+- Research roadmaps for top 2 candidates (8-10K words each format, matching Items 10/12/17/39 structure)
+- Format consistency verified against existing domain candidate analysis files
+**Owner**: general-research agent (autonomous execution, estimated 2–3 hours)
+**Prerequisites**: None — parallel work while Phase 1 distribution decision pending
+**Key areas**: 2026 policy windows, coalition building potential, international precedent, institutional adoption patterns
+**Rationale**: Enables Phase 2 planning flexibility; work is path-agnostic and unblocked by user decisions. Expands Phase 2 options beyond Domains 38-40.
+
+---
+
+### Item 45: seedwarden Track A Pre-Contingency Launch Plan (Session 745)
+**Status**: QUEUED — Ready to execute if Phase 1 launch stalls >2 weeks (contingency planning)
+**Trigger**: Track A tag corrections not completed by May 17, OR user requests concurrent Track B launch strategy
+**Scope**: Develop strategy for Track B independent launch (Phase 2 social + mockup assets can ship without Track A email list). Design concurrent execution plan for simultaneous Etsy + social brand building.
+**Deliverables**: 
+- `track-b-independent-launch-execution.md` (2,500 words) — Step-by-step launch checklist, 90-day social calendar (Instagram/Pinterest/TikTok daily drops), mockup production sequence, estimated user time
+- `concurrent-track-a-track-b-metrics.md` (1,500 words) — Measurement framework for simultaneous execution, audience overlap analysis, revenue path independence (mockups ≠ email list, both independent traction drivers)
+- `track-b-success-checkpoints.md` (1,000 words) — Week 2, Week 4, Week 8 evaluation gates with success thresholds (follower targets, engagement rates, conversion to email)
+**Owner**: seedwarden agent (autonomous execution, estimated 1.5–2.5 hours)
+**Prerequisites**: None — contingency planning work independent of Phase 1 status
+**Key areas**: Parallel execution efficiency, resource constraints (user bandwidth), audience platform segmentation, revenue diversification
+**Rationale**: If Track A tag corrections become a bottleneck beyond May 17, user can launch Track B independently and maintain operational momentum. Provides contingency plan without blocking on user input.
+
+---
+
+### Item 46: stockbot Post-Gate-1 Production Operations Runbook (Session 745)
+**Status**: QUEUED — Ready to execute post-Gate-1-decision (May 12)
+**Trigger**: Gate 1 checkpoint passed OR gate decision clarity needed
+**Scope**: Document complete production operations procedures for May 12–June 30 extended operation: daily health checks, market monitoring cadence, decision escalation, error recovery, Jetson restart procedures, Alpaca position management, end-of-month reporting
+**Deliverables**:
+- `daily-operations-checklist.md` (2,000 words) — Pre-market (08:00 UTC), in-market (13:30 UTC), post-market (20:30 UTC) procedures with exact check timing and escalation triggers
+- `incident-response-playbook.md` (2,500 words) — Common scenarios (engine hang, Jetson disconnect, Alpaca API timeout, position orphaning, fill reporting gap), root-cause diagnosis trees, remediation procedures
+- `monthly-reporting-framework.md` (1,500 words) — Gate 2 decision criteria, fill reporting formats, Sharpe/MDD baseline calculation, statistical significance thresholds
+- `24x7-monitoring-dashboard-spec.md` (1,200 words) — Automated alerts (no human required during market closed), escalation matrix, log rotation, Grafana dashboard design
+**Owner**: stockbot agent (autonomous execution, estimated 2–3 hours)
+**Prerequisites**: Gate 1 checkpoint decision made (May 12) OR early preparation if queue available
+**Key areas**: Production stability, incident response, measurement infrastructure, long-term operability through June 30
+**Rationale**: Gates 1→2 span May 12–June 20. Production runbook ensures high availability without human intervention. Can be prepared concurrently with Gate 1 execution.
+
+---
+
 ### ✅ Item 41: stockbot Gate 1 Monitoring Automation — SQL Queries & Decision Dashboard (Session 744 COMPLETE)
 **Status**: COMPLETED 2026-05-05 10:20–10:55 UTC
 **Scope**: Translate Gate 1 contingency playbook (Item 33, 6,200 words) into automated SQL monitoring dashboard. Create exact queries for all decision thresholds, real-time alert triggers, and decision tree logic. Purpose: By May 12, orchestrator can run `./scripts/gate1_dashboard.sh` at 20:00 UTC and get go/no-go signal automatically (no manual research needed).
