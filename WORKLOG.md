@@ -6,6 +6,38 @@
 
 ---
 
+## 2026-05-05 — Session 746 — Exploration Queue Execution: OpenRide Phase 2 Stakeholder Engagement & MVP Refinement Research
+
+**Session Work**:
+- Reviewed all existing open-source-rideshare research (research-report.md, cooperative-models-research.md, phase-2-insurance-framework.md, ARCHITECTURE.md) before writing
+- Conducted 20+ web searches and source fetches across four research domains: beta testing partnerships, driver recruitment, MVP features, and governance models
+- Primary sources: Fare Co-op (multi-state expansion precedent), Drivers Cooperative Colorado (2024 launch), Jacobin/NPQ reporting, CoopCycle federation governance, Stocksy United governance model, Namma Yatri launch strategy, Green Taxi Denver (CWA partnership model)
+
+**Completed deliverables**:
+1. `projects/open-source-rideshare/phase-2-engagement-roadmap.md` (~2,700 words, 26 sources)
+   - 7 candidate partner organizations with specific outreach contacts and partnership criteria
+   - Driver recruitment playbook: 4 strategies with cost/timeline estimates (peer recruitment, union onboarding, NEMT anchor demand, cooperative network)
+   - MVP feature prioritization matrix (P0/P1/P2/P3 tiers) covering payment routing, matching, governance, pricing
+   - Stripe Connect architecture with payout flow detail and 1099-NEC automation path
+   - Matching algorithm recommendation (Gale-Shapley stable matching, not ML, for MVP)
+   - Governance framework: federated multi-stakeholder model (CoopCycle applied to rideshare)
+   - Governance implementation timeline (7 milestones over 7 months)
+2. `projects/open-source-rideshare/beta-testing-framework.md` (~2,200 words, 22 sources)
+   - 3-phase pilot design (Phase 0 pre-launch setup, Phase 1 soft launch, Phase 2 expanded, Phase 3 full operation)
+   - Phase-gate success criteria for each phase transition
+   - City selection matrix (6 weighted criteria) with 4 ranked candidate cities
+   - Partner selection criteria and disqualifiers for transit agencies, universities, unions, NEMT
+   - 5 risk categories with specific mitigations (technical, regulatory, insurance, driver retention, governance)
+   - Quantitative metric targets (weekly tracking) and qualitative feedback loop design
+
+**Key findings not in prior research**:
+- Fare Co-op became America's 3rd largest fully licensed rideshare in under 12 months (operational in CA, GA, FL, OR by mid-2025)
+- Y-Risk specialty insurer has already underwritten cooperative rideshare; warm introduction path available via Fare Co-op
+- Namma Yatri pilot playbook: 100 drivers via Bangalore Auto Union, stealth beta, open launch on favorable regulatory event — directly replicable
+- Drivers Cooperative Colorado secured a city government NEMT contract before consumer launch — this is the anchor demand strategy that protects against rider-side cold-start failure
+- Gale-Shapley stable matching algorithm outperforms greedy proximity dispatch for driver income equity (arXiv 2024)
+- Loomio is the proven async governance tool used by CoopCycle; direct integration path exists
+
 ## 2026-05-05 09:30–10:50 UTC — Session 745 — Exploration Queue Execution: Resistance-Research Post-Distribution Measurement Framework
 
 **Session Work**:
