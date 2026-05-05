@@ -70,14 +70,6 @@ User decision: wait for tomorrow's reset (cannot reset paper account without cre
 
 ---
 
-### stockbot — May 5 Engine crashed; 67-session config still active, DTBP=0 blocks all trading
-**Date blocked**: 2026-05-05 14:47 UTC
-**Context**: May 5 market open planned 19 position CLOSE orders + 2-session architecture reduction (67→2 AAPL sessions). Engine never executed closures. At 14:46-14:47 UTC, engine attempted BUY orders on all 67 tickers (LIN, HON, MRK, etc.) but all failed with code 40310000 "insufficient day trading buying power" (DTBP=0 due to Apr 29-May 4 margin call). Error log shows BUY attempts on 17 tickers failing sequentially. Engine is not currently running (ps aux shows no process). 19 positions remain OPEN: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL. AAPL 108 shares held (correct). Root cause: active-sessions.json still contains 67-session configuration (from May 4 plan to reduce to 2); reduction was never implemented.
-**What I need**: (1) User restarts engine after DTBP reset tomorrow (May 6 13:30 UTC). (2) Before restart, replace active-sessions.json with active-sessions-2session.json (contains only AAPL lgbm_ho + AAPL ridge_wf). (3) Verify engine starts cleanly with 2 sessions only.
-**Verify with**: `ps aux | grep launch_stacker` (should show running process); `tail -5 projects/stockbot/logs/trading_YYYYMMDD.log | grep -E "Session|starting"` (should show 2 sessions only)
-**Resolution**:
-
----
 
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
