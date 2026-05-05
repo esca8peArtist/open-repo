@@ -4,6 +4,36 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 750 — 2026-05-05 — Phase 1 Success Metrics Dashboard + Phase 1 / Track B Parallel Execution Plan (Exploration Queue Item 40)
+
+**Task**: Create two planning documents for Phase 1 launch readiness and concurrent Track B execution strategy.
+
+**Deliverables produced**:
+- `phase-1-success-metrics-dashboard.md` (~2,300 words)
+- `phase-1-and-track-b-parallel-execution-plan.md` (~2,000 words)
+
+**Key decisions documented**:
+- Tier 1 daily metrics: views/listing (failure trigger <20 at Day 7), email signups (failure trigger <5 at Day 14), landing page conversion (failure trigger <5% after 100 visits), product-specific conversion rates by price tier, CAC (organic baseline negligible).
+- Tier 2 weekly metrics: LTV by cohort (baseline from endangered-species-market-analysis.md; Conservation Naturalists $65–130/yr), repeat purchase rate (Month 3 target 12–25%), cohort retention, product affinity (meaningful at 40+ orders), segment concentration (no single listing >50% of revenue).
+- Success thresholds: Week 1 ≥50 views per listing, Week 2 ≥100 email signups cumulative, Month 1 2–3% conversion rate.
+- Failure triggers defined with root-cause hypotheses and immediate-action protocols for 5 scenarios.
+- Google Sheets dashboard template specified (Daily, Weekly, Monthly tabs) with formulas — no software required.
+- Parallel execution plan: float analysis shows email automation has 5 days float, Pinterest pin batch has 7 days float, mockup finalization has 1 day float.
+- Risk gates defined: Gate 1 (conversion <1% at Week 2 → pause Track B production), Gate 2 (conversion <1% at Month 1 → full Track B suspension), Gate 3 (Etsy blocked → Track B-first with 21-day Gumroad trigger).
+- Concurrent mode recommended at 8+ hours/week; sequential mode at under 8 hours/week.
+- Week 1 requires 12–14 hours (setup-heavy); Week 2 onward stabilizes at 6–8 hours.
+
+**Documents created**:
+
+| File | Size |
+|---|---|
+| `phase-1-success-metrics-dashboard.md` | ~2,300 words |
+| `phase-1-and-track-b-parallel-execution-plan.md` | ~2,000 words |
+
+**Sources consulted**: `post-launch-analytics-framework.md`, `endangered-species-market-analysis.md`, `PHASE_1_EXECUTION_READY.md`, `TRACK_B_LAUNCH_STATUS.md`, `concurrent-track-execution-plan.md`, `email-list-building-playbook.md`, `etsy-seo-market-research.md`.
+
+---
+
 ## Session 749 — 2026-05-05 — Endangered Species Market Saturation Analysis
 
 **Task**: Comprehensive Etsy market research for endangered species guides to inform Phase 2 Wave 1 launch scope and pricing positioning.
