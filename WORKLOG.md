@@ -21639,3 +21639,111 @@ Full analysis: `projects/stockbot/GATE_1_REVISED_2SESSION.md`
 May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
 
 **Remaining session time**: ~10 hours until market open (13:30 UTC); prioritize stockbot monitoring and market readiness
+
+---
+
+## 2026-05-05 01:10–01:40 UTC — Session 724 (Autonomous Orchestrator) — Market Day Preparation + Domain 37 Baseline Metrics
+
+**Status**: ✅ COMPLETE — All work delivered, market readiness confirmed
+
+### ✅ Stockbot Agent: May 5 Market Day Engine Verification
+
+**Deliverable**: Comprehensive engine status report + pre-market checklist
+
+**Key Findings**:
+- **Engine Status**: ✅ RUNNING AND HEALTHY on Jetson (100.120.18.84)
+  - Both AAPL sessions active: `33a4afe676cae12a` (AAPL_h10_lgbm_ho) and `a1b2c3d4e5f60001` (AAPL_h10_ridge_wf)
+  - Both sessions sleeping until 13:15 UTC (15 min before market open), will wake automatically for first cycle
+  - API endpoints confirmed: `/api/health` returns `{"status":"ok","sessions":2}`, `/api/ready` returns `{"status":"ready","sessions":2}`
+
+- **Alpaca Account State**:
+  - Equity: $111,985.93
+  - Buying power: $0.00 (will restore after 19 close orders fill at market open)
+  - AAPL position: 108 shares, avg $267.877, current $276.82, unrealized +$965.84 (intact, do not touch)
+
+- **19 Close Orders**: ALL QUEUED AND CONFIRMED in Alpaca
+  - Tickers: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL
+  - Status: All set to SELL at market open (13:30 UTC)
+  - Expected fill: ~13:35 UTC (market open + 5 min)
+  - Impact: Will restore $0+ buying power for new AAPL signals
+
+- **Pre-Market Checklist** (to execute at 13:00 UTC):
+  1. Verify engine health: `curl http://100.120.18.84:8000/api/health && curl http://100.120.18.84:8000/api/ready`
+  2. Test Alpaca API: Confirm account status, no 401/403 errors
+  3. Confirm 19 close orders still queued (count open orders)
+  4. Verify AAPL 108 shares still in position
+  5. Check recent logs for any ERROR/CRITICAL entries
+  6. Note AAPL pre-market price as baseline
+
+- **Fallback Plan**: If Jetson unresponsive at 13:00 UTC, restart container or launch engine locally via `launch_stacker_sessions.py --config active-sessions.json --mode paper` on Pi
+
+**Conclusion**: No action required. Engine deployed and healthy. All 19 position closures are ready to execute. Run pre-market checklist at 13:00 UTC as final confirmation before market open.
+
+### ✅ Resistance-Research Agent: Domain 37 Pre-Distribution Baseline Metrics
+
+**Deliverable**: `projects/resistance-research/domain-37-baseline-metrics.md` (1,500+ words, 7 metrics, 17 sources)
+
+**Metrics Established** (all with current baseline values and measurement protocols):
+
+1. **DOJ Voter Roll Litigation** (31 cases total)
+   - 6 dismissed, 1 settled, 24 pending, 3 DOJ appeals
+   - Historical trend: 4.6× case volume increase from April 2025
+   - Key deadline: Oregon 9th Circuit oral argument May 19, 2026
+   - Measurement protocol: Post-distribution, does framework accelerate dismissals or strengthen state defenses?
+
+2. **CISA Election Security Budget**
+   - FY26: $39.6M earmark (program terminated before appropriations passed)
+   - FY27: Entire program eliminated in $707M gross CISA cut (360M net)
+   - Prior-year precedent: $490M proposed cut narrowed to $130–300M through Congressional pushback
+   - Measurement protocol: June 30, 2026 markup is first post-distribution decision point
+
+3. **Election-Denier Appointments** (named table of 24 total appointees)
+   - Key positions: Harmeet Dhillon (DOJ Civil Rights), Thomas Albus (nationwide election jurisdiction), Heather Honey (newly created DHS position)
+   - 10 who actively worked to reverse 2020, 11+ with Election Integrity Network ties
+   - 75 career officials removed
+   - Measurement protocol: Post-distribution, are these individuals removed/transferred or does EIN lose influence?
+
+4. **Section 3 (14th Amendment) Readiness**
+   - Current: No active Section 3 disqualification proceedings
+   - Congressional requirement: Section 5 statute needed (none exists in 119th Congress)
+   - Key indicator: Jena Griswold (Colorado AG race, 41.78% at March assembly)
+   - Measurement protocol: Post-distribution, do additional states activate Section 3 litigation?
+
+5. **Election Protection Coordination Infrastructure** (comprehensive audit)
+   - CISA situation room: Not established (first absence in history)
+   - EI-ISAC: Terminated, MS-ISAC: $10M cut
+   - Protect The Vote 2026: 100 hubs, 50 legal teams, 500K volunteer target
+   - Expert risk assessment: Votebeat survey, 27 of 37 experts consider federal polling-place deployment "at least somewhat likely"
+   - Measurement protocol: Post-distribution, is coordination accelerated or strengthened?
+
+6. **Congressional Legislation** (messaging-only under current Republican control)
+   - H.R.2803 (Protecting Election Administration from Interference Act): 5 co-sponsors, Judiciary + House Admin Committee, no floor path
+   - Measurement protocol: Would Democratic House in 120th Congress schedule committee hearing within 90 days?
+
+7. **Media/Academic Attention** (baseline anchors established)
+   - Media: ProPublica April 2026 investigation as primary baseline, ongoing coverage via Votebeat/Democracy Docket/Brennan Center
+   - Academic: UCLA Safeguarding Democracy Project, CREW, CDT leading indicators
+   - Gap noted: SSRN submission baseline not yet established (flagged to complete at distribution)
+   - Measurement protocol: Post-distribution, increased citation, media attention, academic output?
+
+**Key Research Sources** (17 cited):
+- Democracy Docket DOJ voter roll tracker
+- Brennan Center voter information tracker
+- University of Wisconsin Law DOJ lawsuit tracker
+- Nextgov/FCW CISA FY27 budget analysis
+- ProPublica April 2026 Trump midterm takeover investigation
+- Votebeat expert survey, CISA trust analysis
+- Protect The Vote 2026 organizational data
+- Congress.gov H.R.2803 tracking
+- Just Security Trump election strategy analysis
+- Election Law Blog Safeguarding Democracy Project
+
+**Impact**: This document enables rigorous pre-post measurement of framework distribution impact. Once Phase 1 distribution begins, we can quantify whether the framework:
+- Accelerated DOJ litigation dismissals or state AG defenses
+- Influenced Congressional action on emergency authority
+- Strengthened election protection infrastructure coordination
+- Increased academic/media attention to these mechanisms
+
+**Next Phase**: When user selects distribution path (A / A+37 / B), Domain 37 baseline metrics become part of the Phase 1 launch infrastructure. Quarterly checks (30/90/180 days) will measure movement on each metric.
+
+**Status**: All seven metrics are production-ready and can be integrated into post-distribution tracking dashboard immediately upon framework distribution decision.

@@ -1,3 +1,50 @@
+## Since Last Check-in (Session 724 — 2026-05-05 01:10–01:40 UTC) — Market Day Preparation
+
+### Overall Status: ✅ MARKET READY — All systems confirmed for May 5 13:30 UTC
+
+**Today's Deliverables**:
+1. ✅ **Stockbot Engine Verification**: Jetson deployment confirmed healthy, both AAPL sessions running, all 19 close orders queued for market open
+2. ✅ **Domain 37 Baseline Metrics**: Complete research document with 7 quantified metrics for pre-post distribution measurement
+
+### Stockbot: May 5 Market Day Engine Confirmation
+
+**Status**: ✅ RUNNING AND HEALTHY — Engine verified on Jetson at 100.120.18.84
+
+**Engine Details**:
+- **Sessions**: 2 AAPL sessions confirmed active (`33a4afe676cae12a` AAPL_h10_lgbm_ho, `a1b2c3d4e5f60001` AAPL_h10_ridge_wf)
+- **API**: Both `/api/health` and `/api/ready` endpoints responding correctly with sessions:2
+- **Status**: Both sessions sleeping until 13:15 UTC, will wake automatically for first market cycle
+- **Alpaca account**: $111,985.93 equity, $0 buying power (will restore after position closes), no auth errors
+
+**19 Close Orders**: ALL CONFIRMED QUEUED
+- Tickers: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL
+- Status: Market SELL orders, ready to execute at 13:30 UTC open
+- Expected fill time: ~13:35 UTC (market open + 5 min)
+- Impact: Will restore buying power for AAPL signal execution
+
+**AAPL Position**: INTACT — 108 shares, $276.82 current, +$965.84 unrealized
+
+**Action for User**: Run pre-market checklist at 13:00 UTC (see WORKLOG for detailed checklist). No other action required.
+
+### Resistance-research: Domain 37 Pre-Distribution Baseline Metrics
+
+**Status**: ✅ COMPLETE — `domain-37-baseline-metrics.md` (1,500+ words, 7 metrics, 17 sources)
+
+**Metrics Established**:
+1. **DOJ Voter Roll Litigation** — 31 cases (6 dismissed, 1 settled, 24 pending, 3 DOJ appeals)
+2. **CISA Election Security Budget** — FY26 $39.6M earmark, FY27 eliminated in $707M cut
+3. **Election-Denier Appointments** — 24 total appointees (named table), 11+ with EIN ties
+4. **Section 3 Readiness** — Zero active disqualification proceedings, Congressional statute needed
+5. **Election Protection Coordination** — CISA situation room not established, Protect The Vote 2026 active
+6. **Congressional Legislation** — H.R.2803 in committee, no floor path under current Republican control
+7. **Media/Academic Attention** — ProPublica April 2026 baseline, ongoing coverage via Votebeat/Brennan Center
+
+**Impact**: Framework for measuring post-distribution institutional adoption. Once Phase 1 launches, quarterly checks (30/90/180 days) will quantify whether the framework accelerated DOJ litigation, Congressional action, state AG coordination, and academic/media attention.
+
+**Next Phase**: Integrate into post-distribution tracking dashboard upon user distribution path decision (Path A / A+37 / B).
+
+---
+
 ## Since Last Check-in (Session tonight — 2026-05-04 UTC)
 
 ### Stockbot: 2-Session Jetson Deploy + Position Closures
