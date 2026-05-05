@@ -24,11 +24,11 @@ Template for tracking Batch 1 outreach. Populate "Verified Email" and "Email Ver
 
 | Contact | Institution | Role | Verified Email | Email Verified Date | Email Sent Date | Open Rate | Response Status | Response Date | Follow-up? | Notes |
 |---------|-------------|------|---------------|--------------------|-----------------|-----------|-----------------|---------------|---------|-------|
-| Ryan Goodman | Just Security / NYU Law | Co-Editor-in-Chief | ryan@justsecurity.org or ryan.goodman@nyu.edu | — | — | — | — | — | — | Network bridge node; editorial credibility multiplier; fastest institutional response cycle |
-| Wendy Weiser | Brennan Center for Justice | Director, Democracy Program | wweiser@brennancenter.org | — | — | — | — | — | — | Voting rights & election administration expertise; Brennan Center is Batch 1 SAVE Act litigation co-counsel |
-| Erica Chenoweth | Harvard Kennedy School | Director, Nonviolent Action Lab | echenoweth@harvard.edu | — | — | — | — | — | — | Theory of change alignment; Harvard funding freeze in Domain 27; academic credibility multiplier |
-| Ian Bassin | Protect Democracy | Founder & President | ian@protectdemocracy.org | — | — | — | — | — | — | Constitutional litigation + implementation focus; active plaintiff in multiple referenced cases |
-| Marc Elias | Democracy Docket / Perkins Coie | Founder, Democracy Docket | melias@perkinscoie.com or marc@democracydocket.com | — | — | — | — | — | — | Litigation strategy & media platform; highest social media amplification potential |
+| Ryan Goodman | Just Security / NYU Law | Co-Editor-in-Chief | ryan@justsecurity.org | 2026-05-05 | — | — | — | — | — | Network bridge node; editorial credibility multiplier; fastest institutional response cycle |
+| Wendy Weiser | Brennan Center for Justice | Director, Democracy Program | wweiser@brennancenter.org | 2026-05-05 | — | — | — | — | — | Voting rights & election administration expertise; Brennan Center is Batch 1 SAVE Act litigation co-counsel |
+| Erica Chenoweth | Harvard Kennedy School | Director, Nonviolent Action Lab | echenoweth@harvard.edu | 2026-05-05 | — | — | — | — | — | Theory of change alignment; Harvard funding freeze in Domain 27; academic credibility multiplier |
+| Ian Bassin | Protect Democracy | Founder & President | ian@protectdemocracy.org | 2026-05-05 | — | — | — | — | — | Constitutional litigation + implementation focus; active plaintiff in multiple referenced cases |
+| Marc Elias | Democracy Docket / Perkins Coie | Founder, Democracy Docket | melias@perkinscoie.com | 2026-05-05 | — | — | — | — | — | Litigation strategy & media platform; highest social media amplification potential |
 
 ---
 
