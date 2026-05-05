@@ -4,6 +4,42 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 724 — 2026-05-05 — Track B Production Setup
+
+**Task**: Phase 2 Track B production pipeline setup — social media account configuration,
+lifestyle photography props checklist, Kit email automation setup guide, Canva Brand Kit
+and zone card template status document.
+
+**Documents read this session**: TRACK_B_PRODUCTION_PIPELINE.md, LIFESTYLE_PHOTOGRAPHY_STRATEGY.md,
+PHOTO_SHOOT_SCHEDULE_AND_PROPS.md, CLUSTER_C_PROPS_ACQUISITION_PLAN.md, ZONE_QUICKSTART_CARD_SPEC.md,
+CANVA_ZONE_CARD_DESIGN_GUIDE.md, CANVA_ZONE_CARD_BATCH_WORKFLOW.md, PHASE_2_EMAIL_STRATEGY.md,
+TRACK_B_LAUNCH_STATUS.md, WORKLOG.md (prior sessions).
+
+**Work completed**:
+
+Four setup and configuration documents produced for the May 30 launch critical path.
+No external platform accounts created (requires user action in consumer apps). All
+decisions resolved; user action is clicking through UIs with content provided.
+
+**Files produced**:
+
+| File | Change |
+|------|--------|
+| `social-media-setup.md` | New file. Instagram, TikTok, Pinterest account handles (target: @seedwarden all platforms), bio copy for each platform (within character limits), profile image reference (logos/seedwarden_logo_1.png), post-creation checklist. |
+| `SHOOT_PROPS_CHECKLIST.md` | New file. Complete May 10-11 shoot props list: Cluster A (seeds/garden, 8 products), Cluster B (urban/container, 4 products), Cluster C (food preservation, 3 products). Universal props, print list (20-25 pages), equipment checklist, sourcing run plan by store type, budget estimate. |
+| `KIT_SETUP_NOTES.md` | New file. Step-by-step Kit (kit.co) platform setup guide: account creation, 15 subscriber tags (8 zone tags + 7 cohort tags), landing page configuration with exact copy, zone routing automation instructions, PDF upload process, 5-email welcome sequence build order, end-to-end test protocol. |
+| `CANVA_SETUP_STATUS.md` | New file. Brand Kit specification (6 hex colors exact, 3 fonts, logo upload path), zone band colors for all 8 zone card variants, 8-card build order with duplicate source and zone band hex per card, footer placeholder discipline, output paths, time estimates per session, status tracking table. |
+| `TRACK_B_PRODUCTION_PIPELINE.md` | Session 724 update appended — workstream status table, files produced, critical path actions for today. |
+
+**Image downloads this session**: 0 — setup and configuration session only.
+
+**Critical path flags**:
+- Germination tray must be started today (May 5) if not yet started — last viable date for May 10 shoot
+- Social account creation and Canva Brand Kit are the two gates blocking all subsequent content work
+- Kit account creation gates zone card delivery and email funnel
+
+---
+
 ## Session — 2026-05-04 — Native Plants Guide Expansion
 
 **Task**: Expand the native plants guide with four new content sections for pre-launch incorporation.

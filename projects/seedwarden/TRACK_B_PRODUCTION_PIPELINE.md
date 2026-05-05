@@ -308,5 +308,39 @@ All output files for Track B are staged in these directories:
 ---
 
 **Prepared**: 2026-05-01, Session 694
+**Updated**: 2026-05-05, Session 724
 **Status**: No blockers — proceed on all four workstreams immediately
 **Next milestone**: Social accounts live + Day 1 Reel published (target: May 2-3, 2026)
+
+---
+
+## Session 724 Update — 2026-05-05
+
+**Session scope**: Phase 2 Track B production setup — resolved all open configuration
+decisions for social media, Kit email automation, Canva Brand Kit, and May 10-11 shoot props.
+
+**Files produced this session**:
+
+| File | Purpose |
+|---|---|
+| `social-media-setup.md` | Account handles, bio copy, profile image reference, post-creation checklist. Accounts not yet created — user action required (30–60 min). |
+| `SHOOT_PROPS_CHECKLIST.md` | May 10-11 shoot props list organized by cluster and store type. Sourcing run window: May 5-9. Budget estimate: $32–$97 if all sourced new; $0–$30 if most on hand. |
+| `KIT_SETUP_NOTES.md` | Step-by-step Kit (kit.co) platform setup — account creation, 15 tags, landing page config, zone routing automation, welcome sequence build order. |
+| `CANVA_SETUP_STATUS.md` | Brand Kit spec (6 hex colors, 3 fonts, logo upload path), zone card build order, template status tracking table, output paths. |
+
+**Social handles status**: Target handle `seedwarden` on all three platforms. Fallback order
+documented in `social-media-setup.md`. Account URLs to be recorded after creation.
+
+**Workstream status as of May 5**:
+
+| Workstream | Status |
+|---|---|
+| Social accounts | UNBLOCKED — setup guide complete; user creation required (30–60 min) |
+| Lifestyle photography — Clusters A/B/C | ON TRACK — May 10-11 shoot; props sourcing window May 5-9 |
+| Zone cards (Canva) | UNBLOCKED — Brand Kit spec complete; Canva session begins after Brand Kit created |
+| Kit email automation | UNBLOCKED — full setup guide in KIT_SETUP_NOTES.md; account creation required |
+
+**Critical path today (May 5)**:
+1. Germination tray — start today if not already started (last viable date for May 10 shoot)
+2. Social account creation (30–60 min) — unblocks all content scheduling
+3. Canva Brand Kit setup (30 min) — unblocks zone card build and pin template production
