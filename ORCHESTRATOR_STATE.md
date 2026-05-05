@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-05T20:34:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-05T22:31:36Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.8% (161,414 tokens) | All-models 26.5% | Reset in 147h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.8% (164,668 tokens) | All-models 28.7% | Reset in 146h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -79,51 +79,51 @@ User decision: wait for tomorrow's reset (cannot reset paper account without cre
 **Verify with**: `# manual — user review of CODE_REVIEW_SYNTHESIS.md required`
 **Resolution**:
 ---
-### stockbot — May 5 Engine crashed; 67-session config still active, DTBP=0 blocks all trading
-**Date blocked**: 2026-05-05 14:47 UTC
-**Context**: May 5 market open planned 19 position CLOSE orders + 2-session architecture reduction (67→2 AAPL sessions). Engine never executed closures. At 14:46-14:47 UTC, engine attempted BUY orders on all 67 tickers (LIN, HON, MRK, etc.) but all failed with code 40310000 "insufficient day trading buying power" (DTBP=0 due to Apr 29-May 4 margin call). Error log shows BUY attempts on 17 tickers failing sequentially. Engine is not currently running (ps aux shows no process). 19 positions remain OPEN: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL. AAPL 108 shares held (correct). Root cause: active-sessions.json still contains 67-session configuration (from May 4 plan to reduce to 2); reduction was never implemented.
-**What I need**: (1) User restarts engine after DTBP reset tomorrow (May 6 13:30 UTC). (2) Before restart, replace active-sessions.json with active-sessions-2session.json (contains only AAPL lgbm_ho + AAPL ridge_wf). (3) Verify engine starts cleanly with 2 sessions only.
+### mfg-farm — Test print required before launch prep continues
+**Date blocked**: 2026-04-12
+**Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
+**What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-
-✅ **Parallel Agent 1: Stockbot Multi-Asset Expansion Strategy Research** (COMPLETE)
-- **Task**: Research optimal multi-ticker expansion for post-Gate-1 scaling
-- **Deliverable**: `projects/stockbot/research/multi-asset-expansion-framework.md` (extended to ~7,500 words)
+- **Task**: Establish quantified baseline metrics and attribution methodology before Phase 1 launch
+- **Deliverables**: Two complementary documents:
+  - `projects/resistance-research/phase-1-baseline-metrics.md` — 5 fully quantified baselines with measurement protocols
+  - `projects/resistance-research/attribution-measurement-plan.md` — Four-test attribution framework with measurement windows
 - **Key findings**:
-  - Candidate tickers ranked: MSFT/GOOGL/SPY/QQQ/TLT with position sizing and correlation analysis
-  - Transfer learning methodology: Clone AAPL lgbm_ho for MSFT/GOOGL, use threshold-adjusted variants for SPY/QQQ, fresh configs for TLT/GLD
-  - Expected Sharpe degradation by ticker: MSFT 10–20%, GOOGL 13–29%, SPY 17–35%, TLT 40–67%
-  - Microstructure incompatibility detection: 4 observable patterns (PF<1.0, vol floor, loss streaks, zero importance)
-  - Signal disagreement handling: 4 cases with explicit behavior (divergent signals execute independently, logged for correlation review)
-  - **Earliest 2-ticker live paper trading**: May 19, 2026 (critical path: May 13-14 backtest → May 14-15 ARCH fixes → May 15-19 monitoring)
-- **Business value**: Informs post-Gate-1 expansion strategy; resolves transfer learning and signal coordination questions
-- **Status**: Production-ready, ready for May 12 Gate 1 decision
+  - **Vocabulary baseline (Metric 1)**: "35-domain framework" returns zero Google Scholar/Westlaw/SSRN results (May 5 baseline); clean zero-point for post-distribution attribution
+  - **Institutional contact baseline (Metric 2)**: 103 Tier 1-2 targets confirmed at zero framework awareness across 23 AG offices, 22 law schools, 11 think tanks
+  - **Litigation baseline (Metric 3)**: ~275-300 active federal cases, normal churn ~8-12/week; 4 high-attribution-potential domains (29, 37, 28, 4) identified
+  - **Citation pipeline baseline (Metric 4)**: Tier A-C publishers at zero framework citations; monitoring infrastructure (6 free tools) documented
+  - **Contingency failure metrics (Metric 5)**: Hard failure triggers defined (structural vs. content diagnostics)
+  - **Attribution methodology**: Four tests (vocabulary marker, structural convergence, timing-and-contact, counterfactual baseline) with decision protocol, sector-specific interpretation, Rogers S-curve positioning
+  - **Measurement timeline**: Five fixed windows (Day 0-30, Month 2-3, Month 4-6, Month 7-12) with success metrics per sector
+- **Business value**: Enables rigorous pre-post measurement on Day 1; prevents "did the framework cause X?" guessing
+- **Critical near-term action**: Activate 6 monitoring tools on Phase 1 launch day (Metric 4.2)
+- **Status**: Production-ready, ready for Phase 1 distribution
 
-✅ **Parallel Agent 2: Resistance-Research Phase 2 Distribution Roadmap** (COMPLETE)
-- **Task**: Research Phase 2 domain sequencing and distribution roadmap for post-Phase-1 launch
-- **Deliverable**: `projects/resistance-research/phase-2-distribution-roadmap.md` (~2,700 words) + supporting analysis files
+✅ **Parallel Agent 3: mfg-farm 100+ Units/Week Manufacturing Operations Design** (COMPLETE)
+- **Task**: Design manufacturing operation at 100+ units/week scale
+- **Deliverables**: Two complementary documents:
+  - `projects/mfg-farm/100-unit-operations-blueprint.md` (~4,800 words) — Architecture, throughput, automation, 3PL, labor
+  - `projects/mfg-farm/scaling-transition-roadmap.md` (~3,200 words) — Month-by-month milestones, capital requirements, decision gates
 - **Key findings**:
-  - Phase 2 domains (38–41) with composite prioritization scoring
-  - **Track A (calendar-forced)**: 38-A FISA (June 12 hard deadline), 38-B Voting post-Callais (November 3), 40-B Tribal Sovereignty (Trump v. Barbara SCOTUS ruling window)
-  - **Track B (feedback-gated)**: 41-B Disability rights (highest composite score 87.1), 39-A/39-B Reproductive/Labor, 40-C Fiscal authority, 40-A Constitutional architecture
-  - **Data-driven adoption gates**:
-    - Gate 1 (Day 7): Tier 1 open rate signal (40%+ proceed, <25% diagnose)
-    - Gate 2 (Day 14): Reply rate signal (3%+ proceed, <1% test variants)
-    - Gate 3 (Week 6): Aggregate Phase 1 feedback; assign Track B priorities
-    - Hard backstop: All Track B domains proceed by August 1, 2026 regardless of Phase 1 adoption
-  - **Phase 1→Phase 2 messaging differences**: Social proof (cite Phase 1 adoptions), domain-specific (single domain vs. framework), time-stamped urgency (name external deadline)
-  - **Coalition continuity**: 10 specific Phase 1 contacts mapped to Phase 2 domain assignments; low fragmentation risk with sector-specific distribution
-  - **Contingency protocols**: 5 scenarios (A: strong adoption, B: moderate, C: stalled, D: hard trigger fires, E: capacity constrained) with explicit escalation actions
-  - **Implementation timeline**: 8 data-driven gates through November 3 midterm lock
-- **Business value**: Enables seamless Phase 1→Phase 2 transition once user selects distribution path (A/A+37/B)
-- **Status**: Production-ready, ready for Phase 1 launch decision
+  - **Printer selection**: Bambu P1S is unambiguous production choice (3x fewer nozzle clogs vs Prusa, 40% faster throughput, farm-native software)
+  - **Throughput reality**: Single P1S can produce 1,260 clips/week at capacity (far beyond 100/week); binding constraint is demand, not production; two printers handles 100+ comfortably
+  - **Automation lever**: AutoFarm3D Door Opener ($129/printer, $9.99-40/month software) enables fully unattended overnight production — difference between morning harvest intervention and lights-out operation
+  - **3PL economics**: 3PL viable at 400+ orders/month; self-fulfillment with Pirate Ship + thermal printer costs $4.90/order at 100 units/week; do not outsource until 400+ orders
+  - **Electrical planning**: Max 3 printers on 15A circuit, 4-5 on dedicated 20A; 5 printers require two 20A circuits
+  - **Decision gate**: Add printer when existing fleet runs 80%+ utilization for 2 consecutive weeks AND unfulfilled orders occurred
+  - **Critical insight**: Scaling sequence bottleneck is Etsy organic ranking, not hardware; 1 printer with top-3 search placement > 5 printers with poor ranking
+- **Business value**: Enables informed post-test-print scaling decisions; identifies capital requirements ($5,012 to 5-printer capacity)
+- **Status**: Production-ready, ready for post-test-print execution
 
 **Status Summary**:
-- Both exploration queue items completed and production-ready
-- No further autonomous work available until: (a) user selects distribution path (resistance-research), (b) May 12 Gate 1 checkpoint (stockbot), (c) May 6 DTBP reset verification (stockbot)
-- Next meaningful autonomous work: May 12 contingency evaluation or exploration queue deepening if user unblocks other projects
+- Three exploration queue items deepened and production-ready
+- All provide critical decision support for upcoming checkpoints (May 6 DTBP reset, May 12 Gate 1, post-test-print scaling)
+- Next meaningful work: Waiting for (a) May 6 DTBP reset verification (time-gated), (b) user distribution path decision (resistance-research), (c) May 12 Gate 1 outcome (time-gated), (d) user test print execution (mfg-farm)
+- Exploration queue now fully satisfied; no new items to queue
 
 ---
