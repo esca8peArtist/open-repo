@@ -185,6 +185,52 @@
 
 ---
 
+### ✅ Item 14: cybersecurity-hardening Step-by-Step Implementation Guides (Session 752)
+**Status**: COMPLETED 2026-05-05 16:20 UTC
+**Scope**: Convert comprehensive OpSec playbook into executable step-by-step guides for each strategy
+**Deliverables** (ALL COMPLETE):
+- ✅ `encrypted-messaging-implementation-guide.md` (2,980 words) — Signal/Matrix/Briar with verification workflows, NSA QR malware warning
+- ✅ `vpn-and-network-hardening-guide.md` (2,009 words) — Five/Nine/Fourteen Eyes analysis, Mullvad + ProtonVPN Secure Core, WireGuard kernel module, kill switch verification
+- ✅ `tor-and-anonymity-guide.md` (1,838 words) — GPG signature verification, guard relay pinning, obfs4/Snowflake bridges, circuit correlation risks
+- ✅ `device-hardening-implementation-guide.md` (2,422 words) — macOS (FileVault + pf), Linux (UFW + AppArmor + sysctl), Windows (BitLocker + WDAC), Firefox hardening
+- ✅ `operational-security-workflows-guide.md` (2,042 words) — 2/3-compartment models, VirtualBox/Whonix setup, dead-drop techniques, journalist + activist scenario workflows
+- ✅ `identity-recovery-and-breach-response-guide.md` (2,080 words) — Hour-by-hour playbook, MFA hierarchy (hardware key > TOTP > email), contact notification template, SIM-swap risks
+**Key Features**: Comprehensive source citations, OS-specific code blocks (ready-to-copy), clear threat models per persona, danger warnings where users could accidentally weaken security
+**Outcome**: Cybersecurity-hardening project now includes both distribution infrastructure AND immediately executable implementation guides. Users can begin hardening immediately upon receiving guides.
+
+---
+
+### Item 15: workout Nutrition & Meal Planning Integration
+**Status**: READY FOR EXECUTION NOW — No external blockers
+**Trigger**: Autonomous execution (independent of Phase 1 workout completion)
+**Scope**: Create comprehensive nutrition planning guide to complement Phase 1-2 workout programs
+**Deliverables**:
+- Macro/Micronutrient Framework (protein/carb/fat targets per goal; micronutrient density mapping)
+- Meal Timing & Nutrient Timing (pre/post-workout nutrition; feeding windows; concurrent training fueling)
+- Meal Planning Templates (3x 7-day meal plans: hypertrophy, strength, conditioning-focused; shopping lists)
+- Supplementation Guide (evidence-based supplements only; cost-benefit analysis; timing protocols)
+- Nutrition Periodization (macro cycling with training phases; carb depletion strategies; recovery protocols)
+- Recovery Optimization (sleep, hydration, stress management integration with nutrition)
+**Owner**: workout agent (autonomous execution)
+**Context**: Comprehensive workout plan (16,927 words) is complete and Phase 2 sports-specific extensions done. Nutrition is the missing piece — users can't optimize training without coordinated nutrition. 10,000-15,000 words total; aligns with periodization research added in Item 47.
+
+---
+
+### Item 16: stockbot Configuration Manager & Restart Automation
+**Status**: READY FOR EXECUTION NOW — Blocked engine provides motivation for tooling
+**Trigger**: Autonomous execution after DTBP reset (May 6)
+**Scope**: Build configuration management system + automated restart tooling for engine lifecycle
+**Deliverables**:
+- Session Configuration Manager (class-based abstraction; load/save/validate/diff session configs)
+- Automated Restart Script (`smart-restart.py`: check prerequisites, validate config, spawn engine, verify health, alert on failure)
+- Health Monitoring Dashboard (simple HTTP endpoint: session count, DTBP, positions open, last trade timestamp, engine uptime)
+- Configuration Templates (2-session, 11-session, 40-session, custom templates for quick setup)
+- Runbook Documentation (when to use which config; manual override procedures; debugging steps)
+**Owner**: stockbot agent (autonomous execution)
+**Context**: May 5 engine crash revealed need for better configuration management. Active-sessions.json is error-prone (67 sessions vs 2-session mismatch). Automation tooling would prevent future config errors and enable faster troubleshooting. 8-12 hours implementation time.
+
+---
+
 ### ✅ Item 26: stockbot Options Pre-Architecture Research (Session 690 COMPLETE)
 **Status**: COMPLETED 2026-04-30 08:30 UTC
 **Scope**: Options trading preliminary architecture (covered calls, spreads, Greeks management, regulatory compliance, performance attribution)
