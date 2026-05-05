@@ -1,10 +1,13 @@
-## Since Last Check-in (Session 736 — 2026-05-05 07:20 UTC) — Orchestration Committed + Pre-Market Readiness Confirmed
+## Since Last Check-in (Session 736 — 2026-05-05 07:20–08:00 UTC) — Phase 2 Domain Research COMPLETE + Market Ready
 
-### Overall Status: ✅ ALL ORCHESTRATION COMMITTED + PRE-MARKET READINESS CONFIRMED — Off-grid-living engagement frameworks committed. Stockbot engine status verified (not running, will wake at 13:15 UTC per market-aware sleep logic). Pre-market health check scheduled for 13:00 UTC (5h 40m away). No autonomous work available before market open; all main projects blocked on user input or external events.
+### Overall Status: ✅ PHASE 2 DOMAIN RESEARCH COMPLETE (19,284 WORDS) — Three Phase 2 candidates now production-ready: Medicaid Crisis (6,681 words), State Autocratization (6,200 words), Fiscal Authority (6,403 words). All three integrate as supplements to Phase 1 distribution (Path B) or enhancements to Phase 2 domain expansion. Framework strengthened. Pre-market health check scheduled for 13:00 UTC (5h away). Market monitoring begins at 13:30 UTC.
 
 **Session Work**:
 
-1. ✅ **Orchestrator: Calibration Block Resolution** — `bash scripts/verify-calibration.sh` verified OK (limits calibrated 2026-04-28, within 7-day window). Block moved to Resolved Archive in BLOCKED.md, committed.
+1. ✅ **Phase 2 Domain Research — ALL THREE CANDIDATES COMPLETE** (19,284 words, 100+ sources total):
+   - **Candidate 1 — OBBBA Medicaid Crisis** (6,681 words): Healthcare access collapse, work requirements empirical analysis (Arkansas precedent, Nebraska/Montana early implementation), hospital closure risks mapped by congressional district, NVRA-Medicaid enrollment nexus, post-Loper Bright litigation strategy. Integrates as Domain 11 Addendum or Domain 11b.
+   - **Candidate 2 — State Legislative Autocratization** (6,200 words): Preemption scaling (800+ bills, Texas "Death Star"), structural self-entrenchment (NC redistricting lame-duck pattern), racial authoritarian preemption (Alabama/Mississippi/Tennessee case studies). **FLAGGED: April 29 *Callais* ruling eliminates VRA discriminatory effect standard — requires Domain 1/33 updates**. Integrates as Domain 9b or standalone Domain 34b.
+   - **Candidate 3 — Congressional Power-of-the-Purse** (6,403 words / Domain 34 update): Executive impoundment mechanisms ($425B FY2025), emergency authority bypass (Venezuela operation, NEA/IEEPA post-SCOTUS Feb 20), post-Loper Bright enforcement landscape, five reform pathways with sequencing, DHS 75-day shutdown case study. Production-ready for Domain 2b or Domain 34 standalone.
 
 2. **Stockbot: Engine Status Assessment** (Pre-Market Prep)
    - **Current status**: Engine not running; will wake at 13:15 UTC (market-aware sleep configured)
