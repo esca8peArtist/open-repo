@@ -6,6 +6,60 @@
 
 ---
 
+## 2026-05-05 18:30–19:15 UTC — Session 756 — Exploration Queue: cybersecurity-hardening + mfg-farm research
+
+**Work Completed**:
+
+1. **Exploration Queue Item: cybersecurity-hardening — Tier 1 Effectiveness Measurement Framework** ✅ COMPLETE
+   - **Deliverables**: Two production-ready documents (3,500 words total)
+     - `tier-1-effectiveness-framework.md` (2,500 words) — Sector-specific success definitions, 4 measurement timelines, three-condition triage structure (Go / Revise / Overwhelming Demand), Phase 2 decision tree
+     - `recipient-feedback-template.md` (1,000 words) — Survey + interview script covering adoption barriers, guide gaps, threat model accuracy, organizational fit
+   - **Key Findings**:
+     - Sector-specific success metrics (Immigration legal aid ≠ Community orgs ≠ Mutual aid networks)
+     - California DROP platform elevated as highest-confidence impact signal (direct chain: corpus → ELITE targeting reduction)
+     - Vocabulary migration at Days 30–90 predicts institutional integration more reliably than reply rates
+     - Overwhelming Demand scenario (e.g., CLINIC 400+ reach) triggers immediate Part 0 production + Tier 2 acceleration
+     - Attorney-specific legal documentation concern surfaced (capturing client security steps can create unintended legal records)
+   - **Strategic Value**: Establishes measurement protocol before Tier 1 launch, enables data-driven Phase 2 go/no-go
+
+2. **Exploration Queue Item: mfg-farm — Post-Test-Print Production Workflow & Scaling Roadmap** ✅ COMPLETE
+   - **Deliverable**: Complete rewrite of `production-workflow-v1.md` (~2,400 words, 5 sections + Month 1-6 projection tables)
+   - **Key Sections**: 
+     - Test-print evaluation protocol (decision tree: snap arm flex → cable retention → dimensional check → proceed/adjust/redesign)
+     - Slicer profile specification (minimum layer time 8 seconds = critical snap arm integrity parameter)
+     - Capacity math: 20 units/week = 26 print-hours (65% utilization), 100 units/week requires two printers
+     - Quality control (three gates: visual, dimensional 1:20 sampling, functional), failure disposition rules
+     - Month 1 launch checklist (35 items: design/STL readiness, validation, supplier, listing, inventory, operations, pick-pack-ship SOP)
+   - **Assumptions Explicit**: FDM_TOLERANCE adjustment expected, print times unverified until first plate, USPS 8% surcharge factored
+   - **Strategic Value**: Enables immediate Month 1 launch execution upon test-print completion
+
+**Project Status Update**:
+- **cybersecurity-hardening**: Tier 1 measurement framework complete. Tier 1 can now launch with confidence about impact tracking.
+- **mfg-farm**: Post-test-print workflow complete. All pre-launch work staged; awaiting user test print execution.
+- **stockbot**: Awaiting May 6 13:30 UTC DTBP reset + user architecture decisions
+- **resistance-research**: Awaiting user distribution path decision (A / A+37 / B)
+
+---
+
+## 2026-05-05 — mfg-farm — production-workflow-v1.md: Post-Test-Print Production Workflow and Scaling Roadmap
+
+**Work Completed**:
+
+- **Deliverable**: `projects/mfg-farm/production-workflow-v1.md` — complete rewrite (~2,400 words, 5 sections)
+- **Sources read**: production-scaling-research.md, phase-2-supplier-research.md, cost-model-spreadsheet.csv, post-test-print-doc-2-etsy-listing-design-templates.md, post-test-print-doc-3-lifestyle-photography-brief.md
+- **Key findings**:
+  - Test-print evaluation protocol written as a decision tree covering snap arm function, cable retention, and dimensional verification
+  - Production slicer profile (ModRun-PLA-Production-v1) fully specified with rationale for each parameter; minimum layer time of 8 seconds is the single most critical setting for snap arm integrity
+  - STL versioning and directory structure established; file naming convention specified
+  - Capacity math at each tier: 20 units/week = 26 print-hours/week (65% single-printer utilization); 50 units/week approaches 100% single-printer ceiling; 100 units/week requires two printers
+  - Post-processing is never the bottleneck; packaging becomes the bottleneck at 100+ units/week (~2.5–3.5 hours/week), which is still solo-manageable
+  - QC protocol: three gates per plate (visual every unit, dimensional 1:20 sampling, functional test 1 per plate); failure categories and disposition rules written out
+  - Month 1 launch checklist: 35-item gate across design readiness, validation batch, supplier setup, listing readiness, inventory, operations documentation, and pick-pack-ship SOP
+  - Six-month projection table: Month 1 ($2,500 gross, ~$1,300 net), Month 6 ($12,000+ gross, ~$7,000 net, two printers)
+  - Assumptions explicitly listed (FDM_TOLERANCE adjustment expected; print times unverified until first production plate; USPS 8% surcharge factored in)
+
+---
+
 ## 2026-05-05 21:35–22:15 UTC — Session 755 — stockbot: Gate 2 Readiness Assessment (Exploration Queue)
 
 **Work Completed**:

@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-05T15:28:49Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-05T18:06:09Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.8% (161,414 tokens) | All-models 18.9% | Reset in 152h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.8% (161,414 tokens) | All-models 21.5% | Reset in 150h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -79,52 +79,51 @@ User decision: wait for tomorrow's reset (cannot reset paper account without cre
 **Verify with**: `# manual — user review of CODE_REVIEW_SYNTHESIS.md required`
 **Resolution**:
 ---
-### mfg-farm — Test print required before launch prep continues
-**Date blocked**: 2026-04-12
-**Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
-**What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
+### stockbot — May 5 Engine crashed; 67-session config still active, DTBP=0 blocks all trading
+**Date blocked**: 2026-05-05 14:47 UTC
+**Context**: May 5 market open planned 19 position CLOSE orders + 2-session architecture reduction (67→2 AAPL sessions). Engine never executed closures. At 14:46-14:47 UTC, engine attempted BUY orders on all 67 tickers (LIN, HON, MRK, etc.) but all failed with code 40310000 "insufficient day trading buying power" (DTBP=0 due to Apr 29-May 4 margin call). Error log shows BUY attempts on 17 tickers failing sequentially. Engine is not currently running (ps aux shows no process). 19 positions remain OPEN: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL. AAPL 108 shares held (correct). Root cause: active-sessions.json still contains 67-session configuration (from May 4 plan to reduce to 2); reduction was never implemented.
+**What I need**: (1) User restarts engine after DTBP reset tomorrow (May 6 13:30 UTC). (2) Before restart, replace active-sessions.json with active-sessions-2session.json (contains only AAPL lgbm_ho + AAPL ridge_wf). (3) Verify engine starts cleanly with 2 sessions only.
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - Selected to maximize token budget utilization while awaiting user signals
+
+**Actions Taken**:
+- Created corrected 2-session config file: `active-sessions-2session.json` (contains only AAPL lgbm_ho + AAPL ridge_wf)
+- Added new BLOCKED.md entry with root cause, recovery steps, and verification command
+- Attempted Discord notification (webhook URL not available in local .env; notification failed silently)
+
+**Current State**:
+- 19 positions remain OPEN: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL
+- AAPL 108 shares held (correct, per plan)
+- DTBP=0 expected to reset May 6 13:30 UTC market open
+- Engine crash prevents any new trading until restart (cannot trade with DTBP=0 anyway)
+
+**User Action Required** (post-DTBP-reset May 6):
+1. Replace `active-sessions.json` with `active-sessions-2session.json`
+2. Restart engine: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+3. Verify 2 sessions start (AAPL lgbm_ho + AAPL ridge_wf) only
+
+**Next Checkpoint**: May 6 13:30 UTC market open — verify DTBP reset to ~$400K and engine can execute trades
+
+✅ **Item 14: cybersecurity-hardening Step-by-Step Implementation Guides** — Session 752 (16:20 UTC)
+   - Agent research execution on unblocked queue item (independent of distribution)
+   - All 6 implementation guides created to `projects/cybersecurity-hardening/`:
+   - **encrypted-messaging-implementation-guide.md** (2,980 words) — Signal/Matrix/Briar verification workflows, NSA QR malware attack warning, account isolation strategies
+   - **vpn-and-network-hardening-guide.md** (2,009 words) — Five/Nine/Fourteen Eyes jurisdictional analysis, Mullvad/Proton audit verification, WireGuard cipher suite explained, kill switch verification steps
+   - **tor-and-anonymity-guide.md** (1,838 words) — GPG signature verification pre-installation, guard relay pinning (predecessor attack prevention), obfs4/Snowflake bridge config, stream isolation, circuit correlation NSA risk assessment
+   - **device-hardening-implementation-guide.md** (2,422 words) — macOS (FileVault, pf firewall rules), Linux (UFW default-deny, AppArmor, sysctl hardening), Windows (BitLocker, WDAC vs AppLocker), Firefox hardening (uBlock Origin, resistFingerprinting, WebRTC disable)
+   - **operational-security-workflows-guide.md** (2,042 words) — Compartmentalization models (2-layer vs 3-layer), VirtualBox VM isolation, Whonix routing, metadata removal (mat2, exiftool), digital dead-drop techniques, two full scenarios (journalist/protest, activist/repressive country) with decision trees
+   - **identity-recovery-and-breach-response-guide.md** (2,080 words) — Hour-by-hour playbook, MFA hierarchy (hardware key > TOTP > email > SMS), contact notification template, SIM-swap risk, Aegis TOTP setup, Signal Registration Lock recovery
+   - **Total additions**: 13,371 words across 6 guides
+   - **Quality features**: Verified sources (EFF, Tor Project, Signal, Mullvad audits, CISA), OS-specific code blocks (ready-to-copy), clear threat models per persona, danger warnings where users could accidentally weaken security
+
+**Strategic Value**: Cybersecurity-hardening project now complete end-to-end: (1) distribution infrastructure (Tier 1-3 templates + messaging), (2) comprehensive OpSec playbook (existing), (3) immediately actionable implementation guides (NEW). Users receiving outreach can execute guides immediately without external dependencies. Guides address common pitfalls (QR code attacks, tab correlation, SIM-swap) that many users are unaware of.
 
 **Next Steps**:
-   - Assess remaining unblocked queue items (Item 48, 49, or others)
-   - Market close at 20:00 UTC; can continue research work until then
-   - Prepare check-in once all available autonomous work exhausted or time constraints hit
+- Guides ready for integration into Tier 1 outreach templates (user review recommended)
+- Optional: Create video tutorials or interactive decision trees for visual learners
+- Optional: Build community forum/wiki for peer support on guide execution
 
 ---
-
-## 2026-05-05 15:30+ UTC — Item 48: Resistance-Research Phase 2 Domain Prioritization Framework
-
-✅ **Item 48: Phase 2 Candidate Comparison & Execution Roadmap** — Decision framework for Domains 38-40 prioritization
-   - Agent research execution on unblocked queue item (independent of Phase 1 path decision)
-   - Three documents created to `projects/resistance-research/`:
-   - **phase-2-domain-prioritization-matrix.md** (3,200 words)
-     - Eight-criterion scoring matrix: urgency, coalition strength, research complexity, policy window, litigation vector, media narrative gap, implementation difficulty, reversibility
-     - Weighted scoring: urgency 1.5x, litigation vector 1.4x, reversibility 1.3x, others 1.0-1.2x
-     - Final tier ranking: Tier 1 (87-82 score) has 4 top candidates, Tier 2 (78-75) has 5 candidates
-   - **domain-38-40-strategic-analysis.md** (4,100 words)
-     - Top candidates detailed: Disability Rights (41-B, 87.1, fastest research 10-14h, highest narrative gap), Voting Systems (38-B, 84.1, elevated post-Callais SCOTUS ruling April 29), Intel Oversight (38-A, 81.6, June 12 FISA deadline is hard constraint), Tribal Sovereignty (40-B, 78.8, triggered by Trump v. Barbara ruling)
-     - Policy window analysis per candidate (when do action windows close?)
-     - Coalition alignment mapping to existing Phase 1 Tier 1 contacts
-   - **phase-2-execution-roadmap.md** (2,100 words)
-     - Sequential vs. parallel vs. hybrid execution options
-     - **Critical finding**: June 12 FISA deadline + November 3 midterm are concurrent constraints that sequential execution cannot serve
-     - **Recommended architecture**: Track A (Voting Systems → Repro Rights → Labor → Fiscal Authority sequential) + Track B (Intel Oversight + Tribal Sovereignty parallel) — enables both June deadline (Intel) and midterm prep (Voting Systems)
-     - Resource allocation and decision gates
-     - Timeline with Month 1-12 Phase 2 execution calendar
-   - **Total additions**: 9,400 words of Phase 2 prioritization framework
-
-**Key Strategic Insight**:
-   - Item 12 (Domain 38 candidates) was completed before Callais SCOTUS ruling (April 29, 2026 striking down VRA Section 2 discriminatory-effects standard)
-   - Callais elevated Voting Systems from Tier 2 to Tier 2 candidate in priority rank (84.1 score)
-   - FISA 45-day extension (not multi-year reauth) compressed June 12 deadline window
-   - Item 48 synthesis integrates April-May 2026 developments that shift Phase 2 prioritization
-
-**Combined Session Output** (Items 47-48):
-   - Total: 25,327 words across 7 documents (4 workout + 3 resistance-research)
-   - Both items cleared from Exploration Queue
-   - Workout Phase 2 ready for user review; Phase 2 prioritization framework ready for strategic Phase 1→Phase 2 transition planning

@@ -1,3 +1,41 @@
+## Since Last Check-in (Session 756 — 2026-05-05 18:30–19:15 UTC) — Exploration Queue: 2 Items Complete
+
+### ✅ SESSION 756 COMPLETE — Two exploration queue items researched and completed. Cybersecurity-hardening measurement framework + mfg-farm scaling roadmap staged for user execution.
+
+**Work Accomplished**:
+
+1. **Exploration Queue Item: cybersecurity-hardening — Tier 1 Effectiveness Measurement & Phase 2 Trigger Design** ✅ COMPLETE
+   - **Deliverables**: Two production-ready documents
+     - `tier-1-effectiveness-framework.md` (2,500 words) — Sector-specific success definitions, measurement timeline (Days 0–180), three-condition triage (Go / Revise / Overwhelming Demand), Phase 2 decision tree
+     - `recipient-feedback-template.md` (1,000 words) — Survey + interview script for adoption barriers, guide gaps, threat model validation
+   - **Key Findings**:
+     - Sector-specific metrics: Immigration legal aid adopts differently than community orgs vs. mutual aid networks
+     - California DROP platform = highest-confidence impact signal (direct chain: corpus distributed → individual protection in ELITE database)
+     - Vocabulary migration at Days 30–90 predicts institutional integration better than reply rates
+     - Overwhelming Demand scenario: if CLINIC (400+ affiliates) adopts, triggers Part 0 production + Tier 2 acceleration
+   - **Strategic Value**: Measurement infrastructure ready before Tier 1 launch. Enables data-driven Phase 2 decisions.
+
+2. **Exploration Queue Item: mfg-farm — Post-Test-Print Production Workflow & Scaling Roadmap** ✅ COMPLETE
+   - **Deliverable**: Complete `production-workflow-v1.md` rewrite (~2,400 words)
+   - **Sections**: Test-print evaluation protocol (snap arm flex → cable retention → dimensional check decision tree), slicer profile specification (minimum layer time 8 sec = critical parameter), capacity math (20 units/week = 65% utilization; 100+ units requires 2 printers), QC protocol (3-gate system with failure disposition), Month 1 launch checklist (35 items)
+   - **Strategic Value**: All post-test-print workflows documented. Month 1 launch ready upon test-print completion.
+
+**Project Status Snapshot**:
+- **cybersecurity-hardening**: Tier 1 ready for user execution; measurement framework complete
+- **mfg-farm**: Pre-launch work complete; awaiting user test print (all workflows staged)
+- **stockbot**: Awaiting May 6 13:30 UTC DTBP reset + architecture decisions (user input)
+- **resistance-research**: Awaiting distribution path decision A / A+37 / B
+
+**Items Needing Your Input**:
+1. **May 6 13:30 UTC — CRITICAL**: Verify Alpaca DTBP resets to ~$400K; restart engine with 2-session config
+2. **resistance-research**: Distribution path decision (A / A+37 / B) → unlocks Phase 1 execution
+3. **mfg-farm**: Test print execution (all post-print workflows documented and ready)
+4. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md and confirm ARCH-1 through ARCH-7 directions
+
+**Token Usage**: Session 756 used ~128K tokens (agent research) across parallel execution
+
+---
+
 ## Since Last Check-in (Session 755 — 2026-05-05 21:35–22:15 UTC) — stockbot Gate 2 Readiness Assessment Complete
 
 ### ✅ SESSION 755 COMPLETE — Exploration queue item (stockbot Gate 2 readiness assessment) completed. May 12 checkpoint preparation framework ready. Exploration queue refreshed with 3 new items.
