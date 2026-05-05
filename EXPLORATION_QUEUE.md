@@ -266,14 +266,20 @@
 
 ## Priority for Next Session
 
-**Highest Priority**: Item 4 (mfg-farm supplier negotiation) — blocked on user test print, ready to execute immediately upon signal
-**Second Priority**: Item 6 (resistance-research Tier 1 distribution) — blocked on user distribution decision, ready to execute immediately upon signal
-**Third Priority**: Item 5 (open-repo Phase 5 Architecture) — blocked on PR #1 merge, ready to execute immediately upon signal
-**Fourth Priority**: Item 11 (seedwarden Phase 3 strategy) — queued for Phase 1 launch trigger
-**Fifth Priority**: Item 12 (stockbot HMM validation) — queued for Gate 1 checkpoint trigger
-**Sixth Priority**: Item 26 (stockbot momentum trader) — queued for Gate 1 trigger
-**Seventh Priority**: Item 27 (cybersecurity regional adaptation) — queued for Tier 1 rollout trigger
-**Eighth Priority**: Item 28 (resistance-research tracker automation) — queued for Phase 1 launch trigger
+**ACTIVE NOW (Session 729)**:
+**Highest Priority**: Item 36 (stockbot Jetson deployment documentation) — no external dependencies, market-day window available (9h 46m until 13:30 UTC open)
+**Second Priority**: Item 37 (mfg-farm post-test-print pre-staging) — no external dependencies, enables rapid execution upon test print signal
+**Third Priority**: Item 38 (resistance-research tracker automation design) — no external dependencies, pre-work for Phase 1 post-launch expansion
+
+**BLOCKED ON USER SIGNALS**:
+**Item 4**: mfg-farm supplier negotiation — blocked on user test print, ready to execute immediately upon signal
+**Item 6**: resistance-research Tier 1 distribution — blocked on user distribution decision, ready to execute immediately upon signal
+**Item 5**: open-repo Phase 5 Architecture — blocked on PR #1 merge, ready to execute immediately upon signal
+**Item 11**: seedwarden Phase 3 strategy — queued for Phase 1 launch trigger
+**Item 12**: stockbot HMM validation — queued for Gate 1 checkpoint trigger
+**Item 26**: stockbot momentum trader — queued for Gate 1 trigger
+**Item 27**: cybersecurity regional adaptation — queued for Tier 1 rollout trigger
+**Item 28**: resistance-research tracker automation — queued for Phase 1 launch trigger
 
 ---
 
@@ -622,6 +628,57 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 - ✅ `regional-compliance-matrix.md` (4,339 words) — Which recommendations conflict with local law, which amplified per jurisdiction, regulatory evolution tracking
 - ✅ `international-distribution-roadmap.md` (3,173 words) — Secondary language priorities, institutional partners per region, translation resourcing
 **Outcome**: Production-ready for immediate Tier 2 execution once Tier 1 approval is given. Institutional partnership approach prioritized over translation-first strategy.
+
+---
+
+## New Items (Session 729 — 2026-05-05 Autonomous Queueing)
+
+### Item 36: stockbot Jetson Deployment Documentation & Production Hardening (Session 729)
+**Status**: ACTIVE — Ready to execute
+**Trigger**: Current session (market day readiness + pre-market window available)
+**Scope**: Document Jetson deployment architecture, health monitoring procedures, graceful shutdown/restart protocols, auto-recovery strategies, performance optimization for Raspberry Pi/Jetson hardware
+**Deliverables**:
+- `jetson-deployment-guide.md` (3,000+ words) — Container setup, volume mounts, network config, port exposure, auto-restart policy, systemd service definition
+- `jetson-health-monitoring.md` (2,000 words) — Pre-market health check procedures (exact curl commands, success criteria), in-market monitoring cadence, alert triggers, escalation procedures
+- `jetson-emergency-procedures.md` (1,500 words) — Graceful shutdown, force stop, container restart, engine restart from backup state, manual fallback (Pi-local engine launch)
+- `performance-optimization-checklist.md` (1,000 words) — Docker resource limits, memory tuning, CPU pinning, log rotation, disk usage monitoring, Jetson-specific constraints
+**Rationale**: Engine is currently running in production (2-session Jetson deployment), but deployment documentation is sparse. Pre-market window (now through 13:15 UTC) is ideal for codifying deployment procedures while engine is healthy. This would strengthen operational readiness and enable faster troubleshooting if issues arise post-Gate-1-checkpoint.
+**Owner**: stockbot agent (autonomous execution, estimated 2-3 hours documentation + research)
+**Prerequisites**: None (can execute independently)
+**Timeline**: Complete before Gate 1 checkpoint (May 12) to ensure deployment procedures are documented for long-term operations
+
+---
+
+### Item 37: mfg-farm Post-Test-Print Action Checklist & Supplier Outreach Pre-Staging (Session 729)
+**Status**: ACTIVE — Ready to execute (no dependencies on test print itself)
+**Trigger**: Current session (pre-work that enables rapid execution once user confirms test print success)
+**Scope**: Pre-stage all post-test-print actions: supplier negotiation email templates, Etsy listing design templates, photographer brief for lifestyle photography, first-week operations playbook, customer service templates
+**Deliverables**:
+- `supplier-negotiation-email-templates.md` (2,500 words) — 5 negotiation templates (volume pricing, payment terms, lead time negotiation, quality agreements, repeat order incentives) with fill-in variables
+- `etsy-listing-design-templates.md` (1,500 words) — Listing structure with optimization for search ranking, photo positioning, shipping cost calculator, review request templates, FAQ section template
+- `lifestyle-photography-brief.md` (1,000 words) — Photographer direction (lighting, angles, props, color grading), shot list (12–15 hero shots), usage rights agreement
+- `first-week-operations-sop.md` (updated from existing, 1,500 words) — Daily fulfillment procedures, QC checklist, customer communication templates, performance tracking dashboard
+- `supplier-contact-matrix.md` (spreadsheet) — Pre-filled with top 5 suppliers from Session 544, negotiation status, pricing quotes, lead time windows, backup suppliers
+**Rationale**: Test print is user action (cannot predict completion date), but all downstream work is preparation that doesn't depend on print outcome. Once user confirms print success, orchestrator can immediately execute supplier negotiation → listing creation → photographer outreach in parallel. This pre-staging cuts 2-3 days of orchestrator work, enabling faster market entry.
+**Owner**: mfg-farm agent (autonomous execution, estimated 2-3 hours documentation)
+**Prerequisites**: Session 544 supplier research complete (✓), Session 697 cost modeling complete (✓)
+**Timeline**: Complete before likely test print completion date (estimated 1–4 weeks post-approval)
+
+---
+
+### Item 38: resistance-research Post-Phase-1-Launch Tracker Automation Design (Session 729)
+**Status**: ACTIVE — Ready to execute (no dependencies on Phase 1 launch itself)
+**Trigger**: Current session (design work that doesn't require Phase 1 to be live)
+**Scope**: Research and design tracker automation infrastructure for four existing trackers (first-amendment, environmental-rollbacks, police-brutality, prosecutorial-weaponization). Scope: FOIA automation pipelines, news API ingestion, data validation, dashboard mockups, maintenance playbook.
+**Deliverables**:
+- `tracker-data-source-audit.md` (3,500 words) — Each of 4 trackers: identify 5+ new automated sources (PACER API for DOJ litigation, news APIs for policy changes, FOIA request portals, agency regulatory feeds); assess legal feasibility and cost
+- `tracker-automation-architecture.md` (3,000 words) — Design: which updates can be automated without legal/ethical constraints; event-driven triggers; data freshness SLAs; manual validation checkpoints
+- `tracker-dashboard-mockups.md` (2,000 words) — Visual design for embedding in proposal or institutional briefings; interactive vs. static options; data export formats for partners
+- `tracker-maintenance-playbook.md` (2,000 words) — Weekly/daily update cadence per tracker; role definitions (user manual review vs. automated); escalation procedures; false positive rates
+**Rationale**: Item 13 (post-Phase-1-distribution tracker infrastructure) is conditional on Phase 1 launch. But tracker design automation is preparation work that can begin now. Once Phase 1 is live and generating early engagement, tracker automation would significantly increase framework utility and create feedback loops for institutional partners.
+**Owner**: resistance-research agent (autonomous execution, estimated 3-4 hours research)
+**Prerequisites**: Existing 4 trackers complete and current (✓); Phase 1 distribution infrastructure complete (✓); no external dependencies
+**Timeline**: Complete within 2 weeks post-Phase-1-launch to enable rapid integration and early institutional partner benefit
 
 ---
 

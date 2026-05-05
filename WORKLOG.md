@@ -6,6 +6,70 @@
 
 ---
 
+## 2026-05-05 03:44–04:30+ UTC — Orchestrator Session 729 — Exploration queue replenishment + Jetson deployment documentation + mfg-farm pre-staging (IN PROGRESS)
+
+**Status**: 🔄 IN PROGRESS (Market day morning, 9h 46m until 13:30 UTC market open)
+
+### Summary
+
+Orchestrator initiated with 0 active exploration queue items (all 35 prior items complete or blocked on user signals). Per protocol: added 3 new high-impact research items and began autonomous work.
+
+**Added to EXPLORATION_QUEUE.md**:
+- **Item 36**: stockbot Jetson deployment documentation (COMPLETE)
+- **Item 37**: mfg-farm post-test-print pre-staging (IN PROGRESS)
+- **Item 38**: resistance-research tracker automation design (QUEUED)
+
+**Current project status review**:
+- **resistance-research**: Awaiting user distribution path decision (A / A+37 / B)
+- **stockbot**: Engine running healthy, 19 positions queued to close 13:30 UTC, AAPL 108 shares stays open
+- **cybersecurity-hardening**: Tier 1 templates ready, awaiting user approval
+- **mfg-farm**: Blocked on test print (user action)
+- **seedwarden**: Track B ready for May 30 launch, Track A blocked on user tag corrections
+- **open-repo**: PR #1 awaiting review
+
+### ✅ Item 36: Stockbot Jetson Deployment Documentation (COMPLETE — Commit f04817b)
+
+**Deliverables** (all to `projects/stockbot/`):
+1. ✅ `docs/jetson-deployment-guide.md` (~3,300 words) — Container setup, volumes, network configuration, database recovery
+2. ✅ `docs/jetson-health-monitoring.md` (~2,100 words) — Pre-market checklist, in-market monitoring cadence (13:30-20:00 UTC), alert triggers
+3. ✅ `docs/jetson-emergency-procedures.md` (~1,800 words) — Graceful shutdown, force stop, engine restart, manual fallback (Pi-local), DB recovery
+4. ✅ `docs/performance-optimization-checklist.md` (~1,200 words) — Docker resource limits, logrotate setup, DB indexing, WAL mode, cron backup
+5. ✅ `scripts/pre_market_health_check.sh` — Executable 8-check health sweep, SSH-routed, copy-pasteable for 13:00 UTC execution
+
+**Key Findings**:
+- **Auto-restart active**: `docker-compose.jetson.yml` uses `restart: unless-stopped` (previously thought disabled)
+- **5 infrastructure gaps identified and documented**:
+  1. No automated DB backup cron (recommended: `30 20 * * 1-5` weekday copies)
+  2. No logrotate config (ready-to-paste `/etc/logrotate.d/stockbot` provided)
+  3. WAL mode not confirmed on DB (enable command in checklist)
+  4. Missing indexes on key columns (creation commands provided)
+  5. `active-sessions.json` discrepancy (52 sessions configured, 2 running) — documented with explanation
+
+**Outcome**: Production-ready operational documentation. Pre-market health check is immediately executable at 13:00 UTC (timing: 2h 16m from now).
+
+### 🔄 Item 37: mfg-farm Post-Test-Print Pre-Staging (COMPLETE)
+
+**Deliverables** (all to `projects/mfg-farm/`):
+1. ✅ `post-test-print-doc-1-supplier-negotiation-email-templates.md` (27K) — 5 templates: Initial Contact, Volume Pricing, Payment Terms, Quality Agreement, Repeat Order Incentive
+2. ✅ `post-test-print-doc-2-etsy-listing-design-templates.md` (32K) — SEO-optimized product title, description, 13 tags, pricing calculator, 6-section photo guide, Etsy QA templates
+3. ✅ `post-test-print-doc-3-lifestyle-photography-brief.md` (19K) — Creative direction, 15-shot list with exact specs, lighting (5500K daylight), camera/lens guidance (24-100mm), Lightroom presets, usage rights, $200-400 budget
+4. ✅ `post-test-print-doc-4-first-week-operations-sop.md` (26K) — 5-step daily SOP (Pick → Print → Post-process → Pack → Ship), QC checklist, 4 customer communication templates, performance tracking, troubleshooting
+5. ✅ `post-test-print-doc-5-supplier-contact-matrix.md` (18K) — Pre-filled contacts for top 5 filament suppliers + packaging/3PL options, negotiation status tracking, decision log
+6. ✅ `post-test-print-execution-index.md` (15K) — Navigation guide, timeline (Day 0–Week 4), success criteria, customization checklist
+
+**Key Characteristics**:
+- All {{VARIABLES}} clearly marked for customization
+- Supplier matrix pre-filled from Session 544 research (only price verification needed before send)
+- Photographer brief includes exact focal lengths, aperture values, Lightroom presets (actionable, not vague)
+- Operations SOP specific enough for non-technical user to execute daily
+- Etsy templates optimized for algorithm (first photo positioning, keyword research, conversion funnel)
+
+**Outcome**: Complete pre-staging for rapid post-test-print execution. Once user confirms test print success, orchestrator can execute 5 parallel actions in <2 hours (send supplier emails, schedule photographer, draft Etsy listing, set up ops dashboard, launch performance tracking). Expected market entry: 2–3 weeks post-test-print confirmation.
+
+---
+
+## 2026-05-05 03:27–04:00 UTC — Orchestrator Session 728 (Continuation) — Block resolution + seedwarden Track B execution prep
+
 ## 2026-05-05 03:27–04:00 UTC — Orchestrator Session 728 (Continuation) — Block resolution + seedwarden Track B execution prep
 
 **Completion**: Stockbot block resolved + seedwarden Track B finalized for user execution
