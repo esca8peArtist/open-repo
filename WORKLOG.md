@@ -23240,3 +23240,13 @@ May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
 - Prepare market open monitoring at 13:30 UTC
 
 **Session work complete** (code refactored, engine restarted, ready for market event)
+
+**Market Monitoring Status** (12:32 UTC):
+- ✅ Engine running (PID 177133, verified at 12:32 UTC)
+- ✅ Log file last updated at 12:39 UTC (all 52 sessions initialized, sleeping until 13:15 UTC)
+- ⏳ **Scheduled Events**:
+  - **13:15 UTC** (~43 min): Engine wake-up (sessions begin trading 15 min before market open)
+  - **13:30 UTC** (~58 min): US market open — execute 19 non-AAPL position close orders (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL)
+  - **13:45 UTC**: Verify close orders posted to database with realized P&L
+  - **20:00 UTC**: Post-market analysis — query May 5 fills, assess Gate 1b trajectory
+
