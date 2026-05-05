@@ -1,3 +1,75 @@
+## Since Last Check-in (Session 778 — 2026-05-05 23:30–2026-05-06 02:15 UTC) — Exploration Queue Deepening: Stockbot Recovery + Resistance-Research Baseline Metrics + Mfg-Farm Operations
+
+### ✅ SESSION 778 COMPLETE — Executed 3 parallel exploration queue research tasks (stockbot Gate 1 recovery deep analysis + resistance-research Phase 1 baseline metrics + mfg-farm 100-unit operations design). All production-ready, awaiting post-May-12 and post-test-print execution windows.
+
+**Work Accomplished**:
+
+1. **✅ Exploration Item: Stockbot Gate 1 Failure Recovery Roadmap (Deep Analysis)** (PARALLEL AGENT)
+   - **Deliverable**: `projects/stockbot/research/gate-1-recovery-deep-analysis.md` (5,206 words, extended analysis)
+   - **Key Findings**:
+     - Signal frequency is the binding constraint, not liquidity (AAPL generates 0.34 round trips/month, 15x short of 5-target)
+     - SPY/QQQ microstructure comparison: QQQ matches lgbm_ho design better than SPY (daily vol 1.20-1.50% vs. AAPL 1.10-1.30% sweet spot)
+     - Threshold sensitivity: reducing multiplier from 0.50 to 0.40 + increasing Ridge alpha increases signals 40-80% without retraining
+     - Multi-ticker expansion fast-path: 4-6 hours to train MSFT+GOOGL+SPY+QQQ (8 sessions) and deploy (90s/stacker batch training proven)
+     - Four-scenario decision tree (C1 timing → C2 hyperparameter tuning → C3 multi-ticker expansion → C4 regime detection)
+     - Pass probability improvements: AAPL-only 45-80%, AAPL+MSFT+QQQ 80-95%, threshold-tuned 82-88%, full expansion 85-92%
+   - **Critical Dependencies**: Validate SELL execution path May 13 (h+10 from April 29 entry) before expanding tickers
+   - **Business Value**: Eliminates May 12 post-analysis decision paralysis; enables immediate recovery execution if Gate 1 fails; all scenarios pre-analyzed with timelines
+   - **Status**: Production-ready, ready for May 12 post-analysis execution
+
+2. **✅ Exploration Item: Resistance-Research Phase 1 Baseline Metrics & Attribution Framework** (PARALLEL AGENT)
+   - **Deliverables**: 
+     - `projects/resistance-research/assessment/phase-1-baseline-metrics.md` (~1,700 words)
+     - `projects/resistance-research/assessment/attribution-measurement-plan.md` (~1,400 words)
+   - **Key Findings**:
+     - **Vocabulary Baseline**: Zero pre-distribution citations of framework-specific vocabulary cluster as of May 5. Six monthly Google Scholar queries with compound vocabulary establish clean attribution signals.
+     - **Institutional Contact Baseline**: Zero of 25 Tier 1 institutions have received materials. Industry benchmarks (Hunter.io 2025, GrowLeads 2026): 15-25% reply rate Batch 1, 3-8% Batches 3-5. Attribution success = exceeding baselines.
+     - **Policy Outcome Baseline**: Domain-specific velocity counts (12-18 events/month for Domains 1/37, 4-6/month for others) establish pre-distribution momentum. Hard deadline domains (19f May 1, 25 June 12, 37 Nov 3) will spike regardless of framework, so attribution measures quality difference not volume.
+     - **Media Citation Baseline**: Three-category disaggregation — generic crisis (1k/month), framework-adjacent (40-145/month), framework-specific vocabulary (0/month). Post-distribution hits on zero baseline = unambiguous attribution.
+     - **Four-Test Attribution Structure**: Vocabulary markers (fast, scalable) + structural convergence (silent adoption) + timing-and-contact (causal backbone, requires contact log date-stamping) + counterfactual baseline (rigorous, requires control groups like Domains 20/4/22).
+     - **Sector-Specific Protocols**: AGs require two vocabulary markers in single filing; think tanks require one; law schools require name citation or two domain markers. Attribution thresholds calibrated per sector.
+     - **Time Windows**: 5-window structure maps to realistic adoption timelines. Window 3-4 (weeks 3-6) is core attribution operation window. Window 5 is institutionalization signal.
+     - **Day 45 Decision Tree**: Pivot point for contingency adjustments (delivery vs. engagement vs. adoption failure modes differentiated by sector)
+   - **Business Value**: Enables rigorous pre-post Phase 1 measurement (prevents guessing on causation); supports post-Phase-1 iteration (data-driven Phase 2 decisions); establishes institutional evidence base for expanded distribution
+   - **Status**: Production-ready, ready for Day 0 Phase 1 launch operationalization
+
+3. **✅ Exploration Item: Mfg-Farm 100+ Units/Week Manufacturing Operations Design** (PARALLEL AGENT)
+   - **Deliverables**:
+     - `projects/mfg-farm/research/100-unit-operations-blueprint.md` (3,000 words)
+     - `projects/mfg-farm/research/scaling-transition-roadmap.md` (1,500 words)
+   - **Key Findings**:
+     - **Print Farm Architecture**: At 20 units/week one printer (Prusa MK4S) handles ~4-5 jobs sequenced. At 100+ units/week need 10-15 parallel printers or higher-throughput option (Creality K1 Max, Bambu Lab). Equipment decision depends on order mix (50/50 clip-rail mix requires 2 printers; 80/20 clip-heavy allows 1 printer).
+     - **Throughput Model**: Prusa MK4S at 50/50 mix: 20 units/week @ 23% util, 50 units/week @ 59% util, 100+ units/week requires 2nd printer. Fleet capital for 100 units/week: $1,398. Monthly net revenue at 100 units/week: ~$7,700. Contractor cost: ~$1,000/month.
+     - **Queue Management**: Batch-scheduling strategy (print 5 clips Mon-Tue, cool/post-process Wed, repeat for rails). Batch sizing models working capital vs. per-unit cost tradeoffs. Print failure tolerance budget: 98%+ first-pass success required.
+     - **Post-Processing Automation**: Manual support removal ($1.25/unit at $15/hr). Alternatives: ultrasonic bath ($1-5k capex), chemical post-processing, or CNC finishing. Cleaning/QA at scale: camera-based dimensional verification for 100+/week.
+     - **Labor Economics**: 20 units/week solo = $6/unit labor; 50 units/week 1 part-time = $4.80/unit; 100+ units/week = $6/unit (part-time 16h + full-time 40h). When does full-time become viable? At 80-100 units/week (~$3-5k/month revenue). Training cost for part-time: 4-8 hours.
+     - **Facility Scaling Roadmap**: Phase 0 test print gate with FDM_TOLERANCE calibration. Month 1-2: 20 units/week (single printer, home shop). Month 3-4: 50 units/week (add 2nd printer, hire part-time). Month 5-6: 100+ units/week (dedicated facility, 3-5 printers, 1 full-time). Year 2: multi-product portfolio (clips + rails + hooks + labels + markers) at 100+/week each = 500+ units/week facility.
+     - **Under-Capitalization is Named Failure Mode**: Existing research identified hardware capacity checkpoints; this adds the critical constraint: **do not buy equipment before demand is proven**. Every major hardware decision gates on Month 1-2 actual sales data.
+   - **Business Value**: Enables informed equipment decisions post-test-print; identifies hiring ROI breakpoints; supports facility/capital planning; prevents under-capitalization (common 3D print business failure); clarifies when multi-product portfolio makes sense (Year 2 vs. premature scaling)
+   - **Status**: Production-ready, ready for immediate post-test-print execution planning
+
+**Project Status Update**:
+- **stockbot**: Gate 1 recovery strategies complete. Awaiting May 12 checkpoint. If fails, recovery playbook is ready for immediate execution.
+- **resistance-research**: Phase 1 baseline metrics & attribution framework complete. Awaiting user distribution path decision (A/A+37/B). Upon Phase 1 launch (Day 0), these documents become operational (measurement system activation).
+- **mfg-farm**: 100-unit operations design complete. Test print is current blocker. Upon test print completion, operations planning can proceed immediately to Month 1 production launch.
+- All other projects: Unchanged (awaiting user decisions or May 6/May 12 events)
+
+**Items Still Needing Your Input**:
+1. **May 6 13:30 UTC**: Verify Alpaca DTBP resets; confirm config replacement (`active-sessions-2session.json` is ready to swap), and restart engine if DTBP > 0
+2. **resistance-research**: Decide distribution path (A / A+37 / B) → Phase 1 execution + baseline metrics activation
+3. **mfg-farm**: Execute test print → Month 1 production launch planning + operations implementation
+4. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md architecture decisions (ARCH-1 through ARCH-7) for guidance confirmation
+
+**Status Summary**: 
+- All exploration queue items with autonomous work completed (3 new items delivered)
+- System remains at maximum execution readiness pending 4 user decisions/external events
+- Next autonomous work window: May 12 (Gate 1 evaluation) or upon test print completion (mfg-farm operations)
+- Next meaningful time-gated events: May 6 13:30 UTC (DTBP reset), May 12 (Gate 1 checkpoint), May 19 (potential multi-ticker expansion)
+
+**Token Usage**: Session 778 used ~238K tokens (3 parallel research agents), total plan budget remains healthy.
+
+---
+
 ## Since Last Check-in (Session 777 — 2026-05-05 20:30–22:15 UTC) — Exploration Queue Research: Stockbot Multi-Asset + Resistance-Research Phase 2
 
 ### ✅ SESSION 777 COMPLETE — Executed 2 parallel exploration queue research tasks (stockbot multi-asset expansion + resistance-research Phase 2 distribution roadmap). Both production-ready, awaiting post-Gate-1 / post-Phase-1-decision execution windows.
