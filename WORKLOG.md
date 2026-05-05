@@ -6,6 +6,33 @@
 
 ---
 
+## 2026-05-05 — mfg-farm — 100-Unit Manufacturing Operations Design
+
+**Task**: Design the manufacturing operation at 100+ units/week scale for ModRun print farm.
+
+**Research conducted**:
+- Bambu P1S vs Prusa MK4S vs Creality K1 Max production comparison (2026 sources)
+- Printago pricing and Etsy integration confirmation (native Etsy sync; free tier 1 concurrent job; paid for concurrent scaling)
+- P1S power consumption correction: ~90W sustained average (not 200W as in older estimates) — negligible electricity cost
+- 3PL pricing: ShipMonk $2.50 pick + storage + $250/month minimum; Simpl Fulfillment ~$7/order flat; ShipBob $275/month minimum + $975 setup; all significantly more expensive than in-house at 100 units/week
+- Pirate Ship/Etsy API change: Etsy Oct 2024 API changes reduced third-party integration depth; ShipStation recommended at 75+ orders/week for full auto-sync
+- Ventilation: 6 ACH confirmed for multi-printer PLA+ workspaces (conservative spec is 8 ACH)
+- Filament bulk pricing confirmed: $11–14/kg for eSUN/SUNLU at 10kg bundles
+
+**Files created/updated**:
+- `projects/mfg-farm/research/100-unit-operations-blueprint.md` — expanded with new Section 6 (Fulfillment Scaling: 3PL vs in-house with actual ShipMonk/Simpl/ShipBob cost data); corrected P1S power draw and ventilation specs; updated sources (5,924 words)
+- `projects/mfg-farm/research/scaling-transition-roadmap.md` — added Supply Chain Scaling by Phase section (filament purchasing strategy by volume tier; shipping label workflow upgrade timing); updated sources (3,355 words)
+- `projects/mfg-farm/research/cost-model-spreadsheet-100unit.csv` — new file; rows = cost items (material, machine, labor, platform, facility, overhead); columns = 20/50/100/150/200 units/week; includes sensitivity scenarios, equipment payback table, and documented assumptions
+
+**Key findings**:
+1. 100 units/week on 2 Bambu P1S printers is viable; second printer trigger is 14+ hr/day for 2 consecutive weeks on printer 1
+2. 3PL is not cost-effective until volume forces a time trade-off; in-house saves $1,600–2,700/month vs any 3PL at 430 orders/month
+3. Gross margin at 100 units/week: ~60% (vs 66–68% at 20–50 units/week) due to facility and contractor costs; recovers to 65%+ at 200 units/week through scale
+4. P1S fleet with Bambu Farm Manager + Printago free tier is the correct software stack; avoid OctoPrint for Bambu
+5. ShipStation ($29.99/month) justified over Pirate Ship at 75+ orders/week due to Etsy auto-sync and automation rules
+
+---
+
 ## 2026-05-06 00:00+ UTC — Session 779 — Resistance-Research Phase 1 Block 3: Email Verification
 
 **Orientation & Assessment**:

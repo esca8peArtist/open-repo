@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-05T19:13:52Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-05T20:34:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.8% (161,414 tokens) | All-models 23.3% | Reset in 149h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 1.8% (161,414 tokens) | All-models 26.5% | Reset in 147h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -89,41 +89,41 @@ User decision: wait for tomorrow's reset (cannot reset paper account without cre
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
-**Actions Taken**:
-- Created corrected 2-session config file: `active-sessions-2session.json` (contains only AAPL lgbm_ho + AAPL ridge_wf)
-- Added new BLOCKED.md entry with root cause, recovery steps, and verification command
-- Attempted Discord notification (webhook URL not available in local .env; notification failed silently)
+✅ **Parallel Agent 1: Stockbot Multi-Asset Expansion Strategy Research** (COMPLETE)
+- **Task**: Research optimal multi-ticker expansion for post-Gate-1 scaling
+- **Deliverable**: `projects/stockbot/research/multi-asset-expansion-framework.md` (extended to ~7,500 words)
+- **Key findings**:
+  - Candidate tickers ranked: MSFT/GOOGL/SPY/QQQ/TLT with position sizing and correlation analysis
+  - Transfer learning methodology: Clone AAPL lgbm_ho for MSFT/GOOGL, use threshold-adjusted variants for SPY/QQQ, fresh configs for TLT/GLD
+  - Expected Sharpe degradation by ticker: MSFT 10–20%, GOOGL 13–29%, SPY 17–35%, TLT 40–67%
+  - Microstructure incompatibility detection: 4 observable patterns (PF<1.0, vol floor, loss streaks, zero importance)
+  - Signal disagreement handling: 4 cases with explicit behavior (divergent signals execute independently, logged for correlation review)
+  - **Earliest 2-ticker live paper trading**: May 19, 2026 (critical path: May 13-14 backtest → May 14-15 ARCH fixes → May 15-19 monitoring)
+- **Business value**: Informs post-Gate-1 expansion strategy; resolves transfer learning and signal coordination questions
+- **Status**: Production-ready, ready for May 12 Gate 1 decision
 
-**Current State**:
-- 19 positions remain OPEN: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL
-- AAPL 108 shares held (correct, per plan)
-- DTBP=0 expected to reset May 6 13:30 UTC market open
-- Engine crash prevents any new trading until restart (cannot trade with DTBP=0 anyway)
+✅ **Parallel Agent 2: Resistance-Research Phase 2 Distribution Roadmap** (COMPLETE)
+- **Task**: Research Phase 2 domain sequencing and distribution roadmap for post-Phase-1 launch
+- **Deliverable**: `projects/resistance-research/phase-2-distribution-roadmap.md` (~2,700 words) + supporting analysis files
+- **Key findings**:
+  - Phase 2 domains (38–41) with composite prioritization scoring
+  - **Track A (calendar-forced)**: 38-A FISA (June 12 hard deadline), 38-B Voting post-Callais (November 3), 40-B Tribal Sovereignty (Trump v. Barbara SCOTUS ruling window)
+  - **Track B (feedback-gated)**: 41-B Disability rights (highest composite score 87.1), 39-A/39-B Reproductive/Labor, 40-C Fiscal authority, 40-A Constitutional architecture
+  - **Data-driven adoption gates**:
+    - Gate 1 (Day 7): Tier 1 open rate signal (40%+ proceed, <25% diagnose)
+    - Gate 2 (Day 14): Reply rate signal (3%+ proceed, <1% test variants)
+    - Gate 3 (Week 6): Aggregate Phase 1 feedback; assign Track B priorities
+    - Hard backstop: All Track B domains proceed by August 1, 2026 regardless of Phase 1 adoption
+  - **Phase 1→Phase 2 messaging differences**: Social proof (cite Phase 1 adoptions), domain-specific (single domain vs. framework), time-stamped urgency (name external deadline)
+  - **Coalition continuity**: 10 specific Phase 1 contacts mapped to Phase 2 domain assignments; low fragmentation risk with sector-specific distribution
+  - **Contingency protocols**: 5 scenarios (A: strong adoption, B: moderate, C: stalled, D: hard trigger fires, E: capacity constrained) with explicit escalation actions
+  - **Implementation timeline**: 8 data-driven gates through November 3 midterm lock
+- **Business value**: Enables seamless Phase 1→Phase 2 transition once user selects distribution path (A/A+37/B)
+- **Status**: Production-ready, ready for Phase 1 launch decision
 
-**User Action Required** (post-DTBP-reset May 6):
-1. Replace `active-sessions.json` with `active-sessions-2session.json`
-2. Restart engine: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
-3. Verify 2 sessions start (AAPL lgbm_ho + AAPL ridge_wf) only
-
-**Next Checkpoint**: May 6 13:30 UTC market open — verify DTBP reset to ~$400K and engine can execute trades
-
-✅ **Item 14: cybersecurity-hardening Step-by-Step Implementation Guides** — Session 752 (16:20 UTC)
-   - Agent research execution on unblocked queue item (independent of distribution)
-   - All 6 implementation guides created to `projects/cybersecurity-hardening/`:
-   - **encrypted-messaging-implementation-guide.md** (2,980 words) — Signal/Matrix/Briar verification workflows, NSA QR malware attack warning, account isolation strategies
-   - **vpn-and-network-hardening-guide.md** (2,009 words) — Five/Nine/Fourteen Eyes jurisdictional analysis, Mullvad/Proton audit verification, WireGuard cipher suite explained, kill switch verification steps
-   - **tor-and-anonymity-guide.md** (1,838 words) — GPG signature verification pre-installation, guard relay pinning (predecessor attack prevention), obfs4/Snowflake bridge config, stream isolation, circuit correlation NSA risk assessment
-   - **device-hardening-implementation-guide.md** (2,422 words) — macOS (FileVault, pf firewall rules), Linux (UFW default-deny, AppArmor, sysctl hardening), Windows (BitLocker, WDAC vs AppLocker), Firefox hardening (uBlock Origin, resistFingerprinting, WebRTC disable)
-   - **operational-security-workflows-guide.md** (2,042 words) — Compartmentalization models (2-layer vs 3-layer), VirtualBox VM isolation, Whonix routing, metadata removal (mat2, exiftool), digital dead-drop techniques, two full scenarios (journalist/protest, activist/repressive country) with decision trees
-   - **identity-recovery-and-breach-response-guide.md** (2,080 words) — Hour-by-hour playbook, MFA hierarchy (hardware key > TOTP > email > SMS), contact notification template, SIM-swap risk, Aegis TOTP setup, Signal Registration Lock recovery
-   - **Total additions**: 13,371 words across 6 guides
-   - **Quality features**: Verified sources (EFF, Tor Project, Signal, Mullvad audits, CISA), OS-specific code blocks (ready-to-copy), clear threat models per persona, danger warnings where users could accidentally weaken security
-
-**Strategic Value**: Cybersecurity-hardening project now complete end-to-end: (1) distribution infrastructure (Tier 1-3 templates + messaging), (2) comprehensive OpSec playbook (existing), (3) immediately actionable implementation guides (NEW). Users receiving outreach can execute guides immediately without external dependencies. Guides address common pitfalls (QR code attacks, tab correlation, SIM-swap) that many users are unaware of.
-
-**Next Steps**:
-- Guides ready for integration into Tier 1 outreach templates (user review recommended)
-- Optional: Create video tutorials or interactive decision trees for visual learners
-- Optional: Build community forum/wiki for peer support on guide execution
+**Status Summary**:
+- Both exploration queue items completed and production-ready
+- No further autonomous work available until: (a) user selects distribution path (resistance-research), (b) May 12 Gate 1 checkpoint (stockbot), (c) May 6 DTBP reset verification (stockbot)
+- Next meaningful autonomous work: May 12 contingency evaluation or exploration queue deepening if user unblocks other projects
 
 ---

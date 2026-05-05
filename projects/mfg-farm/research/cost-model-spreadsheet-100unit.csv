@@ -1,0 +1,97 @@
+MODRUN COST MODEL — 100-Unit Operations Blueprint (May 2026),,,,,
+"Rows = cost items per unit. Columns = weekly production volume. All costs in USD. Revenue uses blended ASP of $27.50 (70% clip 3-packs at $24.99 / 30% desk_clamp rails at $34.99).",,,,,
+"Material weights: clip 2.0g PLA+ / rail 80g PLA+. Blended avg ~22g/unit at 70/30 clip-rail mix. PLA+ bulk pricing by tier.",,,,,
+"Labor rate: $15.00/hr (owner opportunity cost at 20–50/wk; contractor rate at 100+/wk). Machine: Bambu P1S $699 / 5000-hr life = $0.14/hr. Scrap: 10% first 2 weeks → 5% mature.",,,,,
+,,,,,,
+COST CATEGORY,20 units/week,50 units/week,100 units/week,150 units/week,200 units/week
+,,,,,,
+--- MATERIAL COSTS ---,,,,,
+Filament (PLA+ per unit),$ 0.42,$ 0.38,$ 0.35,$ 0.33,$ 0.31
+"  Basis: blended 22g avg × bulk price tier ($19/kg→$14/kg→$12/kg→$11/kg→$10/kg; note: $12/kg = confirmed Amazon bulk 10kg eSUN/SUNLU May 2026)",,,,,
+Filament scrap allowance (% of material cost; 5% mature),$ 0.02,$ 0.02,$ 0.02,$ 0.02,$ 0.02
+Packaging materials per unit (poly mailer/box + void fill),$ 0.22,$ 0.20,$ 0.18,$ 0.17,$ 0.16
+"  Basis: 70% poly mailers $0.10ea bulk + 30% small corrugated $0.45ea + void fill. Blended: ~$0.18–0.22/unit",,,,,
+Total material cost per unit,$ 0.66,$ 0.60,$ 0.55,$ 0.52,$ 0.49
+,,,,,,
+--- MACHINE COSTS ---,,,,,
+Machine depreciation per unit (Bambu P1S),$ 0.10,$ 0.04,$ 0.06,$ 0.04,$ 0.04
+"  Basis: $699 / 5000 hr life = $0.14/hr. Clip 50min plate÷12 = 4.2 min/unit × $0.14 = $0.0098. Rail 180min × $0.14 = $0.42/unit. Blended at 70/30 mix ≈ $0.13/unit. Amortized at utilization.",,,,,
+Electricity per unit (P1S at ~90W avg),$ 0.01,$ 0.01,$ 0.01,$ 0.01,$ 0.01
+"  Basis: 90W × print hr × $0.12/kWh. Clip: 0.083hr × 90W × $0.12 = $0.0009. Rail: 3hr × 90W × $0.12 = $0.032. Blended 70/30 ≈ $0.01/unit. Negligible.",,,,,
+Total machine cost per unit,$ 0.11,$ 0.05,$ 0.07,$ 0.05,$ 0.05
+,,,,,,
+--- LABOR COSTS ---,,,,,
+Print harvest + plate restart (owner; 45 sec/cycle amortized per unit),$ 0.03,$ 0.03,$ 0.03,$ 0.03,$ 0.03
+Visual QC at harvest (owner; 8 sec clip / 45 sec rail; blended ~17 sec/unit),$ 0.07,$ 0.07,$ 0.07,$ 0.07,$ 0.07
+Packaging + labeling per unit (owner or contractor; ~110 sec/unit),$ 0.46,$ 0.46,$ 0.46,$ 0.46,$ 0.46
+Shipping batch upload (owner; 10 min/day ÷ daily units),$ 0.10,$ 0.05,$ 0.02,$ 0.02,$ 0.01
+Contractor overhead (packaging delegation at 100+/wk; $600/mo ÷ weekly units),$ 0.00,$ 0.00,$ 1.38,$ 0.92,$ 0.69
+"  Basis: $600/mo contractor (10 hr/wk × $15/hr) onboarded at 100/wk; scales as contractor hrs grow with volume",,,,,
+Owner time recaptured by contractor (benefit; not a cost line — noted for clarity),—,—,4–5 hrs/wk,5–6 hrs/wk,6–8 hrs/wk
+Total labor cost per unit (direct),$ 0.66,$ 0.61,$ 1.96,$ 1.50,$ 1.26
+,,,,,,
+--- PLATFORM AND SELLING COSTS ---,,,,,
+Etsy transaction + payment fees (9.5% of revenue),$ 2.61,$ 2.61,$ 2.61,$ 2.61,$ 2.61
+"  Basis: $27.50 blended ASP × 9.5% (6.5% transaction + 3.0% payment processing). Fixed as % of price.",,,,,
+Etsy listing fees (amortized $0.20/listing ÷ avg units per listing life),$ 0.01,$ 0.01,$ 0.01,$ 0.00,$ 0.00
+Shipping cost per order (USPS Ground Advantage via Pirate Ship/ShipStation),$ 4.50,$ 4.50,$ 4.50,$ 4.50,$ 4.50
+"  Basis: $4.50 blended avg (8% USPS surcharge in effect Apr 2026–Jan 2027). Rail orders avg $5.50; clip bundles avg $4.00. Customer pays; built into listed price.",,,,,
+ShipStation subscription amortized per unit (Growth $29.99/mo at 100+/wk),$ 0.00,$ 0.00,$ 0.07,$ 0.05,$ 0.04
+"  Note: Pirate Ship is $0/mo but requires manual Etsy order handling due to Oct 2024 API changes. ShipStation recommended at 75+ orders/week.",,,,,
+Total platform + selling cost per unit,$ 7.12,$ 7.12,$ 7.19,$ 7.16,$ 7.15
+,,,,,,
+--- FACILITY AND OVERHEAD ---,,,,,
+Facility cost per unit (dedicated workspace),$ 0.00,$ 0.00,$ 1.15,$ 0.77,$ 0.58
+"  Basis: Home/garage = $0 through Month 5. Dedicated workspace at 100+/wk: $400–800/mo for workshop rental. Model uses $500/mo ÷ weekly units.",,,,,
+Utilities beyond electricity (internet amortized; $50/mo),$ 0.59,$ 0.23,$ 0.12,$ 0.08,$ 0.06
+Software and tools (Farm Manager free; Printago; production log tools; $20–40/mo),$ 0.05,$ 0.02,$ 0.01,$ 0.01,$ 0.01
+Miscellaneous (replacement PEI plates; nozzles; consumables; $30–50/mo),$ 0.07,$ 0.03,$ 0.02,$ 0.01,$ 0.01
+Total facility and overhead per unit,$ 0.71,$ 0.28,$ 1.30,$ 0.87,$ 0.66
+,,,,,,
+--- TOTAL COST SUMMARY ---,,,,,
+Total COGS per unit (all categories),$ 9.26,$ 8.66,$ 11.07,$ 10.10,$ 9.61
+Revenue per unit (blended ASP),$ 27.50,$ 27.50,$ 27.50,$ 27.50,$ 27.50
+Gross profit per unit,$ 18.24,$ 18.84,$ 16.43,$ 17.40,$ 17.89
+Gross margin,66.3%,68.5%,59.7%,63.3%,65.1%
+,,,,,,
+Weekly gross profit,$ 364.80,$ 942.00,$ 1643.00,$ 2610.00,$ 3578.00
+Monthly gross profit (× 4.33),$ 1,579,$ 4,079,$ 7,114,$ 11,301,$ 15,493
+,,,,,,
+--- SENSITIVITY: MARGIN VARIATION BY SCENARIO ---,,,,,
+Scenario,20 units/wk margin,50 units/wk margin,100 units/wk margin,150 units/wk margin,200 units/wk margin
+Base case (70% clip bundles / 30% rails / $27.50 ASP),66.3%,68.5%,59.7%,63.3%,65.1%
+Conservative (single clip orders / $14.99 ASP / poor bundling),38%,41%,29%,33%,36%
+Optimistic (premium PETG + homelab kits / $34.99 ASP),71%,73%,66%,69%,71%
+Tariff shock ($22/kg filament; all else equal),64%,66%,57%,61%,63%
+No dedicated facility (home/garage used through 100+/wk),66%,68%,64%,68%,70%
+,,,,,,
+--- EQUIPMENT INVESTMENT AND PAYBACK ---,,,,,
+Equipment Item,Unit Cost,When to Buy,Weekly Revenue Gain (incremental),Payback Period,Notes
+Bambu P1S #1 (launch printer),$ 699,"Month 0 (pre-launch, mandatory)",$ 500–700 gross at 20 units/wk,1.0–1.4 weeks at full utilization,First printer — not optional
+Bambu AMS (filament runout switching),$ 299,Month 0 with first printer,Prevents overnight batch failures; $25–50 in saved scrap/wk,6–12 weeks,Strongly recommended for overnight unattended runs
+Digital calipers (QA tooling),$ 20,Month 0,QA tool — no direct revenue gain,Immediate (QA function),Required for tolerance verification post-test-print
+Thermal label printer (Rollo X1038),$ 180,Month 2–3 (50+ orders/week),Saves 15–20 min/day vs inkjet; ~$100/mo labor savings,1.8 weeks of saved labor cost,Justified at 50+ orders/month
+Postal scale,$ 30,Month 1,Prevents USPS surcharges; QA function,Immediate,Required for accurate rate selection
+Bambu P1S #2 (scale to 100/wk),$ 699,Month 4–5 (trigger: printer 1 at 14+ hr/day for 2+ weeks),$ 700–1000 gross incremental,< 1 week at full utilization,Do not buy before demand demonstrated
+ShipStation subscription,$ 30/month,Month 3–4 (75+ orders/week),10–15 min/day time savings; Etsy auto-sync,Immediate ROI on time,Pirate Ship sufficient below 75 orders/wk
+Bambu P1S #3 (scale to 150/wk),$ 699,Month 8–14 (trigger: 2-printer fleet at 80%+ utilization),$ 500–700 incremental,< 2 weeks at full utilization,Expected Year 2 for most operators
+Portable AC unit (6000 BTU; 3+ printers),$ 200–300,Month 6 (when 3+ printers in enclosed space),Heat load management; prevents print failures,Immediate quality ROI,Only needed if enclosed workspace; not required for garage with open door
+Vibratory tumbler (optional; premium SKU only),$ 80–150,Only if launching a premium-finish SKU,Depends on premium SKU uptake; $3–5/unit price premium,30–50 units of premium SKU,Not recommended at launch; evaluate Month 6+
+Raspberry Pi camera QA system (automated visual inspection),$ 60–120,Month 12+ (200+ units/week threshold),Eliminates 25–30 min/day of visual inspection labor,8–12 weeks of saved labor,Only justified when visual QA labor exceeds $200/month (~250+ units/wk)
+,,,,,,
+--- NOTES AND ASSUMPTIONS ---,,,,,
+Assumption,Value,Basis
+PLA+ bulk price (10kg tier),$ 12/kg,"eSUN/SUNLU Amazon confirmed May 2026; $14/kg for 1–3 spools; $12/kg at 10kg; $10–11/kg at 50kg+ direct"
+Blended unit weight (70% clips / 30% rails),22 g/unit,"Clip 2.0g × 0.7 + rail 80g × 0.3 = 25.4g gross; at 5% scrap adjustment → ~22g sold-unit equivalent"
+Print time per clip (12-up plate),4.2 min/unit effective (50 min/plate ÷ 12),"Bambu P1S, 0.20mm, 3 walls, 20% gyroid, PLA+ standard profile"
+Print time per rail (desk_clamp),180 min/unit (3 hr/plate × 1 rail),"Bambu P1S, 0.20mm, 3 walls, 20% gyroid, PLA+ standard profile"
+Machine depreciation rate,$ 0.14/hr ($699 ÷ 5000 hr),"Conservative life estimate; 16 hr/day operation"
+P1S sustained power draw during printing,~90W average,"Community forum measurement: 850W initial heat-up → 30–100W sustained. ~90W average PLA+ print cycle."
+Electricity rate,$ 0.12/kWh,US residential/commercial blended average 2026
+Labor rate (owner opportunity cost),$ 15.00/hr,Baseline; adjust if owner's alternative income is higher
+Contractor rate (packaging; 1099),$ 15.00/hr,"ZipRecruiter 2025 light manufacturing/fulfillment data: $14–20/hr range"
+Platform fees (Etsy),9.5% of revenue,"6.5% transaction fee + 3.0% payment processing. Does not include $0.20 listing fee (amortized to < $0.01/unit)."
+Blended ASP,$27.50,"70% clip 3-pack at $24.99 + 30% desk_clamp rail at $34.99. Conservative; actual AOV higher with active bundle upselling."
+USPS shipping blended,$4.50/order,"Ground Advantage via Pirate Ship/ShipStation. Includes 8% surcharge (Apr 2026–Jan 2027). Rail orders: ~$5.50."
+Scrap allowance (mature production),5%,Industry FDM benchmark for well-calibrated enclosed printer at PLA+ production settings
+3PL break-even vs in-house,Not justified through 100 units/week,"ShipMonk all-in ~$8.50–11/order vs in-house ~$4.80/order. Delta: ~$1,600–2,700/month at 430 orders. In-house superior until time constraint forces the decision."
