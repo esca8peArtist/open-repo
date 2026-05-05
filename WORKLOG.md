@@ -45,6 +45,44 @@
   - `supplier-contact-matrix.md` (2,777 words) — 5-tab spreadsheet with Session 544 supplier data + 127 fill-in variables
 - **Status**: All templates are fill-in-the-blank ready for rapid post-test-print execution. Saves 2-3 days of orchestrator work once user confirms test print.
 
+## 2026-05-05 05:42–06:30 UTC — Session 733 — Exploration Queue Items Expansion + 2 Exploration Items Complete
+
+**Queue replenishment**:
+- Added 3 new exploration queue items to PROJECTS.md (Session 733):
+  - **Item A**: open-source-rideshare Phase 2 Stakeholder Engagement & MVP Refinement Research
+  - **Item B**: cybersecurity-hardening May 2026 Threat Update & Distribution Readiness
+  - **Item C**: off-grid-living Social Distribution Engagement Metrics & Feedback Loop Design
+
+**Exploration items completed** (spawned as parallel subagents, completed 06:15–06:30 UTC):
+
+1. ✅ **resistance-research: Legal Liability & Risk Assessment for Framework Authors** — COMPLETE
+   - **File**: `projects/resistance-research/legal-liability-assessment.md` (~2,200 words, 7 sections)
+   - **Key findings**: 
+     - CFAA exposure: Negligible (research distribution is core First Amendment activity)
+     - Federal election law exposure: Low (no statute applies to distributing policy analysis)
+     - NSPM-7 enforcement climate: Moderate risk for investigation/harassment, low risk for prosecution
+     - 501(c)(3)/(c)(4) analysis: Neither required for research distribution; only needed if organizational infrastructure (email list, donations)
+   - **Decision tree**: User flows through 4 questions to determine path-specific legal profile
+   - **Protective structures**: Tier 1 (pseudonymous distribution, mission statement), Tier 2 (LLC wrapper, WHOIS privacy), Tier 3 (501(c)(3)/(c)(4) evaluation)
+   - **Path-specific risk summary**: Path A+37 recommended (targeted framing to election orgs reduces legal ambiguity); Path B offers no legal advantage over A
+   - **Business value**: Identifies protective structures pre-distribution; feeds directly into user's Path A/A+37/B decision
+
+2. ✅ **seedwarden: Post-Phase-1 Analytics & Customer Cohort Tracking** — COMPLETE
+   - **Files**: 
+     - `projects/seedwarden/post-launch-analytics-framework.md` (architecture: Etsy Stats API, GA4, cohort segmentation, Phase 2 decision gates)
+     - `projects/seedwarden/etsy-ga4-event-tracking.md` (technical spec: event schema, custom dimensions, attribution model)
+     - `projects/seedwarden/customer-retention-tracker.csv` (monthly cohort template with Phase 2 gate thresholds)
+   - **Key findings**:
+     - Etsy Open API v3 lacks stats data; API = order feed only; Stats = manual dashboard read for traffic/views
+     - GA4 on Etsy listing pages works; does NOT fire purchase events (checkout is Etsy-controlled); all transaction truth from Etsy API
+     - Phase 2 decision gates: 4 gates with numeric thresholds (Etsy ads @ 2.5% conversion, new guide @ 25% repeat rate, endangered species @ 400+ orders, paid ads @ 800+ subscribers)
+   - **Business value**: Enables data-driven Phase 2 scaling decisions; ready to activate at Phase 1 go-live (May 2026)
+   - **Implementation**: Dashboard pulls from existing `analytics/cohort-analysis-template.sql` (session 551), no new data pipelines required
+
+**Token usage**: 147,845 (subagents: resistance-research agent 78,924 + seedwarden agent 68,921)
+
+---
+
 ## 2026-05-05 11:15 UTC — Session 733 — stockbot — Pre-Market Health Check
 
 **Pre-Market Status (05:21 UTC, 8h 9m until market open 13:30 UTC)**:
