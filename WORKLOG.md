@@ -6,6 +6,22 @@
 
 ---
 
+## 2026-05-04 — cybersecurity-hardening — AI surveillance and deepfake threat analysis 2026
+
+**File**: `projects/cybersecurity-hardening/ai-surveillance-threat-analysis.md`
+
+**Key findings**:
+- ICE Mobile Fortify confirmed operational: 200M-image facial recognition database accessible on field agents' phones; used 100,000+ times as of Jan 2026; ICE treats matches as "definitive" even against contradicting documentary evidence
+- NIST research: false positive rates up to 100x higher for Black and Asian faces; real-world accuracy drops 45-50% from lab conditions; Black females most affected with degraded images
+- Voice cloning crossed indistinguishable threshold in late 2025; 3-second audio sample sufficient for functional clone; voice biometrics as 2FA is now compromised
+- WEF Jan 2026 testing: moderate deepfakes + camera injection defeat wide range of active liveness KYC systems; only 0.1% of humans correctly identify all deepfakes presented
+- MIT Technology Review April 2026: LLMs can deanonymize redacted interviews in ~4 min for under $0.50; privacy now depends on analysis cost, not legal protection
+- Palantir AIP (LLM layer on government data pipelines) confirmed in Army $10B ESA; same architecture applies to ICE immigration enforcement
+- SoundThinking (ShotSpotter + PredPol successor) in 100+ agencies; Chicago's post-removal homicide drop continued for full year (Dec 2025)
+- Tiered defensive recommendations added: browser fingerprinting countermeasures, AI-resistant verification protocols, physical countermeasures for Tier 3
+
+---
+
 ## 2026-05-01 00:51–[ONGOING] UTC — Session 717 — Market Readiness + Exploration Queue Continuation
 
 **Status**: 🟡 IN PROGRESS — Stockbot engine verified healthy + agent research in progress
