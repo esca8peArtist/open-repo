@@ -707,6 +707,74 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
+## New Items (Session 741 — 2026-05-05 Orchestration)
+
+### Item 39: resistance-research Distribution Path Decision Framework (Session 741)
+**Status**: IN PROGRESS
+**Scope**: User needs to choose Path A / A+37 / B for Phase 1 execution. Create decision support guide with concrete timeline impacts, resource implications, strategic tradeoffs, and orchestrator recommendation with reasoning.
+**Deliverables**:
+- `DISTRIBUTION_PATH_DECISION_FRAMEWORK.md` (2,500–3,000 words)
+  - **Path A**: 3–4 hour execution window, maximum orchestrator capacity available, quick institutional reach. Trade-off: Domain 37 election-protection focus diluted into broad audience messaging.
+  - **Path A+37 Hybrid**: Days 1–3 execution (adds 1–2 hours), delivers Domain 37 to 12 election-protection orgs with standalone framing keyed to May 30 DOJ consent decree litigation window (critical). Trade-off: slightly more complex execution.
+  - **Path B**: 21–29 day minimum timeline, misses May 30 DOJ consent decree window entirely (eliminates path if election-protection strategy is priority). Extra 2–3 weeks for optional Domain 37 research.
+  - **Reversibility analysis**: A→A+37 fully reversible post-launch; other directions are NOT.
+  - **Precedent**: Similar 3-path decisions in large distributed advocacy (Tides Foundation, Ford Foundation) typically choose Hybrid as capturing best of both.
+  - **Orchestrator recommendation**: A+37 Hybrid (captures May 30 election-protection window + broad institutional reach, adds minimal execution time)
+- **Decision checklist**: 5 yes/no questions to validate path choice
+**Owner**: orchestrator (research + writeup, 1–2 hours)
+**Value**: Enables immediate Phase 1 execution upon user decision (eliminates user research friction)
+
+---
+
+### Item 40: seedwarden Phase 1 Success Metrics & Parallel Track B Launch Strategy (Session 741)
+**Status**: QUEUED — Pending Phase 1 launch
+**Scope**: Define success metrics for Phase 1 email/Etsy launch (benchmarks for conversion, email growth, customer acquisition cost, product-specific metrics). Then design Phase 2 Track B parallel launch strategy to begin Week 1 of Phase 1 execution (mockups + social content production can run concurrently with email campaign).
+**Deliverables**:
+- `phase-1-success-metrics-dashboard.md` (2,000–2,500 words)
+  - **Tier 1 metrics** (track daily): Views/listing, email signups, landing page conversion rate, product-specific conversion (zone cards vs. guides), CAC
+  - **Tier 2 metrics** (track weekly): Customer LTV, repeat purchase rate, cohort retention, product affinity analysis, segment concentration
+  - **Success thresholds**: Week 1 target 50+ views/listing, Week 2 target 100+ email signups, Month 1 target 2–3% conversion rate
+  - **Failure triggers**: <20 views/listing (listing copy or SEO issue), <1% email opt-in (landing page or traffic source issue)
+  - **Dashboard template**: Spreadsheet with 7-day rolling average, anomaly detection flags, decision checkpoints
+- `phase-1-and-track-b-parallel-execution-plan.md` (2,000 words)
+  - **Week 1 Phase 1**: Email campaign + Etsy listing live; Track B: mockup finalization + Canva Brand Kit setup
+  - **Week 2 Phase 1**: Email nurture sequence + social organic outreach (Reddit, FB groups); Track B: product photo export + pin template production (5–8 pins pre-loaded)
+  - **Week 3-4 Phase 1**: Conversion optimization (product page A/B, email sequence testing); Track B: pin social schedule (daily Instagram/Pinterest drops)
+  - **Float analysis**: Email automation has 5 days float; can begin Week 2 or defer to Week 3 without critical path impact
+  - **Risk mitigation**: If Phase 1 conversion <1%, pause Track B mockup production and focus orchestrator on Phase 1 optimization
+**Owner**: seedwarden agent (autonomous execution, estimated 2–3 hours)
+**Prerequisites**: User completes Phase 1 tag corrections
+**Value**: Enables momentum through May; captures parallel execution efficiency (tracks A + B executing simultaneously post-Phase-1)
+
+---
+
+### Item 41: stockbot Gate 1 Monitoring Automation — SQL Queries & Decision Dashboard (Session 741)
+**Status**: IN PROGRESS
+**Scope**: Translate Gate 1 contingency playbook (Item 33, 6,200 words) into automated SQL monitoring dashboard. Create exact queries for all decision thresholds, real-time alert triggers, and decision tree logic. Purpose: By May 12, orchestrator can run `./scripts/gate1_check.sh` once daily and get go/no-go signal automatically (no manual research needed).
+**Deliverables**:
+- `gate-1-monitoring-queries.sql` (300–400 lines)
+  - Query 1: Fill count by date (cumulative vs. daily, by strategy)
+  - Query 2: Round trip completion rate (OPEN → SELL ratio)
+  - Query 3: Capital efficiency (avg position size vs. equity, margin utilization)
+  - Query 4: Signal generation rate (buy signals detected vs. executed)
+  - Query 5: Execution lag (time from signal to fill)
+  - All queries parameterized for date ranges, ticker filters, strategy filters
+- `gate-1-dashboard.sh` (150–200 lines bash)
+  - Runs 5 queries above
+  - Color-codes output: GREEN (>150 fills cumulative), YELLOW (120–149), RED (<120)
+  - Compares cumulative to May 12 daily pace requirement
+  - Outputs decision recommendation: PROCEED / EXTEND / DIAGNOSE / ABORT based on Item 33 thresholds
+  - Logs output to `logs/gate1_daily_$(date +%Y%m%d).txt`
+- `gate-1-escalation-runbook.md` (500 words)
+  - If RED triggered, exact troubleshooting steps (check Jetson health, verify signal generation, check order submission logs)
+  - Escalation ladder: Self-check → SSH Jetson → Docker logs → Manual trade simulation
+  - Success criteria for each escalation level
+**Owner**: orchestrator (SQL + bash, 2–3 hours)
+**Value**: Removes daily decision friction; enables real-time May 12 gate decision without manual reconciliation
+**Prerequisites**: Items 33 (contingency playbook) + 36 (deployment docs) complete; SQL queries mapped to actual stockbot DB schema
+
+---
+
 ## New Items (Session 703 — 2026-04-30 Orchestration)
 
 ### ✅ Item 33: stockbot May 12 Contingency Planning & Hedging Strategy (Session 703 COMPLETE)
