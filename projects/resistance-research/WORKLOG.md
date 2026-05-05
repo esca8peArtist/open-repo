@@ -2,6 +2,26 @@
 
 ---
 
+## May 5, 2026 — Item 44: Domain 41 Candidate Scoping (Exploration Queue Item 44)
+
+**Session type**: General Research Agent — Domain 41 candidate analysis for post-Phase-1-distribution Phase 2 expansion planning
+**Files created/updated**:
+- `projects/resistance-research/ITEM44_DOMAIN41_CANDIDATES.md` — New file, ~5,400 words. Five Domain 41 candidates analyzed for post-Domain-40 expansion; gap analysis of the 40-domain framework; research roadmaps for top 2 candidates.
+
+### Research Conducted
+
+Web-searched: domestic intelligence and FBI fusion center accountability (Brennan Center, ACLU FOIA suit, DHS fusion center network, COINTELPRO modern parallels); Kash Patel FBI political targeting (Government Executive, The Nation, ACLU, Milwaukee Independent, CNN lawsuit reporting); SAVE Act disability voting barriers (Democracy Docket, Time, NDRN, The Arc, ACLU); SSA staffing cuts and disability benefit access (CBPP, Binghamton, ProPublica, AARP); disability democratic participation and voter turnout (EAC, Rutgers, IFES); campaign finance dark money 2025-2026 (Brennan Center, OpenSecrets, Issue One, Jacobin); energy democracy cooperative grid ownership 2025-2026 (Frontiers, Democracy Collaborative, ILSR, Tandfonline); international human rights accountability ICJ 2025-2026 (ICJ, CIVICUS, European Parliament).
+
+### Key Analytical Contributions
+
+1. **Gap analysis**: Three structural gaps identified in the 40-domain framework — domestic intelligence accountability (no analogous domain exists); disability rights and civic exclusion (26% of adult population unaddressed as democratic participation category); campaign finance plutocracy capture (Domain 7 partial treatment only).
+2. **Candidate 1 (Domestic Intelligence)**: Ranked first — acute 2026 crisis (Patel FBI restructuring, DTOS disbanding, Minnesota protest investigations), cross-partisan civil libertarian coalition, PCLOB extension as operationally feasible reform target. Church Committee II legislative precedent identified as organizing frame.
+3. **Candidate 2 (Disability Rights)**: Ranked second — SAVE Act Senate consideration creates specific advocacy window; novel NVRA-SSA connection identified (office closures as NVRA violation theory — underlitigated angle); four-layer exclusion architecture identified (polling barriers + ID requirements + NVRA/SSA + SSI disincentives).
+4. **Candidates 3-5** (Campaign Finance, Energy Democracy, International HR): Ranked and deferred with specific trigger conditions for re-elevation.
+5. **Scoring matrix**: Candidates ranked across six criteria (urgency, coalition strength, research complexity, policy window timing, institutional leverage, framework gap severity).
+
+---
+
 ## May 5, 2026 — Cybersecurity Hardening: Impact Assessment & Feedback Loop Design (Exploration Queue Priority #3)
 
 **Session type**: General Research Agent — cybersecurity hardening post-distribution measurement
