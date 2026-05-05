@@ -4,6 +4,44 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 50 — 2026-05-05 — Post-Phase-1 Analytics & Customer Retention Tracking Framework
+
+**Task**: Design comprehensive Phase 1 performance measurement system and Phase 2 decision-gate framework. Three deliverables per task spec.
+
+**Deliverables produced / updated**:
+
+1. `post-launch-analytics-framework.md` — **Extended** (existing ~2,000 word document). Added:
+   - Section 8: Measurement Cadence (daily 10-min checklist, weekly 30–45 min runbook with source/log/target table, monthly 90-min close protocol with 5 review questions)
+   - Section 9: Failure Analysis (5 scenario tree: low views, views-without-conversion, low repeat rate, revenue plateau, sudden drop) — each with root-cause diagnosis and ordered contingency actions
+   - Section 10: Cannibalization (promoted from orphaned block to proper numbered section)
+   - Updated cross-references in footer to reflect individual-customer format of customer-retention-tracker.csv
+
+2. `etsy-ga4-event-tracking.md` — **No changes needed**. Existing document is comprehensive and meets all spec requirements (GA4 event schema, custom dimensions, UTM parameters, audience segment definitions, attribution model, monthly reporting workflow).
+
+3. `customer-retention-tracker.csv` — **Rebuilt**. New format:
+   - Section 1: Individual customer retention log — 15 rows of sample data (Phase 1 launch weeks 1–2, May 15–29 2026) with columns: order_id, date, guide_name, guide_category, cohort_segment, first_purchase_date, repeat_purchase_count, days_to_repeat, ltv_estimate, geo_state, acquisition_source, phase_2_gate_signal, notes
+   - Column definitions block (all 13 columns defined with source, calculation, and target ranges)
+   - 30-day cohort rollup table (monthly aggregate, 8 months May–Dec 2026, ready to fill)
+   - Cohort rollup definitions block
+   - Seasonal rollup table
+   - Phase 2 gate tracker (10 gate rows for Gates A/B/C/D with all sub-conditions, current values, and action notes)
+
+**Key analytical contributions**:
+
+- Daily/weekly/monthly cadence is operationalized with specific time estimates and alarm conditions — user can start Day 1 without further setup
+- Failure analysis provides ordered response protocols distinguishing listing quality failures from retention failures from external shocks — prevents the most common reactive mistake (changing price when the actual problem is listing photos or email deliverability)
+- customer-retention-tracker.csv now serves two functions in one file: (1) individual-customer tracking with sample data as a working template, (2) cohort-level aggregation feeding Phase 2 gate decisions
+- LTV estimates in sample data are based on cohort benchmarks from customer-cohort-analysis-framework.md and repeat purchase patterns confirmed by existing customer-analytics.csv sample data
+- Phase 2 gate tracker explicitly notes which conditions must ALL be met (Gates A and C) vs. any-one-of (Gate B), fixing an ambiguity in prior gate documentation
+
+**Sources consulted**:
+- Etsy Open API v3 documentation (developers.etsy.com) — confirmed endpoint availability and data limits
+- GA4 recommended events documentation (support.google.com/analytics) — confirmed event parameter specs
+- General ecommerce repeat purchase benchmarks: average 28.2% (finsi.ai, mobiloud.com); Etsy-specific: 7% habitual buyers but declining trend (envive.ai, capitaloneshopping.com)
+- Existing seedwarden documents: customer-cohort-analysis-framework.md, customer-analytics.csv, competitor-landscape.md, phase-3-strategic-deep-dive.md, endangered-species-candidate-list.md
+
+---
+
 ## Session 750 — 2026-05-05 — Phase 1 Success Metrics Dashboard + Phase 1 / Track B Parallel Execution Plan (Exploration Queue Item 40)
 
 **Task**: Create two planning documents for Phase 1 launch readiness and concurrent Track B execution strategy.

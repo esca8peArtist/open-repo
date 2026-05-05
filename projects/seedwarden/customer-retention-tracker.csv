@@ -1,57 +1,76 @@
+INDIVIDUAL_CUSTOMER_RETENTION_LOG,,,,,,,,,,,,,
+order_id,date,guide_name,guide_category,cohort_segment,first_purchase_date,repeat_purchase_count,days_to_repeat,ltv_estimate,geo_state,acquisition_source,phase_2_gate_signal,notes
+ORD-2026-001,2026-05-15,Wild Edibles Field Guide — Pacific Northwest,wild_edibles,high_intent_forager,2026-05-15,1,66,180.00,OR,etsy_organic,Gate_B_watch,"Two guides in one order. Repeat in 66 days. Classic forager pattern. LTV estimate based on 4 annual purchases x $45 AOV."
+ORD-2026-002,2026-05-16,Complete Bundle — Wild Edibles + Medicinal + Survival,complete_bundle,survival_prepper,2026-05-16,1,88,220.00,TX,etsy_organic,Gate_C_watch,"Bundle purchase (6 guides). Repeat at 88 days. High LTV. Confirms prepper bulk-buy behavior. Watch for Gate C."
+ORD-2026-003,2026-05-17,Medicinal Plants Field Manual,medicinal_plants,homesteader,2026-05-17,1,80,160.00,VT,etsy_organic,none,"Returning customer (homesteader). Second purchase 80 days after first. Project-cycle buying confirmed. LTV estimate: $40/year x 4 years."
+ORD-2026-004,2026-05-18,Wild Edibles Field Guide — Northeast,wild_edibles,gift_buyer,2026-05-18,0,,45.00,CA,etsy_organic,none,"Single purchase. No repeat within 90 days. Gift purchase (May — Mother's Day window). LTV is single-order estimate only."
+ORD-2026-005,2026-05-19,Plant ID Quick Reference + Mushroom Identification Guide,wild_edibles,high_intent_forager,2026-05-19,1,42,200.00,WA,kit_email,Gate_A_watch,"Two specialized guides. Repeat in 42 days — fastest repeat in sample. Strong Gate A signal if conversion rate holds. Acquisition via Kit email."
+ORD-2026-006,2026-05-20,Wild Edibles Field Guide — Northeast,wild_edibles,high_intent_forager,2026-05-20,0,,130.00,PA,etsy_organic,none,"Survey said homesteader but behavior (single focused guide) suggests forager. LTV estimate midpoint. Awaiting repeat data."
+ORD-2026-007,2026-05-21,Medicinal Plants Field Manual,medicinal_plants,homesteader,2026-05-21,0,,90.00,TN,etsy_organic,none,"Homesteader survey match + geographic signal (TN). Awaiting 90-day window for repeat assessment."
+ORD-2026-008,2026-05-22,Wild Edibles + Medicinal Plants + Survival Garden Bundle,complete_bundle,survival_prepper,2026-05-22,1,116,250.00,ID,etsy_organic,Gate_C_watch,"Large cart (3 categories). Repeat at 116 days. Strong long-cycle prepper pattern. LTV estimate high: $250+ over 24 months."
+ORD-2026-009,2026-05-23,Wild Edibles Field Guide — Northeast,wild_edibles,high_intent_forager,2026-05-23,0,,140.00,NY,pinterest,none,"Survey response: gift buyer. But product choice (regional edibles) and source (Pinterest organic pin) suggests forager. Mixed signal. LTV estimate midpoint."
+ORD-2026-010,2026-05-24,Seed Saving Field Manual,native_plants,homesteader,2026-05-24,0,,110.00,OR,kit_email,none,"Homesteader cohort confirmed. Email acquisition — welcome sequence click-through. Awaiting repeat data. LTV estimate based on homesteader 2–4x/year pattern."
+ORD-2026-011,2026-05-25,Survival Garden Regional Plan — Mountain West,survival_prep,survival_prepper,2026-05-25,0,,120.00,CO,reddit,none,"Prepper cohort. Reddit acquisition (r/preppers). Single purchase at launch. 90-day window opens August 25."
+ORD-2026-012,2026-05-26,Wild Edibles Field Guide — Pacific Northwest,wild_edibles,high_intent_forager,2026-05-26,0,,170.00,BC,etsy_organic,none,"Canadian buyer (British Columbia). International order — may indicate organic reach beyond US. Forager profile: single focused guide."
+ORD-2026-013,2026-05-27,Medicinal Plants Field Manual + Seed Saving Field Manual,medicinal_plants,homesteader,2026-05-27,0,,160.00,ME,etsy_organic,none,"Two guides (medicinal + seed saving) — textbook homesteader multi-purchase. LTV estimate: $40–50/year for 3–4 years."
+ORD-2026-014,2026-05-28,Complete Bundle — Wild Edibles + Medicinal + Survival,complete_bundle,survival_prepper,2026-05-28,0,,200.00,AZ,etsy_organic,Gate_C_watch,"Bundle purchase. Prepper cohort. No repeat yet. AZ = desert region; watch if regional variant demand signal emerges."
+ORD-2026-015,2026-05-29,Wild Edibles Field Guide — Southeast,wild_edibles,high_intent_forager,2026-05-29,0,,150.00,NC,kit_email,none,"Email acquisition. Southeast guide — strong regional fit. Forager cohort. LTV estimate: 4x/year seasonal purchases."
+COLUMN_DEFINITIONS,,,,,,,,,,,,,
+order_id,Etsy receipt_id or internal order reference (ORD-YYYY-NNN format).,,,,,,,,,,,
+date,Date the order was created (YYYY-MM-DD). Source: Etsy API created_timestamp converted from UTC unix.,,,,,,,,,,,
+guide_name,Full title of the guide or bundle purchased. For multi-item orders record the primary guide by revenue weight.,,,,,,,,,,,
+guide_category,"Category of the primary guide: wild_edibles | medicinal_plants | native_plants | complete_bundle | survival_prep | mushroom_id. Matches guide_type dimension in etsy-ga4-event-tracking.md.",,,,,,,,,,,
+cohort_segment,"Customer cohort assignment. One of: high_intent_forager | survival_prepper | homesteader | gift_buyer. See customer-cohort-analysis-framework.md Section 1–4 for full definitions and signal logic.",,,,,,,,,,,
+first_purchase_date,Date of this customer's first-ever Seedwarden purchase (YYYY-MM-DD). If this is the first purchase it equals the date column. If this is a repeat order it is earlier than the date column.,,,,,,,,,,,
+repeat_purchase_count,"Number of additional purchases this customer has made after their first order. 0 = first-time buyer with no repeat yet. 1 = one repeat purchase. Increment each time a repeat purchase is logged in customer-analytics.csv.",,,,,,,,,,,
+days_to_repeat,"For repeat buyers: number of days between first_purchase_date and the most recent repeat purchase date. Leave blank for customers still in their first 90-day window. Target ranges: high_intent_forager 30–60 days; homesteader 60–90 days; survival_prepper 60–120 days; gift_buyer 300–365 days.",,,,,,,,,,,
+ltv_estimate,"Lifetime value estimate in USD. Calculation: (avg_order_value) x (estimated_annual_purchases) x (estimated_years_retained). For first-time buyers with no repeat data use cohort benchmark (forager: $180; prepper: $220; homesteader: $160; gift: $45). Update as actual repeat data accumulates. Net of Etsy 6.5% transaction fee and $0.20 listing fee per item.",,,,,,,,,,,
+geo_state,Two-letter US state or CA province code. Source: Etsy API state field. Used for regional guide demand analysis and cannibalization detection.,,,,,,,,,,,
+acquisition_source,"Traffic source that brought this buyer to Etsy. Derived from GA4 session data (cross-reference purchase date with GA4 traffic acquisition by date). One of: etsy_organic | kit_email | pinterest | instagram | reddit | direct | unknown.",,,,,,,,,,,
+phase_2_gate_signal,"Flag for Phase 2 gate relevance. One of: Gate_A_watch (high conversion rate signal) | Gate_B_watch (high repeat rate signal) | Gate_C_watch (endangered species demand) | Gate_D_watch (paid ads readiness) | none. Update as 90-day window closes.",,,,,,,,,,,
+notes,Qualitative observations. Record any unusual purchase patterns or data quality issues.,,,,,,,,,,,
+THIRTY_DAY_COHORT_ROLLUP,,,,,,,,,,,,,
 cohort_month,cohort_season,buyers_acquired,month_1_buyers,month_1_retention_pct,month_2_buyers,month_2_retention_pct,month_3_buyers,month_3_retention_pct,month_6_buyers,month_6_retention_pct,cohort_ltv_m1,cohort_ltv_m3,cohort_ltv_m6,dominant_cohort,second_purchase_rate_90d_pct,avg_days_to_second_purchase,top_guide_first_purchase,top_guide_second_purchase,cross_sell_rate_pct,acquisition_source_top,seasonal_repeat_signal,notes
-2026-05,spring_planning,,,,,,,,,,,,,,,,,,,,launch_month,TEMPLATE — fill from Etsy API data after each month closes
-2026-06,long_tail_spring,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
-2026-07,preservation,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
-2026-08,preservation,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
-2026-09,preservation,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
-2026-10,long_tail_fall,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
-2026-11,holiday_gift,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
-2026-12,holiday_gift,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
-cohort_month,cohort_season,buyers_acquired,month_1_buyers,month_1_retention_pct,month_2_buyers,month_2_retention_pct,month_3_buyers,month_3_retention_pct,month_6_buyers,month_6_retention_pct,cohort_ltv_m1,cohort_ltv_m3,cohort_ltv_m6,dominant_cohort,second_purchase_rate_90d_pct,avg_days_to_second_purchase,top_guide_first_purchase,top_guide_second_purchase,cross_sell_rate_pct,acquisition_source_top,seasonal_repeat_signal,notes
-COLUMN_DEFINITIONS,,,,,,,,,,,,,,,,,,,,,
-cohort_month,YYYY-MM format. The calendar month in which these buyers made their first purchase.,,,,,,,,,,,,,,,,,,,,,
-cohort_season,spring_planning (Jan-Apr) | long_tail_spring (May-Jun) | preservation (Jul-Sep) | long_tail_fall (Oct) | holiday_gift (Nov-Dec),,,,,,,,,,,,,,,,,,,,,
-buyers_acquired,Count of unique buyer emails who placed their first-ever Seedwarden order in this month. Source: Etsy API receipts query filtered to first-purchase buyers only.,,,,,,,,,,,,,,,,,,,,,
-month_1_buyers,Count of buyers from this cohort who placed any order (including repeat) during Month 1 of their lifecycle (same month as acquisition). Should equal buyers_acquired.,,,,,,,,,,,,,,,,,,,,,
-month_1_retention_pct,Always 100.0 — baseline.,,,,,,,,,,,,,,,,,,,,,
-month_2_buyers,Count of buyers from this cohort who placed an order in the second calendar month after acquisition. Source: cohort-analysis-template.sql Section 2.,,,,,,,,,,,,,,,,,,,,,
-month_2_retention_pct,month_2_buyers / buyers_acquired * 100. Target: 8%+ for non-gift cohorts.,,,,,,,,,,,,,,,,,,,,,
-month_3_buyers,Count of buyers from this cohort who placed any order in Month 3 of their lifecycle.,,,,,,,,,,,,,,,,,,,,,
-month_3_retention_pct,month_3_buyers / buyers_acquired * 100. Target: 15%+ (equivalent to 90-day second purchase rate). This is the primary Phase 2 decision metric.,,,,,,,,,,,,,,,,,,,,,
-month_6_buyers,Count of buyers from this cohort who placed any order in Month 6 of their lifecycle.,,,,,,,,,,,,,,,,,,,,,
-month_6_retention_pct,month_6_buyers / buyers_acquired * 100. Target: 10%+ for non-gift cohorts. Gift buyer target: 3%+.,,,,,,,,,,,,,,,,,,,,,
-cohort_ltv_m1,Average cumulative net revenue per buyer in this cohort through Month 1. Net revenue = gross * 0.905 - $0.25. Source: cohort-analysis-template.sql Section 3.,,,,,,,,,,,,,,,,,,,,,
-cohort_ltv_m3,Average cumulative net revenue per buyer through Month 3 (all orders in Months 1-3 summed per buyer / buyers_acquired).,,,,,,,,,,,,,,,,,,,,,
-cohort_ltv_m6,Average cumulative net revenue per buyer through Month 6. This is the primary LTV figure for Phase 2 gate decisions.,,,,,,,,,,,,,,,,,,,,,
-dominant_cohort,The most common assigned cohort in this acquisition month. One of: high_intent_forager | survival_prepper | homesteader | gift_buyer | mixed.,,,,,,,,,,,,,,,,,,,,,
-second_purchase_rate_90d_pct,Percentage of this cohort who made a second purchase within 90 days of their first purchase. Target: 20%+. Primary health indicator.,,,,,,,,,,,,,,,,,,,,,
-avg_days_to_second_purchase,Mean number of days between first and second purchase for buyers in this cohort who made a second purchase. Target: 45-75 days for foragers; 60-90 for homesteaders; 60-120 for preppers.,,,,,,,,,,,,,,,,,,,,,
-top_guide_first_purchase,Most purchased guide as first purchase in this cohort. Source: cohort-analysis-template.sql Section 5.1.,,,,,,,,,,,,,,,,,,,,,
-top_guide_second_purchase,Most purchased guide as second purchase in this cohort (among buyers who made a second purchase). Source: cohort-analysis-template.sql Section 5.2.,,,,,,,,,,,,,,,,,,,,,
-cross_sell_rate_pct,Percentage of second purchases that were a different guide category than the first purchase (vs. same category at different price tier). High cross_sell_rate = healthy catalog breadth.,,,,,,,,,,,,,,,,,,,,,
-acquisition_source_top,Top traffic acquisition source for this cohort. Source: GA4 traffic acquisition report filtered to the cohort's acquisition month.,,,,,,,,,,,,,,,,,,,,,
-seasonal_repeat_signal,Whether this cohort shows elevated repeat purchase activity during a particular season. One of: spring_planning | preservation | holiday_gift | uniform | insufficient_data,,,,,,,,,,,,,,,,,,,,,
-notes,Qualitative observations from monthly review. Note anomalies (spike in orders from a single source; a listing going viral; a seasonal event that drove unusual volume).,,,,,,,,,,,,,,,,,,,,,
-SEASONAL_ROLLUP_TABLE,,,,,,,,,,,,,,,,,,,,,
-season,Jan_Feb_Mar_Apr buyers,May_Jun buyers,Jul_Aug_Sep buyers,Oct buyers,Nov_Dec buyers,season_total_buyers,season_avg_ltv_m6,season_second_purchase_rate_pct,season_dominant_cohort,strongest_repeat_into_season,notes,,,,,,,,,,
-spring_planning,,,,,,,,,,,,,,,,,,,,,,
-long_tail_spring,,,,,,,,,,,,,,,,,,,,,,
-preservation,,,,,,,,,,,,,,,,,,,,,,
-long_tail_fall,,,,,,,,,,,,,,,,,,,,,,
-holiday_gift,,,,,,,,,,,,,,,,,,,,,,
-SEASONAL_ROLLUP_DEFINITIONS,,,,,,,,,,,,,,,,,,,,,
-season_total_buyers,Sum of buyers_acquired across all months in this season.,,,,,,,,,,,,,,,,,,,,,
-season_avg_ltv_m6,Average of cohort_ltv_m6 for all cohorts acquired in this season.,,,,,,,,,,,,,,,,,,,,,
-season_second_purchase_rate_pct,Average second_purchase_rate_90d_pct for all cohorts acquired in this season. The seasonal pattern that shows the highest repeat rate identifies your highest-LTV acquisition window for Phase 2 ad spend.,,,,,,,,,,,,,,,,,,,,,
-strongest_repeat_into_season,Which season do buyers acquired in this season tend to make their repeat purchase? E.g. preservation-acquired buyers may repeat heavily in holiday_gift season. Track this to time email campaigns appropriately.,,,,,,,,,,,,,,,,,,,,,
-PHASE_2_GATE_TRACKER,,,,,,,,,,,,,,,,,,,,,
-gate,trigger_metric,current_value,target_value,gate_status,date_triggered,action_initiated,notes,,,,,,,,,,,,,,
-Gate_A_Etsy_Ads,conversion_rate_pct_top3_listings,,2.5,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_A_Etsy_Ads_secondary,top3_listing_monthly_views,,200_each,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_A_Etsy_Ads_tertiary,aov_usd,,28,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_B_New_Guide,cohort_second_purchase_rate_pct,,25,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_B_New_Guide_secondary,ltv_ratio_high_vs_low_cohort,,1.4,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_C_Endangered_Species,cumulative_orders,,400,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_C_Endangered_Species_secondary,repeat_buyer_rate_pct,,20,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_D_Paid_Ads_External,email_list_size,,800,not_triggered,,,,,,,,,,,,,,,,,,,
-Gate_D_Paid_Ads_secondary,pinterest_monthly_outbound_clicks,,50,not_triggered,,,,,,,,,,,,,,,,,,,
+2026-05,spring_planning,,,,,,,,,,,,,,,,,,,,launch_month,FILL FROM ETSY API DATA AFTER MAY CLOSES
+2026-06,long_tail_spring,,,,,,,,,,,,,,,,,,,,,,FILL AFTER JUNE CLOSES
+2026-07,preservation,,,,,,,,,,,,,,,,,,,,,,FILL AFTER JULY CLOSES
+2026-08,preservation,,,,,,,,,,,,,,,,,,,,,,FILL AFTER AUGUST CLOSES
+2026-09,preservation,,,,,,,,,,,,,,,,,,,,,,FILL AFTER SEPTEMBER CLOSES
+2026-10,long_tail_fall,,,,,,,,,,,,,,,,,,,,,,FILL AFTER OCTOBER CLOSES
+2026-11,holiday_gift,,,,,,,,,,,,,,,,,,,,,,FILL AFTER NOVEMBER CLOSES
+2026-12,holiday_gift,,,,,,,,,,,,,,,,,,,,,,FILL AFTER DECEMBER CLOSES
+COHORT_ROLLUP_DEFINITIONS,,,,,,,,,,,,,
+cohort_month,YYYY-MM — the calendar month of first purchase.,,,,,,,,,,,,,
+cohort_season,"spring_planning (Jan-Apr) | long_tail_spring (May-Jun) | preservation (Jul-Sep) | long_tail_fall (Oct) | holiday_gift (Nov-Dec). Maps to seasonal demand calendar in customer-cohort-analysis-framework.md.",,,,,,,,,,,,,
+buyers_acquired,Count of unique buyer_user_ids who placed their first-ever Seedwarden order in this month. Source: Etsy API receipts filtered to first-purchase buyers (buyer_user_id not seen in prior months).,,,,,,,,,,,,,
+month_1_retention_pct,Always 100.0 — baseline month.,,,,,,,,,,,,,
+month_2_buyers,Count of buyers from this cohort who placed any order in the second calendar month of their lifecycle.,,,,,,,,,,,,,
+month_2_retention_pct,month_2_buyers / buyers_acquired * 100. Target: 8%+ for non-gift cohorts.,,,,,,,,,,,,,
+month_3_retention_pct,"month_3_buyers / buyers_acquired * 100. Target: 15%+ (equivalent to 90-day second-purchase rate). This is the primary Phase 2 decision metric. See post-launch-analytics-framework.md Section 6, Gate B.",,,,,,,,,,,,,
+month_6_retention_pct,month_6_buyers / buyers_acquired * 100. Target: 10%+ for non-gift cohorts. Gift buyer target: 3%+.,,,,,,,,,,,,,
+cohort_ltv_m1,Average cumulative net revenue per buyer in this cohort through Month 1. Net = gross * 0.905 - $0.25.,,,,,,,,,,,,,
+cohort_ltv_m6,Average cumulative net revenue per buyer through Month 6. Primary LTV figure for Phase 2 gate decisions.,,,,,,,,,,,,,
+second_purchase_rate_90d_pct,Percentage who made a second purchase within 90 days of first purchase. Target: 20%+. Primary health indicator.,,,,,,,,,,,,,
+avg_days_to_second_purchase,"Mean days between first and second purchase for repeat buyers. Target: 45-75 days (forager); 60-90 days (homesteader); 60-120 days (prepper).",,,,,,,,,,,,,
+cross_sell_rate_pct,Percentage of second purchases from a different guide category than first purchase. High rate = healthy catalog breadth.,,,,,,,,,,,,,
+SEASONAL_ROLLUP,,,,,,,,,,,,,
+season,Jan_Feb_Mar_Apr_buyers,May_Jun_buyers,Jul_Aug_Sep_buyers,Oct_buyers,Nov_Dec_buyers,season_total_buyers,season_avg_ltv_m6,season_second_purchase_rate_pct,season_dominant_cohort,strongest_repeat_into_season,notes,,
+spring_planning,,,,,,,,,,,,,,
+long_tail_spring,,,,,,,,,,,,,,
+preservation,,,,,,,,,,,,,,
+long_tail_fall,,,,,,,,,,,,,,
+holiday_gift,,,,,,,,,,,,,,
+PHASE_2_GATE_TRACKER,,,,,,,,,,,,,
+gate,trigger_metric,current_value,target_value,gate_status,date_triggered,action_initiated,notes,,,,,,
+Gate_A_Etsy_Ads,conversion_rate_pct_top3_listings,,2.5,not_triggered,,,Activate $5/day Etsy ads on top 3 listings when triggered. See post-launch-analytics-framework.md Section 6 Gate A.,,,,,,
+Gate_A_Etsy_Ads_secondary,top3_listing_monthly_views,,200_each,not_triggered,,,All three qualifying conditions must be met simultaneously.,,,,,,
+Gate_A_Etsy_Ads_tertiary,aov_usd,,28,not_triggered,,,,,,,,,
+Gate_B_New_Guide,cohort_second_purchase_rate_pct,,25,not_triggered,,,Any one of three Gate B conditions is sufficient to trigger. 8-10 week production lead time from trigger.,,,,,,
+Gate_B_New_Guide_secondary,ltv_ratio_high_vs_low_cohort,,1.4,not_triggered,,,,,,,,,
+Gate_B_New_Guide_tertiary,recurring_buyer_theme_mentions,,5,not_triggered,,,Count of same theme in message_from_buyer or survey free-text.,,,,,,
+Gate_C_Endangered_Species,cumulative_orders,,400,not_triggered,,,All three Gate C conditions must be met. See endangered-species-candidate-list.md for production roadmap.,,,,,,
+Gate_C_Endangered_Species_secondary,repeat_buyer_rate_pct,,20,not_triggered,,,,,,,,,
+Gate_C_Endangered_Species_tertiary,at_risk_plant_survey_mentions,,3,not_triggered,,,,,,,,,
+Gate_D_Paid_Ads_External,email_list_size,,800,not_triggered,,,Gate D only activates after Gate A is profitable. Starting test: $150/month Pinterest ads. See post-launch-analytics-framework.md Section 6 Gate D.,,,,,,
+Gate_D_Paid_Ads_secondary,pinterest_monthly_outbound_clicks,,50,not_triggered,,,,,,,,,
+Gate_D_Paid_Ads_tertiary,etsy_conversion_rate_pct,,2.5,not_triggered,,,,,,,,,

@@ -2,6 +2,45 @@
 
 ---
 
+## May 5, 2026 — Item 50: Seedwarden Post-Phase-1 Analytics & Customer Retention Tracking Framework
+
+**Session type**: General Research Agent — Seedwarden project (projects/seedwarden/), not resistance-research
+**Files created/updated**:
+- `projects/seedwarden/post-launch-analytics-framework.md` — Extended with Section 8 (daily/weekly/monthly measurement cadence runbook with alarm conditions and time estimates), Section 9 (5-scenario failure analysis with root-cause diagnosis and ordered contingency actions), Section 10 (cannibalization framework as proper numbered section).
+- `projects/seedwarden/customer-retention-tracker.csv` — Rebuilt with individual-customer tracking format (15 rows Phase 1 launch sample data, May 15–29 2026), column definitions, 30-day cohort rollup, seasonal rollup, and Phase 2 gate tracker (10 rows across Gates A/B/C/D).
+- `projects/seedwarden/etsy-ga4-event-tracking.md` — No changes; existing document met all spec requirements.
+- `projects/seedwarden/WORKLOG.md` — Updated with Item 50 session log.
+
+**Key findings**:
+- Etsy Open API v3 exposes order/transaction/listing data but not views time-series, keyword data, or cart abandonment — GA4 fills the traffic gap but cannot capture purchase events on Etsy. The analytics stack design in the framework accommodates these constraints correctly.
+- Repeat purchase benchmarks: ecommerce average 28.2% (any repeat ever); Etsy habitual buyers 7% of active buyers but declining trend (-13.4% YoY in 2024). Seedwarden targets 15–25% repeat at Month 3 — achievable for the forager and homesteader cohorts but ambitious for gift buyers.
+- Five-scenario failure analysis added: distinguishes listing quality failures (views without conversion) from distribution failures (no views) from retention failures (no repeat) from external shocks (sudden drop) — prevents the most common reactive mistake of changing price when the actual problem is elsewhere.
+- Phase 2 gate tracker now explicitly distinguishes all-conditions-required gates (A, C) from any-condition gates (B), fixing a prior ambiguity.
+
+---
+
+## May 5, 2026 — Phase 2 Domain Prioritization Framework (Items 10/12/17/26/44 Synthesis)
+
+**Session type**: General Research Agent — Phase 2 prioritization matrix, strategic analysis, and execution roadmap drawing on all prior candidate scoping items
+**Files created**:
+- `projects/resistance-research/phase-2-domain-prioritization-matrix.md` — ~3,200 words. Eight-criterion scoring matrix (0–10 per criterion, weighted) applied to all 12 Phase 2 domain candidates from Items 10–44. Composite rankings, weighting rationale, worked examples for top two candidates (41-B Disability Rights = 87.1, 38-B Voting Systems = 84.1). Four-tier priority structure with calendar deadlines.
+- `projects/resistance-research/domain-38-40-strategic-analysis.md` — ~4,100 words. Deep-dive on Domain 38 runner-up candidates (Intel Oversight, Voting Systems), Domain 39 candidates (Reproductive Rights, Labor Rights), and Domain 40 candidates (Constitutional Architecture, Tribal Sovereignty, Fiscal Authority). Policy urgency windows, coalition alignment, research prerequisites, execution timelines (weeks to produce), and impact potential per domain.
+- `projects/resistance-research/phase-2-execution-roadmap.md` — ~2,100 words. Sequential vs. parallel vs. hybrid implementation options; agent assignment table (9 domains, 105–131 total research hours); six decision gates with contingency triggers; per-domain success metrics; 12-month execution calendar (Month 1–12, May 2026–May 2027).
+
+### Key Research Conducted
+
+Web-searched: FISA 702 May 2026 outcome (45-day extension to June 12 confirmed); Callais v. Landry SCOTUS April 29 ruling (6-3, eliminated VRA Section 2 discriminatory-effects standard); 2026 Congressional recess schedule (August recess with one-week session late August; House Labor Day break); John Lewis VRA 2026 status (reintroduced July 2025, stalled in Senate, CBC calling for immediate vote post-Callais); UAW/Teamsters 2026 contract calendar (Case New Holland UAW May 2026, First Student/DHL Teamsters March 2026); SCOTUS reproductive rights 2026 term (Skrmetti June 2025 impact; state ballot measures in Missouri and Nevada certified for 2026).
+
+### Key Analytical Contributions
+
+1. **Eight-criterion scoring matrix**: Urgency (1.5x), Coalition (1.3x), Complexity (0.8x), Policy Window Months (1.4x), Litigation Vector (1.2x), Media Gap (1.0x), Implementation Difficulty (0.9x), Reversibility (1.1x). Weighting rationale tied to framework's institutional adoption and midterm-cycle goals.
+2. **Reranking from prior items**: Disability Rights (41-B) ranks first overall at 87.1 — highest reversibility + fastest research + highest media gap + NVRA-SSA litigation angle. Voting Systems (38-B) ranks second at 84.1 — Callais ruling created a hard-deadline urgency not present when Item 12 was completed.
+3. **FISA June 12 deadline identified as the most time-locked single legislative window**: 45-day extension confirmed; domain 38-A must ship by May 25 to serve Senate contacts before the deadline.
+4. **Hybrid implementation architecture recommended**: Track A sequential for Voting Systems → Repro Rights → Labor Rights → Constitutional Architecture; Track B parallel for FISA Intel Oversight (June 12 hard deadline) + Tribal Sovereignty (*Trump v. Barbara* ruling trigger).
+5. **Six decision gates defined**: FISA outcome, *Trump v. Barbara* ruling, Phase 1 Week 6 feedback, SAVE Act Senate action, 2026 midterm results, Callais redistricting implementation pace.
+
+---
+
 ## May 5, 2026 — Item 44: Domain 41 Candidate Scoping (Exploration Queue Item 44)
 
 **Session type**: General Research Agent — Domain 41 candidate analysis for post-Phase-1-distribution Phase 2 expansion planning
