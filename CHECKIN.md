@@ -1,3 +1,60 @@
+## Since Last Check-in (Session 780 — 2026-05-05 20:34–22:00 UTC) — Exploration Queue Deepening: Stockbot Gate 1 + Manufacturing Operations
+
+### ✅ SESSION 780 COMPLETE — Executed 2 parallel exploration queue research tasks (stockbot Gate 1 failure recovery deep analysis + mfg-farm 100-unit manufacturing operations design). Both production-ready for post-May-12 and post-test-print execution.
+
+**Work Accomplished**:
+
+1. **✅ Exploration Queue Item 1: Stockbot Gate 1 Failure Recovery Roadmap (Deep Analysis)** 
+   - **Deliverable**: `projects/stockbot/research/gate-1-recovery-deep-analysis.md` (6,591 words, extended analysis with decision trees)
+   - **Core Output**: Five distinct failure modes (timing artifact FM1 50–60%, infrastructure FM2 10–15%, regime suppression FM3 15–20%, design ceiling FM4 20–25%, execution failure FM5 5–10%) with distinguishing SQL queries for rapid classification on May 12
+   - **Recovery Options Matrix**: 5 options with engineering hours and pass probability:
+     - Option 1 (wait for h=10): 0 hrs, 85–90% pass probability
+     - Option 2 (threshold reduction): 1.5–2 hrs, 72–82%
+     - Option 3 (HMM regime): 4–8 hrs, 68–78%
+     - Option 4 (multi-ticker MSFT+QQQ): 5–8 hrs, 82–90%
+     - Option 5 (MTF intraday): 8–14 hrs, 75–85%
+   - **Microstructure Analysis**: SPY floors at 0.2% minimum more often than AAPL; QQQ's 19–24% vol matches lgbm_ho sweet spot; both complementary to AAPL in different regimes
+   - **Timeline Variants**: 4 paths (wait/threshold/expansion/MTF) with calendar milestones from May 12 failure to September–December 2026 live trading
+   - **Key Assumption Audit**: 9 critical assumptions (Jetson uptime, Alpaca auth, SELL logic, training script, capital availability, VIX window data, MSFT/QQQ backtest pass, Gate 2 Sharpe, engineering bandwidth)
+   - **Business Value**: Eliminates May 12 post-analysis paralysis; enables immediate recovery decision-making if Gate 1 fails; all 5 scenarios pre-analyzed with go/no-go thresholds
+   - **Status**: Production-ready for May 12 deployment
+
+2. **✅ Exploration Queue Item 2: Mfg-Farm 100+ Units/Week Manufacturing Operations Design**
+   - **Deliverables**: 
+     - `projects/mfg-farm/research/100-unit-operations-blueprint.md` (5,924 words)
+     - `projects/mfg-farm/research/scaling-transition-roadmap.md` (3,355 words)
+     - `projects/mfg-farm/research/cost-model-spreadsheet-100unit.csv` (cost model across 20–200 units/week)
+   - **Key Findings**:
+     - **Print Farm Recommendation**: Bambu P1S standardization for print farm; Prusa MK4S backup comparison; second printer trigger = 14+ hours/day utilization for 2 consecutive weeks
+     - **3PL Not Viable Below 150+ Units/Week**: ShipMonk all-in cost is $8.50–$11/order vs. $4.80/order in-house. At 100 units/week (430 orders/month), 3PL costs $1,600–$2,700/month extra. In-house fulfillment correct through Year 1.
+     - **ShipStation Upgrade Trigger**: Pirate Ship fine for launch; upgrade to ShipStation ($29.99/month) at 75+ orders/week for full Etsy API sync
+     - **Labor Economics**: Margin dip at 100 units/week (60%) recovers to 65% at 200 units/week. Part-time assistant becomes viable at 80–100 units/week (~16 hours/week at $15/hr).
+     - **Facility Scaling Roadmap**: Test print → Month 1–2 single printer (20 units/week home shop) → Month 3–4 add 2nd printer (50 units/week) → Month 5–6 dedicated facility (100+ units/week) → Year 2 multi-product portfolio (500+ units/week)
+     - **Critical Constraint**: Under-capitalization is named failure mode. Do not buy equipment before Month 1 actual sales data proves demand.
+   - **Business Value**: Enables informed equipment decisions post-test-print; identifies hiring ROI breakpoints; prevents under-capitalization (common 3D print business failure); clarifies multi-product portfolio timing
+   - **Status**: Production-ready for immediate post-test-print execution planning
+
+**Project Status Update**:
+- **stockbot**: Gate 1 recovery strategies complete (5 options pre-analyzed). Awaiting May 12 checkpoint. If Gate 1 fails, recovery playbook ready for immediate execution.
+- **resistance-research**: Awaiting user distribution path decision (A / A+37 / B). Phase 1 baseline metrics + attribution framework from Session 778 available for Day 0 launch operationalization.
+- **mfg-farm**: 100-unit operations design complete. Test print is current blocker. Upon completion, operations planning can proceed immediately to Month 1 production launch.
+- **All other projects**: Unchanged (awaiting user decisions or May 6/May 12 events)
+
+**Items Still Needing Your Input**:
+1. **May 6 13:30 UTC**: Verify Alpaca DTBP resets to >0. Config replacement ready (`active-sessions-2session.json` exists), user restarts engine.
+2. **resistance-research**: Decide distribution path (A / A+37 / B) → Phase 1 execution + baseline metrics activation
+3. **mfg-farm**: Execute test print → Month 1 production launch planning + operations implementation
+4. **stockbot**: Review CODE_REVIEW_SYNTHESIS.md architecture decisions (ARCH-1 through ARCH-7) for guidance confirmation before May 12
+
+**Status Summary**:
+- Exploration queue advanced 2 items to production-ready; 4 items remain (3+ required per protocol, so queue depth is healthy)
+- System remains at maximum execution readiness pending user distribution path and May 6 DTBP reset
+- Next autonomous work: May 12 Gate 1 evaluation + contingency analysis, or upon test print completion (mfg-farm operations), or when resistance-research path is decided
+
+**Token Usage**: Session 780 used ~158K tokens (2 parallel research agents, deep analysis + manufacturing operations design)
+
+---
+
 ## Since Last Check-in (Session 779 — 2026-05-06 00:00+ UTC) — Resistance-Research Phase 1 Block 3 Email Verification Complete
 
 ### ✅ SESSION 779 COMPLETE — Verified Phase 1 Batch 1 contact emails and updated execution infrastructure. System remains at maximum execution readiness pending user distribution path decision.
