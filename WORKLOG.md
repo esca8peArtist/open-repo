@@ -6,6 +6,69 @@
 
 ---
 
+## 2026-05-05 10:20–10:55 UTC — Session 744 — Exploration Queue Item 41: Gate 1 Monitoring Automation
+
+**Session Work**:
+- ✅ **Orientation**: Read ORCHESTRATOR_STATE.md, Session 743 complete. All projects blocked on user input. Pre-market health check scheduled 13:00 UTC (2.5h away). Identified Item 41 (stockbot Gate 1 automation) as autonomous work not blocked by user decisions.
+- ✅ **Item 41 Scope Verification**: Reviewed gate-1-contingency-playbook.md (1,010 lines) to extract all decision thresholds, scenarios, queries, and troubleshooting procedures.
+- ✅ **Database Schema Verification**: Confirmed stockbot.db exists with 49 trades (April 29), correct schema with all required columns (timestamp, action, ticker, fill_price, realized_pnl, strategy_name, mode, etc.).
+
+**✅ Exploration Item 41 Execution — Gate 1 Monitoring Automation COMPLETE**
+
+**Three production-ready deliverables committed (commit d2700cb)**:
+
+1. **`scripts/gate-1-monitoring-queries.sql`** (500+ lines, 17 queries)
+   - Master checkpoint query: determines scenario via aapl_model_sells count
+   - Scenario A verification (4 queries): round trip quality, dual-session contribution, fill quality gate, baseline P&L snapshot
+   - Scenario B disambiguation (3 queries): April 29 AAPL position status, signal threshold analysis, capital redeployment verification
+   - Scenario C disambiguation (2 queries): May 5 liquidation fill count, signal generation status
+   - Supporting queries: slippage monitoring, model drift detection (Z-score)
+   - All parameterized with inline comments mapping to contingency playbook sections
+   - Tested against stockbot.db schema; produces expected output for April 29 data
+
+2. **`scripts/gate1_dashboard.sh`** (350+ lines, fully executable)
+   - Main orchestration: runs checkpoint query, parses CSV-formatted output
+   - Infrastructure checks: Jetson /api/ready connectivity (sessions:2 verification), Alpaca account state (equity, buying_power, open positions)
+   - Scenario assignment logic: A (aapl_model_sells>=3 && confirmed_round_trips>=2), B (1-2 SELL fills), C (0 SELL fills)
+   - Color-coded terminal output: GREEN (Scenario A), YELLOW (Scenario B), RED (Scenario C)
+   - Scenario-specific decision recommendations (Proceed to Gate 2 planning / Diagnose pattern / Run 4-step diagnosis)
+   - Structured logging: logs/gate1_checkpoint_YYYYMMDD.txt with timestamps and all findings
+   - Exit codes: 0 (A/PASS), 1 (B/NEAR-MISS), 2 (C/FAR-MISS), 3 (ERROR)
+   - Made executable (+x permissions); tested logic with April 29 sample data — scenario assignment correct
+
+3. **`docs/gate-1-escalation-runbook.md`** (650+ lines, production-ready)
+   - **Three-level escalation ladder**: Level 1 (self-check, 5-15 min), Level 2 (remote diagnosis, 15-45 min), Level 3 (manual intervention, 1-4 hr)
+   - **Scenario B escalation** (near-miss diagnosis):
+     - Pattern B1 check: trading day count (8-9 days = timing only, no action; 10+ days = threshold/capital issue)
+     - Pattern B2 check: exit_confidence in logs (0.55-0.70 range = threshold too tight, apply -0.05 adjustment)
+     - Pattern B3 check: Alpaca buying_power (<$5K = capital issue, run DB sync + resubmit orders)
+     - Full procedures with exact bash commands and success criteria per pattern
+   - **Scenario C escalation** (far-miss diagnosis):
+     - C1 vs C2 disambiguation: confirm 19 May 5 SELL fills (C1=timing, C2=execution failure)
+     - **C2 four-step root cause diagnosis**: (1) Jetson connectivity, (2) signal generation count, (3) order submission verification, (4) VIX regime assessment
+     - **Level 3 remediation options**: C1 (HMM Phase 1 activation), C2 (Jetson restart), C3 (model file sync), C4 (signal threshold -0.05), C5 (multi-ticker expansion)
+     - Full procedures with exact Python/bash commands, expected output patterns, success/failure branches
+   - **Monitoring checkpoints table**: May 5-12 specific dates (May 6, 8, 9, 12) with check types and success criteria
+   - **Logging template** for WORKLOG.md entries per escalation event
+   - **Decision authority scope**: orchestrator (Level 1-3 self-checks, parameter changes <0.1), user (core model changes, position sizing, ticker expansion)
+
+**Architectural integration**:
+- Automates Section 9 (Pre-Checkpoint Verification Checklist) from gate-1-contingency-playbook.md
+- Integrates all Scenario A/B/C diagnosis procedures and thresholds from Sections 1-4
+- Provides go/no-go signal for May 12 20:00 UTC checkpoint without manual decision-making
+- Bridges dashboard output (Scenario assignment) to specific remediation actions (escalation runbook)
+
+**Quality verification**:
+- Database schema check: stockbot.db confirmed to have all required columns and 49 sample trades
+- Query logic test: master checkpoint query produces correct output format (dict with 5 fields)
+- Scenario assignment logic test: April 29 data (0 SELL fills) correctly produces Scenario C assignment
+- Bash syntax check: gate1_dashboard.sh is executable, runs without syntax errors
+- SQL verification: all 17 queries have correct syntax and map to actual schema columns
+
+**Next checkpoint**: May 12 20:00 UTC — orchestrator will run `./scripts/gate1_dashboard.sh` at market close to determine Gate 1 checkpoint status (Scenario A/B/C).
+
+---
+
 ## 2026-05-05 — Session 746 — Exploration Queue Execution: OpenRide Phase 2 Stakeholder Engagement & MVP Refinement Research
 
 **Session Work**:
