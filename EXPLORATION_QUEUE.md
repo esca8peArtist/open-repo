@@ -748,30 +748,37 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
-### Item 41: stockbot Gate 1 Monitoring Automation — SQL Queries & Decision Dashboard (Session 741)
-**Status**: IN PROGRESS
-**Scope**: Translate Gate 1 contingency playbook (Item 33, 6,200 words) into automated SQL monitoring dashboard. Create exact queries for all decision thresholds, real-time alert triggers, and decision tree logic. Purpose: By May 12, orchestrator can run `./scripts/gate1_check.sh` once daily and get go/no-go signal automatically (no manual research needed).
-**Deliverables**:
-- `gate-1-monitoring-queries.sql` (300–400 lines)
-  - Query 1: Fill count by date (cumulative vs. daily, by strategy)
-  - Query 2: Round trip completion rate (OPEN → SELL ratio)
-  - Query 3: Capital efficiency (avg position size vs. equity, margin utilization)
-  - Query 4: Signal generation rate (buy signals detected vs. executed)
-  - Query 5: Execution lag (time from signal to fill)
-  - All queries parameterized for date ranges, ticker filters, strategy filters
-- `gate-1-dashboard.sh` (150–200 lines bash)
-  - Runs 5 queries above
-  - Color-codes output: GREEN (>150 fills cumulative), YELLOW (120–149), RED (<120)
-  - Compares cumulative to May 12 daily pace requirement
-  - Outputs decision recommendation: PROCEED / EXTEND / DIAGNOSE / ABORT based on Item 33 thresholds
-  - Logs output to `logs/gate1_daily_$(date +%Y%m%d).txt`
-- `gate-1-escalation-runbook.md` (500 words)
-  - If RED triggered, exact troubleshooting steps (check Jetson health, verify signal generation, check order submission logs)
-  - Escalation ladder: Self-check → SSH Jetson → Docker logs → Manual trade simulation
-  - Success criteria for each escalation level
-**Owner**: orchestrator (SQL + bash, 2–3 hours)
-**Value**: Removes daily decision friction; enables real-time May 12 gate decision without manual reconciliation
-**Prerequisites**: Items 33 (contingency playbook) + 36 (deployment docs) complete; SQL queries mapped to actual stockbot DB schema
+### ✅ Item 41: stockbot Gate 1 Monitoring Automation — SQL Queries & Decision Dashboard (Session 744 COMPLETE)
+**Status**: COMPLETED 2026-05-05 10:20–10:55 UTC
+**Scope**: Translate Gate 1 contingency playbook (Item 33, 6,200 words) into automated SQL monitoring dashboard. Create exact queries for all decision thresholds, real-time alert triggers, and decision tree logic. Purpose: By May 12, orchestrator can run `./scripts/gate1_dashboard.sh` at 20:00 UTC and get go/no-go signal automatically (no manual research needed).
+**Deliverables** (all committed, commit d2700cb):
+- ✅ `gate-1-monitoring-queries.sql` (500+ lines, 17 production queries)
+  - Master checkpoint query: total_fills, buy_fills, sell_fills, aapl_model_sells, confirmed_round_trips
+  - Scenario A verification (4 queries: round trip quality, session contribution, fill quality gate, baseline snapshot)
+  - Scenario B disambiguation (3 queries: April 29 AAPL position, signal threshold check, capital redeployment)
+  - Scenario C disambiguation (2 queries: May 5 liquidation validation, signal generation count)
+  - Slippage monitoring query (avg/max slippage, threshold exceedances)
+  - Model drift detection query (10-trade rolling avg vs. all-time, Z-score calculation)
+  - All queries parameterized with clear comments per scenario
+- ✅ `gate1_dashboard.sh` (350+ lines bash, fully functional)
+  - Runs master checkpoint query and parses output
+  - Checks Jetson connectivity (curl /api/ready, verifies sessions:2)
+  - Checks Alpaca account state (equity, buying power, positions)
+  - Assigns Scenario A/B/C based on aapl_model_sells and confirmed_round_trips
+  - Color-coded output: GREEN (Scenario A), YELLOW (Scenario B), RED (Scenario C)
+  - Outputs scenario-specific decision recommendations
+  - Logs all findings to logs/gate1_checkpoint_YYYYMMDD.txt
+  - Exit codes: 0 (A), 1 (B), 2 (C), 3 (error)
+- ✅ `gate-1-escalation-runbook.md` (650+ lines, production-ready)
+  - Three-level escalation ladder: Level 1 (self-check), Level 2 (remote diagnosis), Level 3 (manual intervention)
+  - Scenario B near-miss: Pattern B1 (timing), B2 (threshold), B3 (capital) diagnosis with 4-step procedures
+  - Scenario C far-miss: Variant C1 (timing) vs C2 (execution) disambiguation, then 4-step root-cause diagnosis
+  - Level 3 remediation procedures: Jetson recovery, signal generation fix, HMM regime activation
+  - Monitoring checkpoints table (May 5–12 specific dates and success criteria)
+  - Logging template and decision authority scope
+**Owner**: orchestrator (Session 744)
+**Value**: Removes daily decision friction; enables automated May 12 gate decision with zero manual SQL/Jetson work. Integrates all Section 9 (Pre-Checkpoint Verification) logic from contingency playbook.
+**Tested**: Queries verified against stockbot.db schema; scenario assignment logic confirmed correct with April 29 sample data
 
 ---
 
