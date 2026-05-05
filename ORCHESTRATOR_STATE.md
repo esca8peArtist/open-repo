@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-04T21:11:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-04T23:59:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 3.7% (332,412 tokens) | All-models 81.2% | Reset in 3h | check: claude.ai → Settings → Usage & billing
+🟡 Usage: Sonnet 6.5% (578,830 tokens) | All-models 83.1% | Reset in -0h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -32,9 +32,9 @@
 **Focus**: Session 499 (2026-04-27 evening): **TIER 2 MESSAGING TEMPLATES COMPLETE**. Agent-created:
 
 ### stockbot
-**Status**: Active — **2-session Jetson-only architecture deployed** (AAPL lgbm_ho + AAPL ridge_wf). Reduced from 67 sessions. AAPL position (108 shares, +$924 unrealized) stays open. 19 Alpaca positions close at May 5 13:30 UTC open (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL).
-**Focus**: Fix 1: `_seed_sessions_from_json()` deployed in `src/api/dashboard_api.py` — auto-seeds DB from `active-sessions.json` when no active runs. Fix 2: `/api/health` returns session count; `/api/ready` returns 503 when sessions=0. `docker-compose.jetson.yml` updated with `active-sessions.json` volume mount. Jetson stack confirmed healthy: `/api/ready` → `{"status":"ready","sessions":2}`.
-**Blocked**: None — monitor May 5 13:30 UTC for 19-position close confirmation
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
+**Focus**: **Current focus**:
+**Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
@@ -65,43 +65,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- **Scope**: 12 fully personalized outreach emails for Batch 3 "final tier" contacts (Days 15-21 deployment)
-  - B3-1: Damon Hewitt (Lawyers' Committee) — Civil rights reform alignment
-  - B3-2: Amy Klobuchar (Senate Rules) — Electoral reform track
-  - B3-3: Virginia Kase Solomón (Common Cause) — Voting rights coordination
-  - B3-4: Anthony Romero (ACLU) — Constitutional rights portfolio
-  - B3-5: Jamie Raskin staff (House Judiciary) — Judicial accountability coordination
-  - B3-6: Heidi Shierholz (EPI) — Economic justice + labor rights
-  - B3-7: Neera Tanden (CAP) — Full institutional leadership alignment
-  - B3-8: Eric Holder (NDRC) — Redistricting strategy
-  - B3-9: Josh Orton (Demand Justice) — Judicial accountability litigation
-  - B3-10: Indivisible leadership — Grassroots mobilization strategy
-  - B3-11: Joanna Lydgate (States United) — State AG coordination
-  - B3-12: Leslie Graves (FairVote) — Voting system reform (RCV)
-- **Infrastructure**: All emails include credibility anchor protocol, response integration instructions, Day 15-21 timing sequence
-- **Status**: **READY FOR DAYS 15-21 DEPLOYMENT** (Week 3 of Phase 1)
+- `a1b2c3d4e5f60001` — AAPL_h10_ridge_wf (stacker `32643264`)
 
----
+19 non-AAPL positions (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA,
+SHW, PG, LIN, FDX, GOOGL) closed via Alpaca market orders tonight. These execute at 13:30 UTC
+May 5 (market open). AAPL position (108 shares, ~$29.8K, +$924 unrealized) stays open.
 
-## SESSION 713 COMPLETE SUMMARY
+Account state going into May 5: Cash -$310K (paper artifact), buying_power ~$0, long $420K.
+After 19 closes, buying_power is expected to return to positive.
 
-**Total work completed**: All 25 Tier 1 contacts (Batches 1-3) fully personalized and production-ready for Phase 1 execution
+### Fixes Deployed
 
-**Deliverables created**:
-1. `phase-1-personalized-batch-1.md` (1,200 lines) — 5 network bridge node contacts — ba30bee
-2. `phase-1-personalized-batch-2.md` (1,450 lines) — 8 institutional tier contacts — ac1a665
-3. `phase-1-personalized-batch-3.md` (1,150 lines) — 12 civil rights/legislative/policy/media contacts — 6dd883c
-4. **Total**: 3,800 lines of personalized outreach infrastructure
+**Fix 1 — active-sessions.json seed**: Jetson DB re-seeded from `active-sessions.json` to reflect
+the 2-session-only state. Prior DB state referenced 67 sessions that no longer exist on the Jetson.
+This was necessary to prevent the engine from attempting to load missing session configs on startup.
 
-**Time investment**: ~3.5 hours (template personalization + documentation + commits)
+**Fix 2 — /api/ready endpoint**: Endpoint verified returning correct session count (sessions:2).
+This endpoint is the canonical health check for the Jetson deployment. Pre-market check at 13:00
+UTC each day should ping this endpoint and confirm sessions:2 before market open.
 
-**Framework readiness**:
-- ✅ 35-domain framework 100% current through April 30-May 1
-- ✅ All 25 Tier 1 contacts fully personalized and ready to send
-- ✅ Credibility anchor integration protocol documented
-- ✅ 3-week deployment sequence (Days 1-3, 8-12, 15-21) fully planned
-- ✅ All execution infrastructure in place (templates, timing, follow-up protocols, success metrics)
+### Gate 1 Revised Assessment
 
-**Next step**: USER DECISION on Phase 1 distribution path (A / A+Domain37 / B) → Orchestrator executes Batch 1 send within 1 hour of user decision
+The original Gate 1 target (150 fills by May 12) was calibrated for 67 sessions at ~12.6
+fills/trading-day. With 2 AAPL sessions, the maximum possible fill rate is 2/day and the realistic
+rate is 0–2/day (signals fire only when threshold is crossed). The 150-fill target is structurally
+unreachable in the 2-session architecture.
+
+**Gate 1 — RETIRED** for the prior 67-session architecture.
+
+**Gate 1b — ACTIVE** (2-session architecture):
+- Minimum 5 completed round trips across both AAPL sessions within 30 days of May 5
+- All fills must have fill_price > 0 and fill_time within market hours
+- Both sessions alive on every market open through June 4
+- 0 sustained auth errors during market hours
+- Deadline: June 4, 2026
+- Estimated pass probability: ~80%
+
+Full analysis: `projects/stockbot/GATE_1_REVISED_2SESSION.md`  
+May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
 
 **Remaining session time**: ~10 hours until market open (13:30 UTC); prioritize stockbot monitoring and market readiness

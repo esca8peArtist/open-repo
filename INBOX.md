@@ -12,10 +12,7 @@
 ## New Items
 <!-- Add tasks here. Format: - [date] [description] -->
 
-<!-- Processed 2026-04-25 (manual session):
-- [2026-04-25 19:59] New priorities: resistance-research (1), stockbot (2), cybersecurity-hardening (3, new). Research Palantir surveillance + private/anonymous comms → added cybersecurity-hardening project to PROJECTS.md, updated priority order
-- [2026-04-25 19:54] Pause open-source-rideshare → Status set to Paused in PROJECTS.md, moved to bottom of priority order
--->
+
 
 
 
