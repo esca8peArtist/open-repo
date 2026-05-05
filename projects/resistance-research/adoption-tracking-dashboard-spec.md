@@ -1,632 +1,428 @@
 ---
 title: "Adoption Tracking Dashboard Specification"
-date: April 30, 2026
+date: 2026-05-05
 status: production-ready
 phase: Phase 1 measurement tooling
-companion: post-distribution-impact-measurement-framework.md
-cross_references:
-  - measurement-and-iteration-framework.md
-  - post-distribution-tracking.md
-  - tracking-template.json
-  - DISTRIBUTION_OUTREACH_CONTACTS.md
+distribution_paths: A / A+37 / B (path-independent)
+companion_files:
+  - post-distribution-impact-measurement.md          # Sector pathways, metrics framework, baselines
+  - post-distribution-impact-measurement-framework.md # Attribution methodology, four attribution tests
+  - impact-measurement-tools-inventory.md            # Full tools inventory with cost and setup
+  - tracking-template.json                           # Structured tracking schema
+  - DISTRIBUTION_OUTREACH_CONTACTS.md                # Outreach contact list for scorecard population
+scope: "Data source specifications; measurement tools; tracking template; reporting cadence; dashboard structure for visualization"
 ---
 
-# Adoption Tracking Dashboard — Tool Specifications and Templates
+# Adoption Tracking Dashboard — Specification and Implementation Guide
 
-**April 30, 2026**
+**May 5, 2026 — Phase 1 Execution Prep. Activate on distribution launch.**
 
-This document specifies the tooling architecture and operational templates for measuring institutional adoption of the 35-domain Democratic Renewal Framework across all three distribution paths. It translates the measurement framework into concrete instruments: what to build, what to track, where to log, and what the outputs look like at 30, 90, and 180 days.
+This document specifies the tooling architecture, operational templates, reporting cadence, and dashboard visualization structure for measuring institutional adoption of the 35-domain Democratic Renewal Framework across all three distribution paths. It translates the measurement framework from `post-distribution-impact-measurement.md` into concrete instruments: what to build on Day 0, what to track at each milestone, and what the outputs look like at 7 days, 30 days, 90 days, and 180 days.
 
-The dashboard is designed to be operated with free or low-cost tools by a solo researcher with 2-3 hours of monitoring time per week.
+The system is designed to operate with free or low-cost tools on 2–4 hours of monitoring time per week. All components can run in a spreadsheet or Obsidian database without additional software. Optional paid enhancements are flagged explicitly.
 
 ---
 
-## Dashboard Architecture Overview
+## Dashboard Architecture
 
-The adoption tracking system has five components, each addressing a distinct measurement problem:
+The adoption tracking system has six components.
 
 | Component | What it measures | Primary tool | Update cadence |
 |-----------|-----------------|--------------|---------------|
-| 1. Citation Monitor | When the framework appears in published work | Google Alerts + CourtListener + Overton | Daily/weekly |
-| 2. Adoption Scorecard | Who is using it and at what depth | Manual contact log | Per event |
+| 1. Citation Monitor | When and where the framework appears in published work | Google Alerts + CourtListener + Overton | Daily automated; weekly manual review |
+| 2. Adoption Scorecard | Who is using it and at what depth | Manual contact log (spreadsheet) | Per event |
 | 3. Domain Heat Map | Which domains are generating engagement | Aggregated from citation log | Weekly |
-| 4. Failure Mode Detector | Signs of misapplication or stalled diffusion | Structured review of citation log | Monthly |
-| 5. Network Cascade Tracker | Second- and third-order amplification | Bridge node log | Per event |
-
-These five components can run entirely in a spreadsheet or Obsidian database without any additional software. Optional enhancements for network visualization and citation aggregation are noted where applicable.
+| 4. Failure Mode Detector | Signs of misapplication, decay, or stalled diffusion | Structured audit of citation log | Monthly |
+| 5. Network Cascade Tracker | Second- and third-order amplification from bridge nodes | Bridge node contact log | Per event |
+| 6. Legislative and Policy Monitor | Bills, regulations, or policies incorporating framework language | LegiScan API + state leg databases | Weekly automated |
 
 ---
 
-## Component 1: Citation Monitor — Setup and Alert Templates
+## Component 1: Citation Monitor
 
-### Google Alerts (setup time: 15 minutes)
+### 1.1 Google News Alerts (Setup time: 15 minutes; Cost: free)
 
-Create the following alerts at news.google.com/alerts with daily delivery to a dedicated email folder:
+Create at news.google.com/alerts with daily email delivery to a dedicated folder (e.g., `monitoring/google-alerts/`).
 
-**Alert set A — Framework title and primary coinages**
+**Set A — Framework identity**
 - `"democratic renewal proposal"`
 - `"35-domain democratic"`
 - `"democratic renewal framework" democracy`
 - `"domain 37" election interference 2026`
 
-**Alert set B — Key analytical coinages in the corpus**
+**Set B — Framework-specific coinages**
 - `"ICE-at-polls" election`
 - `"NVRA quiet period" 2026`
-- `"prosecutorial weaponization" SPLC`
 - `"state legislative autocratization"`
-- `"appellate capture" judicial independence 2026`
+- `"appellate capture" judicial independence`
+- `"constraint failure" executive democratic`
+- `"fiscal authority bypass" OMB`
 
-**Alert set C — Named bridge node contacts (for detecting second-order citation)**
-- `Chenoweth "nonviolent action" democracy 2026` (triggers if Chenoweth cites in new publication)
-- `"Just Security" "judicial independence" 2026`
+**Set C — Bridge node citations (second-order adoption detection)**
 - `"Brennan Center" "voting rights" "democratic renewal"`
+- `"Just Security" "judicial independence" 2026`
+- `"Democracy Docket" "voter roll" SAVE 2026`
 
-Set all alerts to "All results" (not "Best results") and configure to email folder `monitoring/google-alerts/`.
+Configuration: set all alerts to "All results" (not "Best results") and weekly digest format. Note: Google Alerts has known coverage gaps for PDF documents and legal filings — supplement with CourtListener for litigation monitoring.
 
-### Google Scholar Alerts (setup time: 10 minutes)
+### 1.2 Google Scholar Alerts (Setup time: 10 minutes; Cost: free)
 
 At scholar.google.com/scholar_alerts, create alerts for:
 - `"democratic renewal proposal"`
 - `"35-domain" democracy institutional`
 - `"domain 6 judicial independence" democratic`
+- `"state legislative autocratization" institutional`
 
-Scholar alerts deliver when new academic papers matching the query are indexed. These will be sparse for the first 3-4 months; the absence of Scholar alerts before Month 3 is not a signal of failure.
+Scholar alerts deliver when new academic papers matching the query are indexed. These will be sparse for the first 3–4 months — absence before Month 4 is not a failure signal. Scholar alerts are the primary detection mechanism for the 12–24 month law review adoption window.
 
-### CourtListener RECAP Search Alerts (setup time: 20 minutes)
+### 1.3 CourtListener RECAP Search Alerts (Setup time: 20 minutes; Cost: free, 5 alerts/day on free tier)
 
-At courtlistener.com, create saved searches for the following and enable email alerts:
+At courtlistener.com, create saved searches with email alerts:
 
 **Search 1 — Framework title**
-Query: `"democratic renewal proposal"` 
+Query: `"democratic renewal proposal"`
 Scope: All federal courts
 
-**Search 2 — Key domain phrases in litigation context**
-Query: `"ICE at polls" OR "NVRA quiet period" OR "35-domain" election 2026`
+**Search 2 — Domain-specific litigation phrases**
+Query: `"ICE at polls" OR "NVRA quiet period" OR "SAVE database" voter roll 2026`
 Scope: All federal courts
 
-**Search 3 — Named case dockets from litigation tracker**
-For each case in `litigation-tracker-2026.md` at Tier A priority, bookmark the CourtListener docket page and check monthly for new filings. Key dockets to monitor: Wilcox/Slaughter (independent agency removal), any AG-filed election security cases, SAVE Act litigation.
+**Search 3 — Active dockets from litigation tracker**
+For each Tier A case in `litigation-tracker-2026.md`, bookmark the CourtListener docket page. Check monthly for new filings. Priority dockets: Wilcox/Slaughter (independent agency removal), any AG-filed SAVE Act litigation, Oregon 9th Circuit voter roll appeal (oral argument May 19, 2026).
 
-CourtListener's RECAP alerts are the equivalent of Google Alerts for federal court filings. New alerts mean a filing matching the search terms has been docketed — download the document and review for framework language.
+**Search 4 — Amicus brief monitoring**
+Query: `"amicus" "voting rights" "democratic" 2026`
+Scope: Federal district and circuit courts
 
-### Overton.io (setup time: 30 minutes, requires account)
+CourtListener's RECAP alerts function as Google Alerts for federal court filings. A RECAP alert means a document matching search terms has been docketed — download and review for framework language immediately.
 
-Register at overton.io. If affiliated with a university library with Overton access, use institutional login (SAGE partnered with Overton to provide free researcher access at partner institutions). If no institutional access, use the free public search tier.
+### 1.4 Overton.io (Setup time: 30 minutes; Cost: free public tier; institutional access via SAGE partnership)
 
-Create an impact tracking alert for the framework. Overton searches its 21 million+ policy document database (government reports, think tank publications, IGO documents) for citations. Due to the 6-18 month indexing lag, do not check Overton before Month 4. Set a calendar reminder for Month 4, Month 8, and Month 12 to run Overton searches.
+Register at overton.io. If affiliated with a university library with Overton institutional access, use that login. The free public tier provides limited search access; institutional access provides full 21 million+ document database search with export.
 
-**Monthly Overton search template** (run at Month 4+):
-- Search: `"democratic renewal" proposal institutional`
-- Filter by: document type (government, think tank, IGO separately)
-- Export results to `monitoring/overton-results-[date].csv`
+Overton indexes policy documents (government reports, think tank publications, IGO documents, NGO reports) and tracks citations. The indexing lag is 6–18 months, making Overton useful beginning at Month 4.
 
-### LegiScan API (setup time: 30 minutes for account + search setup)
+**Monthly search template (run at Month 4, Month 8, Month 12):**
+- Primary search: `"democratic renewal" proposal institutional`
+- Secondary search: `"state legislative autocratization" OR "appellate capture" OR "ICE at polls"`
+- Filter by document type separately: government, think tank, intergovernmental organization
+- Export results to `monitoring/overton-results-[YYYY-MM].csv`
 
-Register at legiscan.com/legiscan-register (free tier: 30,000 queries/month).
+Overton is the only tool that systematically indexes grey literature (think tank reports, NGO publications) for citation patterns. It is not a real-time monitor — it is a lagging indicator tool for confirming what the citation monitor detected months earlier.
 
-Create full-text saved searches for the following terms in priority states (CA, NY, MN, WI, PA, MI, CO, AZ, OH):
+### 1.5 LegiScan API (Setup time: 30 minutes for account; Cost: free tier = 30,000 API queries/month)
 
-**Search set A — Domain 1 / Domain 37 election language**
+Register at legiscan.com/legiscan-register.
+
+Create full-text saved searches in priority states (CA, NY, MN, WI, PA, MI, CO, AZ, OH, VA, NC, GA):
+
+**Set A — Domain 1 / 37 election language**
 - `"voter roll" purge SAVE 2026`
 - `"ICE" polling place election interference`
 - `"NVRA" voter removal quiet period`
+- `"election security" federal interference`
 
-**Search set B — Domain 33 state autocratization language**
+**Set B — Domain 33 state autocratization language**
 - `preemption "local government" ballot initiative restriction`
 - `"election administration" override legislature`
 
-**Search set C — Domain 27 academic freedom language**
-- `"viewpoint diversity" university funding`
-- `academic freedom "federal funding" compliance`
+**Set C — Domain 6 / 34 institutional authority language**
+- `"judicial independence" federal funding`
+- `"fiscal authority" executive impoundment`
+- `"independent agency" removal president`
 
-Set email alerts for daily notification when new or amended bills match searches. Log any alerts to Component 2 (Adoption Scorecard) under "Legislative sector."
+Configure daily email notifications for new or amended bills. Log any alert that matches to Component 2 (Adoption Scorecard) under the "Legislative sector" row.
 
 ---
 
-## Component 2: Adoption Scorecard — Template
+## Component 2: Adoption Scorecard
 
-The Adoption Scorecard is the central tracking document. Maintain as a spreadsheet or Obsidian table. One row per organization in the outreach universe.
+### Schema
 
-### Scorecard Schema
+Maintain as a Google Sheet or Obsidian database table. One row per organization in the outreach universe (populated from `DISTRIBUTION_OUTREACH_CONTACTS.md`).
 
 | Column | Description | Values |
 |--------|-------------|--------|
-| Organization | Full name | Text |
-| Tier | Influencer tier | 1 / 2 / 3 |
-| Primary domain(s) | Which domains are most relevant | Domain numbers |
-| Outreach date | Date of first contact | YYYY-MM-DD |
-| First response | Date of first substantive reply | YYYY-MM-DD or "None" |
-| Response type | Nature of first response | Reply / Material request / Methodology question / No response |
-| Adoption level | Current depth of engagement | 0 / 1 / 2 / 3 / 4 (see below) |
-| Adoption evidence | What documents the adoption | URL or file reference |
+| Organization | Full institutional name | Text |
+| Sector | AG / Law school / Think tank / Litigation org / Advocacy / Media | Category |
+| Tier | Outreach priority tier | 1 / 2 / 3 |
+| Primary domains | Relevant domain numbers | Domain list (e.g., "1, 37") |
+| Outreach date | Date of first contact attempt | YYYY-MM-DD |
+| Delivery confirmed | Date of confirmed delivery | YYYY-MM-DD or "Unconfirmed" |
+| First response | Date and type of first substantive reply | YYYY-MM-DD / reply type |
+| Adoption level | Current depth of engagement (0–4) | Integer |
+| Adoption evidence | URL or file path to supporting document | URL or file path |
+| Attribution tests passed | Which of the four attribution tests are met (1/2/3/4) | Comma-separated test numbers |
+| Tier classification | Tier 1/2/3/4 per `post-distribution-impact-measurement.md` Section 2 | 1 / 2 / 3 / 4 |
 | Last update | Date of last status change | YYYY-MM-DD |
-| Next action | What to do next | Text |
+| Next action | Required follow-up | Text |
 | Notes | Free text | Text |
 
-**Adoption level scale**:
-- 0: No engagement
-- 1: Reference — cited the framework in published work
-- 2: Framework — using the analytical structure in their own work
-- 3: Operational — domain analysis in active casework, testimony, or legislation
-- 4: Coalition — actively introducing the framework to other organizations
+**Adoption level scale (0–4):**
+- 0: No engagement (framework sent; no response)
+- 1: Awareness (confirmed receipt; substantive reply; no published output yet)
+- 2: Reference (cited or used vocabulary in published work)
+- 3: Operational (domain analysis in active casework, testimony, brief, or legislation)
+- 4: Coalition (actively introducing framework to other organizations; secondary distribution)
 
-### Pre-populated Scorecard Rows (Tier 1 Core)
+### Pre-Populated Tier 1 Rows
 
-Copy this table as the starting point; expand with full DISTRIBUTION_OUTREACH_CONTACTS.md list:
+Copy this table as starting point; extend with full contact list from `DISTRIBUTION_OUTREACH_CONTACTS.md`:
 
-| Organization | Tier | Primary domain(s) | Outreach date | Adoption level |
-|-------------|------|------------------|--------------|---------------|
-| Brennan Center | 1 | 1, 6, 29 | — | 0 |
-| Just Security | 1 | 28, 29 | — | 0 |
-| Democracy Docket | 1 | 1, 37 | — | 0 |
-| EPI | 1 | 17 | — | 0 |
-| Protect Democracy | 1 | All / 37 | — | 0 |
-| Campaign Legal Center | 1 | 1, 37 | — | 0 |
-| ACLU Voting Rights | 1 | 1, 37 | — | 0 |
-| Whitehouse office | 1 | 6, 29 | — | 0 |
-| Klobuchar office | 1 | 1, 27 | — | 0 |
-| Chenoweth / Nonviolent Action Lab | 2 | Resistance meta | — | 0 |
-| Heather Cox Richardson | 2 | All | — | 0 |
-| NAACP LDF | 3 | 1, 14, 22 | — | 0 |
-| Indivisible | 3 | Resistance meta | — | 0 |
-| AFL-CIO (via EPI) | 3 | 17 | — | 0 |
-| Democracy Docket Phase 2 (Domain 37 targeted) | 1 | 37 | — | 0 |
-
-### Aggregate Adoption Scorecard Targets
-
-Update this summary table monthly:
-
-| Metric | Day 30 target | Day 90 target | Day 180 target | Current count |
-|--------|--------------|--------------|---------------|--------------|
-| Total outreach sent | 125 | 125+ | 125+ | — |
-| Substantive responses received | 4-8 | 15-25 | — | — |
-| Level 1 adoption events | 1-2 | 5-10 | 15+ | — |
-| Level 2 adoption events | 0-1 | 3-5 | 8-12 | — |
-| Level 3 adoption events | 0 | 1-2 | 4-6 | — |
-| Level 4 adoption events | 0 | 0-1 | 1-2 | — |
-| Legal citations (court filings) | 0 | 0-1 | 1-3 | — |
-| Policy proposals citing framework | 0 | 0-1 | 1-3 | — |
-| Bridge node cascades confirmed | 0 | 1-2 | 2-4 | — |
+| Organization | Sector | Primary domains | Adoption level |
+|-------------|--------|----------------|----------------|
+| Brennan Center | Think tank | 1, 6, 29 | 0 |
+| ACLU | Litigation org | 16, 28, 29 | 0 |
+| Democracy Docket | Litigation org | 1, 33, 37 | 0 |
+| Protect Democracy | Think tank / litigation | 6, 28, 34 | 0 |
+| States United Democracy Center | Advocacy / think tank | 1, 33, 37 | 0 |
+| Just Security | Media / think tank | 6, 28, 29 | 0 |
+| Harvard Election Law Clinic | Law school | 1, 33, 37 | 0 |
+| Ohio State Election Law | Law school | 1, 37 | 0 |
+| NAACP LDF | Litigation org | 1, 29, 37 | 0 |
+| SPLC | Litigation org | 16, 28, 29 | 0 |
+| AFL-CIO | Advocacy / union | 34, 37, 4 | 0 |
+| SEIU | Advocacy / union | 4, 37 | 0 |
+| National Immigrant Justice Center | Litigation org / advocacy | 16, 28 | 0 |
 
 ---
 
-## Component 3: Domain Heat Map — Template
+## Component 3: Domain Heat Map
 
-The Domain Heat Map is a weekly-updated table showing which domains are generating engagement signals. Update every week; the shape of the heat map at Day 60 is the most important diagnostic for understanding diffusion patterns.
+### Structure
 
-### Heat Map Schema
+Maintain as a separate sheet or table. One row per domain (1–37+). Columns track citation events by month.
 
-One row per domain. Columns represent weeks since launch (W1 through W26 for 6-month tracking).
+| Domain | Domain name (abbreviated) | Month 1 citations | Month 3 citations | Month 6 citations | Month 12 citations | Dominant sector | Status |
+|--------|--------------------------|-------------------|-------------------|-------------------|---------------------|-----------------|--------|
+| 1 | Voting rights / NVRA | 0 | — | — | — | — | Baseline |
+| 6 | Judicial independence | 0 | — | — | — | — | Baseline |
+| 16 | Immigration enforcement | 0 | — | — | — | — | Baseline |
+| 29 | Prosecutorial independence | 0 | — | — | — | — | Baseline |
+| 33 | State legislative authority | 0 | — | — | — | — | Baseline |
+| 34 | Fiscal authority | 0 | — | — | — | — | Baseline |
+| 37 | Federal election interference | 0 | — | — | — | — | Baseline |
+| *(all domains)* | | 0 | — | — | — | — | Baseline |
 
-| Domain | Title | Tier | W1 | W2 | W3 | W4 | W8 | W12 | W16 | W20 | W26 |
-|--------|-------|------|----|----|----|----|-----|-----|-----|-----|-----|
-| D1 | Voting Rights | A | — | — | — | — | — | — | — | — | — |
-| D2 | Redistricting | C | — | — | — | — | — | — | — | — | — |
-| D3 | Campaign Finance | C | — | — | — | — | — | — | — | — | — |
-| D5 | Fiscal Reform | C | — | — | — | — | — | — | — | — | — |
-| D6 | Judicial Independence | A | — | — | — | — | — | — | — | — | — |
-| D9 | Federalism | C | — | — | — | — | — | — | — | — | — |
-| D11/31 | Healthcare | C | — | — | — | — | — | — | — | — | — |
-| D14 | Criminal Justice | C | — | — | — | — | — | — | — | — | — |
-| D15 | Environment | C | — | — | — | — | — | — | — | — | — |
-| D16 | Immigration | A | — | — | — | — | — | — | — | — | — |
-| D17 | Labor | B | — | — | — | — | — | — | — | — | — |
-| D19f | War Powers Reform | B | — | — | — | — | — | — | — | — | — |
-| D21/25 | Surveillance / FISA | B | — | — | — | — | — | — | — | — | — |
-| D23 | Trade Policy | B | — | — | — | — | — | — | — | — | — |
-| D27 | Higher Education | B | — | — | — | — | — | — | — | — | — |
-| D28 | War Powers / Venezuela | A | — | — | — | — | — | — | — | — | — |
-| D29 | Prosecutorial Weaponization | A | — | — | — | — | — | — | — | — | — |
-| D33 | State Autocratization | B | — | — | — | — | — | — | — | — | — |
-| D34 | Congressional Purse | C | — | — | — | — | — | — | — | — | — |
-| D35 | SCOTUS OT2026 | C | — | — | — | — | — | — | — | — | — |
-| D36 | AI Governance | B | — | — | — | — | — | — | — | — | — |
-| D37 | Election Interference | A | — | — | — | — | — | — | — | — | — |
+**Status field values:** Baseline / Active (1+ citation events) / Hot (5+ citation events) / Stalled (active at Month 3; zero events since) / Captured (cited by opposing actors).
 
-**Cell codes**:
-- (blank): No signal detected
-- `R`: Reply or inquiry received about this domain
-- `C1`: Level 1 citation confirmed
-- `C2`: Level 2 (framework) adoption confirmed
-- `C3`: Level 3 (operational) adoption confirmed
-- `L`: Legal citation in court filing
-- `P`: Policy proposal/bill citing domain
-
-**Tier column**: Tier A = fastest expected adoption; Tier B = moderate; Tier C = slower. Used to distinguish expected silence from unexpected silence.
-
-### Heat Map Interpretation Rules
-
-At Day 60, apply these interpretation rules:
-
-- **3+ domains generating signals, Tier A domains all generating signals**: Normal pattern — concentrate adoption facilitation on hot domains; cold domains at this stage are not failures.
-- **Only Tier A domains generating signals, no Tier B or C**: Expected at Day 60; do not act. Tier B/C domains adopt on a 90-180 day timeline.
-- **Tier A domain silent at Day 60 despite outreach to primary contact**: Investigate delivery. The most likely cause is delivery or filtering failure, not content failure.
-- **Domain 37 generating citation signals from general-audience channels but not from election-protection institutional contacts (Path A+37)**: Phase 2 Domain 37 targeted distribution is working; track election-protection institutional signals separately in a Domain 37 sub-tracker.
+**Monthly update protocol:** Aggregate all new citation events from the Citation Monitor (Component 1) into domain rows. Update the dominant sector column (which sector accounts for the most citations for that domain). Flag domains with zero events at Month 3 for targeted outreach.
 
 ---
 
-## Component 4: Failure Mode Detector — Monthly Review Checklist
+## Component 4: Failure Mode Detector
 
-Run this checklist in the first week of each month, starting at Month 2.
+### Monthly Audit Checklist
 
-### Monthly Failure Mode Review
+Run this checklist on the first Monday of each month. Document findings in `monitoring/failure-mode-log-[YYYY-MM].md`.
 
-**Date of review**: ________
+**False adoption check (citation without implementation)**
+- [ ] For each new Tier 1 citation event: does the citing institution's output use the domain's analytical structure, or only mention the framework in passing?
+- [ ] For each institution that cited the framework in Month N: does a search of their Month N+1 and N+2 outputs show continued vocabulary or structural use?
+- [ ] Flag: citation events where the citing institution shows no follow-on signal within 8 weeks
 
-**1. Partisan capture check**
+**Misinterpretation check**
+- [ ] For each new citation event from an organization on the capture risk list: review the citing context
+- [ ] Flag: any citation where the context inverts the domain's argument (see Section 4.2 in `post-distribution-impact-measurement.md`)
+- [ ] Log: any citation by a federal agency or executive-branch-aligned legal organization
 
-Total social media engagement events (Reddit upvotes, Substack shares, Twitter/Bluesky forwards) in the past month: ____
+**Partial adoption audit**
+- [ ] Count the number of domains with zero citation events as of this review date
+- [ ] Flag: any domain that has been zero since Month 3 (requires targeted re-outreach)
+- [ ] Flag: if 5 or fewer domains account for 80%+ of total citation events
 
-Total institutional engagement events (Tier 1-2 replies, material requests, methodology questions, citations) in the past month: ____
+**Decay detection**
+- [ ] For each confirmed Tier 1 or Tier 2 adoption event older than 6 months: has the institution produced any follow-on output in the last 3 months?
+- [ ] Flag: any institution with Level 2+ adoption score and no new output in 90 days
 
-Ratio (social : institutional): ____
-
-Threshold: If ratio exceeds 50:1, flag for "partisan capture early warning" and activate Protocol A (see below).
-
-**2. Domain concentration check**
-
-Total citation events identified in past month: ____
-
-Number of distinct domains cited: ____
-
-Top 4 domains by citation count: _____, _____, _____, _____
-
-Top 4 domains as % of all citations: _____%
-
-Threshold: If top 4 domains account for more than 70% of all citations, flag for "domain concentration" and prepare domain-specific briefs for under-cited structural domains.
-
-**3. Citation quality check**
-
-Total citations identified in past month: ____
-
-Classified as substantive (cites specific evidence, analytical claim, or cross-domain connection): ____
-
-Classified as label-only (names framework without specific content): ____
-
-Classified as mischaracterization (attributes claim framework does not make): ____
-
-Threshold: If label-only citations exceed 50% of total, flag for "framework flattening." If any mischaracterizations identified, flag for direct contact with citing organization.
-
-**4. Adoption depth check**
-
-Total confirmed adoption events (all levels): ____
-
-At Level 1 (citation): ____
-
-At Level 2 (framework): ____
-
-At Level 3 (operational): ____
-
-Threshold: If more than 80% of adoption events remain at Level 1 at Month 4, flag for "adoption depth stall" and prepare domain-specific implementation playbooks for highest-adoption organizations.
-
-**5. Bridge node status check** (see Component 5 for full bridge node log)
-
-Bridge nodes with confirmed second-order activation: ____
-
-Bridge nodes contacted but no second-order signal at 90 days: ____
-
-Threshold: If more than 3 bridge nodes have been contacted for 90+ days with no second-order signal, investigate whether outreach was received and review bridge node activation approach.
-
-**6. Domain 37 mischaracterization check**
-
-Any Domain 37 citations in past month: ____
-
-Citations using future-tense language for documented present-tense facts: ____
-
-Threshold: Any mischaracterization of Domain 37 content triggers immediate direct contact with the citing organization. Do not wait for the monthly review.
+**Capture risk review**
+- [ ] Review capture risk list (maintained in this document, Section 4.5 of `post-distribution-impact-measurement.md`)
+- [ ] Flag: any new citation by an organization added to the capture risk list in the previous month
 
 ---
 
-### Recovery Protocols (activate when failure mode thresholds are crossed)
+## Component 5: Network Cascade Tracker
 
-**Protocol A — Partisan Capture**
-Timeline: Execute within 2 weeks of detection.
-Actions: (1) Identify 3-5 Tier 1 think tank contacts not yet engaged; activate warm referral approach through existing relationships to reach them. (2) Contact the most credible existing Tier 1 adopter; ask if they would co-publish or co-endorse a brief that establishes the institutional context for the framework. (3) Temporarily reduce social media amplification until institutional credibility anchor is established.
+### Bridge Node Log
 
-**Protocol B — Domain Concentration**
-Timeline: Execute within 4 weeks of detection.
-Actions: (1) Prepare domain-specific briefs for the 3 structural domains with the lowest citation counts (typically Domains 5, 9, 34). (2) Route briefs to think tank contacts whose institutional focus matches those domains (EPI for D17, Brookings for D9 and D34, CAP for D5 and D11). (3) In follow-up outreach, lead with the hot domain that has already established credibility, then bridge to the structural domain: "The Domain 6 analysis has been getting attention at the Brennan Center; the Domain 34 analysis uses the same evidentiary standard and addresses why the litigation wins need the fiscal architecture to consolidate them."
+Bridge nodes are institutions whose adoption of the framework triggers secondary adoption across their networks. They are not just adopters — they are amplifiers. The three primary bridge node categories are Tier 1 think tanks (Brennan Center, CAP, Protect Democracy), NAAG-affiliated AG offices, and major journalism outlets (ProPublica, The Atlantic, Democracy Docket's media partnerships).
 
-**Protocol C — Framework Flattening**
-Timeline: Execute within 6 weeks of detection.
-Actions: (1) Create a "What the Framework Actually Argues" one-pager that foregrounds the cross-domain synthesis and the wave-sequencing logic — not additional evidence, but the analytical architecture that distinguishes this framework from a domain list. (2) Send to organizations currently at Level 1 adoption with an invitation to engage with the analytical architecture, not just the domain evidence. (3) Consider a Substack post that explicitly addresses the framework's cross-domain logic.
+**Bridge node log schema:**
 
-**Protocol D — Adoption Depth Stall**
-Timeline: Execute at Month 4 if Level 2+ adoption events are below target.
-Actions: (1) For each Level 1 adopter who has cited the framework, prepare a tailored domain brief for their next publication or campaign. Frame it as supporting their ongoing work, not asking them to do more. (2) Identify whether any Level 1 adopter is working on a project where Level 3 adoption (operational integration) is structurally possible — this requires knowing their current workplan, which requires active relationship maintenance. (3) Consider a training webinar or briefing for the 3-5 organizations with highest Level 1 engagement, positioned as "deeper engagement for organizations already using the framework."
+| Bridge node | Contact date | First engagement | Secondary contact identified | Secondary contact date | Secondary output date | Cascade depth |
+|-------------|-------------|-----------------|-----------------------------|-----------------------|----------------------|---------------|
+| Brennan Center | — | — | — | — | — | 0 |
+| California AG | — | — | — | — | — | 0 |
+| ProPublica | — | — | — | — | — | 0 |
+| *(expand from contact list)* | | | | | | |
 
----
+**Cascade depth definition:**
+- Depth 0: Received framework, no output
+- Depth 1: Published output using framework analysis
+- Depth 2: Their output was cited by another institution (detected through citation monitor)
+- Depth 3+: Third-order citation chain established
 
-## Component 5: Network Cascade Tracker — Bridge Node Log
-
-One entry per priority bridge node. Copy the template for each node.
-
-### Bridge Node Entry Template
-
-```
-BRIDGE NODE: [Name / Organization]
-Influencer tier: [1 / 2 / 3]
-Network reach: [Estimate — how many people does their output reach?]
-Most relevant domains: [Domain numbers]
-
-CONTACT STATUS
-First contact date: [YYYY-MM-DD or "Not yet contacted"]
-Contact method: [Email / Warm referral / Conference / Other]
-First response: [Date and nature, or "None yet"]
-
-FIRST-ORDER SIGNAL
-Has the node engaged substantively with the framework? [Yes / No / In progress]
-Evidence: [Description of engagement or "None"]
-
-SECOND-ORDER SIGNAL
-Has the node used the framework in their own published or public work? [Yes / No / Not yet]
-If yes:
-  Date: 
-  Form: [Publication / Speech / Training material / Brief / Social media / Other]
-  Venue/URL:
-  Estimated reach of second-order use:
-  
-THIRD-ORDER SIGNALS
-[Log downstream citations to the node's second-order work — date, who, where]
-  
-CASCADE DEPTH: [Count of citation generations: 1 = only bridge node cited, 2 = one downstream, etc.]
-
-CASCADE FAILURE NOTE
-If no second-order signal by Day 90: [Yes / No / Pending]
-  Probable cause (if known):
-  Alternative activation path:
-```
-
-### Pre-populated Bridge Node Log — Priority Seven
-
-**Node 1: Erica Chenoweth / Harvard Nonviolent Action Lab**
-- Network reach: 50,000+ organizer network direct; hundreds of thousands via academic citation trail and media appearances
-- Most relevant domains: Resistance meta-analysis (3.5% threshold), Domains 7, 33
-- Why priority: A Chenoweth citation triggers simultaneous cascade to political science faculty (via journal citation), organizer networks (via Indivisible and M4BL), and graduate students (via syllabi). This is the highest single-node cascade potential in the bridge node map.
-- Contact approach: Do not cold-contact until one published academic or high-quality journalistic citation exists. Approach with that citation as credibility anchor.
-
-**Node 2: Brennan Center (Waldman / Weiser) — Congressional Staff Pipeline**
-- Network reach: All Hill staff who read Brennan Center reports; direct relationships with Senate Judiciary committee staff
-- Most relevant domains: 1, 6, 29
-- Why priority: A Brennan Center brief citing the framework reaches 435 congressional offices that receive Brennan Center material. The cascade from Brennan Center to Hill staff to committee hearing materials is the most institutionally consequential path in the map.
-- Contact approach: Brennan Center is already in Tier 1 outreach. Primary signal to monitor: brennancenter.org/our-work/research-reports (weekly).
-
-**Node 3: Ryan Goodman / Just Security**
-- Network reach: National security attorneys, Senate Intelligence and Judiciary staff, federal judicial clerks, international law scholars
-- Most relevant domains: 28, 29 (editorial focus of Just Security)
-- Why priority: Just Security publishes within 48-96 hours. A Just Security piece citing the framework is the fastest institutional credibility signal available — it precedes any other publication by weeks.
-- Contact approach: Domain 28 or Domain 29 pitch. Frame the domain analysis as filling a specific analytical gap in existing Just Security coverage of those topics.
-
-**Node 4: Heather Cox Richardson / Letters from an American**
-- Network reach: 2.9 million newsletter subscribers (direct); substantial social media amplification
-- Most relevant domains: All (historical framing)
-- Why priority: Single-trigger mass reach. Richardson's subscriber base is the largest organic policy communications channel in the progressive ecosystem.
-- Contact approach: Do not approach until academic citations exist. Organic discovery preferred — Richardson cites research she encounters through her own reading, not through cold outreach. Monitor heathercoxrichardson.substack.com.
-
-**Node 5: EPI / AFL-CIO Labor Bridge**
-- Network reach: AFL-CIO to 56 affiliated unions (12.5 million workers via union communications infrastructure)
-- Most relevant domain: 17
-- Why priority: An EPI issue brief citing Domain 17 triggers AFL-CIO newsletter distribution, which triggers union legislative testimony citing the EPI brief. This is the most predictable cascade chain in the map because the EPI-AFL-CIO distribution relationship is institutional and reliable.
-- Contact approach: Domain 17 brief specifically targeting EPI's labor research agenda. Monitor epi.org/research for new Domain 17-relevant publications.
-
-**Node 6: ACS Scholars Network — Law School to Hill Staff Pipeline**
-- Network reach: Law school clinic directors, law review editors, and Hill staff simultaneously via ACS programming
-- Most relevant domains: 6, 29, 28
-- Why priority: ACS programming spans legal academia and Hill staff in a single venue — activation through ACS reaches both populations simultaneously.
-- Contact approach: Via an ACS constitutional law symposium or CLE where the framework's comparative constitutional law methodology is the hook.
-
-**Node 7: Levitsky / Ziblatt**
-- Network reach: Political science community (via academic citation), general educated public (via New York Times op-eds and book tour), foreign policy community (via Foreign Affairs)
-- Most relevant domains: Resistance meta-analysis, comparative democratic backsliding framework (Domains 6, 33, international case studies)
-- Why priority: A Levitsky or Ziblatt mention in any public commentary cascades to every political scientist who reads them.
-- Contact approach: Do not approach until Tier 2 academic credibility is established — a Balkin blog mention or Just Security citation creates the basis for this approach. They will assess the framework against the "How Democracies Die" and "Tyranny of the Minority" analytical standards; ensure the comparative methodology in the framework meets that standard before approaching.
+A Depth 2 event is the first evidence of autonomous diffusion — the framework spreading through citation chains without direct outreach. Log every Depth 2+ event as a Priority Signal.
 
 ---
 
-## Component 6: Sector-Specific Monitoring Calendars
+## Component 6: Legislative and Policy Monitor
 
-These calendar templates organize the monitoring work by sector, preventing the dual failure modes of over-monitoring (checking for signals daily when the sector's adoption timeline is 90+ days) and under-monitoring (missing an early signal in a fast-moving sector).
+### State Legislative Database Coverage
 
-### State AGs — Monitoring Calendar
+**Primary tool:** LegiScan API (free tier sufficient; alerts configured in Component 1.5 above)
 
-| Check | Cadence | Method | What to look for |
-|-------|---------|--------|-----------------|
-| AG press rooms (priority 5 states) | Weekly | RSS or manual | Domain-aligned language in press releases without attribution |
-| AG coalition statements (NAAG, DAGA) | Weekly | NAAG.org + DAGA press pages | Coalition letters using domain framework |
-| CourtListener RECAP search | Biweekly | Saved search | New AG-filed complaints with domain-aligned language |
-| Direct contact check-in | Day 45, Day 90 | Email | Substantive follow-up with AG policy counsel contacts |
+**Secondary tool:** Voting Rights Lab Election Policy Tracker (tracker.votingrightslab.org) — tracks voting legislation in all 50 states; free access; updated continuously.
 
-### Think Tanks — Monitoring Calendar
+**Tertiary tool:** Brennan Center State Voting Laws Roundup (brennancenter.org/series/state-voting-laws-roundups) — monthly roundup of voting legislation; useful for confirming legislative adoption signals detected through LegiScan.
 
-| Institution | Check cadence | Method | Priority domains |
-|------------|--------------|--------|-----------------|
-| Brennan Center | Weekly | brennancenter.org/our-work/research-reports RSS | 1, 6, 29 |
-| Just Security | Daily | justsecurity.org RSS | 28, 29 |
-| Lawfare | Daily | lawfaremedia.org RSS | 28, 29 |
-| Balkinization | Daily | balkin.blogspot.com RSS | 6, 28, 29 |
-| EPI | Weekly | epi.org/research RSS | 17 |
-| CAP | Monthly | americanprogress.org | 11, 5, 23 |
-| Protect Democracy | Weekly | protectdemocracy.org/work | 37, 6, 1 |
-| Brookings | Monthly | brookings.edu/topic/democracy | 9, 28, 34 |
+**Federal legislative monitoring:** Congress.gov bill search (congress.gov/search) — full text of all introduced legislation. Search terms: same as LegiScan Set A-C above. Free; no account required.
 
-### Law Schools — Monitoring Calendar
-
-| Check | Cadence | Method | What to look for |
-|-------|---------|--------|-----------------|
-| SSRN alerts | Weekly | SSRN email alerts (set for domain title phrases) | Working papers citing framework |
-| Google Scholar alerts | Weekly | Alert email review | Academic citations |
-| Direct check-in with faculty contacts | Day 60, Day 120 | Email | Research gap interest, clinic case connection |
-| Top law review online companions | Monthly | HLR Forum, Yale LJ online, Colum LJ Sidebar | Rapid-response articles on SCOTUS/Domain 35 rulings |
-
-### Civil Rights Coalitions — Monitoring Calendar
-
-| Organization | Check cadence | Method | What to look for |
-|-------------|--------------|--------|-----------------|
-| Indivisible resource library | Monthly | indivisible.org/resources | Framework citations in training materials |
-| NAACP LDF publications | Monthly | naacpldf.org/news-resources | Reports citing domain analysis |
-| Lawyers' Committee | Monthly | lawyerscommittee.org | Publications using domain framework |
-| States United | Monthly | statesuniteddemocracy.org | Domain 37 or Domain 1 citations |
-| Democracy Docket newsletter | Weekly | Email subscription | Domain 37 or Domain 1 analytical framing alignment |
+**Update cadence:** Weekly automated alerts via LegiScan; monthly manual review of Voting Rights Lab and Brennan Center roundups.
 
 ---
 
-## Synthesis: Monthly Reporting Template
+## Tracking Template: Daily, Weekly, Monthly Protocols
 
-At the start of each month, complete this 1-page reporting template. It is the output that informs iteration decisions.
+### Day 7 Snapshot (First Week Check-In)
 
-**Month**: ________ **Distribution day count**: Day ___
+Date: Day 7 from distribution launch.
+Purpose: Confirm monitoring infrastructure operational; capture any fast-mover signals.
 
-**Citation summary**
-- New Level 1+ adoption events confirmed this month: ____
-- New legal citations (court filings): ____
-- New policy proposals / legislation: ____
-- New academic citations: ____
-- Most-cited domains this month: ___________________________
+| Check | Action | Tool |
+|-------|--------|------|
+| Google Alerts active | Confirm delivery to dedicated folder | Gmail / Alerts dashboard |
+| Scholar Alerts active | Confirm at least one test alert received | Scholar Alerts dashboard |
+| CourtListener alerts active | Confirm saved searches created | CourtListener account |
+| Scorecard populated | Confirm all Tier 1 contacts in scorecard | Spreadsheet |
+| Day 7 citation count | Count any new citations from alert inbox | Tally from folder |
+| Day 7 network activity | Any bridge node contact responses? | Scorecard |
 
-**Domain heat map assessment**
-- Hot domains (generating regular signals): ___________________
-- Warm domains (at least one signal): _______________________
-- Cold domains (no signal yet): ______________________________
-- Unexpected silence from Tier A domain: [ ] Yes [ ] No
-  If yes, domain: ___ Probable cause: _______________________
-
-**Failure mode check**
-- Partisan capture flag: [ ] Yes [ ] No
-- Domain concentration flag (>70% in top 4): [ ] Yes [ ] No
-- Framework flattening flag (>50% label-only): [ ] Yes [ ] No
-- Domain 37 mischaracterization detected: [ ] Yes [ ] No
-
-**Bridge node status**
-- Nodes with second-order activation this month: ________________
-- New cascade events logged: _______
-- Nodes at 90+ days with no activation: _______
-
-**Iteration decisions this month**
-- Domains flagged for revision (two Tier 1 objections threshold): ______
-- Phase 2 demand signals received (explicit Tier 1 requests): ________
-- Recommended research priority for next session: ________________
-
-**Key quote or qualitative finding this month**
-(Capture the single most important thing learned about how the framework is being used — this is the data that doesn't fit in any cell above.)
+**Day 7 expected results:** Zero to two citation events (fast-mover think tanks or journalists). Any AG response within Day 7 is a strong signal. Document any contacts made, responses received, or distribution confirmations.
 
 ---
 
-## Component 7: Success Indicators by Domain — Checkpoint Tables
+### Month 1 Snapshot
 
-These tables translate the success framework from post-distribution-impact-measurement-framework.md into specific, checkable indicators for each priority domain. Use these tables at the 1-year, 3-year, and 5-year review points.
+Date: 30 days from distribution launch.
+Purpose: First meaningful adoption signal assessment.
 
-### Priority Tier A Domains — Fastest Expected Adoption
+**Quantitative counts:**
+- Total citation events (all sectors combined)
+- Unique institutions citing the framework
+- Unique domains cited
+- Tier 1 adoption events (explicit citation + structural use)
+- Tier 2 adoption events (vocabulary convergence, no citation)
+- AG responses (any sector: reply, material request, meeting)
+- Think tank outputs using framework language
+- Journalist mentions
 
-**Domain 1: Voting Rights and Electoral Reform**
+**Qualitative assessment:**
+- Which bridge nodes have engaged substantively?
+- Any early misinterpretation signals?
+- Which domains are generating engagement vs. silence?
 
-| Checkpoint | Success indicator | Data source | Status |
-|-----------|------------------|-------------|--------|
-| 1-year (May 2027) | AG litigation filing cites domain's VRA Section 2 analysis or *Callais* response | PACER RECAP search | — |
-| 1-year | Democracy Docket or Campaign Legal Center publication uses domain evidence | democracydocket.com; campaignlegalcenter.org | — |
-| 3-year | State legislative proposal cites domain's electoral reform comparative analysis | LegiScan full-text | — |
-| 3-year | AG confirms domain shaped 2028 election protection litigation strategy | Direct contact | — |
-| 5-year | Law review article indexed with subsequent citations cites Domain 1 | Westlaw/Lexis | — |
-
-**Domain 6: Judicial Independence**
-
-| Checkpoint | Success indicator | Data source | Status |
-|-----------|------------------|-------------|--------|
-| 1-year (May 2027) | Published law review article or accepted submission cites domain's comparative methodology | Google Scholar | — |
-| 1-year | Tier 1 think tank brief uses domain's international judicial appointment comparison | Brennan Center, Protect Democracy publication monitoring | — |
-| 3-year | Congressional testimony in judicial reform hearing cites domain analysis | Congress.gov testimony search | — |
-| 3-year | Law school course syllabi include domain as assigned reading (2+ courses confirmed) | Direct contact with faculty | — |
-| 5-year | Domain reform proposals appear in legislative vehicle (state or federal court reform bill) | Congress.gov, LegiScan | — |
-
-**Domain 29: Prosecutorial Weaponization**
-
-| Checkpoint | Success indicator | Data source | Status |
-|-----------|------------------|-------------|--------|
-| 1-year (May 2027) | SPLC or named defendant organization confirms domain evidence reviewed by legal team | Direct contact | — |
-| 1-year | Just Security or Lawfare publishes analysis citing domain's 22-case retaliatory pattern | justsecurity.org RSS | — |
-| 3-year | Congressional oversight hearing or inspector general investigation uses domain's accountability framework | Congress.gov | — |
-| 5-year | DOJ inspector general report or reform legislation cites domain's norm-violation taxonomy | Direct monitoring | — |
-
-**Domain 37: Election Interference**
-
-| Checkpoint | Success indicator | Data source | Status |
-|-----------|------------------|-------------|--------|
-| 1-year (May 2027) | Amicus brief or litigation filing cites domain's quantified baselines (SAVE error rates, appointee count, etc.) | PACER RECAP | — |
-| 1-year | Three or more advocacy orgs actively use domain evidence in public communications | Google News, direct contact | — |
-| 1-year | Congressional testimony in election security appropriations hearing uses domain data | Congress.gov | — |
-| 3-year | State AG confirms domain shaped 2028 election protection strategy | Direct contact | — |
-| 5-year | Domain 37 methodology or evidence base cited in Overton-indexed policy document | Overton search | — |
+**Decision trigger:** Zero Tier 1 or Tier 2 events at Month 1 does not indicate failure — academic and AG adoption is invisible for the first 4–8 weeks. The correct Month 1 failure signal is: zero responses from all Tier 1 think tank contacts AND zero responses from all Tier 1 AG contacts. If both are true, investigate distribution delivery (emails going to spam, Gist link broken) before redesigning strategy.
 
 ---
 
-### Priority Tier B Domains — Moderate Expected Adoption
+### Month 3 Snapshot
 
-**Domain 17: Labor Rights**
+Date: 90 days from distribution launch.
+Purpose: First substantive assessment of adoption trajectory.
 
-| Checkpoint | Success indicator | Data source | Status |
-|-----------|------------------|-------------|--------|
-| 1-year | EPI issue brief cites domain analysis | epi.org RSS | — |
-| 1-year | AFL-CIO newsletter distributes EPI brief citing domain (second-order signal) | AFL-CIO communications | — |
-| 3-year | Union legislative testimony cites EPI brief (third-order signal) | Congress.gov testimony | — |
-| 5-year | Domain's co-determination comparative evidence cited in collective bargaining materials | Direct contact; union publications | — |
+**Required reviews:**
+1. Citation monitor audit — export all alerts received since launch; categorize by sector, domain, and tier
+2. Vocabulary sweep — run Google News search for each coinage on the framework vocabulary list; export results; compare against pre-distribution baseline
+3. Overton search — first Overton search run (may return zero results; document baseline query results for later comparison)
+4. Domain heat map update — populate Month 3 column; flag domains with zero events
+5. Failure mode audit — run Component 4 monthly checklist
+6. Scorecard update — update adoption levels for all Tier 1 and Tier 2 contacts
 
-**Domain 27: Higher Education and Academic Freedom**
+**Quantitative targets at Month 3:**
+- Minimum meaningful adoption: 5+ unique citation events across 2+ sectors
+- Expected think tank adoption: 1–3 Tier 2 events from Brennan Center / CAP / Protect Democracy
+- Expected litigation adoption: 0–2 events (filing lags mean Month 3 is early for court documents)
+- Expected journalism adoption: 3–8 article mentions from journalists in the Tier 1 network
 
-| Checkpoint | Success indicator | Data source | Status |
-|-----------|------------------|-------------|--------|
-| 1-year | AAUP publication or Chronicle of Higher Education cites domain evidence | aaup.org; chronicle.com | — |
-| 1-year | University legal counsel confirms domain's accreditation defense analysis reviewed | Direct contact | — |
-| 3-year | Course assigned at 2+ law schools or political science programs | Direct faculty contact | — |
-| 5-year | Academic freedom litigation cites domain's comparative international evidence | PACER; Westlaw | — |
-
-**Domain 28: War Powers / Venezuela**
-
-| Checkpoint | Success indicator | Data source | Status |
-|-----------|------------------|-------------|--------|
-| 1-year | Just Security or national security law journal cites domain's Venezuela OLC memo analysis | justsecurity.org; Google Scholar | — |
-| 3-year | Congressional war powers debate references domain's "law enforcement" loophole analysis | Congress.gov | — |
-| 5-year | AUMF reform legislation or OLC policy guidance cites domain's definitional reform proposals | Congress.gov; OLC public opinions | — |
+**Month 3 decision framework:**
+- Zero events in all sectors: Distribution failure, not framework failure. Investigate delivery. Run secondary distribution push.
+- Events in journalism only: Think tanks and AGs not yet engaged. Run targeted secondary outreach with domain-specific framing.
+- Events in think tanks + journalism: Normal trajectory. Continue monitoring; escalate direct outreach to AG contacts.
 
 ---
 
-### Lagging Domains — Watch for Delayed Activation
+### Month 6 Snapshot
 
-**Domain 34: Congressional Fiscal Authority**
-- 1-year marker: Any appropriations-focused think tank (Committee for a Responsible Federal Budget, Bipartisan Policy Center) publication cites domain
-- 3-year marker: Antideficiency Act enforcement action or congressional budget oversight hearing uses domain framework
-- 5-year marker: Domain reform proposals in any impoundment control or emergency authority reform legislation
+Date: 180 days from distribution launch.
+Purpose: First full institutional cycle assessment; litigation impact evaluation.
 
-**Domain 9: Federalism**
-- 1-year marker: Brookings or equivalent governance think tank publication cites domain's preemption analysis
-- 3-year marker: Municipal law organization (National League of Cities, National Association of Counties) uses domain framework in preemption litigation
-- 5-year marker: Federal floor legislation protecting municipal democracy cites domain's comparative federalism analysis
+**Required reviews:**
+1. Full sector assessment — complete adoption scorecard review for all Tier 1 and Tier 2 contacts
+2. Litigation impact review — CourtListener search for all amicus briefs and new filings in framework domain areas; compare vocabulary against pre-distribution baseline
+3. Structural convergence review — compare legislation introduced in priority states against Domain 1, 33, 34, and 37 recommendations
+4. Failure mode audit — full Component 4 checklist plus six-month decay review
+5. Overton search — second Overton query; compare against Month 3 results
+6. Pre-post baseline comparison — run same searches used to establish pre-distribution baselines; compute delta
 
----
+**Quantitative targets at Month 6:**
+- Minimum institutional adoption: 3+ confirmed Tier 1 or Tier 2 events across 3+ sectors
+- AG adoption: at least 1 confirmed Tier 2 or Tier 3 event (vocabulary convergence in a filing or coalition letter)
+- Think tank adoption: at least 2 confirmed Tier 1 or Tier 2 events
+- Journalism: at least 1 investigative piece (500+ words) using domain framing as organizing structure
 
-## Component 8: Corporate and Fiduciary Sector Monitoring Calendar
-
-This sector operates on a longer timeline and requires lower-intensity monitoring in Phase 1. Activate higher monitoring intensity in Phase 3 (Year 2-3).
-
-| Check | Cadence | Method | What to look for |
-|-------|---------|--------|-----------------|
-| ISS (Institutional Shareholder Services) publications | Quarterly | iss.com governance research | ESG risk language matching domain framing (regulatory instability, rule of law risk) |
-| Glass Lewis proxy reports | Quarterly | glasslewis.com | Governance risk classifications using democratic institutional language |
-| SEC EDGAR ESG disclosures | Quarterly | Full-text search: "rule of law" "democratic institutions" proxy filings | Proxy statements or sustainability reports citing institutional risk in domain-aligned terms |
-| Harvard Law School Corporate Governance Forum | Monthly | corpgov.law.harvard.edu | Publications on governance risk citing democratic institutional degradation |
-| Law firm governance client alerts | Monthly | Major firms with governance practices (Wachtell, Sullivan & Cromwell, Latham) — client alert subscriptions | Alerts on regulatory risk that use framework framing |
-
-**Activation trigger**: If any SEC-filed ESG disclosure uses language that matches domain evidence (judicial independence risk, election security risk, regulatory predictability), log as corporate adoption event even without direct framework citation.
+**Month 6 decision framework:**
+- Strong adoption (40%+ of Tier 1 contacts at Level 2+): Proceed to Phase 2 domain expansion approval. Begin domain maintenance cycle (update domains with highest citation volume first).
+- Moderate adoption (10–39% of Tier 1 contacts at Level 2+): Continue current strategy; deepen engagement with adopting institutions; run targeted outreach to lagging sectors.
+- Weak adoption (<10% of Tier 1 contacts at Level 2+): Reassess distribution channel before content. Run a one-on-one briefing with the three highest-leverage Tier 1 contacts who have not yet engaged. Diagnose: messaging barrier, channel problem, or timing issue.
 
 ---
 
-*Dashboard Spec version 2.0 — May 5, 2026 (Session 741). Added Component 7 (domain checkpoint tables) and Component 8 (corporate/fiduciary monitoring). Previous version: April 30, 2026. Activates on distribution launch. Cross-reference: post-distribution-impact-measurement-framework.md (the analytical framework), measurement-and-iteration-framework.md (the iteration logic).*
+## Reporting Cadence Summary
+
+| Report | Date | Audience | Format | File |
+|--------|------|----------|--------|------|
+| Day 7 operational check | Day 7 | Internal | Checklist | `monitoring/day7-check.md` |
+| Month 1 snapshot | Day 30 | Internal | Quantitative summary + qualitative notes | `monitoring/month1-snapshot.md` |
+| Month 3 assessment | Day 90 | Internal + potential bridge node briefing | Full report | `monitoring/month3-assessment.md` |
+| Month 6 evaluation | Day 180 | Internal + potential funder/partner briefing | Full evaluation with visualizations | `monitoring/month6-evaluation.md` |
+| Month 12 impact report | Day 365 | Public-facing if adoption is strong | Comprehensive impact report | `monitoring/month12-impact-report.md` |
 
 ---
 
-Sources:
-- [CourtListener RECAP Search Alerts for PACER](https://free.law/2025/06/18/recap-search-alerts-for-pacer-are-now-live/)
-- [CourtListener.com](https://www.courtlistener.com/)
-- [Overton Impact Tracking](https://www.overton.io/policy-impact)
-- [Overton Index](https://www.overton.io/overton-index)
-- [LegiScan API](https://legiscan.com/legiscan)
-- [LegiScan Full Text Search](https://legiscan.com/fulltext-search)
-- [Google Scholar Alerts](https://scholar.google.com/scholar_alerts?view_op=list_alerts)
+## Dashboard Visualization Structure (Google Sheets / Tableau)
+
+### Sheet 1: Summary Dashboard
+
+**Five KPI cells (top row, large font):**
+1. Total citation events (all time)
+2. Unique institutions engaged (Adoption Level 1+)
+3. Unique institutions adopted (Adoption Level 2+)
+4. Domains with at least 1 citation event (of 37 total)
+5. Network cascade depth (maximum depth achieved)
+
+**Charts (below KPI row):**
+- Bar chart: Citation events by sector (AGs / Law schools / Think tanks / Litigation orgs / Advocacy / Media / Other)
+- Bar chart: Citation events by domain (sorted by count, descending)
+- Line chart: Cumulative citation events over time (Day 0 to current)
+- Heatmap table: Domains × Months (cells colored by citation volume — white=0, light=1-2, medium=3-5, dark=6+)
+
+### Sheet 2: Adoption Scorecard
+
+Full contact database with all columns from Component 2 above. Add conditional formatting: rows where Adoption Level = 0 are gray; Level 1 = yellow; Level 2 = orange; Level 3 = green; Level 4 = dark green.
+
+### Sheet 3: Failure Mode Log
+
+One row per failure mode event detected. Columns: date detected, failure mode type (false adoption / misinterpretation / partial bias / capture / decay), institution, domain, evidence, response taken, resolution.
+
+### Sheet 4: Legislative Monitor
+
+One row per matching bill or regulatory filing. Columns: jurisdiction, bill number, title, domain match, date introduced, status, vocabulary evidence, link.
+
+### Sheet 5: Baseline Comparison
+
+Side-by-side table: pre-distribution baseline count (from Section 5 of `post-distribution-impact-measurement.md`) and current count for each baseline metric. Delta column auto-calculated. Updated at Month 6 and Month 12.
+
+---
+
+*Sources: [CourtListener / RECAP Suite — Free Law Project](https://free.law/recap/) | [Overton impact tracking](https://www.overton.io/policy-impact) | [LegiScan](https://legiscan.com/legiscan-register) | [Voting Rights Lab Election Policy Tracker](https://tracker.votingrightslab.org/) | [Democracy Docket](https://www.democracydocket.com/cases/) | [Brennan Center State Voting Laws Roundups](https://www.brennancenter.org/series/state-voting-laws-roundups) | [Google Scholar Alerts](https://scholar.google.com/scholar_alerts) | [Congress.gov](https://congress.gov/search)*

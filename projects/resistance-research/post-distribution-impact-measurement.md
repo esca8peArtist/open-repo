@@ -1,193 +1,257 @@
 ---
-title: "Post-Distribution Impact Measurement: Attribution Methodology and Adoption Metrics"
+title: "Post-Distribution Impact Measurement: Institutional Adoption Pathways, Metrics Architecture, and Failure Mode Detection"
 date: 2026-05-05
 status: production-ready
 phase: Phase 1 Day 0 reference
-word_count: ~2,100
+word_count: ~2,800
+distribution_paths: A / A+37 / B (path-independent)
 companion_files:
-  - post-distribution-adoption-framework.md     # Historical precedent, diffusion theory, version tracking
-  - post-distribution-impact-measurement-framework.md  # Tool stack, sector diffusion model, failure modes
-  - post-distribution-impact-framework.md       # Dashboard KPIs, sector adoption pathways, path-specific targets
-  - post-distribution-tracking.md               # Week-by-week roadmap, domain heat map, signal decision trees
-scope: "Attribution methodology, tier-based adoption metrics by sector, baseline capture protocol, decision framework for acting on results"
+  - post-distribution-impact-measurement-framework.md  # Tool stack, sector diffusion model
+  - post-distribution-adoption-framework.md           # Historical precedent, diffusion theory
+  - adoption-tracking-dashboard-spec.md               # Dashboard components, alert templates
+  - post-distribution-tracking.md                     # Week-by-week roadmap, decision trees
+  - domain-37-baseline-metrics.md                     # Domain 37 quantified pre-launch baselines
+scope: "Sector adoption pathways grounded in historical precedent; Tier 1/2/3 impact metrics with 6/12/24-month windows; sector-specific adoption definitions; failure mode detection; pre-distribution baseline metrics"
+supersedes: post-distribution-impact-framework.md (Session 688, April 30, 2026)
 ---
 
-# Post-Distribution Impact Measurement: Attribution Methodology and Adoption Metrics
+# Post-Distribution Impact Measurement: Institutional Adoption Pathways, Metrics Architecture, and Failure Mode Detection
 
-**Day 0 reference document. Activate on distribution launch.**
+**Day 0 reference document. Activate on distribution launch. Path-independent across A / A+37 / B.**
 
-This document answers one question the companion measurement files leave underspecified: how to prove, not merely observe, that the resistance-research framework influenced institutional behavior. It covers attribution methodology, sector-specific adoption definitions, a four-tier metric structure, timeline calibration, leading indicators, and the decision framework for acting on what you measure. It does not duplicate the tool stack (see `post-distribution-impact-measurement-framework.md`) or week-by-week roadmap (see `post-distribution-tracking.md`).
-
----
-
-## 1. The Attribution Problem
-
-The resistance-research framework will be distributed into a policy space where hundreds of organizations are already working on every domain it covers. AGs were filing 71 lawsuits before distribution. The Brennan Center, ACLU, Protect Democracy, and EFF were already producing analysis on all 35 domains. Any adoption signal — an AG brief using pattern-and-practice theory, a think tank report on state autocratization — might have occurred without the framework.
-
-This is the counterfactual baseline problem, and it makes naive attribution (we distributed, they changed, we caused it) empirically indefensible.
-
-The correct frame is contribution analysis, not causation: did the framework meaningfully accelerate, coordinate, or extend what institutions would have done anyway? Attribution claims should be proportional to evidence strength. "The framework contributed to" is supportable; "the framework caused" requires the highest evidentiary standard described below.
-
-The pre-distribution policy trajectory is the baseline. Measure adoption against what institutions were already doing, not against zero. An AG who was already developing a pattern-and-practice theory adopting the framework's specific structural taxonomy is an acceleration effect. An advocacy organization that begins covering a domain it had no prior presence in is a coverage effect — the stronger attribution claim.
+This document provides the sector-by-sector adoption pathway analysis, three-tier metrics framework, sector-specific adoption definitions, failure mode detection architecture, and quantified pre-distribution baselines. It draws on historical precedent from the Model Penal Code, ABA Model Rules, Brennan Center automatic voter registration campaign, and NAACP LDF sequential litigation strategy. The attribution methodology (four attribution tests, contribution analysis framework) is in `post-distribution-impact-measurement-framework.md`. The operational tracking templates are in `adoption-tracking-dashboard-spec.md`.
 
 ---
 
-## 2. Four Attribution Tests
+## Section 1: Institutional Adoption Pathways by Sector
 
-Apply all four tests to every identified adoption event. High-confidence attribution requires at least three of four.
+### 1.1 State Attorneys General
 
-**Test 1 — Vocabulary Marker**: Does the institution's output use terms or coinages that originated in the framework? Generic legal terms (pattern-and-practice, due process, preemption) are ambiguous. Framework-specific coinages (state legislative autocratization, appellate capture, constraint failure, ICE-at-polls enforcement pattern) are traceable vocabulary markers. When framework-specific vocabulary appears in an institution's output, the burden of proof shifts: they either encountered the framework or independently invented the same terminology, and the latter is rare. Build a vocabulary marker list at distribution launch and update it as adoption reveals which coinages travel.
+**How AGs adopt policy frameworks.** State AGs do not adopt frameworks by formally endorsing them — they adopt them operationally, through their policy counsel and litigation staff. The entry mechanism is staff-level engagement: a law clerk, policy attorney, or chief of staff encounters the framework, extracts the relevant domain analysis, and routes it to the relevant litigation team. Coalition adoption through NAAG (National Association of Attorneys General) is the primary amplification mechanism. NAAG conducts CLE programs, issue-specific task forces, and a capital forum where AG staff share litigation strategy across offices. A framework that reaches one AG's office has a structural pathway to the full 22-member coalition that has been coordinating on election and immigration litigation since 2025.
 
-**Test 2 — Structural Convergence**: Does the institution's proposal or analysis use the framework's organizational logic, not just its conclusions? A brief that independently reaches the same legal conclusion is parallel development. A brief that analyzes fiscal authority bypass using the same four-mechanism taxonomy (OMB apportionment abuse, agency fund holds, Treasury interference, pocket rescissions) in the same sequence reflects structural borrowing. This test applies to briefs, reports, and legislative drafts alike. The domain heat map from `post-distribution-tracking.md` should log not just which domains appear but which analytical structures recur in adoption events.
+**Historical precedent.** The Massachusetts AG's five-year strategic plan model (2024) — publicly committed institutional targets over a defined timeline — represents the format most compatible with how AG offices engage with external policy frameworks. AGs make public commitments; they do not publicly cite academic or advocacy frameworks. The model is not the ABA Model Rules (top-down professional mandate) but the NAACP LDF sequential litigation strategy: domain analysis provides the factual and legal theory infrastructure; litigation staff apply it to pending cases; successful applications spread through coalition channels to peer offices.
 
-**Test 3 — Timing and Contact**: Did the adoption output appear after documented distribution contact, and within a plausible processing window? The minimum processing window is two months (reading time plus implementation lag). A think tank report using framework analysis published six weeks after confirmed receipt is prima facie framework-driven. The same report published before distribution is independent development. Reports appearing within the two-month minimum window require additional evidence from Tests 1 or 2. The contact log from `post-distribution-tracking.md` is the evidentiary record for this test — keep it current.
+**Realistic diffusion timeline:**
+- Week 1–4: Framework received by policy counsel; routed to relevant litigation team
+- Week 4–8: Domain analysis incorporated into pending brief or strategy memo (internal, invisible)
+- Week 8–16: First external signal — amicus brief, coalition letter, or press statement using domain language
+- Month 4–6: Domain analysis formally cited in a filed pleading or incorporated into coalition-level strategy
+- Month 6–12: Peer-office sharing through NAAG channels triggers secondary adoption
 
-**Test 4 — Network Trace**: Can the pathway from distribution to adoption be reconstructed? Tier 1 contact (directly received framework) shares with Tier 2 contact (think tank researcher), whose output cites it — that is a fully traceable adoption event. The bridge node tracking protocol in `post-distribution-tracking.md` exists specifically to enable this reconstruction. Not every adoption will be traceable; network trace evidence is the strongest but rarest attribution support.
-
-**Attribution confidence levels**:
-- High (3-4 tests positive): Use contribution language with specific evidence. "The AG's brief adopted the framework's four-mechanism fiscal taxonomy first developed in Domain 34."
-- Medium (2 tests positive): Use qualified contribution language. "The framework likely contributed to the report's analysis of state autocratization patterns."
-- Low (1 test positive or ambiguous): Do not make attribution claims publicly. Log internally as possible alignment; flag for the 12-month assessment.
-
----
-
-## 3. Sector-Specific Adoption Definitions
-
-"Adoption" means different things in each sector. Apply these definitions when classifying adoption events.
-
-**State Attorneys General**: Adoption is structural convergence in litigation strategy — an AG filing uses the framework's domain analysis as its organizing theory of harm, regardless of whether the framework is cited. AGs rarely cite policy documents in court filings; they cite cases. Citation is not required for adoption. The operational adoption definition is: the domain's analytical structure appears in an AG's brief, coalition letter, or press statement. Multistate coalition formation around a legal theory that matches a framework domain is an adoption event at the coalition level. The timing-and-contact test is essential here because structural convergence without contact evidence can be parallel development.
-
-**Law Schools and Law Reviews**: Adoption has three distinct levels with different meanings. Clinic adoption (fastest) — a clinical professor uses a domain's analytical framework in active casework, assigning it to students or using it to structure a motion. Faculty adoption (medium) — a professor assigns a domain document as course reading or incorporates its analytical structure into a seminar or workshop. Law review adoption (slowest, highest legitimacy signal) — a published law review article cites the framework or applies its analytical structure to a new problem. Law review citation is a lagging indicator; it confirms adoption that already occurred at clinic and faculty level 12-24 months earlier. Track all three levels separately.
-
-**Think Tanks and Policy Institutes**: Adoption runs from surface to structural. Surface: a brief uses a term or concept that originated in the framework. Framework: a report applies the framework's analytical structure to a new problem domain. Strategic: a think tank builds a multi-report research agenda around the framework's gaps or extensions. The last is the rarest and most consequential — it means the framework has become a reference point for an institution's own research direction, not just an occasional citation. Think tanks are the fastest sector to produce public output (2-6 week turnaround), making them the first place measurable public adoption signal appears.
-
-**Unions**: Adoption is domain-specific and instrumental. Union research departments engage with framework domains that have direct worker impact — labor policy, healthcare, fiscal authority, electoral interference. Adoption manifests as incorporation into collective bargaining research materials, legislative testimony, public education for members, or campaign messaging. The strategic leverage point is dual: unions are end-users and distribution infrastructure. A union that adopts a domain as part of its get-out-the-vote research reaches millions of members as secondary distribution.
-
-**Journalists**: Journalists adopt analytical frameworks as interpretive lenses, not citations. The adoption signal is vocabulary migration — when a journalist starts describing executive enforcement patterns using the framework's analytical categories as unmarked background. The transition from "the administration is using ICE aggressively" to "the administration has created an enforcement pattern that courts have found exceeds statutory authority in 14 of 16 reviewed cases" is a vocabulary adoption event, not a citation event. Count article mentions and unique outlets but focus analytical attention on framing shifts, not raw mention counts.
-
-**General Public and Academic Discourse**: SSRN working paper uploads citing the framework, social media posts from non-institutional accounts, podcast discussions, and online community engagement. This tier reflects awareness diffusion rather than institutional adoption. It matters as a legitimacy signal (the framework has entered general policy discourse) and as a secondary distribution mechanism, but should not be counted as institutional adoption unless a specific individual's engagement bridges to an institutional role.
+**What to monitor:** PACER alerts for amicus briefs in election security, voter roll, and independent agency removal cases; NAAG coalition letters at naag.org; Democracy Docket case updates citing framework analysis; AG press releases on elections and executive overreach.
 
 ---
 
-## 4. Four-Tier Metric Structure
+### 1.2 Law Schools and Legal Academia
 
-Apply this tier structure to every adoption event across all sectors.
+**How law schools adopt analytical frameworks.** Law school adoption has three distinct tracks operating on different timelines. Clinic adoption is the fastest and most operationally significant: a clinical professor integrates domain analysis into active casework. Faculty adoption follows: a professor assigns a domain document as course reading, uses its analytical structure in a seminar, or incorporates it into their own research — which drives student scholarship. Law review adoption is slowest (12–24 months from submission to publication) but produces the highest-credibility external validation signal.
 
-**Tier 1 — Explicit citation and structural adoption**: The institution names the framework as a source and uses its analytical structure. Examples: a court brief cites Domain 34 and applies its four-mechanism taxonomy; a law review article cites the framework and extends its analytical framework to a new case study; a think tank report cites the framework as the basis for its analytical approach. Tier 1 is the strongest evidence and rarest outcome. Even partial framework adoption with explicit citation qualifies — the Model Penal Code's 36-state adoption record was built on states that cited and modified it, not states that adopted it wholesale.
+**Historical precedent.** The Model Penal Code (1962) is the clearest precedent for framework adoption in legal academia. The ALI published the MPC after a ten-year drafting process; 34 states enacted new criminal codes influenced by it between 1962 and 1983. The diffusion mechanism was elite law school endorsement (Herbert Wechsler at Columbia, Sanford Kadish at Berkeley), ALI prestige, and ongoing model code updates that kept it current. The MPC became standard criminal law teaching material — meaning adoption entered through the curriculum before it entered through legislation. The ABA Model Rules (1983) followed a different mechanism: the professional licensing enforcement system forced adoption. Without that coercive mechanism, framework adoption depends entirely on pull — institutional actors choosing to engage because it meets a real need. The resistance-research framework's realistic comparison period is the MPC's first five years of curriculum integration, not the ABA's 20-year completed regulatory record.
 
-**Tier 2 — Vocabulary convergence without citation**: The institution uses framework-specific vocabulary in output published after documented distribution contact. No citation. The vocabulary marker test (Section 2, Test 1) establishes this tier. Requires timing-and-contact evidence to distinguish from independent development. Tier 2 is the most common form of institutional adoption in the policy space — think tanks, advocacy organizations, and journalists routinely internalize analytical frameworks without attribution. This is not failure; it is normal diffusion. The Model Penal Code's influence on state criminal law reform was measurable primarily through structural borrowing, not explicit citation.
+**Realistic diffusion timeline:**
+- Week 1–8: Clinic director reviews domain materials; assigns to student teams for active casework
+- Week 4–16: Faculty adopts domain documents as seminar reading; term paper assignments follow framework themes (semester-cycle dependent — Fall 2026 integration requires contact by mid-June)
+- Month 6–12: Student notes and seminar papers citing domain analysis submitted to law reviews
+- Month 12–24: First law review articles published incorporating or extending framework analysis
 
-**Tier 3 — Thematic coverage shift**: The institution begins covering framework domains more frequently, or with greater analytical specificity, after distribution — without vocabulary convergence or citation. An advocacy organization that had no prior work on judicial independence begins publishing on appellate capture after distribution. A union that had no domestic electoral interference analysis begins incorporating it into member communications. Tier 3 is a coverage effect rather than vocabulary or structural adoption. It requires pre-distribution baseline data to measure — without a baseline, post-distribution coverage cannot be compared to pre-distribution coverage.
-
-**Tier 4 — Coincidental alignment**: The institution moves in the same direction as the framework recommends, but timing is ambiguous and contact cannot be confirmed, or the institution was already moving in that direction pre-distribution. Log Tier 4 events as possible alignment, not attribution. Do not make public attribution claims on Tier 4 evidence. At the 24-month assessment, re-examine Tier 4 events to see whether subsequent contact or vocabulary convergence has upgraded the classification.
-
-**Tier metrics by sector** (Day 0 baseline, remeasure at 6 and 12 months):
-
-| Sector | Tier 1 signal | Tier 2 signal | Tier 3 signal | Tier 4 signal |
-|--------|--------------|--------------|--------------|--------------|
-| AGs | Brief or coalition letter naming framework as source | Brief uses constraint-failure or domain taxonomy without citation | AG begins litigating in a domain they had no prior presence in | AG files suit in domain area post-distribution, no contact confirmed |
-| Law schools | Law review article cites framework | Faculty adopts domain vocabulary in published scholarship | Clinic opens new casework area matching framework domains | Syllabus topic coverage shifts toward framework domains |
-| Think tanks | Report cites framework explicitly | Report uses framework coinages without attribution | Institution launches new research program in framework domain area | Institution publishes on framework topics post-distribution |
-| Unions | Testimony or brief cites framework | Member communication uses framework vocabulary | Union coordinates on domain areas not previously in its agenda | Union campaign covers framework domain areas post-distribution |
-| Journalists | Article cites framework as source | Analytical framing adopts framework vocabulary | Coverage of framework domains increases post-distribution | Coverage increases but timing/contact unclear |
+**What to monitor:** SSRN working papers citing domain analysis; HeinOnline full-text search for framework vocabulary; clinical program newsletters; faculty course syllabi (check law school websites in August before Fall semester); student note topics at target law review editorial boards.
 
 ---
 
-## 5. Timeline and Attribution Windows
+### 1.3 Think Tanks and Policy Organizations
 
-**Minimum attribution window**: Two months. Any adoption signal within the first eight weeks should be treated as fast-mover evidence and investigated immediately (vocabulary marker test, network trace), but the timing-and-contact test cannot be fully applied until the two-month minimum has elapsed.
+**How think tanks adopt frameworks.** Think tanks adopt by incorporating analytical vocabulary into published research. The adoption gradient runs from surface (using a framework-coined term) to structural (applying the analytical framework to a new domain) to strategic (building a multi-report research agenda around the framework's extensions or gaps). Think tanks are the fastest sector to produce public output — a Brennan Center or CAP brief takes 2–6 weeks from research to publication. They are also the highest-velocity legitimacy multipliers: a Brennan Center report citing domain analysis reaches journalists, legislative staff, and AG offices through established distribution channels, triggering secondary adoption across multiple sectors simultaneously.
 
-**Measurement windows by cycle**:
-- 6-month window: Immediate post-distribution adoption (think tanks, advocacy organizations, journalists). AGs and law schools are in early-to-mid adoption phase. Primary metric: Tier 1 and Tier 2 adoption events by sector.
-- 12-month window: Full institutional cycle for most sectors. AGs have had time to file amicus briefs; law school faculties have completed one full semester; unions have completed one legislative cycle. Primary metric: sustained adoption (same institution adopts in multiple domains or produces multiple outputs) vs. one-time coverage.
-- 24-month window: Policy and litigation cycle. Law review articles submitted in months 6-12 are now published or in final review. State legislation citing framework may have been introduced. AGs have completed full litigation cycles. Primary metric: Tier 1 events, legislative citations, curriculum integration.
+**Historical precedent.** The Brennan Center's automatic voter registration campaign (2010–2020) illustrates the think tank amplification mechanism. The Brennan Center developed a bounded policy proposal (AVR), published empirical research demonstrating feasibility and impact, coordinated with state legislative networks, and partnered with advocacy organizations to execute in sympathetic states. By 2026, 23 states and D.C. had adopted AVR. The key mechanism was not research quality alone but the specificity of the proposal — bounded, legislative, low political cost in favorable states. Framework domains with similarly bounded proposals (Domains 1, 34, 37) have Brennan Center-like adoption profiles. Domains requiring constitutional change have MPC-like profiles: faster academic adoption, longer legislative cycle.
 
-**Sector timing differences**: AGs move faster when litigation dockets are active — an AG with a pending brief in a domain area will integrate new analysis within weeks, not months. Academia moves on semester cycles — distribution in May produces curriculum integration in Fall 2026 at the earliest, and only if it reaches course-design decision-makers by mid-June. Unions campaign in fall election cycles; summer distribution maps onto their heaviest organizing period. Journalists move on story cycles — a framework distributed during a major news event in its domain area will be picked up faster than one distributed in a quiet news period.
+**Realistic diffusion timeline:**
+- Week 1–4: Framework received; fellow reviews relevant domains for their current research agenda
+- Week 4–8: Framework vocabulary appears in drafts of in-progress research (internal, invisible)
+- Week 6–12: First public output using framework language, concepts, or analytical structure
+- Month 3–6: Institution cites framework explicitly in a published report; or framework becomes organizing reference for a new research program
+- Month 6–12: Secondary distribution — think tank staff brief congressional staff, journalists, and AG offices using framework analysis
 
-**Seasonal patterns**: Spring (March-May) is peak AG filing season for multistate coalitions. Academic summer (June-August) is syllabus construction time for Fall courses. Union fall organizing campaigns (September-November) are the adoption window for electoral domain content. Journalists covering end-of-year legislative sessions (November-January) are primed for policy framework material. Map distribution timing against these cycles when interpreting adoption rates.
-
----
-
-## 6. Leading Indicators
-
-These signals predict adoption before it appears in public output. Monitor actively in the first 90 days.
-
-**AGs**: Request for framework materials or specific domain documents from AG policy staff; hiring of framework author or contributor as litigation consultant; AG staff attendance at a briefing or presentation covering framework domains; coalition-building calls in which framework domains are referenced.
-
-**Law schools**: Clinic inquiry about domain-specific case materials; faculty inquiry about primary sources underlying a specific domain; student note topic selection matching framework domains (check with faculty contacts); foundation grant announcement for research in framework domain areas.
-
-**Think tanks**: Fellow's substantive methodology question about a specific domain's evidence base (signals active citation preparation); institution hiring in framework domain areas; foundation grant announcement for research program covering framework domains; conference panel invitation to framework contributor.
-
-**Unions**: Framework mentioned in internal planning documents (detectable only through relationship channels); coalition outreach from union leadership to organizations in the framework distribution network; testimony preparation requests citing domain analysis; member communication drafts incorporating framework language.
-
-**Journalists**: Interview requests from journalists covering framework domains; framework mentions in clips or pitch emails; story pitches on framework domain topics from journalists in the Tier 1 contact network; source requests for officials or experts with domain expertise.
+**What to monitor:** Overton.io search for framework vocabulary in policy document database (note: 6–18 month indexing lag; first meaningful Overton results expected at Month 4); Google Scholar alerts for framework citations in working papers; Brennan Center, CAP, and Protect Democracy publication feeds.
 
 ---
 
-## 7. Comparative Framework: How Analogous Proposals Measured Adoption
+### 1.4 Litigation Organizations
 
-**Model Penal Code (1962)**: The most successful American law reform framework, with 36-state adoption over 15 years. Adoption was measured by structural borrowing (crime definitions, sentencing ranges) rather than word-for-word adoption or unanimous agreement. No state adopted the MPC unchanged. The critical measurement insight: adoption is confirmed by structural convergence and vocabulary migration, not by percentage of jurisdictions enacting the model in full. The MPC's influence in states that rejected its core provisions was still measurable through doctrinal vocabulary and partial structural adoption. Partial adoption is the norm.
+**How public interest law firms adopt frameworks.** Organizations like the ACLU, SPLC, LDF, and Protect Democracy adopt frameworks instrumentally: a domain's evidence base and analytical structure becomes the factual infrastructure for a pending case. Adoption manifests as citation in amicus briefs, complaint exhibits, and case theory development. The sequential litigation strategy pioneered by the NAACP LDF — NAACP v. Alabama (1958), then Shelley v. Kraemer, then Smith v. Allwright, then the full litigation ladder that terminated in the Voting Rights Act (1965) — is the structural model. Each case established a legal predicate for the next; each win proved feasibility and generated political momentum. Framework domains that map to active litigation dockets are candidates for this sequential adoption pattern.
 
-**ABA Model Rules of Professional Conduct (1983)**: All 50 states and DC adopted within 20 years, but the ABA's near-total adoption had a structural enforcement mechanism the resistance-research framework lacks: the bar exam. Without a forced-enrollment mechanism, the resistance-research framework depends entirely on pull — institutions choosing to engage because it meets a real need. The correct comparison period for the framework is the ABA Model Rules' first three years, not its 20-year completed record.
+**Historical precedent.** The NAACP v. Alabama (1958) precedent is structural: the NAACP's litigation strategy succeeded because each case provided factual record and legal theory that transferred to the next. The resistance-research framework's Domains 6, 16, 28, 29, and 34 all have active litigation dockets where the same pattern is possible. A domain's evidence base incorporated into one case's trial record becomes citable precedent for the next case in the same domain area.
 
-**Brennan Center automatic voter registration research (2010-2020)**: 19 states and DC adopted AVR. Success measured by state legislation citing the Brennan Center's proposal, AG amicus briefs, think tank policy briefs aligned with Brennan Center framing, and media coverage velocity. The Brennan Center's leverage was not research quality alone — it was having a specific, bounded legislative proposal that sympathetic state legislatures could adopt at low political cost. Framework domains with similarly bounded, specific proposals (Domains 1, 34, 37) have Brennan Center-like adoption profiles. Domains requiring constitutional change (Domains 6, 35) have MPC-like profiles: faster academic adoption, slower legislative adoption, longer cycle.
+**Realistic diffusion timeline:**
+- Week 1–4: Relevant domain distributed to litigation staff with pending cases in that area
+- Week 4–12: Domain evidence base incorporated into a brief, complaint exhibit, or discovery request
+- Month 3–6: Case filed or amended filing includes domain-derived arguments
+- Month 6–12: Second-order adoption — other organizations cite the first case's brief; the framework analysis propagates through the litigation community
 
-**EU AI Act and early international adoption**: Adoption measured by vocabulary transfer and structural similarity — Canada's AIDA, the Biden AI executive order, and state-level AI legislation borrowed EU AI Act analytical categories and risk-tier structure without formal citation. This is the clearest modern example of Tier 2 adoption at scale: structural convergence without citation, measurable through comparative text analysis. The resistance-research framework should expect the same pattern from advocacy organizations and state-level policy proposals.
-
-**Key comparative insight**: In all four cases, adoption does not mean unanimous agreement, word-for-word adoption, or majority rule change. It means the framework shaped the terrain of the debate — the vocabulary, the analytical structure, the coverage agenda — across institutions working on the problem. Partial adoption at scale is the definition of influence.
-
----
-
-## 8. Baseline Metrics — Capture Today
-
-Take the following baseline counts on Day 0. These establish the pre-distribution baseline against which adoption changes will be measured. Report changes as percentage growth, not absolute numbers, to control for baseline drift in overall policy discourse.
-
-- **AGs**: Count of multistate AG coalition letters filed in the 90 days before distribution that address framework domain areas. Target: search NAAG coordination records and AG press releases for Domains 1, 6, 16, 29, 33, 34, 37.
-- **Law schools**: Count of law review articles published in the 12 months before distribution addressing framework domains. Search HeinOnline and SSRN by domain keyword combinations.
-- **Think tanks**: Count of policy reports published in the 6 months before distribution by Tier 1 think tanks (Brennan Center, CAP, Cato, Brookings, Urban Institute, EPI) addressing framework domains. Search Overton baseline query.
-- **Media**: Count of ProPublica, Atlantic, NYT, Washington Post, and NPR stories in the 3 months before distribution addressing framework domain areas. Google News historical search.
-- **Unions**: Count of AFL-CIO, SEIU, AFSCME, and UAW public communications (testimony, member letters, campaign materials) in the 6 months before distribution addressing framework domains. Check congressional testimony database.
-
-Re-measure at 6 months and 12 months using the same search parameters. The delta, not the absolute count, is the adoption signal.
+**What to monitor:** CourtListener RECAP alerts for amicus briefs citing framework language; Democracy Docket case updates; Just Security litigation tracker for filings by ACLU, LDF, SPLC in election security and executive authority domains.
 
 ---
 
-## 9. Decision Framework — Acting on Measurement Results
+### 1.5 Advocacy Groups and Media
 
-**Strong adoption** (Tier 1 or Tier 2 events in 40%+ of target institutions within 12 months): Framework succeeded in achieving institutional penetration. Action: continue distribution, approve Phase 2 domain expansion, produce domain update supplements for any domains showing high-volume adoption (volume signals currency pressure). Begin maintenance cycle.
+**Advocacy organizations** (voting rights orgs, labor unions, immigrant rights groups) adopt frameworks instrumentally and domain-selectively. A voting rights organization will cherry-pick Domains 1, 33, and 37 without engaging the full framework. Labor unions adopt domains with direct worker impact (fiscal authority, electoral interference, workplace rights). Immigrant rights organizations engage Domains 16, 28, and 29. Adoption manifests as advocacy toolkit integration, member briefings, and policy position updates. The strategic leverage is dual: advocacy organizations are end-users and distribution infrastructure simultaneously. A union that adopts Domain 37 as part of its get-out-the-vote research reaches millions of members as secondary distribution.
 
-**Weak adoption** (fewer than 10% of target institutions showing Tier 1/2 adoption at 12 months, Tier 3/4 events only): Reassess distribution strategy, not framework content. Weak adoption at 12 months indicates one of three failure modes: wrong initial audience (too narrow or wrong sector for the moment), messaging barrier (framework not legible to target institutions without additional translation), or distribution channel problem (framework not reaching decision-makers, circulating only in general audiences). Distinguish these using the failure mode detection protocol in `post-distribution-impact-measurement-framework.md` before redesigning outreach.
+**Journalists** adopt analytical frameworks as interpretive lenses, not citations. The adoption signal is vocabulary migration: when a journalist consistently describes executive enforcement patterns using the framework's analytical categories as unmarked background, that is adoption. The transition from "the administration is using ICE aggressively in elections" to "the administration has created an enforcement pattern at polling places that violates the NVRA quiet period in at least eight states" reflects framework vocabulary adoption, not a citation event. Count article mentions and unique outlets, but focus analytical attention on framing shifts.
 
-**Mixed adoption** (strong Tier 1/2 adoption in one sector, weak in others at 12 months): Double down on the strong sector. The strong sector is generating network effects that will eventually reach adjacent institutions — do not redirect resources away from it to force adoption in weak sectors. Instead, redesign messaging for weak sectors specifically: produce sector-adapted versions of the highest-adoption domains, targeted to the institutional logic of the lagging sector.
+**Realistic diffusion timeline (advocacy):** Week 2–6 for toolkit integration (fast-moving orgs); Month 2–4 for member education materials; Month 4–8 for formal position update.
 
----
-
-## 10. Implementation Roadmap
-
-**Day 0 (distribution launch)**: Capture all baseline metrics (Section 8). Set monitoring alerts (Google Scholar, Google News, CourtListener RECAP, LegiScan). Document version tag for distributed corpus (date of each snapshot enables timing-and-contact test precision). Record initial Tier 1 contact list with distribution confirmation.
-
-**Month 1-2**: Leading indicator check. Any AG, law school, or union inquiries? Any media requests? Any methodology questions from think tank fellows? Log all contact as potential attribution evidence. Do not interpret silence as failure — two months is the minimum attribution window.
-
-**Month 3**: First formal signal assessment. Which domains have generated any signal (Tier 1-4)? Build domain heat map. Are leading indicators converting to public adoption signals (vocabulary migration in published output, coverage shifts)?
-
-**Month 6**: First formal adoption measurement. Count Tier 1-4 adoption events by sector using the definitions in Section 3. Assess whether adoption pattern matches one of the strong/weak/mixed profiles in Section 9. Apply attribution tests (Section 2) to all Tier 1 and Tier 2 events.
-
-**Month 12**: Sustained adoption assessment. Has any sector moved from one-time coverage to repeated use? Have any adoption events been upgraded from Tier 2 to Tier 1 (initial vocabulary convergence followed by explicit citation)? Are lagging indicators — law review article submissions, legislative bill text — now visible?
-
-**Ongoing**: Quarterly vocabulary tracking using Overton.io, Google Scholar, and news archive searches for framework terminology. Version tagging of any Phase 2 domain additions (measure adoption of Domains 36+ separately from Domains 1-35 to isolate phase-specific impact). Add each confirmed adoption event to the contact log with attribution confidence classification.
+**Realistic diffusion timeline (media):** Week 1–4 for story-pitch integration by journalists in the Tier 1 contact network; Month 1–3 for vocabulary migration in ongoing coverage; Month 3–6 for investigative series using a domain as structural framework.
 
 ---
 
-## Sources
+## Section 2: Impact Metrics Framework — Tier 1 / 2 / 3
 
-- [Model Penal Code adoption history — Paul Robinson, University of Pennsylvania](https://scholarship.law.upenn.edu/cgi/viewcontent.cgi?article=1130&context=faculty_scholarship)
-- [ABA Model Rules adoption record — ABA alphabetical jurisdiction list](https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/alpha_list_state_adopting_model_rules/)
-- [Brennan Center for Justice — About and Impact](https://www.brennancenter.org/about-us)
-- [Overton: A Bibliometric Database of Policy Document Citations — MIT Press Quantitative Science Studies](https://direct.mit.edu/qss/article/3/3/624/112760/Overton-A-bibliometric-database-of-policy-document)
-- [Overton Impact Tracking](https://www.overton.io/policy-impact)
-- [CourtListener RECAP Search Alerts](https://free.law/2025/06/18/recap-search-alerts-for-pacer-are-now-live/)
-- [LegiScan API — legislative text monitoring](https://legiscan.com/legiscan)
-- [Rogers, Diffusion of Innovations — Stanford summary](https://web.stanford.edu/class/symbsys205/Diffusion%20of%20Innovations)
-- [Attribution vs. Contribution in Impact Measurement — SOPACT](https://www.sopact.com/use-case/attribution-vs-contribution)
-- [Policy diffusion intensity measurement — ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0306457325003243)
-- [Legislative Influence Detector: Finding Text Reuse in State Legislation — KDD 2016](https://www.kdd.org/kdd2016/papers/files/adf0831-burgessA.pdf)
+### Tier 1 Metrics: Highest-Leverage, Measurable within 6 Months
+
+These metrics are measurable with the alert infrastructure in `adoption-tracking-dashboard-spec.md`. Begin capturing Day 1.
+
+**Citation tracking.** Direct references to specific domains in published work — briefs, policy reports, news articles, working papers. Metric: count of unique citation events, broken out by sector and domain number. Primary tools: Google Alerts, Google Scholar Alerts, CourtListener RECAP Alerts, Overton.io (with 6-month indexing lag caveat). Baseline: zero at Day 0. Target at 6 months: at least 5 unique citation events across at least 3 sectors. High confidence threshold: 20+ citation events in at least 4 sectors.
+
+**Vocabulary adoption.** Framework-specific terminology appearing in policy documents, litigation filings, legislation, or journalism after distribution. Metric: count of unique outputs using framework coinages (state legislative autocratization, appellate capture, ICE-at-polls enforcement pattern, NVRA quiet period, constraint failure, fiscal authority bypass). Primary tool: Google News search, CourtListener full-text search, Brennan Center and Protect Democracy publication monitoring. Baseline: run pre-distribution vocabulary sweep to confirm zero prior usage of framework-specific coinages. Assessment window: Month 3 (first meaningful vocabulary data available).
+
+**Litigation impact.** Framework or domain appearing in court filings, amicus briefs, or judicial decisions. Metric: count of dockets where framework analysis is cited; count of domains appearing in at least one filing. Primary tool: CourtListener RECAP Alerts, Democracy Docket. Assessment window: Month 6 (filing → decision lag requires 3–6 months minimum). Most likely first appearances: amicus briefs (fastest format), complaint exhibits (next fastest), judicial opinions (12–18 month minimum lag from complaint to decision).
+
+**Think tank and academic adoption.** Domains cited in policy papers, law review articles, or research reports published after distribution. Metric: count of unique institutional outputs, broken out by domain and institution. Primary tools: Overton.io, Google Scholar, SSRN search. Assessment window: Month 3 (think tanks); Month 12 (academic publications).
+
+**Structural convergence.** Policy proposals or legislation that mirrors domain recommendations without direct citation — indicating deep analytical influence without attribution. Harder to detect than citation; requires comparative text analysis of framework domains against newly published policy documents and legislative text. Primary method: quarterly manual review of major voting rights and democratic governance legislation introduced in target states, compared against Domain 1, 33, 34, and 37 recommendations. Assessment window: Month 6.
+
+---
+
+### Tier 2 Metrics: Medium-Leverage, 6–12 Month Window
+
+**Policy implementation.** Legislation introduced or passed that mirrors framework recommendations. Metric: count of bills introduced in state legislatures or Congress matching domain recommendations, tracked through LegiScan API and state legislative databases. Assessment window: Month 6 (introduction) through Month 12 (passage).
+
+**Curriculum adoption.** Law schools integrating domains into courses or clinical work. Metric: count of confirmed law school courses or clinics using domain materials. Detection method: direct faculty contact, course syllabus searches, clinical program newsletters. Assessment window: Fall 2026 semester (requires distribution contact by mid-June 2026).
+
+**Advocacy organization integration.** Frameworks incorporated into advocacy toolkits or training materials. Metric: count of organizations with confirmed toolkit or training integration; count of member communications using domain language. Detection method: direct contact, public toolkit review, member newsletter monitoring. Assessment window: Month 3–6.
+
+**Media impact.** Investigative journalism using framework as evidence basis for reporting. Metric: count of investigative pieces or series that use domain analysis as structural framework (not just single mentions). Threshold: 800+ words, named domain or domain vocabulary in analytical role. Assessment window: Month 3–6.
+
+**Institutional practice change.** Organizations changing policies or procedures based on domain recommendations. Metric: count of confirmed institutional practice changes (board policies, HR procedures, compliance protocols) traceable to domain recommendations. Detection method: direct institutional contact, public announcements. Assessment window: Month 6–12.
+
+---
+
+### Tier 3 Metrics: Long-Term Impact, 12–24 Month Window
+
+**Electoral impact.** Voting rights domain analyses affecting campaign strategies, voter registration efforts, or get-out-the-vote materials. Metric: count of campaigns, voter registration organizations, or PACs citing domain analysis in materials. Assessment window: Month 12 (midterm election cycle November 2026).
+
+**Institutional reform.** Courts, agencies, or government departments implementing framework recommendations. Metric: count of formal institutional policy changes traceable to framework analysis. This is the highest-impact and rarest outcome. Assessment window: Month 18–24.
+
+**Secondary diffusion.** Academic literature, advocacy publications, and media coverage citing the framework or building on its analysis as a prior source. Metric: count of publications that cite other publications that cited the framework (second-order citations). Tool: Google Scholar citation chains. Assessment window: Month 18–24.
+
+**Social movement adoption.** Grassroots adoption of framework language or analytical concepts in organizer training, community education, or protest materials. Metric: qualitative assessment of framework language in organizer guides, training curricula, and social media discourse. Detection method: social media search, direct organizer contact. Assessment window: Month 12–24.
+
+---
+
+## Section 3: Sector-Specific Adoption Definitions
+
+These definitions govern how adoption events are classified in the Adoption Scorecard. An adoption event not matching these definitions should be logged as Tier 4 (possible alignment) rather than confirmed adoption.
+
+**State AGs — Confirmed adoption**: A filed court document (brief, amicus, complaint, motion), coalition letter, or official press statement uses domain-specific analytical structure, vocabulary, or evidence — published after documented distribution contact. AGs will not cite the framework by name in court filings. Thematic convergence after confirmed contact is the evidentiary standard. Example: An AG amicus brief arguing that the DOJ voter roll litigation violates the NVRA quiet period using the Domain 37 SAVE error rate evidence (81% false positive rate) constitutes adoption regardless of whether the framework is named.
+
+**Law Schools — Confirmed adoption**: (1) Clinic director assigns domain materials to student teams for active casework; or (2) faculty member uses domain analysis in a published syllabi, seminar, or published scholarship; or (3) a law review article cites or engages with domain analysis in a peer-reviewed context. Confirmed adoption at any of these three levels counts. Track each level separately because they operate on different timelines.
+
+**Think Tanks — Confirmed adoption**: A published report, policy brief, or testimony document from a recognized policy institution (Brennan Center, CAP, Cato, EPI, Urban Institute, Protect Democracy, States United Democracy Center) uses domain-specific vocabulary, evidence, or analytical structure in a published output after confirmed distribution contact. Surface vocabulary adoption counts; structural convergence is the stronger signal.
+
+**Litigation Organizations — Confirmed adoption**: A publicly filed court document (complaint, motion, amicus brief) from a public interest law organization (ACLU, LDF, SPLC, Protect Democracy, National Voter Legal Defense Network) cites or structurally applies domain analysis. The filing must postdate confirmed distribution contact. Framework does not need to be named. Domain-specific evidence (e.g., the SAVE database error rate, the specific NVRA quiet period violation pattern) appearing in a brief constitutes adoption.
+
+**Advocacy Groups — Confirmed adoption**: An advocacy organization (voting rights org, union, immigrant rights group, civic engagement nonprofit) incorporates domain analysis into a public-facing advocacy toolkit, member training, legislative testimony, or official policy position. Internal use is detectable only through relationship channels; count only confirmed or publicly verifiable integration. Domain-selective adoption (one or two domains, not the full framework) counts as confirmed adoption.
+
+**Media — Confirmed adoption**: An investigative article or series of 500+ words uses domain-specific analytical framing or vocabulary as an organizing lens (not merely a passing mention). A journalist who consistently applies framework vocabulary across multiple articles has adopted the framework as an interpretive tool — each article is a separate adoption signal. Track unique journalists separately from unique articles.
+
+---
+
+## Section 4: Failure Mode Detection — Early Warning System
+
+### 4.1 False Adoption Signals (Citation Without Implementation)
+
+**Definition.** A framework is cited in published work but not meaningfully integrated into the institution's analytical practice or operational output. Example: a think tank report includes a single endnote citing the framework but the report's analysis does not use its structure, vocabulary, or evidence. This is awareness, not adoption.
+
+**Detection.** Audit each citation event against the sector-specific adoption definition. Apply a secondary check: does the citing institution's subsequent publications show continued use of domain vocabulary or structure? A one-time citation that does not recur over the following six months is a citation-without-implementation event. Log it as Tier 2 (vocabulary convergence) but do not upgrade to Tier 1 (explicit citation and structural adoption) without follow-on evidence.
+
+**Early warning signal.** Citation rate increases but vocabulary adoption does not follow within 8 weeks. This pattern indicates the framework is being cited as a reference rather than used as an analytical tool. Response: deepen engagement with the citing institutions — offer domain-specific briefings, supplementary materials, or direct methodological consultation.
+
+---
+
+### 4.2 Misinterpretation Detection (Framework Used Against Its Purpose)
+
+**Definition.** Framework analysis is cited to support conclusions it does not support, or inverted to argue for positions contrary to its intent. Specific risk: Domain 34 (fiscal authority) used to argue for executive budget impoundment; Domain 29 (prosecutorial independence) used to argue against prosecutorial accountability; Domain 1 (voting rights) used to argue for voter roll maintenance that the framework critiques.
+
+**Detection.** Build a misinterpretation watch list at distribution launch: for each of the five highest-risk domains (1, 6, 29, 34, 37), document the one or two most predictable misreadings. Monitor citation events for these specific inversion patterns. A citation that appears in an amicus brief supporting executive voter roll removal powers — when Domain 37 was developed to document the harms of that policy — is a misinterpretation event.
+
+**Early warning signal.** Citing institution is a conservative legal organization (Federalist Society affiliates, Heritage Foundation, Liberty Counsel) or partisan actor (Republican party-aligned AGs, Trump administration DOJ filings). Any citation from these sources requires immediate review against the misinterpretation watch list.
+
+**Response protocol.** Do not publicly dispute the misapplication (doing so amplifies it). Issue a supplementary clarification document for the misapplied domain, distributed to friendly institutions. If the misapplication reaches a court filing, alert relevant amicus brief filers to the mischaracterization.
+
+---
+
+### 4.3 Partial Adoption Bias (Domain Skew)
+
+**Definition.** Some domains are heavily adopted while others receive no engagement. Expected pattern: voting rights domains (1, 33, 37) over-adopted by election-focused organizations; fiscal authority domains (4, 34) under-adopted; surveillance and digital rights domains (23, 25) adopted by civil liberties organizations but ignored elsewhere.
+
+**Detection.** Maintain a domain heat map updated monthly (Component 3 in `adoption-tracking-dashboard-spec.md`). An adoption distribution where five or fewer domains account for 80%+ of all citation events signals partial adoption bias. This is not failure — it is selective diffusion, which is the normal pattern for comprehensive frameworks (the Model Penal Code was adopted selectively by state legislatures, with homicide and criminal attempt provisions most widely adopted).
+
+**Early warning signal.** At Month 3 review, zero citation events for domains 4, 6, 27, 34, or 35. These are the domains with no obvious single-organization champion in the distribution network. If they remain uncited at Month 3, proactive outreach to domain-specific institutional contacts is warranted.
+
+**Response protocol.** Identify one organization per uncited domain that has institutional reason to engage with it. Run a targeted secondary distribution with domain-specific framing. The goal is not uniform adoption — partial adoption at scale is the correct target — but ensuring core structural domains (fiscal authority, judicial independence) are not entirely absent from adoption signals.
+
+---
+
+### 4.4 Capture Risk (Framework Instrumentalized by Opposing Actors)
+
+**Definition.** The framework is adopted by actors whose institutional interests conflict with its stated goals, who use selective citation to legitimize contrary positions. Example: an executive-branch-aligned legal organization citing Domain 6 (judicial independence) to argue against injunctions against the executive; or a state legislature citing Domain 33 (state legislative authority) to support preemption of local voting rights ordinances.
+
+**Detection.** Monitor the organizational affiliation of all citing institutions. Maintain a capture risk list: organizations whose adoption of any domain should trigger immediate review. Update this list quarterly as the political landscape evolves.
+
+**Early warning signal.** Citation by a federal agency (DOJ, OMB, CISA under current administration) of any framework domain in a regulatory filing or court brief. The current DOJ is the primary institutional actor Domain 37 was developed to document; a DOJ citation of Domain 37 in a voter roll brief would be a capture event.
+
+---
+
+### 4.5 Decay Detection (Adoption Without Follow-Through)
+
+**Definition.** An institution shows initial engagement (framework cited in Month 3) that does not recur in subsequent months. Early citation followed by silence indicates the framework was noted but not integrated into the institution's ongoing work. The MPC's influence grew over years precisely because the ALI continued updating it — the framework remained current, keeping it on adopters' reference lists.
+
+**Detection.** For each confirmed Tier 1 or Tier 2 adoption event, track subsequent outputs from the same institution. If 6 months pass without a follow-on adoption signal, flag as decay candidate. Run a targeted re-engagement with a domain update or a new domain that addresses the institution's current work.
+
+**Early warning signal.** Three or more Tier 1 adopters show no follow-on signal within 6 months of first adoption. This suggests the framework has entered institutional memory but not institutional practice. Response: produce supplementary materials (domain updates, new evidence summaries) and re-distribute specifically to early adopters.
+
+---
+
+## Section 5: Pre-Distribution Baseline Metrics
+
+These baselines establish the counterfactual state — what institutions were doing before distribution. All baselines established as of May 5, 2026. Remeasure at Month 6 (November 5, 2026) and Month 12 (May 5, 2027).
+
+**Baseline 1 — DOJ Voter Roll Litigation (Domain 37 focus).** 31 cases filed against states; 6 dismissed with prejudice; 24 pending in district court; 3 DOJ appeals active in circuit courts. DOJ win/loss record: 0 wins, 6 losses, 1 consent settlement. Primary source: `domain-37-baseline-metrics.md`, Metric 1. Post-distribution indicator: new briefs citing 81% SAVE false positive rate, state AG counter-filings using Domain 37 analytical structure. ([Democracy Docket, April 17, 2026](https://www.democracydocket.com/news-alerts/trump-doj-loses-again-now-0-for-5-on-voter-roll-cases-as-court-rejects-rhode-island-lawsuit/))
+
+**Baseline 2 — CISA Election Security Budget (Domain 37 focus).** FY2026 enacted election security earmark: $39.6M (EI-ISAC terminated; program functionally defunded). FY2027 proposed cut: $707M gross from CISA total; election security program proposed at zero. Source: `domain-37-baseline-metrics.md`, Metric 2.
+
+**Baseline 3 — State AG Coalition Activity.** Active multistate AG coalition count on election/voting rights issues as of April 2026: 22 AGs plus D.C. signed the October 2025 coalition letter against SAVE-based voter roll removals. Baseline for coalition growth: any increase above 22 AGs participating in election-domain coalitions post-distribution is a measurable adoption signal. Source: NAAG coalition records, AG press release archives.
+
+**Baseline 4 — Think Tank Publications on Framework Domains.** Using Overton and Google Scholar: estimate of policy papers published January–April 2026 by Brennan Center, CAP, Protect Democracy, EPI, and States United on voting rights, judicial independence, fiscal authority, and state autocratization. Baseline purpose: any increase in publication rate in these domains at Month 6 that correlates with distribution contact is a Tier 3 adoption signal (thematic coverage shift). Note: Overton has 6–18 month indexing lag; baseline requires manual search of institutional publication pages.
+
+**Baseline 5 — Law School Voting Rights Clinics.** Identified programs at distribution launch: Harvard Law School Election Law Clinic (first in-house election law clinic), Ohio State Moritz College Election Law program (since 2004), William and Mary Election Law program (since 2005), University of Pennsylvania voting rights advocacy program. Total estimated: 15–20 programs nationally with explicit voting rights or election law clinical focus. ([ABA State of Democracy Education in Law Schools](https://www.americanbar.org/groups/public_interest/election_law/american-democracy/our-work/state-democracy-education-law-schools/)) Post-distribution indicator: any new clinical program adopting domain materials as curriculum, or existing clinic expanding casework to match domain analysis.
+
+**Baseline 6 — Active Litigation on Framework Domains.** Democracy Docket active case count by domain area as of May 5, 2026: approximately 85 active election law cases (from Democracy Docket case tracker). Voting rights litigation tracker: Just Security tracks approximately 362 total federal civil challenges to the Trump administration, of which approximately 120 involve election administration, immigration enforcement, and executive authority domains covered by the framework. Post-distribution indicator: new filings using framework vocabulary or evidence in any of these dockets.
+
+**Baseline 7 — ALEC Model Legislation Comparison.** For structural comparison: ALEC's Stand Your Ground model legislation spread to 30 states after Florida's 2005 enactment, with peak adoption within 5 years. ALEC's mechanism (legislative task force, direct state legislator membership, model bill templates) is significantly more powerful than the resistance-research framework's mechanism. The correct baseline target is not ALEC-scale adoption but Brennan Center AVR-scale adoption: 19–23 states over 10 years, with peak adoption occurring 3–5 years after the initial policy proposal, driven by demonstrable outcomes in early-adopting states and coalition infrastructure development.
+
+---
+
+## Measurement Cadence Summary
+
+| Window | Primary metrics | Action trigger |
+|--------|----------------|---------------|
+| Day 7 | First citation events; bridge node engagement | Confirm alert infrastructure operational |
+| Month 1 | Tier 1 and Tier 2 adoption events; domain heat map | Any Tier 1 event triggers direct follow-up |
+| Month 3 | Vocabulary adoption sweep; think tank output review; domain heat map update | Zero Tier 1/2 events triggers distribution strategy review |
+| Month 6 | Full sector assessment; litigation impact; structural convergence review; failure mode audit | Adoption below 10% of target institutions triggers messaging diagnosis |
+| Month 12 | Policy implementation review; curriculum adoption; second-order citation; sustained vs. one-time audit | Strong adoption (40%+ Tier 1/2) triggers Phase 2 expansion approval |
+| Month 24 | Electoral impact; institutional reform; secondary diffusion; social movement adoption | Full framework impact assessment; maintenance cycle decision |
+
+---
+
+*Sources consulted: [Model Penal Code — American Law Institute](https://www.ali.org/publications/model-penal-code/) | [Model Penal Code — Wikipedia](https://en.wikipedia.org/wiki/Model_Penal_Code) | [ABA Model Rules adoption timeline](https://www.americanbar.org/groups/professional_responsibility/publications/model_rules_of_professional_conduct/alpha_list_state_adopting_model_rules/) | [Brennan Center AVR history](https://www.brennancenter.org/our-work/research-reports/history-avr-implementation-dates) | [Brennan Center voting legislation tracker](https://www.brennancenter.org/series/state-voting-laws-roundups) | [NAAG Capital Forum 2024](https://www.mofo.com/resources/insights/241220-key-takeaways-from-the-national-association) | [NAACP v. Alabama (1958) — Justia](https://supreme.justia.com/cases/federal/us/357/449/) | [Democracy Docket case tracker](https://www.democracydocket.com/cases/) | [ABA State of Democracy Education in Law Schools](https://www.americanbar.org/groups/public_interest/election_law/american-democracy/our-work/state-democracy-education-law-schools/) | [ALEC model legislation diffusion — Wikipedia](https://en.wikipedia.org/wiki/American_Legislative_Exchange_Council)*
