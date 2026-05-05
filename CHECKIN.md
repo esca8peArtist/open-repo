@@ -1,3 +1,39 @@
+## Since Last Check-in (Session 727 — 2026-05-05 02:40–03:50 UTC) — Exploration Queue Items 22–24 Complete, Market Monitoring Ready
+
+### Overall Status: ✅ READY FOR DECISION + MARKET MONITORING — Three exploration queue items complete, awaiting user input on distribution path decision
+
+**Session Work Summary**:
+1. ✅ **Exploration Queue Item 22** (resistance-research): `DISTRIBUTION_PATH_ANALYSIS.md` — Comprehensive Path A vs. A+37 Hybrid vs. Path B decision analysis (5,500 words). **Key finding**: Path B's 21–29 day minimum timeline misses May 30 DOJ consent decree window — eliminates Path B if election-protection litigator outreach is strategic priority. Path A→A+37 fully reversible post-launch.
+2. ✅ **Exploration Queue Item 23** (stockbot): `GATE1_CONTINGENCY_ROADMAP.md` — May 12 contingency planning with three scenarios (Pass/Near-Miss/Far-Miss), six monitoring checkpoints, SQL queries, explicit escalation thresholds. **Architecture note**: 2-session Jetson deployment reframes Gate 1 to trajectory-based Gate 1b (5 completed round trips by June 4).
+3. ✅ **Exploration Queue Item 24** (mfg-farm): `DAY1_LAUNCH_OPERATIONS_PLAYBOOK.md` v2.0 — Complete pre-launch to operations guide with FDM tolerance procedures, USPS carrier selection, quality control decision tree, five copy-paste customer service templates, daily/weekly calendar.
+
+### Awaiting User Input (Priority Order)
+
+1. **Resistance-research — Distribution path decision** (HIGH PRIORITY): User now has complete analysis (Item 22). Path decision determines Phase 1 execution start and timing. Item 6 (Tier 1 distribution execution) is ready to launch immediately upon user decision.
+   - **Timeline**: User selects Path A / A+37 / B → orchestrator launches Phase 1 (Gist creation, template field fill, email send) within 3–4 hours
+
+2. **Stockbot — Market monitoring** (CRITICAL, TIME-SENSITIVE): May 5 market opens 13:30 UTC (~10 hours). 19 positions scheduled for close. Engine is healthy (verified May 5 02:35 UTC), will execute as planned regardless of API endpoint hang. **Verification checkpoint**: Run `curl -s http://100.120.18.84:8000/api/ready | grep -q ready && echo ok` at market close (20:00 UTC) to confirm API stability + log close fills.
+
+3. **Seedwarden — Germination tray start** (BLOCKING, TIME-SENSITIVE): User must start germination tray **today (May 5)** for May 10–11 photo shoot. Track B Phase 2 timeline depends on this action.
+
+4. **Mfg-farm — Test print execution**: User runs physical test print, evaluates FDM tolerance (0.05mm click-fit threshold), tunes print settings, provides feedback → unlocks supplier negotiation and Phase 2 supplier research.
+
+5. **Cybersecurity-hardening — Tier 1 approval**: User reviews TIER1_MESSAGING_TEMPLATES.md, approves outreach → orchestrator executes Tier 1 institutional distribution (25 law schools, think tanks, policy orgs).
+
+### Stock bot Status (May 5 Market Day)
+
+**Market opens in ~10 hours (13:30 UTC)**.
+- ✅ Engine healthy on Jetson (verified 02:35 UTC, running 2 AAPL sessions)
+- ✅ 20 positions in database (19 close orders + 1 AAPL hold)
+- ⚠️ API endpoint `/api/ready` timing out (non-critical for trading execution, sessions run independently)
+- **Next checkpoint**: Market close (20:00 UTC) — verify close fills in database, confirm no API errors in session logs
+
+### Usage
+
+Sonnet: 0.7% (59,500 tokens) — healthy. All-models: 1.8%. Reset in 165 hours.
+
+---
+
 ## Since Last Check-in (Session 726 — 2026-05-05 02:33–02:45 UTC) — Domain 37 Baseline Metrics Refreshed with May 5 Developments
 
 ### Overall Status: ✅ MARKET READY — All systems confirmed for May 5 13:30 UTC. Exploration queue work completed.
