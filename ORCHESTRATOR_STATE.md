@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-04T23:59:59Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-05T02:55:06Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 6.5% (578,830 tokens) | All-models 83.1% | Reset in -0h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.7% (58,904 tokens) | All-models 2.3% | Reset in 165h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -54,6 +54,14 @@
 **Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers (no equipment, bands, full gym) × multiple frequencies (3/4/5/6 days), with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols. Awaiting user review and selection.
 ## Active Blocks
 ---
+### stockbot — Jetson health endpoint unreachable (May 5 market open critical)
+**Date blocked**: 2026-05-05
+**Context**: May 5 market open is in 11 hours (13:30 UTC). 19 positions are scheduled to close; 20 total positions confirmed in database with +$4,581.51 unrealized P&L. Pending close orders submitted at May 5 00:17 UTC. Engine runs on Jetson (100.120.18.84), not Pi. Agent verification at 02:16 UTC found that `curl http://100.120.18.84/api/ready` produced no output — either Jetson is unreachable or health endpoint is down.
+**UPDATE (Session 726 — 2026-05-05 02:35 UTC)**: Engine IS running and healthy. Docker container `stockbot:jetson` has been up for 3 hours with status "healthy". SSH access confirmed. Container logs show 2 trading sessions (a1b2c3d4e5f60001, 33a4afe676cae12a) successfully initialized and sleeping until 2026-05-05 13:15 UTC (15 min before market open). Uvicorn dashboard API reports "started successfully" on port 8000. Database confirmed: 20 positions in OPEN status. **However**: HTTP endpoint `/api/ready` on both port 80 and 8000 is timing out (both curl http://100.120.18.84:8000/api/ready and localhost curl hang). API endpoint appears to have a hang/deadlock. This is NOT critical for trading — sessions execute independently of API health. Trading will proceed as scheduled.
+**What I need**: (1) Verify if close orders will execute at market open despite API endpoint hang (sessions appear ready). (2) If API is critical, diagnose why endpoint is hanging (possible asyncio deadlock in dashboard_api.py, or rate limiter issue).
+**Verify with**: `curl -s http://100.120.18.84:8000/api/ready | grep -q ready && echo ok` OR `ssh awank@100.120.18.84 "docker logs stockbot 2>&1 | grep -i 'execution\|filled\|pending close' | tail -5"` at market open
+**Resolution**:
+---
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -65,43 +73,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- `a1b2c3d4e5f60001` — AAPL_h10_ridge_wf (stacker `32643264`)
+   - Measurement protocol: Post-distribution, do additional states activate Section 3 litigation?
 
-19 non-AAPL positions (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA,
-SHW, PG, LIN, FDX, GOOGL) closed via Alpaca market orders tonight. These execute at 13:30 UTC
-May 5 (market open). AAPL position (108 shares, ~$29.8K, +$924 unrealized) stays open.
+5. **Election Protection Coordination Infrastructure** (comprehensive audit)
+   - CISA situation room: Not established (first absence in history)
+   - EI-ISAC: Terminated, MS-ISAC: $10M cut
+   - Protect The Vote 2026: 100 hubs, 50 legal teams, 500K volunteer target
+   - Expert risk assessment: Votebeat survey, 27 of 37 experts consider federal polling-place deployment "at least somewhat likely"
+   - Measurement protocol: Post-distribution, is coordination accelerated or strengthened?
 
-Account state going into May 5: Cash -$310K (paper artifact), buying_power ~$0, long $420K.
-After 19 closes, buying_power is expected to return to positive.
+6. **Congressional Legislation** (messaging-only under current Republican control)
+   - H.R.2803 (Protecting Election Administration from Interference Act): 5 co-sponsors, Judiciary + House Admin Committee, no floor path
+   - Measurement protocol: Would Democratic House in 120th Congress schedule committee hearing within 90 days?
 
-### Fixes Deployed
+7. **Media/Academic Attention** (baseline anchors established)
+   - Media: ProPublica April 2026 investigation as primary baseline, ongoing coverage via Votebeat/Democracy Docket/Brennan Center
+   - Academic: UCLA Safeguarding Democracy Project, CREW, CDT leading indicators
+   - Gap noted: SSRN submission baseline not yet established (flagged to complete at distribution)
+   - Measurement protocol: Post-distribution, increased citation, media attention, academic output?
 
-**Fix 1 — active-sessions.json seed**: Jetson DB re-seeded from `active-sessions.json` to reflect
-the 2-session-only state. Prior DB state referenced 67 sessions that no longer exist on the Jetson.
-This was necessary to prevent the engine from attempting to load missing session configs on startup.
+**Key Research Sources** (17 cited):
+- Democracy Docket DOJ voter roll tracker
+- Brennan Center voter information tracker
+- University of Wisconsin Law DOJ lawsuit tracker
+- Nextgov/FCW CISA FY27 budget analysis
+- ProPublica April 2026 Trump midterm takeover investigation
+- Votebeat expert survey, CISA trust analysis
+- Protect The Vote 2026 organizational data
+- Congress.gov H.R.2803 tracking
+- Just Security Trump election strategy analysis
+- Election Law Blog Safeguarding Democracy Project
 
-**Fix 2 — /api/ready endpoint**: Endpoint verified returning correct session count (sessions:2).
-This endpoint is the canonical health check for the Jetson deployment. Pre-market check at 13:00
-UTC each day should ping this endpoint and confirm sessions:2 before market open.
+**Impact**: This document enables rigorous pre-post measurement of framework distribution impact. Once Phase 1 distribution begins, we can quantify whether the framework:
+- Accelerated DOJ litigation dismissals or state AG defenses
+- Influenced Congressional action on emergency authority
+- Strengthened election protection infrastructure coordination
+- Increased academic/media attention to these mechanisms
 
-### Gate 1 Revised Assessment
+**Next Phase**: When user selects distribution path (A / A+37 / B), Domain 37 baseline metrics become part of the Phase 1 launch infrastructure. Quarterly checks (30/90/180 days) will measure movement on each metric.
 
-The original Gate 1 target (150 fills by May 12) was calibrated for 67 sessions at ~12.6
-fills/trading-day. With 2 AAPL sessions, the maximum possible fill rate is 2/day and the realistic
-rate is 0–2/day (signals fire only when threshold is crossed). The 150-fill target is structurally
-unreachable in the 2-session architecture.
-
-**Gate 1 — RETIRED** for the prior 67-session architecture.
-
-**Gate 1b — ACTIVE** (2-session architecture):
-- Minimum 5 completed round trips across both AAPL sessions within 30 days of May 5
-- All fills must have fill_price > 0 and fill_time within market hours
-- Both sessions alive on every market open through June 4
-- 0 sustained auth errors during market hours
-- Deadline: June 4, 2026
-- Estimated pass probability: ~80%
-
-Full analysis: `projects/stockbot/GATE_1_REVISED_2SESSION.md`  
-May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
-
-**Remaining session time**: ~10 hours until market open (13:30 UTC); prioritize stockbot monitoring and market readiness
+**Status**: All seven metrics are production-ready and can be integrated into post-distribution tracking dashboard immediately upon framework distribution decision.
