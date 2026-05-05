@@ -1,0 +1,57 @@
+cohort_month,cohort_season,buyers_acquired,month_1_buyers,month_1_retention_pct,month_2_buyers,month_2_retention_pct,month_3_buyers,month_3_retention_pct,month_6_buyers,month_6_retention_pct,cohort_ltv_m1,cohort_ltv_m3,cohort_ltv_m6,dominant_cohort,second_purchase_rate_90d_pct,avg_days_to_second_purchase,top_guide_first_purchase,top_guide_second_purchase,cross_sell_rate_pct,acquisition_source_top,seasonal_repeat_signal,notes
+2026-05,spring_planning,,,,,,,,,,,,,,,,,,,,launch_month,TEMPLATE — fill from Etsy API data after each month closes
+2026-06,long_tail_spring,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
+2026-07,preservation,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
+2026-08,preservation,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
+2026-09,preservation,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
+2026-10,long_tail_fall,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
+2026-11,holiday_gift,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
+2026-12,holiday_gift,,,,,,,,,,,,,,,,,,,,,,TEMPLATE — fill from Etsy API data after each month closes
+cohort_month,cohort_season,buyers_acquired,month_1_buyers,month_1_retention_pct,month_2_buyers,month_2_retention_pct,month_3_buyers,month_3_retention_pct,month_6_buyers,month_6_retention_pct,cohort_ltv_m1,cohort_ltv_m3,cohort_ltv_m6,dominant_cohort,second_purchase_rate_90d_pct,avg_days_to_second_purchase,top_guide_first_purchase,top_guide_second_purchase,cross_sell_rate_pct,acquisition_source_top,seasonal_repeat_signal,notes
+COLUMN_DEFINITIONS,,,,,,,,,,,,,,,,,,,,,
+cohort_month,YYYY-MM format. The calendar month in which these buyers made their first purchase.,,,,,,,,,,,,,,,,,,,,,
+cohort_season,spring_planning (Jan-Apr) | long_tail_spring (May-Jun) | preservation (Jul-Sep) | long_tail_fall (Oct) | holiday_gift (Nov-Dec),,,,,,,,,,,,,,,,,,,,,
+buyers_acquired,Count of unique buyer emails who placed their first-ever Seedwarden order in this month. Source: Etsy API receipts query filtered to first-purchase buyers only.,,,,,,,,,,,,,,,,,,,,,
+month_1_buyers,Count of buyers from this cohort who placed any order (including repeat) during Month 1 of their lifecycle (same month as acquisition). Should equal buyers_acquired.,,,,,,,,,,,,,,,,,,,,,
+month_1_retention_pct,Always 100.0 — baseline.,,,,,,,,,,,,,,,,,,,,,
+month_2_buyers,Count of buyers from this cohort who placed an order in the second calendar month after acquisition. Source: cohort-analysis-template.sql Section 2.,,,,,,,,,,,,,,,,,,,,,
+month_2_retention_pct,month_2_buyers / buyers_acquired * 100. Target: 8%+ for non-gift cohorts.,,,,,,,,,,,,,,,,,,,,,
+month_3_buyers,Count of buyers from this cohort who placed any order in Month 3 of their lifecycle.,,,,,,,,,,,,,,,,,,,,,
+month_3_retention_pct,month_3_buyers / buyers_acquired * 100. Target: 15%+ (equivalent to 90-day second purchase rate). This is the primary Phase 2 decision metric.,,,,,,,,,,,,,,,,,,,,,
+month_6_buyers,Count of buyers from this cohort who placed any order in Month 6 of their lifecycle.,,,,,,,,,,,,,,,,,,,,,
+month_6_retention_pct,month_6_buyers / buyers_acquired * 100. Target: 10%+ for non-gift cohorts. Gift buyer target: 3%+.,,,,,,,,,,,,,,,,,,,,,
+cohort_ltv_m1,Average cumulative net revenue per buyer in this cohort through Month 1. Net revenue = gross * 0.905 - $0.25. Source: cohort-analysis-template.sql Section 3.,,,,,,,,,,,,,,,,,,,,,
+cohort_ltv_m3,Average cumulative net revenue per buyer through Month 3 (all orders in Months 1-3 summed per buyer / buyers_acquired).,,,,,,,,,,,,,,,,,,,,,
+cohort_ltv_m6,Average cumulative net revenue per buyer through Month 6. This is the primary LTV figure for Phase 2 gate decisions.,,,,,,,,,,,,,,,,,,,,,
+dominant_cohort,The most common assigned cohort in this acquisition month. One of: high_intent_forager | survival_prepper | homesteader | gift_buyer | mixed.,,,,,,,,,,,,,,,,,,,,,
+second_purchase_rate_90d_pct,Percentage of this cohort who made a second purchase within 90 days of their first purchase. Target: 20%+. Primary health indicator.,,,,,,,,,,,,,,,,,,,,,
+avg_days_to_second_purchase,Mean number of days between first and second purchase for buyers in this cohort who made a second purchase. Target: 45-75 days for foragers; 60-90 for homesteaders; 60-120 for preppers.,,,,,,,,,,,,,,,,,,,,,
+top_guide_first_purchase,Most purchased guide as first purchase in this cohort. Source: cohort-analysis-template.sql Section 5.1.,,,,,,,,,,,,,,,,,,,,,
+top_guide_second_purchase,Most purchased guide as second purchase in this cohort (among buyers who made a second purchase). Source: cohort-analysis-template.sql Section 5.2.,,,,,,,,,,,,,,,,,,,,,
+cross_sell_rate_pct,Percentage of second purchases that were a different guide category than the first purchase (vs. same category at different price tier). High cross_sell_rate = healthy catalog breadth.,,,,,,,,,,,,,,,,,,,,,
+acquisition_source_top,Top traffic acquisition source for this cohort. Source: GA4 traffic acquisition report filtered to the cohort's acquisition month.,,,,,,,,,,,,,,,,,,,,,
+seasonal_repeat_signal,Whether this cohort shows elevated repeat purchase activity during a particular season. One of: spring_planning | preservation | holiday_gift | uniform | insufficient_data,,,,,,,,,,,,,,,,,,,,,
+notes,Qualitative observations from monthly review. Note anomalies (spike in orders from a single source; a listing going viral; a seasonal event that drove unusual volume).,,,,,,,,,,,,,,,,,,,,,
+SEASONAL_ROLLUP_TABLE,,,,,,,,,,,,,,,,,,,,,
+season,Jan_Feb_Mar_Apr buyers,May_Jun buyers,Jul_Aug_Sep buyers,Oct buyers,Nov_Dec buyers,season_total_buyers,season_avg_ltv_m6,season_second_purchase_rate_pct,season_dominant_cohort,strongest_repeat_into_season,notes,,,,,,,,,,
+spring_planning,,,,,,,,,,,,,,,,,,,,,,
+long_tail_spring,,,,,,,,,,,,,,,,,,,,,,
+preservation,,,,,,,,,,,,,,,,,,,,,,
+long_tail_fall,,,,,,,,,,,,,,,,,,,,,,
+holiday_gift,,,,,,,,,,,,,,,,,,,,,,
+SEASONAL_ROLLUP_DEFINITIONS,,,,,,,,,,,,,,,,,,,,,
+season_total_buyers,Sum of buyers_acquired across all months in this season.,,,,,,,,,,,,,,,,,,,,,
+season_avg_ltv_m6,Average of cohort_ltv_m6 for all cohorts acquired in this season.,,,,,,,,,,,,,,,,,,,,,
+season_second_purchase_rate_pct,Average second_purchase_rate_90d_pct for all cohorts acquired in this season. The seasonal pattern that shows the highest repeat rate identifies your highest-LTV acquisition window for Phase 2 ad spend.,,,,,,,,,,,,,,,,,,,,,
+strongest_repeat_into_season,Which season do buyers acquired in this season tend to make their repeat purchase? E.g. preservation-acquired buyers may repeat heavily in holiday_gift season. Track this to time email campaigns appropriately.,,,,,,,,,,,,,,,,,,,,,
+PHASE_2_GATE_TRACKER,,,,,,,,,,,,,,,,,,,,,
+gate,trigger_metric,current_value,target_value,gate_status,date_triggered,action_initiated,notes,,,,,,,,,,,,,,
+Gate_A_Etsy_Ads,conversion_rate_pct_top3_listings,,2.5,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_A_Etsy_Ads_secondary,top3_listing_monthly_views,,200_each,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_A_Etsy_Ads_tertiary,aov_usd,,28,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_B_New_Guide,cohort_second_purchase_rate_pct,,25,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_B_New_Guide_secondary,ltv_ratio_high_vs_low_cohort,,1.4,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_C_Endangered_Species,cumulative_orders,,400,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_C_Endangered_Species_secondary,repeat_buyer_rate_pct,,20,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_D_Paid_Ads_External,email_list_size,,800,not_triggered,,,,,,,,,,,,,,,,,,,
+Gate_D_Paid_Ads_secondary,pinterest_monthly_outbound_clicks,,50,not_triggered,,,,,,,,,,,,,,,,,,,

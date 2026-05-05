@@ -4,6 +4,50 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 733 — 2026-05-05 — Post-Phase-1 Analytics and Customer Cohort Tracking Framework
+
+**Task**: Design analytics and customer cohort tracking framework to activate at Phase 1 launch. Research Etsy API capabilities, design GA4 event schema, define cohort automation logic, and build Phase 2 decision gates.
+
+**Key findings**:
+
+- Etsy API gap: The Etsy Open API v3 provides transactional order data (receipts, transactions) but no stats data. Views, favorites, traffic source breakdown, and search keywords are not available via API — only via the manual Etsy Stats dashboard. `buyer_email` requires separate commercial access approval from Etsy and is not available by default. Daily API pull is viable for order/transaction data only.
+- GA4 on Etsy: Etsy supports GA4 via Measurement ID in Shop Manager > Options > Web Analytics. The tag fires on listing pages only. Purchase events do not fire on Etsy checkout pages — GA4 is a traffic measurement tool only for Etsy-hosted shops, not a transaction tracking tool.
+- Existing infrastructure: `customer-cohort-analysis-framework.md`, `google-analytics-integration-guide.md`, `etsy-analytics-template.csv`, `customer-analytics.csv`, `analytics/monthly-metrics-checklist.md`, and `analytics/cohort-analysis-template.sql` already cover cohort definitions, messaging cadence, SQL queries, and monthly operator workflow. New documents add: Etsy API reality mapping, GA4 custom dimension schema, Phase 2 decision gates with precise trigger thresholds, cannibalization framework, and a cohort-by-month retention tracking CSV with built-in gate tracker.
+- Phase 2 gate design: Four gates defined with specific numeric thresholds — Gate A (Etsy ads: 2.5% conversion on 3+ listings, 200+ organic views each, $28+ AOV), Gate B (new guide: 25% 90-day second purchase rate or LTV ratio 1.4x high vs. low cohort), Gate C (endangered species: 400+ cumulative orders, 20%+ repeat rate), Gate D (paid external ads: 800+ subscribers, 50+ Pinterest outbound clicks/month).
+
+**Documents read this session**: WORKLOG.md, customer-cohort-analysis-framework.md, google-analytics-integration-guide.md, etsy-analytics-template.csv, customer-analytics.csv, analytics/monthly-metrics-checklist.md, analytics/cohort-analysis-template.sql, phase-2-blockers.md.
+
+**Documents produced**:
+
+| File | Purpose |
+|---|---|
+| `post-launch-analytics-framework.md` | Full data architecture: Etsy API reality (what is/isn't available), data flow diagram, cohort signal logic from API fields, UTM schema, success metrics by Month 1/3/6, Phase 2 decision gates with numeric thresholds, cannibalization analysis framework, implementation timeline Day 0 through Month 6 |
+| `etsy-ga4-event-tracking.md` | Technical specification: standard event inventory, 6 custom dimensions with GA4 Admin registration instructions, 6 custom event schemas with full parameter lists, 5 audience segment definitions with GA4 configuration details, attribution model rationale (guides vs. bundles differ), UTM-to-dimension derivation table, monthly GA4 reporting workflow |
+| `customer-retention-tracker.csv` | Monthly cohort rollup template: one row per acquisition month with Month 1/2/3/6 retention rates, LTV progression, dominant cohort, second-purchase rate, cross-sell rate, seasonal signal; seasonal rollup table; Phase 2 gate tracker table with current/target values and status fields |
+
+**Image downloads this session**: 0 — research and framework design session.
+
+---
+
+## Session 730 — 2026-05-05 — Endangered Species Phase 2 Expansion Research
+
+**Task**: Research and produce endangered-species-candidate-list.md for Phase 2/3 content expansion — identify 15 candidate US native plants with endangered/threatened status and culinary/medicinal/educational value, assess legal feasibility, photo access, commercial seed availability, and market positioning.
+
+**Key findings**:
+- Lead finding: the most commercially viable candidates are UpS At-Risk / CITES Appendix II tier, not ESA-listed. ESA-listed plants (T. persistens, T. reliquum, Venus Flytrap) can appear in guides for identification/conservation education but should not be positioned as cultivation targets.
+- Top 5 anchor species: American Ginseng (CITES App. II, seeds exempt), Goldenseal (CITES App. II), Black Cohosh (UpS At-Risk), Ramps (state-listed, Quebec commercial ban), Bloodroot (UpS At-Risk). All have commercial cultivated seed suppliers.
+- Photo access: iNaturalist CC-BY filter + botanical garden partnerships + forest farm requests = realistic 4–8 week sourcing path for Tier 1 species.
+- Market gap: $28–38 Appalachian Medicinals bundle sits in the same structurally vacant premium tier identified in phase-2-premium-taxonomy-research.md. No Etsy competitor covers this.
+- Wave 1 launch target: September 2026 (fall foraging season peak).
+
+**Documents produced**:
+
+| File | Purpose |
+|---|---|
+| `endangered-species-candidate-list.md` | 15-candidate shortlist with legal feasibility table, photo access paths, educational frameworks, market positioning, and 3-wave production roadmap |
+
+---
+
 ## Session 728 — 2026-05-05 — Track B Final Execution Prep
 
 **Task**: Final preparation for May 30 Phase 2 launch — asset verification, master execution
