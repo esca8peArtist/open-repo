@@ -4,6 +4,33 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 749 — 2026-05-05 — Endangered Species Market Saturation Analysis
+
+**Task**: Comprehensive Etsy market research for endangered species guides to inform Phase 2 Wave 1 launch scope and pricing positioning.
+
+**Deliverable produced**: `research/endangered-species-market-saturation-analysis.md` (~1,800 words)
+
+**Key findings**:
+
+- Niche is not saturated — it is unoccupied. Every species-specific query (ginseng, goldenseal, ramps, black cohosh) returns seeds and live plants as primary Etsy results; zero quality cultivation guides found in the premium tier.
+- 15–18 competitor matrix documented with pricing, review counts, and category gaps.
+- Wildcrafting guide pricing confirmed in Etsy search snippets at $18.29, $22.00, $22.44, $25.50, $28.00 — validates $18–22 single-guide range as market-supported.
+- Amazon reference ceiling confirmed: Pritts "Ginseng" at $18.93 Kindle; Davis & Persons "Growing and Marketing Ginseng, Goldenseal" at $30–40 physical/$18.93 Kindle.
+- Herbal Academy course ceiling confirmed at $64 — establishes buyer WTP for multi-species herbal education.
+- Demand elasticity: $25–48 zone viable for Conservation-Conscious Naturalist and Herbalist cohorts; launch at $18 single guide to seed reviews, increase to $22 post-20 reviews.
+- Four buyer cohorts documented with LTV estimates: Conservation Naturalists ($65–130/yr), Herbalists ($50–120/yr), Homesteaders ($20–40/yr), Educators ($25–60/yr).
+- Seasonal demand calendar: spring +30–50% (planting/seed ordering), fall +45–75% (ginseng stratification start; gift onset) — fall is the primary organic launch window.
+- Differentiation: "Know it, grow it, protect it" triad (conservation framing + cultivation protocol + cultural heritage) is absent from all current Etsy competitors.
+- Sustainability angle confirmed as both buyer language (65% of herbal consumers prioritize ethical sourcing) and Etsy platform priority for 2025 strategy.
+
+**Documents created**:
+
+| File | Changes |
+|---|---|
+| `research/endangered-species-market-saturation-analysis.md` | New file, ~1,800 words; 15–18 competitor matrix; pricing tier table; seasonal demand calendar; cohort LTV matrix; differentiation matrix; go/no-go recommendation (Proceed) |
+
+---
+
 ## Session 748 — 2026-05-05 — Endangered Species Market Analysis Deep Refresh (Exploration Queue Item 748)
 
 **Task**: Deepen the existing `research/endangered-species-market-analysis.md` with fresh Etsy live search data, confirmed pricing evidence from wildcrafting guide search results, Amazon reference-ceiling validation, updated UpS conservation scope, macro market data update, and buyer cohort language analysis.
