@@ -3,7 +3,7 @@ title: "Environmental Regulation Rollbacks Tracker — Trump Administration 2025
 subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
-last_updated: "2026-04-29"
+last_updated: "2026-05-05"
 april_2026_entries: "entries 25–30 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup; entry 28 (OOOO methane flaring rule) added April 27; entry 29 (CCR coal ash proposed rollback) added April 27; entry 30 (plastic pyrolysis Clean Air Act reclassification) added April 27"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
@@ -661,3 +661,65 @@ The following organizations are actively litigating environmental rollbacks and 
 ---
 
 *This document is part of the resistance-research project. It is intended as a public reference. Cite primary sources (Federal Register citations, agency press releases, court filings) for legal proceedings. Last compiled April 26, 2026; updated April 29, 2026 (entry 31 added — PM2.5 nonattainment coalition lawsuit, April 13, 2026).*
+
+---
+
+## VI-C. May 5, 2026 Additions
+
+### 32. Clean Water Act Section 401 — State and Tribal Water Certification Authority Gutted (Rule Finalization Expected Imminently)
+**Rule**: Updating the Water Quality Certification Regulations — Revision of CWA Section 401 Implementation
+**Code**: 40 CFR Part 121; Clean Water Act Section 401, 33 U.S.C. § 1341
+**Agency**: EPA
+**Status**: [PROPOSED — finalization expected spring 2026; comment period closed February 17, 2026]
+
+**What changed**: On January 13, 2026, EPA proposed a rule that would sharply curtail the authority of states and tribes to use Clean Water Act Section 401 water quality certification to protect their water bodies from federally permitted projects. Under the current 2023 Biden-era rule, states and tribes could review the entire activity associated with a federal permit — the "activity as a whole" standard — and could condition or deny certification based on downstream impacts to water quality. EPA's proposed rule would: (a) replace "activity as a whole" review with a narrow "discharge-only" standard, limiting certification review to the direct point of discharge into waters rather than the project's broader hydrological and water quality effects; (b) standardize certification requests to a fixed list of components, preventing states and tribes from requesting additional project information; (c) eliminate the pathway for tribes to obtain "treatment as a state" status solely for Section 401 purposes, requiring tribes to pursue TAS status through the more burdensome CWA Section 303(c) process.
+
+**Stated justification**: EPA characterized the rule as returning Section 401 "to its proper statutory purpose" and eliminating "regulatory overreach that has imposed unnecessary burden on critical infrastructure projects." The agency framed state and tribal certification authority as having been improperly weaponized to block energy projects.
+
+**Real-world impact**: Section 401 has been one of the most effective tools available to states and tribes to block or condition federally permitted pipelines, dams, LNG terminals, and other infrastructure that threatens their water quality. The discharge-only standard would mean states reviewing a pipeline crossing a stream could only assess the direct discharge at that crossing point — not cumulative sedimentation, temperature effects, or downstream contamination from a leak. Earthjustice characterized the rule as gutting "states' authority to protect their water quality" and warned that states with high standards — particularly in the Pacific Northwest, where tribal treaty rights to water and fish are constitutionally protected — would lose the primary legal tool for enforcing those rights under federal permitting processes.
+
+**Legal context**: Section 401 became politically central after the State of Washington used it to block the Millennium Bulk Terminals coal export facility and after New York used it in relation to pipeline permits. The Trump administration's first-term rollback of Section 401 was enjoined and then replaced by the Biden 2023 rule. This cycle is now repeating. The proposed rule's comment period closed February 17, 2026; EPA stated it intends to finalize in spring 2026 — making finalization imminent as of this update.
+
+**Litigation**: Earthjustice and allied organizations have pre-positioned for challenge upon finalization. Tribal nations with treaty rights affected by the "treatment as a state" rollback are expected to file additional claims. No final rule litigation possible until finalization.
+
+**Previous rule**: Biden 2023 Section 401 rule (88 FR 60718, September 5, 2023).
+
+**Sources**: [EPA — proposed rule announcement](https://www.epa.gov/newsreleases/epa-proposes-cwa-section-401-rule-streamline-permitting-unleash-economic-growth-and) | [Federal Register — proposed rule text (FR 2026-00754)](https://www.federalregister.gov/documents/2026/01/15/2026-00754/updating-the-water-quality-certification-regulations) | [Earthjustice — states authority gutted](https://earthjustice.org/press/2026/trump-epa-undercuts-state-and-tribal-authority-under-clean-water-act) | [Harvard EELP — Section 401 tracker](https://eelp.law.harvard.edu/tracker/section-401-water-quality-certification/) | [Flow Water Advocates — analysis](https://flowwateradvocates.org/clean-water-act-section-401/) | [Spencer Fane — legal analysis](https://www.spencerfane.com/insight/epa-wants-to-change-the-scope-of-the-clean-water-acts-rule-401-certification-process-the-review-process-landscape-changes-dramatically/)
+
+---
+
+### 33. Power Plant Greenhouse Gas Standards Repeal — Final Rule Sent to OMB Spring 2026; Finalization Pending
+**Rule**: Repeal of Greenhouse Gas Emissions Standards for Fossil Fuel-Fired Electric Generating Units
+**Code**: 40 CFR Parts 60, 63
+**Agency**: EPA
+**Status**: [FINAL RULE PENDING — at OMB for review as of late February 2026; finalization expected spring 2026]
+
+**What this entry updates**: The proposed repeal of power plant GHG standards (entry 4 in this tracker) has advanced materially. As of February 27, 2026, EPA filed a status report in D.C. Circuit litigation stating it "intended to send the final rule to the Office of Management and Budget in early spring 2026." This is the last administrative step before Federal Register publication. The rule would eliminate: (a) Obama-era 2015 NSPS GHG standards for new fossil fuel-fired power plants; (b) Biden-era 2024 Carbon Pollution Standards (Clean Power Plan 2.0) for both new and existing plants; (c) EPA's Clean Air Act Section 111(d) authority over existing plant GHG emissions, which the rule proposes to eliminate by claiming power plant GHG emissions do not "contribute significantly" to dangerous air pollution.
+
+**Connection to the Endangerment Finding rescission**: The Endangerment Finding rescission (entry 1, effective April 20, 2026) and the power plant GHG standards repeal are companion rules. The Endangerment Finding established EPA's authority to regulate GHGs from motor vehicles; the power plant rule acts through Clean Air Act Section 111, which requires a separate "significant contribution" finding. By proposing that power plant GHG emissions do not "contribute significantly" to dangerous air pollution, EPA is constructing a Section 111-specific barrier to future GHG regulation of the power sector that would survive even a judicial reversal of the Endangerment Finding rescission.
+
+**Practical effect once finalized**: Eliminates the legal basis for CCS requirements at new gas-fired power plants, eliminates CO2 limits for coal plants, and would prevent any future administration from reimposing GHG standards for power plants without a new Section 111 "significant contribution" determination — which this administration is also seeking to make impossible by disbanding the scientific and analytical infrastructure (IRIS program cuts, social cost of carbon reduction, entry 12 and entry 23 in this tracker) that would support such a determination.
+
+**Litigation**: D.C. Circuit litigation by 24 state attorneys general and multiple environmental organizations is pending. No preliminary injunction has been granted. The D.C. Circuit stayed related litigation at EPA's request pending finalization. Once the final rule is published, the challengers will seek preliminary injunction and expedited merits briefing.
+
+**Sources**: [Harvard EELP — power plant GHG tracker](https://eelp.law.harvard.edu/tracker/regulating-greenhouse-gases-for-new-and-existing-fossil-fuel-fired-power-plants/) | [Federal Register — proposed repeal (June 17, 2025)](https://www.federalregister.gov/documents/2025/06/17/2025-10991/repeal-of-greenhouse-gas-emissions-standards-for-fossil-fuel-fired-electric-generating-units) | [EPA — proposed repeal press release](https://www.epa.gov/newsreleases/epa-proposes-repeal-biden-harris-epa-regulations-power-plants-which-if-finalized-would) | [National Law Review — pullback analysis](https://natlawreview.com/article/epa-pulls-trigger-on-greenhouse-gas-regulatory-rollbacks) | [Morgan Lewis — repeal summary](https://www.morganlewis.com/pubs/2025/06/epa-proposes-repeal-of-greenhouse-gas-standards-for-power-plants)
+
+---
+
+### 34. Coal Combustion Residuals — Virginia CCR State Permit Program Approved by EPA (May 4, 2026)
+**Rule**: Virginia: Approval of State Coal Combustion Residuals Permit Program
+**Code**: 40 CFR Part 257; RCRA Section 4005(d)
+**Agency**: EPA
+**Status**: [PROPOSED APPROVAL — Federal Register publication May 4, 2026; 60-day comment period, public hearing June 24, 2026]
+
+**What happened**: On May 4, 2026, EPA published in the Federal Register its proposal to approve Virginia's partial state CCR permit program under RCRA Section 4005(d). If approved, Virginia's DEQ CCR permit program would operate "in lieu of" the federal CCR program, with certain exceptions. A 60-day public comment period runs through July 6, 2026, and EPA will hold a hybrid (in-person and virtual) public hearing on June 24, 2026.
+
+**Why this matters in the context of the broader CCR rollback**: This approval comes simultaneously with EPA's April 2026 proposal to gut the federal CCR rule (entry 29 in this tracker). State program approvals are explicitly permitted by RCRA Section 4005(d) — but the mechanism matters. States operating approved programs are bound by the federal performance standards in effect at the time of approval. If Virginia's program is approved while EPA simultaneously weakens the federal CCR rule (entry 29, proposing "waste-in-place" closures, CCRMU rescission, and reduced environmental demonstration requirements for beneficial use), Virginia could lock in weaker standards as its baseline.
+
+**Virginia context**: Virginia maintains relatively stringent state coal ash standards that, as of April 2026, exceed the federal minimums EPA is proposing to roll back. The Virginia Mercury reported on April 21, 2026, that Virginia DEQ is maintaining its standards even as federal requirements are softened. The state program approval, therefore, could function as a floor that protects Virginia regardless of what EPA does federally — or, depending on the timing and terms of approval, could create legal ambiguity about which standard governs.
+
+**Sources**: [Federal Register — Virginia CCR program approval (FR 2026-08662)](https://www.federalregister.gov/documents/2026/05/04/2026-08662/virginia-approval-of-state-coal-combustion-residuals-permit-program) | [Virginia Mercury — state vs. federal standards](https://virginiamercury.com/2026/04/21/as-feds-suggest-easing-coal-ash-clean-up-regulations-va-maintains-stringent-standards/) | [EPA — CCR permit programs](https://www.epa.gov/coal-combustion-residuals/permit-programs-coal-combustion-residual-disposal-units)
+
+---
+
+*This document is part of the resistance-research project. It is intended as a public reference. Cite primary sources (Federal Register citations, agency press releases, court filings) for legal proceedings. Last compiled April 26, 2026; updated May 5, 2026 (entry 32 — CWA Section 401 state certification authority gutted, finalization imminent; entry 33 — power plant GHG repeal advanced to OMB, finalization pending; entry 34 — Virginia CCR state permit program proposed approval, Federal Register May 4, 2026).*

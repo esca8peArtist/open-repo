@@ -1,7 +1,7 @@
 ---
 title: "Police Brutality Consent Decree Tracker — Compliance, Defiance, and the Federal Withdrawal"
 description: "City-by-city reference tracking active and terminated police consent decrees, specific provision violations, monitoring gaps, and the 2025 collapse of federal pattern-or-practice enforcement. For use by activists, civil rights lawyers, and journalists."
-last_updated: 2026-04-29
+last_updated: 2026-05-05
 status: active
 phase: 3
 project: resistance-research
@@ -15,7 +15,7 @@ sources_verified: true
 
 # Police Brutality Consent Decree Tracker
 
-*Last updated: April 27, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Pattern 6 added (10th Circuit Denver ruling, circuit split on protest policing, cross-reference to first-amendment-suppression.md Section A.1); Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026); Oakland Open Research Thread 8 updated (charter reform and NSA exit timeline); LAPD section updated with April 11 journalist assault incidents and LA Press Club lawsuit data.*
+*Last updated: May 5, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Pattern 6 added (10th Circuit Denver ruling, circuit split on protest policing, cross-reference to first-amendment-suppression.md Section A.1); Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026); Oakland Open Research Thread 8 updated (charter reform and NSA exit timeline); LAPD section updated with April 11 journalist assault incidents and LA Press Club lawsuit data. May 5 additions: Cleveland exit ruling still pending; ICE shooting accountability gap reinforces Pattern 4; World Press Freedom Day 2026 journalist prosecution data.*
 
 **Lead finding**: The May 21, 2025 Trump DOJ action — simultaneously withdrawing from two proposed consent decrees, retracting findings of unconstitutional policing in eight jurisdictions, and closing pattern-or-practice investigations in six cities — was the largest single rollback of federal police oversight in U.S. history. It was not aberrational. It was the culmination of a strategy that began on January 22, 2025, and continues through systematic defunding of the Civil Rights Division's enforcement capacity. The cities left behind either persist under older, pre-Trump-era decrees with diminishing federal support, or are relying on local political commitments that carry no legal enforcement weight.
 
@@ -442,3 +442,43 @@ Second, the ruling makes civil litigation — the slower, more expensive account
 *Updated April 29, 2026. Additions: Springfield consent decree termination filing (April 27, 2026); Pattern 6 updated with Ninth Circuit final Portland ruling (April 27, 2026).*
 
 *Cross-references: `consent-decree-defiance-tracker.md` (legal framework, Castañon Nava immigration consent decree, Section 70302 contempt limitation) | `first-amendment-suppression.md` (protest monitor retaliation, crowd management policy violations, First Amendment provisions in police decrees, Section A.4 Ninth Circuit Portland ruling) | `litigation-tracker-2026.md`*
+
+---
+
+## May 5, 2026 Additions
+
+### Cleveland — Exit Ruling Still Pending; Open Research Thread 7 Updated
+
+As of May 5, 2026, U.S. District Judge Solomon Oliver has not ruled on the joint city-DOJ motion to terminate the Cleveland consent decree. The March 19, 2026 status hearing produced no ruling and no timeline. Judge Oliver stated he would seek additional guidance from interim monitor Christine Cole before acting. The next case management conference for the Cleveland proceeding was previously expected in the May 27 timeframe. The Community Police Commission — denied amicus status by the court — continues to advocate publicly against premature exit, while OPD's leadership expresses confidence in compliance readiness. The factual record remains: OPD has demonstrated progress on use of force and crisis intervention (genuinely strong); the civilian oversight infrastructure is contested and politically weakened; the Community Police Commission has documented an adversarial relationship with City Hall that could accelerate compliance regression after oversight ends. The court's silence is unusual in a case where both parties are jointly requesting termination — it suggests Judge Oliver is taking the civilian commission's concerns seriously even without granting them formal amicus standing.
+
+**Source update**: [Spectrum News 1 — judge still not ruling (March 19, 2026)](https://spectrumnews1.com/oh/columbus/news/2026/03/19/cleveland-consent-decree-status-hearing)
+
+---
+
+### Federal Use-of-Force Accountability — ICE Shootings in Minnesota; Pattern 4 Reinforced (April 2026)
+
+**What happened**: Three months after ICE agents shot and killed U.S. citizens Renee Macklin Good (January 7, 2026) and Alex Pretti, and wounded Venezuelan immigrant Julio Cesar Sosa-Celis, in separate incidents during the Minneapolis ICE enforcement surge — NPR reported on April 10, 2026, that federal investigations into all three shootings remain elusive. Minnesota state authorities stated the federal government had given them little indication the probes are progressing. Legal experts at the University of St. Thomas School of Law stated they are "pretty confident that they're not investigating these agents for any possible crimes." ICE agent Jonathan Ross — who killed Good — was placed on three days of administrative leave and subsequently reassigned out of Minnesota, not placed on administrative leave pending a full investigation.
+
+**Why this belongs in the consent decree tracker**: The ICE shooting cases directly reinforce Pattern 4 (the Federal Vacuum and its Downstream Effects). When the DOJ Civil Rights Division has dismantled its police misconduct enforcement capacity — dropping to 13 trial attorneys, adopting a policy of pursuing only "egregious circumstances, such as a death" — the practical result is that even killings of U.S. citizens by federal agents receive no meaningful federal accountability investigation. This is not the standard for local police departments under consent decrees; it is the standard for federal agents, who face less accountability infrastructure than local departments even under pre-Trump enforcement norms.
+
+**Minnesota state response**: Minnesota authorities have sued the federal government to obtain evidence in the three shootings, noting the federal government is withholding materials critical to any independent accountability analysis. Several federal prosecutors in Minnesota resigned in January 2026 over the handling of the ICE shooting investigation. City of Minneapolis video released in April 2026 was described by the Minneapolis mayor as contradicting the federal account of the Renee Good shooting.
+
+**Accountability gap — federal agents vs. consent decree departments**: A city police department under a consent decree — Chicago, Baltimore, Cleveland — faces an independent federal monitor, a federal judge with contempt authority, and a federal party (the DOJ) with independent authority to move for sanctions. A federal ICE agent who kills a U.S. citizen faces: internal DHS review, a DOJ Civil Rights Division with 13 attorneys and a policy against pursuing investigations short of death, and state law enforcement that is being denied access to federal evidence. The shootings document the accountability asymmetry at its sharpest.
+
+**Sources**: [NPR — federal probe elusive (April 10, 2026)](https://www.npr.org/2026/04/10/nx-s1-5775847/alex-pretti-renee-good-ice-shootings-federal-investigations) | [CNN — accountability challenges](https://www.cnn.com/2026/02/07/us/minneapolis-shootings-federal-officers-accountability) | [PBS — Minnesota sues for evidence](https://www.pbs.org/newshour/nation/minnesota-sues-to-obtain-evidence-in-shootings-by-federal-officers-during-ice-surge) | [NPR — federal prosecutors resign (January 2026)](https://www.npr.org/2026/01/14/nx-s1-5676293/several-federal-prosecutors-in-minnesota-resign-over-ice-shooting-investigation) | [Fox 9 — Minneapolis contradicts DHS account](https://www.fox9.com/news/north-minneapolis-ice-shooting-video-april-6-2026)
+
+---
+
+### World Press Freedom Day 2026 — Journalist Prosecution Scale as Police Accountability Indicator
+
+The Freedom of the Press Foundation's World Press Freedom Day 2026 report (May 3, 2026) documented that the majority of US press freedom incidents in the past year involved journalists being assaulted or arrested while covering protests — with specific reference to journalist photographer John Abernathy's arrest and federal charges stemming from his coverage of a Minneapolis-area protest in January 2026. The FPF characterized the overall pattern as an "unprecedented, coordinated assault on press freedom." From a police accountability standpoint, this matters: the absence of consent decree constraints over LAPD (terminated 2013), the absence of federal oversight over ICE agents, and the DOJ's effective withdrawal from pattern-or-practice enforcement together create conditions in which police and federal agents can assault and arrest journalists without facing the contempt mechanisms that an active consent decree would provide.
+
+Cross-reference: `first-amendment-suppression.md` Section A.8 for the full RSF index analysis and Section A.7 for the Bollman photographer indictment.
+
+**Source**: [Freedom of the Press Foundation — World Press Freedom Day 2026](https://freedom.press/issues/this-world-press-freedom-day-american-journalists-are-under-attack/)
+
+---
+
+*Updated May 5, 2026. Additions: Cleveland exit ruling — still pending as of May 5 (Open Research Thread 7 updated); ICE shooting accountability gap — federal probe remains elusive three months after killings (Pattern 4 reinforced); World Press Freedom Day 2026 journalist prosecution as police accountability indicator.*
+
+*Cross-references: `consent-decree-defiance-tracker.md` (legal framework, Castañon Nava immigration consent decree, Section 70302 contempt limitation) | `first-amendment-suppression.md` (protest monitor retaliation, crowd management policy violations, First Amendment provisions in police decrees, Section A.4 Ninth Circuit Portland ruling, Section A.7 Bollman indictment, Section A.8 RSF index 2026) | `litigation-tracker-2026.md`*
