@@ -13,7 +13,8 @@ parent-tracker: surveillance-tracking.md
 *Updated: April 30, 2026 (Session 686) — House passage confirmed (235-191); Senate position divergence documented*
 *Updated: April 30, 2026 (~11:15 UTC) — Section 11 added: April 30 Senate vote outcome status documented as pending at time of writing; real-time assessment of most probable paths; tracker checklist for post-vote update*
 *Updated: April 30, 2026 (end-of-day) — Section 12 added: close-of-business status; Senate did not pass either S.1318 or S.4344 by midnight deadline based on available reporting; brief lapse probable; next legislative vehicle to carry FISA extension expected early May; structural civil liberties conclusions unchanged*
-*Status: House passed 3-year warrantless renewal 235-191; Senate did not pass either the House bill or S.4344 before April 30 midnight based on available reporting — lapse likely; next deadline approximately late May/early June 2026 if short extension follows*
+*Updated: May 4, 2026 — Section 13 added: April 30 outcome confirmed — no lapse occurred; Senate voice vote + House 261-111 passed 45-day extension before midnight; Trump signed April 30 night; new deadline June 12, 2026; CBDC ban stripped; three-year warrantless House bill not enacted; EFF/ACLU lapse litigation window closed*
+*Status: RESOLVED — 45-day extension enacted April 30, 2026; Trump signed same night; Section 702 authority continuous through June 12, 2026; no warrant requirement; no CBDC ban; next reauthorization fight June 12 deadline*
 *Research integrity note: An earlier session (Session 573) erroneously wrote a "confirmed" 2026 outcome that was actually the 2024 RISAA (60-34 Senate, two-year extension). Session 608 corrected the record. This document reflects the actual April 2026 legislative trajectory based on confirmed reporting through April 29, 2026.*
 
 ---
@@ -588,3 +589,60 @@ Sources:
 
 *Section 12 added: April 30, 2026 (end-of-day)*
 *Status: Senate did not pass S.1318 or S.4344 before midnight April 30 based on available reporting — brief statutory lapse probable. FISC classified orders maintain operational collection authority through ~2027. Next Senate action expected May 1-3 per UC agreement cloture schedule. No warrant requirement in any vehicle. CBDC ban stripped from Senate vehicle. Enacted law when signed expected to be three-year extension through April 30, 2029 without warrant protection. Lapse creates EFF/ACLU preferred litigation vehicle — monitoring. Compound FISA + War Powers constitutional failure at April 30-May 1 documented. Update required when Senate vote confirmed.*
+
+---
+
+## Section 13: April 30 Outcome — Confirmed Final Disposition
+
+**Added**: May 4, 2026
+
+### April 30 Outcome
+
+The Section 12 "probable lapse" scenario did not materialize. The actual sequence, confirmed by subsequent reporting:
+
+**No statutory lapse occurred.** The Senate passed a 45-day short-term extension by voice vote on the afternoon of April 30 — approximately one hour before the House took up the same measure. The House then passed the 45-day extension 261-111 under suspension of the rules at approximately 5:53 PM on April 30. Trump signed the extension Thursday night, April 30, 2026, before the midnight deadline.
+
+**Vote mechanism**: Senate — voice vote (no roll call; no individual count). House — 261-111 under suspension of the rules.
+
+**The three-year House bill (S.1318) was not enacted.** Senate Majority Leader Thune declined to advance the House-passed three-year CBDC-attached bill, consistent with his "dead on arrival" statement. The CBDC ban did not survive Senate action, as anticipated.
+
+**New expiration date: June 12, 2026.** The 45-day extension runs through approximately June 12, reopening the legislative conflict during the pre-midterm primary season.
+
+### What the Confirmed Outcome Means
+
+The Section 12 structural analysis remains accurate: the enacted vehicle is a short-term stopgap with no warrant requirement and no substantive reform. The key difference from the "probable lapse" scenario is that the intelligence community's preferred outcome — no lapse, no litigation window — was achieved. The Senate's voice-vote mechanism was specifically chosen to prevent a roll-call record, consistent with the pattern of using unanimous consent / voice vote for politically costly extensions.
+
+**EFF/ACLU lapse litigation window closed.** The lapse that would have created a preferred litigation vehicle for civil liberties organizations (technology companies gaining grounds to challenge compelled assistance) did not occur. Civil liberties organizations remain in the pre-committed judicial challenge posture described in Sections 5 and 9, but the expedited lapse-era litigation vehicle is no longer available.
+
+**June 12 deadline**: The next reauthorization fight occurs during the summer congressional schedule, with both chambers returning from recess May 11-12. The compressed timeline — approximately 6 weeks from Trump's signature to the next deadline — intensifies pressure on the Lofgren-Davidson-Wyden-Lee reform coalition to extract warrant protections. The midterm primary context (summer 2026) makes surveillance votes more electorally salient than they were in April.
+
+### Updated Final Outcome Checklist
+
+| Item | Status |
+|------|--------|
+| House passage of S.1318 (3-yr warrantless) | CONFIRMED — 235-191 (April 29) |
+| Senate passage of S.1318 | NOT TAKEN — Senate rejected House version |
+| Senate passage of 45-day extension | CONFIRMED — voice vote, April 30 (before midnight) |
+| House passage of 45-day extension | CONFIRMED — 261-111, April 30 |
+| Statutory lapse | DID NOT OCCUR — Senate acted before midnight |
+| Presidential signature | CONFIRMED — Trump signed April 30 (Thursday night) |
+| New expiration date | June 12, 2026 |
+| CBDC ban in enacted law | NOT INCLUDED — stripped by Senate |
+| Warrant requirement in enacted law | EXCLUDED — confirmed in all vehicles |
+| SAVE Act attachment | EXCLUDED — confirmed |
+| Commercial data broker loophole | OPEN — unaffected |
+| EFF/ACLU lapse litigation window | CLOSED — no lapse occurred |
+| Next Senate vote expected | ~June 12, 2026 deadline |
+
+Sources:
+- [Roll Call: Congress clears short-term FISA extension (April 30, 2026)](https://rollcall.com/2026/04/30/congress-clears-short-term-fisa-extension/)
+- [Fox News: Trump signs 45-day FISA extension after Senate rejects House bill (May 1, 2026)](https://www.foxnews.com/politics/trump-signs-stopgap-fisa-extension-after-senate-blocks-long-term-renewal)
+- [ABC News / Yahoo News: Congress passes 45-day FISA extension, sends to Trump for signature (April 30, 2026)](https://abcnews.com/Politics/house-passes-3-year-fisa-reauthorization-face-challenges/story?id=132516696)
+- [CNBC: FISA Section 702 — Congress passes short-term surveillance program extension just before deadline (April 30, 2026)](https://www.cnbc.com/2026/04/30/fisa-section-702-congress-extension.html)
+- [NPR: Congress extends FISA 702 surveillance program for 45 days (April 30, 2026)](https://www.npr.org/2026/04/29/g-s1-119094/congress-fisa-702)
+- [Security Boulevard: Congress Punts FISA Section 702 Renewal to June (May 2026)](https://securityboulevard.com/2026/05/congress-punts-fisa-section-702-renewal-to-june/)
+
+---
+
+*Section 13 added: May 4, 2026*
+*Status: April 30 outcome confirmed — no lapse; Senate voice vote + House 261-111 passage of 45-day extension; Trump signed April 30 night; new deadline June 12, 2026. Three-year warrantless House bill not enacted. CBDC ban stripped. No warrant requirement. EFF/ACLU lapse litigation window closed. Next reauthorization fight set for June 12 deadline during summer midterm primary season.*
