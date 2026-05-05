@@ -498,9 +498,9 @@ This report is written to `projects/resistance-research/CHECKIN.md` under a dail
 
 | Credential | Service | Rotation Frequency | Notes |
 |------------|---------|-------------------|-------|
-| CourtListener token | CourtListener | Annual or on compromise | Free account; token is stable |
-| data.gov API key | Federal Register, GovInfo, Regulations.gov | Annual | Shared key works across data.gov services |
-| PACER login | PACER | Annual | PACER account password policy |
+| CourtListener token | CourtListener | Annual or on compromise | Free account; token is stable; 5,000 requests/hour authenticated |
+| data.gov API key | Federal Register, GovInfo, Regulations.gov | Annual | Shared key works across data.gov services; note Regulations.gov POST restricted to federal agencies since Aug 2025 — GET/read still available |
+| PACER login | PACER | Every 180 days | Federal judiciary now requires 180-day password rotation for all PACER accounts (effective 2025) |
 | MuckRock API key | MuckRock | Annual | Account-based |
 | GDELT | None needed | N/A | Public API, no auth |
 

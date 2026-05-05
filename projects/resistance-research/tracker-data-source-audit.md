@@ -55,18 +55,20 @@ The `first-amendment-suppression.md` tracker is maintained through a combination
 
 **Source A1: PACER / CourtListener RECAP API**
 - **What it covers**: All federal court filings, including First Amendment cases in district and appellate courts. Can be queried for dockets mentioning "First Amendment," "press freedom," "prior restraint," "qualified immunity," "journalist," "shield law," etc.
-- **API**: CourtListener REST API v4 at `https://www.courtlistener.com/api/rest/v4/`. Free tier; authentication via token. RECAP archive covers nearly every federal case since 2008 and grows by thousands of documents daily.
+- **API**: CourtListener REST API v4 at `https://www.courtlistener.com/api/rest/v4/`. Authentication via HTTP Token header (`Authorization: Token <your-token>`). RECAP archive covers nearly every federal case since 2008 and grows by thousands of documents daily. The API root redirects from the old URL to wiki.free.law documentation.
+- **Rate limits**: 5,000 queries per hour for authenticated users. Unauthenticated access is significantly lower — always authenticate.
 - **Freshness**: Near-real-time for new filings (RECAP users upload documents within hours of retrieval from PACER). Docket updates typically lag 1–24 hours.
 - **Endpoint**: `GET /api/rest/v4/dockets/?q=first+amendment+journalist&type=d` with date filters. Can also query by party name (e.g., "Associated Press," "ACLU").
-- **Cost**: Free. CourtListener is a nonprofit project.
-- **URL**: https://www.courtlistener.com/help/api/
+- **Cost**: Free. CourtListener is a nonprofit project (Free Law Project).
+- **URL**: https://www.courtlistener.com/help/api/ (redirects to wiki.free.law)
 
 **Source A2: U.S. Press Freedom Tracker API**
 - **What it covers**: All documented incidents of press freedom violations in the U.S. — arrests of journalists, equipment seizures, physical assaults, denial of access, subpoenas. Maintained by Freedom of the Press Foundation and CPJ. Verified before publication.
-- **API**: REST API at `https://pressfreedomtracker.us/api/edge/incidents/`. Returns JSON. Filterable by date, category (arrest, equipment seizure, etc.), state, and keyword search. CSV and JSON bulk download also available.
-- **Example query**: `https://pressfreedomtracker.us/api/edge/incidents/?date_lower=2026-01-01&categories=4` (arrests)
+- **API**: REST API base at `https://pressfreedomtracker.us/api/edge/`. Primary endpoint: `GET /api/edge/incidents/`. Returns JSON (default) or CSV (via `?format=csv`). No authentication required. Beta API — interface may change.
+- **Example query**: `https://pressfreedomtracker.us/api/edge/incidents/?date_lower=2026-01-01` (incidents from January 2026 forward)
+- **Additional access**: Data is also mirrored via IPFS (hourly updates via Cloudflare gateway), providing a decentralized backup if the primary endpoint is unavailable.
 - **Freshness**: Incidents verified and published within 24–72 hours of occurrence for major events; smaller incidents may lag 1–2 weeks.
-- **Cost**: Free. Open source.
+- **Cost**: Free. Open source. No API key required.
 - **URL**: https://pressfreedomtracker.us/data/
 
 **Source A3: Federal Register API — Executive Orders and Notices Affecting Press**
@@ -178,10 +180,11 @@ The `environmental-rollbacks-tracker.md` tracker currently draws from:
 **Source A2: Regulations.gov API v4 — Environmental Docket Monitoring**
 - **What it covers**: Every EPA and Interior rulemaking docket — supporting documents, public comments, and docket metadata. Especially useful for tracking comment periods (which signal the timeline to a final rule) and industry comment patterns.
 - **API**: `https://api.regulations.gov/v4/documents?filter[agencyId]=EPA&api_key=DEMO_KEY`
-- **Registration**: Free API key at api.data.gov/signup for higher rate limits (1,000 requests/hour vs. 40/hour for DEMO_KEY).
+- **Registration**: Free API key at api.data.gov/signup for higher rate limits.
 - **Freshness**: Updated as agencies post new documents; typically same-day for newly published notices.
-- **Cost**: Free with API key.
+- **Cost**: Free with API key for read access.
 - **URL**: https://open.gsa.gov/api/regulationsgov/
+- **Important caveat (August 2025)**: The GSA removed the POST (comment submission) API from Regulations.gov on August 8, 2025, restricting it to approved federal agencies. The GET/read API for reading documents, dockets, and comments remains publicly available. This tracker uses only the GET endpoints (reading environmental dockets), so the August 2025 change does not affect this use case. However, if you previously used Regulations.gov API to *file* public comments on behalf of users, that pathway is now closed. Source: [Sensible Safeguards](https://sensiblesafeguards.org/outreach/gsa-must-reinstate-the-post-api-feature-on-regulations-gov/).
 
 **Source A3: GovInfo API — EPA Enforcement and EIS Publications**
 - **What it covers**: Environmental Impact Statements (EIS) published by agencies, final rules in the Code of Federal Regulations, and congressional documents about environmental legislation.
@@ -234,7 +237,7 @@ The `environmental-rollbacks-tracker.md` tracker currently draws from:
 | Source | Automated Ingestion Permitted | Attribution Required | Commercial Restrictions | Cost |
 |--------|------------------------------|---------------------|------------------------|------|
 | Federal Register API | Yes — public domain | None | None | Free |
-| Regulations.gov API | Yes — ToS permits | Cite data.gov | None | Free (API key) |
+| Regulations.gov API | Yes (GET/read only) — POST restricted to federal agencies since Aug 2025 | Cite data.gov | None for read access | Free (API key) |
 | GovInfo API | Yes — public domain | None | None | Free (API key) |
 | GDELT | Yes | Cite GDELT | Redistribution scrutiny | Free |
 | Justia feed | Scraping: check ToS | Cite Justia | Non-commercial preferred | Free |

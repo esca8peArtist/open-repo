@@ -690,19 +690,20 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
-### Item 38: resistance-research Post-Phase-1-Launch Tracker Automation Design (Session 729)
-**Status**: ACTIVE — Ready to execute (no dependencies on Phase 1 launch itself)
-**Trigger**: Current session (design work that doesn't require Phase 1 to be live)
+### ✅ Item 38: resistance-research Post-Phase-1-Launch Tracker Automation Design (Session 740 COMPLETE)
+**Status**: COMPLETED 2026-05-05 08:05–09:00 UTC
 **Scope**: Research and design tracker automation infrastructure for four existing trackers (first-amendment, environmental-rollbacks, police-brutality, prosecutorial-weaponization). Scope: FOIA automation pipelines, news API ingestion, data validation, dashboard mockups, maintenance playbook.
-**Deliverables**:
-- `tracker-data-source-audit.md` (3,500 words) — Each of 4 trackers: identify 5+ new automated sources (PACER API for DOJ litigation, news APIs for policy changes, FOIA request portals, agency regulatory feeds); assess legal feasibility and cost
-- `tracker-automation-architecture.md` (3,000 words) — Design: which updates can be automated without legal/ethical constraints; event-driven triggers; data freshness SLAs; manual validation checkpoints
-- `tracker-dashboard-mockups.md` (2,000 words) — Visual design for embedding in proposal or institutional briefings; interactive vs. static options; data export formats for partners
-- `tracker-maintenance-playbook.md` (2,000 words) — Weekly/daily update cadence per tracker; role definitions (user manual review vs. automated); escalation procedures; false positive rates
-**Rationale**: Item 13 (post-Phase-1-distribution tracker infrastructure) is conditional on Phase 1 launch. But tracker design automation is preparation work that can begin now. Once Phase 1 is live and generating early engagement, tracker automation would significantly increase framework utility and create feedback loops for institutional partners.
-**Owner**: resistance-research agent (autonomous execution, estimated 3-4 hours research)
-**Prerequisites**: Existing 4 trackers complete and current (✓); Phase 1 distribution infrastructure complete (✓); no external dependencies
-**Timeline**: Complete within 2 weeks post-Phase-1-launch to enable rapid integration and early institutional partner benefit
+**Deliverables** (all committed to master):
+- ✅ `tracker-data-source-audit.md` (3,500 words) — Each of 4 trackers: 5–9 automated data sources identified (PACER RECAP API, Press Freedom Tracker, Federal Register, Regulations.gov, GovInfo, GDELT, MuckRock, state AG RSS, DOJ RSS, Earthjustice RSS). Legal status verified (green/yellow/red). Cost analysis: Wave 1 = $0, production hosting = $6–15/month. Freshness: most sources 1–3 days behind events. **Corrections made**: CourtListener RECAP API precision (5,000 req/hour auth), Press Freedom Tracker base URL fix, Regulations.gov POST API August 2025 closure caveat (GET still available).
+- ✅ `tracker-automation-architecture.md` (3,000 words) — 5-stage pipeline (ingestion → normalization → validation → deduplication → publishing). Event-driven triggers documented per tracker. Validation checkpoints identified. Minimal viable automation stack: CourtListener RECAP + Federal Register API + change detection monitoring. **Correction made**: PACER password rotation updated to 180-day policy (effective 2025).
+- ✅ `tracker-dashboard-mockups.md` (2,000 words) — Three dashboard formats: static PDF briefing (institutional distribution), Datasette interactive web (public-facing), one-page briefing (partner embedding). Mockup specs include timeline, map, sankey, and spreadsheet export options. Datasette confirmed actively maintained (v1.0a28, April 2026).
+- ✅ `tracker-maintenance-playbook.md` (2,000 words) — Update cadence per tracker (daily First Amendment/Prosecutorial, 2–3x weekly Environmental). Three-role structure (ingestion engine, human reviewer, QA auditor). 10-item validation checklist. 8-row escalation matrix. Community contribution procedures. False positive detection with SQL queries.
+**Key Findings**:
+- **Zero-cost Wave 1**: CourtListener, Press Freedom Tracker, Federal Register, GovInfo, GDELT, MuckRock, state AG RSS all free
+- **Legal status**: All free sources are green (public data, legal to access). Regulations.gov read-only confirmed safe (POST closed Aug 2025 but read is fine)
+- **Minimal hosting cost**: $6–15/month production OR $0 on existing Pi/Fly.io free tier
+- **Precedent patterns**: SPLC hate tracker, EFF surveillance tracker, Protect Democracy retaliatory action tracker all use similar architectures
+**Outcome**: Production-ready for Phase 1 post-launch integration. Infrastructure design is low-risk, cost-effective, and grounded in current API status (all claims verified May 2026). Ready for user review or post-Phase-1-launch implementation.
 
 ---
 
