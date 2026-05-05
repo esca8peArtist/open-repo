@@ -6,6 +6,47 @@
 
 ---
 
+## 2026-05-05 05:58 UTC — Session 734 — Orchestrator — Parallel Exploration Queue Research
+
+### Item: resistance-research — Legal Liability & Risk Assessment for Framework Authors ✅ COMPLETE
+
+**File written**: `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/legal-liability-assessment.md` (~2,400 words, 5 sections + case studies)
+
+**Key findings**:
+- **Overall risk: LOW-TO-MEDIUM (LOW with protective measures)**
+- **CFAA**: Inapplicable (distribution of research is not unauthorized computer access; *Van Buren* precedent covers this)
+- **Election law**: Low risk; 501(c)(3) safe harbor applies to nonpartisan civic education. Path A+37 Hybrid has cleanest legal profile (Domain 37 routes exclusively to election protection specialists with their own counsel)
+- **Tradecraft security** (5-tier recommendations):
+  1. Pseudonymous publishing identity (free; protected by *Talley*/*McIntyre* precedent)
+  2. Anonymous LLC or WHOIS privacy ($200; stops doxxing, still transparent to grand jury)
+  3. 501(c)(4) organizational home (~$2K, 4-8 weeks; more political activity latitude than 501(c)(3))
+  4. Encrypted distribution (Signal, ProtonMail; resists law enforcement content access)
+  5. First Amendment counsel on retainer (ACLU, NLG, FAC; low-cost pro bono available)
+- **Historical precedent**: Four case studies (NAACP v. Alabama — compelled disclosure struck down; Open Society DOJ investigation — chilling without charges; SPLC April 2026 indictment — pretextual charges with immediate economic harm; Federalist Papers — anonymous political speech is constitutionally honored)
+- **Risk by path**: Path A+37 Hybrid recommended (Domain 37 isolated to election protection specialists; lowest near-term risk)
+- **Bottom line**: Framework is core First Amendment-protected political speech. No viable criminal theory survives challenge. Risk is not legal invalidity but DOJ using investigation as disruption (documented 2025-2026 pattern). Protective measures are feasible and low-cost.
+
+**Distribution decision**: Path A+37 Hybrid has optimal legal profile. Proceed with protective structures: pseudonymous publishing + 501(c)(4) + Domain 37 separated to specialist recipients.
+
+---
+
+### Item: cybersecurity-hardening — May 2026 Threat Landscape Update ✅ COMPLETE
+
+**File written**: `/home/awank/dev/SuperClaude_Framework/projects/cybersecurity-hardening/may-2026-threat-update.md` (~2,000 words, 5 threat categories + distribution recommendation)
+
+**Key findings**:
+- Supply chain (Shai-Hulud): Campaign continues as "Mini Shai-Hulud" into May; 1,800+ developer repos compromised; PyTorch Lightning (10M monthly downloads) and SAP npm packages now targeted. Guide's April Bitwarden guidance remains correct; add footnote that campaign is ongoing.
+- FISA 702: 45-day clean extension passed April 30 (261–111 House, unanimous Senate); June 12 next deadline. No warrant protection enacted. FISC operational extension through 2027 confirmed. Domain 25 (encrypted communications) guidance is current and accurate; no update required.
+- Election interference: NRSC deployed confirmed deepfake video in five midterm races (TX, GA, MA); industrial-scale deployment confirmed. Steve Bannon called for ICE to "surround" polls; White House non-denial. Voter database cross-reference with DHS SAVE active; no injunction. CISA coverage gap institutionally confirmed.
+- AI deepfakes: Capability stable at "indistinguishable" threshold; deployment accelerating. NRSC case makes the threat concrete for non-technical Tier 1 audiences. Recommended countermeasures unchanged.
+- Palantir: IRS contract adds relationship-mapping across millions of financial records — new data surface for civil society donors. ICM sole-source deal with ICE adds biometric integration with hard September 2026 deployment deadline (2 months pre-midterms). DHS $1B BPA confirmed covering all components.
+
+**Distribution decision**: Proceed with Tier 1 distribution. Two minor template additions recommended: (1) one-sentence IRS relationship-mapping note; (2) one-sentence NRSC deepfake confirmation in social engineering section.
+
+**Post-distribution monitor**: June 12 FISA deadline — warrant reform outcome (low probability) would require minor encrypted communications section update.
+
+---
+
 ## 2026-05-05 — open-source-rideshare — Phase 2 Insurance & Risk Management Framework
 
 **Files written**:

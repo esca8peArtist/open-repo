@@ -1,3 +1,39 @@
+## Since Last Check-in (Session 734 — 2026-05-05 05:58–06:15 UTC) — Legal Liability + May Threat Update Complete
+
+### Overall Status: ✅ TWO EXPLORATION ITEMS COMPLETE — Legal liability assessment + May threat update delivered in parallel; 7h 15m until market open (13:30 UTC); ready for stockbot pre-market health check at 13:00 UTC
+
+**Session Work**:
+
+1. ✅ **resistance-research: Legal Liability & Risk Assessment** (COMPLETE) — `legal-liability-assessment.md` (~2,400 words)
+   - **Overall risk: LOW-TO-MEDIUM, LOW with protective measures**
+   - **CFAA**: Inapplicable (distribution of research is not unauthorized computer access; *Van Buren* precedent)
+   - **Election law**: Low risk; 501(c)(3) safe harbor applies to nonpartisan civic education
+   - **Tradecraft security** (5-tier): Pseudonymous publishing (free, *Talley*/*McIntyre* protected) → Anonymous LLC ($200) → 501(c)(4) ($2K) → Encrypted distribution (Signal/ProtonMail) → First Amendment counsel on retainer
+   - **Historical precedent**: NAACP v. Alabama (compelled disclosure struck down), Open Society DOJ (chilling without charges), SPLC April 2026 (pretextual indictment with immediate harm), Federalist Papers (anonymous political speech honored)
+   - **Path recommendation**: Path A+37 Hybrid has optimal legal profile (Domain 37 isolated to election protection specialists with their own counsel)
+   - **Key insight**: Framework is core First Amendment-protected political speech. Risk is not legal invalidity but DOJ using investigation as disruption (documented 2025-2026 pattern). Protective measures are feasible and low-cost.
+
+2. ✅ **cybersecurity-hardening: May 2026 Threat Update** (COMPLETE) — `may-2026-threat-update.md` (~2,000 words)
+   - **Threat discontinuity: 3–4 out of 10** (intensification of April trends, not new environment)
+   - **Supply chain**: Shai-Hulud campaign active into May; PyTorch Lightning (10M monthly downloads), SAP npm targeted; 1,800+ developer repos compromised; malicious package volume up 37% YoY
+   - **FISA 702**: 45-day clean extension passed April 30 (261–111 House, unanimous Senate); no warrant protection; FISC operational through 2027
+   - **Election interference**: NRSC deployed confirmed deepfake in 5 races (TX, GA, MA) — first confirmed operational deployment by major political org; Bannon calls for ICE to "surround" polls; voter DB cross-reference with DHS SAVE active (12 states compliant)
+   - **AI deepfakes**: Capability stable at "indistinguishable" threshold; deployment accelerating (NRSC is the proof-of-concept)
+   - **Palantir NEW developments**: (1) IRS Criminal Investigation contract adds relationship-mapping across millions of financial records + dark web crypto wallets (creates data surface for civil society donors), (2) ICE ICM sole-source deal with biometric integration + September 2026 deployment deadline (2 months pre-midterms)
+   - **Distribution decision**: Proceed with Tier 1. Two minor template additions: (1) IRS relationship-mapping note, (2) NRSC deepfake in social engineering section. Monitor June 12 FISA deadline post-distribution.
+
+**Awaiting Next Actions**:
+- **CRITICAL — User Input**: Resistance-research distribution path decision (A / A+37 / B) → Phase 1 execution is immediate (3-4h upon approval)
+- **Market monitoring**: 13:00 UTC pre-market check (7h away), 13:30 UTC market open, 20:00 UTC post-market analysis
+- **Exploration Queue**: 3 active items remain (seedwarden analytics [deferred], rideshare stakeholder engagement [pending PR#1], off-grid-living social metrics)
+
+**Next priorities**:
+1. Market pre-market health check (~13:00 UTC)
+2. If user provides distribution path: Phase 1 execution (3-4h autonomous work)
+3. Continue exploration queue work (seedwarden analytics framework)
+
+---
+
 ## Since Last Check-in (Session 733 — 2026-05-05 05:13–06:30 UTC) — Exploration Queue Replenished + 2 Research Items Complete
 
 ### Overall Status: ✅ EXPLORATION QUEUE REPLENISHED + 2 RESEARCH ITEMS COMPLETE — Legal liability assessment delivered for resistance-research; analytics framework delivered for seedwarden Phase 2; 3 new queue items added; 6h 45m until market open (13:30 UTC)
