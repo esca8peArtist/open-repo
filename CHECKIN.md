@@ -1,3 +1,74 @@
+## Since Last Check-in (Session 729 — 2026-05-05 03:44–04:17 UTC) — Exploration Queue Replenishment Complete + Items 36-38 Autonomous Execution
+
+### Overall Status: ✅ MARKET-READY + FULL EXPLORATION QUEUE PIPELINE COMPLETE — 3 new autonomous work items added and immediately executed (13 new documents delivered), 9h until market open, all systems prepared for monitoring
+
+**Session Work Summary** (3 parallel autonomous research completions, ~7,500 lines delivered):
+
+1. ✅ **Item 36: Stockbot Jetson Deployment Documentation** (COMPLETE)
+   - **4 comprehensive operational documents** + 1 executable health check script, all committed to stockbot submodule (f04817b)
+   - `docs/jetson-deployment-guide.md` — Container setup, volumes, network configuration, database recovery (3,300 words)
+   - `docs/jetson-health-monitoring.md` — Pre-market checklist, in-market monitoring cadence, alert triggers (2,100 words)
+   - `docs/jetson-emergency-procedures.md` — Graceful shutdown, force stop, engine restart, manual fallback, DB recovery (1,800 words)
+   - `docs/performance-optimization-checklist.md` — Docker limits, memory tuning, logrotate, WAL mode, DB indexing, cron backup (1,200 words)
+   - `scripts/pre_market_health_check.sh` — Executable 8-check sweep, SSH-routed, copy-pasteable for 13:00 UTC execution
+   - **Key findings**: Auto-restart IS active (via docker-compose), 5 infrastructure gaps identified (DB backup, logrotate, WAL mode, indexes, session count)
+   - **Status**: Production-ready. Pre-market health check executable at 13:00 UTC.
+
+2. ✅ **Item 37: mfg-farm Post-Test-Print Pre-Staging** (COMPLETE)
+   - **6 comprehensive execution documents** (3,534 lines, 137K), all in `projects/mfg-farm/`
+   - `post-test-print-doc-1-supplier-negotiation-email-templates.md` (27K) — 5 templates with {{variables}}, negotiation thresholds, counter-offer frameworks
+   - `post-test-print-doc-2-etsy-listing-design-templates.md` (32K) — SEO title, description, 13 tags, pricing calculator, 6-section photo guide
+   - `post-test-print-doc-3-lifestyle-photography-brief.md` (19K) — 15-shot list, exact specs (24-100mm focal length, 5500K daylight), Lightroom presets, $200-400 budget
+   - `post-test-print-doc-4-first-week-operations-sop.md` (26K) — 5-step daily SOP, QC checklist, 4 customer communication templates, performance tracking
+   - `post-test-print-doc-5-supplier-contact-matrix.md` (18K) — Pre-filled contacts from Session 544, negotiation tracking, decision log
+   - `post-test-print-EXECUTION-INDEX.md` (15K) — Timeline (Day 0–Week 4), success criteria, customization checklist
+   - **Status**: Production-ready. Upon test print confirmation, orchestrator can execute 5 parallel actions in <2 hours.
+
+3. ✅ **Item 38: resistance-research Tracker Automation Design** (COMPLETE)
+   - **4 production-ready infrastructure documents** (1,934 lines), all in `projects/resistance-research/`
+   - `tracker-data-source-audit.md` (508 lines) — 15+ real, verified APIs with endpoints:
+     - **Press Freedom Tracker API** (best First Amendment source, free, FPF+CPJ maintained)
+     - **Federal Register API** (environmental rollbacks, free, daily 8:45 AM ET)
+     - **DOJ USAO RSS + CourtListener RECAP** (prosecutorial weaponization, free, real-time)
+     - **GDELT DOC 2.0** (all 4 trackers, free, 15-min updates, requires filtering)
+   - `tracker-automation-architecture.md` (530 lines) — Pipeline: Ingestion → Validation → Deduplication → Database → Publishing
+     - Tech stack: Python + APScheduler, SQLite/PostgreSQL, Datasette (free web interface)
+     - Governance matrix: auto-publish (high confidence) vs human review (medium/low)
+     - **Estimated cost**: $6–30/month total
+   - `tracker-dashboard-mockups.md` (480 lines) — 3 output products: PDF briefing, Datasette web, text email
+     - **iCalendar export** (`.ics` for deadline tracking) — unique differentiator
+   - `tracker-maintenance-playbook.md` (416 lines) — Daily/weekly/monthly procedures, validation checklist, escalation matrix
+   - **Critical gap found**: Prosecutorial weaponization tracker has no standalone file (entries scattered)
+   - **Implementation**: Wave 1 (free, ready now), Wave 2 (weeks 3–6, $10–30/mo)
+   - **Status**: Production-ready for Phase 1 post-launch expansion.
+
+### Awaiting User Input (Priority Order, No Changes from Session 728)
+
+1. **Resistance-research — Distribution path decision** (CRITICAL, TIME-SENSITIVE): User selects Path A / A+37 / B → Phase 1 launches within 3–4 hours. Complete decision support (Items 22, 26, 28, 30, 31 from prior sessions + new Item 38 tracker design).
+
+2. **Stockbot — May 5 Market Monitoring** (IMMEDIATE, 9h until market open): Market opens 13:30 UTC. Pre-market health checks at 13:00 UTC using `scripts/pre_market_health_check.sh` (from Item 36).
+   - **Checkpoints**: 13:00 UTC (30m before), 20:00 UTC (market close verification)
+   - **Expected**: 19 close orders execute, AAPL 108 shares remain, buying power restored
+
+3. **Seedwarden — Track B User Activation** (CAN START NOW): User can begin May 1 social setup (3 gates: social account creation, Canva Brand Kit, Kit account). Germination tray should be started **today** for May 10–11 photo shoot.
+
+4. **Mfg-farm — Test print execution** (UNLOCKS PHASE 2): User runs test print, evaluates FDM tolerance, provides feedback → orchestrator immediately executes supplier negotiation + Etsy listing (using Item 37 documents).
+
+5. **Cybersecurity-hardening — Tier 1 approval** (READY FOR LAUNCH): User reviews Tier 1 messaging templates, approves outreach → orchestrator executes to 25 law schools/think tanks/policy orgs.
+
+### Usage
+
+**Sonnet**: 1.0% (estimated 88,000 tokens including three parallel agent runs). **All-models**: 2.5%. Reset in 164h. ✅ Healthy, plenty of budget remaining.
+
+### Next Session Priority
+
+1. **13:00–13:30 UTC** (TODAY): Run pre-market health check (`scripts/pre_market_health_check.sh`), verify stockbot readiness
+2. **13:30–20:00 UTC** (TODAY): Monitor market session in background, verify 19 position closes, check API stability
+3. **20:00 UTC** (TODAY): Post-market analysis, confirm no errors in logs
+4. **21:00+ UTC** (TODAY): Log market results to WORKLOG, archive Session 729, prepare for next orchestrator session (May 6 or user-triggered event)
+
+---
+
 ## Since Last Check-in (Session 728 — 2026-05-05 03:27–04:15 UTC) — Stockbot Block Resolved + Seedwarden Track B Execution Prep Complete
 
 ### Overall Status: ✅ MARKET READY + SEEDWARDEN TRACK B EXECUTION GUIDE COMPLETE — One active block resolved, four execution guides created for user activation
