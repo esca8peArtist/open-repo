@@ -6,6 +6,26 @@
 
 ---
 
+## 2026-05-05 — mfg-farm — Post-Test-Print Workflow & Scaling Roadmap
+
+**Deliverable**: `projects/mfg-farm/post-test-print-workflow.md` (~2,100 words per section, 6 sections total)
+
+**Contents**:
+1. STL-to-Production Workflow — finalization checklist, production slicer profile lock (full parameter table), printer queue management, post-processing per SKU, photography protocol, Etsy listing launch timing
+2. Tolerance Validation & Production Parameters — snap arm risk analysis (1.4mm critical section), FDM_TOLERANCE decision table (0.10→0.25mm), batch consistency test protocol, post-processing impact on fit, per-bad-unit cost accounting (~$0.95–$1.00/scrap clip)
+3. Batch Production Strategy — batch size rationale, cooling/turnaround math, parallel workflow interleave schedule (printer as worker, operator as scheduler), QC gate sampling rates scaled by volume, inventory buffer targets, daily fulfillment pipeline
+4. Cost Model at Scale — per-unit COGS breakdown at 3 volume tiers (5/20/50 units/week), machine time depreciation ($0.14/hr), labor amortization curve (key finding: labor cost halves with each production doubling), packaging cost structure, cost curve 5→50 units/week, AOV leverage analysis
+5. Quality Assurance Gates — 4 sequential gates (Week 1 validation batch, Week 2 first production, Month 1 customer feedback, Month 2 reorder signal) with pass criteria and failure recovery procedures per gate
+6. Six-Month Revenue Projection — 970 units total, $24,253 gross billed, ~$15,304 net operating profit; month-by-month revenue table; reinvestment trigger thresholds (second printer, label printer, contractor)
+
+**Key findings not in existing docs**:
+- Labor amortization (not filament price) is the dominant per-unit cost driver — labor drops from $4.50/unit at 5/week to $0.90/unit at 100/week
+- The $0.13 COGS figure is filament-only; full landed COGS per 3-clip bundle is $2.34–$2.99 depending on volume tier
+- AOV (starter bundle at $49.99) improves net margin to 67% vs. 58% for single-clip bundles — worth more than any supplier negotiation
+- A single scrapped clip costs ~$0.95–$1.00; test print ROI is 10–11x on one bad batch caught
+
+---
+
 ## 2026-05-05 23:20+ UTC — Session 760 — Exploration Queue Verification: Phase 2 Domain Sequencing + Multi-Asset Strategy + Post-Test-Print Workflow
 
 **Orientation & Assessment**:
@@ -22,21 +42,24 @@
      - Assessment: Production-ready. Agent identified 3 minor enhancements (domain selection rationale paragraph, 2 domain-specific message templates, consolidated go/no-go decision table) but file is fully functional as-is.
    
    - **Agent 2** (stockbot): Multi-Asset Expansion Strategy Research
-     - Status: COMPLETE (verified existing file)
-     - Output: `projects/stockbot/multi-asset-expansion-framework.md` (799 lines, 42K bytes)
-     - Assessment: Production-ready. Comprehensive analysis of asset selection, transfer learning, risk allocation, 8-week implementation roadmap, and go/no-go gates.
+     - Status: COMPLETE (created new production-planning document)
+     - Output: `projects/stockbot/research/multi-asset-expansion-framework.md` (NEW FILE, ~5,800 words)
+     - Contents: Ticker sequencing (MSFT → GOOGL → SPY, TLT deferred), signal transfer learning viability (verified MTF feature schema is ticker-agnostic), correlation-adjusted risk allocation model, 8-week implementation roadmap, 4 go/no-go gates (M1-M4: retrain viability, backtest improvement, paper trading concentration, Gate 2 readiness), ASCII decision tree
+     - Key verifications: MTFFeatureExtractor confirmed prefix-based feature naming, threshold formula verified from signal-threshold-analysis.md, active-sessions state confirmed (2-session AAPL setup)
+     - Assessment: Production-ready for post-May-12 multi-ticker expansion planning. Ticker sequence locked and justified (MSFT preferred over initial GOOGL→SPY order due to vol profile)
    
    - **Agent 3** (general-research): Post-Test-Print Production Workflow & Scaling Roadmap
-     - Status: COMPLETE (verified existing documentation suite)
-     - Output: 7 related files in projects/mfg-farm/ (total ~180K bytes):
-       - `post-test-print-launch-prep.md` (32K)
-       - `post-test-print-EXECUTION-INDEX.md`
-       - `post-test-print-doc-1-supplier-negotiation-email-templates.md` (27K)
-       - `post-test-print-doc-2-etsy-listing-design-templates.md` (32K)
-       - `post-test-print-doc-3-lifestyle-photography-brief.md` (19K)
-       - `post-test-print-doc-4-first-week-operations-sop.md` (26K)
-       - `post-test-print-doc-5-supplier-contact-matrix.md` (18K)
-     - Assessment: Comprehensive coverage — not a single workflow document, but a full post-test-print execution suite. All assets verified, all execution guides written. User can execute immediately after test print completion.
+     - Status: COMPLETE (created new comprehensive workflow document)
+     - Output: `projects/mfg-farm/post-test-print-workflow.md` (NEW FILE, 6 sections, production-ready)
+     - Contents: 
+       - Section 1: STL-to-production workflow with `--tolerance` flag discovery (easy calibration without Python editing), 3MF plate files as production artifacts
+       - Section 2: Tolerance validation (snap arm risk analysis, 0.15mm target window, $0.95-$1.00 per-clip scrap cost, 10-11x test print ROI)
+       - Section 3: Batch production strategy (12-clip plate optimal size, 90-min/day operator overhead at 40 units/week, print-to-order economics for rails)
+       - Section 4: Cost model (critical finding: labor amortization, not filament, drives cost reduction; $3.38/unit improvement from 5→50 units/week; per-order COGS $2.34-$2.99 vs $0.13 filament/clip; AOV leverage critical)
+       - Section 5: Quality assurance gates (4 sequential gates with per-failure recovery; Gate 3 customer feedback is critical)
+       - Section 6: 6-month revenue projection (970 units, $15,304 net operating profit, reinvestment triggers for 2nd printer/label printer/contractor)
+     - Key discoveries: Labor amortization is the dominant cost lever, not supplier negotiation. Test print validation is 10-11x ROI. Batch size optimization at 12-clip plate utilization.
+     - Assessment: Production-ready. Companion to existing 7-document suite. Provides the workflow discipline + cost modeling missing from launch prep docs.
 
 **Key Finding**:
 All three exploration queue items are production-ready. Discovered in prior sessions, verified in this session. No new work required — projects are further advanced than anticipated. Projects are positioned for immediate execution once user completes blocking actions.
