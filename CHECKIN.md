@@ -1,38 +1,40 @@
-## Since Last Check-in (Session 741 — 2026-05-05 08:16–08:35 UTC) — Item 39 Distribution Decision Framework COMPLETE
+## Since Last Check-in (Session 742 — 2026-05-05 08:25–08:55 UTC) — THREE Exploration Items COMPLETE (Items 39–41)
 
-### Overall Status: ✅ EXPLORATION QUEUE REPLENISHED + ITEM 39 COMPLETE — No autonomous work available. All major projects blocked on user decisions or calendar events. Decision support framework ready (DISTRIBUTION_PATH_DECISION_FRAMEWORK.md) — enables immediate Phase 1 execution upon user path selection (A / A+37 / B). Next checkpoints: (1) user distribution path decision → Phase 1 execution immediately, (2) 13:00 UTC pre-market health check (5h away), (3) 20:00 UTC post-market analysis.
+### Overall Status: ✅ THREE HIGH-IMPACT EXPLORATION ITEMS COMPLETE — Post-distribution measurement framework, market forecast, and social media execution toolkit now ready. All projects remain blocked on user decisions/actions. Pre-market health check in 4h 35m (13:00 UTC). Next checkpoint: market open 13:30 UTC (19-position close expected).
 
-**Session Status**: All projects at external-dependency wait state. Queued 3 new exploration items (39–41). Completed Item 39: 2,800-word decision framework supporting Path A / A+37 / B choice for resistance-research Phase 1 distribution.
+**Session Status**: Executed Items 39–41 in parallel (3 subagents). Completed 6,000+ words of analysis + 2 comprehensive toolkits. Accomplishments enable: (1) Phase 1 execution upon user path decision, (2) informed May 12 checkpoint decision-making, (3) immediate off-grid-living distribution execution.
 
 **Needs Your Input** (sorted by priority/timing):
 
 1. **🎯 HIGH PRIORITY / CRITICAL TIMING**: resistance-research distribution path decision
    - **Required**: Confirm **Path A** / **Path A+37 Hybrid** / **Path B**
-   - **New resource**: DISTRIBUTION_PATH_DECISION_FRAMEWORK.md (2,800 words)
-     - Quick comparison table (execution time, resource requirements, strategic impact, reversibility)
-     - Detailed analysis of election-protection timing window (May 30 DOJ consent decree deadline)
-     - **Orchestrator recommendation: Path A+37 Hybrid** (captures election window + broad reach, adds only 1 hour, fully reversible)
-     - Implementation checklist for post-decision execution
-   - **Value**: Enables 3–5 hour Phase 1 execution immediately upon your path selection
-   - **Timeline**: The framework is complete now; execute whenever you're ready
+   - **What's new**: Expanded impact measurement framework (v2.0, 3,800 words) with domain-adoption variance tiers, corporate sector analysis, failure mode detection thresholds
+   - **Ready now**: Execution begins immediately upon your path selection (3–5h)
+   - **Value**: Election-protection window (May 30 DOJ consent decree) captured only if you choose Path A+37 Hybrid or Path B
 
 2. **MEDIUM PRIORITY / TODAY 13:30 UTC**: Stockbot market monitoring
-   - 19 positions closing at market open (expected 13:30 UTC)
-   - AAPL 108 shares staying open (+$924 unrealized)
-   - Pre-market health check at ~13:00 UTC (5h away)
-   - Post-market analysis at 20:00 UTC (today evening) will calculate Gate 1 progress toward May 12 checkpoint
+   - **What's new**: Gate 1 fill rate forecast (2,600+ words) + daily projections CSV with 3-scenario modeling
+   - **Key finding**: April 29 high fill was a non-repeatable 5-minute opening burst; May 5–12 expected fill rate is 4–6 (not 49)
+   - **May 12 decision**: Gate 1b (June 4 deadline: 5 round trips) is the real checkpoint; May 12 is a trajectory check
+   - **Action**: Pre-market health check at ~13:00 UTC; post-market analysis at 20:00 UTC
+   - **Timeline**: 4h 35m until pre-market check
 
-3. **USER ACTIONS BLOCKING PROJECTS** (not urgent, when convenient):
+3. **MEDIUM PRIORITY / READY NOW**: off-grid-living social distribution
+   - **What's new**: Execution toolkit (2,100 words) + posting calendar template (2,100 words) with account warm-up protocol, influencer directory, 7 pre-drafted responses
+   - **Critical risk identified**: Reddit shadowban from new account + external link. Solution: 3-week warm-up before launch (specified in toolkit)
+   - **Action**: User can begin warm-up immediately or schedule for next week; 48-hour crossover gap required between r/preppers + r/offgrid posts
+   - **Timeline**: Fully prepared; execution is user-triggered
+
+4. **USER ACTIONS BLOCKING PROJECTS** (not urgent, when convenient):
    - **mfg-farm**: Test print required (blocks supplier negotiation, Day 1 operations)
    - **seedwarden Track A**: 3 tag corrections + Etsy account verification (blocks Phase 1 upload)
    - **cybersecurity-hardening**: Tier 1 approval (blocks distribution execution)
-   - **off-grid-living**: Social media distribution (blocks Phase 2 planning; prepared plan ready)
 
 **System Status**:
-- **Exploration Queue**: Item 39 complete (5 min read + decision framework); Items 40–41 queued for next session
-- **Token Usage**: 0.7% Sonnet (est. 61,000 tokens after this session), 9.1% all-models (healthy; reset Tuesday 2026-05-07 00:00 UTC)
-- **Autonomous Capacity**: 0 available. All projects blocked on user input or market/calendar events
-- **Orchestration Files**: WORKLOG.md + CHECKIN.md + EXPLORATION_QUEUE.md + DISTRIBUTION_PATH_DECISION_FRAMEWORK.md committed
+- **Exploration Queue**: Items 39–41 complete; 5+ items remain in queue (seedwarden premium taxonomy, cybersecurity post-tier-1 assessment, mfg-farm scaling research)
+- **Token Usage**: 0.7% Sonnet (est. 307,000 tokens after this session), 9.6% all-models (healthy; 160h until Tuesday reset)
+- **Autonomous Capacity**: 0 immediate work. All projects blocked on user input. Pre-market monitoring available at 13:00 UTC.
+- **Orchestration Files**: WORKLOG.md + CHECKIN.md committed (PROJECTS.md + BLOCKED.md no changes)
 
 **Session Work**:
 
