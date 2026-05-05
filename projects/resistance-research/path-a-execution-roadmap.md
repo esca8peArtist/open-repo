@@ -1,5 +1,5 @@
 ---
-title: "Path A Execution Roadmap — Immediate 34-Domain Distribution"
+title: "Path A Execution Roadmap — Immediate 35-Domain Distribution"
 created: 2026-04-29
 status: production-ready — activate on user confirmation
 project: resistance-research
@@ -18,7 +18,7 @@ decision_overrides: "Path A distributes all 34 domains simultaneously to all cha
 ---
 
 # Path A Execution Roadmap
-## 34-Domain Democratic Renewal Framework — Immediate Distribution
+## 35-Domain Democratic Renewal Framework — Immediate Distribution
 
 **April 29, 2026 — Production Ready**
 

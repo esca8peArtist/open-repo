@@ -5,7 +5,7 @@ status: ready-for-personalization
 phase: 3
 project: resistance-research
 series: distribution-templates
-domain_count: 28
+domain_count: 35
 cross_references:
   - democratic-renewal-proposal.md
   - democratic-renewal-executive-summary.md
@@ -50,9 +50,9 @@ I'm reaching out because your organization's work on [specific issue area — e.
 
 I want to be clear about what this is: I'm an independent researcher, not affiliated with any organization or institution. This is movement research — an attempt to build a documented, evidence-based resource base that legal and civil society organizations can use freely. It is not a product or a pitch.
 
-The centerpiece is a 28-domain proposal for democratic structural reform, grounded in 160+ movement case studies, comparative constitutional law, and the evidentiary record on what has worked in functioning democracies. The supporting documents include several that I think are directly relevant to legal aid practice:
+The centerpiece is a 35-domain proposal for democratic structural reform, grounded in 160+ movement case studies, comparative constitutional law, and the evidentiary record on what has worked in functioning democracies. The supporting documents include several that I think are directly relevant to legal aid practice:
 
-**The Litigation Tracker** documents active federal cases challenging executive overreach in immigration enforcement, civil service dismantling, civil rights, and constitutional accountability — with case names, court, current status, next deadlines, and links to case pages. It is designed to be a working reference document for attorneys, updated as cases develop. [Link to litigation-tracker-2026.md]
+**The Litigation Tracker** documents active federal cases challenging executive overreach in immigration enforcement, civil service dismantling, civil rights, and constitutional accountability — with case names, court, current status, next deadlines, and links to case pages. It is designed to be a working reference document for attorneys, updated as cases develop. https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0
 
 **Constitutional challenge pathways** are documented within each domain of the main proposal. For example:
 - Domain 6 (Judicial Independence) includes a dedicated subsection on post-CASA universal injunction reform — the three-track response to the Supreme Court's narrowing of injunctive authority: statutory restoration, Rule 23 class action fortification, and state AG parens patriae standing as a structural workaround
@@ -70,9 +70,9 @@ First, feedback. What is missing from a legal aid perspective? What would you ad
 
 Second, if these materials seem useful, I would welcome introductions to colleagues at peer organizations or in your network who might find them helpful. Word of mouth among practitioners is the most effective distribution channel for this kind of research.
 
-The full proposal: [link to democratic-renewal-proposal.md]
-The two-page executive summary: [link to democratic-renewal-executive-summary.md]
-The litigation tracker: [link to litigation-tracker-2026.md]
+The full proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+The two-page executive summary: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
+The litigation tracker: https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0
 
 Thank you for the work your organization does. I'm happy to discuss any of this by email or phone — whatever is most useful.
 
@@ -93,7 +93,7 @@ Thank you for the work your organization does. I'm happy to discuss any of this 
 
 I'm reaching out about research that may be directly useful to your members' work on criminal justice reform and public defense.
 
-I've been developing a 28-domain democratic renewal research project, and Domain 14 (Criminal Justice and Policing) is one of the most extensively documented sections. It may be particularly relevant given your organization's focus on [specific issue — e.g., "sentencing reform" / "cash bail" / "public defender resource equity"].
+I've been developing a 35-domain democratic renewal research project, and Domain 14 (Criminal Justice and Policing) is one of the most extensively documented sections. It may be particularly relevant given your organization's focus on [specific issue — e.g., "sentencing reform" / "cash bail" / "public defender resource equity"].
 
 The Domain 14 analysis covers:
 
@@ -234,7 +234,7 @@ I'm reaching out because [organization name]'s organizing work on [specific issu
 
 I want to be clear about what this is: I'm an independent researcher, not affiliated with any organization. This is not an organizational product or a sales pitch. It is a movement resource — designed to be used, adapted, shared, and built on freely by the organizations doing the actual work.
 
-The centerpiece is a 28-domain proposal for democratic structural reform. For a grassroots organizing context, the most immediately relevant domains are probably:
+The centerpiece is a 35-domain proposal for democratic structural reform. For a grassroots organizing context, the most immediately relevant domains are probably:
 
 **Domain 1 — Electoral Reform**: Proportional representation, ranked-choice voting, independent redistricting, public campaign financing, automatic voter registration. The mid-decade redistricting crisis (Texas, North Carolina, Indiana, Missouri) is documented in detail — including the Cook Political Report estimate of 8–12 House seats potentially shifted before a single 2026 vote is cast. This section gives organizers the structural vocabulary to explain why "just vote harder" is insufficient without systemic change.
 
@@ -431,8 +431,8 @@ First, would your team review the Domain 27 section and provide feedback on what
 Second, I would welcome introduction to colleagues at peer organizations or in your network who are working on accreditation, visa reform, or the Harvard litigation coalition.
 
 Full Domain 27 analysis: [link to domain-27-higher-education-and-academic-freedom.md]
-Full 28-domain proposal: [link to democratic-renewal-proposal.md]
-Executive summary: [link to democratic-renewal-executive-summary.md]
+Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+Executive summary: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
 All materials CC 4.0 — cite, adapt, excerpt freely with attribution.
 
 [Your name]

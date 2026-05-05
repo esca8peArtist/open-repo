@@ -5,7 +5,7 @@ status: ready-for-personalization
 phase: 3
 project: resistance-research
 series: distribution-templates
-domain_count: 28
+domain_count: 35
 cross_references:
   - democratic-renewal-proposal.md
   - democratic-renewal-executive-summary.md
@@ -35,7 +35,7 @@ license: "Creative Commons Attribution 4.0"
 
 **Target length**: ~800 words
 
-**Recommended header image**: A simple infographic showing the 28-point democracy score drop (U.S. at 57/100 in 2026), or a map of uncompetitive House districts
+**Recommended header image**: A simple infographic showing the U.S. democracy score at 57/100 in 2026, or a map of uncompetitive House districts
 
 ---
 
@@ -55,9 +55,9 @@ This newsletter is launching to share a different kind of response to that probl
 
 This is that blueprint.
 
-Over the coming weeks, this newsletter will serialize a 28-domain proposal for democratic structural reform. Every reform in it meets three criteria: it has been implemented or seriously attempted somewhere, the evidence for its effectiveness is documented, and there is a plausible political pathway to adoption in the United States. This is not a wish list. It is a sequenced program of structural repair.
+Over the coming weeks, this newsletter will serialize a 35-domain proposal for democratic structural reform. Every reform in it meets three criteria: it has been implemented or seriously attempted somewhere, the evidence for its effectiveness is documented, and there is a plausible political pathway to adoption in the United States. This is not a wish list. It is a sequenced program of structural repair.
 
-The 28 domains span electoral reform, institutional integrity, democratic participation, digital government, fiscal reform, judicial independence, rights protection, media and information, federalism, education, healthcare, infrastructure, housing, criminal justice, environment and climate, immigration, labor, the social safety net, national security, economic concentration, data privacy, reparations and racial justice, higher education and academic freedom, war powers and military unilateralism, and prosecutorial weaponization and DOJ capture.
+The 35 domains span electoral reform, institutional integrity, democratic participation, digital government, fiscal reform, judicial independence, rights protection, media and information, federalism, education, healthcare, infrastructure, housing, criminal justice, environment and climate, immigration, labor, the social safety net, national security, economic concentration, data privacy, reparations and racial justice, higher education and academic freedom, war powers and military unilateralism, prosecutorial weaponization and DOJ capture, government accountability, federal executive interference, and AI governance.
 
 The fiscal math is stronger than you might expect. The proposal identifies approximately $610–890 billion per year in new revenue mechanisms — carbon tax with citizen dividend, offshore loophole closure, simplified taxation — that exceed its costs. And in every domain, the cost of reform is a fraction of the cost of inaction: mass incarceration costs $182 billion per year; healthcare administrative waste exceeds $500 billion per year; climate inaction will cost an estimated $2 trillion per year in damages by 2100; the racial wealth gap costs the economy $1–1.5 trillion per year in lost GDP.
 
@@ -65,13 +65,13 @@ The 2026 midterm elections are the most time-sensitive variable. Erica Chenoweth
 
 Subscribe to receive the full series. Share this with one person who needs to read it.
 
-The full proposal and supporting research are available under Creative Commons Attribution 4.0 at [link to full proposal]. The two-page executive summary is the fastest way in.
+The full proposal and supporting research are available under Creative Commons Attribution 4.0 at https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261. The two-page executive summary is the fastest way in.
 
 ---
 
 **Call to Action (end of post)**:
-- Read the full executive summary: [link]
-- Read the complete 28-domain proposal: [link]
+- Read the full executive summary: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
+- Read the complete 35-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 - Share this post with someone who is asking "what do we actually do?"
 - Subscribe to receive the full series
 
@@ -210,8 +210,8 @@ The full Domain 2 and Domain 6 analyses, including international precedents from
 ---
 
 **Call to Action**:
-- Read the full Domain 2 (Institutional Integrity) analysis: [link to full proposal]
-- Read the full Domain 6 (Judicial Independence) analysis: [link to full proposal]
+- Read the full Domain 2 (Institutional Integrity) analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+- Read the full Domain 6 (Judicial Independence) analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 - Read the two-page executive summary: [link]
 - Share this post with someone who asks why courts can't stop what's happening
 - Subscribe for next week: what is actually happening to democracy right now — the trackers

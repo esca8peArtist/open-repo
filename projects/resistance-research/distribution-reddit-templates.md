@@ -5,7 +5,7 @@ status: ready-for-personalization
 phase: 3
 project: resistance-research
 series: distribution-templates
-domain_count: 28
+domain_count: 35
 cross_references:
   - democratic-renewal-proposal.md
   - democratic-renewal-executive-summary.md
@@ -42,7 +42,7 @@ license: "Creative Commons Attribution 4.0"
 
 Cross-posting a legal research document that I think this community will find substantive, particularly given the volume of active constitutional litigation in the last 18 months.
 
-The document is a 28-domain analysis of structural reform pathways for U.S. democratic institutions, grounded in constitutional design, comparative constitutional law, and the existing litigation record. I'm sharing it here specifically because Domains 1, 2, 6, and 7 are directly relevant to active legal questions and the document cites the controlling case law throughout.
+The document is a 35-domain analysis of structural reform pathways for U.S. democratic institutions, grounded in constitutional design, comparative constitutional law, and the existing litigation record. I'm sharing it here specifically because Domains 1, 2, 6, and 7 are directly relevant to active legal questions and the document cites the controlling case law throughout.
 
 A few things the document addresses that seem most relevant to r/law:
 
@@ -54,7 +54,7 @@ A few things the document addresses that seem most relevant to r/law:
 
 **On immigration enforcement and Fourth Amendment standing (Domain 7/16)**: The litigation tracker companion document covers CASA v. DHS, Ramirez Ovando v. Noem, Hussen v. Noem (Operation Metro Surge), and ACLU of Ohio v. ICE — building the circuit-level record on Fourth Amendment standards for warrantless immigration arrests. The main proposal's Domain 16 includes constitutional analysis of the Jennings v. Rodriguez framework and the argument for Article I immigration courts independent of the executive branch.
 
-The full proposal is available here: [link]. Litigation tracker: [link]. CC 4.0 license — cite freely.
+The full proposal is available here: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261. Litigation tracker: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261. CC 4.0 license — cite freely.
 
 I'm not affiliated with any legal organization. This is independent research. Happy to discuss any of the doctrinal analysis in the comments, and genuinely interested in feedback from practitioners on what's missing or what the document gets wrong.
 
@@ -64,7 +64,7 @@ I'm not affiliated with any legal organization. This is independent research. Ha
 
 ## 2. r/politics
 
-**Headline**: A Comprehensive Proposal for Democratic Structural Reform — 28 Domains, Evidence-Based, International Precedents, 2026 Midterm Timeline
+**Headline**: A Comprehensive Proposal for Democratic Structural Reform — 35 Domains, Evidence-Based, International Precedents, 2026 Midterm Timeline
 
 **Suggested flair**: Analysis / Policy
 
@@ -74,7 +74,7 @@ I'm not affiliated with any legal organization. This is independent research. Ha
 
 ### Draft Post
 
-I've been working on a research project for the past several months — a 28-domain proposal for democratic structural reform, grounded in movement research, comparative political science, and the evidentiary record on what has actually worked in other countries. I'm sharing it here because the 2026 midterm timeline is the central constraint, and I think this community understands why.
+I've been working on a research project for the past several months — a 35-domain proposal for democratic structural reform, grounded in movement research, comparative political science, and the evidentiary record on what has actually worked in other countries. I'm sharing it here because the 2026 midterm timeline is the central constraint, and I think this community understands why.
 
 The core argument is not that the right people need to win. It's that the architecture of American democracy has design flaws — some dating to the 18th century, some to 20th-century court decisions, some to 21st-century technological shifts — that a determined minority has learned to exploit simultaneously. Fixing the people without fixing the architecture guarantees recurrence.
 
@@ -105,7 +105,7 @@ The single-member plurality district system is the root mechanism. It mathematic
 
 These are not aspirational. They are introduced legislation waiting for a governing majority that treats structural repair as its first-act priority.
 
-Full proposal: [link]. Two-page executive summary: [link]. All documents CC 4.0, free to share with attribution.
+Full proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261. Two-page executive summary: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261. All documents CC 4.0, free to share with attribution.
 
 Happy to discuss any specific domain or the evidence base in the comments.
 
@@ -125,7 +125,7 @@ Happy to discuss any specific domain or the evidence base in the comments.
 
 Sharing three tracker documents that may be useful for this community's documentation work. Each is a living reference document — designed to be cited, modified, and updated as new events occur. All are CC 4.0, no permission required to use or adapt.
 
-**First Amendment Suppression Tracker** — [link]
+**First Amendment Suppression Tracker** — https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 
 Covers press crackdowns, protest restrictions, government-coerced deplatforming, and SLAPP suits. Currently documented cases include:
 
@@ -137,7 +137,7 @@ Covers press crackdowns, protest restrictions, government-coerced deplatforming,
 
 Each entry includes: what happened, who did it, specific dates, court status, and source links. Organized for citation.
 
-**Environmental Rollbacks Tracker** — [link]
+**Environmental Rollbacks Tracker** — https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 
 Rule-by-rule documentation of deregulatory actions at EPA, Interior, NOAA, DOE, and DOT. Entries include regulatory code citations, Federal Register dates, finalization status ([FINAL]/[PROPOSED]/[ADMIN ACTION]), litigation status, and source links. Currently covers:
 
@@ -149,7 +149,7 @@ Rule-by-rule documentation of deregulatory actions at EPA, Interior, NOAA, DOE, 
 - CEQ/NEPA framework elimination (January 2026)
 - EPA staffing: 23% reduction as of July 2025; 55% budget cut proposed
 
-**Police Consent Decree Tracker** — [link]
+**Police Consent Decree Tracker** — https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 
 City-by-city tracking of active and terminated police consent decrees, with specific violation documentation and monitoring gaps. Lead finding: the May 21, 2025 Trump DOJ action — simultaneously withdrawing from proposed decrees in Minneapolis and Louisville, retracting findings in eight jurisdictions, closing investigations in six cities — was the largest single rollback of federal police oversight in U.S. history. DOJ police misconduct unit: ~40 attorneys in 2024 → no more than 13 by February 2026. Federal excessive-force prosecutions: 36% decline in 2025 to 54 cases (lowest since 2020).
 
@@ -209,9 +209,9 @@ Poland's PiS government spent eight years stacking courts, capturing media, and 
 
 If the House flips or narrows to a functional check, Phase 1 reforms become achievable. If it does not, the remaining 47% of Project 2025 proceeds with minimal friction, and structural changes to redistricting and judicial authority may close the electoral reversal window.
 
-Full proposal (28 domains, full evidence base): [link]
-Two-page executive summary: [link]
-Litigation tracker (what courts are doing right now): [link]
+Full proposal (28 domains, full evidence base): https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+Two-page executive summary: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+Litigation tracker (what courts are doing right now): https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 
 Happy to answer specific questions about any domain, the evidence base, or the theory of change in the comments.
 
@@ -265,8 +265,8 @@ Each of the 28 domains is grounded in comparative evidence from functioning demo
 
 The full proposal documents the international precedents for each reform, including cost estimates and outcomes data.
 
-Full proposal and resistance meta-analysis: [link]
-Two-page executive summary: [link]
+Full proposal and resistance meta-analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+Two-page executive summary: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 CC 4.0 — share and adapt freely with attribution.
 
 ---
@@ -317,7 +317,7 @@ Domain 27 identifies three specific legislative fixes: (1) a federal academic fr
 
 I'm genuinely interested in feedback from faculty, researchers, and administrators on what Domain 27 gets wrong or is missing. The practitioner perspective is the most valuable gap in documentation built primarily from public records.
 
-Full Domain 27 analysis: [link] | Full 28-domain proposal: [link] | CC 4.0
+Full Domain 27 analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
 
 ---
 
@@ -373,7 +373,7 @@ Combined with the indictment theory: any operation against an indicted foreign o
 
 The Iran-focused war powers reform analysis (AUMF modernization, automatic funding cutoffs, 60-day clock enforcement) does not close the Venezuela-specific loophole. Domain 28 identifies four additional fixes: a statutory definition of "hostilities" that forecloses executive recharacterization (any operation with combat, foreign casualties, or regime change objectives); congressional standing to sue with D.C. Circuit jurisdiction; mandatory pre-notification for named operations (the OLC memo was finalized ten days before launch — there was time); and automatic Gang of Eight disclosure of any OLC memo concluding a planned operation doesn't require authorization.
 
-Full Domain 28 analysis with vote records and OLC memo analysis: [link] | Full 28-domain proposal: [link] | CC 4.0
+Full Domain 28 analysis with vote records and OLC memo analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
 
 ---
 
@@ -431,6 +431,6 @@ The Abrego Garcia case is the model for how the existing doctrine can produce re
 
 I'm interested in feedback from practitioners on whether the constitutional analysis here holds up and what the research is missing from a litigation strategy perspective.
 
-Full Domain 29 analysis: [link] | Full 28-domain proposal: [link] | CC 4.0
+Full Domain 29 analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
 
 Interested in discussing the comparative evidence, the movement research methodology, or any specific domain in the comments.
