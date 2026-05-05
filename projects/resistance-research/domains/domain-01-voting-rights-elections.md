@@ -87,11 +87,30 @@ Sources: [NPR: The SAVE Act faces long odds in the Senate (March 2026)](https://
 
 Sources: [Democracy Docket: Live blog — Supreme Court hears GOP case on mail-in voting](https://www.democracydocket.com/news-alerts/live-blog-supreme-court-hears-gop-case-that-could-decimate-mail-in-voting/); [SCOTUSblog: Watson v. RNC oral argument (March 2026)](https://www.scotusblog.com/2026/03/court-appears-ready-to-overturn-state-law-allowing-for-late-arriving-mail-in-ballots/)
 
-### 3.2 Louisiana v. Callais (Voting Rights Act, Majority-Minority Districts)
+### 3.2 Louisiana v. Callais (Voting Rights Act, Section 2 Intentional Discrimination Standard)
 
-*Louisiana v. Callais* (reargued October 2025, decision pending): Could eliminate majority-minority districts as a VRA Section 2 remedy nationwide — potentially the most consequential voting rights decision since *Shelby County v. Holder* (2013). A ruling limiting majority-minority districts would arrive in summer 2026, creating immediate redistricting implications for states under consent decrees and potentially reducing minority representation in the 2026 midterms and 2032 post-redistricting cycle.
+**DECIDED April 29, 2026 (6-3) — EVISCERATION OF VRA SECTION 2**
 
-Sources: [Brennan Center: Louisiana v. Callais](https://www.brennancenter.org/our-work/research-reports/louisiana-v-callais)
+*Louisiana v. Callais* fundamentally altered Section 2 of the Voting Rights Act by shifting the evidentiary standard from "discriminatory effect" to "intentional discrimination." The Court ruled that states can defend against VRA Section 2 discrimination claims by characterizing their redistricting choices as based on partisanship rather than race — a distinction the decision itself acknowledges is "difficult, if not impossible, to disentangle."
+
+**Immediate practical effects**:
+- Louisiana's congressional map — which had given Black voters a genuine opportunity to elect a candidate of choice for the first time in a generation — was struck down as a "racial gerrymander," contradicting prior *Shelby County* precedent that required race-consciousness in redistricting to remedy historical discrimination.
+- Alabama immediately filed an emergency motion requesting expedited review of its redistricting appeal under the same theory.
+- Georgia Governor Kemp announced the state would not order redistricting in response to the ruling (May 1, 2026), signaling intent to use the decision as a shield for existing discriminatory maps.
+- Multiple other states with majority-minority districts are expected to launch legal challenges seeking to dismantle these districts before the 2026 midterms.
+
+**Structural implications for voting rights framework**:
+- VRA Section 2 is now effectively the weakest federal voting rights protection since the Act's passage (1965), with higher evidentiary burdens on plaintiffs than before *Shelby County v. Holder* (2013).
+- Courts can now credit states' partisan characterization of what are factually racial decisions, creating a legal pathway to pre-1965 era racial discrimination in redistricting.
+- The decision arrives 130 days before the November 2026 midterms, creating time-pressure for states to implement new maps before voter mobilization.
+- States with pending consent decrees or court-ordered majority-minority districts are now in immediate litigation jeopardy.
+
+**Domain connections**:
+- Domain 6 (Judicial Independence): The *Callais* decision originated from courts under political pressure; the majority opinion demonstrates appellate capture severity.
+- Domain 33 (State Legislative Autocratization): Redistricting patterns will immediately shift away from minority representation; the decision removes the primary federal check on state gerrymandering through race.
+- Domain 13 (Constitutional Amendments): A voting rights constitutional amendment would supersede the Callais holding by establishing a constitutional floor above statutory interpretation disputes.
+
+Sources: [Supreme Court opinion 24-109 Louisiana v. Callais (April 29, 2026)](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf); [Campaign Legal Center: The U.S. Supreme Court Has Eviscerated the Voting Rights Act — What's Next?](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next); [NAACP Legal Defense Fund: Louisiana v. Callais](https://www.naacpldf.org/case-issue/louisiana-v-callais/); [Democracy Docket: SCOTUS Smothers Voting Rights Act](https://www.democracydocket.com/news-alerts/scotus-smothers-voting-rights-act-greenlighting-racial-discrimination-and-a-rash-of-gop-gerrymanders/); [GPB: Kemp Won't Order Redistricting in Georgia (May 1, 2026)](https://www.gpb.org/news/2026/05/01/kemp-wont-order-redistricting-in-georgia-after-supreme-court-weakens-voting-rights)
 
 ---
 

@@ -261,6 +261,24 @@ Key resources for ongoing tracking:
 
 ---
 
+### 7.5 SUPREME COURT DECISION: Louisiana v. Callais (VRA Section 2 Evisceration, April 29, 2026)
+
+- **Court**: U.S. Supreme Court
+- **Case name**: Louisiana v. Callais, 24-109
+- **Decision date**: April 29, 2026
+- **Vote**: 6-3 (Alito, Chief Justice Roberts, Thomas, Gorsuch, Kavanaugh, Barrett)
+- **What it decided**: Fundamentally altered Section 2 of the Voting Rights Act by shifting the evidentiary standard from "discriminatory effect" to "intentional discrimination." States can now defend against VRA Section 2 discrimination claims by characterizing redistricting choices as "partisan" rather than racial, even though courts acknowledge this distinction is "difficult, if not impossible, to disentangle."
+- **Immediate practical effects**:
+  - **Louisiana's majority-Black congressional district struck down** as a "racial gerrymander," contradicting prior *Shelby County* precedent requiring race-consciousness in remedying VRA violations
+  - **Multiple states (Alabama, Georgia, others) with existing majority-minority districts are now in immediate litigation jeopardy**, with emergency challenges expected before November 2026 elections
+  - **Federal courts are now weaponized against voting rights plaintiffs**, as the intentional discrimination burden falls on voters challenging maps, but states can invoke untestable "partisan motivation"
+- **Impact on other pending voting rights cases**: The Callais ruling directly affects LULAC v. Abbott (Texas, 7.2), Missouri and North Carolina redistricting challenges (7.3), and any future VRA Section 2 claims. The ruling removes the primary federal check on discriminatory redistricting, concentrating litigation power in state courts and state constitutions — both of which are under dark money capture pressure.
+- **Litigation outlook**: Expect multi-state coordinated legal challenges to majority-minority districts throughout spring-summer 2026, timed to force redistricting decisions before midterm elections. States like Georgia, Alabama, and Louisiana will likely file emergency motions in federal court within weeks of this decision.
+- **Why it matters**: The Callais decision represents the effective end of VRA Section 2 as a meaningful protection against racial discrimination in voting. Combined with Rucho v. Common Cause (2019, which eliminated partisan gerrymandering review), federal courts now provide no protection for minority voters. The only remaining checks are state courts (under capture pressure) and state constitutional voting rights protections — making the 2026 state supreme court elections (Wisconsin, Pennsylvania, North Carolina) and state ballot initiatives (Domain 1, Section 4.1) the primary leverage points for voting rights defense.
+- **Sources**: [Supreme Court opinion 24-109](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf); [Campaign Legal Center analysis](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next); [Democracy Docket summary](https://www.democracydocket.com/news-alerts/scotus-smothers-voting-rights-act-greenlighting-racial-discrimination-and-a-rash-of-gop-gerrymanders/); [NAACP Legal Defense Fund](https://www.naacpldf.org/case-issue/louisiana-v-callais/)
+
+---
+
 ## Key Resources and Ongoing Trackers
 
 | Resource | URL | What It Covers |
