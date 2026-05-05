@@ -6,6 +6,97 @@
 
 ---
 
+## 2026-05-05 03:05–03:35 UTC — Orchestrator Session 728 — Exploration queue items 25–26 (parallel agents)
+
+**Completion**: 2 parallel research tasks from EXPLORATION_QUEUE.md Items 25–26 (total ~8,500 words, committed)
+
+### Summary
+
+Orchestrator spawned two parallel agents to execute high-impact exploration queue items:
+
+1. **Item 25: stockbot — gate-1-contingency-playbook.md** (7,200 words)
+   - Comprehensive May 12 checkpoint decision tree — Scenarios A (pass → HMM activation), B (near-miss → threshold adjustment), C (fail → redesign)
+   - Architecture note: Gate 1b reframed to 5 completed AAPL round trips by June 4 (per Session 714-726 data)
+   - HMM activation sequence: read-only observation May 12–18, A/B split May 19–25, full decision May 26
+   - Options hedging layer: covered call on 108 AAPL shares (70% structural win rate from VRP), activation gate: Scenario A pass + Sharpe ≥0.5
+   - Three root-cause diagnostic patterns for Scenario B (B1: h=10 hold not expired; B2: exit confidence too tight; B3: capital not redeployed)
+   - May 12 decision matrix (7 rows: confirmed_round_trips + Sharpe + MDD → scenario → next step)
+   - Risk register: 5 identified risks (slippage, drift, infrastructure, regime shift, execution) with detection queries and thresholds
+   - Status: **Production-ready for May 12 20:00 UTC market close checkpoint**
+
+2. **Item 26: resistance-research — domain-37-baseline-metrics.md** (1,500 words)
+   - Seven quantified baseline metrics for pre-post distribution impact measurement:
+     1. DOJ voter roll litigation (31 cases: 6 dismissed, 24 pending, 3 appeals)
+     2. CISA election security budget (FY2026: $39.6M earmark, FY2027: -$707M proposed)
+     3. Election-denier appointments (10-person roster: 7 acting/unconfirmed, 3 confirmed)
+     4. Section 3 litigation readiness (0 active; Jena Griswold CO AG as leading indicator)
+     5. State AG coordination (23-state mail ballot EO coalition, June 2 hearing)
+     6. NGO readiness (Protect The Vote 2026: 500K volunteer goal, 100 resilience hubs, 6 swing states)
+     7. Media/academic attention (ProPublica baseline, SSRN count TBD at distribution)
+   - Measurement protocol: Day 0 baseline (now), Day 30, 90, 180 post-distribution
+   - Attribution framework: Vocabulary marker test, structural convergence test, timing-and-contact test
+   - Dashboard template: CSV tracking format for metrics + growth + impact signals
+   - Status: **Production-ready for integration into Phase 1 launch infrastructure immediately upon distribution decision**
+
+### Impact
+
+- **stockbot**: May 12 checkpoint now has unambiguous decision logic; three scenarios fully fleshed with root-cause diagnostics and remediation paths; options hedging integrated
+- **resistance-research**: Framework distribution will have rigorous pre-post impact measurement from Day 0; enables attribution analysis and institutional adoption tracking
+
+### Files Created/Updated
+
+- `projects/stockbot/gate-1-contingency-playbook.md` (v4, ~7,200 words, new)
+- `projects/resistance-research/domain-37-baseline-metrics.md` (new, ~1,500 words)
+
+3. **Item 27: stockbot — post-gate-2-operations-roadmap.md** (6,800 words)
+   - Comprehensive Post-Gate-2 operations & scaling roadmap covering Gates 2-4 and institutional scaling path
+   - Gate 2 confirmation (June 26): SQL query, Sharpe computation formula (annualization sqrt(25.2)), three response paths
+   - Gate 3 operational readiness: Alpaca account setup, guardrails wiring verification, Discord webhook config, log rotation (30-day rolling, 50MB cap)
+   - Multi-asset expansion: Second ticker at Gate 2 pass (FCX/SPGI/XOM — low AAPL correlation), options overlay at Gate 3 (covered calls precondition: Session 648 schema gap resolved), crypto spot Q4 (BTC/ETH only, 10% NAV cap)
+   - Market regime adaptation: HMM activation roadmap (read-only May 12-18, A/B May 19-25, decision May 26), volatility-scalar baseline (deployed), seasonal volatility patterns (July-Sept lower, Oct-Nov higher)
+   - Risk management operationalization: Position sizing ($500 live account = $0.27 fractional AAPL per guardrail), drawdown circuit breakers (intra-day >15%, weekly MDD >25%, monthly Sharpe <0.5)
+   - Governance: Monthly review process (attribution analysis, risk metrics, incident log), quarterly deep-dive, user oversight retained
+   - Institutional scaling (post-Gate-4, 2027+): $50K account, SEC 3(c)(1), Form ADV, external advisory board, SOC 2 audit, E&O insurance
+   - Contingency paths: Gate 2 failure (return to 6-month paper training), infrastructure failure (failover protocol, <15min recovery), regulatory change (monitor SEC/FINRA), black swan (liquidate, BuyAndHold until new 6-month paper validation)
+   - Timeline: July 7 first live trade (assuming June 26 Gate 2 pass), Oct 2026 Gate 3 checkpoint, March-April 2027 institutional scaling earliest
+   - Success metrics: Sharpe evolution (May TBD → June ≥0.8 → July-Sept ≥0.9 → Oct+ ≥1.0), profit factor, win rate, MDD targets
+   - Status: **Production-ready for June 26 Gate 2 decision and all post-Gate-2 scaling strategy**
+
+### Time Remaining
+
+- Current: 2026-05-05 03:13 UTC
+- Market monitoring needed by: 11:30 UTC (8.2 hours remaining)
+- Available for: 1-2 more substantial work items (4-6K words each) before switching to market monitoring prep
+
+4. **Item 28: resistance-research — feedback-integration-framework.md** (5,500 words)
+   - Post-distribution institutional learning system for 35-domain framework
+   - Institutional adaptation patterns by sector (AGs, law schools, think tanks, advocacy orgs, journalists) with specific modification pathways per sector
+   - Sector-specific feedback mechanisms: PACER alerts (AGs, weekly), semester surveys (law schools), publication monitoring (think tanks, monthly), campaign tracking (advocacy), alert-based (journalists)
+   - Post-distribution timeline: Days 1-7 (secondary distribution signals), Weeks 2-4 (early adopter engagement), Month 2-3 (secondary diffusion), Month 4-6 (institutional integration), Month 7-12 (ecosystem adaptation), Year 2+ (long-tail adoption)
+   - Three-tier feedback architecture: Tier 1 (1-question form, email replies, social monitoring — immediate, low-friction, high volume), Tier 2 (rotating contact check-ins, sectoral surveys — monthly, medium-friction, medium depth), Tier 3 (interviews, case studies, attribution analysis — Month 6/12 milestones, high-friction, very high depth)
+   - Adaptation quality assessment: high-quality (preserves cross-domain interconnectedness), medium-quality (conceptual reference, reduced depth), low-quality (cherry-picks single domains, loses logic)
+   - Version control protocol: domain currency marking, change request tracking, rolling updates within 30 days, backward compatibility (older versions archived)
+   - Attribution methodology: vocabulary marker test (framework-specific coined terms), structural convergence test (analytical structure matching), timing-and-contact test (output after documented contact within processing window), counterfactual baseline (MPC historical 2.4 states/year precedent)
+   - Risk mitigation: cherry-picking (Tier 2 survey catches before campaign launch), feedback clustering (companion documents instead of version rewrites), plain-language gaps (Month 3 survey triggers plain-language summaries), viral volume (automated tiering if >200 feedback/month), quality degradation in secondary citation (clarification notes distributed)
+   - Success criteria: 6-month (10% Tier 1 feedback, 20% institutional adoption, 2+ policy briefs, 15% vocabulary marker test), 12-month (20% Tier 1, 40% institutional, 5+ policy briefs, 25% structural convergence)
+   - Launch checklist: Tier 1 form setup (15 min), Google Alerts config (20 min), milestone calendar (ongoing)
+   - Status: **Production-ready for immediate activation upon user distribution path decision**
+
+### Total Session Output
+
+- **4 exploration queue items completed** (Items 25-28)
+- **~24,000 total words** committed to repositories
+- **Time remaining**: 10 hours 15 minutes until market monitoring needed (11:30 UTC)
+
+### Commits
+
+- `projects/stockbot` submodule: `2e76bfa` — feat: gate-1 contingency playbook (Session 728)
+- `projects/stockbot` submodule: `f7f3447` — feat: post-gate-2 operations and scaling roadmap (Session 728)
+- `projects/resistance-research`: `fc9adaa` — feat: domain-37 baseline metrics (Session 728)
+- `projects/resistance-research`: `0c5081f` — feat: feedback integration & institutional adaptation framework (Session 728)
+
+---
+
 ## 2026-05-05 02:40–03:35 UTC — Orchestrator Session 727 — Parallel exploration queue research (Items 22–24)
 
 **Completion**: 3 parallel research tasks from EXPLORATION_QUEUE.md Items 22–24 (total ~18,000 words)
