@@ -6,6 +6,25 @@
 
 ---
 
+## 2026-05-05 — off-grid-living — Social Distribution Engagement Tracking Framework (3 files)
+
+**Files written**:
+- `/home/awank/dev/SuperClaude_Framework/projects/off-grid-living/engagement-metrics-framework.md` (~1,700 words)
+- `/home/awank/dev/SuperClaude_Framework/projects/off-grid-living/feedback-loop-protocol.md` (~1,800 words)
+- `/home/awank/dev/SuperClaude_Framework/projects/off-grid-living/phase-2-prioritization-framework.md` (~1,400 words)
+
+**Key findings**:
+- HN breakout probability quantified by points-at-2h: 15–30 points = 30–50% front-page probability; 75–150 = 80–90%; 300+ = top of front page + 600+ stars likely in 48h
+- Reddit engagement velocity is the primary ranking driver; 10+ upvotes in first 60 minutes triggers hot-feed compounding
+- Twitter/X algorithm weight hierarchy confirmed (xAI Jan 2026 release): author replies = 150x likes; retweets = 20x; bookmarks = 10x — responding to replies immediately after posting is the highest-leverage action
+- Phase 2 minimum threshold: 250 GitHub stars + 15 enhancement issues + one 200+ upvote Reddit post
+- Three expansion paths defined: (A) depth-fill comment-identified gaps, (B) adjacent new domains, (C) case studies (Path C outperforms A/B on Reddit engagement 3–5x)
+- Feedback categorization: 4-category taxonomy (Error / Gap / Enthusiasm / Off-topic) with 20-min weekly triage ritual
+- GitHub `good-first-issue` labeling at 20–25% of open issues = 13% increase in new contributors (empirical)
+- SEO: Path A (depth) builds topical authority; Path C (case studies) generates backlinks; Google Search Console setup recommended at Month 2
+
+---
+
 ## 2026-05-05 05:58 UTC — Session 734 — Orchestrator — Parallel Exploration Queue Research
 
 ### Item: resistance-research — Legal Liability & Risk Assessment for Framework Authors ✅ COMPLETE

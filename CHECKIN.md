@@ -1,6 +1,6 @@
-## Since Last Check-in (Session 734 — 2026-05-05 05:58–06:15 UTC) — Legal Liability + May Threat Update Complete
+## Since Last Check-in (Session 734 — 2026-05-05 05:58–06:30 UTC) — THREE Exploration Items Complete
 
-### Overall Status: ✅ TWO EXPLORATION ITEMS COMPLETE — Legal liability assessment + May threat update delivered in parallel; 7h 15m until market open (13:30 UTC); ready for stockbot pre-market health check at 13:00 UTC
+### Overall Status: ✅ THREE EXPLORATION ITEMS COMPLETE — Legal liability assessment + May threat update + off-grid-living social distribution framework delivered; 7h until market open (13:30 UTC); ready for stockbot pre-market health check at 13:00 UTC
 
 **Session Work**:
 
@@ -22,15 +22,27 @@
    - **Palantir NEW developments**: (1) IRS Criminal Investigation contract adds relationship-mapping across millions of financial records + dark web crypto wallets (creates data surface for civil society donors), (2) ICE ICM sole-source deal with biometric integration + September 2026 deployment deadline (2 months pre-midterms)
    - **Distribution decision**: Proceed with Tier 1. Two minor template additions: (1) IRS relationship-mapping note, (2) NRSC deepfake in social engineering section. Monitor June 12 FISA deadline post-distribution.
 
+3. ✅ **off-grid-living: Social Distribution Engagement Metrics & Feedback Loop Design** (COMPLETE) — `engagement-metrics-framework.md` + `feedback-loop-protocol.md` + `phase-2-prioritization-framework.md` (4,400 words)
+   - **Hacker News**: Breakout driven by velocity: 2-hour point count predicts front-page probability (30-75 points = 55-75%, 150-300 = confirmed + 8K-20K GitHub views)
+   - **Reddit**: Velocity-weighted algorithm with per-subreddit baselines (r/preppers breakout ≥500 upvotes, r/offgrid higher quality signal)
+   - **Twitter/X**: Weight hierarchy confirmed (author replies = 150x likes, retweets = 20x, bookmarks = 10x) — responding to thread is highest-leverage action
+   - **Phase 1 success threshold**: 250+ stars minimum for Phase 2 justification; 80 stars after Month 1 = reassess strategy
+   - **Phase 2 trigger**: Quantified (250+ stars AND 15+ enhancement issues AND one 200+ upvote Reddit post simultaneously)
+   - **Three Phase 2 expansion paths**: (A) depth-fill comment-identified gaps [medium effort], (B) new domains [high effort], (C) case studies [low-to-medium, 3-5x better Reddit engagement]
+   - **Feedback loop**: Four-category triage (Error/Gap/Enthusiasm/Off-topic) with 20-min weekly ritual; GitHub `good-first-issue` labeling at 20-25% = 13% contributor increase
+   - **SEO strategy**: Path C (case studies) generates backlinks; Path A (depth) builds topical authority; setup Google Search Console Month 2 for search intent data
+   - **Key operational lever**: Monthly review template is the forcing function converting ongoing feedback into Phase 2 decisions
+   - **Business value**: User can execute social distribution with structured tracking and iteration capability
+
 **Awaiting Next Actions**:
 - **CRITICAL — User Input**: Resistance-research distribution path decision (A / A+37 / B) → Phase 1 execution is immediate (3-4h upon approval)
 - **Market monitoring**: 13:00 UTC pre-market check (7h away), 13:30 UTC market open, 20:00 UTC post-market analysis
-- **Exploration Queue**: 3 active items remain (seedwarden analytics [deferred], rideshare stakeholder engagement [pending PR#1], off-grid-living social metrics)
+- **Exploration Queue**: 2 active items remain (seedwarden analytics [deferred to next session], rideshare stakeholder engagement [blocked on PR#1 merge])
 
 **Next priorities**:
 1. Market pre-market health check (~13:00 UTC)
 2. If user provides distribution path: Phase 1 execution (3-4h autonomous work)
-3. Continue exploration queue work (seedwarden analytics framework)
+3. Exploration queue continuation: seedwarden analytics framework (GA4 + Etsy API research, deferred for next session; rideshare blocked on PR#1 merge)
 
 ---
 
