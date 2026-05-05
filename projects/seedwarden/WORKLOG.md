@@ -4,6 +4,31 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 748 — 2026-05-05 — Endangered Species Market Analysis Deep Refresh (Exploration Queue Item 748)
+
+**Task**: Deepen the existing `research/endangered-species-market-analysis.md` with fresh Etsy live search data, confirmed pricing evidence from wildcrafting guide search results, Amazon reference-ceiling validation, updated UpS conservation scope, macro market data update, and buyer cohort language analysis.
+
+**New findings vs. prior session**:
+
+- Wildcrafting guide pricing on Etsy confirmed by search index at $18.29, $22.44, $22.00, $25.50, $28.00 across the wildcrafting books category — independently validates Seedwarden's $18–22 single-guide range as market-supported, not aspirational.
+- Amazon Kindle reference ceiling confirmed: Kim Derek Pritts "Ginseng" at $18.93 Kindle. Davis & Persons "Growing and Marketing Ginseng, Goldenseal" available in Kindle and print ($30–40). These validate buyer WTP for cultivation content at those price points on a competing platform.
+- ForestheartCelticArt foraging calendar confirmed at 446 favorites (not 1,071 as in prior notes — discrepancy logged; 446 is current confirmed value).
+- Herbal Growing & Wildcrafting Guide (listing 1855736794) confirmed at $18.29–$25.50 range — closest pricing analog to Seedwarden's single guides.
+- 60 Herb Information Cards (Rariity) confirmed at 200 favorites, listed March 2026 — template-buyer market adjacent.
+- UpS species scope confirmed: ~47 species across Critical (8), At-Risk (32), In Review (7) — provides full roster for Phase 3 series expansion.
+- US ginseng market revised to $985.6M (2025), $1.45B by 2032 at 6.6% CAGR. Botanical supplements market at $57.01B → $66.12B in 2026 at 16.28% CAGR.
+- 65% of herbal supplement consumers consider sustainability/ethical sourcing when purchasing — confirms the conservation buyer is a mass-market cohort, not a niche.
+- Bundle discount recalibration: research confirms 20–30% discount is optimal for Etsy bundle conversion; current 4-guide at $32 (56% discount) is steeper than optimal. Recommended path: launch at $32, increase individual guides to $22 after 20 reviews, increase bundle to $38 (29% discount from $88 standalone sum).
+- Wave 1 scope recommendation added: 4 individual guides (ginseng, goldenseal, black cohosh, ramps) + Starter Pair bundle at $28 as gateway product.
+
+**Documents updated**:
+
+| File | Changes |
+|---|---|
+| `research/endangered-species-market-analysis.md` | Expanded from ~1,600 to ~2,400 words; added confirmed pricing data, Amazon ceiling validation, UpS scope, cohort language analysis, bundle discount recalibration, Wave 1 scope recommendation, 40+ new sources |
+
+---
+
 ## Session 737 — 2026-05-05 — Endangered Species Series Market Analysis
 
 **Task**: Research and produce a Phase 2 market analysis for the endangered species guide product line, covering competitive landscape, demand signals, pricing strategy, buyer segmentation, seasonality, and launch recommendation.
