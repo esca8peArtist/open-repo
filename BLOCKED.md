@@ -32,30 +32,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — CRITICAL: Alpaca DTBP=0 due to prior-day margin call; Jetson still running old sessions
+### stockbot — Alpaca DTBP=0; waiting for May 6 market open reset
 **Date blocked**: 2026-05-05 14:46 UTC
-**Context**: Two separate issues confirmed via direct API inspection and log analysis:
+**Context**: `daytrading_buying_power=0` due to prior-day margin call from 52-session over-leveraged state (last_maintenance_margin=$127K exceeded $112K equity). Alpaca zeros DTBP until next trading day recalculation. Today ends clean: only AAPL open, $82K cash, maintenance_margin=$9K. DTBP should reset to ~$400K at May 6 13:30 UTC market open.
 
-**Issue 1 — daytrading_buying_power=0 (root cause identified)**
-The account has `multiplier=4` (margin account), `pattern_day_trader=true`, `equity=$112K`, `regt_buying_power=$194K` — all healthy. But `daytrading_buying_power=0`.
-Root cause: Yesterday the account held ~$420K in long positions (52 sessions) on $112K equity with `last_maintenance_margin=$127,213` which EXCEEDED equity. This triggered a Day Trading Buying Power Call. Alpaca zeros DTBP when a DTBP call is outstanding and does not recalculate mid-day. The 19 positions closed today (cash now +$82K, only AAPL open), so tomorrow's DTBP should recover to ~$400K (4 × (equity - maintenance)).
-The engine code is correct. This is purely an Alpaca account state issue.
+Jetson old sessions issue **RESOLVED 2026-05-05**: 5 stale is_active rows cleared via Python in container, container restarted. `/api/health` returns `{"status":"ok","sessions":2}`, `/api/ready` returns 200. Both AAPL sessions (lgbm_ho + ridge_wf) running correctly.
 
-**Issue 2 — Jetson still running ~52 old sessions**
-Logs show BUY attempts for LIN, HON, MRK, COP, SHW, GOOGL, COST, FDX, WMT, AVGO, UNH, AMZN, PG, DIS, NEE, MA, CAT at 14:46 UTC — the supposedly-closed sessions. The Jetson DB still has old `is_active=True` rows. The seeder only triggers when `not runs_to_resume`, so those old rows are preventing the 2-session config from loading.
+User decision: wait for tomorrow's reset (cannot reset paper account without creating a new one, which would require new API keys).
 
-**What I need**:
-Option A (recommended — wait): Do nothing today. DTBP should reset at tomorrow's market open (2026-05-06 13:30 UTC) since today ends with a healthy balance sheet (only AAPL, $82K cash). Verify tomorrow: `curl -s "https://paper-api.alpaca.markets/v2/account" -H "APCA-API-KEY-ID: PKM03F5PK1LPV8LSBIP0" -H "APCA-API-SECRET-KEY: W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw" | python3 -c "import json,sys; a=json.load(sys.stdin); print(a['daytrading_buying_power'])"`
-
-Option B (trade today): Reset the paper trading account at paper.alpaca.markets → Settings → Reset Account. Loses the AAPL position (+$1,277 unrealized) but gets a fresh $100K account with DTBP=$400K immediately.
-
-**For Jetson old sessions** (needed regardless of which option above): SSH to Jetson, run:
-```
-docker exec stockbot sqlite3 /app/database/stockbot.db "UPDATE model_runs SET is_active=0, ended_at=datetime('now') WHERE session_id NOT IN ('33a4afe676cae12a','a1b2c3d4e5f60001') AND is_active=1;"
-docker restart stockbot
-```
-This deactivates all non-AAPL sessions so the seeder loads only the 2 configured sessions.
-
+**What I need**: Verify DTBP at May 6 13:30 UTC before market open. If still 0, investigate further.
 **Verify with**: `curl -s "https://paper-api.alpaca.markets/v2/account" -H "APCA-API-KEY-ID: PKM03F5PK1LPV8LSBIP0" -H "APCA-API-SECRET-KEY: W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw" | python3 -c "import json,sys; a=json.load(sys.stdin); print('DTBP:', a['daytrading_buying_power'])"`
 **Resolution**:
 
