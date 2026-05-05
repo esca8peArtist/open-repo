@@ -6,6 +6,34 @@
 
 ---
 
+## 2026-05-05 — Workout Phase 2 Deep Extension
+
+**Work Completed**:
+
+Audited all four existing Phase 2 workout documents against the full brief requirements. Found all four documents existed but had content gaps and were below target word counts. Extended each document with targeted research.
+
+1. **phase-2-periodization-research.md** (3,440 → 4,992 words)
+   - Added: Full autoregulation methods comparison — APRE vs RPE vs VBRT vs PBRT, citing 2025 network meta-analysis (PMC12336695). APRE ranks 93–97% probability of being optimal vs 13–16% for percentage-based training.
+   - Added: Concurrent training section — AMPK/mTOR molecular mechanism, sequential vs. simultaneous periodization decision table, minimum 6-hour session separation rule, how each block type interacts with concurrent cardio.
+   - Added: Sleep and periodization section — quantified 18% MPS reduction from one night's sleep deprivation (PMC7785053), GH pulse timing during slow-wave sleep, sleep as a deload-decision input.
+
+2. **exercise-progression-database.md** (2,864 → 3,836 words)
+   - Added: Full plateau-breaking decision tree (code block format) covering 6 diagnostic branches: bar speed / deload history / rep range accommodation / technique / volume vs MAV / variation change / weak-link accessory.
+   - Added: Volume Landmarks Per Muscle Group table — MEV/MAV/MRV values for 10 muscle groups with notes on which tissue is at risk, drawn from RP Strength model and PMC12345604.
+
+3. **sports-specific-adaptation-guide.md** (2,679 → 4,403 words)
+   - Added: Part 5 with four full sport-specific case studies: rock climbing (7-phase year, finger tendon management, A2 pulley injury avoidance), swimming (intensity zone distribution from PMC6470949: 40-44% aerobic, 44-46% threshold, 6-9.5% severe), marathon running (18-week block integration with strength work, effect sizes from PMC11052887), BJJ/martial arts (3-month fight camp structure, strength qualities that transfer to grappling).
+   - CrossFit periodization principles integrated into climbing case study comparison.
+
+4. **injury-prevention-protocols.md** (2,754 → 3,696 words)
+   - Added: Volume Tolerance Thresholds section — pattern-specific weekly ceiling table (10 patterns, tissue at risk), 10-15% ACWR spike rule with concrete examples, recovery-context modifiers for sleep and stress.
+   - Added: Sleep as Primary Injury Prevention section — GH/collagen synthesis mechanism, 18% MPS reduction evidence, sleep prescriptions by training block intensity.
+
+**Total word count**: 11,737 → 16,927 words across four documents.
+**Key new sources**: PMC12336695 (APRE network meta-analysis), PMC7785053 (sleep deprivation MPS), PMC6470949 (elite swimmer periodization), PMC11052887 (strength training and running economy), PMC12885173 (concurrent training sequences), Frontiers fspor.2024.1363730 (swimming zones).
+
+---
+
 ## 2026-05-05 14:44–15:30 UTC — Session 750 — Exploration Queue Extension + Workout Phase 2 Research
 
 **Work Completed**:
@@ -23443,3 +23471,72 @@ May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
    - Ready for Phase 2 Wave 1 execution (May 30 target)
 
 **Session Summary**: Two parallel exploration queue items completed (Domain 37 baseline metrics verified, seedwarden market analysis delivered). Both deliverables advance distribution-readiness and Phase 2 planning. Stockbot market monitoring continues (engine running, DTBP=0 block noted, should resolve tomorrow at market open). No commits needed — both deliverables already staged and agent-committed.
+
+---
+
+## 2026-05-05 15:10+ UTC — Session 751 — Exploration Queue Item 47 Extension
+
+**Work Completed**:
+
+✅ **Item 47: Workout Phase 2 Research Extension** — Periodization, Load Management & Sports Science
+   - Agent research execution targeting unblocked queue item with no external dependencies
+   - All four Phase 2 documents extended with targeted sports science research
+   - **phase-2-periodization-research.md**: 3,440 → 4,992 words
+     - Added: Autoregulation methods comparison (APRE vs RPE vs VBRT vs PBRT) citing PMC12336695 (2025 network meta-analysis: APRE 93-97% optimal, PBRT 13-16%)
+     - Added: Concurrent training section (AMPK/mTOR mechanism, sequential vs simultaneous periodization decision table)
+     - Added: Sleep deprivation impact on muscle protein synthesis (18% MPS reduction per PMC7785053)
+   - **exercise-progression-database.md**: 2,864 → 3,836 words
+     - Added: Plateau-breaking decision tree (6 diagnostic branches: bar speed, deload history, rep range, technique, volume vs MAV, variation/accessory)
+     - Added: Volume landmarks per muscle group (MEV/MAV/MRV table for 10 patterns)
+   - **sports-specific-adaptation-guide.md**: 2,679 → 4,403 words
+     - Added: Part 5 with four full sport case studies: rock climbing (7-phase structure, finger tendon rules), swimming (intensity distribution from PMC6470949: 40-44% aerobic / 44-46% threshold / 6-9.5% severe), marathon running (18-week block with strength integration, effect sizes from PMC11052887), BJJ/martial arts (3-month fight camp structure, transferable strength qualities)
+   - **injury-prevention-protocols.md**: 2,754 → 3,696 words
+     - Added: Volume tolerance thresholds (pattern-specific weekly ceilings, ACWR spike mechanism, 20-30% modifier for sleep <6h)
+     - Added: Sleep as primary injury prevention (GH-mediated collagen synthesis, 70% of nightly GH pulse in first 2-3h N3 sleep)
+   - **Total additions**: 5,190 new words; final state 16,927 words across four documents
+   - **Key sources verified**: PMC12336695, PMC7785053, PMC6470949, PMC11052887, PMC12885173, RPStrength volume landmarks, Modus Athletica climber periodization
+
+**Decision Logic**:
+   - All major projects (resistance-research, stockbot, seedwarden, mfg-farm) blocked on user decisions or external state
+   - Item 47 explicitly marked "READY FOR EXECUTION NOW" with zero external blockers
+   - Phase 1 (comprehensive-plan.md) complete; Phase 2 research can proceed proactively
+   - Selected to maximize token budget utilization while awaiting user signals
+
+**Next Steps**:
+   - Assess remaining unblocked queue items (Item 48, 49, or others)
+   - Market close at 20:00 UTC; can continue research work until then
+   - Prepare check-in once all available autonomous work exhausted or time constraints hit
+
+---
+
+## 2026-05-05 15:30+ UTC — Item 48: Resistance-Research Phase 2 Domain Prioritization Framework
+
+✅ **Item 48: Phase 2 Candidate Comparison & Execution Roadmap** — Decision framework for Domains 38-40 prioritization
+   - Agent research execution on unblocked queue item (independent of Phase 1 path decision)
+   - Three documents created to `projects/resistance-research/`:
+   - **phase-2-domain-prioritization-matrix.md** (3,200 words)
+     - Eight-criterion scoring matrix: urgency, coalition strength, research complexity, policy window, litigation vector, media narrative gap, implementation difficulty, reversibility
+     - Weighted scoring: urgency 1.5x, litigation vector 1.4x, reversibility 1.3x, others 1.0-1.2x
+     - Final tier ranking: Tier 1 (87-82 score) has 4 top candidates, Tier 2 (78-75) has 5 candidates
+   - **domain-38-40-strategic-analysis.md** (4,100 words)
+     - Top candidates detailed: Disability Rights (41-B, 87.1, fastest research 10-14h, highest narrative gap), Voting Systems (38-B, 84.1, elevated post-Callais SCOTUS ruling April 29), Intel Oversight (38-A, 81.6, June 12 FISA deadline is hard constraint), Tribal Sovereignty (40-B, 78.8, triggered by Trump v. Barbara ruling)
+     - Policy window analysis per candidate (when do action windows close?)
+     - Coalition alignment mapping to existing Phase 1 Tier 1 contacts
+   - **phase-2-execution-roadmap.md** (2,100 words)
+     - Sequential vs. parallel vs. hybrid execution options
+     - **Critical finding**: June 12 FISA deadline + November 3 midterm are concurrent constraints that sequential execution cannot serve
+     - **Recommended architecture**: Track A (Voting Systems → Repro Rights → Labor → Fiscal Authority sequential) + Track B (Intel Oversight + Tribal Sovereignty parallel) — enables both June deadline (Intel) and midterm prep (Voting Systems)
+     - Resource allocation and decision gates
+     - Timeline with Month 1-12 Phase 2 execution calendar
+   - **Total additions**: 9,400 words of Phase 2 prioritization framework
+
+**Key Strategic Insight**:
+   - Item 12 (Domain 38 candidates) was completed before Callais SCOTUS ruling (April 29, 2026 striking down VRA Section 2 discriminatory-effects standard)
+   - Callais elevated Voting Systems from Tier 2 to Tier 2 candidate in priority rank (84.1 score)
+   - FISA 45-day extension (not multi-year reauth) compressed June 12 deadline window
+   - Item 48 synthesis integrates April-May 2026 developments that shift Phase 2 prioritization
+
+**Combined Session Output** (Items 47-48):
+   - Total: 25,327 words across 7 documents (4 workout + 3 resistance-research)
+   - Both items cleared from Exploration Queue
+   - Workout Phase 2 ready for user review; Phase 2 prioritization framework ready for strategic Phase 1→Phase 2 transition planning

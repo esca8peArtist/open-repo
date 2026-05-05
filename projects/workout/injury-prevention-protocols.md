@@ -208,6 +208,66 @@ When shoulder impingement prevents all pressing:
 
 ---
 
+## Volume Tolerance Thresholds: When to Reduce
+
+The injury prevention question for resistance training is not just "am I doing too much?" but "am I doing too much for this tissue, at this rate of increase, given my recovery context?" The following thresholds are derived from the ACWR research and the MEV/MRV framework.
+
+### Absolute Volume Limits by Movement Pattern
+
+These are conservative practical ceilings for recreational lifters training 3–5 days per week with adequate recovery. Going above these requires explicit monitoring of performance, joint tenderness, and systemic recovery markers.
+
+| Movement Pattern / Tissue | Practical Weekly Ceiling (sets) | Tissue Most at Risk |
+|---|---|---|
+| Squat-pattern (all knee-dominant) | 20–25 | Patellar tendon |
+| Hinge-pattern (all hip-dominant) | 16–20 | Lumbar erectors, hamstring origin |
+| Horizontal push (all pressing) | 18–22 | Rotator cuff, pec minor, AC joint |
+| Overhead push | 10–14 | Supraspinatus tendon, subacromial bursa |
+| Horizontal pull (rows) | 20–24 | Lateral epicondyle, bicep tendon |
+| Vertical pull (pull-ups/pulldowns) | 16–20 | Bicep tendon, shoulder labrum |
+| Total direct arm work (curls/extensions) | 12–16 | Lateral/medial epicondyle tendons |
+
+The overhead push ceiling (10–14 sets) is lower than other patterns because the rotator cuff tendons have the smallest cross-sectional area of any major tendon group in the body and accumulate fatigue quickly. Exceed this ceiling and impingement risk rises substantially in individuals who already have limited thoracic extension.
+
+### Rate of Volume Increase: The 10-15% Rule in Practice
+
+The ACWR "danger zone" above 1.5 is most commonly triggered not by absolute weekly volume but by sudden spikes. For a lifter averaging 12 sets per muscle group per week, adding 4 sets in a single week (a 33% increase) places them in the high-risk zone regardless of the absolute number. Practical examples:
+
+- If your quadriceps training volume has been 12 sets/week for the past month, adding a new squat variation without reducing elsewhere takes that to 16–18 sets in week 1 — a sudden 33–50% spike. This is where patellar tendon overuse begins its 2–4 week silent accumulation before pain appears.
+- Adding "just one more set" per exercise in a full-body program adds 4–6 sets to multiple muscle groups simultaneously — a compound spike across all tissues.
+
+**The practical rule.** When introducing a new exercise, reduce sets elsewhere in the same movement pattern by at least as many sets as you're adding. Net volume change should be ≤15% above prior 4-week average.
+
+### Recovery Context Modulates the Ceiling
+
+These thresholds assume adequate sleep (7–9 hours) and adequate protein intake (1.6–2.2 g/kg bodyweight). Under suboptimal recovery conditions, the effective ceiling drops:
+
+- Sleep 5–6 hours: reduce weekly volume ceiling by 20–30% (tissue remodeling rate is reduced; the same volume accumulates more residual damage)
+- High life stress period: reduce by 10–20% (elevated cortisol impairs satellite cell proliferation and tendon collagen synthesis)
+- Active illness or recent illness (within 1–2 weeks): treat training age as having reset by 6–12 months for ceiling purposes
+
+---
+
+## Sleep as Primary Injury Prevention
+
+Sleep occupies a separate section here not because it is unusual advice but because the mechanism is precise enough to justify its inclusion in an injury prevention framework, not just a general wellness discussion.
+
+### The Tissue Remodeling Window
+
+Tendons, ligaments, bone cortex, and cartilage undergo their primary structural remodeling during sleep. The mechanism is growth hormone (GH) mediated: GH stimulates insulin-like growth factor-1 (IGF-1), which drives collagen synthesis in connective tissue. Approximately 70% of the nightly GH pulse occurs during slow-wave sleep (N3) in the first 2–3 hours of sleep. Disrupted or shortened sleep directly reduces the collagen synthesis window that tendons depend on for adaptation.
+
+**The direct evidence.** A 2021 randomized crossover trial (PMC7785053) found that one night of total sleep deprivation reduced postprandial muscle protein synthesis by 18%, reduced testosterone AUC by 24%, and increased daytime cortisol by 21%. Cortisol at chronically elevated levels inhibits tenocyte proliferation — the cells responsible for tendon collagen production. The combination of reduced anabolic signal and elevated catabolic signal creates a net negative remodeling balance in connective tissue.
+
+**Implication for overuse injury risk.** A lifter maintaining 18–20 sets per muscle per week during a mesocycle where sleep averages 5–6 hours is doing so with significantly reduced tendon repair capacity. They may feel muscularly recovered (muscle repair is partially redundant with multiple mechanisms) while connective tissue is progressively degenerating. Overuse injuries in this context appear to "come out of nowhere" — the lifter was not aware of the deficit because muscle function remained adequate until the tendon failed.
+
+### Sleep Prescriptions for High-Volume Training Blocks
+
+- During accumulation phases (highest volume): target 8–9 hours. This is when connective tissue is under the most load per week.
+- During deload weeks: 8–9 hours is still appropriate — the remodeling occurs after load, not during it.
+- The night before a maximum intensity test (1RM week, sport competition): sleep quality matters more than duration. Prioritize sleep onset time consistency (same time as habitual ±30 minutes) over attempting to sleep extra.
+- When sleep is unavoidably compromised for 3+ consecutive days: proactively reduce training volume by 20–30% for that week. Do not rely on subjective readiness — connective tissue degradation is not felt until pain appears.
+
+---
+
 ## Summary: The Minimum Viable Injury Prevention Checklist
 
 1. Never increase weekly volume by more than 10–15% in a single week.
@@ -231,3 +291,7 @@ When shoulder impingement prevents all pressing:
 - [PMC10809978 — Effects of a One-Week Deload on Muscular Adaptations (PeerJ 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10809978/)
 - [ACSM Position Stand — Resistance Training Prescription (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/)
 - [Premier Science — Load Management and Injury Prevention: Narrative Review](https://premierscience.com/pjs-25-1041/)
+- [PMC7785053 — Effect of Acute Sleep Deprivation on Skeletal Muscle Protein Synthesis (Lamon et al., 2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7785053/)
+- [RPStrength — Training Volume Landmarks for Muscle Growth (MEV/MAV/MRV)](https://rpstrength.com/blogs/articles/training-volume-landmarks-muscle-growth)
+- [PMC12345604 — Quantification of Weekly Strength-Training Volume Per Muscle Group in Competitive Physique Athletes](https://pmc.ncbi.nlm.nih.gov/articles/PMC12345604/)
+- [Nature Scientific Reports — Effects of Deload Periods on Muscle Hypertrophy and Strength Endurance (2026)](https://www.nature.com/articles/s41598-026-40612-5)

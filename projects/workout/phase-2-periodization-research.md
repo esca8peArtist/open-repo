@@ -259,6 +259,89 @@ A 6-month power development macrocycle for an intermediate athlete (example: rec
 
 ---
 
+## Autoregulation: The Fourth Intensity-Prescription Method
+
+The phase-2 documents have covered RPE and percentage-based loading extensively, but a 2025 network meta-analysis (PMC12336695) comparing all major autoregulation frameworks is worth treating in dedicated depth because its rankings challenge received wisdom.
+
+The four approaches compared were:
+
+1. **Percentage-based resistance training (PBRT).** A fixed percentage of the tested or estimated 1RM. Example: "4×5 at 80%." The percentage is calculated once per training block and stays fixed unless you retest.
+2. **RPE / Reps-in-Reserve (RIR).** Prescription by perceived effort. "4×5 at RPE 8" — choose a load where you finish each set with 2 reps left. Described in detail in the intensity distribution section.
+3. **Velocity-based resistance training (VBRT).** A sensor (e.g., OpenBarbell, Vmaxpro) measures mean concentric velocity on each rep. The set terminates when velocity drops by a prescribed percentage (e.g., 20% velocity loss). This combines objective measurement with autoregulation — when fatigue accumulates, velocity drops, and the set ends.
+4. **Auto-regulatory Progressive Resistance Exercise (APRE).** A protocol-driven method: after a first set at a moderate load, the number of reps completed on a final set determines the next session's load adjustment. It builds progressive overload directly from performance outcome rather than from an externally prescribed number.
+
+**Results.** In the 2025 network meta-analysis (19 RCTs, 438 participants), rankings for back squat 1RM were: APRE (93% probability of being optimal) > RPE (67%) > VBRT (27%) > PBRT (13%). For bench press: APRE (97%) > VBRT (57%) > RPE (30%) > PBRT (16%). APRE showed large effect size advantage over PBRT (SMD = −0.83 for bench press; −1.22 to −0.44 confidence interval).
+
+**The mechanism.** APRE's superiority likely comes from its structural incorporation of training-to-failure sets, which maximally recruit motor units. PBRT at a fixed percentage does not adjust for daily readiness variability. On a strong day at 80%, the lifter leaves potential on the table; on a weak day, 80% may be close to failure. VBRT and RPE both autoregulate but use threshold-based termination — the lifter stops before a defined effort ceiling rather than reaching true failure. APRE periodically requires maximal effort to calibrate the next week's loads.
+
+**Practical caveat.** The 13–19 study evidence base is sufficient for confident recommendations, but "probability of being optimal" in a network meta-analysis is not the same as "this is always better." For beginners and intermediate lifters learning movement patterns, percentage-based training with RPE as a quality check remains appropriate. APRE assumes the lifter has stable technique under fatigue — introducing APRE before technique is well-grooved invites form breakdown during calibration sets. The clinical progression is PBRT (first 6–12 months) → RPE supplementation → APRE for primary compound lifts once technique is reliable.
+
+---
+
+## Concurrent Training: Sequential vs. Simultaneous Periodization
+
+Concurrent training — the combination of resistance training and endurance training within the same program — is the norm for most recreational athletes and a source of confusion about whether strength and aerobic goals interfere with each other. The evidence has become substantially clearer over 2024–2025.
+
+### The Molecular Mechanism (and Why It Is Overstated)
+
+Endurance training activates AMPK (AMP-activated protein kinase), the cellular energy sensor. At high activity levels, AMPK phosphorylates TSC2 to inhibit mTORC1 — the primary anabolic pathway for muscle protein synthesis — and simultaneously activates the ubiquitin-proteasome and autophagy-lysosome systems, promoting protein degradation. This is the theoretical basis for the interference effect: endurance exercise uses the same signaling machinery that resistance training tries to activate.
+
+However, a 2025 semi-systematic review examining 42 studies from 1980–2024 (PMC12885173) found that "training sequence generally shows no consistent association with ultimate gains in endurance, muscle hypertrophy, or maximal strength." Acute molecular responses (AMPK/mTOR phosphorylation ratios) do vary by sequence, but their translation into long-term structural adaptation is non-linear and modulated by training volume, intensity, recovery, and nutrition. In practice, the interference effect is a high-volume phenomenon — it becomes meaningful above approximately 8 hours per week of endurance work combined with serious resistance training.
+
+### Sequential vs. Simultaneous Periodization
+
+There are two structural approaches to managing the interference question:
+
+**Simultaneous concurrent training.** Both endurance and strength qualities are trained throughout the macrocycle, with each session type scheduled to minimize overlap. This is the approach most recreational athletes already use. Evidence: works well for general fitness, produces modest interference in strength outcomes in males (effect size 0.2–0.3) but not females (PubMed 37847373), acceptable for all but the most specialized strength goals.
+
+**Sequential (block) periodization for concurrent athletes.** Alternate macrocycle phases: one phase emphasizes strength (minimal cardio), the next emphasizes aerobic development (strength maintained at MEV). This approach fully eliminates the AMPK/mTOR conflict during each block by eliminating the competing stimulus. Evidence: produces larger gains in both qualities by block's end compared to simultaneous approaches, but requires 3–5 month planning horizons and suits athletes with specific seasonal performance goals rather than year-round general fitness.
+
+**The practical decision rule:**
+
+| Goal | Approach |
+|---|---|
+| General fitness, health | Simultaneous concurrent, low-moderate cardio volume |
+| Endurance sport performance (recreational) | Simultaneous; strength sessions after easy cardio days |
+| Competitive triathlete, cyclist, runner | Simultaneous during build; strength dropped to MEV during race phase |
+| Powerlifter or competitive strength athlete | Sequential: strength-dominant macrocycles; very limited cardio |
+| Cross-functional athlete (CrossFit, tactical) | Simultaneous; minimize same-session overlap; strength first |
+
+**Minimum separation rules.** A 2024 PMC review (PMC11688070) confirmed that 24-hour separation between strength and endurance sessions maximizes independent adaptation; 6 hours is the functional minimum. If same-session is unavoidable, strength before cardio reduces loss to strength adaptation. Cycling produces less lower-body interference than running because its concentric-dominant mechanics impose less eccentric muscle damage.
+
+### How the Periodization Model Interacts With Concurrent Training
+
+For a strength-focused concurrent athlete in a block periodization model, the practical integration looks like this:
+
+- **Accumulation block (high volume, moderate intensity):** Cardio is Zone 2 only, 2–4 sessions per week, scheduled on separate days from primary lifts. Low-intensity cardio does not meaningfully activate AMPK at the levels that suppress mTOR.
+- **Intensification block (lower volume, higher intensity):** Cardio drops to 2 sessions per week; both remain Zone 2. High-intensity cardio is removed entirely to preserve CNS capacity for heavy lifting days.
+- **Realization/peak block:** Cardio is 1 session per week at most, Zone 1–2 only. The goal is to arrive at the test or competition in a low-fatigue state; any cardio that elevates resting heart rate or sleep disruption is removed.
+
+This is not arbitrary conservatism — it reflects the measurable observation that concurrent training with high-intensity cardio in the intensification block slows 1RM expression and delays strength peaking by 1–2 weeks, even when volume is equated.
+
+---
+
+## Sleep, Recovery, and Periodization
+
+Sleep is not a passive break from training — it is the primary arena in which periodization goals are achieved. The structural adaptations that accumulation and intensification blocks aim to create (satellite cell activation, myofibrillar protein deposition, connective tissue remodeling, CNS synaptic consolidation) predominantly occur during deep sleep stages.
+
+### The Quantified Cost of Sleep Deprivation
+
+A 2021 randomized crossover trial (PMC7785053, Lamon et al.) found that one night of total sleep deprivation reduced postprandial muscle protein synthesis by 18% (0.072 vs. 0.059%/hour, p = .040). Testosterone area under the curve dropped 24% (p = .029). Daytime cortisol rose 21%. A single night of poor sleep creates a meaningful catabolic shift.
+
+The implications for periodization are direct: a deload week that includes chronic 5-hour nights does not serve the recovery function a deload is designed to provide. Sleep deprivation during a planned recovery phase means the fatigue accumulates on the hormonal side even as training volume drops. Athletes who report "deloads not working" often have sleep quality as the hidden variable.
+
+### Slow-Wave Sleep and Growth Hormone Timing
+
+Growth hormone secretion is pulsatile and concentrated in the first 2–3 hours of sleep, during the early slow-wave sleep (N3) stages. Approximately 70% of the nightly GH pulse occurs during this window. Disruption of sleep onset — from high-intensity training within 2 hours of bedtime, alcohol, late-night screen exposure, or irregular sleep timing — directly reduces the most anabolically productive sleep window.
+
+**Practical implication for periodization:** The highest-intensity sessions of a training block (heavy singles, test weeks, peaking phases) should ideally be separated from high-stress social or work events that compromise sleep. Scheduling a maximum intensity week during a week of known poor sleep — travel, shift changes, major life events — effectively halves the realization benefit of the phase.
+
+### Sleep and the Deload Decision
+
+The injury prevention protocols document establishes "poor sleep quality despite adequate time in bed" as a deload trigger. This is corroborated by the hormonal mechanism: if testosterone is suppressed 24% by one night of deprivation, five consecutive nights of shortened sleep (common in high-stress accumulation phases) creates a sustained catabolic environment that no amount of correct periodization can overcome. Monitor sleep as a primary recovery indicator, not just as a lifestyle variable.
+
+---
+
 ## When to Use Each Model and How to Switch Between Them
 
 **Decision framework:**
@@ -293,3 +376,8 @@ A 6-month power development macrocycle for an intermediate athlete (example: rec
 - [PMC4961270 — Application of RIR-Based RPE in Resistance Training](https://pmc.ncbi.nlm.nih.gov/articles/PMC4961270/)
 - [Frontiers in Physiology — RPE-Based Prescription RCT (2022)](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.891385/full)
 - [PMC8120977 — Post-Activation Potentiation in Strength Training](https://pmc.ncbi.nlm.nih.gov/articles/PMC8120977/)
+- [PMC12336695 — Autoregulated Resistance Training: Systematic Review and Network Meta-Analysis (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12336695/)
+- [PMC12885173 — Concurrent Training Sequences: Effects, Mechanisms, Influencing Factors (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12885173/)
+- [PubMed 37847373 — Concurrent Training Meta-Analysis by Sex and Training Status (2023)](https://pubmed.ncbi.nlm.nih.gov/37847373/)
+- [PMC11688070 — Optimizing Concurrent Training Session Separation (2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11688070/)
+- [PMC7785053 — Effect of Acute Sleep Deprivation on Skeletal Muscle Protein Synthesis (Lamon et al., 2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7785053/)

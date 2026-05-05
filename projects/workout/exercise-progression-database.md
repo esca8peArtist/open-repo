@@ -284,6 +284,86 @@ Dead bug (bodyweight) → Pallof press (band) → Pallof press (cable) → Singl
 
 ---
 
+## Plateau-Breaking Decision Tree
+
+When progress stalls on a lift, the root cause determines the fix. Applying the wrong intervention wastes 3–6 weeks. Work through this tree before changing anything.
+
+```
+Is bar speed slower than normal on submaximal sets?
+│
+├── YES → Likely CNS fatigue / accumulated fatigue
+│   ├── Have you deloaded in the last 3–4 weeks?
+│   │   ├── NO → Take a deload this week (40–50% volume, same intensity). Resume.
+│   │   └── YES → Fatigue-resistant plateau: reduce volume 20% for 2 weeks and focus on
+│   │             sleep quality. If still stalled after 2 weeks → see "Technique" branch.
+│   └── Check: Are you within 5% of your body's structural ceiling for this lift?
+│       → If yes: periodization model change needed (LP → WUP or WUP → DUP)
+│
+└── NO → Fatigue is not the cause
+    │
+    ├── Have you been at the same rep range for 4+ weeks?
+    │   ├── YES → Accommodation (body has adapted to the specific rep/load pattern)
+    │   │   └── FIX: Rep range shift. If doing 5s, move to 8s for 3 weeks. Or vice versa.
+    │   └── NO → Rep range variation is not the issue
+    │
+    ├── Has technique been recently reviewed?
+    │   ├── NO → Video a set. Most intermediate plateaus have a technical root cause:
+    │   │       squat: depth or bar path / deadlift: hip position off floor / bench: leg drive
+    │   │       Identify the position and drill it with tempo work for 2–3 weeks.
+    │   └── YES, technique is sound → Proceed to load/volume analysis
+    │
+    ├── Is total weekly volume for this movement below 12 working sets?
+    │   ├── YES → Add 2 sets per session for 3 weeks. Volume was below MAV.
+    │   └── NO → Volume is likely not the constraint
+    │
+    ├── Have you tried a variation change?
+    │   ├── NO → Switch primary variation for 4–6 weeks:
+    │   │       Squat → front squat or SSB squat
+    │   │       Deadlift → trap bar or deficit pull
+    │   │       Bench → close-grip or floor press
+    │   │       Pull-up → weighted lat pulldown
+    │   │       Then return to main lift with 5–10% load reset.
+    │   └── YES, variation cycle already done → Check accessory work
+    │
+    └── Is the weak link in the primary accessory muscles?
+        → Back squat stall: usually hamstrings/glutes. Add 3×10 RDL per lower body session.
+        → Bench stall: usually triceps. Add close-grip bench 4×6 for 3 weeks.
+        → Deadlift stall: usually hamstrings or upper back. Add RDL + Pendlay row.
+        → Pull-up stall: usually lats. Add 4×12 lat pulldown 2×/week.
+        → Press stall: usually lateral/rear delts. Add DB lateral raise + face pulls.
+```
+
+**After running this tree, apply only one intervention at a time.** Changing variation AND volume AND accessory work simultaneously makes it impossible to identify what worked. One variable, 3–4 weeks, reassess.
+
+**When the tree fails.** If 3 consecutive variation cycles across 12+ weeks produce no progress on a primary lift, and sleep, nutrition, and consistency are confirmed solid, you have likely approached your near-term genetic ceiling for that lift under your current body weight. Options: (1) Accept the plateau as normal advanced-stage progress and measure in 6-month increments, not weeks. (2) Add 3–5 lb of body weight over 4–6 weeks if hypertrophy is compatible with your goal — more muscle mass typically unlocks a new strength level. (3) Consult a qualified coach for in-person technique assessment.
+
+---
+
+## Volume Landmarks Per Muscle Group: Practical Ceiling Reference
+
+The MEV/MAV/MRV framework provides a structured lens for asking "am I doing enough?" and "am I doing too much?" for each muscle group separately. Values below are drawn from the RP Strength model (Israetel & Hoffmann) and represent reasonable population averages — individual variation is ±30–50%.
+
+| Muscle Group | MEV (sets/week) | MAV Range (sets/week) | MRV Ceiling (sets/week) | Notes |
+|---|---|---|---|---|
+| Quads | 8 | 12–18 | 20–25 | Squatting 3×/week typical; includes all squat-pattern work |
+| Hamstrings | 6 | 10–16 | 18–22 | RDLs, leg curls, Nordic curls combined |
+| Glutes | 4 | 8–16 | 20–25 | Hip thrusts, split squats, abductors; high tolerance |
+| Chest | 8 | 12–18 | 20–22 | Incline + flat; upper chest often needs separate emphasis |
+| Back (lats + mid) | 10 | 14–22 | 25+ | Pulling movements have high fatigue tolerance |
+| Shoulders (lateral) | 6 | 12–20 | 22–26 | High tolerance; often undertrained; face pulls count |
+| Triceps | 4 | 8–14 | 16–20 | Compound pressing provides baseline; isolation adds volume |
+| Biceps | 4 | 8–14 | 16–20 | Compound rows provide baseline |
+| Calves | 8 | 12–16 | 20–24 | Respond to high frequency; low muscle damage per set |
+| Spinal erectors | 4 | 6–10 | 12–14 | Accumulate fatigue from all compounds; monitor carefully |
+
+**Key interpretive rules:**
+1. MEV is not a target — it is a floor. Starting at MEV in a new mesocycle gives headroom to progress volume upward.
+2. MRV is individual and shifts with training age, sleep, and nutrition. The numbers above are landmarks for discovery, not prescriptions.
+3. Volume across exercises accumulates. A squat program already at 16 sets of quad-dominant work per week has minimal room for added leg press before hitting MRV. Count everything, not just the primary lift.
+4. Above MRV, sets still stimulate protein synthesis but the fatigue they generate exceeds the adaptive signal. Performance begins to stagnate or regress — the hallmark of overreaching.
+
+---
+
 ## Realistic Strength Gain Timelines
 
 These ranges are based on Starting Strength LP benchmarks, EliteFTS intermediate progression data, and general sports science literature on novice-to-intermediate strength gains.
@@ -310,3 +390,6 @@ These ranges are based on Starting Strength LP benchmarks, EliteFTS intermediate
 - [PubMed 35044672 — Effects of Periodization on Strength and Hypertrophy](https://pubmed.ncbi.nlm.nih.gov/35044672/)
 - [NASM — Progressive Overload Explained](https://blog.nasm.org/progressive-overload-explained)
 - [RP Training — Volume Landmarks and Mesocycle Guide (Israetel & Hoffmann)](https://arvo.guru/resources/methods/rp-training)
+- [RPStrength — Training Volume Landmarks for Muscle Growth (MEV/MAV/MRV framework)](https://rpstrength.com/blogs/articles/training-volume-landmarks-muscle-growth)
+- [PMC12345604 — Quantification of Weekly Strength-Training Volume Per Muscle Group in Competitive Physique Athletes](https://pmc.ncbi.nlm.nih.gov/articles/PMC12345604/)
+- [PMC12336695 — Autoregulated Resistance Training: Systematic Review and Network Meta-Analysis (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12336695/)
