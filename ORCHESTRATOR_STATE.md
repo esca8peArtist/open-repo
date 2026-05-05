@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-05T05:58:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-05T09:30:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 0.7% (58,904 tokens) | All-models 6.8% | Reset in 162h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 0.7% (58,904 tokens) | All-models 10.8% | Reset in 158h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -53,6 +53,8 @@
 **Status**: Active
 **Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers (no equipment, bands, full gym) × multiple frequencies (3/4/5/6 days), with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols. Awaiting user review and selection.
 ## Active Blocks
+<!-- AUTO:CALIBRATION:START -->
+<!-- AUTO:CALIBRATION:END -->
 ---
 ---
 ### mfg-farm — Test print required before launch prep continues
@@ -66,34 +68,6 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-   - **Business Value**: Reduces May 12 decision uncertainty, enables proactive hedging, protects account equity with defined stopping points
-   - **Token Usage**: 85,988 (stockbot subagent)
-
-### Project Status (Updated)
-
-| Project | Status | Blocker | Next |
-|---------|--------|---------|------|
-| **resistance-research** | ✅ 35 domains complete | User path decision | Awaiting A / A+37 / B selection |
-| **stockbot** | ✅ Engine running, contingency plan ready | — | May 5 13:30 UTC market open (6.5h), May 6-12 contingency monitoring |
-| **mfg-farm** | ✅ Launch package ready | Test print confirmation | Awaiting user confirmation |
-| **seedwarden** | ✅ Phase 2 research complete | Phase 1 launch needed | Awaiting user tag corrections + activation |
-| **cybersecurity-hardening** | ✅ All tiers ready | Tier 1 approval | Awaiting user approval |
-| **open-repo** | ✅ Phase 5 infrastructure | PR #1 merge | Awaiting external review |
-| **off-grid-living** | ✅ Published | Social distribution | Awaiting user execution |
-| **workout** | ✅ Complete | User review | Awaiting user selection |
-
-### Awaiting User Input (Unchanged)
-1. **Resistance-research**: Distribution path decision (A / A+37 / B) — **HIGH PRIORITY / TIME-SENSITIVE**
-2. **Stockbot**: Pre-market monitoring (13:00 UTC today), post-market verification (20:00 UTC)
-3. **Other blockers**: Test print, tag corrections, tier 1 approval, PR merge, social distribution
-
-### Timeline
-- **Current time**: 2026-05-05 05:28 UTC
-- **Market pre-market checklist**: 13:00 UTC (7h 32m away)
-- **Market open**: 13:30 UTC (8h 2m away)
-- **May 12 Gate 1 checkpoint**: 7 days away
-- **Exploration queue**: 3+ active items (stockbot contingency COMPLETE, 2 new items added for next session)
-
 ### Assessment
 - **Autonomous work**: Exploration queue item complete. Next work available: (1) if user provides distribution path decision → Phase 1 execution begins immediately, (2) if stockbot contingency scenarios materialize → decision framework deployed, (3) May 6-12 continuous market monitoring per contingency playbook.
 - **System status**: Stockbot engine healthy, all other projects at external-dependency wait state
@@ -105,3 +79,31 @@
 - **Anytime**: User provides distribution path decision → immediate Phase 1 execution begins (estimated 3-4h autonomous execution)
 
 **Session 732 complete** (2026-05-05 05:28–06:10 UTC) — Token usage: 85,988 (subagent). Orchestration commit pending.
+
+
+---
+
+## Session 743 (2026-05-05 08:55–09:10 UTC) — Orientation Complete: All Projects Blocked, Standing by for Pre-Market Health Check
+
+### Overall Status: ✅ SESSION ORIENTATION COMPLETE — All main projects blocked on user input/actions; exploration queue lower priority given 4h window to market event (13:30 UTC). Pre-market health check scheduled for 13:00 UTC.
+
+**Session Work**:
+1. ✅ **Orientation**: Read ORCHESTRATOR_STATE.md, verified Session 742 just completed (08:55 UTC)
+2. ✅ **Block resolution check**: No active BLOCKED.md items with Resolution field empty
+3. ✅ **INBOX processing**: No new user items in INBOX.md
+4. ✅ **Project status verification**:
+   - **resistance-research** (#1): Framework 100% ready, awaiting user distribution path decision (A / A+37 / B) → Phase 1 execution estimated 3–4h upon decision
+   - **stockbot** (#2): Engine configured, 19 positions scheduled to close at market open (13:30 UTC), AAPL position staying open
+   - **All others**: Blocked on user test print, tag corrections, approvals, external PR review, etc.
+5. ✅ **Exploration queue status**: Items 39–41 complete; 5+ items remain (lower priority than market event)
+6. ✅ **Pre-market scheduling**: Scheduled `/standup` health check for 13:00 UTC via CronCreate (job ID: 89b01da5)
+
+**Reasoning**: All autonomous coding/research work requires user input to unblock. Exploration queue items are available but lower priority than the 4-hour window to market open (13:30 UTC with 19-position close). Rather than start a multi-hour exploration task and interrupt it at market open, best approach is: (1) stand by until 13:00 UTC, (2) execute pre-market health check (engine verification, close order confirmation), (3) monitor market open 13:30 UTC for position fills, (4) post-market analysis at 20:00 UTC.
+
+**Next Actions**:
+- **13:00 UTC**: Execute pre-market health check (`/standup` — engine readiness, close order verification, AAPL position status)
+- **13:30 UTC**: Market open (observe 19-position closes, AAPL hold)
+- **20:00 UTC**: Post-market analysis (fill verification, Gate 1 progress)
+- **Anytime**: If user provides distribution path decision → immediate Phase 1 execution (~3–4h autonomous work)
+
+**Session token usage**: Minimal (orientation + scheduling only, no code/research execution).

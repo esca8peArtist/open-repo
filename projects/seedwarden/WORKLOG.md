@@ -4,6 +4,27 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Session 737 — 2026-05-05 — Endangered Species Series Market Analysis
+
+**Task**: Research and produce a Phase 2 market analysis for the endangered species guide product line, covering competitive landscape, demand signals, pricing strategy, buyer segmentation, seasonality, and launch recommendation.
+
+**Key findings**:
+
+- Niche is opportunity-rich, not saturated. No Etsy seller occupies the "grow endangered plants sustainably" positioning with content depth comparable to Seedwarden. The Davis & Persons physical book ($30–40) is the only substantive competition for cultivation specificity, validating the demand but leaving the digital, accessible guide segment unserved.
+- Macro demand is strong: ginseng market $744M globally (2024), black cohosh $78.5M at 7.8% CAGR, herbal supplement sector $52.4B at 9% CAGR. Strictly Medicinal Seeds explicitly notes goldenseal is "in short supply this year and probably ongoing" — a live demand-exceeds-supply signal for cultivation guides.
+- Price ceiling is $32 for the Appalachian Medicinals 4-guide bundle, $18–22 per standalone guide, $42–48 for a conservation gift bundle. The conservation + cultivation framing supports a premium above the commodity $8–14 Etsy herb guide tier, contingent on content depth and credibility signals.
+- Launch recommendation: bundled Appalachian Medicinals wave (ginseng + goldenseal + black cohosh + ramps), September 2026 for the fall wildcrafting/seed-planting demand peak. Photography outreach to forest farms and botanical gardens should begin immediately upon Phase 2 green light (4–8 week lead time).
+
+**Documents produced**:
+
+| File | Purpose |
+|---|---|
+| `endangered-species-market-analysis.md` | Full market analysis: competitor landscape (6 named competitors), demand signals (macro market, seed supplier constraints, herbalism education sector), pricing ceiling analysis, buyer segmentation (4 segments with WTP estimates), seasonality, risk assessment, revenue projections at 50/100/200 sales/month, launch recommendation |
+
+**Image downloads this session**: 0 — research session.
+
+---
+
 ## Session 733 — 2026-05-05 — Post-Phase-1 Analytics and Customer Cohort Tracking Framework
 
 **Task**: Design analytics and customer cohort tracking framework to activate at Phase 1 launch. Research Etsy API capabilities, design GA4 event schema, define cohort automation logic, and build Phase 2 decision gates.

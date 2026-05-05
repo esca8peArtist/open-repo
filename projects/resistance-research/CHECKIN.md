@@ -1,5 +1,27 @@
 # CHECKIN — Needs Your Input
 
+*Updated: May 5, 2026 (Exploration Queue Item 38 — tracker automation design)*
+
+---
+
+## Completed: Tracker Automation Infrastructure Design (May 5, 2026)
+
+All four design documents for Exploration Queue Item 38 are complete and production-ready. These should be reviewed before any automation work begins.
+
+**Files created**:
+- `projects/resistance-research/tracker-data-source-audit.md` (508 lines) — Audits current sources for all four trackers; identifies 5–7 new automatable sources per tracker with API endpoints, legal feasibility tables, and priority rankings. Every source identified is real, currently live, and free.
+- `projects/resistance-research/tracker-automation-architecture.md` (530 lines) — Full pipeline design: ingestion engine (Python + APScheduler), normalization layer, scope validation, deduplication algorithm, database schema (SQLite/PostgreSQL), governance matrix, and technology stack. Estimated total monthly cost: $6–30.
+- `projects/resistance-research/tracker-dashboard-mockups.md` (480 lines) — Datasette-based interactive dashboard, static PDF generation, institutional briefing format, all four export formats (CSV, JSON, RSS, iCalendar), five visualization options, and WCAG 2.1 accessibility requirements.
+- `projects/resistance-research/tracker-maintenance-playbook.md` (416 lines) — Exact update cadences per tracker (daily vs. 2–3x weekly), role definitions, 10-item validation checklist, false positive detection thresholds, monthly/quarterly source maintenance schedule, archival procedures, community contributions framework, escalation matrix.
+
+**Key design decisions to review**:
+1. Prosecutorial weaponization tracker does not yet exist as a standalone file — needs to be created and seeded from existing entries before automation goes live.
+2. Wave 1 implementation (CourtListener, Federal Register API, DOJ USAO RSS, Press Freedom Tracker API, Regulations.gov) costs $0 and can begin immediately.
+3. The dashboard uses Datasette (open source, no frontend development required) — a strong fit for the current team size.
+4. The automation governance matrix (Section 6.1 of architecture doc) determines which entries auto-publish vs. require human review. Review and confirm the High-confidence auto-approve threshold before implementation.
+
+---
+
 *Updated: April 26-27, 2026 (session 419)*
 
 ---
@@ -40,6 +62,29 @@ Requires user action to distribute — see session notes for channel strategy.
 ---
 
 ## Urgent / Time-Sensitive
+
+### 0a. SCOTUS Callais v. Landry — VRA Section 2 Gutted (April 29, 2026) — NEEDS DOMAIN UPDATES
+
+**Flagged: May 5, 2026 (Phase 2 Candidate 2 research)**
+
+The Supreme Court ruled 6-3 on April 29, 2026, in *Callais v. Landry* (Louisiana redistricting) that Section 2 of the Voting Rights Act now requires proof of intentional racial discrimination, not merely discriminatory effect. This is the most consequential voting rights ruling since *Shelby County v. Holder* (2013) and possibly the most severe single blow to the VRA since its passage.
+
+**Immediate practical effects**:
+- Louisiana's majority-Black congressional district (created under court order after the prior Allen v. Milligan ruling) was struck down as a racial gerrymander
+- Alabama immediately filed an emergency motion seeking expedited review of its pending redistricting appeal on the same theory
+- Georgia Governor Kemp announced he will not order redistricting in response to the ruling (GPB, May 1, 2026)
+- Multiple states now have grounds to redraw majority-minority districts as "racial gerrymanders"
+- The intent standard, rather than the effect standard, is now the operative VRA Section 2 test
+
+**Domains requiring updates**:
+- Domain 1 (Electoral Reform — voting rights section requires full update)
+- Domain 33 (State Legislative Autocratization — mid-decade redistricting analysis changes)
+- Phase 2 Candidate 2 (this document already incorporates the ruling — see Section 1.4 and Section 5.2)
+- Litigation Tracker 2026 — add Callais as new entry
+
+**Sources**: [Democracy Docket: SCOTUS Smothers Voting Rights Act](https://www.democracydocket.com/news-alerts/scotus-smothers-voting-rights-act-greenlighting-racial-discrimination-and-a-rash-of-gop-gerrymanders/); [NPR: Supreme Court Strikes Severe Blow to VRA (April 29, 2026)](https://www.npr.org/2026/04/29/nx-s1-5754657/supreme-court-louisiana-redistricting); [GPB: Kemp Won't Order Redistricting (May 1, 2026)](https://www.gpb.org/news/2026/05/01/kemp-wont-order-redistricting-in-georgia-after-supreme-court-weakens-voting-rights); [Campaign Legal Center: What's Next after VRA Evisceration](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next)
+
+---
 
 ### 0. Section 702 FISA — HOUSE PASSED 235-191 (April 29) — SENATE ACTION PENDING BY MAY 1
 
