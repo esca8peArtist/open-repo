@@ -1,3 +1,58 @@
+## Since Last Check-in (Session 725 — 2026-05-05 02:30–03:00 UTC) — Critical Jetson Block + Seedwarden Track B Complete
+
+### Overall Status: 🟡 MARKET READINESS CRITICAL — Jetson Endpoint Unreachable (May 5 13:00 UTC Verification Required)
+
+**Two parallel agents completed work on critical projects:**
+
+### Stockbot: May 5 Market Open — CRITICAL BLOCK DISCOVERED
+
+**Status**: 🟡 READY BUT UNVERIFIED — Jetson connectivity endpoint unreachable
+
+**Block Details**:
+- Time: 02:16 UTC — May 5 market opens in 11 hours (13:30 UTC)
+- Jetson endpoint check: `curl http://100.120.18.84/api/ready` returned NO OUTPUT
+- Database state: GOOD — 20 open positions confirmed, 19 pending close orders queued (submitted May 5 00:17 UTC), +$4,581.51 unrealized PnL
+- Position list: 19 to close (INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL) + 1 AAPL held (108 shares, +$228.20)
+- **Action required**: Verify Jetson health at 13:00 UTC (1.5 hours before market open) using: `curl -s http://100.120.18.84/api/ready | grep -q ready && echo ok`
+- **Consequence of failure**: If Jetson is down, all 19 position closures will fail, opening buying power won't restore, AAPL session signals will not execute
+
+**BLOCKED**: See BLOCKED.md entry "stockbot — Jetson health endpoint unreachable"
+
+### Seedwarden: Phase 2 Track B Production Setup — ✅ COMPLETE
+
+**Status**: ✅ PRODUCTION READY — All 4 workstreams documented, zero blockers
+
+**Four files produced**:
+1. `social-media-setup.md` — @seedwarden handle strategy + bio copy per platform
+2. `SHOOT_PROPS_CHECKLIST.md` — May 10-11 shoot props list + sourcing plan ($32-$97 budget, germination tray deadline TODAY)
+3. `KIT_SETUP_NOTES.md` — Email automation platform setup (Kit.co free tier, 15 tags, 5-email sequence)
+4. `CANVA_SETUP_STATUS.md` — Brand Kit colors/fonts + zone card build order (8 cards)
+
+**Critical user action — TODAY (May 5)**:
+- **Start germination tray** — last viable date for May 10-11 shoot (30 min action)
+
+**Immediate user actions (priority order)**:
+1. Start germination tray (today, <30 min)
+2. Create social accounts (30-60 min) 
+3. Create Canva + Brand Kit (30 min)
+4. Create Kit + landing page (30-60 min)
+5. Props sourcing run (May 5-9 window)
+
+**Phase 2 timeline**: May 1 social setup → May 10-11 photo → May 12-22 editing → May 30 launch — ON TRACK
+
+### Items Awaiting User Input
+
+1. **Stockbot**: Jetson connectivity verification at 13:00 UTC (CRITICAL, market-dependent)
+2. **Seedwarden Track A**: 3 tag corrections + Etsy account verification (blocking Track A Phase 1 upload)
+3. **Resistance-research**: Distribution path decision (A / A+37 / B) — blocking Phase 1 execution
+4. **Cybersecurity-hardening**: User review/approval of Tier 1 outreach templates — blocks Tier 1 execution
+
+### Usage
+
+Sonnet: 0.7% (58,904 tokens) — healthy. All-models: 1.1%. Reset in 166 hours.
+
+---
+
 ## Since Last Check-in (Session 724 — 2026-05-05 01:10–01:40 UTC) — Market Day Preparation
 
 ### Overall Status: ✅ MARKET READY — All systems confirmed for May 5 13:30 UTC

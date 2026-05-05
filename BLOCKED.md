@@ -29,6 +29,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Jetson health endpoint unreachable (May 5 market open critical)
+**Date blocked**: 2026-05-05
+**Context**: May 5 market open is in 11 hours (13:30 UTC). 19 positions are scheduled to close; 20 total positions confirmed in database with +$4,581.51 unrealized P&L. Pending close orders submitted at May 5 00:17 UTC. Engine runs on Jetson (100.120.18.84), not Pi. Agent verification at 02:16 UTC found that `curl http://100.120.18.84/api/ready` produced no output — either Jetson is unreachable or health endpoint is down.
+**What I need**: Verify Jetson connectivity and engine status at 13:00 UTC (1.5 hours before market open). If endpoint responds with `{"status":"ready","sessions":2}`, proceed; if not, diagnose connection or engine issue.
+**Verify with**: `curl -s http://100.120.18.84/api/ready | grep -q ready && echo ok`
+**Resolution**:
+
+---
+
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.

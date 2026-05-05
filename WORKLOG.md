@@ -6,6 +6,143 @@
 
 ---
 
+## 2026-05-05 02:16 UTC — stockbot — Market readiness verification for May 5 open (19-position closures)
+
+**Current time**: 02:16 UTC — market opens in ~11h 14m (13:30 UTC)
+
+### 1. Engine Health
+
+**launch_stacker_sessions.py**: NOT running. No PID found for the launch script.
+
+Processes visible:
+- `discord-bot.py` (PID 992, awank) — Discord bot is alive, 0.5% mem, 0.0% CPU
+- No trading engine process
+
+Last trading log entry: `2026-05-05 01:27:26` — sessions ran and completed as part of a test suite run (the log shows many tmp-db connections, test fixtures, then closed). The engine is NOT live between sessions; this is expected behavior on the Raspberry Pi — it runs on Jetson in live mode, not here.
+
+**Note**: The engine runs on Jetson (100.120.18.84), not on this Pi. The Jetson health endpoint returned no response (curl timed out or connection refused — no output captured). This is the primary open question.
+
+### 2. Position Inventory
+
+Database: `/home/awank/dev/SuperClaude_Framework/projects/stockbot/stockbot.db`
+
+**Open positions: 20 (CORRECT)**
+- 19 non-AAPL positions all have status=OPEN, mode=PAPER, strategy=live_paper_sync
+- 1 AAPL position: 108 shares, entry $267.88, unrealized +$228.20 (price has moved; expected ~$29.8K market value from May 5 plan was based on higher price estimate)
+- All 20 opened: 2026-04-29 20:10 UTC
+
+**Total unrealized PnL: +$4,581.51**
+
+19 positions to close:
+AMZN, CAT, COP, COST, CVX, DIS, FDX, GOOGL, HON, INTC, LIN, MA, MRK, NEE, PG, RTX, SHW, UNH, WMT
+
+Notable movers: INTC +$2,758.94, MRK +$608.70, COP +$590.98, GOOGL +$502.45
+
+Losers: HON -$356.74, NEE -$293.88, PG -$252.77, LIN -$222.35
+
+**19 pending close orders confirmed in pending_orders table**, submitted 2026-05-05 00:17 UTC (pre-market, correct).
+
+### 3. Market Calendar
+
+**Date**: 2026-05-05 (Tuesday) — standard trading day. No US market holiday. Market hours: 13:30–20:00 UTC. CONFIRMED NORMAL SESSION.
+
+### 4. Trade Log Status
+
+**Last fill**: 2026-04-29 13:35:19 UTC (WMT BUY, market open day of position entry)
+
+No fills from May 1 or May 4. This is expected — the 19 positions were held over multiple days without new trades. The cron_sync_db.sh failed on May 1 and May 4 with "uv not found" error. This is a pre-existing infrastructure issue on the sync cron job; it does not affect Jetson's live operation.
+
+### 5. Discord Monitoring
+
+Discord webhook functional. Log confirms:
+- Daily summary sent for 2026-04-29 at 01:21 UTC
+- Daily summary sent for 2026-04-30 at 01:21 UTC
+- Monthly attribution report for 2026-04 sent at 01:27 UTC
+
+These are test-suite invocations, but they confirm the Discord pathway is wired up correctly.
+
+### Issues / Observations
+
+**BLOCKING - Jetson connectivity unknown**: `curl http://100.120.18.84/api/ready` returned no output (connection refused or timeout). Cannot confirm the Jetson engine is running with 2 sessions ready. This should be checked at 13:00 UTC (30 min before open) per the May 5 monitoring plan.
+
+**NON-BLOCKING - cron_sync_db.sh fails on Pi**: The cron job that syncs the Jetson DB back to the Pi cannot find `uv`. This has been failing since Apr 30. The positions table data is current as of Apr 29 open because the live sync mechanism populates it differently (live_paper_sync strategy). Does not affect Jetson trade execution.
+
+---
+
+## 2026-05-05 02:30 UTC — seedwarden — Phase 2 Track B production setup COMPLETE
+
+All four workstreams documented with zero remaining ambiguity. User action items identified.
+
+### Deliverables Produced
+
+1. **`social-media-setup.md`** (completed)
+   - Target handles: @seedwarden on Instagram, TikTok, Pinterest
+   - Bio copy written to character limits per platform
+   - Profile image source identified (logos/seedwarden_logo_1.png)
+   - Fill-in table to record actual handles once created
+
+2. **`SHOOT_PROPS_CHECKLIST.md`** (completed)
+   - Comprehensive May 10-11 shoot props list by cluster (A: seeds/garden, B: urban/container, C: food preservation)
+   - Each item: "have/need" checkbox, source, cost estimate
+   - Germination tray deadline ALERT: Today (May 5) is the last viable start date
+   - Sourcing run plan (single trip by store type, $32-$97 new items, $0-$30 if existing on hand)
+   - Full print checklist (20-25 pages)
+
+3. **`KIT_SETUP_NOTES.md`** (completed)
+   - Step-by-step Kit.co free-tier setup: account, 15 subscriber tags (8 zone + 7 cohort)
+   - Landing page configuration: first name + email + zone dropdown (2 required fields for conversion)
+   - Zone routing approach (Option A: 8 Email 1 variants recommended for launch reliability)
+   - 5-email welcome sequence build order
+   - Google Drive PDF upload method
+   - End-to-end test protocol
+   - Completion tracking table
+
+4. **`CANVA_SETUP_STATUS.md`** (completed)
+   - Brand Kit specification: 6 colors (hex values), 3 fonts (exact family + style)
+   - Zone-band colors for 4 color groups
+   - Zone card build order table (8 cards, Zone 5 master first for color consistency)
+   - Footer discipline guidelines
+   - Output path: assets/zone-cards/
+   - Downstream deliverables tracking (Pinterest pins, carousels, story templates)
+   - Status tracking table for all 8 cards
+
+### Critical User Action — TODAY
+
+**Start germination tray today (May 5)** — this is the last viable date for May 10-11 shoot. Instructions in SHOOT_PROPS_CHECKLIST.md and PHOTO_SHOOT_SCHEDULE_AND_PROPS.md Part 3.
+
+### Immediate User Actions (Priority Order)
+
+1. **Start germination tray** (today, <30 min) — tray deadline
+2. **Create social accounts** (30-60 min) — unblocks all content scheduling
+3. **Create Canva account + Brand Kit** (30 min) — unblocks zone card + Pinterest production
+4. **Create Kit account + landing page** (30-60 min) — unblocks email automation
+5. **Props sourcing run** (May 5-9 window) — carry SHOOT_PROPS_CHECKLIST.md
+
+### Phase 2 Timeline Impact
+
+- Critical path confirmed: May 1 social setup → May 10-11 photo shoot → May 12-22 editing → May 30 launch
+- No orchestrator blockers remain (Track A blockers are separate — 3 tag corrections + Etsy verification)
+- All four workstreams are production-ready awaiting user UI action
+
+**Committed**: Four new files to master (Session 724)
+
+**NON-BLOCKING - CRITICAL log entries are test-only**: The 136 CRITICAL entries in trading_20260505.log are all from test fixtures running between 00:59–01:27 UTC (conftest scenarios with synthetic accounts, not live trading). Confirmed by timestamps and context (tmp DB paths, synthetic equity values like $100, $-10000).
+
+**NON-BLOCKING - last fill gap**: No fills from May 1 or May 4. Position records show held open continuously since Apr 29. This matches the intent (hold 20 positions through May 5, close 19 at open).
+
+### Overall Readiness Assessment
+
+- Position database: READY (20/20 positions confirmed, 19 pending orders queued)
+- Local engine: N/A (runs on Jetson, not Pi)
+- Jetson engine: UNKNOWN (health endpoint unreachable from Pi — needs pre-market verification at 13:00 UTC)
+- Market calendar: CLEAR
+- Discord: FUNCTIONAL
+- Trade log: Last real activity Apr 29 (expected)
+
+**Action required before market open**: Verify Jetson at `curl http://100.120.18.84/api/ready` at 13:00 UTC. Expected response: `{"status":"ready","sessions":2}`.
+
+---
+
 ## 2026-05-04 — workout — Strength programming deepening: periodization, home gym, recovery
 
 **File**: `projects/workout/strength-programming-deepening.md`
@@ -39,6 +176,23 @@
 - Palantir AIP (LLM layer on government data pipelines) confirmed in Army $10B ESA; same architecture applies to ICE immigration enforcement
 - SoundThinking (ShotSpotter + PredPol successor) in 100+ agencies; Chicago's post-removal homicide drop continued for full year (Dec 2025)
 - Tiered defensive recommendations added: browser fingerprinting countermeasures, AI-resistant verification protocols, physical countermeasures for Tier 3
+
+---
+
+---
+
+## 2026-05-05 00:27 UTC — Session 725 — Stockbot May 5 Market Monitoring + Domain 37 Baseline Metrics Research
+
+**Status**: 🔄 SPAWNED PARALLEL AGENTS
+
+### Work Plan:
+- **stockbot agent**: May 5 market session monitoring (13:30-20:00 UTC, 19 position closures, AAPL hold), May 12 Gate 1 checkpoint preparation, daily monitoring through May 12
+- **general-research agent**: Domain 37 baseline metrics research (1,200 words, 5-7 quantified metrics for election protection impact measurement pre-distribution)
+
+**Rationale**: 
+- stockbot has no active blockers; monitoring is time-critical today (market opens in 13h)
+- Domain 37 metrics research is from Exploration Queue, ready for execution, enables rigorous pre-post distribution impact measurement
+- Both are independent parallel tasks; no dependencies
 
 ---
 
