@@ -23588,3 +23588,34 @@ May 5 monitoring plan: `projects/stockbot/MAY_5_MONITORING_CHECKLIST.md`
    - Total: 25,327 words across 7 documents (4 workout + 3 resistance-research)
    - Both items cleared from Exploration Queue
    - Workout Phase 2 ready for user review; Phase 2 prioritization framework ready for strategic Phase 1→Phase 2 transition planning
+
+---
+
+## 2026-05-05 15:55+ UTC — Session 752 — Critical Issue Discovered + Block Added
+
+**CRITICAL ISSUE — stockbot Engine Crashed at May 5 Market Open**:
+
+During market hours (15:55 UTC), discovered that:
+1. Stockbot engine is not currently running (ps aux shows no process)
+2. May 5 13:30 UTC market open was supposed to close 19 positions + reduce from 67 to 2 sessions
+3. Those closures never executed; instead, engine attempted BUY orders for all 67 tickers
+4. All BUY orders failed with "insufficient day trading buying power" (DTBP=0 from prior margin call)
+5. Root cause: active-sessions.json still contains 67-session configuration from Apr 27-May 1; May 4 reduction plan was never implemented
+
+**Actions Taken**:
+- Created corrected 2-session config file: `active-sessions-2session.json` (contains only AAPL lgbm_ho + AAPL ridge_wf)
+- Added new BLOCKED.md entry with root cause, recovery steps, and verification command
+- Attempted Discord notification (webhook URL not available in local .env; notification failed silently)
+
+**Current State**:
+- 19 positions remain OPEN: INTC, MRK, AMZN, WMT, CAT, COST, UNH, CVX, DIS, RTX, NEE, COP, HON, MA, SHW, PG, LIN, FDX, GOOGL
+- AAPL 108 shares held (correct, per plan)
+- DTBP=0 expected to reset May 6 13:30 UTC market open
+- Engine crash prevents any new trading until restart (cannot trade with DTBP=0 anyway)
+
+**User Action Required** (post-DTBP-reset May 6):
+1. Replace `active-sessions.json` with `active-sessions-2session.json`
+2. Restart engine: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+3. Verify 2 sessions start (AAPL lgbm_ho + AAPL ridge_wf) only
+
+**Next Checkpoint**: May 6 13:30 UTC market open — verify DTBP reset to ~$400K and engine can execute trades
