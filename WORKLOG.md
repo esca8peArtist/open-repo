@@ -6,6 +6,43 @@
 
 ---
 
+## 2026-05-05 14:26–16:15 UTC — Session 748 — Parallel Exploration Queue Work (Items 40, 44, 46)
+
+**Work Completed**:
+
+1. ✅ **Exploration Queue Item 40**: seedwarden Phase 1 Success Metrics & Track B Parallel Execution
+   - Created `phase-1-success-metrics-dashboard.md` (~2,300 words) — 5 Tier 1 metrics with daily tracking, rolling averages, failure triggers keyed to root causes (SEO vs. email capture vs. listing conversion). Success thresholds: Week 1 ≥50 views/listing, Week 2 ≥100 signups, Month 1 2–3% conversion. Dashboard is Excel-ready with anomaly flags.
+   - Created `phase-1-and-track-b-parallel-execution-plan.md` (~2,000 words) — 4-week execution map with float analysis (email automation 5 days, pin production 7 days), three risk gates with threshold-driven decisions, resource allocation per week. Concurrent execution recommended above 8 hours/week effort.
+   - Committed to master (seedwarden agent, b725324)
+
+2. ✅ **Exploration Queue Item 44**: resistance-research Domain 41 Candidate Analysis
+   - Created `ITEM44_DOMAIN41_CANDIDATES.md` (3,500+ words) — Gap analysis identified 3 structural gaps in 40-domain framework (domestic intelligence accountability, disability rights, campaign finance). Five candidates ranked by composite urgency; top 2 (Domestic Intelligence, Disability Rights) with detailed research roadmaps (8-10K word format, 50-60 sources each).
+   - Key findings: (1) PCLOB statutory model is most operationally feasible domestic intelligence reform; Michael German at Brennan Center is key contact. (2) NVRA-SSA connection is novel litigation angle: SSA office closures may violate NVRA voter registration requirements. (3) Four-layer disability exclusion (polling + ID + NVRA/SSA + SSI) is unaddressed frame in existing literature.
+   - Committed to master (general-research agent)
+
+3. ✅ **Exploration Queue Item 46**: stockbot Post-Gate-1 Production Operations Runbook
+   - Created `daily-operations-checklist.md` (2,000 words) — Five segments: pre-market 06:00–08:30 (Jetson health, Alpaca state, DB sync, error scan), at-open 13:15 (final verification), hourly in-market (90 min fill gap alert), post-market 20:00–21:00 (reconciliation, backup), escalation framework (L1/L2/L3 triggers). All steps copy-paste ready.
+   - Created `incident-response-playbook.md` (2,500 words) — Seven scenarios (engine hang, Jetson disconnect, Alpaca timeout, position orphaning, fill gap, order failure, signal gap) with decision trees, remediation paths, and prevention guidance.
+   - Created `monthly-reporting-framework.md` (1,500 words) — Gate 2 pass/near-miss/abort thresholds: 50+ fills (or 15+ round trips), Sharpe ≥0.8, MDD <15% for pass. SQL queries for daily/weekly/monthly reporting. Statistical significance section with t-test and meaningful-improvement thresholds.
+   - Created `24x7-monitoring-dashboard-spec.md` (1,200 words) — Automated watchdog script (market-aware restart prevention), disk/DB monitoring, in-market alerts (fill pace, orphaning, slippage, latency). Terminal dashboard script, cron schedule, log rotation policy (30-day rolling, 7-day compress).
+   - Committed to stockbot submodule (7b721f9)
+
+**Execution Context**:
+- Current time 14:26–16:15 UTC — during US market hours (13:30–20:00 UTC). Stockbot engine running live with known DTBP=0 block (will auto-resolve May 6 at 13:30 UTC market open).
+- All three items are queued exploration work with NO external blockers — optimal to execute while main projects wait for user decisions.
+- Parallel execution: three independent agents launched simultaneously, all completed within ~6 minutes wall-clock time (agent runtime ~6-9 minutes each due to research/writing).
+
+**Project Status Update**:
+- **resistance-research**: Path decision still pending (A / A+37 / B) — Items 39-41 are pre-work for Phase 1 launch. Domain 41 scoping now complete for Phase 2 flexibility.
+- **seedwarden**: Phase 1 metrics complete; enables user decision-making on success thresholds and parallel Track B execution timing.
+- **stockbot**: Gate 1 checkpoint May 12 — operations runbook (Item 46) is non-execution prep. No code/trading changes made. Engine continues running with monitoring infrastructure documented.
+
+**Next Available Work**:
+- Queue currently has 3 items queued (40, 44, 46 now complete; Items 4, 5, 6, 12, 46 still queued on external triggers)
+- Per protocol: if queue falls below 3 active items, add 2–3 new items. Current queue has sufficient items; no new queueing required this session.
+
+---
+
 ## 2026-05-05 14:45–14:56 UTC — Session 746 — Critical Bug Fix + Market Analysis Research
 
 **Critical Issue & Resolution**:
