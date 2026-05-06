@@ -1,3 +1,27 @@
+## Since Last Check-in (Session 844 — 2026-05-06 20:50–21:30 UTC) — CYBERSECURITY-HARDENING PHASE 2 SCENARIOS 2–6 COMPLETE (ALL REMAINING)
+
+### STATUS: **Phase 2 scenario-specific playbook coverage complete**. All 5 remaining Phase 2 scenarios now have dedicated playbooks (5 × 4,200–9,750 words each, 35.4 KB added). Phase 2 scenario content 100% ready for production distribution. Main project blocks unchanged (resistance-research path decision, stockbot architecture decisions, mfg-farm test print). No new blockers. Usage: Sonnet 2.2%; all-models 54.1% (reset in 124h).
+
+**What Changed**:
+- **cybersecurity-hardening Phase 2**: Scenarios 2–6 complete. All 5 remaining playbooks delivered in single session:
+  1. Activist Organizing + Counter-Surveillance (4,200 words) — Babel Street OSINT, drone surveillance, ALPR, physical countermeasures for protests
+  2. Financial Resistance + Privacy (5,500 words) — IRS LCA, FinCEN SAR, Monero privacy, organizational financial hygiene, donor privacy
+  3. Institutional Whistleblowing (7,000 words) — Device forensics, SecureDrop, legal channels, parallel construction risk, device custody
+  4. Journalist Security at Scale (9,750 words) — CBP border searches, PRISM foreign source risk, Signal safety numbers, newsroom protocols, source compartmentalization
+  5. DV Survivor + Advocate Safety (8,939 words) — Stalkerware threat, safety planning framework, device replacement strategy, account separation, court documentation
+- **Delivery format**: All 5 follow established pattern (YAML frontmatter, executive summary, 6–10 substantive parts, implementation tiers, FAQ, primary source citations)
+- **Impact**: Phase 2 scenarios ready for production use. Can be incorporated into Phase 1 distribution materials upon user approval (expanded distribution corpus).
+
+**What's Next**:
+1. **Critical user decisions still pending**:
+   - resistance-research: Pick distribution path (A/A+37/B) → Phase 1 launches in <4 hours
+   - stockbot: Review CODE_REVIEW_SYNTHESIS.md (7 architecture decisions) before code changes proceed
+2. **May 12 checkpoint**: 5 days. Gate 1 pass/fail decision point. All monitoring infrastructure ready.
+3. **Phase 2 expansion**: Tier 2 audience playbooks (labor organizers, academics, etc.) deferred pending Phase 1 execution data. Current Phase 2 scenario coverage sufficient for launch.
+4. **Next autonomous work** (if main projects remain blocked): Phase 3 resistance-research expansion or stockbot code implementation (pending arch decisions).
+
+---
+
 ## Since Last Check-in (Session 843 — 2026-05-06 18:05–20:15 UTC) — CYBERSECURITY-HARDENING PHASE 2 SCENARIO 1 COMPLETE
 
 ### STATUS: **Immediate user input needed**: (1) resistance-research distribution path decision (A/A+37/B) to launch Phase 1 within 4 hours, (2) stockbot architecture decisions review (7 items, CODE_REVIEW_SYNTHESIS.md) before code changes proceed. Autonomous work: cybersecurity-hardening Immigration + Surveillance Evasion Playbook complete (Phase 2 Scenario 1 of 6). All main project blocks unchanged. No new blockers. Usage: Sonnet 2.2%; all-models 53.4% (reset in 125h).
