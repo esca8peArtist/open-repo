@@ -673,4 +673,88 @@ Checkpoint type: [ ] Day 0  [ ] Day 1  [ ] Day 2  [ ] Day 3  [ ] Day 7  [ ] Day 
 
 ---
 
-*Phase 1 Launch Risk Playbook — Created May 6, 2026. Companion document: `failure-mode-decision-tree.md`. Reference before consulting: `PHASE_1_EXECUTION_READINESS.md`, `distribution-checklist-template.md`, `DOMAIN_37_SEQUENCING_PLAN.md`, `DISTRIBUTION_GIST_URLS.md`.*
+## Section 8: Institutional Precedent — What Prior Framework Distributions Reveal
+
+The protocols in Sections 1–7 are grounded in documented patterns from five comparable framework distributions. These precedents answer the same question: what actually breaks, and at what stage?
+
+### Precedent 1: Model Penal Code (ALI, 1962)
+
+The American Law Institute distributed the MPC as a model framework for state criminal law reform after a ten-year drafting process. Two-thirds of states eventually adopted significant portions. But the single most instructive failure is Idaho (1971–1972): Idaho adopted the MPC in its entirety in 1971, and the legislature repealed it two months after it took effect in April 1972.
+
+**Cause of failure**: Three institutional feedback failures occurred simultaneously. (1) Police and prosecutors were not consulted before adoption and actively opposed provisions they found operationally unworkable. (2) The framework's removal of morality-based offenses alienated a politically powerful constituency that had not been engaged. (3) The framework was adopted wholesale — the legislature could not modify individual provisions without revisiting the entire structure, so the only available response to opposition was total repeal.
+
+**Phase 1 application**: The Idaho failure maps directly onto Section 3 (Institutional Feedback Surprises) and the triage rule in Section 3.4. If a Tier 1 contact objects to a specific domain's framing rather than the framework's overall analytical approach, the appropriate response is targeted modification of that domain — not silence and not wholesale revision. Frameworks that cannot absorb targeted feedback create the conditions for repeal-level rejection. The "Phase 2 domain update vs. implementation variation" distinction in Section 3.4 is the operational version of this lesson.
+
+Sources: [Model Penal Code, Wikipedia](https://en.wikipedia.org/wiki/Model_Penal_Code); [The American Model Penal Code, Dressler, University of Pennsylvania Law Review](https://scholarship.law.upenn.edu/faculty_scholarship/2997/)
+
+---
+
+### Precedent 2: ABA Model Rules of Professional Conduct (1983)
+
+The ABA adopted the Model Rules in 1983 and urged all states to adopt them. State adoption was not complete until 2009, when New York adopted a heavily modified version — 26 years after the original.
+
+**Cause of slow adoption**: Four failure modes documented in the literature. (1) Timing mismatch: the 1983 distribution coincided with states actively revising their own advertising rules under *Bates v. State Bar*; the ABA's rules arrived when states were mid-process on the issue they cared about most. (2) Content reinterpretation: several states objected to specific advertising and solicitation provisions and adopted their own modified versions rather than the model text, fragmenting the intended uniformity. (3) California never adopted the Model Rules in the standard form, operating under its own Rules of Professional Conduct throughout — the highest-profile institutional non-adopter. (4) The "heavily modified version" adopted by New York in 2008 meant institutional adoption without content adoption — the label without the substance.
+
+**Phase 1 application**: The ABA pattern maps onto Section 2.3 (Opt-Outs) and Section 3.2 (Requests for Domain Modifications). A contact who modifies the framework before adopting it is an adopter, not a rejector — this is Section 3.4's "implementation variation" category, not a failure requiring correction. The 26-year New York lag illustrates that non-response is not the same as rejection; it may be timing-dependent waiting for the right institutional moment. The follow-up window defined in Section 2.2 (one follow-up at the non-response trigger day, then close and allow re-engagement on the contact's timeline) reflects this lesson.
+
+Sources: [ABA Model Rules of Professional Conduct, Wikipedia](https://en.wikipedia.org/wiki/American_Bar_Association_Model_Rules_of_Professional_Conduct); [A Critical View of the Model Rules, Ohio State Law Journal](https://kb.osu.edu/server/api/core/bitstreams/eb62f18a-8109-5e14-9c8f-16bd85b9c973/content)
+
+---
+
+### Precedent 3: Email Outreach to U.S. Policymakers — Randomized Trial Evidence (2024)
+
+A 2024 four-trial randomized controlled study tested advocacy email tactics with 6,642–7,620 U.S. policymakers per trial, measuring fact-sheet clicks as the engagement signal. Results:
+
+- Control message (direct, purposeful) outperformed all treatment messages across all four trials.
+- Social norms messaging received half the clicks of the control.
+- Numerical data framing (specific percentages, "soft numbers," hard figures) showed no significant effect versus control.
+- Emotional language (low/medium/high intensity) showed no significant effect.
+- Best-performing click rates reached 11% — a ceiling consistent with other policymaker-targeted research distribution studies.
+
+**Phase 1 application**: The 40% target response rate in `success-metrics.md` (2 of 5 Batch 1 contacts responding substantively) is ambitious relative to the empirical baseline of 4.5–11% engagement for policy brief distribution to institutional contacts. This does not mean the target is wrong — Phase 1 contacts are warm, personally tailored, and domain-matched, which the RCT trials were not. But it establishes the floor: a 20% minimum acceptable rate (1 of 5 Batch 1 contacts) is not a soft failure; it is at the top of the empirically documented range for cold policymaker outreach. The "zero responses at Day 14" early warning trigger in Section 7.3 is calibrated correctly: below 20% warrants diagnosis, not panic.
+
+The RCT's finding that simple direct messages outperform advocacy-framed messages has direct application to the Section 2.2 follow-up template. The follow-up template in this playbook ("no pressure either way," specific off-ramp, shorter than the original) reflects this evidence.
+
+Sources: [Email Outreach to US Policymakers on Climate Change, PMC 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11968399/); [Effectively Communicating with Local Policymakers: A Randomized Trial, PMC 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10957535/)
+
+---
+
+### Precedent 4: Policy Brief Dissemination — Randomized Trial Evidence (2024)
+
+A 2024 randomized trial distributed policy briefs on obesity interventions to 7,950 local policymakers; 4.5% completed engagement (331 of 7,950 — the typical response rate for nationally representative surveys of local officials). Key finding: format mattered less than content localization. Policymakers who valued local area impact data were **7.4 times more likely** to use the briefs. All formats performed similarly on overall metrics (87% found briefs understandable, 77% believable, 74% attention-holding). Narrative-only format showed weaker performance on "strong reasoning" (32% vs. 59% for data-supported format).
+
+**Phase 1 application**: The domain-specific, locally anchored personalization in `EMAIL_PERSONALIZATION_GUIDE.md` (leading each email with the domain most relevant to the contact's current work) is supported by this evidence: the 7.4x localization multiplier is the empirical basis for investing 60–90 minutes in Block 4 personalization rather than sending a generic framework email. A non-personalized email to Ryan Goodman predicts a 4.5% engagement rate; a domain-specific, topically localized email to Goodman that leads with his current Just Security litigation coverage predicts something closer to the study's "local data" multiplier on that baseline — still not high in absolute terms, but meaningfully better.
+
+The 4.5% completion baseline also establishes that 0 responses from Batch 1 in the first 72 hours is not a failure signal — it is the expected distribution. The Section 7.3 diagnosis trigger at Day 14 (not Day 3) is calibrated to this baseline.
+
+Sources: [Effectively Communicating with Local Policymakers: Randomized Trial, PMC 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC10957535/)
+
+---
+
+### Precedent 5: Project 2025 Distribution — What High-Volume Framework Distribution Reveals
+
+Heritage Foundation's Project 2025 is the most recent large-scale framework distribution to institutional actors that has documented outcomes. The 920-page framework was released in April 2023. Key distribution pattern observations:
+
+- **Institutional distance as protective framing**: The 2024 Trump campaign publicly distanced itself from Project 2025, stating it was "not the official plan." This distancing did not prevent adoption — within two months of the 2025 inauguration, three-quarters of early executive orders had documented links to the mandate. The lesson: institutional initial resistance (a Tier 1 contact declining to endorse the framework publicly) does not predict whether that contact will incorporate framework concepts into their work. Section 2.4 of this playbook specifically distinguishes between a "polite decline, no reason given" (normal, close the loop) and "decline with redirect to a colleague" (positive routing signal). The Project 2025 pattern suggests that even explicit public declination does not reliably predict private non-use.
+
+- **Volume of content is not an adoption barrier when framing is targeted**: Despite its 920-page length, adoption rates were substantial. The distribution infrastructure focused on pre-placement of framework authors in institutional roles (80+ Project 2025 affiliates placed in administration positions pre-transition). For Phase 1, the analogous mechanism is domain-specific targeting: contacting Ryan Goodman with the judicial independence domain rather than the full 35-domain framework is the targeting equivalent of pre-placing a domain expert in the right institutional conversation.
+
+- **Counter-distribution**: Organizations produced counter-guides (People's Guide to Project 2025, Democracy Forward, June 2024) that accelerated awareness of the original through opposition. For Phase 1, this is a secondary distribution mechanism worth noting: if any Tier 1 contact produces public criticism of the framework, that criticism generates discovery of the framework through the critic's audience.
+
+Sources: [Project 2025, Wikipedia](https://en.wikipedia.org/wiki/Project_2025); [How Much of Project 2025 Has Actually Been Accomplished, 19th News, December 2025](https://19thnews.org/2025/12/project-2025-heritage-foundation-progress/); [People's Guide to Project 2025, Democracy Forward](https://democracyforward.org/wp-content/uploads/2024/06/2024-05_Peoples-Guide-Pro-2025.pdf)
+
+---
+
+### Cross-Precedent Summary: What the Evidence Base Establishes
+
+| Precedent | Primary lesson | Protocol it grounds |
+|-----------|---------------|---------------------|
+| MPC Idaho repeal | Framework-level rejection caused by institutional constituency exclusion; wholesale adoption creates vulnerability | Section 3.4 triage: factual errors vs. policy preferences; domain-specific engagement over wholesale endorsement |
+| ABA Model Rules 26-year adoption | Non-response and modified adoption are both successful outcomes; timing is structural, not personal | Section 2.2: one follow-up, then close; Section 3.2: modifications are implementation variation |
+| Email RCT (policymakers, 2024) | Direct messages outperform advocacy-framed messages; 11% click rate is a realistic ceiling | Section 2.2 follow-up template; 20% minimum threshold calibration in 7.2 |
+| Policy brief RCT (local officials, 2024) | Localization multiplies engagement 7.4x; format matters less than content fit | Block 4 personalization investment; Day 14 diagnosis trigger in 7.3 |
+| Project 2025 distribution | Public declination does not predict private non-use; targeted placement amplifies adoption; opposition generates discovery | Section 2.4 decline assessment; domain-targeting rationale for Batch 1 personalization |
+
+---
+
+*Phase 1 Launch Risk Playbook — Created May 6, 2026. Section 8 (Institutional Precedent) added May 6, 2026. Companion document: `failure-mode-decision-tree.md`. Reference before consulting: `PHASE_1_EXECUTION_READINESS.md`, `distribution-checklist-template.md`, `DOMAIN_37_SEQUENCING_PLAN.md`, `DISTRIBUTION_GIST_URLS.md`.*
