@@ -219,7 +219,7 @@
   - Multi-color is the highest-leverage first addition at $286 with 3-month payback; laser is the second (validates via $100–150 outsource test before buying)
   - CNC remains outsourced: JLCCNC handles all needs below 300 units/month at lower cost than equipment ownership
 **Outcome**: All 6 capability deliverables production-ready. Operator can execute sequentially using trigger conditions in roadmap without guesswork on timing or vendors.
-**Commit**: [pending session 796 commit]
+**Commit**: 6fe0a52a
 
 ---
 
