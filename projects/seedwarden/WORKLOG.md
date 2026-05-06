@@ -4,6 +4,46 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 59 — 2026-05-06 — Phase 2 Analytics and Cohort Segmentation Strategy
+
+**Task**: Design a comprehensive pre-launch analytics and cohort segmentation framework for the
+May 30, 2026 Phase 2 launch. Research task only — no dashboards implemented yet.
+
+**File created**: `projects/seedwarden/phase-2-analytics-strategy.md` (~3,100 words)
+
+**Content covers**:
+- Data source integration: Etsy API (available metrics, rate limits, manual vs. automated
+  collection), GA4 custom events (what fires on Etsy vs. what requires controlled surfaces,
+  UTM parameter conventions, zone-view tracking on Kit landing page), Kit cohort exports
+  (tag structure, monthly export workflow), manual LTV tracking spreadsheet (column spec, update
+  protocol)
+- Cohort segmentation: all four cohorts with Phase 2-specific signal indicators and hypotheses
+  to validate; zone-to-cohort correlation table and monthly tracking method; cross-project
+  segmentation (Phase 1 buyers vs. new Phase 2 buyers vs. Kit pre-customers); seasonal cohort
+  characterization (early adopter, preservation peak, holiday gift)
+- Dashboard templates: daily (10-min signal check with anomaly response logic), weekly (30-min
+  five-section review with product performance, cohort mix, email funnel, and channel tracking),
+  monthly (2-hour deep dive with product classification, Phase 3 readiness scoring, and
+  cohort LTV analysis)
+- Decision triggers: revenue underperformance (daily, monthly, Etsy Ads ROAS thresholds);
+  cohort imbalance (forager below 15%, homesteader above 50%, gift buyer seasonality); zone
+  saturation detection and zone gap response; email underperformance (open rate, click rate,
+  unsubscribe rate triggers with specific corrective actions)
+- Implementation tools: Google Sheets rationale and upgrade path (Looker Studio at 300+ orders,
+  Zapier at $30/month); Etsy API Python client setup reference; GA4 JSON export workflow; Kit
+  manual export scheduling
+- Implementation checklist: pre-launch setup (by May 28), launch day baseline capture (May 30),
+  first month milestones
+- Sample metrics: Phase 2 Month 1 expected ranges (conservative / target / stretch), Week 4
+  checkpoint targets, Phase 3 gate metrics at Day 60
+
+**Cross-references confirmed accurate against**: TRACK_B_FINAL_EXECUTION_GUIDE.md,
+phase-3-product-expansion-roadmap.md, customer-cohort-analysis-framework.md,
+phase-2-post-launch-analytics-framework.md, etsy-ga4-event-tracking.md,
+analytics/monthly-metrics-checklist.md, etsy-analytics-template.csv
+
+---
+
 ## Item 58 — 2026-05-06 — Phase 2 Launch Execution Framework (Full 7-File Build)
 
 **Task**: Create a comprehensive Phase 2 launch execution framework as 7 standalone production documents covering the complete May 30 launch (and June 6 fallback) with day-by-day specificity, field-level setup instructions, quantified success metrics, and scenario-based contingency playbooks.

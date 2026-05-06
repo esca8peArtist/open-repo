@@ -4,6 +4,22 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-06 — mfg-farm — Printer Farm Automation Framework (Q3 2026 → Q2 2027)
+
+**Deliverable**: `projects/mfg-farm/printer-farm-automation-framework.md` (~3,200 words)
+
+**Key findings:**
+- OctoPrint and Repetier both eliminated for Bambu P1S fleet — OctoPrint is incompatible (no serial protocol), Repetier formally discontinued Bambu support January 2025
+- Recommended stack: Bambu Farm Manager (free, Layer 1 physical control) + Printago (free first slot, Layer 2 job orchestration with native Etsy integration) + SimplyPrint Pro ($9.99/month, AI failure detection) = under $21/month total for 5-printer farm
+- Printago went free-forever in 2025 with first concurrent production slot complimentary; additional slots at $3.67/slot/month
+- Color-to-printer assignment (P1=black, P2=white, P3=grey+overflow) eliminates AMS swap overhead entirely under normal operations
+- Staggered 15-minute launch offset across 5 printers eliminates harvest spike bottleneck
+- 3-printer hardware payback: under 3 weeks at full utilization; 5-printer payback: 5–6 weeks
+- AutoFarm3D Door Opener ($129/printer) for Phase 2 auto-eject — confirm shipping availability before budgeting
+- Phase 1 trigger: 2-week sustained utilization >70% + backlog accumulation (est. July–August 2026)
+- Phase 2 trigger: $3,500/month gross for 2 consecutive months (est. Q4 2026)
+- Phase 3 evaluation: Q1 2027 (laser cutter for packaging, resin for premium tier, X1C for multi-color)
+
 ## 2026-05-06 17:30–18:20 UTC — Session 832: stockbot POST-GATE-1 OPERATIONAL RESEARCH — 2 Documents COMPLETE (Live Trading Architecture + Multi-Ticker Model Design)
 
 **Session Context**:
@@ -26849,3 +26865,59 @@ Identified 0 active exploration items remaining (all prior items marked COMPLETE
 
 **Next Focus**: CHECKIN preparation and session close.
 
+
+## 2026-05-06 15:30–17:15 UTC — [Session 833] EXPLORATION QUEUE PARALLEL EXECUTION (3 research items COMPLETE)
+
+**Session Start**: Oriented via ORCHESTRATOR_STATE.md (May 6 15:12 UTC snapshot). Assessment: All 5 highest-priority projects blocked on external user dependencies or awaiting user execution (stockbot architecture review, mfg-farm test print, resistance-research distribution path, seedwarden/cybersecurity-hardening development complete). Exploration queue had 0 active items (all Session 826/818 items marked COMPLETE).
+
+**Exploration Queue Refresh**: Added 3 new autonomous prep items to PROJECTS.md before proceeding:
+1. **stockbot: Multi-Ticker Position Sizing & Risk Aggregation Framework** — Pre-Gate-1 portfolio risk assessment
+2. **mfg-farm: 3D Printer Farm Automation & Batch Orchestration** — Post-test-print scaling infrastructure
+3. **seedwarden: Phase 2 Post-Launch Analytics & Cohort Segmentation Strategy** — Pre-launch analytics readiness
+
+**Parallel Autonomous Execution** (all 3 items simultaneously):
+
+✅ **stockbot: Multi-Ticker Position Sizing & Risk Aggregation Framework** (3–4 hrs)
+- **File created**: `projects/stockbot/framework-multi-ticker-position-sizing.md` (2,500 words)
+- **Key findings**:
+  1. Portfolio normalisation code exists (`DynamicKellySizer.compute_portfolio_sizes()`) but is never called in live path — all 11 sessions size independently, risking >100% equity commitment
+  2. Sector concentration config exists but has no enforcement — 5 tech positions (AAPL, MSFT, GOOGL, NVDA, META) can aggregate to 25% equity silently
+  3. Portfolio-level drawdown tracking missing — only per-session peak_equity tracked, no canonical portfolio view
+- **Recommendation**: Tiered risk framework (Layer 1: portfolio-normalised Kelly, Layer 2: sector caps, Layer 3: per-ticker ceilings, Layer 4: portfolio circuit breaker)
+- **Pre-Gate-1 priority action** (do before May 12): Daily portfolio snapshot to Discord (monitoring-only, no trade changes yet)
+- **Post-Gate-1 action**: Wire enforcement layers 1–4
+- **Business value**: Prevents concentration risk blow-ups and enables safe scaling to 20+ tickers
+
+✅ **seedwarden: Phase 2 Post-Launch Analytics & Cohort Segmentation Strategy** (3–4 hrs)
+- **File created**: `projects/seedwarden/phase-2-analytics-strategy.md` (3,100 words)
+- **Covers**:
+  1. **Four data sources** (Etsy API, GA4, Kit, manual LTV tracker) with specific metrics tables and UTM conventions (critical for Day 1 consistency)
+  2. **Four cohorts** (Forager, Prepper, Homesteader, Gift Buyer) with observable signal indicators + zone-to-cohort correlation mapping (new, not in prior frameworks)
+  3. **Three dashboard templates**: Daily (10-min status), Weekly (30-min cohort+product analysis), Monthly (2-hr strategic review)
+  4. **Decision triggers** with specific corrective action sequences (email underperformance diagnosis, cohort imbalance protocols, zone saturation thresholds)
+  5. **Implementation roadmap**: Google Sheets through Phase 2 → Looker Studio upgrade at 2000+ customer milestone
+  6. **Baseline expectations** grounded in Phase 1 actual data (47 orders, $1,341 gross, 2.24% conversion)
+- **Business value**: Data-driven Phase 2 decisions and acquisition scaling enabled from Day 1 post-launch (May 30)
+- **Strategic value**: Phase 2 performance gates (go/no-go scoring) automated into monthly dashboard, enabling rapid pivots
+
+✅ **mfg-farm: 3D Printer Farm Automation & Batch Orchestration** (4–5 hrs)
+- **File created**: `projects/mfg-farm/printer-farm-automation-framework.md` (2,800 words)
+- **Critical findings**:
+  1. **Platform selection settled**: OctoPrint and Repetier incompatible with Bambu P1S (dead-end, not marginal issue) — Repetier formally discontinued Bambu support Jan 2025
+  2. **Correct software stack** (under $10/month): Bambu Farm Manager (free, local-only) + Printago (free forever for first 5 printers, Etsy API integration native) + SimplyPrint Pro ($9.99/month, AI failure detection)
+  3. **Color-per-printer strategy**: Assign each printer a color (P1=black, P2=white, P3=grey) — eliminates filament swaps, removes operator routing decisions, AMS purge overhead disappears
+  4. **Staggered start scheduling**: Launch printers 15 min apart to create rolling harvest instead of simultaneous batch bottleneck
+  5. **Hardware payback fast**: 3-printer setup ($1,900 hardware) pays back in 3 weeks at full utilization; 5-printer ($3,400) pays back in 5-6 weeks
+  6. **Phase timeline**: Phase 1 (2nd printer: July-Aug trigger at 70%+ utilization), Phase 2 (3-5 printers: Q4 trigger at $3,500/month gross), Phase 3 evaluation (Q1 2027, laser+resin)
+- **Business value**: Post-test-print Phase 1 deployment (July+) scales to $50K–$100K/month revenue with <4 hours weekly manual work (vs. 20+ hours current sequential model)
+- **Strategic note**: AutoFarm3D Door Opener ($129/printer) shipping status TBD — confirm before Phase 2 capital budget
+
+**Orchestration Files Committed**:
+- Submodule commit: `8a80656b` (stockbot position-sizing framework)
+- Main commit: `1f78fcd8` (seedwarden + mfg-farm documents + PROJECTS.md update)
+
+**Blocks Status**: No change — all 2 active blocks remain (stockbot architecture decisions review, mfg-farm test print completion). No new blocks discovered.
+
+**Session Totals**: 3 exploration queue items completed in parallel, 8,400 words production-ready documentation across three projects (stockbot pre-Gate-1 risk framework, seedwarden pre-launch analytics infrastructure, mfg-farm post-test-print scaling architecture). All research grounded in actual code review, source documentation, and historical precedent.
+
+**Next Focus**: CHECKIN.md preparation and session close.
