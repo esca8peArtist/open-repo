@@ -407,6 +407,39 @@ What this does: if the phone is not unlocked within that time window, it automat
 
 ---
 
+### Step 3.2b — Duress PIN Configuration
+
+**What this is and why it matters**: GrapheneOS supports a **duress PIN** — a secondary unlock code that wipes the device when entered. This feature addresses the scenario where you are physically detained and compelled to unlock your device. If law enforcement or border agents force you to provide an unlock code, you can enter your duress PIN instead, which appears to unlock the device normally but immediately triggers a secure wipe of all encrypted data.
+
+**Configuration**:
+
+1. **Create your primary PIN** (as configured in Step 3.1 above)
+2. **Settings > Security > Duress PIN**
+3. **Enter a different PIN** (6+ digits, distinct from your primary PIN — do not reuse digits)
+4. **Confirm the duress PIN**
+
+Your device now has two unlock codes:
+- **Primary PIN**: Unlocks the device normally. Use this when you have control of the situation.
+- **Duress PIN**: Appears to unlock the device, but immediately wipes all encrypted data including Signal databases, photos, documents, and app data. Forensic tools cannot recover this data after secure wipe.
+
+**Important caveats**:
+- **The wipe is not instantaneous** — GrapheneOS erases the encryption keys and writes random data to the storage, which takes seconds to minutes. Do not power off the device or drop it during this wipe process.
+- **The duress PIN is a last resort**, not a primary countermeasure. It is most effective in scenarios where you are physically detained and face immediate coercive pressure to unlock. If you have even a few seconds to power the device off (Option 1, from Step 3.2a above), that is a safer choice because it requires no key to remain on the device.
+- **Fifth Amendment implications**: Your legal right to refuse to provide your primary PIN is contested across circuits but generally recognized. Your right to refuse your duress PIN is less clearly established in law. The duress PIN should not replace your refusal to unlock — it is a backup for scenarios where law enforcement threats or coercion are imminent.
+- **Law enforcement awareness**: Duress PINs are not secret. If law enforcement is aware of the feature, they may attempt to compel BOTH your primary and duress PINs. The duress PIN is a technical barrier, not a legal one, and should not replace legal representation or assertion of your rights.
+
+**When duress PIN is appropriate**:
+- You are in a scenario where powering off is not possible (e.g., device seized while you are detained)
+- Law enforcement is physically present and demanding access to your device
+- You have advance warning that this scenario is possible and you have decided in advance to deploy it
+
+**Verification — Duress PIN**:
+
+- [ ] **Settings > Security > Duress PIN**: Duress PIN is configured and distinct from primary PIN
+- [ ] **Test the duress PIN on a non-sensitive device first** before relying on it. Duress PIN actions are destructive and should not be tested on your primary device.
+
+---
+
 ### Step 3.3 — Network Permission Controls
 
 GrapheneOS adds a feature standard Android lacks: you can deny network access entirely to any app, even if the app technically has the "internet permission."

@@ -232,6 +232,8 @@ Two configurations exist:
 ### Threat from Model
 DOGE has demonstrated willingness to transfer government data to unauthorized servers. FBI and ICE conduct device seizures. Forensic tools (Cellebrite UFED, GrayKey) can extract data from unencrypted or post-seizure devices. Clearview AI's contract with ICE includes biometric matching. The threat at device level is primarily physical seizure and forensic extraction, not remote compromise for most users.
 
+**Mobile biometric identification in field encounters**: ICE's Mobile Fortify application enables agents to conduct biometric identification outside formal processing encounters. The handheld app allows agents in the field to photograph an individual and run contactless fingerprint and facial recognition scans from their smartphones against DHS biometric databases in real time. The app has been used over 100,000 times since launch. This capability extends biometric identification risk from fixed checkpoints (border crossings, detention facilities) to any location where an ICE agent is present — traffic stops, street corners, protests. Countermeasures must account for this mobile, ad hoc deployment context, in addition to device seizure and forensic extraction risks.
+
 ### 4.1 Mobile OS Comparison
 
 **GrapheneOS** (Android-based, Pixel devices only)
