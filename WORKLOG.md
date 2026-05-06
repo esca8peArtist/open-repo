@@ -6,6 +6,54 @@
 
 ---
 
+## 2026-05-06 06:16–06:45 UTC — [Session 812] EXPLORATION QUEUE DEEPENING × 4 NEW ITEMS + ANALYSIS
+
+**Status**: All main projects blocked; executed exploration queue item #1 (stockbot ensemble voting analysis). Added 4 new exploration items to maintain queue depth.
+
+**Work Completed**:
+1. ✅ Added 4 new exploration items to queue (PROJECTS.md lines 773–820)
+   - stockbot: Model Ensemble Voting Analysis & Disagreement Resolution (3-4h)
+   - resistance-research: Domain Network Visualization & Dependency Mapping Tool (3h)
+   - mfg-farm: Cost Optimization Lever Analysis for 100-500 Units/Month Scale (3-4h)
+   - cybersecurity-hardening: May 2026 Threat Landscape Deepening (2-3h)
+
+2. ✅ Completed stockbot ensemble voting analysis (exploration item #1 — COMPLETE)
+   - Deliverable: `projects/stockbot/ensemble-voting-analysis.md` (2,500 words, 6 sections)
+   - Committed to stockbot master (commit 0b947b5)
+   - **Key findings**:
+     - **Feature overlap**: 6 shared base models between LGBM and Ridge; dominant features diverge (model_99/100 in LGBM, model_93 in Ridge)
+     - **Signal correlation**: 100% agreement on single observable event (April 29 entry); n=1 insufficient for statistical significance; need 10+ events (~5+ months to accumulate)
+     - **Voting mechanism**: No cross-session voting currently exists; independent operation is appropriate for data-sparse state; defer Sharpe-weighted voting until 10+ round trips
+     - **Disagreement detection**: Not implemented in code; conflict logging absent; prerequisite for any detection infrastructure
+     - **Recovery strategy**: Override rules documented (15+ HOLD days, 3+ consecutive losses, 3+ consecutive conflict days); primary lever is threshold_multiplier reduction (0.5→0.4→0.3)
+     - **May 12 measurement plan**: First SELL expected May 12-14; six DB queries documented; critical gap is signal logging JSONL not implemented
+   - **Critical blocker identified**: Signal logging (daily signal state persistence) not implemented — blocks accurate agreement rate measurement
+   - **Business value**: Informs multi-ticker expansion strategy post-Gate-1; identifies 1 code gap (signal logging) for future implementation
+
+3. ✅ System state maintained
+   - PROJECTS.md updated with 4 new queue items
+   - Exploration queue now has 4 active items (was 0)
+   - No new blockers; existing 3 blocks unchanged
+
+**Block Status** (unchanged):
+- ⏳ **DTBP Reset**: May 6 13:30 UTC (~7h remaining) — monitor standing by for auto-verify
+- 🔴 **Architecture decisions**: ARCH-1 through ARCH-7 awaiting user review (CODE_REVIEW_SYNTHESIS.md)
+- 🔴 **Distribution path**: Path A / A+37 / B awaiting user selection
+- (Plus 2 others: test print, tags)
+
+**Timeline to Next Work**:
+- **13:30 UTC today** (~7h): DTBP reset verification fires (auto-monitored)
+- **Anytime**: User decisions on distribution path / architecture / test print will unlock parallel autonomous work
+- **Exploration queue items 2-4** available for execution if continued idle time exists before DTBP reset
+
+**Session Metrics**: 
+- Duration: 30 minutes (orientation + exploration execution)
+- Tokens: ~15-20K (subagent execution)
+- Autonomous work: 1 exploration item complete
+- System state: Stable, queue depth restored (4 items), ready for reactive execution
+
+---
+
 ## 2026-05-06 06:07–06:15 UTC — [Session 811] ORIENTATION CONFIRMATION & IDLE READY
 
 **Status**: All autonomous work exhausted. All projects blocked on external events (DTBP reset 13:30 UTC) and user decisions (distribution path, architecture review, test print, approvals).
