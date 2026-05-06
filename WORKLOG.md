@@ -6,6 +6,63 @@
 
 ---
 
+## 2026-05-06 05:42–06:15 UTC — [Session 810] EXPLORATION QUEUE EXPANSION × 3 NEW ITEMS + MARK COMPLETED
+
+**Session Summary**: Continued from Session 809. All projects remain blocked on user decisions and time-dependent events (DTBP reset at 13:30 UTC, ~7h 48m remaining). Marked 4 completed exploration queue items as ✅ in PROJECTS.md, added 3 new items to queue, executed all 3 via parallel subagent spawns.
+
+**Completed Queue Items** (marked ✅ in PROJECTS.md):
+1. ✅ stockbot: May 12 Contingency Planning & Hedging Strategy → `gate-1-contingency-playbook.md` (May 5 05:00 UTC)
+2. ✅ resistance-research: Domain 37 Pre-Distribution Baseline Metrics → `domain-37-baseline-metrics.md` (May 5 03:33 UTC)
+3. ✅ resistance-research: April 30/May 1 Crisis Domain Updates → `domain-25-fisa-702-april-2026-outcome.md` + `domain-19f-war-powers-reform.md` (May 5 01:08-01:09 UTC)
+
+**New Exploration Items** (3 executed in parallel, all complete):
+
+1. ✅ **resistance-research: Phase 2 Domain Research Roadmap** (~3,000 words)
+   - Deliverable: `projects/resistance-research/phase-2-research-roadmap.md`
+   - 9 Phase 2 domain candidates identified and ranked
+   - Key finding: Callais SCOTUS ruling (April 29) gutting VRA Section 2 makes Election Administration Seizure (Domain E) the new Phase 2 priority 1
+   - Healthcare Access Implementation (Domain B) Priority 2 due to HHS guidance deadline June 1
+   - Civil Society Suppression (Domain F) Priority 3 due to OBBBA enactment + Florida HB 1471 July 1
+   - Three research intensity tiers (A: 4–8h updates, B: 8–16h new domains, C: 15–40h foundational)
+   - Parallel timeline viable: Phase 2 research can begin during Phase 1 execution (7-day buffer)
+   - Business value: Eliminates Phase 2 decision bottleneck; enables planning regardless of Phase 1 distribution timing
+
+2. ✅ **stockbot: Post-Gate-1 Decision Tree & Capital Redeployment** (~5,297 words)
+   - Deliverable: `projects/stockbot/post-gate-1-decision-tree.md`
+   - Full decision tree for all Gate 1 outcomes: Pass (Sharpe ≥1.0) | Near-Miss (0.75–0.99) | Far-Miss (<0.75)
+   - Pass scenario: Gate 2 activates with covered call overlay + AMZN/JPM/JNJ expansion, June–July 2026 live deployment
+   - Near-Miss: 3 ordered recovery levers (threshold reduction, HMM regime activation, capital hygiene), June 4 reset, June 12 secondary checkpoint
+   - Far-Miss: 4-step C1/C2/C3/C4 root cause diagnosis before any fix applied; wind-down triggers only if all fixes fail by May 26
+   - Capital redeployment: May 8 automatic close, May 9 cash available (~$111K), deployment per scenario
+   - Risk constraints: 15% per-session cap (5 shares AAPL @ $276), combined 20% portfolio cap ($4K notional), 95% VaR ~$147
+   - Business value: Eliminates May 12 ambiguity; provides executable decision tree for all outcomes
+
+3. ✅ **mfg-farm: Post-Test-Print Execution Plan** (~2,500 words)
+   - Deliverable: `projects/mfg-farm/post-test-print-execution.md`
+   - 3-day supplier activation sequence: Tier 1 (Anycubic, MatterHackers, Push Plastic), follow-up suppliers, contact templates
+   - Safety stock formulas applied to ModRun production (0.10 kg/day @ 20 units/week, 3-week runway buffer)
+   - Daily fulfillment cycle: order intake → print queue (12-up plates, 2.5h/week) → QC (100% visual, 1:20 dimensional) → packaging → USPS
+   - Month-by-month scaling thresholds: Month 1 (20–30 units), Month 2–3 (35–45, thermal printer trigger), Month 4–6 (60–90, 3PL evaluation)
+   - Day 0 master checklist: 6 parallel tracks (test evaluation, design finalization, supplier orders, storage, fulfillment, photography)
+   - Launch capital: $304–382 (vs. pre-estimate $500–700); Month 1–6 net profit $1,200–$5,500/month
+   - Business value: Zero ambiguity on post-test-print sequence; ready for immediate execution
+
+**Session Metrics**:
+- **Duration**: 35 minutes (PROJECTS.md edits + 3 parallel subagent spawns + commit)
+- **Tokens**: ~235K total (resistance-research ~101K + stockbot ~68K + mfg-farm ~66K)
+- **Queue Status**: 7 of 10 identified items now complete or in-progress. 3 new items added. Exploration queue maintained at 3+ active items
+- **Block Status**: Unchanged (DTBP reset 13:30 UTC, architecture review pending, test print pending)
+
+**Next Milestone**: DTBP reset verification at May 6 13:30 UTC (6h 45m remaining). Monitor from Session 789 should auto-verify. All autonomous work now exhausted pending that event.
+
+## 2026-05-06 — [mfg-farm] Post-Test-Print Execution Plan
+
+**Deliverable**: `projects/mfg-farm/post-test-print-execution.md` (~2,500 words)
+
+Synthesized supplier-economics.md, production-scaling-research.md, cost-model-spreadsheet.csv, and supplier-scorecard.csv into one integrated execution document covering: (1) 3-day supplier activation sequence with per-supplier rationale and talking points, (2) safety stock formulas applied to ModRun production parameters across 4 phases, (3) FIFO storage setup and reorder triggers, (4) daily fulfillment cycle (order intake → print queue → QC → packaging → USPS), (5) four-gate QA protocol with failure mode recovery table, (6) month-by-month scaling thresholds with hard decision triggers (second printer, thermal printer, contractor, 3PL), (7) Day 0 master checklist (6 sections, all items executable same day as test print), (8) launch capital projection ($304–382) and Month 1–6 net profit trajectory ($1,200–$5,500/month). Document explicitly does not duplicate the 5 pre-existing post-test-print supporting docs (email templates, Etsy listings, photography brief, SOP, supplier matrix) — it cross-references them and adds the operational integration layer they lack.
+
+---
+
 ## 2026-05-06 04:35–06:50 UTC — [Session 805] EXPLORATION QUEUE EXECUTION × 4 ITEMS COMPLETE
 
 **Session Summary**: Oriented to session state. All projects blocked on user decisions or time-dependent events (DTBP reset at 13:30 UTC, ~8h away). No active code work available. Executed all 4 ready Exploration Queue items via parallel agent spawns.

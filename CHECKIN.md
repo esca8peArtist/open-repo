@@ -1,3 +1,24 @@
+## Since Last Check-in (Session 810 — 2026-05-06 05:42–06:15 UTC) — EXPLORATION QUEUE EXPANSION × 3 NEW ITEMS
+
+### STATUS: All Autonomous Work Exhausted; Awaiting DTBP Reset at 13:30 UTC & User Decisions
+
+**Session 810 Summary**:
+- ✅ Marked 4 completed exploration queue items as ✅ in PROJECTS.md
+- ✅ Added 3 new exploration items to queue (Phase 2 roadmap, Post-Gate-1 decision tree, Post-test-print execution)
+- ✅ Executed all 3 new items in parallel via subagents — all complete and production-ready
+- ⏳ Standing by for DTBP reset verification at 13:30 UTC (6h 45m remaining)
+- 🔴 Awaiting user decisions on 5 priority items (path, architecture, test print, Tier 1, tags)
+- All systems stable; exploration queue maintained at 3+ active items
+
+**Deliverables Completed** (3 exploration items):
+1. ✅ **resistance-research Phase 2 Roadmap** — 9 domain candidates ranked; Callais SCOTUS ruling (April 29) elevates Election Administration as Phase 2 priority 1
+2. ✅ **stockbot Post-Gate-1 Decision Tree** — Full decision tree for Pass/Near-Miss/Far-Miss scenarios with capital redeployment timeline
+3. ✅ **mfg-farm Post-Test-Print Execution** — Day 0 master checklist, supplier sequence, fulfillment workflow, scaling thresholds
+
+**Next Milestone**: DTBP reset verification at May 6 13:30 UTC (auto-monitored). All autonomous code work remains exhausted pending user decisions.
+
+---
+
 ## Since Last Check-in (Session 809 — 2026-05-06 05:34 UTC) — ORIENTATION CONFIRMATION
 
 ### STATUS: All Autonomous Work Exhausted; Awaiting DTBP Reset at 13:30 UTC & User Decisions (unchanged from Session 805-808)
