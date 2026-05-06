@@ -1,3 +1,20 @@
+## Since Last Check-in (Session 842 — 2026-05-06 19:25–20:50 UTC) — EXPLORATION QUEUE PHASE 1 INFRASTRUCTURE + GATE 2/POST-TEST-PRINT PRE-DESIGN COMPLETE
+
+### STATUS: Three exploration queue items delivered (resistance-research Phase 1 distribution infrastructure, stockbot Gate 2 architecture, mfg-farm post-test-print sequence). Phase 1 ready to launch within 4 hours of user path decision. Gate 2 architecture ready for May 12 Gate 1 pass → immediate implementation. mfg-farm post-launch 4-week plan ready for test-print success. All main projects remain blocked on user decisions/actions. No new blockers. Usage: Sonnet 2.2%; all-models 53.0% (reset in 126h).
+
+**What Changed**:
+- **resistance-research**: Phase 1 infrastructure 100% complete. User distribution path decision (A/A+37/B) is now the sole blocker. Can launch in <4 hours from decision (vs. 4+ hours previous).
+- **stockbot**: Gate 2 pre-design complete. 21–31 hour implementation roadmap ready for May 12 upon Gate 1 pass. Architecture review (7 decisions in CODE_REVIEW_SYNTHESIS.md) remains pending user input.
+- **mfg-farm**: Post-test-print 4-week execution sequence complete. Ready to launch immediately upon test-print success. Week-by-week plan + parallel workflow diagram + contingencies.
+
+**What's Next**:
+1. **Immediate decision needed**: resistance-research distribution path (A/A+37/B) → Phase 1 launches next session
+2. **By May 12**: Gate 1 checkpoint decision. May 12 20:00 UTC: run `may12_checkpoint_query.py`, assign scenario, follow next-action list.
+3. **Upon test-print success**: Activate mfg-farm post-launch sequence (Week 1 starts Day 1).
+4. **Pending**: stockbot architecture decisions (7 items, CODE_REVIEW_SYNTHESIS.md) → discuss before code changes proceed.
+
+---
+
 ## Since Last Check-in (Session 841 — 2026-05-06 18:16–18:32 UTC) — CYBERSECURITY-HARDENING PHASE 1 FINAL FIXES COMPLETE
 
 ### STATUS: Two urgent Phase 1 pre-launch fixes implemented (duress PIN documentation + Mobile Fortify threat context). cybersecurity-hardening Phase 1 now production-ready for distribution launch. All main projects remain blocked on user decisions. No new blockers. Usage: Sonnet 2.2%; all-models 52.4% (reset in 127h).
