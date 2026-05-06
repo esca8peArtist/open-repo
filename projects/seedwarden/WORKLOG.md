@@ -4,6 +4,51 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 53 — 2026-05-06 — Phase 2 Production-Ready Execution Framework (5 files)
+
+**Task**: Create a complete, immediately-executable Phase 2 execution framework accounting for all tool integrations and contingency paths. Deadline May 30, 2026.
+
+**Deliverables produced**:
+
+1. `phase-2-day-by-day-execution.md` — Day-by-day execution plan covering all 30 days from May 10–30. Sections: Pre-phase checkpoint (by May 9), Days 1–2 photo shoot (May 10–11 with exact session times, shot sequences, transfer protocol, and per-day success criteria), Days 3–4 image processing and export, Days 5–7 Canva brand kit and master templates, Days 8–11 Canva zone cards Zones 5–6, Days 12–17 Zones 3/4/7/8, Days 15–19 Kit platform setup (parallel track, 5 sub-steps with tool commands), Days 20–22 Kit automation testing, Days 23–25 Zones 9–10 and compositing, Days 26–28 QA/export/scheduling, Days 29–30 launch and monitoring. Every task block includes exact tasks, tool commands, expected outputs, success criteria, and troubleshooting.
+
+2. `tool-integration-map.md` — Complete cross-platform handoff specifications for 5 integration paths: Canva→Kit (PDF Print export, Google Drive hosting, direct download URL format, known failure modes), Canva→Etsy (2400×2400px JPEG, file naming, slot upload workflow, thumbnail verification), Canva→Social (platform-specific dimensions table, resize workflow, Buffer/Later scheduling), Kit→Email Sending (SPF/DKIM checklist, segment configuration, tracking pixel and MPP caveat, unsubscribe compliance), Kit→Analytics (UTM parameter format, zone-level conversion tracking, sequence performance benchmarks). Full tool-switching QA checklist at end.
+
+3. `contingency-paths.md` — Pre-decided recovery paths for 5 disruption scenarios: Scenario 1 (Phase 1 slips to June 6 — revised timeline table, what stays staged, what resets, 7-day slip with zero revenue impact), Scenario 2 (shoot pushed to May 20 — independent tracks enumerated, math showing zero launch-day change), Scenario 3 (reshoot required — one-day backup plan, expedited Canva timeline, partial library launch with priority order), Scenario 4a (Kit account locked — Substack fallback, Gmail fallback for under-50 list, migration checklist), Scenario 4b (Canva offline — Adobe Express and Google Slides fallbacks, migration checklist), Scenario 4c (Etsy issues — image upload troubleshooting, Etsy spacing recommendation to avoid anomalous activity detection), Scenario 5 (launch day overages — go-live with partial library, follow-up email template).
+
+4. `launch-day-script.md` — Minute-by-minute launch script for May 30. T-2h QA checklist (Etsy/Kit/social/zone card verification, 60 min blocked), T-1h communications and metric baseline record, T+0 Etsy launch at 10am with rationale for staggered order, T+2h Kit broadcast verification at 12pm, T+4h social posts at 2pm/4pm, T+24h response handling (three buyer question templates, tech support protocol, metric tracking schedule), rollback procedure (pause broadcast, pause automation, relaunch protocol), success metrics table (launch-day and Week 1), monitoring dashboard daily standup template with alert thresholds.
+
+5. `kit-account-setup-guide.md` — Complete authoritative Kit configuration reference (supersedes KIT_SETUP_NOTES.md where they overlap). Parts: account creation + API key, sender domain configuration (SPF/DKIM DNS records with merge syntax for existing records), email template structure (zone architecture flowchart in text, custom field config, full 15-tag taxonomy with descriptions), landing page build spec (exact field labels, trust text, form-to-tag mapping), automation sequences (zone routing automation, Email 1–5 build specs with click trigger configuration, delay settings, post-purchase sequence deferred-build guidance), Etsy customer import compliance strategy, analytics (weekly review cadence, manual revenue attribution workflow, zone-level conversion analysis), troubleshooting (API rate limits, webhook failures, deliverability diagnosis checklist, wrong-zone subscriber fix).
+
+**Key design decisions**:
+- All 5 documents are cross-referenced to each other and to existing project files — no information is duplicated, only referenced
+- Google Drive (not Kit) hosts zone card PDFs; direct download URL format `uc?export=download&id=` specified explicitly to prevent the most common subscriber-facing failure
+- Kit setup runs in parallel with Canva production starting May 15 — the parallel track means a photo delay does not cascade into the email setup
+- Contingency decisions are pre-made, not left open — each scenario ends with a specific action, not a general guideline
+
+---
+
+## Item 52 — 2026-05-06 — May 2026 Competitor Pricing Landscape & Seasonal Demand Model
+
+**Task**: Full competitive pricing refresh for May 2026 (vs. April 30 baseline in competitor-landscape.md), Etsy algorithm change documentation, seasonal demand modeling for May–August, Phase 2 pricing strategy refinement, and Phase 1 early indicator dashboard.
+
+**Deliverable produced**:
+
+1. `may-2026-competitor-pricing-update.md` — New file (~2,600 words). Sections:
+   - Part 1: Archetype pricing distribution update (Archetypes A/B/C, named competitor refresh including new PLR entries and the GrowSelfSufficiency foraging ebook), whitespace confirmation ($22–35 singles, $35–55 mid-premium bundles, regional guides — all still empty)
+   - Part 2: Three confirmed May 2026 algorithm changes (shipping penalty, natural-language title requirement with 15-word cap, Search Visibility Dashboard); ranking factor status table; Star Seller filter impact; video listing uplift; tag standards
+   - Part 3: Month-by-month demand map (May–August) with keywords, conversion multipliers by season, price elasticity discussion, seasonal bundle theme table
+   - Part 4: Phase 2 pricing strategy with full tier table (updated from April 30 baseline), gift bundle $45–50 tier recommendation, price launch sequence, discount strategy (full price at launch; 20% discount only as conversion-failure course-correction)
+   - Part 5: Phase 1 early indicator dashboard — 7-metric weekly tracking table, Phase 2 prediction logic, 6-criterion go/no-go dashboard (Green/Yellow/Red), sensitivity analysis at 1% vs. 2% conversion rate
+
+**Key new findings**:
+- Digital downloads benchmark is 5–10% conversion on established listings — Seedwarden's Phase 2 2% threshold is a floor, not a target; aim for 4–5% by Month 2
+- Phase 2 Forager Starter Bundle should be repriced from $25 (proposed) to $32–35 to capture the confirmed $35–55 whitespace gap
+- Title audit required before launch: Etsy's May 2026 title algorithm penalizes keyword-stuffed pipe-separated titles; natural language under 15 words is now enforced
+- Video on listings provides a ranking uplift specifically in categories where competitors don't use video — homesteading/foraging qualifies; a simple 15-second PDF scroll video is sufficient
+
+---
+
 ## Item 51 — 2026-05-05 — Phase 2 Endangered Species Market Saturation Analysis
 
 **Task**: Deep Etsy market research for endangered species plant guides (Phase 2 Wave 1 launch scope and pricing strategy). Full rewrite of existing `endangered-species-market-analysis.md` with quantified competitor data, price distribution, cohort LTV comparison, and specific seasonality recommendations.
