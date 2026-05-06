@@ -6,6 +6,38 @@
 
 ---
 
+## 2026-05-06 06:43–07:30 UTC — [Session 813] EXPLORATION QUEUE ITEM #1 COMPLETE: ENSEMBLE VOTING ANALYSIS
+
+**Status**: Executed top item from Exploration Queue (Session 812 top 4 items). Stockbot ensemble voting analysis complete and committed.
+
+**Work Completed**:
+1. ✅ **Ensemble Voting Analysis** — `projects/stockbot/research/ensemble-voting-analysis.md` (605 lines, 2,900 words)
+   - Feature overlap audit: characterized both meta-learners (LightGBM vs. Ridge) sharing 6-model base ensemble
+   - Signal correlation study: measurement framework with agreement rate, Sharpe correlation, disagreement typology
+   - Voting mechanism: current majority-vote + 3 alternatives (weighted Sharpe, confidence-threshold, override)
+   - Disagreement detection & logging: per-signal data collection spec for confidence scores, probabilities
+   - Recovery strategy: 3 scenarios with detection/remediation paths
+   - May 12 measurement plan: gate criteria (agreement ≥70%, Sharpe ≥0.5, MDD ≤20%) + decision matrix
+   - Code sketch + dashboard metrics in appendices
+   - Commit: 83e608f
+
+2. ✅ PROJECTS.md updated
+   - Marked stockbot ensemble voting as COMPLETE
+   - Documented findings + implementation effort (2–3h by May 8)
+
+**Key Findings**:
+- Current voting is conservative (default HOLD on disagreement) — appropriate for small sample size
+- Confidence scores not currently logged — blocks optimal voting mechanisms
+- May 4–12 window provides first meaningful sample (8+ trading days)
+- No immediate blockers; ready for May 8 implementation sprint
+
+**Remaining Queue Items** (3 active):
+1. resistance-research: Domain Network Visualization & Dependency Mapping Tool
+2. mfg-farm: Cost Optimization Lever Analysis for 100-500 Units/Month Scale
+3. cybersecurity-hardening: May 2026 Threat Landscape Deepening
+
+---
+
 ## 2026-05-06 06:16–07:30 UTC — [Session 812] EXPLORATION QUEUE DEEPENING × 4 NEW ITEMS + 3 COMPLETE
 
 **Status**: All main projects blocked; executed exploration queue items #1-3 (stockbot analysis, mfg-farm optimization, resistance-research visualization). Added 4 new items to maintain queue depth; 3 completed, 1 remaining.
