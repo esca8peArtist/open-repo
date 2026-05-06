@@ -4,6 +4,53 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-06 23:55–(end) UTC — Session 853: Phase 2 Domain 37b + Seedwarden Track B Completion
+
+**Session Context**:
+- Continued from Session 852 (Domains E, B, F complete)
+- Spawned two parallel agents for Phase 2 domain research + seedwarden photo credits task
+- All work autonomous; no external blockers
+
+**Autonomous Work Completed**:
+
+✅ **resistance-research: Phase 2 Domain 37b — State Election Security and Election Administration Vulnerability**
+- **Output**: `projects/resistance-research/domains/domain-37b-state-election-security.md` (6,800 words, 43 citations, production-ready)
+- **Eight Key Findings**:
+  1. Vendor concentration: 90% of election technology controlled by 3 companies (ES&S, Liberty Vote, Hart InterCivic); no mandatory source code disclosure; Scott Leiendecker owns both KnowInk (e-pollbook) and Liberty Vote (voting machines) — unreviewed acquisition
+  2. Paper record progress (93% → 98%, 2020–2024) genuine but ballot-marking devices vulnerable to undetected barcode/text discrepancies; voter verification rates low
+  3. Risk-limiting audit (RLA) adoption gap: only 6 states with RLA in statute; others use 1-5% fixed-percentage audits mathematically insufficient for close races
+  4. Nine ERIC departures (Louisiana, Alabama, Missouri, Florida, West Virginia, Iowa, Ohio, Virginia, Texas) created voter database gaps fueling challenge campaigns
+  5. Only 11 states enrolled in paid MS-ISAC post-federal-agreement-end (Sept 30, 2025); battleground states (AZ, GA, MI, NV, PA, WI) lack national threat intelligence
+  6. 53 election-denying candidates running for certification authority in 2026 across 23 states; Arizona acutest case (all three statewide positions threatened)
+  7. FY27 budget proposes permanent elimination ($39.6M CISA election security program); requires affirmative Congressional restoration, not just administrative reversal
+  8. International benchmarks show U.S. fragility is designed: Canada (Chief Electoral Officer statutory independence), Australia (AEC independent statutory structure), Germany (exclusively hand-marked ballots)
+- **Advocacy windows**: Now–June 15 (state appropriations, MS-ISAC coordination, FY27 opposition); July–Aug 7 (RLA legislation, ERIC assistance); Aug 7–Oct 31 (certification season, SOS race support)
+- **Status**: Production-ready, committed to master (commit `a05214cc`)
+
+✅ **seedwarden: Phase 2 Track B — Wild Edibles Quick Reference PDF Complete**
+- **Photo compression**: fallopia-japonica-habit.jpg reduced 9.8 MB → 0.20 MB (98% reduction, 1200x828px)
+- **Product PDF**: `projects/seedwarden/products/wild-edibles-quick-reference.md` + `wild-edibles-quick-reference.pdf` (22 pages, 1.21 MB)
+- **License compliance**: 16 CC BY-SA (Wikimedia), 1 CC0, 1 CC BY-SA 3.0 with named attribution — all credited in photo credits page
+- **Status**: PDF generated, committed to master (commit `4ed31f8f`), ready for Etsy listing
+
+**Project Status After Session 853**:
+- **resistance-research**: Phase 1 launch-ready (35 domains). Phase 2 domain research: 5 of 9 candidates complete (Domains 27, E, B, F, 37b). Remaining candidates: Domains 37b, A, G, C, D (37b now done → 4 of 9 remaining). Immediate distribution urgency dates: June 1 (Domain B HHS guidance window), June 15 (Domain E election officials), July 1 (Domain F Florida HB 1471), June 15 (Domain 37b election security assessment). User distribution path decision (A / A+37 / B) still pending for Phase 1 launch.
+- **seedwarden**: Phase 2 Track B complete. PDF production-ready. No further autonomous work; awaiting user photo strategy decision for future uploads.
+- **stockbot**: No change (May 12 Gate 1 checkpoint; architecture decisions ARCH-1 through ARCH-7 pending user review)
+- **cybersecurity-hardening**: No change (Phase 1/2 complete, awaiting user Tier 1 distribution approval)
+- **mfg-farm**: No change (test print block unchanged)
+
+**Technical Notes**:
+- Domain 37b sourced with 43 citations covering vendor analysis, EAC data, Votebeat state reporting, CISA reports, ProPublica investigations
+- Seedwarden PDF successfully compressed large habit photo and generated production-ready PDF within Etsy 5MB size limits
+- All work autonomous; no external blockers or user decisions required
+
+**Key Metrics**:
+- **Autonomous work this session**: 2 major deliverables (1 Phase 2 domain research + 1 seedwarden product completion)
+- **Phase 2 progress**: 5 of 9 high-priority candidates complete (56% progress); 4 of 9 remaining
+- **Calendar-driven urgency dates identified**: June 1, June 15, July 1
+- **Next checkpoint**: User distribution path decision triggers Phase 1 launch
+
 ## 2026-05-06 23:47–(end) UTC — Session 852: Phase 2 Domain Research Expansion (Domains E, B, F)
 
 **Session Context**:
