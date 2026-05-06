@@ -2,6 +2,141 @@
 
 ---
 
+## May 6, 2026 — Session 814: Exploration Queue Execution (3 parallel research agents, 08:00-08:20 UTC)
+
+**Status**: ✅ ALL 3 EXPLORATION QUEUE ITEMS COMPLETE
+
+### 1. mfg-farm: Post-Test-Print Production Workflow v2.0
+
+**Agent**: general-research
+**File**: `projects/mfg-farm/production-workflow-v1.md` (updated from v1.1 → v2.0, ~3,200 words)
+**Key corrections**:
+- Packaging COGS corrected: $0.15 → $0.57-0.63/unit (MrBoxOnline pricing v1.1 was 4x off)
+- Printer model fixed: X1 Carbon → Bambu P1S (aligns with project context)
+- Per-unit labor timeline added: 40 min active time per 12-clip batch → 4.2 min/unit at 100 units/week
+- Rail-specific post-processing documented (45 sec additional per unit)
+- Week-by-week schedule for Weeks 1-8 added (validation, photography, rhythm-building)
+- Six-month revenue model reconciled: $12,565 cumulative net (Minor adjustment from v1.1 due to corrected assumptions)
+- Corrected packaging BOM with current supplier pricing (MrBoxOnline, Shop4Mailers)
+
+**Business value**: Post-test-print production is now operationally specified with correct costs and timelines. User can execute immediately after test-print validation.
+
+---
+
+### 2. cybersecurity-hardening: May 2026 Advanced Threat Landscape
+
+**Agent**: general-research
+**File**: `projects/cybersecurity-hardening/may-2026-advanced-threats.md` (new, ~3,500 words, 38 sources)
+**Key findings**:
+- **Synthetic identity + voice cloning**: ProKYC tool ($629/year) packages complete attack chain. Detection failed at consumer level. Defensive shift to procedural (code words, two-channel verification).
+- **Supply chain sophistication**: Shai-Hulud/LogoFAIL/BootKitty/Bitwarden share pattern of attacking verification layer itself. UEFI firmware now working attack surface (95% of x86 devices). SBOM + OIDC + firmware patch management required.
+- **Election infrastructure deficit**: CISA workforce -1K, EI-ISAC shut down, NSA Cyber Command group still dormant. States operating on <$1M average federal funding. Russia 2026 influence budget +54%.
+- **Palantir May expansion**: Maven program-of-record (Sept 2026), USDA $300M + $75M bossware, IRS–ICE cross-agency data sharing at D.C. Circuit.
+- **Policy response**: Government Surveillance Reform Act (S.4082, June 12 deadline) — data broker loophole provision directly addresses Palantir pipeline vulnerability.
+
+**Business value**: Tier 1 distribution threat model now current through early May 2026. Template updates identified (family code words, UEFI firmware guidance, IRS relationship-mapping context).
+
+---
+
+### 3. resistance-research: Post-Phase-1 Institutional Adaptation Patterns & Feedback Integration
+
+**Agent**: resistance-research
+**Files created/updated**:
+- `feedback-integration-roadmap.md` v3.0 (~3,471 words, supersedes v2.0)
+  - Sector-specific modification risk classification (LOW/MODERATE/HIGH with response protocols)
+  - Feedback collection decision tree (adoption signals, gap signals, modification artifacts)
+  - Adoption velocity benchmarks by sector and Level (state AGs fastest 2-4mo, law reviews slowest 12-24mo)
+  - Phase 2 decision gates (Gates 1–4 at Months 3/6/9/12) with pass/fail criteria
+  - Fragmentation-prevention protocol (additive versioning, no pull-and-replace model)
+- `post-phase-1-institutional-adaptation-roadmap.md` (existing, production-ready, 5,584 words)
+- `adoption-feedback-template.md` (existing, production-ready, 4 templates)
+
+**Key findings**:
+- Sector adaptation patterns: AGs extract constitutional arguments (LOW risk), think tanks decompose to single-issue (MODERATE risk), law schools adapt via 3 tracks (LOW-CONSTRUCTIVE), journalists internalize without attribution (VERY LOW).
+- High-risk domains for modification: Domain 29 (load-bearing Weissmann qualifier), Domain 37 (CISA figures + derivation methodology), Domain 1 (judicial independence pair reinforcement).
+- Stable domains: Domain 17 (independently verifiable), Domain 9 (explicitly designed for state modification), Domain 27 (primarily descriptive).
+- Two-signal threshold governs base domain updates (prevents single-contact-driven fragmentation).
+- Realistic Phase 1 benchmarks: 5+ Tier 1 citations within 90d (minimum viable), 3+ AG litigation citations within 6mo (target), 5+ law school curriculum incorporations within 12mo (stretch).
+
+**Business value**: Post-Phase-1-launch execution roadmap is operationalized with decision trees, measurement criteria, and sector-specific guidance. Prevents "feedback but no action plan" failure mode.
+
+---
+
+**Session summary**: 3 exploration queue items completed in parallel (3.5 hours wall-clock, all agents concurrent). All deliverables production-ready for immediate downstream use: mfg-farm is post-test-print ready, cybersecurity Tier 1 threat model is current, resistance-research Phase 1 distribution feedback loop is operationalized. No blockers encountered. User execution paths now fully specified for all three projects.
+
+---
+
+## May 6, 2026 — cybersecurity-hardening: May 2026 Advanced Threat Landscape Deepening
+
+**Session type**: General Research Agent — cybersecurity-hardening exploration queue (mid-quarter threat update)
+**File created**:
+- `projects/cybersecurity-hardening/may-2026-advanced-threats.md` (~3,500 words, 38 sources)
+
+**Lead finding**: Voice cloning, synthetic identity kits ($5 on dark markets), and deepfake video have converged into a single end-to-end attack workflow now sold as ProKYC for $629/year that defeats every biometric and liveness-detection countermeasure deployed at consumer scale. Detection has failed; the defensive response is entirely procedural (code words, two-channel verification, Signal safety-number comparison).
+
+**Research areas covered**:
+1. Synthetic identity + voice cloning combo attacks — full convergence architecture; ProKYC as canonical attack-as-a-service example; TD-VIM voice morphing; countermeasure matrix with new template additions.
+2. Supply chain attack pattern analysis — three families (Shai-Hulud ecosystem-wide, LogoFail/BootKitty firmware-level UEFI, Bitwarden CLI trusted-tool targeting); convergent pattern: all attack the trust layer itself; SBOM, OIDC, firmware patching as defensive response.
+3. Election infrastructure defense deficit — CISA 3,400→2,400 workforce; EI-ISAC shut down; NSA Election Security Group dormant as of April 30; Arizona not reporting to CISA; Russia influence budget +54%; foreign threat environment largest since 2016.
+4. Palantir May 2026 — Maven program-of-record (Sept 2026); USDA $300M + $75M bossware; IRS-ICE circuit court litigation; NIH/DOJ/NASA Foundry confirmed; updated footprint table.
+5. Policy response window — Government Surveillance Reform Act (S.4082) with data broker loophole provision; June 12 FISA deadline; IRS-ICE circuit court appeal; seven states advancing polling-place prohibition; concrete organizational actions.
+
+**New guide additions identified**: code word protocol (Tier 1), two-channel wire verification (Tier 2), firmware patch management (Tier 2/3), state election security contact (Tier 2), FISA June 12 advocacy (all tiers).
+
+---
+
+## May 6, 2026 — mfg-farm: Production Workflow v2.0 (post-test-print execution spec)
+
+**Session type**: General Research Agent — mfg-farm project (per task brief)
+**File updated**: `projects/mfg-farm/production-workflow-v1.md` (v1.1 → v2.0, full rewrite, ~3,200 words)
+
+**Lead finding**: Existing v1.1 had two material errors corrected in v2.0: (1) kraft box packaging cost was modeled at $0.15/unit but current MrBoxOnline pricing shows $0.57-0.63/unit at small quantities, shifting per-unit COGS from $1.03 to $1.50 at launch pricing and correcting the net margin from 67% down to 49-55%; (2) the printer model referenced throughout v1.1 was X1 Carbon ($1,199) but all prior mfg-farm docs and the project context specify the Bambu P1S ($699) — corrected throughout.
+
+**New sections added vs. v1.1**:
+- Clock-time per-unit step timeline (Section 1.3) with a 40-minute harvest-to-ship breakdown at 12-clip batch scale
+- Rail-specific post-processing detail (Section 2.5) — 45 sec/unit, rubber bumper pad staging, slot debur
+- Week-by-week production schedule for Weeks 1-8 (within Section 7.1)
+- AutoFarm3D P1S compatibility caveat (Section 6.1) — door opener designed for X1 Carbon; SimplyPrint FarmLoop is the correct automation path for P1S
+- Corrected packaging BOM with current supplier names and pricing (Section 5.1)
+- Corrected per-order net margin table (Section 7.2)
+
+**Confirmed external data points**: MrBoxOnline $0.63/box at 50-count; USPS Ground Advantage zones 1-4 from $5.30 at 1lb; eSUN PLA+ 1kg ~$15.90 on Amazon (Jan 2026). All pricing consistent with existing mfg-farm research corpus except packaging.
+
+---
+
+## May 6, 2026 — resistance-research: Domain Network Visualization & Dependency Mapping Spec
+
+**Session type**: General Research Agent — exploration queue item
+**Files created**:
+- `projects/resistance-research/domains/domain-network-spec.md` (~2,200 words)
+- `projects/resistance-research/domains/domain-dependency-graph.json` (machine-readable, 40 domain nodes, 30+ typed edges)
+
+**Lead finding**: The 35-domain framework has six foundation domains that form the critical reading path (D1 Electoral Reform, D2 Civil Service, D6 Judicial Independence, D29 DOJ Capture, D34 Congressional Fiscal Authority, D35 SCOTUS/Post-Loper). Three genuine circular dependencies exist — D6/D29, D34/D19f/D28, D1/D33 — and should be highlighted rather than hidden in the visualization, as they are among the most important structural findings.
+
+**Spec covers**: Node and edge visual encoding; seven thematic clusters (Voting/Elections, Judiciary, Executive/Accountability, Surveillance/Privacy, Economic/Fiscal, State/Federalism, International/Security); prerequisite sequencing with circular dependency analysis; self-contained D3.js HTML prototype design; GitHub Pages vs. Gist distribution options; email A/B measurement protocol.
+
+**JSON covers**: All 40 domain entries with ID, title, word count, production status (production-ready / scope-doc / proposal-only), cluster assignment, urgency tag, prerequisite list, cross-reference list, structural dependency list, file path, and notes. Includes edge list with typed relationships and circular dependency annotations.
+
+---
+
+## May 6, 2026 — mfg-farm: Cost Optimization Lever Analysis (new)
+
+**Session type**: General Research Agent — mfg-farm project (exploration queue)
+**File created**: `projects/mfg-farm/scaling-cost-levers.md` (~2,800 words)
+
+**Lead finding**: Dominant cost at every volume tier is shipping (54%) + Etsy fees (31%) = 85% of all costs. Filament is only 10%. AOV maximization (single clip → bundle) improves gross margin 31 points with zero supplier change. The file covers six sections: unit economics at 100/200/300/500 units/month, filament bulk purchasing tier transitions, 3PL break-even analysis (not viable below 750 orders/month), printer ROI (2nd printer pays back in 3–5 weeks, 3rd in 2.6 weeks net of contractor), geographic arbitrage (FBA as the correct vehicle for West Coast operators, not physical relocation), and a quantified 9-gate decision tree from 10 kg filament bundles through 3PL engagement.
+
+**Key thresholds documented**:
+- 2nd printer: 50 units/week × 2 consecutive weeks
+- 10 kg filament bundle: >8 kg/month any color
+- Anycubic 50 kg pallet: 300 units/month + AMS pre-qualification
+- 1099 contractor: 300 units/month
+- Amazon FBA: 50 units/week + $400 available capital + 20 Etsy reviews
+- 3rd printer: 100 units/week × 2 consecutive weeks
+- 3PL: 750+ orders/month (outside this document's scope)
+
+---
+
 ## May 6, 2026 — mfg-farm: Expansion Products Manufacturing Specs (full rewrite)
 
 **Session type**: General Research Agent — mfg-farm project
