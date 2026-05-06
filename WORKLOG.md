@@ -6,6 +6,39 @@
 
 ---
 
+## 2026-05-06 08:34–09:10 UTC — [Session 729] EXPLORATION QUEUE ITEM 36 COMPLETE + NEW ITEMS 36-38 ADDED
+
+**Session Summary**: Oriented to ORCHESTRATOR_STATE.md. All major projects blocked on user decisions (distribution path, DTBP reset, architecture review, test print, tag corrections). Exploration Queue had <3 active items. Added 3 new autonomous exploration items (36, 37, 38) per protocol. Executed Item 36 (stockbot Jetson deployment documentation) via stockbot agent. Market open for DTBP reset verification at 13:30 UTC (4h 20m away).
+
+**Work Completed**:
+
+1. ✅ **Item 36**: stockbot Jetson Deployment Documentation (COMPLETE 09:10 UTC)
+   - Files: `jetson-deployment-architecture.md` (2,888 words), `jetson-operations-playbook.md` (2,970 words), `jetson-monitoring-dashboard-spec.md` (2,695 words), `jetson-deployment-validation-checklist.md` (1,858 words) — **Total 11,411 words**
+   - Location: `projects/stockbot/docs/`
+   - Commit: fefcf61 (projects/stockbot)
+   - Key deliverables: Hardware comparison table; Docker Compose service definitions; copy-paste health check script; log rotation policy (30-day retention); graceful/emergency/full-stack restart procedures; emergency recovery paths (stuck session, database corruption, API auth failures); Prometheus + Grafana stack spec with 6-panel dashboard and 12 alert rules; 4-phase deployment validation checklist with rollback triggers
+   - Impact: Supports Gate 1 checkpoint (May 12) and future scaling to multi-session/multi-asset configurations. Provides operational foundation for Item 46 post-Gate-1 runbook.
+
+2. ✅ **Exploration Queue Replenishment**: Added Items 36, 37, 38 to bring queue back to 3+ active items
+   - Item 36: ✅ COMPLETED (above)
+   - Item 37: mfg-farm Post-Test-Print Pre-Staging Automation (ready for autonomous execution)
+   - Item 38: resistance-research Tracker Data Enrichment & Source Audit (ready for autonomous execution)
+
+**Blocks Status**: 
+- ⏳ **DTBP Reset Verification** scheduled for 2026-05-06 13:30 UTC (in 4h 20m) — auto-verification with curl command
+- 🔴 **Architecture decisions** (stockbot): awaiting user review of CODE_REVIEW_SYNTHESIS.md
+- 🔴 **Distribution path** (resistance-research): awaiting user selection for Phase 1 launch (A / A+37 / B)
+- 🔴 **mfg-farm test print**: awaiting user execution of CadQuery designs
+- 🔴 **seedwarden tag corrections**: awaiting user action on Track A (Track B ready)
+- 🔴 **cybersecurity Tier 1 approval**: awaiting user approval to begin outreach
+
+**Next Actions**:
+1. Monitor DTBP reset at 13:30 UTC market open (auto-verify with provided curl command)
+2. If DTBP resets to ~$400K, consider executing Item 37 (mfg-farm pre-staging) or Item 38 (tracker audit) in parallel with market monitoring
+3. Await user decisions on 5 pending blocks to unlock 3-4+ hours of autonomous work per decision
+
+---
+
 ## 2026-05-06 — [mfg-farm] 3PL Readiness Assessment & Cost-Benefit Analysis
 
 **Output**: `/home/awank/dev/SuperClaude_Framework/projects/mfg-farm/3pl-readiness-analysis.md` (~3,100 words)

@@ -136,6 +136,50 @@
 
 ---
 
+### ✅ Item 36: stockbot Jetson Deployment Documentation & Operations Guide (Session 729 COMPLETE)
+**Status**: COMPLETED 2026-05-06 08:34–09:10 UTC
+**Scope**: Comprehensive documentation of Jetson deployment architecture, operational procedures, monitoring infrastructure, and deployment validation checklist
+**Deliverables** ✅ ALL COMPLETE:
+- ✅ `jetson-deployment-architecture.md` (2,888 words) — Hardware specs (Jetson Orin Nano), Docker Compose service definitions, resource allocation, networking, power management, current 2-session AAPL deployment state
+- ✅ `jetson-operations-playbook.md` (2,970 words) — Daily health checks (copy-paste script), log rotation (30-day retention), restart procedures (graceful/emergency/full-stack), emergency recovery (stuck session/database corruption/API auth failures), storage management
+- ✅ `jetson-monitoring-dashboard-spec.md` (2,695 words) — Prometheus + Grafana stack spec, custom metrics (CPU/GPU/MEM/sessions/fills/P&L), 6-panel Grafana dashboard, 12 alert rules with thresholds, baseline collection, seasonal trending
+- ✅ `jetson-deployment-validation-checklist.md` (1,858 words) — 4-phase validation (pre-deploy, post-deploy, first-10-min, rollback triggers), deployment validation script (`scripts/post_deploy_validate.sh`), rollback procedures
+**Key features**: Operational-grade documentation (actual commands, file paths, expected outputs), handles both steady-state operations and failure scenarios, supports 2-session AAPL through future multi-session scaling
+**Commit**: fefcf61 (projects/stockbot)
+**Outcome**: Production-ready operational documentation. Supports May 12 Gate 1 checkpoint and future scaling scenarios. Documentation foundation for Item 46 post-Gate-1 runbook.
+
+---
+
+### Item 37: mfg-farm Post-Test-Print Pre-Staging Automation
+**Status**: ACTIVE — Ready for autonomous execution NOW
+**Trigger**: Autonomous execution (no external blockers; executes independently of test print outcome)
+**Scope**: Design automation and staging materials for rapid post-test-print execution launch
+**Deliverables**:
+- `etsy-listing-staging-guide.md` (2,000 words) — Step-by-step checklist from test-print photos to Etsy listing live: photo editing workflow (Lightroom/Canva), listing copy finalization, tag optimization, pricing final validation, variant setup (color options if multi-color test succeeds)
+- `supplier-outreach-automation.md` (1,500 words) — Email template variants (for 5 top suppliers from Session 544), bulk personalization checklist, negotiation success metrics, response tracking spreadsheet template, timeline (day 1 outreach, expected response window)
+- `fulfillment-dry-run-plan.md` (1,500 words) — Mock fulfillment workflow (pick → pack → label → weigh → ship → photo), cost tracking template, packaging vendor contact list, USPS label API integration checklist
+- `wave-1-launch-timeline-template.md` (1,000 words) — Day-by-day calendar from test-print confirmation to Etsy live (T+0 to T+7), success criteria per day, decision gates, contingency paths
+**Owner**: mfg-farm agent (autonomous execution, estimated 1.5–2 hours)
+**Context**: Test print is user action, but pre-staging materials can be prepared independently. Eliminates delay between test print success and launch execution.
+**Key areas**: Photo editing workflow, supplier contact personalization, packaging logistics, operational readiness testing
+
+---
+
+### Item 38: resistance-research Tracker Data Enrichment & Source Audit
+**Status**: ACTIVE — Ready for autonomous execution NOW
+**Trigger**: Autonomous execution (no external blockers; Phase 1-independent preparation work)
+**Scope**: Deep audit of four trackers' data sources and design Phase 2 enrichment strategy (Item 13 scoping layer)
+**Deliverables**:
+- `tracker-source-audit-detailed.md` (3,500 words) — For each of 4 trackers (first-amendment, environmental-rollbacks, police-brutality, prosecutorial-weaponization): current sources listed, freshness assessment, bias audit, coverage gap analysis, recommended 5+ new sources (FOIA APIs, PACER, news aggregators, academic databases, NGO datasets)
+- `tracker-automation-feasibility-matrix.md` (2,000 words) — Which updates can be automated vs. manual: legal/ethical constraints per source type, API availability, cost analysis, labor hour savings, false-positive risk assessment, rollout sequencing
+- `tracker-visualization-prototype-specs.md` (1,500 words) — UI mockups (geographic heatmap for police-brutality, timeline for first-amendment, trend chart for environmental, network graph for prosecutorial), data format specifications, embedding options for blog/proposal
+- `tracker-measurement-framework.md` (1,000 words) — How to measure tracker impact on Phase 1 distribution; attribution signaling; institutional feedback integration; success metrics per tracker type
+**Owner**: resistance-research agent (autonomous execution, estimated 2–2.5 hours)
+**Context**: Four trackers currently manual; Phase 1 launch will validate utility. Phase 1 → Phase 2 transition requires enrichment strategy. Preparation now enables rapid Phase 2 rollout.
+**Key areas**: FOIA data pipelining; news API integration; PACER court records; academic/NGO database partnerships; privacy-preserving data collection
+
+---
+
 ## Completed Items Archive
 
 *(Archived items from Sessions 571-585)*
