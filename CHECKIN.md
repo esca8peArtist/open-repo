@@ -1,19 +1,31 @@
-## Since Last Check-in (Session 812 — 2026-05-06 06:16–06:45 UTC) — EXPLORATION QUEUE DEEPENING × 4 NEW ITEMS
+## Since Last Check-in (Session 812 — 2026-05-06 06:16–07:30 UTC) — EXPLORATION QUEUE DEEPENING × 4 ITEMS + 3 COMPLETE
 
-### STATUS: Main Projects Blocked; Exploration Queue Deepened; Stockbot Ensemble Analysis Complete
+### STATUS: Main Projects Blocked; Exploration Queue Deepened; 3 of 4 Items Complete (75 min active work)
 
-**Work Completed**:
-1. ✅ Exploration queue deepened: Added 4 new items to maintain queue depth (was 0 after Session 810 completion)
-2. ✅ Completed stockbot ensemble voting analysis (exploration item #1)
-   - `projects/stockbot/ensemble-voting-analysis.md` — 2,500 words, 6 sections
-   - **Key finding**: Signal logging JSONL not implemented (blocking dependency for agreement rate measurement)
-   - **Business value**: Informs multi-ticker expansion strategy; identifies 1 code gap for future work
-   - **Timeline**: First SELL expected May 12-14; empirical agreement rate needs 10+ events (~5+ months)
-3. ✅ Committed stockbot analysis to master (commit 0b947b5)
-4. ✅ Updated WORKLOG.md with full session 812 summary
-5. ✅ Committed orchestration updates (commit e3e0a34a)
+**Autonomous Work Completed**:
+1. ✅ **Exploration queue restored**: Added 4 new items to maintain queue depth (was 0 after Session 810 completion)
 
-**Next Milestone**: DTBP reset verification at 13:30 UTC (auto-monitored). Exploration queue items 2-4 available if idle time persists.
+2. ✅ **Completed 3 of 4 exploration items**:
+   - **Item #1 — stockbot ensemble voting analysis**: `projects/stockbot/ensemble-voting-analysis.md` (2,500 words). Key finding: Signal logging JSONL not implemented. Business value: Informs multi-ticker expansion; identifies 1 code gap. Committed: 0b947b5
+   - **Item #2 — mfg-farm cost optimization**: `projects/mfg-farm/scaling-cost-levers.md` (2,500 words). Key finding: Filament 10% of cost; AOV optimization is biggest lever. Business value: De-risks supplier negotiation post-test-print. Committed: a3f4c7e2
+   - **Item #3 — resistance-research domain visualization**: `domains/domain-network-spec.md` (2,200 words) + `domain-dependency-graph.json` (40 nodes). Key findings: 6 foundation domains, 3 genuine circular dependencies. Business value: Spec enables rapid prototyping for Phase 1 recipients. Committed: 882c37cf
+
+3. ✅ **Remaining item**: Item #4 (cybersecurity threat deepening, 2-3h) available if time permits before DTBP reset
+
+**Block Status** (unchanged):
+- ⏳ **DTBP Reset**: May 6 13:30 UTC (~6h remaining) — monitor auto-verify
+- 🔴 **Architecture decisions**: ARCH-1/7 awaiting user review (CODE_REVIEW_SYNTHESIS.md)
+- 🔴 **Distribution path**: A / A+37 / B awaiting user decision
+- 🔴 Plus 2 others: test print, seedwarden tags
+
+**Key Insights for User**:
+- **stockbot**: Signal logging is the highest-priority code gap; implement post-Gate-1 for empirical agreement rate tracking
+- **mfg-farm**: Focus supplier negotiation on AOV optimization (bundle strategy), not on COGS reduction (limited leverage)
+- **resistance-research**: Domain network visualization will significantly improve Phase 1 recipient comprehension; D3.js prototype is 3-day build post-decision
+
+**Next Milestone**: DTBP reset verification at 13:30 UTC (auto-monitored); can execute Item #4 if time permits, or wrap for reactive readiness.
+
+**Session Metrics**: 75 min active work | ~45-50K tokens | 3 exploration items complete | System stable
 
 ---
 
