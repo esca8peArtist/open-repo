@@ -1543,6 +1543,12 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - ✅ **cybersecurity-hardening: Post-Tier-1 Impact Assessment & Feedback Loop** (COMPLETE, Session 805, 2026-05-06 05:47 UTC) — 3,200-word impact tracker (v3.0) with 6-stage adoption ladder, 3 assessment gates (Day 90, 180, 365), 15 KPIs, incident prevention proxy framework, and Tier 2/3 strategic decision logic. Companion feedback-collection-template.md (2,400 words) with 5-block organizational checklist and 10-module operator dashboard. Key methodological choice: effectiveness = verified attack surface reduction (not incident prevention). Ready for post-Tier-1-launch deployment. Documents: `post-distribution-impact-tracker.md` + `feedback-collection-template.md`.
 
+- **stockbot: May 12–May 26 Post-Gate-1 Execution Roadmap** (estimated 2–3 hrs) — Prerequisite: none (planning work). Scope: Decision tree for Gate 1 outcome (Pass/Near-Miss/Far-Miss), recovery paths, capital allocation for next phase, timeline to live trading launch (if Gate 1 passes), escalation sequence (if fails). Output: `MAY_12_OUTCOME_ROADMAP.md` with go/no-go criteria per scenario. Business value: Eliminates ambiguity on May 13 — immediate action path regardless of outcome.
+
+- **mfg-farm: SKU Design Batch 2 — Quick CadQuery Templates** (estimated 3–4 hrs) — Prerequisite: none (independent design work). Scope: Create parametric CadQuery stubs for 3–4 high-margin products from product-line-strategy.md (magnetic bin labels ~2h, plant markers ~1.5h, pegboard hooks ~1.5h). Cost models already exist. Output: STL-ready designs + simple test-print guide. Business value: Post-headphone-hooks test print, user can immediately test-print Batch 2 products in parallel with ModRun production ramp.
+
+- **seedwarden: Phase 2 Canva Template Prototype & Designer Handoff Guide** (estimated 2–3 hrs) — Prerequisite: none. Scope: Create mockup/design brief showing what the Zone Quick-Start Card should look like in Canva (layout, branding rules, text zones, image placement). Include step-by-step Canva setup guide for user to execute Phase 2. Output: `CANVA_TEMPLATE_PROTOTYPE.md` + sample design file. Business value: Transforms 2-3 hours of user trial-and-error into clear 30-minute execution path.
+
 ---
 
 ## Completed (Archive)
