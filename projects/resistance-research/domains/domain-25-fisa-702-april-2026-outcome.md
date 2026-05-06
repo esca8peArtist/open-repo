@@ -199,13 +199,15 @@ The combined architecture means the Section 702 outcome — whether warrantless 
 - [x] CBDC ban attached: **Yes** (attached to House-passed version; Thune warned "dead on arrival" in Senate — likely to be stripped)
 - [x] SAVE Act attachment: **Excluded** (Trump dropped this condition before floor vote)
 - [x] Commercial data broker loophole: **Still Open** (not addressed in any version)
-- [ ] Senate vote: **Pending** — Thune secured unanimous consent for cloture vote on S.4344 (companion three-year clean bill) no later than May 1, 2026. CBDC provision expected to be stripped in Senate; House will need to accept Senate amendment or go to conference.
-- [ ] Presidential signature: **Pending** — Trump expected to sign; his SAVE Act condition was dropped
-- [ ] New expiration date: April 30, 2029 (if S.1318 / S.4344 passed as written)
-- [ ] Civil liberties challenge filed: EFF/ACLU pre-committed; monitoring for first post-enactment filing
-- [ ] FISC extension ruling: Domain 1 Section 4.2 documents reported FISC one-year extension of existing collection orders — verify and confirm after Senate action
+- [x] Senate vote: **CONFIRMED** — Senate passed 45-day extension by unanimous voice vote (April 30, 2026); House passed 261-111 under suspension of the rules same day. Three-year warrantless renewal (S.1318) NOT enacted.
+- [x] Presidential signature: **CONFIRMED** — Trump signed 45-day extension April 30, 2026, hours before midnight deadline.
+- [x] New expiration date: **June 12, 2026** (45-day extension, not April 30, 2029 three-year renewal)
+- [x] CBDC ban: **STRIPPED** — 45-day extension contains no CBDC provision; Senate rejected House-passed S.1318 specifically over CBDC attachment.
+- [x] FISC declassification deal: **CONFIRMED** — Sen. Wyden secured agreement from Senate Intelligence Committee chairs Cotton and Warner; letter to DNI Gabbard and Acting AG Blanche requires declassification of FISC opinion dated March 17, 2026 within 15 days of extension enactment. DOJ delivered the classified FISC opinion to Congress; public release timeline under Wyden agreement.
+- [ ] Civil liberties challenge filed: EFF/ACLU pre-committed; monitoring for first post-enactment filing (no filing confirmed before May 6)
+- [x] FISC extension ruling: Separate from declassification deal — FISC's administrative collection order extension (reported to extend authority through ~2027) continues regardless of 45-day legislative timeline.
 
-**Update instruction**: Fill Senate vote count and presidential signature date when confirmed. Cross-post to surveillance-tracking.md FISA outcome checklist and PROJECTS.md "Active Trackers" section. If Senate strips CBDC and House accepts, note the final enacted text omits CBDC ban.
+**Status: RESOLVED — 45-day extension enacted April 30, 2026. Next deadline: June 12, 2026. Three-year warrantless renewal NOT enacted. No warrant requirement. No CBDC ban. FISC opinion declassification deal in motion.**
 
 ---
 
@@ -324,6 +326,79 @@ The Freedom Caucus-progressive Democrat coalition that nearly blocked reauthoriz
 - **ACLU**: U.S. v. Hasbajrami (Second Circuit) is the active judicial challenge to warrantless Section 702 back-end queries. This case is the most likely vehicle for a warrant requirement ruling short of a statutory fix.
 - **Just Security / Brennan Center**: Will publish post-enactment legal analysis within 48-72 hours of signing. Monitor for specific challenge vectors.
 - **Wyden-Davidson Government Surveillance Reform Act**: This remains the legislative vehicle for the 2029 reauthorization cycle. The coalition that voted no in 2026 is the political nucleus of the 2029 reform push.
+
+---
+
+## Section 14: Final Statutory Status — 45-Day Extension Enacted; June 12 Deadline
+
+*Added: May 6, 2026 (Session 8xx)*
+
+### 14.1 Confirmed Final Outcome
+
+The April 30, 2026 FISA reauthorization standoff resolved as follows:
+
+**What was enacted:**
+- A 45-day clean extension of Section 702 authority, extending surveillance authority through **June 12, 2026**
+- Passed by the Senate via unanimous voice vote on April 30, 2026
+- Passed by the House 261-111 under suspension of the rules on April 30, 2026
+- Signed by President Trump on April 30, 2026, hours before the midnight deadline
+
+**What was not enacted:**
+- The three-year warrantless renewal (S.1318, passed House 235-191) was not enacted
+- No CBDC ban
+- No warrant requirement
+- No commercial data broker loophole closure
+- No attorney-level approval provisions from S.1318
+
+**The declassification add-on:** The 45-day extension was enabled by a deal Sen. Ron Wyden secured with Intelligence Committee Chair Tom Cotton and Vice Chair Mark Warner. In exchange for passing the short-term extension, Cotton and Warner wrote to DNI Tulsi Gabbard and Acting AG Todd Blanche requiring declassification and public release of a FISC opinion dated March 17, 2026, within 15 days of enactment. DOJ subsequently delivered the classified FISC opinion to Congress. The public release of this opinion — the first FISC opinion public release secured through a legislative deal — is a transparency precedent with implications for future reauthorization negotiations.
+
+### 14.2 Structural Significance of the 45-Day Outcome vs. the Three-Year Renewal
+
+The Senate's rejection of the three-year warrantless renewal in favor of a 45-day extension represents a structural victory for the civil liberties reform coalition:
+
+1. **No long-cycle entrenchment**: A three-year renewal would have locked in the warrantless query authority through 2029, beyond the 2026 and 2028 election cycles. The 45-day extension keeps the reform window open.
+
+2. **June 12 falls in midterm primary season**: The new deadline arrives during congressional primary season and active midterm campaign organizing — a political environment in which surveillance accountability is more salient to voters than in the pre-election calm of April 2026.
+
+3. **The bipartisan reform bloc demonstrated blocking power**: The Freedom Caucus privacy hawks and progressive Democrats together blocked the three-year renewal and forced the Senate's hand. That coalition, though it did not achieve its affirmative goal (a warrant requirement), demonstrated the legislative blocking capacity that gives it leverage in the June reauthorization negotiation.
+
+4. **The CBDC provision as a Senate norm**: The Senate's unanimous rejection of the House's CBDC ban attachment reinforces the norm that unrelated policy riders cannot be carried through intelligence reauthorization under deadline pressure. This is a procedural constraint on future FISA vehicles.
+
+### 14.3 The June 12 Reauthorization Fight
+
+The structural dynamics for the June 12 deadline differ meaningfully from the April 30 fight:
+
+- **Intelligence community leverage**: Two consecutive emergency extensions have heightened intelligence community urgency for a long-term resolution. The FISC's administrative collection order extension (extending authority through approximately 2027 regardless of statutory lapse) reduces the operational risk of a brief lapse, which in turn reduces the intelligence community's political leverage for a clean extension without reform.
+
+- **FISC opinion declassification**: If the March 17, 2026 FISC opinion documents significant compliance failures or novel legal authority claims, its public release could shift the political environment for the June fight in favor of reform.
+
+- **The warrant coalition's ask**: The Lofgren-Davidson-Wyden-Lee Government Surveillance Reform Act remains the reform alternative. If Senate Democrats and libertarian Republicans can hold the blocking coalition together, the June deadline could produce a warrant requirement — or another extension.
+
+- **Reform vs. clean extension prediction**: Intelligence community preference is for a multi-year clean extension. The blocking coalition's minimum ask is a warrant requirement. The most likely June 12 outcome is either: (a) another short-term extension if the impasse holds, or (b) a longer extension with a narrow warrant carve-out for political opposition, journalists, and election officials — the specific categories where the Trump administration's documented targeting creates political liability for Republicans.
+
+### 14.4 Cross-Domain Update from Final Outcome
+
+**Domain 1 (Voting Rights)**: Section 4.2 status — Section 702 did not lapse; three-year warrantless renewal did not pass. The 45-day extension sets a June 12 deadline that requires a further update in Domain 1 Section 4.2 (the "FISA collision" with election security messaging). The June deadline now aligns with the congressional primary season, which intensifies the surveillance/election security messaging collision.
+
+**Domain 6 (Judicial Independence)**: The FISC opinion declassification deal creates a new transparency precedent. Monitor for the public release and its content — if it documents unauthorized collection or legal overreach, it strengthens the Carpenter-doctrine challenge pipeline.
+
+**Domain 13 (Law Enforcement and Civil Liberties)**: The 45-day extension maintains the warrantless query architecture through June 12. The commercial data broker pathway remains completely unaddressed.
+
+**Domain 35 (SCOTUS OT2026)**: EFF/ACLU's pre-committed litigation challenge — likely targeting the U.S. v. Hasbajrami (Second Circuit) vehicle and FISC adversarial proceedings — should be monitored for new filings post-enactment.
+
+Sources:
+- [CNBC: FISA Section 702 — Congress passes short-term extension just before deadline (April 30, 2026)](https://www.cnbc.com/2026/04/30/fisa-section-702-congress-extension.html)
+- [Fox News: Trump signs 45-day FISA extension after Senate rejects House bill](https://www.foxnews.com/politics/trump-signs-stopgap-fisa-extension-after-senate-blocks-long-term-renewal)
+- [Roll Call: Congress clears short-term FISA extension (April 30, 2026)](https://rollcall.com/2026/04/30/congress-clears-short-term-fisa-extension/)
+- [Nextgov: House passes 45-day FISA extension after senators secure declassification deal](https://www.nextgov.com/policy/2026/04/house-passes-45-day-fisa-extension-after-senators-secure-declassification-deal/413250/)
+- [ABC News: Congress passes 45-day FISA extension, sends to Trump for signature](https://abcnews.com/Politics/house-passes-3-year-fisa-reauthorization-face-challenges/story?id=132516696)
+- [Security Boulevard: Congress Punts FISA Section 702 Renewal to June (May 2026)](https://securityboulevard.com/2026/05/congress-punts-fisa-section-702-renewal-to-june/)
+- [Brennan Center: Section 702 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page)
+- [NPR: Congress extends FISA 702 surveillance program for 45 days](https://www.npr.org/2026/04/29/g-s1-119094/congress-fisa-702)
+
+---
+
+*Section 14 added: May 6, 2026 (Session 8xx). Final statutory status confirmed: 45-day extension signed April 30; new deadline June 12, 2026; no three-year renewal; no warrant requirement; CBDC ban stripped; FISC opinion declassification deal secured by Wyden.*
 
 ---
 

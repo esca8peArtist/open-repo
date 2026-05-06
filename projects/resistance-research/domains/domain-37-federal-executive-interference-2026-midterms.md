@@ -440,6 +440,80 @@ Sources:
 
 ---
 
+## Section IX: May 2026 Update — DHS Funding Resolved, ICE Reconciliation 2.0, Callais Redistricting Crisis, and Impeachment Political Context
+
+**Added**: May 6, 2026 (Session 8xx)
+
+### IX.1 DHS Shutdown Ended April 30 — But ICE Funding Left Open as a Separate Track
+
+The 76-day Department of Homeland Security partial shutdown ended April 30, 2026. Trump signed a bill funding most of DHS — FEMA, the Coast Guard, TSA, the Secret Service, and other non-enforcement components — through September 30, 2026. The bill passed the House unanimously.
+
+**What the bill did not fund**: ICE (Immigration and Customs Enforcement) and CBP (Customs and Border Protection) enforcement operations were not included. This was deliberate — the shutdown's origin was a funding dispute over ICE expansion, and Congress resolved the shutdown by funding everything except ICE, leaving ICE on the separate Reconciliation 2.0 track.
+
+**The political logic**: By splitting the DHS funding resolution from ICE funding, Republicans preserved the ability to pass a $71.7 billion ICE/CBP funding package through the reconciliation process (requiring only 51 Senate votes, not 60). ICE enforcement — the primary midterm voter intimidation mechanism documented in Domain 37 — now has a separate legislative vehicle that cannot be filibustered and that is on a June 1, 2026 target date for passage.
+
+**Operational implication**: For the midterm election interference calculus, this development means ICE enforcement capacity has a dedicated, filibuster-proof funding track totaling $38.2 billion through the remainder of Trump's term. The funding consolidation removes the fiscal uncertainty that had been a mild constraint on ICE operational expansion. ICE deployment to swing states documented in Section 8.2 now has an institutional funding base regardless of further congressional standoffs.
+
+Sources: [CBS News: Trump Signs DHS Funding Bill, Ending Record-Breaking 76-Day Shutdown](https://www.cbsnews.com/news/dhs-shutdown-house-vote/); [CNBC: Trump Signs DHS Funding Bill (April 30, 2026)](https://www.cnbc.com/2026/04/30/congress-dhs-tsa-funding.html); [CNN: Congress Votes to Reopen Key Parts of DHS Without ICE Funding (April 30, 2026)](https://www.cnn.com/2026/04/30/politics/dhs-shutdown-funding-bill-house-vote)
+
+### IX.2 Reconciliation 2.0 — $71.7 Billion ICE/CBP Funding Package
+
+The Republican congressional leadership is moving the second FY2026 reconciliation bill on the following timeline:
+
+- **April 29, 2026**: Senate adopted budget resolution 50-48, authorizing up to $70 billion for immigration enforcement
+- **April 30, 2026**: House adopted the same Senate budget resolution with 215-211-1 party-line vote
+- **May 4-5, 2026**: Senate Judiciary and Homeland Security committees released bill text; combined package totals approximately $71.7 billion
+- **May 15, 2026**: Deadline for all four committees (Senate Judiciary, Senate Homeland Security, House Judiciary, House Homeland Security) to submit final reconciliation text
+- **June 1, 2026**: Senate leadership target for final passage
+
+**The bill's content (confirmed May 5 text)**:
+- ICE: ~$38.2 billion (hiring, training, transportation, IT, 287(g) program expansion with local law enforcement)
+- CBP Border Patrol and personnel: ~$22.6 billion
+- Border security technology and AI screening: $3.45 billion
+- Justice Department and Secret Service supplement: ~$2.5 billion
+- Detention capacity expansion embedded in ICE funding
+
+**Midterm election interference implications**: The 287(g) program expansion is the most significant electoral element. The 287(g) program deputizes state and local law enforcement to perform immigration enforcement functions. Expansion of 287(g) partnerships in swing states — funded at scale through this bill — creates exactly the type of law enforcement presence near majority-minority and immigrant-concentrated communities that creates voter intimidation without requiring ICE agents at polling places directly. The intimidation effect is achieved through the known-partner law enforcement, not through direct federal presence.
+
+Sources: [Roll Call: Reconciliation Bill Text Would Fund ICE, CBP, Ballroom Security (May 5, 2026)](https://rollcall.com/2026/05/05/reconciliation-bill-text-would-fund-ice-cbp-ballroom-security/); [The Hill: House Passes Budget Blueprint for Reconciliation 2.0](https://thehill.com/homenews/5856068-budget-blueprint-reconciliation-dhs-farm-bill/); [CBO: Reconciliation Legislation Senate Committees Text (May 4, 2026)](https://www.cbo.gov/publication/62413); [Senate Releases $72 Billion Reconciliation Package — American Action Forum](https://www.americanactionforum.org/insight/senate-releases-72-billion-reconciliation-package/)
+
+### IX.3 Callais Redistricting Impact on Domain 37 Midterm Analysis
+
+The *Callais* redistricting cascade (fully documented in Domain 1 Section 8) changes the Domain 37 midterm interference calculus in a material way that this domain did not anticipate:
+
+**The redistricting sprint is now the highest-leverage pre-November mechanism.** Prior to *Callais*, the administration's most effective electoral interference tools were administrative — voter database construction, SAVE-based purge threats, ICE psychological intimidation. *Callais* adds a legislative redistricting mechanism that can directly shift the number of Republican-held House seats without affecting any individual voter or requiring any federal deployment.
+
+The four states taking confirmed action (Louisiana, Alabama, Tennessee, Florida) are attempting to add 4-8 House seats through map redrawing. Republicans' current House majority is 218-214. Democrats need a net gain of 3 seats. The redistricting sprint, if it succeeds in even half its targets, could create a structural House majority that survives even a wave Democratic midterm.
+
+**The speed advantage is entirely with the Republicans.** States can pass new maps in special sessions within weeks. Legal challenges require months to years to produce final rulings. Even if all redistricting challenges ultimately succeed, the 2026 election may be conducted under maps that courts later strike down — and the election results will stand.
+
+**The administration's role is facilitative, not direct.** This is operationally distinct from SAVE database or ICE deployment: the executive branch does not need to take any action. The Supreme Court's *Callais* ruling was the enabling act; state Republican legislatures and governors are executing independently. DOJ is not suing to block any of these map changes — its former role as a VRA enforcement body is reversed.
+
+**Updated 2026 midterm threat assessment**: The redistricting sprint materially raises the bar for Democrats to retake the House. A net gain of 3 seats remains arithmetically possible but requires winning more competitive races by larger margins when the baseline number of competitive seats is shrinking. The *Callais* redistricting cascade should be incorporated into Domain 37's strategic assessment as a primary threat mechanism, not a secondary one.
+
+### IX.4 Impeachment Political Context — Stakes of the Midterm for Both Parties
+
+The political stakes of the 2026 midterm have been made explicit by Trump himself. On January 6, 2026, Trump predicted that if Republicans lose control of Congress, he would be impeached. Multiple formal impeachment resolutions have been introduced:
+
+- **H.Res.353**: Introduced in the 119th Congress
+- **H.Res.537**: Formal text filed
+- **H.Res.939**: Filed with articles citing specific conduct
+- **Multiple 25th Amendment bills**: Including a 10-page bill introduced by House Judiciary Ranking Member Jamie Raskin establishing a 17-member Section 4 commission
+- **140 Democratic votes** have already been cast to advance articles of impeachment in a procedural context
+
+Senate Minority Leader Schumer has publicly predicted Democrats will win both the Senate and House in 2026. The Campaign Legal Center's Brendan Fischer has characterized the election interference operation as the administration "pre-positioning for post-election certification challenges" — suggesting that the administration's midterm strategy is simultaneously about (a) preserving the House majority to prevent impeachment and (b) building the infrastructure to contest results if that majority is lost.
+
+**The structural logic**: An administration that anticipates impeachment proceedings if it loses the House has maximum incentive to use every available tool — administrative, judicial, redistributing — to prevent that outcome. The Domain 37 threat analysis was written with this incentive structure in mind; the impeachment context confirms that the analysis was correctly calibrated.
+
+Sources: [Al Jazeera: Trump Says He Could Be Impeached If Republicans Lose Congress in Midterms (January 6, 2026)](https://www.aljazeera.com/news/2026/1/6/trump-says-he-would-be-impeached-if-republicans-lose-congress-in-midterms); [Free Speech For People: 140 Members of Congress Vote to Advance Articles of Impeachment Against Trump](https://freespeechforpeople.org/140-members-of-congress-vote-to-advance-articles-of-impeachment-against-trump/); [Congress.gov: H.Res.537 — Impeachment Articles](https://www.congress.gov/bill/119th-congress/house-resolution/537/text); [CNN: With Eyes on House Majority, Democrats Face Trump Impeachment Dilemma](https://www.cnn.com/2026/01/20/politics/democrats-trump-identity-impeachment-2026); [Axios: House Democrats File Long-Shot 25th Amendment Bill Targeting Trump (April 14, 2026)](https://www.axios.com/2026/04/14/trump-25th-amendment-impeachment-iran-democrats)
+
+---
+
+*Section IX added: May 6, 2026 (Session 8xx)*
+*Key findings: DHS shutdown resolved April 30 but ICE on separate $71.7B reconciliation track (June 1 passage target); Callais redistricting sprint now the highest-leverage pre-November mechanism (4-8 seat impact); impeachment political context confirms maximum administration incentive to preserve House majority; 287(g) expansion through Reconciliation 2.0 is the indirect voter intimidation expansion mechanism.*
+
+---
+
 ## Appendix: Sources and Citations
 
 1. [Voting Rights Groups Sue DOJ to Block National Voter Surveil-and-Purge Database — ACLU (April 2026)](https://www.aclu.org/press-releases/voting-rights-groups-sue-doj-to-block-national-voter-surveil-and-purge-database)

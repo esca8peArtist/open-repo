@@ -63,7 +63,28 @@ Requires user action to distribute — see session notes for channel strategy.
 
 ## Urgent / Time-Sensitive
 
-### 0a. SCOTUS Callais v. Landry — VRA Section 2 Gutted (April 29, 2026) — NEEDS DOMAIN UPDATES
+### 0a-UPDATE. Callais Redistricting CASCADE — Domain 1 Section 8 ADDED (Session 8xx)
+
+**Updated May 6, 2026 (Session 8xx)**
+
+Domain 1 Section 8 now documents the full redistricting sprint triggered by the April 29 *Callais* ruling. Confirmed actions as of May 5:
+
+- **Louisiana**: Suspended May 16 primaries; lawsuit filed by voting rights groups
+- **Alabama**: Special session called; targeting court-ordered majority-Black district
+- **Tennessee**: Special session called; targeting Memphis (majority-Black Democratic district)
+- **Florida**: DeSantis signed new maps within hours of ruling; 4-seat Republican gain possible
+- **Georgia**: Kemp using *Callais* defensively (no redistricting ordered)
+
+Domain 37 Section IX also updated with Callais midterm electoral math: 4-8 potential Republican seat additions through redistricting, no federal executive action required.
+
+**Still needed**:
+- Domain 33 (State Legislative Autocratization): add ~400-word section on Callais redistricting enabling mid-decade autocratization
+- Litigation Tracker: add Callais as new entry (April 29, 2026) with cross-references
+- Domain 35 Section 7: update with redistricting emergency application pipeline (Louisiana, Alabama, Tennessee likely to seek SCOTUS emergency action)
+
+---
+
+### 0a. SCOTUS Callais v. Landry — VRA Section 2 Gutted (April 29, 2026) — PARTIALLY UPDATED
 
 **Flagged: May 5, 2026 (Phase 2 Candidate 2 research)**
 
@@ -86,28 +107,22 @@ The Supreme Court ruled 6-3 on April 29, 2026, in *Callais v. Landry* (Louisiana
 
 ---
 
-### 0. Section 702 FISA — HOUSE PASSED 235-191 (April 29) — SENATE ACTION PENDING BY MAY 1
+### 0. Section 702 FISA — RESOLVED (May 6, 2026 — Session 8xx)
 
-**Updated April 29, 2026 (Session 658)**
+**FINAL OUTCOME**: 45-day extension signed April 30, 2026. New deadline June 12, 2026.
+- Three-year warrantless renewal (S.1318) NOT enacted
+- Senate: unanimous voice vote on 45-day clean extension
+- House: 261-111 under suspension of the rules
+- CBDC ban: stripped (not in enacted text)
+- Warrant requirement: not included
+- Trump signed April 30, hours before midnight deadline
+- FISC declassification deal: Wyden secured Cotton-Warner letter requiring release of March 17, 2026 FISC opinion within 15 days
 
-The House passed S.1318 (Foreign Intelligence Accountability Act, three-year warrantless renewal) **235-191 on April 29**. The April 30 deadline will not produce a lapse. Senate cloture vote on companion S.4344 is set for no later than May 1 (Thune UC agreement). Presidential signature expected after Senate passage. The CBDC ban attached to the House version is expected to be stripped in the Senate.
+**Files updated (Session 8xx)**:
+- domain-25-fisa-702-april-2026-outcome.md: Section 7 checklist completed; Section 14 (final statutory status) added
+- domain-01-voting-rights-elections.md: Section 4.2 fully rewritten with final outcome; Section 7.4 checklist completed
 
-**What is confirmed:**
-- (a) Warrant requirement: NOT included
-- (b) Commercial data broker loophole: NOT closed
-- (c) Lapse: Did not occur; collection authority continues
-- (d) New expiration date: April 30, 2029 (pending Senate passage)
-- (e) SAVE Act attachment: Not included (Trump dropped this condition)
-
-**What still needs to be filled** (after Senate vote and presidential signature):
-- Senate vote count on S.4344 or amended S.1318
-- Date of presidential signature
-- Whether CBDC ban survived into enacted text (expected: no)
-- First EFF/ACLU post-passage challenge filing
-
-**Where to update**: surveillance-tracking.md (FISA outcome checklist), domain-25-fisa-702-april-2026-outcome.md Section 7 checklist (partially updated this session), PROJECTS.md "Active Trackers"
-
-**Research filed to**: domain-25-fisa-702-april-2026-outcome.md (Section 7 updated + Section 9 added), domain-01-voting-rights-elections.md Section 4.2 (corrected "lapsed" framing), domains/MAY_2026_UPDATES.md (April 29-30 developments section added)
+**Next action**: Update when June 12 deadline resolves. Monitor for FISC opinion public release under Wyden declassification deal.
 
 ---
 

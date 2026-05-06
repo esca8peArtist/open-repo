@@ -153,11 +153,26 @@ Sources:
 - [Democracy Docket: As SAVE America Act stalls, GOP states quietly enacting own citizenship laws](https://www.democracydocket.com/news-alerts/as-save-america-act-stalls-gop-states-are-quietly-enacting-their-own-proof-of-citizenship-laws/)
 - [Brennan Center: New SAVE Act bills would still block millions from voting](https://www.brennancenter.org/our-work/analysis-opinion/new-save-act-bills-would-still-block-millions-americans-voting)
 
-### 4.2 FISA Section 702 — April 29 House Passage, Senate Action Pending
+### 4.2 FISA Section 702 — Final Outcome: 45-Day Extension Enacted April 30; June 12, 2026 Next Deadline
 
-**Accuracy note (updated April 29, 2026, Session 658)**: This section was written on April 28 based on the pre-vote status — at that point the House Rules Committee had collapsed and the outcome was genuinely uncertain. Events moved quickly on April 29. The "effectively lapsed" framing below was overtaken by events: the Rules Committee revived the bill 9-4 on April 29, the procedural rule passed 215-210 (held open more than two hours), and the House passed final passage **235-191**. Section 702 did not lapse on April 30. The Senate has a cloture vote set for no later than May 1 on S.4344 (companion three-year bill). Presidential signature is expected after Senate passage. The legislative and cross-domain analysis in this section remains accurate; only the factual description of the April 30 outcome needs the following correction.
+**STATUS: RESOLVED (updated May 6, 2026, Session 8xx)**
 
-**Corrected status as of April 29, 2026**: The House passed S.1318 (Foreign Intelligence Accountability Act, three-year warrantless renewal) 235-191 on April 29. Senate action pending by May 1. The bill as House-passed contains a CBDC ban that Senate Majority Leader Thune has called "dead on arrival" in the Senate; the likely resolution is Senate passage of the companion S.4344 (clean three-year bill, no CBDC ban). If enacted, Section 702 authority extends through April 30, 2029 with attorney-level approval requirements and monthly ODNI Civil Liberties Protection Officer reviews — but no warrant requirement and no commercial data broker loophole closure.
+Earlier versions of this section were written on April 28 (when the outcome was genuinely uncertain) and corrected on April 29 (after House passage 235-191). The April 30 final outcome is now confirmed and supersedes all prior pending language.
+
+**Confirmed final outcome (April 30, 2026):**
+- The three-year warrantless renewal (S.1318, House-passed 235-191) was NOT enacted. The Senate rejected it because it contained a CBDC ban.
+- Congress passed a 45-day clean extension: Senate by unanimous voice vote, House 261-111 under suspension of the rules.
+- President Trump signed the 45-day extension on April 30, 2026, hours before the midnight deadline.
+- Section 702 authority continues through **June 12, 2026**.
+- No warrant requirement. No CBDC ban. No commercial data broker loophole closure.
+- Sen. Wyden secured a declassification deal: Cotton-Warner letter to DNI Gabbard and Acting AG Blanche requiring public release of a FISC opinion dated March 17, 2026, within 15 days of enactment.
+
+**Why this matters for election security (updated framing):**
+The 45-day outcome defers the three-year entrenchment of warrantless query authority to a June 12 deadline. The June 12 deadline falls during congressional primary season — a political environment in which surveillance accountability has greater midterm salience than it did in April. The reform coalition (Lofgren-Davidson-Wyden-Lee + Freedom Caucus privacy hawks) demonstrated blocking capacity; the June fight is where they attempt to convert that blocking capacity into a warrant requirement or meaningful commercial data broker restriction.
+
+The FBI's warrantless query authority over U.S. persons' communications incidentally collected under Section 702 remains intact through June 12. The commercial data broker surveillance architecture (Palantir ImmigrationOS, Clearview AI, Babel Street/Venntel) operates entirely outside Section 702 and is unaddressed by any outcome.
+
+For election organizers, the practical surveillance risk profile is unchanged from the pre-April 30 baseline: FBI can query collected communications without a warrant; DHS can purchase location data commercially without a warrant; ICE can use facial recognition without a warrant. The June 12 deadline is the next window for any of these to change.
 
 **The failure sequence leading to passage**: House GOP leadership attempted and failed twice in a single week to pass FISA reauthorization. A proposed five-year reauthorization failed when 20 Republican members broke with leadership demanding warrant requirements. An 18-month renewal also failed. Trump signed a 10-day stopgap extension April 18 pushing the deadline to April 30. Speaker Johnson unveiled a three-year renewal — as of April 28 the Rules Committee had collapsed, but it revived on April 29, and final passage followed later that day.
 
@@ -370,22 +385,97 @@ The FISA outcome matters for voting rights and ballot initiative work because Se
 
 **The commercial data broker loophole applies regardless of FISA outcome**: The Venntel/Babel Street/Accurint commercial location data pathway documented in surveillance-tracking.md operates entirely outside FISA. Any FISA reauthorization that does not explicitly prohibit law enforcement purchase of commercial location data leaves the primary surveillance vector for ballot initiative organizers — their physical locations as captured by mobile advertising data — completely unconstrained. EFF has confirmed that no pending 2026 proposal closes this loophole.
 
-### 7.4 Fill-In Checklist: Post-April 30 Outcome
+### 7.4 Fill-In Checklist: Post-April 30 Outcome (COMPLETED May 6, 2026)
 
-This checklist should be completed once the April 29-30 vote outcome is known:
-
-- [ ] Vote result (Passed / Failed / Lapsed / Further stopgap): _____
-- [ ] Final bill name and extension duration: _____
-- [ ] Warrant requirement for U.S. person queries: _____ (Included / Excluded)
-- [ ] Commercial data broker loophole: _____ (Closed / Still Open)
-- [ ] New expiration date: _____
-- [ ] SAVE Act attachment status: _____ (Included / Excluded / N/A)
-- [ ] Election organizer surveillance implication (update Section 7.3 accordingly): _____
+- [x] Vote result: **45-day stopgap extension** — Senate unanimous voice vote, House 261-111, signed April 30
+- [x] Final bill name and extension duration: **45-day clean extension through June 12, 2026**
+- [x] Warrant requirement for U.S. person queries: **Excluded**
+- [x] Commercial data broker loophole: **Still Open**
+- [x] New expiration date: **June 12, 2026**
+- [x] SAVE Act attachment status: **Excluded** (never included in any enacted version)
+- [x] Election organizer surveillance implication: **Scenario 1 realized** — no three-year entrenchment, reform window remains open through June 12. Surveillance risk profile unchanged from pre-April 30 baseline. See Section 4.2 (updated) for full framing.
 
 Sources: [The Hill: House Republicans face FISA challenges (April 28, 2026)](https://thehill.com/homenews/house/5848368-house-republicans-fisa-section-702-reconciliation/); [EFF: Congress Must Reject New Insufficient 702 Reauthorization Bill (April 28, 2026)](https://www.eff.org/deeplinks/2026/04/congress-must-reject-new-insufficient-702-reauthorization-bill); [Just Security: Johnson Section 702 proposal — no limits on backdoor searches](https://www.justsecurity.org/137206/johnson-section-702-warrant/); [Brennan Center: Section 702 FISA 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page); [State of Surveillance: 98 House Democrats make 702's future more uncertain](https://stateofsurveillance.org/news/congressional-progressive-caucus-fisa-702-opposition-98-democrats-2026/); [FISC 2022 Compliance Opinion — warrantless searches of civil rights protesters and elected officials](https://www.odni.gov/files/CLPT/documents/2023-ASTR-Statistical-Transparency-Report.pdf)
 
 ---
 
 *Section 7 added: April 28, 2026 (Session 608 — Domain Content Maintenance)*
+*Section 7.4 checklist completed: May 6, 2026 (Session 8xx)*
+
+---
+
+## Section 8: May 2026 — Callais Redistricting Cascade and Midterm Map Crisis
+
+**Added**: May 6, 2026 (Session 8xx)
+
+### 8.1 The Redistricting Sprint: Confirmed State Actions (May 1-5, 2026)
+
+The April 29, 2026 *Callais* ruling (6-3, documented in Section 3.2) triggered an immediate redistricting sprint that constitutes the single most operationally significant development for the 2026 midterms since the filing of the March 31 elections executive order. Within six days of the ruling, four states had taken concrete legislative or executive action to redraw congressional maps:
+
+**Louisiana** (Governor Jeff Landry): Suspended the state's May 16 congressional primaries, postponing them to July 15 or a date to be set by the legislature. This is the most aggressive immediate action — an incumbent governor suspending an already-underway election (absentee voting had begun) to allow map redrawing under the *Callais* ruling. Voting rights groups filed suit within days to force the primaries to proceed on schedule. As of May 5, the Louisiana maps are in active litigation.
+
+**Alabama** (Governor Kay Ivey): Called a special legislative session, announced Friday May 1. The session focuses on redrawing Alabama's congressional map — which the Supreme Court had already ordered redrawn in 2023 under *Allen v. Milligan* — to eliminate the court-ordered majority-Black district under the new *Callais* standard. Alabama's theory: the *Callais* ruling allows it to characterize its prior map as a "racial gerrymander" and redraw to a whiter configuration. The Supreme Court would need to allow the new map to take effect before November 2026 for it to affect this cycle's elections.
+
+**Tennessee** (Governor Bill Lee): Called a special legislative session to break up the state's one Democratic-held House district — centered on the majority-Black city of Memphis. Tennessee's proposal is the clearest partisan application of *Callais*: there is no prior court order or pending litigation; the state is simply using the ruling to eliminate a minority-opportunity district on the theory that it was created with too much race consciousness.
+
+**Florida** (Governor Ron DeSantis): Signed into law a new congressional map that could give Republicans up to four additional seats currently held by Democrats. Florida's map redrawing was the fastest: DeSantis signed the legislation hours after the *Callais* decision was issued. The Florida map is expected to face immediate legal challenge from the NAACP LDF and the Elias Law Group, but the *Callais* ruling substantially weakens the statutory VRA Section 2 challenge.
+
+**Georgia**: Governor Kemp announced May 1 that he would not order redistricting in response to the ruling — but the announcement was strategically significant. Georgia does not need to order redistricting because its existing maps were never court-ordered to include majority-minority districts. Kemp's announcement effectively signals that Georgia will use *Callais* defensively: as a shield against future VRA Section 2 challenges to existing maps, not as a sword to redraw.
+
+### 8.2 National Scope: The Redistricting War Map
+
+A U.S. News analysis published May 5 and Time reporting the same day identified a broader redistricting pattern with direct midterm implications:
+
+- **States with pending or likely special sessions**: Louisiana, Alabama, Tennessee, and potentially Mississippi, South Carolina, and Georgia (for specific local districts at the school board and statehouse level)
+- **States using *Callais* defensively** (to resist prior court orders): Alabama (federal court-ordered map), North Carolina (pending VRA litigation), Georgia (prior challenges to statewide maps)
+- **States using *Callais* offensively** (to redraw maps without prior court order): Tennessee (Memphis district), Florida (four-seat swing target)
+
+Stateline reporting (May 4) documented that the ruling's scope extends well below congressional maps: *Callais* applies to state legislative redistricting, local government maps, school board districts, and city council boundaries. The full downstream effect — reshaping local political power from statehouses to school boards — will take years to manifest, but the immediate midterm application is to congressional districts.
+
+### 8.3 The Midterm Electoral Math
+
+The practical midterm consequence of the redistricting sprint is that Republicans are attempting to add 4-8 House seats before November 2026 through map redrawing, without winning any competitive races. The four states where this is most advanced (Louisiana, Alabama, Tennessee, Florida) could collectively shift the House from its current 218-214 Republican configuration to a more durable Republican majority — or, if Democrats succeed in court challenges, could produce a chaotic mix of delayed primaries, multiple sets of candidate filings, and voter confusion that suppresses turnout in affected districts.
+
+Democrats need to flip only 3 seats to take the House majority. The *Callais* redistricting sprint is explicitly designed to make that math harder by eliminating districts where Black voters currently have meaningful representation and replacing them with safer Republican districts.
+
+### 8.4 Legal Challenge Landscape
+
+The redistricting challenges face a fundamentally changed legal environment after *Callais*:
+
+**VRA Section 2 challenges**: *Callais* requires proof of intentional racial discrimination, not just discriminatory effect. This means plaintiffs must prove discriminatory intent — a standard that courts will allow state legislatures to rebut by claiming their redistricting choices were based on partisanship rather than race. Even when the redistricting's racial effect is undeniable, the court will credit the partisan-intent defense.
+
+**State constitutional claims**: The stronger litigation vector post-*Callais* is state constitutional law. Several states have state constitutional provisions that are more protective than the federal floor. Michigan's Proposal 2 (2022) created an independent redistricting commission with explicit minority representation requirements. Colorado's constitutional provision has been interpreted to require proportional representation. State constitutional claims do not depend on federal VRA Section 2 and are not affected by *Callais*.
+
+**Equal Protection / Shaw v. Reno doctrine**: The *Callais* ruling does not disturb the doctrine that excessive racial gerrymandering violates the Equal Protection Clause. The irony is that *Callais* itself was decided under the *Shaw v. Reno* theory: the majority said Louisiana's map relied too heavily on race, violating equal protection. This creates a doctrinal paradox — the same doctrine that required Louisiana to draw more minority representation in 2023 (*Allen v. Milligan* under VRA Section 2's effects test) now prohibits that representation as a racial gerrymander. The constitutional terrain is incoherent and favors legislative discretion.
+
+**Organizational response**: Democracy Docket has committed to challenging map redraws that violate the remaining constitutional constraints. The NAACP LDF, ACLU, and Elias Law Group are coordinating multi-state challenge strategies. The Campaign Legal Center's post-*Callais* guidance ("What's Next") identified state constitutional claims as the primary remaining enforcement tool.
+
+### 8.5 Cross-Domain Implications
+
+**Domain 33 (State Legislative Autocratization)**: The *Callais* redistricting sprint is the most significant single event for Domain 33 since the post-*Dobbs* state legislative acceleration. Mid-decade redistricting outside the post-census cycle — enabled by *Callais* — is a direct form of state legislative autocratization: incumbent legislatures using a court ruling to redraw the districts that produced them.
+
+**Domain 6 (Judicial Independence)**: The fact that the Supreme Court's ruling in *Callais* was itself issued without the typical 32-day wait period (the court allowed the ruling to take immediate effect) signals that the majority anticipates time-pressure applications and is facilitating them. This is a departure from the Court's prior practice of issuing stay orders in redistricting cases to allow orderly implementation.
+
+**Domain 35 (SCOTUS OT2026)**: The redistricting challenges from Louisiana, Alabama, and Tennessee are likely to generate emergency applications to the Supreme Court before the November 2026 election. The Court's willingness to allow Louisiana's primary suspension to stand (or not) will be the first operational test of *Callais*'s scope. Monitor for SCOTUS emergency application filings in these cases.
+
+**Domain 37 (Federal Executive Interference in 2026 Midterms)**: The *Callais* redistricting sprint represents a significant shift in the midterm interference calculus. Prior to *Callais*, the administration's most effective electoral interference tools were administrative (SAVE database, voter purges, ICE deployment). *Callais* adds a legislative tool — state map redrawing before August 7 (the NVRA quiet period) — that can shift the House majority without any administrative action.
+
+Sources:
+- [U.S. News: Louisiana to Mississippi — Some Republican States Sprint to Redraw Districts After Landmark Ruling (May 5, 2026)](https://www.usnews.com/news/national-news/articles/2026-05-05/gop-fast-tracks-new-voting-maps-after-landmark-supreme-court-ruling)
+- [Time: Republicans Look to Build Their Redistricting War Advantage in Southern States (May 5, 2026)](https://time.com/article/2026/05/05/republicans-redistricting-supreme-court-voting-rights-act-louisiana-alabama-tennessee/)
+- [Stateline: Supreme Court Voting Rights Ruling Set to Reshape Local Power from Statehouses to School Boards (May 4, 2026)](https://stateline.org/2026/05/04/supreme-court-voting-rights-ruling-set-to-reshape-local-power-from-statehouses-to-school-boards/)
+- [NPR: After a Supreme Court Ruling, Expect Even More Gerrymandering (May 1, 2026)](https://www.npr.org/2026/05/01/nx-s1-5806320/after-a-supreme-court-ruling-expect-even-more-gerrymandering)
+- [NBC News: Alabama and Tennessee Set Special Sessions to Consider New Congressional Maps (May 2026)](https://www.nbcnews.com/politics/2026-election/alabama-governor-calls-special-session-move-primaries-redistricting-ge-rcna343125)
+- [CNN: Alabama and Tennessee Join Rush of Southern States Moving to Redraw Maps (May 1, 2026)](https://www.cnn.com/2026/05/01/politics/alabama-special-session-redistricting-voting-rights-act)
+- [CNN: How Florida Designed a US House Map Aiming to Give Republicans Four More Seats (May 4, 2026)](https://www.cnn.com/2026/05/04/politics/florida-redistricting-ron-desantis-voting-rights-act-vis)
+- [Prism Reports: Supreme Court VRA Ruling is a Direct Attack on Black Political Power (May 5, 2026)](https://prismreports.org/2026/05/05/supreme-court-voting-rights-act-ruling-direct-attack-on-black-political-power/)
+- [Votebeat: Who is Winning Redistricting After Florida's New Map and the Callais Decision? (May 4, 2026)](https://www.votebeat.org/national/2026/05/04/florida-redistricting-supreme-court-louisiana-callais-gerrymander-2026-election/)
+- [GPB: Kemp Won't Order Redistricting in Georgia After Supreme Court Weakens Voting Rights (May 1, 2026)](https://www.gpb.org/news/2026/05/01/kemp-wont-order-redistricting-in-georgia-after-supreme-court-weakens-voting-rights)
+- [Campaign Legal Center: What's Next After VRA Evisceration](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next)
+
+---
+
+*Section 8 added: May 6, 2026 (Session 8xx)*
+*Purpose: Documents Callais redistricting cascade (May 1-5, 2026) — the most operationally significant post-ruling development for 2026 midterm electoral map.*
 *Purpose: Corrects prior session research error (Session 573 conflated 2024 RISAA outcome with projected 2026 outcome); documents accurate April 28 pre-vote status; provides four-scenario framework for electoral security implications; fill-in checklist ready for post-April 30 completion*
 *Cross-reference: surveillance-tracking.md Post-Deadline Update (corrected to pending status, same session)*
