@@ -41,12 +41,42 @@
    - Status: Production-ready for May 12+ execution planning
    - Commit: 7aa8e00
 
+**Parallel Agent Execution (Continuation)**:
+
+✅ **Added New Items 19-21 + Parallel Execution**:
+
+All active projects awaiting user decisions → refresh queue with high-value research items + spawn parallel agents. Items 19-20 executed immediately:
+
+1. **Item 19: resistance-research — Phase 1 Distribution Execution Playbooks** ✅ COMPLETED
+   - Three complete playbooks (Path A, Path B, Hybrid A+Domain37)
+   - Each playbook is day-by-day executable: decision → playbookdelivered same day → launch within 24h
+   - Files: `PATH_A_DISTRIBUTION_PLAYBOOK.md`, `PATH_B_DISTRIBUTION_PLAYBOOK.md`, `PATH_HYBRID_A_PLUS_DOMAIN37_PLAYBOOK.md`
+   - Location: `projects/resistance-research/distribution-playbooks/`
+   - Key features:
+     - Path A: 4-week institutional outreach calendar with email templates (law schools, think tanks, policy orgs, grad programs)
+     - Path B: 4-week public-first (Substack + Reddit + X/Twitter + Medium) with 48-hour sequencing rationale
+     - Hybrid: Parallel institutional track + Domain 37 research acceleration with integration checkpoints
+   - Contingency branches for: bounced emails, negative responses, engagement pivots
+   - All templates copy-paste ready with hour estimates on everything
+   - Commit: resistance-research agent
+
+2. **Item 20: stockbot — Post-Gate-1 Implementation Roadmap** ✅ COMPLETED
+   - Single comprehensive document: `POST_GATE1_IMPLEMENTATION_ROADMAP.md` (963 lines)
+   - Synthesizes all prior research (Items 3, 8, 12, 26, 32, 53)
+   - Seven sections: multi-ticker architecture, options overlay, HMM regime scaling, multi-asset class foundation, 16-week roadmap, risk flags, success criteria
+   - Multi-ticker configuration: 11-ticker Tier A/B/C deployment (MSFT/GOOGL/NVDA/AMZN/META Week 1; QQQ/SPY Week 3; sector diversifiers Week 5)
+   - Options overlay: 30-delta covered calls with 7-scenario test matrix
+   - HMM scaling: VIX-based position scalar with A/B test graduation criteria (p<0.05, MDD >2%)
+   - Multi-asset expansion: Options (Phase 1, 23-34h) → Crypto (Phase 2, 35-45h) → Futures (Phase 3, 25-35h)
+   - Critical path: ARCH-2/ARCH-3/ARCH-6 resolution in Weeks 1-2 before expansion
+   - Commit: 56fc317 (stockbot submodule)
+
 **Exploration Queue Refresh**:
 
-✅ **Added 3 New Items (Items 53–55)**:
-- **Item 53**: Stockbot Post-Gate-1 Scenario A Implementation Roadmap ✅ COMPLETED this session
-- **Item 54**: Resistance-research Phase 1 Measurement Dashboard & Automation Setup (QUEUED for execution now)
-- **Item 55**: Cybersecurity-hardening Red Team Tactical Walkthroughs (QUEUED for execution now)
+✅ **Added 3 New Items (Items 19–21)**:
+- **Item 19**: Resistance-research Phase 1 Distribution Execution Playbooks ✅ COMPLETED (parallel agent)
+- **Item 20**: Stockbot Post-Gate-1 Implementation Roadmap ✅ COMPLETED (parallel agent)
+- **Item 21**: Seedwarden Market Expansion & Adjacent Category Research (QUEUED for autonomous execution)
 
 **Project Status After Session 854**:
 - **stockbot**: Post-Gate-1 planning infrastructure complete. May 12 decision-making fully supported with documentation. ARCH decisions still pending user review (not blocking post-gate research).

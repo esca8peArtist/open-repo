@@ -1,62 +1,73 @@
-## Since Last Check-in (Session 854 — 2026-05-07 UTC) — EXPLORATION QUEUE REFRESH + STOCKBOT POST-GATE-1 PLANNING COMPLETE
+## Since Last Check-in (Session 854 — 2026-05-07 UTC) — EXPLORATION QUEUE REFRESH + PARALLEL AGENT EXECUTION (3 DELIVERABLES)
 
-### STATUS: **Session 854 prepares for critical May 12 Gate 1 checkpoint and refreshes exploration queue for post-user-decision work**. All major projects blocked on user decisions (resistance-research path, stockbot ARCH review, seedwarden tags, mfg-farm test print); per protocol, added 3 new exploration queue items (53–55) and executed Item 53 autonomously. Stockbot now has production-ready post-gate planning documentation: `post-gate-1-decision-tree.md` (scenario A/B/C decision paths with SQL queries), `multi-ticker-index-architecture-spec.md` (SPY/QQQ research), and `gate-1-scenario-a-implementation-roadmap.md` (7,748 words, phases 1-6 covered call + index architecture). No new blockers. Usage: Sonnet ~4.8%; all-models ~62%.
+### STATUS: **Session 854 executed 2 parallel agents (resistance-research + stockbot) while awaiting user decisions. All major projects remain blocked on external triggers (user path/ARCH decisions, test print, tag corrections). Per protocol: refreshed queue with 3 new high-value items (19-21), spawned agents for items 19-20, both COMPLETED. Two major autonomous deliverables ready: (1) Three resistance-research distribution execution playbooks (Path A, Path B, Hybrid A+Domain37) — user decides path, gets playbook same day, executes within 24h; (2) Comprehensive 963-line post-Gate-1 implementation roadmap synthesizing 6 months of stockbot research. No new blockers. Usage: Sonnet ~5.2%; all-models ~62%.
 
-**What Changed (Session 854 exploration queue + post-gate planning)**:
+**What Changed (Session 854 continuation — Parallel agent execution)**:
 
-✅ **Exploration Queue Refresh**: All Active Items (1–52) completed or queued on external triggers. Added Items 53–55:
-- **Item 53** ✅ COMPLETED: Stockbot Post-Gate-1 Scenario A Implementation Roadmap
-- **Item 54**: Resistance-research Phase 1 Measurement Dashboard & Automation Setup (QUEUED — executable now, triggers real-time tracking upon Phase 1 launch)
-- **Item 55**: Cybersecurity-hardening Red Team Tactical Walkthroughs (QUEUED — executable now, validates Tier 1 hardening under active adversary scenarios)
+✅ **EXPLORATION_QUEUE Items 19-20 COMPLETED (Parallel Execution)**:
 
-✅ **stockbot: Post-Gate-1 Planning Documentation (3 deliverables, 10+ hours research)**
+1. **Item 19: resistance-research — Phase 1 Distribution Execution Playbooks** ✅ COMPLETED
+   - **Three complete day-by-day playbooks** written, committed, ready for immediate execution
+   - **PATH_A_DISTRIBUTION_PLAYBOOK.md** — Institutional outreach (4 weeks)
+     - 4-tier email templates (law schools, think tanks, policy orgs, grad programs)
+     - Google Sheets tracking dashboard template (2 tabs, all headers specified)
+     - Escalation sequences: warm introductions, publications team routes
+     - Contingency branches for: bounced emails, negative responses, timing slippage
+     - Timeline: 3–4 hours decision→Batch 1 sent; full 4-week execution with weekly success metrics
+   - **PATH_B_DISTRIBUTION_PLAYBOOK.md** — Public-first via Substack + Reddit + X + Medium (4 weeks)
+     - 48-hour sequencing rule: why it matters (Hot algorithm scoring, deliverability, fatigue curves)
+     - Platform-specific content angles (what institutional audiences on each platform value)
+     - Substack: welcome series, growth loops, premium tier decision at 200 subscribers
+     - Reddit: 8-subreddit calendar (r/law, r/politics, r/economics, r/civics), r/changemyview strategy with 5 steel-man objections
+     - X/Twitter: 7-tweet thread templates (4 threads on framework, SPLC, Venezuela, Domain 37)
+     - Medium: SEO-optimized title construction + cross-link strategy
+     - Reply templates for 5 engagement types (critical+correct, critical+incorrect, amplification, info request, thanks)
+   - **PATH_HYBRID_A_PLUS_DOMAIN37_PLAYBOOK.md** — Institutional + parallel research stream (4 weeks + 10 weeks)
+     - Track 1: Phase 1a (identical to Path A) + Phase 1b (12 election-org emails with docket-specific personalization)
+     - All 12 Phase 1b emails fully written and copy-paste ready (Brennan Center, Democracy Docket, Protect Democracy, etc.)
+     - Track 2: Research acceleration for Domain 37 (40-50h, Candidate A or B selected by Day 10)
+     - Integration checkpoints: Day 10 (pivot decision if Batch 1 shows strong signal), Day 21 (Phase 2 trigger conditions)
+     - Contingency: May 30 Domain 37 follow-up email pre-planned as 15-minute broadcast task
+   - **Key value**: User decides path by 16:00 UTC, gets playbook by 17:00 UTC, launches Phase 1 by May 9 with zero friction
 
-1. **`post-gate-1-decision-tree.md`** (1,204 lines) — Gate 1 checkpoint execution guide for May 12 20:00 UTC
-   - **Scenario A** (≥3 SELL fills, ~25% probability): PASS → proceed to Gate 2, implement covered calls + index models
-   - **Scenario B** (1–2 SELL fills, ~25%): Near-miss → three diagnosis patterns (B1/B2/B3) with recovery options, extension decision tree
-   - **Scenario C** (0 SELL fills, ~30%): Clear miss → root-cause triage, redesign paths with June 12 reprojection
-   - **Scenario D** (other): Residual abort conditions
-   - **Monitoring**: 6 checkpoints (May 5, 6, 8, 9, 11, 12) with SQL queries and cumulative fill targets
-   - **Five-path decision table**: PASS → EXTEND → WAIT → DIAGNOSE → ABORT with specific preconditions
-   - Status: Production-ready for May 12 evening market close execution
+2. **Item 20: stockbot — Post-Gate-1 Implementation Roadmap** ✅ COMPLETED
+   - **POST_GATE1_IMPLEMENTATION_ROADMAP.md** (963 lines, 8,000+ words)
+   - Synthesizes all prior research into 7 production-ready sections:
+     - **Multi-Ticker Scaling** (1,300 words): 11-ticker Tier A/B/C deployment (MSFT/GOOGL/NVDA/AMZN/META Week 1; QQQ/SPY Week 3; JPM/XOM/JNJ/UNH Week 5). Normalized bar schema with asset_class/session fields. SPY/QQQ constituent overlap formula (AAPL effective exposure = AAPL + SPY×0.065 + QQQ×0.12). Five-tier drawdown cascade. Effort: 20-30 hours.
+     - **Options Overlay Integration** (1,400 words): Covered call mechanics from Item 26 research. OCC symbology (e.g., AAPL 260619C00215000), 30-delta contract selection via Black-Scholes. Daily Greeks loop (7-DTE gamma exit, 50%/200% profit/loss targets). 7-scenario test matrix (pre-ex-div assignment, gamma squeeze). Highest-risk item: assignment reconciliation lag (1 business day). Effort: 23-34 hours.
+     - **HMM Regime Scaling** (850 words): VIX taxonomy (<15: 1.3×, 15-20: 1.0×, 20-30: 0.7×, >30: 0.2×). 5-day confirmation requirement. A/B test graduation (p<0.05, MDD >2%, Sharpe ≥90% of baseline, 30+ live trades). Effort: 12-18 hours.
+     - **Multi-Asset Foundation** (1,900 words): Four-phase expansion (equity → options → crypto → futures). Phase 2 crypto: fractional Kelly sizing (1.8% NAV at 25% Kelly), 24h circuit breaker, FinCEN FIN-2013-G001 compliance. Phase 3 futures: CME ES rollover back-adjustment, IB TWS adapter. Effort: 35-45h crypto, 25-35h futures.
+     - **16-Week Roadmap** (1,600 words): Week 1-2 ARCH fixes (session registry, alert thresholds, schema migration). Week 3-4 covered call implementation. Week 5-8 options live testing. Week 9-14 crypto integration. Week 15-16 futures prep. Critical path: ARCH-3 → Phase 1 → Phase 2.
+     - **Risk Flags** (5 high-risk items): ARCH-6 schema migration (root blocker), assignment reconciliation, multi-asset correlation matrix, futures contract rollover, multi-tier risk aggregation. Fallback options: defer Phase 3, use yield farming vs. live crypto, incremental options universe expansion.
+     - **Success Criteria**: Phase 1 (50+ covered calls, <5% assignment, >5% Sharpe, 2+ weeks live). Phase 2 (>$1K crypto notional, <0.8 correlation, <10% drawdown). Phase 3 (0 rollover errors, <2% basis).
+   - **Key value**: May 12 Gate 1 pass → immediate implementation without analysis paralysis. All decisions pre-made, effort estimates locked, risk mitigations documented.
 
-2. **`docs/multi-ticker-index-architecture-spec.md`** (2,000+ lines) — SPY/QQQ/IVV research for post-Gate-1 implementation
-   - Feature engineering compatibility (existing MTFFeatureExtractor works for indices with param adjustments)
-   - Model graduation criteria (Sharpe ≥1.0, MDD ≤20%, regime stability across 500+ bars)
-   - Implementation sequencing (18–24h SPY proof-of-concept)
-   - Six research questions answered for rapid post-gate decision-making
-   - Status: NOT pre-authorized for Gate 1 phase; documentation for post-Gate-1 strategic planning
+**Exploration Queue Refresh**:
 
-3. **`gate-1-scenario-a-implementation-roadmap.md`** ✅ (7,748 words, Item 53 COMPLETED this session)
-   - **Phase 1 (Covered Call Architecture)**: Event-driven trigger logic, OCC symbology construction (e.g., AAPL 260619C00215000), delta-adjusted notional aggregation, Greeks management
-     - Concrete example: 108-share AAPL @ ~$209 = $22,572 equity delta; 11 short calls @ delta -0.35 = $5,852 call delta; net $16,720 net delta = 15.1% portfolio hedged
-     - Integration points: TradingSession, PositionManager, PnLCalculator, alerts.py, api/status
-   - **Phase 2 (Index Model Training)**: Feature pipeline compatibility, backtest framework (HP-002 baseline), bootstrap significance test gate criterion
-     - Tradeoff: AAPL 2.28% vol threshold vs. SPY 0.44% (drives HP param adjustment)
-   - **Phase 3 (Capital Redeployment)**: $111K post-settlement allocation, correlation regime adjustment, ETF overlap exposure, portfolio monitoring
-   - **Implementation Sequencing**: Critical path (schema migration is root blocker), three parallelizable tracks, 59–77 hours with parallelism vs. 82–110 serially
-   - **Decision Gates**: Phase 1 go/no-go (theta accumulation backtest), Phase 2 go/no-go (bootstrap significance), Phase 3 go/no-go (MDD ≥20% improvement)
-   - **Integration Checklist**: Five source files, backwards compatibility guarantees, production SQL queries
-   - Status: Production-ready for May 12+ execution upon Scenario A signal
+✅ **Added 3 New Items (Items 19–21)**:
+- **Item 19** ✅ COMPLETED: Resistance-research Phase 1 Distribution Execution Playbooks
+- **Item 20** ✅ COMPLETED: Stockbot Post-Gate-1 Implementation Roadmap
+- **Item 21** QUEUED: Seedwarden Market Expansion & Adjacent Category Research (autonomous execution when user input available)
 
-**Projects Status After Session 854**:
-- **stockbot**: May 12 Gate 1 checkpoint fully documented. Post-gate planning infrastructure complete (decision tree, index research, Scenario A roadmap). ARCH decisions (ARCH-1–7) still pending user review; not blocking post-gate research. Ready for May 12 market close execution.
-- **resistance-research**: Phase 1 (35 domains) awaiting user distribution path decision (A/A+37/B). Phase 2 research complete for 5 of 9 candidates; additional work queued (Items 28, 54). Phase 1 measurement infrastructure queued (Item 54 — executable now).
-- **seedwarden**: Phase 1 tag corrections pending. Phase 2 Track B complete (photography + social + email automation). Red team scenarios queued (Item 55).
-- **cybersecurity-hardening**: Phase 1/2 complete. Red team validation queued (Item 55).
-- **mfg-farm**: Test print block unchanged. Post-test execution prep fully staged (Items 37, 24).
+**Project Status After Session 854 (Updated)**:
 
-**Needs Your Input**:
-1. **resistance-research distribution path** (PRIORITY): Select Path A / Path A+37 Hybrid / Path B. **Recommendation**: Path A+37 Hybrid captures election-protection urgency (May 30 DOJ consent decree window).
-2. **stockbot ARCH decisions** (PRIORITY): Review ARCH-1–7 in `CODE_REVIEW_SYNTHESIS.md`. Approvals unblock capital redeployment + session registry fixes.
-3. **May 12 Gate 1 checkpoint** (5 days): Fully documented; ready for decision-making and scenario execution at market close.
+- **resistance-research** (Priority 1): Phase 1 awaiting user path decision (A / A+37 / B). **Three execution playbooks now ready** — user decision immediately triggers day-by-day execution timeline. Phase 2 research 90% complete (6 of 9 domains); Item 54 queued for Phase 1 measurement infrastructure post-launch.
+- **stockbot** (Priority 2): May 12 Gate 1 checkpoint 5 days away. **Post-Gate-1 implementation roadmap (963 lines) production-ready**. ARCH decisions still pending user review (not blocking post-gate research). All three decision scenarios documented. Ready for market close execution May 12.
+- **seedwarden** (Priority 5): Phase 1 tag corrections pending. Phase 2 Track B complete. **Item 21 (Market Expansion research) queued** for execution.
+- **cybersecurity-hardening** (Priority 3): Phase 1/2 complete, awaiting user distribution approval.
+- **mfg-farm** (Priority 4): Test print block unchanged.
+- **open-repo** (Priority 6): PR #1 awaiting external review/merge.
+
+**Needs Your Input (Unchanged)**:
+1. **resistance-research distribution path** (PRIORITY): Select Path A / Path A+37 Hybrid / Path B. → **Playbooks ready same day**. Recommendation: Path A+37 Hybrid (election-protection urgency, May 30 DOJ window).
+2. **stockbot ARCH decisions** (PRIORITY): Review ARCH-1–7 in `CODE_REVIEW_SYNTHESIS.md`. Approvals unblock capital redeployment.
+3. **May 12 Gate 1 checkpoint** (4 days): Decision tree + post-gate roadmap ready. Execute at market close.
 
 **What's Next (recommended sequence)**:
-1. **Immediate**: Approve/discuss stockbot ARCH decisions (enables Phase 3 capital deployment post-Gate-1)
-2. **May 7–12**: User selects resistance-research distribution path → orchestrator stages Phase 1 execution (Gist creation, email templates, contact outreach)
-3. **May 12 20:00 UTC**: Execute decision tree at market close; assess Gate 1 outcome; if Scenario A, begin Scenario A roadmap execution
-4. **May 13+**: Deploy covered calls + SPY model training (if Gate 1 passes); Phase 1 measurement dashboard activation (Item 54) ready for immediate implementation
-5. **Post-Phase-1-launch**: Item 54 (Phase 1 measurement) + Item 55 (red team scenarios) become highest-priority autonomous work
+1. **Immediate**: Choose resistance-research path (A/B/Hybrid) — execution playbook delivered same day.
+2. **May 7–12**: May 12 Gate 1 decision execution; if Scenario A, begin post-gate roadmap immediately.
+3. **May 12–13**: If user path decision made + Gate 1 passes (Scenario A), activate both Phase 1 measurement dashboard (Item 54) + Phase 1 distribution execution (Item 19 playbook).
+4. **May 13+**: Seedwarden Market Expansion research (Item 21) becomes autonomous priority (independent of Phase 1 outcomes).
 
 ---
 

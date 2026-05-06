@@ -227,6 +227,52 @@
 
 ---
 
+### Item 19: resistance-research Phase 1 Distribution Execution Playbooks (Session 854 — NEW)
+**Status**: ACTIVE — Ready for autonomous execution
+**Trigger**: Immediate (independent of user path decision)
+**Scope**: Create detailed, day-by-day execution playbooks for all THREE distribution paths (A, B, A+Domain37 Hybrid) so user can launch immediately upon decision
+**Deliverables** (3 standalone documents, ~12,000 words total):
+- **Path A Playbook**: Institutional outreach via 35-domain framework; law schools, think tanks, policy orgs; tier-based messaging; weekly Phase 1 execution calendar (4 weeks); email templates; tracking dashboard setup; success metrics; contingency escalation
+- **Path B Playbook**: Public-first distribution via Substack + Reddit + X/Twitter + Medium; Week 1 phased calendar (staggered by 48h to avoid spam filters); engagement escalation sequences; CTA variations per platform; SEO optimization for long-tail policy keywords; launch metrics (Substack opens, Reddit engagement, inbound referral tracking)
+- **Path A+Domain37 Hybrid Playbook**: Institutional tier 1 outreach PLUS Domain 37 research parallel stream; research acceleration timeline (40-50h estimate for Candidate A or B); integration checkpoints; hybrid measurement dashboard (institutional penetration + domain credibility feedback); Phase 2 trigger conditions
+**Owner**: resistance-research agent (autonomous execution)
+**Key value**: User decides path on May 8, gets 3 executable playbooks same day, launches Phase 1 by May 9. Zero friction from decision to execution.
+**Timeline estimate**: 8-10 hours research + writing per path (parallel execution via subagent)
+
+---
+
+### Item 20: stockbot Post-Gate-1 Architecture Deep-Dive & Implementation Roadmap (Session 854 — NEW)
+**Status**: ACTIVE — Ready for autonomous research
+**Trigger**: Immediate (independent of Gate 1 outcome, builds on existing research)
+**Scope**: Deep-dive analysis of post-Gate-1 implementation priorities (multi-ticker scaling, options overlay, HMM regime validation, multi-asset class integration). Create detailed implementation roadmap with effort estimates, dependency sequencing, risk mitigation.
+**Deliverables** (~8,000 words):
+- **Multi-Ticker Scaling Architecture** (finalization): 11-ticker configuration, dataflow optimization, session lifecycle management, position aggregation schema, P&L attribution
+- **Options Overlay Integration** (build on Item 26 research): Covered call mechanics, OCC symbology handling, Greeks management, performance attribution, live-trading constraints
+- **HMM Regime Scaling** (build on Item 12 framework): Regime detection thresholds, position sizing adjustments, backtest validation protocol, live A/B test methodology
+- **Multi-Asset Class Roadmap** (Phase 1 of post-Gate-1): Futures/crypto data integration, schema expansion, risk aggregation model, implementation phases (P0: equity, P1: options, P2: crypto, P3: futures)
+- **Implementation Sequencing** (16-week roadmap with phase gates): Effort by phase (P0: 30-40h, P1: 20-30h, P2: 35-45h, P3: 25-35h); dependency diagram; success criteria per phase; risk flags
+**Owner**: stockbot agent (autonomous research, builds on 4 prior research items)
+**Key value**: Upon Gate 1 pass on May 12, user immediately has detailed implementation roadmap with effort estimates. No analysis paralysis post-gate.
+**Timeline estimate**: 6-8 hours research + synthesis
+
+---
+
+### Item 21: seedwarden Market Expansion & Adjacent Category Research (Session 854 — NEW)
+**Status**: ACTIVE — Ready for autonomous execution
+**Trigger**: Immediate (independent of Phase 1 launch, informs Phase 3 product roadmap)
+**Scope**: Research adjacent product categories and market expansion opportunities. Map high-margin products, validate supplier viability, identify go-to-market vectors.
+**Deliverables** (~10,000 words):
+- **Adjacent Category Analysis** (6 high-potential product categories): Garden tools (handheld, organizational), storage solutions (seed storage, tool racks), specialty seeds (heirloom, rare varieties), growing media (soil mixes, amendments), propagation supplies (seed trays, grow lights), landscape design templates
+- **Per-Category Viability Assessment**: COGS analysis, margin targets (seedwarden baseline: 85-90%), supplier availability, time-to-first-sale, customer demand signals, competitive landscape
+- **Geographic Expansion** (international markets): UK/EU demand validation (gardening + homesteading large markets), logistics constraints, tax/shipping complexity, localized content adaptation
+- **B2B Channel Mapping**: Community gardens, schools, nonprofits, landscaping firms. Customer acquisition cost vs. PLR licensing revenue. Partnership outreach templates.
+- **Implementation Roadmap** (12-month): Wave 1 (Phase 3 existing-content products): Jul-Aug. Wave 2 (adjacent category pilot): Sep-Dec (1 product, 5-10 listings). Wave 3 (scale validation): Jan-Mar. Decision gates with revenue thresholds.
+**Owner**: seedwarden agent (autonomous research)
+**Key value**: Upon Phase 1 data (45-day mark), user can make Phase 3 product category selection from research-backed options, not gut feel.
+**Timeline estimate**: 6-8 hours research + analysis
+
+---
+
 ### ✅ Item 15: seedwarden B2B Distribution & Wholesale Strategy (Session 786 COMPLETE)
 **Status**: COMPLETED 2026-05-05 22:45 UTC
 **Scope**: Develop B2B distribution channels for Phase 2+ products (seed packets, guides, digital content partnerships)
