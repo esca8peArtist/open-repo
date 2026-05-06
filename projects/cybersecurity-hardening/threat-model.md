@@ -337,29 +337,51 @@ Source: [EFF Street Level Surveillance](https://sls.eff.org/technologies/cell-si
 
 ---
 
-## VI. DOGE Data Consolidation: The Emerging Cross-Agency Database
+## VI. DOGE Data Consolidation: The Operational Cross-Agency Database
 
-This is the most significant structural change to the surveillance landscape since the post-9/11 NSA expansions. DOGE is building what amounts to a centralized government data warehouse that would enable cross-agency profiling at a scale previously impossible.
+**Quarterly review gate: This section assumes post-July 2026 data fusion capabilities as the baseline. The framing below reflects the state of integration as confirmed through May 2026 and projects forward to the July 2026 quarterly review. Update at that gate to reflect any new court rulings on the merits of DOGE data access authority, any new agency-level SORNs expanding data sharing, and any confirmed expansion of Palantir's cross-agency API architecture. Key variables to check: (1) Has the IRS-DHS data sharing agreement been reinstated by any court or expanded by executive action? (2) Has the DOGE "mega API" for IRS data reached production status? (3) Have any new SSA System of Records Notices authorized additional data disclosure categories?**
 
-### Confirmed Actions (Primary Sources)
+This is the most significant structural change to the surveillance landscape since the post-9/11 NSA expansions. As of May 2026, what began as "DOGE is building a centralized data warehouse" has reached partial operational status. The architecture is no longer merely proposed — it is functioning at DHS, SSA, and IRS, with Palantir serving as the cross-agency integration layer. The July 2026 baseline assumption for this threat model is that the data fusion capabilities described below are operational and not subject to effective injunctive relief, based on the current trajectory of litigation.
 
-1. **SSA data transferred to unauthorized server**: A DOGE employee transmitted an encrypted file — believed to contain names and addresses of ~1,000 individuals drawn from SSA systems — to a DHS-linked server without agency knowledge or authorization. Confirmed via DOJ court filing. ([DOGE Congressional reporting](https://larson.house.gov/media-center/in-the-news/doge-shared-social-security-data-unauthorized-server-according-court))
+### Confirmed Actions and Current Status (Primary Sources)
 
-2. **Live SSA database copied to cloud server**: DOGE employees transferred a live copy of the country's Social Security database to a cloud server without independent security controls. SSA cannot confirm what data was shared or whether it still exists on the third-party server. ([NPR](https://www.npr.org/2026/01/23/nx-s1-5684185/doge-data-social-security-privacy))
+1. **SSA data transferred to unauthorized server**: A DOGE employee transmitted an encrypted file — believed to contain names and addresses of ~1,000 individuals drawn from SSA systems — to a DHS-linked server without agency knowledge or authorization. Confirmed via DOJ court filing. A March 2026 whistleblower allegation (Washington Post) further alleged a DOGE member removed Social Security data on a thumb drive. ([DOGE Congressional reporting](https://larson.house.gov/media-center/in-the-news/doge-shared-social-security-data-unauthorized-server-according-court), [Washington Post](https://www.washingtonpost.com/politics/2026/03/10/social-security-data-breach-doge-2/))
 
-3. **IRS-DHS data sharing agreement**: The IRS and DHS signed an agreement for the IRS to share taxpayer information with DHS for immigration enforcement purposes. A federal court has **blocked most IRS data sharing** pending litigation. ([Nextgov/FCW](https://www.nextgov.com/digital-government/2026/03/irs-ceo-largely-dodges-questions-about-data-sharing-irs-ssa/411893/))
+2. **Live SSA database copied to cloud server**: DOGE employees transferred a live copy of the country's Social Security database to a cloud server without independent security controls. SSA's January 16, 2026 court filing admitted that DOGE had wider access than previously disclosed and that data had been transferred to a non-SSA server the agency can no longer reach. ([NPR](https://www.npr.org/2026/01/23/nx-s1-5684185/doge-data-social-security-privacy), [Empire Justice Center](https://empirejustice.org/resources_post/ssa-confirms-doge-misuse-of-data-as-new-sorns-expand-data-sharing/))
 
-4. **Trump executive order authorizing data consolidation**: March 2025, EO "Stopping Waste, Fraud, and Abuse by Eliminating Information Silos" directed agencies to share data across the government. ([Brookings](https://www.brookings.edu/articles/privacy-under-siege-doges-one-big-beautiful-database/))
+3. **SCOTUS restored DOGE SSA access (June 6, 2025)**: The Supreme Court issued an emergency order in *SSA v. AFSCME*, 24A1063, allowing DOGE personnel to access SSA records. The Court's unsigned order explicitly permitted "members of the SSA DOGE Team access to the agency records in question." This is the operative legal status: SSA access is not blocked. ([CNBC](https://www.cnbc.com/2025/06/09/supreme-court-gives-doge-access-to-personal-social-security-data.html), [NBC News](https://www.nbcnews.com/politics/supreme-court/supreme-court-trump-doge-social-security-data-access-elon-musk-rcna206515), [SCOTUS order](https://www.supremecourt.gov/opinions/24pdf/24a1063_6j37.pdf))
 
-5. **Palantir's role confirmed**: Palantir is involved in building out the cross-agency master database at DHS — specifically connecting SSA data, IRS data, biometric data, and voting records. ([CNN Politics](https://www.cnn.com/2025/04/25/politics/doge-building-master-database-immigration))
+4. **Fourth Circuit vacated IRS data sharing injunction (April 2026)**: Per opsec-playbook.md, the Fourth Circuit removed injunctive limits on DOGE data access authority. The underlying merits litigation continues, but as of May 2026, no active court order prevents access. [Quarterly review gate: July 2026 — confirm whether any appellate court has issued a new merits ruling.]
 
-6. **SAVE system overhaul**: DHS and DOGE overhauled the SAVE (Systematic Alien Verification for Entitlements) database into a centralized national citizenship tool linking to SSA records.
+5. **SSA System of Records Notices expanded (January 2026)**: A January 8, 2026 SORN expanded the SSA Hearings and Appeals Case Control System to include 13 new routine disclosure categories, including law enforcement disclosure and disclosure to the Office of the President. This is a formal legal expansion of SSA's data sharing authority — not a violation, but a structural change to what the law now permits. ([Empire Justice Center](https://empirejustice.org/resources_post/ssa-confirms-doge-misuse-of-data-as-new-sorns-expand-data-sharing/))
 
-7. **At least 15 active federal lawsuits** challenging DOGE data access as of early 2026.
+6. **IRS-DHS data sharing agreement**: The IRS and DHS signed an agreement for the IRS to share taxpayer information with DHS for immigration enforcement purposes. A federal court blocked most IRS data sharing pending litigation, but this remains subject to the April 2026 Fourth Circuit ruling. Status at July 2026 quarterly review: confirm whether the court block remains in effect or has been lifted. ([Nextgov/FCW](https://www.nextgov.com/digital-government/2026/03/irs-ceo-largely-dodges-questions-about-data-sharing-irs-ssa/411893/))
 
-### What This Means If Completed
+7. **Trump executive order authorizing data consolidation**: March 2025, EO "Stopping Waste, Fraud, and Abuse by Eliminating Information Silos" directed agencies to share data across the government. ([Brookings](https://www.brookings.edu/articles/privacy-under-siege-doges-one-big-beautiful-database/))
 
-If the master database is fully built, a single query on an individual could surface: their tax returns, income, employment history, Social Security records, healthcare enrollment, immigration status, biometric identifiers, family connections, address history, and voter registration — all in one interface, operated by agents with minimal oversight.
+8. **Palantir "mega API" for IRS data**: Palantir, embedded with DOGE personnel, is building a centralized API for IRS data — confirmed by The Intercept (April 24, 2026) and TechCrunch. The IRS LCA platform currently allows search of "connections from millions of records with thousands of links" including tax returns, ACA enrollment data, bank statements, and FinCEN records. The "mega API" would make this cross-queryable at the agency level with a standardized interface. ([The Intercept](https://theintercept.com/2026/04/24/palantir-irs-contract-data/), [TechCrunch](https://techcrunch.com/2025/04/05/doge-reportedly-planning-a-hackathon-to-build-mega-api-for-irs-data/))
+
+9. **Palantir cross-agency master database at DHS**: Palantir's Foundry is connecting SSA data, IRS data, biometric data, and voting records into a distributed query architecture. This is not a single central repository — it is interoperable Foundry instances at multiple agencies with a common API. The effect is functionally equivalent to a unified database without the legal vulnerability of being a single point of challenge. ([CNN Politics](https://www.cnn.com/2025/04/25/politics/doge-building-master-database-immigration))
+
+10. **SAVE system overhaul**: DHS and DOGE overhauled the SAVE (Systematic Alien Verification for Entitlements) database into a centralized national citizenship tool linking to SSA records.
+
+11. **At least 12 federal lawsuits** challenging DOGE data access as of mid-2026, per State of Surveillance tracking. None has currently produced an injunction that is in effect. ([State of Surveillance](https://stateofsurveillance.org/news/doge-privacy-act-lawsuits-centralized-database-government-surveillance-2026/))
+
+### July 2026 Baseline: What the Fusion Architecture Can Do Now
+
+The pre-integration threat model assumed agencies held siloed data with procedural barriers to cross-agency queries. That assumption is now outdated. The July 2026 baseline — absent a court order reversing the current trajectory — is:
+
+- **SSA records** (SSN, current and past addresses, employer records, benefit payment history) are accessible to DOGE-associated personnel and queryable via Palantir's Foundry architecture.
+- **IRS records** (tax returns, ACA enrollment, bank statements, FinCEN data, crypto wallet analysis) are accessible through the Palantir LCA platform with a "mega API" interface in development or production.
+- **DHS/ICE biometric records** (immigration status, fingerprints, facial images, travel history) feed directly into the same Foundry instances.
+- **HHS/Medicaid records** continue to flow into Palantir ELITE for address confidence scoring.
+- **Mobile Fortify biometric hits** can now be enriched against the SSA/IRS/DHS data fusion layer in near-real time — a capability that was not operationally connected before the June 2025 SCOTUS order.
+
+A single query on an individual can now surface: their tax returns, income, employment history, Social Security records, healthcare enrollment, immigration status, biometric identifiers, family connections, address history, and voter registration — operated by agents with minimal current oversight. The only active legal friction is procedural litigation that has not yet produced an enforceable court order against the core data access.
+
+### What This Means If Completed at Full Scale
+
+The July 2026 quarterly review should assess whether the "mega API" for IRS data has reached production. If it has, the integrated query capability described above becomes available to ICE field officers through a standardized interface — not just to analysts running Palantir workstation queries. That transition would represent the final step from "database exists" to "field-deployable integrated surveillance system."
 
 ---
 
