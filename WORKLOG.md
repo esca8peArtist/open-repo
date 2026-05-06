@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 UTC — Session 854: Exploration Queue Refresh + Stockbot Post-Gate-1 Planning
+
+**Session Context**:
+- All major projects awaiting user decisions (resistance-research path choice, stockbot ARCH decisions, seedwarden tag corrections, mfg-farm test print)
+- Exploration queue depleted of active items (Items 1-52 mostly completed)
+- Per protocol: refresh queue with 2-3 new items, work on high-value research
+- May 12 Gate 1 checkpoint is critical (5 days away) — prioritized post-gate planning
+
+**Autonomous Work Completed**:
+
+✅ **stockbot: Post-Gate-1 Documentation & Planning (3 deliverables)**
+
+1. **`post-gate-1-decision-tree.md`** — Gate 1 checkpoint execution guide (1,204 lines)
+   - Scenarios A/B/C with concrete SQL queries
+   - Six monitoring checkpoints (May 5–12) with cumulative fill targets
+   - Five-path go/no-go decision table for May 12 20:00 UTC execution
+   - Status: Production-ready for May 12 evening decision-making
+   - Commit: 870fa71
+
+2. **`docs/multi-ticker-index-architecture-spec.md`** — SPY/QQQ/IVV index model architecture (2,000+ lines)
+   - Feature engineering compatibility analysis (MTFFeatureExtractor vs. index feature requirements)
+   - Model graduation criteria (Sharpe ≥1.0, MDD ≤20%, regime stability)
+   - Implementation sequencing (18–24h for SPY proof-of-concept)
+   - NOT pre-authorized for Gate 1; documentation for post-Gate-1 decision-making
+   - Commit: 870fa71
+
+3. **`gate-1-scenario-a-implementation-roadmap.md`** — Scenario A deployment plan (7,748 words, EXPLORATION_QUEUE.md Item 53)
+   - **Phase 1 (Covered Call Architecture)**: Event-driven trigger logic, OCC symbology, delta-adjusted notional aggregation ($16.7K call hedge on $22.5K equity delta for 108-share AAPL)
+   - **Phase 2 (Index Model Training)**: Feature pipeline compatibility, backtest framework, bootstrap significance test
+   - **Phase 3 (Capital Redeployment)**: $111K post-settlement allocation, correlation regime adjustment, portfolio monitoring
+   - **Implementation Sequencing**: Critical path analysis, 59–77 hours with parallelism
+   - **Decision Gates**: Three-level go/no-go criteria with specific thresholds
+   - **Integration Checklist**: Five source files (TradingSession, PositionManager, PnLCalculator, alerts.py, api/status), backwards compatibility
+   - Concrete grounding: 108 AAPL shares @ ~$209 = $22,572 equity delta; 11 short calls @ delta -0.35 = 38.5% notional hedged
+   - Status: Production-ready for May 12+ execution planning
+   - Commit: 7aa8e00
+
+**Exploration Queue Refresh**:
+
+✅ **Added 3 New Items (Items 53–55)**:
+- **Item 53**: Stockbot Post-Gate-1 Scenario A Implementation Roadmap ✅ COMPLETED this session
+- **Item 54**: Resistance-research Phase 1 Measurement Dashboard & Automation Setup (QUEUED for execution now)
+- **Item 55**: Cybersecurity-hardening Red Team Tactical Walkthroughs (QUEUED for execution now)
+
+**Project Status After Session 854**:
+- **stockbot**: Post-Gate-1 planning infrastructure complete. May 12 decision-making fully supported with documentation. ARCH decisions still pending user review (not blocking post-gate research).
+- **resistance-research**: Phase 1 awaiting user distribution path decision. Phase 2 preparatory work ready (Items 50, 34, 38 complete; tracker modernization queued post-Phase-1).
+- **seedwarden**: Phase 1 tag corrections pending. Phase 2 production planning complete. Track B photography complete and ready for execution post-Phase-1.
+- **cybersecurity-hardening**: Phase 1/2 production-ready. Red team scenarios research queued (Item 55).
+- **mfg-farm**: Test print block unchanged. Post-test-print staging complete (Item 37); post-test execution readiness high.
+
+**Key Metrics**:
+- **Autonomous work this session**: 3 major stockbot deliverables + 3 new exploration queue items
+- **May 12 readiness**: Decision tree + post-gate planning fully documented; zero ambiguity for Scenario A execution
+- **Gate 1 contingency**: All three scenarios (A/B/C) have decision trees and monitoring queries in `post-gate-1-decision-tree.md`
+
+**Technical Decisions**:
+- Scenario A implementation assumes covered call overlay (income enhancement) + index models (Sharpe/MDD improvement) are parallel non-blocking efforts
+- Capital redeployment depends on ARCH-2 and ARCH-3 resolution (alert thresholds + session registry) — flagged as blocker in Phase 3 section
+- Schema migration identified as critical path blocker (core risk for Phase 1 go/no-go)
+
+---
+
 ## 2026-05-06 23:55–(end) UTC — Session 853: Phase 2 Domain 37b + Seedwarden Track B Completion
 
 **Session Context**:

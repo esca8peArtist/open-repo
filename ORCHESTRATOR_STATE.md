@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-06T23:55:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-06T23:22:24Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.8% (251,142 tokens) | All-models 59.1% | Reset in 121h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.2% (373,422 tokens) | All-models 60.7% | Reset in 121h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -19,60 +19,58 @@
 ## Active Projects
 ### mfg-farm
 **Status**: Active — ready to prototype
-**Focus**: Session 291: Business plan COMPLETE; CadQuery parametric designs COMPLETE; market research + competitive analysis COMPLETE; Etsy/Amazon listing copy COMPLETE; Phase 2 supplier research COMPLETE; Production Scaling & Automation Research COMPLETE. **BLOCKING GATE: test print required.**
-**Blocked**: Test print (user action required)
+**Focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis complete (`market-research.md`). Etsy and Amazon listing copy complete (`etsy-listing-modrun.md`). **P
+**Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
-**Status**: Active — Phase 1-5 COMPLETE + Phase 2 Expansion In Progress, **38 domains total** (35 Phase 1 + 5 Phase 2 domains complete: Domains 27, E, B, F, 37b). Content current through May 6, 2026.
-**Focus**: **Session 853 (2026-05-06 23:55 UTC): Phase 2 Domain 37b COMPLETE; Framework Ready for Continued Phase 2 Expansion**. Five Phase 2 domains now complete (27, E, B, F, 37b). Four domains remain (A, G, C, D). User distribution path decision (A / A+37 / B) still pending for Phase 1 launch.
+**Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
+**Focus**: **Session 837 (2026-05-06): May 2026 Domain Maintenance COMPLETE; Phase 1 Domains Current + Ready for Distribution**. Three domains updated with FISA 702 final outcome and Callais redistricting cascade. Framework 100% ready for Phase 1 execution.
 **Blocked**: User distribution path decision (A / A+37 / B)
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: **Session 837 (2026-05-06): Phase 2 Sequencing Strategy COMPLETE**. Updated threat model, advanced protection techniques, six scenario playbooks, tier 2 audience expansion. Three urgent pre-launch flags identified.
-**Blocked**: Phase 1 user approval to begin Tier 1 outreach
+**Focus**: **Session 837 (2026-05-06): Phase 2 Sequencing Strategy COMPLETE**. Updated threat model identifies 5 capability gaps; advanced protection playbooks designed; 12-month Phase 2 roadmap complete. Three urgent pre-launch flags identified for Phase 1.
 
 ### stockbot
-**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. 19 positions closed May 5 13:30 UTC. AAPL (108 shares, +$924 unrealized) stays open. May 12 Gate 1 checkpoint pending.
-**Focus**: **Current focus**: May 12 Gate 1 feasibility checkpoint (30 round-trip trades minimum). Engine healthy, 2-session stack running. 7 architecture decisions (ARCH-1 through ARCH-7) pending user review.
-**Blocked**: Architecture decisions review (ARCH-1 through ARCH-7 in CODE_REVIEW_SYNTHESIS.md)
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
+**Focus**: **Current focus**:
+**Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
 
 ### seedwarden
-**Status**: Active — Phase 2 Track B COMPLETE, **Wild Edibles PDF Production-Ready**
-**Focus**: **Track B Final Execution COMPLETE (Session 853)**. All 18 wild edibles habit photos present. Large photo (fallopia-japonica, 9.8MB) compressed to 0.20MB. PDF with photo credits page generated (22 pages, 1.21 MB). Production-ready for Etsy listing.
-**Blocked**: None (Track B complete); Track A awaiting user tag corrections + Etsy account verification
+**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
+**Focus**: **Track B Final Execution Prep COMPLETE (Session 728)**. All assets verified, all execution guides written. User can execute immediately with zero ambiguity:
+**Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
 **Focus**: **PR #1 OPEN** (2026-04-26): https://github.com/esca8peArtist/open-repo/pull/1
-**Blocked**: External maintainer review
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
-**Focus**: **GitHub Publication COMPLETE (Session 486)**. All tasks executed.
-**Blocked**: User execution of Reddit/Twitter distribution
+**Focus**: **GitHub Publication COMPLETE (Session 486)**. All tasks executed:
 
 ### workout
 **Status**: Active
-**Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers × multiple frequencies with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols.
-**Blocked**: User review and selection
-
+**Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers (no equipment, bands, full gym) × multiple frequencies (3/4/5/6 days), with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols. Awaiting user review and selection.
 ## Active Blocks
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
-
 ---
-
+---
 ### stockbot — Architecture decisions from full code review (discuss before implementing)
 **Date blocked**: 2026-05-05
 **Context**: Full 4-layer Opus code review complete (see `projects/stockbot/CODE_REVIEW_SYNTHESIS.md`). 15 safe issues were auto-fixed. 7 architecture decisions require discussion before code changes proceed.
 **What I need**: Review the items below and confirm direction. Full detail in `CODE_REVIEW_SYNTHESIS.md`.
-**ARCH-1 through ARCH-7**: See BLOCKED.md for full details
+**ARCH-1 — `live_engine.py` fate** (HIGH, 4–12h): Two parallel engine implementations exist. `TradingSession` is production; `LiveEngine` is dead. Options: delete it, keep as deprecated reference (already done), or backport its `RiskManager`/`PnLCalculator`/`ShutdownHandler` into `TradingSession`.
+**ARCH-2 — Alert threshold divergence** (HIGH, ~3h): `alerts.py` has a 25% single-ticker position cap; `trading_session.py` has 5%. Drawdown limit: 20% vs 8%. `AlertManager` is never called in production — the `alerts.jsonl` log is always empty. Fix: extract shared `thresholds.py` and wire `AlertManager` into the session lifecycle.
+**ARCH-3 — Dual session registry** (HIGH, ~2h): `/api/trading/heartbeat` and `/api/status` only see `app.state.active_trading_session` (legacy). Sessions started via the current path are invisible to those endpoints. Fix: remove the legacy field, update heartbeat/status to use `paper_trading_sessions` dict.
+**ARCH-4 — `integration.py` + `ModelAdapter` dead in production** (~2h): All 6 functions in `integration.py` are test-only. `ModelAdapter` only used by `integration.py`. Recommend: delete both after porting acceptance tests to use `ModelBasedStrategy` directly.
+**ARCH-5 — Phase 6 analytics stack** (~2h): `MetricsCollector`, `StrategyAnalyzer`, `MetricsExporter` were superseded by `PostTradeAnalyzer` but never deleted. Only used by tests. Decide: delete or wire into the trading session.
+**ARCH-6 — No schema migration system** (~4h): `create_all()` won't add new columns to existing tables. No Alembic, no ALTER TABLE runner. Risk: silent schema drift on column additions.
+**ARCH-7 — Three `PerformanceMetrics` classes** (~2h): ORM model, analytics calculator, backtesting calculator — all named `PerformanceMetrics`. Recommend: rename ORM model to `PerformanceSnapshot`.
 **Verify with**: `# manual — user review of CODE_REVIEW_SYNTHESIS.md required`
 **Resolution**:
-
 ---
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -84,44 +82,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- Session 853: Domain 37b State Election Security research complete (6,800 words, 43 citations); Seedwarden Wild Edibles PDF with photo credits complete (22 pages, 1.21 MB)
-- Session 852: Phase 2 Domain E (Election Administration), Domain B (Healthcare/OBBBA), Domain F (Civil Society Suppression) — all complete and committed
-- Parallel Phase 2 research execution; Phase 1 framework (35 domains) ready for distribution; 5 Phase 2 candidates complete
-- Key calendar dates identified: June 1 (Domain B HHS guidance), June 15 (Domains E + 37b election official deadlines), July 1 (Domain F Florida implementation)
+- Date changed to 2026-05-07 (May 7)
+- Oriented to ORCHESTRATOR_STATE.md + PROJECTS.md for active work
+- Found all major Phase 2 research work already complete from prior sessions
+- Selected highest-priority unblocked work: Item 15 (Workout Nutrition)
 
-Key Metrics:
-- **Autonomous work this session (853)**: 2 major deliverables (Domain 37b + Seedwarden PDF)
-- **Phase 2 progress**: 5 of 9 high-priority candidates complete (56% progress)
-- **Next checkpoint**: User distribution path decision triggers Phase 1 launch
+**Autonomous Work Completed**:
+
+✅ **Phase 2 Validation (Parallel Agents)** — All work from Sessions 850-851 confirmed complete:
+1. **resistance-research Domain 23**: Already production-ready (10,758 words, Session 521)
+2. **seedwarden Wild Edibles PDF credits**: Already complete with photo credits page (Session 851, commit 4ed31f8f)
+3. **cybersecurity-hardening pre-launch flags**: Flags 1 & 3 updated with new commits (7b9428f4, aa6049d8); Flag 2 already implemented
+
+✅ **Workout Nutrition & Meal Planning Framework** (EXPLORATION_QUEUE.md Item 15):
+- **Deliverable**: 6 comprehensive documents (16,748 words total)
+  1. `nutrition-01-macro-micronutrient-framework.md` (2,515 words) — Protein/carb/fat targets by goal, micronutrient protocols with blood test thresholds
+  2. `nutrition-02-meal-timing-nutrient-timing.md` (2,650 words) — Pre-workout, intra-workout, post-workout timing; sleep nutrition stack; daily meal architecture
+  3. `nutrition-03-meal-planning-templates.md` (3,530 words) — 3×7-day meal plans (hypertrophy, strength, conditioning), vegan adaptations, budget tiers
+  4. `nutrition-04-supplementation-guide.md` (2,711 words) — Tier 1/2/3 supplements with evidence grades, dosing, timing, monthly cost analysis
+  5. `nutrition-05-periodization.md` (2,437 words) — Macro cycling, caloric models (surplus/maintenance/deficit), body recomposition, annual periodization calendar
+  6. `nutrition-06-recovery-optimization.md` (2,905 words) — Sleep quality nutrition, hydration protocols, stress management, injury recovery phases, monitoring signals
+- **Sources**: 12 peer-reviewed studies from 2024–2025; IOC consensus guidelines
+- **Integration**: Fully aligned with Phase 1 comprehensive workout programs (16,927 words) and Phase 2 sports-specific extensions
+- **Commit**: Committed to master by workout agent
+
+**Projects Status After Session 853**:
+- **resistance-research**: All 44 domain documents production-ready (35 Phase 1 + 9 Phase 2 high-priority). Phase 1 launch-ready; awaiting user path decision (A/A+37/B).
+- **workout**: All 3 phases complete: Phase 1 (comprehensive programs), Phase 2 (sports extensions), Phase 3 (nutrition framework). 33,675 total words. Production-ready for user review.
+- **seedwarden**: Phase 1 tag corrections pending; Phase 2 (Track B) completely ready for publication.
+- **cybersecurity-hardening**: All Tiers production-ready; awaiting user distribution approval.
+- **stockbot**: May 12 checkpoint 5 days away; architecture review pending.
+- **mfg-farm**: Test print block unchanged; all post-test sequences staged.
+- **open-repo**: PR #1 awaiting external review.
+
+**Blocks Status**: No new blocks. Previous 2 blocks remain user-action-dependent (stockbot ARCH decisions, mfg-farm test print).
+
+**Exploration Queue Status**: Item 15 (Workout Nutrition) completed; remaining queued items blocked on external triggers (user path decision for Item 6, PR #1 merge for Item 5, etc.). Queue will auto-refresh when user triggers Phase 1 execution.
+
+**Key Metric**: Session completed autonomous research work; all major discovery/documentation complete. Next session will focus on Phase 1 execution or user-decision-dependent work.
 
 ---
-
-## 2026-05-06 23:55–(in progress) UTC — Session 853: Phase 2 Domain 37b + Seedwarden Track B Completion
-
-**Session Context**:
-- Continued from Session 852 (Domains E, B, F complete)
-- Spawned two parallel agents for autonomous work
-- Both projects had clear, blockerless work available
-
-**Autonomous Work In Progress**:
-
-✅ **resistance-research: Phase 2 Domain 37b — State Election Security** (Agent a3dc9fe49ea825020) — COMPLETED
-- Domain: State Election Security and Election Administration Vulnerability
-- Deliverable: `phase2-domain-37b-state-election-security.md` (production-ready, committed)
-- Key findings:
-  1. Vendor concentration: 90% of election technology by 3 companies; no mandatory source code disclosure; acquisition risks unreviewed
-  2. Paper record progress (98%) but ballot-marking device vulnerabilities and low voter verification rates
-  3. Risk-limiting audit adoption gap: only 6 states with RLA in statute; others use insufficient fixed-percentage audits
-  4. Nine ERIC departures created voter database integrity gaps
-  5. Only 11 states enrolled in MS-ISAC post-federal-agreement-end; battleground states lack threat intelligence
-  6. 53 election-denying candidates for certification authority in 2026; Arizona critical
-  7. FY27 budget proposes permanent election security elimination ($39.6M)
-  8. International precedent shows U.S. fragility is designed: Canada (statutory independence), Australia (independent AEC), Germany (hand-marked ballots)
-- Business value: Direct leverage for election law orgs, state AGs, Secretaries of State; June 15 assessment deadline creates advocacy window
-- Status: Committed to master; ready for Phase 2 distribution analysis
-
-✅ **seedwarden: Phase 2 Track B — Wild Edibles PDF Complete** (Agent a473644b8ef276c35) — COMPLETED
-- Finding: Photo compression + PDF generation with credits page complete
-- Status: PDF production-ready (22 pages, 1.21 MB, within Etsy 5MB limit); 18 habit photos licensed and attributed; fallopia-japonica compressed 98%
-- Next action: No further autonomous work; awaiting user photo strategy decision for future uploads
-- Note: Track B fully complete; awaiting user feedback before proceeding

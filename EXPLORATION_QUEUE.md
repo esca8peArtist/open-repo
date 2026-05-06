@@ -1069,6 +1069,70 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 
 ---
 
+## New Items (Session 854 — 2026-05-07 Orchestration)
+
+### Item 53: Stockbot Post-Gate-1 Scenario A Implementation Roadmap
+**Status**: ACTIVE — No external dependencies, May 12 checkpoint triggers execution
+**Trigger**: Gate 1 passes on May 12 (≥3 SELL fills by 20:00 UTC)
+**Scope**: Detailed implementation roadmap for Scenario A: deploying covered call overlay + multi-ticker index models post-Gate-1
+**Deliverables**:
+- `gate-1-scenario-a-implementation-roadmap.md` (5,000 words)
+  - Phase 1: Covered call architecture (event-driven trigger logic, OCC symbology, delta-adjusted notional aggregation, Greeks hedging)
+  - Phase 2: Index model training (SPY/QQQ backtest, feature pipeline validation, ensemble voting mechanics vs. single-stock baseline)
+  - Phase 3: Multi-asset capital redeployment (risk budget allocation, correlation regime adjustment, leverage/margin constraints)
+  - Implementation sequencing: 18h Phase 1 (covered calls), 24h Phase 2 (index training), 12h Phase 3 (capital deployment)
+  - Decision gates: Phase 1 go/no-go (Sharpe ≥0.8), Phase 2 go/no-go (MDD ≤15%), Phase 3 go/no-go (institution-ready deployment)
+- Integration checklist with existing 62-ticker AAPL engine (database schema, position aggregation, P&L calculation)
+- Risk management framework: Circuit breakers, position sizing limits, drawdown alerts
+**Owner**: stockbot agent (autonomous execution upon Scenario A signal)
+**Prerequisites**: Gate 1 passes May 12 with ≥3 SELL fills
+**Key areas**: Covered call liquidity constraints (near-ATM vs. OTM premium differential), Greeks decay management, index correlation regime detection, multi-session capital coordination
+**Timeline**: Immediate execution if triggered May 12; parallelizable pre-work begins after May 12 signal
+
+---
+
+### Item 54: Resistance-research Phase 1 Measurement Dashboard & Automation Setup
+**Status**: ACTIVE — No external dependencies, pre-work for Phase 1 launch
+**Trigger**: Autonomous execution now; enables real-time tracking the moment Phase 1 distribution goes live
+**Scope**: Implement Phase 1 measurement infrastructure (dashboards, data collection, automation), building on measurement framework (Item 17) and tracker audit (Item 38)
+**Deliverables**:
+- `phase-1-measurement-implementation-guide.md` (4,000 words)
+  - Real-time dashboard setup (GitHub Pages + JSON API for automated updates)
+  - Domain engagement tracker (views, clicks, institutional downloads, citation tracking)
+  - Tracker automation pipeline (PACER API ingestion for prosecutorial-weaponization, DOJ press releases for first-amendment, EPA ECHO for environmental)
+  - Weekly/monthly reporting cadence (automated summary emails, dashboard refresh schedule)
+  - Error budget and validation checks (false-positive filters, source credential verification)
+- `phase-1-dashboard-json-schema.md` — Data structure for automated population
+- `tracker-automation-ci-pipeline.md` — GitHub Actions workflow for weekly updates (no manual intervention required)
+- Setup checklist (API credentials, GitHub Pages deployment, scheduler configuration)
+**Owner**: resistance-research agent (autonomous execution)
+**Estimated effort**: 3-4 hours research + setup (pre-work), then <5min/week ongoing
+**Key areas**: Attribution fidelity (direct vs. indirect institutional reach), FOIA API rate limits, automated press release ingestion, falsifiability validation
+**Outcome**: Phase 1 launches with real-time measurement live. Institutional adoption signals visible within 48 hours of distribution.
+
+---
+
+### Item 55: Cybersecurity-hardening Red Team Tactical Walkthroughs
+**Status**: ACTIVE — No external dependencies, complements Tier 1 delivery infrastructure
+**Trigger**: Autonomous execution now; adds adversary response scenarios to operational readiness guides
+**Scope**: Develop red team tactical walkthroughs (threat actor perspectives) to validate Tier 1 hardening recommendations under active adversary scenarios
+**Deliverables**:
+- `red-team-opsec-challenge.md` (3,500 words) — 5 escalating adversary scenarios:
+  1. **Passive surveillance** (metadata collection, pattern-of-life) → which hardening measures defeat it → validation tests
+  2. **Active network recon** (traffic analysis, VPN provider targeting) → which measures defeat it → validation tests
+  3. **Device-level compromise** (malware/rootkit) → which measures survive it → validation tests
+  4. **Shoulder surfing + social engineering** (phishing, pretexting) → which measures defeat it → validation tests
+  5. **Physical compromise** (device theft, border search) → which measures defeat it → validation tests
+- `tor-bridge-evasion-protocols.md` (1,500 words) — Practical protocols for Snowflake/obfs4 bridge detection evasion under active network fingerprinting (ISP DPI, GFW-level detection, MITM injection attacks)
+- `endpoint-secure-boot-recovery-plan.md` (1,500 words) — Recovery procedures after BitLocker/FileVault device compromise (remote credential invalidation, Tor-only recovery, dead-drop key recovery)
+- `validation-framework.md` (1,500 words) — How-to test that hardening holds under each threat scenario (no need for actual red teamers; automated tests + manual checks)
+**Owner**: cybersecurity-hardening agent (autonomous execution)
+**Estimated effort**: 4-5 hours research + scenario validation
+**Key areas**: Adversary cost-benefit curves (enterprise vs. SMB targeting), sensor attribution (which logs prove compromise), false-positive elimination in intrusion detection
+**Outcome**: Tier 1 delivery now includes tactical confidence (users can reason about whether hardening actually protects against their realistic threat model).
+
+---
+
 ## New Items (Session 703 — 2026-04-30 Orchestration)
 
 ### ✅ Item 33: stockbot May 12 Contingency Planning & Hedging Strategy (Session 703 COMPLETE)

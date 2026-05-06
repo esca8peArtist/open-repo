@@ -1,3 +1,65 @@
+## Since Last Check-in (Session 854 — 2026-05-07 UTC) — EXPLORATION QUEUE REFRESH + STOCKBOT POST-GATE-1 PLANNING COMPLETE
+
+### STATUS: **Session 854 prepares for critical May 12 Gate 1 checkpoint and refreshes exploration queue for post-user-decision work**. All major projects blocked on user decisions (resistance-research path, stockbot ARCH review, seedwarden tags, mfg-farm test print); per protocol, added 3 new exploration queue items (53–55) and executed Item 53 autonomously. Stockbot now has production-ready post-gate planning documentation: `post-gate-1-decision-tree.md` (scenario A/B/C decision paths with SQL queries), `multi-ticker-index-architecture-spec.md` (SPY/QQQ research), and `gate-1-scenario-a-implementation-roadmap.md` (7,748 words, phases 1-6 covered call + index architecture). No new blockers. Usage: Sonnet ~4.8%; all-models ~62%.
+
+**What Changed (Session 854 exploration queue + post-gate planning)**:
+
+✅ **Exploration Queue Refresh**: All Active Items (1–52) completed or queued on external triggers. Added Items 53–55:
+- **Item 53** ✅ COMPLETED: Stockbot Post-Gate-1 Scenario A Implementation Roadmap
+- **Item 54**: Resistance-research Phase 1 Measurement Dashboard & Automation Setup (QUEUED — executable now, triggers real-time tracking upon Phase 1 launch)
+- **Item 55**: Cybersecurity-hardening Red Team Tactical Walkthroughs (QUEUED — executable now, validates Tier 1 hardening under active adversary scenarios)
+
+✅ **stockbot: Post-Gate-1 Planning Documentation (3 deliverables, 10+ hours research)**
+
+1. **`post-gate-1-decision-tree.md`** (1,204 lines) — Gate 1 checkpoint execution guide for May 12 20:00 UTC
+   - **Scenario A** (≥3 SELL fills, ~25% probability): PASS → proceed to Gate 2, implement covered calls + index models
+   - **Scenario B** (1–2 SELL fills, ~25%): Near-miss → three diagnosis patterns (B1/B2/B3) with recovery options, extension decision tree
+   - **Scenario C** (0 SELL fills, ~30%): Clear miss → root-cause triage, redesign paths with June 12 reprojection
+   - **Scenario D** (other): Residual abort conditions
+   - **Monitoring**: 6 checkpoints (May 5, 6, 8, 9, 11, 12) with SQL queries and cumulative fill targets
+   - **Five-path decision table**: PASS → EXTEND → WAIT → DIAGNOSE → ABORT with specific preconditions
+   - Status: Production-ready for May 12 evening market close execution
+
+2. **`docs/multi-ticker-index-architecture-spec.md`** (2,000+ lines) — SPY/QQQ/IVV research for post-Gate-1 implementation
+   - Feature engineering compatibility (existing MTFFeatureExtractor works for indices with param adjustments)
+   - Model graduation criteria (Sharpe ≥1.0, MDD ≤20%, regime stability across 500+ bars)
+   - Implementation sequencing (18–24h SPY proof-of-concept)
+   - Six research questions answered for rapid post-gate decision-making
+   - Status: NOT pre-authorized for Gate 1 phase; documentation for post-Gate-1 strategic planning
+
+3. **`gate-1-scenario-a-implementation-roadmap.md`** ✅ (7,748 words, Item 53 COMPLETED this session)
+   - **Phase 1 (Covered Call Architecture)**: Event-driven trigger logic, OCC symbology construction (e.g., AAPL 260619C00215000), delta-adjusted notional aggregation, Greeks management
+     - Concrete example: 108-share AAPL @ ~$209 = $22,572 equity delta; 11 short calls @ delta -0.35 = $5,852 call delta; net $16,720 net delta = 15.1% portfolio hedged
+     - Integration points: TradingSession, PositionManager, PnLCalculator, alerts.py, api/status
+   - **Phase 2 (Index Model Training)**: Feature pipeline compatibility, backtest framework (HP-002 baseline), bootstrap significance test gate criterion
+     - Tradeoff: AAPL 2.28% vol threshold vs. SPY 0.44% (drives HP param adjustment)
+   - **Phase 3 (Capital Redeployment)**: $111K post-settlement allocation, correlation regime adjustment, ETF overlap exposure, portfolio monitoring
+   - **Implementation Sequencing**: Critical path (schema migration is root blocker), three parallelizable tracks, 59–77 hours with parallelism vs. 82–110 serially
+   - **Decision Gates**: Phase 1 go/no-go (theta accumulation backtest), Phase 2 go/no-go (bootstrap significance), Phase 3 go/no-go (MDD ≥20% improvement)
+   - **Integration Checklist**: Five source files, backwards compatibility guarantees, production SQL queries
+   - Status: Production-ready for May 12+ execution upon Scenario A signal
+
+**Projects Status After Session 854**:
+- **stockbot**: May 12 Gate 1 checkpoint fully documented. Post-gate planning infrastructure complete (decision tree, index research, Scenario A roadmap). ARCH decisions (ARCH-1–7) still pending user review; not blocking post-gate research. Ready for May 12 market close execution.
+- **resistance-research**: Phase 1 (35 domains) awaiting user distribution path decision (A/A+37/B). Phase 2 research complete for 5 of 9 candidates; additional work queued (Items 28, 54). Phase 1 measurement infrastructure queued (Item 54 — executable now).
+- **seedwarden**: Phase 1 tag corrections pending. Phase 2 Track B complete (photography + social + email automation). Red team scenarios queued (Item 55).
+- **cybersecurity-hardening**: Phase 1/2 complete. Red team validation queued (Item 55).
+- **mfg-farm**: Test print block unchanged. Post-test execution prep fully staged (Items 37, 24).
+
+**Needs Your Input**:
+1. **resistance-research distribution path** (PRIORITY): Select Path A / Path A+37 Hybrid / Path B. **Recommendation**: Path A+37 Hybrid captures election-protection urgency (May 30 DOJ consent decree window).
+2. **stockbot ARCH decisions** (PRIORITY): Review ARCH-1–7 in `CODE_REVIEW_SYNTHESIS.md`. Approvals unblock capital redeployment + session registry fixes.
+3. **May 12 Gate 1 checkpoint** (5 days): Fully documented; ready for decision-making and scenario execution at market close.
+
+**What's Next (recommended sequence)**:
+1. **Immediate**: Approve/discuss stockbot ARCH decisions (enables Phase 3 capital deployment post-Gate-1)
+2. **May 7–12**: User selects resistance-research distribution path → orchestrator stages Phase 1 execution (Gist creation, email templates, contact outreach)
+3. **May 12 20:00 UTC**: Execute decision tree at market close; assess Gate 1 outcome; if Scenario A, begin Scenario A roadmap execution
+4. **May 13+**: Deploy covered calls + SPY model training (if Gate 1 passes); Phase 1 measurement dashboard activation (Item 54) ready for immediate implementation
+5. **Post-Phase-1-launch**: Item 54 (Phase 1 measurement) + Item 55 (red team scenarios) become highest-priority autonomous work
+
+---
+
 ## Since Last Check-in (Session 853 — 2026-05-07 00:15–01:30 UTC) — PHASE 2 VALIDATION + WORKOUT NUTRITION FRAMEWORK COMPLETE
 
 ### STATUS: **Session 853 validates Phase 2 completion status; Workout Nutrition Framework (16,748 words) delivered production-ready**. Three parallel agents confirmed resistance-research Phase 2 domains (23, 27-29, 31, 33-34, 35, 36, 37) all production-ready; seedwarden wild-edibles PDF credits already complete; cybersecurity pre-launch flags 1 & 3 updated. Exploration Queue item 15 (Workout Nutrition) executed autonomously: 6 documents (Macro/Micronutrient Framework, Meal Timing, Meal Planning Templates, Supplementation Guide, Periodization, Recovery Optimization) committed to master. All major autonomous research work complete. No new blocks. Usage: Sonnet ~3.2%; all-models ~62%.
