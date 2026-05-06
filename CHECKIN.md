@@ -68,35 +68,39 @@
 
 ---
 
-## Since Last Check-in (Session 816 — 2026-05-06 07:40–08:00 UTC) — CYBERSECURITY RESEARCH COMPLETION + EXPLORATION QUEUE MAINTENANCE + DTBP RESET SCHEDULED
+## Since Last Check-in (Session 816 — 2026-05-06 09:15–13:30 UTC) — ORIENTATION COMPLETE + EXPLORATION QUEUE REFRESHED + DTBP VERIFICATION SCHEDULED FOR MARKET OPEN
 
-### STATUS: System at Maximum Readiness; Exploration Queue Maintained at 3+ Items; DTBP Verification Auto-Scheduled for 13:30 UTC; Awaiting Market Open & User Decisions
+### STATUS: All Projects at Maximum Readiness; Exploration Queue Maintained at 3+ Items; DTBP Reset Verification Auto-Scheduled at Market Open (13:30 UTC); Awaiting User Decisions to Unlock Work
 
-**Autonomous Work Completed**:
+**Session Work Completed**:
 
-1. ✅ **Marked COMPLETE**: cybersecurity-hardening May 2026 Threat Landscape Deepening
-   - File: `projects/cybersecurity-hardening/may-2026-advanced-threats.md` (7,198 words, 38 sources, production-ready)
-   - Coverage: Synthetic ID + voice cloning (ProKYC ecosystem, family code word defenses), supply chain sophistication (Shai-Hulud Wave 3 + Bitwarden April 22 + LogoFail UEFI patterns), 2026 election infrastructure threats (CISA -1K staff, EI-ISAC funding collapse, state distrust signals), Palantir expansion (Maven Smart System POD designation, $300M USDA BPA, $75M IRS workforce surveillance), policy response windows (S.4082 June 12, IRS-ICE litigation at circuit court, 7-state polling place bills)
-   - Updated PROJECTS.md with completion marker; moved from pending queue to archived research
+1. ✅ **Orientation** (09:15–09:20 UTC)
+   - Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md
+   - Identified project status: All blocked on user decisions (distribution path, test print, architecture review, tag corrections, Tier 1 approval) or time-based events (DTBP reset)
+   - Exploration Queue at 2 active items (both blocked on user decisions); protocol requires 3+ minimum
 
-2. ✅ **Exploration Queue Maintenance** (Session 816)
-   - Added 3 new high-value research items to queue (maintains 3+ buffer per protocol)
-   - New items: (1) **mfg-farm USPS/thermal printer integration** (2-3h: Brother QL-800 setup, USPS Intelligent Mail API, batch label automation), (2) **seedwarden May 2026 competitor pricing refresh** (2h: updated competitor analysis, Etsy algorithm May changes, Phase 2 pricing refinement), (3) **mfg-farm 3PL readiness analysis** (2-3h: Simpl/ShipMonk/Printful evaluation for 50+ units/week, integration complexity, cost-benefit break-even)
-   - Rationale: System at maximum readiness; all projects blocked on user decisions or time-based events; queue discipline requires 3+ items minimum for reactive execution
+2. ✅ **Exploration Queue Refresh** (09:20–09:25 UTC)
+   - Added 2 new high-value research items to maintain queue at 3+ active
+   - **New Item 1**: mfg-farm Supplier Negotiation & Production Scaling Playbook (post-test-print) — 3-4h research, includes negotiation scripts, supplier matching, scaling milestones
+   - **New Item 2**: resistance-research Phase 1 Impact Measurement & Feedback Loop Design — 3-4h research, includes metrics framework, feedback templates, adoption signal detection
+   - Committed to master (commit 4110aeca)
+   - Rationale: Maintain reactive-execution capacity per protocol; all new items enable post-user-decision work
 
-3. ⏳ **DTBP Reset Verification Scheduled** (one-shot task, cron: 30 13 6 5 * / May 6 13:30 UTC)
-   - Pre-market check: DTBP = $0 at 07:40 UTC (as expected, pre-market)
-   - Account health: Equity $112,644.69, Maintenance Margin nominal
-   - Scheduled auto-verification: 13:30 UTC market open (cron task c6c8f1cb)
-   - Expected outcome: DTBP reset to ~$400K per Alpaca daily recalculation
+3. ⏳ **DTBP Reset Verification Scheduled** (09:25 UTC, wake in ~4 minutes)
+   - Pre-market baseline: DTBP = $0 at 09:15 UTC (expected, pre-market state from prior margin call)
+   - Scheduled wake-up: 13:20 UTC (10 min before market open at 13:30 UTC)
+   - Auto-verification: curl command to check DTBP; if still 0, investigate further
+   - Expected outcome: DTBP reset to ~$400K per Alpaca daily recalculation at market open
 
 **Current Blockers** (unchanged):
-- ⏳ DTBP Reset at 13:30 UTC (auto-verification scheduled; no further action needed)
+- ⏳ DTBP Reset at 13:30 UTC (auto-verification scheduled, wake-up at 13:20 UTC)
 - 🔴 User distribution path decision (A / A+37 / B) → unlocks resistance-research Phase 1 (3-4h autonomous)
 - 🔴 User architecture review (CODE_REVIEW_SYNTHESIS.md) → unlocks stockbot ARCH fixes (4-12h autonomous)
 - 🔴 User test print execution (CadQuery ModRun designs) → unlocks mfg-farm launch sequence (2-3h autonomous)
 - 🔴 Seedwarden tag corrections (3) + Etsy account verification → unlocks Phase 1 upload
 - 🔴 Cybersecurity Tier 1 approval → unlocks distribution outreach execution (10-15h autonomous)
+
+**System Status**: Excellent. All projects at maximum readiness. Exploration Queue maintained at 3+ active items per protocol. All autonomous non-blocked work completed (Session 729: 42K words). DTBP monitoring on schedule. Awaiting user decisions to unlock 5 work waves.
 
 **System Status**: Excellent. All projects at maximum readiness. Zero breaking issues. All non-blocked autonomous work cleared. Exploration Queue: 3 items ready for future execution. DTBP monitoring on schedule. System positioned for reactive execution.
 
