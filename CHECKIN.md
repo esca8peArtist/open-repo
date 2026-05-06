@@ -1,6 +1,6 @@
-## Since Last Check-in (Session 840 — 2026-05-06 17:20–18:15 UTC) — EXPLORATION QUEUE RESEARCH EXECUTION: PHASE 3 JUDICIAL INDEPENDENCE RECOVERY COMPLETE
+## Since Last Check-in (Session 841 — 2026-05-06 18:16–18:32 UTC) — CYBERSECURITY-HARDENING PHASE 1 FINAL FIXES COMPLETE
 
-### STATUS: Exploration queue item (resistance-research Phase 3 Candidate 5) executed successfully. Judicial independence recovery research (11,682 words, 85 citations) complete and committed to master. All main projects remain blocked on user decisions. No new blockers. Usage: Sonnet 2.2% session open; total all-models 52.1% (reset in 127h).
+### STATUS: Two urgent Phase 1 pre-launch fixes implemented (duress PIN documentation + Mobile Fortify threat context). cybersecurity-hardening Phase 1 now production-ready for distribution launch. All main projects remain blocked on user decisions. No new blockers. Usage: Sonnet 2.2%; all-models 52.4% (reset in 127h).
 
 **Session 840 Work Completed**:
 - ✅ **resistance-research: Phase 3 Candidate 5 — Judicial Independence Recovery Mechanisms** (COMPLETE, commit 90c01fa0)
