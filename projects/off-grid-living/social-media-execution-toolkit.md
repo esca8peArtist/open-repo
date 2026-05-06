@@ -13,7 +13,7 @@ github_url: https://github.com/esca8peArtist/off-grid-living-guide
 
 This document provides research-backed, platform-specific execution guidance for the post-publication distribution of the off-grid-living-guide. Version 2.0 adds a named influencer outreach directory, a Reddit account warm-up protocol drawn from 2025 shadowban research, and expanded decision rules.
 
-**Lead finding**: Reddit (specifically r/preppers, then r/offgrid) is the highest-leverage single channel for initial distribution. GitHub stars are the only durable success metric — they compound over time via GitHub Trending and search indexing in a way that Reddit karma does not. A realistic 30-day star target is 150–400, with viral upside possible if HackerNews gains traction. However, the single most common failure mode for new accounts is posting too quickly — Reddit's spam filter treats "new account + external link + first post" as an automatic spam pattern. The warm-up protocol below addresses this directly.
+**Lead finding**: Reddit is the highest-leverage channel for initial distribution. The recommended sequencing is r/offgrid first, then r/preppers, then r/homesteading — in that order. r/offgrid comes first because it is the tightest audience fit and small enough that a post reaching its top generates visible social proof; r/preppers is next because it has 10x the reach and a genuinely different content angle (disaster/nuclear, not general off-grid systems); r/homesteading is last because it benefits from social proof already established. GitHub stars are the only durable success metric — they compound over time via GitHub Trending and search indexing in a way that Reddit karma does not. A realistic 30-day star target is 150–400, with viral upside possible if HackerNews gains traction. However, the single most common failure mode for new accounts is posting too quickly — Reddit's spam filter treats "new account + external link + first post" as an automatic spam pattern. The warm-up protocol below addresses this directly.
 
 ---
 
@@ -146,7 +146,65 @@ If a post goes live but receives zero engagement after 30 minutes during peak ho
 
 ---
 
+## Part 2b: Upvote Velocity and Engagement Decay Mechanics
+
+Understanding how Reddit's ranking algorithm works changes when and how you post — not just where.
+
+### The 60-Minute Window
+
+Reddit uses a hot score based on net upvotes combined with a logarithmic time decay function. The key practical fact: **posts that fail to reach approximately 10 upvotes within the first 60 minutes almost never recover organic traction**. Time decay is aggressive — every 12.5 hours a post needs roughly 10x its current score to hold the same ranking position.
+
+This means velocity beats volume. A post that gets 15 upvotes in the first hour consistently outranks one that accumulates 30 upvotes over 12 hours.
+
+**Implications for execution**:
+- Post only when you are present for the following 90 minutes
+- Respond to every comment in the first hour — comment velocity is a secondary signal the algorithm reads
+- Your first author comment (added within 5 minutes of posting) should add substantive information not in the post body; this signals active engagement and creates a reply entry point for other users
+- Posts with 10+ upvotes and 3+ comments at the 60-minute mark have entered a self-sustaining growth phase; posts with fewer than 5 upvotes and 0 comments at 60 minutes should be treated as likely filtered or dead
+
+### The First 30 Minutes: Detection vs. Momentum
+
+There are two distinct failure states in the first 30 minutes:
+
+1. **Spam-filtered**: Post receives exactly 0 engagement. Test by opening the subreddit in a logged-out browser. If the post is invisible, it was filtered — modmail the subreddit.
+
+2. **Low organic velocity**: Post is visible but not gaining traction. This usually indicates one of: wrong posting time, title not compelling to this specific community, or account karma too low to surface the post in community feeds. Do not delete and repost — accept the result and apply the learning to the next post.
+
+### Engagement Decay After Launch
+
+Typical lifecycle for a mid-performing post in a tight-niche subreddit (50–150 upvotes):
+- **Hours 0–2**: 60–80% of total upvote accumulation
+- **Hours 2–12**: Remaining organic growth; US west coast and EU morning time zones can extend this
+- **Hours 12–48**: Occasional late comments; upvote growth effectively stopped
+- **Days 3–30**: Near-zero subreddit traffic; GitHub Insights may still show residual Reddit referrers from search-indexed post pages
+
+The practical implication: have secondary channels (HN, Twitter) queued and ready to fire before the r/offgrid engagement curve peaks. The sequencing is designed so that by the time r/offgrid has decayed, r/preppers is generating its own velocity spike — keeping the GitHub traffic curve elevated rather than showing a single spike and drop.
+
+---
+
 ## Part 3: Cross-Platform Sequencing Strategy
+
+### The Case for r/offgrid First
+
+The sequencing of r/offgrid before r/preppers is a deliberate strategic choice, not a size-based default. Here is the explicit reasoning:
+
+**r/offgrid first because**:
+- Smallest of the three communities (~185K–220K), which means a top-10 post reaches a higher percentage of members than an equivalent post in r/preppers (580K+)
+- Audience has the highest fit for the guide's technical methodology — early feedback from this community is the most substantive and useful for refining the r/preppers angle
+- Low audience overlap with r/preppers means this post does not pre-exhaust the next community
+- If the post encounters a legitimate factual challenge (someone in r/offgrid catches an error in Domain 3), you have 24–48 hours to open a GitHub issue and reference it — this actually improves the r/preppers post by signaling responsiveness
+
+**r/preppers second because**:
+- Genuinely different content angle (disaster/nuclear) justifies a different post without self-plagiarism risk
+- 10x the audience of r/offgrid; this is where the star-count spike happens
+- r/offgrid comments will have surfaced interesting technical questions; incorporate the most compelling one into the r/preppers opening to signal community engagement
+
+**r/homesteading last because**:
+- Requires a personal narrative hook that improves when you have real engagement to reference ("the r/offgrid community helped me identify a gap in Domain 3 that I've since fixed")
+- Audience is most forgiving — if the first two posts have landed well, homesteading is a comfortable landing; if they underperformed, homesteading gives you a fresh start with a different framing
+- The regional guides differentiator (5 US regions) is most compelling here, and you can mention it as something that emerged from community feedback
+
+**What happens if you reverse the order**: Posting r/preppers first generates the star spike before the guide has been tested with the highest-fit audience. Errors that r/offgrid would have caught get amplified. r/homesteading users may encounter the r/preppers post first and come to the guide with a "disaster prep" mental model that conflicts with the homesteading narrative you want to establish.
 
 ### Platform Role Summary
 

@@ -301,6 +301,58 @@ Date | GH Stars | GH Star Delta | GH Views | GH Forks | GH Issues Open | GH PRs 
 
 ---
 
+## 30/60/90 Day GitHub Stars Trajectory Model
+
+Use this model to calibrate expectations and trigger decisions. These ranges are based on comparable open-source documentation and knowledge-base projects with niche-community Reddit distribution (no software tool, no viral pre-seeding, no large existing follower base).
+
+### Conservative Trajectory (Reddit distribution only, no HN traction)
+
+| Checkpoint | Stars | Drivers | Warning Signs |
+|-----------|-------|---------|--------------|
+| Day 7 | 20–80 | r/offgrid post | < 20 = spam filter or poor timing |
+| Day 14 | 50–150 | r/preppers, r/homesteading | Stagnation here = secondary channel expansion needed immediately |
+| Day 30 | 80–200 | Secondary communities, organic shares | |
+| Day 60 | 120–350 | SEO (Medium articles indexing), newsletter mentions | No organic new sources = no compound growth |
+| Day 90 | 150–500 | Ongoing organic; community contributors re-sharing | |
+
+### Moderate Trajectory (Reddit + one solid HN post, 20–60 HN points)
+
+| Checkpoint | Stars | Drivers |
+|-----------|-------|---------|
+| Day 7 | 80–250 | r/offgrid + HN traffic spike |
+| Day 14 | 150–400 | All three subreddits complete |
+| Day 30 | 200–500 | Secondary communities, first newsletter mention |
+| Day 60 | 350–800 | GitHub Trending micro-appearance (requires ~30 new stars/day to trigger) |
+| Day 90 | 500–1,200 | Contributor PRs, organic community citations |
+
+### High Trajectory (Front-page HN or viral Reddit post)
+
+| Checkpoint | Stars | Drivers |
+|-----------|-------|---------|
+| Day 7 | 250–1,000 | Single viral event dominates |
+| Day 30 | 500–2,000 | Secondary community spread, influencer mentions |
+| Day 60 | 800–3,500 | GitHub Trending appearances begin compounding |
+| Day 90 | 1,500–5,000 | Phase 3 actively underway |
+
+### Key Threshold Events
+
+**200 stars**: GitHub "related repositories" algorithms begin surfacing the project to adjacent users. Below this, all discovery is manual distribution.
+
+**500 stars**: Social proof threshold for Tier 2 influencer outreach (YouTube channels 200K–1M). Before this threshold, cold outreach to mid-tier channels is unlikely to convert.
+
+**1,000 stars**: GitHub Trending algorithm begins generating organic daily star accumulation of 10–20 stars/day independent of active distribution. This is the compound-growth inflection point.
+
+### Fork-to-Star Ratio Benchmarks
+
+| Ratio | Interpretation | Action |
+|-------|---------------|--------|
+| < 5% | Passive bookmarking; low actual use | Improve README with fork-friendly use cases and CONTRIBUTING examples |
+| 5–10% | Normal for knowledge-base projects | On track; monitor |
+| 10–20% | Active adaptation (regional forks, custom versions) | Feature contributors publicly; add "help wanted" labels |
+| > 20% | Exceptional adoption | Consider structured contributor program; Phase 3 |
+
+---
+
 ## Phase 3 Gate (Day 30 Decision)
 
 On Day 30, evaluate against these thresholds before committing to Phase 3 (visual content, video guides, domain deepening):

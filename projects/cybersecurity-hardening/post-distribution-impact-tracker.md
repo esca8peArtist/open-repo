@@ -1,419 +1,499 @@
 ---
-title: "Post-Distribution Impact Tracker — Individual Adoption & Threat-Model Outcomes"
+title: "Post-Distribution Impact Tracker — Organizational Adoption & Assessment Gates"
 project: cybersecurity-hardening
-created: 2026-05-05
-version: 2.0
+created: 2026-05-06
+version: 3.0
 status: ready-for-use
-supersedes: v1.0 (session 717, organizational-adoption focus)
-depends-on: tier-1-success-metrics-framework.md, tier-1-feedback-collection-protocol.md, adoption-tracking-dashboard-spec.md
+supersedes: v2.0 (individual-level adoption by segment — see post-distribution-impact-tracker-v2.md)
+depends-on:
+  - tier-1-success-metrics-framework.md
+  - tier-1-effectiveness-framework.md
+  - tier-1-feedback-collection-protocol.md
+  - adoption-tracking-dashboard-spec.md
+  - feedback-collection-template.md
 ---
 
-# Post-Distribution Impact Tracker v2.0
+# Post-Distribution Impact Tracker v3.0
+## Organizational Adoption, Assessment Gates, and Tier 2/3 Readiness
 
-**Purpose**: Extend the organizational adoption tracking framework (v1.0) with individual-level adoption metrics by audience segment, threat-model-specific outcome measurement, temporal milestones, and failure mode detection. The v1.0 document tracks whether NILC or RAICES engages with the corpus. This document tracks whether the journalist, immigration attorney, activist, or undocumented immigrant actually implements the guidance and whether it changes their security posture.
+**Lead finding**: The most dangerous failure mode after Tier 1 distribution is treating early positive replies as adoption. A reply is a receipt, not a behavior change. This document defines what counts as actual adoption at the organizational level, sets concrete assessment gates at 3, 6, and 12 months, and provides the decision logic for whether Tier 2/3 distribution should replicate the Tier 1 approach or pivot. Nothing in this document should be read until at least one Tier 1 contact has replied — the measurement infrastructure has no value before data exists to enter into it.
 
-**Lead finding**: The hardest measurement problem in security guidance is that effectiveness is a non-event — the source who was not exposed, the deportation that did not happen. The framework resolves this by tracking three proxy categories instead of the non-event itself: (1) verified implementation of countermeasures (did the person complete the action?), (2) near-miss prevention (did the person encounter a threat that the guidance helped deflect?), and (3) institutional acceptance (did the organization not experience adverse consequences from implementing the hardening?). All three are measurable. The non-event is not.
+**Relationship to prior versions**: v1.0 covered the original 12-organization direct-service cohort (immigration legal aid, community-based organizations, mutual aid networks). v2.0 added individual-level adoption metrics by audience segment (journalists, attorneys, activists, undocumented immigrants) and threat-model-specific outcome signals. This v3.0 document covers the full organizational tracking lifecycle: what adoption means, how to measure it, what the 3/6/12-month gates require, and what each gate's outcome implies for Tier 2/3 strategy. Read v2.0 for individual-segment metrics; read this document for campaign-level assessment and strategic decisions.
 
-**Relationship to v1.0**: Read v1.0 (`post-distribution-impact-tracker.md`) for the organizational outreach tracking framework, 30/90/180-day follow-up email templates, stage-of-adoption model, and assessment gate structure. This document covers the individual-level layer above that organizational foundation.
-
----
-
-## Section A: Individual Adoption Metrics by Audience Segment
-
-### A.1 Journalists
-
-**What adoption looks like at the individual level**
-
-Journalists implementing the corpus move through four observable stages that do not require self-reporting to verify:
-
-| Stage | Behavior | Observable Signal |
-|-------|----------|------------------|
-| 0 — Awareness | Read the guide | Download metric, help desk question |
-| 1 — Tool installation | Installed Signal, ProtonMail, or Tails | Help desk confirmations, tool-specific download referral links |
-| 2 — Operational integration | Using secure tools in active reporting | Requests for Signal contact info rather than phone, ProtonMail address on byline |
-| 3 — Operational security practice change | Changed sourcing habits, cover story discipline, pattern-of-life awareness | Near-miss narrative, source contact via secure channel, no phone at protest |
-| 4 — Incident prevention | Documented near-miss where hardening worked | Self-reported testimonial, incident narrative |
-
-**Leading indicators (weeks 1-4 of distribution)**
-
-- Referral link click-through on Signal download (if distribution uses a tracking link to Signal's download page): target 15% of journalist downloads trigger a tool installation within 7 days. The 89% journalist adoption baseline for Signal in democratic countries (per 2025 industry research) means most working journalists are not starting from zero — the marginal gain is moving sporadic users to operational discipline.
-- Help desk inquiries about Tails OS USB creation: Tails remains the highest-friction installation in the guide. Any help desk question about Tails is a strong implementation signal — it means the person got past reading the guide to attempting installation.
-- ProtonMail account creation via referral: measurable if a referral code or tracking link is embedded in the guide's ProtonMail setup instructions. Target: 5-10% of journalist guide downloads result in new ProtonMail account creation.
-
-**Threat-model-specific outcome signals**
-
-The journalist threat model centers on SIGINT collection, FBI interest via NSL or FISA Section 702, and source exposure. Direct outcome measurement is impossible without access to FISA court logs. Proxy outcomes:
-
-- Source protection improvement: can a source now contact the journalist via Signal without that contact being logged by the journalist's carrier? Measurable via journalist self-report after 90 days ("my sources now contact me via Signal").
-- Operational security incident prevention: did the journalist cover a sensitive story without a demonstrated compromise attempt? Self-report ("I covered the ICE raid without my source being identified") is the primary channel.
-- Section 702 exposure reduction: journalists who move sensitive communications off commercial email onto ProtonMail or Signal reduce their data residency in Section 702 collection architecture. Not directly measurable, but verifiable via implementation confirmation.
-
-**Calibration note**: As of May 2026, Section 702 was renewed for three years (through April 2029) without a warrant requirement or data broker loophole closure (House S.1318, April 29, 2026). This increases the stakes for journalist source protection and should be cited in guide distribution communications as evidence of active threat.
+**Corpus cohorts tracked here**:
+- Cohort A (direct-service): 12 organizations — immigration legal aid (1A), community-based (1B), mutual aid (1C)
+- Cohort B (amplifier): 33 organizations — digital rights, academic cybersecurity, researcher communities, journalist organizations
 
 ---
 
-### A.2 Immigration Attorneys
+## Section 1: Defining "Effective" and "Adopted"
 
-**What adoption looks like at the individual level**
+Most impact assessments fail because they never define success concretely. These definitions apply to all organizational tracking in this campaign. They are not aspirational — they are binary pass/fail criteria for assessment gates.
 
-Immigration attorneys face a more concrete threat model than journalists: client communications can be subpoenaed, and attorney-client privilege is not absolute when a client is subject to civil immigration proceedings. Implementation stages:
+### 1.1 What Counts as "Adopted"
 
-| Stage | Behavior | Observable Signal |
-|-------|----------|------------------|
-| 0 — Awareness | Read the guide | Download or organizational referral |
-| 1 — Communication protocol change | Adopted Signal for sensitive client communications | Signal contact on business card, client intake form includes Signal number |
-| 2 — Encrypted file storage | Implemented VeraCrypt or equivalent for case files | IT support request for setup, self-report in 90-day follow-up |
-| 3 — Client-facing integration | Walked clients through Part 0 (data broker opt-outs) as part of intake | Self-report, organization's intake checklist updated |
-| 4 — California AB 60/DROP platform integration | Helping clients without government-issued ID complete DELETE Act DROP platform enrollment | DROP completion reports from clients, self-report |
+An organization has adopted the corpus when it has taken at least one observable action that required a decision to use this resource, not merely to read it. Reading is not adoption. Forwarding to a colleague is not adoption. Adding to a bookmark list is not adoption.
 
-**California AB 60 / DELETE Act DROP platform implementation tracking**
+**Minimum adoption threshold (Stage 3)**: An organization that has done at least ONE of the following:
 
-This is the corpus's most distinctive contribution to immigration attorney practice. The DROP platform (privacy.ca.gov/drop) launched January 1, 2026 and requires brokers to begin processing deletion requests August 1, 2026. The AB 60 → DELETE Act pathway allows undocumented California residents to use their California driver's license (not tied to SSN) to authenticate a DROP request, removing their data from 500+ registered data brokers.
+| Action | Evidence Type | Minimum Quality Required |
+|--------|--------------|--------------------------|
+| Added the corpus to a client-facing resource page, intake checklist, or published practitioner toolkit | Link or screenshot | Resource publicly accessible or confirmed by organization contact |
+| Delivered staff or client training using corpus content as the basis | Training agenda, calendar invite, or self-report | Must reference specific corpus sections, not generic security guidance |
+| Changed a client intake form, communication protocol, or organizational policy to reflect corpus recommendations | Document comparison or self-report with specifics | Must reference specific countermeasure (Signal for client comms, data broker opt-outs in intake, etc.) |
+| Walked at least one client through any corpus-specific procedure (DROP platform, Signal setup, data broker manual opt-outs) | Self-report from attorney or caseworker | Must be traceable to corpus guidance, not pre-existing practice |
+| Cited or referenced corpus content in a published output (brief, newsletter, report, filing, syllabus) | URL or document | Must include a specific claim, term, or procedure from the corpus |
 
-Target adoption signal: attorneys at Tier 1 legal organizations in California reporting they have walked clients through the DROP platform in client intake. Measurable via:
-- 90-day follow-up question asking specifically about DROP platform adoption
-- DROP platform enrollment completion confirmation from clients (if attorneys report back)
-- Legal aid clinic training curricula that include the DROP pathway step
+An organization is NOT adopted if:
+- It acknowledged receipt without a follow-up action
+- It replied "we'll review this" without a subsequent Stage 3 signal by the assessment gate date
+- It forwarded the corpus to a colleague without any other observable action
+- It expressed positive intent ("this is exactly what we need") without any action within 90 days
 
-**ELITE system countermeasure adoption**
+### 1.2 What Counts as "Effective"
 
-The corpus documents Palantir ELITE's address confidence scoring as a mechanism ICE uses to prioritize deportation targeting. Attorney-level countermeasure: advising clients to use address masking (mail forwarding services, P.O. boxes, or nonprofit intermediary addresses) rather than home addresses in public-facing records.
+Effectiveness is measured at two levels: corpus effectiveness (did the guidance produce security posture improvements?) and campaign effectiveness (did the distribution approach reach and convert the target organizations?).
 
-Observable signal: attorneys at immigration legal aid organizations reporting that they added address masking guidance to client intake. Verifiable via 90-day follow-up question ("Did your organization add any new guidance on address records management for clients?").
+**Corpus effectiveness — minimum definition**: At least one individual who implemented a countermeasure from the corpus experienced a measurable security posture improvement. This is defined as:
 
----
+- A journalist who moved source communications from unencrypted SMS/email to Signal, reducing SIGINT collection surface
+- An undocumented individual whose data broker records were removed via manual opt-out or DROP platform, reducing their Palantir ELITE address confidence score
+- An immigration attorney whose client communications now occur via Signal with disappearing messages, reducing subpoena attack surface
+- An activist who deployed Rayhunter and detected IMSI catcher presence, enabling informed decision to leave their device at home
 
-### A.3 Activists
+Note: Security posture improvement cannot be verified by comparing incident rates before and after hardening. The absence of an ICE encounter is not attributable to hardening without a counterfactual. Proxy measures (confirmed implementation of countermeasures that remove specific attack surfaces) are the only measurable proxy for effectiveness. Do not claim incident prevention; claim attack surface reduction.
 
-**What adoption looks like at the individual level**
-
-Activist threat models in the 2026 context involve three distinct adversary types: (1) local law enforcement with IMSI catchers and protest-area surveillance, (2) federal surveillance under 28 CFR Part 23 fusion center data sharing, and (3) financial de-platforming. Implementation is measurable at the device, communication, and financial layers.
-
-**Device hardening adoption signals**
-
-- GrapheneOS or CalyxOS installation (verifiable via help desk inquiries about verified bootloader installation; these are the highest-friction steps in the device hardening guide)
-- Faraday bag procurement (traceable via referral links to procurement vendors if included in guide)
-- EFF Rayhunter deployment: Rayhunter (released March 2025, updated September 2025) is a $20 Orbic RC400L hotspot-based IMSI catcher detector. Adoption by activists constitutes a measurable technical countermeasure. Rayhunter deployment in protest contexts is verifiable via self-report and community reports of CSS detections.
-
-**Communication security adoption signals**
-
-- Signal group operational security: not just using Signal but using disappearing messages, screen security, and not including full member lists. Measurable via training session self-report ("I now use disappearing messages in all organizing Signal chats").
-- Pattern-of-life evasion practices: leaving phone at home during sensitive organizing meetings, using a burner device for protest-adjacent activity. Self-report only; not verifiable externally.
-
-**Financial compartmentalization adoption signals**
-
-- Monero adoption for financial contributions to activist work is measurable via community reports. As of early 2026, Monero dominates 58% of the privacy coin market with an all-time high of $798.91 reached January 14, 2026. Key caveat: Chainalysis Reactor 3.0 (launched January 2025) improved privacy coin flow detection by 42% — activists should be aware that Monero's privacy protections are not absolute and have been improving in the adversary's favor.
-- Cash contribution protocols: switching from Venmo/PayPal to cash or money orders for dues. Measurable via organizer self-report.
-
-**Leading indicators (weeks 1-4)**
-
-- Rayhunter purchase referral links: if guide includes a Rayhunter purchase link to sts-collective.com or a similar distributor, click-through and purchase are verifiable proxy signals.
-- Help desk questions about GrapheneOS verified bootloader process: highest-friction step in the device hardening guide; any question indicates serious implementation attempt.
-- Pattern-of-life evasion questions (e.g., "how do I keep my house address off public records?") indicate the person is engaging with the strategic threat model, not just the tool checklist.
+**Campaign effectiveness — minimum definition**: Across both cohorts combined, at least 15% of organizations reached Stage 3 (adopted) by the 6-month gate, with at least one organization from each cohort type and at least one organization that has distributed the corpus to its own network.
 
 ---
 
-### A.4 Undocumented Immigrants
+## Section 2: Organization Adoption Stage Definitions
 
-**What adoption looks like at the individual level**
+These stages apply to every organization in both cohorts. Track the current stage for each organization in the CSV tracker.
 
-This is the audience segment with the highest stakes and the lowest feedback rate. Undocumented immigrants implementing the corpus face direct physical risk. The feedback infrastructure must be designed to function at near-zero response rates while still producing actionable signals.
+| Stage | Name | Definition | Observable Evidence |
+|-------|------|-----------|---------------------|
+| 0 | Received | Corpus was sent; no reply | Date-sent field populated |
+| 1 | Acknowledged | Organization confirmed receipt or clicked the Gist link | Reply logged, or Bitly click from organization domain |
+| 2 | Reviewed | Someone at the organization read the corpus beyond the opening section | Reply references specific section, term, or claim; asks an implementation question |
+| 3 | Partial Adoption | Organization took at least one action using corpus content | See Stage 3 criteria in Section 1.1 above |
+| 4 | Full Adoption | Organization has integrated the corpus into sustained practice | Multiple Stage 3 actions; corpus referenced in more than one context; ongoing implementation |
+| 5 | Multiplier | Organization has actively distributed the corpus to its own network without prompting | Referral contacts generated; corpus appears in organization's own communications; affiliate outreach confirmed |
 
-**ELITE system countermeasure adoption signals**
-
-Palantir ELITE's address confidence scoring mechanism aggregates utility records, rental history, credit headers, and commercial data broker records into a numerical score that ICE prioritizes for enforcement targeting. Countermeasures in the corpus include address masking and data broker opt-outs. Observable adoption signals:
-
-- DROP platform enrollment completion: measurable if legal aid organizations track client DROP enrollment as part of intake. California-based organizations can report completion rates.
-- Address masking implementation: use of mail forwarding service, P.O. box, or organizational intermediary address. Self-report only; verifiable via 90-day follow-up to referring organizations.
-- Data broker manual opt-out completion: the 40-60 hour manual process yields 85%+ broker removal over 3-6 months. Completion measurable via self-report ("I have completed opt-outs at 50+ brokers"); automated services ($90-130/year) are verifiable via subscription confirmation.
-
-**DROP platform timing caveat**: Data brokers must begin processing deletion requests August 1, 2026. Any DROP enrollment before that date is real and legally binding, but the deletion processing window does not begin until August 2026. Clients enrolled in January-July 2026 should receive reminder communications around August 1 to confirm deletion is being processed.
-
-**ICE encounter reduction**
-
-ICE encounter reduction is a non-event that cannot be attributed to the corpus without a counterfactual. The proxy measurement strategy for this audience:
-
-1. **Self-reported near-miss narratives**: "ICE came to my neighbor's address, not mine, and I believe the address masking helped." This is the highest-value feedback and should be actively solicited via anonymous channels (Signal number, encrypted form, paper form at legal aid office).
-2. **Referral organization reports**: Legal aid organizations can aggregate reports of clients who experienced ICE contact and whether the contact involved the client's address, device data, or other data that hardening would have protected.
-3. **DROP enrollment completion rates** as a leading indicator: completion is a prerequisite for data broker exposure reduction. High completion rates predict (but do not prove) reduced ELITE address confidence scores over 3-6 months.
-
-**Communication safety signals**
-
-- Signal adoption for family and trusted contact communication: measurable via referral link clicks and help desk inquiries
-- Avoidance of unencrypted SMS for sensitive communications with legal representatives: verifiable via attorney adoption reports ("our clients now contact us via Signal")
-
-**Leading indicators (weeks 1-4)**
-
-Because direct feedback from undocumented immigrants is unsafe and impractical, the leading indicators are all mediated through referring organizations:
-
-- Legal aid organizations reporting that staff have walked clients through Part 0 (data broker opt-outs)
-- Community organizations reporting Signal adoption at community meetings
-- DROP platform enrollment volumes in California (measurable via CPPA aggregate data if published)
+**Critical distinction between Stage 2 and Stage 3**: An organization that replies "we've reviewed this and it's very relevant to our work" is Stage 2 until it takes an action. Stage 2 can persist indefinitely without becoming Stage 3 without an external prompt (follow-up email, direct ask) or internal organizational decision. The 90-day follow-up protocol exists specifically to create the external prompt that moves Stage 2 organizations to Stage 3.
 
 ---
 
-## Section B: Organizational Adoption Metrics
+## Section 3: Assessment Gate — Month 3 (Day 90)
 
-*Detailed organizational-level tracking is documented in the v1.0 `post-distribution-impact-tracker.md` (stage model, follow-up templates, 30/90/180-day assessment gates). This section provides supplementary metrics not in v1.0.*
+**Assessment date**: Day 90 from first Tier 1 send, approximately August 2026
 
-### B.1 Newsroom Hardening Policy Adoption
+**Primary question**: Has the corpus produced enough adoption signals to justify Tier 2 launch?
 
-Target signal: a newsroom security policy document that cites or incorporates the corpus's recommendations on Signal, end-to-end communication, encrypted file storage, or VPN mandates.
+### 3.1 Required Data to Complete This Assessment
 
-Observable via:
-- FPF (Freedom of the Press Foundation) training integration: FPF's Digital Security Program delivered workshops to 1,300+ journalists in 2023. If FPF integrates the corpus into its curriculum (a Tier 2 conversion target), this is the highest-leverage organizational adoption signal for journalist-facing distribution.
-- IRE (Investigative Reporters and Editors) training integration: IRE trains journalists at more than 50 topics per workshop; digital security is one of their core training areas. IRE curriculum adoption is verifiable via the IRE conference schedule and session descriptions.
-- SPJ Journalist's Toolbox inclusion: the SPJ Digital Security section is a practitioner reference point; inclusion is publicly verifiable.
+Before the Day 90 assessment, the following must be collected:
+- The 90-day follow-up email sent to all Stage 1+ contacts (per `tier-1-feedback-collection-protocol.md`)
+- Responses logged in the CSV tracker with Stage-of-adoption field updated
+- Gist view count recorded
+- Any social media or citation monitoring results logged
+- Any referral contacts from Question 3 of the 30-day follow-up documented
 
-### B.2 Legal Aid Organization Staff Training
+### 3.2 Day 90 Pass/Fail Criteria
 
-Target signal: a legal aid organization that has added digital security content from the corpus to staff onboarding or professional development training.
+**Gate 1 — Distribution Completion**
 
-Observable via:
-- 90-day follow-up question: "Has [Org] added any digital security training to staff onboarding in the past 90 days?"
-- Training curriculum documents shared by implementing organizations (with permission)
-- Organizational newsletter or social media posts announcing the training
+| Criterion | Pass | Conditional | Fail |
+|-----------|------|-------------|------|
+| Cohort A sends completed (12 orgs) | 10+ of 12 contacted | 8-9 contacted | Fewer than 8 contacted |
+| Cohort B sends completed (33 orgs) | 28+ of 33 contacted | 20-27 contacted | Fewer than 20 contacted |
 
-### B.3 Activist Collective OpSec Documentation
+Gate 1 does not require response — only that sends were completed. If Gate 1 fails because sends were never completed, assess only what has been sent and note that the Day 90 assessment is incomplete.
 
-Target signal: a shared communication standard, financial opacity procedure, or law enforcement interaction protocol adopted by an activist collective that cites or incorporates corpus guidance.
+**Gate 2 — Engagement Quality**
 
-Observable via:
-- Community referrals: if an activist collective asks to be connected to the corpus author for guidance, this indicates Stage 2+ adoption
-- Published collective security guides that reference the corpus's Tier 1 or Tier 2 recommendations
+| Cohort | Pass Threshold | Conditional | Fail |
+|--------|---------------|-------------|------|
+| Cohort A reply rate | ≥35% of sends (4+ of 12) | 25-34% | Below 25% |
+| Cohort A Stage 2+ rate among replies | ≥50% of replies | 30-49% | Below 30% |
+| Cohort B reply rate | ≥25% of sends (8+ of 33) | 15-24% | Below 15% |
+| Cohort B Stage 1+ rate among replies | ≥50% of replies | 30-49% | Below 30% |
 
-### B.4 Educational Institution Curriculum Adoption
+**Gate 3 — Adoption Signal Presence**
 
-Target signal: journalism school, law school, or activist training program assigns the corpus as assigned or reference reading.
+At least THREE of the following signals must be present by Day 90:
 
-Observable via:
-- Google Scholar alert for corpus title or unique content markers
-- IRE/J-school professor referral (if contacted directly)
-- Law school clinical program adoption (verifiable via syllabi searches or faculty outreach)
+- [ ] At least 1 Cohort A organization is at Stage 3 (confirmed adoption action)
+- [ ] At least 1 Cohort A organization has explicitly referenced corpus content when working with a client (e.g., walked through DROP platform)
+- [ ] At least 1 Cohort B organization has circulated corpus within their network unprompted
+- [ ] At least 1 Cohort B organization has confirmed curriculum or resource list inclusion
+- [ ] Referral factor ≥ 1.5 across both cohorts combined (total relationships generated / initial sends)
+- [ ] A corpus-specific term (ELITE address confidence score, DROP platform AB 60 pathway) has appeared in any organizational communication outside the original distribution
 
----
+**Gate 4 — Feedback Quality**
 
-## Section C: Threat-Model-Specific Outcome Measurement
+Structured feedback (via 90-day email survey or direct exchange) collected from at least 6 organizations covering:
+- At least one gap identified and documented
+- At least one threat model accuracy assessment (confirmed / partially accurate / inconsistent)
+- At least one format barrier identified
 
-### C.1 Journalist Threat Model: Source Protection
+**Gate 5 — Threat Model Integrity**
 
-**What success looks like**: A journalist's source was able to make contact via Signal or another secure channel without that contact appearing in the journalist's phone carrier records, commercial data broker data, or FBI/NSL-compelled disclosure.
+No Category (c) wrong-threat-model feedback received that has been confirmed by primary source documentation. If confirmed Category (c) feedback exists, it must be resolved before proceeding to Tier 2.
 
-**What you can measure**:
+### 3.3 Day 90 Decision Logic
 
-| Outcome | Measurement Method | Confidence Level |
-|---------|-------------------|-----------------|
-| Source contacted journalist via Signal | Self-report: "my source used Signal as the guide recommended" | Medium — self-attributed |
-| Source's contact not in carrier records | Not measurable without carrier records access | N/A |
-| Journalist used Tails for story research | Self-report: "I used Tails when downloading leaked documents" | Medium |
-| Journalist did not use work email for sensitive correspondence | Self-report: "I moved to ProtonMail for all source communications" | Medium |
-| Journalist covered a high-risk story without a demonstrated compromise attempt | Self-report: no known adverse outcome after 90+ days | Low — non-event |
+| Gate Pattern | Decision | Action |
+|---|---|---|
+| All 5 gates pass | Proceed to Tier 2 launch | Schedule sends; incorporate feedback |
+| Gates 1, 2, 4, 5 pass; Gate 3 = 2 of 6 signals | Conditional proceed | Wait 21 days for third signal; if no third signal by Day 111, proceed with framing adjusted to available social proof |
+| Gate 2 fails (reply rate below threshold) | Hold; diagnose | Apply routing and deliverability diagnostics before concluding content failure |
+| Gate 5 fails (confirmed Category c) | Hold; update | Update threat model; wait minimum 14 days for re-verification before Tier 2 |
+| Gate 3 = 1 signal only | Conditional hold | Identify highest-potential contacts; direct outreach for Stage 3 conversion; re-assess at Day 105 |
+| Fewer than 4 total feedback responses | Partial hold | Send targeted follow-up to Stage 2+ contacts; wait 14 days before deciding |
 
-**Unique content marker for attribution**: A journalist who specifically references "address confidence scoring" or "ELITE system data purchase architecture" in a source protection discussion is referencing content unique to this corpus. High attribution confidence.
-
-### C.2 Immigration Attorney Threat Model: Client Communication Protection
-
-**What success looks like**: A client communication was not discovered by ICE through subpoena of the attorney's email records or device seizure, because the communication occurred via Signal with disappearing messages.
-
-**What you can measure**:
-
-| Outcome | Measurement Method | Confidence Level |
-|---------|-------------------|-----------------|
-| Client's data broker records removed via DROP | DROP completion confirmation via referring org | High (actionable) |
-| Attorney switched from unencrypted email to Signal for client comms | Self-report + observable (Signal number on business card) | Medium |
-| Client case not compromised by device seizure | Self-report after adverse event investigation | Low — non-event in most cases |
-| ICE subpoena of attorney communications unsuccessful | Legal proceeding record — only visible if contested | Low — rare event |
-| Client address not in ELITE high-confidence tier | Not measurable without ELITE database access | N/A |
-
-**Attribution unique content markers**: An attorney who references the California AB 60 → DROP platform pathway or the ELITE "address confidence score" mechanism is referencing corpus-specific content.
-
-### C.3 Activist Threat Model: Law Enforcement Scrutiny Reduction
-
-**What success looks like**: An activist attending a protest was not identified by an IMSI catcher because they left their phone at home, or was alerted to IMSI catcher presence by Rayhunter.
-
-**What you can measure**:
-
-| Outcome | Measurement Method | Confidence Level |
-|---------|-------------------|-----------------|
-| IMSI catcher presence detected at protest via Rayhunter | Rayhunter device log + community corroboration | High (technically verifiable) |
-| Activist left phone at home during sensitive meeting | Self-report | Medium |
-| Activist's financial contributions not traceable via Venmo/CashApp | Self-report: switched to Monero/cash | Medium |
-| Activist avoided FISA surveillance by moving off commercial email | Not measurable without FISA court records | N/A |
-| No adverse law enforcement action within 12 months of hardening | Self-report: no contact, arrest, or surveillance indicator | Low — non-event |
-
-**Rayhunter deployment as a leading indicator**: If activists in your distribution network adopt Rayhunter, this produces technically verifiable data on IMSI catcher deployment in protest contexts. The EFF's September 2025 update confirmed likely CSS detections in Chicago and New York. Activist Rayhunter deployment reports are a high-value community contribution that serves both personal protection and broader civil liberties research.
-
-### C.4 Undocumented Immigrant Threat Model: ICE Encounter Prevention
-
-**What success looks like**: An undocumented immigrant's address was masked from Palantir ELITE's address confidence scoring, reducing their prioritization for enforcement targeting.
-
-**What you can measure**:
-
-| Outcome | Measurement Method | Confidence Level |
-|---------|-------------------|-----------------|
-| DROP platform enrollment completed | Completion confirmation via legal aid org referral | High (actionable) |
-| 80%+ data broker records removed 6 months post-enrollment | Self-report or DeleteMe/Kanary dashboard screenshot | Medium |
-| Address masking implemented (forwarding service) | Self-report | Medium |
-| No ICE home visit in 12 months post-hardening | Self-report: no ICE encounter at known address | Low — non-event |
-| Community-level: ICE encounters declined in implementing community | Aggregated from legal aid org caseload reports | Low — confounded |
-
-**Critical caveat on DROP platform timing**: The August 1, 2026 processing deadline means that DROP enrollments before that date establish a legal obligation for broker deletion but do not produce immediate data removal. Outcome measurement for DROP effectiveness should not begin until November 2026 at the earliest (90 days after the August processing deadline).
+**What Day 90 does not tell you**: Day 90 tells you whether Tier 2 distribution is safe to launch, not whether the corpus has succeeded. Organizational integration (curriculum, policy, practice change) typically requires 90–180 days post-adoption-signal. A Day 90 pass means the corpus is gaining traction. It does not mean it has changed how any organization operates.
 
 ---
 
-## Section D: Temporal Milestones
+## Section 4: Assessment Gate — Month 6 (Day 180)
 
-### Week 1-2: Access and Delivery Confirmation
+**Assessment date**: Day 180 from first Tier 1 send, approximately November 2026
 
-| Metric | Target | Data Source |
-|--------|--------|-------------|
-| Guide downloads / Gist views | Baseline + 100 views week 1 | Gist traffic dashboard |
-| First organizational acknowledgment | At least 1 Tier 1A reply | Email tracker |
-| Help desk inquiries received | Any (volume indicates active engagement) | Feedback email |
-| Tool referral link clicks (Signal, Tails, ProtonMail) | 10%+ of Gist views | Bitly or referral tracking |
+**Primary question**: Has organizational adoption translated into measurable practice changes, and are there enough adoption patterns to inform Tier 2/3 framing?
 
-### Week 3-4: Early Adoption Signals
+### 4.1 Required Data to Complete This Assessment
 
-| Metric | Target | Data Source |
-|--------|--------|-------------|
-| Tool installation confirmations | 3-5 users confirm Signal or ProtonMail setup | Help desk or 30-day follow-up |
-| Tails OS help desk inquiries | At least 1 (high-friction signal) | Feedback email |
-| First organizational referral | 1 new warm contact generated | Email tracker Q3 response |
-| Testimonial or positive social mention | 1 (Reddit/Mastodon) | Social media monitoring |
-| DROP platform enrollment question | Any inquiry about DROP eligibility or process | Feedback email |
+- The 180-day follow-up email sent to all Stage 3+ contacts
+- Case study interview completed or scheduled for at least 1 Stage 3+ organization
+- Gist view count delta documented
+- Overton.io quarterly search completed (August search)
+- Any legal filing, policy document, or public output citations identified
+- Tier 2 launch results (if Tier 2 launched at Day 90): first 90-day data from Tier 2 cohort
 
-### Month 2-3: First Organizational Inquiries
+### 4.2 Day 180 Pass/Fail Criteria
 
-| Metric | Target | Data Source |
-|--------|--------|-------------|
-| Newsroom security policy inquiry | 1+ newsroom contacts asking about Tier 2 implementation | Email tracker |
-| Law school curriculum inquiry | 1+ faculty or clinic contact | Tier 2 academic outreach tracker |
-| Organizational Stage 2+ adoption | 20% of Tier 1 contacts reached internal discussion | 30-day follow-up responses |
-| Gist view trajectory | Month 2 views > Month 1 views (organic growth) | Gist traffic log |
-| Feedback form responses | 20+ form submissions | Feedback form dashboard |
+**Practice Change Threshold**
 
-### Month 4-6: Published Outcomes
+At least 5 organizations across both cohorts at Stage 3 or above by Day 180. This represents approximately 11% of the combined 45-organization send list — calibrated against the realistic benchmark of 3–5 sustained adoptions within 18 months documented in `tier-1-success-metrics-framework.md`.
 
-| Metric | Target | Data Source |
-|--------|--------|-------------|
-| Published citation in organizational policy | 1 document citing the corpus | Google Alert, Overton.io |
-| Journalist article referencing corpus | 1 story mentioning ELITE system, data brokers, or source protection drawing on corpus | Google Alert |
-| Law school course assignment | 1 syllabus including corpus | Faculty follow-up |
-| DROP completion reports (California) | Reports from 2+ legal aid orgs of client DROP enrollments | 90-day follow-up Q |
-| Case study interview completed | 1 implementing organization | 180-day outreach |
+| Metric | Pass | Conditional | Fail |
+|--------|------|-------------|------|
+| Organizations at Stage 3+ | 5+ of 45 total sent | 3-4 of 45 | 0-2 of 45 |
+| Organizations at Stage 4+ (sustained adoption) | 1+ | 1 is sufficient | 0 |
+| External citations (published output, resource list, filing) | 1+ | 1 is sufficient | 0 |
+| Case study interview completed | 1 | 1 is sufficient | 0 |
 
-### Month 6-12: Incident Prevention Evidence
+**Sector Coverage Threshold**
 
-| Metric | Target | Data Source |
-|--------|--------|-------------|
-| Near-miss narratives received | 1-3 user-reported prevented compromise stories | Anonymous feedback channel |
-| IMSI catcher detection reports (Rayhunter) | Any community reports of CSS detection while using corpus guidance | Community self-report |
-| Source contact improvement reports (journalists) | 2+ journalists reporting secure channel adoption by sources | 90-day/180-day follow-up |
-| DROP effectiveness confirmation | 1+ reports of substantial broker removal after August 1, 2026 deadline | Legal aid org 90-day Q |
-| Rayhunter adoption rate | Any adoption reports from activist segment | Community follow-up |
+At least one Stage 3+ adoption from each of the following sectors:
+- [ ] Immigration legal aid (Cohort A, Tier 1A) — direct-service with undocumented clients
+- [ ] Community-based organization (Cohort A, Tier 1B) — community education infrastructure
+- [ ] Digital rights organization (Cohort B, Sector A) — amplifier and public validation function
+- [ ] Journalist organization (Cohort B, Sector D) — practitioner protection and public coverage function
 
-### 12+ Months: Diffusion Analysis
+Full sector coverage by Day 180 means the corpus has proven it can serve structurally different organizational missions. Absence of a full sector coverage means Tier 3 framing should weight toward the sectors where adoption succeeded.
 
-| Metric | Target | Data Source |
-|--------|--------|-------------|
-| Journalist-to-journalist training | 1 documented case of a journalist training others using corpus | Testimonial or referral |
-| Attorney-to-attorney sharing | 1 documented case of an attorney distributing to a peer network | Organizational follow-up |
-| Academic citation | 1 preprint or working paper citing corpus | Google Scholar alert |
-| Community normalization | An organization describes corpus recommendations as "standard practice" | Case study interview |
-| Legal filing citation | 1 civil rights filing citing ELITE documentation | CourtListener search |
+**Feedback Integration Threshold**
+
+At least two concrete corpus revisions made in response to Tier 1 feedback, documented in a changelog. This is not a pass/fail criterion for launching Tier 2/3 — it is a quality marker. A corpus that received no feedback actionable enough to drive revision is a corpus that either reached too few organizations or did not reach them deeply enough.
+
+### 4.3 Day 180 Decision Logic for Tier 2/3
+
+**If Day 180 threshold met with sector coverage**: Tier 2 distribution can proceed with high confidence. The framing should lead with the sectors that showed adoption and reference the specific adoption type ("Organizations providing direct legal services to undocumented clients have implemented...").
+
+**If Day 180 threshold met but missing sector coverage**: Proceed with Tier 2/3 but weight outreach toward the sectors where adoption has been confirmed. Do not claim multi-sector adoption in Tier 2 cover messages if the evidence only covers two sectors.
+
+**If Day 180 threshold not met (fewer than 3 Stage 3+ adoptions)**: Tier 3 distribution should be delayed. Investigate whether the shortfall is a content problem (corpus does not meet organizational needs), a channel problem (outreach did not reach the right contacts), or a timing problem (organizations needed 180+ days to convert). Each root cause requires a different response.
 
 ---
 
-## Section E: Failure Mode Detection and Mitigation
+## Section 5: Assessment Gate — Month 12 (Day 365)
 
-### E.1 Under-Adoption
+**Assessment date**: Day 365 from first Tier 1 send, approximately May 2027
 
-**Detection threshold**: Fewer than 1,000 combined downloads/Gist views in Month 1. Reply rate below 15% from Tier 1 organizational contacts. No individual user help desk inquiries within 30 days.
+**Primary question**: Is the corpus sustaining, deepening, or fading? What evidence exists of actual security posture improvement in the populations served?
 
-**Root causes**:
-- Distribution channel failure: the corpus did not reach the target audience, or was filtered before delivery
-- Audience mismatch: the framing does not speak to the audience's immediate concerns
-- Discovery barrier: the corpus is not findable by people who are not already in the direct outreach network
+### 5.1 Required Data to Complete This Assessment
 
-**Mitigation**:
-- Expand distribution: submit to r/immigration, r/privacy, r/netsec; share in Signal groups for journalist networks; contact NILC, RAICES, and United We Dream directly with personalized outreach
-- Revise framing: if "cybersecurity" framing is not landing, try "ICE data systems" or "protecting your records from government databases" framing for undocumented immigrant audience
-- Publish standalone one-page summary: a shorter, print-ready one-page with the most critical steps (data broker opt-out, DROP platform) is more shareable than the full corpus
+- Google Scholar and Overton.io search results (November and February runs)
+- CourtListener and PACER search for "Palantir ELITE" and corpus-specific terms in any filings
+- Gist view trajectory over the full 12 months
+- Case study interviews completed (target: 2)
+- Any near-miss narratives collected via anonymous feedback channel
+- DROP platform effectiveness check (November 2026 earliest, for DROP enrollments before August 1, 2026)
+- Any news coverage or independent publication citing corpus content
 
-### E.2 High-Adoption but High-Confusion
+### 5.2 Day 365 Indicators
 
-**Detection threshold**: High download volume (1,000+ views) combined with high help desk inquiry rate indicating configuration errors, not completion. More than 20% of feedback form responses indicate confusion about a specific step.
+These are not pass/fail — they are diagnostic indicators for calibrating the corpus's long-term impact and informing ongoing iteration.
 
-**Root causes**:
-- Technical sections above staff capacity: Tails OS installation, VeraCrypt, or GrapheneOS installation steps are too complex without additional context
-- Platform inconsistency: guide instructions differ from current tool interface (Signal/ProtonMail update broke a step)
-- Language barrier: English-only guide is inaccessible to undocumented immigrant audiences
+**Diffusion indicators (is the corpus spreading beyond direct outreach?)**
 
-**Mitigation**:
-- Produce quick-start videos: a 3-5 minute screen recording for Tails OS USB creation, Signal setup, and DROP enrollment resolves the most common friction points
-- Create simplified checklist: a one-page "do these five things first" checklist for each audience segment (journalist, attorney, activist, undocumented immigrant)
-- Spanish-language translation: Part 0 (data broker opt-outs) and the DROP platform pathway are the highest-priority sections for translation
-- Quarterly version review: establish a 90-day review cycle for tool installation steps; Signal, ProtonMail, and Tails release updates frequently
+| Indicator | Strong | Moderate | Weak |
+|-----------|--------|----------|------|
+| Gist view trajectory | Month 12 views significantly higher than Month 6 (organic growth continues) | Flat but sustained (~20-50 views/month) | Declining from early peak |
+| Attribution-confirmed citations | 3+ from corpus-specific content markers | 1-2 | 0 |
+| Academic preprint or working paper citation | 1+ | Informal citation (course reading list, syllabus) | 0 |
+| Independent republication (corpus linked in another resource without prompting) | 2+ | 1 | 0 |
+| Legal filing citation | 1+ | N/A | 0 |
 
-### E.3 Organizational Resistance
+**Impact depth indicators (is the corpus changing how organizations actually operate?)**
 
-**Detection threshold**: Three or more explicit rejection responses from organizational contacts, or zero new organizational policy adoptions after 90 days in Tier 2 outreach.
+| Indicator | Strong | Moderate | Weak |
+|-----------|--------|----------|------|
+| Organizations at Stage 4 (sustained, not just initial adoption) | 3+ | 1-2 | 0 |
+| Organizations at Stage 5 (multiplier — distributing to their own networks) | 1+ | N/A | 0 |
+| DROP platform enrollment reports from California legal aid organizations | 2+ orgs reporting client completions | 1 org | 0 |
+| Near-miss narratives received (anonymous channel) | 1+ | N/A | 0 |
+| Journalist-to-journalist training using corpus | 1 documented case | Informal sharing | 0 |
 
-**Root causes**:
-- Operational infeasibility: Signal adoption requires clients to have smartphones; some legal aid clients do not
-- Workflow disruption: encrypted communications workflows require training time organizations cannot commit
-- Liability concern: organizations worry that recommending specific tools creates liability if the tool fails
-- Cost barriers: hardware procurement (Faraday bags, burner devices, Rayhunter) is outside operating budgets
+**Failure-mode detection (is the corpus stagnating or becoming outdated?)**
 
-**Mitigation**:
-- Produce low-threshold entry version: a "minimum viable hardening" guide for organizations with constrained resources (Signal only, no hardware requirements, no Tails)
-- Address liability concerns explicitly: add a section to the corpus explaining that "best effort" security recommendations carry no warranty and recommending organizations have staff review with their general counsel
-- Identify organizational security team liaisons: if direct-service staff cannot implement the full guide, route to IT or security staff who can implement at the infrastructure level
-- Connect with digital security funders: Digital Defenders Partnership and Front Line Defenders provide implementation grants to civil society organizations; add a section pointing organizations to these resources
+| Signal | Action Required |
+|--------|-----------------|
+| No views after Month 9 (organic traffic has stopped) | Consider re-distribution with updated framing; reach out to Stage 4 organizations for endorsement |
+| Version notes show no revisions since launch | Conduct quarterly tool audit; at least one corpus element will have changed in 12 months |
+| DROP platform effectiveness feedback negative (data not being removed as promised) | Update guidance with realistic expectations; add California CPPA complaint procedure |
+| Academic or legal practitioner reports threat model is outdated | Priority revision; new FOIA requests and contract searches; update before any further distribution |
 
-### E.4 Tool Ecosystem Changes
+### 5.3 12-Month Strategic Decision: Replicate or Pivot
 
-**Detection threshold**: Help desk inquiries indicating that a specific guide step fails on current versions of the tool. Three or more reports of a specific installation failure.
+The 12-month assessment answers the question the task brief poses: should Tier 2/3 messaging replicate the Tier 1 approach or pivot?
 
-**Root causes**:
-- Signal, ProtonMail, or Tails updated their interface or installation process after the guide was written
-- California DROP platform changed its authentication process (AB 1766 ID expansion introduced new pathways)
-- CPPA changed the DROP enrollment process (new regulations effective November 2025)
+**Replicate if**:
+- At least 3 sectors showed Stage 3+ adoption
+- The adoption pattern matches the approach (technical depth, primary-source threat model, graduated tier structure resonated)
+- Feedback identified gaps in scope (missing populations, missing procedures) but not gaps in framing (the approach itself was not the barrier)
+- Referral factor ≥ 1.5 (the corpus is spreading through networks, not just through direct sends)
 
-**Mitigation**:
-- Quarterly review cycle: calendar reminders to check each tool's release notes and verify guide steps on the first Monday of each quarter (August, November, February, May)
-- Establish version tracking: note the version of each tool when instructions are written; add a "verified as of [date] with [tool version]" annotation to each installation section
-- Maintain tool-maintainer contact: EFF (Tails partnership), Signal Foundation, Proton AG all have community contact channels; establish a relationship to get early warnings of breaking changes
-- Drop platform monitoring: follow CPPA announcements (cppa.ca.gov) for DROP platform updates; the August 1, 2026 processing deadline is the next significant event to monitor
+**Partial pivot if**:
+- One or two sectors adopted well but the others did not engage
+- Feedback identified a format barrier (Gist vs. PDF, length, language) that is addressable without changing the core approach
+- Early adoption concentrated in technical audiences (researchers, digital rights) but not in direct-service audiences (legal aid, community-based)
+- A specific threat model claim was found inaccurate and has been corrected; framing adjustment needed to acknowledge the correction
 
----
+**Full pivot if**:
+- Fewer than 3 Stage 3+ adoptions in 12 months across both cohorts (45 organizations)
+- Category (c) wrong-threat-model feedback confirmed that the core framing of the ELITE threat is incorrect or jurisdiction-specific
+- Feedback converges on a different entry point or format (the corpus should have been a 1-page handout, not a 10,000-word guide)
+- Organizations report that the threat model does not match their clients' actual enforcement experiences
 
-## Measurement Dashboard Summary Table
-
-| Metric | Timeline | Success Threshold | Failure Mode | Mitigation |
-|--------|----------|------------------|--------------|-----------|
-| Gist views | 30 days | 300+ | <100 | Expand distribution channels |
-| Org acknowledgment rate (Tier 1A) | 30 days | 35%+ | <15% | Re-send with shorter subject; verify contacts |
-| Tool referral link clicks | 30 days | 10% of views | <3% | Embed direct links; add "install now" CTAs |
-| Help desk inquiries received | 30 days | Any | Zero at day 21 | Add feedback email prominently to guide |
-| Stage 2+ org adoption | 90 days | 20% of Tier 1 contacts | <10% | Revise corpus format; produce PDF |
-| Individual testimonials | 90 days | 2+ | 0 | Solicit directly via 90-day follow-up |
-| Referrals generated | 90 days | 3+ warm contacts | 0 | Add explicit referral prompt to follow-up |
-| DROP enrollment confirmations | 90 days | 2+ legal aid orgs report | 0 | Follow up directly with CA-based legal aid contacts |
-| Organizational policy citation | 6 months | 1+ | 0 by month 6 | Prioritize Tier 2 academic/digital rights outreach |
-| Near-miss narratives | 6-12 months | 1-3 | 0 | Anonymous channel must be prominently accessible |
-| Academic citation | 12 months | 1+ | 0 | September re-engagement of academic contacts |
+**Full pivot does not mean the research was wasted**. It means the distribution format or threat model framing needs a structural revision before Tier 2/3 can succeed. The primary-source documentation of ELITE, DROP platform, and data broker pipelines retains value regardless of format or framing. A pivot should preserve the sourcing while restructuring the presentation.
 
 ---
 
-*Document complete. Use in conjunction with `tier-1-success-metrics-framework.md` (per-organization tracking), `tier-1-feedback-collection-protocol.md` (email follow-up templates and CRM integration), and `adoption-tracking-dashboard-spec.md` (passive monitoring infrastructure). The three files together constitute the complete operational tracking system. This document adds the individual-segment and threat-model-specific measurement layer.*
+## Section 6: KPIs Summary Table
 
-**Sources**:
-- Signal adoption among journalists: [Signal User Stats 2026](https://www.engagecoders.com/signal-user-statistics-how-many-people-use-signal/); [Signal Statistics 2025](https://electroiq.com/stats/signal-statistics/)
-- California DELETE Act DROP platform: [California DROP Platform](https://privacy.ca.gov/drop/); [ByteBack Law DROP launch](https://www.bytebacklaw.com/2026/02/californias-deletion-request-and-opt-out-platform-drop-is-live/)
-- Section 702 renewal (S.1318, April 29, 2026): internal project tracking (see surveillance-tracking.md)
-- IMSI catcher detection via Rayhunter: [EFF Rayhunter announcement](https://www.eff.org/deeplinks/2025/03/meet-rayhunter-new-open-source-tool-eff-detect-cellular-spying); [EFF Rayhunter findings 2025](https://www.eff.org/deeplinks/2025/09/rayhunter-what-we-have-found-so-far)
-- Monero privacy effectiveness and Chainalysis detection: [TRM Labs Monero research](https://www.trmlabs.com/resources/blog/the-rise-of-monero-traceability-challenges-and-research-review); [State of Surveillance data broker ICE contracts](https://stateofsurveillance.org/articles/corporate/data-brokers-ice-contracts/)
-- SAFETAG civil society security adoption outcomes: [Internews SAFETAG evaluation](https://greaterinternetfreedom.org/success_stories/evaluation-findings-safetag-audits-increase-digital-security-of-organizations-and-lead-to-changes-in-attitude-and-behavior/)
-- Security awareness training effectiveness: [Fortinet 2025 Security Awareness Report](https://www.fortinet.com/blog/industry-trends/2025-security-awareness-report-why-training-works-and-where-organizations-still-fall-short)
-- FPF digital security training reach: [FPF Digital Security Education](https://freedom.press/digisec/)
+The following table consolidates all key performance indicators across the three assessment gates. It is the single-page reference for evaluating campaign performance.
+
+| KPI | 3-Month Target | 6-Month Target | 12-Month Target | Data Source |
+|-----|---------------|----------------|-----------------|-------------|
+| Total organizations at Stage 3+ | ≥3 of 45 | ≥5 of 45 | ≥8 of 45 | CSV tracker |
+| Organizations at Stage 4+ (sustained) | 0 required | ≥1 | ≥3 | CSV tracker |
+| Organizations at Stage 5 (multiplier) | 0 required | 0 required | ≥1 | CSV tracker |
+| Sector coverage at Stage 3+ | 2+ sectors | 3+ sectors | All 4 sectors | CSV tracker |
+| External citations (published) | 0 required | ≥1 | ≥3 | Google Alerts, Overton |
+| Referral factor | ≥1.2 | ≥1.5 | ≥2.0 | CSV tracker referral count |
+| Gist view count | 300+ | 600+ | 1,000+ | Gist traffic log |
+| Feedback responses collected | ≥6 | ≥10 | ≥15 cumulative | CSV tracker |
+| Corpus revisions made | ≥1 | ≥2 | ≥4 (quarterly cadence) | Gist changelog |
+| Confirmed threat model accuracy | ≥1 practitioner confirmation | ≥3 | ≥5 | Feedback logs |
+| DROP enrollment reports (CA) | N/A (August 1 deadline) | 0 required until Nov 2026 | ≥2 legal aid orgs | 90/180-day follow-up |
+| Near-miss narratives | N/A | 0 required | ≥1 | Anonymous feedback channel |
+| Academic/policy citations | 0 required | 0 required | ≥1 preprint or syllabus | Google Scholar, Overton |
+| Legal filing citations | 0 required | 0 required | 0 required (1 = exceptional) | CourtListener |
+
+**Note on the legal filing citation**: This is included because it represents the highest-consequence attribution of the corpus to a specific legal outcome. It is not required for any assessment gate. A single legal filing that cites the ELITE documentation would constitute extraordinary campaign-level success. Track it because it is worth tracking, not because its absence is a failure.
+
+---
+
+## Section 7: Incident Prevention Metrics — Proxy Framework
+
+Because effectiveness is primarily a non-event, the proxy measurement strategy is documented here for reference across all three assessment gates.
+
+### 7.1 Attack Surface Reduction as the Primary Proxy
+
+Security posture improvement cannot be directly measured. Attack surface reduction can be. The following attack surfaces are targeted by corpus countermeasures, and their reduction is verifiable:
+
+| Attack Surface | Countermeasure | Verifiable Reduction |
+|---------------|---------------|---------------------|
+| Commercial data broker records in ELITE database | Data broker manual opt-out or DROP enrollment | Self-report of completed opt-outs; broker removal confirmations |
+| SIGINT collection via unencrypted SMS/email | Signal adoption | Self-report: "I now communicate with sources via Signal" |
+| ICE home visit via high-confidence address score | Address masking (mail forwarding, P.O. box) | Self-report: "I have moved my address records to a forwarding service" |
+| Device seizure during traffic stop | Full-disk encryption + auto-reboot | Self-report: device encrypted; auto-reboot configured |
+| Financial surveillance via Venmo/PayPal | Monero or cash | Self-report: "I have stopped using Venmo for political contributions" |
+| IMSI catcher at protests | Rayhunter deployment or leaving phone at home | Rayhunter detection log or self-report |
+
+**Attribution protocol**: When an organization or individual reports a countermeasure implementation, log it with an attribution confidence level:
+- **High**: References a corpus-specific term or procedure (DROP platform, ELITE address confidence score, Rayhunter)
+- **Medium**: Implementation aligns with corpus guidance but could have been learned elsewhere (Signal adoption, data broker opt-out)
+- **Low**: General security improvement with no specific corpus link
+
+### 7.2 Near-Miss Narrative Collection Protocol
+
+Near-miss narratives are self-reported stories of cases where hardening appears to have prevented or reduced harm. They cannot be verified. They are the highest-value qualitative signal in the entire tracking framework because they establish a plausible mechanism from corpus implementation to prevented harm.
+
+**Collection channels**:
+1. Anonymous Signal number (if established): +1 [number] with the message "OpSec feedback"
+2. Anonymous feedback form (linked in the corpus itself): Google Form or Tally with no required identifying fields
+3. 90-day and 180-day follow-up email: "Has anyone at your organization used this with a client who subsequently avoided an adverse outcome?"
+
+**Logging protocol**: Log all near-miss narratives with:
+- Date received
+- Channel (anonymous / org follow-up)
+- Audience segment (journalist / attorney / activist / undocumented)
+- Countermeasure referenced (which corpus element was implemented)
+- Outcome described (what adverse event was avoided or reduced)
+- Attribution confidence (did the person specifically reference the corpus?)
+
+**What to do with near-miss narratives**: They are not publishable claims. They are internal signals that tell you whether the corpus is reaching people who face real threats and are using it in real situations. One near-miss narrative from a journalist whose source was protected because they switched to Signal is more meaningful than 100 acknowledgment emails from organizations that said "this looks useful."
+
+---
+
+## Section 8: Connecting Tier 1 Outcomes to Tier 2/3 Design
+
+The Tier 1 assessment gates produce five categories of intelligence that directly drive Tier 2/3 design. This section maps each intelligence category to a specific Tier 2/3 decision.
+
+### 8.1 Adoption Pattern → Tier 2 Audience Sequencing
+
+If Tier 1 adoption concentrated in legal aid organizations (Cohort A), lead Tier 2 with the legal community angle: the corpus has been reviewed by immigration legal aid organizations and is being used in client intake. This framing resonates with the next tier of legal and policy audiences (state bar associations, law school clinics, legislative staff).
+
+If Tier 1 adoption concentrated in digital rights organizations (Cohort B, Sector A), lead Tier 2 with the research validation angle: the corpus has been reviewed by organizations specializing in surveillance policy. This framing resonates with technical and policy audiences.
+
+If adoption is cross-sector, lead Tier 2 with multi-sector framing: the corpus has been adopted by organizations across legal services, digital rights, journalism, and academic research. This is the strongest possible Tier 2 opening.
+
+### 8.2 Gap Inventory → Tier 2/3 Content Updates
+
+The Day 90 feedback aggregation will produce a ranked list of content gaps. The top two gaps that were cited by ≥2 organizations are required updates before Tier 2 distribution. Gaps cited by one organization are Phase 2 enhancements. Gaps that suggest structural problems with the threat model are Category (c) holds.
+
+**Content update priority order for Tier 2**:
+1. Confirmed Category (c) corrections: any factual error in the threat model, no matter who reported it
+2. DROP platform procedural gaps: the highest-consequence section for California-based undocumented clients
+3. Missing population sections cited by ≥2 organizations
+4. Language gaps: Spanish-language Part 0 is the highest-priority translation if ≥2 organizations cited it
+5. Format gaps: PDF version if ≥3 organizations cited the Gist format as a distribution barrier
+
+### 8.3 Threat Model Accuracy Confirmation → Tier 2 Credibility Framing
+
+If ≥3 Tier 1 organizations confirm that the ELITE threat model accurately describes what they observe in their clients' cases, this confirmation is the strongest available credibility signal for Tier 2. The framing: "Immigration legal practitioners with direct case experience have confirmed that this threat model accurately describes how ICE targeting operates."
+
+If threat model accuracy is mixed or contested, Tier 2 must include explicit uncertainty language: "The threat model is based on publicly documented Palantir contracts and government data-sharing agreements; some aspects of its operational implementation may vary by jurisdiction."
+
+### 8.4 Referral Network → Tier 2 Contact List
+
+Every referral generated via Question 3 of the 30-day follow-up is a Tier 2 warm contact. Warm contacts from Tier 1 referrals should be the first sends in any Tier 2 wave — their prior relationship with a Tier 1 organization means they are already oriented toward the corpus's mission.
+
+Build the Tier 2 contact list in the following priority order:
+1. Warm referrals from Tier 1 Question 3 responses
+2. Organizations at the same tier as successful Tier 1 adopters (sector-matched outreach)
+3. Organizations listed in existing Tier 2 planning documents (tier-2-sector-contact-lists.md, tier-2-outreach-email-templates.md)
+4. Cold contacts in sectors where Tier 1 showed no adoption (these require revised framing before sending)
+
+### 8.5 Barrier Profile → Tier 2/3 Approach Adjustment
+
+The most common Tier 1 barrier(s) identified through 90-day feedback determine whether Tier 2/3 should replicate the approach or adjust it.
+
+| Barrier | Adjustment Required |
+|---------|-------------------|
+| Format (Gist URL) | Produce PDF before Tier 2; lead with PDF in all sends |
+| Length | Produce standalone 2-page Part 0 summary; use as Tier 2 entry point |
+| Sourcing credibility | Produce sourcing reference appendix; submit to peer review or seek endorsement |
+| Language (Spanish gap) | Translate Part 0 before Tier 2 sends to community-based organizations |
+| Technical complexity | Produce quick-start videos for highest-friction steps (Tails, VeraCrypt, DROP enrollment) |
+| Threat model uncertainty | Add explicit epistemics annotations ("confirmed in X contract" vs. "inferred from X filing") |
+
+---
+
+## Section 9: Privacy and Data Handling for Impact Tracking
+
+### 9.1 Protecting Feedback Sources
+
+The feedback tracking infrastructure contains identifying information about organizations and contacts who discussed security vulnerabilities with vulnerable populations. Handle with appropriate care.
+
+**Storage requirements**:
+- CSV tracker stored in a location accessible only to the campaign operator (not shared storage, not public repository)
+- If stored in Google Sheets: access restricted to one account; sharing disabled
+- If stored locally: on a device with full-disk encryption enabled
+
+**What not to log**:
+- Client case details shared by organizations during follow-up calls
+- Staff security vulnerabilities disclosed during interviews
+- Organizational capacity information that could harm the organization if disclosed
+- Near-miss narrative details that could identify a specific undocumented individual
+
+**Anonymization for external reporting**: All external reporting (to Tier 2 contacts, in any public-facing document) must anonymize organizational names unless explicit permission has been granted. Log permission status in the CSV tracker `citation_permission` field.
+
+### 9.2 Safe Feedback Channel Design
+
+Anonymous feedback channels (for undocumented immigrants and activists) must not log IP addresses, require account creation, or retain identifying metadata.
+
+**Acceptable options**:
+- Tally.so form: does not log IP addresses by default; accessible without account creation
+- Google Form with all required fields disabled: functional but metadata stored by Google
+- Paper form at legal aid offices: no digital footprint; collected by trusted intermediary
+- Anonymous Signal message: to a number not linked to the campaign operator's identity
+
+**Not acceptable**:
+- Typeform (logs IP addresses by default)
+- JotForm (requires account or Google sign-in)
+- Any form service that integrates with a CRM or marketing platform
+
+---
+
+## Section 10: Monitoring Infrastructure Setup Checklist
+
+Complete before the first Tier 1 send. Items that are not set up before distribution cannot be retroactively applied.
+
+**Before Day 1 (distribution launch)**:
+- [ ] Google Alert set for: `"Palantir ELITE" immigration`, `"data broker opt-out" undocumented`, corpus Gist URL
+- [ ] Google Scholar alert set for: `"Palantir ELITE" immigration`, `"DELETE Act" undocumented`
+- [ ] Bitly short link created for Gist URL (for click tracking)
+- [ ] CSV tracker populated with all Cohort A and Cohort B organization rows
+- [ ] Anonymous feedback channel established (form URL or Signal number)
+- [ ] Gist traffic baseline recorded
+- [ ] 90-day follow-up email drafted and saved as Gmail draft template
+
+**At Day 30 (first assessment checkpoint)**:
+- [ ] Gist view count logged
+- [ ] CSV tracker updated with all reply data
+- [ ] Stage-of-adoption field updated for all contacted organizations
+- [ ] Day 30 follow-up email sent to all contacts (per `tier-1-feedback-collection-protocol.md` template)
+- [ ] Referral contacts from Question 3 added to tracker
+
+**At Day 90 (Gate 1)**:
+- [ ] 90-day follow-up email sent to all Stage 1+ contacts
+- [ ] Structured feedback (survey or interview) collected and logged
+- [ ] Gist view count logged (delta from Day 30)
+- [ ] Gate 1-5 criteria evaluated (Section 3.2)
+- [ ] Tier 2 decision made and documented
+
+**At Day 180 (Gate 2)**:
+- [ ] 180-day follow-up sent to Stage 3+ contacts
+- [ ] Case study interview conducted or scheduled
+- [ ] Overton.io search run
+- [ ] Gist view count logged (delta from Day 90)
+- [ ] Gate criteria evaluated (Section 4.2)
+- [ ] Tier 3 decision made and documented
+- [ ] DROP platform effectiveness check (for enrollments before August 1, 2026)
+
+**At Day 365 (Gate 3)**:
+- [ ] Annual Overton, Google Scholar, and CourtListener searches run
+- [ ] Near-miss narrative log reviewed and aggregated
+- [ ] 12-month impact summary produced (per `adoption-tracking-dashboard-spec.md` quarterly template)
+- [ ] Replicate/partial pivot/full pivot decision documented (Section 5.3)
+- [ ] WORKLOG.md updated with annual summary
+
+---
+
+*Document complete. This is the master assessment framework. For per-organization follow-up email templates, see `tier-1-feedback-collection-protocol.md`. For individual-level adoption metrics by segment (journalists, attorneys, activists, undocumented immigrants), see `post-distribution-impact-tracker.md` v2.0. For passive monitoring infrastructure (Gist traffic, social media, policy database), see `adoption-tracking-dashboard-spec.md`. For the 90-day structured feedback survey, see `feedback-collection-template.md`.*
+
+*Last updated: 2026-05-06*
+
+**Sources cited in this document**:
+- Stage adoption model and referral factor methodology: adapted from `post-distribution-impact-tracker.md` v1.0 (session 717)
+- Realistic adoption benchmarks (3–5 sustained adoptions in 18 months): `tier-1-success-metrics-framework.md`, Section 5
+- Category (c) wrong-threat-model feedback protocol: `tier-1-effectiveness-framework.md`, Section 5
+- Near-miss narrative value and collection: `post-distribution-impact-tracker.md` v2.0, Section A-D
+- DROP platform timeline (August 1, 2026 broker processing deadline): [California DROP Platform](https://privacy.ca.gov/drop/)
+- Privacy-preserving form design: [Tally.so privacy policy](https://tally.so/help/privacy); [EFF Privacy Badger browser detection](https://privacybadger.org/)
