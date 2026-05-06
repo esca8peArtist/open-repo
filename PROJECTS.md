@@ -295,6 +295,12 @@
 
 **Current focus**:
 
+**Session 829 (2026-05-06) — MAY 12 OUTCOME ROADMAP COMPLETE (Exploration Queue)**:
+- **Deliverable**: `MAY_12_OUTCOME_ROADMAP.md` created — single actionable reference for May 13 morning
+- **Coverage**: PASS / NEAR-MISS / FAR-MISS C1 / FAR-MISS C2 scenarios; checkpoint SQL query; capital allocation per outcome; timeline to live trading; options activation gate; 7 architecture decisions context for Gate 2 sprint
+- **Key finding**: NEAR-MISS (h+8 at checkpoint, h=10 fires May 14) is the 50% most-likely outcome — expected behavior, not a failure
+- **Next**: May 12 20:00 UTC — run checkpoint query; assign scenario; follow MAY_12_OUTCOME_ROADMAP.md
+
 **Session tonight (2026-05-04) — 2-SESSION JETSON DEPLOY + POSITION CLOSURES**:
 - **Architecture change**: Reduced from 67 sessions to 2 (AAPL lgbm_ho + AAPL ridge_wf) running on Jetson
 - **Fix 1 deployed**: `_seed_sessions_from_json()` in `src/api/dashboard_api.py` — auto-seeds DB from `active-sessions.json` when no active runs exist
@@ -1547,7 +1553,7 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - **mfg-farm: SKU Design Batch 2 — Quick CadQuery Templates** (estimated 3–4 hrs) — Prerequisite: none (independent design work). Scope: Create parametric CadQuery stubs for 3–4 high-margin products from product-line-strategy.md (magnetic bin labels ~2h, plant markers ~1.5h, pegboard hooks ~1.5h). Cost models already exist. Output: STL-ready designs + simple test-print guide. Business value: Post-headphone-hooks test print, user can immediately test-print Batch 2 products in parallel with ModRun production ramp.
 
-- **seedwarden: Phase 2 Canva Template Prototype & Designer Handoff Guide** (estimated 2–3 hrs) — Prerequisite: none. Scope: Create mockup/design brief showing what the Zone Quick-Start Card should look like in Canva (layout, branding rules, text zones, image placement). Include step-by-step Canva setup guide for user to execute Phase 2. Output: `CANVA_TEMPLATE_PROTOTYPE.md` + sample design file. Business value: Transforms 2-3 hours of user trial-and-error into clear 30-minute execution path.
+- ✅ **seedwarden: Phase 2 Canva Template Prototype & Designer Handoff Guide** (COMPLETE, Session 829, 2026-05-06) — `CANVA_TEMPLATE_PROTOTYPE.md` (annotated ASCII layout mockup, full branding rules, Zone 5 filled-in example, file specs, zone quick-reference table, locked design decisions) + `CANVA_SETUP_AND_EXECUTION_GUIDE.md` (9-step linear execution guide: account setup, grid setup, Brand Kit application, master template build with paste-ready Zone 5 content, image/background rules, QR code guidance, 8-zone duplication workflow, PDF export settings, verification checklist; appendices for monthly refresh protocol and Kit upload tracking). Business value: Transforms 2-3 hours of trial-and-error into a clear 30-45 minute execution path. Complementary to existing `CANVA_ZONE_CARD_DESIGN_GUIDE.md` (build-phase reference) and `CANVA_ZONE_CARD_BATCH_WORKFLOW.md` (paste-ready copy database).
 
 ---
 
