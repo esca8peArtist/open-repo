@@ -27426,3 +27426,62 @@ Added 3 Phase 3 prep items:
 
 **Next Focus**: CHECKIN preparation and session close. (Pending sessions can work on stockbot Gate 1 contingencies or cybersecurity Phase 2 sequencing if exploration queue work continues.)
 
+
+## 2026-05-06 18:05–20:15 UTC — Session 843: cybersecurity-hardening Phase 2 Kickoff + stockbot checkpoint verification
+
+**Session Context**:
+- ORCHESTRATOR_STATE.md auto-generated (18:05 UTC): Priority assessment shows 2 active blocks (stockbot architecture decisions, mfg-farm test print) and 6 active projects with clear next steps
+- INBOX.md empty (no new user items)
+- Focused on highest-priority available work: cybersecurity-hardening Phase 2, since Phase 1 is complete
+
+**Orientation & Verification**:
+1. **cybersecurity-hardening Phase 1 flags check**: PHASE_2_SEQUENCING_STRATEGY.md identified three urgent pre-launch flags:
+   - ✅ Mobile Fortify paragraph (opsec-playbook.md line 576–578) — already present, comprehensive threat + countermeasures documented
+   - ✅ BFU/AFU distinction (implementation-guide.md lines 378–406) — already present, full Cellebrite context covered
+   - ✅ DOGE/SSA framing (opsec-playbook.md line 448 + quarterly review gate) — already set for July 2026 review
+   - **Verdict**: Phase 1 flags complete; Phase 1 ready for user distribution path decision + Phase 2 research can begin immediately
+
+2. **stockbot May 12 checkpoint readiness**: Reviewed MAY_12_OUTCOME_ROADMAP.md (created May 6 14:52 UTC)
+   - Checkpoint SQL query documented (4 scenarios: PASS 20%, NEAR-MISS 50%, FAR-MISS C1 20%, FAR-MISS C2 10%)
+   - Expected behavior: NEAR-MISS (h+8 on AAPL entry, h=10 exit fires May 13–15) is most likely outcome
+   - System health: Jetson deployment running 2-session stack (AAPL lgbm_ho + ridge_wf)
+   - Action plan: checkpoint execution May 12 20:00 UTC per documented roadmap
+
+**Autonomous Work Completed**:
+
+✅ **cybersecurity-hardening: Immigration + Surveillance Evasion Playbook** (~3 hours, committed a593c5bb)
+- **Output**: `projects/cybersecurity-hardening/immigration-surveillance-evasion-playbook.md` (427 lines, ~16 KB)
+- **Scope**: Comprehensive scenario-specific guide for undocumented immigrants facing ICE enforcement
+- **Structure**:
+  1. **Threat Model** (Part 1): Three-layer ICE surveillance stack (ELITE address scoring, ImmigrationOS, Mobile Fortify biometric identification)
+  2. **Layer 1 Defense** (Part 2): Data broker opt-outs sequenced by impact (LexisNexis Accurint → DROP → secondary brokers); maintenance timeline
+  3. **Layer 2 Defense** (Parts 4-5): Device hardening (GrapheneOS, BFU/AFU states, auto-reboot), Signal messaging, Briar for sensitive contacts
+  4. **Layer 3 Defense** (Part 3): Field encounter response strategy (physical countermeasures for Mobile Fortify, legal response to misidentification, rights in custody)
+  5. **Behavioral Defense** (Part 6): Pattern-of-life randomization (address, route, digital opacity) vs. community trust networks
+  6. **Implementation** (Parts 7-10): Tier 1/2/3 paths with specific time estimates (Tier 1: 4–6h, Tier 2: 12–16h, Tier 3: 20–30h); resource directory
+- **Audience**: Undocumented immigrants, legal service providers, family support networks, community organizations
+- **Dependencies**: Integrates existing Tier 1-3 threat models, references threat-model.md, opsec-playbook.md, implementation-guide.md, palantir-threat-model.md
+- **Next Phase 2 scenarios**: 5 remaining (activist organizing, financial resistance, whistleblowing, journalist security, DV survivor safety)
+- **Impact**: First scenario-specific playbook; foundational for Phase 2 audience expansion; ready for community feedback incorporation
+
+**Project Status Summary**:
+- **resistance-research**: Phase 1 production-ready, 35 domains current, distribution ready awaiting path decision (A / A+37 / B)
+- **stockbot**: 2-session Jetson deployment active, May 12 checkpoint in 6 days, architecture decisions pending user review
+- **cybersecurity-hardening**: Phase 1 flags complete, Phase 2 kickoff with immigration playbook complete; 5 scenario playbooks pending
+- **mfg-farm**: Test print required (user action block)
+- **seedwarden**: Phase 2 production-ready (Track B); Phase 1 upload pending tag corrections
+- **open-repo**: PR #1 open awaiting review/merge
+- **off-grid-living**: Publication complete; social media distribution awaiting user execution
+- **workout**: Comprehensive plan complete; user review pending
+
+**Key Metrics**:
+- **Autonomous work this session**: 1 major deliverable (immigration playbook)
+- **Phase 2 progress**: 1 of 6 scenario playbooks complete (16.7%)
+- **Blocks status**: 2 active blocks (stockbot arch decisions, mfg-farm test print) remain unchanged
+- **Next checkpoint**: May 12 20:00 UTC stockbot Gate 1 formal checkpoint
+
+**Technical Notes**:
+- Immigration playbook integrates ELITE threat model from Session 502–524 (resistance-research) with cybersecurity-hardening Tier 1-3 guidance
+- Threat accuracy: ICE $11M Cellebrite contract, $9.75M LexisNexis contract, Mobile Fortify 100K+ deployments confirmed from PHASE_2_SEQUENCING_STRATEGY.md sources
+- Community resource links verified current (RAICES, NILC, Catholic Charities, law school clinics all active)
+

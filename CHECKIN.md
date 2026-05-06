@@ -1,3 +1,21 @@
+## Since Last Check-in (Session 843 — 2026-05-06 18:05–20:15 UTC) — CYBERSECURITY-HARDENING PHASE 2 SCENARIO 1 COMPLETE
+
+### STATUS: **Immediate user input needed**: (1) resistance-research distribution path decision (A/A+37/B) to launch Phase 1 within 4 hours, (2) stockbot architecture decisions review (7 items, CODE_REVIEW_SYNTHESIS.md) before code changes proceed. Autonomous work: cybersecurity-hardening Immigration + Surveillance Evasion Playbook complete (Phase 2 Scenario 1 of 6). All main project blocks unchanged. No new blockers. Usage: Sonnet 2.2%; all-models 53.4% (reset in 125h).
+
+**What Changed**:
+- **cybersecurity-hardening**: Phase 2 kickoff complete. Immigration + Surveillance Evasion Playbook (427 lines, ~16 KB) created and committed (a593c5bb). Comprehensive guide for undocumented immigrants facing ICE enforcement, integrating three-layer threat model (ELITE/ImmigrationOS/Mobile Fortify) + data broker opt-outs + device hardening + field encounter legal response. 5 scenario playbooks remain (activist organizing, financial resistance, whistleblowing, journalist security, DV survivor safety).
+- **stockbot**: May 12 checkpoint 6 days away. MAY_12_OUTCOME_ROADMAP.md reviewed; system running on Jetson (2-session stack). Expected: NEAR-MISS (50% most likely), h+8 at checkpoint, h=10 exit fires May 14.
+- **resistance-research**: Phase 1 flags verified complete (Mobile Fortify, BFU/AFU, DOGE/SSA all documented). Awaiting distribution path decision to launch.
+
+**What's Next**:
+1. **Critical decisions needed**:
+   - resistance-research: Pick path A, A+37 (recommended), or B → Phase 1 launches within 4 hours
+   - stockbot: Review CODE_REVIEW_SYNTHESIS.md (7 architecture decisions) and confirm direction
+2. **May 12 checkpoint**: 6 days. Checkpoint execution at 20:00 UTC; decision tree ready; all scenarios documented.
+3. **Phase 2 planning**: cybersecurity-hardening Phase 2 expansion proceeding. First scenario (immigration) complete; recommend next priority: journalist security or activist organizing based on feedback patterns.
+
+---
+
 ## Since Last Check-in (Session 842 — 2026-05-06 19:25–20:50 UTC) — EXPLORATION QUEUE PHASE 1 INFRASTRUCTURE + GATE 2/POST-TEST-PRINT PRE-DESIGN COMPLETE
 
 ### STATUS: Three exploration queue items delivered (resistance-research Phase 1 distribution infrastructure, stockbot Gate 2 architecture, mfg-farm post-test-print sequence). Phase 1 ready to launch within 4 hours of user path decision. Gate 2 architecture ready for May 12 Gate 1 pass → immediate implementation. mfg-farm post-launch 4-week plan ready for test-print success. All main projects remain blocked on user decisions/actions. No new blockers. Usage: Sonnet 2.2%; all-models 53.0% (reset in 126h).
