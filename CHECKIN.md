@@ -1,12 +1,82 @@
-## Since Last Check-in (Session 832 — 2026-05-06 14:40–15:50 UTC) — EXPLORATION QUEUE EXECUTION: HEADPHONE HOOKS DESIGN, COST & ETSY GUIDES COMPLETE
+## Since Last Check-in (Session 832 — 2026-05-06 17:30–18:20 UTC) — stockbot POST-GATE-1 OPERATIONAL RESEARCH COMPLETE
 
-### STATUS: Exploration Queue Item Complete (3 production-ready docs, 10,700 words); Headphone Hooks ready for immediate post-test-print execution; All project blocks unchanged; Next autonomous work available in Queue
+### STATUS: Post-Gate-1 infrastructure research complete (3 production-ready docs, 13K words); architecture decisions mapped; compliance path simplified; all project blocks unchanged; May 12 checkpoint 6 days away
 
-**What Was Done** (Session 832 — 70 minutes):
+**What Was Done** (Session 832 — 50 minutes):
+
+Completed autonomous research on post-Gate-1 operational pathway for stockbot. All architecture decisions now ready for user approval; enables immediate deployment upon May 12 Gate 1 checkpoint outcome.
+
+**Autonomous Work Completed** (Session 832):
+
+**✅ stockbot — Post-Gate-1 Operational & Regulatory Architecture** (3 documents, 13K words total):
+
+1. **post-gate-2-live-trading-architecture.md** (5,400 words, production-ready)
+   - **Critical Finding**: 3 hard blockers must be fixed BEFORE live trading (ARCH-2, ARCH-3, ARCH-6) — combined ~9 hours of work
+   - **Alpaca Rate Limit Risk**: Current 67-session architecture generates 134-268 API calls/min; exceeds live limit (200/min) — live sessions must use 60-second cycles
+   - **Capital Requirements**: Minimum $25,001 (PDT threshold); two AAPL sessions ($10K each) + $5K reserve
+   - **Cash Account Advantage**: Completely bypasses PDT rules (no round-trip counter needed)
+   - **Sharpe Gap**: Index sessions alone won't close Sharpe gap to 1.0; HMM regime scaling + covered calls are primary levers
+   - **Regulatory Path**: 10b5-1 plan has 30-day cooling-off; if filed May 12, earliest live trade June 12 (aligns with Gate 2 checkpoint)
+   - **Ready for developer handoff**: All sections include decision trees and concrete implementation steps
+
+2. **regulatory-compliance-checklist.md** (2,800 words, decision tree format)
+   - **PDT Simplified**: Cash account removes complexity entirely; no SEC 10b5-1 insider requirements for retail non-insiders
+   - **All compliance items mapped** to existing code (CashOnlyValidator guardrail already implemented)
+   - **Zero ambiguity pre-live-trade checklist**: cash account path vs. margin account path clearly distinguished
+   - **Business value**: Eliminates compliance uncertainty; May 12 decision point becomes clear
+
+3. **multi-ticker-architecture-spec.md** (4,800 words, SPY/QQQ/IVV design)
+   - **QQQ Before SPY**: QQQ vol (19-24%) works with existing threshold; SPY vol (14-19%) requires multiplier adjustment (0.50 → 0.40)
+   - **Sharpe Impact Quantified**: Adding SPY at baseline Sharpe 0.50 to AAPL's 0.75 decreases portfolio Sharpe to ~0.71 (dilution). Only SPY Sharpe ≥0.65 improves combined Sharpe
+   - **Primary Value**: Index sessions are regime signals, not alpha generators
+   - **5 User Decisions Identified**: Near-miss SPY timing, QQQ vs. SPY first, breadth indicators, IVV inclusion, Level 1 auto-suppression yes/no
+   - **Level 1 Auto-Suppression**: New behavioral feature (SPY SELL mode suppresses stock BUY signals) requires user approval
+
+**Business Value Delivered**:
+   - 13,000 words of production-ready operational architecture
+   - Compliance path simplified (cash account removes PDT complexity)
+   - 3 hard blockers identified and prioritized (ARCH-2/3/6, ~9 hours total)
+   - Multi-ticker design validated (SPY/QQQ/IVV integration paths mapped, 5 user decisions identified)
+   - All architecture ready for developer handoff on May 13 morning
+   - Eliminates post-Gate-1 setup delay; enables immediate deployment upon decision
+
+**Blocks Status** (unchanged):
+- 🔴 **stockbot architecture decisions** — CODE_REVIEW_SYNTHESIS.md (7 architecture decisions) awaiting user review; Post-Gate-1 operational architecture now ready for synchronized implementation discussion
+- 🔴 **resistance-research distribution path** — User decision required (Path A / A+37 / B); all Phase 1 infrastructure ready, 40-min execution upon decision
+- 🔴 **mfg-farm test print** — ModRun print completion required (user physical action); Batch 2 designs ready for parallel execution May 13–19
+- 🟡 **seedwarden Phase 2 approval** — All execution guides ready (7 files, 16K words); May 30 launch fully mapped
+- 🟡 **cybersecurity-hardening Tier 1 approval** — Tier 2 briefings ready to follow in 4 weeks; all sector-specific threat intelligence documented
+
+**Needs Your Input** (Priority order):
+1. 🔴 **Architecture decisions review** (stockbot CODE_REVIEW_SYNTHESIS.md, 7 decisions) — Review findings and confirm direction for ARCH-1 through ARCH-7. Post-Gate-2 operational architecture is ready to inform your decisions. May 12 Gate 1 checkpoint is 6 days away; your review can happen anytime.
+2. 🔴 **Distribution path decision** (resistance-research A / A+37 / B) — Unlock Phase 1 launch with all infrastructure ready (40-min execution, risk playbook ready)
+3. 🔴 **Test print execution** (mfg-farm ModRun) — Unlock Batch 2 SKU designs; May 13–19 execution ready
+4. 🟡 **Phase 2 approval** (seedwarden) — Unlock May 30 launch (all 7 execution docs, 16K words, ready to deploy)
+5. 🟡 **Tier 1 launch approval** (cybersecurity-hardening) — Unlock outreach with Tier 2 briefings ready to follow
+
+**Recommended Next Session**:
+- **May 12 checkpoint day**: Monitor Gate 1 outcome. Post-Gate-1 operational architecture ready for immediate implementation discussion.
+- **If test print underway**: May 13–19 monitoring + Batch 2 tuning feedback collection.
+- **If distribution/Tier 1 approved**: Phase 1 launch execution or Tier 1 outreach begins.
+- **If architecture review complete**: Implement ARCH decisions post-Gate-1 (18–20 hours engineering work).
+- **If all still waiting**: Exploration queue refresh available (6 unstarted items pending).
+
+**Session Statistics** (Session 832):
+- **Duration**: 50 minutes
+- **Deliverables**: 3 production-ready markdown documents (13K words total)
+- **Files created**: `post-gate-2-live-trading-architecture.md`, `regulatory-compliance-checklist.md`, `multi-ticker-architecture-spec.md`
+- **Tokens used**: ~87K (research + analysis + documentation)
+- **Ready for**: Architecture decision discussion + May 12 checkpoint execution
+
+---
+
+## ARCHIVE: Previous Check-in (Session 831 — 2026-05-06)
+
+**What Was Done** (Session 831 — 70 minutes):
 
 Completed Exploration Queue item: **mfg-farm — Headphone Hooks Design, Cost Model & Etsy Execution**. All three documents production-ready for immediate post-test-print execution.
 
-**Autonomous Work Completed**:
+**Autonomous Work Completed** (Session 831):
 
 1. ✅ **HEADPHONE_HOOK_DESIGN_SPEC.md** (3,400 words, production-ready)
    - Complete manufacturing specifications for Bambu P1S
