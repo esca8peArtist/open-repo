@@ -247,6 +247,83 @@ https://www.etsy.com/listing/[ID]/[slug]?utm_source=kit&utm_medium=email&utm_cam
 
 ---
 
+## Timing Constraints
+
+These constraints are absolute — they cannot be compressed or reordered. Violating them causes the downstream action to fail silently or block launch.
+
+| Constraint | Deadline | What It Blocks | Why Non-Negotiable |
+|---|---|---|---|
+| Zone card PDFs must exist before Kit Email 1 can be built | Zone cards done by May 19 | Kit email build (May 19-22) | Email 1 download button requires the PDF URL; URL requires Google Drive upload; Google Drive upload requires the PDF |
+| Google Drive upload + URL capture must complete before Kit automation can be wired | May 19-21 | Kit automation wiring (May 23-24) | Kit automation references specific PDF download URLs; wrong URL = wrong file delivered to subscriber |
+| Kit automation must be live before the social bio link goes to its permanent state | Kit live by May 25 | Social bio conversion from launch week | Subscribers who click the bio link before Kit is live get a form with no working delivery |
+| SEEDWARDEN15 coupon must be created in Etsy before Email 5 delivers | By May 20 | Email 5 (Day 10 for subscribers) | First subscriber signed up May 6 hits Email 5 May 16. Coupon must be active before that. |
+| Buffer OAuth tokens must be active at post-send time | Re-authorize May 28 | Social posts on May 30 | Expired OAuth is a silent failure — posts show "Scheduled" in Buffer but never send |
+| Kit broadcast must be in "Scheduled" status (not "Draft") before May 30 | Stage by May 29 | Email launch phase | Draft broadcasts do not send automatically. This is not obvious in Kit's UI — "Draft" looks like it could be a staging state but it is not. |
+
+---
+
+## Three Critical Path Bottlenecks
+
+### Bottleneck 1: Zone Card Export to Google Drive to Kit (Highest Risk)
+
+**Location in workflow**: Canva (PDF build) → Google Drive (file hosting) → Kit (email delivery button)
+
+**Why this is the highest-risk handoff**: It is a three-step manual process where each step has a distinct silent failure mode:
+- Canva export at wrong quality (PDF Standard instead of PDF Print) produces a smaller, lower-resolution file with no warning
+- Google Drive sharing permission defaults to "Restricted" — uploading without changing this means the subscriber gets a "Request Access" page when they click the download link
+- Google Drive share URL format for "viewing" vs. "downloading" are visually similar but functionally different. Kit email links must use `uc?export=download&id=` format, not the default `file/d/[ID]/view` format.
+
+**Why the failure is silent**: The zone card download link in Kit Email 1 appears correct during setup. The email sends. The open rate looks normal. Only when a subscriber clicks the link and sees "Request access" or opens a browser viewer instead of downloading a PDF does the failure become visible — and by then it has already degraded the first-contact experience for every subscriber in that window.
+
+**Mitigation**:
+1. Export each PDF immediately and open it on-screen to confirm resolution before uploading to Drive.
+2. After each Drive upload, immediately test the link in an incognito window before logging the URL anywhere.
+3. After all 8 URLs are loaded into Kit Email 1, run a complete end-to-end sign-up test (Zone 5) before publishing the automation.
+4. Re-test all 8 Drive URLs on May 28 (two days before launch) — Drive sharing permissions can reset if files are moved or the folder is reorganized.
+
+**Time to fix if caught in QA**: 5 minutes per zone (change Drive sharing, update URL in Kit email). Total fix time for all 8 zones if all are broken: 40 minutes.
+**Time to fix if caught on launch morning**: Same 40 minutes, but now you are in the launch window. Fixable — but requires the 8am QA block to catch it.
+**Time to fix if caught after subscribers complain**: Up to 24 hours of degraded first impression for affected subscribers. Send a follow-up email to the affected window with a corrected link and an apology.
+
+---
+
+### Bottleneck 2: Kit Broadcast Staging (Medium Risk)
+
+**Location in workflow**: Kit email editor (draft stage) → Kit broadcast (scheduled stage) → Kit send queue → subscriber inbox
+
+**Why this is a bottleneck**: Kit has a two-state system for broadcasts — "Draft" and "Scheduled." A broadcast in Draft state does not send at the scheduled time. There is no warning or notification when a scheduled send time passes with the broadcast still in Draft. It simply does not send.
+
+**The failure mode**: User creates the launch broadcast, writes the copy, sets the send time to May 30 12pm, and navigates away. If the final step of clicking "Schedule" (or "Confirm Schedule") was skipped, the broadcast is still in Draft. On May 30 at 12:05pm, the user checks Kit and sees no broadcast has sent. The launch email phase does not happen.
+
+**Mitigation**:
+1. When staging the broadcast (May 28-29), confirm the final status reads "Scheduled" with the correct date and time visible — not "Draft" or "Ready."
+2. Re-confirm on May 29 evening as part of the pre-launch checklist.
+3. On May 30 at 8am QA, this is the first Kit check: broadcast must show "Scheduled" or it gets fixed immediately.
+4. Fallback if broadcast is in Draft on May 30 at 12pm: open the broadcast, click "Send Now" — takes 30 seconds. The email sends immediately.
+
+**Time to fix if caught in QA (May 24-29)**: 30 seconds to confirm schedule.
+**Time to fix on launch morning**: 30 seconds if caught at 8am. If caught at 12:20pm: click "Send Now" — email sends with 20-minute delay from the intended 12pm window.
+
+---
+
+### Bottleneck 3: Buffer OAuth Token Expiry (Medium Risk)
+
+**Location in workflow**: Buffer/Later (post scheduler) → Instagram, TikTok, Pinterest APIs
+
+**Why this is a bottleneck**: Buffer connects to social platforms via OAuth tokens. These tokens expire periodically (typically 60-90 days for Instagram, 90 days for Pinterest, 30-60 days for TikTok). When a token expires, the connection silently shows as "expired" in Buffer Settings — but scheduled posts in the queue do not move to "Failed" until the send time arrives. The user sees "Scheduled" for their launch posts, but at 2:00pm on May 30 the posts fail to send because the connection is broken.
+
+**Why this failure is non-obvious**: If accounts were created in early May and Buffer was connected shortly after, the tokens may still be valid on May 30. But if any reconnection was done at setup, the TikTok token (30-60 day expiry) could expire before the launch date.
+
+**Mitigation**:
+1. Re-authorize all three Buffer connections on May 28 (two days before launch). This resets all OAuth tokens to a fresh 30-90 day window.
+2. On May 30 at 8am, open Buffer Settings > Connected Accounts and confirm all three show green status.
+3. Fallback if Buffer fails to post on launch day: log in directly to each platform and post manually using the captions and images from `phase-2-social-content-calendar-60day.md`. Manual posting takes 15-20 minutes total across three platforms and fully substitutes for the scheduled posts.
+
+**Time to fix if caught in QA**: 2 minutes per platform to re-authorize.
+**Time to fix on launch day**: Manual posting takes 15-20 minutes. Content quality is identical — only the scheduling automation is bypassed.
+
+---
+
 ## Handoff Points and Bottlenecks
 
 ### Handoff 1: Zone Card Export (Day ~19)

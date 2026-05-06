@@ -163,13 +163,63 @@ These items can slip without affecting the May 30 launch date.
 
 **Critical path**: Yes, but only for Etsy slots 4-5 and lifestyle social posts (NOT for email automation, zone cards, or initial social content)
 
+**Full shoot plan**: `PHOTO_SHOOT_SCHEDULE_AND_PROPS.md` and `SHOOT_PROPS_CHECKLIST.md`
+
+#### May 10 Shoot — Clusters A and B
+
+**Session 1: Cluster A — Seeds and Garden (9 products, 18 shots)**
+- **Time**: 9:00am to 1:30pm (4.5 hours including setup)
+- **Location option 1 (preferred)**: Indoor window flat-lay — floor or table next to a large south or east-facing window. Natural indirect light, 9am-noon window is optimal.
+- **Location option 2**: Outdoor table on a porch or deck in open shade (not direct sun). Works if window is unavailable or light is too harsh indoors.
+- **Surface**: Wooden cutting board, wood plank, or wood table surface. No white surfaces.
+- **Props in frame for Cluster A**: Seed packets (print 2-3 product pages), germination tray with sprouts (from germination tray started May 5-6), terracotta pot, small trowel, mason jar, kraft seed envelopes.
+- **Shot sequence per product**: (1) Overhead flat-lay with props arranged naturally, (2) 45-degree angle with product in focus, props soft in background. Two shots per product minimum; shoot 3-4 per product to allow culling.
+- **Products**: Seed Saving Field Manual, Heirloom Guide, Anti-Catalog, Companion Chart, Zone Calendar, Food Sovereignty Guide, Apartment Seed Kit, Urban Planner, Free Veg Guide (9 products × 2 shots = 18 target shots; shoot 27-36 total, cull to 18).
+
+**Session 2: Cluster B — Urban and Container (4 products, 8 shots)**
+- **Time**: 3:00pm to 5:00pm (2 hours)
+- **Location option 1 (preferred)**: Window sill, balcony railing, or indoor table with potted herbs visible in background.
+- **Location option 2**: Outdoor on a balcony or step with container plants in frame.
+- **Surface**: Concrete, tile, or wood — any urban-feeling surface.
+- **Props in frame for Cluster B**: 2-3 potted herbs (basil, parsley, or mint in small containers), grow tray, window frame or railing element.
+- **Products**: Container Blueprint, Apartment Growing Guide, Apartment Plant Catalog, Seed Swap Kit (4 products × 2 shots = 8 target shots).
+
+**May 10 evening (after shoot)**:
+- Transfer all Cluster A + B files to phone/computer (do not delete from phone until confirmed backed up)
+- Canva sprint: build Zone 3 + Zone 4 cards (clone from Zone 5, 45 min each)
+
+#### May 11 Shoot — Cluster C
+
+**Session 3: Cluster C — Food Preservation (3 products, 6 shots)**
+- **Time**: 9:00am to 11:00am (2 hours)
+- **Location option 1 (preferred)**: Kitchen counter with natural window light. Morning light from east-facing kitchen window is ideal.
+- **Location option 2**: Kitchen table with a softbox light if kitchen has no natural light.
+- **Surface**: Kitchen counter, butcher block, or tile.
+- **Props in frame for Cluster C**: Mason jars (2-3, with fermented or canned items visible), fresh herbs, possibly a canning pot or dehydrator tray in background.
+- **Products**: Harvest Preservation Field Manual, Fermented Harvest Handbook, Grow Your Own Hot Sauce (3 products × 2 shots = 6 target shots; shoot 9-12 total, cull to 6).
+
+**May 11 afternoon (after shoot)**:
+- Transfer Cluster C files
+- Canva sprint: build Zone 7 + Zone 8 cards
+
+#### Shoot Day Totals
+
+| Cluster | Products | Target Shots | Shoot Total (with redundancy) | Location |
+|---|---|---|---|---|
+| A — Seeds/Garden | 9 | 18 (2/product) | 27-36 RAW files | Window flat-lay |
+| B — Urban/Container | 4 | 8 (2/product) | 12-16 RAW files | Window sill / balcony |
+| C — Food Preservation | 3 | 6 (2/product) | 9-12 RAW files | Kitchen counter |
+| **Total** | **16** | **32** | **48-64 RAW files** | Three locations |
+
+**Culling target after shoot**: 48-64 RAW files → 30 selects (2 per product, best of the redundant shots). Culling happens May 12 — do not edit during shoot days.
+
 | # | Task | Responsible | Time Block | Output |
 |---|---|---|---|---|
-| 5.1 | Cluster A shoot — 8 products, 16 shots (window light) | User | 9am-1:30pm May 10 | 30-50 RAW files |
-| 5.2 | Cluster B shoot — 4 products, 8 shots | User | 3pm-5pm May 10 | 16-24 RAW files |
+| 5.1 | Cluster A shoot — 9 products, 18 shots (window flat-lay) | User | 9am-1:30pm May 10 | 27-36 RAW files |
+| 5.2 | Cluster B shoot — 4 products, 8 shots | User | 3pm-5pm May 10 | 12-16 RAW files |
 | 5.3 | Transfer all Cluster A + B files to `/raw/cluster-a/` and `/raw/cluster-b/` | User | 30 min May 10 eve | Files staged |
 | 5.4 | Canva sprint: build Zone 3 + Zone 4 cards (clone from Zone 5) | User | 2-3 hrs May 10 eve | 4 of 8 zones complete |
-| 5.5 | Cluster C shoot — 3 products, 6 shots (kitchen counter) | User | 9am-11am May 11 | 12-18 RAW files |
+| 5.5 | Cluster C shoot — 3 products, 6 shots (kitchen counter) | User | 9am-11am May 11 | 9-12 RAW files |
 | 5.6 | Transfer Cluster C files to `/raw/cluster-c/` | User | 20 min | Files staged |
 | 5.7 | Canva sprint: build Zone 7 + Zone 8 cards | User | 2-3 hrs May 11 afternoon | 6 of 8 zones complete |
 
