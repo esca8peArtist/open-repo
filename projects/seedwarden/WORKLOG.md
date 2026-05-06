@@ -4,6 +4,45 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 54 — 2026-05-06 — Phase 2 Track B Endangered Species Series Production Kickoff
+
+**Task**: Begin Phase 2 Track B guide production for Tier 1 endangered species (Appalachian Medicinals Wave 1). American Ginseng, Goldenseal, Black Cohosh guide drafts; photo sourcing pipeline; Canva style guide for endangered species aesthetic; production progress tracker.
+
+**Deliverables produced**:
+
+1. `products/endangered-species/american-ginseng-guide.md` — Draft v1. ~2,400 words. Full guide covering: identification (leaves, stem, flowers, berries, root, lookalikes), conservation crisis (harvest data timeline — 62,000 lbs pre-2015 to under 20,000 lbs 2024, 68% decline), CITES Appendix II legal landscape and seed exemption, three cultivation methods (wild-simulated/woods-cultivated/field), seed stratification protocol, site selection (indicator plants, site conditions checklist, calcium key), year-by-year cultivation timeline (Years 1–10+), Cherokee stewardship (*a-ta-li-gv*, seed replanting protocol), commercial seed supplier table (Prairie Moon, Strictly Medicinal, Penn State, American Ginseng Alliance, Southern Exposure), conservation impact section, Quick Reference card. Template cross-referenced to CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md and ENDANGERED_SPECIES_PHOTO_PIPELINE.md. Production notes flagged for Cherokee cultural content accuracy review before publication.
+
+2. `products/endangered-species/goldenseal-guide.md` — Draft v1. ~2,100 words. Full guide covering: identification (hairy stem, lobed leaves, white stamen flowers, yellow-rhizome diagnostic), berberine market analysis (why 95% remains wild-harvested despite decades of conservation attention), CITES Appendix II (1997) and seven-state endangered listings, woods-cultivated and container cultivation methods, rhizome division and seed propagation protocols, site selection checklist, year-by-year timeline (Years 1–6+), Indigenous use (Cherokee, Haudenosaunee, Ojibwe), supplier table (Strictly Medicinal, Prairie Moon, Johnny's, Southern Exposure, NC Botanical Garden), conservation impact. Production notes flag Cherokee name *nv-wa-s-ti* for verification.
+
+3. `products/endangered-species/black-cohosh-guide.md` — Draft v1. ~2,000 words. Full guide covering: identification (3–8 ft. habit, compound ternate leaves, white wand-like racemes — unmistakable in bloom), the gap between "Apparently Secure" NatureServe status and UpS At-Risk real-world harvest pressure, berberine market context, Massachusetts 2024 endangered listing, three cultivation methods, rhizome division and seed protocols, site selection (tolerates more shade variation than ginseng/goldenseal), year-by-year timeline (Years 1–6+), name correction history ("squawroot" → "black cohosh"), Cherokee/Iroquois ethnobotanical documentation, supplier table. Production notes flag Cherokee usage citation for verification.
+
+4. `ENDANGERED_SPECIES_PHOTO_PIPELINE.md` — Complete photo sourcing pipeline for all four Wave 1 species. Sections: per-species iNaturalist CC-BY search URLs (with taxon IDs), institutional outreach contacts and email templates (Missouri Botanical Garden for ginseng, NC Botanical Garden for goldenseal, Strictly Medicinal Seeds for goldenseal backup, Vermont Wildflower Farm for black cohosh backup, forest farm contacts for ginseng habitat shots), WORKLOG logging template for downloaded photos, photo quality standards table, outreach priority and timeline table, note on seasonal availability (ramps spring window has passed — use archival iNaturalist photos), Canva integration notes (CC-BY required for both guide interior and Etsy listing thumbnail).
+
+5. `CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md` — Full Canva design system for the endangered species series, differentiated from the native plants catalog. Sections: design principle (gravity/authority vs. abundance/approachability), "Deep Soil" color palette (7 new hex codes including Conservation Red #8B2000 for status badges only and Species Gold #C49A2A), typography hierarchy table, cover template specification (full-bleed habitat photo + 55–65% dark overlay, species name block, Conservation Red status badge), interior page template (running header, section header style, conservation callout box spec, Quick Reference card layout), Etsy listing image slot strategy (Slots 1–3 buildable now, Slots 4–5 after lifestyle photo sourcing), bundle design spec ("Appalachian Medicinals Wave 1" 2x2 cover grid on Aged Bark background), Canva production sequence (8 steps in order).
+
+6. `phase-2-production-progress.md` — New production tracking file. Sections: overall Wave 1 status table, species guide tracking matrix (guide draft × photo types × Canva × PDF × Etsy status), guide draft quality checklist (12 criteria), photo sourcing status tables (iNaturalist and institutional), Canva production status matrix, revenue projection milestones, next actions in priority order.
+
+**Key design decisions**:
+- Endangered species series uses "Deep Soil" palette (deeper, darker, more authoritative) vs. native plants warm cream-and-green — deliberate visual differentiation so buyers can distinguish series at thumbnail scale
+- Conservation Red (#8B2000) appears only in status badge elements — never decorative use; this preserves its signal value
+- All three guide drafts include the same 12-section structure for bundle consistency; Black Cohosh runs ~400 words shorter than the target and has expansion flags in the production notes
+- iNaturalist CC-BY (not CC-BY-NC) required for all photo use — Etsy commercial listing is commercial use; CC-BY-NC is insufficient without individual contributor permission
+- Cherokee and Indigenous cultural content in all three guides is flagged for external accuracy review before publication — the content is sourced from cited ethnobotany literature but the specific names and usage descriptions should be verified against primary sources before commercial publication
+
+**Photo sourcing status**: Zero photos sourced this session (no iNaturalist CC-BY downloads executed — pipeline and search URLs documented for user-initiated sprint May 8–10). No images logged in photo download table yet.
+
+**Conservation data sources consulted** (for guide content):
+- USDA PLANTS Database (Panax quinquefolius, Hydrastis canadensis)
+- United Plant Savers At-Risk species pages
+- USDA Forest Service treesearch.fs.fed.us (ginseng, goldenseal, black cohosh annotated bibliographies)
+- Penn State Extension American Ginseng page
+- NC State Extension Black Cohosh page
+- Ecology and Evolution 2025 (goldenseal habitat at range margin, DOI confirmed)
+- Massachusetts.gov endangered species listing (black cohosh)
+- NatureServe Explorer (Panax quinquefolius global status)
+
+---
+
 ## Item 53 — 2026-05-06 — Phase 2 Production-Ready Execution Framework (5 files)
 
 **Task**: Create a complete, immediately-executable Phase 2 execution framework accounting for all tool integrations and contingency paths. Deadline May 30, 2026.
