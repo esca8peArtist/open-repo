@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-06T11:37:29Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-06T13:47:07Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 44.3% | Reset in 132h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 47.0% | Reset in 130h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -83,42 +83,41 @@
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
-1. ✅ **Exploration Queue Refresh** (Session 815)
-   - Added 3 high-value exploration items to PROJECTS.md:
-     - resistance-research: Post-Phase-1 Community Adaptation & Feedback Integration Deep Dive (3-4 hrs)
-     - stockbot: Post-Gate-1 Live Trading Launch Operational Architecture (4-5 hrs)
-     - mfg-farm: Etsy Organic Discovery & SEO Strategy for 3D Printing Niche (3-4 hrs)
-   - Rationale: Per protocol, Exploration Queue was empty post-Session 814; maintain 2-3 active items minimum
+**Files created**:
+- `projects/mfg-farm/cadquery/sku-batch-2.py` — Parametric CadQuery script for 3 products:
+  - **Magnetic Workshop Bin Labels**: 50×40×3mm tiles with embedded N52 magnet pocket (Ø8×2.2mm), embossed text (BOLTS, BITS, TOOLS, SCREWS, NAILS, etc.). Print 8-12 min/tile. COGS $0.17, retail $1.50-2.00 per tile, 20-pack at $28-32.
+  - **UV-Resistant Garden Plant Markers**: 18×80×3mm tall stakes with 40mm ground penetration, ASA filament (5+ year outdoor durability vs. PLA's 6-12 months), embossed plant names (TOMATO, BASIL, HERB, etc.). Print 20-25 min/marker. COGS $0.22 (ASA filament), retail $2.50-3.00 per marker, 10-pack at $22-26.
+  - **Pegboard Hook System (3 sizes)**: J-hooks in small (35mm depth), medium (45mm), large (55mm) variants with embossed category labels (DRILLS, BITS, WRENCHES, etc.). Print 12-22 min/hook. COGS $0.16-0.22 per hook, retail starter set (20 hooks, mixed sizes) at $28-32.
 
-2. ✅ **mfg-farm: Etsy SEO Strategy & Keyword Research** (COMPLETE — Session 815)
-   - **Deliverables**:
-     - `projects/mfg-farm/etsy-seo-strategy.md` (43 KB, ~3,500 words, 8 sections)
-     - `projects/mfg-farm/keyword-research-data.csv` (13 KB, 70 keywords)
-   - **Key findings**:
-     - Etsy Listing Quality Score dominated by conversion rate (1.5-2.5% target for new 3D-printed shops vs. 3-5% for established)
-     - June 2025 ban on template-based 3D prints removed commodity competition — original-design sellers like ModRun are algorithmically advantaged
-     - Four seasonal peaks: Jan (120-150% baseline, critical), March-May (moving/spring), July-Sept (back-to-school), Nov-Dec (gift)
-     - Whitespace: standing-desk-specific cable management (under 200 listings, high buyer intent), minimalist positioning
-     - Optimal bundle: Tier 2 (20 clips + 2 rails, $24-28, $4.50 COGS) = 84-86% gross margin with best AOV/profitability balance
-     - Video demonstrations outperform lifestyle photos 2.5-3x in click-through rate for 3D-printed products
-   - **Business value**: Post-test-print revenue optimization, informs listing strategy (title/tag), seasonal launch timing, bundle architecture, paid-ad allocation
-   - **Agent**: general-research (distributed research, WebSearch + WebFetch + analysis)
-   - **Commit**: 651e1473 (feat: mfg-farm Etsy SEO strategy & keyword research)
-   - **Status**: Ready for immediate post-test-print execution; recommend eRank validation of keyword volumes before finalizing copy
+- `projects/mfg-farm/SKU_BATCH_2_DESIGN_SPEC.md` — Comprehensive test-print guide (1,800 lines):
+  - Specifications table for each product (dimensions, tolerances, print time, COGS, retail margin)
+  - Design features and differentiation vs. existing Printables/Etsy designs
+  - Critical tolerance calibration procedures (magnet pocket diameter, plant stake width, pegboard peg diameter)
+  - Week-by-week test-print schedule (post-ModRun, May 13-19)
+  - Material sourcing (PLA+ already in-house, ASA new order via AliExpress, magnets $0.40 per 20-pack)
+  - Post-test-print execution timeline (photography, Etsy listing, revenue projections)
+  - Debugging FAQ and git workflow
 
-**Block Status** (unchanged):
-- ⏳ **DTBP Reset**: 13:30 UTC today (May 6) — automatic verification pending
-- 🔴 **Architecture decisions** (stockbot): awaiting user review of CODE_REVIEW_SYNTHESIS.md
-- 🔴 **Distribution path** (resistance-research): awaiting user selection for Phase 1 launch (A / A+37 / B)
-- 🔴 **mfg-farm test print**: awaiting user execution of CadQuery designs (SEO research completed independently)
-- 🔴 **seedwarden tag corrections**: awaiting user action on Track A (Track B ready)
-- 🔴 **cybersecurity Tier 1 approval**: awaiting user approval to begin outreach
+**Key findings**:
+- All 3 Batch 2 products: 68-76% net margin (after Etsy fees + shipping)
+- Magnetic labels: highest volume potential (20 units/week → $288/week gross after fees)
+- Plant markers: best cross-sell with ModRun buyer base (outdoor enthusiast overlap)
+- Pegboard hooks: highest margin per print (71%) + highest engagement potential on Printables (Forker45 design: 3,719 downloads, indicating strong demand)
+- Total Batch 2 revenue potential: $6,000-7,000/month gross at 20-35 units/week per product (vs. ModRun $2,500/month alone)
+- Timeline: Test-print week of May 13-19, photography week of May 20-26, Etsy launch week of June 3+
 
-**System Status**: Excellent. All projects at maximum readiness. Exploration Queue now has 2 active items (post-Phase-1-launch and post-Gate-1 research items, both awaiting user decisions to unblock). No errors or degradation.
+**Technical execution**:
+- CadQuery parametric designs use press-fit geometry (no screws/adhesive required) for manufacturability at scale
+- ASA prints require higher bed temp (100-110°C vs. 60°C for PLA) — documented in spec for Bambu P1S
+- Magnet pocket tolerance is the critical path (±0.1mm) — calibration procedure included in test-print guide
+- All 3 products complement ModRun's desk-setup persona or enable adjacent market expansion
 
-**Next Milestone**:
-- **Primary**: May 6 13:30 UTC DTBP reset verification (auto-triggered)
-- **Secondary**: User decisions on 5 pending items unlock 3-4+ hours of autonomous work per decision
+**Commits**:
+- `c2d5eb79` — Added 3 new exploration queue items to PROJECTS.md
+- `fc6dfad3` — SKU Batch 2 CadQuery design script + test-print specification
 
-**Session Duration**: ~35 minutes (orientation + research agent execution)
-**Tokens Used**: ~65K (research agent)
+**Blocks Status**: No change. All 2 active blocks remain (stockbot architecture decisions review, mfg-farm test print completion). No new blocks discovered.
+
+**Session Totals**: 1 exploration item completed (SKU Batch 2 design + spec), ~2.5K lines of production-ready CadQuery + specification documentation, ready for test-print sequencing post-ModRun.
+
+**Next Focus**: CHECKIN preparation and session close.
