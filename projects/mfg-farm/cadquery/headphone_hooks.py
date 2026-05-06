@@ -24,10 +24,17 @@ Design notes:
   - Material: PLA+ (default), PETG for workshop environments
   - Estimated print time: 22–28 min per hook at 0.20mm / 25% infill on Bambu P1S
   - Estimated weight: 22–28g per hook depending on desk_thickness variant
+
+Geometry coordinate system (all dimensions in mm):
+  - X: left-right across clamp body width
+  - Y: front-back (positive = toward desk front edge)
+  - Z: vertical (positive = up)
+  - Origin: center of back plate at mid-height of total clamp body
 """
 
 import argparse
 import os
+from typing import Tuple
 
 from build123d import *
 
@@ -73,7 +80,7 @@ PAD_POCKET_DEPTH = 1.5         # mm — recess depth for 1.5mm rubber pad or tap
 # Rubber pad: 3M Bumpon SJ5302 or equivalent self-adhesive silicone feet, cut to size
 
 
-def make_clamp_body(desk_thickness: float) -> Solid:
+def make_clamp_body(desk_thickness: float) -> Tuple[Solid, float]:
     """
     C-shaped clamp body that grips the desk edge.
 
@@ -123,7 +130,7 @@ def make_clamp_body(desk_thickness: float) -> Solid:
     return clamp, total_height
 
 
-def make_hook_arm(clamp_height: float) -> Solid:
+def make_hook_arm() -> Solid:
     """
     Headphone hook arm that extends from the upper portion of the clamp body.
 
@@ -133,6 +140,9 @@ def make_hook_arm(clamp_height: float) -> Solid:
 
     The tip is rounded with HOOK_TIP_RADIUS to prevent cable kinking and headphone
     headband damage.
+
+    Returns the arm solid, positioned relative to the clamp body origin.
+    All vertical positioning uses HOOK_ATTACHMENT_HEIGHT (module-level constant).
     """
     import math
 
@@ -163,7 +173,7 @@ def make_hook_arm(clamp_height: float) -> Solid:
     return arm
 
 
-def make_cable_post(clamp_height: float) -> Solid:
+def make_cable_post() -> Solid:
     """
     Vertical cable-wrap post rising from the hook arm base.
 
@@ -203,13 +213,13 @@ def make_hook(desk_thickness: float, include_cable_post: bool = True) -> Solid:
     Returns:
         Complete hook solid ready for STL export.
     """
-    clamp, clamp_height = make_clamp_body(desk_thickness)
-    arm = make_hook_arm(clamp_height)
+    clamp, _clamp_height = make_clamp_body(desk_thickness)
+    arm = make_hook_arm()
 
     hook = clamp + arm
 
     if include_cable_post:
-        post = make_cable_post(clamp_height)
+        post = make_cable_post()
         hook = hook + post
 
     return hook
@@ -261,9 +271,9 @@ def main():
     )
     args = parser.parse_args()
 
-    import headphone_hooks as _self
     if args.tolerance is not None:
-        _self.FDM_TOLERANCE = args.tolerance
+        global FDM_TOLERANCE
+        FDM_TOLERANCE = args.tolerance
         print(f"Using custom FDM tolerance: {args.tolerance}mm")
 
     os.makedirs(args.output_dir, exist_ok=True)
