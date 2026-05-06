@@ -27747,3 +27747,80 @@ Added 3 Phase 3 prep items:
 - Model Penal Code case study: Shows that selective adoption + localization is expected behavior for distributed frameworks, not a failure mode
 - arXiv model: Permanent identifiers (v1, v2, v3) mean old citations remain valid forever even as framework evolves
 
+
+---
+
+## 2026-05-06 — Session 849: Phase 2 Domain Research + Exploration Queue Adjustment
+
+**Session Context**:
+- Orientation: Reviewed all projects for autonomous work availability
+- Found: ALL top-priority projects blocked on user decisions/external events
+- Per orchestrator protocol: regenerated Exploration Queue with 3 new items
+
+**Queue Item Adjustment**:
+- Journalist Security Playbook item added to queue was outdated (playbook already COMPLETE at 9,750 words from Session 844)
+- Revising work plan: shifting to Phase 2 Domain 20 research (Corruption & Institutional Accountability)
+- High priority: closes documented gap in proposal scope; aligns with Phase 2 distribution timeline
+
+**Autonomous Work Starting**:
+
+🔄 **IN PROGRESS: resistance-research Domain 20 Research** (estimated 3-4 hrs) — Phase 2 Domain Deep Dive
+- Project Goal: Complete 35-domain Phase 1 framework + advance Phase 2 expansion
+- Scope: Research Domain 20 "Corruption and Institutional Accountability" as Phase 2 addition
+- Research areas: (1) federal ethics enforcement OGE/IG (2) Congressional ethics collapse (3) State-level corruption spread (4) International precedent (5) Structural reform pathways
+- Dependencies: Phase 1 framework complete, 35 domains current, Phase 2 candidates (23, 27-29, 31, 33-34) partially done
+- Business value: Closes structural gap in proposal; enables institutional adoption by ethics watchdog orgs (Project On Government Oversight, Common Cause, state AGs)
+- Status: Research phase beginning
+
+
+✅ **COMPLETED: resistance-research Domain 20 Research** (3.5 hours)
+- **Output**: `projects/resistance-research/domains/domain-20-corruption-and-institutional-accountability.md` (5,700 words)
+- **Scope**: Phase 2 domain on government corruption, ethics enforcement failure, and accountability reform
+- **Content**:
+  1. **Federal Ethics Collapse** (Part 1): OGE director removal (Feb 2025), DOJ corruption convictions at 20-year low, IG system deterioration
+  2. **Congressional Ethics Failure** (Part 2): Senate ethics committee zero sanctions in 19 years (181 cases reviewed, 0 sanctioned), House committee limited capacity, disclosure without enforcement
+  3. **State & Local Corruption** (Part 3): Multi-state cases (Illinois governors, New Orleans mayor, Colorado legislator), dark money judicial capture case study (NC supreme court $5.5M dark money spend)
+  4. **International Precedent** (Part 4): Singapore CPIB (98% public confidence), South Korea chaebol prosecution + prosecution system overhaul (Oct 2026), Germany Bundesrechnungshof (€500B audit, independent from 3 branches)
+  5. **Structural Causes** (Part 5): Fragmented agencies, politicization of enforcement, insufficient resources
+  6. **Reform Pathways** (Part 6): Federal Accountability Office (independent prosecution authority), OGE independence + enforcement, Congressional ethics bifurcation, state grant program, transparency-first approach
+  7. **Implementation** (Part 7): 3-phase roadmap with risk mitigation
+  8. **Institutional Design** (Part 8): Risk analysis and safeguards against weaponization
+
+- **Key findings**: 
+  - Federal official corruption prosecutions declined from 150–180/year (2009–2016) to 70–85/year (2025 pace)
+  - Senate ethics: 181 violations reviewed in 2025, zero disciplinary actions issued, continuing 19-year pattern
+  - Singapore model offers centralized anti-corruption architecture; South Korea's prosecution reform offers democratic-safe prosecution separation
+  - Germany's audit-office model offers independence without prosecution authority concentration
+  
+- **Business value**: Closes structural gap in Phase 1 proposal (corruption as democratic failure); opens distribution channel to ethics watchdog organizations (POGO, Common Cause, state AGs); grounds reform proposals in international precedent
+
+- **Status**: Production-ready; integration with Phase 1 domains (cross-references to Domains 1, 6, 34, 35); ready for Phase 2 distribution decision
+
+- **Committed**: commit 804e26f2
+
+---
+
+**Session 849 Summary**:
+
+Autonomous work: 1 major deliverable (Domain 20 research)
+
+Projects Status:
+- **resistance-research**: Phase 2 domain research expanded (1 of 8 high-priority Phase 2 domains COMPLETE; others: 23, 27-29, 31, 33-34 in progress from earlier sessions)
+- **cybersecurity-hardening**: Phase 1 ready, all Phase 2 scenario playbooks complete (immigration, activist, financial, whistleblower, journalist, DV survivor), awaiting user distribution path decision
+- **stockbot**: 2-session Jetson deployment active, May 12 Gate 1 checkpoint 6 days away, 7 architecture decisions pending user review
+- **mfg-farm**: Test print required (user action); supplier research COMPLETE from earlier sessions
+- **seedwarden**: Phase 1 upload pending tag corrections; Phase 2 production-ready (Track B), no blockers
+- **open-repo**: PR #1 open awaiting external review/merge
+- **off-grid-living**: Publication complete; social media distribution awaiting user
+- **workout**: Comprehensive plan complete; user review pending
+
+Exploration Queue Status:
+- Previous items: 1 completed, 1 in progress (pending user decision), 1 blocked (test print)
+- New items added this session: 3 (Journalist deep dive adjusted — already complete from Session 844; Domain 20 research — COMPLETED; Medicinal herbs strategy — pending)
+- Queue maintenance: Kept backlog current with executable items
+
+Key Metrics:
+- **Autonomous work this session**: 1 major deliverable (5,700-word domain document)
+- **Phase 2 progress**: resistance-research now has 1 additional high-priority domain; cybersecurity-hardening fully prepared for Phase 2 distribution
+- **Next checkpoint**: May 12 stockbot Gate 1 formal evaluation
+

@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-06T15:29:31Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-06T21:14:11Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 49.6% | Reset in 128h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 56.3% | Reset in 123h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -24,12 +24,12 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
-**Focus**: **Session 662 (2026-04-30 03:45 UTC): Phase 1 Execution Readiness Audit COMPLETE — APPROVED FOR LAUNCH**. Framework 100% ready for Phase 1 execution.
+**Focus**: **Session 837 (2026-05-06): May 2026 Domain Maintenance COMPLETE; Phase 1 Domains Current + Ready for Distribution**. Three domains updated with FISA 702 final outcome and Callais redistricting cascade. Framework 100% ready for Phase 1 execution.
 **Blocked**: User distribution path decision (A / A+37 / B)
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: Session 499 (2026-04-27 evening): **TIER 2 MESSAGING TEMPLATES COMPLETE**. Agent-created:
+**Focus**: **Session 837 (2026-05-06): Phase 2 Sequencing Strategy COMPLETE**. Updated threat model identifies 5 capability gaps; advanced protection playbooks designed; 12-month Phase 2 roadmap complete. Three urgent pre-launch flags identified for Phase 1.
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
@@ -82,43 +82,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  2. Sector concentration config exists but has no enforcement — 5 tech positions (AAPL, MSFT, GOOGL, NVDA, META) can aggregate to 25% equity silently
-  3. Portfolio-level drawdown tracking missing — only per-session peak_equity tracked, no canonical portfolio view
-- **Recommendation**: Tiered risk framework (Layer 1: portfolio-normalised Kelly, Layer 2: sector caps, Layer 3: per-ticker ceilings, Layer 4: portfolio circuit breaker)
-- **Pre-Gate-1 priority action** (do before May 12): Daily portfolio snapshot to Discord (monitoring-only, no trade changes yet)
-- **Post-Gate-1 action**: Wire enforcement layers 1–4
-- **Business value**: Prevents concentration risk blow-ups and enables safe scaling to 20+ tickers
+✅ **resistance-research: Feedback Integration & Amendment Protocol** (~1.5 hours)
+- **Output**: `feedback-integration-protocol.md` (3,100 words, production-ready)
+- **Problem solved**: Framework is about to be distributed to 100+ institutional adopters. Need a systematic protocol for incorporating feedback without breaking production integrity.
+- **Key design decisions**:
+  1. **Feedback taxonomy**: 5 categories (typo, interpretation, new finding, localization, out-of-scope) with decision tree
+  2. **Semantic versioning**: MAJOR.MINOR.PATCH adapted for policy (not software): e.g., 1.0.0 → 1.0.1 for typo fix, 1.0.0 → 1.1.0 for new domain
+  3. **Amendment process**: 6-step workflow with explicit timelines (1-2 weeks depending on type)
+  4. **Governance**: Single-author authority (Anya makes final decisions); domain experts consulted for specific domains
+  5. **Versioning mechanism**: GitHub releases/tags ensure permanent backward compatibility (can always cite "v1.0.0, Domain 5" and get exact text)
+- **Historical precedent research**: Model Penal Code (36 states adopted selectively, shows localization is expected not a failure), ABA Model Rules (continuous updates, 50-state coverage), IETF RFC process (consensus model, different from single-author policy)
+- **Business value**: Enables Phase 1 distribution to proceed with confidence that feedback will be managed systematically; prevents framework fragmentation while remaining open to improvement
+- **Location**: `projects/resistance-research/feedback-integration-protocol.md` (committed)
 
-✅ **seedwarden: Phase 2 Post-Launch Analytics & Cohort Segmentation Strategy** (3–4 hrs)
-- **File created**: `projects/seedwarden/phase-2-analytics-strategy.md` (3,100 words)
-- **Covers**:
-  1. **Four data sources** (Etsy API, GA4, Kit, manual LTV tracker) with specific metrics tables and UTM conventions (critical for Day 1 consistency)
-  2. **Four cohorts** (Forager, Prepper, Homesteader, Gift Buyer) with observable signal indicators + zone-to-cohort correlation mapping (new, not in prior frameworks)
-  3. **Three dashboard templates**: Daily (10-min status), Weekly (30-min cohort+product analysis), Monthly (2-hr strategic review)
-  4. **Decision triggers** with specific corrective action sequences (email underperformance diagnosis, cohort imbalance protocols, zone saturation thresholds)
-  5. **Implementation roadmap**: Google Sheets through Phase 2 → Looker Studio upgrade at 2000+ customer milestone
-  6. **Baseline expectations** grounded in Phase 1 actual data (47 orders, $1,341 gross, 2.24% conversion)
-- **Business value**: Data-driven Phase 2 decisions and acquisition scaling enabled from Day 1 post-launch (May 30)
-- **Strategic value**: Phase 2 performance gates (go/no-go scoring) automated into monthly dashboard, enabling rapid pivots
+**Exploration Queue Regenerated**:
+- Discovered all prior exploration items marked COMPLETE from Session 833
+- Added 3 new strategic items per orchestrator protocol (when queue < 3 items):
+  1. **resistance-research: Feedback Integration & Amendment Protocol** ✅ COMPLETED THIS SESSION
+  2. **cybersecurity-hardening: Organizational OpSec Playbook** (estimated 4-5 hours) — Extend Phase 2 from individual to organizational contexts (NGOs, labor unions, legal service providers)
+  3. **mfg-farm: Multi-Product Supply Chain & Scaling Strategy** (estimated 2-3 hours) — Post-test-print, design supplier resilience and product diversification roadmap
 
-✅ **mfg-farm: 3D Printer Farm Automation & Batch Orchestration** (4–5 hrs)
-- **File created**: `projects/mfg-farm/printer-farm-automation-framework.md` (2,800 words)
-- **Critical findings**:
-  1. **Platform selection settled**: OctoPrint and Repetier incompatible with Bambu P1S (dead-end, not marginal issue) — Repetier formally discontinued Bambu support Jan 2025
-  2. **Correct software stack** (under $10/month): Bambu Farm Manager (free, local-only) + Printago (free forever for first 5 printers, Etsy API integration native) + SimplyPrint Pro ($9.99/month, AI failure detection)
-  3. **Color-per-printer strategy**: Assign each printer a color (P1=black, P2=white, P3=grey) — eliminates filament swaps, removes operator routing decisions, AMS purge overhead disappears
-  4. **Staggered start scheduling**: Launch printers 15 min apart to create rolling harvest instead of simultaneous batch bottleneck
-  5. **Hardware payback fast**: 3-printer setup ($1,900 hardware) pays back in 3 weeks at full utilization; 5-printer ($3,400) pays back in 5-6 weeks
-  6. **Phase timeline**: Phase 1 (2nd printer: July-Aug trigger at 70%+ utilization), Phase 2 (3-5 printers: Q4 trigger at $3,500/month gross), Phase 3 evaluation (Q1 2027, laser+resin)
-- **Business value**: Post-test-print Phase 1 deployment (July+) scales to $50K–$100K/month revenue with <4 hours weekly manual work (vs. 20+ hours current sequential model)
-- **Strategic note**: AutoFarm3D Door Opener ($129/printer) shipping status TBD — confirm before Phase 2 capital budget
+**Project Status Summary**:
+- **resistance-research**: Phase 1 production-ready (35 domains complete), Phase 1 distribution infrastructure now complete (feedback protocol documented), awaiting user path decision (A / A+37 / B)
+- **cybersecurity-hardening**: Phase 2 scenario playbooks ALL COMPLETE (6 total: immigration + 5 others); awaiting Phase 2 distribution execution (Tier 2 launch ~4 weeks post-Tier-1)
+- **stockbot**: 2-session Jetson deployment active, May 12 Gate 1 checkpoint in 6 days, 7 architecture decisions pending user review
+- **mfg-farm**: Test print required (user action block); Exploration Queue item regenerated for post-test-print product diversification
+- **seedwarden**: Track B production-ready (no blockers); Phase 1 upload blocked on 3 user tag corrections
+- **open-repo**: PR #1 open awaiting external review/merge
+- **off-grid-living**: Publication complete, social media distribution awaiting user execution
 
-**Orchestration Files Committed**:
-- Submodule commit: `8a80656b` (stockbot position-sizing framework)
-- Main commit: `1f78fcd8` (seedwarden + mfg-farm documents + PROJECTS.md update)
+**Key Metrics**:
+- **Autonomous work this session**: 1 infrastructure document (feedback integration protocol)
+- **Exploration Queue**: 3 items active (1 completed, 2 pending)
+- **Blocks status**: 2 active blocks unchanged (stockbot arch decisions, mfg-farm test print)
+- **Next autonomous work**: cybersecurity-hardening organizational playbook (estimated 4-5 hours) or wait for user to unblock primary projects
 
-**Blocks Status**: No change — all 2 active blocks remain (stockbot architecture decisions review, mfg-farm test print completion). No new blocks discovered.
-
-**Session Totals**: 3 exploration queue items completed in parallel, 8,400 words production-ready documentation across three projects (stockbot pre-Gate-1 risk framework, seedwarden pre-launch analytics infrastructure, mfg-farm post-test-print scaling architecture). All research grounded in actual code review, source documentation, and historical precedent.
-
-**Next Focus**: CHECKIN.md preparation and session close.
+**Technical Notes**:
+- Feedback integration protocol designed to prevent the most common distributed framework failure: fragmentation (multiple incompatible versions in use). Solution: permanent version archival via GitHub releases + version-pinned citations
+- Model Penal Code case study: Shows that selective adoption + localization is expected behavior for distributed frameworks, not a failure mode
+- arXiv model: Permanent identifiers (v1, v2, v3) mean old citations remain valid forever even as framework evolves
