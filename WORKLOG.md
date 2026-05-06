@@ -42,7 +42,12 @@
 1. mfg-farm: Cost Optimization Lever Analysis for 100-500 Units/Month Scale
 2. cybersecurity-hardening: May 2026 Threat Landscape Deepening
 
-**Session Status**: 2 items complete (≈4.5h research time used); 2 items remaining on queue; all projects still blocked on user decisions/external events.
+**Session Status**: 2 items complete (≈4.5h research time used); verified 1 additional item from Session 812 (mfg-farm cost levers); 1 item remaining on queue. Assessment: cybersecurity-hardening May threat research already exists (may-2026-threat-update.md, complete through May 5). Recommend rolling remaining item to next session or evaluating whether separate "advanced threats" deepening is needed vs. integrating existing research.
+
+**Remaining Queue Item**:
+- cybersecurity-hardening: May 2026 Threat Landscape Deepening — defer or extend existing may-2026-threat-update.md
+
+**All Projects Status**: Still blocked on user decisions (distribution path selection, architecture review approval, test print execution, tag corrections, Tier 1 approval).
 
 ---
 

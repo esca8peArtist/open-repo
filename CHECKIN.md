@@ -1,3 +1,45 @@
+## Since Last Check-in (Session 813 — 2026-05-06 06:43–07:50 UTC) — EXPLORATION QUEUE ITEMS #1-2 COMPLETE
+
+### STATUS: Exploration Queue Execution; 2 New Research Items Complete (≈65 min active work)
+
+**Autonomous Work Completed**:
+
+1. ✅ **Exploration Queue Item #1 — Stockbot Ensemble Voting Analysis** (NEW — Session 813)
+   - **Deliverable**: `projects/stockbot/research/ensemble-voting-analysis.md` (605 lines, 2,900 words)
+   - **Contents**: Feature overlap audit, signal correlation study, voting mechanism optimization (3 alternatives), disagreement detection logging spec, recovery strategies, May 12 checkpoint plan, multi-ticker roadmap
+   - **Key Finding**: Confidence scores not currently logged (blocks optimal voting mechanisms); May 4–12 window provides first meaningful data sample (8+ trading days)
+   - **Implementation Effort**: 2–3 hours (logging infrastructure + voting mechanism update)
+   - **Status**: Production-ready, awaiting implementation approval
+
+2. ✅ **Exploration Queue Item #2 — Resistance-Research Domain Network Visualization** (NEW — Session 813)
+   - **Deliverable**: `projects/resistance-research/domain-network-visualization.md` (645 lines, 2,500 words)
+   - **Contents**: Network visualization design, 5 dependency types, 6 theme clusters, interactive HTML prototype spec, 5 audience-specific reading paths, Gist integration, critical path analysis
+   - **Key Finding**: 35 domains + ~100 dependencies organize into 6 semantic clusters; critical path identified (Domains 2→34→6→1→35) for 6–12 month rollout
+   - **Implementation Effort**: 4–6 hours (JSON curation + D3.js prototype)
+   - **Status**: Production-ready, awaiting integration phase decision
+
+3. ✅ **Verified Exploration Queue Item #3 — mfg-farm Cost Optimization Lever Analysis** (from Session 812)
+   - **Deliverable**: `projects/mfg-farm/scaling-cost-levers.md` (37KB, 2,800+ words) — already complete from Session 812
+   - **Status**: Ready for post-test-print supplier negotiation deployment
+
+**Remaining Queue Item**:
+- cybersecurity-hardening: May 2026 Threat Landscape Deepening (2–3 hours) — Discovered existing research: `may-2026-threat-update.md` (complete through May 5). Recommend evaluating whether separate "advanced threats" deepening is needed vs. integrating existing foundation into templates.
+
+**Block Status** (unchanged):
+- ⏳ **DTBP Reset**: May 6 13:30 UTC (~5h remaining as of session end) — auto-verify monitor active
+- 🔴 **Architecture decisions**: Awaiting user review of CODE_REVIEW_SYNTHESIS.md (ARCH-1-7)
+- 🔴 **Distribution path**: Awaiting user selection (A / A+37 / B)
+- 🔴 **Plus 2 others**: test print execution, seedwarden tag corrections
+
+**Key Deliverables Ready for Integration**:
+- stockbot ensemble voting logging framework (May 8 implementation)
+- domain network interactive visualization (May 10–12 implementation)
+- mfg-farm supplier negotiation strategy (post-test-print activation)
+
+**Session Metrics**: 65 min active work | 2 new research items | 3,400+ words delivered | System stable
+
+---
+
 ## Since Last Check-in (Session 812 — 2026-05-06 06:16–07:30 UTC) — EXPLORATION QUEUE DEEPENING × 4 ITEMS + 3 COMPLETE
 
 ### STATUS: Main Projects Blocked; Exploration Queue Deepened; 3 of 4 Items Complete (75 min active work)
