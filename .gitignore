@@ -37,6 +37,9 @@ twine.log
 *.manifest
 *.spec
 
+# Script output (generated at runtime — not source)
+scripts/filled_output/
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
