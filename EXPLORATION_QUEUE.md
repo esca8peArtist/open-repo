@@ -203,19 +203,23 @@
 
 ---
 
-### Item 16: mfg-farm Multi-Color & Adjacent Manufacturing Capability Roadmap (Session 785)
-**Status**: ACTIVE — Ready for autonomous exploration (post-test-print)
+### ✅ Item 16: mfg-farm Multi-Color & Adjacent Manufacturing Capability Roadmap (Session 796)
+**Status**: COMPLETED 2026-05-06 02:32 UTC
 **Scope**: Design production pathway to multi-color printing, multi-material (resin, SLS), and adjacent manufacturing (laser, CNC)
-**Deliverables**:
-- Multi-color FDM strategy (hardware options: Bambu P1S AMS, E3D ToolChanger, dual-nozzle vs. sequential batch), cost/time tradeoffs, first product targets
-- Resin printing viability (product candidates: thin-wall precision parts, transparent components, jewelry)
-- Laser cutting capability assessment (panel designs, gaskets, custom jigs, leather goods)
-- CNC capability assessment (metal inserts, hardened plastic, tooling)
-- 12-month capability roadmap with trigger conditions ($10K revenue threshold, order volume triggers)
-- Supplier ecosystem planning (equipment leasing, outsourcing hybrid model, facility expansion)
-**Key questions**: Does ModRun click-fit improve with multi-color? What new products become viable with resin? Which adjacent manufacturing increases margins?
-**Owner**: mfg-farm agent
-**Context**: Item 9 product viability analysis identified Wave 3 laser capability decision gate (requires $6-8K capital). Multi-color enables premium product tier. Foundation: Session 697 production-scaling-research.md.
+**Deliverables** (ALL COMPLETE):
+- ✅ `multi-color-fdm-strategy.md` — AMS 2 Pro ($286) recommendation, purge waste analysis, color-coded clip premium tier ($286 capex, payback in 3 months at 25 units/month)
+- ✅ `resin-printing-viability.md` — Elegoo Saturn 4 Ultra 16K ($574 all-in), transparent cable covers and precision organizers as best product fit, 3.2x COGS vs FDM (resin not viable for core cable clips)
+- ✅ `laser-cutting-capability-assessment.md` — xTool S1 40W ($1,899–$2,099), Bambu H2D Laser Combo (now $3,199–$3,499 — updated pricing), custom engraved clips as highest-priority laser product, outsource-first validation protocol ($100–150 before buying)
+- ✅ `cnc-capability-assessment.md` — CNC deferred to Month 12+; outsource to JLCCNC/Protolabs; Shapeoko 5.1 Pro ($3,300) only if 300+ units/month of CNC-required product
+- ✅ `12-month-multimanufacturing-roadmap.md` — Revenue-first sequencing: $286 AMS (Month 3) → $1,959 laser (Month 5) → $574 resin (Month 6) → $399 second printer (Month 10); full trigger conditions and failure scenarios
+- ✅ `supplier-ecosystem-planning.md` (NEW) — Equipment ownership vs. outsourcing decision matrix, vendor directory with current pricing, facility requirements by manufacturing mode, 5-phase scaling pathway from single-printer to 3–5 printer farm + adjacent capabilities
+**Key findings**:
+  - Total 12-month capex if all triggers met: $3,158–$4,078 (base to full scenario)
+  - H2D Laser Combo 40W price correction: now $3,199–$3,499 (was $2,499–$2,699); separate xTool S1 + P2S Combo path ($2,698) is better value
+  - Multi-color is the highest-leverage first addition at $286 with 3-month payback; laser is the second (validates via $100–150 outsource test before buying)
+  - CNC remains outsourced: JLCCNC handles all needs below 300 units/month at lower cost than equipment ownership
+**Outcome**: All 6 capability deliverables production-ready. Operator can execute sequentially using trigger conditions in roadmap without guesswork on timing or vendors.
+**Commit**: [pending session 796 commit]
 
 ---
 
