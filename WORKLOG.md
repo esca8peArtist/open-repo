@@ -6,6 +6,23 @@
 
 ---
 
+## 2026-05-06 — [mfg-farm] Etsy SEO Strategy and Keyword Research
+
+**Deliverables**:
+- `projects/mfg-farm/etsy-seo-strategy.md` (~3,500 words) — complete Etsy organic discovery playbook for ModRun cable management and Phase 2 products. Covers: two-phase algorithm mechanics, listing quality score, recency boost, 3D printing policy implications, title/tag/description framework with exact examples, 4 seasonal windows with prep calendar, competitor landscape with 6 identified sellers, bundle architecture (4 tiers), cross-sell tactics.
+- `projects/mfg-farm/keyword-research-data.csv` — 70 keywords mapped to: search volume estimate, competition density, commercial intent, seasonal pattern, primary product fit, secondary products, notes.
+
+**Key findings**:
+- June 2025 Creativity Standards update removed thousands of commodity template-based 3D-print listings; original-design sellers like ModRun are algorithmically advantaged as a result.
+- January is the single strongest month for cable management demand (120-150% of baseline); back-to-school (Aug) and Q4 gift season (Nov-Dec) are secondary peaks.
+- Standing-desk-specific cable management ("standing desk cable organizer," Flexispot/Uplift brand-specific terms) is the clearest whitespace: high intent, under 200 dedicated listings.
+- Bundle Tier 2 (20 clips + 2 rails, $24-28) has the strongest margin/AOV balance at $4.50 COGS and 84-86% gross margin.
+- Star Seller filter removes non-Star Sellers from ~30% of buyer searches; target achievement within 3 months of first sale.
+
+**Agent**: general-research
+
+---
+
 ## 2026-05-06 08:00–08:25 UTC — [Session 814] EXPLORATION QUEUE EXECUTION COMPLETE (3 OF 3 ITEMS)
 
 **Status**: All 3 active exploration queue items completed in parallel. Exploration queue now empty. All non-blocked autonomous work exhausted.
@@ -25948,3 +25965,51 @@ During market hours (15:55 UTC), discovered that:
 
 **Session Duration**: ~2 minutes (orientation only)
 **Tokens Used**: ~1K
+
+---
+
+## Session 815 (2026-05-06 08:15–08:50 UTC) — EXPLORATION QUEUE REFRESH + ETSY SEO RESEARCH
+
+**Status**: Autonomous work on Exploration Queue. All projects still blocked on user decisions and scheduled DTBP reset. Added 3 new exploration items, executed 1 immediately (mfg-farm Etsy SEO).
+
+**Work Completed**:
+
+1. ✅ **Exploration Queue Refresh** (Session 815)
+   - Added 3 high-value exploration items to PROJECTS.md:
+     - resistance-research: Post-Phase-1 Community Adaptation & Feedback Integration Deep Dive (3-4 hrs)
+     - stockbot: Post-Gate-1 Live Trading Launch Operational Architecture (4-5 hrs)
+     - mfg-farm: Etsy Organic Discovery & SEO Strategy for 3D Printing Niche (3-4 hrs)
+   - Rationale: Per protocol, Exploration Queue was empty post-Session 814; maintain 2-3 active items minimum
+
+2. ✅ **mfg-farm: Etsy SEO Strategy & Keyword Research** (COMPLETE — Session 815)
+   - **Deliverables**:
+     - `projects/mfg-farm/etsy-seo-strategy.md` (43 KB, ~3,500 words, 8 sections)
+     - `projects/mfg-farm/keyword-research-data.csv` (13 KB, 70 keywords)
+   - **Key findings**:
+     - Etsy Listing Quality Score dominated by conversion rate (1.5-2.5% target for new 3D-printed shops vs. 3-5% for established)
+     - June 2025 ban on template-based 3D prints removed commodity competition — original-design sellers like ModRun are algorithmically advantaged
+     - Four seasonal peaks: Jan (120-150% baseline, critical), March-May (moving/spring), July-Sept (back-to-school), Nov-Dec (gift)
+     - Whitespace: standing-desk-specific cable management (under 200 listings, high buyer intent), minimalist positioning
+     - Optimal bundle: Tier 2 (20 clips + 2 rails, $24-28, $4.50 COGS) = 84-86% gross margin with best AOV/profitability balance
+     - Video demonstrations outperform lifestyle photos 2.5-3x in click-through rate for 3D-printed products
+   - **Business value**: Post-test-print revenue optimization, informs listing strategy (title/tag), seasonal launch timing, bundle architecture, paid-ad allocation
+   - **Agent**: general-research (distributed research, WebSearch + WebFetch + analysis)
+   - **Commit**: 651e1473 (feat: mfg-farm Etsy SEO strategy & keyword research)
+   - **Status**: Ready for immediate post-test-print execution; recommend eRank validation of keyword volumes before finalizing copy
+
+**Block Status** (unchanged):
+- ⏳ **DTBP Reset**: 13:30 UTC today (May 6) — automatic verification pending
+- 🔴 **Architecture decisions** (stockbot): awaiting user review of CODE_REVIEW_SYNTHESIS.md
+- 🔴 **Distribution path** (resistance-research): awaiting user selection for Phase 1 launch (A / A+37 / B)
+- 🔴 **mfg-farm test print**: awaiting user execution of CadQuery designs (SEO research completed independently)
+- 🔴 **seedwarden tag corrections**: awaiting user action on Track A (Track B ready)
+- 🔴 **cybersecurity Tier 1 approval**: awaiting user approval to begin outreach
+
+**System Status**: Excellent. All projects at maximum readiness. Exploration Queue now has 2 active items (post-Phase-1-launch and post-Gate-1 research items, both awaiting user decisions to unblock). No errors or degradation.
+
+**Next Milestone**:
+- **Primary**: May 6 13:30 UTC DTBP reset verification (auto-triggered)
+- **Secondary**: User decisions on 5 pending items unlock 3-4+ hours of autonomous work per decision
+
+**Session Duration**: ~35 minutes (orientation + research agent execution)
+**Tokens Used**: ~65K (research agent)
