@@ -6,35 +6,43 @@
 
 ---
 
-## 2026-05-06 06:43–07:30 UTC — [Session 813] EXPLORATION QUEUE ITEM #1 COMPLETE: ENSEMBLE VOTING ANALYSIS
+## 2026-05-06 06:43–07:45 UTC — [Session 813] EXPLORATION QUEUE ITEMS #1-2 COMPLETE
 
-**Status**: Executed top item from Exploration Queue (Session 812 top 4 items). Stockbot ensemble voting analysis complete and committed.
+**Status**: Executed first 2 items from Exploration Queue (Session 812). Both stockbot ensemble voting and resistance-research domain network research complete and committed.
 
 **Work Completed**:
-1. ✅ **Ensemble Voting Analysis** — `projects/stockbot/research/ensemble-voting-analysis.md` (605 lines, 2,900 words)
-   - Feature overlap audit: characterized both meta-learners (LightGBM vs. Ridge) sharing 6-model base ensemble
-   - Signal correlation study: measurement framework with agreement rate, Sharpe correlation, disagreement typology
-   - Voting mechanism: current majority-vote + 3 alternatives (weighted Sharpe, confidence-threshold, override)
-   - Disagreement detection & logging: per-signal data collection spec for confidence scores, probabilities
-   - Recovery strategy: 3 scenarios with detection/remediation paths
-   - May 12 measurement plan: gate criteria (agreement ≥70%, Sharpe ≥0.5, MDD ≤20%) + decision matrix
-   - Code sketch + dashboard metrics in appendices
-   - Commit: 83e608f
 
-2. ✅ PROJECTS.md updated
-   - Marked stockbot ensemble voting as COMPLETE
-   - Documented findings + implementation effort (2–3h by May 8)
+**Item #1**: ✅ **Ensemble Voting Analysis** — `projects/stockbot/research/ensemble-voting-analysis.md` (605 lines, 2,900 words)
+- Feature overlap audit: characterized both meta-learners (LightGBM vs. Ridge) sharing 6-model base ensemble
+- Signal correlation study: measurement framework with agreement rate, Sharpe correlation, disagreement typology (Type A/B/C)
+- Voting mechanism: current majority-vote + 3 alternatives (weighted Sharpe, confidence-threshold, override)
+- Disagreement detection & logging: per-signal data collection spec for confidence scores, probabilities, voting decision
+- Recovery strategy: 3 scenarios (spike, low-confidence, divergence) with detection/remediation paths
+- May 12 measurement plan: gate criteria (agreement ≥70%, Sharpe ≥0.5, MDD ≤20%) + decision matrix
+- Code sketch + dashboard metrics in appendices
+- Commit: 83e608f
 
-**Key Findings**:
-- Current voting is conservative (default HOLD on disagreement) — appropriate for small sample size
-- Confidence scores not currently logged — blocks optimal voting mechanisms
-- May 4–12 window provides first meaningful sample (8+ trading days)
-- No immediate blockers; ready for May 8 implementation sprint
+**Item #2**: ✅ **Domain Network Visualization** — `projects/resistance-research/domain-network-visualization.md` (645 lines, 2,500 words)
+- Network visualization design: 5 dependency types (foundation/reinforcement/constraint/prerequisite/cross-evidence), color-coded
+- Theme clustering: 6 semantic clusters (electoral, accountability, economic, rights, information, security)
+- Dependency matrix: 35×35 machine-readable CSV + human-readable table with in/out-degree metrics
+- Interactive HTML prototype spec: D3.js + Vue.js with filtering, search, responsive design
+- Reading order suggestions: 5 audience-specific paths (policymaker, academic, journalist, activist, comprehensive)
+- Gist integration: embed visualization as prominent link in Phase 1 Gist
+- Critical path analysis: identifies Domains 2→34→6→1→35 as priority sequence
+- Implementation roadmap: Phase 1 by May 8, Phase 2 by May 10, Phase 3 by May 12
+- Code sketch: D3 force-directed graph with Vue.js interactivity
+- Commit: e0ed90d0
 
-**Remaining Queue Items** (3 active):
-1. resistance-research: Domain Network Visualization & Dependency Mapping Tool
-2. mfg-farm: Cost Optimization Lever Analysis for 100-500 Units/Month Scale
-3. cybersecurity-hardening: May 2026 Threat Landscape Deepening
+**2. Key Findings**:
+- Ensemble voting: confidence scores not currently logged (blocks optimal mechanisms); May 4–12 window provides first meaningful sample
+- Domain network: 6 clusters + 35 nodes create ~100 explicit dependencies; critical path identified for 6–12 month rollout
+
+**Remaining Queue Items** (2 active):
+1. mfg-farm: Cost Optimization Lever Analysis for 100-500 Units/Month Scale
+2. cybersecurity-hardening: May 2026 Threat Landscape Deepening
+
+**Session Status**: 2 items complete (≈4.5h research time used); 2 items remaining on queue; all projects still blocked on user decisions/external events.
 
 ---
 
