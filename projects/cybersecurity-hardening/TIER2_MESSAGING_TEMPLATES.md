@@ -2,11 +2,53 @@
 title: "Tier 2 Messaging Templates: Sector-Customized Email Variants"
 project: cybersecurity-hardening
 created: 2026-04-27
+updated: 2026-05-06
 status: ready-for-use
 gist-url: "https://gist.github.com/esca8peArtist/e90dd6a0bd6805e0ddbe0e8d1ee7d108"
+threat-briefings-integrated: true
+threat-briefing-files:
+  - tier2-journalists-threat-briefing.md
+  - tier2-technical-advocates-threat-briefing.md
+  - tier2-digital-rights-threat-briefing.md
+  - tier2-academic-cybersecurity-threat-briefing.md
+  - tier2-researcher-communities-threat-briefing.md
+  - tier2-threat-briefing-slides.md
 ---
 
 # Tier 2 Messaging Templates: Sector-Customized Email Variants
+
+## May 2026 Threat Intelligence Integration
+
+**Updated May 6, 2026**: These templates are now backed by sector-specific threat briefings covering the May 2026 threat landscape. Each briefing should be attached or linked in the corresponding sector outreach. The briefings document four threat vectors confirmed operational in Q1–Q2 2026:
+
+1. **Synthetic identity + voice cloning (ProKYC)**: $629/year platform defeats all biometric liveness-detection countermeasures. Human detection accuracy below 30%. Confirmed operational for financial fraud, social engineering, political impersonation. Countermeasure: code word protocol + two-channel verification + Signal safety number comparison.
+
+2. **Supply chain attacks (Shai-Hulud Wave 3)**: Bitwarden CLI compromised April 22 via GitHub Action hijack. Any security tool installed via npm/pip/brew between April 21–May 31 should be treated as potentially compromised. Countermeasure: official website/app store installers only.
+
+3. **FISA 702 (confirmed no warrant protection through June 12)**: FBI backdoor search authority confirmed operational, no reform passed. June 12 is the next deadline. Countermeasure: Signal E2EE for content; iCloud ADP; data broker opt-out for metadata.
+
+4. **Election infrastructure defense deficit**: CISA lost 1,000+ positions; EI-ISAC defunded; NSA/Cyber Command Election Security Group not reconvened. Countermeasure: alternative resources (Defending Digital Democracy, CDT, state-level offices).
+
+**Sector-specific threat briefings** (attach as companion document to the matching template):
+
+| Sector | Template | Threat Briefing |
+|--------|----------|----------------|
+| Digital rights organizations | Template 2A-v2 | `tier2-digital-rights-threat-briefing.md` |
+| Academic programs | Template 2B-v2 | `tier2-academic-cybersecurity-threat-briefing.md` |
+| Security researcher communities | Template 2C-v2 | `tier2-researcher-communities-threat-briefing.md` |
+| Journalist organizations | Template 2D-v2 | `tier2-journalists-threat-briefing.md` |
+| Technical advocates | (new sector — see below) | `tier2-technical-advocates-threat-briefing.md` |
+
+**Visual briefing deck**: `tier2-threat-briefing-slides.md` — Marp-compatible 5-slide master deck with 5 sector-specific appendix slides. Use for presentations; attach as alternative format for recipients who prefer a slides-first entry point.
+
+**Updated subject lines for May 2026 outreach** (add to existing subject line options):
+- Digital rights: `May 2026 threat briefing: data broker loophole — June 12 deadline`
+- Academic: `May 2026 threat briefing: ProKYC + supply chain + CISA gap — research agenda`
+- Researchers: `May 2026 threat landscape: datasets and analysis opportunities`
+- Journalists: `May 2026 source protection: voice cloning threshold crossed + election infrastructure gap`
+- Technical advocates: `May 2026 technical briefing: Shai-Hulud Wave 3, firmware, synthetic identity`
+
+---
 
 ## Messaging Strategy
 
@@ -218,6 +260,67 @@ Happy to discuss training integration or answer questions about sourcing.
 
 ---
 
+---
+
+## Template 2E-v1: Technical Advocates (New Sector — May 2026)
+
+**Target organizations**: EFF technical staff, ACLU tech team, technical staff at immigrant rights / voting rights / press freedom organizations, open-source security tooling maintainers, DEF CON community
+
+**Recommended subject line**: `May 2026 technical briefing: Shai-Hulud Wave 3, BootKitty firmware, synthetic identity — peer-level assessment`
+
+```
+Hi,
+
+I'm sharing a peer-level threat assessment for technical civil society
+staff — EFF technical team, ACLU tech, security engineers at advocacy
+orgs, open-source security tooling maintainers.
+
+The May 2026 landscape changed in four ways that require documentation
+and tooling updates:
+
+1. Shai-Hulud Wave 3 (ongoing): Bitwarden CLI compromised April 22
+   via GitHub Action hijack (not npm injection — a different and harder
+   vector to detect). Any org using Bitwarden CLI or similar tools
+   installed via package manager between April 21–May 31 should rotate
+   all credentials associated with those tools. The fix is installation
+   path discipline: official installer only, never npm/pip.
+
+2. BootKitty / LogoFAIL firmware: A working UEFI bootkit targeting
+   Linux is in academic researcher hands. 95% of x86 devices are
+   potentially affected. The 12–24 month research-to-nation-state-
+   deployment gap for comparable exploits means the firmware update
+   window is time-sensitive. fwcheck.binarly.io is free for individual
+   device analysis.
+
+3. Synthetic identity / voice cloning (ProKYC): The defensive response
+   is now entirely procedural, not technical. Any security guide your
+   org maintains that uses "video call verification" as a control is
+   outdated. I've drafted replacement language that can be dropped into
+   existing guides — can share if useful.
+
+4. SBOM at build time: The Shai-Hulud campaign demonstrates that orgs
+   without SBOMs cannot cross-reference compromise disclosures quickly.
+   CycloneDX / syft generate SBOMs at build time; Socket.dev integrates
+   into GitHub PR review for real-time package risk flagging.
+
+Full technical briefing (sector-specific depth): [see attached]
+Full corpus: https://gist.github.com/esca8peArtist/e90dd6a0bd6805e0ddbe0e8d1ee7d108
+
+Happy to discuss toolchain specifics or trade notes on the supply chain
+campaign forensics.
+```
+
+**What this does differently from other templates**: Peer-to-peer framing from the opening. Leads with the technical details that actually matter to this audience, not the humanitarian framing. Offers a concrete artifact (replacement documentation language) that the recipient can use immediately. The SBOM/Socket.dev mention is specific enough to be credible to a technical audience.
+
+**Contact-specific adjustments**:
+- **EFF Technical Team (techteam@eff.org)**: Reference that Bitwarden is in the EFF's Surveillance Self-Defense guide — the "official installer only" update is directly relevant to their maintenance responsibilities.
+- **ACLU Tech team**: Lead with the IRS relationship mapping and what it means for organizational financial security — the cross-agency Palantir architecture creates organizational risk, not just individual risk.
+- **Immigrant rights org technical staff**: The data broker opt-out section is the highest-impact add to whatever security training they currently provide. Offer to pair the full corpus with their existing materials.
+- **Election security technical staff**: The CISA/EI-ISAC coverage gap is the entry point — their clients (county election offices) now need alternative support infrastructure.
+- **Open-source security tooling maintainers**: GitHub Actions pinning to commit SHA is the most immediate hardening action; the Bitwarden CLI attack vector affects them directly. Offer peer review of their CI/CD configurations.
+
+---
+
 ## Organization-to-Template Mapping
 
 Use this table to select the right template variant for each Tier 2 organization.
@@ -275,6 +378,18 @@ Use this table to select the right template variant for each Tier 2 organization
 | NAHJ | nahj@nahj.org | Community journalism angle; personal connection to threat |
 | AAJA | national@aaja.org | Same as NAHJ; communities disproportionately surveilled |
 
+### 2E. Technical Advocates — Template 2E-v1
+
+| Organization | Contact | Priority Note |
+|-------------|---------|---------------|
+| EFF Technical Team | techteam@eff.org | Reference SSD guide Bitwarden update; GitHub Actions pinning |
+| ACLU Tech Team | tech@aclu.org | IRS relationship mapping → org financial security risk |
+| FPF Technical | security@freedom.press | Bitwarden CLI + SecureDrop pipeline security |
+| Access Now Technical | security@accessnow.org | Use existing Helpline relationship; peer framing |
+| CDT Technical Staff | tech@cdt.org | Election security infrastructure gap; SBOM for tooling |
+| Open-source maintainers | Via published security.txt | GitHub Actions SHA pinning; OIDC migration |
+| DEF CON community | forum.defcon.org | Post as supply chain incident analysis thread |
+
 ---
 
 ## Using These Templates Alongside TIER2_DISTRIBUTION_PREP.md
@@ -285,6 +400,38 @@ These templates replace the body copy of the four templates in TIER2_DISTRIBUTIO
 
 For journalist organizations, send to FPF and IRE in the same week, before CPJ, RCFP, and SPJ. FPF and IRE have training infrastructure they can immediately act on; the others are more likely to cite or reference than to integrate directly.
 
+**New for May 2026**: Add the technical advocates sector (Template 2E-v1) to outreach. EFF technical team and FPF security team are the highest-priority contacts within this sector — both maintain security guides (Surveillance Self-Defense, Freedom.press training resources) that need the "voice/video no longer proves identity" and "official installer only" updates. These are practical, immediate integrations that the contacts will recognize as useful maintenance tasks, not just advocacy asks.
+
 ---
 
-Last updated: 2026-04-27
+## Threat Briefings — Quick Mitigation Reference
+
+This section links specific threats in the briefings to recommended mitigations in the OpSec corpus. Use for personalizing outreach or answering follow-up questions.
+
+### May 2026 Threats → Countermeasures
+
+| Threat | Primary Mitigation | Where in Corpus |
+|--------|-------------------|----------------|
+| FISA 702 warrantless backdoor searches | Signal E2EE; iCloud ADP; avoid Gmail/Outlook | `encrypted-messaging-implementation-guide.md` |
+| ProKYC voice cloning / deepfake | Code word protocol; two-channel verification; Signal safety number comparison | `opsec-playbook.md` Part IV |
+| Bitwarden CLI supply chain compromise | Official website/app store installer only; rotate credentials if npm-installed April 21–May 31 | `april-to-may-tool-update-guidance.md` |
+| Shai-Hulud GitHub Actions (prt-scan) | Pin GitHub Actions to commit SHA; migrate to OIDC tokens | `tier2-technical-advocates-threat-briefing.md` Part I |
+| LogoFAIL / BootKitty firmware | Apply UEFI firmware updates; fwcheck.binarly.io for unpatched hardware | `device-hardening-guide.md`; `tier2-technical-advocates-threat-briefing.md` Part I |
+| ICE ELITE commercial data broker targeting | Data broker opt-out (California DROP platform; People Data Labs; LexisNexis; Acxiom) | `opsec-playbook.md` Part 0 |
+| DOJ voter database cross-reference | Legal consultation before registration in compliant states; understand which states complied | `election-worker-opSec-supplement.md` |
+| CISA election security coverage gap | Alternative resources: DDC, CDT, state-level offices; EAC grants | `tier2-journalists-threat-briefing.md` Part IV |
+| ICE/DHS location data procurement | GrapheneOS/iOS advertising identifier removal; carrier-level metadata minimization | `device-hardening-guide.md` Part II |
+| Palantir IRS relationship mapping | Organizational financial security review; data broker opt-out for all staff | `tier2-technical-advocates-threat-briefing.md` Part III |
+
+### Policy Windows Linked to Threats
+
+| Policy Window | Deadline | Threat Addressed | Template Mention |
+|--------------|----------|-----------------|-----------------|
+| Government Surveillance Reform Act S.4082 (data broker loophole provision) | June 12, 2026 | ICE ELITE commercial data purchase; FISA metadata | All templates |
+| IRS–ICE data-sharing circuit court appeal | Ongoing | IRS/ICE cross-agency data correlation | Templates 2A, 2E |
+| State election protection legislation (7 states active) | July 2026 | ICE at polling places; voter suppression | Templates 2A, 2D |
+| ICE ICM biometric integration deadline | September 2026 | Full biometric deduplication across federal law enforcement | Templates 2A, 2E |
+
+---
+
+Last updated: 2026-05-06
