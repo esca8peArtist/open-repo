@@ -9,7 +9,7 @@ confidence: high — grounded in confirmed threat capabilities, current tool doc
 
 # OpSec Playbook: Defensive Countermeasures Against Government Surveillance
 
-**Purpose**: This guide maps defensive tools and practices directly to the confirmed threat capabilities documented in `threat-model.md`. Every recommendation is grounded in a specific threat vector. This is not a general privacy guide — it is a countermeasure guide against Palantir's data-linking capability, NSA signals intelligence, FBI investigative tools, law enforcement data brokers, and the DOGE data consolidation project.
+**Purpose**: This guide maps defensive tools and practices directly to the confirmed threat capabilities documented in `threat-model.md`. Every recommendation is grounded in a specific threat vector. This is not a general privacy guide — it is a countermeasure guide against Palantir's data-linking capability, NSA signals intelligence, FBI investigative tools, law enforcement data brokers, and the DOGE cross-agency data fusion architecture (SSA access confirmed operational as of June 2025; see Part 8 for current litigation status).
 
 **Who this is for**:
 - **Tier 1 (Baseline)** — Journalists, immigration advocates, healthcare workers who advise undocumented people, labor organizers. Elevated risk from data-broker pipelines and administrative surveillance.
@@ -319,7 +319,7 @@ DOGE has demonstrated willingness to transfer government data to unauthorized se
 ## Part 5: Identity Compartmentalization
 
 ### Threat from Model
-This is the core Palantir capability: identity resolution across disparate records. Confirmed capability: Palantir Gotham can search by tattoo, physical description, partial address, vehicle, associate's name, or immigration number to link records to an individual. The IRS LCA platform maps social networks — if your activist identity uses the same financial account as your personal identity, the IRS has the link. DOGE is building a master database that would allow a single query on an individual to surface tax returns, Social Security records, healthcare enrollment, immigration status, biometric identifiers, family connections, and address history.
+This is the core Palantir capability: identity resolution across disparate records. Confirmed capability: Palantir Gotham can search by tattoo, physical description, partial address, vehicle, associate's name, or immigration number to link records to an individual. The IRS LCA platform maps social networks — if your activist identity uses the same financial account as your personal identity, the IRS has the link. DOGE's cross-agency data fusion program has moved from construction to partial operation: the Supreme Court ruled in June 2025 that DOGE personnel could access SSA records (Social Security numbers, address history, benefit payment history, employer records), and the Fourth Circuit vacated an injunction against that access in April 2026. A DOGE employee has been confirmed to have shared SSA data with a political advocacy group, and SSA's own court filings acknowledged data was transferred to a non-SSA server the agency can no longer access. The "master database" is not a single central repository — it is a distributed query architecture across Palantir Foundry instances at multiple agencies that are interoperable via a common API. This makes it significantly harder to block through a single legal challenge. The practical scope of accessible data now confirmed to include: SSA records (SSN, address, employer, benefit history), IRS data (tax returns, financial social graph via LCA platform), DHS/ICE records (immigration status, biometric identifiers, travel history), and Medicaid/HHS enrollment data.
 
 **The principle**: Separate identities cannot share any persistent link. One shared data point — a phone number that appeared on both registration forms, a payment card used for both purposes, a device that was logged into both accounts, a GPS location record placing both phones at the same address — defeats the compartmentalization.
 
@@ -443,7 +443,7 @@ ImmigrationOS includes automated OSINT and social media monitoring. Babel Street
 ## Part 8: When Technical Measures Are Not Enough — Legal Layers
 
 ### Threat from Model
-The IRS LCA platform performs "massive-scale" data mining with court-confirmed legal authority. DOGE's master database project is actively litigated (15+ active lawsuits as of early 2026) but partially operational. FBI NSLs require no judicial approval. Section 702 is reauthorizing. The legal framework for U.S. government surveillance is expansive and the remedies are slow.
+The IRS LCA platform performs "massive-scale" data mining with court-confirmed legal authority. DOGE's cross-agency data fusion architecture is no longer merely "contested" — SSA data access is operationally confirmed following the June 2025 Supreme Court ruling and the April 2026 Fourth Circuit decision removing injunctive limits; the litigation continues on underlying merits but no current injunction blocks DOGE access. [Quarterly review gate: July 2026 — update to reflect litigation merits resolution if any court has issued a final ruling on DOGE data access authority.] FBI NSLs require no judicial approval. Section 702 is reauthorizing. The legal framework for U.S. government surveillance is expansive and the remedies are slow.
 
 ### 8.1 Understanding What Law Enforcement Can Compel
 
@@ -568,6 +568,12 @@ The EFF released Rayhunter in March 2025, updated through September 2025. Rayhun
 **EFF's September 2025 update** reported findings from initial deployment — including detection events in proximity to law enforcement activity. This is a useful community monitoring tool, not a complete defense.
 
 **GitHub**: [github.com/EFForg/rayhunter](https://github.com/EFForg/rayhunter)
+
+---
+
+### Mobile Fortify — Handheld Field Biometric Identification
+
+ICE deployed Mobile Fortify in 2025 — a handheld smartphone app that allows agents to photograph an individual in the field and run contactless fingerprint and facial recognition scans against DHS biometric databases (including the Homeland Advanced Recognition Technology platform, which retains biometric data for 75–100 years from date of birth). The app has been used more than 100,000 times since launch. Mobile Fortify changes the physical encounter threat geometry in a way the standard IMSI catcher model does not: biometric collection no longer requires a formal government processing facility. It can occur at a traffic stop, on a street corner, or at a protest perimeter — any location where an ICE agent is present. Practical countermeasures carry over from existing facial recognition guidance: a medical-grade mask (N95 or FFP2) covering the nose and mouth disrupts the lower facial geometry that most recognition algorithms require; a hat with a full brim reduces overhead and oblique angle acquisition; sunglasses defeat periorbital feature extraction. A documented accuracy problem with Mobile Fortify matters for threat modeling: in at least one reported case, the same individual scanned twice in the same encounter was returned two different (both incorrect) names, meaning false-positive identification shifts the burden of proof onto the person who is wrongly matched. If you are approached and believe you may have been incorrectly identified by a field device, do not confirm or deny identity without legal counsel — the match is not legally conclusive. Avoid predictable movement patterns (daily commute at fixed times, habitual gathering locations) that allow pattern-of-life analysis to predict where you will be; Mobile Fortify's value to investigators increases when combined with Palantir's ELITE address confidence scoring, so the same behavioral randomization that degrades ELITE scoring (Part 2.3) also degrades the predictive value of any Mobile Fortify encounter data.
 
 ---
 

@@ -379,6 +379,34 @@ What this does: if the phone is not unlocked within that time window, it automat
 
 ---
 
+### Step 3.2a — BFU vs. AFU: Device State and Cellebrite Extraction
+
+**What this is and why it matters**: Your device's vulnerability to forensic extraction depends heavily on which of two states it is in when seized. Understanding this distinction determines what actions you take when you anticipate a law enforcement encounter.
+
+**Before First Unlock (BFU)**: A device that has been powered on but whose PIN/passphrase has never been entered in the current session. In BFU state, the full-disk encryption keys are not yet loaded into memory. The data partitions remain mathematically locked. Cellebrite UFED's physical extraction capability is severely limited against a BFU device — it can read only unencrypted metadata stored outside the encrypted partition (basic device info, some cached SIM data). The user data stored in the encrypted partition is inaccessible without the passphrase. GrapheneOS's auto-reboot feature (configured in Step 3.2 above) is specifically designed to return the device to BFU state after a period of inactivity, which is why the setting matters.
+
+**After First Unlock (AFU)**: A device where the PIN has been entered at least once since the last power-on. In AFU state, the decryption keys are loaded into memory. The OS needs those keys to run. A device that is powered on, locked by screen timeout, but has been unlocked at least once since boot is in AFU state — it looks locked on the screen but the encryption keys are in memory. Cellebrite Physical Analyzer can access substantially more data from an AFU device: app data, Signal message database (the local copy on the device), location history, call records, photos, documents, browser history, and app credentials stored in the Android Keystore. ICE holds an $11 million Cellebrite contract. Cellebrite's Physical Analyzer includes a Signal-specific module that extracts the local Signal database from AFU-state Android devices.
+
+**The practical implication — before any anticipated encounter**: Power off the device fully. Not sleep, not screen lock. Power off. A powered-off device is in BFU state at next boot. This single action is the most effective forensic countermeasure available short of device destruction. If you are stopped at a checkpoint, approached in the field, or have any advance warning that law enforcement contact is possible, power the device off before the encounter.
+
+**Device seizure scenarios and what applies**:
+
+- *Planned protest or public action*: Leave the device at home (the strongest option) or power it off and place it in a Faraday bag before arriving. Either approach leaves the device in a state where Cellebrite extraction yields minimal data.
+- *Unexpected stop or field encounter*: If you have any moment before the encounter — while approaching a checkpoint, during a traffic stop before officers reach your window — power off the device. Even 5 seconds is sufficient.
+- *Device seized from a bag or pocket while powered on and locked*: The device is in AFU state. Cellebrite extraction can begin immediately with no PIN required (it accesses the memory-resident keys through a hardware vulnerability or an agent-enabled extraction mode). The auto-reboot timer (Step 3.2) is the backstop here: if a device in AFU state is not unlocked for 18 hours (the GrapheneOS default), it reboots to BFU state on its own. This limits the extraction window for a seized device left overnight before forensic processing begins.
+- *Device seized while you are being detained and forced to unlock*: Your legal right to refuse to provide a PIN/passphrase is contested across circuits but generally stronger than your right to refuse biometric unlock. Do not use Face Unlock or fingerprint as your primary unlock method (Step 3.1 above). A passphrase you refuse to provide prevents AFU extraction; a fingerprint you are compelled to provide does not.
+
+**Preventing AFU extraction — configuration steps**:
+
+1. PIN/passphrase unlock only (already set in Step 3.1): do not enable fingerprint or face unlock on the GrapheneOS device used for sensitive activity. This preserves your legal ability to refuse unlocking on Fifth Amendment grounds.
+2. Auto-reboot set to 18 hours or less (Step 3.2): returns device to BFU state automatically if not unlocked within that window.
+3. USB data controls set to "No new USB accessories" (Step 3.6 below): prevents Cellebrite from establishing a USB connection for extraction while the screen is locked.
+4. Disable developer options and ADB (Android Debug Bridge) when not actively in use: ADB is an alternative extraction pathway that Cellebrite tools can use. On GrapheneOS, developer options are off by default and ADB requires physical confirmation on an unlocked device — but verify this is the case on your configuration.
+
+**Why this is specific to activist and immigration contexts**: For users who may face sudden law enforcement contact — at protests, at checkpoints, during enforcement operations — the AFU state window is the realistic forensic threat. A user who is arrested and whose phone is logged into evidence in AFU state gives investigators access to a full local copy of all Signal messages (including those beyond the disappearing message window still on the device), location history, contacts, and any app data the device holds. The countermeasures above — particularly powering off before encounter and maintaining auto-reboot — directly address this window.
+
+---
+
 ### Step 3.3 — Network Permission Controls
 
 GrapheneOS adds a feature standard Android lacks: you can deny network access entirely to any app, even if the app technically has the "internet permission."
@@ -447,6 +475,7 @@ Check each of the following:
 - [ ] At least 3 utility apps have network access denied
 - [ ] **Settings > Privacy > Ads**: Shows "Advertising ID deleted"
 - [ ] If Google Play was installed: confirm it was installed in a secondary profile, not the main profile
+- [ ] **BFU/AFU test**: Power the device off fully, then power it back on without entering your PIN. Confirm the device shows the "Enter PIN" screen and does not proceed to the home screen. This confirms you are in BFU state after power-on, and that the device will require PIN entry before any data access is possible.
 
 ---
 
