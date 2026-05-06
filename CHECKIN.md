@@ -1,3 +1,46 @@
+## Since Last Check-in (Session 851 — 2026-05-06 22:52–23:47 UTC) — PARALLEL PHASE 2 EXECUTION: RESISTANCE-RESEARCH DOMAIN 27 + SEEDWARDEN TRACK B ASSESSMENT
+
+### STATUS: **Phase 2 advancement complete — two key deliverables**. Resistance-research Phase 2 Domain 27 (Higher Education & Academic Freedom) production-ready and committed. Seedwarden Phase 2 Track B asset audit complete (18 habit photos confirmed complete; PDF credits pending). Both agents closed on schedule. No new blocks. Usage: Sonnet ~2.8%; all-models ~57%.
+
+**What Changed**:
+
+✅ **resistance-research Phase 2 Domain 27** (`phase2-domain-27.md`, committed)
+- **Domain**: Higher Education and Academic Freedom as Democratic Infrastructure
+- **Key findings**: 
+  - Three-lever fiscal architecture: targeted grant freezes + NIH/NSF 15-20% pace slowdown ($29.86B) + endowment tax increase to 8%
+  - Harvard First Circuit appeal threat: if government wins, 330,000+ federal grant recipients subject to political conditioning
+  - Duration of Status visa rule targets 1.1M international students ($44B economic contribution)
+  - Accreditation rulemaking May 18-22: final window before federal DEI prohibition across 6,000+ institutions
+  - International precedent: Germany/Canada/UK arm's-length funding prevents executive coercion
+  - Brain drain structural fact: 75% scientists considering departure; EU/Canada recruitment active
+  - 2026 midterm window: five reform pathways (funding restoration, tax revision, visa protection, accreditation independence, Academic Freedom Protection Act)
+- **Business value**: Extends fiscal architecture analysis from targeted institutions to all grant recipients; identifies May 18-22 advocacy window; grounds legislative strategy in international precedent; supports Phase 2 distribution strategy
+
+✅ **seedwarden Phase 2 Track B Status Assessment** (Agent a183bbd256a253522 — COMPLETED)
+- Finding: Standing task (download 18 wild edibles habit photos) was ALREADY COMPLETE in Session 560 (2026-04-28)
+- Status: All 18 files present (17 MB total), all CC-licensed, all source URLs logged
+- Next action (not yet done): Add photo credits page to Wild Edibles Quick Reference PDF before publication
+- Note: `fallopia-japonica-habit.jpg` (9.9 MB) requires compression via `_compressed_image_path()` pipeline before PDF embedding
+- Business value: Confirms Phase 2 asset acquisition complete; tracks remaining publication work
+
+**Projects Status**:
+- **resistance-research**: Phase 1 launch-ready; Phase 2 domain research advancing (1 of 8 high-priority domains complete from Session 849; others in active research queue)
+- **seedwarden**: Phase 1 tag corrections pending; Phase 2 Track B assets confirmed complete, PDF credits remaining
+- **stockbot**: No change (May 12 Gate 1 checkpoint 6 days away; architecture decisions pending user review)
+- **cybersecurity-hardening**: No change (Phase 1/2 complete, awaiting user Tier 1 distribution approval)
+- **mfg-farm**: No change (test print block unchanged)
+
+**Needs Your Input**:
+1. **resistance-research distribution path** (awaiting decision): Path A (immediate distribution) / Path A+37 Hybrid / Path B (continue optional updates)
+2. **seedwarden photo credits PDF** (next available): Timing for adding photo credit page to Wild Edibles PDF before Phase 2 launch
+
+**What's Next**:
+1. **May 12 Gate 1 checkpoint** (5 days, 19 hours): All stockbot prep complete; awaiting March conditions assessment
+2. **Phase 2 domain research**: Continue Phase 2 expansion once current domain research completes
+3. **User decisions unlock Phase 1 + Tier 1 execution**: resistance-research path decision → Phase 1 launch; cybersecurity-hardening approval → Tier 1 distribution
+
+---
+
 ## Since Last Check-in (Session 850 — 2026-05-06 21:27–22:45 UTC) — STOCKBOT GATE 1 PRE-LAUNCH ARCHITECTURE & DESIGN PREPARATION
 
 ### STATUS: **Stockbot critical pre-launch deliverables complete**. Three architectural design documents prepared to enable rapid execution post-Gate-1 checkpoint (May 12, 6 days away). Multi-Ticker Position Sizing Framework (3,000 words, 8 validation tests), Live Trading Deployment Readiness (2,400 words, 30-minute deployment guide), and Covered Call Automation Architecture (3,400 words, 22–42 hour implementation roadmap). All main project blocks unchanged. No new blockers. Usage: Sonnet ~2.4%; all-models ~57% (reset in ~119h).

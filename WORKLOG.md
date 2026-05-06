@@ -27915,3 +27915,36 @@ Key Metrics:
 - **Phase 2 progress**: resistance-research now has 1 additional high-priority domain; cybersecurity-hardening fully prepared for Phase 2 distribution
 - **Next checkpoint**: May 12 stockbot Gate 1 formal evaluation
 
+---
+
+## 2026-05-06 22:52–(in progress) UTC — Session 851: Parallel Phase 2 Execution (Resistance-Research + Seedwarden)
+
+**Session Context**:
+- Oriented to ORCHESTRATOR_STATE.md; reviewed active blocks (stockbot architecture pending user review, mfg-farm test print pending user action)
+- Identified two projects with clear autonomous work:
+  1. **resistance-research**: 7 of 8 Phase 2 high-priority domains remain (23, 27-29, 31, 33-34)
+  2. **seedwarden**: Phase 2 Track B ready for execution with zero blockers
+
+**Autonomous Work In Progress**:
+
+✅ **resistance-research: Phase 2 Domain 27 Research** (Agent a7b0d32ad411454b6) — COMPLETED
+- Domain: Domain 27 — Higher Education and Academic Freedom as Democratic Infrastructure
+- Deliverable: `phase2-domain-27.md` (production-ready, committed)
+- Key findings:
+  1. Three-lever fiscal architecture: targeted grant freezes + NIH/NSF administrative bottleneck (15-20% pace slowdown, $29.86B disrupted) + endowment tax increase to 8%
+  2. Harvard First Circuit appeal as structural threat: government arguing agencies can condition grants on "shifting priorities" without Title VI procedures (330,000+ federal grant recipients at risk)
+  3. Duration of Status rule escalation: visa revocation track targeting 1.1M international students ($44B annual contribution)
+  4. Accreditation rulemaking May 18-22: last administrative window before unilateral federal DEI prohibition and viewpoint diversity requirements across 6,000+ institutions
+  5. International precedent: Germany (DFG), Canada (NSERC/SSHRC), UK (Research England) use arm's-length research funding to prevent political executive coercion
+  6. Brain drain structural fact: 75% of surveyed US scientists considering departure, EU applications tripled, Canada/EU recruitment programs active
+  7. 2026 midterm legislative window: five reform pathways (research funding restoration, endowment tax revision, DHS visa protection, accreditation independence, Academic Freedom Protection Act)
+- Business value: Closes higher education vulnerability analysis in Phase 2; identifies fiscal architecture (three simultaneous levers) that extends to all educational grant recipients; grounds legislative strategy in international precedent; identifies May 18-22 advocacy window
+- Status: Committed to master; ready for Phase 2 distribution analysis
+
+✅ **seedwarden: Phase 2 Track B Status Assessment** (Agent a183bbd256a253522) — COMPLETED
+- Finding: The standing task (download 18 wild edibles habit photos) was already COMPLETE in Session 560 (2026-04-28)
+- Status: All 18 `-habit.jpg` files downloaded and present (17 MB total, all CC-licensed)
+- All source URLs logged in Session 560 WORKLOG entries
+- Next action (not yet done): Add photo credits page to Wild Edibles Quick Reference PDF before publication
+- Note: `fallopia-japonica-habit.jpg` (9.9 MB) needs compression via `_compressed_image_path()` pipeline before PDF embedding
+
