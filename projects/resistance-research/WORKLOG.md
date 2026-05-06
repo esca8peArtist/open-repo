@@ -2,6 +2,38 @@
 
 ---
 
+## May 6, 2026 — Session 821: Gist Deployment Readiness Synthesis
+
+**Status**: COMPLETE
+
+**Context**: Session 819 had already built the full Gist deployment infrastructure.
+This session (821) was tasked with "Phase 1 Gist deployment readiness" as prep work
+for the user's pending path decision (A / A+37 / B).
+
+**Finding**: Infrastructure was 100% complete from Session 819. The task brief was
+written without knowledge of that session's output. No new documents needed.
+
+**Actual gap addressed**: The `fill_templates.py` script existed only as a code block
+in `field-fill-automation-spec.md` — not on disk. Materialized it now.
+
+**Files created**:
+1. `GIST_DEPLOYMENT_READINESS.md` (~1,800 words)
+   — Synthesis document: infrastructure audit, file map, path decision impact,
+     CSS/rendering constraints, execution time estimate, pre-decision checklist,
+     companion document index.
+
+2. `scripts/fill_templates.py` (written to disk)
+   — Python batch fill script (copied from field-fill-automation-spec.md Section 3)
+   — Handles: URL placeholders, identity fields, legacy bracket syntax,
+     path-specific block selection, dry-run mode, safety warnings.
+   — Run: `uv run python scripts/fill_templates.py`
+
+**Pre-decision status**: Zero remaining technical blockers. Path decision → execution
+begins immediately. Domain 37 Gist creation (Path A+37 only) is a 10-minute step
+within the execution checklist, not a pre-decision blocker.
+
+---
+
 ## May 6, 2026 — Session 819: Phase 1 Distribution Launch Infrastructure
 
 **Status**: COMPLETE — 4 pre-launch infrastructure files created
