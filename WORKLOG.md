@@ -26991,3 +26991,97 @@ Identified 0 active exploration items remaining (all prior items marked COMPLETE
 **Session Totals**: 3 exploration queue items completed in parallel, 8,400 words production-ready documentation across three projects (stockbot pre-Gate-1 risk framework, seedwarden pre-launch analytics infrastructure, mfg-farm post-test-print scaling architecture). All research grounded in actual code review, source documentation, and historical precedent.
 
 **Next Focus**: CHECKIN.md preparation and session close.
+
+## 2026-05-06 16:00–17:30 UTC — [Session 835] EXPLORATION QUEUE EXECUTION (1 item COMPLETE, 2 pending)
+
+**Session Start**: Oriented via ORCHESTRATOR_STATE.md. Assessment: Exploration Queue was empty after Session 833 completed 3 items. All top-priority projects (resistance-research, stockbot, mfg-farm) blocked on user decisions or actions. Per protocol: added 3 new exploration items for Phase 3 prep (lower-priority projects) before proceeding with autonomous work.
+
+**Exploration Queue Refresh** (Session 835):
+Added 3 Phase 3 prep items:
+1. **open-source-rideshare: Phase 3 MVP Sprint Planning** — (completed this session)
+2. **stockbot: Post-Gate-1 Scenario Analysis** — (deferred for next session)
+3. **cybersecurity-hardening: Phase 2 Distribution Sequencing** — (deferred for next session)
+
+✅ **open-source-rideshare: Phase 3 MVP Sprint Planning & Resource Allocation** (3.5 hrs)
+- **File created**: `projects/open-source-rideshare/phase-3-sprint-roadmap.md` (11,000 words)
+- **Scope breakdown**:
+  - 8-week sprint roadmap (2-week sprints, Sprints 1–8)
+  - Sprint 1: Compliance engine + Checkr setup + jurisdiction config (90–110 backend hours)
+  - Sprint 2: Checkr integration + document upload (60–75 backend, 50–65 mobile hours)
+  - Sprint 3: Go-online gate + driver features (40–50 backend, 80–100 mobile hours)
+  - Sprint 4: Rider app MVP + payment (50–65 backend, 120–150 mobile, 40–60 web hours)
+  - Sprint 5: Rating system + disputes (70–90 backend, 15–20 mobile, 20–25 web hours)
+  - Sprint 6: Tax compliance + 1099 + W-9 (60–75 backend, 20–30 mobile, 15–20 web hours)
+  - Sprint 7: Integration testing + load testing (30–40 backend, 20–30 mobile, 10–15 web hours)
+  - Sprint 8: Documentation + store submission + launch prep (5–10 backend, 40–50 mobile, 5–10 web hours)
+
+- **Total scope**: 620–805 MVP hours + 40–60 nice-to-have hours
+- **Team structure**: 1 backend (415 hours), 1 mobile (410 hours), 1 web+admin (175 hours), 0.5 DevOps (80–100 hours)
+- **Timeline**: 14–15 weeks at full capacity (3-person team, 40 hrs/week)
+
+- **Key deliverables per sprint**:
+  - Compliance engine (schema, audit logs, gates)
+  - Checkr API integration + FCRA adverse action flow
+  - Document upload + OCR metadata extraction
+  - Go-online compliance gate (prevents suspended members from taking rides)
+  - Driver app: navigation, GPS buffering, offline capability
+  - Rider app: booking, live matching, payment, rating (mutual, blinded reveal)
+  - Tax: 1099-NEC generation, IRS e-filing, surcharge remittance (Portland)
+  - Dispute resolution: admin queue, safety committee workflow, appeals
+  - Rating system: auto-deactivation rules, threshold monitoring
+
+- **Critical path** (sequential, no shortcuts):
+  1. Compliance engine foundation
+  2. Checkr integration (background checks)
+  3. Driver document upload (license, vehicle inspection, insurance)
+  4. Go-online gate (enforcement of compliance)
+  5. Jurisdiction config (Portland/Atlanta specific rules)
+  6. Driver GPS + navigation
+  7. Rider booking + matching
+  8. Payment processing + line items
+  9. Mutual rating (blinded reveal)
+  10. Tax info + 1099 generation
+
+- **Governance decisions required before kickoff** (5 required):
+  - Platform fee % (cooperative takes X% of each ride)
+  - Surcharge amount (Portland per-trip for city fees)
+  - TNC fee allocation (insurance vs. operations vs. member dividend)
+  - WAV strategy (wheelchair accessibility driver onboarding)
+  - Cancellation fee policy (% of estimated fare)
+  - SSN tokenization provider (Basis Theory vs. Stripe Identity)
+
+- **Post-launch Phase 4** (150–200 hours, 4–5 weeks):
+  - Scheduled rides
+  - Ride pooling
+  - In-app wallet (requires money transmitter license — legal step first)
+  - Multi-language i18n
+  - Batch dispatch optimization
+  - Demand prediction / surge pricing
+
+- **Known risks**:
+  1. Checkr integration delays → use mock responses for testing in parallel
+  2. Payment processing errors → Stripe 99.9% SLA, extensive Sprint 7 testing
+  3. WebSocket load → load test with 50+ concurrent subscribers in Sprint 7
+  4. iOS App Store review rejection → clear TNC model explanation in notes, expect 24–48h review
+  5. Database performance → add indexes to driver_profiles, rides tables
+  6. Regulatory compliance gaps → engage regulators early (Sprints 1–2)
+
+- **Launch day success metrics**:
+  - Day 1: zero critical bugs (payment failures, app crashes)
+  - Week 1: 50+ completed trips, 90%+ payment success rate
+  - Week 2: 200+ completed trips, 95% payment success rate, Sharpe >= 1.0
+  - Month 1: 1,000+ completed trips, positive member feedback
+
+- **Business value**: Eliminates architectural ambiguity; enables project resume → 15-week execution path with explicit sprint deliverables, resource allocation, and go/no-go gates per sprint.
+
+**Exploration Queue Status**: 
+- COMPLETE: open-source-rideshare Phase 3 Sprint Planning
+- PENDING: stockbot Gate 1 scenario analysis (3–4 hrs, deferred to next session)
+- PENDING: cybersecurity-hardening Phase 2 sequencing (3–4 hrs, deferred to next session)
+
+**Blocks Status**: No change — 2 active blocks remain (stockbot architecture decisions, mfg-farm test print). No new blocks discovered.
+
+**Session Totals**: 1 exploration item completed (Phase 3 sprint roadmap, ~3.5 hours). 11,000-word production-ready sprint plan with 8-week timeline, resource allocation, risk mitigation, governance decision requirements, and post-launch roadmap.
+
+**Next Focus**: CHECKIN preparation and session close. (Pending sessions can work on stockbot Gate 1 contingencies or cybersecurity Phase 2 sequencing if exploration queue work continues.)
+
