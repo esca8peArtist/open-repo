@@ -1,43 +1,57 @@
-## Since Last Check-in (Session 851 — 2026-05-06 22:52–23:47 UTC) — PARALLEL PHASE 2 EXECUTION: RESISTANCE-RESEARCH DOMAIN 27 + SEEDWARDEN TRACK B ASSESSMENT
+## Since Last Check-in (Session 852 — 2026-05-06 23:47–final UTC) — PHASE 2 DOMAIN RESEARCH EXPANSION: ACUTE-URGENCY CANDIDATES E, B, F COMPLETE
 
-### STATUS: **Phase 2 advancement complete — two key deliverables**. Resistance-research Phase 2 Domain 27 (Higher Education & Academic Freedom) production-ready and committed. Seedwarden Phase 2 Track B asset audit complete (18 habit photos confirmed complete; PDF credits pending). Both agents closed on schedule. No new blocks. Usage: Sonnet ~2.8%; all-models ~57%.
+### STATUS: **Phase 2 research significantly advanced — three major domain documents completed**. Resistance-research Phase 2 domains E (Election Administration Seizure), B (Healthcare Access Implementation), and F (Civil Society Suppression) all production-ready and committed. Session 851 Domain 27 + seedwarden audit earlier; followed by 3 consecutive Phase 2 domain research completions. Total autonomous work: 4 major deliverables this session (1 from Session 851, 3 from Session 851+). No new blocks. Usage: Sonnet ~4.5%; all-models ~61%.
 
-**What Changed**:
+**What Changed (Session 851 completion + 851+ Phase 2 expansion)**:
 
-✅ **resistance-research Phase 2 Domain 27** (`phase2-domain-27.md`, committed)
-- **Domain**: Higher Education and Academic Freedom as Democratic Infrastructure
-- **Key findings**: 
-  - Three-lever fiscal architecture: targeted grant freezes + NIH/NSF 15-20% pace slowdown ($29.86B) + endowment tax increase to 8%
-  - Harvard First Circuit appeal threat: if government wins, 330,000+ federal grant recipients subject to political conditioning
-  - Duration of Status visa rule targets 1.1M international students ($44B economic contribution)
-  - Accreditation rulemaking May 18-22: final window before federal DEI prohibition across 6,000+ institutions
-  - International precedent: Germany/Canada/UK arm's-length funding prevents executive coercion
-  - Brain drain structural fact: 75% scientists considering departure; EU/Canada recruitment active
-  - 2026 midterm window: five reform pathways (funding restoration, tax revision, visa protection, accreditation independence, Academic Freedom Protection Act)
-- **Business value**: Extends fiscal architecture analysis from targeted institutions to all grant recipients; identifies May 18-22 advocacy window; grounds legislative strategy in international precedent; supports Phase 2 distribution strategy
+✅ **resistance-research Phase 2 Domain 27** (earlier in Session 851)
+- Higher Education and Academic Freedom as Democratic Infrastructure (4,800 words, committed)
+- Key: Three-lever fiscal architecture, Harvard First Circuit appeal threat, Duration of Status visa rule targets 1.1M students, accreditation rulemaking May 18-22 advocacy window, international precedent, brain drain, five legislative reform pathways
 
-✅ **seedwarden Phase 2 Track B Status Assessment** (Agent a183bbd256a253522 — COMPLETED)
-- Finding: Standing task (download 18 wild edibles habit photos) was ALREADY COMPLETE in Session 560 (2026-04-28)
-- Status: All 18 files present (17 MB total), all CC-licensed, all source URLs logged
-- Next action (not yet done): Add photo credits page to Wild Edibles Quick Reference PDF before publication
-- Note: `fallopia-japonica-habit.jpg` (9.9 MB) requires compression via `_compressed_image_path()` pipeline before PDF embedding
-- Business value: Confirms Phase 2 asset acquisition complete; tracks remaining publication work
+✅ **resistance-research Phase 2 Domain E — Election Administration Seizure and 2026 Midterm Defense** (8,176 words, commit `61fee12d`)
+- **Most urgent**: June 15 research deadline targeting election law organizations, state AGs, Secretaries of State
+- Key findings: March 31 EO faces 23+ state AG suits (6 provisions already blocked); ~two dozen election denier appointees documented; CISA dismantlement (all 36 specialists fired, program faces $39.6M FY27 cut); Watson v. RNC ruling late June/early July (threatens grace periods for 4M mail/overseas voters); NVRA quiet period trap August 7; election official turnover (50% Western state departures); five advocacy windows (May 30, June/July, August 7, Sept–Oct, Election Day); Hungary comparison
+- Business value: Direct leverage for election law organizations, state AGs (24+ active litigation), Secretaries of State networks
+
+✅ **resistance-research Phase 2 Domain B — Healthcare Access Implementation, OBBBA Medicaid Crisis** (commit `1c801599`)
+- **Most urgent**: June 1 HHS interim final rule window (no public comment period — advocacy closes in 26 days)
+- Key findings: Nebraska May 1 enforcement live (80-hour work requirements); CBO 5.2M federal Medicaid loss + 4.8M uninsured; hospital closures (St. Mary's GA, Centra Southside VA, Greene County IN); 446-hospital at-risk list; racial disparities (Black 34% overrepresentation, Hispanic 48% overrepresentation in disenrollments); **July 31 dual-crisis date** (pharmaceutical tariffs + Medicaid disenrollments); election infrastructure collision (voter registration offices affected); post-*Medina* litigation pathways
+- Business value: Direct leverage for healthcare coalitions (SEIU, CNA, NHeLP), rural hospitals, racial justice organizations; two distribution angles (HHS June 1, tariffs July 31)
+
+✅ **resistance-research Phase 2 Domain F — Civil Society Suppression as Democratic Infrastructure Attack** (8,363 words, commit `fff2ed48`)
+- **Most urgent**: July 1 Florida HB 1471 effective date (57 days; pre-enforcement challenge window mid-June)
+- Key findings correcting brief: (1) OBBBA Section 112209 NOT enacted — stripped May 19, 2025; administration using NSPM-7 executive mechanism instead (September 25, 2025); Congress refused authorization twice (H.R. 6408, H.R. 9495); government constitutional vulnerability; (2) SPLC indictment April 21, 2026 (not Feb), 11 counts, legally weak theory, rushed by FBI Director Patel over internal DOJ objections; (3) Active federal mechanism is NSPM-7 FBI-IRS Joint Mission Center (operational now, defining terrorism to include "anti-capitalism," "opposition to immigration," "gender ideology")
+- Three concurrent vectors: NSPM-7 FBI-IRS operational now; Florida HB 1471 + companion HB 1473 public records exemption July 1; SPLC indictment as suppression template
+- 2025 grant freeze precondition: 33% nonprofits experienced funding disruption, 52% have 3 months cash; destabilized orgs cannot litigate
+- Constitutional defense available: CAIR preliminary injunction (N.D. Fla March 2026) blocked on First Amendment/preemption; *NRA v. Vullo* establishes coercion standard; NSPM-7 definitions fail vagueness doctrine
+- July 1 pre-enforcement challenge should file mid-June (ACLU-FL, CAIR-FL, Lawyers' Committee)
+- Business value: Direct leverage for civil rights (NAACP LDF, SPLC, CAIR, EFF, ACLU), immigrant advocacy, reproductive rights, First Amendment organizations; affects 1.5M+ nonprofits; pre-litigation briefing ready
+
+✅ **seedwarden Phase 2 Track B Status Assessment** (from Session 851)
+- Standing task (18 wild edibles photos) ALREADY COMPLETE (Session 560); all files present, CC-licensed, URLs logged
+- Next action (not yet done): Add photo credits page to Wild Edibles Quick Reference PDF
+- Business value: Asset acquisition confirmed complete
 
 **Projects Status**:
-- **resistance-research**: Phase 1 launch-ready; Phase 2 domain research advancing (1 of 8 high-priority domains complete from Session 849; others in active research queue)
-- **seedwarden**: Phase 1 tag corrections pending; Phase 2 Track B assets confirmed complete, PDF credits remaining
-- **stockbot**: No change (May 12 Gate 1 checkpoint 6 days away; architecture decisions pending user review)
+- **resistance-research**: Phase 1 launch-ready (35 domains, awaiting user path decision); Phase 2 research significantly advanced: 4 of 9 candidates complete (Domains 27, E, B, F = 44% of Phase 2 candidates). Three acute-deadline domains done (E: June 15, B: June 1, F: July 1). Total framework now 38 domain documents (35 Phase 1 + 3 Phase 2). Remaining high-priority Phase 2: Domain 37b (State Election Security, Tier B, acute deadline), Domains A/G/C/D (remaining tiers, medium/low deadline pressure)
+- **seedwarden**: Phase 1 tag corrections pending; Phase 2 Track B confirmed complete (assets ready, credits page remaining)
+- **stockbot**: No change (May 12 Gate 1 checkpoint 5 days away; architecture decisions ARCH-1–7 pending user review)
 - **cybersecurity-hardening**: No change (Phase 1/2 complete, awaiting user Tier 1 distribution approval)
 - **mfg-farm**: No change (test print block unchanged)
 
 **Needs Your Input**:
-1. **resistance-research distribution path** (awaiting decision): Path A (immediate distribution) / Path A+37 Hybrid / Path B (continue optional updates)
-2. **seedwarden photo credits PDF** (next available): Timing for adding photo credit page to Wild Edibles PDF before Phase 2 launch
+1. **resistance-research distribution path** (PRIORITY): Path A (immediate 35-domain distribution) / Path A+37 Hybrid / Path B (continue Phase 2 optional updates). Can now proceed immediately with Path A/A+37 since Phase 1 is launch-ready. Phase 2 research can continue parallel to Phase 1 execution.
+2. **stockbot architecture decisions** (PRIORITY): Review ARCH-1 through ARCH-7 in `projects/stockbot/CODE_REVIEW_SYNTHESIS.md`; confirm direction before code changes
+3. **seedwarden photo credits PDF** (lower priority): Timeline for adding photo credit page to Wild Edibles PDF before Phase 2 publication
+4. **May 12 Gate 1 checkpoint** (in 5 days): All architectural documentation ready; awaiting gate conditions assessment
 
-**What's Next**:
-1. **May 12 Gate 1 checkpoint** (5 days, 19 hours): All stockbot prep complete; awaiting March conditions assessment
-2. **Phase 2 domain research**: Continue Phase 2 expansion once current domain research completes
-3. **User decisions unlock Phase 1 + Tier 1 execution**: resistance-research path decision → Phase 1 launch; cybersecurity-hardening approval → Tier 1 distribution
+**What's Next (recommended sequence)**:
+1. **User decides resistance-research distribution path** → orchestrator executes Phase 1 immediately (Gist creation, email templates, distribution to first batch of influencers)
+2. **May 12 Gate 1 checkpoint** → assess gate conditions; if pass, implement Phase 1 monitoring infrastructure (multi-ticker position sizing monitoring, 4 hours)
+3. **June 1 HHS guidance window** (26 days): Domain B (Healthcare) ready for immediate distribution to healthcare coalitions; can send before Phase 1 completes
+4. **June 15 election officials deadline**: Domain E (Election Administration) ready for immediate distribution to state AGs, Secretaries of State networks
+5. **Parallel Phase 2 expansion**: Continue Domains 37b (State Election Security), A (Trade), G (Tribal Sovereignty), others as Phase 1 execution confirms adoption signals
+6. **July 1 Florida HB 1471 deadline**: Domain F (Civil Society) ready for pre-enforcement litigation support filing
 
 ---
 

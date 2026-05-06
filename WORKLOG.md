@@ -4,6 +4,84 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-06 23:47–(end) UTC — Session 852: Phase 2 Domain Research Expansion (Domains E, B, F)
+
+**Session Context**:
+- Continued from Session 851 (Domain 27 + seedwarden assessment completed)
+- Identified Phase 2 research roadmap priorities: three acute-urgency Tier B domains
+- Spawned three parallel resistance-research agents for Phase 2 domain expansion
+
+**Autonomous Work Completed**:
+
+✅ **resistance-research: Phase 2 Domain E — Election Administration Seizure and 2026 Midterm Defense**
+- **Output**: `projects/resistance-research/domains/domain-E-election-administration-seizure-2026-midterms.md` (8,176 words, production-ready)
+- **Key findings**:
+  1. March 31, 2026 EO directing DHS State Citizenship List and USPS mail ballot restrictions faces suits from 23+ state AGs; six provisions already permanently blocked by courts
+  2. ProPublica April 17, 2026 audit confirmed ~two dozen election denier appointees: David Harvilicz (DHS voting machine security), Heather Honey (DHS elections), Kurt Olsen (White House election security director, on record pressuring FBI Atlanta on ballot seizure), Marci McCarthy (CISA public affairs, Georgia GOP Election Integrity Task Force)
+  3. CISA dismantlement: all 36 election security specialists fired/transferred; Election Day situation room did not run November 2025; FY27 budget proposal eliminates program ($39.6M, 14 staff); trust fracture is operational (Arizona declined CISA notification of Iranian cyberattack; Georgia routes through Emergency Management)
+  4. Watson v. RNC (ruling late June/early July 2026): conservative majority appears ready to eliminate grace periods for late-arriving mail ballots in 14 states + D.C., affecting 4M military/overseas voters
+  5. NVRA quiet period trap: DOJ offering 45-day voter removal agreements via SAVE system (81% false positive rate); post-August 7, SAVE-based removal is per se NVRA violation
+  6. Vulnerability matrix: Arizona highest-risk (CISA breakdown, Iranian cyberattack, election deniers in statewide races, $650K security appropriation); Georgia/Michigan/Nevada tier 2
+  7. Election official turnover: 50% of Western state chief election officials departed since 2020; 4 in 10 local offices will be new in 2026; 59% of remaining officials report fear of political interference
+  8. Five advocacy windows: May 30 consent decrees, late June/July Watson ruling, August 7 NVRA quiet period, September–October certification season, Election Night chain-of-custody
+  9. Hungary comparison: April 2026 Orbán defeat (53.6% to Tisza) shows mobilization can overcome structural manipulation; requires years of legislative work to reverse agency dismantlement
+- **Sourced**: ProPublica investigation, Brennan Center litigation tracker, Votebeat state reporting, CISA personnel changes, mail voting SCOTUS case tracking, Democracy Docket, state AG filings
+- **Business value**: Direct leverage for election law organizations, state AGs (24+ active election administration litigation), Secretaries of State networks; identifies operational administration defense distinct from Phase 1 Domain 37
+- **Status**: Production-ready, committed to master (commit `61fee12d`)
+
+✅ **resistance-research: Phase 2 Domain B — Healthcare Access Implementation, OBBBA Medicaid Crisis**
+- **Output**: `projects/resistance-research/domains/domain-B-healthcare-access-implementation-obbba-medicaid-crisis.md` (production-ready)
+- **Key findings**:
+  1. **Critical urgent finding**: No public comment period for June 1 HHS interim final rule (OBBBA statute explicitly exempts); organizations waiting for comment period have lost advocacy window; remaining pathways are pre-issuance HHS stakeholder engagement (closes June 1, **26 days away**), post-issuance APA litigation, state-level implementation advocacy before January 2027
+  2. Nebraska is live: May 1, 2026 enforcement of 80-hour work requirements on 20,000–40,000 Nebraskans; first disenrollments July 31. Montana July 1, Arkansas July 1 soft-launch, Iowa December 1
+  3. CBO scoring: 11.8M headline covers all OBBBA health impacts; work-requirements-specific = 5.2M losing federal Medicaid, 4.8M uninsured; RWJF modeling reaches 3–7M from work requirements alone; savings ($326B) derive entirely from coverage loss, not employment
+  4. Hospital closures (service closures, not full facility): St. Mary's Sacred Heart (Lavonia, GA) L&D unit late 2025; Centra Southside (Farmville, VA) L&D + women's services (22% Medicaid revenue); Greene County General (Linton, IN) OB unit January 31, 2026 ($726K annual loss); Public Citizen 446-hospital at-risk figure confirmed with full methodology
+  5. Rural Health Fund gap: $50B covers only 37% of $137B rural Medicaid losses; CMS restricts 15% direct patient care; Georgetown CCF confirms state officials deem it inadequate
+  6. Racial disparities with specific data: Black 22% of unable-to-complete renewals vs. 16.4% enrollment (34% overrepresentation); Hispanic 33.5% of procedural disenrollments vs. 22.7% enrollment (48% overrepresentation); Native American/Alaska Native 2x+ disenrollment rate of white individuals
+  7. **July 31 dual-crisis date**: Section 232 pharmaceutical tariffs (100% effective, patented drugs + APIs) + Nebraska's first-wave Medicaid disenrollments; generic drug exemption gap hits Indian manufacturer supply chains (2–8% net margins)
+  8. Election infrastructure collision: Medicaid enrollment offices serve as voter registration sites under NVRA; cuts reduce voter registration in majority-minority areas (12 non-expansion states primarily Southern, majority-Black low-income)
+  9. Post-*Medina v. Planned Parenthood* (SCOTUS June 2025) litigation landscape: APA challenges to no-comment exemption, statutory purpose challenges post-*Loper Bright*, organizational/state AG equal protection suits grounded in racial disparity data
+- **Sourced**: KFF, Public Citizen hospital tracking, RWJF modeling, Georgetown CCF, NPR, NHeLP racial disparities analysis, Health Affairs Arkansas precedent, Crowell & Moring tariff analysis, state AG litigation filings
+- **Business value**: Direct leverage for healthcare advocacy coalitions (SEIU, CNA, National Health Law Program, state Medicaid directors), rural hospital networks, racial justice organizations; June 1 HHS guidance window is immediate; July 31 tariff collision creates secondary distribution angle
+- **Status**: Production-ready, committed to master (commit `1c801599`)
+
+✅ **resistance-research: Phase 2 Domain F — Civil Society Suppression as Democratic Infrastructure Attack**
+- **Output**: `projects/resistance-research/domains/domain-F-civil-society-suppression-democratic-infrastructure-attack.md` (8,363 words, production-ready)
+- **Critical factual corrections from brief**:
+  1. **OBBBA Section 112209 was NOT enacted**: Stripped from bill before passage in 17–16 Budget Committee vote (May 19, 2025); P.L. 119-21 signed July 4, 2025 contains no Section 112209. Administration pursuing functional equivalent via **NSPM-7 executive mechanism** (September 25, 2025) precisely because Congress twice refused to authorize it (H.R. 6408, H.R. 9495). **Legal significance**: Executive mechanism lacks statutory authorization; constitutes government vulnerability, not nonprofit vulnerability
+  2. **SPLC indictment dates April 21, 2026** (not February): 11-count indictment (6 wire fraud, 4 bank fraud, 1 money laundering conspiracy) announced April 21, 2026 by FBI Director Patel; former DOJ prosecutors characterize charge theory as legally weak; CNN May 1 reporting confirms senior DOJ official ordered indictment rushed over internal objections
+  3. **Active federal pipeline is NSPM-7**, not statutory IRS mechanism: FBI-IRS "Mission Control Command Center" implementing NSPM-7 revealed in FBI FY2027 budget request, confirmed March 2026; operational now; required no congressional authorization
+- **Key findings**:
+  1. Three concurrent vectors: (1) NSPM-7 FBI-IRS Joint Mission Center operational, defining domestic terrorism to include "anti-capitalism," "opposition to immigration enforcement," "radical gender ideology"; (2) Florida HB 1471 effective July 1, creating state designation authority with corporate dissolution power and criminal penalties, plus companion HB 1473 public records exemption; (3) SPLC indictment as suppression template — legally deficient theory designed to produce reputational damage and donor flight pre-adjudication
+  2. 2025 grant freeze structural precondition: Urban Institute documented 33% of nonprofits experienced funding disruption H1 2025; 29% reduced staff; 52% have three months or less cash on hand — destabilized organizations cannot sustain litigation defense
+  3. Constitutional defense is available and winning: CAIR preliminary injunction (N.D. Florida, March 2026) blocked designation mechanism on First Amendment/preemption grounds; *NRA v. Vullo* (2024, unanimous) establishes coercion standard; NSPM-7 definitions fail vagueness doctrine; legislative history (Congress refusing Section 112209 three times) strengthens executive-lack-of-authority argument
+  4. Primary advocacy window: **July 1, 2026** (57 days); pre-enforcement challenge to Florida HB 1471 should file mid-June in N.D. Florida, building on CAIR litigation; ACLU of Florida, CAIR-Florida, Lawyers' Committee are natural filing organizations
+- **Sourced**: NSPM-7 White House text, Florida HB 1471 bill text, DOJ SPLC indictment press release, Urban Institute survey, CIVICUS Monitor, *NRA v. Vullo*, *Holder v. Humanitarian Law Project*, ECJ Hungary rulings, Stanford Law civil rights designation analysis, Charity & Security Network, 36 total citations
+- **Business value**: Direct leverage for civil rights organizations (NAACP LDF, SPLC, CAIR, EFF, ACLU), immigrant advocacy, reproductive rights, First Amendment organizations; pre-litigation briefing for constitutional challenges; distinct from Phase 1 Domain 29 (prosecutorial weaponization); sector-wide impact affects 1.5M+ nonprofits
+- **Status**: Production-ready, committed to master (commit `fff2ed48`)
+
+**Project Status After Session 852**:
+- **resistance-research**: Phase 1 launch-ready (35 domains, awaiting user distribution path decision A/A+37/B). Phase 2 domain research significantly advanced: 4 of 9 total candidates complete (Domains 27, E, B, F). Domain E targets June 15 election officials deadline; Domain B targets June 1 HHS guidance window; Domain F targets July 1 Florida implementation. Remaining high-priority Phase 2 candidates: Domain 37b (State Election Security, Tier B, acute deadline), Domains A/G/C/D (remaining tiers). Framework now has 38 total domain documents (35 Phase 1 + 3 Phase 2 completed; Domain 27 also Phase 2 version).
+- **seedwarden**: Phase 2 Track B asset audit complete (18 wild edibles photos confirmed); photo credits page task remains pending (no orchestrator work done yet)
+- **stockbot**: No change (May 12 Gate 1 checkpoint; architecture decisions ARCH-1 through ARCH-7 pending user review)
+- **cybersecurity-hardening**: No change (Phase 1/2 complete, awaiting user Tier 1 distribution approval)
+- **mfg-farm**: No change (test print block unchanged)
+
+**Technical Notes**:
+- Domain E/B/F research leveraged Context7 and Tavily for current sourcing verification
+- Domain F research corrected three significant factual errors in the brief: OBBBA Section 112209 not enacted, SPLC indictment April 21 (not Feb), active mechanism is NSPM-7 (not statutory)
+- All three domains sourced with 20–36 citations each, production-ready for Phase 2 distribution
+- Calendar-driven urgency: June 1 (Domain B HHS window), June 15 (Domain E election officials), July 1 (Domain F Florida HB 1471)
+- Phase 2 domain documents can now support targeted distribution to specialized audiences (election officials, healthcare coalitions, civil rights orgs) even if Phase 1 distribution path decision remains pending
+
+**Key Metrics**:
+- **Autonomous work this session**: 3 major Phase 2 domain research documents (25,539 combined word count)
+- **Phase 2 progress**: 3 of 9 identified candidates complete (33% of Phase 2 candidates); 3 of 3 highest-priority acute-deadline candidates complete
+- **Next checkpoint**: June 1 HHS guidance window (Domain B); June 15 election officials (Domain E); July 1 Florida implementation (Domain F)
+- **User action needed**: Distribution path decision (Phase 1 A/A+37/B); Tier 1 cybersecurity-hardening approval; May 12 stockbot Gate 1 checkpoint; mfg-farm test print
+
+---
+
 ## 2026-05-06 21:27–22:45 UTC — Session 850: Stockbot Gate 1 Pre-Launch Architecture & Design (Multi-Ticker Sizing, Live Trading, Covered Calls)
 
 **Session Context**:
