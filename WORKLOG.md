@@ -6,9 +6,9 @@
 
 ---
 
-## 2026-05-06 08:34–09:10 UTC — [Session 729] EXPLORATION QUEUE ITEM 36 COMPLETE + NEW ITEMS 36-38 ADDED
+## 2026-05-06 08:34–10:00 UTC — [Session 729] ITEMS 36 & 37 COMPLETE + DTBP MONITORING PENDING 13:30 UTC
 
-**Session Summary**: Oriented to ORCHESTRATOR_STATE.md. All major projects blocked on user decisions (distribution path, DTBP reset, architecture review, test print, tag corrections). Exploration Queue had <3 active items. Added 3 new autonomous exploration items (36, 37, 38) per protocol. Executed Item 36 (stockbot Jetson deployment documentation) via stockbot agent. Market open for DTBP reset verification at 13:30 UTC (4h 20m away).
+**Session Summary**: Oriented to ORCHESTRATOR_STATE.md. All major projects blocked on user decisions. Exploration Queue had <3 active items. Added 3 new autonomous exploration items (36, 37, 38) per protocol. Executed Items 36 and 37 sequentially (stockbot Jetson docs, then mfg-farm pre-staging). Market open for DTBP reset verification at 13:30 UTC (3h 30m remaining).
 
 **Work Completed**:
 
@@ -19,9 +19,16 @@
    - Key deliverables: Hardware comparison table; Docker Compose service definitions; copy-paste health check script; log rotation policy (30-day retention); graceful/emergency/full-stack restart procedures; emergency recovery paths (stuck session, database corruption, API auth failures); Prometheus + Grafana stack spec with 6-panel dashboard and 12 alert rules; 4-phase deployment validation checklist with rollback triggers
    - Impact: Supports Gate 1 checkpoint (May 12) and future scaling to multi-session/multi-asset configurations. Provides operational foundation for Item 46 post-Gate-1 runbook.
 
-2. ✅ **Exploration Queue Replenishment**: Added Items 36, 37, 38 to bring queue back to 3+ active items
-   - Item 36: ✅ COMPLETED (above)
-   - Item 37: mfg-farm Post-Test-Print Pre-Staging Automation (ready for autonomous execution)
+2. ✅ **Item 37**: mfg-farm Post-Test-Print Pre-Staging Automation (COMPLETE 09:50 UTC)
+   - Files: `post-test-print-staging-guide.md` (3,163 words), `post-test-print-supplier-outreach.md` (2,675 words), `post-test-print-fulfillment-dryrun.md` (2,607 words), `post-test-print-launch-timeline.md` (3,132 words) — **Total 11,577 words**
+   - Location: `projects/mfg-farm/`
+   - Commit: (general-research agent)
+   - Key deliverables: Photo framing guide with Lightroom/Canva settings; Etsy field pre-fill (title, 13 ranked tags, description, variants); 5 supplier email templates (eSUN, Anycubic, Shop4Mailers, Packlane, BETCKEY) with product specs; 10-unit fulfillment mock workflow with cost validation; T+0 to T+7 launch calendar with decision gates and contingencies
+   - Impact: Eliminates post-test-print execution friction. User confirms test print → follows 4 pre-staged guides → Etsy live in 7 days with zero guesswork.
+
+3. ✅ **Exploration Queue Replenishment**: Added Items 36, 37, 38 to bring queue back to 3+ active items
+   - Item 36: ✅ COMPLETED (Jetson deployment docs)
+   - Item 37: ✅ COMPLETED (mfg-farm pre-staging)
    - Item 38: resistance-research Tracker Data Enrichment & Source Audit (ready for autonomous execution)
 
 **Blocks Status**: 
