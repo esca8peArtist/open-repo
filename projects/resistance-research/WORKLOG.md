@@ -2,6 +2,41 @@
 
 ---
 
+## May 6, 2026 — mfg-farm: Expansion Products Manufacturing Specs (full rewrite)
+
+**Session type**: General Research Agent — mfg-farm project
+**File revised**: `projects/mfg-farm/expansion-products-manufacturing-specs.md` (~3,200 words)
+
+**What changed**: Prior version used CadQuery pseudocode that did not match the actual build123d API used in the production ModRun scripts (`modrun_clip_b123d.py`, `modrun_rail_b123d.py`). Full rewrite aligns all five product CadQuery implementation guides to the real build123d primitives (Box, Cylinder, Cone, Text, Shell, fillet, RectangularArray, export_stl), mirrors the ModRun constants-block + make_* + build_* + main() architecture, and adds explicit CLI interface documentation for each product script.
+
+**Key additions**:
+1. All five CadQuery implementation guides rewritten to build123d API (not pseudocode)
+2. `FDM_TOLERANCE` inheritance from ModRun test print value documented in each script
+3. Per-product COGS table extended to 20/50/100 units/week (was only 20/wk)
+4. Magnet press-fit tolerance calibration protocol (FDM_TOLERANCE in pocket radius, pull-test specification)
+5. ASA profile divergence from PLA+ documented (TEXT_DEPTH vs. tolerance adjustment for shrinkage)
+6. Pegboard hook peg socket geometry: hollow cylinder subtraction pattern, FDM_TOLERANCE application to bore
+7. Monitor riser hollow Shell() construction explained for filament savings rationale
+8. Contingency section covers ASA warping (PETG fallback), magnet delay (blank tile launch), riser capacity ceiling
+9. Day-0 supply order actions itemized explicitly (magnets, ASA, silicone feet — order immediately on test-print success)
+
+**Infrastructure reuse documented**: All five scripts inherit ModRun's export_stl(), argparse CLI pattern, --output-dir convention, and --tolerance override flag. No modifications to existing cadquery/ scripts required.
+
+---
+
+## May 6, 2026 — Off-Grid Living: Phase 2 Social Media Execution Toolkit (v2 enrichment)
+
+**Session type**: General Research Agent — off-grid-living project
+**Files revised**:
+- `projects/off-grid-living/social-media-execution-toolkit.md` — Fixed sequencing contradiction in executive summary (was "r/preppers then r/offgrid"; corrected to r/offgrid first with rationale). Added Part 2b: Upvote Velocity and Engagement Decay Mechanics (60-minute window, the two failure states, lifecycle decay curve, and implications for campaign sequencing). Added "The Case for r/offgrid First" subsection to Part 3 with explicit reasoning for the sequencing order and what goes wrong if reversed.
+- `projects/off-grid-living/community-posting-calendar-template.md` — Added "30/60/90 Day GitHub Stars Trajectory Model" section before the Phase 3 Gate, covering conservative/moderate/high trajectory tables, key threshold events (200/500/1,000 stars), and fork-to-star ratio benchmarks with interpretation and action triggers.
+
+**Research sources used**: Reddit algorithm research (upvotemax.com, singlegrain.com), GitHub stars benchmarking (tooljet.com, dev.to), YouTube influencer data (trueprepper.com, feedspot.com), Reddit self-promotion rules (replyagent.ai, onlinemoderation.com), subreddit overlap data (subredditstats.com).
+
+**Key finding**: The prior version had an internal contradiction — the executive summary recommended r/preppers first, but the calendar and sequencing section recommended r/offgrid first. The r/offgrid-first sequence is strategically correct for three reasons: it tests the guide with the highest-fit audience before amplifying to a 10x larger community, audience overlap between r/offgrid and r/preppers is lower than expected (different emotional registers: practical vs. threat-oriented), and early r/offgrid feedback can be incorporated into the r/preppers post framing within the 48-72h gap.
+
+---
+
 ## May 5, 2026 — Cybersecurity-Hardening: Tier 1 Effectiveness Framework + Recipient Feedback Template (v3 — cohort recalibration)
 
 **Session type**: General Research Agent — cybersecurity-hardening project
