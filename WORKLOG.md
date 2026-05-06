@@ -4,6 +4,38 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-06 21:30–22:10 UTC — Session 846: cybersecurity-hardening Phase 2 Organizational OpSec Playbook (Exploration Queue Completion)
+
+**Session Context**:
+- Oriented to current state: all major projects blocked on user actions (stockbot: architecture review, mfg-farm: test print)
+- Identified autonomous work: cybersecurity-hardening Organizational OpSec Playbook (Exploration Queue item #2)
+- resistance-research FISA Section 4.2 correction already completed in Session 837 (verified current)
+- Spawned subagent for organizational playbook research
+
+**Autonomous Work Completed**:
+
+✅ **cybersecurity-hardening: Organizational OpSec Playbook (Phase 2.1)** (~3.5 hours)
+- **Output**: `organizational-opsec-playbook.md` (8,300 words, 63 KB) — committed to master
+- **Scope**: Extending Phase 1 (individual protection) to institutional contexts: NGOs, labor unions, legal aid organizations
+- **Three-tier framework**: Essential (all organizations), Advanced (medium security), Hardened (high-risk)
+- **33 actionable recommendations** across:
+  - Organizational threat model (7 current threats with primary sources: IRS targeting, FOIA as ICE intelligence, DHS subpoenas, ICE Graphite zero-click, SPLC indictment, FBI surveillance surge)
+  - Technical safeguards (MFA, shared password management, encrypted communications, data minimization, physical security, Cloudflare Project Galileo)
+  - Sector-specific guidance (Form 990 exposure, labor organizing security, immigration legal aid data protection)
+  - Operational safeguards (document classification, infiltration resistance, board-level security governance)
+  - Incident response (government legal process response, breach notification, community trust recovery)
+- **Key findings**: 
+  - ICE Graphite zero-click spyware (not in existing corpus) — highest severity gap; countermeasures documented (Lockdown Mode, GrapheneOS, aggressive patching)
+  - Wire vs. Signal for organizational deployment (Signal lacks admin controls; Wire provides equivalent encryption + organizational management)
+  - SPLC indictment (April 2026) as material threat model update for civil rights organizations
+  - Cloudflare Project Galileo (free) as Tier 1 zero-cost protection for qualifying civil society
+- **12-month implementation roadmap** with weekly specifics for months 1–2; resource directory with costs and links
+- **Completes Exploration Queue item #2** — next item is mfg-farm post-test-print supplier/scaling work
+
+**Project Status Summary**:
+- **cybersecurity-hardening**: Phase 2 Organizational OpSec Playbook now complete; Phase 2 Tier 2 scenario playbooks (5 total) completed Sessions 843–844; Phase 2 sector supplements ready for development; Tier 1 distribution execution pending user approval
+- **Exploration Queue**: 1 item completed (this session), 1 item pending (mfg-farm supply chain — blocked until test print), adding item #3 next session if no user direction work available
+
 ## 2026-05-06 20:50–21:30 UTC — Session 844: cybersecurity-hardening Phase 2 Scenario Playbooks (5 of 5 Complete)
 
 **Session Context**:

@@ -1,3 +1,18 @@
+## Since Last Check-in (Session 846 — 2026-05-06 21:30–22:10 UTC) — CYBERSECURITY-HARDENING ORGANIZATIONAL OPSEC PLAYBOOK COMPLETE
+
+### STATUS: **Exploration Queue item #2 complete**. cybersecurity-hardening Organizational OpSec Playbook (8,300 words) delivered covering institutional contexts (NGOs, labor unions, legal aid). All main project blocks unchanged. No new blockers. Usage: Sonnet ~2.2%; all-models ~55% (reset in ~121h).
+
+**What Changed**:
+- **cybersecurity-hardening Phase 2.1**: Organizational OpSec Playbook complete (organizational-opsec-playbook.md, 63 KB). Extends Phase 1 (individual protection) to institutional scale. Three-tier framework (Essential/Advanced/Hardened) with 33 actionable recommendations. Key findings: (1) ICE Graphite zero-click spyware countermeasures documented (Lockdown Mode, GrapheneOS, aggressive patching), (2) Wire vs. Signal for organizational deployment (organizational admin controls lacking in Signal), (3) SPLC indictment (April 2026) as material threat model update, (4) Cloudflare Project Galileo as zero-cost Tier 1 protection. Sector-specific guidance for NGOs, labor unions, legal aid organizations included. 12-month implementation roadmap with weekly specifics.
+- **Exploration Queue**: Item #2 now complete. Item #1 (resistance-research feedback protocol) completed Session 845. Item #3 (mfg-farm supply chain) blocked until test print. No additional items added this session (queue now 1 complete, 1 pending, 1 blocked).
+
+**What's Next**:
+1. **Main project blocks unchanged**: resistance-research path decision, stockbot architecture decisions, mfg-farm test print still pending user action.
+2. **If blocks persist**: Exploration Queue item #3 becomes next work (mfg-farm post-test-print planning) — can begin research on supplier/scaling strategy independent of test print completion.
+3. **May 12 checkpoint**: 5 days away. All decision infrastructure ready.
+
+---
+
 ## Since Last Check-in (Session 845 — 2026-05-06) — PHASE 1 DISTRIBUTION INFRASTRUCTURE COMPLETE + EXPLORATION QUEUE REGENERATED
 
 ### STATUS: **Phase 1 infrastructure complete and ready for distribution launch**. resistance-research feedback integration protocol (3,100 words) documented and committed. Exploration Queue regenerated with 3 strategic items (1 completed, 2 pending). All main project blocks unchanged. No new blockers. Usage: Sonnet ~2.5%; all-models ~55% (reset in ~123h).
