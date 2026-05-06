@@ -32,17 +32,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Alpaca DTBP=0; waiting for May 6 market open reset
-**Date blocked**: 2026-05-05 14:46 UTC
-**Context**: `daytrading_buying_power=0` due to prior-day margin call from 52-session over-leveraged state (last_maintenance_margin=$127K exceeded $112K equity). Alpaca zeros DTBP until next trading day recalculation. Today ends clean: only AAPL open, $82K cash, maintenance_margin=$9K. DTBP should reset to ~$400K at May 6 13:30 UTC market open.
-
-Jetson old sessions issue **RESOLVED 2026-05-05**: 5 stale is_active rows cleared via Python in container, container restarted. `/api/health` returns `{"status":"ok","sessions":2}`, `/api/ready` returns 200. Both AAPL sessions (lgbm_ho + ridge_wf) running correctly.
-
-User decision: wait for tomorrow's reset (cannot reset paper account without creating a new one, which would require new API keys).
-
-**What I need**: Verify DTBP at May 6 13:30 UTC before market open. If still 0, investigate further.
-**Verify with**: `curl -s "https://paper-api.alpaca.markets/v2/account" -H "APCA-API-KEY-ID: PKM03F5PK1LPV8LSBIP0" -H "APCA-API-SECRET-KEY: W7vPJAE1Xe0Z3bhdCawiYhoyvgCnWHFjA4xShaxw" | python3 -c "import json,sys; a=json.load(sys.stdin); print('DTBP:', a['daytrading_buying_power'])"`
-**Resolution**:
 
 ---
 
@@ -79,6 +68,15 @@ User decision: wait for tomorrow's reset (cannot reset paper account without cre
 **Resolution**:
 
 ## Resolved Archive
+
+---
+
+### stockbot — Alpaca DTBP=0; waiting for May 6 market open reset
+**Date blocked**: 2026-05-05 14:46 UTC
+**Date resolved**: 2026-05-06 09:56 UTC (Session 819)
+**Context**: `daytrading_buying_power=0` due to prior-day margin call from 52-session over-leveraged state. Alpaca was expected to reset DTBP to ~$400K at May 6 market open.
+**Verification (Session 819)**: Pre-market verification at 09:56 UTC confirmed DTBP already reset to $414,598. Account fully healthy: equity $112,638, pattern_day_trader=true, trading_blocked=false. Both AAPL sessions (lgbm_ho + ridge_wf) running correctly on Jetson (trading_20260506.log active). Ready for May 6 13:30 UTC market open.
+**Resolution**: RESOLVED — DTBP reset confirmed at $414,598. Account ready for market open. Engine healthy and running.
 
 ---
 
