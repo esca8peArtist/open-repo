@@ -1,3 +1,28 @@
+## Since Last Check-in (Session 849 — 2026-05-06 21:30–23:00 UTC) — PHASE 2 DOMAIN RESEARCH: CORRUPTION & INSTITUTIONAL ACCOUNTABILITY
+
+### STATUS: **resistance-research Phase 2 domain research expanded**. Domain 20 (Corruption & Institutional Accountability) complete — 5,700-word production-ready domain covering federal ethics collapse, Congressional ethics failure, state corruption, international precedent (Singapore CPIB, South Korea, Germany), and comprehensive reform pathways. Exploration Queue items adjusted and refreshed. All main project blocks unchanged. No new blockers. Usage: Sonnet ~2.2%; all-models ~56% (reset in ~123h).
+
+**What Changed**:
+- **resistance-research Phase 2 Expansion**: Domain 20 complete (`domain-20-corruption-and-institutional-accountability.md`, commit 804e26f2, 5,700 words, 8 sections). Comprehensive analysis of US government accountability failures at all three levels (federal, state, local) plus evidence-based international comparisons and structural reform pathways. Key findings: (1) OGE director removed by Trump Feb 2025, compromising institutional independence; (2) federal official corruption convictions at 20-year low (~70-85/year vs. 150-180 in 2009-2016); (3) Senate ethics committee zero sanctions in 19 years (181 cases reviewed in 2025, zero sanctioned); (4) Singapore CPIB model shows centralized independence possible; (5) South Korea's prosecution system reform (effective Oct 2026) offers democratic-safe separation of investigation/prosecution; (6) Germany's Bundesrechnungshof offers independent audit without prosecution authority concentration. Recommendations: Create Federal Accountability Office (independent prosecution authority), strengthen OGE independence + add enforcement, bifurcate Congressional ethics (investigation vs. adjudication), state grant program for anti-corruption units, transparency-first approach. **Business value**: Closes structural gap in Phase 1 proposal; enables distribution to ethics watchdog organizations (POGO, Common Cause, state AGs); grounds reforms in international precedent.
+
+- **Exploration Queue Adjustment**: Regenerated queue items — noted that Journalist Security Playbook item (added as "deep dive needed") was actually COMPLETE from Session 844 at 9,750 words. Adjusted work plan accordingly. New executable items: (1) Domain 20 research (COMPLETED THIS SESSION), (2) Medicinal herbs strategy for seedwarden Phase 3 (pending).
+
+**Completes**: Phase 2 domain research pathway advancing (1 of 8 high-priority Phase 2 domains now complete; others 23, 27-29, 31, 33-34 completed in earlier sessions).
+
+**Project Status**:
+- **resistance-research**: Phase 1 infrastructure complete and launch-ready (awaiting user path decision A/A+37/B). Phase 2 domain research advancing (Domain 20 complete, others in progress).
+- **cybersecurity-hardening**: Phase 1/2 complete, all scenario playbooks complete, awaiting user distribution decisions.
+- **stockbot**: No change. May 12 Gate 1 checkpoint 6 days away.
+- **mfg-farm**: No change. Test print block unchanged.
+- **seedwarden**: No change. Phase 2 Track B production-ready, Phase 1 awaiting tag corrections.
+
+**What's Next**:
+1. **May 12 Gate 1 checkpoint**: stockbot decision tree ready (MAY_12_OUTCOME_ROADMAP.md prepared).
+2. **User approval/decision points unlock Phase 1 execution**: resistance-research (path decision), cybersecurity-hardening (Tier 1 launch approval).
+3. **Phase 2 domain research**: Continue on secondary domain candidates (15+ Phase 2 domains remain; Domain 20 completes high-priority batch).
+
+---
+
 ## Since Last Check-in (Session 848 — 2026-05-06 20:15–21:00 UTC) — EXPLORATION QUEUE REFRESH: PHASE 1 RISK MITIGATION + TIER 1 METRICS FRAMEWORKS
 
 ### STATUS: **Exploration Queue regenerated with 2 new high-priority items; both delivered production-ready**. Phase 1 launch risk mitigation (9,848 + 6,192 words, 2 deliverables) + Tier 1 engagement metrics framework (3,500 words + 45-org CSV) complete. All main project blocks unchanged. No new blockers. Usage: Sonnet ~2.3%; all-models ~55%.
