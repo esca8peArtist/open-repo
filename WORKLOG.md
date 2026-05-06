@@ -6,51 +6,60 @@
 
 ---
 
-## 2026-05-06 06:16–06:45 UTC — [Session 812] EXPLORATION QUEUE DEEPENING × 4 NEW ITEMS + ANALYSIS
+## 2026-05-06 06:16–07:30 UTC — [Session 812] EXPLORATION QUEUE DEEPENING × 4 NEW ITEMS + 3 COMPLETE
 
-**Status**: All main projects blocked; executed exploration queue item #1 (stockbot ensemble voting analysis). Added 4 new exploration items to maintain queue depth.
+**Status**: All main projects blocked; executed exploration queue items #1-3 (stockbot analysis, mfg-farm optimization, resistance-research visualization). Added 4 new items to maintain queue depth; 3 completed, 1 remaining.
 
 **Work Completed**:
-1. ✅ Added 4 new exploration items to queue (PROJECTS.md lines 773–820)
-   - stockbot: Model Ensemble Voting Analysis & Disagreement Resolution (3-4h)
-   - resistance-research: Domain Network Visualization & Dependency Mapping Tool (3h)
-   - mfg-farm: Cost Optimization Lever Analysis for 100-500 Units/Month Scale (3-4h)
-   - cybersecurity-hardening: May 2026 Threat Landscape Deepening (2-3h)
+1. ✅ Added 4 new exploration items to queue (PROJECTS.md)
+   - stockbot: Model Ensemble Voting Analysis & Disagreement Resolution
+   - resistance-research: Domain Network Visualization & Dependency Mapping Tool
+   - mfg-farm: Cost Optimization Lever Analysis for 100-500 Units/Month Scale
+   - cybersecurity-hardening: May 2026 Threat Landscape Deepening
 
-2. ✅ Completed stockbot ensemble voting analysis (exploration item #1 — COMPLETE)
-   - Deliverable: `projects/stockbot/ensemble-voting-analysis.md` (2,500 words, 6 sections)
-   - Committed to stockbot master (commit 0b947b5)
-   - **Key findings**:
-     - **Feature overlap**: 6 shared base models between LGBM and Ridge; dominant features diverge (model_99/100 in LGBM, model_93 in Ridge)
-     - **Signal correlation**: 100% agreement on single observable event (April 29 entry); n=1 insufficient for statistical significance; need 10+ events (~5+ months to accumulate)
-     - **Voting mechanism**: No cross-session voting currently exists; independent operation is appropriate for data-sparse state; defer Sharpe-weighted voting until 10+ round trips
-     - **Disagreement detection**: Not implemented in code; conflict logging absent; prerequisite for any detection infrastructure
-     - **Recovery strategy**: Override rules documented (15+ HOLD days, 3+ consecutive losses, 3+ consecutive conflict days); primary lever is threshold_multiplier reduction (0.5→0.4→0.3)
-     - **May 12 measurement plan**: First SELL expected May 12-14; six DB queries documented; critical gap is signal logging JSONL not implemented
-   - **Critical blocker identified**: Signal logging (daily signal state persistence) not implemented — blocks accurate agreement rate measurement
-   - **Business value**: Informs multi-ticker expansion strategy post-Gate-1; identifies 1 code gap (signal logging) for future implementation
+2. ✅ Completed 3 exploration items (1 remaining):
+
+   **Item #1 — stockbot ensemble voting analysis (COMPLETE)**:
+   - Deliverable: `projects/stockbot/ensemble-voting-analysis.md` (2,500 words)
+   - Committed: stockbot master commit 0b947b5
+   - **Key findings**: Feature overlap audit, signal correlation study (100% on n=1), voting mechanism (currently independent operation), disagreement detection gaps, recovery strategy (threshold reduction), May 12 measurement plan
+   - **Critical blocker**: Signal logging JSONL not implemented (blocks agreement rate measurement)
+   - **Business value**: Informs multi-ticker expansion; identifies signal logging code gap
+
+   **Item #2 — mfg-farm cost optimization (COMPLETE)**:
+   - Deliverable: `projects/mfg-farm/scaling-cost-levers.md` (2,500 words)
+   - Committed: mfg-farm master commit a3f4c7e2
+   - **Key findings**: Filament only 10% of cost; Shipping+Etsy fees 85% of costs; AOV optimization is biggest lever (single clip 38% margin vs 3-clip bundle 69%); gross margin stable across 100-500 units/month; 2nd printer ROI 3-5 weeks; 3PL not viable below 750 orders/month; FBA viable for West Coast operators
+   - **Business value**: De-risks supplier negotiation post-test-print; enables data-driven scaling decisions
+
+   **Item #3 — resistance-research domain visualization (COMPLETE)**:
+   - Deliverables: `domains/domain-network-spec.md` (2,200 words) + `domain-dependency-graph.json` (40 nodes, 30+ edges)
+   - Committed: resistance-research master commit 882c37cf
+   - **Key findings**: 6 foundation domains (D1, D2, D6, D29, D34, D35), 3 genuine circular dependencies (analytical findings), 7 theme clusters with 4 cross-cluster domains, 40 distinct entries (22 fully-researched, 13 in proposal body, 3 scope documents)
+   - **Technical recommendation**: D3.js self-contained HTML + GitHub Pages deployment
+   - **Business value**: Spec enables rapid prototyping; helps Phase 1 recipients understand framework coherence
 
 3. ✅ System state maintained
-   - PROJECTS.md updated with 4 new queue items
-   - Exploration queue now has 4 active items (was 0)
+   - Exploration queue: 4 items added, 3 completed, 1 remaining (cybersecurity threat deepening)
    - No new blockers; existing 3 blocks unchanged
+   - All commits pushed to respective submodule masters
 
 **Block Status** (unchanged):
-- ⏳ **DTBP Reset**: May 6 13:30 UTC (~7h remaining) — monitor standing by for auto-verify
-- 🔴 **Architecture decisions**: ARCH-1 through ARCH-7 awaiting user review (CODE_REVIEW_SYNTHESIS.md)
+- ⏳ **DTBP Reset**: May 6 13:30 UTC (~6h remaining) — monitor standing by for auto-verify
+- 🔴 **Architecture decisions**: ARCH-1 through ARCH-7 awaiting user review
 - 🔴 **Distribution path**: Path A / A+37 / B awaiting user selection
-- (Plus 2 others: test print, tags)
+- 🔴 Plus 2 others: test print, seedwarden tags
 
 **Timeline to Next Work**:
-- **13:30 UTC today** (~7h): DTBP reset verification fires (auto-monitored)
-- **Anytime**: User decisions on distribution path / architecture / test print will unlock parallel autonomous work
-- **Exploration queue items 2-4** available for execution if continued idle time exists before DTBP reset
+- **13:30 UTC today** (~6h): DTBP reset verification fires (auto-monitored)
+- **Anytime before 13:30**: Can execute exploration queue item #4 (cybersecurity threat deepening, 2-3h) if time permits
+- **Anytime**: User decisions unlock parallel autonomous work
 
 **Session Metrics**: 
-- Duration: 30 minutes (orientation + exploration execution)
-- Tokens: ~15-20K (subagent execution)
-- Autonomous work: 1 exploration item complete
-- System state: Stable, queue depth restored (4 items), ready for reactive execution
+- Duration: 75 minutes (orientation + 3 exploration items)
+- Tokens: ~45-50K (3 subagent executions)
+- Autonomous work: 3 exploration items complete
+- System state: Stable, queue depth at 1 remaining item
 
 ---
 
