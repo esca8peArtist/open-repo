@@ -1,3 +1,58 @@
+## Since Last Check-in (Session 814 — 2026-05-06 08:00–08:25 UTC) — EXPLORATION QUEUE EXECUTION COMPLETE (3 of 3)
+
+### STATUS: Exploration Queue Fully Executed; 3 Research Items Complete; All Non-Blocked Work Cleared (25 min active work, 1.5h wall-clock with agent parallelization)
+
+**Autonomous Work Completed**:
+
+1. ✅ **mfg-farm: Post-Test-Print Production Workflow v2.0**
+   - **File**: `projects/mfg-farm/production-workflow-v1.md` (updated, ~3,200 words)
+   - **Key Corrections**: Packaging COGS $0.15→$0.57-0.63/unit (4x correction to match MrBoxOnline current pricing), printer model X1 Carbon→Bambu P1S, per-unit labor timeline added (40 min per 12-clip batch, 4.2 min/unit at 100 units/week), rail-specific post-processing (+45s/unit), Week 1-8 schedule, six-month revenue reconciliation ($12,565 cumulative net)
+   - **Business Value**: Post-test-print production fully operationalized with correct costs and timelines. User executes immediately after test-print validation without planning delays.
+   - **Status**: Production-ready, committed to master (a73c046e)
+
+2. ✅ **cybersecurity-hardening: May 2026 Advanced Threat Landscape**
+   - **File**: `projects/cybersecurity-hardening/may-2026-advanced-threats.md` (new, ~3,500 words, 38 sources)
+   - **Key Findings**: 
+     - Synthetic identity + voice cloning: ProKYC $629/yr tool packages complete attack chain; human detection accuracy <30%; defensive shift to procedural (family code words, two-channel wire transfer verification)
+     - Supply chain sophistication: Shai-Hulud/LogoFAIL/BootKitty/Bitwarden pattern = attacking verification layer itself; UEFI firmware (95% x86 devices) now working attack surface; SBOM + OIDC + firmware patch management required
+     - Election infrastructure deficit: CISA workforce -1K (-29%), EI-ISAC shutdown (Feb 2026), NSA Cyber Command still dormant (Apr 30), states operating on <$1M avg federal funding, Russia 2026 influence budget +54%
+     - Palantir May expansion: Maven program-of-record (Sept 2026), USDA $300M+$75M bossware, IRS–ICE cross-agency data sharing at D.C. Circuit
+     - Policy response: Government Surveillance Reform Act (S.4082, June 12 deadline) — data broker loophole provision directly addresses Palantir pipeline
+   - **Business Value**: Tier 1 threat model current through May 2026; template updates identified (synthetic identity defense, UEFI/firmware context, IRS relationship-mapping). Ready for Phase 1 distribution refresh.
+   - **Status**: Production-ready, committed to master (a73c046e)
+
+3. ✅ **resistance-research: Post-Phase-1 Institutional Adaptation Patterns & Feedback Integration**
+   - **Files**: `feedback-integration-roadmap.md` v3.0 (~3,471 words, supersedes v2.0), plus existing `post-phase-1-institutional-adaptation-roadmap.md` (5,584 words) and `adoption-feedback-template.md` (4 templates)
+   - **Key Findings**:
+     - Sector-specific modification risk: AGs extract constitutional arguments (LOW risk), think tanks decompose to single-issue (MODERATE risk), law schools adapt via 3 tracks (LOW-CONSTRUCTIVE), journalists internalize without attribution (VERY LOW)
+     - High-risk domains for modification: Domain 29 (load-bearing Weissmann "contested legal status" qualifier), Domain 37 (CISA figures + derivation methodology), Domain 1 (judicial independence pair reinforcement)
+     - Stable domains: Domain 17 (independently verifiable), Domain 9 (explicitly designed for state modification), Domain 27 (primarily descriptive)
+     - Two-signal threshold governs base domain updates (prevents single-contact-driven fragmentation)
+     - Adoption velocity: AGs fastest (first signal Days 3-14, Level 3 integration 2-4mo), think tanks mid (2-6 weeks Level 2), law reviews slowest (12-24mo Level 1)
+     - Phase 2 decision gates at Months 3/6/9/12 with sector-specific pass/fail criteria
+     - Realistic Phase 1 benchmarks: 5+ Tier 1 contacts producing domain-citing output within 90d (minimum viable), 3+ AG offices citing framework in active litigation within 6mo (target), 5+ law school programs incorporating within 12mo (stretch)
+   - **Business Value**: Post-Phase-1-launch feedback loop fully operationalized with decision trees, measurement criteria, sector-specific guidance. Prevents "feedback but no action plan" failure mode. Ready for immediate Phase 1 launch deployment.
+   - **Status**: Production-ready, committed to master (a73c046e)
+
+**Exploration Queue Status**: ✅ **ALL ACTIVE ITEMS COMPLETE**. Queue depth = 0. No new items needed at this time (all main projects blocked on external dependencies or user decisions, not research gaps).
+
+**Block Status** (unchanged):
+- ⏳ **DTBP Reset**: May 6 13:30 UTC (~5h 5m remaining as of 08:25 UTC) — auto-verify monitor active from Session 789
+- 🔴 **Architecture decisions**: ARCH-1/7 awaiting user review (CODE_REVIEW_SYNTHESIS.md)
+- 🔴 **Distribution path**: A / A+37 / B awaiting user selection
+- 🔴 **Test print**: ModRun cable management designs ready for physical validation
+- 🔴 **seedwarden tags**: Track A Etsy upload prerequisite
+- 🔴 **Tier 1 approval**: cybersecurity distribution gate
+
+**Session Metrics**: 25 min active orchestration work | 3 parallel subagents (1.5h wall-clock) | 3 exploration items complete | ~10,000 words delivered | System stable
+
+**Next Actions**:
+1. If DTBP reset verifies successfully at 13:30 UTC → market opens for stockbot live trading Day 2+ (no new work)
+2. Awaiting user decisions to spawn next autonomous work waves (1 decision = 1-2 agents unlocked)
+3. All non-blocked work has been executed; system is at maximum readiness for user-triggered actions
+
+---
+
 ## Since Last Check-in (Session 813 — 2026-05-06 06:43–07:50 UTC) — EXPLORATION QUEUE ITEMS #1-2 COMPLETE
 
 ### STATUS: Exploration Queue Execution; 2 New Research Items Complete (≈65 min active work)
