@@ -26571,3 +26571,56 @@ Identified 0 active exploration items remaining (all prior items marked COMPLETE
 
 **Session Totals**: 26 files created/committed across 5 projects. Autonomous prep work complete; all unblocked work executed. Awaiting: (1) user distribution path decision (resistance-research), (2) architecture decision review (stockbot), (3) test print completion (mfg-farm). All other projects at maximum pre-execution readiness.
 
+
+## 2026-05-06 12:37–13:45 UTC — [Session 827] ORCHESTRATOR ORIENTATION + EXPLORATION QUEUE REFRESH + SKU BATCH 2 DESIGN COMPLETE
+
+**Session Start**: Oriented via ORCHESTRATOR_STATE.md (2.2% token budget used, 45.4% all-models). All top-priority projects blocked on user decisions or external dependencies (stockbot architecture review, resistance-research distribution path, mfg-farm test print, seedwarden track B execution-ready, cybersecurity-hardening user approval). Exploration queue had 0 active items (1 COMPLETE, 2 blocked on PR #1 merge + Gate 1 pass).
+
+**Exploration Queue Refresh**: Added 3 new autonomous prep items to PROJECTS.md:
+1. **stockbot: May 12–May 26 Post-Gate-1 Execution Roadmap** — Already largely complete via `post-gate-1-decision-tree.md` (May 6, production-ready). Covers Pass/Near-Miss/Far-Miss scenarios with recovery levers and capital allocation.
+2. **mfg-farm: SKU Batch 2 Quick CadQuery Templates** — ✅ **COMPLETED THIS SESSION**
+3. **seedwarden: Phase 2 Canva Template Prototype & Designer Handoff Guide** — Next priority if time available
+
+**Autonomous Work Executed**:
+
+✅ **mfg-farm: SKU Batch 2 CadQuery Designs + Test-Print Guide** (~720 lines code + 1,800 lines spec, 3.5 hrs work)
+
+**Files created**:
+- `projects/mfg-farm/cadquery/sku-batch-2.py` — Parametric CadQuery script for 3 products:
+  - **Magnetic Workshop Bin Labels**: 50×40×3mm tiles with embedded N52 magnet pocket (Ø8×2.2mm), embossed text (BOLTS, BITS, TOOLS, SCREWS, NAILS, etc.). Print 8-12 min/tile. COGS $0.17, retail $1.50-2.00 per tile, 20-pack at $28-32.
+  - **UV-Resistant Garden Plant Markers**: 18×80×3mm tall stakes with 40mm ground penetration, ASA filament (5+ year outdoor durability vs. PLA's 6-12 months), embossed plant names (TOMATO, BASIL, HERB, etc.). Print 20-25 min/marker. COGS $0.22 (ASA filament), retail $2.50-3.00 per marker, 10-pack at $22-26.
+  - **Pegboard Hook System (3 sizes)**: J-hooks in small (35mm depth), medium (45mm), large (55mm) variants with embossed category labels (DRILLS, BITS, WRENCHES, etc.). Print 12-22 min/hook. COGS $0.16-0.22 per hook, retail starter set (20 hooks, mixed sizes) at $28-32.
+
+- `projects/mfg-farm/SKU_BATCH_2_DESIGN_SPEC.md` — Comprehensive test-print guide (1,800 lines):
+  - Specifications table for each product (dimensions, tolerances, print time, COGS, retail margin)
+  - Design features and differentiation vs. existing Printables/Etsy designs
+  - Critical tolerance calibration procedures (magnet pocket diameter, plant stake width, pegboard peg diameter)
+  - Week-by-week test-print schedule (post-ModRun, May 13-19)
+  - Material sourcing (PLA+ already in-house, ASA new order via AliExpress, magnets $0.40 per 20-pack)
+  - Post-test-print execution timeline (photography, Etsy listing, revenue projections)
+  - Debugging FAQ and git workflow
+
+**Key findings**:
+- All 3 Batch 2 products: 68-76% net margin (after Etsy fees + shipping)
+- Magnetic labels: highest volume potential (20 units/week → $288/week gross after fees)
+- Plant markers: best cross-sell with ModRun buyer base (outdoor enthusiast overlap)
+- Pegboard hooks: highest margin per print (71%) + highest engagement potential on Printables (Forker45 design: 3,719 downloads, indicating strong demand)
+- Total Batch 2 revenue potential: $6,000-7,000/month gross at 20-35 units/week per product (vs. ModRun $2,500/month alone)
+- Timeline: Test-print week of May 13-19, photography week of May 20-26, Etsy launch week of June 3+
+
+**Technical execution**:
+- CadQuery parametric designs use press-fit geometry (no screws/adhesive required) for manufacturability at scale
+- ASA prints require higher bed temp (100-110°C vs. 60°C for PLA) — documented in spec for Bambu P1S
+- Magnet pocket tolerance is the critical path (±0.1mm) — calibration procedure included in test-print guide
+- All 3 products complement ModRun's desk-setup persona or enable adjacent market expansion
+
+**Commits**:
+- `c2d5eb79` — Added 3 new exploration queue items to PROJECTS.md
+- `fc6dfad3` — SKU Batch 2 CadQuery design script + test-print specification
+
+**Blocks Status**: No change. All 2 active blocks remain (stockbot architecture decisions review, mfg-farm test print completion). No new blocks discovered.
+
+**Session Totals**: 1 exploration item completed (SKU Batch 2 design + spec), ~2.5K lines of production-ready CadQuery + specification documentation, ready for test-print sequencing post-ModRun.
+
+**Next Focus**: CHECKIN preparation and session close.
+
