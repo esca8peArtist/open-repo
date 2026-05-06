@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-05T22:31:36Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-06T00:50:24Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 1.8% (164,668 tokens) | All-models 28.7% | Reset in 146h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 30.3% | Reset in 143h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -88,42 +88,42 @@ User decision: wait for tomorrow's reset (cannot reset paper account without cre
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- **Task**: Establish quantified baseline metrics and attribution methodology before Phase 1 launch
-- **Deliverables**: Two complementary documents:
-  - `projects/resistance-research/phase-1-baseline-metrics.md` — 5 fully quantified baselines with measurement protocols
-  - `projects/resistance-research/attribution-measurement-plan.md` — Four-test attribution framework with measurement windows
-- **Key findings**:
-  - **Vocabulary baseline (Metric 1)**: "35-domain framework" returns zero Google Scholar/Westlaw/SSRN results (May 5 baseline); clean zero-point for post-distribution attribution
-  - **Institutional contact baseline (Metric 2)**: 103 Tier 1-2 targets confirmed at zero framework awareness across 23 AG offices, 22 law schools, 11 think tanks
-  - **Litigation baseline (Metric 3)**: ~275-300 active federal cases, normal churn ~8-12/week; 4 high-attribution-potential domains (29, 37, 28, 4) identified
-  - **Citation pipeline baseline (Metric 4)**: Tier A-C publishers at zero framework citations; monitoring infrastructure (6 free tools) documented
-  - **Contingency failure metrics (Metric 5)**: Hard failure triggers defined (structural vs. content diagnostics)
-  - **Attribution methodology**: Four tests (vocabulary marker, structural convergence, timing-and-contact, counterfactual baseline) with decision protocol, sector-specific interpretation, Rogers S-curve positioning
-  - **Measurement timeline**: Five fixed windows (Day 0-30, Month 2-3, Month 4-6, Month 7-12) with success metrics per sector
-- **Business value**: Enables rigorous pre-post measurement on Day 1; prevents "did the framework cause X?" guessing
-- **Critical near-term action**: Activate 6 monitoring tools on Phase 1 launch day (Metric 4.2)
-- **Status**: Production-ready, ready for Phase 1 distribution
+---
 
-✅ **Parallel Agent 3: mfg-farm 100+ Units/Week Manufacturing Operations Design** (COMPLETE)
-- **Task**: Design manufacturing operation at 100+ units/week scale
-- **Deliverables**: Two complementary documents:
-  - `projects/mfg-farm/100-unit-operations-blueprint.md` (~4,800 words) — Architecture, throughput, automation, 3PL, labor
-  - `projects/mfg-farm/scaling-transition-roadmap.md` (~3,200 words) — Month-by-month milestones, capital requirements, decision gates
-- **Key findings**:
-  - **Printer selection**: Bambu P1S is unambiguous production choice (3x fewer nozzle clogs vs Prusa, 40% faster throughput, farm-native software)
-  - **Throughput reality**: Single P1S can produce 1,260 clips/week at capacity (far beyond 100/week); binding constraint is demand, not production; two printers handles 100+ comfortably
-  - **Automation lever**: AutoFarm3D Door Opener ($129/printer, $9.99-40/month software) enables fully unattended overnight production — difference between morning harvest intervention and lights-out operation
-  - **3PL economics**: 3PL viable at 400+ orders/month; self-fulfillment with Pirate Ship + thermal printer costs $4.90/order at 100 units/week; do not outsource until 400+ orders
-  - **Electrical planning**: Max 3 printers on 15A circuit, 4-5 on dedicated 20A; 5 printers require two 20A circuits
-  - **Decision gate**: Add printer when existing fleet runs 80%+ utilization for 2 consecutive weeks AND unfulfilled orders occurred
-  - **Critical insight**: Scaling sequence bottleneck is Etsy organic ranking, not hardware; 1 printer with top-3 search placement > 5 printers with poor ranking
-- **Business value**: Enables informed post-test-print scaling decisions; identifies capital requirements ($5,012 to 5-printer capacity)
-- **Status**: Production-ready, ready for post-test-print execution
-
-**Status Summary**:
-- Three exploration queue items deepened and production-ready
-- All provide critical decision support for upcoming checkpoints (May 6 DTBP reset, May 12 Gate 1, post-test-print scaling)
-- Next meaningful work: Waiting for (a) May 6 DTBP reset verification (time-gated), (b) user distribution path decision (resistance-research), (c) May 12 Gate 1 outcome (time-gated), (d) user test print execution (mfg-farm)
-- Exploration queue now fully satisfied; no new items to queue
 
 ---
+
+## 2026-05-06 00:37 UTC — [Session 790] Orientation & Confirmation, Standing By for DTBP Reset
+
+**Task**: Autonomous orchestrator orientation; verify all states from Session 789 remain valid; confirm readiness for DTBP reset.
+
+**Work accomplished**:
+
+1. **✅ Rapid Orientation**
+   - ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md reviewed
+   - Session 789 status confirmed: all projects blocked, Monitor in place for DTBP reset
+   - No new inbox items; usage budget nominal
+   - All states frozen (no changes needed)
+
+2. **✅ Project State Verification**
+   - **resistance-research**: Phase 1 execution-ready, blocked on user distribution path decision (A/A+37/B)
+   - **stockbot**: 2-session Jetson engine healthy, blocked on DTBP reset (13h remaining) + architecture review
+   - **seedwarden**: Track B ready, blocked on 3 tag corrections + Etsy upload
+   - **mfg-farm**: All prep complete, blocked on test print execution
+   - **All others**: Complete or paused, awaiting user execution
+
+3. **Exploration Queue Status**
+   - Confirmed fully satisfied per Session 779 analysis
+   - No new items needed; Items 15, 16, 52 available if capacity permits
+   - All primary work blocked on external dependencies
+
+**Strategic Position**:
+- All primary projects at maximum execution readiness
+- Standing by for: May 6 13:30 UTC DTBP reset (Monitor will verify), user decisions on 4 items
+- Token budget conserved for reactive execution upon user input or DTBP resolution
+- No autonomous work available until time-gated events fire or user decisions arrive
+
+**Next**: DTBP Monitor fires at market open (~13h); await user decisions to unlock Phase 1, post-Gate-1 execution, or post-print workflows
+
+**Session duration**: ~15 minutes
+**Tokens used**: ~2K
