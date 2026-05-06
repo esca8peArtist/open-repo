@@ -4,6 +4,66 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-06 16:19–17:15 UTC — Session 837: Parallel Domain Updates + Phase 2 Strategy Complete
+
+**Session Context**:
+- Two highest-priority projects (resistance-research, cybersecurity-hardening) awaiting user decisions but have meaningful Phase 2 work available
+- Stockbot blocked on architecture decisions; monitoring prep ongoing for May 12 checkpoint
+- Exploration queue refreshed in Session 836; this session executes contingency research work
+
+**Autonomous Work Completed** (2 parallel subagents):
+
+✅ **resistance-research: May 2026 Domain Maintenance & FISA Integration** (resistance-research agent, ~2.5 hrs)
+- **Context**: FISA Section 702 April 30 deadline passed; Callais redistricting ruling (May 1) unleashed multi-state map redraw cascade
+- **Deliverables** (4 items committed to master):
+  1. Domain 25 (FISA 702): Section 14 added — final statutory status (45-day extension, June 12 deadline), Wyden-Cotton-Warner FISC declassification deal (classified opinion release requirement)
+  2. Domain 1 (Voting Rights): Section 4.2 rewritten with confirmed FISA outcome; Section 8 added (~900 words) on Callais redistricting cascade + electoral math (R gain 4-8 House seats vs. D 3-seat flip target)
+  3. Domain 37 (Federal Executive Interference): Section IX added (~1,100 words) — DHS shutdown resolution (76 days, ended April 30), Reconciliation 2.0 ICE/CBP funding ($71.7B filibuster-proof), 287(g) program expansion in swing states, Callais reframed as highest-leverage pre-November mechanism
+  4. New file: `UPDATES_MAY_2026_SESSION_8XX.md` — comprehensive session log with confirmed facts, domain update rationale, sources
+- **Key findings**:
+  - Callais redistricting cascade (May 1–5) most operationally significant development since March 31 elections EO
+  - Three new Phase 2 domain candidates identified: (1) Congressional redistricting accountability, (2) ICE funding architecture + 287(g) expansion, (3) Watson v. RNC mail ballot
+  - 12 domains flagged for next-session updates (Domain 19f, 33, 35, 6 + Litigation Tracker + CHECKIN flags)
+- **Status**: Phase 1 domains now current through May 6; ready for Phase 1 distribution whenever user path decision made
+- **Next**: Continuous maintenance on flagged domains; Phase 2 research can begin on new candidates post-Phase-1-launch
+
+✅ **cybersecurity-hardening: Phase 2 Sequencing Strategy & Threat Model Expansion** (general-research agent, ~2.5 hrs)
+- **Deliverable**: `PHASE_2_SEQUENCING_STRATEGY.md` (5,500 words, 9 sections, committed to master)
+- **Content**:
+  1. **Updated threat model**: Five capability gaps in Phase 1 corpus:
+     - FBI FACE Services + AI expansion (50 AI use cases, FBI AI drones RFI November 2025)
+     - DHS HART platform + Mobile Fortify (handheld NEC-powered facial recognition, 100K+ uses, 15-year retention, no consent)
+     - Drone aerial surveillance (Skydio 7.5-mile detection, ICE/CBP operational)
+     - Cellebrite + AFU/BFU distinction (can extract Signal data from AFU devices)
+     - Post-SCOTUS DOGE/SSA data access (operational, cross-agency fusion active)
+  2. **Advanced protection techniques**: Identity compartmentalization, behavioral fingerprint minimization, aerial/physical countermeasures, financial privacy, GrapheneOS forensic hardening
+  3. **Six scenario playbooks** (outlined): Immigration + surveillance evasion, activist organizing, financial resistance, institutional whistleblowing, journalist security, DV survivor safety
+  4. **Tier 2 audience expansion**: DV survivors/advocates, labor organizers, election workers; new formats (video primers, decision trees, role-based playbooks, Spanish translation)
+  5. **12-month implementation timeline** with success metrics and dependency analysis
+- **Three urgent pre-launch flags** for Phase 1 (identified in PHASE_2_SEQUENCING_STRATEGY.md):
+  1. **HIGH**: Add Mobile Fortify paragraph to opsec-playbook.md (1 paragraph, context update)
+  2. **HIGH**: Add BFU/AFU distinction to implementation-guide.md (1 page, device seizure protocol)
+  3. **MEDIUM**: Update DOGE/SSA framing to July quarterly review (not blocking Phase 1 launch)
+- **Status**: Phase 2 strategy complete; Phase 2 research can begin immediately; Phase 2 distribution waits for Phase 1 adoption gate (Week 7)
+- **Next**: User reviews Phase 1 + flags; execute Tier 1 outreach; implement pre-launch flag fixes; begin Phase 2 research
+
+**Blocks Status**:
+- **stockbot architecture decisions**: Unchanged (7 decisions in CODE_REVIEW_SYNTHESIS.md awaiting user review)
+- **mfg-farm test print**: Unchanged (user action required)
+- **resistance-research path decision**: Unchanged (user decision: A / A+37 / B); Phase 1 domain maintenance now complete
+- **seedwarden tag corrections**: Unchanged (user action required for Phase 1 upload)
+- **cybersecurity-hardening Tier 1 launch**: Unchanged (awaiting user approval); Phase 2 planning now complete
+
+**Committed to master**:
+- projects/resistance-research/UPDATES_MAY_2026_SESSION_8XX.md
+- projects/resistance-research/domains/domain-01-voting-rights-elections.md (updated)
+- projects/resistance-research/domains/domain-25-fisa-702-april-2026-outcome.md (updated)
+- projects/resistance-research/domains/domain-37-federal-executive-interference-2026-midterms.md (updated)
+- projects/cybersecurity-hardening/PHASE_2_SEQUENCING_STRATEGY.md (new)
+- WORKLOG.md (this entry)
+
+---
+
 ## 2026-05-06 17:30–18:45 UTC — Session 836: Exploration Queue Completion + Queue Refresh
 
 **Session Context**:

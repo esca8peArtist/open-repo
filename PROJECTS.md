@@ -68,7 +68,13 @@
 **Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 662 (2026-04-30 03:45 UTC): Phase 1 Execution Readiness Audit COMPLETE — APPROVED FOR LAUNCH**. Framework 100% ready for Phase 1 execution.
+**Current focus**: **Session 837 (2026-05-06): May 2026 Domain Maintenance COMPLETE; Phase 1 Domains Current + Ready for Distribution**. Three domains updated with FISA 702 final outcome and Callais redistricting cascade. Framework 100% ready for Phase 1 execution.
+- **May 2026 Domain Maintenance** (Session 837): FISA 702 April 30 outcome integrated, Callais redistricting cascade mapped, three new Phase 2 domain candidates identified. Committed:
+  - Domain 25 (FISA 702): Section 14 added with final statutory status (45-day extension, June 12 deadline)
+  - Domain 1 (Voting Rights): Section 4.2 confirmed; Section 8 added on Callais cascade + 2026 electoral math
+  - Domain 37 (Executive Interference): Section IX added with DHS shutdown resolution and Reconciliation 2.0 ICE/CBP funding dynamics
+  - New file: `UPDATES_MAY_2026_SESSION_8XX.md` (comprehensive session log with sources)
+  - 12 domains flagged for next-session updates; 3 new Phase 2 candidates identified
 - **Phase 1 Execution Readiness Audit** (Session 662): Comprehensive audit completed and committed to `PHASE_1_EXECUTION_READINESS.md`:
   - **Domain inventory**: 22 fully researched production-ready domains (all current through April 28-29); 3 Phase 2 candidates correctly classified; 3 supporting documents
   - **Content currency**: All domains verified current; Domain 1 Section 4.2 FISA framing flagged for 5-minute correction (April 29 House vote overtook prior description)
@@ -266,20 +272,24 @@
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Session 499 (2026-04-27 evening): **TIER 2 MESSAGING TEMPLATES COMPLETE**. Agent-created:
-- **TIER2_MESSAGING_TEMPLATES.md** (4 customized sector templates + organization mapping):
-  - **Template 2A-v2 — Digital Rights Organizations** (12 orgs): Policy/litigation framing, sourcing for citation scrutiny, routing request CTA
-  - **Template 2B-v2 — Academic Programs** (9 orgs): Methodological defensibility, documented attack surface, peer review opportunity
-  - **Template 2C-v2 — Researcher Communities** (5 orgs): Researcher-first distribution, vulnerability admission for trust, CFP conversion guidance
-  - **Template 2D-v2 — Journalists** (7 orgs): Source protection gap framing, training vs. reporting CTA split, per-org channel guidance
-  - **Strategic principle**: Mission-first framing produces referrals and integration; generic descriptions produce acknowledgment only
-  - **Outcome**: Tier 2 ready for launch once Tier 1 approval obtained
-- **TIER2_DISTRIBUTION_PREP.md** (Session 497): 33 organizations (12 digital rights + 9 academic cybersecurity + 5 researcher communities + 7 journalist organizations), email templates, 5-step execution plan, FAQ, tracking templates
-- **TIER3_DISTRIBUTION_PREP.md** (Session 497): 30 organizations (12 policy + 8 labor + 10 academic law/policy), email templates, 16-week timeline, long-horizon success metrics
-- Key findings: Georgetown CPT highest-priority Tier 3 contact (American Dragnet report alignment); Access Now security helpline highest-leverage Tier 2 (direct harm reduction for undocumented); AFL-CIO Tech Institute new ED is outreach opportunity
-- All documents follow consistent structure; committed to master
+**Current focus**: **Session 837 (2026-05-06): Phase 2 Sequencing Strategy COMPLETE**. Updated threat model identifies 5 capability gaps; advanced protection playbooks designed; 12-month Phase 2 roadmap complete. Three urgent pre-launch flags identified for Phase 1.
+- **PHASE_2_SEQUENCING_STRATEGY.md** (Session 837, 5,500 words, 9 sections):
+  - **Updated threat model**: FBI FACE Services + AI expansion, DHS Mobile Fortify (handheld facial recognition), drone aerial surveillance, Cellebrite AFU access, post-SCOTUS DOGE/SSA data fusion
+  - **Advanced protection techniques**: Identity compartmentalization, behavioral fingerprint minimization, aerial/physical countermeasures, financial privacy, GrapheneOS forensic hardening extensions
+  - **Six scenario playbooks** (outlined, ready for development): Immigration + surveillance evasion, activist organizing, financial resistance, institutional whistleblowing, journalist security, DV survivor safety
+  - **Tier 2 audience expansion**: DV survivors/advocates (10M nationally via NNEDV), labor organizers (AFL-CIO/SEIU/UFW), election workers; new formats (videos, decision trees, role-based playbooks, Spanish translation)
+  - **12-month implementation timeline** with success metrics, dependency analysis, quarterly review gates
+  - **Three urgent pre-launch flags** (Phase 1 fixes before launch):
+    1. **HIGH**: Add Mobile Fortify paragraph to opsec-playbook.md (1 paragraph, handfield biometric identification context)
+    2. **HIGH**: Add BFU/AFU distinction to implementation-guide.md (1 page, device seizure + Cellebrite protocol)
+    3. **MEDIUM**: Update DOGE/SSA framing to July quarterly review (not blocking Phase 1)
+- **Key finding**: Phase 2 scope exceeds Phase 1 by 2-3x in breadth (new scenarios, audiences, techniques); 12-week Tier 2 launch prerequisite is Phase 1 adoption confirmation (Week 7 gate)
+- Session 499 (2026-04-27 evening): **TIER 2 MESSAGING TEMPLATES COMPLETE**. Agent-created:
+  - **TIER2_MESSAGING_TEMPLATES.md** (4 customized sector templates + organization mapping)
+  - **TIER2_DISTRIBUTION_PREP.md** (33 organizations, email templates, execution plan)
+  - **TIER3_DISTRIBUTION_PREP.md** (30 organizations, 16-week timeline)
 
-**Next**: User reviews and approves Tier 1 templates → execute Tier 1 outreach → Tier 2 launch ~4 weeks after Tier 1 completion (using TIER2_MESSAGING_TEMPLATES.md) → Tier 3 launch ~12 weeks after.
+**Next**: (1) User reviews Phase 1 + implements two urgent flag fixes; (2) User approves Tier 1 templates → execute Tier 1 outreach; (3) Phase 2 research begins immediately; (4) Tier 2 launch ~4 weeks after Tier 1 completion; (5) Tier 3 launch ~12 weeks after.
 **Blocked on**: —
 **Notes**: All three distribution tiers production-ready with fully customized templates. Full trilogy (Gist + three distribution-prep documents + Tier 2 messaging templates + FAQ) complete and accessible. User can begin Tier 1 outreach immediately after approval. Tier 2 template variants already written and tested for maximum impact.
 
