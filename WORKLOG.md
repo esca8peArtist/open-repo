@@ -6,6 +6,40 @@
 
 ---
 
+## 2026-05-06 10:37–13:05 UTC — [Session 820] SEEDWARDEN TRACK B PHASE 2 PRODUCTION BEGINS (3 Guide Drafts + Infrastructure)
+
+**Session Summary**: Identified seedwarden Track B as the only genuinely unblocked autonomous work (Track A blocked on user tag corrections; all other projects awaiting user decisions). Spawned seedwarden subagent to begin endangered species guide production. Delivered 3 guide drafts (American Ginseng, Goldenseal, Black Cohosh), photo sourcing pipeline infrastructure, Canva style guide, and production progress tracker. All guides production-ready for user review; photo sourcing and design work can proceed immediately.
+
+**Autonomous Work Completed**:
+
+1. ✅ **seedwarden Track B Phase 2 Production Begins** (8 files)
+   - `american-ginseng-guide.md` (~2,400 words) — CITES Appendix II legal landscape, seed exemptions, 3 cultivation methods with economics, fall-planting protocol, year 1-10 timeline, Cherokee stewardship (*a-ta-li-gv*), 5 verified seed suppliers, Quick Reference card
+   - `goldenseal-guide.md` (~2,100 words) — Berberine market mechanism (95% still wild-harvested), CITES Appendix II, 7 state endangered listings, rhizome + seed propagation, container cultivation, Indigenous use contexts (Cherokee, Haudenosaunee, Ojibwe)
+   - `black-cohosh-guide.md` (~2,000 words) — NatureServe vs. United Plant Savers tension analysis, 2024 Massachusetts endangered listing, name history ("squawroot" → "black cohosh"), Indigenous context
+   - `ENDANGERED_SPECIES_PHOTO_PIPELINE.md` — Per-species iNaturalist CC-BY search URLs with taxon IDs, institutional outreach templates (Missouri Botanical Garden, NC Botanical Garden), photo quality standards, WORKLOG logging template
+   - `CANVA_ENDANGERED_SPECIES_STYLE_GUIDE.md` — Deep Soil palette (7 hex codes), Conservation Red (#8B2000) for status badges, cover + interior page specs, Etsy slot strategy, bundle cover design for $32 Appalachian Medicinals
+   - `phase-2-production-progress.md` — Master tracker with per-species status matrices (guide draft, photo types, Canva layout, PDF export, Etsy live), iNaturalist search URLs, institutional outreach status
+   - **Business Value**: Wave 1 (American Ginseng + Goldenseal + Black Cohosh + Ramps) can begin photo sourcing immediately; Canva layouts can be designed concurrently
+   
+2. **Review Flags (User Sign-Off Required)**:
+   - Cherokee plant names (*a-ta-li-gv*, *nv-wa-s-ti*) need verification against primary Cherokee language source before commercial publication
+   - Wild ginseng harvest decline (68% from pre-2015 to 2024) should be confirmed against most recent USFWS annual report
+   - Black Cohosh draft runs 400 words short; can expand Sections 9 (Indigenous Context) and 3 (Medicinal History) to match 2,400-word bundle target if desired
+
+3. **Immediate Next Actions** (user):
+   - Read 3 guide drafts; flag any content corrections
+   - iNaturalist CC-BY photo sprint (May 8-10): Use search URLs in `ENDANGERED_SPECIES_PHOTO_PIPELINE.md`
+   - Send 2 institutional outreach emails (May 8): Missouri Botanical Garden + NC Botanical Garden
+   - Add endangered species palette to Canva Brand Kit
+   - Next session: Ramps guide draft (4th Wave 1 species, highest cultural resonance)
+
+**Blocks Status** (unchanged):
+- All major projects remain blocked on user decisions (resistance-research path, stockbot ARCH, mfg-farm test print)
+- seedwarden Track A blocked on tag corrections; Track B now in active production
+- No new blockers identified
+
+---
+
 ## 2026-05-06 09:47–10:55 UTC — [Session 819] DTBP VERIFIED + PHASE 1-2 INFRASTRUCTURE PREP COMPLETE (17 Files)
 
 **Session Summary**: Pre-market-open health check verified DTBP reset to $414,598 (healthy). Engine running. All projects blocked on user decisions, so focused on high-value preparatory work that doesn't depend on which path user chooses. Launched 3 parallel agents to build launch infrastructure for 3 projects. All 17 files production-ready.
