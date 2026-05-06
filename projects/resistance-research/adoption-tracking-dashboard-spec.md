@@ -5,7 +5,7 @@ status: production-ready
 phase: Phase 1 measurement tooling
 distribution_paths: A / A+37 / B (path-independent)
 companion_files:
-  - post-distribution-impact-measurement.md          # Sector pathways, metrics framework, baselines
+  - post-distribution-impact-framework.md            # Sector pathways, failure mode detection, domain adoption tiers — v2.0 (May 6, 2026)
   - post-distribution-impact-measurement-framework.md # Attribution methodology, four attribution tests
   - impact-measurement-tools-inventory.md            # Full tools inventory with cost and setup
   - tracking-template.json                           # Structured tracking schema
@@ -62,6 +62,18 @@ Create at news.google.com/alerts with daily email delivery to a dedicated folder
 - `"Brennan Center" "voting rights" "democratic renewal"`
 - `"Just Security" "judicial independence" 2026`
 - `"Democracy Docket" "voter roll" SAVE 2026`
+
+**Set D — Framework coinage fingerprints** (phrases unique to the framework; any document using them has been influenced by it, whether or not it cites directly)
+- `"arrest operation theory" "war powers"`
+- `"Section 3 enforcement gap" "appropriate legislation"`
+- `"Vance doctrine" Youngstown`
+- `"state legislative autocratization"`
+- `"appellate capture" judicial independence`
+- `"ICE-at-polls"` OR `"ICE at polls" election`
+- `"NVRA quiet period" 2026`
+- `"fiscal authority bypass" OMB`
+
+These coinage alerts serve dual detection purposes: (1) positive influence signal when a credible actor uses the phrase; (2) Mode 1 or Mode 2 failure-mode indicator when an adversarial actor uses it — read the source within 48 hours to determine which. See `post-distribution-impact-framework.md` Appendix B for the full coinage glossary.
 
 Configuration: set all alerts to "All results" (not "Best results") and weekly digest format. Note: Google Alerts has known coverage gaps for PDF documents and legal filings — supplement with CourtListener for litigation monitoring.
 
@@ -211,6 +223,8 @@ Maintain as a separate sheet or table. One row per domain (1–37+). Columns tra
 ---
 
 ## Component 4: Failure Mode Detector
+
+**Three-archetype failure mode system**: See `post-distribution-impact-framework.md` Part IV for the detailed treatment of the three failure mode archetypes — Mode 1 (Selective extraction for distortion), Mode 2 (Framework capture by misaligned organizations), and Mode 3 (Credibility association with erroneous claims). Each archetype has distinct detection logic, early warning signals, and response protocols. The monthly checklist below operationalizes detection across all three modes.
 
 ### Monthly Audit Checklist
 
