@@ -137,12 +137,12 @@ Update: Seventh Circuit Castañon Nava pending ruling status; date stamp; note t
    - Advocacy window: September–October 2026
    - Effort to full research: 1–2 sessions
 
-2. **Domain 37b: State Election Security Coordination — Post-CISA Architecture and the 2026 Vulnerability Gap**
-   - File: `domains/domain-37b-state-election-security-coordination.md`
+2. **[COMPLETE — May 6, 2026] Domain 37b: State Election Security and Election Administration Vulnerability**
+   - Scope file: `domains/domain-37b-state-election-security-coordination.md` (April 2026 scope + update)
+   - Full research file: `domains/domain-37b-state-election-security.md` (May 6, 2026 — production-ready, ~6,800 words, 43 citations)
    - Parent: Domain 37 (Federal Executive Interference in 2026 Midterms)
-   - Core gap: Domain 37 documents CISA's destruction. This domain covers what states have built to replace it, the coordination gap that cannot be closed at state level, and the competitive state vulnerability matrix.
-   - Advocacy window: April–July 2026 (most urgent of the three)
-   - Effort to full research: 1 session
+   - Coverage: Vendor landscape (ES&S/Liberty Vote/Hart InterCivic 90% concentration; Liberty Vote acquisition security gap); paper ballot progress and BMD audit limitations; RLA adoption state-by-state; ERIC departures and voter database integrity; MS-ISAC paid model gap (11 states enrolled); supply chain vulnerabilities; election official turnover and insider threat; certification season risk (53 election deniers in certification-authority races); Canada/Germany/Australia/OSCE international benchmarks; 13 structural reform recommendations across immediate/pre-certification/medium-term windows
+   - Advocacy windows: June 15, 2026 (CISA assessment); August 7–October 31, 2026 (certification season)
 
 3. **Domain 31x: Healthcare Tariff Collision — Pharmaceutical Supply Shock, Medicaid Contraction, and the Access Collapse Timeline**
    - File: `domains/domain-31x-healthcare-tariff-collision.md`

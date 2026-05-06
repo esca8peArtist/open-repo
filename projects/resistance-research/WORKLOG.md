@@ -2,6 +2,40 @@
 
 ---
 
+## May 6, 2026 — Research Agent: Domain 37b — State Election Security and Election Administration Vulnerability
+
+**Status**: COMPLETE
+
+**Context**: Phase 2 Tier B domain research. Three related domains already complete (Domain 37 Federal Executive Interference, Domain E Election Administration Seizure, prior Domain 37b scope document from April 2026). This session produced the full standalone research document at the scoped 5,000–7,000 word length with 8+ sections and 43 citations.
+
+**File created**:
+- `projects/resistance-research/domains/domain-37b-state-election-security.md` (~6,800 words, production-ready)
+
+**Key findings**:
+
+1. **Vendor concentration is a structural security vulnerability**: Three companies (ES&S, Liberty Vote/formerly Dominion, Hart InterCivic) control approximately 90 percent of U.S. election technology. No mandatory source code disclosure, no independent penetration testing requirement as EAC certification condition, no federal oversight of vendor supply chains. The Liberty Vote acquisition — a single individual now controlling both the nation's largest e-pollbook vendor (KnowInk) and the former Dominion (30% market share) — has not been independently security-assessed.
+
+2. **98 percent paper record is real but overread**: Progress from 93% (2020) to 98% (2024) of votes with paper records is genuine. But ballot-marking device (BMD) paper records — where the barcode, not the printed text, is what tabulators read — are verified by voters at far lower rates than hand-marked paper ballots. The distinction matters for audit integrity.
+
+3. **RLA adoption gap undermines the paper record achievement**: States with paper ballots but only fixed-percentage audits (typically 1-5% of precincts, non-risk-limiting) can certify a manipulated outcome if manipulation was confined to non-sampled precincts. RLA adoption in statute: Colorado, Georgia, Nevada, Oregon, Virginia, Washington. Pilot/phased: Indiana, Michigan, Maine, Texas (statewide required August 31, 2026+). Optional: California, New Jersey, Pennsylvania, Rhode Island, Ohio, Kentucky. Approximately half of states lack statistically rigorous audit requirements.
+
+4. **ERIC departures create voter database integrity gaps in non-competitive states that fuel challenge campaigns in competitive ones**: Nine states withdrew from ERIC (Louisiana, Alabama, Missouri, Florida, West Virginia, Iowa, Ohio, Virginia, Texas), most between 2022-2024. Virginia rejoined March 2026. Georgia retained membership despite 2025 withdrawal pressure. Departing states have not built equivalent replacement systems — Votebeat documents ongoing struggles. Inaccurate rolls are raw material for SAVE-based challenge campaigns.
+
+5. **MS-ISAC paid model gap**: Only 11 states have signed statewide MS-ISAC memberships after the federal cooperative agreement ended September 30, 2025. The confirmed 11 include Texas, Kansas, Mississippi — not the core competitive states (Arizona, Georgia, Michigan, Nevada, Pennsylvania, Wisconsin). County-level election offices in battleground states are operating without the national threat intelligence network CISA previously provided.
+
+6. **53 election-denying candidates running for certification-authority offices**: States United tracking via ElectionDeniers.org. In 23 states including 5 presidential swing states. The 2026 midterms determine who oversees the 2028 presidential election in 29 states. Acute in Arizona (all three statewide positions targeted by election deniers), Georgia (open SoS seat), Michigan, Nevada.
+
+7. **International benchmarks are operational, not aspirational**: Canada's Chief Electoral Officer has statutory independence analogous to the Comptroller General; Australia's AEC coordinates five security agencies through an independent statutory structure; Germany uses exclusively hand-marked paper ballots counted publicly with no voting machines in federal elections. All three models address the core U.S. failure mode: a single executive-controlled agency as the sole federal election security node.
+
+8. **FY27 budget proposes permanent elimination of the election security baseline**: The $39.6 million CISA election security program elimination, if enacted as a budget baseline, requires affirmative future Congressional appropriation to restore — not just administrative reversal. The advocacy window is the FY27 appropriations process, whose composition depends on November 2026 midterm outcomes. This circular dependency is the document's central structural finding.
+
+**Advocacy windows documented**:
+- June 15, 2026: CISA state election security assessment release window
+- August 7, 2026: NVRA 90-day quiet period begins
+- August 7–October 31, 2026: Certification season for 2026 general election
+
+---
+
 ## May 6, 2026 — Research Agent: Tier 1 Engagement Success Metrics & Feedback Scoring Framework
 
 **Status**: COMPLETE
