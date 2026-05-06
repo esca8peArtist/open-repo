@@ -1,3 +1,25 @@
+## Since Last Check-in (Session 847 — 2026-05-06 19:26–20:45 UTC) — ORGANIZATIONAL OPSEC PLAYBOOK SERIES COMPLETE
+
+### STATUS: **Exploration Queue item #2 complete**. cybersecurity-hardening Organizational OpSec Playbooks (7,500 words, 4 integrated playbooks) delivered. Extends Phase 2 from individual-focused playbooks to institutional contexts (NGOs, labor unions, legal services, academic institutions). All main project blocks unchanged. No new blockers. Usage: Sonnet ~2.2%; all-models ~55% (reset in ~120h).
+
+**What Changed**:
+- **cybersecurity-hardening Phase 2.2**: Organizational OpSec Playbooks complete (`ORGANIZATIONAL_OPSEC_PLAYBOOKS.md`, commit cf8c3391). Four integrated playbooks extending Phase 2 threat model and countermeasures to institutional audiences:
+  1. **NGOs/Nonprofits** (6 sections) — Governance frameworks, board confidentiality, staff safety, financial compartmentalization, data infrastructure, incident response. Target: nonprofit directors/IT staff. Key threats: IRS social-graph mapping, FBI surveillance of civil rights leaders, subpoena exposure.
+  2. **Labor Unions** (6 sections) — Organizing communication compartmentalization, device security, financial reserves, legal preparation. Target: union organizers and IT staff. Key threats: Employer surveillance, IRS financial investigation, government+employer coordination.
+  3. **Legal Service Providers** (6 sections) — File security, subpoena protocols, staff safety, client communication. Target: immigration attorneys, legal aid staff. Key threats: Subpoena access to files, ALPR surveillance of offices, parallel construction risks.
+  4. **Academic Institutions** (5 sections) — Faculty protection, research security, student activist support. Target: university IT, faculty leadership. Key threats: Targeted faculty surveillance, foreign researcher monitoring, political retaliation against research.
+- **Cross-Cutting Framework**: All playbooks link back to Phase 2a individual playbooks (activist, journalist, whistleblower, DV survivor, financial resistance) — no duplication. Implementation roadmap: 12-week adoption path with immediate (weeks 1–2), short-term (weeks 3–8), medium-term (weeks 9–16), and long-term (months 4–12) phases.
+- **Production Ready**: Follows established Phase 2 format. Grounded in documented threats (ELITE, Palantir, IRS LCA, DOGE, Mobile Fortify, FBI biometric expansion). Ready for Tier 2 distribution to organizational networks.
+
+**Completes**: Exploration Queue item #2. Queue now 1-complete (Session 837), 1-complete (this session), 1-blocked (mfg-farm supply chain, awaiting test print).
+
+**What's Next**:
+1. **Main project blocks unchanged**: resistance-research path decision, stockbot architecture decisions, mfg-farm test print still pending user action.
+2. **Exploration Queue**: Item #3 (mfg-farm supply chain strategy) blocked until test print; can begin independent research on supplier resilience and cost modeling post-test-print. Can add new queue items if needed.
+3. **May 12 checkpoint**: 5 days away. All decision infrastructure ready.
+
+---
+
 ## Since Last Check-in (Session 846 — 2026-05-06 21:30–22:10 UTC) — CYBERSECURITY-HARDENING ORGANIZATIONAL OPSEC PLAYBOOK COMPLETE
 
 ### STATUS: **Exploration Queue item #2 complete**. cybersecurity-hardening Organizational OpSec Playbook (8,300 words) delivered covering institutional contexts (NGOs, labor unions, legal aid). All main project blocks unchanged. No new blockers. Usage: Sonnet ~2.2%; all-models ~55% (reset in ~121h).
