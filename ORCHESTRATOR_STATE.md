@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-06T06:07:13Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-06T09:47:32Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 37.5% | Reset in 138h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 42.8% | Reset in 134h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -88,43 +88,43 @@ User decision: wait for tomorrow's reset (cannot reset paper account without cre
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-## Session 809 (2026-05-06 05:34 UTC) — ORIENTATION & STANDING BY FOR DTBP RESET
 
-**Status**: Orientation confirms all autonomous work remains exhausted. All projects blocked on external events and user decisions. Standing by for DTBP reset verification at 13:30 UTC (7h 56m remaining).
+1. ✅ **Exploration Queue Refresh** (Session 815)
+   - Added 3 high-value exploration items to PROJECTS.md:
+     - resistance-research: Post-Phase-1 Community Adaptation & Feedback Integration Deep Dive (3-4 hrs)
+     - stockbot: Post-Gate-1 Live Trading Launch Operational Architecture (4-5 hrs)
+     - mfg-farm: Etsy Organic Discovery & SEO Strategy for 3D Printing Niche (3-4 hrs)
+   - Rationale: Per protocol, Exploration Queue was empty post-Session 814; maintain 2-3 active items minimum
 
-**Work Completed**:
-1. ✅ Orientation audit completed
-   - ORCHESTRATOR_STATE.md: Confirmed accurate — all projects at maximum readiness
-   - BLOCKED.md: 3 active blocks unchanged (DTBP reset pending, architecture review pending, test print pending)
-   - INBOX.md: No new items
-   - PROJECTS.md Exploration Queue: Session 808 delivered 3 items; Items 4-6 available if capacity permits
-   - CHECKIN.md: All prior sessions reviewed, state confirmed
+2. ✅ **mfg-farm: Etsy SEO Strategy & Keyword Research** (COMPLETE — Session 815)
+   - **Deliverables**:
+     - `projects/mfg-farm/etsy-seo-strategy.md` (43 KB, ~3,500 words, 8 sections)
+     - `projects/mfg-farm/keyword-research-data.csv` (13 KB, 70 keywords)
+   - **Key findings**:
+     - Etsy Listing Quality Score dominated by conversion rate (1.5-2.5% target for new 3D-printed shops vs. 3-5% for established)
+     - June 2025 ban on template-based 3D prints removed commodity competition — original-design sellers like ModRun are algorithmically advantaged
+     - Four seasonal peaks: Jan (120-150% baseline, critical), March-May (moving/spring), July-Sept (back-to-school), Nov-Dec (gift)
+     - Whitespace: standing-desk-specific cable management (under 200 listings, high buyer intent), minimalist positioning
+     - Optimal bundle: Tier 2 (20 clips + 2 rails, $24-28, $4.50 COGS) = 84-86% gross margin with best AOV/profitability balance
+     - Video demonstrations outperform lifestyle photos 2.5-3x in click-through rate for 3D-printed products
+   - **Business value**: Post-test-print revenue optimization, informs listing strategy (title/tag), seasonal launch timing, bundle architecture, paid-ad allocation
+   - **Agent**: general-research (distributed research, WebSearch + WebFetch + analysis)
+   - **Commit**: 651e1473 (feat: mfg-farm Etsy SEO strategy & keyword research)
+   - **Status**: Ready for immediate post-test-print execution; recommend eRank validation of keyword volumes before finalizing copy
 
-2. ✅ Monitor Status
-   - DTBP reset Monitor from Session 789 should be in place for 13:30 UTC verification
-   - No new Monitors or cron jobs needed at this time
-   - DTBP verification will trigger autonomously at market open
+**Block Status** (unchanged):
+- ⏳ **DTBP Reset**: 13:30 UTC today (May 6) — automatic verification pending
+- 🔴 **Architecture decisions** (stockbot): awaiting user review of CODE_REVIEW_SYNTHESIS.md
+- 🔴 **Distribution path** (resistance-research): awaiting user selection for Phase 1 launch (A / A+37 / B)
+- 🔴 **mfg-farm test print**: awaiting user execution of CadQuery designs (SEO research completed independently)
+- 🔴 **seedwarden tag corrections**: awaiting user action on Track A (Track B ready)
+- 🔴 **cybersecurity Tier 1 approval**: awaiting user approval to begin outreach
 
-3. **Block Status** (unchanged):
-   - ⏳ **DTBP Reset**: 13:30 UTC today (7h 56m remaining) — automatic verification pending
-   - 🔴 **Architecture decisions** (ARCH-1-7): awaiting user review of CODE_REVIEW_SYNTHESIS.md
-   - 🔴 **Distribution path** (A/A+37/B): awaiting user selection for Phase 1 launch
-   - 🔴 **mfg-farm test print**: awaiting user execution of CadQuery designs
-   - 🔴 **seedwarden tag corrections**: awaiting user action on Track A (Track B ready)
-   - 🔴 **cybersecurity Tier 1 approval**: awaiting user approval to begin outreach
+**System Status**: Excellent. All projects at maximum readiness. Exploration Queue now has 2 active items (post-Phase-1-launch and post-Gate-1 research items, both awaiting user decisions to unblock). No errors or degradation.
 
-**User Action Items** (unchanged):
-1. Select distribution path (A / A+37 Hybrid / Path B) → triggers Phase 1 execution (3-4h autonomous)
-2. Review architecture decisions (CODE_REVIEW_SYNTHESIS.md) → triggers post-Gate-1 refactoring
-3. Execute test print on CadQuery designs → unlocks mfg-farm launch sequence
-4. Approve cybersecurity Tier 1 templates → begins distribution outreach
-5. Complete seedwarden tag corrections → unlocks Phase 1 Etsy upload
-
-**System Status**: Excellent. All projects at maximum execution readiness. No errors or degradation. Token budget conserved for reactive execution.
-
-**Next Milestone**: 
+**Next Milestone**:
 - **Primary**: May 6 13:30 UTC DTBP reset verification (auto-triggered)
-- **Secondary**: User decisions on 5 pending items unlock autonomous work
+- **Secondary**: User decisions on 5 pending items unlock 3-4+ hours of autonomous work per decision
 
-**Session Duration**: ~2 minutes (orientation only)
-**Tokens Used**: ~1K
+**Session Duration**: ~35 minutes (orientation + research agent execution)
+**Tokens Used**: ~65K (research agent)
