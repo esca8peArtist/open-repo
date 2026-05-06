@@ -10712,3 +10712,65 @@ Session 633 in progress. Awaiting market open and user decision on resistance-re
 
 **Session 732 complete** (2026-05-05 05:28–06:10 UTC) — Exploration queue item delivered, all orchestration files updated.
 
+---
+
+## Since Last Check-in (Session 791 — 2026-05-06 00:44 UTC)
+
+🔄 **Orientation Complete — Standing by for May 6 13:30 UTC DTBP Reset**
+
+### Work Completed
+
+**Orchestrator Orientation** ✅:
+- Reviewed ORCHESTRATOR_STATE.md (all project states confirmed)
+- Checked INBOX.md (no new items)
+- Verified Active Blocks status (stockbot DTBP reset + architecture review, mfg-farm test print, resistance-research path decision)
+- Confirmed Monitor from Session 789 is in place for DTBP verification at May 6 13:30 UTC market open
+
+### Project Status (Unchanged from Session 790)
+
+| Project | Status | Blocker | Action |
+|---------|--------|---------|--------|
+| **resistance-research** | ✅ Framework ready | Path decision | **AWAITING**: A / A+37 / B selection |
+| **stockbot** | ✅ Engine live | DTBP reset (13h remaining) | **13:30 UTC**: Market open, DTBP reset verification |
+| **stockbot** | — | Architecture review pending | **AWAITING**: User review of CODE_REVIEW_SYNTHESIS.md (7 ARCH items) |
+| **mfg-farm** | ✅ All prep complete | Test print | Awaiting physical test print execution |
+| **seedwarden** | ✅ Phase 2 ready | Tag corrections + Etsy upload | Awaiting Track A user actions; Track B ready for execution |
+| **cybersecurity-hardening** | ✅ All tiers ready | Tier 1 approval | Awaiting user approval to begin outreach |
+| **open-repo** | ✅ Phase 5 ready | PR #1 merge | Awaiting external maintainer review |
+| **off-grid-living** | ✅ Published | Social posts | Awaiting execution |
+| **workout** | ✅ Complete | User review | Awaiting selection of preferred plan |
+
+### Items Needing Your Input
+
+1. **resistance-research distribution path** (HIGH PRIORITY, time-sensitive):
+   - **Action**: Select one of: Path A / Path A+37 Hybrid / Path B
+   - **Timeline**: 3 days until distribution infrastructure refresh needed
+   - **Effect**: Selection triggers Phase 1 autonomous execution (3-4h)
+
+2. **stockbot architecture decisions** (HIGH PRIORITY, blocks post-Gate-1 work):
+   - **Action**: Review CODE_REVIEW_SYNTHESIS.md and confirm direction on 7 ARCH items
+   - **Items**: ARCH-1 through ARCH-7 (live_engine fate, alert thresholds, session registry, integration.py cleanup, analytics stack, schema migration, PerformanceMetrics rename)
+   - **Timeline**: Decisions needed before Gate-1 completion analysis
+
+3. **mfg-farm test print execution**:
+   - **Action**: Run test print of CadQuery designs (modrun_rail.py, modrun_clip.py)
+   - **Effect**: Unlocks launch prep workflow
+
+4. **seedwarden Phase 1 user actions**:
+   - **Tag corrections**: 3 corrections needed
+   - **Etsy account verification**: Required before upload
+   - **Note**: Track B has zero blockers and can execute immediately upon user request
+
+### Assessment
+
+- **Autonomous work**: NONE. All 10 active projects blocked on named external dependencies or user decisions.
+- **Exploration Queue**: Fully satisfied (Items 15, 16, 52 available if capacity permits; Session 790 assessment stands)
+- **System status**: All systems stable. Stockbot engine healthy, Monitor configured for DTBP reset at 13:30 UTC.
+- **Budget**: Conserved for reactive execution upon user input or DTBP reset verification
+
+**Next session trigger**: 
+1. **Primary**: May 6 13:30 UTC DTBP reset verification (Monitor will trigger)
+2. **Secondary**: User provides any of the 4 pending decisions → Phase 1 / architecture review / test print / seedwarden execution unlocks
+
+**Session 791 complete** — Orientation confirmed, all blocks catalogued, standing by for DTBP reset.
+
