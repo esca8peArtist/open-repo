@@ -6,6 +6,170 @@
 
 ---
 
+## 2026-05-06 04:05 UTC — [Session 794] Post-Distribution Impact Measurement Framework (resistance-research)
+
+**Task**: Work exploration queue Item 32 — resistance-research Post-Distribution Impact Measurement Framework (operational measurement infrastructure).
+
+**Deliverable**: `projects/resistance-research/post-distribution-impact-measurement-framework.md` (v2.1, 1,131 total lines; Addendum 698 lines)
+
+**Framework structure** (5 parts):
+
+**Part 1 — Tiered metrics** (24 total with Day 30/90/180 numeric targets):
+- Tier 1 (policy elites): 8 metrics — legislative action, position changes, institutional adoption, media coverage, social amplification
+- Tier 2 (media/academics): 8 metrics — vocabulary marker spread, cross-reference patterns, citation networks, event correlation
+- Tier 3 (soft signals): 6 metrics — email engagement, feedback qualitative, community extensions
+- Baseline anchored to Domain 37 data (pre-distribution snapshot)
+
+**Part 2 — Data source validation** (all confirmed accessible):
+- Congress.gov API (free, 5K req/hr) — legislative tracking
+- CourtListener RECAP (free) — court decisions
+- Google Alerts + Talkwalker (free) — media monitoring
+- SSRN manual search (free, ~5 min baseline run required pre-Day-0)
+- Twitter/X TweetDeck (free alternative post-API elimination Feb 2026)
+- Airtable free tier (1,000 records/base, 6–8 months before limit)
+- Feedly (free tier supports 100 RSS feeds)
+
+**Part 3 — Checkpoint protocols** (Days 0, 7, 30, 90, 180):
+- Day-0 baseline snapshot + SSRN count baseline
+- Day-7 diagnostic: Early engagement signals
+- Day-30: First measurement aggregate (opens, shares, media mentions, feedback)
+- Day-90: Midterm assessment (legislative action, academic interest, position changes)
+- Day-180: Long-term impact (sustained coverage, outcomes, institutional adoption)
+
+**Part 4 — Attribution logic** (rigorous causality testing):
+- Vocabulary marker test (did policy actor use framework language?)
+- Structural convergence test (did solution align across domains?)
+- Timing+contact test (action followed contact + deliberation time?)
+- Three-point score system: High/Medium/Low/None confidence
+- Non-causality filters (election-year baseline, pre-contact actions, vocabulary-only overlap)
+
+**Part 5 — Stakeholder reporting**:
+- Orchestrator: `phase1-impact-status.json` + monthly CHECKIN.md bullets
+- Executor: Early-wins documentation guide for contact feedback
+- Phase 2 planning: Domain prioritization table (Accelerate/Refine/Reassess)
+- Public report: Monthly aggregate (Path A and A+37 comparable format)
+
+**Pre-Day-0 action item**: Run SSRN baseline count (5 min) before distribution Day-0 to fix denominator for all future SSRN comparisons.
+
+**Status**: ✅ COMPLETE, operational playbook ready for Phase 1 executor.
+
+---
+
+## 2026-05-06 02:50 UTC — [Session 794] Engine Startup Orchestration Script (stockbot)
+
+**Task**: Work exploration queue Item 31 — stockbot Engine Startup Orchestration Script (operational infrastructure).
+
+**Deliverable**: 
+- `/projects/stockbot/scripts/startup_engine.py` (450 lines, production-ready)
+- `/projects/stockbot/tests/unit/test_startup_engine.py` (53 unit tests, all passing)
+
+**Capabilities**:
+1. **Pre-flight checks** (9 checks, all validated against live environment):
+   - Python 3.11+ version
+   - Virtual environment detected
+   - `.env` file with required API keys
+   - Database file accessible and valid
+   - Alpaca paper API reachable (HTTP 200 test)
+   - Jetson/Docker health (auto-skips if not Docker)
+   - Log file disk space (<500 MB)
+   - No stale processes
+   - Configuration file schema + session count validation
+
+2. **Error recovery**:
+   - API unreachable: retry 3× with 10s delay
+   - DB locked: wait 30s and retry
+   - Stale process: detect and offer to kill
+   - Immediate crash: capture last 50 log lines, suggest troubleshooting
+
+3. **Orchestrator integration**:
+   - JSON status output (clean, parseable by scripts)
+   - Idempotent design: won't start duplicate processes if already running
+   - Exit codes: 0=success, 1=preflight failed, 2=startup failed, 3=already running
+   - Perfect for 13:00 UTC precheck → 13:15 UTC startup decision
+
+4. **CLI interface**:
+   - `python scripts/startup_engine.py` — auto-start with defaults
+   - `--config <file>` — custom config
+   - `--dry-run` — preflight checks only
+   - `--skip-preflight` — emergency recovery
+   - `--json` / `--text` — output format
+   - `--force-kill-stale` — kill stale process
+
+**Verification**: Dry-run passed all 9 prechecks on live Jetson environment. 67 sessions loaded from active-sessions.json. Alpaca API responding.
+
+**Integration**: Ready for orchestrator 13:00 UTC precheck and programmatic status monitoring.
+
+**Status**: ✅ COMPLETE, committed with full test coverage.
+
+---
+
+## 2026-05-06 01:50 UTC — [Session 794] Post-Loper Capital Formation Constraints (resistance-research)
+
+**Task**: Work exploration queue Item 30 — resistance-research Post-Loper Capital Formation Constraints (critical policy constraint analysis).
+
+**Deliverable**: `projects/resistance-research/post-loper-capital-formation-constraints.md` (518 lines, 8 parts, 30+ citations)
+
+**Critical Findings**:
+1. **Regulatory architecture dismantled** (Loper Bright, Corner Post, Jarkesy trinity, June 2024):
+   - Loper Bright: Agency expertise no longer controlling in statutory interpretation
+   - Corner Post: Permanently open statute of limitations on challenging regulations (no time bar)
+   - Jarkesy: Agency enforcement requires jury trial (3-5x cost, slower, unpredictable)
+
+2. **Trump administration operationalization** (Feb-April 2025):
+   - EO 14,219: Direct agencies to identify non-"best reading" regulations for repeal
+   - Memo (April 9, 2025): Rapid repeal without notice-and-comment
+   - Actual rollbacks: EPA (31 regs), FDA (lab-developed test rule), FCC (net neutrality), Student loans (SAVE Plan)
+
+3. **Compounding blow: Callais v. Landry (April 29, 2026)**:
+   - VRA Section 2 effects test constitutionally unavailable
+   - Requires proof of intentional racial discrimination only
+   - VRA enforcement mechanism now non-viable by statute — catastrophic for voting rights reform (Domain 1)
+
+4. **Five reforms cannot be Loper-proofed by statute; require constitutional amendment**:
+   - VRA voting rights floor
+   - Independent agency protection (Humphrey's Executor functionally overruled)
+   - Presidential accountability limits
+   - SCOTUS term limits
+   - Congressional standing to sue executive
+
+5. **Structural implications**:
+   - "Pass a law" is insufficient — 5-10 year post-enactment litigation horizon minimum
+   - Legislative drafting capacity critical (Congress severely understaffed for Loper-proof statutes)
+   - Litigation budget for reform increased 300-500%
+   - Executive capture easier post-Loper (asymmetric: regs destroyed by EO, only restored by statute)
+
+**Integration**: Phase 1 distribution context — helps influencers understand why constitutional amendment strategy, legislative drafting capacity (Domain 27 connection), and 5-10 year litigation horizon must be part of proposal. Updates Domain 1 (Voting Rights) with Callais compounding constraint.
+
+**Status**: ✅ COMPLETE, committed.
+
+---
+
+## 2026-05-06 01:30 UTC — [Session 794] Objection Handling & Rebuttal Framework (resistance-research)
+
+**Task**: Work exploration queue Item 29 — resistance-research Objection Handling & Rebuttal Framework (pre-distribution strengthening).
+
+**Deliverable**: `projects/resistance-research/objection-handling-rebuttal-framework.md` (10,234 words)
+
+**Content**:
+1. **Stakeholder-Type Objections** (policy elites, media, academics, advocacy orgs) with audience-specific psychology and response patterns
+2. **Top 10 Domain Rebuttals** (full 4-part format: objection, evidence, cross-domain connection, redirect) for Domains 1, 6, 19f, 26, 27, 29, 33, 34, 35, 37
+3. **Remaining Domains** (Domains 2–5, 8–9, 11, 14, 17, 22–23, 25, 36) in compressed ~150-word format
+4. **Cross-Domain Synthesis** (4 systemic challenges: contradictions, sequencing, timeline skepticism, elite-project criticism) with Policy Window Benchmark Table (New Deal to Poland 2023)
+5. **Influencer-Specific Rebuttals** (Tier 1 Batch 1 contacts: Weiser, Goodman, Chenoweth, Bassin, Elias) with public-position-based customization
+6. **Quick Defense Kit** (7 most-cited domain files, rhetorical pattern recognition, real-time deployment templates)
+
+**Design notes**:
+- All rebuttals grounded in domain research with specific section citations
+- Cross-domain connections explicit (`See Domains X+Y`)
+- Placeholders marked `[PERSONALIZE: ...]` for executor customization
+- Referenced against PHASE_1_EXECUTION_READINESS.md for sequencing logic and evidence prioritization
+
+**Outcome**: Phase 1 proposal now has comprehensive rebuttal infrastructure for executor (Sessions 1-5) to handle stakeholder objections and media response post-distribution.
+
+**Status**: ✅ COMPLETE, committed.
+
+---
+
 ## 2026-05-06 00:58 UTC — [Session 793] Orientation & DTBP Reset Monitor Setup
 
 **Task**: Orientation session (Session 793). Verify all project state; confirm all autonomous work exhausted; set up DTBP reset monitor.

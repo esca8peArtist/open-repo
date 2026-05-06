@@ -1,3 +1,70 @@
+## Since Last Check-in (Session 794 — 2026-05-06 04:05 UTC) — Exploration Queue Items Completed, Awaiting DTBP Reset & Market Open
+
+### ✅ SESSION 794 — 4 Exploration Queue Items Delivered, Market Monitoring Ready
+
+**Work Accomplished**:
+
+**Exploration Queue Items** (4 completed, ~12,300 lines total):
+
+1. ✅ **resistance-research: Objection Handling & Rebuttal Framework** (10,234 words)
+   - Comprehensive rebuttal infrastructure for Phase 1 executor
+   - 4-part format rebuttals for top 10 domains + compressed format for remaining 15+
+   - Influencer-specific responses (Tier 1 Batch 1 contacts)
+   - Quick defense kit with 7 most-cited domains + rhetorical pattern matching
+
+2. ✅ **resistance-research: Post-Loper Capital Formation Constraints** (518 lines, 30+ citations)
+   - **Critical finding**: Regulatory architecture dismantled (Loper Bright, Corner Post, Jarkesy trinity, June 2024)
+   - Trump admin operationalization (Feb-April 2025): 31 EPA regs, FDA lab rules, FCC net neutrality, student loans rolled back
+   - Compounding blow: Callais v. Landry (April 29, 2026) — VRA Section 2 effects test constitutionally unavailable
+   - 5 reforms cannot be Loper-proofed; require constitutional amendment
+   - Litigation budget increased 300-500%; executive capture easier post-Loper
+   - **Action**: Domain 1 (Voting Rights) updated with Callais compounding constraint
+
+3. ✅ **stockbot: Engine Startup Orchestration Script** (450 lines + 53 unit tests, 100% passing)
+   - 9 pre-flight checks (Python, venv, .env, DB, Alpaca API, Jetson, disk space, stale processes, config validation)
+   - Error recovery (API retries, DB lock wait, stale process handling)
+   - JSON status output for orchestrator parsing (exit codes: 0=success, 1=preflight failed, 2=startup failed, 3=already running)
+   - Idempotent design: won't start duplicate processes
+   - Ready for 13:00 UTC precheck and market open automation
+
+4. ✅ **resistance-research: Post-Distribution Impact Measurement Framework** (v2.1, 1,131 lines, addendum 698 lines)
+   - 24 tiered metrics (Tier 1 policy elites, Tier 2 media/academics, Tier 3 soft signals)
+   - All data sources confirmed accessible (Congress.gov API, CourtListener, Google Alerts, SSRN, etc.)
+   - Checkpoint protocols (Days 0, 7, 30, 90, 180)
+   - Attribution flowchart: 3 tests + non-causality filters
+   - Stakeholder reporting (orchestrator JSON, executor guide, Phase 2 planning, public report)
+   - **Action item**: Run SSRN baseline search pre-Day-0 (5 min) to fix denominator
+
+**Impact**:
+- **resistance-research**: Phase 1 pre-distribution infrastructure now COMPLETE (objections handled, Loper constraints understood, impact measurement ready)
+- **stockbot**: Engine startup automation ready for market-open reliability improvements
+- **Project readiness**: All primary projects remain at maximum execution readiness, blocked only on external events and user decisions
+
+**Items Awaiting User Input** (unchanged):
+1. **Today 13:30 UTC**: Alpaca DTBP reset (Monitor auto-verifies)
+2. **resistance-research**: Distribution path decision (A / A+37 / B) — Framework prep complete
+3. **stockbot**: CODE_REVIEW_SYNTHESIS.md review (ARCH-1–7 decisions) — startup script ready
+4. **mfg-farm**: Test print execution
+5. **seedwarden**: Phase 1 upload (3 tag corrections)
+
+**Market Monitoring Plan**:
+- **13:00 UTC**: Pre-market health check using new startup_engine.py script
+- **13:15–13:30 UTC**: Engine startup if needed
+- **13:30 UTC**: DTBP reset monitor fires → verify and log
+- **13:30–20:00 UTC**: Monitor for fills, trading activity, any alerts
+
+**Next**:
+- Transition to market monitoring mode at 13:00 UTC
+- Upon DTBP reset verification: evaluate blockage status
+- Upon user distribution path decision: execute Phase 1 (Gist creation, template filling, contact send, social scheduling)
+- Upon architecture decisions: prioritize code cleanup work
+
+**Session Duration**: ~4 hours active work
+**Tokens Used**: ~180K
+**Project Impact**: Pre-distribution infrastructure for resistance-research now 100% complete; stockbot startup automation production-ready
+
+---
+
 ## Since Last Check-in (Session 793 — 2026-05-06 00:58 UTC) — DTBP Reset Monitor Confirmed, All Primary Work Blocked
 
 ### ✅ SESSION 793 — Orientation, Monitor Setup Verification, Standing By
