@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-06T21:14:11Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-06T21:25:25Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 56.3% | Reset in 123h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 2.2% (194,281 tokens) | All-models 56.9% | Reset in 123h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -82,42 +82,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-✅ **resistance-research: Feedback Integration & Amendment Protocol** (~1.5 hours)
-- **Output**: `feedback-integration-protocol.md` (3,100 words, production-ready)
-- **Problem solved**: Framework is about to be distributed to 100+ institutional adopters. Need a systematic protocol for incorporating feedback without breaking production integrity.
-- **Key design decisions**:
-  1. **Feedback taxonomy**: 5 categories (typo, interpretation, new finding, localization, out-of-scope) with decision tree
-  2. **Semantic versioning**: MAJOR.MINOR.PATCH adapted for policy (not software): e.g., 1.0.0 → 1.0.1 for typo fix, 1.0.0 → 1.1.0 for new domain
-  3. **Amendment process**: 6-step workflow with explicit timelines (1-2 weeks depending on type)
-  4. **Governance**: Single-author authority (Anya makes final decisions); domain experts consulted for specific domains
-  5. **Versioning mechanism**: GitHub releases/tags ensure permanent backward compatibility (can always cite "v1.0.0, Domain 5" and get exact text)
-- **Historical precedent research**: Model Penal Code (36 states adopted selectively, shows localization is expected not a failure), ABA Model Rules (continuous updates, 50-state coverage), IETF RFC process (consensus model, different from single-author policy)
-- **Business value**: Enables Phase 1 distribution to proceed with confidence that feedback will be managed systematically; prevents framework fragmentation while remaining open to improvement
-- **Location**: `projects/resistance-research/feedback-integration-protocol.md` (committed)
+  8. **Institutional Design** (Part 8): Risk analysis and safeguards against weaponization
 
-**Exploration Queue Regenerated**:
-- Discovered all prior exploration items marked COMPLETE from Session 833
-- Added 3 new strategic items per orchestrator protocol (when queue < 3 items):
-  1. **resistance-research: Feedback Integration & Amendment Protocol** ✅ COMPLETED THIS SESSION
-  2. **cybersecurity-hardening: Organizational OpSec Playbook** (estimated 4-5 hours) — Extend Phase 2 from individual to organizational contexts (NGOs, labor unions, legal service providers)
-  3. **mfg-farm: Multi-Product Supply Chain & Scaling Strategy** (estimated 2-3 hours) — Post-test-print, design supplier resilience and product diversification roadmap
+- **Key findings**: 
+  - Federal official corruption prosecutions declined from 150–180/year (2009–2016) to 70–85/year (2025 pace)
+  - Senate ethics: 181 violations reviewed in 2025, zero disciplinary actions issued, continuing 19-year pattern
+  - Singapore model offers centralized anti-corruption architecture; South Korea's prosecution reform offers democratic-safe prosecution separation
+  - Germany's audit-office model offers independence without prosecution authority concentration
+  
+- **Business value**: Closes structural gap in Phase 1 proposal (corruption as democratic failure); opens distribution channel to ethics watchdog organizations (POGO, Common Cause, state AGs); grounds reform proposals in international precedent
 
-**Project Status Summary**:
-- **resistance-research**: Phase 1 production-ready (35 domains complete), Phase 1 distribution infrastructure now complete (feedback protocol documented), awaiting user path decision (A / A+37 / B)
-- **cybersecurity-hardening**: Phase 2 scenario playbooks ALL COMPLETE (6 total: immigration + 5 others); awaiting Phase 2 distribution execution (Tier 2 launch ~4 weeks post-Tier-1)
-- **stockbot**: 2-session Jetson deployment active, May 12 Gate 1 checkpoint in 6 days, 7 architecture decisions pending user review
-- **mfg-farm**: Test print required (user action block); Exploration Queue item regenerated for post-test-print product diversification
-- **seedwarden**: Track B production-ready (no blockers); Phase 1 upload blocked on 3 user tag corrections
+- **Status**: Production-ready; integration with Phase 1 domains (cross-references to Domains 1, 6, 34, 35); ready for Phase 2 distribution decision
+
+- **Committed**: commit 804e26f2
+
+---
+
+**Session 849 Summary**:
+
+Autonomous work: 1 major deliverable (Domain 20 research)
+
+Projects Status:
+- **resistance-research**: Phase 2 domain research expanded (1 of 8 high-priority Phase 2 domains COMPLETE; others: 23, 27-29, 31, 33-34 in progress from earlier sessions)
+- **cybersecurity-hardening**: Phase 1 ready, all Phase 2 scenario playbooks complete (immigration, activist, financial, whistleblower, journalist, DV survivor), awaiting user distribution path decision
+- **stockbot**: 2-session Jetson deployment active, May 12 Gate 1 checkpoint 6 days away, 7 architecture decisions pending user review
+- **mfg-farm**: Test print required (user action); supplier research COMPLETE from earlier sessions
+- **seedwarden**: Phase 1 upload pending tag corrections; Phase 2 production-ready (Track B), no blockers
 - **open-repo**: PR #1 open awaiting external review/merge
-- **off-grid-living**: Publication complete, social media distribution awaiting user execution
+- **off-grid-living**: Publication complete; social media distribution awaiting user
+- **workout**: Comprehensive plan complete; user review pending
 
-**Key Metrics**:
-- **Autonomous work this session**: 1 infrastructure document (feedback integration protocol)
-- **Exploration Queue**: 3 items active (1 completed, 2 pending)
-- **Blocks status**: 2 active blocks unchanged (stockbot arch decisions, mfg-farm test print)
-- **Next autonomous work**: cybersecurity-hardening organizational playbook (estimated 4-5 hours) or wait for user to unblock primary projects
+Exploration Queue Status:
+- Previous items: 1 completed, 1 in progress (pending user decision), 1 blocked (test print)
+- New items added this session: 3 (Journalist deep dive adjusted — already complete from Session 844; Domain 20 research — COMPLETED; Medicinal herbs strategy — pending)
+- Queue maintenance: Kept backlog current with executable items
 
-**Technical Notes**:
-- Feedback integration protocol designed to prevent the most common distributed framework failure: fragmentation (multiple incompatible versions in use). Solution: permanent version archival via GitHub releases + version-pinned citations
-- Model Penal Code case study: Shows that selective adoption + localization is expected behavior for distributed frameworks, not a failure mode
-- arXiv model: Permanent identifiers (v1, v2, v3) mean old citations remain valid forever even as framework evolves
+Key Metrics:
+- **Autonomous work this session**: 1 major deliverable (5,700-word domain document)
+- **Phase 2 progress**: resistance-research now has 1 additional high-priority domain; cybersecurity-hardening fully prepared for Phase 2 distribution
+- **Next checkpoint**: May 12 stockbot Gate 1 formal evaluation
