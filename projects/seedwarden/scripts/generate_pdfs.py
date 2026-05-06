@@ -561,6 +561,12 @@ PRODUCTS = [
         "Month-by-month planting schedules for USDA Zones 3–10",
         "$18 (Complete Bundle)",
     ),
+    (
+        "wild-edibles-quick-reference.md",
+        "Wild Edibles Quick Reference",
+        "18 Species — Identification, Season, Edible Parts & Safety Notes",
+        "$12",
+    ),
 ]
 
 

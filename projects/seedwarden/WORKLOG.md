@@ -4,6 +4,84 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 60 — 2026-05-06 — Wild Edibles Quick Reference: Photo Credits Page + PDF Generation (Phase 2 Track B)
+
+**Task**: Add a Photo Credits page to the Wild Edibles Quick Reference PDF, compress
+fallopia-japonica-habit.jpg, create the product markdown, add to PDF generation pipeline,
+and generate the output PDF.
+
+### 1. fallopia-japonica-habit.jpg compression
+
+Compressed in place using Pillow (`_compressed_image_path()` pipeline logic applied directly):
+
+| Item | Before | After |
+|------|--------|-------|
+| File | fallopia-japonica-habit.jpg | fallopia-japonica-habit.jpg |
+| Dimensions | 4558 x 3146 px | 1200 x 828 px |
+| File size | 9.8 MB | 0.20 MB |
+| Method | Pillow thumbnail (LANCZOS), JPEG quality 72 | |
+
+Path: `assets/wild-edibles/fallopia-japonica-habit.jpg`
+
+### 2. Product markdown created
+
+File: `products/wild-edibles-quick-reference.md`
+
+Content: 18 species entries with habit photos, identification, season, edible parts,
+and safety notes. Photo Credits page at end with full attribution table for all 18
+photos (common name, scientific name, filename, source URL, license, notes).
+
+### 3. PDF generation pipeline updated
+
+File modified: `scripts/generate_pdfs.py`
+
+Added to PRODUCTS list:
+```
+("wild-edibles-quick-reference.md", "Wild Edibles Quick Reference",
+ "18 Species — Identification, Season, Edible Parts & Safety Notes", "$12")
+```
+
+### 4. PDF generated
+
+Output: `scripts/output/wild-edibles-quick-reference.pdf`
+
+| Metric | Value |
+|--------|-------|
+| Pages | 22 |
+| File size | 1.21 MB |
+| Etsy 5 MB limit | PASS |
+
+### Photo credits logged
+
+All 18 photos sourced from Wikimedia Commons. Licenses as logged in Session 560
+(CC BY-SA for 16 species; CC0 for Stellaria media; CC BY-SA 3.0 with named
+attribution for Taraxacum officinale — photographer Greg Hume / Greg5030).
+
+| Species | Common Name | Filename | Source URL | License |
+|---------|-------------|----------|------------|---------|
+| *Allium tricoccum* | Ramps / Wild Leek | allium-tricoccum-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/9/97/Wild_Leeks6.jpeg | CC BY-SA |
+| *Amaranthus retroflexus* | Redroot Amaranth | amaranthus-retroflexus-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/9/91/Amaranthus_tricolor0.jpg | CC BY-SA |
+| *Arctium lappa* | Greater Burdock | arctium-lappa-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/c/ca/ArctiumLappa1.jpg | CC BY-SA |
+| *Asclepias syriaca* | Common Milkweed | asclepias-syriaca-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/7/77/Asclepias_syriacus.tif | CC BY-SA |
+| *Chenopodium album* | Lamb's Quarters | chenopodium-album-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/b/b7/Melganzenvoet_bloeiwijze_Chenopodium_album.jpg | CC BY-SA |
+| *Cichorium intybus* | Chicory | cichorium-intybus-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/b/bf/Illustration_Cichorium_intybus0_clean.jpg | CC BY-SA |
+| *Daucus carota* | Queen Anne's Lace | daucus-carota-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/2/23/Daucus_carota_May_2008-1_edit.jpg | CC BY-SA |
+| *Chamerion angustifolium* | Fireweed | epilobium-angustifolium-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/1/1d/Maitohorsma_(Epilobium_angustifolium).JPG | CC BY-SA |
+| *Reynoutria japonica* | Japanese Knotweed | fallopia-japonica-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/0/0a/Reynoutria_japonica_in_Brastad_1.jpg | CC BY-SA |
+| *Fragaria virginiana* | Wild Strawberry | fragaria-virginiana-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/a/a9/Fragaria_virginiana_2427.JPG | CC BY-SA |
+| *Helianthus tuberosus* | Jerusalem Artichoke | helianthus-tuberosus-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/a/ae/Sunroot_top.jpg | CC BY-SA |
+| *Nasturtium officinale* | Watercress | nasturtium-officinale-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/d/dd/Watercress_(2).JPG | CC BY-SA |
+| *Oxalis stricta* | Yellow Wood Sorrel | oxalis-stricta-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/9/91/6h_common_yellow_oxalis.jpg | CC BY-SA |
+| *Portulaca oleracea* | Purslane | portulaca-oleracea-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/2/2f/Portulaca_oleracea.jpg | CC BY-SA |
+| *Stellaria media* | Chickweed | stellaria-media-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/0/05/Kaldari_Stellaria_media_01.jpg | CC0 |
+| *Taraxacum officinale* | Dandelion | taraxacum-officinale-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/4/4f/DandelionFlower.jpg | CC BY-SA 3.0 (Greg Hume / Greg5030) |
+| *Typha latifolia* | Cattail / Bulrush | typha-latifolia-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/4/4c/Bulrush_(Typha_latifolia)_(8139113636).jpg | CC BY-SA |
+| *Urtica dioica* | Stinging Nettle | urtica-dioica-habit.jpg | https://upload.wikimedia.org/wikipedia/commons/6/6f/Fen_nettle_(Urtica_dioica_ssp._galeopsifolia)_-_geograph.org.uk_-_5423125.jpg | CC BY-SA |
+
+**Phase 2 Track B Wild Edibles PDF task: COMPLETE**
+
+---
+
 ## Item 59 — 2026-05-06 — Phase 2 Analytics and Cohort Segmentation Strategy
 
 **Task**: Design a comprehensive pre-launch analytics and cohort segmentation framework for the
