@@ -4,6 +4,35 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-06 17:20–18:15 UTC — Session 840: Exploration Queue Phase 3 Research Execution
+
+**Session Context**:
+- All top-priority projects blocked on user decisions (resistance-research path selection, stockbot architecture review, cybersecurity-hardening Phase 2 approval, seedwarden Phase 1 launch, mfg-farm test print)
+- Exploration Queue contains QUEUED item: resistance-research Phase 3 Candidate 5 research (judicial independence recovery)
+- Per orchestrator protocol: when main deliverables done but goal unfinished, advance toward goal by executing Phase 2+ research
+
+**Autonomous Work Completed**:
+
+✅ **resistance-research: Phase 3 Candidate 5 — Judicial Independence Recovery Mechanisms** (resistance-research agent, ~1.2 hrs)
+- **Output**: `projects/resistance-research/domains/phase-3-candidate-5-judicial-independence-recovery.md` (11,682 words, 85 citations, 105 sourced URLs)
+- **Scope**: Eight-domain expansion of post-Phase-1 leverage points; critical finding: judicial independence recovery and DOJ independence (Domain 29) are mutually dependent, not sequentially ordered
+- **Key findings**:
+  1. **Taiwan case study (NEWEST)**: December 2024 quorum manipulation + December 2025 self-invalidation is most directly applicable U.S. reform precedent — reveals mechanism vulnerability: legislature can set vote quorum requirements above number of sitting justices, freezing court function
+  2. **Speed asymmetry**: Poland shows 8 years to capture vs. 3 years of failed recovery attempts — informs 10-year standard path vs. 3-year emergency path trade-offs
+  3. **FDR lesson reframing**: Structural expansion with appointment-cadence rationale differs from emergency expansion targeting pending cases; historical success model is patient 12-year strategy, not emergency maneuver
+  4. **Italy March 2026 referendum**: Direct democratic vote protected judicial independence 53.75%-46.25% against government's preferred reform — referendum mechanisms can function as anti-capture guardrails
+- **Cross-domain map** (Section 6): Connects to Domains 6, 29, 34, 35; identifies judicial independence as prerequisite for full DOJ/CFPB restoration
+- **Committed**: 90c01fa0 to master (resistance-research project)
+
+**Blocks Status**: No change. All six active blocks remain (4 user decisions + 1 architecture review + 1 test print).
+
+**Next Session Priorities**: 
+1. Await user distribution path decision (resistance-research A / A+37 / B)
+2. Continue exploration queue if main projects remain blocked
+3. Monitor May 12 stockbot checkpoint (May 12 20:00 UTC — gate 1 formal validation)
+
+---
+
 ## 2026-05-06 17:03 UTC — Session 839: Post-Session-838 Monitoring Status
 
 **Session Context**:

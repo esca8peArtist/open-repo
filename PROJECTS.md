@@ -1420,12 +1420,11 @@ Top-priority projects remain blocked on external user decisions (stockbot archit
   - **Deliverables**: 6 React components, 4 custom hooks, TypeScript types, full test suite (75 tests, all passing), App.tsx main layout, README with API integration guide. Solved critical Jest config issues (RTL v10 getter compatibility, moduleNameMapper overreach). Ready for immediate deployment post-engine-restart.
   - **Status**: ✅ COMPLETE, committed to stockbot submodule master (commit 19c624e)
 
-- **resistance-research: Democratic Renewal Phase 3 Candidate 5 Research** (Priority MEDIUM for post-distribution roadmap)
-  - **Scope**: Research additional Phase 3 candidate following Session 556 pattern (8,000-10,000 words, 40+ sources, comparative case studies, international precedent). Recommended topics: (1) Financial sector vulnerabilities and banking system independence post-capture, (2) Civil service resilience architecture (hiring/firing protections that survive politicization), (3) Judicial independence recovery mechanisms (structural reforms that restore court independence post-capture), (4) Media freedom and journalistic protection pathways (press freedom recovery case studies).
-  - **Goal**: Expand Phase 3 research roadmap, identify additional leverage points for democratic renewal post-distribution
-  - **Expected output**: `phase-3-candidate-5-[topic].md` (8,000-10,000 words) with case studies, reform pathways, international precedent analysis
-  - **Timeline**: 2-3 sessions per candidate
-  - **Status**: QUEUED
+- ✅ **resistance-research: Democratic Renewal Phase 3 Candidate 5 Research — Judicial Independence Recovery** (COMPLETE — Session 840, 2026-05-06)
+  - **Deliverable**: `domains/phase-3-candidate-5-judicial-independence-recovery.md` (11,682 words, 85 citations, 105 sourced URLs)
+  - **Key findings**: (1) Taiwan quorum-manipulation case study most directly applicable for U.S. reform planning; (2) Poland shows 8-year capture vs. 3-year failed recovery asymmetry; (3) FDR 1937 lesson: structural expansion with appointment-cadence rationale succeeds, emergency expansion for pending cases fails; (4) Italy March 2026 referendum shows democratic public will protect judicial independence; (5) Judicial independence recovery and DOJ independence (Domain 29) are mutually dependent
+  - **Cross-domain map**: Connects to Domains 6, 29, 34, 35; judicial independence as prerequisite for full restoration
+  - **Status**: COMPLETE (commit 90c01fa0)
 
 **✅ COMPLETED (Session 566)**:
 

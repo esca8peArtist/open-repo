@@ -1,16 +1,37 @@
-## Since Last Check-in (Session 839 — 2026-05-06 17:03 UTC) — SESSION 838 WORK VERIFIED + MAY 6 MARKET MONITORING
+## Since Last Check-in (Session 840 — 2026-05-06 17:20–18:15 UTC) — EXPLORATION QUEUE RESEARCH EXECUTION: PHASE 3 JUDICIAL INDEPENDENCE RECOVERY COMPLETE
 
-### STATUS: Session 838 urgent work complete and committed to master (cybersecurity-hardening Phase 1 fixes + stockbot May 12 infrastructure). Current session monitoring May 6 market close (20:00 UTC). No new blocks. Awaiting user decisions: resistance-research path (A/A+37/B), cybersecurity Phase 1 launch approval, stockbot architecture discussion.
+### STATUS: Exploration queue item (resistance-research Phase 3 Candidate 5) executed successfully. Judicial independence recovery research (11,682 words, 85 citations) complete and committed to master. All main projects remain blocked on user decisions. No new blockers. Usage: Sonnet 2.2% session open; total all-models 52.1% (reset in 127h).
 
-**Session 839 Activity**:
-- **Verification**: Confirmed Session 838 commits (8c25df16, 9dd73bda) on master; all urgent fixes and checkpoint scripts in place
-- **Current Monitoring**: Market open until 20:00 UTC; stockbot 2-session AAPL engine running; scheduled post-market analysis at market close
-- **Block Status**: No changes — all three active blocks unchanged, awaiting user action
-- **Next Actions**: (1) User approves cybersecurity Phase 1 for distribution, (2) User picks resistance-research path A/A+37/B, (3) User reviews stockbot architecture decisions
+**Session 840 Work Completed**:
+- ✅ **resistance-research: Phase 3 Candidate 5 — Judicial Independence Recovery Mechanisms** (COMPLETE, commit 90c01fa0)
+  - **Scope**: Expanded post-Phase-1 leverage point research following Session 556 pattern (8,000-10,000 words → delivered 11,682 words, 85 citations)
+  - **Key Strategic Findings**:
+    1. **Taiwan quorum-manipulation case**: December 2024 precedent shows mechanical vulnerability — legislature can set SCOTUS vote requirements above number of sitting justices, freezing court function (directly applicable to U.S. reform planning)
+    2. **Speed asymmetry**: Poland capture took 8 years; recovery attempts failed after 3 years → informs 10-year standard path vs. 3-year emergency path trade-offs for U.S.
+    3. **FDR reframing**: Structural expansion with appointment-cadence rationale succeeds; emergency expansion targeting pending cases fails (history lesson reorients reform strategy)
+    4. **Italy March 2026 referendum**: Direct democratic vote protected judicial independence 53.75%-46.25% → referendum mechanisms can function as anti-capture guardrails
+  - **Cross-domain dependencies**: Judicial independence recovery + DOJ independence (Domain 29) are mutually dependent for full restoration; connects Domains 6/29/34/35
+  - **Output**: `domains/phase-3-candidate-5-judicial-independence-recovery.md` committed; ready for Phase 2 integration post-Phase-1-launch
+
+**Block Status**: No change. All six active blocks remain unchanged:
+- 🔴 resistance-research: User distribution path decision (A / A+37 / B)
+- 🔴 stockbot: Architecture decisions discussion (7 items in CODE_REVIEW_SYNTHESIS.md)
+- 🔴 mfg-farm: Test print required (user action)
+- 🔴 seedwarden Track A: Etsy tag corrections + account verification (user action)
+- 🔴 cybersecurity-hardening Phase 2: User approval to move forward
+- 🔴 open-repo: PR #1 awaiting maintainer review/merge
+
+**Recommended Next Steps**:
+1. **User decision requests**: Pick resistance-research path (A/A+37/B) to trigger Phase 1 distribution execution
+2. **Architecture discussion**: Stockbot CODE_REVIEW_SYNTHESIS.md (7 decisions) ready for your input before code changes proceed
+3. **Exploration queue depth**: If main projects remain blocked beyond 2 more sessions, expand Phase 3 research to additional candidates (civil service resilience, financial sector independence, media freedom)
+4. **May 12 checkpoint**: Approaching in 6 days; all monitoring infrastructure ready (decision tree, query scripts, scenario playbooks)
 
 ---
 
 ## History
+
+### Session 839 (2026-05-06 17:03 UTC) — SESSION 838 WORK VERIFIED + MAY 6 MARKET MONITORING
 
 ### Session 838 (2026-05-06 17:30–18:45 UTC) — URGENT PRE-LAUNCH FIXES + MAY 12 CHECKPOINT INFRASTRUCTURE READY
 
