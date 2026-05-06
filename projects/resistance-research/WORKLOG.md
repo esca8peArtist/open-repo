@@ -2,6 +2,100 @@
 
 ---
 
+## May 6, 2026 — Research Agent: Tier 1 Engagement Success Metrics & Feedback Scoring Framework
+
+**Status**: COMPLETE
+
+**Context**: Cybersecurity-hardening project Phase 1 distribution infrastructure is complete and production-ready for Tier 1 outreach (50–60 high-leverage contacts). No structured measurement system existed. This session designed a practical engagement measurement framework unifying both the 12-organization direct-service cohort (1A/1B/1C) and the 33-organization amplifier cohort into a single production-ready system.
+
+**Files created/updated**:
+- `projects/cybersecurity-hardening/tier-1-success-metrics.md` — v2.0, supersedes both `tier-1-success-metrics-framework.md` (direct-service cohort v1) and the prior v1 of this file (amplifier cohort only). Now covers all 45 organizations across 7 sectors with the full 6-section structure.
+- `projects/cybersecurity-hardening/engagement-scoring-template.csv` — updated from 33-org to 45-org, adding all 12 direct-service organizations (NILC, CLINIC, RAICES, ILRC, NLG, CASA, Make the Road, United We Dream, CDM, Local Sanctuary Network, National Bail Fund Network, Community Justice Exchange) with sector labels, verified contact emails, and per-org notes pre-populated.
+
+**Key design decisions**:
+1. **0–5 engagement scoring scale** with unambiguous criteria at each level. Score 3 (confirmed click or reading) is the minimum bar for any Tier 2 candidate eligibility. No judgment calls below Score 3 — the criteria are binary and directly observable.
+2. **Sector-specific success signals** differentiated for 7 sectors: the critical distinction is that direct-service organizations (1A legal aid, 1B community orgs, 1C mutual aid) have faster signal timelines but require client-facing adoption evidence, while amplifier cohort sectors require published outputs or training integration as Score 5 evidence.
+3. **Day 3/7/14/28 checkpoint structure** with specific metric targets at each checkpoint (not ranges — actual above/on-track/below-threshold numbers), time budgets per checkpoint (15/25/30/45 minutes), and explicit decision rules rather than general guidance.
+4. **Five-type feedback triage taxonomy** with a decision tree. The key distinction: Type 1 (Implementation Feedback) auto-scores to 5 and routes to Phase 2 revision queue; Type 4 (Integration Signal) routes to social proof inventory; Type 3 (Request) routes to Phase 2 demand queue with a 3-org threshold trigger for confirmed priority.
+5. **Three-factor Tier 2 readiness scoring** (0–3 points): engagement depth, integration/adoption signal presence, and network multiplier potential. Score 3/3 = Tier 2 pre-contact ambassador; Score 0/3 = excluded.
+6. **Sector diversity logic** for Tier 2 pre-contact list: explicit requirement for at least one direct-service org, one digital rights org, and one journalist/academic org to prevent monoculture in the social proof set.
+
+**Gaps noted**:
+- "Local Sanctuary Network" row in CSV is a placeholder — user must identify specific local org based on geographic presence.
+- Independent Researchers (researcher-community) row is also a placeholder — user contacts 3–5 individual researchers, each of whom should be a separate row once identified.
+- The Day 28 readout targets (11–18 Score 3+ contacts = on-track) assume 45 total sends; if Tier 1 actual cohort is smaller (closer to 33), rescale targets proportionally.
+
+---
+
+## May 6, 2026 — Session 846: Organizational OpSec Playbook
+
+**Status**: COMPLETE
+
+**Context**: Phase 2 Exploration Queue item — extending the cybersecurity-hardening corpus from individual to organizational contexts. The existing Phase 2 scenario playbooks address individuals (activists, immigrants, journalists, DV survivors, whistleblowers). This session adds the institutional/organizational layer covering NGOs, labor unions, and immigration legal service providers.
+
+**Files created**:
+- `projects/cybersecurity-hardening/organizational-opsec-playbook.md` (~6,000 words)
+
+**Key findings**:
+
+1. **Graphite/Paragon zero-click spyware is the highest-severity new threat**: ICE acknowledged in April 2026 it uses Graphite, capable of accessing encrypted messages, cameras, and microphones without any user interaction. WhatsApp disclosed 90+ civil society members targeted internationally. No organizational security measure below Lockdown Mode + GrapheneOS + aggressive patching is robust against zero-click. This is a gap in the entire corpus and should be surfaced in the July 2026 quarterly update.
+
+2. **SPLC indictment is a paradigmatic organizational threat case**: The April 2026 DOJ criminal indictment of the SPLC — which legal scholars assessed as politically motivated — illustrates how a well-resourced civil rights organization can be subjected to federal criminal process for activity that was previously coordinated with the FBI. The lesson for civil rights organizations is to treat any sensitive operational program as a potential indictment vector under a hostile administration and to route sensitive activity through legal counsel from the outset.
+
+3. **Wire is substantially better than Signal for organizations with >10 staff**: Signal has no admin controls, no user management, and no ability to remove compromised users. Wire provides equivalent encryption with SSO, SCIM, audit trails, and admin removal of compromised accounts. The "SignalGate" episode illustrated the operational risk of consumer-grade tools for organizational use. This is a concrete recommendation upgrade from the existing corpus.
+
+4. **FBI organizational attention is quantifiably escalating**: FBI queries on political, religious, and media organizations surged from 227 in 2024 to 839 in 2025 (PCLOB data). This is not anecdotal — it is a measured 270% increase in organizational-level surveillance, distinct from individual targeting.
+
+5. **NLRB deterioration creates structural vulnerability for labor organizing security**: With the NLRB non-functional in 2025–2026, the enforcement backstop against employer surveillance of organizing drives is gone. Labor organizers must assume employer surveillance of all company-platform communications and treat Signal on personal devices as the only safe organizing channel.
+
+6. **Cloudflare Project Galileo is zero-cost Tier 1 protection that most civil society organizations have not applied for**: 325 million attacks per day blocked against qualifying organizations. This is the most efficient security intervention available to under-resourced organizations and should be in every Tier 1 recommendation.
+
+**Scope for next phase**:
+- Sector supplement documents for immigration legal aid, labor unions, and civil rights organizations (as 1,500–2,000 word standalone documents)
+- Update main `opsec-playbook.md` to flag Graphite zero-click spyware as a Tier 3 threat
+- July 2026 quarterly review: add Graphite countermeasures to threat model; update organizational recommendations per SPLC case study developments
+
+---
+
+## May 6, 2026 — Research Agent: Feedback Integration and Amendment Protocol
+
+**Status**: COMPLETE
+
+**Context**: Framework is production-ready (35 domains) and awaiting Phase 1 distribution
+path decision. Task: design a production-quality protocol governing how post-distribution
+feedback is classified, reviewed, incorporated, and versioned — distinct from the existing
+`stakeholder-feedback-integration-protocol.md`, which governs how Phase 1 feedback drives
+Phase 2 domain selection.
+
+**File created**:
+- `feedback-integration-protocol.md` (~3,100 words)
+
+**Key design decisions**:
+1. Five-category feedback taxonomy (Factual Correction / Interpretation Clarification /
+   New Finding / Localization / Out of Scope) with a decision tree for classification
+2. Semantic versioning (MAJOR.MINOR.PATCH) adapted for policy documents — MAJOR for
+   architectural changes, MINOR for domain additions or material revisions, PATCH for
+   corrections and single new findings; supplement suffix for localizations
+3. Backward compatibility guarantee via permanent GitHub release tags (arXiv model)
+4. Single-author governance (Anya final authority) with ad hoc domain-expert consultation
+   for Categories B and C — explicitly not a consensus model
+5. Full worked example: Hungary electoral dynamics (Domain 33), Category C New Finding,
+   10-day turnaround
+6. Implementation checklist + domain review authority delegation table
+7. Appendix A: structured feedback submission template
+
+**Historical precedents researched**:
+- ALI Model Penal Code: council-approval governance, 15-year revision cycles, state-specific
+  adaptation (selective adoption — no state adopted the MPC in full)
+- ABA Model Rules: House of Delegates + state bar implementation committee; states adapt
+  rather than adopt verbatim
+- IETF RFCs: immutability once published; superseded by new numbered documents; no in-place
+  modification
+- arXiv: permanent identifier + v1/v2/v3 history; all versions permanently accessible
+- Semantic versioning (semver.org): MAJOR.MINOR.PATCH adapted for policy use
+
+---
+
 ## May 6, 2026 — Session 821: Gist Deployment Readiness Synthesis
 
 **Status**: COMPLETE
