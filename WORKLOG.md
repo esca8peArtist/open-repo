@@ -4,6 +4,19 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-06 — [mfg-farm] SKU Batch 2 CadQuery Templates COMPLETE
+
+**Deliverables**:
+- `cadquery/sku_batch_2_magnetic_labels.py` — build123d script, 6 label variants (BOLTS/BITS/TOOLS/SCREWS/NAILS/WASHERS), parametric magnet pocket (MAGNET_DIAMETER with ±0.05mm tuning), embossed text, CLI overrides for all critical tolerances, tuning notes on exit
+- `cadquery/sku_batch_2_plant_markers.py` — build123d script, 8 plant name variants, ASA print profile embedded in docstring and CLI output, parametric stake width/depth, tapered tip for soil penetration, text Y-offset for upper-third placement
+- `cadquery/sku_batch_2_pegboard_hooks.py` — build123d script, 3 size variants (small/medium/large: 35/45/55mm arm depth), PEG_DIAMETER tolerance tuning, full LABEL_VARIANTS set, 40% infill / 4-wall spec prominently noted, --all / --all-sizes / --size flags
+- `SKU_BATCH_2_TEST_PRINT_GUIDE.md` — print settings per product, tolerance calibration procedures for all 3 critical dimensions, ASA warping troubleshooting section, load test targets (2/5/10 kg by hook size), failure mode tables, May 13–17 weekly schedule, material checklist, post-print checklist
+- PROJECTS.md exploration queue item marked COMPLETE
+
+**Pattern**: All scripts follow build123d convention from modrun_rail_b123d.py / modrun_clip_b123d.py (constants block at top, per-function build, export_ wrapper, main() with argparse + tuning notes on exit).
+
+**Gate**: Execute test-print week of May 13–19 after ModRun test-print passes tolerance calibration.
+
 ## 2026-05-06 14:05–14:50 UTC — [Session 829] EXPLORATION QUEUE PARALLEL EXECUTION — 3 Research Deliverables Complete
 
 **Autonomous Work Executed** (3 agents in parallel):
