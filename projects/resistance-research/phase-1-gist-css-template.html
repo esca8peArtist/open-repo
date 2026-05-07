@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Democratic Renewal Framework — Gist Preview Template</title>
+
+  <!--
+    USAGE INSTRUCTIONS
+    ==================
+    This file serves two purposes:
+
+    1. LOCAL PREVIEW: Open this file in a browser to see how the Gist content
+       will render. The CSS here approximates GitHub's Primer CSS system closely
+       enough to validate layout, table structure, and mobile responsiveness.
+
+    2. CONTENT SOURCE: The Markdown inside the <pre class="gist-content"> block
+       at the bottom of this file is the exact text to paste into a new GitHub Gist.
+       GitHub Gist does not accept custom CSS — it renders Primer CSS only.
+       This HTML file is for preview and content preparation only, not for pasting
+       into Gist directly.
+
+    FIELD-FILL SEQUENCE:
+    Before pasting the Markdown content into a Gist, fill these placeholders:
+      [DOCUMENT TITLE]          — human-readable title of the document
+      [YOUR_CONTACT_INFO]       — your email, or leave blank for anonymous
+      [DOCUMENT_TYPE_BLOCK]     — domain / tracker / summary context block
+      [DOCUMENT_BODY]           — verbatim content from the local .md file
+      [CURRENCY_DATE]           — "Current through [Month Day, Year]"
+
+    All six Gist URLs below are already filled (live as of Session 678).
+    The only variable URL is the Domain 37 Gist (Path A+37 only).
+  -->
+
+  <style>
+    /* =========================================================
+       BASE — approximates GitHub Primer CSS for local preview
+       ========================================================= */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --color-canvas-default: #ffffff;
+      --color-canvas-subtle: #f6f8fa;
+      --color-border-default: #d0d7de;
+      --color-border-muted: #d8dee4;
+      --color-fg-default: #1f2328;
+      --color-fg-muted: #656d76;
+      --color-fg-subtle: #6e7781;
+      --color-accent-fg: #0969da;
+      --color-accent-emphasis: #0969da;
+      --color-success-fg: #1a7f37;
+      --color-attention-fg: #9a6700;
+      --color-danger-fg: #d1242f;
+      --color-neutral-muted: rgba(175, 184, 193, 0.2);
+      --color-code-bg: rgba(175, 184, 193, 0.2);
+      --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+                   Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      --font-mono: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+                   Liberation Mono, monospace;
+      --font-size-body: 16px;
+      --font-size-small: 12px;
+      --line-height-body: 1.5;
+      --border-radius: 6px;
+    }
+
+    /* =========================================================
+       DARK MODE — matches GitHub's dark theme (Primer dark)
+       ========================================================= */
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-canvas-default: #0d1117;
+        --color-canvas-subtle: #161b22;
+        --color-border-default: #30363d;
+        --color-border-muted: #21262d;
+        --color-fg-default: #e6edf3;
+        --color-fg-muted: #8b949e;
+        --color-fg-subtle: #6e7781;
+        --color-accent-fg: #58a6ff;
+        --color-accent-emphasis: #1f6feb;
+        --color-success-fg: #3fb950;
+        --color-attention-fg: #d29922;
+        --color-danger-fg: #f85149;
+        --color-neutral-muted: rgba(110, 118, 129, 0.4);
+        --color-code-bg: rgba(110, 118, 129, 0.4);
+      }
+    }
+
+    html {
+      font-size: var(--font-size-body);
+      line-height: var(--line-height-body);
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--font-size-body);
+      line-height: var(--line-height-body);
+      color: var(--color-fg-default);
+      background-color: var(--color-canvas-default);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* =========================================================
+       LAYOUT — Gist page chrome simulation
+       ========================================================= */
+
+    .gist-chrome {
+      background-color: var(--color-canvas-subtle);
+      border-bottom: 1px solid var(--color-border-default);
+      padding: 12px 24px;
+      font-size: 14px;
+      color: var(--color-fg-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .gist-chrome a {
+      color: var(--color-accent-fg);
+      text-decoration: none;
+    }
+
+    .gist-chrome .gist-owner {
+      font-weight: 600;
+    }
+
+    .gist-file-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--color-canvas-subtle);
+      border: 1px solid var(--color-border-default);
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+      padding: 8px 16px;
+      margin: 24px 0 0;
+      font-size: 12px;
+      color: var(--color-fg-muted);
+      font-family: var(--font-mono);
+    }
+
+    .gist-file-header .filename {
+      color: var(--color-accent-fg);
+      font-weight: 600;
+    }
+
+    .gist-wrapper {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+
+    /* =========================================================
+       MARKDOWN BODY — mirrors github-markdown-css / Primer
+       ========================================================= */
+
+    .markdown-body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--color-fg-default);
+      background-color: var(--color-canvas-default);
+      border: 1px solid var(--color-border-default);
+      border-top: none;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+      padding: 32px 40px;
+      word-wrap: break-word;
+    }
+
+    .markdown-body > *:first-child {
+      margin-top: 0;
+    }
+
+    .markdown-body > *:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Headings */
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .markdown-body h1 {
+      font-size: 2em;
+      border-bottom: 1px solid var(--color-border-muted);
+      padding-bottom: 0.3em;
+    }
+
+    .markdown-body h2 {
+      font-size: 1.5em;
+      border-bottom: 1px solid var(--color-border-muted);
+      padding-bottom: 0.3em;
+    }
+
+    .markdown-body h3 {
+      font-size: 1.25em;
+    }
+
+    /* h4–h6: visually similar to h3 on Gist — this matches Primer behavior */
+    .markdown-body h4,
+    .markdown-body h5,
+    .markdown-body h6 {
+      font-size: 1em;
+      color: var(--color-fg-muted);
+    }
+
+    /* Paragraphs and text */
+
+    .markdown-body p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .markdown-body strong {
+      font-weight: 600;
+    }
+
+    .markdown-body em {
+      font-style: italic;
+    }
+
+    .markdown-body del {
+      text-decoration: line-through;
+    }
+
+    /* Links */
+
+    .markdown-body a {
+      color: var(--color-accent-fg);
+      text-decoration: none;
+    }
+
+    .markdown-body a:hover {
+      text-decoration: underline;
+    }
+
+    /* Horizontal rules */
+
+    .markdown-body hr {
+      height: 0.25em;
+      padding: 0;
+      margin: 24px 0;
+      background-color: var(--color-border-default);
+      border: 0;
+    }
+
+    /* Blockquotes — Primer renders with blue left border accent */
+
+    .markdown-body blockquote {
+      margin: 0 0 16px;
+      padding: 0 1em;
+      color: var(--color-fg-muted);
+      border-left: 4px solid var(--color-accent-emphasis);
+    }
+
+    .markdown-body blockquote > :first-child {
+      margin-top: 0;
+    }
+
+    .markdown-body blockquote > :last-child {
+      margin-bottom: 0;
+    }
+
+    /* Lists */
+
+    .markdown-body ul,
+    .markdown-body ol {
+      margin-top: 0;
+      margin-bottom: 16px;
+      padding-left: 2em;
+    }
+
+    .markdown-body li {
+      margin-top: 0.25em;
+    }
+
+    .markdown-body li + li {
+      margin-top: 0.25em;
+    }
+
+    /* Task lists */
+
+    .markdown-body input[type="checkbox"] {
+      margin: 0 0.2em 0.25em -1.4em;
+      vertical-align: middle;
+    }
+
+    /* Inline code — renders as badge-style pill */
+
+    .markdown-body code {
+      font-family: var(--font-mono);
+      font-size: 85%;
+      padding: 0.2em 0.4em;
+      margin: 0;
+      background-color: var(--color-code-bg);
+      border-radius: 6px;
+    }
+
+    /* Code blocks */
+
+    .markdown-body pre {
+      font-family: var(--font-mono);
+      font-size: 85%;
+      line-height: 1.45;
+      margin-top: 0;
+      margin-bottom: 16px;
+      background-color: var(--color-canvas-subtle);
+      border-radius: var(--border-radius);
+      overflow: auto;
+      padding: 16px;
+      word-wrap: normal;
+    }
+
+    .markdown-body pre code {
+      font-size: 100%;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border-radius: 0;
+      display: inline;
+      overflow: visible;
+      word-wrap: normal;
+    }
+
+    /* Tables */
+
+    .markdown-body table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      display: block;
+      width: max-content;
+      max-width: 100%;
+      overflow: auto;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .markdown-body thead {
+      background-color: var(--color-canvas-subtle);
+    }
+
+    .markdown-body th {
+      font-weight: 600;
+      padding: 6px 13px;
+      border: 1px solid var(--color-border-default);
+    }
+
+    .markdown-body td {
+      padding: 6px 13px;
+      border: 1px solid var(--color-border-default);
+    }
+
+    .markdown-body tr:nth-child(2n) {
+      background-color: var(--color-canvas-subtle);
+    }
+
+    /* Images */
+
+    .markdown-body img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* =========================================================
+       ZONE LABELS — visual guide for preview only (not in Gist)
+       ========================================================= */
+
+    .zone-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+      font-family: var(--font-mono);
+    }
+
+    .zone-a { background-color: #dbeafe; color: #1e40af; }
+    .zone-b { background-color: #dcfce7; color: #166534; }
+    .zone-c { background-color: #fef9c3; color: #854d0e; }
+    .zone-d { background-color: #f3e8ff; color: #6b21a8; }
+
+    @media (prefers-color-scheme: dark) {
+      .zone-a { background-color: #1e3a5f; color: #93c5fd; }
+      .zone-b { background-color: #14532d; color: #86efac; }
+      .zone-c { background-color: #713f12; color: #fde68a; }
+      .zone-d { background-color: #3b0764; color: #d8b4fe; }
+    }
+
+    /* =========================================================
+       MOBILE BREAKPOINTS
+       ========================================================= */
+
+    @media (max-width: 767px) {
+      .gist-wrapper {
+        padding: 12px 8px 48px;
+      }
+
+      .markdown-body {
+        padding: 20px 16px;
+        font-size: 14px;
+      }
+
+      .markdown-body h1 {
+        font-size: 1.6em;
+      }
+
+      .markdown-body h2 {
+        font-size: 1.3em;
+      }
+
+      .markdown-body h3 {
+        font-size: 1.1em;
+      }
+
+      /* Tables scroll horizontally on mobile — correct Primer behavior */
+      .markdown-body table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .markdown-body pre {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .gist-chrome {
+        padding: 8px 12px;
+        font-size: 12px;
+        flex-wrap: wrap;
+      }
+    }
+
+    /* =========================================================
+       PREVIEW NOTICE (strip for actual Gist)
+       ========================================================= */
+
+    .preview-notice {
+      background-color: var(--color-canvas-subtle);
+      border: 1px solid var(--color-border-default);
+      border-radius: var(--border-radius);
+      padding: 12px 16px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      color: var(--color-fg-muted);
+      font-family: var(--font-body);
+    }
+
+    .preview-notice strong {
+      color: var(--color-fg-default);
+    }
+
+    /* =========================================================
+       GIST CONTENT DISPLAY AREA (raw text, copy-paste source)
+       ========================================================= */
+
+    .gist-content-source {
+      display: none; /* Hidden by default — toggle to display: block to inspect raw MD */
+      background-color: var(--color-canvas-subtle);
+      border: 1px solid var(--color-border-default);
+      border-radius: var(--border-radius);
+      padding: 24px;
+      margin-top: 48px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      color: var(--color-fg-default);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Simulated GitHub Gist page chrome -->
+  <div class="gist-chrome">
+    <a class="gist-owner" href="https://gist.github.com/esca8peArtist">esca8peArtist</a>
+    /
+    <span class="filename">[GIST-FILENAME].md</span>
+    &nbsp;&middot;&nbsp;
+    <span>Created just now</span>
+  </div>
+
+  <div class="gist-wrapper">
+
+    <!-- Preview notice — remove when copy-pasting content into Gist -->
+    <div class="preview-notice">
+      <strong>Preview mode.</strong> This HTML file approximates GitHub Primer CSS rendering.
+      To publish: copy the Markdown content from the section labeled "ZONE A" through "ZONE D"
+      below and paste it into a new GitHub Gist (gist.github.com/new). Set visibility to Public.
+      This HTML wrapper and the zone labels do not go into the Gist.
+    </div>
+
+    <!-- Simulated Gist file header bar -->
+    <div class="gist-file-header">
+      <span class="filename">[GIST-FILENAME].md</span>
+      <span>[X] lines &middot; [Y] KB</span>
+    </div>
+
+    <!-- ============================================================
+         RENDERED PREVIEW — this is what visitors see at the Gist URL
+         ============================================================ -->
+
+    <div class="markdown-body">
+
+      <!-- ========== ZONE A: Framework Header ========== -->
+      <span class="zone-label zone-a">Zone A — Framework Header (paste first in Gist)</span>
+
+      <hr>
+      <p>
+        <strong>Research project</strong>: Democratic Renewal Framework (35-domain analysis, CC 4.0)<br>
+        <strong>Document</strong>: [DOCUMENT TITLE]<br>
+        <strong>Framework version</strong>: May 2026<br>
+        <strong>License</strong>: Creative Commons Attribution 4.0 International (CC BY 4.0) — cite freely, adapt freely<br>
+        <strong>Full framework</strong>: <a href="https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261">https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261</a><br>
+        <strong>Executive summary</strong>: <a href="https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4">https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4</a><br>
+        <strong>Contact</strong>: [YOUR_CONTACT_INFO — fill before publishing, or leave blank for anonymous]
+      </p>
+      <hr>
+
+      <!-- ========== ZONE B: Document-Type Context Block ========== -->
+      <span class="zone-label zone-b">Zone B — Document Context Block (varies by document type)</span>
+
+      <!--
+        FOR DOMAIN FILES: use the domain-context block below.
+        FOR TRACKER FILES: use the tracker-context block below.
+        FOR EXECUTIVE SUMMARY / PROPOSAL: omit Zone B entirely.
+        Delete the inapplicable blocks before publishing.
+      -->
+
+      <!-- DOMAIN FILE CONTEXT BLOCK -->
+      <p>
+        <strong>Domain</strong>: [DOMAIN NUMBER] — [DOMAIN TITLE]<br>
+        <strong>Parent framework section</strong>: [e.g., "Part IV — Electoral Security"]<br>
+        <strong>Framework domains total</strong>: 35<br>
+        <strong>Advocacy windows</strong>:
+      </p>
+      <ul>
+        <li>[Date 1]: [Window description] — [Action needed]</li>
+        <li>[Date 2]: [Window description] — [Action needed]</li>
+        <li>[Date 3]: [Window description] — [Action needed]</li>
+      </ul>
+      <p><strong>Cross-reference domains</strong>: Domain [N] ([title]), Domain [N] ([title])</p>
+
+      <hr>
+
+      <!-- TRACKER FILE CONTEXT BLOCK (use instead of domain block for tracker Gists) -->
+      <!--
+      <p>
+        <strong>Tracker</strong>: [TRACKER NAME]<br>
+        <strong>Last updated</strong>: [DATE]<br>
+        <strong>Update cadence</strong>: Monthly; major developments added within 48 hours<br>
+        <strong>New entries this update</strong>: [COUNT and brief description]<br>
+        <strong>Companion framework domain(s)</strong>: [Domain numbers]
+      </p>
+      <hr>
+      -->
+
+      <!-- ========== ZONE C: Document Body ========== -->
+      <span class="zone-label zone-c">Zone C — Document Body (paste verbatim from local .md file)</span>
+
+      <h1>[DOCUMENT TITLE]</h1>
+
+      <h2>Overview</h2>
+      <p>
+        [DOCUMENT_BODY — paste the full content of the local .md file here. Do not edit
+        the content before pasting. The body renders exactly as it appears in the local file.]
+      </p>
+
+      <p>The section structure below is illustrative — it shows how typical domain
+      analysis sections render in Primer CSS. Replace with actual document content.</p>
+
+      <h2>Section 1 — Illustrative Heading Structure</h2>
+
+      <p>
+        Body paragraph text renders at 16px in Primer with 1.5 line height. Inline links render
+        with the Primer accent color (blue on light mode, lighter blue on dark mode).
+        <a href="#">Example link text</a> shows the hover-underline behavior.
+      </p>
+
+      <blockquote>
+        <p>Blockquotes render with a left-border accent in Primer blue. Useful for callout boxes,
+        key findings, or quoted legal language within document bodies.</p>
+      </blockquote>
+
+      <h3>Section 1.1 — Subsection (h3)</h3>
+
+      <p>Third-level headings render with no bottom border. All heading levels h1–h3 have
+      clear visual differentiation. Headings h4–h6 render at body text size with muted
+      color — do not use them in Gist-facing documents.</p>
+
+      <p>Illustrative table showing how domain evidence tables render:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Finding</th>
+            <th>Source</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Example Category A</td>
+            <td>Finding text renders in regular weight. Cell widths auto-adjust.</td>
+            <td><a href="#">Source Name</a></td>
+            <td>May 2026</td>
+          </tr>
+          <tr>
+            <td>Example Category B</td>
+            <td>Every other row is shaded in the subtle canvas color (Primer default).</td>
+            <td><a href="#">Source Name</a></td>
+            <td>April 2026</td>
+          </tr>
+          <tr>
+            <td>Example Category C</td>
+            <td>Tables scroll horizontally on mobile viewports.</td>
+            <td><a href="#">Source Name</a></td>
+            <td>March 2026</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>Inline code renders as a <code>badge-style pill</code> using the Primer code background color.
+      Status indicators like <code>ACTIVE</code> or <code>PENDING</code> work well in this format.</p>
+
+      <pre><code># Code blocks render in monospace with syntax-highlighted background
+# Use triple-backtick fencing with language identifier
+# Example: ```python, ```bash, ```json</code></pre>
+
+      <h2>Section 2 — Task List Example</h2>
+
+      <p>Task lists render correctly in Gist GFM:</p>
+
+      <ul>
+        <li><input type="checkbox"> Unchecked task item</li>
+        <li><input type="checkbox" checked> Completed task item</li>
+        <li><input type="checkbox"> Another task</li>
+      </ul>
+
+      <!-- ========== ZONE D: Standard Footer ========== -->
+      <hr>
+      <span class="zone-label zone-d">Zone D — Standard Footer (paste last in Gist)</span>
+
+      <h2>About This Document</h2>
+
+      <p>
+        <strong>Part of</strong>: The 35-domain Democratic Renewal Research Framework<br>
+        <strong>Full framework</strong>: <a href="https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261">https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261</a><br>
+        <strong>Executive summary</strong>: <a href="https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4">https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4</a><br>
+        <strong>Litigation tracker</strong>: <a href="https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0">https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0</a><br>
+        <strong>License</strong>: Creative Commons Attribution 4.0 International. Cite, adapt, and distribute freely with attribution.
+      </p>
+
+      <p><strong>Other documents in this series</strong>:</p>
+      <ul>
+        <li>First Amendment Suppression Tracker: <a href="https://gist.github.com/esca8peArtist/10d0a86e386e6c3c11c3830295a6503c">https://gist.github.com/esca8peArtist/10d0a86e386e6c3c11c3830295a6503c</a></li>
+        <li>Environmental Rollbacks Tracker: <a href="https://gist.github.com/esca8peArtist/87e2bdb931b77480e56a08044c567bc4">https://gist.github.com/esca8peArtist/87e2bdb931b77480e56a08044c567bc4</a></li>
+        <li>Police Consent Decree Tracker: <a href="https://gist.github.com/esca8peArtist/1f5cb28527c98d12526c14302c725731">https://gist.github.com/esca8peArtist/1f5cb28527c98d12526c14302c725731</a></li>
+      </ul>
+
+      <p>
+        <strong>Research standard</strong>: All claims are sourced to primary materials — court filings,
+        congressional records, peer-reviewed research, official government documents, and primary
+        journalism from named reporters at identified outlets. No anonymous sources used as primary evidence.
+      </p>
+
+      <p>
+        <strong>Currency</strong>: [CURRENCY_DATE — e.g., "Current through May 1, 2026. Update log maintained in source repository."]
+      </p>
+
+      <p>
+        <strong>How to stay current</strong>: This document is updated in research sessions tracking
+        active developments. If you received this document via direct outreach and would like to
+        be notified of significant updates, reply to the email you received it through.
+      </p>
+
+    </div><!-- end .markdown-body -->
+
+    <!--
+      ================================================================
+      COPY-PASTE MARKDOWN SOURCE — THIS IS WHAT GOES INTO THE GIST
+      ================================================================
+      To use: reveal this section by setting .gist-content-source to
+      display: block in the CSS above, or view the raw HTML source.
+      Copy everything below from "---" to the end of the closing triple-dash.
+      ================================================================
+    -->
+
+    <div class="gist-content-source" id="gist-source">
+---
+Research project: Democratic Renewal Framework (35-domain analysis, CC 4.0)
+Document: [DOCUMENT TITLE]
+Framework version: May 2026
+License: Creative Commons Attribution 4.0 International (CC BY 4.0) — cite freely, adapt freely
+Full framework: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+Executive summary: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
+Contact: [YOUR_CONTACT_INFO]
+---
+
+---
+**Domain**: [DOMAIN NUMBER] — [DOMAIN TITLE]
+**Parent framework section**: [e.g., "Part IV — Electoral Security and Democratic Process"]
+**Framework domains total**: 35
+**Advocacy windows**:
+  - [Date 1]: [Window description] — [Action needed]
+  - [Date 2]: [Window description] — [Action needed]
+  - [Date 3]: [Window description] — [Action needed]
+**Cross-reference domains**: Domain [N] ([title]), Domain [N] ([title])
+---
+
+# [DOCUMENT TITLE]
+
+[DOCUMENT_BODY — paste verbatim from local .md file. Do not edit before pasting.]
+
+---
+
+## About This Document
+
+**Part of**: The 35-domain Democratic Renewal Research Framework
+**Full framework**: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+**Executive summary**: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
+**Litigation tracker**: https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0
+**License**: Creative Commons Attribution 4.0 International. Cite, adapt, and distribute freely with attribution.
+
+**Other documents in this series**:
+- First Amendment Suppression Tracker: https://gist.github.com/esca8peArtist/10d0a86e386e6c3c11c3830295a6503c
+- Environmental Rollbacks Tracker: https://gist.github.com/esca8peArtist/87e2bdb931b77480e56a08044c567bc4
+- Police Consent Decree Tracker: https://gist.github.com/esca8peArtist/1f5cb28527c98d12526c14302c725731
+
+**Research standard**: All claims are sourced to primary materials — court filings, congressional
+records, peer-reviewed research, official government documents, and primary journalism from named
+reporters at identified outlets. No anonymous sources used as primary evidence.
+
+**Currency**: [CURRENCY_DATE — e.g., "Current through May 1, 2026."]
+
+**How to stay current**: This document is updated in research sessions tracking active developments.
+If you received this document via direct outreach and would like to be notified of significant
+updates, reply to the email you received it through.
+    </div>
+
+  </div><!-- end .gist-wrapper -->
+
+</body>
+</html>
