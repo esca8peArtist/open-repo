@@ -4,6 +4,25 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 — Session 895 (Research Agent) — mfg-farm Batch 3–4 Product Candidate Research COMPLETE
+
+**Files created:**
+- `projects/mfg-farm/batch-3-candidate-research.md` (~3,100 words)
+- `projects/mfg-farm/batch-3-margin-validation.csv` (5 rows, 12 columns)
+- `projects/mfg-farm/batch-3-4-launch-sequencing.md` (~1,100 words)
+
+**Batch 3 frontrunners (go/no-go ready):**
+1. **Magnetic workshop bin labels** (Rank 1) — CadQuery design already committed, 72.5% gross margin, 4 min effective per tile, AliExpress magnet order is the only gate. Go/no-go: GO immediately. Order 200× N52 8mm magnets from Amazon domestic ($30) to launch in <1 week. Calibrate magnet pocket diameter on one test plate before production.
+2. **Monitor riser legs** (Rank 2) — 69.2% gross margin, $21 net per set, direct ModRun buyer cross-sell. Design NOT yet built (3–4 hours CadQuery). Go/no-go: GO as soon as design is built. No new materials beyond silicone rubber feet (Amazon, $5/100-pack).
+
+**Batch 4 (Month 3–4):** Pegboard hooks (design complete, peg tolerance test required) and garden plant markers (design complete, ASA print profile calibration required).
+
+**Eliminated:** Flexi animals (Blender design, out of scope), Gridfinity bins (Etsy original-design risk), planters (below margin floor), gaming controller stands (IP adjacency risk), pet memorials (per-order labor bottleneck).
+
+**Go/no-go decision rule:** Launch a product when (a) design is complete and test-printed, (b) all BOM components are physically in hand, (c) gross margin is ≥65% at planned sell price. For Batch 3: bin labels meet all three criteria within 1 week of ordering magnets. Monitor risers meet criteria within 2–3 weeks of design start.
+
+---
+
 ## 2026-05-07 23:45 UTC — Session 894 (Orchestrator) — PARALLEL EXECUTION: Domain Currency Verification + Phase 2 Institutional Outreach Planning
 
 **Parallel agents completed** (2 independent items, ~7 hours combined work):
