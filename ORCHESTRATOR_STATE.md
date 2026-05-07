@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-07T03:35:38Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-07T04:53:29Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.4% (394,896 tokens) | All-models 64.2% | Reset in 116h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 4.4% (394,896 tokens) | All-models 65.9% | Reset in 115h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
-**Focus**: **Session 837 (2026-05-06): May 2026 Domain Maintenance COMPLETE; Phase 1 Domains Current + Ready for Distribution**. Three domains updated with FISA 702 final outcome and Callais redistricting cascade. Framework 100% ready for Phase 1 execution.
+**Focus**: **Session 861 (2026-05-07): Phase 2 Domain Expansion COMPLETE; Domains 42–43 Researched & Committed**. Two new Phase 2 domains (6,860 + 6,777 words) open institutional audiences (drug policy orgs, media/epistemology experts) and address critical governance gaps. **CRITICAL DEADLINE**: Domain 42 (D
 **Blocked**: User distribution path decision (A / A+37 / B)
 
 ### cybersecurity-hardening
@@ -38,7 +38,7 @@
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
-**Focus**: **Track B Final Execution Prep COMPLETE (Session 728)**. All assets verified, all execution guides written. User can execute immediately with zero ambiguity:
+**Focus**: **Phase 2 + Phase 3 Execution Prep Complete (Sessions 728, 861)**. Phase 2 launches May 30, 2026. Phase 3 (Medicinal Herbs) implementation assets production-ready.
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
