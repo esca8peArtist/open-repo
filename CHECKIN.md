@@ -4,6 +4,38 @@
 
 **Session Focus**: Verified orientation from Session 884. Confirmed all major projects have delivered Phase 1/2 infrastructure and await user decisions, actions, or scheduled checkpoints. No autonomous code/research work available; exploration queue items blocked on prerequisites. Prepared documentation for next checkpoint (May 12 Gate 1).
 
+**Needs Your Input**:
+
+**IMMEDIATE (if pursuing May 28 deadline):**
+1. **resistance-research: Distribution path decision** — Choose A (immediate), A+Domain37 (recommended hybrid), or B (continued research)
+   - **Impact**: Unlocks Phase 1 launch within 4 hours of decision
+   - **Domain 42 deadline**: May 28 DEA hearing (21 days) — Wave 1 outreach requires May 8 email send
+   - **What's ready**: All templates, contact lists, execution playbook, 10-step Gist guide
+
+**CRITICAL (scheduled May 12):**
+2. **stockbot: Architecture decisions review** — Review ARCH-1–7 in `projects/stockbot/CODE_REVIEW_SYNTHESIS.md` and confirm direction
+   - **Impact**: Unblocks post-Gate-1 code refactoring (high-priority after May 12 checkpoint)
+   - **What's ready**: Full decision matrix with 4-layer code review, 15 auto-fixes applied, recommendations for 7 architecture changes
+   - **Time needed**: 30–45 minutes to review
+
+**SOON (within 7 days):**
+3. **cybersecurity-hardening: Phase 1 Tier 1 approval** — Confirm Phase 1 threat accuracy and tier-1-assignment
+   - **Impact**: Unlocks outreach to 45 Tier 1 organizations; Phase 2 can run in parallel
+   - **What's ready**: All 3 Tier 1 playbooks + threat briefing docs + engagement metrics framework
+
+**User Actions Required** (not architectural):
+4. **mfg-farm: Test print** — Print ModRun cable clips to validate FDM tolerance calibration
+   - **Impact**: Unlocks $4,300–$7,500/month revenue scaling sequence
+   - **What's ready**: CadQuery designs, cost model, supplier negotiation playbook
+
+5. **seedwarden Track B: Social account setup** — Create Instagram, TikTok, Pinterest accounts (30-60 min total)
+   - **Impact**: Starts 23-day countdown to May 30 launch
+   - **What's ready**: Account checklists, Brand Kit spec, Canva setup guide
+
+6. **open-repo: PR review/merge** — Review PR #1 (federation service) for merge
+   - **Impact**: Unlocks Phase 5 work (offline export/Kiwix integration)
+   - **What's ready**: 194/198 tests passing, 0 failures, full documentation
+
 ---
 
 ## Session 884 — 2026-05-07 13:01 UTC — ORCHESTRATION STATE CHECKPOINT (ALL AUTONOMOUS WORK BLOCKED)
