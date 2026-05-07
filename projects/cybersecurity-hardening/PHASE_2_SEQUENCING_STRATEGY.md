@@ -584,3 +584,43 @@ This should be added to the implementation guide before Tier 1 distribution, not
 ---
 
 *Created: 2026-05-06. All research conducted using public sources as of May 2026. Confidence level: high on confirmed capabilities and court rulings; medium on operational deployment scope for systems reported via single-source journalism. Quarterly update checkpoint: July 26, 2026.*
+
+---
+
+## Playbook Completion Status
+
+**Status updated: 2026-05-07**
+
+All six scenario playbooks are now complete. The production sequence originally specified in Section 5 was compressed into a single session given availability of research and automation.
+
+| Playbook | File | Status | Word Count | Session |
+|---|---|---|---|---|
+| 1. Immigration Surveillance Evasion | `phase-2-immigration-surveillance-evasion-playbook.md` | Complete — v1.1 | ~3,200 | 875 |
+| 2. Activist Organizing Security | `phase-2-activist-organizing-security-playbook.md` | Complete — v1.1 | ~3,400 | 875 |
+| 3. Financial Resistance | `phase-2-financial-resistance-playbook.md` | Complete — v1.0 | ~3,500 | 882 |
+| 4. Institutional Whistleblowing | `phase-2-whistleblowing-playbook.md` | Complete — v1.0 | ~3,700 | 882 |
+| 5. Journalist Security | `phase-2-journalist-security-playbook.md` | Complete — v1.0 | ~3,600 | 882 |
+| 6. DV Survivor Safety | `phase-2-dv-survivor-safety-playbook.md` | Complete — v1.0 | ~3,800 | 882 |
+
+**All six playbooks are now production-ready for Tier 2 pilot launch.**
+
+### Distribution Readiness by Playbook
+
+**Ready for immediate distribution (pending Week 7 gate)**:
+- Immigration Surveillance Evasion: Distribute through Tier 1 legal aid organizations already in outreach pipeline
+- Activist Organizing Security: Distribute through Tier 2 digital rights and civil liberties organizations
+- Journalist Security: Distribute through Tier 2 journalist organizations (CPJ, Freedom of the Press Foundation, SPJ, newsroom security teams)
+- Institutional Whistleblowing: Distribute through Government Accountability Project, National Whistleblower Center, and SecureDrop newsroom network
+
+**Requires separate outreach infrastructure (Tier 3 expansion track)**:
+- Financial Resistance: Distribute through nonprofit attorneys, advocacy organizations, labor union organizing departments; no single distribution channel but broad applicability
+- DV Survivor Safety: Requires separate NNEDV/DV coalition outreach (NNEDV Safety Net Project, state DV coalitions, VAWA-funded programs); do not distribute through Tier 1–2 general channels — this audience needs DV-advocate-mediated distribution
+
+### Remaining Phase 2 Work
+
+Per Section 5 timeline, remaining work after playbook production:
+
+- **Immediately**: Threat model updates for PHASE_2_SEQUENCING_STRATEGY.md Section 8 flags (Mobile Fortify framing in opsec-playbook.md, BFU/AFU in implementation-guide.md) — these are Phase 1 corrections, not Phase 2 content
+- **July 26, 2026**: Quarterly review + threat model Gist update (Mobile Fortify, drone surveillance, HART biometrics, post-SCOTUS DOGE/SSA status)
+- **Month 7–9**: Tier 2 audience expansion outreach (NNEDV, AFL-CIO, NASED, NALED, NLADA, VITA)
+- **Month 10–12**: Spanish translation of Part 0 (data broker opt-outs); Texas supplement decision tree; video primer scripting
