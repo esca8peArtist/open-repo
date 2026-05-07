@@ -29602,3 +29602,71 @@ Added 3 new items to PROJECTS.md (lines ~835+):
 - BLOCKED.md — No new blocks (unchanged)
 - INBOX.md — No new items
 
+
+---
+
+## 2026-05-07 13:49 UTC — (Session 887 — Orchestrator) — EXPLORATION QUEUE REFRESH + ITEM 1 COMPLETE
+
+**Status**: Exploration queue at 0 items (Session 886 completed all 3 queue items). Per protocol: replenish queue, work top item.
+
+**Actions Taken**:
+
+### 1. Queue Refresh — Add 3 New Exploration Items
+
+Added to PROJECTS.md exploration queue:
+
+1. **stockbot: Post-Trade Analytics Stack Unification (Phase 6+)** (3–4 hrs, no prerequisites)
+   - Consolidate three parallel analytics systems: PostTradeAnalyzer, Phase 6 dead stack, three PerformanceMetrics classes
+   - Scope: unified architecture design, implementation roadmap (4 phases, 14h total)
+
+2. **cybersecurity-hardening: Phase 3 Operational Integration & Threat-Model Adoption Monitoring** (3–4 hrs)
+   - Post-Phase-2 organizational adoption: how do institutions operationalize threat models?
+   - Scope: success metrics, integration checkpoints, feedback loop design
+
+3. **resistance-research: Phase 2 Litigation Tracking & Domain Intelligence Pipeline** (4–5 hrs)
+   - Phase 2 tracks legal/legislative changes per domain
+   - Scope: intelligence pipeline design, litigation tracking, attribution methodology
+
+**Committed**: PROJECTS.md (commit 9843e204)
+
+---
+
+### 2. Item 1 Execution — stockbot Post-Trade Analytics Stack Unification
+
+**Deliverable**: `projects/stockbot/framework-unified-analytics-architecture.md` (514 lines, design document, production-ready)
+
+**What it covers**:
+- Current state analysis (PostTradeAnalyzer + Phase 6 stack + naming collisions)
+- Unified architecture (5 components: realtime engine, round-trip attribution, snapshots, post-trade analysis, API)
+- Implementation roadmap (Phase 1: rename + consolidate 5h; Phase 2: extend PostTradeAnalyzer 4h; Phase 3: API 3h; Phase 4: testing 2h)
+- Migration path (zero breaking changes; renamed classes, new methods, no removed APIs)
+- Success criteria (PerformanceMetrics properly namespaced, Phase 6 dead code removed, new endpoints tested)
+
+**Key Insights**:
+- RealtimeMetricsEngine encapsulates Phase 6 logic; interface stable, internal refactoring only
+- PerformanceSnapshot (rename from ORM PerformanceMetrics) consolidates storage; no schema changes
+- PostTradeAnalyzer extended with attribution_summary(), signal_effectiveness(), strategy_comparison()
+- Unified AnalyticsReport composes realtime + historical + post-trade into single API response
+- Feasible pre-Gate-2 launch; implementation begins immediately post-Gate-1 (May 12)
+
+**Business Value**: 
+- Removes technical debt before multi-ticker scaling
+- Enables production-grade dashboards (history + realtime + analysis)
+- No breaking changes; existing code continues working
+
+**Committed**: `projects/stockbot/framework-unified-analytics-architecture.md` (stockbot submodule, commit e923399)
+
+---
+
+**Project Status**:
+- All prior blocks unchanged (resistance-research path decision, stockbot ARCH decisions, mfg-farm test print, seedwarden Track A)
+- Queue refreshed with 3 ready-to-work items (no prerequisites, independent of user decisions)
+- Item 1 (stockbot) design-complete; implementation ready post-Gate-1
+
+**Next Session Options**:
+1. Work remaining 2 exploration items (5-9 hours) if time available
+2. Wait for user decisions to unblock project work
+3. Monitor May 12 Gate 1 checkpoint; if Pass, begin Gate 2 implementation immediately
+
+**Suggested Priority**: Items 1-2 are research/design (no risks); execute before May 12 if time available to build readiness.
+

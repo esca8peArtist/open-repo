@@ -1,3 +1,64 @@
+## Session 887 (2026-05-07 13:49–15:20 UTC) — EXPLORATION QUEUE REFRESH + ITEM 1 COMPLETE
+
+### ✅ SESSION COMPLETE: Queue replenished with 3 items; stockbot analytics architecture designed
+
+**What Was Accomplished**:
+
+**Exploration Queue Refresh** (Per Protocol):
+- ✅ Detected queue at 0 items after Session 886 completed all 3. Per protocol: replenish with 2-3 new items.
+- ✅ Added 3 new items to PROJECTS.md:
+  1. **stockbot: Post-Trade Analytics Stack Unification** — Consolidate Phase 6 dead stack + PostTradeAnalyzer + three PerformanceMetrics classes
+  2. **cybersecurity-hardening: Phase 3 Operational Integration** — Post-Phase-2 adoption: how do orgs operationalize threat models?
+  3. **resistance-research: Phase 2 Litigation Tracking Pipeline** — Intelligence infrastructure for legal/legislative tracking per domain
+
+**✅ Item 1 Execution — stockbot Post-Trade Analytics Stack Unification COMPLETE**
+
+**Deliverable**: `projects/stockbot/framework-unified-analytics-architecture.md` (514 lines, production-ready design)
+
+**What it covers**:
+- **Current state**: PostTradeAnalyzer (production: post-trade attribution + drift), Phase 6 stack (semi-dead: real-time metrics), naming collision (3 PerformanceMetrics classes)
+- **Unified design**: 5 components (realtime engine, round-trip attribution, snapshots, post-trade analysis, API contract)
+- **Implementation roadmap**: 4 phases (Phase 1: rename + consolidate 5h; Phase 2: extend PostTradeAnalyzer 4h; Phase 3: API 3h; Phase 4: testing 2h). Total: 14 hours. Starts immediately post-Gate-1 (May 12).
+- **Zero breaking changes**: RealtimeMetricsEngine encapsulates Phase 6 logic; PerformanceSnapshot renames ORM; new methods extend PostTradeAnalyzer
+
+**Key Insights**:
+1. RealtimeMetricsEngine interface unchanged (wrapper on Phase 6 MetricsCollector) — all existing code continues working
+2. PerformanceSnapshot consolidates DB storage (renamed from ORM PerformanceMetrics) — eliminates naming collision
+3. PostTradeAnalyzer extended with attribution_summary(), signal_effectiveness(), strategy_comparison()
+4. Unified AnalyticsReport response composes realtime + historical + post-trade into single API response
+5. Eliminates ~500 LOC of dead code (MetricsExporter, StrategyAnalyzer stubs) while preserving all active functionality
+
+**Business Value**: 
+- Removes technical debt before multi-ticker scaling (Gate 2 covered calls)
+- Enables production-grade dashboards with realtime metrics + historical equity curves + post-trade attribution
+- No risk; implementation ready immediately post-Gate-1
+
+**Committed**: `projects/stockbot/framework-unified-analytics-architecture.md` (stockbot submodule, commit e923399)
+
+---
+
+**Projects Status** (Unchanged):
+- 🔴 **resistance-research**: Phase 1 infrastructure ready; awaiting user path decision (A/A+37/B). Domain 42 outreach calendar complete.
+- 🔴 **stockbot**: ARCH-1–7 review pending. Analytics consolidation design complete and ready for implementation post-Gate-1.
+- 🔴 **cybersecurity-hardening**: Phase 1 ready for approval. Tier 2 complete. Phase 3 research queued.
+- 🔴 **mfg-farm**: Designs complete; test print awaiting execution.
+- 🔴 **seedwarden**: Phase 2 logistics complete. May 7 vendor order ready to place.
+
+**Exploration Queue Status**:
+- ✅ **stockbot: Post-Trade Analytics Stack Unification** — COMPLETE (design document committed)
+- ⏳ **cybersecurity-hardening: Phase 3 Operational Integration** — Queued (3–4 hrs)
+- ⏳ **resistance-research: Phase 2 Litigation Tracking Pipeline** — Queued (4–5 hrs)
+
+**Next Session Options**:
+1. **Work remaining 2 exploration items** (5-9 hours total) if time available before May 12
+   - Both are research/design; no risks; build readiness for post-user-decision execution
+2. **Wait for user decisions** to unblock project work (path decision, ARCH approval, test print)
+3. **Monitor May 12 Gate 1 checkpoint**; if Pass, begin Gate 2 implementation immediately using Gate 2 roadmap (from prior session)
+
+**Suggested Priority**: Complete exploration items 2-3 before May 12 to maximize readiness. Both are independent, high-value design work.
+
+---
+
 ## Session 886 (2026-05-07 13:34–16:00 UTC) — EXPLORATION QUEUE COMPLETE: 3 ITEMS DELIVERED (PARALLEL EXECUTION)
 
 ### ✅ SESSION COMPLETE: Exploration queue refreshed and fully executed; 3 production-ready strategy documents delivered
