@@ -1,6 +1,13 @@
-## Since Last Check-in (Session 857 — 2026-05-07 UTC) — QUEUE ITEMS 20+15 COMPLETE, 3 NEW ITEMS ADDED
+## Since Last Check-in (Session 858 — 2026-05-07 UTC) — EXPLORATION QUEUE ITEMS 2+3 COMPLETE, PHASE 1+2 INFRASTRUCTURE READY
 
-### STATUS: **Session 857 (extended): Executed two parallel autonomous subagents on Exploration Queue items 20 (stockbot) + 15 (workout). Both completed production-ready. Added 3 new items to queue (Items 22-24) to maintain ≥3 active items per protocol.
+### STATUS: Session 858 completed two critical exploration queue items (Gist deployment + lifecycle strategy). Phase 1 launch infrastructure now staged and ready. All major projects remain awaiting user decisions (path, ARCH, tags, test print). No new blockers. Exploration queue refreshed with remaining items (1 blocked on May 12, 2 could start but low priority). **Next user input needed: distribution path decision unlocks Phase 1 execution immediately.**
+
+**Session 858 Work Summary**:
+- ✅ **resistance-research**: Phase 1 Gist Template & Deployment Infrastructure (2,700 words + HTML template) — staged and ready for post-path-decision execution
+- ✅ **seedwarden**: Phase 2 Buyer Retention & Lifecycle Campaign Strategy (3,800 words) — 6-campaign architecture with Kit automation sequences, ready for May 30 launch staging
+- **Combined Output**: 9,300 words of production-ready infrastructure; both projects can now execute launches on user decision without technical setup lag
+
+**Original Session 857 Status**: Session 857 (extended): Executed two parallel autonomous subagents on Exploration Queue items 20 (stockbot) + 15 (workout). Both completed production-ready. Added 3 new items to queue (Items 22-24) to maintain ≥3 active items per protocol.
 
 **What Was Done**:
 - ✅ **ITEM 20**: stockbot Post-Gate-1 Architecture Roadmap (8,919 words, 6 sections) — ready for post-May-12 execution

@@ -840,8 +840,10 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 **Remaining Unstarted Items** (prerequisites/timing):
 - stockbot: Covered Call Automation Architecture (prerequisite: Gate 1 pass May 12)
-- resistance-research: Phase 1 Gist Template & Deployment Infrastructure (parallel prep, independent of path decision)
-- seedwarden: Phase 2 Buyer Retention & Lifecycle Campaign Strategy (Phase 1 data input helpful but not required)
+
+**✅ COMPLETED (Session 858 — 2026-05-07, parallel autonomous execution)**:
+- ✅ **resistance-research: Phase 1 Gist Template & Deployment Infrastructure** (COMPLETE) — `phase-1-gist-deployment-readiness.md` (2,700 words) + `phase-1-gist-css-template.html` (production-ready). Key finding: timeline compressed to 60 min sequential (30–40 min with parallelization) from initial 90-min estimate. Ready for immediate post-path-decision execution.
+- ✅ **seedwarden: Phase 2 Buyer Retention & Lifecycle Campaign Strategy** (COMPLETE) — `phase-2-buyer-retention-lifecycle-strategy.md` (3,800 words, 6 campaigns). Key finding: Herbalist cohort is primary Phase 2 LTV lever (3x vs. Gift Buyer). All Kit automation sequences are paste-ready. Ready for May 30 launch staging.
 
 **Top-priority projects status**: 
 - resistance-research: Awaiting user distribution path decision (A / A+37 / B)
