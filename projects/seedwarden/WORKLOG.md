@@ -4,6 +4,25 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 61 — 2026-05-07 — Phase 3 Medicinal Herbs Strategy + Candidate List
+
+**Task**: Phase 3 product line planning for medicinal herb guides targeting herbalist and practitioner audiences.
+
+**Files created**:
+- `projects/seedwarden/phase-3-medicinal-herbs-strategy.md` — 2,400-word strategy document covering Etsy market landscape, sustainable sourcing and certification requirements (Goldenseal/Black Cohosh/St. John's Wort), production specs (single-herb guides vs. 5-bundle themed line), target buyer segments, pricing architecture (consumer $14–$82, practitioner bulk $120–$180), and FTC legal framework.
+- `projects/seedwarden/medicinal-herbs-candidate-list.md` — 12-species candidate list with sourcing paths, conservation notes, bundle assignments, and per-species margin models.
+
+**Key decisions**:
+- Launch themed bundles first (Women's Health, Respiratory, Immunity, Sleep, Digestive) at $20–$22; derive single-herb guides as secondary keyword surfaces from same content.
+- Practitioner bulk 10-pack license tier at $120–$180 is the primary B2B revenue driver; no equivalent exists on Etsy.
+- Revenue target: $4,000–$6,000/month additional gross by Month 12 post-launch at 15% attach from Phase 2 forager cohort.
+- Gate condition: forager cohort above 20% of Phase 2 buyers AND Native Plants Regional Guide converting above 1.5% before committing development hours.
+- FTC boundary confirmed: historical and traditional use framing permissible; disease/treatment claims not permissible; full disclaimer language drafted.
+
+**Sources**: FTC Health Products Compliance Guidance (Dec 2022), United Plant Savers UpS Forest Grown Verified program, American Herbalists Guild, IMARC Group US Herbalist Market Report, Etsy marketplace data (medicinal guide and herbalist guide categories), Mountain Rose Herbs, competitor landscape from competitor-landscape.md and may-2026-competitor-pricing-update.md.
+
+---
+
 ## Item 60 — 2026-05-06 — Wild Edibles Quick Reference: Photo Credits Page + PDF Generation (Phase 2 Track B)
 
 **Task**: Add a Photo Credits page to the Wild Edibles Quick Reference PDF, compress
