@@ -440,6 +440,68 @@ Your device now has two unlock codes:
 
 ---
 
+### Step 3.2c — Cellebrite Signal Extraction and Device Seizure Countermeasures
+
+**Context and Threat**: Cellebrite Physical Analyzer includes a dedicated Signal-specific extraction module. Law enforcement in the United States holds an $11 million Cellebrite contract (confirmed via EFF). When a device is seized in AFU state (After First Unlock—encryption keys in memory), Cellebrite can extract the local Signal message database from the device without requiring your PIN or passphrase. This provides investigators with:
+- All Signal messages on the device (including those beyond the disappearing message window, if they are still stored locally)
+- Contact lists and communication patterns
+- Any user data or metadata associated with Signal accounts
+- Linked social graph information from your Signal contacts
+
+This threat is specific to device seizure scenarios where the device is in AFU state. Signal's server-side encryption protects against NSA backbone interception and ensures Signal Inc. cannot decrypt your messages on their servers. But device seizure is a different threat vector: it targets the local copy of messages stored on your phone, not the server-held data.
+
+**The AFU threat window**: A device powers on in BFU state (encryption keys not in memory, Signal data inaccessible). Once you unlock it by entering your PIN (AFU state), the encryption keys remain in memory as long as the device is powered on—even if the screen is locked. Cellebrite can extract data from an AFU device in this state. If the device is not unlocked again within the auto-reboot window (18 hours default on GrapheneOS), it automatically reboots to BFU state and becomes extractable only with your passphrase.
+
+**Practical Countermeasure Sequence**:
+
+1. **Before anticipated law enforcement contact** (planned protest, border crossing, high-risk situation):
+   - **Power off the device completely**. Not sleep mode, not screen lock. Powered off. A powered-off device is in BFU state at next boot.
+   - **Keep the device powered off** from before you enter the high-risk situation until after the encounter ends.
+   - **If the device is powered on and cannot be powered off**: For example, if you are already at a checkpoint or have been pulled over and cannot reach the device to power it off, the auto-reboot configuration becomes your backstop. With auto-reboot set to 18 hours (GrapheneOS default), a seized AFU-state device left overnight will automatically reboot to BFU state by morning, drastically limiting Cellebrite extraction.
+
+2. **If device seizure occurs while powered on (locked or unlocked)**:
+   - You have no control over the AFU state window if the device is already seized.
+   - Your only option at this point is the duress PIN (Step 3.2b), if you have configured it. Entering the duress PIN triggers a secure wipe that destroys the Signal database before Cellebrite can extract it.
+   - If you do not have the duress PIN configured and the device is in AFU state, expect that Cellebrite can extract Signal messages from the device.
+
+**Real-World Scenarios**:
+
+*Scenario 1: Planned protest or public action*
+- Configuration: Enable auto-reboot on your GrapheneOS device (18 hours minimum).
+- Day-of procedure: Power off the device before leaving your home. Transport the device powered off in a Faraday bag or leave it at home entirely.
+- Result: If the device is seized while powered off, Cellebrite extraction is blocked by BFU state. If the device is left at home, there is nothing to seize.
+
+*Scenario 2: Traffic stop*
+- Configuration: Have your duress PIN configured and memorized. Know the gesture/button sequence to power off your device quickly.
+- During stop: If an officer approaches and you have a moment, power off the device. Even 5 seconds is sufficient to transition to BFU state.
+- If stopped mid-interaction: You have no opportunity to power off. If the device is seized, Cellebrite extraction is possible in AFU state.
+- Mitigation: Configure the duress PIN. If compelled to unlock, enter the duress PIN instead. Do not enter your primary PIN. This wipes the Signal database.
+
+*Scenario 3: Arrest or detention*
+- Assumption: Device is seized in AFU state (powered on and unlocked at least once since last boot).
+- Immediate concern: Cellebrite extraction of the Signal database.
+- Technical countermeasures: Duress PIN (destroys data before extraction), auto-reboot (only helps if device is left unsupervised for 18+ hours before forensic processing, which is uncommon in active investigations).
+- Primary defense: Legal counsel. Assert your Fifth Amendment right to refuse to provide your primary PIN. Do not provide your duress PIN unless coercion is imminent (consult counsel before relying on the duress PIN as a legal defense). A lawyer can often delay forensic processing while challenging its legality.
+
+*Scenario 4: Border crossing*
+- Configuration: Auto-reboot enabled; duress PIN configured.
+- Procedure: Cross the border with the device powered off or in a Faraday bag.
+- Rationale: Border agents have broader search authority than domestic law enforcement. Device seizure at borders is more likely than at routine traffic stops.
+- If seized: A powered-off device in BFU state provides the strongest protection.
+
+**Configuration Checklist for Signal Protection Against Device Seizure**:
+
+- [ ] **Settings > Security > Auto-reboot**: Set to 18 hours or less. This returns the device to BFU state if left unseized overnight.
+- [ ] **Settings > Security > Duress PIN**: Configured with a distinct PIN (6+ digits). Memorized and ready to enter if coerced to unlock.
+- [ ] **Settings > Security > PIN/Passphrase unlock**: Your primary unlock is a PIN or passphrase, not biometric. This preserves your legal option to refuse unlock.
+- [ ] **Muscle memory**: Practice powering off your device quickly. In a high-risk situation (traffic stop, approaching checkpoint), you may have only seconds.
+- [ ] **Disappearing messages**: Enabled on all Signal conversations (Part 4, Step 4.4). Messages that disappear after 1 day are not stored on the device long-term.
+- [ ] **Plan communication with contacts**: If your device is seized, your Signal contacts may receive no notification if you are detained. Brief trusted contacts: "If you do not hear from me for 24 hours via Signal, assume I am detained or my device is seized."
+
+**Legal Caveat**: The duress PIN, auto-reboot, and refusal to unlock are technical measures, not legal defenses. They function best when combined with legal representation. Assert your rights to counsel immediately upon detention. Do not rely on the duress PIN as your only defense against coercive interrogation — it is a backstop, not a primary strategy. Consult a lawyer before high-risk situations if possible (see opsec-playbook.md Part 8 and 9 for legal resources).
+
+---
+
 ### Step 3.3 — Network Permission Controls
 
 GrapheneOS adds a feature standard Android lacks: you can deny network access entirely to any app, even if the app technically has the "internet permission."

@@ -600,6 +600,12 @@ Sources: [Wikipedia: Mobile Fortify](https://en.wikipedia.org/wiki/Mobile_Fortif
 
 ---
 
+### Mobile Fortify Field Deployment Context — When and Where Biometric Collection Occurs
+
+A critical operational detail for understanding the Mobile Fortify threat: biometric collection has moved from formal processing environments to ad hoc street encounters. Historically, biometric identification occurred in controlled settings with established procedural frameworks: border crossings, immigration checkpoints, arrest processing facilities, visa application offices. In these contexts, individuals typically had advance warning and could make informed decisions about whether to proceed. Mobile Fortify fundamentally changes this threat geometry. Biometric scanning now occurs anywhere an ICE agent is present — during traffic stops, at street corners, at protest perimeters, at bus stations, at worksite enforcement actions, and in any public location where an agent points their phone at your face. An individual may have no indication they are being scanned and no opportunity to refuse or seek legal counsel. The scanning occurs in seconds. The biometric record is retained for 15 years. The query results route through the newly-fused DOGE/SSA data architecture, generating an enriched government dossier including financial history, employment records, and address confidence scoring. This represents a shift from incident-based biometric capture (you know you are at a checkpoint or in processing) to ambient biometric capture (you are being scanned by field agents in public spaces without notice or consent). The countermeasures described in the sections above — masks, hats, sunglasses, and behavioral randomization to degrade pattern-of-life analysis — remain your most effective real-time mitigations because they function before a scan occurs. But understanding that Mobile Fortify can occur at any moment in any public encounter changes how you assess and prepare for risk in daily life, not just in anticipated high-risk situations.
+
+---
+
 ## Summary: Tier-by-Tier Minimum Viable OpSec
 
 ### Tier 1 (Baseline — Journalists, Advocates, Healthcare Workers)
