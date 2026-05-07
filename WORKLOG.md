@@ -4,6 +4,34 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 — Exploration Queue Item 33 — resistance-research: Phase 1 Dry Run + May 28 Coordination Prep
+
+**3 files created** (~3,700 words total — dry-run report, coordination calendar, path-specific notes):
+
+- `projects/resistance-research/execution/phase-1-execution-dry-run-report.md` (~1,550 words)
+  - Full walkthrough of Domain 42 Gist creation (simulated), template field fills for 3 representative contacts (DPA, ACLU, Mason Marks), email scheduling infrastructure verification, contact list verification protocol
+  - 3 friction points documented: send-day timing (Thursday vs. Wednesday — low severity, no blocker), ACLU contact name not listed individually (medium — 5-min fix), Mason Marks affiliation flag (medium — 2-min verification)
+  - Section 4: 17-item infrastructure completeness checklist — all green; 8 pre-launch user actions identified, total ~35 minutes
+  - Verdict: READY FOR PRODUCTION. No blocking errors.
+  - 5 execution recommendations including attachment fallback strategy and May 15 checkpoint
+
+- `projects/resistance-research/execution/may-28-domain-42-coordination-calendar.md` (~1,250 words)
+  - Day-by-day calendar for May 7–29 with explicit send orders (time-staggered), subject lines, post-send monitoring protocols
+  - Emergency procedures for 4 specific "not committed by May 20" scenarios: DPA, ACLU, NAACP LDF, and "zero drug policy COM" contingency
+  - May 28 deadline-day procedures: 9 AM tracking log check, noon hard confirmation deadline, 5 PM ET electronic filing window
+  - Post-deadline pivot fully documented (May 29 WORKLOG entry, thank-you sends, long-term distribution framing)
+
+- `projects/resistance-research/execution/path-specific-execution-notes.md` (~1,050 words)
+  - Path A: parallel track logistics (11 emails on May 8 — morning Batch 1, afternoon Domain 42), Gist creation sequencing (Domain 42 Gist 7th of 7), audience non-overlap confirmation
+  - Path A+37: 3 simultaneous tracks (main framework + Domain 37 + Domain 42), Domain 37 vs. Domain 42 Gist timing, domain-37b independence from Domain 42
+  - Path B: Domain 42 is not staged (DEA deadline overrides 4-week feedback window), tracking system separation, post-deadline Domain 42 integration into Batches 2–4
+  - Common gotchas (5 cross-path issues documented)
+  - Response triage protocol: COM/REQ/BRIEF/DEC definitions with specific example response language, conversion targets, and action procedures; Category C academic contact special-case triage
+
+**Dry-run verdict**: Zero blocking errors. System is production-ready. 21 days remain to deadline. Three friction points require ~10 minutes combined resolution before first send.
+
+---
+
 ## 2026-05-07 — Exploration Queue Item 32 — seedwarden: May 30 Pre-Launch Readiness Audit
 
 **3 files created** (auditing all Phase 2 launch dependencies against May 10 hard gate):
