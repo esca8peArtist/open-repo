@@ -68,7 +68,13 @@
 **Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 866 (2026-05-07): Domain 42 Distribution Infrastructure COMPLETE + Phase 1 Readiness Assessment**. Domain 42 (Drug Policy) has critical May 28 DEA hearing participation deadline (21 days). All distribution infrastructure for Wave 1 outreach built and committed. Phase 1 is production-ready pending user path decision.
+**Current focus**: **Session 876 (2026-05-07): Tracker Maintenance COMPLETE + Phase 1 Distribution Risk Mitigation Playbook COMPLETE**. All Phase 1 distribution infrastructure and risk mitigation now production-ready. Domain 42 (Drug Policy) has critical May 28 DEA hearing participation deadline (21 days). All distribution infrastructure for Wave 1 outreach built and committed. Phase 1 is production-ready pending user path decision.
+
+**Session 876 Deliverables**:
+- ✅ **Tracker Maintenance (May 1–7, 2026)**: Updated first-amendment-suppression.md (A.9: Bondi memo May 1 journalist protection revocation; A.10: CPJ/whistleblower developments), environmental-rollbacks-tracker.md (Entry 35: Ethylene Oxide; Entry 36: TCE TSCA), police-brutality-consent-decree-tracker.md (Springfield, Cleveland, Aurora updates)
+- ✅ **Phase 1 Distribution Risk Mitigation Playbook** (3,200 words): Surveillance risks (subpoena, device, metadata) + Counter-strategies (E2E, full-disk, Tor, compartmentalization); Legal risks (defamation, hate speech, source protection revocation) + Counter-strategies (sourcing, anti-SLAPP, SecureDrop); Organizational risks (overwhelm, coordination, retaliation) + Counter-strategies (FAQ, spokes, staging, mutual defense); Implementation timeline (pre-launch 2-week audit, launch day-by-day, incident response 5-step subpoena protocol). Commited.
+- ✅ **Exploration Queue Item COMPLETE**: Phase 1 Distribution Risk Mitigation Playbook
+
 - **Domain 42: Drug Policy, Regulatory Capture, and Democratic Legitimacy** (Session 861, 6,860 words, 54 citations)
   - Unique angle: No existing domain makes the democratic-design argument that drug prohibition is a structural democratic exclusion architecture
   - Core finding: Three interlocking mechanisms insulate drug policy from democratic accountability: (1) DEA regulatory capture of CSA scheduling (administrative practice overrides statutory HHS binding authority), (2) felony disenfranchisement feedback loop (4M disenfranchised, disproportionately minorities, systematically underrepresenting communities whose participation could revise enforcement), (3) 24-state federal-state conflict (cannabis legal in 24 states; SAFER Banking Act failed 8 cycles; 280E tax creates 70%+ effective rates on legal businesses)
@@ -290,7 +296,14 @@
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: **Session 866 (2026-05-07): Phase 1 Pre-Launch Threat Accuracy COMPLETE — All flags resolved, production-ready for Tier 1 outreach**. Phase 2 Sequencing Strategy (Session 837) complete with 5,500-word threat model and 12-month roadmap.
+**Current focus**: **Session 876 (2026-05-07): Phase 2 Scenario Playbooks v1.1 (May 2026 Intelligence) COMPLETE**. Phase 1 threat accuracy verified; all distribution infrastructure ready. Phase 2 expansion staging with current threat intelligence.
+
+**Session 876 Deliverables**:
+- ✅ **phase-2-immigration-surveillance-evasion-playbook.md v1.1**: Updated threat vectors (Penlink geofencing ICE Sept 2025 subscription, Medicaid/HHS/DHS data sharing 80M patients Jan 2026, Thomson Reuters CLEAR May 31 contract expiry, Maine/Portland biometric scan Feb 2026), 4-tier checklist (3-days-before, day-of, post-encounter, ongoing), legal aid workshop curriculum, 15+ source bibliography. Ready for Tier 2 pilot.
+- ✅ **phase-2-activist-organizing-security-playbook.md v1.1**: Updated threat vectors (LAPD Skydio X10 drones 31 Jan 31 + 32 March 28 deployments, Flock Safety ALPR 50+ agency queries, facial recognition class action Feb 2026, DHS subpoenas to platforms), role-specific threat mapping (5 participant types), 3-level escalation matrix, 3-day/day-of/post-action checklists, 15+ source bibliography. Ready for Tier 2 pilot.
+- **Key finding**: Pre-dated playbooks lacked May 2026 precision (Penlink subscription, Medicaid/DHS agreement, LAPD drone expansion, facial recognition class action). New versions integrate all Q1-Q2 2026 threat vectors. Tier 2 pilot ready for journalist + whistleblower + activist playbooks within 2 weeks of Phase 1 completion.
+- ✅ **Phase 2 Scenario Playbook Maintenance Cycle**: Ongoing Q2 2026 refresh COMPLETE
+
 - **PHASE_1_FLAGS_ASSESSMENT.md** (Session 866, resolution complete):
   - **Flag 1 (Mobile Fortify biometric deployment)** — ALREADY RESOLVED ✅
     - Comprehensive coverage exists in opsec-playbook.md sections 4.1 + 11
