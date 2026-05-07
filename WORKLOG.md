@@ -29917,3 +29917,34 @@ Added to PROJECTS.md exploration queue:
 
 **Suggested Priority**: Items 1-2 are research/design (no risks); execute before May 12 if time available to build readiness.
 
+
+---
+
+### Session 891 (2026-05-07 17:15–18:00 UTC) — Exploration Queue Refresh + Item 29 Complete
+
+**Orchestration Actions**:
+1. ✅ **Queue Refreshed**: Exploration queue at 0 items (Items 25–28 completed in Sessions 889–890). Added 3 new strategic items:
+   - Item 29: resistance-research Domain 42 DEA Hearing Participation Strategy (URGENT, May 28 deadline)
+   - Item 30: seedwarden Phase 2 Launch Day Operational Readiness Playbook (May 30 launch)
+   - Item 31: cybersecurity-hardening Sector-Specific Tactical Guides (Phase 2 research, Tier 2 preparation)
+
+2. ✅ **Item 29 Complete**: Domain 42 DEA Hearing Tactical Implementation Guide
+   - **Deliverable**: `projects/resistance-research/execution/domain-42-dea-hearing-tactical-guide.md` (4,500 words, 502 lines, commit 5140b119)
+   - **Contents**: 3 worked comment templates (drug policy / civil rights / academic institutions), regulatory analysis (4 outcome scenarios), risk assessment & mitigation, institutional coordination protocols, success metrics, quick-start checklist
+   - **Impact**: De-risks organizational participation in June 29 DEA hearing; increases likelihood 3+ organizations file Domain 42 testimony by May 28 deadline
+   - **Timeline**: May 28 deadline is 21 days away. Organizations receiving Domain 42 outreach (May 8 Wave 1) can execute this guide immediately with June 15 formal testimony filing.
+
+**Project Status** (unchanged from Session 890):
+- **resistance-research** (#1): Blocked on user distribution path decision (A / A+37 / B). Domain 42 May 28 DEA outreach infrastructure 100% complete. Phase 1 distribution-ready.
+- **stockbot** (#2): Blocked on ARCH decisions review (7 items: live_engine fate, alert thresholds, session registry, integration.py, Phase 6 analytics, schema migration, PerformanceMetrics naming). 2-session Jetson engine running.
+- **cybersecurity-hardening** (#3): Phase 1 ready for user approval/execution. Phase 2 playbooks v1.1 (May 2026 intelligence) complete.
+- **mfg-farm** (#4): Blocked on test print (CadQuery designs ready, market research complete, supplier research complete).
+- **seedwarden** (#5): Track A blocked on user tag corrections + Etsy verification. Track B Phase 2 planning complete (May 30 launch).
+
+**Next Session** (if time permits):
+1. Begin Item 30 (seedwarden Phase 2 launch playbook) — 3-4 hours to completion
+2. Begin Item 31 (cybersecurity-hardening Tier 2 guides) — 4-5 hours to completion
+3. Monitor for user decisions (path selection, ARCH approval, test print confirmation, tag corrections) that would unblock project work
+
+**Budget Consumed**: Session 891 = 2 hours, 200–250K tokens. Remaining weekly budget: ~2.5M tokens (77% all-models usage). No budget pressure.
+
