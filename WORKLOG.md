@@ -48,6 +48,54 @@
 - seedwarden: d251f0ae (PHASE_2_LAUNCH_PREP.md + WORKLOG update)
 - resistance-research: d230e656 (MAY_2026_CURRENCY_AUDIT.md + CHECKIN + WORKLOG updates)
 
+---
+
+## 2026-05-07 Session 864 — Domain 42 DEA Briefing Category A Send Prep (CRITICAL URGENT)
+
+**Session Context**: Domain 42 DEA briefing execution scheduled for May 8 (today). Category A email send requires verified contact information and copy-paste-ready templates to minimize execution friction. Critical deadline: May 28, 2026 (participation notice to DEA).
+
+**Work Completed**:
+
+✅ **Domain 42 Contact Verification Agent Run**
+- Verified all 7 Category A organization contacts against live websites (May 7, 2026)
+- **4 significant leadership changes discovered** since contact list was originally compiled:
+  - Marijuana Policy Project: Matthew Schweich → Adam J. Smith (new ED, July 2025)
+  - NORML: Erik Altieri (departed March 2023) → Randy Quast (Acting ED)
+  - Law Enforcement Action Partnership: Neill Franklin (departed 2020) → Diane Goldstein (current ED since 2020)
+  - ACLU Criminal Law Reform: Aamra Ahmad (departed) → Brandon Buskey (project director)
+  - Students for Sensible Drug Policy: Kris Lotlikar (no longer listed) → Kat Murti (current ED)
+- **3 contacts verified accurate**: Drug Policy Alliance (Kassandra Frederique), Sentencing Project (Kara Gotsch as ED), SSDP general email
+
+✅ **Updated Contact List** (`domain-42-dea-briefing-contacts.md`)
+- All 7 Category A contacts updated with current information
+- All 5 organizations with leadership changes flagged with [VERIFIED May 7]
+- Email addresses optimized (e.g., media@drugpolicy.org for higher-quality inbound, kat@ssdp.org for direct contact)
+- Status: READY FOR IMMEDIATE SEND
+
+✅ **Copy-Paste-Ready Email Execution File** (`EXECUTE_CATEGORY_A_SEND_MAY_8.md`)
+- Created complete execute document with:
+  - 7 fully personalized emails (one per organization), each addressing updated contact names
+  - Each email pre-filled with relevant personalization paragraph (drawn from domain-42-dea-briefing-template.md)
+  - All email bodies reference the live Gist URL (https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab)
+  - Send tracking checklist (2 waves, same day)
+  - Post-send action items (Category B scheduling begins May 10)
+- Expected execution time: 15–20 minutes copy-paste across email client
+- Status: **READY FOR USER TO EXECUTE TODAY (May 8)**
+
+**Critical Path Item Unblocked**:
+- Previously: Domain 42 send prepared but contact information outdated; execution would have experienced bounces or incorrect recipient routing
+- Now: All contacts verified, copy-paste-ready emails prepared, Category A send can execute today
+- Timeline: User copy-pastes 7 emails (15–20 min) → all 7 orgs notified by May 8 → responses/collaboration begins May 10 → Category B send begins May 10 → Category C send begins May 14 → deadline May 28 maintained
+
+**Commits**:
+- resistance-research: 38f5dfb8 (domain-42-dea-briefing-contacts.md updated with verified contacts + EXECUTE_CATEGORY_A_SEND_MAY_8.md created)
+
+**Next Steps for Session 865**:
+1. User executes EXECUTE_CATEGORY_A_SEND_MAY_8.md (May 8 — TODAY)
+2. Orchestrator prepares Category B email batch (May 10 send)
+3. Orchestrator monitors for Category A responses and logs for post-DEA-hearing synthesis
+4. Resistance-research continues advancing Phase 2 candidates (Domains 38-A, 41-B, 38-B) if path decision made
+
 
 ## 2026-05-07 Session 862 — Phase 1 Execution Readiness Sprint (3 Parallel Agents)
 
