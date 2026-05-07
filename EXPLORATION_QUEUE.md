@@ -212,6 +212,55 @@
 
 ---
 
+### Item 22: resistance-research Domain 42 Preliminary Scoping (Session 857 — NEW)
+**Status**: ACTIVE — Ready for autonomous research
+**Trigger**: Immediate (independent of user path decision, high-impact domain for Phase 2)
+**Scope**: Preliminary research strategy for Domain 42 (Drug Policy, Regulatory Capture, DEA June 29 deadline)
+**Deliverables** (~5,000 words):
+- Gap analysis: how Domain 42 fills the proposal's regulatory capture coverage
+- Research roadmap (priority source categories, key question areas)
+- June 29 deadline context and implications
+- Format validation (consistency with existing domain structure)
+- 3 top subtopics identified for full research phase
+**Owner**: resistance-research agent (autonomous execution)
+**Key value**: Domains 39-42 are Phase 2 candidates. Domain 42 has urgent June 29 deadline — pre-research now enables fast escalation if user path decision triggers Phase 2 research.
+**Timeline estimate**: 4-5 hours research + scoping
+
+---
+
+### Item 23: stockbot Advanced Monitoring & Alerting for Live Trading (Session 857 — NEW)
+**Status**: ACTIVE — Ready for autonomous research
+**Trigger**: Immediate (supports post-Gate-1 live trading deployment planning)
+**Scope**: Design comprehensive monitoring, alerting, and incident response framework for live trading
+**Deliverables** (~6,000 words):
+- Monitoring architecture (Prometheus metrics, Grafana dashboards, log aggregation)
+- Custom stockbot metrics (session health, fill latency, P&L, risk metrics)
+- Alert thresholds (red/yellow/critical) per metric type
+- Incident response playbooks (connection loss, market halt, API 503, position orphaning)
+- Daily health check automation (cron script, Discord notification)
+- Post-trade analysis queries (win rate, payoff ratio, slippage by ticker)
+**Owner**: stockbot agent (autonomous research)
+**Key value**: Upon Gate 1 pass and post-Gate-1 roadmap approval, user needs production monitoring design before live trading launch. This research is independent of code implementation.
+**Timeline estimate**: 5-6 hours research + synthesis
+
+---
+
+### Item 24: mfg-farm Alternative Product Category Deep-Dive (Session 857 — NEW)
+**Status**: ACTIVE — Ready for autonomous research
+**Trigger**: Immediate (informs Wave 2-3 product roadmap, independent of test print)
+**Scope**: Deep market research and viability analysis for alternative manufacturing categories beyond cable management
+**Deliverables** (~7,000 words):
+- 3-5 high-margin product category analysis (modular desk organizers, gaming cable bundles, phone/tablet mounts, tool organizers, homelab components)
+- Per-category: COGS validation, supplier quotes, competitive landscape, customer demand signals, margin projections
+- Adjacent manufacturing viability (laser cutting, multi-color FDM, resin printing) matched to product requirements
+- 18-month Wave 2-3 product roadmap with revenue projections
+- Risk assessment and contingency pricing models
+**Owner**: mfg-farm agent (autonomous research)
+**Key value**: Complements ITEM37 (post-test-print staging). While waiting for test print result, alternative product category research enables immediate pivot optionality if ModRun has design issues.
+**Timeline estimate**: 6-8 hours research + analysis
+
+---
+
 ### Item 13: resistance-research Tracker Infrastructure & Data Enrichment (Session 651)
 **Status**: QUEUED — Post-Phase-1-distribution optional expansion
 **Trigger**: Phase 1 distribution execution begins (user selects Path A / A+37 / B)
@@ -241,9 +290,9 @@
 
 ---
 
-### Item 20: stockbot Post-Gate-1 Architecture Deep-Dive & Implementation Roadmap (Session 854 — NEW)
-**Status**: ACTIVE — Ready for autonomous research
-**Trigger**: Immediate (independent of Gate 1 outcome, builds on existing research)
+### ✅ Item 20: stockbot Post-Gate-1 Architecture Deep-Dive & Implementation Roadmap (Session 857 COMPLETE)
+**Status**: COMPLETED 2026-05-07 03:00 UTC
+**Trigger**: Completed autonomous research
 **Scope**: Deep-dive analysis of post-Gate-1 implementation priorities (multi-ticker scaling, options overlay, HMM regime validation, multi-asset class integration). Create detailed implementation roadmap with effort estimates, dependency sequencing, risk mitigation.
 **Deliverables** (~8,000 words):
 - **Multi-Ticker Scaling Architecture** (finalization): 11-ticker configuration, dataflow optimization, session lifecycle management, position aggregation schema, P&L attribution
@@ -343,9 +392,9 @@
 
 ---
 
-### Item 15: workout Nutrition & Meal Planning Integration
-**Status**: READY FOR EXECUTION NOW — No external blockers
-**Trigger**: Autonomous execution (independent of Phase 1 workout completion)
+### ✅ Item 15: workout Nutrition & Meal Planning Integration (Session 857 COMPLETE)
+**Status**: COMPLETED 2026-05-07 03:15 UTC
+**Trigger**: Completed autonomous execution
 **Scope**: Create comprehensive nutrition planning guide to complement Phase 1-2 workout programs
 **Deliverables**:
 - Macro/Micronutrient Framework (protein/carb/fat targets per goal; micronutrient density mapping)

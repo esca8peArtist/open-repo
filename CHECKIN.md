@@ -1,11 +1,13 @@
-## Since Last Check-in (Session 857 — 2026-05-07 UTC) — THREE PRODUCTION-READY EXPLORATION ITEMS COMPLETE
+## Since Last Check-in (Session 857 — 2026-05-07 UTC) — QUEUE ITEMS 20+15 COMPLETE, 3 NEW ITEMS ADDED
 
-### STATUS: **Session 857 executed three parallel autonomous subagents on unstarted exploration queue items. All three completed successfully with production-ready research:
-- cybersecurity-hardening: Journalist Security Playbook Deep Dive (8,151 words)
-- resistance-research: Domain 20 (Corruption & Government Accountability) (5,377 words, 29 sources)
-- seedwarden: Phase 3 Medicinal Herbs Strategy (4,000 words total, pricing + candidate list)
+### STATUS: **Session 857 (extended): Executed two parallel autonomous subagents on Exploration Queue items 20 (stockbot) + 15 (workout). Both completed production-ready. Added 3 new items to queue (Items 22-24) to maintain ≥3 active items per protocol.
 
-All primary projects remain blocked on external user decisions/events. Exploration queue still has 2-3 unstarted items available. Usage budget healthy. May 12 Gate 1 checkpoint remains critical next event (5 days).**
+**What Was Done**:
+- ✅ **ITEM 20**: stockbot Post-Gate-1 Architecture Roadmap (8,919 words, 6 sections) — ready for post-May-12 execution
+- ✅ **ITEM 15**: workout Nutrition & Meal Planning Integration (690 lines, 7 sections) — production-ready, committed to master
+- ✅ **Queue Refresh**: Added Items 22-24 (Domain 42 scoping, stockbot monitoring, mfg-farm product deep-dive)
+
+**Project Status**: All primary projects remain blocked on external user decisions/events (path, ARCH, tags, test print). Exploration queue now has 3 active items ready for next autonomous window. Usage budget healthy. May 12 Gate 1 checkpoint remains critical next event (5 days).**
 
 **What's Available for Autonomous Work (Session 855)**:
 

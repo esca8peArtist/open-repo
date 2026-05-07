@@ -33,6 +33,40 @@
 
 ---
 
+## 2026-05-07 03:20 UTC — Session 857 (continued): Exploration Queue Items 20 + 15 Completion & Queue Refresh
+
+**Session Context**:
+- All primary projects blocked on user decisions
+- Exploration Queue had 2 items ready (no external dependencies)
+- Executed Items 20 + 15 in parallel subagents (independent scope)
+- Post-completion: refreshed queue by adding 3 new items (maintain ≥3 active rule)
+
+**Autonomous Work Completed**:
+
+✅ **ITEM 20 — stockbot Post-Gate-1 Architecture Roadmap** (COMPLETE)
+- **File**: `projects/stockbot/ITEM20_POST_GATE1_ARCHITECTURE_ROADMAP.md`
+- **Stats**: 8,919 words, 6 sections (Multi-Ticker, Options, HMM, Multi-Asset, 16-week Sequencing, Dependency Diagram)
+- **Coverage**: Current 67-session deployment architecture (Batches 1-4, h10_lgbm_ho stackers), options overlay mechanics, HMM regime scaling thresholds, futures/crypto/options integration, 16-week implementation roadmap with effort estimates (P0: 30-40h, P1: 20-30h, P2: 35-45h, P3: 25-35h)
+- **Status**: Committed to `feature/item20-post-gate1-roadmap` (awaiting user review post-May-12)
+- **Timing**: Due May 13 (post-Gate-1 checkpoint). User will use this to select Phase 1 priorities immediately.
+
+✅ **ITEM 15 — workout Nutrition & Meal Planning Integration** (COMPLETE)
+- **File**: `projects/workout/ITEM15_NUTRITION_AND_MEAL_PLANNING.md`
+- **Stats**: 690 lines, 7 sections, evidence-based (Morton et al. 2018, ISSN position stands, PMC12251028 & PMC12498230 2025 research)
+- **Coverage**: Nutrition fundamentals (TDEE, macros, micronutrients), per-tier calorie profiles (3/4/5/6 days/week x 3 equipment tiers), per-goal nutrition (fat loss, muscle gain, recomposition, maintenance), meal planning templates with macro calculator formula, supplement strategy with evidence-based Tier 1-2 and avoid list, 12-week periodized nutrition calendar
+- **Integration**: Acts as master index + decision tree over 7 existing nutrition files (nutrition-01 through -06 + nutrition-and-tracking.md); extends them with cross-tier tables and signaling checklist
+- **Status**: Production-ready, committed to master (commit `9c8757ae`)
+
+**Queue Management**:
+✅ Marked Item 20 as COMPLETED in EXPLORATION_QUEUE.md
+✅ Marked Item 15 as COMPLETED in EXPLORATION_QUEUE.md
+✅ **Added 3 new items** to maintain active queue (protocol requires ≥3):
+  - **Item 22**: resistance-research Domain 42 preliminary scoping (Drug Policy, DEA June 29 deadline) — 4-5 hours, ready now
+  - **Item 23**: stockbot Advanced Monitoring & Alerting for live trading — 5-6 hours, ready now
+  - **Item 24**: mfg-farm Alternative Product Category deep-dive (Wave 2-3 roadmap) — 6-8 hours, ready now
+
+---
+
 ## 2026-05-07 morning UTC — Session 857: Parallel Exploration Queue Execution — Three Production-Ready Deliverables
 
 **Session Context**:
