@@ -1,3 +1,23 @@
+## ⚠️ URGENT — SESSION 865 (2026-05-07 07:20+ UTC): DOMAIN 42 CATEGORY A EXECUTION IS TODAY (MAY 8)
+
+**CRITICAL DEADLINE**: Domain 42 Category A emails must send TODAY (May 8, 2026) to hit the May 20 mail deadline for DEA-1362 participation notices. **Estimated user time: 15–20 minutes.**
+
+📋 **Execute immediately**: `projects/resistance-research/EXECUTE_CATEGORY_A_SEND_MAY_8.md`
+- 7 copy-paste-ready emails to drug policy, law enforcement, and progressive advocacy orgs
+- Gist link: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+- Contacts verified as of May 7 against current org websites
+
+⏰ **Timeline Critical Path**:
+- **TODAY (May 8)**: Send Category A (7 emails, 15–20 min)
+- **May 10-12**: Send Category B (5 emails, 20 min)
+- **May 12-17**: Send Category C + Admin Law Faculty (12 emails, 20–30 min)
+- **May 20**: Hard deadline for mail submissions (postal transit to DEA)
+- **May 28**: Email deadline for DEA-1362 participation notice (nprm@dea.gov)
+
+🟢 **Status**: All infrastructure 100% ready. Zero blockers. Execution is user-only action.
+
+---
+
 ## Since Last Check-in (Session 864 — 2026-05-07 13:00+ UTC) — DOMAIN 42 CRITICAL DEADLINE EMAIL EXECUTION PACKAGE COMPLETE
 ## Since Last Check-in (Session 862 — 2026-05-07) — PHASE 1 EXECUTION READINESS SPRINT COMPLETE
 ## Since Last Check-in (Session 863 — 2026-05-07 06:35 UTC) — PHASE 2 EXECUTION PREP COMPLETE
