@@ -4,6 +4,58 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 morning UTC — Session 857: Parallel Exploration Queue Execution — Three Production-Ready Deliverables
+
+**Session Context**:
+- All primary projects blocked on user decisions (path, ARCH, tags, test print)
+- Protocol: when no primary work available, refresh exploration queue and execute unstarted items
+- Spawned three parallel subagents for independent exploration queue items
+- All three agents completed successfully with production-ready research
+
+**Autonomous Work Completed (Parallel Execution)**:
+
+✅ **cybersecurity-hardening: Journalist Security Playbook Deep Dive**
+- **File**: `projects/cybersecurity-hardening/journalist-security-playbook-extended.md`
+- **Stats**: 8,151 words (exceeds 3,500+ target)
+- **Coverage**: 2026 threat model (ICE Paragon Graphite, DOJ Bondi policy, Palantir ELITE), device security, source encryption, travel security, organizational protocols, case studies (Hannah Natanson/WaPo, Pegasus spyware, financial journalists), quick reference field card
+- **Business value**: Highest-leverage Tier 2 audience (journalist security enables media amplification); enables confident institutional endorsement from Freedom of the Press Foundation, Committee to Protect Journalists
+- **Status**: Production-ready, committed to master
+
+✅ **resistance-research: Domain 20 (Corruption & Government Accountability)**
+- **File**: `projects/resistance-research/domains/domain-20-corruption-and-institutional-accountability.md`
+- **Stats**: 5,377 words, 29 sourced citations
+- **Key findings**: 
+  - Federal ethics enforcement collapse — DOJ Public Integrity Section reduced from 36 to 2 lawyers (no new case capacity)
+  - Pardon economy as impunity mechanism (88 second-term pardons, 23 erased $298M in court-ordered restitution)
+  - Congressional STOCK Act enforcement failure (78+ violations, 0 prosecutions, $200 fine only)
+  - State judicial capture via dark money (Brennan Center data: 85% spending in 4 states)
+  - International precedent: Singapore CPIB 97-100% conviction rates, Germany's Parteiengesetz 2024 amendment, South Korea chaebol limitations
+  - U.S. CPI 2024 baseline at 65 (all-time low, driven by judicial/institutional ethics collapse)
+- **Business value**: Closes structural gap in Phase 1 framework; positions proposal as comprehensive
+- **Status**: Production-ready, committed to master as `d9df2439`
+
+✅ **seedwarden: Phase 3 Medicinal Herbs Strategy**
+- **Files**: 
+  - `projects/seedwarden/phase-3-medicinal-herbs-strategy.md` (2,400 words)
+  - `projects/seedwarden/medicinal-herbs-candidate-list.md` (1,600 words)
+- **Key findings**:
+  - Tier 3 (practitioner-quality guides) has no dominant competitor yet (<150-200 reviews max)
+  - Launch strategy: Five themed bundles at $20-22 (5-7 herbs per bundle) with seasonal rollout
+  - 12 candidate species with FGV (Forest Grown Verified) sourcing for endangered species (Black Cohosh, Goldenseal)
+  - Pricing architecture: $14-18 single guides, $20-22 condition bundles, $120-180 B2B practitioner 10-packs (white-label licensing)
+  - B2B revenue mechanism: new unlocked revenue stream (no Etsy equivalents currently)
+  - Phase gate: requires Phase 2 forager cohort >20% AND Native Plants Regional Guide conversion >1.5%
+- **Business value**: Expands Phase 3 beyond conservation into health+wellness tier ($4,000-6,000/month additional revenue)
+- **Status**: Production-ready, committed to master
+
+**Actions (Session 857)**:
+✅ Spawned three parallel subagents (cybersecurity-hardening, resistance-research, seedwarden)
+✅ All agents completed independently; no dependencies between tasks
+✅ All three deliverables committed to master
+✅ Updated PROJECTS.md to mark queue items as completed
+
+---
+
 ## 2026-05-07 early-morning UTC — Session 855: Orientation Complete — All Autonomous Work Finished, Awaiting User Decisions
 
 **Session Context**:
