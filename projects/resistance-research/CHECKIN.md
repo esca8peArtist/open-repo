@@ -1,6 +1,47 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 6, 2026 (Phase 1 Distribution Package Technical Integration — pre-staging complete)*
+*Updated: May 7, 2026 (Domain 42 DEA Track infrastructure complete — ready for May 8 launch)*
+
+---
+
+## SECTION 591 MARKUP: May 13, 2026 — ACTION RECOMMENDED BEFORE THIS DATE
+
+**New development identified in May 7 currency audit.**
+
+House Appropriations Committee FY2027 Commerce-Justice-Science bill markup is scheduled **May 13, 2026** (6 days from today). The bill contains **Section 591**, a rider that would bar appropriated funds from being used to reschedule marijuana or remove it from the controlled substances schedules.
+
+**If Section 591 survives markup and is enacted**:
+- Freezes DEA implementation of the April 23 medical track rescheduling
+- Blocks the June 29-July 15 ALJ hearing from producing a binding rescheduling outcome
+- Creates retroactive legal uncertainty for newly registered Schedule III operators
+
+**Historical precedent**: The same language appeared in the FY2026 CJS bill and was stripped in conference. Enactment risk is not high, but the political uncertainty created by the markup itself is real and immediate.
+
+**What this means for Domain 42 outreach**: Organizations that file DEA-1362 participation notices BEFORE May 13 establish standing regardless of what happens in the appropriations process. The May 8 Category A email wave should reference Section 591 as an additional urgency point: "The window for the hearing outcome to carry legal weight may narrow depending on the May 13 appropriations markup."
+
+**Sources**: [WeedPress: Two Legal Tracks Overnight (May 4)](https://weedpress.org/2026/05/04/the-federal-government-just-split-cannabis-into-two-legal-tracks-overnight-and-congress-could-kill-both-within-weeks/); [Cannabis Business Times: GOP Trying to Strip Rescheduling Powers](https://www.cannabisbusinesstimes.com/cannabis-rescheduling/news/15823971/gop-lawmakers-once-again-trying-to-strip-white-house-rescheduling-powers)
+
+---
+
+## DOMAIN 42 DEA TRACK: READY FOR LAUNCH (May 7, 2026) — ACTION BY MAY 8
+
+**All three infrastructure items complete.** Category A send wave is May 8. Participation deadline is May 28.
+
+**What was built this session**:
+
+1. `domain-42-dea-briefing-template.md` — Email template (~450 words body). Subject line references "DEA hearing participation deadline May 28 — Docket DEA-1362" explicitly. Personalization paragraphs for each Category A org (DPA, MPP, NORML, LEAP, ACLU Criminal Law Reform, Sentencing Project, SSDP). Gist URL already inserted.
+
+2. `domain-42-dea-briefing-contacts.md` — 24 contacts across Category A (7 orgs, May 8), Category B (5 orgs, May 10-12), Category C (9 AG/press contacts, May 14-17), and administrative law faculty (3, including Mason Marks as priority). Full table format matching DOMAIN_37_SEQUENCING_PLAN.md structure with emails, personalization notes, and send waves.
+
+3. `domain-42-gist-url.md` — Gist created and live: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab. Approximately 2,800-word Gist-optimized version with full participation instructions, three mechanism analysis, international comparative evidence, and DEA-1362 call to action.
+
+**To launch**: Open `domain-42-dea-briefing-contacts.md`, take Category A row 1 (Drug Policy Alliance), apply template from `domain-42-dea-briefing-template.md` with DPA personalization paragraph, send to info@drugpolicy.org. Repeat for rows 2-7 on May 8. All emails should reference nprm@dea.gov and Docket No. DEA-1362.
+
+**Hard deadlines**:
+- May 20, 2026 — mail submission deadline (postal transit; mail to DEA Attn: Administrator, 8701 Morrissette Drive, Springfield, VA 22152)
+- May 28, 2026 — email submission deadline (nprm@dea.gov — Docket No. DEA-1362)
+
+**Additional urgency — Section 591**: House Appropriations FY2027 CJS markup on May 13 includes a rider that could freeze the rescheduling process. Organizations filing participation notices before May 13 establish standing regardless of appropriations outcome. Earlier is better — see Section 591 notice above.
 
 ---
 

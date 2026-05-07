@@ -2,6 +2,39 @@
 
 ---
 
+## May 7, 2026 — Research Agent: May 2026 Currency Audit
+
+**Status**: COMPLETE
+
+**Context**: Domain maintenance and currency tracking session. No new domains created (requires user path decision). Audit scope: all 35+ domains verified against live May 2026 developments. Six new developments identified since last session (May 6, Session 8xx). One critical new deadline identified for Domain 42.
+
+**File created**:
+- `projects/resistance-research/MAY_2026_CURRENCY_AUDIT.md` — Full audit document: domain currency table (35+ domains), six new May 2026 developments, critical deadline tracker, Phase 2 candidates ready for immediate research, stale language flags.
+
+**Key findings**:
+
+1. **Section 591 FY2027 CJS rider (CRITICAL)**: House Appropriations markup May 13 contains a provision that would bar appropriated funds from being used to reschedule marijuana. If enacted, it would freeze DEA implementation of the April 23 medical track rescheduling and potentially nullify the June 29-July 15 ALJ hearing outcome. Historical precedent: same language stripped in conference for FY2026. Markup is 6 days from today (May 7). This adds urgency to Domain 42 Category A outreach — organizations that file participation notices before May 13 establish standing regardless of appropriations outcome.
+
+2. **DEA-1362 mail deadline is May 20, not May 28**: One source clarifies that mail submissions face a de facto May 20 deadline for postal transit. The May 28 deadline applies only to email (nprm@dea.gov). Contact template should clarify.
+
+3. **New York Democratic retaliatory redistricting launched (May 4)**: Jeffries tasked Morelle with leading NY redistricting; vowed Illinois and Maryland counter-redistricting. Constitutional obstacles in New York make November 2026 implementation unlikely. Net electoral math still favors Republican gains from Callais cascade. Domain 37 Section IX.3 needs ~200-word addition.
+
+4. **Iran war frozen conflict confirmed (as of May 5-6)**: Thune blocked Murkowski's AUMF floor vote on May 5 — the 60-vote authorization path is now closed. Trump declared hostilities "terminated" to suspend WPR clock (disputed). Iran has attacked U.S. forces 10+ times since ceasefire. Domain 19f Section 16 needs ~500 words documenting May 1-5 developments.
+
+5. **FISC opinion release deadline approximately May 15**: Cotton-Warner 15-day window from April 30 signing = ~May 15. The FISC opinion reportedly documents "serious 4th Amendment violations." Monitor for release; update Domains 25 and 1 when published.
+
+6. **Bost v. Illinois decided January 14, 2026**: 7-2 ruling establishing candidate standing to challenge mail ballot receipt procedures. Not yet documented in Domain 35. Watson v. RNC still pending (decision by late June/early July).
+
+7. **Reconciliation 2.0 committee text confirmed (May 4-5)**: ICE: $38.2B. CBP: ~$26B. Total: ~$71.7B through FY2029. Committee markup deadline May 15. 287(g) expansion confirmed in text. Domain 37 Section IX.2 already covers this; minor numerical confirmation note useful.
+
+**Phase 2 candidates ready to begin immediately** (no user approval needed per existing scope):
+1. Domain 38-A (FISA/Intel Oversight) — June 12 deadline; highest leverage available now
+2. Domain 38-B (Voting Systems/Callais) — redistricting sprint active; institutionally dense audience
+3. Domain 41-B (Disability Rights) — highest matrix score; fastest to produce
+4. Watson v. RNC pre-positioning scope document — tactical preparation (0.5 session)
+
+---
+
 ## May 7, 2026 — Research Agent: Phase 2 Domain Expansion — Domains 42 and 43
 
 **Status**: COMPLETE
