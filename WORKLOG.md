@@ -4,6 +4,43 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 23:45 UTC — Session 894 (Orchestrator) — PARALLEL EXECUTION: Domain Currency Verification + Phase 2 Institutional Outreach Planning
+
+**Parallel agents completed** (2 independent items, ~7 hours combined work):
+
+### ✅ **resistance-research: Domain Maintenance & May 2026 Currency Verification** (COMPLETE)
+- **File created**: `projects/resistance-research/MAY_2026_DOMAIN_UPDATES_VERIFICATION.md`
+- **Status**: All 35 domains verified current through May 7, 2026
+- **Key findings**: 
+  - 11 domains with paste-ready edit text (high/medium priority before distribution)
+  - 24 domains confirmed current without edits
+  - **Two critical findings for Phase 2**: (1) Abrego Garcia v Crenshaw ruling imminent (monitoring required starting May 8), (2) Palantir cross-reference gap identified (non-blocking for Phase 1, medium-priority Phase 2 deepening)
+  - **Four upcoming triggers identified** for future monitoring: FISC opinion (~May 15), Section 591 FY2027 outcome (post-May 13), Crenshaw ruling (imminent), Watson v. RNC SCOTUS (late June)
+- **Business value**: Distribution-ready. All 35 domains reflect May 7 threat landscape; distribution materials will be maximally credible with institutional recipients.
+- **Committed to master** (MAY_2026 verification file)
+
+### ✅ **cybersecurity-hardening: Phase 2 Institutional Outreach Strategy** (COMPLETE)
+- **Files created**: 
+  - `projects/cybersecurity-hardening/phase-2-institutional-outreach-strategy.md` (~2,400 words)
+  - `projects/cybersecurity-hardening/phase-2-target-organizations.csv` (18 organizations, 5 sectors)
+- **Scope**: Designed Phase 2 institutional network outreach strategy from first principles, distinct from existing Tier 2 individual-organization documentation
+- **Coverage**: (1) Phase 1 → Phase 2 transition gates with sector-specific minimum evidence requirements; (2) 18 target organizations across 5 sectors (AG networks, law school associations, journalist membership bodies, union security committees, think tank networks); (3) 4 messaging template variants; (4) Domain → sector mapping (Domains 11, 16, 17, 20, 21, 25, 33, 36); (5) Week-by-week sequencing calendar; (6) Contingency paths for low/high response rates
+- **Key finding**: Phase 2 institutional outreach requires Phase 1 adoption signal FIRST — minimum gate is one named adoption signal from a member organization in each sector. Georgetown CPT identified as single highest-alignment contact (American Dragnet predecessor relationship).
+- **Business value**: Eliminates Phase 1 → Phase 2 ambiguity. User can execute Phase 1, collect feedback, then immediately transition to Phase 2 institutional outreach without additional planning. Accelerates institutional diffusion and adoption measurement.
+- **Committed to master** (phase-2 files)
+
+---
+
+## 2026-05-07 — (Research Agent) — cybersecurity-hardening Phase 2 Institutional Outreach Strategy COMPLETE
+
+**Files created**:
+- `projects/cybersecurity-hardening/phase-2-institutional-outreach-strategy.md` (~2,400 words)
+- `projects/cybersecurity-hardening/phase-2-target-organizations.csv` (18 organizations, 5 sectors)
+
+**Scope**: Designed Phase 2 institutional network outreach strategy from first principles, distinct from the existing Tier 2 individual-organization documentation. Coverage: (1) Phase 1 → Phase 2 transition gates with sector-specific minimum evidence requirements; (2) 18 target organizations across 5 sectors (AG networks, law school associations, journalist membership bodies, union security committees, think tank networks) with decision-maker contacts and adoption pathways; (3) 4 messaging template variants (P2-AG, P2-LS, P2-JO, P2-UN); (4) Resistance-research domain → sector mapping table (Domains 11, 16, 17, 20, 21, 25, 33, 36); (5) Week-by-week sequencing calendar relative to Phase 1 Day 1; (6) Contingency paths for low (<10%) and high (>25%) institutional response rates.
+
+**Key findings**: Phase 2 institutional outreach requires a categorically different pitch from Phase 1 — association-level contacts need evidence that member organizations are already using the corpus, not just that the corpus exists. The minimum gate for institutional outreach in any sector is one named Phase 1 adoption signal from a member organization in that sector. Without this, cold association pitches fail reliably. Georgetown CPT is the single highest-alignment institutional contact (American Dragnet predecessor relationship).
+
 ## 2026-05-07 23:15 UTC — (Session 893 Final Continuation — Orchestrator) — 3 EXPLORATION QUEUE ITEMS COMPLETE: Parallel execution of Domain Expansion Strategy, Gate 1 Readiness, Phase 2 Analytics Framework
 
 **Status**: All three items delivered and committed to master. Exploration queue now at 0 active items. Critical infrastructure issue identified in stockbot (Jetson unreachable).
