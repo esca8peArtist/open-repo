@@ -1,3 +1,76 @@
+## Session 867 — 2026-05-07 — EXPLORATION QUEUE EXPANSION & EXECUTION: SEEDWARDEN TRACK B + STOCKBOT REGIME DETECTION
+
+### ✅ SESSION COMPLETE — 2 EXPLORATION QUEUE ITEMS DELIVERED
+
+**Delivered this session**:
+- ✅ **seedwarden: Track B Non-Etsy Distribution Channels & B2B Strategy** — 3 production-ready files (strategy framework, channel comparison matrix, Phase 2A/B/C roadmap)
+- ✅ **stockbot: Multi-Ticker Signal Correlation & Portfolio Regime Detection** — 3 production-ready files (signal framework, correlation heatmap, implementation-ready HMM spec)
+
+---
+
+### KEY DELIVERABLES
+
+**1. seedwarden Track B — Non-Etsy Channels & B2B Strategy** ✅
+- **Files delivered**: `track-b-distribution-strategy.md` (2,500 words) + `track-b-channel-comparison-matrix.csv` + `track-b-implementation-roadmap.md`
+- **High-value channels identified**:
+  - **B2B direct to herbalists**: $12-16 net margin (vs. $10.61 Etsy), 2-3 week sales cycle, $637M market projected $2.56B by 2034
+  - **Patreon subscription**: $427/month recurring at 50 subs, zero incremental production cost post-setup (monthly seasonal guide drops)
+  - **Education licensing**: $199-1,499/year/institution (herbal schools, naturopathic colleges), 60-90 day sales cycle, highest recurring passive income
+  - **Amazon KDP Print**: Viable ($22.99 pricing), 310M audience, but lower margin ($4.99 net) than Etsy digital
+  - **Craft fairs**: Viable with access card model (Gumroad redemption codes, $0.15-0.40 print cost, $11.60-17.85 net)
+  - **White-label licensing**: $750-3,000 per deal, recommended Phase 3+ only
+- **Execution timeline**: 
+  - **Phase 2A (through June 30)**: Infrastructure-only setup — Gumroad, Patreon, KDP, B2B prospect list. No outreach yet.
+  - **Phase 2B trigger at June 30**: Etsy conversion rate determines urgency. Below 1.5% = accelerate immediately; above 2.5% = additive work only
+  - **Phase 2B (July-Aug)**: Three simultaneous pilots — B2B outreach (10 emails/week), Patreon launch, one KDP Print title
+- **Risk mitigation**: Etsy-focused May 30 launch with pre-researched contingency channels, no execution lag if pivot needed
+- **Business value**: Unlocks B2B/licensing passive income ($1.2K-2.4K/month at 10-20 units/week wholesale); provides May 30 contingency
+
+**2. stockbot — Multi-Ticker Signal Correlation & Portfolio Regime Detection** ✅
+- **Files delivered**: `framework-signal-correlation-and-regime.md` (2,600 words) + `ticker-correlation-heatmap.csv` (12×12) + `regime-detection-algorithm-spec.md` (implementation-ready)
+- **Critical finding — Portfolio is 2.5× more concentrated than it appears**:
+  - **N_eff = 3.9** (not 11) — per Meucci effective-bets formula
+  - **Tech/Consumer cluster** (AAPL+AMZN+SPY+QQQ): 0.82 avg correlation
+  - **Financial cluster** (JPM+MS+GS+AXP): 0.81 avg correlation
+- **Three structural-conflict pairs** (concurrent long positions = synthetic concentration, not diversification):
+  - MS + GS: 0.91 correlation
+  - JPM + GS: 0.87 correlation
+  - AAPL + QQQ: 0.91 correlation
+- **Portfolio-level HMM is missing** — current per-ticker HMMs operate independently; no portfolio synthesis exists
+  - **Specification ready**: 4-state GaussianHMM with 6 portfolio-level features, jump penalty 0.15 (resolves 1358% Sharpe sensitivity to retraining cadence from Session 625)
+  - **Enables implementation**: `src/ml/portfolio_regime_detector.py` (P1, ~12h effort, critical path for Gate 2 safety)
+- **P0 blockers identified** (independent of Gate 1):
+  - Wire `DynamicKellySizer.compute_portfolio_sizes()` in live path (currently bypassed)
+  - Add financial-sector + tech-sector concentration caps to `RiskManager` (no cross-ticker limits exist)
+- **SPY/QQQ redesign needed**: Both should become regime indicators (feed portfolio HMM), not independent alpha generators
+- **Business value**: Gate 2+ operations can safely scale from 2 to 11+ tickers with automatic market regime adaptation; prevents concentration blowups
+
+---
+
+### ITEMS NEEDING USER INPUT/DECISION
+
+**No immediate decisions required this session** — all active projects remain at their prior decision gates:
+- **resistance-research**: Awaiting distribution path choice (A / A+37 / B) for Phase 1 launch
+- **stockbot**: Awaiting architecture review (ARCH-1–7 decisions) before code refactoring; covered calls research blocked until May 12 Gate 1 pass
+- **cybersecurity-hardening**: Phase 1 production-ready, awaiting user approval for Tier 1 outreach
+- **seedwarden**: Phase 2 infrastructure complete, awaiting tag corrections (Track A) + Etsy verification; Track B research now complete
+- **mfg-farm**: Awaiting physical test print; post-test-print Phase 1 roadmap ready
+
+---
+
+### NEXT AUTONOMOUS OPPORTUNITIES
+
+**Immediately available**:
+1. **mfg-farm: Supply Chain Diversification & Resilience Strategy** (3-4 hours, no prereqs) — Now queued for next session. Research multi-supplier models, lead-time hedging, inventory optimization for 3-5 printer farm scaling post-test-print.
+
+**Contingent on user decisions**:
+1. **Phase 1 Distribution execution** (resistance-research) — 60-75 min post-path-decision
+2. **Phase 1 Tier 1 outreach** (cybersecurity-hardening) — immediate upon approval
+3. **ARCH-1–7 code refactoring** (stockbot) — immediate upon architecture review approval
+4. **Phase 2 launch staging** (seedwarden) — immediate upon tag corrections + Etsy verification
+
+---
+
 ## Session 866 — 2026-05-07 08:00+ UTC — PARALLEL AUTONOMY: DOMAIN 42 DISTRIBUTION INFRASTRUCTURE + CYBERSECURITY-HARDENING PHASE 1 LAUNCH READY
 
 ### ✅ BOTH PROJECTS READY FOR EXECUTION — NO BLOCKERS
