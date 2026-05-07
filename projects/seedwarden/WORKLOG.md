@@ -4,6 +4,36 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 63 — 2026-05-07 — Phase 3 Medicinal Herbs Implementation Assets
+
+**Task**: Build three production-ready Phase 3 implementation assets for the medicinal herbs guide product line. Research basis: phase-3-medicinal-herbs-strategy.md and medicinal-herbs-candidate-list.md (both from Session 861, Item 61).
+
+**Phase 3 readiness state**: IMPLEMENTATION-READY. All assets below are copy-paste ready for execution immediately upon launch gate clearance. Gate conditions likely met July–August 2026 (Phase 2 live May 30; forager cohort threshold ~21% already met if 10 of 47 Phase 1 buyers cross to Phase 2; conversion at 2.24% already exceeds the 1.5% gate threshold).
+
+**Files created**:
+
+- `projects/seedwarden/phase-3-medicinal-herbs-etsy-listings.md` — ~3,200 words. Full Etsy listing templates for 5 themed bundles (Women's Health, Respiratory, Immunity, Sleep, Digestive) with title, tags, description, and photo sequence brief for each. SKU structure and tag strategy for all 12 single-herb guides. Practitioner bulk 10-pack and full library bundle templates. Upload sequence defined.
+
+- `projects/seedwarden/phase-3-medicinal-herbs-sourcing-guide.md` — ~2,400 words. Per-species photo sourcing paths (Wikimedia Commons search URLs, iNaturalist fallback, direct botanical garden contacts for Goldenseal and Black Cohosh). Five verified seed/plant suppliers with species availability, certification status, and lead times. FGV verification steps for Goldenseal and Black Cohosh. Legal notes table by species. Photo outreach email template. B2B distribution prospect list (Mountain Rose Herbs, Herbal Academy, American Herbalists Guild, Frontier Co-op, Pacific Botanicals).
+
+- `projects/seedwarden/phase-3-medicinal-herbs-content-outline.md` — ~5,800 words. Full production outlines for all five bundles: Women's Health (3,800 words target), Respiratory (3,600), Immunity (3,800), Sleep and Nervines (3,500), Digestive (3,600). Each outline includes: section-by-section content notes, word allocations, FTC framing guidance per species, conservation sidebar placement, contraindications structure, and writing rules. Shared template infrastructure identified.
+
+**Key decisions logged**:
+
+- Launch sequence confirmed: Women's Health (Sep 2026) → Respiratory (Oct 2026) → Immunity (Nov 2026) → Sleep (Jan 2027) → Digestive (Mar 2027). Seasonal demand alignment is the driver.
+- Goldenseal content carries a full CITES Appendix II sidebar in the Immunity bundle — the highest-risk species from a legal and conservation standpoint. Sourcing guidance directs exclusively to cultivated/FGV-certified material.
+- Dandelion designated as the bridge species between the Wild Edibles catalog and the medicinal herbs line. Email Day 14 trigger from Wild Edibles purchase activates Digestive bundle cross-sell (FORAGER20 code).
+- Ashwagandha in Immunity bundle is the highest-search-volume species for the practitioner buyer segment and receives the longest species treatment in that guide (900 words).
+- Passionflower is the thumbnail anchor species for the Sleep bundle — the flower is unmistakable and click-driving.
+- Single-herb guides (12 total, $10–$16) derive from bundle content after bundle launch; estimated 2–3 additional hours per guide for standalone formatting; no new research required.
+- Practitioner 10-pack licenses list simultaneously with each bundle (1–2 hours per bundle to add license page); $120–$150 per pack.
+- Full library bundle ($72) activates after all five bundles live with at least one review each (earliest April 2027).
+- Total estimated development time: 64–74 hours across all five bundles at $1,600–$1,850 imputed COGS. Break-even per bundle: 14–17 units.
+
+**Sources**: phase-3-medicinal-herbs-strategy.md, medicinal-herbs-candidate-list.md, United Plant Savers FGV program documentation, CITES Appendix II species database, FTC Health Products Compliance Guidance (Dec 2022), Prairie Moon Nursery, Strictly Medicinal Seeds, Mountain Rose Herbs, Herbal Academy.
+
+---
+
 ## Item 62 — 2026-05-07 — Phase 2 Buyer Retention & Lifecycle Campaign Strategy
 
 **Task**: Design systematic buyer lifecycle campaigns (welcome, content deepening, cross-zone
