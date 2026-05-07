@@ -382,7 +382,257 @@ If ICE encounters you and takes you into custody:
 
 ---
 
-## Part 10: Updates and Revisions
+## Part 10: Financial Privacy — Avoiding Financial Surveillance and De-Banking
+
+Financial transactions are a major vector for tracking undocumented immigrants. Bank records, payment apps, and remittance services can be subpoenaed by ICE or obtained through data-sharing arrangements with DHS. The ImmigrationOS platform can cross-reference financial data with immigration records to build location timelines and social network maps.
+
+### 10.1 Why Financial Activity Is a Surveillance Vector
+
+**Bank records and subpoenas**: ICE can subpoena bank records through grand jury process or via administrative subpoena in civil immigration enforcement. Bank records reveal: where you live (billing address), where you shop (merchant location), where you work (payroll deposits), who pays you (employer identity), and your regular movement patterns (ATM withdrawals at specific branches).
+
+**Payment apps**: Venmo, Cash App, Zelle, and PayPal create transaction records that are stored on commercial servers and accessible via legal process. Venmo transaction history is public by default (merchants, amounts, and counterparty usernames are visible to anyone unless privacy settings are changed). Even with privacy settings enabled, the companies retain the transaction data and can be compelled to produce it.
+
+**Remittance services**: Western Union, MoneyGram, and similar international money transfer services are regulated financial institutions required to verify identity for transfers above $1,000 and maintain records accessible via subpoena. If you use remittance services frequently, those records create a timeline of financial activity.
+
+**Data broker financial cross-referencing**: Commercial data brokers (LexisNexis, Equifax, and others operating under the "alternative data" framework) collect and sell financial behavioral data — not account balances, but patterns: what types of merchants you frequent, what financial products you use, what zip codes your financial activity clusters in. This data is used by ELITE-type systems to triangulate location even without formal bank record subpoenas.
+
+### 10.2 Cash-First Workflow
+
+The most effective countermeasure against financial surveillance is conducting as many transactions as possible with cash, which creates no electronic record.
+
+**Practical implementation**:
+- Withdraw cash from ATMs in amounts you will use within 1–2 weeks. Do not carry large cash sums that create theft risk.
+- Pay for groceries, transit, utilities, and everyday expenses in cash wherever accepted. Most retail and grocery stores accept cash; most utility providers accept cash payment at customer service locations or through money order.
+- For recurring expenses (rent), a money order purchased with cash creates a payment record that the landlord can verify, without linking to a bank account. Purchase money orders at convenience stores, supermarkets, or USPS locations.
+
+**Limitations**: Employers are generally required to pay wages through bank transfer or check for tax compliance. If your employer pays via direct deposit, that creates a bank record. This is a legal obligation on the employer's side that you cannot change. The countermeasure is to limit the digital footprint attached to that account (avoid using the account for purchases; withdraw in cash).
+
+### 10.3 Prepaid Cards and Debit Cards
+
+Prepaid debit cards (Visa Prepaid, Mastercard Prepaid) purchased with cash at retail stores (Walmart, CVS, Walgreens, 7-Eleven) allow electronic payments without a bank account in your name.
+
+**How to use prepaid cards without identity linking**:
+- Purchase the card with cash (some cards require identity verification for amounts over $500 loaded; for smaller amounts, many do not require ID)
+- Load cash onto the card as needed at retail reload locations
+- Use for online purchases, subscription services, or places that do not accept cash
+
+**Important limitation**: Prepaid cards purchased with identity verification are registered to your name. For maximum privacy, use prepaid cards that do not require ID verification and reload with cash (not via bank transfer).
+
+**Payroll cards**: Some employers provide "payroll cards" for workers without bank accounts. Payroll cards are a form of prepaid card loaded with wages. These are legal, require no bank account, and create less paper trail than a traditional bank relationship if used primarily as cash sources. However, the employer's payroll records still document your employment regardless of the payment method.
+
+### 10.4 Cryptocurrency — Practical Limits and Appropriate Use
+
+Cryptocurrency (Bitcoin, Monero, Ethereum) is sometimes recommended as a privacy tool, but its use for financial privacy is more limited than often claimed in activist contexts.
+
+**Bitcoin (and most cryptocurrencies): Not private by default**. Every Bitcoin transaction is recorded on a public blockchain, permanently and globally visible. If you ever connect a Bitcoin wallet to your real identity (by purchasing with a bank account, using an exchange that did KYC verification, or receiving a payment from an identified sender), that address can be traced.
+
+**Monero: Meaningfully private**. Monero is a cryptocurrency specifically designed to obscure sender, recipient, and transaction amounts. It is the only major cryptocurrency recommended for genuine financial privacy. However, converting cash to Monero and back to cash without identity exposure requires using peer-to-peer exchanges (LocalMonero, or others operating without KYC), which involves in-person transactions with counterparties you do not know. This creates safety risks and practical friction that make Monero unsuitable as a primary financial tool for most immigrants.
+
+**Recommendation**: Cryptocurrency is not a replacement for cash or prepaid cards for most undocumented immigrants. The friction and technical complexity are high, and the privacy benefit is only realized if the acquisition of the cryptocurrency is also private. Use cash and prepaid cards as the primary financial privacy tools, and do not rely on cryptocurrency unless you have specifically learned the Monero peer-to-peer exchange workflow.
+
+### 10.5 Avoiding Financial De-Banking
+
+"De-banking" — the closure of a bank account by the institution — has been documented against communities perceived as high-risk. This is distinct from government action but has similar consequences: loss of financial infrastructure at a vulnerable moment.
+
+**Risk reduction**:
+- Maintain minimal account balances (only what you need for near-term expenses) to reduce the account's visibility to risk-monitoring systems that flag large transaction patterns
+- Do not use your primary bank account for transactions that pattern-match to high-risk categories (large cash deposits without explanation, frequent international transfers, cryptocurrency exchanges)
+- If you use a community credit union rather than a large bank, you are dealing with a non-profit institution whose de-banking risk profile is different — community credit unions have less automated risk scoring infrastructure and more human relationship-based account management
+
+**If de-banked**: A bank account is legally optional — no US law requires you to have one. Prepare for this possibility by:
+- Maintaining a working prepaid card system before you need it (do not wait until your bank account is closed)
+- Establishing a relationship with a credit union if possible, as a backup banking relationship
+- Knowing which money order providers (USPS, 7-Eleven, supermarkets) are in your area for rent and utility payments
+
+### 10.6 Financial Evidence in Immigration Cases
+
+Financial records can be both a surveillance risk and a legal asset. If you have legal proceedings (asylum case, U visa application, work permit), financial records demonstrating continuous presence in the US are valuable evidence of your ties to the community and your history.
+
+Consult with your immigration attorney about which financial records to preserve and how to present them in legal proceedings. Your attorney can advise on the balance between financial privacy (to reduce surveillance risk) and financial documentation (to support your legal case).
+
+---
+
+## Part 11: SIM Isolation and Phone Number Privacy
+
+### 11.1 Why Multiple SIM Cards Matter
+
+Your phone number is an identity anchor that links your device to your carrier account, your contacts, and your real identity. In the immigration context, a single phone number used for both personal and community organizing activity creates a single point of surveillance: anyone who has your number can track your communication patterns, and carrier records connect that number to your billing address, payment method, and account history.
+
+**SIM isolation** means using separate SIM cards for separate activities, each with a different number, so that a compromise of one number does not expose all your communications.
+
+### 11.2 Practical SIM Isolation Setup
+
+**Three-SIM model for high-risk individuals**:
+
+| SIM | Purpose | Registration | Loaded with |
+|-----|---------|-------------|-------------|
+| SIM A — Personal | Family, personal contacts, non-organizing use | Prepaid, purchased with cash | $20–$30/month as needed |
+| SIM B — Organizing | Community organizing, advocacy contacts, legal aid organizations | Prepaid, purchased with cash, no identity link | $10–$20/month for calls/texts |
+| SIM C — Legal/Emergency | Immigration attorney, emergency contacts, hotline numbers | May be more permanent; consider a VoIP number | Minimal usage; keep loaded |
+
+**Device handling**: On a GrapheneOS Pixel, you can use eSIM or physical SIM swapping. Alternatively, a second inexpensive phone ($30–$60 prepaid) running on SIM B is a viable low-cost approach.
+
+**SIM swapping discipline**: When switching between SIM contexts, turn the phone off completely before swapping. A device that connects briefly to a tower on one SIM and then on another creates a pattern that can be linked by carrier IMSI cross-referencing.
+
+### 11.3 VoIP Numbers for Additional Separation
+
+A Voice over IP (VoIP) phone number operates over the internet rather than a cellular carrier, and can be registered without proof of identity at most services.
+
+**Recommended VoIP services**:
+- **MySudo**: Provides multiple isolated "Sudo" numbers, each with separate email and credit card. Each Sudo is compartmentalized. Available on iOS and Android.
+- **JMP.chat**: XMPP-based VoIP service; can be registered pseudonymously and paid with cryptocurrency.
+- **Google Voice**: Available but requires a Google account with verified identity — only appropriate if you already have a Google account not linked to your immigration status.
+
+**Use case for immigration context**: A VoIP number is appropriate for registering Signal (so Signal is not linked to your carrier number), for giving a contact number to services where you do not want your carrier number recorded, and as SIM C in the isolation model above.
+
+**Limitation**: VoIP numbers are less reliable for emergency services (911 calls from VoIP may not route your location automatically). Do not use a VoIP number as your only means of making emergency calls.
+
+### 11.4 Location Spoofing — What It Accomplishes and What It Does Not
+
+Location spoofing means deliberately misrepresenting your device's reported location to apps and services. This can be done at the app permission level (denying location access) or via mock location tools that feed false GPS coordinates.
+
+**What location spoofing accomplishes**:
+- Prevents apps (weather apps, navigation, social media) from recording your real location and transmitting it to their servers
+- Can prevent OSINT tools from identifying your location through app-submitted location data
+- Can confuse pattern-of-life analysis that depends on app-reported location data
+
+**What location spoofing does NOT accomplish**:
+- It does not hide your location from your cellular carrier. Carrier location data is determined by which cell towers your phone connects to — this is at the network level, not the device level, and cannot be spoofed by the device.
+- It does not hide your location from a IMSI catcher (Stingray) deployed near you.
+- It does not alter EXIF data in photos already taken with location enabled.
+
+**Practical implementation on GrapheneOS**:
+- Go to Settings > Privacy > Location. For each app, set to "Deny" if the app does not need location access. Set to "Only while using" for navigation apps you use legitimately.
+- For mock location: GrapheneOS supports "fake location" permissions per-app via developer mode. This is an advanced feature; consult `device-hardening-implementation-guide.md` for step-by-step configuration.
+
+**Recommendation**: Focus first on denying location access to apps that have no need for it (which is most apps), before setting up mock location. The denial approach reduces the data that reaches data brokers far more effectively than most users realize.
+
+---
+
+## Part 12: Week-by-Week Implementation Timeline
+
+This timeline assumes a starting point of no security measures in place. Adapt to your circumstances.
+
+### Week 1: Foundation (4–6 hours total)
+
+**Day 1–2: Data broker opt-outs**
+- Complete LexisNexis Accurint opt-out: https://optout.lexisnexis.com/ (30 minutes)
+- If California resident: complete DROP platform at privacy.ca.gov/drop/ (30 minutes)
+- Submit secondary data broker opt-outs (BeenVerified, Spokeo, WhitePages — see Part 2.3) (45 minutes)
+
+**Day 3–5: Communications**
+- Install Signal on your current phone
+- Enable disappearing messages: Settings > Privacy > Default Timer > 1 day
+- Set "Who can find me" to Nobody: Settings > Privacy > Phone Number
+- Identify your immigration attorney and save their contact in Signal
+
+**Day 6–7: Legal preparation**
+- Read the EFF Know Your Rights guide: https://www.eff.org/know-your-rights
+- Prepare a physical card with your attorney's name and phone number. Carry it in your wallet.
+- Review Part 8 of this guide (arrest and detention procedures)
+
+### Week 2: Device and SIM Security (8–12 hours total)
+
+**Day 8–10: Obtain hardware**
+- Purchase a Pixel 6, 7, or 8 from a retail store or online (used devices are fine; $100–$250)
+- Purchase one or two prepaid SIM cards from a carrier different from your current carrier
+
+**Day 11–14: Install GrapheneOS**
+- Follow the GrapheneOS installation guide at grapheneos.org/install
+- This takes 2–4 hours for a first-time installer; proceed carefully
+- After installation, configure auto-reboot timer (18 hours) and strong passphrase
+- Install Signal on GrapheneOS device with a new VoIP number (MySudo or JMP.chat)
+
+### Week 3: Financial and Behavioral Security (2–3 hours total)
+
+**Day 15–17: Financial audit**
+- Identify which of your regular expenses are currently linked to a bank account or payment app
+- Determine which can be moved to cash or prepaid card (groceries, transit, everyday expenses)
+- Purchase a prepaid debit card at a retail store with cash; confirm it works for your use case
+
+**Day 18–21: Behavioral randomization**
+- Read Part 6 of this guide (operational discipline / pattern-of-life)
+- Identify two or three specific behavioral patterns to change (commute route, meeting location, mailing address)
+- Implement at least one address randomization step: if currently using your home address for non-essential mail, obtain a mailbox service or use a trusted community organization's address
+
+### Week 4: Integration and Escalation Preparation (2–4 hours)
+
+**Day 22–25: Community trust network**
+- Identify two trusted people (family, community, trusted friend) who know your situation and can be contacted if you are arrested
+- Share the arrest protocol from Part 8 with them
+- Confirm they have your attorney's contact information
+
+**Day 26–28: Incogni automation (optional)**
+- If budget permits, subscribe to Incogni ($7.99/month) to automate data broker re-submissions quarterly
+- Without Incogni: schedule a calendar reminder every 90 days to repeat the data broker opt-outs from Week 1
+
+**Ongoing (monthly)**:
+- Every 30–90 days: rotate VPN providers and review Signal contact list for inactive or unverified contacts
+- Every 90 days: re-submit data broker opt-outs if not using Incogni
+- After any ICE encounter: document the encounter details and share with your attorney; review whether threat level has changed
+
+---
+
+## Part 13: Organization Resource Mapping — For Legal Aid Organizations
+
+This section addresses the specific question: **which recommendations are for individual implementation, and which are for the organizations that serve immigrant communities?**
+
+### 13.1 Individual Implementation (Clients/Community Members)
+
+The following recommendations are designed for individual undocumented immigrants to implement on their own or with minimal organizational support:
+
+| Recommendation | Part | Time | Cost | Skill Level |
+|---|---|---|---|---|
+| LexisNexis Accurint opt-out | Part 2.1 | 30 min | Free | None |
+| California DROP platform | Part 2.2 | 30 min | Free | None |
+| Signal installation and configuration | Part 5.1 | 1 hour | Free | Basic |
+| Secondary data broker opt-outs | Part 2.3 | 45 min | Free | None |
+| Prepare physical attorney card | Part 8 | 15 min | Free | None |
+| Prepaid card acquisition | Part 10.3 | 30 min | $20–$50 | None |
+| Cash-first behavioral changes | Part 10.2 | Ongoing | None | None |
+
+### 13.2 Organizational Support Recommended (for Complex Steps)
+
+The following recommendations benefit from organizational support — either trained volunteers, tech staff, or a structured workshop setting:
+
+| Recommendation | Part | Why Org Support Helps |
+|---|---|---|
+| GrapheneOS installation | Part 4.1 | Technical — first-time installation takes 2–4 hours and requires a computer; group installation workshops are efficient |
+| SIM isolation setup | Part 11 | Choosing carriers, purchasing SIMs, configuring multiple numbers — works better in a group setting with tech support |
+| Incogni subscription management | Part 2.4 | Payment card and subscription management; organizations can set up group subscriptions for clients |
+| Briar setup and QR code exchange | Part 7.2 | Requires in-person exchange; community events are natural settings |
+| Legal retainer identification | Part 7.3 | Organizations have existing referral networks; individuals searching for attorneys independently face significant barriers |
+
+### 13.3 Organizational-Level Recommendations (For the Legal Aid Org Itself)
+
+The following recommendations are not about individual client security but about how legal aid organizations can protect their client data and communications:
+
+**Attorney-client confidentiality**:
+- Immigration attorneys must use end-to-end encrypted communication channels for client communication. Email is not sufficient. Signal or a legal practice management system with end-to-end encryption (Clio, MyCase — confirm encryption specifications) should be standard.
+- Client files stored in cloud services (Google Drive, Dropbox, etc.) should be in services with client-side encryption or client access controls. ICE can subpoena cloud-hosted client data; attorney-client privilege protects content but delays, not prevents, production.
+- Staff computers that hold client information should use full-disk encryption (FileVault on Mac, BitLocker on Windows).
+
+**Organizational operating security**:
+- Intake forms and client contact records should be stored with role-based access controls (not all staff need access to all client records).
+- Client contact information (phone numbers, addresses) should be purged from staff personal phones. Use Signal's "Note to Self" feature or an organizational secure messaging tool to store client contact notes.
+- Train all staff (including administrative staff who handle intake) on the Part 3 Mobile Fortify field encounter protocol — staff may encounter ICE agents at courthouses, detention facilities, or in the community.
+
+**Organizational device policy**:
+- Field staff who accompany clients to appointments or visit clients in the community should have device policies that align with the Tier 2 guidance in Part 7: encrypted devices, Signal for field communications, and a protocol for what to do if a device is seized.
+
+### 13.4 Recommended Workshop Curriculum for Legal Aid Organizations
+
+Organizations distributing this guide should consider offering workshops on three core topics:
+
+1. **30-minute data broker opt-out session** (in-person, client-facing): Guide all clients through LexisNexis Accurint opt-out and (for California residents) DROP platform submission at a single group session. The 30-minute group format is dramatically more effective than handing out written instructions — completion rates are near 100% vs. low for printed instructions alone.
+
+2. **90-minute device security workshop**: GrapheneOS installation and Signal configuration. Bring 3–4 volunteer tech supporters for every 10 clients. Require clients to bring their Pixel device and a laptop or provide loaner laptops for the installation step. Focus on the most impactful settings: passphrase (not biometric), auto-reboot timer, disappearing messages.
+
+3. **Know Your Rights briefing with incident response drill**: 60-minute session covering the arrest protocol (Part 8), the attorney card preparation, and a 10-minute "what do you say and do" rehearsal. This is the session that produces the most durable behavioral change — rehearsal creates muscle memory that written materials do not.
+
+---
+
+## Part 15: Updates and Revisions
 
 This guide is current as of May 2026. The threat landscape changes:
 
@@ -400,23 +650,32 @@ This guide is current as of May 2026. The threat landscape changes:
 ## Summary Checklist
 
 **Essential (everyone)**:
-- [ ] Opt out of LexisNexis Accurint
-- [ ] Install Signal and configure disappearing messages
-- [ ] Identify and save immigration attorney contact
+- [ ] Opt out of LexisNexis Accurint (Part 2.1)
+- [ ] California residents: complete DROP platform at privacy.ca.gov/drop (Part 2.2)
+- [ ] Install Signal and configure disappearing messages (Part 5.1)
+- [ ] Identify and save immigration attorney contact (Part 8.3)
+- [ ] Prepare physical attorney card — write number on paper, carry in wallet
 - [ ] Learn your rights: https://www.eff.org/know-your-rights
+- [ ] Begin shifting daily expenses to cash (Part 10.2)
+- [ ] Submit secondary data broker opt-outs: BeenVerified, Spokeo, WhitePages (Part 2.3)
 
-**Intermediate (activists, high-risk)**:
-- [ ] Install GrapheneOS on Pixel phone
-- [ ] Configure GrapheneOS auto-reboot to 18 hours
-- [ ] Exchange QR codes with Briar contacts
-- [ ] Subscribe to Incogni for automated data broker maintenance
-- [ ] Set up VPN + Tor for sensitive communications
+**Intermediate (activists, high-risk individuals)**:
+- [ ] Install GrapheneOS on Pixel phone (Part 4.1)
+- [ ] Configure GrapheneOS auto-reboot to 18 hours (Part 4.1)
+- [ ] Exchange QR codes with Briar contacts (Part 5.2)
+- [ ] Subscribe to Incogni for automated data broker maintenance ($7.99/month) (Part 2.4)
+- [ ] Set up VPN + Tor for sensitive communications (Part 7.2)
+- [ ] Acquire prepaid debit card with cash (Part 10.3)
+- [ ] Set up SIM B on separate prepaid carrier for organizing communications (Part 11.2)
 
 **Advanced (organizing leaders, investigation targets)**:
-- [ ] Install Qubes OS or Tails OS for sensitive work
-- [ ] Obtain YubiKey hardware security key
-- [ ] Establish separate locations for organizing
+- [ ] Install Qubes OS or Tails OS for sensitive work (Part 7.3)
+- [ ] Obtain YubiKey hardware security key (Part 7.3)
+- [ ] Establish separate locations for organizing (Part 7.3)
 - [ ] Retain immigration counsel; discuss incident response
+- [ ] Implement VoIP number (MySudo or JMP.chat) for Signal registration (Part 11.3)
+- [ ] Complete full financial audit; move maximum expenses off bank-tracked channels (Part 10)
+- [ ] Review organizational resource mapping section with your legal aid organization (Part 13)
 
 ---
 

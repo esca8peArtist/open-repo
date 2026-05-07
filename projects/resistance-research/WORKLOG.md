@@ -2,6 +2,35 @@
 
 ---
 
+## May 7, 2026 — Research Agent: Domain 41-B Disability Rights, Benefit Infrastructure, and Democratic Participation
+
+**Status**: COMPLETE
+
+**Context**: Full-scope domain research and writing. Domain 41-B was identified in ITEM44_DOMAIN41_CANDIDATES.md as the "fastest to produce" Phase 2 candidate with the highest cross-coalition leverage score. Seven-part structure as specified in the research brief. All seven parts produced in a single session.
+
+**File created**:
+- `projects/resistance-research/domains/domain-41b-disability-rights-benefit-infrastructure-civic-participation.md` (~5,800 words, 60 sources, production-ready)
+
+**Key findings**:
+
+1. **20 percent ID gap confirmed**: The CDCE/UMD 2023 national survey (September-October 2023, n=2,386 U.S. adult citizens) documents that 20 percent of self-identified disabled people lack a current driver's license, compared to 6 percent of non-disabled people. An additional 9 percent of disabled people have licenses without current name/address. Total: 29 percent of disabled voters have either no current driver's license or one that would not satisfy SAVE Act requirements. This is the operative disability-specific statistic for SAVE Act advocacy.
+
+2. **40.2 million disabled eligible voters**: Rutgers Program for Disability Research (October 2024) projects 40.2 million eligible voters with disabilities — one in six eligible voters — a 5.1 percent increase since 2020. Disability type breakdown: mobility (22.1M), cognitive (14.4M), hearing (11.9M), visual (7.2M).
+
+3. **SSA staffing collapse documented**: 6,645 employees lost since January 2025 (11% reduction). SSA internal planning documents target 50 percent fewer field office visits in FY2026 (from 31.6 million to 15 million visits annually). This directly impacts NVRA voter registration capacity at SSA offices — the primary in-person voter registration pathway for 15.5 million SSDI/SSI recipients.
+
+4. **ADA enforcement gap confirmed**: DOJ Civil Rights Division has lost ~70% of its attorneys since January 2025. June 2025: Disability Rights Delaware found 54% of polling sites violated ADA parking requirements alone. No new federal enforcement actions on polling place accessibility have been publicly announced since early 2025.
+
+5. **Comparative framework**: Germany, UK (Elections Act 2022), and Canada all offer enforceable companion assistance rules, equipment flexibility mandates, and proactive barrier-removal frameworks that the U.S. lacks. UK specifically eliminated the "close family member only" restriction on voter companions in 2022 — a reform directly applicable to group home and care facility voters in the U.S.
+
+6. **Cross-domain integration**: Domain 41-B connects directly to Domain 1 (SAVE Act coalition fracture analysis), Domain 31 (Medicaid cuts and SSDI/SSI overlap), Domain 26 (institutional resilience/SSA NVRA compliance), and Domain 29 (DOJ capture and ADA enforcement collapse).
+
+7. **Fastest-path reform**: The SAVE Act accessible ID exception amendment is the most tractable near-term intervention — preserves SAVE Act's core mechanism, draws on existing state accessible ID programs, consistent with ADA reasonable modification framework, creates cross-partisan election administrator constituency.
+
+**Source quality**: All 60 sources verified and live. Highest-confidence statistics sourced to CDCE/UMD national survey, Rutgers projections, EAC official reports, and GAO studies. Comparative data sourced to Elections Canada, UK Electoral Commission, Australian Human Rights Commission, and German Federal Returning Officer official publications.
+
+---
+
 ## May 7, 2026 — Research Agent: May 2026 Currency Audit
 
 **Status**: COMPLETE

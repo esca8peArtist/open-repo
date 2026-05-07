@@ -250,7 +250,236 @@ Additional legal support resources:
 
 ---
 
-## Part 6: Implementation Path
+## Part 6: Role-Specific OpSec — Different Participants, Different Risks
+
+Not everyone at a protest or organizing meeting faces the same threat model. Frontline participants at a march, lead organizers coordinating logistics, legal observers documenting police interactions, and communications staff managing public-facing media each face different exposure and need different countermeasures.
+
+### 6.1 Frontline Protest Participants
+
+Frontline participants are at highest risk for: on-the-ground Mobile Fortify facial recognition, IMSI catcher collection, aerial identification via drone, ALPR vehicle tracking, and arrest-related device seizure.
+
+**Essential for frontline participants**:
+- Face + hat + sunglasses combination (Part 4.1)
+- Phone powered off and bagged before entering the protest perimeter (Part 4.3)
+- NLG hotline written on arm (Part 5.1)
+- Generic, non-distinctive outer clothing — change one outer layer before leaving the protest area (Part 4.2)
+- No personal vehicle at the protest site (Part 3.2)
+- Outside contact with check-in time established (Part 5.2)
+
+**Not required for frontline participants**: GrapheneOS, account separation architecture, organizational account management. These are useful but should not be prerequisites for participation — the six measures above address the highest-risk exposure for the vast majority of frontline participants.
+
+### 6.2 Lead Organizers and Event Coordinators
+
+Lead organizers coordinate logistics, manage communications between subgroups, and often have the longest operational exposure — they are involved before, during, and after actions, which expands the window for surveillance collection.
+
+**Additional measures for lead organizers (beyond frontline participant baseline)**:
+- GrapheneOS on a dedicated protest device with auto-reboot configured (Part 6, Tier 3, item 13)
+- Organizational account separation: the public-facing account is operated from a device not connected to personal identity (Part 2.3)
+- The 72-hour pre-action social media protocol applied more strictly: review and archive all organizing-related content from personal accounts before each action (Part 2.1)
+- Burner device for in-action coordination rather than personal phone (Part 4.3)
+- Incogni data broker subscription for ongoing maintenance (Part 6, Tier 3, item 17)
+
+**Specific to lead organizers**: Because lead organizers are the most likely targets of DHS administrative subpoenas (documented against accounts coordinating logistical information about ICE-response activities), the account separation architecture (Part 2.3) is not optional — it is essential. An organizational coordination account used from a device traceable to your personal identity defeats the purpose of account separation.
+
+### 6.3 Legal Observers
+
+Legal observers document police-protester interactions and are specifically trained not to participate in the action they are observing. Their threat model is different: they are less likely to be arrested than frontline participants, but their documentation materials (photos, video, notes) are high-value targets for law enforcement attempting to identify other participants.
+
+**For legal observers**:
+- Apply Tier 2 measures for personal protection (Part 6, Tier 2)
+- Transmission first: upload all documentation to NLG secure storage as quickly as possible after the action — ideally from a location away from the protest site before returning home. Do not leave documentation only on your device overnight. Contact your local NLG chapter for their current preferred secure transmission method.
+- If detained, your documentation is specifically what police may be seeking. Know your rights regarding journalistic documentation before the action (the NLG can brief you). Do not consent to device search without a warrant.
+- The green NLG legal observer hat creates visibility — it is intended to deter misconduct by making observer presence known — but it also makes you identifiable in aerial and facial recognition databases. Apply the same physical countermeasures as other participants during movement to and from the action site.
+
+### 6.4 Communications Coordinators
+
+Communications coordinators manage public-facing social media, communicate with press, and may handle inbound inquiries from journalists or other organizations. Their exposure is specifically through the platforms they operate and the content they post.
+
+**For communications coordinators**:
+- The public account must be operated from a device with full identity separation: separate email (registered through Tor), separate VoIP phone number (not the coordinator's personal number), separate device that has never been signed into the coordinator's personal accounts (Part 2.3)
+- Before each action: the 72-hour pre-action protocol applies to the public account as well. Archive or make private any post that reveals logistics, timing, or staging information that was posted to coordinate action planning and is now operationally unnecessary
+- Catch and Revoke pipeline risk is highest for communications coordinators who are visa holders or non-citizens. Consult with immigration counsel before managing a public account that posts protest-related content (Part 6, Tier 3, item 15)
+- Establish a backup operator for the public account who can step in if the primary coordinator is arrested or their account is subpoenaed. The backup operator should have independent access — not via a shared password sent over an unsecured channel, but via a separately configured access credential.
+
+### 6.5 Organizational Leadership
+
+Organizational leadership (union officers, civil rights coalition leadership, nonprofit executive directors) face a distinct threat: not primarily field-level biometric collection, but longer-term investigation through financial records, travel records, and organizational network mapping.
+
+**For organizational leadership**:
+- All measures from this playbook apply, with Tier 3 as the appropriate baseline (not optional)
+- Legal consultation specifically regarding organizational risk: in documented cases, law enforcement has used RICO-adjacent legal theories to name organizational leadership in connection with protest activities. An attorney who knows your organization's legal structure and your personal exposure should review your security posture, not just a general "know your rights" briefing.
+- Financial opacity: organizational finances related to activist activities should be handled with legal counsel's involvement. Labor unions have specific legal frameworks (LMRDA); nonprofit organizations have separate frameworks. The specific risk is whether financial relationships between organizations can be used to establish a network that law enforcement treats as a conspiracy. This is a legal question, not a technical one — get legal advice.
+- DHS social network analysis (ImmigrationOS entity resolution, Palantir AIP social graph expansion) specifically targets high-degree nodes in organizing networks. If you are organizationally prominent, you are more likely to be a high-degree node in social graph analysis than a frontline participant. Apply Tier 3 technical measures and specifically consult on network graph exposure with a civil liberties attorney.
+
+---
+
+## Part 7: Network Security — Vetting, Infiltration, and Secure Onboarding
+
+### 7.1 The Documented Risk
+
+Infiltration of activist organizations by law enforcement informants and undercover agents is documented in US history from COINTELPRO forward and has continued through the 2020s. Several documented cases are relevant:
+
+- FBI and local law enforcement placed informants in Black Lives Matter organizing groups in multiple cities in 2020–2021
+- Undercover law enforcement agents attended organizing meetings in connection with the Standing Rock protests
+- DHS has used paid informants in immigration-adjacent advocacy networks
+
+Infiltration is particularly effective against organizations with loose membership criteria and no formalized trust-building process. The countermeasures below are not about creating paranoid organizations that exclude good-faith participants — they are about building the trust infrastructure that makes infiltration operationally harder.
+
+### 7.2 Vetting New Participants
+
+**The core principle**: Trust is built through demonstrated participation over time, not through assertions about who someone is. Someone who shows up to two consecutive organizing meetings and expresses a great deal of enthusiasm about confrontational tactics and logistics is a different kind of trust-building signal than someone who has worked with known community members over six months.
+
+**Practical vetting framework**:
+
+1. **Vouching chain**: New participants should ideally be introduced by an existing, trusted participant who can vouch for them from direct personal knowledge. "I met them at another organization where I worked for two years" is a stronger voucher than "I met them at the last protest."
+
+2. **Tiered access**: Not every participant needs access to the same information. A new participant at a public meeting does not need to be in the Signal group where operational logistics are discussed. Access to higher-trust communication channels should follow demonstrated participation, not arrival.
+
+3. **Behavioral signals to watch for**: Informants and provocateurs tend toward certain behavioral patterns: pressing for aggressive tactics that the group has not decided on; seeking specific logistical information (times, routes, staging locations) beyond what their role requires; disappearing from the group after getting information and reappearing before planned actions; expressing positions and opinions in ways designed to increase conflict within the group. None of these are individually conclusive, but patterns matter.
+
+4. **No entrapment**: If a new participant begins pushing the group toward illegal activity (property destruction, violence, weapons), that is a documented law enforcement informant tactic. Firmly redirect. If the behavior continues, escalate within the organization's leadership.
+
+### 7.3 Compartmentalized Communication Structure
+
+Compartmentalization means structuring your communication channels so that a compromise of one channel does not expose all operations. The parallel to network security: don't let one breached node expose the whole network.
+
+**Recommended structure**:
+
+- **Public channel** (public social media, public website, newsletter): Used for public-facing communications, event announcements, and content that is designed to be seen. No operational logistics here.
+- **General participant channel** (Signal group, closed Discord): Used for coordination among confirmed participants. New participants are added here after basic trust verification. Disappearing messages enabled (24 hours).
+- **Core organizer channel** (separate Signal group, very small): Used for operational logistics — timing, routes, legal support coordination, escalation decisions. Access is limited to a small number of trusted organizers who need this information for their specific roles. New members are never added here based on self-selection.
+- **Emergency channel** (established in advance, used only during active situations): A check-in mechanism that outside contacts use if participants cannot be reached. May be as simple as a group SMS thread with outside contacts who are not at the action.
+
+### 7.4 Secure Meeting Logistics
+
+Operational security extends to physical meetings, not just digital communications.
+
+**Location selection**:
+- Avoid meeting at the same location repeatedly, especially for core organizer meetings. ALPR data, surveillance cameras, and pattern-of-life analysis can map attendance at a recurring meeting location even if the content of the meeting is not known.
+- Private residences are generally more secure than commercial spaces (coffee shops, community centers with security cameras). However, if law enforcement is specifically targeting a known organizer, their home becomes a surveillance focal point.
+- Rotating locations among several trusted venues reduces the surveillance value of any single location.
+
+**Pre-meeting counter-surveillance**:
+- Arrive by different routes than your daily commute. If attending the same meeting consistently, vary your approach from multiple directions.
+- Spend 10–15 minutes in a nearby location observing the meeting venue before entering. Look for: vehicles with occupants who do not appear to be there for any obvious purpose, unfamiliar individuals who arrived and are waiting without an obvious reason, surveillance equipment (cameras, vans with antenna arrays) that seems inconsistent with the neighborhood.
+- Do not conduct sensitive meeting discussions near windows, in rooms with open doors to public areas, or in outdoor spaces within range of a directional microphone (general guideline: within 50–100 meters of any public space or road).
+
+**Device hygiene at meetings**:
+- Ask all participants to power off phones or place them in Faraday bags before sensitive discussions. A powered-on phone in the room — even not being actively used — can be compelled to serve as a microphone if the device has been compromised. Faraday bags block this at the hardware level.
+- Do not connect to Wi-Fi in the meeting venue. Use your device's cellular data (or power it off entirely) rather than connecting to a network whose traffic may be monitored.
+
+---
+
+## Part 8: Physical Tradecraft — Counter-Surveillance Basics
+
+### 8.1 The Goal: Knowing Whether You Are Being Followed
+
+Counter-surveillance for activists is not about the elaborate tradecraft of intelligence agencies — it is about the basic capacity to know whether you are being followed or monitored in a way that changes your operational decisions. If you do not know you are being surveilled, you cannot adjust.
+
+### 8.2 Surveillance Detection Routes (SDRs)
+
+An SDR is a planned movement route that creates multiple observation opportunities for you to detect whether the same person or vehicle appears repeatedly. The principle: coincidence once is coincidence, twice is possible coincidence, three times in different contexts is surveillance.
+
+**Simple SDR for urban activists**:
+1. From your starting point, walk two or three blocks in a direction that is away from your destination, making at least two turns. Note who is in your vicinity.
+2. Enter a store or café and spend 5–10 minutes inside. Note who follows you in, and who is waiting when you exit.
+3. Continue toward your destination via a route that makes an additional turn or two. Note if any individual or vehicle from Step 1 appears again.
+4. If the same person appears twice: do not proceed to your destination. Lead them away and make contact with your destination by phone from a public location.
+
+**For vehicle surveillance**: Vary your normal routes to recurring locations. If the same vehicle appears in your rearview mirror at two or more successive turns — particularly turns that are not direct routes between common origins and destinations — you may be followed. Confirm with a route that would only make sense if following you (loop through a residential area with no through traffic), then proceed to a public, populated location rather than your intended destination.
+
+### 8.3 Identifying Surveillance at Protest Perimeters
+
+Before entering any protest or public action, spend 10–15 minutes observing the perimeter from a position that is not obviously associated with the protest. Look for:
+
+- **Plain-clothes surveillance**: Individuals who appear to be watching the protest rather than participating. Signs: they are stationary at a position with good visual coverage; they may be wearing earpieces; they are photographing or filming faces rather than the event; they do not interact with other protesters.
+- **Undercover vehicles**: Vans with antenna arrays, tinted-window vehicles with multiple occupants parked with view of protest entry points, vehicles with government license plates.
+- **IMSI catcher vehicles**: Stingray/IMSI catcher equipment is sometimes deployed in unmarked vans. A subtle indicator (though not conclusive) is a vehicle that stays in one location for an extended period near the protest site without apparent purpose.
+
+If surveillance is observed at the perimeter: your Tier 2 and Tier 3 measures (phone off, Faraday bag, changed clothing on exit) become more important, not optional.
+
+### 8.4 Safe Meeting Location Principles
+
+A safe meeting location for sensitive organizing discussions has these properties:
+
+1. **Not a regular location**: A venue that is not your home, your organization's office, or a place you are known to frequent.
+2. **Not discoverable through your social graph**: If your regular meeting location is a restaurant where an informant knows you eat, it is not a safe meeting location.
+3. **Physical cover**: Private room or low-density public space where conversations are not easily overheard. Avoid outdoor locations within 100 meters of public streets with vehicle traffic (directional microphone range).
+4. **No cameras at the entrance**: Most coffee shops and commercial venues have security cameras at entrances that document who enters and when. A private residence with a trusted host, or a venue without entry-level surveillance, provides better physical cover.
+5. **Exit flexibility**: You should be able to leave by at least two routes. Do not meet in locations with single entry/exit points (basements, narrow corridor rooms) where all participants could be simultaneously identified at the exit.
+
+---
+
+## Part 9: Integration with Existing Networks
+
+### 9.1 AFL-CIO and Labor Union Integration
+
+The AFL-CIO (afl-cio.org) and affiliated unions represent 12.5 million workers and have established legal support and security frameworks for labor organizing that can complement activist security practice.
+
+**Relevant AFL-CIO resources**:
+- **AFL-CIO Solidarity Center**: solidarity center.org — provides legal support for workers' rights internationally; useful contact for labor organizers facing employer retaliation
+- **Union legal defense funds**: Most major AFL-CIO affiliated unions maintain legal defense funds for members facing legal challenges arising from protected organizing activity. These are a first-call resource if union organizers are arrested at actions related to labor disputes.
+- **NLRB (National Labor Relations Board) protections**: Section 7 of the National Labor Relations Act protects "concerted activity" — which has been interpreted to include many forms of worker organizing and communication about working conditions. Union organizers may have NLRB protections that limit employer and law enforcement response to organizing activity. Consult with your union's legal department.
+
+**Security considerations specific to union organizing**:
+- Labor organizing communications are specifically protected under NLRA Section 7 during union election campaigns. However, employer surveillance of union organizing communications is documented and ongoing. Apply the Signal communication protocols and disappearing messages to internal union organizing coordination.
+- The NLRB has explicit procedures for reporting employer interference with organizing activity, including surveillance. If you document employer use of surveillance technology against union organizers, that documentation can support an NLRB charge.
+
+### 9.2 DSA (Democratic Socialists of America) Chapter Integration
+
+DSA chapters (dsausa.org) are among the largest organized formations in the US left and have developed internal security practices in response to surveillance of their activities.
+
+**DSA security resources**:
+- DSA national has published guidance for chapter security practices. Contact your local chapter's security or operational committee for current recommendations.
+- Some DSA chapters have established bail fund partnerships with local NLG affiliates — your local chapter can direct you to these resources.
+- DSA member list management has been a specific security concern: in documented cases, DSA member lists have been the subject of law enforcement data requests. At the chapter level, use of encrypted communication tools and limited member list exposure (need-to-know access to member lists) follows from this risk.
+
+### 9.3 Movement Legal Committees
+
+Most established movement organizations have movement legal committees or working relationships with legal support organizations. These relationships should be established before they are needed.
+
+**How to establish these relationships**:
+1. Contact your local NLG chapter before any planned action. NLG can provide legal observers, mass defense resources, and know-your-rights training.
+2. For election protection work: the ACLU Voting Rights Project (aclu.org/voting-rights) and Election Protection coalition (866ourvote.org) have legal support infrastructure specific to election contexts.
+3. For civil rights organizations: the NAACP Legal Defense Fund (naacpldf.org) and the Center for Constitutional Rights (ccrjustice.org) have experience with protest-related legal support at the federal and appellate level.
+
+### 9.4 Bail Fund Networks
+
+Several national and regional bail fund networks provide financial support for protest-related arrests.
+
+- **National Bail Fund Network** (bailfundnetwork.org): Directory of community bail funds by state
+- **Movement for Black Lives Bail Fund**: Has historically supported large-scale protest arrest bail needs
+- **Labor union bail support**: Many AFL-CIO affiliates have defense funds that can be used for bail in labor-adjacent protest situations
+
+**Coordination with bail fund before actions**: For planned actions where mass arrest is possible, contact your regional bail fund in advance to confirm capacity and process. Bail funds operate more efficiently when they know an action is planned and have organizer contact information in advance.
+
+---
+
+## Part 10: Escalation Matrix
+
+### Level 1: Baseline Organizing (No Specific Threat)
+
+Standard organizing activities: meetings, public events, public social media presence, leafleting, community education.
+
+**Minimum measures**: Tier 1 from Part 9 (NLG number on arm at actions, social media to private 72 hours before, outside contact designated, generic clothing, EFF rights guide read). Signal for all organizing communications with disappearing messages enabled.
+
+**Threat indicators that move to Level 2**: You learn you are the subject of a DHS administrative subpoena; law enforcement approaches you for questioning about your organizing activity; you receive a visit from FBI agents; you are placed on a no-fly list or TSA precheck is revoked.
+
+### Level 2: Elevated Threat (Specific Indicators of Investigation)
+
+**Additional measures**: All Tier 2 measures (Part 9, Tier 2), plus: legal consultation with a civil liberties attorney; notification of your organization's legal support structure; implementation of compartmentalized communication structure (Part 7.3); counter-surveillance protocols for meetings (Part 8.4); review all accounts accessible to the organization for exposure.
+
+**Threat indicators that move to Level 3**: You are detained and questioned; you are served with legal process; you have reason to believe an informant is present in your organization; your device is seized.
+
+### Level 3: Active Investigation or Infiltration Suspected
+
+**Additional measures**: All Tier 3 measures (Part 9, Tier 3), plus: all organizing communications move to GrapheneOS devices with full compartmentalization; leadership briefing on surveillance indicators and vetting protocols; legal counsel actively retained and briefed on situation; evaluation of whether to reduce public visibility until threat assessment is complete.
+
+**Note**: Moving to Level 3 does not mean stopping organizing activity. It means adjusting the security posture while continuing the work. Many organizations have operated at Level 3 security posture for extended periods (the NLG, SNCC in the 1960s, various immigrant rights organizations in 2026) while remaining operationally effective.
+
+---
+
+## Part 11: Implementation Path
 
 ### Tier 1: Essential (all participants in any public action — no exceptions)
 
