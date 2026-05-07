@@ -618,7 +618,7 @@ The monitoring schedule has two jobs: (1) catch recoverable failures before they
 ---
 
 *Companion files:*
-- *engagement-scoring-template.csv — 45-organization tracking spreadsheet (direct-service + amplifier cohorts combined)*
+- *engagement-scoring-template.csv — 45-organization tracking spreadsheet (direct-service + amplifier cohorts combined). Columns: org_name, sector, contact_email, playbook_sent, send_date, day3_score, day7_score, day14_score, day28_score, current_score, reply_type, bounce_decline_flag, tier2_readiness_score, tier2_candidate, notes. The `playbook_sent` column identifies which Phase 1 playbook(s) were distributed (journalist-security, whistleblower, activist-organizing, dv-survivor-safety, financial-resistance, immigration-surveillance-evasion); some orgs receive multiple. The `current_score` field is updated at each checkpoint and reflects the live engagement score; `day28_score` is the campaign-close snapshot.*
 - *tier-1-feedback-collection-protocol.md — feedback question templates and follow-up cadence*
 - *tier-1-measurement-dashboard-spec.md — weekly reporting template*
 - *TIER1_OUTREACH_EXECUTION_PLAN.md — daily execution runbook*
