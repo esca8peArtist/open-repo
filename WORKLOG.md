@@ -4,6 +4,53 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 Session 867 — Exploration Queue Expansion & Parallel Research (seedwarden + stockbot)
+
+**Session Context**: Post-orientation. Exploration Queue had only 1 unstarted item (stockbot covered calls, blocked until May 12). Per protocol, added 3 new items and spawned parallel subagents on top 2.
+
+**Parallel Work Completed**:
+
+1. **seedwarden agent** — Track B Non-Etsy Distribution Channels & B2B Strategy ✅ COMPLETE
+   - **Files created and committed**:
+     - `track-b-distribution-strategy.md` (2,500 words) — Channel analysis: Amazon KDP Print, B2B herbalist direct, education licensing, Patreon subscription, craft fairs (access card model), POD, white-label
+     - `track-b-channel-comparison-matrix.csv` — 8 channels × 12 metrics (margin %, setup time, audience size, breakeven, risk)
+     - `track-b-implementation-roadmap.md` (1,200 words) — Phase 2A/B/C execution path with decision triggers
+   - **Key Findings**:
+     - **B2B direct to herbalists** = highest per-unit margin ($12-16 net vs. $10.61 Etsy) + fastest sales cycle (2-3 weeks)
+     - **Patreon subscription** = best LTV improvement ($427/month at 50 subs, zero incremental production post-setup)
+     - **Education licensing** = best recurring passive income ($199-1,499/year/institution, 60-90 day sales cycle)
+     - **Amazon KDP Print** = viable (not Handmade), but lower margin; $22.99 pricing required to approach Etsy net
+     - **Craft fairs** = viable with access card redemption model (Gumroad), not PDF-on-table model
+     - **Phase 2A trigger**: Etsy performance at June 30 determines Phase 2B urgency (below 1.5% conversion = accelerate channels immediately)
+   - **Timeline**: Infrastructure setup (July-Aug) independent of Etsy performance, allows rapid pivot if needed
+   - **Business Value**: Expands revenue optionality, unlocks B2B/licensing passive income, May 30 launch focused on Etsy with contingency plans pre-researched
+
+2. **stockbot agent** — Multi-Ticker Signal Correlation & Portfolio Regime Detection ✅ COMPLETE
+   - **Files created and committed**:
+     - `framework-signal-correlation-and-regime.md` (2,600 words) — 8-section framework: current signals, correlation analysis, high-risk pairs, diversifiers, regime detection, adaptation rules, implementation architecture, circuit breakers
+     - `ticker-correlation-heatmap.csv` — 12×12 Pearson correlation matrix (AAPL, AMZN, JPM, JNJ, BA, MS, V, AXP, GS, SPY, QQQ); color-coded by risk (<0.3 safe, 0.3-0.6 moderate, >0.6 high)
+     - `regime-detection-algorithm-spec.md` (1,800 words) — Implementation-ready spec for portfolio-level HMM with 4-state GaussianHMM, 6 portfolio-level features, jump penalty tuning
+   - **Key Findings**:
+     - **N_eff = 3.9** (not 11) — portfolio is 2.5× more concentrated than nominal count suggests due to high correlation clusters
+     - **Three structural-conflict pairs**: MS+GS (0.91 correlation), JPM+GS (0.87), AAPL+QQQ (0.91) — concurrent long positions are synthetic concentration, not diversification
+     - **Tech/Consumer cluster** (AAPL+AMZN+SPY+QQQ, 0.82 avg) and **Financial cluster** (JPM+MS+GS+AXP, 0.81 avg) require cross-cluster position limits
+     - **Portfolio-level HMM is missing** — current per-ticker HMMs in `src/ml/hmm_regime_scalar.py` operate independently; no portfolio synthesis exists. Specification enables `src/ml/portfolio_regime_detector.py` implementation
+     - **SPY/QQQ redesign needed** — both should become regime indicators (feed portfolio HMM), not independent alpha generators
+   - **Blockers identified** (P0 items, Gate-1-independent):
+     - Wire `DynamicKellySizer.compute_portfolio_sizes()` in live path (currently bypassed in favor of per-session sizing)
+     - Add financial-sector + tech-sector concentration caps to `RiskManager` (currently no cross-ticker limits)
+   - **Gate 2 critical path**: Portfolio regime detector (P1, ~12h effort, resolves 1358% Sharpe sensitivity to HMM retraining cadence observed in Session 625)
+   - **Business Value**: Gate 2+ operations can safely scale from 2 to 11 tickers with automatic market regime adaptation; prevents concentration blowups under correlation stress
+
+**Queue Expansion (3 items added)**:
+- ✅ seedwarden: Track B Non-Etsy Distribution (COMPLETE, Session 867)
+- ✅ stockbot: Multi-Ticker Signal Correlation (COMPLETE, Session 867)
+- **mfg-farm: Supply Chain Diversification & Resilience** (added to queue, awaiting test print)
+
+**Work Committed**: Both subagent commits merged to master.
+
+---
+
 ## 2026-05-07 Session 866 — Autonomous Phase 1 Launch Prep (Parallel: resistance-research + cybersecurity-hardening)
 
 **Session Context**: Post-orientation. Two active blocks present (stockbot architecture review, mfg-farm test print). Selected highest-leverage autonomous work: time-critical Domain 42 distribution infrastructure (May 28 DEA hearing deadline) and Phase 1 pre-launch threat accuracy fixes (cybersecurity-hardening).
