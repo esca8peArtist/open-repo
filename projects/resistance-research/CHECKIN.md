@@ -4,6 +4,36 @@
 
 ---
 
+## HARD DEADLINE: May 28, 2026 — DEA Hearing Participation Notice (Docket DEA-1362)
+
+**21 days from today. This is the only domain in the 35-domain framework with a hard external deadline.**
+
+Domain 42 distribution must begin May 8 (Wave 1: Category A drug policy organizations) to give recipients 20 days to file a DEA participation notice. Missing May 28 means losing this advocacy leverage point for 12 months — the next DEA hearing opportunity is 2027.
+
+**Distribution launch decision required from you before May 8:**
+- Wave 1 emails (Category A: Drug Policy Alliance, MPP, NORML, LEAP, SSDP) are ready to send
+- Template D42-A in `execution/domain-42-email-template.md` — personalize the bracketed fields, send
+- Gist URL is not yet created — you can attach the markdown file directly for Wave 1 and create the Gist within 24 hours (see `execution/domain-42-gist-creation-steps.md`)
+- If you want to send Wave 1 with a live Gist URL, create the Gist at gist.github.com first (10 minutes, see gist creation steps)
+
+**Key dates:**
+- May 8: Wave 1 send (Category A — drug policy orgs)
+- May 10–12: Wave 2 (Category B civil rights orgs + Category C academic contacts)
+- May 13: House Appropriations markup (Section 591 rider risk — see entry below)
+- May 14–17: Wave 3 (Category D state AG offices)
+- May 20: Mail submission deadline (postal transit to DEA Springfield VA)
+- May 21: Hard stop — no new Domain 42 outreach after this date
+- May 28: Email submission deadline (nprm@dea.gov, Docket No. DEA-1362)
+
+**New file ready for distribution:** `execution/domain-42-may-28-dea-submission-guide.md`
+- A 1,300-word production-ready submission guide for Phase 1 recipient organizations
+- Contains: democratic exclusion framing summary, 5 ready-to-use DEA comment points with Domain 42 citations, exact participation notice procedure, and day-by-day timeline for the 21-day window
+- Attach alongside (or reference within) the Category A, B, C, and D outreach emails
+
+**What is not required from you now:** No decisions on the broader Phase 1 distribution path. Domain 42 is a standalone sub-batch separate from Batches 1–3. You can launch Domain 42 Wave 1 independently, regardless of where you stand on the main distribution path decision.
+
+---
+
 ## SECTION 591 MARKUP: May 13, 2026 — ACTION RECOMMENDED BEFORE THIS DATE
 
 **New development identified in May 7 currency audit.**

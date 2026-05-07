@@ -107,6 +107,20 @@ The following email addresses should be verified against current organizational 
 
 ---
 
+## Submission Guide — Attach to All Waves
+
+A production-ready submission guide for recipient organizations is at `execution/domain-42-may-28-dea-submission-guide.md`. It contains:
+- A summary of Domain 42's democratic exclusion framing (3 mechanisms)
+- 5 ready-to-use comment points for the DEA participation notice with Domain 42 citations
+- Exact submission procedure (email and mail, with the 3 required elements from 91 Fed. Reg. 22777)
+- Day-by-day timeline for the 21-day window (May 8–28)
+
+Attach this guide as a second file (or reference it) in all four template waves. Category A and B contacts benefit from the full guide. Category C (academic) contacts benefit primarily from the comment points and procedure sections. Category D (state AG) contacts benefit primarily from the procedure section and the 280E comment point.
+
+Do not send the submission guide as a standalone email — it is a companion document to the Domain 42 research and the outreach email template.
+
+---
+
 ## Integration with Main Phase 1 Infrastructure
 
 These contacts are **not** in `execution/tier-1-contact-batches.md`, `DISTRIBUTION_OUTREACH_CONTACTS.md`, or `policy-influencer-mapping.md`. They are a separate sub-batch specific to Domain 42. Do not merge them into the Batch 1-3 sequence — the audiences are distinct (drug policy vs. democracy/legal/academic), and the templates are distinct.
