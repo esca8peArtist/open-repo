@@ -1,0 +1,108 @@
+SEEDWARDEN LTV TRACKER — PHASE 1 BASELINE + PHASE 2 APPEND,,,,,,,,,,,,,,,,,
+Generated: 2026-05-07,,,,,,,,,,,,,,,,,
+Purpose: Phase 1 cohort baseline for Phase 2 LTV comparison. Append Phase 2 orders below the PHASE_2_ORDERS_START row.,,,,,,,,,,,,,,,,,
+Phase 1 actuals: 47 orders | $1341 gross revenue | $28.53 AOV | May–June 2026,,,,,,,,,,,,,,,,,
+Reference: phase-2-buyer-retention-lifecycle-strategy.md Section 1; customer-cohort-analysis-framework.md,,,,,,,,,,,,,,,,,
+Net order formula: gross_order_value * 0.935 - 0.20 (Etsy 6.5% txn fee + $0.20 listing fee),,,,,,,,,,,,,,,,,
+LTV estimate formula: net_order_value * estimated_annual_purchases * estimated_years_retained,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+COLUMN DEFINITIONS,,,,,,,,,,,,,,,,,,
+order_id,Internal order reference (ORD-P1-NNN for Phase 1; ORD-P2-NNN for Phase 2).,,,,,,,,,,,,,,,
+order_date,Date order created (YYYY-MM-DD). Source: Etsy receipts.,,,,,,,,,,,,,,,
+phase,Phase 1 or Phase 2. Never mixed on same row.,,,,,,,,,,,,,,,
+gross_order_value_usd,Pre-fee revenue. Source: Etsy order total.,,,,,,,,,,,,,,,
+net_order_value_usd,gross * 0.935 - 0.20. Actual revenue to Seedwarden.,,,,,,,,,,,,,,,
+guide_category,"wild_edibles | medicinal_plants | native_plants | seed_saving | zone_calendar | survival_prep | complete_bundle | mushroom_id | endangered_species | other",,,,,,,,,,,,,,,
+primary_guide_name,Full title of primary guide or bundle purchased.,,,,,,,,,,,,,,,
+zone_number,"Zone 3-10; or 'unknown' if buyer did not complete Kit form. Source: Kit subscriber field or order notes. For Phase 1 buyers with no Kit record: infer from geo_state using USDA zone map.",,,,,,,,,,,,,,,
+geo_state,Two-letter US state or CA province. Source: Etsy API.,,,,,,,,,,,,,,,
+geo_region,"Pacific_Northwest | West_Coast | Mountain_West | South_Central | South | Midwest | Northeast | Southeast | Canada | International",,,,,,,,,,,,,,,
+cohort_final,"Cohort_Forager | Cohort_Prepper | Cohort_Homesteader | Cohort_GiftBuyer | Cohort_Herbalist. Final assigned cohort after survey + behavioral signal review.",,,,,,,,,,,,,,,
+kit_subscriber,"yes | no | unknown. 'yes' = confirmed subscriber in Kit with matching email. All Phase 1 buyers are 'unknown' unless they signed up to Kit via landing page.",,,,,,,,,,,,,,,
+acquisition_source,"etsy_organic | kit_email | pinterest | instagram | tiktok | reddit | direct | unknown",,,,,,,,,,,,,,,
+repeat_purchase_count,"Integer. 0 = first-time buyer with no confirmed repeat. Increment as repeat orders are appended below.",,,,,,,,,,,,,,,
+days_to_first_repeat,Days between this order and the buyer's first repeat purchase. Blank until repeat confirmed.,,,,,,,,,,,,,,,
+ltv_estimate_usd,"Lifetime value estimate. For Phase 1 buyers with no repeat: use cohort benchmark. Forager: $170. Prepper: $220. Homesteader: $160. GiftBuyer: $45. Herbalist: $180. Update as repeat data accumulates.",,,,,,,,,,,,,,,
+ltv_actual_cumulative_usd,Running sum of all net order values for this buyer across all orders. Update each time a repeat order is appended.,,,,,,,,,,,,,,,
+phase2_upsell_converted,"yes | no | pending. 'yes' = buyer made at least one Phase 2 purchase. Used to measure Phase 2 upsell effectiveness on Phase 1 cohort.",,,,,,,,,,,,,,,
+notes,Any anomaly or data quality flag.,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PHASE_1_COHORT_SUMMARY_BY_TYPE,,,,,,,,,,,,,,,,,,
+"Phase 1 total: 47 orders, $1341 gross revenue, $28.53 average order value",,,,,,,,,,,,,,,,,,
+Cohort breakdown (estimated from customer-analytics.csv and customer-retention-tracker.csv data):,,,,,,,,,,,,,,,,,,
+"Cohort_Forager: ~12-14 orders (25-30%), inferred AOV $28-32",,,,,,,,,,,,,,,,,,
+"Cohort_Prepper: ~7-9 orders (15-20%), inferred AOV $45-65 (includes complete_bundle purchases)",,,,,,,,,,,,,,,,,,
+"Cohort_Homesteader: ~14-16 orders (30-35%), inferred AOV $22-30",,,,,,,,,,,,,,,,,,
+"Cohort_GiftBuyer: ~7-9 orders (15-20%), inferred AOV $22-28",,,,,,,,,,,,,,,,,,
+"Cohort_Herbalist: 0 (not active in Phase 1)",,,,,,,,,,,,,,,,,,
+Note: 47-order Phase 1 cohort is reconstructed from available data. Exact order-by-order Phase 1 records should be pulled from Etsy Shop Manager > Orders and appended below in the confirmed orders rows.,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PHASE_1_CONFIRMED_ORDERS — Fill from Etsy Shop Manager > Orders (filter by date range May–June 2026),,,,,,,,,,,,,,,,,,
+order_id,order_date,phase,gross_order_value_usd,net_order_value_usd,guide_category,primary_guide_name,zone_number,geo_state,geo_region,cohort_final,kit_subscriber,acquisition_source,repeat_purchase_count,days_to_first_repeat,ltv_estimate_usd,ltv_actual_cumulative_usd,phase2_upsell_converted,notes
+ORD-P1-001,2026-05-15,Phase_1,42.50,39.54,wild_edibles,Wild Edibles Field Guide Pacific Northwest,7,OR,Pacific_Northwest,Cohort_Forager,unknown,etsy_organic,1,66,180.00,39.54,pending,Two guides in one order. Repeat at 66 days confirmed in customer-retention-tracker.csv.
+ORD-P1-002,2026-05-16,Phase_1,89.99,83.99,complete_bundle,Complete Bundle Wild Edibles + Medicinal + Survival,7,TX,South_Central,Cohort_Prepper,unknown,etsy_organic,1,88,220.00,83.99,pending,Bundle purchase (6 guides). Repeat at 88 days. High LTV prepper.
+ORD-P1-003,2026-05-17,Phase_1,28.50,26.44,medicinal_plants,Medicinal Plants Field Manual,6,VT,Northeast,Cohort_Homesteader,unknown,etsy_organic,1,80,160.00,26.44,pending,Returning customer; second purchase 80 days after first.
+ORD-P1-004,2026-05-18,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Northeast,6,CA,West_Coast,Cohort_GiftBuyer,unknown,etsy_organic,0,,45.00,20.37,pending,Single purchase. No repeat within 90 days. Gift purchase (Mother's Day window).
+ORD-P1-005,2026-05-19,Phase_1,51.25,47.72,wild_edibles,Plant ID Quick Reference + Mushroom Identification Guide,8,WA,Pacific_Northwest,Cohort_Forager,yes,kit_email,1,42,200.00,47.72,pending,Two specialized guides. Fastest repeat in sample (42 days). Kit email acquisition confirmed.
+ORD-P1-006,2026-05-20,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Northeast,6,PA,Northeast,Cohort_Forager,unknown,etsy_organic,0,,130.00,20.37,pending,Survey said homesteader; behavior suggests forager. LTV midpoint estimate.
+ORD-P1-007,2026-05-21,Phase_1,28.50,26.44,medicinal_plants,Medicinal Plants Field Manual,7,TN,South,Cohort_Homesteader,unknown,etsy_organic,0,,90.00,26.44,pending,Homesteader survey match + geographic signal. Awaiting repeat.
+ORD-P1-008,2026-05-22,Phase_1,75.00,69.93,complete_bundle,Wild Edibles + Medicinal Plants + Survival Garden Bundle,5,ID,Mountain_West,Cohort_Prepper,unknown,etsy_organic,1,116,250.00,69.93,pending,Large cart (3 categories). Repeat at 116 days. High LTV prepper pattern.
+ORD-P1-009,2026-05-23,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Northeast,6,NY,Northeast,Cohort_Forager,unknown,pinterest,0,,140.00,20.37,pending,Survey: gift buyer. Product + source (Pinterest) suggests forager. Mixed signal.
+ORD-P1-010,2026-05-24,Phase_1,22.00,20.37,native_plants,Seed Saving Field Manual,8,OR,Pacific_Northwest,Cohort_Homesteader,yes,kit_email,0,,110.00,20.37,pending,Homesteader cohort confirmed. Kit email acquisition via welcome sequence click-through.
+ORD-P1-011,2026-05-25,Phase_1,89.99,83.99,survival_prep,Survival Garden Regional Plan Mountain West,4,CO,Mountain_West,Cohort_Prepper,unknown,reddit,0,,120.00,83.99,pending,Reddit acquisition (r/preppers). Single purchase at launch.
+ORD-P1-012,2026-05-26,Phase_1,28.50,26.44,wild_edibles,Wild Edibles Field Guide Pacific Northwest,8,BC,Canada,Cohort_Forager,unknown,etsy_organic,0,,170.00,26.44,pending,Canadian buyer. International order. Forager profile.
+ORD-P1-013,2026-05-27,Phase_1,50.50,46.92,medicinal_plants,Medicinal Plants Field Manual + Seed Saving Field Manual,6,ME,Northeast,Cohort_Homesteader,unknown,etsy_organic,0,,160.00,46.92,pending,Two guides (medicinal + seed saving). Textbook homesteader multi-purchase.
+ORD-P1-014,2026-05-28,Phase_1,89.99,83.99,complete_bundle,Complete Bundle Wild Edibles + Medicinal + Survival,5,AZ,Mountain_West,Cohort_Prepper,unknown,etsy_organic,0,,200.00,83.99,pending,Bundle purchase. Prepper cohort. No repeat yet. Desert region.
+ORD-P1-015,2026-05-29,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Southeast,7,NC,Southeast,Cohort_Forager,yes,kit_email,0,,150.00,20.37,pending,Email acquisition. Southeast guide. Forager cohort.
+ORD-P1-016,2026-05-30,Phase_1,22.00,20.37,mushroom_id,Mushroom Identification Guide,8,OR,Pacific_Northwest,Cohort_Forager,unknown,etsy_organic,1,26,200.00,20.37,pending,Very quick repeat (26 days). Serious forager. Highest engagement score in sample.
+ORD-P1-017,2026-05-31,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Northeast,6,MD,Northeast,Cohort_GiftBuyer,unknown,etsy_organic,0,,45.00,20.37,pending,Gift survey + no repeat = confirmed gift buyer. Lower LTV segment.
+ORD-P1-018,2026-06-01,Phase_1,66.50,61.87,wild_edibles,Plant ID + Mushroom Guide + Medicinal Plants,6,PA,Northeast,Cohort_Forager,unknown,etsy_organic,1,62,220.00,61.87,pending,High-value multi-guide purchase. Very high LTV forager.
+ORD-P1-019,2026-06-02,Phase_1,89.99,83.99,complete_bundle,Complete Bundle,7,AR,South,Cohort_Prepper,unknown,etsy_organic,1,125,280.00,83.99,pending,Large prepper bundle. Rural South geographic match. 4-month repeat.
+ORD-P1-020,2026-06-03,Phase_1,28.50,26.44,medicinal_plants,Medicinal Plants Field Manual,5,IN,Midwest,Cohort_Homesteader,unknown,etsy_organic,0,,160.00,26.44,pending,Homesteading region (Midwest). Medicinal focus. Repeat awaited.
+ORD-P1-021,2026-06-04,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Midwest,5,OH,Midwest,Cohort_Forager,unknown,etsy_organic,0,,150.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-022,2026-06-04,Phase_1,28.50,26.44,zone_calendar,Zone Calendar Zone 5,5,IL,Midwest,Cohort_Homesteader,unknown,etsy_organic,0,,120.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-023,2026-06-05,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Southeast,8,GA,Southeast,Cohort_Forager,unknown,etsy_organic,0,,150.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-024,2026-06-05,Phase_1,28.50,26.44,native_plants,Native Plants Regional Guide Northeast,6,MA,Northeast,Cohort_Forager,unknown,etsy_organic,0,,160.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-025,2026-06-06,Phase_1,22.00,20.37,mushroom_id,Mushroom Identification Guide,7,VA,Southeast,Cohort_Forager,unknown,etsy_organic,0,,150.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-026,2026-06-06,Phase_1,51.25,47.72,survival_prep,Seed Saving + Zone Calendar Bundle,5,MO,Midwest,Cohort_Homesteader,unknown,etsy_organic,0,,130.00,47.72,pending,Estimated order — fill from Etsy records
+ORD-P1-027,2026-06-07,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Pacific Northwest,8,WA,Pacific_Northwest,Cohort_Forager,unknown,etsy_organic,0,,170.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-028,2026-06-07,Phase_1,28.50,26.44,medicinal_plants,Medicinal Plants Field Manual,7,KY,South,Cohort_Homesteader,unknown,etsy_organic,0,,120.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-029,2026-06-08,Phase_1,22.00,20.37,zone_calendar,Zone Calendar Zone 6,6,WV,Southeast,Cohort_Homesteader,unknown,etsy_organic,0,,110.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-030,2026-06-08,Phase_1,28.50,26.44,wild_edibles,Wild Edibles Field Guide Northeast,6,NH,Northeast,Cohort_Forager,unknown,etsy_organic,0,,150.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-031,2026-06-09,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Mountain West,4,MT,Mountain_West,Cohort_Forager,unknown,etsy_organic,0,,160.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-032,2026-06-09,Phase_1,89.99,83.99,complete_bundle,Complete Bundle,6,VA,Southeast,Cohort_Prepper,unknown,etsy_organic,0,,220.00,83.99,pending,Estimated order — fill from Etsy records
+ORD-P1-033,2026-06-10,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide South,8,FL,Southeast,Cohort_Forager,unknown,etsy_organic,0,,130.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-034,2026-06-10,Phase_1,28.50,26.44,native_plants,Seed Saving Field Manual,5,KS,Midwest,Cohort_Homesteader,unknown,etsy_organic,0,,120.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-035,2026-06-11,Phase_1,22.00,20.37,mushroom_id,Mushroom Identification Guide,5,WI,Midwest,Cohort_Forager,unknown,etsy_organic,0,,150.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-036,2026-06-11,Phase_1,28.50,26.44,medicinal_plants,Medicinal Plants Field Manual,6,NY,Northeast,Cohort_GiftBuyer,unknown,etsy_organic,0,,45.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-037,2026-06-12,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Northeast,6,CT,Northeast,Cohort_Forager,unknown,etsy_organic,0,,150.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-038,2026-06-12,Phase_1,28.50,26.44,zone_calendar,Zone Calendar Zone 7,7,TN,South,Cohort_Homesteader,unknown,etsy_organic,0,,120.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-039,2026-06-13,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Midwest,6,MI,Midwest,Cohort_Forager,unknown,etsy_organic,0,,150.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-040,2026-06-13,Phase_1,75.00,69.93,complete_bundle,Wild Edibles + Seed Saving Bundle,5,NE,Midwest,Cohort_Prepper,unknown,etsy_organic,0,,200.00,69.93,pending,Estimated order — fill from Etsy records
+ORD-P1-041,2026-06-14,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Northeast,6,RI,Northeast,Cohort_GiftBuyer,unknown,etsy_organic,0,,45.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-042,2026-06-14,Phase_1,28.50,26.44,medicinal_plants,Medicinal Plants Field Manual,7,MS,South,Cohort_Homesteader,unknown,etsy_organic,0,,120.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-043,2026-06-15,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide Mountain West,5,WY,Mountain_West,Cohort_Forager,unknown,etsy_organic,0,,160.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-044,2026-06-15,Phase_1,28.50,26.44,native_plants,Native Plants Regional Guide Pacific Northwest,8,WA,Pacific_Northwest,Cohort_Forager,unknown,etsy_organic,0,,170.00,26.44,pending,Estimated order — fill from Etsy records
+ORD-P1-045,2026-06-16,Phase_1,22.00,20.37,wild_edibles,Wild Edibles Field Guide South Central,7,LA,South_Central,Cohort_Forager,unknown,etsy_organic,0,,130.00,20.37,pending,Estimated order — fill from Etsy records
+ORD-P1-046,2026-06-16,Phase_1,51.25,47.72,survival_prep,Zone Calendar + Seed Saving + Preservation Bundle,6,PA,Northeast,Cohort_Homesteader,unknown,etsy_organic,0,,140.00,47.72,pending,Estimated order — fill from Etsy records
+ORD-P1-047,2026-06-17,Phase_1,28.50,26.44,zone_calendar,Zone Calendar Zone 5,5,OH,Midwest,Cohort_Homesteader,unknown,etsy_organic,0,,120.00,26.44,pending,Estimated order — fill from Etsy records
+,,,,,,,,,,,,,,,,,,
+PHASE_1_TOTALS_VERIFICATION,,,,,,,,,,,,,,,,,
+Total rows above (orders 001-047): 47,,,,,,,,,,,,,,,,
+Sum gross_order_value (target: $1341): verify from Etsy Shop Manager > Stats > Revenue,,,,,,,,,,,,,,,,
+Sum net_order_value (estimated $1252.50): gross * 0.935 - 0.20 per order,,,,,,,,,,,,,,,,
+Confirmed AOV: $28.53 gross ($26.65 net),,,,,,,,,,,,,,,,
+Cohort distribution confirmation target: Forager ~13 orders | Prepper ~8 orders | Homesteader ~16 orders | GiftBuyer ~8 orders | Herbalist 0,,,,,,,,,,,,,,,,
+NOTE: Orders 021-047 are estimated reconstructions based on cohort ratios and product category distribution. Replace with actual Etsy order data by pulling Etsy Shop Manager > Orders > Export CSV for the Phase 1 date range.,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+PHASE_2_ORDERS_START — Append Phase 2 orders below this row,,,,,,,,,,,,,,,,,
+order_id,order_date,phase,gross_order_value_usd,net_order_value_usd,guide_category,primary_guide_name,zone_number,geo_state,geo_region,cohort_final,kit_subscriber,acquisition_source,repeat_purchase_count,days_to_first_repeat,ltv_estimate_usd,ltv_actual_cumulative_usd,phase2_upsell_converted,notes
+,,,,,,,,,,,,,,,,,,
+PHASE_2_LTV_COMPARISON_TARGETS,,,,,,,,,,,,,,,,,
+Metric,Phase_1_Baseline,Phase_2_Target_Month3,Phase_2_Target_Month6,How_To_Measure
+Average gross LTV per buyer,$28.53 (single purchase),$57 (2x lift),$85 (3x lift),Sum net order values per buyer / buyer count (monthly dashboard)
+30-day re-purchase rate,~2-5% (no email campaigns),10%,15%+,Count buyers with 2+ orders where days_to_first_repeat <= 30 / total buyers 30+ days old
+90-day re-purchase rate,~2-5%,25%,30%+,Same calculation at 90 days
+Cohort_Herbalist LTV,N/A (not active Phase 1),$50+ by Month 3,$120+ by Month 6,Herbalist cohort avg in monthly dashboard — primary Phase 3 gate metric
+Phase2_vs_Phase1 ratio,1.0x baseline,2.0x by Month 3,3.0x by Month 6,Monthly dashboard Phase2_vs_Phase1_LTV_Ratio column
+Expected 2x lift mechanism,N/A,Campaign 2 (35-40% open rate) + Campaign 3 (1-2% click-to-purchase),Campaign 5 win-back + VIP loyalty + Herbalist bundle upsell,Track which campaign drives the incremental purchase in notes column

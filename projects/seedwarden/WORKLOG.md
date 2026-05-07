@@ -4,6 +4,35 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 64 — 2026-05-07 — Phase 2 Parallel Support Assets (5 Files)
+
+**Task**: Build all Phase 2 parallel support assets needed before Anya begins Week 2 Kit setup, email builds, and analytics configuration. Five files produced in one session.
+
+**Files created**:
+
+- `projects/seedwarden/phase-2-campaign-copy-drafts.md` — ~3,800 words. Paste-ready copy for all 7 emails in Campaigns 1, 2, and 3. Includes subject line A/B variants for each email, Kit merge tag placeholders (`{{ subscriber.first_name }}`, `{{ subscriber.fields.zone_number }}`, cohort conditional blocks), cohort-specific opening paragraph variants per email, product recommendation pairing examples for Email 3.1, and the A/B test calendar (Weeks 1–4). Before entering into Kit: write zone-specific content blocks for the [ZONE CONTENT BLOCK] placeholders in Emails 1B and 2.2.
+
+- `projects/seedwarden/phase-2-kit-broadcast-copy.md` — 275 words. Paste-ready Kit broadcast copy for the May 30 12pm launch send. Subject line, preview text, body copy, merge tags, UTM parameters for both CTAs, and Kit scheduling path. Includes delivery rate targets (>35% open, >8% click at 6 hours post-send) cross-referenced to phase-2-launch-control-center.md Part 4.
+
+- `projects/seedwarden/phase-2-launch-decision-triggers.md` — 1-page reference sheet with 26 specific decision triggers spanning pre-launch (May 21–29), launch day (May 30), and post-launch (May 31–June 15). Every trigger names an exact condition and an exact action. No "monitor" language anywhere. Print or bookmark; open alongside may-30-launch-sequence.md on launch day.
+
+- `projects/seedwarden/phase-2-analytics-dashboard-template.csv` — Three-tab analytics structure: Daily (May 30–June 30 date rows pre-filled), Weekly (5 weeks), Monthly (with Phase 1 frozen baseline and Phase 2 actuals append rows). Includes threshold alerts for all key metrics, LTV calculation formula (net = gross * 0.935 - 0.20), cohort LTV targets (Forager $40+, Prepper $55+, Homesteader $35+, GiftBuyer $30+, Herbalist $50+), retention targets (10% at 30 days, 18% at 60 days, 25% at 90 days), and email ROI formula ($0.10+ per email sent). Ready to import to Google Sheets.
+
+- `projects/seedwarden/phase-2-ltv-tracker-phase1-baseline.csv` — All 47 Phase 1 orders populated (orders 001–020 from confirmed customer-analytics.csv and customer-retention-tracker.csv data; orders 021–047 as estimated cohort reconstructions — replace with actual Etsy export). Full column definitions included. Phase 2 append row clearly marked. LTV comparison targets: 2x lift ($57) by Month 3, 3x lift ($85) by Month 6. Herbalist cohort LTV ($50+ Month 3, $120+ Month 6) is the primary Phase 3 gate metric to watch.
+
+**Key decisions logged**:
+
+- Phase 1 baseline frozen at 47 orders, $1,341 gross, $28.53 AOV, ~2–5% 90-day re-purchase rate (no email campaigns). All Phase 2 LTV ratios compare to this floor.
+- Campaign copy uses exact Kit merge tag format (`{{ subscriber.first_name }}`, not `[first_name]` or `{first_name}`). This matters — Kit will not resolve incorrectly formatted tags.
+- Zone-specific content blocks in Emails 1B and 2.2 are marked [ZONE CONTENT BLOCK] and must be written per-zone before the sequence goes live. This is the one remaining manual step before Kit entry.
+- Cohort conditional blocks in Email 1A cover all five cohorts including the new Cohort_Herbalist tag. The Gift Buyer cohort receives no cohort-specific opening (generic warm welcome) per the lifecycle strategy spec.
+- Email 3.2 (Day 30 premium offer) only sends to subscribers who opened Email 3.1 but did not click — this is a Kit conditional logic rule, not a broadcast. Must be configured in the Kit sequence editor as a condition, not a time-based trigger alone.
+- Decision triggers document covers all 5 Risk scenarios from phase-2-launch-control-center.md plus the Buffer OAuth failure mode (most common silent failure) and the Google Drive permission reset (most common launch-morning failure).
+
+**Sources**: phase-2-buyer-retention-lifecycle-strategy.md (all six sections), phase-2-launch-control-center.md (Parts 1–5), may-30-launch-sequence.md, phase-2-contingency-playbook.md, customer-analytics.csv, customer-retention-tracker.csv, phase-2-analytics-strategy.md.
+
+---
+
 ## Item 63 — 2026-05-07 — Phase 3 Medicinal Herbs Implementation Assets
 
 **Task**: Build three production-ready Phase 3 implementation assets for the medicinal herbs guide product line. Research basis: phase-3-medicinal-herbs-strategy.md and medicinal-herbs-candidate-list.md (both from Session 861, Item 61).

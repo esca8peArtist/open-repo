@@ -1,0 +1,112 @@
+SEEDWARDEN PHASE 2 ANALYTICS DASHBOARD,,,,,,,,,,,
+Generated: 2026-05-07,,,,,,,,,,,
+Reference: phase-2-buyer-retention-lifecycle-strategy.md Section 5,,,,,,,,,,,
+Phase 1 baseline: 47 orders | $1341 revenue | $28.53 AOV | 2.24% conversion rate,,,,,,,,,,,
+Phase 2 targets: 3-4% conversion | $57 LTV (2x lift) | 20% 90-day re-purchase rate,,,,,,,,,,,
+,,,,,,,,,,,,
+TAB 1: DAILY DASHBOARD,,,,,,,,,,,
+Instructions: Fill one row per business day. Check Mon-Fri each morning. 5-minute task.,,,,,,,,,,,
+Sources: Etsy Shop Manager > Orders; Kit > Broadcasts or Sequences > Activity,,,,,,,,,,,
+Decision rule: Any metric marked ANOMALY requires escalation to Weekly Dashboard before next morning check.,,,,,,,,,,,
+,,,,,,,,,,,,
+Date,Day_of_Week,Total_Orders_Today,Revenue_Today_USD,Kit_New_Subscribers_Today,Kit_Automation_Live_YN,Bounce_Rate_Pct,SEEDWARDEN15_Active_YN,Anomaly_Flag,Action_Taken,Notes
+2026-05-30,Saturday,,,,,,,YES,,LAUNCH DAY — record pre-launch subscriber count in pre-launch column
+2026-05-31,Sunday,,,,,,,,,
+2026-06-01,Monday,,,,,,,,,
+2026-06-02,Tuesday,,,,,,,,,
+2026-06-03,Wednesday,,,,,,,,,
+2026-06-04,Thursday,,,,,,,,,
+2026-06-05,Friday,,,,,,,,,
+2026-06-06,Saturday,,,,,,,,,Week 1 full review day
+2026-06-08,Monday,,,,,,,,,
+2026-06-09,Tuesday,,,,,,,,,
+2026-06-10,Wednesday,,,,,,,,,
+2026-06-11,Thursday,,,,,,,,,
+2026-06-12,Friday,,,,,,,,,
+2026-06-13,Saturday,,,,,,,,,
+2026-06-15,Monday,,,,,,,,,
+2026-06-16,Tuesday,,,,,,,,,
+2026-06-17,Wednesday,,,,,,,,,
+2026-06-18,Thursday,,,,,,,,,
+2026-06-19,Friday,,,,,,,,,
+2026-06-20,Saturday,,,,,,,,,
+2026-06-22,Monday,,,,,,,,,
+2026-06-23,Tuesday,,,,,,,,,
+2026-06-24,Wednesday,,,,,,,,,
+2026-06-25,Thursday,,,,,,,,,
+2026-06-26,Friday,,,,,,,,,
+2026-06-27,Saturday,,,,,,,,,
+2026-06-29,Monday,,,,,,,,,
+2026-06-30,Tuesday,,,,,,,,,Last day of Month 1 dashboard
+,,,,,,,,,,,,
+DAILY THRESHOLD ALERTS,,,,,,,,,,,
+If orders = 0 for 3+ consecutive days: check Etsy listing status — are listings still Active?,,,,,,,,,,,
+If bounce_rate_pct above 3: audit Kit subscriber list for invalid addresses — Kit flags these automatically,,,,,,,,,,,
+If SEEDWARDEN15_Active = NO: recreate coupon in Etsy Shop Manager > Marketing > Coupons (3 minutes),,,,,,,,,,,
+If Kit_Automation_Live = NO: check Kit > Automations > find Welcome sequence > click Resume,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+TAB 2: WEEKLY DASHBOARD,,,,,,,,,,,
+Instructions: Complete every Sunday. 30-minute review. Sources listed per metric.,,,,,,,,,,,
+One row per week. LTV_Cumulative is running total from launch day.,,,,,,,,,,,
+,,,,,,,,,,,,
+Week_Start_Date,Week_Number,Orders_Count,Revenue_USD,AOV_USD,Kit_Total_Subscribers,Camp1_Open_Rate_Pct,Camp2_Open_Rate_Avg_Pct,Camp3_Click_to_Purchase_Pct,Unsubscribe_Rate_Max_Pct,Forager_Tag_Count,Prepper_Tag_Count,Homesteader_Tag_Count,GiftBuyer_Tag_Count,Herbalist_Tag_Count,Top_Product_This_Week,Bundle_Attach_Rate_Pct,LTV_Cumulative_USD,Anomaly_Flag,Notes
+2026-05-30,1,,,,,,,,,,,,,,,,,,"Launch week — record pre-launch baseline in Notes: subscribers / followers / Etsy views"
+2026-06-06,2,,,,,,,,,,,,,,,,,,"Week 1 full review (phase-2-launch-control-center.md Gate 4)"
+2026-06-13,3,,,,,,,,,,,,,,,,,,
+2026-06-20,4,,,,,,,,,,,,,,,,,,
+2026-06-27,5,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,
+WEEKLY THRESHOLD ALERTS,,,,,,,,,,,
+Camp1_Open_Rate below 30% for 2 consecutive weeks: A/B test subject lines within 48 hours (10% sample per variant),,,,,,,,,,,
+Camp2_Open_Rate_Avg below 25%: audit content relevance — is ecosystem guide content matched to product bought?,,,,,,,,,,,
+Camp3_Click_to_Purchase below 0.5% after 30 Campaign 3 recipients: audit bundle recommendation pairings,,,,,,,,,,,
+Unsubscribe_Rate_Max above 3% on any single email: pause Campaign 2 within 24 hours; reduce to 1x/week,,,,,,,,,,,
+Bundle_Attach_Rate below 1% after 30 Campaign 3 sends: redesign Landing Page 2 (reduce to 3 bundles; add testimonials),,,,,,,,,,,
+,,,,,,,,,,,,
+WEEKLY AOV FORMULA,,,,,,,,,,,
+AOV_USD = Revenue_USD / Orders_Count,,,,,,,,,,,
+Target AOV: $35+ by Week 4 (Phase 1 baseline was $28.53; Phase 2 target with bundle attach is $35+),,,,,,,,,,,
+If AOV drops below $20: check if bundle listings are showing in Etsy search; if no bundles converting audit bundle pricing,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+TAB 3: MONTHLY DASHBOARD,,,,,,,,,,,
+Instructions: Complete on first Monday of each month. 2-hour review.,,,,,,,,,,,
+Sources: LTV tracker CSV; Kit > Subscribers filter by cohort tag; Etsy Stats > Listings; GA4 > Acquisition,,,,,,,,,,,
+,,,,,,,,,,,,
+Month,Orders_Count,Revenue_USD,AOV_USD,Kit_Subscribers_Total,LTV_Forager_Avg_USD,LTV_Prepper_Avg_USD,LTV_Homesteader_Avg_USD,LTV_GiftBuyer_Avg_USD,LTV_Herbalist_Avg_USD,Retention_30d_Pct,Retention_60d_Pct,Retention_90d_Pct,Email_Revenue_Per_Send_USD,Top_Acquisition_Source,VIP_Buyer_Count,Phase2_vs_Phase1_LTV_Ratio,Anomaly_Flag,Notes
+2026-05,47 (Phase 1 baseline),1341,28.53,0,32,52,25,28,N/A,~2-5%,~2-5%,~2-5%,0,etsy_organic,0,1.0x (baseline),,Phase 1 actuals — frozen baseline for all Phase 2 comparisons
+2026-06 (Month 1),,,,,,,,,,,,,,,,,,First Phase 2 monthly review — first Monday July 6
+2026-07 (Month 2),,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,
+MONTHLY LTV TARGETS BY COHORT,,,,,,,,,,,
+Cohort,Phase1_Inferred_LTV_USD,Phase2_Target_LTV_USD,3x_Stretch_Target_USD,Key_Product_Path
+Forager,$32-40,$40+,$85+,Wild Edibles > Medicinal Herbs > Zone bundles
+Prepper,$45-65,$55+,$110+,Zone bundle > survival bundle > Hunting/Fishing Manual
+Homesteader,$20-30,$35+,$70+,Seed Saving > Zone Calendar > companion planting
+Gift_Buyer,$25-35,$30+,$60 (2 gift occasions),Seasonal sends only — Mother's Day + holiday
+Herbalist,N/A (new),$50+,$120+,Medicinal bundle > practitioner bulk pack (Phase 3)
+,,,,,,,,,,,,
+MONTHLY RETENTION TARGETS,,,,,,,,,,,
+Metric,Target,If Below Target
+30-day re-purchase rate,10%,Campaign 3 upsell pairings may be wrong — audit Email 3.1 product recommendations
+60-day re-purchase rate,18%,Campaign 4 re-engagement not firing correctly — check Kit automation trigger at Day 45
+90-day re-purchase rate,25%,Full lifecycle sequence audit needed — review which campaign is causing drop-off
+Phase 1 baseline (no campaigns),~2-5%,N/A — this is the floor that any email campaign should beat
+,,,,,,,,,,,,
+LTV CALCULATION FORMULA,,,,,,,,,,,
+Net LTV per buyer = sum of all net order values for that buyer,,,,,,,,,,,
+Net order value = gross order value * 0.935 (Etsy 6.5% transaction fee) - $0.20 (listing fee per item),,,,,,,,,,,
+Cohort LTV avg = sum of net LTV for all buyers in cohort / count of buyers in cohort,,,,,,,,,,,
+Email ROI = revenue from Kit subscribers making 2nd purchase this month / total Kit emails sent this month,,,,,,,,,,,
+Email ROI target: $0.10+ per email sent (i.e. $10 per 100 emails sent),,,,,,,,,,,
+Phase2_vs_Phase1_LTV_Ratio = current month cohort LTV avg / Phase 1 baseline LTV ($28.53),,,,,,,,,,,
+Target ratio by Month 3: 2.0x ($57 LTV) — achievable with Campaigns 2 and 3 running,,,,,,,,,,,
+Target ratio by Month 6: 3.0x ($85 LTV) — requires VIP loyalty and Herbalist bundle-to-practitioner conversion,,,,,,,,,,,
+,,,,,,,,,,,,
+MONTHLY COHORT ACTION TRIGGERS,,,,,,,,,,,
+Trigger,Threshold,Specific Action
+Herbalist LTV is 2x Gift Buyer LTV,Confirmed in monthly review,Shift 50% of Pinterest effort to botanical/herbalism boards; update Etsy SEO on medicinal guides
+Forager 90-day retention drops,More than 20% below Phase 1 baseline,Send immediate win-back to Cohort_Forager: "[Month] forage window open in Zone [X]" within 3 days
+VIP engagement below 40% in any 30d,Kit > Subscribers > vip tag filter,Audit VIP content for exclusivity leaks within 3 days; send direct email asking VIPs what they want
+Campaign 4 re-open below 15%,Kit > Sequences > Email 4.1 stats,Replace subject line with universal curiosity hook: "What's changed in Zone [X] since you last visited"
