@@ -1036,7 +1036,8 @@ Estimated additional time: 4–6 hours.
 
 - [ ] Carrier-unlocked Pixel purchased (Part 1)
 - [ ] GrapheneOS installed, bootloader locked, verified (Part 2)
-- [ ] GrapheneOS post-install configuration complete: auto-reboot, network permissions, advertising ID deleted, USB data controls (Part 3)
+- [ ] GrapheneOS post-install configuration complete: network permissions, advertising ID deleted, USB data controls (Part 3)
+- [ ] GrapheneOS auto-reboot after inactivity configured to 12 hours (Part 9, Device Seizure Protection)
 - [ ] Google Play installed in secondary profile if needed (Part 3, Step 3.4)
 - [ ] MySudo VoIP number acquired, paid with prepaid card (Part 4, Step 4.1)
 - [ ] Signal registered on VoIP number, username set, phone visibility set to Nobody (Part 4, Steps 4.2–4.3)
@@ -1134,6 +1135,64 @@ Estimated additional time: 3–4 hours beyond Tier 2.
 - Section 702 reauthorization status (currently renewed through April 2026; renewal debate is ongoing as of this writing)
 - Fifth Amendment/compelled decryption case law in your circuit
 - Check opsec-playbook.md for updates and reassess whether your tier level should change
+
+---
+
+## Part 9 — Device Seizure & Forensic Extraction Protection
+
+**Applicable to**: Tier 2+ (Activists, protest participants, people facing arrest risk).
+
+**Objective**: Understand and configure protections against forensic extraction when a device is physically seized by law enforcement. Cellebrite UFED and similar forensic tools can extract data from powered-on, unlocked devices. Understanding the Before First Unlock (BFU) vs. After First Unlock (AFU) distinction and configuring GrapheneOS for automatic secure reboot protects your data even if your device is seized.
+
+**Threat context**: When law enforcement seizes a powered-off device with a strong encryption passphrase, forensic tools have no mechanism to extract the data (encryption is effective at rest). When a device is seized while powered on and unlocked, the encryption keys reside in device memory (RAM), and forensic tools can extract the full decrypted filesystem. The seizure threat is not primarily about breaking encryption — it is about capturing the device in a state where encryption keys are already loaded into memory.
+
+---
+
+### Device Encryption States: BFU vs. AFU
+
+**Before First Unlock (BFU)**: The device has never been unlocked since boot, or has rebooted and not yet been unlocked. The device's encryption keys are NOT in memory. The filesystem is encrypted and inaccessible without the passphrase. Even if seized, forensic tools cannot access the data because the keys do not exist in a form they can extract.
+
+**After First Unlock (AFU)**: The device has been unlocked at least once since the last boot. The encryption keys remain in RAM. If seized in this state, Cellebrite and similar forensic tools can read the decrypted data from memory or bypass the encryption entirely once the device is in AFU state.
+
+**Implication for seizure risk**: A device seized in BFU state is substantially more secure than one seized in AFU state. Leaving your device powered on overnight after a seized encounter leaves it in AFU state — the keys are in memory even if the screen is locked. A device that automatically reboots after inactivity resets to BFU state and is protected from forensic extraction on subsequent seizure.
+
+**Configuration for GrapheneOS**:
+- **Settings > System > Security > Auto-reboot after inactivity**
+- Default: 18 hours of inactivity
+- Recommended setting for high-risk users: 12 hours (overnight protection for typical sleep schedules)
+- For maximum protection: 4–6 hours (ensures device never remains AFU for extended periods)
+- **Effect**: If your device is seized 22 hours after you last used it and left unsupervised, it will have rebooted and returned to BFU state. If it is seized immediately after use, it remains in AFU state — the timing matters.
+
+**iOS equivalent**: iOS 18 introduced a 72-hour inactivity reboot feature (reduced from 168 hours in iOS 18.1). This is less aggressive than GrapheneOS's configurable default but provides meaningful protection for typical users who do not configure it manually.
+
+---
+
+### Wipe Passphrase Configuration (Advanced)
+
+GrapheneOS supports a **wipe passphrase** — an emergency option that immediately destroys encryption keys if the incorrect passphrase is entered multiple times. This differs from the normal unlock PIN: the wipe passphrase causes the device to permanently erase its encryption keys, rendering all data inaccessible (to you, and to forensic tools).
+
+**Configuration for GrapheneOS**:
+- **Settings > System > Security > Wipe passphrase**
+- You set a secondary passphrase distinct from your unlock PIN
+- If an attacker (or you under duress) enters this passphrase, the device immediately erases encryption keys and all data becomes permanently inaccessible
+
+**Legal caveat**: Consult an attorney before relying on wipe passphrase as a duress defense. In some jurisdictions, intentionally destroying data under government compulsion can be charged as obstruction of justice or destruction of evidence, even if done under coercion. The Fifth Amendment protections for refusing to provide a passphrase are more clearly established than protections for destroying evidence via wipe passphrase. This feature is a technical protection, not a legal one.
+
+**When to use it**: For Tier 3 users (people who have reason to believe they are direct targets of investigation), a wipe passphrase configured in advance provides a last-resort option. For Tier 2, the auto-reboot configuration alone is typically sufficient and avoids legal complexity.
+
+---
+
+### Cross-References to Existing Device Security Configurations
+
+The protections above build on configurations already covered in Part 3 (GrapheneOS Post-Install Configuration):
+
+- **Full-disk encryption**: Part 3, Step 3.1 — verifies LUKS or similar encryption is enabled. BFU/AFU protection requires encryption to be effective.
+- **USB data disable**: Part 3, Step 3.5 — prevents forensic cables from extracting data over USB even when the device is in AFU state.
+- **Bootloader lock**: Part 3, Step 3.3 — ensures the firmware has not been tampered with by forensic tools attempting to install a custom bootloader that bypasses encryption.
+
+These configurations work together: encryption provides the underlying protection, auto-reboot ensures the device returns to BFU state, and USB-level protections prevent direct memory extraction in AFU state.
+
+For Tier 2 users who complete Part 3, enabling auto-reboot (12-hour default) adds minimal friction and meaningfully improves protection against device seizure scenarios. No additional tools or complex configuration is required beyond what is already in Part 3.
 
 ---
 
