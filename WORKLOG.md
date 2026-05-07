@@ -4,6 +4,21 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 — mfg-farm — Multi-Supplier Strategy for ModRun (4 files)
+
+**Deliverables produced:**
+- `projects/mfg-farm/supply-chain-diversification-strategy.md` (~2,700 words): Three-tier supplier model (self-print / contract mfg overflow / China direct), Etsy compliance note on handmade policy, month-by-month activation triggers, negotiation framework overview
+- `projects/mfg-farm/supplier-comparison-matrix.csv`: 8 suppliers × 9 attributes; covers filament inputs (eSUN, Anycubic, Polymaker) and finished-product contract manufacturers (JLC3DP, Xometry, Craftcloud, PCBWay, Alibaba)
+- `projects/mfg-farm/inventory-forecast-model.md` (~1,700 words): WMA demand forecasting, safety stock formula with ModRun-specific calculations at 20/50/100/200 units/week tiers, filament reorder points, finished goods pre-build triggers, Etsy seasonal multipliers
+- `projects/mfg-farm/supplier-negotiation-playbook-v2.md` (~1,200 words): Contract manufacturer negotiation (distinct from v1 filament playbook); 10-unit validation sample protocol; Alibaba email template; key terms to lock in; performance monitoring
+
+**Key findings:**
+1. At current scale, Tier 2 contract manufacturers (JLC3DP at $1.50–4.00/clip, Xometry at $4–10/clip) cost 20–80× more per unit than self-printing ($0.08–0.13). Outsourcing is overflow insurance, not a cost strategy.
+2. Print orientation (snap arm Z-axis vertical) is the single most critical spec to communicate to any contract manufacturer. Failure to specify this will produce non-functional parts.
+3. Etsy handmade policy prohibits listing Alibaba-manufactured clips as handmade. Rail component has more flexibility. Verify category compliance before activating Tier 3.
+4. Filament safety stock at 20 units/week: minimum 3.74 kg per production color (~$45). ROI of that buffer vs. a 14-day production stoppage is 18.7:1.
+5. JLC3DP 10-unit sample order ($50–80 total) should be placed within 2 weeks of test print confirmation — establishes validated overflow path before it is needed.
+
 ## 2026-05-07 Session 869 — Orchestration State Confirmation: ALL AUTONOMOUS WORK EXHAUSTED
 
 **Session Context**: Post-Session 868. Full state verification per orchestrator protocol (re-read project Goals, verify Exploration Queue health, identify any new autonomous scope).
