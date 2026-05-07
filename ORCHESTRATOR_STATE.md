@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-07T13:07:08Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-07T13:59:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 4.4% (394,896 tokens) | All-models 73.4% | Reset in 107h | check: claude.ai → Settings → Usage & billing
+🟡 Usage: Sonnet 4.4% (394,896 tokens) | All-models 75.3% | Reset in 106h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. resistance-research
@@ -83,43 +83,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  2. `phase-1-gist-css-template.html` (production-ready HTML/CSS) — Testable template with responsive design, dark mode support, copy-paste ready
-- **Key Finding**: Infrastructure is more complete than initial estimate suggested. Timeline compressed from 90 minutes post-decision to 60 minutes sequential (30–40 minutes with parallelization)
-- **Business Value**: User chooses distribution path → Phase 1 Gist creation + field-fill + announcement in <30 minutes instead of 4+ hours
-- **Committed**: Both files to master by subagent ac2fe73699c6222ac
 
-✅ **seedwarden: Phase 2 Buyer Retention & Lifecycle Campaign Strategy** (~4 hours, parallel subagent)
-- **Deliverable**: `phase-2-buyer-retention-lifecycle-strategy.md` (3,800 words, production-ready)
-- **Coverage**: 6 comprehensive sections:
-  1. Phase 1 baseline & Phase 2 cohort modeling (Forager/Prepper/Homesteader/Gift Buyer/Herbalist)
-  2. Email lifecycle architecture (6 campaigns, 20+ touches, Days 0–90+)
-  3. Kit automation configuration (paste-ready sequences, segment logic)
-  4. Landing pages & incentive architecture (3 pages, 7 triggers)
-  5. Analytics dashboard & decision triggers (daily/weekly/monthly dashboards with thresholds)
-  6. Implementation roadmap (6-day pre-launch timeline, contingencies)
-- **Key Finding**: Herbalist cohort enters Phase 2 as primary LTV growth lever (3x vs. Gift Buyer 1x). Kit automation is critical path — Zapier Option A / manual CSV Option B split ensures launch-day resilience.
-- **Business Value**: Phase 2 launch May 30 → systematic buyer lifecycle campaigns from Day 1; projected 2–3x LTV lift ($28 → $60+/buyer)
-- **Committed**: File to master by subagent a56521a4189124113
+### 2. Item 1 Execution — stockbot Post-Trade Analytics Stack Unification
 
-**Combined Exploration Queue Output**:
-- 2 items completed (9,300 words total, production-ready)
-- Both documents are fully implemented and testable (not just architectural drafts)
-- Both enable parallel pre-launch execution (user can stage these systems before triggering launches)
+**Deliverable**: `projects/stockbot/framework-unified-analytics-architecture.md` (514 lines, design document, production-ready)
 
-**Project State After Session 858**:
-- **Exploration Queue**: 3 remaining items (1 blocked on May 12 Gate 1 pass; 2 could theoretically be started now but have low immediate value)
-  - stockbot: Covered Call Automation (blocked until Gate 1 pass)
-  - resistance-research: Phase 1 Distribution Risk Mitigation Playbook (could start)
-  - cybersecurity-hardening: Tier 2 Distribution Sequencing (could start)
-- **All major projects**: Still awaiting user decisions (path choice, architecture review, test print, tag corrections, Tier 1 approval)
-- **Autonomous work remaining**: Limited to lower-priority items without blocking external dependencies
+**What it covers**:
+- Current state analysis (PostTradeAnalyzer + Phase 6 stack + naming collisions)
+- Unified architecture (5 components: realtime engine, round-trip attribution, snapshots, post-trade analysis, API)
+- Implementation roadmap (Phase 1: rename + consolidate 5h; Phase 2: extend PostTradeAnalyzer 4h; Phase 3: API 3h; Phase 4: testing 2h)
+- Migration path (zero breaking changes; renamed classes, new methods, no removed APIs)
+- Success criteria (PerformanceMetrics properly namespaced, Phase 6 dead code removed, new endpoints tested)
 
-**Blocks Status**: No new blocks identified. All existing blocks remain unchanged (user decisions, external review, physical action)
+**Key Insights**:
+- RealtimeMetricsEngine encapsulates Phase 6 logic; interface stable, internal refactoring only
+- PerformanceSnapshot (rename from ORM PerformanceMetrics) consolidates storage; no schema changes
+- PostTradeAnalyzer extended with attribution_summary(), signal_effectiveness(), strategy_comparison()
+- Unified AnalyticsReport composes realtime + historical + post-trade into single API response
+- Feasible pre-Gate-2 launch; implementation begins immediately post-Gate-1 (May 12)
 
-**Next Autonomous Window**: 
-1. Immediately post-user-path-decision → Phase 1 distribution execution (user runs `fill_templates.py` + Gist API)
-2. Immediately post-user-architecture-approval → stockbot code refactoring (ARCH-1 through ARCH-7 implementations)
-3. May 12 post-Gate-1 checkpoint → contingency implementation or Gate 2 planning
-4. Post-test-print-completion → mfg-farm post-launch scaling sequence
+**Business Value**: 
+- Removes technical debt before multi-ticker scaling
+- Enables production-grade dashboards (history + realtime + analysis)
+- No breaking changes; existing code continues working
 
-**Session 858 complete** — Exploration queue items 2 and 3 (from remaining queue) completed; both critical path files for downstream launches now staged and production-ready.
+**Committed**: `projects/stockbot/framework-unified-analytics-architecture.md` (stockbot submodule, commit e923399)
+
+---
+
+**Project Status**:
+- All prior blocks unchanged (resistance-research path decision, stockbot ARCH decisions, mfg-farm test print, seedwarden Track A)
+- Queue refreshed with 3 ready-to-work items (no prerequisites, independent of user decisions)
+- Item 1 (stockbot) design-complete; implementation ready post-Gate-1
+
+**Next Session Options**:
+1. Work remaining 2 exploration items (5-9 hours) if time available
+2. Wait for user decisions to unblock project work
+3. Monitor May 12 Gate 1 checkpoint; if Pass, begin Gate 2 implementation immediately
+
+**Suggested Priority**: Items 1-2 are research/design (no risks); execute before May 12 if time available to build readiness.
