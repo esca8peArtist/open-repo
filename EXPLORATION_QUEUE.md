@@ -212,41 +212,52 @@
 
 ---
 
-### Item 22: resistance-research Domain 42 Preliminary Scoping (Session 857 — NEW)
-**Status**: ACTIVE — Ready for autonomous research
-**Trigger**: Immediate (independent of user path decision, high-impact domain for Phase 2)
+### ✅ Item 22: resistance-research Domain 42 Preliminary Scoping (Session 860 COMPLETE)
+**Status**: COMPLETED 2026-05-07
 **Scope**: Preliminary research strategy for Domain 42 (Drug Policy, Regulatory Capture, DEA June 29 deadline)
-**Deliverables** (~5,000 words):
-- Gap analysis: how Domain 42 fills the proposal's regulatory capture coverage
-- Research roadmap (priority source categories, key question areas)
-- June 29 deadline context and implications
-- Format validation (consistency with existing domain structure)
-- 3 top subtopics identified for full research phase
-**Owner**: resistance-research agent (autonomous execution)
-**Key value**: Domains 39-42 are Phase 2 candidates. Domain 42 has urgent June 29 deadline — pre-research now enables fast escalation if user path decision triggers Phase 2 research.
-**Timeline estimate**: 4-5 hours research + scoping
+**Deliverables** (COMPLETE):
+- ✅ Gap analysis: Domain 42 fills gap in democratic-design argument re: drug prohibition insulation from accountability
+- ✅ Research roadmap: 3 mechanisms (DEA regulatory capture, felony disenfranchisement feedback loop, federal-state conflict)
+- ✅ Critical deadline identified: **May 28, 2026 deadline to submit written notice for DEA June 29 hearing** (21 days from session date)
+- ✅ Format validation: Consistent with existing domain structure
+- ✅ 3 top subtopics ranked: (1) DEA regulatory capture (analytical core), (2) Felony disenfranchisement as feedback loop, (3) Federal-state cannabis conflict
+**File**: `ITEM22_DOMAIN42_SCOPING.md` (committed)
+**Key finding**: May 28 deadline is most time-bounded institutional window in Domains 42-50 candidate set. Recommended research start: June 15 for draft before July 15 hearing conclusion.
+**Estimated full research**: 12-15 hours across 3-4 sessions
 
 ---
 
-### Item 23: stockbot Advanced Monitoring & Alerting for Live Trading (Session 857 — NEW)
-**Status**: ACTIVE — Ready for autonomous research
-**Trigger**: Immediate (supports post-Gate-1 live trading deployment planning)
+### ✅ Item 23: stockbot Advanced Monitoring & Alerting for Live Trading (Session 860 COMPLETE)
+**Status**: COMPLETED 2026-05-07
 **Scope**: Design comprehensive monitoring, alerting, and incident response framework for live trading
-**Deliverables** (~6,000 words):
-- Monitoring architecture (Prometheus metrics, Grafana dashboards, log aggregation)
-- Custom stockbot metrics (session health, fill latency, P&L, risk metrics)
-- Alert thresholds (red/yellow/critical) per metric type
-- Incident response playbooks (connection loss, market halt, API 503, position orphaning)
-- Daily health check automation (cron script, Discord notification)
-- Post-trade analysis queries (win rate, payoff ratio, slippage by ticker)
-**Owner**: stockbot agent (autonomous research)
-**Key value**: Upon Gate 1 pass and post-Gate-1 roadmap approval, user needs production monitoring design before live trading launch. This research is independent of code implementation.
-**Timeline estimate**: 5-6 hours research + synthesis
+**Deliverables** (COMPLETE):
+- ✅ Monitoring architecture: Prometheus (15s/60s split scrape), Grafana 6-panel layout, structured JSON logging
+- ✅ Custom 14 metrics: session uptime, signal rate, inference latency, cycle lag, fill latency, slippage, partial fills, rejected orders, P&L, drawdown, Sharpe, win rate, concentration
+- ✅ Alert thresholds table (RED/YELLOW/INFO) with full definitions
+- ✅ 5 incident response playbooks: connection loss (Tailscale restart, orphan check), market halt (expected/unexpected), 503/429 errors (exponential backoff), position orphaning (DB vs. Alpaca), DB corruption (WAL + restore)
+- ✅ Daily health check automation: `daily_health_check.sh` template (80 lines) with Discord embeds
+- ✅ Post-trade analysis: 6 SQL queries validated against actual schema (win rate, payoff ratio, slippage, latency, hold duration, orphan detection)
+**File**: `advanced-monitoring-and-alerting-framework.md` (committed to projects/stockbot/docs/)
+**Key feature**: Operational-grade documentation with actual commands, file paths, expected output formats. Handles both steady-state and failure scenarios.
 
 ---
 
-### Item 24: mfg-farm Alternative Product Category Deep-Dive (Session 857 — NEW)
-**Status**: ACTIVE — Ready for autonomous research
+### ✅ Item 24: mfg-farm Alternative Product Category Deep-Dive (Session 860 COMPLETE)
+**Status**: COMPLETED 2026-05-07
+**Scope**: Deep market research and viability analysis for alternative manufacturing categories (Wave 2-3 planning)
+**Deliverables** (COMPLETE):
+- ✅ 5 high-margin product categories ranked by priority:
+  1. **Tool/Workshop Organizers (Gridfinity)** — **70% net margin**, $22 retail, 15K-30K community, best Wave 2 launch
+  2. **Homelab Rack Accessories (10" rack)** — **69.5% margin**, r/homelab 946K subscribers, zero-competition greenfield, community-first strategy 3-8% conversion
+  3. **Modular Desk Accessories** — **76.9% margin** (highest), $1.3B market, requires brand-building time
+  4. **Creator Phone/Tablet Mounts** — Viable at $35+, commodity floor $22
+  5. **Gaming Cable Accessories** — Viable post-homelab launch (needs review base first)
+- ✅ COGS validation, supplier quotes, competitive landscape, customer demand signals per category
+- ✅ Structural advantages analysis: tariff tailwind on US-made filament (now price-competitive vs. Chinese imports facing 35-145%+ tariffs), COGS resilience (20% cost increase = 1-3% margin impact only)
+- ✅ 18-month Wave 2-3 revenue projection: Month 6 = $17K-$25K/mo; Month 12 = $28K-$43K/mo; 68-72% blended margin
+- ✅ Wave 2 capital requirement: **$330-$490 total**
+**File**: `ITEM24_ALTERNATIVE_PRODUCT_CATEGORIES.md` (committed to projects/mfg-farm/)
+**Key insight**: Tool organizers best immediate launch (validated Gridfinity community demand, $22 retail, 1.4K+ sales validation on Etsy). Tariff tailwind is structural advantage for US-made FDM operators.
 **Trigger**: Immediate (informs Wave 2-3 product roadmap, independent of test print)
 **Scope**: Deep market research and viability analysis for alternative manufacturing categories beyond cable management
 **Deliverables** (~7,000 words):
@@ -276,17 +287,16 @@
 
 ---
 
-### Item 19: resistance-research Phase 1 Distribution Execution Playbooks (Session 854 — NEW)
-**Status**: ACTIVE — Ready for autonomous execution
-**Trigger**: Immediate (independent of user path decision)
-**Scope**: Create detailed, day-by-day execution playbooks for all THREE distribution paths (A, B, A+Domain37 Hybrid) so user can launch immediately upon decision
-**Deliverables** (3 standalone documents, ~12,000 words total):
-- **Path A Playbook**: Institutional outreach via 35-domain framework; law schools, think tanks, policy orgs; tier-based messaging; weekly Phase 1 execution calendar (4 weeks); email templates; tracking dashboard setup; success metrics; contingency escalation
-- **Path B Playbook**: Public-first distribution via Substack + Reddit + X/Twitter + Medium; Week 1 phased calendar (staggered by 48h to avoid spam filters); engagement escalation sequences; CTA variations per platform; SEO optimization for long-tail policy keywords; launch metrics (Substack opens, Reddit engagement, inbound referral tracking)
-- **Path A+Domain37 Hybrid Playbook**: Institutional tier 1 outreach PLUS Domain 37 research parallel stream; research acceleration timeline (40-50h estimate for Candidate A or B); integration checkpoints; hybrid measurement dashboard (institutional penetration + domain credibility feedback); Phase 2 trigger conditions
-**Owner**: resistance-research agent (autonomous execution)
-**Key value**: User decides path on May 8, gets 3 executable playbooks same day, launches Phase 1 by May 9. Zero friction from decision to execution.
-**Timeline estimate**: 8-10 hours research + writing per path (parallel execution via subagent)
+### ✅ Item 19: resistance-research Phase 1 Distribution Execution Playbooks (Session 854 VERIFIED, Session 860 RE-VERIFIED)
+**Status**: COMPLETED (Session 854 — already in version control)
+**Trigger**: User decision on distribution path (A / B / A+Domain37 Hybrid)
+**Deliverables** (VERIFIED COMPLETE):
+- ✅ **PATH_A_DISTRIBUTION_PLAYBOOK.md** (583 lines): Institutional outreach via 35-domain framework; law schools, think tanks, policy orgs; tier-based messaging; 4-week execution calendar; email templates; tracking dashboard; contingency escalation
+- ✅ **PATH_B_DISTRIBUTION_PLAYBOOK.md** (555 lines): Public-first distribution (Substack + Reddit + X + Medium); 48h phased calendar (spam filter safety); engagement escalation; CTA variations; SEO optimization; launch metrics
+- ✅ **PATH_A_PLUS_DOMAIN37_HYBRID_PLAYBOOK.md** (430 lines): Parallel institutional outreach + Domain 37 research stream; 40-50h research acceleration; integration checkpoints; hybrid measurement dashboard; Phase 2 triggers
+**Verification**: All 3 files verified in version control (committed Session 854); all deliverables present and production-ready.
+**Key value**: User decides path → receives all 3 executable playbooks immediately → launches Phase 1 within 24h. Zero friction from decision to execution.
+**Next action**: User selects distribution path; orchestrator executes Phase 1 launch (3-4h autonomous work)
 
 ---
 
