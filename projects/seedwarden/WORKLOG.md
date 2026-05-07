@@ -4,6 +4,31 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Production Timeline and Photography Logistics — 2026-05-07
+
+**Task**: Design concrete production timeline for Phase 2 photography and plant sourcing with fixed milestones (May 10/15/20/25/28/30). Session 895, Track B, independent of Phase 1 launch timing.
+
+**Files created**:
+
+- `projects/seedwarden/phase-2-production-timeline.md` — ~2,400 words, 4 parallel workstreams with daily/weekly milestones. Covers: plant sourcing order deadlines (May 10–11), location permit submission (May 12), three-cluster shoot architecture (May 20–22), photo processing (May 23–25), guide production in Canva (May 15–25), Etsy/Kit platform setup (May 26–28), and May 30 launch sequence. Fixed milestones: May 10 (location confirmed + orders placed), May 15 (plants received + master template complete), May 20 (photo shoot Day 1 complete), May 25 (all photos edited + all 4 guides in Canva draft), May 28 (Etsy + Kit confirmed live). Contingency decision tree for 5 scenarios (on schedule / photo delayed / 2 guides only / vendor miss / weather failure).
+
+- `projects/seedwarden/phase-2-plant-sourcing-vendor-list.md` — ~700 words. Three recommended vendors: Strictly Medicinal Seeds (seeds and live plants; 8–12 day lead time), Mountain Rose Herbs (dried roots; 2–3 day lead time), Prairie Moon Nursery (bulblets and bare roots; 7–14 day lead time). Risk table: ginseng seeds CRITICAL (fall crop; spring stock limited; order from Wisconsin Grown Ginseng LLC); ramps MEDIUM (EFN sold out; Prairie Moon to confirm; fresh market leaves as primary prop). All-vendor-miss contingency: Mountain Rose Herbs 2-day priority ship. Inbound handling protocol by material type (dried roots / live plants / fresh leaves / seeds / bulblets). Total budget: $65–$115 cash.
+
+- `projects/seedwarden/phase-2-location-scout-report.md` — ~850 words. Primary location: Asheville Botanical Garden, 151 W.T. Weaver Blvd, Asheville NC — $25–75 per 2 hours; 7-day permit lead time; application deadline May 12; 600+ Appalachian species. Seasonal peak: May is optimal month; Black Cohosh, Goldenseal, Ramps all in foliage May 20–22; flower shots sourced from iNaturalist CC-BY archive. Backup 1: private forest farm via United Plant Savers referral (written permission only; strongest habitat photography option; outreach begins May 10). Backup 2: indoor window studio (always available; $0–25; adequate for all guide-interior shots). Key permit finding: National Forest (60-day lead, deadline March 21 — passed) and NC State Parks (14-day lead, deadline May 6 — passed) are not available for May 20. Weather trigger decision checkpoints: May 17 (5-day), May 19 (48-hour), May 20 6am (hourly), May 20 8:30am (go/no-go).
+
+- `projects/seedwarden/phase-2-photo-shoot-checklist.md` — ~650 words. 30-shot sequence table: 6 angle types (full plant / leaf detail / flower or fruit / root / seed / habitat context) × 5 frames minimum per angle per species = 30 selects per species target. Flower/fruit for all 4 species sourced exclusively from iNaturalist CC-BY (spring bloom past in late May). Camera settings reference: white balance locked at 5500K for all clusters; mode by shot type (standard for flat-lay overhead; portrait mode for root macro 4–12 inches); editing preset table (Lightroom Mobile). Full gear checklist: foam-core reflector, portable LED panel, tripod/clip, silnylon tarp, spray bottle, botanical scale, all props by species. On-site timeline: Day 1 (May 20) 8:00am–5:00pm with midday laptop review at 12:45pm; Day 2 (May 21) 9:00am–12:30pm indoor; Day 3 (May 22) field AM + indoor PM. WORKLOG entry format for attribution logging.
+
+**Key decisions logged**:
+
+- Three-cluster architecture: Cluster 1 (field, May 20, Ginseng/Goldenseal/Ramps), Cluster 2 (indoor, May 21, all 4 species root/seed), Cluster 3 (field+indoor, May 22, Black Cohosh leaf/stem). Float days May 23–25 for re-shoots and processing.
+- Guide production order: Ginseng (master template, Day 1), Goldenseal (Day 2), Black Cohosh (Day 3), Ramps (Day 4). Template duplication saves 2–3 hours per subsequent guide.
+- Canva production begins May 15 — independent of shoot. Master template built on BHL illustrations and iNaturalist CC-BY digital sources before physical props arrive from the May 20 shoot.
+- Asheville Botanical Garden confirmed as primary field location: only public Appalachian site with viable permit window for May 20 (7-day lead time; permit deadline May 12).
+- National Forest and State Park options ruled out: permit lead times (60 days and 14 days respectively) have passed.
+- Flower photography for all 4 species sourced exclusively from iNaturalist CC-BY archive — confirmed viable path from earlier session research (100s of Research Grade CC-BY observations for all 4 species).
+
+---
+
 ## Phase 2 Photography & Plant Sourcing Logistics — 2026-05-07
 
 **Task**: Build Phase 2 photography and plant sourcing logistics roadmap covering four parallel workstreams: plant sourcing and procurement (May 10–18 deadlines), location scouting and permissions (May 12 permit deadline), photo shoot logistics plan (May 20–25 execution), and guide production pipeline (May 26–30 Canva sprint). Four files produced.
