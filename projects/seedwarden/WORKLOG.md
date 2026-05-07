@@ -4,6 +4,42 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Photography & Plant Sourcing Logistics — 2026-05-07
+
+**Task**: Build Phase 2 photography and plant sourcing logistics roadmap covering four parallel workstreams: plant sourcing and procurement (May 10–18 deadlines), location scouting and permissions (May 12 permit deadline), photo shoot logistics plan (May 20–25 execution), and guide production pipeline (May 26–30 Canva sprint). Four files produced.
+
+**Files created**:
+
+- `projects/seedwarden/plant-sourcing-spreadsheet.csv` — 13 rows covering all five Appalachian Medicinals species (American Ginseng, Goldenseal, Black Cohosh, Bloodroot, Ramps) plus iNaturalist CC-BY and BHL photo sourcing rows. Columns: species / purpose / order deadline / three vendor tiers with URLs and prices / lead times / spring availability risk / order status tracking / delivery dates / cost estimates / backup options. Total cash outlay: $65–$115 one-time (May 10–12). Key sourcing findings: ginseng seeds (fall crop) available spring only from Wisconsin Grown Ginseng LLC and Dairyland Ginseng (stratified inventory); EFN ramps sold out (daily check recommended); Strictly Medicinal Seeds ships seeds in 8–12 days; Prairie Moon Nursery live plants ship within 1 week for 3-packs in spring.
+
+- `projects/seedwarden/location-scouting-checklist.md` — ~1,500 words, 7 parts. Primary location: Asheville Botanical Garden (600+ Appalachian species; $25–75 per 2-hour session; 7-day permit lead time; application deadline May 12). Backup 1: private forest farm via United Plant Savers referral or Western Carolina Botanical Club (written permission only; strongest habitat photography option). Backup 2: indoor window setup (always available; no permit; activated by weather trigger). Critical permit finding: National Forest commercial photography requires 60-day advance notice (deadline March 21 — passed); NC State Parks require 14-day notice (deadline May 6 for May 20 shoot — passed). Asheville Botanical Garden is the only public-land option with an open permit window for May 20. Weather contingency decision checkpoints: May 17 (5-day forecast), May 19 (48-hour), May 20 6am (hourly), May 20 8:30am (go/no-go).
+
+- `projects/seedwarden/photo-shoot-logistics-plan.md` — ~1,500 words, 7 parts. Three-cluster breakdown: Cluster 1 (Forest Floor — Ginseng, Goldenseal, Ramps; Day 1 May 20; field location), Cluster 2 (Root and Seed — all 5 species; Day 2 May 21; indoor), Cluster 3 (Leaf and Stem — Black Cohosh, Bloodroot; Day 3 May 22; field + indoor). Days 4–5 (May 23–24) float for re-shoots and bundle hero shots. Per-species shot requirements: 6 angle types (full plant / leaf / flower-fruit / root / seed / habitat context), 5 frames minimum per angle = 30 selects per species, 150 total. Minimum viable crew: 1 person with tripod; recommended: 2 (photographer + props handler). Processing timeline: May 25 editing complete; May 26 photos available to Canva. Equipment checklist: portable LED panel, foam-core reflector, silnylon tarp, laptop for on-site culling, 2 memory cards, external drive backup.
+
+- `projects/seedwarden/guide-production-timeline.md` — ~1,000 words, 4 parts. Production order: Ginseng (May 26 master template, 5–6 hours), Goldenseal (May 27, 3–4 hours), Black Cohosh (May 28, 3–4 hours), Bloodroot + Ramps (May 29 sprint, 5–6 hours combined), full QA + Etsy upload (May 30 before 10am). Kit launch broadcast staged by May 28. Etsy listings built as drafts May 26–28; published May 30 10am. Contingency decision tree: if shoot delays to May 27–28, June 6 full launch (revenue impact ~$1,200 delayed 7 days); if only Ginseng + Goldenseal ready by May 26, soft launch May 30 with 2 guides; if all vendors miss delivery, escalate to Mountain Rose Herbs priority ship and compress shoot to May 21–23 (no launch date impact); if weather fails all 5 shoot days, switch to indoor + iNaturalist CC-BY archive (no launch date impact).
+
+**Key decisions logged**:
+
+- Asheville Botanical Garden selected as primary shoot location: only public Appalachian location with a viable permit process within the May 20 window. Permit application must be submitted by May 12.
+- National Forest and State Park commercial photography options ruled out: permit lead times (60 days and 14 days respectively) make them impossible to secure for May 20.
+- Private forest farm (UPS referral path) identified as Backup 1: strongest habitat photography potential; written permission sufficient; outreach begins May 10.
+- Ginseng prop seeds: spring availability limited to Wisconsin Grown Ginseng LLC and Dairyland Ginseng (stratified stock); Strictly Medicinal does not stock ginseng in spring (fall crop). Order deadline May 10.
+- Ramps: EFN sold out; Prairie Moon bulblet availability to be confirmed May 10; fresh leaves from local farmers market ($3–8) remain the highest-value ramps prop.
+- Production order justified: Ginseng (highest search volume, master template), Goldenseal (CITES documentation complexity), Black Cohosh (most instructive cultivation story), Bloodroot (toxicity framing required), Ramps (most variable photography sourcing — last position allows late photography integration).
+- June 6 contingency activated if: photo processing not complete by May 26 9am OR fewer than 2 guides (Ginseng + Goldenseal) are both edit-ready by May 26.
+
+**Sources researched**:
+- Strictly Medicinal Seeds shipping: 8–12 days for seeds (2–3 business days processing + 6–9 transit)
+- Prairie Moon Nursery spring shipping: 3-packs ship within 1 week of order in spring 2026; bare roots through mid-late May by order date
+- Richters Herbs US shipping: 6–14 business days (Canadian supplier; adequate for May 10 order/May 18 arrival)
+- Wisconsin Grown Ginseng LLC: stratified spring stock available; 70–80% germination rate; ships USPS Priority
+- Asheville Botanical Garden commercial photography: $25–75 per 2 hours; 7-day advance application required
+- NC Botanical Garden: restricted to pathways for commercial photography; not suitable as primary shoot location for guide photography
+- National Forest commercial photography: 60-day advance notice required (George Washington & Jefferson NF FAQ)
+- NC State Parks: 14-day advance notice required
+
+---
+
 ## Phase 2 Customer Success & Retention Framework — 2026-05-07
 
 **Task**: Design Phase 2 customer success and retention framework covering Phase 1→Phase 2 conversion modeling, customer segmentation (5 segments with LTV estimates), retention mechanics, Phase 3 go/no-go decision tree (4 scenarios), weekly/monthly/quarterly dashboard designs, and escalation logic. Two files produced.
