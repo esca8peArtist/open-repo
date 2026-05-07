@@ -1,3 +1,44 @@
+## Session 894 (2026-05-07 23:45–00:25 UTC) — PARALLEL EXECUTION: Domain Currency Verification + Phase 2 Institutional Outreach Planning COMPLETE
+
+### ✅ SESSION COMPLETE: 2 parallel exploration items executed (Domain maintenance + cybersecurity-hardening Phase 2 planning). Both committed to master. Exploration queue refreshed to 3 active items.
+
+**What Was Accomplished**:
+
+1. ✅ **resistance-research: Domain Maintenance & May 2026 Currency Verification** ✅ COMPLETE
+   - File: `projects/resistance-research/MAY_2026_DOMAIN_UPDATES_VERIFICATION.md`
+   - All 35 domains verified current through May 7, 2026
+   - Key findings: 11 domains with paste-ready edit text; 24 confirmed current without edits
+   - Two critical Phase 2 findings: (1) Abrego Garcia v. Crenshaw ruling imminent (monitor starting May 8), (2) Palantir cross-reference gap (non-blocking, Phase 2 deepening)
+   - Four upcoming triggers for future monitoring: FISC opinion (~May 15), Section 591 FY2027 (post-May 13), Crenshaw ruling (imminent), Watson v. RNC SCOTUS (late June)
+   - Business value: Distribution-ready. All 35 domains reflect May 7 threat landscape; materials maximally credible with institutional recipients.
+
+2. ✅ **cybersecurity-hardening: Phase 2 Institutional Outreach Strategy** ✅ COMPLETE
+   - Files: `phase-2-institutional-outreach-strategy.md` (2,400 words) + `phase-2-target-organizations.csv` (18 organizations, 5 sectors)
+   - Designed Phase 2 institutional network outreach strategy from first principles (distinct from Tier 2 individual-org documentation)
+   - Coverage: (1) Phase 1 → Phase 2 transition gates with sector-specific evidence requirements; (2) 18 target organizations across 5 sectors (AG networks, law school associations, journalist membership bodies, union security committees, think tank networks); (3) Sector-specific messaging templates; (4) Domain → sector mapping (Domains 11, 16, 17, 20, 21, 25, 33, 36); (5) Week-by-week sequencing calendar; (6) Contingency paths for low/high response rates
+   - Key finding: Phase 2 institutional outreach REQUIRES Phase 1 adoption signal FIRST — minimum gate is one named adoption signal from member organization in each sector. Georgetown CPT identified as highest-alignment contact (American Dragnet predecessor relationship)
+   - Business value: Eliminates Phase 1 → Phase 2 ambiguity. User can execute Phase 1, collect feedback, then immediately transition to Phase 2 without additional planning
+
+**Exploration Queue Status**: Refreshed to 3 active items:
+- resistance-research: Phase 1 Institutional Outreach Prioritization for May 28 Domain 42 DEA Deadline (2 hrs, no prerequisites)
+- seedwarden: Phase 2 Photography & Plant Sourcing Logistics (2–3 hrs, no prerequisites, May 30 target)
+- mfg-farm: Batch 2 Product Selection & Demand Research (2–3 hrs, no prerequisites)
+
+**Project Status (Unchanged from Session 893)**:
+- 🟢 **resistance-research**: Phase 1 distribution-ready. Domain currency verified. Awaiting user distribution path decision (A / A+37 / B)
+- 🔴 **stockbot**: CRITICAL — Jetson unreachable (blocks May fills). Gate 1 checklist executable May 12. Awaiting user ARCH decisions + Jetson restore
+- 🟢 **cybersecurity-hardening**: Phase 1 ready for user approval. Phase 2 institutional outreach plan complete
+- 🟢 **seedwarden**: Phase 2 framework production-ready. Track B launch plan complete
+- 🔴 **mfg-farm**: Blocked on test print
+
+**Needs Your Input**:
+1. **CRITICAL (before May 12)**: Restore Jetson — unreachable. Without this, stockbot Gate 1 will fail May 12
+2. **Before May 10**: Fix cron PATH for uv — add `PATH=/home/awank/.local/bin:$PATH` to crontab top line
+3. **Decision required**: resistance-research distribution path (A / A+37 / B) — Phase 1 ready for launch pending decision
+4. **Review when ready**: stockbot ARCH decisions (7 items in CODE_REVIEW_SYNTHESIS.md)
+
+---
+
 ## Session 893 (2026-05-07 22:30–23:20 UTC) — FINAL CONTINUATION: 3 PARALLEL EXPLORATION ITEMS COMPLETE (Domain Expansion, Gate 1 Readiness, Phase 2 Analytics) — CRITICAL JETSON INFRASTRUCTURE ISSUE IDENTIFIED
 
 ### ✅ SESSION COMPLETE: 3 parallel exploration items executed. All committed to master. Exploration queue now at 0 active items. **CRITICAL: Jetson is unreachable — must be restored before May 12 to avoid Gate 1 Far Miss.**
