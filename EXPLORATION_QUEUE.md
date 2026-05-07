@@ -3,11 +3,53 @@
 > Research items queued for autonomous execution between project work.
 > Cross out items as they complete. If queue falls below 3 items, add more.
 >
-> **Last updated**: Session 651 (2026-04-29 19:45 UTC) — Added Items 11–13 (seedwarden Phase 3, stockbot HMM validation, resistance-research tracker enrichment)
+> **Last updated**: Session 890 (2026-05-07 17:15 UTC) — Completed Session 889-890 items (Tier 2 Org Strategy, Domain Expansion, Customer Success, Gate 1 Readiness). Queue now at 0 active items — eligible for refresh.
 
 ---
 
 ## Active Items
+
+### ✅ Item 25: cybersecurity-hardening Tier 2 Organizational Distribution Strategy (Session 889 COMPLETE)
+**Status**: COMPLETED 2026-05-07 15:48 UTC
+**Scope**: Institutional decision-maker discovery, adoption pathway analysis, 8 pilot sites in 3 waves, broker network mapping
+**Deliverables**: `projects/cybersecurity-hardening/tier-2-organizational-strategy.md` (3,400 words, production-ready)
+**Key findings**: UB Civil Rights Clinic already litigating surveillance cases (warm contact); ASC poster deadline May 15 (urgent action trigger); faith networks receptive to sanctuary preparation framing; 5 broker networks enable 50-500x reach
+**Business value**: Tier 2 execution roadmap ready post-Phase-1-approval; eliminates planning ambiguity
+**Outcome**: Production-ready for immediate execution post-user-approval
+
+---
+
+### ✅ Item 26: resistance-research Phase 2 Domain Expansion Strategy (Domains 36-50) (Session 889 COMPLETE)
+**Status**: COMPLETED 2026-05-07 15:48 UTC
+**Scope**: Gap analysis on justice movement sectors, 15-candidate domain prioritization, broker organization identification, outreach sequencing
+**Deliverables**: `projects/resistance-research/phase-2-domain-expansion-strategy.md` (3,200 words, production-ready)
+**Key findings**: Reproductive Justice, Abolitionism, Environmental Justice are broker nodes connecting all 15 new domains; 8 broker organizations identified for efficient distribution
+**Business value**: Phase 2 roadmap prevents post-Phase-1 planning vacuum; enables Month 1 outreach post-feedback
+**Outcome**: Production-ready for June 2026 Phase 2 execution planning
+
+---
+
+### ✅ Item 27: seedwarden Phase 2 Customer Success & Retention Framework (Session 889 COMPLETE)
+**Status**: COMPLETED 2026-05-07 15:48 UTC
+**Scope**: Phase 1→Phase 2 conversion modeling, 5-segment customer model, Phase 3 go/no-go decision tree, real-time analytics infrastructure
+**Deliverables**: `projects/seedwarden/phase-2-customer-success-framework.md` (2,400 words) + `projects/seedwarden/phase-2-analytics-dashboard-schema.json` (25 metrics, 10 automation rules)
+**Key findings**: 35-50% conversion for sequential product pairs; Herbalists highest LTV ($90-130+); Phase 3 trigger automated on Day 60
+**Business value**: Real-time measurement from May 30 launch; Phase 3 decision data-driven; 45-day Phase 2→Phase 3 loop
+**Outcome**: Production-ready measurement infrastructure for May 30 Phase 2 launch
+
+---
+
+### ✅ Item 28: stockbot May 12 Gate 1 Readiness Validation Checklist (Session 890 COMPLETE)
+**Status**: COMPLETED 2026-05-07 17:15 UTC
+**Scope**: Pre-checkpoint system health validation, data completeness verification, decision tree classifier, contingency playbooks
+**Deliverables**: `projects/stockbot/docs/gate-1-readiness-checklist.md` (1,500 words, executable) + `projects/stockbot/docs/gate-1-decision-tree-executable.py` (decision classifier)
+**Key features**: 7 executable sections (system health, data completeness, metrics, risk assessment, decision criteria, communication template, contingencies); decision tree script with PASS/CONDITIONAL/FAIL classification
+**Business value**: May 13 has zero ambiguity on next steps; Gate 1 Pass → immediate Gate 2 implementation
+**Outcome**: Production-ready for May 12 morning checkpoint execution
+
+---
+
+## Previous Completed Items
 
 ### ✅ Item 1: resistance-research Domain Content Maintenance (Sessions 571-578)
 **Status**: COMPLETED 2026-04-27
