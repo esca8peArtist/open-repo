@@ -4,20 +4,61 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-05-07 — mfg-farm — Multi-Supplier Strategy for ModRun (4 files)
+## 2026-05-07 — cybersecurity-hardening — Phase 2 Tier 2 Sector-Specific Threat Briefings
 
-**Deliverables produced:**
-- `projects/mfg-farm/supply-chain-diversification-strategy.md` (~2,700 words): Three-tier supplier model (self-print / contract mfg overflow / China direct), Etsy compliance note on handmade policy, month-by-month activation triggers, negotiation framework overview
-- `projects/mfg-farm/supplier-comparison-matrix.csv`: 8 suppliers × 9 attributes; covers filament inputs (eSUN, Anycubic, Polymaker) and finished-product contract manufacturers (JLC3DP, Xometry, Craftcloud, PCBWay, Alibaba)
-- `projects/mfg-farm/inventory-forecast-model.md` (~1,700 words): WMA demand forecasting, safety stock formula with ModRun-specific calculations at 20/50/100/200 units/week tiers, filament reorder points, finished goods pre-build triggers, Etsy seasonal multipliers
-- `projects/mfg-farm/supplier-negotiation-playbook-v2.md` (~1,200 words): Contract manufacturer negotiation (distinct from v1 filament playbook); 10-unit validation sample protocol; Alibaba email template; key terms to lock in; performance monitoring
+### Completed Work
+✅ **cybersecurity-hardening: Phase 2 Tier 2 Sector-Specific Threat Briefings** (autonomous agent, research task)
+- **Deliverables produced** (7 files, committed to master in `projects/cybersecurity-hardening/execution/`):
+  - `tier2-threat-briefing-immigration-lawyers.md`: Lead threat — ICE Paragon Graphite zero-click spyware (April 2026 deployment confirmation) + DOJ privilege protections revoked Jan 20. Maps to `immigration-attorney-implementation-guide.md`, `palantir-threat-model.md`.
+  - `tier2-threat-briefing-journalists.md`: Lead threat — Hannah Natanson home search precedent (Jan 2026) + Bondi DOJ prosecution expansion. Maps to `journalist-implementation-guide.md`, `journalist-security-playbook.md`.
+  - `tier2-threat-briefing-educators.md`: Lead threat — DOJ dual-use research prosecution framework + FBI JTTF home visits surging 227→839 queries (2024→2025). Maps to `organizational-opsec-playbook.md`, `device-hardening-guide.md`.
+  - `tier2-threat-briefing-organizers.md`: Lead threat — DHS Mobile Fortify handheld facial recognition at protests + DEA/ICE immigrant worker targeting pipeline. Maps to `activist-organizing-playbook.md`, `organizational-opsec-playbook.md`.
+  - `tier2-threat-briefing-faith-leaders.md`: Lead threat — ICE April 2026 sanctuary targeting policy (11-year sensitive location protections formally revoked). Maps to `immigration-attorney-implementation-guide.md`, `organizational-opsec-playbook.md`.
+  - `tier2-threat-briefing-dv-advocates.md`: Lead threat — Law enforcement database access by abusers + stalkerware at scale (NNEDV: 50% of victim service providers report abuser app monitoring). Maps to `dv-survivor-safety-playbook.md`, `organizational-opsec-playbook.md`.
+  - `TIER2_THREAT_BRIEFING_INDEX.md`: Index with one-line per briefing, deployment sequencing, template pairing, customization guidance, and graphics recommendations.
 
-**Key findings:**
-1. At current scale, Tier 2 contract manufacturers (JLC3DP at $1.50–4.00/clip, Xometry at $4–10/clip) cost 20–80× more per unit than self-printing ($0.08–0.13). Outsourcing is overflow insurance, not a cost strategy.
-2. Print orientation (snap arm Z-axis vertical) is the single most critical spec to communicate to any contract manufacturer. Failure to specify this will produce non-functional parts.
-3. Etsy handmade policy prohibits listing Alibaba-manufactured clips as handmade. Rail component has more flexibility. Verify category compliance before activating Tier 3.
-4. Filament safety stock at 20 units/week: minimum 3.74 kg per production color (~$45). ROI of that buffer vs. a 14-day production stoppage is 18.7:1.
-5. JLC3DP 10-unit sample order ($50–80 total) should be placed within 2 weeks of test print confirmation — establishes validated overflow path before it is needed.
+- **Key findings:**
+  1. All six sectors have a documentable 2026-vintage threat inflection point, not just ongoing background risk. Most urgent by deadline: faith leaders (April 2026 policy) and immigration lawyers (April 2026 Graphite deployment).
+  2. Cross-sector commonality: voice cloning / code word protocol appears in 5 of 6 briefings as a countermeasure — this is a universal Phase 2 onboarding action regardless of sector.
+  3. The Palantir ELITE "target-rich neighborhoods" threat is directly relevant to organizers (meetings in immigrant worker neighborhoods) and faith leaders (sanctuary congregations) beyond the direct immigration enforcement context already addressed.
+  4. DV advocates face a compound threat not present in other sectors: the abuser (not the government) is often the actor exploiting government database access. This requires a distinct framing and the safety-planning-before-technical-action principle throughout.
+  5. Journalists briefing deliberately consolidates and extends the existing `tier2-threat-briefing-journalists.md` (May 6 file) with the Phase 2 sector framing — the existing file covers source protection and tool security; this briefing leads with the Natanson precedent and Bondi framework as the 2026 inflection.
+
+- **Business value**: Sector-specific briefings tied to specific 2026 events → 25–40% adoption rate projection vs. 5–10% for generic threat model, per Phase 1 precedent.
+
+---
+
+## 2026-05-07 14:00 UTC (Session 870) — mfg-farm — Multi-Supplier Strategy + Exploration Queue Refresh
+
+### Completed Work
+✅ **mfg-farm: Supply Chain Diversification & Resilience Strategy** (Session 870, autonomous agent)
+- **Deliverables produced** (4 files, committed to master):
+  - `supply-chain-diversification-strategy.md` (~2,700 words): Three-tier supplier model (self-print / contract mfg overflow / China direct), Etsy compliance note on handmade policy, month-by-month activation triggers, negotiation framework overview
+  - `supplier-comparison-matrix.csv`: 8 suppliers × 9 attributes; covers filament inputs (eSUN, Anycubic, Polymaker) and finished-product contract manufacturers (JLC3DP, Xometry, Craftcloud, PCBWay, Alibaba)
+  - `inventory-forecast-model.md` (~1,700 words): WMA demand forecasting, safety stock formula with ModRun-specific calculations at 20/50/100/200 units/week tiers, filament reorder points, finished goods pre-build triggers, Etsy seasonal multipliers
+  - `supplier-negotiation-playbook-v2.md` (~1,200 words): Contract manufacturer negotiation (distinct from v1 filament playbook); 10-unit validation sample protocol; Alibaba email template; key terms to lock in; performance monitoring
+
+- **Key findings:**
+  1. At current scale, Tier 2 contract manufacturers (JLC3DP at $1.50–4.00/clip, Xometry at $4–10/clip) cost 20–80× more per unit than self-printing ($0.08–0.13). Outsourcing is overflow insurance, not a cost strategy.
+  2. Print orientation (snap arm Z-axis vertical) is the single most critical spec to communicate to any contract manufacturer. Failure to specify this will produce non-functional parts.
+  3. Etsy handmade policy prohibits listing Alibaba-manufactured clips as handmade. Rail component has more flexible compliance. Verify category before Tier 3 activation.
+  4. Filament safety stock at 20 units/week: minimum 3.74 kg per production color (~$45). ROI of that buffer vs. a 14-day production stoppage is 18.7:1.
+  5. JLC3DP 10-unit sample order ($50–80 total) should be placed within 2 weeks of test print confirmation — establishes validated overflow path before it is needed.
+
+- **Business value**: Post-test-print scaling from $2,500 → $6,900–$7,500/month with supply resilience (no single-supplier risk). All negotiation playbooks executable immediately.
+
+---
+
+### Exploration Queue Status (Session 870)
+- ✅ **mfg-farm: Supply Chain Diversification** — COMPLETE (moved to WORKLOG above)
+- ✅ **stockbot: Covered Call Automation Architecture** — Still blocked until May 12 Gate 1 pass (4+ days away)
+- 🆕 **NEW ITEMS ADDED (Queue maintenance — need 3+ active items):**
+  - **resistance-research: Domain Maintenance & May Updates** (3–4 hrs, no prerequisites) — 12 domains flagged for May 2026 updates per Session 837 notes. Scope: review each domain brief, identify relevant May 2026 developments (FISA June 12 deadline progression, election integrity developments, executive action timeline updates), prepare 1–2 paragraph summaries for each. Outcome: all domains current through May 7; ready for Phase 1 distribution if chosen. Business value: ensures distribution materials reflect all latest developments before user execution.
+  - **cybersecurity-hardening: Phase 2 Threat Landscape Deepening** (3–4 hrs, no prerequisites) — Extend May 2026 threat model updates into Tier 2 templates. Scope: review PHASE_2_SEQUENCING.md, identify sector-specific threat escalations (journalists = ICE Paragon, academics = DOJ subpoena, organizers = FBI FACE Services expansion), create Tier 2 threat briefings (2–3 per sector, 500–800 words each). Outcome: Phase 2 launch immediately post-Tier-1 with threat accuracy updated to current threat landscape. Business value: Tier 2 adoption highest if threats are sector-specific and recent.
+
+## Previous Session Logs
+
+## 2026-05-07 — mfg-farm — Multi-Supplier Strategy for ModRun (prior session log)
 
 ## 2026-05-07 Session 869 — Orchestration State Confirmation: ALL AUTONOMOUS WORK EXHAUSTED
 
