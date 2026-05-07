@@ -124,7 +124,7 @@ Seed storage on Amazon shows consistent demand: aluminum seed organizer boxes re
 
 **Market Context**
 
-The US garden seeds market is estimated at USD 24–26 billion total in 2025. The specialty heirloom and organic segment is a fast-growing subsegment, growing at approximately 11% CAGR vs. the overall market's 4–7% CAGR. Organic seed demand saw an 11% jump globally in recent data, with US consumers driving significant share of that growth.
+The US consumer garden seeds market (retail, home gardener segment) was valued at USD 1.20 billion in 2025, estimated to grow to USD 1.59 billion by 2031 at a CAGR of 4.79% (Mordor Intelligence, 2025). The specialty heirloom and organic subsegment is growing faster than the overall market — organic/heirloom seed CAGR is approximately 11% annually, driven by non-GMO preference and food sovereignty interest. Organic seed demand saw an 11% jump globally in recent data, with US consumers driving significant share of that growth. Note: some published figures citing $24–26 billion for "US seeds market" refer to the broader agricultural/commodity seed sector and are not the relevant benchmark for Seedwarden's consumer garden segment.
 
 The competitive landscape in specialty seeds is well-established: Johnny's Selected Seeds (Winslow, ME), Fedco Seeds (Waterville, ME), Baker Creek Heirloom Seeds (Mansfield, MO), Botanical Interests (Broomfield, CO), High Mowing Organic Seeds (Wolcott, VT), Strictly Medicinal Seeds (Williams, OR), and Southern Exposure Seed Exchange (Mineral, VA) collectively dominate the premium heirloom segment. Each has 20–50 years of customer trust, established supply chains, and extensive variety catalogs.
 
@@ -538,7 +538,7 @@ B2B channels extend Seedwarden's reach beyond individual Etsy buyers into instit
 
 **Channel Overview**
 
-There are approximately 18,000+ community gardens in the US (American Community Gardening Association data). Most are operated by nonprofits, municipal parks departments, faith organizations, or community land trusts. The Community Garden Food Bank (CGFB) network and the American Community Gardening Association (ACGA) provide contact directories.
+Community garden estimates vary significantly by counting methodology: the Trust for Public Land (2018) identified 29,000+ community gardens within the parks of the 100 largest US cities alone; broader national estimates suggest 150,000+ total community garden plots when including allotment gardens, school gardens, and informal plots. The ACGA directly links approximately 2,100 gardens across the US and Canada through its member network — the most actionable contact base for B2B outreach. Most are operated by nonprofits, municipal parks departments, faith organizations, or community land trusts. The ACGA directory (communitygarden.org) and local Parks and Recreation department websites are the primary outreach lists.
 
 **Opportunity Structure**
 
@@ -614,7 +614,7 @@ This channel is fully documented in `B2B_DISTRIBUTION_STRATEGY.md` Section 3 (Ag
 
 **Channel Overview**
 
-US landscaping industry revenue is approximately $176 billion (IBISWorld 2025). Residential landscaping firms that include native planting design, edible landscape design, or habitat restoration are Seedwarden's addressable sub-segment.
+US landscaping industry revenue is approximately $188.8 billion (IBISWorld 2025), up from prior estimates, with 5.8% growth forecast for 2025 and a CAGR of 2.5% projected through 2030. Residential landscaping firms that include native planting design, edible landscape design, or habitat restoration are Seedwarden's addressable sub-segment.
 
 **Opportunity Structure**
 

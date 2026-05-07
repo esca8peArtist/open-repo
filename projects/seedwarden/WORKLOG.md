@@ -4,6 +4,38 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 21 — 2026-05-07 — Market Expansion & Adjacent Category Research
+
+**Task**: Execute Exploration Queue Item 21 — produce a production-ready ~10,000-word market expansion analysis covering adjacent product categories, geographic expansion, B2B channel mapping, and 12-month implementation roadmap.
+
+**File produced**:
+- `projects/seedwarden/ITEM21_MARKET_EXPANSION_ADJACENT_CATEGORY_RESEARCH.md` — 11,886 words, 940 lines. Production-ready.
+
+**Sections delivered**:
+1. Adjacent Category Analysis — 6 categories: garden hand tools, storage solutions, specialty seeds, growing media, propagation supplies, landscape design templates. Each includes COGS analysis, supplier options (3+), margin modeling, time-to-first-sale, demand signals, competitive landscape.
+2. Per-Category Viability Deep-Dives — Storage Solutions (recommended Wave 2 pilot), Specialty Seeds (Wave 2/3), Landscape Design Templates (Wave 2 digital). TAM/SAM/SOM, supplier qualification process, go-to-market timeline, pricing positioning.
+3. Geographic Expansion — UK (priority 1, minimal localization, digital ready now), EU (gated Q3 2027 — language and VAT complexity), Canada (priority 2, zone map adaptation only). VAT/customs analysis, phytosanitary notes, localization requirements per market.
+4. B2B Channel Mapping — 6 channels: community gardens, schools, nonprofits, landscaping firms, seed libraries, affiliate ecosystem. CAC vs. LTV analysis, outreach templates (structural), licensing model by channel, priority matrix.
+5. 12-Month Implementation Roadmap — Wave 1 (Jul–Aug 2026), Wave 2 (Sep–Dec 2026), Wave 3 (Jan–Mar 2027), geographic gate (Apr 2027). Decision gates, revenue thresholds, risk register, 12-month revenue projection by channel.
+
+**Data sources verified**:
+- Garden hand tools market: $19.01B global 2024, 3.80% CAGR — confirmed via Straits Research / Arizton
+- UK gardening market: £9 billion 2025 — confirmed via HTA / Mintel
+- Canada nursery market: CAD $9.4 billion 2025 — confirmed via IBISWorld Canada
+- Canada gardening tools: USD 321.89M 2024 to USD 440.26M 2032, 3.54% CAGR — confirmed via Credence Research
+- US landscaping industry: updated to $188.8 billion 2025 (IBISWorld) — corrected from prior $176B figure
+- US consumer garden seeds: corrected to $1.20 billion 2025 (Mordor Intelligence), 4.79% CAGR to $1.59B by 2031; clarified distinction from broader agricultural seed market
+- Community garden statistics: updated to Trust for Public Land 2018 (29,000+ in top-100 city parks) and ACGA network (2,100 directly listed gardens)
+- Heirloom seed CAGR: 11% confirmed; non-GMO/organic seed demand signals confirmed
+
+**Cross-references**:
+- `phase-3-product-development-strategy.md` (companion document, Wave 1–3 digital execution)
+- `B2B_DISTRIBUTION_STRATEGY.md` (extends Section 3 agricultural extension analysis)
+- `financial-sustainability-model.md` (Scenario B baseline used for projections)
+- `phase-3-decision-framework.md` (decision gate structure)
+
+---
+
 ## Item 65 — 2026-05-07 — Phase 2 Pre-Launch Readiness Audit and PHASE_2_LAUNCH_PREP.md
 
 **Task**: Full readiness audit for Phase 2 May 30, 2026 launch. Identify highest-value pre-launch preparation work with no external dependencies. Create PHASE_2_LAUNCH_PREP.md with current readiness status, completed tasks, blockers with owners, and go/no-go recommendation.
