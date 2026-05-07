@@ -1091,6 +1091,35 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - **seedwarden: Post-Phase-1 Analytics & Customer Cohort Tracking** — [deferred] Planned for next session. Research: (1) Etsy Stats API capabilities and limits (time-lag, granularity, custom metrics available), (2) GA4 event schema design for Phase 1 guide tracking (view events, purchase events, guide-specific segmentation), (3) Customer segmentation automation (UTM tracking, Etsy search keyword capture, email cohort tagging), (4) Repeat customer analysis (30/60/90-day cohort retention curves, seasonal patterns), (5) Cannibalization detection (cross-guide substitution effects), (6) Phase 2 decision gates (when to trigger paid ads, when to add new guides, when to expand to endangered species). Expected output: `post-launch-analytics-framework.md` + `etsy-ga4-event-tracking.md` + `customer-retention-tracker.csv` template (3,500 total words). Business value: Enables data-driven Phase 2 scaling decisions and reduces post-launch guesswork.
 
+---
+
+## 2026-05-07 19:30 UTC — Session 893 — Exploration Queue Refresh (3 items added)
+
+**Status**: Exploration queue at 0 items post-Session 892. All major projects blocked on user decisions or external reviews. Created 3 high-value autonomous items addressing approaching hard deadlines.
+
+**NEW ITEMS (Session 893 — 2026-05-07)**:
+
+1. **seedwarden — May 30 Pre-Launch Readiness Audit** (Priority CRITICAL, 3-4 hours)
+   - **Context**: May 30 launch is 23 days away. May 10 is hard plant sourcing order deadline (3 days). Track B infrastructure 100% complete; waiting on user social account creation.
+   - **Research scope**: (1) All May 30 dependencies mapped (plant orders, photo shoot, Canva Brand Kit, social accounts, email automation), (2) Critical path analysis (which tasks gate others; what's the longest chain?), (3) May 10 go/no-go decision framework (what needs to complete by May 10 for May 30 feasibility?), (4) Contingency timeline (if photo shoot slips to May 17-18, can May 30 still launch?), (5) User action gates identified (all user decisions required with 30-60 min estimates), (6) May 6-30 day-by-day execution checklist (ready for user to execute immediately post-user-actions)
+   - **Deliverables**: `may-30-launch-readiness-audit.md` (~2,500 words) + `may-30-critical-path-diagram.txt` (visual timeline) + `may-10-go-no-go-decision-framework.md` (~1,200 words)
+   - **Business value**: Prevents launch-day surprises; identifies May 10 dependencies 3 days before deadline; enables user to make go/no-go call with clear data
+   - **Ready for execution**: Immediately (no blockers)
+
+2. **resistance-research — Phase 1 Execution Dry Run + May 28 Deadline Coordination Prep** (Priority HIGH, 3-4 hours)
+   - **Context**: Path decision pending (A / A+37 / B) but all Phase 1 infrastructure is complete and tested. Domain 42 May 28 DEA participation deadline (21 days away).
+   - **Research scope**: (1) Full end-to-end dry-run of Phase 1 distribution workflow (create test Gist, fill template fields, verify email scheduling, test contact list verification, practice send sequence), (2) May 28 deadline coordination infrastructure (Domain 42 outreach Wave 1 calendar, May 28 reminder sequence, escalation checklist for organizations slow to commit), (3) Path-specific gotchas (what's different between Path A / A+37 / B in execution?), (4) Response triage protocol (how to categorize incoming feedback from Tier 1 contacts?), (5) Dry-run success criteria (what must work flawlessly before Phase 1 goes live?)
+   - **Deliverables**: `phase-1-execution-dry-run-report.md` (~1,500 words, what worked/what needs fixing) + `may-28-domain-42-coordination-calendar.md` (~1,200 words, week-by-week outreach + reminder sequence) + `path-specific-execution-notes.md` (~1,000 words, gotchas per path)
+   - **Business value**: Execution confidence; May 28 deadline doesn't slip; Phase 1 launches flawlessly upon user path decision
+   - **Ready for execution**: Immediately (no blockers; user path decision can be made in parallel)
+
+3. **cybersecurity-hardening — Tier 3 Expansion Foundations (Decision Trees, Spanish Translation Scope)** (Priority MEDIUM, 3-4 hours)
+   - **Context**: Phase 1 Tier 1 ready for user approval. Phase 2 Tier 2 guides complete. Next: Phase 2 Tier 3 audience expansion (DV survivors, labor organizers, election workers, general public).
+   - **Research scope**: (1) Decision tree framework for non-experts (role-based branching: "I'm worried about ICE" → immigration attorney guide; "My organizing group is being surveilled" → activist playbook; etc.), (2) Spanish translation scope assessment (which guides to translate first? estimated effort per guide? bilingual distribution strategy?), (3) Tier 3 audience expansion strategy (who should get Phase 2 Tier 3? DV survivors via NNEDV? election workers via EAC? labor organizers via AFL-CIO?), (4) Tier 3 distribution channels (Reddit Spanish-language communities? Spanish-language media partnerships? community organization networks?), (5) Phase 3 readiness (what foundational work must complete before Tier 3 launch?); (6) Quick-start checklists for different roles (one-page summaries for non-technical audiences)
+   - **Deliverables**: `tier-3-audience-expansion-roadmap.md` (~2,000 words) + `decision-tree-prototype.md` (visual branching logic) + `spanish-translation-scope.csv` (per-guide effort + priorities) + `role-based-quick-start-templates/` (5-6 one-pagers)
+   - **Business value**: Phase 2 scales from 6 organizations to 600+ (10x expansion); Spanish translation opens Hispanic/immigrant communities; decision trees reduce adoption friction for non-technical audiences
+   - **Ready for execution**: Immediately (all Phase 2 infrastructure available as foundation)
+
 **NEW ITEMS (Session 733 — 2026-05-05 05:42 UTC)**:
 
 - ✅ **open-source-rideshare: Phase 2 Stakeholder Engagement & MVP Refinement Research** (COMPLETE, Session 746) — `phase-2-engagement-roadmap.md` (1,800 words) + `beta-testing-framework.md` (1,200 words) delivered. Key findings: (1) Cooperative rideshare market is viable and moving fast (Fare Co-op is 3rd largest US platform in <12mo, Drivers Cooperative Colorado operational). (2) Namma Yatri (Bangalore) pilot playbook is replicable: 100-driver closed beta → union-anchored launch. (3) Anchor demand non-negotiable (cold-start without captive demand fails; Denver NEMT example). (4) Y-Risk insurance proven path (already underwrites Fare Co-op). (5) Portland OR + Denver CO + Madison WI + Minneapolis MN ranked as top 4 pilot cities. (6) Governance: CoopCycle federation model + Loomio async voting recommended. MVP feature set: P0 (matching, payments, insurance state), P1 (governance portal), P2+ (ML demand pred, carpooling). Driver recruitment: peer ambassador ($8-15K/mo for 100 drivers in 30-45d) or union partnership (lowest cost-per-driver, 60-90d timeline). Ready for Phase 2 execution upon PR #1 merge. 48 sources grounding all precedent.
