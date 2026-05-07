@@ -96,6 +96,53 @@
 3. Orchestrator monitors for Category A responses and logs for post-DEA-hearing synthesis
 4. Resistance-research continues advancing Phase 2 candidates (Domains 38-A, 41-B, 38-B) if path decision made
 
+---
+
+## 2026-05-07 Session 864 (Continued) — Complete Domain 42 Email Send Preparation (All 3 Waves)
+
+**Continued from earlier in session 864 — Contact verification and Category A batch complete.**
+
+✅ **Category B Send Batch Prepared** (`EXECUTE_CATEGORY_B_SEND_MAY_10-12.md`)
+- All 5 Category B organization contacts verified and updated
+- 5 fully personalized emails (NAACP LDF, Brennan Center, Prison Policy Initiative, Weill Cornell Meinhofer, Ohio State Moritz DEPC)
+- Execution checklist with 3-wave timeline (May 10-12)
+- Status: READY FOR USER EXECUTION (May 10)
+
+✅ **Category C + Administrative Law Faculty Send Batch Prepared** (`EXECUTE_CATEGORY_C_ADMIN_FACULTY_MAY_12-17.md`)
+- All 12 contacts verified and templated
+- 12 fully personalized emails across 4 waves:
+  - **Wave 1 (May 12-14, PRIORITY)**: Mason Marks (Yale Law) + 2 admin law faculty (Georgetown, Harvard)
+  - **Wave 2 (May 14-15)**: 4 state AGs (Colorado, California, Michigan, Washington) via press offices
+  - **Wave 3 (May 16)**: Democratic Attorneys General Association (coalition coordination)
+  - **Wave 4 (May 17)**: 4 press contacts (WeedPress, Marijuana Herald, Filter, Democracy Docket)
+- Execution checklist with send tracking
+- Status: READY FOR USER EXECUTION (May 12+)
+
+**COMPLETE DOMAIN 42 EXECUTION PACKAGE READY**:
+- **Total contacts**: 24 organizations/individuals
+- **Send waves**: 3 primary waves (May 8, May 10-12, May 12-17) + ongoing admin law faculty (May 12-14)
+- **Timeline**: May 8 → May 28 (participation notice deadline)
+- **Status**: ALL THREE SEND WAVES fully prepared, verified, personalized, and ready for zero-friction user execution
+
+**Commits**:
+- resistance-research: d041763d (EXECUTE_CATEGORY_C_ADMIN_FACULTY_MAY_12-17.md)
+- resistance-research: 077367fa (EXECUTE_CATEGORY_B_SEND_MAY_10-12.md)
+- resistance-research: 38f5dfb8 (EXECUTE_CATEGORY_A_SEND_MAY_8.md + domain-42-dea-briefing-contacts.md)
+
+**Execution Timeline for User (Session 865+)**:
+- **May 8 (TODAY)**: Execute EXECUTE_CATEGORY_A_SEND_MAY_8.md (7 orgs, 15–20 minutes)
+- **May 10–12**: Execute EXECUTE_CATEGORY_B_SEND_MAY_10-12.md (5 orgs, 15–20 minutes)
+- **May 12–17**: Execute EXECUTE_CATEGORY_C_ADMIN_FACULTY_MAY_12-17.md (12 contacts, 20–30 minutes)
+- **May 28**: Participation notice deadline (nprm@dea.gov, Docket DEA-1362)
+- **June 29 – July 15**: DEA hearing and potential organized participation from 24 contacted organizations
+
+**Key Success Metrics**:
+1. All 7 Category A organizations receive briefing by May 8 ✓ (READY)
+2. Category B wave completes by May 12 ✓ (READY)
+3. Category C + Admin Law Faculty complete by May 17 ✓ (READY)
+4. Organizations file participation notices before May 28 (tracked post-send)
+5. Domain 42 becomes active policy document in June 29 hearing record
+
 
 ## 2026-05-07 Session 862 — Phase 1 Execution Readiness Sprint (3 Parallel Agents)
 
