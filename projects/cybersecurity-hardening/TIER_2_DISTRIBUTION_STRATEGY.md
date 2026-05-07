@@ -1,380 +1,372 @@
 ---
-title: "Tier 2 Distribution Strategy: DV Survivors, Labor Organizers, Election Workers, Journalists"
+title: "Tier 2 Distribution Strategy: Organizational Adoption, Transition Criteria, Sector Messaging, and Sequencing"
 project: cybersecurity-hardening
 created: 2026-05-07
+updated: 2026-05-07
 status: production-plan
-phase: Phase 2 (Week 7+ launch, contingent on Phase 1 adoption gate)
+phase: Phase 2 planning — ready to execute on Phase 1 gate passage
 author: research-agent
 depends-on:
-  - PHASE_2_SEQUENCING_STRATEGY.md
   - PHASE_2_SEQUENCING.md
+  - PHASE_2_ORGANIZATIONAL_LAUNCH_STRATEGY.md
   - TIER2_DISTRIBUTION_PREP.md
-  - dv-survivor-safety-playbook.md
-  - election-worker-opSec-supplement.md
-  - journalist-security-playbook.md
-  - activist-organizing-playbook.md
-  - threat-model.md
-  - opsec-playbook.md
+  - TIER2_MESSAGING_TEMPLATES.md
+  - tier-1-success-metrics.md
+  - TIER3_DISTRIBUTION_PREP.md
 ---
 
-# Tier 2 Distribution Strategy: Reaching DV Survivors, Labor Organizers, Election Workers, and Journalists
+# Tier 2 Distribution Strategy: Organizational Adoption, Transition Criteria, Sector Messaging, and Sequencing
 
-**Bottom line up front**: The existing Tier 1 and current Tier 2 distribution infrastructure (TIER2_DISTRIBUTION_PREP.md) reaches digital rights organizations, academic cybersecurity programs, security researchers, and journalist organizations — technically literate amplifiers who understand the government surveillance threat model the corpus is built around. This document addresses four distinct high-risk communities not yet mapped with concrete organizational contacts and outreach mechanics: domestic violence survivors and advocates, labor organizers and union members, election workers and poll monitors, and journalists and sources. These segments have different primary adversaries, different threat frames, and different distribution networks. The outreach strategy, content customization requirements, and success metrics for each are materially different from the existing Tier 2 pipeline and require their own execution plan.
+**Bottom line**: Phase 1 sends corpus materials to people who need them immediately. Phase 2 creates the institutional infrastructure that keeps this corpus in active use after the initial campaign ends. The difference between Phase 1 and Phase 2 is not audience sophistication — it is what the organization does with the corpus once it receives it. Tier 2 success is not measured by acknowledgment. It is measured by the corpus appearing in a syllabus, a union organizer training module, a law clinic intake protocol, or an AG office's digital security brief. This document tells you exactly how to get from a Tier 1 click to those outcomes.
 
-**Timing gate**: This strategy launches no earlier than Week 7 post-Phase-1 Day 1, contingent on the gate criteria in PHASE_2_SEQUENCING.md Section 2 (minimum: 1,000+ cumulative Gist views, at least 3 Tier 1 organizations at Stage 2+ engagement, and at least one explicit request for Tier 2 materials from an institutional contact).
+**Coordination note**: This document focuses on the four Tier 2 sector groups not fully mapped in existing materials — law schools and clinical programs, think tanks and policy organizations, union organizing departments, and NGO networks including state AGs. Sector analysis for digital rights organizations, academic cybersecurity programs, security researcher communities, and journalist organizations is covered in `TIER2_DISTRIBUTION_PREP.md` and `TIER2_MESSAGING_TEMPLATES.md`. DV survivor advocates, labor unions broadly, and election workers are covered in `TIER_2_DISTRIBUTION_STRATEGY.md` (DV/labor/election segments). This document extends and integrates those with the institutional and policy-facing sectors.
 
 ---
 
-## Section 1: Tier 2 Audience Mapping
+## Section 1: Organizational Adoption Strategy
 
-### Segment 1: Domestic Violence Survivors and Advocates
+### What "Organizational Adoption" Means and Why It Matters
 
-**Why this segment is a priority**
+Distribution is not adoption. An organization that receives the corpus link, reads it, and forwards it to three colleagues has generated distribution. An organization that adopts it has embedded the corpus into an operational workflow that will continue producing protective outcomes for its constituents after the email thread has closed.
 
-Domestic violence affects an estimated 10 million Americans annually — roughly one in four women and one in nine men experience severe intimate partner physical violence, sexual violence, or stalking by an intimate partner in their lifetime, according to the Centers for Disease Control. Surveillance is not a peripheral feature of abusive relationships: it is a primary control mechanism. Abusers use GPS tracking, stalkerware, shared family plan location data, connected vehicle telemetry, and smart home camera networks to monitor, control, and predict the movements of their partners. The NNEDV Safety Net Project's national survey data documents that 50% of victim service providers report that offenders use cellphone apps to stalk or monitor survivors.
+The practical distinction: a legal aid organization that adopts the corpus has a paralegal who walks every new immigration client through Part 0 data broker opt-outs as a standard intake step. A law school clinic that adopts it has a reading assignment in a fourth-semester course on digital civil rights. A union that adopts it has a shop steward who covers device hygiene in the same 20-minute slot as wage-theft reporting at every new-member orientation. In each case, the corpus has become infrastructure, not a document.
 
-The connection to this corpus is direct. The device hardening guidance in implementation-guide.md, the behavioral randomization in opsec-playbook.md, and the identity compartmentalization architecture in PHASE_2_SEQUENCING_STRATEGY.md Section 2.1 all address techniques that defeat surveillance — including intimate partner surveillance. The threat frame shifts, but the countermeasures are largely identical. GrapheneOS defeats stalkerware that requires OS-level access. Signal defeats interception of communications. Identity compartmentalization defeats the behavioral prediction that abusers rely on to locate survivors who have left.
+Adoption requires two things from the organization: (1) a designated person who owns the integration, and (2) a workflow or program context that the corpus slots into. Your outreach strategy for Tier 2 should always target both: find the person and name the program context.
 
-**Specific threats to this segment**
+### Making Adoption Compelling by Sector
 
-The adversary in DV contexts has capabilities and access vectors unavailable to the government surveillance stack: they may have purchased and set up the device before the relationship became abusive; they may be the account holder on a family cellular plan with built-in location sharing; they may have installed stalkerware (FlexiSPY, Hoverwatch, mSpy, CocoSpy) that runs invisibly and persists through factory reset if it has root access; they may have legal ownership of shared financial accounts, cloud storage, and streaming services with shared device credentials. None of these access vectors require technical sophistication. They are features of mainstream consumer technology weaponized in an abusive context.
+**What law schools want**: To produce scholarship and train lawyers who can litigate the cases that matter. The value proposition is not "here is a resource for your students" — it is "here is a primary-source-dense documentation of a surveillance system that raises Fourth Amendment, HIPAA, and state privacy law questions that are not yet resolved in the courts, and a clinic team that works on this will be ahead of the case law." The corpus's FOIA citation density makes it usable as a litigation research foundation in ways that advocacy reports are not. Spell this out explicitly. Law school faculty evaluating new material ask: can this survive citation scrutiny? Can a student use this in a brief? The answer here is yes, because every surveillance capability claim traces to a primary source, and the document structure is designed for citation.
 
-The DV-specific threat vectors not covered in the government surveillance model include: (1) shared Apple Family Sharing or Google Family Link with location access controlled by the abuser's account; (2) connected vehicle systems (OnStar, Hyundai Connected Services, Ford Pass) that report location to an account the abuser controls; (3) smart home devices (Ring cameras, Nest thermostats, smart locks) linked to accounts the abuser administers; (4) AirTag and Tile covert tracking devices that can be hidden in a survivor's belongings; (5) financial account monitoring through shared banking apps or linked cards. The dv-survivor-safety-playbook.md in this corpus addresses each of these in detail.
+**What think tanks want**: To publish analysis that shapes policy before legislation is drafted. The value proposition is that this corpus provides a technical foundation that think tank policy staff lack — most policy analysts at organizations like Brennan Center, Demos, or Center for American Progress are not technically equipped to read a Palantir ELITE procurement contract and extract its policy implications. The corpus has already done that translation. A think tank policy brief citing this corpus as a technical foundation can move from draft to publication substantially faster than a brief built on public reporting alone. The secondary value: primary-source-grounded technical analysis gives think tank work more credibility with legislative staff, who are increasingly skeptical of reports built on secondary journalism.
 
-**Key distinction: safety planning precedes every technical action**
+**What union organizing departments want**: Operational security tools that protect ongoing organizing drives. The value proposition is concrete and immediate: their adversaries (employers with surveillance software, private security firms, and in some cases law enforcement) are already using location data, social media monitoring, and keyword-scanning workplace surveillance against organizers. The corpus documents those exact capabilities and provides countermeasures. The ask is not "share this with members" — it is "add this to your organizer training curriculum alongside the NLRA rights overview, because the technical side of surveillance protection is as important as knowing your legal rights." Organizers who know what an employer can legally monitor and what countermeasures defeat that monitoring are materially harder to surveil than organizers who only know their NLRA rights.
 
-The critical operational difference that makes DV outreach materially different from every other segment in this distribution strategy: technical countermeasures that are safe and appropriate for a survivor who has already left an abusive situation can be catastrophically dangerous for a survivor who is still in the relationship or planning to leave. A stalkerware app that suddenly stops reporting can alert an abusive partner. A changed password on a shared account can trigger physical escalation. A Find My location that goes dark can provoke a dangerous response. Outreach materials for this segment must always foreground the safety planning framework first, and must direct survivors to the National Domestic Violence Hotline (1-800-799-7233, text START to 88788) and to local advocates before any technical steps.
+**What NGO networks (including AG networks) want**: Scalable resources they can send to member organizations or constituent agencies that are facing surveillance threats they lack the technical capacity to assess. State attorneys general offices have civil rights enforcement authority but typically no dedicated digital security infrastructure. A state AG who wants to investigate ICE surveillance practices needs the same technical documentation that a federal court needs — primary sources, not advocacy. NGO networks (ACLU affiliates, state legal aid networks, state immigrant rights coalitions) want a resource that their member organizations can use autonomously, without requiring ongoing technical support. Adoption at this level means the corpus is on the network's resource list, recommended in their training materials, and cited in their policy communications.
 
-**Organizations: 13 identified**
+### The Concrete Adoption Pathways by Sector
 
-| Organization | Role | Contact | URL |
+The table below maps what adoption looks like in operational practice — what you are trying to produce, not just achieve.
+
+| Sector | Minimum Adoption Artifact | Strong Adoption Artifact | How to Know It Happened |
 |---|---|---|---|
-| National Network to End Domestic Violence (NNEDV) | National coalition; operates Safety Net Project and TechSafety.org | info@nnedv.org | nnedv.org |
-| NNEDV Safety Net Project | Authoritative technology safety resource for DV context; Tech Summit 2026 | safetynet@nnedv.org | techsafety.org |
-| National Domestic Violence Hotline | 24/7 crisis support; 56-coalition distribution network | info@thehotline.org | thehotline.org |
-| Coalition Against Stalkerware | 40+ organization coalition linking tech security and DV advocacy | contact@stopstalkerware.org | stopstalkerware.org |
-| National Coalition Against Domestic Violence (NCADV) | National umbrella; connects to state coalitions | publicpolicy@ncadv.org | ncadv.org |
-| National Resource Center on Domestic Violence (NRCDV) | Technical assistance, training, research resource | nrcdv@nrcdv.org | nrcdv.org |
-| Operation Safe Escape | Coalition Against Stalkerware founding partner; tech safety for DV survivors | contact via safeescape.org | safeescape.org |
-| EndTAB (Ending Technology-Enabled Abuse) | Tech-facilitated DV training organization; Adam Dodge, CEO, is CAS Special Advisor | info@endtab.org | endtab.org |
-| Washington State Coalition Against Domestic Violence (WSCADV) | Model state coalition; strong tech safety program | info@wscadv.org | wscadv.org |
-| California Partnership to End Domestic Violence | Largest state coalition; serves large undocumented population relevant to corpus | info@cpedv.org | cpedv.org |
-| Texas Council on Family Violence (TCFV) | Texas is the primary state gap identified in phase-2-prioritization-criteria.md | info@tcfv.org | tcfv.org |
-| Domestic Violence Legal Empowerment and Appeals Project (DV LEAP) | Legal resource for DV survivors; intersection of legal process and tech evidence | info@dvleap.org | dvleap.org |
-| VAWnet (National Resource Center on DV) | OVW-funded national resource library; library and dissemination infrastructure | vawnet@nrcdv.org | vawnet.org |
-
-**Customization requirements for DV segment**
-
-The threat frame in this segment shifts from government surveillance to intimate partner surveillance. The Fourth Amendment rights analysis that anchors the corpus's legal framing does not apply in private relationships: an intimate partner accessing a shared account is legally permitted to do so. This means the legal protection layer in the corpus's threat model is absent, and the risk calculus is different. The countermeasures (device hardening, encrypted communications, identity compartmentalization) are identical, but the sequencing is dictated by safety planning rather than threat severity. The existing dv-survivor-safety-playbook.md in this corpus handles this framing correctly and should be the primary distribution artifact for this segment — not the main implementation guide, which is calibrated for government surveillance contexts.
+| Law school / clinic | Assigned reading in one course | Clinic case or student note citing corpus documentation | Faculty email confirming course integration, or published citation |
+| Think tank | Internal research reference | Published policy brief citing corpus as technical foundation | Public document with citation, or direct confirmation from analyst |
+| Union organizing dept | Organizer training module reference | Part 0 + device hygiene in standard new-organizer curriculum | Training coordinator confirms integration; or training slide deck shared with you |
+| State AG network | Resource library listing | AG brief or amicus citing surveillance documentation | Public filing, or liaison confirms citation |
+| ACLU / immigrant rights coalition | Member org referral | Coalition policy brief citing corpus; playbook in Spanish | Published citation, or coalition liaison confirms |
+| Legal aid network | Practitioner alert linking corpus | Corpus in intake protocol checklist | Network admin confirms; or intake form shared with you |
 
 ---
 
-### Segment 2: Labor Organizers and Union Members
+## Section 2: Tier 1 → Tier 2 Transition Criteria
 
-**Why this segment is a priority**
+### The Core Question
 
-Labor organizing is a documented target of employer and law enforcement surveillance. Amazon collects real-time data on its warehouse employees and uses proprietary risk-scoring to flag stores with elevated unionization probability — a system confirmed in internal documents and litigation. The National Labor Relations Board has ruled that unilateral installation of workplace surveillance cameras is an unfair labor practice, but the NLRB's enforcement capacity in 2026 is significantly diminished under the current administration. Workplace monitoring software — keyloggers, email scanning, productivity surveillance, AI conversation monitoring — is in active use at a majority of U.S. employers, with documented cases of audio systems alerting management when workers say the word "union." Workers organizing a union are exercising a protected federal right under the NLRA; the surveillance infrastructure designed to suppress that activity is precisely the type of behavioral profiling that this corpus's countermeasures address.
+The transition question is not "has the campaign worked well enough?" It is "do we have enough signal to know who to contact personally, and what to say to them, before the Tier 2 wave send?" Personal pre-contact of the highest-readiness Tier 1 organizations, with a tailored invitation to join the Tier 2 partnership tier, is what distinguishes Phase 2 from a second mass send.
 
-The IRS LCA platform adds a government dimension: the corpus documents the IRS LCA platform's confirmed shift toward investigating "left-leaning groups," which includes labor advocacy organizations with financial relationships that may attract IRS scrutiny. The AFL-CIO's 2026 Workers First Initiative on AI has explicitly identified AI-powered workplace surveillance as a core labor rights issue, creating an organizational alignment between this corpus's threat model and the AFL-CIO's current advocacy agenda.
+The transition criteria below are built from the three-factor readiness score in `PHASE_2_ORGANIZATIONAL_LAUNCH_STRATEGY.md` (engagement depth + integration signal + network multiplier), extended with specific signal types that are most diagnostic for the four sectors in this document.
 
-**Specific threats to this segment**
+### Minimum Gate (Required Before Any Tier 2 Launch)
 
-The primary adversary in labor organizing contexts is the employer. Specific documented threats include: (1) workplace monitoring software that scans email and internal messaging for union-related keywords; (2) AI conversation analysis tools that flag discussions among workers in breakrooms, bathrooms, and on production floors; (3) social media monitoring that identifies union sentiment and cross-references with employee rosters; (4) data broker sale of worker location data to private security firms retained by employers during organizing drives; (5) productivity surveillance tools that generate pretextual discipline records against workers identified as organizers; (6) cooperation between private security firms and local law enforcement, particularly during strikes and work stoppages.
+All three must be true to proceed with any Tier 2 outreach:
 
-The government surveillance dimension: USDA's April 2026 Palantir Foundry contract includes a $75 million workforce surveillance component for return-to-office compliance monitoring with real-time analytics — establishing the precedent that federal workforce surveillance is a Palantir product. This is directly relevant to federal employee union members. The IRS LCA platform's financial surveillance of organizations creates secondary risk for labor organizations with active IRS scrutiny.
+**Gate A — Volume**: At least 40 of the targeted 50–60 Tier 1 organizations have been contacted, with tracking spreadsheet rows complete for each. Sends before this gate closes the pipeline prematurely. This is about having a sample large enough to read signal from noise.
 
-**Organizations: 15 identified**
+**Gate B — Response signal**: At least one of the following:
+- 10%+ response rate from the full Tier 1 send (5+ replies from 50 sends)
+- 3 or more confirmed Bitly clicks (Score 3+ contacts) — corpus is being read
+- 1 Score 4–5 contact (integration signal or confirmed adoption) — highest-confidence indicator
 
-| Organization | Role | Contact | URL |
-|---|---|---|---|
-| AFL-CIO (national) | 12.5 million member national federation; Workers First AI initiative directly relevant | media@aflcio.org | aflcio.org |
-| AFL-CIO Organizing Institute | Training arm for union organizers; 2026 Institute hosted by Minnesota AFL-CIO | info@aflcio.org | aflcio.org/about/leadership-structure/departments-and-committees/organizing-institute |
-| Service Employees International Union (SEIU) | 2 million members; healthcare, janitors, security workers; active organizing drives | seiu@seiu.org | seiu.org |
-| United Farm Workers (UFW) | Agricultural workers; documented surveillance targeting during organizing; intersection with immigration threat model | info@ufw.org | ufw.org |
-| Industrial Workers of the World (IWW) | Member-run, horizontal structure; historically targeted by surveillance; active in gig economy organizing | general.secretary.treasurer@iww.org | iww.org |
-| National Domestic Workers Alliance (NDWA) | Domestic workers, house cleaners, nannies; intersection with immigration and surveillance; active 2026 campaigns | info@domesticworkers.org | domesticworkers.org |
-| United Auto Workers (UAW) | 400,000+ members; active organizing in new industries; legal disputes with management monitoring | uaw@uaw.org | uaw.org |
-| Communications Workers of America (CWA) | Tech and telecom workers; CWA Code is organizing tech workers specifically | cwaweb@cwa-union.org | cwa-union.org |
-| National Guestworkers Alliance | H-2A/H-2B guestworkers; intersection of labor organizing and immigration surveillance | contact via nwirp.org referral | nwirp.org |
-| Jobs With Justice | Labor-community coalition; coordinates between labor and civil rights organizations | jwj@jwj.org | jwj.org |
-| Strategic Organizing Center (SOC) | Union organizing coalition; data-driven analysis of labor threats | info@thesoc.org | thesoc.org |
-| National Employment Law Project (NELP) | Worker policy and legal advocacy; intersection of labor rights and surveillance law | nelp@nelp.org | nelp.org |
-| Georgetown Law Poverty Journal | Published analysis on labor organizing and AI surveillance (2026) | poverty-journal@law.georgetown.edu | law.georgetown.edu/poverty-journal |
-| Interfaith Worker Justice | Faith-community support for labor organizing; broad worker center network | info@iwj.org | iwj.org |
-| Centro de los Derechos del Migrante | Migrant worker rights; intersection of labor and immigration threat models | info@cdmigrante.org | cdmigrante.org |
+**Gate C — Technical infrastructure**: Gist is publicly accessible, no Gmail deliverability block, Bitly redirect confirmed active.
 
-**Customization requirements for labor segment**
+If all three gates pass, proceed to the engagement signal classification below to identify who gets personal pre-contact.
 
-The threat frame shifts from immigration enforcement to workplace surveillance. The corpus's government surveillance countermeasures apply indirectly — the behavioral profiling and metadata minimization guidance in opsec-playbook.md defeats employer surveillance of organizing activity at the communications layer, even though the adversary is an employer rather than ICE. Key customization requirements: (1) the corpus must be framed around BYOD policies and the specific risk of using work devices for organizing communications — the implementation guide's device compartmentalization section is the most relevant; (2) collective action security protocols require group-level opsec, not just individual hardening — Signal groups with verified membership for organizing coordination, with explicit guidance that management can legally monitor work-issued devices but cannot monitor personal devices in most circumstances; (3) the NLRA legal framework for protected organizing activity should be noted — workers have legal rights that do not exist in the immigration context, and understanding what is legally protected shapes the risk calculus; (4) the activist-organizing-playbook.md already addresses protest and direct action security, but labor organizers need supplemental guidance on workplace-specific digital hygiene (personal phone for organizing communications, not work phone; separate work email from organizing email; do not discuss organizing on employer's network).
+### Specific Engagement Signals That Trigger Personal Pre-Contact
 
----
+Not all Tier 1 responses are equal for transition purposes. The signals below tell you whether to move an organization to personal pre-contact (before the Tier 2 wave), include them in the standard Tier 2 wave, or wait.
 
-### Segment 3: Election Workers and Poll Monitors
+**Move to personal pre-contact (contact individually, before the wave)**:
 
-**Why this segment is a priority**
+- Organization asked a question about a specific threat scenario or countermeasure — this is not polite acknowledgment. Someone read past the cover email and is working with the material. Follow up with the relevant playbook and an offer of a staff orientation session.
+- Organization forwarded corpus to an internal team or named colleague — Score 4 signal. The corpus is being evaluated for institutional use. The pre-contact message references the referral: "You mentioned you forwarded the corpus to your [team] — based on that, I'd like to offer a customized briefing and the immigration surveillance evasion playbook."
+- Organization described a specific use case for their clients or members — any language like "our clients face exactly this," "we're going to try Part 0 with incoming cases," or "our members would benefit from this" is a use-case signal. Confirm the use case, offer the matching playbook, propose a session.
+- An attorney, professor, or researcher (not a communications generalist) replied and engaged substantively with the threat model — a named technical expert engaging with the substance is worth more than 10 "received, thank you" replies.
+- Organization expressed interest in adapting or translating content — automatic pre-contact. Any organization ready to invest translation effort is a high-value adoption partner.
 
-Election workers face documented, escalating threats. A Brennan Center survey of local election officials found that nearly one in four officials is concerned about being assaulted at home or at work, 52% reported concern about the safety of their colleagues and staff, and more than half worried that threats, harassment, and intimidation would make it more difficult to retain or recruit election workers in the future. Doxxing — the public posting of election officials' personal addresses, phone numbers, and family information — is a documented and recurring tactic that has driven experienced officials out of their positions in multiple states. Swatting of election officials' homes has been documented.
+**Include in standard Tier 2 wave (not personal pre-contact)**:
 
-The federal support gap created by CISA is significant for this segment. CISA lost approximately 130 workers in February 2026, including the election security advisers who had built institutional relationships with state and local election offices over several election cycles. The FY2027 budget proposal eliminates the election security program entirely. A Senate Intelligence Committee warning (May 2026) confirms that state and local officials have reported that CISA is no longer providing election security training, intelligence sharing, or cybersecurity assistance at the levels offered in prior cycles. 61% of local election officials are specifically concerned about the impact of CISA cuts. This gap creates both a need and an opportunity: the corpus's communications security and identity compartmentalization guidance directly addresses the harassment and doxxing threat that election workers face, and there is no longer a competing federal resource providing this guidance.
+- "Received, will share with our team" without a named follow-up contact
+- Bitly click with no reply — confirmed reading but no engagement signal yet
+- Positive reply that is social ("great work") without an action or question
 
-**Specific threats to this segment**
+**Hold for later or exclude from Tier 2 personal track**:
 
-The primary adversary in election worker contexts is organized political harassment, not government surveillance. Specific documented threats include: (1) doxxing campaigns that harvest personal information from public voter records, property records, and social media to post election workers' home addresses and family information; (2) coordinated harassment via phone, email, and social media from organized partisan networks; (3) false information campaigns that attribute fraud to specific election workers, generating secondary threats; (4) physical surveillance of polling locations and vote-counting facilities by hostile observers; (5) insider exploitation — the risk that motivated hostile actors may attempt to become election workers or observers specifically to disrupt or document procedures; (6) social engineering targeting election officials' personal accounts to access official systems through credential theft.
+- Academic program with no reply within 20 days — academic latency, not disinterest. Mark "Hold — academic" and reassess at 30 days.
+- OOO reply with return date — calendar reminder for 2 days after return.
+- Organizations with funding cuts or announced layoffs — mark "Pause — organizational disruption."
+- Any "stop contacting us" — mark "Declined — closed" and remove from all future outreach.
 
-Poll monitors conducting election integrity observation have a distinct threat profile: they are often volunteers with minimal training, operating in contested political environments, and may be recording potentially controversial events. Their digital security posture must support both personal protection and evidentiary chain-of-custody for observations they document.
+### Reading the Transition Signals for Each Target Sector
 
-**Organizations: 11 identified**
+**Law school / clinical programs**: The highest-value Tier 1 engagement signal for this sector is a reply from someone with a J.D. or faculty title that references a specific legal question raised by the corpus — HIPAA pre-enforcement obligations, Fourth Amendment third-party doctrine, state wiretapping law, FOIA litigation. This signals the corpus is being evaluated as a legal research resource, not just a policy document. A reply like "this is relevant to a case we're working on" is automatic pre-contact.
 
-| Organization | Role | Contact | URL |
-|---|---|---|---|
-| U.S. Election Assistance Commission (EAC) | Federal resource for election workers; Election Official Security page; Poll Worker Best Practices | eac@eac.gov | eac.gov/election-officials/election-official-security |
-| National Association of State Election Directors (NASED) | State-level election director professional network; annual conference | info@nased.org | nased.org |
-| National Association of Election Officials (Election Center) | Professional association for election officials | electioncenter@electioncenter.org | electioncenter.org |
-| Brennan Center for Justice | Research on election worker threats; How Federal Government Is Undermining Election Security (2026) | press@brennancenter.org | brennancenter.org |
-| Common Cause | Election Protection program; poll monitor coordination; 866-OUR-VOTE hotline | common.cause@commoncause.org | commoncause.org/issues/election-protection |
-| League of Women Voters | Poll observer coordination; voter protection programs; 56-state network | lwv@lwv.org | lwv.org |
-| Election Protection (866-OUR-VOTE Coalition) | Nonpartisan poll monitoring network; coordinates monitor training and dispatch | info@protectthevote.net | protectthevote.net |
-| Issue One | Bipartisan election integrity; published Protecting America's Election Workers | info@issueone.org | issueone.org |
-| Verified Voting | Election technology security; source of technical expertise for election official outreach | info@verifiedvoting.org | verifiedvoting.org |
-| Center for Election Innovation & Research (CEIR) | Election official support programs post-CISA drawdown | info@electioninnovation.org | electioninnovation.org |
-| Votebeat | Election-focused journalism outlet; covers election worker threats and CISA drawdown in depth | contact via votebeat.org | votebeat.org |
+**Think tanks and policy organizations**: The highest-value signal is a reply that asks for additional documentation on a specific claim — the Palantir contract figures, the FISA 702 reauthorization timeline, the IRS LCA platform's cross-agency data access. A policy researcher asking for primary sources is preparing to cite the corpus. Send the primary source documentation directly and offer a follow-up call.
 
-**Customization requirements for election worker segment**
+**Union organizing departments**: The highest-value signal is a reply from an organizing director, education coordinator, or communications security working group member (not a press or external affairs contact). If the reply is from someone whose job description includes organizer training or internal communications, the corpus has reached the right person. Offer the activist-organizing-playbook immediately and propose a training session.
 
-The threat frame for this segment is political harassment and insider exploitation, not government surveillance. Election workers cannot use identity concealment — their names are often public record as part of the election administration process. The countermeasures focus on separating personal identity from professional election identity, hardening personal accounts against credential theft and harassment, and establishing secure team communications for poll monitor networks. Key customization points: (1) the identity compartmentalization guidance in PHASE_2_SEQUENCING_STRATEGY.md applies, but with the constraint that election workers cannot use pseudonyms professionally — the goal is separation, not concealment; (2) Signal groups for poll monitor coordination networks address the team communications need; (3) the EAC's existing Google PII removal resource should be noted alongside the corpus's data broker opt-out guidance — both address the doxxing threat through different mechanisms; (4) election worker security must be compatible with election IT infrastructure, which is typically government-managed and not under the worker's control — the corpus's guidance on personal device hardening applies but must be explicit that election systems themselves are out of scope. The election-worker-opSec-supplement.md in this corpus provides the correct framing for this audience and is the primary distribution artifact.
+**State AGs and NGO legal networks**: The highest-value signal is any reply from a civil rights bureau, immigrant rights unit, or technology enforcement division. These replies are rare but they cascade — an AG office that engages can refer the corpus to the state's entire legal aid and immigrant rights infrastructure in a single email. Treat these as Category A and respond within 4 hours.
 
 ---
 
-### Segment 4: Journalists and Source Protection
+## Section 3: Tier 2 Messaging Strategy by Sector
 
-**Why this segment is a priority**
+### The Governing Principle
 
-The existing TIER2_DISTRIBUTION_PREP.md targets journalist organizations — IRE, CPJ, SPJ, Freedom of the Press Foundation — as part of the original Tier 2 pipeline. This section maps that coverage and identifies what is distinct about journalist-specific distribution compared to the other new segments in this strategy. Journalists are not a gap in the existing Tier 2 pipeline; they are a segment where existing work should be extended with more granular organizational contact and outreach mechanics.
+The templates in `TIER2_DISTRIBUTION_PREP.md` and `TIER2_MESSAGING_TEMPLATES.md` are built for digital rights organizations, academic cybersecurity programs, security researchers, and journalist organizations. They work for those sectors. The four sectors in this document need materially different framing because their institutional cultures, primary concerns, and internal routing logic are different.
 
-The 2026 press freedom environment is materially deteriorating. The U.S. Press Freedom Tracker documented long and severe press freedom aggressions in January 2026 alone. The threats are specific and documented: CBP device search authority at all international border crossings without warrant (CBP Directive 3340-049B revised January 2026); PRISM (Section 702 FISA) compelled access to journalist communications with foreign sources; NSL compelled metadata disclosure from carriers without judicial authorization; Babel Street persistent monitoring of journalist public social media. These are operational capabilities, not emerging risks.
+The single most important thing to understand about Tier 2 messaging for institutional audiences: they route incoming requests by function, not by subject. An email to a law school that leads with "surveillance" goes to communications. An email that leads with "Fourth Amendment litigation" goes to faculty or clinic directors. An email to a union that leads with "cybersecurity" goes to IT. An email that leads with "organizer training" goes to the organizing department. Write to the function, not the topic.
 
-The source protection dimension distinguishes journalists from every other segment: the adversary's goal is not just to surveil the journalist but to identify and prosecute the journalist's confidential sources. This requires a security posture calibrated to the source-protection problem, which is addressed in detail in journalist-security-playbook.md but not in the main corpus.
+### Law Schools and Clinic Programs
 
-**Organizations: 10 identified**
+**What they respond to**: Concrete legal questions the corpus raises that are not yet settled in case law. The ELITE threat model's use of commercially-purchased location data purchased without warrant is precisely the kind of factual predicate that a digital civil rights clinic case is built on. Courts are currently unsettled on whether the third-party doctrine extends to smartphone-derived location data purchased through data brokers. A clinic director who recognizes this sees a live research question with a primary-source factual record.
 
-| Organization | Role | Contact | URL |
-|---|---|---|---|
-| Freedom of the Press Foundation (FPF) | SecureDrop operator; 2026 Digital Security Checklist; Digital Security Training team available | info@freedom.press | freedom.press |
-| Investigative Reporters and Editors (IRE) | 6,000 member investigative journalism association; NICAR conference digital security training | info@ire.org | ire.org |
-| Reporters Committee for Freedom of the Press (RCFP) | Legal defense and source protection; Legal Hotline 800-336-4243 | hotline@rcfp.org | rcfp.org |
-| Committee to Protect Journalists (CPJ) | International journalist safety; digital security resources for journalists in hostile environments | info@cpj.org | cpj.org |
-| Society of Professional Journalists (SPJ) | Training, ethics, Journalists Toolbox resource library | spj@spj.org | spj.org |
-| PEN America | Press freedom advocacy; targets journalist harassment | pen@pen.org | pen.org |
-| National Association of Hispanic Journalists (NAHJ) | Latina/o journalist community; intersection of immigration coverage and surveillance threat | nahj@nahj.org | nahj.org |
-| Asian American Journalists Association (AAJA) | AAPI journalist community; communities disproportionately surveilled | national@aaja.org | aaja.org |
-| Online News Association (ONA) | Digital news organizations; security training and technology resources | hello@journalists.org | journalists.org |
-| The Intercept | Investigative outlet running First Look Media's SecureDrop; published primary-source coverage of ELITE, Mobile Fortify, drone surveillance | tips via theintercept.com/source-protection | theintercept.com |
+**Lead with**: The legal question, not the technical system. "ICE is using commercially-purchased location data to generate deportation target scores through Palantir's ELITE platform. Every step of this pipeline — the smartphone SDK location sale, the data broker aggregation, the Medicaid record integration — presents Fourth Amendment, HIPAA, and state privacy law questions not yet resolved in the federal circuits. The documentation below is primary-source-citable."
 
-**Customization requirements for journalist segment**
+**Avoid**: Generic "educational resource" framing. Law faculty are not looking for educational resources. They are looking for clinical cases and research topics. Frame the corpus as the factual predicate for legal work they could do, not as material for them to assign.
 
-This segment is primarily served by journalist-security-playbook.md and the existing TIER2_DISTRIBUTION_PREP.md templates. What the existing Tier 2 materials lack: (1) the SecureDrop integration angle — the corpus recommends SecureDrop for source communications, and FPF, the SecureDrop operator, is a natural distribution partner not just an outreach target; (2) the border crossing device protocol in journalist-security-playbook.md is the most distinctive journalist-specific content not available elsewhere; (3) the PRISM and Signal safety number verification guidance is the highest-impact journalist-specific security improvement, but it requires Signal protocol knowledge that general cybersecurity guides do not address.
+**The ask for law schools**: Two asks, one primary and one secondary. Primary: "Would your clinic consider this surveillance documentation as a factual foundation for a Fourth Amendment or state privacy law project?" Secondary: "The threat model section is structured for citation — if this raises a research question relevant to your faculty or student scholarship, I'm happy to discuss the primary source structure in more detail."
 
----
+**The ask for law reviews and student publications**: "The ELITE system presents unsettled questions in Fourth Amendment law, federal privacy statute application, and data broker regulatory gap analysis. If your journal is looking for student note topics or comment subject matter, this documentation provides a primary-source factual record for any of these areas."
 
-## Section 2: Contact Strategy and Outreach Mechanics
+**Subject line variants for law schools**:
+- `Fourth Amendment gap: commercial location data in deportation targeting — documented (FOIA-sourced)`
+- `Digital civil rights clinic resource: ELITE/Palantir primary source documentation`
+- `Unsettled law: data broker location sales and immigration enforcement — primary sources attached`
 
-### Wave 1: Weeks 8–9 (Top-Tier Organizations, Each Segment)
+**Sector-specific threat model emphasis for law schools**: Lead with the legal architecture gap. The Carpenter v. United States ruling (2018) extended Fourth Amendment protection to cell-site location data. Courts have not yet ruled on whether that protection extends to location data purchased from commercial brokers who aggregated app-derived GPS data. ELITE's data pipeline sits precisely in this gap. Emphasize: this is not merely a policy argument — it is a live litigation question with a specific ongoing factual record.
 
-**Priority and logic**: Wave 1 targets the organizations with the widest reach, the strongest distribution networks, and the most direct alignment with the corpus's threat model. A positive response from NNEDV's Safety Net Project, the AFL-CIO, the EAC, or the Freedom of the Press Foundation creates downstream credibility for Wave 2 contacts in the same segment. Wave 1 contacts are institutional and will route internally to the right team — do not target named individuals in Wave 1 for organizations in unfamiliar segments.
+### Think Tanks and Policy Organizations
 
-**Segment 1 (DV) — Wave 1 contacts**:
+**What they respond to**: Primary-source density and policy relevance. Think tank policy analysts are asked to produce publication-ready analysis quickly, often without access to the technical documentation that would make that analysis credible. The corpus does the primary-source documentation work they would otherwise have to do independently. Frame it as time-saving, not as "here is something important."
 
-- **NNEDV Safety Net Project** — safetynet@nnedv.org. Message frame: the corpus's dv-survivor-safety-playbook.md was built on NNEDV's own safety planning framework and the Safety Net Project's stalkerware documentation. This is not an outside organization offering an opinion — it is content that explicitly credits and extends NNEDV's existing work. The ask: review the playbook for accuracy against Safety Net's current guidance, and if it meets their standard, consider linking from TechSafety.org resources. The NNEDV Safety Net Tech Summit 2026 is a natural integration point for training use.
-  
-- **Coalition Against Stalkerware** — contact@stopstalkerware.org. Message frame: 40+ organization coalition that already includes NNEDV as a founding partner and EFF (also in the corpus's Tier 2 pipeline). The corpus's device hardening guidance directly addresses stalkerware's OS-level access vectors. The ask: review for accuracy; consider listing techsafety guidance as a resource for survivors.
+**Lead with**: The policy gap the corpus fills. "Federal agencies are purchasing commercial data broker location data — app-derived GPS data aggregated without warrants — and using it to build enforcement target lists through Palantir-powered scoring systems. The regulatory and legislative framework governing these commercial data purchases has not been updated to reflect this capability. The documentation below maps the full data pipeline, with primary sources, and is structured for citation in policy and legislative analysis."
 
-**Segment 2 (Labor) — Wave 1 contacts**:
+**Organizations to prioritize in this sector**:
+- Brennan Center for Justice — documented the CISA drawdown, published on election security; surveillance-regulation gap is a direct extension of their existing work
+- Center for American Progress — active on immigration enforcement policy; the ELITE documentation maps directly onto their enforcement coverage
+- Demos — surveillance and economic justice intersection; their audience overlaps with the Tier 1 legal aid recipients
+- Georgetown Center on Privacy and Technology — published American Dragnet, which is the closest existing institutional analog to the corpus's surveillance documentation work; the corpus extends their documentation with countermeasures
+- Electronic Privacy Information Center (EPIC) — FOIA litigation specialists; they can use the FOIA-obtained contracts as starting points for their own document requests
 
-- **AFL-CIO** — media@aflcio.org. Message frame: the AFL-CIO's Workers First AI initiative explicitly identifies AI-powered workplace surveillance as a core labor rights issue. The corpus provides the technical countermeasures that correspond to the rights framework the AFL-CIO is already articulating. The ask: share with the AFL-CIO Organizing Institute for consideration in organizer training curricula. Specific hook: the AFL-CIO's Labor and Immigration Policy Fellows (inaugural class congratulated April 2026) represent an audience for whom the intersection of labor organizing and immigration surveillance threat models is directly relevant.
+**The ask for think tanks**: "If your team is working on any of the following — data broker regulation, commercial surveillance in enforcement, FISA 702 reform, federal privacy legislation — this documentation is structured to be incorporated directly as a technical foundation in your analysis. I'm not asking for endorsement; I'm offering documented primary-source material that may accelerate your work."
 
-- **Communications Workers of America (CWA)** — cwaweb@cwa-union.org. Message frame: CWA represents tech and telecom workers who are both subject to employer surveillance and may work for companies that build or deploy surveillance tools. CWA Code, the CWA's tech worker organizing initiative, is directly relevant. The ask: distribute to CWA organizing department for inclusion in organizer training.
+**Subject line variants for think tanks**:
+- `Commercial surveillance and enforcement: FOIA-documented data pipeline for your policy team`
+- `Palantir ELITE: primary sources for data broker regulation analysis`
+- `State privacy enforcement gap: documented use case + policy implications`
 
-**Segment 3 (Election) — Wave 1 contacts**:
+**Sector-specific threat model emphasis for think tanks**: Lead with the regulatory gap angle, not the civil liberties angle. Think tanks that produce policy analysis for legislative audiences need to frame problems in terms of what current law does and does not require. The gap is this: federal law does not currently prohibit federal agencies from purchasing commercially-aggregated location data and using it to build enforcement target lists, even when the underlying data collection would have required a warrant if the government had collected it directly. This loophole is the policy problem. The corpus documents the specific operational instance of that loophole. The policy response (data broker prohibition, commercial surveillance reform, FISA reform) is the analysis the think tank produces.
 
-- **U.S. Election Assistance Commission (EAC)** — eac@eac.gov. Message frame: the corpus's identity compartmentalization and data broker opt-out guidance directly addresses the doxxing threat that the EAC's own Election Official Security page identifies as a primary concern. The EAC already points election workers to Google's PII removal resource; the corpus's Part 0 data broker opt-out guidance is a comprehensive supplement. The ask: consider linking the dv-survivor-safety-playbook's identity compartmentalization section (which addresses the same doxxing threat as the DV context) from the EAC Election Official Security page.
+### Union Organizing Departments
 
-- **Brennan Center for Justice** — press@brennancenter.org. Message frame: the Brennan Center's 2026 report How the Federal Government Is Undermining Election Security documents the CISA gap that this corpus partially fills. The Brennan Center's own research on election worker threats provides the evidentiary foundation for the corpus's election worker targeting. The ask: consider citing the corpus in Brennan Center resources for election officials post-CISA drawdown.
+**What they respond to**: Operational protection tools, not surveillance lectures. Union organizing departments are practical. They want to know: what are their adversaries doing, and what can they tell their organizers to do differently. Do not lead with the surveillance architecture. Lead with the specific countermeasures and why they matter during an active drive.
 
-**Segment 4 (Journalists) — Wave 1 contacts** (supplementing existing TIER2_DISTRIBUTION_PREP.md):
+**Lead with**: The organizing security problem, not the broader surveillance thesis. "Employers are using AI-powered keyword surveillance of internal communications, GPS-tracked company vehicles and devices, and social media monitoring to identify and pre-empt organizing activity before it surfaces. The documentation and countermeasures below are written specifically for the organizer training context — device compartmentalization, Signal group security protocols for organizing committees, and the BYOD boundary that determines what your employer can and cannot legally monitor."
 
-- **Freedom of the Press Foundation** — info@freedom.press. This contact is already in TIER2_DISTRIBUTION_PREP.md. The supplemental framing here: FPF's 2025–2026 Strategic Plan includes a Digital Security Training program that is the precise distribution channel for the journalist-security-playbook.md. The ask is not just awareness but active integration into FPF's Digital Security Training curriculum.
+**Critical framing distinction**: This corpus is relevant to labor organizing because the same commercial data infrastructure that targets undocumented immigrants is available to private employers through data broker services. That connection does not need to be made in the outreach email — it is true but complex. For union organizing departments, lead with the employer surveillance angle; the broader government surveillance documentation is credibility evidence, not the primary pitch.
 
-- **Reporters Committee for Freedom of the Press (RCFP)** — hotline@rcfp.org. The RCFP's Legal Hotline is a natural distribution point because it serves journalists facing legal encounters — the same moment when source protection and device seizure countermeasures in the corpus are most immediately relevant.
+**Organizations to prioritize**:
+- AFL-CIO Organizing Institute — the training arm for union organizers; curriculum integration here cascades to thousands of organizers annually
+- Communications Workers of America (CWA) — represents tech and telecom workers who understand the tools being used against them; CWA Code (tech worker organizing initiative) is the right internal target
+- SEIU Organizing Department — 2 million members; active drives in healthcare and service sectors; documented employer surveillance of organizing activity
+- United Farm Workers (UFW) — agricultural workers face GPS vehicle tracking, remote equipment monitoring, and immigration enforcement threat that directly intersects with the corpus
+- United Auto Workers (UAW) Research Department — active in new-industry organizing; UAW Research Dept evaluates worker surveillance policy
 
-### Wave 2: Weeks 10–12 (Secondary Organizations, Social Proof Framing)
+**The ask for union organizing departments**: "The activist-organizing-playbook in this corpus covers device hygiene, Signal group security for organizing committees, and the BYOD distinction that determines what employers can legally monitor. Would it be useful to schedule a 60–90 minute session with your organizing team to walk through the countermeasures in a labor organizing context?" This ask is concrete and time-bounded, which is what overworked organizing departments respond to.
 
-Wave 2 uses a different message frame than Wave 1. By Weeks 10–12, at least one Wave 1 response should exist in each segment (even a soft acknowledgment). Wave 2 opens with social proof: "Organizations like [Wave 1 organization] in [space] have reviewed this resource." This framing is authentic — it does not overstate the relationship — but it anchors the outreach in existing credibility.
+**Subject line variants for unions**:
+- `Organizer digital security: what employer surveillance can actually see + countermeasures`
+- `Protecting organizing communications: Signal, BYOD, and workplace surveillance — briefing offer`
+- `Labor surveillance countermeasures: documented threats + training resource`
 
-**Segment 1 (DV) — Wave 2 contacts**: National Domestic Violence Hotline (info@thehotline.org), National Coalition Against Domestic Violence (publicpolicy@ncadv.org), NRCDV (nrcdv@nrcdv.org), EndTAB (info@endtab.org), Washington State Coalition Against Domestic Violence (wscadv.org).
+**Sector-specific threat model emphasis for union organizing**: The NLRA distinction is the central framing device. Workers have a federally protected right to organize. Employers cannot legally discipline workers for organizing activity. But employers can legally monitor work-issued devices, work-provided networks, and workplace communications systems. The security posture for an organizer is therefore specific: use personal devices and personal networks for all organizing communications; use Signal with a separate number; do not discuss organizing on employer email, Slack, or Teams even in private channels; treat any workplace AI monitoring system as potentially logging everything. The corpus countermeasures are calibrated to this legal boundary, not to a generic privacy threat.
 
-**Per-organization threat briefing approach**: For state DV coalitions in Wave 2, create a one-paragraph briefing specific to that state's documented technology abuse landscape. Example for California: the corpus's DROP platform guidance (California DELETE Act) is directly applicable to DV survivors in California who lack government-issued ID. Example for Texas: Texas has no equivalent to the California DROP platform, making the corpus's individual data broker opt-out guidance and the identity compartmentalization countermeasures more critical for Texas survivors.
+### State Attorneys General and NGO Legal Networks
 
-**Segment 2 (Labor) — Wave 2 contacts**: SEIU (seiu@seiu.org), UFW (info@ufw.org), NDWA (info@domesticworkers.org), National Employment Law Project (nelp@nelp.org), Jobs With Justice (jwj@jwj.org).
+**What they respond to**: Primary-source documentation that supports civil rights enforcement action. State AGs have civil rights enforcement authority under state consumer protection, privacy, and civil rights statutes. Several state AGs have investigated data brokers (California, Connecticut, Colorado under their state privacy laws). The ELITE system's use of commercially-purchased data from brokers who may have violated state privacy statutes or consumer protection laws is a potential state enforcement case. The corpus's primary-source documentation of the data pipeline is directly usable as an investigative roadmap.
 
-**Per-organization threat briefing approach**: Farm worker unions (UFW) face employer surveillance in agricultural settings that includes remote monitoring of equipment operators and GPS tracking of farm vehicles. The corpus's behavioral randomization and device compartmentalization guidance applies — with the framing that organizing communications should never occur on employer-provided equipment or networks.
+**Lead with**: The state law enforcement angle, not the federal constitutional argument. "State attorneys general with privacy enforcement authority have not yet investigated the data broker practices that feed federal immigration enforcement systems like Palantir ELITE. The documentation below maps the data pipeline with FOIA-sourced primary sources: which brokers sold to which federal systems, under what contracts, with what data types. If your office is considering state enforcement action related to data broker practices or commercial surveillance, this documentation may accelerate the investigative timeline."
 
-**Segment 3 (Election) — Wave 2 contacts**: Common Cause (common.cause@commoncause.org), League of Women Voters (lwv@lwv.org), Issue One (info@issueone.org), Verified Voting (info@verifiedvoting.org).
+**Organizations to prioritize**:
+- National Association of Attorneys General (NAAG) — the institutional network that distributes resources to all state AGs
+- State-level ACLU affiliates — many run civil rights enforcement programs and serve as de facto AG liaisons on digital rights issues
+- National Immigration Law Center (NILC) — national policy and litigation organization; NILC's legal team needs primary-source documentation for federal and state litigation
+- ACLU Immigrants' Rights Project — federal litigation program; their attorneys actively litigate FOIA cases and would benefit from the procurement documentation
+- National Center for Law and Economic Justice — intersects labor rights and economic justice with digital rights; good network multiplier for NGO legal networks
+- State immigrant rights coalitions — legal leads at these coalitions route information to the legal aid organizations that do the direct-service work
 
-**Per-organization threat briefing**: Common Cause's Election Protection program coordinates thousands of poll monitors across multiple states. Poll monitors need team-level Signal group security guidance, not just individual device hardening. The election-worker-opSec-supplement.md provides the team communications protocol; the outreach to Common Cause should frame the supplement as ready-made training material for their monitor coordinator network.
+**The ask for state AGs**: Two separate asks. For civil rights units: "This documentation maps the commercial data pipeline feeding immigration enforcement. If your office has statutory authority over data broker practices under your state's privacy law, the contracts and system documentation are organized to support a regulatory inquiry." For policy units: "If your office is preparing testimony or comments on federal data broker regulation, this technical documentation provides primary-source evidence for the commercial surveillance gap your comments would address."
 
-**Segment 4 (Journalists) — Wave 2 contacts**: IRE (info@ire.org), CPJ (info@cpj.org), SPJ (spj@spj.org), NAHJ (nahj@nahj.org), AAJA (national@aaja.org).
+**The ask for NGO legal networks**: "This corpus is designed for distribution to legal aid organizations. The implementation guide walks a non-technical advocate through the data broker opt-out process step by step. If your network sends resources to member organizations, I'm offering this as a ready-to-distribute resource alongside a one-page summary formatted for practitioner use."
 
-### Wave 3: Weeks 13 and Beyond (Grassroots Integration)
+**Subject line variants for AGs/NGO legal networks**:
+- `Data broker enforcement: FOIA-documented commercial surveillance pipeline for state AG review`
+- `State privacy enforcement opportunity: Palantir ELITE data purchases — primary sources`
+- `Immigration legal aid resource: ELITE surveillance documentation + countermeasures for network distribution`
 
-Wave 3 targets practitioners directly rather than organizational leadership. This is the highest-reach, lowest-overhead wave — but it requires Wave 1 and Wave 2 institutional credibility to succeed because practitioners receive less organizational context for unsolicited outreach.
-
-**Segment 1 (DV) — Wave 3**: DV advocate counselors at local shelters; survivor peer support group coordinators; VAWA-funded legal advocates. Format: one-page survivor guide (from dv-survivor-safety-playbook.md) sized for print handout or digital share in a shelter setting; QR code linking to full corpus. Distribution mechanism: ask Wave 2 state coalition contacts to share with local member organizations.
-
-**Segment 2 (Labor) — Wave 3**: Union local stewards and shop stewards; rank-and-file organizer networks; labor study groups at community colleges. Format: one-page organizing security guide emphasizing the BYOD policy distinction (your phone for organizing, not your work phone) and Signal group security. Distribution mechanism: AFL-CIO Organizing Institute graduates who have received Wave 1/2 corpus exposure are the ideal grassroots distribution network.
-
-**Segment 3 (Election) — Wave 3**: Poll worker trainers and coordinators; local election clerk offices; poll monitor volunteer coordinators. Format: election-worker-opSec-supplement.md adapted as a slide deck for pre-election training sessions. Distribution mechanism: EAC and state election director associations as relay; the supplement is already structured as a briefing document.
-
-**Segment 4 (Journalists) — Wave 3**: Journalism school faculty and student journalists; local news organizations without dedicated security infrastructure; freelance journalist associations. Format: journalist-security-playbook.md adapted as a 2-page checklist for journalists without the bandwidth to read the full document.
-
----
-
-## Section 3: Content Customization Roadmap
-
-### What Exists in the Phase 1 Corpus
-
-The Phase 1 corpus (threat-model.md, opsec-playbook.md, implementation-guide.md) provides a complete foundation that is directly applicable to all four Tier 2 segments with reframing. The countermeasures are not segment-specific — GrapheneOS, Signal, Tor, data broker opt-outs, and behavioral randomization defeat surveillance regardless of whether the adversary is ICE, an abusive partner, an employer's HR department, or a hostile political actor. What is segment-specific is the threat frame, the risk calculus, and the sequencing of actions.
-
-**Existing Phase 2 scenario playbooks** (already completed) that serve as primary distribution artifacts for this strategy:
-
-- dv-survivor-safety-playbook.md — DV segment primary artifact; addresses safety planning sequence, stalkerware landscape, shared account separation, smart home and connected vehicle threats
-- activist-organizing-playbook.md — Labor segment partial coverage; addresses protest security, ALPR evasion, drone countermeasures; needs supplemental labor-specific content on BYOD and NLRA context
-- election-worker-opSec-supplement.md — Election segment primary artifact; addresses identity compartmentalization for election workers, team communications security, doxxing countermeasures
-- journalist-security-playbook.md — Journalist segment primary artifact; addresses CBP border crossing protocol, source compartmentalization, SecureDrop, PRISM/Signal safety number verification
-
-### Gaps to Fill: New Content Required
-
-**DV segment gaps**:
-The existing dv-survivor-safety-playbook.md is substantially complete. Three gaps remain: (1) a one-page survivor guide formatted for physical handout in shelter settings, with QR code and hotline number prominently placed; (2) a 20-minute training module for DV advocate counselors explaining the technology landscape without requiring technical expertise; (3) a specific supplement on AirTag/Tile covert tracking countermeasures, which is not in the current dv-survivor-safety-playbook.md and which represents the fastest-growing tracking vector in DV contexts (Apple's Precision Finding for AirTags is documented as the countermeasure, but the playbook does not currently walk through the detection workflow).
-
-**Labor segment gaps**:
-The activist-organizing-playbook.md addresses protest and direct action security, not workplace organizing security. Required new content: (1) BYOD policy security brief explaining the legal distinction between employer-monitored work devices and personal devices; (2) collective action security protocol for organizing committees — how to use Signal groups with verified membership, how to manage operational security when a group grows beyond the core organizing committee; (3) a one-page guide to keeping organizing communications off employer networks, formatted for workers without technical background. This content can be drafted as a standalone 1,000-word supplement to the existing playbook rather than a new document.
-
-**Election worker segment gaps**:
-The election-worker-opSec-supplement.md is substantially complete for individual election worker security. Required additional content: (1) a poll monitor team communications protocol — how a Common Cause or League of Women Voters monitor coordinator establishes a Signal group for 30–50 volunteers, verifies members, and establishes check-in protocols; (2) a post-election safety protocol for contested election environments — what election workers should do to protect themselves in the period between election night and certification when threat levels are historically elevated; (3) a specific supplement on insider threat mitigation, which the election-worker-opSec-supplement.md currently addresses only at the individual hygiene level.
-
-**Journalist segment gaps**:
-The journalist-security-playbook.md is the most complete of the four. The remaining gap is practical: the SecureDrop access guidance assumes journalists know what SecureDrop is and how it works. A 400-word "SecureDrop for sources: what journalists need to know about how sources use it" supplement helps journalists communicate the system to potential sources who are not technically sophisticated. This supplements rather than replaces the existing guidance.
-
-### Content That Should Not Be Duplicated
-
-The Phase 1 corpus (threat model, implementation guide, opsec playbook) should not be reproduced in segment-specific guides. The segment-specific playbooks should: (1) state clearly what threat the reader faces; (2) identify the relevant sections of the Phase 1 corpus by section heading; (3) add only the content that is segment-specific. This modular approach preserves the corpus's utility as a central reference while allowing the playbooks to function as standalone entry points for new audiences.
+**Sector-specific threat model emphasis for legal networks**: The California DROP platform angle is uniquely relevant here. California's DELETE Act (SB 362) created the DROP platform — a single-submission data broker opt-out pathway available to California residents without government-issued ID. This is the only opt-out pathway that serves undocumented residents who cannot complete individual broker opt-outs requiring a state-issued ID. State advocates in other states should know both that the DROP platform exists (for California clients) and that no equivalent exists in their state (which is a state legislative advocacy opportunity). Legal networks that serve multi-state populations need both pieces of information.
 
 ---
 
-## Section 4: Tier 2 Launch Readiness
+## Section 4: Timeline, Sequencing, and Contingencies
 
-### Prerequisite: Phase 1 Launch and Adoption Tracking (Weeks 1–6)
+### The Timeline Logic
 
-Phase 1 launch is the prerequisite for this strategy. The following signals from Phase 1 outreach directly inform Tier 2 sequencing:
+The timing structure in `PHASE_2_SEQUENCING.md` provides the master calendar. What follows is the organizational-strategy layer on top of that calendar — when to do what, in what priority order, and what to adjust if the data is not what you expected.
 
-**Signals that strengthen Tier 2 DV segment priority**: If Phase 1 legal aid contacts (particularly immigration advocates) report that survivors in their caseloads have experienced both immigration enforcement and intimate partner surveillance — a documented overlap — the DV segment should move from Wave 1 to immediate launch. The population overlap between DV survivor services and immigration legal aid is substantial; shelters serving immigrant survivors are a natural bridge organization.
+**Week-by-week sequencing for the sectors in this document**:
 
-**Signals that strengthen Tier 2 labor segment priority**: If Phase 1 community organization contacts report that workers in organizing drives are facing employer surveillance that the corpus's countermeasures address, the labor segment should be elevated. The AFL-CIO Labor and Immigration Policy Fellows cohort (congratulated April 2026) represents a bridge population — labor advocates who also work on immigration policy and are likely to have seen the Phase 1 corpus through that channel.
-
-**Signals that strengthen Tier 2 election worker segment priority**: CISA cutbacks are time-sensitive. The 2026 midterm election cycle is on a fixed timeline. If election security resources are not available by August 2026 (National Poll Worker Recruitment Day per EAC), the window for pre-election training integration closes. This segment has the most time-sensitive launch requirement of the four.
-
-**Signals that strengthen Tier 2 journalist segment priority**: If Freedom of the Press Foundation or IRE responds positively to existing TIER2_DISTRIBUTION_PREP.md outreach, the journalist segment wave should be initiated immediately using the extended contact list in this document. Do not wait for Week 7 if a warm journalist organization introduction exists.
-
-### Week 7 Gate Decision
-
-Per PHASE_2_SEQUENCING.md Section 2, the Week 7 gate requires:
-
-- 1,000+ cumulative Gist views (minimum trigger)
-- At least 3 Tier 1 organizations at Stage 2+ engagement (not just acknowledged — actively sharing or integrating)
-- 100+ feedback form submissions
-- At least one explicit request from a Tier 1 organization for materials tailored to a Tier 2 segment (e.g., a legal aid organization asking for DV-specific guidance)
-
-**If the gate passes**: Begin Tier 2 Wave 1 outreach in the priority order DV first, then election workers (time-sensitive due to 2026 election cycle), then labor, then journalist segment supplements. DV is first because the dv-survivor-safety-playbook.md is complete and ready for distribution with no additional content development required.
-
-**If the gate passes but narrowly** (Gist views between 1,000–2,000, fewer than 5 Tier 1 integrations): Reduce Wave 1 to NNEDV Safety Net, EAC, and Freedom of the Press Foundation only — three contacts, one per segment — rather than the full Wave 1 contact list. Use the responses to calibrate Wave 2 timing.
-
-**If the gate fails** (Gist views below 1,000 at Week 7): Do not launch Tier 2. Reassess Phase 1 messaging. The most likely failure mode is that the Gist URL is not reaching the intended organizations — check Bitly click data to determine whether the link is being clicked (indicating the email is being read but the corpus is not compelling) or not (indicating the email is not reaching decision-makers). The contingency in this case is a revised Phase 1 subject line test for the remaining un-contacted organizations before any Phase 2 launch.
-
----
-
-## Section 5: Metrics and Decision Points
-
-### Success Indicators: Expected by Week 12
-
-**Distribution depth metrics**:
-
-| Metric | Minimum threshold (Week 12) | Strong signal threshold |
+| Timing | Action | Rationale |
 |---|---|---|
-| DV segment organizations contacted | 5 (Wave 1 complete) | 10+ (Wave 2 underway) |
-| DV segment responses | 1 acknowledgment | 1 training integration request |
-| Labor segment organizations contacted | 5 (Wave 1 complete) | 10+ (Wave 2 underway) |
-| Labor segment responses | 1 acknowledgment | AFL-CIO Organizing Institute integration discussion |
-| Election segment organizations contacted | 5 (Wave 1 complete) | EAC or Brennan Center positive response |
-| Election segment responses | 1 acknowledgment | EAC resource page link or Brennan Center citation |
-| Journalist segment organizations contacted | 3 (supplement to existing TIER2_DISTRIBUTION_PREP.md) | FPF Digital Security Training curriculum integration |
-| Journalist segment responses | 1 response (supplementing existing pipeline) | SecureDrop operator collaboration |
-| Gist views (cumulative by Week 12) | 2,000+ | 5,000+ |
-| Playbook downloads or links | 10+ external shares documented | Organizational website integration at 1+ org |
+| End of Week 3 (Tier 1 active outreach complete) | Apply three-factor readiness score to all contacts with replies | You need a scored list before the personal pre-contact window opens |
+| Week 4 (transition window begins) | Personal pre-contact to 3/3 organizations — offer playbook + session | This is the most time-sensitive action in the transition; high-readiness orgs contacted first get the best onboarding experience |
+| Week 4 (parallel) | Research Tier 2 contacts for law schools, think tanks, unions, AG networks | Contact verification before Week 5 launch |
+| Week 5 — Tier 2 opens | Send to digital rights organizations (2A) — this is not this document's sector, but it matters because 2A responses become credibility evidence for law school and think tank outreach | 2A response time is fast (days to 2 weeks); any acknowledgment from EFF/CDT/EPIC becomes quotable in Tier 3 and in law school/think tank outreach |
+| Week 5–6 | Send to journalist organizations (2D) — produces social proof for academic and policy audiences | Journalist coverage is the fastest-converting credibility multiplier for academic and policy outreach |
+| Week 7–8 | Send to law schools, clinic programs, think tanks | Academic semester timing: early summer is acceptable for law school contacts because clinic directors plan summer projects |
+| Week 7–8 (parallel) | Send to union organizing departments | Union calendars are not semester-driven; any time except major contract negotiation periods |
+| Week 9–10 | Send to NAAG network contacts, ACLU affiliates, state AG offices | Build on any accumulated credibility signals from Weeks 5–8 |
+| Week 9–12 | 2B academic contacts (cybersecurity programs) — covered in TIER2_DISTRIBUTION_PREP.md | Semester-driven |
+| Weeks 10–14 | Tier 2 follow-up loop + Tier 3 preparation | |
 
-**Quality indicators**:
+### Pre-Contact (Personal Invitations to 3/3 Organizations)
 
-A playbook that has been integrated into an organization's training curriculum — not just acknowledged, but actively used — is worth more than 100 cold-email acknowledgments. Track training integration explicitly: ask each positive respondent whether they have incorporated corpus materials into any training, and document the outcome. Training integration is the highest-confidence indicator that the content meets the segment's operational needs.
+Pre-contact happens between Days 28 and 35 (May 28 – June 4 if Phase 1 Day 1 is May 8). The pre-contact list should have 3–8 organizations. Each gets a personal email — not the wave template — that:
 
-**Citation and legal impact**: The highest-impact metric remains unchanged from PHASE_2_SEQUENCING_STRATEGY.md Section 6: citation in a legal filing, legislative testimony, or court decision. For the DV and election worker segments specifically, this is plausible — DV advocates provide expert testimony in family law proceedings, and election law litigation is active in 2026. Track any contact who is affiliated with legal proceedings.
+1. References their specific engagement: what they said, what they asked, what they did with the corpus
+2. Names the next step: the relevant playbook plus an offer to schedule a staff orientation session
+3. Sets a time window: "I'll be scheduling these sessions in the first two weeks of June"
 
-### Red Flags: Indicators to Pause or Pivot
+Do not send more than 2–3 pre-contact emails per day. Each one generates a scheduling conversation that requires management.
 
-**Red flag 1: DV organizations express safety concerns about the corpus**. If NNEDV Safety Net or Coalition Against Stalkerware reviews the dv-survivor-safety-playbook.md and identifies content that could be dangerous if applied without professional advocacy support, pause distribution to that segment and revise. This is the most important quality check for the DV segment — the safety planning community has hard-won expertise about what guidance can cause harm in context, and their feedback overrides any general communication security principle.
+### Contingency: Low Tier 1 Response (Below 5% After Week 2)
 
-**Red flag 2: Low Phase 1 adoption despite full outreach**. If Phase 1 achieves fewer than 500 Gist views and fewer than 2 Tier 1 organizations at Stage 2 engagement by Week 6, the corpus is not reaching its intended audience. In this case, Tier 2 launch should be suspended and the distribution mechanism — not the content — should be reassessed. The grassroots-first contingency below applies.
+Per `PHASE_2_SEQUENCING.md` Scenario A: if fewer than 3 replies of any type after 50 sends in 2 weeks, run a diagnostic before changing anything.
 
-**Red flag 3: Significant content gaps identified by early Tier 2 contacts**. If AFL-CIO or NNEDV respond with feedback that the corpus misframes a significant aspect of their constituency's threat (for example, if the labor playbook supplement misunderstands NLRA protections in a way that could mislead organizers about their legal rights), pause distribution for that segment and revise before continuing Wave 2.
+For the sectors in this document specifically, low Tier 1 response does not necessarily indicate a problem with Tier 2 framing. Tier 1 is immigration legal aid and community organizations — their engagement (or lack of it) does not tell you how law schools or think tanks will respond. If Tier 1 response is low:
 
-**Red flag 4: CISA gap has been filled by an alternative resource**. If another organization (EFF, CDT, or a newly funded government program) produces comprehensive election worker security guidance before the Tier 2 election worker wave launches, reassess whether the election-worker-opSec-supplement.md adds unique value or whether the corpus should reference the better-resourced alternative and focus on other segments.
+- Delay Tier 2 wave by 2 weeks and correct the Tier 1 framing problem first (per Scenario A in `PHASE_2_SEQUENCING.md`)
+- Do not delay the pre-contact invitations to any organizations that did respond at Score 4–5 — if you have a high-quality Tier 1 responder, that relationship does not wait for the rest of the cohort to catch up
+- For law school outreach specifically: if Tier 1 response is low but a legal aid organization did engage, the engagement itself is evidence for the law school pitch — "the legal aid organizations working with this population have begun integrating Part 0 into their intake process" is useful framing even with a small sample
 
-### Contingency: Grassroots-First Strategy If Institutional Wave Fails
+### Contingency: High Tier 1 Response (>25% After Week 2)
 
-If Tier 2 Wave 1 institutional outreach (Weeks 8–9) generates no responses across all four segments by Week 11, skip Wave 2 and begin grassroots-first distribution:
+Per `PHASE_2_SEQUENCING.md` Scenario B: more than 12 replies from 50 sends, or 3+ Score 4–5 contacts, by end of Week 2.
 
-**Grassroots-first sequence**: Post the dv-survivor-safety-playbook.md, election-worker-opSec-supplement.md, and journalist-security-playbook.md directly to relevant online communities — the Coalition Against Stalkerware's partner network page, the Election Protection volunteer coordinator network, the IRE members-only forum (if accessible), and the AFL-CIO Organizing Institute's alumni network. These are lower-prestige distribution channels than institutional endorsement, but they reach practitioners directly and can generate organic institutional interest when practitioners bring the resource to their organizational leadership.
+For the sectors in this document:
+- Begin pre-contact research for law schools and think tanks one week early (Week 3 instead of Week 4)
+- The social proof inventory for Tier 2 outreach is richer — document specific adoption signals and use them in messaging: "Legal aid organizations in [state context] have begun incorporating Part 0 into client intake" is a stronger credibility signal for a think tank or clinic director than "organizations have reviewed the corpus"
+- Do not abbreviate Tier 1 follow-up; the ongoing relationship with high-engagement Tier 1 organizations is part of the organizational partnership model
 
-**Metrics for grassroots-first success**: If the direct practitioner distribution generates 50+ external links or shares within four weeks, this constitutes sufficient adoption signal to resume institutional outreach — now with organic traction as the social proof that replaces Wave 1 institutional endorsement.
+### Contingency: Named Organization Publicly References Corpus
+
+Per `PHASE_2_SEQUENCING.md` Scenario C: if EFF, Brennan Center, Georgetown CPT, or a comparably prominent organization publishes any reference to the corpus (social media, newsletter, resource listing), update all Tier 2 templates immediately to include the citation.
+
+For law schools and think tanks specifically, a Georgetown CPT or Brennan Center citation is worth more than any other credibility signal. This should immediately move to the front of the law school/think tank outreach, with the subject line revised to reference the citation.
+
+### Academic Timing Constraint
+
+Law school outreach requires semester-awareness. The optimal windows:
+- **Now through June 15**: Acceptable for law school contacts — clinic directors are planning summer and fall projects in May–June, and a June email may arrive at the right moment for fall semester clinic placement
+- **June 15 – August 15**: Reduced response probability; faculty travel, summer research mode
+- **September – October**: Best window for fall semester integration; follow-up any non-responses from the June send
+- **November – December**: Avoid (end-of-semester crunch, exams)
+- **February – March**: Second-best window; spring semester pre-crunch
+
+If your Tier 2 window for law schools lands in summer (July–August), do not skip law school outreach entirely — send a brief note in July with the expectation that fall response is the realistic target, and note that explicitly in the tracking spreadsheet.
+
+### Timeline Summary: Full Picture Weeks 1–14
+
+```
+Week 1–3   Tier 1 active outreach (50–60 contacts; 1A/1B/1C)
+Week 3     Score all contacts; generate pre-contact list; research Tier 2 contacts
+Week 4     Pre-contact 3/3 organizations (personal invitations, 2–3/day)
+           Tier 1 follow-up loop begins
+           Tier 2 preparation: law schools, think tanks, union orgs, AG contacts
+Week 5     Tier 2 wave: digital rights organizations (2A) — fastest signal
+Week 5–6   Tier 2 wave: journalist organizations (2D)
+Week 6–7   Staff orientation sessions for pre-contact organizations (scheduling window)
+Week 7–8   Tier 2 wave: law schools, clinic programs, think tanks
+Week 7–8   Tier 2 wave: union organizing departments
+Week 9–10  Tier 2 wave: AG offices, ACLU affiliates, NGO legal networks
+Week 9–12  Tier 2 wave: academic cybersecurity programs (2B) — per TIER2_DISTRIBUTION_PREP.md
+Weeks 9–12 Tier 2 follow-up loop
+Weeks 10+  Tier 3 preparation begins: policy organizations (3A), labor (3B), academic law (3C)
+```
 
 ---
 
-## Sources
+## Section 5: Messaging Coordination and Dependency Map
 
-- [NNEDV Safety Net Project](https://www.techsafety.org/) — authoritative DV technology safety resource; Safety Net Tech Summit 2026 confirmed
-- [NNEDV — Technology Safety](https://nnedv.org/content/technology-safety/) — national coalition resource on tech and DV
-- [Coalition Against Stalkerware](https://stopstalkerware.org/) — 40+ organization coalition; NNEDV founding partner confirmed
-- [National Domestic Violence Hotline](https://www.thehotline.org/) — 1-800-799-7233; 56-coalition distribution network
-- [NCADV State Coalitions](https://ncadv.org/state-coalitions) — state coalition directory
-- [AFL-CIO Workers First Initiative on AI](https://aflcio.org/reports/workers-first-ai) — labor AI surveillance policy framework
-- [AFL-CIO Organizing Institute 2026](https://actionnetwork.org/ticketed_events/organizing-institute-2026) — Minnesota, 2026 training event confirmed
-- [AFL-CIO Labor and Immigration Policy Fellows](https://aflcio.org/2026/4/8/afl-cio-congratulates-inaugural-class-labor-and-immigration-policy-fellows) — inaugural class April 2026
-- [Georgetown Law — Labor Organizing and AI Surveillance](https://www.law.georgetown.edu/poverty-journal/blog/labor-organizing-and-ai-surveillance-in-the-workplace/) — documented employer AI surveillance of organizing
-- [EFF — How Cops Are Using Flock Safety to Surveil Protesters](https://www.eff.org/deeplinks/2025/11/how-cops-are-using-flock-safetys-alpr-network-surveil-protesters-and-activists/) — 50+ agencies using ALPR against protest activity
-- [ArXiv — Surveillance and Suppression of Union Activity](https://arxiv.org/html/2603.03130) — 2026 academic analysis of digital union busting
-- [Equitable Growth — Union Contracts and Automated Surveillance](https://equitablegrowth.org/research-paper/how-union-contracts-are-protecting-u-s-workers-from-automated-management-and-surveillance-in-the-workplace/) — collective bargaining as surveillance countermeasure
-- [EAC Election Official Security](https://www.eac.gov/election-officials/election-official-security) — federal resource for election worker security post-CISA
-- [EAC 2026 Annual Board Meetings](https://www.eac.gov/news/2026/05/05/us-election-assistance-commission-holds-2026-annual-board-meetings-chicago-and-dc) — May 2026 confirmed
-- [Brennan Center — How Federal Government Is Undermining Election Security](https://www.brennancenter.org/our-work/research-reports/how-federal-government-undermining-election-security) — CISA drawdown analysis
-- [The Register — Election Workers Fear Threats Without Federal Support 2026](https://www.theregister.com/2025/08/16/election_workers_fears_after_cisa_cuts/) — 61% concerned about CISA cuts
-- [Nextgov — Senator Warns CISA Election Security Pullback](https://www.nextgov.com/cybersecurity/2026/05/senator-warns-cisa-election-security-pullback-could-leave-midterms-vulnerable/413378/) — May 2026 Senate Intelligence Committee warning
-- [Brennan Center — Survey on Election Official Concerns](https://www.brennancenter.org/our-work/analysis-opinion/survey-finds-election-officials-remain-concerned-about-safety-lack) — 25% concerned about assault, 52% worried about staff safety
-- [Common Cause Election Protection](https://www.commoncause.org/issues/election-protection/) — poll monitor coordination network
-- [Issue One — Protecting America's Election Workers](https://issueone.org/solutions/protecting-americas-election-workers/) — bipartisan election worker threat documentation
-- [Freedom of the Press Foundation — 2026 Journalist Digital Security Checklist](https://freedom.press/digisec/blog/journalists-digital-security-checklist/) — FPF 2026 security resources confirmed
-- [Freedom of the Press Foundation — 2025-2026 Strategic Plan](https://freedom.press/about/announcements/freedom-of-the-press-foundations-2025-2026-strategic-plan/) — Digital Security Training program confirmed
-- [U.S. Press Freedom Tracker — 2026 Threats](https://pressfreedomtracker.us/blog/a-troubling-picture-of-press-freedom-pressures-to-start-2026/) — documented 2026 press freedom deterioration
-- [NLRB — Your Rights During Union Organizing](https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/employees/your-rights-during-union-organizing) — NLRA legal framework for organizing protection
-- [CIS — Election Security Spotlight: Doxxing](https://www.cisecurity.org/insights/spotlight/election-security-spotlight--what-is-doxing) — CIS election worker doxxing documentation
+### What Tier 2 Messaging Can and Cannot Claim
+
+The credibility of Tier 2 outreach depends on not overclaiming. The table below maps what claims require what underlying facts.
+
+| Claim | Requires | Source |
+|---|---|---|
+| "Legal aid organizations are using this with clients" | At least 1 Score 4–5 Tier 1 contact confirming client use | Tracking spreadsheet |
+| "The corpus is being used in [state] immigration legal aid settings" | Same — and the state should be accurate | Tracking spreadsheet, confirmed |
+| "The documentation is primary-source-citable" | Nothing additional — it always is | Corpus design |
+| "This raises unsettled Fourth Amendment questions" | Nothing additional — this is accurate based on Carpenter | Corpus threat model section |
+| "Brennan Center has cited this" | A published Brennan Center citation | Web evidence |
+| "A law school clinic is using this as a case foundation" | Confirmed clinic adoption | Partner communication |
+| "This has been reviewed by security researchers" | At least 1 substantive researcher feedback | Tier 2C engagement |
+
+Never imply endorsement unless the organization has explicitly agreed to be named. "Georgetown CPT has reviewed this" is only true if they sent a reply confirming receipt. "Georgetown CPT endorses this" requires a published statement. The difference matters — being caught in overstatement with a sophisticated institutional audience destroys the relationship and potentially the campaign.
+
+### Cross-Sector Messaging Inheritance
+
+Phase 1 response patterns tell you which corpus sections generate the most engagement. If immigration legal aid organizations are most responsive to Part 0 (data broker opt-outs) and less responsive to device hardening, weight Tier 2 messaging accordingly:
+
+- For law schools: the fourth-party doctrine question (government purchasing data that would require a warrant to collect directly) is the most litigation-relevant angle; emphasize it
+- For think tanks: the regulatory gap — that the commercial surveillance loophole is documented, operational, and unaddressed by current federal law — is the most policy-actionable angle
+- For union organizing: the operational security case (what can be monitored on employer devices vs. personal devices) is the most directly actionable angle
+- For AG networks: the state enforcement opportunity (data brokers selling to federal agencies may have violated state privacy statutes) is the most actionable angle for offices with active privacy enforcement programs
+
+These are defaults calibrated from sector knowledge. If Phase 1 response data contradicts them — e.g., if legal aid organizations are most engaged with device hardening rather than data broker opt-outs — adjust the Tier 2 emphasis accordingly.
 
 ---
 
-*Created: 2026-05-07. Research conducted using public sources confirmed as of May 2026. Confidence level: high on organization identification (all websites verified active), high on threat claims (primary source documentation throughout), medium on named individual contacts (organizational roles change; verify before sending). Pre-send contact verification required for all named individuals. Quarterly review checkpoint: aligned with PHASE_2_SEQUENCING.md Gate 4 (July 26, 2026).*
+## Section 6: Success Criteria and Decision Points
+
+### Minimum Success Indicators by Week 12
+
+| Sector | Minimum (Week 12) | Strong Signal |
+|---|---|---|
+| Law schools / clinics | 5 contacts sent, 1 acknowledgment | 1 clinic director expressing interest in case or course integration |
+| Think tanks | 5 contacts sent, 1 acknowledgment | Brennan Center or Georgetown CPT citing corpus in any published output |
+| Union organizing | 5 contacts sent, 1 reply from organizing department | AFL-CIO Organizing Institute integration discussion |
+| AG / NGO legal networks | 3 contacts sent, 1 acknowledgment | State AG civil rights unit requesting documentation |
+| Organizational partnerships (any sector) | 3 partnerships initiated | 5+ partnerships with at least 1 confirmed session delivered |
+| Staff orientation sessions | 2 sessions scheduled | 3 sessions delivered; at least 1 to a multi-state organization |
+
+### The Partnership Ceiling
+
+5–10 active organizational partnerships in Phase 2 is the right scale (`PHASE_2_ORGANIZATIONAL_LAUNCH_STRATEGY.md` Section 2). Fewer than 5 does not generate enough feedback diversity. More than 10 creates unsustainable support burden. If demand exceeds 10, prioritize partnerships with the highest network multiplier — organizations that can relay adoption to 10+ downstream organizations in a single decision.
+
+### Gate 2 Final Decision (End of Week 4)
+
+Before the Tier 2 wave launches, run the following check:
+
+- [ ] Minimum gate A/B/C passed (volume, response signal, infrastructure)
+- [ ] Pre-contact list generated and at least 2 personal invitations sent
+- [ ] You have at least one concrete Tier 1 engagement to reference (even "an immigration legal aid organization asked about the DROP platform ID requirement")
+- [ ] Tier 2 templates updated with May 2026 threat intelligence variants from TIER2_MESSAGING_TEMPLATES.md
+- [ ] Law school / think tank contacts verified current (check org websites, not cached data)
+- [ ] Sector-specific subject line variants selected for each wave
+
+If the minimum gate has not been met: wait one additional week and re-evaluate. Do not launch Tier 2 on an empty result set.
+
+---
+
+*Created: 2026-05-07. Coordinates with PHASE_2_SEQUENCING.md (timeline master), PHASE_2_ORGANIZATIONAL_LAUNCH_STRATEGY.md (partnership model), TIER2_DISTRIBUTION_PREP.md (digital rights/academic/researcher/journalist contacts and templates), TIER2_MESSAGING_TEMPLATES.md (May 2026 sector variants). Quarterly review checkpoint: July 26, 2026.*
