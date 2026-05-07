@@ -1,0 +1,269 @@
+MAY 30 PHASE 2 LAUNCH — CRITICAL PATH DIAGRAM
+==============================================
+Prepared: May 7, 2026 | 23 days to launch | Hard gate: May 10
+
+LEGEND
+------
+[TASK]        = Required action (user performs)
+[READY]       = Pre-built by agent, no user creation needed
+>>>           = "blocks / enables"
+===           = Critical path (must complete on time or launch slips)
+---           = Off-critical-path (has slack time; can slip without affecting May 30)
+[MAY XX]      = Latest start date to preserve May 30 target
+!!! LATE !!!  = Already past the planned start date as of May 7
+
+
+TRACK 1: ACCOUNT CREATION + EMAIL CAPTURE (CRITICAL PATH — TOTAL LOCK)
+========================================================================
+
+!!! LATE !!!   [MAY 5-6]
+      |
+      v
+[CREATE INSTAGRAM BUSINESS ACCOUNT]   20 min
+[CREATE TIKTOK BUSINESS ACCOUNT]      15 min      } Run in same sitting
+[CREATE PINTEREST BUSINESS ACCOUNT]   15 min      }
+[CREATE KIT ACCOUNT at kit.co]        10 min
+      |
+      v  (immediately after)
+[BUILD + PUBLISH KIT LANDING PAGE]    30-45 min
+      |
+      v
+[ADD KIT URL TO ALL 3 SOCIAL BIOS]    10 min
+      |
+      v
+      =================> EMAIL LIST BUILDING BEGINS <==== (nothing works before this)
+
+
+TRACK 2: CANVA DESIGN PRODUCTION (CRITICAL PATH — GATES EMAIL AUTOMATION)
+==========================================================================
+
+[MAY 7-8] (1 day slack remaining)
+      |
+      v
+[CANVA BRAND KIT SETUP]     30 min
+  (10 colors, 3 fonts, logo upload)
+      |
+      v  (immediately after Brand Kit exists)
+[ZONE 5 MASTER CARD]        150-180 min     <<< LONGEST SINGLE TASK
+  (build from blank US Letter canvas)
+      |
+      v
+[ZONE 6 CARD]    30 min      <<< clone from Zone 5, temperate band
+      |
+      v
+[ZONES 3 + 4]    75 min      <<< clone from Zone 5, cool band (#3D6B8A)
+      |
+      v
+[ZONES 7 + 8]    75 min      <<< clone from Zone 5, warm band (#C9943A)
+      |
+      v
+[ZONES 9 + 10]   75 min      <<< clone from Zone 5, hot band (#A0522D)
+      |
+      v
+[8-CARD VISUAL REVIEW]   30 min
+  (check placeholder text, frost dates, band colors)
+      |
+      v  [target: May 17]
+[EXPORT 8 ZONE CARD PDFs]   (PDF Print, Flatten PDF: Yes)
+      |
+      v
+[UPLOAD TO GOOGLE DRIVE]   30 min
+  (sharing: "Anyone with link can view"; get download-format links)
+      |
+      v  [MAY 17-19]
+[BUILD KIT EMAIL 1 — 8 ZONE VARIANTS]   60-90 min
+  (each variant: zone number + matching PDF download link)
+      |
+      v  [MAY 19-21]
+[BUILD KIT EMAILS 2-5]   60-90 min total
+  (full copy in marketing/email-and-launch-plan.md)
+      |
+      v  [MAY 21-22]
+[WIRE KIT ZONE ROUTING AUTOMATION]   30 min
+  (trigger: form completion → apply zone tag → send zone-matched Email 1)
+      |
+      v  [MAY 22]
+[END-TO-END TEST: ZONE 5]   15 min     <<< MUST PASS BEFORE GOING LIVE
+[END-TO-END TEST: ZONE 7]   10 min
+      |
+      v
+      ============> EMAIL AUTOMATION LIVE <==== (subscribe → zone card delivers automatically)
+
+
+TRACK 3: PHOTO SHOOT (PRIMARY GATE — DETERMINES MAY 30 vs JUNE 6 LAUNCH SCOPE)
+================================================================================
+
+!!! MAY 5-7 WINDOW CLOSING !!!
+      |
+      v  [MAY 7-9] (2 days slack)
+[PROPS SOURCING RUN]   1-2 hours
+  (garden center + grocery + optional craft store)
+[PRINT RUN 20-25 PAGES]   30 min
+[ORDER KRAFT ENVELOPES — today for 2-day delivery]   10 min
+      |
+      v
+======================= MAY 10 HARD GATE ========================
+      |
+      v  [MAY 10, 9am-1:30pm]
+[CLUSTER A SHOOT]   4.5 hours
+  (seeds/garden, 16 shots, wood surface, window light)
+      |
+      v  [MAY 10, 3pm-5pm]
+[CLUSTER B SHOOT]   2 hours
+  (urban/container, 8 shots, window sill or balcony)
+      |
+      v  [MAY 11, 9am-11am]
+[CLUSTER C SHOOT]   2 hours
+  (food preservation, 6 shots, kitchen counter)
+      |
+      v  [MAY 12]
+[IMAGE CULLING]   2 hours
+  (80-100 raw captures → 30 selects)
+      |
+      v  [MAY 13-14]
+[BATCH EDITING in Lightroom Mobile or Snapseed]   3-4 hours
+      |
+      v  [MAY 14]
+[EXPORT 30 FINAL JPEGs at 2400x2400px]   1 hour
+  (save to marketing/lifestyle-photos/etsy-ready/)
+      |
+      v  [MAY 22-25]
+[ETSY UPLOAD: Clusters A, B, C]   1 hour
+  (slots 4 and 5 per listing, 12 products)
+      |
+      v
+      =====> FULL ETSY PRODUCT COVERAGE <====
+
+
+TRACK 4: CLUSTER D+E STOCK COMPOSITING (PARALLEL — DOES NOT NEED SHOOT)
+=========================================================================
+
+[Stock images already staged in assets/stock-raw/ — no user sourcing needed]
+
+      |  [MAY 15]
+      v
+[CLUSTER D+E CANVA COMPOSITING]   3-4 hours
+  (5 products x 2 slots = 10 composited images)
+  (mockup overlay on staged stock background)
+      |
+      v  [MAY 15]
+[UPLOAD TO ETSY SLOTS 4+5 — Clusters D+E]   30 min
+      |
+      v
+      =====> 5 PRODUCTS WITH ETSY LIFESTYLE IMAGES BY MAY 15 <====
+
+
+TRACK 5: SOCIAL CONTENT (PARALLEL — SOME ITEMS CAN SLIP)
+=========================================================
+
+      [BRAND KIT ready] (same session as Track 2 Brand Kit setup)
+      |
+--- [MAY 7-8]
+      v
+[FILM DAY 1 REEL]   45-60 min filming     (1-2 days slack)
+  (origin story, 30-45 sec, script in 60-day calendar Day 1)
+[UPLOAD TO INSTAGRAM] (as Reel) + [UPLOAD TO TIKTOK] (native)
+      |
+--- [MAY 8-9]
+      v
+[BUILD DAY 3 CAROUSEL IN CANVA]   45-60 min     (2-3 days slack)
+  (5 slides — copy in 60-day calendar Day 3)
+[POST TO INSTAGRAM]
+      |
+--- [MAY 8-9]
+      v
+[BUILD FIRST 6 PINTEREST PINS IN CANVA]   60-90 min     (2-3 days slack)
+[SCHEDULE 6 PINS in Pinterest native scheduler (Tue-Fri, 8pm-11pm)]
+      |
+--- [MAY 25-29]
+      v
+[BATCH-PRODUCE 15+ PINTEREST PINS from lifestyle images]   2-3 hours
+[LOAD 60-DAY CALENDAR INTO BUFFER/LATER]   3-4 hours
+  (captions from phase-2-social-content-calendar-60day.md)
+      |
+      v
+      =====> LAUNCH WEEK POSTS PRE-SCHEDULED <====
+
+
+CONVERGING TO LAUNCH
+====================
+
+                TRACK 1 (Accounts + Email Capture)
+                            |
+                TRACK 2 (Zone Cards + Kit Automation)
+                            |
+                TRACK 3 (Photo Shoot + Editing + Etsy)
+                            |
+                TRACK 4 (Cluster D+E — completes May 15)
+                            |
+                TRACK 5 (Social Content — ongoing)
+                            |
+                            v
+======================= MAY 29 ==========================
+      [TEST EMAIL SEND — confirm Kit automation still live]
+      [REVIEW ALL SCHEDULED POSTS in Buffer/Later]
+      [CONFIRM Kit landing page accessible]
+=========================================================
+                            |
+                            v
+======================= MAY 30 LAUNCH ===================
+  12pm  Kit broadcast email to full subscriber list
+   2pm  Instagram launch post
+   3pm  TikTok launch post (native upload)
+   4pm  Pinterest launch pins
+   EOD  Log all dates in WORKLOG.md
+=========================================================
+
+
+CONTINGENCY PATHS
+=================
+
+  If shoot slips to May 17-18:
+  -----------------------------------------
+  May 30 launch STILL HAPPENS with:
+  + Kit automation live
+  + Zone cards delivering
+  + Cluster D+E Etsy images uploaded
+  + Social accounts live with content
+  Etsy slots 4-5 for Clusters A, B, C fill by June 3-6.
+
+  If one social platform delays:
+  -----------------------------------------
+  Priority order: Instagram > Pinterest > TikTok
+  TikTok can launch June 1-7 without affecting May 30 metrics.
+
+  If Kit delayed past May 25:
+  -----------------------------------------
+  May 30 = social-only launch.
+  Email automation comes online first week of June.
+  All social content and Etsy uploads proceed as planned.
+
+
+TASK DURATION REFERENCE
+========================
+
+  Brand Kit setup                    30 min
+  Zone 5 master card (1st build)    150-180 min
+  Each subsequent zone card          30-40 min
+  8-card PDF review                  30 min
+  Google Drive upload (8 PDFs)       30 min
+  Kit Email 1 (8 variants)          60-90 min
+  Kit Emails 2-5                    60-90 min
+  Kit automation wiring              30 min
+  End-to-end testing                 25 min
+  Props sourcing run                 1-2 hours
+  Cluster A shoot                    4.5 hours
+  Cluster B shoot                    2 hours
+  Cluster C shoot                    2 hours
+  Image culling                      2 hours
+  Batch editing                      3-4 hours
+  JPEG export (30 files)             1 hour
+  Cluster D+E compositing            3-4 hours
+  Etsy lifestyle uploads             1 hour
+  Buffer/Later loading               3-4 hours
+  Pinterest pin batch                2-3 hours
+  Day 1 Reel filming                 45-60 min
+  Day 3 Carousel build               45-60 min
+  First 6 Pinterest pins             60-90 min
+  -------------------------------------------
+  TOTAL (approx)                     40-50 hours across May 7-29
