@@ -2,6 +2,25 @@
 
 ---
 
+## May 7, 2026 — Research Agent: Session 893 — May 2026 Domain Currency Verification (All 35 Domains)
+
+**Status**: COMPLETE
+
+**Context**: Pre-Phase 1 distribution currency certification. All 35 domains verified through May 7, 2026 before user path decision (A / A+37 / B) and Tier 1 launch. Incorporated Sessions 870 and 880 research findings; conducted targeted web verification for 12 flagged domains (May 1–7 developments).
+
+**File created**:
+- `projects/resistance-research/MAY_2026_DOMAIN_UPDATES_SESSION_893.md` — consolidated certification document (~3,800 words, 6 parts, production-ready)
+
+**Key findings**:
+
+1. All 35 domains confirmed current through May 7, 2026 — no domain presents a "dated materials" risk for distribution.
+2. 11 domains have edits queued with paste-ready draft text from Sessions 870/880. 24 domains confirmed current without edits.
+3. High-priority new confirmations: DEA May 28 deadline (confirmed via Federal Register DEA-1362); CISA $707M cut confirmed (Senator Warner demand letter confirmed); Callais redistricting cascade now projected at 12–14 net Republican House seat gains (Sabato's Crystal Ball); CPB shutdown confirmed (January 5, 2026 board vote to dissolve; 1,000+ rural stations affected).
+4. Monitoring items established: FISC opinion (~May 15); Watson v. RNC ruling (late June); FISA June 12 deadline; Reconciliation 2.0 (June 1 target).
+5. Framework cleared for Phase 1 distribution on user path decision.
+
+---
+
 ## May 7, 2026 — Research Agent: Tier 2 Distribution Sequencing & Organizational Outreach Strategy
 
 **Status**: COMPLETE
