@@ -1,16 +1,23 @@
 {
   "_meta": {
     "title": "Seedwarden Phase 2 Analytics Dashboard Schema",
-    "version": "1.0",
+    "version": "2.0",
     "created": "2026-05-07",
+    "updated": "2026-05-07",
     "status": "production-ready",
-    "purpose": "Metric definitions, alert thresholds, automation rules, and data sources for Phase 2 customer success measurement. Implementable in Google Sheets or any lightweight data tool.",
+    "purpose": "Metric definitions, alert thresholds, automation rules, and data sources for Phase 2 customer success measurement. Implementable in Google Sheets or any lightweight data tool. Day 45 is the PRIMARY Phase 3 go/no-go gate per the 45-day project roadmap. Day 60 is a confirmation gate for Scenario 3 (Churn Risk) only.",
     "operator": "Anya — solo operator",
+    "phase3_decision_logic": {
+      "primary_gate": "Day 45 (2026-07-14) — binding for Scenarios 1, 2, and 4",
+      "confirmation_gate": "Day 60 (2026-07-29) — Scenario 3 (Churn Risk) only",
+      "decision_window_rationale": "Original 45-day roadmap sets Day 45 as the Phase 3 commitment deadline. Day 60 is a recovery check for ambiguous data only."
+    },
     "references": [
-      "phase-2-customer-success-framework.md",
+      "phase-2-customer-success-framework.md (v2.0 — command layer; 45-day gate structure)",
       "phase-2-analytics-strategy.md",
       "phase-2-buyer-retention-lifecycle-strategy.md",
-      "analytics/monthly-metrics-checklist.md"
+      "analytics/monthly-metrics-checklist.md",
+      "TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md (7-metric launch-day dashboard — feeds into M01, M04, M06, M11, M13)"
     ]
   },
 
@@ -436,23 +443,23 @@
       "id": "M23",
       "name": "phase3_readiness_score",
       "display_name": "Phase 3 Readiness Score",
-      "definition": "Composite pass/fail score across 6 criteria evaluated at Day 60 (July 29, 2026). Each criterion is binary (PASS or FAIL). Score is count of PASSes out of 6.",
+      "definition": "Composite pass/fail score across 6 criteria. Preliminary evaluation at Day 30; binding evaluation at Day 45 (PRIMARY gate). Day 60 used only for Scenario 3 (Churn Risk) recovery confirmation. Each criterion is binary (PASS or FAIL). Score is count of PASSes out of 6.",
       "source": "composite (ltv_tracker_spreadsheet + kit_email_platform + etsy_shop_manager + post_purchase_survey)",
-      "cadence": "Day 30 (preliminary) + Day 60 (decision gate)",
+      "cadence": "Day 30 (preliminary) + Day 45 (PRIMARY binding gate) + Day 60 (Scenario 3 only)",
       "unit": "score (0-6)",
       "criteria": [
-        {"id": "C1", "description": "Total orders >= 50 by Day 60", "source": "M01"},
-        {"id": "C2", "description": "Gross revenue >= $1,000 in Month 2", "source": "M02"},
-        {"id": "C3", "description": "Phase 1 to Phase 2 conversion rate >= 8%", "source": "M06"},
-        {"id": "C4", "description": "Repeat purchase rate >= 10% at Day 60", "source": "M08"},
-        {"id": "C5", "description": "Kit subscribers >= 80 by Day 60", "source": "M11"},
+        {"id": "C1", "description": "Total orders >= 40 by Day 45 (or >= 50 by Day 60 if Scenario 3)", "source": "M01"},
+        {"id": "C2", "description": "Gross revenue >= $800 in Month 2 (or >= $1,000 by Day 60 if Scenario 3)", "source": "M02"},
+        {"id": "C3", "description": "Phase 1 to Phase 2 conversion rate >= 8% at Day 45", "source": "M06"},
+        {"id": "C4", "description": "Repeat purchase rate >= 8% at Day 45 (14%+ for Scenario 1)", "source": "M07"},
+        {"id": "C5", "description": "Kit subscribers >= 60 by Day 45 (>= 80 by Day 60)", "source": "M11"},
         {"id": "C6", "description": "NPS >= 40 (Day 30 survey data)", "source": "M16"}
       ],
       "thresholds": {
-        "6_of_6": "Scenario 1 — Full Phase 3 GO (Women's Health bundle + Tier 2 wholesale, September 2026)",
-        "4_or_5_of_6": "Scenario 2 — Standard Phase 3 GO (Women's Health bundle September, Tier 2 wholesale November)",
-        "2_or_3_of_6": "Scenario 3 — Churn Risk, CONDITIONAL GO (run diagnosis protocol; defer Phase 3 to November pending Day 90 recovery)",
-        "0_or_1_of_6": "Fundamental issue — pause Phase 3 entirely; fix Phase 2 foundations before any further expansion"
+        "5_or_6_of_6_at_day45": "Scenario 1 — Full Phase 3 GO (Women's Health bundle + Tier 2 wholesale, September 2026). Decision final at Day 45.",
+        "3_or_4_of_6_at_day45": "Scenario 2 — Standard Phase 3 GO (Women's Health bundle September, Tier 2 wholesale November). Decision final at Day 45.",
+        "1_or_2_of_6_at_day45": "Scenario 3 — Churn Risk, CONDITIONAL (run diagnosis protocol; evaluate recovery at Day 60)",
+        "0_of_6_at_day45": "Fundamental issue — pause Phase 3 entirely; fix Phase 2 foundations before any further expansion"
       }
     },
     {
@@ -498,22 +505,25 @@
     },
     {
       "id": "AR02",
-      "name": "day_45_expansion_gate",
-      "trigger": "Day 45 post Phase 2 launch (2026-07-14)",
-      "action": "Evaluate whether Phase 2 product expansion (new listings) is ready to proceed. Pull M01 (cumulative orders), M08 (60-day repeat rate, preliminary), M11 (Kit subscribers), M19 (cohort distribution).",
-      "decision_rule": "If M01 < 40 orders AND M11 < 50 subscribers: delay expansion. If M01 >= 40 AND M11 >= 50: expansion can proceed as planned.",
-      "notify": "Record expansion decision (GO or WAIT) in WORKLOG.md."
+      "name": "day_45_primary_phase3_gate",
+      "trigger": "Day 45 post Phase 2 launch (2026-07-14) — PRIMARY go/no-go date per 45-day roadmap",
+      "action": "Pull M01, M02, M06, M07, M08, M11, M18, M19, M20, M23. Match to Scenario 1/2/3/4 per phase-2-customer-success-framework.md Part 4.1a quick-reference table. Record binding Phase 3 decision.",
+      "decision_rule": {
+        "scenario_1_high_growth": "M06 >= 8% AND M07 >= 14% AND buyers >= 75 → FULL_GO: Begin Women's Health bundle development August 1. Initiate Tier 2 wholesale outreach. Decision is final — no Day 60 check required.",
+        "scenario_2_steady_growth": "M06 4-8% AND M07 8-14% AND buyers 40-75 → STANDARD_GO: Begin Women's Health bundle development August 1. Tier 2 wholesale deferred to Day 90. Decision is final.",
+        "scenario_3_churn_risk": "M06 < 4% OR M07 < 6% OR buyers < 35 → CONDITIONAL: Activate diagnosis protocol. Defer Phase 3 commitment. Re-evaluate at Day 60 (July 29).",
+        "scenario_4_explosive": "Already triggered before Day 45 → CONFIRM and record. No new decision."
+      },
+      "notify": "Decision must be recorded in WORKLOG.md by July 16, 2026. For Scenario 3: note which metric(s) triggered conditional status and activate diagnosis protocol same day."
     },
     {
       "id": "AR03",
-      "name": "day_60_phase3_decision",
-      "trigger": "Day 60 post Phase 2 launch (2026-07-29)",
-      "action": "Calculate M23 (Phase 3 Readiness Score). Match score to Scenario 1/2/3/4 per phase-2-customer-success-framework.md Part 4. Record decision.",
+      "name": "day_60_scenario3_confirmation",
+      "trigger": "Day 60 post Phase 2 launch (2026-07-29) — ONLY if Day 45 was Scenario 3 (Churn Risk). Skip for Scenarios 1 and 2.",
+      "action": "Pull M06, M07, M08, M11, M16, M20. Determine whether churn was recoverable (repeat rate recovered to 8%+) or structural (still below 6%).",
       "decision_rule": {
-        "6_of_6": "FULL_GO: Begin Women's Health bundle development August 1. Initiate Tier 2 wholesale outreach.",
-        "4_or_5_of_6": "STANDARD_GO: Begin Women's Health bundle development August 1. Tier 2 wholesale deferred to Day 90 check.",
-        "2_or_3_of_6": "CONDITIONAL: Run Churn Risk diagnosis protocol. Defer Phase 3 development. Re-evaluate at Day 90 (October 29).",
-        "0_or_1_of_6": "HOLD: Phase 3 paused. Focus on Phase 2 remediation."
+        "recovery_confirmed": "M07 >= 8% at Day 60 → COMPRESSED_GO: Women's Health bundle development begins; target December 2026 launch.",
+        "structural_churn": "M07 < 6% at Day 60 → DEFER: Phase 3 moved to Q1 2027. Document root cause in WORKLOG.md."
       },
       "notify": "Decision must be recorded in WORKLOG.md by July 31, 2026."
     },
@@ -574,29 +584,53 @@
   ],
 
   "checkpoint_schedule": {
+    "day_0": {
+      "date": "2026-05-30",
+      "label": "Launch Day Activation",
+      "metrics_to_establish": ["baseline_order_count", "baseline_kit_subscribers", "ltv_tracker_completeness"],
+      "time_required": "60 minutes (before 10:00 AM)",
+      "output": "T=0 baseline recorded in Daily tab; Kit automation verified; LTV tracker zero-state committed. No decisions — this is setup only.",
+      "reference": "phase-2-customer-success-framework.md Part 0 (Day 1 Measurement Activation)"
+    },
     "day_30": {
       "date": "2026-06-29",
+      "label": "Early Warning Checkpoint (diagnostic only — not a go/no-go gate)",
       "metrics_to_pull": ["M01", "M07", "M11", "M16", "M19", "M23"],
       "time_required": "45 minutes",
-      "output": "Preliminary Phase 3 readiness score + any Level 1 escalations"
+      "output": "Preliminary Phase 3 readiness score (M23) recorded. Any Level 1 escalations triggered. No Phase 3 decision made at Day 30.",
+      "escalation_triggers": {
+        "total_orders_below_20": "Traffic vs. conversion diagnostic in phase-2-analytics-strategy.md",
+        "repeat_rate_below_5pct": "Kit automation check — do not wait for Sunday review",
+        "kit_subscribers_below_30": "Landing page / lead magnet funnel audit"
+      }
     },
     "day_45": {
       "date": "2026-07-14",
-      "metrics_to_pull": ["M01", "M08", "M11", "M18", "M19", "M20"],
-      "time_required": "30 minutes",
-      "output": "Phase 2 expansion go/no-go decision recorded in WORKLOG.md"
+      "label": "PRIMARY Phase 3 Go/No-Go Gate (binding decision — 45-day roadmap window)",
+      "metrics_to_pull": ["M01", "M02", "M06", "M07", "M08", "M11", "M18", "M19", "M20", "M23"],
+      "time_required": "45 minutes",
+      "output": "Phase 3 go/no-go decision (Scenario 1/2/3/4) recorded in WORKLOG.md by July 16. Final for Scenarios 1, 2, and 4. Conditional for Scenario 3 (defers to Day 60 confirmation).",
+      "decision_rule": {
+        "scenario_1": "Repeat rate > 14% AND conversion > 8% AND buyers >= 75 → Full GO",
+        "scenario_2": "Repeat rate 8-14% AND conversion 4-8% AND buyers 40-75 → Standard GO",
+        "scenario_3": "Repeat rate < 6% OR conversion < 4% OR buyers < 35 → Conditional; activate diagnosis; defer to Day 60",
+        "scenario_4": "Already triggered before Day 45 (Day 14 signal) → Confirm and record"
+      }
     },
     "day_60": {
       "date": "2026-07-29",
-      "metrics_to_pull": ["M01", "M02", "M06", "M08", "M11", "M16", "M19", "M23", "M24"],
-      "time_required": "45 minutes",
-      "output": "Phase 3 go/no-go decision (Scenario 1/2/3/4) recorded in WORKLOG.md by July 31"
+      "label": "Scenario 3 Confirmation Gate (skip if Day 45 was Scenario 1 or 2)",
+      "metrics_to_pull": ["M01", "M06", "M07", "M08", "M11", "M16", "M20"],
+      "time_required": "30 minutes",
+      "output": "Scenario 3 recovery evaluation: repeat rate recovered to 8%+ → compressed Phase 3 GO (December 2026). Still below 6% → defer to Q1 2027. Decision in WORKLOG.md by July 31.",
+      "note": "For Scenarios 1 and 2: Day 60 falls in the regular monthly review cadence. No special gate action required."
     },
     "day_90": {
       "date": "2026-08-28",
+      "label": "Monthly Deep Dive + Phase 3 Development Progress Check",
       "metrics_to_pull": ["M01", "M02", "M06", "M09", "M10", "M11", "M16", "M19", "M24"],
       "time_required": "2 hours (full monthly deep-dive)",
-      "output": "Cohort LTV validation; Phase 3 execution status check; Women's Health bundle development progress"
+      "output": "Cohort LTV validation; Phase 3 execution status check; Women's Health bundle development progress; Tier 2 wholesale readiness assessment"
     }
   },
 
@@ -620,49 +654,61 @@
   },
 
   "phase3_trigger_summary": {
+    "gate_structure_note": "Day 45 (2026-07-14) is the PRIMARY go/no-go gate for all scenarios. Day 60 (2026-07-29) is used only for Scenario 3 (Churn Risk) recovery confirmation. The original 45-day project roadmap is the binding commitment window.",
     "scenario_1_high_growth": {
-      "triggers": {
+      "evaluation_date": "Day 45 (2026-07-14)",
+      "triggers_all_required": {
         "phase1_to_phase2_conversion": ">= 8%",
-        "repeat_purchase_rate_60d": ">= 18%",
-        "cohort_size_day_60": ">= 100 unique buyers"
+        "repeat_purchase_rate_day45": ">= 14%",
+        "cohort_size_day45": ">= 75 unique buyers"
       },
-      "decision": "Full Phase 3 GO",
+      "decision": "Full Phase 3 GO — binding at Day 45",
+      "development_start": "August 1, 2026",
       "womens_health_bundle_launch": "September 2026",
       "tier2_wholesale": "September 2026",
       "revenue_target_october": "$2,800 - $3,800/month gross"
     },
     "scenario_2_steady_growth": {
-      "triggers": {
+      "evaluation_date": "Day 45 (2026-07-14)",
+      "triggers_two_of_three_required": {
         "phase1_to_phase2_conversion": "4-8%",
-        "repeat_purchase_rate_60d": "10-18%",
-        "cohort_size_day_60": "50-100 unique buyers"
+        "repeat_purchase_rate_day45": "8-14%",
+        "cohort_size_day45": "40-75 unique buyers"
       },
-      "decision": "Standard Phase 3 GO",
+      "decision": "Standard Phase 3 GO — binding at Day 45",
+      "development_start": "August 1, 2026",
       "womens_health_bundle_launch": "September 2026",
-      "tier2_wholesale": "November 2026 (pending Day 90 check)",
+      "tier2_wholesale": "November 2026 (pending Day 90 check at October 29 — target: 75+ buyers)",
       "revenue_target_october": "$1,800 - $2,500/month gross"
     },
     "scenario_3_churn_risk": {
+      "evaluation_date": "Day 45 (2026-07-14) — conditional; confirmed at Day 60 (2026-07-29)",
       "triggers_any_one": {
-        "repeat_purchase_rate_60d": "< 8%",
+        "repeat_purchase_rate_day45": "< 6%",
         "phase1_to_phase2_conversion": "< 4%",
-        "cohort_size_day_60": "< 50 unique buyers"
+        "cohort_size_day45": "< 35 unique buyers"
       },
-      "decision": "Conditional GO — diagnose first",
-      "womens_health_bundle_launch": "November 2026 (pending Day 90 recovery check)",
-      "tier2_wholesale": "On hold indefinitely until repeat rate crosses 10%",
+      "decision_at_day45": "CONDITIONAL — activate diagnosis protocol; defer Phase 3 commitment",
+      "decision_at_day60": {
+        "recovery_confirmed": "Repeat rate >= 8% → Compressed GO (Women's Health bundle December 2026)",
+        "structural_churn": "Repeat rate still < 6% → Defer to Q1 2027"
+      },
+      "tier2_wholesale": "On hold until repeat rate crosses 10%",
       "diagnosis_protocol": "See phase-2-customer-success-framework.md Part 4.1 Scenario 3"
     },
     "scenario_4_explosive_growth": {
+      "evaluation_date": "Day 14 (2026-06-13) — trigger visible before Day 45",
       "triggers_early_signal": {
         "orders_per_day_day14": ">= 5",
         "kit_growth_per_day": ">= 10 subscribers/day",
         "repeat_signal_day14": "Any second purchase within 14 days of first"
       },
-      "decision": "Immediate Phase 3 acceleration — do not wait for Day 60",
+      "decision": "Immediate Phase 3 acceleration — do not wait for Day 45",
+      "development_start": "Immediate (within 72 hours of signal detection)",
       "womens_health_bundle_launch": "August 15, 2026",
       "tier2_wholesale": "September 2026",
-      "contractor_trigger": "If total weekly work hours exceed 20: outsource social media content or mockup production"
+      "contractor_trigger": "If total weekly work hours exceed 20 at Day 21: outsource social media content or mockup production",
+      "revenue_target_october": "$4,000 - $6,000/month gross"
     }
   }
 }

@@ -1,11 +1,12 @@
 ---
 title: "Phase 2 Customer Success & Retention Framework"
 date: 2026-05-07
+version: "2.0"
 status: production-ready
-scope: Phase 1→Phase 2 conversion modeling, customer segmentation, retention mechanics, Phase 3 go/no-go decision tree, dashboard designs, escalation logic
+scope: Phase 1→Phase 2 conversion modeling, customer segmentation, retention mechanics, Phase 3 go/no-go decision tree, dashboard designs, escalation logic, Day 1 measurement activation
 launch-date: 2026-05-30
-phase-2-expansion-date: 2026-07-14 (approx. Day 45 post-launch)
-phase-3-decision-date: 2026-07-29 (Day 60 checkpoint)
+phase-3-primary-decision-date: 2026-07-14 (Day 45 — primary go/no-go gate per original roadmap)
+phase-3-confirmation-date: 2026-07-29 (Day 60 — final confirmation if Day 45 was conditional)
 references:
   - phase-2-analytics-strategy.md (data architecture, cohort definitions, dashboard templates)
   - phase-2-buyer-retention-lifecycle-strategy.md (6-campaign email system, LTV model)
@@ -13,6 +14,8 @@ references:
   - phase-3-decision-framework.md (Option A/B/C/D decision tree)
   - financial-sustainability-model.md (unit economics, break-even model)
   - analytics/monthly-metrics-checklist.md (operator runbook)
+  - TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md (7-metric KPI dashboard, T+12h and T+38h gates)
+  - phase-2-analytics-dashboard-schema.json (metric definitions + automation rules)
 ---
 
 # Phase 2 Customer Success & Retention Framework
@@ -30,6 +33,84 @@ clarity at every gate — no ambiguous "monitor and decide" language.
 **Audience**: Anya, solo operator. Every framework, threshold, and trigger below is designed to
 be operated by one person using Google Sheets, Kit, and Etsy Shop Manager. No engineering
 required.
+
+---
+
+## Part 0: Day 1 Measurement Activation (May 30, 2026 — Before 10:00 AM)
+
+This section is the pre-flight checklist for success measurement. Every metric, automation rule,
+and decision gate in this document produces accurate data only if the infrastructure below is
+active before the first Phase 2 order lands. This is not a "set up later" section — it is a
+launch-blocker if incomplete.
+
+### 0.1 Baseline Record (Complete Before 9:00 AM May 30)
+
+Open the LTV tracker (`analytics/data/customer-ltv-tracker.csv`) and confirm:
+
+1. All 47 Phase 1 buyers have a row with `first_order_date` populated
+2. Each row has a `phase2_adoption_tier` value (High / Medium / Lower / Low) from the
+   conversion prediction rules in Part 1.2
+3. Column `kit_subscriber` is populated (yes / no) for every Phase 1 buyer
+4. Column `cohort_tag` is populated for buyers with known purchase signals
+
+This snapshot is the denominator for every Phase 1→Phase 2 conversion calculation. Without it,
+the Day 45 phase gate cannot produce a valid conversion rate.
+
+### 0.2 Kit Automation Verification (Complete Before 9:00 AM May 30)
+
+Perform this test sequence, not just a visual inspection:
+
+1. Submit a test email address to the Kit landing page
+2. Confirm Campaign 1 Email 1 arrives within 5 minutes
+3. Confirm the Kit dashboard increments subscriber count by 1
+4. Confirm the `purchased` tag is NOT applied to the test subscriber (it should only apply
+   after an Etsy order is confirmed)
+5. Delete the test subscriber from Kit after confirming the sequence
+
+If any step fails: do not proceed with launch until Kit automation is working. The entire
+lifecycle campaign depends on this sequence triggering correctly from the first order.
+
+Backup: If Kit automation cannot be verified before 9:30 AM on May 30, activate Option B
+(manual CSV tag assignment per `TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md` Contingency E).
+
+### 0.3 Dashboard Zero-State (Complete Before 9:30 AM May 30)
+
+Open the Google Sheet `seedwarden-analytics-dashboard.xlsx` and record the following as the
+T=0 baseline in the "Daily" tab:
+
+```
+MAY 30 LAUNCH DAY ZERO-STATE
+==============================
+Time recorded: ___ AM/PM
+Etsy total orders to date (Phase 1 cumulative): 47
+Phase 1 LTV tracker rows complete: ___
+Kit subscriber count at T=0: ___
+Kit automation verified: YES / NO
+Dashboard tabs populated: Daily / Weekly / Monthly / LTV_Tracker / Checkpoint_Log
+```
+
+From this point forward, every metric comparison has a confirmed baseline. The Day 45 and Day 60
+gate calculations are reliable only if this T=0 state was recorded.
+
+### 0.4 Linking the Launch-Day 7-Metric Dashboard to Long-Term Tracking
+
+The `TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md` runs a 7-metric KPI dashboard on 6-hour intervals
+for the first 38 hours. Those 7 metrics (Kit signups, social engagement per platform, orders,
+email open rate, AOV, supplier fulfillment) are leading indicators of the longer-term metrics
+tracked in this framework. The mapping:
+
+| Launch-Day Metric (T+12h / T+38h) | Long-Term Metric (Day 30 / Day 45 / Day 60) |
+|---|---|
+| Kit signups: 12+ at T+12h; 20-35 at T+38h | M11 (Kit subscriber count): 40+ by Day 30, 80+ by Day 60 |
+| Orders: 5-12 at T+12h; 10-20 at T+38h | M01 (total orders): 25+ by Day 30, 50+ by Day 60 |
+| Email open rate: 25%+ at T+12h | M13 (Campaign 1 open rate): 40%+ steady state |
+| AOV: $18-25 at T+38h | M04 (AOV): $25+ target |
+| Repeat customer orders (T+38h): 2-4 from Phase 1 | M06 (Phase 1→Phase 2 conversion): 8%+ by Day 45 |
+
+If the T+38h checkpoint from the Launch Day Operations Guide shows RED (under 10 orders, AOV
+under $15, or Kit under 15 signups), recalibrate the Day 30 and Day 45 thresholds downward
+by 20% and note the recalibration in WORKLOG.md. The Day 45 gate criteria remain fixed — only
+the diagnostic midpoint expectations shift.
 
 ---
 
@@ -393,31 +474,47 @@ Phase 2 launch. All are based on logical product complementarity, not speculativ
 
 ### 4.1 Decision Gate Structure
 
-Phase 3 (Women's Health bundle launch + Tier 2 wholesaling) triggers on Day 60 metrics
-(approximately July 29, 2026). The evaluation window is Day 45–60 post-Phase-2-launch.
-There are four scenarios, each with a specific go/no-go outcome and action plan.
+Phase 3 (Women's Health bundle launch + Tier 2 wholesaling) has a primary decision gate
+at Day 45 (July 14, 2026) and a confirmation gate at Day 60 (July 29, 2026).
 
-The four scenarios are not discrete outcomes — they are points on a spectrum. Match the
-actual Day 60 data to the scenario that fits most closely.
+**Why two gates, not one**: The original 45-day decision window (per the project roadmap)
+is the binding commitment deadline. If Phase 2 is clearly on one trajectory by Day 45, the
+Phase 3 decision is made then — no waiting. Day 60 exists only for ambiguous situations where
+Day 45 data is insufficient to distinguish between Scenarios 2 and 3 with confidence.
+
+**Day 45 primary gate (July 14, 2026)**: The default decision date. At this point, Phase 2
+has completed its first full buyer cohort cycle (buyers who purchased in the first week have
+had 45 days to make a repeat purchase). Repeat purchase rate is measurable and reliable.
+This is the go/no-go decision unless the data explicitly requires 15 additional days of
+evidence collection (see conditional path below).
+
+**Day 60 confirmation gate (July 29, 2026)**: Used only when Day 45 data shows Scenario 3
+(Churn Risk) conditions and the operator needs to determine whether the churn is temporary
+(a recoverable KPI lag) or structural (a product-market fit problem). For Scenarios 1, 2,
+and 4, the Day 45 decision is final and Phase 3 development begins immediately.
+
+There are four scenarios. Match the actual Day 45 data to the scenario that fits most closely.
 
 ### Scenario 1: High Growth
 
-**Trigger conditions (all three must be met):**
-- Phase 2 conversion rate at Day 60: above 8% Phase 1→Phase 2 conversion AND new buyer
-  conversion rate above 2.5%
-- Repeat purchase rate at Day 60: above 18% (of all Phase 2 buyers making a second purchase)
-- Phase 2 cohort size: 100+ unique buyers by Day 60
+**Trigger conditions at Day 45 (all three must be met):**
+- Phase 1→Phase 2 conversion rate: above 8% AND new buyer conversion rate above 2.5%
+- Repeat purchase rate at Day 45: above 14% (buyers making a second purchase within 45 days)
+- Phase 2 cohort size: 75+ unique buyers by Day 45
 
-**Decision: Full Phase 3 GO — launch Women's Health bundle AND initiate Tier 2 wholesaling**
+**Decision: Full Phase 3 GO at Day 45 — begin Women's Health bundle AND initiate Tier 2 wholesaling**
+
+This decision is final at Day 45. No Day 60 confirmation required.
 
 Timeline:
+- August 1: Begin Women's Health bundle development (7-week lead to September launch)
 - September 2026: Women's Health themed bundle launch (medicinal herb themed bundles from
   `phase-3-medicinal-herbs-strategy.md`)
 - September 2026: Begin Tier 2 wholesale outreach to law school libraries, union organizations,
   herbalism schools (per `B2B_DISTRIBUTION_STRATEGY.md` Tier 2 targets)
 
 Specific actions:
-1. Begin Women's Health bundle development August 1 (7-week lead time to September launch)
+1. Begin Women's Health bundle development August 1
 2. Draft Tier 2 outreach template using `phase-3-cohort-messaging.md` wholesale framing
 3. Increase Kit email cadence for Herbalist segment to 2x/month starting August 1
 4. Accelerate Phase 3 product development to Option C (aggressive) timeline per
@@ -427,19 +524,22 @@ Revenue expectation: $2,800–$3,800/month gross by October 2026
 
 ### Scenario 2: Steady Growth
 
-**Trigger conditions (two of three must be met):**
-- Phase 2 conversion rate at Day 60: 4–8% Phase 1→Phase 2 AND new buyer rate 1.5–2.5%
-- Repeat purchase rate at Day 60: 10–18%
-- Phase 2 cohort size: 50–100 unique buyers by Day 60
+**Trigger conditions at Day 45 (two of three must be met):**
+- Phase 1→Phase 2 conversion rate: 4–8% AND new buyer rate 1.5–2.5%
+- Repeat purchase rate at Day 45: 8–14%
+- Phase 2 cohort size: 40–75 unique buyers by Day 45
 
-**Decision: Standard Phase 3 GO — Women's Health bundle launch, Tier 2 wholesaling on hold**
+**Decision: Standard Phase 3 GO at Day 45 — Women's Health bundle launch, Tier 2 wholesaling on hold**
+
+This decision is final at Day 45. No Day 60 confirmation required.
 
 Timeline:
-- September 2026: Women's Health bundle launch (same target date as Scenario 1)
-- Tier 2 wholesale deferred to November 2026 pending Day 90 cohort size check
+- August 1: Begin Women's Health bundle development (same timing as Scenario 1)
+- September 2026: Women's Health bundle launch
+- Tier 2 wholesale deferred to November 2026 pending Day 90 cohort size check (target: 75+ buyers)
 
 Specific actions:
-1. Begin Women's Health bundle development August 1 (same timing as Scenario 1)
+1. Begin Women's Health bundle development August 1
 2. Hold Tier 2 wholesale outreach; run Day 90 check (October 29) to see if cohort reaches 75+
 3. Continue standard Phase 3 Option B execution per `phase-3-decision-framework.md`
 4. Prioritize highest-LTV segments (Herbalist and Homesteader) for acquisition content in
@@ -449,18 +549,25 @@ Revenue expectation: $1,800–$2,500/month gross by October 2026
 
 ### Scenario 3: Churn Risk
 
-**Trigger conditions (any one of the following):**
-- Repeat purchase rate at Day 60: below 8%
-- Phase 2 conversion rate (Phase 1 base): below 4%
-- Cohort size below 50 unique buyers at Day 60 despite active Phase 2 launch
+**Trigger conditions at Day 45 (any one of the following):**
+- Repeat purchase rate at Day 45: below 6%
+- Phase 1→Phase 2 conversion rate: below 4%
+- Cohort size below 35 unique buyers at Day 45 despite active Phase 2 launch
 
-**Decision: Phase 3 CONDITIONAL — diagnose retention failure before committing Phase 3 resources**
+**Decision: Phase 3 CONDITIONAL at Day 45 — do not commit Phase 3 resources. Run diagnosis.
+Reconvene at Day 60 (July 29) for final go/no-go.**
+
+This is the only scenario that uses the Day 60 gate. The 15 additional days give time to
+determine whether the low metrics are a recoverable execution problem (Kit automation failure,
+deliverability issue) or a structural problem (wrong product, wrong audience).
 
 Timeline:
-- September 2026 Women's Health launch: delayed to November pending Day 90 recovery check
-- Tier 2 wholesale: on hold indefinitely until repeat rate crosses 10%
+- Day 45: Activate diagnosis protocol (below) within 48 hours
+- Day 60 (July 29): Final Phase 3 decision based on whether repeat rate has recovered
+- September 2026 Women's Health launch: delayed to November pending Day 60 recovery check
+- Tier 2 wholesale: on hold until repeat rate crosses 10%
 
-Specific diagnosis protocol (execute within 48 hours of detecting Churn Risk signals):
+Specific diagnosis protocol (execute within 48 hours of detecting Churn Risk signals at Day 45):
 
 Step 1: Check Kit automation — are all 6 campaigns firing correctly? Test the end-to-end
 sequence with a new test subscriber. If Campaign 1 is not sending within 2 hours of purchase,
@@ -478,22 +585,22 @@ Step 4: Check email deliverability — SPF/DKIM configured? Is Kit sending from 
 If 30%+ of Kit sends are going to spam, the lifecycle campaign is reaching zero buyers despite
 being technically "active."
 
-Day 90 recovery check (October 29): If repeat rate has reached 10%+ by Day 90, initiate Phase
-3 development with compressed timeline (Women's Health bundle by December 2026). If still
-below 8%, defer Phase 3 to Q1 2027.
+Day 60 recovery check (July 29): If repeat rate has reached 8%+ by Day 60 (up from below 6%
+at Day 45), the churn was recoverable. Initiate Phase 3 development with a compressed timeline
+(Women's Health bundle by December 2026). If still below 6% at Day 60, defer Phase 3 to Q1 2027.
 
 ### Scenario 4: Explosive Growth
 
-**Trigger conditions (early signal, visible by Day 30):**
+**Trigger conditions (early signal — visible by Day 14, before the Day 45 gate):**
 - Phase 2 is producing 5+ orders per day within the first 14 days of launch
 - Kit is growing by 10+ subscribers per day
-- Repeat purchase rate visible at Day 14 (buyers making second purchase before Day 14 post-
-  first-purchase — rare but a powerful loyalty signal)
+- Any buyer makes a second purchase within 14 days of their first (rare — a powerful loyalty
+  signal that predicts a very compressed repeat purchase cycle)
 
-**Decision: Immediate Phase 3 acceleration — compress timeline, consider contractor support**
+**Decision: Immediate Phase 3 acceleration — do not wait for Day 45**
 
-This scenario requires real-time response, not waiting for Day 60. If explosive growth signals
-appear in the first two weeks, the following actions activate immediately:
+This scenario requires real-time response. If explosive growth signals appear in the first two
+weeks, the following actions activate immediately:
 
 Immediate actions (within 72 hours of detecting signal):
 1. Increase Kit email frequency for all segments to maximum weekly cadence
@@ -505,16 +612,28 @@ Immediate actions (within 72 hours of detecting signal):
 
 Contractor trigger: If order processing + email management + product development work exceeds
 20 hours/week, identify one task to outsource (most likely: social media content or mockup
-production). This threshold should be assessed at Day 21.
+production). Assess this threshold at Day 21.
 
 Revenue expectation: $4,000–$6,000/month gross by October 2026
+
+### 4.1a Scenario Quick-Reference Table
+
+| Scenario | Day 45 Repeat Rate | Day 45 Conversion | Day 45 Buyers | Decision at Day 45 | Day 60 Needed? |
+|---|---|---|---|---|---|
+| 1: High Growth | above 14% | above 8% | 75+ | Full Phase 3 GO | No |
+| 2: Steady Growth | 8–14% | 4–8% | 40–75 | Standard Phase 3 GO | No |
+| 3: Churn Risk | below 6% | below 4% | below 35 | Conditional — diagnose | YES |
+| 4: Explosive Growth | N/A (Day 14 signal) | N/A | N/A | Immediate acceleration | No |
 
 ### 4.2 Automated Day 30 / Day 45 / Day 60 Checkpoint Alerts
 
 These three checkpoints do not require the operator to remember to check. They are built into
 the weekly dashboard review cadence but flagged explicitly here so the cadence is unmistakable.
 
-**Day 30 Checkpoint (June 29, 2026)**
+**Day 30 Checkpoint (June 29, 2026) — Early Warning**
+
+Purpose: Catch execution problems before they become Phase 3 gate failures. This is a
+diagnostic checkpoint, not a go/no-go decision.
 
 Metrics to pull and record:
 - Total Phase 2 orders to date
@@ -523,32 +642,61 @@ Metrics to pull and record:
 - Top-selling Phase 2 product
 - Cohort distribution (% of buyers per cohort tag in Kit)
 
-Alert thresholds triggering escalation to user:
-- Total orders below 20 by Day 30: run the under-performance diagnosis in Part 4.2 of
-  `phase-2-analytics-strategy.md` (traffic vs. conversion problem diagnostic)
+Alert thresholds triggering immediate escalation (do not wait for Sunday review):
+- Total orders below 20 by Day 30: run the traffic vs. conversion diagnostic in `phase-2-analytics-strategy.md`
 - Repeat rate below 5% at Day 30: check Kit automation immediately (see Churn Risk protocol)
-- Kit subscriber count below 30 at Day 30: the landing page / lead magnet funnel has a
-  problem; check Kit landing page is live, UTM parameters are on all links
+- Kit subscriber count below 30 at Day 30: landing page / lead magnet funnel has a problem;
+  verify Kit page is live, UTM parameters are on all links
 
-**Day 45 Checkpoint (July 14, 2026)**
+Day 30 data also feeds the preliminary Phase 3 readiness score (M23 in schema) — run it now
+so the Day 45 gate is not the first time you see the trajectory.
 
-This checkpoint coincides approximately with the planned Phase 2 expansion date. Metrics:
-- Total orders (cumulative)
-- Phase 2 cohort size (unique buyers)
-- Repeat purchase rate (30-day cohort: buyers from June 1–29 who re-purchased in July)
-- Bundle attach rate (% of orders containing bundles)
+**Day 45 Checkpoint (July 14, 2026) — PRIMARY Go/No-Go Gate**
+
+This is the binding Phase 3 decision date per the original 45-day project roadmap. All four
+scenarios resolve here for Scenarios 1, 2, and 4. Only Scenario 3 (Churn Risk) defers to Day 60.
+
+Metrics to pull (full list — allow 45 minutes):
+- Total orders cumulative (M01)
+- Gross revenue Month 2 (M02)
+- Phase 1→Phase 2 conversion rate (M06) — this is the primary indicator
+- 30-day repeat purchase rate (M07) and preliminary 60-day rate (M08)
+- Phase 2 cohort size: unique buyers by name in LTV tracker
+- Bundle attach rate: % of orders containing bundle listings (M18)
+- Kit subscriber count (M11)
+- Cohort distribution (M19)
+- At-risk buyer count (M20)
+
+Decision procedure:
+1. Pull all metrics above
+2. Match to Scenario 1, 2, 3, or 4 using the quick-reference table in Section 4.1a
+3. If Scenario 1 or 2: make Phase 3 decision immediately, record in WORKLOG.md, begin
+   Phase 3 development prep
+4. If Scenario 3: activate diagnosis protocol; schedule Day 60 check
+5. If Scenario 4 signals already appeared before Day 45: confirm and record the decision
+   already made; no new decision required
 
 Alert thresholds:
-- Cohort size below 40 unique buyers at Day 45: Phase 2 expansion should wait until Day 60
-  data arrives before committing new product development resources
-- Bundle attach rate below 5%: the bundle recommendation logic in Campaign 3 is not
-  converting; audit the bundle-to-first-purchase product pairings in Section 3.3
+- Cohort size below 35 unique buyers at Day 45: Scenario 3 territory — run diagnosis protocol
+- Bundle attach rate below 5%: Campaign 3 bundle recommendation logic needs audit
+- Phase 1→Phase 2 conversion below 4%: Scenario 3 — check Kit tag coverage for Phase 1 buyers
 
-**Day 60 Checkpoint (July 29, 2026) — Primary Go/No-Go Gate**
+Decision must be recorded in WORKLOG.md within 48 hours of July 14, 2026.
 
-This is the Phase 3 decision date. Pull all metrics from the analytics dashboard, match to
-the four Scenarios above, and make the Phase 3 call. Decision must be recorded in WORKLOG.md
-with the reasoning within 48 hours of July 29.
+**Day 60 Checkpoint (July 29, 2026) — Scenario 3 Confirmation Gate Only**
+
+If Day 45 produced a clear Scenario 1 or 2 outcome, this checkpoint is a routine monthly
+review — no special decision required. Skip directly to the monthly dashboard block.
+
+If Day 45 was Scenario 3 (Churn Risk): this is the recovery evaluation. Pull the same
+metrics as Day 45. The question is binary: has repeat rate recovered from below 6% to 8%+?
+
+- Repeat rate at Day 60 is 8%+: churn was recoverable. Initiate compressed Phase 3 timeline
+  (Women's Health bundle by December 2026). Record decision in WORKLOG.md.
+- Repeat rate at Day 60 still below 6%: structural problem confirmed. Defer Phase 3 to Q1
+  2027. Document root cause in WORKLOG.md.
+
+Decision must be recorded in WORKLOG.md by July 31, 2026.
 
 ---
 
@@ -693,22 +841,25 @@ BLOCK C: RETENTION MECHANICS VALIDATION
     is not materializing. Audit Campaign 2 content relevance first.
 
 BLOCK D: PHASE 3 READINESS SCORE
-  Evaluate at end of Month 1 and Month 2 (Days 30 and 60).
-  Score out of 6 criteria:
+  Evaluate at Day 30 (preliminary), Day 45 (PRIMARY binding gate), Day 60 (Scenario 3 only).
+  Score out of 6 criteria — use Day 45 values for the binding evaluation:
 
-  [ ] Criterion 1: Total orders ≥ 50 by Day 60                      PASS / FAIL
-  [ ] Criterion 2: Gross revenue ≥ $1,000 in Month 2                PASS / FAIL
-  [ ] Criterion 3: Phase 1→Phase 2 conversion rate ≥ 8%             PASS / FAIL
-  [ ] Criterion 4: Repeat purchase rate ≥ 10% at Day 60             PASS / FAIL
-  [ ] Criterion 5: Kit subscribers ≥ 80 by Day 60                   PASS / FAIL
+  [ ] Criterion 1: Total orders ≥ 40 by Day 45                      PASS / FAIL
+  [ ] Criterion 2: Gross revenue ≥ $800 in Month 2                  PASS / FAIL
+  [ ] Criterion 3: Phase 1→Phase 2 conversion rate ≥ 8% at Day 45  PASS / FAIL
+  [ ] Criterion 4: Repeat purchase rate ≥ 8% at Day 45              PASS / FAIL
+  [ ] Criterion 5: Kit subscribers ≥ 60 by Day 45                   PASS / FAIL
   [ ] Criterion 6: NPS ≥ 40 (Day 30 survey data)                    PASS / FAIL
 
   Score: ___ / 6
-  Phase 3 recommendation based on score:
-    6/6: Scenario 1 (High Growth) → Full Phase 3 GO
-    4–5/6: Scenario 2 (Steady Growth) → Standard Phase 3 GO
-    2–3/6: Scenario 3 (Churn Risk) → Conditional GO, diagnose first
-    0–1/6: Scenario 4 not applicable; fundamental issue — pause Phase 3 entirely
+  Phase 3 recommendation based on Day 45 score:
+    5–6/6: Scenario 1 (High Growth) → Full Phase 3 GO (final at Day 45)
+    3–4/6: Scenario 2 (Steady Growth) → Standard Phase 3 GO (final at Day 45)
+    1–2/6: Scenario 3 (Churn Risk) → Conditional — run diagnosis; re-evaluate at Day 60
+    0/6: Fundamental issue — pause Phase 3 entirely
+
+  NOTE: If this monthly deep-dive falls after Day 45, record only the Day 45 decision
+  that was already made. Do not re-score if the Day 45 gate has passed.
 ```
 
 ### 6.3 Quarterly Dashboard (3 hours, beginning of each quarter: Oct 1, Jan 1, Apr 1)
@@ -809,26 +960,34 @@ LEVEL 2 CHECKS (10 minutes):
 
 PHASE 3 STATUS (2 minutes):
   [ ] Day 30 checkpoint complete? (if applicable)  [ ] YES [ ] NO → complete now
-  [ ] Day 45 checkpoint complete? (if applicable)  [ ] YES [ ] NO → complete now
-  [ ] Day 60 Phase 3 decision recorded in WORKLOG.md?  [ ] YES [ ] NO → must complete by July 31
+  [ ] Day 45 Phase 3 decision recorded in WORKLOG.md? (PRIMARY gate — July 14)
+      [ ] YES [ ] NO → must complete by July 16
+  [ ] Day 60 confirmation complete? (Scenario 3 only — July 29)
+      [ ] YES [ ] NO (skip if Day 45 was Scenario 1 or 2 — decision already final)
 ```
 
 ### 7.3 Decision Cadence Summary
 
 | Cadence | Format | Time Required | Primary Decision |
 |---|---|---|---|
+| May 30 (T=0) | Day 1 activation checklist (Part 0) | 60 min | Baseline record, Kit verification, zero-state snapshot |
 | Daily (Days 1–14) | 5-minute Etsy Shop Manager check | 5 min | Catch anomalies; verify Kit automation |
 | Daily (Days 15–30) | Mon/Wed/Fri check only | 5 min | Same as above, reduced frequency |
 | Weekly | Sunday dashboard (Sheets) | 30 min | Escalation check, cohort health, email performance |
 | Monthly | First-Monday deep dive | 2 hours | LTV tracking, Phase 3 readiness score, cohort adjustment |
-| Day 60 specific | Phase 3 go/no-go evaluation | 45 min | Match data to Scenario 1/2/3/4; record decision |
+| Day 30 specific | Early warning checkpoint | 30 min | Preliminary readiness score; catch execution failures |
+| Day 45 specific | PRIMARY Phase 3 go/no-go evaluation | 45 min | Match data to Scenario 1/2/3/4; make binding decision |
+| Day 60 specific | Scenario 3 confirmation gate only | 30 min | Confirm recovery or defer Phase 3; final only if Day 45 was Scenario 3 |
 | Quarterly | Broader pattern review | 3 hours | Annual LTV trajectory, seasonal validation, Phase 3 assessment |
 
 ---
 
-*Prepared: 2026-05-07. This document is the command layer for Phase 2 customer success. For
-implementation of the underlying systems referenced throughout, see: `phase-2-analytics-strategy.md`
-(data architecture and dashboard templates), `phase-2-buyer-retention-lifecycle-strategy.md`
-(6-campaign email system), `customer-cohort-analysis-framework.md` (segment definitions),
-`phase-3-decision-framework.md` (Phase 3 Options A/B/C/D), `analytics/monthly-metrics-checklist.md`
-(monthly operator runbook).*
+*Prepared: 2026-05-07 (v1.0). Updated 2026-05-07 (v2.0): added Part 0 Day 1 Measurement Activation,
+restructured Phase 3 gate from Day 60 primary to Day 45 primary per original 45-day project roadmap,
+added Scenario quick-reference table (4.1a), added TRACK_B KPI bridge table (0.4), updated decision
+cadence summary. This document is the command layer for Phase 2 customer success. For implementation
+of the underlying systems referenced throughout, see: `phase-2-analytics-strategy.md` (data
+architecture and dashboard templates), `phase-2-buyer-retention-lifecycle-strategy.md` (6-campaign
+email system), `customer-cohort-analysis-framework.md` (segment definitions), `phase-3-decision-framework.md`
+(Phase 3 Options A/B/C/D), `analytics/monthly-metrics-checklist.md` (monthly operator runbook),
+`phase-2-analytics-dashboard-schema.json` (machine-readable metric definitions + automation rules).*
