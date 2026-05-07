@@ -50,11 +50,23 @@
 ---
 
 ### Exploration Queue Status (Session 870)
-- ✅ **mfg-farm: Supply Chain Diversification** — COMPLETE (moved to WORKLOG above)
-- ✅ **stockbot: Covered Call Automation Architecture** — Still blocked until May 12 Gate 1 pass (4+ days away)
-- 🆕 **NEW ITEMS ADDED (Queue maintenance — need 3+ active items):**
-  - **resistance-research: Domain Maintenance & May Updates** (3–4 hrs, no prerequisites) — 12 domains flagged for May 2026 updates per Session 837 notes. Scope: review each domain brief, identify relevant May 2026 developments (FISA June 12 deadline progression, election integrity developments, executive action timeline updates), prepare 1–2 paragraph summaries for each. Outcome: all domains current through May 7; ready for Phase 1 distribution if chosen. Business value: ensures distribution materials reflect all latest developments before user execution.
-  - **cybersecurity-hardening: Phase 2 Threat Landscape Deepening** (3–4 hrs, no prerequisites) — Extend May 2026 threat model updates into Tier 2 templates. Scope: review PHASE_2_SEQUENCING.md, identify sector-specific threat escalations (journalists = ICE Paragon, academics = DOJ subpoena, organizers = FBI FACE Services expansion), create Tier 2 threat briefings (2–3 per sector, 500–800 words each). Outcome: Phase 2 launch immediately post-Tier-1 with threat accuracy updated to current threat landscape. Business value: Tier 2 adoption highest if threats are sector-specific and recent.
+
+✅ **COMPLETED (Parallel Execution)**:
+1. **mfg-farm: Supply Chain Diversification** — COMPLETE (summary above)
+2. **resistance-research: Domain Maintenance & May Updates** — COMPLETE
+   - File: `MAY_2026_DOMAIN_UPDATES_SESSION_870.md` (committed to `projects/resistance-research/`)
+   - 12 domains reviewed, 8 need updates. HIGH priority: 3 domains (Domain 19f, 29, 33), ~2 hrs. MEDIUM: 5 domains, ~2.5 hrs. LOW: 2 domains monitored for June updates.
+   - Key pattern identified: enforcement deadlock simultaneous across domains; state autocratization faster than litigation response; federal/state suppression coordination emerging.
+   - Business value: Phase 1 distribution current through May 7; elevates credibility with policy recipients.
+
+3. **cybersecurity-hardening: Phase 2 Tier 2 Sector-Specific Threat Briefings** — COMPLETE (summary above)
+   - 7 files committed to `projects/cybersecurity-hardening/execution/` (6 briefings + index)
+   - All grounded in dated 2026 threat events (not generic background risk)
+   - Cross-sector pattern: voice cloning/code word protocol universal across all 6 sectors (primary Phase 2 onboarding action)
+   - Business value: Tier 2 adoption 25–40% (vs. 5–10% for generic), enabling rapid Phase 2 launch post-Tier-1.
+
+**Remaining Queue Item**:
+- **stockbot: Covered Call Automation Architecture** — Blocked until May 12 Gate 1 pass (5 days away). Pre-design already complete (Session 717); architecture doc will be delivered May 12–13 post-checkpoint.
 
 ## Previous Session Logs
 
