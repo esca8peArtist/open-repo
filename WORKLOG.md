@@ -50,7 +50,24 @@
 - seedwarden Phase 2 launch May 30 is achievable if photo shoot happens May 10-11 and social/Kit accounts are set up immediately
 - Domain 42 has urgent May 28 deadline — briefing organizations should start May 8 (independent of main Phase 1 path)
 
-**Committed**: All assessment files to master by respective agents.
+**Follow-up Work (Same Session)**:
+
+4. **resistance-research agent** — Domain 42 DEA Track Infrastructure Build — ✅ COMPLETE
+   - **Files**: `domain-42-dea-briefing-template.md` (email template, 450 words, subject line + personalization for each org type)
+   - **Files**: `domain-42-dea-briefing-contacts.md` (24 contacts, 3 waves, execution calendar through May 28)
+   - **Files**: Public Gist live at https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab (2,800 words, full Domain 42 with participation instructions)
+   - **Status**: Ready to launch May 8 immediately when user approves
+   - **Verification note**: Mason Marks institutional affiliation should be confirmed (Yale vs Harvard Petrie-Flom) before sending — he authored 2 critical publications for the regulatory capture argument
+   - **CHECKIN.md**: Updated with "READY FOR LAUNCH" block flagging May 8 Category A send
+
+5. **cybersecurity-hardening agent** — Phase 1 Flag Remediation — ✅ COMPLETE
+   - **Flag 1 Fixed**: Added 264-word subsection "Mobile Fortify Field Deployment Context" to opsec-playbook.md (clarifies threat, confirms countermeasures)
+   - **Flag 3 Fixed**: Added 1,080-word subsection "Cellebrite Signal Extraction and Device Seizure Countermeasures" to implementation-guide.md (BFU/AFU distinction, practical scenarios, configuration checklist)
+   - **Flag 2 Deferred**: DOGE/SSA litigation status deferred to July 2026 quarterly review (correct decision per assessment)
+   - **Commits**: Committed to master (commit 812afd8abd6c28b67c4deb51315d951a905192f9)
+   - **Status**: Phase 1 production-ready for Tier 1 institution outreach
+
+**Committed**: All infrastructure files and remediation commits to master by respective agents.
 
 ---
 

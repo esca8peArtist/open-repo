@@ -31,7 +31,18 @@
   - Domain 41-B (Disability Rights): Highest-scoring Phase 2 candidate overall (87.1 points), fastest to produce (10-14h)
   - Domain 38-B (Voting Systems/Callais aftermath): Largest audience expansion (election protection infrastructure)
 
-- **Next Step**: User selects distribution path (A / A+37 / B) → orchestrator executes Phase 1 (65-75 min) + simultaneously deploys Domain 42 track May 8 (45 min setup if user approves)
+- **Status Update**: ✅ **DOMAIN 42 INFRASTRUCTURE COMPLETE** (Same session follow-up)
+  - Email template: 450 words, subject lines for DPA/MPP/NORML, LEAP, SSDP, administrative law faculty
+  - Contact list: 24 contacts organized in 3 waves (May 8 Category A, May 10-12 Category B, May 14-17 Category C)
+  - Public Gist: Live at https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab (2,800 words, full Domain 42 with participation instructions)
+  - **Verification note**: Confirm Mason Marks institutional affiliation (Yale vs Harvard Petrie-Flom) — he authored critical publications for the regulatory capture argument
+  - **May 8 Execution**: Ready to send Category A emails (7 organizations) immediately when user approves
+  - **Status**: ✅ READY TO LAUNCH (May 8 start, with 3-wave timeline through May 28 deadline)
+
+- **Next Step**: 
+  - User selects distribution path (A / A+37 / B) → orchestrator executes Phase 1 (65-75 min) 
+  - **SIMULTANEOUSLY**: Deploy Domain 42 track May 8 (Category A send, 45 min) — NO ADDITIONAL SETUP NEEDED, all infrastructure built
+  - Verify Mason Marks affiliation before May 8 send
 
 ### 2. cybersecurity-hardening — Phase 1 Flags Assessment
 **File**: `projects/cybersecurity-hardening/PHASE_1_FLAGS_ASSESSMENT.md`
@@ -45,7 +56,11 @@
   - Flag 1: Adds clarity, no capability change
   - Flag 3: Adds critical guidance, reader facing, blocks confident device security messaging
   
-- **Next Step**: Remediate Flags 1 & 3 (60-75 min), then Phase 1 ready to deploy per user approval
+- **Status Update**: ✅ **REMEDIATION COMPLETE** (Same session follow-up)
+  - Flag 1: Added 264-word "Mobile Fortify Field Deployment Context" subsection to opsec-playbook.md — clarifies threat geometry, confirms existing countermeasures effective
+  - Flag 3: Added 1,080-word "Cellebrite Signal Extraction and Device Seizure Countermeasures" subsection to implementation-guide.md — BFU/AFU distinction, practical scenarios (protest, traffic stop, arrest, border), configuration checklist
+  - **Committed**: Commit 812afd8abd6c28b67c4deb51315d951a905192f9 to master
+  - **Phase 1 Status**: ✅ PRODUCTION-READY for Tier 1 institution outreach
 
 ### 3. seedwarden — Phase 2 Launch Checklist (May 30 Deadline)
 **File**: `projects/seedwarden/PHASE_2_LAUNCH_CHECKLIST.md` (8,000+ words, week-by-week breakdown)
