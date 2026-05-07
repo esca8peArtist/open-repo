@@ -4,6 +4,43 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 62 — 2026-05-07 — Phase 2 Buyer Retention & Lifecycle Campaign Strategy
+
+**Task**: Design systematic buyer lifecycle campaigns (welcome, content deepening, cross-zone
+upsell, re-engagement, win-back, VIP loyalty) for Phase 2 launch May 30, 2026. Covers cohort
+modeling, 6 campaigns with 20+ touches, Kit automation configuration, landing pages, analytics
+triggers, and a 6-day pre-launch roadmap.
+
+**File created**:
+- `projects/seedwarden/phase-2-buyer-retention-lifecycle-strategy.md` — ~3,800-word production-
+  ready strategy document covering all six sections as specified.
+
+**Key decisions recorded in document**:
+- Five Phase 2 cohorts (Forager, Prepper, Homesteader, Gift Buyer, Herbalist); Herbalist is
+  the new high-LTV entrant at 3x Gift Buyer lifetime value.
+- LTV path from $28.54 baseline to $60+ target: Campaigns 2, 3, 5 in sequence; 3x ($85+)
+  requires VIP loyalty track activating Herbalist bundle-to-practitioner-pack conversion.
+- Kit automation uses existing tag names exactly (Cohort_Forager, Cohort_Prepper,
+  Cohort_Homesteader, Cohort_GiftBuyer, zone-N tags) plus five new lifecycle tags: re-engaged,
+  quiet-period, annual-only, re-engagement-sent, engaged-buyer.
+- Etsy-to-Kit integration: Zapier Option A (primary); manual CSV fallback Option B (30 min/week).
+- Three landing pages specified with conversion targets: Start Here (3% to cart), Bundles (2%
+  cart, 5% attach), Endangered Premium (1–2% conversion, $30+ AOV).
+- Four incentive triggers with UTM tags: SEEDWARDEN10 (welcome), referral $5 credit, bundle
+  volume (buy 2, 3rd at 50% off), fall seasonal 20% sale (Sept 1 – Oct 15).
+- Seven specific decision triggers with exact thresholds and response actions (not "monitor
+  engagement" but "if Campaign 1 open rate <30%, A/B test subject lines within 48 hours").
+- Three contingencies: Kit integration failure (manual CSV), unsubscribe spike (reduce to 1x/week
+  and revise content), landing page CMS unavailable (Kit builder + Etsy listing descriptions).
+
+**Sources**: phase-2-analytics-strategy.md (cohort definitions, tag architecture, LTV tracker),
+PHASE_2_EMAIL_STRATEGY.md (automation priority, welcome sequence), customer-cohort-analysis-
+framework.md (segment signal indicators), phase-2-kit-email-setup.md (Kit setup stages), phase-
+3-medicinal-herbs-strategy.md (Herbalist cohort LTV model), PHASE_2_BUNDLE_STRATEGY.md
+(bundle naming and pricing).
+
+---
+
 ## Item 61 — 2026-05-07 — Phase 3 Medicinal Herbs Strategy + Candidate List
 
 **Task**: Phase 3 product line planning for medicinal herb guides targeting herbalist and practitioner audiences.
