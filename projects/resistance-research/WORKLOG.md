@@ -2,6 +2,51 @@
 
 ---
 
+## May 7, 2026 — Research Agent: Phase 2 Domain Expansion — Domains 42 and 43
+
+**Status**: COMPLETE
+
+**Context**: Phase 2 autonomous domain expansion. Two new full domain documents researched and written, filling structural gaps identified in ITEM50_DOMAINS42-50_CANDIDATES.md (Drug Policy ranked 5th, Epistemic Infrastructure ranked 2nd among nine candidates). Both selected based on: (1) distinct analytical gap from existing 41 domains; (2) 2026-specific urgency; (3) highest production efficiency relative to advocacy impact.
+
+**Files created**:
+- `projects/resistance-research/domains/domain-42-drug-policy-democratic-legitimacy-regulatory-capture.md` (~6,700 words, 54 citations, production-ready)
+- `projects/resistance-research/domains/domain-43-epistemic-infrastructure-disinformation-crisis.md` (~5,200 words, 55 citations, production-ready)
+
+**Domain 42 — Drug Policy, Regulatory Capture, and Democratic Legitimacy**
+
+Selection rationale: ITEM22 scoping (completed earlier May 7) identified the DEA June 29 administrative hearing as the sharpest policy window in the 42-50 candidate set, with a participation notice deadline of May 28, 2026 — 21 days from this session. No existing domain makes the democratic-design argument that the drug prohibition framework is a democratic exclusion architecture: regulatory capture of the scheduling mechanism by a law enforcement agency, felony disenfranchisement as a democratic feedback loop, and a constitutional federalism architecture that frustrates 24 state democratic majorities.
+
+Key findings:
+1. **DEA regulatory capture is documented and statutory**: The Yale Law Journal's "Separation of Drug Scheduling Powers" (Mason Marks, 2024) documents that CSA text assigns HHS binding scheduling authority; the OLC 2024 opinion converted this into an advisory role. The June 29 hearing will be conducted by DEA ALJs within a DEA institutional structure — a structural conflict of interest addressable through APA procedural reform.
+2. **4 million Americans disenfranchised, drug convictions disproportionately represented**: The felony disenfranchisement feedback loop (enforcement creates felonies, felonies produce disenfranchisement, disenfranchisement underrepresents the community that voted for reform) is analytically distinct from Domain 16's and Domain 22's existing analysis.
+3. **280E effective tax rate of 70%+ is legally anomalous**: Cannabis businesses operating legally under state law in 24 states pay effective federal tax rates of 70-80% under IRS Section 280E, with the industry paying an estimated $15 billion in excess taxes since 2018. The DOJ's April 23 rescheduling order relieved this penalty only for the narrow medical track.
+4. **SAFER Banking Act's eight-introduction-cycle failure is itself evidence of democratic accountability failure**: 32 state AGs, the Senate Banking Committee Chairman, and bipartisan House and Senate support cannot produce a Senate floor vote.
+5. **Portugal's decriminalization evidence is definitive**: 93% reduction in overdose deaths, 95% reduction in HIV infections among drug users, incarceration for drug offenses falling from 40% to 15.7% of the prison population — providing the strongest available public health evidence that the enforcement regime cannot justify itself on its stated public health grounds.
+
+Reform architecture addresses three mechanisms simultaneously: HHS Primacy Act (scheduling governance); automatic expungement + voting rights restoration (disenfranchisement feedback loop); SAFER Banking + 280E repeal + federal non-prosecution framework (federal-state conflict).
+
+**Domain 43 — Epistemic Infrastructure, Political Deepfakes, and Democratic Deliberation**
+
+Selection rationale: Candidate B in ITEM50, ranked 2nd priority. The 2026 midterms are the first US electoral cycle with political deepfakes at industrial scale — the NRSC deployed a realistic deepfake of James Talarico in March 2026, establishing national party campaign committee deployment as normalized. Domains 8 (Media Ecosystem) and 36 (AI Governance) both touch the problem but neither frames it as an epistemic infrastructure design problem requiring its own structural reform architecture. The CPB shutdown (September 30, 2025) and EU AI Act Article 50 enforcement (August 2, 2026) create complementary urgency.
+
+Key findings:
+1. **Political deepfakes are now official campaign strategy**: NRSC (Talarico), Collins campaign (Ossoff), Loudoun County Republicans (Spanberger) — national and state party organizations deployed realistic deepfakes in 2026 primary and general election campaigns. Nearly 50% of voters report deepfakes had some influence on their election decisions.
+2. **The "liar's dividend" undermines all accountability mechanisms**: The compounding effect of deepfake proliferation is not that voters believe specific deepfakes but that political actors can use the general awareness that video can be fabricated to dismiss authentic documentation — including the documentation of insurrectionary conduct, executive overreach, and democratic violations.
+3. **CPB shutdown is an epistemic infrastructure decision, not a budget decision**: The termination of the Corporation for Public Broadcasting affects 1,000 public radio stations, many of them the sole news sources in rural, tribal, and low-income communities. Epistemic anchor institutions cannot be replaced by the commercial news market.
+4. **Finland's model is specific and replicable in modules**: Media literacy integrated in the curriculum since age 3; public broadcasting (Yle) as epistemic anchor with secure long-term funding; AI literacy added to curriculum in 2025-2026. The model cannot be wholesale transplanted into the US decentralized educational system, but each component is achievable through state action and federal incentives.
+5. **EU AI Act Article 50 creates the regulatory standard the US lacks**: Enforcement begins August 2, 2026 — requiring machine-readable deepfake provenance metadata (C2PA standard), standardized visual labeling, and multi-layered disclosure. US regulation is jurisdictionally fragmented (FEC: online only; FCC: broadcast only; no platform amplification accountability).
+6. **C2PA metadata stripping is the technical gap**: The provenance infrastructure exists — 6,000+ C2PA member organizations, Samsung Galaxy S25 and Google Pixel 10 native signing — but social media platforms strip metadata on upload, destroying provenance chains. Requiring platform preservation of C2PA metadata is the most targeted technical reform.
+
+Reform architecture is tiered by constitutional permissibility: Tier 1 (AI disclosure mandates, FEC rulemaking, C2PA preservation requirement — constitutionally uncontested); Tier 2 (platform systemic risk assessment, Section 230 modification for known deepfakes — plausible); Tier 3 (CPB restoration with statutory protection, National Media Literacy Initiative, civic technology fund — public investment).
+
+**Why these two domains strengthen Phase 2**:
+
+Domain 42 opens distribution to audiences not reached by the existing 41 domains: Drug Policy Alliance, Marijuana Policy Project, Law Enforcement Action Partnership, Students for Sensible Drug Policy, tax and banking law community, administrative law academics, and the 32 state AGs who signed the SAFER Banking letter. The DEA hearing deadline (May 28 participation notice) creates an immediate distribution hook.
+
+Domain 43 addresses the epistemic precondition that all other domains implicitly depend on: if the factual foundation for democratic deliberation has been destroyed by deepfakes and the collapse of public media, no reform proposal in the 41-domain framework can be communicated, debated, or implemented. The August 2026 EU AI Act enforcement and the 2026 midterm general election cycle create a precise advocacy window.
+
+---
+
 ## May 7, 2026 — Research Agent: Phase 1 Launch Risk Mitigation and Response Playbook
 
 **Status**: COMPLETE
