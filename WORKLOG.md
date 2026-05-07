@@ -4,6 +4,22 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 17:15 UTC (Session 877 — Orchestrator) — Market Expansion Research: Item 21 COMPLETE
+
+✅ **seedwarden: Market Expansion & Adjacent Category Research** (Item 21 — Exploration Queue)
+- **Deliverable**: `ITEM21_MARKET_EXPANSION_ADJACENT_CATEGORY_RESEARCH.md` (11,886 words)
+- **Scope Completed**: 
+  1. Adjacent category analysis (6 categories: landscape design, storage, specialty seeds, propagation, garden tools, growing media) with TAM/SAM/SOM modeling
+  2. Per-category viability: COGS tables, margin targets (85–90%), supplier qualification, time-to-first-sale, demand signals, competitive analysis
+  3. Geographic expansion (UK, Canada, EU, Australia/NZ deferral) with logistics + localization complexity
+  4. B2B channel mapping (6 channels: affiliate, community gardens, seed libraries, landscaping, schools, extension) with CAC/LTV analysis
+  5. 12-month implementation roadmap (3 waves, decision gates, revenue triggers)
+- **Key Finding**: Landscape Design Templates are Wave 2 priority (zero COGS, digital immediate launch), Storage Solutions second (45–60 day lead time, 2.7–4.1x margin), Specialty Seeds third
+- **Business Value**: User has research-backed adjacent category choices upon Phase 1 data (45-day mark) instead of speculation
+- **Timeline**: 3 hours research + data verification (agent completed and committed)
+
+---
+
 ## 2026-05-07 16:45 UTC (Session 876 — Parallel Subagents) — Tracker Maintenance + Phase 2 Scenario Development: 4 FILES COMPLETE
 
 ### resistance-research (Subagent a1027b2c5a96e0de8)
