@@ -1,7 +1,7 @@
 ---
 title: "First Amendment Suppression — Press Crackdowns, Protest Restrictions, Deplatforming, and SLAPP Suits"
 description: "A reference document tracking First Amendment violations and suppression across press freedom, protest rights, government-coerced deplatforming, and strategic litigation. Covers 2024–2026 with case law context."
-last_updated: 2026-05-05
+last_updated: 2026-05-07
 status: active
 phase: 3
 project: resistance-research
@@ -14,7 +14,7 @@ cross_references:
 
 # First Amendment Suppression — Reference Document
 
-*Phase 3 — Distributable. Last updated: May 5, 2026. April 2026 additions: Section 1.7 (WHCD shooting + journalist petition updated with suspect detail), Section 1.6 updated (Don Lemon/Fort charges — April status), Section 1.8 (Seth Harp congressional subpoena), Section 1.9 (LAPD baton strikes on journalists at LA immigration protest — April 11), Section 4.6 (Kash Patel v. The Atlantic — $250M SLAPP), Section 4.6 updated (Figliuzzi suit dismissed April 21), Section 5.2 updated, Section 7 added (SPLC indictment — April 21, 2026 — civil society prosecution as First Amendment suppression mechanism), Section A.4 (Ninth Circuit Portland final ruling — April 27, tear gas injunctions reversed), Section A.5 (Kansas student protest law enacted via veto override — April 10–11). May 5 additions: Section A.6 (FBI retaliatory stalking investigation of NYT reporter Elizabeth Williamson), Section A.7 (Junn Bollman photographer indictment; Courtney Williams Espionage Act charge), Section A.8 (World Press Freedom Day 2026 — US ranks 64th, RSF historic low).*
+*Phase 3 — Distributable. Last updated: May 7, 2026. April 2026 additions: Section 1.7 (WHCD shooting + journalist petition updated with suspect detail), Section 1.6 updated (Don Lemon/Fort charges — April status), Section 1.8 (Seth Harp congressional subpoena), Section 1.9 (LAPD baton strikes on journalists at LA immigration protest — April 11), Section 4.6 (Kash Patel v. The Atlantic — $250M SLAPP), Section 4.6 updated (Figliuzzi suit dismissed April 21), Section 5.2 updated, Section 7 added (SPLC indictment — April 21, 2026 — civil society prosecution as First Amendment suppression mechanism), Section A.4 (Ninth Circuit Portland final ruling — April 27, tear gas injunctions reversed), Section A.5 (Kansas student protest law enacted via veto override — April 10–11). May 5 additions: Section A.6 (FBI retaliatory stalking investigation of NYT reporter Elizabeth Williamson), Section A.7 (Junn Bollman photographer indictment; Courtney Williams Espionage Act charge), Section A.8 (World Press Freedom Day 2026 — US ranks 64th, RSF historic low).*
 
 **Lead finding**: The United States is experiencing a coordinated, multi-vector assault on First Amendment rights. Government actors are suppressing press freedom through exclusion, warrant raids, and funding retaliation; restricting protest through state anti-protest laws and immigration enforcement used as political punishment; pressuring platforms to silence dissent through administrative subpoenas; and weaponizing defamation litigation to impose financial ruin on critics. Courts have provided partial relief, but enforcement gaps and the administration's willingness to defy injunctions mean legal wins do not always translate to protected speech.
 
@@ -610,3 +610,68 @@ Former federal prosecutor Aaron Zelinsky identified that the bank fraud counts a
 **United States v. Williams** (D.N.C., active): Former Army employee Courtney Williams charged under the Espionage Act for speaking to journalist Seth Harp about sexual harassment and discrimination at Fort Bragg. Williams faces potentially decades in federal prison for conduct Harp characterized as protected whistleblowing. See Section A.7.
 
 *Updated May 5, 2026. Additions: Section A.6 (FBI retaliatory stalking investigation of NYT reporter Elizabeth Williamson — April 22–23, 2026); Section A.7 (Junn Bollman indictment — Minnesota church protest; Courtney Williams Espionage Act charge); Section A.8 (World Press Freedom Day 2026 — RSF 64th place ranking, US historic low); Section 5.2 updated with May 2026 active litigation.*
+
+---
+
+## May 2026 Tracker Update
+
+### May 1–7, 2026 — Summary of New Developments
+
+| Date | Incident / Action | Jurisdiction | Implications |
+|------|------------------|--------------|--------------|
+| May 1, 2026 | DOJ publishes revised regulation revoking journalist source protections | Federal | Eliminates bright-line rule against compulsory process for journalists; reverts to balancing test permitting subpoenas, warrants, and court orders against reporters |
+| May 1, 2026 | CPJ and press freedom coalition urge DOJ to drop Minnesota journalist charges | Federal / D. Minn. | Eleven organizations including CPJ formally request Harmeet Dhillon's office drop charges against Georgia Fort, Don Lemon, Junn Bollman; charges not dropped as of May 7 |
+| May 1, 2026 | SPLC files pre-dismissal motions alleging DOJ made false public statements about indictment | M.D. Ala. | Whistleblower reports surface that a senior DOJ official ordered the indictment "rushed through" despite prosecutors' doubts; strengthens First Amendment suppression framing of the prosecution |
+| May 4, 2026 | EPA extends comment period for ethylene oxide emissions reconsideration to May 15, 2026 | Federal | Not directly a First Amendment issue; noted as context for environmental tracker |
+| May 7, 2026 | Federal judge hears Springfield PD consent decree termination motion | D. Mass. | Not First Amendment; see police tracker |
+
+---
+
+### A.9 DOJ Revokes Journalist Source Protections — Bondi Memo Published May 1, 2026
+
+**What happened**: On April 25, 2026, Attorney General Pam Bondi issued a memorandum to all DOJ employees titled "Updated Policy Regarding Obtaining Information From, or Records of, Members of the News Media." The revised regulation was published in the Federal Register on May 1, 2026.
+
+**What was eliminated**: The Bondi memo rescinded the reforms AG Merrick Garland implemented in 2021–2022, including:
+
+1. **Bright-line prohibition on compulsory process**: Garland's rules barred subpoenas, court orders, and search warrants against journalists conducting "scope of newsgathering" activities without exception. The Bondi memo eliminated this prohibition entirely.
+2. **Protected definition of newsgathering**: The prior rule explicitly protected journalists' "receipt, possession, or publication" of government information — including classified material. That protection is gone.
+3. **Non-disclosure order restrictions**: Garland had significantly restricted the use of gag orders preventing newsrooms from notifying affected journalists when their records were sought. Those restrictions are rescinded.
+4. **Safeguarding requirements**: The requirement that information obtained from journalist records be "closely held" within DOJ was removed.
+5. **Privacy Protection Act "sole purpose" bar**: Language preventing DOJ from using search warrants against journalists solely to investigate third parties was deleted.
+
+**What replaced them**: The regulation reverts to a balancing test under which DOJ attorneys weigh law enforcement interests against press freedom implications on a case-by-case basis. Bondi stated the memo's purpose was to "identify and punish the source of improper leaks" — characterizing leaks as conduct that "undermines the ability of the Department of Justice to uphold the rule of law." The new language criminalizes not just classified disclosures but "lawful newsgathering," creating an opening for prosecutors to characterize routine source cultivation as criminal conspiracy.
+
+**Legal significance — interaction with existing cases**: This regulation change is not merely prospective. It directly intersects with active cases already documented in this tracker:
+- It provides DOJ additional procedural authority to compel search of Hannah Natanson's devices (Section 1.3, DOJ motion to overturn Judge Porter's ruling) — now DOJ can argue it no longer has a policy obligation that previously constrained its conduct.
+- It enables future compulsory process against Seth Harp in connection with the congressional subpoena case (Section 1.8) and against sources like Courtney Williams (Section A.7).
+- It removes the internal procedural safeguard that would have required DOJ approval before initiating the kind of retaliatory investigation the FBI launched against Elizabeth Williamson (Section A.6).
+
+**RCFP assessment**: The Reporters Committee for Freedom of the Press published a special analysis calling the Bondi memo a "significant escalation" in the administration's assault on press freedom, noting: "The department reverted to a balancing test... allowing attorneys greater discretion to pursue journalists." The RCFP identified new "lawful newsgathering" language as a particular threat, because it creates a legal basis for characterizing routine source cultivation as criminal conduct.
+
+**Pattern significance**: This regulatory change is the culmination of the pattern documented in Sections 1.3, 1.6, 1.8, 4.6, A.6, and A.7 — a progression from ad hoc retaliatory actions (the Natanson raid, the Williamson investigation, the SLAPP suits) to a formal regulatory revision that provides systematic legal authority for those actions going forward. Investigative journalists, their sources, and newsrooms evaluating whether to publish are now operating without the procedural floor that had constrained compulsory process for the prior four years.
+
+**Sources**: [RCFP — analysis of rescission](https://www.rcfp.org/doj-rescinds-news-media-guidelines-analysis/) | [RCFP — original announcement](https://www.rcfp.org/doj-announces-plans-to-revoke-news-media-guidelines/) | [US Press Freedom Tracker — Bondi targets journalists](https://pressfreedomtracker.us/all-incidents/pam-bondi-targets-journalists-leakers-as-us-attorney-general/) | [Rolling Stone — journalist protections revoked](https://www.rollingstone.com/politics/politics-news/trump-pam-bondi-journalist-protections-leaks-investigations-1235325906/) | [Common Dreams — Bondi shreds Biden-era protections](https://www.commondreams.org/news/bondi-journalism-protections/) | [Freedom of the Press Foundation — new DOJ policy on sources](https://freedom.press/issues/new-doj-policy-on-journalists-and-sources-fuels-trumps-lies/)
+
+---
+
+### A.10 CPJ Coalition Urges DOJ to Drop Minnesota Journalist Charges — No Action Taken (May 1–7, 2026)
+
+**What happened**: On May 1, 2026, the Committee to Protect Journalists (CPJ) joined a formal letter — co-signed by eleven press freedom and civil liberties organizations — to Assistant Attorney General Harmeet Dhillon calling on the DOJ to drop all federal charges against journalists Georgia Fort, Don Lemon, Junn Bollman, and Michael Walker Beute in connection with the January 18, 2026 protest at Cities Church in St. Paul, Minnesota. The letter was published May 5, 2026.
+
+**Current case status**: As of May 7, 2026, no charges have been dropped. The case remains pending in U.S. District Court for the District of Minnesota. All four journalist-defendants have pleaded not guilty. No trial date has been set.
+
+**The coalition's argument**: The organizations — which include the CPJ, press freedom, and civil liberties groups — argue that the DOJ indictment constitutes charging journalists with federal crimes for conduct that falls squarely within constitutional press freedom protections. CPJ's Américas Director José Zamora stated the charges represent "an escalation of tactics to silence independent journalism." The letter to Dhillon referenced the RSF's World Press Freedom Day ranking (Section A.8), the broader pattern of journalist arrests, and the DOJ's own standards for what constitutes reportage protected from prosecution.
+
+**SPLC whistleblower development (May 1)**: On May 1, 2026, CNN reported that Democratic lawmakers accused the DOJ of rushing the SPLC indictment (Section 7.1) based on whistleblower accounts from inside the department. According to those accounts, Associate Deputy AG Aakash Singh ordered U.S. attorneys in Alabama to proceed despite "serious concerns about the strength of the case" from the prosecutors assigned to it. The SPLC simultaneously filed pre-trial motions asserting that the DOJ made false public statements about the organization during the April 21 press conference announcing the indictment — statements SPLC says were made after SPLC notified the government they were false. The SPLC's motion argues that prosecutorial misconduct may have tainted the indictment process. The whistleblower reports and the SPLC's motions are being tracked as material to the Section 7 analysis of federal prosecution as suppression.
+
+**Sources**: [CPJ — partners urge DOJ to drop charges](https://cpj.org/2026/05/cpj-partners-urge-doj-to-drop-charges-against-journalists-in-minnesota-protest-case/) | [CPJ / Radio Free — May 5 letter](https://www.radiofree.org/2026/05/05/cpj-partners-urge-doj-to-drop-charges-against-journalists-in-minnesota-protest-case/) | [CNN — SPLC whistleblower reports](https://www.cnn.com/2026/05/01/politics/splc-indictment-rushed-whistleblower-reports) | [SPLC false statements filing](https://www.alreporter.com/2026/04/29/splc-says-false-public-statements-may-have-tainted-indictment/) | [Time — most urgent threats to press freedom](https://time.com/article/2026/05/01/the-most-urgent-threats-to-press-freedom-in-2026/) | [CPJ / Amnesty International — World Press Freedom Day](https://cpj.org/2026/05/cpj-amnesty-international-usa-on-world-press-freedom-day-warn-of-increased-pressure-threats-under-trump-administration/)
+
+---
+
+### 5.2 Update — May 2026 Active Litigation Additions
+
+**United States v. SPLC** (M.D. Ala., active): SPLC filed pre-trial motions in early May 2026 alleging DOJ made false public statements about the organization and that the indictment was "rushed through" over the objections of career prosecutors, according to whistleblower accounts provided to Congress. No dismissal order entered as of May 7, 2026. See Section 7.1.
+
+**DOJ regulation — journalist source protections** (effective May 1, 2026): The revised DOJ regulation revoking Garland-era journalist protections took effect May 1, 2026. Enforcement pending; no cases filed under the new regulation as of May 7. The Reporters Committee has indicated it will challenge the regulation if enforcement actions follow. See Section A.9.
+
+*Updated May 7, 2026. Additions: Section A.9 (Bondi memo — journalist source protection regulation revoked, effective May 1, 2026); Section A.10 (CPJ coalition letter; SPLC whistleblower reports, May 1, 2026); Section 5.2 updated with May 2026 litigation developments.*

@@ -1,7 +1,7 @@
 ---
 title: "Police Brutality Consent Decree Tracker — Compliance, Defiance, and the Federal Withdrawal"
 description: "City-by-city reference tracking active and terminated police consent decrees, specific provision violations, monitoring gaps, and the 2025 collapse of federal pattern-or-practice enforcement. For use by activists, civil rights lawyers, and journalists."
-last_updated: 2026-05-05
+last_updated: 2026-05-07
 status: active
 phase: 3
 project: resistance-research
@@ -15,7 +15,7 @@ sources_verified: true
 
 # Police Brutality Consent Decree Tracker
 
-*Last updated: May 5, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Pattern 6 added (10th Circuit Denver ruling, circuit split on protest policing, cross-reference to first-amendment-suppression.md Section A.1); Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026); Oakland Open Research Thread 8 updated (charter reform and NSA exit timeline); LAPD section updated with April 11 journalist assault incidents and LA Press Club lawsuit data. May 5 additions: Cleveland exit ruling still pending; ICE shooting accountability gap reinforces Pattern 4; World Press Freedom Day 2026 journalist prosecution data.*
+*Last updated: May 7, 2026. Extends `consent-decree-defiance-tracker.md` with city-level detail. April 27 additions: Pattern 4 updated with Q1 2026 federal excessive-force prosecution data; Pattern 6 added (10th Circuit Denver ruling, circuit split on protest policing, cross-reference to first-amendment-suppression.md Section A.1); Open Research Thread 7 updated (Cleveland ruling still pending as of late April 2026); Oakland Open Research Thread 8 updated (charter reform and NSA exit timeline); LAPD section updated with April 11 journalist assault incidents and LA Press Club lawsuit data. May 5 additions: Cleveland exit ruling still pending; ICE shooting accountability gap reinforces Pattern 4; World Press Freedom Day 2026 journalist prosecution data. May 7 additions: Springfield termination hearing (May 7); Cleveland May 27 CMC approaching; Aurora (CO) state decree — full compliance unlikely by Feb. 2027; Open Research Thread 9 added.*
 
 **Lead finding**: The May 21, 2025 Trump DOJ action — simultaneously withdrawing from two proposed consent decrees, retracting findings of unconstitutional policing in eight jurisdictions, and closing pattern-or-practice investigations in six cities — was the largest single rollback of federal police oversight in U.S. history. It was not aberrational. It was the culmination of a strategy that began on January 22, 2025, and continues through systematic defunding of the Civil Rights Division's enforcement capacity. The cities left behind either persist under older, pre-Trump-era decrees with diminishing federal support, or are relying on local political commitments that carry no legal enforcement weight.
 
@@ -480,5 +480,68 @@ Cross-reference: `first-amendment-suppression.md` Section A.8 for the full RSF i
 ---
 
 *Updated May 5, 2026. Additions: Cleveland exit ruling — still pending as of May 5 (Open Research Thread 7 updated); ICE shooting accountability gap — federal probe remains elusive three months after killings (Pattern 4 reinforced); World Press Freedom Day 2026 journalist prosecution as police accountability indicator.*
+
+*Cross-references: `consent-decree-defiance-tracker.md` (legal framework, Castañon Nava immigration consent decree, Section 70302 contempt limitation) | `first-amendment-suppression.md` (protest monitor retaliation, crowd management policy violations, First Amendment provisions in police decrees, Section A.4 Ninth Circuit Portland ruling, Section A.7 Bollman indictment, Section A.8 RSF index 2026) | `litigation-tracker-2026.md`*
+
+---
+
+## May 2026 Tracker Update (May 1–7, 2026)
+
+### May 2026 Developments Summary
+
+| Date | Incident / Action | Jurisdiction | Implications |
+|------|------------------|--------------|--------------|
+| May 7, 2026 | Federal judge hears Springfield PD consent decree termination motion | D. Mass. | Court evaluating joint city-DOJ motion for termination after four-year decree; ruling pending |
+| May 2026 (ongoing) | Cleveland consent decree exit ruling still pending before Judge Oliver | N.D. Ohio | May 27 case management conference approaching; civilian oversight commission continues to contest readiness |
+| Apr. 30–May 1, 2026 | Aurora (CO) monitor report: 63 of 78 mandates in substantial compliance; full compliance unlikely by Feb. 2027 deadline | State AG / Arapahoe County | Last year of state consent decree; extension or restructuring likely; Elijah McClain case origin |
+| May 1–7, 2026 | No new federal pattern-or-practice investigations opened; DOJ Civil Rights Division posture unchanged | Federal | DOJ structural enforcement capacity remains at documented lows — 13 trial attorneys, egregious-deaths-only threshold |
+
+---
+
+### Springfield — Federal Judge Hears Termination Motion (May 7, 2026)
+
+**Update**: On May 7, 2026, a federal judge heard arguments on the joint motion filed by the U.S. Attorney's Office for the District of Massachusetts and Springfield city attorneys to terminate the 2022 federal consent decree. The court-appointed Compliance Evaluation Team's final report stated that Springfield PD "has not only met the material requirements of the Agreement but has also achieved sustained and continuing improvement in key areas of constitutional policing." The judge is expected to issue a ruling shortly. The Springfield decree covered the Narcotics Bureau specifically — the bureau was shut down and replaced with a gun unit under the decree's requirements.
+
+**Pattern significance**: The Springfield termination follows the Newark (Nov. 2025), New Orleans (Nov. 2025), Seattle (Sept. 2025), and now pending Springfield exits. It continues the administration's pattern of co-signing consent decree exits where legally viable while maintaining zero new pattern-or-practice investigations. The short decree duration (four years) and narrower scope (Narcotics Bureau) drove faster compliance than city-wide reform decrees with longer timelines. As the tracker has documented, the administration's institutional interest in demonstrating exits — combined with the absence of an adversarial federal posture — creates a structural incentive to accept compliance certifications that a more independent federal party might contest.
+
+**Sources**: [Western Mass News — termination request, May 7](https://www.westernmassnews.com/2026/05/07/springfield-police-request-end-federal-consent-decree/) | [WWLP — decree to be settled](https://www.wwlp.com/news/local-news/hampden-county/springfield-police-departments-consent-decree-to-be-settled/) | [WAMC — joint termination motion](https://www.wamc.org/news/2026-04-28/officials-seek-end-to-springfield-police-departments-consent-decree)
+
+---
+
+### Cleveland — May 27 Case Management Conference Approaching; Exit Ruling Pending
+
+**Update (May 2026)**: As of May 7, 2026, U.S. District Judge Solomon Oliver has still not issued a ruling on the joint city-DOJ motion to terminate the Cleveland consent decree. A case management conference is scheduled for May 27, 2026. At that hearing, Deputy Chief Ausmus is expected to present data on Task 2 (Timeliness of Internal Affairs Investigations) compliance. OPD leadership has expressed confidence that Task 2 compliance can be demonstrated by May 27; partial compliance on Task 45 (Discipline Policy) is also expected to be presented. If the court finds Task 2 achieved, only Task 45 would remain before the NSA exits.
+
+The community tension remains acute: the Community Police Commission — denied formal amicus status — continues publicly asserting the city has not demonstrated the sustained cultural change required; Mayor Bibb continues publicly asserting the city is ready to "take back the reins." The court's continued silence on the joint termination motion — which would normally receive expedited ruling given both parties' agreement — is the clearest signal Judge Oliver is applying independent scrutiny to compliance claims.
+
+**Open Research Thread 7 updated**: The May 27 case management conference is the next major data point. If Task 2 closes, a final ruling on exit becomes imminent. Monitoring the court docket (N.D. Ohio, United States v. City of Cleveland, Case No. 1:15-cv-1046) for the ruling is a priority.
+
+**Sources**: [Black Vanguard Media — Cleveland exit analysis](https://www.blackvanguardmedia.com/p/cleveland-seeks-to-end-federal-police) | [Signal Cleveland — court not ruling](https://signalcleveland.org/cleveland-consent-decree-court-hearing-judge-solomon-oliver/) | [Signal Cleveland — consent decree not over](https://signalcleveland.org/cleveland-police-consent-decree-judge-solomon-oliver-monitor-report-hearing-2026/)
+
+---
+
+### Aurora, Colorado — Monitor Reports 81% Compliance; Full Compliance Unlikely Before February 2027
+
+**New entry**: Aurora, Colorado entered a state consent decree with the Colorado Attorney General's Office on November 16, 2021, following the death of Elijah McClain, a 23-year-old Black man who died after a 2019 encounter with Aurora Police Department officers. The decree was envisioned to last approximately five years and requires 78 specific mandates across use of force, training, accountability, and community relations.
+
+**May 2026 status**: The monitor's tenth report — covering August 16, 2025 through February 15, 2026 — found APD in substantial compliance with 63 of 78 mandates (81%). The monitor stated APD has made "significant progress" but will likely not achieve full compliance by the decree's scheduled end date of February 15, 2027 — the final year of a 12-report monitoring cycle. As of the reporting period, 15 mandates remain non-compliant.
+
+**Why this matters for the national tracker**: Aurora's decree is a state AG decree — not a federal DOJ consent decree. It is therefore insulated from the Trump DOJ's May 21, 2025 mass withdrawal actions. However, it sits in the Tenth Circuit — the same circuit that issued the April 21, 2026 *Epps v. City of Denver* ruling establishing constitutional excess-force standards for protest policing. The Tenth Circuit precedent directly reinforces the legal floor the Aurora decree is designed to enforce. The decree also provides a case study in whether non-federal oversight mechanisms can achieve sustained compliance when federal oversight is absent — in Colorado's case, the state AG's mechanism is functioning.
+
+**Significance of likely non-compliance by deadline**: The monitor's statement that full compliance is "likely not" achievable by February 2027 means the parties will need to either extend the decree's term or accept partial compliance at exit. Given that APD's non-compliant areas are not yet specified in available reporting, the nature of the remaining 15 mandates is a key open research question.
+
+**Sources**: [9News — Aurora monitor report, April 30, 2026](https://www.9news.com/article/news/local/aurora-police-compliance-consent-decree-deadline/73-98a9372e-0167-4b1b-8d22-b25c0413bc9f) | [Denver Gazette — full compliance unlikely](https://www.denvergazette.com/2026/04/30/aurora-police-will-likely-not-reach-full-compliance-with-consent-decree-by-deadline-monitor-says/) | [Aurora Monitor — official reports](https://www.auroramonitor.org/) | [Colorado AG — original decree](https://coag.gov/press-releases/aurora-consent-decree-to-improve-policing-and-protect-public-safety11-16-21/)
+
+---
+
+### Open Research Thread Updates — May 2026
+
+**Thread 7 (Cleveland exit ruling)**: May 27 case management conference is the immediate data point. Ruling expected between May 27 and early June 2026.
+
+**Thread 8 (Oakland NSA exit)**: May 27 case management conference also scheduled for Oakland. OPD Deputy Chief Ausmus expressed confidence Task 2 (timeliness of IA investigations) compliance can be demonstrated at that hearing. If Task 2 closes, Task 45 (partial compliance) would be the remaining obstacle to NSA exit. The simultaneous weakening of the Police Commission through political appointments and the charter reform proposal targeted for the November 2026 ballot creates a risk that OPD exits federal oversight at the moment civilian oversight is structurally weakest.
+
+**New Thread 9 (Aurora non-compliance at deadline)**: Monitor projecting non-compliance with 15 mandates as of Feb. 15, 2027 deadline. Track which mandates remain open and whether the state AG seeks extension or accepts partial compliance exit.
+
+*Updated May 7, 2026. Additions: Springfield termination hearing (May 7); Cleveland May 27 conference; Aurora monitor report (full compliance unlikely by Feb. 2027); Open Research Thread 9 added.*
 
 *Cross-references: `consent-decree-defiance-tracker.md` (legal framework, Castañon Nava immigration consent decree, Section 70302 contempt limitation) | `first-amendment-suppression.md` (protest monitor retaliation, crowd management policy violations, First Amendment provisions in police decrees, Section A.4 Ninth Circuit Portland ruling, Section A.7 Bollman indictment, Section A.8 RSF index 2026) | `litigation-tracker-2026.md`*

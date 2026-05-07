@@ -3,7 +3,7 @@ title: "Environmental Regulation Rollbacks Tracker — Trump Administration 2025
 subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
-last_updated: "2026-05-05"
+last_updated: "2026-05-07"
 april_2026_entries: "entries 25–30 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup; entry 28 (OOOO methane flaring rule) added April 27; entry 29 (CCR coal ash proposed rollback) added April 27; entry 30 (plastic pyrolysis Clean Air Act reclassification) added April 27"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
@@ -723,3 +723,55 @@ The following organizations are actively litigating environmental rollbacks and 
 ---
 
 *This document is part of the resistance-research project. It is intended as a public reference. Cite primary sources (Federal Register citations, agency press releases, court filings) for legal proceedings. Last compiled April 26, 2026; updated May 5, 2026 (entry 32 — CWA Section 401 state certification authority gutted, finalization imminent; entry 33 — power plant GHG repeal advanced to OMB, finalization pending; entry 34 — Virginia CCR state permit program proposed approval, Federal Register May 4, 2026).*
+
+---
+
+## VI-D. May 2026 Tracker Update (May 1–7, 2026)
+
+### May 2026 Developments Summary
+
+| Date | Action | Agency / Instrument | Implications |
+|------|--------|---------------------|--------------|
+| May 1, 2026 | EPA extends comment period on proposed ethylene oxide (EtO) sterilizer emissions standard reconsideration | EPA / CAA NESHAP | New deadline May 15, 2026; rule would rescind risk-based EtO limits at commercial sterilization facilities near residential areas |
+| May 4, 2026 | Virginia CCR state permit program proposed for Federal Register approval (60-day comment period opens) | EPA / RCRA § 4005(d) | Public hearing June 24, 2026; comment deadline July 6 (noted in entry 34) |
+| May 5, 2026 | EPA further extends postponement of TCE TSCA exemption conditions until conclusion of federal litigation | EPA / TSCA § 6(g) | Third consecutive extension; TCE health standards for exempted uses remain suspended pending court outcome |
+
+---
+
+### 35. Ethylene Oxide Commercial Sterilizer Standards — Comment Period Extended to May 15, 2026
+**Rule**: Proposed Reconsideration of Ethylene Oxide Emissions Standards for Commercial Sterilization Facilities (NESHAP Subpart O)
+**Code**: Clean Air Act Section 112; 40 CFR Part 63, Subpart O
+**Agency**: EPA
+**Status**: [PROPOSED — comment period extended to May 15, 2026]
+
+**Dates**: EPA proposed reconsideration March 12, 2025. Proposed rule published in Federal Register March 17, 2026 (FR 2026-05167). Original comment deadline extended; new deadline confirmed May 1, 2026 as May 15, 2026.
+
+**What the proposed rule would do**: EPA proposes to rescind the risk-based emissions standards enacted in the Biden-era 2024 EtO rule for commercial sterilization facilities. Specifically, the proposal would: (a) rescind risk-based EtO emissions limits that the 2024 rule set based on EPA's cancer risk assessments for surrounding communities; (b) revise a technology-review standard for new aeration room vents; (c) revise compliance demonstration requirements; (d) rescind a permanent total enclosure (PTE) requirement. The EPA estimates the proposed rule reduces industry compliance costs by $43–$48 million per year over the 2026–2046 period.
+
+**Why this matters**: Ethylene oxide is a known human carcinogen. EPA's own 2016 Integrated Risk Information System (IRIS) assessment found EtO to be 30 times more toxic than previously estimated, triggering the 2024 rule. Commercial sterilization facilities — which use EtO to sterilize medical devices, surgical equipment, and spices — are concentrated in low-income and minority communities in states including Georgia, Illinois, Texas, and North Carolina. The 2024 rule required facilities to install emissions controls; the proposed reconsideration would eliminate the legal basis for those requirements. Earthjustice noted in April 2026 that EPA's reconsideration "punts" on EtO emissions standards even as it updated other air toxics standards for chemical manufacturers.
+
+**Context within the tracker**: This proposed rule compounds the IRIS program degradation documented in entry 12 (EPA enforcement and staffing). The IRIS program — which produced the 2016 EtO toxicological assessment that drove the 2024 rule — is itself facing proposed restructuring under the FY2026 EPA budget. If IRIS is eliminated or degraded, the scientific basis for future risk-based EtO emissions standards becomes harder to establish. Combined with the rescission of the risk-based standards themselves, the practical result is that affected communities lose both the regulatory protection and the scientific infrastructure needed to restore it.
+
+**Sources**: [SBA Office of Advocacy — comment deadline extension](https://advocacy.sba.gov/2026/05/04/epa-extends-comment-period-on-proposed-revisions-to-ethylene-oxide-standards/) | [Federal Register — proposed rule (FR 2026-05167)](https://www.federalregister.gov/documents/2026/03/17/2026-05167/national-emission-standards-for-hazardous-air-pollutants-ethylene-oxide-emissions-standards-for) | [Earthjustice — punts on EtO](https://earthjustice.org/press/2026/epa-sets-long-needed-updated-air-toxics-standards-for-chemical-manufacturers-but-punts-on-ethylene-oxide-emissions-limits) | [PRISM Reports — Trump EPA deregulating EtO](https://prismreports.org/2026/04/29/ethylene-oxide-trump-epa/) | [Harvard EELP — EtO tracker](https://eelp.law.harvard.edu/tracker/ethylene-oxide-eto-emissions-standards-for-commercial-sterilizers/) | [MedTech Dive — delay background](https://www.medtechdive.com/news/trump-delay-epa-ethylene-oxide-rule-sterilization/753588/)
+
+---
+
+### 36. Trichloroethylene (TCE) TSCA Exemption Conditions — Third Postponement Until End of Litigation (May 5, 2026)
+**Rule**: Extension of Postponement of Effectiveness for Certain Provisions of Trichloroethylene (TCE); Regulation Under TSCA
+**Code**: TSCA Section 6(g); 40 CFR Part 747 (TCE risk management rule)
+**Agency**: EPA
+**Status**: [FINAL — third consecutive postponement published May 5, 2026 (FR 2026-08750)]
+
+**Dates**: Biden EPA finalized TCE risk management rule December 17, 2024. First postponement of Section 6(g) exemption conditions: April 2, 2025 (FR 2025-05641). Second extension: February 18, 2026 (FR 2026-03155), postponing to May 18, 2026. Third extension: May 5, 2026 (FR 2026-08750) — postponing effectiveness until the conclusion of federal litigation over the rule, with no defined end date.
+
+**What the TCE rule governs**: Trichloroethylene is a volatile organic compound (VOC) and known human carcinogen (IARC Group 1) used as a degreaser in manufacturing, aerospace, and dry cleaning. The Biden-era TSCA rule — finalized under TSCA Section 6 — restricted most uses of TCE and established conditions for limited exempted uses under Section 6(g), including: requirements for engineering controls, air monitoring, personal protective equipment, and exposure limits for workers at facilities using exempted TCE applications.
+
+**The third extension**: The May 5 rule postpones the effective date of the Section 6(g) exemption conditions — meaning the health and safety requirements for facilities that continue to use TCE under an exemption — until federal litigation over the TCE rule concludes. No court decision timeline has been established. Conditions for TCE exempted uses are effectively suspended indefinitely. The underlying prohibition on most TCE uses (Section 6(a) prohibitions) is separately subject to litigation.
+
+**Pattern significance**: TCE is among the industrial chemicals most directly associated with community health harms — it contaminates groundwater (contributing to Superfund site cleanup obligations, entry 12), poses cancer risk to workers at rates that exceed occupational safety thresholds, and is associated with Parkinson's disease in epidemiological literature. The three consecutive postponements — April 2025, February 2026, May 2026 — form a pattern of administrative delay that functionally suspends health protections while court proceedings extend over years. Combined with the IRIS program degradation (entry 12) and the PFAS TSCA reporting delay (entry 26), this is the third documented instance of the administration using TSCA procedural mechanisms to defer rather than formally repeal health-protective chemical regulations.
+
+**Sources**: [Federal Register — May 5 postponement (FR 2026-08750)](https://www.federalregister.gov/documents/2026/05/05/2026-08750/extension-of-postponement-of-effectiveness-for-certain-provisions-of-trichloroethylene-tce) | [SBA Office of Advocacy — May 5 announcement](https://advocacy.sba.gov/2026/05/05/epa-extends-deadlines-for-parts-of-trichloroethylene-rule-until-end-of-court-review/) | [EPA — TCE status update](https://www.epa.gov/chemicals-under-tsca/update-status-tsca-risk-management-rule-tce-2) | [SBA Office of Advocacy — February extension](https://advocacy.sba.gov/2026/02/18/epa-extends-deadlines-for-parts-of-trichloroethylene-rule/) | [Harvard EELP — TCE regulatory tracker cross-reference](https://eelp.law.harvard.edu/tracker-type/regulatory-tracker/)
+
+---
+
+*This document is part of the resistance-research project. It is intended as a public reference. Cite primary sources (Federal Register citations, agency press releases, court filings) for legal proceedings. Last compiled April 26, 2026; updated May 7, 2026 (entry 35 — EtO commercial sterilizer comment period extended to May 15; entry 36 — TCE TSCA exemption conditions third postponement until end of litigation, FR May 5, 2026).*
