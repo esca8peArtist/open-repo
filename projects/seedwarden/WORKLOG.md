@@ -4,6 +4,28 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Customer Success & Retention Framework — 2026-05-07
+
+**Task**: Design Phase 2 customer success and retention framework covering Phase 1→Phase 2 conversion modeling, customer segmentation (5 segments with LTV estimates), retention mechanics, Phase 3 go/no-go decision tree (4 scenarios), weekly/monthly/quarterly dashboard designs, and escalation logic. Two files produced.
+
+**Files created**:
+
+- `projects/seedwarden/phase-2-customer-success-framework.md` — ~3,200 words, 7 parts. Phase 1→Phase 2 conversion prediction model (product-to-Phase-2 adoption probability rules, order depth predictor, Kit subscriber conversion differential). Five-segment model (Forager, Prepper, Homesteader, Gift Buyer, Herbalist) with cohort characteristics and 12-month LTV targets ($45–$130 range). Retention mechanics hypothesis (4 drivers, 3 repeat purchase patterns, cross-sell pairing table by product). Phase 3 decision tree: 4 scenarios (High Growth → Full GO; Steady → Standard GO; Churn Risk → Conditional; Explosive → immediate acceleration). Day 30/45/60 checkpoint structure. NPS survey delivery schedule. Weekly, monthly, and quarterly dashboard templates (ASCII format, directly writable into Google Sheets). Escalation logic hierarchy (Level 1 same-day / Level 2 weekly / Level 3 monthly).
+
+- `projects/seedwarden/phase-2-analytics-dashboard-schema.json` — 25 metric definitions with alert thresholds (green/yellow/red ranges), 10 automation rules with specific trigger conditions and escalation paths, Day 30/45/60/90 checkpoint schedule with specific metric pull lists, spreadsheet implementation spec (6 tabs with upgrade triggers), and Phase 3 trigger summary (all 4 scenarios with exact threshold values and launch dates).
+
+**Key decisions logged**:
+
+- Phase 1→Phase 2 conversion prediction uses first-purchase product type as primary predictor. Wild Edibles → Native Plants/Medicinal predicted at 35–50% adoption (Forager sequential path). Hunting/Fishing → Preservation at 35–50% (sequential pairing). Gift window purchases at 3–8% (no Phase 2 path without gift occasion repeat).
+- Herbalist segment added as fifth cohort (new in Phase 2). Highest LTV ceiling: $90–$130 at 12 months, $130–$200+ with Phase 3 practitioner bundles. Highest churn risk if content is not personalized.
+- Phase 3 Women's Health bundle trigger: Scenario 1 (High Growth) launches September 2026; Scenario 2 (Steady) also September; Scenario 3 (Churn Risk) deferred to November. Tier 2 wholesale requires Scenario 1 or Scenario 2 with Day 90 cohort size check.
+- Phase 3 readiness score: 6-criteria composite (orders, revenue, Phase 1→Phase 2 conversion, 60d repeat rate, Kit subscribers, NPS). 4-5/6 = GO; 2-3/6 = conditional; 0-1/6 = hold.
+- Explosive Growth early alert: 5+ orders/day by Day 14 OR 10+ Kit subscribers/day triggers immediate Phase 3 acceleration without waiting for Day 60 checkpoint.
+
+**Source documents reviewed**: `phase-2-analytics-strategy.md`, `phase-2-buyer-retention-lifecycle-strategy.md`, `customer-cohort-analysis-framework.md`, `phase-3-decision-framework.md`, `financial-sustainability-model.md`, `analytics/monthly-metrics-checklist.md`.
+
+---
+
 ## Phase 2 Production Timeline — Detailed Logistics — 2026-05-07
 
 **Task**: Build production-level Phase 2 logistics for May 30, 2026 launch. Six-species scope (adds Wild Bergamot to the original four Appalachian Medicinals + Bloodroot). Deadline: May 30 hard (public announcement, inventory expectations set).

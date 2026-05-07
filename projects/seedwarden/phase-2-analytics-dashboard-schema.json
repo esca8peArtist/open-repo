@@ -1,0 +1,668 @@
+{
+  "_meta": {
+    "title": "Seedwarden Phase 2 Analytics Dashboard Schema",
+    "version": "1.0",
+    "created": "2026-05-07",
+    "status": "production-ready",
+    "purpose": "Metric definitions, alert thresholds, automation rules, and data sources for Phase 2 customer success measurement. Implementable in Google Sheets or any lightweight data tool.",
+    "operator": "Anya — solo operator",
+    "references": [
+      "phase-2-customer-success-framework.md",
+      "phase-2-analytics-strategy.md",
+      "phase-2-buyer-retention-lifecycle-strategy.md",
+      "analytics/monthly-metrics-checklist.md"
+    ]
+  },
+
+  "data_sources": {
+    "etsy_shop_manager": {
+      "type": "manual_export",
+      "cadence": "weekly (Sunday) + monthly (first Monday)",
+      "format": "CSV",
+      "save_path": "analytics/data/etsy_orders_YYYY-MM.csv",
+      "endpoints_available": [
+        "Shop Manager > Orders (per-order revenue, buyer email, product)",
+        "Shop Manager > Stats (views, conversion rate, favorites per listing)",
+        "Shop Manager > Finances > Payment Account (net revenue, fee breakdown)",
+        "Shop Manager > Stats > Traffic Sources (channel breakdown)",
+        "Shop Manager > Marketing > Sales and Coupons (coupon redemption counts)"
+      ],
+      "not_available": [
+        "Individual buyer demographics",
+        "Abandoned cart real-time data",
+        "Competitor listing performance",
+        "Buyer browsing sessions on Etsy marketplace"
+      ],
+      "automation_option": "Etsy Open API v3 — /application/shops/{shop_id}/receipts endpoint, OAuth 2.0, 10 req/sec limit. Set up in Month 2 if weekly manual export exceeds 45 minutes."
+    },
+    "kit_email_platform": {
+      "type": "manual_export",
+      "cadence": "monthly (first Monday)",
+      "format": "CSV",
+      "save_path": "analytics/data/kit_subscribers_YYYY-MM.csv",
+      "columns_used": ["email", "subscribed_at", "tags", "open_count", "sent_count", "click_count"],
+      "sequence_reports": "Kit > Reports > Sequences > Seedwarden Welcome (open rate and click rate per email, manually recorded)",
+      "broadcast_reports": "Kit > Reports > Broadcasts (per-send open rate, click rate, unsubscribe count)",
+      "automation_option": "Kit Creator plan ($25/month) adds API access. Not needed until subscriber count exceeds 500."
+    },
+    "ga4": {
+      "type": "manual_export",
+      "cadence": "monthly",
+      "format": "CSV",
+      "reports": [
+        "GA4 > Reports > Acquisition > Traffic Acquisition (sessions by source/medium)",
+        "GA4 > Reports > Engagement > Pages and Screens (views per listing page)"
+      ],
+      "constraints": [
+        "GA4 fires only on individual listing pages, not Etsy search results",
+        "Purchase events cannot be captured by GA4 on Etsy — all transaction data from Etsy reporting",
+        "No custom JavaScript injection possible on Etsy listings"
+      ],
+      "custom_events": [
+        {"name": "view_zone_card_landing", "surface": "Kit landing page", "parameter": "acquisition_source"},
+        {"name": "lead_magnet_signup", "surface": "Kit landing page", "parameters": ["acquisition_source", "inferred_cohort"]}
+      ]
+    },
+    "ltv_tracker_spreadsheet": {
+      "type": "manual_spreadsheet",
+      "cadence": "weekly update (20 minutes, first Monday of month for full reconcile)",
+      "file": "analytics/data/customer-ltv-tracker.csv",
+      "primary_key": "buyer_email",
+      "description": "Single source of truth for individual customer lifetime value, cohort assignment, and repeat purchase tracking. Maintained manually by cross-referencing Etsy order CSV with Kit subscriber export."
+    },
+    "post_purchase_survey": {
+      "type": "Google Form or Typeform",
+      "delivery": "Kit Campaign 1 Email 2 (Day 2 post-purchase)",
+      "cadence": "per-buyer (fires once per new buyer)",
+      "responses_stored": "Append to analytics/data/survey_responses_YYYY-MM.csv",
+      "questions": [
+        {"id": "Q1", "text": "What best describes how you use Seedwarden guides?", "type": "multiple_choice", "options": ["Foraging / wild plant identification", "Emergency preparedness / food security", "Homesteading / gardening", "Gift for a friend or family member", "Medicinal herb research or practice", "Other"]},
+        {"id": "Q2", "text": "How satisfied are you with your purchase so far?", "type": "1_to_10_scale"},
+        {"id": "Q3", "text": "What would make this guide more useful for you?", "type": "free_text"}
+      ]
+    }
+  },
+
+  "metrics": [
+    {
+      "id": "M01",
+      "name": "total_orders_cumulative",
+      "display_name": "Total Orders (Cumulative)",
+      "definition": "Count of all completed Etsy orders since Phase 2 launch (2026-05-30). Includes first-time and repeat buyers.",
+      "source": "etsy_shop_manager",
+      "cadence": "daily (first 30 days), then weekly",
+      "unit": "count",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 50, "timeframe": "by Day 60"},
+        "yellow": {"condition": "between", "min": 25, "max": 49, "timeframe": "by Day 60"},
+        "red": {"condition": "<", "value": 25, "timeframe": "by Day 60"}
+      },
+      "alert_action": "RED: Run traffic vs. conversion diagnostic. If views > 200/listing but orders < 1, problem is conversion (listing quality). If views < 100/listing, problem is visibility (SEO, channel)."
+    },
+    {
+      "id": "M02",
+      "name": "gross_revenue_monthly",
+      "display_name": "Gross Revenue (Monthly)",
+      "definition": "Sum of all Etsy order amounts before platform fees for the calendar month. From Etsy Finances > Payment Account CSV.",
+      "source": "etsy_shop_manager",
+      "cadence": "monthly",
+      "unit": "USD",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 1000, "timeframe": "Month 2 (June 2026)"},
+        "yellow": {"condition": "between", "min": 600, "max": 999, "timeframe": "Month 2"},
+        "red": {"condition": "<", "value": 600, "timeframe": "Month 2"}
+      },
+      "alert_action": "RED: Phase 3 CONDITIONAL trigger (Scenario 3). Do not commit Phase 3 development resources until Month 2 revenue crosses $600 for two consecutive months."
+    },
+    {
+      "id": "M03",
+      "name": "net_revenue_monthly",
+      "display_name": "Net Revenue (Monthly)",
+      "definition": "Gross revenue after Etsy platform fees. Formula: gross_revenue * 0.905 - (total_orders * 0.25). Accounts for 6.5% transaction fee + 3% + $0.25 payment processing.",
+      "source": "etsy_shop_manager",
+      "cadence": "monthly",
+      "unit": "USD",
+      "formula": "gross_revenue_monthly * 0.905 - (total_orders_monthly * 0.25)",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 900},
+        "yellow": {"condition": "between", "min": 540, "max": 899},
+        "red": {"condition": "<", "value": 540}
+      }
+    },
+    {
+      "id": "M04",
+      "name": "average_order_value",
+      "display_name": "Average Order Value (AOV)",
+      "definition": "Gross revenue divided by number of orders for the measurement period.",
+      "source": "etsy_shop_manager",
+      "cadence": "weekly",
+      "unit": "USD",
+      "formula": "gross_revenue / total_orders",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 25, "note": "Phase 2 target; Phase 1 AOV was $28.54"},
+        "yellow": {"condition": "between", "min": 18, "max": 24},
+        "red": {"condition": "<", "value": 18}
+      },
+      "alert_action": "RED below $18: Bundle listings are not converting. Check whether bundle listings appear in Etsy search for bundle-related keywords. If no bundles sold in 2+ consecutive weeks, audit Campaign 3 bundle recommendation pairing logic."
+    },
+    {
+      "id": "M05",
+      "name": "conversion_rate_store",
+      "display_name": "Store Conversion Rate (%)",
+      "definition": "Total orders divided by total visits (sessions) to the Etsy shop across all listings. Available in Etsy Shop Manager > Stats. Note: Etsy calculates this as orders / visits, not unique visitors.",
+      "source": "etsy_shop_manager",
+      "cadence": "weekly",
+      "unit": "percentage",
+      "formula": "total_orders / total_visits * 100",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 2.0, "note": "Phase 1 achieved 2.24%"},
+        "yellow": {"condition": "between", "min": 1.2, "max": 1.99},
+        "red": {"condition": "<", "value": 1.2}
+      },
+      "alert_action": "RED: Do not increase ad spend or social posting volume. Fix the listing first. Check cover image (is it legible at thumbnail size?), title (does it match buyer search intent?), price (within $2-5 of competitor range?)."
+    },
+    {
+      "id": "M06",
+      "name": "phase1_to_phase2_conversion_rate",
+      "display_name": "Phase 1 → Phase 2 Conversion Rate (%)",
+      "definition": "Percentage of Phase 1 buyers (first_order_date before 2026-05-30) who have made at least one Phase 2 purchase (any order on or after 2026-05-30). Calculated from LTV tracker.",
+      "source": "ltv_tracker_spreadsheet",
+      "cadence": "weekly (update cumulative count), monthly (full calculation)",
+      "unit": "percentage",
+      "formula": "count(phase1_buyers WHERE order_2_date >= '2026-05-30') / count(phase1_buyers) * 100",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 8, "timeframe": "by Day 60"},
+        "yellow": {"condition": "between", "min": 4, "max": 7.9, "timeframe": "by Day 60"},
+        "red": {"condition": "<", "value": 4, "timeframe": "by Day 60"}
+      },
+      "alert_action": "RED: Check which Phase 1 buyers are in Kit automation. If fewer than 60% of Phase 1 buyers have the `purchased` tag in Kit, the post-purchase lifecycle campaign is not reaching them. Manually apply tags for all unmatched Phase 1 buyers."
+    },
+    {
+      "id": "M07",
+      "name": "repeat_purchase_rate_30d",
+      "display_name": "30-Day Repeat Purchase Rate (%)",
+      "definition": "Of all buyers whose first purchase was at least 30 days ago, what percentage made a second purchase within 30 days of their first? Rolling calculation — recalculate each month using the prior month's new buyer cohort.",
+      "source": "ltv_tracker_spreadsheet",
+      "cadence": "monthly",
+      "unit": "percentage",
+      "formula": "count(buyers WHERE days_to_repeat <= 30) / count(buyers WHERE first_order_date <= CURRENT_DATE - 30) * 100",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 10},
+        "yellow": {"condition": "between", "min": 5, "max": 9.9},
+        "red": {"condition": "<", "value": 5}
+      },
+      "alert_action": "RED: Kit automation diagnostic required immediately. Verify Campaign 1 is firing. Check that `purchased` tag is being applied within 24 hours of order. Phase 1 natural repeat rate (no email) was approximately 5%; if Phase 2 is at or below 5% with email running, the email is not reaching buyers."
+    },
+    {
+      "id": "M08",
+      "name": "repeat_purchase_rate_60d",
+      "display_name": "60-Day Repeat Purchase Rate (%)",
+      "definition": "Of all buyers whose first purchase was at least 60 days ago, what percentage made a second purchase within 60 days of their first?",
+      "source": "ltv_tracker_spreadsheet",
+      "cadence": "monthly",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 18},
+        "yellow": {"condition": "between", "min": 10, "max": 17.9},
+        "red": {"condition": "<", "value": 10}
+      },
+      "alert_action": "RED at Day 60: Scenario 3 (Churn Risk) — activate diagnosis protocol. Check Campaign 3 click-to-purchase performance; check whether bundle products are visible in Etsy search for cross-sell terms."
+    },
+    {
+      "id": "M09",
+      "name": "repeat_purchase_rate_90d",
+      "display_name": "90-Day Repeat Purchase Rate (%)",
+      "definition": "Of all buyers whose first purchase was at least 90 days ago, what percentage made a second purchase within 90 days of their first?",
+      "source": "ltv_tracker_spreadsheet",
+      "cadence": "monthly",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 25},
+        "yellow": {"condition": "between", "min": 15, "max": 24.9},
+        "red": {"condition": "<", "value": 15}
+      }
+    },
+    {
+      "id": "M10",
+      "name": "ltv_by_cohort",
+      "display_name": "Lifetime Value by Cohort (Average)",
+      "definition": "Average cumulative revenue per buyer, calculated separately for each cohort tag. From LTV tracker: sum(ltv_to_date) for each cohort / count of buyers in cohort.",
+      "source": "ltv_tracker_spreadsheet",
+      "cadence": "monthly",
+      "unit": "USD",
+      "segments": [
+        {"cohort": "Forager", "target_12mo": {"min": 60, "max": 80}},
+        {"cohort": "Prepper", "target_12mo": {"min": 75, "max": 100}},
+        {"cohort": "Homesteader", "target_12mo": {"min": 70, "max": 100}},
+        {"cohort": "GiftBuyer", "target_12mo": {"min": 45, "max": 60}},
+        {"cohort": "Herbalist", "target_12mo": {"min": 90, "max": 130}}
+      ],
+      "thresholds": {
+        "green": "Annualized LTV trajectory within 20% of 12-month target",
+        "yellow": "Annualized LTV 20-40% below 12-month target",
+        "red": "Annualized LTV more than 40% below 12-month target"
+      },
+      "alert_action": "RED on any cohort: audit whether that cohort's lifecycle campaign emails are firing and whether the content matches cohort expectations. Herbalist LTV below $50 at 90 days indicates content personalization has failed — check cohort tag assignment accuracy."
+    },
+    {
+      "id": "M11",
+      "name": "kit_subscriber_count",
+      "display_name": "Kit Subscriber Count (Total Active)",
+      "definition": "Total active subscribers in Kit with at least one non-bounced email send. Does not include unsubscribed or hard-bounce addresses.",
+      "source": "kit_email_platform",
+      "cadence": "weekly",
+      "unit": "count",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 80, "timeframe": "by Day 60"},
+        "yellow": {"condition": "between", "min": 40, "max": 79, "timeframe": "by Day 60"},
+        "red": {"condition": "<", "value": 40, "timeframe": "by Day 60"}
+      },
+      "alert_action": "RED by Day 60: The landing page / lead magnet funnel is underperforming. Check that the Kit landing page URL is in the Etsy listing 'about' section. Check that the post-purchase email CTA links to the zone card signup page. Increase frequency of social posts that include the free zone card CTA."
+    },
+    {
+      "id": "M12",
+      "name": "kit_subscriber_growth_rate",
+      "display_name": "Kit Subscriber Weekly Net Growth",
+      "definition": "New subscribers added minus unsubscribes in the 7-day period. From Kit dashboard subscriber count change week-over-week.",
+      "source": "kit_email_platform",
+      "cadence": "weekly",
+      "unit": "count",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 8, "timeframe": "Weeks 3 onward"},
+        "yellow": {"condition": "between", "min": 3, "max": 7},
+        "red": {"condition": "<", "value": 3, "timeframe": "Two consecutive weeks after Week 2"}
+      }
+    },
+    {
+      "id": "M13",
+      "name": "email_campaign1_open_rate",
+      "display_name": "Campaign 1 (Welcome) Open Rate (%)",
+      "definition": "Percentage of Campaign 1 Email 1 sends that are opened. Tracked in Kit > Sequences > Campaign 1 > Statistics > Email 1.",
+      "source": "kit_email_platform",
+      "cadence": "weekly",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 40},
+        "yellow": {"condition": "between", "min": 30, "max": 39.9},
+        "red": {"condition": "<", "value": 30}
+      },
+      "alert_action": "RED for 2 consecutive weeks: A/B test two new subject lines. 10% sample per variant, 7-day window. If below 25%: deliverability problem (not content). Check SPF/DKIM DNS records in Kit settings."
+    },
+    {
+      "id": "M14",
+      "name": "email_campaign3_click_to_purchase",
+      "display_name": "Campaign 3 (Upsell) Click-to-Purchase Rate (%)",
+      "definition": "Percentage of Campaign 3 Email 3.1 recipients who click the bundle CTA AND complete an Etsy purchase within 7 days (cross-referenced between Kit click data and Etsy order data manually).",
+      "source": "kit_email_platform",
+      "cadence": "monthly",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 1.5},
+        "yellow": {"condition": "between", "min": 0.5, "max": 1.49},
+        "red": {"condition": "<", "value": 0.5}
+      },
+      "alert_action": "RED after 30 buyers have received Campaign 3: the bundle recommendation pairing logic is wrong. Audit which first-purchase → bundle recommendation combinations are receiving the most clicks but fewest purchases. Adjust the product pairing table in phase-2-customer-success-framework.md Section 3.3."
+    },
+    {
+      "id": "M15",
+      "name": "email_unsubscribe_rate",
+      "display_name": "Email Unsubscribe Rate (Per Send)",
+      "definition": "Percentage of recipients who unsubscribe from any single email send. Tracked per email in Kit > Broadcasts or Kit > Sequences.",
+      "source": "kit_email_platform",
+      "cadence": "per_send",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": "<", "value": 1.0},
+        "yellow": {"condition": "between", "min": 1.0, "max": 2.0},
+        "red": {"condition": ">", "value": 2.0}
+      },
+      "alert_action": "RED on any single email: pause all Campaign 2 sends for the current week. The email that triggered the spike has a content-expectation mismatch. Review: is the content zone-specific? Is it too promotional too early in the sequence? Reduce frequency to 1x/week for 30 days and revise the offending email before resending."
+    },
+    {
+      "id": "M16",
+      "name": "nps_score",
+      "display_name": "Net Promoter Score (NPS)",
+      "definition": "From Day 30 newsletter survey: percentage of respondents scoring 9-10 (Promoters) minus percentage scoring 0-6 (Detractors). Passive = 7-8 (not counted). Minimum sample size: 10 responses to calculate.",
+      "source": "post_purchase_survey",
+      "cadence": "monthly (calculate from all responses received in 30-day window)",
+      "unit": "score (-100 to 100)",
+      "formula": "(count(scores >= 9) - count(scores <= 6)) / total_responses * 100",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 40},
+        "yellow": {"condition": "between", "min": 20, "max": 39},
+        "red": {"condition": "<", "value": 20}
+      },
+      "alert_action": "RED: Do not launch Phase 3 until root cause is identified. Conduct 3-5 direct buyer conversations (phone or video) within 14 days. Common causes: guide content quality issue, incorrect zone information, unclear navigation in the guide. Document findings in WORKLOG.md."
+    },
+    {
+      "id": "M17",
+      "name": "day7_satisfaction_score",
+      "display_name": "Day 7 Buyer Satisfaction Score (Average)",
+      "definition": "Average of all 1-10 satisfaction scores from the Day 7 post-purchase survey (Question 2). Delivery: Campaign 1 Email 2 (Day 2), survey link, responses arrive by Day 7.",
+      "source": "post_purchase_survey",
+      "cadence": "weekly (track individually; alert on any score below 6)",
+      "unit": "score (1-10)",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 8},
+        "yellow": {"condition": "between", "min": 7, "max": 7.9},
+        "red": {"condition": "<", "value": 7}
+      },
+      "alert_action": "Any individual score of 6 or below: personal reply from Anya within 24 hours. Three or more scores below 7 in a single week: the guide has a product quality problem. Pause further promotion of that listing until the issue is resolved."
+    },
+    {
+      "id": "M18",
+      "name": "bundle_revenue_percentage",
+      "display_name": "Bundle Revenue as % of Total Revenue",
+      "definition": "Sum of revenue from all bundle listings divided by total gross revenue for the measurement period. From Etsy Stats > filter by bundle listing names.",
+      "source": "etsy_shop_manager",
+      "cadence": "monthly",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 20, "timeframe": "Month 3 onward"},
+        "yellow": {"condition": "between", "min": 10, "max": 19.9},
+        "red": {"condition": "<", "value": 10, "timeframe": "Month 3 onward"}
+      },
+      "alert_action": "RED: Bundle listings may not be appearing in Etsy search for bundle-related queries. Update bundle listing titles and tags to include 'bundle', 'set', 'collection' keywords. Check that Campaign 3 upsell emails are linking directly to bundle listings."
+    },
+    {
+      "id": "M19",
+      "name": "cohort_distribution",
+      "display_name": "Cohort Distribution (% per Segment)",
+      "definition": "Percentage of buyers in each cohort tag in Kit, calculated from monthly Kit subscriber export filtered by the `purchased` tag.",
+      "source": "kit_email_platform",
+      "cadence": "monthly",
+      "unit": "percentage",
+      "segments": {
+        "Forager": {"target_share": {"min": 20, "max": 30}},
+        "Prepper": {"target_share": {"min": 15, "max": 20}},
+        "Homesteader": {"target_share": {"min": 30, "max": 35}},
+        "GiftBuyer": {"target_share": {"min": 10, "max": 20}},
+        "Herbalist": {"target_share": {"min": 10, "max": 15}},
+        "Unknown": {"target_share": {"max": 15}}
+      },
+      "thresholds": {
+        "green": "All cohorts within target share bands; Unknown below 15%",
+        "yellow": "One cohort outside target share by more than 10 percentage points OR Unknown between 15-25%",
+        "red": "One cohort above 55% of total buyers OR Unknown above 25%"
+      },
+      "alert_action": "One cohort above 55%: run Phase 3 Option D (Focused Single-Cohort) evaluation per phase-3-decision-framework.md Branch B. Unknown above 25%: post-purchase survey is not reaching buyers — check Kit automation delivery and Etsy order confirmation CTA."
+    },
+    {
+      "id": "M20",
+      "name": "churn_early_warning",
+      "display_name": "At-Risk Buyers (No Email Open, 14+ Days)",
+      "definition": "Count of buyers with the `purchased` tag in Kit who have not opened any email in the prior 14 days. Calculated from Kit subscriber export: filter by `purchased` tag, then filter by `open_count` stagnant for 14 days (manual comparison of two monthly exports).",
+      "source": "kit_email_platform",
+      "cadence": "monthly",
+      "unit": "count and percentage of purchased subscribers",
+      "thresholds": {
+        "green": {"condition": "<", "value": 20, "unit": "percentage_of_purchased_subscribers"},
+        "yellow": {"condition": "between", "min": 20, "max": 30, "unit": "percentage"},
+        "red": {"condition": ">", "value": 30, "unit": "percentage"}
+      },
+      "alert_action": "RED: Fire Campaign 4 (Re-engagement) immediately for all buyers in this population, regardless of the Day 45 timing trigger. Cold buyers who remain cold past 30 days have significantly lower re-purchase probability — intervene earlier."
+    },
+    {
+      "id": "M21",
+      "name": "etsy_ads_roas",
+      "display_name": "Etsy Ads Return on Ad Spend (ROAS)",
+      "definition": "Etsy Ads revenue attributed / Etsy Ads spend for the measurement period. Available in Etsy Shop Manager > Marketing > Etsy Ads. Only relevant if Etsy Ads are running.",
+      "source": "etsy_shop_manager",
+      "cadence": "monthly (or weekly if spend > $20/week)",
+      "unit": "ratio",
+      "thresholds": {
+        "green": {"condition": ">", "value": 2.5},
+        "yellow": {"condition": "between", "min": 1.5, "max": 2.5},
+        "red": {"condition": "<", "value": 1.5}
+      },
+      "alert_action": "RED for any listing after 21 days: pause ads on that listing immediately. The listing has a conversion problem that paid traffic will not solve. Fix the listing (cover image, description, price) and restart ads after 14 days of organic-only testing. GREEN (above 2.5) for 30+ days: increase daily budget 25-50% — this is a scale signal."
+    },
+    {
+      "id": "M22",
+      "name": "social_referral_percentage",
+      "display_name": "Social Referral Traffic as % of Total Etsy Sessions",
+      "definition": "Sessions arriving at Etsy shop from social channels (Instagram, Pinterest, TikTok) as a percentage of total sessions. From Etsy Stats > Traffic Sources.",
+      "source": "etsy_shop_manager",
+      "cadence": "monthly",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 15},
+        "yellow": {"condition": "between", "min": 8, "max": 14.9},
+        "red": {"condition": "<", "value": 8}
+      },
+      "alert_action": "RED by Day 60: Social content is not converting to Etsy traffic. Check UTM parameters are on all bio links. Review which platform shows highest click-through in GA4 (Instagram vs. Pinterest vs. TikTok). Shift posting volume to the highest-converting platform."
+    },
+    {
+      "id": "M23",
+      "name": "phase3_readiness_score",
+      "display_name": "Phase 3 Readiness Score",
+      "definition": "Composite pass/fail score across 6 criteria evaluated at Day 60 (July 29, 2026). Each criterion is binary (PASS or FAIL). Score is count of PASSes out of 6.",
+      "source": "composite (ltv_tracker_spreadsheet + kit_email_platform + etsy_shop_manager + post_purchase_survey)",
+      "cadence": "Day 30 (preliminary) + Day 60 (decision gate)",
+      "unit": "score (0-6)",
+      "criteria": [
+        {"id": "C1", "description": "Total orders >= 50 by Day 60", "source": "M01"},
+        {"id": "C2", "description": "Gross revenue >= $1,000 in Month 2", "source": "M02"},
+        {"id": "C3", "description": "Phase 1 to Phase 2 conversion rate >= 8%", "source": "M06"},
+        {"id": "C4", "description": "Repeat purchase rate >= 10% at Day 60", "source": "M08"},
+        {"id": "C5", "description": "Kit subscribers >= 80 by Day 60", "source": "M11"},
+        {"id": "C6", "description": "NPS >= 40 (Day 30 survey data)", "source": "M16"}
+      ],
+      "thresholds": {
+        "6_of_6": "Scenario 1 — Full Phase 3 GO (Women's Health bundle + Tier 2 wholesale, September 2026)",
+        "4_or_5_of_6": "Scenario 2 — Standard Phase 3 GO (Women's Health bundle September, Tier 2 wholesale November)",
+        "2_or_3_of_6": "Scenario 3 — Churn Risk, CONDITIONAL GO (run diagnosis protocol; defer Phase 3 to November pending Day 90 recovery)",
+        "0_or_1_of_6": "Fundamental issue — pause Phase 3 entirely; fix Phase 2 foundations before any further expansion"
+      }
+    },
+    {
+      "id": "M24",
+      "name": "vip_buyer_count",
+      "display_name": "VIP Buyer Count (3+ Purchases)",
+      "definition": "Count of buyers with the `vip` tag in Kit (applied when cumulative purchase count reaches 3). Also track as % of total buyers.",
+      "source": "kit_email_platform",
+      "cadence": "monthly",
+      "unit": "count",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 5, "timeframe": "by Day 90"},
+        "yellow": {"condition": "between", "min": 2, "max": 4, "timeframe": "by Day 90"},
+        "red": {"condition": "=", "value": 0, "timeframe": "by Day 90"}
+      },
+      "alert_action": "0 VIP buyers by Day 90: the Campaign 3 upsell or the Campaign 6 VIP track is not generating third purchases. Audit whether Campaign 3 Email 3.2 is firing for buyers who opened but did not click Email 3.1. Also check LTV tracker — are there buyers with 3+ purchases who have not yet received the VIP tag?"
+    },
+    {
+      "id": "M25",
+      "name": "newsletter_open_rate",
+      "display_name": "Weekly Newsletter Open Rate (%)",
+      "definition": "Open rate for each weekly broadcast newsletter send, tracked in Kit > Reports > Broadcasts.",
+      "source": "kit_email_platform",
+      "cadence": "per_send (weekly)",
+      "unit": "percentage",
+      "thresholds": {
+        "green": {"condition": ">=", "value": 28},
+        "yellow": {"condition": "between", "min": 22, "max": 27.9},
+        "red": {"condition": "<", "value": 22}
+      },
+      "alert_action": "RED for 3 consecutive sends: list health is degrading. Step 1: check cold subscriber percentage (open rate below 15% per subscriber). If above 25% of list, trigger win-back automation for cold segment. Step 2: test one subject line revision using specific seasonal urgency hook instead of generic botanical topic. Step 3: if bi-weekly frequency reduces open rate further, return to weekly with revised subject line approach."
+    }
+  ],
+
+  "automation_rules": [
+    {
+      "id": "AR01",
+      "name": "day_30_retention_check",
+      "trigger": "Day 30 post Phase 2 launch (2026-06-29)",
+      "action": "Run M07 (30-day repeat purchase rate). If M07 < 5%: flag IMMEDIATE_ESCALATION. Record results in Monthly Dashboard Block B. Run Phase 3 readiness score (M23) preliminary evaluation.",
+      "escalation": "If M07 < 5%: check Kit automation same day. Do not wait for next Sunday review.",
+      "notify": "Record in WORKLOG.md within 48 hours of Day 30."
+    },
+    {
+      "id": "AR02",
+      "name": "day_45_expansion_gate",
+      "trigger": "Day 45 post Phase 2 launch (2026-07-14)",
+      "action": "Evaluate whether Phase 2 product expansion (new listings) is ready to proceed. Pull M01 (cumulative orders), M08 (60-day repeat rate, preliminary), M11 (Kit subscribers), M19 (cohort distribution).",
+      "decision_rule": "If M01 < 40 orders AND M11 < 50 subscribers: delay expansion. If M01 >= 40 AND M11 >= 50: expansion can proceed as planned.",
+      "notify": "Record expansion decision (GO or WAIT) in WORKLOG.md."
+    },
+    {
+      "id": "AR03",
+      "name": "day_60_phase3_decision",
+      "trigger": "Day 60 post Phase 2 launch (2026-07-29)",
+      "action": "Calculate M23 (Phase 3 Readiness Score). Match score to Scenario 1/2/3/4 per phase-2-customer-success-framework.md Part 4. Record decision.",
+      "decision_rule": {
+        "6_of_6": "FULL_GO: Begin Women's Health bundle development August 1. Initiate Tier 2 wholesale outreach.",
+        "4_or_5_of_6": "STANDARD_GO: Begin Women's Health bundle development August 1. Tier 2 wholesale deferred to Day 90 check.",
+        "2_or_3_of_6": "CONDITIONAL: Run Churn Risk diagnosis protocol. Defer Phase 3 development. Re-evaluate at Day 90 (October 29).",
+        "0_or_1_of_6": "HOLD: Phase 3 paused. Focus on Phase 2 remediation."
+      },
+      "notify": "Decision must be recorded in WORKLOG.md by July 31, 2026."
+    },
+    {
+      "id": "AR04",
+      "name": "churn_early_warning_alert",
+      "trigger": "M20 (at-risk buyer percentage) crosses 30% at any monthly check",
+      "action": "Fire Campaign 4 (Re-engagement) for all buyers in the at-risk population, regardless of Day 45 trigger. Do not wait for the scheduled Campaign 4 timing.",
+      "escalation": "If M20 > 30% and firing Campaign 4 does not reduce at-risk percentage below 25% within 14 days: the email content is not reaching buyers (deliverability issue). Check Kit SPF/DKIM configuration.",
+      "notify": "Log in WORKLOG.md same day as detection."
+    },
+    {
+      "id": "AR05",
+      "name": "nps_red_alert",
+      "trigger": "Any single Day 7 satisfaction score (M17) of 6 or below OR NPS (M16) below 20",
+      "action": "Level 1 escalation — personal reply from Anya within 24 hours to the buyer who submitted the low score. If 3+ Day 7 scores below 7 in same week: audit that listing's product quality.",
+      "escalation": "NPS below 20: Do not proceed with Phase 3 launch. Schedule 3-5 buyer calls within 14 days. Document root cause in WORKLOG.md.",
+      "notify": "Immediate — same day as response receipt."
+    },
+    {
+      "id": "AR06",
+      "name": "kit_automation_health_check",
+      "trigger": "Launch day (2026-05-30) at 11am AND weekly (every Sunday) for first 30 days",
+      "action": "Verify that Campaign 1 Email 1 has fired for all new buyers from the prior 24 hours. Method: Kit > Sequences > Campaign 1 > Activity; compare send count to Etsy order count for same period.",
+      "failure_response": "If sends < Etsy orders: Zapier integration has failed. Activate Option B (manual CSV tag assignment) immediately. Apply `purchased` tags to all unmatched buyers in Kit manually before 5pm same day.",
+      "notify": "Log any automation failures in WORKLOG.md."
+    },
+    {
+      "id": "AR07",
+      "name": "etsy_ads_roas_scaling",
+      "trigger": "M21 (ROAS) above 2.5 for any listing for 30+ consecutive days",
+      "action": "Increase daily ad budget for that listing by 25-50%. This is a scale signal, not a maintenance signal.",
+      "escalation": "If ROAS drops below 2.0 after budget increase: return budget to prior level and investigate whether increased spend triggered higher competition for the same keyword.",
+      "notify": "Record budget change in WORKLOG.md."
+    },
+    {
+      "id": "AR08",
+      "name": "cohort_concentration_alert",
+      "trigger": "Any single cohort exceeds 55% of total buyers at any monthly review (M19)",
+      "action": "Evaluate Phase 3 Option D (Focused Single-Cohort) per phase-3-decision-framework.md Branch B. Shift content calendar to front-load products for the dominant cohort.",
+      "notify": "Record dominant cohort and Option D evaluation in WORKLOG.md within the monthly review session."
+    },
+    {
+      "id": "AR09",
+      "name": "zero_order_day_alert",
+      "trigger": "Zero Etsy orders on any day after Day 7 when listing views are 100+",
+      "action": "This is a conversion problem, not a traffic problem. Do not increase social posting volume. Audit: cover image legibility at thumbnail size, title keyword match to buyer intent, price relative to competitor range. Fix before next day.",
+      "escalation": "Zero orders for 5+ consecutive days (any view count): escalate to user as Level 1 — check if listings are still active/visible in Etsy search.",
+      "notify": "Log in daily check notes; escalate immediately if 3+ consecutive zero-order days."
+    },
+    {
+      "id": "AR10",
+      "name": "vip_tag_monthly_assignment",
+      "trigger": "First Monday of each month (monthly review session)",
+      "action": "Cross-reference LTV tracker with Kit subscriber export. For any buyer with 3+ purchase orders in the LTV tracker who does not yet have the `vip` tag in Kit: apply `vip` tag manually. Also ensure these buyers are excluded from Campaign 3, 4, and 5 sequences.",
+      "notify": "Record count of new VIP buyers added this month in Monthly Data Log."
+    }
+  ],
+
+  "checkpoint_schedule": {
+    "day_30": {
+      "date": "2026-06-29",
+      "metrics_to_pull": ["M01", "M07", "M11", "M16", "M19", "M23"],
+      "time_required": "45 minutes",
+      "output": "Preliminary Phase 3 readiness score + any Level 1 escalations"
+    },
+    "day_45": {
+      "date": "2026-07-14",
+      "metrics_to_pull": ["M01", "M08", "M11", "M18", "M19", "M20"],
+      "time_required": "30 minutes",
+      "output": "Phase 2 expansion go/no-go decision recorded in WORKLOG.md"
+    },
+    "day_60": {
+      "date": "2026-07-29",
+      "metrics_to_pull": ["M01", "M02", "M06", "M08", "M11", "M16", "M19", "M23", "M24"],
+      "time_required": "45 minutes",
+      "output": "Phase 3 go/no-go decision (Scenario 1/2/3/4) recorded in WORKLOG.md by July 31"
+    },
+    "day_90": {
+      "date": "2026-08-28",
+      "metrics_to_pull": ["M01", "M02", "M06", "M09", "M10", "M11", "M16", "M19", "M24"],
+      "time_required": "2 hours (full monthly deep-dive)",
+      "output": "Cohort LTV validation; Phase 3 execution status check; Women's Health bundle development progress"
+    }
+  },
+
+  "spreadsheet_implementation": {
+    "tool": "Google Sheets",
+    "file_name": "seedwarden-analytics-dashboard.xlsx",
+    "tabs": [
+      {"tab": "Daily", "purpose": "5-minute daily check — orders, revenue anomaly, Kit growth", "update_cadence": "Every weekday; Mon/Wed/Fri from Day 15"},
+      {"tab": "Weekly", "purpose": "30-minute Sunday review — email performance, cohort health, escalation checklist", "update_cadence": "Every Sunday evening"},
+      {"tab": "Monthly", "purpose": "2-hour first-Monday deep dive — LTV by cohort, Phase 3 readiness score, retention validation", "update_cadence": "First Monday of each month"},
+      {"tab": "LTV_Tracker", "purpose": "Per-buyer lifetime value, cohort tag, repeat purchase dates. Primary key: buyer_email", "update_cadence": "Weekly (append new orders); monthly (full reconcile)"},
+      {"tab": "Checkpoint_Log", "purpose": "Day 30 / Day 45 / Day 60 / Day 90 decisions. Permanent record of go/no-go determinations", "update_cadence": "At each checkpoint date"},
+      {"tab": "Survey_Responses", "purpose": "Day 7 satisfaction scores and free text. NPS calculation. Voice-of-customer input for Phase 3 product decisions", "update_cadence": "As responses arrive (weekly check sufficient)"},
+      {"tab": "WORKLOG_Mirror", "purpose": "Copy of WORKLOG.md entries related to escalations and decisions. Cross-reference with the markdown WORKLOG.md", "update_cadence": "Same day as any escalation or decision"}
+    ],
+    "upgrade_triggers": [
+      "Monthly orders > 300: evaluate Looker Studio + Etsy/Kit Zapier connectors ($30/month) for automated daily refresh",
+      "LTV tracker > 150 rows: switch to Jupyter notebook queries (analytics/dashboard-template.ipynb) for cohort LTV calculations",
+      "Kit subscribers > 500: evaluate Kit Creator plan API access ($25/month) for automated monthly export"
+    ]
+  },
+
+  "phase3_trigger_summary": {
+    "scenario_1_high_growth": {
+      "triggers": {
+        "phase1_to_phase2_conversion": ">= 8%",
+        "repeat_purchase_rate_60d": ">= 18%",
+        "cohort_size_day_60": ">= 100 unique buyers"
+      },
+      "decision": "Full Phase 3 GO",
+      "womens_health_bundle_launch": "September 2026",
+      "tier2_wholesale": "September 2026",
+      "revenue_target_october": "$2,800 - $3,800/month gross"
+    },
+    "scenario_2_steady_growth": {
+      "triggers": {
+        "phase1_to_phase2_conversion": "4-8%",
+        "repeat_purchase_rate_60d": "10-18%",
+        "cohort_size_day_60": "50-100 unique buyers"
+      },
+      "decision": "Standard Phase 3 GO",
+      "womens_health_bundle_launch": "September 2026",
+      "tier2_wholesale": "November 2026 (pending Day 90 check)",
+      "revenue_target_october": "$1,800 - $2,500/month gross"
+    },
+    "scenario_3_churn_risk": {
+      "triggers_any_one": {
+        "repeat_purchase_rate_60d": "< 8%",
+        "phase1_to_phase2_conversion": "< 4%",
+        "cohort_size_day_60": "< 50 unique buyers"
+      },
+      "decision": "Conditional GO — diagnose first",
+      "womens_health_bundle_launch": "November 2026 (pending Day 90 recovery check)",
+      "tier2_wholesale": "On hold indefinitely until repeat rate crosses 10%",
+      "diagnosis_protocol": "See phase-2-customer-success-framework.md Part 4.1 Scenario 3"
+    },
+    "scenario_4_explosive_growth": {
+      "triggers_early_signal": {
+        "orders_per_day_day14": ">= 5",
+        "kit_growth_per_day": ">= 10 subscribers/day",
+        "repeat_signal_day14": "Any second purchase within 14 days of first"
+      },
+      "decision": "Immediate Phase 3 acceleration — do not wait for Day 60",
+      "womens_health_bundle_launch": "August 15, 2026",
+      "tier2_wholesale": "September 2026",
+      "contractor_trigger": "If total weekly work hours exceed 20: outsource social media content or mockup production"
+    }
+  }
+}
