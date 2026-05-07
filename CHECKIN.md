@@ -1,41 +1,48 @@
-## Session 894 (2026-05-07 23:45–00:25 UTC) — PARALLEL EXECUTION: Domain Currency Verification + Phase 2 Institutional Outreach Planning COMPLETE
+## Session 895 (2026-05-07 19:15–20:30 UTC) — PARALLEL EXECUTION: Phase 1 Institutional Outreach + Phase 2 Production Timelines + Batch 3 Product Research COMPLETE
 
-### ✅ SESSION COMPLETE: 2 parallel exploration items executed (Domain maintenance + cybersecurity-hardening Phase 2 planning). Both committed to master. Exploration queue refreshed to 3 active items.
+### ✅ SESSION COMPLETE: 3 parallel exploration items executed (resistance-research, seedwarden, mfg-farm). All committed to master. Exploration queue refreshed.
 
 **What Was Accomplished**:
 
-1. ✅ **resistance-research: Domain Maintenance & May 2026 Currency Verification** ✅ COMPLETE
-   - File: `projects/resistance-research/MAY_2026_DOMAIN_UPDATES_VERIFICATION.md`
-   - All 35 domains verified current through May 7, 2026
-   - Key findings: 11 domains with paste-ready edit text; 24 confirmed current without edits
-   - Two critical Phase 2 findings: (1) Abrego Garcia v. Crenshaw ruling imminent (monitor starting May 8), (2) Palantir cross-reference gap (non-blocking, Phase 2 deepening)
-   - Four upcoming triggers for future monitoring: FISC opinion (~May 15), Section 591 FY2027 (post-May 13), Crenshaw ruling (imminent), Watson v. RNC SCOTUS (late June)
-   - Business value: Distribution-ready. All 35 domains reflect May 7 threat landscape; materials maximally credible with institutional recipients.
+1. ✅ **resistance-research: Phase 1 Institutional Outreach Prioritization for May 28 Domain 42 DEA Deadline** ✅ COMPLETE
+   - Files: `execution/domain-42-outreach-sequencing.md` + `execution/domain-42-stakeholder-commitment-matrix.csv`
+   - Strategy: 4-stage sequence (Stage 1: May 8 anchor orgs DPA/NORML/ACLU/Sentencing; Stage 2: May 10 NAACP LDF critical; Stage 3: May 14 state AGs; Stage 4: May 15–21 follow-up)
+   - Key finding: May 8 Wave 1 launch is non-negotiable critical path (7-day slip collapses outcomes from 3→2 committing orgs, eliminates AG engagement)
+   - ACLU Criminal Law Reform Project is highest-impact uncertain outcome (disenfranchisement framing never otherwise heard)
+   - Minimum viable success: 3 orgs "committed to file" by May 24, at least 1 DPA/NORML, at least 1 civil rights org
+   - Business value: May 28 DEA hearing deadline operationalized; prevents deadline miss; maximizes institutional participation
 
-2. ✅ **cybersecurity-hardening: Phase 2 Institutional Outreach Strategy** ✅ COMPLETE
-   - Files: `phase-2-institutional-outreach-strategy.md` (2,400 words) + `phase-2-target-organizations.csv` (18 organizations, 5 sectors)
-   - Designed Phase 2 institutional network outreach strategy from first principles (distinct from Tier 2 individual-org documentation)
-   - Coverage: (1) Phase 1 → Phase 2 transition gates with sector-specific evidence requirements; (2) 18 target organizations across 5 sectors (AG networks, law school associations, journalist membership bodies, union security committees, think tank networks); (3) Sector-specific messaging templates; (4) Domain → sector mapping (Domains 11, 16, 17, 20, 21, 25, 33, 36); (5) Week-by-week sequencing calendar; (6) Contingency paths for low/high response rates
-   - Key finding: Phase 2 institutional outreach REQUIRES Phase 1 adoption signal FIRST — minimum gate is one named adoption signal from member organization in each sector. Georgetown CPT identified as highest-alignment contact (American Dragnet predecessor relationship)
-   - Business value: Eliminates Phase 1 → Phase 2 ambiguity. User can execute Phase 1, collect feedback, then immediately transition to Phase 2 without additional planning
+2. ✅ **seedwarden: Phase 2 Photography & Plant Sourcing Logistics (May 30 Target)** ✅ COMPLETE
+   - Files: `phase-2-production-timeline.md` + `phase-2-plant-sourcing-vendor-list.md` + `phase-2-location-scout-report.md` + `phase-2-photo-shoot-checklist.md`
+   - Timeline: 4 parallel workstreams (sourcing, location, shoot, guides) with fixed milestones: May 10 orders+location confirmed → May 15 plants received+Canva template → May 20–22 shoot → May 25 photos+guides drafted → May 30 launch
+   - Location: Asheville Botanical Garden (7-day permit deadline May 13; only viable path after 60-day National Forest and 14-day State Park deadlines passed)
+   - Plant sourcing: 3 vendors identified; critical risk is ginseng seed (spring stratified stock limited to WI Grown Ginseng LLC and Dairyland); fallback to dried root immediate
+   - Backup location: Private forest farm via UPS referral + always-available indoor window studio
+   - Cost: $65–$115 total plant sourcing
+   - Business value: May 30 launch fully de-risked; user has day-of operations guide with all contingencies pre-planned
 
-**Exploration Queue Status**: Refreshed to 3 active items:
-- resistance-research: Phase 1 Institutional Outreach Prioritization for May 28 Domain 42 DEA Deadline (2 hrs, no prerequisites)
-- seedwarden: Phase 2 Photography & Plant Sourcing Logistics (2–3 hrs, no prerequisites, May 30 target)
-- mfg-farm: Batch 2 Product Selection & Demand Research (2–3 hrs, no prerequisites)
+3. ✅ **mfg-farm: Batch 2 Product Selection & Demand Research** ✅ COMPLETE
+   - Files: `batch-3-candidate-research.md` + `batch-3-margin-validation.csv` + `batch-3-4-launch-sequencing.md`
+   - Batch 3 go/no-go: (1) Magnetic workshop bin labels — Rank 1, CadQuery ready, 72.5% gross margin, magnet order only gate, launch in <1 week. (2) Monitor riser legs — Rank 2, 69.2% gross margin, $21 net per set, design needed (3–4h CadQuery), launch within 2–3 weeks
+   - Batch 4: Pegboard hooks (design ready, tolerance test required) + garden plant markers (design ready, ASA profile calibration required)
+   - Second printer trigger: Month 3 (not Month 4–6); Batch 3 SKUs push single printer to 75–85% utilization by Month 2; $699 printer pays back in 5 weeks
+   - Go/no-go rule: Design complete + test-printed, BOM in hand, gross margin ≥65%. Bin labels meet all 3 within 1 week; risers within 2–3 weeks
+   - Business value: Post-test-print, user can immediately launch Batch 3 (bin labels) while designing Batch 4; 2nd printer decision clear by Month 2
 
-**Project Status (Unchanged from Session 893)**:
-- 🟢 **resistance-research**: Phase 1 distribution-ready. Domain currency verified. Awaiting user distribution path decision (A / A+37 / B)
-- 🔴 **stockbot**: CRITICAL — Jetson unreachable (blocks May fills). Gate 1 checklist executable May 12. Awaiting user ARCH decisions + Jetson restore
-- 🟢 **cybersecurity-hardening**: Phase 1 ready for user approval. Phase 2 institutional outreach plan complete
-- 🟢 **seedwarden**: Phase 2 framework production-ready. Track B launch plan complete
-- 🔴 **mfg-farm**: Blocked on test print
+**Project Status (Updated)**:
+- 🟢 **resistance-research**: Phase 1 distribution-ready (all 35 domains current May 7). Institutional outreach strategy for May 28 DEA deadline complete. Awaiting user distribution path decision (A / A+37 / B)
+- 🔴 **stockbot**: Awaiting user ARCH decisions (7 items: live_engine fate, alert thresholds, session registry, integration.py, Phase 6 analytics, schema migration, PerformanceMetrics naming)
+- 🟢 **cybersecurity-hardening**: Phase 1 ready for user approval. Phase 2 institutional outreach plan complete (Session 894)
+- 🟢 **seedwarden**: Phase 2 production timeline complete (May 30 launch). Track A blocked on tag corrections; Track B has no blockers
+- 🔴 **mfg-farm**: Batch 3 research complete. Awaiting physical test print to proceed with Batch 3 launch prep
+
+**Exploration Queue Status**: All 3 Session 894 items executed. Queue refreshed with new research opportunities (see PROJECTS.md lines 950+ for pending items).
 
 **Needs Your Input**:
-1. **CRITICAL (before May 12)**: Restore Jetson — unreachable. Without this, stockbot Gate 1 will fail May 12
-2. **Before May 10**: Fix cron PATH for uv — add `PATH=/home/awank/.local/bin:$PATH` to crontab top line
-3. **Decision required**: resistance-research distribution path (A / A+37 / B) — Phase 1 ready for launch pending decision
-4. **Review when ready**: stockbot ARCH decisions (7 items in CODE_REVIEW_SYNTHESIS.md)
+1. **Distribution path decision**: resistance-research Phase 1 is ready for launch (A / A+37 / B). Recommend Path A+37 to capture Domain 37 Federal Executive Interference angle (21-day outreach window).
+2. **Review + confirm**: stockbot ARCH decisions (7 items in CODE_REVIEW_SYNTHESIS.md) — blocks code improvements
+3. **Physical action**: mfg-farm test print required to launch Batch 2 and Batch 3 work
+4. **Review if time permits**: seedwarden Batch 2 Photography + Phase 2 Production Timeline (ready for May 10 milestone execution)
 
 ---
 

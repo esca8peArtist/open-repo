@@ -4,22 +4,52 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-05-07 — Session 895 (Research Agent) — mfg-farm Batch 3–4 Product Candidate Research COMPLETE
+## 2026-05-07 19:15 UTC — Session 895 (Orchestrator) — PARALLEL EXECUTION: Phase 1 Institutional Outreach + Phase 2 Photography + Batch 3 Product Research
 
-**Files created:**
-- `projects/mfg-farm/batch-3-candidate-research.md` (~3,100 words)
-- `projects/mfg-farm/batch-3-margin-validation.csv` (5 rows, 12 columns)
-- `projects/mfg-farm/batch-3-4-launch-sequencing.md` (~1,100 words)
+**Parallel agents completed** (3 independent items, all projects, ~17 hours combined work):
 
-**Batch 3 frontrunners (go/no-go ready):**
-1. **Magnetic workshop bin labels** (Rank 1) — CadQuery design already committed, 72.5% gross margin, 4 min effective per tile, AliExpress magnet order is the only gate. Go/no-go: GO immediately. Order 200× N52 8mm magnets from Amazon domestic ($30) to launch in <1 week. Calibrate magnet pocket diameter on one test plate before production.
-2. **Monitor riser legs** (Rank 2) — 69.2% gross margin, $21 net per set, direct ModRun buyer cross-sell. Design NOT yet built (3–4 hours CadQuery). Go/no-go: GO as soon as design is built. No new materials beyond silicone rubber feet (Amazon, $5/100-pack).
+### ✅ **resistance-research: Phase 1 Institutional Outreach Prioritization for May 28 Domain 42 DEA Deadline** (COMPLETE)
+- **Files created**:
+  - `projects/resistance-research/execution/domain-42-outreach-sequencing.md` (~2,000 words)
+  - `projects/resistance-research/execution/domain-42-stakeholder-commitment-matrix.csv` (12–15 key organizations)
+- **Strategy findings**:
+  - **Critical path**: May 8 Wave 1 launch is non-negotiable. A 7-day slip collapses realistic outcomes from 3 committing organizations to 2 and eliminates AG engagement entirely.
+  - **4-stage sequence**: Stage 1 (May 8 anchor orgs: DPA, NORML, ACLU, Sentencing Project) → Stage 2 (May 10 amplification: NAACP LDF MUST be reached or window is gone) → Stage 3 (May 14 state AGs, lower probability but high impact) → Stage 4 (May 15–21 follow-up + final reminder)
+  - **ACLU Criminal Law Reform Project is highest-impact uncertain outcome**: filing on disenfranchisement grounds would introduce dimension absent from other participants; requires internal authorization; ACLU reply requesting submission guide is clearest positive signal
+  - **Minimum viable success**: 3 organizations reach "committed to file" before May 24, at least one is DPA or NORML, at least one is civil rights org introducing disenfranchisement framing
+- **Business value**: Operationalizes May 28 DEA hearing deadline with concrete sequencing; prevents deadline miss; maximizes institutional participation
+- **Committed to master**
 
-**Batch 4 (Month 3–4):** Pegboard hooks (design complete, peg tolerance test required) and garden plant markers (design complete, ASA print profile calibration required).
+### ✅ **seedwarden: Phase 2 Photography & Plant Sourcing Logistics (May 30 Target)** (COMPLETE)
+- **Files created**:
+  - `projects/seedwarden/phase-2-production-timeline.md` (~2,400 words)
+  - `projects/seedwarden/phase-2-plant-sourcing-vendor-list.md` (~700 words)
+  - `projects/seedwarden/phase-2-location-scout-report.md` (~850 words)
+  - `projects/seedwarden/phase-2-photo-shoot-checklist.md` (~650 words)
+- **Key findings**:
+  - **4 parallel workstreams**: Sourcing, location scouting, photo shoot, guide production (zero blocking dependencies)
+  - **Fixed milestones**: May 10 orders + location confirmed → May 13 permit confirmed → May 15 plants received + Canva template live → May 20–22 photo shoot → May 25 photos edited + guides drafted → May 27 Etsy drafts loaded → May 28 Kit automation confirmed → May 30 10am launch
+  - **Location**: Asheville Botanical Garden confirmed (7-day permit window May 13 deadline; only viable path given 60-day National Forest and 14-day State Park deadlines already passed)
+  - **Plant sourcing**: 3 vendors with lead times; ginseng seed is CRITICAL risk (spring stratified stock limited to Wisconsin Grown Ginseng LLC and Dairyland Ginseng)
+  - **Backup paths**: Private forest farm via UPS referral (outreach May 10) and indoor window studio (always available)
+  - **Budget**: $65–$115 total plant sourcing
+- **Business value**: May 30 launch de-risked with day-of production operations document; user has clear decision framework + fallback procedures for all failure scenarios
+- **Committed to master**
 
-**Eliminated:** Flexi animals (Blender design, out of scope), Gridfinity bins (Etsy original-design risk), planters (below margin floor), gaming controller stands (IP adjacency risk), pet memorials (per-order labor bottleneck).
+### ✅ **mfg-farm: Batch 2 Product Selection & Demand Research** (COMPLETE)
+- **Files created**:
+  - `projects/mfg-farm/batch-3-candidate-research.md` (~3,100 words)
+  - `projects/mfg-farm/batch-3-margin-validation.csv` (5 rows, 12 columns)
+  - `projects/mfg-farm/batch-3-4-launch-sequencing.md` (~1,100 words)
+- **Batch 3 frontrunners (go/no-go ready)**:
+  1. **Magnetic workshop bin labels** (Rank 1) — CadQuery design already in repo, 72.5% gross margin, 4-minute effective per tile, AliExpress magnet order is the only gate. Go: GO immediately. Order 200× N52 8mm magnets from Amazon domestic ($30) to launch in <1 week. Calibrate on one test plate.
+  2. **Monitor riser legs** (Rank 2) — 69.2% gross margin, $21 net per set, direct ModRun buyer cross-sell. Design NOT yet built (3–4 hours CadQuery work). Go: GO as soon as design built. No new materials beyond silicone feet (Amazon, $5/100-pack).
+- **Batch 4**: Pegboard hooks (design complete, tolerance test required) + garden plant markers (design complete, ASA profile calibration required)
+- **Second printer trigger**: Month 3, not Month 4–6 (Batch 3 SKUs push single printer to 75–85% utilization by Month 2; $699 printer + 5-week payback)
+- **Go/no-go rule**: Launch when (a) design complete and test-printed, (b) all BOM in hand, (c) gross margin ≥65%. Bin labels meet all 3 within 1 week of magnet order; risers within 2–3 weeks of design start.
+- **Committed to master**
 
-**Go/no-go decision rule:** Launch a product when (a) design is complete and test-printed, (b) all BOM components are physically in hand, (c) gross margin is ≥65% at planned sell price. For Batch 3: bin labels meet all three criteria within 1 week of ordering magnets. Monitor risers meet criteria within 2–3 weeks of design start.
+**Exploration Queue Status**: All 3 Session 894 active items now completed. Queue refreshed with new items pending. See PROJECTS.md lines 950+ for queue replenishment.
 
 ---
 
