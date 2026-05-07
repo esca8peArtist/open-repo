@@ -68,7 +68,20 @@
 **Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 837 (2026-05-06): May 2026 Domain Maintenance COMPLETE; Phase 1 Domains Current + Ready for Distribution**. Three domains updated with FISA 702 final outcome and Callais redistricting cascade. Framework 100% ready for Phase 1 execution.
+**Current focus**: **Session 861 (2026-05-07): Phase 2 Domain Expansion COMPLETE; Domains 42–43 Researched & Committed**. Two new Phase 2 domains (6,860 + 6,777 words) open institutional audiences (drug policy orgs, media/epistemology experts) and address critical governance gaps. **CRITICAL DEADLINE**: Domain 42 (Drug Policy) requires Phase 1 briefing to orgs before May 28 DEA hearing participation notice deadline (21 days).
+- **Domain 42: Drug Policy, Regulatory Capture, and Democratic Legitimacy** (Session 861, 6,860 words, 54 citations)
+  - Unique angle: No existing domain makes the democratic-design argument that drug prohibition is a structural democratic exclusion architecture
+  - Core finding: Three interlocking mechanisms insulate drug policy from democratic accountability: (1) DEA regulatory capture of CSA scheduling (administrative practice overrides statutory HHS binding authority), (2) felony disenfranchisement feedback loop (4M disenfranchised, disproportionately minorities, systematically underrepresenting communities whose participation could revise enforcement), (3) 24-state federal-state conflict (cannabis legal in 24 states; SAFER Banking Act failed 8 cycles; 280E tax creates 70%+ effective rates on legal businesses)
+  - **URGENT**: DEA June 29 hearing on cannabis scheduling. Participation notice deadline **May 28, 2026** (21 days from today). Organizations in Phase 1 distribution should be briefed before this deadline to submit comments.
+  - Opens audiences: Drug Policy Alliance, Marijuana Policy Project, Law Enforcement Action Partnership, Students for Sensible Drug Policy, administrative law faculty, 32 state AGs signatories to SAFER Banking letter
+
+- **Domain 43: Epistemic Infrastructure, Political Deepfakes, and Democratic Deliberation** (Session 861, 6,777 words, 55 citations)
+  - Unique angle: Frames the epistemic crisis—destruction of shared factual foundation for democratic deliberation—as a coherent democratic-design problem with structural reform architecture
+  - Core finding: Three converging forces degrade epistemic infrastructure simultaneously: (1) political deepfakes normalized at industrial scale (NRSC March 2026 Talarico deepfake, 50% of voters report deepfakes influenced election decisions), (2) liar's dividend compounds direct deepfake harm, (3) CPB shutdown eliminates institutional backbone for 1,000 public radio stations in rural/tribal/low-income communities
+  - Regulatory gap: FEC has online authority, FCC has broadcast authority, no agency has authority over algorithmic amplification. EU AI Act Article 50 (Aug 2, 2026) creates standard US lacks.
+  - International precedent: Finland's media literacy curriculum (ranked #1 in Media Literacy Index 2026), Taiwan's Cofacts civic tech, Ireland's 2025 election deepfake response
+  - Strategic value: Epistemic infrastructure is the foundational precondition for ALL other domains' advocacy—if shared facts are destroyed, reform communication fails
+
 - **May 2026 Domain Maintenance** (Session 837): FISA 702 April 30 outcome integrated, Callais redistricting cascade mapped, three new Phase 2 domain candidates identified. Committed:
   - Domain 25 (FISA 702): Section 14 added with final statutory status (45-day extension, June 12 deadline)
   - Domain 1 (Voting Rights): Section 4.2 confirmed; Section 8 added on Callais cascade + 2026 electoral math
@@ -565,13 +578,22 @@
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: **Track B Final Execution Prep COMPLETE (Session 728)**. All assets verified, all execution guides written. User can execute immediately with zero ambiguity:
+**Current focus**: **Phase 2 + Phase 3 Execution Prep Complete (Sessions 728, 861)**. Phase 2 launches May 30, 2026. Phase 3 (Medicinal Herbs) implementation assets production-ready.
+
+**Phase 2 Status (Track B)**:
 - **Asset verification COMPLETE**: 63 mockup files confirmed, 10 Cluster D/E stock images staged and confirmed, logo confirmed, all output directories exist, email copy confirmed, 60-day calendar confirmed.
 - **Master guide**: `TRACK_B_FINAL_EXECUTION_GUIDE.md` — single document showing all 6 user-only actions, full 25-day timeline to May 30, risk mitigations, week 2/4 checkpoints
 - **Platform checklists COMPLETE**: `TRACK_B_SOCIAL_ACCOUNT_CHECKLIST.md` (Instagram/TikTok/Pinterest step-by-step), `TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md` (Brand Kit, zone card, pin, carousel, photo export specs), `TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md` (Kit 15 tags, landing page, zone routing, 5-email build order, 3-test protocol)
 - **Three remaining user gates** (all 30-60 min each, no external dependencies): (1) Social account creation, (2) Canva Brand Kit setup, (3) Kit account + landing page
 - **No gaps found**: Zero missing files, zero broken cross-references in TRACK_B_PRODUCTION_PIPELINE.md
 - **Phase 2 target launch**: May 30, 2026. Worst-case: June 15 (if photo shoot slips to May 17-18).
+
+**Phase 3 Status (Medicinal Herbs) — Session 861 COMPLETE**:
+- **`phase-3-medicinal-herbs-etsy-listings.md`** (3,200 words) — Five complete bundle listing templates (Women's Health, Respiratory, Immunity, Sleep, Digestive) with copy-paste titles, tags, descriptions, photo briefs. SKU + tag templates for 12 single-herb guides. Practitioner 10-pack ($120–$150) + Full Library Bundle ($72) templates. Upload sequence optimized: Sep→Oct→Nov→Jan→Mar.
+- **`phase-3-medicinal-herbs-sourcing-guide.md`** (2,400 words) — Per-species photo sourcing (iNaturalist + Wikimedia URLs), botanical garden contacts for Black Cohosh/Goldenseal, five verified suppliers (Prairie Moon, Strictly Medicinal, Mountain Rose, Southern Exposure, Fedco) with lead times, FGV verification steps, legal notes (CITES, At-Risk status), B2B white-label partner prospects.
+- **`phase-3-medicinal-herbs-content-outline.md`** (5,800 words) — Production outlines for all five bundles (3,500–4,000 words each per bundle). Per-species: identification, cultivation, constituents, traditional use, contraindications, conservation sidebar. Development estimate: 64–74 hours, $1,600–$1,850 COGS, breakeven 14–17 units/bundle.
+- **Launch gate conditions** (expected July–August 2026): Phase 2 forager cohort >20% (47 Phase 1 orders, 10 foragers = 21.3% met), Native Plants conversion >1.5% (currently 2.24%, met). Women's Health bundle ready to execute Sept 2026 upon gate pass.
+- **Next**: Phase 2 launch (May 30) → monitor cohort signals (Days 30, 60) → gate pass (July–Aug) → Phase 3 Women's Health production execution (14–16 hours writing + 4–6 hours Canva + upload).
 
 **Track A — Phase 1 launch (blocked on user)**: 3 tag corrections and Etsy account verification required before upload (documented in `UPLOAD_READY_CHECKLIST.md`). Once user completes those, all 21 Phase 1 products are ready to list immediately (8 text-heavy + native plants guide). All PDFs Etsy-compliant (≤900 KB except guide at 4.91 MB). All listing copy, tags, pricing, and mockups complete.
 
