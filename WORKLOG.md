@@ -4,6 +4,35 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 — Session 858: Exploration Queue Item 15 — Workout Nutrition & Meal Planning Integration
+
+**Session Context**: Autonomous execution of Exploration Queue Item 15 — Nutrition & Meal Planning Integration for the workout project.
+
+**Autonomous Work Completed**:
+
+✅ **workout: ITEM15 — Nutrition & Meal Planning Integration Guide**
+- **File**: `projects/workout/ITEM15_NUTRITION_AND_MEAL_PLANNING.md`
+- **Stats**: 690 lines, 7 sections matching the requested structure
+- **Coverage**:
+  - Section 1: Nutrition fundamentals (TDEE calculator, macros by goal, micronutrient priorities, hydration strategy)
+  - Section 2: By equipment tier — Tier 1/2/3 calorie profiles, per-tier sample meal plans, protein demand notes
+  - Section 3: By goal — fat loss, muscle gain, recomposition, maintenance (each with 12-week timeline)
+  - Section 4: Meal planning templates — macro calculator formula, scaling instructions, flexibility guidelines, cross-references to Nutrition 03
+  - Section 5: Supplement strategy — Tier 1 (creatine, protein, D3, caffeine), Tier 2 (beta-alanine, citrulline, omega-3), avoid list, budget allocation
+  - Section 6: Periodization nutrition — phase-by-phase adjustments, microcycle carb timing, 12-week calendar template
+  - Section 7: Implementation checklist — Week 1 baseline, Weeks 2–3 structure, Week 4 review, quarterly adjustments, tools
+- **Integration**: Acts as master index for 7 existing nutrition files (nutrition-01 through 06 + nutrition-and-tracking.md); does not duplicate their depth, extends them with decision trees and cross-tier tables
+- **Evidence base**: Morton et al. 2018 protein meta-analysis, ISSN position stands, PMC12251028 (creatine+beta-alanine 2025), PMC12498230 (supplement systematic review 2025), Morton et al. 2025 nutritional periodization
+- **Status**: Production-ready, committed to master
+
+**Actions**:
+✅ Read all 7 existing nutrition files to avoid duplication
+✅ Researched current supplement evidence (2025 PMC meta-analyses)
+✅ Wrote 690-line integration guide with tier+frequency+goal decision tables
+✅ Committed to master
+
+---
+
 ## 2026-05-07 morning UTC — Session 857: Parallel Exploration Queue Execution — Three Production-Ready Deliverables
 
 **Session Context**:
