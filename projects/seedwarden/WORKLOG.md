@@ -4,6 +4,61 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Production Timeline — Detailed Logistics — 2026-05-07
+
+**Task**: Build production-level Phase 2 logistics for May 30, 2026 launch. Six-species scope (adds Wild Bergamot to the original four Appalachian Medicinals + Bloodroot). Deadline: May 30 hard (public announcement, inventory expectations set).
+
+**Files created**:
+
+- `projects/seedwarden/PHASE_2_PRODUCTION_TIMELINE_DETAILED.md` — ~1,700 words, 5 sections. Plant sourcing order deadlines per species, photography shoot plan (shot list, props checklist, 30-shot minimum, processing timeline), Canva guide production critical path (template sequence, review cycle, design lock May 28), full dependency graph with explicit task sequencing, three contingency paths (shoot slips, plant orders arrive late, Canva falls behind). Extends and does not duplicate `phase-2-production-execution-plan.md`.
+
+- `projects/seedwarden/PHASE_2_SOURCING_LOGISTICS.csv` — 15 rows covering all six species (prop seeds, dried specimens, live plants) + three photo sources (iNaturalist CC-BY, BHL public domain, botanical garden institutional). Columns: species, purpose, order deadline, primary/secondary/tertiary vendors with URLs and prices, lead time, spring availability risk, order status tracking, low/high cost estimates. Total cash outlay: $65–110 one-time, May 8–9.
+
+**Key decisions logged**:
+
+- Wild Bergamot (*Monarda fistulosa*) added to Wave 1 as sixth species — lowest photography risk (abundant iNaturalist coverage, no spring timing constraint, live potted plants at garden centers in May), serves as accessible entry guide for buyers new to conservation content tier.
+- Six-species dependency graph maps explicit task sequencing: vendor verification (May 7) gates orders (May 8) gates props assembly (May 9) gates shoot (May 10–11) gates photo processing (May 12–14) gates Canva production (May 15–28) gates export and upload (May 29) gates launch (May 30).
+- Three contingency paths: Path A (shoot slips to May 17–18 — May 30 launch holds via template-first Canva approach), Path B (plant orders unavailable — retail herb substitutions available same-day, no schedule impact), Path C (Canva falls behind — soft launch May 30 with Ginseng + Goldenseal, full 6-guide launch June 7).
+- Design lock date: May 28. Etsy upload date: May 29. No post-lock corrections until June 7.
+- Expert spot-check (botanical accuracy) emails sent May 22; 48-hour response window; production proceeds regardless of response by May 24.
+- Photo cost: $0 (iNaturalist CC-BY + BHL public domain cover all guide interior imagery). Prop shoot cost: $65–110 one-time.
+
+**Source documents reviewed**: `endangered-species-candidate-list.md`, `phase-2-execution-timeline.md`, `phase-2-dependency-graph.csv`, `phase-2-production-execution-plan.md`, `phase-2-vendor-checklist.csv`, `PHASE_2_LAUNCH_PREP.md`.
+
+---
+
+## Phase 2 Endangered Species Execution Plan — 2026-05-07
+
+**Task**: Create production-ready execution plan for Phase 2 Wave 1 (Appalachian Medicinals — Ginseng, Goldenseal, Black Cohosh, Ramps) targeting May 30, 2026 launch. Two files produced.
+
+**Files created**:
+
+- `projects/seedwarden/phase-2-production-execution-plan.md` — ~4,800 words, 11 sections. Full day-by-day checklist (May 7–30), plant sourcing logistics, three-tier photo access strategy, shoot logistics, guide production Canva critical path, Kit email configuration, Etsy store setup, social media launch sequence, risk mitigation, and success metrics.
+
+- `projects/seedwarden/phase-2-vendor-checklist.csv` — 21-row vendor tracking table covering all seed vendors, photo sources, and institutional contacts. Columns: Vendor Name, Plant Species, Purpose, Lead Time, Price, Seeds/Packet, MOQ, Contact Date, Order Date, Expected Delivery, Confirmed?, Notes.
+
+**Key decisions logged**:
+
+- Live plant propagation is NOT viable for May 30 — all species require 18+ months from seed. The shoot (May 10–11) produces prop photography only; primary guide imagery comes from iNaturalist CC-BY + BHL public domain illustrations.
+- Ginseng prop seeds carry a HIGH spring-availability risk (fall crop from Strictly Medicinal). Fallback: purchased dried ginseng root from local health food store + BHL botanical illustration. No schedule impact if seeds unavailable.
+- Ramps seed (Experimental Farm Network) currently sold out. Order from EFN if restocked; fallback to Prairie Moon bulblets or Etsy native plant sellers.
+- Missouri Botanical Garden macro photo policy: single-subject close-crop plant photos are free for commercial use. Full garden scenes start at $500/image. Contact pr@mobot.org immediately.
+- iNaturalist CC-BY filter critical: default license is CC-BY-NC (prohibits commercial use). URL parameter `photo_license=cc-by` required for all searches.
+- Canva critical path: Zones 5–6 (Conservation + Practical Use) built first — most research-intensive, set the guide's authoritative tone. Replicate structure for Zones 1–4 per species.
+- Minimum viable launch: 2 guides (Ginseng + Goldenseal) May 30; full 4-guide collection + bundle June 6 if Canva runs long.
+- This execution plan is additive to the existing Phase 2 zone-card / lifestyle photography workstream (phase-2-execution-timeline.md). Both target May 30. No shared tasks.
+
+**Vendor pricing confirmed**:
+- Goldenseal seeds: Strictly Medicinal Seeds $20.00 / 20-seed packet (Certified Organic)
+- Ramps seeds: Experimental Farm Network $4.25 / 45-seed packet (currently sold out)
+- Ginseng seeds: Strictly Medicinal Seeds $3.95–$26 range depending on stratification status; fall availability primary
+- BHL illustrations: public domain, free, unlimited commercial use, no attribution required
+- iNaturalist CC-BY: free, attribution required ("Photo: [name], iNaturalist, CC BY 4.0")
+
+**Sources verified**: iNaturalist CC-BY licensing (help.inaturalist.org), Biodiversity Heritage Library (biodiversitylibrary.org), Missouri Botanical Garden Image Use Policy (mobot.org/plan-your-visit/things-to-know/photography/image-use-policy), Strictly Medicinal Seeds product pages, Experimental Farm Network ramps seed listing (store.experimentalfarmnetwork.org/products/wild-ramps), Prairie Moon Nursery shipping information (prairiemoon.com/shipping-information.html).
+
+---
+
 ## Item 21 — 2026-05-07 — Market Expansion & Adjacent Category Research
 
 **Task**: Execute Exploration Queue Item 21 — produce a production-ready ~10,000-word market expansion analysis covering adjacent product categories, geographic expansion, B2B channel mapping, and 12-month implementation roadmap.
