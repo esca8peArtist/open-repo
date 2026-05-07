@@ -4,6 +4,22 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 (Session 875 — Research Agent) — Phase 2 Scenario Playbooks: Immigration + Activist (production-ready, phase-2 prefix)
+
+Drafted and committed two production-ready scenario playbooks at the paths specified by the user:
+
+- `projects/cybersecurity-hardening/phase-2-immigration-surveillance-evasion-playbook.md` (~3,200 words)
+  - Updated threat model integrating new 2026 intelligence: Penlink geofencing (ICE subscription September 2025), Thomson Reuters CLEAR + Medicaid data HHS sharing (effective January 2026), Mobile Fortify Maine/Portland case study, DHS administrative subpoenas to Google/Meta/Reddit
+  - 4-tier checklist system (3-days-before, day-of, post-encounter, ongoing maintenance)
+  - Organizational workshop curriculum section for legal aid orgs
+  - Full source bibliography with 15+ primary sources
+
+- `projects/cybersecurity-hardening/phase-2-activist-organizing-security-playbook.md` (~3,400 words)
+  - Updated threat model: LAPD Skydio X10 drone deployment data (31x Jan 31, 32x March 28 No Kings), Flock Safety ALPR 50+ agency protest queries, Babel Street Catch and Revoke pipeline, DHS administrative subpoenas to platforms
+  - Three documented case studies: Maine ICE observers biometric scan + domestic terrorism threat (February 2026), Montco Community Watch subpoena (early 2026), No Kings 7-hour drone coverage
+  - Role-specific threat mapping (5 participant types), escalation matrix (Levels 1–2–3), 3-day/day-of/post-action checklists
+  - Both playbooks reference `activist-organizing-playbook.md` and `immigration-surveillance-evasion-playbook.md` as companion documents
+
 ## 2026-05-07 09:33 UTC (Session 872 — Orchestrator) — Parallel Exploration Queue Execution: Phase 3 Expansion Complete
 
 ### Session Summary
