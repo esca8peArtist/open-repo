@@ -4,6 +4,22 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 — mfg-farm — ITEM24 Alternative Product Categories Deep-Dive COMPLETE
+
+**File**: `projects/mfg-farm/ITEM24_ALTERNATIVE_PRODUCT_CATEGORIES.md` (~7,200 words)
+
+**Key findings**:
+- Tool/workshop organizers (Gridfinity-adjacent) ranked #1 — lowest competition, 69–70% net margin, fastest design iteration
+- Homelab rack accessories ranked #2 — greenfield whitespace, no parametric FDM competitor on Etsy, 69–71% margin
+- Desk accessories ranked #3 — largest market ($1.3B US), validated WTP at $65/set, 76.9% net margin
+- Phone mounts and gaming cable accessories ranked #4–5 — viable but require brand-building lead time
+- Tariff environment (2025–2026) is a structural tailwind: US-made filament (MatterHackers $15.49–20.99/kg, Atomic Filament $22/kg) now price-competitive vs. Chinese imports with 35–145% tariffs
+- 20% COGS increase scenario: margin impact is 1–3 percentage points only — not a meaningful risk at $35+ retail price points
+- Wave 2 cash requirement: $330–$490 total capital outlay; Wave 3: $700–$1,000
+- 18-month revenue projection (all waves): $28,000–$43,000/month at 68–72% net margin
+
+---
+
 ## 2026-05-07 — Session 860 (Autonomous): Exploration Queue Items 19, 22, 23, 24
 
 **Session Context**: Primary projects blocked on user decisions. Orchestrator identified 4 active exploration queue items ready for autonomous execution:
