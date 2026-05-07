@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-07 23:15 UTC — (Session 893 Final Continuation — Orchestrator) — 3 EXPLORATION QUEUE ITEMS COMPLETE: Parallel execution of Domain Expansion Strategy, Gate 1 Readiness, Phase 2 Analytics Framework
+
+**Status**: All three items delivered and committed to master. Exploration queue now at 0 active items. Critical infrastructure issue identified in stockbot (Jetson unreachable).
+
+**What I Did**:
+
+1. ✅ **Parallel Execution — 3 Independent Items (concurrent)**:
+
+   **Item A: resistance-research — Domain Expansion Strategy (Domains 36-50)** ✅ COMPLETE
+   - File: `domain-expansion-strategy.md` (3,500 words)
+   - File: `domain-expansion-candidates.md` (prioritized list of 15 domains)
+   - **Key finding**: Phase 1 is strong on institutional policy, weak on movement infrastructure reach. Phase 2 must optimize for organizer hands, not just think tank desks.
+   - **7 sectors identified as underrepresented**: Reproductive freedom, Labor rights, Housing instability, Campaign finance, Environmental justice, Indigenous sovereignty, Disability civic access
+   - **Production sequencing**: Wave 1 (July) D44-45, Wave 2 (Aug-Sept) D46-47, Wave 3 (Oct) D48-50, remaining 8 post-Oct 2026
+   - **Strategic shift for Phase 2**: Movement-focused framing, 1-2 page organizing briefs for coalition calls, distribution through Substack newsletters and Signal groups
+   - Committed to master
+
+   **Item B: stockbot — May 12 Gate 1 Readiness Validation Checklist** ✅ COMPLETE (with CRITICAL FINDINGS)
+   - File: `gate-1-readiness-checklist.md` (updated, comprehensive)
+   - File: `gate-1-decision-tree-executable.py` (executable Python script)
+   - **Current state as of May 7, 18:00 UTC**:
+     - 49 total PAPER fills (all April 29, all BUY — AAPL 108 shares, 19 other tickers)
+     - 0 SELL fills; 0 confirmed round trips; 0 realized P&L
+     - 20 open positions (1 AAPL +$228 unrealized)
+   - **CRITICAL INFRASTRUCTURE ISSUE**: Jetson UNREACHABLE — `http://100.120.18.84/api/ready` times out. Without Jetson restoration, May 12 will classify as FAR_MISS (no fills accumulating before checkpoint).
+   - **Additional blockers** (must fix before May 12):
+     - cron_sync_db.sh failing — uv PATH not set in crontab (add `PATH=/home/awank/.local/bin:$PATH`)
+     - 19 May 5 liquidation SELL fills missing from DB (run `sync_db_from_alpaca.py --since 2026-05-05` after Jetson restore)
+   - Script executable May 12: `cd projects/stockbot && uv run python gate-1-decision-tree-executable.py` returns PASS/NEAR_MISS/FAR_MISS classification with exit codes
+   - Committed to master
+
+   **Item C: seedwarden — Phase 2 Customer Success & Retention Framework** ✅ COMPLETE (with improvements)
+   - File: `phase-2-customer-success-framework.md` (v1.0 → v2.0, 8,272 words)
+   - File: `phase-2-analytics-dashboard-schema.json` (v1.0 → v2.0, updated metric definitions)
+   - **Structural gaps fixed**:
+     1. Added Day 1 Measurement Activation section (Kit automation verification, LTV tracker zero-state)
+     2. Corrected gate dates: Day 45 is now PRIMARY Phase 3 go/no-go gate (not Day 60, per 45-day roadmap constraint)
+     3. Bridged TRACK_B launch-day 7 metrics to long-term tracking (M01, M04, M06, M11, M13 mappings)
+   - **Day 45 thresholds updated** for all 4 Phase 3 scenarios (repeat rate 14%/8%/6% vs prior 18%/10%/8% at Day 60)
+   - Day 60 now reserved for Scenario 3 (Churn Risk) confirmation only
+   - Dashboard schema v2.0: full decision tree with scenario branching, `phase3_trigger_summary` with evaluation dates
+   - Ready for May 30 launch and 45-day Phase 2→Phase 3 decision window
+   - Committed to master
+
+---
+
+**Project Status Update**:
+- 🟢 **resistance-research**: Phase 1 ready for launch (path decision pending). Phase 2 strategic roadmap now complete — 15 domains identified, sequencing confirmed.
+- 🟡 **stockbot**: CRITICAL — Jetson unreachable (blocks all May fills). Gate 1 readiness checklist ready to execute May 12, but depends on Jetson restoration.
+- 🟢 **seedwarden**: Phase 2 analytics framework production-ready for May 30 launch.
+- 🔴 **mfg-farm**: Still blocked on test print (unchanged)
+- 🔴 **stockbot ARCH decisions**: Still pending user review (unchanged)
+
+**Exploration Queue Status**: 0 active items (Items A–C now complete). Refresh recommended if no user decisions arrive within 24 hours.
+
+**Time-Critical Actions for User**:
+1. **URGENT (before May 12)**: Restore Jetson connectivity — currently unreachable, blocking all May fills. Fix required: `ssh` to Pi, check Docker/network status.
+2. **Before May 10**: Fix cron PATH for uv (add line to crontab: `PATH=/home/awank/.local/bin:$PATH`)
+3. **May 12**: Run `gate-1-decision-tree-executable.py` to auto-classify Gate 1 outcome
+4. Distribute `domain-expansion-strategy.md` for Phase 2 planning review
+
+---
+
 ## 2026-05-07 21:30 UTC — (Session 893 Continuation — Orchestrator) — DOMAIN CURRENCY VERIFICATION COMPLETE: All 35 resistance-research domains verified current through May 7, 2026
 
 **Status**: resistance-research framework verified production-ready for Phase 1 distribution execution. All 35 domains current. 7 high-priority edits applied.
