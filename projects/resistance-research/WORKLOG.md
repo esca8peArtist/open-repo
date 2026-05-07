@@ -2,6 +2,20 @@
 
 ---
 
+## May 7, 2026 — Research Agent: Session 895 — Domain 42 Phase 1 Institutional Outreach Sequencing Strategy
+
+**Status**: COMPLETE
+
+**Context**: Session 895 designed the Phase 1 institutional outreach strategy for Domain 42 (Drug Policy) optimized for the May 24 electronic filing deadline (DEA-1362 participation notice). Path-independent — executes regardless of Phase 1 Path A / A+37 / B decision.
+
+**Files created**:
+- `projects/resistance-research/execution/domain-42-outreach-sequencing.md` (~1,800 words, sequencing strategy and commitment thresholds)
+- `projects/resistance-research/execution/domain-42-stakeholder-commitment-matrix.csv` (15-organization decision matrix)
+
+**Strategy that emerged**: The highest-leverage move is May 8 Wave 1 launch with social proof cascade. DPA and NORML are near-certain filers regardless — the critical path question is whether Domain 42's democratic exclusion framing enters their participation documents AND whether at least one organization that would not otherwise file (ACLU Criminal Law Reform Project, Sentencing Project) commits. The ACLU is the highest-impact uncertain outcome: their filing on disenfranchisement grounds would introduce a dimension entirely absent from the anticipated participant pool (dominated by pharmaceutical companies, cannabis industry operators, and prohibitionist groups). Social proof from Wave 1 responses should be deployed explicitly in Wave 2 sends on May 10 to accelerate NAACP LDF commitment. Minimum viable success: 3 COM organizations before May 24, at least one of which is DPA or NORML and at least one of which is a civil rights organization introducing the disenfranchisement framing. A 7-day launch slip (to May 15) collapses the realistic minimum from 3 organizations to 2 (DPA and NORML only) and eliminates AG office engagement entirely.
+
+---
+
 ## May 7, 2026 — Research Agent: Session 893 — May 2026 Domain Currency Verification (All 35 Domains)
 
 **Status**: COMPLETE
