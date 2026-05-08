@@ -4,6 +4,25 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Logistics Finalization — May 30 Launch Timeline — 2026-05-09
+
+**Task**: Create concrete Phase 2 production timeline and critical milestones tracker for May 30 launch. 21 days remaining as of session start. Exploration Queue item — Phase 2 Logistics Finalization.
+
+**Files created/updated**:
+
+- `projects/seedwarden/phase-2-production-timeline.md` — Overwritten with focused 1,200-word concrete execution document. Four sections: Plant Sourcing (species selection rationale for the 4 Round 1 species, three named vendors with lead times and order deadlines, $67-$125 budget table, three contingency paths for vendor misses); Location Scouting and Logistics (Asheville Botanical Garden as primary with permit application deadline May 12, UpS private farm as Backup 1, three-cluster geographic breakdown, 3-day shoot schedule May 20-22, team structure 1-2 persons); Photo Shoot Sequence (30-shot targets, 6 angle types, props list, lighting setup, weather contingency paths); Guide Production and Launch (4-guide production sequence starting May 15 independent of shoot, first 2 guides live May 25, review protocol, final checklist before Etsy publish).
+
+- `projects/seedwarden/phase-2-critical-milestones.csv` — New file. 31 rows covering all milestones from May 9 through May 30. Columns: Date, Milestone, Owner, Slack (days), Status, Notes. All 5 anchor milestones included: May 10 (location confirmed), May 15 (plants sourced and in-house), May 20 (photo shoot complete), May 25 (guides live on Etsy in draft), May 30 (Phase 2 launch day hard deadline). Critical-path milestones have Slack = 0. Notes column includes contingency instructions for every milestone where a slip is possible.
+
+**Key decisions documented**:
+
+- Plant ordering is 1 day past the ideal May 8 deadline as of May 9. Orders flagged as URGENT with Slack = 0. Emergency path documented: Mountain Rose Herbs 2-day Priority ship covers all dried root needs even with a 3-4 day delay.
+- Canva guide production begins May 15, fully independent of the photo shoot, using BHL and iNaturalist CC-BY digital sources. This decouples the critical path so a shoot delay does not directly gate guide production.
+- Soft launch fallback documented in CSV: if only Ginseng + Goldenseal are export-ready by May 29, launch 2 guides May 30 and announce full collection June 6 in the Kit broadcast.
+- All permit deadlines cross-referenced: National Forest (60-day, passed), NC State Parks (14-day, passed), Asheville Botanical Garden (7-day, deadline May 12 — open and actionable).
+
+---
+
 ## Phase 2 Production Timeline and Photography Logistics — 2026-05-07
 
 **Task**: Design concrete production timeline for Phase 2 photography and plant sourcing with fixed milestones (May 10/15/20/25/28/30). Session 895, Track B, independent of Phase 1 launch timing.
