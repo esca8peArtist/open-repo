@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """
 Stockbot Discord monitor.
-Polls the paper trading status every 60s and sends a Discord notification
-whenever signals change, trades execute, or sessions start/stop.
+Polls trading status every 60s and sends Discord notifications for:
+  - Rule-based paper trading: signal changes, new trades, session status
+  - Options sessions: new trades, session status changes
 """
 
 import json
+import os
+import sys
 import time
 import urllib.request
 import urllib.error
@@ -14,7 +17,7 @@ from pathlib import Path
 
 API_BASE = "http://100.120.18.84:8000"
 API_KEY = "9dc5633ed026d9c818417ac0cba43f521e4ffa7cd2cca8b7e272da8e2ca89479"
-DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1492974312188018780/Cf54p5vEUbbOeu7o1Eq3HrqD7nCM1KGklL018uRdroruRdg9PpVtNz0sbrbh4ze_LX_Y"
+DISCORD_WEBHOOK = os.environ.get("STOCKBOT_DISCORD_WEBHOOK_URL", "")
 STATE_FILE = Path("/tmp/stockbot-monitor-state.json")
 POLL_INTERVAL = 60  # seconds
 
@@ -148,30 +151,87 @@ def snapshot_state(sessions):
     return state
 
 
+def check_options_sessions(prev_opts):
+    """Poll options paper trading sessions and notify on status/trade changes."""
+    messages = []
+    try:
+        data = api_get("/api/options/sessions")
+        sessions = data if isinstance(data, list) else data.get("sessions", [])
+    except Exception:
+        return messages, prev_opts
+
+    curr_opts = {}
+    for s in sessions:
+        sid = s.get("session_id") or s.get("id", "")
+        if not sid:
+            continue
+        model_id = s.get("model_id", "unknown")
+        symbol = s.get("symbol", "")
+        status = s.get("status", "unknown")
+        trades = s.get("trades_executed", 0) or s.get("total_trades", 0)
+        pnl = s.get("total_pnl") or s.get("unrealized_pnl")
+
+        curr_opts[sid] = {"status": status, "trades": trades}
+        prev = prev_opts.get(sid, {})
+
+        label = f"{model_id} ({symbol})" if symbol else model_id
+
+        if prev.get("status") and prev["status"] != status:
+            messages.append(
+                f"**[Stockbot Options]** `{label}` session **{status.upper()}** "
+                f"(was {prev['status']})"
+                + (f" — P&L: ${pnl:,.2f}" if pnl is not None else "")
+            )
+
+        prev_trades = prev.get("trades", 0) or 0
+        if trades > prev_trades:
+            new_count = trades - prev_trades
+            messages.append(
+                f"**[Stockbot Options]** `{label}`: {new_count} new trade(s) "
+                f"(total: {trades})"
+                + (f" — P&L: ${pnl:,.2f}" if pnl is not None else "")
+            )
+
+    return messages, curr_opts
+
+
 def main():
+    if not DISCORD_WEBHOOK:
+        print(f"[{now()}] ERROR: STOCKBOT_DISCORD_WEBHOOK_URL not set. Exiting.")
+        sys.exit(1)
+
     print(f"[{now()}] Stockbot monitor starting. Polling every {POLL_INTERVAL}s.")
     send_discord(
-        "**[Stockbot Monitor]** Started — watching momentum, RSI mean reversion, "
-        "SMA crossover sessions. Will notify on signal changes and trades."
+        "**[Stockbot Monitor]** Started — watching rule-based and options sessions. "
+        "Will notify on signal changes, new trades, and session status."
     )
 
     prev_state = load_state()
+    prev_opts = prev_state.pop("_options", {}) if isinstance(prev_state, dict) else {}
 
     while True:
         try:
-            data = api_get("/api/paper-trading/status")
-            sessions = data.get("sessions", {})
+            # Rule-based paper trading sessions
+            try:
+                data = api_get("/api/paper-trading/status")
+                sessions = data.get("sessions", {})
+                if sessions:
+                    messages = check_and_notify(sessions, prev_state)
+                    for msg in messages:
+                        print(f"[{now()}] Sending: {msg[:120]}")
+                        send_discord(msg)
+                    prev_state = snapshot_state(sessions)
+            except urllib.error.URLError:
+                pass  # API unreachable — logged below for options attempt
 
-            if not sessions:
-                print(f"[{now()}] No active sessions found.")
-            else:
-                messages = check_and_notify(sessions, prev_state)
-                for msg in messages:
-                    print(f"[{now()}] Sending: {msg[:120]}")
-                    send_discord(msg)
+            # Options trading sessions
+            opt_messages, prev_opts = check_options_sessions(prev_opts)
+            for msg in opt_messages:
+                print(f"[{now()}] Sending: {msg[:120]}")
+                send_discord(msg)
 
-                prev_state = snapshot_state(sessions)
-                save_state(prev_state)
+            combined = {**prev_state, "_options": prev_opts}
+            save_state(combined)
 
         except urllib.error.URLError as e:
             print(f"[{now()}] API unreachable: {e}")

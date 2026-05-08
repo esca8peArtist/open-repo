@@ -4,6 +4,43 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 — UTC — Exploration Queue Item 31 — cybersecurity-hardening Phase 2 Tier 2 Organizational Outreach Strategy
+
+### Summary
+- **Task**: Design Phase 2 launch strategy for organizational outreach (NGOs, unions, legal practices, academia)
+- **Files produced**:
+  - `projects/cybersecurity-hardening/phase-2-tier2-organizational-outreach-strategy.md` — 1,900-word strategy document covering: (1) three-factor readiness scoring and Tier 1→Tier 2 transition criteria; (2) sector-specific organizational value propositions for 4 constituency types; (3) material gaps and new playbooks needed; (4) week-by-week Phase 2 timeline with success metrics
+  - `projects/cybersecurity-hardening/phase-2-tier2-candidate-scorecard.csv` — 7 Tier 1 organizational candidates scored on readiness factors A/B/C with tier2 status, approach windows, and sector-specific hooks
+- **Key findings**:
+  - 5 of 7 candidate organizations score 3/3 (pre-contact tier): CLINIC, Georgetown CPT, NDWA, AFL-CIO Tech Institute, ACLU Immigrants' Rights Project; Harvard Berkman scores 3/3 with academic latency flag
+  - NLG scores 2/3 (standard wave) — strong engagement and integration signal but lacks federated network multiplier
+  - Three material gaps identified before Tier 2 orientations can begin: board-level briefing template (June 5 deadline), staff training logistics guide (June 5 deadline), sector integration checklists (July 1 deadline)
+  - Critical path: May 28 readiness scoring checkpoint → June 4 pre-contact invitations → June 5–30 orientation window
+
+### Status
+COMPLETE — Ready for user review. Executable once Phase 1 is approved and May 28 checkpoint is reached.
+
+## 2026-05-09 — UTC — Exploration Queue Item (seedwarden Track B) — Phase 2 Production Timeline & Logistics COMPLETE ✅
+
+### Summary
+- **Task**: Create Phase 2 production timeline and logistics plan for May 30 launch
+- **Files produced**:
+  - `projects/seedwarden/phase-2-production-timeline.md` — 1,200-word detailed timeline covering: (1) plant sourcing strategy & vendor timelines, (2) location scouting logistics for 3 Appalachian plant clusters, (3) photo shoot sequence and equipment requirements, (4) guide production workflow with Canva timeline
+  - `projects/seedwarden/phase-2-critical-milestones.csv` — 31 milestone tracking spreadsheet with dates, owners, slack, and notes
+- **Critical Finding** ⚠️ **URGENT**: Plant orders are 1 day late
+  - Ideal order deadline: May 8 (today is May 9)
+  - Vendors requiring immediate action TODAY: Strictly Medicinal Seeds (Black Cohosh live, Goldenseal seeds — 8–12 day lead), Prairie Moon Nursery (ramps bulblets — 7–14 days)
+  - Mountain Rose Herbs orders (dried roots) must be placed by May 11
+  - Action: User should place orders immediately with "ship ASAP" notes
+- **Timeline architecture**:
+  - All 5 anchor milestones have zero slack: May 10 (location confirmed), May 15 (plants in-house), May 20 (shoot complete), May 25 (guides live in draft), May 30 (launch day)
+  - Canva production starts May 15, independent of photo shoot — prevents weather delays from compressing guide timeline
+  - Soft launch fallback documented: if only 2 guides ready by May 29, launch those on May 30, announce full collection for June 6
+- **Budget**: $67–$125 one-time COGS
+
+### Status
+✅ **COMPLETE** — Production timeline ready. All dependencies identified, all critical paths documented. **Immediate action item**: User must place plant orders today (May 9) to stay on schedule.
+
 ## 2026-05-09 -- UTC — Session 892 (orchestrator + stockbot subagent) — COMPREHENSIVE BACKTESTING COMPLETE ✅
 
 ### Summary

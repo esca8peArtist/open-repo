@@ -243,12 +243,16 @@ def main() -> None:
         log("Override active — USAGE_PAUSE present but override file found, orchestrator will proceed.")
         # Don't remove the pause file; usage-check.py --check handles the override logic
 
-    if effective_pct < 80 and PAUSE_FILE.exists():
-        # Safety: clear stale pause file if usage somehow dropped (shouldn't happen in practice)
-        PAUSE_FILE.unlink(missing_ok=True)
-        OVERRIDE_FILE.unlink(missing_ok=True)  # clear stale override too
-        state["paused"] = False
-        log("Cleared stale USAGE_PAUSE (usage dropped below 80%).")
+    if effective_pct < 80:
+        # Clear pause state whenever usage is under threshold — handles recalibration
+        # and manual PAUSE_FILE deletion without requiring a Tuesday reset.
+        if PAUSE_FILE.exists():
+            PAUSE_FILE.unlink(missing_ok=True)
+            OVERRIDE_FILE.unlink(missing_ok=True)
+            log("Cleared stale USAGE_PAUSE (usage dropped below 80%).")
+        if state.get("paused"):
+            state["paused"] = False
+            log("Cleared stale paused state (usage below 80%).")
 
     save_state(state)
 

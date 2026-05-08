@@ -1,12 +1,12 @@
 # Orchestrator State
-> Auto-generated at 2026-05-07T18:00:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-08T23:24:07Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 4.4% (394,896 tokens) | All-models 78.2% | Reset in 102h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 56.7% (1,055,539 tokens) | All-models 43.3% | Reset in 73h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
-1. resistance-research
-2. stockbot
+1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
+2. resistance-research
 3. cybersecurity-hardening
 4. mfg-farm
 5. seedwarden
@@ -34,7 +34,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **Current focus**:
+**Focus**: 🔴 USER PRIORITY (2026-05-08): Comprehensive options backtesting — train models across NVDA/TSLA/MSFT/META/QQQ/AAPL, run 3-4 profile variants each, produce full report at `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` with tables/analysis vs buy-and-hold. See INBOX for full instructions. A pr
 **Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
 
 ### seedwarden
@@ -58,19 +58,6 @@
 <!-- AUTO:CALIBRATION:END -->
 ---
 ---
-### stockbot — Architecture decisions from full code review (discuss before implementing)
-**Date blocked**: 2026-05-05
-**Context**: Full 4-layer Opus code review complete (see `projects/stockbot/CODE_REVIEW_SYNTHESIS.md`). 15 safe issues were auto-fixed. 7 architecture decisions require discussion before code changes proceed.
-**What I need**: Review the items below and confirm direction. Full detail in `CODE_REVIEW_SYNTHESIS.md`.
-**ARCH-1 — `live_engine.py` fate** (HIGH, 4–12h): Two parallel engine implementations exist. `TradingSession` is production; `LiveEngine` is dead. Options: delete it, keep as deprecated reference (already done), or backport its `RiskManager`/`PnLCalculator`/`ShutdownHandler` into `TradingSession`.
-**ARCH-2 — Alert threshold divergence** (HIGH, ~3h): `alerts.py` has a 25% single-ticker position cap; `trading_session.py` has 5%. Drawdown limit: 20% vs 8%. `AlertManager` is never called in production — the `alerts.jsonl` log is always empty. Fix: extract shared `thresholds.py` and wire `AlertManager` into the session lifecycle.
-**ARCH-3 — Dual session registry** (HIGH, ~2h): `/api/trading/heartbeat` and `/api/status` only see `app.state.active_trading_session` (legacy). Sessions started via the current path are invisible to those endpoints. Fix: remove the legacy field, update heartbeat/status to use `paper_trading_sessions` dict.
-**ARCH-4 — `integration.py` + `ModelAdapter` dead in production** (~2h): All 6 functions in `integration.py` are test-only. `ModelAdapter` only used by `integration.py`. Recommend: delete both after porting acceptance tests to use `ModelBasedStrategy` directly.
-**ARCH-5 — Phase 6 analytics stack** (~2h): `MetricsCollector`, `StrategyAnalyzer`, `MetricsExporter` were superseded by `PostTradeAnalyzer` but never deleted. Only used by tests. Decide: delete or wire into the trading session.
-**ARCH-6 — No schema migration system** (~4h): `create_all()` won't add new columns to existing tables. No Alembic, no ALTER TABLE runner. Risk: silent schema drift on column additions.
-**ARCH-7 — Three `PerformanceMetrics` classes** (~2h): ORM model, analytics calculator, backtesting calculator — all named `PerformanceMetrics`. Recommend: rename ORM model to `PerformanceSnapshot`.
-**Verify with**: `# manual — user review of CODE_REVIEW_SYNTHESIS.md required`
-**Resolution**:
 ---
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12

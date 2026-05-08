@@ -26,8 +26,9 @@ echo "[$(date)] Orchestrator starting." | tee -a "$LOG_FILE"
 # Only notify Discord on startup if we're not already in a usage pause.
 # When paused, all Discord is suppressed until the billing week resets.
 if [ ! -f "$WORKSPACE/USAGE_PAUSE" ] && [ -n "$DISCORD_WEBHOOK_URL" ]; then
+  START_MSG="**[Claude] Orchestrator started** — $(date -u '+%a %b %-d %H:%M UTC')"
   curl -s -H "Content-Type: application/json" \
-    -d "{\"content\":\"[Claude] Orchestrator starting on Pi\"}" \
+    -d "{\"content\":\"$START_MSG\"}" \
     "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
 fi
 
@@ -46,34 +47,60 @@ print(max(60, int((reset - now).total_seconds())))
 send_summary() {
   [ -z "$DISCORD_WEBHOOK_URL" ] && return
 
-  # Use Python for safe content extraction, truncation, and JSON encoding
   python3 - "$WORKSPACE/CHECKIN.md" "$WORKSPACE/BLOCKED.md" "$DISCORD_WEBHOOK_URL" <<'PYEOF'
 import sys, json, re, subprocess
 from pathlib import Path
 
 checkin_file, blocked_file, webhook = sys.argv[1], sys.argv[2], sys.argv[3]
 
-def extract_section(path, header_re):
+def get_recent_session(path):
     try:
         text = Path(path).read_text(encoding="utf-8", errors="replace")
-        m = re.search(header_re, text)
+        # Match the first (most recent) Since Last Check-in heading and its body
+        # Body ends at the next same-level heading or ---
+        m = re.search(
+            r'## Since Last Check-in \(([^)]+)\)[^\n]*\n(.*?)(?=\n## Since Last Check-in|\n---|\Z)',
+            text, re.DOTALL
+        )
         if not m:
-            return "(not found)"
-        start = m.end()
-        # Stop at next --- or ## heading
-        end_m = re.search(r'\n(---|\#\#)', text[start:])
-        section = text[start: start + end_m.start()] if end_m else text[start:]
-        # Truncate safely at character boundary
-        return section.strip()[:600]
+            return "No recent session found"
+        session_id = m.group(1).strip()
+        body = m.group(2).strip()
+        # Pull up to 4 bullet lines (-, ✅, 🔍, ⚠, etc.) skipping sub-headings
+        bullets = []
+        for line in body.splitlines():
+            s = line.strip()
+            if s and not s.startswith('#') and (s[0] in '-•' or s[0] in '✅🔍⚠️🟢🔴'):
+                # Strip markdown bold/italic and leading markers
+                clean = re.sub(r'\*+([^*]+)\*+', r'\1', s.lstrip('-• '))
+                bullets.append(clean[:120])
+            if len(bullets) >= 4:
+                break
+        result = f"**{session_id}**"
+        if bullets:
+            result += "\n" + "\n".join(f"• {b}" for b in bullets)
+        return result
     except Exception as e:
-        return f"(error reading: {e})"
+        return f"(error: {e})"
 
-checkin = extract_section(checkin_file, r'## Since Last Check-in')
-blocked = extract_section(blocked_file, r'## Active Blocks')
-if not blocked.strip():
-    blocked = "None"
+def get_active_blocks(path):
+    try:
+        text = Path(path).read_text(encoding="utf-8", errors="replace")
+        m = re.search(r'## Active Blocks\n(.*?)(?=\n## |\Z)', text, re.DOTALL)
+        if not m:
+            return "None"
+        content = re.sub(r'<!--.*?-->', '', m.group(1), flags=re.DOTALL).strip()
+        if not content:
+            return "None"
+        titles = re.findall(r'### (.+?)(?:\n|$)', content)
+        return "\n".join(f"• {t}" for t in titles[:5]) if titles else "None"
+    except Exception as e:
+        return f"(error: {e})"
 
-msg = f"**[Claude 2hr Update]**\n**Recent work:** {checkin}\n**Blocked:** {blocked}"
+session_summary = get_recent_session(checkin_file)
+blocks = get_active_blocks(blocked_file)
+
+msg = f"**[Claude 2hr Update]**\n{session_summary}\n\n**Blocked:** {blocks}"
 payload = json.dumps({"content": msg})
 
 result = subprocess.run(
@@ -137,14 +164,24 @@ while true; do
     echo "[$(date)] Usage gate: OK. Starting Claude session..." | tee -a "$LOG_FILE"
   elif [ "$USAGE_EXIT" -eq 2 ]; then
     RESET_SECS=$(secs_until_reset)
-    echo "[$(date)] Usage gate: PAUSED (80% gate). Sleeping until Tuesday reset (${RESET_SECS}s). $USAGE_CHECK" | tee -a "$LOG_FILE"
+    echo "[$(date)] Usage gate: PAUSED (80% gate). Polling every 5min until unpaused or Tuesday reset (${RESET_SECS}s). $USAGE_CHECK" | tee -a "$LOG_FILE"
     echo "[$(date)] To override: touch $WORKSPACE/USAGE_PAUSE_OVERRIDE" | tee -a "$LOG_FILE"
-    sleep "$RESET_SECS"
+    # Poll every 5 minutes so recalibration or PAUSE_FILE deletion takes effect quickly
+    while true; do
+      sleep 300
+      python3 "$WORKSPACE/scripts/usage-check.py" --check > /dev/null 2>&1
+      [ $? -ne 2 ] && break
+    done
     continue
   else
     RESET_SECS=$(secs_until_reset)
-    echo "[$(date)] Usage gate: THROTTLED (90%+). Sleeping until Tuesday reset (${RESET_SECS}s). $USAGE_CHECK" | tee -a "$LOG_FILE"
-    sleep "$RESET_SECS"
+    echo "[$(date)] Usage gate: THROTTLED (90%+). Polling every 5min until Tuesday reset (${RESET_SECS}s). $USAGE_CHECK" | tee -a "$LOG_FILE"
+    # Poll every 5 minutes rather than one long sleep
+    while true; do
+      sleep 300
+      python3 "$WORKSPACE/scripts/usage-check.py" --check > /dev/null 2>&1
+      [ $? -eq 0 ] && break
+    done
     continue
   fi
 
