@@ -4,6 +4,26 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Customer Acquisition and Retention Ops Manual — June Operations — 2026-05-09
+
+**Task**: Build detailed June 1–30 post-launch operations manual covering daily customer acquisition tactics, email campaign sequencing, social content calendar, feedback collection infrastructure, analytics dashboard, and the Day 30 Phase 2 → Phase 3 go/no-go decision framework. Exploration Queue item 34.
+
+**Files created**:
+
+- `projects/seedwarden/phase-2-customer-acquisition-ops-manual.md` — 2,400-word operations manual. Eight parts: (1) Daily and weekly execution rhythm with exact time budgets (20–35 min/day, 3.5–4.5 hrs/week); (2) Full June email campaign sequencing across five phases — welcome series KPIs (Email 1 open rate 60%+, Email 5 coupon redemption 8–15%), four educational broadcasts for June (June 5 / 12 / 19 / 25), community engagement broadcast on June 19, and upsell broadcast on June 25 with SEEDWARDEN15 coupon and behavioral tag segmentation; (3) Social media content calendar June 1–30 with 28 named posts assigned by platform and date, engagement targets per platform (Instagram 150+ followers gained, TikTok 100+ followers gained, Pinterest 3,000+ monthly views by June 30), and 24-hour response time standards; (4) Organic search optimization — Etsy SEO title audit June 1–2, tag refresh June 7, Google crossover keyword targets, Pinterest description optimization for Google indexing; (5) Feedback collection infrastructure — five sources (Etsy reviews, Kit replies, Etsy messages, Instagram Story polls, post-purchase survey), aggregation cadence (daily scan, weekly pattern review, June 30 monthly audit), and how to translate buyer language into listing copy; (6) Analytics dashboard with daily 7-field log format, weekly KPI rollup targets, decision thresholds for GO / CONDITIONAL / NO-GO, and five escalation triggers requiring same-day action; (7) Day 30 decision checklist — 4-step 45-minute process (pull metrics, evaluate vs. baseline, classify via decision tree, write decision log) with GO criteria (20+ orders, 1.0%+ conversion, 20+ subscribers) and NO-GO criteria (5 or fewer orders despite 200+ views, broken email deliverability, account suppression); (8) Platform benchmarks quick reference sheet.
+
+- `projects/seedwarden/june-operations-daily-checklist.csv` — 35-row daily operations spreadsheet covering June 1–30 (plus Day 31 feedback audit). Columns: Date / Day / Task / Owner / Success Criteria / Status. All rows have Status = Open. Covers: daily metric logging, kit automation verification, listing audits, all 28 social posts (with platform, format, and topic), email broadcasts (dates, audiences, targets), Reddit answer sessions, feedback collection milestones, weekly review checkpoints (Days 8/15/22/28), and the Day 30 decision review with dual entries (45-minute decision session + loyalty email to June buyers). Day 30 decision row has explicit success criteria: decision documented with all required metrics and Phase 3 option selected.
+
+**Key decisions documented**:
+
+- June email broadcast schedule anchored to Thursday 7am sends (Days 5/12/19/25) to align with existing Thursday newsletter cadence.
+- Community engagement broadcast on June 19 ("What's growing this week?") has no product CTA — this is a deliberate deliverability and intelligence move, not a revenue move.
+- Day 30 loyalty email (JUNE20, 20% off) targets existing June buyers specifically — the repeat-purchase signal from this email is the primary metric for Phase 3 cohort analysis.
+- NO-GO criteria are exclusive (any single one disqualifies July Phase 3 launch); GO criteria are conjunctive (all three must be met for clean Option B).
+- Phase 3 Decision Window metrics (Days 30–60) documented in the manual so the July 29 check-in has predefined targets.
+
+---
+
 ## Phase 2 Logistics Finalization — May 30 Launch Timeline — 2026-05-09
 
 **Task**: Create concrete Phase 2 production timeline and critical milestones tracker for May 30 launch. 21 days remaining as of session start. Exploration Queue item — Phase 2 Logistics Finalization.
