@@ -35,28 +35,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Architecture decisions from full code review (discuss before implementing)
-**Date blocked**: 2026-05-05
-**Context**: Full 4-layer Opus code review complete (see `projects/stockbot/CODE_REVIEW_SYNTHESIS.md`). 15 safe issues were auto-fixed. 7 architecture decisions require discussion before code changes proceed.
-**What I need**: Review the items below and confirm direction. Full detail in `CODE_REVIEW_SYNTHESIS.md`.
-
-**ARCH-1 — `live_engine.py` fate** (HIGH, 4–12h): Two parallel engine implementations exist. `TradingSession` is production; `LiveEngine` is dead. Options: delete it, keep as deprecated reference (already done), or backport its `RiskManager`/`PnLCalculator`/`ShutdownHandler` into `TradingSession`.
-
-**ARCH-2 — Alert threshold divergence** (HIGH, ~3h): `alerts.py` has a 25% single-ticker position cap; `trading_session.py` has 5%. Drawdown limit: 20% vs 8%. `AlertManager` is never called in production — the `alerts.jsonl` log is always empty. Fix: extract shared `thresholds.py` and wire `AlertManager` into the session lifecycle.
-
-**ARCH-3 — Dual session registry** (HIGH, ~2h): `/api/trading/heartbeat` and `/api/status` only see `app.state.active_trading_session` (legacy). Sessions started via the current path are invisible to those endpoints. Fix: remove the legacy field, update heartbeat/status to use `paper_trading_sessions` dict.
-
-**ARCH-4 — `integration.py` + `ModelAdapter` dead in production** (~2h): All 6 functions in `integration.py` are test-only. `ModelAdapter` only used by `integration.py`. Recommend: delete both after porting acceptance tests to use `ModelBasedStrategy` directly.
-
-**ARCH-5 — Phase 6 analytics stack** (~2h): `MetricsCollector`, `StrategyAnalyzer`, `MetricsExporter` were superseded by `PostTradeAnalyzer` but never deleted. Only used by tests. Decide: delete or wire into the trading session.
-
-**ARCH-6 — No schema migration system** (~4h): `create_all()` won't add new columns to existing tables. No Alembic, no ALTER TABLE runner. Risk: silent schema drift on column additions.
-
-**ARCH-7 — Three `PerformanceMetrics` classes** (~2h): ORM model, analytics calculator, backtesting calculator — all named `PerformanceMetrics`. Recommend: rename ORM model to `PerformanceSnapshot`.
-
-**Verify with**: `# manual — user review of CODE_REVIEW_SYNTHESIS.md required`
-**Resolution**:
-
 ---
 
 
@@ -68,6 +46,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Resolution**:
 
 ## Resolved Archive
+
+---
+
+### stockbot — Architecture decisions from full code review (ARCH-1 through ARCH-7)
+**Date blocked**: 2026-05-05
+**Date resolved**: 2026-05-08
+**Resolution**: All 7 items resolved by user. ARCH-1: LiveEngine components (RiskManager, PnLCalculator, ShutdownHandler, PositionManager, TradeLogger, RealtimeStreamManager) backported into TradingSession. ARCH-2: Threshold-based position limits implemented ($5k account threshold, 40%/80% small-account limits). ARCH-3: Dual session registry removed, heartbeat/status unified to paper_trading_sessions dict. ARCH-4: deploy_model_live deleted, other 5 integration.py functions kept. ARCH-5: MetricsCollector, StrategyAnalyzer, MetricsExporter deleted. ARCH-6: Alembic wired in with make migrate target and startup check. ARCH-7: PerformanceMetrics renamed to PerformanceRecord/PerformanceAnalytics/BacktestMetrics across 27 files.
 
 ---
 

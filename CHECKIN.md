@@ -1,3 +1,44 @@
+## Session 892 (2026-05-09 -- UTC) — Orchestrator: INBOX Processing + Stockbot Profile Variant Backtesting COMPLETE ✅
+
+### Summary
+
+**What Was Accomplished**:
+
+1. **INBOX item processed** (user escalated 2026-05-08): Comprehensive backtesting + best model search
+   - Moved to active work, cleared from INBOX
+   - Delegated to stockbot subagent for extended analysis
+
+2. **Profile variant backtesting COMPLETE** (92 new backtests):
+   - 23 models × 4 profiles (baseline, regime_only, confidence_only, combined) 
+   - Root cause investigation: "Regime filter bug" from Session 895-B was false — parameter naming issue in test script. Filter actually works.
+   - Period: 2026-01-01 to 2026-05-07 (backtest), 2023-01-01 to 2025-12-31 (training)
+
+3. **Key Quantitative Findings**:
+   - **New best result**: META_LGB_v1 with regime_only profile: **+41.96% return**, Sharpe 1.84, Alpha +38.28% (beats previous best META_GB_v1 baseline at +40.45%)
+   - **Regime filter impact**: Helps 9/23 models (avg +0.98% delta), biggest gains META (+6.00%), MSFT (+1.20%), AAPL (+0.45%). Hurts QQQ (-0.38%).
+   - **Confidence threshold at 0.65**: Hurts 15/23 models (avg -9.46%) — not recommended for live deployment
+   - **Profile effectiveness**: Baseline best for 12/23 models, regime_only for 8/23, combined for 2/23
+
+4. **Live Deployment Recommendations Generated**:
+   - **Priority 1 — DEPLOY**: META_LGB_v1 + regime filter (stop=0.30, profit=0.70) — +41.96%, Sharpe 1.84
+   - **Priority 2 — DEPLOY**: MSFT_GB_v1 + regime filter (stop=0.50, profit=0.50) — improved over baseline
+   - **Priority 3 — Caution**: Options_AAPL_Ret + regime filter (near-zero alpha)
+   - **Do not deploy**: NVDA (1-trade statistical noise), QQQ (all models lose), TSLA (20pp+ below BAH)
+
+**Files Updated**:
+- `BACKTEST_REPORT_2026-05-08.md` — Sections 10-12 added (profile variant analysis, per-symbol recommendations)
+- `BLOCKED.md` — regime filter bug entry closed; root cause documented
+- `WORKLOG.md` — Session 892 entry
+
+**Status**: ✅ **COMPLETE** — Report ready for user review. All profile variants tested and analyzed.
+
+**Next Steps (user action)**:
+- Review deployment recommendations in BACKTEST_REPORT_2026-05-08.md
+- Decide which models to deploy to live trading (META_LGB_v1 + regime filter is the recommended leader)
+- Deploy approved models to Jetson for live trading
+
+---
+
 ## Session 895-B (2026-05-08 01:24–01:37 UTC) — stockbot: Overnight Comprehensive Backtesting COMPLETE
 
 ### STOCKBOT OVERNIGHT RUN COMPLETE — 192 backtests, 32 models, full report ready

@@ -16,8 +16,8 @@
 > To recalibrate limits: `python3 scripts/usage-check.py --calibrate <sonnet_pct> <all_pct>`
 
 **Calibrated limits** (back-calculated from UI — update after each weekly reset):
-- **Sonnet token limit: 8,935,000**  ← calibrated 2026-04-28 (UI showed 0.0%)
-- **All models token limit: 13,205,975**  ← calibrated 2026-04-28 (UI showed 8.0%)
+- **Sonnet token limit: 1,860,812**  ← calibrated 2026-05-08 (UI showed 54.0%)
+- **All models token limit: 26,157,109**  ← calibrated 2026-05-08 (UI showed 43.0%)
 
 **Alert thresholds** (handled by `scripts/usage-monitor.py`, runs every 30 min via cron):
 - Every 10% crossed → Discord notification
@@ -35,8 +35,8 @@
 ---
 
 ## Priority Order
-1. resistance-research
-2. stockbot
+1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
+2. resistance-research
 3. cybersecurity-hardening
 4. mfg-farm
 5. seedwarden
@@ -348,7 +348,9 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**:
+**Current focus**: 🔴 USER PRIORITY (2026-05-08): Comprehensive options backtesting — train models across NVDA/TSLA/MSFT/META/QQQ/AAPL, run 3-4 profile variants each, produce full report at `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` with tables/analysis vs buy-and-hold. See INBOX for full instructions. A preliminary report already exists (Session 895-B sub-agent) — extend and deepen it.
+
+**Blocked on**: ~~ARCH decisions~~ — unblocked for backtesting task. ARCH decisions are deferred; do not let them block the backtest run. Address ARCH in a separate session.
 
 **Session 829 (2026-05-06) — MAY 12 OUTCOME ROADMAP COMPLETE (Exploration Queue)**:
 - **Deliverable**: `MAY_12_OUTCOME_ROADMAP.md` created — single actionable reference for May 13 morning

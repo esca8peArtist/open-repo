@@ -4,6 +4,30 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 -- UTC — Session 892 (orchestrator + stockbot subagent) — COMPREHENSIVE BACKTESTING COMPLETE ✅
+
+### Summary
+- **INBOX Item processed**: Stockbot comprehensive backtesting task (user escalated 2026-05-08) → cleared
+- **Profile variant backtesting COMPLETE**: 92 backtests across 23 models × 4 profiles (baseline, regime_only, confidence_only, combined)
+- **Root cause investigation**: "Regime filter bug" from Session 895-B was false — parameter naming issue in test script, filter actually works
+- **Key findings**:
+  - **New best result**: META_LGB_v1 with regime_only profile: **+41.96% return**, Sharpe 1.84, Alpha +38.28% (beats previous best META_GB_v1 baseline at +40.45%)
+  - Regime filter helps 9/23 models (avg +0.98%), best for META (+6.00%), MSFT (+1.20%), AAPL (+0.45%)
+  - Confidence threshold at 0.65 hurts 15/23 models (avg -9.46%) — not recommended
+  - Profile win counts: baseline 12/23, regime_only 8/23, combined 2/23
+- **Deployment recommendations generated**:
+  - Priority 1: META_LGB_v1 + regime filter (stop=0.30, profit=0.70)
+  - Priority 2: MSFT_GB_v1 + regime filter (stop=0.50, profit=0.50)
+  - Caution: NVDA (1-trade noise), QQQ (all models lose), TSLA (underperforms BAH)
+
+### Files updated
+- `BACKTEST_REPORT_2026-05-08.md` — Sections 10-12 added (profile variant analysis, per-symbol recommendations, session conclusion)
+- `BLOCKED.md` — regime filter bug entry closed with root cause
+- `profile_variant_backtest.py`, `analyze_results.py` — new test/analysis scripts
+
+### Status
+✅ **COMPLETE** — Report ready for user review. All profile variants tested and analyzed. Clear deployment recommendations with risk/return justification per symbol.
+
 ## 2026-05-08 01:24–01:37 UTC — Session 895-B (stockbot) — Overnight Comprehensive Backtesting COMPLETE
 
 ### Summary
