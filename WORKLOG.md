@@ -4,6 +4,26 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 — Exploration Queue Item — Stockbot Covered Call Automation Architecture
+
+### Summary
+- **Task**: Design Gate 2 covered call automation architecture (pre-May 12 checkpoint planning)
+- **Deliverable**: `projects/stockbot/framework-covered-call-automation-architecture.md` (4,800 words, production-ready)
+- **Scope delivered**:
+  - Full code-level integration design for covered call trading
+  - 7 discrete engineering tasks (21-31 hours total): OptionPosition DB, tracker persistence, delta aggregation, equity position polling, earnings blackout, symbol lock, expiry/assignment handling
+  - Testing strategy: 29 unit tests, integration tests, end-to-end backtest
+  - Timeline: May 19-31 engineering (if Gate 1 passes), June 1-30 paper validation, July 1 go-live decision
+  - Economics: $744/month net income, 11.9% annualised yield on allocated equity
+  - Risk mitigation: IV crush, earnings binary, bid-ask friction, assignment scenarios
+  - Success criteria: Gate 1 checkpoint (Sharpe ≥0.5, ≥15 round trips, zero kill-switches)
+- **Key finding**: Covered calls add structural income floor via volatility risk premium (VRP), 70% win rate on worthless expiry, no new ML model required
+- **Status**: ✅ COMPLETE, committed to stockbot submodule (commit a3c8ee91 on master)
+- **Business value**: If Gate 1 passes May 12, architecture is immediately ready for May 19-31 engineering sprint; eliminates May 13 ambiguity on "what's next for covered calls"
+- **Effort**: 2 hours (design document writing)
+
+---
+
 ## 2026-05-09 — UTC — Exploration Queue Item 31 — cybersecurity-hardening Phase 2 Tier 2 Organizational Outreach Strategy
 
 ### Summary
