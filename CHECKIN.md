@@ -32,10 +32,13 @@
 
 **Status**: ✅ **COMPLETE** — Report ready for user review. All profile variants tested and analyzed.
 
+**Usage**: Session 892 = ~2 hours work (overnight backtest + profile analysis), ~200K tokens. Current budget: 56.3% Sonnet, 43.3% all-models (healthy).
+
 **Next Steps (user action)**:
 - Review deployment recommendations in BACKTEST_REPORT_2026-05-08.md
 - Decide which models to deploy to live trading (META_LGB_v1 + regime filter is the recommended leader)
 - Deploy approved models to Jetson for live trading
+- Select resistance-research distribution path (A / A+37 / B) to enable May 8 Domain 42 outreach
 
 ---
 
