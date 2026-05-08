@@ -4,6 +4,36 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-08 01:24–01:37 UTC — Session 895-B (stockbot) — Overnight Comprehensive Backtesting COMPLETE
+
+### Summary
+- Trained 16 new options models (6 symbols x 3 algorithms: RF, GB, LightGBM), 2023–2025 training window
+- Run 192 backtests (32 models x 6 stop/profit configs), Jan–May 2026 backtest period
+- 35/192 combinations beat buy-and-hold
+- Best result: META_GB_v1 +40.45% return, Sharpe 1.66, beats BAH (META -7.5%) by +47.97%
+- Found and documented 2 API bugs (regime filter not wired to backtest, training status='done')
+
+### Files produced
+- `/home/awank/dev/SuperClaude_Framework/projects/stockbot/BACKTEST_REPORT_2026-05-08.md`
+- `/home/awank/dev/SuperClaude_Framework/projects/stockbot/BLOCKED.md` (new, 4 items)
+
+### Key technical finding
+Backtest API only accepts stop_pct and profit_pct overrides. Regime filter, confidence threshold,
+and profile_id are silently ignored. This means profile-based A/B testing is not possible until
+the regime filter is wired into the backtest engine (see BLOCKED.md).
+
+### Bug fixes applied
+- overnight_backtest.py fixed to handle status='done' (not 'completed') in training polling loop
+- Training job result model_id extracted from result.model_id (nested) not top-level
+
+## 2026-05-08 01:10 UTC — Session 895-A (stockbot) — Overnight backtesting initiated
+
+Delegating to stockbot subagent for full overnight run:
+- Train new models across AAPL, NVDA, TSLA, MSFT, META, QQQ with RF/GB/LightGBM
+- Run comprehensive backtests with 3-4 profile variants per model
+- Bug tracking to projects/stockbot/BLOCKED.md
+- Final report to projects/stockbot/BACKTEST_REPORT_2026-05-08.md
+
 ## 2026-05-07 20:30–23:00 UTC — Session 894 (Orchestrator) — PARALLEL EXECUTION: 3 Exploration Queue Items COMPLETE
 
 ### ✅ SESSION COMPLETE: All 3 exploration items executed in parallel. Exploration queue refreshed with critical May 10 + May 28 deadlines. All committed to master.

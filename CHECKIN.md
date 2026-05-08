@@ -1,3 +1,45 @@
+## Session 895-B (2026-05-08 01:24–01:37 UTC) — stockbot: Overnight Comprehensive Backtesting COMPLETE
+
+### STOCKBOT OVERNIGHT RUN COMPLETE — 192 backtests, 32 models, full report ready
+
+**What Was Accomplished**:
+
+1. **Trained 16 new options models**: AAPL, NVDA, TSLA, MSFT, META, QQQ x 3 algorithms (RF, GB, LightGBM)
+   - All trained on 2023-01-01 to 2025-12-31, delta_target_0.4, DTE30, directional strategy
+   - All 16 completed successfully (0 failures)
+
+2. **Run 192 backtests**: 32 models x 6 stop/profit parameter configurations
+   - Jan 2026 to May 7, 2026 backtest period
+   - Live Alpaca BAH baselines: AAPL +5.6%, NVDA +9.5%, TSLA -12.9%, MSFT -14.5%, META -7.5%, QQQ +12.2%, SPY +7.0%
+   - 35 of 192 combinations beat buy-and-hold
+
+3. **Key findings**:
+   - **Best model**: META_GB_v1 (gradient_boosting) — +40.45% return, Sharpe 1.66, 13 trades, BEATS BAH by +47.97% (META BAH was -7.5%)
+   - **Best algorithm**: random_forest (avg +5.84% across all symbols/profiles)
+   - **Best stop level**: 100% stop (avg +2.81%); tight 30% stop hurts most models by churning trades
+   - **Best profit target**: 50% target is optimal (avg +2.88%); wider targets reduce trade frequency without proportional gain
+   - **META models dominate**: 9 of top 12 results are META models across all 3 algorithms
+   - **QQQ is the worst symbol**: All 18 QQQ combinations are negative (-5.17% to -18.99%)
+   - **MSFT_GB_v1** is a strong secondary: +25.73%, Sharpe 1.60, beats BAH by +19.91%
+   - **28 of 192 combinations** meet full quality criteria (Return>0%, Sharpe>1.0, MaxDD<35%, Trades>=5, WinRate>35%)
+
+4. **Bugs found and recorded**:
+   - **Critical**: Backtest API silently ignores regime filter and confidence threshold — core filtering cannot be A/B tested
+   - **Medium**: Training API returns status='done' (not 'completed'); model_id is in result.model_id, not top-level
+   - **Medium**: NVDA_GB_v1 generates 0 trades in 2026 backtest period
+
+**Files Produced**:
+- Report: `/home/awank/dev/SuperClaude_Framework/projects/stockbot/BACKTEST_REPORT_2026-05-08.md`
+- Bugs: `/home/awank/dev/SuperClaude_Framework/projects/stockbot/BLOCKED.md`
+
+**Live Deployment Recommendation**:
+- TOP PICK: META_GB_v1 (gradient_boosting) with 100% stop / 50% profit — +40.45%, Sharpe 1.66, MaxDD -9.41%
+- RUNNER-UP: MSFT_GB_v1 with 50% stop / 50% profit — +25.73%, Sharpe 1.60, MaxDD -12.90%
+- CAUTION: Options_AAPL_Ret family is high-return (+26%) but does NOT beat buy-and-hold for AAPL (+5.6%)
+- AVOID: All QQQ models (consistently negative), TSLA models (all negative or barely positive)
+
+---
+
 ## Session 894 (2026-05-07 20:30–23:00 UTC) — PARALLEL EXECUTION: 3 Exploration Items COMPLETE — May 10 + May 28 Deadlines Operationalized
 
 ### ✅ SESSION COMPLETE: All 3 exploration items executed in parallel. Critical findings for May 10 + May 28 deadlines. Queue reset.
