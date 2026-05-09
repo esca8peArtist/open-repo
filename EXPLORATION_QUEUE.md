@@ -9,7 +9,64 @@
 
 ## Active Items
 
-### Item 37: resistance-research Domain 42 Participation Logistics & Coordination (Session 900+ queue item)
+### Item 35: stockbot Three-Model Portfolio Deployment & Transition Playbook (Session 908+ queue item)
+**Status**: QUEUED — contingent on May 12 checkpoint completion
+**Trigger**: Backtest Report (Session 900) recommends three-model portfolio (META+MSFT+SPY) with +27.78% return, 1.53 Sharpe, superior to current AAPL-only 2-session architecture. AAPL position expected to close May 9–13. May 12 checkpoint will evaluate Gate 1 (≥30 round trips/month). Post-checkpoint, current engine needs transition to live trading infrastructure.
+**Scope**: Develop comprehensive playbook for transitioning from AAPL-only paper trading (Jetson 2-session) to three-model live trading portfolio (META+MSFT+SPY). Backtest evidence shows 4x performance improvement and meets Sharpe requirement.
+**Deliverables**:
+- `three-model-deployment-plan.md` (2,000–2,500 words)
+  - Portfolio composition rationale (META+MSFT+SPY vs. alternatives)
+  - Model validation checklist (training completeness, inference latency, feature parity across models)
+  - Jetson infrastructure requirements (resource scaling, concurrent session capacity)
+  - Deployment sequence (staging, shadow-mode testing, gradual rollout)
+  - Risk mitigation (position limits per model, aggregate portfolio limits, circuit breakers)
+  - Monitoring dashboard specs (per-model Sharpe/MDD, aggregate portfolio P&L, error rates)
+- `meta-msft-spy-model-readiness-checklist.md` — Model-by-model validation status, training dates, backtest results, live deployment approval gates
+**Owner**: stockbot agent
+**Timeline**: 2–3 hours (portfolio analysis + playbook development + deployment checklist)
+**Key areas**: Model performance comparison, Jetson resource planning, risk architecture, monitoring systems
+**Business value**: Backtest shows 4x improvement over current AAPL design; clear deployment path enables faster progression to live trading. De-risks transition from paper to live by validating architecture before real capital is deployed.
+**Trigger condition**: After May 12 checkpoint completes and Gate 1 decision is finalized. If checkpoint indicates performance is sufficient, deployment playbook is immediately actionable.
+**Outcome**: Production-ready deployment playbook and model validation checklist, ready for execution post-May-12-checkpoint.
+
+---
+
+### Item 36: seedwarden Phase 2 Automation & Contingency Toolkit (Session 908+ queue item)
+**Status**: QUEUED — independent of user Phase 2 setup actions
+**Trigger**: Phase 2 launches May 30 (21 days away). User has 3 setup actions (social accounts, Canva Brand Kit, Kit landing page, each 30–60 min). Pre-staging automation toolkit enables rapid execution on launch day and data-driven decision-making during launch week.
+**Scope**: Develop production-ready automation toolkit and contingency playbook for Phase 2 launch. Includes email sequence automation, social posting scheduler, analytics dashboards, and day-of checklist with 5 decision points (T+12h, T+38h, etc. as documented in TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md).
+**Deliverables**:
+- `phase-2-email-automation-sequence.md` (1,500 words) — Day-by-day email timing, Kit email sequence tags, trigger conditions, subject line variants (A/B test setup), link tracking specs
+- `phase-2-social-posting-scheduler.csv` — 30-day posting calendar (Instagram, TikTok, Pinterest), optimal posting times per platform, content bucketing, hashtag strategy, carousel specs
+- `phase-2-launch-analytics-dashboard-template.xlsx` — Real-time conversion tracking, cohort ROI calculation, per-channel attribution, early alert thresholds (red flags: conversion <0.5%, revenue <$200/day, email unsubscribe >2%)
+- `phase-2-contingency-playbook.md` (2,000 words) — 5 failure scenarios (low conversion, photos fail, email delivery issues, social platform account lockout, demand spike exceeds inventory) with recovery procedures, timelines, and escalation triggers
+- `phase-2-launch-day-checklist.md` — Hour-by-hour timeline May 30, 6 user-only checkpoints, automated alerts (email, Discord), rollback procedures
+**Owner**: seedwarden agent
+**Timeline**: 3–4 hours (toolkit development + contingency analysis)
+**Key areas**: Email marketing automation, social media scheduling, real-time analytics, crisis response procedures
+**Business value**: Phase 2 launch is high-stakes (determines Phase 1→Phase 2 conversion success, gates Phase 3 decision). Toolkit enables user to execute flawlessly on May 30 and make data-driven decisions hour-by-hour. Contingency playbook prevents day-of friction that could reduce first-day revenue 40–60%.
+**Outcome**: Production-ready automation toolkit, contingency playbook, and real-time monitoring dashboards. User executes May 30 launch with confidence and rapid response capability.
+
+---
+
+### Item 37: cybersecurity-hardening Phase 2 Tier 3 Distribution Planning & Sequencing (Session 908+ queue item)
+**Status**: QUEUED — independent of Phase 1/Phase 2 Tier 2 user approval
+**Trigger**: Phase 1 + Phase 2 Tier 2 complete and production-ready (awaiting user approval only). Tier 3 involves 30 organizations across 16-week timeline (DV survivors, labor organizers, election workers — highest-urgency audiences for security hardening). Planning Tier 3 now enables sequential launch without waiting for Tier 2 completion, keeping momentum on distribution.
+**Scope**: Develop comprehensive Tier 3 distribution strategy with audience segmentation, contact list, customized messaging, and sequential deployment timeline. Tier 3 targets: NNEDV (DV survivor network, 10M nationally), AFL-CIO/SEIU/UFW (labor organizing), election worker associations (60K officials across 50 states).
+**Deliverables**:
+- `tier-3-audience-segmentation-and-contact-list.md` (2,500 words) — 30 organizations across 3 tiers (DV survivors, labor, election workers), per-organization threat model, customization angles, decision-maker contacts (Executive Director, Security Officer)
+- `tier-3-messaging-templates.md` (3,000 words) — Sector-specific messaging for each audience (DV survivor messaging: safety-first, legal protection; labor messaging: surveillance of organizing, border enforcement; election messaging: infrastructure protection, insider threats)
+- `tier-3-deployment-sequence.md` (2,000 words) — 16-week rollout: Weeks 1–4 (DV survivors), Weeks 5–8 (labor organizers), Weeks 9–12 (election workers), Weeks 13–16 (follow-up + Tier 3→Tier 2 upgrade path). Per-wave success metrics (engagement rate, training adoption, request for Tier 2).
+- `tier-3-roi-and-impact-model.md` — Audience reach calculations (10M DV survivors, 17M union members, 60K election workers), projected security hardening adoption per audience, national-scale impact (% of highest-risk populations with improved operational security)
+**Owner**: cybersecurity-hardening agent
+**Timeline**: 3–4 hours (audience research + messaging development + sequencing strategy)
+**Key areas**: Organizational network mapping, sector-specific threat modeling, messaging personalization, impact measurement
+**Business value**: Tier 3 reaches 27M+ people in highest-risk categories (domestic violence survivors, organized labor, election infrastructure). Parallel planning enables user to approve Phase 1 + Phase 2 Tier 2 → launch → begin Tier 3 simultaneously, compressing 24-week traditional rollout to 12 weeks via parallelization. Strategic value: election workers as a distribution channel creates 50-state network effect (election official recommendations to county IT → statewide adoption).
+**Outcome**: Production-ready Tier 3 audience mapping, customized messaging templates, and 16-week deployment sequence. Ready for execution immediately after Phase 2 Tier 2 launch completes.
+
+---
+
+### Item 38: resistance-research Domain 42 Participation Logistics & Coordination (Session 900+ queue item)
 **Status**: QUEUED — contingent on user distribution path decision
 **Trigger**: Domain 42 (Drug Policy) has critical May 28 DEA hearing deadline (19 days). Wave 1 outreach scheduled May 8 (already in progress). This item plans the participation logistics for Tier 1 organizations to file DEA comments.
 **Scope**: Develop detailed coordination framework for 6 Tier 1 organizations (Drug Policy Alliance, NORML, Law Enforcement Action Partnership, Students for Sensible Drug Policy, ACLU, Sentencing Project) to submit DEA hearing comments by May 28.
