@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-09T00:57:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-09T01:13:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 58.5% (1,088,507 tokens) | All-models 44.9% | Reset in 71h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 58.6% (1,091,151 tokens) | All-models 45.1% | Reset in 71h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -65,16 +65,6 @@
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
-
-## Exploration Queue Status
-**Queue Refresh (Session 894)**: 0 → 3 active items (deadline-driven work)
-- ✅ **Item 32 (Session 903)**: resistance-research Phase 1 Domain 42 Outreach Prioritization — COMPLETE
-  - 3 deliverables: outreach strategy, 17-contact wave plan, success tracking protocol
-  - May 28 deadline (19 days) operationalized; May 24 electronic deadline corrected; May 18 functional window identified
-- ✅ **Item 33 (Session 903)**: seedwarden Phase 2 Photography & Sourcing Logistics — COMPLETE
-  - 5 deliverables: production timeline, plant sourcing vendors, location scouting, photo checklist, Canva pipeline
-  - May 30 launch (21 days) de-risked with parallel execution paths; photo shoot optional (archival backup exists)
-- **Item 34 (queued, lower priority)**: mfg-farm Batch 2 Product Selection & Demand Research (2–3 hrs, no prerequisites, blocked on test print completion for execution)
 
 ## Inbox (unprocessed)
 *(no new items)*

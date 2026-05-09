@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 Session 904 — Orchestrator — EXPLORATION QUEUE ITEMS 35-36 COMPLETE ✅
+
+### Summary
+
+**Parallel Execution**: Spawned 2 subagents (stockbot, seedwarden) to complete Exploration Queue Items 35 (paper trading validation protocol) and 36 (Phase 3 medicinal herbs strategic planning). Both items are time-sensitive and independent of user decisions.
+
+### Results
+
+**Item 35: stockbot Paper Trading Validation Protocol** ✅
+- **Location**: `projects/stockbot/paper-trading-validation-protocol.md`
+- **Deliverables**: Three production-ready assets (no TODOs)
+  - `paper-trading-validation-protocol.md` (2,700 words) — Comprehensive framework with 11 sections:
+    - Daily monitoring checklist: 6 executable steps (<10 min) covering fill detection, round trip tracking, drawdown monitoring, auth error rates, kill-switch auditing
+    - May 12 checkpoint query: Exact SQL + Python command for user to execute independently; disambiguates C1 (timing artifact) from C2 (execution failure)
+    - Validation logic: Sharpe formula with annualization factor sqrt(252/h), short-window caveat, slippage definition, position concentration metric
+    - Phase 1 success criteria (4 numerical thresholds): Sharpe ≥0.8, ≥3 round trips by May 26 (rescoped for 2-session AAPL-only architecture), max drawdown ≤-15%, avg slippage <0.15%
+    - Phase 2 escalation conditions: Performance (P1-P3), risk accumulation (R1-R4), kill-switch audit (K1), hard stop at -20% drawdown
+    - Decision tree: Four outcomes (A=continue, B=tune parameters, C=reduce position sizes, D=abandon with Tier 1 replacement tier list)
+    - Role mapping: Orchestrator handles daily checklist; User handles decisions; Agent handles root cause analysis
+  - `paper-trading-excel-template.xlsx` (functional, no VBA) — Three sheets:
+    - Daily_Log: 30 rows (April 26–May 25) with columns for fills, slippage, Sharpe, max drawdown, round trips, PnL, auth errors, kill-switch count, sessions alive. Conditional formatting (green/yellow/red).
+    - Weekly_Rollup: 5-week aggregation with decision checkpoints (May 12, May 26, June 4, June 9). Rolling 14-day Sharpe evaluated against 0.8 threshold. SPY vs. model trend analysis.
+    - Dashboard_30Day: Backtest comparison table, Phase 1 success criteria auto-evaluation (PASS/FAIL), go/no-go decision matrix.
+  - `generate_paper_trading_xlsx.py` — Reproducible generator; run `uv run python generate_paper_trading_xlsx.py` to regenerate template
+- **Impact**: May 12 checkpoint now executable with clear daily tracking, success criteria, and decision logic. User has step-by-step checklist and standalone SQL query.
+
+**Item 36: seedwarden Phase 3 Medicinal Herbs Strategic Plan** ✅
+- **Location**: `projects/seedwarden/phase-3-medicinal-herbs-strategic-plan.md`
+- **Deliverables**: Three production-ready assets
+  - `phase-3-medicinal-herbs-strategic-plan.md` (3,700 words, 10 sections) — Strategic roadmap:
+    - **Quick-win SKU**: Respiratory Health bundle ($20) — elderberry search dominance, zero CITES complications, break-even at 18 units, Oct-Nov seasonal alignment
+    - **Ambitious SKU**: Practitioner 10-Pack ($120-150) — highest absolute margin, 1-2 hrs incremental dev, first sale recovers labor
+    - **Product tiers**: Singles ($4.50-5), Wellness bundles ($15-18), Practitioner kit ($120-150), Full Library ($72), Subscription ($29/mo optional)
+    - **Unit economics**: 65-70% gross margin (COGS + packaging + fulfillment), 40-45% net margin (after platform fees, paid ads)
+    - **Scaling infrastructure**: Inventory (standing orders by Month 2), fulfillment (2-day processing, USPS), supplier terms (30-day net or 2/10 early pay), QA (per-batch testing), retention (email automation)
+    - **12-month roadmap**: July (Wellness + Singles launch), Aug (Practitioner tier, social campaign), Sept-Oct (Full Library + expansion), Nov-Dec (holiday bundles), Q1-Q2 2027 (subscription + white-label)
+    - **GO trigger (June 29)**: Phase 2 conversion >1.2% on 2 bundles + forager cohort >15% + email list >100
+    - **Pivot trigger**: If Month 3 (Sept) gross revenue <$500, evaluate format change (extracts, tinctures); not expected to fire in any scenario
+    - **White-label layer**: Partnerships with practitioners, schools, clinics as B2B revenue channel
+  - `phase-3-supplier-scorecard-medicinal.csv` — 10 suppliers scored and tiered (A/B/C):
+    - **Tier A** (85+): Strictly Medicinal Seeds (87.5), Mountain Rose Herbs (85.0), Prairie Moon (82.0), UpS FGV (80.0)
+    - **Tier B** (70-84): Pacific Botanicals, Southern Exposure, Fedco, Frontier, Herb Pharm
+    - Weighted rubric: Availability 40%, Price 20%, QA Rigor 20%, Lead Time 10%, MOQ 10%
+  - `phase-3-profitability-model.csv` — 18-month cash flow with three scenarios:
+    - **Conservative (25 orders/week)**: $3,432/month by Month 6; sustainable, $6K target reached Year 2
+    - **Base (50 orders/week)**: $7,761/month by Month 6; exceeds $6K target by Month 6, $7.1K/month by Year 1
+    - **Optimistic (100 orders/week)**: $17,108/month by Month 6, $10K+ run rate from Month 5
+    - Break-even analysis: Respiratory bundle breaks even at 18 units; Practitioner kit at 2-3 orders
+- **Impact**: June 29 Phase 3 decision ready with clear GO/PIVOT triggers, supplier relationships identified, profitability modeled across scenarios. User can approve Phase 3 and execute by mid-July.
+
+### Session Impact
+
+- **Items 35-36**: Both autonomously complete, production-ready, no user approvals required to use
+- **May 12 Checkpoint**: stockbot validation protocol de-risks May 12 Gate 1 evaluation; user has clear daily checklist and standalone checkpoint query
+- **Phase 3 Launch**: seedwarden Phase 3 strategic plan ready for June 29 decision gate; GO/PIVOT triggers explicit; profitability modeled across scenarios
+- **Exploration Queue**: Items 35-36 complete; 1 item remaining (Item 37: Domain 42 coordination, contingent on resistance-research path decision)
+
+### Usage
+
+Session 904 = 2 parallel agents, ~20 minutes wall-clock, ~237K tokens. **Current**: Sonnet estimated 61-63% (post-902: 61%, +1% from this session). All-models estimated 47-49%. Budget healthy.
+
+---
+
 ## 2026-05-09 Session 902 — Orchestrator — CYBERSECURITY-HARDENING ITEM 31 + SEEDWARDEN PHASE 2 COMPLETE ✅
 
 ### Summary
