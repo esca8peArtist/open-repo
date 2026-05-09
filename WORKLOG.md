@@ -4,6 +4,40 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 18:45 UTC (Session 922 — Orchestrator, Checkpoint Prep, Phase 3 Expansion) — EXECUTION READY
+
+### ✅ resistance-research: Phase 3 Candidate 2 Expansion — Institutional Playbooks (3 of 8)
+**Completed by resistance-research subagent** (SECTOR-SPECIFIC IMPLEMENTATION GUIDANCE):
+
+1. **AG Coalition Playbook** ✅ (~2,200 words)
+   - State count: 24 Democratic AGs (updated from outline's 22; Arizona, Minnesota, Nevada, Wisconsin 2026 races create electoral constraints)
+   - Leverage model: Lead offices (CA, NY, MA — low electoral exposure) vs. coalition-signing roles (competitive-state AGs)
+   - Year 1-3 sequencing: Month 1-3 (federal jurisdiction coordination), Month 4-9 (litigation surge on Domains 1,5,6,35), Month 10-24 (implementation strategy)
+   - Case study: Rhode Island permanent injunction (immigration conditions on emergency services) — survived shadow docket challenge, model for durable wins
+   - Success metric: 5+ state AGs filing major amicus by Month 6; 15+ leading litigation by Month 12
+
+2. **Civil Service Union Playbook** ✅ (~2,100 words)
+   - Structural constraint: AFGE collapsed 355→150 staff (55% reduction) due to dues elimination + federal workforce cuts
+   - Strategy pivot: Concentrate on pre-existing legal infrastructure (filed cases, pre-written legislative vehicles) not new organizing
+   - Year 1-3 sequencing: Month 1-3 (Republican co-sponsor expansion on Saving Civil Service Act — 78 co-sponsors, target swing districts), Month 4-9 (litigation support), Month 10-24 (contract negotiation leverage)
+   - Case study: NTEU inauguration-night filing (legal theory from Project 2025, facts inserted after EO, filed same day)
+   - Success metric: Saving Civil Service Act passage by end Year 1; 3+ major favorable MSPB rulings by Month 12
+
+3. **Law School Clinic Playbook** ✅ (~2,000 words)
+   - Sector activity level: Yale Rule of Law Clinic filed 6+ amicus briefs in 2025-2026; AALS conference (830 attendees) themed on lawyers' crisis responsibilities
+   - Legal protection: Harvard funding freeze ruling (Sept 3, 2025) established freeze as unconstitutional First Amendment retaliation — protects clinic advocacy from similar retaliation
+   - Year 1-3 sequencing: Month 1-3 (Loper Bright 72-hour brief model + pre-assign June 2026 cases), Month 4-9 (clinic network coordination), Month 10-24 (policy implementation support)
+   - Case study: Loper Bright 72-hour amicus response model (documented, replicable; pre-assign Slaughter, Watson v. RNC for June 2026 term)
+   - Success metric: 15+ clinics filing amicus on major cases by Month 6; $5M+ in institutional legal support committed by Month 12
+
+**Playbooks committed to:** `projects/resistance-research/playbooks/playbook-ags.md`, `playbook-civil-service.md`, `playbook-law-clinics.md`
+
+**Remaining playbooks (outline depth):** Labor unions, Religious coalitions, Media organizations, State legislators, Federal judges — available for future Phase 3 expansion
+
+**Status**: Phase 3 Candidate 2 partial completion (3 of 8 playbooks). Proposal now contains actionable sector-specific guidance for highest-leverage constituencies. Ready for post-distribution deployment.
+
+---
+
 ## 2026-05-09 17:15 UTC (Session 922 — Orchestrator + Checkpoint Preparation) — EXECUTION READY
 
 ### ✅ BLOCKED.md: Stockbot Database Persistence Block Resolved
