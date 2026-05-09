@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-09T15:45:00Z (Session 921 — Parallel Execution Complete) — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-09T18:45:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 58.9% (1,095,745 tokens) | All-models 49.6% | Reset in 63h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 58.9% (1,095,745 tokens) | All-models 49.8% | Reset in 62h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -23,8 +23,8 @@
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
-**Status**: Active — Phase 1-5 COMPLETE, **39-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907, Session 921) — Core proposal architecture complete, completeness assessment done, all 39 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance + Domain 42 template fixes + tracker refreshes + Phase 2 expansion (Domains 44-46) COMPLETE
-**Focus**: **Session 921 (2026-05-09): Phase 2 Domain 44 (Labor Rights/NLRB Crisis), Domain 45 (Climate Policy Rollback), Domain 46 (Federal Research Policy) ALL COMPLETE (Commits 16927e7c, 144bc926, + 3 tracker commits). Domain 42 template fix for Wave 1 execution COMPLETE.** 
+**Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
+**Focus**: **Session 907 (2026-05-09): May 2026 Tracker Maintenance COMPLETE + Phase 2 Domain 39 (Immigration Enforcement & Detention Infrastructure) COMPLETE**. 
 **Blocked**: User distribution path decision (A / A+37 / B)
 
 ### cybersecurity-hardening
@@ -33,9 +33,9 @@
 **Blocked**: None — Phase 1 ready for user approval and execution
 
 ### stockbot
-**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. May 12 checkpoint in 3 days. AAPL (108 shares, +$2,747.84 unrealized as of May 9) still open.
-**Focus**: ✅ USER PRIORITY (2026-05-08): Comprehensive options backtesting — COMPLETE (Session 900). ✅ Session 921 Checkpoint Verification COMPLETE: Jetson HEALTHY (reachable, Docker running, both sessions cycling correctly). Scenario: FAR_MISS_C1 (timing artifact — AAPL h+10 exit fires May 14, not May 12, expected behavior). Backtesting infrastructure verified production-ready.
-**Blocked**: 🔴 CRITICAL P0: Database persistence gap (trading.db zero production trades since May 5; time-stop exit logic blocked). Action required: SSH to Jetson and run `sync_db_from_alpaca.py` before May 10 (36 hours). Verify with `sqlite3 stockbot.db "SELECT COUNT(*) FROM trades WHERE timestamp >= '2026-05-05';"`
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. May 12 checkpoint 3 days away. AAPL (108 shares, +$2,747 unrealized) position open at h+8 (time-stop fires h+10 Monday).
+**Focus**: 🔴 MAY 12 CHECKPOINT PREPARATION — COMPLETE (Session 922). Engine verified healthy, database synced (19 trades since May 5), position-age logic validated, PRE_CHECKPOINT_VALIDATION.md created. Checkpoint execution scheduled May 12 20:00 UTC.
+**Blocked**: None — checkpoint prep complete, awaiting May 12 execution
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
@@ -101,12 +101,9 @@
 - **May 13**: Domain 42 Congressional submission deadline (if chosen)
 - **May 12–13**: Stockbot Gate 1 checkpoint execution
 
-**Next Steps for Orchestrator** (upon user action):
-1. **IMMEDIATE (Today/May 10)**: User executes Domain 42 Wave 1 (template fix complete, ready to send)
-2. **CRITICAL (Before May 10, 36h remaining)**: User SSH to Jetson and run `python scripts/sync_db_from_alpaca.py` (DB persistence gap blocks checkpoint)
-3. **May 10–17**: Execute Domain 42 Waves 2-3 (May 10-12, May 14-17)
-4. **Before May 12 checkpoint**: Verify DB sync restored position-age tracking
-5. **May 12 evening (20:00 UTC)**: Run May 12 Gate 1 checkpoint validation (engine predicted to show FAR_MISS_C1 timing artifact, not failure)
-6. **May 13–30**: Monitor Phase 1 response rates, Phase 2 expansion (39 domains now ready), continue tracker maintenance
-7. **May 28**: Domain 42 DEA deadline (15 days remaining)
-8. **May 30**: Seedwarden Phase 2 launch (Track A/B decision pending user action)
+**Next Steps for Orchestrator** (upon user clarification):
+1. Await user decision on Domain 42 (execute or defer)
+2. May 10–12: Execute any chosen path in parallel
+3. May 12: Run stockbot checkpoint (pre-validation checks + outcome classification)
+4. May 13–30: Monitor Phase 1 response rates + Phase 2 launch prep
+5. May 30: Seedwarden Phase 2 launch execution

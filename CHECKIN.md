@@ -1,4 +1,71 @@
-## Since Last Check-in (Session 921 — 2026-05-09 15:45 UTC — Parallel Execution)
+## Since Last Check-in (Session 922 — 2026-05-09 18:45 UTC — Checkpoint Preparation + Phase 3 Expansion)
+
+### ✅ STOCKBOT CHECKPOINT PREP COMPLETE — Engine Healthy, Database Synced, May 12 Ready
+**Completed by stockbot subagent + orchestrator:**
+1. **Engine health verified (Jetson SSH)** — 3h uptime, both sessions active (AAPL_h10_lgbm_ho + AAPL_h10_ridge_wf), normal CPU/memory
+2. **AAPL position confirmed open** — 108 shares, avg entry $267.877, unrealized P&L +$2,747.84 (h+8, time-stop fires h+10 Monday May 12)
+3. **Database sync executed** — 68 fills synced (19 May 5 + 49 Apr 29 + 1 AAPL position), position-age query ready for checkpoint
+4. **Position-age logic validated** — `_get_position_age_bars()` returns 6 bars (1 bar from time-stop trigger), test coverage added (9 new unit tests)
+5. **PRE_CHECKPOINT_VALIDATION.md created** — Complete status snapshot for May 12 checkpoint execution
+6. **Test suite cleaned** — 979 trading unit tests pass, 0 failures (fixed test_session_652_fixes.py deprecated method references)
+7. **Predicted checkpoint outcome** — NEAR_MISS likely (h+9 at checkpoint + time-stop fires Monday = AAPL_model_sells=1) vs. FAR_MISS_C1 if no signal fires
+
+**Result**: Checkpoint preparation complete. Engine verified running, position healthy, database sync complete, time-stop logic validated. May 12 20:00 UTC checkpoint execution ready.
+
+### ✅ RESISTANCE-RESEARCH PHASE 3 CANDIDATE 2 EXPANSION — 3 Institutional Playbooks Written
+**Completed by resistance-research subagent:**
+1. **AG Coalition Playbook** (~2,200 words) — 24 Democratic AGs (updated from outline's 22), lead office vs. coalition-signing model, Year 1-3 sequencing, Rhode Island permanent injunction case study, success metrics for litigation surge
+2. **Civil Service Union Playbook** (~2,100 words) — AFGE structural constraint (355→150 staff collapse), pivot to pre-existing legal infrastructure + legislative co-sponsor strategy (Saving Civil Service Act 78 co-sponsors, target swing districts), NTEU inauguration-night filing case study
+3. **Law School Clinic Playbook** (~2,000 words) — Yale Rule of Law 6+ amicus briefs, AALS conference 830 attendees, Harvard funding freeze legal protection for clinic advocacy, Loper Bright 72-hour brief model for June 2026 term cases
+
+**Remaining playbooks in outline form:** Labor unions, Religious coalitions, Media organizations, State legislators, Federal judges (5 of 8) — available for future Phase 3 expansion
+
+**Result**: Phase 3 Candidate 2 partial completion. Proposal now actionable for highest-leverage constituencies. Ready for post-distribution sector engagement.
+
+---
+
+## ⏱️ IMMEDIATE USER ACTION REQUIRED
+
+1. **May 12 Checkpoint (3 days away)** — No action required; orchestrator will execute 20:00 UTC checkpoint query on May 12. Monitor Discord notifications for outcome classification.
+
+2. **resistance-research Distribution Path** — Decision still pending (Path A / A+37 / B). All quality gates now cleared (Domain 42 fixed, trackers current, Phase 2 expansion complete, Phase 3 playbooks drafted). Ready for distribution execution upon user path decision.
+
+3. **Domain 42 Wave 1 (May 9-10 deadline)** — Template fixes complete from Session 921. Can execute immediately if user decides Path A or A+37.
+
+---
+
+## Session 922 Deliverables
+
+**stockbot:**
+- ✅ **Checkpoint preparation complete** — Engine verified, database synced, position-age logic validated, PRE_CHECKPOINT_VALIDATION.md created
+- ✅ **Test suite cleaned** — 979 tests pass, deprecated methods fixed
+- **Result**: May 12 checkpoint execution ready; monitoring awaiting
+
+**resistance-research:**
+- ✅ **Phase 3 Candidate 2 partial expansion** — 3 of 8 institutional playbooks written with updated sector data and actionable sequencing
+- **Result**: Proposal strengthened with concrete implementation guidance for AG coalitions, civil service unions, and law school clinics
+
+**orchestrator:**
+- ✅ **BLOCKED.md** — Stockbot database block resolved and archived
+- ✅ **WORKLOG.md** — Comprehensive session log with checkpoint findings and playbook research
+- ✅ **3 commits to master** — Block resolution, checkpoint status, Phase 3 expansion
+- **Result**: State files current; all work committed on master
+
+---
+
+## Next 72 Hours
+
+**May 10 (Tomorrow):** Monitor stockbot for normal operation. Await user decision on resistance-research distribution path.
+
+**May 12 (Checkpoint day):** 20:00 UTC — Run checkpoint query: `SELECT COUNT(*) FROM trades WHERE timestamp >= '2026-05-05'` to assign PASS/NEAR_MISS/FAR_MISS scenario per MAY_12_OUTCOME_ROADMAP.md
+
+**May 13–28:** Domain 42 submission window if user selects Path A or A+37.
+
+---
+
+## History
+
+### Session 921 — 2026-05-09 15:45 UTC — Parallel Execution
 
 ### ✅ MAJOR PROGRESS: Domain 42 Ready + Tracker Refreshes Complete + Domain 44 Research Done
 
