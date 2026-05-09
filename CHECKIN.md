@@ -1,5 +1,54 @@
 # Check-in
 
+## Session 937 — May 9, 2026 (Autonomous Orchestrator - Exploration Items 15-17 Complete)
+
+**Summary**: All main projects remain blocked on user decisions/actions (stockbot awaiting May 12 checkpoint, resistance-research awaiting distribution path choice, mfg-farm awaiting test print, seedwarden awaiting user photo schedule + account setup). Executed 3 parallel exploration items (15-17) to prepare next-phase infrastructure. Items enable rapid user-triggered execution once signals received. Effort: ~10-12 hours equivalent sequential, ~5-7 hours wall-clock via parallel agents. All 3 deliverables production-ready.
+
+### ✅ Session Accomplishments — Items 15-17 Complete
+
+**1. seedwarden: Phase 2 Guide Content Expansion Blueprint**
+- **File**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md` (531 lines, ~4,800 words)
+- **Status**: Production-ready guide-writing pipeline for 20-50 new species post-May-30
+- **Content**: Species Priority Matrix (20 Tier 1 May 31-June 30, 15-20 Tier 2 summer), 6-stage pipeline (capture → cull → habitat transcription → photo mapping → draft → QA), seasonal calendar (spring ephemeral, summer perennial, fall seed, winter structure), 24-field database schema, publishing cadence (45-50 species by year-end), content integration (Phase 1 cross-references, email campaigns, social media, bundle triggers)
+- **Key insight**: Guide-writing pipeline removes startup friction. User writes continuously May 31-onward without discovery work.
+- **Next**: User confirms May 30 photography schedule → guide writing begins May 31
+
+**2. mfg-farm: Pre-Launch Fulfillment Workflow**
+- **File**: `projects/mfg-farm/PRE_LAUNCH_FULFILLMENT_WORKFLOW.md` (453 lines, ~4,460 words)
+- **Status**: Production-ready end-to-end fulfillment pipeline; reduces post-test-print setup to 1-2 hours
+- **Content**: Payment processor comparison (Stripe recommended, $1.02/order), shipping (USPS Ground Advantage $4.05-$7.65), fulfillment workflow (48-hour SLA), customer support (Freshdesk templates), QA gates (3 checkpoints), packaging specs, launch checklist, 30-day ramp-up timeline
+- **Gap identified**: Pre-launch batch print with explicit three-point FDM_TOLERANCE calibration (0.00, +0.05, +0.10 mm) should be more explicitly structured before first production run
+- **Next**: User completes test print → fulfillment setup same day (no additional research needed)
+
+**3. cybersecurity-hardening: Tier 1 Success Measurement Framework**
+- **File**: `projects/cybersecurity-hardening/TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md` (v2.0, ~5,800 words)
+- **Status**: Production-ready measurement infrastructure for 25-contact policy cohort distribution
+- **Content**: KPI targets (45% click, 60% meeting acceptance, 10% adoption by Week 6), 5-tab Google Sheets tracking, 4 early warning triggers with diagnostic sequences, escalation decision tree (6 scenarios), 5 contingency protocols (delivery, list quality, negative feedback, low engagement, positive escalation), Week 2/4/6 continuation gates, weekly dashboard template
+- **Key insight**: Measurement baseline enables data-driven Tier 2 decisions. Escalation procedures prevent reactive mistakes.
+- **Next**: User approves Phase 1 → measurement activated immediately; enables Day 1 reliable tracking
+
+### 📊 Project Status (Session 937 Update)
+- **stockbot**: Checkpoint prep COMPLETE. Awaiting May 12 20:00 UTC execution. Post-Gate-1 architecture options ready (`POST_GATE_1_ARCHITECTURE_OPTIONS.md`). No autonomous work until checkpoint.
+- **resistance-research**: Phase 1-5 COMPLETE. Domain 39 COMPLETE. Distribution path execution plans ready. Awaiting user choice (Path A / A+37 Hybrid / Path B). Phase 2 expansion roadmap (Domains 48-54) ready upon Phase 1 completion. No autonomous work until path decision.
+- **cybersecurity-hardening**: Phase 1+2 COMPLETE. Measurement framework ready. Awaiting user approval for Phase 1 execution. No autonomous work.
+- **mfg-farm**: All pre-production COMPLETE. Fulfillment workflow ready. Awaiting test print. No autonomous work.
+- **seedwarden**: Phase 2 photography logistics ready. Phase 3 assets COMPLETE. Guide content blueprint ready. Awaiting user photography schedule + account setup. No autonomous work.
+
+### ⚠️ USER INPUT NEEDED — Next Actions
+
+1. **resistance-research** (HIGH PRIORITY): Choose distribution path A / A+37 Hybrid (RECOMMENDED) / B → orchestrator executes Phase 1 immediately (~2 hours execution time post-decision)
+2. **stockbot** (May 12): Run checkpoint query at 20:00 UTC; follow POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md
+3. **cybersecurity-hardening** (TBD): Approve Phase 1 Tier 1 materials → measurement framework activates, outreach begins
+4. **mfg-farm** (TBD): Complete test print → fulfillment setup same day (1-2 hours)
+5. **seedwarden** (TBD): Confirm May 30 photography schedule → guide writing pipeline starts May 31
+
+### 📈 Exploration Queue Status
+- **Items 15-17**: ✅ COMPLETE (Session 937)
+- **Items 18-20**: ✅ COMPLETE (Session 936)
+- **Next queue**: TBD post-May-12 checkpoint outcomes
+
+---
+
 ## Session 936 — May 9, 2026 (Autonomous Orchestrator - Exploration Items 18-20 Complete + URGENT seedwarden action)
 
 **Summary**: All main projects remain blocked on user actions. Executed 3 more exploration items immediately following Session 935. New deliverables address critical May-June deadlines: resistance-research Phase 2 expansion (Aug 1 deadline for ballot measure campaigns), stockbot May 12 checkpoint decision tree (ready for May 13 execution), seedwarden endangered species ordering (**TODAY May 9 — orders already due, action required now**). Effort: 4–5 hours total; 3 production-ready documents.

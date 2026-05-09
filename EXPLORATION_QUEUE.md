@@ -87,41 +87,43 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
-## Active Queue (Current Session 935)
+## Completed Items (Session 937)
 
-### 🆕 Item 15: Seedwarden Phase 2 Guide Content Expansion Blueprint
-**Status**: NEW (Session 935, May 9 2026)
-**Impact**: HIGH — May 30 Phase 2 launch (21 days), guide content is critical differentiator
-**Goal**: Plan guide writing pipeline for 20-50 new species post-May-30. Deliverable: content structure, species priority matrix, photo-to-guide workflow, integration with Phase 1 guide templates, timeline for seasonal content (spring ephemeral, summer perennial, fall seed maturation, winter structure/habitat ID).
-**Feasibility**: HIGH — Phase 1 guides exist as templates, Phase 2 photography logistics finalized
-**Effort estimate**: 3-4 hours
-**Deliverable**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md` (site prioritization → photo workflow → guide writing sequence → publishing cadence)
-**Why now**: With photography logistics done, content blueprint removes guide-writing uncertainty. Enables user to start guide expansion immediately post-May-12 checkpoint.
-**Next Step**: Start now — independent of user decisions
+### ✅ Item 15: Seedwarden Phase 2 Guide Content Expansion Blueprint
+**Status**: COMPLETE (Session 937, May 9 2026)
+**Effort**: 3.5 hours
+**Deliverable**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md` (531 lines, ~4,800 words)
+**Content**: Species Priority Matrix (20 Tier 1, 15-20 Tier 2), 6-stage guide writing pipeline, photo-to-guide integration, seasonal content calendar (May-Dec), database schema (24-field species-database.csv), publishing cadence (45-50 species by year-end), content integration (Phase 1 cross-references, email campaigns, social media 5-post sequence, bundle triggers)
+**Key Insight**: Guide-writing pipeline removes May 31 start-up friction. User can write continuously post-May-30 without discovery work.
+**Next Step**: User confirms May 30 photography schedule → guide writing begins May 31 using this blueprint
 
 ---
 
-### 🆕 Item 16: mfg-farm Pre-Launch Fulfillment Workflow
-**Status**: NEW (Session 935, May 9 2026)
-**Impact**: MEDIUM-HIGH — Test print is blocker, but pre-work can prepare rapid launch path
-**Goal**: Design end-to-end fulfillment pipeline: payment processor selection (Stripe/PayPal), shipping carrier integration (USPS/FedEx/UPS), customer support workflow, inventory management, quality control checkpoints, packaging cost analysis, return handling.
-**Feasibility**: HIGH — business plan exists, designs finalized
-**Effort estimate**: 2-3 hours
-**Deliverable**: `projects/mfg-farm/PRE_LAUNCH_FULFILLMENT_WORKFLOW.md` (infrastructure setup → launch readiness checklist → 30-day ramp-up timeline)
-**Why now**: Once test print passes, accelerate launch without fulfillment discovery work. Reduces post-test-print friction to ~1-2 hours of setup.
-**Next Step**: Start now — parallel to test print work
+### ✅ Item 16: mfg-farm Pre-Launch Fulfillment Workflow
+**Status**: COMPLETE (Session 937, May 9 2026)
+**Effort**: 2.5 hours
+**Deliverable**: `projects/mfg-farm/PRE_LAUNCH_FULFILLMENT_WORKFLOW.md` (453 lines, ~4,460 words)
+**Content**: Payment processor comparison (Stripe $1.02 vs PayPal $1.24 per order, Etsy integrated), shipping integration (USPS Ground Advantage $4.05-$7.65 Zone 3-4), fulfillment workflow (48-hour SLA), customer support (Freshdesk templates, <24 hr SLA), QA gates (3 checkpoints), packaging specs (Phase 1 $0.10-0.12, Phase 2 $0.38-1.10 branded), launch readiness checklist, 30-day ramp-up (0-3 Week 1, 20-50/week Month 3)
+**Key Insight**: Post-test-print launch friction reduced to 1-2 hours. All fulfillment infrastructure pre-built.
+**Gap identified**: Pre-launch batch print with explicit three-point FDM_TOLERANCE calibration (0.00, +0.05, +0.10 mm) is implicit, not explicitly structured. Recommend extending QA section before first production batch.
+**Next Step**: User completes test print → fulfillment setup begins same day
 
 ---
 
-### 🆕 Item 17: Cybersecurity-Hardening Tier 1 Success Measurement Framework
-**Status**: NEW (Session 935, May 9 2026)
-**Impact**: HIGH — Tier 1 outreach depends on measurement infrastructure
-**Goal**: Develop KPI dashboard, early warning system, escalation procedures, and contingency response protocols for Tier 1 rollout. Coverage: email open rates → meeting acceptance → security adoption signals; failure scenarios (low engagement, security incident at org, contact turnover); dashboards for tracking weekly cohorts.
-**Feasibility**: HIGH — Tier 2 pilot plan done, existing outreach infrastructure
-**Effort estimate**: 2-3 hours
-**Deliverable**: `projects/cybersecurity-hardening/TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md` (metric definitions → tracking infrastructure → escalation decision tree → contingency triggers)
-**Why now**: Before Phase 1 approval, establish measurement baseline. Enables data-driven decisions on Tier 2 timing and scope.
-**Next Step**: Start now — ready before user approves Phase 1
+### ✅ Item 17: Cybersecurity-Hardening Tier 1 Success Measurement Framework
+**Status**: COMPLETE (Session 937, May 9 2026)
+**Effort**: 3.0 hours
+**Deliverable**: `projects/cybersecurity-hardening/TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md` (v2.0, ~5,800 words)
+**Content**: KPI targets (45% click, 60% meeting acceptance, 10% adoption by Week 6), 5-tab Google Sheets tracking, 4 early warning triggers with diagnostic sequences, escalation decision tree (6 scenarios), 5 contingency scenarios (delivery failure, contact list quality, negative feedback, low engagement, positive escalation) with recovery times, Week 2/4/6 continuation gates, weekly dashboard template
+**Key Insight**: Measurement baseline pre-built enables data-driven Tier 2 timing decisions. Escalation procedures prevent reactive mistakes during distribution.
+**Benchmarks used**: HubSpot government 30.5% baseline, M+R Benchmarks 2025 (28-40% nonprofit), Congressional Management Foundation, Campaign Monitor
+**Next Step**: User approves Phase 1 → measurement framework activated immediately
+
+---
+
+## Active Queue (Current Session 937+)
+
+[Empty — all top-priority items complete. Next queue items TBD based on post-May-12 checkpoint outcomes.]
 
 ---
 
