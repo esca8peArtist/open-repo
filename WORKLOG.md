@@ -4,7 +4,28 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-05-09 (Session 929 — Orchestrator, Parallel Agent Execution) — 2 AGENTS COMPLETE
+## 2026-05-09 (Session 929 — Orchestrator, Parallel Agent Execution) — 3 AGENTS COMPLETE
+
+### ✅ resistance-research: Phase 2 Domain 44 Research (Reproductive Freedom & Democratic Participation) — COMPLETE
+
+**Deliverable**:
+- **domain-44-reproductive-freedom-democratic-participation.md** (NEW — production-ready):
+  - 7,400 words, 52 citations
+  - Central finding: Reproductive suppression functions as democratic exclusion through three mechanisms:
+    1. Economic suppression (IWPR 2024: abortion access increases lifetime earnings $11-15K/year, $23-28K for Black women)
+    2. Natural experiment (post-Dobbs: women's voter registration +35% vs. men +9%; Kansas +70% after Dobbs)
+    3. Geographic overlap (bottom-quartile voting-access states 3x more likely to restrict abortion; same legislatures doing both)
+  - 2026 Crisis Status: Mifepristone Fifth Circuit ruling (in-person dispensing only), Texas HB7 bounty enforcement, Louisiana criminal prosecution, 2026 ballot initiatives (Nevada, Virginia, Missouri, Idaho)
+  - Equity data: Black maternal mortality in ban states 60.9/100K (3.3x white rate); post-Dobbs 59 excess maternal deaths, 478 excess infant deaths, 22K additional forced births
+  - Movement infrastructure: 3 organizations (In Our Own Voice, Intersections, Reproductive Freedom for All) explicitly integrating reproductive justice + voting rights
+  - Reform pathways: Women's Health Protection Act, Stop Comstock Act, NVRA amendment, state constitutional amendments, France 2024 constitutional precedent
+  - Distribution target: Reproductive justice orgs, healthcare policy advocates, voting rights lawyers, electoral organizations
+
+**Key strategic insight**: Domain 44 (reproductive freedom) + Domain 42 (drug policy) + Domain 47 (housing) establish a coherent Phase 2 arc around "administrative capture + health equity + democratic exclusion". These three domains share analytical structure and target overlapping constituencies (Black women, low-income communities, disenfranchised populations).
+
+**Status**: ✅ COMPLETE. Domain 44 file committed. Session 929 expansion work complete.
+
+---
 
 ### ✅ resistance-research: May 2026 Tracker Updates + Phase 2 Domain 47 Research — COMPLETE
 

@@ -1,22 +1,64 @@
-## Since Last Check-in (Session 929 — 2026-05-09 — Parallel Agent Execution)
+## Since Last Check-in (Session 929 — 2026-05-09 — Parallel Agent Execution + Phase 2 Domain Research)
 
-### ✅ RESISTANCE-RESEARCH TRACKER + DOMAIN 47 COMPLETE; SEEDWARDEN TASK AUDIT DONE
+### ✅ RESISTANCE-RESEARCH EXPANSION COMPLETE: Tracker Updates + Domains 47 & 44
 
-**Completed** (Session 929, ~2 hours via 2 parallel agents):
+**Completed** (Session 929, ~7 hours via 3 parallel agents):
 
-1. **resistance-research: May 2026 Tracker Maintenance + Phase 2 Domain 47 Research**
-   - **Tracker updates**: 3 new critical entries (11th Circuit detention ruling creating 4-circuit split, Callais redistricting cascade projecting 4–8 GOP seat gains, Section 591 DEA rescheduling rider alert)
-   - **Domain 47**: Housing Security & Displacement (7,200 words, 48 sources, production-ready) — establishes housing instability as voter suppression mechanism
-   - **Strategic finding**: Domain 42+47 share analytical arc (administrative capture as democratic exclusion) — sets up Phase 2 coherence
-   - **Next**: If Phase 1 distribution approved, Phase 2 scoping begins May 19 (post-May-12 checkpoint)
+1. **resistance-research: May 2026 Tracker Maintenance + Phase 2 Domains 47 & 44**
+   - **Tracker updates**: 3 new critical entries
+     - 11th Circuit detention ruling (May 6–7) — strikes down ICE no-bond policy, creates 4-circuit split, SCOTUS review likely
+     - Callais redistricting cascade — Louisiana, Alabama, Tennessee redistricting projecting 4–8 net Republican House seat gains
+     - Section 591 House Appropriations alert — DEA rescheduling rider in CJS markup (precedent: FY2026 stripped in conference)
+   
+   - **Domain 47**: Housing Security & Displacement (7,200 words, 48 sources)
+     - Central finding: 1% eviction increase = 0.46–5.54% voter turnout decline; housing voucher receipt suppresses voter registration 3.6–4.9% for ~20 years
+     - Three 2026 policy tracks: Emergency Housing Vouchers (47K households losing stability), work requirements (3.3M threatened), CoC overhaul (June 1 NOFO)
+     - Reform architecture: 7 proposals across immediate, medium-term, structural timeframes
+   
+   - **Domain 44**: Reproductive Freedom & Democratic Participation (7,400 words, 52 sources)
+     - Central finding: Reproductive suppression = democratic exclusion via (1) economic suppression (IWPR: abortion access +$11-15K lifetime earnings, +$23-28K for Black women), (2) post-Dobbs natural experiment (women's voter reg +35% vs men +9%), (3) geographic overlap (same legislatures restricting both abortion & voting)
+     - 2026 Crisis: Mifepristone Fifth Circuit ruling, Texas HB7 bounty enforcement, Louisiana criminal prosecution, 2026 ballot initiatives
+     - Equity data: Black maternal mortality in ban states 60.9/100K (3.3x white rate); 59 excess maternal deaths, 478 excess infant deaths, 22K forced births post-Dobbs
+     - Movement infrastructure: 3 orgs doing integrated reproductive justice + voting rights (In Our Own Voice, Intersections, Reproductive Freedom for All)
+     - Reform pathways: Women's Health Protection Act, Stop Comstock Act, NVRA amendment, state constitutional amendments
+   
+   - **Strategic arc established**: Domains 42 (drug policy) + 47 (housing) + 44 (reproductive freedom) form Phase 2 coherence around "administrative capture as democratic exclusion + health equity + disenfranchisement of overlapping populations"
 
 2. **seedwarden: Standing Task Audit**
-   - All 18 wild edibles habitat photos already downloaded (prior session work)
-   - 100% complete with proper sourcing/licensing (CC-licensed, Wikimedia Commons)
-   - Agent profile task description was stale; no new work needed
-   - Note for next phase: include attribution/photo credits page per CC BY-SA when producing derivative products
+   - Confirmed: 18/18 wild edibles habitat photos complete (CC-licensed, Wikimedia Commons)
+   - Agent profile task was stale; no new work needed
+   - Action for next phase: include attribution/credits per CC BY-SA when producing derivative products
 
-**Status**: ✅ Both deliverables in master. Domain 47 production-ready. Seedwarden task audit confirms work complete.
+**Status**: ✅ All three deliverables in master. Domains 47 & 44 production-ready for Phase 2 distribution. Resistance-research Phase 2 momentum established (3 new domains complete in 2 sessions: 39, 47, 44).
+
+### Needs Your Input (Session 929 — Time-Critical, May 9)
+
+**TODAY/IMMEDIATE — Two Critical Decisions Still Required:**
+
+1. **resistance-research — Distribution Path** (Domain 42 deadline May 28: 19 days away)
+   - Choose Path A (immediate 35-domain distribution) OR Path A+37 (recommended: immediate + Domain 37 for election protection) OR Path B (continue Phase 2 expansion before launch)
+   - Path A+37 enables May 9-13 Domain 42 Wave 1 execution (4-day window closes May 13)
+   - Impact: Determines May 12–28 execution calendar for Phase 1 launch
+
+2. **Domain 42 Wave 1 Execution** (May 28 DEA hearing participation deadline)
+   - 4 category-specific email templates ready (drug policy reform, civil rights, academic, state AGs)
+   - 10 organizations identified for Wave 1 (Category A)
+   - User approval needed to send Wave 1 emails May 9-13
+
+### What's In Progress (Awaiting External Events)
+
+- **stockbot**: May 12 checkpoint preparation complete. Awaiting May 12 20:00 UTC execution + May 11 manual DB sync
+- **cybersecurity-hardening**: Tiers 1-3 all production-ready. Awaiting Phase 1 user approval before Tier 1 outreach begins
+- **mfg-farm**: Business plan, designs, market research, listing copy all complete. Blocked on test print (user action)
+- **seedwarden**: Phase 1 & 3 assets complete. Phase 2 launch target May 30. Blocked on tag corrections + Etsy account verification
+
+### Suggested Priorities for Next Session (May 10–11)
+
+1. **TODAY (May 9)**: Make distribution path decision (Path A / A+37 / B) — this unlocks May 12-13 execution calendar
+2. **May 10-13**: If Path A or A+37 chosen, execute Phase 1 Wave 1 domain delivery (Domain 42 emails, template filling, contact verification)
+3. **May 11 evening**: Manual stockbot DB sync (per BLOCKED.md — user action required)
+4. **May 12 20:00 UTC**: Execute stockbot Gate 1 checkpoint (run query per gate-1-readiness-checklist.md, assign outcome per decision tree)
+5. **May 13+**: Assign Gate 1 outcome scenario per MAY_12_OUTCOME_ROADMAP.md; follow scenario-specific next steps
 
 ---
 
