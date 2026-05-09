@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-09T18:45:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-09T11:04:04Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 58.9% (1,095,745 tokens) | All-models 49.8% | Reset in 62h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 58.9% (1,095,745 tokens) | All-models 50.7% | Reset in 61h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -33,9 +33,9 @@
 **Blocked**: None — Phase 1 ready for user approval and execution
 
 ### stockbot
-**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. May 12 checkpoint 3 days away. AAPL (108 shares, +$2,747 unrealized) position open at h+8 (time-stop fires h+10 Monday).
-**Focus**: 🔴 MAY 12 CHECKPOINT PREPARATION — COMPLETE (Session 922). Engine verified healthy, database synced (19 trades since May 5), position-age logic validated, PRE_CHECKPOINT_VALIDATION.md created. Checkpoint execution scheduled May 12 20:00 UTC.
-**Blocked**: None — checkpoint prep complete, awaiting May 12 execution
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
+**Focus**: 🔴 MAY 12 CHECKPOINT PREPARATION — COMPLETE (Session 922)
+**Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
@@ -57,11 +57,23 @@
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 ---
+### stockbot — Manual DB sync required on May 11 before checkpoint (cron PATH broken)
+**Date blocked**: 2026-05-09
+**Context**: Jetson nightly DB sync via cron is not running. Root cause: `PATH` environment variable not set in crontab, so `sync_db_from_alpaca.py` cannot find `uv` binary. The AAPL time-stop exit is expected to fire on May 11 (h+10 trigger). If the sync doesn't run, the May 12 checkpoint query will show 0 confirmed round trips even if the SELL fill executed. Database must be manually synced on May 11 evening or May 12 morning before the 20:00 UTC checkpoint query.
+**What I need**: On May 11 evening (after market close ~20:00 UTC) or May 12 morning, manually run: `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` to capture the time-stop SELL fill if it fired.
+**Verify with**: `crontab -l | grep sync_db` should show PATH=/... at top, then sync_db_from_alpaca.py entry with proper path. Command to test: `ssh user@jetson "crontab -e && add PATH=/home/awank/.local/bin:/usr/local/bin:/usr/bin:/bin"`
+**Resolution**:
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
+**Resolution**:
+### stockbot — Jetson disk at 87% (29 GB free remaining)
+**Date blocked**: 2026-05-09
+**Context**: Jetson root filesystem is at 87% capacity (188 GB of 227 GB used, 29 GB free). Root causes: /var/log at 74 GB, Docker build cache at 22.66 GB (6 GB reclaimable). This is NOT a May 12 checkpoint blocker — 29 GB is sufficient for 3 days of trading logs. However, disk must be cleaned before Gate 2 deployment to prevent crashes due to log rotation failures or container failures.
+**What I need**: After May 12 checkpoint, clean up: (1) identify and archive old logs in /var/log (keep last 7 days), (2) run `docker builder prune` to reclaim build cache, (3) verify free space ≥50 GB before Gate 2 work.
+**Verify with**: `ssh user@jetson "df -h / && du -sh /var/log && docker system df"`
 **Resolution**:
 
 ## Inbox (unprocessed)
