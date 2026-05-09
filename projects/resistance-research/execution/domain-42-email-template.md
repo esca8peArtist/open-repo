@@ -5,6 +5,7 @@ status: ready-for-send
 deadline: "May 28, 2026 — DEA hearing participation notice deadline"
 scope: "Primary template for Domain 42 sub-batch: drug policy reform organizations (Category A), civil rights organizations (Category B), academic/admin law contacts (Category C), state AGs (Category D)"
 note: "This template is distinct from Batch 1-3 templates. Those templates lead with judicial independence, voting rights, and prosecutorial weaponization. This template leads with the May 28 DEA deadline, the democratic exclusion architecture argument, and Weill Cornell racial disparity data. Personalize the bracketed fields before each send. The template is short enough to personalize manually — no fill_templates.py automation required."
+section_591_status: "RESOLVED — Section 591 appropriations rider was dropped from the final FY2027 CJS bill. Do not include Section 591 in any outreach urgency framing. The May 28 deadline stands as the sole urgency argument. Updated May 9, 2026 (Session 920). See domain-42-email-template-may28-urgency.md for the active send template."
 ---
 
 # Domain 42 Email Template — Drug Policy Reform Organizations

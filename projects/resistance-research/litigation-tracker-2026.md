@@ -1026,5 +1026,109 @@ The April 28 hearing before Judge Paula Xinis (D. Md. 8:25-cv-02780) was set to 
 | Late June | Trump v. Barbara | SCOTUS birthright citizenship |
 | TBD | SPLC (M.D. Ala.) | Arraignment; dismissal motion likely from defense |
 | TBD | DC Circuit en banc | Boasberg contempt en banc petition |
-| TBD | Section 122 CIT | Three-judge panel on 10% global tariff |
+| TBD | Section 122 CIT | Federal Circuit appeal expected — government will seek stay pending appeal |
+| June 12, 2026 | Section 702 FISA | 45-day extension expires — new deadline for long-term reauthorization decision |
+| June 11, 2026 | Abrego Garcia (D. Md.) | Xinis: government must show cause why sanctions should not issue (filing due) |
+
+---
+
+## May 2026 Tracker Refresh — Session 920 (May 9, 2026)
+
+*Covers five items flagged as gaps in the Session 920 assessment: April 28 Xinis hearing, Nashville Crenshaw ruling, Callais v. Landry, FISA Section 702 final outcome, and Section 122 CIT ruling.*
+
+---
+
+### UPDATE 1: Abrego Garcia v. Noem (D. Md.) — April 28 Xinis Hearing Outcome
+
+**Status as of May 9, 2026**: The April 28 hearing before Judge Xinis proceeded as scheduled. No contempt order was issued at the hearing. The previously agreed discovery stay through April 30 at 5 p.m. was in effect at the time of the hearing; both parties had filed sealed motions on April 23. The contempt question was not resolved at the April 28 hearing but was deferred.
+
+**Post-hearing developments**: Judge Xinis subsequently ordered the government to show cause why sanctions should not issue, with the government's filing due **June 11, 2026**. Xinis also granted media access to certain sealed records in the case. The DOJ's motion to dissolve the injunction blocking Abrego Garcia's re-detention and third-country deportation to Liberia remains pending — Xinis has not dissolved the injunction. Abrego Garcia remains in the United States under the injunction's protection.
+
+**Key issue still live**: The Liberia deportation question is unresolved. The government continues to assert Liberia as the designated removal destination despite Costa Rica's confirmed willingness to receive him. Xinis has rejected the government's characterization of the Liberia plan as legitimate and has found it inconsistent with the Supreme Court's April 2025 "facilitate return" order.
+
+**Nashville (Crenshaw) interaction**: No Nashville ruling issued before or during the April 28 hearing. See Update 2 below.
+
+**Current posture**: Injunction blocking re-detention remains in force. Contempt/sanctions proceedings are active — government response due June 11. DOJ appeal to Fourth Circuit pending on the injunction. Case continues.
+
+**Sources**: [The Intercept — who decided to indict over a traffic stop (April 28, 2026)](https://theintercept.com/2026/04/28/kilmar-abrego-garcia-trump-justice-department/) | [ABA Journal — contempt inquiry filing](https://www.abajournal.com/news/article/even-though-abrego-garcia-is-back-in-us-government-stonewalling-merits-contempt-inquiry-court-filing-says) | [Fox News — Xinis grants media access to sealed records](https://www.foxnews.com/politics/us-judge-grants-motion-unseal-records-abrego-garcia-case)
+
+---
+
+### UPDATE 2: Nashville (Crenshaw) — Vindictive Prosecution Ruling Still Pending
+
+**Status as of May 9, 2026**: Judge Waverly Crenshaw has not issued a ruling on the vindictive prosecution motion in *United States v. Abrego Garcia* (M.D. Tenn., Case 3:25-cr-00115). The evidentiary record closed following the February 26, 2026 hearing. Post-hearing briefs were submitted. As of May 9, 2026, the ruling remains pending.
+
+**Interaction with Maryland case**: The delay has practical significance. As long as the Nashville prosecution remains active, the government retains its argument that Abrego Garcia is subject to criminal supervision justifying re-detention and removal. If Crenshaw dismisses, that argument is eliminated, which directly affects Judge Xinis's analysis of the government's Liberia deportation rationale.
+
+**Significance if Crenshaw dismisses**: A dismissal would: (1) eliminate the government's primary basis for keeping Abrego Garcia in criminal jurisdiction; (2) remove the criminal-supervision anchor for the Liberia removal rationale; (3) establish a federal court record that DOJ leadership orchestrated a charge in direct response to a Supreme Court order — the documented sequence (Aakash Singh contact on April 27, 2025, the day before the SCOTUS order; indictment May 21, 2025) is now fully in the public record after the February 2026 hearing.
+
+**Sources**: [Tennessee Lookout — vindictive prosecution hearing February 2026](https://tennesseelookout.com/2026/02/26/kilmar-abrego-garcia-prosecutor-testifies-criminal-charges-were-not-vindictive/) | [NBC News — prosecutor testifies (February 2026)](https://www.nbcnews.com/news/us-news/kilmar-abrego-garcia-asks-us-judge-tennessee-dismiss-criminal-case-say-rcna260794) | [CBS News — Crenshaw findings (February 2026)](https://www.cbsnews.com/news/kilmar-abrego-garcia-vindictive-prosecution-tennessee-court/)
+
+---
+
+### UPDATE 3: Callais v. Landry — SCOTUS VRA Section 2 Ruling (April 29, 2026)
+
+**Case**: *Louisiana v. Callais*, No. 24-109
+
+**Ruling**: The Supreme Court issued its decision on **April 29, 2026**, in a **6-3 ruling along ideological lines**. Majority opinion by Justice Samuel Alito, joined by Chief Justice Roberts and Justices Thomas, Gorsuch, Kavanaugh, and Barrett. Justice Jackson authored the dissent.
+
+**What the Court held**: The Court struck down Louisiana's SB 8 congressional map (which provided two majority-Black districts, created under court order following the prior *Allen v. Milligan* ruling) as an unconstitutional racial gerrymander. More consequentially, the majority opinion established that **Section 2 of the Voting Rights Act now requires proof of intentional racial discrimination** — not merely discriminatory effect — to establish a violation. The effect standard, which had governed VRA Section 2 jurisprudence since 1982 and was explicitly embedded in the 1982 statutory amendments, has effectively been eliminated.
+
+**Immediate practical effects (as of May 9, 2026)**:
+- Louisiana suspended its May 16 primaries the day after the ruling to allow the legislature to draw a new compliant map. Governor Jeff Landry and AG Liz Murrill announced the suspension immediately.
+- Alabama filed an emergency motion to expedite its pending redistricting appeal on the same theory.
+- Florida Governor DeSantis signed new congressional maps within hours of the ruling; analysis projects a 4-seat Republican gain.
+- Tennessee called a special session targeting the Memphis majority-Black Democratic district.
+- Georgia Governor Kemp announced he would not order redistricting (GPB, May 1, 2026).
+
+**Legal significance**: This is the most consequential voting rights ruling since *Shelby County v. Holder* (2013) and may be the single most severe blow to the VRA since its passage. Combined with *Rucho v. Common Cause* (2019, eliminating partisan gerrymandering review), federal courts now provide no meaningful protection for minority voters facing discriminatory redistricting. State courts and state constitutional voting rights provisions are the remaining federal checks — both of which are under dark money capture pressure, making the 2026 state supreme court elections (Wisconsin, Pennsylvania, North Carolina) and state constitutional ballot initiatives the primary remaining leverage points.
+
+**Electoral math**: 4-8 potential Republican House seat additions through post-Callais redistricting are now projectable without federal executive action required.
+
+**Cross-references**: Litigation Tracker entry 7.5 (April 2026 updates section); CHECKIN.md entries 0a and 0a-UPDATE; Domain 1 (Electoral Reform) Section 8; Domain 33 (State Legislative Autocratization); Domain 35 Section 7.
+
+**Sources**: [Supreme Court opinion — 24-109 Louisiana v. Callais (April 29, 2026)](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf) | [Democracy Docket — SCOTUS smothers VRA](https://www.democracydocket.com/news-alerts/scotus-smothers-voting-rights-act-greenlighting-racial-discrimination-and-a-rash-of-gop-gerrymanders/) | [NPR — Supreme Court strikes severe blow to VRA (April 29, 2026)](https://www.npr.org/2026/04/29/nx-s1-5754657/supreme-court-louisiana-redistricting) | [Center for American Progress — Callais undermines VRA and sows election chaos](https://www.americanprogress.org/article/the-supreme-courts-callais-decisions-undermine-the-voting-rights-act-and-sow-election-chaos/) | [Campaign Legal Center — what's next after VRA evisceration](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next) | [LSE US Politics Blog — end of multiracial democracy in the South (May 8, 2026)](https://blogs.lse.ac.uk/usappblog/2026/05/08/the-supreme-courts-louisiana-v-callais-decision-is-the-end-of-multiracial-democracy-in-the-south/)
+
+---
+
+### UPDATE 4: FISA Section 702 — 45-Day Extension Signed April 30, 2026
+
+**Status**: RESOLVED — 45-day extension enacted.
+
+**Final outcome**: Hours before the April 30 midnight deadline, Congress passed a 45-day clean extension of Section 702. Senate: unanimous voice vote. House: 261-111. Trump signed before midnight. The **new expiration deadline is June 12, 2026**.
+
+**What did NOT pass**: 
+- The three-year reauthorization (S.1318) with limited reforms that Johnson introduced on April 24 was blocked in the Senate because House Republicans had attached an unrelated bill banning a hypothetical government digital currency (CBDC ban), which was dead on arrival in the Senate.
+- No warrant requirement for U.S. person queries was included in any enacted text.
+- The data broker loophole was not closed.
+
+**Wyden declassification deal**: Senator Wyden secured a letter from Senators Cotton and Warner committing to release a March 17, 2026 FISC opinion within 15 days of the extension's enactment. This classified opinion relates to Section 702 querying practices and its public release is a civil liberties accountability milestone regardless of the broader reauthorization failure.
+
+**Resistance-research significance**: The data broker loophole — which allows ICE and DHS to purchase commercial location data without a warrant, enabling surveillance of protest environments and immigrant communities — was not closed. The June 12 deadline creates another civil liberties reform window. The same coalition dynamics that produced the April 30 standoff (privacy-minded House Republicans + most Democrats vs. leadership) are likely to recur.
+
+**Sources**: [NPR — Congress extends FISA 702 for 45 days (April 29, 2026)](https://www.npr.org/2026/04/29/g-s1-119094/congress-fisa-702) | [Washington Post — 45-day extension, broader approval delayed (April 30, 2026)](https://www.washingtonpost.com/national-security/2026/04/30/fisa-section-702-surveillance-senate-extension/) | [CNBC — Congress passes extension before deadline](https://www.cnbc.com/2026/04/30/fisa-section-702-congress-extension.html) | [Fox News — Congress passes short-term FISA fix](https://www.foxnews.com/politics/reporters-notebook-congress-passes-short-term-fisa-702-fix-delays-long-term-renewal)
+
+---
+
+### UPDATE 5: Section 122 CIT — Three-Judge Panel Strikes Down Tariffs (May 7, 2026)
+
+**Case**: *Oregon v. Trump* and *Burlap & Barrel, Inc. v. Trump* (consolidated), U.S. Court of International Trade
+
+**Ruling**: On **May 7, 2026**, the three-judge CIT panel (Chief Judge Barnett, Judge Kelly, Judge Stanceu) issued a **2-1 decision** holding the Trump administration's 10% global tariff imposed under Section 122 of the Trade Act of 1974 **unlawful**. This is the second consecutive major tariff authority struck down — following the Supreme Court's February 20, 2026, 6-3 ruling in *Learning Resources, Inc. v. Trump* striking down IEEPA tariffs.
+
+**Legal holding**: The majority held that the President's findings did not establish the existence of a "large and serious United States balance-of-payments deficit" within the meaning of Section 122. The statute uses "balance of payments deficits" as a term of art rooted in specific historical measurement methodologies (liquidity balance, official settlements balance, basic balance) — not simply the modern current account deficit or trade deficit. A long-running trade imbalance is not a "balance-of-payments deficit" within the statutory meaning.
+
+**Dissent**: One judge dissented, arguing Section 122 does not limit the President to historical measurement methodologies and that the majority's interpretation unduly constrained presidential discretion.
+
+**Scope of relief**: The injunction is limited to the plaintiffs in the case (Burlap & Barrel, Basic Fun!, and the State of Washington). The court declined to issue a universal injunction and dismissed 20+ state plaintiffs for lack of standing (indirect economic harm insufficient). For all other importers, the 10% duty remains in effect pending appeal.
+
+**Appeal expected**: The administration is expected to appeal to the U.S. Court of Appeals for the Federal Circuit and will likely seek a stay of the injunction pending appeal. The Federal Circuit may also address whether the relief should be extended to all importers. SCOTUS review remains possible.
+
+**Significance**: The two consecutive tariff authority losses (IEEPA at SCOTUS, Section 122 at CIT) have eliminated the administration's principal legal bases for the global tariff architecture. Congress has not provided new statutory tariff authority. The remaining tariff infrastructure is on legally uncertain ground and faces a coordinated litigation strategy. The Federal Circuit and potentially SCOTUS will determine whether any presidential tariff authority survives intact.
+
+**Sources**: [Thompson Hine SmarTrade — CIT panel strikes down Section 122 tariffs (May 7, 2026)](https://www.thompsonhinesmartrade.com/2026/05/cit-panel-strikes-down-trump-administrations-section-122-tariffs/) | [Baker McKenzie Global Import Blog — CIT invalidates Section 122 tariffs](https://globalimportblog.bakermckenzie.com/2026/05/08/us-cit-invalidates-section-122-tariffs/) | [Holland & Knight — CIT invalidates Section 122 tariffs](https://www.hklaw.com/en/insights/publications/2026/05/us-court-of-international-trade-invalidates-the-administrations) | [The Hill — trade court strikes down Trump global tariffs (May 2026)](https://thehill.com/business/5868826-federal-court-strikes-trump-tariff/) | [Custom and International Trade Law Blog — what this means for businesses (May 8, 2026)](https://customsandinternationaltradelaw.com/2026/05/08/cit-strikes-down-section-122-tariffs-what-this-means-for-businesses/)
+
+---
+
+*May 2026 tracker refresh completed May 9, 2026 (Session 920). Five gap items from Session 920 assessment are now documented. Outstanding items: Nashville (Crenshaw) ruling still pending; Abrego Garcia sanctions/contempt active (government response June 11); FISA Section 702 new deadline June 12; Section 122 Federal Circuit appeal in progress.*
 | TBD | Mail Voting EO | Preliminary injunction (Massachusetts) |

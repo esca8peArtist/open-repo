@@ -5,7 +5,7 @@ deadline: "May 28, 2026 — DEA-1362 participation notice (nprm@dea.gov)"
 electronic_cutoff: "May 24, 2026 — 11:59 p.m. ET"
 status: ready-for-send
 scope: "All four audience segments — drug policy organizations, civil rights organizations, academic/admin law contacts, state AGs"
-distinction: "This template set is updated from domain-42-email-template.md (May 7) with: (1) May 9 date awareness, (2) Section 591 markup urgency (May 13, 4 days away), (3) shorter urgency variants for compressed-window sends, (4) pre-drafted participation notice text for same-day filing asks"
+distinction: "This template set is updated from domain-42-email-template.md (May 7) with: (1) May 9 date awareness, (2) shorter urgency variants for compressed-window sends, (3) pre-drafted participation notice text for same-day filing asks. NOTE: Section 591 appropriations rider was dropped from the final FY2027 CJS bill — all Section 591 urgency framing removed (May 9, Session 920)."
 gist: "https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab"
 ---
 
@@ -13,7 +13,6 @@ gist: "https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab"
 
 **Today: May 9, 2026**
 **Days to May 28 deadline: 19**
-**Days to May 13 House Appropriations markup (Section 591 cannabis rider): 4**
 **Filing address**: nprm@dea.gov — Docket No. DEA-1362
 **Domain 42 Gist**: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
@@ -34,15 +33,9 @@ Complete all of these before sending any email in this set.
 
 ## Urgency Note for All Templates
 
-The Section 591 cannabis rider in the FY2027 CJS appropriations bill passed the House Appropriations subcommittee April 30 on an 8-6 party-line vote. The full committee markup is May 13 — 4 days from today. If that rider survives full committee, it would bar appropriated funds from being used to reschedule marijuana, potentially freezing the DEA hearing before it concludes.
+**Section 591 update (May 9, 2026)**: The Section 591 appropriations rider — which would have frozen the DEA rescheduling process — was dropped from the final FY2027 CJS bill. Congressional leaders omitted it from the enacted legislation. This is the same pattern as FY2026: the language advanced in subcommittee (8-6 party-line vote) but was stripped before enactment. Do not include Section 591 as an urgency argument in any outreach.
 
-**The strategic implication**: Organizations on the DEA-1362 administrative record before May 13 have standing in that record regardless of the Section 591 outcome. Organizations that wait take on appropriations risk they cannot control.
-
-Insert the following sentence into the urgency frame of any email sent before May 13:
-
-> "There is an additional 4-day window before the May 13 House Appropriations full committee markup of the Section 591 cannabis rider. Organizations on the DEA-1362 administrative record before May 13 have standing regardless of the appropriations outcome. Filing before the markup is not required — but it is the safer posture."
-
-After May 13: Remove this sentence. If Section 591 survived the markup, substitute: "The Section 591 rider survived the May 13 House Appropriations markup. Organizations already on the DEA-1362 record are protected. Organizations that have not filed should file before May 28 to establish their standing before the bill reaches the Senate." If Section 591 was stripped: remove all Section 591 language and lead with the June 22 participant selection deadline instead.
+The urgency argument is now clean: the DEA hearing is proceeding as scheduled June 29, the May 28 participation deadline is hard and unchanged, and SAM (Smart Approaches to Marijuana) and pharmaceutical-aligned interests are expected to file participation notices opposing rescheduling. The civil rights and democratic legitimacy dimensions will be underrepresented unless the organizations you are contacting file. That is the urgency frame. The window closes May 28 regardless of any appropriations action.
 
 ---
 
@@ -70,7 +63,7 @@ The analysis — Domain 42: Drug Policy, Regulatory Capture, and Democratic Legi
 
 **Third**, the federal-state democratic conflict: 24 states have enacted recreational cannabis legalization through direct-democracy processes with documented majority support — Colorado Amendment 64 (55.32%), California Prop 64 (57.13%), Michigan Prop 18-1 (56%). The SAFER Banking Act has passed the House seven times with bipartisan support and has not received a Senate floor vote. Federal Schedule I classification continues to override these democratic majorities.
 
-Domain 42 is 6,860 words, 54 citations, CC Attribution 4.0. It covers all three mechanisms, the April 23 DOJ order context, Section 591 appropriations risk, international comparative evidence (Canada, Germany, Portugal), and a three-tier structural reform architecture. Use it in filings, testimony preparation, advocacy materials, and organizational communications without restriction.
+Domain 42 is 6,860 words, 54 citations, CC Attribution 4.0. It covers all three mechanisms, the April 23 DOJ order context, international comparative evidence (Canada, Germany, Portugal), and a three-tier structural reform architecture. Use it in filings, testimony preparation, advocacy materials, and organizational communications without restriction.
 
 https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
@@ -80,7 +73,7 @@ https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
 *For DPA*: The Domain 42 analysis extends DPA's existing work on racial disparity by providing the democratic-exclusion framing that connects scheduling governance failure, felony disenfranchisement, and federal-state conflict as three interlocking mechanisms rather than three separate policy problems. The APA procedural reform proposals (Section 6.1) are directly useful in comment filings for the June 29 hearing.
 
-*For NORML*: NORML has filed in every major DEA scheduling proceeding since 1972. Domain 42 provides the democratic-exclusion framing for testimony NORML will likely prepare regardless — the Section 591 appropriations risk and the APA structural argument (Section 6.1) are the dimensions of this hearing that go beyond the standard rescheduling debate.
+*For NORML*: NORML has filed in every major DEA scheduling proceeding since 1972. Domain 42 provides the democratic-exclusion framing for testimony NORML will likely prepare regardless — the APA structural argument (Section 6.1) and the democratic legitimacy dimensions are what distinguish this hearing from prior rescheduling proceedings.
 
 *For MPP*: The Domain 42 analysis provides the democratic-exclusion framing that connects SAFER Banking Act failure (eight introduction cycles without a Senate floor vote) to the broader scheduling governance failure. The 280E analysis (Section 4.3) and SAFER Banking's eight-introduction failure (Section 4.2) are directly relevant to MPP's federal legislative strategy.
 
@@ -247,7 +240,7 @@ Before each send, confirm all of the following are complete:
 | [State] filled in (Template D only) | [ ] |
 | Gist URL confirmed live | [ ] |
 | Pre-drafted participation notice text attached (if sending May 22+) | [ ] |
-| Section 591 framing updated if sending post-May 13 | [ ] |
+| Section 591 confirmed dropped — do not include in any send | [x] |
 
 ---
 
@@ -276,4 +269,4 @@ These details should appear in every email either verbatim or in shortened form.
 
 ---
 
-*Created May 9, 2026. 19 days to May 28 DEA participation deadline. 4 days to May 13 House Appropriations full committee markup (CJS FY2027, Section 591 cannabis rider). Companion files: `domain-42-outreach-sequence.md`, `domain-42-dea-briefing-contacts.md`, `domain-42-outreach-prioritization.md`.*
+*Created May 9, 2026. Updated May 9, 2026 (Session 920): Section 591 appropriations rider confirmed dropped from final FY2027 CJS bill — all Section 591 urgency framing removed. 19 days to May 28 DEA participation deadline. Companion files: `domain-42-outreach-sequence.md`, `domain-42-dea-briefing-contacts.md`, `domain-42-outreach-prioritization.md`.*
