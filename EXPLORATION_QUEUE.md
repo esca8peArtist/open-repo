@@ -1660,3 +1660,100 @@ If the queue falls below 3 items (excluding blocked items), consider adding:
 - **5 user confirmation questions** for May 10 photo shoot execution
 **Outcome**: Production-ready for May 10 photo shoot. Germination tray start is TODAY for May 10 sprout readiness.
 
+---
+
+## New Items (Session 916 — 2026-05-09 Autonomous Queueing)
+
+### ⏳ Item 56: Stockbot Post-Checkpoint Live Trading Architecture & Contingency Paths
+**Status**: ACTIVE — Independent of Gate 1 outcome; research can proceed now
+**Trigger**: Autonomous execution now; delivers contingency planning before May 12 decision point
+**Scope**: Research post-Gate-1 scenarios and architecture decisions for live trading launch (Scenario A path) and contingency recovery (Scenario B/C paths)
+**Deliverables**:
+- `live-trading-launch-checklist.md` (3,500 words) — Pre-launch verification procedures:
+  - Alpaca account setup validation (margin, day-trader status, fund verification)
+  - Capital allocation strategy ($100-500 initial, position sizing, risk limits)
+  - Jetson production deployment checklist (Docker, volumes, network, monitoring)
+  - Guardrails verification (max position size, max daily loss, halt thresholds)
+  - First-trade protocol and manual fallback procedures
+  - Discord/Slack notification setup for production trades
+- `scenario-a-post-launch-operations.md` (3,000 words) — If Gate 1 passes (≥30 trades/month):
+  - Daily operations cadence (morning health check, market monitoring, post-market review)
+  - Position management rules (hold duration, loss limits, profit targets)
+  - Performance tracking and reporting (daily PnL, Sharpe monitoring, drawdown alerts)
+  - Quarterly review gates (checkpoint 1 at 1-month, checkpoint 2 at 3-month)
+  - HMM regime scaling activation procedures
+- `scenario-b-recovery-roadmap.md` (2,500 words) — If Gate 1 near-misses (21-29 trades/month):
+  - Extension request arguments and documentation
+  - Model retraining trigger conditions (if extension approved)
+  - Architectural adjustments (position sizing, regime detection refinement)
+  - June 12 checkpoint projection and contingency gate
+- `scenario-c-post-mortem-playbook.md` (2,000 words) — If Gate 1 fails (<21 trades/month):
+  - Root cause diagnosis trees (timing/execution/capital/model issues)
+  - Triaging procedures with exact log queries
+  - Architectural pivots to consider (multi-ticker, different timeframes, ensemble voting)
+  - Documentation template for future analysis
+**Owner**: stockbot agent (post-May-12 execution)
+**Prerequisites**: None — research can proceed independently
+**Key areas**: Capital preservation, regulatory compliance (pattern day trader rules), Jetson reliability, operational friction
+**Timeline**: Complete by May 12; enables immediate transition to chosen path post-checkpoint
+**Value**: Removes post-decision paralysis; operationalizes all three outcomes before they occur
+
+---
+
+### ⏳ Item 57: Resistance-research Phase 2 Domain 44-45 Candidate Scoping & Strategic Sequencing
+**Status**: ACTIVE — Independent of distribution path decision; research can proceed in parallel
+**Trigger**: Autonomous execution now; builds out Phase 2 research pipeline while Phase 1 awaits user decision
+**Scope**: Scope and strategically prioritize Phase 2 domain candidates (44-45+) based on current May 2026 developments, institutional alignment, and advocacy window timing
+**Deliverables**:
+- `phase-2-domains-44-45-scoping.md` (4,500 words) — Detailed candidate analysis:
+  - **Domain 44 candidate**: Disability Rights & Voting Access (Olmstead enforcement gaps, work-incentive policy collide, ABLE account access as democratic infrastructure)
+  - **Domain 45 candidate**: Tribal Sovereignty & Native American Voter Suppression (Section 5 enforcement elimination post-Shelby County, BIA institutional capture, reservation healthcare system weaponization)
+  - **Alternative candidates**: (3 additional candidates ranked by institutional alignment + advocacy window)
+  - Scoring matrix: democratic-design framing clarity, institutional audience readiness, urgency window, cross-domain synthesis value
+- `phase-2-execution-sequencing-hybrid.md` (3,500 words) — Strategic sequencing analysis:
+  - **Track A** (immediate after Phase 1): Voting Systems → Reproductive Rights → Labor Rights (12-week cycle)
+  - **Track B** (parallel, independent): Intel Oversight → Domain 44 or 45 (governance/civil rights tier)
+  - **June 12 FISA gate**: Voting Systems moves to Track A only if FISA Phase 1 concludes by June 1
+  - **Institutional momentum**: Which domain sequences maximize institutional adoption without cannibalization
+  - Resource bottlenecks and parallelization opportunities
+- `phase-2-influence-map-44-45.md` (2,500 words) — Influencer mapping for Phase 2 domains:
+  - Disability rights: NDRN (National Disability Rights Network), DREDF, CCD (Consortium for Citizens with Disabilities), academic disability scholars
+  - Tribal sovereignty: NCAI (National Congress of American Indians), tribal attorneys, IRA-72 strategic council, Native American civil rights organizations
+  - Cross-domain: Voting rights + disability intersection (DREDF/Demos Voting Rights Initiative collaboration)
+  - **Outreach strategy**: Tier 1 influencers for Phase 1 follow-up; Tier 2 for Phase 2 co-design
+**Owner**: resistance-research agent (Phase 1→Phase 2 transition planning)
+**Prerequisites**: None — Phase 1 distribution decision does not block Phase 2 research
+**Key areas**: Disability/voting intersection analysis, tribal governance documentation, institutional coalition alignment
+**Timeline**: Research complete by May 20; enables Phase 1→Phase 2 transition planning regardless of distribution path
+**Value**: Unblocks Phase 2 domain pipeline while user decides Phase 1 distribution path
+
+---
+
+### ⏳ Item 58: Cybersecurity-hardening Tier 2 Multi-Format Distribution & Audience Expansion
+**Status**: ACTIVE — Independent of Phase 1 user approval; format/audience research can proceed now
+**Trigger**: Autonomous execution now; builds distribution infrastructure while Phase 1 awaits user approval
+**Scope**: Research and design new formats and audience expansion strategy for Tier 2 distribution (beyond immigration legal orgs to labor organizers, election workers, DV survivors, journalists)
+**Deliverables**:
+- `tier-2-format-expansion-strategy.md` (4,000 words):
+  - **Spanish-language translation strategy**: Prioritize first 5 guides (opsec, implementation, immigration evasion); translation approach (professional vs. community), audience (immigrant advocacy, labor unions), glossary standardization
+  - **Video format specifications**: Script format for 5 core guides (10-15 min each), accessibility requirements (captions, audio description), hosting strategy (YouTube private, Vimeo, Matrix), production checklist
+  - **Decision tree format**: Interactive troubleshooting guides for 3 high-complexity topics (device seizure, whistleblowing, surveillance evasion), Markdown template, accessibility notes
+  - **Podcast format**: Interview episode outlines with SMEs (civil rights attorneys, security researchers, activists), distribution (Apple Podcasts, Spotify, Castopod instance), promotional strategy
+  - **Interactive workshop curriculum**: 2-hour workshop outline for each Tier 2 audience (labor organizers, election workers); facilitator notes, participant handouts, assessment tools
+- `tier-2-audience-expansion-analysis.md` (3,500 words):
+  - **Labor organizers** (AFL-CIO, SEIU, UFW, etc.): Threat model (employer surveillance, DHS/ICE coordination), targeted hardening (organizing comms, secure channels, member safety), outreach strategy (labor attorneys, movement leaders)
+  - **Election workers** (poll workers, election officials, IT staff): Threat model (DHS interference, political targeting, ransomware), hardening (device security, chain-of-custody, incident response), outreach (EAC, state election offices, election IT associations)
+  - **DV survivors and advocates** (NNEDV, local DV agencies, 10M potential users): Threat model (abuser surveillance, stalking technology, restraining order enforcement), hardening (safety planning tech, evidence preservation, safe communication), outreach (NNEDV national network, state coalitions)
+  - **Journalists and media workers** (press associations, freelancers, student media): Threat model (government surveillance, FOIA resistance, source protection), hardening (encrypted comms, secure dead drops, cross-border safety), outreach (SPJ, IRE, online publications)
+  - **Coalition-building**: Which audiences can be served together (labor + DV survivors = vulnerable population security); which require separate pathways
+- `tier-2-localization-guide.md` (2,000 words):
+  - Language prioritization (Spanish first, then Simplified Chinese, Portuguese)
+  - Cultural/regional threat model adaptation (Latin America, Asian diaspora communities, etc.)
+  - Glossary and terminology standards to maintain across formats
+  - Community review process for translation accuracy + cultural appropriateness
+**Owner**: cybersecurity-hardening agent (Phase 1 approval → Phase 2 execution enablement)
+**Prerequisites**: None — Phase 1 user approval does not block Tier 2 format/audience design
+**Key areas**: Translation quality assurance, video production workflow, interactive tool UX, multi-cultural threat modeling
+**Timeline**: Research and specifications complete by May 25; enables rapid Phase 2 pilot launch post-Phase-1 approval
+**Value**: Converts Phase 1 output into scalable, multi-format, multi-audience distribution infrastructure ready for immediate Tier 2 deployment
+
