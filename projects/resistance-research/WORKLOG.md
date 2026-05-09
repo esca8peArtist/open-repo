@@ -2,6 +2,29 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Phase 1 Adoption Tracking Automation: Operator's Guide
+
+**Status**: COMPLETE
+
+**Context**: Exploration Queue item — Phase 1 adoption-tracking automation infrastructure document. Phase 1 materials (26-domain diagnostic framework expanded to 35+ domains) are production-ready, awaiting user path decision (A / A+37 / B) for Tier 1 distribution to 25+ high-leverage policy influencers. Task was to build a single consolidated operator's guide covering: adoption metrics definitions, data collection methods (email, Gist views, media mentions), tracking spreadsheet schema, weekly/monthly reporting templates, auto-update procedures, and success criteria.
+
+**File created**:
+- `projects/resistance-research/execution/phase-1-adoption-tracking-automation.md` (~3,200 words, 8 parts, production-ready)
+
+**Design decisions and what this document adds over existing infrastructure**:
+1. The three existing companion documents (`adoption-automation-infrastructure.md`, `adoption-tracking-dashboard-spec.md`, `post-distribution-tracking.md`) are comprehensive but structured as reference documents — they require cross-referencing during active operations. This document is an operator's guide: open one file, run Phase 1. It does not duplicate the full theoretical architecture; it synthesizes the actionable layer into a single sequential reference.
+2. The five-level adoption scale (0–4) is preserved from existing documents but the definitions of what counts as adoption vs. what does not are sharpened in Part 1, including an explicit list of signals that do not count.
+3. The vocabulary marker table (Part 1) consolidates coinage fingerprints from across multiple existing documents into one place with explicit instructions for baseline recording before Wave 1 sends.
+4. The spreadsheet schema (Part 2) is the most complete single-document version: all 7 sheets defined, all columns specified, auto-calc formulas included, sheet-level permission recommendations noted.
+5. The Gist analytics procedure (Part 3.1) addresses the GitHub REST API limitation explicitly — analytics are owner-only and not programmatically accessible, so the procedure is manual with a clear 10-minute weekly protocol.
+6. The weekly and monthly reporting templates (Part 5) are fill-in-the-blank formats ready to use on Day 7. The monthly synthesis template covers all dimensions the prior documents specify without requiring the user to know which document to consult for which section.
+7. Success criteria (Part 7) consolidate the sector-specific thresholds from `post-distribution-tracking.md` Part VII into a single milestone table with clear minimum viable success, strong success, and failure definitions.
+8. The pre-launch checklist (Part 8) provides a 90–120 minute one-time setup sequence in the correct order.
+
+**Relationship to existing files**: This document is the operator's layer beneath the existing infrastructure. It does not replace `adoption-automation-infrastructure.md` (full column formulas), `adoption-tracking-dashboard-spec.md` (tool configuration detail), or `post-distribution-tracking.md` (sector-specific decision trees). It is the single file to open when actively running Phase 1 tracking.
+
+---
+
 ## May 9, 2026 — Research Agent — Cybersecurity Hardening: Tier 2 Distribution Sequencing & Organizational Outreach Strategy
 
 **Status**: COMPLETE
