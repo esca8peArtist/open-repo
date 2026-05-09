@@ -4,6 +4,49 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 Session 909 (04:56 UTC) — ORCHESTRATOR — MAY 12 CHECKPOINT READINESS AUDIT + CRITICAL BLOCKER IDENTIFIED ⚠️
+
+### Summary
+
+Ran May 12 Gate 1 checkpoint query to assess pre-checkpoint readiness (3 days away). Query succeeded but revealed critical data integrity issue: **Database is 9 days stale (last trade April 29 13:35 UTC), but ORCHESTRATOR_STATE indicates 19 position closes on May 5 + ongoing engine operation through May 9**. Additionally, May 9 engine logs show emergency shutdown loops with test mock objects. Jetson API unreachable. May 12 checkpoint cannot execute without resolving data sync + engine health issues.
+
+### Findings
+
+**Checkpoint Query Result** (`may12_checkpoint_query.py`):
+- **Total fills since May 5**: 0 (FAR_MISS_C2 scenario assigned, 10% prior probability)
+- **Database state**: 49 BUY trades from April 29 13:30-13:35 UTC; MAX timestamp April 29 13:35:19 UTC (9 days stale)
+- **Expected state**: 19 SELL fills from May 5 market close + ongoing May 6–9 trading activity should be in database
+
+**Engine Health**:
+- **Jetson API** (100.120.18.84:5000/api/ready): Timeout or unreachable
+- **Trading logs** (trading_20260509.log, 794 KB): Contains emergency shutdown loop entries (2026-05-09 03:52:39 UTC) with test artifacts (`test-session-652`, `MagicMock` return values, mock status checks)
+- **Log interpretation**: Either engine crashed with test fixtures contaminating logs, or tests were run during live trading session
+
+**Blockers Identified**:
+1. **Database sync automation failure** — No trades pulled from Alpaca since April 29. Standard sync script (`sync_db_from_alpaca.py --since 2026-05-05`) required.
+2. **Jetson connectivity** — API endpoint unreachable. Tailscale connectivity (identified in Session 908 deployment notes as pre-condition) may be down.
+3. **Test fixture contamination** — Mock objects in live logs suggest test/live environment separation failure
+4. **May 12 checkpoint viability** — Checkpoint scheduled for May 12 20:00 UTC; data gap blocks execution
+
+### Action Taken
+
+- **Created active block**: `stockbot — Database stale; engine emergency shutdown; May 12 checkpoint at risk` in BLOCKED.md
+- **Committed block**: `494902e9` — chore(orchestrator): session 909 — stockbot database sync block identified (May 12 checkpoint at risk)
+
+### Required Next Steps (User Action)
+
+1. SSH to Jetson and verify engine status (`ps aux | grep trading`, check docker logs if containerized)
+2. Run database sync manually: `cd projects/stockbot && uv run python scripts/sync_db_from_alpaca.py --since 2026-05-05`
+3. Verify Jetson connectivity: `curl http://100.120.18.84:5000/api/ready | jq`
+4. If engine crashed, restart using appropriate launch script and allow 15+ minutes for market-aware sleep before next market session
+5. Re-run checkpoint query after sync to confirm data restored and scenario changes from FAR_MISS_C2 to actual May 5–12 performance
+
+### Context
+
+**May 12 Significance**: Gate 1 checkpoint determines (a) whether current AAPL-only 2-session paper trading achieved ≥30 round trips/month, (b) whether deployment playbook (Session 908) should be activated immediately, (c) go/no-go on covered call automation. Checkpoint failure due to stale data would be invalid; data recovery is critical for May 12 decision.
+
+---
+
 ## 2026-05-09 Session 908 (afternoon UTC) — ORCHESTRATOR — PARALLEL AGENT EXECUTION: STOCKBOT + SEEDWARDEN + CYBERSECURITY-HARDENING EXPLORATION QUEUE ITEMS 35-37 ✅
 
 ### Summary
