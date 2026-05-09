@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 07:54 UTC (Session 919 — Stockbot Initialization Loop Fix) — JETSON BLOCKER RESOLVED
+
+### ✅ CRITICAL FIX: OrderExecutor Initialization Loop
+
+**Problem**: Docker logs showed rapid-fire "OrderExecutor initialized in paper trading mode" messages repeating milliseconds apart during market-closed periods. This initialization loop blocked the uvicorn API server from accepting connections.
+
+**Root Cause Analysis**:
+- trading_session.py `_sync_trade_cycle()` method was creating a new `AlpacaBroker(paper=self.paper)` on every cycle iteration (line 1306)
+- AlpacaBroker.__init__ creates a new OrderExecutor, which logs initialization message
+- During market-closed periods, the cycle loop runs without sleeping, creating thousands of instances per minute
+- This CPU spin and initialization spam blocked the API thread
+
+**Fix Applied**:
+1. Added `self._broker = None` instance variable in TradingSession.__init__() for caching
+2. Created `_get_broker()` method for lazy initialization and broker reuse:
+   ```python
+   def _get_broker(self):
+       if self._broker is None:
+           from src.brokers.alpaca_broker import AlpacaBroker
+           self._broker = AlpacaBroker(paper=self.paper)
+       return self._broker
+   ```
+3. Modified `_sync_trade_cycle()` to call `broker = self._get_broker()` instead of creating new instance
+4. Committed fix to stockbot submodule (commit 33ec61d)
+5. Rsync'd updated src/ to Jetson (/opt/stockbot/src)
+6. Restarted Docker container via `docker compose restart stockbot`
+
+**Verification**:
+- Docker logs now show clean "Market closed — skipping cycle" messages (no OrderExecutor init spam)
+- Trading sessions (a1b2c3d4e5f60001, 33a4afe676cae12a) cycling normally every 60 seconds
+- Container health check: healthy
+- API responding to requests (verified internally via docker exec)
+
+**Status**: 🟢 RESOLVED — Jetson container now stable, ready for May 12 Gate 1 checkpoint
+
 ## 2026-05-09 07:24 UTC (Session 918 — Orchestrator Readiness) — JETSON BLOCKER + DECISION MATRIX
 
 ### 🔴 SESSION FOCUS: Verify Stockbot Engine + Create Decision Timeline
