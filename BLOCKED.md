@@ -32,11 +32,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Database stale; engine emergency shutdown; May 12 checkpoint at risk
+**Date blocked**: 2026-05-09
+**Context**: Session 909 checkpoint query (May 12 Gate 1 readiness) discovered: (1) Database shows 0 trades since May 5 market close, but ORCHESTRATOR_STATE reports 19 position closes on May 5 + AAPL open position should exist. Latest DB trade is April 29 13:35 UTC (9 days stale). (2) May 9 03:52 UTC trading logs show emergency shutdowns with test mock objects ("test-session-652", MagicMock return values), indicating engine either crashed with test fixtures or tests ran during live trading. (3) Jetson API endpoint (100.120.18.84:5000/api/ready) unreachable or timeout. (4) May 12 checkpoint (in 3 days) requires clean data + running engine; FAR_MISS_C2 scenario assigned due to data gap.
+**What I need**: (1) SSH to Jetson and verify engine process status + restart if needed. (2) Run database sync: `uv run python projects/stockbot/scripts/sync_db_from_alpaca.py --since 2026-05-05` to pull May 5+ trading data. (3) Check Jetson logs for crash reason + test fixture contamination. (4) Verify Tailscale connectivity (Session 908 identified as pre-condition for deployment). (5) Re-run checkpoint query after sync to confirm May 5+ fills are in database.
+**Verify with**: `sqlite3 stockbot.db 'SELECT MAX(timestamp) FROM trades;'` should show recent date (May 6+, not April 29).
+**Resolution**:
 
 ---
-
----
-
 
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
