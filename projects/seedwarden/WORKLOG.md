@@ -4,6 +4,39 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Photography and Plant Sourcing Logistics — 2026-05-09
+
+**Task**: Create concrete day-by-day production timeline and sourcing logistics for the May 9–30 window. 21 days to May 30 launch.
+
+**Context at session start**: Session 902 completed the Phase 2 pre-launch execution package (strategy documents). This session produces the concrete logistics deliverables: vendor CSV, location scout report, photo shoot checklist update, Canva production timeline, and expanded production timeline with day-by-day calendar.
+
+**Reference files read**: `endangered-species-candidate-list.md`, `endangered-species-market-analysis.md`, `TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md`, `phase-2-production-timeline.md` (existing), `phase-2-location-scout-report.md`, `phase-2-photo-shoot-checklist.md`, `phase-2-plant-sourcing-vendor-list.md`, `PHASE_2_SOURCING_LOGISTICS.csv`, `phase-2-vendor-checklist.csv`.
+
+**Wave 1 species confirmed**: American Ginseng, Goldenseal, Black Cohosh, Ramps — same as prior session's determination. No change to species selection.
+
+**Files created or updated**:
+
+- `projects/seedwarden/phase-2-production-timeline.md` — UPDATED. Added three new sections to the existing file: (1) day-by-day production calendar May 9–30 with task, owner, time estimate, and what each task unblocks; (2) Canva guide production pipeline table with parallel-to-shoot build sequence; (3) staging milestones and decision gates (May 10 through May 30–June 7) with explicit pass/fail criteria and recovery paths for each gate.
+
+- `projects/seedwarden/phase-2-plant-sourcing-vendors.csv` — NEW. Consolidated vendor CSV with all suppliers, contacts, lead times, MOQ, per-unit price (low/high), quantity needed for photography, order dates, expected arrivals, CITES/regulatory notes, photography use description, and fallback if delayed. Covers 12 rows: Strictly Medicinal Seeds (goldenseal seeds, black cohosh live plant, black cohosh seeds), Mountain Rose Herbs (ginseng dried root, goldenseal dried root), Prairie Moon Nursery (ramps bulblets, black cohosh backup seedlings), Wisconsin Grown Ginseng LLC (ginseng stratified seeds — spring availability critical risk), local market (fresh ramp leaves), iNaturalist CC-BY archive, BHL public domain illustrations, Missouri Botanical Garden media partnership. Distinct from PHASE_2_SOURCING_LOGISTICS.csv (that file has extended tracking fields; this CSV is the cleaner summary format for reference).
+
+- `projects/seedwarden/phase-2-photo-shoot-location-scout.md` — NEW. 800-word location scout at the exact filename specified in the task scope. Covers: primary location (Asheville Botanical Garden, 35.5875°N / 82.5507°W, permit deadline May 12, fee $25–75/session, seasonal timing by species table, specific photo opportunities by habitat type); Backup Location 1 (private Appalachian forest farm via UpS referral, landowner permission only, outreach deadline May 10); Backup Location 2 (indoor window studio, always available); shoot day schedule table; permit status summary table; weather contingency decision tree with date/trigger/action for each checkpoint.
+
+- `projects/seedwarden/phase-2-photo-shoot-checklist.md` — UPDATED. Added Part 5: Batch Naming Convention and Post-Processing SOP. Covers: file naming convention with species slugs, angle-type codes, sequence numbers, iNat prefix (`inat-`) and BHL prefix (`bhl-`); worked examples for all four species; 6-step post-processing SOP (transfer, initial cull, color correction, export, rename, attribution log); Canva upload procedure with folder naming convention.
+
+- `projects/seedwarden/phase-2-canva-production-timeline.csv` — NEW. Task-by-task Canva production timeline with columns: Task Name, Task Type, Start Date, End Date, Owner, Time Estimate, Dependencies, Done Signal, Notes. 20 rows covering: Brand Kit verification, 4 guide builds (master template + 3 duplicates), self-review per guide, photo insertion pass, bundle cover and PDF assembly, Etsy cover image exports, second reader review (Zone 5/6), Etsy listing drafts (5 listings), Etsy QA, Kit automation test, Buffer queue verification, Etsy publish, post-launch delivery monitoring.
+
+**Regulatory decisions logged**:
+
+- Ginseng dried root purchased domestically for photography is not subject to CITES permit requirements. CITES Appendix II for Panax quinquefolius covers export and interstate commerce of wild roots; dried cultivated root purchased at retail is unrestricted. Seeds are explicitly exempt from CITES permit requirements (FWS confirmed).
+- Goldenseal dried cultivated root purchased at retail is unrestricted. CITES Appendix II covers wild roots in export/international trade; cultivated root sold domestically requires no permit.
+- Ramps fresh leaves purchased from farmers market or grocery are commercially unrestricted. Quebec's commercial harvest ban and NY's var. burdickii state listing apply to wild-harvest operations, not to purchased cultivated stock.
+- All physical props are for photography only, not for resale. No resale or harvest activities trigger any permit requirements.
+
+**Fallback determination**: All four guides are fully produceable with iNaturalist CC-BY archive + BHL public domain illustrations alone. The physical prop photo shoot (May 20–22) is a quality upgrade, not a production dependency. Launch date of May 30 is achievable in all weather scenarios.
+
+---
+
 ## Phase 2 Pre-Launch Execution Package — May 9–30 — 2026-05-09
 
 **Task**: Identify and produce all pre-launch work remaining between May 9 and May 30 launch.

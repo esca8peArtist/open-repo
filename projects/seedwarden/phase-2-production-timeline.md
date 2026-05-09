@@ -146,4 +146,111 @@ Canva guide production begins **May 15**, independent of the shoot. The master t
 
 ---
 
-*Prepared: 2026-05-09. Cross-references: `phase-2-plant-sourcing-vendor-list.md`, `phase-2-location-scout-report.md`, `phase-2-photo-shoot-checklist.md`, `PHASE_2_PRODUCTION_TIMELINE_DETAILED.md`, `phase-2-critical-milestones.csv`.*
+---
+
+## Day-by-Day Production Calendar — May 9–30
+
+Owner codes: **P** = photographer/producer (you), **A** = agent/async, **U** = user-gated (needs human action)
+
+| Date | Day | Tasks | Owner | Time Est. | Unblocks |
+|---|---|---|---|---|---|
+| May 9 | Sat | Place all vendor orders (Strictly Medicinal, Prairie Moon, Mountain Rose Herbs). Email Asheville Botanical Garden permit application. Begin iNaturalist CC-BY curation — ginseng and goldenseal. Email UpS (info@unitedplantsavers.org) for private forest farm referral. | U | 3 h | Vendor deliveries by May 18; permit by May 13 |
+| May 10 | Sun | Confirm Prairie Moon ramp bulblet availability (call or web). If sold out: search Etsy for "ramps bulbs Appalachian." Purchase fresh ramp leaves if farmers market is open. Continue iNaturalist CC-BY curation — black cohosh and ramps. Download 2 BHL botanical illustrations per species. | U | 2 h | Props inventory confirmed |
+| May 11 | Mon | Mountain Rose Herbs dried root order window closes (2-day ship = May 13 arrival). Order ginseng root + goldenseal root if not yet placed. Log all orders in WORKLOG.md with confirmation numbers. Finalize iNaturalist archive — 5 CC-BY Research Grade observations per species. | U | 1.5 h | Dried roots arrive May 13–14 |
+| May 12 | Tue | Submit Asheville Botanical Garden commercial photography permit application (deadline for May 20 shoot). Begin BHL illustration layout for Canva cover mockup. Check email for UpS forest farm referral response. | U | 2 h | Garden permit confirmed by May 13 |
+| May 13 | Wed | Receive Mountain Rose Herbs dried roots (ginseng, goldenseal). Inspect and photograph package per inbound logistics protocol. Store in kraft envelope at room temp. Confirm or follow up on Garden permit. | U | 45 min | Props ready for indoor shoot |
+| May 14 | Thu | Permit confirmed (target). If Garden cannot confirm: activate Backup Location 1 (UpS forest farm). Written landowner permission deadline is May 14 — confirm by end of day. Finalize location decision. Dark wood board and velvet backdrop sourced or confirmed. | U | 1 h | Location locked for May 20–22 |
+| May 15 | Fri | **Canva production begins.** Open Canva, confirm Brand Kit is live (wanka95@gmail.com). Build Ginseng guide master template: cover, conservation status page, habitat map, cultivation section, harvest ethics. Use BHL illustrations and iNaturalist CC-BY archive as placeholder images. | U | 5–6 h | Ginseng guide template ready |
+| May 16 | Sat | Complete Ginseng guide draft (all sections). Begin Goldenseal guide using Ginseng as duplicate base. Place all CITES Appendix II language in both guides. Self-review Ginseng: phone-screen test, Zone 7 URL check, placeholder text scan. | U | 4–5 h | Goldenseal guide in progress |
+| May 17 | Sun | Complete Goldenseal guide draft. Begin Black Cohosh guide. Check 5-day weather forecast for Asheville — if 3+ consecutive rain days for May 20–22: activate indoor-only shoot mode and notify location. Strictly Medicinal live plant expected to arrive this week. | U | 4 h | Black Cohosh guide in progress |
+| May 18 | Mon | All vendor orders should have arrived by today. Inspect Strictly Medicinal seeds/plants; log condition. Purchase fresh ramp leaves at specialty grocery or co-op (Whole Foods, Earth Fare). Refrigerate leaves wrapped in damp paper towel. Confirm all props are staged for May 20 shoot. Begin Black Cohosh guide build. | U | 2 h production + 1 h prop prep | Props confirmed; shoot ready |
+| May 19 | Tue | Complete Black Cohosh guide draft. Begin Ramps guide. Prep all shoot equipment: charge phone, charge LED panel, assemble gear bag (see `phase-2-photo-shoot-checklist.md` Part 3). Download offline Asheville map. Final weather forecast check — confirm May 20 Cluster 1 go/no-go. | U | 4 h guide + 1 h shoot prep | Ramps guide in progress; shoot packed |
+| May 20 | Wed | **Cluster 1 — Field shoot (Asheville Botanical Garden).** Arrive 8:00am. Morning session 9:00am–1:00pm: Ginseng, Goldenseal, Ramps. Midday laptop review. Optional overcast afternoon re-shoot 3:00–5:00pm. End-of-day backup: phone → laptop → external drive → cloud. Target: 80–120 RAW frames. | U | 8 h | Field habitat shots complete |
+| May 21 | Thu | **Cluster 2 — Indoor shoot.** 9:00am–1:00pm: all four species root and seed sequence on dark wood board, 5500K window light. Transfer and cloud backup at 12:30pm. Afternoon: begin Lightroom batch edit of Cluster 1 images. Complete Ramps guide draft. | U | 8 h shoot/edit | Root/seed shots complete; 4 guides in draft |
+| May 22 | Fri | **Cluster 3 — Field AM + Indoor PM.** Field: 8:00am–12:00pm (Black Cohosh leaf/stem/habitat). Indoor afternoon 2:00–4:00pm (supplement shots, prop arrangements). End-of-day full backup. Evening: continue Lightroom editing. | U | 8 h | All clusters complete |
+| May 23 | Sat | Full image cull across all three clusters. Target: 30 selects minimum per species (6 angles × 5 frames). List any re-shoot gaps. Execute any critical re-shoots (float day). Batch apply Lightroom preset to all approved frames. | U | 6 h | Culled selects ready for export |
+| May 24 | Sun | Complete Lightroom editing — export Cluster 1 and 2 finals (2000px long edge, JPEG 90%). Rename all files per convention: `[species-slug]-[angle-type]-[sequence].jpg`. Organize into `/assets/phase-2-guide-photos/[species-slug]/`. Log each photo in WORKLOG.md. | U | 5 h | Photos ready for Canva insertion |
+| May 25 | Mon | **All 4 guide drafts complete.** Insert final photography into all four Canva guides. Export first PDF drafts. Self-review all four guides on phone screen: placeholder check, URL check, attribution check. Ginseng and Goldenseal (highest search volume) must be polished first. | U | 5 h | 4 guides in draft PDF |
+| May 26 | Tue | Second reader reviews Zone 5 (Conservation Status) and Zone 6 (Practical Use / Medicinal Disclaimer) for each guide. Address all review comments. Regenerate PDFs. Verify FTC-compliant disclaimer is present in all Zone 6 sections. | U | 3 h | Reviewed and revised PDFs |
+| May 27 | Wed | Build all four Etsy listing drafts: title, 13 tags (from `etsy-seo-market-research.md`), description (conservation hook in sentence 1), pricing ($18–22 singles, $32 bundle), category, attributes. Upload PDF and cover image to each draft listing. Do not publish — save as draft. | U | 3 h | Etsy drafts ready for QA |
+| May 28 | Thu | **Final QA day.** Full Etsy listing review: tags verified, all links live, mockup images uploaded, pricing correct. Kit broadcast automation verified active (test with test@seedwarden.local). Buffer social posts confirmed scheduled for May 30 8:00–17:00 UTC. Log "QA complete" in WORKLOG.md. | U | 3 h | All systems confirmed ready |
+| May 29 | Fri | T-24h systems check (per `TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md`): Buffer queue, Kit landing page test, Shopify/Etsy product visibility, supplier fulfillment confirmation. Final Go/No-Go decision (per `may-10-go-no-go-decision-framework.md`). Go to bed early. | U | 2 h | Go/No-Go confirmed |
+| May 30 | Sat | **LAUNCH DAY.** 05:00 UTC: systems check. 08:00–09:00 UTC: first content posts. 09:30am: publish all Etsy listings. 12:00 UTC: Checkpoint 1. 21:00 UTC: Checkpoint 2 (Go/No-Go continued Phase 2). Monitor 7 KPIs per `TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md`. Log timestamps in WORKLOG.md. | U | Full day | Phase 2 live |
+
+---
+
+## Canva Guide Production Pipeline
+
+**Template setup is the critical path item — must begin May 15 and not slip.**
+
+The Canva pipeline is parallel to the photo shoot: template and text content are built May 15–19 using BHL illustrations and iNaturalist CC-BY placeholders. Final photography inserts on May 24–25 after Lightroom export. This means the photo shoot (May 20–22) is NOT on the critical path for guide completion — if shoot delays, the guides still launch on time using archive photography.
+
+### Guide Production Sequence
+
+| Guide | Build Date | Hours | Input | Output |
+|---|---|---|---|---|
+| Ginseng (master template) | May 15–16 | 5–6 h | BHL illustrations, iNaturalist CC-BY, conservation text | Master Canva template + first guide PDF draft |
+| Goldenseal | May 16–17 | 3–4 h | Ginseng template duplicated | Second guide PDF draft |
+| Black Cohosh | May 17–18 | 3–4 h | Goldenseal template duplicated | Third guide PDF draft |
+| Ramps | May 19–21 | 3–4 h | Black Cohosh template duplicated | Fourth guide PDF draft |
+| Photo insertion — all 4 guides | May 24–25 | 3–4 h | Lightroom-exported JPEGs | Final guide PDFs with shoot photography |
+| Final PDF export — all 4 guides | May 25 | 1 h | Reviewed guides | Print-ready PDFs for Etsy upload |
+
+**Dependency**: Photo shoot must be complete and Lightroom editing done by end of May 24 for photo insertion on May 25. If editing slips: use iNaturalist CC-BY archive for all guide images and skip photo insertion. The guide is fully publishable with archive images.
+
+### Bundle Assembly
+
+The Appalachian Medicinals 4-guide bundle requires a bundle cover page (1 page, designed in Canva) and combined PDF assembly. Build on May 25 after all four individual guides are complete. Bundle must be a separate Etsy listing from the individual guides.
+
+---
+
+## Staging Milestones and Decision Gates
+
+These are go/no-go decision points, not aspirational targets. Each milestone has a clear pass/fail outcome and documented recovery path.
+
+**May 10 — Location Confirmed**
+- PASS: Asheville Botanical Garden permit application submitted AND backup location (UpS forest farm or indoor) identified
+- FAIL: No outdoor location confirmed and no backup plan in place
+- Recovery if fail: Activate indoor-only shoot immediately. All guide content is produceable without a field shoot. Update shoot schedule to indoor-only; no launch date impact.
+
+**May 12 — Plants Sourced and Ordered**
+- PASS: All vendor orders placed with confirmation numbers logged in WORKLOG.md; iNaturalist CC-BY curation at 3+ images per species
+- FAIL: Any species has no physical prop ordered and no digital fallback identified
+- Recovery if fail: Emergency same-day purchase at local grocery/garden center; Mountain Rose Herbs 2-day ship. Source remaining props from iNaturalist CC-BY archive.
+
+**May 15 — Canva Template Live (Production Kickoff)**
+- PASS: Ginseng master Canva template is open and populated with at least: cover page, one content page with placeholder image and text block, conservation status section
+- FAIL: Canva has not been opened; Brand Kit not set up; no template started
+- Recovery if fail: Compress guide production by one day (builds overlap); May 15–19 compress to May 16–21. This does not affect launch date but eliminates float.
+
+**May 18 — Props Received**
+- PASS: At least 2 of 4 species have physical props on hand; fresh ramp leaves can wait until May 18–19
+- FAIL: 0 of 4 species have physical props received
+- Recovery if fail: Emergency Mountain Rose Herbs 2-day order on May 18 (arrives May 20); purchase ramps same-day locally. Fall back to indoor-only shoot using iNaturalist CC-BY for all habitat shots. No launch date impact.
+
+**May 20 — Photo Shoot Go/No-Go**
+- PASS: Cluster 1 field shoot executed at Asheville Botanical Garden; OR indoor-only mode activated and Cluster 2 underway
+- FAIL: No shoot at all on May 20 and no decision made to activate indoor mode
+- Recovery if fail: Begin Cluster 2 indoor shoot on May 21 immediately. Extend float to May 23–26. Still meets May 30 launch.
+
+**May 25 — All 4 Guides in Draft PDF**
+- PASS: All four guides exported as PDFs, no placeholder text remaining, all CC-BY attributions present
+- FAIL: Two or more guides are not in draft PDF form
+- Recovery if fail: Reduce to a 2-guide launch (Ginseng + Goldenseal). List Black Cohosh and Ramps as "Coming Soon." Notify email list of partial launch. Two guides can be completed for a May 30 hard launch; the set expands to four in June.
+
+**May 28 — Etsy Listings Live in Draft**
+- PASS: All four individual listings and the bundle listing are in Etsy draft status; all 13 tags populated, pricing correct, PDF uploaded, cover image uploaded
+- FAIL: Any listing is still a blank draft
+- Recovery if fail: Work overnight May 28–29 to complete listings. The Etsy draft process takes 20–30 minutes per listing. Five listings × 30 minutes = 2.5 hours of recovery work. Completable before launch.
+
+**May 30 — Launch (10am ET / 14:00 UTC)**
+- PASS: All Etsy listings published; first Buffer posts live; Kit broadcast email sent to full list; launch logged in WORKLOG.md
+- FAIL: Technical failure preventing launch (see Contingency A–E in `TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md`)
+- Recovery if fail: Delay launch to June 2 (72-hour delay is recoverable; documented fallback in `june-6-contingency-path.md`)
+
+**May 30–June 7 — Post-Launch Monitoring**
+Monitor 7 KPIs every 6 hours for the first 48 hours, then daily through June 7. Document every checkpoint in WORKLOG.md. Feed outcomes into the June 30 phase gate (35% Phase 1→Phase 2 conversion target). Full post-launch protocol: `TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md` Part 5.
+
+---
+
+*Updated: 2026-05-09. Added: day-by-day production calendar (May 9–30), Canva guide production pipeline table, staging milestones and decision gates with recovery paths. Companion files: `phase-2-plant-sourcing-vendors.csv`, `phase-2-photo-shoot-location-scout.md`, `phase-2-photo-shoot-checklist.md`, `phase-2-canva-production-timeline.csv`.*

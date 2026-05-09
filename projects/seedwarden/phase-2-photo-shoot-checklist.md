@@ -260,6 +260,89 @@ Never leave a shoot day with images on only one device. If a phone is lost or a 
 
 ---
 
+## Part 5: Batch Naming Convention and Post-Processing SOP
+
+### File Naming Convention
+
+All exported JPEGs must follow this convention before uploading to Canva or the shared drive:
+
+```
+[species-slug]-[angle-type]-[sequence-number].jpg
+```
+
+**Species slugs** (use exactly as written):
+- `ginseng` (American Ginseng / Panax quinquefolius)
+- `goldenseal` (Goldenseal / Hydrastis canadensis)
+- `black-cohosh` (Black Cohosh / Actaea racemosa)
+- `ramps` (Ramps / Allium tricoccum)
+
+**Angle type codes** (use exactly as written):
+- `habitat` — full plant in naturalistic habitat context
+- `leaf` — single leaf or leaf detail
+- `flower` — flower or fruit (sourced from iNaturalist archive)
+- `root` — root or rhizome close-up
+- `seed` — seed or seed pod
+- `context` — wider habitat or colony view
+
+**Sequence numbers**: two digits, zero-padded (01, 02, 03...)
+
+**Examples**:
+- `ginseng-root-01.jpg` — first ginseng root close-up
+- `goldenseal-leaf-03.jpg` — third goldenseal leaf detail
+- `black-cohosh-habitat-01.jpg` — first Black Cohosh full-plant habitat shot
+- `ramps-seed-02.jpg` — second ramps seed/bulblet image
+
+**iNaturalist archive images**: prefix with `inat-` to distinguish from own photography:
+- `inat-ginseng-flower-01.jpg`
+- `inat-ramps-flower-01.jpg`
+
+**BHL illustration images**: prefix with `bhl-`:
+- `bhl-goldenseal-illustration-01.jpg`
+
+### Post-Processing SOP
+
+**Step 1 — Transfer (end of each shoot day)**
+1. Connect phone/camera to laptop via USB or AirDrop
+2. Import all RAW files to `/projects/seedwarden/assets/phase-2-guide-photos/[species-slug]/raw/`
+3. Count frame totals — confirm transfer is complete
+4. Copy entire raw folder to external hard drive
+5. Upload to cloud (Google Drive or iCloud) before sleeping
+
+**Step 2 — Initial Cull (same evening or next morning)**
+1. Open Lightroom Mobile or Lightroom Classic
+2. Star-rate each image: 5-star = select; 1-star = discard; 3-star = maybe
+3. Target: 30 selects minimum across all species (5 per angle type per species)
+4. Flag any re-shoot gaps immediately so they can be addressed on the next shoot day
+
+**Step 3 — Color Correction (apply Lightroom preset to all 5-star selects)**
+Apply the preset values from Part 2: Exposure +0.3, Contrast +20, Highlights -30, Shadows +25, White Balance 5500K, Vibrance +10, Green Saturation +12, Clarity +10.
+First, do a manual anchor edit on the best ginseng root flat-lay (reference image). Batch-apply to all other Cluster 2 root images. Adjust Cluster 1 and 3 field images individually where outdoor lighting differs.
+
+**Step 4 — Export**
+- Long edge: 2000px minimum (use 2400px for cover images)
+- Format: JPEG
+- Quality: 90%
+- Color space: sRGB
+- Export to: `/projects/seedwarden/assets/phase-2-guide-photos/[species-slug]/finals/`
+
+**Step 5 — Rename**
+Rename each exported file using the naming convention above before placing in Canva. Use Lightroom's built-in filename template or rename in Finder/File Explorer after export.
+
+**Step 6 — Attribution Log**
+Log each iNaturalist CC-BY image in WORKLOG.md immediately after downloading (not after the guide is built). Do not let attribution logging accumulate — it becomes error-prone if delayed.
+
+### Canva Upload
+
+After all finals are exported and renamed:
+1. Log into Canva (wanka95@gmail.com)
+2. Open the Brand Kit > Media uploads
+3. Create a folder named `Phase 2 Guide Photos — [Species Name]` for each species
+4. Batch-upload all finals for that species to the correct folder
+5. Confirm folder thumbnail previews are correct before closing
+6. All guide builds in Canva should pull images from these named folders — do not upload the same image twice under different file names
+
+---
+
 ## WORKLOG Entry Format
 
 After completing all shoot days, log each photo in WORKLOG.md:
