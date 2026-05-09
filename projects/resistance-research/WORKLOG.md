@@ -2,6 +2,34 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Domain 45: Labor Rights, NLRB Crisis, and Worker Power as Democratic Infrastructure
+
+**Status**: COMPLETE — committed to master
+
+**File created**: `projects/resistance-research/domains/domain-45-labor-rights-nlrb-crisis-worker-democracy.md`
+
+**Word count**: ~7,600 words | **Citations**: 52 sources | **Sections**: 8 complete (Executive Summary + 6 substantive sections + Cross-Domain Integration + Sources)
+
+**Key findings**:
+
+1. **Central reframe confirmed**: The attack on the NLRB is not a labor dispute — it is a democracy crisis. The empirical chain is documented: union membership increases voter participation by 18 percentage points relative to comparable non-union workers; low-union-density states have passed 44 voter restriction laws since 2021 vs. 6 in high-union-density states; a 1-percentage-point increase in union density is associated with a 9.8% increase in ballot drop boxes per capita (EPI).
+
+2. **NLRB quorum crisis documented**: The 345-day quorum crisis (May 22, 2025 shadow docket stay through December 18, 2025 quorum restoration) directly suppressed union election volume by 30% (from 2,124 to 1,498) and worker participation in elections by 42% (59,000 fewer workers). This is the measurable democratic participation cost of the constitutional attack.
+
+3. **Trump v. Slaughter is the June 2026 pivot point**: Decision expected late June 2026 will formally determine whether Humphrey's Executor removal protections survive for NLRB board members. If Option 1 or Option 2 (full overruling or functional narrowing), no future statute can restore NLRB independence without a constitutional amendment or Article III restructuring. Advocates have a 4-month window between the decision and the November 2026 midterms to convert the ruling into electoral framing for AFL-CIO GOTV operations.
+
+4. **Circuit split is Supreme Court-bound independently**: Third/Ninth Circuits (NLGA bars injunctions during constitutional challenges) vs. Fifth Circuit (injunctions permissible) creates a circuit-conflict petition ripening for OT2026 or OT2027 on the injunctive relief question, distinct from the Slaughter merits question.
+
+5. **AFL-CIO + SEIU coalition at 15 million members**: SEIU's January 2025 re-affiliation with the AFL-CIO is the most significant labor movement structural development since 2005. SEIU's $74 million political operation in 2023-2024 is the distribution infrastructure for post-Slaughter electoral framing.
+
+6. **State-level sectoral bargaining is the structural reform pathway**: California (fast food), Minnesota (nursing home), Vermont (card check), and Allegheny County (sectoral standards exploration) provide proof-of-concept for a federal sectoral bargaining architecture that does not depend on NLRB enterprise-election capacity.
+
+**Adoption pathway identified**: AFL-CIO research department (reframe NLRB constitutional attack as democracy crisis in member education materials) → SEIU member education pipeline (healthcare, public services, property services workers) → post-Slaughter GOTV framing (4-month window June-November 2026)
+
+**Cross-domain integration**: Domain 6 (Judicial Independence — Wilcox/Slaughter litigation documented), Domain 22 (Racial Justice — Black workers have highest union density but NLRB enforcement vacuum disproportionately impacts their recent organizing campaigns), Domain 29 (Prosecutorial Weaponization — DOJ enforcement posture coordination with NLRB leadership capture), Domain 38 (Corporate Capture — SpaceX/Amazon/Starbucks litigation strategy parallel), Domain 44 (Reproductive Freedom — union density twice as high in abortion-protected states), Domain 47 (Housing Security — displacement compounds organizing capacity loss)
+
+---
+
 ## May 9, 2026 — Research Agent — Domain 42 Wave 1 Execution Infrastructure Verification
 
 **Status**: COMPLETE — READY FOR IMMEDIATE EXECUTION UPON USER PATH DECISION
