@@ -1,3 +1,78 @@
+## Session 904 (2026-05-09 late evening UTC) — Exploration Queue Items 35-36: Paper Trading Validation + Phase 3 Planning ✅
+
+### Summary
+
+**Parallel Exploration Queue Execution**: Two subagents completed Items 35 (stockbot paper trading validation protocol) and 36 (seedwarden Phase 3 medicinal herbs strategic planning). Both items are time-sensitive, independent of user decisions, and now production-ready.
+
+### What Was Accomplished
+
+1. **stockbot Item 35: Paper Trading Validation Protocol** ✅
+   - **Deliverables**: 3 production-ready assets
+     - `paper-trading-validation-protocol.md` (2,700 words) — 11 sections:
+       - Daily monitoring checklist: 6 executable steps (<10 min) covering fill detection, round trip tracking, drawdown, auth errors, kill-switch auditing
+       - May 12 checkpoint query: Exact SQL + Python command (executable independently by user)
+       - Validation logic: Sharpe formula (annualization sqrt(252/h)), slippage definition, position concentration metric
+       - Phase 1 success criteria (4 numerical thresholds): Sharpe ≥0.8, ≥3 round trips by May 26 (rescoped for 2-session AAPL-only), MDD ≤-15%, avg slippage <0.15%
+       - Phase 2 escalation: Performance (P1-P3), risk accumulation (R1-R4), kill-switch audit (K1)
+       - Decision tree: 4 outcomes (A=continue, B=tune, C=reduce, D=abandon with replacement tier list)
+       - Role mapping: orchestrator (daily checklist), user (decisions), agent (analysis)
+     - `paper-trading-excel-template.xlsx` (3 functional sheets, no VBA):
+       - Daily_Log: 30 rows, conditional formatting (drawdown/sessions alive color-coded)
+       - Weekly_Rollup: 5 weeks with decision checkpoints, rolling Sharpe evaluation, SPY comparison
+       - Dashboard_30Day: Backtest comparison, Phase 1 criteria auto-evaluation, go/no-go decision matrix
+     - `generate_paper_trading_xlsx.py` — Reproducible template generator
+   - **Impact**: May 12 checkpoint now executable with clear daily tracking and independent SQL verification. All success criteria justified by Session 900 backtest.
+
+2. **seedwarden Item 36: Phase 3 Medicinal Herbs Strategic Plan** ✅
+   - **Deliverables**: 3 production-ready assets
+     - `phase-3-medicinal-herbs-strategic-plan.md` (3,700 words, 10 sections):
+       - Quick-win SKU: Respiratory Health bundle ($20) — elderberry search dominance, zero CITES complications, 18-unit break-even
+       - Ambitious SKU: Practitioner 10-Pack ($120-150) — highest absolute margin, 1-2 hrs incremental dev
+       - Product tiers: Singles ($4.50-5), Wellness bundles ($15-18), Practitioner kit ($120-150), Full Library ($72), subscription ($29/mo)
+       - Unit economics: 65-70% gross margin, 40-45% net margin (after platform, ads, fulfillment)
+       - Scaling: Inventory standing orders (Month 2), 2-day fulfillment, supplier terms negotiation, per-batch QA
+       - 12-month roadmap: July (Wellness+Singles), Aug (Practitioner+social), Sept-Oct (Full Library), Q1-2 2027 (subscription+white-label)
+       - GO trigger (June 29): Phase 2 conversion >1.2% on 2 bundles + forager cohort >15% + email list >100
+       - Pivot trigger: Month 3 (Sept) revenue <$500; not expected to fire in any scenario
+     - `phase-3-supplier-scorecard-medicinal.csv` — 10 vendors tiered A/B/C:
+       - Tier A (85+): Strictly Medicinal (87.5), Mountain Rose (85.0), Prairie Moon (82.0), UpS FGV (80.0)
+       - Weighted rubric: Availability 40%, Price 20%, QA 20%, Lead Time 10%, MOQ 10%
+     - `phase-3-profitability-model.csv` — 18-month cash flow, 3 scenarios:
+       - Conservative (25 orders/week): $3.4K/month by Month 6
+       - Base (50 orders/week): $7.8K/month by Month 6; exceeds Phase 3 target
+       - Optimistic (100 orders/week): $17K/month by Month 6; $10K+ run rate Month 5+
+   - **Impact**: June 29 Phase 3 decision now ready with explicit GO/PIVOT triggers. Supplier relationships identified. Profitability clear across all scenarios. White-label B2B channel identified as growth multiplier.
+
+### Key Metrics
+
+- **Queue Status**: Items 35-36 complete; 1 remaining (Item 37: Domain 42 coordination, contingent on resistance-research path decision)
+- **Timeline Coverage**: May 12 stockbot checkpoint (3 days) now fully operationalized. June 29 Phase 3 decision framework ready (51 days out).
+- **Production Readiness**: Both items commit-ready and require zero user approvals to deploy/use
+
+### Needs Your Input
+
+**None this session** — all autonomous work complete. Monitoring recommendations below.
+
+### Recommended Actions (Next 14 Days)
+
+1. **May 12 (in 3 days)**: Monitor stockbot Gate 1 checkpoint using the validation protocol (daily checklist + May 12 query). Outcome determines next paper trading phase.
+2. **May 25**: Complete seedwarden analytics setup (Etsy baseline capture deadline for May 30 launch)
+3. **May 28–29**: Prepare for May 30 seedwarden Phase 2 launch using updated execution timeline
+
+### Usage
+
+Session 904 = 2 parallel agents, ~20 min wall-clock, ~237K tokens consumed.
+**Current**: Sonnet 61–63% (post-902: 61%, +1% per this session). All-models 47–49%. Budget healthy, under 80% throttle.
+
+### Next Session Priorities
+
+1. **May 12 20:00 UTC**: Orchestrator should monitor stockbot Gate 1 checkpoint (use the validation protocol)
+2. **May 25–26**: Pre-launch verification for seedwarden May 30 (analytics setup, Etsy account finalization)
+3. **May 28**: Domain 42 DEA deadline monitoring (if Phase 1 launched via user path decision)
+4. **May 29**: Go/No-Go decision for seedwarden May 30 launch
+
+---
+
 ## Session 903 (2026-05-09 evening UTC) — Exploration Queue Items 32-33: Domain 42 + Phase 2 Logistics ✅
 
 ### Summary
