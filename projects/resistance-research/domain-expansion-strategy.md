@@ -179,14 +179,14 @@ Phase 2 domains should cluster around Phase 1 foundations:
 
 ## Part V: Sequencing — When Phase 2 Domains Should Be Written
 
-Phase 2 domain production should not begin until the Phase 1 distribution path decision (A / A+37 / B) is made. Once Phase 1 is launched, the six-week feedback window (May 28 to approximately July 10, 2026) will generate the adoption signals that should inform Phase 2 sequencing. The proposed production sequence:
+Phase 2 domain production should not begin until the Phase 1 distribution path decision (A / A+37 / B) is made. The Phase 1 adoption tracking window runs May 8–June 15, 2026, with 45 Tier 1 organizations. This window generates the adoption signals that should inform Phase 2 sequencing. The proposed production sequence:
 
-**Weeks 1-6 post-Phase 1 launch (May 28 — July 10):** Do not write new domains. Monitor Phase 1 adoption signals. Complete Domain 44 (Reproductive Freedom) scope document and initial source audit.
+**May 8–June 15 (Phase 1 adoption tracking window):** Do not write new domains. Monitor Phase 1 open rates, responses, and inbound engagement from 45 Tier 1 contacts. Complete Domain 44 (Reproductive Freedom) and Domain 45 (Labor Rights) scope documents and initial source audits — this work can proceed without adoption data and positions Phase 2 production to begin immediately after the window closes. Scoping documents target completion by June 1.
 
-**July 2026 — Phase 2 Wave 1 (highest-priority domains):**
+**Mid-June to July 2026 — Phase 2 Wave 1 (highest-priority domains):**
 - Domain 44: Reproductive Freedom as Democratic Architecture
 - Domain 45: Labor Rights, NLRB, and Worker Power
-Write both, circulate to Tier A organizational multiplier contacts identified above.
+Begin writing immediately after Phase 1 adoption tracking window closes (June 15). Scope documents and source audits will already be complete. Target first domain complete by July 1; both complete by July 15. Circulate to Tier A organizational multiplier contacts identified above. The July timing also positions these domains to reach reproductive rights organizations before the August 2026 primary deepfakes-in-elections stress test period — connecting D44 to the D43 (Epistemic Infrastructure) advocacy context.
 
 **August-September 2026 — Phase 2 Wave 2:**
 - Domain 46: Housing Instability and Democratic Exclusion
@@ -197,6 +197,43 @@ Timed to coincide with the pre-certification-season organizing surge for the 202
 - Domain 48: Environmental Justice and Community Participation
 - Domain 49: Indigenous Sovereignty and Tribal Democratic Participation
 - Domain 50: Disability Rights and Civic Access
+
+---
+
+## Part VI: Cross-Project Coordination — Does Phase 2 Sync with Other Active Projects?
+
+The resistance-research project does not operate in isolation. Three other active projects have timelines that overlap with the Phase 2 expansion window.
+
+### Stockbot (May 12 Checkpoint)
+
+The stockbot project has a May 12 checkpoint that is entirely technical — it does not create direct content dependencies with resistance-research Phase 2 domain production. However, the stockbot work does create an indirect scheduling constraint: autonomous agent time in the May 8–15 window is partially allocated to stockbot. This means Phase 2 scoping work (source audits, scope documents for Domain 44 and Domain 45) should not be scheduled during the May 12 checkpoint week unless stockbot execution is complete. The sequencing recommendation is: Phase 2 scoping begins the week of May 19, after stockbot checkpoint resolves.
+
+### Seedwarden Phase 2 (May 30 Launch Target)
+
+Seedwarden Phase 2 launches May 30, 2026 (worst-case June 15 if photography slips). This is a content project with its own writing and production load. The resistance-research Phase 2 Wave 1 domain production (Domain 44, Domain 45) is scheduled for July 2026, after the seedwarden Phase 2 launch and its initial measurement window. There is no content conflict, but there is a capacity constraint: July 2026 is when seedwarden will be monitoring Phase 2 launch signals (Days 30/60 cohort tracking). Any acceleration of resistance-research Phase 2 into late June 2026 should account for this parallel monitoring load.
+
+The content cross-over is thin but real: seedwarden's Phase 2 includes a forager cohort tracking component that touches on community organizing and food sovereignty — themes with a natural relationship to the environmental justice domain (D48) and indigenous sovereignty domain (D49). If seedwarden Phase 2 generates strong engagement from forager communities, those community networks are potential Phase 2 distribution channels for D48 and D49 organizing briefs, specifically the community participation in environmental decision-making framing.
+
+### Resistance-Research Phase 1 Adoption Tracking (May 8–June 15)
+
+The most important cross-project constraint is internal: Phase 1 adoption tracking runs May 8–June 15 with 45 Tier 1 organizations. This window is not passive — it requires active monitoring of open rates, responses, follow-up outreach, and engagement signals. Phase 2 domain production should not begin in earnest during this window because:
+
+1. The adoption feedback will determine which Phase 1 domains resonated most strongly and with which audiences — this information is essential for sequencing Phase 2 domains that cross-reference Phase 1 content most effectively.
+2. The tracking window may surface unanticipated gaps that Phase 2 should fill, which are not visible from the pre-distribution vantage point this strategy document occupies.
+3. Responding to inbound engagement from Tier 1 organizations during the adoption window may itself generate Phase 2 scoping information (organizations may identify gaps or adjacent issues during conversations).
+
+The recommended posture: Phase 2 scoping documents (not full domains) for D44 (Reproductive Freedom) and D45 (Labor Rights) should be completed before June 15 so that production can begin immediately after adoption feedback arrives. Full domain writing begins July 2026. This is the concurrent execution model that allows Phase 2 to be ready to launch the moment Phase 1 feedback authorizes expansion.
+
+### Coordination Summary
+
+| Project | Key Date | Interaction with Phase 2 |
+|---------|----------|--------------------------|
+| Stockbot | May 12 checkpoint | Capacity constraint — Phase 2 scoping deferred to May 19 |
+| Seedwarden Phase 2 | May 30 launch | Parallel capacity constraint in July (Day 30 monitoring); thin content cross-over for D48/D49 distribution |
+| Phase 1 adoption tracking | May 8–June 15 | Informs Phase 2 sequencing; full domain writing deferred until July 2026 |
+| Phase 2 Wave 1 | July 2026 | D44 + D45 production; concurrent with seedwarden Day 30 signals |
+| Phase 2 Wave 2 | Aug–Sep 2026 | D46 + D47; pre-certification midterm organizing surge — maximum distribution leverage |
+| Phase 2 Wave 3 | October 2026 | D48 + D49 + D50; final pre-election distribution window |
 
 ---
 

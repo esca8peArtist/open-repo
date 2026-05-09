@@ -4,6 +4,81 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 (Session 928 — resistance-research agent, Exploration Queue Item: Domain Expansion Strategy Domains 36-50) — 1 ITEM COMPLETE
+
+### ✅ resistance-research: Phase 2 Domain Expansion Strategy (Domains 36-50) — COMPLETE
+
+**Deliverables** (2 files, production-ready):
+
+1. **domain-expansion-strategy.md** (5,363 words — added Part VI: Cross-Project Coordination)
+   - Existing document extended with cross-project coordination section (stockbot May 12, seedwarden May 30, Phase 1 adoption tracking May 8–June 15)
+   - Sequencing section updated to reflect correct Phase 1 tracking window (45 Tier 1 orgs, May 8–June 15) vs. prior generic "six-week" framing
+   - Phase 2 Wave 1 trigger date corrected to mid-June/July (post-adoption-tracking) not July 10 as prior version stated
+   - Part VI contains cross-project coordination table with all 6 key dates mapped to Phase 2 interactions
+
+2. **phase-2-domain-candidates.csv** (NEW — 15 candidates, 4 scoring dimensions)
+   - All 15 candidate domains (D44-D58) scored on: adoption likelihood, movement infrastructure integration depth, gap-filling impact, effort estimate hours
+   - Composite priority scores calculated; production wave assignments aligned to strategy document
+   - Justification column contains 2-4 sentence evidence-based rationale per candidate including Phase 1 integration cross-references and adoption pathway
+   - Gap analysis covers 8 movement sectors: reproductive rights, labor/unions, housing, campaign finance, environmental justice, indigenous sovereignty, disability rights, civil society/nonprofit
+
+**Gap analysis coverage (8 sectors confirmed)**:
+- Reproductive freedom (D44) — ballot initiative organizing pipeline
+- Labor rights/unions (D45) — AFL-CIO/SEIU member education infrastructure
+- Housing/tenant organizing (D46) — grassroots tenant union networks
+- Campaign finance reform (D47) — Common Cause/Campaign Legal Center distribution
+- Environmental justice (D48) — Earthjustice/NRDC/Indigenous Environmental Network
+- Indigenous sovereignty (D49) — NCAI/NARF distribution into tribal government networks
+- Disability rights/civic access (D50) — 400 independent living centers
+- Civil society suppression (D52) — National Council of Nonprofits/ICNL
+
+**Key strategic finding**: Phase 1 is strongest at federal-institutional level; Phase 2 fills the movement-constituency gap. The 8 underrepresented sectors are not missing policy areas — they are missing movement constituencies. Phase 2 domains function as on-ramps for organizers, not analytical deepening for policy audiences.
+
+**Cross-project coordination notes**:
+- Phase 2 scoping (D44/D45) begins May 19 (after stockbot May 12 checkpoint clears)
+- Full domain production defers to mid-June/July (post-Phase 1 adoption tracking window)
+- Seedwarden forager community may serve as Phase 2 distribution channel for D48/D49 organizing briefs
+
+**Estimated hours**: 4 hours (within 4-5 hour estimate)
+
+**Status**: ✅ COMPLETE. Two files committed to master. Exploration Queue Item marked complete.
+
+---
+
+## 2026-05-09 (Session 927 — Orchestrator, Exploration Queue Item: Gate 1 Readiness) — 1 ITEM COMPLETE
+
+### ✅ stockbot: May 12 Gate 1 Readiness Validation Checklist (Exploration Queue Item) — COMPLETE
+
+**Deliverables** (2 files, production-ready):
+
+1. **gate-1-readiness-checklist.md** (1,700 words)
+   - Five-part executable checklist structured for sequential copy-paste execution starting May 12 19:30 UTC
+   - Part 1: Pre-checkpoint health checks (Jetson connectivity, Alpaca API status, database schema and fill integrity, May 1-12 fill audit with gap detection)
+   - Part 2: Canonical checkpoint query execution with JSON archival and fallback disambiguation SQL for FAR_MISS scenarios
+   - Part 3: Three distinct execution paths (PASS / NEAR_MISS / FAR_MISS) with verbatim commands and C2 four-step diagnosis sequence
+   - Part 4: Five failure modes with probability estimates (Jetson offline ~15%, AAPL SELL not fired ~20%, DB/Alpaca sync gap ~10%, SQLite version incompatibility ~5%, credentials rotated ~3%) with specific recovery paths
+   - Part 5: WORKLOG.md entry template and May 13 user handoff message template for all four scenarios
+   - Status: Copy-paste executable, user-ready for May 12 evening
+
+2. **gate-1-decision-tree-executable.py** (decision classification script)
+   - Implements decision tree from MAY_12_OUTCOME_ROADMAP.md Section 2
+   - Queries stockbot.db using CASE-based aggregation (SQLite version-compatible)
+   - Maps (confirmed_round_trips, aapl_model_sells, may5_fills) to outcome scenario with sub-patterns, next actions, monitoring checkpoints, escalation triggers, risk flags, handoff message
+   - `--self-test` mode: 11/11 test cases pass across all boundary conditions
+   - `--round-trips / --aapl-sells / --may5-fills` manual override mode for classification without live DB
+   - `--json` mode for machine-readable output
+   - Status: Validated, production-ready
+
+**Business Value**: May 12 checkpoint (3 days away) has zero ambiguity on workflow and next steps. User can execute via checklist + decision tree script without external context. Eliminates May 13 "what do we do now?" analysis paralysis. Enables immediate implementation (options activation) if Gate 1 passes.
+
+**Estimated hours**: 3-4 hours (completed within estimate via stockbot agent)
+
+**Status**: ✅ COMPLETE. Files committed to master. Exploration Queue Item (Gate 1 Readiness) marked complete. Ready for May 12 execution.
+
+**Next**: Awaiting May 11 manual DB sync (user action, per BLOCKED.md) + May 12 checkpoint execution per checklist
+
+---
+
 ## 2026-05-09 (Session 926 — Orchestrator State Checkpoint) — ALL AUTONOMOUS WORK COMPLETE
 
 ### 📊 STATUS: All major projects at deliverable milestones. Awaiting user decisions and scheduled events.
