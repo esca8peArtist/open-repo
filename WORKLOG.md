@@ -4,6 +4,115 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 10:51 UTC (Session 924 — Orchestrator, Exploration Queue Refresh) — 2 ITEMS COMPLETE
+
+### ✅ seedwarden: Phase 3 Photography & Logistics Plan (Exploration Queue Item) — COMPLETE
+
+**Deliverables** (3 files, 13,500+ words total):
+1. **PHASE_3_PHOTOGRAPHY_LOGISTICS_PLAN.md** (13,000 words, 10 sections, production-ready)
+   - Executive summary with 13-week timeline (April plant orders → June 15 Phase 3 Wave 1 launch)
+   - Plant sourcing & procurement strategy: 8 Tier 1 medicinal species with supplier matrix, lead times, order deadlines (April 20 - May 15)
+   - 3-cluster photography location scouting strategy (Appalachian habitat cluster, cultivated garden cluster, studio macro cluster)
+   - Location confirmation checklist with permission letter template
+   - 90-image shoot plan with detailed per-cluster shot sequences (Cluster A: 30 shots, Cluster B: 30 shots, Cluster C: 30 studio macros)
+   - Guide production timeline: May 26 - June 12, 38 hours total (3 bundle guides, single-herb templates, Canva templates)
+   - Go-live sequence (June 15, 09:30-10:50 UTC publish, 09:50 launch trigger)
+   - Risk mitigation matrix (16 identified risks with probability/impact/mitigation)
+   - Success metrics & KPI dashboard (8 metrics, 90-day window)
+   - Quick-start checklist (immediate actions through June 15)
+
+2. **phase-3-plant-procurement-tracker.csv** (live tracking spreadsheet)
+   - 8 Tier 1 medicinal species (American Ginseng, Goldenseal, Black Cohosh, Bloodroot, Ramps, Wild Bergamot, False Unicorn, Red Clover)
+   - Primary/secondary supplier options for each
+   - Lead times, quantities, pricing, order deadlines
+   - Status column for user to track deliveries
+   - Critical annotations (Bloodroot limited stock, False Unicorn 6-week lead)
+
+3. **phase-3-photo-shoot-shot-log.csv** (shot-by-shot execution template)
+   - 100+ rows pre-populated with shot plan
+   - Columns: Date, Cluster, Time, Species, Shot#, Description, Angle, Style, Filename, Keeper Assessment, Quality Notes, Guide Assignment
+   - Ready for field use during May 17-25 photo shoot (mark keeper assessment on-site)
+
+**Business Value**: De-risks June 15 Phase 3 launch. User has concrete plant ordering deadlines (first order by April 25 for critical species), photography location strategy with 3 options + permission letter template, shot-by-shot guidance during photo session, production timeline with milestones and fallback dates, risk mitigation for stock-outs/weather/production delays, go-live checklist, and Day 1 success criteria.
+
+**Estimated hours**: 2-3 hours (completed within estimate)
+
+**Status**: ✅ COMPLETE, committed to master (commit 487c97bf)
+
+---
+
+### ✅ orchestrator: Cross-Project Coordination Timeline May-June 2026 (Exploration Queue Item) — COMPLETE
+
+**Deliverable** (1 file, 8,500 words, 10 sections, executive strategy document):
+1. **CROSS_PROJECT_COORDINATION_TIMELINE_MAY_JUNE_2026.md** — comprehensive multi-project orchestration guide
+
+**Sections**:
+1. **Critical Path Timeline** — 15+ critical dates with user decisions, impact analysis, owner assignment
+   - Urgent window May 9-13: Domain 42 path decision, DB sync, checkpoint execution
+   - Weekly milestones through June 30
+   
+2. **Resource & Attention Map** — week-by-week user load (3-7.5 hours/week, peak in June 1-7)
+   - Identifies low-load weeks (planning) vs. high-load weeks (execution)
+   
+3. **Dependency Graph & Critical Paths** — shows project dependencies, critical path sequence, parallel work
+   
+4. **May 9-13 Urgent Window Decision Support** — **Domain 42 Path Decision** with three options:
+   - Path A: Minimal (2 orgs, 10 min effort, 1-2 testimonies expected)
+   - **Path A+37: Full (10 orgs, 30 min effort, 2-4 testimonies)** ← RECOMMENDED for maximum impact/effort ratio
+   - Path B: Defer (no testimonies, moves to Phase 2)
+   - Decision matrix comparing effort, outcome, risk, timeline flexibility
+   
+5. **May 12 Checkpoint Scenario Planning** — PASS/NEAR_MISS/FAR_MISS outcomes with cascading decisions
+   - PASS (15-20%): Gate passes → Phase 1 live June 1
+   - NEAR_MISS (30-40%): Marginal → recovery sprint May 13-26 → Gate 1b June 26
+   - FAR_MISS (50-55%): Fails → root cause analysis → recovery sprint → Gate 2 June 12
+   
+6. **June Checkpoints** — three major gates
+   - June 1: Phase 1 Day 30 adoption review (gates Phase 2 institutional outreach)
+   - June 15-30: seedwarden Phase 2 gates (gates Phase 3 Women's Health go/no-go)
+   - June 26: stockbot Gate 1b (contingent on near-miss recovery)
+   
+7. **Autonomous vs. User Decisions** — clearly delineated
+   - Pre-approved autonomous actions: May 30 Phase 2 publish, June 15 Phase 3 publish, checkpoint execution
+   - Critical user decisions flagged: 8 decisions with time/effort estimates
+   
+8. **Contingency Paths** — two major risk scenarios
+   - If stockbot fails: recovery path → Gate 1b → Gate 2 (July timeline)
+   - If seedwarden Phase 2 underperforms: 3 pivot strategies (price, audience, defer)
+   
+9. **Resource Conflict Assessment** — conclusion: NONE identified
+   - Projects have independent critical paths
+   - Peak simultaneous user attention: June 1-7 = 7-8 hours/week = 1 hour/day (manageable)
+   
+10. **Executive Decision Checklist** — dated action items May 9 through June 30
+    - Estimated time for each decision
+    - Clear deadlines
+
+**Business Value**: 
+- **Immediate (May 9-13)**: User can make informed Domain 42 decision with complete impact analysis. Shows 30 min effort generates 2-4 institutional testimonies.
+- **Strategic (May 9 - June 30)**: Complete project landscape visible at once. All decision gates pre-identified with expected outcomes. Contingency paths documented.
+- **Operational**: Clear delineation of autonomous orchestrator work vs. user decisions. No surprises. User knows exactly what attention is required and when.
+
+**Estimated hours**: 2-3 hours (completed within estimate, ~3 hours)
+
+**Status**: ✅ COMPLETE, committed to master (commit 1ed18b36)
+
+---
+
+**Session Summary**:
+- 2 major exploration queue items COMPLETE (seedwarden Phase 3 logistics + cross-project coordination)
+- ~21,500 words of production-ready content created
+- ~5-6 hours of autonomous work (within exploration queue time estimates)
+- **Critical immediate impact**: Cross-project timeline provides decision support for TODAY's Domain 42 path decision
+- **Critical May 12 impact**: Checkpoint is orchestrator-handled; no new user action required beyond May 11 DB sync
+
+**Next session priorities**:
+1. Upon user Domain 42 path decision: Execute Wave 1 send (if Path A or A+37 chosen)
+2. Monitor May 11-12 checkpoint execution
+3. Begin next exploration queue item if time permits
+
+---
+
 ## 2026-05-09 22:30 UTC (Session 923 — Orchestrator, Parallel Verification, Pre-May-12 Readiness) — CHECKPOINT READY
 
 ### ✅ stockbot: Final Jetson Health Check + Pre-Checkpoint Verification (Stockbot Agent)

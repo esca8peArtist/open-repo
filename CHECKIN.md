@@ -1,3 +1,50 @@
+## Since Last Check-in (Session 924 — 2026-05-09 10:51 UTC — Exploration Queue Refresh)
+
+### ✅ EXPLORATION QUEUE: 2 MAJOR ITEMS COMPLETE
+
+**Completed Today** (Session 924, 5-6 hours):
+
+1. **seedwarden: Phase 3 Photography & Logistics Plan** (13,000+ words)
+   - Complete 13-week production timeline (April plant orders → June 15 launch)
+   - Plant sourcing matrix: 8 Tier 1 species, supplier options, order deadlines
+   - Photography logistics: 3-cluster strategy, location scouting, 90-image shot plan
+   - Guide production timeline: May 26 - June 12 (38 hours, 3 bundles + single-herb templates)
+   - Risk mitigation (16 risks identified with probability/impact/mitigation)
+   - Go-live sequence and Day 1 success criteria
+   - **File**: `PHASE_3_PHOTOGRAPHY_LOGISTICS_PLAN.md` + 2 supporting CSVs
+   - **Impact**: De-risks June 15 Phase 3 launch; user has concrete procurement deadlines and logistics plan
+
+2. **Cross-Project Coordination Timeline May-June 2026** (8,500+ words)
+   - Critical path timeline with 15+ dates, user decisions, impact analysis
+   - Resource map: weekly user attention 3-7.5 hours/week (peak June 1-7)
+   - **Domain 42 decision support TODAY**: Three paths analyzed (Path A / A+37 / B), **Path A+37 RECOMMENDED** (30 min effort, 2-4 institutional testimonies)
+   - May 12 checkpoint scenarios: PASS (15-20%) / NEAR_MISS (30-40%) / FAR_MISS (50-55%) with cascading decisions
+   - June checkpoints: Phase 1 adoption review (June 1) → Phase 2 gates (June 15-30) → Phase 3 decisions
+   - Contingency paths documented for stockbot recovery and seedwarden underperformance
+   - Resource conflict assessment: NONE identified
+   - Executive decision checklist: 8 user decisions with time/effort estimates
+   - **File**: `CROSS_PROJECT_COORDINATION_TIMELINE_MAY_JUNE_2026.md`
+   - **Impact**: Enables informed user decision-making on Domain 42 (TODAY), May 12 checkpoint, Phase 2 launch, Phase 3 expansion
+
+### ⏰ **TODAY (May 9) — IMMEDIATE USER ACTION**
+
+**Domain 42 Path Decision REQUIRED (by 23:59 UTC today)**
+- **Recommendation**: Path A+37 (10 organization outreach, 30 min effort, 2-4 Congressional testimonies expected)
+- **Rationale**: Minimal additional effort (20 min vs. Path A) with dramatic increase in institutional impact. May 28 Congressional deadline is unique timing window.
+- **All materials ready**: Email templates, contact list, research document, Gist, execution checklist
+- **Decision matrix**: See CROSS_PROJECT_COORDINATION_TIMELINE_MAY_JUNE_2026.md Section 4 for detailed Path A vs. A+37 vs. B comparison
+
+**Action**: User decides path + authorizes Wave 1 send (if Path A or A+37). Orchestrator will execute send on May 9-10.
+
+### Checkpoint Status: ALL SYSTEMS READY (from Session 923)
+
+- ✅ stockbot engine health verified
+- ✅ May 12 checkpoint query tested and ready
+- ⚠️ Critical action May 11: Manual DB sync required (cron PATH broken)
+- ✅ Discord webhook functional
+
+---
+
 ## Since Last Check-in (Session 923 — 2026-05-09 22:30 UTC — Parallel Verification + Pre-May-12 Readiness)
 
 ### ✅ STOCKBOT MAY 12 CHECKPOINT — VERIFIED READY
