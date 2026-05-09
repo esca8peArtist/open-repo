@@ -1,3 +1,47 @@
+## Since Last Check-in (Session 927-928 — 2026-05-09 — Exploration Queue Execution)
+
+### ✅ TWO EXPLORATION QUEUE ITEMS COMPLETE — CRITICAL PATH READY
+
+**Completed** (Session 927-928, 7-8 hours total via stockbot + resistance-research agents):
+
+1. **stockbot: May 12 Gate 1 Readiness Validation Checklist** (Session 927)
+   - **Deliverable 1**: `gate-1-readiness-checklist.md` (1,700 words, executable copy-paste format)
+     - Five-part sequential checklist for May 12 19:30–21:00 UTC execution
+     - Pre-checkpoint health checks: Jetson SSH, Alpaca API validation, database integrity audit, May 1-12 fill gap detection
+     - Canonical checkpoint query execution with JSON archival and fallback SQL
+     - Three execution paths (PASS / NEAR_MISS / FAR_MISS) with scenario-specific commands
+     - Five failure mode risk assessments (15-20% probability each) with recovery paths
+     - WORKLOG template + May 13 user handoff message (auto-populated per outcome)
+   - **Deliverable 2**: `gate-1-decision-tree-executable.py` (Python decision classification script)
+     - Parses checkpoint query result and classifies outcome (PASS/NEAR_MISS/FAR_MISS with sub-patterns)
+     - `--self-test` mode: 11/11 test cases pass (boundary conditions verified)
+     - `--json` output mode for machine-readable results
+     - Compatible with all SQLite versions (uses CASE-based aggregation, not FILTER)
+   - **Impact**: May 12 checkpoint has ZERO ambiguity. User runs checklist + script; next actions auto-generate. Eliminates May 13 decision paralysis.
+
+2. **resistance-research: Phase 2 Domain Expansion Strategy (Domains 36-50)** (Session 928)
+   - **Deliverable 1**: `domain-expansion-strategy.md` (5,363 words, extended from 3,500)
+     - 8-sector gap analysis: reproductive freedom, labor/unions, housing, campaign finance, environmental justice, indigenous sovereignty, disability rights, civil society
+     - Top-5 domain priority ranking: D44 (Reproductive Freedom, 9.0 score), D45 (Labor/NLRB, 8.8), D52 (Civil Society Suppression, 8.0), D53 (Mutual Aid, 8.0), D47 (Campaign Finance, 7.7)
+     - Integration mechanics: Phase 2 domains as on-ramps for organizers; cross-references enable discovery of full Phase 1 framework
+     - Cross-project coordination: D44/D45 scoping May 19 (post-May-12 checkpoint); full production mid-June (post-Phase-1-adoption-tracking June 15)
+     - Outreach strategy: Target organizational multipliers (SEIU director reaches 2M members); distribution via Gist/Signal/Substack
+   - **Deliverable 2**: `phase-2-domain-candidates.csv` (NEW, 15 candidates with composite scores)
+     - 15 Phase 2 domain candidates: adoption likelihood, movement infrastructure depth, gap-filling impact, effort estimates
+     - Decision-ready prioritization for user post-Phase-1-feedback
+   - **Impact**: Phase 2 strategy ready BEFORE Phase 1 feedback arrives (May 28–June 15). Enables concurrent Phase 1 execution + Phase 2 planning. Prevents post-success ambiguity.
+
+**Timing & Next Steps**:
+- **May 11 evening**: Manual stockbot DB sync (user action, per BLOCKED.md)
+- **May 12 20:00 UTC**: Run Gate 1 checkpoint per checklist + decision tree
+- **May 13 morning**: Assign scenario per MAY_12_OUTCOME_ROADMAP.md, follow roadmap next steps
+- **May 19**: Begin Phase 2 Domain 44/45 research (if Phase 1 approval given + Gate 1 outcome known)
+- **June 1**: Tier 2 launch readiness assessment (post-May-28-adoption-feedback)
+
+**Status**: Both items committed to master. Exploration Queue now has 2 items completed (Gate 1 Readiness + Domain Expansion). Zero new queue items generated (awaiting user input per protocol).
+
+---
+
 ## Since Last Check-in (Session 926 — 2026-05-09 — Orchestrator State Checkpoint)
 
 ### 📊 ORCHESTRATOR STATUS CHECKPOINT
