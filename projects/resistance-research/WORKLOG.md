@@ -2,6 +2,49 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Domain 42 Wave 1 Execution Infrastructure Verification
+
+**Status**: COMPLETE — READY FOR IMMEDIATE EXECUTION UPON USER PATH DECISION
+
+**Task**: Verify all Domain 42 Wave 1 execution infrastructure is ready for immediate launch (Path A / A+37 / B).
+
+**Verification findings**:
+
+1. **Email template (domain-42-email-template-may28-urgency.md)**: CURRENT. Session 920 (May 9) edition — 5 templates (A through E), Section 591 confirmed dropped, live Gist URL embedded (`https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab`), 19-day urgency frame set, emergency Template E ready for May 22-27. This is the active send template; the May 7 `domain-42-email-template.md` is the predecessor and should not be used.
+
+2. **Contact list (domain-42-contact-list.md)**: CURRENT. 10 contacts across Categories A-D. Wave 1 (5 drug policy orgs) / Wave 2 (4 civil rights + academic) / Wave 3 (4 state AGs). Contact verification notes present. Note: the more detailed 24-contact matrix is in `domain-42-outreach-sequence.md` (May 9 canonical version) — the canonical sequence file supersedes the earlier contact list where they conflict on timing, names, or priority order.
+
+3. **Gist creation steps (domain-42-gist-creation-steps.md)**: MOOT — Gist is already created and live. Per CHECKIN.md (May 7 entry, line 66-67): "Gist created and live: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab". This Gist URL is confirmed present in all May 9 templates. The gist-creation-steps file describes a procedure that has already been completed.
+
+4. **Domain 42 research document**: CURRENT AND COMMITTED. `domains/domain-42-drug-policy-democratic-legitimacy-regulatory-capture.md` confirmed present. Research completed May 7, 2026. 6,860 words, 54 citations, CC Attribution 4.0. Three-mechanism framework (regulatory capture, disenfranchisement feedback loop, federal-state democratic conflict) complete.
+
+5. **Wave 1 send status**: NOT YET SENT. No send confirmation in WORKLOG. No `EXECUTE_CATEGORY_A_SEND_MAY_8.md` file in execution directory. Wave 1 was scheduled for May 8 but awaiting user path decision. Today is May 9 — still within Wave 1 window but one day behind plan.
+
+6. **DISTRIBUTION_GIST_URLS.md**: Does NOT yet include Domain 42 entry. The table has the 6 canonical reference Gists but Domain 42 was added separately in CHECKIN.md after that file was last updated. Action needed post-launch: add Domain 42 row to this table.
+
+7. **Section 591 status**: RESOLVED. Dropped from final FY2027 CJS bill — confirmed in domain-42-email-template-may28-urgency.md header and all templates. Do not include Section 591 urgency framing in any send.
+
+8. **Execution checklist file**: Created this session as `DOMAIN_42_EXECUTION_CHECKLIST.md`.
+
+**Critical path for today (May 9)**:
+- Wave 1 window is today/tomorrow (May 9-10)
+- If path decision is made today: send DPA and NORML immediately; LEAP, ACLU Criminal Law Reform, and Sentencing Project by end of day or May 10
+- NAACP LDF has 10-14 day internal routing time — must be sent May 10 at absolute latest
+- Wave 2 (civil rights + academic) target: May 10-12
+- May 13 is secondary urgency threshold (Section 591 dropped — this deadline is now lower stakes than previously flagged, but DEA-1362 administrative record benefit of early filing remains)
+
+**Files examined**:
+- `execution/domain-42-email-template-may28-urgency.md` (active template)
+- `execution/domain-42-contact-list.md`
+- `execution/domain-42-gist-creation-steps.md`
+- `execution/domain-42-outreach-sequence.md` (canonical sequencing, May 9)
+- `domains/domain-42-drug-policy-democratic-legitimacy-regulatory-capture.md`
+- `DISTRIBUTION_GIST_URLS.md`
+- `CHECKIN.md`
+- `WORKLOG.md`
+
+---
+
 ## May 9, 2026 — Research Agent — Phase 3 Candidate 2: First Three Institutional Playbooks
 
 **Status**: COMPLETE

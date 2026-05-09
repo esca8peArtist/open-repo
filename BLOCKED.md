@@ -32,11 +32,25 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Manual DB sync required on May 11 before checkpoint (cron PATH broken)
+**Date blocked**: 2026-05-09
+**Context**: Jetson nightly DB sync via cron is not running. Root cause: `PATH` environment variable not set in crontab, so `sync_db_from_alpaca.py` cannot find `uv` binary. The AAPL time-stop exit is expected to fire on May 11 (h+10 trigger). If the sync doesn't run, the May 12 checkpoint query will show 0 confirmed round trips even if the SELL fill executed. Database must be manually synced on May 11 evening or May 12 morning before the 20:00 UTC checkpoint query.
+**What I need**: On May 11 evening (after market close ~20:00 UTC) or May 12 morning, manually run: `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` to capture the time-stop SELL fill if it fired.
+**Verify with**: `crontab -l | grep sync_db` should show PATH=/... at top, then sync_db_from_alpaca.py entry with proper path. Command to test: `ssh user@jetson "crontab -e && add PATH=/home/awank/.local/bin:/usr/local/bin:/usr/bin:/bin"`
+**Resolution**:
+
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
+**Resolution**:
+
+### stockbot — Jetson disk at 87% (29 GB free remaining)
+**Date blocked**: 2026-05-09
+**Context**: Jetson root filesystem is at 87% capacity (188 GB of 227 GB used, 29 GB free). Root causes: /var/log at 74 GB, Docker build cache at 22.66 GB (6 GB reclaimable). This is NOT a May 12 checkpoint blocker — 29 GB is sufficient for 3 days of trading logs. However, disk must be cleaned before Gate 2 deployment to prevent crashes due to log rotation failures or container failures.
+**What I need**: After May 12 checkpoint, clean up: (1) identify and archive old logs in /var/log (keep last 7 days), (2) run `docker builder prune` to reclaim build cache, (3) verify free space ≥50 GB before Gate 2 work.
+**Verify with**: `ssh user@jetson "df -h / && du -sh /var/log && docker system df"`
 **Resolution**:
 
 ## Resolved Archive

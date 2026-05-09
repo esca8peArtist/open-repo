@@ -4,6 +4,50 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 22:30 UTC (Session 923 — Orchestrator, Parallel Verification, Pre-May-12 Readiness) — CHECKPOINT READY
+
+### ✅ stockbot: Final Jetson Health Check + Pre-Checkpoint Verification (Stockbot Agent)
+**Completed by stockbot subagent:**
+1. ✅ Both AAPL sessions running (Docker healthy, 3h uptime, normal CPU/memory)
+2. ✅ AAPL position confirmed open (108 shares, +$2,747.84 P&L)
+3. ✅ Time-stop position-age logic validated (all 9 unit tests pass; will fire at h+10 ~May 11)
+4. ✅ May 12 checkpoint query ready and tested (query returns: 19 fills since May 5, FAR_MISS_C1 scenario currently)
+5. ✅ Discord webhook functional (STOCKBOT_DISCORD_WEBHOOK_URL set, wire intact)
+6. ⚠️ CPU/memory healthy, but **Jetson disk at 87% (29 GB free)** — not a checkpoint blocker, but needs cleanup before Gate 2
+
+**Outstanding items (logged to BLOCKED.md):**
+- **HIGH PRIORITY**: cron_sync_db.sh PATH broken — nightly DB sync not running. Action: Manual sync required on May 11 evening or May 12 morning before checkpoint query
+- **MEDIUM PRIORITY**: Jetson disk cleanup needed post-checkpoint (identify /var/log offender, prune Docker cache, target ≥50 GB free before Gate 2)
+
+**Result**: Checkpoint preparation verified complete. Engine ready for May 12 20:00 UTC execution. Critical path: (1) May 11 manual DB sync if time-stop SELL fires, (2) May 12 checkpoint query at 20:00 UTC.
+
+### ✅ resistance-research: Domain 42 Wave 1 Execution Readiness Verified (Resistance-Research Agent)
+**Completed by resistance-research subagent:**
+1. ✅ Email templates current (May 9 edition, Section 591 confirmed dropped)
+2. ✅ Domain 42 Gist already live: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+3. ✅ Research document complete (6,860 words, 54 citations)
+4. ✅ Contact list and outreach sequence ready (10 Category A-D contacts + 24-contact priority matrix)
+5. ✅ Pre-drafted participation notices staged for May 21 follow-up + May 25-27 emergency push
+
+**Wave 1 status:**
+- ✅ All infrastructure READY for immediate execution
+- ❌ Wave 1 NOT YET SENT (targeted May 8, still viable on May 9)
+- ⚠️ **Nick Brown is current Washington AG** (Bob Ferguson now Governor) — update Template D and contact list for Wave 3 (May 14-17)
+
+**Critical path if user decides Path A or A+37 TODAY:**
+1. Send DPA and NORML first (2-3 day filing timeline) — TODAY May 9
+2. Send LEAP, ACLU Criminal Law, Sentencing Project — TODAY or May 10
+3. Send NAACP LDF by May 10 (time-critical: 10-14 day internal routing)
+4. Wave 2 (remaining civil rights + academic) by May 12
+5. Wave 3 (state AGs, after AG name fix) by May 17
+
+**Files created:**
+- `projects/resistance-research/DOMAIN_42_EXECUTION_CHECKLIST.md` — readiness table, wave tracker, pre-send actions
+
+**Result**: Domain 42 Wave 1 fully ready for immediate execution upon user path decision. No new blockers. One minor data correction (Washington AG name) needed before Wave 3.
+
+---
+
 ## 2026-05-09 18:45 UTC (Session 922 — Orchestrator, Checkpoint Prep, Phase 3 Expansion) — EXECUTION READY
 
 ### ✅ resistance-research: Phase 3 Candidate 2 Expansion — Institutional Playbooks (3 of 8)

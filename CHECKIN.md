@@ -1,3 +1,43 @@
+## Since Last Check-in (Session 923 — 2026-05-09 22:30 UTC — Parallel Verification + Pre-May-12 Readiness)
+
+### ✅ STOCKBOT MAY 12 CHECKPOINT — VERIFIED READY
+**Completed by orchestrator (parallel stockbot verification):**
+- **Engine health verified**: Both AAPL sessions running, position open (+$2,747.84 P&L), time-stop will fire May 11
+- **Database synced**: 19 production trades confirmed since May 5
+- **Checkpoint query tested**: Ready for May 12 20:00 UTC execution
+- **Discord notifications**: Webhook functional and ready
+- **Disk space**: 29 GB free — sufficient for checkpoint, cleanup needed post-event
+
+**Critical action for May 11–12:**
+- **May 11 evening (after market close ~20:00 UTC)**: Manually run `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` to capture the expected time-stop SELL fill
+- **May 12 20:00 UTC**: Run checkpoint query per MAY_12_OUTCOME_ROADMAP.md to assign PASS/NEAR_MISS/FAR_MISS scenario
+
+### ✅ RESISTANCE-RESEARCH DOMAIN 42 WAVE 1 — INFRASTRUCTURE VERIFIED READY
+**Completed by orchestrator (parallel resistance-research verification):**
+- **All templates current** (May 9 edition, Section 591 confirmed dropped)
+- **Gist live and embedded** in all email templates
+- **Contact list complete** (10 Category A-D, 24-contact priority matrix ready)
+- **Research document finalized** (6,860 words, 54 citations)
+
+**Wave 1 execution status:**
+- ✅ Ready to send immediately upon user path decision (Path A or A+37)
+- ⏰ **TODAY/TOMORROW deadline**: Wave 1 needs to send by May 9–10 to meet May 28 Congressional deadline
+- ⚠️ One data correction: Nick Brown is current Washington AG (Bob Ferguson is Governor) — fix before Wave 3
+
+**If user decides Path A or A+37 TODAY**, critical send sequence:
+1. **DPA + NORML first** (today May 9) — highest filing certainty
+2. **LEAP, ACLU, Sentencing Project** (today or May 10)
+3. **NAACP LDF** (must be May 10 max) — 10–14 day internal routing
+4. Wave 2 (May 12), Wave 3 (May 17, after AG fix)
+
+### 📊 Token Usage Status
+- **Sonnet**: 58.9% (1,095,745 / 1,860,812 tokens)
+- **All-models**: 50.0%
+- **Budget reset**: Tuesday May 14 00:00 UTC (5 days remaining)
+- **Status**: No pressure, healthy usage
+
+---
+
 ## Since Last Check-in (Session 922 — 2026-05-09 18:45 UTC — Checkpoint Preparation + Phase 3 Expansion)
 
 ### ✅ STOCKBOT CHECKPOINT PREP COMPLETE — Engine Healthy, Database Synced, May 12 Ready
