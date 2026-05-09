@@ -1,3 +1,62 @@
+## Since Last Check-in (Session 916 — 2026-05-09 MORNING)
+
+### What Was Accomplished
+
+✅ **2 Major Exploration Queue Items Complete** (~13,000 words production-ready):
+1. **Item 56: Stockbot Post-Checkpoint Live Trading Architecture** — 4 documents (2,500 lines):
+   - `live-trading-launch-checklist.md` — Pre-launch verification procedures for Alpaca, capital allocation, Jetson deployment, guardrails, first-trade protocol, Discord setup
+   - `scenario-a-post-launch-operations.md` — Daily operations if Gate 1 passes (≥30 trades/month); performance tracking, quarterly gates, HMM activation
+   - `scenario-b-recovery-roadmap.md` — Recovery path if Gate 1 near-misses (21-29); extension request arguments, model retraining triggers, 4 sequential adjustments
+   - `scenario-c-post-mortem-playbook.md` — Failure diagnosis if Gate 1 fails (<21); root cause trees, 4 architectural pivots, documentation template
+   - **Value**: Operationalizes all three May 12 outcomes before they occur. User can execute chosen path immediately post-checkpoint.
+
+2. **Item 57: Resistance-research Phase 2 Domain 44-45 Scoping** — 3 documents (10,500 words):
+   - `phase-2-domains-44-45-scoping.md` — Domain 44 (Disability/Voting) scores 4.5/5 (highest Phase 2 candidate); Domain 45 (Tribal/Voting) scores 4.0/5. Critical finding: *Louisiana v. Callais* (April 29, 2026) gutted Section 2 VRA, elevating both domains to critical urgency.
+   - `phase-2-execution-sequencing-hybrid.md` — Recommended hybrid Track A/B execution; June 12 FISA gate impact analysis; resource bottleneck identification
+   - `phase-2-influence-map-44-45.md` — Influencer mapping for disability/tribal ecosystems (NDRN, NARF, CCD, NCAI); co-design strategy with practitioners
+   - **Value**: Unblocks Phase 2 domain pipeline while Phase 1 awaits distribution decision. Research window closes ~May 30; must begin by then.
+
+✅ **3 New Exploration Queue Items Created** (Items 56-58):
+   - All queued for autonomous execution while main projects blocked on user decisions
+
+### Critical Blocker Identified
+
+🔴 **URGENT: Stockbot Engine NOT RUNNING** — Last trade May 5 (4 days ago)
+- Issue: Alpaca API auth failure starting May 9 00:34 UTC disabled engine
+- Root cause: Credentials or Jetson connectivity problem (per Session 910 analysis)
+- Impact: May 12 Gate 1 checkpoint (3 days away) at severe risk with zero trading activity for 4 days
+- Required action: 
+  1. Verify Alpaca credentials in `.env` file
+  2. SSH to Jetson and restart engine: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+  3. Confirm engine is running and trading before May 12 00:00 UTC
+
+### What's In Progress
+
+- **May 12 Checkpoint** (3 days away): Gate 1 decision determines Q2-Q3 roadmap. Engine must restart TODAY.
+- **May 13 Domain 42 Deadline** (4 days away): Congressional submission window for DEA hearing notice
+- **May 30 Phase 2 Launches**: Seedwarden + resistance-research (if distribution path chosen)
+
+### What Needs User Input — TODAY
+
+1. **CRITICAL**: Restart stockbot engine (1 hour)
+   - Verify Alpaca credentials + Jetson connectivity
+   - Run restart command (see critical blocker above)
+   - Confirm with: `tail -20 /home/awank/dev/SuperClaude_Framework/projects/stockbot/logs/trading_*.log | grep "fill\|execution" | head -3`
+
+2. **Domain 42 decision** (when ready): Execute Category A outreach (May 9–13) or defer?
+   - All infrastructure production-ready; decision unblocks 6–8 hour execution
+
+3. **Resistance-research distribution path** (when ready): Path A / A+37 / B
+   - Unblocks Phase 1 launch (estimated 3–4 hours execution)
+
+### Session Status
+
+✅ **Two major exploration items complete.** One critical blocker identified (stockbot engine not running). May 12 checkpoint at risk; engine restart is prerequisite. All other projects remain blocked on user decisions/actions (no change from Session 915).
+
+**Budget**: Sonnet 58.9% (1,095,745 tokens), All-models 48.1%. Reset in 66 hours (Tuesday 00:00 UTC). No budget pressure.
+
+---
+
 ## Since Last Check-in (Session 915 — 2026-05-09 16:00 UTC)
 
 ### What Was Accomplished
