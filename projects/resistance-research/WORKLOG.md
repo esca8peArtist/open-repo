@@ -2,6 +2,36 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Domain 52: Civil Society Suppression and the Nonprofit Independence Crisis
+
+**Status**: COMPLETE — committed to master
+
+**File created**: `projects/resistance-research/domains/domain-52-civil-society-suppression-nonprofit-independence-crisis.md`
+
+**Word count**: ~7,400 words | **Citations**: 47 sources | **Sections**: 9 complete (Executive Summary + 6 substantive sections + Cross-Domain Integration + Sources)
+
+**Key findings**:
+
+1. **Central reframe confirmed**: Section 112209 failed three consecutive legislative attempts (H.R. 6408, H.R. 9495, Section 112209 OBBBA — all stripped or died in Senate). The administration has pivoted to achieving the same functional outcome through executive mechanism: NSPM-7 + FBI-IRS Joint Mission Center ($166M, 328 positions) + SPLC prosecution template. This is executive action substituting for statutory authority Congress refused to grant.
+
+2. **Crisis status corrected from task brief**: Section 112209 was removed from the OBBBA before its July 4, 2025 enactment — it is NOT enacted law. The Senate parliamentarian signaled it would violate the Byrd Rule. The real threat is the executive-action alternative: the FBI-IRS Joint Mission Center operational under NSPM-7 + Florida HB 1471 (July 1, 2026) + SPLC prosecution as template.
+
+3. **Florida HB 1471 is the 53-day crisis**: Effective July 1, 2026. Pre-enforcement injunction must be filed by June 15 to allow briefing before effective date. The CAIR preliminary injunction (March 2026, Northern District of Florida, Judge Walker) provides favorable precedent in the same court. The shift from executive order to statute — and from "foreign terrorist organization" to "domestic terrorist organization" — creates different but not necessarily stronger constitutional footing.
+
+4. **Financial precondition documented precisely**: Urban Institute (2025): 33% of nonprofits experienced government funding disruption, 21% lost grants outright. Nonprofit Finance Fund (2025): 52% have 3 months or less cash on hand, 84% expect further cuts, 36% ended 2024 with operating deficit (10-year high). An organization with a 90-day cash runway cannot litigate a 12-18 month designation challenge.
+
+5. **Hungary parallel is operational, not rhetorical**: The 2017-2018 Hungarian NGO suppression sequence — stigmatization, financial pressure, then criminalization — maps directly to the U.S. 2025-2026 sequence. The EU Court of Justice eventually vindicated the targeted organizations. Hungary achieved its objectives before the legal remedy arrived. The U.S. situation requires pre-enforcement response, not post-designation litigation.
+
+6. **The SPLC indictment template is the most dangerous vector**: Not because it will succeed at trial (former DOJ prosecutors assess it as legally deficient at multiple independent levels), but because the organizational impact pathway — donor flight, reputational damage, leadership distraction, legal cost — produces suppression without conviction. The October 2026 trial date coincides with the midterm election window.
+
+**Key correction to task brief**: The task brief states Section 112209 OBBBA is "enacted law." This is incorrect. Section 112209 was removed from the OBBBA before the July 4, 2025 enactment. The enacted OBBBA does not contain Section 112209. The domain document reflects the accurate legislative status: three consecutive failures, followed by executive action as substitute.
+
+**Adoption pathway identified**: National Council of Nonprofits (51 member state associations — primary distribution channel for legal guidance) → Charity and Security Network (legal/compliance resource for at-risk organizations) → Leadership Conference 220-member coalition (appropriations advocacy + litigation co-plaintiff infrastructure) → ACLU pre-enforcement filing on HB 1471 (53-day window)
+
+**Cross-domain integration**: Domain 29 (SPLC prosecution as DOJ capture + prosecutorial weaponization template), Domain 45 (labor/union suppression — parallel organizational demobilization mechanism), Domain 39 (immigration legal aid nonprofits in NSPM-7 direct targeting zone), Domain 44 (reproductive freedom nonprofits vulnerable to state HB 1471 variants), Domain 47 (housing advocacy nonprofits losing CDBG/CSBG funding)
+
+---
+
 ## May 9, 2026 — Research Agent — Domain 45: Labor Rights, NLRB Crisis, and Worker Power as Democratic Infrastructure
 
 **Status**: COMPLETE — committed to master
