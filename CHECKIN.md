@@ -1,3 +1,54 @@
+## Since Last Check-in (Session 918 — 2026-05-09 MORNING)
+
+### 🔴 CRITICAL ISSUE IDENTIFIED — May 12 Checkpoint at Risk
+
+**Jetson API Connectivity Blocker** — Docker container stuck in OrderExecutor initialization loop:
+- ✅ Network is fine (Jetson reachable via Tailscale, ping works)
+- ❌ HTTP endpoints timeout (API accepts no connections)
+- 🔍 Root cause: OrderExecutor re-initializing every millisecond (logs show rapid-fire initialization messages)
+- ⏰ **Deadline impact**: May 12 Gate 1 checkpoint requires API endpoint. Must resolve within 3 days.
+
+**See**: `BLOCKED.md` for full diagnostic details and `MAY_DECISION_MATRIX.md` for timeline impact.
+
+### ✅ EXPLORATION QUEUE ITEM 3 COMPLETE
+
+**Created**: `MAY_DECISION_MATRIX.md` (1,200-line comprehensive May 9-30 timeline)
+- **Purpose**: Coordinate 5 concurrent project deadlines with explicit user decision gates
+- **Content**:
+  1. TODAY (May 9) Domain 42 distribution decision (Path A: execute now vs Path B: defer)
+  2. May 12 Stockbot Gate 1 checkpoint (Jetson connectivity = blocker)
+  3. May 13 AAPL h+10 exit window (confirms first round trip)
+  4. May 30 Seedwarden Phase 2 launch (materials ready)
+  5. May 28 Domain 42 DEA deadline (non-negotiable)
+- **Value**: User can see full landscape with parallelization opportunities and explicit watch-outs
+
+### What Needs Immediate User Action
+
+1. **TODAY (CRITICAL)**: Two decisions needed:
+   - **Decision 1 — Domain 42**: Execute Category A outreach now (Path A, 19-day buffer) or defer (Path B, 14-day buffer)?
+     - See `MAY_DECISION_MATRIX.md` Sections 1 & 6 for decision trees
+     - Path A requires: 2 hrs today (Wave 1) + 6 hrs May 10-12 (Wave 2-3)
+     - Path B defers to May 13-21 (still 7-day buffer before May 28 deadline)
+   - **Decision 2 — Jetson**: Can you investigate OrderExecutor initialization loop, or should I escalate for hardware troubleshooting?
+     - Investigation: Check database locks, transaction state, container logs for corruption
+     - Or: Jetson hardware restart (might reset transient state)
+
+2. **Before May 12 (CRITICAL)**: Resolve Jetson API connectivity
+   - Verification: `curl -s http://100.120.18.84:8000/api/ready` should return `{"status":"ready","sessions":2}` within 2 seconds
+   - Timeline: 3 days to fix before checkpoint
+
+3. **Before May 13**: Complete Domain 42 Wave 2 send (if Path A chosen)
+   - Timeline: Strict 18-20 hour window from Wave 1 for engagement effect
+   - Cannot slip past May 13 noon without efficacy loss
+
+### Budget Impact This Session
+
+- Session 918: ~30K tokens (diagnostics + timeline creation)
+- Running total: ~310K tokens (~59% Sonnet usage)
+- Reset: Tuesday 00:00 UTC (62 hours remaining)
+
+---
+
 ## Since Last Check-in (Session 917 — 2026-05-09 AFTERNOON)
 
 ### What Was Accomplished

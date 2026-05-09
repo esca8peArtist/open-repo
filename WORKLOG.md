@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 07:24 UTC (Session 918 — Orchestrator Readiness) — JETSON BLOCKER + DECISION MATRIX
+
+### 🔴 SESSION FOCUS: Verify Stockbot Engine + Create Decision Timeline
+
+**Context**: 3 main projects blocked (stockbot/connectivity, resistance-research/user decision, mfg-farm/test print). Spawned to verify May 12 checkpoint readiness and create coordination timeline for May 9-30 decision window.
+
+**Work Executed**:
+
+1. **Jetson Connectivity Diagnostics** ✅ (30 min)
+   - Gate-1 readiness validation script shows JETSON UNREACHABLE (timeout on /api/ready)
+   - **Network diagnosis**: Ping successful, Tailscale active, port 8000 listening
+   - **Container diagnostics**: Docker shows "healthy" status, logs say "Application startup complete"
+   - **Root cause identified**: Logs show rapid-fire "OrderExecutor initialized in paper trading mode" (repeating every millisecond) — initialization loop, not runtime loop
+   - Trading sessions stuck in re-initialization, API never accepts connections
+   - **Blocked entry created**: BLOCKED.md now documents this as active block pending user action
+
+2. **Exploration Queue Item 3 COMPLETE: Cross-Project Decision Matrix** ✅ (1.5 hrs)
+   - Created `/MAY_DECISION_MATRIX.md` (1,200 lines, comprehensive timeline)
+   - **Content**:
+     - **Section 1**: TODAY (May 9) Domain 42 decision (execute now vs. defer)
+       - Path A: Execute Wave 1 now, 19-day buffer to May 28 deadline
+       - Path B: Defer, still 14-day buffer (feasible but tighter)
+       - Parallelization: Domain 42 Wave 2-3 can run May 10-12 during stockbot checkpoint
+     - **Section 2**: May 12 Stockbot Gate 1 checkpoint (Jetson connectivity is critical)
+     - **Section 3**: May 13 AAPL h+10 exit window (first confirmed round trip)
+     - **Section 4**: May 30 Seedwarden Phase 2 launch (materials ready, awaiting user approval)
+     - **Section 5**: Resource constraint analysis (4-day crunch: May 9-12 needs parallelization)
+     - **Section 6**: Decision trees for Path A vs Path B
+     - **Section 7**: Watch-outs (May 28 non-negotiable, May 12 Jetson critical, May 13 Wave 2 timing strict)
+   - **Business value**: User can see full May landscape with explicit decision gates + parallel execution opportunities
+
+3. **BLOCKED.md Updates** ✅ (15 min)
+   - Added active block: **stockbot — Docker API container stuck in initialization loop**
+     - Network is fine, container claims healthy, but HTTP endpoints timeout
+     - Root cause: OrderExecutor re-initialization loop prevents API startup
+     - Verification command: `curl -s http://100.120.18.84:8000/api/ready` should return `{"status":"ready","sessions":2}`
+   - Re-listed mfg-farm test print block (was missing from active section)
+
+**Key Findings**:
+- ⚠️ **May 12 Checkpoint at Risk**: Jetson connectivity issue must be resolved before May 12 market open (13:30 UTC, 3 days away)
+- ⚠️ **OrderExecutor Loop**: Likely database lock or initialization bug. Not network/firewall (ruled out).
+- ⚠️ **Decision Urgency**: Domain 42 Path A vs B decision tree in MAY_DECISION_MATRIX.md — user needs to decide TODAY to maintain 19-day buffer
+
+**Files Created/Modified**:
+- Created: `MAY_DECISION_MATRIX.md` (comprehensive timeline with decision trees)
+- Modified: `BLOCKED.md` (added stockbot block + mfg-farm clarification)
+- Committed: 524ba03e
+
+**Status**:
+- 🔴 **Stockbot Jetson**: BLOCKER (OrderExecutor loop, needs investigation/fix)
+- 🟠 **resistance-research**: Blocked on user path decision (awaiting reply)
+- 🟠 **mfg-farm**: Blocked on test print (user action)
+- ⏳ **Seedwarden**: Phase 2 ready May 30 (awaiting user approvals May 24-26)
+- ✅ **Exploration Queue**: Item 3 complete (2 items remain: Item 1 & 2)
+
+**Next Steps** (for orchestrator or user):
+1. **USER TODAY**: Decide Domain 42 (Path A execute now vs Path B defer) — reply in CHECKIN.md
+2. **USER WITHIN 2 HRS**: Triage Jetson OrderExecutor loop (investigate or escalate)
+3. **ORCHESTRATOR MAY 10-11**: Parallelize Domain 42 template prep with Jetson work
+4. **ORCHESTRATOR MAY 12**: Monitor checkpoint execution, run outcome classification
+
+---
+
 ## 2026-05-09 (Session 917 — Orchestrator Coordinator) — PARALLEL AGENTS: ITEMS 36, 39-41 COMPLETE
 
 ### ✅ SESSION COMPLETE: 4 EXPLORATION ITEMS EXECUTED IN PARALLEL
