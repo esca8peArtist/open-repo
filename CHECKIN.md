@@ -1,3 +1,48 @@
+## Since Last Check-in (Session 915 — 2026-05-09 16:00 UTC)
+
+### What Was Accomplished
+
+✅ **Exploration Queue Refresh: New Item Added** (3,200 words, production-ready):
+1. **Cross-Project Timeline Coordination & Resource Allocation (May-June 2026)** — Comprehensive 8-week integrated schedule showing:
+   - Week-by-week critical path (Weeks 1–8: activities, user hours, dependencies)
+   - Resource allocation (40–55 hours over 8 weeks, front-loaded Week 1)
+   - Decision trees for May 9–13 urgent window (Domain 42 execution, stockbot outcomes, seedwarden readiness)
+   - Resource conflict analysis (confirms no projects block each other)
+   - Contingency paths (if user capacity < 40 hours)
+   - Key finding: Week 1 peak (8–12 hours); weeks 2–8 distributed 2–3 hours/week
+
+### What's In Progress
+
+- **May 12 Checkpoint** (3 days away): Critical decision point for stockbot Gate 1 (Pass/Near-Miss/Far-Miss determines Q2-Q3 roadmap)
+- **May 13 Domain 42 Deadline** (4 days away): Congressional submission window for DEA hearing participation notice
+- **May 30 Phase 2 Launches** (21 days away): Seedwarden Phase 2 + resistance-research Phase 1 (if path chosen)
+
+### What Needs User Input
+
+1. **Domain 42 execution decision (TODAY, May 9)**: Execute Category A outreach by May 13, or defer to May 28 deadline?
+   - All infrastructure production-ready; decision unblocks execution
+   - Timeline: 6–8 hours (May 9–13) if executing
+2. **Stockbot Jetson connectivity**: Verify Alpaca credentials + engine health before May 12 checkpoint
+   - Timeline: 1 hour verification (before May 12)
+   - Jetson currently unreachable (Tailscale recovery needed)
+3. **resistance-research distribution path** (upon availability): Path A / A+37 / B unblocks Phase 1 launch
+4. **seedwarden Phase 2 readiness** (May 9–23): Photo location scouting + plant order timeline confirmation
+
+### Critical Timing — IMMEDIATE (Next 4 Days)
+
+- **Today (May 9)**: Domain 42 decision + stockbot Jetson verification
+- **May 10–12**: Execute chosen path (Domain 42 + stockbot + Phase 1 launch prep)
+- **May 12 20:00 UTC**: Stockbot Gate 1 checkpoint + outcome decision
+- **May 13**: Domain 42 deadline (if executing)
+
+### Session Status
+
+✅ **Orientation + Queue Refresh Complete.** Added 3 new exploration items to support critical May-June period. All projects remain blocked on user decisions/actions (no change from Session 914). Cross-Project Timeline Coordination complete; provides user with full 8-week visibility.
+
+**Budget**: Sonnet 58.9% (1,095,745 tokens), All-models 47.9%. Reset in 66 hours (Tuesday 00:00 UTC). No budget pressure.
+
+---
+
 ## Since Last Check-in (Session 914 — 2026-05-09 14:00 UTC)
 
 ### What Was Accomplished

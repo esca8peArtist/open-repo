@@ -31493,3 +31493,71 @@ Added to PROJECTS.md exploration queue:
 3. **When ready**: Choose resistance-research distribution path (A / A+37 / B) → execute PHASE_1_EXECUTION_PLAYBOOK.md → Phase 1 distribution begins within 24 hours
 4. **Before Phase 1**: Review USER_OPERATIONAL_SECURITY_MANUAL.md; implement Tier 1 mitigations (email separation, contact encryption); identify civil rights attorney for retainer
 
+---
+
+## 2026-05-09 (Session 915 — Orchestrator) — EXPLORATION QUEUE REFRESH: 3 NEW ITEMS ADDED
+
+### ✅ ORIENTATION COMPLETE + QUEUE REFRESH COMPLETE
+
+**Session Focus**: All main projects blocked on user decisions/actions. Added 3 new exploration queue items to extend autonomous capability through May-June critical period.
+
+**What I Did**:
+1. ✅ Orientation — Read ORCHESTRATOR_STATE.md, INBOX.md, PROJECTS.md, BLOCKED.md
+2. ✅ Block verification — Confirmed mfg-farm test print is only active block (user action, cannot auto-verify)
+3. ✅ Project assessment — Confirmed all projects blocked: no autonomous work available in main projects
+4. ✅ Exploration Queue decision — Per protocol: queue had 1 deferred item (seedwarden Phase 2 photography). Added 3 new items to extend work through May-June
+
+**New Exploration Queue Items (Session 915)**:
+
+✅ **Item 1: Cross-Project Timeline Coordination & Resource Allocation (May-June 2026)** (COMPLETE)
+  - **File**: `projects/cross-project-timeline-may-june-2026.md` (3,200 words, comprehensive)
+  - **Scope**: Integrated project scheduling for May 9–July 3 period
+    1. Executive summary: Resource capacity (40–55 hours over 8 weeks, front-loaded Week 1)
+    2. Urgent window analysis (May 9–13): Domain 42 decision + stockbot checkpoint + Phase 1 launch coordination
+    3. Week-by-week critical path (Weeks 1–8 activities, dependencies, user hours)
+    4. Resource allocation breakdown (hours per project, per week)
+    5. Contingency paths (if user capacity < 40 hours)
+    6. Decision trees for May 9–13 (Domain 42 execution, stockbot outcomes, seedwarden readiness)
+    7. Resource conflict analysis (identifies no conflicts; all projects can run in parallel)
+  - **Key findings**:
+    - Week 1 (May 9–15) is the peak: 8–12 hours needed (Domain 42 + stockbot + Phase 1 decision + launch)
+    - Weeks 2–8 are distributed 2–3 hours/week (monitoring + gate assessments)
+    - Domain 42 and stockbot are parallel (independent execution, no resource conflict)
+    - Seedwarden Phase 2 (May 30) can launch independently of Phase 1
+    - No projects block each other's critical path
+  - **Business value**: User can see full 8-week landscape with decision trees for key gates. Eliminates "what should I do next?" ambiguity. Enables strategic trade-off decisions if capacity is constrained.
+  - **Status**: Committed to projects/
+
+**Remaining Queue Items** (NOT STARTED — prerequisites or future work):
+- **Item 2: Stockbot Jetson Hardware Resilience Assessment** (2–3 hrs estimated) — Jetson currently unreachable (Tailscale recovery needed); deferred to after connectivity restored
+- **Item 3: (Future item TBD)** — Placeholder for Phase 2 expansion domains or post-May-12 stockbot architecture work
+
+**Project Status** (no changes):
+- 🔴 **stockbot** (#1): Engine running (2 sessions, AAPL trades active). May 12 checkpoint 3 days away. Awaiting Jetson verification + user approval for live trading restart
+- 🔴 **resistance-research** (#2): Phase 1-5 COMPLETE, 37 domains production-ready. Awaiting distribution path decision (A/A+37/B) + May 13 Domain 42 decision
+- 🔴 **cybersecurity-hardening** (#3): Phase 1+2 complete, Tier 2 infrastructure ready. Awaiting user approval + Phase 1 response data to trigger Tier 2
+- 🟠 **mfg-farm** (#4): Blocked on test print (user action)
+- 🟡 **seedwarden** (#5): Phase 2 ready (May 30), Phase 3 ready (June 15–July 1). Awaiting user tag corrections + photo logistics confirmation
+- ⏸️ **open-source-rideshare** (#10): Paused
+
+**Exploration Queue Status**:
+- ✅ Items 1–6: COMPLETE (Sessions 912–914)
+- ✅ Item 7: DEFERRED (seedwarden Phase 2 photography; requires field research by user)
+- ✅ Item 8: COMPLETE (Session 915: Cross-Project Timeline Coordination)
+- ⏳ Item 9: PENDING (Jetson assessment, awaiting connectivity)
+
+**Budget Status**: Sonnet 58.9% (1,095,745 tokens), All-models 47.9%. Reset in 66 hours (Tuesday 00:00 UTC). No budget pressure.
+
+**Critical Timing — IMMEDIATE USER ACTION REQUIRED**:
+- **TODAY (May 9, immediate)**: Domain 42 distribution decision (Execute Category A May 9–13 before deadline, or defer?)
+- **Before May 12 20:00 UTC**: Verify stockbot Jetson connectivity + engine health
+- **May 13**: Domain 42 Congressional submission deadline (if chosen)
+- **May 12–13**: Stockbot Gate 1 checkpoint execution
+
+**Next Steps for Orchestrator** (upon user clarification):
+1. Await user decision on Domain 42 (execute or defer)
+2. May 10–12: Execute any chosen path in parallel
+3. May 12: Run stockbot checkpoint (pre-validation checks + outcome classification)
+4. May 13–30: Monitor Phase 1 response rates + Phase 2 launch prep
+5. May 30: Seedwarden Phase 2 launch execution
+
