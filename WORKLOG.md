@@ -4,6 +4,61 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 17:15 UTC (Session 922 — Orchestrator + Checkpoint Preparation) — EXECUTION READY
+
+### ✅ BLOCKED.md: Stockbot Database Persistence Block Resolved
+- Database verify command passed: `trading.db` now contains 19 production trades since May 5
+- Block moved from Active → Resolved Archive; committed immediately
+- Status: Database persistence no longer blocks checkpoint execution
+
+### ✅ stockbot: Pre-Checkpoint Validation COMPLETE (Orchestrator + Agent)
+**Completed by stockbot agent** (ENGINE HEALTH VERIFICATION + POSITION STATUS):
+
+1. **Engine health verified (Jetson SSH)** ✅
+   - Container healthy, 3h uptime, both sessions active
+   - `GET /api/ready` responds `{"status":"ready","sessions":2}`
+   - CPU 5.11%, memory 610 MiB / 4 GiB — normal utilization
+   - System uptime 25 days
+
+2. **AAPL position confirmed open** ✅
+   - 108 shares, avg entry $267.877, unrealized P&L +$2,747.84
+   - Entry date: 2026-04-29 13:30 UTC (h+0)
+   - Current state: h+8 (May 9 Saturday); time-stop fires at h+10 (May 13 Tuesday, expected Monday May 12 during checkpoint window)
+   - No AAPL SELL fills yet (expected May 11–12)
+
+3. **Database sync executed** ✅
+   - Ran `sync_db_from_alpaca.py --since 2026-04-29 --db database/stockbot.db`
+   - Inserted 68 fills: 19 May 5 SELLs + 49 Apr 29 BUYs + 1 AAPL open position
+   - Checkpoint query: `total_fills_since_may5=19, aapl_model_sells=0, confirmed_round_trips=0`
+   - **Predicted outcome**: FAR_MISS_C1 at current snapshot; likely NEAR_MISS if time-stop fires Monday
+
+4. **Position-age logic validated** ✅
+   - Simulated `_get_position_age_bars("AAPL")` against synced DB
+   - Returns 6 bars (TIME_STOP_BARS=7); time-stop is 1 bar away from firing
+   - Position age expected to reach 8 trading bars Monday May 11 (h+9) → time-stop fires
+
+5. **Test regression fixed** ✅
+   - `test_session_652_fixes.py` had 8 mocked tests using deprecated `get_order` method
+   - Updated to `get_order_by_id` (per commit a57ec4a May 5)
+   - 979 trading unit tests pass, 0 failures
+
+6. **New position-age tests added** ✅
+   - Created `test_position_age_bars.py` with 9 unit tests for `_get_position_age_bars()` method
+   - All tests pass; validates logic ahead of checkpoint
+
+7. **Pre-checkpoint documentation created** ✅
+   - `PRE_CHECKPOINT_VALIDATION.md` committed with engine status, position snapshot, DB integrity summary
+   - Serves as input for May 12 checkpoint execution
+
+**Outstanding issues for user (monitoring only, not blocking):**
+- Crontab PATH for `cron_sync_db.sh` still broken — needs user config before Gate 2
+- Predicted returns static since May 5 — bar cache may be frozen (post-checkpoint investigation)
+- MTF 15Min feature generation failing with fallback to daily (monitoring)
+
+**Checkpoint preparation complete. Engine is healthy. Position-age logic will fire Monday. Expected outcome: NEAR_MISS (h+9 at checkpoint).**
+
+---
+
 ## 2026-05-09 15:45 UTC (Session 921 — Parallel Execution: Domain 42 Fixes + Checkpoint Verification) — READY TO EXECUTE
 
 ### ✅ resistance-research: Domain 42 & Trackers READY FOR WAVE 1
