@@ -4,6 +4,36 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 09:02 UTC (Session 920 — Parallel Orchestrator Assessment) — CRITICAL FINDINGS
+
+### ⚠️ CRITICAL ISSUE IDENTIFIED: Jetson Unreachable + DB Sync Broken
+
+**Orchestrator spawned two parallel agents to assess unblocked work:**
+
+1. **resistance-research agent** (SESSION_920_ASSESSMENT.md written):
+   - Domain 42 (Drug Policy) Wave 1 submission ready — **should execute TODAY**
+   - Critical template fix: Remove Section 591 urgency argument (Congress dropped it, but DEA hearing still proceeding)
+   - Correct hearing recess date in contact list (July 3-5 → July 3-6)
+   - Add 3 state AGs to contact list (NJ, IL, MN)
+   - **Tracker status**: First-amendment + police-brutality production-ready ✅; Environmental-rollbacks needs EPA Endangerment Finding verification; **Litigation tracker CRITICAL GAP** — 5 items need updating (Xinis outcome, Nashville ruling, Callais v. Landry, FISA final, Section 122 CIT) before Phase 1 distribution
+   - **Phase 2 priorities**: (1) Labor Rights/NLRB Crisis, (2) Climate Policy Rollback, (3) Science/Research Policy weaponization
+
+2. **stockbot agent** (GATE_1_CHECKPOINT_VALIDATION.md written):
+   - **🔴 CRITICAL BLOCKER**: Jetson is UNREACHABLE (5-second Tailscale timeout). Engine cannot trade.
+   - **🔴 HIGH ISSUE**: DB sync cron broken since April 30 — no fills recorded for May 6-9 window
+   - Backtesting report (Session 900) is complete and well-structured ✅
+   - AAPL position has duplicate records (id=1, id=21) from Session 919 init-loop fix
+   - ridge_wf session appears to be placeholder — only lgbm_ho actively trading
+   - **Gate 1 checkpoint outcome** (May 12): ~75% FAR_MISS_C1 (timing artifact: AAPL h+10 exit fires May 14, not May 12 — this is expected behavior)
+   - **Pre-checkpoint fixes required** (user action):
+     1. Restore Jetson SSH connectivity
+     2. Restart Docker container
+     3. Run Alpaca DB sync to close May 6-9 data gap
+
+**Status**: Both assessments logged. Domain 42 submission ready for execution today (pending template fix). Stockbot requires immediate user action on Jetson connectivity.
+
+---
+
 ## 2026-05-09 07:54 UTC (Session 919 — Stockbot Initialization Loop Fix) — JETSON BLOCKER RESOLVED
 
 ### ✅ CRITICAL FIX: OrderExecutor Initialization Loop
