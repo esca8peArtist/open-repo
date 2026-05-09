@@ -4,6 +4,57 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 Session 906 (early morning UTC) — Orchestrator — PARALLEL WORK: STOCKBOT LIVE TRADING PROFILE OVERRIDES + CYBERSECURITY-HARDENING TIER1 TEMPLATE BACKPORT ✅
+
+### Summary
+
+**Parallel Agent Execution**: Two subagents (stockbot, cybersecurity-hardening) completed blocking technical work and template maintenance identified in prior sessions. Both autonomous, both production-ready for immediate deployment.
+
+### Results
+
+**1. stockbot: Runtime Profile Overrides for Live Session Start** ✅
+- **Problem**: Backtest report (Session 900, Section 18 "Do now") identified need to restart META_LGB_v1 and MSFT_GB_v1 sessions with backtest-winning execution profiles (stop=30%/70% profit for META, stop=50%/50% for MSFT). Original sessions run with default configs baked at training time, mismatching backtest parameters.
+- **Solution**: Implemented runtime profile override feature in options model API
+  - Added `LiveSessionStartRequest` Pydantic model for optional execution config overrides (stop, profit, DTE, regime filter, position sizing)
+  - Updated `POST /api/options/live/{model_id}/start` to accept optional JSON body with override parameters
+  - `OptionsLiveSession._config_from_payload()` now accepts overrides; non-None values replace stored config
+  - Full resolved config exposed via `to_dict()` for verification
+- **Secondary Fix**: XGBoost label encoding — XGBClassifier requires [0,1,2] but training pipeline produces [-1,0,1]. Added `_XGBLabelAdapter` to remap at fit/predict.
+- **Testing**: 19 new `TestConfigOverrides` tests + 19 new `TestXGBLabelAdapter` tests. Total 90/90 tests pass.
+- **Deliverable**: Restart command documented
+  ```
+  POST /api/options/live/bf347ee6/start?paper=true
+  {"exit_stop_pct": 0.3, "exit_profit_pct": 0.7, "dte": 45, "regime_filter_enabled": true}
+  ```
+- **Impact**: BLOCKED.md entry "Original model options_config does not match backtest-winning execution profiles" now resolved. Backtest report's "Do now" action items fully executable.
+- **Commit**: `75d5740` (stockbot submodule)
+
+**2. cybersecurity-hardening: Backport May 2026 Threat Updates into TIER1 Email Templates** ✅
+- **Problem**: May 5-6 threat research (`may-2026-threat-update.md`, `may-2026-advanced-threats.md`) explicitly recommended two additive sentences for outreach templates. Sentences were not integrated into the five personalized email drafts in `TIER1_OUTREACH_PREPARED.md` (created April 26, pre-research).
+- **Recommendations Implemented**:
+  1. **Palantir IRS financial mapping**: "Palantir's IRS contract maps financial relationships across organizations and individuals connected to groups under tax scrutiny — creating a data surface beyond immigration enforcement."
+  2. **NRSC Talarico deepfake precedent**: Reference to "NRSC March 2026 Talarico deepfake case" as real-world voice/video verification threat example
+- **Execution**: Both sentences integrated into all five email drafts (NILC, CLINIC, RAICES, ILRC, NLG) with tailored placement and phrasing per organization's threat profile:
+  - NILC/CLINIC: IRS sentence in opening ELITE paragraph, deepfake sentence as following paragraph (communications verification context)
+  - RAICES: IRS sentence extended to "advocacy organizations like RAICES", deepfake sentence post-Texas/ELITE context
+  - ILRC: IRS sentence in threat infrastructure paragraph (practitioner-focus relevance), deepfake as "emerging social engineering vectors" for practitioner distribution
+  - NLG: IRS contract as fifth bullet in threat model list, deepfake as standalone paragraph (civil liberties + Mass Defense context)
+- **Impact**: TIER1 email templates now current to May 9 threat research (13 days newer, closing a meaningful gap before user execution). Phase 1 distribution-ready assessment now fully accurate.
+- **Commit**: `2fa6c905`
+
+### Key Metrics
+
+- **Session output**: 2 autonomous work items, both production-ready for immediate deployment
+- **stockbot status**: Live session profile override infrastructure complete; awaiting user action to restart sessions with backtest-winning parameters
+- **cybersecurity-hardening status**: TIER1 email templates now current to May 2026 threat intelligence; Phase 1 execution-ready
+- **User actions required**: (1) stockbot: restart META/MSFT sessions with override parameters, (2) cybersecurity-hardening: approve Phase 1 templates + confirm Gist accessibility + set launch date
+
+### BLOCKED.md Resolutions
+
+- ✅ **stockbot** — "Original model options_config does not match backtest-winning execution profiles" — RESOLVED. Runtime override feature implemented, restart command documented.
+
+---
+
 ## 2026-05-09 Session 905 — Orchestrator — CYBERSECURITY-HARDENING PHASE 2 PLAYBOOKS COMPLETE ✅
 
 ### Summary

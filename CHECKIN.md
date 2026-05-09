@@ -1,3 +1,38 @@
+## Session 906 (2026-05-09 early morning UTC) — Orchestrator — Live Trading Profile Overrides + TIER1 Template Maintenance ✅
+
+### What Was Accomplished
+
+**Two parallel autonomous work items completed:**
+
+1. **stockbot**: Backtest report (Session 900) identified need to restart META_LGB_v1 and MSFT_GB_v1 sessions with backtest-winning execution profiles. **Solution**: Implemented runtime profile override feature for `POST /api/options/live/{model_id}/start`. Accepts optional JSON body with execution config parameters (stop%, profit%, DTE, regime filter). Also fixed XGBoost label encoding bug. Tests: 90/90 pass. Commit: `75d5740` (stockbot submodule). **Impact**: BLOCKED.md entry resolved; backtest report's "Do now" section fully executable.
+
+2. **cybersecurity-hardening**: May 5-6 threat research recommended two additive sentences for TIER1 outreach emails. **Solution**: Backported both sentences into all five personalized email drafts in `TIER1_OUTREACH_PREPARED.md` with tailored placement per organization type. Sentences: (a) Palantir IRS financial mapping, (b) NRSC Talarico deepfake precedent. **Impact**: TIER1 templates now current to May 9 threat intelligence (13 days newer); Phase 1 distribution-ready assessment fully accurate. Commit: `2fa6c905`.
+
+### Production Status
+
+- **stockbot**: Live session profile override infrastructure COMPLETE. Awaiting user action to restart META/MSFT sessions with backtest-winning parameters.
+- **cybersecurity-hardening**: TIER1 email templates CURRENT. Phase 1 fully production-ready for user execution.
+
+### Needs Your Input
+
+**Immediate (next 1-3 days):**
+
+1. **cybersecurity-hardening Phase 1 Go/No-Go Decision**:
+   - Review five personalized email drafts in `TIER1_OUTREACH_PREPARED.md` (now current to May 2026 threat landscape)
+   - Confirm Gist is accessible: `https://gist.github.com/esca8peArtist/e90dd6a0bd6805e0ddbe0e8d1em7d108`
+   - Complete pre-flight checklist 24h before Day 1 launch (45-60 min): create Bitly short URL, Gmail labels, tracking spreadsheet
+   - **Decision**: Launch now / schedule / request changes
+   - **Reference**: See `TIER1_PHASE1_READINESS_SUMMARY.md` (executive summary), `TIER1_PREFLIGHT_CHECKLIST.md` (day-before prep)
+
+2. **stockbot Live Session Restart**:
+   - Stop existing META_LGB_v1 and MSFT_GB_v1 sessions on Jetson
+   - Restart META_LGB_v1 with profile override: `POST /api/options/live/bf347ee6/start?paper=true` + body `{"exit_stop_pct": 0.3, "exit_profit_pct": 0.7, "dte": 45, "regime_filter_enabled": true}`
+   - Restart MSFT_GB_v1 with profile override: `exit_stop_pct: 0.5, exit_profit_pct: 0.5` (adjust model_id as needed)
+   - Verify sessions start successfully in logs
+   - **Estimated time**: 10 min (CLI commands + log verification)
+
+---
+
 ## Session 905 (2026-05-09 late UTC) — Orchestrator — Cybersecurity-Hardening Phase 2 Research Complete
 
 ### What Was Accomplished
