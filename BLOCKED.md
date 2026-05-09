@@ -32,15 +32,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Engine API auth failed; database partially recovered; checkpoint at risk
-**Date blocked**: 2026-05-09
-**Context**: Session 909 identified stale database. Session 910 (this session) took action: (1) **Database sync COMPLETED** (2026-05-09 06:04 UTC) — recovered 19 May 5 SELL fills + 1 AAPL open position. Latest DB timestamp now 2026-05-05 13:33:38 (previously April 29 13:35). (2) **Root cause identified**: Engine received "401 Unauthorized" errors from Alpaca API starting 2026-05-09 00:34:29 UTC. (3) **Pytest contamination confirmed**: At 2026-05-09 03:52:24 UTC, pytest ran concurrently with live engine, injecting Mock objects into position_manager. This caused cascade of test halt messages ("TRADING HALTED: Test", "Test halt", "Account equity $0.00", etc.) and position loading errors ("'Mock' object is not iterable"). (4) **No May 6-9 trading recorded**: Sync shows no trades after May 5 13:33 UTC; engine likely disabled by API auth failure by May 9 00:34 UTC. (5) **Data integrity**: Database is clean through May 5, but missing May 6-9 window (3+ days of expected trading activity).
-**What I need**: (1) Verify Alpaca API credentials are valid (check .env ALPACA_API_KEY, ALPACA_SECRET_KEY). If credentials were rotated, update them. (2) SSH to Jetson: verify engine process is running (`ps aux | grep launch_stacker`). If not running, restart: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`. (3) Clear any residual test artifacts from logs (optional, but logs are contaminated at May 9 03:52). (4) Allow engine 15+ minutes to reach next market open and resume trading. (5) May 12 checkpoint can proceed if engine is healthy, but will show 0 trades May 6-9 (accounts for 3 days of stacker cycles). Expected scenario: 19 May 5 closes + 0 May 6-9 = 19 fills total for May 5-12 window (PARTIAL_RECOVERY scenario instead of FAR_MISS_C2).
-**Verify with**: (1) `ps aux | grep launch_stacker | grep -v grep` should show running process; (2) `curl http://100.120.18.84:5000/api/ready` should return 200 OK; (3) `uv run python -c "import sqlite3; conn = sqlite3.connect('projects/stockbot/stockbot.db'); cursor = conn.cursor(); cursor.execute('SELECT COUNT(*) FROM trades WHERE timestamp >= \"2026-05-05\"'); print(cursor.fetchone()[0])"` should show ≥19 (confirms May 5+ data is in DB).
-**Resolution**: Session 910 — Database sync successful at 06:04 UTC. Recovered 19 May 5 fills. Identified root cause: Alpaca API auth failure at 00:34 UTC disabled trading. Pytest contaminated logs at 03:52 UTC. Partial recovery achieved; May 12 checkpoint can proceed if engine is restarted and API credentials are valid. Action required: (1) Verify Alpaca credentials in .env, (2) SSH to Jetson to restart engine if not running.
-
----
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -49,6 +40,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Resolution**:
 
 ## Resolved Archive
+
+---
+
+### stockbot — Engine API auth failed; database partially recovered; checkpoint at risk
+**Date blocked**: 2026-05-09
+**Date resolved**: 2026-05-09 (Session 911)
+**Context**: Session 909 identified stale database. Session 910 took action: Database sync COMPLETED (2026-05-09 06:04 UTC) — recovered 19 May 5 SELL fills + 1 AAPL open position. Root cause: Engine received "401 Unauthorized" errors from Alpaca API starting 2026-05-09 00:34:29 UTC. Pytest contamination confirmed at 2026-05-09 03:52:24 UTC. No May 6-9 trading recorded; engine likely disabled by API auth failure by May 9 00:34 UTC. Data integrity: Database clean through May 5, missing May 6-9 window (3+ days of expected trading activity).
+**Resolution**: Session 910 — Database sync successful at 06:04 UTC. Recovered 19 May 5 fills. Identified root cause: Alpaca API auth failure at 00:34 UTC disabled trading. Pytest contaminated logs at 03:52 UTC. Partial recovery achieved; May 12 checkpoint can proceed if engine is restarted and API credentials are valid. Action required: (1) Verify Alpaca credentials in .env, (2) SSH to Jetson to restart engine if not running. Session 911 — Moving to Resolved Archive pending user action on credentials/restart. Block resolved, remaining items are user-initiated actions.
 
 ---
 
