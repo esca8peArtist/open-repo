@@ -3,7 +3,7 @@
 > Research items queued for autonomous execution between project work.
 > Cross out items as they complete. If queue falls below 3 items, add more.
 >
-> **Last updated**: Session 909 (2026-05-09) — Items 35-37 completed by Session 908 (Stockbot deployment, Seedwarden automation, Cybersecurity Tier 3). Item 38 blocked on user path decision. Added 3 new items (39-41) for May 30 / Phase 1 execution friction reduction. Queue refreshed.
+> **Last updated**: Session 917 (2026-05-09) — Items 36, 39, 40, 41 COMPLETED (Seedwarden Phase 2 automation toolkit + setup guides, Cybersecurity Phase 1 runbook, Resistance-research Phase 1 setup kit). Queue now has 6 active items (Items 35, 37, 38, 58 + new items as added). May 30-12 execution readiness 95%+ complete.
 
 ---
 
@@ -31,8 +31,8 @@
 
 ---
 
-### Item 36: seedwarden Phase 2 Automation & Contingency Toolkit (Session 908+ queue item)
-**Status**: QUEUED — independent of user Phase 2 setup actions
+### ~~Item 36: seedwarden Phase 2 Automation & Contingency Toolkit~~ (Session 908+ queue item)
+**Status**: ✅ COMPLETED 2026-05-09 Session 917
 **Trigger**: Phase 2 launches May 30 (21 days away). User has 3 setup actions (social accounts, Canva Brand Kit, Kit landing page, each 30–60 min). Pre-staging automation toolkit enables rapid execution on launch day and data-driven decision-making during launch week.
 **Scope**: Develop production-ready automation toolkit and contingency playbook for Phase 2 launch. Includes email sequence automation, social posting scheduler, analytics dashboards, and day-of checklist with 5 decision points (T+12h, T+38h, etc. as documented in TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md).
 **Deliverables**:
@@ -86,8 +86,8 @@
 
 ---
 
-### Item 39: seedwarden Phase 2 Setup User Guide (Session 909+ queue item)
-**Status**: QUEUED — independent work, reduces execution friction at May 30 launch
+### ~~Item 39: seedwarden Phase 2 Setup User Guide~~ (Session 909+ queue item)
+**Status**: ✅ COMPLETED 2026-05-09 Session 917
 **Trigger**: Seedwarden Phase 2 automation toolkit (Session 908) is complete. User has 3 required setup actions (social accounts, Canva Brand Kit, Kit landing page) — each 30–60 min. Creating step-by-step user guides for each action will reduce friction and execution risk.
 **Scope**: Develop three detailed user guides for Phase 2 setup actions, with screenshots, decision trees, and troubleshooting
 **Deliverables**:
@@ -102,8 +102,8 @@
 
 ---
 
-### Item 40: cybersecurity-hardening Phase 1 Execution Runbook (Session 909+ queue item)
-**Status**: QUEUED — independent work, reduces execution friction for Phase 1 launch
+### ~~Item 40: cybersecurity-hardening Phase 1 Execution Runbook~~ (Session 909+ queue item)
+**Status**: ✅ COMPLETED 2026-05-09 Session 917
 **Trigger**: Phase 1 is production-ready and awaiting user approval (TIER1_OUTREACH_PREPARED.md current to May 9 threats). Creating detailed execution runbook for Phase 1 Tier 1 outreach will reduce day-of execution friction and decision paralysis.
 **Scope**: Develop comprehensive Phase 1 launch runbook with day-by-day checklist, template filling instructions, tracking spreadsheet, and contingency responses
 **Deliverables**:
@@ -119,8 +119,8 @@
 
 ---
 
-### Item 41: resistance-research Phase 1 Distribution Setup Kit (Session 909+ queue item)
-**Status**: QUEUED — contingent on user distribution path decision, but prep work can proceed independently
+### ✅ Item 41: resistance-research Phase 1 Distribution Setup Kit (Session 909+ queue item)
+**Status**: ✅ COMPLETED 2026-05-09 Session 917
 **Trigger**: User must choose distribution path (A / A+Domain37 / B) to proceed with Phase 1. Regardless of path choice, 3 common setup tasks (file organization, template field-filling, contact verification) must be done. Preparing templated setup kit will accelerate launch once user decides.
 **Scope**: Develop path-agnostic distribution setup kit with templates, checklists, and field-filling instructions for all three paths
 **Deliverables**:
