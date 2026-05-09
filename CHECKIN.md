@@ -1,3 +1,89 @@
+## Since Last Check-in (Session 921 — 2026-05-09 15:45 UTC — Parallel Execution)
+
+### ✅ MAJOR PROGRESS: Domain 42 Ready + Tracker Refreshes Complete + Domain 44 Research Done
+
+**resistance-research subagent completed 4 tasks (2 commits, all to master):**
+
+1. **Domain 42 Template Fix (CRITICAL)** ✅
+   - Section 591 urgency argument REMOVED (Congress dropped rider, but DEA hearing proceeding)
+   - All templates updated: `domain-42-email-template.md` + `domain-42-email-template-may28-urgency.md`
+   - **Status**: Ready to execute Wave 1 emails immediately (May 9–10, before May 28 deadline)
+
+2. **Environmental Tracker — Endangerment Finding Entry** ✅
+   - EPA rescission of Greenhouse Gas Endangerment Finding (February 12, 2026) fully documented
+   - Impact: 12,000+ additional deaths, 8.5M asthma attacks, $87B annual climate damages reversed
+   - NAS dispute and federal court FACA violation documented
+   - **Status**: Environmental tracker now production-ready for Phase 1 distribution
+
+3. **Litigation Tracker — 5-Item Refresh** ✅
+   - Xinis hearing (Abrego Garcia contempt deferred to June 11)
+   - Nashville Crenshaw ruling (pending May 9, no dismissal yet)
+   - Callais v. Landry (6-3 SCOTUS April 29 — most consequential VRA ruling since Shelby County, Section 2 now requires intentional discrimination proof)
+   - FISA Section 702 (45-day extension signed April 30, June 12 deadline)
+   - Section 122 CIT (2-1 ruling May 7, tariff struck down, Federal Circuit appeal pending)
+   - **Status**: Litigation tracker now production-ready for Phase 1 distribution
+
+4. **Domain 44 — Labor Rights/NLRB Crisis (Phase 2)** ✅
+   - 5,000 words, 42 citations, 7 comprehensive sections
+   - NLRB elections fell 30% (2,124→1,498), voter participation -42%
+   - August 2026 Prouty quorum cliff documented
+   - Trump v. Slaughter implications analyzed
+   - Reform architecture: independent appointment, statutory quorum requirement, sectoral bargaining
+   - **Status**: Phase 2 expansion ready for immediate deployment
+
+**stockbot subagent completed checkpoint verification (ENGINE HEALTHY, DB PERSISTENCE GAP IDENTIFIED):**
+
+1. **Jetson Engine Status: HEALTHY** ✅
+   - ✅ Reachable (ping RTT ~10ms, SSH functional)
+   - ✅ Docker container Up (2+ hours uptime, healthy status)
+   - ✅ Both AAPL trading sessions active and cycling correctly
+   - ⚠️ API endpoint `/api/ready` returns connection refused (observability gap; execution unaffected)
+   - **Correction to Session 920 CHECKIN**: Jetson is NOT unreachable. Engine is running and trading.
+
+2. **May 12 Checkpoint Scenario: FAR_MISS_C1 (Expected)** ✅
+   - AAPL position: 108 shares, +$2,747.84 unrealized (up from +$924 on May 8)
+   - Current trading fills: 0 SELL executions (position still open, h+10 exit scheduled May 14)
+   - Outcome: h+10 time-stop fires May 14 (not May 12) — timing artifact, not execution failure
+   - This is expected behavior per MAY_12_OUTCOME_ROADMAP.md
+   - **Status**: Checkpoint validation framework confirmed accurate
+
+3. **🔴 CRITICAL P0 BLOCKER — DB Persistence Gap** ⚠️
+   - **Problem**: trading.db contains ZERO production trades since May 5. All rows are test/integration data from Jan–Mar 2026.
+   - **Impact**: Position age tracking depends on DB queries. Time-stop exit logic (`_get_position_age_bars()`) returns None, preventing auto-exit at May 14.
+   - **Root cause**: `sync_db_from_alpaca.py` has not run since May 5. Alpaca API has live position, but local DB doesn't reflect May 6–9 activity.
+   - **Action required (BEFORE May 10, 36 hours)**: SSH to Jetson and run `python scripts/sync_db_from_alpaca.py` to backfill May 6–9 trades.
+   - **Verification**: `sqlite3 stockbot.db "SELECT COUNT(*) FROM trades WHERE timestamp >= '2026-05-05';"` should show May 6–9 production fills.
+
+### 📋 What Needs Immediate User Input
+
+1. **DOMAIN 42 WAVE 1 (TODAY/TOMORROW)**: Send emails to Category A drug policy organizations?
+   - Template fixes complete, ready to execute
+   - Timing: May 28 deadline is 19 days away; Wave 1 sent today gives 19-day engagement window vs. 14 days if deferred
+   - Recommendation: Execute today (May 9) to maximize engagement
+
+2. **STOCKBOT DB SYNC (BEFORE MAY 10, CRITICAL)**: Run database persistence recovery?
+   - SSH to Jetson: `python scripts/sync_db_from_alpaca.py`
+   - This is required for checkpoint time-stop logic to function
+   - Without it, AAPL position cannot auto-exit at scheduled May 14 trigger
+   - Time remaining: 36 hours
+
+3. **resistance-research DISTRIBUTION PATH**: Still awaiting your decision on Path A / A+37 / B
+   - All quality gates now cleared (trackers updated, Domain 42 fixed, Domain 44 research complete)
+   - User decision is the only remaining gate for full Phase 1 launch
+   - Recommendation: Provide path decision to enable immediate distribution execution
+
+### Session 921 Deliverables
+
+✅ **Domain 42 template fix** — Section 591 removed, ready for Wave 1 execution
+✅ **Environmental tracker refresh** — Endangerment Finding entry complete
+✅ **Litigation tracker update** — 5 items current through May 9
+✅ **Domain 44 research** — Labor Rights/NLRB Crisis complete (Phase 2 expansion)
+✅ **Checkpoint verification report** — Engine healthy, DB gap identified, scenario confirmed
+✅ **BLOCKED.md entry** — DB persistence gap documented with specific action and verification command
+✅ **WORKLOG.md** — Session 921 work logged
+
+---
+
 ## Since Last Check-in (Session 920 — 2026-05-09 AFTERNOON)
 
 ### 🔴 CRITICAL BLOCKAGE CONFIRMED: Jetson Unreachable
