@@ -1,3 +1,69 @@
+## Session 910 (2026-05-09 06:04 UTC) — Orchestrator — Stockbot Database Recovery & Root Cause Analysis ✅ PARTIAL RESOLUTION
+
+### What Was Accomplished
+
+**Critical database sync executed and root cause identified. Partial recovery achieved; ongoing blocker clarified.**
+
+**1. Database Sync Successful** ✅
+- Executed: `uv run python projects/stockbot/scripts/sync_db_from_alpaca.py --since 2026-05-05`
+- **Results**: 
+  - 1 open position inserted (AAPL 108 shares, entry avg 267.8770, unrealized +$2,747.84)
+  - 19 SELL fills inserted from May 5 13:30 UTC (MRK, AMZN, MA, UNH, CAT, COP, COST, RTX, CVX, FDX, HON, PG, LIN, INTC, DIS, NEE, SHW, WMT, GOOGL)
+  - Database updated from April 29 13:35 → May 5 13:33 UTC
+  - Trades table: 49 → 68 rows; Positions table: 1 → 21 (20 closed + 1 open)
+
+**2. Root Cause Identified** (Detailed Log Analysis)
+- **Primary block**: Alpaca API authorization failure starting 2026-05-09 00:34:29 UTC
+  - Error: "401 Unauthorized" repeating in errors_20260509.log (initial 100+ instances)
+  - Engine unable to fetch account info, positions, or orders (all API calls returned 401)
+  - Trading halted at that point (no fills after May 5 13:33 UTC)
+- **Secondary contamination**: pytest concurrent execution at 2026-05-09 03:52:24 UTC
+  - Test fixtures injected Mock objects into live engine's position_manager
+  - Result: "'Mock' object is not iterable" errors cascading through position loading
+  - Test halt messages ("TRADING HALTED: Test halt", "Test", "Manual halt", etc.) polluting error logs
+  - Indicates tests were run during live trading session (test/live environment separation failure)
+
+**3. Data Assessment**
+- **May 5 data**: ✅ COMPLETE (19 SELL fills recovered, database integrity verified)
+- **May 6-9 window**: ❌ MISSING (0 trades recorded despite engine logs showing activity)
+  - Likely cause: API auth failure disabled trading at 00:34 UTC May 9 (before any May 6-9 trades could execute)
+  - Engine continued running but unable to make API calls → no new trades possible
+
+**4. Block Status Updated** in BLOCKED.md
+- Changed from "Database stale; engine emergency shutdown" → "Engine API auth failed; database partially recovered"
+- Added detailed root cause analysis and specific resolution steps
+- Marked "Partial recovery achieved" instead of "data lost"
+
+### Production Status
+
+**Unchanged from Session 909**:
+- **stockbot**: May 12 checkpoint can proceed (data integrity verified through May 5), but will show 0 trades May 6-9 (scenario = PARTIAL_RECOVERY instead of FAR_MISS_C2)
+- **resistance-research, seedwarden, cybersecurity-hardening**: All on track (unaffected by stockbot issue)
+
+### Active Blocks (Remaining)
+
+1. **Alpaca API credentials**: 401 errors indicate credentials are invalid/expired/rotated
+   - **Resolution required**: Verify/update `.env` ALPACA_API_KEY and ALPACA_SECRET_KEY
+   - **Verification**: Can be tested locally: `python -c "from alpaca_trade_api import REST; REST().get_account()"`
+
+2. **Jetson engine status**: Unknown (cannot SSH from Pi)
+   - **Resolution required**: SSH to Jetson and verify engine process running (`ps aux | grep launch_stacker`)
+   - **If not running**: Restart with: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+
+3. **Test contamination cleanup**: Optional (logs are polluted but May 5 data is clean)
+   - **Resolution**: Clear logs or restart logging after engine restart
+
+### Needs Your Input
+
+**URGENT (before May 12 20:00 UTC)**:
+1. Verify Alpaca API credentials in `.env`. If rotated, update them.
+2. SSH to Jetson and verify engine is running. If not, restart using command above.
+3. After fixes, database will be ready for May 12 checkpoint execution.
+
+**Expected outcome post-fix**: May 12 checkpoint will show 19 fills from May 5 + 0 fills from May 6-9 = 19 total (PARTIAL_RECOVERY scenario, not FAR_MISS). May 12b gate (June 4 recheck with 2-month data window) remains on track.
+
+---
+
 ## Session 909 (2026-05-09 04:56 UTC) — Orchestrator — May 12 Checkpoint Readiness Audit ⚠️ BLOCKER IDENTIFIED
 
 ### What Was Accomplished

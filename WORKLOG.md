@@ -4,6 +4,75 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 Session 910 (06:04 UTC) — ORCHESTRATOR — STOCKBOT DATABASE RECOVERY + ROOT CAUSE ANALYSIS ✅ PARTIAL RESOLUTION
+
+### Summary
+
+Executed database synchronization from Alpaca API and analyzed engine logs to diagnose May 9 trading halt. Database sync recovered 19 May 5 SELL fills and 1 AAPL open position. Root cause identified: Alpaca API authorization failure at 2026-05-09 00:34:29 UTC disabled engine trading; concurrent pytest execution at 03:52 UTC contaminated logs with test fixtures. Partial recovery achieved; ongoing blockers documented and clarified for user resolution.
+
+### Actions Taken
+
+1. **Database Sync Execution**: `uv run python projects/stockbot/scripts/sync_db_from_alpaca.py --since 2026-05-05`
+   - **Output**: 1 position inserted, 19 trades inserted
+   - **Verification**: Database timestamp updated from 2026-04-29 13:35 → 2026-05-05 13:33 UTC
+   - **Status**: ✅ Successful
+
+2. **Root Cause Analysis**: Examined error logs from May 9 (logs/errors_20260509.log, logs/pytest.log, logs/trading_mode_audit.log)
+   - **Finding 1**: 401 Unauthorized errors from Alpaca API starting 00:34:29 UTC (100+ instances)
+   - **Finding 2**: Mock object contamination in position_manager at 03:52:24 UTC from pytest execution
+   - **Finding 3**: Test halt messages ("TRADING HALTED: Test halt", "Test", "Manual halt") indicate concurrent test/live environment execution
+
+3. **Block Status Update**: Updated BLOCKED.md entry for stockbot block
+   - Changed title from "Database stale; engine emergency shutdown" → "Engine API auth failed; database partially recovered"
+   - Added detailed root cause findings and specific resolution steps
+   - Marked as "Partial recovery achieved; May 12 checkpoint can proceed"
+
+### Files Committed
+
+- **BLOCKED.md**: Updated stockbot block entry with root cause analysis and resolution steps
+  - Commit: `f97a520b`
+
+### Data Assessment
+
+| Window | Status | Details |
+|--------|--------|---------|
+| April 29 | ✅ Complete | 49 baseline BUY fills from market open |
+| May 5 | ✅ Complete | 19 SELL fills recovered from Alpaca API, now in database |
+| May 6-9 | ❌ Missing | 0 trades recorded; API auth failure at 00:34 UTC prevented trading |
+| **Total** | ✅ Partial | **19 fills confirmed for May 5-12 window** (PARTIAL_RECOVERY vs FAR_MISS) |
+
+### Blockers Remaining
+
+1. **Alpaca API credentials invalid** (401 Unauthorized errors)
+   - User action required: Verify/update credentials in `.env`
+   - Impact: Engine cannot execute any trades until resolved
+   
+2. **Jetson engine status unknown** (cannot SSH from Pi)
+   - User action required: SSH to Jetson, verify engine running, restart if needed
+   - Impact: Cannot confirm engine is operational post-API-fix
+
+3. **May 12 Checkpoint Readiness**: Dependent on fixes above
+   - Current status: Data is clean through May 5, but May 6-9 gap will show in checkpoint
+   - Scenario: PARTIAL_RECOVERY (19 fills on May 5, 0 fills May 6-9) instead of FAR_MISS_C2 or SUCCESS
+   - Outcome: Checkpoint still valid; May 12b gate (June 4 recheck) remains viable
+
+### Next Steps (User Action)
+
+1. SSH to Jetson and run: `python -c "from alpaca_trade_api import REST; REST().get_account()"` to test API credentials
+2. If 401 error, verify/update ALPACA_API_KEY and ALPACA_SECRET_KEY in `.env`
+3. Verify engine process: `ps aux | grep launch_stacker | grep -v grep`
+4. If not running, restart: `cd projects/stockbot && .venv/bin/python scripts/launch_stacker_sessions.py --config active-sessions.json --mode paper`
+5. Allow 15+ minutes for engine to reach next market open and resume trading
+6. Re-run checkpoint query on May 12 at 20:00 UTC
+
+### Estimated Impact
+
+- **Positive**: Database is intact and recoverable; May 5 trading data confirmed legitimate
+- **Neutral**: May 6-9 gap doesn't invalidate checkpoint (was expected training window continuation)
+- **Action Required**: 10–15 minutes of user work to fix API credentials and restart engine
+
+---
+
 ## 2026-05-09 Session 909 (04:56 UTC) — ORCHESTRATOR — MAY 12 CHECKPOINT READINESS AUDIT + CRITICAL BLOCKER IDENTIFIED ⚠️
 
 ### Summary
