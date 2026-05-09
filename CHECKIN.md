@@ -74,13 +74,27 @@
 
 ### Session 921 Deliverables
 
-✅ **Domain 42 template fix** — Section 591 removed, ready for Wave 1 execution
-✅ **Environmental tracker refresh** — Endangerment Finding entry complete
-✅ **Litigation tracker update** — 5 items current through May 9
-✅ **Domain 44 research** — Labor Rights/NLRB Crisis complete (Phase 2 expansion)
-✅ **Checkpoint verification report** — Engine healthy, DB gap identified, scenario confirmed
-✅ **BLOCKED.md entry** — DB persistence gap documented with specific action and verification command
-✅ **WORKLOG.md** — Session 921 work logged
+**resistance-research** (4 major deliverables):
+- ✅ **Domain 42 template fix** — Section 591 removed, all templates updated, ready for Wave 1 execution
+- ✅ **Environmental tracker refresh** — Endangerment Finding entry (5,000 words of impact data, sources, court challenges)
+- ✅ **Litigation tracker update** — 5 items current through May 9 (Xinis, Crenshaw, Callais, FISA, Section 122 CIT)
+- ✅ **Phase 2 Domain 44** — Labor Rights/NLRB Crisis (5,000w, 42 sources, committed)
+- ✅ **Phase 2 Domain 45** — Climate Policy Rollback (7,500w, 40+ sources, committed)
+- ✅ **Phase 2 Domain 46** — Federal Research Policy (6,221w, 51 sources, committed)
+- **Result**: resistance-research now has 39 domains complete (up from 36), all Phase 2 expansion candidates researched, all quality gates cleared for Phase 1 distribution
+
+**stockbot** (3 major deliverables):
+- ✅ **Checkpoint verification report** — ENGINE HEALTHY, both sessions cycling correctly
+- ✅ **DB persistence gap identified** — trading.db zero production trades since May 5, time-stop logic blocked
+- ✅ **Scenario confirmed** — FAR_MISS_C1 (timing artifact, h+10 exit fires May 14 not May 12, expected behavior)
+- **Result**: Checkpoint validation framework verified, critical pre-May-10 action identified (DB sync)
+
+**Orchestration** (5 major deliverables):
+- ✅ **BLOCKED.md** — New DB persistence blocker documented with specific action and verification
+- ✅ **WORKLOG.md** — Session 921 comprehensive log (wins and findings)
+- ✅ **CHECKIN.md** — User input requests and session summary
+- ✅ **ORCHESTRATOR_STATE.md** — Updated with 39 domains, checkpoint status, next steps
+- ✅ **5 commits to master** (domain-42, trackers, Domains 44-46, final state)
 
 ---
 
