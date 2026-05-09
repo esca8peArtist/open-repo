@@ -3,7 +3,7 @@ title: "Environmental Regulation Rollbacks Tracker — Trump Administration 2025
 subtitle: "Agency-by-Agency Reference for Environmental Law Defenders"
 phase: "Phase 3 — Public Reference"
 date_compiled: "2026-04-26"
-last_updated: "2026-05-07"
+last_updated: "2026-05-09"
 april_2026_entries: "entries 25–30 added; entry 1 (Endangerment Finding) updated with effective date (April 20) and reconsideration petition; entry 12 (EPA enforcement) updated with February-March 2026 enforcement collapse data and Q1 2026 EHSLeaders enforcement roundup; entry 28 (OOOO methane flaring rule) added April 27; entry 29 (CCR coal ash proposed rollback) added April 27; entry 30 (plastic pyrolysis Clean Air Act reclassification) added April 27"
 status: "distributable"
 confidence: "high for finalized/published rules; moderate for pending rules and ongoing litigation"
@@ -567,6 +567,42 @@ The U.S. formally re-withdrew from the Paris Agreement on Climate Change. The wi
 **Litigation**: Expected from environmental and environmental justice organizations upon finalization. No litigation filed as of April 27, 2026.
 
 **Sources**: [AZPM — April 15 report](https://news.azpm.org/p/environmentnews/2026/4/15/229377-epa-may-ease-regulation-of-chemical-plastic-recycling-and-environmentalists-worry/) | [C&EN — analysis](https://cen.acs.org/environment/pollution/epa-wants-to-let-plastic-incinerators-skirt-clean-air-act/104/web/2026/03) | [Times of San Diego — April 4 report](https://timesofsandiego.com/environment/2026/04/04/chemical-industry-epa-protections-plastic-waste/) | [ABC News — April 15](https://abcnews.com/Technology/wireStory/epa-ease-regulation-chemical-plastic-recycling-environmentalists-worry-132057726)
+
+---
+
+## VI-C. May 2026 Additions
+
+### 33. EPA IRIS Chemical Assessment Directive — 500+ Chemical Safety Standards Destabilized (April 27–May 5, 2026)
+**Rule**: Internal EPA directive by Deputy Administrator David Fotouhi re: Integrated Risk Information System (IRIS) program
+**Code**: Not a formal rulemaking; internal administrative directive with downstream effects on hundreds of regulations
+**Agency**: EPA
+**Status**: [ADMIN ACTION — internal directive; not a formal rule; formally effective as agency policy upon distribution]
+
+**Dates**: Fotouhi memo dated April 27, 2026. Reported publicly by ProPublica on approximately May 5, 2026.
+
+**What happened**: EPA Deputy Administrator David Fotouhi circulated a six-page internal memo sharply criticizing the Integrated Risk Information System (IRIS) — the EPA's science program that has, since 1985, produced the authoritative toxicity assessments that underpin hundreds of chemical safety regulations nationwide. The memo directed: (1) EPA offices that have relied on IRIS assessments to review and reassess them; (2) the EPA to add "disclaimer language" to the IRIS website stating that IRIS toxicity findings are not necessarily intended for use in regulation.
+
+**What IRIS is**: IRIS produces hazard assessments — hazard identification and dose-response analyses — for individual chemicals. These assessments form the scientific foundation for EPA regulations on arsenic limits in drinking water, lead in paint and soil, formaldehyde, benzene, and over 500 other chemicals. IRIS values are also used by state environmental agencies and regulatory bodies. When an IRIS assessment says a chemical is hazardous at a given exposure level, that finding is the peer-reviewed scientific basis for EPA's authority to regulate the chemical to that level.
+
+**Fotouhi's stated reasoning**: The memo argues that IRIS assessments apply multiple conservative assumptions that "stack on top of each other," producing safe exposure levels that are "orders of magnitude below naturally occurring levels in the environment" — a claim that environmental health scientists have characterized as methodologically unfounded. The memo criticizes IRIS for not including the perspective of all "stakeholders" — a formulation that critics read as requiring industry input into what should be an independent scientific assessment.
+
+**Real-world impact — scale**: This single administrative directive has a potential regulatory footprint larger than any individual final rule in this tracker. IRIS assessments underpin: arsenic limits in drinking water (NPDWR Maximum Contaminant Level); lead in paint, soil, and drinking water; formaldehyde exposure standards; benzene carcinogenicity assessments; and more than 500 chemical-specific assessments used in EPA regulations, state standards, and federal Superfund remediation decisions. Adding a disclaimer that IRIS findings are "not necessarily meant to be used in regulation" — without replacing them with any alternative science — creates a litigation basis for industry challengers to argue that regulations relying on IRIS lack the scientific foundation required under the Administrative Procedure Act.
+
+**The anti-regulatory mechanism**: Undermining the scientific foundation is a distinct and more durable deregulatory strategy than simply rolling back individual rules. If a specific rule can be challenged and struck down, a future administration can restore it. But if the peer-reviewed scientific basis for hundreds of rules is systematically discredited through an administrative directive, the reconstruction burden falls on future EPA administrations that must individually re-establish the scientific foundation for each regulation. Former EPA IRIS program official said that this approach risks "politicizing chemical risk assessments" in a way that would take a decade to repair.
+
+**Context in the tracker**: This directive compounds entries 1 (Endangerment Finding rescission), 3 (PM2.5 NAAQS rollback), 8 (PFAS drinking water standards rollback), and 12 (EPA enforcement collapse). The pattern is: remove the legal authority to regulate (Endangerment Finding), weaken the specific standards (PM2.5, PFAS), cut enforcement capacity (entry 12), and now undermine the scientific foundation underlying all the remaining standards simultaneously.
+
+**Litigation**: This is an internal administrative directive, not a formal rule, which makes direct APA challenges complex. Environmental and public health organizations are monitoring for downstream effects on specific regulations that cite IRIS assessments. A challenge would likely arise if EPA uses the IRIS disclaimer to reject an IRIS assessment in a specific rulemaking proceeding.
+
+**Sources**: [ProPublica — full memo detail](https://www.propublica.org/article/trump-epa-directive-chemical-assessments) | [Salon — broader analysis](https://www.salon.com/2026/05/05/a-huge-setback-new-epa-directive-could-weaken-hundreds-of-chemical-regulations-partner/) | [Chemical and Engineering News — former official quote](https://cen.acs.org/policy/regulation/epa-move-risks-politicizing-chemical/104/web/2026/05) | [Harvard EELP — Regulatory Tracker](https://eelp.law.harvard.edu/tracker-type/regulatory-tracker/)
+
+---
+
+### 34. Risk Management Program (RMP) — Comment Deadline May 11, 2026; Finalization on Track
+
+**Status update**: The EPA's proposed RMP rollback (entry 25 in this tracker) has a comment deadline of May 11, 2026. Environmental and community organizations have submitted extensive comments opposing the rollback of third-party audit requirements, safer technology analysis, and public information-sharing provisions. A final rule is expected in summer 2026. Organizations wishing to submit comments before May 11 should do so through the EPA docket (EPA-HQ-OLEM-2025-0313).
+
+**Sources**: [EPA — RMP rulemaking page](https://www.epa.gov/rmp) | [SBA — comment deadline extension](https://advocacy.sba.gov/2026/04/06/epa-extends-comment-period-for-proposed-risk-management-program-updates/)
 
 ---
 

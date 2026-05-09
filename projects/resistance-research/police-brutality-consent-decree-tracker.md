@@ -1,7 +1,7 @@
 ---
 title: "Police Brutality Consent Decree Tracker — Compliance, Defiance, and the Federal Withdrawal"
 description: "City-by-city reference tracking active and terminated police consent decrees, specific provision violations, monitoring gaps, and the 2025 collapse of federal pattern-or-practice enforcement. For use by activists, civil rights lawyers, and journalists."
-last_updated: 2026-05-07
+last_updated: 2026-05-09
 status: active
 phase: 3
 project: resistance-research
@@ -495,6 +495,66 @@ Cross-reference: `first-amendment-suppression.md` Section A.8 for the full RSF i
 | May 2026 (ongoing) | Cleveland consent decree exit ruling still pending before Judge Oliver | N.D. Ohio | May 27 case management conference approaching; civilian oversight commission continues to contest readiness |
 | Apr. 30–May 1, 2026 | Aurora (CO) monitor report: 63 of 78 mandates in substantial compliance; full compliance unlikely by Feb. 2027 deadline | State AG / Arapahoe County | Last year of state consent decree; extension or restructuring likely; Elijah McClain case origin |
 | May 1–7, 2026 | No new federal pattern-or-practice investigations opened; DOJ Civil Rights Division posture unchanged | Federal | DOJ structural enforcement capacity remains at documented lows — 13 trial attorneys, egregious-deaths-only threshold |
+
+---
+
+## May 9, 2026 Additions
+
+*last_updated: 2026-05-09. Additions: Springfield exit confirmed (May 8 ruling); Cleveland exit denied (May 8 ruling, Judge Oliver); Baltimore partial compliance sections terminated; DHS detention ombudsman closure connection to police accountability accountability gap.*
+
+---
+
+### Springfield, Massachusetts — Consent Decree Terminated (May 8, 2026)
+
+**What happened**: On May 8, 2026, officials announced that the Springfield Police Department's federal consent decree — entered in April 2022 following a DOJ investigation finding the Narcotics Bureau "engaged in a pattern or practice of excessive force" — formally ended. The court-appointed Compliance Evaluation Team's contract expired in April 2026, and city leaders sought and received judicial endorsement of the termination after the monitoring team certified that "all material requirements of the agreement have been satisfied."
+
+**Duration**: Approximately four years — one of the shortest consent decrees in modern DOJ history. Compare: Oakland (22+ years, ongoing), New Orleans (13 years), Seattle (13 years), Baltimore (7+ years, ongoing).
+
+**Significance for the pattern analysis**: The four-year duration reflects both the decree's narrow scope (covering only the Narcotics Bureau, not city-wide policing) and the Trump DOJ's institutional interest in demonstrating consent decree exits. The exit follows the administration's pattern: no new oversight commitments (Minneapolis, Louisville proposed decrees withdrawn); joint exit from existing decrees where compliance is certifiable. Springfield was the lowest-risk exit case available — narrow scope, cooperative municipality, short timeline.
+
+**What happens next**: Springfield has no ongoing federal oversight obligation. City leadership has committed to maintaining the reforms. Without the monitoring infrastructure, that commitment is unenforceable. The Narcotics Bureau practices that triggered the decree — excessive force — are now subject only to internal police discipline and potential state litigation, not federal court oversight.
+
+**Sources**: [WAMC — termination confirmed (May 8, 2026)](https://www.wamc.org/news/2026-05-08/consent-decree-demanding-extensive-reforms-at-springfield-pd-comes-to-an-end) | [DOJ — original Springfield decree](https://www.justice.gov/usao-ma/pr/us-v-springfield-police-department-and-city-springfield)
+
+---
+
+### Cleveland — Exit Motion Denied; Judge Oliver Rules City "Has a Ways to Go" (May 7–8, 2026)
+
+**What happened**: In a ruling released on May 7–8, 2026, U.S. District Judge Solomon Oliver denied the joint city-DOJ motion to terminate the Cleveland Division of Police consent decree. Judge Oliver wrote that "the city has a ways to go before reaching Substantial and Effective Compliance with all of the material sections of the agreement."
+
+**Background on the motion**: The city filed a joint motion with the Trump Justice Department in February 2026 requesting termination. The Community Police Commission — the civilian oversight body created by the decree — formally opposed the motion, arguing that compliance was insufficient and that the civilian oversight infrastructure was too weakened to substitute for federal oversight. Judge Oliver had denied the Commission amicus status but declined to dismiss their concerns.
+
+**Legal significance**: This ruling is the most significant judicial outcome in the consent decree field since the Trump DOJ's May 21, 2025 withdrawal from Minneapolis and Louisville. A federal judge, reviewing a joint government request to end oversight, found the request premature on the merits. This establishes: (1) courts retain independent authority to assess consent decree compliance even when both formal parties agree to exit; (2) civilian oversight commission concerns can inform that assessment even without formal amicus standing; (3) the Trump DOJ's interest in demonstrating exits is not self-executing — judges can and do reject joint termination motions where the factual record is insufficient.
+
+**What happens now**: The May 27 case management conference will determine next steps. Judge Oliver's ruling signals he will require a more thorough compliance record before approving termination. The Community Police Commission's continued advocacy, even without formal legal status, appears to have influenced the outcome.
+
+**Sources**: [WKYC — judge denies motion](https://www.wkyc.com/article/news/local/cleveland/federal-judge-denies-request-cleveland-doj-end-police-consent-decree/95-8005dd17-5f3f-4ca7-9d07-9f2b83b29168) | [WYSO — ruling detail](https://www.wyso.org/2026-05-08/judge-rejects-clevelands-request-to-end-federal-police-consent-decree)
+
+---
+
+### Baltimore — Three Consent Decree Sections Terminated After Sustained Compliance
+
+**What happened**: U.S. District Judge James K. Bredar terminated three sections of the Baltimore Police Department consent decree after finding BPD in sustained compliance: First Amendment Protected Activity, Coordination with Baltimore City School Police, and the Community Oversight Task Force. More than 83% of the decree is now in compliance or on track.
+
+**Significance**: Baltimore provides the model for what functional, sustained consent decree compliance looks like under a state attorney general-administered decree (entered 2017; monitored by an independent team under federal court supervision). Baltimore's 83% compliance rate, achieved over seven years, contrasts sharply with Chicago's 25% compliance after seven years. The partial section terminations are procedurally normal and reflect actual compliance, not political pressure to exit.
+
+**What remains**: The core BPD provisions — use of force, stops and searches, transportation of detainees, supervision, accountability, technology, community policing — remain under active court oversight. The decree will not terminate in full until BPD achieves sustained compliance across all remaining sections.
+
+**Sources**: [AFRO — Baltimore compliance progress](https://afro.com/baltimore-consent-decree-progress/)
+
+---
+
+### Pattern Update — DHS Detention Ombudsman Closure Extends Accountability Gap Beyond Police
+
+**Cross-reference to Pattern 4**: DHS's May 5, 2026 permanent closure of the Office of Immigration Detention Ombudsman (OIDO) extends the accountability gap identified in Pattern 4 (the Federal Vacuum and Downstream Effects) into immigration enforcement. OIDO reviewed every reported detainee death and investigated abuse claims from the 58,000+ people currently in ICE detention. Its closure means: no institutional pathway for detainee complaints to reach an independent investigator; no systematic death review mechanism; and reduced evidentiary infrastructure for congressional oversight and accountability journalism. Combined with the fact that ICE agents who killed U.S. citizens in Minnesota in January 2026 faced three days of administrative leave rather than criminal investigation, the accountability asymmetry is now total: federal agents in immigration enforcement contexts face less oversight than almost any other category of law enforcement in the United States.
+
+**The structural parallel to consent decree dismantlement**: OIDO's closure follows the same institutional logic as the May 21, 2025 consent decree withdrawals — not targeted reform, but categorical elimination of oversight infrastructure. The administration's posture across law enforcement accountability is consistent: exit federal oversight where legally possible, defund oversight where structural, and close accountability offices where discretionary authority permits.
+
+**Sources**: [NPR — DHS ombudsman shutdown](https://www.npr.org/2026/05/07/g-s1-120834/trump-immigration-detention-ombudsman-shutdown) | [ACLU — detention deaths and expansion](https://www.aclu.org/news/immigrants-rights/deaths-in-detention-ice-is-rapidly-expanding-detention-camps-into-warehouses-despite-record-deaths) | [American Immigration Council — detention accountability report](https://www.americanimmigrationcouncil.org/press-release/report-trump-immigration-detention-2026/)
+
+---
+
+*Updated May 9, 2026. Additions: Springfield termination confirmed (May 8); Cleveland exit denied (May 8, Judge Oliver); Baltimore partial sections terminated; DHS detention ombudsman closure as Pattern 4 extension.*
 
 ---
 

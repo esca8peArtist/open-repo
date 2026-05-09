@@ -65,10 +65,13 @@
 ### resistance-research
 **Goal**: Identify solutions to a failing democracy — if the current government could be replaced and rebuilt from a clean slate, what would it look like? How could it be structured to ensure justice, life, liberty, and the pursuit of happiness for all citizens? How could it be objectively efficient, equitable, and functional? This project addresses the full scope of government: voting systems, taxation, education, infrastructure, healthcare, law enforcement, housing, and everything in between. The government exists to serve its citizens — so how do we actually achieve that? A secondary goal is tracking and understanding the specific crises the United States is currently facing, finding actionable responses, and building a comprehensive integrated proposal for democratic renewal.
 **Priority**: High
-**Status**: Active — Phase 1-5 COMPLETE, **35-Domain Diagnostic Framework COMPLETE + CONTENT CURRENCY CURRENT** (Sessions 502-524) — Core proposal architecture complete, completeness assessment done, all 34 domain documents verified production-ready, distribution infrastructure finalized (Session 520), April 2026 domain updates complete (Sessions 521, 524)
+**Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 876 (2026-05-07): Tracker Maintenance COMPLETE + Phase 1 Distribution Risk Mitigation Playbook COMPLETE**. All Phase 1 distribution infrastructure and risk mitigation now production-ready. Domain 42 (Drug Policy) has critical May 28 DEA hearing participation deadline (21 days). All distribution infrastructure for Wave 1 outreach built and committed. Phase 1 is production-ready pending user path decision.
+**Current focus**: **Session 907 (2026-05-09): May 2026 Tracker Maintenance COMPLETE + Phase 2 Domain 39 (Immigration Enforcement & Detention Infrastructure) COMPLETE**. 
+- ✅ Tracker updates: first-amendment-suppression.md (No Kings 7M protests, OIDO closure, 287(g) expansion 1,783 agreements), environmental-rollbacks-tracker.md (EPA IRIS chemical directive May 5, 500+ rules destabilized; RMP deadline May 11), police-brutality-consent-decree-tracker.md (Springfield termination, Cleveland exit denied, Baltimore partial sections, OIDO pattern extension)
+- ✅ New Phase 2 Domain 39: 6,490 words, 43 sources. Structural analysis of immigration enforcement as simultaneous judicial, prosecutorial, and electoral suppression apparatus. Cross-domain synthesis: Domains 6+29+37, police brutality tracker, showing unified enforcement architecture. Selection: OIDO permanent closure (May 5), ICE detention death trajectory (18 deaths Q1 2026), 287(g) expansion as voter suppression mechanism.
+- Phase 1 production-ready for distribution (blocked on user path decision only). Phase 2 expansion can continue independently. Domain 42 May 28 DEA deadline remains active (19 days). Phase 1 trackers current through May 9.
 
 **Session 876 Deliverables**:
 - ✅ **Tracker Maintenance (May 1–7, 2026)**: Updated first-amendment-suppression.md (A.9: Bondi memo May 1 journalist protection revocation; A.10: CPJ/whistleblower developments), environmental-rollbacks-tracker.md (Entry 35: Ethylene Oxide; Entry 36: TCE TSCA), police-brutality-consent-decree-tracker.md (Springfield, Cleveland, Aurora updates)
@@ -629,15 +632,22 @@ All scenario playbooks grounded in May 2026 threat intelligence, cross-reference
 ### seedwarden
 **Goal**: Build a profitable Etsy store and digital brand focused on farming, homesteading, and survival-related digital products, with the ability to expand into physical small products and seed packets. The business needs a full foundation: high-quality digital products that genuinely help people, a consistent social media presence across relevant platforms, and a reputation for real value. The goal is profit and a loyal customer base — not just a store. Grow the business systematically, identify what sells, double down on winners, and build a media presence that drives traffic organically.
 **Priority**: Medium
-**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
+**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: **Session 902 (2026-05-09): Phase 2 Pre-Launch Execution Package COMPLETE** (Commit c94197f1). 
-- ✅ `may-9-to-30-execution-timeline.md` — Day-by-day timeline, Go/No-Go May 29, June 6 fallback
-- ✅ `pre-launch-email-templates.md` — 4 paste-ready Kit broadcasts (May 12, 20, 24, 29)
-- ✅ `phase-2-analytics-kpi-setup.md` — UTM standards, GA4/Kit config, Etsy baseline (May 25 deadline), tracking templates
-- ✅ `phase-3-launch-readiness-brief.md` — June 15–July 1 decision framework, Phase 3 success metrics
-**User Actions Required** (5 items, all documented): Account creation (Instagram/TikTok/Pinterest/@seedwarden, Kit landing page), Canva Brand Kit (30 min), Zone 5 master card (150–180 min), photo shoot (May 10–11, 9 hours), Etsy tag corrections (Track A, June 6 fallback documented). Phase 2 launches May 30, 2026. Phase 3 (Medicinal Herbs) implementation assets production-ready.
+**Current focus**: **Session 907 (2026-05-09): Phase 3 Asset Completion COMPLETE**. 
+- ✅ Phase 3 planning layer verified complete (15+ strategy documents from prior sessions)
+- ✅ Phase 3 execution-layer assets built (7 production-ready files):
+  - `PHASE_3_EXECUTION_GUIDE.md` — Master 53-day timeline, 6 user-only actions, launch day checklist, risk mitigations
+  - `phase-3-canva-mockup-brief.md` — 12 Canva deliverable briefs (hex codes, dimensions, fonts, file naming)
+  - `phase-3-botanical-stock-list.md` — Verified Wikimedia Commons/Unsplash stock sources for all medicinal herb imagery
+  - `phase-3-broadcast-sequence.md` — 4 launch broadcasts (June 15–July 1) + 8 funnel emails, complete body copy
+  - `phase-3-social-post-templates.md` — 20 complete posts (weeks 1–4), captions, hashtags, Pinterest/TikTok specs
+  - `phase-3-kpi-dashboard.md` — Weekly targets, alert thresholds, 5-tab spreadsheet spec, 90-day/6-month/12-month metrics
+  - `phase-3-landing-pages.md` — Complete copy for 3 Kit landing pages + automation notes
+- ✅ Success metrics formalized: 90-day ($1,500+ gross, 1.5%+ conversion, 3+ practitioner licenses), 6-month ($3,000+ gross, 2+ bundles), 12-month ($4,000+ gross, 20%+ medicinal herb revenue, Phase 4 gate)
+- ✅ Track B: Zero blockers; Phase 3 assets enable independent execution
+**User Actions Required**: Phase 2 (5 items, Track A/B documented), Phase 3 (6 user-only actions documented in execution guide: Kit tag creation, landing page build, Canva Brand Kit, herb props order, photo session, Etsy uploads). Phase 2 May 30, Phase 3 June 15–July 1. Both timelines have fallback dates; no blockers on execution.
 
 **Phase 2 Status (Track B)**:
 - **Asset verification COMPLETE**: 63 mockup files confirmed, 10 Cluster D/E stock images staged and confirmed, logo confirmed, all output directories exist, email copy confirmed, 60-day calendar confirmed.

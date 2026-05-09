@@ -1,7 +1,7 @@
 ---
 title: "First Amendment Suppression — Press Crackdowns, Protest Restrictions, Deplatforming, and SLAPP Suits"
 description: "A reference document tracking First Amendment violations and suppression across press freedom, protest rights, government-coerced deplatforming, and strategic litigation. Covers 2024–2026 with case law context."
-last_updated: 2026-05-07
+last_updated: 2026-05-09
 status: active
 phase: 3
 project: resistance-research
@@ -505,6 +505,64 @@ Former federal prosecutor Aaron Zelinsky identified that the bank fraud counts a
 *Updated April 27, 2026. Additions: Section A.1 (10th Circuit Denver ruling — April 21); Section A.2 (SCOTUS Villarreal cert denial — March 23); Section A.3 (Accountability Now NPS enforcement threat suit); Section 1.9 (LAPD journalist assaults — April 11, 2026).*
 
 *This document is intended as a factual reference. It reflects verified reporting and legal records as of April 27, 2026. Confidence is high for documented court proceedings and verified reporting from named outlets; moderate for ongoing litigation where status may have changed. Verify current case status with CourtListener, PACER, and the sources linked above before relying on this document in legal or advocacy contexts.*
+
+---
+
+## May 9, 2026 Additions
+
+*Header update: last_updated changed to 2026-05-09. May 9 entries: Section B.1 (No Kings May Day mass mobilization — 7 million participants, administration concessions begin); Section B.2 (DHS immigration detention ombudsman permanently closed May 5 — cross-domain chilling effect on immigrant testimony and journalism); Section B.3 (Supreme Court Texas journalist arrest qualified immunity — Fifth Circuit rule allowed to stand as of May 2026); Section B.4 (Time/RSF May 1 press freedom threat synthesis — US ranks 64th, downgraded two notches since March 2026).*
+
+---
+
+### B.1 No Kings May Day Protests — 7 Million Participants; Administration Makes First Concessions (May 1, 2026)
+
+**What happened**: On May 1, 2026 (May Day), nationwide demonstrations organized under the No Kings banner drew an estimated 7 million participants across hundreds of cities — a scale consistent with or exceeding the March 29 No Kings mobilization. The ACLU documented the event as "the largest single-day protest to defend First Amendment rights in recent American history." The National Education Association (3 million members) was a principal co-organizer; organizers framed the day as a boycott of work, school, and shopping simultaneous with street demonstrations.
+
+**First Amendment significance**: The 7-million-participant figure is analytically significant for two reasons. First, it substantially exceeds the 3.5% threshold Chenoweth identifies as the near-guarantee level for civil resistance success; at approximately 2.1% of the total US population, the May Day mobilization is approaching that threshold while remaining below it. Second, the administration's response shifted: the Center for American Progress documented that by early May 2026 — coinciding with the sustained mobilization from the March 29 and May 1 protests — the Trump administration had begun making concessions on several policies under active protest pressure, including partial backdowns on tariff escalation and signaling flexibility on some DOGE-targeted agency positions.
+
+**The protest-as-First-Amendment-exercise framing**: Protest organizers specifically framed May Day 2026 as a defense of First Amendment rights, not merely a policy protest. The ACLU's coverage described participants as "seven million people exercis[ing] their First Amendment rights." This framing is analytically significant: the right to protest is itself the subject of the protest, creating a recursive constitutional claim that the government has targeted the mechanism of democratic accountability (peaceful assembly) as well as its substantive targets.
+
+**Anti-protest law context**: No Kings organizers provided "Know Your Rights" resources at the event level, including information on the ICNL US Protest Law Tracker. As of May 2026, 18+ states have enacted anti-protest laws since 2017. The Kansas K-12 student protest law (Section A.5), the South Dakota Riot Boosting Act (recently challenged), and the documented use of immigration enforcement at protest sites (Domain 37, Section IV) represent the live enforcement environment in which the mobilization occurs.
+
+**Sources**: [ACLU — 7 million participants](https://www.aclu.org/news/civil-liberties/seven-million-people-unite-at-peaceful-no-kings-protests-to-defend-our-first-amendment-rights) | [NPR — May Day protests](https://www.npr.org/2026/05/01/nx-s1-5805805/may-day-protests-boycott-schools-trump) | [Center for American Progress — administration concessions](https://www.americanprogress.org/article/as-americans-deepen-their-nonviolent-mobilization-the-trump-administration-begins-to-make-concessions/) | [No Kings — Know Your Rights](https://www.nokings.org/kyr)
+
+---
+
+### B.2 DHS Permanently Closes Office of Immigration Detention Ombudsman — Chilling Effect on Detained Witness Testimony (May 5, 2026)
+
+**What happened**: On May 5, 2026, DHS confirmed that it had permanently shut down the Office of Immigration Detention Ombudsman (OIDO) — the congressionally-created independent watchdog responsible for investigating misconduct, abuse, and rights violations in the immigration detention system. Before the closure, the office had been reduced from over 100 employees to five through DOGE cuts. DHS blamed a "funding lapse," though the appropriations bill that funded DHS did not mandate OIDO's closure.
+
+**First Amendment connection**: OIDO's closure is a Section 7-category development (see Section 7.1 — civil society prosecutions as suppression mechanism) because it eliminates the primary institutional pathway through which detained immigrants reported abuse to an entity outside DHS itself. For journalism and civil society purposes, this matters directly: OIDO investigations of detainee deaths and abuse have been the factual foundation for press coverage of detention conditions. With OIDO gone, the evidentiary base for accountability journalism about the 58,000 people currently held in immigration detention is reduced to detainee testimony mediated through attorneys — a chilling effect on the reporting infrastructure that informs public debate about immigration enforcement.
+
+**Scale of what OIDO documented**: In the period from January 20, 2025 to January 12, 2026, credible reports to OIDO included: 206 cases of medical neglect, 88 reports of physical and sexual abuse, 139 reports of denial of adequate food or water. At least 18 deaths have been reported in ICE detention through the first four months of 2026, following 32 deaths in 2025 — the deadliest year in two decades. OIDO reviewed every reported detainee death; no institutional replacement for that function exists.
+
+**Congressional authority connection**: Congress created OIDO in the 2019 National Defense Authorization Act specifically because DHS's own Inspector General had insufficient capacity and access for detention-specific oversight. DHS's framing of the closure as a "funding lapse" over a mandatory office is constitutionally contested: Congress mandated the office's existence; the executive branch reduced its staff to five and then used the resulting budget shortfall to justify closure. This is the same pattern documented in the IG context (see Domain 26 and CHECKIN.md entries for the 17+ IG firings in January 2025).
+
+**Sources**: [NPR — DHS blames funding lapse](https://www.npr.org/2026/05/07/g-s1-120834/trump-immigration-detention-ombudsman-shutdown) | [UPI — DHS shuts detention watchdog](https://www.upi.com/Top_News/US/2026/05/05/homeland-security-shuts-immigration-detention-watchdog/1001778010077/) | [The Hill — OIDO closure](https://thehill.com/homenews/5864182-oido-dhs-watchdog-closure/) | [American Immigration Council — detention harshness and accountability](https://www.americanimmigrationcouncil.org/press-release/report-trump-immigration-detention-2026/)
+
+---
+
+### B.3 State-Level Anti-Protest Law Status — Three New State Bans on 287(g) Agreements; Kansas Law in Effect
+
+**What happened**: As of May 2026, three additional states — New Mexico, Maine, and Maryland — enacted legislation in late 2025 and early 2026 banning 287(g) agreements between local police and ICE. These join six earlier states (California, Connecticut, Illinois, Oregon, Vermont, Washington). The legislation is a direct legislative response to the chilling effect that joint immigration-policing creates on protest activity and community trust of law enforcement.
+
+**First Amendment mechanism**: 287(g) agreements — which have grown from 135 in 20 states before Trump took office to 1,783 memoranda of agreement across 39 states as of May 8, 2026 — affect First Amendment activity in a specific documented way: immigrant community members who observe police at protests now face a materially elevated risk that contact with police could trigger immigration enforcement. This creates a demonstrably chilling effect on participation in public assembly, as the American Immigration Council has documented. The chilling effect operates on citizens as well as noncitizens — those who fear for family members' immigration status may self-censor their protest activity.
+
+**Kansas student protest law**: The Kansas law restricting K-12 student protest participation (Section A.5) took effect immediately upon enactment in April 2026. No implementation litigation has been filed as of May 9, 2026. The $100,000/day school district penalty provision has not yet been invoked.
+
+**ICNL tracker**: The International Center for Not-for-Profit Law's US Protest Law Tracker documents the current wave of anti-protest legislation. As of May 2026, 18+ states have enacted bills since 2017 expanding criminal penalties for protest activity, creating new protest-adjacent offenses (like the Kansas school bill), or providing civil immunity for drivers who strike protesters. The wave is accelerating in the current legislative cycle.
+
+**Sources**: [ACLU — 287(g) expansion](https://www.aclu.org/news/immigrants-rights/ice-expanding-287g-agreements-police) | [NPR — 287(g) explosion](https://www.npr.org/2026/02/17/nx-s1-5707449/local-police-immigration-cooperation-287g) | [American Immigration Council — chilling effect](https://www.americanimmigrationcouncil.org/blog/the-chilling-effect-of-trumps-indiscriminate-immigration-arrests-propaganda/) | [ICNL US Protest Law Tracker](https://www.icnl.org/usprotestlawtracker/)
+
+---
+
+### B.4 World Press Freedom Synthesis — US at 64th; Downgraded Further Since March 2026
+
+**What happened**: Reporters Without Borders' 2026 World Press Freedom Index, released around World Press Freedom Day (May 3, 2026), ranked the United States 64th globally — a historic low. This is a two-position drop from the rank documented in Section A.8 (62nd, March 2026 RSF interim assessment). The Time magazine May 1 synthesis of press freedom threats identified: government seizures of journalist devices (Natanson case — Section 1.3); White House press exclusions (AP case — Section 1.2; Pentagon policy — Section 1.1); the SPLC indictment precedent for civil society organizations that conduct public interest journalism functions (Section 7.1); and the documented chilling effect of federal grand jury subpoenas to journalists' phone and email providers without their knowledge.
+
+**Current tracker summary — what has changed since last update**: The most significant new development is not an individual incident but the May Day mobilization scale and the administration's recognition that it faces organized resistance. The administration's partial concessions in early May 2026 suggest that the sustained mobilization is producing political costs. But the enforcement architecture — 287(g) agreements, OIDO closure, Fifth Circuit qualified immunity, Ninth Circuit tear gas ruling — has all moved against First Amendment protection simultaneously.
+
+**Sources**: [Time — Most Urgent Threats to Press Freedom in 2026](https://time.com/article/2026/05/01/the-most-urgent-threats-to-press-freedom-in-2026/) | [RSF — 2026 World Press Freedom Index](https://rsf.org/en/index) | [US Press Freedom Tracker](https://pressfreedomtracker.us/)
 
 ---
 
