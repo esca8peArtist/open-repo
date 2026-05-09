@@ -363,17 +363,22 @@ All scenario playbooks grounded in May 2026 threat intelligence, cross-reference
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: 🔴 USER PRIORITY (2026-05-08): Comprehensive options backtesting — COMPLETE (Session 900). `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` extended from 790 to 1,423 lines with 6 new analytical sections:
-  - Section 13: Risk-Adjusted Performance Metrics (Calmar, Sortino)
-  - Section 14: Options Strategy Analysis (directional/spread/non-directional)
-  - Section 15: Model Robustness & Confidence Scoring (Tier 1-4 classification)
-  - Section 16: Portfolio-Level Analysis (3-model recommended: META+MSFT+SPY)
-  - Section 17: Live Trading Implementation Roadmap (4-phase, 16 weeks)
-  - Section 18: Final Recommendations & Action Items (explicit success/failure criteria)
-  - Key Finding: META_LGB_v1 (regime_only) achieves +41.96% return with Sharpe 1.84, Alpha +38.28%
-  - Deployment Ready: Three-model portfolio (META + MSFT + SPY) projects +27.78% return, 1.53 Sharpe, -10.17% MaxDD
+**Current focus**: 🔴 MAY 12 CHECKPOINT PREPARATION — COMPLETE (Session 922)
+- ✅ Engine health verified (Jetson SSH: 3h uptime, both sessions active, normal CPU/memory)
+- ✅ AAPL position confirmed open: 108 shares, avg entry $267.877, unrealized P&L +$2,747.84 (h+8, time-stop fires h+10 expected Monday May 12)
+- ✅ Database sync executed: 68 fills synced (19 May 5 + 49 Apr 29 + 1 AAPL position), checkpoint query ready
+- ✅ Position-age logic validated: Simulated _get_position_age_bars() returns 6 bars (1 bar from time-stop trigger)
+- ✅ Tests updated: 979 trading unit tests pass, 0 failures; 9 new position-age tests added
+- ✅ PRE_CHECKPOINT_VALIDATION.md created with engine status, position snapshot, DB integrity summary
+- **Predicted checkpoint outcome**: FAR_MISS_C1 (0 AAPL SELL fills) if no signal fires; likely NEAR_MISS (1 SELL) if time-stop fires Monday
+- **Next**: May 12 20:00 UTC checkpoint execution (run query, assign scenario, follow MAY_12_OUTCOME_ROADMAP.md)
 
-**Blocked on**: ~~ARCH decisions~~ — unblocked for backtesting task. ARCH decisions are deferred; do not let them block the backtest run. Address ARCH in a separate session.
+**Comprehensive options backtesting — COMPLETE (Session 900)** (prior):
+- `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` extended from 790 to 1,423 lines with 6 new analytical sections
+- Key Finding: META_LGB_v1 (regime_only) achieves +41.96% return with Sharpe 1.84, Alpha +38.28%
+- Deployment Ready: Three-model portfolio (META + MSFT + SPY) projects +27.78% return, 1.53 Sharpe, -10.17% MaxDD
+
+**Blocked on**: None — checkpoint prep complete, engine running, position open. Awaiting May 12 execution.
 
 **Session 829 (2026-05-06) — MAY 12 OUTCOME ROADMAP COMPLETE (Exploration Queue)**:
 - **Deliverable**: `MAY_12_OUTCOME_ROADMAP.md` created — single actionable reference for May 13 morning
