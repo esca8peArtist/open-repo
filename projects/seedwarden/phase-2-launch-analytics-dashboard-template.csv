@@ -1,0 +1,87 @@
+SHEET:Daily_Log
+Date,Clicks_Total,Signups_Kit,Orders_Etsy,Revenue_USD,Cost_Per_Acquisition,Email_Unsubscribes,Notes
+2026-05-30,,,,,,"=IF(C2=""","",E2/C2)",Launch Day — record baseline before 10:00am UTC then track all-day
+2026-05-31,,,,,,"=IF(C3=""","",E3/C3)",T+24h — T+38h checkpoint window
+2026-06-01,,,,,,"=IF(C4=""","",E4/C4)",T+38h checkpoint evening
+2026-06-02,,,,,,"=IF(C5=""","",E5/C5)",Week 1 Day 4
+2026-06-03,,,,,,"=IF(C6=""","",E6/C6)",Week 1 Day 5
+2026-06-04,,,,,,"=IF(C7=""","",E7/C7)",Week 1 Day 6
+2026-06-05,,,,,,"=IF(C8=""","",E8/C8)",Week 1 Day 7 — first newsletter send
+2026-06-06,,,,,,"=IF(C9=""","",E9/C9)",Week 2 Day 1
+2026-06-07,,,,,,"=IF(C10=""","",E10/C10)",Week 2 Day 2 — Email 5 sends for May 30 sign-ups
+2026-06-08,,,,,,"=IF(C11=""","",E11/C11)",Week 2 Day 3
+2026-06-09,,,,,,"=IF(C12=""","",E12/C12)",Week 2 Day 4
+2026-06-10,,,,,,"=IF(C13=""","",E13/C13)",Week 2 Day 5
+2026-06-11,,,,,,"=IF(C14=""","",E14/C14)",Week 2 Day 6
+2026-06-12,,,,,,"=IF(C15=""","",E15/C15)",Week 2 Day 7 — Email 5 coupon expires for May 30 sign-ups
+2026-06-13,,,,,,"=IF(C16=""","",E16/C16)",Week 3 Day 1
+2026-06-14,,,,,,"=IF(C17=""","",E17/C17)",Week 3 Day 2
+2026-06-15,,,,,,"=IF(C18=""","",E18/C18)",Week 3 Day 3
+2026-06-16,,,,,,"=IF(C19=""","",E19/C19)",Week 3 Day 4
+2026-06-17,,,,,,"=IF(C20=""","",E20/C20)",Week 3 Day 5
+2026-06-18,,,,,,"=IF(C21=""","",E21/C21)",Week 3 Day 6
+2026-06-19,,,,,,"=IF(C22=""","",E22/C22)",Week 3 Day 7 — newsletter send #3
+2026-06-20,,,,,,"=IF(C23=""","",E23/C23)",Week 4 Day 1
+2026-06-21,,,,,,"=IF(C24=""","",E24/C24)",Week 4 Day 2
+2026-06-22,,,,,,"=IF(C25=""","",E25/C25)",Week 4 Day 3
+2026-06-23,,,,,,"=IF(C26=""","",E26/C26)",Week 4 Day 4
+2026-06-24,,,,,,"=IF(C27=""","",E27/C27)",Week 4 Day 5
+2026-06-25,,,,,,"=IF(C28=""","",E28/C28)",Week 4 Day 6
+2026-06-26,,,,,,"=IF(C29=""","",E29/C29)",Week 4 Day 7 — newsletter send #4
+2026-06-27,,,,,,"=IF(C30=""","",E30/C30)",30-day snapshot date
+,,,,,,,
+TOTALS,=SUM(B2:B30),=SUM(C2:C30),=SUM(D2:D30),=SUM(E2:E30),=IFERROR(E31/C31,""),=SUM(G2:G30),Auto-calculated — do not edit
+
+SHEET:Cohort_Tracking
+Cohort_Name,Signups,Conversion_Rate,LTV_30d,Repeat_Purchase_Rate,Notes
+Forager (wild plants / seed saving focus),,,=IFERROR(D2/B2,""),,Tag: seed-saver. Products: Seed Saving Field Manual. Measure via Kit tag count vs Etsy orders from that cohort.
+Homesteader (general food growing),,,=IFERROR(D3/B3,""),,No specific tag — inferred from purchase of Zone Calendar or Zone Quick-Start Card.
+City Grower (containers / apartments),,,=IFERROR(D4/B4,""),,Tag: city-grower. Products: Container Growing Blueprint. Measure via Kit tag count.
+Preservationist (harvest / fermentation focus),,,=IFERROR(D5/B5,""),,Tag: preservationist. Products: Harvest Preservation Handbook. Measure via Kit tag count.
+Gift Buyer (high AOV bundles or gift messaging),,,=IFERROR(D6/B6,""),,No tag — inferred from Etsy Favorites or multiple-item orders. Check Etsy order notes for "gift" language.
+Untagged (no interest tag from Email 3-4),,,=IFERROR(D7/B7,""),,Subscribers who did not click any behavioral tag link. Receive full untagged newsletter.
+,,,,,
+TOTALS,=SUM(B2:B7),,=SUM(D2:D7),=IFERROR(SUM(E2:E7)/COUNTA(E2:E7),""),Average repeat purchase rate across all cohorts
+
+SHEET:Per_Channel_Attribution
+Channel,Signups,Revenue_USD,ROI_Notes
+Instagram,,,Source: GA4 utm_source=instagram sessions that converted. Count Kit sign-ups with Instagram referral.
+TikTok,,,Source: GA4 utm_source=tiktok. TikTok does not pass UTMs reliably — estimate from link-in-bio clicks.
+Pinterest,,,Source: GA4 utm_source=pinterest sessions. Pinterest analytics shows outbound clicks.
+Email_Broadcast,,,Source: Kit broadcast click rate x conversion rate. Use utm_campaign=phase2_launch filter in GA4.
+Email_Nurture,,,Source: Kit newsletter click rate x conversion rate. Use utm_campaign=phase2_nurture filter in GA4.
+Direct,,,Source: GA4 direct/none sessions. Includes organic Etsy search and bookmarked URLs.
+Other,,,Source: GA4 referral traffic not attributed to above channels. Check referral report for unlisted sources.
+,,,
+TOTALS,=SUM(B2:B8),=SUM(C2:C8),Review totals weekly. Revenue by channel helps identify highest-ROI content types.
+,,,
+NOTES:,,,"UTM parameters in emails: utm_source=kit, utm_medium=email, utm_campaign=phase2_launch (broadcast) or phase2_nurture (newsletter). Social UTMs: add ?utm_source=[platform]&utm_medium=social&utm_campaign=phase2_launch to all bio links."
+
+SHEET:Real_Time_Alerts
+Metric,Current_Value,Red_Flag_Threshold,Status,Action_Required
+Conversion_Rate,=IFERROR(Daily_Log!D31/Daily_Log!B31,""),0.5%,=IF(B2=""","CHECK","=IF(B2<0.005,"RED - BELOW THRESHOLD","GREEN")"),=IF(D2="RED - BELOW THRESHOLD","Execute Contingency Playbook Scenario 1: Low Conversion","Monitor only")
+Revenue_Per_Day_Avg,=IFERROR(Daily_Log!E31/COUNTA(Daily_Log!A2:A30),""),200,=IF(B3=""","CHECK","=IF(B3<200,"RED - BELOW THRESHOLD","GREEN")"),=IF(D3="RED - BELOW THRESHOLD","Revenue below $200/day average — check order volume and pricing mix","Monitor only")
+Email_Unsubscribe_Rate,=IFERROR(Daily_Log!G31/Cohort_Tracking!B8,""),2%,=IF(B4=""","CHECK","=IF(B4>0.02,"RED - ABOVE THRESHOLD","GREEN")"),=IF(D4="RED - ABOVE THRESHOLD","Unsubscribe rate above 2% — review recent email content for misalignment","Monitor only")
+Kit_Signup_Pace_Day1,,,=IF(B5=""","CHECK","=IF(B5<12,"YELLOW - BELOW DAY1 TARGET","GREEN")"),Target: 12+ sign-ups by T+12h on May 30. Below 12 = monitor closely.
+Kit_Signup_Pace_Day2,,,=IF(B6=""","CHECK","=IF(B6<20,"YELLOW - BELOW TARGET","GREEN")"),Target: 20-35 sign-ups total by T+38h. Below 20 = activate contingency review.
+Orders_T12h,,,=IF(B7=""","CHECK","=IF(B7<5,"YELLOW - BELOW TARGET","GREEN")"),Target: 5-12 orders by T+12h. Below 5 = investigate conversion path.
+Orders_T38h,,,=IF(B8=""","CHECK","=IF(B8<10,"YELLOW - BELOW TARGET","GREEN")"),Target: 10-20 orders by T+38h. Below 10 = AT RISK status (see Launch Day Operations Guide Part 4).
+Email_Open_Rate,,,=IF(B9=""","CHECK","=IF(B9<0.2,"YELLOW - BELOW TARGET","GREEN")"),Target: 25%+ for launch broadcast. Below 20% = check inbox placement and sender authentication.
+Email_Click_Rate,,,=IF(B10=""","CHECK","=IF(B10<0.08,"YELLOW - BELOW TARGET","GREEN")"),Target: 8%+ click rate on broadcast. Below 8% = review CTA copy and link placement.
+Social_Engagement_T12h,,,=IF(B11=""","CHECK","=IF(B11<20,"YELLOW - BELOW TARGET","GREEN")"),Target: 20+ combined likes+comments across all platforms by T+12h. Below 20 = post manually if Buffer failed.
+Bounce_Rate_Email,,,=IF(B12=""","CHECK","=IF(B12>0.05,"RED - ABOVE THRESHOLD","GREEN")"),Hard bounce rate above 5% on any single send = stop sending and investigate. Contact Kit support.
+Fulfillment_Pct,,,=IF(B13=""","CHECK","=IF(B13<1,"YELLOW - BELOW TARGET","GREEN")"),Target: 100% of May 30-31 orders shipped by June 2. Below 100% = contact supplier immediately.
+
+SHEET:Early_Decision_Framework
+Criterion,Pass_Threshold,Fail_Threshold,Your_Score_Week2,Pass_or_Fail,Weight,Notes
+Sales_Velocity,50+ orders in 30 days,Less than 30 orders in 30 days,,=IF(D2=""","ENTER SCORE","=IF(D2>=50,"PASS","=IF(D2>=30,"AT RISK","FAIL")))"),1,Count total Etsy orders from May 30 through June 27.
+Revenue_Floor,$600+ gross in 30 days,$400 or less in 30 days,,=IF(D3=""","ENTER SCORE","=IF(D3>=600,"PASS","=IF(D3>=400,"AT RISK","FAIL")))"),1,Total Etsy revenue May 30 through June 27. Source: Etsy Shop Manager > Stats.
+Product_Quality,1+ Star product identified (high sales + margin),All products at Dog level (under 5 orders),,=IF(D4=""","ENTER SCORE","=IF(D4>=1,"PASS","FAIL")"),1,"Star = top-selling product. Review Phase 1 view data. If one product has 2x the orders of others, that is your Star."
+Cohort_Diversity,2+ cohorts each above 20% of orders,Fewer than 2 segments at 20%+ each,,=IF(D5=""","ENTER SCORE","=IF(D5>=2,"PASS","FAIL")"),1,Count Kit interest tags. If seed-saver AND city-grower both exceed 20% of total sign-ups — cohort diversity passes.
+Repeat_Engagement,5%+ repeat purchase rate at Day 30,Below 3% repeat rate at Day 30,,=IF(D6=""","ENTER SCORE","=IF(D6>=0.05,"PASS","=IF(D6>=0.03,"AT RISK","FAIL")))"),1,"Repeat = same customer places 2+ orders within 30 days. Source: Etsy order history, match by buyer name/email."
+Operational_Health,Less than 2% error rate (wrong product / fulfillment issue),5%+ error rate,,=IF(D7=""","ENTER SCORE","=IF(D7<=0.02,"PASS","=IF(D7<=0.05,"AT RISK","FAIL")))"),1,Error rate = (number of orders with problems) / (total orders). Log problems in WORKLOG.md.
+,,,,,
+TOTAL_PASS_COUNT,,,,=COUNTIF(E2:E7,"PASS"),,Count of criteria that passed
+DECISION_RULE,,,,=IF(E9>=5,"GO: 5+ criteria pass — proceed to Phase 3 planning","=IF(E9=4,"CONDITIONAL: 4 criteria pass — delay 2 weeks and address failures","NO-GO: fewer than 4 criteria pass — do not launch Phase 3"))),,5-of-6 pass = GO. 4 = conditional. Fewer than 4 = no-go.
+,,,,,
+ESCALATION:,,,"If total pass count is 4 or below after Week 4 (June 27), document the failing criteria in WORKLOG.md, identify root cause for each failure, and set a 2-week remediation deadline before re-evaluating.",,
