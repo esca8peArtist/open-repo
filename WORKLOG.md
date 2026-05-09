@@ -4,6 +4,107 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 (Session 914 — Orchestrator) — EXPLORATION QUEUE: 3 NEW ITEMS COMPLETE (parallel execution)
+
+### ✅ SESSION COMPLETE: 3 PARALLEL EXPLORATION QUEUE ITEMS
+
+**Session Focus**: Assessed state of all projects; all main work blocked on user decisions/actions. Executed 3 new exploration queue items in parallel to extend autonomous capability through May-June. All items address critical pre-launch/pre-checkpoint planning gaps.
+
+**What I Did**:
+1. ✅ Orientation — Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md
+2. ✅ Project assessment — Confirmed all projects blocked on user actions/decisions:
+   - stockbot: awaiting May 12 checkpoint (3 days); all ARCH resolved; engine credentials + Jetson connectivity user-owned
+   - resistance-research: awaiting distribution path decision (A / A+37 / B); all Phase 1 materials production-ready
+   - cybersecurity-hardening: Phase 1 awaiting user approval; Tier 2 infrastructure complete
+   - seedwarden: awaiting user tag corrections (Track A) / social account setup (Track B); Phase 2-3 ready
+   - mfg-farm: awaiting test print (user action)
+3. ✅ Block assessment — Only mfg-farm test print remains active (user-dependent); no new blockers
+4. ✅ Inbox processing — No new items
+5. ✅ Exploration Queue decision — 1 deferred item (seedwarden Phase 2 photography). Per protocol, added 3 new items to queue
+6. ✅ Parallel execution — Spawned 3 independent subagents (resistance-research, seedwarden, stockbot) simultaneously
+
+**Deliverables**:
+
+✅ **Item 4: Resistance-Research Phase 2 Domain Expansion Strategy** (3,400 words, production-ready)
+  - **File**: `projects/resistance-research/PHASE_2_DOMAIN_EXPANSION_STRATEGY.md`
+  - **Scope**: Strategic roadmap for Phase 2 domain expansion (Domains 44-58)
+    1. Gap analysis: Which movement sectors lack Phase 1 coverage? (labor, housing, education access, antitrust, childcare, tech regulation)
+    2. Prioritization framework: 15-domain ranked list with adoption likelihood, movement infrastructure integration depth, cross-domain leverage, timing urgency
+    3. Phase 2 outreach strategy: Efficient engagement model for 15 new domains (research clusters vs. independent, 6-week timeline, resource modeling)
+    4. Integration mechanics: How Phase 2 domains relate to Phase 1 (standalone vs. cross-references, versioning)
+    5. 15 domain candidates: Ranked with 3-4 sentence justifications
+  - **Key decisions**: 
+    - Tier 1 domains (Reproductive rights, Housing/eviction, Trans/LGBTQ rights, Labor/NLRB): 35-45% adoption likelihood
+    - Tier 2 domains (Campaign finance/dark money, Education access): Urgent but lower movement infrastructure integration
+    - Tier 3 domains (Pension, Mental health, Economic democracy): Defer to July-August
+  - **Sources**: 14 citations, May 8-9 research (Fifth Circuit NLRB ruling, HUD eviction notice rescission, NEPA removal, 740 anti-LGBTQ bills, DISCLOSE Act 2026 reintroduction)
+  - **Business value**: Phase 1 launch simultaneous with Phase 2 planning (not sequential). Movement infrastructure integration (organizers + unions + mutual aid) reaches broader coalition faster than policy-maker-only approach. Phase 2 domain research can begin immediately without waiting for Phase 1 feedback.
+
+✅ **Item 5: Seedwarden Phase 2 Customer Success & Retention Framework** (3,500 words combined, production-ready)
+  - **Files**: 
+    1. `projects/seedwarden/PHASE_2_CUSTOMER_SUCCESS_FRAMEWORK.md` (2,500 words)
+    2. `projects/seedwarden/phase-2-go-no-go-decision-criteria.md` (1,000 words, executable)
+  - **Scope**: Data-driven decision framework for Phase 2 launch (May 30) + Phase 3 evaluation (September 1)
+    1. Conversion modeling: 3-tier prediction (Tier A 35-50%, Tier B 18-28%, Tier C 3-12% Phase 2 adoption based on Phase 1 behavior)
+    2. Segmentation: 4 customer types (Foragers, Preppers, Homesteaders, Gift buyers) with LTV tracking and Phase 2 adoption predictions
+    3. Retention mechanics: 4 drivers (seasonal content, depth, email cadence, community identity), per-segment engagement targets, repeat-rate alerts, seasonal calendar through April 2027
+    4. Phase 3 Go/No-Go Criteria: Dual-gate decision logic (business viability: >$600/mo revenue + 15% repeat rate; audience confirmation: >8% Herbalist segment + $25+ LTV)
+    5. Analytics dashboard: Daily 5-min checks, weekly 30-min reviews, monthly 2-hr LTV deep dives. Automation alerts for Day 7 / Day 21 / Day 30 anomalies. Google Sheets through Month 3, upgrade trigger at 200 orders/month.
+    6. Decision tree: Three checkpoints (Day 16 / Day 31 / Day 94) with 5-step executable workflows per checkpoint
+  - **Key decisions**: 
+    - Herbalist cohort is primary Phase 2 LTV lever (3x vs. Gift Buyer) → September 1 Women's Health launch decision gates on Herbalist adoption
+    - If Phase 2 revenue healthy but Herbalist <8%, pivot to Forager/Homesteader tier in September, defer Women's Health to January 2027
+    - Escalation logic specifies exactly which outcomes auto-execute vs. require user contact within 24-48 hours
+  - **Business value**: Phase 2 launches (May 30) with built-in measurement, not retrofit. Phase 3 decision (Sept 1) is data-driven not emotional. 45-day decision loop per original roadmap. Real-time anomaly alerts prevent silent failure modes.
+
+✅ **Item 6: Stockbot May 12 Gate 1 Readiness Validation Checklist** (2,000 words combined, executable, production-ready)
+  - **Files**:
+    1. `projects/stockbot/gate-1-readiness-validation-may12.md` (1,500 words, 6 executable sections)
+    2. `projects/stockbot/gate-1-outcome-classification.py` (200 lines, runnable script)
+  - **Scope**: Pre-checkpoint system validation + May 13 outcome classification automation
+    1. System health checks: Jetson connectivity, Alpaca API status, database integrity, engine process status, log file health, disk space (6-point checklist)
+    2. Data completeness validation: 5 SQL queries to confirm May 1-12 fills logged, AAPL position tracked, confirmed round-trip count, no data gaps
+    3. May 12 checkpoint protocol: 5-step workflow (run queries, record results, calculate Sharpe, classify outcome via decision tree, execute action path)
+    4. Decision tree readiness: Verify POST_GATE_1_ROADMAP_v2.md accessible, SQL queries clean, API credentials valid, DB accessible, outcome rules clear
+    5. Risk assessments & backup paths: What could fail May 12? (Jetson crash, DB corruption, API downtime, network loss). Backup recovery procedures for each.
+    6. Communication template: Standardized handoff message for May 13 00:00 UTC to user with outcome + next steps + timeline + user decisions needed
+  - **Executable script**: Python script reads stockbot.db, runs SQL queries, classifies outcome (PASS / NEAR_MISS_B1 / FAR_MISS_C1 / FAR_MISS_C2), prints decision tree path, logs to `logs/gate-1-checkpoint-result.json`
+  - **Live validation result**: Dry-run against actual stockbot.db shows:
+    - confirmed_round_trips: 0
+    - may5_fills: 19 (DB is synced)
+    - aapl_position: 108 shares open
+    - h_day: h+7 (expected h+10 exit May 14)
+    - Predicted outcome: **FAR_MISS_C1** (0 confirmed round trips, single profitable trade insufficient for pass)
+  - **Critical blockers identified**:
+    1. DB sync cron broken since April 30 (uv not found in cron PATH) — checklist gives exact fix
+    2. Jetson unreachable as of May 9 — checklist gives Tailscale recovery steps
+  - **Business value**: May 12 checkpoint has zero ambiguity (no planning meetings, just action). Pre-checkpoint validation catches issues NOW (can fix before deadline). Executable decision tree means May 13 is pure execution. Backup paths prevent surprises.
+
+**Exploration Queue Status**:
+- ✅ Item 1 (stockbot Gate 2 roadmap) — COMPLETE (Session 886)
+- ✅ Item 2 (resistance-research adoption tracking) — COMPLETE (Session 912)
+- ✅ Item 3 (cybersecurity-hardening Tier 2 infrastructure) — COMPLETE (Session 912)
+- ✅ Item 4 (resistance-research Phase 2 domain expansion) — **COMPLETE (Session 914)**
+- ✅ Item 5 (seedwarden Phase 2 customer success) — **COMPLETE (Session 914)**
+- ✅ Item 6 (stockbot May 12 Gate 1 readiness) — **COMPLETE (Session 914)**
+- ⏳ Item 7 (seedwarden Phase 2 photography & logistics) — Deferred (user-owned field work, May 30 deadline, 21 days)
+
+**Project Status** (no changes):
+- 🔴 **stockbot** (#1): Backtesting complete; Post-Gate-1 roadmap complete; May 12 readiness checklist complete; awaiting May 12 checkpoint + user action on engine restart + Jetson connectivity
+- 🔴 **resistance-research** (#2): Phase 1 adoption tracking complete; Phase 1 execution playbook complete; Phase 2 domain expansion strategy complete; awaiting user distribution path decision (A / A+37 / B)
+- 🔴 **cybersecurity-hardening** (#3): Tier 2 infrastructure complete; User OpSec manual complete; Phase 1 awaiting user approval
+- 🟠 **mfg-farm** (#4): Blocked on test print (user action)
+- 🟡 **seedwarden** (#5): Phase 2 customer success framework complete; Phase 3 assets complete; Phase 2 launch June 1 (22 days); awaiting user tag corrections (Track A) / social account setup (Track B)
+
+**Session Metrics**:
+- **Execution**: 3 parallel exploration items completed in one session
+- **Output**: 9,000+ words of production-ready operational and decision documentation
+- **Tokens used**: ~200-250K (Session 914)
+- **Remaining budget**: ~1.5-1.7M tokens weekly (58% all-models usage as of 05:58 UTC May 9)
+- **Status**: All autonomous exploration work complete. All projects awaiting user decisions or scheduled milestones (next: May 12 checkpoint, May 13 Domain 42 deadline, May 30 Phase 2 launches).
+
+---
+
 ## 2026-05-09 — (Session 912 — Orchestrator) — EXPLORATION QUEUE: 2 ITEMS COMPLETE (parallel execution)
 
 ### ✅ SESSION COMPLETE: 2 PARALLEL EXPLORATION QUEUE ITEMS

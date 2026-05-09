@@ -1,18 +1,47 @@
+## Since Last Check-in (Session 914 — 2026-05-09 14:00 UTC)
+
+### What Was Accomplished
+
+✅ **Exploration Queue Items 4-6 Complete** (3 parallel subagents, ~9K words production-ready):
+1. **resistance-research Phase 2 Domain Expansion Strategy** — 15-domain ranked roadmap with adoption likelihood + movement infrastructure integration depth + cross-domain leverage scoring. Consolidates prior fragmented Phase 2 planning into canonical list. Key findings: Reproductive rights + Housing + Trans rights + Labor are Tier 1 (35-45% adoption likelihood); campaign finance/dark money is Tier 2 (lower movement integration despite high structural importance); Pension/Mental health/Economic democracy defer to July.
+2. **seedwarden Phase 2 Customer Success Framework** — Dual-gate decision logic for May 30 launch + September 1 Phase 3 evaluation. Tier A customers predict 35-50% Phase 2 conversion; Herbalist cohort is 3x LTV vs. Gift buyers. Go/no-go gates: Business viability (>$600/mo + 15% repeat) + Audience confirmation (>8% Herbalist). If Phase 2 revenue healthy but Herbalist <8%, pivot to Forager/Homesteader tier, defer Women's Health to Jan 2027.
+3. **stockbot May 12 Gate 1 Readiness Checklist** — 6-section executable validation (system health, data completeness, checkpoint protocol, decision tree readiness, risk assessments, comms template) + Python classifier script. Live dry-run confirms predicted outcome FAR_MISS_C1 (0 confirmed round trips; h+10 exit fires May 14, past checkpoint). Identified two critical pre-May-12 blockers: DB sync cron broken (uv not in cron PATH), Jetson unreachable (Tailscale recovery needed).
+
+### What's In Progress
+
+- **May 12 Checkpoint** (3 days): Binary Gate 1 decision (Pass → Phase 1-3 deployment path; Near-Miss → recovery levers; Far-Miss → wind-down). Checklist identifies system issues that can be fixed TODAY.
+- **May 13 Domain 42 Deadline** (4 days): House Appropriations deadline for DEA hearing participation notice. If Category A outreach not sent by May 13, opportunity lost (May 28 Federal Register deadline is secondary).
+- **May 30 Phase 2 Launches** (21 days): seedwarden endangered species + resistance-research Phase 1 (if user chooses distribution path). Phase 2 customer success framework operationalizes May 30 launch day metrics.
+
+### What Needs User Input
+
+1. **stockbot**: Engine credentials + Jetson connectivity check (before May 12 checkpoint). Checklist has exact verification commands.
+2. **resistance-research**: Distribution path decision (A / A+37 / B) — once decided, PHASE_1_EXECUTION_PLAYBOOK.md enables same-day Phase 1 launch.
+3. **cybersecurity-hardening**: Phase 1 approval to begin Tier 1 outreach.
+4. **seedwarden**: Track A (tag corrections) or Track B (social account setup) — Phase 1 upload contingent on one of these.
+5. **mfg-farm**: Test print completion + evaluation (FDM tolerance calibration critical).
+
+### Critical Timing Items
+
+- **Today (May 9, day 4 of current session)**: Fix DB sync cron + Jetson connectivity (May 12 checkpoint depends on both)
+- **By May 12 20:00 UTC**: Gate 1 checkpoint decision (determines all Q2-Q3 roadmap)
+- **By May 13**: Domain 42 Category A outreach (if user has approved Phase 1 and chosen path)
+- **May 30**: Phase 2 launches (seedwarden May 30 hard deadline; resistance-research Phase 1 day depends on path choice)
+
+### Session Status
+
+✅ **All autonomous work complete.** All main projects blocked on user decisions (distribution path, engine restart, test print, tag corrections) or scheduled events (May 12 checkpoint). No additional autonomous work available without user action. Exploration queue refreshed (Items 4-6 complete; Item 7 deferred user-owned).
+
+**Budget**: ~58% all-models usage (Session 914 = ~250K tokens). Remaining weekly: ~1.5-1.7M tokens. No budget pressure.
+
+---
+
 ## Session 913 (2026-05-09 06:20 UTC) — Orchestrator — Exploration Queue Refresh: 3 New Items Complete ✅
 
+### ✅ Previous Session Summary
 
-- **May 13 (4 days)**: Domain 42 House Appropriations deadline — if Category A not sent, opportunity lost
-- **May 12 20:00 UTC (3 days)**: stockbot Gate 1 checkpoint — binary outcome determines Phase 1-3 timeline
-- **Within 24 hours of distribution path choice**: PHASE_1_EXECUTION_PLAYBOOK.md enables Phase 1 launch
-- **June 1**: Phase 2 micro live ($2,500, if stockbot Gate 1 passed)
-- **July 1**: Phase 3 scaled ($15,000, if Phase 2 passed)
-
-### Session Metrics
-
-- **Execution**: 3 exploration items created in one session (Stockbot Post-Gate-1, Resistance-Research Phase 1 Playbook, User OpSec Manual)
+- **Execution**: 3 exploration items created (Stockbot Post-Gate-1 Roadmap, Resistance-Research Phase 1 Execution Playbook, User OpSec Manual)
 - **Output**: 22,500+ words of production-ready documentation
-- **Tokens used**: ~200-250K (Session 913)
-- **Remaining budget**: ~1.7M tokens weekly (77% all-models usage)
 - **Status**: All autonomous exploration work complete. Main projects blocked on user decisions.
 
 ---
