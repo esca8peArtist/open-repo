@@ -31298,3 +31298,97 @@ Added to PROJECTS.md exploration queue:
 
 **Budget**: Session 891 = ~3 hours work, 250-350K tokens consumed. Remaining weekly budget: ~2.2M tokens (78% all-models usage). No budget pressure.
 
+
+---
+
+## 2026-05-09 (Session 913 — Orchestrator) — EXPLORATION QUEUE REFRESH: 3 NEW ITEMS ADDED (parallel subagents)
+
+### ✅ SESSION COMPLETE: EXPLORATION QUEUE REPLENISHED
+
+**Session Focus**: Assessed state of all projects; confirmed all main work blocked on user decisions/actions. Added 3 new exploration queue items to extend autonomous work through May-June. All items are high-value preparation for next phases.
+
+**What I Did**:
+1. ✅ Orientation — Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md, CHECKIN.md
+2. ✅ Block assessment — Confirmed only mfg-farm test print remains active (unblockable without user action)
+3. ✅ Inbox processing — No new items
+4. ✅ Project assessment — All main projects blocked on user decisions:
+   - stockbot: awaiting May 12 checkpoint (3 days away); ARCH decisions resolved; engine/credentials need user verification
+   - resistance-research: awaiting distribution path choice (A / A+37 / B); all materials production-ready
+   - cybersecurity-hardening: awaiting Phase 1 approval; Tier 2 infrastructure complete
+   - seedwarden: awaiting tag corrections (Track A) / social account setup (Track B)
+   - mfg-farm: awaiting test print
+5. ✅ Exploration Queue assessment — 1 item remaining (deferred), decided to add 3 new items per orchestrator protocol
+
+**Exploration Queue Items Added** (all three created and committed):
+
+✅ **Item 4: Stockbot Post-Gate-1 Roadmap v2** (7,200 words, production-ready)
+- **File**: `projects/stockbot/POST_GATE_1_ROADMAP_v2.md`
+- **Scope**: Comprehensive decision framework and operational timeline for May 12-September 2026
+  - Part 1: May 12 Checkpoint Protocol (binary outcome decision tree)
+  - Part 2: Gate 1 Pass Path → Phase 1-3 Execution (paper trading, micro live, scaled deployment)
+  - Part 3: Gate 1 Fail Path → Recovery & Pivot (root cause analysis, 4 recovery options, contingencies)
+  - Part 4: Architecture & code changes needed per phase (8-15 hours across phases)
+  - Part 5: Decision trees for phase gates (what triggers pass/fail/continue/halt)
+  - Part 6: Success metrics and KPIs (weekly targets, revenue models, 12-month projection)
+  - Part 7: Risk mitigation checklist (pre-Phase-2 and pre-Phase-3 verification)
+  - Part 8: Timeline summary (May 12 through September 30)
+- **Business value**: Removes ambiguity from May 12 checkpoint. If Gate 1 passes, user has clear 4-week paper trading + 8-week live path. If fails, documented pivot strategies prevent wasted time. Enables immediate Phase 1 or Phase 3 action post-checkpoint.
+- **Status**: Committed to projects/stockbot/
+
+✅ **Item 5: Resistance-Research Phase 1 Execution Playbook** (8,500 words, production-ready)
+- **File**: `projects/resistance-research/PHASE_1_EXECUTION_PLAYBOOK.md`
+- **Scope**: Step-by-step operational manual for Phase 1 distribution once user chooses path (A / A+37 / B)
+  - Part 1: Path decision framework (3x3 comparison matrix; when to choose each path; expected outcomes per path)
+  - Part 2: Pre-launch setup (8-10 hours: document publication, template fill, contact verification, personalization)
+  - Part 3: Launch sequence by path (detailed week-by-week action plan for all three paths)
+  - Part 4: Contingencies (low open rates, high response volume, negative feedback, contact bounce management)
+  - Part 5: Response management & routing (4 response types + templates, tracking, categorization)
+  - Part 6: Success metrics & phase 2 transition (weekly targets, minimum/target/strong outcomes, phase 2 trigger criteria)
+  - Part 7: Timeline reference card (quick lookup for 3-week execution)
+- **Business value**: Transforms PHASE_1_EXECUTION_READINESS.md checklist into actionable playbook. User chooses path → playbook provides exact steps for each day of Phase 1. Eliminates ambiguity; reduces Phase 1 startup friction from several hours of planning to simple task execution.
+- **Status**: Committed to projects/resistance-research/
+
+✅ **Item 6: Cybersecurity-Hardening User Operational Security Manual** (6,800 words, production-ready)
+- **File**: `projects/cybersecurity-hardening/USER_OPERATIONAL_SECURITY_MANUAL.md`
+- **Scope**: Practical operational security guide for the user while executing Phase 1/2 distribution (novel focus: user's own security, not end-user security)
+  - Part 1: Threat assessment (7 scenarios from low-risk to high-risk with likelihood/impact)
+  - Part 2: Risk mitigation checklist (Tier 1-3 mitigations, time/cost trade-offs)
+  - Part 3: Daily habits (morning 2 min, weekly 10 min, monthly 30 min)
+  - Part 4: Incident response plans (email compromise, device compromise, subpoena, FBI interview)
+  - Part 5: Decision framework (which mitigations to apply per risk level)
+  - Part 6: Quarterly threat assessment update procedure
+  - Part 7: 6-point key principles + final pre-launch checklist
+- **Business value**: Phase 1/2 distribution involves operational security risks for the user (email monitoring, contact list compromise, subpoena authority, device compromise). This manual provides grounded threat modeling (documented capabilities like FISA 702, NSL, subpoena) and practical mitigations (encrypted email, contact list encryption, attorney retainer, compartmentalization). Enables user to execute Phase 1/2 with confidence that their operational security is protected.
+- **Status**: Committed to projects/cybersecurity-hardening/
+
+**Project Status** (no changes):
+- 🔴 **stockbot** (#1): Backtesting complete (Session 900); Post-Gate-1 roadmap now complete; awaiting May 12 checkpoint + user action on engine restart
+- 🔴 **resistance-research** (#2): Phase 1 adoption tracking + Phase 1 execution playbook now complete; awaiting user distribution path decision (A / A+37 / B)
+- 🔴 **cybersecurity-hardening** (#3): Tier 2 infrastructure complete + User OpSec manual complete; Phase 1 awaiting user approval
+- 🟠 **mfg-farm** (#4): Blocked on test print (user action)
+- 🟡 **seedwarden** (#5): Phase 3 assets complete; awaiting user tag corrections (Track A) / social account setup (Track B)
+
+**Exploration Queue Status**:
+- ✅ Item 1 (stockbot Gate 2 roadmap) — COMPLETE (Session 886)
+- ✅ Item 2 (resistance-research adoption tracking) — COMPLETE (Session 912)
+- ✅ Item 3 (cybersecurity-hardening Tier 2 infrastructure) — COMPLETE (Session 912)
+- ✅ Item 4 (stockbot Post-Gate-1 roadmap) — COMPLETE (Session 913)
+- ✅ Item 5 (resistance-research Phase 1 execution playbook) — COMPLETE (Session 913)
+- ✅ Item 6 (cybersecurity-hardening user operational security) — COMPLETE (Session 913)
+- ⏳ Item 7 (seedwarden Phase 2 photography & logistics) — Deferred; would require detailed field research (May 30 deadline, 21 days remaining — user-owned action)
+
+**Autonomous Work Status**: All exploration queue items complete. All main projects blocked on user decisions/actions. No additional autonomous work available without unblocking from user.
+
+**Critical Timing Items**:
+- **May 12 (3 days)**: stockbot Gate 1 Checkpoint — POST_GATE_1_ROADMAP_v2.md provides decision framework
+- **May 13 (4 days)**: Domain 42 House Appropriations deadline (URGENT — earlier than May 28 Federal Register deadline)
+- **May 13-21**: If user makes distribution path choice, PHASE_1_EXECUTION_PLAYBOOK.md enables immediate 3-week Phase 1 execution
+
+**Budget Consumed**: Session 913 = ~2.5 hours, ~200-250K tokens (three parallel exploration items). Remaining weekly budget: ~1.7M tokens (77% all-models usage). No budget pressure.
+
+**Suggested Next Steps** (upon user availability):
+1. **Today (May 9)**: User reviews May 13 Domain 42 deadline; decides whether to execute Category A outreach immediately (DPA + NORML can file 48-72 hours before deadline)
+2. **Before May 12 20:00 UTC**: Ensure stockbot engine continues running; prepare to execute POST_GATE_1_ROADMAP_v2.md checkpoint query
+3. **When ready**: Choose resistance-research distribution path (A / A+37 / B) → execute PHASE_1_EXECUTION_PLAYBOOK.md → Phase 1 distribution begins within 24 hours
+4. **Before Phase 1**: Review USER_OPERATIONAL_SECURITY_MANUAL.md; implement Tier 1 mitigations (email separation, contact encryption); identify civil rights attorney for retainer
+
