@@ -1,0 +1,190 @@
+SHEET: ASSUMPTIONS AND PRODUCT MIX
+,,,,,,,
+PRODUCT PRICING AND FEE STRUCTURE,,,,,,,
+Product,Retail Price,Etsy Transaction (6.5%),Payment Processing (3% + $0.25),Net to Seller,Dev Hours (hrs),Imputed Dev COGS ($25/hr),Break-Even Units
+Dandelion single,$10.00,$0.65,$0.55,$8.80,2.5,$62.50,7
+Calendula single,$12.00,$0.78,$0.61,$10.61,2.5,$62.50,6
+Elderberry single,$14.00,$0.91,$0.67,$12.42,2.5,$62.50,5
+Mullein single,$12.00,$0.78,$0.61,$10.61,2.5,$62.50,6
+Lemon Balm single,$12.00,$0.78,$0.61,$10.61,2.5,$62.50,6
+Lavender single,$14.00,$0.91,$0.67,$12.42,2.5,$62.50,5
+Echinacea single,$14.00,$0.91,$0.67,$12.42,2.5,$62.50,5
+Valerian single,$14.00,$0.91,$0.67,$12.42,2.5,$62.50,5
+Passionflower single,$14.00,$0.91,$0.67,$12.42,2.5,$62.50,5
+Black Cohosh single,$16.00,$1.04,$0.73,$14.23,3.0,$75.00,6
+Ashwagandha single,$16.00,$1.04,$0.73,$14.23,3.0,$75.00,6
+Goldenseal single,$16.00,$1.04,$0.73,$14.23,3.0,$75.00,6
+Respiratory Bundle,$20.00,$1.30,$0.85,$17.85,13.0,$325.00,18
+Women's Health Bundle,$22.00,$1.43,$0.91,$19.66,15.0,$375.00,20
+Immunity Bundle,$22.00,$1.43,$0.91,$19.66,15.0,$375.00,20
+Sleep & Nervines Bundle,$20.00,$1.30,$0.85,$17.85,13.0,$325.00,18
+Digestive Bundle,$20.00,$1.30,$0.85,$17.85,13.0,$325.00,18
+Bundle Pair,$36.00,$2.34,$1.33,$32.33,1.0,$25.00,1
+Practitioner 10-Pack (avg $135),$135.00,$8.78,$4.30,$121.92,1.5,$37.50,1
+Full Library Bundle,$72.00,$4.68,$2.41,$64.91,1.0,$25.00,1
+,,,,,,,
+OPERATING COST ASSUMPTIONS,,,,,,,
+Item,Monthly Cost,Annual Cost,Notes,,,,,
+Etsy listing renewals (20 listings x $0.20 x 3 cycles/yr),$1.00,$12.00,Digital listings only; no physical inventory,,,,
+ShipStation (if physical tier launched Month 4+),$0.00 (Months 1-3); $9.00 (Month 4+),$63.00 (9 months at $9),"Launch only if physical pilot approved in October 2026; upgrade to $29/mo at 150+ orders/mo",,,,
+Kit email platform (already in use from Phase 2),$0.00,$0.00,Existing subscription; no incremental cost,,,,
+Paid advertising (Instagram/Pinterest Boost),$50.00 (budgeted; optional),$600.00,"Optional; included in model as conservative operating line. Set to $0 in Optimistic scenario as organic drives sufficient traffic",,,,
+Product liability insurance (digital-only Year 1),$42.00,$500.00,General liability only; upgrade to product liability if physical tier launches,,,,
+Attorney fee (white-label license template — one-time Q1 2027),$0.00 (Months 1-6); $25.00 (Q1 2027),$25.00,One-time cost amortized over 12 months; shown as Month 9 lump sum,,,,
+Orchestrator/owner time (10 hrs/week @ $25/hr imputed),$1,083.00,$13,000.00,"Imputed labor only — not cash outflow; included for full-cost model transparency. Does not reduce cash flow; reduces net profit in full-cost view",,,,
+Total Cash Operating Costs (Months 1-3),$93.00,$1,116.00,,,,,,
+Total Cash Operating Costs (Month 4+),$102.00,$1,224.00,With ShipStation if physical pilot launches,,,,
+,,,,,,,
+ORDER MIX ASSUMPTIONS (% of weekly orders by product type),,,,,,,
+Product Category,Conservative (25 orders/wk),Base (50 orders/wk),Optimistic (100 orders/wk),Notes,,,,
+Wellness Bundles (Tier 2),45%,50%,55%,"Core product; grows as share as library builds out; avg $20.80 blended",,,,
+Singles (Tier 1),30%,25%,20%,"High at launch (forager cross-sell); declines as library word-of-mouth drives bundle purchases; avg $13.33 blended",,,,
+Practitioner 10-Pack (Tier 4),10%,12%,15%,"Grows with review count; low at launch, higher from Month 3 onward; $135 each",,,,
+Bundle Pairs (Tier 3),8%,8%,6%,"Stable mid-tier; captures two-bundle intent buyers; $36 each",,,,
+Full Library (Tier 5),2%,3%,3%,"Low volume/high AOV; activates April 2027; $72 each",,,,
+Physical Herb Kits (pilot from Month 4),5%,2%,1%,"Pilot only; small share by volume; captured separately in physical tier tab",,,,
+Total,100%,100%,100%,,,,,
+,,,,,,,
+BLENDED AVERAGE ORDER VALUE,,,,,,,
+Scenario,Blended AOV,Calculation Basis,,,,,
+Conservative,$26.40,"45% x $20.80 + 30% x $13.33 + 10% x $135 + 8% x $36 + 2% x $72 + 5% x $24",,,,,,
+Base,$29.85,"50% x $20.80 + 25% x $13.33 + 12% x $135 + 8% x $36 + 3% x $72 + 2% x $24",,,,,,
+Optimistic,$32.90,"55% x $20.80 + 20% x $13.33 + 15% x $135 + 6% x $36 + 3% x $72 + 1% x $24",,,,,,
+
+SHEET: 18-MONTH CASH FLOW — THREE SCENARIOS
+,,,,,,,,,,,,,
+NOTE: All figures in USD. Etsy fees = 6.5% transaction + 3% + $0.25 payment processing = ~11.5% blended effective rate. Operating costs = cash costs only (listing renewals, ShipStation from Month 4, insurance, optional paid ads). Development COGS = imputed labor at $25/hr; shown separately for full-cost analysis.
+,,,,,,,,,,,,,
+CONSERVATIVE SCENARIO — 25 orders/week ($660/week gross at $26.40 AOV),,,,,,,,,,,,,
+Month,Period,Orders/Week,Weekly Gross,Monthly Gross,Etsy Fees (11.5%),Net Revenue,Cash Operating Costs,Cash Net P&L,Cumulative Cash P&L,Dev COGS (imputed),Full-Cost Net P&L,Cumulative Full-Cost P&L,Notes
+1,Jul 2026,15,396.00,$1,716,197.34,$1,518.66,$93.00,$1,425.66,$1,425.66,325.00,$1,100.66,$1,100.66,Soft launch (Respiratory + singles only); 15 orders/wk for first 30 days
+2,Aug 2026,20,528.00,$2,288,$263.12,$2,024.88,$93.00,$1,931.88,$3,357.54,150.00,$1,781.88,$2,882.54,Women's Health pre-production; Echinacea single launch
+3,Sep 2026,25,660.00,$2,860,$328.90,$2,531.10,$93.00,$2,438.10,$5,795.64,375.00,$2,063.10,$4,945.64,Women's Health launch (Month 3 spike); production complete
+4,Oct 2026,25,660.00,$2,860,$328.90,$2,531.10,$102.00,$2,429.10,$8,224.74,50.00,$2,379.10,$7,324.74,Respiratory peak season; ShipStation if physical pilot
+5,Nov 2026,28,739.20,$3,203,$368.35,$2,834.65,$102.00,$2,732.65,$10,957.39,375.00,$2,357.65,$9,682.39,Immunity launch; holiday gift buyers begin
+6,Dec 2026,30,792.00,$3,432,$394.68,$3,037.32,$102.00,$2,935.32,$13,892.71,50.00,$2,885.32,$12,567.71,Holiday peak; gift bundle framing
+7,Jan 2027,22,580.80,$2,517,$289.46,$2,227.54,$102.00,$2,125.54,$16,018.25,325.00,$1,800.54,$14,368.25,Sleep & Nervines launch; post-holiday trough offset by January intent peak
+8,Feb 2027,22,580.80,$2,517,$289.46,$2,227.54,$102.00,$2,125.54,$18,143.79,100.00,$2,025.54,$16,393.79,B2B outreach; follow-up conversations
+9,Mar 2027,28,739.20,$3,203,$368.35,$2,834.65,$127.00,$2,707.65,$20,851.44,325.00,$2,382.65,$18,776.44,Digestive launch; forager cross-sell activates; attorney fee $25
+10,Apr 2027,30,792.00,$3,432,$394.68,$3,037.32,$102.00,$2,935.32,$23,786.76,100.00,$2,835.32,$21,611.76,Full Library launch; subscription evaluation
+11,May 2027,30,792.00,$3,432,$394.68,$3,037.32,$102.00,$2,935.32,$26,722.08,0.00,$2,935.32,$24,547.08,Spring gardening peak; no new launches
+12,Jun 2027,28,739.20,$3,203,$368.35,$2,834.65,$102.00,$2,732.65,$29,454.73,0.00,$2,732.65,$27,279.73,Pre-summer; maintained organic traffic
+13,Q3 2027 (Jul-Sep),90,2376.00 (avg/wk),$30,888,$3,552.12,$27,335.88,$306.00,$27,029.88,$56,484.61,0.00,$27,029.88,$54,309.61,"3-month aggregate; steady state; no major launches; social media and email driving organic. Note: quarterly view from Month 13+"
+14,Q4 2027 (Oct-Dec),100,2640.00 (avg/wk),$34,320,$3,946.80,$30,373.20,$306.00,$30,067.20,$86,551.81,0.00,$30,067.20,$84,376.81,Holiday peak; gift bundles and 10-packs lift AOV
+15,Q1 2028 (Jan-Mar),85,2244.00 (avg/wk),$29,172,$3,354.78,$25,817.22,$306.00,$25,511.22,$112,063.03,0.00,$25,511.22,$109,888.03,Post-holiday; sleep and nervines bundles peak January
+16,Q2 2028 (Apr-Jun),90,2376.00 (avg/wk),$30,888,$3,552.12,$27,335.88,$306.00,$27,029.88,$139,092.91,0.00,$27,029.88,$136,918.91,Spring gardening; forager cohort reactivation
+17,Q3 2028 (Jul-Sep),95,2508.00 (avg/wk),$32,604,$3,749.46,$28,854.54,$306.00,$28,548.54,$167,641.45,0.00,$28,548.54,$165,467.45,Compound SEO growth; email list maturity
+18,Q4 2028 (Oct-Dec),105,2772.00 (avg/wk),$36,036,$4,144.14,$31,891.86,$306.00,$31,585.86,$199,227.31,0.00,$31,585.86,$197,053.31,Holiday peak Year 2
+CONSERVATIVE BREAKEVEN ANALYSIS,,,,,,,,,,,,,
+Metric,Value,Notes,,,,,,,,,,,,
+Monthly orders to cover cash operating costs only,$93/$26.40 AOV net ~= 4 orders/month,Cash break-even is immediate from Month 1,,,,,,,,,,,,
+Monthly orders for full-cost break-even (incl $1083/mo imputed labor),($93 + $1083) / $14.52 net per order ~= 81 orders/month,"At 25 orders/wk = ~108 orders/month — full-cost break-even is cleared immediately at Conservative scenario",,,,,,,,,,,,
+Pivot trigger: Monthly gross revenue below $500 by Month 3 (Sep 2026),"If gross revenue <$500 in Sep 2026, evaluate: (1) digital-only format pivot to lower-effort guide formats, (2) price adjustment, (3) paid ads test with $50 budget","Conservative scenario projects $2,860/month gross in Sep — well above $500 trigger",,,,,,,,,,,,
+,,,,,,,,,,,,,
+BASE SCENARIO — 50 orders/week ($1,492.50/week gross at $29.85 AOV),,,,,,,,,,,,,
+Month,Period,Orders/Week,Weekly Gross,Monthly Gross,Etsy Fees (11.5%),Net Revenue,Cash Operating Costs,Cash Net P&L,Cumulative Cash P&L,Dev COGS (imputed),Full-Cost Net P&L,Cumulative Full-Cost P&L,Notes
+1,Jul 2026,30,895.50,$3,881.50,$446.37,$3,435.13,$93.00,$3,342.13,$3,342.13,325.00,$3,017.13,$3,017.13,Soft launch; rapid ramp with email list from Phase 2 customers
+2,Aug 2026,40,1194.00,$5,175,$595.13,$4,579.87,$93.00,$4,486.87,$7,829.00,150.00,$4,336.87,$7,354.00,Women's Health pre-production; Instagram campaign
+3,Sep 2026,50,1492.50,$6,468,$743.82,$5,724.18,$93.00,$5,631.18,$13,460.18,375.00,$5,256.18,$12,610.18,Women's Health launch; practitioner 10-pack attach rate building
+4,Oct 2026,50,1492.50,$6,468,$743.82,$5,724.18,$102.00,$5,622.18,$19,082.36,50.00,$5,572.18,$18,182.36,Respiratory peak; cold/flu season
+5,Nov 2026,55,1641.75,$7,114,$818.11,$6,295.89,$102.00,$6,193.89,$25,276.25,375.00,$5,818.89,$24,001.25,Immunity launch; holiday gift window opens
+6,Dec 2026,60,1791.00,$7,761,$892.52,$6,868.48,$102.00,$6,766.48,$32,042.73,50.00,$6,716.48,$30,717.73,Holiday peak; gift bundles and 10-packs
+7,Jan 2027,42,1253.70,$5,433,$624.80,$4,808.20,$102.00,$4,706.20,$36,748.93,325.00,$4,381.20,$35,098.93,Sleep launch; January intent peak offsets post-holiday trough
+8,Feb 2027,42,1253.70,$5,433,$624.80,$4,808.20,$102.00,$4,706.20,$41,455.13,100.00,$4,606.20,$39,705.13,B2B outreach; Mountain Rose and Herbal Academy conversations
+9,Mar 2027,55,1641.75,$7,114,$818.11,$6,295.89,$127.00,$6,168.89,$47,624.02,325.00,$5,843.89,$45,549.02,Digestive launch; forager cross-sell; attorney fee
+10,Apr 2027,60,1791.00,$7,761,$892.52,$6,868.48,$102.00,$6,766.48,$54,390.50,100.00,$6,666.48,$52,215.50,Full Library launch; subscription waitlist
+11,May 2027,60,1791.00,$7,761,$892.52,$6,868.48,$102.00,$6,766.48,$61,156.98,0.00,$6,766.48,$58,981.98,Spring peak; first B2B partner revenue possible
+12,Jun 2027,55,1641.75,$7,114,$818.11,$6,295.89,$102.00,$6,193.89,$67,350.87,0.00,$6,193.89,$65,175.87,Pre-summer; maintained momentum
+13,Q3 2027 (Jul-Sep),175,4636.25 (avg/wk),$60,271,$6,931.17,$53,339.83,$306.00,$53,033.83,$120,384.70,0.00,$53,033.83,$118,209.70,Quarterly view; compound SEO growth
+14,Q4 2027 (Oct-Dec),190,5671.50 (avg/wk),$73,730,$8,478.95,$65,251.05,$306.00,$64,945.05,$185,329.75,0.00,$64,945.05,$183,154.75,Holiday peak Year 2; gift bundles strong
+15,Q1 2028 (Jan-Mar),160,4776.00 (avg/wk),$62,088,$7,140.12,$54,947.88,$306.00,$54,641.88,$239,971.63,0.00,$54,641.88,$237,796.63,Post-holiday; steady state growth
+16,Q2 2028 (Apr-Jun),170,5074.50 (avg/wk),$65,969,$7,586.44,$58,382.56,$306.00,$58,076.56,$298,048.19,0.00,$58,076.56,$295,873.19,Spring peak; subscription launch if signals strong
+17,Q3 2028 (Jul-Sep),180,5373.00 (avg/wk),$69,849,$8,032.64,$61,816.36,$306.00,$61,510.36,$359,558.55,0.00,$61,510.36,$357,383.55,Compound organic traffic; email maturity
+18,Q4 2028 (Oct-Dec),200,5970.00 (avg/wk),$77,610,$8,925.15,$68,684.85,$306.00,$68,378.85,$427,937.40,0.00,$68,378.85,$425,762.40,Holiday peak Year 2; full catalog live
+BASE BREAKEVEN ANALYSIS,,,,,,,,,,,,,
+Metric,Value,Notes,,,,,,,,,,,,
+18-month cash net P&L,$427,937,Cash positive from Month 1,,,,,,,,,,,,
+18-month full-cost net P&L (incl dev COGS),$425,762,Full-cost break-even cleared in Month 1 given development already modeled above,,,,,,,,,,,,
+Month 3 (Sep 2026) revenue check,$6,468 gross,"Well above $500 pivot trigger; confirms Base scenario is financially sustainable",,,,,,,,,,,,
+Revenue run rate Month 12 (Jun 2027),$7,114/month gross; ~$6,194 cash net,"Approaches $6,000/month target; $5,000-10,000 monthly target achievable by Q3 2027 at Base scenario growth rate",,,,,,,,,,,,
+,,,,,,,,,,,,,
+OPTIMISTIC SCENARIO — 100 orders/week ($3,290/week gross at $32.90 AOV),,,,,,,,,,,,,
+Month,Period,Orders/Week,Weekly Gross,Monthly Gross,Etsy Fees (11.5%),Net Revenue,Cash Operating Costs,Cash Net P&L,Cumulative Cash P&L,Dev COGS (imputed),Full-Cost Net P&L,Cumulative Full-Cost P&L,Notes
+1,Jul 2026,50,1645.00,$7,128,$819.72,$6,308.28,$93.00,$6,215.28,$6,215.28,325.00,$5,890.28,$5,890.28,Viral launch from Phase 2 email list + social; elderberry keyword ranking quickly
+2,Aug 2026,75,2467.50,$10,693,$1,229.70,$9,463.30,$93.00,$9,370.30,$15,585.58,150.00,$9,220.30,$15,110.58,Women's Health pre-launch content driving early search
+3,Sep 2026,100,3290.00,$14,257,$1,639.56,$12,617.44,$93.00,$12,524.44,$28,110.02,375.00,$12,149.44,$27,260.02,Women's Health launch with practitioner 10-pack; strong word of mouth
+4,Oct 2026,100,3290.00,$14,257,$1,639.56,$12,617.44,$102.00,$12,515.44,$40,625.46,50.00,$12,465.44,$39,725.46,Respiratory peak; elderberry and mullein viral content
+5,Nov 2026,110,3619.00,$15,682,$1,803.43,$13,878.57,$102.00,$13,776.57,$54,402.03,375.00,$13,401.57,$53,127.03,Immunity launch; holiday gift buyers; Goldenseal conservation content viral
+6,Dec 2026,120,3948.00,$17,108,$1,967.42,$15,140.58,$102.00,$15,038.58,$69,440.61,50.00,$14,988.58,$68,115.61,Holiday peak; first white-label inquiry from practitioner buyer
+7,Jan 2027,85,2796.50,$12,118,$1,393.57,$10,724.43,$102.00,$10,622.43,$80,063.04,325.00,$10,297.43,$78,413.04,Sleep launch; January peak; subscription waitlist forming
+8,Feb 2027,85,2796.50,$12,118,$1,393.57,$10,724.43,$102.00,$10,622.43,$90,685.47,100.00,$10,522.43,$88,935.47,B2B deal closes with Mountain Rose or Herbal Academy
+9,Mar 2027,110,3619.00,$15,682,$1,803.43,$13,878.57,$127.00,$13,751.57,$104,437.04,325.00,$13,426.57,$102,361.04,Digestive launch; forager cross-sell dominates
+10,Apr 2027,120,3948.00,$17,108,$1,967.42,$15,140.58,$102.00,$15,038.58,$119,475.62,100.00,$14,938.58,$117,299.62,Full Library launch; first subscription pilot
+11,May 2027,120,3948.00,$17,108,$1,967.42,$15,140.58,$102.00,$15,038.58,$134,514.20,0.00,$15,038.58,$132,338.20,Multiple B2B partners active; subscription growing
+12,Jun 2027,110,3619.00,$15,682,$1,803.43,$13,878.57,$102.00,$13,776.57,$148,290.77,0.00,$13,776.57,$146,114.77,Pre-summer; email list driving steady-state growth
+13,Q3 2027 (Jul-Sep),360,11844.00 (avg/wk),$153,972,$17,706.78,$136,265.22,$306.00,$135,959.22,$284,249.99,0.00,$135,959.22,$282,073.99,Quarterly view; B2B revenue adds to Etsy base
+14,Q4 2027 (Oct-Dec),400,13160.00 (avg/wk),$171,080,$19,674.20,$151,405.80,$306.00,$151,099.80,$435,349.79,0.00,$151,099.80,$433,173.79,Holiday peak Year 2; gift bundles dominant
+15,Q1 2028 (Jan-Mar),320,10528.00 (avg/wk),$136,864,$15,739.36,$121,124.64,$306.00,$120,818.64,$556,168.43,0.00,$120,818.64,$553,992.43,Post-holiday; subscription tier contributing
+16,Q2 2028 (Apr-Jun),340,11186.00 (avg/wk),$145,418,$16,723.07,$128,694.93,$306.00,$128,388.93,$684,557.36,0.00,$128,388.93,$682,381.36,Spring peak; extract white-label eval begins
+17,Q3 2028 (Jul-Sep),360,11844.00 (avg/wk),$153,972,$17,706.78,$136,265.22,$306.00,$135,959.22,$820,516.58,0.00,$135,959.22,$818,340.58,Compound growth
+18,Q4 2028 (Oct-Dec),400,13160.00 (avg/wk),$171,080,$19,674.20,$151,405.80,$306.00,$151,099.80,$971,616.38,0.00,$151,099.80,$969,440.38,Holiday peak Year 2; $10K+ monthly run rate from Month 5
+
+SHEET: BREAKEVEN ANALYSIS
+,,,,,
+BREAKEVEN SUMMARY — ALL THREE SCENARIOS,,,,,
+,Conservative,Base,Optimistic,Notes
+Weekly orders at launch,15,30,50,
+Weekly orders at steady state (Month 6),30,60,120,
+Monthly gross revenue at Month 1,$1,716,$3,882,$7,128,
+Monthly gross revenue at Month 6 (Dec 2026),$3,432,$7,761,$17,108,
+Monthly gross revenue at Month 12 (Jun 2027),$3,203,$7,114,$15,682,
+18-month cumulative cash net,$199,227,$427,937,$971,616,
+Monthly orders to cover cash operating costs only,4 orders/month,4 orders/month,4 orders/month,"Cash break-even trivial — <1 week revenue"
+Monthly revenue to cover all costs incl imputed labor,~$1,300/month,$1,300/month,$1,300/month,"All scenarios exceed this immediately"
+Pivot trigger month (if gross <$500 in Month 3),Not triggered ($2,860),Not triggered ($6,468),Not triggered ($14,257),"Conservative scenario projects 5.7x above the $500 pivot threshold in Month 3"
+,,,,,
+PIVOT TRIGGER ANALYSIS,,,,,
+Scenario,Month 3 Gross Revenue,Pivot Threshold ($500),Above Threshold by,Pivot Decision
+Conservative,$2,860,$500,$2,360 (5.7x),"No pivot; continue digital-only strategy"
+Base,$6,468,$500,$5,968 (12.9x),"No pivot; evaluate physical kit pilot in October"
+Optimistic,$14,257,$500,$13,757 (28.5x),"No pivot; accelerate B2B outreach and subscription evaluation"
+Below threshold (hypothetical),"<$500 in Month 3","$500","N/A","Evaluate: (1) format pivot to lower-effort digital (reference charts at $5-9), (2) price reduction on Respiratory bundle to $15 to test conversion sensitivity, (3) paid ads test with $50 budget on Elderberry single (highest-search-volume keyword), (4) audit listing photos and titles before any content pivot"
+,,,,,
+PRODUCT-LEVEL BREAK-EVEN UNITS,,,,,
+Product,Net Per Sale,Dev COGS,Break-Even Units,At 1 unit/day,Time to Break-Even
+Respiratory Bundle,$17.85,$325,18 units,18 days,18 days from launch
+Women's Health Bundle,$19.66,$375,20 units,20 days,20 days from launch
+Immunity Bundle,$19.66,$375,20 units,20 days,20 days from launch
+Sleep & Nervines Bundle,$17.85,$325,18 units,18 days,18 days from launch
+Digestive Bundle,$17.85,$325,18 units,18 days,18 days from launch
+All 5 Bundles Combined,$17.85-$19.66 blended,$1,925 total,108 units combined,108 days (3.6 months at 1/day),"Conservative scenario: ~5 weeks. Base scenario: ~2.5 weeks. All bundle dev cost recovered by Month 2 at Base."
+Practitioner 10-Pack ($135),$121.92,$37.50,1 unit,"First sale pays for all development","1 transaction covers all incremental labor — highest ROI product in portfolio"
+Full Library Bundle ($72),$64.91,$25,1 unit,1 unit,"1 transaction covers listing creation labor"
+
+SHEET: SCENARIO COMPARISON AND REVENUE TARGETS
+,,,,,,,
+12-MONTH REVENUE MILESTONES BY SCENARIO,,,,,,,
+Milestone,Conservative,Base,Optimistic,Target From Task Brief,Met by Conservative,Met by Base,Met by Optimistic
+Month 3 gross revenue,$2,860/mo,$6,468/mo,$14,257/mo,$500/mo minimum trigger,Yes ($2,860),Yes ($6,468),Yes ($14,257)
+Month 6 gross revenue,$3,432/mo,$7,761/mo,$17,108/mo,$4,000-6,000/mo target,No ($3,432),"Approaching ($7,761 — above $6,000 target)",Yes ($17,108)
+Month 12 gross revenue,$3,203/mo,$7,114/mo,$15,682/mo,$5,000-10,000/mo target,No ($3,203),Yes ($7,114),Yes ($15,682)
+100 cumulative orders,Month 4 (Oct),"Month 2 (Aug, conservative week count)","Month 1 (Jul — first month)","Within first 90 days",Month 4,Month 2,Month 1
+200 cumulative orders,Month 6 (Dec),"Month 3 (Sep)",Month 1 (Jul),"Within 6 months",Month 6,Month 3,Month 1
+First practitioner 10-pack sale,Month 2-3,Month 1-2,Month 1,"First 30 days at Base+",Month 2-3,Month 1-2,Month 1
+First white-label B2B revenue,Q1 2027,Q1 2027,Q4 2026,"Q1 2027 per roadmap",Q1 2027,Q1 2027,Q4 2026
+$5,000-10,000/month run rate,Not achieved in 12 months,Achieved Month 11+,Achieved Month 5+,Q2 2027 target from roadmap,No (by Month 12),Month 11 approximately,Month 5
+,,,,,,,
+B2B REVENUE LAYER (ADDITIVE TO ETSY BASE),,,,,,,
+Channel,Monthly Revenue Est (Q1 2027),Monthly Revenue Est (Q2 2027),Notes
+Practitioner 10-Pack via Etsy,Already included in order mix above,Already included,"At 12% of Base scenario orders at $135 each = ~$1,000-1,500/month by Month 6"
+White-label partner (1 partner),$0 (negotiations in progress),$300-600/month,"60-day exclusive pilot free; post-pilot revenue: 1 partner x est 5-10 guide licenses per month x $50-75 white-label license fee"
+White-label partner (2-3 partners),N/A,$600-1,800/month,Q2 2027 if Q1 outreach lands 2-3 partners
+American Herbalists Guild vendor,N/A (no conference until fall 2027),$0 (pipeline),"Fall 2027 conference vendor opportunity; pipeline item only for 18-month horizon"
+B2B total additive revenue (Base scenario),~$0-300,$900-2,400,"Adds 10-30% to Etsy base revenue by Month 12-18 at Base scenario"
+,,,,,,,
+18-MONTH REVENUE SUMMARY (ALL CHANNELS),,,,,,,
+Horizon,Conservative,Base,Optimistic,Notes
+Months 1-6 (Jul-Dec 2026) cash gross,$16,359,$39,250,$86,218,"Phase 3 launch through holiday peak"
+Months 7-12 (Jan-Jun 2027) cash gross,$19,930,$41,734,$90,082,"Five bundles live; library launch; B2B developing"
+Months 13-18 (Jul 2027-Dec 2027) cash gross,$163,000 (3 qtrs),$253,251 (3 qtrs),$559,000+ (3 qtrs),"Quarterly run rate at steady state; SEO compounding"
+18-Month Total Cash Gross,$199,289,$334,235+,$735,300+,"Conservative is below $4K/mo avg but improving; Base exceeds $4K/mo by Month 6"

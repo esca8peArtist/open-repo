@@ -4,6 +4,36 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 3 Strategic Plan — Medicinal Herbs Launch — 2026-05-09
+
+**Task**: Exploration Queue Item 36 — Develop Phase 3 medicinal herbs strategic plan, supplier scorecard, and profitability model. Independent of Phase 2 execution; ready for June 29 GO/NO-GO decision.
+
+**Context at session start**: Phase 3 research package (strategy, content outlines, sourcing guide, Etsy listings, species candidate list) completed May 7. This session produces the strategic wrapper and financial model.
+
+**Reference files read**: `phase-3-medicinal-herbs-strategy.md`, `phase-3-medicinal-herbs-content-outline.md`, `phase-3-medicinal-herbs-sourcing-guide.md`, `phase-3-medicinal-herbs-etsy-listings.md`, `medicinal-herbs-candidate-list.md`, `financial-sustainability-model.md`, `phase-3-decision-framework.md`, `phase-3-financial-projections.md`, `PHASE2_TO_PHASE3_TRANSITION.md`, `B2B_DISTRIBUTION_STRATEGY.md`.
+
+**Files created**:
+
+- `projects/seedwarden/phase-3-medicinal-herbs-strategic-plan.md` — NEW. 3,700-word production-ready strategic plan covering: market positioning (vs. Mountain Rose Herbs, Strictly Medicinal, PLR tier); five-tier product architecture (singles $10-16, wellness bundles $18-22, bundle pairs $32-36, practitioner 10-packs $120-150, full library $72); supplier analysis framework (five primary suppliers, five evaluation criteria); detailed unit economics per tier (net-to-seller, dev COGS, break-even units); scaling infrastructure (inventory, fulfillment SLA, quality control protocol, retention email strategy); legal and regulatory notes (FDA tiers, CITES species, state licensing, three disclaimer templates, insurance); June 15 soft-signal and June 29 GO/NO-GO/PIVOT framework; 12-month roadmap (July 2026 through Q2 2027); post-June-15 adjustment protocol. Quick-win SKU identified: Respiratory Health bundle. Ambitious SKU identified: Practitioner 10-Pack.
+
+- `projects/seedwarden/phase-3-supplier-scorecard-medicinal.csv` — NEW. Ranked vendor comparison matrix with 10 supplier rows (8 primary/backup + 2 specialist). Columns: Supplier, Species Availability Count, Species Available %, Species List, Pricing Per Oz (low/high), Organic Certified, Batch Testing, Lead Time, MOQ, MOQ Notes, Reliability Score, White Label Partner Status, Weighted Score, Tier (A/B/C), Notes. Scoring methodology embedded (Availability 40%, Price 20%, QA Rigor 20%, Lead Time 10%, MOQ 10%). Tier A: Strictly Medicinal Seeds (87.5), Prairie Moon Nursery (82.0), Mountain Rose Herbs (85.0), UpS FGV Program (80.0 — citation tier). Tier B: Southern Exposure (74.0), Fedco (72.0), Pacific Botanicals (76.0), Herb Pharm (68.0 — extract tier only), Frontier Co-op (70.0). Tier C: Vermont Wildflower Farm (45.0 — photo contact only).
+
+- `projects/seedwarden/phase-3-profitability-model.csv` — NEW. 18-month cash flow model with three scenarios (Conservative 25 orders/wk, Base 50 orders/wk, Optimistic 100 orders/wk). Four embedded sheets: Assumptions & Product Mix (20-product pricing table, blended AOV per scenario, operating cost schedule), 18-Month Cash Flow per scenario (monthly through Month 12, quarterly Months 13-18), Break-Even Analysis (pivot trigger analysis, product-level break-even units, scenario comparison), Revenue Target Summary (12-month milestones, B2B additive revenue layer, 18-month totals). Key finding: Base scenario ($50 orders/wk) exceeds $6,000/month gross by Month 6 (December 2026); Conservative scenario ($25 orders/wk) approaches $4,000/month by Month 6. Pivot trigger ($500/month gross by Month 3) is not triggered in any of the three scenarios — Conservative projects $2,860 in Month 3.
+
+**Regulatory decisions logged**:
+
+- Dried herbs sold for educational and culinary use are not regulated as dietary supplements under DSHEA. No FDA registration required for current Phase 3 product line.
+- Goldenseal (CITES Appendix II): domestic commerce in cultivated material is entirely unrestricted. Wild-harvested material requires CITES export permits for international trade. Mountain Rose Herbs provides sourcing documentation confirming cultivated origin for their goldenseal stock.
+- Tincture and extract format: deferred to Phase 4. cGMP compliance (21 CFR Part 111) required for supplement manufacturing — significant operational burden not appropriate for a 1-2 person operation without dedicated production facility.
+- White-label license agreement: attorney review required before first white-label sale. Estimated $150-300 one-time cost. Schedule before Q1 2027 B2B outreach.
+- Product liability insurance: general liability ($500-800/year) sufficient for digital-only Year 1. Upgrade to product liability coverage ($1,500-3,000/year) if physical herb kit tier launches.
+
+**Quick-win SKU determination**: Respiratory Health Herbs Guide ($20) — lowest production complexity, highest-searched keyword (elderberry), clean regulatory path, cold/flu season October timing, 18-unit break-even achievable in first two weeks at Base scenario.
+
+**Ambitious SKU determination**: Practitioner 10-Pack License ($120-150) — highest absolute dollar margin per transaction, 1-2 hours incremental development, first sale recovers all incremental labor. Limited by review count dependency — meaningful revenue from Month 2-3 post-bundle launch.
+
+---
+
 ## Phase 2 Photography and Plant Sourcing Logistics — 2026-05-09
 
 **Task**: Create concrete day-by-day production timeline and sourcing logistics for the May 9–30 window. 21 days to May 30 launch.
