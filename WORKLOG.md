@@ -4,6 +4,52 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 (Session 929 — Orchestrator, Parallel Agent Execution) — 2 AGENTS COMPLETE
+
+### ✅ resistance-research: May 2026 Tracker Updates + Phase 2 Domain 47 Research — COMPLETE
+
+**Deliverables**:
+1. **litigation-tracker-2026.md** (updated with 3 new entries):
+   - 11th Circuit ruling on ICE mandatory detention (May 6–7) — strikes down no-bond policy, creates 4-circuit split, SCOTUS review likely
+   - Callais cascade update — Louisiana, Alabama, Tennessee redistricting projecting 4–8 net Republican House seat gains
+   - Section 591 House Appropriations alert — DEA rescheduling rider appeared in CJS markup (8–6 vote), repeat of FY2026 precedent (stripped in conference)
+   
+2. **domain-47-housing-security-displacement-democratic-participation.md** (NEW — production-ready):
+   - 7,200 words, 48 citations
+   - Central finding: 1% increase in eviction rates correlates with 0.46–5.54% decline in voter turnout; housing voucher receipt depresses voter registration 3.6–4.9% for ~20 years
+   - Three 2026 policy tracks: Emergency Housing Vouchers (~47K households losing stability), work requirements (3.3M threatened), CoC overhaul (June 1 NOFO deadline)
+   - 7-part reform architecture (immediate, medium-term, structural)
+   - Advocacy windows identified: May—June (work requirements finalization), June 1 (CoC NOFO), ongoing (EHV expiration)
+
+**Key insight**: Domain 42 (drug policy regulatory capture) and Domain 47 (housing administrative policy as political exclusion) both follow the same analytical arc — administrative systems insulating policy from democratic accountability. This sets up Phase 2 domain coherence around "administrative capture as democratic exclusion."
+
+**Pending flags for next session**:
+- Nashville Crenshaw vindictive prosecution ruling (imminent)
+- CoC new NOFO publication (target June 1)
+- FISA 702 long-term reauthorization round 3 (June 12 deadline)
+- Trump v. Slaughter (SCOTUS decision late June on independent agency removal)
+- Trump v. Barbara (birthright citizenship, late June)
+
+**Status**: ✅ COMPLETE. Domain 47 file committed. Tracker updated. Session 929 agent complete.
+
+---
+
+### ✅ seedwarden: Standing Task Status Audit — CONFIRMED COMPLETE
+
+**Finding**: The "Download 18 wild edibles habitat photos — 0/18 complete" task in the agent profile is stale. All 18 photos are already downloaded and present in `/projects/seedwarden/assets/wild-edibles/` with full sourcing logs in prior WORKLOG.md entries. No new work required.
+
+**Complete inventory**:
+- 18 species: Allium tricoccum, Amaranthus retroflexus, Arctium lappa, Asclepias syriaca, Chenopodium album, Cichorium intybus, Daucus carota, Chamerion angustifolium, Reynoutria japonica, Fragaria virginiana, Helianthus tuberosus, Nasturtium officinale, Oxalis stricta, Portulaca oleracea, Stellaria media, Taraxacum officinale, Typha latifolia, Urtica dioica
+- All CC-licensed (CC BY-SA or CC0)
+- All sourced from Wikimedia Commons
+- One note: `fallopia-japonica-habit.jpg` is 204 KB (possibly downscaled from 9.9 MB original)
+
+**Action for next phase**: When producing Etsy listings or derivative PDFs, include attribution/photo credits page per CC BY-SA requirements.
+
+**Status**: ✅ CONFIRMED. No action needed. Updating agent profile to mark task complete.
+
+---
+
 ## 2026-05-09 (Session 928 — resistance-research agent, Exploration Queue Item: Domain Expansion Strategy Domains 36-50) — 1 ITEM COMPLETE
 
 ### ✅ resistance-research: Phase 2 Domain Expansion Strategy (Domains 36-50) — COMPLETE
