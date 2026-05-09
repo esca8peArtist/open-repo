@@ -2,6 +2,29 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Phase 3 Candidate 2: First Three Institutional Playbooks
+
+**Status**: COMPLETE
+
+**Context**: Phase 3 Candidate 2 expansion — sector-specific institutional playbooks for democratic renewal proposal implementation. The 7,000-word outline (`phase-3-institutional-playbooks-outline.md`) was complete; this session expanded the first three priority constituencies into full standalone playbooks (1,500-2,000 words each) with sector analysis, actionable domain mapping, Year 1-3 sequencing, case studies, constraints, communication strategy, and success metrics.
+
+**Files created** (in `projects/resistance-research/playbooks/`):
+- `playbook-ags.md` (~2,100 words): AG coalition playbook — 24 Democratic AGs, NAAG/DAGA coordination infrastructure, IEEPA tariff coalition case study (Learning Resources v. Trump, Feb 20 2026), shadow docket mitigation architecture, 2026 AG race competitive state analysis, domain assignment map proposal
+- `playbook-civil-service.md` (~2,200 words): Civil service union playbook — AFGE (820,000 members), NTEU (150,000+), 8-union coalition coordination, NTEU inauguration-night filing case study, AFGE staff reduction from 355 to 150 (real constraint), Saving the Civil Service Act co-sponsor expansion strategy, MSPB Reconstruction Act drafting proposal
+- `playbook-law-clinics.md` (~2,100 words): Law school clinic playbook — Yale Rule of Law Clinic 2025-2026 case inventory (6+ major amicus actions), Harvard Democracy Clinic, AALS 830-attendee 2025 conference, rapid-response 72-hour publication model (Loper Bright precedent), empirical shadow docket analysis project proposal, constitutional amendment academic architecture
+
+**Key research findings incorporated**:
+1. Democratic AG count is 24 (including DC), not 22 — correction from outline
+2. AFGE reduced from 355 to ~150 staff — a real organizational constraint the playbook addresses directly
+3. NTEU filed first Schedule Policy/Career lawsuit same day as inauguration — confirms pre-staging model
+4. Yale Rule of Law Clinic filed at least 6 major amicus briefs in 2025-2026 alone — clinic sector more active than outline suggested
+5. 78 House co-sponsors on Saving the Civil Service Act (76 D, 2 R) — identifies co-sponsor expansion as Month 1-3 task
+6. Harvard funding freeze ruled unconstitutional retaliation (Sept 3, 2025) — establishes that clinic advocacy is protected, mitigating but not eliminating chilling effect
+
+**Relationship to existing files**: These three playbooks expand Constituencies 1, 2, and 6 from the outline. They do not modify the outline or any Phase 1-2 content. The outline's Constituencies 3, 4, 5, 7, 8 (labor unions, religious coalitions, media organizations, state legislators, federal judges) remain in outline form pending future expansion sessions.
+
+---
+
 ## May 9, 2026 — Research Agent — Phase 1 Adoption Tracking Automation: Operator's Guide
 
 **Status**: COMPLETE
