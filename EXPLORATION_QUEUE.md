@@ -3,7 +3,7 @@
 > Research items queued for autonomous execution between project work.
 > Cross out items as they complete. If queue falls below 3 items, add more.
 >
-> **Last updated**: Session 900 (2026-05-09) — Completed Items 32-34 (Gate 1 Readiness, Board Briefing, Customer Ops). Added 3 new items (35-37). Queue refreshed.
+> **Last updated**: Session 909 (2026-05-09) — Items 35-37 completed by Session 908 (Stockbot deployment, Seedwarden automation, Cybersecurity Tier 3). Item 38 blocked on user path decision. Added 3 new items (39-41) for May 30 / Phase 1 execution friction reduction. Queue refreshed.
 
 ---
 
@@ -83,6 +83,56 @@
 **Key areas**: DEA regulatory process, organizational coalition coordination, comment strategy diversity
 **Business value**: Domain 42's 19-day window is narrow; this item ensures coordination doesn't slip. May 28 DEA filing is a leverage point for future cannabis policy advocacy (documented organizational participation in federal hearing).
 **Outcome**: Production-ready coordination framework and comment templates ready for user-led org outreach (May 8-28 window)
+
+---
+
+### Item 39: seedwarden Phase 2 Setup User Guide (Session 909+ queue item)
+**Status**: QUEUED — independent work, reduces execution friction at May 30 launch
+**Trigger**: Seedwarden Phase 2 automation toolkit (Session 908) is complete. User has 3 required setup actions (social accounts, Canva Brand Kit, Kit landing page) — each 30–60 min. Creating step-by-step user guides for each action will reduce friction and execution risk.
+**Scope**: Develop three detailed user guides for Phase 2 setup actions, with screenshots, decision trees, and troubleshooting
+**Deliverables**:
+- `phase-2-social-account-setup-guide.md` (~2,000 words) — Instagram business account creation (business category selection, profile optimization, verification), TikTok creator account (age verification, monetization eligibility), Pinterest business account (domain verification). Per-platform screenshot walkthrough, 10-15 min per account. Includes decision tree for existing personal accounts (upgrade path vs. new business account).
+- `phase-2-canva-brand-kit-setup-guide.md` (~1,500 words) — Kit subscription activation, Brand Kit creation (color palette import from Figma, logo upload, font selection from Phase 1 brand spec), zone card template setup, preset creation for 30-day calendar. Step-by-step with screenshots. Estimated time: 20–30 min.
+- `phase-2-kit-landing-page-setup-guide.md` (~2,000 words) — Kit account creation, landing page builder walkthrough (copy paste from `phase-3-landing-pages.md`), email list integration (MailerLite or Klaviyo bridging), form customization, UTM parameter setup, DNS/domain verification if required. Decision tree for domain vs. Kit subdomain. Estimated time: 45–60 min.
+**Owner**: seedwarden agent
+**Timeline**: 2–2.5 hours (guide writing + screenshot sourcing)
+**Key areas**: User experience, step-by-step clarity, decision support, time estimation accuracy
+**Business value**: Reduces execution friction at May 30 launch. Lowers risk of setup delays (user completes all 3 actions within 2-hour window rather than spread across May 26–29). All 3 guides are self-contained and ready for May 26 user review.
+**Outcome**: Three production-ready user guides, ready for May 26 delivery to user (4 days before launch)
+
+---
+
+### Item 40: cybersecurity-hardening Phase 1 Execution Runbook (Session 909+ queue item)
+**Status**: QUEUED — independent work, reduces execution friction for Phase 1 launch
+**Trigger**: Phase 1 is production-ready and awaiting user approval (TIER1_OUTREACH_PREPARED.md current to May 9 threats). Creating detailed execution runbook for Phase 1 Tier 1 outreach will reduce day-of execution friction and decision paralysis.
+**Scope**: Develop comprehensive Phase 1 launch runbook with day-by-day checklist, template filling instructions, tracking spreadsheet, and contingency responses
+**Deliverables**:
+- `phase-1-launch-runbook.md` (~3,000 words) — 24-48h pre-launch setup (Gist creation, Bitly URL shortening, Gmail label setup, tracking spreadsheet template), Day 1 launch sequence (email send 1 of 5, Wave 1 outreach to tech-focused segment), Days 2–7 (remaining waves, staggered timing, tracking cadence), contingency responses (bounce/unsubscribe handling, recipient questions, media interest). Exact timestamps (UTC) for each action to remove decision-making under time pressure.
+- `phase-1-tracking-spreadsheet-template.xlsx` — 5 columns (recipient, segment, send_date, open_date, click_date, reply_date, status) for all 25 Tier 1 contacts across 5 waves. Auto-calculus: open rate, click rate, reply tracking. Dashboard tab with completion % and time remaining until next wave.
+- `phase-1-gist-creation-walkthrough.md` (~1,000 words) — Step-by-step GitHub Gist creation (public vs. private decision, description field, file structure, sharing URL). Includes screenshots, domain masking with Bitly, tracking URL setup.
+- `phase-1-contingency-playbook.md` (~1,500 words) — Five scenarios (high bounce rate, reply volume exceeds capacity, media discovers Gist, org requests modifications, technical email delivery failure) with decision trees and escalation triggers.
+**Owner**: cybersecurity-hardening agent
+**Timeline**: 2–2.5 hours (runbook + templates + contingency playbook)
+**Key areas**: User experience, time optimization, decision support, contingency coverage
+**Business value**: Phase 1 launch success depends on execution fidelity over 5–7 days. Runbook removes decision-making during execution window, reduces paralysis, and ensures consistent pacing. All files ready for user review before launch decision.
+**Outcome**: Production-ready Phase 1 execution runbook, ready for user approval decision
+
+---
+
+### Item 41: resistance-research Phase 1 Distribution Setup Kit (Session 909+ queue item)
+**Status**: QUEUED — contingent on user distribution path decision, but prep work can proceed independently
+**Trigger**: User must choose distribution path (A / A+Domain37 / B) to proceed with Phase 1. Regardless of path choice, 3 common setup tasks (file organization, template field-filling, contact verification) must be done. Preparing templated setup kit will accelerate launch once user decides.
+**Scope**: Develop path-agnostic distribution setup kit with templates, checklists, and field-filling instructions for all three paths
+**Deliverables**:
+- `phase-1-distribution-setup-checklist.md` (~1,500 words) — 7-step pre-distribution checklist independent of path: (1) verify all 35 domains in projects/resistance-research/domains/ directory, (2) check proposal file canonical location, (3) verify Gist URL placeholders, (4) check contact fields in published/README.md, (5) test all internal cross-references, (6) verify Substack/Reddit template formatting, (7) create distribution tracking spreadsheet. Estimated time: 1.5–2 hours.
+- `phase-1-path-decision-template.md` (~1,000 words) — Three path options with execution timeline, contact list differences, and rollout sequence for each. Decision matrix (speed vs. comprehensiveness). Template for user to document decision and rationale.
+- `phase-1-gist-creation-playbook.md` (~1,500 words) — Step-by-step Gist creation for all three paths. Path A: 1 consolidated Gist; Path A+37: Domain 37 separate Gist; Path B: multi-Gist structure. Per-path folder structure, file naming, description formatting.
+- `phase-1-contact-verification-checklist.md` (~2,000 words) — Template for verifying all 150+ contacts across Tier 1-3. Per-contact fields: name, organization, title, email, preferred contact method (email/LinkedIn/personal referral). Batch verification script (check LinkedIn, search for recent org announcements). Estimated time: 3–4 hours across 2 days.
+**Owner**: resistance-research agent
+**Timeline**: 3–4 hours (setup kit assembly + template creation)
+**Key areas**: Path-agnostic preparation, decision support, execution acceleration
+**Business value**: Regardless of path choice, Phase 1 setup requires 4–6 hours of template work + verification. Preparing setup kit cuts user time to 1–2 hours (only decision-specific customization). Reduces friction and accelerates Phase 1 launch post-decision.
+**Outcome**: Production-ready Phase 1 setup kit, ready for deployment immediately after user path decision
 
 ---
 
