@@ -4,6 +4,47 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 15:57 — Session 937 — Orchestrator — Parallel Wave 1 Analysis (3 agents, stockbot/resistance-research/cybersecurity-hardening)
+
+**CRITICAL FINDINGS — IMMEDIATE USER ACTION REQUIRED** (3 items):
+
+### stockbot — DEPLOYMENT_READINESS_ANALYSIS.md Complete
+- **Backtest validation**: BACKTEST_REPORT_2026-05-08.md findings are credible but conservative (Sharpe/MaxDD are estimates, not direct measurements; portfolio Sharpe realistic 1.2–1.6, MaxDD -10% to -14%). Portfolio still passes Gate 2 thresholds. No OOS validation on 2025 H2 data — must complete before June 12 live readiness decision.
+- **May 12 checkpoint prediction**: FAR_MISS_C1 (0 round trips confirmed) — EXPECTED, not failure. AAPL h=10 expires May 13–14 (one trading day after checkpoint). This is correct behavior.
+- **THREE BLOCKING ISSUES IDENTIFIED**:
+  1. **Jetson unreachable** (100.120.18.84 as of May 9) — if unresolved, h+10 SELL won't fire May 13, becomes execution failure (C2) instead of timing miss (C1). **USER ACTION**: SSH to Jetson and verify health by May 11.
+  2. **stockbot.db sync cron PATH error** — no fills synced May 6–9. Must manually run `sync_db_from_alpaca.py --since 2026-04-29` before May 12 checkpoint query to capture May 5 closes. **USER ACTION**: Run sync manually by May 12 morning or authorize orchestrator to set up cron PATH fix.
+  3. **ridge_wf session ID is placeholder** (`a1b2c3d4e5f60001`) in `active-sessions-2session.json` — session may not be live. If unresolved, May 13 SELL produces 1 fill (lgbm_ho only) instead of 2. Affects Gate 1b (5 round trips by June 4) timeline. **USER ACTION**: Verify ridge_wf is live or replace placeholder with correct session ID by May 11.
+- **Deployment timeline**: AAPL SELL fires May 13–14 → ARCH-2/ARCH-3/ARCH-6 fixes May 13–16 → Options OOS backtest May 14–18 → Meta+MSFT+SPY portfolio activation after AAPL SELL → Gate 1b formal deadline June 4 → Gate 2 checkpoint ~June 9–23 (scenario-dependent) → Live readiness decision June 12 (PASS) or ~July (NEAR-MISS).
+- **File**: `projects/stockbot/DEPLOYMENT_READINESS_ANALYSIS.md`
+
+### resistance-research — DOMAIN_42_URGENCY_ASSESSMENT.md + DISTRIBUTION_PATH_ANALYSIS.md Updated
+- **CRITICAL: Wave 1 (Domain 42 Category A) NOT YET SENT as of May 9** — one day behind schedule. Must send TODAY if not already sent.
+- **Domain 42 is path-independent precondition** — must launch regardless of Path A/A+37/B decision. DEA June 29 hearing participation deadline is May 28 (19 days). NAACP LDF routing cycle is 10–14 days — outside send date is May 10. Wave 1 must go out today. Wave 2 (May 10–12) and Wave 3 (May 14–17) ready for user execution.
+- **Most urgent action TODAY**: Execute Domain 42 Wave 1 (Category A) via `execution/domain-42-email-template-may28-urgency.md` template. Then user decides Path A / A+37 / B within 48 hours.
+- **Phase 2 domain expansion**: Domains 44, 45, 47, 52 are complete (reduces advantage of Path B). Numbering gap at Domain 40–41 is presentation only, not research gap. Next priorities: Domains 48–54 with Aug 1 hard deadline for Domains 49–50 (anti-trans ballot measures).
+- **Files**: `projects/resistance-research/DOMAIN_42_URGENCY_ASSESSMENT.md` (new), `projects/resistance-research/DISTRIBUTION_PATH_ANALYSIS.md` (updated)
+
+### cybersecurity-hardening — PHASE_1_LAUNCH_CHECKLIST.md Complete
+- **Flag 1 (Mobile Fortify)**: Add 100-word clarifying paragraph to `opsec-playbook.md` biometrics section (15 min, confirmed current via EFF Nov 2025, Jan 2026 sources).
+- **Flag 3 (Cellebrite BFU)**: Add 500-word subsection to `implementation-guide.md` covering BFU/AFU distinction, wipe passphrase, auto-reboot (note Android 16 April 2025 72-hour default). **USER ACTION**: Authorize corpus updates before Phase 1 launch.
+- **Flag 2 (DOGE/SSA)**: Deferred to July 26 quarterly review (Fourth Circuit vacated injunction April 10, 2026; confirmed safe to launch).
+- **Tier 1 launch readiness**: 25 contacts verified, template ready, batching strategy (5/day, 7–9 AM), 7-week timeline, >10% response rate by Week 2 as primary gate. **USER ACTION**: Set Day 1 send date and authorize Flag 1+3 updates.
+- **Phase 2 Tier 2 deployment (4 weeks post-Phase-1)**: Journalist playbook most time-urgent (FISA 702 June 12 deadline). DV and financial playbooks require external review during Phase 1 Weeks 1–3 (NNEDV Safety Net + nonprofit tax counsel). Election worker playbook deferred (doesn't exist yet).
+- **Files**: `PHASE_1_LAUNCH_CHECKLIST.md`, `PHASE_2_DEPLOYMENT_READINESS.md`, `TIER_3_EXPANSION_OUTLINE.md`, `PHASE_2_QA_REPORT.md`
+
+---
+
+## 2026-05-09 — Research Agent — Cybersecurity-Hardening: Phase 1 Launch Checklist, Phase 2 Deployment Readiness, Tier 3 Expansion, Phase 2 QA
+
+**Files**:
+- `projects/cybersecurity-hardening/PHASE_1_LAUNCH_CHECKLIST.md` — Consolidated go/no-go checklist for Tier 1 outreach. Flags 1 and 3 resolution steps, Gist creation reference, 25-contact template verification, batching strategy, success metrics, and next-step callouts.
+- `projects/cybersecurity-hardening/PHASE_2_DEPLOYMENT_READINESS.md` — Phase 2 Tier 2 launch plan. Four playbook integration sequences (journalist, whistleblower, DV, financial), expanded audience tracks (DV coalitions, labor organizers, election workers deferred), Spanish translation status, 12-week timeline with dependencies, next-step callouts.
+- `projects/cybersecurity-hardening/TIER_3_EXPANSION_OUTLINE.md` — 30-organization, 16-week Tier 3 campaign. Three sectors (12 policy orgs, 8 labor orgs, 10 academic law/policy), differentiated messaging strategy per sector, contact research methodology, full timeline.
+- `projects/cybersecurity-hardening/PHASE_2_QA_REPORT.md` — QA report on four Phase 2 scenario playbooks. Cross-playbook consistency verified (no contradictions found). Five sources verified current (May 2026): Mobile Fortify 100K+ uses confirmed; IRS/Palantir LCA confirmed current; SecureDrop 61 newsrooms (minor correction from 65+); DOGE/SSA injunction vacated confirmed; NNEDV Safety Net confirmed current. Two action items: DV playbook editorial gap (5 min), Flag 3 corpus update (pre-condition for journalist/whistleblower pilot). Two quarterly review items: Monero exchange landscape, IRS LCA total contract value.
+
+---
+
 ## 2026-05-09 — Research Agent — Exploration Item 17: Tier 1 Success Measurement Framework (Policy-Contact Cohort)
 
 **File**: `projects/cybersecurity-hardening/TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md`

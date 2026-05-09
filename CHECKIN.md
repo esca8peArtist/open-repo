@@ -1,12 +1,56 @@
 # Check-in
 
-## Session 937 — May 9, 2026 (Autonomous Orchestrator - Exploration Items 15-17 Complete)
+## Session 937 — May 9, 2026 15:57 UTC (Autonomous Orchestrator - Critical Findings + Wave 1 Analysis Complete)
 
-**Summary**: All main projects remain blocked on user decisions/actions (stockbot awaiting May 12 checkpoint, resistance-research awaiting distribution path choice, mfg-farm awaiting test print, seedwarden awaiting user photo schedule + account setup). Executed 3 parallel exploration items (15-17) to prepare next-phase infrastructure. Items enable rapid user-triggered execution once signals received. Effort: ~10-12 hours equivalent sequential, ~5-7 hours wall-clock via parallel agents. All 3 deliverables production-ready.
+**CRITICAL FINDINGS — THREE IMMEDIATE USER ACTIONS REQUIRED**:
+1. **stockbot**: Jetson unreachable as of May 9; Cron PATH broken; Ridge_wf session ID placeholder. Three blocking issues must resolve by May 11.
+2. **resistance-research**: Domain 42 Wave 1 NOT SENT as of May 9 (one day behind). Must send TODAY. May 28 DEA deadline is 19 days away.
+3. **cybersecurity-hardening**: Flag 1 & 3 corpus updates required (15–30 min total). Phase 1 launch blocked pending these + user approval.
 
-### ✅ Session Accomplishments — Items 15-17 Complete
+**Summary**: Spawned 3 parallel subagents (stockbot/resistance-research/cybersecurity-hardening) to validate backtest report, prepare distribution path analysis, and finalize Phase 1 launch checklist. All three delivered critical blocking issues + deployment readiness plans. Effort: ~14-16 hours total (5–6 hours wall-clock via parallelism). 
 
-**1. seedwarden: Phase 2 Guide Content Expansion Blueprint**
+### ✅ Session Accomplishments — Wave 1 Parallel Analysis Complete
+
+**1. stockbot: DEPLOYMENT_READINESS_ANALYSIS.md — Backtest Validation + Three Blocking Issues**
+- **File**: `projects/stockbot/DEPLOYMENT_READINESS_ANALYSIS.md` (comprehensive analysis complete)
+- **Backtest Report Validation**: BACKTEST_REPORT_2026-05-08.md findings are credible but conservative. Portfolio Sharpe realistic 1.2–1.6 (report estimates 1.53), MaxDD realistic -10% to -14% (report -10.17%). Portfolio still passes Gate 2 thresholds (Sharpe ≥1.0, MDD ≤20%). **Action needed**: OOS validation on 2025 H2 data must complete before June 12 live readiness decision.
+- **May 12 Checkpoint Prediction**: FAR_MISS_C1 (0 confirmed round trips, AAPL h+9 at checkpoint, h+10 fires May 13). This is EXPECTED behavior, not a failure.
+- **THREE CRITICAL BLOCKING ISSUES** (all must resolve by May 11):
+  1. **Jetson unreachable** (100.120.18.84 as of May 9) — if unresolved by May 13, AAPL h+10 SELL won't fire, becomes execution failure (C2) instead of timing miss (C1). **USER ACTION**: SSH to Jetson, verify health.
+  2. **Stockbot.db sync cron PATH error** — no fills synced May 6–9. **USER ACTION**: Run `sync_db_from_alpaca.py --since 2026-04-29` manually by May 12 morning, OR authorize orchestrator to fix cron PATH.
+  3. **Ridge_wf session ID is placeholder** (`a1b2c3d4e5f60001`) — session may not be live. **USER ACTION**: Verify ridge_wf is live or replace with correct ID by May 11.
+- **Deployment Timeline**: AAPL SELL May 13–14 → Fixes May 13–16 → OOS backtest May 14–18 → Gate 1b deadline June 4 → Gate 2 checkpoint ~June 9–23 → Live readiness June 12 (PASS) or ~July (NEAR-MISS).
+
+**2. resistance-research: DOMAIN_42_URGENCY_ASSESSMENT.md + DISTRIBUTION_PATH_ANALYSIS.md Updated**
+- **Files**: `DOMAIN_42_URGENCY_ASSESSMENT.md` (new), `DISTRIBUTION_PATH_ANALYSIS.md` (updated)
+- **CRITICAL: Wave 1 NOT SENT as of May 9** — one day behind schedule. **USER ACTION**: Send Domain 42 Wave 1 (Category A) TODAY if not already sent using `execution/domain-42-email-template-may28-urgency.md` template.
+- **Domain 42 is path-independent precondition** — must launch regardless of Path A/A+37/B decision. DEA June 29 hearing, participation deadline May 28 (19 days away).
+- **NAACP LDF routing cycle** is 10–14 days — outside send date is May 10. Wave 1 must go out today.
+- **Wave 2 (May 10–12) and Wave 3 (May 14–17)** ready for user execution. Contact list verified, templates current.
+- **Phase 2 domain expansion**: Domains 44, 45, 47, 52 are complete (reduces Path B's advantage). Numbering gap at Domain 40–41 is presentation only.
+- **Path Decision Timing**: User should decide Path A / A+37 / B within 48 hours. Path A+37 remains RECOMMENDED (election protection urgency + Domain 42 feasibility).
+
+**3. cybersecurity-hardening: PHASE_1_LAUNCH_CHECKLIST.md + Phase 2 Deployment + Tier 3 Outline**
+- **Files**: `PHASE_1_LAUNCH_CHECKLIST.md`, `PHASE_2_DEPLOYMENT_READINESS.md`, `TIER_3_EXPANSION_OUTLINE.md`, `PHASE_2_QA_REPORT.md`
+- **Flag 1 (Mobile Fortify)**: Add 100-word paragraph to opsec-playbook.md biometrics section. 15 minutes. Confirmed current.
+- **Flag 3 (Cellebrite BFU)**: Add 500-word subsection to implementation-guide.md covering BFU/AFU distinction, wipe passphrase, auto-reboot (note Android 16 April 2025 72-hour default). **USER ACTION**: Authorize corpus updates + set Day 1 send date.
+- **Flag 2 (DOGE/SSA)**: Deferred to July 26 quarterly review (Fourth Circuit vacated injunction April 10; safe to launch).
+- **Tier 1 Launch Readiness**: 25 contacts verified, 7-week timeline, >10% response rate by Week 2 as primary gate.
+- **Phase 2 Tier 2 Deployment** (4 weeks post-Phase-1): Journalist playbook most time-urgent (FISA 702 June 12 deadline). DV and financial playbooks need external review during Phase 1 Weeks 1–3.
+- **QA Report**: All sources verified current (May 2026). No contradictions found across four playbooks. Two pre-distribution actions: DV playbook editorial (5 min), Flag 3 completion (pre-condition for journalist/whistleblower).
+
+### ⚠️ IMMEDIATE USER ACTION REQUIRED — Next 24 Hours
+
+1. **resistance-research (TODAY May 9)**: Send Domain 42 Wave 1 (Category A) using `execution/domain-42-email-template-may28-urgency.md`
+2. **stockbot (by May 11)**: 
+   - Resolve Jetson unreachability (SSH check + health verification)
+   - Fix stockbot.db sync cron PATH or authorize orchestrator to run manual sync
+   - Verify ridge_wf session ID is live
+3. **cybersecurity-hardening (TBD)**: Authorize Flag 1+3 corpus updates + set Day 1 Phase 1 send date
+
+### ✅ Detailed Accomplishments (prior sessions consolidated)
+
+**Prior: seedwarden: Phase 2 Guide Content Expansion Blueprint**
 - **File**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md` (531 lines, ~4,800 words)
 - **Status**: Production-ready guide-writing pipeline for 20-50 new species post-May-30
 - **Content**: Species Priority Matrix (20 Tier 1 May 31-June 30, 15-20 Tier 2 summer), 6-stage pipeline (capture → cull → habitat transcription → photo mapping → draft → QA), seasonal calendar (spring ephemeral, summer perennial, fall seed, winter structure), 24-field database schema, publishing cadence (45-50 species by year-end), content integration (Phase 1 cross-references, email campaigns, social media, bundle triggers)
