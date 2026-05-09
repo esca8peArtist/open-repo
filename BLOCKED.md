@@ -32,6 +32,17 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### mfg-farm — Test print required before launch prep continues
+**Date blocked**: 2026-04-12
+**Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
+**What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
+**Verify with**: `# manual — cannot auto-verify`
+**Resolution**:
+
+## Resolved Archive
+
+---
+
 ### stockbot — Docker API container stuck in initialization loop; HTTP endpoint unreachable
 **Date blocked**: 2026-05-09
 **Date resolved**: 2026-05-09 (Session 919)
@@ -44,17 +55,6 @@ When the block is resolved (Resolution written OR Verify command passes):
   4. Rsync'd updated src/ to Jetson and restarted container
 **Verification (Session 919)**: Docker logs now show clean "Market closed — skipping cycle" messages (no rapid initialization loop). Trading sessions executing normally. CPU spinning issue resolved.
 **Resolution**: RESOLVED — Initialization loop fixed via broker caching. Trading sessions operating normally. Container healthy and trading cycles executing cleanly.
-
----
-
-### mfg-farm — Test print required before launch prep continues
-**Date blocked**: 2026-04-12
-**Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
-**What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
-**Verify with**: `# manual — cannot auto-verify`
-**Resolution**:
-
-## Resolved Archive
 
 ---
 
