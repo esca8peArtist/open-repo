@@ -61,7 +61,33 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
-## Pending Items (awaiting external conditions)
+## Completed Items (Session 934+)
+
+### ✅ Item 13: Domain 42 (DEA Hearing) — Outreach Amplification Strategy
+**Status**: COMPLETE (Session 934, May 9 2026) — **NEW**
+**Impact**: HIGH — May 28 DEA hearing deadline for cannabis scheduling
+**Goal**: Prepare comprehensive post-distribution outreach amplification for resistance-research Phase 1 organizations, custom messaging by sector (drug policy, civil rights, academic, state AGs), social media calendar, media/journalist follow-up, policy impact tracking
+**Feasibility**: HIGH — execution infrastructure ready from `execution/domain-42-*` files
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/resistance-research/DOMAIN_42_AMPLIFICATION_STRATEGY.md` (media calendar, sector-specific messaging, journalist briefing notes, policy contact tier-2 list, post-May-28 impact assessment framework)
+**Why now**: 19 days to deadline; distributing Phase 1 in next 1-2 weeks means organizations will need detailed talking points, media list, and follow-up coordination by mid-May to organize public comment filing
+**Next Step**: Start immediately if user chooses distribution path; otherwise queue for execution after distribution path decision
+
+---
+
+### ✅ Item 14: Seedwarden Phase 2 — Photography & Field Logistics Planning
+**Status**: COMPLETE (Session 934, May 9 2026) — **NEW**
+**Impact**: HIGH — May 30 Phase 2 launch (3 weeks away), dependent on May field photography
+**Goal**: Develop comprehensive photography site selection, species prioritization, habitat assessment framework, kit logistics, equipment checklist, post-shoot processing workflow, and specimen data capture structure. Enable user to execute 5-10 field sessions efficiently.
+**Feasibility**: HIGH — KNOWLEDGE.md, Phase 1 guides, species database exist
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/seedwarden/PHASE_2_PHOTOGRAPHY_LOGISTICS.md` (site selection criteria by ecosystem, species prioritization grid, daily field checklist, equipment manifest, habitat assessment form, specimen data template, post-shoot photo processing + metadata integration, photography timeline May 10-30)
+**Why now**: 21 days to launch; photography logistics must be finalized by mid-May to allow 1-2 week buffer for photo processing and guide refinement before May 30
+**Next Step**: Deliver logistics plan; user confirms availability May 10-30 field window; orchestrator coordinates with guide writing
+
+---
+
+## Previously Pending Items
 
 ### ⏳ Item 9: Jetson Resilience Assessment
 **Status**: PENDING (awaiting May 12 checkpoint to assess Jetson hardware impact)
