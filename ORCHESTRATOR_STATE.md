@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-08T23:24:07Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-09T00:57:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 56.7% (1,055,539 tokens) | All-models 43.3% | Reset in 73h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 58.5% (1,088,507 tokens) | All-models 44.9% | Reset in 71h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -29,17 +29,17 @@
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: **Session 876 (2026-05-07): Phase 2 Scenario Playbooks v1.1 (May 2026 Intelligence) COMPLETE**. Phase 1 threat accuracy verified; all distribution infrastructure ready. Phase 2 expansion staging with current threat intelligence.
+**Focus**: **Session 902 (2026-05-09): Item 31 Tier 2 Sector-Specific Tactical Guides COMPLETE** (Commit 64295286). Phase 2 distribution infrastructure now 100% ready:
 **Blocked**: None — Phase 1 ready for user approval and execution
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: 🔴 USER PRIORITY (2026-05-08): Comprehensive options backtesting — train models across NVDA/TSLA/MSFT/META/QQQ/AAPL, run 3-4 profile variants each, produce full report at `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` with tables/analysis vs buy-and-hold. See INBOX for full instructions. A pr
+**Focus**: 🔴 USER PRIORITY (2026-05-08): Comprehensive options backtesting — COMPLETE (Session 900). `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` extended from 790 to 1,423 lines with 6 new analytical sections:
 **Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 production planning COMPLETE**
-**Focus**: **Phase 2 + Phase 3 Execution Prep Complete (Sessions 728, 861)**. Phase 2 launches May 30, 2026. Phase 3 (Medicinal Herbs) implementation assets production-ready.
+**Focus**: **Session 902 (2026-05-09): Phase 2 Pre-Launch Execution Package COMPLETE** (Commit c94197f1). 
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -65,6 +65,16 @@
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
+
+## Exploration Queue Status
+**Queue Refresh (Session 894)**: 0 → 3 active items (deadline-driven work)
+- ✅ **Item 32 (Session 903)**: resistance-research Phase 1 Domain 42 Outreach Prioritization — COMPLETE
+  - 3 deliverables: outreach strategy, 17-contact wave plan, success tracking protocol
+  - May 28 deadline (19 days) operationalized; May 24 electronic deadline corrected; May 18 functional window identified
+- ✅ **Item 33 (Session 903)**: seedwarden Phase 2 Photography & Sourcing Logistics — COMPLETE
+  - 5 deliverables: production timeline, plant sourcing vendors, location scouting, photo checklist, Canva pipeline
+  - May 30 launch (21 days) de-risked with parallel execution paths; photo shoot optional (archival backup exists)
+- **Item 34 (queued, lower priority)**: mfg-farm Batch 2 Product Selection & Demand Research (2–3 hrs, no prerequisites, blocked on test print completion for execution)
 
 ## Inbox (unprocessed)
 *(no new items)*
