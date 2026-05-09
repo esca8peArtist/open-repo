@@ -81,7 +81,9 @@ All five organizations are immigration legal aid organizations with direct clien
 >
 > I'm sharing a resource I think is directly relevant to your work defending undocumented clients and their families against ICE enforcement.
 >
-> The federal government is using Palantir's ELITE platform to generate "address confidence scores" for deportation targeting — pulling from Medicaid records, DMV records, commercial data brokers, and location data sold by smartphone apps without a warrant. A newly published three-part guide documents this surveillance infrastructure in full (all sourced from FOIA disclosures, government contracts on USASpending.gov, and court filings) and provides step-by-step countermeasures organized by risk tier.
+> The federal government is using Palantir's ELITE platform to generate "address confidence scores" for deportation targeting — pulling from Medicaid records, DMV records, commercial data brokers, and location data sold by smartphone apps without a warrant. Palantir's IRS contract maps financial relationships across organizations and individuals connected to groups under tax scrutiny — creating a data surface beyond immigration enforcement. A newly published three-part guide documents this surveillance infrastructure in full (all sourced from FOIA disclosures, government contracts on USASpending.gov, and court filings) and provides step-by-step countermeasures organized by risk tier.
+>
+> The guide also addresses communications verification: the NRSC March 2026 Talarico deepfake case established a real-world precedent for voice and video manipulation targeting political and legal figures, and the countermeasures playbook includes protocols for verifying the identity of callers and video contacts in sensitive contexts.
 >
 > The highest-leverage section for NILC's clients requires no technical expertise: Part 0 walks through submitting opt-outs to the 20 data brokers that ICE queries without warrants. It takes 2–4 hours and directly degrades the confidence scoring used in ELITE targeting. There is a documented path for California residents without government-issued ID (using AB 60/AB 1766 state IDs to access California's DELETE Act DROP platform) — which may be particularly useful for your California-based clients.
 >
@@ -132,7 +134,9 @@ All five organizations are immigration legal aid organizations with direct clien
 >
 > I wanted to share a newly published guide that I think is directly useful for your 400+ affiliated legal programs and their clients.
 >
-> ICE is using Palantir's ELITE platform to generate "address confidence scores" for deportation targeting — pulling from Medicaid records, DMV records, commercial data brokers, and smartphone location data without a warrant. A new three-part corpus documents this surveillance infrastructure in detail (all sourced from FOIA and court filings) and provides practical, tiered countermeasures.
+> ICE is using Palantir's ELITE platform to generate "address confidence scores" for deportation targeting — pulling from Medicaid records, DMV records, commercial data brokers, and smartphone location data without a warrant. Palantir's IRS contract maps financial relationships across organizations and individuals connected to groups under tax scrutiny — creating a data surface beyond immigration enforcement. A new three-part corpus documents this surveillance infrastructure in detail (all sourced from FOIA and court filings) and provides practical, tiered countermeasures.
+>
+> The corpus also covers communications security: the NRSC March 2026 Talarico deepfake case demonstrated that voice and video impersonation is now being deployed against legal and political figures, and the countermeasures playbook includes verification protocols for sensitive calls and video contacts.
 >
 > The highest-leverage section for your affiliate network: Part 0 of the implementation guide provides step-by-step instructions for submitting opt-outs to the data brokers that ICE queries. No technical expertise required, 2–4 hours per person, and it directly reduces the data available to ELITE targeting algorithms. There's a specific path for California residents without government-issued ID.
 >
@@ -186,9 +190,11 @@ All five organizations are immigration legal aid organizations with direct clien
 >
 > I'm sharing a newly published security guide that I think would be valuable for your clients in Texas facing ICE enforcement risk.
 >
-> This guide maps the actual surveillance systems the federal government is using — including Palantir's ELITE platform, which generates "address confidence scores" by pulling from Medicaid records, DMV records, commercial data brokers, and phone app location data without a warrant — and provides specific countermeasures that clients can implement.
+> This guide maps the actual surveillance systems the federal government is using — including Palantir's ELITE platform, which generates "address confidence scores" by pulling from Medicaid records, DMV records, commercial data brokers, and phone app location data without a warrant — and provides specific countermeasures that clients can implement. Palantir's IRS contract maps financial relationships across organizations and individuals connected to groups under tax scrutiny — creating a data surface beyond immigration enforcement that extends to advocacy organizations like RAICES.
 >
 > Given RAICES' presence in Texas, this is particularly relevant: Texas is a primary operational zone for ELITE, and the guide documents how the system prioritizes enforcement targets by pulling data from state government records and commercial brokers that operate heavily in Texas.
+>
+> The guide also addresses communications verification: the NRSC March 2026 Talarico deepfake case demonstrated that synthetic voice and video is being used to impersonate trusted contacts, and the countermeasures playbook includes protocols for verifying caller and video identity in sensitive legal and advocacy contexts.
 >
 > Key sections:
 >
@@ -241,9 +247,9 @@ All five organizations are immigration legal aid organizations with direct clien
 >
 > I wanted to share a comprehensive security guide that I think fits well into ILRC's resources for legal practitioners.
 >
-> This corpus documents the federal government's immigration enforcement surveillance infrastructure — Palantir's ELITE address confidence scoring system, the data broker pipeline (LexisNexis, Venntel, Babel Street), NSA Section 702 collection, and the DOGE cross-agency database consolidation — and provides step-by-step countermeasures organized by risk tier.
+> This corpus documents the federal government's immigration enforcement surveillance infrastructure — Palantir's ELITE address confidence scoring system, the data broker pipeline (LexisNexis, Venntel, Babel Street), NSA Section 702 collection, and the DOGE cross-agency database consolidation — and provides step-by-step countermeasures organized by risk tier. Notably, Palantir's IRS contract maps financial relationships across organizations and individuals connected to groups under tax scrutiny — creating a data surface beyond immigration enforcement with direct implications for the legal organizations and practitioners in ILRC's network.
 >
-> What makes this resource unusual for the field: it's sourced entirely from primary documents — FOIA disclosures, government contracts on USASpending.gov, court filings, and investigative reporting from 404 Media, The Intercept, and EFF. The threat model is citable by practitioners advising clients on enforcement risk.
+> What makes this resource unusual for the field: it's sourced entirely from primary documents — FOIA disclosures, government contracts on USASpending.gov, court filings, and investigative reporting from 404 Media, The Intercept, and EFF. The threat model is citable by practitioners advising clients on enforcement risk. The corpus also covers emerging social engineering vectors: the NRSC March 2026 Talarico deepfake case established a real-world precedent for voice and video manipulation, and the countermeasures playbook includes verification protocols practitioners can recommend to clients and colleagues.
 >
 > The three documents:
 >
@@ -303,8 +309,11 @@ All five organizations are immigration legal aid organizations with direct clien
 > - NSA Section 702 collection scope (349,823 targets in 2025 — confirmed from Intelligence Community transparency reports)
 > - Commercial data broker pipeline (LexisNexis $9.75M DHS contract, Venntel location data procurement, DOGE cross-agency database)
 > - Clearview AI ICE contract ($9.2M, September 2025)
+> - Palantir's IRS contract, which maps financial relationships across organizations and individuals connected to groups under tax scrutiny — creating a data surface beyond immigration enforcement with direct relevance to civil liberties and Mass Defense work
 >
 > All of the threat model is built on primary sources — USASpending.gov contracts, FOIA disclosures, court filings, and investigative reporting. It is structured to be citable.
+>
+> The corpus also covers social engineering and communications security: the NRSC March 2026 Talarico deepfake case is documented as a real-world example of voice and video impersonation targeting legal and political figures — a threat vector directly relevant to NLG members advising people under investigation.
 >
 > The countermeasures go from Tier 1 (data broker opt-outs, Signal configuration — no tech expertise required) through Tier 3 (Qubes OS, VeraCrypt, hardware security keys — for people with reason to believe they are direct investigation targets).
 >
