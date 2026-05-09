@@ -3,11 +3,75 @@
 > Research items queued for autonomous execution between project work.
 > Cross out items as they complete. If queue falls below 3 items, add more.
 >
-> **Last updated**: Session 890 (2026-05-07 17:15 UTC) — Completed Session 889-890 items (Tier 2 Org Strategy, Domain Expansion, Customer Success, Gate 1 Readiness). Queue now at 0 active items — eligible for refresh.
+> **Last updated**: Session 900 (2026-05-09) — Completed Items 32-34 (Gate 1 Readiness, Board Briefing, Customer Ops). Added 3 new items (35-37). Queue refreshed.
 
 ---
 
 ## Active Items
+
+### Item 35: stockbot Paper Trading Validation Protocol (Session 900+ queue item)
+**Status**: QUEUED for execution
+**Trigger**: Backtest report now complete with deployment recommendations; paper trading execution (Phase 1, weeks 1-4) requires detailed validation protocol
+**Scope**: Develop comprehensive paper trading validation framework for META_LGB_v1 + MSFT_GB_v1 models. Define success criteria, daily monitoring checklist, weekly review process, decision points for escalation/abandonment.
+**Deliverables**:
+- `projects/stockbot/paper-trading-validation-protocol.md` (2,000-2,500 words)
+  - Daily monitoring checklist (fills, slippage, execution latency, drawdown tracking)
+  - Weekly review template (performance vs. backtest, Sharpe trend, position concentration)
+  - Phase 1 success criteria (Sharpe ≥ 0.8, ≥50 round trips, ≤-15% drawdown, execution cost <0.15% slippage)
+  - Phase 2 escalation conditions (Sharpe ≥1.0, ≤-20% drawdown, no kill-switches)
+  - Decision tree (continue unchanged, tune parameters, abandon model, escalate to live)
+- Excel monitoring template with 30-day rollup dashboard
+**Owner**: stockbot agent
+**Timeline**: 2-3 hours (protocol design + template creation)
+**Key areas**: Paper trading metrics definition, slippage quantification, Sharpe validation, performance monitoring automation
+**Business value**: Removes ambiguity from paper trading phase. Prevents drift into "indefinite paper trading"; clear numerical escalation/abandonment criteria ensure decisive Phase 2 decision by week 5.
+**Outcome**: Production-ready monitoring protocol ready for user approval of Phase 1 execution
+
+---
+
+### Item 36: seedwarden Phase 3 Strategic Planning (Medicinal Herbs Launch) (Session 900+ queue item)
+**Status**: QUEUED for execution
+**Trigger**: Phase 2 planning complete (May 30 launch); June 29 decision point determines Phase 3 go/no-go. Phase 3 preparation can start now (independent of Phase 2 outcome).
+**Scope**: Develop Phase 3 strategic plan for Medicinal Herbs product line expansion. Scope: supplier research, product selection, profitability modeling, scaling infrastructure, 12-month roadmap.
+**Deliverables**:
+- `projects/seedwarden/phase-3-medicinal-herbs-strategic-plan.md` (3,500-4,000 words)
+  - Market positioning: differentiation vs. Mountain Rose Herbs / Strictly Medicinal (quality tier, pricing, audience)
+  - Product line design (15-20 core medicinal herbs, extraction formats, combo kits, subscription tiers)
+  - Supplier research (cultivation vs. wild-harvested, organic certification, batch consistency, lead times)
+  - Unit economics (COGS per bottle, 40-50% margin targets, break-even volume)
+  - Scaling infrastructure (inventory management, fulfillment SLA, supplier payment terms, quality control)
+  - 12-month roadmap (July launch, September scaling, Q1 2027 subscription growth, Q2 2027 profitability milestone)
+- `projects/seedwarden/phase-3-supplier-scorecard-medicinal.csv` (vendor comparison matrix, risk assessment)
+- `projects/seedwarden/phase-3-profitability-model.xlsx` (unit economics, break-even analysis, 18-month cash flow)
+**Owner**: seedwarden agent
+**Timeline**: 4-5 hours (market research, supplier analysis, financial modeling)
+**Key areas**: Botanical medicine market positioning, herbal product sourcing, supplement regulatory compliance, inventory scaling, cash flow modeling
+**Business value**: Phase 3 is the high-margin tier (medicinal herbs sell at 2-3x food-grade wholesale). Planning now ensures zero delay post-June-29 decision. Supplier research locks in relationships before launch.
+**Outcome**: Production-ready Phase 3 launch plan ready for user approval post-Phase-2-decision
+
+---
+
+### Item 37: resistance-research Domain 42 Participation Logistics & Coordination (Session 900+ queue item)
+**Status**: QUEUED — contingent on user distribution path decision
+**Trigger**: Domain 42 (Drug Policy) has critical May 28 DEA hearing deadline (19 days). Wave 1 outreach scheduled May 8 (already in progress). This item plans the participation logistics for Tier 1 organizations to file DEA comments.
+**Scope**: Develop detailed coordination framework for 6 Tier 1 organizations (Drug Policy Alliance, NORML, Law Enforcement Action Partnership, Students for Sensible Drug Policy, ACLU, Sentencing Project) to submit DEA hearing comments by May 28.
+**Deliverables**:
+- `projects/resistance-research/execution/domain-42-dea-hearing-coordination.md` (2,500-3,000 words)
+  - Timeline coordination (May 8 Wave 1 send → May 15 organization decision → May 21 draft comments → May 28 DEA filing deadline)
+  - Per-organization support checklist (talking points, drafted comment templates, regulatory guidance, filing procedures)
+  - Comment strategy (3 tracks: drug policy reform, civil rights/disenfranchisement, academic administrative law)
+  - Follow-up sequence (May 10 check-in, May 18 draft review, May 25 filing confirmation, June 15 public comment review)
+  - Success metrics (≥4 of 6 organizations submit, ≥3 comments across different tracks, ≥50K combined reach in org networks)
+- `projects/resistance-research/execution/domain-42-dea-comment-template-final.md` (3 comment drafts ready for org customization)
+**Owner**: resistance-research agent
+**Timeline**: 2-3 hours (coordination strategy + template finalization)
+**Key areas**: DEA regulatory process, organizational coalition coordination, comment strategy diversity
+**Business value**: Domain 42's 19-day window is narrow; this item ensures coordination doesn't slip. May 28 DEA filing is a leverage point for future cannabis policy advocacy (documented organizational participation in federal hearing).
+**Outcome**: Production-ready coordination framework and comment templates ready for user-led org outreach (May 8-28 window)
+
+---
+
+## Completed Items (Session 900)
 
 ### ✅ Item 32: stockbot Pre-May-12 Gate 1 System Readiness Validation
 **Status**: COMPLETED 2026-05-09 Session 899
