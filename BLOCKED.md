@@ -32,6 +32,20 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### stockbot — Docker API container stuck in initialization loop; HTTP endpoint unreachable
+**Date blocked**: 2026-05-09
+**Context**: Gate 1 checkpoint scheduled May 12 (3 days). Session 918 attempted to verify Jetson readiness:
+  1. Jetson is network-reachable (ping successful, Tailscale active)
+  2. Docker container (stockbot) reports "healthy" status and says "Application startup complete"
+  3. BUT: HTTP endpoints (/api/ready, /api/health) timeout with connection refused on both Tailscale IP (100.120.18.84:8000) and localhost
+  4. Root cause: Logs show rapid-fire "OrderExecutor initialized in paper trading mode" repeating every millisecond, suggesting initialization loop
+  5. Trading sessions are stuck initialization → API never accepts connections
+**What I need**: (1) Investigate why trading sessions are being re-initialized in a loop instead of running normally. (2) Check if database is healthy or if a DB lock is causing initialization failures. (3) If fixable, restart container and verify /api/ready returns {"status":"ready","sessions":2}. (4) If unfixable, may need Jetson hardware restart or database recovery from backup.
+**Verify with**: `curl -s http://100.120.18.84:8000/api/ready` should return `{"status":"ready","sessions":2}` within 2 seconds
+**Resolution**:
+
+---
+
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
