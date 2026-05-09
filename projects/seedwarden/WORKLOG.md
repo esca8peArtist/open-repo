@@ -4,6 +4,22 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 15 (expansion): Phase 2 Guide Content Blueprint — Section 7 added — 2026-05-09
+
+**Task**: Expand PHASE_2_GUIDE_CONTENT_BLUEPRINT.md to fulfill the full Exploration Queue Item 15 deliverable specification. The original file (created 2026-05-09, same session) covered 6 sections but was missing the explicit Content Integration Points section required by the spec.
+
+**File modified**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md`
+
+**Section 7 added — Content Integration Points:**
+- Phase 1 cross-reference catalog: 12 Phase 1 guides listed by file path with per-guide cross-link protocol for each Phase 2 species (including how forward and back links are staged via `data/cross-reference-queue.csv` to avoid mid-season PDF edits)
+- Email campaign hook: 2-week per-species broadcast structure (Week A = Tuesday publish + email, Week B = Friday social share); subject line formula; body section order; Kit behavioral segmentation tags (`seasonal-forager`, `buyer-intent`)
+- Per-species social media post plan: 5-post sequence (ID post day 1, Habitat post day 3-4, Lookalike/Safety post day 7, Preparation post day 10-11, Cross-Reference post day 14 optional); platform-specific timing for TikTok, Instagram, and Pinterest
+- Bundle trigger system: 5-species threshold = automatic bundle creation within 5 business days; 6 named bundles with species lists and status triggers; bundle pricing formula (individual × count × 0.70); Etsy listing requirements for each bundle
+
+**Sources reviewed in this expansion**: products/wild-edibles-quick-reference.md, products/native-plants-regional-guide.md, native-plants-guide-expansion.md (Guild 3-A/3-B companion guilds), medicinal-herbs-candidate-list.md, WORKLOG.md (prior Item 15 entry), PHASE_2_BUNDLE_STRATEGY.md (implied by bundle trigger logic), phase-2-email-automation-sequence.md (Kit tag names)
+
+---
+
 ## Item [latest]: Phase 2 Endangered Species Procurement Timeline — 2026-05-09
 
 **Task**: Write a concrete Phase 2 endangered species sourcing and procurement timeline integrating vendor orders, lead times, delivery milestones, contingency planning, and guide writing schedule for the May 30 Appalachian Medicinals launch.

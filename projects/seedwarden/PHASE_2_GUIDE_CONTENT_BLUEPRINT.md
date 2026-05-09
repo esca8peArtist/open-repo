@@ -3,7 +3,7 @@ title: "Seedwarden Phase 2 — Guide Content Expansion Blueprint"
 prepared: 2026-05-09
 status: production-ready
 launch-target: May 30, 2026
-scope: 20–50 species expansion plan, guide writing pipeline, photo-to-guide integration, seasonal content strategy, database/cross-reference, publishing timeline
+scope: 20–50 species expansion plan, guide writing pipeline, photo-to-guide integration, seasonal content strategy, database/cross-reference, publishing timeline, content integration (email/social/bundle triggers), Phase 1 cross-reference catalog
 references:
   - PHASE_2_PHOTOGRAPHY_LOGISTICS.md
   - products/native-plants-regional-guide.md
@@ -399,6 +399,121 @@ Before June 15 Phase 3 launch, confirm:
 - [ ] Species database CSV includes all 20 Tier 1 Phase 2 species with `guide_status` field updated
 - [ ] WORKLOG.md has entries for all photo sources used in guides published before June 15
 - [ ] Cross-reference links between wild edibles and medicinals guides are confirmed working
+
+---
+
+## Section 7: Content Integration Points
+
+### Phase 1 Cross-Reference Catalog
+
+Phase 1 produced 12 foundational guides across the following categories. Every Phase 2 species guide must be assessed against this list before publishing — both to add a forward link from the Phase 1 guide and to include a "See also" link in the Phase 2 entry.
+
+**Phase 1 guide inventory (cross-reference baseline):**
+
+| Phase 1 Guide | File | How Phase 2 species connect |
+|---|---|---|
+| Wild Edibles Quick Reference (18 species) | `products/wild-edibles-quick-reference.md` | Any Phase 2 wild edible that is a gap in this 18-species set becomes a documented expansion entry; any species already listed gets a "Full guide available — see [species-slug]" cross-link added to the quick reference |
+| Native Plants Regional Guide | `products/native-plants-regional-guide.md` | Phase 2 native or naturalized species (Elderberry, Hawthorn, Wild Bergamot, Cattail, Solomon's Seal, Pawpaw) receive full entries in the regional guide's appropriate region section; the quick reference version links back |
+| Companion Planting Chart | `products/companion-planting-chart.md` | Any Phase 2 species that appears in a companion guild (Monarda, Sambucus, Amaranth) gets a companion planting note added to its guide and a cross-link to the chart |
+| Seed Saving Field Manual | `products/seed-saving-field-manual.md` | Fall-harvest Phase 2 species (Amaranth, Wild Strawberry, Hawthorn) connect to this guide; the seed saving manual should gain a "Find these species" cross-link |
+| Harvest Preservation Field Manual | `products/harvest-preservation-field-manual.md` | Any Phase 2 species with a preservation method (Beach Plum jelly, Elderberry syrup, Watercress pesto, Purslane lacto-ferment) links to the relevant chapter of this guide |
+| Heirloom Variety Selection Guide | `products/heirloom-variety-selection-guide.md` | Cultivated relatives of Phase 2 species (domesticated strawberry, cultivated plum, garden cress) give the heirloom guide a "wild ancestor" cross-link opportunity |
+| Zone Seed Starting Calendar | `products/zone-seed-starting-calendar.md` | Any Phase 2 perennial with a propagation method (Ramps, Wild Bergamot, Elderberry, Pawpaw) gets a starting-from-seed or division note in the relevant calendar zone row |
+| Survival Garden Regional Plans | `products/survival-garden-regional-plans.md` | Phase 2 species with high caloric, medicinal, or preservation value (Cattail, Elderberry, Stinging Nettle, Purslane, Amaranth) earn inclusion in the appropriate regional survival plan section |
+| Apartment Growing Complete Guide | `products/apartment-growing-complete-guide.md` | Container-viable Phase 2 species: Wood Sorrel, Purslane, Nasturtium (watercress in a container), Miner's Lettuce, Chives (from ramp stock) — add grow-in-a-pot note and cross-link |
+| Food Sovereignty Starter Guide | `products/food-sovereignty-starter-guide.md` | Any Phase 2 invasive edible (Japanese Knotweed, Autumn Olive, Garlic Mustard, Purslane) connects to the food sovereignty framing of "eat the invasives" — cross-link the species guide and the sovereignty guide bidirectionally |
+| Medicinal Herbs Appalachian Series | `products/endangered-species/` (Phase 3 track) | Wild Bergamot, Ramps, Red Clover, and Elderberry appear in both tracks — link bidirectionally as documented in Section 6 |
+| Native Plants Guild Companion Planting Supplementary | `native-plants-guide-expansion.md` | Every Phase 2 species that appears as a guild member (Wild Bergamot in Guild 3-A, Swamp Milkweed in Guild 3-B, etc.) gets a cross-link in its guide entry and in the guild description |
+
+**Protocol for adding cross-links**: Do not edit Phase 1 PDFs mid-season. Instead, maintain a `data/cross-reference-queue.csv` with columns: `phase2_species_slug`, `phase1_guide_file`, `link_type` (forward/back), `text_to_add`, `status` (pending/added). Process this queue in the first bi-monthly guide update cycle (target: July 15).
+
+---
+
+### Email Campaign Hook — Per-Guide Broadcast Structure
+
+Each new species guide published triggers one email in the ongoing broadcast sequence. The 2-week broadcast cycle works as follows:
+
+**Week A (Tuesday publish day):** New guide goes live on Etsy. Trigger a broadcast email to the full list within 24 hours of publication. Subject line formula: `[Common Name]: [one compelling field fact]` — example: "Chickweed: The salad green that grows in January snow." Body structure:
+
+1. Opening hook (2–3 sentences): seasonal context or surprising fact about the species
+2. One key identification feature (the "what to look for this week" hook)
+3. Harvest window callout box: "Harvest now: [Month–Month]" or "Coming up: [Month]"
+4. Product CTA: "Full field guide — [guide title] — available now" with direct Etsy link
+5. Footer: "Next in the series: [next species name]" — creates forward anticipation
+
+**Week B (Friday social share):** Share the guide on social media (see below). No email this week for that species. The next guide's Week A email goes out the following Tuesday.
+
+This creates a reliable cadence: subscribers receive one species email every 1–2 weeks. Do not stack multiple species into a single broadcast — the per-species email has higher open rates because it has a concrete subject line and a single call to action.
+
+**Behavioral segmentation tags (Kit):**
+
+- Subscriber clicks "harvest window" content → tag `seasonal-forager` → receive earlier emails for subsequent spring and fall species
+- Subscriber clicks Etsy link → tag `buyer-intent` → eligible for bundle upsell email 7 days later
+- Subscriber opens but does not click → no additional tag → standard cadence continues
+
+---
+
+### Social Media — Per-Species Post Plan
+
+Each published species guide generates a 3–5 post content set across TikTok and Instagram over a 2-week window following publication. Below is the repeatable structure:
+
+**Post 1 (Day 1 — publication day): The ID Post**
+- Format: Instagram carousel (5–7 frames) or TikTok clip (30–45 sec)
+- Content: "How to identify [species]" — one identification feature per frame/clip segment
+- CTA: "Full guide linked in bio" (Instagram) or "Guide in TikTok bio link" (TikTok)
+- Caption: Lead with the most surprising visual feature. State the season in the first sentence.
+
+**Post 2 (Day 3–4): The Habitat Post**
+- Format: Single Instagram photo or TikTok B-roll clip
+- Content: Habitat context shot ("Where to find [species]") — the wide habitat photo from Stage 1 field capture
+- Caption: Describe the ecosystem in 2–3 sentences. State a compass direction or sun/shade condition. This post serves the buyer who wants to know "is this in my region?"
+- Hashtags: Use region-specific hashtags (e.g., `#midatlanticforaging`, `#northeastplants`) to improve geographic targeting
+
+**Post 3 (Day 7): The Safety or Lookalike Post**
+- Format: Side-by-side comparison carousel (Instagram) or split-screen TikTok
+- Content: "[Species] vs. [Dangerous lookalike] — how to tell them apart"
+- This post outperforms others in saves and shares — it is the highest-value content type for SEO and account growth
+- Do not publish this post for species with no meaningful lookalike risk — replace with a preparation post instead
+
+**Post 4 (Day 10–11): The Preparation Post**
+- Format: TikTok or Instagram Reel (45–60 sec)
+- Content: One concrete preparation method — harvesting and cooking, or raw preparation
+- Caption: Include the flavor description from the guide's Preparation section
+
+**Post 5 (Day 14 — optional): The Cross-Reference Post**
+- Format: Instagram story or carousel
+- Content: "5 plants that grow together" — link the published species to its companion guild or seasonal companion group
+- This post promotes Phase 1 content (companion planting guide, native plants guide) alongside the new Phase 2 guide and serves as a soft upsell for the bundle
+
+**Platform-specific notes:**
+- TikTok: Post ID and Safety content at 11am EST (peak botanical content engagement). Post Preparation and Habitat at 6pm EST.
+- Instagram: Post carousels at 9–10am EST Tuesday or Thursday. Reels perform better Thursday through Saturday 9–11am.
+- Pinterest: Pin the primary habit photo with guide title text overlay on the day of publication. Use a 2:3 image ratio (1000×1500px). Description uses full SEO keyword phrase: "[Common name] ([Scientific name]) wild edibles guide — identification, harvest, preparation."
+
+---
+
+### Bundle Trigger System
+
+A bundle is created when a thematic cluster reaches 5 species in published-and-reviewed status. The trigger is automatic: as soon as guide #5 in a category is published, create the bundle listing within 5 business days.
+
+**Bundle threshold tracking:**
+
+| Bundle Name | Species Required | Status Trigger |
+|---|---|---|
+| Wild Greens of Spring | Chickweed, Miner's Lettuce, Wood Sorrel, Ramps, Watercress | 5/5 Tier 1 guides published = bundle launches |
+| Summer Foraging Bundle | Stinging Nettle, Wild Bergamot, Purslane, Dock, Plantain | 5 guides published (Nettle = Tier 1, Purslane/Dock/Plantain = Tier 2 Wikimedia-ready) |
+| Berry Season Bundle | Wild Strawberry, Beach Plum, Black Raspberry, Mulberry, Hawthorn | 5 guides (Strawberry + Hawthorn Tier 1; Berry trio Tier 2 Group B) |
+| Water and Wetland Bundle | Cattail, Watercress, Glasswort, Ostrich Fern | 4 species — hold for a 5th (Wild Ginger or Blue Flag Iris) before bundling |
+| Invasive Edibles Bundle | Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose | All Tier 2; bundle can launch before individual guides are promoted separately |
+| Field + Medicinal Bundle | Wild edibles quick reference (Phase 1) + Appalachian Medicinals (Phase 3) | Launched June 15 alongside Phase 3 — uses Phase 1 existing content |
+
+**Bundle pricing formula:** Individual guide price × species count × 0.70. For a 5-guide bundle at $9 per guide: $9 × 5 × 0.70 = $31.50 — round to $29 or $32. Do not price bundles at more than 75% of the sum of individual guides — the bundle must represent a visible discount.
+
+**Bundle Etsy listing requirements:**
+- Cover mockup showing all 5 included guides as individual covers arranged in a grid
+- Description lists each included guide by name with a one-sentence summary
+- Tags include "foraging guide bundle," "wild edibles bundle," "plant identification bundle," and the bundle's thematic keywords
+- Buyer note confirms PDF delivery format and that all 5 guides are included in the single download
 
 ---
 
