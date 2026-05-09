@@ -23,11 +23,18 @@
 
 **Session 717 — Domain 37 Pre-Distribution Baseline Metrics COMPLETE**: `domains/domain-37-baseline-metrics.md` created (May 4, 2026). Seven quantified baselines established: DOJ lawsuit count (24 active + DC; 6 dismissed), CISA cuts ($39.6M election security confirmed cut; $707M FY27 proposal), election denier appointments (8 named senior officials; 11+ Election Integrity Network affiliates), Section 3 litigation posture (Griswold-to-AG transition documented; 0 active 2026 disqualification proceedings), restrictive voting laws (32 in 2025; 31 in effect for midterms), SAVE error rate (81% false positive; 24,000+ flagged nationally). Measurement protocol for post-distribution re-measurement included.
 
+**Session 929 (May 9, 2026) — Completed**:
+- Litigation tracker updated (Session 929 monitoring pass): 11th Circuit no-bond ruling (mandatory detention circuit split deepens — 2nd and 11th Circuits against, 5th and 8th uphold); Callais cascade update (SCOTUS denies delay of immediate effect; Louisiana, Alabama, Tennessee, Florida redistricting cascades documented); Section 591 House Appropriations markup alert (FY2027 CJS bill, DEA rescheduling block passed committee 8-6, full markup ~May 13). Tracker now current through May 9, 2026.
+- Domain 47 (Housing Security, Displacement, and Democratic Participation) complete: 7,200 words, 48 citations. Three converging 2026 tracks: EHV expiration (47,000 households), HUD work requirements (3.3M threatened), CoC overhaul restart (June 1 NOFO). Grants Pass v. Johnson enforcement cascade documented. Slee-Desmond and PNAS MTO research synthesized as causal evidence. AFFH rescission, 30-day notice rollback, and $33.6B budget cut analyzed. 7 reform proposals across immediate/medium-term/voting-rights integration. Cross-referenced to Domains 1, 9, 11, 22, 31, 33, 41B, 42.
+
 **Pending (next session)**:
-- FISA Senate outcome confirmation (voice vote or cloture result; presidential signature date; new expiration date)
-- Schiff sixth war powers Senate vote scheduling and outcome
-- Collins post-May 1 war powers vote position confirmation
-- Iran supplemental appropriations submission (watch window: May 15-30)
+- FISA Section 702 June 12 deadline — monitor for long-term reauthorization vote
+- Nashville (Crenshaw) vindictive prosecution ruling — still pending; remains "imminent"
+- CoC new NOFO (expected June 1, 2026) — review immediately upon publication
+- Trump v. Slaughter SCOTUS ruling (independent agency removal power) — expected late June/early July
+- Trump v. Barbara SCOTUS ruling (birthright citizenship) — expected late June
+- Section 122 Federal Circuit appeal — government seeking stay of CIT injunction
+- Abrego Garcia sanctions — government response due June 11 to Xinis show-cause order
 
 **35-Domain Diagnostic Framework**: COMPLETE AND PRODUCTION-READY. All 35 domains + 6 April 2026 updates documented. Distribution templates cover all distribution channels. Session 535 added: phase-2-expansion-roadmap.md (1,900 words), Domain 33 Section 1.3a (6-state simultaneous action map, ~1,300 words, 10 new sources), surveillance-tracking.md FISA post-deadline checklist.
 
@@ -54,7 +61,7 @@
 
 | Tracker | Last Updated | Currency | Next Action |
 |---------|-------------|----------|-------------|
-| `litigation-tracker-2026.md` | April 13 (full); April 27 (SB4/CBP One) | Moderately stale | Add: SPLC indictment, Crenshaw/Nashville ruling, April 28 Xinis hearing outcome |
+| `litigation-tracker-2026.md` | May 9, 2026 (Session 929) | Current | Updated: 11th Circuit no-bond ruling; Callais cascade (SCOTUS immediate effect, state redistricting sessions); Section 591 markup alert. Pending: Nashville Crenshaw ruling, June 12 FISA deadline, Trump v. Slaughter |
 | `environmental-rollbacks-tracker.md` | April 27, 2026 | Current | Added: Entry 28 (EPA OOOO oil/gas methane rule, April 4). Monitor Endangerment Finding D.C. Circuit |
 | `police-brutality-consent-decree-tracker.md` | April 27, 2026 | Current | Added: Pattern 6 (10th Circuit Denver ruling, circuit split). Monitor Cleveland exit motion ruling |
 | `consent-decree-defiance-tracker.md` | April 12, 2026 | Moderately stale (15 days) | Update: Seventh Circuit pending ruling notation; date stamp |

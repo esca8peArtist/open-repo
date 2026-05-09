@@ -1,6 +1,6 @@
 # Active Litigation Tracker: Democracy and Immigration Cases — April 2026
 
-*Last updated: April 13, 2026 (evening monitoring pass) — for entries added after March 19, see the "April 2026 Updates" section at the bottom of this document*
+*Last updated: May 9, 2026 (Session 929 monitoring pass) — for entries added after March 19 see "April 2026 Updates"; for entries added after April 27 see "May 2026 Tracker Refresh" and "May 9, 2026 — Session 929 Monitoring Pass" sections at the bottom of this document*
 
 ---
 
@@ -1131,4 +1131,90 @@ The April 28 hearing before Judge Paula Xinis (D. Md. 8:25-cv-02780) was set to 
 ---
 
 *May 2026 tracker refresh completed May 9, 2026 (Session 920). Five gap items from Session 920 assessment are now documented. Outstanding items: Nashville (Crenshaw) ruling still pending; Abrego Garcia sanctions/contempt active (government response June 11); FISA Section 702 new deadline June 12; Section 122 Federal Circuit appeal in progress.*
+
+---
+
+## May 9, 2026 — Session 929 Monitoring Pass
+
+*Three developments from the May 2–9 window not yet captured in Session 920.*
+
+---
+
+### NEW ENTRY — Mandatory Detention Circuit Split: 11th Circuit Strikes No-Bond Policy (May 6–7, 2026)
+
+- **Court**: U.S. Court of Appeals for the Eleventh Circuit (Atlanta)
+- **Case**: Unnamed consolidated challenge to ICE's July 2025 mandatory detention policy (described in coverage as the administration's "no-bond" policy)
+- **Ruling**: On **May 6–7, 2026**, a three-judge panel of the Eleventh Circuit issued a **2-1 ruling** striking down the Trump administration's policy that any noncitizen targeted in an ICE enforcement operation is subject to mandatory detention without any eligibility for bond — regardless of length of residence, family ties, criminal history, or individual circumstances.
+- **What the policy required**: In July 2025, ICE adopted a new interpretation of the Immigration and Nationality Act declaring that all noncitizens detained in interior enforcement operations qualify as "arriving aliens" subject to mandatory detention — a statutory category normally reserved for people apprehended at the border. Since 1996, both Republican and Democratic administrations had treated interior detainees as eligible for individual bond hearings.
+- **11th Circuit holding**: "The language that Congress has chosen to use does not grant to the Executive unfettered authority to detain, without the possibility of bond, every unadmitted alien present in the country. Congress has instead preserved the longstanding border-interior distinction for the purposes of detention." The majority held the policy exceeded ICE's statutory authority.
+- **The deepening circuit split (as of May 9, 2026)**:
+  - **11th Circuit (May 6–7)**: Policy unlawful — border-interior distinction preserved (2-1)
+  - **2nd Circuit (April 2026)**: Policy unlawful — similar holding
+  - **5th Circuit**: Policy lawful — upheld administration's interpretation
+  - **8th Circuit**: Policy lawful — upheld administration's interpretation
+  - **7th Circuit (May 2026)**: Three-way split — one judge against, one for, one declining to reach the merits
+- **Supreme Court review**: With a clear 4-way circuit split and no resolution in the 7th Circuit, Supreme Court review is likely. The administration is expected to file a certiorari petition or emergency application. If the Supreme Court grants cert and upholds the policy, the border-interior detention distinction disappears and the entire habeas corpus litigation landscape (Category 2 of this tracker — 362 cases, 350 plaintiff wins) must be reassessed.
+- **Significance**: The mandatory no-bond policy is the operational complement to the $38 billion Detention Reengineering Initiative (Domain 39 Section 2.1). Without bond hearings, detainees have no mechanism to challenge detention conditions or assert community ties while the immigration court backlog (3.3 million cases) grinds forward. The 11th Circuit ruling is the second circuit-level loss for the administration in a week; combined with the Section 122 CIT tariff loss, it represents the largest cluster of major legal defeats in any seven-day window of the second Trump term.
+- **Sources**: [Washington Post — second federal appeals court rejects no-bond detentions (May 7, 2026)](https://www.washingtonpost.com/politics/2026/05/07/immigration-detention-mandatory-trump-ice-appeal-bond/fc46b388-4a3e-11f1-a119-857cd2bf4fd4_story.html) | [Axios — mandatory ICE detention policy struck down (May 6, 2026)](https://www.axios.com/2026/05/06/trump-ice-immigration-detention-court-ruling-florida) | [GPB — 11th Circuit rejects no-bond policy (May 7, 2026)](https://www.gpb.org/news/2026/05/07/atlanta-based-federal-appeals-court-rejects-trumps-no-bond-immigration-detentions) | [U.S. News & World Report — circuit split deepens (May 7, 2026)](https://www.usnews.com/news/best-states/georgia/articles/2026-05-07/second-federal-appeals-court-rejects-trumps-no-bond-immigration-detentions-deepening-circuit-split) | [Christian Science Monitor — why circuits are splitting (May 5, 2026)](https://www.csmonitor.com/USA/Justice/2026/0505/immigration-bond-hearings-1st-circuit) | [Northwest Arkansas Democrat-Gazette — 11th Circuit rejects no-bond policy (May 8, 2026)](https://www.nwaonline.com/news/2026/may/08/11th-circuit-panel-rejects-trumps-no-bond-policy/)
+
+---
+
+### UPDATE — Callais Cascade: SCOTUS Denies Stay Request; State Legislative Sessions (May 4–9, 2026)
+
+**Background**: Entry 7.5 (April 2026 updates) and Update 3 (Session 920) documented the April 29, 2026, Supreme Court ruling in *Louisiana v. Callais* (6-3) gutting Section 2 of the VRA. The following cascade developments have occurred in the ten days since the ruling.
+
+- **SCOTUS denies stay of its own order (May 4, 2026)**: Non-Black voter respondents requested the Court issue its judgment "forthwith" — immediately, bypassing the normal 32-day waiting period before a Supreme Court judgment takes effect. The Court granted this request on May 4, making the Callais ruling effective immediately. A subsequent request to reconsider the fast-tracking was denied. Justice Jackson issued an angry dissent noting that the Court was "unnecessarily rushing" states into emergency redistricting under election-calendar pressure — a deliberate compression that advantages maps drawn by Republican-controlled legislatures under time constraint.
+- **Louisiana legislature**: Governor Jeff Landry suspended the state's May 16 congressional primaries on April 30 and convened a special legislative session beginning May 4 to draw a new compliant map. The Senate and Governmental Affairs Committee held public comment hearings and was expected to vote on a new map by May 8–12. Observers note that Landry is attempting to draw a single-majority-Black district (versus two) while gaining a net Republican seat — a map that, under the new intentional-discrimination-only standard, should be legally defensible. Voting rights groups have filed emergency challenges to the primary suspension.
+- **Alabama**: Governor Kay Ivey called a special legislative session targeting all seven congressional seats. Alabama had been required under *Allen v. Milligan* (2023) to create a second majority-Black district; Callais provides an argument that this requirement was unconstitutional under the new standard. Ivey is seeking maps that could give Republicans all seven seats.
+- **Tennessee**: Governor Bill Lee called a special session targeting the Memphis-based majority-Black congressional district (currently held by Steve Cohen, a Democrat). Analysis suggests Callais allows Tennessee to defend a race-neutral redistricting of majority-minority districts as "partisan" rather than racial — effectively immunizing it from VRA challenge under the new intent standard.
+- **Florida**: Governor DeSantis signed new maps within hours of the ruling. Analysis by election law scholars projects a 4-seat Republican gain — the largest single-state post-ruling gain from any state.
+- **Georgia**: Governor Kemp announced (GPB, May 1) that Georgia will not redistrict. Kemp's political calculation: Georgia's existing maps were drawn to avoid VRA liability under the *Allen v. Milligan* standard; no new redistricting risk.
+- **Electoral math**: Scholars tracking the cascade project 4–8 net Republican House seat additions through post-Callais redistricting across Louisiana, Alabama, Tennessee, and Florida — without any federal executive action required. This moves the most likely 2026 House Republican majority from slim to more durable.
+- **What to watch**: Emergency challenges to state redistricting timelines; whether Louisiana's primary suspension is itself enjoined; Federal district court handling of Alabama's *Allen v. Milligan* enforcement motion under the new Callais standard; any SCOTUS emergency application related to the redistricting schedule.
+- **Sources**: [Democracy Docket — SCOTUS denies request to delay Callais order (May 2026)](https://www.democracydocket.com/news-alerts/loss-supreme-court-denies-request-to-delay-callais-order/) | [CNN — SCOTUS justices spar over Louisiana (May 4, 2026)](https://www.cnn.com/2026/05/04/politics/supreme-court-louisiana-congressional-district) | [Louisiana Illuminator — lawmakers begin map revisions (May 4, 2026)](https://lailluminator.com/2026/05/04/louisiana-lawmakers-to-begin-congressional-map-revisions-friday/) | [U.S. News — GOP fast-tracks new voting maps (May 5, 2026)](https://www.usnews.com/news/national-news/articles/2026-05-05/gop-fast-tracks-new-voting-maps-after-landmark-supreme-court-ruling) | [Northeastern University — can states redraw maps this close to an election? (May 7, 2026)](https://news.northeastern.edu/2026/05/07/supreme-court-case-louisiana-congressional-map/) | [CBS News — SCOTUS lets ruling take effect immediately (May 2026)](https://www.cbsnews.com/news/supreme-court-louisiana-redistricting-ruling-take-effect-immediately-alito-jackson/) | [LSE US Politics Blog — end of multiracial democracy in the South (May 8, 2026)](https://blogs.lse.ac.uk/usappblog/2026/05/08/the-supreme-courts-louisiana-v-callais-decision-is-the-end-of-multiracial-democracy-in-the-south/)
+
+---
+
+### NEW ENTRY — Domain 42 Alert: House Appropriations Committee Passes Section 591 (On or Before May 13, 2026)
+
+**What this is**: Section 591 of the House FY2027 Commerce-Justice-Science (CJS) appropriations bill is a rider that would bar the use of any appropriated funds "to reschedule marijuana ... or to remove marijuana from the schedules established under section 202 of the Controlled Substances Act." If enacted, this would freeze the DEA hearing process on full rescheduling before it can produce a binding result.
+
+**Status**: The House Appropriations subcommittee that handles the CJS bill voted **8–6** along party lines to advance the FY2027 CJS bill with Section 591 intact. The bill is scheduled for markup before the full Appropriations Committee on or around **May 13, 2026**.
+
+**Historical precedent**: The same language appeared in the FY2026 CJS bill during committee markup and was stripped in conference committee before final enactment — meaning it has a track record of not surviving the legislative process to final passage. That precedent suggests Section 591 has more political-signaling value than enacted-law probability. However, the political uncertainty created by the rider during the markup period is real: organizations filing DEA-1362 participation notices before May 13 establish standing regardless of appropriations outcomes.
+
+**Connection to the DEA hearing**: The June 29–July 15 ALJ hearing on full marijuana rescheduling (Docket No. DEA-1362) is the next major advocacy leverage point. Section 591, if enacted, would freeze the DEA from implementing any hearing outcome. Organizations filing participation notices before May 13 protect their procedural standing even if the appropriations question is unresolved.
+
+**Resistance-research significance**: This connects the legislative appropriations track (Domain 34 — congressional power of the purse) to the regulatory capture track (Domain 42 — DEA scheduling). The Section 591 rider is itself an example of the same anti-democratic design problem Domain 42 documents: the communities most affected by drug prohibition (with demonstrated majority support for reform in 24 state democratic referenda) are systematically prevented from influencing the federal regulatory process through appropriations riders that override both executive action and administrative adjudication.
+
+**What to watch**: Full Appropriations Committee markup (on or around May 13); whether Section 591 survives; conference committee dynamics if the Senate companion bill omits the rider (as expected); Senate floor schedule for the CJS bill.
+
+**Sources**: [WeedPress — why operators cannot ignore rescheduling details (May 5, 2026)](https://weedpress.org/2026/05/05/why-cannabis-operators-cant-afford-to-ignore-the-federal-rescheduling-details-and-what-you-must-do-now/) | [WeedPress — two legal tracks overnight (May 4, 2026)](https://weedpress.org/2026/05/04/the-federal-government-just-split-cannabis-into-two-legal-tracks-overnight-and-congress-could-kill-both-within-weeks/) | [Cannabis Business Times — GOP trying to strip rescheduling powers](https://www.cannabisbusinesstimes.com/cannabis-rescheduling/news/15823971/gop-lawmakers-once-again-trying-to-strip-white-house-rescheduling-powers) | [Marijuana Moment — House passes bill protecting state medical marijuana and rejecting rescheduling block (post-markup development)](https://www.marijuanamoment.net/us-house-passes-bill-protecting-state-medical-marijuana-laws-and-rejecting-attempt-to-block-trumps-rescheduling-move/) | [Duane Morris — DEA order expediting cannabis rescheduling](https://www.duanemorris.com/alerts/relief_finally_dea_issues_order_expediting_cannabis_rescheduling_schedule_iii_0426.html)
+
+---
+
+### Updated Pending Deadlines as of May 9, 2026
+
+| Date | Case / Event | What to Watch |
+|---|---|---|
+| May 13, 2026 | Section 591 / House Appropriations | Full committee markup of FY2027 CJS bill — does Section 591 rescheduling block survive? |
+| May 20, 2026 | Domain 42 / DEA-1362 | Mail submission deadline for DEA participation notices (postal transit; mail to DEA Springfield VA) |
+| May 22, 2026 | DHS Funding CR | Continuing resolution expires — shutdown standoff may recur |
+| May 28, 2026 | Domain 42 / DEA-1362 | Email submission deadline for DEA participation notices (nprm@dea.gov, Docket No. DEA-1362) |
+| June 11, 2026 | Abrego Garcia (D. Md.) | Government response due on Xinis show-cause order for sanctions |
+| June 12, 2026 | Section 702 FISA | 45-day extension expires — civil liberties reform window reopens |
+| June 14, 2026 | No Kings Day | Next national mobilization (Philadelphia flagship event) |
+| June 29, 2026 | DEA-1362 Hearing | Full rescheduling ALJ hearing begins (Arlington, VA) — runs through July 15 |
+| Late June 2026 | Trump v. Barbara | SCOTUS birthright citizenship decision expected before term ends |
+| Late June 2026 | Trump v. Slaughter | SCOTUS FTC/NLRB removal power decision expected — will determine fate of independent agency protections; oral arguments held December 2025; conservative justices signaled strong support for overruling Humphrey's Executor |
+| TBD | Nashville (Crenshaw) | Vindictive prosecution ruling still pending — remains "imminent" |
+| TBD | 11th Circuit no-bond | Federal Circuit or SCOTUS review likely given 4-circuit split |
+| TBD | Section 122 CIT | Federal Circuit appeal (government expected to seek stay of CIT injunction) |
+| TBD | Louisiana redistricting | New map litigation; emergency challenges to primary suspension |
+| TBD | Alabama redistricting | Allen v. Milligan enforcement motion under new Callais standard |
+| TBD | Mail Voting EO (5.1/5.2) | Preliminary injunction in Massachusetts |
+
+---
+
+*Session 929 pass completed May 9, 2026. Three new items added: 11th Circuit no-bond ruling (mandatory detention circuit split), Callais cascade update (SCOTUS immediate effect, state legislative sessions), Section 591 Domain 42 alert. Tracker is now current through May 9, 2026.*
 | TBD | Mail Voting EO | Preliminary injunction (Massachusetts) |
