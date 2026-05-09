@@ -1,5 +1,77 @@
 # Check-in
 
+## Session 936 — May 9, 2026 (Autonomous Orchestrator - Exploration Items 18-20 Complete + URGENT seedwarden action)
+
+**Summary**: All main projects remain blocked on user actions. Executed 3 more exploration items immediately following Session 935. New deliverables address critical May-June deadlines: resistance-research Phase 2 expansion (Aug 1 deadline for ballot measure campaigns), stockbot May 12 checkpoint decision tree (ready for May 13 execution), seedwarden endangered species ordering (**TODAY May 9 — orders already due, action required now**). Effort: 4–5 hours total; 3 production-ready documents.
+
+### ✅ Session Accomplishments — Items 18-20 Complete
+
+**1. resistance-research: Domain Expansion Roadmap (Domains 48–54)**
+- **File**: `projects/resistance-research/DOMAIN_EXPANSION_ROADMAP_PHASE_2_DOMAINS_44_50.md`
+- **Status**: 12-month research pipeline complete; next 7 priority domains identified
+- **Key findings**: 
+  - Domains 44-47 already researched (Sessions 921-931); actual gaps are 48-54
+  - **Critical Aug 1 2026 hard deadline**: Domains 49 (Environmental Justice) + 50 (LGBTQ+ rights) must inform four state anti-trans ballot measure campaigns before early voting opens
+  - Domain 48 (Criminal Justice) unlocks Movement for Black Lives 50+ organization network
+  - Domain 51 (Campaign Finance) meta-analyzes Citizens United infrastructure across all sector-specific captures
+- **Next**: Upon Phase 1 execution completion (~May 28), orchestrator begins Phase 2 without pause
+
+**2. stockbot: Post-Checkpoint Architecture Roadmap**
+- **File**: `projects/stockbot/POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md`
+- **Status**: Decision tree + capital allocation strategy for all three May 12 scenarios complete
+- **Key findings**:
+  - PASS (≥30 SELL): Expand 2→6→8 sessions; prerequisite code fixes 9 hours; defer 30-session to June 9 Gate 2
+  - NEAR-MISS (10–29 SELL): Threshold calibration vs. regime suppression — pick one lever only; retraining ruled out
+  - FAR-MISS (0–9 SELL): Four triage paths (A/B/C/D) with diagnostic logic; default Path D if inconclusive
+- **Impact**: Ready for May 13 morning immediate execution upon checkpoint result
+- **Next**: May 12 20:00 UTC → execute checkpoint query → assign scenario → deploy roadmap
+
+**3. seedwarden: Endangered Species Procurement Timeline**
+- **File**: `projects/seedwarden/PHASE_2_ENDANGERED_SPECIES_PROCUREMENT_TIMELINE.md`
+- **Status**: Concrete sourcing + delivery timeline complete
+- **🚨 URGENT — ACTION REQUIRED TODAY (May 9)**:
+  - Orders were due May 8 (yesterday!)
+  - Eight priority species identified: American Ginseng, Goldenseal, Black Cohosh, Bloodroot, Ramps, Wild Bergamot, Trillium, Lady's Slipper
+  - **Immediate action (TODAY May 9)**:
+    - Mountain Rose Herbs: Place order now (sub-3-day delivery)
+    - Strictly Medicinal Seeds: Phone call to confirm stock + place order
+    - Prairie Moon Nursery: Phone call to confirm spring availability before online order
+  - Budget: $144 total (within range)
+  - Delivery: May 20–25 window (integrates with field photography May 10–30)
+- **Timeline risk**: Lady's Slipper may slip to June 1 if specimens unavailable; documented fallback: Hillside Nursery + photo licensing
+- **Next**: Place orders TODAY → confirm delivery May 20 → begin field photography May 10 with specimens arriving by May 20–25
+
+### ⚠️ CRITICAL ACTIONS FOR USER — Next 48 Hours
+
+1. **seedwarden (TODAY, May 9)**: Phone orders to Strictly Medicinal Seeds + Prairie Moon Nursery to confirm spring plant availability. Mountain Rose Herbs online order can place immediately (fastest). Budget $144 total.
+2. **stockbot (May 11 evening)**: Manual DB sync before May 12 checkpoint: `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db`
+3. **stockbot (May 12 20:00 UTC)**: Run checkpoint query; assign scenario; follow POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md
+
+### Current Project Status (Updated)
+
+| Project | Status | Next Action | Deadline |
+|---------|--------|------------|----------|
+| **seedwarden** | Phase 2 ready May 30 | **TODAY: Order plants (phone calls + online)** | **May 9 (TODAY)** |
+| **stockbot** | Checkpoint prep complete, AAPL position open | May 11: manual DB sync; May 12: checkpoint query | May 12 20:00 UTC |
+| **resistance-research** | Phase 1 complete, Domain 42 amplification ready, Phase 2 roadmap ready | Choose Path A / A+37 / B → Phase 1 executes | When ready |
+| **cybersecurity-hardening** | Phase 1+2 complete, measurement framework ready | Approve Phase 1 → Tier 1 outreach begins | When ready |
+| **mfg-farm** | Business plan + designs + fulfillment workflow complete | Run test print | When ready |
+
+### Exploration Queue Status
+
+- ✅ Items 1–17: COMPLETE (Sessions 912–935)
+- ✅ **Items 18–20: COMPLETE (Session 936)** — Domain 48-54 roadmap, stockbot checkpoint roadmap, seedwarden endangered species timeline
+- ⏳ **URGENT**: seedwarden plant ordering (TODAY May 9)
+- ⏳ Item 9: PENDING (Jetson resilience, reactivates May 13 post-checkpoint)
+
+### Usage & Budget
+
+- **Sonnet**: ~62% of weekly budget (growth from parallel exploration work)
+- **All models**: ~54% (budget resets Tuesday 00:00 UTC)
+- **Headroom**: Sufficient for May 12 checkpoint + all queued work through May 30
+
+---
+
 ## Session 935 — May 9, 2026 (Autonomous Orchestrator - Exploration Items 15-17 Complete)
 
 **Summary**: All active projects remain blocked on user actions (May 11-12 checkpoint, distribution path decision, Phase 1 approval, test print, photo window). Added 3 new exploration items and executed all 3 in parallel. Effort: 6–7 hours total; 3 production-ready documents (93 KB combined).

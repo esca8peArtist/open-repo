@@ -2,6 +2,32 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Post-Phase-1 Domain Expansion Roadmap (Domains 48–54)
+
+**Status**: COMPLETE
+
+**File created**: `projects/resistance-research/DOMAIN_EXPANSION_ROADMAP_PHASE_2_DOMAINS_44_50.md`
+
+**Word count**: ~2,600 words | **Sections**: 7 complete
+
+**Key outputs**:
+
+1. **Scoping correction**: Domains 44 (Reproductive Freedom), 45 (Labor/NLRB), 46 (Federal Research Policy), and 47 (Housing Security) were all completed in Sessions 921-931 and are not in the roadmap pipeline. Roadmap correctly targets Domains 48-54 as the next seven uncompleted priorities.
+
+2. **Selection framework**: Four-criterion model (democratic system gap, timely advocacy window, influencer network overlap, electoral/legislative trigger point). Seven confirmed gaps in the 47-domain framework identified: criminal justice civic exclusion, environmental justice participation rights, LGBTQ+ systematic legal attack, campaign finance structural mechanism, migrant civic participation, digital justice/algorithmic discrimination, youth civic power.
+
+3. **Seven priority domains scoped**: Domain 48 (Criminal Justice / Civic Exclusion Architecture, 15-18 hrs); Domain 49 (Environmental Justice, 12-15 hrs); Domain 50 (LGBTQ+ Rights, 12-15 hrs); Domain 51 (Campaign Finance / Dark Money, 10-12 hrs); Domains 52-53 noted as COMPLETE; Domain 54 (Youth Civic Power, 10-12 hrs, post-midterm).
+
+4. **12-month pipeline**: June = Domains 48+51 in parallel; July = Domains 49+50 in parallel; August = distribution only; September-November = pre-midterm lock; December = Domain 54; January-May 2027 = Domains 55-57 (Tier 3, trigger-conditional).
+
+5. **Influencer network expansion**: Three new network categories — state AG civil rights divisions (not just appellate teams), state constitutional law scholars (especially state ERA and state VROA networks), ballot access and third-party legal infrastructure contacts.
+
+6. **Resource budget**: ~75-90 combined research hours for Domains 48-51+54; two-domain parallel capacity confirmed for June and July research months.
+
+7. **Success metrics**: Primary = two or more documented adoption events per domain within 90 days; secondary = policy influencer engagement (AGs, Brennan Center, congressional staff); tertiary = movement media pickup; 12-month target = one formal institutional endorsement.
+
+---
+
 ## May 9, 2026 — Research Agent — Cybersecurity Hardening: Tier 2 Pilot Launch Readiness
 
 **Status**: COMPLETE

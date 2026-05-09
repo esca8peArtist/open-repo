@@ -4,6 +4,26 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item [latest]: Phase 2 Endangered Species Procurement Timeline — 2026-05-09
+
+**Task**: Write a concrete Phase 2 endangered species sourcing and procurement timeline integrating vendor orders, lead times, delivery milestones, contingency planning, and guide writing schedule for the May 30 Appalachian Medicinals launch.
+
+**File created**: `projects/seedwarden/PHASE_2_ENDANGERED_SPECIES_PROCUREMENT_TIMELINE.md`
+
+**Summary**:
+- **Species covered**: 8 at-risk / conservation-significant species: American Ginseng, Goldenseal, Black Cohosh, Bloodroot, Ramps, Wild Bergamot, Trillium (non-listed species), Lady's Slipper Orchid
+- **Critical finding**: All orders listed in PHASE_2_SOURCING_LOGISTICS.csv are overdue (deadline was May 8; today is May 9). Mountain Rose Herbs (dried roots for ginseng and goldenseal) and Strictly Medicinal Seeds (goldenseal seeds, black cohosh live plant) should be ordered today to hit the May 20 photography window
+- **Vendor matrix**: Mountain Rose Herbs (2–3 day dried root delivery, lowest risk), Strictly Medicinal Seeds (7–12 days, at-risk medicinals), Prairie Moon Nursery (7–14 days, native plant roots/bulblets — call to confirm spring stock before ordering), local garden center (same-day for Wild Bergamot), local farmers market (fresh ramp leaves)
+- **Photo sourcing**: iNaturalist CC-BY filter protocol for all 8 species; BHL public domain botanical illustrations (1912 ginseng/goldenseal handbook at biodiversitylibrary.org/item/116021); institutional outreach to NC Botanical Garden, Missouri Botanical Garden, and Hillside Nursery (lady's slipper)
+- **Budget**: $88–163 total with 15% contingency buffer = $144 planning figure; within the $150–300 8-species budget
+- **Contingency**: 4-species fallback launch (ginseng, goldenseal, black cohosh, ramps) if physical specimen sourcing fails for remaining species; all four have adequate iNaturalist CC-BY backup paths
+- **Parallel writing**: Text drafts for all 8 species recommended before specimens arrive; insert photos when they arrive. May 13 target for all 8 text drafts complete
+- **Checkpoints**: May 15 (roots photographed, iNaturalist sprint complete, 6/8 text drafts done); May 25 (5/8 photo sets confirmed, Canva integration begun, launch scope decided)
+
+**Sources read**: PHASE_2_GUIDE_CONTENT_BLUEPRINT.md, PHASE_2_PHOTOGRAPHY_LOGISTICS.md, phase-3-medicinal-herbs-sourcing-guide.md, phase-2-plant-sourcing-vendor-list.md, PHASE_2_SOURCING_LOGISTICS.csv, ENDANGERED_SPECIES_PHOTO_PIPELINE.md, endangered-species-candidate-list.md
+
+---
+
 ## Item 15: Phase 2 Guide Content Expansion Blueprint — 2026-05-09
 
 **Task**: Exploration Queue Item 15 — Phase 2 Guide Content Blueprint (20–50 species expansion plan, guide writing pipeline, photo integration, seasonal content strategy, publishing cadence).

@@ -4,6 +4,94 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 Session 936 — Autonomous Orchestrator — Exploration Queue Items 18, 19, 20 Complete
+
+**Summary**: All main projects remain blocked on user actions. Executed 3 high-impact exploration items (18-20) immediately following items 15-17 completion. Items focus on May–June critical dates: resistance-research Phase 2 domain expansion (Aug 1 hard deadline for Domains 49-50), stockbot May 12 checkpoint decision roadmap, seedwarden endangered species ordering (TODAY May 9 — orders due, 21 days to Phase 2 launch). Effort: 4–5 hours parallel research.
+
+### ✅ Item 18: resistance-research — Domain Expansion Roadmap (Domains 48–54)
+**File**: `projects/resistance-research/DOMAIN_EXPANSION_ROADMAP_PHASE_2_DOMAINS_44_50.md`
+
+Identified next seven priority domains to extend Phase 1 core framework. Key finding: Domains 44-47 already researched (Sessions 921-931); actual gaps are Domains 48-54.
+
+1. **Domain 48 — Criminal Justice as Civic Exclusion** (4.4M disenfranchised, Movement for Black Lives network, 50+ orgs)
+2. **Domain 49 — Environmental Justice & Community Participation** (EPA EJ offices closed, Climate Justice Alliance, 100+ orgs, Aug 1 anti-trans ballot measure deadline)
+3. **Domain 50 — LGBTQ+ Rights Under Systematic Legal Attack** (740 bills in 42 states, four November 2026 ballot measures, ADF legal infrastructure exposure)
+4. **Domain 51 — Campaign Finance/Dark Money** ($1.9B undisclosed 2024 spending, DISCLOSE Act momentum, meta-analysis of Citizens United infrastructure)
+5. **Domain 54 — Youth Civic Power** (campus polling closures, 6K student visa revocations, post-2026 election infrastructure assessment)
+6. **Domains 55-57** (deferred to January 2027: Food Systems, Church-State, Economic Democracy)
+
+**Critical timing**: Aug 1 2026 is hard external deadline for Domains 49-50 to inform four state anti-trans ballot measure campaigns before early voting.
+
+**12-month research pipeline** outlined with monthly targets, parallel work capacity, influencer network expansion strategy, success metrics.
+
+**Impact**: When Phase 1 execution completes (~May 28), orchestrator can immediately begin Phase 2 expansion without pause. Maintains research momentum through 2026 election cycle.
+
+---
+
+### ✅ Item 19: stockbot — Post-Checkpoint Architecture Roadmap
+**File**: `projects/stockbot/POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md`
+
+Three scenario decision trees + capital allocation strategies for May 12 20:00 UTC checkpoint outcome determination.
+
+**Scenario A (PASS: ≥30 SELL round trips)**
+- Prerequisites: ARCH-2,3,6 code fixes (~9 hours) before session expansion
+- Expansion sequence: 2→6→8 sessions by May 21; defer 30-session decision to June 9 Gate 2 checkpoint
+- Capital allocation: $80K across 8 sessions, $31K reserve
+- Gate 2 target: June 9; live Phase 1 target: June 15-20
+
+**Scenario B (NEAR-MISS: 10–29 SELL round trips)**
+- Root cause diagnosis: Threshold calibration (VIX 14-20, confidence 0.55-0.75) vs. regime suppression (VIX <14)
+- Apply only one lever, not both simultaneously (diagnostic clarity required)
+- Retraining explicitly ruled out for NEAR-MISS (reserved for FAR-MISS)
+- Capital lower bound: $0; upper bound: optimization training cost ($500-1000)
+- Timeline slip: 6-8 weeks to next Gate 1b checkpoint
+
+**Scenario C (FAR-MISS: 0–9 SELL round trips)**
+- Four triage paths with selection logic:
+  - Path A: Retrain with lower threshold (15-20 days, $500-1000 compute)
+  - Path B: Switch to h=5 model variant (5-10 days, $300-500)
+  - Path C: Expand to 30+ tickers (7-14 days, $1000-2000 new capital)
+  - Path D: Diagnostic pause (5 days, $0, default if root cause inconclusive)
+- Timeline range: September 2026 (Path A) to Q4 2026 (Path D)
+
+**May 13 morning decisions**: Three concrete answers keyed to checkpoint result, not abstract deliberation.
+
+**Impact**: Removes decision paralysis post-checkpoint. Enables immediate capital/timeline decisions May 13.
+
+---
+
+### ✅ Item 20: seedwarden — Phase 2 Endangered Species Procurement Timeline
+**File**: `projects/seedwarden/PHASE_2_ENDANGERED_SPECIES_PROCUREMENT_TIMELINE.md`
+
+Concrete plant sourcing + delivery timeline for May 30 Phase 2 launch. **URGENT FINDING**: All orders due May 8 (yesterday). Same-day action sequence required May 9 (today).
+
+**Eight priority endangered species** (Appalachian ecosystem):
+1. American Ginseng (Mountain Rose Herbs, 2–3 days)
+2. Goldenseal (Strictly Medicinal Seeds, lead time TBD — confirm today)
+3. Black Cohosh (Prairie Moon Nursery, phone confirmation required — stock may be sold out)
+4. Bloodroot (Mountain Rose Herbs, 2–3 days)
+5. Ramps (Strictly Medicinal, may be out-of-season — iNaturalist fallback)
+6. Wild Bergamot (Prairie Moon, 5–7 day lead time)
+7. Trillium, non-listed species (Prairie Moon, May bloom timing captured May 10–20)
+8. Lady's Slipper Orchid (Hillside Nursery, may slip to June 1 if specimens unavailable)
+
+**Vendor ranking**: Mountain Rose Herbs sub-3-day fastest; Strictly Medicinal primary for live plants; Prairie Moon requires phone confirmation (online inventory unreliable).
+
+**Budget**: $144 total with contingency (well within range). iNaturalist CC-BY + BHL botanical illustration zero-cost production infrastructure.
+
+**Critical seasonal reality**: May is post-bloom for most species. May photography captures vegetative/root/stem stages. Flower images from iNaturalist archives. Guide layout designed around this constraint.
+
+**May timeline**:
+- May 9 (TODAY): Place orders (Mountain Rose first, then Strictly Medicinal phone call, then Prairie Moon phone confirmation)
+- May 20–25: Delivery window, integrate into field photography May 10–30 schedule
+- May 25–30: Guide content integration with specimens at hand
+
+**Contingency**: If endangered species delayed, fallback to Wikimedia CC-BY + botanical garden photo licensing (documented contacts in Phase 3 sourcing guide).
+
+**Impact**: Removes supply chain uncertainty for May 30 launch. Enables concurrent field photography + plant arrival (no wait delays).
+
+---
+
 ## 2026-05-09 Session 935 — Autonomous Orchestrator — Exploration Queue Items 15, 16, 17 Complete
 
 **Summary**: All active projects remain blocked on user actions (May 11-12 checkpoint, distribution path decision, Phase 1 approval, test print, photography window). Added 3 new exploration items and completed all 3 in parallel session. Effort: 6–7 hours parallel research.
