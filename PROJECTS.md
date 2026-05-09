@@ -348,7 +348,15 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: 🔴 USER PRIORITY (2026-05-08): Comprehensive options backtesting — train models across NVDA/TSLA/MSFT/META/QQQ/AAPL, run 3-4 profile variants each, produce full report at `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` with tables/analysis vs buy-and-hold. See INBOX for full instructions. A preliminary report already exists (Session 895-B sub-agent) — extend and deepen it.
+**Current focus**: 🔴 USER PRIORITY (2026-05-08): Comprehensive options backtesting — COMPLETE (Session 900). `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` extended from 790 to 1,423 lines with 6 new analytical sections:
+  - Section 13: Risk-Adjusted Performance Metrics (Calmar, Sortino)
+  - Section 14: Options Strategy Analysis (directional/spread/non-directional)
+  - Section 15: Model Robustness & Confidence Scoring (Tier 1-4 classification)
+  - Section 16: Portfolio-Level Analysis (3-model recommended: META+MSFT+SPY)
+  - Section 17: Live Trading Implementation Roadmap (4-phase, 16 weeks)
+  - Section 18: Final Recommendations & Action Items (explicit success/failure criteria)
+  - Key Finding: META_LGB_v1 (regime_only) achieves +41.96% return with Sharpe 1.84, Alpha +38.28%
+  - Deployment Ready: Three-model portfolio (META + MSFT + SPY) projects +27.78% return, 1.53 Sharpe, -10.17% MaxDD
 
 **Blocked on**: ~~ARCH decisions~~ — unblocked for backtesting task. ARCH decisions are deferred; do not let them block the backtest run. Address ARCH in a separate session.
 
