@@ -2,6 +2,32 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Cybersecurity Hardening: Tier 2 Pilot Launch Readiness
+
+**Status**: COMPLETE
+
+**File created**: `projects/cybersecurity-hardening/TIER_2_PILOT_LAUNCH_READINESS.md`
+
+**Word count**: ~2,400 words | **Sections**: 8 complete
+
+**Key outputs**:
+
+1. **Pilot org selection**: 5 candidates ranked by readiness — FPF (Playbook 5, journalist security), GAP (Playbook 4, whistleblower), NLG Mass Defense (Playbook 2, activist organizing, warm Tier 1 follow-on), IRE (Playbook 5, breadth/NICAR angle), CLINIC referral/Make the Road (Playbook 1, immigration, conditional on Tier 1 referral).
+
+2. **Tier 2 vs Tier 1 messaging distinction documented**: Tier 1 centers the at-risk individual (immediate data broker opt-out action); Tier 2 centers the organization's institutional mission (operational integration, session scheduling, curriculum reference). DV survivor sector framing is distinctly inverted — safety planning primacy before digital security action — and confirmed ineligible for pilot pending NNEDV review.
+
+3. **6-week pilot timeline**: Preparation Weeks 1–3 (parallel to Tier 1 active outreach), launch Week 4 (contingent on Tier 1 gate), engagement Weeks 5–6, sessions/feedback Weeks 7–9, debrief and full Tier 2 authorization decision Week 10.
+
+4. **Two decision gates**: Week 2 (pilot org selection finalization — framing decision, not go/no-go), Week 4 (Tier 1 gate passage required before first pilot contact).
+
+5. **Feedback collection**: Two-track design — Track A asynchronous survey (3 required questions, 2 optional), Track B 30-minute structured interview for high-engagement orgs. Downstream policy asks calibrated per organization.
+
+6. **Contingencies documented**: Low adoption response (diagnostic + correction path), security incident escalation path, mid-pilot messaging correction protocol, full wave delay criteria (2-week max for corrections).
+
+7. **Pilot-to-wave scaling artifacts**: Practitioner validation language, corrected playbooks, refined subject lines, reusable session structure. FPF and IRE graduate from pilot partners to ongoing distribution relationships in the full Tier 2 wave.
+
+---
+
 ## May 9, 2026 — Research Agent — Domain 52: Civil Society Suppression and the Nonprofit Independence Crisis
 
 **Status**: COMPLETE — committed to master
