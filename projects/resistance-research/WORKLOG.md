@@ -2,6 +2,53 @@
 
 ---
 
+## May 9, 2026 — Research Agent — Cybersecurity Hardening: Tier 2 Distribution Sequencing & Organizational Outreach Strategy
+
+**Status**: COMPLETE
+
+**Context**: Exploration Queue item — cybersecurity-hardening Phase 2 Tier 2 launch sequencing. Phase 1 (Tier 1) distribution targeting ~45 individual institutional contacts (law schools, immigration legal aid orgs, civil society groups) is production-ready. This session designed the Phase 2 Tier 2 launch infrastructure: which Tier 1 contacts graduate to Tier 2 organizational invitees, how to reach new Tier 2 organizations (NGOs, labor unions, legal services, academic institutions), and what the pre-launch readiness and risk management framework looks like.
+
+**Files created** (in `projects/cybersecurity-hardening/`):
+- `tier-2-launch-sequencing-strategy.md` (~2,500 words): Three-factor readiness scoring for Tier 1 graduation, 30 new Tier 2 organizations across foundations/funders/coordinating bodies/federation structures, organizational adoption messaging strategy, week-by-week timeline (Phase 1 Day 28 checkpoint through Month 2 July 2026 full launch), and four-tier success metrics (adoption rate, derivative products, cross-references, media references).
+- `tier-2-organizational-adoption-messaging.md` (~1,500 words): Five sector-specific messaging templates (OA-1 through OA-5) for nonprofits/NGOs, labor unions, legal service providers, academic institutions, and civil rights organizations. Each template leads with the sector-specific OpSec challenge most likely to compel adoption — governance liability for nonprofits, campaign window security for unions, DocketWise breach for legal services, NSPM-33 compliance for academics, Carpenter gap documentation for civil rights organizations. Includes personalization notes and cross-references to Phase 1 individual guidance.
+- `tier-2-implementation-checklist.md` (~1,800 words): Three-section checklist — pre-launch readiness (materials verification, contact list verification, capacity check), active risk mitigations (30+ inquiry management, derivatives versioning, confidentiality breach prevention), and 30/60/90-day quarterly review gates with decision options at each gate.
+
+**Key design decisions**:
+1. Three-factor scoring (Engagement Depth + Integration Signal + Network Multiplier) determines Tier 2 invitation tier — this framework was already partially developed in `phase-2-tier2-candidate-scorecard.csv` and is now fully operationalized with decision matrix and provisional scores for all 16 Tier 1 organizations.
+2. The 30 new Tier 2 organizations are stratified by type: 8 funders (contact after adoptions are confirmed), 10 national coordinating bodies (highest priority for Week 1 new outreach), 12 federation structures (weeks 2–3 of new outreach). Funder outreach is explicitly gated until organizational adoption data is available to present.
+3. Organizational adoption messaging is explicitly differentiated from the amplifier network messaging in `TIER2_MESSAGING_TEMPLATES.md` — different contact type, different ask, different templates. The OA series is for integration; the 2A–2E series is for amplification.
+4. The 90-day decision gate table makes Tier 3 planning conditional on confirmed workflow modification (not session attendance or adoption intent) across at least 2 sectors.
+
+**Relationship to existing files**: The three new files extend and do not conflict with `phase-2-tier2-distribution-sequencing-strategy.md`, `phase-2-tier2-organizational-outreach-strategy.md`, and `tier-2-launch-checklist.md`. Those files cover the broader Tier 2 amplifier distribution infrastructure (digital rights organizations, academic programs, security researchers, journalist organizations). The new files specifically address the organizational playbook adoption layer (NGOs, labor unions, legal services, academic institutions as adopters rather than amplifiers).
+
+---
+
+## May 9, 2026 — Research Agent — Domain 42 Phase 1 Outreach Sequence + May 28 Urgency Templates
+
+**Status**: COMPLETE
+
+**Context**: Exploration Queue item — Phase 1 Institutional Outreach Prioritization for May 28 Domain 42 Deadline. Today is May 9, 19 days before the DEA-1362 participation notice deadline. The May 13 House Appropriations full committee markup (Section 591 cannabis rider) is 4 days away, creating a compressed urgency window inside the already-tight 19-day outreach campaign.
+
+**Files created**:
+- `projects/resistance-research/execution/domain-42-outreach-sequence.md` (~2,100 words, canonical sequencing document superseding earlier Session 895 sequencing files where they conflict — updated for May 9 status, Section 591 4-day urgency window, and correct May 28/May 24/May 20 deadline hierarchy)
+- `projects/resistance-research/execution/domain-42-email-template-may28-urgency.md` (~2,800 words, full 5-template set with May 28 urgency frame — Templates A through E covering drug policy organizations, civil rights organizations, academic/admin law contacts, state AGs, and the three-sentence emergency variant for May 22–27 final push)
+
+**Key findings from this session**:
+1. The Section 591 markup on May 13 is a genuine urgency accelerant inside the already-compressed window. Organizations on the DEA-1362 administrative record before May 13 have standing in that record regardless of the appropriations outcome. The 4-day window to May 13 is the highest-leverage moment in the entire outreach campaign — DPA, NORML, and LEAP can file in 2–3 days and should be contacted immediately if Category A has not been sent.
+2. The existing execution directory has substantial infrastructure from Session 895 (May 7), including complete personalized email bodies for all Category A contacts ready to copy-paste. These are in EXECUTE_CATEGORY_A_SEND_MAY_8.md. The new outreach sequence file does not duplicate this — it synthesizes the strategic layer and provides the canonical sequencing reference going forward.
+3. The May 24 electronic cutoff and May 20 mail postmark cutoff are operationally more important than the May 28 Federal Register deadline; all templates now make this hierarchy explicit.
+4. Pre-drafted participation notice text (six organizations) is embedded in domain-42-outreach-sequence.md Section 6 for use in the May 21 follow-up and May 25–27 final push. This is the single highest-impact tool for converting "we're thinking about it" into an actual filing — the three-sentence barrier is the primary institutional friction point.
+5. The DEA selection mechanism (25 of 160+ requestors selected, historically skewed anti-reform) means that exclusion of civil rights organizations from the selected participants is itself an evidence point for Domain 42's regulatory capture argument. All templates now frame filing as useful regardless of selection outcome.
+
+**Critical next actions (in order of urgency)**:
+1. If Category A emails have not been sent: Send DPA and NORML today. Send LEAP, ACLU, and Sentencing Project today or tomorrow.
+2. NAACP LDF has the longest internal routing time (10–14 days) — send May 10 at the absolute latest.
+3. Monitor May 13 House Appropriations markup outcome. Update all pending template language per Section 591 escalation trigger in domain-42-outreach-sequence.md Section 5.
+4. Day 14 follow-up wave: May 21. Send pre-drafted participation notice text with every follow-up email.
+5. Day 18–20 emergency variant: May 25–27. Template E (three-sentence emergency variant) is ready.
+
+---
+
 ## May 7, 2026 — Research Agent: Session 895 — Domain 42 Phase 1 Institutional Outreach Sequencing Strategy
 
 **Status**: COMPLETE
