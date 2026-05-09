@@ -4,6 +4,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Items 36 + 39: Phase 2 Operations Toolkit and Setup Guides — 2026-05-09
+
+**Task**: Exploration Queue Items 36 and 39 — Phase 2 Automation Toolkit (operations docs) and Phase 2 Setup User Guides. Created two new docs subdirectories and wrote all 8 deliverables.
+
+**Directories created**:
+- `projects/seedwarden/docs/phase-2-operations/`
+- `projects/seedwarden/docs/phase-2-setup-guides/`
+
+**Item 36 — Phase 2 Automation & Contingency Toolkit deliverables** (docs/phase-2-operations/):
+
+- `phase-2-email-automation-sequence.md` — Day-by-day email timing from Phase 2 launch through Week 4. Covers: launch broadcast with 50/50 A/B subject line test, 5-email welcome sequence (Day 0/2/5/7/10) with per-email A/B variants, Kit tag logic for 3 behavioral interest segments (seed-saver / city-grower / preservationist), June–July newsletter calendar with product spotlight assignments, complete UTM schema for GA4 attribution, and full delivery handling for bounces / unsubscribes / ISP whitelisting. Sourced from root-level `phase-2-email-automation-sequence.md`.
+
+- `phase-2-social-posting-scheduler.csv` — 30-day social content calendar (June 1–30, 2026). 90 scheduled posts across Instagram, TikTok, and Pinterest. Columns: Date, Platform, Time_EST, Content_Type, Caption_Summary, Full_Caption_Source, Hashtag_Pack, Destination_Link, Image_File, Posting_Notes. Posting times: Instagram 9–10am, TikTok 11am/6pm, Pinterest 8pm EST. Posting_Notes_Global rows at end: platform-specific optimal times, hashtag strategy, content bucket ratios, carousel/video/Pinterest specs. Sourced from root-level `phase-2-social-posting-scheduler.csv`.
+
+- `phase-2-launch-analytics-dashboard-template.xlsx` — 5-sheet functional analytics template. Sheet 1 Daily_Log: 30 date rows with formula-based conversion rate and CPA. Sheet 2 Cohort_ROI: 6 cohorts with LTV and conversion formulas. Sheet 3 Per_Channel_Attribution: 7 channels with UTM attribution methods. Sheet 4 Real_Time_Alerts: 12 metrics with red/yellow/green threshold formulas and action triggers (red flags at conversion <0.5%, revenue <$200/day, email unsubscribe >2%). Sheet 5 Phase_3_Decision_Framework: 6-criterion PASS/AT RISK/FAIL scoring model with 5-of-6 GO decision rule. Sourced from root-level `phase-2-launch-analytics-dashboard-template.csv`.
+
+- `phase-2-contingency-playbook.md` — 5-scenario post-launch contingency playbook. Scenario 1 Low Conversion: traffic vs. conversion diagnosis framework, email channel, social channel, and listing messaging recovery. Scenario 2 Photos Fail: Canva browser fix, Figma fallback, partial/complete shoot failure recovery. Scenario 3 Email Delivery: ISP whitelist request, list cleaning, DNS auth fix, Gmail Promotions tab. Scenario 4 Social Lockout: prevention checklist, per-platform recovery, alternative platform fallback matrix. Scenario 5 Demand Spike: scaling procedure, sold-out notice, waitlist strategy, proactive customer communication template. Each scenario includes: decision owner, success criterion, rollback. Sourced from root-level `phase-2-automation-contingency-playbook.md`. Approximately 2,000 words.
+
+- `phase-2-launch-day-checklist.md` — Hour-by-hour May 30 launch timeline. 6 user-only checkpoints: T+0h (6am device setup and pre-launch verification), T+6h split as 10am Etsy launch + 12pm email broadcast, T+12h (2pm social media), T+24h (May 31 6am Day 2 open), T+38h (May 31 8pm first cycle assessment with 7-metric GREEN/YELLOW/RED framework), T+48h (June 1 6am Day 3 open). Automated alerts: Discord webhook for Etsy orders (Zapier flow spec), Etsy push notifications, Kit email notifications. Rollback procedures for 8 failure modes. Week 1 monitoring schedule. Quick reference for all key file locations. Sourced from root-level `phase-2-launch-day-checklist.md` and `phase-2-launch-day-master-checklist.md`.
+
+**Item 39 — Phase 2 Setup User Guides deliverables** (docs/phase-2-setup-guides/):
+
+- `phase-2-social-account-setup-guide.md` — Instagram, TikTok, and Pinterest account creation guide. Instagram: business account creation (step-by-step from signup), business category selection ("Education"), profile optimization, bio copy, link-in-bio setup, monetization eligibility note. TikTok: creator vs. business account decision tree (recommends Business for bio link access), age verification, monetization eligibility check. Pinterest: business account setup, domain verification via two paths (custom domain vs. Kit URL), Rich Pins setup, profile optimization, first board creation. Includes: decision tree for new account vs. upgrading existing personal account, handle fallback sequence (seedwarden.co / seedwarden.seeds / seedwarden_guides), common issues and fixes, confirmed handles table for tracking. Estimated time: 35–50 minutes. Approximately 2,000 words.
+
+- `phase-2-canva-brand-kit-setup-guide.md` — Canva subscription decision tree (Free vs. Pro vs. Teams), Brand Kit creation walkthrough (6 Seedwarden hex codes with names, logo upload, Lora + Inter font combination), zone card master template setup (8.5×11in, 6 column guides at exact positions), and 30-day social calendar preset creation (IG 1080×1080px, TikTok 1080×1920px, Pinterest 1000×1500px). Includes Phase 1 hex codes in case Figma is inaccessible, Pro trial guidance, and production sequence for social graphics that do not yet exist (quote-card.jpg, cluster-a-bts.jpg, cluster-d-composite.jpg). Verification checklist. Estimated time: 30–45 minutes. Approximately 1,500 words.
+
+- `phase-2-kit-landing-page-setup-guide.md` — Kit account creation and landing page builder tutorial. Covers: account creation (sender name, API key), SPF/DKIM DNS authentication (with merge guidance for domains that already have an SPF record), landing page builder walkthrough (headline, subheadline, 3 form fields including zone dropdown with Zone 3–10 options, submit button, trust text), form-to-tag mapping for zone routing, MailerLite vs. Klaviyo decision tree, form preview with example populated form, UTM parameter setup (master UTM reference table, how to add UTMs in Kit editor, GA4 verification notes and Etsy tracking limitation), custom domain decision tree (Kit subdomain vs. custom domain, cost/timeline), and complete end-to-end test procedure (9-step verification with specific failure diagnosis paths). Estimated time: 55–75 minutes. Approximately 2,000 words.
+
+**Source documents reviewed for Items 36 + 39**: phase-2-email-automation-sequence.md, phase-2-social-posting-scheduler.csv, phase-2-launch-analytics-dashboard-template.csv, phase-2-automation-contingency-playbook.md, phase-2-launch-day-checklist.md, phase-2-launch-day-master-checklist.md, social-media-setup.md, CANVA_SETUP_AND_EXECUTION_GUIDE.md, CANVA_TEMPLATE_PROTOTYPE.md, kit-account-setup-guide.md, KIT_SETUP_NOTES.md, PHASE_2_EMAIL_STRATEGY.md.
+
+**Status**: All 8 files production-ready. No TODOs. User can execute all 3 setup actions (social accounts, Canva Brand Kit, Kit landing page) before May 28 using only the docs/phase-2-setup-guides/ guides.
+
+---
+
 ## Phase 2 Automation & Contingency Toolkit — 2026-05-09
 
 **Task**: Exploration Queue Item 36 — Phase 2 Automation & Contingency Toolkit. Developed five production-ready deliverables for the May 30, 2026 Phase 2 launch.
