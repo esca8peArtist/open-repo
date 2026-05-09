@@ -4,6 +4,25 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 15: Phase 2 Guide Content Expansion Blueprint — 2026-05-09
+
+**Task**: Exploration Queue Item 15 — Phase 2 Guide Content Blueprint (20–50 species expansion plan, guide writing pipeline, photo integration, seasonal content strategy, publishing cadence).
+
+**File created**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md`
+
+**Summary**:
+- **Content Scope**: 20 Tier 1 species (field photography May 10–30, writing begins May 31); 15–20 Tier 2 opportunistic/Wikimedia-sourced species (June–October); 8–10 Phase 3 medicinal species handled in parallel track with cross-reference links
+- **Pipeline**: 6-stage workflow (field capture → cull/verify → habitat transcription → photo-to-section mapping → draft writing → QA/Canva). Key gate: no writing until Stage 4 photo map is complete; no publishing until species ID confidence is confirmed High.
+- **Photo integration**: Full translation table from photography protocol angles (habitat wide, full habit, macro ID feature, seasonal feature, lookalike comparison) to guide figure types and placement positions
+- **Seasonal strategy**: 4 content windows (spring ephemerals June–July; summer perennials July–August; fall harvest September–October; winter structure November–December) with specific species-to-window assignments and SEO rationale
+- **Database structure**: species-database.csv schema defined (24 fields); geographic cross-reference using 9-region system; ecosystem tags from photography logistics mapped to browse/bundle uses
+- **Publishing cadence**: bi-weekly minimum; weekly target; publish-as-you-go (not batch release) to accumulate search history; year-end target 45–50 published species guides
+- **May 31 quick-start checklist**: 6 concrete gates that must be true before writing begins
+
+**Sources read**: PHASE_2_PHOTOGRAPHY_LOGISTICS.md, products/native-plants-regional-guide.md, products/wild-edibles-quick-reference.md, guide-production-timeline.md, native-plants-guide-expansion.md, PHASE_3_PHOTOGRAPHY_LOGISTICS_PLAN.md, PHASE2_PRODUCT_PRIORITIES.md
+
+---
+
 ## Items 36 + 39: Phase 2 Operations Toolkit and Setup Guides — 2026-05-09
 
 **Task**: Exploration Queue Items 36 and 39 — Phase 2 Automation Toolkit (operations docs) and Phase 2 Setup User Guides. Created two new docs subdirectories and wrote all 8 deliverables.

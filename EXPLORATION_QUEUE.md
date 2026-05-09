@@ -87,6 +87,44 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
+## Active Queue (Current Session 935)
+
+### 🆕 Item 15: Seedwarden Phase 2 Guide Content Expansion Blueprint
+**Status**: NEW (Session 935, May 9 2026)
+**Impact**: HIGH — May 30 Phase 2 launch (21 days), guide content is critical differentiator
+**Goal**: Plan guide writing pipeline for 20-50 new species post-May-30. Deliverable: content structure, species priority matrix, photo-to-guide workflow, integration with Phase 1 guide templates, timeline for seasonal content (spring ephemeral, summer perennial, fall seed maturation, winter structure/habitat ID).
+**Feasibility**: HIGH — Phase 1 guides exist as templates, Phase 2 photography logistics finalized
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md` (site prioritization → photo workflow → guide writing sequence → publishing cadence)
+**Why now**: With photography logistics done, content blueprint removes guide-writing uncertainty. Enables user to start guide expansion immediately post-May-12 checkpoint.
+**Next Step**: Start now — independent of user decisions
+
+---
+
+### 🆕 Item 16: mfg-farm Pre-Launch Fulfillment Workflow
+**Status**: NEW (Session 935, May 9 2026)
+**Impact**: MEDIUM-HIGH — Test print is blocker, but pre-work can prepare rapid launch path
+**Goal**: Design end-to-end fulfillment pipeline: payment processor selection (Stripe/PayPal), shipping carrier integration (USPS/FedEx/UPS), customer support workflow, inventory management, quality control checkpoints, packaging cost analysis, return handling.
+**Feasibility**: HIGH — business plan exists, designs finalized
+**Effort estimate**: 2-3 hours
+**Deliverable**: `projects/mfg-farm/PRE_LAUNCH_FULFILLMENT_WORKFLOW.md` (infrastructure setup → launch readiness checklist → 30-day ramp-up timeline)
+**Why now**: Once test print passes, accelerate launch without fulfillment discovery work. Reduces post-test-print friction to ~1-2 hours of setup.
+**Next Step**: Start now — parallel to test print work
+
+---
+
+### 🆕 Item 17: Cybersecurity-Hardening Tier 1 Success Measurement Framework
+**Status**: NEW (Session 935, May 9 2026)
+**Impact**: HIGH — Tier 1 outreach depends on measurement infrastructure
+**Goal**: Develop KPI dashboard, early warning system, escalation procedures, and contingency response protocols for Tier 1 rollout. Coverage: email open rates → meeting acceptance → security adoption signals; failure scenarios (low engagement, security incident at org, contact turnover); dashboards for tracking weekly cohorts.
+**Feasibility**: HIGH — Tier 2 pilot plan done, existing outreach infrastructure
+**Effort estimate**: 2-3 hours
+**Deliverable**: `projects/cybersecurity-hardening/TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md` (metric definitions → tracking infrastructure → escalation decision tree → contingency triggers)
+**Why now**: Before Phase 1 approval, establish measurement baseline. Enables data-driven decisions on Tier 2 timing and scope.
+**Next Step**: Start now — ready before user approves Phase 1
+
+---
+
 ## Previously Pending Items
 
 ### ⏳ Item 9: Jetson Resilience Assessment

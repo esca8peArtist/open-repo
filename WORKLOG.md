@@ -4,6 +4,52 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-09 Session 935 — Autonomous Orchestrator — Exploration Queue Items 15, 16, 17 Complete
+
+**Summary**: All active projects remain blocked on user actions (May 11-12 checkpoint, distribution path decision, Phase 1 approval, test print, photography window). Added 3 new exploration items and completed all 3 in parallel session. Effort: 6–7 hours parallel research.
+
+### ✅ Item 15: seedwarden — Phase 2 Guide Content Expansion Blueprint
+**File**: `projects/seedwarden/PHASE_2_GUIDE_CONTENT_BLUEPRINT.md`
+
+Comprehensive guide content expansion pipeline for May 30 Phase 2 launch (21 days away). Removes uncertainty around guide writing workflow. Six sections:
+
+1. **Content Scope** — 20 Tier 1 species (scored 12+ from photography priority grid), 4 Tier 2 groups (disturbed-ground, summer-peak, invasive edibles, regional depth), Tier 3 medicinal cross-referencing deferred to Phase 3 production track
+2. **Guide Writing Pipeline** — Six stages with hard gate at Stage 4 (photo-to-section mapping forces issue upstream). Word targets per section (80–120 for Identification, 30–60 for Safety) prevent Canva layout surprise rework.
+3. **Photo-to-Guide Integration** — Translation table between photography protocol angles and guide figure types, with 6 Wikimedia-only Tier 2 species flagged for May 31 entry (no photo dependency).
+4. **Seasonal Content Strategy** — Four-window structure (spring ephemeral June–July, summer-peak July–August, invasive edibles Aug–Sept, winter structure Oct–Dec) drives 45–50 guides by year-end.
+5. **Database & Cross-Reference** — 24-field CSV schema enforces completeness before publication; bidirectional cross-reference between species guides and companion planting guilds.
+6. **Publishing Timeline** — Bi-weekly minimum / weekly target cadence with publish-as-you-go (not batch release) to maximize search indexing and early conversion data.
+
+**Impact**: User can start guide writing immediately post-May-12 checkpoint with a structured pipeline vs. ad-hoc approach. Enables Phase 2 launch on schedule.
+
+---
+
+### ✅ Item 16: mfg-farm — Pre-Launch Fulfillment Workflow
+**File**: `projects/mfg-farm/PRE_LAUNCH_FULFILLMENT_WORKFLOW.md`
+
+End-to-end fulfillment operationalization for ModRun post-test-print launch. Covers the gaps not addressed by existing SOPs (fulfillment-workflow.md, DAY1_LAUNCH_OPERATIONS_PLAYBOOK.md): payment processor comparison (Stripe recommended over PayPal/Square for direct/custom orders, $1.02 vs $1.24 per $24.99 transaction), carrier rationale (USPS Ground Advantage via Pirate Ship confirmed, USPS free carrier pickup highlighted as key operational lever), customer support tooling (Freshdesk free tier for Months 1-6, Gmail fallback thereafter — Zendesk/Help Scout unjustifiable at <10 orders/day), email template library (4 templates: order confirmation, shipped, custom order, return/issue response), returns policy text (30-day, no-return-required for orders <$40), 8-step critical path launch checklist with dependencies, and 30-day ramp-up timeline with scaling triggers (add printer at $1,500+/month consistent + 16hr/day utilization; add part-time help at 6+ hours/week packing; add Amazon at 20+ Etsy orders/month + 25+ reviews). Day 1 infrastructure setup: ~80 minutes total.
+
+---
+
+## 2026-05-09 — cybersecurity-hardening — Item 17: Tier 1 Success Measurement Framework
+
+**File**: `projects/cybersecurity-hardening/TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md`
+
+Established measurement baseline for Phase 1 outreach (25+ immigration legal aid organizations) before sends begin. Six sections:
+
+1. **KPIs** — email engagement (Bitly click rate ≥25%, reply rate ≥25%, Stage 1+ quality ratio ≥50%), meeting acceptance (≥20% of sends), training adoption signals, organizational adoption leading/lagging indicators, policy uptake. Each metric uses the Metric Definition → Target → Data Source → Escalation format.
+2. **Weekly Cohort Dashboard** — three-wave structure (Wave 1 named nationals Days 1–5, Wave 2 community orgs Days 8–12, Wave 3 mutual aid Days 15–19), cohort-level tracking template, email-to-adoption funnel (sends → engaged readers → quality conversations → adoption pipeline → documented adoptions), per-wave success thresholds with specific pivot triggers.
+3. **Early Warning System** — five failure scenarios (low engagement, security incident at org, contact turnover, hostile reception, Stage 0 routing pattern) with detection triggers and a full escalation decision tree.
+4. **Contingency Protocols** — low engagement pivot strategy with time limits and alternative contact channel priority order; organizational incident hold protocol; pre-identified fallback contacts for five named national orgs; hostile reception documentation and withdrawal protocol.
+5. **Tier 1 → Tier 2 Transition Criteria** — five-criterion gate (25 orgs contacted, ≥5% reply, ≥1 Stage 1+ quality reply, Gist accessible, zero unresolved safety concerns), timeline table (Day 21 gate, Week 4 pilot invitations, Week 6 adoption assessment, Week 11 full Tier 2 wave), weekly-then-monthly data review cadence.
+6. **Attribution and Downstream Tracking** — 3-question 90-day follow-up survey, commitment tracking, three-tier attribution confidence system (High/Medium/Low with unique content marker test), 6-month and 12-month monitoring framework with specific search queries and passive monitoring infrastructure.
+
+Closes the gap between execution planning (TIER1_OUTREACH_EXECUTION_PLAN.md) and the pilot readiness document (TIER_2_PILOT_LAUNCH_READINESS.md) — user can now see real data against defined thresholds as Phase 1 outreach happens.
+
+**Impact**: Before Phase 1 approval, establish measurement baseline so every decision during outreach comes from data vs. impression. Enables user to detect problems early (Day 7 escalation triggers, Day 14 decision gates, Day 21 Tier 2 transition gate).
+
+---
+
 ## 2026-05-09 Session 934 — Autonomous Orchestrator — Exploration Queue Items 13 & 14 Complete
 
 **Summary**: All active projects blocked on user input (distribution path, Phase 1 approval, test print, DB sync). No user escalation needed. Executed 2 high-impact exploration items with May 28 + May 30 deadlines.
