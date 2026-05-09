@@ -4,6 +4,78 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Pre-Launch Execution Package — May 9–30 — 2026-05-09
+
+**Task**: Identify and produce all pre-launch work remaining between May 9 and May 30 launch.
+21 days remaining to launch. Session: Phase 2 pre-launch autonomous execution.
+
+**Context at session start**: TRACK_B_LAUNCH_DAY_OPERATIONS_GUIDE.md (Item 30) complete. All
+strategy and copy docs complete. Social accounts, Canva Brand Kit, Kit landing page, zone cards,
+and lifestyle photography are user-gate items not yet confirmed complete. Track B has no agent
+blockers.
+
+**Gap analysis findings**:
+- All strategy, copy, contingency, and decision-trigger documents are complete and paste-ready
+- The `phase-2/` directory did not exist; all Phase 2 execution docs lived in the root
+- Missing: day-current execution timeline (existing timelines reference May 6–7 as "today")
+- Missing: pre-launch email broadcast templates for the May 12–29 window
+- Missing: analytics setup checklist with baseline-capture instructions
+- Missing: consolidated Phase 3 handoff brief for the June 15–July 1 decision window
+- Social content calendar (60-day), launch broadcast copy, and marketing materials were all complete
+
+**Files created**:
+
+- `projects/seedwarden/phase-2/may-9-to-30-execution-timeline.md` — Day-by-day execution plan
+  for the 21 remaining days. Replaces the stale May 6-dated plans. Covers: May 9 status snapshot,
+  critical path with milestone dates, day-by-day task tables (May 9–30), float item register,
+  Go/No-Go criteria for May 29, launch day summary, and June 6 fallback activation conditions.
+  Each day's table specifies task, owner, time, and what it unblocks.
+
+- `projects/seedwarden/phase-2/pre-launch-email-templates.md` — Four paste-ready broadcast email
+  templates for the pre-launch window: (A) May 12–14 teaser announcement; (B) May 20 10-day
+  countdown with zone card explanation; (C) May 24–25 social proof seeding (conditional on reviews
+  existing); (D) May 29 day-before reminder. Each template includes subject line, preview text,
+  full body copy with Kit merge tags, scheduling path, and pre-send checklist. Follows the
+  same merge tag format as `phase-2-kit-broadcast-copy.md`.
+
+- `projects/seedwarden/phase-2/phase-2-analytics-kpi-setup.md` — Analytics configuration guide
+  covering: UTM parameter standards for all Phase 2 traffic sources (5 source/medium/campaign
+  combinations), GA4 and Kit pre-launch configuration steps, Etsy baseline capture instructions
+  (May 29 listing view snapshot), Google Sheets tracking template schema (2 sheets: launch-day
+  log and baseline vs. launch comparison), 5-minute daily metrics routine, weekly KPI rollup
+  format, Week 1 success targets, 30-day conversion analysis framework, customer-analytics.csv
+  field definitions, and the 7 user-action setup steps with deadlines.
+
+- `projects/seedwarden/phase-2/phase-3-launch-readiness-brief.md` — Phase 2→Phase 3 handoff
+  brief. Defines what Phase 3 needs from Phase 2 (photography, email list segmentation, Etsy
+  conversion baseline, social audience foundation), the June 15–July 1 decision timeline,
+  Phase 3 Option A/B/C/D selection criteria, medicinal herbs conditional decision, agent-executable
+  Phase 3 bridge tasks (June 1–30), and the July 1 quick-start checklist. Consolidates
+  PHASE3_ROADMAP_INDEX.md and PHASE2_TO_PHASE3_TRANSITION.md into an actionable decision document
+  for the phase gate.
+
+**Key decisions logged**:
+
+- Pre-launch email cadence: Send all 4 templates if list ≥25 subscribers; send only B+D if list
+  is smaller. Email C (social proof) is conditional on 2+ Etsy reviews existing.
+- Analytics baseline must be captured May 29 (day before launch), not launch day — Etsy does not
+  provide retroactive historical snapshots.
+- UTM parameter standard locked: source=kit/instagram/tiktok/pinterest, medium=email/social,
+  campaign=phase2-[context]. Consistent across all Phase 2 outbound links.
+- Phase 3 medicinal herbs decision deferred to June 15: build in Month 3 (July) if "medicinal-herbs"
+  tag has 10+ subscribers by June 15; defer to Month 5 (September) if not.
+- Phase 3 Option D trigger documented: if any single cohort is 60%+ of Phase 2 buyers, switch from
+  Option B to Option D and focus July product builds on that cohort's products.
+
+**User-required actions still outstanding (cannot be completed by agent)**:
+1. Confirm social accounts created (Instagram, TikTok, Pinterest @seedwarden) — if not, do today
+2. Confirm Canva Brand Kit configured — if not, do today (30 min, gates all zone card production)
+3. Confirm Kit landing page live and URL added to all 3 social bios
+4. Props sourcing run (May 9 deadline — today)
+5. May 10–11 photo shoot — non-delegable
+
+---
+
 ## Phase 2 Customer Acquisition and Retention Ops Manual — June Operations — 2026-05-09
 
 **Task**: Build detailed June 1–30 post-launch operations manual covering daily customer acquisition tactics, email campaign sequencing, social content calendar, feedback collection infrastructure, analytics dashboard, and the Day 30 Phase 2 → Phase 3 go/no-go decision framework. Exploration Queue item 34.
