@@ -1,3 +1,61 @@
+## Since Last Check-in (Session 926 — 2026-05-09 — Orchestrator State Checkpoint)
+
+### 📊 ORCHESTRATOR STATUS CHECKPOINT
+
+**Current State** (2026-05-09 UTC):
+- **All autonomous work is complete.** All major projects have reached their deliverable milestones or are awaiting scheduled events/user decisions.
+- **Three time-critical user decisions required TODAY:**
+  1. **Domain 42 Wave 1 execution** (May 13 deadline is 4 days away) — approved or deferred?
+  2. **resistance-research distribution path** (Path A / A+37 / B) — determines Phase 1 launch schedule
+  3. **stockbot Jetson DB sync** (May 11 evening) — manual execution required; cron PATH broken
+
+**Project Status Summary** (awaiting external events or user action):
+1. **stockbot** (#1): May 12 checkpoint preparation COMPLETE ✅. Engine running, AAPL position open (+$2,747 unrealized). Checkpoint SQL query ready. **Awaiting**: May 12 20:00 UTC event (3 days) + May 11 manual DB sync.
+2. **resistance-research** (#2): Phase 1–5 COMPLETE (35+ domains, all production-ready). Distribution infrastructure finalized. **Awaiting**: User path decision (A/A+37/B) → Phase 1 execution immediately follows.
+3. **cybersecurity-hardening** (#3): Phase 1 + Phase 2 research COMPLETE (Tiers 1–3 all production-ready, 11,365 words new). **Awaiting**: User approval to execute Phase 1 outreach.
+4. **mfg-farm** (#4): Business plan, CAD designs, market research, Etsy listing ALL COMPLETE. **Blocked**: Test print required (physical; user action).
+5. **seedwarden** (#5): Phase 1 & Phase 3 assets COMPLETE; Phase 2 execution ready (May 30 launch). **Blocked**: Tag corrections + Etsy account verification.
+6. **open-source-rideshare** (#10): Paused.
+
+**Blocked Items** (3 active):
+- stockbot: Manual DB sync May 11 (scheduled)
+- mfg-farm: Test print (user action)
+- stockbot: Disk cleanup after May 12 (not urgent)
+
+**Exploration Queue**: Items 1–8 COMPLETE; Item 9 (Jetson assessment) blocked on connectivity. Per protocol, queue has <3 active items. Adding new items reserved for next session if no user input is provided.
+
+### Needs Your Input (Session 926 — Time-Critical, May 9)
+
+**TODAY — Three Urgent Decisions Required:**
+
+1. **resistance-research — Distribution Path** (URGENT: May 13 Domain 42 deadline is 4 days away)
+   - Choose Path A (immediate 35-domain distribution) OR Path A+37 (recommended: immediate + Domain 37 for election protection) OR Path B (continue Phase 2 expansion before launch)
+   - Path A+37 RECOMMENDED: Enables May 9-13 Domain 42 Wave 1 outreach (critical 4-day window), then May 10-17 Waves 2-3 execution
+   - Impact: Determines May 12-28 execution calendar for Phase 1 launch and Domain 42 congressional submission
+
+2. **Domain 42 Wave 1 Execution Approval** (May 13 deadline critical)
+   - Ready to execute immediately: Email 6 Tier 1 drug policy organizations (DPA, NORML, LEAP, Sentencing Project, Students for Sensible Drug Policy, Law Enforcement Action Partnership)
+   - Window: May 9-11 (3 days to submit DEA hearing participation notices before House Appropriations May 13 Section 591 markup deadline)
+   - May 28 Federal Register deadline is the backstop for any organizational comment misses
+
+3. **stockbot — Jetson DB Sync Timing** (May 11 evening, 2 days away)
+   - AAPL time-stop exit expected to fire Monday May 12 (h+10 trigger)
+   - Manual sync required: `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db`
+   - Timing: May 11 evening (after 20:00 UTC market close) or May 12 morning before 20:00 UTC checkpoint query
+   - Cron PATH fix for permanent solution: `PATH=/home/awank/.local/bin:/usr/local/bin:/usr/bin:/bin` at top of crontab
+
+**Lower-Priority Items** (awaiting when ready):
+- mfg-farm: Test print (physical action) — unlocks Phase 2 supplier negotiation
+- seedwarden: Tag corrections + Etsy account verification — unlocks May 30 Phase 2 launch
+
+**Suggested Next Steps**:
+1. Approve distribution path (A / A+37 / B) → orchestrator executes Phase 1 immediately
+2. Approve Domain 42 Wave 1 execution → orchestrator sends DPA + NORML emails within 2 hours
+3. May 11 evening: Manual DB sync (5-minute operation)
+4. May 12 evening: Checkpoint execution (run query, assign outcome scenario, follow MAY_12_OUTCOME_ROADMAP.md)
+
+---
+
 ## Since Last Check-in (Session 925 — 2026-05-09 — Exploration Queue Item 37 Completion)
 
 ### ✅ CYBERSECURITY-HARDENING PHASE 2 TIER 3 DISTRIBUTION STRATEGY — COMPLETE
