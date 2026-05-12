@@ -27,14 +27,18 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results
-**Date blocked**: 2026-05-13
-**Context**: SSH audit of Jetson (2026-05-13 00:18 UTC) found that the Jetson crontab references `sync_db_from_alpaca.py` at `/home/awank/dev/SuperClaude_Framework/projects/stockbot/scripts/` but the file does not exist on the Jetson. The sync log (`/opt/stockbot/logs/sync_db.log`) has never been created — the script has never run. The Docker container's `database/trading.db` contains only 90 integration_test rows; zero real production trades. All real trade history lives in Alpaca only. The checkpoint SQL query run against the local DB will always return `confirmed_round_trips=0` regardless of actual trading activity. Verified: Alpaca paper account has AAPL 108 shares (+$2,879 unrealized), 3 open options contracts, May 5 liquidation of 19 non-AAPL positions — none of this is in the local DB.
-**What I need**: Either (a) deploy `sync_db_from_alpaca.py` to the Jetson so the cron can populate the local DB, or (b) rewrite the checkpoint query to hit Alpaca API directly instead of local DB. Option (b) is faster and more reliable. The orchestrator can implement (b) autonomously — see Verify with.
-**Verify with**: `ssh awank@100.120.18.84 "docker exec stockbot python3 -c \"import sys; sys.path.insert(0,'/app'); from src.trading.order_executor import OrderExecutor; ex=OrderExecutor(paper=True); pos=[p for p in ex.client.get_all_positions() if p.symbol=='AAPL']; print('AAPL open' if pos else 'AAPL closed')\""` — if AAPL closed after May 14 market open, h+10 exit fired.
-**Resolution**:
+---
 
 ## Resolved Archive
+
+### stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results
+**Date blocked**: 2026-05-13
+**Date resolved**: 2026-05-13 (Session 957, 00:28 UTC)
+**Context**: SSH audit of Jetson (2026-05-13 00:18 UTC) found that the Jetson crontab references `sync_db_from_alpaca.py` at `/home/awank/dev/SuperClaude_Framework/projects/stockbot/scripts/` but the file does not exist on the Jetson. The sync log (`/opt/stockbot/logs/sync_db.log`) has never been created — the script has never run. The Docker container's `database/trading.db` contains only 90 integration_test rows; zero real production trades. All real trade history lives in Alpaca only. The checkpoint SQL query run against the local DB will always return `confirmed_round_trips=0` regardless of actual trading activity.
+**Solution implemented (Option B)**: Created `may14_checkpoint_query_alpaca.py` — new checkpoint script that queries Alpaca API directly instead of local database. Verification test passed: script successfully connects to Alpaca, queries closed orders since May 5, and classifies scenarios (PASS / NEAR_MISS / FAR_MISS_C1 / FAR_MISS_C2). Verified: script queries Alpaca directly (bypasses DB sync), returns correct metrics (19 May 5 fills detected, 23 total fills since May 5, 0 AAPL model sells as expected before h+10 exit). Script is production-ready for May 14 20:00 UTC checkpoint execution.
+**Resolution**: RESOLVED — Created `scripts/may14_checkpoint_query_alpaca.py` (Option B). Script queries Alpaca API directly, avoiding local DB sync issue entirely. Tested and verified: connects to Alpaca, classifies scenario correctly (returns FAR_MISS_C1 when May 5 fills detected + 0 AAPL sells, as expected before h+10 exit). Ready for May 14 20:00 UTC checkpoint execution. User can run: `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py`
+
+---
 
 ---
 
