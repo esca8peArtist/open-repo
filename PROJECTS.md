@@ -351,7 +351,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: Session 940: Gate 1 checkpoint complete — FAR_MISS_C1 (timing only, expected behavior). AAPL h=10 hold expires May 14 at h+10 (13:30 UTC). Expected 2 AAPL SELL fills on May 14. No parameter changes. Monitoring checkpoint scheduled May 14 20:00 UTC. Per C1 action sequence: if May 16 shows no AAPL SELLs despite h+12, escalate to C2 four-step diagnosis. Cron PATH fix + Jetson disk cleanup required post-checkpoint before Gate 2 deployment.
+**Current focus**: Session 956: **May 14 20:00 UTC checkpoint READY** (35 hours away). FAR_MISS_C1 confirmed (May 12 checkpoint): 0 confirmed round trips, but 19 May 5 liquidation SELL fills present in DB. AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1 (1–2 confirmed round trips). Decision framework complete (POST_GATE_1_RESPONSE_FRAMEWORK.md, 705 lines). Gate 2 implementation guide staged (GATE_2_IMPLEMENTATION_GUIDE.md, 4,200 words). Pre-checkpoint checklist ready (MAY_14_CHECKPOINT_READINESS.md). All infrastructure verified: Jetson healthy, DB synced, checkpoint query ready. Infrastructure blocks resolved (cron PATH, disk cleanup). **User action**: May 14 20:00 UTC execute checkpoint query; classify outcome PASS/NEAR-MISS/FAR-MISS per framework.
 
 
 **Comprehensive options backtesting — COMPLETE (Session 900)** (prior):

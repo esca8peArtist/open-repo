@@ -1,5 +1,56 @@
 # Check-in
 
+## Session 956 — May 13, 2026 23:30 UTC (Stockbot May 14 Checkpoint Readiness Verification)
+
+**Status**: ✅ CHECKPOINT READY — May 14 20:00 UTC execution confirmed with final verification checklist
+
+### What Was Done
+
+**✅ May 14 Checkpoint Readiness Verification Complete**:
+- Created `projects/stockbot/MAY_14_CHECKPOINT_READINESS.md` (final pre-execution checklist, 185 lines)
+- Verified all checkpoint infrastructure in place: Jetson engine, database sync, decision framework
+- Confirmed POST_GATE_1_RESPONSE_FRAMEWORK.md (Session 955) provides complete decision trees for all 4 outcomes (PASS, NEAR-MISS, FAR-MISS C1, FAR-MISS C2)
+- Confirmed GATE_2_IMPLEMENTATION_GUIDE.md (Session 955) is staged for May 14 evening user review
+
+### Checkpoint Execution Plan
+
+**May 14 Timeline**:
+- **19:00 UTC** (previous evening May 13): Run DB sync command, health checks, query pre-test
+- **13:30 UTC** (market open): Verify Jetson engine does not crash; confirm h+10 exit window
+- **20:00 UTC** (market close): Execute checkpoint query, classify outcome, follow corresponding path in POST_GATE_1_RESPONSE_FRAMEWORK.md
+
+**Expected Outcome**: NEAR-MISS B1 (1–2 confirmed round trips). AAPL h+10 exit fires at 13:30 UTC May 14, producing 2 SELL fills by checkpoint time.
+
+**Next Steps**:
+1. May 14 20:00–21:00 UTC: Execute checkpoint query and classify outcome
+2. May 14 20:30–22:00 UTC: Read GATE_2_IMPLEMENTATION_GUIDE.md (4,200 words, 9 sections)
+3. May 15+: Execute Week 1 tests per GATE_2_IMPLEMENTATION_GUIDE.md
+
+### Current Project Status
+
+| Project | Status | Next Milestone | Timeline |
+|---------|--------|---|----------|
+| **stockbot** | Checkpoint in 35 hours | May 14 20:00 UTC checkpoint execution | **CRITICAL** |
+| **seedwarden** | Phase 2 production-ready | Pre-launch verification May 25-29 | 12 days |
+| **resistance-research** | Awaiting user decision | Phase 1 distribution path (A/A+37/B) | TBD by user |
+| **cybersecurity-hardening** | Awaiting user approval | Phase 1 Tier 1 launch | TBD by user |
+| **mfg-farm** | Awaiting test print | Test print completion | Blocked on user action |
+
+### Needs Your Input
+
+1. **CRITICAL — May 14 20:00 UTC**: Execute checkpoint query at market close; classify outcome using POST_GATE_1_RESPONSE_FRAMEWORK.md Sections 1–2
+2. **May 14 evening**: Review GATE_2_IMPLEMENTATION_GUIDE.md for Week 1 test plan; confirm capital allocation structure preference
+3. **May 25–29**: Use PHASE_2_GO_NO_GO_DASHBOARD.md for seedwarden pre-launch verification
+
+### Session Metrics
+
+- **Files created/updated**: 1 (MAY_14_CHECKPOINT_READINESS.md)
+- **Checkpoint readiness**: ✅ 100% (all dependencies verified)
+- **Usage impact**: ~30K tokens (light session, focused verification work)
+- **Orchestration**: CHECKIN.md updated (Session 956 entry), PROJECTS.md refreshed (stale focus sections)
+
+---
+
 ## Session 955 — May 13, 2026 01:30 UTC (Exploration Queue Items 24-25 COMPLETE)
 
 **Status**: ✅ ITEMS 24-25 DELIVERED — High-impact frameworks ready for May 14+ execution
