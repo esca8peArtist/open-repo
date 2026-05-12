@@ -34,14 +34,17 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
 
-### stockbot — Jetson disk at 87% (29 GB free remaining)
-**Date blocked**: 2026-05-09
-**Context**: Jetson root filesystem is at 87% capacity (188 GB of 227 GB used, 29 GB free). Root causes: /var/log at 74 GB, Docker build cache at 22.66 GB (6 GB reclaimable). This is NOT a May 12 checkpoint blocker — 29 GB is sufficient for 3 days of trading logs. However, disk must be cleaned before Gate 2 deployment to prevent crashes due to log rotation failures or container failures.
-**What I need**: After May 12 checkpoint, clean up: (1) identify and archive old logs in /var/log (keep last 7 days), (2) run `docker builder prune` to reclaim build cache, (3) verify free space ≥50 GB before Gate 2 work.
-**Verify with**: `ssh user@jetson "df -h / && du -sh /var/log && docker system df"`
-**Resolution**:
 
 ## Resolved Archive
+
+---
+
+### stockbot — Jetson disk at 87% (29 GB free remaining)
+**Date blocked**: 2026-05-09
+**Date resolved**: 2026-05-12 (Session 941, 19:45 UTC)
+**Context**: Jetson root filesystem was reported at 87% capacity (188 GB of 227 GB used, 29 GB free) as of May 9. Root causes identified: /var/log at 74 GB, Docker build cache at 22.66 GB. Disk must be cleaned before Gate 2 deployment to prevent crashes due to log rotation failures.
+**Verification (Session 941)**: SSH verification at 19:45 UTC confirmed disk status dramatically improved: filesystem now 40% used (86 GB of 227 GB), **free space 132 GB** (well above 50 GB requirement). /var/log automatically rotated to 474M. Ran `docker builder prune -af` → 0B reclaimed (cache already clean). All three cleanup criteria satisfied.
+**Resolution**: RESOLVED — Jetson disk cleanup complete and maintenance verified. Disk free space increased from 29 GB to 132 GB (likely via automatic log rotation + prior cleanup sessions). All prerequisites for Gate 2 deployment now met. System ready for live trading with margin to spare.
 
 ---
 
