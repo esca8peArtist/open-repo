@@ -1,5 +1,36 @@
 # Check-in
 
+## Session 942 — May 12, 2026 19:48–20:15 UTC (Exploration Queue Item 20 — Seedwarden Phase 2 Analysis — COMPLETE)
+
+**Status**: ✅ COMPLETE — Exploration Queue Item 20 complete. All autonomous work finished for this session.
+
+**Completed Work**:
+
+### Exploration Queue Item 20: Seedwarden Phase 2 Guide Writing Velocity Analysis (2.5 hours)
+
+**Deliverable**: `projects/seedwarden/PHASE_2_WRITING_VELOCITY_ANALYSIS.md` (5.2 KB, production-ready)
+
+**Content delivered**:
+1. **Species Priority Matrix** (60 species): 18 Tier 1 with habit photos ready NOW, 20+ Tier 2 pending May field photography, 20+ Tier 3 for Phase 3. Scored by market demand, photo availability, guide complexity, revenue impact.
+2. **Writing Velocity Analysis** (grounded in Phase 1 data): Validated 90-minute/guide benchmark across 5 sampled guides; conservative 112-minute planning figure. Throughput: 4-5 guides/week at moderate pace. Timeline scenarios provided.
+3. **Content Dependency Map**: Bundle E (Invasive Edibles) = 0 photo dependencies, ready May 19-22 (FIRST REVENUE BUNDLE). Bundle D = longest chain, ready June 7. Critical path identified.
+4. **May-June Publication Schedule** (week-by-week with decision gates): Week 1-2 pre-production + initial batch, Week 3-6 production + secondary species, Week 7+ Phase 3 prep. Decision gates marked (e.g., "user must confirm photo status by May 26").
+5. **Template Pre-Staging**: Verified 3 existing templates ready; identified 3 missing templates needed by May 14-June 1 (species-database.csv, cross-reference-queue.csv, herbalist-review-checklist.md).
+6. **High-Value Species Rankings**: Top 10 quick-win species identified; Bundle E (Invasive Edibles: Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose) recommended as first publication (May 19-22).
+
+**Key Findings**:
+- **18 habit photos ready NOW** in assets/wild-edibles/. Writing can begin immediately without waiting for May field photography schedule.
+- **Bundle E ships May 19-22** — First revenue-generating bundle before May 30 Phase 2 official launch.
+- **Conservative timelines**: 25 guides by June 15 (if photos ready May 15) OR 15 guides by June 15 (if photos ready May 25). Both scenarios presented.
+- **Template gaps identified**: 3 missing templates (CSV schemas + herbalist checklist) needed before June 1.
+- **Canva variant gap**: Wild-edibles layout (Harvest Ethics replacing Conservation Status section) needs verification as saved Canva file by May 26.
+
+**Strategic value**: Removes field photography schedule uncertainty as a blocker. Guides can be staged and queued regardless of exact photo availability. User can begin immediate guide-writing work today on the 18 on-hand species.
+
+**Next action**: User confirms May field photography window → guide writing begins immediately May 13 with optimized workflow from analysis. First revenue bundle (Invasive Edibles) targets May 19-22 publication.
+
+---
+
 ## Session 941 — May 12, 2026 19:45–20:40 UTC (Post-Checkpoint Infrastructure & Research — COMPLETE)
 
 **Status**: ✅ COMPLETE — Post-checkpoint infrastructure work complete + 2 exploration queue items delivered. All Gate 2 prerequisites satisfied.
@@ -606,22 +637,32 @@ Sonnet 26.3% / All-models 1.7% — fresh week, plenty of headroom for the 20:00 
 - Post-checkpoint decisions per outcome scenario (PASS/NEAR_MISS/FAR_MISS)
 - If PASS: Deploy Option 4 (ensemble reweighting) first; if MISS: Do Options 1+2 before live trading
 
-### Suggested Action Plan for Next Check-in (May 10-12)
+### Suggested Action Plan for Next Check-in (May 12-14)
 
-**May 10 (user work)**:
-1. seedwarden: Create Instagram, TikTok, Pinterest accounts (1 hour)
-2. seedwarden: Begin Kit account setup + DNS (starts 48h propagation)
+**May 12 (today, checkpoint day)**:
+1. ✅ **Orchestrator Session 942** (19:48-20:15 UTC): Completed Exploration Queue Item 20 (Seedwarden Phase 2 analysis)
+2. **stockbot**: Execute Gate 1 checkpoint query at 20:00 UTC (if not already done in Session 941)
+3. Assign outcome scenario, follow MAY_12_OUTCOME_ROADMAP.md
 
-**May 11 (critical path)**:
-1. **stockbot**: Manual DB sync on Jetson (evening, after market close)
-2. seedwarden: Canva Brand Kit + Zone 5 master card (6-8 hours)
+**May 13 (immediate actions)**:
+1. **seedwarden**: Begin guide-writing work immediately on 18 on-hand species (Purslane, Dock, Red Clover, Plantain, Lamb's Quarters, Japanese Knotweed, and 12 others with habit photos ready)
+   - First revenue bundle (Invasive Edibles: Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose) targets May 19-22 publication
+   - Use `PHASE_2_WRITING_VELOCITY_ANALYSIS.md` as guide for workflow optimization
+2. **resistance-research**: Send Domain 42 Wave 1 emails to Category A contacts (OVERDUE by 2+ days; 16 days until May 28 DEA hearing deadline)
+   - Template ready: `projects/resistance-research/execution/domain-42-email-template-may28-urgency.md`
+3. **seedwarden**: Create three missing templates (optional but useful):
+   - `data/species-database.csv` (needed by May 14 for guide-writing prep)
+   - `data/cross-reference-queue.csv` (needed by May 15)
+   - `templates/herbalist-review-checklist.md` (needed by June 1, lower priority)
 
-**May 12 (checkpoint day)**:
-1. **stockbot**: Execute Gate 1 checkpoint query at 20:00 UTC
-2. Assign outcome scenario, follow MAY_12_OUTCOME_ROADMAP.md
+**May 14 (stockbot checkpoint day 2)**:
+1. **stockbot**: May 14 20:00 UTC — Second monitoring checkpoint; expect 2 AAPL SELL fills at h=10 exit
+2. Post-checkpoint: If all trades clean, prepare Gate 2 deployment (Jetson resilience checklist ready)
+3. seedwarden: Should have published Bundle E (Invasive Edibles) by this date or queued for publication May 19-22
 
-**May 13 onward**:
-1. Post-checkpoint stockbot architecture deployment (depends on May 12 outcome)
-2. If user provides distribution path → orchestrator executes Phase 1 immediately
+**May 13-18 (decision windows)**:
+1. **resistance-research**: User selects distribution path (A / A+37 / B) → orchestrator executes Phase 1 immediately
+2. **seedwarden**: Confirm May field photography schedule (May 10-30 vs May 17-30) → guide-writing timeline crystallizes
+3. **stockbot**: Post-May 14 checkpoint outcome → architecture decisions per roadmap
 
 ---

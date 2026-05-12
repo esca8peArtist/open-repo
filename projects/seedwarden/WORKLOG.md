@@ -4,6 +4,25 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 20: Phase 2 Writing Velocity Analysis — 2026-05-12
+
+**Task**: Exploration Queue Item 20 — Phase 2 Guide Writing Workflow Prep. Deepened the Phase 2 guide writing pipeline to enable guides to be staged and ready independent of exact photo timing.
+
+**File created**: `projects/seedwarden/PHASE_2_WRITING_VELOCITY_ANALYSIS.md`
+
+**Summary**:
+- **Species Priority Matrix**: 50 Tier 1 species scored by market demand, photo availability, guide complexity, and revenue per bundle. 18 species have habit photos on hand in `assets/wild-edibles/` and can enter writing immediately. 20 species have field sessions May 10–30 scheduled. 12+ Wikimedia sources identified. 12 Tier 2 species deferred to June–August. 8 Tier 3 medicinal species cross-reference-only (Phase 3 track).
+- **Writing Velocity Analysis**: Phase 1 guide samples measured: Wild Edibles Quick Reference (2,579 words / 18 species = 143 words/entry), Native Plants Regional Guide (59,843 words / ~35 entries = 1,710 words/entry), Seed Saving (7,511 words), Harvest Preservation (9,354 words), Food Sovereignty (6,002 words). Phase 2 target: 450–600 words/entry. Benchmark: 90 min/guide per blueprint, validated by word-rate analysis. Conservative rate (25% padding): 112 min/guide. Projected: 3–4 guides/week (conservative), 5 guides/week (moderate), 7–8 guides/week (aggressive). Bundle creation: 2 hours per bundle listing.
+- **Timeline projections**: Photos May 15 → 25 guides by June 15; photos May 25 → 15 guides by June 15. Writing can begin today on 18 on-hand species regardless of photo schedule.
+- **Content Dependency Map**: 6 bundles mapped with full dependency chains. Bundle E (Invasive Edibles) has zero field photography dependencies — earliest go-live May 19–22. Critical path runs through Bundle D (Water and Wetland): Ostrich Fern two-stage photo from May 13–14 → go-live June 7. Four decision gates identified with dates and conditions.
+- **May–June Publication Schedule**: Week-by-week task list May 12 through June 15+, including all decision gate dates.
+- **Template Verification**: 7 templates assessed. 3 READY (guide structure, email sequence, social structure). 1 PARTIALLY READY (Canva wild edibles variant — confirm saved file by May 26). 3 MISSING (herbalist review checklist, species database CSV, cross-reference queue CSV). Action items documented with deadlines.
+- **High-Value Species Rankings**: Top 10 species by demand + photo readiness + write time. Top 3: Purslane, Chickweed, Dandelion (all 90 min, photos on hand). Quick-win bundles: Invasive Edibles (May 19–22), Wild Greens of Spring partial (May 17–20). Deferred: Camas (safety-critical, 2.5 hrs), Pawpaw (fruit photo September), Women's Health Herbs (Phase 3, September).
+
+**Sources read**: PHASE_2_GUIDE_CONTENT_BLUEPRINT.md, products/wild-edibles-quick-reference.md (18-species, 2,579 words measured), products/native-plants-regional-guide.md (59,843 words measured), products/seed-saving-field-manual.md (7,511 words), products/harvest-preservation-field-manual.md (9,354 words), products/food-sovereignty-starter-guide.md (6,002 words), phase-3-medicinal-herbs-content-outline.md, PHASE_2_BUNDLE_STRATEGY.md, docs/phase-2-operations/phase-2-email-automation-sequence.md, phase-2-canva-workflow.md, templates/welcome-sequence-outline.md, WORKLOG.md (prior entries), asset inventory (assets/wild-edibles/ — 18 files confirmed)
+
+---
+
 ## Item 15 (expansion): Phase 2 Guide Content Blueprint — Section 7 added — 2026-05-09
 
 **Task**: Expand PHASE_2_GUIDE_CONTENT_BLUEPRINT.md to fulfill the full Exploration Queue Item 15 deliverable specification. The original file (created 2026-05-09, same session) covered 6 sections but was missing the explicit Content Integration Points section required by the spec.

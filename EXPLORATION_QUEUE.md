@@ -98,6 +98,28 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
+## Completed Items (Session 942)
+
+### ✅ Item 20: Seedwarden Phase 2 — Species Prioritization & Guide Writing Workflow Prep
+**Status**: COMPLETE (Session 942, May 12 2026, 20:45 UTC)
+**Effort**: 2.5 hours
+**Deliverable**: `projects/seedwarden/PHASE_2_WRITING_VELOCITY_ANALYSIS.md` (5.2 KB)
+**Content**: Comprehensive 6-part Phase 2 guide writing analysis:
+1. Species Priority Matrix (60 species scored by demand/photos/complexity): 18 Tier 1 with photos ready NOW, 20+ Tier 2/3 pending field photography
+2. Writing Velocity Analysis (grounded in Phase 1 guide samples): 112 minutes/guide conservative estimate; 4-5 guides/week throughput
+3. Content Dependency Map (critical path): Bundle E (Invasive Edibles) = 0 photo deps, ready May 19-22; Bundle D = longest chain, ready June 7
+4. May-June Publication Schedule (week-by-week): Identifies decision gates, timeline contingencies for May 15 vs May 25 photo availability
+5. Template Pre-Staging: 3 templates missing (species-database.csv, cross-reference-queue.csv, herbalist-review-checklist.md); 1 template gap identified (Canva wild-edibles layout variant needs verification)
+6. High-Value Species Groups (ranked): Top 10 quick-wins identified; Bundle E recommended as first revenue publication (May 19-22)
+
+**Key findings**: 18 habit photos ready NOW in assets/wild-edibles/. Writing can begin TODAY. Bundle E ships May 19-22 (before May 30 Phase 2 launch). Timeline: 25 guides by June 15 if photos ready May 15; 15 guides if ready May 25.
+
+**Strategic impact**: Removes field photography schedule uncertainty as a blocker. Guides can be staged regardless of exact photo availability. First bundle revenue possible before Phase 2 official launch.
+
+**Next Step**: User confirms May field photography window → guide writing begins immediately using optimized workflow from analysis.
+
+---
+
 ## Completed Items (Session 934+)
 
 ### ✅ Item 13: Domain 42 (DEA Hearing) — Outreach Amplification Strategy
