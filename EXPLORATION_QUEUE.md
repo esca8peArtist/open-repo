@@ -61,6 +61,25 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
+## Completed Items (Session 941)
+
+### ✅ Item 19: Domain 42 (DEA Hearing) — Outreach Amplification Strategy
+**Status**: COMPLETE (Session 941, May 12 2026, 20:10 UTC)
+**Effort**: 1.5 hours
+**Deliverable**: `projects/resistance-research/DOMAIN_42_AMPLIFICATION_STRATEGY.md` (5.8 KB)
+**Content**: Comprehensive 5-part post-Phase-1-distribution amplification strategy:
+1. Media calendar (3 weeks of journalist targeting by sector + pitch angles)
+2. Sector-specific messaging variants (drug policy, civil rights, academic, state AG)
+3. Organization preparation checklists (internal briefing, testimony development, docket filing)
+4. Post-May-28 impact assessment framework (metrics, decision trees, contingency triggers)
+5. Contingency plans (late Phase 1 launch, low media pickup, organization capacity limits)
+
+**Key findings**: Domain 42 amplification is path-independent (works for Path A, A+37, or B distributions). Strategy provides pre-built templates for all 4 organization categories, media targeting framework (policy→drug policy→civil rights weekly progression), and contingency triggers for low-participation scenarios. Actionable immediately upon Phase 1 distribution launch.
+
+**Strategic impact**: May 28 DEA hearing (16 days away) is critical inflection point for drug policy democratic design advocacy. Phase 1 organizations will need detailed amplification infrastructure to maximize participation notice filings. This strategy bundles everything in one reference document.
+
+---
+
 ## Completed Items (Session 934+)
 
 ### ✅ Item 13: Domain 42 (DEA Hearing) — Outreach Amplification Strategy
@@ -121,9 +140,43 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
-## Active Queue (Current Session 937+)
+## Active Queue (Current Session 941+)
 
-[Empty — all top-priority items complete. Next queue items TBD based on post-May-12 checkpoint outcomes.]
+### ⏳ Item 18: Jetson Resilience Assessment — POST-GATE-1 READY
+**Status**: QUEUED (Session 941, May 12 2026) — NOW ACTIONABLE post-checkpoint
+**Impact**: HIGH — Jetson disk now healthy (132GB free); need to assess network stability, power cycling recovery, container restart automation
+**Goal**: Comprehensive Jetson system evaluation for 24/7 trading engine durability (gate 2 prerequisite)
+**Feasibility**: HIGH — SSH access verified, disk/cron issues already fixed
+**Effort estimate**: 2-3 hours
+**Deliverable**: `projects/stockbot/JETSON_RESILIENCE_ASSESSMENT.md` (health check procedures, failure recovery scripts, monitoring setup, redundancy recommendations)
+**Why now**: Post-checkpoint infrastructure work complete; Jetson is accessible and clean. Gate 2 deployment depends on resilience assurance.
+**Next Step**: If session time available after May 14 monitoring setup, execute immediately.
+
+---
+
+### ✅ Item 19: Domain 42 (DEA Hearing) — Outreach Amplification Strategy  
+**Status**: COMPLETE (Session 941, May 12 2026, 20:10 UTC)
+**Impact**: HIGH — May 28 DEA hearing (16 days away); resistance-research Phase 1 launch imminent
+**Goal**: Prepare comprehensive post-distribution outreach amplification for Phase 1 organizations, sector-specific messaging, social media calendar, media follow-up
+**Feasibility**: HIGH — execution infrastructure ready from `projects/resistance-research/execution/domain-42-*` files
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/resistance-research/DOMAIN_42_AMPLIFICATION_STRATEGY.md` (media calendar, sector messaging, journalist briefing, policy tier-2 list, post-May-28 impact assessment)
+**Why now**: 19 days to deadline; Phase 1 distribution launching in next 1-2 weeks means organizations need detailed talking points, media contacts, follow-up coordination by mid-May
+**Blocker**: User distribution path decision (A / A+37 / B) — but this can be path-agnostic preparation
+**Next Step**: Execute after user selects distribution path, OR start now to have ready (path-neutral content covers all scenarios)
+
+---
+
+### ⏳ Item 20: Seedwarden Phase 2 — Species Prioritization & Guide Writing Workflow Prep
+**Status**: QUEUED (Session 941, May 12 2026)
+**Impact**: MEDIUM — May 30 Phase 2 launch (18 days); dependent on May field photography schedule
+**Goal**: Deepen the Phase 2 guide writing pipeline from existing blueprint (`PHASE_2_GUIDE_CONTENT_BLUEPRINT.md`): finalize species priority matrix (Tier 1 vs Tier 2), estimate guide writing velocity, pre-stage template collection, identify highest-value species groups for May/June publishing
+**Feasibility**: HIGH — content blueprint complete, species database exists, writing templates ready
+**Effort estimate**: 2.5-3 hours
+**Deliverable**: `projects/seedwarden/PHASE_2_WRITING_VELOCITY_ANALYSIS.md` (60 species prioritized, writing pipeline optimized, May-June publication schedule, content dependencies mapped)
+**Why now**: 18 days to Phase 2 launch; current uncertainty is whether field photography window is May 10-30 or May 17-30. Writing velocity analysis removes that blocker — guides can be staged and ready regardless of photo timing
+**Blocker**: User confirmation of May field photography window (needed for publishing timeline)
+**Next Step**: Execute analysis now (can be done independently); when user confirms photo schedule, guide writing begins immediately with optimized workflow
 
 ---
 

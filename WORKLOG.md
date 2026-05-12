@@ -4,6 +4,29 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-12 20:10 — Session 941 — Exploration Queue Item 19 (Resistance-Research) — COMPLETE
+
+**Time**: 20:10–20:20 UTC (exploration queue work)
+**Item**: Domain 42 (DEA Hearing) — Outreach Amplification Strategy
+**Deliverable**: `projects/resistance-research/DOMAIN_42_AMPLIFICATION_STRATEGY.md` (5.8 KB)
+
+### Summary
+
+Created comprehensive post-Phase-1-distribution amplification strategy for Domain 42 research ahead of May 28 DEA hearing participation deadline (16 days away). Strategy is path-independent (works for all Phase 1 distribution paths: A, A+37, B).
+
+**Content sections**:
+1. **Media calendar** (May 12-28): 3-week journalist targeting sequence (policy press → drug policy specialized press → civil rights/voting rights press); pitch angles and contact strategy per week
+2. **Sector-specific messaging** (4 categories): Drug policy orgs (regulatory capture framing), civil rights orgs (disenfranchisement feedback loop), state AGs (federalism framing), academic experts (administrative law framing)
+3. **Organization preparation checklists**: Internal briefing templates (2-3 hrs), hearing participation decisions (May 15), testimony development (4-10 hrs), social media calendar (May 19-28), docket filing instructions (step-by-step), internal delegation assignments
+4. **Post-May-28 impact assessment framework**: Primary metrics (participation notices filed by sector, media coverage volume, organizational engagement), decision trees for 3 scenarios (High/Moderate/Low impact), post-hearing impact analysis (July 1+)
+5. **Contingency plans**: Phase 1 late launch (accelerated outreach + extension requests), minimal media pickup (emergency Gist publication + direct outreach), capacity constraints (template participation notices + testimony outlines)
+
+**Strategic value**: May 28 is hard deadline for DEA hearing participation. Phase 1 organizations need detailed, pre-built amplification infrastructure. This document provides it in one place, enabling immediate execution upon Phase 1 distribution launch (whenever user decides on path).
+
+**Next action**: Ready for Phase 1 distribution teams to use immediately; no further work required until June 1 post-May-28 impact assessment.
+
+---
+
 ## 2026-05-12 19:45 — Session 941 — Stockbot — Jetson Infrastructure Maintenance
 
 **Time**: 19:45–20:00 UTC (post-checkpoint, 4 hours post-checkpoint completion)
