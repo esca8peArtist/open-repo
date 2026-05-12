@@ -33761,3 +33761,111 @@ Pick up after 20:00 UTC checkpoint to classify outcome, archive resolved DB sync
 ### Next Session
 
 May 14: Execute checkpoint query at 20:00 UTC, classify outcome (PASS/NEAR-MISS/FAR-MISS C1/FAR-MISS C2), follow roadmap. Expected: 2 AAPL SELL fills (lgbm_ho + ridge_wf sessions) at h=10 trigger time.
+
+---
+
+## Session 952 (2026-05-12, 23:30 UTC) — EXPLORATION QUEUE ITEMS 21-22 COMPLETE
+
+### Orientation & Status Assessment
+
+**State**: All projects blocked on user actions, external dependencies, or scheduled events. No new inbox items. No active orchestrator blocks. Three queued Exploration Queue items identified (Items 21-23).
+
+**Priority Assessment**:
+- stockbot: May 14 checkpoint scheduled in 2 days (not actionable until May 14)
+- resistance-research: Blocked on user distribution path decision (A / A+37 / B)
+- cybersecurity-hardening: Phase 1 ready for user execution; no orchestrator work available
+- seedwarden: Phase 2 target May 30; Track A blocked on user action, Track B ready for user execution
+- mfg-farm: Blocked on user test print completion
+- open-repo: PR #1 awaiting external review/merge
+
+**Decision**: Execute two high-impact Exploration Queue items (21 and 22) in parallel. Both are time-critical and unblocked by user actions.
+
+### ✅ Work Completed — Item 21: Seedwarden Bundle E Pre-Publication Acceleration Pack
+
+**Deliverable**: `projects/seedwarden/BUNDLE_E_PUBLICATION_PACKAGE.md` (720 lines, 27 KB)
+
+**Content**: Complete production-ready publication playbook for Invasive Edibles Bundle (Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose). Includes:
+- Etsy listing copy (300-word hero description, 13 SEO tags, pricing strategy $24.99 launch / $28 regular)
+- 5-email sequence (May 19-28 timeline) with A/B subject variants and behavioral segmentation hooks
+- 10-post social media calendar (TikTok/Instagram/Pinterest with platform-specific specs, hashtag research, optimal posting times)
+- Paid ad copy: 2 Facebook variants (problem-first, income angle) + 2 Google Search variants with UTM templates
+- Press release with 10-15 media outlet targeting (4-tier distribution strategy)
+- Implementation checklist (May 12-19 timeline from guide writing to launch)
+- Risk mitigation matrix (7 risks with mitigation)
+- Success metrics and conversion funnel tracking setup
+
+**Key Insight** (from PHASE_2_WRITING_VELOCITY_ANALYSIS.md): All 5 guides have zero photo dependencies. Wikimedia sources confirmed for all species. Timeline: May 12-14 guide writing (15 hours estimated) + May 14-18 platform setup (5 hours) enables simultaneous channel launch May 19 (email, social, ads, press).
+
+**Financial Projections**:
+- Break-even: 17 pre-orders at $24.99 = ~$425 revenue (minimal digital COGS)
+- Conservative target: 40-50 pre-orders = $1,000-1,500 revenue first week
+- Seasonal urgency: Garlic Mustard and Japanese Knotweed shoots available exactly now (May 19-22 harvest window)
+
+**Strategic Impact**: 
+- First revenue-generating bundle before official Phase 2 launch May 30
+- Validates entire publication system (email, social, ads, press distribution)
+- Rare market niche (invasive edibles) with zero competition in foraging guide space
+- Pre-Phase-2 launch generates credibility, case study for Phase 2 messaging (proven sales funnel)
+
+**Next**: User confirms May 19 launch → guide writing begins May 13-14 using templates from PHASE_2_GUIDE_CONTENT_BLUEPRINT.md
+
+### ✅ Work Completed — Item 22: Stockbot Post-Gate-1 Outcome Response Framework
+
+**Deliverable**: `projects/stockbot/POST_GATE_1_RESPONSE_FRAMEWORK.md` (705 lines, 30 KB)
+
+**Content**: Production-ready decision framework for May 14 20:00 UTC checkpoint outcome classification and response. Includes:
+- Outcome classification logic: PASS / NEAR-MISS / FAR-MISS C1 / FAR-MISS C2 with expected metric ranges and interpretation
+- Four outcome decision paths (A/B/C/D) with SQL queries, action sequences, and conditional next steps
+- Gate 2 architecture options ranked by likelihood per outcome (from POST_GATE_1_ARCHITECTURE_OPTIONS.md)
+- C2 four-step diagnosis: (1) Jetson connectivity checks with restart procedures, (2) Signal generation log inspection with exception handling, (3) Database/Alpaca sync verification with gap remediation, (4) VIX regime analysis (ultra-low vol vs normal range)
+- Capital redeployment tables by outcome ($20K-$80K deployment sequences)
+- WORKLOG.md entry template for rapid post-checkpoint documentation
+- Quick-reference ASCII decision tree for time-pressure execution
+
+**Execution Protocol**:
+- May 14 19:00 UTC: Review Sections 1-3
+- May 14 20:00 UTC: Run checkpoint SQL query; record 8 metric values
+- May 14 20:05 UTC: Navigate matching outcome path (A/B/C/D)
+- May 14 20:30 UTC: Execute outcome-specific actions (typically 30-60 min depending on outcome)
+
+**Key Insight**: Self-contained framework requires no consultation of other documents during execution. Grounded in May 12 FAR_MISS_C1 confirmation (from BLOCKED.md: h-day timing entry expected, not architecture failure). Exhaustive diagnosis paths for all four outcomes with specific recovery levers per outcome.
+
+**Strategic Impact**:
+- Removes post-checkpoint latency. Enables immediate classification within 5-30 min of checkpoint result
+- Supports rapid Gate 1→Gate 2 transition if PASS outcome
+- De-risks decision-making under time pressure (checkpoint at 20:00 UTC critical for trading window decisions)
+- Options activation gate (if PASS) can execute same evening vs deferring to May 15
+
+**Next**: User executes May 14 20:00 UTC checkpoint → applies framework immediately to classify outcome and execute next steps
+
+### Exploration Queue Status Update
+
+**Items Completed (Session 952)**: 
+- Item 21: Seedwarden Bundle E (2.5-3 hours)
+- Item 22: Stockbot Post-Gate-1 Response Framework (2-3 hours)
+- Total: ~5-6 hours equivalent effort
+
+**Items Remaining Queued**:
+- Item 23: mfg-farm Post-Test-Print Supplier Negotiation (blocked on user test print action; no orchestrator blockers)
+
+### Files Modified
+
+- `projects/stockbot/POST_GATE_1_RESPONSE_FRAMEWORK.md` — NEW (705 lines, 30 KB)
+- `projects/seedwarden/BUNDLE_E_PUBLICATION_PACKAGE.md` — NEW (720 lines, 27 KB)
+- `EXPLORATION_QUEUE.md` — Updated: Items 21-22 moved from Queued to Completed (Session 952)
+
+### Session Summary
+
+Two high-impact Exploration Queue items completed in parallel. Both remove critical latency from upcoming user deadlines:
+
+**Item 22 (Stockbot)**: May 14 checkpoint framework eliminates decision latency. User runs checkpoint at 20:00 UTC and applies framework for immediate outcome classification (5-30 min decision loop). Enables Gate 1→Gate 2 transition same evening if PASS.
+
+**Item 21 (Seedwarden)**: May 19-22 launch playbook enables pre-Phase-2 revenue validation. All materials are production-ready (copy-paste capable). Guides are the only remaining task (May 13-14, 15 hours estimated writing). Everything else is staged and ready.
+
+Both frameworks are self-contained and require no additional research or context switching during execution.
+
+**Next Session Priorities**:
+1. May 13-14: Monitor Seedwarden guide writing (if user approved Bundle E launch)
+2. May 14 19:00 UTC: Briefing on stockbot framework sections 1-3
+3. May 14 20:00 UTC: Execute checkpoint and apply response framework
+4. May 19 09:00 UTC: Bundle E launch coordination (all materials ready)

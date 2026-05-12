@@ -1,5 +1,57 @@
 # Check-in
 
+## Session 952 — May 12, 2026 23:30 UTC (Exploration Queue Items 21-22: May 14 Checkpoint Framework + May 19 Revenue Launch)
+
+**Status**: ✅✅ TWO CRITICAL EXPLORATION ITEMS COMPLETE — Ready for execution on May 14 and May 19 deadlines
+
+### What Was Done
+
+**✅ Exploration Queue Item 22 (Stockbot)**: Created `POST_GATE_1_RESPONSE_FRAMEWORK.md` (705 lines, 30 KB)
+- **Purpose**: Decision framework for May 14 20:00 UTC checkpoint outcome (PASS/NEAR-MISS/FAR-MISS C1/FAR-MISS C2)
+- **Content**: Outcome classification logic, four outcome decision paths with SQL queries, Gate 2 architecture options ranked by likelihood, C2 four-step diagnosis with recovery levers, capital redeployment tables, quick-reference decision tree
+- **Execution Protocol**: May 14 19:00 UTC review; 20:00 UTC run query; 20:05 UTC record values; 20:30 UTC execute outcome path
+- **Status**: READY for May 14 20:00 UTC execution; no additional research needed
+
+**✅ Exploration Queue Item 21 (Seedwarden)**: Created `BUNDLE_E_PUBLICATION_PACKAGE.md` (720 lines, 27 KB)
+- **Purpose**: Complete publication playbook for Invasive Edibles Bundle (May 19-22 pre-Phase-2 launch)
+- **Content**: Etsy listing copy, 5-email sequence (A/B variants), 10-post social calendar, paid ads, press release, tracking setup, implementation checklist, risk mitigation
+- **Timeline**: May 12-14 guide writing (15 hours) + May 14-18 platform setup (5 hours) → May 19 launch all channels simultaneously
+- **Revenue Projection**: Break-even 17 pre-orders; conservative target 40-50 pre-orders = $1,000-1,500 first week
+- **Status**: READY for user approval; all materials copy-paste capable; requires only guide writing and platform setup to execute
+
+### Exploration Items Completed (Session 952)
+
+| Item | Project | Deliverable | Status | Deadline | Impact |
+|------|---------|-------------|--------|----------|--------|
+| **22** | stockbot | POST_GATE_1_RESPONSE_FRAMEWORK.md | ✅ READY | May 14 20:00 UTC | Eliminates post-checkpoint latency; enables Gate 1→Gate 2 transition same evening |
+| **21** | seedwarden | BUNDLE_E_PUBLICATION_PACKAGE.md | ✅ READY | May 19-22 | Validates publication system pre-Phase-2 launch; revenue generation 7 days before official launch |
+
+### Current Project Blockers
+
+| Project | Status | Blocker | User Action Needed |
+|---------|--------|---------|-------------------|
+| **stockbot** | Checkpoint ready | May 14 monitoring | Execute checkpoint at 20:00 UTC, apply response framework |
+| **resistance-research** | Phase 1 ready | Distribution path | Select path A / A+37 / B (affects May 28 DEA hearing outreach) |
+| **seedwarden** | Bundle E ready | Launch approval | Approve May 19-22 launch (all materials ready) |
+| **cybersecurity-hardening** | Phase 1 ready | User approval | Approve Phase 1 execution + Day 1 send date |
+| **mfg-farm** | Pre-launch ready | Test print result | Execute test print, evaluate snap-arm FDM_TOLERANCE |
+
+### Session Metrics
+
+- **Exploration items completed**: 2/3 queued (Item 23 blocked on mfg-farm test print)
+- **Deliverables created**: 2 production-ready frameworks (1,425 lines, 57 KB combined)
+- **Implementation complexity**: Item 22 is standalone (no user action); Item 21 requires 20 hours execution (guide writing + platform setup)
+- **Time-critical deadlines**: May 14 (2 days), May 19 (7 days)
+- **Strategic impact**: Removed friction from two high-impact upcoming events
+
+### Usage & Budget
+
+- **Sonnet**: 67.7% (882K/1.3M tokens, reset in ~146 hours)
+- **All-models**: 9.0% (1.8M/20.4M tokens)
+- **Session tokens**: ~190K (parallel agent execution, two frameworks)
+
+---
+
 ## Session 950 — May 13, 2026 01:45 UTC (Exploration Queue Items 22 + 21: Checkpoint & Revenue Launch Infrastructure)
 
 **Status**: ✅✅ TWO EXPLORATION ITEMS COMPLETE — Checkpoint and revenue infrastructure ready for deployment
