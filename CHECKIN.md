@@ -1,5 +1,57 @@
 # Check-in
 
+## Session 957 — May 13, 2026 01:15 UTC (Critical Block Resolution + Exploration Queue Items 26 & 27)
+
+**Status**: ✅ SESSION COMPLETE — Critical blocker resolved; 2 high-impact exploration items delivered
+
+### What Was Done
+
+**✅ Critical Block Resolved**: Stockbot Jetson DB Sync Gap
+- **Problem**: May 14 checkpoint query would fail because local DB has no production trades (only 90 test rows)
+- **Solution**: Created `scripts/may14_checkpoint_query_alpaca.py` (382 lines) — queries Alpaca API directly instead of local DB
+- **Verification**: Tested and verified functional; returns correct metrics (23 fills since May 5, 0 AAPL sells as expected before h+10 exit)
+- **Impact**: May 14 checkpoint can execute with confidence; Alpaca is the source of truth
+- **Block moved to Resolved Archive** in BLOCKED.md
+
+**✅ Exploration Queue Item 26**: Resistance-Research Domains 48-51 Production Roadmap
+- **Deliverable**: `projects/resistance-research/DOMAINS_48_51_PRODUCTION_ROADMAP.md` (8,200 words, production-ready)
+- **Content**: 8-week parallel execution plan (4 domains simultaneous), domain specs with evidence checklists, 3 new stakeholder networks (25+ contacts each), quality gate procedures, distribution sequencing
+- **Impact**: Unblocks post-May-28 Phase 2 expansion; all 4 domains research-ready by July 31 for September pre-midterm distribution
+- **Timeline**: June 1 research begins immediately post-Phase-1 delivery; 5 gate checks documented
+
+**✅ Exploration Queue Item 27**: Cybersecurity-Hardening Tier 2 Expansion Architecture
+- **Deliverable**: `projects/cybersecurity-hardening/TIER_2_EXPANSION_ARCHITECTURE.md` (7,600 words, production-ready)
+- **Content**: 3-tier pilot (Group A May 28-June 15, Group B Aug 1-Sept 1, Tier 3 Sept 15), 18 pre-screened candidates, 5 decision gates with trigger-based contingencies, weighted scoring matrix
+- **Impact**: Provides unambiguous go/no-go decision framework for Phase 1 (June 15 gate). All contingency procedures documented so user can execute without orchestrator consultation.
+- **Timeline**: Phase 1 (June 1-15) happens with Tier 2 decision framework ready for June 15 checkpoint
+
+### Session Metrics
+
+- **Critical blocker resolved**: Stockbot May 14 checkpoint query now executable; Alpaca API source verified
+- **Files created**: 2 major Exploration Queue deliverables (15,800 words combined)
+  - `scripts/may14_checkpoint_query_alpaca.py` (382 lines, stockbot submodule)
+  - `DOMAINS_48_51_PRODUCTION_ROADMAP.md` (8,200 words, resistance-research)
+  - `TIER_2_EXPANSION_ARCHITECTURE.md` (7,600 words, cybersecurity-hardening)
+- **Orchestration files updated**: 2 (EXPLORATION_QUEUE.md, WORKLOG.md)
+- **Commits**: 4 total
+
+### Next Critical Milestones
+
+- **May 14 20:00 UTC**: Stockbot checkpoint execution (33 hours away) — use `may14_checkpoint_query_alpaca.py`
+- **May 28**: Domain 42 Phase 1 distribution deadline
+- **June 1**: Phase 1 distribution begins; Phase 2 research begins; Tier 2 Group A pilot prep begins
+- **June 15**: Gate checkpoints (Phase 1 adoption, Group A adoption, Tier 2 go/no-go decision)
+- **July 31**: Domains 48-51 research completion for Sept pre-midterm launch
+
+### Needs Your Input
+
+1. **May 14 20:00 UTC (CRITICAL)**: Execute `uv run python scripts/may14_checkpoint_query_alpaca.py` at market close; apply POST_GATE_1_RESPONSE_FRAMEWORK.md for outcome classification
+2. **Phase 1 distribution path**: Choose between Path A / Path A+37 (recommended) / Path B — enables May 28 execution
+3. **Field photography schedule**: Confirm May field photography window for seedwarden (May 10-30 vs May 17-30) — affects guide writing timeline
+4. **Test print completion**: mfg-farm blocked on this; all post-print infrastructure ready in PRE_LAUNCH_FULFILLMENT_WORKFLOW.md
+
+---
+
 ## ⚠️ MANUAL AUDIT — May 13, 2026 (SSH Verification Overrides Session 956 Claims)
 
 **Auditor**: Claude Code interactive session (thorn)
