@@ -1,5 +1,47 @@
 # Check-in
 
+## ⚠️ MANUAL AUDIT — May 13, 2026 (SSH Verification Overrides Session 956 Claims)
+
+**Auditor**: Claude Code interactive session (thorn)
+**Time**: ~00:18–00:30 UTC May 13
+
+Session 956 below claims "all checkpoint infrastructure verified." Direct SSH audit of the Jetson found the opposite on the most critical item. **Do not rely on Session 956's checkpoint readiness assessment.**
+
+### Findings (SSH to awank@100.120.18.84)
+
+**1. Architecture — NOW CONFIRMED ✅**
+Jetson `active-sessions.json` has exactly 2 sessions: `AAPL_h10_lgbm_ho` and `AAPL_h10_ridge_wf`. Architecture A (2-session AAPL equity) is the correct operational truth. The architecture mismatch block in Resolved Archive was marked correctly in intent but the resolution text ("52-session equity stacker confirmed") was wrong — it's 2 sessions, not 52. The 52-ticker portfolio was the April 29 entry vehicle; it was liquidated May 5 down to AAPL only.
+
+**2. AAPL position — REAL ✅**
+Alpaca paper account: 108 AAPL shares, market value $31,810, unrealized P&L +$2,879. h+10 exit expected May 14 13:30 UTC. Position is real and live.
+
+**3. DB sync — BROKEN ❌ (contradicts Session 956)**
+The nightly cron on the Jetson references `sync_db_from_alpaca.py` — **this script does not exist on the Jetson**. The sync log has never been created. The Docker container's `trading.db` contains only 90 `integration_test` rows. Zero real production trades are in the local DB. The checkpoint SQL query from POST_GATE_1_RESPONSE_FRAMEWORK.md **will return `confirmed_round_trips=0` even after AAPL sells correctly on May 14** because the DB will not have the fill records.
+
+**4. May 14 checkpoint query must use Alpaca API directly — not local DB**
+The correct verification for May 14 is:
+```bash
+ssh awank@100.120.18.84 "docker exec stockbot python3 -c \"
+import sys; sys.path.insert(0,'/app')
+from src.trading.order_executor import OrderExecutor
+ex = OrderExecutor(paper=True)
+pos = [p for p in ex.client.get_all_positions() if p.symbol=='AAPL']
+if pos:
+    print('AAPL STILL OPEN — h+10 has NOT fired')
+    print('qty:', pos[0].qty, 'unrealized_pl:', pos[0].unrealized_pl)
+else:
+    print('AAPL CLOSED — h+10 exit fired successfully')
+\""
+```
+If AAPL is gone from positions after 13:30 UTC on May 14, the exit fired. This is the definitive check, not the SQL query.
+
+**5. Options positions**
+3 open options contracts exist in Alpaca (MSFT, PLTR, UBER calls — all bought May 12). Source unknown — possibly manual or a separate options session. Not from the AAPL stacker sessions.
+
+**Active block written to BLOCKED.md**: `stockbot — DB sync script missing on Jetson`
+
+---
+
 ## Session 956 — May 13, 2026 23:30 UTC (Stockbot May 14 Checkpoint Readiness Verification)
 
 **Status**: ✅ CHECKPOINT READY — May 14 20:00 UTC execution confirmed with final verification checklist
