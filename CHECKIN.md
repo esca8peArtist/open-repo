@@ -1,5 +1,59 @@
 # Check-in
 
+## Session 955 — May 13, 2026 01:30 UTC (Exploration Queue Items 24-25 COMPLETE)
+
+**Status**: ✅ ITEMS 24-25 DELIVERED — High-impact frameworks ready for May 14+ execution
+
+### What Was Done
+
+**✅ Exploration Queue Item 24: Stockbot Gate 2 Implementation Guide** (4,200 words, 9 sections)
+- **Scope**: 4-week phased test plan (May 15–June 9), code entry points with exact line numbers (55+ locations), system readiness checklist, rollback procedures, success criteria, risk management framework
+- **Key Deliverables**: Week 1 AAPL verification, Week 2 10-ticker expansion, Week 3 52-ticker stacker, Week 4 risk escalation tests + formal checkpoint
+- **Decision Framework**: 4 explicit user decisions (when to start, 10-ticker vs 4-ticker initial scope, capital allocation structure, P&L reinvestment approach) with options and tradeoffs
+- **Strategic Impact**: Self-contained guide; user reads May 14 evening post-checkpoint, executes Week 1 tests May 15 without external consultation
+- **Status**: READY for May 14 20:00 UTC checkpoint → Item 22 (POST_GATE_1_RESPONSE_FRAMEWORK) determines Gate 2 path → Item 24 executes Week 1 May 15
+
+**✅ Exploration Queue Item 25: Seedwarden Phase 2 Go/No-Go Dashboard** (3,800 words, 8 sections)
+- **Scope**: 5 binary go/no-go criteria (Content/Assets/Marketing/Sales/Performance), daily pre-launch checklist (May 28-30), contingency decision trees, 72-hour dry-run script, risk escalation matrix, post-launch monitoring (Days 1-7), Phase 3 triggers
+- **Key Decisions**: Gumroad as primary Etsy fallback (15 min vs Shopify 2-4 hours); success threshold 2 of 4 targets by June 1 (Day 3); May 29 evening is hard Go/No-Go decision point
+- **Strategic Impact**: May 30 Phase 2 launch now has concrete verification procedure eliminating launch-day surprises; enables confident decision at May 28-29 checkoff
+- **Status**: READY for pre-launch verification May 25-29; actionable immediately once Phase 2 production checklist complete (guides, assets, email sequences)
+
+### Current Project Status
+
+| Project | Status | Next Milestone | Timeline |
+|---------|--------|---|----------|
+| **stockbot** | Checkpoint-ready | May 14 20:00 UTC checkpoint execution (Item 22) | 19 hours |
+| **seedwarden** | Phase 2 production-ready | Pre-launch verification May 25-29 (Item 25) | 12 days |
+| **resistance-research** | Awaiting user decision | Phase 1 distribution path (A/A+37/B) | TBD by user |
+| **cybersecurity-hardening** | Awaiting user approval | Phase 1 Tier 1 launch + Day 1 send date | TBD by user |
+| **mfg-farm** | Awaiting test print | Test print completion → supplier negotiation | Blocked on user action |
+
+### Needs Your Input
+
+1. **Stockbot May 14 Checkpoint**: Execute at 20:00 UTC using Item 22 framework; classify outcome PASS/NEAR-MISS/FAR-MISS C1/FAR-MISS C2
+2. **Seedwarden Phase 2 Guides**: Once Item 25 pre-launch checklist complete (May 25), use dashboard for Go/No-Go verification May 28-29 before May 30 launch
+3. **Resistance-Research Path Decision**: Still pending (affects Items 26-27 downstream work); path-agnostic Items 24-25 unaffected
+
+### Session Metrics
+
+- **Items completed**: 2 (Items 24-25 from parallel agents)
+- **Deliverables**: ~8,000 words across 17 sections, production-ready
+- **Execution time**: ~8.5 hours wall-clock (parallel agents ~42 min real-time)
+- **Usage impact**: ~178K tokens
+- **Orchestration**: EXPLORATION_QUEUE.md updated (Items 24-25 marked COMPLETE), WORKLOG.md appended, ready for commit
+
+### Next Session Priorities
+
+1. **May 14 20:00 UTC**: Execute checkpoint query; apply Item 22 outcome classification → Item 24 path begins May 15
+2. **May 14-21**: Optional — Begin Items 26-27 if session time available (pending user path decision for Item 26)
+3. **May 25-29**: Use Item 25 dashboard for Phase 2 pre-launch verification
+4. **May 28-29**: Final Go/No-Go decision on Phase 2 launch
+
+**Usage**: Sonnet ~71% (approaching weekly reset), All-models ~10% (healthy). No throttling.
+
+---
+
 ## Session 954 — May 12, 2026 23:15 UTC (Exploration Queue Items 24-27 Planning)
 
 **Status**: ✅ QUEUE ITEMS 24-27 CREATED — Medium-term infrastructure staging for May 14-June deployment

@@ -4,6 +4,69 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 01:30 — Session 955 — Exploration Queue Items 24-25 COMPLETE
+
+**Time**: 01:30 UTC (parallel agents, Item 24 + Item 25)
+
+**Status**: ✅ EXPLORATION QUEUE ITEMS 24-25 COMPLETE — High-impact deliverables ready for May 14+ execution
+
+### Work Summary
+
+#### Parallel Execution (Subagents)
+- **Stockbot agent** (Item 24): Gate 2 Implementation Guide (4,200 words, 9 sections, production-ready)
+- **Seedwarden agent** (Item 25): Phase 2 Go/No-Go Dashboard (3,800 words, 8 sections, production-ready)
+
+#### Item 24: Stockbot Gate 2 Implementation Guide — COMPLETE
+**Deliverable**: `projects/stockbot/GATE_2_IMPLEMENTATION_GUIDE.md` (855 lines, ~4,200 words)
+
+**Content**:
+1. **Gate 2 Overview** — Objective A (equity expansion May 15–June 9), Objective B (live activation), 3-branch checkpoint decision tree
+2. **Code Entry Points** — Exact file paths + line numbers for trading_session.py, launch_stacker_sessions.py, position_manager.py, dashboard_api.py, risk_manager.py, strategy_coordinator.py (55 specific line numbers documented)
+3. **4-Week Phased Test Plan** — Week 1: AAPL verification + HMM observation; Week 2: 10-ticker expansion (3 capital allocation options); Week 3: 52-ticker stacker + margin monitoring; Week 4: risk escalation tests + formal checkpoint
+4. **System Readiness Checklist** — 14 binary items across Jetson, database, Alpaca, API/dashboard
+5. **Rollback Procedures** — 10-ticker→2-session (15 min target), full Gate 1 reset, emergency liquidation data preservation
+6. **Success Criteria** — 6 metrics with required/stretch targets (fill rate ≥50/day, Sharpe ≥1.5, MaxDD ≤15%, win rate ≥50%, profit factor ≥1.5, stability ≥90%)
+7. **Live Trading Activation** — 3 capital allocation structures ($100K/$300K/$200K proportional), monitoring cadence, escalation tiers
+8. **Risk Management Framework** — Position limits, 3-tier loss cutoff sequence, concentration limits, covered call overlay prerequisites
+9. **Key Decision Points** — 4 user decisions with options/tradeoffs (when to start, 10-ticker vs 4-ticker, capital structure, P&L reinvestment)
+
+**Strategic Impact**: Self-contained guide for May 14 evening reading; user executes Week 1 tests May 15 without external consultation. All decision trees present options with explicit tradeoffs (no pre-decided paths).
+
+#### Item 25: Seedwarden Phase 2 Go/No-Go Dashboard — COMPLETE
+**Deliverable**: `projects/seedwarden/PHASE_2_GO_NO_GO_DASHBOARD.md` (~3,800 words, 8 sections)
+
+**Content**:
+1. **Go/No-Go Framework** — 5 binary criteria with 25 audit checkpoints each (Content, Assets, Marketing, Sales, Performance)
+2. **Daily Pre-Launch Checklist** — May 28-30 countdown (T-2, T-1, T-day) with morning/afternoon/evening blocks and done signals
+3. **Contingency Decision Trees** — 4 failure scenarios (guides incomplete, Etsy fails, assets broken, email fails) with remediation paths + timeline impact
+4. **72-Hour Dry-Run Script** — May 27-29 simulation procedure (email delivery, social queue, Etsy listing, analytics, bottleneck identification) with pass/fail criteria
+5. **Risk Escalation Matrix** — GREEN (all GO)/YELLOW (4 GO + remediation)/RED (2+ NO-GO) with decision thresholds and escalation template
+6. **Post-Launch Monitoring** — Days 1-7: 12 metrics with numeric targets and action-if-below thresholds (email 25%+, social 500 impressions, Etsy 200 views, sales 5-15 units)
+7. **Phase 3 Trigger Criteria** — 4 triggers (revenue, satisfaction, production, date) with GO/CONDITIONAL/FAIL decision matrix
+8. **Rollback Procedure** — 5 steps with time windows: pause marketing (1h), de-list sales (4h), refund (24h), feedback (instant), re-launch timeline
+
+**Key Decisions**:
+- Gumroad as primary Etsy fallback (15 min vs Shopify 2-4 hours)
+- Success threshold: 2 of 4 targets by June 1 (Day 3), not Day 7
+- May 29 evening is hard Go/No-Go decision point
+
+**Strategic Impact**: May 30 launch now has 5 concrete GO/NO-GO criteria with verification procedures. Eliminates launch-day surprises; enables confident decision at May 28-29 checkoff.
+
+### Next Steps
+1. **May 14 19:00 UTC**: User reviews Item 22 (POST_GATE_1_RESPONSE_FRAMEWORK.md) Sections 1-3
+2. **May 14 20:00 UTC**: Execute checkpoint query
+3. **May 14 20:30 UTC**: Classify outcome using Item 22 framework
+4. **May 15+**: Execute Item 24 Week 1 tests using GATE_2_IMPLEMENTATION_GUIDE.md
+5. **May 25-29**: Use Item 25 dashboard for Phase 2 pre-launch verification
+6. **May 30 09:00 UTC**: Phase 2 launch execution
+
+### Orchestration Files Updated
+- ✅ EXPLORATION_QUEUE.md: Items 24-25 marked COMPLETE
+- 📝 WORKLOG.md: Session 955 entry (this)
+- 📝 CHECKIN.md: To be updated before commit
+
+---
+
 ## 2026-05-12 23:00 — Session 954 — Orchestrator Orientation + Exploration Queue Items 24-27 Creation
 
 **Time**: ~23:00 UTC (orientation + queue planning)
