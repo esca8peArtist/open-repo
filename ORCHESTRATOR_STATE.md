@@ -1,12 +1,12 @@
 # Orchestrator State
-> Auto-generated at 2026-05-12T20:13:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-12T20:20:57Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 67.7% (882,784 tokens) | All-models 4.7% | Reset in 149h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 67.7% (882,784 tokens) | All-models 6.1% | Reset in 148h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
-1. stockbot  ← Gate 1 checkpoint COMPLETE: FAR_MISS_C1 (timing only). May 14 monitoring active.
-2. resistance-research  ← 🔴 CRITICAL: Domain 42 Wave 1 OVERDUE 2+ days. Send emails TODAY.
+1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
+2. resistance-research
 3. cybersecurity-hardening
 4. mfg-farm
 5. seedwarden
@@ -33,13 +33,9 @@
 **Blocked**: None — Phase 1 ready for user approval and execution
 
 ### stockbot
-**Status**: Active — **Gate 1 checkpoint COMPLETE** (May 12 20:13 UTC). **Outcome: FAR_MISS_C1 (Timing Only)** — expected behavior, not a failure.
-**Checkpoint Results**: confirmed_round_trips=0, aapl_model_sells=0, total_fills_since_may5=19 (all non-AAPL May 5 liquidations)
-**Root Cause**: AAPL h=10 hold from April 29 entry is at h+8 on checkpoint day; expires May 14 at h+10 (13:30 UTC)
-**Next Checkpoint**: May 14 20:00 UTC — expect 2 AAPL SELL fills (lgbm_ho + ridge_wf)
-**Timeline**: Per C1 action sequence — no parameter changes, no new sessions. If May 16 shows no AAPL SELLs despite h+12, escalate to C2 diagnosis.
-**Monitoring**: Cron job d83409bb scheduled for May 14 20:00 UTC
-**Blocked**: None — C1 path proceeding as expected. Jetson disk cleanup is post-checkpoint task (noted in BLOCKED.md)
+**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
+**Focus**: Session 940: Gate 1 checkpoint complete — FAR_MISS_C1 (timing only, expected behavior). AAPL h=10 hold expires May 14 at h+10 (13:30 UTC). Expected 2 AAPL SELL fills on May 14. No parameter changes. Monitoring checkpoint scheduled May 14 20:00 UTC. Per C1 action sequence: if May 16 shows no AAPL SELLs despite h+12, escalate to C2 four-step diagnosis. Cron PATH fix + Jetson disk cleanup required post-checkpoint before Gate 2 deployment.
+**Blocked**: Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment (see BLOCKED.md)
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
@@ -64,19 +60,13 @@
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
-### stockbot — Jetson disk at 87% (29 GB free remaining)
-**Date blocked**: 2026-05-09
-**Context**: Jetson root filesystem is at 87% capacity (188 GB of 227 GB used, 29 GB free). Root causes: /var/log at 74 GB, Docker build cache at 22.66 GB (6 GB reclaimable). This is NOT a May 12 checkpoint blocker — 29 GB is sufficient for 3 days of trading logs. However, disk must be cleaned before Gate 2 deployment to prevent crashes due to log rotation failures or container failures.
-**What I need**: After May 12 checkpoint, clean up: (1) identify and archive old logs in /var/log (keep last 7 days), (2) run `docker builder prune` to reclaim build cache, (3) verify free space ≥50 GB before Gate 2 work.
-**Verify with**: `ssh user@jetson "df -h / && du -sh /var/log && docker system df"`
-**Resolution**:
 
 ## Recently Resolved (last 5)
+• stockbot — Jetson disk at 87% (29 GB free remaining) ← 2026-05-12 (Session 941, 19:45 UTC)
 • Usage limits — weekly calibration reminder ← 2026-05-12 (Session 939, 19:02 UTC)
 • stockbot — Manual DB sync verification (May 11 cron PATH issue, action window passed) ← 2026-05-12 (Session 939, 19:02 UTC)
 • stockbot — Database persistence gap blocks May 12 checkpoint time-stop exit logic ← 2026-05-09 (Session 922)
 • stockbot — Docker API container stuck in initialization loop; HTTP endpoint unreachable ← 2026-05-09 (Session 919)
-• stockbot — Engine API auth failed; database partially recovered; checkpoint at risk ← 2026-05-09 (Session 911)
 
 ## Inbox (unprocessed)
 *(no new items)*
