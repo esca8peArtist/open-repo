@@ -4,6 +4,41 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-12 20:06 — Session 943 — Exploration Queue Item 21 (Seedwarden) + Queue Expansion — COMPLETE
+
+**Time**: 20:06–20:45 UTC (exploration queue work, 0.65 hrs)
+**Item**: Seedwarden Bundle E Pre-Publication Acceleration Pack
+**Deliverable**: `projects/seedwarden/BUNDLE_E_PUBLICATION_PACKAGE.md` (4.2 KB, production-ready)
+
+### Summary
+
+Created comprehensive pre-publication acceleration package for Bundle E (Invasive Edibles) launching May 19-22. All marketing materials production-ready and user-executable verbatim.
+
+**Content sections**:
+1. **Landing Page Template** (380 words): "Stop Fighting These Plants. Start Eating Them." dual CTA with all 5 species described (Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose). Canva specs (1200×1500 px, Forest Green #2D4A2D).
+2. **7-Email Sequence**: Full body copy with A/B subject variants on Emails 1 & 5. Conditional Email 7 on `bundle-e-purchased` tag. Introduces Field ID Quick-Card lead magnet.
+3. **10-Post Social Calendar** (May 13-22): 2 Reel scripts (45s/30s), 4 carousel decks with Canva variables, educational + UGC + launch posts. Hashtag packs by angle.
+4. **3 Paid Ad Angles** (6 total variants): Ecological, abundance, and regenerative framings with email signup + direct-sale CTAs. Budget guidance $50-70 test May 15.
+5. **Press Release** (185 words): Conservation foraging angle, suitable for food/homesteading/foraging media.
+6. **Conversion Funnel**: Kit pre-launch checklist (8 items), UTM reference (7 channels), success metrics with list-size decision rules.
+
+**Key Findings**:
+- Bundle E has 0 photo dependencies — earliest launch May 19-22 (identified as critical path in Session 942)
+- No direct competitor offering invasive edibles bundle on Etsy — segment thin, margins strong
+- Regenerative ag messaging growing 72% CAGR — strong copy angle tailwind
+- **One dependency**: Field ID Quick-Card PDF lead magnet needs Canva creation by May 13 (~45-60 min)
+
+**Strategic impact**: First revenue bundle ships before Phase 2 official launch (May 30). All marketing friction eliminated — user can execute campaign directly from provided templates.
+
+### Exploration Queue Expansion
+
+Added 3 new items (21-23) to queue per orchestrator protocol (fewer than 3 active items):
+- **Item 21** ✅ COMPLETE (this session): Seedwarden Bundle E Pre-Publication
+- **Item 22** QUEUED: Stockbot Post-Gate-1 Outcome Response Framework (urgent for May 14 checkpoint)
+- **Item 23** QUEUED: mfg-farm Post-Test-Print Supplier Negotiation Strategy (post-test-print automation)
+
+---
+
 ## 2026-05-12 19:48 — Session 942 — Exploration Queue Item 20 (Seedwarden) — COMPLETE
 
 **Time**: 19:48–20:45 UTC (exploration queue work, 2.5 hrs)

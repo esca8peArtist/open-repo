@@ -180,9 +180,50 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
-## Active Queue (Current Session 941+)
+## Queued for Session 943+
 
-### ⏳ Item 18: Jetson Resilience Assessment — POST-GATE-1 READY
+### ⏳ Item 21: Seedwarden Bundle E Pre-Publication Acceleration Pack
+**Status**: QUEUED (Session 943, May 12 2026)
+**Impact**: HIGH — May 19-22 launch (7 days away); first revenue-generating bundle before Phase 2 launch
+**Goal**: Create complete publication package for Invasive Edibles Bundle (Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose): landing page, email sequence, social content, paid ad copy, press release, conversion funnel
+**Feasibility**: HIGH — Phase 2 velocity analysis complete, Bundle E has 0 photo dependencies, all 5 guides ready to write today
+**Effort estimate**: 2.5-3 hours
+**Deliverable**: `projects/seedwarden/BUNDLE_E_PUBLICATION_PACKAGE.md` (landing page template, 7-email sequence with A/B variants, 10-post social media content calendar with carousel options, 3 paid ad variants, press release template, conversion tracking setup)
+**Why now**: Bundle E can ship May 19-22 (identified as critical path in Item 20 analysis). Pre-staging all marketing materials TODAY removes friction and maximizes first-bundle revenue capture. Competitive advantage: invasive edibles content rare in market.
+**Blocker**: None — can be executed independently of guide writing
+**Next Step**: Execute immediately; user confirms photo window → guides write May 13-17 using generated templates
+
+---
+
+### ⏳ Item 22: Stockbot Post-Gate-1 Outcome Response Framework
+**Status**: QUEUED (Session 943, May 12 2026)
+**Impact**: HIGH — May 14 20:00 UTC checkpoint (2 days away); PASS/NEAR-MISS/FAR-MISS outcomes require different post-checkpoint actions
+**Goal**: Create decision framework for May 14 checkpoint outcome: (1) If PASS: Gate 2 readiness checklist + HMM regime scaling options; (2) If NEAR-MISS: analysis of why h+8 vs h+10, timing adjustment options; (3) If FAR-MISS: diagnostic sequence per MAY_12_OUTCOME_ROADMAP.md, escalation to C2
+**Feasibility**: HIGH — checkpoint procedures complete, C1/C2 diagnosis logic already designed, MAY_12_OUTCOME_ROADMAP.md exists
+**Effort estimate**: 2-3 hours
+**Deliverable**: `projects/stockbot/POST_GATE_1_RESPONSE_FRAMEWORK.md` (outcome classification logic, PASS/NEAR-MISS/FAR-MISS decision trees, 6 Gate 2 options ranked by likelihood, C2 four-step diagnosis expansion with specific queries/thresholds, deployment sequence per outcome)
+**Why now**: May 14 20:00 UTC checkpoint is 2 days away. Needs immediate post-checkpoint analysis. Pre-staging decision framework removes latency between checkpoint result and next action.
+**Blocker**: None — can be prepared now independently of checkpoint result
+**Next Step**: Complete by May 14 19:00 UTC; user runs checkpoint at 20:00 UTC → orchestrator applies framework immediately to classify outcome
+
+---
+
+### ⏳ Item 23: mfg-farm Post-Test-Print Supplier Negotiation Strategy
+**Status**: QUEUED (Session 943, May 12 2026)
+**Impact**: MEDIUM — Test print block (since April 12) is the only gating item. Once user completes test, launch can begin same day.
+**Goal**: Create comprehensive supplier negotiation playbook: (1) 3-tier supplier scorecard (Prusament vs MatterHackers vs AmazonBasics comparison), (2) negotiation templates (volume pricing, payment terms, lead time flexibility), (3) fulfillment integration (shipping partner analysis: USPS vs UPS vs FedEx for 3D-printed goods), (4) quality control gates (post-supplier-delivery inspection checklist), (5) Etsy listing optimization (A/B title variants, SEO keywords, shipping cost strategy)
+**Feasibility**: HIGH — pre-launch fulfillment workflow exists (Item 16), designs complete, cost model complete
+**Effort estimate**: 2-3 hours
+**Deliverable**: `projects/mfg-farm/SUPPLIER_NEGOTIATION_PLAYBOOK.md` (supplier comparison matrix, email templates for volume pricing, payment terms options, lead-time flexibility arrangements, QC checklist, shipping cost optimization table, Etsy keyword/SEO analysis, first-batch pricing strategy)
+**Why now**: Test print is the immediate blocker, but once it completes (user action), all downstream work is gated on supplier negotiations and Etsy optimization. Pre-staging eliminates day-of friction.
+**Blocker**: Test print completion (user action, not blocking this preparation)
+**Next Step**: Deliver playbook now; user completes test print → supplier negotiation begins same day using prepared templates
+
+---
+
+## Previously Queued (Completed Session 941-942)
+
+### ✅ Item 18: Jetson Resilience Assessment — POST-GATE-1 READY
 **Status**: QUEUED (Session 941, May 12 2026) — NOW ACTIONABLE post-checkpoint
 **Impact**: HIGH — Jetson disk now healthy (132GB free); need to assess network stability, power cycling recovery, container restart automation
 **Goal**: Comprehensive Jetson system evaluation for 24/7 trading engine durability (gate 2 prerequisite)
