@@ -1,5 +1,26 @@
 # Check-in
 
+## Session 950 — May 12, 2026 21:45 UTC (Orchestrator Orientation & Blockers Assessment)
+
+**Status**: 🛑 ALL AUTONOMOUS WORK BLOCKED on user decisions — waiting for critical architecture & path clarifications
+
+**What Was Found**:
+1. **Stockbot architecture mismatch** remains unresolved (Session 944 block active) — 2-session AAPL equity documented vs. options trading deployed. User decision required.
+2. **Seedwarden Phase 2** validation checklist shows "CONDITIONAL GO" (May 30 launch 18 days out) with 2 critical blockers:
+   - Kit.com account (hard deadline May 20)
+   - Photo asset resolution/licensing issues (16 of 18 habit photos below 1200x800 minimum; license documentation missing)
+3. **Resistance-research Domain 42** Wave 1 outreach is 4 days overdue (due May 8, should have shipped then) with May 28 DEA deadline. Templates are production-ready; depends on distribution path decision.
+4. **All state files verified current** — ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md all match reality as of 21:45 UTC.
+
+**Next Session Priority Order**:
+1. **User clarifies stockbot architecture** (equity 2-session vs options) → May 14 checkpoint execution becomes possible
+2. **User selects resistance-research path A/A+37/B** → Domain 42 Wave 1 & 2 can ship immediately (16 days to deadline)
+3. **User creates Kit account** (5 min, May 20 deadline) → seedwarden May 30 launch unblocks
+
+**No autonomous work available** — all top 5 projects blocked on user decisions or external dependencies. Committed state files and prepared check-in for user input.
+
+---
+
 ## Session 949 — May 12, 2026 23:45–02:30 UTC (Exploration Queue Completed: 3 Parallel Research Deliverables)
 
 **Status**: ✅ RESEARCH COMPLETE — All 3 exploration items delivered; user decisions prepared
