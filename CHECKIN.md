@@ -1,40 +1,75 @@
 # Check-in
 
-## Session 949 — May 12, 2026 23:50 UTC (Architecture Decision Framework Created; Exploration Queue Activated)
+## Session 949 — May 12, 2026 23:45–02:30 UTC (Exploration Queue Completed: 3 Parallel Research Deliverables)
 
-**Status**: 🔍 RESEARCH COMPLETE — Decision framework ready; user can decide within 5 minutes
+**Status**: ✅ RESEARCH COMPLETE — All 3 exploration items delivered; user decisions prepared
+
+**Completed Work**:
+- ✅ Stockbot architecture comparative analysis (2,800 words, `ARCHITECTURE_DECISION_MATRIX.md`)
+- ✅ Resistance-research Phase 2 domain candidates (3,200 words, `PHASE_2_DOMAIN_CANDIDATES.md`)
+- ✅ Seedwarden Phase 2 social growth strategy (2,400 words + CSV, `PHASE_2_SOCIAL_GROWTH_STRATEGY.md`)
 
 ### What Was Done This Session
 
-**Exploration Queue Refresh**:
-- Identified 0 active exploration items (previous items complete or blocked)
-- Added 3 new exploration items per orchestrator protocol
-- **Completed Item #1**: Stockbot architecture comparative analysis
+**Exploration Queue Refresh** (per orchestrator protocol — queue had 0 active items):
+- All top-priority projects blocked on user decisions (stockbot architecture, resistance-research path, mfg-farm test print, seedwarden setup)
+- Identified 3 unblocked exploration items → spawned 3 parallel subagents (2.75 hour parallel execution)
 
-**Deliverable**: `projects/stockbot/ARCHITECTURE_DECISION_FRAMEWORK.md`
-- **Content**: 1,200 words spanning 5 major sections
-- **Decision matrix**: 3 architectures × 10 decision dimensions
-- **Interpretation guide**: Explains May 12 checkpoint findings for each architecture
-- **Recommendation**: User selects system (A/B/C) in <5 minutes
+**✅ Item 1: Stockbot Architecture Decision Matrix** — COMPLETE
+- **Key finding**: Options system has been running 4+ months (Jan/Mar/May fills documented), not a recent accident
+- **Per-architecture verdict**:
+  - **Architecture A (2-session AAPL equity)**: 1.5-2 hrs to implement, but structurally can only pass Gate 1b (5 round trips), not Gate 1 proper (30 round trips)
+  - **Architecture B (67-ticker equity stacker)**: 40-60% probability of Gate 1 pass at 30 fills/month. Implementation 3-4.5 hrs after cron/disk fixes.
+  - **Architecture C (options, currently deployed)**: Already running with real fills, but needs 7-13 hrs investigation to understand full scope
+- **Three-question checklist for user**: (1) Was options system intentional? (2) Validate equity stacker or pursue options formally? (3) Target Q3 2026 (Arch B) or Q4 2026 (Arch A)?
+
+**✅ Item 2: Resistance-Research Phase 2 Candidates** — COMPLETE
+- **Three candidates identified** (ready for 10-18 hr research each):
+  - **Candidate A (Surveillance Capitalism & Electoral Manipulation)** — 1st priority. June 12 FISA deadline. Data brokers + government warrant bypass + AI microtargeting = single threat. 12-15 hr research.
+  - **Candidate C (Healthcare Access & Democracy)** — 2nd priority. NVRA-Medicaid causal chain: Medicaid offices = voter registration sites; OBBBA coverage loss = reduced voter registration. June 1 HHS rule anchor. 10-14 hr research.
+  - **Candidate B (AI/Tech Regulatory Capture)** — 3rd priority. Fresh arXiv taxonomy (27 mechanisms), Dec 2025 EO + FTC reversal. 14-18 hr research.
+- Ready for immediate Phase 2 launch post-Phase-1-decision (no wait time)
+
+**✅ Item 3: Seedwarden Phase 2 Social Growth Strategy** — COMPLETE
+- **Cohort-based platform strategy** (4 cohorts × 5 platforms):
+  - Forager → TikTok Promote ($3-5/day, zero-follower reach), CAC:LTV 1:8-12
+  - Prepper → YouTube Shorts (dual YouTube+Google discovery), CAC:LTV 1:8-10
+  - Homesteader → Instagram Reels (30.81% reach, 2x other formats), CAC:LTV 1:9-14
+  - Gift Buyer → Pinterest (no minimum, cheapest CPM $2-5, gift discovery engine)
+- **Critical discovery**: Meta/Instagram minimum ($33-67/day) exceeds Phase 2 budget. Use TikTok Promote + Pinterest instead.
+- **Month 1 allocation**: $300-400 total — Gift Buyer Pinterest ($5/day) + Homesteader Instagram ($10/day)
+- Ready for Day-1 execution May 30 launch
 
 ### What I Need from You
 
-**URGENT** (enables May 14 checkpoint):
-1. **Architecture Selection**: Which system should be running?
-   - **A**: 2-session AAPL equity (documented, slow)
-   - **B**: 67-ticker equity stacker (ambitious, already trained)
-   - **C**: Options system (orthogonal, unknown details)
-   - **D**: Hybrid (B primary + C secondary)
+**URGENT** (enables May 14 checkpoint + Phase 2 launches):
 
-2. **If C or D**: Provide options strategy details (backtest data, capital allocation, signal triggers)
+1. **Stockbot Architecture**: Which system should be running?
+   - **A**: 2-session AAPL equity (documented, limited upside)
+   - **B**: 67-ticker equity stacker (ambitious, strong Gate 1 odds)
+   - **C**: Options system (orthogonal, requires scope investigation)
+   - **Decision timeline**: <24 hours (May 14 20:00 UTC checkpoint depends on clarity)
 
-3. **Timeline**: Decision → orchestrator updates Jetson → May 14 checkpoint (May 14 20:00 UTC)
+2. **Resistance-Research**: Select Phase 1 distribution path
+   - **A**: 34-domain framework to general audiences
+   - **A+37 (recommended)**: 34-domain to broad audiences, Domain 37 to election protection orgs
+   - **B**: Continue Phase 2 updates before launch
+   - **Decision timeline**: <16 days (May 28 DEA hearing deadline)
 
-**NON-URGENT** (clarifications for next sessions):
-- Resistance-research distribution path (A/A+37/B) — 16 days to May 28 DEA deadline
-- Cybersecurity-hardening Phase 1 approval
-- Seedwarden Kit account creation (deadline May 20)
-- mfg-farm test print results
+3. **Seedwarden**: Create Kit.com account (5 minutes)
+   - **Deadline**: May 20 (10 days for email automation setup)
+   - Enables May 30 Phase 2 launch
+
+**NON-URGENT** (next-session enablers):
+- Cybersecurity-hardening Phase 1 approval + threat accuracy confirmation
+- mfg-farm test print execution + results
+- Confirm any changes to exploration queue priorities
+
+### Usage & Budget
+
+- **Sonnet**: 67.7% (882K/1.3M tokens, reset in ~145 hours)
+- **All-models**: 7.8% (1.5M/20.4M tokens)
+- **Session tokens**: ~250K (architecture + 2 phase 2 docs in parallel)
 
 ---
 

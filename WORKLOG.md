@@ -42,12 +42,38 @@
 
 ### Completed Work
 
-#### Exploration Queue Refresh
-**Finding**: Queue had 0 active items (all prior items complete or blocked). Added 3 new items per protocol:
+#### Exploration Queue Refresh & Parallel Execution (Session 949)
+**Finding**: All top-priority projects blocked on user decisions (stockbot architecture, resistance-research distribution path, mfg-farm test print, seedwarden user actions). Exploration Queue identified 3 unblocked items. Spawned 3 parallel subagents (23:45 UTC - 02:30 UTC, 3-hour parallel execution).
 
-1. **stockbot: Equity vs Options Architecture Comparative Analysis** (THIS SESSION COMPLETED)
-   - Deliverable: `ARCHITECTURE_DECISION_FRAMEWORK.md` (1,200 words, 5 sections)
-   - Scope: Side-by-side comparison of 3 architectures (2-session AAPL, 67-ticker stacker, options system)
+**✅ COMPLETED — All 3 Exploration Items**:
+
+1. **stockbot: Equity vs Options Architecture Comparative Analysis** — **COMPLETE**
+   - Deliverable: `projects/stockbot/ARCHITECTURE_DECISION_MATRIX.md` (2,800 words, 5 sections, committed)
+   - Key finding: Options system has been running 4+ months (Jan/Mar/May fills in DB), not a recent accident. Architecture mismatch is structural, not transient.
+   - Per-architecture verdict:
+     - **Architecture A (2-session AAPL equity)**: Ready to implement (1.5-2 hrs), but structurally cannot pass Gate 1 proper (only Gate 1b, 5 round trips by June 4)
+     - **Architecture B (67-ticker stacker)**: Strongest path to Gate 1 (40-60% pass probability at 30 fills/month). Implementation 3-4.5 hrs. Requires cron PATH fix + Jetson cleanup first.
+     - **Architecture C (options, currently deployed)**: Already running with real fills, but no documentation/backtest/guardrails. Requires 7-13 hrs investigation to understand scope.
+   - **Three-question decision checklist for user**: (1) Was options system intentional or surprise? (2) Validate equity stacker or pursue options formally? (3) Target live date Q3 2026 (Arch B) or Q4 2026 (Arch A)?
+
+2. **resistance-research: Phase 2 Expansion — Domains 38-40** — **COMPLETE**
+   - Deliverable: `projects/resistance-research/PHASE_2_DOMAIN_CANDIDATES.md` (3,200 words, committed)
+   - Three Phase 2 candidates identified with research outlines:
+     - **Candidate A (Surveillance Capitalism & Electoral Manipulation)** — 1st priority. June 12 FISA deadline forces timeline. Convergence of data brokers + government warrant bypass + AI microtargeting. 12-15 hr research, 20 sources.
+     - **Candidate C (Healthcare Access & Democracy Nexus)** — 2nd priority. NVRA-Medicaid causal chain: Medicaid enrollment offices are voter registration sites; OBBBA coverage loss = reduced voter registration capacity. June 1 HHS interim final rule anchor. 10-14 hr research, 20 sources.
+     - **Candidate B (AI/Tech Regulatory Capture)** — 3rd priority. Fresh arXiv taxonomy (27 mechanisms, 249 instances). December 2025 EO + FTC reversal. Distinct from Domain 36 (corporations as political actors, not AI as tool). 14-18 hr research, 20 sources.
+   - Ready for immediate Phase 2 research launch post-Phase-1-decision.
+
+3. **seedwarden: Phase 2 Social Media Growth & Acquisition Strategy** — **COMPLETE**
+   - Deliverables: `projects/seedwarden/PHASE_2_SOCIAL_GROWTH_STRATEGY.md` (2,400 words) + `COHORT_ACQUISITION_MATRIX.csv` (committed)
+   - Cohort-based strategy with platform + influencer + budget per cohort:
+     - **Forager/Wildcrafter** → TikTok primary (zero-follower reach in 48h), use TikTok Promote ($3-5/day), target @chaoticforager/@thegardencottage/@sonofa_bear. CAC:LTV 1:8-12.
+     - **Prepper/Survivalist** → YouTube Shorts primary (dual YouTube+Google discovery), Instagram secondary, hold paid until 10+ Etsy reviews. Best influencers: @buckskin_revolution/@graybeardedgreenberet/@naturvival. CAC:LTV 1:8-10.
+     - **Homesteader/Farmer** → Instagram Reels primary (30.81% reach rate, 2x other formats), Pinterest secondary (30-90 day pin compound). Instagram CAC:LTV 1:9-14. Best: @shayeelliott/@justinrhodesshow/@michelles_farmstead.
+     - **Gift Buyer** → Pinterest primary (gift discovery search engine, $2-5 CPM cheapest), no paid minimum. Most cost-effective per reach. Activate May 25 for May 30 launch.
+   - **Critical discovery**: Meta/Instagram Ads minimum ($33-67/day) exceeds Phase 2 budget ($5-10/day). Use TikTok Promote for foragers (no $50 minimum), Pinterest for gift buyers (no minimum).
+   - **Month 1 budget allocation**: $300-400 total — Gift Buyer Pinterest ($5/day) + Homesteader Instagram ($10/day). Hold Forager TikTok/Prepper YouTube paid until organic content tested.
+   - Ready for Day 1 execution May 30 Phase 2 launch.
    - Decision matrix across 10 dimensions (Gate 1-3 feasibility, complexity, capital, documentation, timeline)
    - Interpretation of May 12 checkpoint findings per architecture
    - Recommendation: User selects which system to deploy within 5 minutes
