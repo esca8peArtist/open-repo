@@ -4,6 +4,68 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-12 23:00 — Session 954 — Orchestrator Orientation + Exploration Queue Items 24-27 Creation
+
+**Time**: ~23:00 UTC (orientation + queue planning)
+
+**Status**: ✅ EXPLORATION QUEUE ITEMS 24-27 QUEUED — Added 4 high-impact items for May 13-June deployment
+
+### Work Summary
+
+#### Orientation
+- **ORCHESTRATOR_STATE.md**: Reviewed state summary — Session 953 completed 3 critical deliverables (stockbot architecture analysis, domain 42 outreach plan, seedwarden phase 2 timeline)
+- **BLOCKED.md**: Verified no active blocks; all recent blocks resolved in Sessions 950-953
+- **PROJECTS.md**: Confirmed project priorities and current blockers (user decisions pending: domain 42 path, plant orders, checkpoint execution)
+- **INBOX.md**: No new items since May 12 19:02 UTC
+- **EXPLORATION_QUEUE.md**: Identified completion of Items 21-22 (from Sessions 950-952); Item 23 blocked on user test print
+- **Usage**: Nominal (Sonnet 67.7%, All-models 9.3%) — no throttling
+
+#### Key Findings
+- Near-term autonomous work is complete (Items 21-22 for Stockbot checkpoint framework and Seedwarden Bundle E launch)
+- Most projects awaiting user actions (path decisions, test print completion, plant orders, checkpoint execution)
+- Exploration Queue needs medium-term items for May 13-June deployment horizon
+
+#### Exploration Queue Items 24-27 Created
+Spawned `general-purpose` subagent to create 4 new Exploration Queue items with clear scoping (no user decisions required, 2-4 hour execution each):
+
+**Item 24: Stockbot Gate 2 Implementation Guide**
+- **Impact**: HIGH | **Effort**: 3-4 hours
+- **Deliverable**: `projects/stockbot/GATE_2_IMPLEMENTATION_GUIDE.md`
+- **Scope**: Code entry points, 4-week phased test plan, system readiness checklist, rollback procedures, success criteria
+- **Why now**: Builds on Item 22 (Post-Gate-1 framework). May 14 checkpoint determines Gate 2 path; implementation needed immediately post-outcome for Week 1 tests May 15
+
+**Item 25: Seedwarden Phase 2 Go/No-Go Verification Dashboard**
+- **Impact**: HIGH | **Effort**: 2.5-3 hours
+- **Deliverable**: `projects/seedwarden/PHASE_2_GO_NO_GO_DASHBOARD.md`
+- **Scope**: 5 binary go/no-go criteria with audit checklists, daily pre-launch checklist (May 28-29), contingency decision trees, 72-hour dry-run script
+- **Why now**: May 30 launch (18 days away). Verification procedure eliminates launch-day surprises
+
+**Item 26: Resistance-Research Domains 48-51 Parallel Production Roadmap**
+- **Impact**: HIGH | **Effort**: 3-4 hours
+- **Deliverable**: `projects/resistance-research/DOMAINS_48_51_PRODUCTION_ROADMAP.md`
+- **Scope**: Domain specs, 8-week parallel execution plan (June-July research waves), stakeholder expansion, QA gates, publication sequencing
+- **Why now**: May 28 Domain 42 deadline creates inflection point. Post-May-28, research capacity frees up for Phase 2 domains. Preparation now enables June 1 research start without friction
+
+**Item 27: Cybersecurity-Hardening Tier 2 Expansion Architecture**
+- **Impact**: MEDIUM | **Effort**: 2.5-3 hours
+- **Deliverable**: `projects/cybersecurity-hardening/TIER_2_EXPANSION_ARCHITECTURE.md`
+- **Scope**: Cohort selection rubric (15+ pre-screened orgs), 12-week Tier 2 timeline, success metrics with go/no-go thresholds, risk escalation playbook
+- **Why now**: Phase 1 distribution (June 1-15 target). Tier 2 framework needed for post-Phase-1 decision gates at Week 6
+
+### Items Added to EXPLORATION_QUEUE.md
+- ✅ Item 24-27 added in "Completed Items (Session 953)" section
+- ✅ Ready for execution May 13+ depending on checkpoint outcome and user approvals
+
+### Next Steps
+1. **May 14 20:00 UTC**: Execute stockbot checkpoint per Item 22 framework
+2. **May 13-15**: User decides on domain 42 path (impacts Item 26 planning)
+3. **May 13+**: Begin execution on Items 24-27 as time permits (Items 24-25 actionable immediately; Items 26-27 actionable post-checkpoint)
+4. **May 28-29**: Pre-launch verification using Item 25 dashboard
+
+**Status**: Orchestration files updated and ready for commit.
+
+---
+
 ## 2026-05-13 01:15 — Session 950 — Exploration Queue Item 21 Complete: Seedwarden Bundle E Pre-Publication Package
 
 **Time**: 01:15–01:45 UTC (Bundle E publication infrastructure creation)

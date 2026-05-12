@@ -218,6 +218,85 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
+## Completed Items (Session 953)
+
+### ✅ Item 21: Seedwarden Bundle E Pre-Publication Acceleration Pack
+**Status**: COMPLETE (Session 952, May 12 2026, 23:30 UTC)
+**Effort**: 2.5-3 hours
+**Deliverable**: `projects/seedwarden/BUNDLE_E_PUBLICATION_PACKAGE.md` (720 lines, 27 KB)
+**Content**: Complete publication playbook for Invasive Edibles Bundle (Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose). Includes Etsy listing copy, 5-email sequence with A/B variants (May 19-28 timeline), 10-post social media calendar (TikTok/Instagram/Pinterest), 2 Facebook + 2 Google Search ad variants, press release with 10-15 media outlets, tracking setup, implementation checklist, risk mitigation, success metrics.
+**Key Insight**: All 5 guides have zero photo dependencies (Wikimedia sources confirmed). May 12-14 guide writing (15 hours) + May 14-18 platform setup (5 hours) enables simultaneous channel launch May 19 (email, social, ads, press). Break-even 17 pre-orders at $24.99 launch price; conservative target 40-50 pre-orders = $1,000-1,500 revenue.
+**Strategic Impact**: First revenue-generating bundle before official Phase 2 launch. Validates entire publication system May 19-22. Rare market niche (invasive edibles) with seasonal urgency (Garlic Mustard + Knotweed shoots available now).
+**Next Step**: User confirms May 19 launch → begin guide writing May 13-14 using PHASE_2_GUIDE_CONTENT_BLUEPRINT.md template.
+
+---
+
+### ✅ Item 22: Stockbot Post-Gate-1 Outcome Response Framework
+**Status**: COMPLETE (Session 952, May 12 2026, 23:30 UTC)
+**Effort**: 2-3 hours
+**Deliverable**: `projects/stockbot/POST_GATE_1_RESPONSE_FRAMEWORK.md` (705 lines, 30 KB)
+**Content**: Production-ready decision framework for May 14 20:00 UTC checkpoint outcome. Outcome classification logic (PASS/NEAR-MISS/FAR-MISS C1/FAR-MISS C2), four outcome decision paths with SQL queries + action sequences, Gate 2 architecture options ranked by likelihood, C2 four-step diagnosis (Jetson connectivity → Signal logs → DB/Alpaca sync → VIX regime) with recovery levers, capital redeployment tables, WORKLOG entry template, quick-reference decision tree.
+**Key Insight**: Self-contained framework requiring no consultation of other documents during May 14 execution. Grounded in May 12 FAR_MISS_C1 confirmed result (timing behavior expected, not failure). Exhaustive diagnosis paths for all four outcomes. Recovery levers with specific examples (threshold reduction, HMM regime scalar, SPY fallback).
+**Execution Protocol**: May 14 19:00 UTC review Sections 1-3; 20:00 UTC run checkpoint query; 20:05 UTC record 8 values; 20:30 UTC navigate outcome path and execute.
+**Strategic Impact**: Removes post-checkpoint latency. Enables immediate action classification within 5-30 minutes of checkpoint result, supporting rapid Gate 1→Gate 2 transition if PASS outcome.
+**Next Step**: User executes May 14 20:00 UTC checkpoint → applies framework immediately to classify outcome and next actions.
+
+---
+
+## Queued Items (Session 953)
+
+### ⏳ Item 24: Stockbot Gate 2 Implementation Guide — Architecture & Testing
+**Status**: QUEUED (Session 953, May 12 2026)
+**Impact**: HIGH — May 14 checkpoint outcome determines Gate 2 readiness; framework from Item 22 identifies architecture option but implementation guide is next blocker
+**Goal**: Create comprehensive Gate 2 implementation guide covering (1) Option 4 (Ensemble Model Reweighting) selected architecture with concrete code entry points, (2) 4-week phased test plan (Week 1: unit tests for regime weighting, Week 2: backtest integration, Week 3: paper trading, Week 4: live decision thresholds), (3) pre-deployment system checks (Jetson health, API stability, capital allocation), (4) rollback procedures for each phase, (5) success criteria per week with decision gates
+**Feasibility**: HIGH — POST_GATE_1_ARCHITECTURE_OPTIONS.md exists (351 lines), code architecture documented, testing framework ready
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/stockbot/GATE_2_IMPLEMENTATION_GUIDE.md` (code entry points with file paths, week-by-week test procedures, system readiness checklist, phase gates with decision criteria, rollback playbooks per phase, Jetson resource allocation table, success metrics aligned to Sharpe ≥1.0 target)
+**Why now**: Item 22 framework is complete but assumes implementation infrastructure is known. Gate 2 decision (May 15-21 depending on Gate 1 outcome) requires detailed execution plan. Preparation now eliminates decision fatigue post-checkpoint.
+**Blocker**: None (framework-independent work)
+**Next Step**: User executes May 14 checkpoint, applies Item 22 framework for outcome classification → if PASS or NEAR-MISS, deploys Item 24 guide immediately for Week 1 test execution May 15
+
+---
+
+### ⏳ Item 25: Seedwarden Phase 2 Go/No-Go Verification Dashboard
+**Status**: QUEUED (Session 953, May 12 2026)
+**Impact**: HIGH — May 30 Phase 2 launch depends on 5 critical preconditions passing. Production timeline exists but decision framework missing.
+**Goal**: Create operational verification dashboard for Phase 2 launch (1) 5 binary go/no-go criteria with verification procedures (photography completion audit, guide content QA checklist, Canva asset readiness verification, email sequence staging validation, analytics dashboard functionality test), (2) daily pre-launch checklist (May 28-29) with responsible parties, timing requirements, and failure escalation paths, (3) contingency activation triggers (if photo shoot delays, if guide QA fails, if Canva bugs emerge, if email sequence broken), (4) 72-hour pre-launch dry-run procedure (full end-to-end workflow test without going live), (5) launch-day command center setup (Slack channels, monitoring dashboard links, on-call rotation, issue tracking template)
+**Feasibility**: HIGH — Phase 2 production timeline exists (Session 952), Canva assets upscaled (Session 952), tracking infrastructure built (PHASE_2_ANALYTICS_STRATEGY.md)
+**Effort estimate**: 2.5-3 hours
+**Deliverable**: `projects/seedwarden/PHASE_2_GO_NO_GO_DASHBOARD.md` (5 verification procedures with audit checklists, daily pre-launch timeline, contingency decision trees, dry-run script, launch-day SOPs, monitoring alert thresholds, escalation contact list with escalation windows)
+**Why now**: May 30 is 18 days away; production timeline approved but no concrete verification procedure exists. Dashboard eliminates launch-day surprises and enables confident GO/NO-GO decision at May 28 evening checkoff.
+**Blocker**: None (Phase 2 execution infrastructure complete)
+**Next Step**: Deliver dashboard May 13 → Phase 2 team uses daily May 28-29 for verification preparation → May 30 09:00 UTC launch with zero ambiguity on readiness status
+
+---
+
+### ⏳ Item 26: Resistance-Research Domains 48-51 Parallel Production Roadmap
+**Status**: QUEUED (Session 953, May 12 2026)
+**Impact**: HIGH — Phase 2 domain expansion unlocks election season advocacy (June-November 2026); Domains 48-51 are the critical June-July window
+**Goal**: Create concrete production roadmap for Domains 48-51 parallel development: (1) domain specification summaries (Criminal Justice Civic Exclusion, Environmental Justice, LGBTQ+ Rights, Campaign Finance — each with evidence requirement checklist, research scope boundaries, estimated word count/research hours), (2) 8-week parallel execution plan with research wave 1 (June 1-15 Domains 48+51), wave 2 (June 15-July 15 Domains 49+50), production bottleneck analysis (interviews vs secondary research vs primary research tradeoffs), (3) stakeholder network expansion requirements (3 new network categories documented in DOMAIN_EXPANSION_ROADMAP, need contact outreach timeline + pitch variants), (4) evidence acquisition checklist (for each domain: academic sources, policy documents, influencer interviews needed), (5) quality gate procedure (self-check protocol + peer review with existing domain authors), (6) publication sequencing for distribution paths (which domains launch with Phase 1 amplification, which hold for Phase 2 institutions)
+**Feasibility**: HIGH — DOMAIN_EXPANSION_ROADMAP_PHASE_2_DOMAINS_44_50.md exists (2,600 words with 7-domain scoping), PHASE_2_DOMAIN_CANDIDATES.md exists (3,800 words evaluating Candidates A/B/C), influencer networks documented (Phase 1 distribution path)
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/resistance-research/DOMAINS_48_51_PRODUCTION_ROADMAP.md` (domain specification sheets with evidence checklists, 8-week execution Gantt with research waves and deliverable milestones, stakeholder network expansion plan with 25+ target contacts per domain, evidence acquisition checklist per domain, QA gate procedures matching SelfCheckProtocol pattern, publication sequencing matrix across 3 distribution paths, resource allocation for parallel research, contingency timeline if June research compresses to July)
+**Why now**: May 28 Domain 42 deadline creates strategic inflection point. Post-May-28 (May 29-30), research capacity frees up for Phase 2 domain production. Preparation now enables June 1 research start without planning friction. Domains 48-51 research + guide production = 8 weeks, must complete by Aug 20 to support September pre-midterm distribution.
+**Blocker**: None (framework-independent work, influencer network already mapped in Phase 1 materials)
+**Next Step**: Deliver May 13 → if Phase 1 distribution launched successfully, research team begins June 1 Domains 48+51 using roadmap execution template → weekly research waves with self-check validation gates
+
+---
+
+### ⏳ Item 27: Cybersecurity-Hardening Tier 2 Expansion Architecture (Post-Phase-1)
+**Status**: QUEUED (Session 953, May 12 2026)
+**Impact**: MEDIUM — Phase 1 (Tier 1) distribution June 1-15 target; Tier 2 readiness framework needed for post-Phase-1 decision gates
+**Goal**: Create Tier 2 expansion architecture covering (1) Tier 2 cohort selection framework (selection criteria: geographic distribution, sector diversity, prior advocacy experience, organizational IT maturity, media amplification capacity), (2) phased pilot architecture (Pilot Group A: June 15-July 15 parallel Phase 1, Pilot Group B: August 1-Sept 1 conditional on A success), (3) 12-week Tier 2 pilot timeline (Week 1-4 parallel Phase 1 prep, Week 5-8 pilot delivery + feedback, Week 9-12 adoption decisions + Tier 3 readiness gate), (4) success metrics per phase with continuation decision thresholds (adoption rate >60%, engagement >40%, policy uptake tracking), (5) contingency scenarios (Phase 1 low adoption impacts Tier 2 timing, pilot organizations request modifications, security incident triggers escalation), (6) Tier 3 readiness gate decision criteria (conditions for full scale to 50+ organizations)
+**Feasibility**: HIGH — TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md exists (5,800 words with KPI targets), TIER_2_PILOT_LAUNCH_READINESS.md exists (17 KB with 8-week timeline), Tier 2 messaging templates complete (Session 942)
+**Effort estimate**: 2.5-3 hours
+**Deliverable**: `projects/cybersecurity-hardening/TIER_2_EXPANSION_ARCHITECTURE.md` (cohort selection rubric with 15+ candidate organizations pre-screened, 12-week Tier 2 timeline with Phase 1 dependency gates, success metrics per phase with go/no-go thresholds, risk escalation playbook, Tier 3 readiness criteria scoring matrix, resource allocation table comparing Phase 1 vs Tier 2 workload, contingency activation triggers with decision points)
+**Why now**: Phase 1 distribution imminent (June 1-15); Phase 1 success measurement framework (Item 17) is ready for Week 2 metrics review. Tier 2 architecture bridges the Phase 1→Tier 2 decision gate at June 15. Pre-staging enables confident Tier 2 launch decision without waiting for Week 6 data analysis.
+**Blocker**: None (depends on Phase 1 execution starting, which is imminent)
+**Next Step**: Deliver May 13 → User approves Phase 1 launch June 1 → parallel preparation Week 1-4 using Tier 2 architecture → Week 5 Tier 2 pilot launch coordination
+
+---
+
 ## Previously Queued (Completed Session 941-942)
 
 ### ✅ Item 18: Jetson Resilience Assessment — POST-GATE-1 READY

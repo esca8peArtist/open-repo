@@ -1,5 +1,43 @@
 # Check-in
 
+## Session 954 — May 12, 2026 23:15 UTC (Exploration Queue Items 24-27 Planning)
+
+**Status**: ✅ QUEUE ITEMS 24-27 CREATED — Medium-term infrastructure staging for May 14-June deployment
+
+### What Was Done
+
+**✅ Orchestrator Orientation**: Reviewed state across all files (ORCHESTRATOR_STATE, BLOCKED, PROJECTS, INBOX, EXPLORATION_QUEUE). Session 953 completed Items 21-22 (Stockbot checkpoint framework, Seedwarden Bundle E launch). No active blocks. Usage nominal (67.7% Sonnet).
+
+**✅ Exploration Queue Items 24-27 Created**: Spawned subagent to build 4 high-impact items for May 13-June deployment horizon:
+- **Item 24**: Stockbot Gate 2 Implementation Guide (HIGH impact, 3-4 hrs, actionable May 15 post-checkpoint)
+- **Item 25**: Seedwarden Phase 2 Go/No-Go Dashboard (HIGH impact, 2.5-3 hrs, actionable May 13)
+- **Item 26**: Resistance-Research Domains 48-51 Roadmap (HIGH impact, 3-4 hrs, actionable May 29+)
+- **Item 27**: Cybersecurity-Hardening Tier 2 Architecture (MEDIUM impact, 2.5-3 hrs, actionable May 30+)
+
+**Key Decision**: Since near-term autonomous work (Items 21-22) is complete and most projects await user actions (checkpoint execution, path decision, plant orders), medium-term queue items provide valuable preparation for upcoming deadlines without requiring user input.
+
+### Needs Your Input
+
+1. **Domain 42 Path Decision** (if not already provided): Path A / A+37 / B — impacts Domains 48-51 roadmap sequencing (Item 26)
+2. **Checkpoint Execution** (May 14 20:00 UTC): Use Item 22 framework to classify outcome and trigger Item 24 (Gate 2 Implementation Guide) deployment
+3. **Seedwarden Launch Approval** (Bundle E): If approving May 19-22 launch, user begins guide writing May 13-14 (15 hours)
+
+### Session Metrics
+
+- **Items completed**: 0 (focused on planning/staging)
+- **Items queued**: 4 (Items 24-27, total ~12-14 hours equivalent effort)
+- **Orchestration updates**: WORKLOG.md appended, CHECKIN.md updated
+- **Usage impact**: ~40K tokens (subagent for queue item creation)
+
+### Next Session Priorities
+
+1. **May 14 20:00 UTC critical**: Execute stockbot checkpoint (Item 22 framework ready)
+2. **May 13-14**: Optional — Begin Items 24, 25, 26 if session time available
+3. **May 15+**: Execute Item 24 based on checkpoint outcome
+4. **May 28-29**: Use Item 25 dashboard for Phase 2 pre-launch verification
+
+---
+
 ## Session 953 — May 12, 2026 22:28 UTC (Parallel Exploration Queue Execution: 3 Deliverables, 3 Urgent Actions)
 
 **Status**: ✅✅✅ THREE EXPLORATION ITEMS COMPLETE — **Three urgent user actions today/May 13** for May 12-14-30 critical deadlines
