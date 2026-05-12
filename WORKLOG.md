@@ -4,6 +4,61 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 00:28 — Session 957 — Stockbot Alpaca API Checkpoint Query (Block Resolution)
+
+**Time**: 00:28 UTC (33 hours before May 14 20:00 UTC checkpoint)
+
+**Status**: ✅ CRITICAL BLOCK RESOLVED
+
+### Work Summary
+
+#### Block Resolution: Jetson DB Sync Gap
+
+**Problem**: Jetson crontab referenced `sync_db_from_alpaca.py` (doesn't exist). Local Docker database contained only 90 integration test rows with zero real production trades. May 14 checkpoint query would always return 0 confirmed_round_trips regardless of actual Alpaca trading activity.
+
+**Solution (Option B)**: Created `scripts/may14_checkpoint_query_alpaca.py` — new checkpoint script that queries Alpaca API directly instead of local database.
+
+**Implementation**:
+1. Created `/projects/stockbot/scripts/may14_checkpoint_query_alpaca.py` (382 lines)
+2. Script uses OrderExecutor to connect to Alpaca and query closed orders since May 5
+3. Calculates metrics: total_fills, buy_fills, sell_fills, aapl_model_sells, confirmed_round_trips, P&L
+4. Classifies scenario: PASS / NEAR_MISS / FAR_MISS_C1 / FAR_MISS_C2
+5. Tested with `--verify` flag: Alpaca connection successful
+
+**Test Results** (May 12 23:28 UTC):
+- ✅ Alpaca connectivity: OrderExecutor initialized, credentials valid
+- ✅ Query execution: Returns 23 fills since May 5 (19 May 5 liquidations + 4 others)
+- ✅ Scenario classification: FAR_MISS_C1 (0 AAPL sells, which is expected before h+10 exit)
+- ✅ P&L calculation: Correctly sums/filters order data
+- ✅ Jetson SSH verification: AAPL position still open (h+10 exit not yet fired)
+
+**Usage**: `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py`
+
+#### Files Modified/Created
+- ✅ **New**: `/projects/stockbot/scripts/may14_checkpoint_query_alpaca.py` (382 lines, production-ready)
+- ✅ **Updated**: `BLOCKED.md` — Moved DB sync block to Resolved Archive (Session 957, 00:28 UTC)
+
+#### Commits
+1. Submodule commit: `projects/stockbot` — `ff47ab1` (feat: Add Alpaca API checkpoint query script)
+2. Main repo: `085c0ccb` (chore: Move DB sync blocker to Resolved Archive)
+3. Main repo: `540335fb` (chore: Update stockbot submodule reference)
+
+### Strategic Impact
+
+- **Removes latency risk**: Checkpoint can execute at May 14 20:00 UTC without waiting for DB sync issues
+- **Alpaca as source of truth**: Direct API queries eliminate local database as single point of failure
+- **Backwards compatible**: Script can coexist with future DB sync fixes; not blocking other work
+- **May 14 critical deadline**: All prerequisite infrastructure now ready for checkpoint execution
+
+### Next Steps
+
+1. May 14 19:00 UTC: Pre-checkpoint health verification (documented in MAY_14_CHECKPOINT_READINESS.md)
+2. May 14 20:00 UTC: Execute `uv run python scripts/may14_checkpoint_query_alpaca.py` at market close
+3. Apply decision framework (POST_GATE_1_RESPONSE_FRAMEWORK.md) to classify outcome
+4. Execute next steps per scenario (PASS / NEAR_MISS / FAR_MISS)
+
+---
+
 ## 2026-05-13 23:30 — Session 956 — Stockbot May 14 Checkpoint Readiness Verification
 
 **Time**: 23:30 UTC (35 hours before May 14 20:00 UTC checkpoint)
