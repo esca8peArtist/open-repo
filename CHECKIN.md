@@ -1,5 +1,51 @@
 # Check-in
 
+## Session 948 — May 12, 2026 23:15 UTC (Architecture Mismatch Investigation: Stockbot Awaiting User Decision)
+
+**Status**: 🛑 ALL AUTONOMOUS WORK BLOCKED — All top projects awaiting user approval or decision
+
+### Executive Summary
+
+Performed full orientation on ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md. All five top-priority projects are in "awaiting user approval/decision" or "blocked on named external dependency" state. No autonomous work is available.
+
+**Critical Finding**: Stockbot architecture mismatch identified in May 12 checkpoint (Session 944). Local project documents describe 2-session AAPL equity system (lgbm_ho + ridge_wf), but active-sessions.json shows 52 equity stacker sessions across 52 tickers, and the May 12 checkpoint revealed Jetson is running options_live_session instead. This is a fundamental architectural discrepancy requiring user clarification.
+
+### Project Status Summary
+
+| Project | Priority | Status | Blocker | User Action |
+|---------|----------|--------|---------|-------------|
+| **stockbot** | P1 | Active | Architecture mismatch | Clarify: 2-session AAPL equity OR options system? |
+| **resistance-research** | P2 | Complete | Distribution path | Select: Path A / A+37 / B |
+| **cybersecurity-hardening** | P3 | Complete | User approval | Approve Phase 1 launch + Day 1 send date |
+| **mfg-farm** | P4 | Ready-to-test | Test print result | Run 0.20mm PLA+ test print, evaluate snap-arm tolerance |
+| **seedwarden** | P5 | Assets ready | User setup | Kit account (deadline May 20), social accounts, Canva setup |
+| **open-repo** | P6 | PR awaiting merge | PR review | (External reviewer, no action needed) |
+
+**Assessment**: The current session has no autonomous work available. All pathways forward require explicit user decisions or approvals. Session completed with orientation and state documentation.
+
+### What I Need from You
+
+**URGENT (blocks P1 — stockbot)**:
+1. **Active-sessions.json discrepancy**: Does the 52-ticker stacker configuration in active-sessions.json represent what SHOULD be running, or is it stale?
+2. **May 12 checkpoint data**: The checkpoint query found 6 options fills on May 12 but 0 AAPL equity trades since May 5. Is the options system the intended deployment, or should the AAPL equity system be running instead?
+3. **Decision for May 14 checkpoint**: Once clarified, I can execute the May 14 20:00 UTC checkpoint and proceed with Gate 2 work.
+
+**NON-URGENT (clarifications that enable next sessions)**:
+1. **Resistance-research**: Select distribution path (A / A+37 recommended / B) — 16 days to May 28 DEA deadline
+2. **Cybersecurity-hardening**: Approve Phase 1 launch and confirm threat accuracy — Phase 2 research can begin immediately after
+3. **Seedwarden**: Create Kit.com account (5 min, deadline May 20) and social accounts — enables May 30 Phase 2 launch
+4. **mfg-farm**: Run 0.20mm test print and evaluate snap-arm FDM tolerance
+
+### Orchestration Files
+
+- ✅ ORCHESTRATOR_STATE.md — Current as of 2026-05-12 21:11:39Z
+- ✅ BLOCKED.md — Stockbot architecture mismatch remains active, unresolvable without user input
+- ✅ INBOX.md — No new items
+- ✅ PROJECTS.md — All statuses accurate
+- ⏳ WORKLOG.md — Will be updated when committing this session
+
+---
+
 ## Session 947 — May 12, 2026 22:35 UTC (Parallel Autonomous Wave Complete: Tech Blockers Cleared, User Decisions Needed)
 
 **Status**: ✅ WORK COMPLETE — Two parallel autonomous workstreams delivered
