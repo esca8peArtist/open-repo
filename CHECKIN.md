@@ -1,5 +1,62 @@
 # Check-in
 
+## Session 946 — May 12, 2026 21:31 UTC (State Checkpoint: Confirming Hold Pattern Pending User Decisions)
+
+**Status**: ✅ STABLE — All orchestration files current, waiting on user inputs for next wave
+
+**Usage**: Sonnet ~70% (approaching weekly reset in 2 hours, healthy)
+
+### Session Summary
+
+Completed post-Session-945 state checkpoint. Confirmed that all high-priority projects are in "ready to proceed pending user decision/action" state:
+
+**Immediate User Decisions Needed** (by when indicated):
+1. **Stockbot architecture clarification** (CRITICAL — blocks highest priority project):
+   - Is the system supposed to run: (A) 2-session AAPL equity (documented), or (B) options-only (currently deployed)?
+   - Determines May 14 checkpoint interpretation and next steps
+   - No autonomous work possible until clarified
+
+2. **Seedwarden Kit account + social accounts** (TODAY, May 12):
+   - Kit.com account creation (DNS deadline May 20)
+   - Instagram/TikTok/Pinterest accounts
+   - Canva Brand Kit setup (30 min + design time)
+   - Estimated time: <1 hour setup, enables May 30 launch
+
+3. **Resistance-Research Section 591 outcome** (May 13 scheduled):
+   - House Appropriations Committee markup vote on Section 591
+   - Determines Tier D (State AGs) email template language
+   - Execution ready; send protocol prepared; executing May 13-18 compressed timeline
+
+### Known Upcoming Events
+
+| Date | Event | Project | Dependency |
+|------|-------|---------|-----------|
+| May 13 | Section 591 vote | resistance-research | Confirms Tier C/D template language |
+| May 14 20:00 UTC | Stockbot checkpoint | stockbot | Depends on architecture decision |
+| May 17 | Zone card PDF deadline | seedwarden | Photo sourcing must complete |
+| May 20 | Kit DNS hard deadline | seedwarden | Kit account must be created May 12 |
+| May 28 | Domain 42 DEA hearing | resistance-research | Wave 4 outreach must complete |
+| May 30 | seedwarden Phase 2 launch | seedwarden | Kit + Canva + photo fixes required |
+
+### Orchestration Files Status
+
+All state files current and stable:
+- ✅ PROJECTS.md — All project statuses accurate as of May 12 21:00 UTC
+- ✅ BLOCKED.md — Stockbot architecture block documented with resolution criteria
+- ✅ INBOX.md — No new items
+- ✅ WORKLOG.md — Session 946 entry added
+
+### Next Autonomous Action
+
+Trigger after user provides:
+1. Stockbot architecture decision → May 14 checkpoint execution ready
+2. Seedwarden Kit account confirmation → Autonomous photo + PDF work can proceed
+3. May 13 Section 591 outcome → Resistance-research execution trigger
+
+**Session complete.** Awaiting user input on above decisions.
+
+---
+
 ## Session 945 — May 12, 2026 20:41–21:30 UTC (Parallel Autonomous Exploration: Seedwarden Validation, Domain 42 Outreach, Open-Repo Review)
 
 **Status**: ⚠️ FINDINGS SUMMARY — Three parallel exploration items completed; immediate user actions required for seedwarden and resistance-research.
