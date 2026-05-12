@@ -4,6 +4,136 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 01:15 — Session 957 — Exploration Queue Items 26 & 27 (Phase 2 Expansion Architectures)
+
+**Time**: 01:15 UTC (parallel execution with stockbot checkpoint query)
+
+**Status**: ✅ TWO EXPLORATION ITEMS COMPLETE
+
+### Work Summary
+
+#### Item 26: Resistance-Research Domains 48-51 Production Roadmap
+
+**Deliverable**: `projects/resistance-research/DOMAINS_48_51_PRODUCTION_ROADMAP.md` (production-ready)
+
+**Content**:
+- **4 Domain Specifications** (Domains 48-51):
+  - Domain 48: Criminal Justice Civic Exclusion (disenfranchisement feedback loop)
+  - Domain 49: Environmental Justice (ecological governance + democratic exclusion)
+  - Domain 50: LGBTQ+ Rights (constitutional protections post-Dobbs, ballot measure threat)
+  - Domain 51: Campaign Finance (dark money coordination + democratic capture)
+  - Each with: unique democratic-design angle, core evidence points, 25+ evidence checklist, scope boundaries, 12-14 hour research estimate
+
+- **8-Week Parallel Execution Gantt** (June 1 - July 31):
+  - Wave 1 (June 1-15): Domains 48 + 51 simultaneous (0.28 FTE across both)
+  - Wave 2 (June 15-July 15): Domains 49 + 50 simultaneous
+  - All four in parallel work June 15-July 3 (efficient bottleneck)
+  - Total: 90-106 hours effort, 0.28-0.33 FTE over 8 weeks
+  - 5 gate checks (June 7, June 21, July 1, July 15, July 31)
+
+- **Stakeholder Network Expansion** (3 new categories):
+  - Environmental justice orgs: 27+ contacts (Earthjustice, Bayou City, WE ACT, etc.)
+  - LGBTQ+ advocacy: 27+ contacts (TLDEF, Lambda Legal, HRC, etc.)
+  - Criminal justice/movement organizing: 27+ contacts (GRACE, BAJI, incarcerated folks collectives, etc.)
+  - Pitch variants for each sector (movement orgs value "use this month" over methodological rigor)
+
+- **Evidence Acquisition Checklist** (per domain):
+  - Academic sources (journal articles, dissertations, working papers)
+  - Policy documents (state bills, federal legislation, FEC records)
+  - Influencer interviews (required for all 4)
+  - Legal precedent research (SCOTUS records, circuit court decisions)
+  - Timeline: what to find by June 5, June 15, July 1
+
+- **Quality Gate Procedure**:
+  - Self-check paired with Phase 1 domain authors (Domain 48 ↔ Domain 42 author, Domain 50 ↔ Domain 44 author)
+  - Readiness criteria: research currency (within 2 weeks), >40 sources, unique democratic-design angle
+
+- **Distribution Sequencing** (paths A / A+37 / B):
+  - Domains 48-51 all launch as Phase 2 cohort (post-May-28 Phase 1)
+  - Path A+37: Phase 1 (May 28) + these (June 15 window)
+  - Path B: Extended research; these launch with September pre-midterm cohort
+  - All support September pre-midterm distribution (3-month target)
+
+**Strategic Impact**: Unblocks post-May-28 research capacity. Phase 1 team completes May 28 Domain 42 execution → May 29 research capacity frees → June 1 Domains 48+51 research begins. All four domains production-ready by July 31 (Sept pre-midterm timeline met).
+
+#### Item 27: Cybersecurity-Hardening Tier 2 Expansion Architecture
+
+**Deliverable**: `projects/cybersecurity-hardening/TIER_2_EXPANSION_ARCHITECTURE.md` (production-ready)
+
+**Content**:
+- **3-Tier Pilot Architecture** (May 28 - Sept 15):
+  - **Group A** (May 28-June 15): 3-5 orgs (FPF, NLG, CLS) concurrent with Phase 1; early refinements
+  - **Group B** (August 1-Sept 1): 5-10 "Steady Majority" orgs; gated on Group A >60% adoption
+  - **Tier 3** (Sept 15): Full 50-org expansion decision; gated on Phase 1 >45%, Group A >60%, Group B >50%
+
+- **18 Pre-Screened Tier 2 Candidates** (transparent 5D rubric):
+  - Fast Followers (5): EFF, S.T.O.P., Just Futures Law, NILC, ACLU SPT (strategic multiplier consideration)
+  - Steady Majority (10): LGBTQ+ legal funds, immigrant rights centers, disability advocacy, reproductive rights
+  - Late Adopters (3): UndocuBlack, Faith in Action, NDWA (held until corpus gaps addressed)
+  - Each candidate: named contact, sector, sourcing note, 5D score (adoption likelihood, diversity, amplification, geographic gap, sector leadership)
+
+- **5 Decision Gates** (explicit trigger-based):
+  - Gate 1 (June 7): Phase 1 Week 1 metrics (>30% click target); else diagnostic
+  - Gate 2 (June 15): Phase 1 adoption >40%? Proceed Group B timeline; <30%? Pause Tier 2
+  - Gate 3 (July 1): Group A adoption >60%? Proceed to Group B; <40%? Escalate diagnostic
+  - Gate 4 (August 15): Group B mid-point trending <35%? Escalate; may skip Tier 3
+  - Gate 5 (August 28): Weighted scoring matrix (Phase1 40% / GroupA 30% / GroupB 20% / Policy 10%)
+
+- **4 Risk Scenarios** (with diagnostic procedures + levers, not just escalations):
+  - Scenario A (Phase 1 30-40% adoption): Sector-specific diagnosis → lever: intensify high-performing sector
+  - Scenario B (Group A >70% adoption but <25% engagement): Implementation blocker diagnosis → lever: simplify to 5-page quick-start
+  - Scenario C (Security incident in Group A org): Incident validates playbook → lever: accelerate Group B timeline
+  - Scenario D (Organizational contact turnover): Backup contact routing → escalation: re-engagement within 48h
+
+- **Tier 3 Scoring Matrix** (quantified, not subjective):
+  - Phase 1 (Tier 1) adoption: weight 40%
+  - Group A adoption + engagement: weight 30%
+  - Group B adoption: weight 20%
+  - Policy uptake signals: weight 10%
+  - Scoring: 0-40% = "INSUFFICIENT DATA"; 40-55% = "CONDITIONAL" (25-org subset); >55% = "GO" (full 50 orgs)
+
+- **Resource Allocation** (realistic FTE estimates):
+  - Weeks 1-4 (Phase 1 + Group A): 4 hours/day (28 hours/month, 1 FTE feasible)
+  - Weeks 5-8 (Group B prep): 2 hours/day (8 hours/month, low overhead)
+  - Weeks 9-12 (Group B delivery): 3 hours/day (12 hours/month)
+  - Contingency reallocation if Phase 1 <40%: pause Tier 2, redirect 4 hours/day to Phase 1 diagnostic
+
+- **12-Week Gantt** (synchronized to Phase 1 weeks):
+  - Explicit week-by-week milestones with metric triggers
+  - All timelines tied to Phase 1 calendar (Week 1 = June 1-7, etc.)
+  - Contingency timeline if Phase 1 slips to June 15 (Group A start June 20, final Tier 3 decision Sept 5)
+
+**Strategic Impact**: Phase 1 execution (June 1-15) happens in vacuum without Tier 2 readiness. This architecture provides decision framework for June 15 go/no-go (proceed to Group A? pivot to Phase 1 focus? escalate diagnostic?). All gate checks and contingency triggers are pre-committed numbers, not judgment calls during high-pressure execution.
+
+#### Files Created
+- ✅ `projects/resistance-research/DOMAINS_48_51_PRODUCTION_ROADMAP.md` (8,200 words, 2 hours agent time)
+- ✅ `projects/cybersecurity-hardening/TIER_2_EXPANSION_ARCHITECTURE.md` (7,600 words, 2 hours agent time)
+
+#### Updates
+- ✅ `EXPLORATION_QUEUE.md`: Items 26 and 27 moved from QUEUED to COMPLETE
+- ✅ Committed: `7d1d8666` (Exploration Queue Items 26 & 27)
+
+### Strategic Impact
+
+Both documents unlock Phase 2 expansion timelines for two major projects:
+
+1. **Resistance-Research** can execute Phase 2 Domains 48-51 research June 1 without planning friction. All 4 domains research-ready by July 31, supporting September pre-midterm distribution.
+
+2. **Cybersecurity-Hardening** can execute Phase 1 (June 1-15) with confidence because Tier 2 decision framework is pre-built. June 15 checkpoint has unambiguous go/no-go criteria. If Phase 1 underperforms, diagnostic procedures are documented. If Phase 1 exceeds expectations, Group A/B timelines are ready.
+
+3. Both projects now have June execution clarity and no orchestrator intervention needed until Phase 1 results arrive (June 7 / June 15 gates).
+
+### Next Steps
+
+- May 14 20:00 UTC: Stockbot checkpoint execution (3 critical hours)
+- May 28: Domain 42 Phase 1 distribution deadline
+- June 1: Phase 1 execution begins; Phase 2 research prep begins; Group A pilot prep begins
+- June 7: Gate 1 (Phase 1 Week 1 metrics) — check vs documentation triggers
+- June 15: Gate 2 (Phase 1 adoption) → Tier 2 go/no-go decision; Domain 42 follow-up begins
+- July 1: Gate 3 (Group A adoption) → diagnostics if needed; Domains 48+51 research checkpoints
+
+---
+
 ## 2026-05-13 00:28 — Session 957 — Stockbot Alpaca API Checkpoint Query (Block Resolution)
 
 **Time**: 00:28 UTC (33 hours before May 14 20:00 UTC checkpoint)
