@@ -63,6 +63,24 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ## Completed Items (Session 941)
 
+### ✅ Item 18: Jetson Resilience Assessment — POST-GATE-1 READY
+**Status**: COMPLETE (Session 941, May 12 2026, 20:30 UTC)
+**Effort**: 1.5 hours
+**Deliverable**: `projects/stockbot/JETSON_RESILIENCE_ASSESSMENT.md` (5.4 KB)
+**Content**: Comprehensive 6-part post-Gate-1 Jetson resilience evaluation:
+1. **System health monitoring**: Critical metrics (disk, memory, CPU, I/O, network, DB size), thresholds (WARN/CRIT), automated health-check.sh script
+2. **Failure recovery procedures**: Container crash recovery (2-3 min recovery time), disk full recovery (5-10 min), database corruption recovery with backup restore
+3. **Network reliability**: SSH/API/Alpaca connectivity verification, latency baseline testing (50-150ms expected), SSH tunnel fallback for unstable ISP
+4. **Power & data persistence**: Power cycle resilience test procedure, systemd auto-start verification, automated daily database backups (14-day history)
+5. **Monitoring & alerting**: Monitoring stack matrix, Discord alert routing (WARN/CRIT levels), weekly/monthly review cadence
+6. **Gate 2 recommendations**: Pre-deployment checklist (health-check script, power cycle test, backup verification, baseline testing), known limitations (disk I/O >85%, ISP latency variability, non-market-hours-only testing)
+
+**Key findings**: Jetson system is well-positioned for 24/7 operation post-cleanup. All critical failure modes have documented recovery procedures with specific recovery times (2-10 min range). Health check automation enables hourly monitoring without manual intervention.
+
+**Strategic impact**: Gate 2 deployment can proceed with confidence. Risk mitigation checklist provides clear pre-deployment actions. Post-Gate-1, this assessment is the final infrastructure prerequisite.
+
+---
+
 ### ✅ Item 19: Domain 42 (DEA Hearing) — Outreach Amplification Strategy
 **Status**: COMPLETE (Session 941, May 12 2026, 20:10 UTC)
 **Effort**: 1.5 hours
