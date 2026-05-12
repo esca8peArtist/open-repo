@@ -49,6 +49,127 @@ Investigation revealed a **critical discrepancy between documented and actual ar
 
 **Checkpoint result**: FAR_MISS_C1 (0 confirmed round trips, timing-only classification)
 
+---
+
+## 2026-05-12 20:41 — Session 945 (Autonomous) — Parallel Agent Execution: Seedwarden, Resistance-Research, Open-Repo
+
+**Time**: 20:41–21:30 UTC (orchestrator orientation + parallel agent spawning + result processing)
+
+### Orientation
+
+Read ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md. Status: Stockbot has critical architecture mismatch requiring user manual decision (cannot proceed autonomously). All highest-priority projects (resistance-research, cybersecurity-hardening, mfg-farm, seedwarden Track A) have user-action blockers. INBOX has no new items.
+
+Selected highest-ROI unblocked exploration queue items with time-sensitive deadlines:
+1. **seedwarden Phase 2 Pre-Launch Asset Validation** (May 30 launch = 18 days)
+2. **resistance-research Domain 42 May 28 Deadline Outreach** (May 28 deadline = 16 days)
+3. **open-repo PR #1 Merge Readiness Assessment** (awaiting review since April 26)
+
+### Parallel Agent Execution Results
+
+#### 1. Seedwarden Phase 2 Asset Validation (seedwarden agent)
+
+**Overall Verdict**: CONDITIONAL GO → currently NO-GO (achievable May 30 with TODAY action items)
+
+**Critical Blockers** (all executable today):
+- Kit account not created (DNS deadline May 20 — 48-hour propagation window)
+- Canva Brand Kit not started (recoverable today, 30 min + design time)
+- Photo resolution: 12/18 wild-edibles photos below Canva minimum 1200x800
+- Etsy: native-plants-regional-guide.pdf = 56.96 MB (Etsy limit 5 MB, flagged since April 26)
+- Social media accounts (Instagram, TikTok, Pinterest) not created
+- Lifestyle photos not transferred to project directory
+- SEEDWARDEN15 Etsy coupon not created
+
+**Key Dates** (hard deadlines):
+- May 12 (TODAY): Kit account + DNS, Canva Brand Kit, social accounts
+- May 17: Zone card PDFs exported (critical path gate)
+- May 20: Kit account MUST exist (DNS propagation)
+- May 28: Full preflight check
+- May 29: Launch broadcast scheduled in Kit
+
+**Output**: Created `/projects/seedwarden/PHASE_2_LAUNCH_VALIDATION_CHECKLIST.md` with detailed inventory, issue descriptions, and recovery timeline.
+
+**Action**: User must create Kit account + social accounts today (total <1 hour setup). Canva Brand Kit setup can start immediately (30 min + design time May 12-17).
+
+#### 2. Resistance-Research Domain 42 May 28 Deadline Outreach (general-research agent)
+
+**Discovery**: All four requested deliverables already exist (created May 7-9). Real problem is execution gap: May 8-9 Wave 1 sends are now 4 days overdue.
+
+**Critical Issue**: Section 591 House Appropriations markup scheduled May 13 (TOMORROW). Outcome determines email template language for Tier D (State AGs) wave.
+
+**Execution Status**:
+- Tier A (DPA, NORML, LEAP): Send TODAY
+- Tier B (ACLU, Sentencing Project, Brennan Center): Send TODAY or May 13
+- Tier C (MPP, SSDP, Mason Marks, PPI): Send May 13-14
+- Tier D (State AGs, DAGA): Send May 14-15 AFTER Section 591 outcome check
+- Tier E (Press): Send May 17
+- Hard stop: May 18
+
+**Immediate Action**: 
+1. Verify Section 591 May 13 markup outcome
+2. Confirm Washington State AG is Nick Brown (Ferguson became Governor January 2026)
+3. Execute compressed Tier A send today using existing email templates from `domain-42-email-template.md`
+4. Update templates to use May 24 electronic deadline (not May 28 Federal Register date)
+
+**Output**: Comprehensive execution status report identifying compressed 6-day launch protocol May 12-18.
+
+#### 3. Open-repo PR #1 Merge Assessment (open-source-rideshare agent)
+
+**Verdict**: APPROVED — READY TO MERGE
+
+**Test Status**: 194 pass / 4 skip / 0 fail
+
+**Security Review**: All checks pass (trust gates, signature verification, error message vagueness, safe state transitions)
+
+**Merge Checklist**:
+- No conflicts
+- No outstanding review comments
+- No requested changes
+- Draft PR: No
+- CI: Not configured on this repo (but tests pass locally)
+
+**Minor Post-Merge Items** (non-blocking):
+- Replace deprecated `datetime.utcnow()` with `datetime.now(timezone.utc)` before Python 3.13
+- Add rate limiting to admin registration endpoint (project-wide concern, not specific to PR)
+- Consider making `_FAILURE_THRESHOLD = 5` configurable
+- Document partner ID exposure in 404 messages (acceptable for admin-only endpoints)
+
+**Note**: PR targets external `esca8peArtist/open-repo` main branch. Merge requires repository owner action.
+
+**Output**: Full assessment written to `/projects/open-source-rideshare/CHECKIN.md` for merge execution.
+
+### Summary of Actionable Items for User
+
+**URGENT (Today)**:
+- [ ] Seedwarden: Create Kit account + DNS, create social media accounts (Instagram, TikTok, Pinterest)
+- [ ] Resistance-Research: Check Section 591 House Appropriations markup outcome (May 13)
+- [ ] Resistance-Research: Verify Nick Brown as Washington State AG current AG
+- [ ] Resistance-Research: Execute Tier A (DPA, NORML, LEAP) outreach today
+
+**High Priority (Next 2 Days)**:
+- [ ] Seedwarden: Start Canva Brand Kit setup (30 min today, zone design May 12-17)
+- [ ] Seedwarden: Re-source 12 wild-edibles photos at 1200x800 minimum
+- [ ] Seedwarden: Compress native-plants PDF to <5 MB for Etsy
+- [ ] Resistance-Research: Collapse Waves 1-3 into compressed send (Tier A + B today/tomorrow)
+
+**Next 10 Days**:
+- [ ] Seedwarden: Complete all May 17, 20, 22 deadline items (zone PDFs, Etsy photos, Kit end-to-end)
+- [ ] Resistance-Research: Complete Tier C, D, E sends (May 13-17, with Section 591 outcome check)
+- [ ] Open-repo: Merge PR #1 (requires owner action)
+
+### Blockers Status
+
+**Stockbot architecture mismatch** (manual decision): User clarification required on intended system (2-session AAPL equity vs. options trading). Blocking autonomous work.
+
+**Seedwarden Track A** (updated): Now appears to have additional blockers beyond tag corrections (Kit account, Etsy PDF compression, photo resolution). Total work appears 2-3 hours of user setup + photo fixing.
+
+**Resistance-Research Domain 42** (updated): Not blocked on path decision — can execute May 28 outreach with compressed timeline regardless of Phase 1 path selection.
+
+### Files Created/Updated
+
+- `projects/seedwarden/PHASE_2_LAUNCH_VALIDATION_CHECKLIST.md` (seedwarden agent output)
+- `projects/open-source-rideshare/CHECKIN.md` (PR assessment section added)
+- Domain 42 execution infrastructure already exists; no new files created (comprehensive infrastructure already in place)
+
 **Blocking issue**: Cannot determine if this is expected behavior (AAPL h+10 hold not expired until May 14) or a deployment failure (wrong system running). Project status documents 2-session AAPL equity setup; actual engine is options-only. This mismatch blocks Gate 2 preparation and prevents accurate May 14 checkpoint.
 
 **Next action**: Requires user clarification on intended architecture (equity vs options system). Written to BLOCKED.md pending resolution.

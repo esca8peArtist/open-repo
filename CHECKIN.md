@@ -1,5 +1,99 @@
 # Check-in
 
+## Session 945 — May 12, 2026 20:41–21:30 UTC (Parallel Autonomous Exploration: Seedwarden Validation, Domain 42 Outreach, Open-Repo Review)
+
+**Status**: ⚠️ FINDINGS SUMMARY — Three parallel exploration items completed; immediate user actions required for seedwarden and resistance-research.
+
+**Usage**: Sonnet 67.7% (daily reset in ~4.5 hours, healthy)
+
+### Completed Work
+
+#### 1. Seedwarden Phase 2 Pre-Launch Asset Validation
+**Verdict**: CONDITIONAL GO → currently NO-GO (recoverable with TODAY action items)
+
+**Critical Blockers** (all user action required):
+- Kit account not created (DNS deadline May 20 — hard cutoff for 48-hr propagation)
+- Canva Brand Kit not started (recoverable: 30 min setup + design time May 12-17)
+- 12/18 wild-edibles photos below Canva minimum 1200x800 resolution
+- Native Plants PDF = 56.96 MB (Etsy limit 5 MB, broken since April 26)
+- Social media accounts (Instagram, TikTok, Pinterest) not created
+- Lifestyle photos not transferred to `marketing/lifestyle-photos/etsy-ready/`
+- SEEDWARDEN15 Etsy coupon not created
+
+**Key Dates**: 
+- May 12 (TODAY): Kit account, social accounts, Canva Brand Kit
+- May 17: Zone card PDFs (critical path gate)
+- May 20: Hard deadline — Kit DNS must propagate
+- May 30: Launch date
+
+**Recommendation**: User creates Kit account + social accounts today (total <1 hour). Orchestrator can handle photo resolution fix + PDF compression in parallel.
+
+**Output**: `PHASE_2_LAUNCH_VALIDATION_CHECKLIST.md` with detailed inventory and recovery timeline.
+
+#### 2. Resistance-Research Domain 42 May 28 Deadline Outreach
+**Discovery**: All four requested deliverables already exist (created May 7-9). Real gap is execution: Wave 1 sends are now 4 days overdue (today is May 12).
+
+**Immediate Actions**:
+- Verify Section 591 House Appropriations markup outcome (May 13 scheduled)
+- Confirm Nick Brown as current Washington State AG (Bob Ferguson became Governor January 2026)
+- Send Tier A (DPA, NORML, LEAP) TODAY using existing templates
+- Execute compressed 6-day protocol May 12-18 instead of original May 8-9 schedule
+
+**Timeline**:
+- Today: Tier A send
+- May 13-14: Tier B+C send (after Section 591 verification)
+- May 14-15: Tier D State AGs
+- May 17: Tier E Press
+- May 18: Hard stop, no new outreach
+
+**Key Finding**: May 28 deadline is May 24 electronic (email) or May 20 mail (postmark). All existing templates correctly document this.
+
+**Output**: Comprehensive execution status report + compressed 6-day launch protocol.
+
+#### 3. Open-repo PR #1 Merge Assessment
+**Verdict**: ✅ APPROVED — READY TO MERGE
+
+**Test Status**: 194 pass / 4 skip / 0 fail — all checks clean
+
+**Security Review**: All pass (trust gates, signature verification, error messages safe, state transitions secure)
+
+**Minor Post-Merge Items** (non-blocking):
+- Replace deprecated `datetime.utcnow()` before Python 3.13
+- Add rate limiting to admin endpoints (project-wide issue)
+- Consider configurable `_FAILURE_THRESHOLD`
+
+**Note**: PR targets external `esca8peArtist/open-repo` main branch. Requires owner action to merge.
+
+**Output**: Full assessment written to CHECKIN.md under "PR Review Assessments" section for owner action.
+
+### Needs Your Input
+
+**URGENT (Today)**:
+1. Seedwarden: Create Kit account + DNS, create social accounts (Instagram, TikTok, Pinterest)
+2. Resistance-Research: Verify Section 591 House Appropriations markup outcome (May 13)
+3. Resistance-Research: Verify Nick Brown as current Washington State AG
+
+**High Priority (Next 2 Days)**:
+1. Seedwarden: Start Canva Brand Kit setup (30 min today + design time)
+2. Seedwarden: Re-source 12 wild-edibles photos at 1200x800 minimum
+3. Seedwarden: Compress native-plants PDF to <5 MB
+4. Resistance-Research: Execute Tier A + B outreach (today/tomorrow)
+
+**Next 10 Days**:
+1. Seedwarden: Complete May 17, 20, 22 deadline items
+2. Resistance-Research: Complete Tier C, D, E sends
+3. Open-repo: Merge PR #1 (if owner approval obtained)
+
+### Key Insights
+
+**Seedwarden**: May 30 launch is achievable but requires 2-3 hours of user setup + fixes starting TODAY. Kit account creation is on the critical path (DNS deadline May 20). Photo resolution and PDF compression fixable autonomously if user approves. Track B remains on schedule; Track A has additional blockers beyond tag corrections.
+
+**Resistance-Research**: Domain 42 outreach was pre-built but execution is 4 days overdue. Compressed 6-day timeline still viable for May 28 deadline. Section 591 outcome (decided May 13) determines email template language for Tier D. No dependency on Phase 1 path decision — can execute immediately.
+
+**Open-repo**: PR quality is high; ready for merge. Waiting on external repo owner action.
+
+---
+
 ## Session 944 — May 12, 2026 20:40–20:55 UTC (Stockbot Checkpoint Execution + Critical Blocker Discovery)
 
 **Status**: 🛑 BLOCKED — Critical architecture mismatch discovered. May 12 checkpoint executed; FAR_MISS_C1 result, but underlying cause unclear due to system architecture discrepancy.
