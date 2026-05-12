@@ -1,5 +1,29 @@
 # Check-in
 
+## Session 950 — May 13, 2026 00:30 UTC (Exploration Queue Item 22: Post-Gate-1 Response Framework Enhanced)
+
+**Status**: ✅ CHECKPOINT READINESS ACHIEVED — Framework enhanced with architecture decision integration
+
+**What Was Done**:
+- ✅ **Exploration Queue Item 22 COMPLETE**: Enhanced `POST_GATE_1_RESPONSE_FRAMEWORK.md` with architecture mismatch resolution path
+  - Integrated Sessions 948-949 architecture mismatch discovery into C2 diagnosis logic
+  - Enhanced Step 3 "Verify Database Integrity" with explicit architecture mismatch check (`options_live_session.yaml` vs `active-sessions.json`)
+  - Created new Section 6.2.3 "Architecture Mismatch Resolution" with three-question user decision checklist
+  - Updated recovery paths to flag architecture decision as prerequisite
+  - Ready for May 14 20:00 UTC checkpoint execution
+
+**Framework Status**: ✅ READY for May 14 20:00 UTC checkpoint. All C1/C2/C3 diagnosis paths complete. Architecture mismatch escalation path clear.
+
+**Next Event**: May 14 20:00 UTC checkpoint query execution (user runs checkpoint, framework handles diagnosis and escalation)
+
+**Current Project Blockers** (unchanged from Session 949):
+- **Stockbot**: Awaiting user architecture decision (Items 22 framework READY; decision deadline <24 hours)
+- **Resistance-research**: Phase 1 path decision (Path A / A+37 / B) — deadline May 28
+- **Mfg-farm**: Test print execution (user action)
+- **Seedwarden**: Kit account creation (user action, deadline May 20)
+
+---
+
 ## Session 950 — May 12, 2026 21:45 UTC (Orchestrator Orientation & Blockers Assessment)
 
 **Status**: 🛑 ALL AUTONOMOUS WORK BLOCKED on user decisions — waiting for critical architecture & path clarifications
