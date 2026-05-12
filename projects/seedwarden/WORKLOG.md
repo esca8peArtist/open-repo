@@ -4,6 +4,34 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Pre-Launch Validation Checklist — 2026-05-12
+
+**Task**: End-to-end infrastructure validation for May 30, 2026 Phase 2 launch (18 days remaining). Complete audit across 5 areas: photo assets, guide templates (Canva), email automation (Kit), Etsy integration, and social media assets.
+
+**File created**: `projects/seedwarden/PHASE_2_LAUNCH_VALIDATION_CHECKLIST.md`
+
+**Method**: File-system audit of /projects/seedwarden/ + PIL image dimension testing on all 18 wild-edibles photos. No live platform access.
+
+**Summary of findings**:
+
+- **Area 1 — Photo Assets**: 18/18 files present and named correctly. Resolution test (PIL): 6/18 pass 1200x800 minimum; 12/18 fail. Files confirmed valid JPEG, no corruption. License documentation: 0/18 complete (2/18 partial Wikimedia note). Endangered-species: 0 files; does not block May 30.
+- **Area 2 — Canva/Guide Templates**: Canva Brand Kit not confirmed built; 0/8 zone card PDFs exported; assets/zone-cards/ empty. All specifications complete. Recovery path: Brand Kit today → Zone 5 master May 12-13 → 8 cards by May 17 — still achievable.
+- **Area 3 — Email (Kit)**: Kit account not confirmed created. All 5-email copy, A/B variants, UTM schema, and automation logic are production-ready. DNS hard deadline: Kit account by May 20 (SPF/DKIM 48-hr propagation). Test send to wanka95@gmail.com cannot be executed until account exists.
+- **Area 4 — Etsy**: 0/42 lifestyle photos in etsy-ready/; Phase 1 listing live status unconfirmed (no platform access); native-plants PDF still at 56.96 MB (Etsy 5 MB limit unresolved since Apr 26); SEEDWARDEN15 coupon creation unconfirmed.
+- **Area 5 — Social Media**: Social accounts (Instagram, TikTok, Pinterest) not confirmed created; 0 image files for posting; 90-post calendar written and structured; hashtag spot check passed; links need URL insertion pass before Buffer loading.
+
+**Overall verdict**: CONDITIONAL GO — NO-GO as of May 12. Returns to GO track when: (1) Kit account created + DNS submitted, and (2) Canva Brand Kit set up. Both executable today.
+
+**Critical items carried forward from May 9 report with no new files landed since**:
+- assets/zone-cards/: 0 files (was 0 on May 9)
+- assets/endangered-species-photos/: 0 files (was 0 on May 9)
+- marketing/lifestyle-photos/etsy-ready/: 0 files (was 0 on May 9)
+- Files added since May 9 report: BUNDLE_E_PUBLICATION_PACKAGE.md, phase-2-asset-inventory-checklist.csv, PHASE_2_ENDANGERED_SPECIES_PROCUREMENT_TIMELINE.md, PHASE_2_GUIDE_CONTENT_BLUEPRINT.md (expansion), PHASE_2_PHOTOGRAPHY_LOGISTICS.md, PHASE_2_WRITING_VELOCITY_ANALYSIS.md — all documentation, no asset production.
+
+**Sources reviewed**: phase-2-launch-validation-report.md, phase-2-asset-inventory-checklist.csv, CANVA_SETUP_STATUS.md, KIT_SETUP_NOTES.md, docs/phase-2-operations/phase-2-email-automation-sequence.md, docs/phase-2-operations/phase-2-social-posting-scheduler.csv, ETSY_PHASE_1_UPLOAD_CHECKLIST.md, phase-2-kit-broadcast-copy.md, marketing/lifestyle-photos/ directory, assets/ directory tree, WORKLOG.md (prior entries). Image dimension data: PIL on all 18 files in assets/wild-edibles/.
+
+---
+
 ## Item 21: Bundle E Pre-Publication Acceleration Package — 2026-05-12
 
 **Task**: Exploration Queue Item 21 — Create a comprehensive pre-publication acceleration package for Seedwarden Bundle E (Invasive Edibles) targeting May 19–22 launch.
