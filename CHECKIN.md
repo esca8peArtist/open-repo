@@ -1,5 +1,69 @@
 # Check-in
 
+## Session 947 — May 12, 2026 22:35 UTC (Parallel Autonomous Wave Complete: Tech Blockers Cleared, User Decisions Needed)
+
+**Status**: ✅ WORK COMPLETE — Two parallel autonomous workstreams delivered
+
+**Usage**: Sonnet ~71% (approaching weekly reset in ~1.5 hours, but under safe threshold)
+
+### Session Summary
+
+Executed parallel autonomous work on two unblocked projects while stockbot remains blocked on architecture decision. Both deliverables are ready for execution with user approval.
+
+**Immediate User Decisions Needed** (sorted by deadline):
+
+1. **Resistance-Research Wave 1 Execution** (TODAY, 16 days to May 28 DEA deadline):
+   - **What's ready**: DPA, NORML, LEAP, MPP, SSDP emails ready to send. Gist live. All templates production-ready.
+   - **What you need to do**: (a) Fill [Your name] and [Contact information] in templates, (b) Spot-check 5 email addresses on org websites (5 min), (c) Approve wave sequencing (all 5 today OR core 3 + MPP/SSDP tomorrow)
+   - **Critical path**: Wave 2 must depart by May 14 for NAACP LDF viability (14-day minimum lead time before May 28)
+   - **Effort**: 30 minutes to launch Wave 1
+
+2. **Seedwarden Track B Setup** (THIS WEEK — May 20 Kit DNS hard deadline):
+   - **What's ready**: Photo resolution fixed (12/18 upscaled ✅), PDF compression complete (already under 5 MB ✅). Everything ready for Canva export and May 30 launch.
+   - **What you need to do**: (a) Create Kit.com account (5 min setup, hard deadline May 20), (b) Create Instagram + TikTok + Pinterest accounts (15 min total), (c) Canva Brand Kit setup (30 min, can happen May 12-17). Lifestyle photos require field shoot or stock acquisition (user action, no timeline blocker yet).
+   - **Timeline**: All user setup can complete this week; May 30 launch remains on track
+   - **Effort**: ~1 hour total setup across 3 platforms
+
+3. **Stockbot Architecture Clarification** (BLOCKS highest-priority project):
+   - **What's unclear**: Project status docs say 2-session AAPL equity system (documented), but Jetson is running options_live_session (observed). Database reflects options data, not equity trades since May 5.
+   - **What you need to do**: Clarify which system should run: (A) documented 2-session AAPL equity setup, or (B) currently-deployed options system. This determines May 14 checkpoint interpretation and all subsequent work.
+   - **Impact**: No autonomous stockbot work possible until clarified
+
+### Execution Timeline
+
+| Date | Event | Status | Responsibility |
+|------|-------|--------|---|
+| **TODAY** | Seedwarden photo/PDF: ready | ✅ Complete | Orchestrator delivered |
+| **TODAY** | Resistance-research Wave 1: ready to send | ✅ Ready | User: approve + sender info |
+| **May 13** | House Appropriations Section 591 vote | ⏳ Pending | External (informs Wave 3 language) |
+| **May 14 by midnight** | Resistance-research Wave 2 must send | ⚠️ Critical | User: send on schedule |
+| **May 14 20:00 UTC** | Stockbot Gate 1 checkpoint query | 🛑 Blocked | Depends on architecture decision |
+| **May 17** | Seedwarden Zone card PDF deadline | ✅ Clear | Orchestrator ready (photo path open) |
+| **May 20** | Seedwarden Kit DNS propagation deadline | 🛑 Blocked | User: Kit account setup required |
+| **May 28** | Domain 42 DEA hearing deadline | ⏳ On track | All waves executable by deadline |
+| **May 30** | Seedwarden Phase 2 launch | ⏳ On track | Depends on user setup + photo shoot |
+
+### Orchestration Files Status
+
+- ✅ **WORKLOG.md** — Session 947 entry added with deliverables + timelines
+- ✅ **PROJECTS.md** — No updates needed (status unchanged)
+- ✅ **BLOCKED.md** — Stockbot architecture block still active (cannot auto-resolve)
+- ✅ **INBOX.md** — No new items
+- ⏳ **This file (CHECKIN.md)** — Being updated now
+
+### Next Autonomous Action
+
+**If user provides**:
+- ✅ Seedwarden Kit account creation → Orchestrator can proceed with Phase 2 social account + Canva setup automation
+- ✅ Resistance-Research Wave 1 approval + sender info → User sends immediately; Wave 2 orchestrator sends May 14 if approved
+- ✅ Stockbot architecture clarification → May 14 checkpoint execution ready
+
+**Without user input**: Orchestrator is idle (both active projects require user action/approval).
+
+**Session complete.** All parallel work delivered; awaiting user decisions on three items (seedwarden setup, resistance-research launch, stockbot architecture).
+
+---
+
 ## Session 946 — May 12, 2026 21:31 UTC (State Checkpoint: Confirming Hold Pattern Pending User Decisions)
 
 **Status**: ✅ STABLE — All orchestration files current, waiting on user inputs for next wave

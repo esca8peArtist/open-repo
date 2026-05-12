@@ -4,6 +4,59 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-12 21:45 — Session 947 — Parallel Autonomous Wave: Seedwarden Track B + Resistance-Research Wave 1 Prep
+
+**Time**: 21:45–22:35 UTC (parallel subagent execution + orchestration update)
+
+**Status**: ✅ WORK COMPLETE — Ready-to-execute deliverables handed to user for approval
+
+### Completed Work
+
+#### 1. Seedwarden Track B — Photo + PDF Technical Fixes
+**Subagent**: seedwarden
+**Deliverables**:
+- ✅ **Wild-edibles photo resolution**: 12/18 images upscaled in-place using PIL bicubic to ≥1200x800 Canva minimum (amaranthus-retroflexus, chenopodium-album, cichorium-intybus, daucus-carota, epilobium-angustifolium, fragaria-virginiana, helianthus-tuberosus, nasturtium-officinale, oxalis-stricta, portulaca-oleracea, typha-latifolia, urtica-dioica). All 18 verified PASS. Ready for Canva export.
+- ✅ **Native Plants PDF**: Already 4.91 MB (under 5 MB Etsy limit) — no action needed. Compression unnecessary; file compliant since April 26 compression.
+- ❌ **Lifestyle photos transfer**: Cannot proceed — source files do not exist yet. Requires user action: field photo shoot or stock image acquisition. Both `assets/lifestyle-photos/stock/` and `marketing/lifestyle-photos/etsy-ready/` are empty.
+
+**Timeline Impact**: May 17 Zone card PDF gate unblocked; May 30 launch still on track pending user Kit account + social account setup (original blockers remain, but tech path is clear).
+
+**Status**: Phase 2 Track B technically ready for execution post-user-setup.
+
+#### 2. Resistance-Research Domain 42 — Wave 1 Execution Readiness
+**Subagent**: resistance-research
+**Deliverables**:
+- ✅ **Nick Brown AG confirmation**: Verified current Washington State AG. Template D ready (reference Section 2 of domain-42-email-template-may28-urgency.md).
+- ✅ **Gist verification**: Live at https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab (created May 7, verified May 12). All templates embed current URL.
+- ✅ **Wave 1 execution package**: 5 organizations ready to send (DPA, NORML, LEAP, MPP, SSDP). Core 3 (DPA + NORML + LEAP) prioritized. All templates in `execution/domain-42-email-template-may28-urgency.md` production-ready.
+- ⚠️ **Critical path item**: Wave 2 (NAACP LDF) at lead-time limit — must send Wave 2 by May 14 (14-day minimum routing window before May 28 deadline).
+- **Timeline to deadline**: 16 days (May 28); no contacts foreclosed by 4-day delay.
+
+**User Actions Required**:
+1. Fill [Your name] and [Contact information] in all templates
+2. Spot-check 5 email addresses on organization websites (turnover risk)
+3. Approve wave sequencing: all 5 today OR core 3 (DPA/NORML/LEAP) today + MPP/SSDP tomorrow
+4. Understand critical path: Wave 2 must depart by May 14 for NAACP LDF viability
+
+**Status**: Ready for execution; approval + sender info needed.
+
+### Impact Summary
+
+| Project | Blocker Status | Next Gate |
+|---------|---|---|
+| **seedwarden** | Photo/PDF path clear; lifestyle photo shoot blocking | User: Kit account + social accounts (enables May 30 launch) |
+| **resistance-research** | Wave 1 ready to execute; Wave 2 critical May 14 deadline | User: Sender info + wave sequencing decision |
+| **stockbot** | Architecture decision still pending (Session 944 block unresolved) | User: Equity vs options architecture clarification |
+
+**Waiting on User**: 3 decisions (stockbot arch, seedwarden setup, resistance-research Wave 1 launch)
+
+### Files Committed
+
+- `projects/seedwarden/assets/wild-edibles/`: 12 images upscaled and verified
+- All resistance-research templates and execution guides ready in `projects/resistance-research/execution/`
+
+---
+
 ## 2026-05-12 21:31 — Session 946 — Orchestrator Checkpoint: State Stabilization + Preparation for May 13-14 Events
 
 **Time**: 21:31 UTC (orientation + state assessment)
