@@ -245,16 +245,24 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ## Queued Items (Session 953)
 
-### ⏳ Item 24: Stockbot Gate 2 Implementation Guide — Architecture & Testing
-**Status**: QUEUED (Session 953, May 12 2026)
-**Impact**: HIGH — May 14 checkpoint outcome determines Gate 2 readiness; framework from Item 22 identifies architecture option but implementation guide is next blocker
-**Goal**: Create comprehensive Gate 2 implementation guide covering (1) Option 4 (Ensemble Model Reweighting) selected architecture with concrete code entry points, (2) 4-week phased test plan (Week 1: unit tests for regime weighting, Week 2: backtest integration, Week 3: paper trading, Week 4: live decision thresholds), (3) pre-deployment system checks (Jetson health, API stability, capital allocation), (4) rollback procedures for each phase, (5) success criteria per week with decision gates
-**Feasibility**: HIGH — POST_GATE_1_ARCHITECTURE_OPTIONS.md exists (351 lines), code architecture documented, testing framework ready
-**Effort estimate**: 3-4 hours
-**Deliverable**: `projects/stockbot/GATE_2_IMPLEMENTATION_GUIDE.md` (code entry points with file paths, week-by-week test procedures, system readiness checklist, phase gates with decision criteria, rollback playbooks per phase, Jetson resource allocation table, success metrics aligned to Sharpe ≥1.0 target)
-**Why now**: Item 22 framework is complete but assumes implementation infrastructure is known. Gate 2 decision (May 15-21 depending on Gate 1 outcome) requires detailed execution plan. Preparation now eliminates decision fatigue post-checkpoint.
-**Blocker**: None (framework-independent work)
-**Next Step**: User executes May 14 checkpoint, applies Item 22 framework for outcome classification → if PASS or NEAR-MISS, deploys Item 24 guide immediately for Week 1 test execution May 15
+### ✅ Item 24: Stockbot Gate 2 Implementation Guide — Architecture & Testing
+**Status**: COMPLETE (Session 954, May 13 2026)
+**Impact**: HIGH — May 14 checkpoint outcome determines Gate 2 readiness; this guide is the execution plan for the four-week test window (May 15 – June 9)
+**Effort**: 3-4 hours
+**Deliverable**: `projects/stockbot/GATE_2_IMPLEMENTATION_GUIDE.md` (~4,200 words, 9 sections, production-ready)
+**Content**:
+1. Gate 2 Overview: objectives A (equity expansion) + B (live trading activation), timeline May 15–June 9 with week-by-week milestones
+2. Code Entry Points: exact file paths + line numbers for `trading_session.py` (lines 451, 564, 915, 1179, 1557), `launch_stacker_sessions.py` (lines 112, 156, 204, 267, 471), `position_manager.py` (lines 347, 395, 573, 770, 814), `dashboard_api.py` (endpoints /api/control, /api/risk, /api/portfolio, /api/positions), `risk_manager.py` (lines 325, 451, 483, 525, 606, 746, 1289), `strategy_coordinator.py` (lines 242, 327, 597, 648, 676)
+3. 4-Week Phased Test Plan: Week 1 AAPL verification + HMM observation; Week 2 10-ticker expansion with 3 capital allocation options; Week 3 52-ticker stacker with margin monitoring; Week 4 kill switch tests + emergency liquidation test + Gate 2 formal checkpoint
+4. System Readiness Checklist: 4 domains (Jetson infrastructure, database state, Alpaca account, API and dashboard) — 14 binary checklist items
+5. Rollback Procedures: 10-ticker→2-session rollback (15 min target), full Gate 1 reset, emergency liquidation with data preservation steps
+6. Success Criteria: 6 metrics with required and stretch targets (fill rate ≥50/day, Sharpe ≥1.5, MaxDD ≤15%, win rate ≥50%, profit factor ≥1.5, sessions stability ≥90%)
+7. Live Trading Activation Path: 3 capital allocation options ($100K/$300K/$200K proportional), checkpoint P&L reinvestment decision, monitoring cadence (morning/close/weekly), escalation tiers
+8. Risk Management Framework: position limits with code locations, 3-tier loss cutoff sequence, concentration limits (15% single-ticker, 40% sector), covered call overlay prerequisites
+9. Key Decision Points: 4 user decisions with options and tradeoffs (when to start, 10-ticker vs 4-ticker, live capital structure, P&L reinvestment)
+
+**Key insight**: All 4 user decisions are explicitly framed as options with tradeoffs. The guide is self-contained for May 14 evening reading — user can execute Week 1 tests on May 15 without consulting any other document.
+**Next Step**: User executes May 14 20:00 UTC checkpoint → applies POST_GATE_1_RESPONSE_FRAMEWORK.md for outcome classification → uses this guide for Week 1–4 execution (begins May 15)
 
 ---
 
