@@ -4,6 +4,56 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 00:30 — Session 950 — Exploration Queue Item 22: Post-Gate-1 Response Framework Enhancement
+
+**Time**: 00:30–00:50 UTC (framework enhancement + submodule commit)
+
+**Status**: ✅ EXPLORATION QUEUE ITEM 22 COMPLETE — Ready for May 14 20:00 UTC checkpoint execution
+
+### Completed Work
+
+#### Exploration Queue Item 22: Stockbot Post-Gate-1 Outcome Response Framework
+**Deliverable**: `projects/stockbot/POST_GATE_1_RESPONSE_FRAMEWORK.md` v2.0 (enhanced)
+
+**Enhancement Focus**: Integrate Sessions 948-949 architecture mismatch discovery into checkpoint decision framework
+
+**Changes Made**:
+1. ✅ Enhanced Section 6.2.2 "Four-Step C2 Diagnosis" with architecture mismatch check
+   - Added explicit check for `options_live_session.yaml` vs `active-sessions.json` mismatch
+   - Clarified 3 possible architecture scenarios (2-session, 52-ticker, options)
+   - Direct reference to ARCHITECTURE_DECISION_MATRIX.md for resolution
+
+2. ✅ Created new Section 6.2.3 "Architecture Mismatch Resolution"
+   - Three-question decision checklist for user (Q1: Was options intentional? Q2: Validate options or return to equity? Q3: Target Q3 vs Q4?)
+   - Linked to ARCHITECTURE_DECISION_MATRIX.md for detailed comparison
+   - Clear escalation path: record finding → create BLOCKED.md entry → user decision
+
+3. ✅ Updated Section 6.2.4 "Recovery Options" with architecture decision prerequisite
+   - Architecture mismatch now clearly blocks recovery (requires user decision first)
+   - Recovery table updated to show architecture decision as the first critical item
+
+4. ✅ Enhanced Section 7 "Implementation Checklist"
+   - May 14 20:30–21:00 UTC action row updated to flag architecture mismatch requirement
+   - Clear instruction: IF architecture mismatch found, refer to ARCHITECTURE_DECISION_MATRIX.md
+
+**Rationale**: Sessions 948-949 discovered that the May 12 checkpoint outcome could be a C2 execution failure caused by architecture mismatch (options system running instead of documented 2-session AAPL equity). This enhancement ensures the checkpoint framework can correctly diagnose and escalate architecture issues without losing the decision context from ARCHITECTURE_DECISION_MATRIX.md.
+
+**Status**: Framework ready for May 14 20:00 UTC execution. All C1/C2/C3 diagnosis paths now include architecture mismatch as a key diagnostic point.
+
+**Commit**: `projects/stockbot@e4976bc` — "docs: enhance POST_GATE_1_RESPONSE_FRAMEWORK with architecture mismatch resolution path"
+
+### Impact Summary
+
+| Aspect | Status |
+|--------|--------|
+| **Item 22 Status** | ✅ COMPLETE |
+| **Deliverable** | POST_GATE_1_RESPONSE_FRAMEWORK.md v2.0 (enhanced) |
+| **Readiness** | May 14 19:00 UTC deadline ACHIEVED |
+| **Next Checkpoint** | May 14 20:00 UTC (user runs checkpoint query) |
+| **Escalation Path** | Clear: C2 → architecture check → BLOCKED.md → user decision |
+
+---
+
 ## 2026-05-12 23:15 — Session 948 — Orientation + Architecture Investigation: Stockbot Mismatch Documented
 
 **Time**: 23:15–23:30 UTC (orientation + documentation)
