@@ -1,5 +1,37 @@
 # Check-in
 
+## Session 944 — May 12, 2026 20:40–20:55 UTC (Stockbot Checkpoint Execution + Critical Blocker Discovery)
+
+**Status**: 🛑 BLOCKED — Critical architecture mismatch discovered. May 12 checkpoint executed; FAR_MISS_C1 result, but underlying cause unclear due to system architecture discrepancy.
+
+**Usage**: Sonnet 67.7% (daily reset in ~5 hours, healthy)
+
+**Checkpoint Result**:
+- Query executed at 20:40 UTC (40 min delayed from 20:00 UTC schedule)
+- **Scenario**: FAR_MISS_C1 (0 confirmed round trips, 6 total fills on May 12)
+- **Database state**: Jetson trading.db shows only options trading May 12; zero AAPL equity trades since May 5
+
+**Critical Finding**:
+Project status documents: **2-session AAPL equity setup** (lgbm_ho + ridge_wf, active-sessions.json)
+Actual Jetson engine: **Options-only system** (YAML-configured, no AAPL equity trading)
+
+This mismatch means:
+- The expected 19 May 5 liquidation fills + AAPL position tracking are NOT in the database
+- FAR_MISS_C1 result (0 confirmed round trips) is accurate for current state
+- But it's unclear if this is *expected behavior* (h+10 hold not expired until May 14) or *deployment failure* (wrong system running)
+
+**Needs Your Input**:
+1. Was the switch to options-only trading intentional?
+2. Should the 2-session AAPL equity setup be re-deployed to Jetson?
+3. Is the May 14 checkpoint still expected to show AAPL h+10 SELL fills?
+
+**Next Steps** (after you clarify):
+- If equity setup is correct: Re-deploy AAPL trading sessions to Jetson; run May 14 checkpoint 20:00 UTC
+- If options is current: Update PROJECTS.md to reflect actual architecture; proceed with options-based Gate 1 validation
+- Full checkpoint report written to BLOCKED.md pending your decision
+
+---
+
 ## Session 943 — May 12, 2026 20:06–20:38 UTC (Exploration Queue Items 21-23 — ALL COMPLETE)
 
 **Status**: ✅ COMPLETE — All three exploration queue items (21-23) finished. Orchestrator positions three projects for immediate downstream execution upon user approval/decisions.
