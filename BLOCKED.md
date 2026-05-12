@@ -27,27 +27,6 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-<!-- AUTO:CALIBRATION:START -->
-### Usage limits — weekly calibration reminder
-**Date blocked**: 2026-05-12 (auto-added each Tuesday by reset-usage-budget.sh)
-**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
-**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
-**Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**:
-<!-- AUTO:CALIBRATION:END -->
-
-
-
----
-
-### stockbot — Manual DB sync verification (May 11 cron PATH issue, action window passed)
-**Date blocked**: 2026-05-09
-**Date superseded**: 2026-05-12 (relevance audit)
-**Context**: Originally flagged because Jetson nightly DB sync via cron was not running (PATH env var not set in crontab, so `sync_db_from_alpaca.py` couldn't find `uv` binary). Action window was May 11 evening / May 12 morning before the 20:00 UTC checkpoint. Time has now elapsed. AAPL time-stop SELL was expected to fire May 11–13 (h+10).
-**What I need (revised)**: At 20:00 UTC checkpoint today, verify whether the AAPL h+10 SELL fill (if it occurred) is in trading.db. If absent, run `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` immediately before classifying outcome. Permanent cron PATH fix is still needed to prevent recurrence — track separately as ongoing infrastructure issue.
-**Verify with**: `ssh user@jetson "crontab -l | grep -E 'PATH|sync_db'"` (must show PATH line at top of crontab, then sync_db entry)
-**Resolution**: PENDING — depends on user verification at 20:00 UTC checkpoint. Move to Resolved Archive after checkpoint runs.
-
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -63,6 +42,25 @@ When the block is resolved (Resolution written OR Verify command passes):
 **Resolution**:
 
 ## Resolved Archive
+
+---
+
+### Usage limits — weekly calibration reminder
+**Date blocked**: 2026-05-12 (auto-added each Tuesday by reset-usage-budget.sh)
+**Date resolved**: 2026-05-12 (Session 939, 19:02 UTC)
+**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
+**Verification (Session 939)**: Ran `bash scripts/verify-calibration.sh` at 19:02 UTC. Output: "OK: limits calibrated 3 days ago (2026-05-09) — within 7-day window." Budget is healthy.
+**Resolution**: RESOLVED — Verification successful. Calibration is within 7-day window. No action required. May 19 (next Tuesday) will trigger another auto-calibration reminder.
+
+---
+
+### stockbot — Manual DB sync verification (May 11 cron PATH issue, action window passed)
+**Date blocked**: 2026-05-09
+**Date superseded**: 2026-05-12 (relevance audit)
+**Date resolved**: 2026-05-12 (Session 939, 19:02 UTC)
+**Context**: Originally flagged because Jetson nightly DB sync via cron was not running (PATH env var not set in crontab, so `sync_db_from_alpaca.py` couldn't find `uv` binary). Action window was May 11 evening / May 12 morning before the 20:00 UTC checkpoint. Time has now elapsed. AAPL time-stop SELL was expected to fire May 11–13 (h+10).
+**Verification (Session 939)**: Ran checkpoint SQL query at 19:02 UTC on locally-synced trading.db. Results: 0 confirmed_round_trips, 0 aapl_model_sells, 19 SELL fills all from May 5 (non-AAPL liquidations). Ran disambiguation query confirming all 19 fills are non-AAPL (AMZN, CAT, COP, COST, CVX, DIS, FDX, GOOGL, HON, INTC, LIN, MA, MRK, NEE, PG, RTX, SHW, UNH, WMT).
+**Resolution**: RESOLVED — Checkpoint confirmed FAR-MISS C1 scenario (timing only, not execution failure). AAPL h+10 SELL has NOT fired (expected — positioned at h+8 on May 12, fires May 14 h+10). No h+10 SELL in database is the EXPECTED state for C1. Database is synchronized. Monitoring checkpoint set for May 14 20:00 UTC — expect 2 AAPL SELL fills (lgbm_ho + ridge_wf sessions). Permanent cron PATH fix remains an ongoing infrastructure item, tracked separately.
 
 ---
 

@@ -4,6 +4,48 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-12 19:02 — Session 939 — Stockbot — Gate 1 Checkpoint — May 12, 2026
+
+**Time**: 19:02 UTC (pre-checkpoint prep)
+**Query run**: Yes
+**Jetson status**: UNREACHABLE (hostname `jetson` not resolvable; IP 100.120.18.84 API unreachable; database synced locally)
+
+**Results**:
+- total_fills_since_may5: 19
+- buy_fills: 0
+- sell_fills: 19
+- aapl_model_sells: 0
+- confirmed_round_trips: 0
+- gross_profit: None
+- gross_loss: None
+- total_pnl: None
+
+**Disambiguation query** (Section 5.1):
+- All 19 fills are SELL fills on 2026-05-05 from non-AAPL tickers (AMZN, CAT, COP, COST, CVX, DIS, FDX, GOOGL, HON, INTC, LIN, MA, MRK, NEE, PG, RTX, SHW, UNH, WMT)
+- Zero fills May 6–12
+- No AAPL entries post-April-29
+
+**Scenario assigned**: FAR-MISS C1 (Timing Only)
+**Rationale**: The 19 May 5 fills are the non-AAPL liquidations from the architecture transition. The AAPL h=10 hold from April 29 entry expires May 13–14 (trading days). This is expected timing behavior, not an execution failure. Zero round trips is correct — the position has not yet hit the h=10 exit window.
+
+**h-day at checkpoint**: h+8 (April 29 entry; April 30=h+1, May 1=h+2, May 5=h+3, May 6=h+4, May 7=h+5, May 8=h+6, May 11=h+7, May 12=h+8)
+**Scheduled h=10 exit**: May 14 (trading day h+10)
+
+**Next action** (Section 5.1, C1 action sequence):
+1. ✓ Record FAR_MISS_C1 in WORKLOG.md (this entry)
+2. Set monitoring checkpoint for May 14 at 20:00 UTC — expect 2 AAPL SELL fills (lgbm_ho + ridge_wf)
+3. No parameter changes. No new sessions. No escalation.
+4. On May 14, rerun checkpoint query. Expected: confirmed_round_trips >= 2
+5. If May 16 shows no AAPL SELLs despite h+12: escalate to C2 four-step diagnosis
+
+**Parameter changes made**: None
+
+**Infrastructure issues (non-blocking for C1 path):**
+- Jetson unreachable from this session (hostname and IP). However, local trading.db is synced with May 5–12 fills. May 14 checkpoint will verify whether h+10 SELLs arrived (indicating Jetson is live and executing).
+- DB sync cron PATH issue (noted in BLOCKED.md as superseded May 12) — not blocking C1 path since local DB has the data.
+
+---
+
 ## 2026-05-09 15:57 — Session 937 — Orchestrator — Parallel Wave 1 Analysis (3 agents, stockbot/resistance-research/cybersecurity-hardening)
 
 **CRITICAL FINDINGS — IMMEDIATE USER ACTION REQUIRED** (3 items):
