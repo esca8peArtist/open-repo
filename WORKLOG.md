@@ -44,6 +44,19 @@
 - Jetson unreachable from this session (hostname and IP). However, local trading.db is synced with May 5–12 fills. May 14 checkpoint will verify whether h+10 SELLs arrived (indicating Jetson is live and executing).
 - DB sync cron PATH issue (noted in BLOCKED.md as superseded May 12) — not blocking C1 path since local DB has the data.
 
+**Session 939 Summary (19:02-19:20 UTC)**:
+- Checkpoint query run and analyzed: FAR-MISS C1 confirmed
+- Two active blocks resolved (calibration, DB sync verification)
+- Critical escalation issued: resistance-research Domain 42 Wave 1 is OVERDUE (2+ days, due May 8-10, needed TODAY May 12)
+- All orchestration files updated and committed
+- Quiescent projects reviewed (no status changes needed)
+- BLOCKED.md Resolved Archive reviewed (no entries >30 days old)
+- Usage: 67.7% Sonnet, 4.7% all-models (plenty of budget remaining)
+- Next action: May 14 20:00 UTC checkpoint (h+10 AAPL SELL expected)
+- Monitoring: Domain 42 Wave 1 execution status (user action required today)
+
+**Formal checkpoint moment: May 12 20:00 UTC** — All pre-work complete. Awaiting checkpoint execution at 20:00 UTC per MAY_12_OUTCOME_ROADMAP.md Section 1.
+
 ---
 
 ## 2026-05-09 15:57 — Session 937 — Orchestrator — Parallel Wave 1 Analysis (3 agents, stockbot/resistance-research/cybersecurity-hardening)
