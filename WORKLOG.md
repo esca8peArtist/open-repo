@@ -34,6 +34,59 @@
 - (B) Options system → all project documentation is stale and needs update
 - (C) 52-ticker equity system → Session 940 "2-session" notation is incorrect
 
+## 2026-05-12 23:45 — Session 949 — Architecture Decision Framework & Exploration Queue Refresh
+
+**Time**: 23:45 UTC (framework creation + exploration queue setup)
+
+**Status**: 🔍 RESEARCH IN PROGRESS — Created decision framework; queued 3 exploration items
+
+### Completed Work
+
+#### Exploration Queue Refresh
+**Finding**: Queue had 0 active items (all prior items complete or blocked). Added 3 new items per protocol:
+
+1. **stockbot: Equity vs Options Architecture Comparative Analysis** (THIS SESSION COMPLETED)
+   - Deliverable: `ARCHITECTURE_DECISION_FRAMEWORK.md` (1,200 words, 5 sections)
+   - Scope: Side-by-side comparison of 3 architectures (2-session AAPL, 67-ticker stacker, options system)
+   - Decision matrix across 10 dimensions (Gate 1-3 feasibility, complexity, capital, documentation, timeline)
+   - Interpretation of May 12 checkpoint findings per architecture
+   - Recommendation: User selects which system to deploy within 5 minutes
+   - Business value: Enables user to make fully-informed architecture decision; provides clear next-steps roadmap
+
+2. **resistance-research: Phase 2 Expansion — Domains 38-40 Research Initiation** (queued, prerequisite: none)
+   - Estimated scope: 4-5 hours
+   - Purpose: Continue framework expansion while Phase 1 awaits distribution decision
+   - Research candidates: Domain 38 (Regulatory Capture in AI), Domain 39 (Healthcare Access & Democracy), Domain 40 (Surveillance Capitalism)
+
+3. **seedwarden: Phase 2 Social Media Growth & Acquisition Strategy** (queued, prerequisite: none)
+   - Estimated scope: 2-3 hours
+   - Purpose: Design customer acquisition strategy while user sets up accounts
+   - Output: growth strategy document + cohort acquisition matrix
+
+#### Architecture Decision Framework Details
+
+**Three Systems Identified**:
+- **Architecture A (Documented)**: 2-session AAPL equity (active-sessions-2session.json, Session 940 status)
+- **Architecture B (Configured)**: 67-ticker equity stacker (active-sessions.json, Session 533 multi-ticker training)
+- **Architecture C (Deployed)**: Options trading system (observed in Jetson trading.db, no documentation)
+
+**May 12 Checkpoint Interpretation**:
+- Options fills (6 on May 12) confirm Architecture C is running
+- AAPL equity fills (0 May 5–12) confirm Architectures A & B are NOT running
+- Mismatch requires user clarification on which system should be primary
+
+**Decision Matrix** (Architecture A vs B vs C across 10 dimensions):
+- Gate 1 feasibility: A=❌ Impossible, B=✅ ~50% pass, C=❓ Unknown
+- Complexity: A=✅ Low, B=⚠️ High, C=❓ Unknown
+- Capital deployed: A=$20k, B=$670k, C=Unknown
+- Timeline to live: A=Q3 2026 (slow), B=Q2 2026 (fast), C=Unknown
+
+**Recommendations**:
+- If A: Update Jetson deployment to 2-session config
+- If B: Verify multi-ticker stacker is running; debug options fills
+- If C: Provide options strategy documentation
+- If D (hybrid): Define coexistence model
+
 **Assessment**: This is a fundamental architectural decision affecting:
 - May 14 20:00 UTC checkpoint interpretation
 - Gate 1 vs Gate 2 deployment path

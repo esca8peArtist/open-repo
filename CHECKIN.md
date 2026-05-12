@@ -1,5 +1,43 @@
 # Check-in
 
+## Session 949 — May 12, 2026 23:50 UTC (Architecture Decision Framework Created; Exploration Queue Activated)
+
+**Status**: 🔍 RESEARCH COMPLETE — Decision framework ready; user can decide within 5 minutes
+
+### What Was Done This Session
+
+**Exploration Queue Refresh**:
+- Identified 0 active exploration items (previous items complete or blocked)
+- Added 3 new exploration items per orchestrator protocol
+- **Completed Item #1**: Stockbot architecture comparative analysis
+
+**Deliverable**: `projects/stockbot/ARCHITECTURE_DECISION_FRAMEWORK.md`
+- **Content**: 1,200 words spanning 5 major sections
+- **Decision matrix**: 3 architectures × 10 decision dimensions
+- **Interpretation guide**: Explains May 12 checkpoint findings for each architecture
+- **Recommendation**: User selects system (A/B/C) in <5 minutes
+
+### What I Need from You
+
+**URGENT** (enables May 14 checkpoint):
+1. **Architecture Selection**: Which system should be running?
+   - **A**: 2-session AAPL equity (documented, slow)
+   - **B**: 67-ticker equity stacker (ambitious, already trained)
+   - **C**: Options system (orthogonal, unknown details)
+   - **D**: Hybrid (B primary + C secondary)
+
+2. **If C or D**: Provide options strategy details (backtest data, capital allocation, signal triggers)
+
+3. **Timeline**: Decision → orchestrator updates Jetson → May 14 checkpoint (May 14 20:00 UTC)
+
+**NON-URGENT** (clarifications for next sessions):
+- Resistance-research distribution path (A/A+37/B) — 16 days to May 28 DEA deadline
+- Cybersecurity-hardening Phase 1 approval
+- Seedwarden Kit account creation (deadline May 20)
+- mfg-farm test print results
+
+---
+
 ## Session 948 — May 12, 2026 23:15 UTC (Architecture Mismatch Investigation: Stockbot Awaiting User Decision)
 
 **Status**: 🛑 ALL AUTONOMOUS WORK BLOCKED — All top projects awaiting user approval or decision
