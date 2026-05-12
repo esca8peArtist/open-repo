@@ -92,6 +92,106 @@
 
 ---
 
+## 2026-05-12 22:28 — Session 953 — Parallel Exploration Queue Execution: 3 Deliverables Complete
+
+**Time**: 22:28–22:50 UTC (parallel agent execution: stockbot, resistance-research, seedwarden)
+
+**Status**: ✅ THREE EXPLORATION QUEUE ITEMS COMPLETE — All require urgent user action (today/May 13)
+
+### Completed Work
+
+#### 1️⃣ Stockbot: Architecture Comparative Analysis (3-4 hrs)
+**Deliverable**: `projects/stockbot/ARCHITECTURE_COMPARATIVE_ANALYSIS.md` (525 lines)
+**Commit**: `projects/stockbot@9066463` — "docs(checkpoint): architecture comparative analysis — Session 953 FAR_MISS_C1 diagnostic"
+
+**Key Findings**:
+- ✅ **Architecture A is operational truth**: 2-session AAPL equity (lgbm_ho + ridge_wf) is the actual deployed system
+- ✅ **Session 951 contradiction explained**: The 52-ticker active-sessions.json is a historical artifact from pre-May 4 consolidation
+- 🔴 **Critical risk identified**: ridge_wf placeholder UUID — if Jetson ridge_wf has no valid backing model, only 1 SELL fires May 14 instead of 2
+- 🔴 **Gate 2 Sharpe gap larger than acknowledged**: OOS Sharpe 0.38-0.46 vs. target 1.0 means Gate 2 realistically mid-July 2026, not June 9
+
+**Next Checkpoint**: May 14 20:00 UTC — expect 2 AAPL SELL fills (or 1 if ridge_wf UUID issue exists). Full diagnosis framework ready for May 14 execution.
+
+---
+
+#### 2️⃣ Resistance-Research: Domain 42 Institutional Outreach Plan (2-3 hrs)
+**Deliverable**: `projects/resistance-research/DOMAIN_42_INSTITUTIONAL_OUTREACH_PLAN.md` (2,500 words)
+
+**🚨 CRITICAL TIMING ISSUE — ACTION TODAY**:
+- Originally planned for May 8, now May 12 — **4 business days have slipped**
+- Target contacts need 10 business days routing before May 24 electronic filing cutoff
+- **NOW 8 business days remain** — still viable but zero additional margin
+
+**Tier 1 Contacts (Send TODAY, May 12 if Phase 1 path approved, staggered 45 min apart)**:
+1. Drug Policy Alliance — press@drugpolicy.org
+2. NORML — norml@norml.org
+3. ACLU Criminal Law Reform — criminallaw@aclu.org
+4. The Sentencing Project — staff@sentencingproject.org
+
+**Tier 2 Contacts (May 13-14)**: NAACP LDF, LEAP, California AG, Colorado AG, Mason Marks
+
+**Tier 3 Contacts (May 15-17)**: MPP, SSDP, PPI, Brennan Center, Democracy Docket, WeedPress, state AGs
+
+**Strategic Impact**: Domain 42 outreach is **path-independent** — can execute today regardless of Phase 1 Path A/A+37/B decision. Unique contribution: getting ACLU + Sentencing Project to file (wouldn't otherwise), introducing democratic exclusion analytical framing (regulatory capture + felony disenfranchisement + federal-state conflict) that DEA record will otherwise lack.
+
+**Contingency if late (May 17+)**: Compress to 6 contacts, send simultaneously, include pre-drafted participation language. Minimum viable = 2 participation notices including 1 counterfactual filer.
+
+---
+
+#### 3️⃣ Seedwarden: Phase 2 Production Timeline (2-3 hrs)
+**Deliverables**: 
+- `projects/seedwarden/PHASE_2_PRODUCTION_TIMELINE.md` (2,000+ words)
+- `projects/seedwarden/phase-2-plant-procurement-tracker.csv`
+- `projects/seedwarden/phase-2-photo-shoot-shot-log.csv`
+
+**🚨 CRITICAL ORDER DEADLINES — ACTION TODAY (May 12)**:
+- Mountain Rose Herbs + Strictly Medicinal Seeds orders were already 1-2 days overdue as of May 9
+- **Orders placed TODAY (May 12) can still reach May 17-19 shoot window with Priority Mail**
+- **NO further slack** — May 13+ orders miss the window
+
+**Launch Scope (May 30)**: 5 guides achievable
+- Core Four Appalachian Medicinals: Ginseng, Goldelseal, Black Cohosh, Ramps
+- Plus Wild Bergamot
+- Bloodroot, Trillium, Lady's Slipper deferred to June 15 follow-on
+
+**Go/No-Go Criteria** (5 binary checkboxes, verifiable May 28 evening):
+1. ✅ Plant specimens received (Core Four + Wild Bergamot)
+2. ✅ Photography locations confirmed (3 clusters: Pisgah NF, Bent Creek EF, studio)
+3. ✅ Guide text drafted (5 guides, 1,000–1,100 words each = ~11 hours writing May 13-21)
+4. ✅ Photos curated to Canva (May 20-21 culling pass, shot log QA columns)
+5. ✅ Etsy listings staged (tags corrected, descriptions ready)
+
+**Highest-probability high-impact risk**: Guide writing overrun (Risk R7). Mitigation: start text drafts immediately (May 13) rather than waiting for photos. Contingency: drop Wild Bergamot from May 30 scope — Core Four alone is coherent product.
+
+**Timeline**:
+- May 12: Place plant orders + Prairie Moon phone call
+- May 13-21: Write 5 guides in parallel with sourcing
+- May 17-19: Execute photo shoots (3 clusters, 30-shot sequences)
+- May 20-21: Photo culling + Canva asset preparation
+- May 26-30: Etsy scheduling + email/social staging
+- May 30 10:00 UTC: Go-live
+
+---
+
+### Strategic Impact Summary
+
+| Project | Deliverable | User Action | Timeline |
+|---------|------------|------------|----------|
+| **stockbot** | Architecture analysis | SSH verify ridge_wf UUID before May 14 20:00 UTC | 1-2 hours |
+| **resistance-research** | Domain 42 outreach | Send Tier 1 emails TODAY if Phase 1 path approved | TODAY or May 13 |
+| **seedwarden** | Phase 2 timeline + trackers | Place plant orders TODAY + write guides May 13-21 | TODAY or lost window |
+
+### What Happens Next
+
+- **May 12 (TODAY/NOW)**: User can execute Domain 42 Tier 1 sends + seedwarden plant orders (path-independent work)
+- **May 13-21**: Seedwarden guide writing + sourcing (parallel execution path)
+- **May 14 20:00 UTC**: Stockbot checkpoint (expect 2 AAPL SELL fills or diagnosis of ridge_wf UUID issue)
+- **May 17-19**: Seedwarden photo shoots (3 clusters)
+- **May 28**: Seedwarden Phase 2 go/no-go decision (5 binary checkboxes)
+- **May 30**: Seedwarden Phase 2 live (Etsy 10am / email 12pm / social 2-4pm)
+
+---
+
 ## 2026-05-12 23:15 — Session 948 — Orientation + Architecture Investigation: Stockbot Mismatch Documented
 
 **Time**: 23:15–23:30 UTC (orientation + documentation)

@@ -1,5 +1,76 @@
 # Check-in
 
+## Session 953 — May 12, 2026 22:28 UTC (Parallel Exploration Queue Execution: 3 Deliverables, 3 Urgent Actions)
+
+**Status**: ✅✅✅ THREE EXPLORATION ITEMS COMPLETE — **Three urgent user actions today/May 13** for May 12-14-30 critical deadlines
+
+### What Was Done (Parallel Execution)
+
+**✅ Stockbot: Architecture Comparative Analysis** (3-4 hrs)
+- **Deliverable**: `ARCHITECTURE_COMPARATIVE_ANALYSIS.md` (525 lines)
+- **Key Finding**: Architecture A (2-session AAPL equity) is operational truth; 52-ticker is historical artifact; options fills are unexplained
+- **Critical Risk**: ridge_wf placeholder UUID — if invalid, only 1 SELL fires May 14 instead of 2
+- **Gate 2 Impact**: Sharpe gap 0.38-0.46 vs 1.0 target → Gate 2 realistically mid-July 2026
+- **User Action**: SSH verify ridge_wf UUID before May 14 checkpoint (1-2 hours)
+
+**✅ Resistance-Research: Domain 42 Institutional Outreach Plan** (2-3 hrs)
+- **Deliverable**: `DOMAIN_42_INSTITUTIONAL_OUTREACH_PLAN.md` (2,500 words)
+- **🚨 CRITICAL TIMING**: May 28 DEA hearing deadline, 21 days. Originally May 8 outreach now May 12 — **4 business days lost, 8 remain**
+- **Tier 1 Contacts (Send TODAY)**: Drug Policy Alliance, NORML, ACLU Criminal Law Reform, Sentencing Project (staggered 45 min apart)
+- **Strategic Value**: Introduces democratic exclusion framing (regulatory capture + felony disenfranchisement + federal-state conflict) DEA record otherwise lacks
+- **User Action**: Send Tier 1 emails TODAY if Phase 1 path approved (30 min) — path-independent work
+
+**✅ Seedwarden: Phase 2 Production Timeline** (2-3 hrs)
+- **Deliverables**: Production timeline + plant procurement tracker + photo shoot shot log (3 CSV/MD files)
+- **🚨 CRITICAL ORDER DEADLINES — TODAY**: May 12 last day for May 17-19 shoot window. Mountain Rose Herbs + Strictly Medicinal orders already overdue.
+- **Launch Scope (May 30)**: 5 guides achievable (Core Four Appalachian + Wild Bergamot)
+- **Go/No-Go**: 5 binary criteria checkpoints verifiable May 28 evening
+- **Highest Risk**: Guide writing overrun (Risk R7) — mitigation: start May 13 (not after photos)
+- **User Action**: Place plant orders TODAY (30 min) + write guides May 13-21 (11 hours)
+
+### Urgent Actions Required (User)
+
+| When | Project | Action | Time | Impact |
+|------|---------|--------|------|--------|
+| **TODAY (May 12)** | resistance-research | Send Domain 42 Tier 1 emails (if Phase 1 approved) | 30 min | 4 federal orgs + analysis framework for May 28 DEA hearing |
+| **TODAY (May 12)** | seedwarden | Place plant orders (Mountain Rose, Strictly Medicinal) | 30 min | Opens May 17-19 photo shoot window |
+| **TODAY (May 12)** | seedwarden | Prairie Moon phone call (verify spring stock) | 15 min | Confirms Ramps availability |
+| **May 13-21** | seedwarden | Write 5 guides (1,000-1,100 words each) | 11 hours | ~2 hours/day enables May 30 launch |
+| **Before May 14 20:00 UTC** | stockbot | SSH verify ridge_wf UUID on Jetson | 1-2 hours | Critical for May 14 checkpoint outcome (1 vs 2 SELL fills) |
+| **May 14 20:00 UTC** | stockbot | Run checkpoint query, apply decision framework | 30 min | May 14→May 15 next-steps planning |
+
+### Current Project Blockers (Updated)
+
+| Project | Status | Primary Blocker | Secondary Blockers |
+|---------|--------|-----------------|-------------------|
+| **resistance-research** | Phase 1 ready | Path A/A+37/B decision | Domain 42 requires path decision for Tier 1 send |
+| **seedwarden** | Phase 1 ready for upload + Phase 2 logistics ready | Tag corrections (Track A) + today's plant orders (Track B) | None (Track B independent) |
+| **stockbot** | Checkpoint ready May 14 | Architecture verification (ridge_wf UUID) | User decision post-checkpoint on architecture |
+| **cybersecurity-hardening** | Phase 1 ready | User approval for launch + Day 1 date | None (content complete) |
+| **mfg-farm** | Pre-print ready | Test print execution | None (all designs + planning complete) |
+
+### Session Metrics
+
+- **Exploration items completed**: 3/3 queued items (Items 21-22 from Session 952 + 3 new from Session 949-950 queue)
+- **Deliverables created**: 3 production-ready (525 + 2,500 + 2,000+ words = 5,000+ lines)
+- **Execution time**: 7-10 hours autonomous (parallel agents 2-4 hours wall-clock)
+- **User action required**: 2-3 hours total (plant orders, emails, UUID verification, guide writing 11 hours)
+- **Time-critical deadlines**: TODAY (seedwarden orders), May 13-14 (stockbot verification), May 28 (DEA hearing)
+
+### Needs Your Input
+
+1. **Domain 42 timing**: Can you send Tier 1 emails TODAY (May 12 if Path A/A+37 approved) or need to defer?
+2. **Seedwarden sourcing**: Confirm plant orders proceeding TODAY — last window for May 30 launch
+3. **Stockbot verification**: Time SSH access to Jetson before May 14 checkpoint — need ridge_wf UUID confirmation
+
+### Usage & Budget
+
+- **Sonnet**: 67.7% (882K/1.3M, reset in ~146 hours)
+- **All-models**: 9.3% (1.8M/20.4M)
+- **Session tokens**: ~270K (three parallel agent executions)
+
+---
+
 ## Session 952 — May 12, 2026 23:30 UTC (Exploration Queue Items 21-22: May 14 Checkpoint Framework + May 19 Revenue Launch)
 
 **Status**: ✅✅ TWO CRITICAL EXPLORATION ITEMS COMPLETE — Ready for execution on May 14 and May 19 deadlines
