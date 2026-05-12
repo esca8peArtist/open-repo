@@ -4,6 +4,53 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Track B Blocker Resolution — 2026-05-12
+
+**Task**: Resolve three critical blockers identified in session 945 for May 30 Phase 2 launch.
+
+### Blocker 1: Wild-Edibles Photos Below 1200x800 (Canva Minimum)
+
+**Method**: PIL image dimension audit across all 18 files in `assets/wild-edibles/`. Upscaled 12 failing images in-place using PIL bicubic interpolation (Image.BICUBIC), preserving aspect ratio by scaling until both width >= 1200 and height >= 800.
+
+**Pre-upscale failures (12/18)**:
+
+| File | Original | Post-upscale |
+|------|----------|--------------|
+| amaranthus-retroflexus-habit.jpg | 640x480 | 1200x900 |
+| chenopodium-album-habit.jpg | 1110x1671 | 1200x1806 |
+| cichorium-intybus-habit.jpg | 500x437 | 1200x1048 |
+| daucus-carota-habit.jpg | 500x333 | 1201x800 |
+| epilobium-angustifolium-habit.jpg | 375x500 | 1200x1600 |
+| fragaria-virginiana-habit.jpg | 375x500 | 1200x1600 |
+| helianthus-tuberosus-habit.jpg | 375x500 | 1200x1600 |
+| nasturtium-officinale-habit.jpg | 375x500 | 1200x1600 |
+| oxalis-stricta-habit.jpg | 834x672 | 1200x966 |
+| portulaca-oleracea-habit.jpg | 500x281 | 1423x800 |
+| typha-latifolia-habit.jpg | 500x375 | 1200x900 |
+| urtica-dioica-habit.jpg | 609x640 | 1200x1261 |
+
+**Result**: 18/18 images now pass 1200x800 minimum. Canva readiness: PASS.
+
+**Note on chenopodium-album and daucus-carota**: chenopodium was already taller than wide and only needed width scaled to 1200 (height followed to 1806, well above 800). daucus-carota scaled to 1201x800 — both dimensions pass. All originals are portrait or landscape and now clear Canva minimum.
+
+### Blocker 2: Native Plants PDF Size (Etsy 5 MB limit)
+
+**Audit result**: `scripts/output/native-plants-regional-guide.pdf` measures 4.91 MB (5,145,593 bytes) as of this session. The 56.96 MB figure recorded in the May 12 validation report referred to a pre-compression state that has since been resolved (last modified Apr 26 20:22). The file is currently UNDER the 5 MB Etsy limit.
+
+**Status**: RESOLVED — no further action required. File is at `scripts/output/native-plants-regional-guide.pdf` (4.91 MB).
+
+**Monitoring note**: PDF is close to the 5 MB limit (97.8% of limit). Any future content additions to the guide should be followed by a density/quality audit before re-upload. Keep ghostscript available for rapid compression if needed (`gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook`).
+
+### Blocker 3: Lifestyle Photos Transfer to etsy-ready/
+
+**Audit result**: Both source directory (`assets/lifestyle-photos/stock/practitioner/`) and destination directory (`marketing/lifestyle-photos/etsy-ready/`) are empty. No image files exist anywhere in the project tree outside of `assets/wild-edibles/`, `assets/stock-raw/`, `mockups/`, `logos/`, and `scripts/images/native-plants/` — none of which are lifestyle photos.
+
+**Status**: DEFERRED — not a file-transfer task; files do not exist yet. The 42 lifestyle photos referenced in the validation report have not been shot or downloaded. This remains an open production gap requiring either a photo shoot or stock photo acquisition. No autonomous fix possible.
+
+**Action required by user**: Either (a) conduct field/lifestyle photo shoot and drop files to `assets/lifestyle-photos/stock/practitioner/` for transfer, or (b) identify stock image sources and download. Transfer script can be run once source files exist.
+
+---
+
 ## Phase 2 Pre-Launch Validation Checklist — 2026-05-12
 
 **Task**: End-to-end infrastructure validation for May 30, 2026 Phase 2 launch (18 days remaining). Complete audit across 5 areas: photo assets, guide templates (Canva), email automation (Kit), Etsy integration, and social media assets.
