@@ -1,5 +1,37 @@
 # Check-in
 
+## Session 941 — May 12, 2026 19:45–20:10 UTC (Jetson Infrastructure Maintenance — POST-CHECKPOINT)
+
+**Status**: ✅ COMPLETE — Post-checkpoint infrastructure work finished, Gate 2 prerequisites now complete
+
+**Completed Work**:
+
+### 1. Jetson Disk Cleanup Block — RESOLVED ✅
+- Verified disk status: 40% used, **132GB free** (well above 50GB requirement, improved from 29GB May 9)
+- `/var/log` automatically rotated to 474M (was 74GB May 9)
+- Docker builder cache clean (0B reclaimed)
+- Block moved to Resolved Archive in BLOCKED.md
+
+### 2. Cron PATH Infrastructure Fix — IMPLEMENTED ✅  
+- Updated Jetson crontab with proper PATH environment variable
+- Added nightly DB sync cron job (21:15 UTC, Mon–Fri)
+- Cron verified installed and active on Jetson
+- Impact: Nightly automatic database syncs now execute correctly (fixes May 6–9 gap)
+
+### 3. Gate 2 Readiness
+- ✅ Jetson disk cleanup complete
+- ✅ Cron PATH infrastructure fixed
+- ✅ All prerequisites for Gate 2 deployment now satisfied
+
+**Next Checkpoint**: May 14, 20:00 UTC — monitoring checkpoint to verify 2 AAPL SELL fills at h=10 exit
+
+**Critical Item Still Pending**:
+- 🔴 **resistance-research Domain 42 Wave 1 — OVERDUE 2+ days** (due May 8-10, now May 12)
+  - May 28 DEA hearing deadline: 16 days away
+  - User action needed: Send Wave 1 emails TODAY
+
+---
+
 ## Session 940 — May 12, 2026 20:13 UTC (Gate 1 Checkpoint Verification + Monitoring Setup)
 
 **Status**: ✅ COMPLETE — Checkpoint verified, FAR_MISS_C1 confirmed, May 14 monitoring scheduled
