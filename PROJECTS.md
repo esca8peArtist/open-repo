@@ -4,7 +4,7 @@
 > The orchestrator reads this file at the start of every session.
 > Update priorities, status, and current focus as work progresses.
 >
-> **Last updated by**: orchestrator on 2026-04-27 Session 498 (Domain 25 + tracker maintenance)
+> **Last updated by**: orchestrator on 2026-05-12 (relevance audit — INBOX Path Model item processed; stale stockbot status refreshed)
 
 ---
 
@@ -989,6 +989,12 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 - **seedwarden: Phase 2 Photography & Plant Sourcing Logistics (May 30 Target)** (estimated 2–3 hrs, no prerequisites) — Phase 2 launch is 23 days away (May 30, 2026). Create concrete production timeline: (1) Plant sourcing (endangered species order timeline — which vendors, lead times, quantities); (2) Location scouting (where to photograph Appalachian rare plants cluster — field access, permissions, logistics); (3) Photo shoot logistics (3-cluster shoot schedule, prop list, lighting/camera setup, 30-shot sequence); (4) Guide production (which endangered species guides first, Canva timeline, review cycle); (5) Staging milestones (May 10 location confirmed, May 15 plants sourced, May 20 photo shoot complete, May 25 guides live). Outcome: Day-by-day production timeline + vendor contact list + location scout report + photo shoot checklist. Business value: De-risks May 30 Phase 2 launch with concrete timeline and procurement plan; enables parallel execution of multiple sourcing threads (location, plants, Canva) instead of sequential blocking.
 
 - **mfg-farm: Batch 2 Product Selection & Demand Research** (estimated 2–3 hrs, no prerequisites) — Headphone hooks (Batch 2, Month 1) design + execution is READY. Next: identify Batch 3 product candidates (magnetic bin labels, plant markers, pegboard hooks per product-line-strategy.md Session 731). Scope: (1) Demand quantification for top 3 candidates (Etsy search volume, competition landscape, price distribution); (2) Margin validation (print cost + material cost + shipping), production complexity assessment; (3) Design time estimate + CadQuery feasibility check; (4) Launch sequencing (which product Month 2, Month 3, etc.); (5) Batch MOQ + revenue projections. Outcome: Ranked Batch 3-5 product candidates with design + launch timeline + revenue forecasts. Business value: Post-test-print (July+), execute Batch 2 (headphone hooks) + plan Batch 3-4 launch sequence in parallel, scaling revenue from $2,500→$6,900–$7,500/month.
+
+**NEW ITEMS (Session 938 — 2026-05-12, from INBOX)**:
+
+- **stockbot: Path/Sequence Model for Multi-Day Price Trajectory Forecasting** (Future Work, no prerequisites — research/design item) — Implement a sequence/path model (LSTM or Transformer) that predicts the full daily price PATH over the next ~63 days, complementing the existing Return Forecast Engine which only predicts endpoint return. Design intent: input = recent 60d of OHLCV + features, output = sequence of daily returns for next 63d. Scope: (1) Survey state-of-the-art for multi-step financial sequence forecasting (DeepAR, Temporal Fusion Transformer, N-BEATS, autoregressive LSTM with teacher forcing); (2) Specify input feature design (OHLCV normalization, technical indicators, regime features, optional macro signals); (3) Specify output design (deterministic vs. quantile/distributional outputs, walk-forward training boundaries, look-ahead leakage prevention); (4) Design integration with current pipeline (where path predictions feed signal generation, position sizing, risk management); (5) Backtesting protocol (out-of-sample paths vs. realized paths, calibration metrics); (6) Compute budget assessment (training cost vs. $20/month constraint). Outcome: `path-model-design-spec.md` (~2,500 words) + decision on whether to prototype. Business value: Enables trajectory-aware decisions (e.g., entering positions only when expected path is monotonic vs. choppy) rather than relying solely on point estimates of endpoint return. Source: INBOX.md (user-dropped item, processed 2026-05-12).
+
+---
 
 **NEW ITEMS (Session 931 — 2026-05-09, Queue Refresh — 1 pending blocked item → adding 3)**:
 

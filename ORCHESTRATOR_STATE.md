@@ -1,11 +1,12 @@
 # Orchestrator State
-> Auto-generated at 2026-05-09T15:57:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-12T13:30:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Last manual cleanup: 2026-05-12 (relevance audit — stale May 5–11 entries cleared)
 
 ## Usage
-🟢 Usage: Sonnet 58.9% (1,095,745 tokens) | All-models 53.0% | Reset in 56h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 26.3% (342,899 tokens) | All-models 1.7% | Reset in 167h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
-1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
+1. stockbot  ← MAY 12 GATE 1 CHECKPOINT TODAY 20:00 UTC
 2. resistance-research
 3. cybersecurity-hardening
 4. mfg-farm
@@ -17,67 +18,76 @@
 10. open-source-rideshare (Paused)
 
 ## Active Projects
-### mfg-farm
-**Status**: Active — ready to prototype
-**Focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis complete (`market-research.md`). Etsy and Amazon listing copy complete (`etsy-listing-modrun.md`). **P
-**Blocked**: Test print (user action required — see focus above)
+### stockbot
+**Status**: Active — **Architecture cleanup deployed to Jetson 2026-05-12 02:11 UTC** (commit 2372f1d). 2-session paper trading (AAPL lgbm_ho + AAPL ridge_wf). AAPL position open, time-stop h+10 triggered May 13–14 expected. Container restarted and confirmed healthy.
+**Focus**: 🔴 **MAY 12 GATE 1 CHECKPOINT — TODAY 20:00 UTC** (~6.5 hours from this state generation).
+- Pre-checkpoint validation complete (Session 922): engine healthy, AAPL position open (108 sh, +$2,747 unrealized as of May 9), DB synced, position-age tracking operational
+- Architecture cleanup landed today: ARCH-1 (RiskManager wired, LiveEngine deleted), ARCH-2 (risk thresholds single source of truth), ARCH-4/6/7, M5/7/8 (see `ARCH_CLEANUP_2026-05-12.md`, `ARCH1_COMPLETION_2026-05-12.md`)
+- Predicted outcome: FAR_MISS_C1 (0 confirmed round trips, AAPL h+9 at checkpoint) — expected behavior, not a failure. Time-stop SELL fires May 13 → NEAR-MISS reclassification likely
+- **Next**: Run checkpoint query at 20:00 UTC, classify outcome via `gate-1-outcome-classification.py`, then follow `MAY_12_OUTCOME_ROADMAP.md` and `POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md`
+**Blocks**: Jetson disk cleanup (deferred until after checkpoint — see Active Blocks)
 
 ### resistance-research
-**Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
-**Focus**: **Session 907 (2026-05-09): May 2026 Tracker Maintenance COMPLETE + Phase 2 Domain 39 (Immigration Enforcement & Detention Infrastructure) COMPLETE**. 
-**Blocked**: User distribution path decision (A / A+37 / B)
+**Status**: Active — Phase 1-5 COMPLETE, **38+-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE**. Distribution materials production-ready since Session 544.
+**Focus**: Phase 1 production-ready. Phase 2 expansion ongoing (Domain 39 complete Session 907). Domain 42 DEA hearing deadline May 28 (16 days away). Tracker maintenance current through May 9.
+**Blocks**: User distribution path decision (A / A+37 / B). Domain 42 Wave 1 send (was due May 8 per Session 937 finding — verify status).
 
 ### cybersecurity-hardening
-**Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: **Session 905 (2026-05-09): Phase 2 Scenario Playbooks COMPLETE** (Commit ae86d735). Phase 2 research infrastructure now 100% ready:
-**Blocked**: None — Phase 1 ready for user approval and execution
+**Status**: Active — **Phase 1 production-ready** (Tier 1, 2, 3 distribution prep + messaging templates complete). **Phase 2 scenario playbooks COMPLETE** (Session 905, all 4 priority playbooks).
+**Focus**: All distribution materials ready. Awaiting user approval for Phase 1 Tier 1 launch. Optional Flag 1 + Flag 3 corpus updates identified (15–30 min total) per Session 937 analysis.
+**Blocks**: User approval of Phase 1 Tier 1 materials + Day 1 send date.
 
-### stockbot
-**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: 🔴 MAY 12 CHECKPOINT PREPARATION — COMPLETE (Session 922)
-**Blocked**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
+### mfg-farm
+**Status**: Active — ready to prototype. All pre-launch infrastructure complete (business plan, CadQuery designs, supplier research, fulfillment workflow).
+**Focus**: Awaiting test print. Post-test-print: launch within 1–2 hours setup using `PRE_LAUNCH_FULFILLMENT_WORKFLOW.md` (Session 935).
+**Blocks**: Test print (user action — see Active Blocks).
 
 ### seedwarden
-**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
-**Focus**: **Session 907 (2026-05-09): Phase 3 Asset Completion COMPLETE**. 
-**Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
+**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE**.
+**Focus**: Photography logistics, guide blueprint, endangered species procurement timeline all ready. Plant orders were due May 8–9 per Session 936 timeline.
+**Blocks**: Tag corrections + Etsy account verification (Track A). Endangered species plant orders (verify status — were due May 8–9). May 30 photography window confirmation.
 
 ### open-repo
-**Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
-**Focus**: **PR #1 OPEN** (2026-04-26): https://github.com/esca8peArtist/open-repo/pull/1
+**Status**: Active — Phase 4 COMPLETE, **PR #1 open since 2026-04-26**.
+**Focus**: PR #1 awaiting review/merge: https://github.com/esca8peArtist/open-repo/pull/1
 
 ### off-grid-living
-**Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
-**Focus**: **GitHub Publication COMPLETE (Session 486)**. All tasks executed:
+**Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution).
+**Focus**: GitHub publication COMPLETE (Session 486). Distribution is user-action.
 
 ### workout
 **Status**: Active
-**Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers (no equipment, bands, full gym) × multiple frequencies (3/4/5/6 days), with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols. Awaiting user review and selection.
+**Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers × multiple frequencies. Awaiting user review and selection.
+
 ## Active Blocks
 <!-- AUTO:CALIBRATION:START -->
 <!-- AUTO:CALIBRATION:END -->
 ---
-### stockbot — Manual DB sync required on May 11 before checkpoint (cron PATH broken)
-**Date blocked**: 2026-05-09
-**Context**: Jetson nightly DB sync via cron is not running. Root cause: `PATH` environment variable not set in crontab, so `sync_db_from_alpaca.py` cannot find `uv` binary. The AAPL time-stop exit is expected to fire on May 11 (h+10 trigger). If the sync doesn't run, the May 12 checkpoint query will show 0 confirmed round trips even if the SELL fill executed. Database must be manually synced on May 11 evening or May 12 morning before the 20:00 UTC checkpoint query.
-**What I need**: On May 11 evening (after market close ~20:00 UTC) or May 12 morning, manually run: `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` to capture the time-stop SELL fill if it fired.
-**Verify with**: `crontab -l | grep sync_db` should show PATH=/... at top, then sync_db_from_alpaca.py entry with proper path. Command to test: `ssh user@jetson "crontab -e && add PATH=/home/awank/.local/bin:/usr/local/bin:/usr/bin:/bin"`
-**Resolution**:
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
-**Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
+**Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, listing copy, fulfillment workflow, and supplier research are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
 **What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
 **Verify with**: `# manual — cannot auto-verify`
 **Resolution**:
+
 ### stockbot — Jetson disk at 87% (29 GB free remaining)
 **Date blocked**: 2026-05-09
-**Context**: Jetson root filesystem is at 87% capacity (188 GB of 227 GB used, 29 GB free). Root causes: /var/log at 74 GB, Docker build cache at 22.66 GB (6 GB reclaimable). This is NOT a May 12 checkpoint blocker — 29 GB is sufficient for 3 days of trading logs. However, disk must be cleaned before Gate 2 deployment to prevent crashes due to log rotation failures or container failures.
-**What I need**: After May 12 checkpoint, clean up: (1) identify and archive old logs in /var/log (keep last 7 days), (2) run `docker builder prune` to reclaim build cache, (3) verify free space ≥50 GB before Gate 2 work.
+**Context**: Jetson root filesystem is at 87% capacity (188 GB of 227 GB used, 29 GB free). Root causes: /var/log at 74 GB, Docker build cache at 22.66 GB (6 GB reclaimable). Not a May 12 checkpoint blocker — sufficient for 3 days of trading logs. Must be cleaned before Gate 2 deployment to prevent log rotation/container failures.
+**What I need**: After May 12 checkpoint, clean up: (1) archive old logs in /var/log (keep last 7 days), (2) run `docker builder prune` to reclaim build cache, (3) verify free space ≥50 GB before Gate 2 work.
 **Verify with**: `ssh user@jetson "df -h / && du -sh /var/log && docker system df"`
 **Resolution**:
 
+### stockbot — Manual DB sync verification (May 11 cron PATH issue)
+**Date blocked**: 2026-05-09
+**Date superseded**: 2026-05-12
+**Context**: Originally flagged because Jetson nightly DB sync via cron was not running (PATH env var not set in crontab, so `sync_db_from_alpaca.py` couldn't find `uv` binary). Action window was May 11 evening / May 12 morning before the 20:00 UTC checkpoint. Time has elapsed.
+**Current status**: User action window has passed. Two possibilities: (a) user ran the manual sync per the request, or (b) it didn't run and the checkpoint may show 0 confirmed round trips even if AAPL time-stop fired. The checkpoint outcome at 20:00 UTC will reveal which.
+**What I need**: At 20:00 UTC checkpoint, verify whether the AAPL h+10 SELL fill (if it occurred) is in trading.db. If absent, run `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` immediately before classifying outcome. Permanent cron PATH fix is still needed to prevent recurrence.
+**Verify with**: `ssh user@jetson "crontab -l | grep -E 'PATH|sync_db'"` (must show PATH line at top of crontab, then sync_db entry)
+**Resolution**: Pending user verification at 20:00 UTC checkpoint. If sync was completed manually, this block can be moved to Resolved Archive after checkpoint. Permanent cron fix tracked separately.
+
 ## Inbox (unprocessed)
-*(no new items)*
+*(no new items — Path Model item processed 2026-05-12 → stockbot Exploration Queue)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 - **Launch Readiness Checklist**: Critical path Day 0-14, dependency table (test print, Bambu P1S, Pirate Ship, thermal printer)

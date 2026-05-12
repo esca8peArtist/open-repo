@@ -32,12 +32,13 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
-### stockbot — Manual DB sync required on May 11 before checkpoint (cron PATH broken)
+### stockbot — Manual DB sync verification (May 11 cron PATH issue, action window passed)
 **Date blocked**: 2026-05-09
-**Context**: Jetson nightly DB sync via cron is not running. Root cause: `PATH` environment variable not set in crontab, so `sync_db_from_alpaca.py` cannot find `uv` binary. The AAPL time-stop exit is expected to fire on May 11 (h+10 trigger). If the sync doesn't run, the May 12 checkpoint query will show 0 confirmed round trips even if the SELL fill executed. Database must be manually synced on May 11 evening or May 12 morning before the 20:00 UTC checkpoint query.
-**What I need**: On May 11 evening (after market close ~20:00 UTC) or May 12 morning, manually run: `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` to capture the time-stop SELL fill if it fired.
-**Verify with**: `crontab -l | grep sync_db` should show PATH=/... at top, then sync_db_from_alpaca.py entry with proper path. Command to test: `ssh user@jetson "crontab -e && add PATH=/home/awank/.local/bin:/usr/local/bin:/usr/bin:/bin"`
-**Resolution**:
+**Date superseded**: 2026-05-12 (relevance audit)
+**Context**: Originally flagged because Jetson nightly DB sync via cron was not running (PATH env var not set in crontab, so `sync_db_from_alpaca.py` couldn't find `uv` binary). Action window was May 11 evening / May 12 morning before the 20:00 UTC checkpoint. Time has now elapsed. AAPL time-stop SELL was expected to fire May 11–13 (h+10).
+**What I need (revised)**: At 20:00 UTC checkpoint today, verify whether the AAPL h+10 SELL fill (if it occurred) is in trading.db. If absent, run `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` immediately before classifying outcome. Permanent cron PATH fix is still needed to prevent recurrence — track separately as ongoing infrastructure issue.
+**Verify with**: `ssh user@jetson "crontab -l | grep -E 'PATH|sync_db'"` (must show PATH line at top of crontab, then sync_db entry)
+**Resolution**: PENDING — depends on user verification at 20:00 UTC checkpoint. Move to Resolved Archive after checkpoint runs.
 
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12

@@ -32828,3 +32828,45 @@ Completed v2.0, ~5,800 words comprehensive KPI + escalation framework for 25-con
 
 All items production-ready. Zero additional research required.
 
+
+## 2026-05-12 Session 938 — Orchestrator Relevance Audit & State Cleanup
+
+**Trigger**: User requested cleanup and relevance audit of orchestrator state (date 2026-05-12).
+
+**Scope**: Read all state files (PROJECTS.md, INBOX.md, ORCHESTRATOR_STATE.md, BLOCKED.md, CHECKIN.md, recent WORKLOG), assess each block and project status against today's date, process the INBOX Path Model item, refresh stale entries.
+
+### Findings
+
+1. **Stockbot architecture cleanup landed today** (commit `2372f1d` in submodule, 2026-05-12 02:11 UTC). Resolved ARCH-1 (RiskManager wired into TradingSession, LiveEngine deleted), ARCH-2 (risk thresholds extracted), ARCH-4/6/7, M5/7/8. Container restarted on Jetson and confirmed healthy. ORCHESTRATOR_STATE.md still showed "May 5 13:30 UTC" stale focus — refreshed.
+
+2. **DB sync block** (May 11 cron PATH issue) past its action window. Reframed as 20:00 UTC checkpoint-time verification rather than pre-emptive block. Permanent cron PATH fix tracked as ongoing infrastructure issue.
+
+3. **Session 937 "Jetson unreachable" + "ridge_wf placeholder" critical alerts** are no longer current — confirmed by today's healthy container restart on Jetson.
+
+4. **INBOX Path Model item** moved to stockbot Exploration Queue with full design scope (LSTM/Transformer for 63-day daily price PATH prediction, complementing the Return Forecast Engine's endpoint-only output). Source attribution preserved.
+
+5. **mfg-farm test print** block unchanged (still genuinely the gating user action since 2026-04-12).
+
+6. **stockbot Jetson disk at 87%** kept active — relevant after May 12 checkpoint per its own resolution criteria.
+
+### Files modified
+
+- `INBOX.md` — Path Model cleared, processing note added
+- `PROJECTS.md` — Path Model added as Session 938 stockbot exploration item; header date refreshed
+- `ORCHESTRATOR_STATE.md` — Full rewrite; stockbot status reflects today's architecture cleanup deployment; blocks pruned
+- `BLOCKED.md` — DB sync block reframed as superseded
+- `CHECKIN.md` — Session 938 audit entry appended (top)
+- `WORKLOG.md` — This entry appended
+
+### What is genuinely actionable today
+
+In time order:
+1. **TODAY 20:00 UTC**: Run stockbot Gate 1 checkpoint query, classify outcome, follow `MAY_12_OUTCOME_ROADMAP.md`. If AAPL h+10 SELL fill missing from `database/trading.db`, run manual sync first.
+2. **By May 28**: Resistance-research distribution path decision (16 days to DEA Domain 42 deadline)
+3. **When ready**: Cybersecurity Phase 1 Tier 1 launch approval
+4. **No deadline**: Mfg-farm test print, seedwarden plant orders + photography window confirmation
+
+### Next session
+
+Pick up after 20:00 UTC checkpoint to classify outcome, archive resolved DB sync block, and execute post-checkpoint roadmap (`POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md`).
+

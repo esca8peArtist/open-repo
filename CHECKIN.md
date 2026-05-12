@@ -1,5 +1,59 @@
 # Check-in
 
+## Session 938 — May 12, 2026 13:30 UTC (Orchestrator Relevance Audit & Cleanup)
+
+**Task scope**: Read all state files, assess relevance against today's date, clean stale entries, process the INBOX Path Model item, and brief the user on what is genuinely actionable today.
+
+### What was stale and got cleaned
+
+1. **stockbot status line** in PROJECTS.md was out of date — referenced "19 positions closing May 5 13:30 UTC open" (closures completed a week ago). The architecture cleanup that landed today (commit 2372f1d, ARCH-1/2/4/6/7 + M5/7/8) was not reflected anywhere in the orchestrator state. ORCHESTRATOR_STATE.md now reflects current production state.
+
+2. **Block: "stockbot — Manual DB sync required on May 11 before checkpoint"** was past its action window (May 11 evening / May 12 morning have both passed). Reframed as "verification at 20:00 UTC checkpoint" instead of pre-emptive block. Original entry moved into a "superseded" frame in BLOCKED.md; will be moved to Resolved Archive after the checkpoint runs.
+
+3. **CHECKIN.md Session 937** (May 9) flagged "Jetson unreachable" and "ridge_wf session ID is placeholder" as critical issues. The May 12 ARCH_CLEANUP_2026-05-12.md confirms the container was restarted on Jetson today and is healthy — Jetson connectivity has been restored at some point between May 9 and now, so those alerts are no longer current.
+
+4. **INBOX "Path Model" item** processed: moved verbatim to stockbot Exploration Queue in PROJECTS.md as a Future Work design item with full scope (input/output spec, integration plan, backtesting protocol, compute budget). Cleared from INBOX New Items.
+
+5. **stockbot Jetson disk at 87%** block kept as-is — still relevant, deferred to "after May 12 checkpoint" per its own resolution criteria.
+
+6. **mfg-farm test print** block kept as-is — unchanged since 2026-04-12, still genuinely the gating user action.
+
+### What is genuinely still pending (user action required)
+
+In rough order of time-sensitivity:
+
+1. **stockbot — TODAY 20:00 UTC** (~6.5 hours from this writing): Run Gate 1 checkpoint query via `gate-1-outcome-classification.py`, classify outcome, then follow `MAY_12_OUTCOME_ROADMAP.md` / `POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md`. Predicted: FAR_MISS_C1 (expected, not a failure). If the AAPL h+10 SELL fill is missing from `database/trading.db`, run `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` first.
+
+2. **resistance-research — Distribution path decision** (A / A+37 Hybrid / B). Materials production-ready since Session 544 (3+ weeks). Path A+37 remains the orchestrator's recommended choice. Domain 42 DEA hearing deadline May 28 (16 days away); Wave 1 send was due May 8 per the Session 937 finding — needs verification on whether you sent it.
+
+3. **cybersecurity-hardening — Phase 1 Tier 1 launch approval**. Materials and measurement framework production-ready. Optional Flag 1/3 corpus updates (15–30 min each) identified by Session 937 if you want to land them before launch.
+
+4. **seedwarden — endangered species plant orders** were due May 8–9 per Session 936's procurement timeline. Verify with Mountain Rose Herbs / Strictly Medicinal Seeds / Prairie Moon Nursery whether orders went out. May 30 photography window confirmation also outstanding.
+
+5. **mfg-farm — Test print** (no change). Once printed, post-test-print fulfillment workflow (Session 935) gets you live in 1–2 hours.
+
+6. **stockbot — Permanent cron PATH fix** so nightly DB syncs don't continue to silently fail. Needed before Gate 2 work regardless of today's checkpoint outcome.
+
+### What you do NOT need to action
+
+- The May 9 Session 937 alerts about "Jetson unreachable" and "ridge_wf placeholder" — superseded by today's healthy Jetson container restart.
+- The Domain 42 NAACP LDF "outside send date is May 10" framing — that window has closed; the live deadline is the May 28 DEA hearing comments deadline.
+- Architecture decisions ARCH-1 through ARCH-7 — all resolved and deployed today (see `projects/stockbot/ARCH_CLEANUP_2026-05-12.md`).
+
+### State file changes in this session
+
+- `INBOX.md`: Path Model item cleared from New Items, processing note left in trailer
+- `PROJECTS.md`: Path Model added to stockbot Exploration Queue as Session 938 item; "Last updated by" line refreshed to today
+- `ORCHESTRATOR_STATE.md`: Rewritten — stockbot status reflects today's architecture cleanup; DB sync block reframed as checkpoint-time verification; Session 937 stale "Jetson unreachable" alerts cleared
+- `BLOCKED.md`: DB sync block reframed (date superseded 2026-05-12); will move to Resolved Archive after 20:00 UTC checkpoint
+- `CHECKIN.md`: This entry appended
+
+### Usage budget
+
+Sonnet 26.3% / All-models 1.7% — fresh week, plenty of headroom for the 20:00 UTC checkpoint and any fixes it triggers.
+
+---
+
 ## Session 937 — May 9, 2026 15:57 UTC (Autonomous Orchestrator - Critical Findings + Wave 1 Analysis Complete)
 
 **CRITICAL FINDINGS — THREE IMMEDIATE USER ACTIONS REQUIRED**:
