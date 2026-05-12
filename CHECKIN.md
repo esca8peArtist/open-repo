@@ -1,5 +1,31 @@
 # Check-in
 
+## Session 940 — May 12, 2026 20:13 UTC (Gate 1 Checkpoint Verification + Monitoring Setup)
+
+**Status**: ✅ COMPLETE — Checkpoint verified, FAR_MISS_C1 confirmed, May 14 monitoring scheduled
+
+**Checkpoint Results Summary**:
+- **Scenario**: FAR_MISS_C1 (Timing Only) — EXPECTED behavior, not a failure
+- **confirmed_round_trips**: 0 (correct for h+8 on checkpoint day)
+- **aapl_model_sells**: 0 (AAPL h=10 hold expires May 14 at h+10)
+- **total_fills_since_may5**: 19 (all May 5 non-AAPL liquidations)
+- **Next checkpoint**: May 14 20:00 UTC — expect 2 AAPL SELL fills
+- **Monitoring**: Cron job scheduled (d83409bb), will fire May 14 20:00 UTC
+
+**Critical Item Still Pending**:
+- 🔴 **resistance-research Domain 42 Wave 1 — OVERDUE 2+ days**
+  - Due: May 8 → Now May 12 (deadline pressure: May 28 DEA hearing, only 16 days away)
+  - Action: Send Wave 1 emails TODAY to Category A contacts
+  - Template ready: `projects/resistance-research/execution/domain-42-email-template-may28-urgency.md`
+  - This is **path-independent** — execute regardless of Path A/A+37/B decision
+
+**No Escalation Needed**:
+- Stockbot C1 path is proceeding as expected
+- No parameter changes needed until May 14 checkpoint
+- Jetson unreachability is acknowledged (local DB is synced and current)
+
+---
+
 ## Session 939 — May 12, 2026 19:02 UTC (Gate 1 Checkpoint + Critical Escalations)
 
 **URGENT ITEMS REQUIRING IMMEDIATE USER ACTION**:

@@ -59,6 +59,58 @@
 
 ---
 
+## 2026-05-12 20:13 — Session 940 — Orchestrator — Gate 1 Checkpoint Verification + May 14 Monitoring Setup
+
+**Time**: 20:13 UTC (checkpoint query completed)
+**Jetson status**: Unreachable (local trading.db synced and current)
+
+**Checkpoint Query Results — Confirmed FAR_MISS_C1**:
+- total_fills_since_may5: 19 ✓
+- buy_fills: 0
+- sell_fills: 19
+- aapl_model_sells: 0
+- confirmed_round_trips: 0
+- gross_profit/loss: None (all May 5 fills are non-AAPL liquidations with no P&L)
+- total_pnl: None
+
+**Disambiguation Query Results**:
+- May 5 SELL fills by ticker: AMZN, CAT, COP, COST, CVX, DIS, FDX, GOOGL, HON, INTC, LIN, MA, MRK, NEE, PG, RTX, SHW, UNH, WMT (19 total)
+- No fills May 6–12
+- All fills are non-AAPL (expected from architecture transition cleanup)
+
+**Scenario Classification: FAR_MISS_C1 (Timing Only)**
+- The 19 May 5 fills are the non-AAPL liquidations from the Jetson architecture transition
+- AAPL position is holding as designed — h=10 hold expires May 14 at h+10 (13:30 UTC)
+- h-day at checkpoint = h+8 (April 29 entry + 8 trading days)
+- Expected behavior, not a failure — zero confirmed round trips is CORRECT for C1
+
+**Next Actions (MAY_12_OUTCOME_ROADMAP.md Section 5.1, C1 action sequence)**:
+1. ✓ Record FAR_MISS_C1 in WORKLOG.md (this entry)
+2. ✓ Set monitoring checkpoint for May 14 at 20:00 UTC — expect 2 AAPL SELL fills (lgbm_ho + ridge_wf)
+   - Cron job created: d83409bb, one-shot firing May 14 20:00 UTC
+3. No parameter changes. No new sessions. No escalation during C1 wait.
+4. On May 14, rerun checkpoint query. Expected: confirmed_round_trips >= 2
+5. If May 16 shows no AAPL SELLs despite h+12: escalate to C2 four-step diagnosis
+
+**No immediate action required for stockbot** — monitoring is set, C1 path is proceeding as expected. May 14 will confirm AAPL h+10 SELL execution.
+
+**Critical Escalation: resistance-research Domain 42 Wave 1 OVERDUE**
+- Due: May 8 (originally), now May 12 (2+ days overdue)
+- Deadline: May 28 DEA hearing comments deadline (16 days away)
+- Template ready: `projects/resistance-research/execution/domain-42-email-template-may28-urgency.md`
+- **USER ACTION REQUIRED TODAY**: Send Domain 42 Wave 1 (Category A) emails to Drug Policy Alliance, Law Enforcement Action Partnership, SSDP, LEAP, etc.
+- Domain 42 is "path-independent" — must execute regardless of Path A/A+37/B distribution decision
+- Contact list and email templates are fully prepared in `projects/resistance-research/execution/`
+
+**Session 940 Summary**:
+- ✓ Checkpoint query run and verified (FAR_MISS_C1 confirmed)
+- ✓ May 14 monitoring checkpoint scheduled (cron job d83409bb)
+- ✓ Escalation verified: Domain 42 Wave 1 CRITICAL and OVERDUE
+- All orchestration files ready for commit
+- Next session action: May 14 20:00 UTC checkpoint + May 28 DEA deadline tracking
+
+---
+
 ## 2026-05-09 15:57 — Session 937 — Orchestrator — Parallel Wave 1 Analysis (3 agents, stockbot/resistance-research/cybersecurity-hardening)
 
 **CRITICAL FINDINGS — IMMEDIATE USER ACTION REQUIRED** (3 items):

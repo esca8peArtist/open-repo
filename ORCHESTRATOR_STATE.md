@@ -1,12 +1,12 @@
 # Orchestrator State
-> Auto-generated at 2026-05-12T19:01:27Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-12T20:13:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 66.7% (870,186 tokens) | All-models 4.3% | Reset in 149h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 67.7% (882,784 tokens) | All-models 4.7% | Reset in 149h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
-1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
-2. resistance-research
+1. stockbot  ← Gate 1 checkpoint COMPLETE: FAR_MISS_C1 (timing only). May 14 monitoring active.
+2. resistance-research  ← 🔴 CRITICAL: Domain 42 Wave 1 OVERDUE 2+ days. Send emails TODAY.
 3. cybersecurity-hardening
 4. mfg-farm
 5. seedwarden
@@ -33,9 +33,13 @@
 **Blocked**: None — Phase 1 ready for user approval and execution
 
 ### stockbot
-**Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: Session 938: ARCH cleanup deployed (AAPL lgbm_ho + ridge_wf running on Jetson). Gate 1 checkpoint May 12 20:00 UTC — classify outcome per MAY_12_OUTCOME_ROADMAP.md. Gate 2 prep follows checkpoint. Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment.
-**Blocked**: Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment (see BLOCKED.md)
+**Status**: Active — **Gate 1 checkpoint COMPLETE** (May 12 20:13 UTC). **Outcome: FAR_MISS_C1 (Timing Only)** — expected behavior, not a failure.
+**Checkpoint Results**: confirmed_round_trips=0, aapl_model_sells=0, total_fills_since_may5=19 (all non-AAPL May 5 liquidations)
+**Root Cause**: AAPL h=10 hold from April 29 entry is at h+8 on checkpoint day; expires May 14 at h+10 (13:30 UTC)
+**Next Checkpoint**: May 14 20:00 UTC — expect 2 AAPL SELL fills (lgbm_ho + ridge_wf)
+**Timeline**: Per C1 action sequence — no parameter changes, no new sessions. If May 16 shows no AAPL SELLs despite h+12, escalate to C2 diagnosis.
+**Monitoring**: Cron job d83409bb scheduled for May 14 20:00 UTC
+**Blocked**: None — C1 path proceeding as expected. Jetson disk cleanup is post-checkpoint task (noted in BLOCKED.md)
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
@@ -54,20 +58,6 @@
 **Status**: Active
 **Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers (no equipment, bands, full gym) × multiple frequencies (3/4/5/6 days), with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols. Awaiting user review and selection.
 ## Active Blocks
-### Usage limits — weekly calibration reminder
-**Date blocked**: 2026-05-12 (auto-added each Tuesday by reset-usage-budget.sh)
-**Context**: Plan limits reset today. Token limits in usage-check.py are calibrated estimates that drift over time. Verify against actual UI percentages.
-**What I need**: Check claude.ai → Settings → Usage & billing. Run: `bash scripts/verify-calibration.sh <sonnet_pct> <all_pct>`
-**Verify with**: `bash scripts/verify-calibration.sh`
-**Resolution**:
----
-### stockbot — Manual DB sync verification (May 11 cron PATH issue, action window passed)
-**Date blocked**: 2026-05-09
-**Date superseded**: 2026-05-12 (relevance audit)
-**Context**: Originally flagged because Jetson nightly DB sync via cron was not running (PATH env var not set in crontab, so `sync_db_from_alpaca.py` couldn't find `uv` binary). Action window was May 11 evening / May 12 morning before the 20:00 UTC checkpoint. Time has now elapsed. AAPL time-stop SELL was expected to fire May 11–13 (h+10).
-**What I need (revised)**: At 20:00 UTC checkpoint today, verify whether the AAPL h+10 SELL fill (if it occurred) is in trading.db. If absent, run `uv run python scripts/sync_db_from_alpaca.py --since 2026-04-29 --db database/trading.db` immediately before classifying outcome. Permanent cron PATH fix is still needed to prevent recurrence — track separately as ongoing infrastructure issue.
-**Verify with**: `ssh user@jetson "crontab -l | grep -E 'PATH|sync_db'"` (must show PATH line at top of crontab, then sync_db entry)
-**Resolution**: PENDING — depends on user verification at 20:00 UTC checkpoint. Move to Resolved Archive after checkpoint runs.
 ### mfg-farm — Test print required before launch prep continues
 **Date blocked**: 2026-04-12
 **Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
@@ -82,14 +72,13 @@
 **Resolution**:
 
 ## Recently Resolved (last 5)
+• Usage limits — weekly calibration reminder ← 2026-05-12 (Session 939, 19:02 UTC)
+• stockbot — Manual DB sync verification (May 11 cron PATH issue, action window passed) ← 2026-05-12 (Session 939, 19:02 UTC)
 • stockbot — Database persistence gap blocks May 12 checkpoint time-stop exit logic ← 2026-05-09 (Session 922)
 • stockbot — Docker API container stuck in initialization loop; HTTP endpoint unreachable ← 2026-05-09 (Session 919)
 • stockbot — Engine API auth failed; database partially recovered; checkpoint at risk ← 2026-05-09 (Session 911)
-• stockbot — Architecture decisions from full code review (ARCH-1 through ARCH-7) ← 2026-05-08
-• stockbot — Alpaca DTBP=0; waiting for May 6 market open reset ← 2026-05-06 09:56 UTC (Session 819)
 
 ## Inbox (unprocessed)
-- [WEEKLY-MAINTENANCE] Prune PROJECTS.md: trim each project's 'Current focus' to ≤2 paragraphs / 500 chars. Review quiescent projects (workout, off-grid-living, resume, open-repo) — pause any with no active work this week. Archive any BLOCKED.md Resolved Archive entries older than 30 days.
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)

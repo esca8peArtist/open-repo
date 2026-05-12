@@ -351,7 +351,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: Session 938: ARCH cleanup deployed (AAPL lgbm_ho + ridge_wf running on Jetson). Gate 1 checkpoint May 12 20:00 UTC — classify outcome per MAY_12_OUTCOME_ROADMAP.md. Gate 2 prep follows checkpoint. Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment.
+**Current focus**: Session 940: Gate 1 checkpoint complete — FAR_MISS_C1 (timing only, expected behavior). AAPL h=10 hold expires May 14 at h+10 (13:30 UTC). Expected 2 AAPL SELL fills on May 14. No parameter changes. Monitoring checkpoint scheduled May 14 20:00 UTC. Per C1 action sequence: if May 16 shows no AAPL SELLs despite h+12, escalate to C2 four-step diagnosis. Cron PATH fix + Jetson disk cleanup required post-checkpoint before Gate 2 deployment.
 
 
 **Comprehensive options backtesting — COMPLETE (Session 900)** (prior):
@@ -359,7 +359,7 @@
 - Key Finding: META_LGB_v1 (regime_only) achieves +41.96% return with Sharpe 1.84, Alpha +38.28%
 - Deployment Ready: Three-model portfolio (META + MSFT + SPY) projects +27.78% return, 1.53 Sharpe, -10.17% MaxDD
 
-**Blocked on**: None — checkpoint prep complete, engine running, position open. Awaiting May 12 execution.
+**Blocked on**: None — FAR_MISS_C1 path is proceeding as expected. Jetson disk cleanup remains a post-checkpoint task (noted in BLOCKED.md, not blocking C1). Next milestone: May 14 20:00 UTC checkpoint (expect 2 AAPL SELL fills at h=10 exit).
 
 **Session 829 (2026-05-06) — MAY 12 OUTCOME ROADMAP COMPLETE (Exploration Queue)**:
 - **Deliverable**: `MAY_12_OUTCOME_ROADMAP.md` created — single actionable reference for May 13 morning
