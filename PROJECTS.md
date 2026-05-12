@@ -56,7 +56,8 @@
 **Status**: Active — ready to prototype
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/mfg-farm/`
-**Current focus**: Session 291: **Business plan COMPLETE** (`business-plan.md`). **CadQuery parametric designs COMPLETE** (`cadquery/modrun_rail.py`, `cadquery/modrun_clip.py`). Market research + competitive analysis complete (`market-research.md`). Etsy and Amazon listing copy complete (`etsy-listing-modrun.md`). **Phase 2 supplier research COMPLETE** (Session 544: `phase-2-supplier-research.md`, `supplier-scorecard.csv` — top 5 suppliers ranked, $0.77–1.40/unit COGS savings identified, post-test-print sequence documented). **Production Scaling & Automation Research COMPLETE** (Session 697: `production-scaling-research.md`, `cost-model-spreadsheet.csv` — 3,200 words covering batch optimization, turnaround modeling, supplier sourcing, cost structure at scale, automation opportunities, failure prevention). **Key Finding**: FDM_TOLERANCE calibration (0.05mm swing between click-fit and rattle-loose) MUST be evaluated during test print — snap arm 1.4mm thickness is highest risk feature. Cost model: \$0.08–\$0.13 COGS/clip, 72–73% gross margin at 20 units/week, \$950 startup capital recovered Month 1. **Lead product: ModRun cable management system** — original design, Etsy-compliant, 65–72% net margins. **BLOCKING GATE: test print required.** User needs to: (1) run `pip install cadquery` in mfg-farm env or system Python, (2) run `python modrun_clip.py --output-dir ./stl/` and `python modrun_rail.py --output-dir ./stl/` to generate STL files, (3) test print and evaluate FDM_TOLERANCE (print settings: 0.20mm layer height, 20–25% infill, 3 walls, 220–225°C, PLA+), (4) tune tolerance parameters, (5) photograph finished set, (6) list on Etsy. All copy, pricing, tags, photo brief ready in `etsy-listing-modrun.md`. Post-test-print supplier sequence documented — negotiate immediately after print.
+**Current focus**: Session 938: All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
+
 **Blocked on**: Test print (user action required — see focus above)
 **Notes**: Automation is the core constraint — products and workflows must be designed for minimal human touchpoints per unit. Physical products mean real fulfillment costs (packaging, shipping, storage) — factor these in from the start. Etsy and Amazon have different fee structures and audiences; may want both. Scaling from 1→N printers requires thinking about file management, queue management, quality control, and packaging throughput — not just the printers themselves.
 
@@ -68,10 +69,8 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Session 907 (2026-05-09): May 2026 Tracker Maintenance COMPLETE + Phase 2 Domain 39 (Immigration Enforcement & Detention Infrastructure) COMPLETE**. 
-- ✅ Tracker updates: first-amendment-suppression.md (No Kings 7M protests, OIDO closure, 287(g) expansion 1,783 agreements), environmental-rollbacks-tracker.md (EPA IRIS chemical directive May 5, 500+ rules destabilized; RMP deadline May 11), police-brutality-consent-decree-tracker.md (Springfield termination, Cleveland exit denied, Baltimore partial sections, OIDO pattern extension)
-- ✅ New Phase 2 Domain 39: 6,490 words, 43 sources. Structural analysis of immigration enforcement as simultaneous judicial, prosecutorial, and electoral suppression apparatus. Cross-domain synthesis: Domains 6+29+37, police brutality tracker, showing unified enforcement architecture. Selection: OIDO permanent closure (May 5), ICE detention death trajectory (18 deaths Q1 2026), 287(g) expansion as voter suppression mechanism.
-- Phase 1 production-ready for distribution (blocked on user path decision only). Phase 2 expansion can continue independently. Domain 42 May 28 DEA deadline remains active (19 days). Phase 1 trackers current through May 9.
+**Current focus**: Session 938: 38+ domains production-ready (Phase 1+2 complete, trackers current May 9). Domain 42 DEA hearing deadline May 28. **Blocked**: user distribution path decision — A / A+37 (recommended) / B.
+
 
 **Session 876 Deliverables**:
 - ✅ **Tracker Maintenance (May 1–7, 2026)**: Updated first-amendment-suppression.md (A.9: Bondi memo May 1 journalist protection revocation; A.10: CPJ/whistleblower developments), environmental-rollbacks-tracker.md (Entry 35: Ethylene Oxide; Entry 36: TCE TSCA), police-brutality-consent-decree-tracker.md (Springfield, Cleveland, Aurora updates)
@@ -299,19 +298,8 @@
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: **Session 905 (2026-05-09): Phase 2 Scenario Playbooks COMPLETE** (Commit ae86d735). Phase 2 research infrastructure now 100% ready:
-- ✅ `tier-2-healthcare-tactical-guide.md` (4,913 words) — HIPAA modernization, Medicaid-ICE pipeline, ransomware continuity
-- ✅ `tier-2-finance-tactical-guide.md` (4,293 words) — Scattered Spider, AI deepfake BEC, multi-regulator notification
-- ✅ `tier-2-critical-infrastructure-tactical-guide.md` (4,459 words) — CISA AA26-097a, Volt Typhoon, IT-OT architecture
-- ✅ `tier-2-government-tactical-guide.md` (4,456 words) — Ransomware surge, Election infrastructure deadline (Sept 15)
-- ✅ `tier-2-nonprofit-civil-society-tactical-guide.md` (4,227 words) — DHS subpoenas, Paragon Graphite spyware
-- **Session 902 Item 31 Complete** (Commit 64295286): Tier 2 distribution infrastructure finalized
-- **Session 905 Phase 2 Scenario Playbooks** (Commit ae86d735): All 4 priority playbooks complete
-  - ✅ `phase-2-financial-resistance-security-playbook.md` (~5,800 words) — Monero FCMP++, IRS Form 1099-DA, Bisq/Haveno, hardware wallets, 18+ sources
-  - ✅ `phase-2-institutional-whistleblowing-security-playbook.md` (~5,700 words) — Corporate insider threat platforms, CISA Jan 28 guidance, False Claims Act sequencing, 20+ sources
-  - ✅ `phase-2-dv-survivor-security-playbook.md` (~5,600 words) — AirTag detection, Address Confidentiality Programs, stalkerware as evidence, safety-first architecture, 17+ sources
-  - ✅ `phase-2-journalist-security-playbook.md` (existing v1.0, 3,600 words, 17 sources) — CBP border searches, FISA 702, NSL metadata, grand jury subpoenas
-All scenario playbooks grounded in May 2026 threat intelligence, cross-referenced to Phase 1 core guidance. Phase 2 research 100% complete. Phase 2 Tier 2 distribution infrastructure now fully ready.
+**Current focus**: Session 938: Phase 2 Scenario Playbooks complete (all 4 playbooks, May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). **Blocked**: user approval for Phase 1 launch + Day 1 send date.
+
 
 **Session 876 Deliverables**:
 - ✅ **phase-2-immigration-surveillance-evasion-playbook.md v1.1**: Updated threat vectors (Penlink geofencing ICE Sept 2025 subscription, Medicaid/HHS/DHS data sharing 80M patients Jan 2026, Thomson Reuters CLEAR May 31 contract expiry, Maine/Portland biometric scan Feb 2026), 4-tier checklist (3-days-before, day-of, post-encounter, ongoing), legal aid workshop curriculum, 15+ source bibliography. Ready for Tier 2 pilot.
@@ -363,15 +351,8 @@ All scenario playbooks grounded in May 2026 threat intelligence, cross-reference
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: 🔴 MAY 12 CHECKPOINT PREPARATION — COMPLETE (Session 922)
-- ✅ Engine health verified (Jetson SSH: 3h uptime, both sessions active, normal CPU/memory)
-- ✅ AAPL position confirmed open: 108 shares, avg entry $267.877, unrealized P&L +$2,747.84 (h+8, time-stop fires h+10 expected Monday May 12)
-- ✅ Database sync executed: 68 fills synced (19 May 5 + 49 Apr 29 + 1 AAPL position), checkpoint query ready
-- ✅ Position-age logic validated: Simulated _get_position_age_bars() returns 6 bars (1 bar from time-stop trigger)
-- ✅ Tests updated: 979 trading unit tests pass, 0 failures; 9 new position-age tests added
-- ✅ PRE_CHECKPOINT_VALIDATION.md created with engine status, position snapshot, DB integrity summary
-- **Predicted checkpoint outcome**: FAR_MISS_C1 (0 AAPL SELL fills) if no signal fires; likely NEAR_MISS (1 SELL) if time-stop fires Monday
-- **Next**: May 12 20:00 UTC checkpoint execution (run query, assign scenario, follow MAY_12_OUTCOME_ROADMAP.md)
+**Current focus**: Session 938: ARCH cleanup deployed (AAPL lgbm_ho + ridge_wf running on Jetson). Gate 1 checkpoint May 12 20:00 UTC — classify outcome per MAY_12_OUTCOME_ROADMAP.md. Gate 2 prep follows checkpoint. Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment.
+
 
 **Comprehensive options backtesting — COMPLETE (Session 900)** (prior):
 - `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` extended from 790 to 1,423 lines with 6 new analytical sections
@@ -617,7 +598,7 @@ All scenario playbooks grounded in May 2026 threat intelligence, cross-reference
    - Initial funding: $100–500 per readiness checklist
    - Both vol scalar and HMM regime scalar operational for production trading
 
-**Blocked on**: Engine restart (user action — before 2026-04-28 09:30 ET, CRITICAL)
+**Blocked on**: Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment (see BLOCKED.md)
 **Notes**: Multi-ticker training complete and verified (Session 533). System positioned to exceed Gate 1 by 4x (~124 trades/month). All optimization infrastructure in place. Live trading launch timeline: (1) Engine restart, (2) Multi-ticker paper trading setup, (3) Gate 1 pass by May 12 checkpoint, (4) 3-month paper trading track record before live launch.
 
 ---
@@ -628,7 +609,8 @@ All scenario playbooks grounded in May 2026 threat intelligence, cross-reference
 **Status**: Paused — resume when user unpauses
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-source-rideshare/`
-**Current focus**: Session 407: **Driver Document Expiry Status Endpoints COMPLETE** (commit `c8cd00f`, 20 new tests, branch `feature/driver-navigation`). `GET /drivers/me/document-expiry` (driver self-check with urgency labels) and `GET /admin/document-expiry` (fleet overview with expired_only filter). `get_expiring_documents_for_driver()` added to service layer. 6,154 tests passing. **Next**: open-repo data acquisition task (acquire OpenFarm data via Internet Archive and run import_openFarm.py), or further rideshare safety/compliance features.
+**Current focus**: Session 938: Project paused. Last active Session 407 — driver document expiry endpoints complete (6,154 tests passing, branch `feature/driver-navigation`). Resume when user unpauses.
+
 **Blocked on**: —
 **Notes**: This is the only public project. Higher standards for documentation, test coverage, and code quality since it's community-facing. Regulatory/safety/security solutions and growth strategy are in scope alongside the technical build.
 
@@ -640,19 +622,8 @@ All scenario playbooks grounded in May 2026 threat intelligence, cross-reference
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: **Session 907 (2026-05-09): Phase 3 Asset Completion COMPLETE**. 
-- ✅ Phase 3 planning layer verified complete (15+ strategy documents from prior sessions)
-- ✅ Phase 3 execution-layer assets built (7 production-ready files):
-  - `PHASE_3_EXECUTION_GUIDE.md` — Master 53-day timeline, 6 user-only actions, launch day checklist, risk mitigations
-  - `phase-3-canva-mockup-brief.md` — 12 Canva deliverable briefs (hex codes, dimensions, fonts, file naming)
-  - `phase-3-botanical-stock-list.md` — Verified Wikimedia Commons/Unsplash stock sources for all medicinal herb imagery
-  - `phase-3-broadcast-sequence.md` — 4 launch broadcasts (June 15–July 1) + 8 funnel emails, complete body copy
-  - `phase-3-social-post-templates.md` — 20 complete posts (weeks 1–4), captions, hashtags, Pinterest/TikTok specs
-  - `phase-3-kpi-dashboard.md` — Weekly targets, alert thresholds, 5-tab spreadsheet spec, 90-day/6-month/12-month metrics
-  - `phase-3-landing-pages.md` — Complete copy for 3 Kit landing pages + automation notes
-- ✅ Success metrics formalized: 90-day ($1,500+ gross, 1.5%+ conversion, 3+ practitioner licenses), 6-month ($3,000+ gross, 2+ bundles), 12-month ($4,000+ gross, 20%+ medicinal herb revenue, Phase 4 gate)
-- ✅ Track B: Zero blockers; Phase 3 assets enable independent execution
-**User Actions Required**: Phase 2 (5 items, Track A/B documented), Phase 3 (6 user-only actions documented in execution guide: Kit tag creation, landing page build, Canva Brand Kit, herb props order, photo session, Etsy uploads). Phase 2 May 30, Phase 3 June 15–July 1. Both timelines have fallback dates; no blockers on execution.
+**Current focus**: Session 938: Phase 3 execution assets complete — 7 production-ready files (execution guide, Canva briefs, broadcast sequence, social templates, KPI dashboard, landing pages). Phase 2 target May 30, Phase 3 June 15–July 1. Track B unblocked. **Blocked (Track A)**: tag corrections + Etsy account verification.
+
 
 **Phase 2 Status (Track B)**:
 - **Asset verification COMPLETE**: 63 mockup files confirmed, 10 Cluster D/E stock images staged and confirmed, logo confirmed, all output directories exist, email copy confirmed, 60-day calendar confirmed.
@@ -749,13 +720,8 @@ All scenario playbooks grounded in May 2026 threat intelligence, cross-reference
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
 **Visibility**: Public — GitHub repo: `https://github.com/esca8peArtist/off-grid-living-guide` (live as of 2026-04-26)
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: **GitHub Publication COMPLETE (Session 486)**. All tasks executed:
-  - ✅ Fixed file numbering: 01→03→... → 01-17 sequential with no gaps (shelter moved 11→02)
-  - ✅ Updated all internal cross-references (17 files)
-  - ✅ Wrote comprehensive README.md with structure, usage guide, CC BY-SA 4.0 license
-  - ✅ Verified nuclear/radiological preparedness content (725 lines, complete)
-  - ✅ Published to GitHub via git subtree push
-  - ✅ Drafted social media posts (Reddit × 3, X/Twitter thread, email draft)
+**Current focus**: Session 938: GitHub publication complete. Social media execution toolkit ready (`social-media-execution-toolkit.md`). No further autonomous work available — awaiting user execution of distribution plan.
+
 
 **Session 697 (2026-04-30) — Phase 2 Social Media Execution Toolkit COMPLETE** ✅:
 - **Community Research** (1,500–2,000 words): r/offgrid, r/preppers, r/homesteading audience analysis, optimal post timing, platform-specific content angles

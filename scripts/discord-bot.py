@@ -11,9 +11,11 @@ Setup:
   DISCORD_OWNER_ID=your-discord-user-id in ~/.claude_env
 """
 
+import fcntl
 import os
+import re
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import discord
@@ -64,10 +66,54 @@ def read_section(path: Path, section: str, lines: int = 40) -> str:
         return f"(file not found: {path.name})"
 
 
+def resolve_block(project: str, note: str) -> str:
+    """Write a Resolution line to the first matching active block in BLOCKED.md.
+    Returns a status message."""
+    import fcntl
+    lock_path = BLOCKED.with_suffix(".lock")
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    try:
+        with open(lock_path, "w") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            text = BLOCKED.read_text()
+            # Find Active Blocks section
+            active_m = re.search(r'## Active Blocks\n(.*?)(?=\n## |\Z)', text, re.DOTALL)
+            if not active_m:
+                return "⚠️ Could not find Active Blocks section in BLOCKED.md"
+            # Find a block matching the project name (case-insensitive prefix match)
+            pattern = re.compile(
+                r'(### ' + re.escape(project) + r'[^\n]*\n(?:(?!\n###).)*?)'
+                r'(\*\*Resolution\*\*:\s*)(\n)',
+                re.DOTALL | re.IGNORECASE
+            )
+            match = pattern.search(active_m.group(0))
+            if not match:
+                # Try looser match — project name anywhere in the header
+                pattern2 = re.compile(
+                    r'(### [^\n]*' + re.escape(project) + r'[^\n]*\n(?:(?!\n###).)*?)'
+                    r'(\*\*Resolution\*\*:\s*)(\n)',
+                    re.DOTALL | re.IGNORECASE
+                )
+                match = pattern2.search(active_m.group(0))
+            if not match:
+                titles = re.findall(r'### (.+)', active_m.group(0))
+                available = ", ".join(titles) if titles else "none"
+                return f"⚠️ No unresolved block found matching '{project}'. Active blocks: {available}"
+            resolution_line = f"**Resolution**: {note} (resolved via !resolve {timestamp})\n"
+            new_text = text[:active_m.start() + match.start(2)] + resolution_line + text[active_m.start() + match.end(2) + 1:]
+            tmp = BLOCKED.with_suffix(".tmp")
+            tmp.write_text(new_text)
+            os.replace(tmp, BLOCKED)
+            block_title = re.search(r'### (.+)', match.group(1))
+            title = block_title.group(1) if block_title else project
+            return f"✅ Resolution written for: **{title}**\nNote: {note}\nThe orchestrator will archive this block at the next session."
+    except Exception as e:
+        return f"⚠️ Error writing to BLOCKED.md: {e}"
+
+
 def add_to_inbox(message: str) -> None:
     """Append a task to INBOX.md under New Items, using a lock file to prevent
     race conditions with concurrent orchestrator writes."""
-    import fcntl
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     entry = f"- [{timestamp}] {message}\n"
     lock_path = INBOX.with_suffix(".lock")
@@ -134,16 +180,22 @@ async def on_message(message: discord.Message):
 
     if content.lower() == "!help":
         help_text = (
-            "**Claude Orchestrator Commands**\n"
+            "**Claude Orchestrator Commands**\n\n"
+            "**Read state**\n"
             "`!status` — last 20 lines of WORKLOG.md\n"
-            "`!checkin` — current check-in briefing\n"
-            "`!blocked` — items waiting on your input\n"
-            "`!projects` — active project list\n"
+            "`!checkin` — current check-in briefing (CHECKIN.md)\n"
+            "`!blocked` — items waiting on your input (BLOCKED.md)\n"
+            "`!inbox` — current unprocessed items in INBOX.md\n"
+            "`!projects` — active project list (PROJECTS.md)\n"
             "`!log N` — last N lines of WORKLOG.md (default 20)\n"
-            "`!usage` — current weekly Claude usage vs budget\n"
+            "`!usage` — current weekly Claude usage vs budget\n\n"
+            "**Write state**\n"
+            "`!resolve <project> <note>` — mark a block resolved in BLOCKED.md\n"
+            "    Example: `!resolve stockbot cron PATH fix deployed`\n"
             "`!pause [reason]` — pause autonomous project work\n"
-            "`!resume` — resume autonomous work (clears pause/override)\n"
-            "Any other message → added to INBOX.md as a task for Claude"
+            "`!resume` — resume autonomous work (clears pause/override)\n\n"
+            "**Inbox**\n"
+            "Any non-command message → added to INBOX.md as a task for Claude"
         )
         await message.channel.send(help_text)
 
@@ -169,10 +221,28 @@ async def on_message(message: discord.Message):
         for chunk in chunk_message(f"**BLOCKED**\n{text}"):
             await message.channel.send(chunk)
 
+    elif content.lower() == "!inbox":
+        text = read_section(INBOX, "## New Items")
+        for chunk in chunk_message(f"**INBOX (unprocessed)**\n{text}"):
+            await message.channel.send(chunk)
+
     elif content.lower() == "!projects":
         text = read_tail(PROJECTS, 50)
         for chunk in chunk_message(f"**PROJECTS**\n```\n{text}\n```"):
             await message.channel.send(chunk)
+
+    elif content.lower().startswith("!resolve"):
+        parts = content.split(None, 2)
+        if len(parts) < 3:
+            await message.channel.send(
+                "Usage: `!resolve <project> <resolution note>`\n"
+                "Example: `!resolve stockbot cron PATH fix deployed`"
+            )
+        else:
+            project_name = parts[1]
+            resolution_note = parts[2]
+            result = resolve_block(project_name, resolution_note)
+            await message.channel.send(result)
 
     elif content.lower() == "!usage":
         try:

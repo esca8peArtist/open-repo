@@ -147,6 +147,10 @@ Sonnet 26.3% / All-models 1.7% — fresh week, plenty of headroom for the 20:00 
 
 ---
 
+---
+
+## History
+
 ## Session 936 — May 9, 2026 (Autonomous Orchestrator - Exploration Items 18-20 Complete + URGENT seedwarden action)
 
 **Summary**: All main projects remain blocked on user actions. Executed 3 more exploration items immediately following Session 935. New deliverables address critical May-June deadlines: resistance-research Phase 2 expansion (Aug 1 deadline for ballot measure campaigns), stockbot May 12 checkpoint decision tree (ready for May 13 execution), seedwarden endangered species ordering (**TODAY May 9 — orders already due, action required now**). Effort: 4–5 hours total; 3 production-ready documents.
@@ -503,4 +507,3 @@ Sonnet 26.3% / All-models 1.7% — fresh week, plenty of headroom for the 20:00 
 2. If user provides distribution path → orchestrator executes Phase 1 immediately
 
 ---
-

@@ -13,6 +13,8 @@ MAX_TURNS=80
 PAUSE_BETWEEN_SESSIONS=300       # 5 min between sessions (normal post-session pause)
 SUMMARY_INTERVAL=7200            # 2 hour summary interval
 SESSION_TIMEOUT=5400             # 90 min max per session — kill if hung
+DAILY_NOTIFY_HOUR=16             # 4pm local time for daily blocked + check-in digest
+DAILY_NOTIFY_MARKER="$WORKSPACE/.last-daily-notify"
 
 # Orchestrator runs on Haiku (cheap orientation + delegation).
 # Subagents (stockbot, rideshare, etc.) run on Sonnet per their agent definitions.
@@ -89,7 +91,11 @@ def get_active_blocks(path):
         m = re.search(r'## Active Blocks\n(.*?)(?=\n## |\Z)', text, re.DOTALL)
         if not m:
             return "None"
-        content = re.sub(r'<!--.*?-->', '', m.group(1), flags=re.DOTALL).strip()
+        content = m.group(1)
+        # Strip full auto-generated blocks (e.g. calibration reminder) — they have
+        # their own weekly notification path and clutter the 2hr session summary.
+        content = re.sub(r'<!-- AUTO:\w+:START -->.*?<!-- AUTO:\w+:END -->', '', content, flags=re.DOTALL)
+        content = re.sub(r'<!--.*?-->', '', content, flags=re.DOTALL).strip()
         if not content:
             return "None"
         titles = re.findall(r'### (.+?)(?:\n|$)', content)
@@ -114,6 +120,98 @@ if not http_code.startswith("2"):
 PYEOF
 }
 
+send_daily_digest() {
+  [ -z "$DISCORD_WEBHOOK_URL" ] && return
+
+  python3 - "$WORKSPACE/BLOCKED.md" "$WORKSPACE/CHECKIN.md" "$DISCORD_WEBHOOK_URL" <<'PYEOF'
+import sys, json, re, subprocess
+from datetime import date, datetime, timezone
+from pathlib import Path
+
+blocked_file, checkin_file, webhook = sys.argv[1], sys.argv[2], sys.argv[3]
+
+def get_blocks_with_age(path):
+    try:
+        text = Path(path).read_text(encoding="utf-8", errors="replace")
+        m = re.search(r'## Active Blocks\n(.*?)(?=\n## |\Z)', text, re.DOTALL)
+        if not m:
+            return "No active blocks."
+        content = m.group(1)
+        content = re.sub(r'<!-- AUTO:\w+:START -->.*?<!-- AUTO:\w+:END -->', '', content, flags=re.DOTALL)
+        content = re.sub(r'<!--.*?-->', '', content, flags=re.DOTALL).strip()
+        if not content:
+            return "No active blocks."
+        blocks = re.split(r'\n(?=### )', content)
+        lines = []
+        for block in blocks:
+            block = block.strip()
+            if not block:
+                continue
+            title_m = re.search(r'### (.+)', block)
+            date_m = re.search(r'\*\*Date blocked\*\*:\s*(\d{4}-\d{2}-\d{2})', block)
+            need_m = re.search(r'\*\*What I need\*\*:\s*(.+?)(?=\n\*\*|\Z)', block, re.DOTALL)
+            title = title_m.group(1) if title_m else "?"
+            if date_m:
+                d = date.fromisoformat(date_m.group(1))
+                age = (date.today() - d).days
+                age_str = f"({age}d)" if age > 0 else "(today)"
+            else:
+                age_str = ""
+            need = need_m.group(1).strip()[:120].replace('\n', ' ') if need_m else ""
+            lines.append(f"• **{title}** {age_str}")
+            if need:
+                lines.append(f"  → {need}")
+        return "\n".join(lines) if lines else "No active blocks."
+    except Exception as e:
+        return f"(error: {e})"
+
+def get_checkin_summary(path):
+    try:
+        text = Path(path).read_text(encoding="utf-8", errors="replace")
+        m = re.search(
+            r'## Since Last Check-in \(([^)]+)\)[^\n]*\n(.*?)(?=\n## Since Last Check-in|\n---|\Z)',
+            text, re.DOTALL
+        )
+        if not m:
+            return "No recent check-in found."
+        session_id = m.group(1).strip()
+        body = m.group(2).strip()
+        bullets = []
+        for line in body.splitlines():
+            s = line.strip()
+            if s and not s.startswith('#') and (s[0] in '-•' or s[0] in '✅🔍⚠️🟢🔴'):
+                clean = re.sub(r'\*+([^*]+)\*+', r'\1', s.lstrip('-• '))
+                bullets.append(clean[:120])
+            if len(bullets) >= 5:
+                break
+        result = f"**{session_id}**"
+        if bullets:
+            result += "\n" + "\n".join(f"• {b}" for b in bullets)
+        return result
+    except Exception as e:
+        return f"(error: {e})"
+
+blocks = get_blocks_with_age(blocked_file)
+checkin = get_checkin_summary(checkin_file)
+now_str = datetime.now().strftime("%a %b %-d %H:%M")
+
+msg = (
+    f"**[Claude Daily Digest — {now_str}]**\n\n"
+    f"**Blocked (waiting on you):**\n{blocks}\n\n"
+    f"**Last session:**\n{checkin}"
+)
+payload = json.dumps({"content": msg})
+result = subprocess.run(
+    ["curl", "-s", "-w", "\n%{http_code}", "-H", "Content-Type: application/json",
+     "-d", payload, webhook],
+    capture_output=True, text=True, timeout=15
+)
+http_code = result.stdout.strip().split("\n")[-1]
+if not http_code.startswith("2"):
+    print(f"Discord daily digest failed: HTTP {http_code}", file=sys.stderr)
+PYEOF
+}
+
 # Background watchdog: fires summary every 2hrs, but silent while usage-paused.
 summary_watchdog() {
   while true; do
@@ -124,10 +222,29 @@ summary_watchdog() {
   done
 }
 
-# Start the summary watchdog in the background
+# Daily digest watchdog: fires once at 4pm with full blocks + check-in.
+daily_digest_watchdog() {
+  while true; do
+    sleep 300  # check every 5 minutes
+    CURRENT_HOUR=$(date +%H)
+    TODAY=$(date +%Y-%m-%d)
+    LAST_DATE=$(cat "$DAILY_NOTIFY_MARKER" 2>/dev/null || echo "")
+    if [ "$CURRENT_HOUR" -eq "$DAILY_NOTIFY_HOUR" ] && [ "$TODAY" != "$LAST_DATE" ]; then
+      if [ -n "$DISCORD_WEBHOOK_URL" ] && [ ! -f "$WORKSPACE/USAGE_PAUSE" ]; then
+        send_daily_digest
+        echo "$TODAY" > "$DAILY_NOTIFY_MARKER"
+        echo "[$(date)] Daily digest sent." >> "$LOG_FILE"
+      fi
+    fi
+  done
+}
+
+# Start watchdogs in the background
 summary_watchdog &
 WATCHDOG_PID=$!
-trap "kill $WATCHDOG_PID 2>/dev/null; exit" EXIT INT TERM
+daily_digest_watchdog &
+DAILY_WATCHDOG_PID=$!
+trap "kill $WATCHDOG_PID $DAILY_WATCHDOG_PID 2>/dev/null; exit" EXIT INT TERM
 
 while true; do
   # ── Pre-session: ensure we're on master ───────────────────────────────────
@@ -206,6 +323,20 @@ while true; do
 
   # ── Post-session: return to master ────────────────────────────────────────
   git -C "$WORKSPACE" checkout master >> "$LOG_FILE" 2>&1 || true
+
+  # ── Post-session: verify CHECKIN.md was updated ────────────────────────────
+  # Timeout-killed sessions (124) didn't commit — skip the warning for those.
+  if [ "$EXIT_CODE" -ne 124 ]; then
+    CHECKIN_IN_LAST=$(git -C "$WORKSPACE" show --name-only --format="" HEAD 2>/dev/null | grep -c "CHECKIN.md" || echo "0")
+    if [ "$CHECKIN_IN_LAST" -eq 0 ]; then
+      echo "[$(date)] WARNING: CHECKIN.md not in last commit — orchestrator may have skipped check-in step." | tee -a "$LOG_FILE"
+      if [ -n "$DISCORD_WEBHOOK_URL" ] && [ ! -f "$WORKSPACE/USAGE_PAUSE" ]; then
+        curl -s -H "Content-Type: application/json" \
+          -d "{\"content\":\"⚠️ [Claude] Session ended but CHECKIN.md was not updated — orchestrator skipped the check-in step.\"}" \
+          "$DISCORD_WEBHOOK_URL" > /dev/null 2>&1 || true
+      fi
+    fi
+  fi
 
   # Auto-deploy to Jetson if orchestrator flagged it ready
   if [ -f "$WORKSPACE/DEPLOY_READY" ]; then

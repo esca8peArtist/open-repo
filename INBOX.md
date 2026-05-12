@@ -10,6 +10,7 @@
 ---
 
 ## New Items
+- [WEEKLY-MAINTENANCE] Prune PROJECTS.md: trim each project's 'Current focus' to ≤2 paragraphs / 500 chars. Review quiescent projects (workout, off-grid-living, resume, open-repo) — pause any with no active work this week. Archive any BLOCKED.md Resolved Archive entries older than 30 days.
 <!-- Add tasks here. Format: - [date] [description] -->
 
 *(no new items)*
