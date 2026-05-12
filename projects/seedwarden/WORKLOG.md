@@ -4,6 +4,32 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Item 21: Bundle E Pre-Publication Acceleration Package — 2026-05-12
+
+**Task**: Exploration Queue Item 21 — Create a comprehensive pre-publication acceleration package for Seedwarden Bundle E (Invasive Edibles) targeting May 19–22 launch.
+
+**File created**: `projects/seedwarden/BUNDLE_E_PUBLICATION_PACKAGE.md`
+
+**Summary**:
+- **Landing page copy**: ~380 words, production-ready. Angle: "Stop Fighting These Plants. Start Eating Them." Dual CTA (email signup lead magnet + direct Etsy purchase). Canva dimensions specified (1200×1500 px). Includes all five species listed with descriptions, environmental framing, and trust signals.
+- **7-email sequence**: Full body copy for all 7 emails. A/B subject line variants on Emails 1 and 5. Merge tags in Kit format ({{ subscriber.first_name }}). Timing: Day 0 through Day 11. Email 7 conditional on `bundle-e-purchased` tag. Companion lead magnet (Field ID Quick-Card) introduced in Emails 1 and 7.
+- **10-post social calendar**: May 13–22. 2 Reel scripts (45 sec and 30 sec), 4 carousel decks with Canva variable slots (1080×1350 px), 2 educational single posts, 1 UGC prompt, 1 launch announcement post. Hashtag packs by angle (core, environmental, urban, seasonal, niche depth).
+- **3 paid ad angles**: Angle 1 "Stop Invasive Plants. Start Eating Them." / Angle 2 "Free Food Growing in Your Local Ecosystem" / Angle 3 "Restore Your Land While Building Your Pantry." Each with email-signup and direct-sale CTA variants. UTM parameters included. Audience targeting notes and test-period budget guidance.
+- **Press release**: 185 words. Invasive edibles market positioning, conservation foraging framing, quote from founder Anya, contact block.
+- **Conversion funnel setup**: Full funnel diagram, Kit pre-launch checklist, UTM parameter reference table for all 7 channels, success metrics with pre-calculated targets (50 subscribers → launch-week revenue model), and Phase 2 May 30 handoff notes.
+- **Pricing**: Bundle at $29 (individual total $55 — lead with $26 savings, not 47% percentage per bundle strategy doc).
+
+**Sources reviewed**: PHASE_2_WRITING_VELOCITY_ANALYSIS.md, PHASE_2_BUNDLE_STRATEGY.md, competitor-landscape.md, phase-2-campaign-copy-drafts.md, marketing/email-and-launch-plan.md, WORKLOG.md. Web searches: invasive edibles harvest phenology, conservation foraging market, regenerative agriculture marketing precedents 2025–2026.
+
+**Research findings**:
+- Japanese knotweed shoot harvest window: late April–mid May (under 12 inches); tart rhubarb flavor confirmed by multiple foraging sources (Forager Chef, Edible Hudson Valley).
+- Garlic mustard: best harvested early-to-mid spring before bolting; every plant part edible including roots and seed pods.
+- Conservation foraging is an established term used by land management organizations — appropriate to use in copy without qualification.
+- Regenerative agriculture marketing growing at 72% CAGR 2019–2024 per Innova Market Insights; US leads with 64% of claims — strong tailwind for the ecological angle.
+- No direct competitor identified offering a dedicated invasive edibles guide bundle on Etsy; segment confirmed thin.
+
+---
+
 ## Item 20: Phase 2 Writing Velocity Analysis — 2026-05-12
 
 **Task**: Exploration Queue Item 20 — Phase 2 Guide Writing Workflow Prep. Deepened the Phase 2 guide writing pipeline to enable guides to be staged and ready independent of exact photo timing.
