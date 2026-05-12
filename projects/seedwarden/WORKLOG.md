@@ -4,6 +4,26 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Production Timeline — 2026-05-12
+
+**Task**: Phase 2 production planning — concrete daily timeline for May 30 launch, covering plant sourcing, location scouting, photography logistics, guide production, go-live coordination, and risk register.
+
+**Files created**:
+- `projects/seedwarden/PHASE_2_PRODUCTION_TIMELINE.md` — 2,400-word operational document with 7 sections and 16-risk register
+- `projects/seedwarden/phase-2-plant-procurement-tracker.csv` — 10-species supplier tracker with order deadlines, lead times, delivery windows, and photography notes
+- `projects/seedwarden/phase-2-photo-shoot-shot-log.csv` — 30-shot field-ready log for 3 clusters (Cluster 1: temperate forest, Cluster 2: riparian, Cluster 3: studio/indoor specimens)
+
+**Key decisions documented**:
+- May 30 launch scope: Core Four (Ginseng + Goldenseal + Black Cohosh + Ramps) + Wild Bergamot = 5 guides. Bloodroot, Trillium, Lady's Slipper = June 15 follow-ons.
+- Photo shoot dates: May 17 (Pisgah NF Cove Creek — Cluster 1), May 18 (Bent Creek riparian — Cluster 2), May 19 (studio — Cluster 3).
+- Supplier orders: Mountain Rose Herbs and Strictly Medicinal Seeds orders are due TODAY (May 12) to hit the May 17-19 shoot window. Prairie Moon Nursery call due May 13.
+- Institutional photo outreach: NC Botanical Garden, Missouri Botanical Garden, Hillside Nursery — email templates sent today.
+- Go/no-go criteria: 5 binary pre-conditions must all pass at May 28 evening verification.
+
+**Sources reviewed**: TRACK_B_FINAL_EXECUTION_GUIDE.md, PHASE_2_ENDANGERED_SPECIES_PROCUREMENT_TIMELINE.md, PHASE_2_PHOTOGRAPHY_LOGISTICS.md, endangered-species-candidate-list.md, phase-2-analytics-strategy.md, PHASE_2_CUSTOMER_SUCCESS_FRAMEWORK.md, PHASE_2_LAUNCH_VALIDATION_CHECKLIST.md
+
+---
+
 ## Track B Blocker Resolution — 2026-05-12
 
 **Task**: Resolve three critical blockers identified in session 945 for May 30 Phase 2 launch.
