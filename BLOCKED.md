@@ -27,11 +27,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### mfg-farm — Test print required before launch prep continues
-**Date blocked**: 2026-04-12
-**Context**: Business plan, CadQuery designs (modrun_rail.py, modrun_clip.py), market research, and listing copy are all complete. Orchestrator cannot proceed with launch prep until a physical test print confirms the designs are printable.
-**What I need**: Run a test print of the CadQuery rail and clip designs and confirm they printed correctly.
-**Verify with**: `# manual — cannot auto-verify`
+### stockbot — May 12 Checkpoint: Critical Architecture Mismatch (options vs equity trading)
+**Date blocked**: 2026-05-12 (Session 944, 20:40 UTC)
+**Context**: Ran May 12 checkpoint query at 20:40 UTC as scheduled. Query results show FAR_MISS_C1 (0 confirmed round trips, 6 total fills on May 12 only). However, investigation revealed critical discrepancy:
+- **Project status documents**: 2-session AAPL equity setup (lgbm_ho + ridge_wf with active-sessions.json), 19 positions closed May 5, AAPL position open since April 29
+- **Actual Jetson engine**: Running options_live_session YAML-configured system (NOT equity trading), with no AAPL trades since May 5, only 6 options fills on May 12
+- **Database mismatch**: Local stockbot.db has April 29 data only (49 fills); Jetson trading.db has May 12 options data (6 fills) + historical options data from January/March, zero AAPL equity trades from May 5-12 period
+
+**What I need**: Clarification on which system should actually be running: (1) the documented 2-session AAPL equity setup (active-sessions.json), or (2) the currently-deployed options trading system? If equity setup is correct, the Jetson deployment is missing that system entirely. If options is correct, project status documents need urgent update to reflect actual architecture.
+**Verify with**: `# manual — cannot auto-verify` (requires user decision on intended architecture)
 **Resolution**:
 
 

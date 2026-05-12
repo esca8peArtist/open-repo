@@ -4,6 +4,57 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-12 20:40 — Session 944 — Stockbot May 12 Checkpoint Query + Critical Discrepancy Discovery — BLOCKED
+
+**Time**: 20:40–20:53 UTC (checkpoint execution, discrepancy investigation, blocking discovered)
+
+### Checkpoint Query Results
+
+Executed the scheduled May 12 20:00 UTC checkpoint query at 20:40 UTC (40-minute delay due to initial orientation):
+
+| Metric | Value |
+|--------|-------|
+| Total fills since May 5 | 6 |
+| BUY fills | 3 |
+| SELL fills | 3 |
+| AAPL model SELLs | 3 |
+| Confirmed round trips | 0 |
+| Gross profit | NULL |
+| Gross loss | NULL |
+| Total PnL | NULL |
+
+**Scenario classification**: FAR_MISS_C1 per MAY_12_OUTCOME_ROADMAP.md (0 confirmed round trips, 0 AAPL model sells with realized_pnl)
+
+### Critical Discovery: Architecture Mismatch
+
+Investigation revealed a **critical discrepancy between documented and actual architecture**:
+
+**Documented** (PROJECTS.md, ORCHESTRATOR_STATE.md):
+- 2-session Jetson setup (AAPL lgbm_ho + AAPL ridge_wf)
+- 19 positions closed May 5 13:30 UTC
+- AAPL position open since April 29 with +$924 unrealized P&L
+- Uses `active-sessions.json` configuration
+
+**Actual** (Jetson Docker container inspection):
+- Running `options_live_session` system with YAML configuration (not JSON)
+- No AAPL equity trading since May 5
+- Only 6 options fills on May 12
+- Database shows options trades from January/March + May 12 only
+
+**Database state** (verified by querying both databases):
+- Local stockbot.db: 49 paper trades from April 29 only; zero May 5+ data
+- Jetson /app/database/trading.db: 6 May 12 options fills + historical options data; zero AAPL equity May 5-12
+
+### Status
+
+**Checkpoint result**: FAR_MISS_C1 (0 confirmed round trips, timing-only classification)
+
+**Blocking issue**: Cannot determine if this is expected behavior (AAPL h+10 hold not expired until May 14) or a deployment failure (wrong system running). Project status documents 2-session AAPL equity setup; actual engine is options-only. This mismatch blocks Gate 2 preparation and prevents accurate May 14 checkpoint.
+
+**Next action**: Requires user clarification on intended architecture (equity vs options system). Written to BLOCKED.md pending resolution.
+
+---
+
 ## 2026-05-12 20:25 — Session 943 — Exploration Queue Items 22-23 — COMPLETE
 
 **Time**: 20:25–20:38 UTC (decision framework + supplier playbook, 0.22 hrs)
