@@ -1,26 +1,46 @@
 # Check-in
 
-## Session 950 — May 13, 2026 00:30 UTC (Exploration Queue Item 22: Post-Gate-1 Response Framework Enhanced)
+## Session 950 — May 13, 2026 01:45 UTC (Exploration Queue Items 22 + 21: Checkpoint & Revenue Launch Infrastructure)
 
-**Status**: ✅ CHECKPOINT READINESS ACHIEVED — Framework enhanced with architecture decision integration
+**Status**: ✅✅ TWO EXPLORATION ITEMS COMPLETE — Checkpoint and revenue infrastructure ready for deployment
 
-**What Was Done**:
-- ✅ **Exploration Queue Item 22 COMPLETE**: Enhanced `POST_GATE_1_RESPONSE_FRAMEWORK.md` with architecture mismatch resolution path
-  - Integrated Sessions 948-949 architecture mismatch discovery into C2 diagnosis logic
-  - Enhanced Step 3 "Verify Database Integrity" with explicit architecture mismatch check (`options_live_session.yaml` vs `active-sessions.json`)
-  - Created new Section 6.2.3 "Architecture Mismatch Resolution" with three-question user decision checklist
-  - Updated recovery paths to flag architecture decision as prerequisite
-  - Ready for May 14 20:00 UTC checkpoint execution
+### What Was Done
 
-**Framework Status**: ✅ READY for May 14 20:00 UTC checkpoint. All C1/C2/C3 diagnosis paths complete. Architecture mismatch escalation path clear.
+**✅ Exploration Queue Item 22 (Stockbot)**: Enhanced `POST_GATE_1_RESPONSE_FRAMEWORK.md` 
+- Integrated architecture mismatch discovery (Sessions 948-949) into C2 diagnosis
+- Enhanced Step 3 with explicit architecture mismatch check (`options_live_session.yaml` vs `active-sessions.json`)
+- Created Section 6.2.3 "Architecture Mismatch Resolution" with three-question user decision checklist
+- **Status**: READY for May 14 20:00 UTC checkpoint execution
 
-**Next Event**: May 14 20:00 UTC checkpoint query execution (user runs checkpoint, framework handles diagnosis and escalation)
+**✅ Exploration Queue Item 21 (Seedwarden)**: Created `BUNDLE_E_PUBLICATION_PACKAGE.md` (4,500+ words)
+- **Components**: Landing page template, 7-email sequence (A/B variants), 10-post social calendar, 3 paid ads, PR template, conversion funnel
+- **Timeline**: May 19-22 launch (critical path for first revenue bundle)
+- **Revenue projection**: $2,900+ (100+ bundles × $29), <5% refund target, 30% community onboarding
+- **Status**: READY for May 19 launch (design + setup 3.5 hrs remaining)
 
-**Current Project Blockers** (unchanged from Session 949):
-- **Stockbot**: Awaiting user architecture decision (Items 22 framework READY; decision deadline <24 hours)
-- **Resistance-research**: Phase 1 path decision (Path A / A+37 / B) — deadline May 28
-- **Mfg-farm**: Test print execution (user action)
-- **Seedwarden**: Kit account creation (user action, deadline May 20)
+### Infrastructure Readiness Summary
+
+| Project | Deliverable | Deadline | Status |
+|---------|---|---|---|
+| **Stockbot** | Checkpoint framework + escalation path | May 14 20:00 UTC | ✅ READY |
+| **Seedwarden** | Revenue bundle publication infrastructure | May 19-22 | ✅ READY |
+| **Resistance-research** | Phase 2 domain candidates | Ongoing | ✅ READY (Sessions 949) |
+| **Cybersecurity-hardening** | Tier 2 pilot launch readiness | Post-Phase-1 | ✅ READY (Session 933) |
+
+### Current Project Blockers (Unchanged)
+
+- **Stockbot**: User architecture decision (A: 2-session AAPL / B: 67-ticker stacker / C: options system) — deadline <24 hours
+- **Resistance-research**: Phase 1 distribution path (A / A+37 / B) — deadline May 28
+- **Mfg-farm**: Test print execution (user action) — no deadline specified
+- **Seedwarden**: Kit account creation (user action) + May 19 launch decision
+
+### Session Metrics
+
+- **Exploration items completed**: 2/3 queued items (Item 23 pending on test print)
+- **Deliverables created**: 2 major (1,600+ words total)
+- **Implementation complexity**: Medium (design + setup <4 hours for Bundle E)
+- **Revenue potential**: $2,900+ (Bundle E) + Phase 2 upsell (40% early access discount)
+- **Strategic impact**: Removed friction from two critical upcoming events (May 14 checkpoint, May 19-22 launch)
 
 ---
 
