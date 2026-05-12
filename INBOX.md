@@ -18,10 +18,6 @@
 
 - [2026-05-12 19:02] [WEEKLY-MAINTENANCE] Reviewed quiescent projects: resume (paused), workout (awaiting user review), off-grid-living (complete, awaiting user execution), open-repo (awaiting PR review). All appropriately handled. No status changes needed. BLOCKED.md Resolved Archive reviewed — no entries older than 30 days (oldest are April 12, exactly 30 days today). No archiving needed.
 
-<!-- "Path Model" item processed 2026-05-12: moved to stockbot Exploration Queue in PROJECTS.md as a Future Work research item. -->
-
-
-
 ---
 
 ## Processing Rules
