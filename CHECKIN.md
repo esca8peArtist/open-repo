@@ -1,5 +1,45 @@
 # Check-in
 
+## Session 939 — May 12, 2026 19:02 UTC (Gate 1 Checkpoint + Critical Escalations)
+
+**URGENT ITEMS REQUIRING IMMEDIATE USER ACTION**:
+
+### 🔴 CRITICAL: resistance-research Domain 42 Wave 1 OVERDUE (2+ days late)
+- **Status**: Due May 8-10, now May 12 (2+ days overdue). May 28 DEA hearing participation deadline is 16 days away.
+- **What's needed**: Send Domain 42 Wave 1 (Category A) emails **TODAY** using template at `projects/resistance-research/execution/domain-42-email-template-may28-urgency.md`
+- **Materials fully prepared**: Contact list, email templates, Gist creation steps all in `projects/resistance-research/execution/`
+- **Key insight**: Domain 42 is **path-independent** — must launch regardless of Path A/A+37/B distribution decision due to May 28 DEA deadline
+- **Action needed**: User executes email send to Category A contacts (Drug Policy Alliance, Law Enforcement Action Partnership, SSDP, LEAP, etc.) immediately
+
+### Stockbot Gate 1 Checkpoint Results
+
+**Checkpoint Query Results** (19:02 UTC, local database):
+- **confirmed_round_trips**: 0
+- **aapl_model_sells**: 0
+- **total_fills_since_may5**: 19 (all SELL fills on May 5 only)
+- **Scenario**: **FAR-MISS C1 (Timing Only)** — Expected behavior, not a failure
+  - All 19 May 5 fills are non-AAPL liquidations from architecture transition
+  - AAPL h+10 exit is scheduled for May 14 (currently h+8 on May 12)
+  - Zero round trips is the EXPECTED state for C1 per `MAY_12_OUTCOME_ROADMAP.md` Section 5.1
+
+**Timeline**:
+- **Next monitoring checkpoint**: May 14 at 20:00 UTC — expect 2 AAPL SELL fills (lgbm_ho + ridge_wf)
+- **If May 16 shows no AAPL SELLs**: escalate to C2 four-step diagnosis per roadmap Section 5.2
+
+**Infrastructure Status**:
+- **Jetson connectivity**: Unreachable via SSH (hostname resolution failed; IP 100.120.18.84 API unresponsive). Trading.db is synced locally with May 5-12 fills. May 14 checkpoint will verify Jetson execution (h+10 SELL fills indicate live trading).
+- **Cron PATH fix**: Still needed as ongoing infrastructure item (not blocking C1 path)
+
+**Full documentation**: See WORKLOG.md Session 939 entry + MAY_12_OUTCOME_ROADMAP.md Sections 1, 5.1
+
+### Next Actions Summary
+
+1. **TODAY (May 12)**: Send Domain 42 Wave 1 emails to Category A organizations
+2. **May 14 (20:00 UTC)**: Run checkpoint query again; expect 2 AAPL SELL fills
+3. **Ongoing**: No parameter changes, no new sessions during C1 wait. No escalation unless May 16 shows zero AAPL SELLs.
+
+---
+
 ## Session 938 — May 12, 2026 13:30 UTC (Orchestrator Relevance Audit & Cleanup)
 
 **Task scope**: Read all state files, assess relevance against today's date, clean stale entries, process the INBOX Path Model item, and brief the user on what is genuinely actionable today.
