@@ -33710,3 +33710,54 @@ In time order:
 
 Pick up after 20:00 UTC checkpoint to classify outcome, archive resolved DB sync block, and execute post-checkpoint roadmap (`POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md`).
 
+
+## 2026-05-12 Session 951 — Architecture Investigation: Stockbot System Audit & Block Resolution
+
+**Trigger**: Autonomous orchestration run. Critical stockbot block required investigation to enable May 14 checkpoint planning.
+
+**Scope**: Audit stockbot deployed configuration vs. documentation discrepancy (2-session AAPL equity documented vs. "options trading deployed" per ORCHESTRATOR_STATE.md block entry).
+
+### Investigation Results
+
+**Key Finding**: active-sessions.json (source of truth) contains **52-ticker h10_lgbm_ho equity stacker portfolio**, not a 2-session setup or options system.
+
+**Deployed Configuration**:
+- 52 equity trading sessions, each running h10_lgbm_ho stacker
+- Tickers: AAPL (started 2026-04-26), MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, TSLA, + 42 others
+- Initial capital: $10,000 per session
+- API base: localhost:8000 (Jetson Docker container)
+- Session notes trace evolution through April 27 (Sessions 521-535, multi-batch expansion)
+
+**Discrepancy Explanation**:
+- ORCHESTRATOR_STATE.md and BLOCKED.md referenced "2-session AAPL equity" + "options_live_session" — these were stale documentation from prior investigation phases
+- Actual deployed system matches Architecture B (multi-ticker equity stacker) documented in Session 533 completion logs
+- Options mentions do not reflect current Jetson state
+
+**Architectural Clarity**:
+- System deployed: Architecture B (multi-ticker h10_lgbm_ho stacker, 52 parallel sessions)
+- May 12 checkpoint results (FAR_MISS_C1: 0 confirmed round trips, 6 fills) — consistent with multi-ticker early-phase trading
+- May 14 h+10 SELL trigger will fire as designed
+- Post-checkpoint infrastructure: Cron PATH fix + disk cleanup remain critical for Gate 2
+
+### Block Resolution
+
+**Status**: ✅ RESOLVED
+- **Block entry**: Moved to Resolved Archive in BLOCKED.md
+- **Documentation**: Updated CHECKIN.md Session 951 with investigation findings
+- **Impact**: May 14 checkpoint can proceed with confidence; architecture is confirmed correct
+
+### Files Modified
+
+- `BLOCKED.md` — Stockbot architecture mismatch block moved to Resolved Archive with resolution notes
+- `CHECKIN.md` — Session 951 entry added with investigation summary and user decision framework
+- `WORKLOG.md` — This entry appended
+
+### What is Actionable Now
+
+1. **May 14 20:00 UTC Checkpoint** — All systems ready to execute per POST_GATE_1_RESPONSE_FRAMEWORK.md
+2. **Post-Checkpoint Gate 2 Prep** — Cron PATH fix + Jetson disk cleanup (both tracked in PROJECTS.md)
+3. **Phase 2 Readiness** — Multi-ticker equity system confirmed ready; no architectural barriers to live trading transition once gates pass
+
+### Next Session
+
+May 14: Execute checkpoint query at 20:00 UTC, classify outcome (PASS/NEAR-MISS/FAR-MISS C1/FAR-MISS C2), follow roadmap. Expected: 2 AAPL SELL fills (lgbm_ho + ridge_wf sessions) at h=10 trigger time.

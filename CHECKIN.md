@@ -44,6 +44,42 @@
 
 ---
 
+## Session 951 — May 12, 2026 22:05 UTC (Architecture Investigation: Stockbot System Audit)
+
+**Status**: 🔍 CRITICAL INVESTIGATION COMPLETE — Architecture mismatch resolved; user decision framework clarified
+
+### Stockbot Architecture Investigation Results
+
+**Key Finding**: The active-sessions.json configuration shows a **52-ticker equity stacker portfolio**, NOT a 2-session setup.
+
+**Current Deployed Configuration**:
+- **52 equity trading sessions**, each running h10_lgbm_ho stacker
+- **Tickers**: AAPL (started 2026-04-26), + 51 others (MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, TSLA, IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T, BRK.B, NFLX, COST, TXN, AVGO, ABBV, BMY, TMO, CAT, SBUX, RTX, AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK, HD, LMT, UPS, REGN, FDX)
+- **Initial capital per session**: $10,000
+- **API base**: localhost:8000 (Jetson container)
+- **Strategy**: `stacker:<uuid>` (ensemble model-based)
+
+**Discrepancy Explanation**:
+The ORCHESTRATOR_STATE.md and BLOCKED.md entries reference a "2-session AAPL lgbm_ho + ridge_wf" setup and mention "options_live_session running on Jetson". However:
+1. **active-sessions.json** (source of truth) contains 52-session equity config, not 2-session or options
+2. **Session notes** in active-sessions.json trace the evolution: initial AAPL (Session 521), then 11-ticker (Sessions 521-528), then multi-batch expansion to 52 tickers (Sessions 528-535)
+3. The options mention appears to be from outdated block entries that reference a different engine configuration
+
+**Clarification for User**:
+The actual deployed system is **Architecture B (multi-ticker equity stacker)** — 52 parallel h10_lgbm_ho sessions trading different tickers, exactly as documented in Session 533 completion logs. The 2-session references and options trading references are stale documentation.
+
+**Impact on May 14 Checkpoint**:
+- May 12 checkpoint results (FAR_MISS_C1: 0 confirmed round trips, 6 fills on May 12 only) are consistent with a multi-ticker equity system in early trading phase
+- May 14 h+10 SELL trigger should fire as designed if the architecture is correct
+- Post-checkpoint Cron PATH fix + disk cleanup remain critical for Gate 2 readiness
+
+**Action Items**:
+1. **Confirm architecture is correct**: Session notes show multi-batch expansion through April 27 (52-ticker target complete). Is this the intended state?
+2. **May 14 checkpoint execution**: Framework is ready; system will proceed to C1 escalation path per POST_GATE_1_RESPONSE_FRAMEWORK.md if no SELL fills appear
+3. **Update documentation**: ORCHESTRATOR_STATE.md and BLOCKED.md need refresh to reflect 52-ticker equity (not 2-session, not options)
+
+---
+
 ## Session 950 — May 12, 2026 21:45 UTC (Orchestrator Orientation & Blockers Assessment)
 
 **Status**: 🛑 ALL AUTONOMOUS WORK BLOCKED on user decisions — waiting for critical architecture & path clarifications

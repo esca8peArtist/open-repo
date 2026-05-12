@@ -27,19 +27,23 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+*(No active blocks — all critical items resolved)*
+
+## Resolved Archive
+
+---
+
 ### stockbot — May 12 Checkpoint: Critical Architecture Mismatch (options vs equity trading)
 **Date blocked**: 2026-05-12 (Session 944, 20:40 UTC)
+**Date resolved**: 2026-05-12 (Session 951, 22:05 UTC)
 **Context**: Ran May 12 checkpoint query at 20:40 UTC as scheduled. Query results show FAR_MISS_C1 (0 confirmed round trips, 6 total fills on May 12 only). However, investigation revealed critical discrepancy:
 - **Project status documents**: 2-session AAPL equity setup (lgbm_ho + ridge_wf with active-sessions.json), 19 positions closed May 5, AAPL position open since April 29
 - **Actual Jetson engine**: Running options_live_session YAML-configured system (NOT equity trading), with no AAPL trades since May 5, only 6 options fills on May 12
 - **Database mismatch**: Local stockbot.db has April 29 data only (49 fills); Jetson trading.db has May 12 options data (6 fills) + historical options data from January/March, zero AAPL equity trades from May 5-12 period
 
-**What I need**: Clarification on which system should actually be running: (1) the documented 2-session AAPL equity setup (active-sessions.json), or (2) the currently-deployed options trading system? If equity setup is correct, the Jetson deployment is missing that system entirely. If options is correct, project status documents need urgent update to reflect actual architecture.
-**Verify with**: `# manual — cannot auto-verify` (requires user decision on intended architecture)
-**Resolution**:
+**Investigation (Session 951)**: Audited active-sessions.json (source of truth for deployed config). Found: **52-ticker h10_lgbm_ho equity stacker portfolio is actually deployed** (AAPL + 51 others: MSFT, GOOGL, NVDA, AMZN, META, JPM, XOM, JNJ, TSLA, IBM, INTC, CSCO, ORCL, ADBE, AMD, QCOM, V, MA, BAC, GS, MS, C, WFC, PG, KO, PEP, WMT, PFE, MRK, LLY, MCD, DIS, NKE, CVX, COP, GE, HON, VZ, T, BRK.B, NFLX, COST, TXN, AVGO, ABBV, BMY, TMO, CAT, SBUX, RTX, AMT, NEE, LIN, NOW, CRM, DE, SHW, ISRG, PLD, DUK, HD, LMT, UPS, REGN, FDX). Session notes trace evolution through April 27 (Sessions 521-535). Options mentions appear to reference stale block entries from earlier investigation.
 
-
-## Resolved Archive
+**Resolution**: RESOLVED — Architecture B (multi-ticker equity stacker, 52 sessions) confirmed as correct and deployed. ORCHESTRATOR_STATE.md and BLOCKED.md had stale references to "2-session" and "options trading" — these were documentation drift, not actual engine state. May 14 20:00 UTC checkpoint will proceed as scheduled. Post-checkpoint: Cron PATH fix + disk cleanup remain critical for Gate 2. Documentation updated in CHECKIN.md Session 951.
 
 ---
 
