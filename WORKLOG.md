@@ -1,5 +1,20 @@
 # Work Log
 
+## General Research Agent — May 13, 2026 (resistance-research Phase 2 Domains 41–43 Outlines)
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/PHASE_2_DOMAINS_41-43_RESEARCH_OUTLINE.md`
+
+Three Phase 2 expansion domain outlines (2,800+ words) covering:
+- **Domain 41**: Consumer Financial Architecture and Democratic Equity — CFPB dismantling, racial wealth gap civic suppression, predatory lending as democratic infrastructure problem. Key gap filled: Domain 38 covers central bank/regulatory independence; Domain 41 covers consumer-facing financial architecture as democratic exclusion mechanism.
+- **Domain 42-Expansion**: Techno-Monopolies and Platform Accountability — algorithmic amplification as political architecture, platform ad opacity ($1.9B unaccountable digital political spend 2024), antitrust failure (Meta case dismissed November 2025, Brinkema Google ad tech remedy pending Q2 2026). Key gap filled: Domain 48 covers data broker surveillance; Domain 36 covers government AI. Domain 42-Expansion covers platform recommendation systems and information architecture accountability.
+- **Domain 43**: Spatial Democracy and Housing Architecture — exclusionary zoning as designed political segregation, gentrification as neighborhood political displacement, cost burden as organizing suppression. Key gap filled: Domain 47 covers eviction/homelessness; Domain 43 covers upstream architectural layer.
+
+Priority recommendation: Domain 42-Expansion first (Brinkema remedy decision window Q2 2026); Domain 41 second (CFPB comment period still open); Domain 43 third (structurally important, less acute window).
+Estimated production hours: 14–17 total (5–6 each for 41 and 42-Expansion; 4–5 for 43). Parallel research feasible for 41 and 43.
+
+---
+
 ## Session 988 — May 13, 2026, 12:30–13:15 UTC (Stockbot Pre-Checkpoint Infrastructure Verification)
 
 **Status**: 🟢 **CHECKPOINT INFRASTRUCTURE VERIFIED & EXECUTION GUIDE CREATED** — All critical systems healthy for May 14 20:00 UTC Gate 1 checkpoint. Hardware baseline documented, database integrity confirmed, trading process running. May 14 execution guide created for user.
