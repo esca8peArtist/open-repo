@@ -1,8 +1,8 @@
 # Orchestrator State
-> Last verified at 2026-05-13T17:15:00Z (Session 991 parallel agent verification). Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-13T19:13:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 17.7% (1,581,577 tokens) | All-models 33.2% | Reset in 129h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 17.7% (1,581,577 tokens) | All-models 35.6% | Reset in 125h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -58,8 +58,10 @@
 
 ### career-training
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
-**Focus**: Session 977 (2026-05-13): **FINAL COMPLETION — 106 → 150 scenarios (100% of target)**
+**Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
+---MOVED TO RESOLVED ARCHIVE---
+---
 ### mfg-farm — Test print execution (user action required)
 **Date blocked**: 2026-05-13
 **Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
@@ -68,14 +70,12 @@
 **Resolution**: [leave blank]
 ---
 
-## State Drift Warnings
-⚠️ STALE FOCUS: open-source-rideshare — focus references Session 407 (583 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
+• stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
 • stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results ← 2026-05-13 (Session 957, 00:28 UTC)
 • stockbot — May 12 Checkpoint: Critical Architecture Mismatch (options vs equity trading) ← 2026-05-12 (Session 951, 22:05 UTC)
 • stockbot — Jetson disk at 87% (29 GB free remaining) ← 2026-05-12 (Session 941, 19:45 UTC)
-• Usage limits — weekly calibration reminder ← 2026-05-12 (Session 939, 19:02 UTC)
 
 ## Inbox (unprocessed)
 *(no new items)*
