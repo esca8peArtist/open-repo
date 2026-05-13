@@ -56,7 +56,7 @@
 **Status**: Active — ready to prototype
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/mfg-farm/`
-**Current focus**: Session 960: Test print awaiting user execution. All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: user to execute test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
+**Current focus**: Test print execution pending (user action required). All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: user to execute test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
 
 **Blocked on**: Test print (user action required — see focus above)
 **Notes**: Automation is the core constraint — products and workflows must be designed for minimal human touchpoints per unit. Physical products mean real fulfillment costs (packaging, shipping, storage) — factor these in from the start. Etsy and Amazon have different fee structures and audiences; may want both. Scaling from 1→N printers requires thinking about file management, queue management, quality control, and packaging throughput — not just the printers themselves.
@@ -298,7 +298,7 @@
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Session 960: Phase 2 Scenario Playbooks complete (all 4 playbooks updated through May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). User approval needed for Phase 1 Tier 1 launch + Day 1 send date. Tier 2 messaging templates + distribution prep complete and staged. All materials production-ready.
+**Current focus**: Phase 2 Scenario Playbooks complete (all 4 playbooks updated through May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). User approval needed for Phase 1 Tier 1 launch + Day 1 send date. Tier 2 messaging templates + distribution prep complete and staged. All materials production-ready.
 
 
 **Session 876 Deliverables**:
@@ -351,7 +351,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: Session 961: **May 14 20:00 UTC checkpoint T-35h — Gate 2 readiness verified.** FAR_MISS_C1 confirmed (May 12 checkpoint). AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1. All pre-checkpoint items verified by code audit (no live Alpaca calls): checkpoint script functional (`scripts/may14_checkpoint_query_alpaca.py`, 383 lines), HMM regime scalar committed and tested (`src/ml/hmm_regime_scalar.py`, 46 tests passing), vol scalar integration complete (25 tests passing), Gate 2 guide verified (856 lines, criteria: Sharpe >= 1.5, MaxDD <= 15%, PF >= 1.5). Gate 2 readiness checklist created: `GATE_2_READINESS_CHECKLIST.md`. **Critical finding**: `active-sessions.json` contains 67 sessions (67 unique tickers), not 2 or 52 — if Jetson is running this config, system is already at Gate 2 Week 3+ equivalent state. Open Gate 2 code gap: ARCH-4 cross-session concentration check (1–2 hours, needed before Week 2). hmmlearn must be verified on Jetson before enabling HMM observe mode. **User actions at May 14**: (1) 19:00 UTC: SSH ping Jetson + `curl /api/ready` to confirm session count; (2) 18:00 UTC: `uv run python scripts/may14_checkpoint_query_alpaca.py --verify` for Alpaca connectivity; (3) 20:00 UTC: run full checkpoint query; (4) classify PASS/NEAR_MISS/FAR_MISS and follow POST_GATE_1_RESPONSE_FRAMEWORK.md.
+**Current focus**: **May 14 20:00 UTC checkpoint T-35h — Gate 2 readiness verified.** FAR_MISS_C1 confirmed (May 12 checkpoint). AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1. All pre-checkpoint items verified by code audit (no live Alpaca calls): checkpoint script functional (`scripts/may14_checkpoint_query_alpaca.py`, 383 lines), HMM regime scalar committed and tested (`src/ml/hmm_regime_scalar.py`, 46 tests passing), vol scalar integration complete (25 tests passing), Gate 2 guide verified (856 lines). **Critical finding**: `active-sessions.json` contains 67 sessions (67 unique tickers) — system is already at Gate 2 Week 3+ equivalent state. Post-checkpoint work: ARCH-4 cross-session concentration check (1–2 hours, needed before Week 2). **User actions at May 14**: (1) 19:00 UTC: SSH ping Jetson + `curl /api/ready` to confirm session count; (2) 18:00 UTC: `uv run python scripts/may14_checkpoint_query_alpaca.py --verify` for Alpaca connectivity; (3) 20:00 UTC: run full checkpoint query; (4) classify PASS/NEAR_MISS/FAR_MISS and follow POST_GATE_1_RESPONSE_FRAMEWORK.md.
 
 
 **Comprehensive options backtesting — COMPLETE (Session 900)** (prior):
@@ -609,7 +609,7 @@
 **Status**: Paused — resume when user unpauses
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-source-rideshare/`
-**Current focus**: Session 960: Project paused. Last active Session 407 — driver document expiry endpoints complete (6,154 tests passing, branch `feature/driver-navigation`). All systems in clean state. Resume when user unpauses.
+**Current focus**: Project paused. Last active Session 407 — driver document expiry endpoints complete (6,154 tests passing, branch `feature/driver-navigation`). All systems in clean state. Resume when user unpauses.
 
 **Blocked on**: —
 **Notes**: This is the only public project. Higher standards for documentation, test coverage, and code quality since it's community-facing. Regulatory/safety/security solutions and growth strategy are in scope alongside the technical build.
@@ -622,7 +622,7 @@
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: Session 961 (May 13): Phase 2 readiness audit complete — Track B is GO for May 30. Three user gates remain (social accounts, Canva Brand Kit, Kit email account — 30-60 min each, all materials staged). Track A has 2 open blockers: (1) 3 tag corrections on Companion Planting Chart, Survival Garden Regional Plans, Zone-by-Zone Calendar (15 min, copy-paste from `TRACK_A_BLOCKER_RESOLUTION.md`) and (2) Etsy account verification + Etsy Payments connection (10 min user action + 1-5 day Etsy processing). Decision deadline: May 20 — if both blockers clear by May 19, Phase 1 and Phase 2 co-launch May 24-30 (Option A); if not, Track B launches independently May 30 and Phase 1 follows when ready (Option B). Phase 3 execution begins June 22, not June 15 — corrected timeline per `PHASE_3_EXECUTION_GUIDE.md`: Etsy launch July 13, gate check July 11 (forager cohort >20%, Native Plants conversion >1.5%).
+**Current focus**: Phase 2 readiness audit complete — Track B is GO for May 30. Three user gates remain (social accounts, Canva Brand Kit, Kit email account — 30-60 min each, all materials staged). Track A has 2 open blockers: (1) 3 tag corrections on Companion Planting Chart, Survival Garden Regional Plans, Zone-by-Zone Calendar (15 min, copy-paste from `TRACK_A_BLOCKER_RESOLUTION.md`) and (2) Etsy account verification + Etsy Payments connection (10 min user action + 1-5 day Etsy processing). Decision deadline: May 20 — if both blockers clear by May 19, Phase 1 and Phase 2 co-launch May 24-30 (Option A); if not, Track B launches independently May 30 and Phase 1 follows when ready (Option B). Phase 3 execution begins June 22: Etsy launch July 13, gate check July 11 (forager cohort >20%, Native Plants conversion >1.5%).
 
 **Track A blockers (user must act — total ~30 min user time)**:
 - Blocker 1: 3 tag corrections — exact changes documented in `TRACK_A_BLOCKER_RESOLUTION.md` Section "Blocker 1"
@@ -734,7 +734,7 @@
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
 **Visibility**: Public — GitHub repo: `https://github.com/esca8peArtist/off-grid-living-guide` (live as of 2026-04-26)
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: Session 960: GitHub publication complete and live (2026-04-26). Social media execution toolkit ready (`social-media-execution-toolkit.md`). No further autonomous work available — awaiting user execution of distribution plan. All 17 domain documents production-ready and published.
+**Current focus**: GitHub publication complete and live (2026-04-26). Social media execution toolkit ready (`social-media-execution-toolkit.md`). No further autonomous work available — awaiting user execution of distribution plan. All 17 domain documents production-ready and published.
 
 
 **Session 697 (2026-04-30) — Phase 2 Social Media Execution Toolkit COMPLETE** ✅:

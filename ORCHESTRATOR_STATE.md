@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-13T01:32:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-13T08:13:07Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 17.0% (1,521,000 tokens) | All-models 20.6% | Reset in 142h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 17.7% (1,581,577 tokens) | All-models 27.7% | Reset in 136h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
-**Focus**: Session 960: 38+ domains production-ready (Phase 1+2 COMPLETE, trackers current May 13). User decision needed: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — Tier 1 distribution must reach audiences before May 21 to allow May 28 comment deadline compliance. All materials production-ready; awaiting path decision.
+**Focus**: Session 967: 41+ domains production-ready, Phase 1+2 COMPLETE, **all Phase 2 cross-references integrated** (Session 967). Three Phase 2 domains added (Domains 48-50, Sessions 964-967): Domain 48 (Surveillance Capitalism & Electoral Manipulation, June 12 FISA deadline), Domain 49 (Callais VRA Redistricting Emergency, five states in special sessions May 2026), Domain 50 (Healthcare-Democracy Nexus, June 1 HHS rule deadline). Cross-reference integration complete (Domains 1, 31, 33 updated with Call … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -33,11 +33,11 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: Session 956: **May 14 20:00 UTC checkpoint READY** (35 hours away). FAR_MISS_C1 confirmed (May 12 checkpoint): 0 confirmed round trips, but 19 May 5 liquidation SELL fills present in DB. AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1 (1–2 confirmed round trips). Decision framework complete (POST_GATE_1_RESPONSE_FRAMEWORK.md, 705 lines). Gate 2 implementation guide staged (GATE_2_IMPLEMENTATION_GUIDE.md, 4,200 words). Pre-checkpoint checklist ready (MAY_14_CHECKPOINT_ … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: Session 961: **May 14 20:00 UTC checkpoint T-35h — Gate 2 readiness verified.** FAR_MISS_C1 confirmed (May 12 checkpoint). AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1. All pre-checkpoint items verified by code audit (no live Alpaca calls): checkpoint script functional (`scripts/may14_checkpoint_query_alpaca.py`, 383 lines), HMM regime scalar committed and tested (`src/ml/hmm_regime_scalar.py`, 46 tests passing), vol scalar integration complete (25 tests passing),  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
-**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
-**Focus**: Session 960: Phase 1 upload awaiting user tag corrections + Etsy account verification (Track A blocked). Phase 2 execution-ready for May 30 launch target. Phase 3 execution-layer assets COMPLETE — 7 production-ready files (execution guide, Canva briefs, broadcast sequence, social templates, KPI dashboard, landing pages) staged for June 15–July 1 launch. Track B (Phase 2 launch) has no blockers — awaiting Phase 1 completion first.
+**Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
+**Focus**: Session 961 (May 13): Phase 2 readiness audit complete — Track B is GO for May 30. Three user gates remain (social accounts, Canva Brand Kit, Kit email account — 30-60 min each, all materials staged). Track A has 2 open blockers: (1) 3 tag corrections on Companion Planting Chart, Survival Garden Regional Plans, Zone-by-Zone Calendar (15 min, copy-paste from `TRACK_A_BLOCKER_RESOLUTION.md`) and (2) Etsy account verification + Etsy Payments connection (10 min user action + 1-5 day Etsy process … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -55,12 +55,26 @@
 ### mom-projects
 **Status**: Active
 **Focus**: —
+
+### career-training
+**Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
+**Focus**: Session 977 (2026-05-13): **FINAL COMPLETION — 106 → 150 scenarios (100% of target)**
 ## Active Blocks
+### mfg-farm — Test print execution (user action required)
+**Date blocked**: 2026-05-13
+**Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
+**What I need**: Execute single test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C. Evaluate snap-arm clearance (FDM_TOLERANCE target) and report whether clip function is acceptable.
+**Verify with**: `ls -la projects/mfg-farm/test-print-results/` — should contain test-print-evaluation.md with pass/fail decision
+**Resolution**: [leave blank]
 ---
 
 ## State Drift Warnings
-⚠️ DRIFT: mfg-farm has 'Blocked on: Test print (user action required — see focus above)
-**Notes**: Automation is the' in PROJECTS.md but no matching entry in BLOCKED.md Active Blocks — stale or missing block entry
+⚠️ STALE FOCUS: mfg-farm — focus references Session 960 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 960 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: stockbot — focus references Session 961 (16 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: open-source-rideshare — focus references Session 960 (17 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 961 (16 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: off-grid-living — focus references Session 960 (17 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
 • stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results ← 2026-05-13 (Session 957, 00:28 UTC)
@@ -72,43 +86,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+  - 11.4: Backflow Preventer Requirement — When the Health Department Shows Up at Punch-Out
 
-1. **User clarification needed**: Resistance-research "!block" INBOX entry — confirm whether this pauses the project or is incomplete/accidental
-2. **Exploration item selection**: Will begin Item 28 (Phase 1 Execution Blueprint) once resistance-research path clarification received, OR Item 30 (Bundle E acceleration) if seedwarden launch approved
-3. **May 14 critical milestone**: Stockbot checkpoint execution at 20:00 UTC (34 hours away); user will execute; orchestrator monitoring
+- **Module 12** (Framing, Carpentry & Structural Coordination): 4 scenarios
+  - 12.1: Load-Bearing Wall Discovery During a Residential Remodel
+  - 12.2: Fireblocking Failures at Rough-In Inspection
+  - 12.3: Schedule Conflict Between Concrete Flatwork and Framing Start
+  - 12.4: Header Size Discrepancy — Framing Sub vs. Structural Plans
 
-### Exploration Queue Status
+- **Module 13** (MEP Coordination & Sequencing): 3 scenarios
+  - 13.1: Three-Trade Conflict in a Mechanical Room — Who Moves?
+  - 13.2: Roof Penetration Coordination — When Four Trades Need the Same Roof Deck
+  - 13.3: MEP Coordination Meeting That Goes in Circles — How to Break the Impasse
 
-**Active items**: Items 28-30 QUEUED (6-9 hours combined effort)
-**Blocked items**: Item 23 (mfg-farm, blocked on test print)
-**Completed items**: Items 1-27 (all delivered across Sessions 912-957)
+- **Module 14** (Value Engineering & Cost Optimization): 4 scenarios
+  - 14.1: Allowance Overage on Custom Millwork — Managing the Owner's Surprise
+  - 14.2: Material Substitution Proposal — When the Sub Wants to Switch Products Mid-Project
+  - 14.3: Labor Trade-Off — Adding a Second Crew vs. Overtime
+  - 14.4: Value Engineering a Concrete Structural Frame — When the Savings Are Real and the Risks Are Hidden
 
-**Total exploration queue capacity**: 3 active items ✅ (meets protocol requirement of ≥3 when projects blocked)
+- **Module 15** (Change Management & Scope Control): 4 scenarios
+  - 15.1: RFI Timing — The Consequence of Asking Too Late
+  - 15.2: Owner-Directed Change Without Written Authorization — What You Do When the Owner Says "Just Do It"
+  - 15.3: Change Order Processing Delay — When the Owner Takes 45 Days to Approve a Change Order
+  - 15.4: Scope Creep at Project Close-Out — The Punch List That Won't Close
 
+**File updated**: `projects/career-training/case-study-workbook.md`
+**Scenario count**: 46 → 66 (20 new scenarios; 44.0% of 150-scenario full scope)
+**Content added**: ~1,800 lines
 
-## 2026-05-13 01:20–01:25 — Session 960 — Orchestrator Housekeeping
+**Quality notes**:
+- Each scenario follows the established format: Context (100–150 words), Question (4 options), Worked Answer (cause-and-effect reasoning, 150–200 words), Common Mistakes (4–5 field observations)
+- No duplicate topics with existing Modules 01–09 scenarios
+- Module 10: Covers real HVAC decision points (owner scope changes, structural roof loading, BAS commissioning failures, cross-discipline coordination)
+- Module 11: Covers code-required pressure testing, gas system sizing, occupied-building access, and health department compliance
+- Module 12: Covers structural field judgment calls, fireblocking scope disputes, concrete-framing sequencing, and drawing conflicts
+- Module 13: Covers MEP spatial conflicts in tight mechanical rooms, roof penetration warranty protection, and coordination meeting management
+- Module 14: Covers allowance reconciliation, product substitution with code compliance, crew productivity analysis, and full VE cost accounting
+- Module 15: Covers RFI documentation discipline, verbal authorization risks, CO response timeline enforcement, and punch list scope control
 
-**Status**: ✅ SESSION COMPLETE
-
-### Work Summary
-
-**Stale focus entry maintenance** (PROJECTS.md)
-- Updated 6 project focus entries from Session 938 (21 sessions old) to Session 960 with current state
-- mfg-farm: clarified test print awaiting user execution
-- resistance-research: added user decision urgency (Path A / A+37 / B needed for Domain 42 May 28 DEA deadline)
-- cybersecurity-hardening: clarified Phase 1 approval status and user action required
-- seedwarden: updated Phase 1 blockers (track A only) and Phase 2 readiness status
-- open-source-rideshare: simplified paused status note
-- off-grid-living: confirmed GitHub publication live, awaiting user social media execution
-- **Impact**: State file cleaned; future session orientation will have accurate current context
-
-**Stockbot pre-checkpoint verification** (May 14 20:00 UTC, 34.5 hours away)
-- ✓ GitHub SSH auth working
-- ✓ Checkpoint query script ready (`may14_checkpoint_query_alpaca.py`, 15K, created 2026-05-13 00:27)
-- ✓ Alpaca API credentials configured
-- **Status**: All critical infrastructure verified. User action required May 14 20:00 UTC to execute checkpoint
-
-### Session Metrics
-- **Effort**: 5 minutes
-- **Changes**: PROJECTS.md (6 edits), WORKLOG.md appended
-- **Next session**: Monitor for user decisions on path selections (resistance-research, cybersecurity-hardening, seedwarden) and May 14 checkpoint execution readiness
+**Estimated remaining**: ~84 scenarios for full 150-scenario completion (Modules 16–33)
