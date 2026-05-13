@@ -1,8 +1,46 @@
 # Check-in
 
-## Since Last Check-in (Sessions 981-984, May 13, 2026, 10:20–12:35 UTC)
+## Since Last Check-in (Sessions 981-985, May 13, 2026, 10:20–14:18 UTC)
 
-**Status**: 🟢 MAJOR AUTONOMOUS WORK COMPLETE — Five major exploration queue items executed: (1) Resistance-research Phase 2 Expansion Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Photography & Plant Sourcing Logistics Plan ✅, (4) Mfg-farm Post-Test-Print Revenue Optimization Framework ✅, (5) Resistance-research Phase 2 Expansion Domains 38-40 ✅. All items committed, production-ready. Critical immediate actions identified: (TODAY) seedwarden plant orders, mfg-farm supply orders; (May 14) stockbot checkpoint execution; (May 26) seedwarden Canva palette extension.
+**Status**: 🟢 MAJOR AUTONOMOUS WORK COMPLETE — **TWO PARALLEL AGENTS SPAWNED** (Session 985): Stockbot position sizing framework (144 tests, all passing) + Resistance-research Phase 2 expansion domains 38-40 (130+ citations total) delivered simultaneously. Total: Seven major exploration queue items executed in sessions 981-985: (1) Resistance-research Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Logistics Plan ✅, (4) Mfg-farm Revenue Optimization Framework ✅, (5) Resistance-research Domains 38-40 ✅. All items committed, production-ready. **58+ resistance-research domains now complete.** Critical immediate actions: (TODAY) seedwarden plant orders, mfg-farm supply orders; (May 14) stockbot checkpoint execution; (May 26) seedwarden Canva palette extension.
+
+### Session 985 Accomplishments — PARALLEL AGENT EXECUTION
+
+**Stockbot Multi-Ticker Position Sizing & Risk Aggregation Framework** ✅
+- **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`
+- **Problem**: 52 sessions × 10% position_size_pct = $582K demand on $112K account (6.6× overleveraged)
+- **Deliverables**: 
+  - `src/position_sizing/multi_ticker_framework.py` — Four-layer pipeline (signal registration, portfolio-normalised Kelly, scalar application, hard caps)
+  - `src/position_sizing/risk_aggregator.py` — Account-level sector budgeting with real-time headroom tracking
+  - `src/position_sizing/backtest_validator.py` — Monte Carlo validator (Gate 2 criteria: Sharpe ≥0.10 improvement, MDD ≤0.90, zero overleveraged days)
+  - Modified `src/trading/trading_session.py` — opt-in integration (backward compatible)
+  - `docs/position-sizing-framework.md` — User-facing reference
+- **Test Coverage**: 144 unit tests, all passing. Zero regressions to 1,100+ existing suite.
+- **Impact**: Permanent solution to position-sizing collision; ready for Jetson deployment
+
+**Resistance-research Phase 2 Expansion Domains 38-40** ✅
+- **domains-38.md** — Lobbying Transparency, Regulatory Capture, Antitrust Enforcement (44 citations, ~5,200 words)
+  - Mechanism domain explaining three-layer architecture (formal lobbying, revolving door, dark money) through which sector-specific captures operate
+  - Anchored to 2026: Live Nation verdict (April 15), FTC Jarkesy constitutionality (March 2026), EPA capture examples
+  - Cross-refs: Domain 51 (campaign finance upstream), Domain 42 (drug policy case study), Domain 45 (climate EPA)
+  
+- **domains-39.md** — Education as Democratic Infrastructure (43 citations, ~5,400 words)
+  - Frames public education as reproductive infrastructure for democratic capacity
+  - K-12 (DOE dismantled, OCR 90% cut, 30K complaints abandoned), higher ed (50% autonomy decline, 65% adjunct), homeschooling accountability gap
+  - Cross-refs: Domain 22 (equity), Domain 43 (epistemic), Domain 1 (voter registration)
+  
+- **domains-40.md** — Healthcare as Democratic Determinant (46 citations, ~5,600 words)
+  - Five causal pathways from healthcare access to civic participation
+  - Oregon RCT: Medicaid enrollment → 7% voter turnout increase (experimental evidence)
+  - Pathways: medical debt (100M Americans), disability gaps (10-11.7 ppt), maternal mortality (3:1 Black:white), pandemic federalism, FQHCs
+  - Cross-refs: Domain 50 (NVRA), Domain 22 (maternal mortality), Domain 44 (reproductive), Domain 1 (disability)
+  
+- **domains/INDEX.md** — Full domain cross-reference index (created from scratch)
+  - Distribution pairing recommendations (Corporate Capture Trilogy: Domain 51 + Domain 42 + domains-38)
+
+**Status**: All commits merged. 58+ resistance-research domains now complete. Strategic domain selection based on framework's sequencing (infrastructure gaps: lobbying mechanism, education capacity, healthcare access). All production-ready for Phase 1 distribution integration.
+
+---
 
 ### Session 984 Accomplishments
 
