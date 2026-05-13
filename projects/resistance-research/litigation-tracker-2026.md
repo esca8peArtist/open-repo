@@ -1217,4 +1217,61 @@ The April 28 hearing before Judge Paula Xinis (D. Md. 8:25-cv-02780) was set to 
 ---
 
 *Session 929 pass completed May 9, 2026. Three new items added: 11th Circuit no-bond ruling (mandatory detention circuit split), Callais cascade update (SCOTUS immediate effect, state legislative sessions), Section 591 Domain 42 alert. Tracker is now current through May 9, 2026.*
+
+---
+
+## May 13, 2026 — Callais Cascade Update: Alabama Stay and Five-State Special Sessions
+
+*Added May 13, 2026 (Phase 2 cross-reference integration)*
+
+---
+
+### UPDATE — Alabama SCOTUS Stay: May 11, 2026 (5-4, Unsigned Order)
+
+**Background**: Entry at "UPDATE — Callais Cascade" (Session 929, May 9) documented Alabama's special session called May 1 and the pending stay request. The Supreme Court issued its ruling on May 11.
+
+**The stay**: On **May 11, 2026**, the Supreme Court granted a **5-4 unsigned stay** of the district court's injunction requiring Alabama to use the court-ordered second majority-Black congressional district drawn under *Allen v. Milligan* (2023). The stay was issued over dissents from Justices Sotomayor, Kagan, and Jackson.
+
+**What the stay does**: The stay effectively vacates the Allen v. Milligan-required remedy — the second majority-Black district — and permits Alabama to use the 2023 legislature-drawn maps for the 2026 primary, despite the fact that early voting had already commenced under the court-ordered maps. Alabama voters who cast early ballots did so under maps that the Supreme Court then retroactively displaced.
+
+**Why Sotomayor's dissent is the analytically critical document**: The dissent notes that the district court's intentional discrimination finding — the exact standard Callais requires — was "independent of, and unaffected by" the Callais ruling. In other words: the lower court had already made the finding of intent that Callais demands for a viable Section 2 claim. The majority granted the stay without explanation, over a dissent arguing that the lower court had satisfied the new Callais standard. The unsigned stay, issued without full briefing or explanation, is a shadow docket action that provides no doctrinal guidance while producing the maximum practical consequence — maps adopted during an ongoing election.
+
+**Preliminary injunction timing window**: The compressed timeline of the Alabama redistricting is the template for the other states. The pattern: (1) Callais decided April 29; (2) special session called within days; (3) new maps adopted within 2-4 weeks of the ruling; (4) emergency challenges filed simultaneously; (5) Supreme Court shadow docket stay before any appellate merits review. The 30-day window from map adoption to filed litigation challenge is the standard timeline for redistricting injunction motions — cases challenging maps filed more than 30 days after adoption face increasing laches arguments in a compressed election calendar.
+
+**Litigation status**: NAACP LDF and Democracy Docket are coordinating emergency challenges in Alabama. The intentional discrimination theory under Arlington Heights remains available — the district court's prior finding is on the record and Sotomayor's dissent specifically validated it. The question is whether the Supreme Court's stay will be converted into a full merits resolution before November 2026, or whether Alabama's new maps will govern the midterm elections regardless of the underlying merits.
+
+**Sources**: [Democracy Docket — Alabama stay coverage (May 11, 2026)](https://www.democracydocket.com/cases/); [SCOTUS unsigned stay order, May 11, 2026 — related to Allen v. Milligan enforcement](https://www.supremecourt.gov/); [Sotomayor dissent — intentional discrimination finding is independent of Callais](https://www.supremecourt.gov/opinions/25pdf/); [Domain 49 (Callais VRA Redistricting Emergency) — Alabama section 2.1](projects/resistance-research/domains/domain-49-callais-vra-redistricting-emergency.md)
+
+---
+
+### Five-State Special Sessions — Status as of May 13, 2026
+
+**Overview**: As of May 13, 2026, six states have called or completed special legislative sessions to redraw congressional maps following Callais. The aggregate Republican House seat projection from the full cascade is 12-19 seats — the largest single redistricting gain since REDMAP 2010.
+
+| State | Session Status | Target Districts | Filing Deadline Risk |
+|-------|---------------|-----------------|---------------------|
+| Alabama | Special session complete; SCOTUS stay granted May 11 | Eliminate 2nd majority-Black district | 30-day injunction window closing |
+| Tennessee | Special session May 5; maps passed | Eliminate 9th District (Memphis majority-Black) | Challenge filed; maps under litigation |
+| Louisiana | Special session May 4; maps in progress | Reduce from 2 majority-minority to 1 | Primary suspended May 16; June deadline |
+| South Carolina | Extended session; maps being drawn | Target 6th District (Clyburn) | Active mapping |
+| Mississippi | Special session scheduled May 20 | Maps TBD | 30-day window begins May 20 |
+| Florida | Maps signed April 29 (pre-cascade speed) | 4-seat Republican shift | Maps already in effect |
+
+**Preliminary injunction timing**: In redistricting challenges, the filing window is typically 30 days from map adoption for emergency preliminary injunction motions. Maps adopted during the April 30 – May 20 window face injunction filing deadlines of May 30 – June 20, 2026. After that window, laches arguments become available to the state. Democracy Docket is tracking filing deadlines for all six states.
+
+**The intentional discrimination theory in each state**: Each state's special session record creates Arlington Heights circumstantial evidence:
+- **Sequence of events**: Maps drawn within days of a ruling explicitly blessing evasion of VRA
+- **Departures from procedure**: Special sessions with compressed timelines, suspended primaries, no-normal-committee-process
+- **Legislative statements**: Documented statements in Tennessee (Blackburn) and South Carolina about racial composition of targeted districts
+- **Statistical evidence**: Before-and-after racial composition of redrawn districts provides the discriminatory-outcome baseline that, combined with circumstantial intent evidence, completes the Arlington Heights analysis
+
+**Section 3 bail-in as a litigation goal**: In any state where a court makes an intentional discrimination finding, Section 3 of the VRA allows the court to impose preclearance supervision — requiring the state to obtain federal court or DOJ approval before future voting-law changes. Plaintiffs' organizations should specifically plead Section 3 bail-in as a remedy in all six state redistricting challenges. A successful bail-in order in Alabama or Tennessee would be the most significant VRA enforcement development since Shelby County.
+
+**Distribution**: This analysis is being tracked by Democracy Docket, NAACP LDF, and the Voting Rights Alliance. The comprehensive domain analysis is at Domain 49 (Callais VRA Redistricting Emergency).
+
+**Sources**: [Domain 49 (Callais VRA Redistricting Emergency)](projects/resistance-research/domains/domain-49-callais-vra-redistricting-emergency.md); [Domain 1 (Voting Rights — Callais cross-reference, May 13 update)](projects/resistance-research/domains/domain-01-voting-rights-elections.md); [Domain 33 (State Legislative Autocratization — state AG litigation strategy)](projects/resistance-research/domains/domain-33-state-legislative-autocratization.md); [Democracy Docket case tracker](https://www.democracydocket.com/cases/); [NAACP LDF — Louisiana v. Callais](https://www.naacpldf.org/case-issue/louisiana-v-callais/)
+
+---
+
+*May 13, 2026 pass completed. Items added: Alabama SCOTUS stay (May 11, 5-4, unsigned), five-state special session status table, preliminary injunction timing windows, intentional discrimination theory per state, Section 3 bail-in litigation goal. Tracker is now current through May 13, 2026.*
 | TBD | Mail Voting EO | Preliminary injunction (Massachusetts) |

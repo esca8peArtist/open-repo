@@ -284,9 +284,34 @@ States implementing work requirements are essentially making a bet on litigation
 
 ---
 
+## NVRA Section 7 Enforcement Angle — Callais Litigation Opportunity (added May 13, 2026)
+
+The Callais redistricting cascade (Domain 49) creates a new and underutilized litigation pathway that intersects directly with this domain's core analysis: NVRA Section 7 enforcement in the Medicaid disenrollment context.
+
+**Statutory background**: Under 52 U.S.C. § 20506 (NVRA Section 7), Medicaid enrollment offices are designated voter registration agencies. States are federally required to offer voter registration at every in-person Medicaid enrollment interaction, including disenrollment proceedings. This requirement is not conditional on staffing levels or administrative convenience — it is a federal mandate attached to OBBBA Medicaid funding.
+
+**The disenrollment-as-disenfranchisement theory**: When OBBBA work requirements disenroll Medicaid beneficiaries through procedural failures (the primary disenrollment mechanism — 69% of prior unwinding disenrollments were procedural, not substantive), states are conducting mass administrative interactions that trigger Section 7 voter registration obligations. If states are NOT offering voter registration at disenrollment hearings, notices, or administrative appeals, they are violating NVRA Section 7 in those interactions — creating a federal cause of action independent of the healthcare question.
+
+**The Callais connection**: Six states now in post-Callais redistricting special sessions (Alabama, Tennessee, Louisiana, South Carolina, Mississippi, Florida) are among the 12 OBBBA non-expansion states with reduced Medicaid enrollment infrastructure and the states with the highest documented voter roll purge rates (2x the national average, per Brennan Center). These are simultaneously: (1) states eliminating majority-Black congressional districts under Callais, (2) states with the highest Medicaid disenrollment impact from OBBBA work requirements, and (3) states with the worst records of NVRA Section 7 compliance. The geographic overlap is not coincidental — it reflects the same population being targeted by multiple simultaneous mechanisms.
+
+**State AG coalition litigation opportunity**: State attorneys general (particularly in the 23-state coalition already litigating the mail voting executive order) have standing to enforce NVRA Section 7 against non-compliant states. A Section 7 enforcement action would:
+- Require states to document their NVRA compliance at every Medicaid disenrollment interaction
+- Create a discovery record of how many disenrollment proceedings occurred without voter registration offers
+- Provide injunctive relief requiring remedial voter registration outreach to all people disenrolled since January 2027 without proper Section 7 compliance
+- Expose the systematic relationship between Medicaid disenrollment and voter roll contraction in the same demographic groups
+
+**The existing precedent**: The U.S. Supreme Court in Husted v. A. Philip Randolph Institute (2018) upheld Ohio's voter purge process but specifically noted that states must comply with NVRA notification requirements before removing voters. NVRA Section 7 compliance at public assistance agencies has historically been among the least-enforced provisions of the statute. The U.S. DOJ under prior administrations periodically brought Section 7 enforcement actions; current DOJ under the Trump administration has no incentive to enforce. State AG enforcement is the primary available mechanism.
+
+**Recommended action for state AG coalition**: The coalition coordinating on the mail voting EO challenge should add an NVRA Section 7 enforcement track targeting states where Medicaid disenrollment and majority-minority district elimination are coinciding. This creates a federal question angle (NVRA enforcement) that is independent of APA Medicaid challenges and independent of VRA Section 2 redistricting claims — a third litigation pathway available in the same jurisdictions.
+
+**Cross-reference**: Domain 49 (Callais VRA Redistricting Emergency) — five-state redistricting cascade and its relationship to these same jurisdictions; Domain 33 (State Legislative Autocratization) — state AG coalition litigation strategy.
+
+---
+
 ## Connection to Existing Domains
 
-- **Domain 1 (Electoral Integrity)**: Medicaid disenrollment → reduced voter registration infrastructure → suppressed turnout in majority-minority areas
+- **Domain 1 (Electoral Integrity)**: Medicaid disenrollment → reduced voter registration infrastructure → suppressed turnout in majority-minority areas; Callais redistricting cascade compounds disenfranchisement in the same jurisdictions
+- **Domain 49 (Callais VRA Redistricting Emergency)**: The six states in post-Callais special sessions overlap almost entirely with the 12 OBBBA non-expansion states; NVRA Section 7 enforcement in the disenrollment context is a new litigation pathway state AGs can pursue
 - **Domain 11 (Healthcare Structural Reform)**: Work requirements are a healthcare policy, but driven by budgetary concerns rather than health outcomes; contradicts healthcare access as a fundamental right
 - **Domain 6 (Judicial Independence)**: Work requirement litigation depends on post-Loper textualism; judicial ideology will determine outcomes
 - **Domain 22 (Racial Justice)**: Disproportionate impact on Black, Indigenous, and Latinx populations through multiple pathways: work requirement barriers, procedural disenrollment patterns, rural hospital collapse in majority-minority areas

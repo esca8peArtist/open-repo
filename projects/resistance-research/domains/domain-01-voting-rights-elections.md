@@ -110,6 +110,21 @@ Sources: [Democracy Docket: Live blog — Supreme Court hears GOP case on mail-i
 - Domain 33 (State Legislative Autocratization): Redistricting patterns will immediately shift away from minority representation; the decision removes the primary federal check on state gerrymandering through race.
 - Domain 13 (Constitutional Amendments): A voting rights constitutional amendment would supersede the Callais holding by establishing a constitutional floor above statutory interpretation disputes.
 
+**May 2026 Update — Five-State Special Sessions and the May 11 Alabama Stay** (added May 13, 2026)
+
+The redistricting cascade documented at the time of the April 29 ruling has accelerated significantly. As of May 13, 2026, the following states are in or have completed special sessions to redraw congressional maps following Callais:
+
+- **Alabama** (special session called May 1): The Supreme Court granted a 5-4 unsigned stay on May 11, 2026, effectively vacating the Allen v. Milligan-ordered second majority-Black district and allowing the legislature's 2023 maps to govern the ongoing primary — despite early voting already occurring under the court-ordered maps. The stay was issued over Sotomayor's dissent, which specifically noted that the district court had already made an independent finding of intentional discrimination under Arlington Heights, a finding "unaffected by" Callais. The majority granted the stay without explanation.
+- **Tennessee** (special session May 5): Republican legislature passed new maps eliminating the 9th Congressional District encompassing majority-Black Memphis.
+- **Louisiana** (special session May 4): Governor Landry suspended May 16 primaries to redraw maps; legislature actively drawing compliant map to reduce two majority-minority districts to one.
+- **South Carolina**: Legislature extended session to target the 6th Congressional District held by James Clyburn (D).
+- **Mississippi** (special session scheduled May 20, 2026): Legislative session to consider new congressional maps.
+- **Florida**: Governor DeSantis signed new maps within hours of the April 29 ruling, adding a projected four Republican seats.
+
+**Litigation readiness**: Democracy Docket, NAACP LDF, and the Voting Rights Alliance are tracking all six state redistricting efforts. The primary theory available under Callais is intentional discrimination demonstrated through Arlington Heights factors — the sequence of events (maps drawn within days of a ruling blessing VRA evasion), departures from normal legislative procedure (special sessions with compressed timelines), and direct legislative statements about racial composition of districts. Section 3 bail-in (VRA judicial supervision) is available as a remedy in courts that make intentional discrimination findings and should be specifically pleaded in all redistricting challenges. See Domain 49 (Callais VRA Redistricting Emergency) for comprehensive analysis of each state, the legal architecture, and litigation timelines.
+
+**Cross-reference**: Domain 49 (Callais VRA Redistricting Emergency) — primary analysis document for the five-state redistricting cascade, May 11 Alabama stay, intentional discrimination evidentiary frameworks, and congressional response pathways.
+
 Sources: [Supreme Court opinion 24-109 Louisiana v. Callais (April 29, 2026)](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf); [Campaign Legal Center: The U.S. Supreme Court Has Eviscerated the Voting Rights Act — What's Next?](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next); [NAACP Legal Defense Fund: Louisiana v. Callais](https://www.naacpldf.org/case-issue/louisiana-v-callais/); [Democracy Docket: SCOTUS Smothers Voting Rights Act](https://www.democracydocket.com/news-alerts/scotus-smothers-voting-rights-act-greenlighting-racial-discrimination-and-a-rash-of-gop-gerrymanders/); [GPB: Kemp Won't Order Redistricting in Georgia (May 1, 2026)](https://www.gpb.org/news/2026/05/01/kemp-wont-order-redistricting-in-georgia-after-supreme-court-weakens-voting-rights)
 
 ---
