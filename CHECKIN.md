@@ -1,5 +1,57 @@
 # Check-in
 
+## Since Last Check-in (Sessions 981-987, May 13, 2026, 10:20–17:10 UTC)
+
+**Status**: 🟢 **MAJOR DISTRIBUTION INFRASTRUCTURE STAGED** — Domain 42 Wave 1 emails ready for immediate send. Phase 1 distribution readiness analyzed across all three paths. Resistance-research project now positioned for rapid execution of user-selected path by May 14.
+
+---
+
+## Session 987 — Resistance-research Phase 1 Distribution Staging (1 hour, 35 min)
+
+### Key Findings
+
+**Path A+37 RECOMMENDED** (vs. Path A or Path B):
+- Adds targeted outreach to 12 election protection organizations (Days 1–3)
+- Adds ~2.5–4.5 hours of marginal work over 14 days
+- Exploits May 30 DOJ consent decree window + August 7 advocacy window specific to election protection
+- Domain 37 has named actors, dated advocacy windows, companion state domain (37b)
+- **Launch date: May 14 (Wednesday) with Batch 1 emails by 6:00 PM**
+- **Total execution time from decision to first email: 3.5–4 hours**
+
+**Domain 42 Wave 1 — URGENT & READY TO EXECUTE**:
+- Overdue from original May 8 timeline (now 15 days before May 28 DEA deadline)
+- 5 organizations: DPA, NORML, ACLU, Sentencing Project, LEAP
+- **Gist URL confirmed live and ready**: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+- **Email execution package ready**: `DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` — all emails personalized, copy-paste-ready
+- **Estimated user execution time: 10–15 minutes** (fill 2 fields per email + send)
+- Can execute TODAY (May 13 evening) or tomorrow morning (May 14)
+
+**Administrative Update**:
+- NORML leadership changed March 2023; package updated with current routing (Policy Team)
+- All other Wave 1 contacts verified current as of May 13, 2026
+- Contact verification sources: organizational websites, LinkedIn, staff directories
+
+### Deliverables Created (Session 987)
+
+1. **`PHASE_1_DISTRIBUTION_READINESS.md`** (612 lines) — Complete analysis of all three paths
+   - Domain inventory for each path
+   - Gist structures and contact groups
+   - Week 1–4 timelines
+   - Pre-launch actions available NOW (without path decision)
+   - Execution time estimates
+   - Committed: f3818426
+
+2. **`DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md`** (630 lines) — Complete staging document
+   - 5 personalized emails (Template A × 3, Template B × 2)
+   - Contact verification with backup addresses
+   - Pre-drafted participation notices for all 5 orgs
+   - Gist creation instructions (if needed; Gist is already live)
+   - Execution timeline (today through May 28)
+   - FAQ for common responses
+   - Committed: 27d388cd
+
+---
+
 ## Since Last Check-in (Sessions 981-986, May 13, 2026, 10:20–15:35 UTC)
 
 **Status**: 🟢 EIGHT MAJOR AUTONOMOUS ITEMS COMPLETE — May 14 checkpoint infrastructure fully verified and ready for user execution. All decision frameworks, user guides, and recovery options staged.
@@ -2655,17 +2707,34 @@ This mismatch means:
 
 ## Needs Your Input (By priority + deadline)
 
+### 🔴 URGENT — Domain 42 Wave 1 Email Execution (TODAY or May 14 morning)
+**Deadline**: May 28 (15 days remaining) — SEND BEFORE May 21
+**What**: Execute 5 personalized emails to: Drug Policy Alliance, NORML, ACLU, Sentencing Project, LEAP
+**Why**: DEA hearing participation deadline is May 28. Wave 1 was due May 8. Organizations need 15 days to prepare participation notices. Domain 42 provides the democratic legitimacy framing missing from anticipated participant pool.
+**Action**: 
+- Open `projects/resistance-research/execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 1
+- Fill in {{YOUR_NAME}} and {{CONTACT_INFO}} in each email
+- Use Gist URL: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab (confirmed live)
+- **Estimated time: 10–15 minutes** (copy-paste 5 emails, hit send)
+- Send order (by friction): Sentencing Project → NORML → DPA → LEAP → ACLU
+**Status**: Ready to execute now — all emails personalized, contacts verified, Gist live
+
 ### 🔴 URGENT — May 14 Checkpoint Monitoring (2 days away)
 **Deadline**: May 14 20:00 UTC (48 hours)
 **What**: Run checkpoint SQL query → classify outcome (PASS/NEAR-MISS/FAR-MISS C1/C2) → follow POST_GATE_1_RESPONSE_FRAMEWORK.md
 **Why**: Expected outcome is AAPL h+10 SELL fill at market close. Framework has complete decision tree + recovery options.
 **Action**: Ready to execute May 14 20:00 UTC exactly. Framework staged in `projects/stockbot/POST_GATE_1_RESPONSE_FRAMEWORK.md`.
 
-### 🔴 URGENT — Resistance-Research Distribution Path Decision (16 days to deadline)
+### 🔴 URGENT — Resistance-Research Distribution Path Decision (15 days to deadline)
 **Deadline**: By May 28 (Domain 42 DEA hearing)
-**What**: Choose Path A (immediate 34-domain distribution) / Path A+37 Hybrid (recommend election protection sequencing) / Path B (2-4 week research extension)
-**Why**: Path decision gates Phase 1 execution. Domain 42 deadline May 28 (16 days away) requires distributed material by May 21-26.
-**Action**: Review DISTRIBUTION_PATH_EXECUTION_GUIDE.md (Session 933). All execution calendars ready for your selected path.
+**What**: Choose Path A (immediate 35-domain distribution) / **Path A+37 Hybrid (RECOMMENDED)** / Path B (2–4 week research extension)
+**Why**: Path decision gates Phase 1 execution. Domain 42 deadline May 28 requires distributed material by May 21. Path A+37 recommended because it exploits May 30 DOJ consent decree window + August 7 ballot integration window with targeted election protection outreach.
+**Execution readiness**:
+- **Path A+37 launch**: May 14 (Wednesday) with first emails by 6:00 PM
+- **Total user execution time from decision to first email**: 3.5–4 hours (fill template fields, create 2 Gists, verify contacts, send)
+- **Required user inputs**: (1) your name/contact info, (2) 5 recent publication citations, (3) Gist creation (10 min each for Domain 42 + Domain 37), (4) sending email verification
+- **Pre-execution checklist**: Read `PHASE_1_DISTRIBUTION_READINESS.md` (Section 1: path comparison; Section 4: execution sequence)
+**Action**: Decide on path by May 14 morning → full execution by May 14 18:00 UTC. All templates, contact lists, and infrastructure are staged and ready.
 
 ### 🟡 HIGH — Seedwarden Bundle E Field ID Quick-Card (5 days to launch)
 **Deadline**: May 14 (for May 19-22 launch window)
