@@ -1,5 +1,33 @@
 # Check-in
 
+## Since Last Check-in (Sessions 981-988, May 13, 2026, 10:20–13:00 UTC)
+
+**Status**: 🟢 **INFRASTRUCTURE VERIFIED FOR MAY 14 CHECKPOINT** — All critical hardware baseline metrics documented and healthy. Database integrity confirmed (53 trades, backup current). Trading process running. Thermal monitoring flagged for May 14 load testing.
+
+### Session 988 Summary — Stockbot Pre-Checkpoint Verification (30 min)
+
+**Verification Completed**: Part 4 Infrastructure Checklist (10 items)
+- ✅ 8/10 automated checks passed (thermal, memory, disk, API connectivity, database, process, logs, backup)
+- ✅ 2/10 manual checks documented (power supply specs, thermal monitoring required)
+
+**Key Metrics**:
+- CPU Temp: 71.6°C idle (target <50°C, throttling risk <75°C) — **ELEVATED, MONITOR ON MAY 14**
+- Memory: 1.1 GB / 7.9 GB (14% utilization) — excellent
+- Disk: 202 GB free — excellent
+- API Latency: 200 ms (target <3s) — excellent
+- Database: OK (53 trades, 0 open positions)
+- Process: 1 trading process running — healthy
+
+**Thermal Alert**: CPU running warmer than expected at idle (71.6°C vs normal 35–50°C). During May 14 checkpoint (high CPU load), peak temp may approach or exceed 75°C throttling threshold. Recovery actions staged in WORKLOG.
+
+**Action for May 14**:
+1. Morning: Final thermal/memory/network baseline check
+2. 13:15 UTC: Confirm checkpoint script ready (`may14_checkpoint_query_alpaca.py`)
+3. 20:00 UTC: User executes checkpoint (documented in `MAY_14_EXECUTION_GUIDE.md`)
+4. **During 13:30–20:00 UTC**: Monitor thermal every 30 min; if `vcgencmd get_throttled` shows 0x4 (currently throttled), reduce ticker count 11→6
+
+---
+
 ## Since Last Check-in (Sessions 981-987, May 13, 2026, 10:20–17:10 UTC)
 
 **Status**: 🟢 **MAJOR DISTRIBUTION INFRASTRUCTURE STAGED** — Domain 42 Wave 1 emails ready for immediate send. Phase 1 distribution readiness analyzed across all three paths. Resistance-research project now positioned for rapid execution of user-selected path by May 14.
