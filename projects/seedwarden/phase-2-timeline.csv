@@ -1,0 +1,52 @@
+Milestone,Date,Owner,Status,Dependencies
+"Confirm Mountain Rose Herbs order (ginseng + goldenseal dried roots — Priority shipping)",2026-05-13,User,USER-ACTION REQUIRED,None — order now
+"Confirm Strictly Medicinal Seeds order (goldenseal seeds + Black Cohosh live plant)",2026-05-13,User,USER-ACTION REQUIRED,None — order now
+"Call Prairie Moon Nursery (866-417-8156) to confirm ramps bulblets + Trillium availability; place order if in stock",2026-05-13,User,USER-ACTION REQUIRED,Vendor phone call required before online order
+"Purchase Wild Bergamot (Monarda fistulosa) at local garden center — same day",2026-05-13,User,USER-ACTION REQUIRED,None — zero lead time
+"Confirm Asheville Botanical Garden permit status (deadline was May 12)",2026-05-13,User,OVERDUE — confirm or activate indoor fallback,None
+"Confirm United Plant Savers outreach email status (was due May 10)",2026-05-13,User,OVERDUE — confirm or send today,None
+"Check Wisconsin Grown Ginseng LLC for spring stratified seed availability (one-time check; skip if unavailable)",2026-05-13,User,Low priority — skip if sold out,Mountain Rose Herbs dried root is the fallback
+"Reschedule and execute lifestyle photo shoot — Cluster A (Seeds and Garden) + Cluster B (Urban and Container)",2026-05-14,User,OVERDUE from May 10 target — reschedule now,Props in hand; window light; 6–7 hours
+"Execute lifestyle photo shoot — Cluster C (Food Preservation)",2026-05-15,User,OVERDUE from May 11 target — reschedule now,Kitchen context; no window dependency; 1.5–2 hours
+"Mountain Rose Herbs dried roots arrive (ginseng + goldenseal) — photograph immediately on arrival",2026-05-15,Vendor delivery,Pending — track order,Mountain Rose Herbs order placed May 13
+"MILESTONE: Plants Sourced — all orders confirmed en route or vendor-miss contingencies activated",2026-05-15,User,LOG in WORKLOG.md,All vendor orders placed; tracking confirmed
+"Photograph Mountain Rose Herbs dried roots (ginseng root + goldenseal root — cross-section and intact)",2026-05-15,User,Blocked on delivery,Mountain Rose Herbs delivery
+"Check all inbound tracking; contact Strictly Medicinal Seeds if live plant has not shipped",2026-05-17,User,Pending,Orders placed May 13
+"May 17 weather check: 5-day forecast for Asheville / Western NC — if 3+ rain days forecast for May 20–22 activate indoor backup now",2026-05-17,User,Pending,Location confirmation status
+"Germination tray check — confirm viable sprouts for lifestyle shoot; restart with radish or lettuce seeds if needed",2026-05-17,User,Check today,Started April 30 (assumed); may need restart
+"All lifestyle photos (Clusters A+B+C — 30 shots) edited and exported to etsy-ready folder",2026-05-18,User,Pending,Clusters A/B/C shoot completed
+"Purchase fresh ramp leaves at farmers market or specialty grocery (refrigerate; shoot within 24–48 hours of purchase)",2026-05-18,User,Pending,Ramp season ending — call ahead to confirm availability
+"All physical specimens delivered or confirmed en route; live plants acclimatizing (48 hours water + indirect light)",2026-05-18,Vendor + User,Pending,All vendor orders shipped
+"May 19 weather check — 48-hour forecast; revise May 20 cluster order if morning rain only",2026-05-19,User,Pending,None
+"Lifestyle photo reshoot float day (reshoot failed frames from Clusters A/B/C if needed)",2026-05-19,User,Float day — use only if needed,Lifestyle shoot completed May 14–15
+"Wild Bergamot photographed (live plant habit + bud stage if present)",2026-05-19,User,Pending,Plant acclimatized 48 hours after delivery
+"MILESTONE: Photo Shoots Complete — all 30 lifestyle shots + all endangered species specimens photographed",2026-05-20,User,Float days May 21–22 for reshoot,All specimen deliveries; lifestyle shoot complete
+"Appalachian botanical session Day 1 — Asheville Botanical Garden or indoor studio (ginseng root; goldenseal root; Black Cohosh leaf habit; ramps fresh leaves)",2026-05-20,User,Pending — location gate required,Location confirmed or indoor activated; specimens in hand
+"Black Cohosh live plant photographed (habit + compound leaf detail + scale reference)",2026-05-20,User,Pending,Plant acclimatized 48 hours after delivery
+"Ramps fresh leaves photographed (misted; within 24 hours of purchase)",2026-05-20,User,Pending,Fresh leaves purchased May 18–19
+"Appalachian botanical session Day 2 — reshoot or supplementary angles",2026-05-21,User,Float day,Session Day 1 complete
+"Appalachian botanical session Day 3 — final angles or backfill",2026-05-22,User,Float day,Sessions Day 1–2 complete
+"iNaturalist CC-BY sourcing sprint — all 8 species (filter: taxon + license=CC-BY + quality_grade=research + photos=true); download 3–5 best frames per species",2026-05-22,User,Complete before May 26,ENDANGERED_SPECIES_PHOTO_PIPELINE.md has taxon IDs
+"Trillium bare root photographed (bare root on delivery day; no acclimatization required for root)",2026-05-22,User,Pending,Prairie Moon Nursery delivery
+"Photo processing backfill — cull all botanical field + specimen frames; apply metadata; log in WORKLOG.md",2026-05-23,User,Pending,All sessions complete
+"Check May 17 forecast; if field sessions rained out execute indoor-only + iNaturalist CC-BY for all habitat shots",2026-05-23,User,Contingency only,May 17–22 weather outcomes
+"Institutional outreach status check — NC Botanical Garden (ncbg@unc.edu); Missouri Botanical Garden (pr@mobot.org); Hillside Nursery (lady's slipper) — send if not already sent",2026-05-23,User,Send immediately if not already sent,Outreach was due May 9; response takes 2–4 weeks
+"MILESTONE (equivalent): Guides Live — all Etsy draft listings created with product descriptions; all 5 guide PDFs in final export queue; Kit email staged for May 30 12pm",2026-05-25,User,Pending — drafts only; publish May 30,"Canva production May 26–29; this milestone is a gate check, not a publish event"
+"Canva Brand Kit setup — add Endangered Species Series palette (#1C2B1A #3B2A1A #F0E6C8 #7A9A6E #F5F1E8 #8B2000 #C49A2A) and verify font pair (Playfair Display + Cormorant Garamond + Lato)",2026-05-24,User,USER-DEPENDENT — must complete before May 26,TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md; 45–90 min
+"May 25 checkpoint — confirm 4+ species have 3+ photos confirmed; all institutional outreach sent; WORKLOG.md entries complete for all sourced photos",2026-05-25,User,Checkpoint — log in WORKLOG.md,All photo sourcing complete
+"Canva Day 1 — American Ginseng master template (5–6 hours): typography; color palette; section headers; photo grid; conservation badge; attribution footer; cover design",2026-05-26,User,Pending,Canva Brand Kit setup complete; Ginseng photos in hand
+"Etsy draft listings created — all 5 individual guides + bundle listing (title; description; tags; price; digital delivery configured)",2026-05-26,User,Parallel to Canva Day 1,Guide titles and prices confirmed
+"Canva Day 2 — Goldenseal guide (3–4 hours): duplicate master; substitute species-specific content; insert yellow root cross-section photo; export draft PDF",2026-05-27,User,Pending,Ginseng master complete
+"Kit launch email drafted and loaded as scheduled broadcast — send time May 30 12:00pm",2026-05-27,User,USER-DEPENDENT,Kit account setup (Gate 3 in TRACK_B_FINAL_EXECUTION_GUIDE.md)
+"Canva Day 3 — Black Cohosh guide (3–4 hours): duplicate from Goldenseal; add 95% wild-harvest statistic; insert iNaturalist CC-BY flower archive; export draft",2026-05-28,User,Pending,Goldenseal complete
+"Internal QA pass — review all 3 completed guides against endangered-species-candidate-list.md; verify conservation status accuracy; confirm no therapeutic claims without disclaimer",2026-05-28,User,Parallel to Canva Day 3,3 guides exported as draft PDFs
+"Etsy listings reviewed and ready — digital delivery mechanism confirmed; coupon SEEDWARDEN15 active; lifestyle images staged in each listing",2026-05-28,User,Pending,Draft listings created May 26
+"Canva Day 4 AM — Bloodroot guide (2–3 hours): duplicate from Black Cohosh; add sanguinarine toxicity note and disclaimer; insert BHL illustration if rhizome photo unavailable",2026-05-29,User,Pending,Black Cohosh complete
+"Canva Day 4 PM — Ramps guide (2–3 hours): duplicate; add Quebec harvest ban and Cherokee wasdi tradition; insert fresh leaf photos or iNaturalist CC-BY; export draft",2026-05-29,User,Pending,Bloodroot complete
+"All 5 guides exported as final PDFs — ready for Etsy upload",2026-05-29,User,Pending,All 5 Canva guides complete
+"May 29 evening go/no-go — confirm all 3 Track B gates complete; all 5 guide PDFs ready; Kit sequence tested; social accounts live; user confidence ≥7/10",2026-05-29,User,Go/No-Go gate,All production tracks complete
+"MILESTONE: Full Phase 2 Launch — Etsy listings published 10:00am; Kit launch email sends 12:00pm; social posts publish 2–4pm",2026-05-30,User,TARGET DATE,All pre-launch milestones green
+"Post-launch Day 1 checkpoint — email delivery rate ≥25%; social impressions ≥100/day; no critical errors",2026-06-01,User,Post-launch monitoring,Phase 2 live
+"Mid-launch checkpoint — email engagement ≥15%; social engagement ≥50/day; Guide 1 published and live",2026-06-03,User,Post-launch monitoring,Phase 2 live
+"Wild Bergamot guide (6th species) — soft-launch if not completed by May 30",2026-06-06,User,Optional — contingency launch date,Phase 2 live; 5-guide set already launched
+"Phase 3 trigger assessment — ≥2 of 4 triggers met (email open ≥20%; social engagement ≥50/day; ≥5 units sold; NPS ≥40) → proceed with Phase 3 production",2026-06-06,User,Assessment only — do not pre-commit,7 days post-launch data required
