@@ -33,19 +33,34 @@
 - Day-by-day scheduling for all 25 Tier 1 contacts, email templates, tracking infrastructure, contingencies
 - Production-ready for immediate execution once user approves Phase 1
 
+### Autonomous Work Available (Exploration Queue)
+
+**Immediately Actionable**:
+1. **Career-training: Practice Scenarios & Case Studies** (40–50 hours, no blockers)
+   - 28 reference modules exist; scope: 2–3 realistic scenario problems per module with worked answers + common mistakes
+   - Recommended starting modules: 01 (Contracts/Estimating), 03 (PM/Scheduling), 09 (California Codes)
+   - Deliverable: Consolidated `case-study-workbook.md` or per-module practice files
+   - Business value: Transforms reference modules into applied study guide; enables interview prep
+
+**Available After Events**:
+- **Stockbot: Covered Call Automation Architecture** (4–5 hrs, prerequisite: Gate 1 pass May 12) — pre-design for covered-call options trading
+- **Stockbot: Multi-Ticker Position Sizing Framework** (3–4 hrs, can research now) — correlation matrix, VaR, portfolio-level drawdown caps
+- **mfg-farm: Multi-Product Supply Chain & Scaling Strategy** (2–3 hrs, blocked: post-test-print) — Batch 2-5 product portfolio planning
+- **Resistance-research: Phase 1 Distribution Package Integration** (4–6 hrs, blocked: user path decision) — Gist templates, field-fill automation, deployment checklist
+
 ### Critical Timeline
 
 | Milestone | Timeline | Status |
 |-----------|----------|--------|
-| **May 14 20:00 UTC** | Stockbot checkpoint | **T-36h** — All pre-checkpoint systems verified ✅ |
-| **May 21** | Phase 1 distrib. start | User must decide path within 8 days |
-| **May 28** | Domain 42 DEA deadline | Tier 1 distribution must reach audiences |
-| **June 1** | Cybersecurity Phase 1 launch | User approval triggers June 1 start |
+| **May 14 20:00 UTC** | Stockbot checkpoint | **T-35h** — All pre-checkpoint systems verified ✅ |
+| **May 28** | Domain 42 DEA deadline | Phase 1 distribution must reach audiences |
+| **May 30** | Seedwarden Phase 2 launch | Analytics framework ready; awaiting Phase 1 completion |
+| **June 1** | Cybersecurity Phase 1 launch | User approval triggers launch (execution calendar ready) |
 | **June 5** | Domain 48 FISA window | 6-week window for Senate Intelligence/Judiciary |
 
 ### User Actions Required (Priority Order)
 
-1. **Stockbot checkpoint execution** (May 14 20:00 UTC, T-36h)
+1. **Stockbot checkpoint execution** (May 14 20:00 UTC, T-35h)
    - Pre-checkpoint verification complete ✅
    - User runs: `uv run python scripts/may14_checkpoint_query_alpaca.py`
    - Classify outcome: PASS / NEAR-MISS / FAR-MISS
@@ -64,6 +79,12 @@
 **Resistance-Research**: 41+ domains complete, Phase 1 blueprints staged, cross-references finalized
 - Ready to execute: Phase 1 distribution (user path decision)
 - Next: Phase 2 research (Domains 48-51, post-May-28)
+
+**Seedwarden**: Phase 2 analytics framework complete, awaiting Phase 1 completion
+- Ready to execute: Phase 2 launch May 30 (with analytics dashboard)
+
+**Cybersecurity**: Phase 1 execution calendar production-ready
+- Ready to execute: Phase 1 launch June 1 (upon user approval)
 
 **Cybersecurity-Hardening**: All Tier 1 materials staged, Phase 1 calendar complete
 - Ready to execute: Phase 1 launch June 1 (user approval)
