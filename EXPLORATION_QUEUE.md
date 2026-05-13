@@ -563,14 +563,82 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 - ✅ Item 34: Seedwarden Phase 3 Production Timeline (1,044 lines, 26-week roadmap, 4 contingencies)
 - ✅ Item 35: open-repo Phase 5 Architecture (913 lines, 6-week implementation plan, deployment chosen)
 
-**Total queue status**: All exploration items staged and ready. No pending autonomous work identified.
+**Session 1003 (May 13, 21:45 UTC) — ITEM 39 COMPLETE** ✅
+- ✅ Item 36: Resistance-Research Phase 2 Domains 41 & 43 Source Staging (1,053 lines)
+- ✅ Item 37: mfg-farm Post-Test-Print Fulfillment Readiness (1,151 lines)
+- ✅ Item 38: Cybersecurity-Hardening Phase 1 Measurement Automation (~4,200 words)
+- ✅ Item 39: Stockbot May 14 Checkpoint Execution Runbook (850 lines)
+
+**Total queue status**: All exploration items staged and ready. No pending autonomous work identified (Items 1-39 COMPLETE).
 
 **Strategic Impact**:
 - Seedwarden: Phase 3 infrastructure complete before Phase 2 launch (May 30); June 1 research can begin immediately
 - open-repo: Phase 5 handoff-ready for post-PR-#1-merge; no planning friction on Week 1 start
-- stockbot: Live trading readiness document eliminates 4-6 hour post-Gates setup; 30-minute activation enabled
+- stockbot: Live trading readiness document eliminates 4-6 hour post-Gates setup; 30-minute activation enabled; May 14 checkpoint runbook eliminates execution ambiguity
 
-**Next Autonomous Work**: None identified. All projects awaiting user decisions (stockbot checkpoint May 14, resistance-research path decision, cybersecurity Phase 1 approval, mfg-farm test print, seedwarden gates).
+**Autonomous Work Status**: All projects blocked on user decisions/actions. Queue empty as of Session 1003 21:50 UTC.
+
+---
+
+## Queued Items (Session 1005 — 2026-05-13, three new autonomous items added)
+
+### ⏳ Item 40: Seedwarden Phase 3 Herbalist Expert Network Pre-Staging
+**Status**: QUEUED (Session 1005, May 13 2026, 21:50 UTC)
+**Impact**: HIGH — Phase 3 research starts June 1 (19 days); pre-staging herbalist contacts eliminates friction at research start
+**Goal**: Pre-stage expert network and interview framework for medicinal herb research (Domains: Women's Health, Respiratory, Immunity, Sleep, Digestive).
+1. **Herbalist contact identification** (20-25 practitioners, academic herbalists, ethnobotanists): academic institutions with herbal medicine programs, clinical herbalist associations, permaculture/homesteading networks
+2. **Interview question framework**: contraindication research templates, efficacy evidence standards, cultivation technique validation, traditional use documentation
+3. **Evidence-gathering procedures**: contraindication checking (Interactions Checker, Mayo Clinic, peer-reviewed), efficacy evidence tiers (RCTs vs. observational), toxicity data sources
+4. **Research timeline alignment**: 8-week Phase 3 research window (June 1-July 15) with 5 species/week interview cadence
+5. **Quality gates**: herbalist vetting checklist (credentials, experience, publication history), evidence confidence scoring template
+
+**Feasibility**: HIGH — Phase 3 timeline exists (Item 34), botanical networks established in prior seedwarden work
+**Effort estimate**: 2.5–3 hours
+**Deliverable**: `projects/seedwarden/PHASE_3_HERBALIST_NETWORK_PRESTAGING.md` (herbalist contact list with vetting notes, interview question bank, evidence-gathering SOP, June 1 outreach timeline, contraindication research templates)
+**Why now**: 19 days to Phase 3 June 1 start; pre-staging enables immediate research kickoff without discovery work
+**Blocker**: None (autonomous prep work, independent of Phase 2 execution)
+**Next Step**: Phase 2 launch (May 30) → use network prestaging May 31 for outreach sequence → June 1 research start with full interview schedule
+
+---
+
+### ⏳ Item 41: Resistance-Research Post-Phase-1 Impact Measurement & Policy Advocacy Tracking Infrastructure
+**Status**: QUEUED (Session 1005, May 13 2026, 21:50 UTC)
+**Impact**: HIGH — Phase 1 distribution starts June 1-15 (19-32 days); post-distribution measurement framework needed for real-time decision-making and Phase 2 justification
+**Goal**: Build comprehensive impact measurement infrastructure for Phase 1 outcomes (policy uptake, media coverage, institutional adoption, electoral signal):
+1. **Policy Advocacy Tracking SOP**: weekly + monthly legislative/administrative tracking procedures (bill sponsorships, committee hearings, agency guidance), 5 policy priority areas (Domains 1, 42, 43, 54, 55 frontline policies), CourtListener + Congress.gov + Overton API integration templates
+2. **Media Coverage Monitoring**: news database queries (LexisNexis if available, Google News API alternative), 4 coverage tiers (national outlets, policy media, legal/academic, specialized trade), automated clipping curation procedure
+3. **Institutional Adoption Metrics**: tracker for organizations that cite domains publicly (publications, testimony, policy position updates), adoption confidence scoring (mentioned in brief vs. in recommendations vs. embedded in policy)
+4. **Electoral Signal Tracking**: 2026 midterm election messaging (candidate stances on domain issues), ballot measure tracking (state initiatives aligned with domains), exit polling integration targets
+5. **Dashboard Infrastructure**: Google Sheets template with auto-calc formulas, weekly reporting structure, contingency decision triggers (if zero media → escalate, if policy uptake stalls → coordinate with movement leaders)
+6. **Measurement Success Thresholds**: Phase 1 baseline targets (media: 50+ articles, policy: 5+ bills/guidance, institutional: 15+ org adoption, electoral: 10+ candidates mention), escalation criteria, Phase 2 expansion decision gates
+
+**Feasibility**: HIGH — TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md exists (Item 17, 5,800 words); policy influencer map documented (Phase 1 materials)
+**Effort estimate**: 3–3.5 hours
+**Deliverable**: `projects/resistance-research/POST_PHASE_1_IMPACT_MEASUREMENT.md` (policy tracking SOP with tool integration templates, media monitoring procedures, institutional adoption tracker with confidence scoring, electoral signal dashboard, Google Sheets template with pre-built formulas, measurement success thresholds, escalation decision trees for mid-phase corrections)
+**Why now**: Phase 1 launch imminent (June 1-15); measurement framework must be ready Day 1 to enable rapid course correction if outcomes are below baseline
+**Blocker**: Depends on Phase 1 launch decision (but can be prepared independently)
+**Next Step**: User selects Phase 1 distribution path → orchestrator arms measurement infrastructure May 31 → monitoring begins June 1 with daily/weekly dashboards
+
+---
+
+### ⏳ Item 42: mfg-farm Multi-Printer Farm Architecture & Scaling Roadmap
+**Status**: QUEUED (Session 1005, May 13 2026, 21:50 UTC)
+**Impact**: MEDIUM — Single-printer Etsy launch (imminent post-test-print); next phase is 4-8 printer farm (180-365 days out). Architecture planning now enables rapid scaling execution when revenue justifies
+**Goal**: Design multi-printer farm architecture and scaling roadmap for 4-8 printer clusters:
+1. **Printer hardware analysis**: Comparison of 4-8 unit configurations (Creality K2, Prusa i3, Artillery Sidewinder, Bambu Labs), cost modeling (unit price, hotend/nozzle consumables, bed surface costs), production capacity per printer (monthly throughput at 80% uptime)
+2. **Physical space planning**: Footprint requirements for 4/6/8-printer clusters, ventilation/cooling infrastructure, filament storage (dry-box system, reorder thresholds), cable management specs, electrical load (amperage per config)
+3. **Supply chain optimization**: Filament procurement at scale (MOQ discounts, per-unit cost by volume, storage requirements), nozzle/hotend replacement scheduling (predictive maintenance), spare parts inventory (breakeven analysis)
+4. **Production workflow scaling**: Batch processing optimization (same-model runs to amortize setup), parallel print scheduling (gcode load balancing), quality control procedures (inline inspection, reject rate targets), packaging throughput (48-hour SLA at 3× volume)
+5. **Labor & automation requirements**: FDM operator staffing (print monitoring, material changes, queue management), post-processing bottlenecks (removal, cleaning, inspection, packaging), automation ROI analysis (robotic arms for removal? auto-filament changers?)
+6. **Financial modeling**: Revenue per printer (monthly throughput × sell price × margin %), breakeven timeline (4-month payback? 6-month?), seasonal demand impact, scenario analysis (conservative/optimistic)
+7. **Scaling phase timeline**: Phases 1-4 (Etsy single-printer → Phase 1: 2-printer → Phase 2: 4-printer cluster → Phase 3: 8-printer + adjacent manufacturing)
+
+**Feasibility**: HIGH — mfg-farm project materials (supplier scorecard, cost model, SKU analysis) documented; adjacent manufacturing analysis already in project scope
+**Effort estimate**: 3–3.5 hours
+**Deliverable**: `projects/mfg-farm/MULTI_PRINTER_FARM_ARCHITECTURE.md` (hardware comparison matrix with TCO, space planning with CAD recommendations, supply chain optimization roadmap with cost curves, production workflow scaling guide with labor estimates, financial modeling with breakeven analysis, 24-month phase timeline with decision gates, risk assessment for scaling)
+**Why now**: Post-test-print Etsy launch is Days 0-90. Scaling plan will be needed by Month 4 (August 2026). Planning now enables rapid deployment when first printer maxes out
+**Blocker**: None (architecture/planning work, independent of current Etsy launch)
+**Next Step**: Etsy launch (May-June) → monitor monthly revenue trends (July-August) → if revenue >$5K/month, trigger Phase 1 (2-printer) planning using provided roadmap → execution by Sept 2026
 
 ---
 

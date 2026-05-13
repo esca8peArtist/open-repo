@@ -1,5 +1,74 @@
 # Check-in
 
+## Session 1006 — May 13, 2026, 21:50–22:15 UTC (Queue Refill + Checkpoint Preparation)
+
+**Status**: ✅ **EXPLORATION QUEUE REFILLED (3 NEW ITEMS) — CHECKPOINT T-22H PREPARATION COMPLETE**
+
+### Accomplished This Session
+
+1. **Orientation & Assessment** ✅
+   - ORCHESTRATOR_STATE.md reviewed: all projects blocked on user actions/decisions
+   - BLOCKED.md: 1 active block (mfg-farm test print, user action)
+   - INBOX.md: No new items
+   - EXPLORATION_QUEUE.md: Items 1-39 all COMPLETE; queue empty
+   - **Finding**: All autonomous research work finished; projects awaiting user input
+
+2. **Exploration Queue Analysis** ✅
+   - **Protocol check**: Queue has 0 active items (empty after Items 1-39)
+   - **Action required**: Per orchestration protocol, when queue <3 items AND all projects blocked → add 2-3 new items
+   - **Decision**: Add 3 new high-impact autonomous items for post-checkpoint execution
+
+3. **Three New Exploration Items Added** ✅
+   - **Item 40**: Seedwarden Phase 3 Herbalist Expert Network Pre-Staging (June 1 research start, 2.5-3 hours)
+   - **Item 41**: Resistance-Research Post-Phase-1 Impact Measurement Infrastructure (Phase 1 launch tracking, 3-3.5 hours)
+   - **Item 42**: mfg-farm Multi-Printer Farm Architecture & Scaling Roadmap (post-Etsy scaling, 3-3.5 hours)
+   - **Status**: Queued and ready; no blockers on any item
+
+4. **Strategic Positioning** ✅
+   - All checkpoint infrastructure ready (Items 39 + framework + runbook)
+   - New queue positioned for post-checkpoint execution
+   - No autonomous work remaining for pre-checkpoint period
+   - User has 22 hours to execute checkpoint using MAY_14_CHECKPOINT_EXECUTION_RUNBOOK.md
+
+### Files Updated
+
+- `EXPLORATION_QUEUE.md` — Added Items 40-42, updated summary
+- CHECKIN.md — This entry
+
+### Current Project Status Summary
+
+| Project | Status | Blocker | Next |
+|---------|--------|---------|------|
+| **stockbot** | Ready | May 14 checkpoint execution | Checkpoint T-22h |
+| **resistance-research** | Ready | Path decision (A/A+37/B) | User decision |
+| **cybersecurity-hardening** | Ready | Phase 1 approval + date | User approval |
+| **mfg-farm** | Ready | Test print execution | User action |
+| **seedwarden** | Ready | User gates (track A/B) | User actions |
+| **open-repo** | Waiting | PR #1 review/merge | PR decision |
+| **off-grid-living** | Complete | Social media execution | User execution |
+
+### Awaiting User Input
+
+1. **stockbot**: May 14 20:00 UTC checkpoint execution (runbook ready, outcome framework ready, Gate 2 guide ready)
+2. **resistance-research**: Distribution path decision (blueprints ready for A, A+37, or B)
+3. **cybersecurity-hardening**: Phase 1 launch approval + June 1 send date
+4. **mfg-farm**: Test print execution + supply chain orders (ASA May 16, magnets May 25)
+
+### Next Actions
+
+**Immediate (next 22 hours)**: User executes May 14 20:00 UTC checkpoint using MAY_14_CHECKPOINT_EXECUTION_RUNBOOK.md
+
+**Post-Checkpoint (May 14-15)**: 
+- Apply POST_GATE_1_RESPONSE_FRAMEWORK.md outcome classification
+- If PASS: Begin Gate 2 using GATE_2_IMPLEMENTATION_GUIDE.md
+- If MISS: Execute diagnostic using framework and adjust strategy
+
+**Queue Status**: 3 items queued (40-42) ready for execution after checkpoint + user decisions
+
+**Session Status**: COMPLETE ✅
+
+---
+
 ## Session 1005 — May 13, 2026, 21:41–23:15 UTC (Exploration Queue: Domain 42 + mfg-farm Portfolio)
 
 **Status**: ✅ **TWO EXPLORATION QUEUE ITEMS COMPLETE — READY FOR POST-TEST-PRINT EXECUTION**
