@@ -78,6 +78,97 @@
   - **resistance-research**: Path decision pending → Item 28 blueprint READY for immediate Day 1 execution
   - **cybersecurity-hardening**: Phase 1 approval pending → Item 29 calendar READY for immediate deployment June 1
   - **mfg-farm**: Test print pending (physical user action)
+
+---
+
+## 2026-05-13 02:08–06:45 — Session 961 — Parallel Gate 2 + Phase 1 Execution Blueprint (Critical Path Work)
+
+**Status**: ✅ TWO MAJOR DELIVERABLES COMPLETE
+
+### Work Summary
+
+**resistance-research — Phase 1 Execution Blueprint (Expanded, 7,500+ words)**
+- **Agent**: resistance-research subagent
+- **Deliverable**: `projects/resistance-research/PHASE_1_EXECUTION_BLUEPRINT.md` (7,500+ words, production-ready)
+- **Scope**: Full operational plan from May 13 (today) through Phase 1 completion, incorporating path decision (Path A + Domain 37 Hybrid, resolved May 13 00:45 UTC)
+- **Content**:
+  1. **Lead Finding**: All distribution materials ready; only 2 identity fields + 1 10-minute Gist creation block remaining
+  2. **Critical Path Analysis** — Domain 42 DEA track (OVERDUE by 5 days, send Category A today) vs. Phase 1 main distribution (begins May 14, Batch 1 by May 21)
+  3. **Day-by-Day Timeline** — May 13-June 30 with specific actions, time estimates, 7 Domain 42 waves, 3 batch waves, social post sequence, Substack publication schedule
+  4. **Pre-Launch Checklist** — All 7 "distribution fixes" itemized with time estimates and blocking dependencies:
+     - Fix 1: Identity fields in fill_templates.py (2 min)
+     - Fix 2: Domain 37 standalone Gist creation (10 min)
+     - Fix 3: URL placeholder fill via script (5 min)
+     - Fix 4: published/README.md contact field + domain count update (10 min)
+     - Fix 5: Substack handle (1 min)
+     - Fix 6: Per-email manual personalization (15 min)
+     - Fix 7: Verify Domain 42 Gist still live (2 min)
+     - **Total pre-launch: ~60 minutes**
+  5. **Day-1 Execution Runbook** — 11 detailed blocks with step-by-step procedures:
+     - Precondition check (T-5 min)
+     - Blocks 1-9: Configuration, Gist creation, script run, contact verification, email prep, social setup, Phase 1b prep
+     - Blocks 10-11: QA, monitoring setup
+     - Batch 1 send sequence with 30-min intervals and logging
+  6. **Risk Mitigation** — Surveillance, legal, organizational risks + 3 incident response scenarios (Gist down, hard bounce, contact objects to framing)
+  7. **Go/No-Go Decision Criteria** — 6-point checklist, earliest Phase 1 start May 14, latest May 18, Domain 42 overdue (send today)
+  8. **Critical Discrepancy Note** — Phase 1b timing conflict flagged: PHASE1_DEPLOYMENT_MASTER.md (May 6, authoritative) schedules Week 9 (July 9), vs EXECUTION_PLAN_PATH_A_PLUS_37.md (April 30) proposed Day 1-3. Blueprint uses July 9 with rationale; user can accelerate to May 15-16 if May 30 advocacy window prioritized.
+- **File reference map** — All 20+ source files cross-indexed
+- **Status**: READY FOR EXECUTION TODAY (May 13 Domain 42) and TOMORROW (May 14 Phase 1 setup)
+- **Impact**: Eliminates execution ambiguity → enables user to run Phase 1 from checklist + runbook → meets May 21 Batch 1 delivery deadline → supports May 28 DEA comment submission window
+
+**stockbot — Gate 2 Readiness Audit (2,500+ words)**
+- **Agent**: stockbot subagent
+- **Deliverable**: `projects/stockbot/GATE_2_READINESS_AUDIT.md` (2,500+ words, production-ready)
+- **Scope**: Pre-checkpoint infrastructure audit + Gate 2 decision framework readiness
+- **Content**:
+  1. **Infrastructure Status: READY** — All scripts, decision documents, and monitoring tools in place
+  2. **Critical Finding**: Session Count Discrepancy
+     - Checkpoint docs describe 2-session AAPL-only deployment
+     - Actual `active-sessions.json` contains 52-ticker portfolio (deployed Sessions 521-535)
+     - Action: Run `curl http://100.120.18.84/api/ready` at checkpoint time to determine live session count (impacts fill-rate interpretation)
+  3. **ARCH Decision Status**:
+     - ARCH-1 (live component wiring): Resolved ✓
+     - ARCH-3 (15% max drawdown threshold): Needs runtime update before Week 2
+     - ARCH-4 (cross-session concentration limit): Code gap identified; dashboard monitoring workaround for paper trading, must add before live
+  4. **NEAR-MISS B1 Response Plan** (most likely outcome)
+     - h+10 exit firing on May 14 with 1-2 confirmed round trips is CORRECT behavior, not failure
+     - No parameter changes recommended
+     - May 26 interim checkpoint is next decision point (if fill pace drops <1/day, apply Lever A refinement)
+  5. **What Requires User Input** — 5 decisions that depend on checkpoint outcome:
+     - Session count at checkpoint (2 vs 52)
+     - Capital structure for live trading (Options A/B/C)
+     - Options OOS backtest parallel execution (PASS scenario)
+     - ARCH-4 cross-session guard implementation timing
+     - May 26 threshold for upgrading NEAR-MISS to PASS (already defined: ≥4 round trips)
+  6. **May 14 Checkpoint Execution** — Pre-checkpoint verification steps, expected outputs per scenario
+- **Status**: READY FOR USER EXECUTION May 14 20:00 UTC (33 hours away)
+- **Impact**: Eliminates Gate 2 ambiguity → enables fast decision-making immediately after checkpoint → supports May 26 refinement gate → prepares live trading deployment path
+
+### Session Metrics
+- **Total time**: 02:08–06:45 UTC (~277 minutes = 4h 37m elapsed)
+  - resistance-research agent: ~180 minutes (including agent runtime + delivery)
+  - stockbot agent: ~97 minutes (including agent runtime + delivery)
+- **Files created**: 2 production-ready operational documents
+  - `projects/resistance-research/PHASE_1_EXECUTION_BLUEPRINT.md` (7,500+ words)
+  - `projects/stockbot/GATE_2_READINESS_AUDIT.md` (2,500+ words)
+  - **Total content**: ~10,000 words of critical-path operational blueprints
+- **Commits**: 2 total (agent commits included in results)
+
+### Critical Path Status
+- **Domain 42 DEA Track**: OVERDUE by 5 days (should have sent May 8, user decision required TODAY)
+- **Phase 1 Setup**: Ready for May 14 execution (identity fields + Gist creation = 12 minutes)
+- **stockbot Checkpoint**: Infrastructure verified, ready for May 14 20:00 UTC user execution
+- **Parallel Execution Success**: Both high-priority projects advanced simultaneously without blocking
+
+### State Assessment
+- **BLOCKED.md**: All active blocks remain resolved (no new blocks detected)
+- **INBOX.md**: No new items to process
+- **Projects status** (post-Session 961):
+  - **resistance-research**: Path A + Domain 37 CONFIRMED; Phase 1 Execution Blueprint COMPLETE → ready for immediate user execution (TODAY for Domain 42, TOMORROW for main Phase 1)
+  - **stockbot**: May 14 20:00 UTC checkpoint READY → Gate 2 Readiness Audit COMPLETE → decision framework prepared
+  - **cybersecurity-hardening**: Phase 1 Execution Calendar (Item 29) staged and ready → awaiting user Phase 1 approval
+  - **seedwarden**: Bundle E operational materials (Item 30) staged → awaiting May 19 launch approval
+  - **mfg-farm**: Test print awaiting user execution
   - **seedwarden**: Track A blocked on user tag corrections; Track B execution-READY with Item 30 operational materials (May 19-22 launch)
 - **Exploration Queue**: ✅ ALL 3 ITEMS COMPLETE
   - Item 28: ✅ COMPLETE (resistance-research)

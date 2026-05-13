@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-12T21:44:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-13T01:32:26Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 67.7% (882,784 tokens) | All-models 8.0% | Reset in 146h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 17.0% (1,521,000 tokens) | All-models 20.6% | Reset in 142h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,27 +19,25 @@
 ## Active Projects
 ### mfg-farm
 **Status**: Active — ready to prototype
-**Focus**: Session 938: All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
+**Focus**: Session 960: Test print awaiting user execution. All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: user to execute test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
-**Focus**: Session 938: 38+ domains production-ready (Phase 1+2 complete, trackers current May 9). Domain 42 DEA hearing deadline May 28. **Blocked**: user distribution path decision — A / A+37 (recommended) / B.
-**Blocked**: User distribution path decision (A / A+37 / B)
+**Focus**: Session 960: 38+ domains production-ready (Phase 1+2 COMPLETE, trackers current May 13). User decision needed: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — Tier 1 distribution must reach audiences before May 21 to allow May 28 comment deadline compliance. All materials production-ready; awaiting path decision.
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: Session 938: Phase 2 Scenario Playbooks complete (all 4 playbooks, May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). **Blocked**: user approval for Phase 1 launch + Day 1 send date.
-**Blocked**: None — Phase 1 ready for user approval and execution
+**Focus**: Session 960: Phase 2 Scenario Playbooks complete (all 4 playbooks updated through May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). User approval needed for Phase 1 Tier 1 launch + Day 1 send date. Tier 2 messaging templates + distribution prep complete and staged. All materials production-ready.
+**Blocked**: User approval for Phase 1 launch + Day 1 send date
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: Session 940: Gate 1 checkpoint complete — FAR_MISS_C1 (timing only, expected behavior). AAPL h=10 hold expires May 14 at h+10 (13:30 UTC). Expected 2 AAPL SELL fills on May 14. No parameter changes. Monitoring checkpoint scheduled May 14 20:00 UTC. Per C1 action sequence: if May 16 shows no AAPL SELLs despite h+12, escalate to C2 four-step diagnosis. Cron PATH fix + Jetson disk cleanup required post-checkpoint before Gate 2 deployment.
-**Blocked**: Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment (see BLOCKED.md)
+**Focus**: Session 956: **May 14 20:00 UTC checkpoint READY** (35 hours away). FAR_MISS_C1 confirmed (May 12 checkpoint): 0 confirmed round trips, but 19 May 5 liquidation SELL fills present in DB. AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1 (1–2 confirmed round trips). Decision framework complete (POST_GATE_1_RESPONSE_FRAMEWORK.md, 705 lines). Gate 2 implementation guide staged (GATE_2_IMPLEMENTATION_GUIDE.md, 4,200 words). Pre-checkpoint checklist ready (MAY_14_CHECKPOINT_ … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
-**Focus**: Session 938: Phase 3 execution assets complete — 7 production-ready files (execution guide, Canva briefs, broadcast sequence, social templates, KPI dashboard, landing pages). Phase 2 target May 30, Phase 3 June 15–July 1. Track B unblocked. **Blocked (Track A)**: tag corrections + Etsy account verification.
+**Focus**: Session 960: Phase 1 upload awaiting user tag corrections + Etsy account verification (Track A blocked). Phase 2 execution-ready for May 30 launch target. Phase 3 execution-layer assets COMPLETE — 7 production-ready files (execution guide, Canva briefs, broadcast sequence, social templates, KPI dashboard, landing pages) staged for June 15–July 1 launch. Track B (Phase 2 launch) has no blockers — awaiting Phase 1 completion first.
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -48,72 +46,69 @@
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
-**Focus**: Session 938: GitHub publication complete. Social media execution toolkit ready (`social-media-execution-toolkit.md`). No further autonomous work available — awaiting user execution of distribution plan.
+**Focus**: Session 960: GitHub publication complete and live (2026-04-26). Social media execution toolkit ready (`social-media-execution-toolkit.md`). No further autonomous work available — awaiting user execution of distribution plan. All 17 domain documents production-ready and published.
 
 ### workout
 **Status**: Active
 **Focus**: `comprehensive-plan.md` (1,053 lines) complete — covers all 3 equipment tiers (no equipment, bands, full gym) × multiple frequencies (3/4/5/6 days), with full exercise libraries, progression systems, calisthenics skill ladders, and mobility protocols. Awaiting user review and selection.
+
+### mom-projects
+**Status**: Active
+**Focus**: —
 ## Active Blocks
-### stockbot — May 12 Checkpoint: Critical Architecture Mismatch (options vs equity trading)
-**Date blocked**: 2026-05-12 (Session 944, 20:40 UTC)
-**Context**: Ran May 12 checkpoint query at 20:40 UTC as scheduled. Query results show FAR_MISS_C1 (0 confirmed round trips, 6 total fills on May 12 only). However, investigation revealed critical discrepancy:
-- **Project status documents**: 2-session AAPL equity setup (lgbm_ho + ridge_wf with active-sessions.json), 19 positions closed May 5, AAPL position open since April 29
-- **Actual Jetson engine**: Running options_live_session YAML-configured system (NOT equity trading), with no AAPL trades since May 5, only 6 options fills on May 12
-- **Database mismatch**: Local stockbot.db has April 29 data only (49 fills); Jetson trading.db has May 12 options data (6 fills) + historical options data from January/March, zero AAPL equity trades from May 5-12 period
-**What I need**: Clarification on which system should actually be running: (1) the documented 2-session AAPL equity setup (active-sessions.json), or (2) the currently-deployed options trading system? If equity setup is correct, the Jetson deployment is missing that system entirely. If options is correct, project status documents need urgent update to reflect actual architecture.
-**Verify with**: `# manual — cannot auto-verify` (requires user decision on intended architecture)
-**Resolution**:
+---
 
 ## State Drift Warnings
 ⚠️ DRIFT: mfg-farm has 'Blocked on: Test print (user action required — see focus above)
 **Notes**: Automation is the' in PROJECTS.md but no matching entry in BLOCKED.md Active Blocks — stale or missing block entry
 ## Recently Resolved (last 5)
+• mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
+• stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results ← 2026-05-13 (Session 957, 00:28 UTC)
+• stockbot — May 12 Checkpoint: Critical Architecture Mismatch (options vs equity trading) ← 2026-05-12 (Session 951, 22:05 UTC)
 • stockbot — Jetson disk at 87% (29 GB free remaining) ← 2026-05-12 (Session 941, 19:45 UTC)
 • Usage limits — weekly calibration reminder ← 2026-05-12 (Session 939, 19:02 UTC)
-• stockbot — Manual DB sync verification (May 11 cron PATH issue, action window passed) ← 2026-05-12 (Session 939, 19:02 UTC)
-• stockbot — Database persistence gap blocks May 12 checkpoint time-stop exit logic ← 2026-05-09 (Session 922)
-• stockbot — Docker API container stuck in initialization loop; HTTP endpoint unreachable ← 2026-05-09 (Session 919)
 
 ## Inbox (unprocessed)
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
 
-**Trigger**: User requested cleanup and relevance audit of orchestrator state (date 2026-05-12).
+1. **User clarification needed**: Resistance-research "!block" INBOX entry — confirm whether this pauses the project or is incomplete/accidental
+2. **Exploration item selection**: Will begin Item 28 (Phase 1 Execution Blueprint) once resistance-research path clarification received, OR Item 30 (Bundle E acceleration) if seedwarden launch approved
+3. **May 14 critical milestone**: Stockbot checkpoint execution at 20:00 UTC (34 hours away); user will execute; orchestrator monitoring
 
-**Scope**: Read all state files (PROJECTS.md, INBOX.md, ORCHESTRATOR_STATE.md, BLOCKED.md, CHECKIN.md, recent WORKLOG), assess each block and project status against today's date, process the INBOX Path Model item, refresh stale entries.
+### Exploration Queue Status
 
-### Findings
+**Active items**: Items 28-30 QUEUED (6-9 hours combined effort)
+**Blocked items**: Item 23 (mfg-farm, blocked on test print)
+**Completed items**: Items 1-27 (all delivered across Sessions 912-957)
 
-1. **Stockbot architecture cleanup landed today** (commit `2372f1d` in submodule, 2026-05-12 02:11 UTC). Resolved ARCH-1 (RiskManager wired into TradingSession, LiveEngine deleted), ARCH-2 (risk thresholds extracted), ARCH-4/6/7, M5/7/8. Container restarted on Jetson and confirmed healthy. ORCHESTRATOR_STATE.md still showed "May 5 13:30 UTC" stale focus — refreshed.
+**Total exploration queue capacity**: 3 active items ✅ (meets protocol requirement of ≥3 when projects blocked)
 
-2. **DB sync block** (May 11 cron PATH issue) past its action window. Reframed as 20:00 UTC checkpoint-time verification rather than pre-emptive block. Permanent cron PATH fix tracked as ongoing infrastructure issue.
 
-3. **Session 937 "Jetson unreachable" + "ridge_wf placeholder" critical alerts** are no longer current — confirmed by today's healthy container restart on Jetson.
+## 2026-05-13 01:20–01:25 — Session 960 — Orchestrator Housekeeping
 
-4. **INBOX Path Model item** moved to stockbot Exploration Queue with full design scope (LSTM/Transformer for 63-day daily price PATH prediction, complementing the Return Forecast Engine's endpoint-only output). Source attribution preserved.
+**Status**: ✅ SESSION COMPLETE
 
-5. **mfg-farm test print** block unchanged (still genuinely the gating user action since 2026-04-12).
+### Work Summary
 
-6. **stockbot Jetson disk at 87%** kept active — relevant after May 12 checkpoint per its own resolution criteria.
+**Stale focus entry maintenance** (PROJECTS.md)
+- Updated 6 project focus entries from Session 938 (21 sessions old) to Session 960 with current state
+- mfg-farm: clarified test print awaiting user execution
+- resistance-research: added user decision urgency (Path A / A+37 / B needed for Domain 42 May 28 DEA deadline)
+- cybersecurity-hardening: clarified Phase 1 approval status and user action required
+- seedwarden: updated Phase 1 blockers (track A only) and Phase 2 readiness status
+- open-source-rideshare: simplified paused status note
+- off-grid-living: confirmed GitHub publication live, awaiting user social media execution
+- **Impact**: State file cleaned; future session orientation will have accurate current context
 
-### Files modified
+**Stockbot pre-checkpoint verification** (May 14 20:00 UTC, 34.5 hours away)
+- ✓ GitHub SSH auth working
+- ✓ Checkpoint query script ready (`may14_checkpoint_query_alpaca.py`, 15K, created 2026-05-13 00:27)
+- ✓ Alpaca API credentials configured
+- **Status**: All critical infrastructure verified. User action required May 14 20:00 UTC to execute checkpoint
 
-- `INBOX.md` — Path Model cleared, processing note added
-- `PROJECTS.md` — Path Model added as Session 938 stockbot exploration item; header date refreshed
-- `ORCHESTRATOR_STATE.md` — Full rewrite; stockbot status reflects today's architecture cleanup deployment; blocks pruned
-- `BLOCKED.md` — DB sync block reframed as superseded
-- `CHECKIN.md` — Session 938 audit entry appended (top)
-- `WORKLOG.md` — This entry appended
-
-### What is genuinely actionable today
-
-In time order:
-1. **TODAY 20:00 UTC**: Run stockbot Gate 1 checkpoint query, classify outcome, follow `MAY_12_OUTCOME_ROADMAP.md`. If AAPL h+10 SELL fill missing from `database/trading.db`, run manual sync first.
-2. **By May 28**: Resistance-research distribution path decision (16 days to DEA Domain 42 deadline)
-3. **When ready**: Cybersecurity Phase 1 Tier 1 launch approval
-4. **No deadline**: Mfg-farm test print, seedwarden plant orders + photography window confirmation
-
-### Next session
-
-Pick up after 20:00 UTC checkpoint to classify outcome, archive resolved DB sync block, and execute post-checkpoint roadmap (`POST_CHECKPOINT_ARCHITECTURE_ROADMAP.md`).
+### Session Metrics
+- **Effort**: 5 minutes
+- **Changes**: PROJECTS.md (6 edits), WORKLOG.md appended
+- **Next session**: Monitor for user decisions on path selections (resistance-research, cybersecurity-hardening, seedwarden) and May 14 checkpoint execution readiness

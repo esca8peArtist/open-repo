@@ -1,5 +1,96 @@
 # Check-in
 
+## Session 961 — May 13, 2026 02:08–06:45 UTC (Parallel Gate 2 + Phase 1 Execution Blueprint)
+
+**Status**: ✅ SESSION COMPLETE — Critical-path work for resistance-research + stockbot delivered; two major blueprints ready for user execution
+
+### Work Completed
+
+**✅ resistance-research — Phase 1 Execution Blueprint (Expanded, 7,500+ words)**
+- **Deliverable**: `projects/resistance-research/PHASE_1_EXECUTION_BLUEPRINT.md` (7,500+ words, production-ready)
+- **Scope**: Full operational plan from today (May 13) through Phase 1 completion, incorporating path decision (Path A + Domain 37 Hybrid, resolved May 13 00:45 UTC)
+- **Key sections**:
+  1. **Lead Finding**: All distribution materials are ready. Only 2 identity fields + 1 10-minute Gist creation needed before launch.
+  2. **Critical Path Analysis** — Domain 42 DEA track (OVERDUE by 5 days from planned May 8, send Category A TODAY) vs. Phase 1 main distribution (begins May 14)
+  3. **Day-by-Day Timeline** — May 13 through June 30 with 7 Domain 42 waves, 3 batch waves, social posting sequence, Substack publication schedule
+  4. **Pre-Launch Checklist** — All 7 "distribution fixes" with time estimates (~60 minutes total):
+     - Fix 1: Identity fields (2 min) | Fix 2: Domain 37 Gist (10 min) | Fix 3: URL placeholders via script (5 min)
+     - Fix 4: README.md contact field (10 min) | Fix 5: Substack handle (1 min) | Fix 6: Per-email personalization (15 min) | Fix 7: Verify Domain 42 Gist (2 min)
+  5. **Day-1 Execution Runbook** — 11 detailed blocks with step-by-step procedures from precondition check through Batch 1 send
+  6. **Risk Mitigation** — Surveillance, legal, organizational risks + 3 incident response scenarios
+  7. **Go/No-Go Decision Criteria** — 6-point checklist; earliest Phase 1 start May 14, latest May 18; Domain 42 overdue
+  8. **Critical Discrepancy Note** — Phase 1b timing: PHASE1_DEPLOYMENT_MASTER.md (May 6, authoritative) schedules Week 9 (July 9) vs earlier April 30 proposal (Day 1-3). Blueprint recommends July 9 with credibility-building logic; user can accelerate to May 15-16 to prioritize May 30 advocacy window.
+- **Status**: ✅ READY FOR EXECUTION TODAY (Domain 42 Category A) and TOMORROW (May 14 Phase 1 setup) — total execution time: ~60 min setup + 3-4 hours Day 1
+- **Critical Action**: Send Domain 42 Category A emails (Drug Policy Alliance, MPP, NORML, LEAP, SSDP) TODAY (May 13) before May 28 DEA deadline
+
+**✅ stockbot — Gate 2 Readiness Audit (2,500+ words)**
+- **Deliverable**: `projects/stockbot/GATE_2_READINESS_AUDIT.md` (2,500+ words, production-ready)
+- **Scope**: Pre-checkpoint infrastructure audit + Gate 2 decision framework
+- **Key findings**:
+  1. **Infrastructure Status: READY** — All scripts, decision documents, monitoring tools in place for May 14 20:00 UTC checkpoint
+  2. **Critical Finding: Session Count Discrepancy** — Checkpoint docs describe 2-session AAPL-only, but actual `active-sessions.json` contains 52-ticker portfolio (deployed Sessions 521-535). Action: Run `curl http://100.120.18.84/api/ready` at checkpoint to determine live session count (impacts fill-rate interpretation)
+  3. **ARCH Decision Status**:
+     - ARCH-1 (live component wiring): ✅ Resolved
+     - ARCH-3 (15% max drawdown threshold): Needs runtime update before Week 2
+     - ARCH-4 (cross-session concentration limit): Code gap identified; dashboard monitoring workaround for paper trading
+  4. **NEAR-MISS B1 Response Plan** (most likely outcome) — h+10 exit firing May 14 with 1-2 confirmed round trips is CORRECT behavior, not failure. No parameter changes needed. May 26 interim checkpoint is next decision point.
+  5. **What Requires User Input** — 5 decisions depending on checkpoint outcome: session count, capital structure for live trading, options OOS backtest parallel execution, ARCH-4 cross-session guard timing, May 26 threshold for NEAR-MISS→PASS upgrade
+- **Status**: ✅ READY FOR USER EXECUTION May 14 20:00 UTC (~33 hours away)
+- **Critical Action**: Execute `uv run python scripts/may14_checkpoint_query_alpaca.py` at May 14 20:00 UTC; classify outcome using POST_GATE_1_RESPONSE_FRAMEWORK.md
+
+### Session Metrics
+- **Total time**: 02:08–06:45 UTC (~277 minutes = 4h 37m elapsed)
+  - resistance-research agent: ~180 minutes (comprehensive Phase 1 blueprint)
+  - stockbot agent: ~97 minutes (Gate 2 readiness audit)
+- **Files created**: 2 production-ready documents (10,000+ words)
+- **Parallel execution success**: Both high-priority projects advanced simultaneously
+
+### Project Status (Post-Session 961)
+
+| Project | Status | Blocker | User Action Needed | Timeline |
+|---------|--------|---------|------------------|----------|
+| **resistance-research** | 🟢 Ready | ✅ RESOLVED (Path A+37) | Execute Phase 1 (Day 1 May 14 = 60 min setup + 4h execution) | TODAY: Domain 42; TOMORROW: Phase 1 setup |
+| **stockbot** | 🟢 Ready | ✅ Ready | Execute checkpoint query May 14 20:00 UTC | May 14 20:00 UTC (33 hours away) |
+| **cybersecurity-hardening** | 🟢 Ready | Awaiting Phase 1 approval | Approve Phase 1 launch; Item 29 enables June 1 deployment | June 1 target |
+| **seedwarden** | 🟢 Ready | Track A: tag corrections; Track B: unblocked | Confirm May 19 launch approval | May 15-18 setup; May 19 publication |
+| **mfg-farm** | 🟡 Awaiting | Test print user execution | Execute test print at 0.20mm layer, PLA+, 3 walls, 220-225°C | Post-print: Etsy launch |
+
+### Critical Milestones
+
+1. **TODAY, May 13** (NOW): 🔴 **URGENT** — Send Domain 42 Category A emails (Drug Policy Alliance, MPP, NORML, LEAP, SSDP) to meet May 28 DEA deadline
+2. **May 14 14:00-20:00 UTC** (32-33 hours): Phase 1 Day-1 setup (60 min) + Begin Batch 1 send sequence (2.5 hours, send 5 emails at 30-min intervals)
+3. **May 14 20:00 UTC** (33 hours): Execute stockbot checkpoint query; classify outcome (PASS / NEAR-MISS / FAR-MISS)
+4. **May 21**: ⏰ Batch 1 must be in inboxes by May 21 to support May 28 DEA deadline context window
+5. **May 30**: Seedwarden Phase 2 launch target (Track B unblocked)
+
+### Needs Your Input (CRITICAL DECISIONS)
+
+**🔴 URGENT — TODAY, May 13:**
+1. **Domain 42 DEA Category A emails** — SEND TODAY before 24-hour window (planned send date was May 8, now 5 days overdue)
+   - Template: `projects/resistance-research/execution/domain-42-email-template.md` (template D42-A)
+   - Contacts: Drug Policy Alliance, MPP, NORML, LEAP, SSDP (5 organizations)
+   - Gist: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab (pre-created, verify live)
+   - Time needed: ~1 hour
+   - Section 591 framing update: Did May 13 House Appropriations markup pass? If yes, add: "Section 591 passed House Appropriations committee May 13 (8-6) — establishing procedural standing"
+
+**⏰ URGENT — May 14 (tomorrow):**
+2. **Phase 1 Day-1 setup + Batch 1 send** — Execute `PHASE_1_EXECUTION_BLUEPRINT.md` blocks 1-9 (4-4.5 hours total)
+   - Requires: Identity fields in fill_templates.py (2 min), Domain 37 Gist creation (10 min), template script run (5 min), contact re-verification (10 min), email personalization (15 min), social post scheduling (90 min)
+   - Then: Send 5 Batch 1 emails at 30-min intervals (logs timestamps in BATCH_1_CONTACT_LOG.md)
+   - Deliverable: 5 emails sent, zero bounces at 60-min mark
+
+3. **Stockbot checkpoint execution** — Run May 14 20:00 UTC
+   - Command: `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py`
+   - Input: Check session count via `curl http://100.120.18.84/api/ready` (2 vs 52)
+   - Output: Scenario classification (PASS / NEAR-MISS / FAR-MISS)
+   - Apply framework: POST_GATE_1_RESPONSE_FRAMEWORK.md decision tree
+
+**📋 INFORMATIONAL — May 14-19:**
+4. **Cybersecurity-hardening Phase 1 approval** (not urgent, but needed by May 29 for June 1 launch) — Approve Phase 1 to enable Item 29 calendar deployment June 1
+5. **Seedwarden May 19 launch confirmation** (not urgent, but needed by May 14 to finalize setup) — Confirm May 19 approval to enable May 15-18 platform setup sequence
+
+---
+
 ## Session 960 — May 13, 2026 01:20–01:25 UTC (Orchestrator Housekeeping)
 
 **Status**: ✅ SESSION COMPLETE — Stale state entries refreshed; critical infrastructure verified

@@ -36,6 +36,16 @@ sys.path.insert(0, str(SCRIPTS))
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "")
 CHANNEL_ID = int(os.environ.get("DISCORD_CHANNEL_ID", "0"))
 OWNER_ID = int(os.environ.get("DISCORD_OWNER_ID", "0"))
+MOM_USER_ID = int(os.environ.get("DISCORD_MOM_USER_ID", "0"))
+_whisper_model = None
+
+
+def get_whisper_model():
+    global _whisper_model
+    if _whisper_model is None:
+        from faster_whisper import WhisperModel
+        _whisper_model = WhisperModel("base", device="cpu", compute_type="int8")
+    return _whisper_model
 
 MAX_DISCORD_LENGTH = 1900  # leave room for formatting
 
@@ -51,19 +61,79 @@ def read_tail(path: Path, lines: int = 30) -> str:
 
 
 def read_section(path: Path, section: str, lines: int = 40) -> str:
-    """Read from a section header to the next --- or end of file."""
+    """Read from a section header to the next --- separator or next ## heading."""
     try:
         content = path.read_text()
         if section not in content:
             return read_tail(path, lines)
         start = content.index(section)
         chunk = content[start:]
-        # Stop at next --- separator
-        end = chunk.find("\n---", 10)
+        # Stop at next --- separator or next sibling ## heading (whichever comes first)
+        candidates = [chunk.find("\n---", 10), chunk.find("\n## ", len(section))]
+        stops = [c for c in candidates if c > 0]
+        end = min(stops) if stops else -1
         result = chunk[:end].strip() if end > 0 else chunk.strip()
         return result[:MAX_DISCORD_LENGTH] or "(empty section)"
     except FileNotFoundError:
         return f"(file not found: {path.name})"
+
+
+def _update_blocked_field(filepath: Path, field_re: str, project: str, new_value: str) -> str | None:
+    """Find **Blocked[...]**: in project's section and replace its value.
+    Returns the old blocked text if found and changed, else None."""
+    lines = filepath.read_text().splitlines(keepends=True)
+    in_project = False
+    result_lines = []
+    old_value = None
+    for line in lines:
+        if re.match(r'^### ', line):
+            in_project = bool(re.match(r'^### ' + re.escape(project) + r'\b', line, re.IGNORECASE))
+        if in_project and re.match(field_re, line):
+            m = re.match(r'(' + field_re + r'\s*)(.*)', line.rstrip('\n'))
+            if m:
+                old_value = m.group(2).strip()
+                line = m.group(1) + new_value + '\n'
+                in_project = False  # only update first match per project
+        result_lines.append(line)
+    if old_value is not None:
+        tmp = filepath.with_suffix('.tmp')
+        tmp.write_text(''.join(result_lines))
+        os.replace(tmp, filepath)
+    return old_value
+
+
+def resolve_project_block(project: str, note: str, timestamp: str) -> str:
+    """Directly update **Blocked on** in PROJECTS.md and **Blocked** in
+    ORCHESTRATOR_STATE.md for an immediate, persistent resolution."""
+    cleared = f"— resolved {timestamp}: {note}"
+    updated = []
+
+    try:
+        old = _update_blocked_field(PROJECTS, r'\*\*Blocked on\*\*:', project, cleared)
+        if old is not None:
+            updated.append(f"PROJECTS.md (**Blocked on**: was: _{old}_)")
+    except Exception as e:
+        return f"⚠️ Error updating PROJECTS.md: {e}"
+
+    state_file = WORKSPACE / "ORCHESTRATOR_STATE.md"
+    try:
+        old2 = _update_blocked_field(state_file, r'\*\*Blocked\*\*:', project, cleared)
+        if old2 is not None:
+            updated.append("ORCHESTRATOR_STATE.md (live view updated)")
+    except Exception:
+        pass  # state file is auto-generated; PROJECTS.md update is what matters
+
+    if not updated:
+        return (
+            f"⚠️ No **Blocked on** field found for **{project}** in PROJECTS.md.\n"
+            f"Check the project name matches exactly (e.g. `mfg-farm`, `resistance-research`, `seedwarden`)."
+        )
+
+    return (
+        f"✅ Block cleared for **{project}**\n"
+        + "\n".join(f"• {u}" for u in updated)
+        + f"\nNote: _{note}_"
+    )
 
 
 def resolve_block(project: str, note: str) -> str:
@@ -98,7 +168,11 @@ def resolve_block(project: str, note: str) -> str:
             if not match:
                 titles = re.findall(r'### (.+)', active_m.group(0))
                 available = ", ".join(titles) if titles else "none"
-                return f"⚠️ No unresolved block found matching '{project}'. Active blocks: {available}"
+                # No formal BLOCKED.md entry — update PROJECTS.md and
+                # ORCHESTRATOR_STATE.md directly so the change is immediate.
+                result = resolve_project_block(project, note, timestamp)
+                add_to_inbox(f"[UNBLOCKED] {project}: {note}")
+                return result
             resolution_line = f"**Resolution**: {note} (resolved via !resolve {timestamp})\n"
             new_text = text[:active_m.start() + match.start(2)] + resolution_line + text[active_m.start() + match.end(2) + 1:]
             tmp = BLOCKED.with_suffix(".tmp")
@@ -106,9 +180,153 @@ def resolve_block(project: str, note: str) -> str:
             os.replace(tmp, BLOCKED)
             block_title = re.search(r'### (.+)', match.group(1))
             title = block_title.group(1) if block_title else project
+            add_to_inbox(f"[UNBLOCKED] {project}: {note}")
             return f"✅ Resolution written for: **{title}**\nNote: {note}\nThe orchestrator will archive this block at the next session."
     except Exception as e:
         return f"⚠️ Error writing to BLOCKED.md: {e}"
+
+
+def read_project_blocks() -> list[tuple[str, str]]:
+    """Parse ORCHESTRATOR_STATE.md for project-level Blocked fields."""
+    state_file = WORKSPACE / "ORCHESTRATOR_STATE.md"
+    try:
+        content = state_file.read_text()
+        results = []
+        current_project = None
+        for line in content.splitlines():
+            m = re.match(r'^### (.+)', line)
+            if m:
+                current_project = m.group(1).strip()
+            elif current_project and re.match(r'^\*\*Blocked\*\*:', line):
+                blocked_text = line.split('**Blocked**:', 1)[1].strip()
+                if blocked_text and not re.match(r'^(—|None|none|-)', blocked_text):
+                    results.append((current_project, blocked_text))
+        return results
+    except FileNotFoundError:
+        return []
+
+
+def _extract_project_section(project: str) -> list[str]:
+    """Return the raw lines of a project's section from PROJECTS.md."""
+    try:
+        lines = PROJECTS.read_text().splitlines()
+    except FileNotFoundError:
+        return []
+    for strict in (True, False):
+        in_project = False
+        section = []
+        for line in lines:
+            if re.match(r'^### ', line):
+                if in_project:
+                    break
+                pattern = (r'^### ' + re.escape(project) + r'\b') if strict else re.escape(project)
+                if re.search(pattern, line, re.IGNORECASE):
+                    in_project = True
+            if in_project:
+                section.append(line)
+        if section:
+            return section
+    return []
+
+
+def read_project_detail(project: str) -> str:
+    """Return a decision-focused brief for a blocked project."""
+    section = _extract_project_section(project)
+    if not section:
+        return f"No project found matching '{project}' in PROJECTS.md."
+
+    # Extract key fields by scanning lines
+    fields: dict[str, str] = {}
+    options: list[str] = []
+
+    for line in section:
+        # Named fields
+        for field in ("Blocked on", "Status", "Current focus"):
+            m = re.match(r'\*\*' + re.escape(field) + r'\*\*:\s*(.*)', line)
+            if m:
+                fields[field] = m.group(1).strip()
+
+        # Option/path/track bullet lines — must start the label with Path/Option/Track
+        if re.match(r'\s*[-•]\s*\*\*(Path|Option|Track)\s', line, re.IGNORECASE):
+            cleaned = re.sub(r'\*\*', '', line).strip().lstrip('-• ').rstrip('.')
+            if len(cleaned) > 120:
+                cleaned = cleaned[:117] + '...'
+            options.append(cleaned)
+
+    # Build the brief
+    out = []
+
+    blocked = fields.get("Blocked on", "").strip()
+    if not blocked or re.match(r'^(—|None|none|-)', blocked):
+        out.append("✅ No active block recorded for this project.")
+    else:
+        out.append(f"🔴 BLOCKED: {blocked}")
+
+    # Status (short) — strip markdown and session references
+    status = fields.get("Status", "")
+    if status:
+        status = re.sub(r'\*\*', '', status)
+        status = re.sub(r'\(Sessions?[^)]+\)', '', status).strip().rstrip(',')
+        if len(status) > 150:
+            status = status[:147] + '...'
+        out.append(f"Status: {status}")
+
+    # Current focus — strip "Session NNN:" prefix, extract deadline if present
+    focus = fields.get("Current focus", "")
+    if focus:
+        focus = re.sub(r'^Session \d+:\s*', '', focus).strip()
+        # Surface any deadline
+        deadline_m = re.search(r'(deadline|due|hearing|launch|checkpoint)[^.–—]*?((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\s+\d+|\d{4}-\d{2}-\d{2})', focus, re.IGNORECASE)
+        if deadline_m:
+            out.append(f"⏰ Deadline: {deadline_m.group(0).strip()}")
+        # Show trimmed focus (cut at 200 chars)
+        focus_short = focus if len(focus) <= 200 else focus[:197] + '...'
+        out.append(f"Context: {focus_short}")
+
+    if options:
+        out.append("\nOptions:")
+        for opt in options:
+            out.append(f"  • {opt}")
+    elif blocked and not re.match(r'^(—|None|none|-)', blocked):
+        out.append("\n(No explicit options listed — check project dir for decision docs.)")
+
+    return '\n'.join(out)
+
+
+def normalize_voice_command(text: str) -> str:
+    """Map spoken phrases to bot command syntax before dispatch."""
+    # "exclamation blocked" / "exclamation mark blocked" / "bang blocked" → "!blocked"
+    text = re.sub(r'(?i)^(exclamation\s*(mark|point)?|bang)\s+', '!', text.strip())
+    return text
+
+
+async def transcribe_voice(attachment: discord.Attachment) -> str:
+    """Download a Discord voice note and transcribe it via local faster-whisper."""
+    import asyncio
+    import tempfile
+
+    audio_bytes = await attachment.read()
+    suffix = ".ogg"
+    name = attachment.filename.lower()
+    if name.endswith(".mp3"):
+        suffix = ".mp3"
+    elif name.endswith(".wav"):
+        suffix = ".wav"
+    elif name.endswith(".m4a"):
+        suffix = ".m4a"
+
+    with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as f:
+        f.write(audio_bytes)
+        tmp_path = f.name
+    try:
+        def _transcribe():
+            model = get_whisper_model()
+            segments, _ = model.transcribe(tmp_path)
+            return " ".join(s.text for s in segments).strip()
+
+        return await asyncio.get_event_loop().run_in_executor(None, _transcribe)
+    finally:
+        os.unlink(tmp_path)
 
 
 def add_to_inbox(message: str) -> None:
@@ -170,11 +388,34 @@ async def on_message(message: discord.Message):
     if message.channel.id != CHANNEL_ID:
         return
 
-    # Only respond to the owner
+    # Route mom's messages directly to mom-projects inbox, no commands
+    if MOM_USER_ID and message.author.id == MOM_USER_ID:
+        content = message.content.strip()
+        if content:
+            add_to_inbox(f"[mom-projects] {content}")
+            await message.reply("Got it — I'll pass that along.")
+        return
+
+    # Only respond to the owner for all other commands
     if OWNER_ID and message.author.id != OWNER_ID:
         return
 
     content = message.content.strip()
+
+    # ── Voice message transcription ───────────────────────────────────────────
+    if not content and message.attachments:
+        for att in message.attachments:
+            if att.content_type and att.content_type.startswith("audio/"):
+                try:
+                    content = normalize_voice_command(await transcribe_voice(att))
+                    await message.channel.send(f"🎙️ *{content[:150]}*")
+                except Exception as e:
+                    await message.channel.send(f"⚠️ Transcription failed: {e}")
+                    return
+                break
+
+    if not content:
+        return
 
     # ── Commands ──────────────────────────────────────────────────────────────
 
@@ -184,18 +425,32 @@ async def on_message(message: discord.Message):
             "**Read state**\n"
             "`!status` — last 20 lines of WORKLOG.md\n"
             "`!checkin` — current check-in briefing (CHECKIN.md)\n"
-            "`!blocked` — items waiting on your input (BLOCKED.md)\n"
+            "`!blocked` — all blocks: formal BLOCKED.md entries + project-level user actions\n"
+            "`!block <project>` — full detail for one project (focus, blocked reason, notes)\n"
+            "    Example: `!block mfg-farm`\n"
             "`!inbox` — current unprocessed items in INBOX.md\n"
             "`!projects` — active project list (PROJECTS.md)\n"
             "`!log N` — last N lines of WORKLOG.md (default 20)\n"
             "`!usage` — current weekly Claude usage vs budget\n\n"
             "**Write state**\n"
             "`!resolve <project> <note>` — mark a block resolved in BLOCKED.md\n"
-            "    Example: `!resolve stockbot cron PATH fix deployed`\n"
+            "    Format: `!resolve <project-name> <what you did>`\n"
+            "    Example: `!resolve stockbot cron PATH fix deployed to Jetson`\n"
+            "    Example: `!resolve mfg-farm test print done, snap arm holds at 0.4mm gap`\n"
+            "    Example: `!resolve seedwarden tag corrections applied, Etsy account verified`\n"
+            "⚠️ **IMPORTANT**: If you do something the orchestrator was waiting on, you MUST\n"
+            "   use `!resolve`. Saying it in chat or a Claude session will NOT clear the block —\n"
+            "   only `!resolve` (or editing BLOCKED.md directly) persists across sessions.\n\n"
             "`!pause [reason]` — pause autonomous project work\n"
-            "`!resume` — resume autonomous work (clears pause/override)\n\n"
-            "**Inbox**\n"
-            "Any non-command message → added to INBOX.md as a task for Claude"
+            "    Example: `!pause going offline for 3 days`\n"
+            "`!resume` — resume autonomous work (clears pause)\n\n"
+            "**Send tasks or decisions to the orchestrator**\n"
+            "Any non-command message → added to INBOX.md, picked up next session\n"
+            "    Example: `focus on stockbot Gate 2 next session`\n"
+            "    Example: `resistance-research: switch to distribution path A+37`\n"
+            "    Example: `seedwarden launch approved for May 30`\n"
+            "⚠️ **IMPORTANT**: Claude chat sessions are NOT captured by the orchestrator.\n"
+            "   Only messages sent here in Discord are written to INBOX.md and acted on."
         )
         await message.channel.send(help_text)
 
@@ -217,8 +472,27 @@ async def on_message(message: discord.Message):
             await message.channel.send(chunk)
 
     elif content.lower() == "!blocked":
-        text = read_section(BLOCKED, "## Active Blocks")
-        for chunk in chunk_message(f"**BLOCKED**\n{text}"):
+        formal = read_section(BLOCKED, "## Active Blocks")
+        project_blocks = read_project_blocks()
+
+        lines = ["**BLOCKED — Formal entries (BLOCKED.md)**", formal]
+        if project_blocks:
+            lines.append("\n**BLOCKED — Project-level user actions needed**")
+            for project, block in project_blocks:
+                lines.append(f"• **{project}**: {block}")
+            lines.append(
+                "\n_To clear a project block: `!resolve <project> <what you did>`_"
+            )
+        else:
+            lines.append("\n_No project-level user actions pending._")
+
+        for chunk in chunk_message("\n".join(lines)):
+            await message.channel.send(chunk)
+
+    elif content.lower().startswith("!block "):
+        project_name = content[7:].strip()
+        text = read_project_detail(project_name)
+        for chunk in chunk_message(f"**{project_name} — full detail**\n```\n{text}\n```"):
             await message.channel.send(chunk)
 
     elif content.lower() == "!inbox":
@@ -328,8 +602,14 @@ async def on_message(message: discord.Message):
         except Exception as e:
             await message.channel.send(f"⚠️ Error clearing pause state: {e}")
 
+    elif content.startswith("!"):
+        # Unrecognised command — don't pollute INBOX
+        await message.reply(
+            f"Unknown command: `{content.split()[0]}`\nType `!help` for available commands."
+        )
+
     else:
-        # Any non-command message becomes a task in INBOX.md
+        # Plain text message → task in INBOX.md
         add_to_inbox(content)
         await message.reply(
             f"Added to inbox: *{content[:100]}*\nClaude will pick it up next session."

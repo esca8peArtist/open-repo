@@ -111,7 +111,9 @@ while IFS= read -r line; do
       fi
       PROJECT_SUMMARIES+="**Focus**: $focus_truncated\n"
     fi
-    [ -n "$current_blocked" ] && [ "$current_blocked" != "—" ] && PROJECT_SUMMARIES+="**Blocked**: $current_blocked\n"
+    if [ -n "$current_blocked" ] && [[ ! "$current_blocked" =~ ^(—|None|none|-$) ]]; then
+      PROJECT_SUMMARIES+="**Blocked**: $current_blocked\n"
+    fi
     PROJECT_SUMMARIES+="\n"
     current_project=""
   fi
