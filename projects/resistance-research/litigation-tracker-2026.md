@@ -1,6 +1,6 @@
 # Active Litigation Tracker: Democracy and Immigration Cases — April 2026
 
-*Last updated: May 9, 2026 (Session 929 monitoring pass) — for entries added after March 19 see "April 2026 Updates"; for entries added after April 27 see "May 2026 Tracker Refresh" and "May 9, 2026 — Session 929 Monitoring Pass" sections at the bottom of this document*
+*Last updated: May 13, 2026 (Phase 2 cross-reference integration) — for entries added after March 19 see "April 2026 Updates"; for entries added after April 27 see "May 2026 Tracker Refresh" and "May 9, 2026 — Session 929 Monitoring Pass" sections; for Callais 2026 category entries see Category 10 (newly added) and the "May 13, 2026 — Callais Cascade Update" section at the bottom*
 
 ---
 
@@ -536,6 +536,40 @@ These three patterns together suggest that for the next phase of litigation trac
 
 - **Status as of April 12**: No ruling has issued from Judge Jackson following the March 10-11 evidentiary compliance hearing. The government has also signaled it will appeal the underlying preliminary injunction to the Tenth Circuit (docket: 26-1027). The combination of a pending district court compliance ruling and an active Tenth Circuit appeal creates potential jurisdictional complexity: if the Tenth Circuit grants a stay of the preliminary injunction while the compliance ruling is pending, the district court's contempt authority over conduct that occurred while the injunction was operative remains — but the prospective compliance obligation evaporates. This is a maneuver worth watching.
 - **Sources**: [ACLU-CO case page](https://www.aclu-co.org/cases/ramirez-ovando-et-al-v-noem-et-al/) · [Justia Tenth Circuit docket 26-1027](https://dockets.justia.com/docket/circuit-courts/ca10/26-1027)
+
+---
+
+### Category 10 (New): Voting Rights — VRA Section 2 Redistricting Challenges Post-Callais
+
+### 10.1 Louisiana v. Callais — The Ruling That Completes VRA Destruction
+
+- **Court**: U.S. Supreme Court
+- **Case name**: Louisiana v. Callais, No. 24-109
+- **Decided**: April 29, 2026 (6-3)
+- **Plaintiff coalition (respondents / defenders of the district court judgment)**: NAACP Legal Defense Fund, Voting Rights Alliance, Democracy Docket, ACLU Voting Rights Project, Campaign Legal Center; Louisiana State Conference of the NAACP as intervenor
+- **What was at stake**: Louisiana's second majority-Black congressional district — drawn to comply with a prior federal court order under VRA Section 2 following Allen v. Milligan (2023) — was challenged as an unconstitutional racial gerrymander by non-Black Louisiana voters. The case asked whether Section 2 compliance can constitute a "compelling interest" sufficient to justify race-conscious redistricting, and what evidentiary standard must be met.
+- **Key ruling**: 6-3 majority (Alito, joined by Roberts, Thomas, Gorsuch, Kavanaugh, Barrett). Section 2 claims require "evidence giving rise to a strong inference of intentional discrimination." Statistical evidence of disparate racial outcomes is insufficient if it does not "disentangle" racial from partisan factors — an analytical requirement that is unworkable in any jurisdiction with high racial residential segregation and high racial partisan polarization (i.e., every Southern state). Louisiana's majority-Black 6th District, drawn as a court-ordered remedy, was struck down as a racial gerrymander because Louisiana had not provided sufficient intentional discrimination evidence.
+- **Dissent**: Kagan (joined by Sotomayor and Jackson): Section 2's 1982 effects-test text directly supersedes the Mobile v. Bolden intent standard the majority restores; the "disentanglement" requirement is unworkable and effectively eliminates Section 2 redistricting protection in the states where it is most needed.
+- **Outcome status**: DECIDED — adverse. The ruling takes effect immediately (SCOTUS denied reconsideration and granted immediate effectiveness May 4, 2026). The three-ruling VRA destruction circuit is now complete: Shelby County (2013) eliminated preclearance, Brnovich (2021) narrowed vote denial, Callais (2026) narrows vote dilution to require intentional discrimination proof.
+- **Redistricting cascade**: As of May 13, 2026, six states have called or completed special legislative sessions to eliminate majority-minority districts under Callais's cover. See Section 1.7 in Domain 33 and Domain 49 for per-state analysis.
+- **Sources**: [SCOTUS opinion 24-109 (April 29, 2026)](https://www.supremecourt.gov/opinions/25pdf/24-109_21o3.pdf); [NAACP LDF case page](https://www.naacpldf.org/case-issue/louisiana-v-callais/); [Democracy Docket case coverage](https://www.democracydocket.com/news-alerts/scotus-smothers-voting-rights-act-greenlighting-racial-discrimination-and-a-rash-of-gop-gerrymanders/); [Campaign Legal Center: What's Next?](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next)
+
+---
+
+### 10.2 In re: Alabama Congressional Redistricting — Allen v. Milligan Enforcement / May 11 SCOTUS Stay
+
+- **Court**: U.S. Supreme Court (stay application); underlying case: U.S. District Court, N.D. Alabama (three-judge panel)
+- **Background**: Following Allen v. Milligan (2023), Alabama was ordered to draw a second majority-Black congressional district. After Callais (April 29, 2026), Alabama's attorney general filed an emergency motion requesting the Supreme Court stay the district court's injunction requiring use of the court-ordered maps — even though early voting in the 2026 primary had already commenced under those maps.
+- **Plaintiff coalition defending the court-ordered maps**: NAACP Legal Defense Fund, Voting Rights Alliance, Democracy Docket; district court had already made an independent intentional discrimination finding under Arlington Heights
+- **Key ruling**: SCOTUS granted a **5-4 unsigned stay** on **May 11, 2026**, over dissents from Sotomayor, Kagan, and Jackson. The stay effectively vacates the Allen v. Milligan remedy and permits Alabama to use the 2023 legislature-drawn maps (which eliminate the second majority-Black district) for the ongoing primary — retroactively displacing maps under which voters had already cast early ballots.
+- **Why Sotomayor's dissent is analytically critical**: The dissent specifically noted that the district court's intentional discrimination finding was "independent of, and unaffected by" the Callais ruling. The lower court had already made the intent finding that Callais requires for a viable Section 2 claim. The majority granted the stay without explanation — a shadow docket action producing maximum practical consequence while providing no doctrinal guidance about what happens when the Callais intent standard has already been satisfied.
+- **Outcome status**: Stay in effect. The underlying intentional discrimination finding by the district court remains on the record and is the basis for ongoing litigation. NAACP LDF and Democracy Docket are coordinating emergency challenges to Alabama's newly adopted maps under the Arlington Heights theory.
+- **Advocacy window**: The 30-day preliminary injunction filing window from final map adoption (estimated May 1–15) runs through May 31 – June 15. Filing before this window closes is essential to avoid laches arguments. Even with the stay, the intentional discrimination finding in the record provides the litigation foundation Sotomayor's dissent identified as Callais-compliant.
+- **Sources**: [Democracy Docket: SCOTUS Greenlights Alabama Redistricting Plan (May 11, 2026)](https://www.democracydocket.com/news-alerts/scotus-greenlights-11th-hour-alabama-redistricting-plan-for-2026-election/); [SCOTUSblog: Court Clears Way for Alabama to Use Congressional Map Blocked by Lower Court (May 11, 2026)](https://www.scotusblog.com/2026/05/court-clears-way-for-alabama-to-use-congressional-map-blocked-by-lower-court-as-racially-discrim/); [Alabama Reflector: US Supreme Court Vacates Ruling Blocking 2023 Alabama Map (May 11, 2026)](https://alabamareflector.com/2026/05/11/u-s-supreme-court-vacates-ruling-blocking-use-of-2023-alabama-congressional-map/); [Domain 49 (Callais VRA Redistricting Emergency) — Section 2.1 Alabama](projects/resistance-research/domains/domain-49-callais-vra-redistricting-emergency.md)
+
+---
+
+**Domain cross-references for full context**: [Domain 49 (Callais VRA Redistricting Emergency)](projects/resistance-research/domains/domain-49-callais-vra-redistricting-emergency.md) — comprehensive per-state legal analysis, intentional discrimination evidentiary frameworks, Section 3 bail-in litigation strategy, congressional response pathways; [Domain 1 (Voting Rights — Section 3.2a)](projects/resistance-research/domains/domain-01-voting-rights-elections.md) — the three-ruling VRA destruction circuit; [Domain 33 (State Legislative Autocratization — Section 1.7)](projects/resistance-research/domains/domain-33-state-legislative-autocratization.md) — redistricting cascade as autocratization mechanism and state AG coalition litigation strategy.
 
 ---
 
