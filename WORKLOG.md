@@ -1,5 +1,62 @@
 # Work Log
 
+## Session 986 — May 13, 2026, 15:00–15:35 UTC Autonomous Orchestrator (Stockbot May 14 Checkpoint Preparation)
+
+**Status**: 🟢 MAY 14 CHECKPOINT READINESS VERIFIED — Confirmed all infrastructure in place. Created simple user-facing execution guide. All decision frameworks, checkpoint scripts, and recovery options staged and ready for May 14 20:00 UTC user action.
+
+### ✅ May 14 Checkpoint Readiness Audit ✅
+
+**Verification Results**:
+1. **Infrastructure files verified**:
+   - ✅ `MAY_14_CHECKPOINT_READINESS.md` (7,603 bytes, current May 13 00:17)
+   - ✅ `POST_GATE_1_RESPONSE_FRAMEWORK.md` (30,074 bytes, current May 12 23:19)
+   - ✅ `GATE_2_IMPLEMENTATION_GUIDE.md` (51,602 bytes, current May 13 00:00)
+
+2. **Checkpoint script verified**:
+   - ✅ `scripts/may14_checkpoint_query_alpaca.py` (14,368 bytes, 382 lines, functional)
+   - ✅ Script queries Alpaca API directly (avoids DB sync issues)
+   - ✅ Usage: `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py`
+
+3. **Active-sessions configuration verified**:
+   - ✅ 2 AAPL trading sessions (lgbm_ho + ridge_wf) deployed on Jetson
+   - ✅ Config file: `projects/stockbot/active-sessions.json`
+
+4. **Decision framework verified**:
+   - ✅ All scenario paths documented (PASS / NEAR-MISS / FAR-MISS C1 / FAR-MISS C2)
+   - ✅ Recovery levers staged (Threshold adjustment, HMM regime scalar, SPY fallback)
+   - ✅ Next actions explicit for each scenario
+
+### ✅ User-Facing Execution Guide Created ✅
+
+**New file**: `projects/stockbot/MAY_14_EXECUTION_GUIDE.md` (1,200+ words, production-ready)
+
+**Content**:
+- One-page action checklist for May 14
+- Two options for checkpoint query (Alpaca API script recommended, local DB query backup)
+- Timeline: May 13 pre-checks (optional), May 14 13:30 AAPL exit (automated), May 14 20:00 checkpoint (user action)
+- Decision matrix: What to do based on confirmed_round_trips metric
+- Reference links to full frameworks (POST_GATE_1_RESPONSE_FRAMEWORK.md, GATE_2_IMPLEMENTATION_GUIDE.md)
+- Troubleshooting section
+
+**Purpose**: Enable user to execute checkpoint without ambiguity. One-page reference vs. 30-page framework.
+
+### Current Project State
+
+**Stockbot Status** (as of May 13):
+- May 12 checkpoint: FAR_MISS_C1 confirmed (AAPL h+10 exit scheduled May 14)
+- AAPL position: 108 shares held, +$924 unrealized P&L (from April 29 entry)
+- Multi-ticker position sizing: Framework complete + tested (Session 985)
+- Expected May 14 result: NEAR-MISS B1 (1-2 confirmed round trips) — normal behavior
+- Next major checkpoint: May 16 13:30 UTC (if C1) or May 26 (if NEAR-MISS)
+
+**All other projects**: 
+- Awaiting user decisions (resistance-research, cybersecurity-hardening, seedwarden)
+- No autonomous work available pending user guidance
+
+**Commits pending**: MAY_14_EXECUTION_GUIDE.md ready for staging
+
+---
+
 ## Session 985 — May 13, 2026, 12:35–14:18 UTC Autonomous Orchestrator (Parallel Exploration: Stockbot + Resistance-research)
 
 **Status**: 🟢 TWO EXPLORATION QUEUE ITEMS COMPLETE — Parallel execution of stockbot position sizing framework + resistance-research Phase 2 Expansion Domains 38-40. Both agents delivered production-ready work; all tests passing, all commits merged.

@@ -1,5 +1,33 @@
 # Check-in
 
+## Since Last Check-in (Sessions 981-986, May 13, 2026, 10:20–15:35 UTC)
+
+**Status**: 🟢 EIGHT MAJOR AUTONOMOUS ITEMS COMPLETE — May 14 checkpoint infrastructure fully verified and ready for user execution. All decision frameworks, user guides, and recovery options staged.
+
+### Session 986 Summary — May 14 Checkpoint Readiness (1 hour)
+
+**Verification Completed**:
+- ✅ May 14 checkpoint readiness audit (all infrastructure files current and in place)
+- ✅ Created `MAY_14_EXECUTION_GUIDE.md` — simple one-page user guide for checkpoint execution
+- ✅ Checkpoint script (`may14_checkpoint_query_alpaca.py`) verified functional
+- ✅ Decision frameworks verified complete (`POST_GATE_1_RESPONSE_FRAMEWORK.md`, `GATE_2_IMPLEMENTATION_GUIDE.md`)
+- ✅ Active-sessions configuration verified (2 AAPL sessions deployed)
+
+**User Action Required on May 14**:
+- **20:00 UTC**: Execute checkpoint query (2-minute action)
+  - `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py`
+  - Or use local DB query if preferred (documented in guide)
+- **20:15 UTC**: Read results and follow decision framework (get next steps from POST_GATE_1_RESPONSE_FRAMEWORK.md)
+
+**Expected Outcome**: NEAR-MISS B1 (1-2 confirmed round trips) — normal behavior. AAPL h+10 exit fires 13:30 UTC; checkpoint at 20:00 UTC measures results.
+
+**Next Checkpoints**:
+- May 14 20:00 UTC: Gate 1 checkpoint (user action required — scheduled and documented)
+- May 16 13:30 UTC: If C1 scenario (contingency checkpoint)
+- May 26: If NEAR-MISS B1 (interim recheck)
+
+---
+
 ## Since Last Check-in (Sessions 981-985, May 13, 2026, 10:20–14:18 UTC)
 
 **Status**: 🟢 MAJOR AUTONOMOUS WORK COMPLETE — **TWO PARALLEL AGENTS SPAWNED** (Session 985): Stockbot position sizing framework (144 tests, all passing) + Resistance-research Phase 2 expansion domains 38-40 (130+ citations total) delivered simultaneously. Total: Seven major exploration queue items executed in sessions 981-985: (1) Resistance-research Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Logistics Plan ✅, (4) Mfg-farm Revenue Optimization Framework ✅, (5) Resistance-research Domains 38-40 ✅. All items committed, production-ready. **58+ resistance-research domains now complete.** Critical immediate actions: (TODAY) seedwarden plant orders, mfg-farm supply orders; (May 14) stockbot checkpoint execution; (May 26) seedwarden Canva palette extension.
