@@ -2,6 +2,30 @@
 
 ---
 
+## May 13, 2026 — Resistance Research Subagent — Phase 2 Cross-Reference Integration (Exploration Queue Item 33)
+
+**Status**: COMPLETE
+
+**Commits**: 4 commits to master (482e0b21, 6a9077ba, aeaa9b1f, cd6fb6ad)
+
+**Files modified**:
+- `projects/resistance-research/domains/domain-01-voting-rights-elections.md` — Added Section 3.2a: the three-ruling VRA destruction circuit (Shelby County 2013 → Brnovich 2021 → Callais 2026), May 11 Alabama stay as doctrinal marker (Sotomayor dissent notes lower court already made the required intent finding), three-stage legislative remedy frame; 7 citations from Domain 49 source list
+- `projects/resistance-research/domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` — Extended NVRA Section 7 Enforcement Angle with: June 1 HHS rule as 30-day audit anchor, June 30–August 31 outreach window as mandatory Section 7 compliance window; comprehensive Domain 50 cross-reference (ICE-CMS Palantir ELITE chilling effect, Medicaid AVR 99% vs 97.5% declination, NVRA Section 11(b) private right of action)
+- `projects/resistance-research/domains/domain-33-state-legislative-autocratization.md` — Extended Section 1.7 State AG Coalition update with: per-state May 2026 special session status (Alabama stay, Tennessee Memphis elimination, Louisiana/SC/MS timing); preliminary injunction 30-day filing windows (May 30–June 20 critical window); Domain 37 cross-reference framing ICE enforcement at polling locations as the complementary second layer of the voter suppression operation (representational dilution via redistricting + turnout intimidation via ICE presence)
+- `projects/resistance-research/litigation-tracker-2026.md` — Added Category 10 (Voting Rights — VRA Section 2 Post-Callais) with formal entries: 10.1 Louisiana v. Callais (case name, jurisdiction, plaintiff coalition, key ruling, outcome status, cascade pointer); 10.2 Alabama Allen v. Milligan enforcement stay (May 11 5-4 unsigned order, Sotomayor dissent, advocacy window); domain cross-references to Domains 1, 33, 49; tracker header updated
+
+**Verification**:
+- All cross-domain links validated: Domain 49 ↔ Domain 1 (Section 3.2a), Domain 49 ↔ Domain 33 (Section 1.7), Domain 50 ↔ Domain 31 (NVRA enforcement section), Domain 37 ↔ Domain 33 (Section 1.7), tracker Category 10 ↔ Domains 1/33/49
+- No broken domain links — all referenced domains are production-ready files in the domains/ directory
+- Four clean commits with descriptive messages, one per file modified (Domain 1, 31, 33, tracker)
+
+**Assessment of prior work completed vs. newly added**:
+- Domain 31 NVRA enforcement section and Domain 33 State AG Coalition section were already added in an earlier May 13 session; this pass extended them with the specific cross-references and content requested (Domain 50 for Domain 31, Domain 37 + preliminary injunction timing for Domain 33)
+- Domain 1 three-ruling circuit subsection (Section 3.2a) was genuinely new — the prior pass had the five-state cascade update but not the Shelby County → Brnovich → Callais analytical frame
+- Litigation tracker Category 10 was genuinely new — the prior pass had monitoring-log entries but not the formal structured category-entry format with plaintiff coalition, key ruling, outcome status, and advocacy window fields
+
+---
+
 ## May 13, 2026 — Resistance Research Subagent — Phase 2 Domains 48-49-50
 
 **Status**: COMPLETE
