@@ -16,8 +16,8 @@
 > To recalibrate limits: `python3 scripts/usage-check.py --calibrate <sonnet_pct> <all_pct>`
 
 **Calibrated limits** (back-calculated from UI — update after each weekly reset):
-- **Sonnet token limit: 1,304,458**  ← calibrated 2026-05-09 (UI showed 84.0%)
-- **All models token limit: 20,445,877**  ← calibrated 2026-05-09 (UI showed 68.0%)
+- **Sonnet token limit: 8,935,000**  ← calibrated 2026-04-26 (UI showed 22%)
+- **All models token limit: 15,114,000**  ← calibrated 2026-04-26 (UI showed 14%)
 
 **Alert thresholds** (handled by `scripts/usage-monitor.py`, runs every 30 min via cron):
 - Every 10% crossed → Discord notification
@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 938: 38+ domains production-ready (Phase 1+2 complete, trackers current May 9). Domain 42 DEA hearing deadline May 28. **Blocked**: user distribution path decision — A / A+37 (recommended) / B.
+**Current focus**: Session 938: 38+ domains production-ready (Phase 1+2 complete, trackers current May 9). Domain 42 DEA hearing deadline May 28.
 
 
 **Session 876 Deliverables**:
@@ -287,7 +287,7 @@
 - **Tracker updates** (ongoing): First-amendment, environmental-rollbacks, police-brutality trackers ready for regular maintenance
 - **Domain research deepening** (optional): Phase 2 domain research if user selects Path B or post-Phase-1 expansion
 
-**Blocked on**: User distribution path decision (A / A+37 / B)
+**Blocked on**: — resolved 2026-05-13 00:45 UTC: choose path A + domain 37
 **Notes**: Phase 5 COMPLETE + Distribution audit complete. Proposal contains complete actionable pathway: diagnosis (Domains 1-35) → alternative vision (democratic renewal proposal) → theory of change (Phase 4 documents) → implementation architecture (Phase 5 documents) → activation architecture (Phase 2 expansion complete). Implementation timeline ready for 2026 election trigger and three recovery scenarios. Distribution infrastructure audit complete. Ready to launch immediately upon user decision + <2hr administrative fixes.
 
 ---
@@ -298,7 +298,7 @@
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Session 938: Phase 2 Scenario Playbooks complete (all 4 playbooks, May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). **Blocked**: user approval for Phase 1 launch + Day 1 send date.
+**Current focus**: Session 938: Phase 2 Scenario Playbooks complete (all 4 playbooks, May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline).
 
 
 **Session 876 Deliverables**:
@@ -338,7 +338,7 @@
   - **TIER3_DISTRIBUTION_PREP.md** (30 organizations, 16-week timeline)
 
 **Next**: (1) User approves Phase 1 Tier 1 templates + confirms threat accuracy (all flags now resolved); (2) Tier 1 outreach begins immediately; (3) Phase 2 research begins simultaneously; (4) Tier 2 launch ~4 weeks after Tier 1 completion; (5) Tier 3 launch ~12 weeks after.
-**Blocked on**: None — Phase 1 ready for user approval and execution
+**Blocked on**: User approval for Phase 1 launch + Day 1 send date
 **Notes**: All three distribution tiers production-ready with fully customized templates. Full trilogy (Gist + three distribution-prep documents + Tier 2 messaging templates + FAQ) complete and accessible. User can begin Tier 1 outreach immediately after approval. Tier 2 template variants already written and tested for maximum impact.
 
 ---
@@ -359,7 +359,7 @@
 - Key Finding: META_LGB_v1 (regime_only) achieves +41.96% return with Sharpe 1.84, Alpha +38.28%
 - Deployment Ready: Three-model portfolio (META + MSFT + SPY) projects +27.78% return, 1.53 Sharpe, -10.17% MaxDD
 
-**Blocked on**: None — FAR_MISS_C1 path is proceeding as expected. Jetson disk cleanup remains a post-checkpoint task (noted in BLOCKED.md, not blocking C1). Next milestone: May 14 20:00 UTC checkpoint (expect 2 AAPL SELL fills at h=10 exit).
+**Blocked on**: — resolved 2026-05-13 00:18 UTC: should be complete several days ago, please confirm
 
 **Session 829 (2026-05-06) — MAY 12 OUTCOME ROADMAP COMPLETE (Exploration Queue)**:
 - **Deliverable**: `MAY_12_OUTCOME_ROADMAP.md` created — single actionable reference for May 13 morning
@@ -598,7 +598,7 @@
    - Initial funding: $100–500 per readiness checklist
    - Both vol scalar and HMM regime scalar operational for production trading
 
-**Blocked on**: Cron PATH fix + Jetson disk cleanup required before Gate 2 deployment (see BLOCKED.md)
+**Blocked on**: —
 **Notes**: Multi-ticker training complete and verified (Session 533). System positioned to exceed Gate 1 by 4x (~124 trades/month). All optimization infrastructure in place. Live trading launch timeline: (1) Engine restart, (2) Multi-ticker paper trading setup, (3) Gate 1 pass by May 12 checkpoint, (4) 3-month paper trading track record before live launch.
 
 ---

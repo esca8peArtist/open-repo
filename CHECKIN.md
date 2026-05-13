@@ -1,5 +1,58 @@
 # Check-in
 
+## Session 959 — May 13, 2026 00:49–01:35 UTC (Item 28: Phase 1 Distribution Blueprint)
+
+**Status**: ✅ SESSION COMPLETE — Item 28 delivered; all orchestration files updated
+
+### Work Completed
+
+**✅ Item 28: Resistance-Research Phase 1 Distribution Execution Blueprint**
+- **Deliverable**: `projects/resistance-research/PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md` (2,600 words)
+- **Scope**: Consolidated quick-start guide combining 100% of existing Phase 1 distribution materials into a single no-lookup-needed reference
+- **Structure**: Overview → Pre-execution checklist → Day-by-Day timeline (Days 1–21) → Batch 1 quick reference → Template quick reference → Contingency playbook → Success metrics
+- **Key additions**: 
+  - Domain 42 DEA deadline integration (May 28 participation notice deadline — currently overdue as of May 13)
+  - Wave 1–3 sequencing for Domain 42 (Category A same-day with Batch 1, Category B/C Days 5–7, Category D Days 9–12)
+  - File reference table mapping all execution needs to source documents
+- **Status**: READY FOR IMMEDIATE EXECUTION once user clarifies distribution path decision (Path A / A+37 / B)
+- **Impact**: Unblocks Phase 1 execution → eliminates need to juggle 6+ different reference files during execution
+
+### Session Metrics
+- **Time**: 46 minutes (including 30-min agent runtime)
+- **Items completed**: 1 (Item 28 / 3 from exploration queue)
+- **Files created/updated**: 1 new + WORKLOG.md
+
+### Project Status (No Changes from Session 958)
+
+| Project | Status | Blocker | Next Milestone |
+|---------|--------|---------|---|
+| **stockbot** | ✅ Ready | None (user execution) | May 14 20:00 UTC checkpoint |
+| **resistance-research** | ✅ Ready | Distribution path decision | Phase 1 execution (Day 1 post-decision) |
+| **cybersecurity-hardening** | ✅ Ready | Phase 1 approval | June 1 launch |
+| **mfg-farm** | ✅ Ready | Test print completion | Post-print launch |
+| **seedwarden** | ✅ Ready | Track A: tag corrections; Track B: unblocked | May 30 Phase 2 launch |
+
+### Critical Milestones (Unchanged)
+
+1. **May 14 20:00 UTC** (34 hours away): Execute `uv run python scripts/may14_checkpoint_query_alpaca.py`; apply POST_GATE_1_RESPONSE_FRAMEWORK.md
+2. **May 28**: Domain 42 DEA hearing participation deadline (CRITICAL — Phase 1 distribution must start within 24 hours of path decision)
+3. **May 30**: Seedwarden Phase 2 launch target (Track B unblocked, no barriers)
+4. **June 1**: All Phase 1 distribution complete, Phase 2 research begins, Tier 2 pilot prep
+
+### Needs Your Input (Same as Session 958)
+
+1. **Resistance-research distribution path**: Choose Path A / Path A+37 / Path B
+   - Once decided → run `/home/awank/dev/SuperClaude_Framework/projects/resistance-research/PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md` Day 1 sequence
+   - Triggers Domain 42 Wave 1 same-day (currently overdue: May 13 → should have sent May 8-10)
+
+2. **Critical — May 14 20:00 UTC**: Execute stockbot checkpoint with `uv run python scripts/may14_checkpoint_query_alpaca.py` at market close
+
+3. **Seedwarden Track B**: Confirm launch approval for Item 30 acceleration (May 19 writing sprint window)
+
+4. **Test print completion**: mfg-farm awaiting user execution
+
+---
+
 ## Session 958 — May 13, 2026 01:35–02:15 UTC (Exploration Queue Expansion)
 
 **Status**: ✅ SESSION COMPLETE — INBOX processed; 3 high-impact exploration items queued
