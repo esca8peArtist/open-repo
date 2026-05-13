@@ -4,6 +4,39 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Social Growth Strategy and Cohort Acquisition Matrix — 2026-05-13
+
+**Task**: Design a complete social media growth and customer acquisition strategy for the May 30, 2026 Phase 2 launch targeting four customer cohorts (Forager, Prepper, Homesteader, Gift Buyer).
+
+**Files created**:
+- `projects/seedwarden/phase-2-social-growth-strategy.md` — ~2,400-word strategy document covering all 7 required sections: cohort-platform alignment, content strategy, hashtag/SEO strategy, micro-influencer outreach, paid campaign framework, organic growth mechanics, and execution checklist.
+- `projects/seedwarden/cohort-acquisition-matrix.csv` — 22-row matrix covering 4 cohorts × 5+ platforms with CTR projections, CAC estimates ($), LTV projections ($), confidence levels (High/Medium/Low), research basis, and operational notes.
+
+**Research conducted**:
+- Reviewed TruePrepper's top 10 prepper Instagram accounts (follower data, engagement, content type). Micro-influencers identified: @roguepreparedness (31.1K), @theemergencyexpert (51.6K), @thetechprepper (31.8K).
+- Reviewed Influencer Hero's Top 30 Wilderness Survival Influencers. 27 of 30 qualify as micro-influencers under 100K. Specific targets identified by cohort.
+- Pulled Pinterest ads benchmarks: retail/lifestyle CPC $0.10–$0.80, CPA $7–10, CVR 2–4%, CPM $2–5. Source: AdBacklog 2025.
+- Pulled TikTok CAC data: $25–$45 for general e-commerce; Promote CPC $0.03–0.10/view. More cost-efficient for Forager cohort (Interest Graph reach).
+- Confirmed Instagram Reels 30.81% reach rate (2026) and Instagram as primary platform for 46.1% of Etsy Pattern stores.
+- Confirmed 2026 hashtag strategy shift: Instagram officially recommends 3–5 highly relevant hashtags per post (30-hashtag approach reduced engagement by dilution since December 2024).
+- Identified key foraging creators: @blackforager (4M+ combined), @chaoticforager (Gabrielle Cerberville), @wellfedwild (Whitney, 1.5M+).
+- Confirmed homesteading/gift buyer Pinterest behavior: gift buyers use Pinterest as primary discovery search engine for occasions 2–6 weeks before purchase.
+
+**Key decisions documented**:
+- Primary platform assignments: Forager → TikTok; Prepper → YouTube Shorts; Homesteader → Instagram Reels; Gift Buyer → Pinterest.
+- Paid budget phasing: Gift Buyer Pinterest ($5/day, May 25) → Homesteader Instagram ($10/day, June 6) → Forager TikTok Promote ($5/day, June 13) → Prepper Instagram ($10/day, June 20, only after 10+ reviews exist).
+- Month 1 recommended paid spend: $300–$400 (hold Forager TikTok and Prepper Instagram until organic signal established).
+- 13 specific micro-influencers identified with handles, follower counts, and cohort alignment. Outreach template drafted. Unique UTM + coupon code per influencer.
+- Influencer seeding timeline: May 15–17 outreach → May 22 guide access → May 25–29 first posts expected.
+- Phase 1 buyer outreach (47 customers): email to request Etsy reviews with $3 store credit incentive. Target: 10–15 responses.
+- CAC:LTV ratios: Forager 1:8–1:12; Prepper 1:7–1:10; Homesteader 1:9–1:14 (best efficiency); Gift Buyer 1:2–1:3 (seasonal volume play).
+- Kill trigger: pause any ad set at CPC >$1.50 (Pinterest), >$1.20 (Instagram), or <1% click-to-purchase rate after 7 days.
+- Scale trigger: 2x budget only when ROAS ≥ 2.0 sustained over 7 days.
+
+**Sources reviewed**: TruePrepper, Influencer Hero Top 30 Wilderness Survival Influencers, AdBacklog Pinterest Ads Benchmarks 2025, eRank Best Social Media Platforms for Etsy Sellers, Printify Pinterest for Etsy 2026, GrowingYourCraft Pinterest Marketing 2026, JoinStatus Micro-Influencers 2025 Guide, BoralAgency Hashtag Strategies 2026, BestHashtags.com (prepper/homesteading), DisplayPurposes (homesteading), Civil Eats (@blackforager), Taste Cooking (TikTok foraging growth), Ecosire Social Commerce 2026, PHASE_2_SOCIAL_GROWTH_STRATEGY.md (existing file reviewed before writing), COHORT_ACQUISITION_MATRIX.csv (existing file reviewed before writing).
+
+---
+
 ## Bundle E Writing Acceleration Package — 2026-05-13
 
 **Task**: Item 30 from exploration queue — create BUNDLE_E_WRITING_ACCELERATION.md, a consolidated guide-writing sprint package enabling immediate guide production for May 19-22 launch.
