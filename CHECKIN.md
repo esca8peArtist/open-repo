@@ -1,8 +1,32 @@
 # Check-in
 
-## Since Last Check-in (Sessions 981-983, May 13, 2026, 10:20–13:20 UTC)
+## Since Last Check-in (Sessions 981-984, May 13, 2026, 10:20–12:35 UTC)
 
-**Status**: 🟢 MAJOR AUTONOMOUS WORK COMPLETE — Four major exploration queue items executed: (1) Resistance-research Phase 2 Expansion Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Photography & Plant Sourcing Logistics Plan ✅, (4) Mfg-farm Post-Test-Print Revenue Optimization Framework ✅. All items committed, production-ready. Critical immediate actions identified: (TODAY) seedwarden plant orders, mfg-farm supply orders; (May 14) stockbot checkpoint execution; (May 26) seedwarden Canva palette extension.
+**Status**: 🟢 MAJOR AUTONOMOUS WORK COMPLETE — Five major exploration queue items executed: (1) Resistance-research Phase 2 Expansion Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Photography & Plant Sourcing Logistics Plan ✅, (4) Mfg-farm Post-Test-Print Revenue Optimization Framework ✅, (5) Resistance-research Phase 2 Expansion Domains 38-40 ✅. All items committed, production-ready. Critical immediate actions identified: (TODAY) seedwarden plant orders, mfg-farm supply orders; (May 14) stockbot checkpoint execution; (May 26) seedwarden Canva palette extension.
+
+### Session 984 Accomplishments
+
+**Resistance-research Phase 2 Expansion: Domains 38-40** ✅
+- **Deliverable**: Three production-ready domain research documents (6,066 / 5,411 / 5,813 words, 40-44 citations each)
+- **Domain 38: Tribal Sovereignty, Indigenous Democratic Design** (6,066 words, 44 citations)
+  - Trump v. Barbara oral arguments (April 1, 2026) + June/July ruling on birthright citizenship; DOGE BIA office closures + FY2026 $911M tribal program cuts
+  - ICA enforcement angle: ISDEAA compact impoundment without special message = treaty breach + Appropriations Clause violation (links to Domain 40)
+  - New distribution pathway (NCAI, NARF, tribal legal clinics) with no Phase 1 overlap
+  
+- **Domain 39: Constitutional Architecture, Article V Convention Threat** (5,411 words, 40 citations)
+  - Convention of States at 20 of 34 states; aggregation theory enables threshold declaration without consensus
+  - Michigan November 3, 2026 ballot: Constitutional convention referendum (prior rejections 77–23%, 72–28%, 67–22%) — 2026 no-vote signals state resistance
+  - Progressive amendment agenda mapped (SCOTUS term limits, Citizens United reversal, Electoral College reform) — Article V pathway capture threat
+  
+- **Domain 40: Congressional Fiscal Authority, ICA Impoundment Control Restoration** (5,813 words, 44 citations)
+  - GAO confirmed ICA violations (Head Start, EV charging); illegal $4.9B pocket rescission; Susan Collins public condemnation
+  - H.R.4229 (congressional oversight of GAO suits) + H.R.1180 (full repeal) threats to enforcement mechanism
+  - Post-Loper Bright doctrinal angle: de novo review of OMB "administrative hold" + "termination for convenience" theories likely produces judicial rejection
+  
+- **Cross-Framework Integration**: Domain 40's ICA enforcement applies to Domain 38's ISDEAA compact impoundment. Domain 39's Article V ties to Domains 6 + 35 (SCOTUS); fiscal restraints amendment (39) would undermine power-of-purse restoration (40). Triple linkage (38–39–40) represents coherent distribution set.
+- **Status**: Committed to master, production-ready for Phase 1 distribution integration. Distribution windows: June/July (Domain 38 SCOTUS ruling), August (Domains 39–40 pre-November positioning).
+
+---
 
 ### Session 983 Accomplishments
 

@@ -1,5 +1,40 @@
 # Work Log
 
+## Session 984 — May 13, 2026, 11:09–12:35 UTC Autonomous Orchestrator (Resistance-research Phase 2 Expansion Domains 38-40)
+
+**Status**: 🟢 EXPLORATION QUEUE ITEM COMPLETE — Resistance-research Phase 2 Expansion Domains 38-40 ✅. Three production-ready research documents created, each 40+ citations and current through May 2026. Strategic domain selection based on framework's own sequencing analysis (tribal sovereignty, Article V convention threat, congressional fiscal authority). All cross-references to existing domains verified.
+
+### ✅ Resistance-research Phase 2 Expansion: Domains 38-40 ✅
+
+**Deliverable**: Three production-ready domain documents (committed to master)
+- **Domain 38: Tribal Sovereignty, Indigenous Democratic Design** (6,066 words, 44 citations)
+  - Core: Trump v. Barbara (oral arguments April 1, 2026) challenges birthright citizenship of tribal Indian children, with June/July 2026 ruling expected. Simultaneously, DOGE ordered closure of 25+ BIA offices + 12+ IHS facilities; FY2026 budget proposes $911M (24%) cut to core tribal programs.
+  - ICA enforcement angle: ISDEAA compact funding impoundment without special message is both treaty breach and Appropriations Clause violation (ties to Domain 40).
+  - New distribution pathway: NCAI, NARF, tribal legal offices, federal Indian law clinics. Virtually no overlap with Phase 1 network.
+  - Distribution window: June/July 2026 (post-ruling coordination)
+
+- **Domain 39: Constitutional Architecture, Article V Convention Threat** (5,411 words, 40 citations)
+  - Core: Convention of States Project reached 20 of 34 required states (Kansas joined early 2026). Aggregation theory (applications from different eras/subjects toward single threshold) is sleeper threat. H.Con.Res.15 ready as congressional trigger if Republicans hold House.
+  - Michigan ballot November 3, 2026: Constitutional convention referendum. Voters have rejected 77–23%, 72–28%, 67–22% in prior votes. Decisive 2026 rejection signals even targeted states won't support convention mechanism.
+  - Progressive amendment agenda mapped: SCOTUS term limits, Citizens United reversal, Electoral College reform — all require same Article V pathway right is trying to capture.
+  - Distribution window: August 2026 (pre-November ballot) for state-level targeting
+
+- **Domain 40: Congressional Fiscal Authority, ICA Impoundment Control Restoration** (5,813 words, 44 citations)
+  - Core: GAO confirmed ICA violation findings on Head Start (HHS) + EV charging (DOT) in May 2026. Admin submitted illegal $4.9B USAID "pocket rescission" (insufficient 45-day window). Susan Collins publicly condemned as unlawful. H.R.4229 would require congressional approval before GAO can sue; H.R.1180 targets full repeal.
+  - Distribution targets: Appropriations committee staff (fall FY2027 cycle), state AG constitutional litigators, administrative law clinics.
+  - Doctrinal angle: Post-Loper Bright de novo review of OMB's "administrative hold" + "termination for convenience" theories likely produces judicial rejection without new SCOTUS precedent.
+  - Distribution window: June–August 2026 (pre-FY2027 cycle)
+
+**Strategic Cross-Framework Integration**:
+- Domain 40's ICA enforcement applies directly to Domain 38's ISDEAA compact impoundment problem
+- Domain 39's Article V pathway connects to Domain 6 (SCOTUS term limits) + Domain 35 (SCOTUS doctrine)
+- Fiscal restraints amendment in Domain 39 would undermine Domain 40's power-of-purse restoration goals
+- Triple linkage (38–39–40 mutually reinforcing) represents coherent distribution set
+
+**Status**: All three committed to master, production-ready for Phase 1 distribution integration. Each domain meets 40+ citation standard and May 2026 currency requirement. Distribution timelines align with May 28 (Domain 42 DEA hearing), June/July (Domain 38 SCOTUS ruling), August (Domains 39–40 pre-November positioning).
+
+---
+
 ## Session 983 — May 13, 2026 Research Agent (mfg-farm: Post-Test-Print Revenue Maximization Framework)
 
 **Status**: COMPLETE — `projects/mfg-farm/POST_TEST_PRINT_REVENUE_MAXIMIZATION.md` (~3,200 words, 7 sections) + `projects/mfg-farm/product-portfolio-roadmap.csv` (13-month portfolio model). Full decision framework for both PASS and FAIL test print scenarios. All unit economics sourced from verified existing cost models; no fabricated numbers. Key findings: (1) Headphone hook launch is independent of ModRun snap-arm outcome — start hook test prints immediately regardless. (2) At 20 units/week each, both products together use under 10 hours of a 112-hour weekly printer window — capacity is not the constraint, Etsy demand is. (3) Batch 3 (magnetic bin labels) design is already complete; only remaining gate is N52 magnet press-fit calibration (1 day, order magnets now for $38). (4) Order silicone bumper pads and N52 magnets today before test print evaluates — $43 total unlocks both Batch 2 and Batch 3 startup. (5) 12-month gross revenue trajectory: $137K if scaling triggers are met on schedule.
