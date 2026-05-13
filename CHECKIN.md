@@ -1,5 +1,56 @@
 # Check-in
 
+## Session 992 — May 13, 2026, ~17:45 UTC (Exploration Queue + Critical Pre-Checkpoint Findings)
+
+**Status**: 🟡 **PARALLEL AGENTS COMPLETE + CRITICAL JETSON RISK DISCOVERY** — Three high-value exploration items executed in parallel. Stockbot produced critical pre-checkpoint finding: undocumented options_live_session on Jetson since January 2026 with unconfirmed naked-call risk. Seedwarden social strategy complete. Resistance-research Domain 42 urgency strategy complete.
+
+### Critical Pre-Checkpoint Finding — Jetson Options System
+
+**Discovery**: Session 992 stockbot agent (ARCHITECTURE_DECISION_MATRIX.md, 2,650 words) revealed:
+- An `options_live_session` process running on Jetson since January 2026
+- Three fill periods: January, March, May 12 (6 total fills recorded in trading.db)
+- Comprehensive options infrastructure exists in codebase (covered calls, iron condors, delta-neutral, barrier options)
+- **CRITICAL**: Naked-call prevention guardrail is documented as MISSING (`covered-calls-architecture-spec.md` Gap 2)
+- This creates potential uncontrolled naked-call exposure on the live account
+
+**Action Required (Pre-May 14)**:
+1. SSH to Jetson via Tailscale
+2. Locate and examine the options YAML config (not in repository)
+3. Query trading.db to characterize: strategy type, tickers, open positions, realized PnL by date
+4. Check Alpaca positions API for margin usage and exposure verification
+5. Document in `JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md`
+6. Decide: stop, continue, or integrate into post-Gate-1 architecture plan
+
+**Impact on Checkpoint**: May 14 checkpoint itself (query-only) is NOT blocked. But post-checkpoint architecture decision (Architecture A vs B vs C) REQUIRES understanding what's currently running. See BLOCKED.md for full details.
+
+**Recommendation from agent**: Regardless of architecture choice, investigate within 30-60 minutes — leaving uninspected naked-call risk overnight is unacceptable.
+
+### Exploration Queue Results
+
+**1. ✅ Stockbot: Equity vs Options Architecture Comparative Analysis** (COMPLETE)
+- **File**: `projects/stockbot/ARCHITECTURE_DECISION_MATRIX.md` (2,650 words, 6 sections)
+- **Finding**: Architecture B (67-ticker multi-stacker) is only path to original Gate 1 (30 rt/month); Architecture A capped at 4 rt/month; Architecture C (options) completely uncharacterized
+- **Decision tree**: Comprehensive post-checkpoint decision tree with prerequisites and timeline per architecture
+- **Business value**: Fully-informed user decision post-Gate-1-checkpoint without additional research
+
+**2. ✅ Resistance-Research: Domain 42 Institutional Outreach Urgency** (COMPLETE)
+- **File**: `projects/resistance-research/execution/DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` (1,900 words, 6 sections)
+- **Critical correction**: May 28 is NOT the hearing date — it's the deadline to file participation notice for June 29-July 15 hearing (DEA-1362 rescheduling proceeding)
+- **Practical window**: May 14-21 (8 days) for outreach to new contacts; May 20 hard stop for mail; May 24-25 practical stop for electronic notice
+- **Key operations**: 2024 predecessor filings are VOID — orgs like DPA/NORML must file fresh for DEA-1362
+- **Carve-out for Path B**: If Path B distribution selected, Domain 42 must be explicitly carved out (May 21 deadline incompatible with 4-week feedback collection)
+- **Business value**: Operationalizes highest-leverage Phase 1 advocacy window; prevents May 28 miss with concrete contact sequence
+
+**3. ✅ Seedwarden: Phase 2 Social Media Growth Strategy** (COMPLETE)
+- **Files**: `projects/seedwarden/PHASE_2_SOCIAL_GROWTH_STRATEGY.md` (2,000 words) + `COHORT_ACQUISITION_MATRIX.csv`
+- **Key findings**: Forager audience structurally moving to TikTok (Alexis Nikole Nelson: 4M TikTok); competitor gap is TikTok absence (Grow Forage Cook Ferment: 148K Instagram, 0 TikTok)
+- **Observable signals**: 5 cohort-specific signals that distinguish "working" from "needs adjustment" before paid budget activation
+- **Phased paid budget**: Gift Buyer Pinterest starts May 25 (pre-launch index buffer); Homesteader Instagram June 6; Forager TikTok June 13; Prepper June 20 (conditional on 10+ reviews)
+- **Month 1 spend**: $300-$400 (Gift Buyer Pinterest $5/day + Homesteader Instagram $10/day only; hold others until organic content proves creative approach)
+- **Business value**: Data-driven May 30 launch execution with pre-researched platform/budget allocation and cohort LTV projections
+
+---
+
 ## Session 991 — May 13, 2026, ~16:30–17:15 UTC (Parallel Agent Verification)
 
 **Status**: 🟢 **MULTI-PROJECT VERIFICATION COMPLETE** — Checkpoint ready, Phase 1 distribution launch-ready with Domain 42 urgency, Seedwarden Track B achievable by May 30 with concurrent work start today.

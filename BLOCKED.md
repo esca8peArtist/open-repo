@@ -27,6 +27,15 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
+### stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required)
+**Date blocked**: 2026-05-13
+**Context**: Session 991 architecture analysis discovered an `options_live_session` process running on the Jetson since at least January 2026, uncharacterized in the codebase. The May 12 checkpoint query found 6 options fills in trading.db (dates: January, March, May 12). The codebase contains comprehensive options infrastructure (covered calls, iron condors, delta-neutral, barrier options) all dated January 2026 as "PRODUCTION READY." Critical safety finding: the naked-call prevention guardrail is documented as missing (`covered-calls-architecture-spec.md` Gap 2), creating potential uncontrolled naked-call exposure on a live account. The May 14 checkpoint itself (query-only) is not blocked by this, but post-checkpoint architecture decisions require understanding what is currently running.
+**What I need**: SSH access to Jetson (via Tailscale). Investigate: (1) Locate and print the options YAML config, (2) Query trading.db to characterize the strategy (SELECT date(timestamp), COUNT(*), SUM(realized_pnl) FROM trades WHERE mode='PAPER' GROUP BY date(timestamp)), (3) Check Alpaca positions API for open positions, margin usage, and naked-call exposure, (4) Document findings in a new file: `JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md`. Decision: stop, continue, or integrate into post-Gate-1 architecture plan. Critical: this must be resolved before selecting Architecture B or C as the primary production system.
+**Verify with**: `ssh [jetson-address] 'find /home -name "*options*.yaml" 2>/dev/null | head -1'` (or equivalent grep search) — should output the config file path and contents
+**Resolution**: [leave blank]
+
+---
+
 ### mfg-farm — Test print execution (user action required)
 **Date blocked**: 2026-05-13
 **Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
