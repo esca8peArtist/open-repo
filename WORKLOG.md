@@ -4,6 +4,59 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 05:39–ongoing — Session 972 — Career-Training Case Study Workbook (Exploration Queue Item 32)
+
+**Status**: 🔄 IN PROGRESS — 7 detailed scenarios complete; committed to projects/career-training/case-study-workbook.md
+
+### Work Summary
+
+**Career-Training Case Study Workbook — Exploration Queue Item 32**
+
+**Deliverable**: `projects/career-training/case-study-workbook.md` (533 lines, production-ready)
+
+**Content created**:
+1. **Module 01 Scenarios** (3 detailed scenarios):
+   - **Scenario 1.1**: Lump-sum vs. unit-price contract decision for refinery piping (8,000–9,200 LF scope uncertainty)
+     - Worked answer: Unit price transfers quantity risk appropriately; lump-sum exposes contractor to underbid
+     - Common mistakes: change-order bias, underestimating administrative friction, not validating unit rates
+   - **Scenario 1.2**: Estimating productivity on congested mechanical installation (35–45 feet, SIMOPS constraints)
+     - Worked answer: 4.0 labor-hours/ton (not the 2.5 middleground); accounts for pre-outage mobilization overhead + SIMOPS penalties
+     - Common mistakes: using benchmarks without site context, assuming learning curve fixes SIMOPS friction, underestimating short-window overhead
+   - **Scenario 1.3**: Change-order margin and risk transfer (design change requires scope rework)
+     - Worked answer: Submit for full cost + contractual markup; absorbing costs creates bad precedent
+     - Common mistakes: underestimating admin cost of changes, accepting "goodwill" logic, not documenting changes immediately
+
+2. **Module 03 Scenarios** (1 detailed scenario):
+   - **Scenario 3.1**: Schedule float and superintendent pressure to authorize overtime
+     - Worked answer: Maintain baseline labor, monitor float; only authorize OT if float drops below 1 week (you have 3-week buffer, piping is only 10% behind)
+     - Common mistakes: confusing "behind plan" with "schedule risk", overvaluing schedule adherence, underestimating true cost of OT
+
+3. **Module 09 Scenarios** (2 detailed scenarios):
+   - **Scenario 9.1**: Prevailing wage apprentice requirements on public works
+     - Worked answer: Apprentices allowed at 50% PW rate if enrolled in DAS program; 1:5 journeyman-to-apprentice ratio (stricter than federal Davis-Bacon 1:4)
+     - Common mistakes: confusing Davis-Bacon (federal) with California PWA, assuming on-job training = DAS-registered apprenticeship, not budgeting trust contribution
+   - **Scenario 9.2**: OSHA Process Safety Management (PSM) responsibility on refinery tie-in
+     - Worked answer: Shared — refinery conducts process HAZOP, contractor conducts construction-phase JHA with integration to facility PSM program
+     - Common mistakes: assuming refinery HAZOP covers construction work, not integrating JHA with PSM program, underestimating formality of hot work permits
+
+4. **Module 29 Scenarios** (1 detailed scenario):
+   - **Scenario 29.1**: Recognizing valid change orders vs. owner scope creep (informal email requesting $60K scope change)
+     - Worked answer: Require formal written change order; informal emails are requests, not authorizations
+     - Common mistakes: treating informal requests as valid changes, conflating "clarification" with "change", not using formal change-order process
+
+**Key framework documented**: "Three-Lever Problem-Solving Framework" — Risk Transfer, Productivity Context, Compliance Integration
+
+**Research approach**: Scenarios based on (1) actual industrial construction situations, (2) California/federal code requirements, (3) published productivity benchmarks (NAPA, PMI, Davis-Bacon), (4) contract language standards (AIA, AGC)
+
+**Quality metrics**: 
+- All 7 scenarios include: decision framework, worked answer, "why other options fail", common field mistakes
+- 200–400 words per scenario for depth without excess
+- Cross-references to relevant modules and field-tested approaches
+
+**Status**: ✅ Committed to projects/career-training/case-study-workbook.md
+
+---
+
 ## 2026-05-13 06:45–07:15 UTC — Session 971 — Orchestrator Checkpoint: Pre-May-14 Analysis + Phase 2 Integration Verification
 
 **Status**: ✅ COMPLETE — Stockbot checkpoint analysis ready; resistance-research Phase 2 cross-reference verification complete
