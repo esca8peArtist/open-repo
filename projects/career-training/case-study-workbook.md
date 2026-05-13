@@ -738,4 +738,71 @@ Compare that to proceeding wrong: 3+ weeks of rework if deep compaction fails an
 
 ---
 
-*Updated 2026-05-13 — Case studies for Modules 01–05, 09, 29 complete (10 detailed scenarios). Ready for continued expansion to remaining modules.*
+---
+
+## Module 14: Site Safety & OSHA — Scenario
+
+### **Scenario 14.1: Forklift Operator Certification and "Common Sense" Pressure**
+
+**Context:**
+Your site has a 1,500-SF equipment staging area where a forklift is used to move process vessels (200–2,000 lbs each) around the site. The forklift operator is your most experienced millwright — 25 years in the trade. He's been operating forklifts informally for years ("everyone on site does it"). However, OSHA 29 CFR 1910.178 requires that every forklift operator be formally **certified** through an accredited training program. You have documentation that he's trained and certified.
+
+**However**: Your site safety manager discovers that the operator's certification expired 2 years ago. OSHA requires recertification every 3 years or when certain conditions change (operator has an accident, equipment changes, etc.). The operator argues: "I've been doing this for 25 years with no accidents. Recertification is bureaucratic overhead."
+
+The closest certified trainer is 2 hours away. A refresher course is 4 hours + 2 hours travel = 6 hours total. The operator would be off-site for that time, and other equipment movement would be delayed.
+
+**Your question:**
+
+Do you:
+
+**A)** Let him continue operating — his "25 years of common sense" is more valuable than a 3-day-old refresher course
+
+**B)** Stop forklift operations immediately until he's recertified, accepting the schedule delay
+
+**C)** Allow only "minor" moves while you arrange recertification (split the difference)
+
+**D)** Have your safety manager administer a quick test to verify he knows OSHA rules, count it as "recertification"
+
+---
+
+#### **Worked Answer to Scenario 14.1**
+
+**Correct answer: B (Stop forklift operations until recertified)**
+
+**Why B is the answer, even though it's inconvenient:**
+
+1. **OSHA regulation 1910.178(i) is crystal clear.** "Training shall be provided by the employer, who shall certify that each operator has received the training specified." And: "Training shall be renewed every 3 years, or as often as necessary to ensure the operator operates the forklift safely." The operator's certification expired — he's no longer compliant with the regulation.
+
+2. **"Common sense" and OSHA compliance are orthogonal.** A 25-year veteran with no accidents is wonderful. But OSHA doesn't have a "good safety record" exemption to compliance. The regulation exists because accident statistics show that operators *do* get comfortable and then have incidents. The 3-year refresh is designed to interrupt that complacency.
+
+3. **If you allow continued operation and an incident happens, you are directly liable.** OSHA cites the *employer* (you) for operating an uncertified operator, not the operator himself. The citation is for "Failure to Ensure Forklift Operator Certification" — a serious violation with penalties up to $16K–$32K (as of 2026). Plus, if there's an injury, the liability multiplies.
+
+4. **The "quick test" is not valid.** Your safety manager administering a quick test is not an accredited training program. OSHA requires third-party certification from an accredited provider. You can't substitute a gut check for formal training.
+
+5. **The schedule delay is real but temporary.** Yes, 6 hours of travel + training is lost. But the cost of the delay (a few hours) is trivial compared to the cost of an OSHA citation ($16K–$32K) or an injury lawsuit ($500K–$5M). This is not a judgment call — the math is clear.
+
+**How to actually handle this:**
+
+1. **Immediately stop forklift operations.** Document in your daily safety meeting: "Forklift operations suspended pending operator recertification. Expected resumption [date after training]."
+
+2. **Arrange training ASAP.** Call the certified trainer and schedule the 4-hour course. Offer to have the operator start early (7am) to minimize travel.
+
+3. **Use alternative means while training is pending.** Can you use a different equipment-handling method (manual cart, equipment is light enough to carry, someone else operates a forklift who *is* current on certification)? Any temporary workaround is better than violating the regulation.
+
+4. **Once he's recertified, document it.** Keep the certificate on file. Set a calendar reminder for recertification renewal 3 years out.
+
+5. **Use this as a teaching moment for your team.** Brief the site superintendent and safety manager: "We found an expired forklift certification and immediately stopped operations. This is how we handle compliance issues on this site — no exceptions, no shortcuts."
+
+**Common mistakes in the field:**
+
+1. **Confusing "experienced" with "currently certified."** An experienced operator who's out of certification is technically uncertified and a liability. The experience matters for execution quality, but certification matters for compliance.
+
+2. **Rationalizing compliance away.** The operator has 25 years and no accidents, so the refresher is "unnecessary." But OSHA doesn't have an experience exemption. If you rationalize this one, you'll rationalize the next one, and eventually you'll have a citation.
+
+3. **Not budgeting time for compliance upfront.** At project kickoff, your safety plan should include: "All equipment operators will provide current certifications before site mobilization. Recertification dates will be tracked and renewed before expiration." This prevents the emergency situation.
+
+4. **Underestimating OSHA penalty exposure.** A $16K citation feels like it's "just paperwork." But it goes on your OSHA history, impacts future bids (some owners ask for "zero citations in last 3 years"), and signals to your insurance company that you're cutting corners.
+
+---
+
+*Updated 2026-05-13 — Case studies for Modules 01–05, 09, 14, 29 complete (11 detailed scenarios). Workbook production-ready with comprehensive coverage of high-leverage decision points.*
