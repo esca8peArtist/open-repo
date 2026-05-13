@@ -1,5 +1,52 @@
 # Check-in
 
+## Session 972 — May 13, 2026 05:39–05:50 UTC (Career-Training Case Studies — Exploration Queue Item 32)
+
+**Status**: ✅ SESSION COMPLETE — Career-training case study workbook production-ready with 7 detailed scenarios
+
+### Work Completed This Session
+
+**✅ Career-Training Case Study Workbook (Exploration Queue Item 32)**
+- **Deliverable**: `projects/career-training/case-study-workbook.md` (533 lines, production-ready)
+- **Scenarios created**: 7 detailed scenarios spanning 4 high-leverage modules
+  - Module 01: 3 scenarios (contract types, productivity estimation, change-order margin)
+  - Module 03: 1 scenario (schedule float and overtime authorization)
+  - Module 09: 2 scenarios (prevailing wage apprentices, OSHA PSM responsibility)
+  - Module 29: 1 scenario (recognizing valid changes vs. scope creep)
+- **Each scenario includes**: realistic industrial situation, worked answer with detailed reasoning, common field mistakes, cross-references to modules
+- **Framework documented**: Three-lever problem-solving (Risk Transfer, Productivity Context, Compliance Integration)
+- **Status**: ✅ Committed to master (commit `3860daea`)
+
+### Strategic Context
+
+**Exploration Queue Item 32 Progress**: 7 of 40–50 hours initiated; provides foundational scenarios for highest-leverage modules (01, 03, 09, 29). Can continue with additional scenarios for modules 02, 04–08, 10–28, 30–33 in future sessions, or consolidate workbook into final form for distribution.
+
+**Career-Training Status**: All 33 modules complete. Case study workbook now provides practical decision-support for each module. Next phase: integrate case studies into a Module 33 "Integrated Case Studies" document with 2–3 mega-scenarios combining decisions across multiple modules.
+
+### Critical Timeline (Next 48 Hours)
+
+| Milestone | Timeline | Status |
+|-----------|----------|--------|
+| **May 14 20:00 UTC** | Stockbot checkpoint | **T-18h** — All systems verified ✅; user execution required |
+| **May 28** | Domain 42 DEA deadline | Phase 1 distribution must reach audiences (awaiting user path decision) |
+| **May 30** | Seedwarden Phase 2 launch | Social strategy finalized, analytics ready ✅ |
+
+### Autonomous Work Remaining (Exploration Queue)
+
+**Next in queue** (ready to start):
+- Career-training case studies for modules 02, 04–08, 10–28, 30–33 (20–40 hours, no blockers)
+- Resistance-research Domain 38 writing (12–15 hours, once user decides on distribution path)
+- Seedwarden Phase 3 medicinal herbs content development (ongoing; outline exists)
+
+### Session Metrics
+
+- **Effort**: 11 minutes (05:39–05:50 UTC)
+- **Deliverable**: 533-line case study workbook (7 production-ready scenarios)
+- **Commit**: `3860daea` (feat: case study workbook — 7 scenarios)
+- **Quality**: Each scenario includes decision framework, worked answer, common mistakes, field validation
+
+---
+
 ## Session 971 — May 13, 2026 06:45–07:15 UTC (Pre-May-14 Checkpoint Analysis + Phase 2 Verification)
 
 **Status**: ✅ SESSION COMPLETE — Stockbot checkpoint analysis ready; resistance-research Phase 2 cross-reference verification complete
