@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-13T19:24:28Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-13T19:49:42Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 17.7% (1,581,577 tokens) | All-models 35.9% | Reset in 125h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 17.7% (1,581,577 tokens) | All-models 36.4% | Reset in 124h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)

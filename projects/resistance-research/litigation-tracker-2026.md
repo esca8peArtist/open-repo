@@ -1,6 +1,6 @@
 # Active Litigation Tracker: Democracy and Immigration Cases — April 2026
 
-*Last updated: May 13, 2026 (Phase 2 cross-reference integration) — for entries added after March 19 see "April 2026 Updates"; for entries added after April 27 see "May 2026 Tracker Refresh" and "May 9, 2026 — Session 929 Monitoring Pass" sections; for Callais 2026 category entries see Category 10 (newly added) and the "May 13, 2026 — Callais Cascade Update" section at the bottom*
+*Last updated: May 13, 2026 (Callais cascade tracker maintenance) — for entries added after March 19 see "April 2026 Updates"; for entries added after April 27 see "May 2026 Tracker Refresh" and "May 9, 2026 — Session 929 Monitoring Pass" sections; for Callais 2026 category entries see Category 10 (10.1 main ruling, 10.2 Alabama stay, 10.3 multi-state cascade active litigation map) and the "May 13, 2026 — Callais Cascade Update" section; for FISA Section 702 declassification deadline (June 12-15, 2026) see CHECKIN.md monitoring item*
 
 ---
 
@@ -569,9 +569,76 @@ These three patterns together suggest that for the next phase of litigation trac
 
 ---
 
-**Domain cross-references for full context**: [Domain 49 (Callais VRA Redistricting Emergency)](projects/resistance-research/domains/domain-49-callais-vra-redistricting-emergency.md) — comprehensive per-state legal analysis, intentional discrimination evidentiary frameworks, Section 3 bail-in litigation strategy, congressional response pathways; [Domain 1 (Voting Rights — Section 3.2a)](projects/resistance-research/domains/domain-01-voting-rights-elections.md) — the three-ruling VRA destruction circuit; [Domain 33 (State Legislative Autocratization — Section 1.7)](projects/resistance-research/domains/domain-33-state-legislative-autocratization.md) — redistricting cascade as autocratization mechanism and state AG coalition litigation strategy.
+### 10.3 Multi-State Post-Callais Redistricting Cascade — Active Litigation Map (May 13, 2026)
+
+*Added May 13, 2026. Consolidates per-state status for states conducting post-Callais special sessions. For detailed per-state intentional discrimination evidentiary analysis, see Domain 49. For preliminary injunction filing window analysis, see Domain 33 Section 5.6.*
+
+- **Governing framework**: Louisiana v. Callais, No. 24-109 (decided April 29, 2026, effective immediately May 4, 2026). VRA Section 2 now requires "strong inference of intentional discrimination" — effects evidence insufficient.
+- **The Arlington Heights intentional discrimination standard** (the operative test post-Callais): Courts look to (1) sequence of events, (2) historical background, (3) departures from normal legislative procedures, (4) legislative history and contemporaneous statements, (5) procedural and substantive departures from prior practice. Evidence under these five factors is accumulating in each of the five states below.
+
+**Louisiana**
+- **Status**: Governor Landry suspended May 16 primary the day after Callais; special session underway. At least one of the two majority-Black districts (the court-ordered 6th District) is being eliminated. Primaries now scheduled after map finalization.
+- **Plaintiff coalition**: NAACP LDF, Voting Rights Alliance, Democracy Docket
+- **Injunction window**: Special session completion expected mid-May; 30-day PI window runs through mid-June. NRF-supported plaintiffs separately filed to keep the current map in place pending special session (May 12, 2026).
+- **Sources**: [Democracy Docket: SCOTUS clears path for Louisiana to gerrymander mid-election](https://www.democracydocket.com/news-alerts/supreme-court-clears-path-for-louisiana-to-gerrymander-mid-election/); [NRF: NRF-supported plaintiffs ask court to keep Louisiana's current map for 2026 (May 12, 2026)](https://redistrictingfoundation.org/2026/05/12/icymi-nrf-supported-plaintiffs-ask-federal-court-to-keep-louisianas-current-map-in-place-for-2026/)
+
+**Tennessee**
+- **Status**: Special session completed May 5, 2026. The 9th Congressional District, encompassing majority-Black Memphis, was eliminated. The elimination targets a district held by a Black Democratic representative in a state with a 17% Black population that now has zero majority-Black congressional districts.
+- **Plaintiff coalition**: ACLU, NAACP Tennessee State Conference, Democracy Docket
+- **Injunction window**: Map adopted May 5; 30-day PI window runs through June 4. State has an August 6 primary — maps must be finalized for ballot printing by approximately June 20, creating laches pressure.
+- **Sources**: [The Intercept: Tennessee GOP Moves to Decimate Black Voting Power (May 8, 2026)](https://theintercept.com/2026/05/08/gop-memphis-tennessee-gerrymander-map-black-voters/)
+
+**Alabama**
+- **Status**: Three-judge district court had already made independent intentional discrimination finding (Arlington Heights-compliant, pre-Callais). SCOTUS granted emergency stay 5-4 May 11 (25A914, unsigned) displacing the court-ordered maps. New legislature-drawn maps (2023 version) reinstated for 2026 primary already underway.
+- **Plaintiff coalition**: NAACP LDF, Democracy Docket
+- **Next steps**: Challenges to newly adopted post-stay maps under Arlington Heights theory; PI deadline from final map adoption (est. May 15) runs through June 15. Sotomayor dissent identifies existing intentional discrimination finding as Callais-compliant.
+- **Sources**: See entry 10.2 above; [SCOTUSblog: Court clears way for Alabama to use congressional map (May 11, 2026)](https://www.scotusblog.com/2026/05/court-clears-way-for-alabama-to-use-congressional-map-blocked-by-lower-court-as-racially-discrim/)
+
+**South Carolina**
+- **Status**: Extended legislative session targeting the 6th Congressional District (held by Rep. James Clyburn). South Carolina's 6th District is majority-Black; the state is 27% Black with one majority-Black district.
+- **Plaintiff coalition**: NAACP SC State Conference, ACLU SC, Democracy Docket (coordinating)
+- **Injunction window**: Map adoption timing uncertain; challenge to follow within 30 days of adoption
+
+**Mississippi**
+- **Status**: Special session scheduled May 20, 2026. Mississippi is approximately 38% Black, with no majority-Black congressional districts in its current four-district map following the Callais ruling's elimination of the preconditions for remedial majority-minority districts.
+- **Plaintiff coalition**: Mississippi Center for Justice (coordinating with national litigation partners)
+- **Injunction window**: Map adoption expected late May; 30-day PI window runs through late June
+
+**Florida**
+- **Status**: New maps signed within hours of the April 29 Callais decision. Florida projected a 4-seat Republican gain from eliminating or diluting majority-minority districts. No new special session required; existing 2025 legislative session maps were already being held in reserve pending Callais.
+- **Injunction window**: Maps signed April 29-30; 30-day PI window closed approximately May 29. Laches arguments now available to state on any challenge filed after that date.
+- **Sources**: [Domain 33 Section 1.7 — Florida maps signed within hours of Callais]
+
+**Virginia (Democratic redistricting emergency — symmetric pipeline)**
+- **Court**: Virginia Supreme Court (state); emergency application pending before U.S. Supreme Court (Roberts as Circuit Justice)
+- **Status**: Virginia voter-approved redistricting maps (April 21, 2026, 50.7-49.3%) blocked by Tazewell County Circuit Court (April 22, 2026) and Virginia Supreme Court on procedural grounds. Virginia Democrats filed emergency SCOTUS application May 11, 2026 asking Roberts to stay the Virginia Supreme Court ruling.
+- **Urgency**: Virginia elections commissioner must begin ballot changes by approximately May 12 for August primary; absentee ballots for military and overseas voters must go out by June 18. No SCOTUS action by May 28 makes August primary under old maps effectively locked in.
+- **Why it matters for asymmetry analysis**: If Roberts grants Alabama's Republican-favored stay (which he did, 5-4) but denies Virginia's Democratic-favored stay, the redistricting emergency pipeline's asymmetric character becomes formally documented across two parallel applications. That asymmetry is itself Arlington Heights-relevant for any consolidated redistricting challenge in the next cycle.
+- **Sources**: [Virginia Mercury: Virginia Democrats seek emergency injunction from SCOTUS (May 11, 2026)](https://virginiamercury.com/2026/05/11/virginia-democrats-seek-emergency-injunction-from-us-supreme-court-in-redistricting-fight/); [CNN: Virginia Democrats ask US Supreme Court to let them use new congressional map (May 11, 2026)](https://www.cnn.com/2026/05/11/politics/virginia-redistricting-us-supreme-court)
+
+**Projected net House seat impact**: NDRC projects 12-14 Republican House seat gain from the combined Callais redistricting cascade (Louisiana, Tennessee, Alabama, South Carolina, Mississippi, Florida). Current Republican majority is 218-214 (4 seats). A 12-14 seat structural gain means Democrats must net 15-17 seats in competitive districts just to reach parity — substantially above what generic-ballot polling alone would predict.
+
+**Key filing deadline summary**:
+| State | Map Adoption Date | PI Filing Deadline | Primary Date |
+|-------|------------------|-------------------|--------------|
+| Florida | April 29-30, 2026 | ~May 29, 2026 (LAPSED) | August 2026 |
+| Tennessee | May 5, 2026 | June 4, 2026 | August 6, 2026 |
+| Alabama | May 11-15, 2026 (est.) | June 11-15, 2026 | Ongoing |
+| Louisiana | Mid-May 2026 (est.) | Mid-June 2026 | TBD post-session |
+| South Carolina | TBD | 30 days post-adoption | August 2026 |
+| Mississippi | Late May 2026 (est.) | Late June 2026 | August 2026 |
 
 ---
+
+**Domain cross-references for full context**: [Domain 49 (Callais VRA Redistricting Emergency)](projects/resistance-research/domains/domain-49-callais-vra-redistricting-emergency.md) — comprehensive per-state legal analysis, intentional discrimination evidentiary frameworks, Section 3 bail-in litigation strategy, congressional response pathways; [Domain 1 (Voting Rights — Section 3.2a)](projects/resistance-research/domains/domain-01-voting-rights-elections.md) — the three-ruling VRA destruction circuit; [Domain 33 (State Legislative Autocratization — Sections 1.7 and 5.6)](projects/resistance-research/domains/domain-33-state-legislative-autocratization.md) — redistricting cascade as autocratization mechanism, dark-money capture cycle, and Callais case study; [Domain 35 Section 13](projects/resistance-research/domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md) — post-Callais redistricting emergency application pipeline and June-August 2026 decision window.
+
+---
+
+---
+
+## May 13, 2026 — Callais Cascade Update
+
+*Added May 13, 2026. Entries 10.1–10.3 above document the Callais ruling and redistricting cascade. Entry 10.3 is the primary active-litigation map for advocacy and litigation response coordination.*
 
 ---
 

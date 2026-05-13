@@ -299,7 +299,7 @@ For completeness and context, the following decisions from the OT2025 term have 
 **Pending (decision expected by July 2026)**:
 
 - *Trump v. Barbara* (birthright citizenship, 14th Amendment): Oral arguments April 1, 2026. Majority of justices appeared skeptical of the executive order; decision expected to hold birthright citizenship is constitutionally protected. Would be a significant post-election vindication of the 14th Amendment's original purpose but arrives after any 2026 enforcement damage.
-- *Louisiana v. Callais* (Voting Rights Act, 14th and 15th Amendments, reargued October 2025): Decision pending. Could eliminate majority-minority districts as a VRA Section 2 remedy nationwide — potentially the most consequential voting rights decision since *Shelby County* (2013).
+- *Louisiana v. Callais* (Voting Rights Act, 14th and 15th Amendments, argued October 15, 2025): **DECIDED April 29, 2026 — 6-3 adverse. Section 2 now requires intentional discrimination proof; effects test eliminated as an independent basis for majority-minority district remedies.** The three-ruling VRA destruction circuit is complete: Shelby County (2013) eliminated preclearance, Brnovich (2021) narrowed vote denial, Callais (2026) narrows vote dilution to require intent. Full post-decision cascade analysis in Domain 49 (Callais VRA Redistricting Emergency); per-state redistricting special session timelines in Domain 33 Section 1.7. The ruling took immediate effect May 4, 2026 (SCOTUS denied reconsideration same day). The redistricting emergency response pipeline — preliminary injunction filing windows running May 31 through June 20 — is detailed in Domain 33 Section 5.6 and Domain 49.
 - *Trump v. Slaughter* (independent agencies, *Humphrey's Executor*): Decision pending by late June 2026. Near-certain to narrow or overrule *Humphrey's Executor* on the merits; D.C. Circuit already ruled against Wilcox/Harris in December 2025; NLRB has been without a quorum since May 2025. See Section 5.1 for the full two-stage analysis.
 - *Watson v. Republican National Committee* (mail ballot deadlines, federal preemption): Oral arguments March 23, 2026. Court appeared likely to preempt state grace-period laws. If decided against Mississippi, 14 states' mail ballot acceptance practices may be invalidated — a direct voting access implication for the 2026 midterms.
 
@@ -510,6 +510,58 @@ Sources: [SCOTUSblog: Trump v. Slaughter case page](https://www.scotusblog.com/c
 
 *Section 12 added: April 30, 2026*
 *Key findings: Slaughter decision pending (late June 2026); functional overruling of Humphrey's Executor accomplished through Wilcox shadow-docket + D.C. Circuit two-stage sequence; formal opinion will ratify transformation already in effect; reform advocacy 8-week window closes with Slaughter — state private rights of action and AG enforcement funding are time-critical; constitutional amendment drafting should be introduced pre-decision to enable post-decision floor action; cross-reference Domain 6 Section 7 for shadow-docket functional overruling analysis.*
+
+---
+
+## Section 13: May 2026 — Post-Callais Redistricting Emergency Application Pipeline and June–August 2026 Decision Window
+
+**Added**: May 13, 2026
+
+### 13.1 The Pipeline Structure
+
+The June–August 2026 redistricting decision window is the most active SCOTUS redistricting docket since the Voting Rights Act's 1965 passage. The Callais decision (April 29, 2026) triggered a cascade of emergency applications that will generate SCOTUS redistricting rulings through the summer months. Understanding the pipeline is essential for reform planning because each stay or denial creates both litigation precedent and practical electoral facts on the ground before any merits ruling.
+
+The pipeline operates through two procedural channels:
+
+**Channel 1 — Emergency stay applications from states**: States completing post-Callais special sessions seek SCOTUS emergency stays of district court injunctions that might otherwise block their new maps. Alabama's May 11 application (25A914) is the first completed example; it produced a 5-4 unsigned stay even though the district court had independently satisfied the Callais intentional discrimination standard. The stay was over a Sotomayor dissent that called out the factual error: the district court's intentional discrimination finding was "independent of, and unaffected by" Callais. This pattern — states seeking emergency stays to run elections under challenged maps, SCOTUS granting them on shadow docket over factual dissent — is the structure of the pipeline through November 2026.
+
+**Channel 2 — Emergency stay applications from Democratic mapmakers**: Virginia Democrats filed an emergency application asking Chief Justice Roberts to stay the Virginia Supreme Court's April 2026 ruling that blocked voter-approved redistricting maps. The Virginia application is procedurally distinct from the Alabama application — it seeks to protect maps that voters approved, not to block a court order protecting minority voters — but it arrives in the same pipeline and in the same hands (Roberts as Circuit Justice for the 4th Circuit). Virginia's urgency is driven by hard election deadlines: the Virginia elections commissioner stated that the department would need to begin ballot changes by May 12 for the August primary, with absentee ballots for military and overseas voters beginning June 18. The SCOTUS response to Virginia will define whether emergency redistricting relief is available symmetrically (for both parties' maps) or asymmetrically (only for Republican-favored outcomes). The May 11 Alabama grant, without any comparable Democratic application having been granted, represents a 1-0 asymmetric baseline.
+
+### 13.2 June–August 2026 Decision Inventory
+
+The following redistricting emergency applications and merits decisions are expected in the June–August window:
+
+**Confirmed pending as of May 13, 2026**:
+- Virginia emergency application (Democrats, seeking stay of Virginia Supreme Court ruling blocking voter-approved maps) — pending before Roberts as Circuit Justice
+- Louisiana district court challenge to new post-Callais special session maps (NAACP LDF coordinating) — expected preliminary injunction motions by May 30
+- Tennessee: Elimination of 9th Congressional District (majority-Black Memphis district) through May 5 special session — district court challenge anticipated
+- South Carolina: 6th District (Rep. Clyburn's seat) targeted in extended session — challenge anticipated
+- Mississippi: Special session scheduled May 20 — challenge to follow
+
+**Decision timeline pressure**: Maps adopted in the May 1–20 window carry preliminary injunction filing deadlines of May 31–June 20. States that adopt maps after those filing deadlines benefit from laches arguments — courts are reluctant to enjoin elections after ballots are prepared. This creates a structural incentive for states to schedule special sessions and adopt maps as late as possible within the primary calendar, reducing the judicial response window.
+
+**June 30 SCOTUS term end**: The Court's last scheduled opinion day is late June. Any redistricting emergency applications filed in June will be decided either by the end of term or by individual justices on the shadow docket over summer recess. Summer shadow docket redistricting orders — unsigned, without merits briefing, with 24-48 hour response windows — are the least accountable form of federal judicial decision-making. The Alabama May 11 stay was issued this way.
+
+### 13.3 Connection to the Post-Slaughter Institutional Landscape
+
+Callais and Slaughter are the twin rulings that define the June 2026 constitutional retrenchment. They operate on different doctrinal planes — voting rights and administrative law respectively — but their combined effect on the reform landscape is synergistic.
+
+**The parallel methodology**: Both decisions use evidentiary standard elevation to render formally intact causes of action practically unavailable. Callais converts VRA Section 2 from an effects test (provable through statistical disparity) to an intent test (requiring documentary or circumstantial evidence of racial purpose). Slaughter converts the independent agency protection doctrine from a structural form test (does the agency have quasi-legislative or quasi-judicial functions?) to a removal power test (does the officer exercise substantial executive power?) that almost any agency officer will fail. In each case, the underlying statutory or constitutional protection nominally survives while the evidentiary route to enforce it is closed. The dissents in both cases (Kagan in Slaughter; Kagan, Sotomayor, and Jackson in Callais) make this structural critique explicitly.
+
+**The state-level response architecture**: Both decisions push the institutional protection function to state-level governments:
+- Post-Callais: State voting rights acts (California, Colorado, New York, Virginia, Washington each have state-level VRA analogs providing effects-test protection) become the primary minority vote dilution remedy. State AG enforcement of these acts in state courts bypasses the SCOTUS-narrowed federal standard.
+- Post-Slaughter: State private rights of action (California AB 1456, New York S.8234) creating state-law labor enforcement rights that bypass NLRB adjudication become the primary labor protection mechanism.
+
+The reform response should therefore treat the state-level protection architecture as a unified program: state VRAs + state labor enforcement rights + state consumer protection enforcement (CFPB analogs in California, New York, Illinois AGs) constitute a distributed protection infrastructure that operates independently of both rulings' effects on federal enforcement.
+
+**The June-August advocacy window**: The 8-week advocacy window identified in Section 12 for Slaughter protective measures coincides exactly with the redistricting emergency application pipeline's peak activity. Reform organizations face a resource allocation challenge: the same June-July period requires (1) monitoring and responding to redistricting emergency applications, (2) legislating state VRA equivalents before SCOTUS's Callais-era doctrine is extended, and (3) introducing the Independent Agency Protection constitutional amendment. Managing these three concurrent tracks requires coordination across civil rights litigation organizations (for the redistricting pipeline), state legislatures (for state VRAs and labor rights), and federal legislative partners (for the amendment). The three tracks are not independent — the political narrative linking Callais and Slaughter as a coordinated constitutional retrenchment is stronger than either ruling alone, and that narrative creates the public attention window for all three legislative responses simultaneously.
+
+Sources: [Democracy Docket: SCOTUS greenlights Alabama redistricting (May 11, 2026)](https://www.democracydocket.com/news-alerts/scotus-greenlights-11th-hour-alabama-redistricting-plan-for-2026-election/); [CNN: Virginia Democrats ask US Supreme Court to let them use new congressional map (May 11, 2026)](https://www.cnn.com/2026/05/11/politics/virginia-redistricting-us-supreme-court); [Virginia Mercury: Virginia Democrats seek emergency injunction from US Supreme Court (May 11, 2026)](https://virginiamercury.com/2026/05/11/virginia-democrats-seek-emergency-injunction-from-us-supreme-court-in-redistricting-fight/); [PBS: Democrats ask Supreme Court to halt Virginia ruling blocking new congressional districts (May 11, 2026)](https://www.pbs.org/newshour/politics/democrats-ask-supreme-court-to-halt-a-virginia-ruling-blocking-new-congressional-districts); [Congress.gov CRS: Election Law and the Supreme Court in 2026 — Pending Cases on Redistricting](https://www.congress.gov/crs-product/LSB11419); [Domain 33 Section 5.6 — Callais case study and dark-money capture cycle analysis]; [Domain 49 (Callais VRA Redistricting Emergency) — per-state legal analysis and intentional discrimination evidentiary frameworks]
+
+---
+
+*Section 13 added: May 13, 2026*
+*Key findings: Post-Callais redistricting emergency application pipeline generates June–August 2026 SCOTUS redistricting decisions on shadow docket; Alabama May 11 stay establishes 1-0 asymmetric baseline favoring Republican-gerrymandered maps; Virginia emergency application tests whether relief is available symmetrically; laches deadline pressure (30-day PI filing windows from map adoption) creates structural incentive for states to adopt maps late, reducing judicial response time; Callais and Slaughter form a paired June 2026 constitutional retrenchment — state VRAs and state labor private rights of action are the unified response architecture across both rulings; June-August advocacy window requires coordination across redistricting pipeline response, state VRA legislation, and Independent Agency Protection amendment.*
 
 ---
 

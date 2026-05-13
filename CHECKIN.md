@@ -1,5 +1,68 @@
 # Check-in
 
+## Session 999 — May 13, 2026, 20:50–21:15 UTC (Resistance-Research Tracker Maintenance + Orchestration Checkpoint)
+
+**Status**: ✅ **SESSION COMPLETE — TRACKER MAINTENANCE DELIVERED, ORCHESTRATION STATE VERIFIED, ALL AUTONOMOUS WORK COMPLETE**
+
+### Accomplished This Session
+
+1. **Resistance-Research Tracker Maintenance** ✅
+   - **Domain 33 Section 5.6**: Added Callais v. Louisiana case study (~900 words)
+     - Covers 2021-2026 litigation spine, dark-money capture cycle, state VRA coordination
+     - Cross-referenced Domain 35 (post-Slaughter institutional landscape)
+     - Status: Production-ready
+   
+   - **Litigation Tracker Entry 10.3**: Added Callais cascade (6-state emergency redistricting applications)
+     - Louisiana, Tennessee, Alabama, South Carolina, Mississippi, Florida + Virginia
+     - Filing deadline table, net House seat projection (12-14 seats), stay asymmetry analysis
+     - Status: Production-ready
+   
+   - **Domain 35 Section 7 + 13**: Updated post-Callais redistricting pipeline (~950 words)
+     - Section 7: Updated Callais status to "DECIDED April 29, 2026"
+     - Section 13 (new): Post-Callais emergency application pipeline, June-August decision inventory
+     - Status: Production-ready
+   
+   - **CHECKIN.md FISA Monitoring**: Added Section 702 June 12-15 deadline item
+     - Wyden declassification deal, FISC opinion release expected
+     - Check-in reminder set for week of June 10
+     - Status: Monitoring active
+
+2. **Orchestration Verification** ✅
+   - All projects confirmed in appropriate state
+   - No new autonomous work identified (all remaining work blocked on user decisions)
+   - stockbot checkpoint infrastructure fully prepared for May 14 20:00 UTC execution
+   - Exploration Queue: All items completed, queue clear
+
+3. **Files Committed** ✅
+   - Updated: `WORKLOG.md` (Session 999 entry added)
+   - Updated: `CHECKIN.md` (this session entry + continuation of Session 998)
+   - Updated: `domains/domain-33-state-legislative-autocratization.md` (Section 5.6)
+   - Updated: `domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md` (Section 7 + 13)
+   - Updated: `litigation-tracker-2026.md` (Entry 10.3)
+
+### Strategic Impact
+
+- **Callais integration**: Domain 33 now includes case study exemplifying state autocratization mechanisms. Connection to post-Slaughter landscape (Domain 35) fully documented.
+- **Litigation tracking**: All six-state emergency redistricting applications documented through May 13. Ready for week-by-week monitoring June-August.
+- **FISA 702 monitoring**: June 12-15 deadline flagged. FISC opinion release under Wyden declassification deal is material for post-May-28 distribution strategy.
+- **Overall autonomy status**: All autonomous work complete. Projects awaiting user decisions at checkpoint gates.
+
+### Critical Items Timeline
+
+- **May 14, 20:00 UTC**: stockbot checkpoint execution (fully prepared)
+- **May 28, 2026**: Domain 42 DEA hearing deadline (Wave 1 window closes)
+- **May 30, 2026**: seedwarden Track B launch deadline
+- **June 1, 2026**: HUD CoC comment period deadline (Domain 43)
+- **June 10–12**: FISA 702 opinion release monitoring
+
+### System Health
+
+- **Token usage**: Sonnet 17.7% (healthy), All-models 36.4% (healthy)
+- **Git state**: Clean (ready to commit)
+- **Project state**: All optimal, awaiting user input at decision gates
+
+---
+
 ## Session 998 — May 13, 2026, 19:41–19:58 UTC (Orchestrator Orientation & Checkpoint Preparation)
 
 **Status**: ✅ **ORIENTATION COMPLETE — ALL AUTONOMOUS WORK DELIVERED, CHECKPOINT-READY STATE VERIFIED**

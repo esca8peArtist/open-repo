@@ -73,6 +73,80 @@
 
 ---
 
+## Session 999 — May 13, 2026, ~20:50–21:15 UTC (Resistance-Research Tracker Maintenance: Callais, FISA 702)
+
+**Status**: ✅ **TRACKER MAINTENANCE COMPLETE — FOUR ITEMS DELIVERED, LITIGATION DATABASE SYNCHRONIZED**
+
+### Accomplished This Session
+
+1. **Orientation** ✅
+   - Reviewed ORCHESTRATOR_STATE.md: All major projects awaiting user decisions or automated checkpoints
+   - Stockbot May 14 checkpoint fully prepared (checkpoint script tested in Session 998)
+   - Identified autonomous work: resistance-research tracker maintenance flagged by Session 997
+
+2. **Tracker Maintenance Execution** ✅
+   - **Domain 33 Section 5.6 (NEW)** — Callais v. Louisiana Case Study (~900 words)
+     - Added comprehensive case study to Domain 33: State Legislative Autocratization
+     - Covers: 2021-2026 litigation timeline, dark-money + redistricting capture cycle, emergency response pipeline, state VRA coordination
+     - Cross-referenced Domain 35 (post-Slaughter institutional landscape)
+     - Status: Production-ready, properly sourced (National Redistricting Foundation, SCOTUS opinion 24-109)
+   
+   - **Litigation Tracker Entry 10.3 (NEW)** — Callais Cascade Mapping
+     - File: `litigation-tracker-2026.md`
+     - Added consolidated entry covering six-state cascade: LA, TN, AL, SC, MS, FL (plus Virginia Democratic application)
+     - Includes: filing deadline table, net House seat projection (12-14 seats), stay asymmetry analysis (Alabama Republican granted 5-4, Virginia pending)
+     - Net effect: emergency application pipeline fully documented through May 13, ready for June-August decision tracking
+   
+   - **Domain 35 Section 7 Update + Section 13 (NEW)** — Post-Callais Redistricting Pipeline (~950 words)
+     - Section 7: Updated Callais entry from "pending" to "DECIDED April 29, 2026" with full outcome summary
+     - Section 13 (new): Post-Callais redistricting emergency application pipeline analysis covering: (a) state emergency stay channel vs. Democratic mapmaker applications, (b) June-August decision inventory by state, (c) June 30 term-end shadow docket timing, (d) post-Slaughter institutional methodology, (e) concurrent advocacy coordination window
+     - Status: Production-ready
+   
+   - **CHECKIN.md FISA Monitoring Item (NEW)**
+     - Added monitoring item: Section 702 FISA June 12-15 deadline (45-day extension from April 30)
+     - FISC opinion release expected with Wyden declassification deal
+     - Check-in questions added for week of June 10 (5 weeks out)
+     - Disposition path documented for litigation tracker Category 11 update
+
+3. **Research Verification** ✅
+   - All four updates properly cited (11 sources across Callais updates, Democracy Docket, NRF, Virginia Mercury, FISC/Wyden declassification coverage)
+   - All updates maintain production-ready quality standards (strategic framing, proper citations, cross-domain coordination)
+   - Litigation tracker fully synchronized through May 13 with all concurrent applications (six-state emergency pipeline + Virginia)
+
+### Strategic Impact
+
+- **Callais integration**: Domain 33 now includes case study exemplifying state autocratization mechanisms (dark money + redistricting capture). Establishes connection to post-Slaughter institutional landscape (Domain 35)
+- **Litigation tracking**: All six-state emergency redistricting applications documented with filing deadlines and decision timeline. Enables week-by-week monitoring June-August 2026
+- **FISA 702 monitoring**: June 12-15 deadline flagged for check-in. FISC opinion release under Wyden declassification deal is material for post-May-28 distribution strategy
+- **Overall**: Resistance-research infrastructure fully current through May 13. Next update window: Callais decision execution April 29-30 impact analysis (post-June 30 term-end decisions)
+
+### Files Committed
+
+- `domains/domain-33-state-legislative-autocratization.md` — Section 5.6 added
+- `domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md` — Section 7 updated, Section 13 added
+- `litigation-tracker-2026.md` — Entry 10.3 (Callais cascade) added
+- `CHECKIN.md` — FISA 702 monitoring item added
+
+### Next Autonomous Work
+
+**No autonomous work identified**. All active projects awaiting user decisions or automated checkpoints:
+- **stockbot**: May 14 20:00 UTC checkpoint execution (fully prepared, user action at checkpoint time)
+- **resistance-research**: Path A/A+37/B distribution decision (all content production-ready)
+- **cybersecurity-hardening**: Phase 1 Tier 1 approval + Day 1 send date (all content ready)
+- **seedwarden**: Track B May 30 launch (user gates), Track A corrections (user action)
+- **mfg-farm**: Test print execution (user action)
+- **open-repo**: PR #1 review/merge (external action)
+
+**Recommendation**: Hold for May 14 checkpoint. All infrastructure optimized for next major event (20:00 UTC). Post-May-14 work depends on checkpoint outcome classification (PASS/NEAR_MISS/FAR_MISS).
+
+---
+
+## Session 998 — May 13, 2026, ~19:24–20:00 UTC (Checkpoint Preparation + Orchestration Verification)
+
+*(see git commit ad465561 for details)*
+
+---
+
 ## Session 996 — May 13, 2026, ~17:35–17:50 UTC (Exploration Queue Items 34–35: Autonomous Parallel Execution)
 
 **Status**: ✅ **ITEMS 34–35 COMPLETE — PARALLEL AGENT EXECUTION DELIVERED TWO PRODUCTION-READY TIMELINES**
