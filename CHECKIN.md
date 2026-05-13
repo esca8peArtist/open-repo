@@ -1,5 +1,68 @@
 # Check-in
 
+## Session 964 — May 13, 2026 02:37–03:15 UTC (Phase 2 Domain Research + Exploration Queue Replenishment)
+
+**Status**: ✅ SESSION COMPLETE — 3 new Phase 2 domains delivered; Exploration Queue replenished
+
+### Work Completed
+
+**✅ resistance-research — 3 New Phase 2 Domains COMPLETE**
+- **Domain 48: Surveillance Capitalism & Electoral Manipulation** (5,200 words, 35+ citations)
+  - Critical finding: Commercial data brokers + government warrant-bypass + AI-generated psychographic electoral suppression now operating as single unified democratic threat
+  - ICE-Medicaid data pipeline (Palantir ELITE, ~80M Medicaid records shared with ICE via CMS data-sharing agreement) fully documented
+  - PNAS 2026 peer-reviewed study: 1.9% voter turnout suppression in real election, concentrated in racial minority battleground voters
+  - **Deadline**: June 12 FISA Section 702 renewal — distribution must reach Senate Judiciary/Intelligence by June 5
+  - Committed to master (591a8b39)
+
+- **Domain 49: Callais VRA Redistricting Emergency** (5,400 words, 40+ citations)
+  - Critical finding: Completes three-ruling VRA destruction sequence (Shelby County 2013 → Brnovich 2021 → Callais 2026)
+  - May 11 Alabama Supreme Court stay: unsigned 5-4 stay over Sotomayor dissent after district court already found intentional discrimination
+  - Five states in special sessions May 2026; litigation teams need preliminary injunctions filed immediately upon map adoption
+  - Distribution priority: Democracy Docket, NAACP LDF, Voting Rights Alliance
+  - Committed to master (591a8b39)
+
+- **Domain 50: Healthcare-Democracy Nexus (OBBBA/NVRA Enforcement)** (5,100 words, 35+ citations)
+  - Critical finding: NVRA Section 7 enforcement theory unknown to litigation community; state AGs can act immediately
+  - Medicaid enrollment offices = designated voter registration agencies under 52 U.S.C. § 20506; churn = voter registration infrastructure loss
+  - 8 states with Medicaid AVR achieve 99% conversion vs. 97.5% declination on paper forms — design fix exists and works
+  - **Deadline**: June 1 HHS interim rule (issued without notice/comment) — state AGs need enforcement theory before rule drops
+  - Committed to master (591a8b39)
+
+- **Impact**: Framework now 41+ domains (38 prior + 3 new). Domains 48-50 enable May 28 Domain 42 + June 5 Domain 48 distribution windows. Cross-reference gaps identified in Domains 1, 31, 33 (flagged for user review).
+
+**✅ Exploration Queue Replenished — 3 New Items Added**
+- **Item 31**: Seedwarden Phase 2 post-launch analytics (execution strategy, ready May 31 post-launch)
+- **Item 32**: Career-training case studies & practice scenarios (40-50 hrs, ready to start building on 33 complete modules)
+- **Item 33**: Resistance-research Phase 2 cross-reference integration (lightweight 3-4 hrs: add Callais sections to Domains 1, 31, 33)
+
+### Critical Dates
+| Date | Milestone | Status |
+|------|-----------|--------|
+| May 14 20:00 UTC | Stockbot checkpoint | T-22 hours, ready ✅ |
+| May 28 | Domain 42 DEA deadline | Tier 1 distribution must reach audiences by May 21 |
+| June 5 | Domain 48 Senate window closes | 6-week distribution window for FISA Senate Judiciary/Intelligence |
+| May 30 | Seedwarden Phase 2 launch | Awaiting user account setup gates |
+
+### Next Steps
+1. **User decision urgently needed**: Resistance-research distribution path (A / A+37 / B) — Domain 42 May 28 deadline is 15 days away
+2. **May 14 checkpoint**: Stockbot user-initiated execution at 20:00 UTC (orchestrator monitoring)
+3. **Post-checkpoint stockbot work**: Dependent on May 14 outcome (agent on standby)
+4. **Exploration Queue Item 33**: Cross-reference integration (lightweight, can start after user path decision)
+
+### Session Metrics
+- **Effort**: ~30 minutes (parallel execution)
+- **Parallel work**: resistance-research agent (3 new domains, 15.7K words, 110+ citations)
+- **Deliverables**: 3 production-ready domains + 3 new Exploration Queue items + updated PROJECTS.md
+- **Commits**: 591a8b39 (domains) + bf44aa2e (orchestration state)
+
+### User Actions Required
+1. **Resistance-research path decision** (URGENT — May 28 deadline): Choose Path A / A+37 / B; decide whether to include Domain 37 in Wave 1
+2. **Stockbot checkpoint execution** (May 14 20:00 UTC): Run checkpoint query per framework; classify outcome
+3. **Seedwarden account setup gates** (May 15-26): Create social accounts, Canva Brand Kit, Kit email account (~3.5 hours total)
+4. **mfg-farm test print** (awaiting user): Execute single test print (0.20mm, PLA+, 3 walls, 220-225°C)
+
+---
+
 ## Session 963 — May 13, 2026 02:15–02:35 UTC (Exploration Queue + Career-training Gap Modules)
 
 **Status**: ✅ SESSION COMPLETE — Exploration Queue items verified; 5 career-training modules delivered; 24,987 words of new content
