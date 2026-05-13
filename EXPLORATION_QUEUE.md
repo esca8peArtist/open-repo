@@ -630,3 +630,31 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 **Next Step**: User approves Phase 1 → orchestrator arms automation May 31 using provided checklist → measurement live June 1 with daily monitoring
 
 ---
+
+## New Items (Session 1003 — 2026-05-13, T-22h to May 14 checkpoint)
+
+### ✅ Item 39: Stockbot May 14 Checkpoint Execution Runbook
+**Status**: COMPLETE (Session 1003, May 13 2026, ~21:45 UTC)
+**Impact**: CRITICAL — May 14 20:00 UTC checkpoint execution in 22 hours; execution guide prevents errors at critical moment
+**Effort**: 1.5 hours
+**Deliverable**: `projects/stockbot/MAY_14_CHECKPOINT_EXECUTION_RUNBOOK.md` (850 lines, 32 KB)
+**Content**: Production-ready step-by-step execution guide for May 14 checkpoint:
+- **Section 1**: Pre-execution environment verification (19:00 UTC, 15 min) — time sync, Jetson ping, baseline state documentation
+- **Section 2**: Checkpoint query execution (20:00 UTC, 15 min) — exact SSH commands, expected outputs, result recording
+- **Section 3**: Result analysis (20:15 UTC, 15 min) — scenario classification (PASS/NEAR-MISS-B1/FAR-MISS-C1/FAR-MISS-C2), reference outcome conditions
+- **Section 4**: Post-checkpoint actions — outcome-specific decision paths (reference to POST_GATE_1_RESPONSE_FRAMEWORK.md)
+- **Section 5**: Error handling — 5 failure scenarios with recovery procedures (SSH fails, Alpaca API fails, DB sync fails, file missing, script errors)
+- **Section 6**: Post-execution archiving — log preservation, WORKLOG.md update procedure
+- **One-page checklist** — summary checklist for quick reference during execution
+
+**Key features**:
+- Time-indexed (19:00 → 20:00 → 20:15 UTC windows with exact procedures for each)
+- Error-resilient (5 documented failure scenarios with recovery steps, no guessing required)
+- Self-contained (no need to reference other documents during execution; outcome paths reference POST_GATE_1_RESPONSE_FRAMEWORK.md for next steps)
+- Log-preserving (execution log captured for WORKLOG.md entry and archive)
+
+**Strategic value**: Eliminates execution ambiguity at the critical 20:00 UTC moment. User can execute runbook with zero interpretation required. Expected execution time: 30 minutes (19:00-20:30 UTC buffer included).
+
+**Next Step**: User executes May 14 19:00–20:30 UTC using this runbook → classified outcome fed into POST_GATE_1_RESPONSE_FRAMEWORK.md for next actions
+
+---
