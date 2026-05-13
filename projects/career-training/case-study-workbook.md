@@ -2308,6 +2308,101 @@ Compare that to proceeding wrong: 3+ weeks of rework if deep compaction fails an
 
 ---
 
+### **Scenario 5.2: Drainage Design on a Hillside Site — Intercepting Upslope Water**
+
+**Context:**
+You're building a residential home on a hillside lot (15-degree slope) in California. The house foundation sits at elevation 150 feet; the lot extends upslope to elevation 165 feet (600 feet of slope above the house). During the rainy season, water flows downslope across the property.
+
+Your civil engineer's grading plan specifies:
+- Swales (shallow ditches) along the property line to redirect surface water
+- A perimeter drain system (4-inch drain pipe in gravel trench) at the foundation level
+- French drain (perforated pipe in gravel) under the foundation footer
+
+However, during the grading phase, you discover that 200 feet upslope, an older house has a downspout that drains directly onto your lot, and a neighbor's property upslope has no drainage system — water sheet-flows across their lot and onto yours.
+
+Your engineer says: "The plan accounts for typical site drainage. If there are abnormal water sources (neighboring properties, roof runoff from upslope), that's the owner's problem during design phase."
+
+**The problem:** If upslope water infiltrates under the house foundation, you could have:
+- Hydrostatic pressure against the foundation wall (potential failure)
+- Saturated soil around footings (reduces bearing capacity, increases settlement risk)
+- Landscape grading that doesn't shed water (muddy yard, water pooling, aesthetic issues)
+
+**Your question:**
+
+Do you:
+
+**A)** Follow the engineer's plan as specified; it's their design responsibility if water issues occur
+
+**B)** Request the owner to contact neighbors and resolve the upslope drainage issues (owner's land use problem)
+
+**C)** Request a plan modification to add additional drainage (swales upslope, larger perimeter drain, sump pump) — cost $8K–$15K, but ensures performance
+
+**D)** Install the plan as specified, but document that you identified upslope drainage concerns in writing so you're not liable if water issues occur later
+
+**What's the professionally defensible approach?**
+
+---
+
+#### **Worked Answer to Scenario 5.2**
+
+**Correct answer: C (Request plan modification to address upslope water sources)**
+
+**Why C is the best answer:**
+
+1. **The engineer's plan assumes "typical site conditions," but this site isn't typical.** The engineer didn't account for:
+   - Neighbor's roof downspout (identifiable, artificial water source)
+   - Upslope sheet flow from neighbor's unimproved property (visible, predictable)
+   - Potential groundwater (not visible but relevant in hillside areas)
+
+   These are *site-specific conditions* that the engineer should have identified during the design phase. Since you've identified them during execution, you need to get the plan revised.
+
+2. **"The owner's problem" is a liability trap.** If you build the house and water infiltrates the foundation 2 years later, the owner will claim: "The foundation was designed wrong. You knew about the upslope water and didn't design for it." The owner will sue you (the GC who built it), not the engineer (who might have errors and omissions insurance that covers design failures, but not you).
+
+   You, as the GC, are responsible for "site-ready" construction. If you knowingly build a foundation without accounting for site drainage that's visible during construction, you're liable.
+
+3. **The cost of fixing drainage now ($8K–$15K) is cheap insurance.** Compare to:
+   - Fixing a wet foundation after closing ($50K–$200K, and the owner won't pay — you'll be in litigation)
+   - Potential structural damage if water gets under footings ($500K+)
+   - Warranty claims and litigation costs ($50K–$500K)
+
+4. **The engineer's response ("that's the owner's problem") is passing the buck.** Professional engineers have a duty to design for site conditions. If the engineer didn't account for upslope water, that's their oversight, not the owner's. But you can't rely on that excuse after construction — you have to get the plan revised while you still can.
+
+**How to actually handle this:**
+
+1. **Send an email to the engineer (and CC your project manager, copy the owner's rep):**
+
+   > *"During site grading, we identified the following site drainage conditions not addressed in the current plan:*
+   >
+   > *(1) Neighbor's property upslope at elevation 165 ft has no drainage; sheet flow occurs across their lot and onto our site during heavy rain.*
+   >
+   > *(2) Neighbor's downspout at [location] discharges directly onto our graded area.*
+   >
+   > *These conditions are visible and predictable. Our current drainage plan (swales + perimeter drain) may not be sufficient to intercept upslope water. We need a plan modification to add:*
+   >
+   > *- Additional upslope swale (to intercept sheet flow before it reaches our foundation)*
+   > *- Larger perimeter drain (6-inch if current is 4-inch)*
+   > *- Sump pump and daylight drain to lower grade if needed*
+   >
+   > *Estimated cost: $8K–$15K. Please revise the grading plan to address these conditions. We'll await your updated plans before proceeding with final grading."*
+
+2. **Don't proceed with final grading until the engineer approves a modification.** If they refuse and say "the plan is adequate," *get that refusal in writing* and have the owner acknowledge it. Document that you identified the issue and the engineer chose not to address it.
+
+3. **If the engineer refuses to modify the plan, escalate to the owner:**
+
+   > *"The engineer has confirmed that the plan does not address upslope drainage. We are implementing the plan as specified per the engineer's direction. However, we recommend that the owner consider post-construction drainage improvements (sump pump, rear swale) if water issues emerge during the rainy season."*
+
+   Get this in writing to the owner so they're aware of the limitation.
+
+**Common mistakes in the field:**
+
+1. **Assuming "engineer's plan is law."** The engineer's plan is a starting point, but if site conditions change or are more complex than anticipated, the plan should be modified. Blindly following a plan you know is inadequate is professional malpractice.
+
+2. **Not documenting drainage concerns during site visit.** Take photos and videos of upslope water sources. Document the neighbor's downspout location. Have an engineer-stamped grading plan that shows where upslope water is coming from. This protects you if issues arise later.
+
+3. **Trying to "solve" drainage without engineering direction.** You can't just add a bigger drain pipe or relocate a swale without engineer approval. Every change to the plan requires the engineer's stamp. Get approval before modifying.
+
+4. **Assuming "the owner will handle it later."** Post-construction drainage fixes are 5–10× more expensive than designing for it during construction. Fix it now.
+
 ---
 
 ## Module 14: Site Safety & OSHA — Scenario
