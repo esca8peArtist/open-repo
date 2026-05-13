@@ -1,5 +1,66 @@
 # Check-in
 
+## Session 962 — May 13, 2026 06:46–07:42 UTC (Checkpoint Readiness + Phase 2 Finalization)
+
+**Status**: ✅ SESSION COMPLETE — Stockbot May 14 checkpoint verified ready; Seedwarden Phase 2 finalized; critical user actions identified
+
+### Work Completed
+
+**✅ stockbot — May 14 Checkpoint Readiness Verified**
+- **Deliverable**: `GATE_2_READINESS_CHECKLIST.md` (comprehensive pre/post-checkpoint guide)
+- **Checkpoint Status**: READY FOR EXECUTION May 14 20:00 UTC (34 hours away)
+  - Query script functional and tested
+  - Decision framework in place (POST_GATE_1_RESPONSE_FRAMEWORK.md)
+  - Infrastructure verified: Jetson healthy, DB synced, Alpaca credentials configured
+- **Gate 2 Code Status**: HMM regime scaling operational; vol scalar integrated; hmmlearn dependency must be verified on Jetson
+- **Critical Finding**: Session count ambiguity — `active-sessions.json` contains 67 sessions (not 2 as checkpoint docs describe). Will be clarified at May 14 checkpoint via `/api/ready` endpoint.
+- **Post-Checkpoint Work**: ARCH-4 cross-session concentration check needs 1-2 hours coding before Week 2 (non-blocking for Week 1)
+- **Confidence**: 8.5/10 for May 14 execution; no code defects found
+
+**✅ seedwarden — Phase 2 Finalized for May 30 Launch**
+- **Deliverables**: 
+  - `PHASE_2_LAUNCH_CHECKLIST.md` — day-of sequence, 48-hour pre-launch QA, monitoring cadence
+  - `TRACK_A_BLOCKER_RESOLUTION.md` — exact steps for tag corrections + Etsy verification
+  - `TRACK_A_CONTINGENCY_LAUNCH_PLAN.md` — fallback workflow if blockers slip
+- **Phase 2 Status**: CONDITIONAL GO (all materials ready, 3 user gates flagged)
+  - Gate 1: Create social accounts (45 min) 
+  - Gate 2: Canva Brand Kit + export assets (90 min)
+  - Gate 3: Kit email automation setup (60 min)
+  - **May 24 go/no-go checkpoint** is critical decision point
+- **Phase 3 Assets**: All 7 files verified production-ready; corrected launch timeline is June 22–July 13 (not June 15)
+- **Track A Blockers** (user actions only, ~30 min total):
+  - Tag corrections (15 min) — copy-paste text provided
+  - Etsy verification (10 min action + 1-5 day processing)
+  - **May 20 decision deadline** for Phase 1/2 coordination
+- **Confidence**: 85% for May 30 Phase 2 launch
+
+### Critical User Actions Required
+
+| Action | Timeline | Effort | Impact |
+|--------|----------|--------|--------|
+| **Stockbot May 14 checkpoint** | May 14 20:00 UTC (34h) | 10 min | Gate 2 direction |
+| **Seedwarden Track A unblock** | By May 20 | 30 min | Phase 1 co-launch decision |
+| **Seedwarden Phase 2 gates** | May 15-26 | 3.5 hours | May 30 launch readiness |
+| **Resistance-research path choice** | ASAP | — | Domain 42 deadline May 28 |
+
+### Project Status Summary
+
+| Project | Deliverable | Status | User Action | Timeline |
+|---------|-------------|--------|------------|----------|
+| **stockbot** | May 14 checkpoint | ✅ Ready | Execute query 20:00 UTC | 34 hours |
+| **seedwarden Phase 2** | May 30 launch | 🟡 Conditional | Complete 3 gates by May 24 | May 15-26 |
+| **seedwarden Phase 1** | Etsy upload | 🟡 Blocked on Track A | Tag corrections + Etsy verify | By May 20 |
+| **seedwarden Phase 3** | June 22 launch | ✅ Assets ready | No action needed | June 22–July 13 |
+| **resistance-research** | Phase 1 distribution | ✅ Ready | Path decision (A/A+37/B) | URGENT: Today |
+
+### Session Metrics
+- **Effort**: 56 minutes (parallel execution)
+- **Files created**: 3 new checkboards/guides (stockbot), 3 blocker resolution docs (seedwarden)
+- **Files updated**: 2 PROJECTS.md entries
+- **Commits**: All work committed to master
+
+---
+
 ## Session 961 — May 13, 2026 02:08–06:45 UTC (Parallel Gate 2 + Phase 1 Execution Blueprint)
 
 **Status**: ✅ SESSION COMPLETE — Critical-path work for resistance-research + stockbot delivered; two major blueprints ready for user execution
