@@ -1,10 +1,10 @@
 # Work Log
 
-## Session 988 — May 13, 2026, 12:30–13:00 UTC (Stockbot Pre-Checkpoint Infrastructure Verification)
+## Session 988 — May 13, 2026, 12:30–13:15 UTC (Stockbot Pre-Checkpoint Infrastructure Verification)
 
-**Status**: 🟢 **CHECKPOINT INFRASTRUCTURE VERIFIED** — All critical systems healthy for May 14 20:00 UTC Gate 1 checkpoint. Hardware baseline documented, database integrity confirmed, trading process running.
+**Status**: 🟢 **CHECKPOINT INFRASTRUCTURE VERIFIED & EXECUTION GUIDE CREATED** — All critical systems healthy for May 14 20:00 UTC Gate 1 checkpoint. Hardware baseline documented, database integrity confirmed, trading process running. May 14 execution guide created for user.
 
-### May 13 Pre-Checkpoint Verification Completed
+### May 13 Pre-Checkpoint Verification Completed (30 min)
 
 **Part 4 Infrastructure Checklist (10 items)**:
 1. ✅ **Thermal baseline**: 71.6°C CPU (idle) — elevated but within throttling risk threshold (<75°C). Historical throttling flags present (`throttled=0xe0000`) but not currently throttling. **Status**: YELLOW (monitor on May 14; may need passive cooling if peaks during load)
@@ -30,6 +30,21 @@
 - **Recovery action during checkpoint**: If `vcgencmd get_throttled` shows 0x4 (currently throttled), reduce session count and notify orchestrator
 
 **Next Verification**: May 14 morning (final pre-checkpoint), then continuous monitoring 13:30–20:00 UTC during checkpoint
+
+### May 14 Execution Guide Created
+
+**Deliverable**: `projects/stockbot/MAY_14_EXECUTION_GUIDE.md` (172 lines, production-ready)
+
+**Covers**:
+- Pre-checkpoint verification (5-minute morning checklist)
+- Checkpoint execution (exact command + expected output)
+- Thermal monitoring during market hours (detect throttling)
+- Post-checkpoint actions (logging, scenario classification)
+- Troubleshooting (import errors, API auth, thermal throttling)
+- Decision framework (all scenarios mapped to next steps)
+- Resource links (contingency playbook, response framework)
+
+**Status**: User can follow this guide independently on May 14 morning + evening (no orchestrator input required during checkpoint execution)
 
 ---
 

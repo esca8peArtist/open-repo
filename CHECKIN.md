@@ -1,10 +1,10 @@
 # Check-in
 
-## Since Last Check-in (Sessions 981-988, May 13, 2026, 10:20–13:00 UTC)
+## Since Last Check-in (Sessions 981-988, May 13, 2026, 10:20–13:15 UTC)
 
-**Status**: 🟢 **INFRASTRUCTURE VERIFIED FOR MAY 14 CHECKPOINT** — All critical hardware baseline metrics documented and healthy. Database integrity confirmed (53 trades, backup current). Trading process running. Thermal monitoring flagged for May 14 load testing.
+**Status**: 🟢 **INFRASTRUCTURE VERIFIED + EXECUTION GUIDE READY** — All critical hardware baseline metrics documented and healthy. Database integrity confirmed (53 trades, backup current). Trading process running. May 14 execution guide created for independent user execution. Thermal monitoring protocol documented.
 
-### Session 988 Summary — Stockbot Pre-Checkpoint Verification (30 min)
+### Session 988 Summary — Stockbot Pre-Checkpoint Verification & Execution Guide (45 min)
 
 **Verification Completed**: Part 4 Infrastructure Checklist (10 items)
 - ✅ 8/10 automated checks passed (thermal, memory, disk, API connectivity, database, process, logs, backup)
@@ -18,13 +18,36 @@
 - Database: OK (53 trades, 0 open positions)
 - Process: 1 trading process running — healthy
 
-**Thermal Alert**: CPU running warmer than expected at idle (71.6°C vs normal 35–50°C). During May 14 checkpoint (high CPU load), peak temp may approach or exceed 75°C throttling threshold. Recovery actions staged in WORKLOG.
+**Deliverables**:
+1. ✅ `jetson-infrastructure-readiness-assessment.md` — Part 4 pre-checkpoint checklist (10 items, all items documented)
+2. ✅ `MAY_14_EXECUTION_GUIDE.md` — User-facing execution guide (172 lines, covers pre/during/post-checkpoint)
+3. ✅ Infrastructure baseline metrics (CPU 71.6°C, Memory 14%, Disk 202GB free, API 200ms latency)
+4. ✅ Thermal monitoring protocol (detect throttling, recovery actions)
+
+**Thermal Alert**: CPU running warmer than expected at idle (71.6°C vs normal 35–50°C). During May 14 checkpoint (high CPU load), peak temp may approach or exceed 75°C throttling threshold. Recovery actions documented in WORKLOG and execution guide.
 
 **Action for May 14**:
-1. Morning: Final thermal/memory/network baseline check
-2. 13:15 UTC: Confirm checkpoint script ready (`may14_checkpoint_query_alpaca.py`)
-3. 20:00 UTC: User executes checkpoint (documented in `MAY_14_EXECUTION_GUIDE.md`)
-4. **During 13:30–20:00 UTC**: Monitor thermal every 30 min; if `vcgencmd get_throttled` shows 0x4 (currently throttled), reduce ticker count 11→6
+1. **Morning (before 13:30 UTC)**: Run 5-min pre-checkpoint checklist from `MAY_14_EXECUTION_GUIDE.md`
+2. **13:30–20:00 UTC**: Monitor thermal every 30 min (use command in guide); if `vcgencmd get_throttled` shows 0x4 (currently throttled), reduce ticker count 11→6
+3. **20:00 UTC**: Execute checkpoint command documented in guide (`uv run python scripts/may14_checkpoint_query_alpaca.py`)
+4. **20:15 UTC**: Log results and follow scenario decision framework (all scenarios pre-analyzed in `gate-1-contingency-playbook.md`)
+
+---
+
+## Needs Your Input (for Next Session)
+
+### May 14 Decisions (Imminent)
+1. **Resistance-research Phase 1 distribution path**: Choose A (immediate 22 domains) / A+37 (add 12 election protection orgs) / B (continue optional updates). **Recommended**: A+37. **Timeline**: User decision triggers 3.5–4 hour execution window to Batch 1 send (can launch May 14 or May 15).
+2. **Domain 42 Wave 1 emails**: 5 pre-drafted emails ready to send to drug policy organizations (DPA, NORML, ACLU, Sentencing Project, LEAP). Deadline for May 28 DEA hearing participation notice: May 28 (15 days away). Can send today (May 13) or tomorrow (May 14).
+
+### Post-Checkpoint (May 14, after 20:00 UTC)
+- **Checkpoint result logging**: Document scenario classification in CHECKIN for orchestrator
+- **Next checkpoint schedule**: Depends on May 14 scenario outcome (PASS / NEAR-MISS / FAR-MISS)
+
+### Ongoing Blockers (awaiting user action)
+1. **mfg-farm**: Test print execution (physical action required; all pre-print deliverables complete; Etsy listing ready post-print)
+2. **cybersecurity-hardening Phase 1**: User approval + Day 1 send date (all materials staged and ready)
+3. **seedwarden Track A**: 2 minor tag corrections + Etsy account verification (15 min + 1-5 day Etsy processing)
 
 ---
 
