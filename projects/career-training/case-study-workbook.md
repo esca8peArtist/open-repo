@@ -1745,6 +1745,235 @@ You're the mechanical contractor for a process piping tie-in at a refinery with 
 
 ---
 
+### **Scenario 9.3: Title 24 Energy Compliance and HERS Testing Timeline**
+
+**Context:**
+You're building a 3,500-SF residential custom home in California. The home requires compliance with Title 24 Energy Standards (California Building Energy Efficiency Standards). The requirements include:
+- Insulation R-values (R-38 attic minimum, R-21 walls)
+- HVAC efficiency (SEER 15 minimum for cooling)
+- Water heater efficiency (0.80+ uniform energy factor)
+- Solar PV (3.2 kW minimum, per new 2023 Title 24 update)
+- Duct sealing (no more than 15% leakage)
+
+**Your schedule timeline (18-week build):**
+- **Week 1-3**: Framing (walls, roof)
+- **Week 4-5**: Insulation and air sealing
+- **Week 6-10**: Mechanical & electrical rough-in
+- **Week 11-12**: Mechanical & electrical final connections
+- **Week 13-15**: HVAC & water heater installation, duct sealing, solar installation
+- **Week 16-17**: Final inspections
+- **Week 18**: Certificate of Occupancy
+
+**The compliance catch:** Before you can pull a Certificate of Occupancy (CO), you must pass a HERS (Home Energy Rating System) final inspection and test. The HERS rater must:
+- Test duct sealing (blower door test) to confirm <15% leakage
+- Verify insulation R-values (spot checks)
+- Test air sealing quality
+- Document all mechanical equipment specifications
+
+**The problem:** HERS testing must happen *after* mechanical is complete but *before* final inspection. If your HERS test fails (ducts show 18% leakage, for example), you must re-seal and re-test, adding 1-2 weeks to the schedule.
+
+**Your question:**
+
+When should you schedule the initial HERS testing?
+
+**A)** Week 12 (end of mechanical rough-in): Test early to identify issues, allow time for rework
+
+**B)** Week 14 (after mechanical final connections but before drywall): All systems are installed and accessible
+
+**C)** Week 15 (after duct sealing and HVAC commissioning): Test final installed system, no rework needed if it passes
+
+**D)** Week 16 (just before final inspection): Final test confirms all work is complete; minimizes time spent on potential rework
+
+**What's the risk/benefit of each timing?**
+
+---
+
+#### **Worked Answer to Scenario 9.3**
+
+**Correct answer: A or B (Test at end of rough-in to allow rework time)**
+
+**Why A/B is better than C or D:**
+
+1. **Title 24 compliance is not optional.** Unlike some building code items that can be deferred to the end, Title 24 is verified as a condition of the CO. No HERS certification = no CO. The city building department will not issue a CO without it, full stop.
+
+2. **Duct sealing failures are common.** Industry data shows that ~40% of first-time duct sealing tests fail on custom homes. Failures are typically due to:
+   - Undersized ducts (demand more sealing tape than you initially applied)
+   - Unsealed connections at the HVAC unit or transitions
+   - Flexduct damage during installation (holes or tears)
+   - Unsealed return air plenum
+
+3. **If you test at week 14 (after rough-in, before drywall), you have visibility and time.** The ductwork is exposed. If you find 18% leakage (you're 3% over the Title 24 limit), you can:
+   - Visually inspect the ducts (they're not yet enclosed in walls)
+   - Locate and seal gaps with additional tape or duct mastic
+   - Re-test within 2–3 days
+   - Still complete the schedule
+
+4. **If you test at week 15 (after duct sealing) or week 16 (final), you have zero time.** If the test fails at week 15, you need to:
+   - Locate the leaking duct sections (they may be already covered)
+   - Open drywall if necessary to access ducts
+   - Re-seal and re-test
+   - This adds 2–4 weeks, blows the schedule, and costs $15K–$30K in rework
+
+**Why C and D are risky:**
+
+- **Option C (Week 15):** You're testing after you think everything is done, which means you have zero buffer. Also, you've already paid for drywall, painting, and trim. If you need to re-seal ducts, you're cutting into drywall and re-finishing it. Cost and schedule impact are maximized.
+
+- **Option D (Week 16):** This is the worst option. You're at final inspection, and if the test fails, you're holding up the entire project. The buyer is expecting a CO. The city is expecting final sign-off. A failed HERS test at week 16 is a catastrophe.
+
+**What you should actually do:**
+
+1. **Schedule HERS testing at the end of mechanical rough-in (week 4–5),** right after the mechanical contractor completes ductwork installation but before drywall closure. This is sometimes called "pre-drywall HERS inspection."
+
+2. **Hire the HERS rater early** (week 1 or 2, before framing). Provide them your plans so they can:
+   - Identify potential problem areas
+   - Brief the mechanical contractor on Title 24 requirements
+   - Schedule their inspection in advance (HERS raters are often booked weeks out)
+
+3. **Conduct a pre-test walkthrough with the HERS rater and mechanical contractor.** Walk the ductwork, identify any obvious gaps, and make minor seals *before* the formal test. This is not the official test, just a preliminary check.
+
+4. **Schedule the formal duct sealing test for week 5 (after rough-in, before drywall).** Cost is ~$600–$800. If it fails, you have 2 weeks (weeks 6–7) to locate and re-seal ducts while they're exposed. Re-testing costs another $600–$800.
+
+5. **Schedule the final HERS inspection/certification for week 16,** just before final inspection. By this time, you've already passed the duct test, so this inspection is primarily verification of insulation R-values, water heater specs, and solar PV installation documentation.
+
+6. **Document all HERS milestones in your schedule** and communicate them to the owner and building department:
+   - Pre-drywall duct sealing test: Week 5
+   - Final HERS certification: Week 16
+   - Expected CO date: Week 18
+
+**Common mistakes in the field:**
+
+1. **Waiting until final inspection to engage the HERS rater.** HERS raters are often booked 4–6 weeks out. If you call them in week 14 requesting a week-16 inspection, they may not be available. Engage early.
+
+2. **Not informing the mechanical contractor about Title 24 duct sealing requirements.** Many mechanical contractors bid ductwork based on standard practice (unsealed flex ducts), not Title 24 (sealed with tape and mastic). If you don't brief them, they'll install standard ductwork, fail the test, and then you're arguing about who pays for re-sealing.
+
+3. **Assuming a single HERS test is sufficient.** If the first test fails, you need a second test. If that fails, a third. Budget 2–3 tests into your schedule, not just 1. Each test costs $600–$800, but the schedule impact of a failed test at week 16 is $30K+.
+
+4. **Not understanding that insulation R-values are spot-checked, not tested.** The HERS rater can't cut into every wall cavity to measure R-values. They spot-check a few locations and verify material documentation (receipts for insulation, photos). Make sure your insulation contractor provides documentation of R-value material installed.
+
+---
+
+### **Scenario 9.4: Permit Process and Contractor Inspections — Who Coordinates?**
+
+**Context:**
+You're the GC for a $2.8M residential remodel in a California city. The scope includes:
+- Foundation reinforcement (seismic retrofit)
+- Structural walls relocated (engineering)
+- Full mechanical, electrical, plumbing (MEP) replacement
+- Exterior façade replacement
+- Interior remodel (drywall, flooring, finishes)
+
+**Permit and inspection requirements (typical California city):**
+- **Building Permit** (foundation, structural, seismic, interior): Requires architect-stamped plans, structural engineer approval
+- **Mechanical Permit** (HVAC system): Separate permit, requires mechanical contractor's HVAC design
+- **Electrical Permit** (service upgrade, new circuits): Separate permit, requires one-line diagram and load calculation
+- **Plumbing Permit** (pipe routing, water heater, fixtures): Separate permit, requires plumbing design plan
+
+**Inspections required for each permit:**
+- Building Permit: Slab/foundation (before concrete pour), framing (before drywall), drywall (before finishes), final (at CO)
+- Mechanical Permit: HVAC equipment installation, ductwork (before closure), final (operation test)
+- Electrical Permit: Equipment installation, final (load test)
+- Plumbing Permit: Rough-in (before walls), final (pressure test)
+
+**Current situation (week 6 of 18-week project):**
+- Permits are approved for building and mechanical
+- Electrical and plumbing permits are still "in review" (city says "engineer reviewing, 2 weeks")
+- Your crew is scheduled to begin electrical rough-in and plumbing rough-in in 2 weeks (week 8)
+- If you start electrical/plumbing rough-in before permits are approved, you risk city shutdown of work (stop-work order)
+
+**The question:**
+
+Who is responsible for coordinating permit approvals and scheduling inspections?
+
+**A)** You (the GC) are responsible; you must obtain all permits, schedule inspections, and coordinate with the city building department
+
+**B)** Your subs (mechanical, electrical, plumbing) are responsible; they obtained their own permits for their respective scopes
+
+**C)** The building department is responsible; they control the permit timeline and inspection schedule
+
+**D)** Shared responsibility: You coordinate the master schedule, but the subs coordinate their individual permits
+
+**What's the safest approach, and why?**
+
+---
+
+#### **Worked Answer to Scenario 9.4**
+
+**Correct answer: A (You, the GC, are responsible for master permit coordination)**
+
+**Why A is the only defensible answer:**
+
+1. **The GC holds the master building permit.** In California (and most states), the property owner or their GC holds the primary building permit, which covers the entire project scope. Specialty permits (mechanical, electrical, plumbing) are *subordinate* to the master permit — they must be issued within the master permit's authority.
+
+2. **You, as the GC, are the single point of contact with the city.** The city building official doesn't want to coordinate with 5 different subs' permit representatives. They want *one person* — the GC — who is accountable for all permits, inspections, and code compliance across all trades.
+
+3. **The timeline impact is on you.** If electrical and plumbing permits don't arrive until week 10, but you scheduled electrical/plumbing rough-in for week 8, that's *your* schedule delay, not the subs'. You can't fault the subs for the city's review timeline. You have to manage the schedule risk.
+
+4. **Stop-work orders are issued to the GC, not the subs.** If the city discovers work is underway without a valid permit, they issue a stop-work order to the property and the GC. Your subs will leave the site, and you're responsible for the delay.
+
+**Why the other answers are wrong:**
+
+- **Option B (Subs are responsible):** Subs can help *prepare* their portion of the permit application, but they can't be responsible for permit approval. The sub doesn't have authority to negotiate with the city or respond to city requests for missing information. The GC does.
+
+- **Option C (City is responsible):** The city controls the *review timeline*, but you control the *project planning*. If you know electrical permits take 4 weeks to review, you should plan accordingly. Blaming the city for being slow doesn't change your project schedule.
+
+- **Option D (Shared, with subs handling their own):** This splits responsibility and creates gaps. Sub A is waiting for Sub B's permit information. You don't find out about the delay until Sub A's work is blocked. By then, it's too late to adjust the schedule.
+
+**What you should actually do:**
+
+1. **Create a master permit and inspection schedule** (week 1 of the project):
+   - Building Permit approval target: Week 2
+   - Mechanical Permit approval target: Week 3
+   - Electrical Permit approval target: Week 4
+   - Plumbing Permit approval target: Week 4
+   - First inspection (slab): Week 5
+   - Mechanical rough-in inspection: Week 8
+   - Electrical rough-in inspection: Week 9
+   - Plumbing rough-in inspection: Week 9
+   - Framing inspection: Week 11
+   - Electrical final: Week 16
+   - Plumbing final: Week 16
+   - Building final/CO: Week 18
+
+2. **Assign a permit coordinator** (could be you, or a dedicated permit expediter if the project is large):
+   - Track the status of each permit daily
+   - Respond to city requests for missing information *within 24 hours*
+   - Schedule inspections *before* work begins (don't wait for the inspector to be available)
+   - Maintain a calendar reminder of all inspection due dates
+
+3. **Require subs to provide their portion of the permit application on time:**
+   - Mechanical sub provides HVAC design plan by week 1
+   - Electrical sub provides one-line diagram and load calc by week 1
+   - Plumbing sub provides pipe routing plan by week 1
+   - *You* collect these, assemble them into the complete permit application, and submit to the city
+
+4. **Hold a kick-off meeting with all subs (week 1) where you review the permit/inspection schedule:**
+
+   > *"Here's the master schedule. Electrical permits will be approved by week 4. We cannot start electrical rough-in until we have the permit. If the city delays the permit, we'll adjust the schedule — but you don't start work before the permit is approved. Questions?"*
+
+5. **If permits slip (example: electrical permit not approved until week 6 instead of week 4), you have to adjust the field schedule immediately:**
+   - Accelerate other work (drywall, mechanical rough-in) to fill the gap
+   - Or delay electrical rough-in to week 10
+   - Either way, you notify the owner and revise the schedule
+
+6. **Track inspections the same way:**
+   - Week 5: Schedule slab inspection for day 3 of concrete pour (not the day after)
+   - Week 8: Schedule mechanical rough-in inspection before ductwork closure (and confirm the inspector will arrive)
+   - If the inspector doesn't show up, call the building department immediately and request a rescheduled date
+
+**Common mistakes in the field:**
+
+1. **Assuming the subs will coordinate permits.** Many GCs tell the mechanical sub "go get your permit" and assume it happens. The sub delays, the GC doesn't find out until week 7, and then there's a scramble.
+
+2. **Not submitting permits early enough.** City review times are 2–4 weeks. If you submit permits in week 3 thinking they'll be approved by week 4, you're optimistic. Submit in week 1 so they're approved by week 3.
+
+3. **Not responding quickly to city requests for information.** The city asks for a structural engineer's certification on week 4. You're slow to respond. The city stalls the permit review. By week 6, the permit still isn't approved. You blame the city's slow review, but you caused the delay by not responding fast enough.
+
+4. **Scheduling work before the permit is approved.** This is the worst mistake. You think "the permit will be approved by week 8, so I'll schedule rough-in for week 8." If the permit slips to week 9, you're starting work without a permit. Stop-work order, shutdown, fines.
+
+5. **Not having a contingency plan if permits slip.** Know *ahead of time* what you'll do if electrical is delayed. Will you accelerate framing? Will you shift the schedule by 2 weeks? Will you bring in additional crews to make up time elsewhere? Plan this before permits slip.
+
+---
+
 ## Module Summary: Cross-Module Lessons
 
 ### **The Three-Lever Problem-Solving Framework**
