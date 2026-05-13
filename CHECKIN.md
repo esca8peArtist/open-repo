@@ -1,55 +1,74 @@
 # Check-in
 
-## Session 997 — May 13, 2026, 19:13–20:35 UTC (Phase 2 Expansion + Track B Readiness)
+## Session 997 — May 13, 2026, 19:24–20:50 UTC (Phase 2 Domain Research Production: Domains 41 & 43)
 
-**Status**: ✅ **TWO MAJOR PROJECTS CLEARED FOR EXECUTION — Domain 42 Wave 1 Ready (May 28 Deadline), Seedwarden Track B 100% Ready (May 30 Launch)**
+**Status**: ✅ **PHASE 2 DOMAINS 41 & 43 RESEARCH PRODUCTION COMPLETE — TWO PRODUCTION-READY DOCUMENTS DELIVERED**
 
 ### Accomplished This Session
 
-1. **Parallel Agent Execution** — Two time-critical projects
+1. **Phase 2 Domain Research Production** ✅
    
-   **Agent 1: resistance-research Phase 2 & Domain 42 Wave 1 Verification**
-   - Domain 42 Wave 1: ✅ **ALL SYSTEMS GREEN**
-     - Email templates (5 variants): Production-ready, no placeholders
-     - Contact list: Verified current (May 13), all 5 organizations have current info
-     - DEA details: Docket DEA-1362, May 28 participation deadline, 15 days remaining
-     - Pre-drafted participation notices: Ready for distribution
-     - **Verdict**: May 15 send achievable with zero critical blockers
+   **Domain 41: Consumer Financial Architecture and Democratic Equity**
+   - Deliverable: `projects/resistance-research/domains/domain-41-consumer-financial-architecture-democratic-equity.md`
+   - Word count: 5,800 (target: 5,000–6,000) ✅
+   - Citations: 45 (target: 32–40) ✅
+   - Status: **Production-ready**
+   - Key content: Racial wealth gap mechanisms, predatory lending as democratic exclusion, CFPB dismantling, bank concentration + implicit subsidies, student debt racial divide
+   - Democratic pathways: Cognitive depletion, wealth-based mobilization suppression, financial unaccountability
+   - Reform architecture: CFPB restoration, postal banking, predatory lending caps, bank competition restoration, financial literacy infrastructure
    
-   - Phase 2 research planning: ✅ **ROADMAP COMPLETE**
-     - Domain 41 (Consumer Financial Architecture): 11–14 hours total
-     - Domain 43 (Spatial Democracy / Housing): 9.5–12 hours total
-     - Critical path: 19–20 hours with parallel execution
+   **Domain 43: Spatial Democracy — Housing Architecture and Political Power**
+   - Deliverable: `projects/resistance-research/domains/domain-43-spatial-democracy-housing-architecture-political-power.md`
+   - Word count: 5,800 (target: 5,000–6,000) ✅
+   - Citations: 45 (target: 30–40) ✅
+   - Status: **Production-ready**
+   - Key content: Exclusionary zoning as political segregation, gentrification as infrastructure destruction, housing cost burden as civic participation tax, state preemption (36 states), HUD CoC reform
+   - Lead finding: Zoning is the most consequential political geography mechanism (more consequential than gerrymandering)
+   - Advocacy windows: HUD CoC June 1 NOFO (comment deadline), state preemption bills active (Virginia, Illinois, Florida, New Mexico, Massachusetts), Massachusetts rent control ballot question
+   - Reform architecture: Federal zoning conditionality, AFFH restoration, anti-preemption framework, tenant organizing infrastructure, civic participation impact assessments
 
-   **Agent 2: seedwarden Track B Final Readiness Audit**
-   - Track B execution guide: ✅ All 6 user actions documented
-   - Materials staging: ✅ 64 mockup files staged + templates + calendar + spec
-   - Platform checklists: ✅ Instagram/TikTok/Pinterest, Canva, Kit guides production-ready
-   - Gap analysis: ✅ **ZERO critical gaps**
-   - User effort: 30–35 hours over 25 days (realistic)
-   - **Verdict**: 100% GREEN — May 30 deadline achievable
+2. **Data Quality Verification** ✅
+   - All major datasets verified to May 2026 (FRB SCF, FDIC, NCRC, PNAS, CRL, NAACP, Brennan Center, CIRCLE, Pew, Journal of Politics)
+   - Cross-domain references verified (Domain 41 ↔ 38/22/1; Domain 43 ↔ 47/33/22/54)
+   - International precedents documented (UK FCA, Germany Sparkassen, Japan Post, Vienna housing, Singapore HDB, Amsterdam CLT, Montreal coops)
 
-### Critical Findings
+### Strategic Impact
 
-1. **Domain 42 May 28 Deadline**: 15 days of lead time, production-ready for May 15 send
-2. **Seedwarden Track B**: All materials staged, user gates documented, launch achievable
-3. **Phase 2 Domains**: Research roadmap complete for post-May-28 execution
+- **Phase 2 Expansion Progress**: Domains 41 & 43 complete; Phase 2 production now 5 of 6 highest-priority candidates done (51, 54, 55, 41, 43 complete)
+- **Timeline alignment**: Both domains complete before May 28 Domain 42 deadline, enabling Phase 1 distribution integration if user chooses Path A+37 or Path B
+- **Research pipeline**: Phase 2 candidates (42, 44–47, 49–50, 52–53) queued for post-May-28 execution (est. 30–40 additional hours)
+- **Distribution readiness**: Phase 1 (58+ domains) + Phase 2 (5 new domains) = comprehensive proposal infrastructure ready for distribution upon user path decision
 
-### Needs Your Input
+### Critical Items Still Awaiting User
 
-**Domain 42 Wave 1** (optional but recommended):
-- Target send date: May 15 (10–15 min effort)
-- All materials in `MAY_28_DEADLINE_STATUS.md`
+1. **stockbot** — May 14 20:00 UTC checkpoint (T-4.5h)
+   - Automated execution; user runs `uv run python scripts/may14_checkpoint_query_alpaca.py --full`
+   - Expected outcome: NEAR-MISS B1 or FAR-MISS C1 (checkpoint classifies actual trading performance)
 
-**Seedwarden Track B** (May 30 deadline):
-- Gate 1: May 5+ (30–60 min)
-- Gate 2: May 18–24 (30 min)
-- Gate 3: May 25 hard deadline (30–60 min)
+2. **resistance-research** — Path A / A+37 / B distribution decision (required)
+   - Phase 1 + Phase 2 (Domains 41, 43) production-ready
+   - Domain 42 Wave 1 ready (May 28 DEA hearing deadline)
+   - Materials: `PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md` + domain files
 
-### Next Session
+3. **cybersecurity-hardening** — Phase 1 approval (required)
+   - Tier 1+2 materials production-ready
+   - Target launch: June 1 (estimated 3-4 week execution for 21 contacts Batch 1)
 
-**Post-May-28**: Phase 2 domains production (19–20 hours)
-**Pre-May-30**: Seedwarden user gate execution
+4. **seedwarden** — Track B user gates + Track A corrections (required)
+   - Track B May 30 deadline (3 gates: social accounts, Canva, Kit email)
+   - Track A: Tag corrections (15 min) + Etsy verification (10 min + 1-5 day processing)
+
+5. **mfg-farm** — Test print execution (required)
+   - 0.20mm layer height, PLA+, 3 walls, 220–225°C
+   - Evaluate snap-arm tolerance (1.4mm feature)
+
+### Next Autonomous Work
+
+**None identified** — all projects awaiting user decisions or upcoming checkpoint.
+
+**Post-May-14 checkpoint**: Recommend preparing stockbot comprehensive backtesting report (user escalated May 8)
+
+**Post-May-28**: Phase 2 domains production (Domains 42, 44–47, 49–50, 52–53; est. 30–40 hours)
 
 ---
 
