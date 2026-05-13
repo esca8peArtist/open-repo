@@ -4,6 +4,30 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 2 Social Growth Strategy — Full Rebuild — 2026-05-13
+
+**Task**: Full rebuild of Phase 2 social media growth strategy for May 30 launch. Previous version hit a connection error mid-session; this session produced the complete document.
+
+**Files updated**:
+- `projects/seedwarden/PHASE_2_SOCIAL_GROWTH_STRATEGY.md` — ~2,800-word production-ready strategy. Sections: Executive Summary (with Phase 1 baseline cross-reference), Competitive Landscape Analysis (12 creator/seller benchmarks with follower ranges, engagement rates, post frequency), Cohort 1–4 deep-dives (platform rationale, content pillars, observable success signals, hashtag strategy, influencer tables, paid campaign framework, organic mechanics), Hashtag Strategy Summary Per Platform, Micro-Influencer Outreach consolidated 20-contact list with outreach template, Paid Ad Framework with budget allocation table, Organic Growth Mechanics, LTV and CAC projections table, Phase 2 Launch Execution Checklist (Pre-Launch / Launch Week / Weeks 2–4), and full Sources section.
+- `projects/seedwarden/COHORT_ACQUISITION_MATRIX.csv` — 19-row matrix (4 cohorts × 5 platforms) with fields: Cohort, Platform, Primary Reference Account, Follower Range, Engagement Rate Benchmark, Post Frequency, CTR Projection, LTV Projection ($), Budget/Day, 30-Day Reach Target, Start Date, Observable Signal (Success), Kill Trigger, and Notes.
+
+**Research conducted**:
+- Competitive benchmarks: 12 creator/seller accounts analyzed — Grow Forage Cook Ferment (148K Instagram), Alexis Nikole Nelson (4M TikTok, 1.8M Instagram), Finders Feeders (23K), @graybeardedgreenberet (36K), @buckskin_revolution (40K), @justinrhodesshow (93.9K TikTok), @shayeelliott (85K), @naturvival (28K), @outdoorapothecary (35K–45K), @michelles_farmstead (35.6K), @thetravelingfarmacy (48.6K), @chaoticforager (30K–60K est.).
+- Platform metrics confirmed: TikTok brand follower growth +200% YoY 2025; Instagram organic reach -40%; Reels reach rate 30.81%; TikTok micro-creator engagement 7–10% for forager/educational niche; Pinterest CPM $2–5; TikTok CPC $0.50–1.50; Instagram CPC $3–5.
+- Phase 1 baseline woven in: $1,341 revenue / 47 orders / $28.53 AOV / 2.24% conversion. Zero social-sourced orders. Used to calibrate CAC:LTV ratios and 30-day revenue projection ($3,500–$4,500 target).
+- Influencer compensation benchmarks: micro Instagram 50K @ 3% engagement ~$500/post; mid-tier TikTok 200K @ 6% ~$1,200/video. All Phase 2 outreach is gifted-product + affiliate code only.
+- Observable signal framework added per cohort (not in prior version) — specific, measurable signals that distinguish "working" from "needs adjustment" before paid activation.
+
+**Key decisions**:
+- 20-contact influencer outreach list finalized across all 4 cohorts with platform, handle, follower range, and guide offer mapped.
+- Kill triggers standardized: CPC >$1.50 (Pinterest), >$1.20 (Instagram), <1% click-to-purchase after 7 days.
+- Start date sequencing: Gift Buyer Pinterest May 25 → Homesteader Instagram June 6 → Forager TikTok Promote June 13 → Prepper Instagram June 20 (conditional on 10+ reviews).
+
+**Sources**: ALM Corp (TikTok/Instagram 2025 growth data), Emplicit (TikTok engagement benchmarks 2025), Statusphere + InfluenceFlow (micro-influencer 2025–2026), Outfy (Pinterest algorithm 2026), SQ Magazine (Pinterest statistics 2026), Stackmatix (TikTok vs Instagram ads 2026), Thunderbit (Etsy statistics 2026), Galloway Wild Foods (foraging + social media), TIME (Alexis Nikole Nelson 2025), The Tilt (Black Forager business model), Feedspot (farming TikTok influencers 2026), Influencer Hero (wilderness survival influencers), IZEA (homesteading influencers), WAB Marketplace (Etsy gift selling 2025), Etsy Seller Handbook (Spring/Summer 2026 trends).
+
+---
+
 ## Track B May 30 Launch Readiness Checklist — 2026-05-13
 
 **Task**: Produce a final comprehensive May 30 launch readiness checklist for Track B (native plant guides for foragers, preppers, homesteaders). Binary pass/fail on every item.
