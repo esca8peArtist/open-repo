@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 960: 38+ domains production-ready (Phase 1+2 COMPLETE, trackers current May 13). User decision needed: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — Tier 1 distribution must reach audiences before May 21 to allow May 28 comment deadline compliance. All materials production-ready; awaiting path decision.
+**Current focus**: Session 964: 41+ domains production-ready (Phase 1+2 COMPLETE, Domains 48-50 just completed Session 964). **Three new Phase 2 domains added**: Domain 48 (Surveillance Capitalism & Electoral Manipulation, June 12 FISA deadline), Domain 49 (Callais VRA Redistricting Emergency, five states in special sessions May 2026), Domain 50 (Healthcare-Democracy Nexus, June 1 HHS rule deadline). User decision needed: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — Tier 1 distribution must reach audiences before May 21. Domain 48 June 5 critical deadline (6-week distribution window for Senate Intelligence/Judiciary). All materials production-ready; awaiting path decision. Cross-reference integration pending (lightweight: Domains 1, 31, 33 need Callais/NVRA updates; litigation tracker needs Callais entry).
 
 
 **Session 876 Deliverables**:
@@ -1037,11 +1037,20 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 - **cybersecurity-hardening: Phase 2 Tier-Specific Threat Briefings** (estimated 3–4 hrs, no prerequisites) — Scope: Extend May 2026 threat landscape into Tier 2 distribution templates. Review PHASE_2_SEQUENCING.md, identify sector-specific threat escalations (journalists: ICE Paragon Graphite + DOJ subpoena reversal; academics: DOJ prosecution expansion + state AG coordination; organizers: FBI FACE Services + DHS Mobile Fortify aerial surveillance; lawyers: subpoena infrastructure + bar discipline weaponization). Create sector-specific threat briefings (2–3 per sector, 500–800 words each, graphics-ready). Outcome: Tier 2 launch immediately post-Tier-1 with threat model current and sector-personalized. Deliverables: 5–6 threat briefing PDFs (immigration lawyers, educators, journalists, union organizers, faith leaders). Business value: Tier 2 adoption highest when threats are sector-specific and dated within 30 days; prevents "generic threat model" perception.
 
+**NEW ITEMS (Session 964 — 2026-05-13, queue refresh — 0 active → 3 items)**:
+
+- **seedwarden: Phase 2 post-launch analytics optimization (May 31, after Phase 2 launch May 30)** (estimated 3–4 hrs) — Prerequisite: Phase 2 launch May 30. Scope: Implement PHASE_2_POST_LAUNCH_ANALYTICS_FRAMEWORK.md live (Etsy API integration, GA4 zone tracking, cohort segmentation by buyer profile: Forager/Prepper/Homesteader/Gift). Design dashboards (daily: 10 min revenue + cohort mix check; weekly: 30 min LTV by segment + acquisition cost analysis; monthly: 2-hour strategic review for Phase 3 gate decisions). Create decision triggers (when to pivot marketing, when to increase inventory, when to launch Phase 3). Outcome: Analytics execution guide + Sheets/Data Studio templates + 30/60/90-day KPI dashboard. Business value: Phase 2 launch has immediate measurement + data-driven Phase 3 decisions (not emotional, not calendar-driven).
+
+- **career-training: Case studies & practice scenarios (40-50 hrs, ready to start)** (estimated 4–5 hrs per module × 8-10 modules) — Prerequisite: none (Modules 1-33 complete; next phase is applied exercises). Scope: (1) Write 3-4 realistic scenario problems per module (e.g. "You're bidding a $4M industrial mechanical scope — walk through the bond, contract type, and risk allocation decisions"). (2) Provide worked answers with common mistakes flagged. (3) Prioritise highest-leverage modules (01 contracts/estimating, 03 PM/scheduling, 09 California codes, 11 subcontractor management, 13 safety compliance). Outcome: `case-study-workbook.md` (consolidated) or per-module `practice-scenarios.md` files. Business value: Builds confidence in real-world application; enables hands-on learning beyond reference modules.
+
+- **resistance-research: Phase 2 cross-reference integration (lightweight, ~3 hrs)** (estimated 2–3 hrs, no prerequisites) — Scope: Domains 48-50 (just completed) identify cross-reference gaps in existing domains: (1) Domain 1 (Electoral Reform) needs Callais Section + updated VRA timeline; (2) Domain 31 (Healthcare Access) needs NVRA enforcement angle reference to Domain 50; (3) Domain 33 (State Autocratization) needs Callais subsection (~400 words). (4) Litigation tracker (existing doc) needs Callais as Category 1 entry with Alabama May 11 stay. Research: minimal (read new domains + edit existing). Outcome: 4 amended documents with cross-reference integrations + updated litigation tracker. Business value: Maintains framework coherence as Phase 2 domains expand; prevents knowledge silos; enables institutions to navigate across domains by theme/timeline.
+
 **Top-priority projects status**: 
-- resistance-research: Awaiting user distribution path decision (A / A+37 / B)
-- stockbot: Awaiting user architecture review (ARCH-1–7 decisions)
+- resistance-research: Awaiting user distribution path decision (A / A+37 / B); 3 new Phase 2 domains (48-50) completed and ready for integration
+- stockbot: Awaiting user architecture review (ARCH-1–7 decisions); May 14 20:00 UTC checkpoint T-22h
 - mfg-farm: Awaiting physical test print execution
 - seedwarden Track A: Awaiting tag corrections
+- career-training: 33 modules complete; case studies/scenarios ready for development
 
 **NEW ITEMS (Session 819 — 2026-05-06, autonomous prep queue)**:
 

@@ -34769,3 +34769,54 @@ All 5 active projects remain blocked on user actions:
 - **Effort**: 5 minutes
 - **Changes**: PROJECTS.md (6 edits), WORKLOG.md appended
 - **Next session**: Monitor for user decisions on path selections (resistance-research, cybersecurity-hardening, seedwarden) and May 14 checkpoint execution readiness
+
+---
+
+## 2026-05-13 02:37–03:15 — Session 964 — Phase 2 Domains + Exploration Queue Replenishment
+
+**Status**: ✅ SESSION COMPLETE
+
+### Work Summary
+
+**✅ resistance-research — 3 New Phase 2 Domains COMPLETE (Session 964)**
+- **Domain 48: Surveillance Capitalism & Electoral Manipulation** (5,200 words, 35+ citations)
+  - Critical finding: Commercial data brokers + government warrant-bypass + AI psychographic electoral suppression now operating as unified democratic threat
+  - ICE-Medicaid data pipeline (Palantir ELITE, ~80M Medicaid patients' records with ICE via CMS data-sharing agreement) fully documented
+  - PNAS 2026 peer-reviewed study: 1.9% voter turnout suppression in real election, concentrated in racial minority battleground voters
+  - June 12 FISA Section 702 renewal deadline — distribution must reach Senate Judiciary/Intelligence by June 5
+  - **Distribution priority**: Wave 1 (simultaneous with Domain 42 May 14-17 outreach)
+
+- **Domain 49: Callais VRA Redistricting Emergency** (5,400 words, 40+ citations)
+  - Critical finding: Completes three-ruling VRA destruction project (Shelby County 2013 → Brnovich 2021 → Callais 2026)
+  - May 11 Alabama Supreme Court stay: Unsigned 5-4 stay over Sotomayor dissent noting district court already made intentional discrimination finding required by Callais
+  - Five states in special sessions May 2026; litigation needs preliminary injunctions immediately upon map adoption
+  - **Distribution priority**: Democracy Docket, NAACP LDF, Voting Rights Alliance (litigation teams + voter education orgs)
+
+- **Domain 50: Healthcare-Democracy Nexus — OBBBA/NVRA Enforcement** (5,100 words, 35+ citations)
+  - Critical finding: NVRA Section 7 enforcement theory unknown to litigation community; state AGs can act on immediately
+  - Medicaid enrollment offices = designated voter registration agencies under 52 U.S.C. § 20506; enrollment declines = voter registration infrastructure loss
+  - Medicaid churn (OBBBA 6-month redetermination) multiplies disenrollment risk; ICE chilling effect compounds primary mechanism
+  - 8 states with Medicaid AVR achieve 99% conversion vs. 97.5% declination on paper forms — design fix exists, deployed, working
+  - June 1 HHS interim rule deadline — state AGs (NY, CA, MI, IL, WA) need enforcement theory before rule drops without public comment
+  - **Distribution priority**: State AGs + voting rights litigation coalition + Institute for Responsive Government
+
+- **Impact**: Framework now 41+ domains (38 prior + 3 new). Domains 48-50 enable immediate May 28 Domain 42 + June 5 Domain 48 distribution windows. Cross-reference gaps identified in Domains 1, 31, 33 (flagged for user review; do not modify without authorization).
+- **Files**: All three domains written, fully sourced, committed to master
+
+**✅ Exploration Queue Replenishment — 3 New Items ADDED**
+- **Item 31**: Seedwarden Phase 2 post-launch analytics (execution strategy; can begin May 31 via PHASE_2_POST_LAUNCH_ANALYTICS_FRAMEWORK.md after May 30 launch)
+- **Item 32**: Career-training case studies & practice scenarios (40-50 hours, ready to start; 4-5 worked case studies per module 1-33, building on 33 modules now complete)
+- **Item 33**: Resistance-research Phase 2 cross-reference integration (lightweight: add Callais sections to Domains 1, 31, 33; update litigation tracker with May 11 Alabama stay; ~3 hours total)
+
+**Orchestration state files updated**: WORKLOG.md, PROJECTS.md (Exploration Queue section + resistance-research current focus)
+
+### Current State
+- **Projects awaiting user action**: stockbot (May 14 checkpoint, T-22h), resistance-research (path decision), seedwarden (Phase 2 gates), mfg-farm (test print), cybersecurity-hardening (Phase 1 approval)
+- **Framework completeness**: 41+ domains, all production-ready for Phase 1 distribution (awaiting path decision)
+- **Critical dates**: Domain 42 May 28 deadline (15d), Domain 48 June 5 deadline (24d), May 14 20:00 UTC stockbot checkpoint (22h)
+
+### Session Metrics
+- **Effort**: ~30 minutes (parallel execution)
+- **Parallel work**: Resistance-research agent (3 new domains, 15.7K words) + general-research agent (policy boundary evaluation)
+- **Autonomous deliverables**: 3 new production-ready domains (48-50), 3 new Exploration Queue items, updated PROJECTS.md
+- **Commits**: 3 new domain files + 2 orchestration files to master
