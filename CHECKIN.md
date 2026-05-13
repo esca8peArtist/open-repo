@@ -1,5 +1,60 @@
 # Check-in
 
+## Session 993 — May 13, 2026, ~15:47–16:10 UTC (Critical Jetson Options Investigation — Safety Assessment Complete)
+
+**Status**: ✅ **CRITICAL BLOCK RESOLVED + DECISION FRAMEWORK PROVIDED** — Comprehensive investigation of undocumented options_live_session completed. All findings documented in `JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md`. **Key takeaway**: Naked-call prevention guardrail is MISSING (Gap 4 in architecture spec). User decision required: Decision A (stop options), Decision B (quarantine), or Decision C (immediate remediation). **Impact on May 14 checkpoint**: NONE — checkpoint is equity-only. **Impact on May 14–30 Gate 2 planning**: Critical.
+
+### Investigation Summary
+
+**Scope**: Jetson 100.120.18.84 options_live_session discovery from Session 992
+
+**Findings delivered**:
+1. **Database Analysis**: 98 total fills in paper mode across Jan 11-12, Mar 24-26, May 12-13
+   - May 12-13 alone: 14 fills with -$237 realized loss
+   - Query confirmed: `SELECT date(timestamp), COUNT(*), SUM(realized_pnl) FROM trades WHERE mode='PAPER'`
+   
+2. **Infrastructure Verified**: All options components exist + marked "PRODUCTION READY" (Jan 2026)
+   - OptionsLiveSession, OptionsExecutor, OptionsPositionTracker, GreeksManager, Black-Scholes pricing, OptionsProvider
+   
+3. **CRITICAL SAFETY GAP IDENTIFIED**: Gap 4 from `covered-calls-architecture-spec.md`
+   - **Missing**: Naked-call prevention guardrail
+   - **Risk**: Equity engine can sell shares while short call obligations remain (uncontrolled loss exposure)
+   - **Status**: Documented as MISSING, not yet implemented
+   - **Impact**: Blocks any covered-call overlay activation until Gap 4 is resolved
+
+4. **Process Status**: No active options_live_session running (as of 15:47 UTC May 13)
+
+5. **Decision Framework**: Three options provided:
+   - **Decision A (Recommended)**: Stop options_live_session; focus on equity Gate 1 checkpoint; skip options for May/June roadmap
+   - **Decision B (Conservative)**: Quarantine options process; prevent accidental activation; enable Gate 2 research
+   - **Decision C (Gate 2 acceleration)**: Implement Gap 4 NOW (4-6 hours); unblock covered-call overlay for post-checkpoint consideration
+
+### Critical for User Decision
+
+**Before May 14 checkpoint**: No action required for equity trading. Checkpoint is unaffected.
+
+**For May 14–30 Gate 2 architecture planning**: User needs to clarify whether options trading is part of roadmap:
+- If **YES**: Gap 4 implementation is CRITICAL blocker; must complete before any options activation
+- If **NO**: Recommend Decision A (stop options process to prevent accidental activation)
+- If **MAYBE**: Recommend Decision B (quarantine until Gate 2 decision made)
+
+**Verification checklist** provided for post-checkpoint: 9-point safety checklist before any options activation (Gap 1-5 implementation + testing + verification)
+
+### Documentation
+
+**Deliverable**: `JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md` (7 sections, ~2,500 words, production-ready)
+- Executive summary
+- Trading activity characterization (database analysis)
+- Infrastructure assessment (component inventory)
+- Critical safety finding (Gap 4 analysis + risk scenarios)
+- Recommendations & decision framework (Decisions A/B/C)
+- Questions for user decision
+- Investigation methodology
+
+**Status**: Ready for user review and decision. No further autonomous investigation needed.
+
+---
+
 ## Session 992 — May 13, 2026, ~17:45 UTC (Exploration Queue + Critical Pre-Checkpoint Findings)
 
 **Status**: 🟡 **PARALLEL AGENTS COMPLETE + CRITICAL JETSON RISK DISCOVERY** — Three high-value exploration items executed in parallel. Stockbot produced critical pre-checkpoint finding: undocumented options_live_session on Jetson since January 2026 with unconfirmed naked-call risk. Seedwarden social strategy complete. Resistance-research Domain 42 urgency strategy complete.
