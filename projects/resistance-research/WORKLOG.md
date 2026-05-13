@@ -2,6 +2,34 @@
 
 ---
 
+## May 13, 2026 — General Research Agent — Phase 1 Execution Calendar & Contact Sequencing (Item 29)
+
+**Status**: COMPLETE
+
+**File created**: `projects/cybersecurity-hardening/PHASE_1_EXECUTION_CALENDAR.md`
+
+**Word count**: ~3,400 words | **Sections**: 8 (Overview, Pre-Launch Checklist, Week 1–3 Day-by-Day Timeline, Contact Pre-Briefing Materials, Meeting Coordination Template, Briefing Materials Checklist, Success Metrics & Gate Checkpoint, Contingency Playbook)
+
+**Key deliverables**:
+
+1. **25-contact pre-screened cohort structure**: Three cohorts (8 Senate/legislative staff, 10 think tanks, 7 law school clinics) with named organizations, contact routing guidance, and personalization frames by sector. Drawn from existing project infrastructure (TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md, TIER1_PHASE1_READINESS_SUMMARY.md).
+
+2. **Day-by-day calendar (Days 0–19)**: Every day has 2–3 specific tasks with time estimates. Wave structure: Wave 1 (Senate staff, Days 1–2), Wave 2 (think tanks, Days 3–4), Wave 3 (law school clinics, Days 5+8), Waves 4–5 (follow-up and referrals). Includes daily Bitly check instructions and same-day reply handling protocol.
+
+3. **Gate checkpoints**: Gate 1 (June 7, click-through review) and Gate 2 (June 15, Tier 2 authorization) with explicit go/caution/stop thresholds and Tier 2 Group B implications drawn directly from TIER_2_EXPANSION_ARCHITECTURE.md.
+
+4. **Contact pre-briefing materials**: Per-sector document guidance (Senate staff = threat model Section 2; think tanks = full corpus + publication-prep.md; law schools = immigration attorney implementation guide) with existing file references.
+
+5. **Meeting coordination template**: Pre-meeting brief (10-min agenda format), in-meeting discussion guide (ELITE overview → data broker pipeline → policy/legal application), post-meeting follow-up sequence (24-hour follow-up + Day 28 adoption signal email).
+
+6. **Contingency playbook**: Four scenarios (key contact non-response, adoption rate 50% below target, political environment shift, media angle dominates) with diagnostic sequences and cascade procedures for accelerated/decelerated follow-up.
+
+7. **Quick reference card**: Single-page print-and-keep format covering launch dates, daily send schedule, gate thresholds, response classification guide, and the three highest-priority operational rules.
+
+**Evidence basis**: TIER1_EXECUTION_RUNBOOK.md, TIER_2_EXPANSION_ARCHITECTURE.md, TIER1_OUTREACH_EXECUTION_PLAN.md, TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md, TIER1_PHASE1_READINESS_SUMMARY.md.
+
+---
+
 ## May 13, 2026 — General Research Agent — Phase 1 Distribution Execution Blueprint (Item 28)
 
 **Status**: COMPLETE
