@@ -1,5 +1,89 @@
 # Check-in
 
+## Session 1008 — May 13, 2026, 23:30–present UTC (Phase 1 Distribution Execution Launch)
+
+**Status**: ✅ **PATH A+37 PHASE 1 DISTRIBUTION READY FOR IMMEDIATE EXECUTION — DOMAIN 42 EMAILS DRAFTED TODAY**
+
+### Accomplished This Session
+
+1. **Resistance-Research Phase 1 Execution Launch** ✅
+   - **Path A+37 confirmed** (user decided May 13, 00:45 UTC)
+   - **Domain 42 Category A emails DRAFTED** (5 emails, all personalized, ready to send TODAY May 13)
+   - **Reference**: PHASE_1_EXECUTION_BLUEPRINT.md (May 13 v1, authoritative runbook)
+   
+2. **Domain 42 DEA Track — CRITICAL PATH A (OVERDUE, RESURRECTING)** ⚠️
+   - **Timeline issue**: Category A was planned May 8; today is May 13 (5 days behind)
+   - **Deadline**: May 28 DEA Docket DEA-1362 submission deadline (15 days remaining, still viable)
+   - **Email recipients** (5 Tier 1 organizations):
+     - Drug Policy Alliance → press@drugpolicy.org
+     - NORML → norml@norml.org
+     - ACLU Criminal Law Reform → nationaloffice@aclu.org (Template B variant)
+     - The Sentencing Project → staff@sentencingproject.org
+     - Law Enforcement Action Partnership → info@leap.cc
+   - **Status**: All 5 emails drafted with personalization tails, ready for your send queue
+   - **Gist URL** (already live): https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+   - **Send sequence**: 30-45 min intervals, today before noon ET if possible
+   - **File reference**: Drafts + send instructions in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3 + contact list in `execution/domain-42-contact-list.md`
+
+3. **Phase 1b Main Distribution — CRITICAL PATH B (May 14 Setup)** 📋
+   - **Verified**: scripts/fill_templates.py exists and is correct
+   - **Pre-setup required** (user action, ~3 minutes total):
+     - Set YOUR_NAME in fill_templates.py
+     - Set YOUR_CONTACT_INFO in fill_templates.py
+     - Set [your Substack handle] in fill_templates.py
+   - **User will create Domain 37 Gist** (10 min, step-by-step procedure in BLUEPRINT Block 2)
+   - **Setup timeline** (May 14 morning, 3-4 hours):
+     - Blocks 1-6: Script config + Gist creation + template fill + contact re-verification + email draft prep (~1.5 hours)
+     - Blocks 7-9: Social media scheduling + Phase 1b email prep (~1 hour)
+     - Blocks 10-11: QA + monitoring setup (~0.5 hours)
+   - **Batch 1 send** (May 14 afternoon, 4:00 UTC ~): 5 emails at 30-min intervals to Ryan Goodman, Wendy Weiser, Erica Chenoweth, Ian Bassin, Marc Elias
+   - **Batch 1 deadline**: Must reach inboxes by May 21 to benefit from May 28 DEA news cycle context
+
+4. **Files Updated This Session**
+   - `BATCH_1_CONTACT_LOG.md` — Domain 42 sub-batch added with all 5 org statuses + send instructions
+   - `projects/resistance-research/WORKLOG.md` — Path A draft + Path B setup verification logged
+   - `projects/resistance-research/CHECKIN.md` — Updated to "READY TO SEND TODAY"
+
+### Critical Decision Point for User
+
+**TODAY (May 13) — before end of business**:
+Send the 5 Domain 42 Category A emails using drafts in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md`. Two 2-minute personalizations per email:
+- Replace `[GIST URL — INSERT AFTER CREATION]` with: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+- Replace `[Your name]` and `[Your contact information]` with your actual details
+
+This unblocks the May 28 DEA deadline track. Category B emails follow May 14-15.
+
+**TOMORROW (May 14) — morning**:
+- Set identity fields in fill_templates.py (3 min)
+- Create Domain 37 Gist from domains/domain-37-federal-executive-interference-2026-midterms.md (10 min, see BLUEPRINT Block 2 for exact 9-step procedure)
+- Run fill_templates.py (5 min)
+- Batch 1 send at 4:00 UTC afternoon (2.5 hours, 30-min spacing)
+
+**Phase 1 Timeline Summary**:
+- May 13 (TODAY): Domain 42 Category A send (45 min user action)
+- May 14: Phase 1b main setup (3-4 hours) + Batch 1 send (2.5 hours) = ~6.5 hours total work
+- May 15-21: Wave 1 social + Batch 2 setup + ongoing Domain 42 escalation
+- July 9 (Phase 1b): Domain 37 election protection organizations (7 emails)
+
+### Awaiting User Input
+
+1. **TODAY May 13**: Send Domain 42 Category A emails (5 organizations) — URGENT, 15 days to DEA deadline
+2. **May 14 morning**: Set identity fields + create Domain 37 Gist (13 minutes user setup)
+3. **May 14 afternoon**: Send Batch 1 emails (5 contacts, staggered)
+4. **May 14 20:00 UTC**: Execute stockbot checkpoint (unchanged)
+
+### Next Session Focus
+
+- **Immediate**: Confirm Domain 42 emails sent today
+- **May 14**: Execute Phase 1b setup + Batch 1 launch
+- **May 14 20:00 UTC**: Checkpoint execution + apply POST_GATE_1_RESPONSE_FRAMEWORK.md
+- **Post-checkpoint**: Resume exploration queue items (Seedwarden Phase 2, Item 40: Herbalist Expert Network, 2.5-3 hours)
+
+**Session Status**: COMPLETE ✅  
+**Files to review before acting**: PHASE_1_EXECUTION_BLUEPRINT.md (runbook), PHASE1_DEPLOYMENT_MASTER.md (detailed checklist)
+
+---
+
 ## Session 1007 — May 13, 2026, 22:00–23:30 UTC (Exploration Queue: Items 31 & 41)
 
 **Status**: ✅ **CRITICAL ITEMS COMPLETE — CHECKPOINT GO, PHASE 1 MEASUREMENT INFRASTRUCTURE READY**
