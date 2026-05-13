@@ -7,6 +7,11 @@
 
 ## Overall Project Status
 
+**Phase 2 Domains 38-40 Expansion COMPLETE** (May 13, 2026): Three optional expansion domains produced and ready for distribution. See `domains/INDEX.md` for full index and distribution pairings. User distribution path decision (Path A: immediate / Path A+37: hybrid / Path B: more expansion) remains pending — these three domains are available for Path B or post-launch depth work.
+- `domains/domains-38.md` — Lobbying Transparency, Regulatory Capture, and Antitrust Enforcement (44 citations, ~5,200 words)
+- `domains/domains-39.md` — Education as Democratic Infrastructure (43 citations, ~5,400 words)
+- `domains/domains-40.md` — Healthcare as Democratic Determinant (46 citations, ~5,600 words)
+
 **Phase**: April-May 2026 Domain Content Maintenance COMPLETE through May 1. Phase 2 domain expansion COMPLETE (Session 538 verification). Distribution measurement infrastructure now complete (Session 546). 38-domain framework current through May 1, 2026. Domain content maintenance this session: Domain 19f (Section 19.1a supplemented — Hegseth $25B testimony, Ford carrier departure, Trump-Putin uranium discussion); FISA/Iran outcome checklist verification completed. Prior session (689): Domain 19f Sections 18-19 (May 1 non-compliance confirmed; Vance doctrine/Youngstown synthesis; Domain 28 two-prong doctrine empirically complete); Domain 25 Sections 9-10 (Senate divergence, 45-day extension strategy, lapse risk, civil liberties defeat confirmed); Domain 28, Domain 29, Domain 6, Domain 35 all updated. Distribution awaiting user Path A/B/Hybrid decision. **Framework is current through May 1, 2026 — both crisis deadlines documented.**
 
 **Session 686 — Execution Plans Created**: Phase 1 Execution Plans for all three distribution paths created in `execution-plans/`. User can select and execute any path immediately. See `execution-plans/EXECUTION_PATHS_DECISION_FRAMEWORK.md` for one-page decision guide.
