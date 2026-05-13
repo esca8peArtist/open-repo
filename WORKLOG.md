@@ -4,6 +4,37 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 03:15–03:35 UTC — Session 965 — Resistance-Research Phase 2 Cross-Reference Integration
+
+**Status**: ✅ COMPLETE — Exploration Queue Item 33 finished; all 41+ domains production-ready for distribution
+
+**Work Summary**
+
+**Phase 2 Cross-Reference Integration (Exploration Queue Item 33)**
+- ✅ **Domain 1 (Voting Rights)**: Added May 2026 Callais cascade update — six-state special session list, May 11 Alabama stay (unsigned 5-4), 30-day injunction filing window, cross-ref to Domain 49
+- ✅ **Domain 31 (Healthcare-Democracy Nexus)**: Added NVRA Section 7 enforcement angle — identified six post-Callais states coextensive with OBBBA non-expansion + purge-rate leaders; state AG coalition federal litigation pathway (independent of healthcare APA challenge)
+- ✅ **Domain 33 (State Legislative Autocratization)**: Added state AG litigation strategy — integrated three-statute theory (VRA Section 2 + Arlington Heights + Section 3 bail-in + NVRA Section 7) as coordinated federal response
+- ✅ **Litigation Tracker**: Created `litigation-tracker-2026.md` with May 11 Alabama stay anatomy and five-state session table (status, target districts, injunction deadlines); Mississippi May 20 session creates June 20 filing deadline
+
+**Domains 48-50 Verification**: All three complete (260-303 lines), production-ready, with deadlines documented:
+- Domain 48: June 12 FISA deadline
+- Domain 49: Five-state litigation readiness
+- Domain 50: June 1 HHS rule deadline
+
+**Deliverables**:
+- ✅ `domains/domain-01-voting-rights-elections.md` — updated with Callais cascade
+- ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` — NVRA enforcement angle added
+- ✅ `domains/domain-33-state-legislative-autocratization.md` — state AG litigation strategy added
+- ✅ `litigation-tracker-2026.md` — new production file with May 11 stay + five-state table
+
+**Files committed to master**: 4 domain updates + litigation tracker
+
+**Framework Status**: 41+ domains production-ready. Phase 2 cross-reference integration complete. All materials staged for distribution execution (awaiting user path decision: Path A / A+37 Hybrid / B).
+
+**Next Steps**:
+- User selects distribution path → orchestrator executes Phase 1 immediately
+- All 41 domains + templates + infrastructure ready for activation
+
 ## 2026-05-13 02:15–02:35 UTC — Session 963 — Parallel Exploration Queue Delivery + Career-training Gap Modules
 
 **Status**: ✅ SESSION COMPLETE — All 3 Exploration Queue items completed/verified ready; 5 career-training modules written
