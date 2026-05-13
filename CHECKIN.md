@@ -1,8 +1,24 @@
 # Check-in
 
-## Since Last Check-in (Session 981, May 13, 2026, 10:20–11:30 UTC)
+## Since Last Check-in (Sessions 981-982, May 13, 2026, 10:20–11:50 UTC)
 
-**Status**: 🟢 PARALLEL EXPLORATION QUEUE COMPLETION — Two major autonomous items executed: (1) Resistance-research Phase 2 Expansion Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅. Both items committed, production-ready, advance project goals while awaiting external user actions.
+**Status**: 🟢 PARALLEL EXPLORATION QUEUE COMPLETION + TIER 1 AUTONOMOUS WORK COMPLETE — Three major items executed: (1) Resistance-research Phase 2 Expansion Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Photography & Plant Sourcing Logistics Plan ✅. All items committed, production-ready. May 30 launch timeline de-risked with critical [USER-ACTION] items identified.
+
+### Session 982 Accomplishments
+
+**Seedwarden Phase 2 Photography & Plant Sourcing Logistics Plan** ✅
+- **Deliverable**: `PHASE_2_LAUNCH_LOGISTICS.md` (1,550+ words, 7 sections) + `phase-2-timeline.csv` (47-row milestone tracker)
+- **Coverage**: Complete timeline May 13–30 with vendor procurement, location strategy, photo shoot rescheduling, guide production, and staging milestones
+- **Critical [USER-ACTION] Items Identified** (3 gates):
+  1. **TODAY (May 13) — URGENT**: Confirm plant orders placed; if not placed, order immediately from Mountain Rose Herbs for 2-day Priority shipping (arrives May 15). This is the last-call order.
+  2. **Location status check**: May 10 Asheville Botanical permit deadline has passed (not confirmed in WORKLOG). Plan flags with indoor studio fallback (zero launch-date impact).
+  3. **May 26 (before production week)**: Canva Brand Kit palette extension (45–90 min user task); required before guide production can begin.
+- **Key Findings**:
+  - Plant sourcing vendors exceeded original deadlines (May 9–10); Mountain Rose Herbs still viable today with 2-day ship; others (Strictly Medicinal, Prairie Moon) recoverable if ordered today but arrive May 20–27 (uses float days)
+  - Photo shoots were overdue (scheduled May 10–11); rescheduled May 14–16 with May 19 float. Does not threaten May 30 launch.
+  - Timeline is tight but recoverable with float days identified: May 19 (photo), May 21–22 (plant arrival buffer), May 23 (production slack)
+  - May 25 "guides live" = Etsy drafts complete + PDFs in export queue (not published). Publishing is May 30 at 10:00 AM as launch action.
+- **Status**: Production-ready execution document. Unblocks Phase 2 launch readiness verification. Ready to execute pending 3 user gates.
 
 ### Session 981 Accomplishments
 
@@ -55,10 +71,13 @@
 - ✅ Batch 2 product identified and validated (desk headphone hooks)
 - No autonomous work available
 
-**Seedwarden** (May 30 Phase 2 launch)
+**Seedwarden** (May 30 Phase 2 launch — T-17 days)
+- ✅ Phase 2 logistics plan complete (Session 982)
 - ✅ Track B ready (May 30 target, no blockers)
+- ⏳ [URGENT TODAY] Plant sourcing orders: Confirm placed; if not, order Mountain Rose Herbs today (2-day shipping)
+- ⏳ Location status verification: Check if May 10 Asheville permit deadline met; flagged with studio fallback
 - ⏳ Track A: Tag corrections (15 min) + Etsy verification (1-5 days), decision deadline May 19
-- No autonomous blockers
+- ⏳ May 26 user gate: Canva Brand Kit palette extension (45–90 min) before production week
 
 ---
 
