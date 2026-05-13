@@ -619,10 +619,24 @@
 ### seedwarden
 **Goal**: Build a profitable Etsy store and digital brand focused on farming, homesteading, and survival-related digital products, with the ability to expand into physical small products and seed packets. The business needs a full foundation: high-quality digital products that genuinely help people, a consistent social media presence across relevant platforms, and a reputation for real value. The goal is profit and a loyal customer base — not just a store. Grow the business systematically, identify what sells, double down on winners, and build a media presence that drives traffic organically.
 **Priority**: Medium
-**Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
+**Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: Session 960: Phase 1 upload awaiting user tag corrections + Etsy account verification (Track A blocked). Phase 2 execution-ready for May 30 launch target. Phase 3 execution-layer assets COMPLETE — 7 production-ready files (execution guide, Canva briefs, broadcast sequence, social templates, KPI dashboard, landing pages) staged for June 15–July 1 launch. Track B (Phase 2 launch) has no blockers — awaiting Phase 1 completion first.
+**Current focus**: Session 961 (May 13): Phase 2 readiness audit complete — Track B is GO for May 30. Three user gates remain (social accounts, Canva Brand Kit, Kit email account — 30-60 min each, all materials staged). Track A has 2 open blockers: (1) 3 tag corrections on Companion Planting Chart, Survival Garden Regional Plans, Zone-by-Zone Calendar (15 min, copy-paste from `TRACK_A_BLOCKER_RESOLUTION.md`) and (2) Etsy account verification + Etsy Payments connection (10 min user action + 1-5 day Etsy processing). Decision deadline: May 20 — if both blockers clear by May 19, Phase 1 and Phase 2 co-launch May 24-30 (Option A); if not, Track B launches independently May 30 and Phase 1 follows when ready (Option B). Phase 3 execution begins June 22, not June 15 — corrected timeline per `PHASE_3_EXECUTION_GUIDE.md`: Etsy launch July 13, gate check July 11 (forager cohort >20%, Native Plants conversion >1.5%).
+
+**Track A blockers (user must act — total ~30 min user time)**:
+- Blocker 1: 3 tag corrections — exact changes documented in `TRACK_A_BLOCKER_RESOLUTION.md` Section "Blocker 1"
+- Blocker 2: Etsy account verification — steps in `TRACK_A_BLOCKER_RESOLUTION.md` Section "Blocker 2"
+- Advisory (non-blocking): Hunting Manual slug inconsistency — use `hunting-fishing-trapping-field-manual` at upload time
+
+**Phase 3 assets — 7 files verified in `phase-3-assets/`**:
+1. `PHASE_3_EXECUTION_GUIDE.md` — master execution guide, 6 user-only actions, full timeline to July 13
+2. `canva-mockup-briefs/phase-3-canva-mockup-brief.md` — Canva specs for 6 design deliverables
+3. `email-templates/phase-3-broadcast-sequence.md` — 4 broadcasts + 8-email herbalist funnel (all copy complete)
+4. `social-templates/phase-3-social-post-templates.md` — 20 posts with captions, hashtags (Weeks 1-4)
+5. `analytics-templates/phase-3-kpi-dashboard.md` — weekly KPI structure, alert thresholds, success definitions
+6. `landing-page-copy/phase-3-landing-pages.md` — 3 Kit landing pages with full copy (Lead Magnets A, B, C)
+7. `stock-image-lists/phase-3-botanical-stock-list.md` — sourcing list: 5 cover illustrations, 64 zone card species, 5 practitioner images (all CC-licensed sources identified)
 
 
 **Phase 2 Status (Track B)**:
