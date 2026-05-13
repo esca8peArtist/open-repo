@@ -1,5 +1,55 @@
 # Work Log
 
+## Session 1001 — May 13, 2026, ~20:27–20:45 UTC (Checkpoint Readiness Verification + Focus Pruning)
+
+**Status**: ✅ **GATE 2 READINESS VERIFIED READY + RESISTANCE-RESEARCH FOCUS PRUNED**
+
+### Accomplished This Session
+
+1. **Orientation** ✅
+   - Read ORCHESTRATOR_STATE.md: Identified top 2 unblocked projects with meaningful work
+   - Current UTC time: 20:27:34 May 13; May 14 checkpoint T-23.5 hours away
+   - INBOX.md: No new items (no processing needed)
+   - State drift warning: resistance-research focus stale (Session 985, 15 sessions ago)
+
+2. **Parallel Subagent Execution** ✅
+
+   **Stockbot Checkpoint Readiness Verification**:
+   - Gate 2 verification: **READY** — all items passing
+   - Checkpoint script (383 lines) valid, classification logic correct
+   - HMM regime scalar: 46 tests passing ✅
+   - Vol scalar integration: 28 tests passing ✅ (ORCHESTRATOR_STATE said 25; 3 tests added post-snapshot)
+   - Combined ML suite: 106 passed, 1 skipped (expected — hmmlearn not in dev env)
+   - Non-blocking risks documented: Jetson WiFi-only uplink (~1,647 dropped RX packets/day), hmmlearn not on Jetson (needs verification before May 15)
+   - Instructions prepared for checkpoint execution: 18:00 UTC May 14 pre-verification, 20:00 UTC May 14 checkpoint run
+   - Summary logged to projects/stockbot/WORKLOG.md
+
+   **Resistance-Research Focus Pruning + Item 31 Prep**:
+   - Pruned stale Session 985 reference from PROJECTS.md
+   - Updated Current Focus to 3-point summary:
+     1. May 28 DEA hearing forcing function — Wave 1 distribution should have started May 8; if not sent, needs immediate attention
+     2. Domains 41 & 43 source staging complete (`DOMAINS_41_43_SOURCE_STAGING.md`); June 1 research production start target
+     3. Senate Democrats forced CFPB rollback floor votes May 13 — Domain 41 advocacy window is live now
+   - Exploration Queue Item 31 readiness confirmed (stockbot pre-checkpoint infrastructure verification; deliverable present at `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md`)
+   - Item 36 (Session 1000) deliverable verified: `DOMAINS_41_43_SOURCE_STAGING.md` (1,053 lines) with 40 annotated sources/domain, 25-26 expert contacts, production-ready for June 1 research start
+   - PROJECTS.md updated and committed
+
+### Strategic Impact
+
+- **Checkpoint readiness**: T-23.5 hours, all Gate 2 verification items passing. Risk mitigation instructions prepared for May 14.
+- **Resistance-research sync**: Focus now reflects current priorities (May 28 DEA hearing, CFPB advocacy window, June 1 research start). Exploration Queue Item 31 staged for May 14 execution.
+- **Orchestration state**: Both parallel tasks completed successfully, enabling next decision point at May 14 checkpoint.
+
+### Files Updated
+
+- `projects/stockbot/WORKLOG.md` (Gate 2 verification summary added)
+- `projects/resistance-research/PROJECTS.md` (focus pruned, Item 31 readiness noted)
+- `WORKLOG.md` (this entry)
+
+**Session Status**: COMPLETE ✅
+
+---
+
 ## Session 997 — May 13, 2026, ~19:24–20:50 UTC (Phase 2 Domain Research Production: Domains 41 & 43)
 
 **Status**: ✅ **PHASE 2 DOMAINS 41 & 43 PRODUCTION COMPLETE — TWO RESEARCH DOCUMENTS DELIVERED, PRODUCTION-READY**

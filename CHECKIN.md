@@ -1,5 +1,64 @@
 # Check-in
 
+## Session 1001 — May 13, 2026, ~20:27–20:45 UTC (Checkpoint Readiness Verification + Focus Pruning)
+
+**Status**: ✅ **GATE 2 CHECKPOINT READINESS VERIFIED — ALL VERIFICATION ITEMS PASSING**
+
+### Accomplished This Session
+
+1. **Stockbot May 14 Checkpoint — Gate 2 Readiness Verified** ✅
+   - **Overall verdict**: READY — no blocking defects found
+   - **Checkpoint script** (May_14_checkpoint_query_alpaca.py, 383 lines): Python syntax valid, classification logic tested against all 4 boundary conditions — all correct ✅
+   - **HMM regime scalar** (src/ml/hmm_regime_scalar.py): 46 tests passing ✅
+   - **Vol scalar integration** (tests/unit/test_ml/test_vol_scalar.py): 28 tests passing ✅ (note: ORCHESTRATOR_STATE recorded 25; 3 tests were added post-snapshot)
+   - **Combined ML suite** (HMM + vol scalars + regime detector): 106 passed, 1 skipped (expected — hmmlearn not installed locally)
+   - **Non-blocking risks documented**:
+     - Jetson WiFi-only uplink: ~1,647 dropped RX packets/day; no wired failover
+     - hmmlearn on Jetson: not re-confirmed this session (last confirmed ~2h ago); needs verification before May 15 activation
+   - **Pre-checkpoint verification steps** (at 18:00 UTC May 14):
+     - Run `curl http://100.120.18.84/api/ready` (expect `sessions:2`)
+     - Check disk: `ssh awank@100.120.18.84 'df -h'`
+     - Verify connectivity and HMM library: `ssh awank@100.120.18.84 "cd /opt/stockbot && uv run python -c 'import hmmlearn'"`
+   - **Checkpoint execution** (20:00 UTC May 14):
+     - Run `uv run python scripts/may14_checkpoint_query_alpaca.py` or with `--json` flag
+     - Read `confirmed_round_trips`, classify via MAY_14_CHECKPOINT_READINESS.md Section 4 table
+     - Follow POST_GATE_1_RESPONSE_FRAMEWORK.md for corresponding outcome path (most likely: NEAR_MISS B1, 1-2 confirmed round trips)
+   - Summary written to `projects/stockbot/WORKLOG.md`
+
+2. **Resistance-Research Focus Pruned + Item 31 Staging Verified** ✅
+   - **Stale focus removed**: Session 985 reference pruned from PROJECTS.md (15 sessions old)
+   - **Current focus updated** to 3-point summary:
+     1. **May 28 DEA hearing forcing function** — Wave 1 distribution should have started May 8; if not sent, needs immediate attention
+     2. **Domains 41 & 43 source staging complete** (`DOMAINS_41_43_SOURCE_STAGING.md`); June 1 research production start target
+     3. **Senate Democrats CFPB rollback floor votes May 13** — Domain 41 advocacy window is live now and should time financial-justice contact distribution wave
+   - **Exploration Queue Item 31** readiness confirmed: `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` present, execution-ready for May 14 15:00-17:00 UTC window
+   - **Item 36 deliverable** (Session 1000) verified: `DOMAINS_41_43_SOURCE_STAGING.md` (1,053 lines) with:
+     - 40 annotated sources per domain
+     - 25-26 expert contacts per domain organized into 4 categories each
+     - Evidence requirement checklists with gate criteria
+     - Full outline skeletons with evidence placeholders
+     - Distribution sequencing plan targeting Phase 1 network
+     - Both domain documents (domain-41, domain-43) already production-complete at ~5,800 words / 36-38 citations; staging document supports depth extension to 6,500-7,500 words / 50-60 citations by June 21
+   - PROJECTS.md committed with pruned focus
+
+### Awaiting User Input
+
+1. **resistance-research**: Path A / A+37 / B distribution decision → unblocks June 1 Phase 2 research
+2. **stockbot**: May 14 20:00 UTC checkpoint execution (fully prepared; all verification items passing)
+3. **cybersecurity-hardening**: Phase 1 Tier 1 launch approval + Day 1 send date
+4. **mfg-farm**: Test print execution (0.20mm layer height, PLA+, 3 walls, 220–225°C)
+5. **May 13 CFPB Senate announcement**: User may want to discuss timing implications for Domain 41 amplification
+
+### Strategic Summary
+
+- **Checkpoint T-23.5h**: Gate 2 verification complete; no work blocks checkpoint execution. Risk mitigation instructions prepared.
+- **Resistance-research**: All Phase 1-2 infrastructure current. Next decision point: Phase 1 distribution path (user choice between A / A+37 / B).
+- **Queue health**: Item 31 staged for May 14, Items 37-38 queued for post-user-action unblocks. Sufficient backlog to sustain work post-May-14.
+
+**Session Status**: COMPLETE ✅
+
+---
+
 ## Session 1000 — May 13, 2026, ~21:15–21:45 UTC (Exploration Queue Item 36 + Queue Expansion)
 
 **Status**: ✅ **ITEM 36 COMPLETE — RESISTANCE-RESEARCH DOMAINS 41 & 43 SOURCE STAGING DELIVERED**
