@@ -1,5 +1,68 @@
 # Check-in
 
+## Session 967 — May 13, 2026 03:26–04:10 UTC (Orchestrator Session: Cross-Reference Completion + Pre-Checkpoint Verification)
+
+**Status**: ✅ SESSION COMPLETE — Exploration Queue Item 33 finalized; stockbot pre-checkpoint systems verified
+
+### Work Completed
+
+**✅ Orchestrator Orientation**
+- Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md — identified available autonomous work
+- Only active block: mfg-farm test print (user action, no blockers resolved)
+- No new INBOX items to process
+
+**✅ Stockbot Pre-Checkpoint Verification**
+- HMM regime scalar tests: 46/46 passing ✅ (test_strategy_coordinator_hmm_scalar.py)
+- Checkpoint script verified: 382 lines, ready at `scripts/may14_checkpoint_query_alpaca.py` ✅
+- All critical infrastructure confirmed operational for May 14 20:00 UTC checkpoint execution
+
+**✅ Resistance-Research Exploration Queue Item 33 — Phase 2 Cross-Reference Integration COMPLETION**
+- Spawned resistance-research subagent to complete Item 33 (lightweight cross-reference integration)
+- Agent discovered prior Session 966 had completed bulk of Callais/NVRA work; this session completed three final cross-links:
+  1. Domain 1 Section 3.2a: Added Domain 50 cross-reference (NVRA enforcement theory as structural parallel to redistricting dilution)
+  2. Domain 31 NVRA section: Added Domain 48 cross-reference (Palantir ELITE pipeline mechanics + HIPAA challenge for ICE-Medicaid chilling effect)
+  3. Domain 33 Section 1.7: Added Domain 50 cross-reference (three-mechanism convergence frame: dilution + registration removal + enrollment chilling)
+- Litigation tracker: Already complete from Session 966 (Category 10 with Callais entries)
+- All cross-reference updates committed to master
+
+**Framework Status Post-Item-33**:
+- ✅ 41+ domains (38 base + Domains 48, 49, 50) production-ready
+- ✅ All Phase 2 cross-references finalized and bidirectional
+- ✅ Distribution materials fully staged for Phase 1 execution
+- **Status**: AWAITING USER PATH DECISION (Path A / A+37 Hybrid / Path B) → Phase 1 execution begins within hours of decision
+
+### Critical Timeline
+| Date | Milestone | Status |
+|------|-----------|--------|
+| May 14 20:00 UTC | **Stockbot checkpoint** | **T~38h**, all pre-checkpoint systems verified ✅ |
+| May 21 | Domain 42 distribution window | User must decide path within 8 days |
+| May 28 | Domain 42 DEA deadline | Tier 1 distribution must reach audiences before deadline |
+| June 5 | Domain 48 Senate window closes | 6-week distribution window for FISA Senate Judiciary/Intelligence |
+
+### User Actions Required (Immediate)
+1. **Resistance-research path decision** (CRITICAL — 8 days to May 28 Domain 42 deadline): Choose Path A (immediate) / A+37 Hybrid (recommended) / B (expand before distribution) → Triggers Phase 1 execution immediately
+2. **Stockbot May 14 checkpoint** (T~38h): Pre-checkpoint verification complete; user to execute checkpoint query at 20:00 UTC
+
+### Session Metrics
+- **Effort**: ~45 minutes (orchestration + agent coordination + verification)
+- **Parallel work**: Resistance-research agent (Item 33 cross-reference completion)
+- **Code verification**: Stockbot HMM tests (46/46), checkpoint script (382 lines)
+- **Commits**: Cross-reference updates to master (3 domain files)
+- **Operational status**: All autonomous work for this session complete; awaiting user path decision to unlock Phase 1 execution
+
+### Key Findings
+- Stockbot checkpoint infrastructure is production-ready; May 14 execution can proceed with confidence
+- Resistance-research framework is complete; cross-reference gaps fully resolved
+- Exploration Queue Item 33 COMPLETE; no blocking issues remain for Item 32 (career-training case studies) if user prioritizes
+
+### Next Session Priorities
+1. **May 14 checkpoint monitoring** (T-38h): Final pre-checkpoint verification, user execution coordination
+2. **Post-checkpoint response** (depends on May 14 outcome): Agent standby for Gate 1 classification and remediation if needed
+3. **If user decides resistance-research path**: Phase 1 execution (Gist creation, template fill, contact send) can begin immediately
+4. **Otherwise**: Exploration Queue Item 32 (Career-training case studies, 40-50h) available
+
+---
+
 ## Session 966 — May 13, 2026 03:35–03:55 UTC (Phase 2 Cross-Reference Integration + Orchestration)
 
 **Status**: ✅ SESSION COMPLETE — Exploration Queue Item 33 delivered; framework production-ready for distribution

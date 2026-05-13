@@ -4,6 +4,43 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 03:26–04:10 UTC — Session 967 — Resistance-Research Cross-Reference Integration Complete
+
+**Status**: ✅ COMPLETE — Exploration Queue Item 33 finished (cross-references integrated into Domains 1, 31, 33); framework production-ready
+
+**Work Summary**
+
+**Resistance-Research Phase 2 Cross-Reference Integration (Exploration Queue Item 33)**
+- ✅ **Orchestration orientation**: Read ORCHESTRATOR_STATE.md, BLOCKED.md (mfg-farm test print only active block). INBOX.md empty. All projects reviewed for autonomous work opportunities.
+- ✅ **Stockbot pre-checkpoint verification**: HMM regime scalar tests all pass (46/46). Checkpoint script verified at 382 lines, ready for May 14 20:00 UTC execution.
+- ✅ **Phase 2 Cross-Reference Integration Agent**: Spawned resistance-research subagent for Item 33. Agent found that prior session (Session 964) had completed bulk of Callais/NVRA integrations; this session completed three crucial cross-links:
+  - Domain 1 Section 3.2a: Added Domain 50 cross-reference (NVRA enforcement theory as structural parallel to redistricting dilution)
+  - Domain 31 NVRA section: Added Domain 48 cross-reference (Palantir ELITE data pipeline mechanics + HIPAA challenge theory for ICE-Medicaid chilling effect)
+  - Domain 33 Section 1.7: Added Domain 50 cross-reference (three-mechanism convergence frame: redistricting dilution + registration infrastructure removal + enrollment chilling)
+  - Litigation tracker already complete (Category 10 with Callais entries fully formed)
+- ✅ **Commits**: Cross-reference updates committed to master with descriptive messages
+
+**Framework Status After Item 33**: 
+- 41+ domains (38 base + Domains 48, 49, 50) production-ready
+- All Phase 2 cross-references complete and committed
+- Distribution materials fully staged for Phase 1 execution
+- **Awaiting**: User path decision (Path A / Path A+37 Hybrid / Path B) to trigger distribution launch
+
+**Next Critical Dates**:
+- **May 14 20:00 UTC**: Stockbot checkpoint (T~38h). Engine executes AAPL h+10 exit at 13:30 UTC; user checkpoint query + scenario classification at 20:00 UTC. All pre-checkpoint systems verified ready.
+- **May 28**: Domain 42 DEA deadline (15d) — distribution must reach audiences before May 21
+- **June 5**: Domain 48 Senate deadline (24d) — 6-week distribution window for Senate Intelligence/Judiciary
+
+**Blocked/Paused Projects** (no autonomous work available):
+- cybersecurity-hardening: Awaiting user approval for Phase 1 launch
+- mfg-farm: Awaiting test print user execution
+- seedwarden: Track A needs user tag corrections + Etsy verification; Track B needs user social/Canva/Kit gates
+- open-repo: PR #1 awaiting review/merge
+- off-grid-living: Complete; awaiting user social media distribution
+- Career-training: 33 modules complete; Exploration Queue Item 32 (case studies, 40-50h) available but low priority relative to stockbot checkpoint
+
+**Usage**: Nominal — no throttling. 17.7% Sonnet, 23.0% all-models. Reset in ~141h.
+
 ## 2026-05-13 03:35–03:55 UTC — Session 966 — Resistance-Research Phase 2 Cross-Reference Integration
 
 **Status**: ✅ COMPLETE — Exploration Queue Item 33 finished; framework production-ready for distribution execution
