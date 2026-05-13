@@ -1,5 +1,75 @@
 # Check-in
 
+## Session 994 — May 13, 2026, ~16:10–17:30 UTC (Parallel Checkpoint & Domain 42 & Seedwarden Verification)
+
+**Status**: ✅ **THREE PROJECTS VERIFIED & READY TO ADVANCE**
+
+### Accomplished This Session
+
+1. **Stockbot Checkpoint Readiness** — May 14 20:00 UTC infrastructure verified operational
+   - Ran 207 checkpoint-critical tests: all passing
+   - Fixed 2 test failures (mock API calls, format string error)
+   - Verified Jetson SSH connectivity, Docker containers healthy
+   - Clarified session architecture: 2-session AAPL config deployed (correct)
+   - Verified checkpoint script works with live Alpaca API
+   - Post-checkpoint response framework complete (all 4 scenarios)
+   - **Verdict**: GO for checkpoint. All pre-checkpoint autonomous work complete.
+
+2. **Resistance-Research Domain 42 Wave 1** — May 28 DEA hearing participation notice deadline
+   - Verified Gist is live and complete (GitHub public)
+   - Identified 2 contact corrections: Mason Marks (FSU email), Washington AG (Nick Brown)
+   - Verified 4 email templates (drug policy, civil rights, academic, state AG) are compelling
+   - Pre-drafted participation notices ready
+   - Created pre-execution checklist (URL fill: 2 min, contact corrections: 2 min)
+   - **Verdict**: Ready to send Wave 1 May 14-15. Only 4 minutes of fixes needed. 6-7 days buffer before hard stop.
+
+3. **Seedwarden Track B May 30 Launch** — social media + email + guides
+   - Created 6 comprehensive launch prep documents (audit, execution plan, asset verification, content calendar, email sequence, risk/contingency)
+   - Verified all 3 user gates have complete staging materials
+   - Identified Gate 3 (Kit email automation) as critical-path watch item (2-day buffer if delayed)
+   - Confirmed Phase 3 assets complete (7 files, brand-aligned, ready for June 22-July 13)
+   - Identified 1 stale reference in Kit Email 5 (5-minute fix)
+   - **Verdict**: Track B achievable by May 30. Partial launch (Etsy + email) viable if Kit slips.
+
+### Needs Your Input
+
+**Domain 42 Wave 1 — Two Contact Corrections Needed (5 minutes)**
+1. Mason Marks: Use `mason.marks@fsu.edu` (Florida State University College of Law) instead of Yale
+2. Washington AG: Use Nick Brown's office (`atg.wa.gov/contact`) instead of Bob Ferguson
+
+**After corrections**: Wave 1 can launch immediately (May 14-15). 5 organizations, all materials ready.
+
+**Stockbot May 14 Checkpoint — Ready for User Execution**
+- 19:00 UTC: SSH ping Jetson + `curl /api/ready` to confirm sessions
+- 20:00 UTC: Run `uv run python scripts/may14_checkpoint_query_alpaca.py --full` for checkpoint classification
+- Classify outcome (PASS/NEAR-MISS/FAR-MISS_C1/FAR-MISS_C2) and follow `POST_GATE_1_RESPONSE_FRAMEWORK.md`
+
+**Seedwarden Track B — Gate 3 Critical-Path Deadline May 28**
+- If Kit automation can't be completed by May 28, launch can proceed with Etsy + email (partial)
+- Otherwise all 3 gates ready for launch May 30
+
+### Priority Actions for User (Next 15 Days)
+
+**May 13–14**: Domain 42 contact corrections + Wave 1 email send (2 min to fix, 20 min to send)
+
+**May 14**: Stockbot checkpoint execution (user action at 20:00 UTC)
+
+**May 18**: Seedwarden Gate 1 (social accounts) — 30-60 min
+
+**May 24**: Seedwarden Gate 2 (Canva Brand Kit) — 30 min (start zone card PDF build)
+
+**May 25**: Seedwarden Gate 3 (Kit account setup) — 30-60 min, **HARD DEADLINE for Kit DNS propagation before May 30**
+
+### What's Left Before May 30
+
+**Domain 42**: Just Wave 1 execution. Waves 2-3 follow if Wave 1 generates responses. 15 days until hard stop May 28.
+
+**Stockbot**: Checkpoint (user action May 14), then post-checkpoint response execution (Gate 2 decision on options, architecture path, model training roadmap).
+
+**Seedwarden**: Three user gates (all documented with time estimates) + Kit automation build (automated per 5-email spec already written). All staging materials complete.
+
+---
+
 ## Session 993 — May 13, 2026, ~15:47–16:10 UTC (Critical Jetson Options Investigation — Safety Assessment Complete)
 
 **Status**: ✅ **CRITICAL BLOCK RESOLVED + DECISION FRAMEWORK PROVIDED** — Comprehensive investigation of undocumented options_live_session completed. All findings documented in `JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md`. **Key takeaway**: Naked-call prevention guardrail is MISSING (Gap 4 in architecture spec). User decision required: Decision A (stop options), Decision B (quarantine), or Decision C (immediate remediation). **Impact on May 14 checkpoint**: NONE — checkpoint is equity-only. **Impact on May 14–30 Gate 2 planning**: Critical.

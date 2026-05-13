@@ -2,6 +2,65 @@
 
 ---
 
+## May 13, 2026 — Research Agent — Domain 42 Wave 1 Readiness Audit
+
+**Status**: COMPLETE
+
+**Files audited**:
+- `execution/domain-42-email-template.md` — original May 7 templates (superseded by urgency edition)
+- `execution/domain-42-email-template-may28-urgency.md` — May 9 active send templates (CONFIRMED CURRENT)
+- `execution/domain-42-contact-list.md` — original May 7 contact list
+- `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` — May 13 execution package (5 emails, pre-drafted participation notices, Gist walkthrough)
+- `execution/DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` — May 13 urgency strategy with timeline
+- `execution/domain-42-gist-creation-steps.md` — Gist creation procedure
+- `execution/domain-42-phase-1-outreach-prioritization.md` — priority tier scoring
+
+**Key findings from audit**:
+
+1. GIST STATUS — CONFIRMED LIVE: The Domain 42 Gist is live and publicly accessible at https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab. This URL is already in the `domain-42-email-template-may28-urgency.md` file and the Wave 1 email package. The gist creation steps in `domain-42-gist-creation-steps.md` are already completed. The emails do NOT need a placeholder Gist URL — the live URL is already filled in the May 9 urgency template. The DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md still shows `[GIST URL — INSERT AFTER CREATION]` as a placeholder — this needs to be filled with the confirmed live URL before the user sends.
+
+2. DEA DEADLINE CONFIRMED: May 28, 2026 is confirmed as the Federal Register deadline for DEA-1362 participation notices. The hearing is proceeding June 29 – July 15, 2026, Arlington VA. No deadline extension found. The hearing is a new proceeding (prior 2024 proceedings were terminated and restarted). All prior participation notices are void; fresh notices required.
+
+3. CONTACT CORRECTIONS REQUIRED:
+   - **Mason Marks**: Primary institution has changed. The existing template (Category C, Template D42-C) references "Yale Law School." His PRIMARY appointment is now at **Florida State University College of Law** (Florida Bar Health Law Section Professor). He retains a visiting fellowship at Yale Law's Information Society Project and is senior fellow at Harvard Petrie-Flom (POPLAR project). Correct contact: mason.marks@fsu.edu (verify against fsu.edu/faculty directory before send; the yale.edu address may still forward or may not). The urgency template already notes "(confirm current institutional email before sending; he may have moved institutions)" — this note is vindicated.
+   - **Washington State AG**: The contact list references "Bob Ferguson (now Governor)" and flags this as requiring verification. Confirmed: **Nick Brown is the current Washington State AG** (elected November 2024, in office January 2025). Contact: atg.wa.gov/about-nick-brown. The template already has the correct verification flag — the verification is now complete.
+   - **NORML Leadership**: Randy Quast is confirmed as Acting Executive Director (post-Erik Altieri March 2023 departure). Paul Armentano is Deputy Director. The Wave 1 email package correctly addresses emails to "NORML Policy Team" rather than a specific individual — this is the right call and no change needed.
+   - **DPA Leadership**: Kassandra Frederique confirmed current as Executive Director (since September 2020). No changes needed.
+   - **ACLU Criminal Law Reform**: Brandon Buskey confirmed current as Director. No changes needed.
+   - **Sentencing Project**: Kara Gotsch confirmed current as ED, Nazgol Ghandnoosh as Research Director. No changes needed.
+   - **LEAP**: Lt. Diane Goldstein confirmed active through February 2026. No changes needed.
+
+4. TEMPLATE STATUS: The **active send template is `domain-42-email-template-may28-urgency.md`** (May 9 edition). The original `domain-42-email-template.md` (May 7) is superseded. The Wave 1 email package (`DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md`) contains 5 copy-paste-ready emails plus pre-drafted participation notices. Templates are compelling, well-targeted, and accurately frame the deadline.
+
+5. ONE REQUIRED UPDATE BEFORE SEND: The `DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3 emails all contain `[GIST URL — INSERT AFTER CREATION]` placeholders. These must be replaced with `https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab` before sending. The Section 5 Gist walkthrough already has the correct note at the bottom: "verify whether that Gist is already live... if it is live and correct, use that URL instead."
+
+6. WAVE TIMING SLIPPAGE: The original contact list scheduled Wave 1 for May 8 (Category A), Wave 2 for May 10-12 (Category B + C), Wave 3 for May 14-17 (Category D). As of May 13, none of these waves have been sent (the emails are staged, not sent). The urgency strategy document (also May 13) recalibrated to a May 15 launch date. Effective outreach window: May 14-21 (8 days). This is compressed but viable if the user executes immediately.
+
+7. GIST CREATION PROCEDURE: The 10-step procedure in `domain-42-gist-creation-steps.md` is complete, accurate, and coherent. It is now moot since the Gist is already live. No changes needed.
+
+**Blockers**: None for execution. One required fill (Gist URL in Wave 1 email package). One contact correction (Mason Marks institution). One contact confirmation complete (Washington AG = Nick Brown).
+
+**Net assessment**: Materials are execution-ready. User action needed: (a) fill Gist URL into the 5 emails in DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md Section 3, (b) update Mason Marks contact to mason.marks@fsu.edu (verify before send), (c) send Wave 1 by May 14-15 morning, (d) follow urgency strategy timeline from there.
+
+---
+
+## May 13, 2026 — Research Agent — Domain 42 Outreach Urgency Strategy
+
+**Status**: COMPLETE
+
+**File created**:
+- `projects/resistance-research/execution/DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` — Production-ready single-page execution reference (~1,900 words) operationalizing the May 28 DEA-1362 participation notice deadline into a May 15-anchored contact sequencing plan
+
+**Key findings**:
+- May 28 is confirmed as the Federal Register deadline for written notice of desired participation in DEA Docket No. DEA-1362 (marijuana rescheduling hearing). Hearing itself runs June 29 – July 15, 2026, Arlington VA. Mail postmark deadline is May 20; practical electronic deadline is May 24–25.
+- Existing `domain-42-phase-1-outreach-prioritization.md` (May 9) provides the authoritative tier/wave structure; this document re-anchors everything to a May 15 launch assumption (4 days compressed from May 9 baseline) and synthesizes across all companion files into a single deployable reference.
+- Path A and Path A+37 are both viable for the May 28 window; Path B requires carving Domain 42 sub-batch out of the staged framework as a standalone send.
+- Hard stop for new institutional contacts: May 21. After that date, no new organizations can be meaningfully reached before the filing deadline.
+
+**Document structure**: 6 sections — DEA hearing context (verified dates and docket), prioritized contact list (Priority 1: DPA, NORML, ACLU, Sentencing Project, LEAP by May 15–16; Priority 2: NAACP LDF, MPP, SSDP, ASA, CA AG, CO AG by May 18), email sequencing timeline, success metrics with tracking methodology, contingency planning, and path decision integration.
+
+---
+
 ## May 13, 2026 — Resistance Research Subagent — Phase 2 Domains 38-40 Production (Exploration Queue Item: Phase 2 Expansion Domains 38-40)
 
 **Status**: COMPLETE
