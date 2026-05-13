@@ -1,40 +1,40 @@
 # Check-in
 
-## Session 965 — May 13, 2026 03:15–03:35 UTC (Phase 2 Cross-Reference Integration)
+## Session 966 — May 13, 2026 03:35–03:55 UTC (Phase 2 Cross-Reference Integration + Orchestration)
 
 **Status**: ✅ SESSION COMPLETE — Exploration Queue Item 33 delivered; framework production-ready for distribution
 
 ### Work Completed
 
 **✅ resistance-research — Phase 2 Cross-Reference Integration COMPLETE (Exploration Queue Item 33)**
-- **Domain 1 (Voting Rights)**: Added May 2026 Callais cascade section — six-state special sessions, May 11 Alabama stay (unsigned 5-4), 30-day injunction filing window, hard cross-reference to Domain 49 as primary analysis
-- **Domain 31 (Healthcare-Democracy Nexus)**: Added NVRA Section 7 enforcement angle — six post-Callais states coextensive with OBBBA non-expansion + purge leaders; identified state AG coalition federal litigation pathway independent of healthcare APA challenge
-- **Domain 33 (State Legislative Autocratization)**: Added state AG litigation strategy — integrated three-statute theory (VRA Section 2 + Arlington Heights + Section 3 bail-in + NVRA Section 7 enforcement) as coordinated federal response
-- **Litigation Tracker**: Created `litigation-tracker-2026.md` with May 11 Alabama stay anatomy and five-state session table (status, target districts, injunction filing deadlines); Mississippi May 20 session creates June 20 filing deadline window
+- **Domain 1 (Voting Rights)**: Added Section 3.2a analyzing three-ruling VRA destruction circuit (Shelby County 2013 → Brnovich 2021 → Callais 2026) — documents May 11 Alabama stay (unsigned 5-4 Sotomayor dissent marker), 30-day preliminary injunction filing window, three-stage legislative remedy architecture. Seven citations from Domain 49.
+- **Domain 31 (Healthcare-Democracy Nexus)**: Added comprehensive Domain 50 cross-reference with NVRA Section 7 enforcement theory, June 1 HHS rule audit anchor, June 30–August 31 state AG outreach window, and Medicaid AVR 99% conversion framework.
+- **Domain 33 (State Legislative Autocratization)**: Added per-state preliminary injunction timing (May 30–June 20 critical filing deadline) and Domain 37 cross-reference framing ICE enforcement as complementary voter suppression layer (dilution via redistricting + intimidation via enforcement).
+- **Litigation Tracker**: Created `litigation-tracker-2026.md` with structured entries — Category 10: Louisiana v. Callais (6-3 ruling, May 11 Alabama stay, May 31–June 15 advocacy window, five-state special session table with injunction deadlines).
 
 **Framework Status**: 
-- 41+ domains production-ready (Phase 1 + Phase 2 Domains 48-50 + all cross-references complete)
+- 41+ domains production-ready (Phase 1 + Phase 2 Domains 48-50 + cross-references complete)
 - All Phase 2 integrations complete and committed to master
 - Distribution materials staged and ready for execution
-- **Awaiting user distribution path decision** (A / A+37 / B) — user decision triggers Phase 1 execution immediately
+- **Awaiting user distribution path decision** (A / A+37 / B) → Phase 1 execution begins immediately upon decision
 
 ### Critical Dates
 | Date | Milestone | Status |
 |------|-----------|--------|
-| May 14 20:00 UTC | Stockbot checkpoint | T~21h, code verified ready ✅ |
+| May 14 20:00 UTC | Stockbot checkpoint | T~20h, code verified ready ✅ |
 | May 28 | Domain 42 DEA deadline | Tier 1 distribution must reach audiences by May 21 |
 | June 5 | Domain 48 FISA window closes | 6-week distribution window for Senate Judiciary/Intelligence |
 | May 30 | Seedwarden Phase 2 launch | Awaiting user account setup gates |
 
 ### User Actions Required
-1. **Resistance-research path decision** (URGENT — 15d to May 28): Choose Path A (immediate) / A+37 Hybrid (recommended) / B (Phase 2 expansion)
-2. **Stockbot checkpoint execution** (May 14 20:00 UTC): Run checkpoint query; classify outcome (PASS / NEAR_MISS / FAR_MISS)
+1. **Resistance-research path decision** (URGENT — 15d to May 28 Domain 42 deadline): Choose Path A (immediate) / A+37 Hybrid (recommended) / B (Phase 2 expansion) → triggers Phase 1 execution
+2. **Stockbot checkpoint execution** (May 14 20:00 UTC T~20h): Run `uv run python scripts/may14_checkpoint_query_alpaca.py`; classify outcome (PASS / NEAR_MISS / FAR_MISS)
 
 ### Session Metrics
-- **Effort**: ~20 minutes (parallel agent execution)
-- **Autonomous work**: Exploration Queue Item 33 (Phase 2 cross-reference integration)
-- **Deliverables**: 4 domain updates + litigation tracker + updated PROJECTS.md
-- **Commits**: a43d513a (orchestration state)
+- **Effort**: ~20 minutes (parallel agent + orchestration)
+- **Autonomous work**: Exploration Queue Item 33 (Phase 2 cross-reference integration) ✅ COMPLETE
+- **Deliverables**: 4 domain updates + litigation tracker file + WORKLOG/CHECKIN updates
+- **Commits**: 4 clean commits to master (domain 1, domain 31, domain 33, tracker)
 
 ### Next Session Priorities
 1. **Stockbot May 14 checkpoint** (17+ hours): Verify Jetson connectivity & prepare for 20:00 UTC checkpoint execution

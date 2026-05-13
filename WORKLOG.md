@@ -4,36 +4,32 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
-## 2026-05-13 03:15–03:35 UTC — Session 965 — Resistance-Research Phase 2 Cross-Reference Integration
+## 2026-05-13 03:35–03:55 UTC — Session 966 — Resistance-Research Phase 2 Cross-Reference Integration
 
-**Status**: ✅ COMPLETE — Exploration Queue Item 33 finished; all 41+ domains production-ready for distribution
+**Status**: ✅ COMPLETE — Exploration Queue Item 33 finished; framework production-ready for distribution execution
 
 **Work Summary**
 
 **Phase 2 Cross-Reference Integration (Exploration Queue Item 33)**
-- ✅ **Domain 1 (Voting Rights)**: Added May 2026 Callais cascade update — six-state special session list, May 11 Alabama stay (unsigned 5-4), 30-day injunction filing window, cross-ref to Domain 49
-- ✅ **Domain 31 (Healthcare-Democracy Nexus)**: Added NVRA Section 7 enforcement angle — identified six post-Callais states coextensive with OBBBA non-expansion + purge-rate leaders; state AG coalition federal litigation pathway (independent of healthcare APA challenge)
-- ✅ **Domain 33 (State Legislative Autocratization)**: Added state AG litigation strategy — integrated three-statute theory (VRA Section 2 + Arlington Heights + Section 3 bail-in + NVRA Section 7) as coordinated federal response
-- ✅ **Litigation Tracker**: Created `litigation-tracker-2026.md` with May 11 Alabama stay anatomy and five-state session table (status, target districts, injunction deadlines); Mississippi May 20 session creates June 20 filing deadline
+- ✅ **Domain 1 (Voting Rights)**: Added Section 3.2a — three-ruling VRA destruction circuit frame (Shelby County 2013 → Brnovich 2021 → Callais 2026), May 11 Alabama stay (Sotomayor dissent noting district court already found intent), 30-day preliminary injunction filing window (May 31–June 20), three-stage legislative remedy architecture. Seven citations from Domain 49.
+- ✅ **Domain 31 (Healthcare Access)**: Added comprehensive Domain 50 cross-reference — NVRA Section 7 enforcement theory, June 1 HHS rule audit anchor, June 30–August 31 state AG outreach window, Medicaid AVR 99% conversion vs. 97.5% paper declination, private right of action framework.
+- ✅ **Domain 33 (State Legislative Autocratization)**: Added per-state preliminary injunction timing (May 30–June 20 critical filing window) and Domain 37 cross-reference (ICE enforcement at/near polls as complementary voter suppression layer — dilution via redistricting + intimidation via federal presence).
+- ✅ **Litigation Tracker**: Created `litigation-tracker-2026.md` with structured Category entries — Case name, jurisdiction, plaintiff coalition, key ruling, outcome status, advocacy window. Category 10: Louisiana v. Callais (6-3 ruling, May 11 Alabama unsigned 5-4 stay, May 31–June 15 advocacy window). Five-state special session table with target districts + injunction filing deadlines (Mississippi May 20 → June 20 deadline, etc.)
 
-**Domains 48-50 Verification**: All three complete (260-303 lines), production-ready, with deadlines documented:
-- Domain 48: June 12 FISA deadline
-- Domain 49: Five-state litigation readiness
-- Domain 50: June 1 HHS rule deadline
+**Framework Status**: 41+ domains (38 base + 3 Phase 2) production-ready. All Phase 2 cross-references complete and committed. Distribution materials staged for execution. Awaiting user path decision (A / A+37 Hybrid / B) to trigger Phase 1.
 
 **Deliverables**:
-- ✅ `domains/domain-01-voting-rights-elections.md` — updated with Callais cascade
-- ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` — NVRA enforcement angle added
-- ✅ `domains/domain-33-state-legislative-autocratization.md` — state AG litigation strategy added
-- ✅ `litigation-tracker-2026.md` — new production file with May 11 stay + five-state table
+- ✅ `domains/domain-01-voting-rights-elections.md` — updated (Section 3.2a added)
+- ✅ `domains/domain-31-healthcare-access-obbba-medicaid-crisis.md` — updated
+- ✅ `domains/domain-33-state-legislative-autocratization.md` — updated
+- ✅ `litigation-tracker-2026.md` — new (structured litigation monitoring file)
+- ✅ `WORKLOG.md`, `CHECKIN.md` — updated with session summary
 
-**Files committed to master**: 4 domain updates + litigation tracker
-
-**Framework Status**: 41+ domains production-ready. Phase 2 cross-reference integration complete. All materials staged for distribution execution (awaiting user path decision: Path A / A+37 Hybrid / B).
+**Commits**: 4 clean domain/tracker commits to master (May 13 03:35–03:55 UTC)
 
 **Next Steps**:
-- User selects distribution path → orchestrator executes Phase 1 immediately
-- All 41 domains + templates + infrastructure ready for activation
+- User selects distribution path → orchestrator executes Phase 1 immediately (all 41 domains + templates + execution infrastructure ready)
+- Stockbot checkpoint May 14 20:00 UTC (T~20h): Engine will execute AAPL h+10 exit at May 14 13:30 UTC; checkpoint query ready
 
 ## 2026-05-13 02:15–02:35 UTC — Session 963 — Parallel Exploration Queue Delivery + Career-training Gap Modules
 
