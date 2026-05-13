@@ -56,7 +56,7 @@
 **Status**: Active — ready to prototype
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/mfg-farm/`
-**Current focus**: Session 938: All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
+**Current focus**: Session 960: Test print awaiting user execution. All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: user to execute test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
 
 **Blocked on**: Test print (user action required — see focus above)
 **Notes**: Automation is the core constraint — products and workflows must be designed for minimal human touchpoints per unit. Physical products mean real fulfillment costs (packaging, shipping, storage) — factor these in from the start. Etsy and Amazon have different fee structures and audiences; may want both. Scaling from 1→N printers requires thinking about file management, queue management, quality control, and packaging throughput — not just the printers themselves.
@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 938: 38+ domains production-ready (Phase 1+2 complete, trackers current May 9). Domain 42 DEA hearing deadline May 28.
+**Current focus**: Session 960: 38+ domains production-ready (Phase 1+2 COMPLETE, trackers current May 13). User decision needed: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — Tier 1 distribution must reach audiences before May 21 to allow May 28 comment deadline compliance. All materials production-ready; awaiting path decision.
 
 
 **Session 876 Deliverables**:
@@ -298,7 +298,7 @@
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Session 938: Phase 2 Scenario Playbooks complete (all 4 playbooks, May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline).
+**Current focus**: Session 960: Phase 2 Scenario Playbooks complete (all 4 playbooks updated through May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). User approval needed for Phase 1 Tier 1 launch + Day 1 send date. Tier 2 messaging templates + distribution prep complete and staged. All materials production-ready.
 
 
 **Session 876 Deliverables**:
@@ -609,7 +609,7 @@
 **Status**: Paused — resume when user unpauses
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-source-rideshare/`
-**Current focus**: Session 938: Project paused. Last active Session 407 — driver document expiry endpoints complete (6,154 tests passing, branch `feature/driver-navigation`). Resume when user unpauses.
+**Current focus**: Session 960: Project paused. Last active Session 407 — driver document expiry endpoints complete (6,154 tests passing, branch `feature/driver-navigation`). All systems in clean state. Resume when user unpauses.
 
 **Blocked on**: —
 **Notes**: This is the only public project. Higher standards for documentation, test coverage, and code quality since it's community-facing. Regulatory/safety/security solutions and growth strategy are in scope alongside the technical build.
@@ -622,7 +622,7 @@
 **Status**: Active — Phase 1 upload pending user tag corrections; **Phase 2 execution ready (May 30 launch target)**; **Phase 3 execution-layer assets COMPLETE (June 15–July 1 launch ready)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: Session 938: Phase 3 execution assets complete — 7 production-ready files (execution guide, Canva briefs, broadcast sequence, social templates, KPI dashboard, landing pages). Phase 2 target May 30, Phase 3 June 15–July 1. Track B unblocked. **Blocked (Track A)**: tag corrections + Etsy account verification.
+**Current focus**: Session 960: Phase 1 upload awaiting user tag corrections + Etsy account verification (Track A blocked). Phase 2 execution-ready for May 30 launch target. Phase 3 execution-layer assets COMPLETE — 7 production-ready files (execution guide, Canva briefs, broadcast sequence, social templates, KPI dashboard, landing pages) staged for June 15–July 1 launch. Track B (Phase 2 launch) has no blockers — awaiting Phase 1 completion first.
 
 
 **Phase 2 Status (Track B)**:
@@ -720,7 +720,7 @@
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
 **Visibility**: Public — GitHub repo: `https://github.com/esca8peArtist/off-grid-living-guide` (live as of 2026-04-26)
 **Working dir**: `projects/off-grid-living/`
-**Current focus**: Session 938: GitHub publication complete. Social media execution toolkit ready (`social-media-execution-toolkit.md`). No further autonomous work available — awaiting user execution of distribution plan.
+**Current focus**: Session 960: GitHub publication complete and live (2026-04-26). Social media execution toolkit ready (`social-media-execution-toolkit.md`). No further autonomous work available — awaiting user execution of distribution plan. All 17 domain documents production-ready and published.
 
 
 **Session 697 (2026-04-30) — Phase 2 Social Media Execution Toolkit COMPLETE** ✅:

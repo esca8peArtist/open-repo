@@ -31,6 +31,14 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Resolved Archive
 
+### mom-projects — Discord user ID not set; mom's messages not being routed
+**Date blocked**: 2026-05-13
+**Date resolved**: 2026-05-13 (02:08 UTC)
+**Context**: mom-projects project created and Discord bot updated to route her messages to INBOX.md, but `DISCORD_MOM_USER_ID` in `~/.claude_env` was blank.
+**Resolution**: RESOLVED — User ID 762099349903245313 added to `~/.claude_env`, bot restarted and verified running. Mom's messages now route to `[mom-projects]` in INBOX.md.
+
+---
+
 ### stockbot — DB sync script missing on Jetson; checkpoint query returns wrong results
 **Date blocked**: 2026-05-13
 **Date resolved**: 2026-05-13 (Session 957, 00:28 UTC)

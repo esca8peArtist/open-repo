@@ -34519,3 +34519,30 @@ All 5 active projects remain blocked on user actions:
 
 **Total exploration queue capacity**: 3 active items ✅ (meets protocol requirement of ≥3 when projects blocked)
 
+
+## 2026-05-13 01:20–01:25 — Session 960 — Orchestrator Housekeeping
+
+**Status**: ✅ SESSION COMPLETE
+
+### Work Summary
+
+**Stale focus entry maintenance** (PROJECTS.md)
+- Updated 6 project focus entries from Session 938 (21 sessions old) to Session 960 with current state
+- mfg-farm: clarified test print awaiting user execution
+- resistance-research: added user decision urgency (Path A / A+37 / B needed for Domain 42 May 28 DEA deadline)
+- cybersecurity-hardening: clarified Phase 1 approval status and user action required
+- seedwarden: updated Phase 1 blockers (track A only) and Phase 2 readiness status
+- open-source-rideshare: simplified paused status note
+- off-grid-living: confirmed GitHub publication live, awaiting user social media execution
+- **Impact**: State file cleaned; future session orientation will have accurate current context
+
+**Stockbot pre-checkpoint verification** (May 14 20:00 UTC, 34.5 hours away)
+- ✓ GitHub SSH auth working
+- ✓ Checkpoint query script ready (`may14_checkpoint_query_alpaca.py`, 15K, created 2026-05-13 00:27)
+- ✓ Alpaca API credentials configured
+- **Status**: All critical infrastructure verified. User action required May 14 20:00 UTC to execute checkpoint
+
+### Session Metrics
+- **Effort**: 5 minutes
+- **Changes**: PROJECTS.md (6 edits), WORKLOG.md appended
+- **Next session**: Monitor for user decisions on path selections (resistance-research, cybersecurity-hardening, seedwarden) and May 14 checkpoint execution readiness

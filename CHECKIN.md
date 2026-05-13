@@ -1,5 +1,53 @@
 # Check-in
 
+## Session 960 — May 13, 2026 01:20–01:25 UTC (Orchestrator Housekeeping)
+
+**Status**: ✅ SESSION COMPLETE — Stale state entries refreshed; critical infrastructure verified
+
+### Work Completed
+
+**Stale focus entry maintenance** — Updated all 6 projects with outdated Session 938 references to current Session 960 state
+- **Files modified**: PROJECTS.md (6 entries refreshed)
+- **Projects updated**: mfg-farm, resistance-research, cybersecurity-hardening, seedwarden, open-source-rideshare, off-grid-living
+- **Impact**: Orientation clarity improved for future sessions; accurate state snapshots maintained
+
+**Stockbot pre-checkpoint verification** — Critical infrastructure audit (May 14 20:00 UTC checkpoint in 34.5 hours)
+- ✓ GitHub SSH authentication working
+- ✓ Checkpoint query script ready (`may14_checkpoint_query_alpaca.py`, 15KB)
+- ✓ Alpaca API credentials configured
+- **Status**: All prerequisites verified. User execution required May 14 20:00 UTC.
+
+### Session Metrics
+- **Total time**: ~5 minutes
+- **Commits needed**: 1 (state file updates only)
+- **Status**: Preparation complete; waiting for user decisions on path selections
+
+### Project Status (No Changes to Project State)
+
+All projects remain in same status as Session 959 — awaiting user decisions/actions:
+- **stockbot**: May 14 checkpoint ready (34.5 hours away)
+- **resistance-research**: Path decision needed (Path A / A+37 / B) — Domain 42 DEA deadline 15 days away
+- **cybersecurity-hardening**: Phase 1 approval needed
+- **seedwarden**: Track A blocked on user tag corrections; Track B ready for Phase 2 launch May 30
+- **mfg-farm**: Test print completion awaited
+
+### Critical Milestones (Unchanged)
+
+1. **May 14 20:00 UTC** (34.5 hours away): ⚡ **IMMINENT** — Stockbot checkpoint execution
+2. **May 19** (6 days away): Seedwarden Bundle E publication window opens
+3. **May 28** (15 days away): Domain 42 DEA participation deadline (Phase 1 must begin immediately upon path decision)
+4. **June 1** (19 days away): Cybersecurity-hardening Phase 1 launch target
+5. **June 15** (33 days away): Multiple phase gates and decision checkpoints
+
+### Needs Your Input (Unchanged)
+
+1. **Resistance-Research Path Decision** — URGENT: Choose A / A+37 / B for Phase 1 execution
+2. **Cybersecurity-Hardening Phase 1 Approval** — June 1 target subject to user approval
+3. **Stockbot Checkpoint Execution** — May 14 20:00 UTC (execute checkpoint query script)
+4. **Seedwarden May 19 Launch Confirmation** — Confirm launch approval for May 15-18 platform setup
+
+---
+
 ## Session 959 — May 13, 2026 00:49–04:20 UTC (Exploration Queue Complete: Items 28-30)
 
 **Status**: ✅ SESSION COMPLETE — ALL 3 EXPLORATION ITEMS DELIVERED (28, 29, 30); preparation complete for immediate post-approval execution
