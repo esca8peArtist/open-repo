@@ -2757,6 +2757,27 @@ This mismatch means:
 
 ---
 
+## Session 987 Summary
+
+**Autonomous work completed**: Resistance-research Phase 1 distribution infrastructure fully staged and ready for user execution. Two parallel subagents executed comprehensive distribution readiness analysis and Domain 42 Wave 1 email staging.
+
+**What this enables**:
+- Domain 42 Wave 1 can execute in **10–15 minutes** (fill 2 fields per email + send)
+- Phase 1 full distribution can execute in **3.5–4 hours** once user decides on path
+- May 28 DEA deadline now has a clear execution path with 15-day window for organizations to file participation notices
+
+**Critical path for next 15 days**:
+1. **TODAY or May 14 morning** — Execute Domain 42 Wave 1 (10–15 min)
+2. **May 14 morning** — Decide on Phase 1 distribution path (A / A+37 / B)
+3. **May 14 afternoon** — Execute Phase 1 Batch 1 if path decided
+4. **May 14 20:00 UTC** — Run stockbot checkpoint query
+5. **May 21** — Domain 42 final send deadline (organizations need 7 days minimum to file by May 28)
+6. **May 28** — Hard deadline (Domain 42 DEA participation notice due)
+
+**No further orchestrator work needed until May 14 checkpoint** — all Phase 1 infrastructure is staged and ready. User actions are gated on decisions, not on missing materials.
+
+---
+
 ## In Progress
 
 - **Stockbot**: Monitoring until May 14 20:00 UTC checkpoint (expect AAPL h+10 SELL fills). No orchestrator work until checkpoint outcome.
