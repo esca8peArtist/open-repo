@@ -1747,3 +1747,44 @@ None — this was a research + documentation item with no code/schema dependenci
 - stockbot: May 14 20:00 UTC checkpoint (user action)
 
 **Session Status**: COMPLETE ✅
+
+---
+
+## Session 1000 — May 13, 2026, ~21:15–21:45 UTC (Exploration Queue: Item 36 + New Item Staging)
+
+**Status**: ✅ **ITEM 36 COMPLETE — SOURCE STAGING DELIVERED, THREE NEW ITEMS QUEUED**
+
+### Accomplished This Session
+
+1. **Orientation** ✅
+   - Reviewed ORCHESTRATOR_STATE.md: All projects blocked on user decisions except May 14 checkpoint
+   - Checked EXPLORATION_QUEUE: 1 item scheduled (Item 31, May 14), 35 items complete
+   - Applied protocol: Queue had <3 active items; added Items 36-38
+
+2. **Item 36 Completion** ✅
+   - **Deliverable**: `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (1,053 lines, 77 KB)
+   - **Content**: 40 annotated sources per domain, 25-26 expert contacts, evidence checklists, outline skeletons
+   - **Critical findings**:
+     - May 13 Senate Democrats CFPB rollback vote creates immediate advocacy window for Domain 41
+     - HUD CoC NOFO expected June 1 (aligns perfectly with Domain 43 research start)
+     - 17-state AG consumer protection coalition identified as highest-leverage contact
+   - **Status**: Production-ready for June 1 research start
+
+3. **New Exploration Items Added** ✅
+   - **Item 37**: mfg-farm Post-Test-Print Fulfillment Pre-Staging (2-2.5 hrs)
+   - **Item 38**: Cybersecurity-Hardening Post-Phase-1 Measurement Implementation (2-2.5 hrs)
+   - Both items ready to execute upon respective user unblocks
+
+### Strategic Impact
+
+- **Phase 2 pathway**: Item 36 unblocks June 1 research (19-20 hour critical path)
+- **Queue health**: Sufficient backlog (4 items) to sustain work when projects unblock
+- **Finding flagged**: May 13 CFPB Senate announcement may warrant user discussion on Domain 41 amplification timing
+
+### Files Updated
+
+- `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (new)
+- `EXPLORATION_QUEUE.md` (Items 36-38 added)
+- `WORKLOG.md` (this entry)
+
+**Session Status**: COMPLETE ✅

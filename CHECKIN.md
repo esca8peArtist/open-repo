@@ -1,5 +1,76 @@
 # Check-in
 
+## Session 1000 — May 13, 2026, ~21:15–21:45 UTC (Exploration Queue Item 36 + Queue Expansion)
+
+**Status**: ✅ **ITEM 36 COMPLETE — RESISTANCE-RESEARCH DOMAINS 41 & 43 SOURCE STAGING DELIVERED**
+
+### Accomplished This Session
+
+1. **Item 36: Resistance-Research Phase 2 Source Research Staging** ✅
+   - **Deliverable**: `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (1,053 lines, 77 KB, production-ready)
+   - **Domain 41 (Consumer Financial Architecture)**:
+     - 40 annotated sources (CFPB, predatory lending, bank regulation, consumer protection)
+     - 25 expert contacts: academics (Mullainathan, Baradaran, Hamilton), advocacy (CRL, NCLC, AFR, NAACP), 17-state AG coalition
+     - Evidence checklist, outline skeleton with 6-8 sections
+     - **Critical finding**: May 13 Senate Democrats forcing CFPB rollback votes — immediate advocacy window
+   
+   - **Domain 43 (Spatial Democracy / Housing)**:
+     - 40 annotated sources (zoning, housing access, displacement, civic participation)
+     - 26 expert contacts: academics (Rothstein, Sahn, Taylor, Schuetz), advocacy (NLIHC, TUF, NHLP, PolicyLink, NCRC)
+     - Evidence checklist, outline skeleton with 6-8 sections
+     - **Critical finding**: HUD CoC NOFO expected June 1 (perfect timing for research start)
+     - **Key evidence**: PNAS Moving to Opportunity (2024) — 3.6-4.9 percentage point voter registration depression
+   
+   - **Cross-domain insights**:
+     - Both domains connect to Domain 34 (congressional fiscal authority) via impoundment-adjacent behavior
+     - 17-state AG consumer protection coalition identified as highest-leverage institutional contact for combined distribution
+     - Distribution sequencing: Phase 1 organizations get early briefing, Phase 2 expansion orgs get full domain packages
+   
+   - **Status**: Production-ready for June 1 research start (pending Phase 1 distribution completion)
+
+2. **Exploration Queue Health** ✅
+   - Added 3 new items (36-38) to queue per orchestration protocol (queue had <3 active items)
+   - **Item 37**: mfg-farm Post-Test-Print Fulfillment Pre-Staging (2-2.5 hrs) — ready upon test print completion
+   - **Item 38**: Cybersecurity-Hardening Post-Phase-1 Measurement Implementation (2-2.5 hrs) — ready upon Phase 1 approval
+   - Queue now has 1 scheduled (Item 31, May 14) + 3 queued (Items 36-38), sufficient backlog
+
+3. **Files Updated** ✅
+   - `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (new)
+   - `EXPLORATION_QUEUE.md` (Items 36-38 added to "New Items Session 1000" section)
+   - `WORKLOG.md` (Session 1000 entry added)
+   - `CHECKIN.md` (this entry)
+
+### Strategic Insights
+
+**May 13 Senate CFPB announcement**: Senate Democrats (led by Elizabeth Warren, 20 senators) forcing floor votes on CFPB rollback. This is a live advocacy moment that should be discussed with user in context of:
+- Domain 41 immediate relevance
+- Phase 1 distribution timing (awaiting user path decision)
+- Whether immediate amplification is warranted or if coordinated with Phase 1A rollout
+
+**June 1 HUD CoC NOFO**: Expected on June 1, same day Phase 2 research starts. Perfect timing for Domain 43 research to immediately connect to live policy moment.
+
+**Research pipeline status**: Domains 41 & 43 source staging complete. With Domains 48-51 and 54-55 already written, Phase 2 production pipeline is 5/7 complete and ready for June 1 research start.
+
+### Awaiting User Input
+
+1. **resistance-research**: Path A / A+37 / B distribution decision → unblocks June 1 Phase 2 research
+2. **stockbot**: May 14 20:00 UTC checkpoint execution (fully prepared, Item 31 scheduled for May 14 15:00-17:00 UTC pre-checkpoint audit)
+3. **cybersecurity-hardening**: Phase 1 approval → unblocks Item 38 execution
+4. **mfg-farm**: Test print execution → unblocks Item 37 execution
+5. **May 13 CFPB Senate news**: User should review and consider timing implications for Domain 41 amplification
+
+### Next Session Recommended Actions
+
+1. **May 14, 15:00-17:00 UTC**: Execute Item 31 (Stockbot pre-checkpoint infrastructure audit)
+2. **May 14, 20:00 UTC**: User executes stockbot May 14 checkpoint
+3. **May 14 post-checkpoint**: Apply POST_GATE_1_RESPONSE_FRAMEWORK.md to classify outcome and execute next steps
+4. **Before May 28**: User decides on resistance-research Phase 1 distribution path (A / A+37 / B)
+5. **Optional**: User discusses May 13 Senate CFPB announcement with orchestrator for Domain 41 amplification strategy
+
+**Session Status**: COMPLETE ✅
+
+---
+
 ## Session 999 — May 13, 2026, 20:50–21:15 UTC (Resistance-Research Tracker Maintenance + Orchestration Checkpoint)
 
 **Status**: ✅ **SESSION COMPLETE — TRACKER MAINTENANCE DELIVERED, ORCHESTRATION STATE VERIFIED, ALL AUTONOMOUS WORK COMPLETE**

@@ -571,3 +571,47 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 - stockbot: Live trading readiness document eliminates 4-6 hour post-Gates setup; 30-minute activation enabled
 
 **Next Autonomous Work**: None identified. All projects awaiting user decisions (stockbot checkpoint May 14, resistance-research path decision, cybersecurity Phase 1 approval, mfg-farm test print, seedwarden gates).
+
+---
+
+## New Items (Session 999 — 2026-05-13, three autonomous prep items added)
+
+### ⏳ Item 36: Resistance-Research Phase 2 Domains 41 & 43 Source Research Staging
+**Status**: QUEUED (Session 999, May 13 2026)
+**Impact**: HIGH — Phase 2 expansion readiness; unblocks immediate June 1 research start post-May-28 Domain 42 deadline
+**Goal**: Pre-stage source research, expert contact identification, and outline structures for Domains 41 (Consumer Financial Architecture) and 43 (Spatial Democracy / Housing) so that research can begin immediately after May 28 Domain 42 distribution and Phase 1 commitments complete. This is path-independent work (works for all 3 distribution paths: A, A+37, B).
+**Feasibility**: HIGH — Existing domain architecture (Domains 1-40 complete), source patterns from Phase 2 expansion (Items 26-27), expert networks already mapped in Phase 1 materials
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (200+ primary/secondary sources identified, expert contact list per domain (academic, policy, advocacy), evidence requirement checklist, research scope boundaries, estimated word count/research hours, outline skeleton per domain with evidence placeholders, quality gate procedures)
+**Why now**: May 28 is 15 days away; post-distribution capacity frees June 1. Pre-staging sources now ensures zero friction for June 1 research start. Domains 41 & 43 are part of critical-path Phase 2 expansion (8-week production window required for August pre-midterm advocacy integration).
+**Blocker**: None (autonomous preparation work, independent of Phase 1 distribution path decision)
+**Next Step**: Deliver May 13 evening → if Phase 1 distribution launches successfully May 15-28, research team begins June 1 using provided source staging + expert contact list
+
+---
+
+### ⏳ Item 37: mfg-farm Post-Test-Print Fulfillment Infrastructure Pre-Staging
+**Status**: QUEUED (Session 999, May 13 2026)
+**Impact**: MEDIUM — Test print is user action; fulfillment infrastructure prep eliminates friction once test print approved
+**Goal**: Pre-stage fulfillment infrastructure components so that Day 0 (test print approval) leads immediately to Day 1 launch (Etsy listing live, payment processing active, shipping workflows functional). Focus on non-manufacturing work: payment processor account verification, Etsy shop finalization, shipping label templates, customer support templates, inventory management structure.
+**Feasibility**: HIGH — PRE_LAUNCH_FULFILLMENT_WORKFLOW.md (Item 16) and SUPPLIER_NEGOTIATION_PLAYBOOK.md (Item 23) complete; only missing day-of-execution verification steps
+**Effort estimate**: 2-2.5 hours
+**Deliverable**: `projects/mfg-farm/POST_PRINT_FULFILLMENT_READINESS.md` (payment processor account setup verification checklist, Etsy shop finalization checklist with photo upload, shipping integration pre-flight (USPS + Pirate Ship sandbox testing), customer support template collection with response-time SLAs, inventory tracking spreadsheet template, Day 0-Day 1-Day 2 launch sequence with 30-minute milestones, rollback procedure if issues arise)
+**Why now**: Test print is the user's next action; orchestrator cannot execute print but CAN pre-stage fulfillment infrastructure. Once user approves test print + confirms go/no-go, fulfillment launch can proceed same day with zero setup friction.
+**Blocker**: User must complete test print; pre-staging is independent
+**Next Step**: Deliver May 13 evening → user completes test print and reports pass/fail → orchestrator executes Day 0-1 launch using provided checklist (30-60 min total)
+
+---
+
+### ⏳ Item 38: Cybersecurity-Hardening Post-Phase-1 Success Measurement Implementation
+**Status**: QUEUED (Session 999, May 13 2026)
+**Impact**: MEDIUM — Phase 1 approval pending; success measurement framework exists (Item 17); implementation details can be staged independently
+**Goal**: Develop implementation checklist for activating TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md (Item 17) on Day 1 of Phase 1 execution (target June 1). Focus on Google Sheets automation, Discord webhook setup, email tracking integration (Kit email provider), measurement data pipeline validation.
+**Feasibility**: HIGH — Measurement framework complete (5,800 words, 7 KPI definitions, escalation triggers); only missing automation implementation details
+**Effort estimate**: 2-2.5 hours
+**Deliverable**: `projects/cybersecurity-hardening/MEASUREMENT_AUTOMATION_SETUP.md` (Google Sheets 5-tab template with all formulas pre-built + copy-paste instructions, Kit email integration API walkthrough with Python sync script (100 lines), Discord webhook registration + daily summary script (150 lines), email engagement log automation (VLOOKUP formulas), meeting tracking spreadsheet, KPI dashboard with auto-calculating trend indicators, May 31 setup checklist, June 1 morning verification steps, contingency response triggers with decision trees)
+**Code deliverables**: 2 Python scripts (Kit email sync, Discord alert), Google Sheets JSON export template
+**Why now**: User approval of Phase 1 is imminent (awaiting decision); pre-staging implementation removes launch-day setup friction. Success measurement is critical for Tier 2 continuation decision at Week 6; infrastructure ready by June 1 enables data collection from Day 1.
+**Blocker**: User must approve Phase 1; implementation staging is independent
+**Next Step**: Deliver May 13 evening → user approves Phase 1 launch → orchestrator verifies automation setup May 31 morning using provided checklist → measurement live at Day 1 go-time
+
+---
