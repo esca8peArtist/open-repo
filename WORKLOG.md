@@ -1,5 +1,37 @@
 # Work Log
 
+## Session 981 — May 13, 2026, 10:30–11:45 UTC Autonomous Orchestrator (Parallel Agents: Resistance-research Domains 38-40 + Stockbot Position Sizing)
+
+**Status**: 🟢 PARALLEL EXPLORATION QUEUE COMPLETION — Two major items executed in single session: (1) Resistance-research Phase 2 Expansion Domains 38-40 ✅ (17,700 words, 123 citations total, committed to `feature/domains-38-40`), (2) Stockbot Multi-Ticker Position Sizing & Risk Aggregation Framework ✅ (production-ready, committed). Both deliverables ready for immediate integration.
+
+### ✅ Resistance-research Phase 2 Expansion: Domains 38–40 ✅
+
+**Deliverable**: Three production-ready domain documents committed to `feature/domains-38-40`
+- **Domain 38** (6,200 words, 39 citations): Tribal Sovereignty, Indigenous Democratic Design, Federal Trust Obligations
+  - Core: 370 ratified treaties enforceable under Supremacy Clause; defunding is state-equivalent government
+  - Baseline: DOGE terminated 25+ BIA leases; 1,000+ IHS departures; $911M cut (24% tribal programs); *Trump v. Barbara* SCOTUS (June/July) carries citizenship risk
+  - Advocacy: Multi-tribe Court of Federal Claims, district-level treaty impact one-pagers, pre-ruling rapid-response memos
+- **Domain 39** (5,200 words, 40 citations): Constitutional Architecture, Article V Convention Threat, Amendment Process Reform
+  - Core: Article V is durable reform mechanism AND runaway-convention vulnerability
+  - Baseline: Convention of States has 20 resolutions (14 short). Michigan/Wisconsin both vote Nov 3, 2026.
+  - Novel threat: ALEC aggregation theories (most underreported Article V vulnerability)
+- **Domain 40** (6,300 words, 44 citations): Congressional Fiscal Authority Restoration, Impoundment Control
+  - Core: Appropriations Clause is constitutional scaffolding against DOGE cancellations
+  - Baseline: Rescissions Act 2025 retroactively legitimized $9.4B impoundments; OMB Vought directed agencies to ignore GAO violations
+  - Audience: Appropriations staff, state AG litigators, admin law scholars (distinct distribution strategy)
+- **Status**: Production-ready for Phase 1 distribution. Cross-reference integration (Domains 1, 6, 26, 34) flagged for user authorization.
+
+### ✅ Stockbot Multi-Ticker Position Sizing & Risk Aggregation Framework ✅
+
+**Deliverable**: `projects/stockbot/POSITION_SIZING_FRAMEWORK.md` (production-ready, committed)
+- **Five critical code findings** (detailed inspection): (1) `compute_portfolio_sizes()` exists but never called in live path, (2) Concentration caps unenforced in order path, (3) Scalar application order matters (after normalization, not before), (4) Test suite conflict on HARD_MAX_PCT, (5) Leverage thresholds coexist cleanly
+- **Implementation priority**: (1) PortfolioAggregator.is_buy_allowed() with sector cap + drawdown halt, (2) Wire compute_portfolio_sizes() into live path, (3) Lower HARD_MAX_PCT from 0.15 to 0.10
+- **Gate 2 calibration**: Sharpe ≥1.0 via volatility reduction, MDD ≤20% via drawdown halt + 85% gross long cap, PF ≥1.5 via Tier 3 elimination
+- **Critical constraint**: 67 sessions × 5% cap = only model fitting $110K account
+- **Timeline**: Critical for post-May-14 checkpoint. Complete implementation May 21-28 for Gate 2 execution.
+
+---
+
 ## Session 980 — May 13 Autonomous: Stockbot Baseline Checks + Resistance-research Domains 38-40
 
 **Date**: 2026-05-13 09:13–10:30 UTC
