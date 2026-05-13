@@ -1,5 +1,48 @@
 # Check-in
 
+## Session 965 — May 13, 2026 03:15–03:35 UTC (Phase 2 Cross-Reference Integration)
+
+**Status**: ✅ SESSION COMPLETE — Exploration Queue Item 33 delivered; framework production-ready for distribution
+
+### Work Completed
+
+**✅ resistance-research — Phase 2 Cross-Reference Integration COMPLETE (Exploration Queue Item 33)**
+- **Domain 1 (Voting Rights)**: Added May 2026 Callais cascade section — six-state special sessions, May 11 Alabama stay (unsigned 5-4), 30-day injunction filing window, hard cross-reference to Domain 49 as primary analysis
+- **Domain 31 (Healthcare-Democracy Nexus)**: Added NVRA Section 7 enforcement angle — six post-Callais states coextensive with OBBBA non-expansion + purge leaders; identified state AG coalition federal litigation pathway independent of healthcare APA challenge
+- **Domain 33 (State Legislative Autocratization)**: Added state AG litigation strategy — integrated three-statute theory (VRA Section 2 + Arlington Heights + Section 3 bail-in + NVRA Section 7 enforcement) as coordinated federal response
+- **Litigation Tracker**: Created `litigation-tracker-2026.md` with May 11 Alabama stay anatomy and five-state session table (status, target districts, injunction filing deadlines); Mississippi May 20 session creates June 20 filing deadline window
+
+**Framework Status**: 
+- 41+ domains production-ready (Phase 1 + Phase 2 Domains 48-50 + all cross-references complete)
+- All Phase 2 integrations complete and committed to master
+- Distribution materials staged and ready for execution
+- **Awaiting user distribution path decision** (A / A+37 / B) — user decision triggers Phase 1 execution immediately
+
+### Critical Dates
+| Date | Milestone | Status |
+|------|-----------|--------|
+| May 14 20:00 UTC | Stockbot checkpoint | T~21h, code verified ready ✅ |
+| May 28 | Domain 42 DEA deadline | Tier 1 distribution must reach audiences by May 21 |
+| June 5 | Domain 48 FISA window closes | 6-week distribution window for Senate Judiciary/Intelligence |
+| May 30 | Seedwarden Phase 2 launch | Awaiting user account setup gates |
+
+### User Actions Required
+1. **Resistance-research path decision** (URGENT — 15d to May 28): Choose Path A (immediate) / A+37 Hybrid (recommended) / B (Phase 2 expansion)
+2. **Stockbot checkpoint execution** (May 14 20:00 UTC): Run checkpoint query; classify outcome (PASS / NEAR_MISS / FAR_MISS)
+
+### Session Metrics
+- **Effort**: ~20 minutes (parallel agent execution)
+- **Autonomous work**: Exploration Queue Item 33 (Phase 2 cross-reference integration)
+- **Deliverables**: 4 domain updates + litigation tracker + updated PROJECTS.md
+- **Commits**: a43d513a (orchestration state)
+
+### Next Session Priorities
+1. **Stockbot May 14 checkpoint** (17+ hours): Verify Jetson connectivity & prepare for 20:00 UTC checkpoint execution
+2. **Resistance-research post-path-decision** (if user decides): Phase 1 execution infrastructure is pre-staged; execution can begin within hours
+3. **Exploration Queue Item 32**: Career-training case studies & practice scenarios (40-50 hours, ready to start)
+
+---
+
 ## Session 964 — May 13, 2026 02:37–03:15 UTC (Phase 2 Domain Research + Exploration Queue Replenishment)
 
 **Status**: ✅ SESSION COMPLETE — 3 new Phase 2 domains delivered; Exploration Queue replenished
