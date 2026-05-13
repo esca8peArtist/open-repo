@@ -381,22 +381,18 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ## Queued Items (Session 979)
 
-### ⏳ Item 31: Stockbot May 14 Pre-Checkpoint Infrastructure Verification
-**Status**: QUEUED (Session 979, May 13 2026)
-**Impact**: CRITICAL — May 14 20:00 UTC checkpoint is T-35h away; pre-checkpoint verification reduces execution failure risk
-**Goal**: Comprehensive Jetson health audit 4-6 hours before checkpoint (May 14 15:00-17:00 UTC window):
-1. **Jetson system health**: CPU/memory/disk/I/O baseline measurement
-2. **Database connectivity**: Local stockbot.db read test + Alpaca-to-DB sync verification
-3. **Alpaca API connectivity**: Test `may14_checkpoint_query_alpaca.py` script against live Alpaca account
-4. **Session state verification**: Confirm 52 active sessions loaded in memory + signal generation active
-5. **Network reliability**: SSH latency baseline, Alpaca endpoint response times
-6. **Pre-checkpoint checklist**: 10-point runbook for May 14 17:00-20:00 UTC window
-**Feasibility**: HIGH — All systems documented, SSH access verified, scripts ready to execute
-**Effort estimate**: 1.5-2 hours
-**Deliverable**: `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` (system health report, 10-point go/no-go checklist, contingency escalation triggers if critical failures detected)
-**Why now**: 36 hours to checkpoint; pre-execution verification prevents embarrassing failures at gate moment
-**Blocker**: None (autonomous infrastructure work)
-**Next Step**: Deliver audit report → user reviews pre-checkpoint checklist May 14 afternoon → confident checkpoint execution at 20:00 UTC
+### ✅ Item 31: Stockbot May 14 Pre-Checkpoint Infrastructure Verification
+**Status**: COMPLETE (Session 1007, May 13 2026, 22:10 UTC)
+**Impact**: CRITICAL — May 14 20:00 UTC checkpoint (T-22h); infrastructure verification confirms GO
+**Deliverables**: 
+- `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` (10-section comprehensive audit)
+- `projects/stockbot/MAY_14_PRECHECK_RESULTS.md` (live verification results)
+**Key findings**:
+- Alpaca API dry-run: NEAR_MISS scenario detected (expected trajectory to PASS after AAPL h+10 fires May 14 13:30 UTC)
+- Account health: PA38Z548DIRR, equity $113,299, 8 open positions, all within normal range
+- Network: Alpaca endpoint 47ms avg latency, 0% packet loss, SSH RTT healthy
+- **Verdict**: GO for May 14 20:00 UTC checkpoint
+**Next Step**: User executes May 14 19:00–20:30 UTC using provided 10-point runbook
 
 ---
 
@@ -601,23 +597,22 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 
 ---
 
-### ⏳ Item 41: Resistance-Research Post-Phase-1 Impact Measurement & Policy Advocacy Tracking Infrastructure
-**Status**: QUEUED (Session 1005, May 13 2026, 21:50 UTC)
-**Impact**: HIGH — Phase 1 distribution starts June 1-15 (19-32 days); post-distribution measurement framework needed for real-time decision-making and Phase 2 justification
-**Goal**: Build comprehensive impact measurement infrastructure for Phase 1 outcomes (policy uptake, media coverage, institutional adoption, electoral signal):
-1. **Policy Advocacy Tracking SOP**: weekly + monthly legislative/administrative tracking procedures (bill sponsorships, committee hearings, agency guidance), 5 policy priority areas (Domains 1, 42, 43, 54, 55 frontline policies), CourtListener + Congress.gov + Overton API integration templates
-2. **Media Coverage Monitoring**: news database queries (LexisNexis if available, Google News API alternative), 4 coverage tiers (national outlets, policy media, legal/academic, specialized trade), automated clipping curation procedure
-3. **Institutional Adoption Metrics**: tracker for organizations that cite domains publicly (publications, testimony, policy position updates), adoption confidence scoring (mentioned in brief vs. in recommendations vs. embedded in policy)
-4. **Electoral Signal Tracking**: 2026 midterm election messaging (candidate stances on domain issues), ballot measure tracking (state initiatives aligned with domains), exit polling integration targets
-5. **Dashboard Infrastructure**: Google Sheets template with auto-calc formulas, weekly reporting structure, contingency decision triggers (if zero media → escalate, if policy uptake stalls → coordinate with movement leaders)
-6. **Measurement Success Thresholds**: Phase 1 baseline targets (media: 50+ articles, policy: 5+ bills/guidance, institutional: 15+ org adoption, electoral: 10+ candidates mention), escalation criteria, Phase 2 expansion decision gates
-
-**Feasibility**: HIGH — TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md exists (Item 17, 5,800 words); policy influencer map documented (Phase 1 materials)
-**Effort estimate**: 3–3.5 hours
-**Deliverable**: `projects/resistance-research/POST_PHASE_1_IMPACT_MEASUREMENT.md` (policy tracking SOP with tool integration templates, media monitoring procedures, institutional adoption tracker with confidence scoring, electoral signal dashboard, Google Sheets template with pre-built formulas, measurement success thresholds, escalation decision trees for mid-phase corrections)
-**Why now**: Phase 1 launch imminent (June 1-15); measurement framework must be ready Day 1 to enable rapid course correction if outcomes are below baseline
-**Blocker**: Depends on Phase 1 launch decision (but can be prepared independently)
-**Next Step**: User selects Phase 1 distribution path → orchestrator arms measurement infrastructure May 31 → monitoring begins June 1 with daily/weekly dashboards
+### ✅ Item 41: Resistance-Research Post-Phase-1 Impact Measurement & Policy Advocacy Tracking Infrastructure
+**Status**: COMPLETE (Session 1007, May 13 2026, 23:00 UTC)
+**Impact**: HIGH — Enables real-time Phase 1 distribution impact tracking once user selects path
+**Deliverable**: `projects/resistance-research/PHASE_1_IMPACT_MEASUREMENT_INFRASTRUCTURE.md` (1,019 lines, 9,100 words, 8 sections + 3 appendices)
+**Content**: 
+1. **Email reply tracking**: Bitly setup (5 canonical links per Gist), Gmail automation (Zapier zaps), daily extraction procedures
+2. **GitHub/Gist metrics**: Star/fork/traffic tracking, referrer analysis
+3. **Policy uptake monitoring**: CourtListener docket monitoring, Congress.gov legislative tracking, Google Scholar alerts, news mention tracking, Overton window measurement
+4. **Coalition tracking**: Contact response classification, organization-level aggregation, secondary contact discovery, decision velocity metrics
+5. **Real-time dashboards**: Google Sheets templates with 16 pre-built formulas, Discord webhook alerts (daily briefing + contingency triggers)
+6. **Success metrics framework**: Tier 1 reply rate baseline (15-25%), policy uptake thresholds, coalition formation indicators, media amplification targets
+7. **Contingency triggers**: 5 binary conditions with escalation protocols (low reply rate, high unsubscribe, zero policy interest, coalition failure, infrastructure failure)
+8. **Cross-project integration**: Seedwarden (May 30), cybersecurity (Phase 1 approval timing), Domain 42 (DEA hearing May 28)
+**Setup timeline**: Tier A (May 28-31) 3.5-4 hours; Tier B (June 1) 30 minutes; weekly ongoing 25-35 minutes
+**Key insight**: Measurement pre-staged means Phase 1 success/failure detection is automatic on Day 1 of distribution
+**Next Step**: User selects Phase 1 path → orchestrator arms measurement May 31 → monitoring live June 1
 
 ---
 
