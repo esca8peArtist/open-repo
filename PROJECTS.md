@@ -807,12 +807,19 @@
 ### career-training
 **Goal**: Build a comprehensive self-study curriculum for transitioning into industrial general contracting — covering contracts, estimating, field execution, project management, codes, California regulations, and business setup. Target audience is someone with construction experience moving into the GC/industrial role for the first time.
 **Priority**: Medium
-**Status**: Active — 28 reference modules complete (Modules 01–28)
+**Status**: Active — **33 reference modules complete (Modules 01–33); 5 identified gaps written**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/career-training/`
-**Current focus**: 28 modules written covering industrial GC foundations through specialty topics (ADU/infill, wildfire, solar, luxury residential, marketing). Module index + gap analysis COMPLETE (Session 962): `module-index.md` provides master inventory with reading paths for 4 career progressions (Industrial GC, Residential GC, Solar Specialist, Design-Build). 5 new module opportunities identified: Disputes/Claims, Subcontractor Management, Prevailing Wage, Change Orders, QA/QC. Next: practice scenarios and reinforcement materials.
+**Current focus**: Session 963: **5 gap modules COMPLETE** — All 33 modules now cover full GC practice (28 original + 5 new).
+- **Module 29** (Dispute Resolution, Claims, Schedule Delay Management): 5,112 words — claim documentation, CPM delay analysis, mediation/arbitration, negotiation frameworks
+- **Module 30** (Subcontractor Management & Trade Coordination): 5,566 words — pre-qualification, flow-down terms, pay application/lien waiver cycle, performance scorecards
+- **Module 31** (Prevailing Wage & Federal Labor Compliance): 4,066 words — Davis-Bacon, California Prevailing Wage Act, eCPR reporting, penalty schedule
+- **Module 32** (Change Order Management & Value Engineering): 4,660 words — 9-cost-component pricing, owner negotiation, VE methodology, trade-off analysis
+- **Module 33** (QA/QC Procedures): 5,583 words — 3-layer QC model, trade-specific inspection protocols, SB 800 warranty requirements, document retention
+**Total new content**: 24,987 words across 5 modules. Module index updated to reflect 33-module curriculum.
+**Next**: Practice scenarios and reinforcement materials (4-5 realistic case studies per module, worked answers with common mistakes flagged).
 **Blocked on**: —
-**Notes**: Modules tagged with discipline, audience, and California-specific content where relevant. All marked status: reference.
+**Notes**: All 33 modules tagged with discipline, audience, and California-specific content. All marked status: reference. Curriculum now comprehensively covers industrial/residential GC practice from foundation through dispute resolution and QC.
 
 ---
 
