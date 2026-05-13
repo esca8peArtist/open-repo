@@ -205,16 +205,46 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
-### ⏳ Item 23: mfg-farm Post-Test-Print Supplier Negotiation Strategy
-**Status**: QUEUED (Session 943, May 12 2026)
-**Impact**: MEDIUM — Test print block (since April 12) is the only gating item. Once user completes test, launch can begin same day.
-**Goal**: Create comprehensive supplier negotiation playbook: (1) 3-tier supplier scorecard (Prusament vs MatterHackers vs AmazonBasics comparison), (2) negotiation templates (volume pricing, payment terms, lead time flexibility), (3) fulfillment integration (shipping partner analysis: USPS vs UPS vs FedEx for 3D-printed goods), (4) quality control gates (post-supplier-delivery inspection checklist), (5) Etsy listing optimization (A/B title variants, SEO keywords, shipping cost strategy)
-**Feasibility**: HIGH — pre-launch fulfillment workflow exists (Item 16), designs complete, cost model complete
-**Effort estimate**: 2-3 hours
-**Deliverable**: `projects/mfg-farm/SUPPLIER_NEGOTIATION_PLAYBOOK.md` (supplier comparison matrix, email templates for volume pricing, payment terms options, lead-time flexibility arrangements, QC checklist, shipping cost optimization table, Etsy keyword/SEO analysis, first-batch pricing strategy)
-**Why now**: Test print is the immediate blocker, but once it completes (user action), all downstream work is gated on supplier negotiations and Etsy optimization. Pre-staging eliminates day-of friction.
-**Blocker**: Test print completion (user action, not blocking this preparation)
-**Next Step**: Deliver playbook now; user completes test print → supplier negotiation begins same day using prepared templates
+### ✅ Item 23: mfg-farm Post-Test-Print Supplier Negotiation Strategy
+**Status**: COMPLETE (Session 979, May 13 2026)
+**Effort**: 2.5 hours (parallel agent execution)
+**Deliverable**: `projects/mfg-farm/SUPPLIER_NEGOTIATION_PLAYBOOK.md` (984 lines, 4,800 words)
+**Content delivered**:
+- **Section 1**: Three-supplier scorecard (Prusament $25-32/kg, MatterHackers $19-21/kg, Amazon $14-16/kg) with quality scoring and MOQ/lead time analysis
+- **Section 2**: Negotiation framework + 3 email templates (initial contact, volume pricing, Amazon setup)
+- **Section 3**: Fulfillment integration (USPS Ground Advantage recommended $3.50-6.00/unit, Pirate Ship setup, phase-by-phase scaling)
+- **Section 4**: Quality control gates (3-stage: incoming inspection, pre-production validation, batch sampling with specific tolerances)
+- **Section 5**: Etsy listing optimization (A/B title variants emphasizing Prussian quality, 13 SEO-optimized tags, shipping cost strategy)
+- **Section 6**: Supplier performance dashboard (monthly tracking template)
+- **Section 7**: 27-day launch sequence timeline (Day 0: supplier selection emails → Day 27: launch)
+- **Section 8**: Risk mitigation (6 failure scenarios with recovery times)
+- **Section 9**: Implementation checklists (30+ actionable items across 3 phases)
+- **Section 10**: 90-day success metrics (7 KPIs including 50+ units, 2%+ conversion, 40%+ margin)
+- **Section 11**: Key contact information and tool matrix
+**Key insight**: 100% self-contained playbook with same-day execution ready. Day 0 action plan starts immediately after test print approval.
+**Next Step**: User completes test print → execute playbook using Section 2 templates, follow 27-day sequence to launch
+
+---
+
+### ✅ Item 32: Seedwarden Phase 2 Analytics & Monitoring Infrastructure Pre-Staging
+**Status**: COMPLETE (Session 979, May 13 2026)
+**Effort**: 2 hours (parallel agent execution)
+**Deliverable**: `projects/seedwarden/PHASE_2_ANALYTICS_INFRASTRUCTURE_PRESTAGING.md` (962 lines, 4,975 words)
+**Content delivered**:
+- **Section 1**: Etsy API authentication (OAuth 2.0 config, rate limits, Python sync script, cron scheduling)
+- **Section 2**: GA4 custom events (measurement ID verification, 5 custom dimensions, 4 event functions with copy-paste HTML)
+- **Section 3**: Kit email analytics (monthly export workflow, 9 performance metrics with COUNTIF formulas, email segmentation)
+- **Section 4**: Google Sheets master dashboard (5-tab structure with pre-built formulas: Daily, Weekly, Monthly, Cohort, KPI Summary)
+- **Section 5**: Discord alerts (webhook setup, daily summary script at 20:00 UTC, weekly trends, 5 anomaly triggers)
+- **Section 6**: Baseline metrics & thresholds (Phase 1 benchmarks, Phase 2 alert levels GREEN/YELLOW/RED, escalation procedures)
+- **Section 7**: May 30 Day-1 checklist (29 checkboxes, 15-minute verification, go/no-go decision)
+- **Section 8**: Post-launch monitoring (Days 1-7 procedures, hour-by-hour May 30 schedule, daily monitoring, monthly integration)
+- **Appendix A**: Troubleshooting guide (4 common issues)
+- **Appendix B**: Cross-references to 8 existing Phase 2 docs
+- **Appendix C**: Complete .env template with security practices
+**Code deliverables**: 3 Python scripts (OAuth token generator, Etsy daily sync, Discord alert), GA4 tracking code, Google Sheets formulas
+**Key insight**: All infrastructure staged and ready May 30. Saves 2-3 hours on May 29 evening when focus is content verification.
+**Next Step**: May 25-29 → execute setup using Day-1 checklist → May 30 launch with monitoring live from go-live
 
 ---
 
@@ -346,6 +376,47 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 **Why now**: 18 days to Phase 2 launch; current uncertainty is whether field photography window is May 10-30 or May 17-30. Writing velocity analysis removes that blocker — guides can be staged and ready regardless of photo timing
 **Blocker**: User confirmation of May field photography window (needed for publishing timeline)
 **Next Step**: Execute analysis now (can be done independently); when user confirms photo schedule, guide writing begins immediately with optimized workflow
+
+---
+
+## Queued Items (Session 979)
+
+### ⏳ Item 31: Stockbot May 14 Pre-Checkpoint Infrastructure Verification
+**Status**: QUEUED (Session 979, May 13 2026)
+**Impact**: CRITICAL — May 14 20:00 UTC checkpoint is T-35h away; pre-checkpoint verification reduces execution failure risk
+**Goal**: Comprehensive Jetson health audit 4-6 hours before checkpoint (May 14 15:00-17:00 UTC window):
+1. **Jetson system health**: CPU/memory/disk/I/O baseline measurement
+2. **Database connectivity**: Local stockbot.db read test + Alpaca-to-DB sync verification
+3. **Alpaca API connectivity**: Test `may14_checkpoint_query_alpaca.py` script against live Alpaca account
+4. **Session state verification**: Confirm 52 active sessions loaded in memory + signal generation active
+5. **Network reliability**: SSH latency baseline, Alpaca endpoint response times
+6. **Pre-checkpoint checklist**: 10-point runbook for May 14 17:00-20:00 UTC window
+**Feasibility**: HIGH — All systems documented, SSH access verified, scripts ready to execute
+**Effort estimate**: 1.5-2 hours
+**Deliverable**: `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` (system health report, 10-point go/no-go checklist, contingency escalation triggers if critical failures detected)
+**Why now**: 36 hours to checkpoint; pre-execution verification prevents embarrassing failures at gate moment
+**Blocker**: None (autonomous infrastructure work)
+**Next Step**: Deliver audit report → user reviews pre-checkpoint checklist May 14 afternoon → confident checkpoint execution at 20:00 UTC
+
+---
+
+### ⏳ Item 32: Seedwarden Phase 2 Analytics & Monitoring Infrastructure Pre-Staging
+**Status**: QUEUED (Session 979, May 13 2026)
+**Impact**: HIGH — May 30 Phase 2 launch requires real-time analytics; pre-staging eliminates launch-day setup friction
+**Goal**: Pre-stage all Phase 2 monitoring, analytics, and performance tracking infrastructure (NO user execution needed, 100% autonomous setup):
+1. **Etsy API authentication setup**: Verify ETag-based sync credentials, rate limit config
+2. **Google Analytics 4 custom events**: Pre-configure Zone card delivery tracking, guide view funnels, checkout abandonment capture
+3. **Kit email analytics**: Pre-stage email performance dashboard (open rate, click rate, conversion by email type)
+4. **Google Sheets structure**: 5-tab analytics master dashboard (Daily, Weekly, Monthly, Cohort, KPI Summary) with all formulas pre-built
+5. **Monitoring alerts**: Discord webhook setup for daily performance summaries, weekly trend alerts, anomaly detection triggers
+6. **Baseline metrics document**: Historical performance expectations (based on Phase 1 data), alert thresholds, escalation procedures
+7. **Day-1 readiness checklist**: May 30 morning 15-minute setup verification (all systems armed and responsive)
+**Feasibility**: HIGH — All infrastructure components documented in prior deliverables (Item 25 PHASE_2_GO_NO_GO_DASHBOARD, PHASE_2_ANALYTICS_STRATEGY.md)
+**Effort estimate**: 2-2.5 hours
+**Deliverable**: `projects/seedwarden/PHASE_2_ANALYTICS_INFRASTRUCTURE_PRESTAGING.md` (Etsy API setup guide, GA4 event structure + code snippets, Kit email integration verification, Google Sheets dashboard templates with auto-calculating formulas, Discord alert configuration, May 30 Day-1 checklist)
+**Why now**: 17 days to Phase 2 launch; pre-staging infrastructure now saves 2-3 hours on May 29 evening when focus should be on content verification + launch coordination
+**Blocker**: None (autonomous infrastructure work, no user actions required)
+**Next Step**: Deliver infrastructure guide → user verifies May 30 morning using checklist → monitoring system live immediately at Phase 2 go-live
 
 ---
 
