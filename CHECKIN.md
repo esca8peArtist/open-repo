@@ -1,5 +1,36 @@
 # Check-in
 
+## Session 995 — May 13, 2026, ~17:35–18:30 UTC (Exploration Queue Refresh + Item 33 Complete)
+
+**Status**: ✅ **ITEM 33 COMPLETE — STOCKBOT LIVE TRADING LAUNCH READINESS DOCUMENT DELIVERED**
+
+### Accomplished This Session
+
+1. **Exploration Queue Refresh**
+   - Pruned stale focus items (PROJECTS.md: open-source-rideshare, career-training)
+   - Added 3 new autonomous exploration items
+   - Item 33 (highest impact): Now complete
+
+2. **Item 33: Stockbot Live Trading Launch Readiness** ✅ COMPLETE
+   - **File**: `projects/stockbot/LIVE_TRADING_LAUNCH_READINESS.md` (804 lines, 4,455 words)
+   - **Scope**: 8 sections covering pre-launch verification, capital allocation (3 scenarios), 30-minute deployment, monitoring, emergency procedures, contingency responses, success metrics
+   - **Format**: Production-ready, self-contained, copy-paste code examples, single-operator deployment model
+   - **Target**: Deploy on June 10, 2026 (post-Gates-pass)
+   - **Impact**: HIGH — Eliminates all friction from live trading activation moment
+
+### In Progress
+
+- Stockbot May 14 20:00 UTC checkpoint execution (awaiting user action)
+- Seedwarden Track B May 30 launch (Kit email automation critical-path watch, May 28 deadline)
+- Resistance-Research Domain 42 Wave 1 (2 contact corrections pending, then ready for May 14-15 send)
+
+### Next Autonomous Work Available
+
+- **Item 34**: Seedwarden Phase 3 Production Timeline (queued, can begin post-checkpoint)
+- **Item 35**: open-repo Phase 5 Architecture (queued, can begin post-checkpoint)
+
+---
+
 ## Session 994 — May 13, 2026, ~16:10–17:30 UTC (Parallel Checkpoint & Domain 42 & Seedwarden Verification)
 
 **Status**: ✅ **THREE PROJECTS VERIFIED & READY TO ADVANCE**

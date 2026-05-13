@@ -502,10 +502,44 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 
 ---
 
+## New Items (Session 994 — 2026-05-13, three autonomous high-impact items added)
+
+### ⏳ Item 33: Stockbot Live Trading Launch Readiness Checklist & Capital Allocation Framework
+**Status**: QUEUED (Session 994, May 13 2026)
+**Impact**: HIGH — Critical path to final Goal of "fully automated live trading"
+**Effort estimate**: 3–4 hours
+**Deliverable**: `projects/stockbot/LIVE_TRADING_LAUNCH_READINESS.md` — Comprehensive checklist covering Alpaca account verification + permissions, Jetson environment setup, guardrails revalidation, capital allocation strategy with 3 scenarios, risk limits, monitoring infrastructure, rollback procedures, live trading exit procedures, 30-minute pre-launch SOPs, contingency responses.
+**Goal**: By the time Gates 1+2+3 pass (estimated June 9, 2026), remove all friction from the "live trading button" moment. Enable 30-minute activation instead of 4–6 hours of setup work.
+**Feasibility**: HIGH — All underlying infrastructure exists (Alpaca account, Jetson, guardrails); this is consolidation + checklist work
+**Blocker**: None (autonomous)
+**Next Step**: Begin immediately; complete by June 1 so live trading path is clear for post-Gate-3 execution
+
+### ⏳ Item 34: Seedwarden Phase 3 Complete Production Timeline & Content Dependencies
+**Status**: QUEUED (Session 994, May 13 2026)
+**Impact**: MEDIUM — Phase 3 launches July+; planning now eliminates setup friction
+**Effort estimate**: 2.5–3 hours
+**Deliverable**: `projects/seedwarden/PHASE_3_PRODUCTION_TIMELINE.md` — Detailed 12-week execution plan: June–August research phase for medicinal herbs, Sep–Oct content production, Nov–Dec platform staging, Jan+2027 market testing; identifies critical path, resource bottlenecks, supply chain dependencies, content interdependencies, weekly milestones with go/no-go gates
+**Goal**: Build on existing Phase 3 outline with concrete week-by-week execution plan
+**Feasibility**: HIGH — Phase 3 research already complete; this is timeline + dependency mapping
+**Blocker**: None (autonomous)
+**Next Step**: Begin after Item 33 (lower priority); complete by June 15
+
+### ⏳ Item 35: open-repo Phase 5 (Offline Export & Kiwix Integration) Architecture & Implementation Plan
+**Status**: QUEUED (Session 994, May 13 2026)
+**Impact**: MEDIUM — Phase 5 comes after PR #1 merge; planning now enables rapid handoff post-merge
+**Effort estimate**: 3–4 hours
+**Deliverable**: `projects/open-repo/PHASE_5_ARCHITECTURE.md` — Comprehensive design: offline export pipeline architecture, Kiwix integration approach, deployment options, testing strategy, success criteria, week-by-week implementation timeline, resource estimates, dependency on Phase 4 completion.
+**Goal**: Design Phase 5 while PR #1 is in review so that post-merge execution can begin immediately without planning friction
+**Feasibility**: HIGH — Phase 4 codebase accessible, Kiwix is well-documented, architecture is standard
+**Blocker**: None (autonomous); PR merge timing not a hard dependency for planning
+**Next Step**: Begin after Item 34 (or in parallel); complete by June 10 for post-PR-merge handoff
+
+---
+
 ## Summary
 
 **Session 933 deliverables**: 3 exploration items completed (distribution logistics, post-Gate-1 architecture, Tier 2 pilot planning). All three are high-impact pre-work that enables immediate orchestrator execution once user approvals/decisions received.
 
-**Total effort**: 8.5 hours of research
-**Total output**: 7.5+ KB of actionable planning documents across 3 projects
-**Strategic impact**: All three projects now have detailed execution plans ready to deploy on user signal
+**Session 994 additions**: 3 new exploration items queued (Items 33–35) covering critical path to live trading, Phase 3 production, Phase 5 post-PR execution. All items are autonomous; no blockers.
+
+**Total queue status**: 3 items queued, ready for parallel execution starting with Item 33 (highest impact)

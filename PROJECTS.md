@@ -649,7 +649,7 @@
 **Status**: Paused — resume when user unpauses
 **Visibility**: Public — push to feature branches on GitHub freely. Hold on main push for user approval.
 **Working dir**: `projects/open-source-rideshare/`
-**Current focus**: Project paused — awaiting user action to resume. State verified clean (572 sessions ago, Session 407). Driver document expiry endpoints complete, 6,154 tests passing, branch `feature/driver-navigation`. All systems ready for resumption when unpaused.
+**Current focus**: Project paused — awaiting user action to resume.
 
 **Blocked on**: —
 **Notes**: This is the only public project. Higher standards for documentation, test coverage, and code quality since it's community-facing. Regulatory/safety/security solutions and growth strategy are in scope alongside the technical build.
@@ -850,26 +850,7 @@
 **Status**: Complete — **35 reference modules complete; case-study workbook 150/150 scenarios (100% complete)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/career-training/`
-**Current focus**: Session 977 (2026-05-13): **FINAL COMPLETION — 106 → 150 scenarios (100% of target)**
-- **All 35 modules complete** with 3–5 scenarios each (foundation through business development)
-- **Modules 01–25**: Foundation, estimating, crew management, architecture, scope, financials, HVAC, plumbing, framing, MEP coordination, value engineering, change management (66 scenarios, Session 974–976)
-- **Modules 26–35**: Contract closeout, commercial construction, owner communication, dispute resolution, industrial management, property management operations, business development, QC/inspection, documentation (41 scenarios added Session 977)
-
-**Final coverage**:
-- Module 26 (Contract Closeout & Warranty): 4 scenarios — lien disputes, warranty callbacks, Substantial Completion, as-builts
-- Module 27 (Commercial Construction): 4 scenarios — TI allowances, structural splits, shell scope, phased CO
-- Module 28 (Owner–GC Communication): 4 scenarios — scope creep control, cost overruns, representative overreach, escalation
-- Module 29 (Dispute Resolution): 4 scenarios — concurrent delay, claims preservation, mediation, RFI backlog
-- Module 30 (Industrial Shutdown): 4 scenarios — late scope, critical path delays, confined space auth, mechanical sign-off
-- Module 31 (Property Mgmt—Tenant): 4 scenarios — lease scope gaps, occupied renovation, unlicensed contractors, ADA
-- Module 32 (Property Mgmt—Operations): 4 scenarios — repair/replace HVAC, vendor contracts, capital prioritization, emergencies
-- Module 33 (Business Development): 4 scenarios — selective bidding, client transitions, bid differentiation, hiring
-- Module 34 (QC & Inspection): 4 scenarios — weld rework, inspection holds, material substitution, punch list triage
-- Module 35 (Documentation & Records): 5 scenarios — daily reports for claims, RFI backlog, submittal delays, accuracy, meeting minutes
-
-**Production metrics**: 150 scenarios across 35 modules; 5,748+ lines total; full worked answers + common mistakes for every scenario
-**Velocity achieved**: Parallel agent execution: 14 scenarios/hour (4 sessions over May 8-13 = 4 hours total orchestrator time for 150 scenarios)
-**Quality gates**: All scenarios follow established format; regulatory citations; real-world decision points; zero duplication across 150 scenarios
+**Current focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 **Blocked on**: —
 **Notes**: Workbook complete and production-ready. All 150 scenarios cover construction PM lifecycle from initial contracts through business development and operations. Ready for user review, deployment as self-study material, or integration into training programs.
 
