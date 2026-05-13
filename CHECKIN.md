@@ -1,8 +1,22 @@
 # Check-in
 
-## Since Last Check-in (Sessions 981-982, May 13, 2026, 10:20–11:50 UTC)
+## Since Last Check-in (Sessions 981-983, May 13, 2026, 10:20–13:20 UTC)
 
-**Status**: 🟢 PARALLEL EXPLORATION QUEUE COMPLETION + TIER 1 AUTONOMOUS WORK COMPLETE — Three major items executed: (1) Resistance-research Phase 2 Expansion Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Photography & Plant Sourcing Logistics Plan ✅. All items committed, production-ready. May 30 launch timeline de-risked with critical [USER-ACTION] items identified.
+**Status**: 🟢 MAJOR AUTONOMOUS WORK COMPLETE — Four major exploration queue items executed: (1) Resistance-research Phase 2 Expansion Domains 51, 54, 55 ✅, (2) Stockbot Multi-Ticker Position Sizing Framework ✅, (3) Seedwarden Phase 2 Photography & Plant Sourcing Logistics Plan ✅, (4) Mfg-farm Post-Test-Print Revenue Optimization Framework ✅. All items committed, production-ready. Critical immediate actions identified: (TODAY) seedwarden plant orders, mfg-farm supply orders; (May 14) stockbot checkpoint execution; (May 26) seedwarden Canva palette extension.
+
+### Session 983 Accomplishments
+
+**Mfg-farm Post-Test-Print Revenue Optimization Framework** ✅
+- **Deliverable**: `POST_TEST_PRINT_REVENUE_MAXIMIZATION.md` (3,200 words, 7 sections) + `product-portfolio-roadmap.csv` (13-month portfolio model)
+- **Coverage**: Complete decision framework for both PASS and FAIL test print scenarios, capacity analysis, revenue levers, 12-month scaling roadmap
+- **Critical Findings**:
+  1. **Headphone hooks launch independent of ModRun outcome**: Start hook test prints immediately regardless of snap-arm result. Capacity utilization <10% even at 20 units/week for both products.
+  2. **Batch 3 is unblocked**: Magnetic bin labels design already complete; only gate is N52 magnet press-fit calibration (1 day work). Order magnets now for $38.
+  3. **Critical immediate action (TODAY)**: Order silicone bumper pads ($5) + N52 disc magnets ($38) — unlocks both Batch 2 and Batch 3 startup. Waiting 1–2 days costs launch timeline for no reason.
+  4. **Revenue optimization levers** (priority order): (1) AOV maximization via bundle pricing ($28.99 for 3-clips improves weekly revenue ~$120 at 20 units/week), (2) Standing-desk SEO positioning (underserved market <200 listings), (3) In-situ demo video at Month 2 (2.5–3x CTR lift), (4) Price tests starting at 25–50 reviews.
+  5. **12-month revenue trajectory**: Conservative $69K–105K gross Year 1; at 75% net margin = $52K–79K net Year 1. 2nd printer trigger activates Month 4–5; 5-week payback window.
+  6. **Pass scenario**: 7–10 day launch sequence → $4,250–6,250 ModRun gross + $2,500–3,500 hooks = $6,700–9,900 combined 90-day. **Fail scenario**: Design iteration 2–3 weeks → $2,800–4,200 ModRun, hooks compensate with $3,000+ starting Week 4–5, zero revenue impact long-term.
+- **Status**: Production-ready, actionable immediately. Unblocks revenue strategy regardless of test print outcome.
 
 ### Session 982 Accomplishments
 
@@ -178,11 +192,15 @@
 - ⏳ Awaiting user approval: Phase 1 Tier 1 launch + Day 1 send date (target June 1)
 - **Status**: Ready on user approval.
 
-**Mfg-farm** (High Priority — Test print blocker, Batch 2 ready)
-- ✅ Supplier negotiation playbook complete (Item 23)
-- ✅ Batch 2 product research complete (desk headphone hooks, design production-ready)
+**Mfg-farm** (Priority #4 — Revenue optimization framework complete, immediate supply orders needed)
+- ✅ Supplier negotiation playbook complete
+- ✅ Batch 2 headphone hooks design complete (76% margin, production-ready)
+- ✅ Post-test-print revenue optimization framework complete (Session 983)
+- ✅ Batch 3 magnetic bin labels design complete (only magnet calibration remains)
+- **[URGENT TODAY]**: Order silicone bumper pads ($5) + N52 disc magnets ($38) — $43 total unlocks Batch 2 + Batch 3 startup
 - ⏳ Awaiting test print execution (0.20mm layer, PLA+, 3 walls, 220-225°C)
-- **Status**: Batch 1 blocked on user test print only; Batch 2 ready for tolerance calibration post-test-print
+- ⏳ Post-test-print: Evaluate snap-arm tolerance; both PASS and FAIL paths de-risked with revenue framework
+- **Status**: Both PASS and FAIL scenarios covered; revenue optimization complete. Batch 1 blocked on test print evaluation only; Batches 2+3 ready to launch in parallel post-evaluation
 
 **Career-training** (Complete)
 - ✅ 150/150 scenarios complete, production-ready
@@ -190,27 +208,43 @@
 **Off-grid-living** (Complete)
 - ✅ GitHub publication live, awaiting user social media execution
 
-### Items Requiring User Input
+### Items Requiring User Input (Priority Order)
 
-1. **Stockbot May 14 checkpoint (CRITICAL, T-24h)**
-   - [ ] Plug Ethernet cable before 13:30 UTC (optional but recommended to eliminate WiFi-only risk)
+1. **[URGENT TODAY] Seedwarden plant sourcing (May 13 — last call)**
+   - [ ] **IMMEDIATE**: Confirm plant orders placed; if not: ORDER from Mountain Rose Herbs TODAY
+   - [ ] Details: 2-day Priority shipping, arrives May 15, last viable window for ginseng/goldenseal dried roots
+   - [ ] Critical for May 30 launch — no delay permitted
+
+2. **[URGENT TODAY] Mfg-farm supply orders** (May 13)
+   - [ ] Order silicone bumper pads (100-pack, ~$5) + N52 disc magnets 8mm×2mm (200×, ~$38)
+   - [ ] Total: $43, Amazon domestic 1–2 day delivery
+   - [ ] Unlocks Batch 2 headphone hooks + Batch 3 magnetic labels production
+
+3. **Stockbot May 14 checkpoint (CRITICAL, T-32h)**
+   - [ ] (Optional) Plug Ethernet cable before 13:30 UTC (eliminates WiFi-only risk)
    - [ ] May 14 20:00 UTC: Execute checkpoint query using `scripts/may14_checkpoint_query_alpaca.py`
    - [ ] Apply POST_GATE_1_RESPONSE_FRAMEWORK.md to classify outcome
+   - [ ] Post-checkpoint: Proceed with Gates 1→2 sequence if PASS/NEAR-MISS; reassess if FAR-MISS
 
-2. **Resistance-research cross-references** (May 14-15 window before Phase 1 execution)
-   - [ ] Approve updates to Domains 1, 6, 26, 34 with new cross-references (4 existing domain updates)
-   - [ ] Decide Phase 1 distribution path (A / A+37 / B) to unlock execution
+4. **Resistance-research distribution path decision** (Before May 15, unlocks Phase 1)
+   - [ ] Approve updates to Domains 1, 6, 26, 34 with new cross-references (4 updates)
+   - [ ] Decide Phase 1 distribution path: **A** (immediate 34-domain) / **A+37 Hybrid** (RECOMMENDED: capture election integrity urgency) / **B** (optional Phase 2 expansion)
+   - [ ] Unlocks Phase 1 execution immediately upon decision
 
-3. **Cybersecurity-hardening Phase 1 launch** (Target June 1)
+5. **Seedwarden May 30 launch gates** (May 26 & earlier)
+   - [ ] Confirm location scout status (May 10 deadline passed; flagged with indoor studio fallback)
+   - [ ] May 26: Canva Brand Kit palette extension (45–90 min user task, required before production week)
+
+6. **Cybersecurity-hardening Phase 1 launch** (Target June 1, awaiting approval)
    - [ ] Approve Phase 1 Tier 1 execution + Day 1 send date
 
-4. **Seedwarden Track A** (Decision deadline May 19)
+7. **Seedwarden Track A** (Decision deadline May 19)
    - [ ] Authorize tag corrections (15 min work)
    - [ ] Authorize Etsy account verification (10 min user action)
 
-5. **Mfg-farm test print** (Blocking)
+8. **Mfg-farm test print** (Blocking Batch 1 only, Batches 2-3 ready)
    - [ ] Execute test print (0.20mm, PLA+, 3 walls, 220-225°C)
-   - [ ] Upon completion → orchestrator executes supplier negotiation Phase 1 same-day
+   - [ ] Upon completion: Post-test-print revenue optimization framework (Session 983) de-risks both PASS and FAIL scenarios
 
 ### Next Session Priorities
 
