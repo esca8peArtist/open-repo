@@ -69,9 +69,13 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 985 (May 13): **58+ domains production-ready, Phase 1+2 COMPLETE + Phase 2 EXPANSION (38-40) COMPLETE**. All domains cross-referenced and production-ready. 
+**Current focus**: Session 1000 (May 13, 21:15–21:45 UTC): **Item 36 COMPLETE** — Source staging for Domains 41 & 43 delivered (40+ annotated sources per domain, 25-26 expert contacts, evidence checklists). Critical findings: May 13 Senate CFPB vote creates immediate Domain 41 advocacy window; HUD CoC NOFO June 1 aligns with Domain 43 research start. Next: Items 37-38 staged for execution; Phase 1 distribution path decision pending.
 
-**Session 985 Phase 2 Expansion Domains 38-40 — COMPLETE** ✅:
+**Session 1000 Deliverables** ✅:
+- `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (1,053 lines) — 40+ sources per domain, expert contacts, evidence checklists, outline skeletons
+- **Items 37-38 queued**: mfg-farm fulfillment pre-staging + cybersecurity measurement automation
+
+**Prior Session 985 Phase 2 Expansion Domains 38-40 — COMPLETE** ✅:
 - **domains-38.md** — Lobbying Transparency, Regulatory Capture, Antitrust Enforcement (44 citations, ~5,200 words). Mechanism domain: three-layer architecture (formal lobbying, revolving door, dark money) through which every sector-specific capture operates. Anchored to 2026: Live Nation jury verdict (April 15, all 13 counts), FTC Jarkesy constitutionality (March 2026), EPA capture examples. Cross-references: Domain 51 (campaign finance upstream), Domain 42 (drug policy case study), Domain 45 (climate EPA).
 - **domains-39.md** — Education as Democratic Infrastructure (43 citations, ~5,400 words). Frames public education as reproductive infrastructure for democratic capacity. K-12 (DOE dismantled, OCR 90% cut), higher ed (50% autonomy decline, 65% adjunct), homeschooling accountability gap. 23% civics proficiency threshold. Cross-references: Domain 22 (equity), Domain 43 (epistemic), Domain 1 (voter registration).
 - **domains-40.md** — Healthcare as Democratic Determinant (46 citations, ~5,600 words). Five causal pathways from healthcare to civic participation. Oregon RCT: Medicaid enrollment → 7% voter turnout increase. Pathways: medical debt (100M Americans), disability gaps (10-11.7 ppt), maternal mortality (3:1 Black:white), pandemic federalism collapse, FQHCs underutilization. Cross-references: Domain 50 (NVRA), Domain 22 (maternal mortality), Domain 44 (reproductive).

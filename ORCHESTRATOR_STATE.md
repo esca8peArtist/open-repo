@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-13T20:27:10Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-13T20:36:51Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 17.7% (1,581,577 tokens) | All-models 37.0% | Reset in 124h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 17.7% (1,581,577 tokens) | All-models 37.2% | Reset in 123h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -71,7 +71,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 985 (15 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: resistance-research — focus references Session 985 (16 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)

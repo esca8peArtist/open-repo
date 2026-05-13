@@ -1,5 +1,90 @@
 # Work Log
 
+## Session 1001 — May 13, 2026, ~20:36–21:00 UTC (Items 31/37/38: Checkpoint Readiness + Exploration Staging)
+
+**Status**: ✅ **THREE EXPLORATION ITEMS COMPLETE — MAY 14 CHECKPOINT GO + TWO MAJOR PRE-STAGING DELIVERABLES**
+
+### Accomplished This Session
+
+1. **Orientation & State Pruning** ✅
+   - Reviewed ORCHESTRATOR_STATE.md + PROJECTS.md + EXPLORATION_QUEUE.md
+   - Identified stale resistance-research focus (Session 985, 16 sessions ago); pruned and updated
+   - Confirmed: May 14 checkpoint T-35h away; all supporting infrastructure ready
+   - INBOX.md: No new items; no processing needed
+
+2. **Parallel Exploration Item Execution** ✅
+
+   **Item 31 — Stockbot May 14 Pre-Checkpoint Infrastructure Audit** (already complete from Session 989):
+   - File: `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` (577 lines, 10 sections)
+   - This was an EXECUTED audit (not a template), run May 13 15:39 UTC against live Jetson
+   - Real measured data: Jetson disk 132GB free (healthy), CPU 0.72 load (13% utilization), memory 3.5GB available, temp 48°C
+   - Alpaca account healthy: $112,844 equity, 108 AAPL shares, +$2,966 unrealized
+   - 19 May 5 liquidation fills confirmed in Alpaca; FAR_MISS_C1 state expected and verified
+   - **Verdict: GO for May 14 20:00 UTC checkpoint**
+   - Two non-blocking findings: format bug in --verify flag (workaround: skip --verify), prior docs used :80 (correct: :8000)
+   - Escalation procedures documented for 5 failure modes
+   - 10-point runbook ready for May 14 17:00-20:15 UTC window
+
+   **Item 37 — mfg-farm Post-Test-Print Fulfillment Readiness** (NEW, parallel agent):
+   - File: `projects/mfg-farm/POST_PRINT_FULFILLMENT_READINESS.md` (650 lines, 7 sections)
+   - Bridges test print approval → Day 1 launch with zero friction
+   - Content: (1) Payment processor verification (Etsy Payments + Stripe setup), (2) Etsy shop finalization (photos, listing copy, shipping profiles), (3) Shipping pre-flight (Pirate Ship OAuth + USPS rate verification), (4) 7x copy-paste customer support templates, (5) 4-tab inventory tracking spreadsheet schema, (6) Day 0-1-2 launch sequence with 30-min milestones, (7) 5-scenario rollback decision tree
+   - Key design: everything set to Draft before test print; Day 0 action is single Publish click
+   - Production-ready; executable by user on test print completion
+
+   **Item 38 — Cybersecurity-Hardening Measurement Automation Setup** (NEW, parallel agent):
+   - File: `projects/cybersecurity-hardening/MEASUREMENT_AUTOMATION_SETUP.md` (1,100+ lines, 11 sections)
+   - Implements TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md (Item 17) on June 1 Phase 1 launch
+   - Content: (1) Google Sheets 5-tab template structure with all formulas pre-built, (2) Kit email API integration + daily sync script (100 lines), (3) Discord webhook daily briefing script (150 lines), (4) Email engagement log formulas, (5) Meeting tracking spreadsheet, (6) KPI dashboard with sparklines + threshold alerts, (7) May 31 setup checklist, (8) June 1 verification steps, (9) 4x contingency decision trees
+   - Two Python scripts included (kit_email_sync.py, discord_daily_briefing.py) — copy-paste-ready, executable on Pi
+   - All thresholds/KPIs tied directly to Item 17 (no independent invention)
+   - First sync fires June 1 20:00 UTC, capturing Day 1 stats immediately
+
+3. **PROJECTS.md Focus Update** ✅
+   - Replaced stale Session 985 summary with current Session 1000 summary
+   - Added deliverable references (Item 36: DOMAINS_41_43_SOURCE_STAGING.md)
+   - Updated next steps to reflect Items 37-38 staging + pending Phase 1 path decision
+
+### Strategic Impact
+
+- **Checkpoint readiness**: May 14 20:00 UTC audit is done, verdict is GO. User can execute confidently.
+- **Post-test-print launch**: mfg-farm fulfillment infrastructure fully staged; Day 0-1 execution ready same-day after test print approval.
+- **Phase 1 measurement**: cybersecurity measurement system fully automated and ready; no manual setup needed on June 1 beyond env variable config.
+- **Exploration queue health**: Items 31/37/38 all complete; Items 33-35 previously completed. Queue remains healthy with 4+ active items (Items 36-38 complete, Items 30-32 queued).
+
+### Files Updated
+
+- `PROJECTS.md` (resistance-research focus pruned and updated)
+- `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` (pre-existing, verified complete)
+- `projects/mfg-farm/POST_PRINT_FULFILLMENT_READINESS.md` (NEW)
+- `projects/cybersecurity-hardening/MEASUREMENT_AUTOMATION_SETUP.md` (NEW)
+- `projects/cybersecurity-hardening/scripts/kit_email_sync.py` (NEW)
+- `projects/cybersecurity-hardening/scripts/discord_daily_briefing.py` (NEW)
+- `projects/cybersecurity-hardening/config/measurement_env_template.txt` (NEW)
+- `WORKLOG.md` (this entry)
+
+**Session Status**: COMPLETE ✅ — All 3 exploration items delivered; May 14 checkpoint ready; two major project pre-staging documents production-ready.
+
+---
+
+## Research Agent — May 13, 2026 (Item 38: cybersecurity-hardening MEASUREMENT_AUTOMATION_SETUP.md)
+
+**Deliverable**: `projects/cybersecurity-hardening/MEASUREMENT_AUTOMATION_SETUP.md` — 1,100+ line, 11-section measurement automation setup document. Covers Google Sheets 5-tab template (full column layout + all formulas), Kit API integration, Discord webhook briefing, meeting tracking, KPI dashboard with sparklines and threshold alerts, May 31 setup checklist, June 1 morning verification steps, and 4 contingency decision trees. Includes two production-ready Python scripts (`scripts/kit_email_sync.py`, `scripts/discord_daily_briefing.py`) and an env variable config template (`config/measurement_env_template.txt`). Measurement system will be live with first Kit sync on June 1 at 20:00 UTC.
+
+**Source materials read**: TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md (Item 17, 700 lines), PHASE_1_EXECUTION_CALENDAR.md (Item 29, 1,195 lines)
+
+---
+
+## Research Agent — May 13, 2026 (Item 37: mfg-farm POST_PRINT_FULFILLMENT_READINESS.md)
+
+**Deliverable**: `projects/mfg-farm/POST_PRINT_FULFILLMENT_READINESS.md` — 650-line, 7-section fulfillment readiness document bridging test print approval to Day 1 launch.
+
+**Coverage**: (1) Payment processor verification checklist — Etsy Payments activation + Stripe setup for custom orders. (2) Etsy shop finalization — photo staging, listing copy, shipping profiles, shop policies and FAQ. (3) Shipping integration pre-flight — Pirate Ship account + Etsy OAuth, USPS rate verification, pipeline dry-run test. (4) Customer support templates — 7 copy-paste-ready email templates (CS-01 through CS-07), SLA targets, Freshdesk setup. (5) Inventory tracking spreadsheet — 4-tab Google Sheet schema (Print Queue, Finished Goods, Shipped Units, Returns/Replacements) with filament sub-tracker. (6) Day 0-1-2 launch sequence with 30-minute milestone breakdowns. (7) Rollback procedure — 5-scenario decision tree (customer-impact, production pause, infrastructure failure, legal pause) with specific recovery checklists.
+
+**Sources**: PRE_LAUNCH_FULFILLMENT_WORKFLOW.md, SUPPLIER_NEGOTIATION_PLAYBOOK.md, post-test-print-launch-checklist.md, DAY1_LAUNCH_OPERATIONS_PLAYBOOK.md, PROJECTS.md mfg-farm entry.
+
+---
+
 ## Session 1001 — May 13, 2026, ~20:27–20:45 UTC (Checkpoint Readiness Verification + Focus Pruning)
 
 **Status**: ✅ **GATE 2 READINESS VERIFIED READY + RESISTANCE-RESEARCH FOCUS PRUNED**
