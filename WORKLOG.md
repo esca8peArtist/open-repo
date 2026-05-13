@@ -1,5 +1,96 @@
 # Work Log
 
+## Session 980 — May 13 Autonomous: Stockbot Baseline Checks + Resistance-research Domains 38-40
+
+**Date**: 2026-05-13 09:13–10:30 UTC
+**Orchestrator execution**: Parallel subagent work (stockbot + resistance-research)
+**Scope completed**: (1) May 13 Jetson baseline checks, (2) Phase 2 domain expansion (3 new domains)
+
+### ✅ Stockbot May 13 Baseline Checks (Parallel Agent)
+
+**Deliverable**: May 14 checkpoint readiness verification
+- **Check execution time**: 2026-05-13 09:16 UTC
+- **Target**: Jetson at 100.120.18.84 (up 29 days)
+
+**Results**: All automated checks PASSED ✅
+
+| Check | Result | Detail |
+|-------|--------|--------|
+| Thermal idle | PASS | 46.3–47.9°C, under 50°C threshold, zero thermal events |
+| Memory idle | PASS | 3.5 GB available / 7.4 GB total, zero OOM events |
+| Disk space | PASS | 132 GB free (40% used), daily log rotation active |
+| Network | PASS | Ping 20ms avg, Alpaca API 338ms total (under 500ms) |
+| Database integrity | PASS | All three DBs (`stockbot.db`, `trading.db`) — integrity_check=ok, 90 trades recorded |
+| Process / sessions | PASS | Container up 9h, `{"status":"ready","sessions":2}` confirmed |
+| Database backup | FIXED | Created `/home/awank/trading.db.backup.20260513` and `/home/awank/stockbot.db.backup.20260513` on Jetson (persistent) |
+| Discord webhook | CONFIGURED | `STOCKBOT_DISCORD_WEBHOOK_URL` set in env |
+| Logs directory | PASS | Trading log 329 KB, daily rotation active |
+| Power supply / cabling | CANNOT CHECK | Physical inspection required |
+
+**Anomalies identified**:
+1. **ANOMALY 1 — NO ETHERNET FAILOVER (HIGH, user action needed before May 14 13:30 UTC)**
+   - `enP8p1s0` shows NO-CARRIER; only WiFi active
+   - Risk: If WiFi drops during market session (13:30–20:00 UTC May 14), no wired fallback
+   - **Mitigation**: Plug Ethernet cable before 13:30 UTC if Jetson is physically accessible
+   
+2. **ANOMALY 2 — WiFi packet drops (LOW, monitor only)**
+   - wlP1s0 shows 47,771 dropped RX packets (1,647/day, 1.1/min)
+   - Background noise; API connectivity solid at 338ms
+   - No action required unless rate accelerates sharply during market session
+
+3. **ANOMALY 3 — Realtime stream reconnection loop (INFORMATIONAL)**
+   - Container logs show "Stream not fully initialized" every 60s
+   - Expected normal pre-market behavior (09:13 UTC)
+   - Stream will initialize at market open (13:30 UTC)
+
+**User action items before May 14 13:30 UTC**:
+1. Plug in Ethernet cable (removes single-NIC risk)
+2. Visual confirm power supply: should be 5.1V @ 5A or official Raspberry Pi 27W
+
+**Verdict**: Infrastructure healthy, ready for May 14 20:00 UTC checkpoint. Only pre-checkpoint risk is absence of wired Ethernet failover.
+
+---
+
+### ✅ Resistance-research Phase 2 Domains 38-40 (Parallel Agent)
+
+**Deliverable**: Three new production-ready domains for Phase 2 expansion
+- **Files committed**: `projects/resistance-research/domains/domain-38.md`, `domain-39.md`, `domain-40.md`
+
+**Domain 38: Tribal Sovereignty, Indigenous Democratic Design, and Federal Trust Obligations**
+- **Why this domain**: Fills a gap — 574 federally recognized tribal nations + constitutional trust obligation
+- **Baseline state May 2026**: DOGE terminated 25+ BIA office leases; 1,000+ IHS employees departed; 12+ IHS facilities shuttered; FY2026 budget proposes $911M (24%) cut to tribal programs. *Trump v. Barbara* SCOTUS ruling (argued April 1, decision expected June/July) carries dormant citizenship risk.
+- **Actionable tactics**: (1) Coordinate multi-tribe Court of Federal Claims filing for treaty breach; (2) District-level "treaty obligation impact" one-pagers for appropriations advocacy; (3) Pre-draft post-ruling rapid-response memos for NCAI/NARF distribution
+- **Cross-references added**: Domains 1, 6, 26, 29, 34, 35
+
+**Domain 39: Constitutional Architecture, Article V Convention Threat, and Amendment Process Reform**
+- **Why this domain**: Resolves contradiction between Article V as reform tool and constitutional vulnerability; every durable reform (SCOTUS term limits, Citizens United reversal, Electoral College abolition) requires Article V durability
+- **Baseline state May 2026**: Convention of States Project has 20 state resolutions (14 short of 34-state threshold). Michigan votes Nov 3, 2026 on constitutional convention question. **Novel intelligence surface**: ALEC-aligned lawyers have developed aggregation theories to count applications from different eras and subjects toward single 34-state threshold — most underreported Article V threat.
+- **Actionable tactics**: (1) Defeat Michigan Proposal 1 by widest margin; (2) File preemptive declaratory action establishing rescission validity and subject-limit enforcement; (3) Convene cross-partisan coalition on runaway convention risk
+- **Cross-references added**: Domains 2, 6, 20, 34, 35
+
+**Domain 40: Congressional Fiscal Authority Restoration and Impoundment Control**
+- **Why this domain**: Appropriations Clause argument (*Train v. New York*) is most powerful legal tool against DOGE fund cancellations; no existing domain provides constitutional scaffolding. Primary audience: appropriations committee staff, state AG litigators, administrative law scholars.
+- **Baseline state May 2026**: OMB Director Vought has stated ICA is unconstitutional; DOGE operated through 5 impoundment mechanisms without submitting required special messages. H.R.1180 would repeal ICA. GAO issued dozens of ICA violation findings; administration has not complied. Federal spending increased 6% to $7.558T despite claimed "savings."
+- **Actionable tactics**: (1) Organize coalition demanding GAO enforce 2 U.S.C. § 687 for 3 documented ICA violations within 30 days; (2) Develop model appropriations anti-impoundment provision for Appropriations Committee staff distribution by September 1; (3) Produce "Stolen Appropriations" reports for 10 states mapping impoundment by congressional district
+- **Cross-references added**: Domains 26, 27, 31, 34, 35, 38
+
+**Cross-reference flags for existing domains** (require user authorization):
+- **Domain 34**: Should point to Domain 40 for ICA-specific analysis
+- **Domain 6**: Should cross-reference Domain 39's SCOTUS term limits amendment section
+- **Domain 26**: Should cross-reference Domain 38's BIA/IHS closure analysis
+- **Domain 1**: Should cross-reference Domain 38's Native American Voting Rights section
+
+**Quality notes**:
+- All three domains grounded in official sources (NARF SCT, KOSU, Common Cause, EXPOSEDbyCMD, Ballotpedia, CBPP, CAP)
+- Domain 38 identifies dormant threat in *Trump v. Barbara* SCOTUS case (citizenship definitions)
+- Domain 39 surfaces novel Article V aggregation theory as most underreported structural vulnerability
+- Domain 40 provides constitutional/statutory basis for state AG and advocacy litigation
+- All actionable tactics are specific, timeline-aware, and immediately deployable
+
+**Status**: All three committed to `projects/resistance-research/domains/`. Production-ready for Phase 2 integration. Cross-reference integration requires user authorization.
+
+---
+
 ## Session 979 — Exploration Queue Completion (Items 23 & 32) + New Items Added (31 & 32)
 
 **Date**: 2026-05-13

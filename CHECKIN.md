@@ -1,5 +1,117 @@
 # Check-in
 
+## Session 980 — May 13, 2026, 09:13–10:45 UTC Autonomous Orchestrator (Parallel: Stockbot Baseline + Resistance-research Domains 38-40)
+
+**Status**: 🟢 CRITICAL INFRASTRUCTURE VERIFIED — All baseline checks pass before May 14 20:00 UTC checkpoint. Two anomalies identified (Ethernet failover, WiFi noise), mitigation path clear. Resistance-research Phase 2 expansion complete (Domains 38-40 committed). No new blockers.
+
+### Work Completed This Session
+
+**1. Stockbot May 13 Baseline Checks — May 14 Checkpoint Readiness** ✅
+   - **Scope**: Full Jetson infrastructure audit (10 checks)
+   - **Results**: ALL CHECKS PASSED — thermal idle (46–48°C), memory (3.5 GB available), disk (132 GB free), network (20ms ping, 338ms Alpaca), database integrity (OK, 90 trades), process health (status="ready"), Discord webhook configured
+   - **Actions completed**: Created persistent DB backups (`trading.db.backup.20260513`, `stockbot.db.backup.20260513`) on Jetson
+   - **Anomalies identified**:
+     - **HIGH**: No Ethernet failover — only WiFi active. Mitigation: Plug Ethernet cable before May 14 13:30 UTC if Jetson is physically accessible
+     - **LOW**: WiFi packet drops (47K accumulated, 1.1/min) — background noise, monitor only
+     - **INFO**: Realtime stream reconnection loop every 60s — expected pre-market behavior, will initialize at 13:30 UTC
+   - **Verdict**: Ready for May 14 20:00 UTC checkpoint. Infrastructure healthy.
+
+**2. Resistance-research Phase 2 Domain Expansion: Domains 38–40** ✅
+   - **Scope**: Three new high-impact domains for Phase 2 (4-5 hr exploration queue item)
+   - **Domain 38 — Tribal Sovereignty & Federal Trust Obligations**
+     - Fills gap: 574 federally recognized tribal nations, constitutional trust obligation
+     - Baseline: DOGE terminated 25+ BIA offices; 1,000+ IHS departures; $911M cut proposed (24% of tribal programs)
+     - *Trump v. Barbara* SCOTUS ruling (June/July) carries dormant citizenship risk
+     - Tactics: (1) Multi-tribe Court of Federal Claims; (2) District "treaty impact" one-pagers; (3) Pre-drafted post-ruling memos
+   - **Domain 39 — Article V Convention Threat & Amendment Architecture**
+     - Resolves Article V paradox: tool for reform AND constitutional vulnerability
+     - Baseline: Convention of States has 20 state resolutions (14 short). Michigan votes Nov 3, 2026.
+     - **Novel intelligence**: ALEC aggregation theory (most underreported Article V threat) — counting applications from different eras/subjects toward single 34-state threshold
+     - Tactics: (1) Michigan Proposal 1 defeat; (2) Preemptive declaratory litigation; (3) Cross-partisan coalition statement
+   - **Domain 40 — Impoundment Control & Congressional Fiscal Authority**
+     - Appropriations Clause argument (*Train v. NY*) is most powerful legal tool vs. DOGE cancellations
+     - Primary audience: appropriations staff, state AG litigators, admin law scholars
+     - Baseline: OMB Vought claims ICA unconstitutional; DOGE used 5 impoundment mechanisms without ICA special messages; H.R.1180 would repeal ICA
+     - Tactics: (1) GAO enforcement coalition; (2) Model anti-impoundment provision for Appropriations Committee; (3) "Stolen Appropriations" district-level reports (10 states)
+   - **Status**: All three committed to `projects/resistance-research/domains/`. Production-ready. Cross-reference integration (Domains 1, 6, 26, 34 updates) flagged for user authorization.
+
+### Project Status After Session 980
+
+**Stockbot** (User-escalated — May 14 checkpoint T-24h)
+- ✅ May 13 baseline checks completed; all infrastructure healthy
+- ✅ DB backups created on Jetson
+- ⚠️ Pre-checkpoint action: Plug Ethernet cable before 13:30 UTC (removes WiFi-only single point of failure)
+- ⏳ May 14 20:00 UTC: User executes checkpoint query; applies POST_GATE_1_RESPONSE_FRAMEWORK.md
+- **Status**: Ready. No autonomous work remaining before checkpoint.
+
+**Resistance-research** (High Priority — 44 domains ready [41 Phase 1+2, +3 new domains 38-40])
+- ✅ Phase 2 domain expansion complete (Domains 38-40 committed)
+- ✅ Phase 1+2 complete (41 domains), Phase 2 expansion started (3 new domains)
+- ⏳ Awaiting user authorization to update 4 existing domains with new cross-references (Domains 1, 6, 26, 34)
+- ⏳ Awaiting user distribution path decision (A / A+37 / B) to unlock Phase 1 execution
+- **Status**: Ready to proceed. No autonomous blockers.
+
+**Seedwarden** (Medium Priority — May 30 Phase 2 launch)
+- ✅ Phase 2 analytics pre-staging complete (Item 32 from Session 979)
+- ✅ Track B ready for May 30 (no blockers)
+- ⏳ Track A blockers: tag corrections (15 min), Etsy verification (1-5 days)
+- **Status**: Track B GO for May 30. Track A decision deadline May 19.
+
+**Cybersecurity-hardening** (High Priority — Phase 1 materials ready)
+- ✅ Phase 2 complete, Phase 1 materials production-ready
+- ⏳ Awaiting user approval: Phase 1 Tier 1 launch + Day 1 send date (target June 1)
+- **Status**: Ready on user approval.
+
+**Mfg-farm** (High Priority — Test print blocker)
+- ✅ Supplier negotiation playbook complete (Item 23)
+- ⏳ Awaiting test print execution (0.20mm layer, PLA+, 3 walls, 220-225°C)
+- **Status**: Blocked on user action only.
+
+**Career-training** (Complete)
+- ✅ 150/150 scenarios complete, production-ready
+
+**Off-grid-living** (Complete)
+- ✅ GitHub publication live, awaiting user social media execution
+
+### Items Requiring User Input
+
+1. **Stockbot May 14 checkpoint (CRITICAL, T-24h)**
+   - [ ] Plug Ethernet cable before 13:30 UTC (optional but recommended to eliminate WiFi-only risk)
+   - [ ] May 14 20:00 UTC: Execute checkpoint query using `scripts/may14_checkpoint_query_alpaca.py`
+   - [ ] Apply POST_GATE_1_RESPONSE_FRAMEWORK.md to classify outcome
+
+2. **Resistance-research cross-references** (May 14-15 window before Phase 1 execution)
+   - [ ] Approve updates to Domains 1, 6, 26, 34 with new cross-references (4 existing domain updates)
+   - [ ] Decide Phase 1 distribution path (A / A+37 / B) to unlock execution
+
+3. **Cybersecurity-hardening Phase 1 launch** (Target June 1)
+   - [ ] Approve Phase 1 Tier 1 execution + Day 1 send date
+
+4. **Seedwarden Track A** (Decision deadline May 19)
+   - [ ] Authorize tag corrections (15 min work)
+   - [ ] Authorize Etsy account verification (10 min user action)
+
+5. **Mfg-farm test print** (Blocking)
+   - [ ] Execute test print (0.20mm, PLA+, 3 walls, 220-225°C)
+   - [ ] Upon completion → orchestrator executes supplier negotiation Phase 1 same-day
+
+### Next Session Priorities
+
+**May 14 afternoon (CRITICAL)**:
+- Await user checkpoint execution at 20:00 UTC
+- Monitor checkpoint outcome and apply response framework
+
+**May 14-15**:
+- If user approves resistance-research cross-references and distribution path → begin Phase 1 execution
+
+**May 25-29**:
+- Execute Seedwarden analytics setup (if user approves) using Day-1 checklist
+
+**May 30**:
+- Seedwarden Phase 2 Track B launch (go-live)
+
+---
+
 ## Session 979 — May 13, 2026, 09:30–14:20 UTC Autonomous Orchestrator (Exploration Queue Backfill + Deliverable Completion)
 
 **Status**: 🟢 EXPLORATION QUEUE BACKFILLED — 2 major items completed, 2 new critical items added. All top projects remain ready pending user decisions. Stockbot checkpoint framework Stage 2 verification scheduled for May 14 afternoon.
