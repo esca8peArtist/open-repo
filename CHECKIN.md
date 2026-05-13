@@ -1,10 +1,25 @@
 # Check-in
 
-## Session 962 — May 13, 2026 06:46–07:42 UTC (Checkpoint Readiness + Phase 2 Finalization)
+## Session 962 — May 13, 2026 06:46–08:30 UTC (Checkpoint Readiness + Phase 2 Finalization + Module Index)
 
-**Status**: ✅ SESSION COMPLETE — Stockbot May 14 checkpoint verified ready; Seedwarden Phase 2 finalized; critical user actions identified
+**Status**: ✅ SESSION COMPLETE — Stockbot May 14 checkpoint verified ready; Seedwarden Phase 2 finalized; career-training Module Index delivered
 
 ### Work Completed
+
+**✅ career-training — Module Index & Gap Analysis COMPLETE**
+- **Deliverable**: `module-index.md` (3,200+ words, production-ready)
+- **Key content**:
+  - All 28 modules mapped to discipline + prerequisite dependencies
+  - 4 recommended reading paths (Industrial GC, Residential GC, Solar Specialist, PM/Superintendent) with sequencing and time estimates
+  - 17-discipline coverage matrix with gap identification
+  - **5 new module proposals** ready for priority ranking:
+    1. Disputes, Claims, Schedule Delay (2–3 hours)
+    2. Subcontractor Management (4–5 hours)
+    3. Prevailing Wage Compliance (2–3 hours)
+    4. Change Order Management (3–4 hours)
+    5. Quality Assurance/QC (4–5 hours)
+  - Study path guidance for different learner profiles
+- **Status**: PROJECTS.md updated; module curriculum now has clear progression paths
 
 **✅ stockbot — May 14 Checkpoint Readiness Verified**
 - **Deliverable**: `GATE_2_READINESS_CHECKLIST.md` (comprehensive pre/post-checkpoint guide)

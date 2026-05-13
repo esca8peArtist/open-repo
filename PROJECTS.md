@@ -810,7 +810,7 @@
 **Status**: Active — 28 reference modules complete (Modules 01–28)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/career-training/`
-**Current focus**: 28 modules written covering industrial GC foundations through specialty topics (ADU/infill, wildfire, solar, luxury residential, marketing). Next: practice scenarios, module gaps, and study reinforcement materials.
+**Current focus**: 28 modules written covering industrial GC foundations through specialty topics (ADU/infill, wildfire, solar, luxury residential, marketing). Module index + gap analysis COMPLETE (Session 962): `module-index.md` provides master inventory with reading paths for 4 career progressions (Industrial GC, Residential GC, Solar Specialist, Design-Build). 5 new module opportunities identified: Disputes/Claims, Subcontractor Management, Prevailing Wage, Change Orders, QA/QC. Next: practice scenarios and reinforcement materials.
 **Blocked on**: —
 **Notes**: Modules tagged with discipline, audience, and California-specific content where relevant. All marked status: reference.
 

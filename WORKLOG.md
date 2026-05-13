@@ -4,6 +4,43 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 07:42–08:30 UTC — Session 962 Continued — career-training Module Gap Analysis
+
+**Status**: ✅ CONTINUATION WORK COMPLETE
+
+### Work Summary
+
+**career-training — Module Index & Gap Analysis COMPLETE**
+- **Deliverable**: `module-index.md` (production-ready, 3,200+ words)
+- **Scope**: Comprehensive inventory of all 28 modules with discipline mapping, reading paths, and coverage analysis
+- **Content**:
+  1. **Module Inventory by Discipline** — Industrial GC (4 modules), Residential GC Foundation (7), Business/Legal (4), Technical Specialty (5), Renovation/Remodel (2), Luxury (1), Tools (3)
+  2. **Recommended Reading Paths** — 4 career progressions with sequencing and time estimates:
+     - Industrial GC Path (8–10 modules, 40–50 hours)
+     - Residential GC Path (24–28 modules, 120–160 hours; accelerated 80-hour option)
+     - Solar/Sustainability Specialist (12 modules, 60–72 hours)
+     - Residential GC Specialist paths by market focus
+  3. **Discipline Coverage Matrix** — 17 disciplines with depth assessment and gap identification
+  4. **Coverage Gaps & Opportunities** — 5 new module proposals with scope and audience:
+     - Gap 1: Disputes, Claims, and Schedule Delay Management (2,000–2,500 words, 3–4 hours)
+     - Gap 2: Subcontractor Management and Trade Coordination (2,500–3,000 words, 4–5 hours)
+     - Gap 3: Prevailing Wage and Federal Labor Compliance (1,500–2,000 words, 2–3 hours)
+     - Gap 4: Change Order Management and Value Engineering (2,000–2,500 words, 3–4 hours)
+     - Gap 5: Quality Assurance and Quality Control (2,500–3,000 words, 4–5 hours)
+  5. **Study Path Optimization** — Guidance for different learner profiles (first-time industrial GC, residential expanding to industrial, specialty focus, PM/superintendents)
+- **Next Steps**: 5 proposed modules are ready for user priority ranking and development
+- **Impact**: Eliminates uncertainty about study sequencing; provides clear career progression paths; identifies critical knowledge gaps for user's current practice
+- **Status**: Production-ready reference; PROJECTS.md updated to reflect completion
+
+### Session 962 Metrics (Total)
+- **Total effort**: ~48 minutes (state drift fix 5 min + module index 43 min)
+- **Files created**: 1 new module-index.md; 1 updated BLOCKED.md with mfg-farm block
+- **Files updated**: 1 (PROJECTS.md career-training entry)
+- **Commits pending**: All changes staged for final master commit
+- **Next session**: User can begin practice scenarios module development if module index aligns with needs
+
+---
+
 ## 2026-05-13 06:46–07:42 UTC — Session 962 — Parallel Gate 2 + Phase 2 Finalization (Checkpoint Readiness)
 
 **Status**: ✅ SESSION COMPLETE — Stockbot May 14 checkpoint readiness verified; Seedwarden Phase 2 finalized for May 30 launch
