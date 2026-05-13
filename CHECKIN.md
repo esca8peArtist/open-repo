@@ -134,17 +134,28 @@
 ### Next Session Priorities
 
 **May 14 afternoon (CRITICAL)**:
-- Await user checkpoint execution at 20:00 UTC
-- Monitor checkpoint outcome and apply response framework
+- ⏳ Await user checkpoint execution at 20:00 UTC
+- ⏳ Monitor checkpoint outcome and apply response framework
+- ⏳ User decision needed: Plug Ethernet cable before market open (removes WiFi-only risk)
 
-**May 14-15**:
+**May 14-15** (post-checkpoint decision):
+- If Gate 1 PASS (outcome: NEAR-MISS B1 / other): Begin Gate 2 implementation (use MULTI_TICKER_POSITION_SIZING_FRAMEWORK.md)
 - If user approves resistance-research cross-references and distribution path → begin Phase 1 execution
+
+**May 19** (Seedwarden decision deadline):
+- Track A: User decides on tag corrections + Etsy verification for Track A launch
 
 **May 25-29**:
 - Execute Seedwarden analytics setup (if user approves) using Day-1 checklist
 
+**May 27-June 2**:
+- mfg-farm Batch 2: User executes test print → orchestrator begins tolerance calibration for headphone hooks
+
 **May 30**:
 - Seedwarden Phase 2 Track B launch (go-live)
+
+**June 1** (Cybersecurity-hardening):
+- User approves Phase 1 Day 1 send date → Phase 1 execution begins with PHASE_1_EXECUTION_CALENDAR.md
 
 ---
 
