@@ -2,6 +2,36 @@
 
 ---
 
+## May 13, 2026 — Resistance Research Subagent — Phase 2 Domains 48-49-50
+
+**Status**: COMPLETE
+
+**Files created**:
+- `projects/resistance-research/domains/domain-48-surveillance-capitalism-electoral-manipulation.md` (~6,200 words, 45 citations)
+- `projects/resistance-research/domains/domain-49-callais-vra-redistricting-emergency.md` (~7,100 words, 41 citations)
+- `projects/resistance-research/domains/domain-50-healthcare-democracy-nexus-obbba-nvra.md` (~6,800 words, 45 citations)
+- `projects/resistance-research/PHASE_2_CANDIDATES_STATUS.md` (completion status tracker)
+
+**Selection rationale**: Domains selected from PHASE_2_DOMAIN_CANDIDATES.md scoring matrix.
+- Domain 48 (Surveillance Capitalism): Candidate A, ranked #1; June 12 FISA hard deadline, time-locked
+- Domain 49 (Callais VRA Emergency): Gap in framework — no domain synthesizes the April 29 ruling and the active May 2026 redistricting cascade; direct electoral crisis with 5 states in special sessions
+- Domain 50 (Healthcare-Democracy Nexus): Candidate C, ranked #2; OBBBA NVRA chain is the highest-electoral-stakes structural suppression mechanism; June 1 HHS rule is the immediate documentary anchor
+
+**Key new findings this session**:
+1. ICE-Medicaid data sharing covers ~80 million Medicaid patients; Palantir ELITE uses addresses for deportation targeting, creating dual chilling effect on healthcare enrollment AND NVRA voter registration
+2. PNAS 2026 peer-reviewed study confirms 1.9% turnout suppression from targeted digital voter suppression ads; racial minority battleground county voters are primary target
+3. Callais redistricting cascade active May 13: Alabama stay granted 5-4 (Allen v. Milligan effectively vacated despite pending intentional discrimination finding); Tennessee 9th District eliminated; 5 states in special sessions; NPR projects 15+ seats at risk
+4. OBBBA Medicaid work requirements: semi-annual (not annual) redeterminations create churn disenrollment multiplier; Arkansas 2018 natural experiment shows 18,000 lost coverage in 6 months with no employment effect
+5. Medicaid AVR fix: 8 states with AVR achieve 99% conversion vs. 97.5% declination rate under paper form system
+
+**Cross-reference flags for existing framework** (do NOT modify without user authorization):
+- Domain 33: needs ~400-word Callais section per CHECKIN.md flag
+- Domain 1: needs Callais in VRA erosion timeline
+- Domain 31: needs cross-reference to Domain 50 NVRA angle
+- Litigation tracker: needs Callais as new entry + Alabama May 11 stay as sub-entry
+
+---
+
 ## May 13, 2026 — General Research Agent — Phase 1 Execution Calendar & Contact Sequencing (Item 29)
 
 **Status**: COMPLETE
