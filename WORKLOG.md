@@ -53,6 +53,25 @@
 
 ---
 
+## General Research Agent — May 13, 2026 (mfg-farm Item 37 v2.0 — POST_PRINT_FULFILLMENT_READINESS.md)
+
+**Task**: Upgrade POST_PRINT_FULFILLMENT_READINESS.md from v1.0 to v2.0 to address specification gaps identified against the Item 37 task requirements.
+
+**Gaps addressed in v2.0**:
+1. Added Section 0: 5-item Go/No-Go gate at top of document (blocks all downstream sections)
+2. Updated supplier section (Section 4) to align with SUPPLIER_NEGOTIATION_PLAYBOOK.md (Item 23) — was eSUN/Anycubic, now Prusament/MatterHackers
+3. Added email Template C (Day 3 follow-up), Template D (volume pricing negotiation)
+4. Added CRM-style Supplier Tracking Matrix (Google Sheet Tab 5 schema)
+5. Extended Day 0-2 timeline to Day 0-through-Day-7 with supplier follow-up cadence
+6. Added automation/manual legend `[AUTO]` / `[MANUAL]` / `[PARALLEL]` to all timeline items
+7. Added Filament Inventory tab (Tab 6) to Google Sheet schema
+8. Added automation gap analysis table (Section 3.4)
+9. Fixed internal references to cross-link Item 16 (PRE_LAUNCH_FULFILLMENT_WORKFLOW.md) and Item 23 (SUPPLIER_NEGOTIATION_PLAYBOOK.md) throughout
+
+**File**: `projects/mfg-farm/POST_PRINT_FULFILLMENT_READINESS.md` (v2.0)
+
+---
+
 ## Research Agent — May 13, 2026 (EXPLORATION_QUEUE.md State Tracking: Items 36–38)
 
 **Task**: Log Item 36 completion status and mark Items 37–38 readiness in EXPLORATION_QUEUE.md.
@@ -1986,6 +2005,23 @@ None — this was a research + documentation item with no code/schema dependenci
 
 - `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (new)
 - `EXPLORATION_QUEUE.md` (Items 36-38 added)
+- `WORKLOG.md` (this entry)
+
+---
+
+## Session 1003 — 2026-05-13
+
+### Item 38: Phase 1 Measurement Automation (No-Code Setup Guide)
+
+**File**: `projects/cybersecurity-hardening/PHASE_1_MEASUREMENT_AUTOMATION.md`
+
+**Summary**: Produced the no-code measurement automation guide for Phase 1 launch (June 1). The document is a user-facing complement to the existing technical `MEASUREMENT_AUTOMATION_SETUP.md` (which requires Pi cron jobs and Python). This version uses Zapier free tier, Bitly, Discord webhook, and Calendly free tier only — no coding required. Covers: (1) Gmail label structure + Zapier Gmail-to-Sheets reply logging, (2) full 5-tab Google Sheets template with all formulas copy-paste ready including sector-specific reply rate auto-alerts, (3) Discord webhook setup with Option A (Pi script) and Option B (Zapier fallback), (4) Calendly free tier scheduling integration, (5) Policy Uptake tracking SOP with Friday scan procedure and keyword list, (6) six pre-staged contingency triggers with specific escalation actions, (7) 8-step May 31 evening verification sequence + June 1 morning launch sequence. Document opens with 5-item go/no-go checklist. ~4,200 words.
+
+**Key decisions**: Kept no-code framing throughout while explicitly cross-referencing the Pi script path for users who have that infrastructure. Sector-specific auto-alert formulas added to KPI Dashboard (not in Item 17 or the technical setup doc). Calendly-to-Calendar integration documented step-by-step. Google Alerts SOP with exact keyword strings preserved from Item 17.
+
+### Files Updated
+
+- `projects/cybersecurity-hardening/PHASE_1_MEASUREMENT_AUTOMATION.md` (new)
 - `WORKLOG.md` (this entry)
 
 **Session Status**: COMPLETE ✅
