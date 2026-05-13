@@ -1,5 +1,87 @@
 # Check-in
 
+## Session 996 — May 13, 2026, ~17:35–17:50 UTC (Parallel Execution: Items 34–35 Complete)
+
+**Status**: ✅ **EXPLORATION QUEUE COMPLETE — NO AUTONOMOUS WORK REMAINING. ALL PROJECTS READY FOR USER DECISIONS.**
+
+### Accomplished This Session
+
+1. **Full Orientation** (ORCHESTRATOR_STATE.md + PROJECTS.md + CHECKIN.md + BLOCKED.md + INBOX.md + EXPLORATION_QUEUE.md)
+   - All active projects verified
+   - No new INBOX.md items
+   - Single active block: mfg-farm test print (user action required)
+   - All exploration queue items available for execution
+
+2. **Parallel Autonomous Execution** (Items 34–35, general-purpose agents)
+   - ✅ **Item 34**: Seedwarden Phase 3 Production Timeline — 1,044 lines, 26-week roadmap (June–December 2026)
+   - ✅ **Item 35**: open-repo Phase 5 Architecture — 913 lines, 6-week implementation plan (post-PR-merge)
+   - Both documents production-ready, zero planning friction when projects reach those phases
+
+3. **Orchestration File Updates**
+   - Updated EXPLORATION_QUEUE.md: Items 34–35 marked COMPLETE
+   - Summary section updated: All exploration queue items now staged and ready
+   - No pending autonomous work identified
+
+### In Progress / Awaiting User Action
+
+1. **Stockbot** — May 14 20:00 UTC checkpoint (T-35h away)
+   - Pre-checkpoint infrastructure verified operational (Session 994)
+   - All checkpoint-critical tests passing
+   - User action: 20:00 UTC run `uv run python scripts/may14_checkpoint_query_alpaca.py --full`
+   - Post-checkpoint: Use POST_GATE_1_RESPONSE_FRAMEWORK.md for outcome classification
+
+2. **Resistance-Research** — Distribution path decision pending
+   - Phase 1+2 COMPLETE (58+ domains production-ready)
+   - Domain 42 Wave 1 ready to send (deadline May 28)
+   - User action: Correct 2 contacts (Mason Marks FSU, Washington AG Nick Brown) + launch Wave 1 (May 14-15)
+   - Materials: PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md ready for path A/A+37/B execution
+
+3. **Cybersecurity-Hardening** — Phase 1 approval pending
+   - Tier 1+2 materials production-ready
+   - Phase 1 Execution Calendar documented (11,700 words)
+   - User action: Approve Phase 1 launch (June 1 target) → orchestrator executes 21-day outreach
+
+4. **Seedwarden** — Track A corrections + Track B gates
+   - Track A: 2 tag corrections (15 min) + Etsy account verification (10 min user action + 1-5 day Etsy processing)
+   - Track B: Ready for May 30 launch (3 user gates: social accounts, Canva Brand Kit, Kit email account — 30-60 min each)
+   - Phase 3 infrastructure now complete (PHASE_3_PRODUCTION_TIMELINE.md ready for June 1)
+
+5. **mfg-farm** — Test print execution
+   - All pre-print deliverables complete (designs, listing, cost model)
+   - User action: Single test print (0.20mm PLA+, 3 walls, 220-225°C)
+   - Post-print: Supplier negotiation playbook (SUPPLIER_NEGOTIATION_PLAYBOOK.md) enables 27-day launch sequence
+
+6. **open-repo** — PR #1 awaiting review/merge
+   - Phase 5 architecture now complete (PHASE_5_ARCHITECTURE.md ready for post-merge handoff)
+   - External dependency: GitHub PR review/merge
+
+### What's Left Before May 30
+
+- **Stockbot**: May 14 checkpoint + post-checkpoint response execution
+- **Resistance-Research**: Domain 42 contact corrections + Wave 1 send (May 14-15) → Waves 2-3 follow based on responses
+- **Seedwarden**: Track A fixes (15 min) + 3 Track B gates (30-60 min each, can happen anytime before May 30)
+- **All other projects**: Awaiting corresponding user actions
+
+### Critical Dates (Next 16 Days)
+
+- **May 14 20:00 UTC**: Stockbot checkpoint (user action)
+- **May 14-15**: Domain 42 Wave 1 send (after contact corrections, 20 min)
+- **May 18**: Seedwarden Gate 1 (social accounts, 30-60 min)
+- **May 24**: Seedwarden Gate 2 (Canva Kit, 30 min)
+- **May 25 (HARD DEADLINE)**: Seedwarden Gate 3 (Kit account DNS propagation, 30-60 min)
+- **May 28**: Domain 42 Wave 1 hard-stop deadline (participation notice filing for May 28 DEA hearing)
+- **May 30**: Seedwarden Phase 2 launch (go/no-go decision May 29 evening using PHASE_2_GO_NO_GO_DASHBOARD.md)
+
+### Next Autonomous Session
+
+**Recommendation**: None identified. All projects have autonomous work complete and are awaiting user decisions/actions.
+
+**Post-May-14 checkpoint** (most likely next autonomous session trigger): Execute POST_GATE_1_RESPONSE_FRAMEWORK.md for outcome classification, then begin Gate 2 work per outcome (use GATE_2_IMPLEMENTATION_GUIDE.md for Week 1-4 roadmap).
+
+**Post-May-30 checkpoint** (if applicable): Begin Seedwarden Phase 2 support + resistance-research Phase 1 distribution monitoring/amplification using DOMAIN_42_AMPLIFICATION_STRATEGY.md.
+
+---
+
 ## Session 995 — May 13, 2026, ~17:35–18:30 UTC (Exploration Queue Refresh + Item 33 Complete)
 
 **Status**: ✅ **ITEM 33 COMPLETE — STOCKBOT LIVE TRADING LAUNCH READINESS DOCUMENT DELIVERED**

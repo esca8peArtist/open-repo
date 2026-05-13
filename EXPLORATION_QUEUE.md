@@ -514,25 +514,41 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 **Blocker**: None (autonomous)
 **Next Step**: Begin immediately; complete by June 1 so live trading path is clear for post-Gate-3 execution
 
-### ⏳ Item 34: Seedwarden Phase 3 Complete Production Timeline & Content Dependencies
-**Status**: QUEUED (Session 994, May 13 2026)
+### ✅ Item 34: Seedwarden Phase 3 Complete Production Timeline & Content Dependencies
+**Status**: COMPLETE (Session 996, May 13 2026, 17:35 UTC)
 **Impact**: MEDIUM — Phase 3 launches July+; planning now eliminates setup friction
-**Effort estimate**: 2.5–3 hours
-**Deliverable**: `projects/seedwarden/PHASE_3_PRODUCTION_TIMELINE.md` — Detailed 12-week execution plan: June–August research phase for medicinal herbs, Sep–Oct content production, Nov–Dec platform staging, Jan+2027 market testing; identifies critical path, resource bottlenecks, supply chain dependencies, content interdependencies, weekly milestones with go/no-go gates
-**Goal**: Build on existing Phase 3 outline with concrete week-by-week execution plan
-**Feasibility**: HIGH — Phase 3 research already complete; this is timeline + dependency mapping
-**Blocker**: None (autonomous)
-**Next Step**: Begin after Item 33 (lower priority); complete by June 15
+**Effort**: 2.5–3 hours
+**Deliverable**: `projects/seedwarden/PHASE_3_PRODUCTION_TIMELINE.md` (1,044 lines, 60 KB, production-ready)
+**Content**: 26-week timeline (June–December 2026), 50 medicinal herb species, 4-wave launch structure, 4 contingency scenarios, go/no-go decision gates, resource planning, critical path dependencies, success criteria
+**Key findings**: 
+- 180–240 min/guide (longer than wild edibles due to medicinal-specific evidence requirements)
+- Research phase June–July (8 weeks) for herbalist SME interviews, evidence gathering
+- Content production August–October (12 weeks, 4 waves)
+- Platform staging November–December (6 weeks)
+- Wave 1 (June 15) already committed — photo + writing complete
+- Total effort: 8–10 hours/week average, achievable in parallel with Phase 2 support
 
-### ⏳ Item 35: open-repo Phase 5 (Offline Export & Kiwix Integration) Architecture & Implementation Plan
-**Status**: QUEUED (Session 994, May 13 2026)
-**Impact**: MEDIUM — Phase 5 comes after PR #1 merge; planning now enables rapid handoff post-merge
-**Effort estimate**: 3–4 hours
-**Deliverable**: `projects/open-repo/PHASE_5_ARCHITECTURE.md` — Comprehensive design: offline export pipeline architecture, Kiwix integration approach, deployment options, testing strategy, success criteria, week-by-week implementation timeline, resource estimates, dependency on Phase 4 completion.
-**Goal**: Design Phase 5 while PR #1 is in review so that post-merge execution can begin immediately without planning friction
-**Feasibility**: HIGH — Phase 4 codebase accessible, Kiwix is well-documented, architecture is standard
-**Blocker**: None (autonomous); PR merge timing not a hard dependency for planning
-**Next Step**: Begin after Item 34 (or in parallel); complete by June 10 for post-PR-merge handoff
+**Strategic Impact**: Phase 3 execution infrastructure complete; user has detailed week-by-week roadmap for 6-month medicinal herb development. Zero planning friction when Phase 2 concludes.
+
+**Next Step**: Phase 2 launch (May 30) → use timeline for June 1 Phase 3 research start
+
+### ✅ Item 35: open-repo Phase 5 (Offline Export & Kiwix Integration) Architecture & Implementation Plan
+**Status**: COMPLETE (Session 996, May 13 2026, 17:38 UTC)
+**Impact**: MEDIUM — Phase 5 comes after PR #1 merge; planning enables rapid handoff post-merge
+**Effort**: 3–4 hours
+**Deliverable**: `projects/open-repo/PHASE_5_ARCHITECTURE.md` (913 lines, 39 KB, production-ready)
+**Content**: 8 sections covering offline export pipeline, Kiwix integration, 4 deployment options (chosen: Cloudflare R2), testing strategy, 6-week implementation timeline (18 total hours), 8-item risk register with contingency scenarios, success criteria metrics
+**Key findings**:
+- ZIM format (open standard, 10M+ annual downloads) chosen over SQLite/IPFS CAR
+- python-libzim library (stable API, no Docker dependency)
+- Cloudflare R2 deployment (zero egress cost, free tier, global CDN)
+- Xapian FTS (embedded full-text search, no separate server)
+- Weekly full exports (simpler than incremental for MVP)
+- 6-week post-PR-merge timeline: Week 1 learning, Week 2 pipeline v0.1, Week 3 Phase 4 integration, Week 4 reader testing, Week 5 deployment, Week 6 documentation
+
+**Strategic Impact**: Phase 5 architecture complete; upon PR #1 merge, implementation team can immediately start Week 1 without additional planning. Zero ambiguity on "what is Phase 5" or "how do we build it."
+
+**Next Step**: PR #1 merges → use timeline for Week 1 Kiwix learning sprint (3 hours)
 
 ---
 
@@ -542,4 +558,16 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 
 **Session 994 additions**: 3 new exploration items queued (Items 33–35) covering critical path to live trading, Phase 3 production, Phase 5 post-PR execution. All items are autonomous; no blockers.
 
-**Total queue status**: 3 items queued, ready for parallel execution starting with Item 33 (highest impact)
+**Session 996 (May 13, 17:35–17:38 UTC) — ITEMS 34–35 COMPLETE** ✅
+- ✅ Item 33: Stockbot Live Trading Launch Readiness (COMPLETE from Session 995)
+- ✅ Item 34: Seedwarden Phase 3 Production Timeline (1,044 lines, 26-week roadmap, 4 contingencies)
+- ✅ Item 35: open-repo Phase 5 Architecture (913 lines, 6-week implementation plan, deployment chosen)
+
+**Total queue status**: All exploration items staged and ready. No pending autonomous work identified.
+
+**Strategic Impact**:
+- Seedwarden: Phase 3 infrastructure complete before Phase 2 launch (May 30); June 1 research can begin immediately
+- open-repo: Phase 5 handoff-ready for post-PR-#1-merge; no planning friction on Week 1 start
+- stockbot: Live trading readiness document eliminates 4-6 hour post-Gates setup; 30-minute activation enabled
+
+**Next Autonomous Work**: None identified. All projects awaiting user decisions (stockbot checkpoint May 14, resistance-research path decision, cybersecurity Phase 1 approval, mfg-farm test print, seedwarden gates).
