@@ -2,6 +2,84 @@
 
 ---
 
+## May 13, 2026 — General Research Agent — Phase 1 Distribution Execution Blueprint (Item 28)
+
+**Status**: COMPLETE
+
+**File created**: `projects/resistance-research/PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md`
+
+**Word count**: ~3,200 words | **Sections**: 7 (Overview, Pre-Execution Checklist, Day-by-Day Timeline, Batch 1 Quick Reference, Template Quick Reference, Contingency Playbook, Success Metrics)
+
+**Key deliverables**:
+
+1. **Pre-execution checklist** (10 items): Path decision gate, Gist URL verification, template placeholder fill sweep, email account access check, contact log creation, response monitoring folder setup — all items actionable without opening any other file.
+
+2. **Day-by-day execution timeline** (Days 1–21): Day 1 blocks (Gist verification → template fill → personalization → send sequence), Day 2 monitoring setup, Day 3 social media staging, Days 4–7 response window, Days 8–12 Batch 2, Days 15–21 Batch 3. Domain 42 DEA sub-batch integrated throughout (Waves 1–3 mapped to timeline with May 28 hard-stop date).
+
+3. **Batch 1 Quick Reference**: Five bridge-node contacts (Goodman, Weiser, Chenoweth, Bassin, Elias) with pre-filled organization, title, domain focus, verified email, and template assignment. Domain 42 Wave 1 Category A sub-batch with DEA submission details.
+
+4. **Template Quick Reference**: Template type-to-contact mapping table (A/B/C), universal fields that must be filled per send, domain-specific email openers pre-selected per Batch 1 contact, timing-dependent fields flagged for currency check.
+
+5. **Contingency playbook summary**: Bounce handling (1–5 / 6–15 / 15+ thresholds), non-response follow-up protocol, Domain 42 no-response fallback, template merge error recovery, Batch 1 underperformance diagnostic.
+
+6. **Success metrics**: Batch-level response and forward targets, 30-day gate checkpoints (Tier 1 response rate, network propagation, external mention), next-batch timing decision criteria, Domain 42 success criteria.
+
+7. **File reference summary table**: Single lookup table mapping every execution need to the relevant file — eliminates need to search across the project directory during execution.
+
+**Evidence basis**: PHASE_1_EXECUTION_READINESS.md, execution/tier-1-contact-batches.md, execution/domain-42-contact-list.md, policy-influencer-mapping.md, DISTRIBUTION_GIST_URLS.md, execution/outreach-email-templates.md, execution/success-metrics.md, PHASE_1_CONTINGENCY_PLAYBOOK.md.
+
+---
+
+## May 13, 2026 — General Research Agent — Tier 2 Expansion Architecture (Cybersecurity-Hardening, Item 27)
+
+**Status**: COMPLETE
+
+**File created**: `projects/cybersecurity-hardening/TIER_2_EXPANSION_ARCHITECTURE.md`
+
+**Word count**: ~6,500 words | **Sections**: 9 sections + gate reference card appendix
+
+**Key deliverables**:
+
+1. **18 pre-screened Tier 2 candidates** with transparent 5-dimension scoring rubric (adoption likelihood, sector diversity, amplification potential, geographic gap fill, sector leadership). 5 Fast Followers (EFF, S.T.O.P., Just Futures Law, NILC, ACLU SPT), 10 Steady Majority (SEIU, UAW, DRA, NNEDV, Mijente, Color of Change, Planned Parenthood, Brennan Center, UnidosUS, Georgetown CPT), 5 Late Adopters held for post-case-study engagement. All contact details cross-referenced against `tier-2-sector-contact-lists.md` and organizational websites.
+
+2. **3-tier pilot architecture** with explicit gate conditions: Group A (FPF/NLG/CLS, May 28–June 28, concurrent with Phase 1), Group B (5-10 Steady Majority orgs, August 1–September 1, dependent on Phase 1 and Group A gates), Tier 3 decision (September 15, binding GO/CONDITIONAL/INSUFFICIENT).
+
+3. **12-week Gantt** with 5 named gate checkpoints (June 7, June 15, July 1, August 15, August 28), weekly milestones, and metric triggers for each gate. Decision owner named (Anya) for all gates.
+
+4. **4 risk scenarios** with 3-lever diagnostic procedures: Phase 1 underperforms (sector analysis + meeting conversion + framing simplification), Group A adoption high / engagement low (quick-start variant + office hours + social proof), security incident at Group A org (offer support, document as case study, accelerate Group B), contact turnover (48h re-engagement window, 4th-candidate substitution rule).
+
+5. **Tier 3 scoring matrix**: 4 weighted components (Phase 1 adoption 40%, Group A 30%, Group B 20%, policy uptake 10%). Quantified thresholds: >55 = GO, 40–55 = CONDITIONAL (25-org subset), <40 = INSUFFICIENT. Worked example included.
+
+6. **Resource allocation**: 168 hours over 12 weeks (~14 hrs/week, 2.8 hrs/day on 5-day week). Peak is Weeks 1–4 at 4 hrs/day. Contingency reallocation table for Trigger 3 (Group A below threshold).
+
+7. **2 contingency timeline scenarios**: 2-week Phase 1 slip (moderate impact, Tier 3 moves 2 weeks) and Phase 1 <40% adoption with 4-week diagnostic (Tier 3 moves to November 2026 — accepted trade-off for playbook refinement quality).
+
+**Evidence basis**: `TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md` (KPI targets and measurement thresholds), `TIER_2_PILOT_LAUNCH_READINESS.md` (Group A org selection and pilot structure), `tier-2-sector-contact-lists.md` (verified contacts), `TIER_2_DISTRIBUTION_STRATEGY.md` (sector messaging and sequencing).
+
+---
+
+## May 12, 2026 — General Research Agent — Phase 2 Domain Candidates: Surveillance Capitalism, AI Regulatory Capture, Healthcare-Democracy Nexus
+
+**Status**: COMPLETE
+
+**File created**: `projects/resistance-research/PHASE_2_DOMAIN_CANDIDATES.md`
+
+**Word count**: ~3,800 words | **Sections**: Executive Summary + 3 full candidate outlines + scoring matrix + sequencing recommendation
+
+**Key findings**:
+
+1. **Candidate A — Surveillance Capitalism and Electoral Manipulation**: Ranked 1st. June 12 FISA Section 702 reauthorization deadline creates the sharpest near-term research production window. The convergence of three streams — commercial data broker voter profiling, government warrant-bypass via data broker purchases, and AI-generated psychographic political microtargeting — is not addressed as a unified domain anywhere in the existing 47-domain framework. Cross-partisan coalition (libertarian-right + progressive-left) is the most robust in the Phase 2 set. Research estimate: 12-15 hours.
+
+2. **Candidate B — AI/Tech Regulatory Capture**: Ranked 3rd (but 2nd in analytical novelty). The May 2026 arXiv paper "Big AI's Regulatory Capture" (arXiv:2605.06806) provides the first systematic taxonomy of 27 corporate capture mechanisms and was published days before this research. The December 2025 executive order preempting state AI laws using $21B in BEAD funding leverage is the structural crisis; FTC enforcement reversal under the AI Action Plan is the institutional failure. Distinct from Domain 36 (AI governance in government) — this is the only proposed domain that analyzes AI corporations as political actors capturing democratic regulatory institutions. Research estimate: 14-18 hours.
+
+3. **Candidate C — Healthcare Access and the Democracy Nexus**: Ranked 2nd in production priority. The NVRA-Medicaid enrollment causal chain is the key finding: Medicaid enrollment offices are designated voter registration agencies under the NVRA; OBBBA's 15 million coverage loss projections mean 15 million fewer people served by NVRA-mandated registration sites. This converts a healthcare policy argument into a constitutional democracy argument and gives state AGs a specific statutory enforcement theory (NVRA compliance at Medicaid agencies). Research estimate: 10-14 hours.
+
+4. **Production sequencing**: Candidate A (May 15-June 8 — June 12 FISA deadline); Candidate C (late June — June 1 HHS work requirement rule anchor); Candidate B (July — state AG coalition filing window).
+
+5. **Evidence gaps noted**: Candidate A: PMC voter suppression study is new (2026) and should be read carefully for empirical scope. Candidate C: no study has yet quantified the specific NVRA registration impact of OBBBA (projected secondary effect). Candidate B: state AG litigation intentions confirmed by December 2025 letter but no filed cases yet.
+
+---
+
 ## May 9, 2026 — Research Agent — Post-Phase-1 Domain Expansion Roadmap (Domains 48–54)
 
 **Status**: COMPLETE
