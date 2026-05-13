@@ -349,6 +349,68 @@ May 12–May 30–June 15 timeline coordinated across stockbot, resistance-resea
 
 ---
 
+## Queued Items (Session 958)
+
+### ⏳ Item 28: Resistance-Research Phase 1 Distribution Execution Blueprint
+**Status**: QUEUED (Session 958, May 13 2026)
+**Impact**: HIGH — Phase 1 distribution deadline May 28 (15 days); user will need detailed execution plan immediately after path decision
+**Goal**: Create comprehensive day-by-day execution plan for all 3 distribution paths (A, A+37, B) that eliminates friction once user decides:
+1. **Contact sequencing calendar** (3 waves, specific dates per contact tier, customized outreach windows)
+2. **Message personalization templates** (sector-specific variants: law schools, think tanks, civil rights, labor, election protection)
+3. **Gist creation step-by-step guide** (exact steps for Zone A/D structure, public/private settings, formatting, cross-linking)
+4. **Email pre-fill templates** (domain-specific opens, body copy with bracketed customization points, signature blocks)
+5. **Social media scheduling guide** (LinkedIn/Twitter/Mastodon scheduling, hashtag strategy, timing by organizational size)
+6. **Success metrics & monitoring dashboard** (reply rate targets by wave, institutional engagement tracking, policy uptake signals)
+7. **Contingency activation triggers** (if reply rate <30% by Day 5, if key organizations don't engage, low media coverage fallback)
+**Feasibility**: HIGH — DISTRIBUTION_PATH_EXECUTION_GUIDE.md (Item 11, Session 933) exists with calendar templates; contact list already verified (Session 662); execution templates partially complete
+**Effort estimate**: 3-4 hours
+**Deliverable**: `projects/resistance-research/PHASE_1_EXECUTION_BLUEPRINT.md` (detailed day-by-day calendar with 3-path variants, email + social templates by sector, Gist procedures, success KPIs with automated tracking spreadsheet template, contingency playbook with activation windows)
+**Why now**: User distribution path decision expected imminent (next 1-2 days based on CHECKIN.md); once user chooses, execution must start immediately to hit May 28 deadline. Pre-staging eliminates all planning friction.
+**Blocker**: Awaiting user distribution path decision (A / A+37 / B) — but can be built path-agnostic with all three variants
+**Next Step**: Deliver May 13 afternoon → user selects path → execution begins May 14-15 using provided templates
+
+---
+
+### ⏳ Item 29: Cybersecurity-Hardening Phase 1 Execution Calendar & Contact Sequencing
+**Status**: QUEUED (Session 958, May 13 2026)
+**Impact**: HIGH — Phase 1 launch target June 1 (19 days); user approval imminent; execution calendar critical for Week 1-3 coordination
+**Goal**: Create operational execution plan for Phase 1 (Tier 1) launch covering:
+1. **Day-by-day Week 1-3 calendar** (specific contacts per day, message send times, expected response windows, follow-up triggers)
+2. **Contact pre-screening & warm outreach** (25 Tier 1 contacts verified, introduction sequencing, meeting request templates, availability check process)
+3. **Messaging customization by contact type** (senators vs think tanks vs law schools; sector-specific problem framing, ask variations)
+4. **Email templates with personalization fields** (bracketed customization points, signature blocks, optional attachments per contact)
+5. **Meeting coordination & briefing materials** (30-min call agenda, Domain summary handouts, Domain 42 urgency framing, policy ask one-pager)
+6. **Success metrics tracking** (meeting acceptance rate targets per wave, policy uptake signals, media mention tracking, influencer amplification metrics)
+7. **Contingency & escalation procedures** (if contact unavailable, low engagement response, media/influencer coordination bottlenecks)
+**Feasibility**: HIGH — PHASE_1_EXECUTION_READINESS.md exists (Session 662, 5,000+ words); 25 Tier 1 contacts already verified and documented; messaging templates complete (Sessions 528-550)
+**Effort estimate**: 2.5-3 hours
+**Deliverable**: `projects/cybersecurity-hardening/PHASE_1_EXECUTION_CALENDAR.md` (week-by-week day-by-day calendar with 25 contacts pre-scheduled, email + meeting templates by contact category, briefing material checklist, success metrics with automated tracking sheet, contingency activation flowchart)
+**Why now**: User approval of Phase 1 expected imminently (within 1-2 days); June 1 launch target requires Week 1-3 calendar finalized in advance. Pre-staging enables day-1 execution without planning delays.
+**Blocker**: Awaiting user approval to proceed with Phase 1 — but execution calendar can be built independently
+**Next Step**: Deliver May 13 → user approves Phase 1 → execution begins June 1 using provided calendar
+
+---
+
+### ⏳ Item 30: Seedwarden Bundle E Writing & Launch Acceleration
+**Status**: QUEUED (Session 958, May 13 2026)
+**Impact**: HIGH — Bundle E publication window May 19-22 (6 days); user decision on launch needed; writing must start May 13-14 for May 19 timeline
+**Goal**: Prepare detailed guide-writing acceleration package for 5 Invasive Edibles guides (Garlic Mustard, Japanese Knotweed, Autumn Olive, Purslane, Multiflora Rose):
+1. **5-guide writing sprint plan** (content outline per guide, 112-min/guide velocity estimate, quality checklist, 15-hour total target)
+2. **Photo sourcing confirmation** (all 5 guides confirmed zero-photo-dependency using Wikimedia Commons sources; exact source URLs + attribution verified)
+3. **Content template system** (habitat/usage/identification/recipes sections pre-filled where possible; bracketed customization points for user editing)
+4. **Quality control checklist** (species misidentification risk assessment per guide, seasonal accuracy verification, recipe testing requirements)
+5. **Platform setup checklist** (Etsy listing copy finalization, 5-email sequence validation, social media asset sizing for TikTok/Instagram/Pinterest)
+6. **Launch day coordination** (simultaneous email/social/ads/press release sequence, monitoring dashboard, real-time metrics tracking)
+7. **First-24-hour metrics** (pre-order target: 40-50 at $24.99 = $1,000-1,500 revenue; conversion monitoring, customer feedback capture)
+**Feasibility**: HIGH — BUNDLE_E_PUBLICATION_PACKAGE.md complete (Session 952, 720 lines); all 5 guides have zero photo dependencies confirmed; email/social templates staged and ready
+**Effort estimate**: 2-2.5 hours
+**Deliverable**: `projects/seedwarden/BUNDLE_E_WRITING_ACCELERATION.md` (detailed writing sprint plan with time blocks, photo verification checklist with Wikimedia URLs, content template pre-fills per guide, QC checklist with species-specific risks, platform setup checklist with final copy review steps, launch day SOPs with monitoring dashboard, first-week metrics framework)
+**Why now**: May 19 launch window is 6 days away; writing must start May 13-14 to finish by May 18 for May 19 publication. User decision on launching Bundle E expected imminent (tied to Phase 1 distribution path decision). Pre-staging enables immediate writing start once user approves.
+**Blocker**: User confirmation of May 19 launch approval — but acceleration package can be prepared independently
+**Next Step**: Deliver May 13 → if user approves Bundle E launch, guide writing begins May 13-14 using provided sprint plan, aiming for May 19-22 simultaneous publication
+
+---
+
 ## Previously Pending Items
 
 ### ⏳ Item 9: Jetson Resilience Assessment

@@ -1,5 +1,30 @@
 # Check-in
 
+## Session 958 — May 13, 2026 01:35–ongoing (Exploration Queue Expansion + Phase 1 Execution Planning)
+
+**Status**: 🔄 IN PROGRESS — Orchestrator active; identifying 2-3 new exploration items
+
+### Current Session Work
+
+**Project Blockers Status**:
+- ✅ **stockbot** — checkpoint infrastructure ready (May 14 20:00 UTC); no autonomous blockers
+- ✅ **resistance-research** — Phase 1 distribution path awaiting user decision (A / A+37 / B)
+- ✅ **cybersecurity-hardening** — Phase 1 ready awaiting user approval
+- ✅ **mfg-farm** — blocked on user test print; all post-print infrastructure staged
+- ✅ **seedwarden** — Phase 2 launch-ready; Track A blocked on user tag corrections, Track B blocked on user account setup
+
+**Exploration Queue Status**: 1 queued item (Item 23, blocked on test print) — below 3-item threshold per protocol. Identifying 2-3 new high-impact items.
+
+**Needs Your Input (Urgent)**:
+1. **INBOX entry clarification**: INBOX.md shows `- [2026-05-13 01:35] !block resistance-research`. Does this mean:
+   - Option A: You want to pause resistance-research project (hold distribution decision)?
+   - Option B: This was incomplete/accidental entry and can be cleared?
+   - Option C: Something else?
+   
+   Please clarify so orchestrator can process correctly.
+
+---
+
 ## Session 957 — May 13, 2026 01:15 UTC (Critical Block Resolution + Exploration Queue Items 26 & 27)
 
 **Status**: ✅ SESSION COMPLETE — Critical blocker resolved; 2 high-impact exploration items delivered
