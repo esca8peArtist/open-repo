@@ -2,6 +2,34 @@
 
 ---
 
+## May 13, 2026 — Resistance Research Subagent — Phase 2 Domains 38-40 Production (Exploration Queue Item: Phase 2 Expansion Domains 38-40)
+
+**Status**: COMPLETE
+
+**Files created**:
+- `projects/resistance-research/domains/domain-38.md` — Tribal Sovereignty, Indigenous Democratic Design, and Federal Trust Obligations (~6,400 words, 22 source citations)
+- `projects/resistance-research/domains/domain-39.md` — Constitutional Architecture, the Article V Convention Threat, and Amendment Process Reform (~6,800 words, 18 source citations)
+- `projects/resistance-research/domains/domain-40.md` — Congressional Fiscal Authority Restoration and Impoundment Control (~7,100 words, 16 source citations)
+
+**Domain selection rationale**:
+- Domain 38 (Tribal Sovereignty): Highest-scoring Domain 40-B candidate in strategic analysis (78.8); selected first due to live SCOTUS trigger (*Trump v. Barbara*, pending June/July 2026 ruling), ongoing BIA/IHS DOGE closures, and framework gap (no prior domain addresses the 574 sovereign tribal nations)
+- Domain 39 (Article V / Constitutional Architecture): Domain 40-A candidate; Michigan November 3, 2026 ballot anchor creates near-term organizing window; fills the "constitutional implementation gap" that sophisticated framework readers identify — every amendment-requiring reform (SCOTUS term limits, campaign finance, Electoral College) flows through this analysis
+- Domain 40 (Fiscal Authority / ICA): Domain 40-C candidate; lowest research-hours-to-produce of all Phase 2 candidates (8-10 hrs); highest adoption potential among appropriations staff and administrative law practitioners; the Appropriations Clause argument is the single most powerful legal tool for state AGs challenging DOGE fund cancellations
+
+**Novel intelligence surfaces identified**:
+1. DOGE aggregation theory risk: ALEC-aligned lawyers are developing a theory that applications from different eras and different subjects can be aggregated toward the 34-state convention threshold — this was not fully flagged in the strategic analysis and warrants immediate legal preparedness (preemptive declaratory action strategy in Domain 39)
+2. IRS/Treasury payment system manipulation is analytically distinct from ICA text violations and may constitute a separate class of impoundment that existing enforcement mechanisms cannot readily address — identified in Domain 40 as requiring new legislative architecture
+3. The ISDEAA compact funding impoundment (Domain 38) creates a direct statutory cause of action under ISDEAA Section 110 that has not been widely litigated — a potentially underused enforcement pathway for tribal program defense
+4. Cross-partisan convention defense coalition: Both progressive and conservative constitutional scholars (Tribe and Scalia) oppose the convention pathway; this cross-ideological consensus is underutilized in current advocacy framing
+
+**Cross-references needed in existing domains** (do NOT modify without user authorization):
+- Domain 34 (Congressional Power of the Purse): Domain 40 extends this domain; Domain 34 should add a pointer to Domain 40 for ICA-specific analysis
+- Domain 6 (Judicial Independence): Domain 39's SCOTUS term limits amendment analysis should be cross-referenced in Domain 6's reform pathway section
+- Domain 26 (Government Accountability): Domain 38's BIA/IHS DOGE closure analysis parallels the OIDO closure in Domain 39; cross-reference opportunity
+- Domain 1 (Voting Rights): Domain 38's Native American Voting Rights section should be cross-referenced in Domain 1's state-specific suppression analysis
+
+---
+
 ## May 13, 2026 — Resistance Research Subagent — Phase 2 Cross-Reference Integration (Exploration Queue Item 33)
 
 **Status**: COMPLETE
