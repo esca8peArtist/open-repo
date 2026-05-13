@@ -1,5 +1,87 @@
 # Check-in
 
+## Session 971 — May 13, 2026 06:45–07:15 UTC (Pre-May-14 Checkpoint Analysis + Phase 2 Verification)
+
+**Status**: ✅ SESSION COMPLETE — Stockbot checkpoint analysis ready; resistance-research Phase 2 cross-reference verification complete
+
+### Work Completed This Session
+
+**✅ Stockbot Pre-Checkpoint Analysis**
+- **Deliverable**: `projects/stockbot/MAY_14_CHECKPOINT_PRE_ANALYSIS.md` (comprehensive 2,000+ word decision document)
+- **Content**: Gate 1 status (FAR_MISS_C1 May 12, expecting NEAR_MISS B1 May 14), Gate 2 readiness (72/100), May 14 execution timeline
+- **CRITICAL FINDING**: `active-sessions.json` contains 67 sessions vs. 2-session documented deployment
+  - **Resolution needed May 14 19:00 UTC**: `curl http://100.120.18.84/api/ready` to determine actual Jetson session count
+  - If 67 sessions running: system already Gate 2+ equivalent; ARCH-4 concentration check becomes urgent
+  - If 2 sessions running: checkpoint proceeds as documented
+- **User action timeline**:
+  - 18:00 UTC: Verify Alpaca connectivity
+  - 19:00 UTC: Confirm Jetson session count via /api/ready
+  - 20:00 UTC: Run full checkpoint query
+  - 20:15 UTC: Classify outcome using four-way decision tree in document
+
+**✅ Resistance-Research Phase 2 Cross-Reference Integration (Exploration Queue Item 33)**
+- **Verification**: All Phase 2 cross-reference integration confirmed complete
+- **Evidence**: 
+  - Domain 1: Callais sections present with Domains 49-50 links
+  - Domain 31: Full NVRA enforcement angle with Domains 48-50 links
+  - Domain 33: Redistricting cascade + May 11 Alabama stay with all cross-refs
+  - Litigation Tracker: Category 10 covers VRA Section 2 post-Callais with full stay documentation
+- **Status**: No new commit required (already committed in session 967)
+
+### Critical Findings & Blockers
+
+**SESSION 971 FINDINGS**:
+
+1. **Stockbot Session Count Discrepancy** (URGENT for May 14)
+   - Documentation describes 2-session Jetson deployment (AAPL lgbm_ho + AAPL ridge_wf)
+   - `active-sessions.json` file contains 67 sessions (full portfolio)
+   - **Unknown state**: Which config did Jetson load on last restart?
+   - **May 14 action**: User must SSH and run `curl /api/ready` at 19:00 UTC to resolve
+   - **Strategic impact**: If 67 sessions running, Gate 1 checkpoint may already PASS (concurrent with checkpoint query)
+
+2. **Resistance-Research Distribution Decision** (DEADLINE: May 28 for Domain 42)
+   - All 41+ domains production-ready
+   - Phase 2 cross-references 100% complete
+   - Awaiting user decision: Path A (immediate) / Path A+37 Hybrid (recommended) / Path B (expand first)
+   - **Timeline pressure**: Domain 42 DEA deadline May 28 (15 days); distribution window narrowing
+
+### Critical Timeline (Next 15 Days)
+
+| Milestone | Days | Status | User Action? |
+|-----------|------|--------|--------------|
+| **May 14 20:00 UTC** | T-39h | Stockbot checkpoint | ✅ Required: run checkpoint query + classify |
+| **May 14-15 (post-checkpoint)** | T-39-48h | Decide stockbot remediation | ✅ Required: apply POST_GATE_1_RESPONSE_FRAMEWORK.md |
+| **May 28** | T+15d | Domain 42 DEA distribution deadline | ✅ Required: distribution must reach audiences |
+| **May 30** | T+17d | Seedwarden Phase 2 launch | ✅ Ready to execute (all systems staged) |
+| **June 5** | T+23d | Domain 48 FISA distribution window closes | ✅ Phase 1 must complete by June 5 |
+
+### What You Need to Know (Next Steps)
+
+**Before May 14 20:00 UTC**:
+1. Review `projects/stockbot/MAY_14_CHECKPOINT_PRE_ANALYSIS.md` (decision document for checkpoint execution)
+2. **CRITICAL**: At 19:00 UTC May 14, SSH to Jetson and run `curl http://100.120.18.84/api/ready` — this determines whether 2 or 67 sessions are actually running
+3. At 20:00 UTC, execute checkpoint query: `uv run python scripts/may14_checkpoint_query_alpaca.py`
+4. Classify outcome: PASS / NEAR-MISS / FAR-MISS
+5. Execute appropriate response from `POST_GATE_1_RESPONSE_FRAMEWORK.md`
+
+**By May 28 (URGENT)**:
+1. Decide resistance-research distribution path (A / A+37 / B)
+2. If Path A or A+37: trigger Phase 1 execution May 14-15 using `PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md`
+
+**No immediate autonomous work available** (all projects awaiting user decisions or blocked on user actions). Next session can execute:
+- Career-training case studies (Exploration Queue Item 32, 40-50 hours available)
+- Resistance-research Domain 38 writing (once path decision made)
+
+### Session Metrics
+
+- **Effort**: 30 minutes (parallel autonomous agent execution)
+- **Agent parallelization**: resistance-research + stockbot (independent work streams)
+- **Autonomous deliverables**: 1 analysis document (stockbot), 1 verification complete (resistance-research)
+- **Commits needed**: WORKLOG.md + CHECKIN.md + MAY_14_CHECKPOINT_PRE_ANALYSIS.md
+- **Blockers discovered**: Session count discrepancy on Jetson (resolve May 14 19:00 UTC)
+
+---
+
 ## Session 970 — May 13, 2026 05:35–06:35 UTC (Parallel Execution: Seedwarden Phase 2 Social + Resistance-Research Domain 38)
 
 **Status**: ✅ SESSION COMPLETE — Parallel autonomous work on two Exploration Queue items; both deliverables production-ready

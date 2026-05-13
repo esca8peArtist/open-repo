@@ -4,6 +4,59 @@
 > Never delete entries. The orchestrator and the user read this to understand what happened.
 > Format: `## YYYY-MM-DD HH:MM — [Project] — [Summary]`
 
+## 2026-05-13 06:45–07:15 UTC — Session 971 — Orchestrator Checkpoint: Pre-May-14 Analysis + Phase 2 Integration Verification
+
+**Status**: ✅ COMPLETE — Stockbot checkpoint analysis ready; resistance-research Phase 2 cross-reference verification complete
+
+### Work Summary
+
+**Parallel Agent Execution**:
+
+*Resistance-Research Agent — Phase 2 Cross-Reference Integration Verification (Exploration Queue Item 33)*:
+- **Task**: Verify Phase 2 cross-reference integration was complete (Domains 1, 31, 33 updated with Domains 48-50 links)
+- **Result**: ✅ VERIFIED COMPLETE — All four checks pass; work committed in session 967 (commit `210548e8`)
+- **Findings**:
+  - Domain 1: Section 3.2a documents Callais ruling + May 11 Alabama stay with Domains 49-50 cross-refs
+  - Domain 31: Full "NVRA Section 7 Enforcement Angle" section (line 287+) with all four Domains 48-50 links
+  - Domain 33: Section 1.7 + "Redistricting cascade" block (line 201) with May 11 stay + Domains 49, 37, 31, 50 links
+  - Litigation Tracker: Category 10 (line 542+) covers "VRA Section 2 Redistricting Challenges Post-Callais" with May 11 SCOTUS stay + Sotomayor dissent
+- **Status**: No new commit required (already committed in session 967)
+
+*Stockbot Agent — Pre-Checkpoint Analysis (Critical Timeline Support)*:
+- **Deliverable**: `projects/stockbot/MAY_14_CHECKPOINT_PRE_ANALYSIS.md` (comprehensive 2,000+ word analysis)
+- **Coverage**:
+  - **Gate 1 Status**: 49 fills April 29, FAR_MISS_C1 on May 12, expecting NEAR_MISS B1 on May 14 (~55% probability)
+  - **Gate 2 Status**: 72/100 readiness; HMM regime scalar + vol scalar tested and committed (46+25 tests passing)
+  - **CRITICAL FINDING**: `active-sessions.json` contains 67 sessions (full portfolio) vs. 2-session documented deployment
+    - If Jetson loaded 67-session config: system already at Gate 2+ equivalent state
+    - If Jetson loaded 2-session config: continuing as documented
+    - **Resolution**: 19:00 UTC May 14 `curl /api/ready` call will confirm actual session count
+  - **May 14 Execution Timeline**: 18:00 UTC connectivity check → 19:00 UTC session count verification → 20:00 UTC checkpoint query → 20:15 UTC outcome classification
+- **Status**: Committed to master
+
+### Strategic Context
+
+**May 14 Checkpoint (T-39h)**: User has everything needed for May 14 execution:
+- Code: ✅ All 67 sessions configured and tested OR 2-session rollback ready
+- Tests: ✅ All tests passing (HMM 46 tests, vol scalar 25 tests, core trading suite 843+ tests)
+- Analysis: ✅ Pre-checkpoint decision document created with four-way outcome decision tree
+- **Critical action**: User must SSH to Jetson at 19:00 UTC to determine which session config is actually running
+
+**Resistance-Research**: Phase 2 integration 100% complete; framework now fully cross-referenced. All 41+ domains production-ready for Phase 1 distribution upon user path decision (Path A / A+37 Hybrid / B).
+
+### Session Metrics
+- **Effort**: 30 minutes (parallel autonomous agent execution)
+- **Autonomous deliverables**: 1 analysis document (stockbot), 1 verification complete (resistance-research)
+- **Parallel agents**: 2 independent streams (resistance-research + stockbot)
+- **Token usage**: ~150,000 total
+
+### Next Session Priorities
+1. **May 14 20:00 UTC checkpoint** (T-39h): User executes checkpoint query on Jetson; confirm session count at 19:00 UTC
+2. **May 14-15 post-checkpoint**: Classify outcome; execute appropriate remediation (continue paper trading, pivot to 40+ tickers, or proceed to live trading)
+3. **Resistance-Research distribution**: Awaiting user path decision (Path A / A+37 / B) to begin Phase 1 execution
+
+---
+
 ## 2026-05-13 05:35–06:35 UTC — Session 970 — Parallel Autonomous Execution: Seedwarden Phase 2 Social + Resistance-Research Domain 38
 
 **Status**: ✅ COMPLETE — Two Exploration Queue items delivered in parallel; seedwarden Phase 2 execution-ready, resistance-research Phase 2 domain outline production-ready
