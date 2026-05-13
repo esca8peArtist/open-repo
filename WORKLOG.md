@@ -1,5 +1,50 @@
 # Work Log
 
+## Session 990 — May 13, 2026, 14:33–16:30 UTC (Pre-Checkpoint Audit + Phase 2 Domain Research)
+
+**Status**: 🟢 **COMPLETE — May 14 checkpoint ready, Phase 2 Wave 1 research complete**
+
+### Stockbot Pre-Checkpoint Infrastructure Audit (Session 990)
+
+**Deliverable**: `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` (576 lines, 3,600 words)
+
+- **Overall verdict**: GO for May 14 20:00 UTC checkpoint
+- **Jetson health**: 29d 16h uptime, disk 40% (132GB free), CPU 13% load, RAM 49%
+- **Docker**: All containers healthy, restart count = 0
+- **Session state**: State A confirmed — both AAPL sessions active, 140 tick events logged
+- **Alpaca API**: Reachable, latency 86-251ms, position open (108 AAPL shares)
+- **Minor issues**: --verify flag format bug, curl port typo in docs (both non-blocking, fixable post-checkpoint)
+- **10-point runbook**: Copy-paste ready for May 14 17:00-20:15 UTC execution window
+
+**Effort**: 1.5 hours
+
+### Resistance-Research Phase 2 Wave 1 Research (Session 990)
+
+**Deliverables**: 
+- `domain-48-criminal-justice-civic-exclusion.md` (6,800 words, 46 citations)
+- `domain-51-campaign-finance-dark-money-architecture.md` (7,800 words, 50 citations)
+- `DOMAINS_48_51_COMPLETION_LOG.md` (quality gate tracking)
+
+**Domain 48 — Criminal Justice Civic Exclusion**:
+- Core finding: Virginia King v. O'Bannon May 1 implementation (permanent injunction effective), Nov 3 ballot measure for automatic restoration
+- Evidence updates: Sentencing Project 2024 "Locked Out" (1 in 19 Black Americans disenfranchised, 3.5x rate), Manza-Uggen feedback loop documentation (7 Senate elections 1978-2000 reversed), LFO poll tax expansion with circuit court precedent
+- Cross-references: 9 domains including new Domain 51 dark money connection (prosecutors funded by dark money → self-reinforcing disenfranchisement)
+- Quality gate: 46 citations, all five SelfCheckProtocol stages passed
+
+**Domain 51 — Campaign Finance Dark Money Architecture**:
+- Core finding: FEC enforcement collapse May 2026 (2 commissioners out of 6, zero FY2026 fines) coinciding with most expensive midterm election in history
+- Evidence updates: Fairshake $288M crypto super PAC cascade (5th-most-funded PAC), California SB 42 public financing ballot measure (Nov 3, largest-state measure in US history), AFP judicial appointment pipeline ($50M+ commitment), OpenSecrets trajectory ($300M 2008 → $4.5B 2024 outside spending)
+- Cross-references: 9 domains with substantive mechanism connections
+- Quality gate: 50 citations, all five SelfCheckProtocol stages passed
+- **Strategic trigger**: Domain 51 California Fair Elections Act distribution deadline July 1, 2026 for pre-early-vote integration
+
+**Effort**: 1.5 hours
+
+**Time Investment**: ~3 hours total session
+**Leverage**: Two production-ready domains ready for Phase 1 amplification or post-May-28 distribution
+
+---
+
 ## General Research Agent — May 13, 2026 (resistance-research Phase 2 Domains 41–43 Outlines)
 
 **Status**: COMPLETE

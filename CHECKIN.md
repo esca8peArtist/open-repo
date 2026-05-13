@@ -1,5 +1,44 @@
 # Check-in
 
+## Since Last Check-in (Session 990, May 13, 2026, 14:33–16:30 UTC)
+
+**Status**: 🟢 **MAY 14 CHECKPOINT READY + PHASE 2 WAVE 1 COMPLETE** — Pre-checkpoint infrastructure audit verified all systems healthy. Phase 2 domain research (Domains 48 & 51) complete and production-ready. Ready for May 14 20:00 UTC execution.
+
+### Session 990 Summary — Pre-Checkpoint Audit + Phase 2 Research
+
+**Parallel Agent Execution**:
+1. ✅ **Stockbot Pre-Checkpoint Infrastructure Audit** (1.5 hours)
+   - **Verdict**: GO for May 14 20:00 UTC checkpoint
+   - Jetson hardware: 29d 16h uptime, disk 40% (132GB free), CPU 13% load, RAM 49%
+   - Docker: All containers healthy, restart count 0
+   - Session state: Both AAPL sessions active, 140 tick events logged today
+   - Alpaca API: Reachable, latency 86-251ms, position open (108 shares)
+   - Two minor issues documented (non-blocking, fixable post-checkpoint)
+   - 10-point runbook ready for May 14 17:00-20:15 UTC execution
+
+2. ✅ **Resistance-Research Phase 2 Wave 1 Research** (1.5 hours)
+   - **Domain 48**: Criminal Justice Civic Exclusion (6,800 words, 46 citations)
+     - New evidence: Virginia King v. O'Bannon May 1 implementation, Manza-Uggen feedback loop, LFO poll tax expansion
+     - Cross-references: 9 domains with dark money connection (Domain 51)
+   - **Domain 51**: Campaign Finance Dark Money Architecture (7,800 words, 50 citations)
+     - New evidence: FEC enforcement collapse May 2026, Fairshake $288M crypto cascade, California SB 42 public financing ballot measure
+     - Strategic trigger: Domain 51 California Fair Elections Act distribution deadline July 1, 2026
+   - Both pass SelfCheckProtocol quality gates
+
+**Deliverables Created**:
+1. `projects/stockbot/MAY_14_PRECHECK_INFRASTRUCTURE_AUDIT.md` (committed to submodule)
+2. `projects/resistance-research/domains/domain-48-criminal-justice-civic-exclusion.md` (committed)
+3. `projects/resistance-research/domains/domain-51-campaign-finance-dark-money-architecture.md` (committed)
+4. `projects/resistance-research/DOMAINS_48_51_COMPLETION_LOG.md` (quality tracking)
+
+**Key Metrics**:
+- May 14 checkpoint: T-29h, all systems go
+- Phase 2 Wave 1: Complete, Wave 2 (Domains 49-50) ready to begin May 15
+- Total session effort: ~3 hours
+- Zero blockers, clean commits
+
+---
+
 ## Since Last Check-in (Sessions 989, May 13, 2026, 14:15–16:00 UTC)
 
 **Status**: 🟢 **PARALLEL AUTONOMOUS EXECUTION COMPLETE** — Two unblocked projects advanced simultaneously: seedwarden Track B May 30 launch readiness verified (47-item comprehensive checklist), resistance-research Phase 2 domain pipeline prepared (3 new domains, 14-17 hr research roadmap). May 14 checkpoint infrastructure confirmed ready with thermal monitoring protocol. All orchestration files committed.
