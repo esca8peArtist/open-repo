@@ -34368,3 +34368,64 @@ Both frameworks are self-contained and require no additional research or context
 2. May 14 19:00 UTC: Briefing on stockbot framework sections 1-3
 3. May 14 20:00 UTC: Execute checkpoint and apply response framework
 4. May 19 09:00 UTC: Bundle E launch coordination (all materials ready)
+
+---
+
+## Session 958 — May 13, 2026 01:35–02:15 UTC (Exploration Queue Expansion)
+
+**Status**: 🔄 IN PROGRESS — Identifying and queuing exploration work during project blockers
+
+### Orchestration Work Completed
+
+**✅ INBOX Processing**:
+- Found cryptic entry: `- [2026-05-13 01:35] !block resistance-research`
+- Documented clarification request in CHECKIN.md (Session 958)
+- Cleared INBOX for next cycle
+
+**✅ Exploration Queue Expansion** (identified 3 new items to work on during project blockers):
+
+**Item 28**: Resistance-Research Phase 1 Distribution Execution Blueprint
+- **Impact**: HIGH — Phase 1 distribution deadline May 28; user decision on distribution path imminent
+- **Scope**: Day-by-day execution calendar, email pre-fill templates, Gist creation walkthrough, social media scheduling guide, success metrics dashboard, contingency triggers
+- **Deliverable**: Consolidated quick-start guide combining existing materials (DISTRIBUTION_PATH_EXECUTION_GUIDE.md, EMAIL_PERSONALIZATION_GUIDE.md, etc.) into single-reference execution playbook
+- **Status**: QUEUED; awaiting user distribution path decision (A / A+37 / B)
+- **Effort**: 3-4 hours
+
+**Item 29**: Cybersecurity-Hardening Phase 1 Execution Calendar & Contact Sequencing
+- **Impact**: HIGH — Phase 1 launch target June 1; user approval imminent
+- **Scope**: Detailed day-by-day Week 1-3 calendar with 25 pre-screened Tier 1 contacts, meeting coordination templates, briefing materials checklist, success metrics, contingency playbook
+- **Deliverable**: Operational execution calendar tying together TIER1_EXECUTION_RUNBOOK.md, contact list, and message templates
+- **Status**: QUEUED; awaiting user approval for Phase 1 launch
+- **Effort**: 2.5-3 hours
+
+**Item 30**: Seedwarden Bundle E Writing & Launch Acceleration
+- **Impact**: HIGH — May 19-22 publication window (6 days); user decision on launch needed
+- **Scope**: 15-hour writing sprint plan for 5 Invasive Edibles guides, photo sourcing verification, content templates, QC checklist, platform setup, launch-day SOPs
+- **Deliverable**: Detailed sprint plan with time blocks, building on existing BUNDLE_E_PUBLICATION_PACKAGE.md
+- **Status**: QUEUED; awaiting user confirmation of May 19 launch approval
+- **Effort**: 2-2.5 hours
+- **Note**: BUNDLE_E_GUIDE_WRITING_SPRINT_PLAN.md (18K) already exists from prior session; Item 30 may overlap/extend this
+
+### Current Project Status Summary
+
+All 5 active projects remain blocked on user actions:
+- **stockbot** — May 14 20:00 UTC checkpoint ready (all infrastructure verified); awaiting checkpoint execution
+- **resistance-research** — Awaiting distribution path decision (A / A+37 / B); 38+ domains production-ready
+- **cybersecurity-hardening** — Awaiting user approval for Phase 1; execution materials staged (30K+ planning docs)
+- **mfg-farm** — Awaiting user test print completion; post-print workflow ready
+- **seedwarden** — Track A blocked on user tag corrections + Etsy verification; Track B blocked on user account setup; Phase 2 launch-ready (May 30)
+
+### Next Steps
+
+1. **User clarification needed**: Resistance-research "!block" INBOX entry — confirm whether this pauses the project or is incomplete/accidental
+2. **Exploration item selection**: Will begin Item 28 (Phase 1 Execution Blueprint) once resistance-research path clarification received, OR Item 30 (Bundle E acceleration) if seedwarden launch approved
+3. **May 14 critical milestone**: Stockbot checkpoint execution at 20:00 UTC (34 hours away); user will execute; orchestrator monitoring
+
+### Exploration Queue Status
+
+**Active items**: Items 28-30 QUEUED (6-9 hours combined effort)
+**Blocked items**: Item 23 (mfg-farm, blocked on test print)
+**Completed items**: Items 1-27 (all delivered across Sessions 912-957)
+
+**Total exploration queue capacity**: 3 active items ✅ (meets protocol requirement of ≥3 when projects blocked)
+
