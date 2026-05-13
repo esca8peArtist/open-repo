@@ -1,5 +1,65 @@
 # Check-in
 
+## Session 1004 — May 13, 2026, 22:30–23:05 UTC (Checkpoint Pre-Verification + Items 37-38 Verification)
+
+**Status**: ✅ **CHECKPOINT SYSTEM VERIFIED READY (CRITICAL BUG FIXED) + POST-USER-UNBLOCK INFRASTRUCTURE VERIFIED**
+
+### Accomplished This Session
+
+1. **Parallel Agent Execution** ✅
+   - **Stockbot pre-checkpoint verification** (Item 31): 5 concurrent checks executed (system health, DB connectivity, Alpaca API, session state, network reliability)
+   - **Resistance-research Items 37-38 verification**: Completeness audit on both staging documents
+
+2. **Critical Bug Found and Fixed** 🔴→✅
+   - **File**: `projects/stockbot/scripts/may14_checkpoint_query_alpaca.py`
+   - **Issue**: TypeError at line 131 in P&L arithmetic (`filled_avg_price - filled_qty` as strings)
+   - **Impact**: Script would have failed silently at May 14 20:00 UTC checkpoint execution
+   - **Fix**: Added explicit float() casts before arithmetic
+   - **Testing**: Script runs end-to-end, produces correct output
+   - **Commit**: Committed to stockbot submodule; included in master commit
+
+3. **Checkpoint System Status: GO** ✅
+   - **Jetson health**: 29d 23h uptime, disk 40% (132 GB free), RAM 45%, CPU 13%, thermal 47°C
+   - **API state**: 33 total fills since May 5 (19 May 5 confirmed, 12 BUY, 21 SELL), 0 AAPL model sells, 2 confirmed round trips
+   - **Network**: Alpaca latency 47.9 ms, DNS resolving, SSH stable
+   - **Deployed config**: 2-session AAPL (lgbm_ho + ridge_wf) confirmed active
+   - **Expected May 14 outcome**: AAPL h+10 fires at 13:30 UTC; if filled by 20:00 UTC checkpoint, scenario upgrades NEAR-MISS → PASS
+   - **Full report**: `projects/stockbot/MAY_14_PRECHECK_RESULTS.md`
+
+4. **Items 37-38 Staging Verified** ✅
+   - **Item 37** (mfg-farm fulfillment pre-staging): COMPLETE, production-ready, no blocking gaps
+   - **Item 38** (cybersecurity measurement automation): COMPLETE, production-ready, 1 minor improvement recommended (add Pi conditional note)
+   - **Verification report**: `projects/resistance-research/ITEMS_37_38_STAGING_VERIFICATION.md`
+
+### Files Created
+
+- `projects/stockbot/MAY_14_PRECHECK_RESULTS.md` — pre-checkpoint verification report (32 KB)
+- `projects/resistance-research/ITEMS_37_38_STAGING_VERIFICATION.md` — staging completeness audit (2.1 KB)
+
+### Current Queue Status
+
+**Exploration Items**: 1-38 complete, Item 39 complete, Items 37-38 verified ready for execution
+**Active Blocks**: 1 (mfg-farm test print — user action required)
+**Awaiting User Decisions**: 4 items (checkpoint execution, distribution path, Phase 1 approvals, test print)
+
+### Awaiting User Input
+
+1. **stockbot**: May 14 20:00 UTC checkpoint execution (3 guides ready: execution runbook, outcome framework, Gate 2 implementation guide)
+2. **resistance-research**: Path A / A+37 Hybrid / B distribution path selection (Phase 1 execution blueprints ready for all 3 paths)
+3. **cybersecurity-hardening**: Phase 1 Tier 1 launch approval + send date (measurement automation ready for May 31 setup)
+4. **mfg-farm**: Test print execution (fulfillment infrastructure pre-staging ready)
+
+### Next Checkpoint
+
+**May 14 20:00 UTC**: Checkpoint execution using MAY_14_CHECKPOINT_EXECUTION_RUNBOOK.md
+- **T-35h**: System verified ready
+- **Expected timeline**: 19:00 UTC pre-exec verification → 20:00 UTC query → 20:15 UTC classification
+- **Decision paths**: Outcome framework covers all 4 scenarios (PASS/NEAR-MISS/FAR-MISS C1/C2)
+
+**Session Status**: COMPLETE ✅
+
+---
+
 ## Session 1003 — May 13, 2026, ~21:17–21:50 UTC (Item 39 Checkpoint Execution Runbook + Final Staging)
 
 **Status**: ✅ **EXPLORATION ITEM 39 COMPLETE — MAY 14 CHECKPOINT EXECUTION INFRASTRUCTURE PRODUCTION-READY**
