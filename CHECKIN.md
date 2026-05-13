@@ -1,5 +1,100 @@
 # Check-in
 
+## Session 968 — May 13, 2026 04:11–04:50 UTC (Exploration Queue Items 28-29: Phase 1 Execution Blueprints)
+
+**Status**: ✅ SESSION COMPLETE — Two production-ready execution blueprints delivered; all pre-approval infrastructure staged
+
+### Work Completed This Session
+
+**✅ Exploration Queue Item 28 — Resistance-Research Phase 1 Distribution Execution Blueprint**
+- Comprehensive 10,565-word guide covering all 3 distribution paths (A, A+37 Hybrid, B)
+- Includes day-by-day calendars, sector-specific email templates, Gist creation guide, social media strategy, metrics dashboard, contingencies
+- Production-ready for immediate execution once user selects distribution path
+
+**✅ Exploration Queue Item 29 — Cybersecurity-Hardening Phase 1 Execution Calendar**
+- Comprehensive 11,700-word operational calendar for June 1 Phase 1 launch
+- Day-by-day scheduling for all 25 Tier 1 contacts, email templates, tracking infrastructure, contingencies
+- Production-ready for immediate execution once user approves Phase 1
+
+### Critical Timeline
+
+| Milestone | Timeline | Status |
+|-----------|----------|--------|
+| **May 14 20:00 UTC** | Stockbot checkpoint | **T-36h** — All pre-checkpoint systems verified ✅ |
+| **May 21** | Phase 1 distrib. start | User must decide path within 8 days |
+| **May 28** | Domain 42 DEA deadline | Tier 1 distribution must reach audiences |
+| **June 1** | Cybersecurity Phase 1 launch | User approval triggers June 1 start |
+| **June 5** | Domain 48 FISA window | 6-week window for Senate Intelligence/Judiciary |
+
+### User Actions Required (Priority Order)
+
+1. **Stockbot checkpoint execution** (May 14 20:00 UTC, T-36h)
+   - Pre-checkpoint verification complete ✅
+   - User runs: `uv run python scripts/may14_checkpoint_query_alpaca.py`
+   - Classify outcome: PASS / NEAR-MISS / FAR-MISS
+   - Apply `POST_GATE_1_RESPONSE_FRAMEWORK.md` for next steps
+
+2. **Resistance-research path decision** (URGENT — 15d to May 28 deadline)
+   - Choose: Path A (immediate) / Path A+37 Hybrid (recommended) / Path B (expand first)
+   - Triggers Phase 1 execution May 14-15 using `PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md`
+
+3. **Cybersecurity Phase 1 approval** (optional, target June 1)
+   - Approve Phase 1 launch when ready
+   - Execution uses `PHASE_1_EXECUTION_CALENDAR.md` (production-ready)
+
+### What's Ready to Deploy (Awaiting User Signal)
+
+**Resistance-Research**: 41+ domains complete, Phase 1 blueprints staged, cross-references finalized
+- Ready to execute: Phase 1 distribution (user path decision)
+- Next: Phase 2 research (Domains 48-51, post-May-28)
+
+**Cybersecurity-Hardening**: All Tier 1 materials staged, Phase 1 calendar complete
+- Ready to execute: Phase 1 launch June 1 (user approval)
+- Next: Tier 2 pilot launch (June 15, contingent on Phase 1 success)
+
+**Stockbot**: May 14 checkpoint ready, Gate 2 architecture guide staged
+- Ready to execute: Checkpoint (May 14 user action), post-checkpoint response (May 14-15)
+- Next: Gate 2 testing (May 15-June 9)
+
+**Seedwarden**: Phase 2 launch-ready, Bundle E package staged
+- Ready to execute: Bundle E publication May 19-22 (user decision), Phase 2 launch May 30
+- Next: Phase 2 guide writing, photography logistics (May 31+)
+
+**mfg-farm**: Test print awaiting user execution; post-test workflow ready
+- Blocker: Test print at 0.20mm, PLA+, 3 walls, 220–225°C
+- Next: Etsy listing, supplier negotiation (post-print)
+
+### Exploration Queue Status
+
+**Completed this session**: Items 28-29 ✅
+- Item 28: Resistance-Research Phase 1 Distribution Execution Blueprint (10,565 words)
+- Item 29: Cybersecurity-Hardening Phase 1 Execution Calendar (11,700 words)
+
+**Queued, ready to start**: Items 30-33
+- Item 30: Seedwarden Bundle E Writing & Launch Acceleration (2-2.5 hours, May 19 launch)
+- Item 31: Seedwarden Phase 2 Post-Launch Analytics (after May 30 launch)
+- Item 32: Career-Training Case Studies & Practice Scenarios (40-50 hours, multi-module)
+- Item 33: (Completed in Session 967: Resistance-Research Phase 2 cross-reference integration)
+
+**Queue size**: 4 items (above minimum of 3) ✅
+
+### Key Findings
+
+- **Checkpoint readiness**: All pre-May-14 infrastructure verified; May 14 execution can proceed with confidence
+- **Phase 1 execution**: Two complete blueprints eliminate planning friction; user decision triggers immediate execution
+- **Exploration Queue**: Sufficient items queued; no need to add new items this session
+- **Timeline compression**: Both Phase 1 blueprints are designed for maximum parallelization (resistance-research can execute May 14-28 while stockbot checkpoint runs, cybersecurity June 1 parallels end of resistance-research)
+
+### Next Session Priorities
+
+1. **Monitor stockbot checkpoint** (May 14 20:00 UTC, T-36h): Final verification, user execution coordination
+2. **Post-checkpoint response** (May 14-15): Classify outcome, execute remediation if needed
+3. **If user decides resistance-research path**: Begin Phase 1 execution May 14-15
+4. **If user approves cybersecurity Phase 1**: Begin June 1 execution
+5. **Otherwise**: Start Exploration Queue Item 30 (Seedwarden Bundle E, May 19 deadline)
+
+---
+
 ## Session 967 — May 13, 2026 03:26–04:10 UTC (Orchestrator Session: Cross-Reference Completion + Pre-Checkpoint Verification)
 
 **Status**: ✅ SESSION COMPLETE — Exploration Queue Item 33 finalized; stockbot pre-checkpoint systems verified
