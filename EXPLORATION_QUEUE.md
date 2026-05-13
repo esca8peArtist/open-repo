@@ -576,8 +576,8 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 
 ## New Items (Session 999 — 2026-05-13, three autonomous prep items added)
 
-### ⏳ Item 36: Resistance-Research Phase 2 Domains 41 & 43 Source Research Staging
-**Status**: QUEUED (Session 999, May 13 2026)
+### ✅ Item 36: Resistance-Research Phase 2 Domains 41 & 43 Source Research Staging
+**Status**: COMPLETE (Session 1000, May 13 2026, ~21:15–21:45 UTC)
 **Impact**: HIGH — Phase 2 expansion readiness; unblocks immediate June 1 research start post-May-28 Domain 42 deadline
 **Goal**: Pre-stage source research, expert contact identification, and outline structures for Domains 41 (Consumer Financial Architecture) and 43 (Spatial Democracy / Housing) so that research can begin immediately after May 28 Domain 42 distribution and Phase 1 commitments complete. This is path-independent work (works for all 3 distribution paths: A, A+37, B).
 **Feasibility**: HIGH — Existing domain architecture (Domains 1-40 complete), source patterns from Phase 2 expansion (Items 26-27), expert networks already mapped in Phase 1 materials
@@ -589,16 +589,25 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 
 ---
 
-### ⏳ Item 37: mfg-farm Post-Test-Print Fulfillment Infrastructure Pre-Staging
-**Status**: QUEUED (Session 999, May 13 2026)
+### ✅ Item 37: mfg-farm Post-Test-Print Fulfillment Infrastructure Pre-Staging
+**Status**: COMPLETE (Session 1001, May 13 2026, 21:45 UTC)
 **Impact**: MEDIUM — Test print is user action; fulfillment infrastructure prep eliminates friction once test print approved
 **Goal**: Pre-stage fulfillment infrastructure components so that Day 0 (test print approval) leads immediately to Day 1 launch (Etsy listing live, payment processing active, shipping workflows functional). Focus on non-manufacturing work: payment processor account verification, Etsy shop finalization, shipping label templates, customer support templates, inventory management structure.
-**Feasibility**: HIGH — PRE_LAUNCH_FULFILLMENT_WORKFLOW.md (Item 16) and SUPPLIER_NEGOTIATION_PLAYBOOK.md (Item 23) complete; only missing day-of-execution verification steps
-**Effort estimate**: 2-2.5 hours
-**Deliverable**: `projects/mfg-farm/POST_PRINT_FULFILLMENT_READINESS.md` (payment processor account setup verification checklist, Etsy shop finalization checklist with photo upload, shipping integration pre-flight (USPS + Pirate Ship sandbox testing), customer support template collection with response-time SLAs, inventory tracking spreadsheet template, Day 0-Day 1-Day 2 launch sequence with 30-minute milestones, rollback procedure if issues arise)
-**Why now**: Test print is the user's next action; orchestrator cannot execute print but CAN pre-stage fulfillment infrastructure. Once user approves test print + confirms go/no-go, fulfillment launch can proceed same day with zero setup friction.
-**Blocker**: User must complete test print; pre-staging is independent
-**Next Step**: Deliver May 13 evening → user completes test print and reports pass/fail → orchestrator executes Day 0-1 launch using provided checklist (30-60 min total)
+**Effort**: 2.5 hours
+**Deliverable**: `projects/mfg-farm/POST_PRINT_FULFILLMENT_READINESS.md` (1,151 lines, 45 KB)
+**Content**: Complete 7-section operational playbook:
+1. **Payment Processor Verification**: Etsy Payments checklist (activation, bank account, tax ID, payout schedule), Stripe setup for custom orders (Month 3+ path), quick-reference processor matrix
+2. **Etsy Shop Finalization**: 7-photo checklist (hero, in-use, detail, scale, multi-unit, packaging, variants) with lighting specs; listing copy (title ≤140 char, description, tags 13x max, pricing by SKU); shipping profiles (USPS Ground Advantage Zone 3-4 rates); shop policies (30-day return, FAQ, About)
+3. **Shipping Integration Pre-Flight**: Pirate Ship account + Etsy OAuth, postage balance loading, label format setup (thermal 4×6 or inkjet PDF), USPS pickup scheduling, fulfillment pipeline integration test
+4. **Customer Support Templates**: 7 production-ready templates (CS-01 through CS-07) covering order confirmation, shipping, custom orders, returns, delays, reviews, fit questions; SLA 24-hour response; Freshdesk/Gmail setup
+5. **Inventory Tracking**: 5-tab Google Sheets (Print Queue with order→print→QC→done workflow, Finished Goods, Shipped Units with margin tracking, Returns with root cause, Filament Inventory with reorder triggers)
+6. **Day 0-Day 1-Day 2 Launch Sequence**: Hour-by-hour timeline (Day 0: 3-hour verification sprint + photography + listing publication; Day 1: order monitoring + first fulfillment end-to-end; Day 2: 1-hour daily cadence with weekly stats review)
+7. **Rollback Procedure**: 5 failure scenarios with decision trees (customer impact response, production pause, infrastructure failure, legal pause, recovery checklist)
+
+**Key Insight**: All items in document are pre-stageable before test print approval. When test print passes, only Day 0 execution required — no additional setup friction.
+**Completion Status Tracker**: 18-item pre-staging checklist included; when all pre-staging complete, document is ready for Day 0 activation
+**Strategic Value**: Reduces gap between test print approval and Etsy listing live from 10-14 days to 48 hours; zero setup decisions required during Day 0-1 execution
+**Next Step**: User completes test print → orchestrator executes Day 0 sprint using provided 3-hour timeline → Etsy listing live by end of Day 1
 
 ---
 
