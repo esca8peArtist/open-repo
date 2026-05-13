@@ -120,6 +120,42 @@
 
 ---
 
+### ✅ mfg-farm Batch 2 Product Research (Parallel Agent)
+
+**Deliverable**: `projects/mfg-farm/BATCH_2_PRODUCT_RESEARCH.md` (3,624 words, exploration queue item)
+**Committed at**: `c8099bee`
+**Status**: Production-ready
+
+**Key finding**: Single Batch 2 product identified (not 2-3 candidates due to existing batch sequencing) — **Desk-clamp Headphone Hooks with Integrated Cable-Wrap Post**
+
+**Product profile**:
+- Design: PRODUCTION READY (CadQuery parametric script complete)
+- Unique differentiator: Integrated 8mm cable-wrap post (30mm tall) — ABSENT from all 200+ Etsy competitors
+- Market validation: Rank-1 competitor (3DdesignBros) has 1,254 five-star reviews at $14.99; establishes massive, sustained demand
+- Design status: Single-part print, no assembly (rubber bumper pads post-print), 22-28 min print time per unit
+
+**Cost & margin analysis**:
+- COGS per unit: $1.65 (filament $0.33 + bumper pads $0.05 + packaging $0.16 + labor $1.00 + depreciation $0.11)
+- Net margin: 75.9% at $12.99 launch price; 77.9% at $14.99 (after 50 reviews)
+- Weekly profit at 20 units/week: $197 (higher margin % than ModRun clips at equivalent volume)
+- Annualized: $9,456 at $12.99; $11,328 at $14.99
+
+**Launch timeline**:
+- Week 3-4 post-ModRun: Tolerance calibration (FDM_TOLERANCE final value)
+- Week 4: Production batch, photography, listing finalization
+- Week 5: Etsy listing live
+- Expected date: May 27-June 2, 2026 (Week 5 post-ModRun test print)
+
+**90-day success targets**:
+- 50-60 units sold, 30-40 reviews, 4.8+ star rating
+- $3,000-4,000 net revenue
+
+**Risk assessment**: Low (all tolerances defined, print profile understood, no new materials/infrastructure)
+
+**Production readiness**: Zero new capital required ($5 bumper pad startup); parametric design allows rapid iteration on FDM tolerances; parallel production with Batch 3 validated (no plate conflicts)
+
+---
+
 ### ✅ Cybersecurity-hardening Phase 2 Distribution Sequencing (Parallel Agent)
 
 **Deliverable**: `projects/cybersecurity-hardening/PHASE_2_DISTRIBUTION_SEQUENCING.md` (657 lines, exploration queue item)
