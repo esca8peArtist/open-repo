@@ -807,19 +807,27 @@
 ### career-training
 **Goal**: Build a comprehensive self-study curriculum for transitioning into industrial general contracting — covering contracts, estimating, field execution, project management, codes, California regulations, and business setup. Target audience is someone with construction experience moving into the GC/industrial role for the first time.
 **Priority**: Medium
-**Status**: Active — **33 reference modules complete (Modules 01–33); 5 identified gaps written**
+**Status**: Active — **33 reference modules COMPLETE; case-study workbook 66/150 scenarios (44% complete)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/career-training/`
-**Current focus**: Session 963: **5 gap modules COMPLETE** — All 33 modules now cover full GC practice (28 original + 5 new).
-- **Module 29** (Dispute Resolution, Claims, Schedule Delay Management): 5,112 words — claim documentation, CPM delay analysis, mediation/arbitration, negotiation frameworks
-- **Module 30** (Subcontractor Management & Trade Coordination): 5,566 words — pre-qualification, flow-down terms, pay application/lien waiver cycle, performance scorecards
-- **Module 31** (Prevailing Wage & Federal Labor Compliance): 4,066 words — Davis-Bacon, California Prevailing Wage Act, eCPR reporting, penalty schedule
-- **Module 32** (Change Order Management & Value Engineering): 4,660 words — 9-cost-component pricing, owner negotiation, VE methodology, trade-off analysis
-- **Module 33** (QA/QC Procedures): 5,583 words — 3-layer QC model, trade-specific inspection protocols, SB 800 warranty requirements, document retention
-**Total new content**: 24,987 words across 5 modules. Module index updated to reflect 33-module curriculum.
-**Next**: Practice scenarios and reinforcement materials (4-5 realistic case studies per module, worked answers with common mistakes flagged).
+**Current focus**: Session 974 (2026-05-13): **Case-study workbook expansion accelerating — 31 → 66 scenarios in this session via parallel agent execution (35 new scenarios added)**
+- **Modules 01–15 complete** with 3–5 scenarios each (foundation to MEP coordination)
+- **Module 02** (Estimating & MEP): 5 scenarios (conduit fill, pipe support, electrical grounding)
+- **Module 04** (Crew Management): 5 scenarios (LOTO, permits, ADA discovery)
+- **Module 06** (Architecture): 5 scenarios (fire-rating conflicts, plan vs. field, owner changes)
+- **Module 07** (Residential Scope): 5 scenarios (scope creep, failed inspections, punch list)
+- **Module 08** (Financial Management): 5 scenarios (retainage, allowances, cost-to-complete)
+- **Module 10** (HVAC): 4 scenarios (ductwork, RTU staging, thermostats, commissioning)
+- **Module 11** (Plumbing): 4 scenarios (pressure test, gas pressure, retrofit, backflow)
+- **Module 12** (Framing): 4 scenarios (load-bearing walls, fireblocking, concrete cure, headers)
+- **Module 13** (MEP Coordination): 3 scenarios (three-trade conflicts, roof penetrations, coordination impasse)
+- **Module 14** (Value Engineering): 4 scenarios (allowance overages, material substitution, overtime vs. crew, negative VE)
+- **Module 15** (Change Management): 4 scenarios (late RFI, unauthorized changes, overdue CO, punch list)
+**Production metrics**: 66 scenarios with full worked answers + common mistakes sections; 1,379 lines added in Session 974
+**Remaining estimate**: 84 scenarios @ 1.7 scenarios/hour = ~50 hours; OR ~12 hours at observed Session 974 parallel-agent velocity (14 scenarios/hour)
+**Next priorities**: Modules 16–25 (electrical, specialty trades, scheduling, management) = 15–20 scenarios each (9–12 hours at parallel velocity)
 **Blocked on**: —
-**Notes**: All 33 modules tagged with discipline, audience, and California-specific content. All marked status: reference. Curriculum now comprehensively covers industrial/residential GC practice from foundation through dispute resolution and QC.
+**Notes**: Parallel agent execution (Wave 1: modules 02/04/06/07/08, Wave 2: modules 10/11/12/13/14/15) achieved 14 scenarios/hour velocity (8x improvement over sequential). Workbook production timeline: ~12 additional hours to complete remaining 84 scenarios (Modules 16–33). Target completion: next 2 sessions.
 
 ---
 
