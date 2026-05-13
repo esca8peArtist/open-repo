@@ -615,6 +615,271 @@ How do you proceed?
 
 ---
 
+## Module 06: Architecture for the Contractor — Scenarios
+
+### **Scenario 6.1: RFI Timing and Specification Interpretation — Impact on Pricing**
+
+**Context:**
+You've received a 40% design development (DD) set from the architect for a 12,000-square-foot residential custom home. The drawings show a "dramatic floating staircase" — stainless-steel open treads, cantilevered from a steel core, no stringers. The spec says "Oak treads, stainless steel fittings, engineered by staircase supplier, cost per design."
+
+You request three quotes for the staircase:
+- **Quote A (Interior Stairs, Inc.)**: $38K, full design engineering, 14-week lead time, staircase supplier designs and submits structure to architect for approval.
+- **Quote B (Budget Stairs)**: $18K, "standard floating staircase," 8-week lead time, supplier does not provide engineering drawings, assumes architect approves design.
+- **Quote C (Premium Stairs, custom)**: $65K, 16-week lead time, custom detailing, real walnut cores, hand-oiled finish.
+
+You're now at the 60% CD (Construction Documents) phase. The architect's details show a general section but **no engineering drawings for the staircase**. The notes say "Engineered by staircase supplier per structural design."
+
+**The problem**: The architect's spec and structural engineer expect the staircase to be "engineered," but neither has provided the design. It's delegated to the supplier. Which supplier gets the work, and how do you price it?
+
+**The question:**
+
+What is your approach?
+
+**A)** Bid Quote B (cheapest), proceed with CD set as-is, and when the supplier submits their design, the architect reviews and approves in the RFI/submittal process
+
+**B)** Bid Quote A (mid-range), include a line item for "Staircase engineering design approval," and note that pricing assumes 2 weeks for architect RFI review cycle
+
+**C)** Issue an RFI now (CD phase) asking the architect to clarify: (1) Does the staircase supplier engineer and submit for approval? (2) Who pays for engineering? (3) What is the expected lead time, and will it impact the GC schedule? Get written answers before bidding.
+
+**D)** Bid Quote A, but add a contingency line item: "Staircase design delays/rework — $5K," to protect against RFI loops during construction
+
+---
+
+#### **Worked Answer to Scenario 6.1**
+
+**Correct answer: C (Issue RFI in CD phase for clarification before bidding)**
+
+**Why C is correct:**
+
+1. **The spec is ambiguous about responsibility and cost.** "Engineered by staircase supplier" is not clear about who coordinates, who pays, and what happens if the architect rejects the first submission. You need written clarity *before* you bid, not after.
+
+2. **The lead time cascades downstream.** If the staircase is a 16-week item (Quote C), and the architect takes 2 weeks to review submissions, you're looking at an 18-week critical path item. If this staircase gates framing or drywall start, the entire project could be delayed. You need to know this before you commit to a GC schedule.
+
+3. **The architect has the authority to answer this.** Under AIA A201, the architect interprets the drawings and spec. If the spec says "engineered by supplier," the architect can clarify: (a) Yes, the supplier engineers it and submits to us for review, or (b) No, the structure is the GC's responsibility, or (c) The owner is hiring a specialty consultant (structural engineer) to verify the design. You cannot guess.
+
+4. **An RFI in the CD phase becomes a contract addendum if answered before bid close.** Per standard bidding procedure, RFIs issued during the bidding period get written answers that are addenda to the bid set. This protects you — you have a written confirmation of the scope.
+
+5. **Quote A + contingency (Option D) is insufficient.** $5K contingency is not enough for staircase rework. If the architect rejects the first design, you could be looking at a complete re-engineering, new lead time, and a $15–25K cost. Don't hide unknowns in a small contingency — get clarity instead.
+
+**Why the other answers are risky:**
+
+- **Option A (Bid cheap, hope it works out):** You're setting yourself up for a cost surprise. If Quote B supplier's design is rejected by the architect as "not engineered to code standards," you're left paying for rework or a second staircase.
+
+- **Option B (Bid mid-range + RFI line item):** The $38K quote from Quote A *already includes* engineering. Adding an extra "engineering design approval" line item assumes the architect will charge for RFI review, which they won't — RFI responses are part of their CA services. You're double-billing conceptually.
+
+- **Option D (Bid + small contingency):** This buries the risk instead of eliminating it. When the contingency isn't enough, you have to explain to the owner why the staircase costs more. It's a credibility loss. Better to have clarity upfront.
+
+**Common mistakes in the field:**
+
+1. **Assuming specs like "per supplier" are clear about responsibility.** They're not — they need RFI clarification.
+
+2. **Not understanding the architect's role in product approvals.** Many GCs think: "Staircase supplier handles it, architect just signs off." But the architect doesn't sign off on everything — they may have a consultants review it, or they may have specific code/design concerns. You need to know their approval process.
+
+3. **Burying unknowns in contingency.** Contingencies should cover unknown quantities (site conditions, unforeseen soil), not unknown responsibilities. If responsibility is unclear, get clarity.
+
+**How to actually handle this:**
+
+1. During the CD bidding period (before bid close), issue an RFI: "Section [X], Staircase Detail: Please clarify (a) the staircase supplier submits design to [architect/owner/GC]? (b) Who approves the design — architect, structural engineer, or owner? (c) Expected approval time?"
+2. Document the architect's response in writing.
+3. Bid based on the clarification. If the architect says "Supplier submits to us, we review and approve," you now know the lead time and approval path, and you can bid confidently.
+4. Include the clarification as part of your contract scope: "Staircase to be engineered and submitted per [architect's clarification], with approval timeline of [X] weeks."
+
+---
+
+### **Scenario 6.2: General Notes, Division 01, and "Or Equal" Substitutions**
+
+**Context:**
+You're reading the CD set for a mid-range residential project. The General Notes (front of spec) state: **"All products and finishes are specified by brand and model. Substitutions require written architect approval. 'Or equal' is NOT permitted."**
+
+However, in Division 09 (Finishes), the spec for interior paint says: **"Benjamin Moore Aura, Semi-Gloss, Matte White, or equal low-VOC paint approved by architect."**
+
+There's a direct contradiction: General Notes say "no or equal," Division 09 says "or equal." 
+
+Your paint supplier offers two options:
+- **Option A**: Benjamin Moore Aura ($85/gallon, 5-week lead time, proven track record on residential)
+- **Option B**: Sherwin-Williams Emerald ($72/gallon, 2-week lead time, similar performance, architect hasn't seen a submittal)
+
+You want to use Sherwin-Williams (better availability, slightly cheaper). The architect is traveling and unreachable for 2 weeks.
+
+**The question:**
+
+How do you proceed?
+
+**A)** Use Sherwin-Williams as the spec allows "or equal" in Division 09; assume the General Notes apply only to architectural finishes, not paint.
+
+**B)** Wait for the architect to return; don't make product decisions without approval.
+
+**C)** Issue a submittal now requesting approval of Sherwin-Williams; proceed with Benjamin Moore if the submittal is rejected.
+
+**D)** Use Benjamin Moore per the spec; don't risk a substitution dispute on interior paint.
+
+---
+
+#### **Worked Answer to Scenario 6.2**
+
+**Correct answer: C (Submit Sherwin-Williams for approval; proceed with Benjamin Moore if rejected)**
+
+**Why C is correct:**
+
+1. **When the spec contradicts itself, the **most stringent requirement applies.** General Notes typically precede Division specs in CSI order. If General Notes say "no or equal," they override the Division 09 "or equal" language. However, "override" doesn't mean you're prohibited — it means you need **approval before substitution**.
+
+2. **Submittals are designed for this.** You submit the proposed product *before* purchase/delivery. The architect reviews and approves (or rejects) within 7–10 days, per AIA A201. If Sherwin-Williams is truly equivalent, the architect will likely approve it in a 1-page submittal review.
+
+3. **The 2-week timeline is not a blocker.** You have time to submit, get feedback, and adjust. You don't proceed with the cheaper product and hope the architect agrees later — that's reactive and sets up a conflict. Submittal early is proactive.
+
+4. **Proceeding with Benjamin Moore is your safety plan.** If Sherwin-Williams is rejected for any reason, you have Benjamin Moore specified as the fallback. This protects the project schedule.
+
+**Why the other answers are risky:**
+
+- **Option A (Assume "or equal" applies):** You're interpreting the spec in your favor when it's ambiguous. If the architect later says "Division 09 'or equal' is subordinate to General Notes; Benjamin Moore required," you've committed to the wrong product and have to rework.
+
+- **Option B (Wait for architect):** 2 weeks is a long time in construction. You could submit the product *now*, and by the time the architect returns, they've had it for a week and can approve on return. Don't let one person's travel delay the project.
+
+- **Option D (Use Benjamin Moore, no substitution):** Safe, but conservative. If Sherwin-Williams is genuinely equivalent and cheaper, you're leaving margin on the table. The submittal process exists to explore these options.
+
+**Common mistakes in the field:**
+
+1. **Not reading the General Notes.** Many GCs go straight to the Division they need (Division 09 for paint) and miss the overall spec intent in the front. The General Notes set the tone.
+
+2. **Assuming "or equal" always means equivalent.** "Or equal" is a permission, not a free pass. The architect still has to agree that the product is equal.
+
+3. **Trying to save money on paint.** $13/gallon difference on paint doesn't move the needle on project profitability (typical residential project uses <300 gallons of interior paint, so $13 × 300 = $3,900 savings). The cost of rework if the architect rejects your substitution far exceeds the material savings. Don't sweat the small stuff.
+
+**How to actually handle this:**
+
+1. Prepare a written submittal: product name, model, specification data sheet, lead time, cost comparison, and **why it is equal** (VOC compliance, sheen match, coverage rate, etc.).
+2. Send to the architect via email, marked "Submittal for Review — Proposed Substitute Product."
+3. Follow up in 5 days if no response (architects are slow).
+4. Proceed based on approval/rejection: approved → order Sherwin-Williams; rejected → order Benjamin Moore.
+
+---
+
+## Module 07: Residential GC — Scope, Trades, and People Management — Scenarios
+
+### **Scenario 7.1: Framing Sequence and Trade Coordination — When Parallel Work Collides**
+
+**Context:**
+You're managing a 5,000-square-foot residential renovation (2-story, wood frame). Your schedule shows:
+- **Week 4–5**: Rough framing (walls, roof)
+- **Week 5–6**: MEP rough-in (electrical, plumbing, HVAC)
+- **Week 6–7**: Insulation and drywall
+
+Your framing crew (4 carpenters) finishes walls on Friday of Week 4, ahead of schedule. The roof trusses are delivered Tuesday of Week 5. Your electrical sub is scheduled to start Monday of Week 5, assuming framing is complete.
+
+Monday morning, Week 5: Electricians show up. Framing crew is still installing roof trusses. The electrician (journeyman) says: "I can't run wire in walls until the roof is done — I need the roof sheathing installed so I can see what openings exist." He's right, but your framing crew won't finish the roof until Wednesday.
+
+The electrical sub has two other jobs lined up; if he doesn't start today (Monday), his next availability is Week 7 (after drywall). That delays the whole project by 2 weeks.
+
+**The question:**
+
+How do you handle this?
+
+**A)** Tell the electrician to come back Wednesday when framing is done; 2-day delay is normal on residential projects.
+
+**B)** Have the electrician start on non-structural work (panel, boxes, conduit routing in cavities) and return Wednesday to run wire once roof is complete.
+
+**C)** Accelerate the roof truss installation by calling in an extra framing crew; finish the roof by Tuesday afternoon so electrical can start Wednesday.
+
+**D)** Have electrical and framing coordinate: electrical can start Tuesday evening (after framing wraps for the day) and run wire Wednesday while framing is installing roof sheathing.
+
+---
+
+#### **Worked Answer to Scenario 7.1**
+
+**Correct answer: B (Electrician starts non-structural work; returns after roof is complete)**
+
+**Why B is correct:**
+
+1. **The electrician is right about the constraint, but there's work he can do.** MEP rough-in doesn't mean "run all the wire on Day 1." It means: (a) install panel and main breaker, (b) run conduit from panel to all boxes and endpoints, (c) install boxes in walls, (d) stage materials. Only the final wire pull (Romex or individual wires in conduit) requires visibility into the framed cavity.
+
+2. **Electrician can start Monday on non-dependent work.** Main panel installation, conduit runs in walls (pre-sheathing), outlet/switch box setting — all happen before wire. Wire pull is the final step, which happens after framing sheathing is complete. This is the industry-standard sequence.
+
+3. **Option C (Call extra crew) is expensive and disruptive.** Adding 2–3 carpenters to accelerate by 1–2 days costs $800–$1,200 for minimal gain. Plus, more carpenters in the same space causes coordination problems (congestion, tool conflicts, safety hazards). Not worth it.
+
+4. **Option D (Evening/parallel work) is exhausting.** Asking your framing crew to work evenings so electricians can run wire the next day is brutal. Your crew's productivity drops 20–30% when they're tired. They'll make mistakes (cut through studs, miss marks). Not sustainable.
+
+5. **This keeps the schedule on track without extra cost.** The electrician's crew does Monday–Tuesday work, finishes the non-dependent tasks, then returns Wednesday when the roof is clear. By Thursday morning, the roof is sheathed, and the electrician can run wire. The project stays on schedule.
+
+**Common mistakes in the field:**
+
+1. **Assuming "rough-in" means "complete all MEP work on first day."** It doesn't. Rough-in has phases: prep (panel install, conduit), box setting, and final (wire pull). The sequencing is designed for trade dependencies.
+
+2. **Not communicating with subs about dependencies.** Tell the electrician: "We expect to finish roof sheathing Wednesday evening. Can you start Monday on panel and conduit, then return Thursday for wire pull?" They'll appreciate the clarity and will plan accordingly.
+
+3. **Adding crew to accelerate when the real issue is sequencing.** More crew doesn't fix sequencing problems — it creates congestion.
+
+**How to actually handle this:**
+
+1. When the electrician arrives Monday, brief him: "Roof sheathing completes Wednesday evening. Can you start on [specific non-dependent tasks]?"
+2. If he agrees, proceed. Document the plan: "Electrical rough-in starts Monday [date], non-structural phase. Wire pull resumes Thursday [date] after roof sheathing."
+3. Make sure the framing crew knows the plan and commits to the Wednesday deadline. If it looks like they might slip, tell the electrician immediately (don't wait until Wednesday).
+4. Once the electrician finishes his Monday–Tuesday work, he's not sitting idle — he moves to another project or does inspection/prep on your next job.
+
+---
+
+### **Scenario 7.2: Subcontractor Default — When a Key Trade Abandons the Job**
+
+**Context:**
+You're 60% through the framing phase of a 12-unit multifamily project (8 weeks total schedule). Your framing contractor (a 6-person crew) is working by time-and-materials, not lump sum. They're behind schedule (originally Week 6–7, now looking at Week 7–8).
+
+Thursday, the framing foreman calls: "We're pulled off your job effective Monday. We have a big commercial project that came available, and we're going there. Our guys will finish what they're on, but we're not coming back next week."
+
+You have 3 weeks of framing left, plus all the MEP rough-in and drywall scheduled downstream. The electrical sub is scheduled to start in 10 days (Monday of Week 8). Your general liability insurance and bonding require you to carry the project to completion.
+
+Framing contractors are hard to find right now — lead times for new crews are 3–4 weeks.
+
+**The question:**
+
+What is your immediate move?
+
+**A)** Call your bonding company and insurance agent; explain that you may need a claim. Begin formal breach-of-contract procedures against the framing contractor.
+
+**B)** immediately begin calling other framing contractors to see who can take over Monday. Simultaneously, contact the electrical sub to ask if he can delay his start by 2 weeks to allow you to find a new framing crew.
+
+**C)** Negotiate with the framing contractor: offer a 20% premium on hourly rates if they stay on the job through completion. If they refuse, proceed with Option A.
+
+**D)** Perform the remaining framing work yourself with a temporary crew (day-laborers, carpenters from the GC's own crew). It will be expensive and chaotic, but it keeps the schedule on track.
+
+---
+
+#### **Worked Answer to Scenario 7.2**
+
+**Correct answer: B (Immediately pursue replacement crew and negotiate electrical delay)**
+
+**Why B is correct:**
+
+1. **Speed is essential.** You have 3 business days (Thu evening through Friday of the next week) before the new framing sequence needs to start. Every day you delay, you lose options. Call framing contractors today (Thursday) and again Friday morning.
+
+2. **Bonding and insurance are your backstop, not your first move.** Yes, notify them (do it), but they exist for situations where you *cannot* resolve the problem yourself. Right now, you can — you can find another framing crew. The claim process is slow and adversarial; it doesn't get your project built. Pursue operational solutions first.
+
+3. **Option C (Pay premium to existing crew) is throwing good money after bad.** If the framing contractor left for a bigger commercial project, a 20% premium won't bring them back — they'll already be committed. You're wasting negotiation time on a non-viable option.
+
+4. **Option D (Do it yourself with day labor) is a disaster waiting to happen.** You'll burn through $30K–$50K in inefficient labor, your project delays anyway (day labor is slow and unreliable), and you'll burn out your own team trying to manage it. Not viable.
+
+5. **Electrical sub negotiation is realistic.** Many subs have a 2-week window of flexibility — they can defer a small project or call in the second crew if one is available. A 2-week delay for a 10-unit project (assuming it's scheduled for 3-4 weeks) might be acceptable. Ask them directly: "Our framing sub pulled off unexpectedly. Can you delay your start 2 weeks?" Worst case, they say no, and you're back to finding a framing crew on their original schedule.
+
+**Common mistakes in the field:**
+
+1. **Waiting too long to call subs.** If a key sub abandons the job on Friday, calling for replacements on Monday is 3 days late. Call today.
+
+2. **Assuming subs are inflexible.** Many subs have float in their schedule or can adjust if you ask early. Don't assume a delay request is impossible.
+
+3. **Confronting the abandoning sub right away instead of solving the problem first.** Yes, you'll pursue a claim against them eventually, but first, solve the immediate operational problem. Then handle the contract dispute.
+
+**How to actually handle this:**
+
+1. **Immediate (Thursday, same day):** Call 5–10 framing contractors you know. Explain: "We need a crew to take over Monday, 3 weeks of work. Budget is [hourly rate], schedule is tight. Can you mobilize Monday?" Document their responses.
+
+2. **Friday morning:** Follow up with the best leads. Confirm availability, pricing, and crew size.
+
+3. **Friday afternoon:** Call your electrical sub. "We have a framing crew change. Can you defer your start to [2 weeks out]?" Get verbal agreement in writing (email) same day.
+
+4. **Monday:** New framing crew starts (assuming you found one). If you didn't, escalate to bonding/insurance and prepare for a claim.
+
+5. **After the crisis:** Issue a formal breach-of-contract letter to the original framing contractor (via certified mail, documented). Pursue a payment claim for (a) the difference in cost between the original contract rate and the replacement crew, (b) your admin costs and overhead for the delay. Keep documentation (calls, emails, quotes) for the claim.
+
+---
+
 ## Module 09: California Codes & Compliance — Scenarios
 
 ### **Scenario 9.1: Prevailing Wage Classifications and Apprentice Ratios**
