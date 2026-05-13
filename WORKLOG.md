@@ -1,5 +1,56 @@
 # Work Log
 
+## Session 976 — Career-training Case Studies Modules 21–25 (20 new scenarios, 86→106 total)
+
+**Date**: 2026-05-13
+**Priority**: Career-training final push toward 100-scenario milestone
+**Scope completed**: 20 new scenarios (86 → 106 total, 70.7% complete toward 150-scenario target)
+
+**Scenarios completed this session**:
+- **Module 21** (Project Controls & Tracking): 4 scenarios
+  - 21.1: EVM negative CPI — reading and responding to early cost performance signals
+  - 21.2: Sub overbilling — pay application review and materials-in-place dispute
+  - 21.3: Variance analysis — attributing a 12% overrun accurately to owner/GC/weather causes
+  - 21.4: Indirect cost overruns — recognizing schedule slip as the hidden driver
+
+- **Module 22** (Procurement & Vendor Management): 4 scenarios
+  - 22.1: RFQ evaluation — SSPC certification compliance and value vs. price analysis
+  - 22.2: PO dispute — firm-fixed-price defense against material price escalation claims
+  - 22.3: Supplier failure — emergency sourcing after critical equipment destruction (fire)
+  - 22.4: Warranty claim — latent defect analysis, pass-through to sub, 1-year cutoff nuances
+
+- **Module 23** (Environmental Compliance & Sustainability): 4 scenarios
+  - 23.1: CEQA/archaeological discovery — 24-hour notification, coroner protocol, work zone
+  - 23.2: AQMD Rule 403 NOV — dust control violation response and NOC conference strategy
+  - 23.3: Section 404 wetland encroachment — unauthorized impact, Corps notification, no DIY restoration
+  - 23.4: ACM discovery during demolition — OSHA 1926.1101 stop-work, differing site condition COR
+
+- **Module 24** (Safety Management & OSHA): 4 scenarios
+  - 24.1: OSHA recordable incident investigation — 24-hour protocol, root cause, stand-down, 300 log
+  - 24.2: Near-miss reporting culture — overcoming "nobody got hurt" mindset, formal investigation
+  - 24.3: Competent Person scaffold inspection — OSHA 1926.451(f)(3), multi-employer duty, CP authority
+  - 24.4: Unannounced OSHA inspection — credential verification, brief delay rights, escort protocol
+
+- **Module 25** (Commissioning & Startup): 4 scenarios
+  - 25.1: Cold-weather commissioning — freeze risk to fire suppression, temporary heat solution
+  - 25.2: Vibration alarm during first run — hold at 75% speed, demand data before proceeding
+  - 25.3: Operator training deferral — safety risk written recommendation, written owner acknowledgment
+  - 25.4: Punch list dispute — 143-item categorization, undisputed immediate completion, formal CO dispute
+
+**File updated**: `projects/career-training/case-study-workbook.md`
+**Scenario count**: 86 → 106 (20 new scenarios, 100-scenario milestone exceeded; 70.7% of 150-scenario target)
+**Content added**: ~1,085 lines
+
+**Quality notes**:
+- All scenarios follow established format: Context (100–150 words), Question (4 options), Worked Answer (150–200+ words with cause-and-effect reasoning), Common Mistakes (4–5 field observations)
+- Each module covers a distinct domain with no duplication across modules or with earlier scenarios
+- Regulatory citations used throughout: OSHA 29 CFR 1926.1101 (asbestos), OSHA 1926.451(f)(3) (scaffold), CEQA Section 21083.2, Clean Water Act Section 404, AQMD Rule 403, AIA G702/G703 pay application standards
+- EVM scenario uses correct industry formulas (CPI = BCWP/ACWP, SPI = BCWP/BCWS, EAC = BAC/CPI)
+
+**Estimated remaining**: ~44 scenarios for full 150-scenario completion (Modules 26–33 plus any module gap-fill)
+
+---
+
 ## Session 975 — Career-training Case Studies Modules 16–20 (20 new scenarios, 66→86 total)
 
 **Date**: 2026-05-13

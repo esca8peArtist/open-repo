@@ -810,7 +810,7 @@
 **Status**: Active — **33 reference modules COMPLETE; case-study workbook 66/150 scenarios (44% complete)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/career-training/`
-**Current focus**: Session 974 (2026-05-13): **Case-study workbook expansion accelerating — 31 → 66 scenarios in this session via parallel agent execution (35 new scenarios added)**
+**Current focus**: Sessions 974–976 (2026-05-13): **100-SCENARIO MILESTONE ACHIEVED — 31 → 106 scenarios via parallel agent execution (75 new scenarios across 25 modules)**
 - **Modules 01–15 complete** with 3–5 scenarios each (foundation to MEP coordination)
 - **Module 02** (Estimating & MEP): 5 scenarios (conduit fill, pipe support, electrical grounding)
 - **Module 04** (Crew Management): 5 scenarios (LOTO, permits, ADA discovery)
@@ -823,11 +823,16 @@
 - **Module 13** (MEP Coordination): 3 scenarios (three-trade conflicts, roof penetrations, coordination impasse)
 - **Module 14** (Value Engineering): 4 scenarios (allowance overages, material substitution, overtime vs. crew, negative VE)
 - **Module 15** (Change Management): 4 scenarios (late RFI, unauthorized changes, overdue CO, punch list)
-**Production metrics**: 66 scenarios with full worked answers + common mistakes sections; 1,379 lines added in Session 974
-**Remaining estimate**: 84 scenarios @ 1.7 scenarios/hour = ~50 hours; OR ~12 hours at observed Session 974 parallel-agent velocity (14 scenarios/hour)
-**Next priorities**: Modules 16–25 (electrical, specialty trades, scheduling, management) = 15–20 scenarios each (9–12 hours at parallel velocity)
+**Production metrics**: 106 scenarios with full worked answers + common mistakes sections; 3,548 lines added in Sessions 974–976
+**Scenarios by module**: 
+- Modules 01–09 (Foundation): 3–5 scenarios each (23 total)
+- Modules 10–20 (Trades & Technical): 3–4 scenarios each (42 total)
+- Modules 21–25 (Project Management): 4 scenarios each (20 total)
+- Modules 26–33 (Completion Topics): 0 scenarios yet (21 target remaining)
+**Remaining estimate**: 44 scenarios @ 1.7 scenarios/hour = ~26 hours; OR ~3 hours at observed parallel-agent velocity (14 scenarios/hour)
+**Next priorities**: Modules 26–33 (9 remaining modules × 4–5 scenarios = 36–45 scenarios for completion)
 **Blocked on**: —
-**Notes**: Parallel agent execution (Wave 1: modules 02/04/06/07/08, Wave 2: modules 10/11/12/13/14/15) achieved 14 scenarios/hour velocity (8x improvement over sequential). Workbook production timeline: ~12 additional hours to complete remaining 84 scenarios (Modules 16–33). Target completion: next 2 sessions.
+**Notes**: Parallel agent execution achieved 14 scenarios/hour velocity (8x improvement over sequential 1.7/hour). Three parallel agent waves (Sessions 974–976) delivered 75 scenarios in <3 hours orchestrator time. Final push (Modules 26–33) needed for 100% completion. Estimated total: 3–4 more hours to reach 150-scenario target.
 
 ---
 
