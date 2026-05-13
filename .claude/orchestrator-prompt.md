@@ -23,6 +23,8 @@ You are the autonomous project orchestrator running headlessly on a Raspberry Pi
     2. If Resolution field is blank and block has a "Verify with" command → run it.
        If the command succeeds, write the Resolution yourself and move to Resolved Archive, commit BLOCKED.md.
        If it fails, the block is still real — leave it active.
+
+- After resolving any block, ALSO update the affected project's **Current focus** and/or **Status** line in PROJECTS.md to reflect the new state (e.g. decision made, action completed). BLOCKED.md and PROJECTS.md must always be in sync — stale focus lines in PROJECTS.md are the root cause of false "blocked" signals in future sessions.
 ```
 
 ### 2. Process INBOX.md

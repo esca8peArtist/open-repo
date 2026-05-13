@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 1000 (May 13, 21:15–21:45 UTC): **Item 36 COMPLETE** — Source staging for Domains 41 & 43 delivered (40+ annotated sources per domain, 25-26 expert contacts, evidence checklists). Critical findings: May 13 Senate CFPB vote creates immediate Domain 41 advocacy window; HUD CoC NOFO June 1 aligns with Domain 43 research start. Next: Items 37-38 staged for execution; Phase 1 distribution path decision pending.
+**Current focus**: **Distribution path DECIDED: Path A + Domain 37** (user resolved 2026-05-13 00:45 UTC). Execute Phase 1 Gist creation, template field fill, contact verification, email send + social scheduling. Domain 37 election protection sequencing before May 28 DEA deadline. Source staging for Domains 41 & 43 complete (Session 1000). Items 37-38 staged in exploration queue.
 
 **Session 1000 Deliverables** ✅:
 - `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (1,053 lines) — 40+ sources per domain, expert contacts, evidence checklists, outline skeletons
@@ -81,7 +81,7 @@
 - **domains-40.md** — Healthcare as Democratic Determinant (46 citations, ~5,600 words). Five causal pathways from healthcare to civic participation. Oregon RCT: Medicaid enrollment → 7% voter turnout increase. Pathways: medical debt (100M Americans), disability gaps (10-11.7 ppt), maternal mortality (3:1 Black:white), pandemic federalism collapse, FQHCs underutilization. Cross-references: Domain 50 (NVRA), Domain 22 (maternal mortality), Domain 44 (reproductive).
 - **INDEX.md** — Full domain cross-reference index (created from scratch). Distribution pairing recommendations (Corporate Capture Trilogy: 51 + 42 + 38).
 
-**Awaiting user decision**: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — distribution window narrowing. Domain 51 August 2026 advocacy window (November ballot integration). All 58+ domains ready for Phase 1 launch upon user path decision.
+**Path decided**: Path A + Domain 37 Hybrid. Domain 42 DEA hearing deadline May 28 — distribution window narrowing. Domain 51 August 2026 advocacy window (November ballot integration). All 58+ domains ready for Phase 1 launch execution.
 
 **Session 981 Deliverables (May 13, 2026)**:
 - ✅ **Domain 51: Campaign Finance, Dark Money, Corporate Capture** (334 lines, 45 citations)

@@ -2,6 +2,15 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## 🔒 Security Rules
+
+**ABSOLUTE PROHIBITION — NO EXCEPTIONS**: Never bind any service to `0.0.0.0`. This applies to all projects, all environments (dev, test, prod), and all justifications are refused.
+
+- Docker port mappings: always `specific_ip:host_port:container_port`, never bare `port:port` or `0.0.0.0:port:port`
+- Server `--host` flags (uvicorn, Flask, etc.): use `127.0.0.1` or a specific Tailscale IP
+- Any service config (nginx, Redis, Postgres, etc.): bind to `127.0.0.1` or explicit interface IP only
+- Acceptable: `127.0.0.1`, specific Tailscale IP (e.g. `100.120.18.84`), or other named interface IPs
+
 ## 🐍 Python Environment Rules
 
 **CRITICAL**: This project uses **UV** for all Python operations. Never use `python -m`, `pip install`, or `python script.py` directly.
