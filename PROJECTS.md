@@ -351,7 +351,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: Session 956: **May 14 20:00 UTC checkpoint READY** (35 hours away). FAR_MISS_C1 confirmed (May 12 checkpoint): 0 confirmed round trips, but 19 May 5 liquidation SELL fills present in DB. AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1 (1–2 confirmed round trips). Decision framework complete (POST_GATE_1_RESPONSE_FRAMEWORK.md, 705 lines). Gate 2 implementation guide staged (GATE_2_IMPLEMENTATION_GUIDE.md, 4,200 words). Pre-checkpoint checklist ready (MAY_14_CHECKPOINT_READINESS.md). All infrastructure verified: Jetson healthy, DB synced, checkpoint query ready. Infrastructure blocks resolved (cron PATH, disk cleanup). **User action**: May 14 20:00 UTC execute checkpoint query; classify outcome PASS/NEAR-MISS/FAR-MISS per framework.
+**Current focus**: Session 961: **May 14 20:00 UTC checkpoint T-35h — Gate 2 readiness verified.** FAR_MISS_C1 confirmed (May 12 checkpoint). AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1. All pre-checkpoint items verified by code audit (no live Alpaca calls): checkpoint script functional (`scripts/may14_checkpoint_query_alpaca.py`, 383 lines), HMM regime scalar committed and tested (`src/ml/hmm_regime_scalar.py`, 46 tests passing), vol scalar integration complete (25 tests passing), Gate 2 guide verified (856 lines, criteria: Sharpe >= 1.5, MaxDD <= 15%, PF >= 1.5). Gate 2 readiness checklist created: `GATE_2_READINESS_CHECKLIST.md`. **Critical finding**: `active-sessions.json` contains 67 sessions (67 unique tickers), not 2 or 52 — if Jetson is running this config, system is already at Gate 2 Week 3+ equivalent state. Open Gate 2 code gap: ARCH-4 cross-session concentration check (1–2 hours, needed before Week 2). hmmlearn must be verified on Jetson before enabling HMM observe mode. **User actions at May 14**: (1) 19:00 UTC: SSH ping Jetson + `curl /api/ready` to confirm session count; (2) 18:00 UTC: `uv run python scripts/may14_checkpoint_query_alpaca.py --verify` for Alpaca connectivity; (3) 20:00 UTC: run full checkpoint query; (4) classify PASS/NEAR_MISS/FAR_MISS and follow POST_GATE_1_RESPONSE_FRAMEWORK.md.
 
 
 **Comprehensive options backtesting — COMPLETE (Session 900)** (prior):
@@ -790,9 +790,25 @@
 
 ---
 
+### career-training
+**Goal**: Build a comprehensive self-study curriculum for transitioning into industrial general contracting — covering contracts, estimating, field execution, project management, codes, California regulations, and business setup. Target audience is someone with construction experience moving into the GC/industrial role for the first time.
+**Priority**: Medium
+**Status**: Active — 28 reference modules complete (Modules 01–28)
+**Visibility**: Private — local only, no GitHub push
+**Working dir**: `projects/career-training/`
+**Current focus**: 28 modules written covering industrial GC foundations through specialty topics (ADU/infill, wildfire, solar, luxury residential, marketing). Next: practice scenarios, module gaps, and study reinforcement materials.
+**Blocked on**: —
+**Notes**: Modules tagged with discipline, audience, and California-specific content where relevant. All marked status: reference.
+
+---
+
 ## Exploration Queue
 
 Topics fair game when no higher-priority task is active. Log findings to the relevant project or resistance-research.
+
+- **career-training: Practice Scenarios & Case Studies** — 28 reference modules exist but have no applied exercises. Scope: (1) Write 2–3 realistic scenario problems per module (e.g. "You're bidding a $4M industrial mechanical scope — walk through the bond, contract type, and risk allocation decisions"), (2) Provide worked answers with common mistakes flagged, (3) Prioritise the highest-leverage modules first (01 contracts/estimating, 03 PM/scheduling, 09 California codes). Deliverable: `practice-scenarios.md` per module or a consolidated `case-study-workbook.md`. No blockers — ready to execute.
+
+- **career-training: Module Gap Analysis & Index** — Audit the 28 existing modules for coverage gaps and create a master index. Scope: (1) Map each module to discipline tags, (2) Identify missing topics (e.g. prevailing wage/Davis-Bacon, dispute resolution/claims, insurance types beyond bonding, industrial commissioning), (3) Produce a prioritised list of 3–5 new modules to write, (4) Build a `README.md` study guide with recommended reading order for different career paths (industrial GC, residential GC, specialty sub). Deliverable: `module-index.md` + gap analysis + new module outlines. No blockers.
 
 - ~~Cryptographic voting systems and democratic resistance — extend the remote-voting research into the democratic renewal proposal~~ — **Done** (Session 24: Section 4 expanded to 8 subsections covering E2E-V protocols, deployed systems, coercion resistance, RLAs, post-quantum crypto, formal verification, maturity spectrum; Domain 1e updated with three-layer verification model)
 - ~~Legal landscape of algorithmic decision-making in ICE detention — recent case law, civil rights angles~~ — **Done** (Session 24: `algorithmic-decision-making-immigration.md`, 270 lines — ICM/FALCON/ImmigrationOS systems, NIST bias data, Gonzalez v. ICE, EU AI Act/Canada AIA models, 6 reform recommendations; Domain 16d expanded)
