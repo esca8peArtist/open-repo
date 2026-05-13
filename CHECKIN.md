@@ -1,5 +1,97 @@
 # Check-in
 
+## Session 998 — May 13, 2026, 19:41–19:58 UTC (Orchestrator Orientation & Checkpoint Preparation)
+
+**Status**: ✅ **ORIENTATION COMPLETE — ALL AUTONOMOUS WORK DELIVERED, CHECKPOINT-READY STATE VERIFIED**
+
+### Accomplished This Session
+
+1. **Full Orientation and State Verification** ✅
+   - Read ORCHESTRATOR_STATE.md: All project states verified current (as of 19:41 UTC)
+   - Read PROJECTS.md: Priority order confirmed, project goals and current focus reviewed
+   - Read BLOCKED.md: Single active block (mfg-farm test print, user action) verified appropriate
+   - Read INBOX.md: Zero new items — inbox clear
+   - Read WORKLOG.md: Recent session history reviewed (Sessions 993–997, all post-May 12 checkpoint)
+   - Checked Exploration Queue: All items completed, queue empty, no new items needed
+
+2. **Orchestration State Validation** ✅
+   - stockbot: May 14 20:00 UTC checkpoint ready (T-4.2 hours)
+     - Checkpoint script (`scripts/may14_checkpoint_query_alpaca.py`, 383 lines) verified in place from Session 993
+     - Alpaca query functionality tested and confirmed operational
+     - Expected classification: NEAR-MISS B1 or FAR-MISS C1 (based on May 5 closes + AAPL hold)
+   - resistance-research: Phase 1 (58+ domains) + Phase 2 (Domains 41–43) production-complete
+     - Awaiting user distribution path decision (Path A / A+37 / B)
+     - Domain 42 Wave 1 execution-ready (URLs + contact corrections pending 2-min prep)
+   - cybersecurity-hardening: Tier 1+2 materials production-ready (awaiting Phase 1 user approval)
+   - seedwarden: Track B launch-ready for May 30 (awaiting 3 user gates); Track A has 2 user actions
+   - mfg-farm: All pre-print deliverables complete (awaiting test print execution)
+   - All other projects: Either complete (off-grid-living, career-training) or appropriately paused
+
+3. **Checkpoint Readiness Assessment** ✅
+   - **Status**: System is in clean, verified state for May 14 checkpoint
+   - **Pre-checkpoint work**: All completed in Sessions 993–997
+   - **May 14 checkpoint execution**: User runs `uv run python scripts/may14_checkpoint_query_alpaca.py --full` at 20:00 UTC
+   - **Post-checkpoint sequencing ready**:
+     - Outcome classification (PASS / NEAR-MISS / FAR-MISS_C1 / FAR-MISS_C2)
+     - Decision framework available in `projects/stockbot/MAY_12_OUTCOME_ROADMAP.md`
+     - Gate 2 planning documents in place for post-checkpoint execution
+
+4. **Autonomous Work Assessment** ✅
+   - **Exploration Queue**: All items completed (no items remain)
+   - **Project deliverables**: All autonomous project work complete
+   - **Blockers**: Single identified block (mfg-farm test print, user action) is appropriate and documented
+   - **Next autonomous work**: Post-May-14 checkpoint (decision pending outcome classification)
+
+### Critical Items Awaiting User (Timeline)
+
+**May 14, 20:00 UTC (T-4.2 hours)**:
+- stockbot checkpoint execution (automated, user runs script)
+
+**May 28, 2026 (T+14 days)**:
+- Domain 42 DEA hearing deadline (Wave 1 distribution window closes)
+
+**May 30, 2026 (T+16 days)**:
+- seedwarden Track B launch deadline (3 user gates required by May 28)
+
+**June 1, 2026 (T+18 days)**:
+- HUD CoC comment period deadline (Domain 43 advocacy window)
+
+**By June 4 (T+22 days, if needed)**:
+- stockbot Gate 1b secondary checkpoint (post-closure reconciliation)
+
+### User Decisions Required
+
+1. **resistance-research distribution path** — Path A / A+37 / B (blocks Phase 1 launch)
+2. **cybersecurity-hardening Phase 1 approval** — Launch authorization for Tier 1 (25 contacts)
+3. **seedwarden Track B user gates** — Social account setup, Canva Brand Kit, Kit email account (3 × 30–60 min)
+4. **seedwarden Track A corrections** — Tag fixes (15 min) + Etsy account verification (10 min + 1–5 day processing)
+5. **mfg-farm test print execution** — Physical print: 0.20mm layer height, PLA+, 3 walls, 220–225°C
+
+### Post-Checkpoint Work Recommendations
+
+**Immediate (May 15–28)**:
+- User distribution path decision → orchestrator executes Phase 1 launch prep (4–6 hours) within 4 hours of decision
+- Domain 42 Wave 1 execution (2-minute prep + 6–7 days lead time before May 28 hard stop)
+
+**Post-May-28 (autonomous, if user chooses)**:
+- **stockbot**: Comprehensive backtesting report (User Escalated Priority 1, May 8)
+  - Scope: Post-Gate-1 analysis, Sharpe trajectory, scenario success metrics
+  - Estimated: 4–6 hours
+  - Dependencies: Gate 1 checkpoint outcome, decision framework completion
+
+- **resistance-research**: Phase 2 domain production (Domains 42, 44–47, 49–50, 52–53)
+  - Scope: ~30–40 hours research + writing
+  - Timing: Non-blocking (can overlap with Phase 1 distribution)
+  - Dependencies: User path decision only
+
+### System Health
+
+- **Token usage**: Sonnet 17.7% (healthy), All-models 36.2% (healthy)
+- **Git state**: Clean (minor ORCHESTRATOR_STATE.md timestamp/usage updates only)
+- **Project state**: All within target, no technical blockers, all awaiting appropriate user inputs
+
+---
+
 ## Session 997 — May 13, 2026, 19:24–20:50 UTC (Phase 2 Domain Research Production: Domains 41 & 43)
 
 **Status**: ✅ **PHASE 2 DOMAINS 41 & 43 RESEARCH PRODUCTION COMPLETE — TWO PRODUCTION-READY DOCUMENTS DELIVERED**
