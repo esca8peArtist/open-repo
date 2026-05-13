@@ -530,4 +530,212 @@ How do you classify this request?
 
 ---
 
-*Updated 2026-05-13 — Case studies for Modules 01, 03, 09, 29 complete. Ready for integration into Module 33 case study compilation.*
+---
+
+## Module 02: Field Execution & MEP Coordination — Scenario
+
+### **Scenario 2.1: Concurrent MEP Rough-In in Congested Equipment Area**
+
+**Context:**
+You're on week 6 of a 16-week industrial retrofit. The mechanical, electrical, and instrumentation rough-in work must all happen in the same confined space (underneath an operating process vessel at 15 feet above grade). The three crews have to work in sequence, not in parallel:
+- **Piping**: Must install first (takes 3 weeks) — process lines need to be in place before anything can connect to them
+- **Electrical**: Installs after piping (2 weeks) — power runs and cable trays hang above the piping
+- **Instrumentation**: Installs last (1 week) — instrument tubing and wiring routes between pipes and electrical cable
+
+Your project schedule shows these three activities running sequentially = 6 weeks total. Current plan: piping weeks 6–9, electrical weeks 10–11, I&C weeks 12–13, leaving 3 weeks float before the owner's operations team takes over the area.
+
+**Problem**: Piping is currently in week 8 (of their planned 3 weeks) and is running 1 week behind schedule. The electrical contractor is getting impatient and asking to start "as soon as possible" even though piping is still active.
+
+**The question:**
+
+Do you allow electrical to start early (risking interference with active piping work), or do you enforce the sequential schedule even though piping is behind?
+
+**A)** Allow electrical to start immediately in areas where piping is complete (compress schedule, assume no interference)
+
+**B)** Hold electrical until piping is 100% complete; accept the schedule slip and use the 3-week float
+
+**C)** Rotate crew hours: piping works days, electrical works nights in adjacent areas (avoid actual collision while keeping both active)
+
+**D)** Request a 1-week delay from the owner to compress schedule pressure
+
+---
+
+#### **Worked Answer to Scenario 2.1**
+
+**Correct answer: B (Hold electrical until piping 100% complete)**
+
+**Why B is correct:**
+
+1. **SIMOPS interfaces are binary — you either have interference or you don't.** Piping hanging at 15 feet and electrical running cable trays in the same space is a collision waiting to happen. The fact that piping is "mostly done" doesn't help — one hot-work incident from a piping crew burning through an electrical cable is catastrophic (electrical shock, arc flash, work stoppage).
+
+2. **The 3-week float is designed for exactly this scenario.** You have schedule buffer. Piping is 1 week behind (anticipated within typical variance). You have 3 weeks of float remaining after sequential completion. Using 1 week of float is the point of having float.
+
+3. **Compression creates hidden costs.** Electrical crew working "around" active piping leads to:
+   - Rework (they have to move their cable tray when piping finishes)
+   - Safety incidents (same reason)
+   - Coordination overhead (daily interference resolution)
+   - Change orders (when collision becomes unavoidable, someone has to pay to relocate)
+
+   Compressed work looks cheaper until you add these costs. You're trading 1 week of schedule for $20–40K of hidden rework.
+
+4. **Your contract probably has a SIMOPS clause.** Most industrial contracts include language that says concurrent operations require formal permits and daily coordination. Starting electrical early without formal authorization is a contract violation and potentially a safety violation (OSHA).
+
+**Why the other answers are problematic:**
+
+- **Option A (Immediate start in "complete" areas):** You're making a judgment call about which piping is "done." In reality, piping work always has tail items (final connections, thermocouples, insulation). Electrical crew will move cable trays, and 2 weeks later you'll discover they installed in the exact spot where the final pipe connection goes. Rework.
+
+- **Option C (Rotate shifts):** This might seem clever (piping days, electrical nights), but it doesn't solve the spatial problem — they're still in the same 15-foot-high confined space. Electrical installing at night can't see where piping is installing during the day. This actually increases collision risk.
+
+- **Option D (Request owner delay):** You're asking the owner to slip their operations schedule because your subcontractor is impatient. The owner will push back hard. This is a negotiation you lose.
+
+**Common mistakes in the field:**
+
+1. **Underestimating "hidden" interference costs.** You see "overlap 1 week of work" and think it's cheap. In reality, it's expensive (rework, safety, coordination).
+
+2. **Treating schedule compression as a free option.** It never is. Compression trades float (your insurance) for hidden costs (rework, incidents).
+
+3. **Not formalizing SIMOPS protocols.** If electrical and piping are truly independent, you'd document it with a formal permit. The fact that you're asking the question suggests they're *not* independent.
+
+---
+
+## Module 04: Codes, Permits & Regulatory — Scenario
+
+### **Scenario 4.1: Design Deviation and AHJ (Authority Having Jurisdiction) Approval**
+
+**Context:**
+Your HVAC design shows a single 4-inch return-air duct supplying a Class I Div 1 (hazardous) area. The design was approved by the engineer and the AHJ (local building department) during the permit phase. However, your HVAC contractor points out that the duct diameter is barely adequate at worst-case load and suggests "upgrading to 5-inch to improve system balance and reduce noise."
+
+The 5-inch duct would cost an additional $8,000 (larger ductwork, larger dampers, slightly larger fan). The 4-inch duct meets code (IBC/IMC) and is permitted.
+
+**Your question:**
+
+Do you:
+
+**A)** Approve the 5-inch upgrade as a "no-cost improvement" (contractor absorbs cost, better system)
+
+**B)** Stick with the 4-inch permitted design (match the permit, avoid unnecessary costs)
+
+**C)** Request a design change from the engineer; if approved, submit a permit amendment to the AHJ
+
+**D)** Ask the AHJ for informal approval of the 5-inch diameter (avoid formal amendment process)
+
+---
+
+#### **Worked Answer to Scenario 4.1**
+
+**Correct answer: C (Request design change, submit permit amendment)**
+
+**Why C is the right move:**
+
+1. **Changing from 4-inch to 5-inch is a *design change*, not a field optimization.** The design was permitted; the permit is your legal authorization to build the 4-inch system. If you build the 5-inch system without amending the permit, you're building work that's outside your authorization. That's technically a permit violation, even if the 5-inch is "better."
+
+2. **The AHJ may have had a reason for the 4-inch sizing.** Maybe:
+   - The AHJ's calculations assume 4-inch
+   - The 4-inch is specified to limit condensation in Class I Div 1 areas
+   - There's a manufacturer-specific requirement (Underwriters Labs or NFPA)
+   
+   You don't know. Informally upgrading without AHJ review risks violating a hidden constraint.
+
+3. **Permit amendments are straightforward and fast.** You're asking the engineer to verify that 5-inch is acceptable, then asking the AHJ to amend. Typical turnaround is 2–5 days. The cost ($8,000 + permit amendment fee ~$500 + 3 days schedule) is worth the legal clarity.
+
+4. **"No-cost to you" is a red flag.** The HVAC contractor offering to upgrade at no cost means they're eating $8,000 to improve their system performance or to avoid a change order later. That's their business decision. But if you accept the upgrade without formal authorization and the AHJ questions it, the cost becomes yours (rework to 4-inch, or change order defense).
+
+**Why the other answers are wrong:**
+
+- **Option A (Approve upgrade, contractor absorbs):** This looks good until you get an AHJ site visit and they ask "Where's the amendment for the 5-inch duct?" You're now in a defensive posture, claiming the 5-inch is "equivalent" to the 4-inch or "better." The AHJ may disagree and require rework.
+
+- **Option B (Stick with 4-inch only):** This is the safe default *only if* you've verified the 4-inch is truly adequate. If the HVAC contractor is right that 4-inch is "barely adequate," you're accepting marginal system performance. But if the 4-inch is permitted and adequate per code, it's acceptable.
+
+- **Option D (Informal AHJ approval):** Don't try this. AHJs want written requests, engineer-signed drawings, and formal amendments. An informal "yes, go ahead" from a clerk has zero legal value. If problems surface later, the AHJ will deny they approved the change.
+
+**How to actually proceed:**
+
+1. **Ask the HVAC contractor to document the rationale.** Why is 4-inch "barely adequate"? Is this a code concern (inadequate CFM), a practical concern (noise/vibration), or a performance concern (system balance)? Get it in writing.
+
+2. **Forward to the engineer with a simple change request:** "HVAC contractor recommends upgrading return duct from 4" to 5" to improve system balance and noise profile. What's your recommendation?"
+
+3. **If the engineer approves:** Have them issue a design revision (marked "Revise from 4" to 5" return duct, Class I Div 1 area"). Attach a memo explaining why.
+
+4. **Submit to AHJ with a permit amendment request:** "We request an amendment to permit [#] to revise the return-air duct diameter from 4" to 5" per the attached engineer revision. This revision improves system balance and noise performance per [engineer name] recommendation."
+
+5. **When AHJ approves:** Issue a Construction Change Directive to the HVAC contractor. Now the 5-inch is authorized, permitted, and contractual.
+
+---
+
+## Module 05: Civil Engineering — Scenario
+
+### **Scenario 5.1: Compaction Testing and Hidden Fill Material**
+
+**Context:**
+You're in week 8 of site preparation for a 2-acre industrial facility. Structural foundations require 95% Standard Proctor compaction on all fill material. The site engineer specified "native soil or approved granular fill" for the 18-inch-deep bearing layer.
+
+During compaction work, the grading contractor discovers the top 4 feet of soil is extremely soft clay (likely old pond fill or heavily weathered bedrock). It will not compact to 95% Proctor no matter how much the contractor works it. They can either:
+
+1. **Remove and replace:** Excavate the clay and bring in engineered fill (3-week delay, $60K cost)
+2. **Cement stabilization:** Add 5% cement by weight, re-compact (1 week, $18K cost, but requires design engineer approval)
+3. **Deep compaction:** Use a vibratory compactor on the clay (5 days, $12K cost, but effectiveness is uncertain)
+
+The engineer hasn't visited the site. Your schedule has zero float.
+
+**The question:**
+
+Do you proceed with one of the three options, or do you wait for the engineer to evaluate the situation?
+
+**A)** Proceed with the cheapest option (deep compaction, $12K) — engineer can review after the fact
+
+**B)** Proceed with option 1 (remove and replace) — ensures compliance, absorb the 3-week delay
+
+**C)** Proceed with option 2 (cement stabilization) — medium cost/time, request expedited engineer approval
+
+**D)** Stop work and wait for the engineer to recommend (protect yourself from a wrong decision)
+
+---
+
+#### **Worked Answer to Scenario 5.1**
+
+**Correct answer: D (Stop work, get engineer recommendation)**
+
+**Why D is correct:**
+
+1. **Foundation compaction is a load-bearing decision that affects structural integrity.** If the compaction fails, the entire foundation is at risk. This is not a cost/schedule optimization — it's a structural safety decision that requires professional engineering judgment.
+
+2. **You are not authorized to make substitutions on this decision.** Your role as GC is to execute the design, not to substitute foundation solutions. If you choose deep compaction and it fails to achieve 95% Proctor, the engineer will claim "you deviated from my spec," and you'll bear the cost of rework or potential litigation if cracks appear in the foundation.
+
+3. **The engineer needs to see the soil conditions.** Soil compaction is site-specific. The engineer may recommend:
+   - Remove and replace (if the soft clay is extensive)
+   - Cement stabilization with specific mix design (if the clay is localized)
+   - A different compaction method (e.g., dynamic consolidation) if the site allows
+   - A deeper investigation to understand the extent of poor soil
+
+   Without seeing the site, the engineer can't make this call.
+
+4. **The engineer's site visit is *part of their contract obligation*.** The engineer is responsible for field observations and approving substitutions. Don't do their work for them.
+
+**How much does the wait cost?**
+
+- Engineer site visit: 1 day (travel, observation, recommendation)
+- Waiting: 1–2 days
+- Decision + mobilization: 1 day
+- **Total delay: 3–4 days**
+
+Compare that to proceeding wrong: 3+ weeks of rework if deep compaction fails and you have to excavate/replace anyway. The cost of waiting (3–4 days) is cheap insurance against the cost of being wrong (3 weeks + rework cost).
+
+**Why the other answers are problematic:**
+
+- **Option A (Deep compaction, cheapest):** You're gambling $12K that vibratory compaction will work on clay. If it doesn't, you've wasted $12K and burned 5 days with nothing to show for it. Then you have to excavate and replace anyway = $12K + $60K = $72K total cost. You should have waited for the engineer.
+
+- **Option B (Remove and replace, most expensive):** This may be right, but the engineer might recommend cement stabilization for half the cost. You're preemptively choosing the most expensive option instead of getting professional guidance.
+
+- **Option C (Cement stabilization, request expedited approval):** This is the middle ground and might be right. But you're proceeding before engineer approval. If the engineer says "no, excavate instead," you've wasted $18K on cement that has to be removed. Always get *approval before proceeding*.
+
+**Common mistakes in the field:**
+
+1. **Mistaking "on the hook for schedule" with "authorized to make structural decisions."** Yes, you have zero float. But proceeding with a wrong foundation solution will create *far more* schedule delay than waiting 3–4 days for engineer approval.
+
+2. **Not escalating structural decisions immediately.** As soon as you discover soil conditions don't match the design, the engineer needs to know. Same day, if possible.
+
+3. **Trying to save money on something that affects structure.** Saving $40K on foundation compaction by choosing the wrong method is not a win. It's a loss.
+
+---
+
+*Updated 2026-05-13 — Case studies for Modules 01–05, 09, 29 complete (10 detailed scenarios). Ready for continued expansion to remaining modules.*
