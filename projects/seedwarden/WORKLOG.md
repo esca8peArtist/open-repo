@@ -4,6 +4,27 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Bundle E Launch Acceleration Supporting Materials — 2026-05-13
+
+**Task**: Item 30 from exploration queue — create 4 operational supporting documents to accelerate Bundle E writing sprint and May 19-22 launch readiness.
+
+**Files created**:
+- `projects/seedwarden/BUNDLE_E_PHOTO_VERIFICATION_CHECKLIST.md` — 5-species x 3-photo-type matrix, Wikimedia sourcing URLs, attribution templates by license type, optimization specs (JPEG, 1200px, <300 KB), attribution log table, May 14 status gate
+- `projects/seedwarden/BUNDLE_E_QA_CHECKLIST.md` — per-guide section completeness tables, species-specific safety audits (Spurge/Purslane, hip seeds/Multiflora Rose, oxalic acid/Knotweed), recipe diversity requirements, seasonal specificity gate, upload-readiness gate, escalation protocol with severity tiers
+- `projects/seedwarden/BUNDLE_E_PLATFORM_SETUP.md` — May 15-18 day-by-day setup: Etsy listing creation, Kit email scheduling, social media post queue, testing protocol, troubleshooting matrix (8 common issues), rollback procedures for 5 post-launch failure scenarios
+- `projects/seedwarden/BUNDLE_E_LAUNCH_DAY_SOPS.md` — minute-by-minute May 19 script (06:00-20:00 EST), printable day-of checklist, real-time response playbook for media engagement, metrics tracking spreadsheet template, contingency escalation triggers, post-campaign transition to Phase 2
+
+**Key decisions documented**:
+- All 15 photos (5 species x 3 types) must be sourced and attributed by May 14 3:00 PM to unblock PDF export
+- Mandatory safety items that block launch if missing: Spurge/Purslane distinction, hip seed fiber warning/Multiflora Rose
+- Etsy listing activates manually at 08:00 EST on May 19; Kit Email 1 sends automatically at 09:00 EST
+- Break-even is 17 sales; campaign target is 40-60 sales ($1,000-$1,500 revenue)
+- Minimum viable launch: 3 guides complete with 2 delayed guides shipping May 22
+
+**Sources reviewed**: BUNDLE_E_GUIDE_WRITING_SPRINT_PLAN.md, BUNDLE_E_PUBLICATION_PACKAGE.md, PHASE_2_GUIDE_CONTENT_BLUEPRINT.md, ETSY_PHASE_1_UPLOAD_CHECKLIST.md, KIT_SETUP_NOTES.md, launch-day-script.md
+
+---
+
 ## Phase 2 Production Timeline — 2026-05-12
 
 **Task**: Phase 2 production planning — concrete daily timeline for May 30 launch, covering plant sourcing, location scouting, photography logistics, guide production, go-live coordination, and risk register.
