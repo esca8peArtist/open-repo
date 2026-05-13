@@ -27,12 +27,7 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ## Active Blocks
 
-### stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required)
-**Date blocked**: 2026-05-13
-**Context**: Session 991 architecture analysis discovered an `options_live_session` process running on the Jetson since at least January 2026, uncharacterized in the codebase. The May 12 checkpoint query found 6 options fills in trading.db (dates: January, March, May 12). The codebase contains comprehensive options infrastructure (covered calls, iron condors, delta-neutral, barrier options) all dated January 2026 as "PRODUCTION READY." Critical safety finding: the naked-call prevention guardrail is documented as missing (`covered-calls-architecture-spec.md` Gap 2), creating potential uncontrolled naked-call exposure on a live account. The May 14 checkpoint itself (query-only) is not blocked by this, but post-checkpoint architecture decisions require understanding what is currently running.
-**What I need**: SSH access to Jetson (via Tailscale). Investigate: (1) Locate and print the options YAML config, (2) Query trading.db to characterize the strategy (SELECT date(timestamp), COUNT(*), SUM(realized_pnl) FROM trades WHERE mode='PAPER' GROUP BY date(timestamp)), (3) Check Alpaca positions API for open positions, margin usage, and naked-call exposure, (4) Document findings in a new file: `JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md`. Decision: stop, continue, or integrate into post-Gate-1 architecture plan. Critical: this must be resolved before selecting Architecture B or C as the primary production system.
-**Verify with**: `ssh [jetson-address] 'find /home -name "*options*.yaml" 2>/dev/null | head -1'` (or equivalent grep search) — should output the config file path and contents
-**Resolution**: [leave blank]
+---MOVED TO RESOLVED ARCHIVE---
 
 ---
 
@@ -46,6 +41,26 @@ When the block is resolved (Resolution written OR Verify command passes):
 ---
 
 ## Resolved Archive
+
+### stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required)
+**Date blocked**: 2026-05-13
+**Date resolved**: 2026-05-13 (Session 993, 15:45 UTC)
+**Context**: Session 991 discovered `options_live_session` process running on Jetson since at least January 2026. The codebase contains comprehensive options infrastructure (covered calls, iron condors, delta-neutral, barrier options) all dated January 2026 as "PRODUCTION READY." Critical safety finding documented: the naked-call prevention guardrail is missing (covered-calls-architecture-spec.md Gap 4), creating potential uncontrolled naked-call exposure on live account.
+
+**Investigation completed:**
+1. **Database query**: `/opt/stockbot/database/trading.db` contains 98 total fills across Jan 11-12, Mar 24-26, May 12-13. All in PAPER mode. May 12-13: 14 fills with -$237 realized loss.
+2. **Infrastructure verified**: All options components exist and marked "PRODUCTION READY": OptionsLiveSession, OptionsExecutor, OptionsPositionTracker, GreeksManager, OptionsProvider, OptionsBacktestEngine, etc.
+3. **Architecture gaps identified**: Five integration gaps documented in `covered-calls-architecture-spec.md`:
+   - Gap 1: Database persistence (option_positions table missing)
+   - Gap 2: OptionsLiveSession mode (needs equity-position-driven overlay, currently signal-driven only)
+   - Gap 3: StrategyCoordinator options extension (portfolio Greeks not aggregated)
+   - Gap 4: **CRITICAL — Naked-call prevention guardrail missing** (no check to prevent equity SELL when call obligations remain)
+   - Gap 5: End-of-day options monitoring hooks
+4. **No active process**: options_live_session not currently running on Jetson as of 2026-05-13 15:45 UTC
+
+**Resolution**: INVESTIGATED — Comprehensive findings documented in `JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md`. Key decision required: Should options trading be activated as part of Gate 2? If yes, Gap 4 (naked-call prevention) is CRITICAL blocker and must be implemented before any options activation. If no, recommend Decision A (stop options process) or Decision B (quarantine until ready). May 14 Gate 1 checkpoint is unaffected (equity trading only). Post-checkpoint (May 14–30) is decision window for Gate 2 architecture (Scenario A: equity-only, Scenario B: covered-call overlay with Gap 4, or Scenario C: multi-strategy ensemble).
+
+---
 
 ### mom-projects — Discord user ID not set; mom's messages not being routed
 **Date blocked**: 2026-05-13
