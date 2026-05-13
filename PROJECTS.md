@@ -69,8 +69,31 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: Session 967: 41+ domains production-ready, Phase 1+2 COMPLETE, **all Phase 2 cross-references integrated** (Session 967). Three Phase 2 domains added (Domains 48-50, Sessions 964-967): Domain 48 (Surveillance Capitalism & Electoral Manipulation, June 12 FISA deadline), Domain 49 (Callais VRA Redistricting Emergency, five states in special sessions May 2026), Domain 50 (Healthcare-Democracy Nexus, June 1 HHS rule deadline). Cross-reference integration complete (Domains 1, 31, 33 updated with Callais/NVRA sections; litigation tracker complete). **Exploration Queue Item 33 COMPLETE**. All distribution materials fully staged and production-ready. **Awaiting user decision**: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — distribution window narrowing. Domain 48 June 5 critical deadline (6-week window for Senate Intelligence/Judiciary). All 41+ domains ready for Phase 1 launch upon user path decision.
+**Current focus**: Session 981: 55+ domains production-ready, Phase 1+2 COMPLETE, **all Phase 2 cross-references integrated** (Session 967, updated Session 981). Phase 2 domain expansion: Domains 48-50 (Sessions 964-967), Domains 51, 54, 55 (Session 981 — Campaign Finance, Criminal Justice Civic Exclusion, LGBTQ+ Rights). All three new domains 44-46 citations, cross-referenced to existing framework. All distribution materials fully staged and production-ready. **Awaiting user decision**: Path A (immediate distribution) / Path A+37 Hybrid (RECOMMENDED) / Path B (optional Phase 2 expansion). Domain 42 DEA hearing deadline May 28 — distribution window narrowing. Domain 51 August 2026 advocacy window (November ballot integration). All 55+ domains ready for Phase 1 launch upon user path decision.
 
+**Session 981 Deliverables (May 13, 2026)**:
+- ✅ **Domain 51: Campaign Finance, Dark Money, Corporate Capture** (334 lines, 45 citations)
+  - Core argument: Citizens United created structural dark-money architecture; FEC enforcement collapse May 2026 enables record $1.9B spending
+  - Meta-analysis domain explaining how corporate capture operates across all sector-specific regulations (crypto, pharma, fossil fuels, etc.)
+  - Unique contribution: Synthesizes Citizens United linkage to Domain 38 (crypto PAC), Domain 42 (pharma dark money), Domain 33 (ballot initiative suppression funding)
+  - Distribution priority: Campaign Legal Center, Common Cause, OpenSecrets
+  - Advocacy window: August 2026 for integration into November ballot measure campaigns
+
+- ✅ **Domain 54: Criminal Justice, Civic Exclusion Architecture, and Democratic Participation Crisis** (283 lines, 46 citations)
+  - Core argument: Five-dimension civic exclusion (felony disenfranchisement, jury exclusion, employment bars, LFO poll tax, housing instability) removes 4M Americans from civic participation
+  - Highest cross-domain leverage: connects to Domains 1, 22, 29, 39, 42, 44, 47, 52 simultaneously
+  - Key data: 4M currently disenfranchised (1 in 22 Black Americans); 20M+ excluded from jury service; Virginia January 2026 court ruling on readmission act
+  - Distribution priority: Movement for Black Lives, Sentencing Project, Prison Policy Initiative, Brennan Center
+  - Advocacy window: Virginia November 2026 ballot measure, Maryland/Alabama 2026 legislative sessions
+
+- ✅ **Domain 55: LGBTQ+ Rights Under Systematic Legal Attack — The Democratic Design Crisis** (305 lines, 44 citations)
+  - Core argument: ADF (Alliance Defending Freedom) legal infrastructure uses same template strategy as anti-marriage-equality (2004-2012) and ballot initiative suppression campaigns
+  - Bridge document: Essential connection to Domains 33 (ballot initiatives), 44 (reproductive rights), 37 (executive interference)
+  - 2026 crisis data: 740 anti-LGBTQ+ bills in 42 states; *Skrmetti* June 2025 lowered constitutional barriers; executive order 14168 halted gender marker changes; 210K trans adults face voting barriers
+  - Distribution priority: Advocates for Trans Equality, Lambda Legal, ACLU LGBTQ+, HRC, GLAAD
+  - Advocacy window: August 2026 for integration into November 2026 ballot campaigns (8 states with 12 measures)
+
+- **Status**: All three domains committed to master, production-ready for immediate distribution integration
 
 **Session 876 Deliverables**:
 - ✅ **Tracker Maintenance (May 1–7, 2026)**: Updated first-amendment-suppression.md (A.9: Bondi memo May 1 journalist protection revocation; A.10: CPJ/whistleblower developments), environmental-rollbacks-tracker.md (Entry 35: Ethylene Oxide; Entry 36: TCE TSCA), police-brutality-consent-decree-tracker.md (Springfield, Cleveland, Aurora updates)
@@ -937,7 +960,11 @@ Topics fair game when no higher-priority task is active. Log findings to the rel
 
 **COMPLETED (Session 833 — 2026-05-06, autonomous exploration queue)**:
 
-- ✅ **stockbot: Multi-Ticker Position Sizing & Risk Aggregation Framework** (COMPLETE) — `framework-multi-ticker-position-sizing.md` (2,500 words) delivered. Key findings: (1) Portfolio normalisation method exists but is not wired to live trading path — all 11 sessions size independently, risking >100% equity commitment (2) Sector concentration has no enforcement despite config declarations — 5 tech positions can silently aggregate to 25% of equity (3) No portfolio-level drawdown tracking — only per-session peak tracking exists. Recommendation: Tiered risk framework (Layer 1: portfolio-normalised Kelly, Layer 2: sector caps, Layer 3: per-ticker ceilings, Layer 4: portfolio circuit breaker). Pre-Gate-1 action (priority): daily portfolio snapshot to Discord (monitoring-only, no trade changes). Post-Gate-1 action: wire enforcement layers 1–4. Business value: Prevents concentration risk blow-ups and enables safe scaling to 20+ tickers.
+- ✅ **stockbot: Multi-Ticker Position Sizing & Risk Aggregation Framework** (COMPLETE, expanded Session 981) — Session 833: `framework-multi-ticker-position-sizing.md` (2,500 words). Session 981 (May 13): Comprehensive framework delivered with three production-ready deliverables:
+  - `MULTI_TICKER_POSITION_SIZING_FRAMEWORK.md` (749 lines): 67-ticker portfolio analysis, correlation-based sizing formula, four-layer sizing pipeline, account-tier tables, Gate 2 validation criteria
+  - `risk_aggregator.py` (1,113 lines design outline): Complete RiskAggregator class with public API (is_buy_allowed, compute_cycle_allocations, get_concentration_scalar), sector cap enforcement, correlation circuit breaker
+  - `POSITION_SIZING_BACKTESTING_PLAN.md` (423 lines): Five-variant backtest, five stress periods, 18-26 hour Phase 2 implementation timeline
+  - **Key findings** (Session 833): (1) Portfolio normalisation exists but not wired to live path — independent sizing risks >100% equity (2) Sector caps declared but unenforced — 5 tech positions can aggregate to 25% equity (3) No portfolio-level drawdown tracking. Session 981 expansion: Detailed architecture addresses all three gaps with correlation-based scalars, sector hard caps, and circuit breaker logic. Current $1,642/session allocation yields 5%-capped positions at $82–$150; framework normalizes against portfolio equity. Business value: Prevents concentration blow-ups, enables safe 67-ticker scaling, ready for Gate 2+ (Sharpe ≥1.0, MDD ≤20%, PF ≥1.5).
 
 - ✅ **seedwarden: Phase 2 Post-Launch Analytics & Cohort Segmentation Strategy** (COMPLETE) — `phase-2-analytics-strategy.md` (3,100 words) delivered. Covers: (1) Four data sources integrated (Etsy API, GA4, Kit, manual LTV tracker) with specific metrics tables and UTM conventions for Day 1 consistency (2) Four cohorts (Forager, Prepper, Homesteader, Gift Buyer) with observable signal indicators and zone-to-cohort correlation mapping (3) Three dashboard templates (daily: 10 min status check, weekly: 30 min cohort+product analysis, monthly: 2hr strategic review) (4) Decision triggers with specific corrective action sequences (5) Implementation roadmap: start in Google Sheets through Phase 2, upgrade to Looker Studio at $300/month trigger (6) Baseline expectations grounded in actual Phase 1 data (47 orders, $1,341 gross, 2.24% conversion). Business value: Data-driven Phase 2 decisions and acquisition scaling enabled from Day 1 post-launch (May 30).
 
