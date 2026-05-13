@@ -1,5 +1,72 @@
 # Check-in
 
+## Session 963 — May 13, 2026 02:15–02:35 UTC (Exploration Queue + Career-training Gap Modules)
+
+**Status**: ✅ SESSION COMPLETE — Exploration Queue items verified; 5 career-training modules delivered; 24,987 words of new content
+
+### Work Completed
+
+**✅ Exploration Queue Items 28–30 Status Verification**
+- **Item 28** (Resistance-Research Phase 1 Execution Blueprint): ✅ Complete (Session 961)
+- **Item 29** (Cybersecurity Phase 1 Execution Calendar): ✅ Complete (prior session, 8,500 words, production-ready)
+- **Item 30** (Seedwarden Bundle E Writing Acceleration): ✅ JUST COMPLETED
+  - Deliverable: `BUNDLE_E_WRITING_ACCELERATION.md` — 7-part sprint guide
+  - Content: Sprint plan with 112-min/guide velocity, photo verification (all 5 species zero-photo-dependency confirmed), QC checklist, platform setup, launch day coordination, monitoring dashboard
+  - Impact: Enables immediate guide writing May 13-14 if user approves Bundle E May 19 launch
+
+**✅ career-training — 5 Gap Modules COMPLETE (24,987 words)**
+- **Module 29** (Dispute Resolution, Claims, Schedule Delay): 5,112 words
+  - Core mental model: Claims are a parallel admin track from Day 1, not crisis response
+  - Sections: Daily log fields for claim evidence, notice-or-lose rule, Eichleay extended overhead, CPM delay analysis (Time Impact vs Windows), constructive acceleration, concurrent delay doctrine, differing site conditions, AAA arbitration step-by-step, BATNA negotiation framework
+  
+- **Module 30** (Subcontractor Management & Coordination): 5,566 words
+  - Systematic approach: pre-qualification → flow-down → lien waiver cycle → performance management → defaults
+  - Includes: 3-tier vetting, California B&PC pay-when-paid rules, four-form lien waiver cycle with per-sub tracking log, monthly performance scorecard, default notice + surety notification timing
+  
+- **Module 31** (Prevailing Wage & Federal Labor Compliance): 4,066 words
+  - Dual-track coverage: Davis-Bacon ($2,000 threshold, ~70 Related Acts) + California PW Act (no threshold, DIR registration, eCPR submission)
+  - Includes: LA County journeyman calculation (~$104-110/hr fully burdened), California penalty schedule ($200/day/worker), three-stage compliance checklist (pre-bid, pre-mobilization, weekly)
+  
+- **Module 32** (Change Order Management & Value Engineering): 4,660 words
+  - Pricing anatomy: 9-cost components (including bond premium + schedule impact, commonly omitted)
+  - Extended GC calculation example ($18K for 3-week extension), owner objection response scripts, VE four-step methodology, trade-off analysis matrix, complete sample CO form
+  
+- **Module 33** (Quality Assurance & Quality Control): 5,583 words
+  - 3-layer QC model: contractor self-inspection, owner/architect observation, AHJ/third-party
+  - Trade-specific checklists: framing (shear wall nailing, fire blocking, hurricane ties), electrical (AFCI/GFCI, NEC box fill), plumbing (DWV slope, P-trap, CPC S-trap prohibition), concrete (slump test, cylinder sampling)
+  - California SB 800 warranty framework (1/4/10-year tiers), Notice & Opportunity to Repair pre-litigation process, 12-year document retention per CCP §337.15
+
+**Impact**:
+- Career-training curriculum now **complete at 33 modules** (original 28 + 5 gap modules)
+- All identified curriculum gaps filled; ready for next phase (practice scenarios & case studies)
+- Modules production-ready with California-specific content, practical examples, actionable checklists
+
+### Critical Path Status
+
+| Milestone | Timeline | Status |
+|-----------|----------|--------|
+| **May 14 20:00 UTC** | T-22 hours | Stockbot checkpoint execution — verified ready ✅ |
+| **May 19** | T-6 days | Seedwarden Bundle E potential launch — acceleration guide complete; writing can start May 13-14 if approved ✅ |
+| **May 28** | T-15 days | Resistance-research Domain 42 DEA deadline — Phase 1 execution blueprint ready for immediate deployment ✅ |
+| **May 30** | T-17 days | Seedwarden Phase 2 launch — all infrastructure ready ✅ |
+
+### Next Steps
+1. **Seedwarden Bundle E** — If user approves May 19 launch, guide writing begins immediately using BUNDLE_E_WRITING_ACCELERATION.md (15 hours estimated, May 13-14)
+2. **Career-training** — Next phase is practice scenarios: 4-5 realistic case studies per module with worked solutions (estimated 30-40 hours; can begin after modules approved by user)
+3. **Projects awaiting user action**:
+   - mfg-farm: Test print execution (awaiting user)
+   - resistance-research: Path decision (A / A+37 / B) for May 14 execution
+   - seedwarden: Track A blockers (tag corrections, Etsy verification); Track B account setup gates
+   - cybersecurity-hardening: Phase 1 approval for June 1 launch
+
+### Session Metrics
+- **Effort**: ~20 minutes orchestration work (subagent spawning + verification)
+- **Autonomous work**: Seedwarden + Career-training agents executed in parallel
+- **Total content delivered**: 25,000+ words (6 new files)
+- **Commits**: 5e692518 (orchestration state), 88b8e07d (modules), 6d6af0cb (Bundle E)
+
+---
+
 ## Session 962 — May 13, 2026 06:46–08:30 UTC (Checkpoint Readiness + Phase 2 Finalization + Module Index)
 
 **Status**: ✅ SESSION COMPLETE — Stockbot May 14 checkpoint verified ready; Seedwarden Phase 2 finalized; career-training Module Index delivered
