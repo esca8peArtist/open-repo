@@ -766,6 +766,18 @@
 
 ---
 
+### mom-projects
+**Goal**: Personal projects and tasks submitted by mom via Discord. Scope evolves based on what she sends in.
+**Priority**: Medium
+**Status**: Active
+**Visibility**: Private — local only, no GitHub push
+**Working dir**: `projects/mom-projects/`
+**Current focus**: —
+**Blocked on**: —
+**Notes**: All tasks come in via Discord. Mom has message-only access (no bot commands). Every message she sends is tagged [mom-projects] in INBOX.md and actioned here.
+
+---
+
 ### resume
 **Goal**: Maintain and improve Anya's professional resume and any associated portfolio materials.
 **Priority**: Low
