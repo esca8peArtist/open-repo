@@ -1,5 +1,70 @@
 # Check-in
 
+## Session 1005 — May 13, 2026, 21:41–23:15 UTC (Exploration Queue: Domain 42 + mfg-farm Portfolio)
+
+**Status**: ✅ **TWO EXPLORATION QUEUE ITEMS COMPLETE — READY FOR POST-TEST-PRINT EXECUTION**
+
+### Accomplished This Session
+
+1. **resistance-research: Phase 1 Institutional Outreach Prioritization (May 28 Domain 42 DEA Deadline)** ✅
+   - **Deliverable**: `DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` (1,900 words, production-ready)
+   - **Key contents**: 
+     - Contact priority matrix (Tier 1 & 2, 22 organizations, 5-point scoring)
+     - Email sequencing timeline (Day 0 May 15 Tier 1, Day 3 Tier 2, Day 7 reminder, May 21 hard stop)
+     - Success metrics: minimum 2 orgs requesting materials, strong 4, stretch 7
+     - Contingency planning for Phase 1 launch delays (date-shift rules, May 21 cutoff holds)
+   - **Value**: DEA-1362 May 28 participation deadline now executable independent of Phase 1 path decision
+   - **Status**: Ready for May 14–21 execution (user sends emails per timeline)
+
+2. **mfg-farm: Batch 3-5 Product Selection & Demand Research** ✅
+   - **Deliverable**: `BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md` (2,800 words, production-ready)
+   - **Key contents**:
+     - Ranked candidates: Headphone Hooks (76% margin), Magnetic Labels (72–76%), Garden Markers (68–72%), Pegboard Hooks (71%), Monitor Riser (68%)
+     - Etsy market data (listing counts, pricing, competition intensity, seasonality)
+     - CadQuery design estimates: 2–6 hours per product
+     - 12-month revenue projections: single-printer baseline $44.2K net, dual-printer upside $63.9K (44% premium)
+     - Launch sequence with gates: Batch 2 May 22, **Batch 4 May 20 (SEASONAL URGENT)**, Batch 3 June 1, Batch 5 July 15, Batch 6 August+
+     - Supply-chain critical gates: ASA filament May 16, N52 magnets May 25, 2nd printer decision end of June
+     - Go/no-go decision tree (payback window 5–6 weeks if $1,200+/month)
+   - **Value**: Post-test-print, user has actionable 12-month execution sequence with clear decision gates
+   - **Status**: Ready for execution upon ModRun test print completion (expected May 14)
+
+3. **Exploration Queue Status** ✅
+   - **Completed**: Domain 42 institutional outreach (was pending, now ready for execution)
+   - **Completed**: mfg-farm Batch 3-5 portfolio (new deliverable)
+   - **Active items remaining**: seedwarden Phase 2 social media (2–3 hrs), stockbot path model (future work)
+   - **PROJECTS.md updated** with both completion summaries
+
+### Files Created/Updated
+
+- `projects/resistance-research/execution/DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` — NEW (1,900 words)
+- `projects/mfg-farm/BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md` — NEW (2,800 words)
+- `PROJECTS.md` — Updated with completion status (2 exploration items)
+- `WORKLOG.md` — Added session summary
+
+### Orientation & Key Findings
+
+- **All major projects blocked on user actions**: checkpoint execution (May 14 20:00 UTC), Phase 1 path decision, test print, approvals
+- **Exploration queue strategy**: Worked on highest-priority unblocked items (Domain 42 May 28 deadline + mfg-farm post-test-print readiness)
+- **Time-sensitive item identified**: Batch 4 (Garden Markers) seasonal window is NOW (May 13–20); launch May 20 before June peak demand hits
+- **Supply-chain coordination required**: ASA filament and N52 magnets need ordering today/tomorrow to meet launch timelines
+
+### Awaiting User Input
+
+1. **stockbot**: May 14 20:00 UTC checkpoint execution (system verified ready, runbook staged)
+2. **resistance-research**: Path A / A+37 / B distribution decision (phase 1 blueprints ready, Domain 42 standalone path ready)
+3. **cybersecurity-hardening**: Phase 1 Tier 1 launch approval + send date
+4. **mfg-farm**: 
+   - ModRun test print execution (expected May 14)
+   - Post-test-print: order ASA filament (May 16) + launch Batches 2 & 4 (May 20–22)
+   - End of June: 2nd printer deployment decision
+
+### Next Checkpoint
+
+**May 14 20:00 UTC**: Stockbot checkpoint (T-21 hours). All infrastructure verified ready. User can run MAY_14_CHECKPOINT_EXECUTION_RUNBOOK.md.
+
+---
+
 ## Session 1004 — May 13, 2026, 22:30–23:05 UTC (Checkpoint Pre-Verification + Items 37-38 Verification)
 
 **Status**: ✅ **CHECKPOINT SYSTEM VERIFIED READY (CRITICAL BUG FIXED) + POST-USER-UNBLOCK INFRASTRUCTURE VERIFIED**

@@ -1,5 +1,64 @@
 # Work Log
 
+## Session 1005 — May 13, 2026, 21:41–23:00 UTC (Exploration Queue Execution: Domain 42 + mfg-farm)
+
+**Status**: ✅ **TWO EXPLORATION QUEUE ITEMS COMPLETE**
+
+### Accomplished This Session
+
+1. **resistance-research: Phase 1 Institutional Outreach Prioritization (May 28 Domain 42 Deadline)** ✅
+   - **Deliverable**: `DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` (1,900 words, production-ready)
+   - **Scope**: Complete institutional outreach operationalization for DEA-1362 May 28 participation notice deadline
+   - **Contents**: 
+     - Tier 1 & 2 contact priority matrix (22 organizations, 5-point scoring system)
+     - Email sequencing timeline (Day 0 = Priority 1, Day 3 = Priority 2, Day 7 = reminder)
+     - Success metrics (minimum 2, strong 4, stretch 7 organizations filing)
+     - Contingency planning for delayed Phase 1 launch (shifts all dates by -1 or -7 days)
+   - **Business value**: May 28 DEA hearing deadline now operationalized independent of Phase 1 path decision; enables Phase 1 launch → immediate Domain 42 outreach without lag
+   - **Status**: Ready for execution May 14–21 (user action to send emails per timeline)
+
+2. **mfg-farm: Batch 3-5 Product Selection & Demand Research** ✅
+   - **Deliverable**: `BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md` (2,800 words, production-ready)
+   - **Scope**: Post-test-print product portfolio sequencing with demand validation, design timelines, revenue modeling
+   - **Contents**:
+     - Ranked candidates by margin + demand signal + design complexity
+     - Etsy market snapshots (listing counts, pricing, competition, seasonality)
+     - CadQuery design time estimates (2–6 hours per product)
+     - 12-month revenue projections: conservative $44.2K, aggressive $63.9K net (dual-printer scenario)
+     - Launch sequencing with dependency gates (Batch 2 May 22, Batch 4 May 20 seasonal, Batch 3 June 1, Batch 5 July 15, Batch 6 August+)
+     - Supply-chain critical gates (ASA filament May 16, N52 magnets May 25, 2nd printer decision end of June)
+     - Go/no-go decision tree for printer #2 deployment (payback 5–6 weeks)
+     - Execution checklist + contingency paths
+   - **Business value**: Post-test-print, user has actionable day-by-day execution sequence for 12-month scaling roadmap with clear decision gates
+   - **Status**: Ready for execution upon ModRun test print completion (expected May 14)
+
+3. **Exploration Queue Updates** ✅
+   - **Marked complete**: resistance-research Phase 1 Institutional Outreach Prioritization (was pending, now complete)
+   - **Marked complete**: mfg-farm Batch 3-5 Product Selection & Demand Research (new item completed)
+   - **PROJECTS.md updated** with completion status and delivery summaries
+
+### Files Created/Modified
+
+- `projects/resistance-research/execution/DOMAIN_42_OUTREACH_URGENCY_STRATEGY.md` — NEW (1,900 words)
+- `projects/mfg-farm/BATCH_3_5_PRODUCT_SELECTION_DEMAND_RESEARCH.md` — NEW (2,800 words)
+- `PROJECTS.md` — Updated exploration queue (2 items marked complete)
+
+### Strategic Impact
+
+- **May 28 deadline**: Domain 42 DEA hearing participation now operationalized; independent execution path from Phase 1 launch
+- **Post-test-print readiness**: mfg-farm has clear prioritized sequencing (Batches 2 & 4 immediate, 3 next, 5-6 gated by printer capacity)
+- **Revenue modeling**: 12-month baseline shows $44K–$64K net margin achievable with clear decision gates (single vs. dual printer at end of June)
+- **Seasonal window**: Garden Markers (Batch 4) launch moved to May 20 (captured 4-week peak-season window vs. June slip)
+
+### Next Steps
+
+- **Stockbot**: May 14 20:00 UTC checkpoint execution (scripted, verified ready)
+- **mfg-farm**: ModRun test print completion (expected May 14), then launch Batches 2 & 4 immediately (May 20–22)
+- **resistance-research**: Phase 1 launch decision (Path A / A+37 / B) → execute Domain 42 outreach May 14–21 alongside Phase 1 distribution
+- **Exploration Queue**: 2 completed; remaining active items include seedwarden Phase 2 social media (2–3 hrs), stockbot path model design (future work)
+
+---
+
 ## Session 1004 — May 13, 2026, 22:30–23:00+ UTC (Parallel Pre-Checkpoint Verification + Items 37-38 Staging)
 
 **Status**: ✅ **CHECKPOINT SYSTEM READY (CRITICAL BUG FIXED) + ITEMS 37-38 STAGING VERIFIED**
