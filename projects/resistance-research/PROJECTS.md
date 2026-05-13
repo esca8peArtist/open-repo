@@ -5,6 +5,14 @@
 
 ---
 
+## Current Focus
+
+*Updated: Session 1001, May 13, 2026*
+
+Phase 1+2 COMPLETE. 58+ domains production-ready. Next concrete work: user distribution path decision still pending (May 28 DEA hearing is the critical forcing function — Wave 1 outreach should have begun May 8; if not sent, send immediately). Domains 41 & 43 source staging complete (`DOMAINS_41_43_SOURCE_STAGING.md`); June 1 is the target research production start for depth extension. Senate Democrats forced CFPB rollback floor votes May 13 — Domain 41 advocacy window is live now and should be used to time Domain 41 distribution to Tier 1 financial-justice contacts.
+
+---
+
 ## Overall Project Status
 
 **Phase 2 Domains 38-40 Expansion COMPLETE** (May 13, 2026): Three optional expansion domains produced and ready for distribution. See `domains/INDEX.md` for full index and distribution pairings. User distribution path decision (Path A: immediate / Path A+37: hybrid / Path B: more expansion) remains pending — these three domains are available for Path B or post-launch depth work.
