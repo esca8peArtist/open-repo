@@ -1,0 +1,33 @@
+Month,Batch,Product,Units/Week,Revenue/Unit_USD,Gross_Margin_Pct,Weekly_Gross_USD,Monthly_Gross_USD,Cumulative_Gross_USD,Notes
+1,1,ModRun Cable Clips (blended AOV),10,24.99,69.9%,249.90,999.60,999.60,Ramp phase — first 2 weeks low (5-8/wk); settles to 15-20/wk by end of month. Blended AOV assumes 70% bundle / 30% rail.
+1,2,Headphone Hooks,5,12.99,75.9%,64.95,129.90,1129.50,Hooks launch Week 4 of Month 1. Only 2 weeks of hook revenue counted in Month 1.
+2,1,ModRun Cable Clips (blended AOV),20,24.99,69.9%,499.80,1999.20,3128.70,Steady-state volume reached. Bundle listing live. Reviews building.
+2,2,Headphone Hooks,15,12.99,75.9%,194.85,779.40,3908.10,Hook listing live full month. Ads running $1/day ($28/month).
+2,3,Magnetic Bin Labels (10-pack),5,24.99,73.5%,124.95,499.80,4407.90,Batch 3-A launches Week 6. N52 magnet calibration complete Week 5. 10-pack as primary listing format.
+3,1,ModRun Cable Clips (blended AOV),22,24.99,69.9%,549.78,2199.12,6607.02,Growth continues. A/B price test at $14.99 single if 25+ reviews.
+3,2,Headphone Hooks,20,12.99,75.9%,259.80,1039.20,7646.22,20/week steady state. Price test to $14.99 at 50 reviews.
+3,3,Magnetic Bin Labels (10-pack),10,24.99,73.5%,249.90,999.60,8645.82,Volume growing. Custom-text orders drive repeat purchases.
+3,4,Monitor Riser Legs (4-leg set 12cm),5,31.99,68.0%,159.95,639.80,9285.62,Batch 3-B launches Week 10. Cross-sell from ModRun buyers.
+4,1,ModRun Cable Clips (blended AOV),25,24.99,69.9%,624.75,2499.00,11784.62,Near single-printer ModRun ceiling at this volume combined with other SKUs.
+4,2,Headphone Hooks,20,14.99,77.9%,299.80,1199.20,12983.82,Price test to $14.99 executed at 50 reviews. New margin basis.
+4,3,Magnetic Bin Labels (10-pack),15,24.99,73.5%,374.85,1499.40,14483.22,Velocity stable. Reorder N52 magnets: 500-pack threshold.
+4,4,Monitor Riser Legs (4-leg set 12cm),10,31.99,68.0%,319.90,1279.60,15762.82,Ramp to 10/week. Photography update with ModRun cross-sell shot.
+4,5,Pegboard Hooks (10-hook set),5,19.99,70.5%,99.95,399.80,16162.62,Batch 4 launches Month 4 Week 1. Peg tolerance calibration complete Month 3.
+5,1,ModRun Cable Clips (blended AOV),28,24.99,69.9%,699.72,2798.88,18961.50,Approaching 2nd printer trigger zone. Printer hours: ~15/week.
+5,2,Headphone Hooks,20,14.99,77.9%,299.80,1199.20,20160.70,Stable. HH-DUAL variant launched ($19.99) as Month 5 expansion.
+5,3,Magnetic Bin Labels (10-pack),18,24.99,73.5%,449.82,1799.28,21959.98,Star Seller eligibility window opening (90 days of consistent reviews).
+5,4,Monitor Riser Legs (4-leg set 12cm),12,31.99,68.0%,383.88,1535.52,23495.50,Ecosystem bundle (ModRun + riser) live at $54.99.
+5,5,Pegboard Hooks (10-hook set),10,19.99,70.5%,199.90,799.60,24295.10,Scale to 10/week. 20-hook starter set at $34.99 listed.
+5,6,Plant Markers (ASA 10-pack),5,16.99,71.0%,84.95,339.80,24634.90,Batch 4-B. ASA profile calibrated Month 4. Spring window demand.
+6,1,ModRun Cable Clips (blended AOV),30,24.99,69.9%,749.70,2998.80,27633.70,2nd printer evaluation trigger if combined hours >28/week for 2 weeks.
+6,2,Headphone Hooks,22,14.99,77.9%,329.78,1319.12,28952.82,Growing steadily. HH-DUAL adds ~5 units/week incremental.
+6,3,Magnetic Bin Labels (10-pack),20,24.99,73.5%,499.80,1999.20,30952.02,Target 20-pack listing at $44.99 launched. Higher AOV per order.
+6,4,Monitor Riser Legs (4-leg set 12cm),14,31.99,68.0%,447.86,1791.44,32743.46,Stable demand. B2B inquiry expected (office setup buyers).
+6,5,Pegboard Hooks (10-hook set),15,19.99,70.5%,299.85,1199.40,33942.86,Growing. 20-pack at $34.99 drives AOV.
+6,6,Plant Markers (ASA 10-pack),8,16.99,71.0%,135.92,543.68,34486.54,Spring peak window. ASA material premium justified for outdoor durability.
+7,ALL,Full portfolio — 2nd printer acquired,130,23.50,71.5%,3055.00,12220.00,46706.54,2nd printer online. Color-per-printer: P1=black P2=white. Printago queue management. Blended AOV across all products.
+8,ALL,Full portfolio — 2 printers,150,23.50,71.5%,3525.00,14100.00,60806.54,Star Seller badge expected if review velocity maintained. AMS 2 Pro evaluation at 25+ color-coded orders/month.
+9,ALL,Full portfolio — 2 printers + AMS multi-color,170,24.50,72.0%,4165.00,16660.00,77466.54,AMS 2 Pro acquired ($286). Multi-color clip bundles live. Color-coded 12-pack at $54.99.
+10,ALL,Full portfolio — 2 printers,185,24.50,72.0%,4532.50,18130.00,95596.54,Laser engraving outsource test ($100-150) for label personalization. SimplyPrint Pro for failure detection.
+11,ALL,Full portfolio — 2 printers + laser eval,200,25.00,72.5%,5000.00,20000.00,115596.54,Laser equipment decision gate: order xTool S1 ($1899) if outsource test validates demand.
+12,ALL,Full portfolio — 2-3 printers,220,25.00,72.5%,5500.00,22000.00,137596.54,3rd printer if combined utilization >80% for 2 weeks. Year 1 gross target: $137K at this trajectory.
