@@ -2,7 +2,7 @@
 
 ## Session 980 — May 13, 2026, 09:13–10:45 UTC Autonomous Orchestrator (Parallel: Stockbot Baseline + Resistance-research Domains 38-40)
 
-**Status**: 🟢 CRITICAL INFRASTRUCTURE VERIFIED — All baseline checks pass before May 14 20:00 UTC checkpoint. Two anomalies identified (Ethernet failover, WiFi noise), mitigation path clear. Resistance-research Phase 2 expansion complete (Domains 38-40 committed). No new blockers.
+**Status**: 🟢 PARALLEL EXECUTION COMPLETE — 4 major exploration queue items completed in single session: (1) Stockbot May 13 baseline checks ✅, (2) Resistance-research Domains 38-40 ✅, (3) Stockbot multi-ticker position sizing framework ✅, (4) Cybersecurity-hardening Phase 2 distribution sequencing ✅. Infrastructure verified, all major frameworks designed, no new blockers.
 
 ### Work Completed This Session
 
@@ -34,6 +34,30 @@
      - Baseline: OMB Vought claims ICA unconstitutional; DOGE used 5 impoundment mechanisms without ICA special messages; H.R.1180 would repeal ICA
      - Tactics: (1) GAO enforcement coalition; (2) Model anti-impoundment provision for Appropriations Committee; (3) "Stolen Appropriations" district-level reports (10 states)
    - **Status**: All three committed to `projects/resistance-research/domains/`. Production-ready. Cross-reference integration (Domains 1, 6, 26, 34 updates) flagged for user authorization.
+
+**3. Stockbot Multi-Ticker Position Sizing & Risk Aggregation Framework** ✅
+   - **Scope**: Gate 2 planning — design architecture for multi-ticker trading with position sizing and risk controls (exploration queue item, 3-4 hrs)
+   - **Deliverable**: `projects/stockbot/docs/MULTI_TICKER_POSITION_SIZING_FRAMEWORK.md` (committed at `4705919`)
+   - **Framework design**:
+     - **Position sizing formula**: Volatility-scaled Quarter-Kelly with 4 scalars (kelly cap 8% NAV, vol scalar, HMM scalar, PDT scalar)
+     - **Risk aggregation**: Gate 2 universe produces 2.7 effective independent bets; sector concentration cap (30% NAV per sector) prevents concentration risk; VaR ~$1,091 on 10-day 95% horizon
+     - **Rebalancing**: Buy-side only; 3% weight drift trigger
+     - **Allocation phase-in**: inverse-vol (Days 1-60) → risk parity (Days 60-90) → Kelly-blended (Day 90+)
+   - **Critical insight**: $25K minimum per account instance needed to avoid PDT constraint
+   - **Implementation**: 6 new files required, 6 existing files need modification
+   - **Status**: Production-ready for Gate 2 execution (pending Gate 1 pass on May 14)
+
+**4. Cybersecurity-hardening Phase 2 Distribution Sequencing** ✅
+   - **Scope**: Multi-tier, multi-wave outreach architecture to scale from 25 Phase 1 orgs to 100+ Phase 2 orgs (exploration queue item, 3-4 hrs)
+   - **Deliverable**: `projects/cybersecurity-hardening/PHASE_2_DISTRIBUTION_SEQUENCING.md` (657 lines, production-ready)
+   - **Distribution architecture** (June 1 – September 30):
+     - **Wave 1**: Tier 1 direct-service (25-60 orgs, June 1-21)
+     - **Wave 2A**: Pilot cohort validation (FPF, NLG, CLS, June 22-July 15)
+     - **Wave 2B**: Fast Followers (EFF, ACLU, Just Futures, July 15-Aug 1)
+     - **Wave 3/4**: Tier 2C + full Tier 3 rollout (100+ orgs, Aug 1-Sept 30)
+   - **Three decision gates**: Gate 1 (June 7, Week 1 checkpoint) → Gate 2 (June 15, pilot assessment) → Gate 3 (August 15, Tier 3 readiness)
+   - **Success metrics**: 25%+ response rate, 10+ Level 2+ adoption signals, 5+ media citations, 100+ organizations contacted
+   - **Status**: Production-ready for Phase 1 launch (pending user approval of Phase 1 Day 1 send date)
 
 ### Project Status After Session 980
 

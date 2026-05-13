@@ -91,6 +91,76 @@
 
 ---
 
+### ✅ Stockbot Multi-Ticker Position Sizing & Risk Aggregation Framework (Parallel Agent)
+
+**Deliverable**: `projects/stockbot/docs/MULTI_TICKER_POSITION_SIZING_FRAMEWORK.md` (exploration queue item)
+**Status**: Committed at `4705919`
+
+**Framework design**:
+- **Position Sizing Formula**: Volatility-scaled Quarter-Kelly with 4 multiplicative scalars (kelly_fraction, vol_scalar, hmm_scalar, pdt_scalar)
+  - Hard kelly cap at 8% NAV (full Kelly on low-vol stocks like JNJ would blow up to 4x)
+  - Vol scalar (target 15% / realized 20d) provides 1.07x boost for JNJ (14% vol), 0.39x haircut for AMZN (38% vol)
+  - HMM scalar suppresses positions in Bear/high-vol regimes
+  - PDT scalar is critical constraint: binary risk for sub-$25K accounts (drops to 0.0 when 3 weekly round-trips consumed)
+
+- **Risk Aggregation Constraint**: Gate 2 universe (AAPL, AMZN, JPM, JNJ) produces 2.7 effective independent bets (not 4) due to 0.70 tech sector correlation
+  - Sector concentration cap (30% NAV per GICS sector) prevents concentration risk
+  - Parametric VaR at Gate 2 allocation: ~$1,091 on 10-day 95% horizon (well under 8% NAV ceiling)
+
+- **Rebalancing Strategy**: Buy-side only (no PDT budget consumption); 3% weight drift trigger for rebalancing via BUY signals. Sell-side only for hard cap breaches.
+
+- **Allocation Phase-in**: 
+  - Days 1-60: inverse-vol weighting
+  - Days 60-90: risk parity with Ledoit-Wolf shrinkage
+  - Day 90+: Kelly-blended (60% risk parity + 40% Conservative Kelly)
+
+**Critical insight**: For live Phase 1, allocate $25,000 minimum per account instance to avoid PDT constraint entirely rather than relying on pdt_scalar as safety net.
+
+**Implementation checklist**: 6 new files required (PositionSizeLimiter, PortfolioVaRMonitor, CorrelationMonitor, PDTTradeCounter, CrossSessionRegistry, SectorConcentrationGuardrail), 6 existing files need modification, 1 new index on trades table for query performance.
+
+---
+
+### ✅ Cybersecurity-hardening Phase 2 Distribution Sequencing (Parallel Agent)
+
+**Deliverable**: `projects/cybersecurity-hardening/PHASE_2_DISTRIBUTION_SEQUENCING.md` (657 lines, exploration queue item)
+**Status**: Production-ready
+
+**Distribution architecture** (June 1 – September 30, 13 weeks):
+- **Wave 1** (June 1-21, concurrent with Phase 1): Tier 1A/1B/1C direct-service orgs (25-60 total) — immediate Part 0 feedback
+- **Wave 2A** (June 22-July 15): Pilot cohort (FPF, NLG, CLS) validates messaging, generates refinement feedback
+- **Wave 2B** (July 15-Aug 1): Tier 2 Group B Fast Followers (EFF, ACLU, Just Futures, STOP, NILC) — 5-10 organizations
+- **Wave 3/4** (Aug 1-Sept 30): Tier 2 Group C + full Tier 3 rollout (50-100 municipal, academic, media, research)
+
+**Three decision gates** (signal-responsive, not calendar-driven):
+- Gate 1 (June 7): Phase 1 Week 1 checkpoint — click rate and early reply signals determine pilot go/no-go
+- Gate 2 (June 15): Phase 1 Week 2 + Pilot assessment — approval for Wave 2B launch (July 15) or defer to August 1
+- Gate 3 (August 15): Wave 2B metrics + Tier 3 readiness — launch full Tier 3 wave or rebalance
+
+**Messaging strategy**: Wave × Tier × Audience matrix defining tone/emphasis for each segment
+- Tier 1 (Legal Aid, Community): "Part 0 immediately actionable; integrate into client intake"
+- Tier 2A Pilot (FPF, NLG, CLS): "Sector-specific playbook; extends existing practice"
+- Tier 2B (Civil Liberties, Digital Rights): "Litigation and policy documentation; primary-source briefs"
+- Tier 3 (Municipal, Academia, Media): "Cite in policy, research, investigative reporting"
+
+**Adoption signal hierarchy** (real-time feedback loop):
+- Level 1 (Weak): Reply expressing interest
+- Level 2 (Medium): Internal forwarding/colleague distribution
+- Level 3 (Strong): Institutional integration commitment (litigation, policy, training, curriculum)
+- Level 4 (Critical): Downstream amplification (media mention, referral, published citation)
+
+**Contingency framework** (3 fallback escalation paths):
+1. Phase 1 stalls (20-25% probability) → extend Phase 1 to July 1, delay Wave 2B to August 1
+2. Pilot engagement low (10-15% probability) → diagnostic calls with non-respondents, messaging refinement
+3. Sector-specific unresponsiveness (25-30% probability) → A/B testing in Wave 2B, pivot approach in Wave 3
+
+**Success metrics** (by September 30):
+- 25%+ overall response rate (vs Phase 1 target 20%)
+- 10+ Level 2+ adoption signals
+- 5+ media citations or organizational referrals
+- 100+ organizations contacted (vs Phase 1's 25-30)
+
+---
+
 ## Session 979 — Exploration Queue Completion (Items 23 & 32) + New Items Added (31 & 32)
 
 **Date**: 2026-05-13
