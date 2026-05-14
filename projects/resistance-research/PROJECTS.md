@@ -7,9 +7,29 @@
 
 ## Current Focus
 
-*Updated: Session 1001, May 13, 2026*
+*Updated: Session 1010, May 14, 2026*
 
-Phase 1+2 COMPLETE. 58+ domains production-ready. Next concrete work: user distribution path decision still pending (May 28 DEA hearing is the critical forcing function — Wave 1 outreach should have begun May 8; if not sent, send immediately). Domains 41 & 43 source staging complete (`DOMAINS_41_43_SOURCE_STAGING.md`); June 1 is the target research production start for depth extension. Senate Democrats forced CFPB rollback floor votes May 13 — Domain 41 advocacy window is live now and should be used to time Domain 41 distribution to Tier 1 financial-justice contacts.
+**Phase 1 Distribution: Domain 42 Wave 1 — USER SEND ACTION REQUIRED NOW**
+
+Path A + Domain 37 execution is live. All infrastructure confirmed. Gist URL live since May 9. All 5 Wave 1 emails are drafted and Gist URL pre-filled. Contact verification complete (May 13). The only remaining gate is user action:
+
+1. Open `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3
+2. Fill `[Your name]` / `[Your contact information]` (10 total field fills — 2 per email)
+3. Send 5 emails in staggered order (30-45 min apart) before noon ET:
+   - Drug Policy Alliance: press@drugpolicy.org
+   - NORML: norml@norml.org
+   - ACLU Criminal Law Reform: nationaloffice@aclu.org
+   - The Sentencing Project: staff@sentencingproject.org
+   - LEAP: info@leap.cc
+
+**Wave 2** (May 14-15): NAACP LDF, Prison Policy Initiative, Mason Marks (mason.marks@fsu.edu)
+**Wave 3** (May 14-17): State AG offices — CO, CA, MI, WA (current WA AG: Nick Brown)
+**Domain 37 Gist**: Create before May 21-25 Phase B send. Source: `domains/domain-37-federal-executive-interference-2026-midterms.md`
+**Hard stops**: May 20 (mail), May 21 (no new outreach), May 24 (electronic cutoff), May 28 (nprm@dea.gov)
+
+After Wave 1 sends: Update `BATCH_1_CONTACT_LOG.md` Domain 42 section with sent dates. Domain 42 sub-batch status moves to "Phase 1 Wave 1 sent."
+
+Domains 41 & 43 source staging complete (`DOMAINS_41_43_SOURCE_STAGING.md`); June 1 is the target research production start for depth extension. Senate Democrats forced CFPB rollback floor votes May 13 — Domain 41 advocacy window is live and should time Domain 41 distribution to Tier 1 financial-justice contacts post-Domain 42 Wave 1.
 
 ---
 

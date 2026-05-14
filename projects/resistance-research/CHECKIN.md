@@ -1,26 +1,105 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 7, 2026 (Domain 42 DEA Track infrastructure complete — ready for May 8 launch)*
+*Updated: May 14, 2026 (Session 1010 — Domain 42 Wave 1 package confirmed, sequence verified, user send action isolated)*
+
+---
+
+## PHASE 1 LAUNCH — ONE ACTION REQUIRED: SEND 5 EMAILS (May 14, 2026)
+
+**Domain 42 Wave 1: Everything is ready. The only remaining user action:**
+
+1. Open `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3
+2. Fill `[Your name]` and `[Your contact information]` in each of the 5 emails (2 fields per email, 10 total fills — nothing else to change)
+3. Send in this order, 30-45 min staggered, before noon ET today:
+   - Email 1: Drug Policy Alliance — press@drugpolicy.org
+   - Email 2: NORML — norml@norml.org
+   - Email 3: ACLU Criminal Law Reform — nationaloffice@aclu.org (subject: "Attn: Criminal Law Reform Project" already in subject line)
+   - Email 4: The Sentencing Project — staff@sentencingproject.org
+   - Email 5: LEAP — info@leap.cc
+
+**Gist URL is pre-filled**: `https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab` already in all 5 email bodies. No Gist creation needed.
+
+**After sending**: Update `BATCH_1_CONTACT_LOG.md` Domain 42 section — fill "Sent Date" for each org.
+
+**Wave 2 (May 14-15)**: NAACP LDF (naacpldf.org/contact), Prison Policy Initiative (info@prisonpolicy.org), Mason Marks (mason.marks@fsu.edu — NOT yale.edu). Templates D42-B for LDF and PPI, D42-C for Marks. Re-verify PPI and Ohio State Moritz DEPC before send.
+
+**Wave 3 (May 14-17)**: State AG offices — CO, CA, MI, WA. WA AG is now Nick Brown (Ferguson is Governor). Template D42-D.
+
+**Domain 37 Phase B: Create a standalone Gist for Domain 37 before May 21.** May 30 advocacy window is 16 days away — sequencing plan's "within 2 weeks" threshold is now met. Source file: `domains/domain-37-federal-executive-interference-2026-midterms.md`. After creation, fill `[link]` in Template D37-1 from `DOMAIN_37_SEQUENCING_PLAN.md`. Phase B Tier 1 (Brennan Center, Democracy Docket) sends May 21-25.
+
+**Hard stops**:
+- May 20: Mail postmark deadline (DEA Attn: Administrator, 8701 Morrissette Drive, Springfield VA 22152)
+- May 21: Hard stop — no new Domain 42 outreach after this date
+- May 24: Electronic cutoff — 11:59 p.m. ET
+- May 28: Email submission deadline — nprm@dea.gov, Docket No. DEA-1362
+
+---
+
+## MONITORING: Section 702 FISA — Wyden Declassification Deadline (~June 12-15, 2026)
+
+**Flag for check-in the week of June 10, 2026.**
+
+On April 30, 2026, Congress passed a 45-day extension of FISA Section 702. As a condition of the extension, Senator Ron Wyden secured a commitment from Senate Intelligence Committee leadership guaranteeing declassification of a secret FISC opinion within 15 days of the extension's passage. The 45-day extension was signed into law approximately April 30; the 15-day declassification window therefore closes around **June 12-15, 2026**.
+
+The FISC opinion at issue — dated March 17, 2026 — concerns how government agencies use Section 702 data and specifically relates to agency-developed analytical tools that a FISC judge found objectionable. The opinion's contents are relevant to civil liberties documentation and surveillance accountability tracking.
+
+**What to check on June 10**:
+- Has the FISC opinion been publicly released or declassified?
+- If not: is there a refusal or delay by the DNI/DOJ? (Non-compliance would be "concrete proof that the government is hiding information from Congress before a critical vote on whether to continue the program or reform it" — per FISA reform advocates)
+- The 45-day extension itself expires approximately June 14, 2026 — what is the status of long-term Section 702 reauthorization?
+
+If the opinion is released, it belongs in the litigation tracker under a new Category 11 (Surveillance and Civil Liberties) or as a monitoring note in the existing tracker.
+
+**Sources**: [Nextgov/FCW: House passes 45-day FISA extension after senators secure declassification deal](https://www.nextgov.com/policy/2026/04/house-passes-45-day-fisa-extension-after-senators-secure-declassification-deal/413250/); [Common Dreams: Wyden to Force Declassification of Secret FISC Opinion on FISA "Serious Abuses"](https://www.commondreams.org/newswire/wyden-to-force-declassification-of-secret-court-opinion-on-fisa-serious-abuses); [Brennan Center: Section 702 of FISA — 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page)
+
+---
+
+## DOMAIN 42 PATH A: READY TO SEND — MAY 14 MORNING (14 days to deadline)
+
+**Updated May 14, 2026. Phase 1 agent verification complete. Emails are send-ready.**
+
+**Status**: All 5 Wave 1 emails are DRAFTED and READY. The only remaining user action before sending: fill `[Your name]` and `[Your contact information]` in each of the 5 emails (10 total fills). Everything else is done.
+
+**The 5 emails are in**: `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3 (copy-paste ready).
+
+**Gist URL**: `https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab` — confirmed live May 13. **This URL is already pre-filled into all 5 email bodies.** No Gist creation steps needed; the Section 5 walkthrough in the package is now historical reference only.
+
+**Contact verification**: All 5 organizations confirmed current as of May 13 (see `MAY_28_DEADLINE_STATUS.md` Part 2). No changes needed.
+
+**Send order** (stagger 30-45 min, Tuesday-Thursday, before noon ET — lowest friction first):
+1. The Sentencing Project — staff@sentencingproject.org (cites their own data; easiest yes)
+2. NORML — norml@norml.org (longest DEA proceedings history)
+3. Drug Policy Alliance — press@drugpolicy.org (largest network, most likely filer)
+4. LEAP — info@leap.cc (smallest org, most distinctive voice)
+5. ACLU Criminal Law Reform — nationaloffice@aclu.org (largest routing friction via nationaloffice@)
+
+**Tracking**: Logged in `BATCH_1_CONTACT_LOG.md` Domain 42 section. Update "Sent Date" column after each send.
+
+**Remaining deadline sequence**:
+- May 13 afternoon: Send Wave 1 (5 emails) — PATH A TODAY
+- May 14-15: Wave 2 (ACLU LDF, NAACP LDF, Brennan Center — use Template B from urgency template)
+- May 16-17: Wave 2 cont. (Category C academic: Mason Marks at FSU, Ohio State Moritz DEPC)
+- May 18: Wave 3 (Category D state AGs: CO, CA, MI, WA)
+- May 20: Mail postmark deadline
+- May 21: HARD STOP — no new Domain 42 outreach
+- May 28: Federal Register hard deadline (nprm@dea.gov, Docket No. DEA-1362)
+
+**Note on Mason Marks (Category C, Wave 2)**: His primary institution is now Florida State University College of Law, not Yale. Email: mason.marks@fsu.edu (verify against fsu.edu/faculty before sending). He retains visiting fellowship at Yale Law ISP and senior fellowship at Harvard Petrie-Flom.
+
+**Note on Washington AG (Category D, Wave 3)**: Nick Brown is the current Washington State AG (Bob Ferguson became Governor January 2025). Contact: atg.wa.gov.
+
+**Section 591 status**: RESOLVED — dropped from final FY2027 CJS bill. Do not include in any email. May 28 is the sole urgency argument.
 
 ---
 
 ## HARD DEADLINE: May 28, 2026 — DEA Hearing Participation Notice (Docket DEA-1362)
 
-**21 days from today. This is the only domain in the 35-domain framework with a hard external deadline.**
+**15 days from today (May 13). This is the only domain in the 35-domain framework with a hard external deadline. Path A emails drafted and ready.**
 
-Domain 42 distribution must begin May 8 (Wave 1: Category A drug policy organizations) to give recipients 20 days to file a DEA participation notice. Missing May 28 means losing this advocacy leverage point for 12 months — the next DEA hearing opportunity is 2027.
-
-**Distribution launch decision required from you before May 8:**
-- Wave 1 emails (Category A: Drug Policy Alliance, MPP, NORML, LEAP, SSDP) are ready to send
-- Template D42-A in `execution/domain-42-email-template.md` — personalize the bracketed fields, send
-- Gist URL is not yet created — you can attach the markdown file directly for Wave 1 and create the Gist within 24 hours (see `execution/domain-42-gist-creation-steps.md`)
-- If you want to send Wave 1 with a live Gist URL, create the Gist at gist.github.com first (10 minutes, see gist creation steps)
-
-**Key dates:**
-- May 8: Wave 1 send (Category A — drug policy orgs)
-- May 10–12: Wave 2 (Category B civil rights orgs + Category C academic contacts)
-- May 13: House Appropriations markup (Section 591 rider risk — see entry below)
-- May 14–17: Wave 3 (Category D state AG offices)
+**Key dates (updated):**
+- May 13: Wave 1 send — PATH A — READY TODAY (was May 8, now compressed but viable)
+- May 14-15: Wave 2 send (Category B civil rights orgs + Category C academic contacts)
+- May 18: Wave 3 send (Category D state AG offices)
 - May 20: Mail submission deadline (postal transit to DEA Springfield VA)
 - May 21: Hard stop — no new Domain 42 outreach after this date
 - May 28: Email submission deadline (nprm@dea.gov, Docket No. DEA-1362)
@@ -30,48 +109,26 @@ Domain 42 distribution must begin May 8 (Wave 1: Category A drug policy organiza
 - Contains: democratic exclusion framing summary, 5 ready-to-use DEA comment points with Domain 42 citations, exact participation notice procedure, and day-by-day timeline for the 21-day window
 - Attach alongside (or reference within) the Category A, B, C, and D outreach emails
 
-**What is not required from you now:** No decisions on the broader Phase 1 distribution path. Domain 42 is a standalone sub-batch separate from Batches 1–3. You can launch Domain 42 Wave 1 independently, regardless of where you stand on the main distribution path decision.
+---
+
+## SECTION 591 — RESOLVED (May 9, 2026)
+
+Section 591 appropriations rider was dropped from the final FY2027 CJS bill. Congressional leaders omitted it from enacted legislation (same pattern as FY2026). Do NOT include Section 591 in any Domain 42 outreach. The May 28 deadline is the sole urgency argument. This item is closed.
 
 ---
 
-## SECTION 591 MARKUP: May 13, 2026 — ACTION RECOMMENDED BEFORE THIS DATE
+## DOMAIN 42 DEA TRACK: EMAILS DRAFTED — SEND TODAY (May 13, 2026)
 
-**New development identified in May 7 currency audit.**
+**Status updated May 13, 2026.** Wave 1 emails were staged by prior session and are DRAFTED in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md`. Infrastructure is complete. The sole blocking action is filling your name and contact info in the 5 emails before sending.
 
-House Appropriations Committee FY2027 Commerce-Justice-Science bill markup is scheduled **May 13, 2026** (6 days from today). The bill contains **Section 591**, a rider that would bar appropriated funds from being used to reschedule marijuana or remove it from the controlled substances schedules.
+**Execution file**: `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` — 5 copy-paste-ready emails in Section 3, pre-drafted participation notices in Section 4.
 
-**If Section 591 survives markup and is enacted**:
-- Freezes DEA implementation of the April 23 medical track rescheduling
-- Blocks the June 29-July 15 ALJ hearing from producing a binding rescheduling outcome
-- Creates retroactive legal uncertainty for newly registered Schedule III operators
-
-**Historical precedent**: The same language appeared in the FY2026 CJS bill and was stripped in conference. Enactment risk is not high, but the political uncertainty created by the markup itself is real and immediate.
-
-**What this means for Domain 42 outreach**: Organizations that file DEA-1362 participation notices BEFORE May 13 establish standing regardless of what happens in the appropriations process. The May 8 Category A email wave should reference Section 591 as an additional urgency point: "The window for the hearing outcome to carry legal weight may narrow depending on the May 13 appropriations markup."
-
-**Sources**: [WeedPress: Two Legal Tracks Overnight (May 4)](https://weedpress.org/2026/05/04/the-federal-government-just-split-cannabis-into-two-legal-tracks-overnight-and-congress-could-kill-both-within-weeks/); [Cannabis Business Times: GOP Trying to Strip Rescheduling Powers](https://www.cannabisbusinesstimes.com/cannabis-rescheduling/news/15823971/gop-lawmakers-once-again-trying-to-strip-white-house-rescheduling-powers)
-
----
-
-## DOMAIN 42 DEA TRACK: READY FOR LAUNCH (May 7, 2026) — ACTION BY MAY 8
-
-**All three infrastructure items complete.** Category A send wave is May 8. Participation deadline is May 28.
-
-**What was built this session**:
-
-1. `domain-42-dea-briefing-template.md` — Email template (~450 words body). Subject line references "DEA hearing participation deadline May 28 — Docket DEA-1362" explicitly. Personalization paragraphs for each Category A org (DPA, MPP, NORML, LEAP, ACLU Criminal Law Reform, Sentencing Project, SSDP). Gist URL already inserted.
-
-2. `domain-42-dea-briefing-contacts.md` — 24 contacts across Category A (7 orgs, May 8), Category B (5 orgs, May 10-12), Category C (9 AG/press contacts, May 14-17), and administrative law faculty (3, including Mason Marks as priority). Full table format matching DOMAIN_37_SEQUENCING_PLAN.md structure with emails, personalization notes, and send waves.
-
-3. `domain-42-gist-url.md` — Gist created and live: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab. Approximately 2,800-word Gist-optimized version with full participation instructions, three mechanism analysis, international comparative evidence, and DEA-1362 call to action.
-
-**To launch**: Open `domain-42-dea-briefing-contacts.md`, take Category A row 1 (Drug Policy Alliance), apply template from `domain-42-dea-briefing-template.md` with DPA personalization paragraph, send to info@drugpolicy.org. Repeat for rows 2-7 on May 8. All emails should reference nprm@dea.gov and Docket No. DEA-1362.
+**Gist**: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab — confirmed live May 13. Fill this URL into the 5 `[GIST URL — INSERT AFTER CREATION]` placeholders in the package when copying to your email client.
 
 **Hard deadlines**:
 - May 20, 2026 — mail submission deadline (postal transit; mail to DEA Attn: Administrator, 8701 Morrissette Drive, Springfield, VA 22152)
+- May 21, 2026 — hard stop for new outreach
 - May 28, 2026 — email submission deadline (nprm@dea.gov — Docket No. DEA-1362)
-
-**Additional urgency — Section 591**: House Appropriations FY2027 CJS markup on May 13 includes a rider that could freeze the rescheduling process. Organizations filing participation notices before May 13 establish standing regardless of appropriations outcome. Earlier is better — see Section 591 notice above.
 
 ---
 
