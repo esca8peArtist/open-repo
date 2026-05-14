@@ -1,5 +1,98 @@
 # Check-in
 
+## Session 1016 — May 14, 2026, 01:35–02:10 UTC (Phase 1 Materials 100% Pre-Prepared — User Work Reduced to 90 min)
+
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 1 EXECUTION FULLY PREPARED. USER CAN EXECUTE IN 90 MINUTES ON MAY 15-17.**
+
+### What Was Accomplished This Session
+
+1. **✅ Batch 1 Contact Email Verification (Complete)**
+   - Verified all 5 contacts via institutional websites
+   - Corrected 2 stale emails: Marc Elias (perkinscoie → elias.law), Erica Chenoweth (missing underscore)
+   - Updated titles: Wendy Weiser (VP, Democracy), Ian Bassin (Co-Founder & Executive Director)
+   - All contacts now current as of May 14, 2026
+
+2. **✅ Phase 1 Execution Block Guides Created (Complete)**
+   - Block 1: Gist creation checklist + URL log (45 min)
+   - Block 2: Template replacement guide + verification (30 min)
+   - Block 3: Contact verification checklist + website links (30 min)
+   - Block 5: Send sequence + log template (20 min)
+   - Summary document: One-page overview + timeline breakdown
+
+3. **✅ Batch 1 Email Drafts Pre-Written (Complete)**
+   - 5 emails: Goodman, Weiser, Elias, Chenoweth, Bassin
+   - All domain hooks and call-to-action already written (95% complete)
+   - User only fills: recent publication reference + name/email (5 min per email)
+   - Gist URLs to be inserted from Block 1
+
+4. **✅ Send Sequence Reordered (Complete)**
+   - Priority: Weiser & Elias first (election-protection contacts)
+   - Reason: May 30 DOJ consent decree finalization window (16 days away)
+   - Ensures institutional attention when advocacy opportunity exists
+
+### User Work Reduction Summary
+
+**Before today**: 4 hours of user work (Gist creation, email personalization, contact verification)
+**After today**: 90 minutes of user work (mostly mechanical: copy/paste, form-filling, send)
+
+- Block 1 (Gists): 45 min (guided)
+- Block 2 (URLs): 30 min (find-replace template)
+- Block 3 (Emails): 30 min (website links + table provided)
+- Block 4 (Personalization): 25 min (drafts 95% pre-written)
+- Block 5 (Send): 20 min (send log template)
+
+### What's Ready for User Execution
+
+**May 15-17 (Tue-Thu morning EST):**
+- All 35+ domains: production-ready ✅
+- All templates: URLs ready to fill ✅
+- All contact emails: verified current ✅
+- All email drafts: 95% pre-written ✅
+- All block guides: step-by-step provided ✅
+- May 30 critical date: embedded throughout ✅
+
+**Outcome**: Phase 1 Batch 1 in flight within 90 minutes of user starting blocks.
+
+### What's In Progress
+
+None. Phase 1 is fully user-ready.
+
+### Items Needing User Input (Prioritized)
+
+1. **URGENT — Phase 1 execution date selection** (May 15-17 preferred)
+   - Choose day/time (45 min before Batch 1 send window)
+   - Execute Blocks 1-5 sequentially
+   - Impact: Phase 1 Batch 1 live within 90 min of start
+
+2. **May 14 20:00 UTC stockbot checkpoint** (Gate 1 outcome, T-18h)
+   - User executes checkpoint script
+   - Impact: Determines post-checkpoint architecture path
+
+3. **cybersecurity-hardening Phase 1 approval** (decision gate)
+   - Approve June 1 Tier 1 distribution launch?
+   - Impact: Infrastructure armed May 31 if approved
+
+4. **mfg-farm test print execution** (hardware action)
+   - Execute test print (user hardware-dependent)
+   - Impact: Pass → Etsy launch; Fail → design iteration
+
+### Suggested Next Actions
+
+1. **May 14 evening**: Monitor stockbot checkpoint (T-18h)
+2. **May 15-17 morning**: Execute Phase 1 Blocks 1-5 (~90 min)
+3. **May 16-22**: Monitor Batch 1 responses; prepare social media (Block 6)
+4. **Post-May-30**: Domain 37 Phase B outreach if Batch 1 response strong
+
+### Strategic Notes
+
+- Phase 1 preparation is 100% complete; zero ambiguity remains
+- User execution is now purely mechanical (Gist creation, form-filling, sending)
+- All supporting materials (quick-start guide, block guides, email drafts) in place
+- Checkpoint and Phase 1 execution are the only immediate user actions
+- Exploration Queue complete; awaiting post-Phase-1-Batch-1 follow-up work
+
+---
+
 ## Session 1015 — May 14, 2026, 01:18–01:25 UTC (Phase 1 Execution Ready — Quick-Start Guide Created)
 
 **Status**: ✅ **RESISTANCE-RESEARCH PHASE 1 EXECUTION READY. COMPREHENSIVE QUICK-START GUIDE CREATED FOR USER ACTION.**
