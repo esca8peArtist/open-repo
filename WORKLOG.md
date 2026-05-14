@@ -2951,3 +2951,76 @@ None — this was a research + documentation item with no code/schema dependenci
 - Post-checkpoint response protocol execution (user-dependent on PASS/MISS outcome)
 - Seedwarden Phase 2 work (Items 20, 30, 32) if time permits and no new user blockers
 
+
+## Session 1008 — 2026-05-14 02:30–03:15 UTC
+
+**Orientation**: Reviewed ORCHESTRATOR_STATE, PROJECTS.md, BLOCKED.md. Status: All active blocks at resolution stage; no new inbox items.
+
+### Item 41: Resistance-Research Phase 1 Execution Preparation ✅
+
+**Task**: Consolidate Phase 1 execution materials and prepare for user action. User decided on Path A + Domain 37 on May 13 00:45 UTC.
+
+**Deliverable**: `projects/resistance-research/execution/PHASE_1_IMMEDIATE_EXECUTION_CHECKLIST_MAY_14.md` (2,100 lines)
+
+**Content**:
+- All 7 Gist URLs consolidated (copy-paste ready): 6 canonical + Domain 37
+- Block-by-block execution guide: Blocks 1-5 (Gist verification, URL fill-in, contact verification, email personalization, send)
+- Batch 1 contact verification table: 5 contacts, verified April 29, 2026
+- Domain 37 track: Contact list location, email templates, timeline
+- Domain 42 track: 10 contacts, 3-wave send sequence (May 8/12/14), May 28 DEA deadline flagged
+- Tracking spreadsheet setup: 3-tab Google Sheet template (Batch 1-3, Domain 37, Domain 42)
+- Timeline: 1.5–2 hours total user work to get Batch 1 in flight
+
+**Key Findings**:
+1. ✅ All 7 Gists exist and are live (6 canonical created April 30; Domain 37 created May 14)
+2. ✅ 5 Batch 1 contacts verified current as of April 29 (no role or email changes)
+3. ✅ Personalized batch files ready (`phase-1-personalized-batch-1/2/3.md`)
+4. ✅ Templates have unfilled placeholders (user fills with URLs from consolidated checklist)
+5. ✅ Path A + Domain 37 tracks documented; no implementation gaps
+
+**User Work Summary**:
+- Block 2 (URL fill-in): 30 min — find-replace in 3 templates
+- Block 4 (email prep): 45 min — review pre-personalized emails
+- Block 5 (send): 5 min — send 5 emails
+- Optional: Tracking setup 30 min — create Google Sheet for response tracking
+- **Total**: 80 min to Batch 1 send; 110 min with tracking setup
+
+**Status**: ✅ COMPLETE. Phase 1 ready for user execution May 14–17. No orchestrator action blocks this.
+
+**Impact**: User can execute full Phase 1 Blocks 1-5 immediately (today, May 14, or within 3 days). No waiting for research, no prep work remaining. 
+
+---
+
+### Projects Status Check
+
+**Stockbot** (Priority 1): Checkpoint at May 14 20:00 UTC (T-13h). All pre-checkpoint infrastructure verified by Session 1007. Post-checkpoint decision framework ready. ✅ ON TRACK
+
+**Resistance-Research** (Priority 2): Phase 1 execution prep 100% complete. User execution May 14–17 window. ✅ READY
+
+**Cybersecurity-Hardening** (Priority 3): Phase 1 ready, awaiting user approval for June 1 launch. ⏳ BLOCKED ON USER APPROVAL
+
+**Mfg-Farm** (Priority 4): Awaiting user test print execution (0.20mm layer height, PLA+, 3 walls, 220-225°C). 🚫 BLOCKED ON USER ACTION
+
+**Seedwarden** (Priority 5): Track B ready (May 30 launch), execution user-driven. Track A has 2 blocker items (tag corrections, Etsy account verification). ✅ TRACK B CLEAR
+
+---
+
+### Exploration Queue Status
+
+Pending items: 20 (Seedwarden), 32 (Seedwarden), 30 (Seedwarden), 33 (Stockbot post-Gate-1), 40 (Seedwarden), 42 (mfg-farm). These are secondary research and can be picked up if time permits or after current deliverables complete.
+
+---
+
+### Session Summary
+
+**Accomplishment**: Consolidated all Phase 1 execution materials into a single user-ready checklist. Reduced user execution path from "figure out all the steps" to "follow this 5-block checklist" format.
+
+**Files Changed**:
+- CHECKIN.md (added Session 1008 entry)
+- PROJECTS.md (pruned stale Session 1000 references)
+- PHASE_1_IMMEDIATE_EXECUTION_CHECKLIST_MAY_14.md (new)
+
+**Session Status**: ✅ COMPLETE
+
+**Next Session Focus**: May 14 20:00 UTC stockbot checkpoint execution (user-initiated), post-checkpoint response protocol, OR Phase 1 Batch 2 preparation if Batch 1 responses arrive ahead of schedule.
+
