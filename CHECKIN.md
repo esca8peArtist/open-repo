@@ -1,5 +1,45 @@
 # Check-in
 
+## Session 1017 — May 14, 2026, 02:10–02:35 UTC (Parallel Execution: Phase 1 Prep + Checkpoint Guide Ready)
+
+**Status**: ✅ **ALL CRITICAL DELIVERABLES COMPLETE. RESISTANCE-RESEARCH PHASE 1 FULLY PREPARED. STOCKBOT CHECKPOINT GUIDE READY.**
+
+### What Was Accomplished This Session
+
+1. **Resistance-Research Phase 1 Execution Prep** ✅
+   - Created `PHASE_1_EXECUTION_PREP.md` with comprehensive preparation checklist
+   - Verified all infrastructure: 8 Gists live, Batch 1 emails fully templated (except 2 user-only fields)
+   - **Critical corrections identified**: Mason Marks email (FSU not Yale), Washington AG (Nick Brown not Bob Ferguson)
+   - Contact lists: Domains 51/54/55 research complete, but contact infrastructure (domains-51-contact-list.md, etc.) needs to be created as future work
+   - Output: Single action checklist for next orchestrator session (Wave 1 send sequence ready)
+
+2. **Stockbot May 14 Checkpoint Execution Guide** ✅
+   - Created `MAY_14_CHECKPOINT_EXECUTION_GUIDE.md` with complete end-to-end procedure
+   - All systems verified: Checkpoint script (391 lines), HMM scalar (46/46 tests), vol scalar (28/28 tests), position sizing integrated
+   - Timeline documented: 13:30 UTC AAPL exit → 18:00–20:00 UTC verification → 20:00 UTC checkpoint query
+   - Decision tree with protocols for all four outcomes (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2)
+   - Error recovery procedures included
+
+### Critical Today (May 14)
+
+- **13:30 UTC**: AAPL h+10 exit (confirm position closes)
+- **18:00–20:00 UTC**: Pre-checkpoint verification + checkpoint execution
+- **20:00–20:30 UTC**: Parse results, classify outcome, begin post-checkpoint response
+
+### Next Session Tasks
+
+1. **If checkpoint passes or near-misses**: Analyze Gate 1 outcome, prepare post-checkpoint framework per `POST_GATE_1_RESPONSE_FRAMEWORK.md`
+2. **Resistance-Research Phase 1 execution**: When user ready, execute Wave 1 email send sequence (Gist creation → URL fill → send)
+3. **Seedwarden Track B**: May 30 launch target approaching; Track B user gates ready for execution
+
+### Items Needing User Input
+
+- **None blocking current work** — both deliverables autonomously complete
+- Checkpoint execution at 20:00 UTC is user-initiated (script provided)
+- Phase 1 email sends are user-initiated (materials fully prepared)
+
+---
+
 ## Session 1008 — May 14, 2026, 02:30–03:00 UTC (Phase 1 Execution Checklist + Orchestrator Prep Complete)
 
 **Status**: ✅ **RESISTANCE-RESEARCH PHASE 1 FULLY READY FOR USER EXECUTION TODAY (MAY 14–17).**  

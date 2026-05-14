@@ -48,6 +48,56 @@
 - Block 2: 30-min URL replacement (find-replace guide provided)
 - Block 3: 30-min email verification (website links + table template provided)
 - Block 4: 90 min, but **only ~5 min research per email** (drafts 95% pre-written)
+
+---
+
+## Session 1017 — May 14, 2026, 02:10–02:35 UTC (Parallel Agents: Phase 1 + Checkpoint Prep)
+
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 1 EXECUTION PREP COMPLETE. STOCKBOT CHECKPOINT EXECUTION GUIDE READY. BOTH CRITICAL DELIVERABLES ON TRACK.**
+
+### Accomplished This Session
+
+1. **Resistance-Research Phase 1 Execution Prep** ✅ (resistance-research agent)
+   - **File created**: `projects/resistance-research/execution/PHASE_1_EXECUTION_PREP.md` (comprehensive preparation document)
+   - **Critical corrections identified**:
+     - Mason Marks: Email is `mason.marks@fsu.edu` (Florida State), not Yale as listed in domain-42-contact-list.md
+     - Washington AG: Nick Brown (took office Jan 2026), not Bob Ferguson (now Governor)
+   - **Gist infrastructure**: All 8 Gists already live and pre-populated (no new creation needed). Domain 42 Gist live since May 9.
+   - **Template status**: All Batch 1 + Domain 42 Wave 1 emails fully prepared except `[Your name]` and `[Your contact information]` (user-only fields)
+   - **Contact lists audit**: Domains 51, 54, 55 have research documents but no contact/outreach infrastructure yet (future work, not blocking Phase 1)
+   - **Wave sequencing confirmed**: Viable timeline documented through May 28 (Domain 42 May 28 DEA deadline critical)
+   - **Output**: Single action checklist (Part 5) for next session: ordered send sequence with email addresses, template references, exact fill requirements
+
+2. **Stockbot May 14 Checkpoint Execution Guide** ✅ (stockbot agent)
+   - **File created**: `projects/stockbot/MAY_14_CHECKPOINT_EXECUTION_GUIDE.md` (complete end-to-end guide)
+   - **Verification completed**:
+     - Checkpoint script: 391 lines, all classification logic verified correct (all 4 branches PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2)
+     - HMM regime scalar tests: 46/46 passing
+     - Vol scalar tests: 28/28 passing
+     - Position sizing framework: all 3 modules integrated correctly in trading_session.py
+     - Session configuration: 67 sessions valid in active-sessions.json; 2-session config verified in active-sessions-2session.json
+   - **Guide contents**:
+     - Section 1: Gate 2 readiness checklist with runnable commands
+     - Section 2: Pre-checkpoint timeline (13:30–20:00 UTC) with user actions and expected outputs
+     - Section 2 tail: Checkpoint execution procedure with JSON capture option
+     - Section 4: Decision tree for all four outcomes (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2) with immediate next steps
+     - Section 4 continued: Post-checkpoint response protocols including Lever A/B escalation paths
+     - Section 6: Error recovery for all known failure modes
+
+### Critical Timeline Events (Today, May 14)
+
+- **13:30 UTC**: AAPL h+10 exit executes (confirms position close on Alpaca)
+- **18:00–19:30 UTC**: Pre-checkpoint verification window (Alpaca connectivity + Jetson health checks)
+- **20:00 UTC**: Run checkpoint query (user-initiated, script provided in guide)
+- **20:00–20:30 UTC**: Parse results, classify outcome into one of four branches
+- **20:30+ UTC**: Execute post-checkpoint response (specific protocol per outcome documented in guide)
+
+### Files Committed to Master
+
+1. `projects/resistance-research/execution/PHASE_1_EXECUTION_PREP.md`
+2. `projects/stockbot/MAY_14_CHECKPOINT_EXECUTION_GUIDE.md`
+
+Both files committed with appropriate commit messages on master branch.
 - Block 5: 20 min send (send log template provided)
 - **Total user work: ~90 minutes instead of 4 hours**
 

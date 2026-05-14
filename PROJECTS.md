@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Distribution path DECIDED: Path A + Domain 37** (user resolved 2026-05-13 00:45 UTC). Execute Phase 1 Gist creation, template field fill, contact verification, email send + social scheduling. Domain 37 election protection sequencing before May 28 DEA deadline.
+**Current focus**: **Phase 1 EXECUTION MATERIALS COMPLETE** (Session 1017). Gist creation prep done, template field fill checklist ready (Domains 51/54/55 contact lists to be created as future work — not blocking Phase 1). Contact verification identified 2 critical corrections: Mason Marks FSU email + Washington AG Nick Brown. Single action checklist for Wave 1 send sequence created. User execution ready: Batch 1 Wave 1 + Domain 42 waves May 14–17 viable. May 28 DEA deadline remains critical for Domain 42.
 
 **Session 1000 Deliverables** ✅:
 - `projects/resistance-research/DOMAINS_41_43_SOURCE_STAGING.md` (1,053 lines) — 40+ sources per domain, expert contacts, evidence checklists, outline skeletons
@@ -386,7 +386,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: **May 14 20:00 UTC checkpoint T-35h — Gate 2 readiness verified.** FAR_MISS_C1 confirmed (May 12 checkpoint). AAPL h+10 exit scheduled May 14 13:30 UTC. Expected outcome: NEAR-MISS B1. All pre-checkpoint items verified by code audit (no live Alpaca calls): checkpoint script functional (`scripts/may14_checkpoint_query_alpaca.py`, 383 lines), HMM regime scalar committed and tested (`src/ml/hmm_regime_scalar.py`, 46 tests passing), vol scalar integration complete (25 tests passing), Gate 2 guide verified (856 lines). **Critical finding**: `active-sessions.json` contains 67 sessions (67 unique tickers) — system is already at Gate 2 Week 3+ equivalent state. 
+**Current focus**: **Checkpoint 20:00 UTC TODAY (T-17.5h from session start). Execution guide COMPLETE** (Session 1017, `MAY_14_CHECKPOINT_EXECUTION_GUIDE.md`). AAPL h+10 exit at 13:30 UTC today. Pre-checkpoint timeline 18:00–20:00 UTC documented. All verification complete: checkpoint script 391 lines (corrected TypeError), HMM scalar 46/46 tests, vol scalar 28/28 tests, position sizing integrated correctly. Decision tree ready for all four outcomes (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2). Post-checkpoint response protocols documented per outcome. Expected outcome: NEAR-MISS B1. 
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`
