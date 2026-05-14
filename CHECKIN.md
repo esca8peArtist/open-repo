@@ -1,5 +1,45 @@
 # Check-in
 
+## Session 1018 — May 14, 2026, 02:15–02:45 UTC (State Verification & Readiness Confirm)
+
+**Status**: ✅ **ALL DELIVERABLES COMPLETE. SYSTEM READY FOR USER ACTION. T-17.75h to STOCKBOT CHECKPOINT.**
+
+### Current Project States
+
+| Project | Status | Next User Action | Timeline |
+|---------|--------|------------------|----------|
+| **stockbot** | ✅ Checkpoint ready | Run checkpoint script at 20:00 UTC today | TODAY 20:00 UTC |
+| **resistance-research** | ✅ Phase 1 prep complete | Execute Wave 1 email send sequence | May 14–17 (window open) |
+| **cybersecurity-hardening** | ⏳ Awaiting approval | Approve Phase 1 Tier 1 launch + Day 1 send date | User decision |
+| **seedwarden** | ✅ Track B ready | Execute 3 user gates (May 15–28) | May 15–30 |
+| **mfg-farm** | 🚫 Test print blocked | Execute test print (0.20mm, PLA+, 3 walls, 220–225°C) | Pending user action |
+
+### Immediate Actions Needed Today (May 14)
+
+1. **13:30 UTC** — AAPL position closes (h+10 exit) — monitor for confirmation
+2. **18:00–20:00 UTC** — Pre-checkpoint verification (Alpaca connectivity, Jetson health)
+3. **20:00–20:30 UTC** — Run checkpoint script; parse results; classify outcome
+4. **20:30+ UTC** — Execute post-checkpoint response protocol per outcome
+
+**Materials Ready**: `projects/stockbot/MAY_14_CHECKPOINT_EXECUTION_GUIDE.md` has all scripts, decision tree, and error recovery procedures.
+
+### Exploration Queue Status
+
+✅ **career-training: Module Gap Analysis** — COMPLETE (module-index.md fully structured)
+✅ **career-training: Practice Scenarios** — COMPLETE (case-study-workbook.md 150/150 scenarios)
+🚫 **mfg-farm: Product Supply Chain** — BLOCKED on test print
+**Conclusion**: No new autonomous Exploration Queue work available. All prepared items either complete or blocked on user actions.
+
+### Items Needing Your Input
+
+**None blocking current work.** All top-priority deliverables complete and awaiting user initiation:
+- Stockbot checkpoint: Script ready, decision tree ready, execution at 20:00 UTC is your action
+- Phase 1 distribution: All materials prepared, send sequence ready, execution is your action
+- Cybersecurity approval: All technical prep complete, decision on launch timing is your approval
+- Seedwarden Track B: All user gates documented, execution window is May 15–28
+
+---
+
 ## Session 1017 — May 14, 2026, 02:10–02:35 UTC (Parallel Execution: Phase 1 Prep + Checkpoint Guide Ready)
 
 **Status**: ✅ **ALL CRITICAL DELIVERABLES COMPLETE. RESISTANCE-RESEARCH PHASE 1 FULLY PREPARED. STOCKBOT CHECKPOINT GUIDE READY.**
