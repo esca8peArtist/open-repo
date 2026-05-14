@@ -1,5 +1,74 @@
 # Check-in
 
+## Session 1010 — May 14, 2026, 00:45 UTC (Phase 1 Domain 42 Wave 1 LIVE + Stockbot h+10 Exit Risk)
+
+**Status**: ✅ **DOMAIN 42 WAVE 1 LIVE & READY TO SEND TODAY**
+
+### Critical User Actions — TODAY (May 14, 2026)
+
+**IMMEDIATE — Domain 42 Wave 1 Send**
+- **Gist live**: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+- **Email drafts ready** in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3
+- **Action**: Fill `[Your name]` + `[Your contact information]` in each email (2 min × 5 = 10 min total)
+- **Send order**: Sentencing Project → NORML → Drug Policy Alliance → LEAP → ACLU (30-45 min between sends)
+- **Deadline**: May 28 DEA (14 days remaining, still viable despite 5-day delay)
+- **Time window**: Send before noon ET if possible
+
+**May 14 afternoon (time-permitting):**
+- Create Domain 37 Gist: 10 min using procedure in PHASE_1_EXECUTION_BLUEPRINT.md Block 2
+- Fill identity fields in fill_templates.py: 3 min
+- Batch 1 send: 5 contacts, 4:00 UTC staggered
+
+**May 14 20:00 UTC — Stockbot Checkpoint Execution**
+- **Status**: ✅ GO with one conditional risk (see "Needs Your Input" below)
+- **Command to run**: `cd /home/awank/dev/SuperClaude_Framework/projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py`
+- **Expected outcome**: NEAR_MISS_B1 (if AAPL h+10 exit fires) or possible FAR_MISS (if exit doesn't fire)
+- **Post-checkpoint**: Follow response framework in `POST_GATE_1_RESPONSE_FRAMEWORK.md` based on classified scenario
+
+### Needs Your Input
+
+⚠️ **Stockbot h+10 Exit Risk — May 14 13:30 UTC Monitoring Required**
+
+**The issue**: April 29 AAPL equity fills were placed via Alpaca but are NOT in Jetson's trading.db. The time-stop exit logic queries the local DB for the original BUY entry to calculate position age. Without the DB record, `_get_position_age_bars()` returns `None` and the time-stop exit will NOT fire.
+
+**What this means**:
+- Position will NOT exit automatically at h+10 (14:40 UTC)
+- Exit depends entirely on the LGBM/ridge models generating a SELL signal at market open
+- If models don't generate SELL → position stays open → checkpoint shows NEAR_MISS instead of PASS
+
+**What you should do**:
+1. At 13:30 UTC (US market open), run the checkpoint query to see if AAPL SELL fills appear:
+   ```bash
+   cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+   uv run python scripts/may14_checkpoint_query_alpaca.py 2>&1 | grep -v INFO
+   ```
+2. If SELL fills appear → exit executed, continue to checkpoint at 20:00 UTC
+3. If NO SELL fills appear → models didn't generate SELL signal; position is still open
+   - Decision: Let it ride until 20:00 UTC checkpoint (model may still exit)
+   - Or: Close manually via Alpaca dashboard if you want guaranteed exit
+
+**Checkpoint script** (for 20:00 UTC):
+```bash
+mkdir -p /home/awank/dev/SuperClaude_Framework/projects/stockbot/logs
+cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+uv run python scripts/may14_checkpoint_query_alpaca.py 2>&1 | grep -v INFO | tee logs/gate1_checkpoint_may14.txt
+```
+
+Then check result:
+- `confirmed_round_trips >= 3` → PASS ✅
+- `confirmed_round_trips = 1-2` → NEAR_MISS_B1 (expected trajectory)
+- `confirmed_round_trips = 0` → FAR_MISS (AAPL position never exited)
+
+### Summary
+
+- **Phase 1 Domain 42**: Ready for immediate send (name/contact fills only, ~15 min total work)
+- **Phase 1 Domain 37**: Prep step (Gist creation, 10 min) needed before May 21
+- **Stockbot**: Go for checkpoint; monitor h+10 exit at 13:30 UTC to catch potential risk
+
+**Next session focus** (post-checkpoint): Apply POST_GATE_1_RESPONSE_FRAMEWORK.md response, then resume exploration queue items (Seedwarden Phase 2, Item 40 if time permits)
+
+---
+
 ## Session 1009 — May 14, 2026, 00:10 UTC (Phase 1 Distribution Execution — Wave 1 Preparation)
 
 **Status**: ⚠️ **DOMAIN 42 WAVE 1 OVERDUE BY 12 HOURS — SEND WINDOW STILL OPEN (May 14 morning US-ET)**
