@@ -89,10 +89,10 @@ Upon user path decision, use this template to verify emails and personalize temp
 
 **Why Batch 1 Third**: Academic credibility; Chenoweth's nonviolent action research is foundational to Framework theory.
 
-**Current Information** (as of 2026-04-27):
-- Position: Frank McCourt Professor of the Practice of Public Leadership, Harvard Kennedy School
+**Current Information** (as of 2026-04-27, updated 2026-05-14):
+- Position: Frank Stanton Professor of the First Amendment, Harvard Kennedy School
 - Institution: Harvard Kennedy School / Nonviolent Action Lab
-- Known email: echenoweth@harvard.edu (verify)
+- Known email: erica_chenoweth@hks.harvard.edu (CORRECTED 2026-05-14: underscore required; was echenoweth@harvard.edu)
 - Social: @erica_chenoweth on X (verify)
 
 **Verification Steps**:
@@ -157,10 +157,10 @@ Upon user path decision, use this template to verify emails and personalize temp
 
 **Why Batch 1 Fifth**: Media and litigation strategy; Democracy Docket is primary tracker of institutional cases.
 
-**Current Information** (as of 2026-04-27):
-- Position: Founder, Democracy Docket; Partner, Perkins Coie
-- Institution: Democracy Docket / Perkins Coie Law
-- Known email: melias@perkinscoie.com or marc@democracydocket.com (verify)
+**Current Information** (as of 2026-04-27, updated 2026-05-14):
+- Position: Founder, Democracy Docket; Founder, Elias Law Group (left Perkins Coie in 2021)
+- Institution: Democracy Docket / Elias Law Group
+- Known email: melias@elias.law (CORRECTED 2026-05-14: Perkins Coie domain stale since 2021; was melias@perkinscoie.com)
 - Social: @marceelias on X (verify)
 
 **Verification Steps**:
