@@ -1,5 +1,89 @@
 # Check-in
 
+## Session 1015 — May 14, 2026, 01:18–01:25 UTC (Phase 1 Execution Ready — Quick-Start Guide Created)
+
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 1 EXECUTION READY. COMPREHENSIVE QUICK-START GUIDE CREATED FOR USER ACTION.**
+
+### What Was Accomplished This Session
+
+1. **✅ Phase 1 Materials Verification (Complete)**
+   - Verified all 35+ domain documents are production-ready
+   - Verified all distribution templates exist and contain correct structure
+   - Verified Batch 1 contact verification guide is current (dated April 27-29)
+   - Verified all supporting materials (DISTRIBUTION_GUIDE.md, BATCH_1_CONTACT_VERIFICATION.md, etc.)
+
+2. **✅ Critical Date Alert: May 30 Advocacy Window**
+   - Identified that May 30 is 16 days away — within recommended reordering window
+   - Recommended send order adjustment: **Wendy Weiser (Brennan Center) and Marc Elias (Democracy Docket) should send FIRST** because they have direct stake in DOJ consent decree finalization (May 30)
+   - This ensures election-protection organizations get Domain 37 when they can act on it
+
+3. **✅ Phase 1 Quick-Start Guide Created**
+   - **File**: `projects/resistance-research/PHASE_1_QUICK_START_PATH_A_PLUS_37.md` (1,247 lines)
+   - **Content**: Streamlined 4-block execution checklist (from Phase 1 Execution Checklist)
+     - Block 1: Create 7 public Gists (45 min) — proposal, summary, trackers, Domain 37
+     - Block 2: Fill template URLs (30 min) — replace [link] placeholders with Gist URLs
+     - Block 3: Verify Batch 1 contact emails (30 min) — confirm current institutional emails
+     - Block 4: Personalize 5 emails (90 min) — domain-specific hooks for each contact
+     - Block 5: Send Batch 1 (20 min) — send in optimized order (election-protection contacts first due to May 30 window)
+   - **Timeline**: 3.5-4 hours total; recommended execution May 15-17 morning (Tue-Thu, EST)
+   - **Critical date alert**: Embedded May 30 advocacy window guidance throughout
+   - **Send order override**: Documents the reordered sequence (Weiser→Elias→Goodman→Chenoweth→Bassin) based on May 30 deadline
+   - **Contact verification**: Pre-filled with April 27-29 verification data; user needs to confirm current emails from institutional websites
+   - **Decision gates**: 6 decision gates built in to catch real-world issues (bounced emails, formatting problems) before Batch 1 sends
+
+### What's In Progress
+
+**None — Phase 1 execution is now user-driven.**
+
+User has decided: **Path A + Domain 37 (resolved 2026-05-13 00:45 UTC)**
+
+All autonomous preparation complete. User action required:
+- Choose execution date (May 15-17 recommended)
+- Execute Blocks 1-5 over 3.5-4 hours
+- Blocks 6-8 (social media, monitoring, Domain 37 Phase B) follow on subsequent weeks
+
+### Items Needing User Input (Prioritized)
+
+1. **URGENT — Phase 1 execution scheduling**
+   - **When**: Recommend May 15-17 (Tue-Thu) morning, 9:00-11:00 AM EST for Batch 1 send window
+   - **Duration**: 3.5-4 hours (can be split: Blocks 1-3 on one day, Blocks 4-5 on another)
+   - **Action**: Choose date, allocate time, execute PHASE_1_QUICK_START_PATH_A_PLUS_37.md
+   - **Impact**: Phase 1 Batch 1 in flight by May 16-17
+
+2. **May 14 20:00 UTC stockbot checkpoint execution** (Gate 1 outcome)
+   - **Action**: User executes checkpoint using `projects/stockbot/MAY_14_CHECKPOINT_EXECUTION_RUNBOOK.md`
+   - **Timeline**: May 14, 19:00–20:30 UTC (19 hours from now)
+   - **Outcome classification**: User applies POST_GATE_1_RESPONSE_FRAMEWORK.md for next actions
+   - **Impact**: Gate 1 pass/miss determines post-checkpoint architecture (Gate 2 acceleration vs. recovery)
+
+3. **cybersecurity-hardening Phase 1 approval**
+   - **Question**: Approve Phase 1 Tier 1 launch (25 contacts, 7-week timeline, starting June 1)?
+   - **Timeline**: Decision needed before June 1
+   - **Impact**: Orchestrator arms measurement infrastructure May 31; distribution live June 1
+
+4. **mfg-farm test print execution**
+   - **Action**: Execute single test print (0.20mm layer, PLA+, 3 walls, 220–225°C)
+   - **What to evaluate**: Snap-arm clearance (FDM_TOLERANCE 1.4mm)
+   - **Timeline**: Whenever convenient (blocking fulfillment activation)
+   - **Impact**: Pass → Etsy launch sequence begins; Fail → design iteration
+
+### Suggested Priorities for Next Session
+
+1. **May 14 20:00 UTC stockbot checkpoint** (12-18 hours away) — Time-critical
+2. **May 15-17: resistance-research Phase 1 execution** (ASAP) — All materials ready
+3. **Post-May-14 checkpoint**: cybersecurity-hardening Phase 1 approval (decision gate)
+4. **Flexible timeline**: mfg-farm test print (hardware action)
+
+### Strategic Summary
+
+- **Exploration Queue**: Complete (Sessions 1014 and prior)
+- **Resistance-research**: Path decision made. Phase 1 materials 100% ready. Execution guide created. **User execution required May 15-17.**
+- **Stockbot**: Checkpoint script ready. Gateway checkpoint May 14 20:00 UTC. **User execution required (19 hours away).**
+- **Blockage pattern**: Top projects now have clear user execution paths with detailed guides. No ambiguity.
+- **Next autonomous work**: Will emerge after Phase 1 Batch 1 sends (May 16-17) and post-checkpoint (May 14 evening). Monitoring and follow-up work available at that point.
+
+---
+
 ## Session 1014 — May 14, 2026, 00:55–01:40 UTC (Exploration Queue Items 40–42 Complete — All Autonomous Work Done)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS 40–42 COMPLETE. ALL AUTONOMOUS WORK FINISHED. AWAITING USER ACTIONS/DECISIONS.**
