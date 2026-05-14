@@ -1,5 +1,35 @@
 # Check-in
 
+## Session 1009 — May 14, 2026, 00:10 UTC (Phase 1 Distribution Execution — Wave 1 Preparation)
+
+**Status**: ⚠️ **DOMAIN 42 WAVE 1 OVERDUE BY 12 HOURS — SEND WINDOW STILL OPEN (May 14 morning US-ET)**
+
+### Critical Actions Required — NOW
+
+**Domain 42 Wave 1 (5 emails) — URGENT**
+- **Send window**: May 14 morning US-ET (East Coast 11:10 PM May 13 → 12:00 noon May 14)
+- **Deadline**: May 28, 2026 DEA submission (14 days remaining)
+- **Status**: All 5 emails prepared and ready in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3
+  - Drug Policy Alliance → press@drugpolicy.org
+  - NORML → norml@norml.org
+  - ACLU Criminal Law Reform → nationaloffice@aclu.org
+  - The Sentencing Project → staff@sentencingproject.org
+  - LEAP → info@leap.cc
+- **Gist URL confirmed live**: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+- **Action**: Copy email bodies from `DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3, send from your email account
+- **Time estimate**: 45 minutes (5 emails × 9 minutes each, 30-45 min stagger between sends)
+
+**Next immediate actions** (May 14):
+1. Send Domain 42 Wave 1 today if possible
+2. May 14 morning: Set identity fields in `fill_templates.py` (3 min)
+3. May 14 morning: Create Domain 37 Gist (10 min)
+4. May 14 afternoon 4:00 UTC: Send Phase 1b Batch 1 (5 emails, staggered)
+5. May 14 20:00 UTC: Stockbot checkpoint execution
+
+**Checkpoint status**: ✅ Infrastructure verified GO, ready to execute at 20:00 UTC
+
+---
+
 ## Session 1008 — May 13, 2026, 23:30–present UTC (Phase 1 Distribution Execution Launch)
 
 **Status**: ✅ **PATH A+37 PHASE 1 DISTRIBUTION READY FOR IMMEDIATE EXECUTION — DOMAIN 42 EMAILS DRAFTED TODAY**
