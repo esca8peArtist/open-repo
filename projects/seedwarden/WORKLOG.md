@@ -4,6 +4,69 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Phase 3 Herbalist Network Pre-Staging — 2026-05-14
+
+**Task**: Pre-stage herbalist expert contact network and interview frameworks for Phase 3
+medicinal herb research kickoff on June 1, 2026.
+
+**Scope executed**:
+
+- **25 herbalist contacts identified** across four source networks (academic institutions,
+  clinical herbalist associations, permaculture/homesteading cultivation specialists, and
+  specialty expert contacts). All contacts include name, title, institution, fastest-available
+  contact path, expertise areas, and vetting notes. Contact matrix includes a therapeutic
+  domain assignment table mapping each bundle to primary and secondary reviewers.
+
+- **5 interview question templates built** (Templates A–E): Contraindication and Safety Review,
+  Efficacy Evidence Standards, Cultivation Technique Validation, Traditional Use Documentation
+  and Cultural Sensitivity, and General Expert Review (all-purpose). Each template is 30-minute
+  structured, copy-paste ready, with opening framing, 6 core questions, and a standardized
+  wrap-up.
+
+- **Evidence-gathering SOP documented**: Priority stack of 6 contraindication databases
+  (NatMed Pro, MSK Integrative Medicine, Medscape, PubMed, Stockley's, PHYDGI) with
+  a 15-minute per-species workflow. Evidence tier system (Gold/Silver/Bronze) with confidence
+  scoring rubric (1–5) and master scoring template table. Toxicity data source stack (AAPCC,
+  NCCIH, ABC HerbalGram, EMA, Botanical Safety Handbook, UpS At-Risk List).
+
+- **Herbalist vetting checklist**: 4-step, 10-minute vetting protocol (credential verification,
+  publication cross-check, network reference, fit assessment) with Pass/Conditional/Hold
+  outcomes. Quick-reference table version also provided.
+
+- **8-week outreach and research timeline**: Week-by-week schedule, June 1 – July 31, with
+  5 species per week research cadence, outreach sequencing across three waves (June 1,
+  June 8, June 15), and per-week task breakdown for both research and interview work.
+  Interview cadence: 2–3 calls per week at 30 min each = 2.5–3 hours/week total.
+
+- **QA gates**: Per-species publication gate (self-check checklist), Month 1 review
+  (June 15) and Month 2 review (July 15) process review protocols.
+
+- **Initial outreach email template**: Copy-paste ready for June 1 send, with subject line,
+  body text, and 7-day follow-up variant.
+
+**File created**:
+
+- `projects/seedwarden/PHASE_3_HERBALIST_NETWORK_PRESTAGING.md` — 771 lines, 51 KB,
+  7,291 words. Production-ready for May 31 review and June 1 launch.
+
+**Notable contacts identified with direct contact paths**:
+- Shannon Bell, PhD (Virginia Tech): sbell33@vt.edu — Appalachian at-risk herbs, forest farming
+- Cassandra Quave, PhD (Emory): etnobotanica.us/dr-quave/contact/ — ethnobotany, antimicrobial plants, First-Aid bundle
+- Tieraona Low Dog, MD, RH (AHG): drlowdog.com — women's health, contraindications, highest credential contact
+- David Winston, RH (AHG): herbalstudies.net — respiratory, adaptogens, TCM integration
+- 7Song (Northeast School of Botanical Medicine): 7song.com/contact/ — clinical herbalism, First-Aid
+- Susan Leopold (United Plant Savers): unitedplantsavers.org, (740) 742-3455 — at-risk herbs, Forest Grown Verified
+- Richo Cech (Strictly Medicinal Seeds): strictlymedicinalseeds.com — cultivation, seed saving, 40 years field experience
+
+**Primary sources used for contact research**:
+- AHG registered herbalists directory (americanherbalistsguild.com/directory/registered-herbalists/)
+- UMass Medicinal Plant Program (umass.edu/mpp/)
+- Virginia Tech 2024 forest botanicals research coverage
+- Bastyr University faculty page (bastyr.edu/about/faculty)
+- United Plant Savers leadership (unitedplantsavers.org)
+
+---
+
 ## Track B Phase 2 — User Gates Documentation + May 30 Launch Checklist — 2026-05-14
 
 **Task**: Verify all Track B staged materials are production-ready; write consolidated
