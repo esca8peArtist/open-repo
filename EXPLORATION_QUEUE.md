@@ -633,6 +633,61 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 
 ---
 
+## New Items (Session 1020 — 2026-05-14, post-checkpoint planning)
+
+### ⏳ Item 46: Stockbot 24-Hour Post-Checkpoint Execution Plan
+**Status**: QUEUED (Session 1020, May 14 2026)
+**Impact**: HIGH — Checkpoint outcome (PASS/NEAR-MISS/FAR_MISS) determines Gate 2 activation timeline
+**Goal**: Create operational 24-hour execution plan for May 15 (Day 1 post-checkpoint) covering:
+1. **PASS outcome path**: Week 1 Gate 2 prep checklist, capital allocation options, multi-ticker expansion decision
+2. **NEAR-MISS outcome path**: 1-week remediation plan (HMM regime scalar activation, threshold tuning), Gate 2 start date decision
+3. **FAR-MISS outcome path**: Diagnosis procedures (Jetson connectivity, DB sync, VIX regime), recovery options
+4. **Common Day 1 actions** across all paths: WORKLOG.md update, PROJECTS.md focus revision, stakeholder briefing
+**Feasibility**: HIGH — POST_GATE_1_RESPONSE_FRAMEWORK.md (Session 952) exists; this consolidates into 24-hour action plan
+**Effort estimate**: 2.5–3 hours
+**Deliverable**: `projects/stockbot/POST_CHECKPOINT_24_HOUR_PLAN.md` (outcome-specific day-by-day procedures, decision trees, Week 1 gate dependencies, capital allocation tables)
+**Why now**: Checkpoint outcome will be known at 20:05 UTC May 14; Day 1 Plan bridges from outcome to Week 1 execution without decision latency
+**Blocker**: None (autonomous planning work)
+**Next Step**: May 14 20:00 UTC checkpoint → immediately apply outcome to this plan → execute Day 1 procedures May 15
+
+---
+
+### ⏳ Item 47: Resistance-Research Phase 1 Wave 1 Execution Support Dashboard
+**Status**: QUEUED (Session 1020, May 14 2026)
+**Impact**: HIGH — User executes Wave 1 Batch 1 send May 15–17; real-time metrics enable contingency activation
+**Goal**: Create operational execution dashboard for May 15–17 Wave 1 send sequence:
+1. **Pre-send verification checklist**: Gist URLs correct, email template fields filled, email client configured, send schedule verified
+2. **Send-time procedures**: 5 contacts per sector, send times staggered, reply window expectations, bounce handling
+3. **Real-time metrics template**: Google Sheets auto-updating with email delivery, open rate, click rate, reply rate by contact/sector
+4. **Contingency activation procedures**: Day 3 (May 17 evening) evaluation of metrics against thresholds; trigger decision tree if <8% reply rate
+5. **Daily 7am/5pm briefing template**: Summary of day's sends, replies received, unsubscribes, action items for next wave
+**Feasibility**: HIGH — PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md (Item 28) exists with all templates; this dashboard operationalizes May 15–17 window
+**Effort estimate**: 2–2.5 hours
+**Deliverable**: `projects/resistance-research/PHASE_1_WAVE_1_EXECUTION_DASHBOARD.md` (pre-send checklist with 15 items, send schedule template, Google Sheets formula dashboard with 12 pre-built metrics, daily briefing template, contingency activation decision tree at Day 3)
+**Why now**: User is ready to execute May 15–17; Day 1 execution support removes friction and enables immediate metric detection
+**Blocker**: None (autonomous support infrastructure)
+**Next Step**: User begins Wave 1 send May 15 → use dashboard for real-time metrics → Day 3 contingency decision if needed
+
+---
+
+### ⏳ Item 48: Seedwarden Track B User Gate Execution Completion Verification
+**Status**: QUEUED (Session 1020, May 14 2026)
+**Impact**: MEDIUM — Track B launch date May 30 (2.5 weeks); completion verification procedures ensure go/no-go clarity
+**Goal**: Create completion verification procedures for Track B user gates (Gates 1, 2, 3) documented in TRACK_B_USER_GATES.md:
+1. **Gate 1 (Social Account Creation)**: Specific verification steps — Instagram Bio check, TikTok profile tags, Pinterest board creation, username consistency verification
+2. **Gate 2 (Canva Brand Kit Setup)**: Verification checklist — 10 brand colors confirmed, logo assets uploaded, typography configured, template variants tested with export
+3. **Gate 3 (Kit Email Account + Landing Page)**: Verification procedure — Kit account live, landing page loads, email routing works, 3-person test delivery
+4. **Cross-gate dependencies**: Which gates depend on others? Which can run in parallel?
+5. **May 29 evening Go/No-Go decision**: Pass/fail criteria per gate; escalation triggers if 1+ gates fail
+**Feasibility**: HIGH — TRACK_B_USER_GATES.md (Session 1017) exists with all procedures; this adds verification/completion confirmation
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/seedwarden/TRACK_B_GATE_COMPLETION_VERIFICATION.md` (3 gate-specific verification checklists with 8-12 items per gate, dependency matrix showing parallel/sequential execution, May 29 evening go/no-go decision procedure, failure escalation paths)
+**Why now**: May 30 launch is 2.5 weeks away; May 15–28 is the user execution window. Completion verification procedures prevent "are we ready?" ambiguity at May 28–29
+**Blocker**: None (autonomous support infrastructure)
+**Next Step**: User executes Track B gates May 15–28 using TRACK_B_USER_GATES.md → use completion verification checklist for May 28–29 confirmation → May 30 launch with confidence
+
+---
+
 ## Queued Items (Session 1005 — 2026-05-13, three new autonomous items added)
 
 ### ⏳ Item 40: Seedwarden Phase 3 Herbalist Expert Network Pre-Staging
