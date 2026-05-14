@@ -144,7 +144,7 @@ If the user has 5-8 minutes instead of 15-20 minutes on the send day, send these
 - Rationale: LEAP's law enforcement professional voice is the highest-credibility participant category in a DEA proceeding. DEA ALJs give significant weight to law enforcement reform voices. LEAP participation likely increases the probability of designation as a hearing participant.
 - Time: 90 seconds
 
-**Priority 3 — Mason Marks** (mason.marks@yale.edu — see Category C admin law contacts in `EXECUTE_CATEGORY_C_ADMIN_FACULTY_MAY_12-17.md`)
+**Priority 3 — Mason Marks** (mason.marks@fsu.edu — Florida State University College of Law, verified May 14, 2026 — see Category C admin law contacts in `domain-42-email-template.md` Template D42-C)
 - Rationale: Marks wrote the Yale Law Journal foundational analysis that Domain 42 cites. His engagement authenticates the APA procedural argument. He may submit written academic evidence that carries more weight with ALJs than organizational testimony.
 - Time: 90 seconds
 

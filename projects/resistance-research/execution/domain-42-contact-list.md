@@ -58,7 +58,7 @@ These contacts are reached as methodological peers. Use Template D42-C. The spec
 
 | # | Organization / Contact | Contact Email | Contact Role | Most Relevant Domain 42 Section | Specific Ask |
 |---|----------------------|--------------|-------------|-------------------------------|-------------|
-| C-1 | Mason Marks — Yale Law School | mason.marks@yale.edu (confirm current institutional email before sending; he may have moved institutions) | Law professor / regulatory law expert | Section 2.3 (cites his Yale Law Journal "Separation of Drug Scheduling Powers" and his February 2026 Regulatory Review piece "Who Is Really in Charge of Drug Scheduling?") | Methodological feedback on whether Domain 42's regulatory capture analysis extends his Yale Law Journal argument correctly; if he is planning to testify, Domain 42's democratic exclusion framing may complement his statutory analysis |
+| C-1 | Mason Marks — Florida State University | mason.marks@fsu.edu (primary — confirmed FSU College of Law faculty as of May 14, 2026; retains visiting fellowship at Yale Law ISP) | Law professor / regulatory law expert | Section 2.3 (cites his Yale Law Journal "Separation of Drug Scheduling Powers" and his February 2026 Regulatory Review piece "Who Is Really in Charge of Drug Scheduling?") | Methodological feedback on whether Domain 42's regulatory capture analysis extends his Yale Law Journal argument correctly; if he is planning to testify, Domain 42's democratic exclusion framing may complement his statutory analysis |
 | C-2 | Ohio State Moritz College of Law — Drug Enforcement and Policy Center | Contact via depcenter@moritzlaw.osu.edu or the Center's webform at moritzlaw.osu.edu/drug-enforcement-and-policy-center | Research Director or faculty | Section 2 (regulatory capture) + Section 6.1 (APA procedural reform — independent ALJ pool proposal) | Forward to DEPC research staff; the independent ALJ pool reform proposal (Section 6.1) is an administrative law argument that benefits from expert review; ask whether the APA challenge to DEA ALJ structure is viable |
 
 **Wave 2 timing**: Send May 10-12, same day as Category B Wave 2. These contacts can be sent in parallel with Category B on a different send day (May 12 is fine; gives Wave 1 Category A contacts four days to respond before the academic wave goes out).
@@ -74,7 +74,7 @@ These contacts receive the federalism framing (Section 4). Entry point is the 32
 | D-1 | Colorado Attorney General | ag.colorado.gov (press/policy contact — verify current contact) | Colorado was the first recreational legalization state (Amendment 64, 2012, 55.32%); Section 4.3 (Federalism dimension — state democratic will overridden) directly applies; Colorado AG has been active on cannabis banking issues | Does the Colorado AG office plan to file hearing comments or a participation notice for DEA-1362? Domain 42 Section 4 provides the federalism framing for such a filing |
 | D-2 | California Attorney General | oag.ca.gov/contact (press contact) | California Prop 64 (2016, 57.13%); largest recreational market; California AG has filed on federal cannabis banking issues | Same ask as Colorado; California's 280E exposure ($2.24B in estimated annual excess taxes across the industry, Whitney Economics data cited in Section 4.1) is the most acute specific harm to document in hearing comments |
 | D-3 | Michigan Attorney General | michigan.gov/ag (press/policy contact) | Michigan Proposal 18-1 (2018, 56%); Michigan AG has been active on multi-state cannabis banking coalition | Same ask; Michigan is the third-largest recreational market and has active state-federal coordination on cannabis policy |
-| D-4 | Washington State Attorney General | atg.wa.gov/contact (press/policy contact) | Washington was one of the first two recreational legalization states (I-502, 2012, 55.7%); Washington AG Bob Ferguson (now Governor) was active on cannabis banking; confirm current AG and their position | Same ask; Washington AG contact may have changed with Ferguson's election as Governor — verify current AG before sending |
+| D-4 | Washington State Attorney General | atg.wa.gov/contact (press/policy contact) | Washington was one of the first two recreational legalization states (I-502, 2012, 55.7%); current AG is Nick Brown (Ferguson elected Governor January 2025); AG Brown signed the SAFER Banking letter and is active on cannabis-federal coordination | Same ask; contact Nick Brown's office for hearing participation coordination |
 
 **Wave 3 timing**: Send May 14-17. State AG offices are slower to route than advocacy organizations; sending by May 14 gives them two weeks before the May 28 deadline and approximately four business days to route internally.
 
@@ -103,7 +103,7 @@ The following email addresses should be verified against current organizational 
 - NAACP LDF: naacpldf.org/about-us/staff
 - Sentencing Project: sentencingproject.org/about
 - Prison Policy Initiative: prisonpolicy.org/about
-- Mason Marks: Search current institutional affiliation (Yale Law School as of Domain 42 research completion date, but confirm)
+- Mason Marks: Primary email mason.marks@fsu.edu (Florida State University College of Law, confirmed May 14, 2026)
 
 ---
 

@@ -88,7 +88,7 @@ If for any reason only 5 contacts can receive outreach before May 15, prioritize
 1. NAACP Legal Defense Fund — naacpldf.org contact webform (Template D42-B)
 2. Prison Policy Initiative — info@prisonpolicy.org (Template D42-B)
 3. Marijuana Policy Project — mpp@mpp.org (Template D42-A)
-4. Mason Marks — mason.marks@yale.edu (confirm current institutional email first) (Template D42-C)
+4. Mason Marks — mason.marks@fsu.edu (primary — Florida State University College of Law, confirmed May 14, 2026) (Template D42-C)
 5. Ohio State Moritz DEPC — depcenter@moritzlaw.osu.edu (Template D42-C)
 
 **Personalization note for Day 2 sends**: By May 10, you may have early responses from May 8 sends. If DPA or NORML has replied, reference that in the Category B sends: "Drug Policy Alliance and NORML are reviewing this briefing for potential DEA-1362 participation — I wanted to make sure you had it before the May 28 deadline."
@@ -99,7 +99,7 @@ If for any reason only 5 contacts can receive outreach before May 15, prioritize
 1. California AG — oag.ca.gov/contact
 2. Colorado AG — ag.colorado.gov
 3. Michigan AG — michigan.gov/ag
-4. Washington AG — atg.wa.gov/contact (confirm current AG; Bob Ferguson is now Governor)
+4. Washington AG — atg.wa.gov/contact (Nick Brown is current AG as of May 14, 2026; Ferguson is now Governor)
 
 **Briefing materials**: Attach Domain 42 Section 4 (federalism, ~1,200 words) as a standalone excerpt if possible, flagged as "Section 4 of Domain 42 — reads independently." AG offices have limited staff time; a shorter extract increases the probability of engagement.
 
@@ -198,8 +198,8 @@ Total estimated first-order network reach from 3 Tier 1 organizations: 2+ millio
 ### Pre-May 8 (by end of day May 7)
 
 - [ ] Verify all 10 contact email addresses against current organizational websites (see verification list in `domain-42-contact-list.md`)
-- [ ] Confirm Washington AG current office holder (Bob Ferguson is now Governor; identify successor and current press/policy contact)
-- [ ] Confirm Mason Marks current institutional email (Yale Law as of research completion; may have moved)
+- [x] Confirm Washington AG current office holder: Nick Brown (Ferguson is now Governor)
+- [x] Confirm Mason Marks current institutional email: mason.marks@fsu.edu (Florida State University College of Law)
 - [ ] Complete all bracketed fields in all four email templates: [Name], [Organization name], [GIST URL or attachment note]
 - [ ] If Phase 1 Gist has been created: insert URL in templates. If not: note "attached" and prepare Domain 42 markdown file for attachment
 - [ ] Prepare Domain 42 submission guide (`domain-42-may-28-dea-submission-guide.md`) as a companion attachment for all Category A and B sends

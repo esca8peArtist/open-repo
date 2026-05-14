@@ -320,7 +320,7 @@ The Domain 42 outreach plan (`execution/domain-42-may-28-outreach-plan.md`) iden
 | Marijuana Policy Project (A-2) | Refers Domain 42 to federal policy director; congressional ally referral | mpp@mpp.org |
 | LEAP (A-4) | Files short participation notice — law enforcement voice is unusually credible with DEA ALJs | info@leap.cc |
 | SSDP (A-5) | Chapter network mobilization; referral to DPA/NORML | ssdp@ssdp.org |
-| Mason Marks (C-1) | Methodological validation; may be planning independent testimony (he published the Yale Law Journal article Domain 42 cites) | mason.marks@yale.edu (verify current institution) |
+| Mason Marks (C-1) | Methodological validation; may be planning independent testimony (he published the Yale Law Journal article Domain 42 cites) | mason.marks@fsu.edu (verified Florida State University College of Law, May 14, 2026) |
 | State AGs (D-1 through D-4) | One or more AG offices add federalism argument to existing DEA-1362 comment | See per-state contacts in `execution/domain-42-contact-list.md` |
 
 **If only 5 contacts can be reached before May 15, priority order**: Drug Policy Alliance, NORML, ACLU Criminal Law Reform Project, The Sentencing Project, NAACP Legal Defense Fund.
@@ -352,7 +352,7 @@ The Domain 42 outreach plan (`execution/domain-42-may-28-outreach-plan.md`) iden
 | May 13 (TODAY) | Send Wave 1 if not yet sent — DPA, NORML, ACLU CLR, Sentencing Project, LEAP, SSDP | IMMEDIATE |
 | May 14 | Create Domain 42 Gist (10 min); update all Domain 42 email template [GIST URL] fields | Day 0 |
 | May 15–16 | Send Wave 2 — NAACP LDF, PPI, MPP, Mason Marks, Ohio State Moritz | Scheduled |
-| May 17 | Send Wave 3 — State AGs (confirm current contacts first; WA AG changed — Ferguson is now Governor) | Scheduled |
+| May 17 | Send Wave 3 — State AGs (confirm current contacts first; Current Washington AG: Nick Brown (verified May 14, 2026)) | Scheduled |
 | May 21 | Final reminder wave — all non-respondents. LAST DAY for any new Domain 42 outreach | Hard stop |
 | May 28 | DEA participation deadline. Log which organizations filed. | External deadline |
 
@@ -422,7 +422,7 @@ The Domain 42 outreach plan (`execution/domain-42-may-28-outreach-plan.md`) iden
 
 **Phase 1b contacts** (12 election protection orgs): Full verification checklist in `execution/phase-1-contact-verification-checklist.md` Sections 3–4. Estimated time: 40–60 minutes for 12 contacts. Can be done in parallel with Day 0 setup while Phase 1a emails are drafting.
 
-**Note on Washington AG (Domain 42 Category D)**: Bob Ferguson moved from AG to Governor. Confirm current Washington AG and their press/policy contact before sending Wave 3.
+**Note on Washington AG (Domain 42 Category D)**: Nick Brown is current Washington AG (Ferguson is Governor). Confirm current Washington AG and their press/policy contact before sending Wave 3.
 
 **Note on Mason Marks (Domain 42 Category C)**: Listed as Yale Law School as of May 7. Confirm current institutional email before sending Category C wave.
 
@@ -487,7 +487,7 @@ The 5 Batch 1 contacts were verified April 29 (14 days ago). Re-verify immediate
 
 **Priority**: Batch 1 re-verification is the highest-value 30-minute task available right now. Stale contact data on a Batch 1 send creates a hard bounce that cannot be undone.
 
-**Washington AG note (Domain 42)**: Confirm the current Washington AG before the Category D wave. Bob Ferguson left the AG position when he became Governor. This verification should happen before May 14 (Category D send date).
+**Washington AG note (Domain 42)**: Confirm the current Washington AG before the Category D wave. Nick Brown is current Washington AG (Ferguson became Governor January 2025). This verification should happen before May 14 (Category D send date).
 
 **Mason Marks note (Domain 42)**: Confirm current institutional email. Yale Law was correct as of May 7. Verify before the Category C wave (May 12).
 
@@ -560,7 +560,7 @@ The following items are still needed or have open questions. None blocks Phase 1
 | Gap | Description | Blocking? | Resolution |
 |-----|-------------|-----------|------------|
 | Domain 42 Wave 1 overdue | Wave 1 was planned for May 8; today is May 13; organizations have 15 days remaining | No — 15 days is still viable for Tier 1 contacts | Send TODAY using minimal viable path (direct attachment) |
-| Washington AG contact stale | Bob Ferguson became Governor; current AG unknown | No — Category D wave is scheduled May 14–17 | Verify before May 14 via atg.wa.gov |
+| Washington AG contact stale | Nick Brown is current AG (verified May 14, 2026) | No — Category D wave is scheduled May 14–17 | Verify before May 14 via atg.wa.gov |
 | Mason Marks institutional email | Needs day-of confirmation (Yale Law as of May 7) | No — Category C wave is May 12 | Visit yale.edu/law or mason.marks current site before send |
 | Tier 1 Batches 2–3 not re-verified since research | 40 contacts not position-verified since initial compilation | No — verification is a pre-send task per batch, not a pre-launch gate | Run `execution/phase-1-contact-verification-checklist.md` Sections 2–4 before each batch |
 | Domain 37 standalone Gist does not yet exist | Must be created Day 0 for Path A+37 Phase 1b | Yes for A+37 Phase 1b only — does not block Phase 1a | Create Day 0 using `execution/phase-1-gist-creation-playbook.md` Section 2 |

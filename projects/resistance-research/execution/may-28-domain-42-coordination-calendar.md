@@ -21,7 +21,7 @@ scope: "Day-by-day outreach and coordination calendar for the 21-day window from
 **Actions required before bed tonight**:
 - Verify ACLU contact name at aclu.org/issues/criminal-law-reform (5 min)
 - Verify Mason Marks current institutional affiliation (2 min — law.yale.edu/mason-marks or Google search)
-- Verify Washington AG current contact at atg.wa.gov (3 min — confirm AG after Ferguson became Governor in January 2026)
+- Verify Washington AG contact: Nick Brown is current AG (Ferguson became Governor January 2025)
 - Create contact tracking spreadsheet from template in `execution/tier-1-contact-batches.md` — fields: Name, Institution, Verified Email, Date Sent, Open Rate, Response Status, Notes (10 min)
 - Fill `[Your name]` and `[Contact information]` in all four templates D42-A through D42-D (5 min)
 - Set 6 calendar reminders for May 8: sends at 9:00, 9:30, 10:00, 10:30, 11:00, 11:30 AM (2 min)
@@ -88,7 +88,7 @@ No new outreach on weekends. Use weekend time to:
 1. 9:00 AM — NAACP Legal Defense Fund (B-2) — naacpldf.org/contact webform — Template D42-B
 2. 9:30 AM — Prison Policy Initiative (B-4) — info@prisonpolicy.org — Template D42-B
 3. 10:00 AM — Marijuana Policy Project (A-2) — mpp@mpp.org or webform — Template D42-A
-4. 10:30 AM — Mason Marks — Yale Law School (C-1) — mason.marks@yale.edu (confirm affiliation) — Template D42-C
+4. 10:30 AM — Mason Marks — Florida State University (C-1) — mason.marks@fsu.edu (confirmed May 14, 2026) — Template D42-C
 5. 11:00 AM — Ohio State Moritz DEPC (C-2) — depcenter@moritzlaw.osu.edu — Template D42-C
 
 **Subject lines**:
@@ -112,7 +112,7 @@ No new outreach on weekends. Use weekend time to:
 
 **Subject line for all D contacts**: `Domain 42 briefing — DEA-1362 hearing and federalism analysis for [State] AG office`
 
-**Pre-send check on May 14**: Verify Washington AG contact before sending. This verification should have been done May 7 (see pre-launch prep above) but reconfirm. If the new Washington AG's office has not been active on cannabis banking coalition work, note this in the tracking log and consider whether to send at all — a cold contact to an AG office that has not continued Ferguson's cannabis work may not be worth the send slot.
+**Pre-send check on May 14**: Verified Washington AG contact: Nick Brown is current AG. Brown signed the SAFER Banking letter and is active on cannabis-federal coordination, continuing Ferguson's work. Proceed with send.
 
 **Realistic outcome for Category D**: State AG offices are the lowest-conversion category. The goal is awareness and planting the federalism framing, not immediate COM status. Any acknowledgment from a policy staffer is a Wave 3 success. Confirmed DEA-1362 participation notice from a state AG is a stretch goal, not a base-case expectation.
 

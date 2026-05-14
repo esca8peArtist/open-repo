@@ -22,9 +22,9 @@ orgs: "Drug Policy Alliance, NORML, ACLU Criminal Law Reform, The Sentencing Pro
 
 Complete all steps before sending any email.
 
-- [ ] Create the Domain 42 Gist (see Section 5 below) — you need the live Gist URL before any email goes out
-- [ ] Fill the Gist URL into each email where `[GIST URL — INSERT AFTER CREATION]` appears (5 instances across 5 emails)
-- [ ] Fill your own name and contact information into `[Your name]` / `[Your contact information]` in each email (5 instances)
+- [x] Domain 42 Gist CONFIRMED LIVE — https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab (created May 9, verified May 13)
+- [x] Gist URL pre-filled into all 5 emails (done by research agent, May 13, 2026 — `[GIST URL — INSERT AFTER CREATION]` replaced in all 5 email bodies)
+- [ ] Fill your own name and contact information into `[Your name]` / `[Your contact information]` in each email (5 instances — user action required)
 - [ ] Confirm May 28 is still in the future
 - [ ] Send Tuesday–Thursday if possible, before noon recipient's local time — all 5 orgs are US East Coast or DC-based
 - [ ] Do NOT attach the participation notice drafts in your first send — offer them conditionally (the offer is written in, the notices are in Section 4 ready to send if requested)
@@ -118,7 +118,7 @@ The analysis — Domain 42: Drug Policy, Regulatory Capture, and Democratic Legi
 
 Domain 42 is 6,860 words, 54 citations, CC Attribution 4.0. It covers all three mechanisms, the April 23 DOJ order context, international comparative evidence (Canada, Germany, Portugal), and a three-tier structural reform architecture. Use it in filings, testimony preparation, advocacy materials, and organizational communications without restriction.
 
-[GIST URL — INSERT AFTER CREATION]
+https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
 **Participation notice deadline**: Written notice must be submitted to nprm@dea.gov, referencing Docket No. DEA-1362, by May 28, 2026. The notice requires only: the person's or organization's name, a brief description of their interest in the proceeding, and a statement of whether they wish to present oral or written evidence. That is three sentences. If it would help, I have drafted participation notice language for DPA — I can send it if you confirm you want it.
 
@@ -156,7 +156,7 @@ The analysis — Domain 42: Drug Policy, Regulatory Capture, and Democratic Legi
 
 Domain 42 is 6,860 words, 54 citations, CC Attribution 4.0. It covers all three mechanisms, the April 23 DOJ order context, international comparative evidence (Canada, Germany, Portugal), and a three-tier structural reform architecture. Use it in filings, testimony preparation, advocacy materials, and organizational communications without restriction.
 
-[GIST URL — INSERT AFTER CREATION]
+https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
 **Participation notice deadline**: Written notice must be submitted to nprm@dea.gov, referencing Docket No. DEA-1362, by May 28, 2026. The notice requires only: the organization's name, a brief description of their interest in the proceeding, and a statement of whether they wish to present oral or written evidence. If it would help, I have drafted participation notice language for NORML — I can send it if you confirm you want it.
 
@@ -195,7 +195,7 @@ These data streams describe a feedback loop: drug enforcement disenfranchises it
 
 Domain 42 covers: regulatory capture (Section 2), disenfranchisement feedback loop (Section 3), federal-state democratic conflict (Section 4), international comparative evidence (Section 5), structural reform architecture (Section 6). 6,860 words, 54 citations, CC Attribution 4.0.
 
-[GIST URL — INSERT AFTER CREATION]
+https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
 **What filing a participation notice accomplishes**: Even if DEA does not select ACLU as a designated participant — consistent with historical pattern — a participation notice from a civil rights organization asserting the disenfranchisement dimension creates a public administrative record. That record documents which organizations sought to raise this argument and whether DEA's participant selection excluded them. Exclusion, if it happens, is additional evidence for the democratic accountability failure Domain 42 analyzes. Filing is not dependent on selection. The record of the attempt is itself useful.
 
@@ -232,7 +232,7 @@ These data streams describe a feedback loop: drug enforcement disenfranchises it
 
 Domain 42 covers: regulatory capture (Section 2), disenfranchisement feedback loop (Section 3), federal-state democratic conflict (Section 4), international comparative evidence (Section 5), structural reform architecture (Section 6). 6,860 words, 54 citations, CC Attribution 4.0.
 
-[GIST URL — INSERT AFTER CREATION]
+https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
 **What filing a participation notice accomplishes**: Even if DEA does not select The Sentencing Project as a designated participant — consistent with historical pattern — a participation notice from a civil rights research organization asserting the disenfranchisement dimension creates a public administrative record. Filing is not dependent on selection. The record of the attempt is itself useful.
 
@@ -268,7 +268,7 @@ The analysis — Domain 42: Drug Policy, Regulatory Capture, and Democratic Legi
 
 Domain 42 is 6,860 words, 54 citations, CC Attribution 4.0. It covers all three mechanisms, the April 23 DOJ order context, international comparative evidence (Canada, Germany, Portugal), and a three-tier structural reform architecture. Use it in filings, testimony preparation, advocacy materials, and organizational communications without restriction.
 
-[GIST URL — INSERT AFTER CREATION]
+https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
 
 **Participation notice deadline**: Written notice must be submitted to nprm@dea.gov, referencing Docket No. DEA-1362, by May 28, 2026. The notice requires only: the organization's name, a brief description of their interest in the proceeding, and a statement of whether they wish to present oral or written evidence. That is three sentences. If it would help, I have drafted participation notice language for LEAP — I can send it if you confirm you want it. A short participation notice is the only ask; LEAP does not need to commit to presenting testimony.
 

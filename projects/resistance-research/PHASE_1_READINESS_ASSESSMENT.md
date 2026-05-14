@@ -115,7 +115,7 @@ Proposed contact list for Domain 42 Sub-Batch:
 4. Law Enforcement Action Partnership — info@leap.cc
 5. ACLU Criminal Law Reform — aclu.org/contact (route to criminal law reform team)
 6. The Sentencing Project — staff@sentencingproject.org
-7. Mason Marks (Yale Law School) — mason.marks@yale.edu (or current institutional address)
+7. Mason Marks (Florida State University College of Law) — mason.marks@fsu.edu (verified May 14, 2026)
 
 **Day 3-5 (May 10-12) — Secondary Wave**
 Target: Category B civil rights organizations and Category C academic contacts. These contacts will appreciate the democratic exclusion framing more than the administrative law procedural framing. The Weill Cornell Meinhofer et al. (May 1, 2026) study is a useful hook — it provides the peer-reviewed data that legalization alone does not close racial disparities, directly reinforcing Domain 42's democratic feedback loop argument.

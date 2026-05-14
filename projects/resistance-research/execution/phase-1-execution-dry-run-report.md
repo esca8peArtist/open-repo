@@ -85,7 +85,7 @@ The template's opening paragraph in D42-B is stronger than D42-A for this audien
 **Contact 3: Mason Marks — Yale Law School (C-1) — Template D42-C**
 
 Pre-send checklist items:
-- Email verification: mason.marks@yale.edu — the contact list explicitly flags "confirm current institutional email before sending; he may have moved institutions." **This is the highest-priority pre-send verification step in the entire contact list.** Before sending to Marks, visit Yale Law School faculty directory or Google "Mason Marks Yale" to confirm current affiliation. If he has moved institutions, update the email accordingly. Estimated time: 2 minutes.
+- Email verification: mason.marks@fsu.edu (Florida State University College of Law, confirmed May 14, 2026). Primary institution change from Yale to FSU verified; Marks retains visiting fellowship at Yale Law ISP.
 - Template specific fill: the `[specific work]` field maps to "Separation of Drug Scheduling Powers" (Yale Law Journal, 2024) and the "Who Is Really in Charge of Drug Scheduling?" piece in the February 2026 Regulatory Review — both are already referenced in the template body.
 
 Template field fills for Marks:
@@ -127,7 +127,7 @@ Dry-run verification status by category:
 
 - **Category C (2 contacts)**: Mason Marks — explicit flag to verify current institutional affiliation (2 minutes). Ohio State Moritz DEPC — depcenter@moritzlaw.osu.edu is an institutional inbox unlikely to have changed. 1 minute.
 
-- **Category D (4 AG offices)**: All four are routed to press/policy contact webforms — no individual names, so verification is confirming webform URL is still active. **Washington AG requires an additional step**: Bob Ferguson moved to Governor January 2026; current AG needs to be verified before send. 3 minutes for Washington AG verification, 1 minute each for Colorado, California, Michigan.
+- **Category D (4 AG offices)**: All four are routed to press/policy contact webforms — no individual names, so verification is confirming webform URL is still active. **Washington AG verified**: Nick Brown is current AG (Ferguson is now Governor); Brown signed SAFER Banking letter and is active on cannabis-federal coordination. 1 minute each for all four states.
 
 **Total contact verification time**: approximately 25–30 minutes for all 10 contacts. This can run concurrently with the Gist creation step on the morning of May 8 — they are independent tasks.
 
@@ -217,8 +217,8 @@ Path B sequences Batch 1 → feedback collection (4 weeks) → Batch 2–4 distr
 **Pre-launch actions required before first send (user-only, ~35 minutes)**:
 
 - [ ] Verify ACLU contact name (5 minutes: check aclu.org/issues/criminal-law-reform for current project director)
-- [ ] Verify Mason Marks current institutional affiliation (2 minutes: law.yale.edu/mason-marks or Google search)
-- [ ] Verify Washington AG current contact (3 minutes: atg.wa.gov — confirm AG after Ferguson became Governor)
+- [x] Verify Mason Marks current institutional affiliation: FSU College of Law, mason.marks@fsu.edu (confirmed May 14, 2026)
+- [x] Verify Washington AG current contact: Nick Brown (confirmed current AG, May 14, 2026)
 - [ ] Create contact tracking spreadsheet from template in `execution/tier-1-contact-batches.md` (10 minutes)
 - [ ] Create Domain 42 Gist OR confirm attachment fallback approach (10 minutes for Gist creation, or 0 minutes if using attachment)
 - [ ] Fill Zone A contact info field in Gist if using Gist approach (1 minute)

@@ -108,7 +108,7 @@ State AGs score high on DEA credibility (3) and moderate on amplification (2) bu
 
 ### Wave 3 — Days 3–5: State AGs and Tertiary Contacts
 
-**Recipients (4–5 organizations)**: California AG, Colorado AG, Michigan AG, Washington AG (verify current AG before sending — Bob Ferguson became Governor in January 2026; confirm the current Attorney General and whether the SAFER Banking coalition work has transferred), Brennan Center for Justice (add a single paragraph to their existing Phase 1 send if they are in Batch 1–3; do not double-send)
+**Recipients (4–5 organizations)**: California AG, Colorado AG, Michigan AG, Washington AG (Nick Brown is current AG as of May 14, 2026; Ferguson became Governor January 2025; Brown signed SAFER Banking letter), Brennan Center for Justice (add a single paragraph to their existing Phase 1 send if they are in Batch 1–3; do not double-send)
 
 **When**: May 12–14. California AG first (largest recreational market, clearest 280E harm); Colorado AG second (first legalization state, Amendment 64 2012 55.32%); Michigan AG third; Washington AG only if current contact confirmed.
 

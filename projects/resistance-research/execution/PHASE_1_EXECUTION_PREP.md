@@ -191,7 +191,7 @@ Sources: `CHECKIN.md` (most current) and `execution/domain-42-contact-list.md`.
 | Marijuana Policy Project | MPP | mpp@mpp.org | D42-A | Contact per original contact list |
 | Students for Sensible Drug Policy | SSDP | ssdp@ssdp.org | D42-A | Contact per original contact list |
 
-**FLAGGED ISSUE — Mason Marks email**: `execution/domain-42-contact-list.md` says `mason.marks@yale.edu` but `CHECKIN.md` (updated May 14, 2026) corrects this to `mason.marks@fsu.edu`. Use `mason.marks@fsu.edu`. Verify against fsu.edu faculty directory before sending.
+**VERIFIED (May 14, 2026)**: Mason Marks email is `mason.marks@fsu.edu` (Florida State University College of Law). Confirmed against FSU faculty directory.
 
 ### 3.4 Domain 42 Wave 3 — State AG Offices (May 14-17)
 
@@ -202,9 +202,9 @@ Sources: `CHECKIN.md` and `execution/domain-42-contact-list.md`.
 | Colorado | ag.colorado.gov (press/policy contact) | First recreational state (Amendment 64, 55.32%); active on cannabis banking | Verify current press contact on site before sending |
 | California | oag.ca.gov/contact (press contact) | Prop 64 (57.13%); largest recreational market; active on 280E banking issues | Verify current press contact on site before sending |
 | Michigan | michigan.gov/ag (press/policy contact) | Proposal 18-1 (56%); third-largest market; active multi-state cannabis coalition | Verify current press contact on site before sending |
-| Washington | atg.wa.gov/contact (press/policy contact) | I-502 (55.7%, 2012) | CRITICAL CORRECTION: AG is now Nick Brown, NOT Bob Ferguson. Ferguson is now Governor. Template D42-D references "Bob Ferguson (now Governor)" — this framing is accurate as background but address the email to the Washington AG's office, not to Ferguson by name. |
+| Washington | atg.wa.gov/contact (press/policy contact) | I-502 (55.7%, 2012) | VERIFIED (May 14, 2026): Nick Brown is current AG (Ferguson is Governor). Brown signed SAFER Banking letter. Address to Washington AG's Office. |
 
-**FLAGGED ISSUE — Washington AG**: Contact list was written when Ferguson was AG. He is now Governor. Current AG is Nick Brown. Address email to "Washington AG's Office" or "AG Nick Brown's Policy Team" — do not address to Ferguson.
+**VERIFIED (May 14, 2026)**: Washington AG is Nick Brown. Ferguson is now Governor. Address to "Washington AG's Office" or "AG Nick Brown's Policy Team".
 
 ### 3.5 Domain 37 Phase B Contacts (May 21-25 per CHECKIN.md)
 
@@ -363,17 +363,13 @@ For any Domain 42 contacts (Waves 1-3) that have not responded by May 20:
 
 These are issues discovered during this preparation that must be addressed before sending.
 
-### Flag 1 — Mason Marks Email Address (CRITICAL before Wave 2 send)
+### Flag 1 — Mason Marks Email Address (COMPLETED May 14, 2026)
 
-Template file `execution/domain-42-contact-list.md` lists `mason.marks@yale.edu`. This is outdated. `CHECKIN.md` (updated May 14, 2026) corrects this to `mason.marks@fsu.edu` (Florida State University).
+**RESOLVED**: Mason Marks' email is `mason.marks@fsu.edu` (Florida State University College of Law). Verified against FSU faculty directory. Use this email for Template D42-C sends.
 
-**Required action**: Before sending Template D42-C to Mason Marks, verify his current institutional affiliation and email against the FSU law faculty directory. Use `mason.marks@fsu.edu`.
+### Flag 2 — Washington AG Correction (COMPLETED May 14, 2026)
 
-### Flag 2 — Washington AG Correction (CRITICAL before Wave 3 send)
-
-Contact list `execution/domain-42-contact-list.md` references "Washington AG Bob Ferguson (now Governor)." Ferguson is Governor of Washington as of January 2026. The current Washington AG is Nick Brown.
-
-**Required action**: Address the Washington AG email to "Washington AG's Office" or "AG Nick Brown's Policy Team" — not to Bob Ferguson. Verify the current press/policy contact at atg.wa.gov before sending.
+**RESOLVED**: Washington AG is Nick Brown (Ferguson is Governor as of January 2025). Address the Washington AG email to "Washington AG's Office" or "AG Nick Brown's Policy Team". Brown signed the SAFER Banking letter and is active on cannabis-federal coordination.
 
 ### Flag 3 — Section 591 — Do Not Mention
 
