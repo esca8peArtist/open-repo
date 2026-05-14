@@ -4,6 +4,61 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Track B Phase 2 — User Gates Documentation + May 30 Launch Checklist — 2026-05-14
+
+**Task**: Verify all Track B staged materials are production-ready; write consolidated
+user-action checklists for Gates 1–3; create May 30 launch day checklist; update PROJECTS.md.
+
+**Verification findings**:
+
+- **Gate 1 materials** (social accounts): `TRACK_B_SOCIAL_ACCOUNT_CHECKLIST.md` confirmed
+  complete with platform-specific step-by-step instructions for Instagram, TikTok, and
+  Pinterest. Logo asset confirmed at `logos/seedwarden_logo_1.png`. Handle strategy documented
+  (primary: `seedwarden`; fallbacks in priority order). No gaps found.
+
+- **Gate 2 materials** (Canva Brand Kit): `TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md` confirmed
+  complete. All 10 hex codes specified (6 brand + 4 zone band). All 3 fonts named (Playfair
+  Display, Lato, Cormorant Garamond — all free in Canva). Logo upload path confirmed. No gaps
+  found.
+
+- **Gate 3 materials** (Kit email): `TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md` confirmed complete
+  with account creation steps, all 15 tags named, landing page build instructions, zone routing
+  logic, 5-email sequence build order, and 3-test protocol. Email copy confirmed in
+  `marketing/email-and-launch-plan.md`. One known fix flagged (Email 5 stale date reference
+  "May 20 (tomorrow)" — must be removed before Kit automation goes live; 5-minute fix).
+
+- **Phase 3 assets** (7 files): All 7 files confirmed present in `phase-3-assets/` subdirectories:
+  `PHASE_3_EXECUTION_GUIDE.md`, `canva-mockup-briefs/phase-3-canva-mockup-brief.md`,
+  `email-templates/phase-3-broadcast-sequence.md`, `social-templates/phase-3-social-post-templates.md`,
+  `analytics-templates/phase-3-kpi-dashboard.md`, `landing-page-copy/phase-3-landing-pages.md`,
+  `stock-image-lists/phase-3-botanical-stock-list.md`. Brand alignment confirmed (same Brand Kit +
+  same Kit account; Medicinal Herbs palette is additive only). All 7 files are production-ready;
+  no remaining agent work for Phase 3.
+
+- **May 30 launch day plan**: `MAY_30_LAUNCH_DAY_EXECUTION_PLAN.md` confirmed present with
+  hard gate deadlines (Gate 2: May 24, Gates 1+3: May 28), audience sequencing (warm Kit
+  subscribers 12pm, cold social 2pm, Pinterest 3:30pm), and Day 1 metric targets.
+
+- **30-day content calendar**: `MAY_30_JUNE_30_CONTENT_CALENDAR.md` confirmed present covering
+  May 30–June 30 with per-platform cadence (Instagram 4/week, TikTok 3/week, Pinterest 7–10/week).
+
+- **Risk plan**: `MAY_30_RISK_AND_CONTINGENCY_PLAN.md` confirmed present with fallbacks for
+  each gate failure mode and May 29 go/no-go decision tree.
+
+**File created**:
+
+- `projects/seedwarden/TRACK_B_USER_GATES.md` — Consolidated user-action checklist document
+  with all three gate checklists (Gates 1–3, 30–45 min each), May 30 launch day sequence,
+  May 31–June 6 post-launch schedule, fallback table, and quick-reference file index. Designed
+  for single-session execution (two sessions total: Gates 1–2 together; Gate 3 alone). All items
+  are checkbox-format with <30 seconds per item. PROJECTS.md updated to reflect documentation
+  complete status.
+
+**PROJECTS.md updated**: seedwarden current focus updated to reflect user gates documentation
+complete and ready for execution May 15–28.
+
+---
+
 ## Track B Launch Readiness — Full Preparation Package — 2026-05-13
 
 **Task**: Full Track B launch preparation for May 30. Six deliverables: readiness audit,
