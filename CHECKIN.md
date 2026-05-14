@@ -160,13 +160,36 @@ None. Phase 1 is fully user-ready.
 7. **May 15-21**: Monitor Batch 1 responses; prepare Batch 2 and Domain 37 sends
 8. **May 19**: HMM Phase 2 A/B split (ridge_wf gets HMM scalar)
 
-### Strategic Notes
+### Session 1008 Work Summary
 
+**Main deliverable**: Consolidated Phase 1 execution into a single user-ready checklist (`PHASE_1_IMMEDIATE_EXECUTION_CHECKLIST_MAY_14.md`). User can execute Blocks 1-5 in ~1.5 hours and get Batch 1 in flight.
+
+**Secondary deliverable**: May 14 checkpoint timeline documented with expected outcomes and post-checkpoint recovery levers. Ready for 13:30 UTC AAPL h+10 SELL and 20:00 UTC checkpoint.
+
+**Files committed**:
+- `PHASE_1_IMMEDIATE_EXECUTION_CHECKLIST_MAY_14.md` (new, 2,100 lines) — user-ready execution guide
+- `CHECKIN.md` (updated) — Session 1008 entry + May 14 checkpoint timeline
+- `PROJECTS.md` (pruned) — removed stale Session 1000 reference
+- `WORKLOG.md` (updated) — Session 1008 completion log
+
+**Strategic alignment**:
 - Phase 1 preparation is 100% complete; zero ambiguity remains
-- User execution is now purely mechanical (Gist creation, form-filling, sending)
-- All supporting materials (quick-start guide, block guides, email drafts) in place
-- Checkpoint and Phase 1 execution are the only immediate user actions
-- Exploration Queue complete; awaiting post-Phase-1-Batch-1 follow-up work
+- User execution is now purely mechanical (Gist verification, URL fill-in, email send)
+- May 14 checkpoint has clear decision tree with three outcome paths (PASS / NEAR_MISS / FAR_MISS)
+- All supporting materials in place; no blocking research gaps remain
+- Checkpoint and Phase 1 execution are the only immediate user actions (both can proceed in parallel)
+
+**Risk assessment**: LOW
+- Phase 1: All Gists exist, URLs consolidated, contacts verified, emails pre-personalized
+- Checkpoint: Script ready, pre-check verified, decision tree clear, recovery levers documented
+- Both projects can execute without further orchestrator action
+
+**Next immediate tasks** (no orchestrator action required):
+- 13:30 UTC: Monitor AAPL h+10 SELL execution
+- 20:00 UTC: Execute checkpoint, record outcome
+- 20:30 UTC: If NEAR_MISS B1, apply Lever A (30 min threshold reduction)
+- May 15-17: Execute Phase 1 Blocks 1-5
+- May 15-21: Monitor Batch 1 responses, prepare Batch 2
 
 ---
 
