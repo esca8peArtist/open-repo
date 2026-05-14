@@ -1,7 +1,7 @@
 # Domains Index — Democratic Renewal Framework
 
-*Last updated: May 13, 2026 (Phase 2 Domains 38-40 expansion added)*
-*Total domains indexed: 55 core + 3 Phase 2 optional expansion*
+*Last updated: May 14, 2026 (Domain 39 Healthcare Access as Democratic Infrastructure — full production document added)*
+*Total domains indexed: 55 core + 3 Phase 2 optional expansion + 1 Phase 2 full production*
 
 ---
 
@@ -43,6 +43,14 @@
 | `domain-53-mutual-aid-networks-tax-law-democratic-solidarity.md` | Domain 53: Mutual Aid Networks and Tax Law | Complete | Phase 2 |
 | `domain-54-criminal-justice-civic-exclusion-architecture.md` | Domain 54: Criminal Justice and Civic Exclusion | Complete | Phase 2 |
 | `domain-55-lgbtq-rights-systematic-legal-attack-democratic-design.md` | Domain 55: LGBTQ+ Rights and Systematic Legal Attack | Complete | Phase 2 |
+
+---
+
+## Phase 2 Full Production Documents (May 2026)
+
+| File | Domain | Citations | Distribution Target | Key Finding |
+|------|--------|-----------|---------------------|-------------|
+| `domain-39-healthcare-access-democratic-infrastructure.md` | Domain 39: Healthcare Access as Democratic Infrastructure | 48 | June 1, 2026 (HHS OBBBA work requirement guidance comment period) | APSR: rural hospital closures reduce voter turnout in proximate elections; Oregon Experiment: Medicaid increases voter turnout 7% (randomized); five causal pathways from healthcare deprivation to civic exclusion; OBBBA attacks all five simultaneously |
 
 ---
 
