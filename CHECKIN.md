@@ -2,7 +2,8 @@
 
 ## Session 1008 — May 14, 2026, 02:30–03:00 UTC (Phase 1 Execution Checklist + Orchestrator Prep Complete)
 
-**Status**: ✅ **RESISTANCE-RESEARCH PHASE 1 FULLY READY FOR USER EXECUTION TODAY (MAY 14–17).**
+**Status**: ✅ **RESISTANCE-RESEARCH PHASE 1 FULLY READY FOR USER EXECUTION TODAY (MAY 14–17).**  
+⏳ **STOCKBOT CHECKPOINT AT 20:00 UTC TODAY — T-16h 45m. CRITICAL EVENTS: AAPL h+10 SELL AT 13:30 UTC, CHECKPOINT AT 20:00 UTC.**
 
 ### What Was Accomplished This Session
 
@@ -122,12 +123,42 @@ None. Phase 1 is fully user-ready.
    - Execute test print (user hardware-dependent)
    - Impact: Pass → Etsy launch; Fail → design iteration
 
+### Critical Timeline for May 14, 2026
+
+**⚠️ STOCKBOT CHECKPOINT DAY — Three critical events**
+
+| Time | Event | Expected | Action |
+|------|-------|----------|--------|
+| **13:30 UTC (in ~10 hours)** | AAPL h+10 SELL auto-execution | 2 SELL fills (lgbm_ho + ridge_wf) at market open | Monitor Alpaca account for fills |
+| **19:00 UTC (T-1h before checkpoint)** | Pre-checkpoint verification | Engine running, 2 SELL fills logged, capital available | Run quick health check: `curl -s http://100.120.18.84/api/ready` |
+| **20:00 UTC** | May 14 Checkpoint execution | Expected: NEAR_MISS B1 (2 new SELL fills from h+10, 19 old May 5 fills) | User runs: `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py` |
+
+**Expected May 14 checkpoint result**: NEAR_MISS B1
+- Confirmed round trips: 0 (no complete BUY-SELL pairs yet)
+- May 5 SELL fills: 19 (liquidation of non-AAPL positions)
+- May 14 AAPL SELL fills: 2 (h+10 exit, lgbm_ho + ridge_wf)
+- Status: Waiting for AAPL SELL proceeds to trigger new BUY signal
+
+**Post-checkpoint actions (if NEAR_MISS B1 confirmed)**:
+1. Apply Lever A (threshold reduction): reduce `threshold_multiplier` from 0.50 to 0.40 in `active-sessions.json` (30 min)
+2. Monitor for fresh BUY signals on May 15-16 (capital should be available after h+10 proceeds settle)
+3. Prepare Domain 37 outreach (wait for Batch 1 responses → prepare Batch 2)
+4. Schedule HMM Phase 2 for May 19 (A/B split on ridge_wf session)
+
+**If NEAR_MISS B1 does NOT occur at 20:00 UTC**:
+- If PASS: Execute Gate 2 expansion (AMZN, JPM, JNJ sessions + covered call engineering)
+- If FAR_MISS C1/C2: Run root cause diagnosis per post-gate-1-decision-tree.md Section 3.2
+
 ### Suggested Next Actions
 
-1. **May 14 evening**: Monitor stockbot checkpoint (T-18h)
-2. **May 15-17 morning**: Execute Phase 1 Blocks 1-5 (~90 min)
-3. **May 16-22**: Monitor Batch 1 responses; prepare social media (Block 6)
-4. **Post-May-30**: Domain 37 Phase B outreach if Batch 1 response strong
+1. **May 14 10:00 UTC**: Prepare to monitor AAPL h+10 SELL execution (in 3-3.5 hours)
+2. **May 14 13:30–14:00 UTC**: Verify AAPL h+10 SELL fills in Alpaca
+3. **May 14 19:00 UTC**: Pre-checkpoint health check
+4. **May 14 20:00 UTC**: Execute checkpoint, record outcome
+5. **May 14 20:30 UTC**: If B1, apply Lever A (threshold multiplier reduction)
+6. **May 15-17 morning**: Execute Phase 1 Blocks 1-5 (~90 min)
+7. **May 15-21**: Monitor Batch 1 responses; prepare Batch 2 and Domain 37 sends
+8. **May 19**: HMM Phase 2 A/B split (ridge_wf gets HMM scalar)
 
 ### Strategic Notes
 
