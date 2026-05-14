@@ -67,6 +67,43 @@ medicinal herb research kickoff on June 1, 2026.
 
 ---
 
+## Phase 4 Exotic Medicinal Plants — Scoping and Research Planning — 2026-05-14
+
+**Task**: Item 45 — Create Phase 4 scoping document for exotic medicinal plants. Enable June supplier outreach concurrent with Phase 3 production.
+
+**Scope executed**:
+
+- **20 exotic medicinal plant candidates evaluated** in a 7-column matrix: demand signals, margin potential, sourcing complexity (1–5), regulatory status, supplier options, content production hours estimate. Species span four thematic clusters: Adaptogenic Powerhouses (ashwagandha, rhodiola, tulsi, mucuna, suma), Rare Ethnobotanicals (dragon's blood, tongkat ali, kava, pine pollen), Functional Mushroom Expansion (reishi, lion's mane, cordyceps, turkey tail, chaga), Premium Wellness Plants (saffron, shilajit, black seed oil, sea moss, moringa, noni).
+
+- **Regulatory compliance roadmap**: FDA classification framework (educational vs. structure/function vs. disease claims); country-specific import and sale restrictions for all 20 species across US, EU, Canada, Australia, UK; species-by-species CITES status verification (dragon's blood *Croton lechleri* not listed; *Dracaena cinnabari* avoided; Panax ginseng Russian population Appendix II); sourcing documentation standard.
+
+- **Supplier partnership strategy**: 8 direct grower partners identified with outreach template (Akarali, Afghan Royal Saffron, Luna Sundara, Nakamal at Home, Annanda Chaga, Cascadia Mushrooms, Lotus Blooming Herbs, Grenera Nutrients); 5 wholesale distributors (Mountain Rose Herbs, Starwest Botanicals, Real Mushrooms, Lost Empire Herbs, Bulk Supplements). Fair Trade targeting for Amazonian sourcing (dragon's blood, suma, noni).
+
+- **Production model framework**: Three models evaluated — Model A (digital guides only, recommended for Phase 4 launch), Model B (small botanical starter kits, Q3 2027), Model C (physical botanical inventory, not recommended). Model A carries zero inventory risk and enables affiliate revenue layer from supplier referrals.
+
+- **Financial model**: Research phase cost $400–1,100. Content production: ~102 hours for 20 guides (January–June 2027). Conservative 90-day revenue at launch: $9,740–10,040. Break-even on research costs inside first week of launch.
+
+- **4 research waves documented**: Wave 1 (June 1–15, supplier outreach and demand validation), Wave 2 (June 15–July 15, herbalist and ethnobotanist interviews), Wave 3 (July 15–August 30, regulatory audit and supplier vetting finalized), Wave 4 (September–November, content production planning only).
+
+- **5 Wave 1 priority species for June outreach**: Tongkat Ali (highest demand-to-complexity ratio, US market clear), Reishi (Phase 3 cross-sell audience ready January 2027), Saffron (zero regulatory risk, US cultivation angle), Shilajit (breakout TikTok trend, heavy-metal testing differentiation), Black Seed Oil (highest demand/complexity ratio in matrix, 8.4% market CAGR).
+
+**File created**:
+
+- `projects/seedwarden/PHASE_4_EXOTIC_MEDICINAL_SCOPING.md` — production-ready for June 2026 supplier outreach and concurrent Phase 3/4 research planning.
+
+**Sources consulted**:
+- CITES appendices database (cites.org/eng/app/appendices.php)
+- FDA dietary supplement classification guidance (FDA.gov)
+- Akarali Tongkat Ali manufacturer documentation (akarali.com/manufacturer/)
+- Afghan Royal Saffron certified supplier information (afghanroyalsaffron.com)
+- HerbalGram Croton lechleri sustainable harvest research (herbalgram.org)
+- Grand View Research Black Seed Oil market data 2025–2030
+- Future Market Insights herbal supplement market size and moringa share data
+- Regulatory overview: ashwagandha bans and restrictions 2023–2025 (regask.com)
+- Wonnda supplement trends 2026 (wonnda.com)
+
+---
+
 ## Track B Phase 2 — User Gates Documentation + May 30 Launch Checklist — 2026-05-14
 
 **Task**: Verify all Track B staged materials are production-ready; write consolidated
