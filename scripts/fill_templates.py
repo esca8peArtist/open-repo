@@ -45,11 +45,11 @@ FIELD_VALUES = {
     # Domain 37 — fill after creating the Gist (Path A+37 only)
     # Leave empty string if on Path A or B; the script will warn if it finds
     # {{DOMAIN_37_URL}} in the output with an empty replacement.
-    "{{DOMAIN_37_URL}}": "",   # <-- paste Domain 37 Gist URL here for Path A+37
+    "{{DOMAIN_37_URL}}": "https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0",   # <-- Domain 37 Gist created May 14, 2026
 
     # Identity fields — fill with your own information
-    "{{YOUR_NAME}}": "",       # <-- e.g. "Alex W." or "Democratic Renewal Research Team"
-    "{{YOUR_CONTACT_INFO}}": "", # <-- e.g. "wanka95@gmail.com"
+    "{{YOUR_NAME}}": "Thorn",       # <-- User identity (inferred from git config; update if different)
+    "{{YOUR_CONTACT_INFO}}": "wanka95@gmail.com", # <-- Contact email
 
     # Content metadata
     "{{DOMAIN_COUNT}}": "35" if DISTRIBUTION_PATH in ("A", "B") else "34",
