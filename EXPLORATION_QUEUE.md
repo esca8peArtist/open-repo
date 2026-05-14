@@ -559,20 +559,26 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 - ✅ Item 34: Seedwarden Phase 3 Production Timeline (1,044 lines, 26-week roadmap, 4 contingencies)
 - ✅ Item 35: open-repo Phase 5 Architecture (913 lines, 6-week implementation plan, deployment chosen)
 
-**Session 1003 (May 13, 21:45 UTC) — ITEM 39 COMPLETE** ✅
+**Session 1003 (May 13, 21:45 UTC) — ITEMS 36–39 COMPLETE** ✅
 - ✅ Item 36: Resistance-Research Phase 2 Domains 41 & 43 Source Staging (1,053 lines)
 - ✅ Item 37: mfg-farm Post-Test-Print Fulfillment Readiness (1,151 lines)
 - ✅ Item 38: Cybersecurity-Hardening Phase 1 Measurement Automation (~4,200 words)
 - ✅ Item 39: Stockbot May 14 Checkpoint Execution Runbook (850 lines)
 
-**Total queue status**: All exploration items staged and ready. No pending autonomous work identified (Items 1-39 COMPLETE).
+**Session 1014 (May 14, 00:55–01:40 UTC) — ITEMS 40–42 COMPLETE** ✅
+- ✅ Item 40: Seedwarden Phase 3 Herbalist Network Pre-Staging (771 lines, 25 contacts, 5 interview templates)
+- ✅ Item 42: mfg-farm Multi-Printer Farm Architecture (8,699 words, 24-month scaling roadmap, financial modeling)
+
+**Total queue status**: Items 1–42 COMPLETE. Items 43–45 now QUEUED for future sessions.
 
 **Strategic Impact**:
-- Seedwarden: Phase 3 infrastructure complete before Phase 2 launch (May 30); June 1 research can begin immediately
-- open-repo: Phase 5 handoff-ready for post-PR-#1-merge; no planning friction on Week 1 start
-- stockbot: Live trading readiness document eliminates 4-6 hour post-Gates setup; 30-minute activation enabled; May 14 checkpoint runbook eliminates execution ambiguity
+- Seedwarden: Phase 3 herbalist network staged for June 1 research start (zero discovery overhead)
+- mfg-farm: 24-month multi-printer farm architecture ready for post-test-print Phase 2 decision (eliminates 10–15 hours ad-hoc planning)
+- stockbot: Options trading feasibility assessment staged for post-Gate-1 decision window (May 15–30)
+- resistance-research: Contingency communication strategy staged for pre-Phase-1-launch risk mitigation
+- seedwarden: Phase 4 exotic medicinal plants scoping ready for June supplier outreach
 
-**Autonomous Work Status**: All projects blocked on user decisions/actions. Queue empty as of Session 1003 21:50 UTC.
+**Autonomous Work Status**: All projects blocked on user decisions/actions. Items 43–45 queued for post-decision execution (May 15+ sessions).
 
 ---
 
@@ -691,6 +697,65 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 **Key Insight**: 100% no-code automation using Google Sheets, Gmail, Zapier free tier, Discord, Calendly. Zero custom development required. Day 1 operational from 06:00 UTC June 1.
 **Strategic Value**: Measurement from Day 1 enables real-time success/failure detection; contingency triggers enable mid-course corrections without waiting for weekly reviews
 **Next Step**: User approves Phase 1 → orchestrator arms automation May 31 using provided checklist → measurement live June 1 with daily monitoring
+
+---
+
+## New Items (Session 1014 — 2026-05-14, post-Items-40-42 completion)
+
+### ⏳ Item 43: Stockbot Options Trading Feasibility & Gap 4 Implementation Plan
+**Status**: QUEUED (Session 1014, May 14 2026, 01:40 UTC)
+**Impact**: HIGH — Unlocks post-Gate-2 strategy expansion; critical for live trading architecture decision
+**Context**: JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md (Session 993, BLOCKED.md) identified options infrastructure as "PRODUCTION READY" but Gap 4 (naked-call prevention guardrail) is CRITICAL blocker. May 14 Gate 1 checkpoint outcome determines whether options activation is on Gate 2 agenda.
+**Goal**: Evaluate feasibility of Gap 4 naked-call prevention implementation:
+1. **Gap 4 analysis**: What are the exact guardrail requirements? (covered-call protection, equity position tracking, sell constraint logic)
+2. **Implementation effort estimate**: Lines of code, test coverage needed, integration complexity with TradingSession
+3. **Covered-call guardrails design**: Portfolio Greeks aggregation, delta-neutral rebalancing, margin impact analysis
+4. **Options architecture readiness audit**: 5 gaps documented in covered-calls-architecture-spec.md — which are pre-reqs for Gap 4 fix?
+5. **Gate 2 decision framework**: If PASS outcome, should options be activated in Gate 2 timeline? Timeline implications.
+**Feasibility**: HIGH — JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md exists (Session 993), 5 architecture gaps documented, covered-calls-architecture-spec.md complete
+**Effort estimate**: 2–3 hours (analysis + prototyping feasibility, not full implementation)
+**Deliverable**: `projects/stockbot/OPTIONS_TRADING_GAP_4_FEASIBILITY.md` (implementation plan, effort estimate, integration architecture, pre-req checklist)
+**Why now**: Post-May-14-checkpoint decision window (May 15–30). If Gate 1 PASS, this work informs Gate 2 architecture approval. If FAR_MISS, this validates "defer options to future gates" decision.
+**Next Step**: May 14 checkpoint outcome → if PASS and options is on Gate 2 agenda, execute Item 43 immediately (May 15–16)
+
+---
+
+### ⏳ Item 44: Resistance-Research Phase 1 Contingency Communication Strategy
+**Status**: QUEUED (Session 1014, May 14 2026, 01:40 UTC)
+**Impact**: MEDIUM — Risk mitigation; Phase 1 launch imminent (May 15–21), pre-emptive contingency planning reduces decision friction
+**Context**: Phase 1 distribution (Batch 1 send May 15–17, Tier 1 Batches May 21–28) success depends on reply rate >15%, media pickup, organization engagement. What if early metrics show underperformance?
+**Goal**: Design contingency communication strategy covering:
+1. **Contingency triggers**: Binary decision points at Day 3, Day 7, Day 14 (e.g., "if Batch 1 reply rate <8% by Day 3, trigger escalation")
+2. **Escalation messaging**: Pre-written follow-up variants, sector-specific urgency language (law schools vs civil rights orgs), higher-profile contact tier 2 outreach
+3. **Backup amplification channels**: If media pickup is low, alternative distribution paths (academic publications, preprint servers, coalition briefings)
+4. **Contingency organization activation**: Secondary contact list (40+ orgs) for Day 7-10 supplemental outreach if Batch 1 underperforms
+5. **Outcome messaging framework**: How to frame Phase 1 to teams/stakeholders if participation is lower-than-hoped (focus on "foundation laid for Phase 2" vs. "Phase 1 as stepping stone")
+**Feasibility**: HIGH — Phase 1 infrastructure complete (Item 28 blueprint exists), contact lists available, messaging templates ready
+**Effort estimate**: 2–2.5 hours (contingency scenarios + pre-written fallback messages)
+**Deliverable**: `projects/resistance-research/PHASE_1_CONTINGENCY_STRATEGY.md` (5 trigger scenarios, pre-written escalation messages, secondary contact activation timeline, outcome communication frameworks)
+**Why now**: Pre-launch planning. If Phase 1 launch happens May 15, this document should exist by May 13 for rapid activation if needed.
+**Blocker**: None (planning work, independent of Phase 1 execution path decision)
+**Next Step**: User confirms Phase 1 sender name → immediately activate Item 44 (May 14 evening) to have contingency strategy ready before May 21 Batch 2
+
+---
+
+### ⏳ Item 45: Seedwarden Phase 4 (Exotic Medicinal Plants) Scoping & Research Planning
+**Status**: QUEUED (Session 1014, May 14 2026, 01:40 UTC)
+**Impact**: MEDIUM — Phase 3 will run May–December 2026; Phase 4 planning needed for 2027 production launch
+**Context**: Phase 3 PRODUCTION_TIMELINE.md (Session 996) covers 50 medicinal herbs (focus: Women's Health, Respiratory, Immunity, Sleep, Digestive). Phase 4 potential: exotic/rare medicinal plants (dragon's blood, tongkat ali, saffron, reishi, cordyceps, etc.) with higher margins but longer sourcing lead times.
+**Goal**: Develop Phase 4 scoping and supplier partnership strategy:
+1. **Exotic species list** (15–25 candidates): Demand analysis (search volume, competitive landscape), margin analysis (rarity markup potential), source availability (supplier partnerships vs. wild collection)
+2. **Research timeline** (20 weeks June–November 2026): Interview sourcing specialists (herbalists, growers, ethnobotanists), verify contraindication evidence for exotics, establish supplier relationships
+3. **Supplier partnership evaluation**: Direct growers vs. wholesalers vs. wild harvesting certification (Rainforest Alliance, CITES compliance)
+4. **Regulatory compliance** (CITES, FDA cosmetic/dietary supplement rules): Which exotics have import/sale restrictions?
+5. **Production model decisions**: Pre-orders + backordering vs. slow-moving inventory, pricing tier strategy (premium exotics vs. Phase 3 core medicinal)
+6. **Content production timeline** (estimate 50–100 hours total): 20-30 species guides if Phase 3 on schedule; 10–15 additional exotics if extended
+**Feasibility**: HIGH — Phase 3 timeline exists, botanical networks established, exotic herbal knowledge base available
+**Effort estimate**: 2.5–3 hours (species scoping, supplier contact research, regulatory assessment)
+**Deliverable**: `projects/seedwarden/PHASE_4_EXOTIC_MEDICINAL_SCOPING.md` (15–25 candidate species with demand/margin/source analysis, 20-week research timeline, supplier evaluation matrix, regulatory compliance checklist, content production estimate)
+**Why now**: Phase 2 launch (May 30) will have active operations. Phase 3 (June–Dec) research can proceed in parallel. Phase 4 scoping now enables June supplier outreach while Phase 3 research is in flight.
+**Blocker**: None (autonomous planning work)
+**Next Step**: Phase 2 launch (May 30) → use scoping document for June supplier outreach + Phase 3 interview wave planning → Phase 4 feasibility decision by October 2026
 
 ---
 
