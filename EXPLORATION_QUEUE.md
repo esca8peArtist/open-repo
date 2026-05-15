@@ -928,23 +928,19 @@ All major pre-work, contingency frameworks, execution support documents, and inf
 
 ## Queued Items (Session 1051 — May 15, 2026, Checkpoint T+33 hours)
 
-### ⏳ Item 52: Stockbot May 16 Checkpoint Execution Runbook
-**Status**: QUEUED (Session 1051, May 15 2026, 10:30 UTC)
-**Impact**: CRITICAL — May 16 20:00 UTC checkpoint execution in 33.6 hours; execution guide prevents errors at critical moment
-**Context**: Item 39 (May 14 checkpoint runbook) proved highly valuable for systematic execution. May 16 checkpoint has identical structure but different query (may16_checkpoint_query_alpaca.py vs may14_checkpoint_query_alpaca.py) and outcome interpretation (PASS vs NEAR_MISS vs FAR_MISS scenarios per POST_CHECKPOINT_24_HOUR_PLAN.md).
-**Goal**: Create production-ready execution guide for May 16 checkpoint:
-1. **Pre-execution verification** (19:00 UTC, 15 min) — time sync, Jetson ping, Alpaca API health check, baseline state
-2. **Checkpoint query execution** (20:00 UTC, 15 min) — exact SSH commands, expected outputs, result recording
-3. **Result analysis** (20:15 UTC, 15 min) — scenario classification (PASS / NEAR-MISS Partial / NEAR-MISS B2 / FAR-MISS C2) with reference tables
-4. **Post-checkpoint actions** — outcome-specific decision paths and resource allocation
-5. **Error handling** — 5 failure scenarios with recovery procedures
-6. **Execution log template** — WORKLOG.md update structure
-**Feasibility**: HIGH — POST_CHECKPOINT_24_HOUR_PLAN.md exists (comprehensive 200+ line self-contained plan), may16_checkpoint_query_alpaca.py ready, outcome scenarios pre-defined
-**Effort estimate**: 1–1.5 hours (adapting Item 39 template with May 16 specifics)
-**Deliverable**: `projects/stockbot/MAY_16_CHECKPOINT_EXECUTION_RUNBOOK.md` (850–1,000 lines, comprehensive time-indexed procedure with error scenarios)
-**Why now**: 33.6 hours until checkpoint. Runbook enables error-free execution at critical decision moment. Post-execution enables immediate application of POST_CHECKPOINT_24_HOUR_PLAN.md actions (AMZN training, JPM training, AAPL position verification, etc.) within hours.
-**Blocker**: None (planning work, independent of checkpoint outcome)
-**Next Step**: Complete today (May 15) → user reviews May 16 10:00–19:00 UTC → executes May 16 19:00–20:30 UTC using runbook
+### ✅ Item 52: Stockbot May 16 Checkpoint Execution Runbook
+**Status**: COMPLETE (Session 1051, May 15 2026, 10:50 UTC)
+**Impact**: CRITICAL — May 16 20:00 UTC checkpoint execution enables error-free execution at critical decision moment
+**Deliverable**: `projects/stockbot/MAY_16_CHECKPOINT_EXECUTION_RUNBOOK.md` (1,050 lines, 42 KB, production-ready)
+**Content delivered**:
+- **Section 1 (Pre-Execution, 19:00–19:15 UTC)**: 4-part environment verification (GitHub SSH, time sync, Jetson ping, Alpaca API), script existence check, execution log template
+- **Section 2 (Checkpoint Execution, 20:00–20:15 UTC)**: Exact bash commands for query execution, output capture procedure, critical value recording (aapl_model_sells, confirmed_round_trips, total_pnl, total_fills_since_may5)
+- **Section 3 (Result Analysis, 20:15–20:30 UTC)**: Outcome classification logic with reference table (PASS / NEAR-MISS Partial / NEAR-MISS B2 / FAR-MISS C2), matched row determination, outcome recording
+- **Section 4 (Day 0 Actions, 20:30–21:30 UTC)**: Cross-reference to POST_CHECKPOINT_24_HOUR_PLAN.md appropriate section, outcome-specific step execution, completion logging
+- **Section 6 (Error Handling)**: 6 error scenarios with recovery procedures (E1: time sync, E2: network, E3: script missing, E4a-4d: query execution, E5: classification impossible, E6: Day 0 failure)
+- **Quick Reference Checklist**: Execution timeline with 7 checkpoints from 19:00 UTC through 21:30 UTC completion
+**Key features**: Time-indexed actions, self-contained, error-resilient, log-preserving, outcome-specific guidance. Expected execution time: 105 minutes (19:00–21:45 UTC).
+**Next Step**: User reviews May 16 10:00–19:00 UTC → executes May 16 19:00–21:30 UTC using runbook → outcome classification feeds into POST_CHECKPOINT_24_HOUR_PLAN.md Day 0 Actions
 
 ---
 
