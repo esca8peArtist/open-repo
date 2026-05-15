@@ -360,6 +360,16 @@ Next action: ___
 
 **Primary goal**: Run the complete 5-criterion audit. Make the GO/NO-GO decision by 9:00pm. Execute any contingency actions that are within the 24-hour window.
 
+**Cross-reference**: TRACK_B_USER_GATES.md May 29 section contains an inline expanded checklist
+covering each criterion's individual sub-checks with specific verification steps. Run that checklist
+in parallel with this document — the Gates document makes each criterion actionable without having
+to navigate between Sections 1 and 2. The Gate 5-question check at the bottom of that section must
+pass in addition to all 5 Dashboard criteria.
+
+**Time required**: 2–3 hours total (Morning: criteria 2, 4, 5 — Afternoon: compile and decide —
+Evening: re-checks and arm). This is not a 15-minute task. Anyone planning a 15-minute May 29
+check will arrive at May 30 with unverified infrastructure.
+
 **Morning block (9:00am-12:00pm, 3 hours)**:
 
 - [ ] Run Criterion 2 full audit (visual assets): resolution check command, license documentation check, zone card count, zone card delivery test from incognito, Canva Brand Kit verification
@@ -377,8 +387,12 @@ Next action: ___
 **Evening block (6:00pm-9:00pm, 2 hours)**:
 
 - [ ] Run end-to-end Kit delivery test again (second pass — confirm no state change from May 28 test)
+- [ ] Verify all 8 zone card download links from incognito: open each link logged in WORKLOG.md
+  "Kit Zone Card File URLs" section — each must download as a PDF immediately, not open a Drive viewer
+  (if any fail: fix the Google Drive sharing permission or URL format before proceeding)
 - [ ] Open Buffer queue — confirm all 3 May 30 posts still show "Scheduled" with correct times (posts can be accidentally deleted or paused; verify now)
 - [ ] Open Etsy Shop Manager — confirm all Phase 2 listings are in Draft (NOT Active yet — they go Active at 09:00 UTC May 30)
+- [ ] Confirm Kit landing page URL is present in all 3 social bios (navigate to each profile, verify the link is there)
 - [ ] Record final Go/No-Go Audit in WORKLOG.md using the template at the bottom of Section 1
 - [ ] Set phone alarm for 05:45 UTC May 30
 
