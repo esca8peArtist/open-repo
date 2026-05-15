@@ -1,5 +1,56 @@
 # Check-in
 
+## Session 1057 — May 15, 2026, 12:30–12:50 UTC (Orchestrator — Queue Refresh + Checkpoint Standby)
+
+**Status**: ✅ **QUEUE REFRESHED FOR POST-CHECKPOINT PHASE — All decision-support docs complete. Standing by for May 16 20:00 UTC checkpoint execution.**
+
+### Since Last Check-in (Session 1056)
+
+**Work completed (20 minutes)**:
+1. Added 3 new exploration queue items for post-checkpoint phase:
+   - Item 52: stockbot Post-Checkpoint Action Plan (triggers May 16 20:05 UTC)
+   - Item 53: resistance-research Phase 2 Domain 38 Outline (contingent on Phase 2 expansion)
+   - Item 54: seedwarden Phase 2 Analytics Setup (May 29-30 implementation)
+2. Verified no new INBOX items, no new BLOCKED items requiring immediate resolution
+3. Confirmed usage nominal (26.8% Sonnet, no throttling)
+
+### Critical Decisions Still Awaiting User Input
+
+**🔴 URGENT (within next 2 hours)**:
+- **resistance-research Distribution Path** → Select **Path A+37 (RECOMMENDED)** to gate May 15-17 Wave 1 launch
+  - DECISION_FRAMEWORK: `projects/resistance-research/DISTRIBUTION_PATH_COMPARISON.md`
+
+**🟡 By May 20 (5 days)**:
+- **seedwarden Track A Blockers** → Complete tag corrections + Etsy verification
+  - DECISION_FRAMEWORK: `projects/seedwarden/TRACK_A_CONTINGENCY_DECISION_TREE.md`
+- **cybersecurity-hardening Phase 1 Approval** → Approve Tier 1 launch + confirm Day 1 send date
+  - STATUS: All materials production-ready
+
+### May 16 Checkpoint Execution (T-31.5 hours)
+
+- **Pre-checkpoint**: May 16 19:30 UTC validation per `MAY_16_CHECKPOINT_VALIDATION_CHECKLIST.md`
+- **Execution**: May 16 20:00 UTC — query AAPL fills, classify scenario (PASS/NEAR_MISS/FAR_MISS)
+- **Post-checkpoint**: May 16 20:05–21:30 UTC — apply Item 52 decision tree (Lever A deployment if NEAR_MISS)
+- **Pre-confirmed outcome**: NEAR_MISS (aapl_model_sells=0 as of May 15 dry-run)
+
+### Status Summary
+
+| Project | Status | Next Event | Timeline |
+|---------|--------|-----------|----------|
+| **stockbot** | NEAR_MISS confirmed | May 16 20:00 UTC checkpoint | T-31.5h |
+| **resistance-research** | Wave 1 ready | User selects path | NOW |
+| **seedwarden** | Phase 2 ready, Phase 1 contingency | May 20 decision | 5 days |
+| **cybersecurity-hardening** | Production-ready | Tier 1 approval | By May 20 |
+| **mfg-farm** | Pre-print complete | User executes test | May 19-31 |
+
+### Token Budget
+
+Current: 26.8% Sonnet (2,391,233 tokens), 65.1% all-models  
+Reset in 83 hours (May 17)  
+Status: Healthy, no action required
+
+---
+
 ## Session 1056 — May 15, 2026, 11:22–12:30 UTC (Orchestrator — Exploration Queue Refresh + Decision Support)
 
 **Status**: ✅ **THREE DECISION-SUPPORT DOCUMENTS COMPLETE — All projects blocked on external events/user decisions. All infrastructure ready for upcoming events.**
