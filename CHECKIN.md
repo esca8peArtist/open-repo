@@ -1,5 +1,55 @@
 # Check-in
 
+## Session 1066 — May 15, 2026, 14:30+ UTC (Orchestrator — Decision Brief + Standby)
+
+**Status**: ✅ **DECISION BRIEF CREATED — All materials ready for user path selection. Standing by for May 16 20:00 UTC checkpoint execution.**
+
+### Since Last Check-in (Session 1065)
+
+**Work completed** (45 minutes):
+1. **Verified** all autonomous work complete (Items 1-53 finished, Item 54 queued pending Phase 1 approval)
+2. **Identified** three pending user decisions blocking further work:
+   - resistance-research path selection (A / A+37 Hybrid / B) — **NEEDED TODAY**
+   - stockbot checkpoint execution (May 16 20:00 UTC) — tomorrow, infrastructure ready
+   - mfg-farm test print execution — pending user action
+3. **Created** user decision brief: `DECISION_BRIEF_PATH_SELECTION.md`
+   - Comprehensive 3-path comparison with timelines, efforts, outcomes
+   - Recommendation: Path A+37 Hybrid (captures both democratic-renewal framework and election-specific urgency)
+   - All execution materials ready for immediate deployment once user selects
+
+### Critical Status Summary
+
+| Area | Status | Action |
+|------|--------|--------|
+| **Exploration Queue** | ✅ Items 1-53 COMPLETE, Item 54 QUEUED | No autonomous work available; queue exhausted |
+| **User Decision Pending** | 🔴 TODAY | resistance-research path selection → Wave 1 May 15-17 |
+| **Checkpoint Readiness** | ✅ READY | Execute May 16 20:00 UTC per `MAY_16_CHECKPOINT_EXECUTION_RUNBOOK.md` |
+| **Decision Materials** | ✅ READY | `DECISION_BRIEF_PATH_SELECTION.md` — clear path comparison + recommendation |
+| **Token Budget** | ✅ HEALTHY | 26.8% Sonnet, 67.5% all-models (from prior state snapshot) |
+
+### What You Need to Do Today
+
+**By end of May 15 (anytime today)**:
+1. **Select path**: Read `DECISION_BRIEF_PATH_SELECTION.md` and choose Path A, A+37 Hybrid (recommended), or Path B
+   - All templates and materials are pre-filled and ready to use
+   - No additional prep needed on your part
+
+**Once you select**:
+- Orchestrator immediately executes Phase 1 Wave 1 (Batch 1 send, May 15-17)
+- If Path A+37 Hybrid: Additional 1-hour Domain 37 send June 10-15
+- Parallel Phase 2 research begins June 16 per existing roadmap
+
+### Next Phase Gates
+
+**May 15** (TODAY): User selects distribution path → Wave 1 execution begins May 16-17  
+**May 16 20:00 UTC**: Stockbot Gate 1 checkpoint execution (independent of path decision)  
+**May 17-21**: Phase 1 Batch 1 distribution (25 highest-leverage contacts)  
+**May 21-June 15**: Tier 2 + Tier 3 distribution waves  
+**June 10-15**: Domain 37 specialized send (if Hybrid path selected)  
+**June 16+**: Phase 2 research production (Domains 57-60, ~90-110 hours)
+
+---
+
 ## Session 1065 — May 15, 2026, 13:00+ UTC (Orchestrator — Phase 2 Production Roadmap)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM 53 COMPLETE — Phase 2 production roadmap finalized. Standing by for May 16 checkpoint + user decisions.**
