@@ -3489,3 +3489,35 @@ Pending items: 20 (Seedwarden), 32 (Seedwarden), 30 (Seedwarden), 33 (Stockbot p
 
 **Next Session Focus**: May 14 20:00 UTC stockbot checkpoint execution (user-initiated), post-checkpoint response protocol, OR Phase 1 Batch 2 preparation if Batch 1 responses arrive ahead of schedule.
 
+---
+
+## Gate 1 Checkpoint — May 14, 2026
+
+**Time**: 2026-05-15 01:19 UTC
+**Query run**: Yes (Alpaca API)
+**Jetson status**: Verified operational (sessions:2)
+
+**Results**:
+- total_fills_since_may5: 33
+- buy_fills: 12
+- sell_fills: 21
+- aapl_model_sells: 0
+- confirmed_round_trips: 2
+- gross_profit: $0.00
+- gross_loss: $2.40
+- total_pnl: $-2.40
+
+**Scenario assigned**: NEAR_MISS_B1
+**Rationale**: 33 fills below 150-fill May 12 target (22% of goal). AAPL h+10 exit did not trigger (still holding 108 shares, +$924 unrealized). Per roadmap, 50% prior probability of NEAR_MISS — expected outcome. Next gate assessment May 16 20:00 UTC.
+**h-day at checkpoint**: h+10 (April 29 entry, trading days only)
+
+**Next actions**:
+- No parameter changes made (h+10 at checkpoint indicates engine still ramping; leverage adjustment deferred to May 16 if no new AAPL SELLs)
+- Next monitoring checkpoint: May 16, 20:00 UTC. Expect h=12 (Saturday post-market close if Friday no-action).
+- If May 16 shows no new AAPL SELLs: apply Lever A (threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45)
+- Full near-miss playbook: See `MAY_12_OUTCOME_ROADMAP.md` Section 4
+
+**Parameter changes made**: None
+
+---
+
