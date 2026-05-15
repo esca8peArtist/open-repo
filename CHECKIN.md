@@ -1,5 +1,67 @@
 # Check-in
 
+## Session 1036 — May 15, 2026, 04:34–05:50 UTC (Orchestrator — Stockbot Checkpoint Readiness + Resistance-Research Assessment)
+
+**Status**: ✅ **STOCKBOT MAY 16 CHECKPOINT EXECUTION GUIDE COMPLETE + BUG FIX VERIFIED. RESISTANCE-RESEARCH PHASE 2 DOMAINS 48-50 ASSESSMENT COMPLETE. All current autonomous work complete; all projects await user decisions or external events (May 16 checkpoint, Phase 1 distribution path, Phase 2 launch).**
+
+### Since Last Check-in (Session 1035, May 15 04:02–05:35 UTC)
+
+**Stockbot May 16 Checkpoint Readiness** ✅ **COMPLETE**:
+- **Critical Discovery**: May 14 h+10 exit did NOT fire due to equity session bug (identified May 15 02:55 UTC)
+  - Bug: `is_shutdown_requested` property called as method `()` in trading_session.py line 1023
+  - Fix: Property access corrected (no parentheses); both AAPL sessions (lgbm_ho, ridge_wf) executed first cycle May 15 02:55:03 UTC
+  - Status: ✅ FIXED AND COMMITTED (submodule commit a6521b1)
+- **May 16 Checkpoint Planning**: 
+  - Created `MAY_16_CHECKPOINT_EXECUTION_GUIDE.md` (10,186 bytes, production-ready)
+  - Documents post-bug-fix scenarios and monitoring plan
+  - If AAPL h+11 or h+12 exits fire (May 15-16): Continue Gate 2 timeline (2-week slip acceptable)
+  - If still no AAPL SELLs by May 16 20:00 UTC: Apply Lever A (parameter adjustment: threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45)
+  - Full Lever B (HMM regime detection) protocol documented for May 19 if needed
+  - Status: READY FOR EXECUTION AT 20:00 UTC MAY 16
+
+**Resistance-Research Phase 2 Assessment** ✅ **COMPLETE**:
+- **New Domains Complete** (May 13-15, Sessions prior):
+  - Domain 48: Surveillance Capitalism & Electoral Manipulation (6,200 words, 45 citations) — COMPLETE, production-ready
+  - Domain 49: Louisiana v. Callais VRA Evisceration (7,100 words, 41 citations) — COMPLETE, production-ready
+  - Domain 50: Healthcare Access & NVRA-Medicaid Infrastructure (6,800 words, 45 citations) — COMPLETE, production-ready
+- **Integration Status**: Domains 48-50 NOT YET integrated into main proposal (verified: grep shows absent from democratic-renewal-proposal.md)
+- **Critical Timing**: Domain 50 has June 1 HHS OBBBA interim rule deadline — distribution window May 25-31 (6 days away)
+- **Next work**: Integrate Domains 48-50 into proposal + templates + distribution sequencing (estimated 3-4 hours, awaits Phase 1 user path decision)
+- **Phase 1 Status**: Fully ready for execution; all 40+ domains production-ready; execution materials staged; awaiting user distribution path decision (A / A+37 / B)
+
+**Autonomous Work Assessment**:
+- ✅ All orchestration work for this session complete
+- ✅ Stockbot checkpoint readiness verified
+- ✅ Resistance-research Phase 2 expansion assessment complete
+- ⏳ All further work awaits user decisions:
+  - Stockbot: May 16 20:00 UTC checkpoint (automated, user monitors Alpaca/Jetson)
+  - Resistance-research: Phase 1 distribution path decision (user chooses A/A+37/B)
+  - Other projects: mfg-farm (test print), seedwarden (Phase 2 May 30 launch), cybersecurity-hardening (Tier 1 approval)
+
+### Needs Your Input
+
+**CRITICAL — May 16 20:00 UTC Stockbot Checkpoint**:
+1. **Before checkpoint**: Verify Alpaca credentials and Jetson SSH access (pre-checkpoint checklist in MAY_16_CHECKPOINT_EXECUTION_GUIDE.md Section 2.1)
+2. **At 20:00 UTC**: Orchestrator will run checkpoint query; monitor results
+3. **If result = AAPL SELLs ≥ 2**: Exit signal working; continue Gate 2 timeline
+4. **If result = AAPL SELLs = 0**: Orchestrator will apply Lever A autonomously (parameter adjustment, no user action needed)
+5. **Next checkpoint**: May 19 20:00 UTC if Lever A applied; May 16 results inform Gate 2 capital allocation timeline
+
+**Resistance-Research Phase 1 Distribution Path** (May 15-17, before June 1 deadline):
+- Choose distribution path: **A (Immediate)** / **A+37 Hybrid (Recommended, adds Domain 37 executive interference timing)** / **B (Continue optional research)**
+- Once decided: Phase 1 execution ~2.5-3 hours (all templates staged, ready to execute)
+- Note: Domain 50 (OBBBA/NVRA) has hard June 1 deadline; recommend prioritizing that domain's Tier 1 distribution within Week of May 25-31
+
+### Suggested Next Session Priorities
+
+1. **May 16 20:00 UTC** (automated): Stockbot checkpoint execution — monitor Alpaca/Jetson, prepare for May 19 checkpoint if Lever A applied
+2. **May 15-17** (1-2 hours): Resistance-research Phase 1 distribution path decision
+3. **May 15-17** (2-3 hours if decision made): Phase 1 execution (Gist creation, template field fill, email send)
+4. **May 17-31** (ongoing): Prepare Domain 50 distribution for June 1 HHS OBBBA deadline (prioritize this timeline)
+5. **May 19 20:00 UTC** (conditional): May 16 checkpoint results determine if Lever A outcomes need adjustment
+
+---
+
 ## Session 1035 — May 15, 2026, 04:02–05:35 UTC (Orchestrator — Checkpoint Execution + Parallel Exploration Research)
 
 **Status**: ✅ **CHECKPOINT EXECUTED (NEAR_MISS) + EXPLORATION QUEUE RESEARCH COMPLETE. All autonomous work exhausted; all projects blocked on user actions/external events.**
