@@ -1,5 +1,64 @@
 # Check-in
 
+## Session 1074 — May 15, 2026, 15:45–16:05 UTC (Orchestrator — May 16 checkpoint pre-flight validation)
+
+**Status**: ✅ **MAY 16 CHECKPOINT PRE-FLIGHT VALIDATION COMPLETE — All systems ready for execution at May 16 20:00 UTC**
+
+### Since Last Check-in (Session 1073)
+
+**Work completed** (20 minutes, pre-flight validation):
+
+**May 16 Checkpoint Validation** ✅
+- Section 1 local validation complete (all 5 checks PASS)
+- Checkpoint script syntax verified ✅
+- Alpaca API connectivity confirmed (Account: PA38Z548DIRR, Equity: $115,397.43) ✅
+- Lever A script tested and operational ✅
+- Configuration baseline verified with threshold_multiplier & confidence_floor set to 0.50 ✅
+- WORKLOG.md present and ready for checkpoint logging ✅
+
+**Pre-Flight Readiness**: 100% complete
+- Section 2 (Day-of pre-flight) scheduled for May 16 19:00–19:45 UTC
+- Section 3 (Live execution) scheduled for May 16 20:00 UTC
+- All fallback procedures documented and available
+- Post-checkpoint decision framework ready
+
+### Current Status: Awaiting May 16 20:00 UTC Checkpoint Execution
+
+| Event | Status | Timeline | Action Required |
+|-------|--------|----------|-----------------|
+| **May 16 Checkpoint Execution** | ✅ Ready | T-29h (20:00 UTC May 16) | None until 19:00 UTC May 16 |
+| **Post-Checkpoint Decision** | ✅ Ready | 20:05–21:30 UTC May 16 | Based on scenario (PASS/NEAR_MISS/FAR_MISS_C1/C2) |
+| **Phase 1 Distribution** | ⏳ Ready | Awaiting user path decision | Path A / A+37 / B |
+| **Seedwarden Track B** | ⏳ Ready | May 15–28 user gate execution | Canva/Kit upgrade decisions |
+| **mfg-farm Test Print** | ⏳ Design complete | User action | 3D print execution |
+
+### Needs Your Input (No changes from Session 1073)
+
+**By EOD May 15** (before Wave 1 send window opens May 15 evening):
+1. **Resistance-research path decision** — A / A+37 / B (enables immediate Phase 1 execution)
+2. **Seedwarden Canva & Kit upgrades** — Pro/free decisions for May 15-18 gate execution
+3. **Cybersecurity Phase 1 launch approval** — Confirm + provide Day 1 send date
+
+**By May 16 19:00 UTC**:
+- Pre-check with `uv run python scripts/may16_checkpoint_query_alpaca.py --verify` (connectivity test)
+
+**At May 16 20:00 UTC (EXACT)**:
+- Execute: `cd projects/stockbot && uv run python scripts/may16_checkpoint_query_alpaca.py`
+- Record result in WORKLOG.md within 5 minutes
+
+**If NEAR_MISS (most likely)**:
+- Execute: `uv run python scripts/apply_lever_a.py` (within 20 min of checkpoint)
+- Deploy config to Jetson via rsync
+- Restart Jetson engine
+
+### Next Autonomous Work
+
+- **May 17+**: Post-checkpoint implementation based on scenario outcome
+- **May 19+**: Follow-up checkpoint if NEAR_MISS or FAR_MISS scenarios
+- **Upon user path decision**: Phase 1 Wave 1 send execution
+
+---
+
 ## Session 1073 — May 15, 2026, 14:45–14:55 UTC (Orchestrator — Readiness verification complete)
 
 **Status**: ✅ **ALL SYSTEMS READY FOR May 16 20:00 UTC CHECKPOINT — Awaiting user decisions and external events**
