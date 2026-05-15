@@ -40,6 +40,16 @@
 
 **Timeline to Checkpoint**: T-29 hours (May 16, 20:00 UTC)
 
+**Additional Work Completed**:
+
+**mfg-farm: Test-Print Failure Recovery Playbook** ✅
+- Created comprehensive 10-section failure recovery document
+- Covers 6 major failure modes: snap-arm, grip surface, post wobble, scale/shrinkage, material/temperature, multi-iteration escalation
+- Includes decision tree, iteration timeline, success criteria
+- Enables rapid diagnosis + repair if test print has issues
+- File: `projects/mfg-farm/test-print-failure-recovery-plan.md` (657 lines)
+- Status: Ready for May test print results
+
 ---
 
 ## Session 1073 — May 15, 2026, 14:45–14:55 UTC (Orchestrator — Comprehensive readiness verification)
