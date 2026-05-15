@@ -4,6 +4,141 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Exploration Queue Item 3 — Seedwarden Launch Contingency Playbooks — 2026-05-15
+
+**Task**: Build comprehensive contingency playbooks for all failure modes across Gate 2
+(Canva, May 19-24), Gate 3 (Kit, May 27-28), and May 30 launch day. 12+ playbooks, 3,000+
+words, plus a quick-reference failure-mode decision tree for launch day.
+
+**Scope executed**:
+
+Grounded in 10 project documents: TRACK_B_USER_GATES.md, CANVA_ZONE_CARD_DESIGN_GUIDE.md,
+CANVA_SETUP_AND_EXECUTION_GUIDE.md, TRACK_B_EMAIL_AUTOMATION_KIT_GUIDE.md, KIT_SETUP_NOTES.md,
+MAY_30_RISK_AND_CONTINGENCY_PLAN.md, MAY_30_LAUNCH_DAY_EXECUTION_PLAN.md, TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md,
+LAUNCH_CONTINGENCY_PLAYBOOKS.md (predecessor), WORKLOG.md Item 60 (Item 60 audit).
+
+**12 failure modes covered** across 13 playbooks (A1-A4, B1-B5, C1-C5):
+
+Gate 2 (Canva):
+- A1: Color limit workaround — Canva free plan 3-color cap vs. 10 needed; manual hex cheat
+  sheet procedure; Canva Pro $15/mo decision rule
+- A2: File upload failure (logo PNG format, file size, API outage); browser isolation steps;
+  proceed-without-Brand-Kit principle
+- A3: Brand Kit corrupted or reset; design file disappeared; rebuild from Recent designs /
+  Trash / CANVA_ZONE_CARD_DESIGN_GUIDE.md
+- A4: Missing images or placeholder text in PDF export; PDF Print vs. PNG export fallback;
+  placeholder discipline before distribution
+
+Gate 3 (Kit):
+- B1: Email routing failure; DKIM/SPF spam diagnosis; tag name matching checklist; zone card
+  delivery verification
+- B2: Conditional logic blocked (free plan limit confirmed); Option 1 all-zones email (free,
+  10 min); Option 2 manual segmentation; Option 3 Creator upgrade ($33/mo); decision rule
+- B3: Subscriber list corrupted or count appears zero; Active filter trap; CSV backup
+  re-import; Kit data restore (30-day window)
+- B4: Kit automation failed or account suspended; Gmail manual broadcast fallback with
+  complete procedure; Mailchimp migration path
+- B5: Etsy webhook not firing (Kit-Etsy integration); context: no native Etsy-Kit integration
+  exists by default; Zapier/Make connector triage; manual daily tagging fallback
+
+Launch day (May 30):
+- C1: Etsy listing won't publish; 7-field validation checklist; Gumroad 15-min fallback;
+  account verification hold procedure
+- C2: Kit broadcast failed; status detection; retry logic; Gmail fallback procedure
+- C3: Social media posting failed; Buffer reconnect for Instagram/Pinterest; TikTok native
+  upload clarification; manual posting fallback (5 min/platform)
+- C4: GA4 not tracking; Etsy purchase-event scope clarification; Measurement ID mismatch fix;
+  UTM parameter requirement; start-fresh posture
+- C5: Multi-modal timing failure — emails sent before Etsy listings are live; correction email
+  template; Gumroad fallback if Etsy cannot resolve in 60 min; prevention (2-hour window rule)
+
+**Files created**:
+- `projects/seedwarden/SEEDWARDEN_LAUNCH_CONTINGENCIES.md` — 7,242 words. 13 playbooks.
+  Each playbook: trigger condition, how to confirm, immediate action (first 5 min), recovery
+  path (full fix), escalation trigger.
+- `projects/seedwarden/failure-mode-decision-tree.md` — 1,936 words. ASCII flowchart covering
+  all 13 failure modes (F1-F13). Print-ready for May 30 morning. Navigate from symptom to
+  playbook in under 3 minutes.
+
+**Key decisions documented**:
+- Multi-modal timing failure (C5) is the highest-stakes launch-day scenario: emails with
+  broken Etsy links to warm subscribers during the peak open window. Prevention: verify Etsy
+  live in incognito at 10:05am before any Kit broadcast action.
+- All-zones email (B2 Option 1) is confirmed as the correct default for Kit free plan launch.
+- Etsy-to-Kit integration (B5) does not exist natively — buyers receive files via Etsy's own
+  purchase confirmation, not via Kit. Kit list grows from landing page organic signups.
+- GA4 cannot track Etsy purchases. Etsy Stats = purchase truth. GA4 = traffic only.
+- Minimum viable launch: Etsy listings live = real launch. All other channels are additive.
+
+---
+
+## Item 60 — May 30 Launch Contingency Protocols and Failure Mode Recovery Playbooks — 2026-05-15
+
+**Task**: Create comprehensive contingency playbooks and a quick-reference decision tree for
+all likely failure modes across Gate 2 (Canva Brand Kit), Gate 3 (Kit email), and May 30
+launch day (Etsy, Kit broadcast, social media, GA4).
+
+**Scope executed**:
+
+Grounded in 9 project documents (MAY_30_RISK_AND_CONTINGENCY_PLAN.md, TRACK_B_USER_GATES.md,
+KIT_SETUP_NOTES.md, TRACK_B_CANVA_SETUP_AND_EXPORT_GUIDE.md, CANVA_SETUP_STATUS.md,
+MAY_30_LAUNCH_DAY_EXECUTION_PLAN.TRACK_B_EXECUTION_READINESS.md (Item 57 audit),
+etsy-ga4-event-tracking.md, WORKLOG.md Item 57 entry). All playbooks reflect actual Seedwarden
+setup and confirmed platform constraints from Item 57 (Canva free 3-color limit, Kit free
+plan no-conditionals limit).
+
+**8 failure modes covered** across 8 playbooks:
+- A1: Canva color limit (3 vs. 10 needed) — detection, 3-color immediate fix, Pro vs. manual-hex decision framework
+- A2: Canva Brand Kit upload/API error — transient vs. persistent diagnosis, browser isolation steps
+- A3: Brand Kit corruption / design file disappeared — recovery and prevention (export PDFs immediately after each card)
+- B1: Kit email routing failure — DKIM/SPF checklist, automation trigger verification, zone routing repair
+- B2: Kit conditional logic blocked by free plan limit — three-option decision framework (single all-zones email / manual segmentation / upgrade to Creator $33/mo)
+- B3: Kit automation failure / account suspension — subscriber recovery, Gmail manual broadcast fallback procedure
+- C1: Etsy listing won't publish — 7-field checklist, Gumroad 15-min fallback, account hold recovery
+- C2: Kit broadcast send failed — status detection, retry logic, Gmail fallback with exact procedure
+- C3: Social media posting failed — platform-specific causes (Instagram auth, TikTok native-upload requirement, Pinterest board requirement), manual posting procedure
+- C4: GA4 tracking not working — Etsy tracking scope clarification (purchase events cannot be captured), Measurement ID verification, custom dimension setup, backfill vs. start fresh
+
+**Files created**:
+- `projects/seedwarden/LAUNCH_CONTINGENCY_PLAYBOOKS.md` — ~2,700 words. 8 full playbooks.
+  Each playbook: trigger description, detection procedure, immediate fix (5 min), full recovery
+  (30-60 min), escalation trigger.
+- `projects/seedwarden/LAUNCH_DAY_DECISION_TREE.md` — ~550 words. ASCII flowchart covering
+  all 8 failure modes. Print-ready for May 30 morning. Diagnose and find the recovery playbook
+  in under 5 minutes per failure.
+
+**Key decisions documented in playbooks**:
+- Canva color limit: Add 3 most critical colors to Brand Kit (#143b28, #F5EDD6, #A0522D);
+  enter remaining 7 manually per session. Upgrade to Canva Pro ($15/mo) if producing 20+
+  designs. Do not let this block launch.
+- Kit conditional routing: For launch day, use single all-zones Email 1 (lists all 8 zone card
+  links). Upgrade to Kit Creator ($33/mo) and implement full conditional routing in Week 2.
+- Minimum viable launch: Etsy listings live = launch is real. All other channels are additive.
+
+---
+
+## Exploration Queue Item 57 — Track B Gate Execution Readiness Audit — 2026-05-15
+
+**Task**: Verify TRACK_B_USER_GATES.md (Item 48) contains all information needed for user to execute Gates 1-3 without documentation gaps. Check for platform UI changes since document creation.
+
+**Research conducted**:
+- Verified Instagram, TikTok, Pinterest account creation and business-switch UI paths against May 2026 platform help documentation
+- Verified Canva free plan Brand Kit color/font limits against current pricing pages
+- Verified Kit (kit.co) free Newsletter plan automation and sequence limits against official Kit help documentation
+
+**Critical gaps found**:
+1. Canva free plan limits Brand Kit to 3 colors. Gates doc specifies 10 colors. Fix: upgrade to Canva Pro ($15/mo) or use manual hex-code workaround per three options detailed in audit document.
+2. Kit free plan: only 1 automation and 1 sequence allowed; no conditional logic. Gates doc zone-routing architecture requires conditional steps, which require Kit Creator plan ($33/mo). Fix: upgrade or simplify to single-zone launch.
+
+**Minor UI discrepancies found** (cosmetic, do not block execution):
+- Instagram path label: "Settings and Privacy" (current) vs. "Settings" (doc). Same step.
+- Pinterest convert path: "Account Management" (current) vs. "Account changes" (doc). Same function.
+
+**File created**:
+- `projects/seedwarden/TRACK_B_EXECUTION_READINESS.md` — audit companion, checklists for Gates 1-3, gap assessment, pre-execution checklist, 7-scenario contingency troubleshooting guide.
+
+---
+
 ## Phase 3 Herbalist Network Pre-Staging — 2026-05-14
 
 **Task**: Pre-stage herbalist expert contact network and interview frameworks for Phase 3
