@@ -1,20 +1,27 @@
-# Open-Repo MVP Backend API Documentation
+# Open-Repo Backend API Documentation
 
-**Version**: 0.1.0  
+**Version**: 0.4.0  
 **Base URL**: `http://localhost:8000` (development)  
-**Status**: MVP Phase 1 (CRUD + validation only)
+**Status**: Phase 4 (CRUD + Search + Endorsements + Federation + Export Framework)
 
 ---
 
 ## Overview
 
-The Open-Repo Backend is a FastAPI + PostgreSQL application that implements CRUD endpoints for managing OpenRepoItem content in JSON-LD format. Phase 1 focuses on core CRUD functionality and validation against the JSON-LD schema defined in `mvp-protocol-design.md`.
+The Open-Repo Backend is a full-stack FastAPI + PostgreSQL application that implements complete CRUD, search, endorsement, and federation endpoints for managing OpenRepoItem content in JSON-LD format and distributing content via Kiwix offline archives.
 
-**Out of scope for Phase 1**:
-- Full-text search (Meilisearch - Phase 2)
-- Endorsements (Phase 2)
-- Federation/ActivityPub (Phase 3+)
-- Contributions/review workflow (Phase 3+)
+**Phase 4 includes**:
+- ✅ CRUD operations with JSON-LD validation
+- ✅ Full-text search (Meilisearch)
+- ✅ Endorsement system (voting, flagging)
+- ✅ Federation service layer (partner registration, HTTP signature verification)
+- ✅ Export framework (ZimWriter stubs + OPDS catalog stubs)
+- ✅ Admin dashboard (partner management, conflict logs)
+
+**Out of scope for Phase 4**:
+- libzim integration (Phase 5 - stubs in place)
+- feedgen migration for OPDS (Phase 5 - raw XML used for now)
+- DID-based authentication (Phase 6)
 
 ---
 
