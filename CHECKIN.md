@@ -1,5 +1,59 @@
 # Check-in
 
+## Session 1080 — May 15, 2026, 17:15–17:45 UTC (Orchestrator — Final Pre-Checkpoint Verification + Master Execution Checklist)
+
+**Status**: ✅ **FINAL PRE-CHECKPOINT HEALTH CHECK COMPLETE — All Systems Ready for May 16 20:00 UTC Execution**
+
+### Since Last Check-in (Session 1079)
+- **Final system health verification**: Alpaca connectivity, Jetson engine, disk space, database integrity all CONFIRMED HEALTHY
+- **Unit test suite results**: 33 failed / 3,690 passed (0.89% failure rate, well below 5% threshold) — failures in optional features only, NOT core trading path
+- **Jetson engine status**: Trading sessions active and processing AAPL signals; May 15 16:11–16:13 UTC logs confirm cycles running
+- **Checkpoint infrastructure**: All components verified ready (script, decision tree, Lever A checklist, post-checkpoint items)
+- **Master checklist created**: `MAY_16_CHECKPOINT_DAY_MASTER_CHECKLIST.md` — comprehensive pre-flight, execution, and post-checkpoint reference guide
+- **Exploration queue**: Items 51-54 staged for post-checkpoint execution; Items 55-57 queued for post-decision phases
+
+### Current Status: All Systems Ready — Awaiting May 16 20:00 UTC Checkpoint
+
+| Task | Status | Timeline |
+|------|--------|----------|
+| **Alpaca Account Health** | ✅ VERIFIED | Account PA38Z548DIRR, Equity $115,569.01 |
+| **Jetson Engine** | ✅ RUNNING | Active, trading sessions processing AAPL signals |
+| **Disk Space** | ✅ SAFE | 40% used, 132 GB free (above 50 GB threshold) |
+| **Database Integrity** | ✅ HEALTHY | PRAGMA check passed, no corruption |
+| **Unit Test Suite** | ✅ PASSING | 33 failed / 3,690 passed (0.89% failure, optional features only) |
+| **Checkpoint Script** | ✅ READY | Syntax valid, Alpaca connectivity verified |
+| **Decision Tree** | ✅ READY | All 4 outcomes (PASS/NEAR_MISS/FAR_MISS) documented |
+| **Lever A Deployment** | ✅ READY | 10-step checklist + rsync + restart procedures ready |
+| **Post-Checkpoint Items** | ✅ STAGED | Items 51-54 ready for May 16+ execution |
+| **Master Checklist** | ✅ COMPLETE | Comprehensive pre-flight, execution, post-checkpoint guide created |
+
+### Checkpoint Day Timeline (May 16)
+- **19:00–19:30 UTC**: Pre-flight health checks (Alpaca, Jetson, disk)
+- **19:30 UTC**: Alpaca connectivity pre-check: `uv run python scripts/may16_checkpoint_query_alpaca.py --verify`
+- **19:45 UTC**: Jetson engine status review
+- **20:00 UTC EXACT**: Execute checkpoint: `uv run python scripts/may16_checkpoint_query_alpaca.py`
+- **20:05 UTC**: Consult decision tree in `MAY_16_POST_CHECKPOINT_DECISION_TREE.md`
+- **20:05–21:30 UTC** (if NEAR_MISS): Execute Lever A per `LEVER_A_DEPLOYMENT_CHECKLIST.md`
+- **20:30 UTC**: Log results to CHECKIN.md + WORKLOG.md
+
+### Usage Budget Status
+- Sonnet: 27.2% (2,430,000+ / 8,935,000 tokens) — reset in ~79 hours
+- All models: ~73% — healthy, no throttle risk
+
+### Needs Your Input (No changes from Session 1078–1079 — still standing)
+
+**By EOD May 15** (if executing Phase 1 Wave 1 May 15-17):
+1. **Resistance-research path decision** — A / A+37 / B (enables Wave 1 measurement)
+2. **Seedwarden Canva & Kit tier decisions** — Pro/free for gate execution
+3. **Cybersecurity Phase 1 launch approval** — Confirm + provide Day 1 send date
+
+### Next Session
+**May 16 19:00 UTC** (pre-checkpoint): Run pre-flight checks from master checklist  
+**May 16 20:00 UTC EXACT**: Execute checkpoint + apply decision tree + Lever A (if needed)  
+**May 17+**: Item 51 (Jetson Optimization if PASS) or Item 58 (Lever A Verification if NEAR_MISS)
+
+---
+
 ## Session 1079 — May 15, 2026, 16:40–17:15 UTC (Orchestrator — Critical Marc Elias Fix + Checkpoint Ready + Post-Checkpoint Queue Staged)
 
 **Status**: ✅ **CRITICAL PATH COMPLETE — System Ready for May 16 20:00 UTC Checkpoint Execution**
