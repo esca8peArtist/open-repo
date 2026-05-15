@@ -59,6 +59,76 @@
 
 ---
 
+## Session 1091 Continued — May 15, 2026, 21:00–22:00 UTC (Stockbot Agent — Gate 2 Options Architecture Research)
+
+**Status**: ✅ **EXPLORATION ITEM 51 COMPLETE — Gate 2 decision framework ready for post-checkpoint execution**
+
+### Autonomous Work Executed
+
+**Stockbot Gate 2 Options Architecture Evaluation (Exploration Item 51)** ✅
+- **Deliverables**: 5 comprehensive research documents committed to stockbot submodule
+  - `GATE_2_OPTIONS_ARCHITECTURE_AUDIT.md` — Current infrastructure status (battle-tested vs prototype)
+  - `GATE_2_DECISION_FRAMEWORK.md` — 5-path decision tree for post-checkpoint execution
+  - `GATE_2_NAKED_CALL_PREVENTION_IMPLEMENTATION.md` — Pre-written Gap 4 implementation plan
+  - `GATE_2_IMPLEMENTATION_GUIDE.md` — Comprehensive implementation guide with code
+  - `GATE_2_READINESS_CHECKLIST.md` — Copy-paste-ready test cases and verification steps
+
+- **Key Finding**: Options infrastructure is 70% battle-tested
+  - OptionsExecutor, OptionsLiveSession, OptionsPositionTracker: all working, live fills documented May 12–13
+  - All 5 gaps confirmed missing
+  - 3 gaps block Gate 2 (Gap 1: DB persistence, Gap 4: naked-call prevention, Gap 2: covered-call overlay)
+  - Gap 4 is P0 safety blocker — must be live before any option is written
+
+- **Risk/Reward Analysis Complete**
+  - Upside: 13–15.5% annualized on deployed equity (30-delta covered calls)
+  - Downside: $4–10K max loss per uncovered contract (3.5–8.8% of $114K account) if Gap 4 missing
+  - Activation threshold: Sharpe >= 1.0 + >= 5 confirmed equity round trips + Gap 4 live
+
+- **5-Path Decision Framework Ready**:
+  - **PATH A (PASS)**: Activate options immediately, begin Gap 1+4 May 17, first write June 5-10
+  - **PATH B (NEAR_MISS strong)**: Implement Gaps 1+4 defensively, no writes, re-eval June 4
+  - **PATH C (NEAR_MISS weak)**: Root cause diagnosis first, Options deferred June 30+
+  - **PATH D (FAR_MISS_C1)**: Quarantine options, full equity repair first
+  - **PATH E (FAR_MISS_C2)**: System failure recovery, post-mortem required
+
+- **Implementation Ready**: Gap 4 complete code (OptionPosition model, UncoveredCallGuardrail class, 9 test scenarios) is copy-paste-ready for May 17 execution if PATH A/B approved
+
+- **Commit**: `4206237` — "research(stockbot): Gate 2 options evaluation and Gap 4 implementation plan"
+
+### Impact
+
+✅ **Post-checkpoint execution unblocked**: User will have complete decision framework by May 16 20:00 UTC checkpoint start
+✅ **No decision latency**: Moment checkpoint completes, user (or orchestrator) can immediately execute PATH A/B/C/D/E action
+✅ **Implementation ready**: If options activation approved, Gap 4 implementation can begin May 17 with zero additional research delay
+✅ **Risk mitigation**: P0 safety gap (Gap 4) fully analyzed, implementation pre-written, tests pre-staged
+
+### Exploration Queue Status
+
+- **Item 51 (stockbot Gate 2 options architecture)**: ✅ COMPLETE — all 5 decision paths researched, implementation plans ready
+- **Remaining queue**:
+  - Item 55: stockbot post-checkpoint scenario readiness (pre-researched, ready May 16 21:00 UTC)
+  - Item 56: resistance-research Phase 2 sequencing (ready May 17+ post-path-decision)
+  - Item 57: open-repo Phase 5 PR review tracking (ready anytime)
+  - NEW: open-repo Phase 6 deep planning
+  - NEW: seedwarden Phase 3-4 post-launch research
+
+### Session Summary
+
+✅ Exploration Item 51 complete (options architecture evaluation, all 5 checkpoint outcome paths researched)
+✅ Post-checkpoint execution roadmap finalized (user has complete decision framework)
+✅ All Gap 4 code ready for May 17 implementation if options activated
+✅ Checkout outcome paths A–E fully documented with specific action sequences
+
+**Usage**: 78% all-models (3.3M tokens remaining)
+
+**Next Checkpoint Actions** (May 16 20:00 UTC):
+1. Execute checkpoint query script
+2. Classify outcome (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2)
+3. Look up corresponding PATH (A/B/C/D/E) in GATE_2_DECISION_FRAMEWORK.md
+4. Execute recommended action immediately (Lever A, options activation, or diagnosis)
+
+---
+
 ## Session 1089 — May 15, 2026, 19:00+ UTC (Orchestrator — Callais Correction + Parallel Agent Spawn)
 
 **Status**: 🔄 **IN PROGRESS — Seedwarden & Stockbot agents running in parallel**
