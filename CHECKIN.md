@@ -1,5 +1,63 @@
 # Check-in
 
+## Session 1037 — May 15, 2026, 06:10–06:25 UTC (Orchestrator — Seedwarden Phase 2 Execution Tracker)
+
+**Status**: ✅ **SEEDWARDEN PHASE 2 EXECUTION DAILY TRACKER COMPLETE. All priority projects remain blocked on user actions/external events. Checkpoint today: all projects GREEN with clear next steps.**
+
+### Since Last Check-in (Session 1036, May 15 04:34–05:50 UTC)
+
+**Seedwarden Phase 2 Launch Coordination** ✅ **COMPLETE**:
+- **Deliverable**: `PHASE_2_EXECUTION_DAILY_TRACKER_MAY_15_30.md` (326 lines, production-ready)
+  - Consolidated all critical path milestones into single quick-reference for May 15-30 window
+  - Daily checkpoint structure with specific go/no-go decision gates for each day
+  - Decision trees for common blockers: delayed orders, location unavailable, photo shoots running late
+  - **Critical path bottleneck identified**: Plant ordering (Mountain Rose Herbs ginseng/goldenseal root drives timeline)
+  - **User action TODAY (May 15)**: Confirm plant orders placed OR place them now (same-day priority shipping available)
+  - **Green light criteria**: Plant orders confirmed placed + location access secured → All subsequent milestones achievable
+- **Status**: Ready for user execution starting TODAY
+- **Launch target**: May 30, 2026 (15 days remaining)
+- **No autonomous blockers**: All contingency fallbacks documented (indoor backup for field shoot, iNaturalist CC-BY for habitat images, 7-day float for photo shoots)
+
+**Exploration Queue Status**:
+- ✅ seedwarden Phase 2 Photography & Plant Sourcing Logistics (COMPLETE this session)
+- Remaining queue items: all blocked on user decisions (stockbot covered call post-Gate-1, resistance-research Phase 2 expansion awaits Phase 1 decision)
+
+**Project Status Summary**:
+- **stockbot**: Awaiting May 16 20:00 UTC checkpoint execution (automated, monitoring only)
+- **resistance-research**: Phase 1 execution ready; awaiting user path decision (A/A+37/B); Domain 50 June 1 HHS deadline critical
+- **cybersecurity-hardening**: Tier 1 distribution ready; awaiting user approval + Day 1 send date
+- **mfg-farm**: Test print execution awaiting user action
+- **seedwarden**: Phase 2 execution ready; daily tracker live; awaiting user plant order confirmation + location access validation
+- **open-repo**: PRs awaiting review/merge
+- **off-grid-living**: Publication complete; awaiting user social media execution
+- **workout / resume**: Complete; awaiting user review
+
+### Needs Your Input
+
+**URGENT — Seedwarden Phase 2 Launch (May 15, TODAY)**:
+1. **Confirm plant orders** (or place now if not done): Mountain Rose Herbs (ginseng + goldenseal dried root, 2-day priority), Strictly Medicinal Seeds (goldenseal seeds + Black Cohosh), Prairie Moon Nursery (ramps + Trillium, call 866-417-8156 first)
+2. **Confirm location access**: Asheville Botanical Garden permit OR private forest farm referral from United Plant Savers OR activate indoor studio fallback
+3. **Reference**: See PHASE_2_EXECUTION_DAILY_TRACKER_MAY_15_30.md "URGENT — May 15 Status Check" section for decision tree
+
+**Stockbot May 16 Checkpoint (Tomorrow, 20:00 UTC)**:
+- Orchestrator will execute checkpoint query at scheduled time
+- If AAPL h+11 or h+12 exit fires: Continue normal Gate 2 timeline
+- If no exits by May 16 20:00 UTC: Autonomously apply Lever A (threshold adjustment, no user action needed)
+- Full documentation in MAY_16_CHECKPOINT_EXECUTION_GUIDE.md
+
+**Resistance-Research Phase 1 Distribution (Decision Needed May 15-17)**:
+- Choose path A / A+37 / B and trigger Phase 1 execution (~2.5-3 hours)
+- Domain 50 (OBBBA/NVRA) has hard June 1 HHS deadline — prioritize its distribution in Phase 1 Tier 1 contacts
+
+### Suggested Next Session Priorities
+
+1. **May 15 (NOW)**: seedwarden Phase 2 user action items (plant orders + location access)
+2. **May 16 20:00 UTC**: stockbot checkpoint execution (automated, monitoring)
+3. **May 15-17**: resistance-research Phase 1 distribution path decision + execution
+4. **May 16-30**: seedwarden Phase 2 execution track progress per PHASE_2_EXECUTION_DAILY_TRACKER_MAY_15_30.md
+
+---
+
 ## Session 1036 — May 15, 2026, 04:34–05:50 UTC (Orchestrator — Stockbot Checkpoint Readiness + Resistance-Research Assessment)
 
 **Status**: ✅ **STOCKBOT MAY 16 CHECKPOINT EXECUTION GUIDE COMPLETE + BUG FIX VERIFIED. RESISTANCE-RESEARCH PHASE 2 DOMAINS 48-50 ASSESSMENT COMPLETE. All current autonomous work complete; all projects await user decisions or external events (May 16 checkpoint, Phase 1 distribution path, Phase 2 launch).**
