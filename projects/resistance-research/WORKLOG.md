@@ -2,6 +2,39 @@
 
 ---
 
+## May 15, 2026 — Resistance Research Agent — Domain 57: Multilateral Withdrawal and US Commitment Collapse
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md` (~7,200 words, 49 citations)
+
+**Task**: Full Phase 2 production research on Domain 57 — Multilateral Withdrawal and US Commitment Collapse. Advance-scheduled for UNGA 81 High-Level Week (September 22–28, 2026) distribution, targeting August 10 release.
+
+**Key deliverables**:
+- Complete domain document: 7,200 words, 49 fully cited sources
+- Leading quantified finding: US withdrew from 66 international organizations in single January 7, 2026 executive memorandum — largest single multilateral withdrawal in any democracy's history
+- Five causal pathways documented: (1) accountability infrastructure removal, (2) domestic crackdown enablement, (3) authoritarian base signaling and norm cascade, (4) alliance fragmentation and democratic coalition collapse, (5) constitutional asymmetry (Senate in, President out)
+- Global pattern case studies: Russia/ECHR (2022), Hungary/ICC (2025), Sahel/ICC (2025), Turkey/ECHR non-compliance
+- Resistance architecture: universal jurisdiction (34 cases/23 convictions in 2025), civil society coalition, counter-defunding
+- 20+ organizational contacts with specific advocacy windows
+- Three legislative reform proposals with constitutional basis: Treaty Withdrawal Notification Act, Multilateral Commitment Protection Act, ICC Sanctions Repeal
+- Cross-domain bridges: Domains 1, 23, 26, 28, 33, 35, 51
+
+**Key sources gathered**:
+- White House Presidential Memorandum January 7, 2026 (primary source)
+- Coalition for ICC "Criminalising Accountability" report 2026 (45 interviews, US civil society chilling effects)
+- CRS R48868 "Separation of Powers and NATO Withdrawal" (February 27, 2026)
+- V-Dem 2026: US decline "unprecedented," reclassified as electoral (not liberal) democracy
+- Freedom House 2026: 20th consecutive year of global freedom decline
+- TRIAL International/FIDH Universal Jurisdiction Annual Review 2025 (34 cases, 23 convictions)
+- HRW Hungary ICC withdrawal documentation (June 2025)
+- HRW Sahel ICC withdrawal documentation (September 2025)
+- Modern Diplomacy on NATO/Hegseth credibility collapse (April 2026)
+- Al Jazeera on EU Article 42.7 as NATO alternative (April 2026)
+
+**Estimated research and writing time**: ~8 hours (condensed from 40-50 hour production estimate via agent execution — all primary sources publicly accessible, synthesis executed in single session)
+
+---
+
 ## May 15, 2026 — General Research Agent — Item 53: Domains 57 & 59 Phase 2 Production Roadmap
 
 **Status**: COMPLETE

@@ -1,5 +1,25 @@
 # CHECKIN — Needs Your Input
 
+*Updated: May 15, 2026 (Domain 57 Phase 2 production complete)*
+
+---
+
+## Phase 2 Domain 57 — COMPLETE (May 15, 2026)
+
+**Domain 57: Multilateral Withdrawal and US Commitment Collapse** is fully produced and committed.
+
+**File**: `projects/resistance-research/domains/domain-57-multilateral-withdrawal-and-us-commitment-collapse.md`
+
+**Stats**: ~7,200 words, 49 citations, 5 causal pathways, 20+ organizational contacts, 3 legislative reform proposals
+
+**Distribution target**: August 10, 2026 (six weeks before UNGA 81 High-Level Week, September 22–28, 2026)
+
+**Leading finding**: US withdrew from 66 international organizations in a single January 7, 2026 executive memorandum — the largest single multilateral withdrawal in any democracy's history — removing the benchmarking, treaty-compliance, and reputational-constraint architecture that domestic civil society uses to hold government accountable. ICC sanctions criminalize US civil society cooperation with the world's primary atrocity accountability institution (up to 20 years federal prison for "material support" to ICC investigations). V-Dem classifies US as "electoral democracy" for first time in 50 years, declining at "unprecedented" speed.
+
+**Action required**: None at this time. Domain 57 is production-ready for August 10 distribution. Recommended next step: pre-UNGA outreach to Senate Foreign Relations Committee staff and CICC/HRW contacts in late July/early August.
+
+---
+
 *Updated: May 14, 2026 (Session 1010 — Domain 42 Wave 1 package confirmed, sequence verified, user send action isolated)*
 
 ---
