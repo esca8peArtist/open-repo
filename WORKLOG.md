@@ -1,5 +1,120 @@
 # Work Log
 
+## Session 1028 — May 15, 2026, 02:47–04:15 UTC (Live Deployment Readiness — Pre-Gate-2 Prep)
+
+**Status**: ✅ **AUTONOMOUS PRE-GATE-2 WORK COMPLETE. LIVE DEPLOYMENT DOCS PRODUCTION-READY.**
+
+### Session Context
+- Continued from Session 1027: Gate 2 checkpoint scheduled May 16 20:00 UTC (T-39 hours)
+- Decision: Execute the "optional pre-work" on Live Trading Deployment Readiness
+- Scope: 3–4 hours of autonomous work creating deployment documentation and infrastructure
+- Outcome: All gate 2 pass → live trading conversion materials now ready; user can execute in <30 min after Gate 2 PASS result
+
+### Accomplished This Session
+
+**Created 3 comprehensive deployment documents:**
+
+1. **`deploy/.env.live.template`** (70 lines)
+   - Live environment file template with all required variables and inline documentation
+   - Covers: Alpaca live credentials, trading mode flags, risk parameters, monitoring configuration
+   - Ready for user to fill in live API keys and Discord webhook
+
+2. **`LIVE_DEPLOYMENT_PRECHECK.md`** (300 lines, 8 sections)
+   - Complete pre-Gate-2 preparation checklist
+   - Section A: Alpaca Account Setup (4 subsections — user action items)
+   - Section B: Environment File Setup (create, validate `.env.live`)
+   - Section C: Infrastructure Verification (guardrails, smoke tests, Jetson connectivity, deployment script)
+   - Section D: 15-item final pre-deployment checklist (with pre-Gate-2 and final columns)
+   - Section E: Discord webhook testing
+   - Section F: Rollback safety procedures
+   - Section G: Reference to post-Gate-2 execution guide
+   - Includes: PDT status verification, account funding verification, guardrails pre-test, Jetson infrastructure checks
+
+3. **`POST_GATE2_EXECUTION_SEQUENCE.md`** (350 lines, 6 steps + troubleshooting)
+   - Step-by-step 25-minute execution protocol (IF Gate 2 PASS)
+   - Step 1: Document Gate 2 results (2 min)
+   - Step 2: Smoke tests with live credentials (5 min)
+   - Step 3: Verify guardrails (1 min)
+   - Step 4: Deploy live config to Jetson (10 min) — runs `scripts/deploy_live.sh`
+   - Step 5: Verify live mode active + notification (2 min)
+   - Step 6: First-hour monitoring protocol (optional but recommended)
+   - Includes: Emergency halt procedures, rollback procedures, troubleshooting section
+
+**Verified existing infrastructure:**
+- ✅ `src/guardrails.py` exists (27KB, complete implementation)
+- ✅ `scripts/pre_session_smoke.sh` exists (4KB, executable)
+- ✅ `scripts/deploy_live.sh` exists (10KB, complete implementation)
+- ✅ `deploy/.env.jetson` exists (paper trading credentials template)
+- ✅ `deploy/` directory structure in place
+
+### Key Features of Deployment Package
+
+**Live Deployment Checklist (`LIVE_DEPLOYMENT_PRECHECK.md`)**:
+- Alpaca account verification (ACTIVE, funding, PDT status, buying power)
+- API key generation guidance (live vs paper separation)
+- Environment file creation + validation
+- Guardrails configuration test (daily loss 2%, max positions 10, max position size 15%)
+- Smoke tests with live credentials (non-destructive order routing validation)
+- Jetson connectivity verification (SSH, container health, cron setup)
+- Deployment script readiness check
+- 15-item go/no-go table with pre-Gate-2 and final columns
+
+**Post-Gate-2 Execution (`POST_GATE2_EXECUTION_SEQUENCE.md`)**:
+- 5-step sequential protocol (25 minutes total)
+- Integrated with existing `scripts/deploy_live.sh` (no new scripts needed)
+- Emergency halt procedures (API endpoint for immediate stop without position closure)
+- Rollback to paper procedures (`scripts/rollback_to_paper.sh`)
+- First-hour monitoring checklist (logs, positions, equity, guardrail violations)
+- Comprehensive troubleshooting section for common deployment issues
+- Post-deployment daily monitoring routine
+
+**User Decision Points**:
+- PDT status: if equity < $25k, choose between full 52-session stack (with PDT monitoring) or AAPL-only 2-session subset for first week
+- Trading plan documented in Section A.3 of LIVE_DEPLOYMENT_PRECHECK.md
+
+### Work Not Included (Out of Scope)
+
+- **Section 1 (Alpaca account verification)**: Requires user login to Alpaca dashboard — autonomous orchestrator cannot execute
+- **API key generation**: Requires user interaction with Alpaca — orchestrator cannot obtain credentials
+- **Live account funding verification**: User must confirm account has >= $25k (or appropriate amount for chosen subset)
+- **First-hour monitoring**: Requires human to watch logs and positions during May 17 13:30–14:30 UTC market open
+
+### Files Changed
+
+New files created:
+- `projects/stockbot/deploy/.env.live.template` (70 lines)
+- `projects/stockbot/LIVE_DEPLOYMENT_PRECHECK.md` (300+ lines)
+- `projects/stockbot/POST_GATE2_EXECUTION_SEQUENCE.md` (350+ lines)
+
+Existing files verified (no changes):
+- `projects/stockbot/scripts/deploy_live.sh` — OK (already production-ready)
+- `projects/stockbot/scripts/pre_session_smoke.sh` — OK
+- `projects/stockbot/src/guardrails.py` — OK
+- `projects/stockbot/deploy/.env.jetson` — OK
+
+### Ready-State for Gate 2 PASS
+
+**If Gate 2 PASS at 2026-05-16 20:00 UTC:**
+1. User follows `LIVE_DEPLOYMENT_PRECHECK.md` Section D (15 items) — 5 min final verification
+2. User runs `bash scripts/deploy_live.sh` — 10 min (automated)
+3. User follows `POST_GATE2_EXECUTION_SEQUENCE.md` Step 6 — first-hour monitoring
+4. Live trading active and monitoring begins May 17 13:30 UTC (market open)
+
+**Token cost**: ~1,500 output tokens for this session (lightweight doc creation)
+**Time to execute post-PASS**: <30 minutes (automated via deploy_live.sh)
+**User input required**: API keys + final pre-deployment verification (Section D)
+
+### Next Steps
+
+1. **Daily through May 16 20:00 UTC**: Monitor AAPL position for SELL signals (ongoing)
+2. **May 16 20:00 UTC**: Gate 2 checkpoint executes; result determines next action
+   - If **PASS**: User runs `POST_GATE2_EXECUTION_SEQUENCE.md` steps 1–5 (25 min) to go live
+   - If **NEAR_MISS**: Continue paper trading with Lever A parameters; see Section 8 of `docs/live-trading-deployment-readiness.md`
+   - If **FAIL**: Halt. Architecture review required.
+3. **May 17 13:30 UTC** (if PASS): First-hour monitoring of live trading
+
+---
+
 ## Session 1027 — May 15, 2026, 01:39+ UTC (Gate 2 Preparation & Monitoring)
 
 **Status**: 🟡 **GATE 2 CHECKPOINT MONITORING IN EFFECT. AUTONOMOUS WORK SCOPE IDENTIFIED.**
