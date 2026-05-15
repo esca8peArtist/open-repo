@@ -1,5 +1,70 @@
 # Check-in
 
+## Session 1053 — May 15, 2026, 10:46–11:50 UTC (Orchestrator — Pre-Checkpoint Verification)
+
+**Status**: ✅ **PRE-CHECKPOINT VERIFICATION COMPLETE — All systems green. Standing by for May 16 20:00 UTC checkpoint execution.**
+
+### Since Last Check-in (Session 1052, 11:35 UTC)
+
+**Work completed (60 min)**:
+
+1. **Final Checkpoint Infrastructure Verification** ✅
+   - Alpaca API connectivity: Verified (Account PA38Z548DIRR, Equity $113,879.03)
+   - Checkpoint script: Verified operational with --verify and --json flags
+   - Jetson engine: Healthy (uptime 8+ hours, all containers running, health checks passing)
+   - No infrastructure failures or degradation
+   - **Status**: Production-ready for 20:00 UTC execution
+
+2. **Checkpoint Timeline Validation** ✅
+   - Current: 2026-05-15 10:46 UTC
+   - Checkpoint: 2026-05-16 20:00 UTC (T-33.2 hours)
+   - Pre-check window: May 16 19:30 UTC (30 min before, optional connectivity check)
+   - All dependent systems verified
+
+### Critical Decisions Still Awaiting User Input
+
+1. **Resistance-Research Distribution Path**: A / A+37 / B — **Needed TODAY by end of session for May 15-17 Wave 1 execution**
+2. **Seedwarden Etsy Verification**: Track A status — **Needed TODAY**
+3. **Cybersecurity Phase 1 Approval**: Day 1 send date — **Needed by May 20**
+
+### May 16 Checkpoint (T-33 hours)
+
+- **Infrastructure status**: VERIFIED GREEN ✅
+- **Checkpoint script**: TESTED ✅
+- **Jetson engine**: HEALTHY ✅
+- **Execution command**: `uv run python scripts/may16_checkpoint_query_alpaca.py`
+- **Expected outcome routing**: PASS (aapl_sells ≥2) / NEAR_MISS Partial (aapl_sells=1) / NEAR_MISS B2 (sells=0, rt=2) / FAR_MISS C2 (sells=0, rt=0)
+- **Post-checkpoint action**: Apply POST_CHECKPOINT_24_HOUR_PLAN.md section per outcome
+
+### Exploration Queue Status
+
+| Item | Status | Prerequisite | Timeline |
+|------|--------|--------------|----------|
+| 1-52 | ✅ COMPLETE | — | — |
+| 53 (resistance Phase 2) | QUEUED | Phase 1 success signal | Post-May-16 checkpoint |
+| 54 (cybersecurity Phase 3) | QUEUED | Phase 1 launch approval | Post-Phase-1-launch |
+| 55-56 | ✅ COMPLETE | None | **Complete (Session 1052)** |
+
+### Project Status Summary (May 15, 10:46 UTC)
+
+| Project | Status | Blocker | Next Action | Timeline |
+|---------|--------|---------|-------------|----------|
+| **stockbot** | May 16 checkpoint T-33h | None; infrastructure verified | Execute checkpoint 20:00 UTC; apply outcome-specific actions | May 16 20:00 UTC |
+| **resistance-research** | Phase 1 COMPLETE; Phase 2 ready | User path decision | **USER DECISION URGENT**: Path A/A+37/B → Wave 1 timing | May 15+ (today) |
+| **mfg-farm** | Pre-print COMPLETE | Test print execution | User executes test print | May 19–31 |
+| **seedwarden** | Track B ready (gates 1-3) | Etsy verification (user action) | **USER ACTION**: Submit Etsy ID verification TODAY | May 15 (critical) |
+| **cybersecurity-hardening** | Tier 1–2 COMPLETE | User approval for Phase 1 launch | **USER APPROVAL**: Confirm launch + Day 1 send date | May 15+ |
+
+### Suggested User Actions (End of May 15)
+
+1. **IMMEDIATE** (within 2 hours): Resistance-Research path decision (A/A+37/B) to enable Wave 1 execution May 15-17
+2. **TODAY** (within 4 hours): Seedwarden Etsy verification status
+3. **TODAY** (within 8 hours): Cybersecurity approval confirmation
+
+**Next session**: May 16 20:00-21:30 UTC checkpoint execution + outcome-specific routing.
+
+---
+
 ## Session 1052 — May 15, 2026, 11:05–11:35 UTC (Orchestrator — Exploration Items 55-56 Complete)
 
 **Status**: ✅ **AUTONOMOUS WORK COMPLETE — Exploration queue fully populated. Orchestrator standing by for May 16 checkpoint and user decisions.**
