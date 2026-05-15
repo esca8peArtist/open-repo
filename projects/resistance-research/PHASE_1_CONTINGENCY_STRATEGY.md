@@ -656,4 +656,325 @@ This checklist assumes Phase 1 launch on May 14–15 (Batch 1 send). All day ref
 
 ---
 
-*Prepared: May 14, 2026. Deploy Day 1. Consult only if metric thresholds above are breached. Primary execution document: PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md.*
+## 8. International Advocacy Amplification Hook (Trigger 4 Supplement)
+
+This section supplements Section 5.2 (Coalition Briefings) with international advocacy organizations that carry a distinct legitimacy frame — useful when domestic media and coalition pathways have not activated by Day 14. International citations of U.S. democratic erosion create a different credibility signal than domestic coverage: they position the research within a global democratic backsliding literature and reach audiences (OECD governments, European policy networks, international media) that domestic think tanks cannot reach.
+
+**When to activate**: Trigger 4 fires (Day 14, zero media pickup) and domestic coalition briefings are either in progress or have not responded within 5 days.
+
+---
+
+### 8.1 IFES — International Foundation for Electoral Systems
+
+**Contact**: ifes@ifes.org | ifes.org/contact  
+**Relevance**: IFES advises election administration in 40+ countries. Their staff includes technical experts who regularly review U.S. election systems as a comparative benchmark for work in other democracies. A U.S. researcher citing the same international evidence they use (German Federal Returning Officer, Elections Canada, Electoral Commission UK) is a peer-to-peer research engagement, not an external pitch.  
+**Domain focus**: Domain 37 (five-mechanism federal interference infrastructure, CISA destruction, EAC capture), Domain 37b (state election security — ES&S/Liberty Vote vendor concentration, RLA adoption map), Domain 1 (NVRA analysis, SAVE Act false positive rate).  
+
+**Email template**:
+
+> Subject: U.S. election security documentation — comparative benchmarks for IFES program staff
+>
+> Dear IFES staff,
+>
+> I am an independent researcher who has documented the structural changes to U.S. federal election security infrastructure since January 2025, using primary sources and the same international comparative benchmarks IFES uses in its technical assistance work.
+>
+> The specific areas where my documentation may intersect with your program work:
+>
+> - CISA election security funding: confirmed $39.6M elimination and FY2027 $707M proposal documentation with source citations
+> - Election denier personnel in EAC and DHS: eight named senior officials with sourced appointment records
+> - Vendor concentration risk: ES&S/Hart InterCivic/Liberty Vote controlling approximately 90% of voting equipment market, including the Liberty Vote acquisition completed without security review
+>
+> The full documentation is at [bit.ly/drp-2026]. Domain 37 is the election-security-specific section; Domain 37b covers state-level security architecture in depth.
+>
+> I would welcome the opportunity to discuss whether any of this documentation is useful for IFES's comparative analysis of U.S. election administration, or whether it belongs in any program staff's reading files.
+>
+> [Your name and contact information]
+
+**Expected timeline**: IFES is a mid-size organization with a responsive program staff. Expect a 5–14 day response cycle. This is a Day 14+ channel — start it on Day 14, do not wait for a response before activating domestic channels.
+
+---
+
+### 8.2 International Republican Institute (IRI)
+
+**Contact**: iri.org/contact  
+**Relevance**: IRI is a democracy assistance organization with bipartisan credibility that advises civil service reform and democratic institution-building globally. Engaging IRI signals cross-partisan institutional concern — the framework is not positioned as progressive advocacy but as comparative institutional documentation.  
+**Domain focus**: Domain 2 (Schedule F and civil service resilience), domain-civil-service-resilience (cross-domain synthesis), Domain 26 (accountability infrastructure).  
+
+**Email template**:
+
+> Subject: U.S. civil service accountability documentation — comparative institutional analysis
+>
+> Dear IRI program staff,
+>
+> I have documented the structural changes to U.S. civil service accountability mechanisms since January 2025, drawing on comparative international evidence from OECD merit system research and the Westminster model's Senior Executive Service architecture.
+>
+> The documentation addresses the Schedule F reclassification mechanism and its effect on merit-based career protections — an area where IRI's international civil service reform work has direct comparative relevance. The international benchmarks I have used (New Zealand State Services Commission, German Federal Personnel Act, Canada's Public Service Employment Act) are the same evidence base IRI uses in program design for partner countries.
+>
+> My question: Is U.S. civil service resilience something IRI program staff are currently analyzing as a comparative benchmark case? If so, I would welcome the opportunity to share the documentation and hear whether the framing is consistent with IRI's institutional analysis.
+>
+> Full framework: [bit.ly/drp-2026]
+>
+> [Your name and contact information]
+
+---
+
+### 8.3 Human Rights Watch — Americas Division
+
+**Contact**: hrw.org/about/contact | press@hrw.org (media inquiries)  
+**Relevance**: HRW publishes annual U.S. country reports. If any framework documentation reaches their Americas researcher, it can influence their reporting cycle. HRW citations carry international legitimacy that domestic citations cannot replicate.  
+**Domain focus**: Domain 16 (immigration enforcement), Domain 29 (prosecutorial weaponization — SPLC indictment), Domain 7 (rights protection), Domain 22 (racial justice).  
+
+**Email template**:
+
+> Subject: Documentation for U.S. country reporting — prosecutorial weaponization and immigration enforcement
+>
+> Dear HRW Americas team,
+>
+> I have compiled primary-source documentation of prosecutorial weaponization and immigration enforcement patterns in the U.S. since January 2025, relevant to HRW's ongoing U.S. country monitoring work.
+>
+> Two areas where this documentation may be most useful for your team:
+>
+> - Domain 29: 22-case retaliatory prosecution pattern, including the April 21, 2026 SPLC indictment — this is documented to the charging document, case filings, and the ACLU/LDF mutual defense response
+> - Domain 16: immigration enforcement documentation including the ICE detention expansion, judicial deference erosion, and the constitutional due process framework under active litigation
+>
+> The documentation is primary-source only and uses HRW's own evidentiary standard for political prosecution (legal basis, timing correlation to political activity, comparison to similarly situated non-political actors).
+>
+> Full documentation: [bit.ly/drp-2026]
+>
+> I am available to discuss any section of the documentation that would be useful for HRW's U.S. country reporting.
+>
+> [Your name and contact information]
+
+---
+
+### 8.4 Amnesty International USA
+
+**Contact**: aiusa.org/contact | media@aiusa.org  
+**Relevance**: Parallel to HRW — international legitimacy frame. AIUSA focuses more on individual cases and rights protection frameworks; HRW focuses more on systemic documentation. Both channels are worth activating if Trigger 4 fires.  
+**Domain focus**: Domain 7 (rights protection infrastructure), Domain 16 (immigration enforcement), Domain 29 (prosecutorial weaponization).  
+
+**Email template**: Use the HRW template above with one modification — replace HRW-specific language with: "I am reaching out to AIUSA because [Domain 7 / Domain 29 documentation] may be relevant to your U.S. rights protection monitoring work, particularly the [specific current AIUSA campaign area, if known, or: 'prosecutorial accountability and immigration enforcement' framing that AIUSA has used in recent country monitoring]."
+
+---
+
+### 8.5 Activation Decision Tree for International Channels
+
+```
+Trigger 4 fires (Day 14 — zero media pickup):
+│
+├── Are domestic coalition briefings (Section 5.2) already sent?
+│   ├── YES → Activate international channels in parallel (same day)
+│   └── NO → Send domestic coalition briefings first; start international
+│            channels Day 15–16 if no response within 48 hours
+│
+├── Priority order for international channel activation:
+│   1. IFES (election administration — most direct domain overlap)
+│   2. Human Rights Watch (country reporting — broadest institutional credibility)
+│   3. IRI (civil service — cross-partisan legitimacy signal)
+│   4. Amnesty International USA (rights protection — parallel to HRW)
+│
+├── Timeline to response:
+│   - IFES: 5–14 days
+│   - HRW Americas: 7–21 days (country reporters have long lead times)
+│   - IRI: 5–14 days
+│   - AIUSA: 7–14 days
+│
+└── What a positive international response enables:
+    - An IFES engagement creates a citation reference usable in Phase 2 outreach
+      to all election security contacts ("IFES program staff are reviewing the
+      Domain 37 election security documentation")
+    - A HRW response creates a pathway to their U.S. country report
+    - An IRI engagement creates a cross-partisan institutional credibility anchor
+      for any Senate-staff outreach in Phase 2
+```
+
+---
+
+## 9. Tier 2 Activation Scenario Matrix — Full Decision Trees
+
+This section provides explicit decision trees for Tier 2 contact activation, keyed to the underperformance scenarios identified in Section 2. The contacts named here are drawn from Section 4 (secondary contact pool) and are organized by the specific scenario that warrants their activation.
+
+### 9.1 Scenario: Law School Sector Silence at Day 14
+
+**Condition**: All law school contacts (Batch 2: Stephanopoulos, Shams, Balkin, Gerken, Chemerinsky, Hasen) have produced zero replies by Day 14.
+
+**Decision tree**:
+
+```
+Law school silence at Day 14:
+│
+├── Check: Did any law school contact show Bitly clicks without replying?
+│   ├── YES → Email landed, ask is failing. Send one follow-up using
+│   │         the "Clinic Resource Frame" from Section 3.2 Variant B.
+│   │         Target: Hasen (UCLA) and Stephanopoulos (Harvard) first —
+│   │         both are most actively publishing in the election law space.
+│   └── NO → Zero engagement. Either email is not landing or contacts
+│            are genuinely not reading. Switch channel.
+│
+├── Channel switch for law schools (if zero clicks):
+│   1. Georgetown Law ICAP: icap.georgetown.edu/contact
+│      → Frame as "constitutional accountability documentation for ICAP's
+│        litigation support work" — ICAP is operationally focused, faster
+│        response cycle than academic faculty
+│   2. ACS Scholars Network: pbrest@acslaw.org
+│      → Frame as "ACS member-facing research resource" — institutional
+│        distribution through ACS reaches 100+ law school chapters
+│   3. Duke Law CLRP: law.duke.edu/clrp/
+│      → Domain 22 and Domain 1 entry point
+│
+└── Timeline: Send Tier 2 law school contacts Day 14–16.
+    Do not wait for law school Tier 1 response before activating.
+    Law school response cycles are 21–42 days (longer than other sectors).
+```
+
+---
+
+### 9.2 Scenario: Civil Rights Sector Underperformance at Day 10
+
+**Condition**: Fewer than 2 civil rights organization contacts have replied by Day 10.
+
+**Decision tree**:
+
+```
+Civil rights underperformance at Day 10:
+│
+├── Which contacts are silent?
+│   ├── NAACP LDF and Lawyers' Committee VRP both silent?
+│   │   → These are the two highest-priority contacts. Something structural.
+│   │   → Check: Are the contacts still in their roles?
+│   │     (LDF: Janai Nelson as President; Lawyers' Committee: Damon Hewitt)
+│   │   → If in role: send follow-up using "Litigation Coordination Frame"
+│   │     (Section 3.3 Variant A), referencing the most recent active case
+│   │     their organization has filed (check their website same day)
+│   │
+│   └── ACLU VRA silent but civil rights contacts replied?
+│       → Domain 37 Phase 1b specific issue. Send ACLU VRA the August 7
+│         NVRA analysis extract as a standalone document — not the full
+│         framework. Subject: "SAVE Act 81% false positive — NVRA quiet
+│         period documentation for VRA team"
+│
+├── Tier 2 civil rights contacts for Day 10+ activation:
+│   1. UnidosUS: unidosus.org/about-us/contact
+│      → Domains 16, 18, 22 — large member reach, rapid internal distribution
+│   2. Damon T. Hewitt (Lawyers' Committee) follow-up to dhewitt@lawyerscommittee.org
+│      → If original email went to general VRP address, try direct to Hewitt
+│   3. Color of Change: colorofchange.org/about/contact
+│      → Domains 22, 29 — digital-native advocacy, faster response cycle
+│
+└── Escalation note: If zero civil rights replies by Day 14, activate
+    Human Rights Watch (Section 8.3) and AFL-CIO (Section 5.2) in parallel —
+    the labor-civil rights nexus (Domain 22 cross-reference to Domain 17)
+    creates a coalition pathway even without direct civil rights org engagement.
+```
+
+---
+
+### 9.3 Scenario: Labor Union Complete Silence at Day 14
+
+**Condition**: AFL-CIO and SEIU contacts have produced zero replies, zero Bitly clicks, by Day 14.
+
+**Decision tree**:
+
+```
+Labor silence at Day 14:
+│
+├── Labor union staff are high-volume recipients of policy research.
+│   Zero clicks at Day 14 almost always means one of three things:
+│   (a) Email routed to a communications department that does not forward
+│   (b) Contact is no longer in the role listed
+│   (c) Domain 17 framing is too academic for their intake process
+│
+├── Diagnosis step: Check AFL-CIO and SEIU "Government Affairs" or
+│   "Policy" staff listings on their current websites.
+│   Are the names you emailed still in those roles?
+│
+├── If contacts have changed:
+│   → Update with current government affairs/policy staff name
+│   → Resend with revised subject: "[Union name] — PRO Act research update"
+│     (shorter, more specific, uses language their staff uses)
+│
+├── If contacts are current (email is just not converting):
+│   → Switch channel: call (202) area code government affairs office directly
+│   → 5-minute phone call with a specific question: "I have research on the
+│     NLRB capture timeline that may be useful for PRO Act testimony — can I
+│     send it to the right policy staff person?"
+│
+├── Tier 2 labor contacts for Day 14+ activation:
+│   1. CWA (Communications Workers): cwa-union.org/contact
+│      → Domain 8 (media workers) + Domain 17 — CWA represents media workers
+│        and tech workers; this is a more specific domain alignment than AFL-CIO
+│   2. UAW: uaw.org/contact
+│      → Domain 17 + Domain 23 (tariff/auto supply chain) — highly specific
+│   3. AFSCME: afscme.org/contact
+│      → Domain 2 (civil service/Schedule F directly threatens AFSCME members)
+│        — this is the most specific domain-to-union alignment in the framework
+│
+└── AFSCME is the highest-priority Tier 2 labor contact:
+    Schedule F directly threatens AFSCME members' civil service protections.
+    The ask is not "review this framework" — it is "Schedule F eliminates
+    the civil service protections your members rely on; here is the statutory
+    analysis." That is an interest-alignment pitch, not a research pitch.
+```
+
+---
+
+### 9.4 Summary Activation Table — Tier 2 by Scenario and Day
+
+| Underperformance Scenario | Day to Activate | Priority Tier 2 Contacts (in order) |
+|--------------------------|----------------|-------------------------------------|
+| Law school sector silence | Day 14 | Georgetown ICAP, ACS Scholars, Duke CLRP |
+| Civil rights sector < 2 replies | Day 10 | UnidosUS, Color of Change, LDF Hewitt direct |
+| Labor complete silence | Day 14 | AFSCME, CWA, UAW |
+| Think tank silence | Day 14 | Niskanen Center, Bipartisan Policy Center, Federation of American Scientists |
+| Zero media pickup | Day 14 | Democracy Fund, New America, state outlets (Section 5.3) |
+| Domain 42 zero participation | Day 10 | Prison Policy Initiative, Drug Policy Reform Network, FAMM |
+| Election protection zero | Day 16 | Eliza Sweren-Becker (Brennan Center), Myrna Pérez (Brennan Center), Sarah Walker (ACLU affiliates) |
+| All sectors silent | Day 7 | SSRN (Section 5.1) + phone to CAP + phone to Roosevelt Institute |
+
+---
+
+## 10. Final Assessment Framework — May 31 Classification
+
+The May 31 final assessment produces one of three Phase 1 outcome classifications. The classification determines the Phase 2 launch approach and the internal framing narrative.
+
+### Classification Criteria
+
+| Metric | Success | Mixed | Underperformance |
+|--------|---------|-------|------------------|
+| Cumulative reply rate | ≥ 15% | 8–14% | < 8% |
+| Organizational adoption actions (Category 3+) | ≥ 3 | 1–2 | 0 |
+| Media mentions | ≥ 1 confirmed | 0 (but Bitly clicks detected) | 0 (zero engagement signals) |
+| Domain 42 DEA participation notices | ≥ 2 filed | 1 filed | 0 filed |
+
+**Note on mixed classification**: A contact is Mixed if any two of the four metrics are above their floor threshold. A contact is Underperformance only if all four metrics are at floor. This is intentionally conservative — a single strong signal (e.g., one NAACP LDF reply that is an Integration Request) upgrades the classification even if all other metrics are at floor.
+
+### Phase 2 Implications by Classification
+
+**Success**: Proceed to Phase 2 with standard sequencing. The warm contacts from Phase 1 are the credibility anchors for Phase 2 Wave 1. Frame Phase 2 to new contacts as "building on Phase 1 engagement from [named organizations that replied]."
+
+**Mixed**: Proceed to Phase 2 but adjust the first-wave sequencing — lead with the sectors that showed the highest Phase 1 reply rates, not the highest prestige contacts. If civil rights organizations replied and think tanks did not, Phase 2 Wave 1 goes to civil rights organizations and Tier 2 civil rights contacts, not think tanks. Adjust Phase 2 domain emphasis to lead with the domains that generated Phase 1 engagement.
+
+**Underperformance**: Phase 2 requires a diagnostic reset before launching. The reset involves three questions:
+1. Was the failure a delivery problem (fix: re-verify all contact addresses, test email deliverability)?
+2. Was the failure a personalization problem (fix: reduce scope of each email to one domain, one finding, one ask)?
+3. Was the failure a channel problem (fix: shift primary channel from email to Substack-first distribution, using email as a follow-up to Substack public engagement rather than the initial contact)?
+
+Do not launch Phase 2 with the same approach that produced Underperformance in Phase 1. The diagnostic reset is mandatory.
+
+---
+
+### Outcome Narrative Summaries (Cross-Reference to Section 6)
+
+For full narrative language, see Section 6 above. Summary references:
+
+- **Success**: "Phase 1 established the coalition foundation for Phase 2 scale" — cite specific engagement signals; name organizations that engaged. Avoid hedging. Report the strongest signals prominently.
+- **Mixed**: "Phase 1 strengthened policy infrastructure; Phase 2 deepens integration" — identify the specific sectors that engaged and make those the Phase 2 priority. Frame the mixed outcome as calibration data, not failure.
+- **Underperformance**: "Phase 1 establishes the knowledge base; Phase 2 targets high-leverage sectors more precisely" — present the diagnostic reset as intentional strategy refinement. Frame the content quality (37 domains, 6 Gists, full measurement infrastructure) as the durable asset. The distribution approach is what is being refined, not the research.
+
+**Universal principle for all narratives**: Never attribute Phase 1 underperformance to content quality. The 37-domain framework is the long-term asset. Distribution approach is a variable that can be refined. Keep these analytically separate in all communication.
+
+---
+
+*Updated: May 15, 2026 (Session 1032, Item 44) — Sections 8–10 added: International advocacy amplification hook (IFES, IRI, HRW, AIUSA), Tier 2 scenario activation decision trees (law schools, civil rights, labor), and May 31 final assessment classification framework. Original document: May 14, 2026.*  
+*Status: Production-ready — deploy Day 1, consult only if metric thresholds above are breached.*  
+*Primary execution document: PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md.*
