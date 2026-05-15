@@ -1,6 +1,24 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 15, 2026 (Domain 57 Phase 2 production complete)*
+*Updated: May 15, 2026 (Wave 1 Pre-Staging Readiness complete — Exploration Queue Item 55)*
+
+---
+
+## WAVE 1 PRE-STAGING COMPLETE — PATH DECISION REQUIRED BY MAY 17 MORNING
+
+**File**: `projects/resistance-research/WAVE_1_PRESTAGING_READINESS.md`
+
+**Status**: All 7 sections complete. Contact verification, Gist pre-flight, template audit, social media staging, metrics setup, go/no-go decision tree, and 30-item May 17 checklist are documented.
+
+**The one blocker**: You have not yet confirmed your distribution path choice (A / A+37 / B). Path A+37 was confirmed May 13, but this document stages all three paths so the choice is final only when you tell the orchestrator which one you are executing.
+
+**Key finding from verification audit**: Batch 1 contacts (5) are all confirmed live as of May 15. Batches 2–3 (20 contacts) need a 90-second per-contact spot-check on May 17 morning before send — the April 27 verification is 18 days old, within tolerance but worth a fresh check. No contacts are known to have left their roles.
+
+**Critical correction to carry into send day**: Marc Elias email template still contains "pending" language for Callais v. Landry. That case was decided April 29. Update the Callais framing before sending Email 5 on Batch 1 send day. This is a 2-minute fix but if missed it signals the research is stale.
+
+**Domain 42 deadline reminder**: May 28 is the DEA participation notice deadline. If path decision is not made until May 17, Domain 42 Category A sends should go out May 17 regardless — that wave is path-independent.
+
+**Total user time to Wave 1 send-ready**: approximately 2 hours (path decision + placeholder fills + Gist pre-flight + Google Sheets setup + LinkedIn scheduling).
 
 ---
 
