@@ -1,5 +1,34 @@
 # Check-in
 
+## Session 1095 — May 15, 2026, 20:25–20:35 UTC (Orchestrator — Final Pre-Checkpoint Verification)
+
+**Status**: ✅ **CHECKPOINT READINESS CONFIRMED — T-24h to May 16 20:00 UTC — No autonomous work available; standby for execution or user decisions**
+
+### Session 1095 Verification Summary
+
+- ✅ ORCHESTRATOR_STATE.md reviewed — current and accurate
+- ✅ PROJECTS.md verified — all priorities, statuses, focus lines current through Session 1093
+- ✅ BLOCKED.md verified — mfg-farm test print is user action (not resolvable), no other active blocks
+- ✅ INBOX.md empty — no new items since Session 1093
+- ✅ Exploration Queue verified — 4 items (51-54), all properly staged with external dependencies
+- ✅ All orchestration files ready for commit
+
+**Autonomous work available**: NONE
+- Stockbot: T-24h to checkpoint (cannot execute early)
+- Resistance-research: Awaiting user path decision (A/A+37/B)
+- Cybersecurity-hardening: Awaiting user Phase 1 approval + Day 1 date
+- Seedwarden: Awaiting user Gate 1 (social setup May 15-18) + Gate 2 (Canva May 20-24)
+- All other projects: Blocked on user actions or scheduled events
+
+**Protocol verification complete**: 
+- (a) Re-read project Goals — all blocked on external dependencies or T-24h away ✅
+- (b) Exploration Queue adequate (4 items exceed 3-item minimum) ✅
+- No health checks warranted (T-24h outside 2-hour pre-event window) ✅
+
+**Appropriate action**: Standby mode. All infrastructure ready. Await May 16 20:00 UTC checkpoint execution.
+
+---
+
 ## Session 1094 — May 15, 2026, 20:10–20:25 UTC (Orchestrator — Orientation & Standby)
 
 **Status**: ✅ **CHECKPOINT READINESS CONFIRMED — T-24h to May 16 20:00 UTC — No autonomous work available until execution or user decisions**
