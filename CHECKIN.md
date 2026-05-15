@@ -1,5 +1,48 @@
 # Check-in
 
+## Session 1073 — May 15, 2026, 14:45–14:55 UTC (Orchestrator — Readiness verification complete)
+
+**Status**: ✅ **ALL SYSTEMS READY FOR May 16 20:00 UTC CHECKPOINT — Awaiting user decisions and external events**
+
+### Since Last Check-in (Session 1072)
+
+**Work completed** (10 minutes, verification):
+- **Comprehensive infrastructure audit**: All checkpoint materials verified complete and production-ready
+- **Decision-support materials verified**: All three user decision frameworks in place (resistance-research path, seedwarden upgrades, cybersecurity approval)
+- **Exploration Queue status confirmed**: Complete (items 1-58 done, items 59-60 queued for post-checkpoint)
+- **WORKLOG.md and CHECKIN.md updated** with current status
+
+### Critical Path to Phase 1 Execution
+
+**User decisions required TODAY (May 15)** for Wave 1 send window (May 15-17):
+1. **Resistance-Research distribution path** — choose A / A+37 / B
+2. **Seedwarden Canva upgrade** — choose Pro / free / workaround
+3. **Seedwarden Kit upgrade** — choose Creator / simple / hybrid
+4. **Cybersecurity Phase 1 launch approval** — confirm + provide Day 1 send date
+
+### All Checkpoint Materials Ready
+- ✅ Execution script: `may16_checkpoint_query_alpaca.py`
+- ✅ Protocol: `MAY_16_CHECKPOINT_PROTOCOL.md`
+- ✅ Post-checkpoint playbooks: `POST_CHECKPOINT_24_HOUR_PLAN.md`, `POST_CHECKPOINT_DECISION_BRIEF.md`
+- ✅ User preparation guide: See CHECKIN Session 1072 for pre-check/execution procedures
+
+### Blockage & Readiness Status
+
+| Item | Status | Blocker | Next |
+|------|--------|---------|------|
+| Stockbot May 16 checkpoint | ✅ Ready | None — scheduled execution 20:00 UTC May 16 | Pre-check 19:30 UTC |
+| Resistance-research Wave 1 | ⏳ Ready | User path decision (5 min) | Execute upon decision |
+| Cybersecurity Phase 1 | ⏳ Ready | User approval + send date (3 min) | Execute upon approval |
+| Seedwarden Track B gates | ⏳ Ready | Canva/Kit upgrade decisions (2 decisions) | Execute May 15-18 upon approval |
+| mfg-farm test print | ⏳ Design complete | User 3D print execution | Awaiting physical print results |
+
+### No Autonomous Work Available
+- All pre-work complete for May 16 checkpoint and Phase 1 launches
+- Awaiting: external event (checkpoint), user decisions (3 critical decisions), user actions (test print, approvals)
+- Next autonomous work: May 17+ based on checkpoint outcome
+
+---
+
 ## Session 1072 — May 15, 2026, 16:00–16:10 UTC (Orchestrator — Pre-checkpoint status verification)
 
 **Status**: ✅ **ALL SYSTEMS READY FOR May 16 20:00 UTC CHECKPOINT — Awaiting external events and user decisions.**
