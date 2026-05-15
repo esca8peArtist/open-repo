@@ -2,6 +2,64 @@
 
 ---
 
+## May 15, 2026 — Resistance Research Agent — Phase 2 Domain Outlines: Domains 57 & 59
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/PHASE_2_DOMAINS_57_59_OUTLINES.md` (~7,800 words)
+
+**Task**: Produce production-ready research outlines for Domain 57 (Multilateral Withdrawal and Democratic Norm Erosion) and Domain 59 (Economic Precarity as Civic Exclusion), following the PHASE_2_DOMAINS_38_40_OUTLINES.md template structure exactly. Each outline must enable immediate research production post-Phase-1-Wave-1 distribution (June 10+) without additional scoping.
+
+**Key findings per domain**:
+
+*Domain 57 — Multilateral Withdrawal*:
+- The January 7, 2026 Presidential Memorandum withdrawing from 66 international organizations (including UN Democracy Fund, International IDEA, UNFCCC, IPCC, UNFPA, WHO) is the primary empirical anchor. Formal WHO withdrawal completed January 22, 2026.
+- Core novel argument: international institutions function as domestic accountability infrastructure — benchmarking data civil society uses for accountability, treaty compliance obligations courts can enforce, and reputational costs that constrain extreme norm violations. Withdrawal removes all three mechanisms simultaneously.
+- ICC sanctions (February 2025 onward) are the sharpest illustration: criminalizing cooperation with the world's atrocity accountability institution severs US civil society's capacity to invoke international accountability mechanisms against domestic abuses.
+- Constitutional asymmetry: Senate ratification required to enter treaties; no Senate approval required to exit. 2024 NDAA Section 1250A covers only NATO. All 66 January 2026 withdrawals are unprotected.
+- CRS R48868 (February 27, 2026) is the current best legal framework for congressional constraints on withdrawal authority.
+- Distribution target: August 10, 2026 (six weeks before UNGA 81 High-Level Week, September 22–28, 2026).
+- 21 confirmed sources; 40–50 production hours.
+
+*Domain 59 — Economic Precarity*:
+- Empirical anchor: 48% vs. 86% voter turnout gap between lowest and highest income quintiles (Econofact); confirmed in 2024 (PRRI: 42% of non-voters earn under $50,000 vs. 16% of voters).
+- Harvard IOP Spring 2026 Youth Poll (April 2026): 45% of 18–29-year-olds struggling to make ends meet; trust in federal government at record low 15%; 43% do not trust elections will be fair.
+- Three peer-reviewed causal anchors: (1) Dallas Fed wp2517 (revised March 2026) — mortgage payment relief causally increased 2012 voter turnout among independent voters; (2) Slee/Desmond (Politics and Society, 2023) — neighborhood eviction rates causally reduce voter turnout; (3) PNAS 2024 housing mobility study — induced residential mobility persistently depresses voting among low-income Black and Hispanic adults.
+- Central novel contribution: OBBBA's simultaneous cuts to Medicaid, SNAP, housing assistance, childcare subsidies, and student loan protections constitute a coordinated reduction in civic participation capacity for 80 million Americans — the compounding effect is multiplicative, not additive.
+- Bankruptcy filings rose 11.9% in the 12 months ending March 31, 2026 (to 591,850), confirming financial distress acceleration.
+- Distribution target: September 1, 2026 (pre-midterm window for voting rights and economic justice organizations).
+- 22 confirmed sources; 50–60 production hours.
+
+**Sequencing recommendation**: Domain 59 first (June 10–July 15) then Domain 57 (June 25–August 10), with parallel execution feasible from July 1.
+
+**Cross-domain bridges confirmed**:
+- D57 bridges: Domain 23 (trade unilateralism), Domain 26 (government accountability), Domain 28 (war powers), Domain 33 (state autocratization), Domain 51 (campaign finance / International IDEA withdrawal)
+- D59 bridges: Domain 47 (housing/eviction), Domain 50 (OBBBA-NVRA healthcare), Domain 31 (Medicaid cuts), Domain 48/54 (criminal justice), Domain 1 (voting rights barrier amplification)
+
+---
+
+## May 15, 2026 — General Research Agent — Item 47: Phase 1 Wave 1 Execution Support Dashboard
+
+**Status**: COMPLETE (verified — file already written, Item 47 tag confirmed at bottom of document)
+**File**: `projects/resistance-research/PHASE_1_WAVE_1_EXECUTION_DASHBOARD.md` (413 lines, ~3,200 words)
+
+**Task**: Create operational execution dashboard for Phase 1 Wave 1 Batch 1 send (May 15–17, 5 contacts: Goodman, Weiser, Chenoweth, Bassin, Elias). Dashboard provides pre-send checklist, send schedule, real-time metrics, daily briefing templates, and Day 3 contingency decision tree.
+
+**Deliverable verification against Item 47 spec**:
+- Pre-send verification checklist: 15 items present (Section 1) — 5 domain/content, 4 email client, 3 contact verification, 3 schedule/tracking
+- Send-time procedures: Section 2 provides day-by-day schedule for May 15–17 with staggered sends (30-min intervals, 16:00–18:00 UTC), reply window expectations (24–48h), bounce handling (Section 5 Trigger 1 diagnosis)
+- Real-time metrics template: Section 3 Tab 2 has exactly 12 pre-built metrics with Google Sheets formulas and baseline/target values across May 15–21
+- Contingency activation procedures: Section 5 provides full Day 3 (May 17 evening) decision tree with 4-step diagnosis sequence and Trigger 1 Action revised subject lines; Section 6 maps all 5 trigger thresholds (Days 3/7/10/14/16)
+- Daily briefing templates: Section 4 provides both 07:00 UTC morning and 17:00 UTC evening templates with fillable metric fields and contingency status indicator
+
+**Key operational details grounded in reference documents**:
+- Exact Gist URLs verified against DISTRIBUTION_GIST_URLS.md and PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md
+- Chenoweth email corrected to erica_chenoweth@hks.harvard.edu (underscore required, per BATCH_1_CONTACT_VERIFICATION.md 2026-05-14 correction)
+- Elias email corrected to melias@elias.law (Perkins Coie domain stale since 2021)
+- 30-min send intervals align with PHASE_1_DISTRIBUTION_EXECUTION_BLUEPRINT.md Block 8 recommendation
+- Day 3 <8% threshold matches PHASE_1_CONTINGENCY_STRATEGY.md Trigger 1
+
+---
+
 ## May 15, 2026 — Resistance Research Agent — Domain 58 Tribal Sovereignty Prep Package
 
 **Status**: COMPLETE
