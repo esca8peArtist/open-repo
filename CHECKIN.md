@@ -1,5 +1,50 @@
 # Check-in
 
+## Session 1068 — May 15, 2026, 13:46–13:50 UTC (Orchestrator — Standby for checkpoint + user decisions)
+
+**Status**: ⏳ **ALL AUTONOMOUS WORK COMPLETE — Standing by for checkpoint execution and 3 critical user decisions.**
+
+### Since Last Check-in (Session 1067)
+
+**Work completed** (4 minutes):
+- **Verified** all Session 1067 deliverables exist and ready
+- **Confirmed** CHECKIN.md action items are clear and documented
+- **Assessed** all projects: zero autonomous work available (all blocked on external events or user decisions)
+- **Exploration Queue status**: Items 1-57 complete; no further autonomous items available
+
+### Immediate Action Items (User)
+
+**TODAY (May 15) — URGENT**:
+1. ✅ Review & approve Marc Elias email correction (1 min) → PHASE_1_WAVE1_EXECUTION_PREP.md Section 1
+2. ⏳ **Select resistance-research path** (A / A+37 / B) (5 min) → See DECISION_BRIEF_PATH_SELECTION.md from Session 1066
+
+**By May 18**:
+3. ⏳ Decide Canva color limit fix (10 min) → TRACK_B_EXECUTION_READINESS.md Gap 1
+
+**By May 26**:
+4. ⏳ Decide Kit automation fix (10 min) → TRACK_B_EXECUTION_READINESS.md Gap 2
+
+### What's Ready for You
+
+| Deliverable | Purpose | Location | When Ready |
+|-------------|---------|----------|-----------|
+| **Checkpoint Validation Doc** | May 16 execution runbook | `projects/stockbot/CHECKPOINT_READINESS_VALIDATION.md` | ✅ Ready now |
+| **Wave 1 Execution Checklist** | May 15-17 distribution (if path chosen) | `projects/resistance-research/PHASE_1_WAVE1_EXECUTION_PREP.md` | ✅ Ready now |
+| **Track B Readiness Audit** | Gate execution + gap assessment | `projects/seedwarden/TRACK_B_EXECUTION_READINESS.md` | ✅ Ready now |
+| **Path Selection Brief** | 3-path analysis + recommendation | `projects/resistance-research/DECISION_BRIEF_PATH_SELECTION.md` (from Session 1066) | ✅ Ready now |
+
+### Session 1068 Pause Point
+
+All autonomous work is complete. The orchestrator is now in a **waiting state**:
+- ✅ Exploration Queue exhausted (Items 1-57 all done)
+- ✅ All pre-work for upcoming milestones complete
+- 🔴 Awaiting 2 critical user decisions TODAY
+- ⏳ Scheduled for checkpoint execution May 16 20:00 UTC
+
+**No further autonomous work is possible until user decisions are made and checkpoint executes.**
+
+---
+
 ## Session 1067 — May 15, 2026, 13:30–15:15 UTC (Orchestrator — Queue refresh + critical findings)
 
 **Status**: ✅ **NEW QUEUE ITEMS READY — Critical issues identified & documented. Awaiting user decisions (3 required today).**
