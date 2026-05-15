@@ -2,6 +2,31 @@
 
 ---
 
+## May 15, 2026 — General Research Agent — Phase 2 Domain 40: Surveillance Capitalism and Electoral Manipulation
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/domain-40-surveillance-capitalism-electoral-manipulation.md`
+
+**Task**: Full research and production of Domain 40 per PHASE_2_DOMAINS_38_40_OUTLINES.md specification. Hard external deadline: November 3, 2026 (2026 midterm election). Distribution target: July 15, 2026.
+
+**Key findings**:
+- PNAS January 26, 2026 study (University of Wisconsin-Madison, 10,000+ participants, real-time ad exposure tracking matched to state voter records) confirms 1.86% turnout suppression from digital voter suppression ads in the 2016 election; non-white voters in minority-majority battleground counties received ads at 4x the rate of white voters in non-battleground counties, with a 14.2% lower turnout effect. Extrapolated nationally: 4.7 million votes suppressed. First peer-reviewed empirical confirmation of digital voter suppression in an actual election.
+- NRSC-Talarico deepfake (March 11, 2026): first national party committee deployment of a photorealistic lifelike synthetic candidate video. UC Berkeley digital forensics assessment: "hyper-realistic." Technically compliant with Texas disclosure law; deception persisted.
+- Four additional deepfake cases documented in 2026 cycle: Collins-Ossoff (November 2025), Spanberger-Loudoun February 2026 (no disclosure), Spanberger redistricting April 2026, Platner Maine April 2026. Pattern confirms cascading normalization after NRSC deployment.
+- FEC structural paralysis: quorum lost by May 1, 2025; only two of six seats occupied after October 2025; Trump nominated replacements February 2026; no confirmation hearing scheduled as of May 2026. FEC cannot enforce, cannot issue binding guidance, cannot conduct rulemaking. September 2024 "Interpretive Rule" on AI is non-binding with no enforcement.
+- FCC jurisdiction covers only broadcast, cable, and satellite — not social media, connected TV, or streaming. Digital advertising channels through which 2026 deepfakes circulate are entirely unregulated at the federal level.
+- December 2025 AI preemption EO chills state-level expansion: 30-state patchwork has not grown since EO; California deepfake prohibition struck down on Section 230 grounds; disclosure-only requirements survive but are exploited as compliance-as-cover.
+- EU regulatory divergence confirmed: DSA Article 25 (dark patterns prohibition), TTPA Regulation 2024/900 (bans microtargeting using sensitive data categories), EU AI Act Article 50 (machine-readable marking of synthetic content, platform-level obligations, enforcement August 2, 2026, fines up to €15M or 3% global annual turnover). Meta exited EU political advertising market rather than comply with TTPA. Same companies apply voluntary-only standards to US political markets.
+- DOJ voter file campaign: demands to at least 33 states, lawsuits against 30+ states and DC, at least 12 voluntary compliance states providing sensitive voter data to contractors under confidential MOUs with no enforceable data security. ACLU litigation to block national voter surveillance database.
+- Government-private data synthesis: Thomson Reuters CLEAR integrated with Palantir system-to-system; the same data infrastructure serving ICE deportation operations serves political campaign targeting. No distinction by use case.
+- Reform architecture: (1) federal Voter Data Protection framework; (2) categorical prohibition on photorealistic AI-generated synthetic candidate content (not just disclosure); (3) FEC mandatory AI rulemaking with tie-breaking mechanism; (4) federal floor plus state authority preservation (reverse December 2025 preemption logic).
+- Movement leverage: Brennan Center (deepfake AI threat analysis, voter suppression preparation), Democracy Docket (DOJ voter file litigation), EFF/EPIC/CDT (digital rights), NAACP LDF (VRA discriminatory effect arguments from PNAS racial targeting data), Stanford Internet Observatory (platform policy), News Literacy Project (voter-facing tools).
+- One confidence gap: "50% voter influence" figure cited in secondary sources re: NRSC-Talarico polling impact could not be traced to a named primary survey. Document uses "nearly 50%" consistent with verified secondary sources (multiple outlets, consistent with OECD AI tracker reporting). No CBS/WaPo primary survey with 47%/40% figures could be independently verified; these figures may be misattributed or aggregated across sources.
+
+**Document statistics**: ~6,800 words; 47 citations across peer-reviewed, government, EU institutional, and news sources; YAML frontmatter with Obsidian-compatible metadata; confidence assessment included; four-component reform architecture; movement coalition section; November 3 timeline section.
+
+---
+
 ## May 15, 2026 — General Research Agent — Phase 2 Domain 39: Healthcare Access as Democratic Infrastructure
 
 **Status**: COMPLETE
