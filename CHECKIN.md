@@ -1,6 +1,101 @@
 # Check-in
 
-## Session 1089 — May 15, 2026, 18:41–18:50 UTC (Orchestrator — Pre-Checkpoint Verification)
+## Session 1089 — May 15, 2026, 19:00–20:30 UTC (Orchestrator — Callais Fix + Parallel Agent Execution)
+
+**Status**: ✅ **CHECKPOINT READY — All systems GO for May 16 20:00 UTC execution**
+
+### Work Completed
+
+**1. Callais v. Landry Reference Correction** ✅
+- Fixed stale "pending" language in `execution/DOMAIN_1_GIST_STAGING.md`
+- Case decided April 29, 2026 (6-3 ruling struck Louisiana majority-Black districts)
+- Unblocks Marc Elias email send (Batch 1, Contact B1-5) for May 17 Wave 1 distribution
+
+**2. Seedwarden Track B — 4 Critical Issues Resolved** ✅
+- **Issue 6** (Zone cards): New `CANVA_ZONE_CARDS_PRODUCTION_PLAN.md` created (7.5–9h production workflow, exact Canva dimensions, export settings, Google Drive hosting URL format)
+- **Issue 5** (Gate 3 timing): Corrected to 7.5–10.5 hours (not 45–60 min); hard deadlines block rewritten with three-phase critical path
+- **Issue 7** (May 29 checklist): Expanded from 5 questions (15 min) to 2–3 hour three-block verification (Morning: visual assets + sales, Afternoon: marketing infrastructure + decision, Evening: final checks)
+- **Issue 1** (TikTok mobile): Flagged as mobile-app-only requirement with two execution options (Option A: concurrent with phone + desktop, Option B: defer to separate mobile session)
+- Updated `TRACK_B_USER_GATES.md` and `PHASE_2_GO_NO_GO_DASHBOARD.md` Section 2
+
+**3. Stockbot May 16 Checkpoint — Pre-Staging Complete** ✅
+- **Pre-verification**: 10/10 system checks PASS (Jetson SSH, Docker, Alpaca API, scripts, DB all healthy)
+- **Decision tree**: 5-path flowchart with exact commands (PASS/NEAR_MISS variants/FAR_MISS variants)
+- **Logging templates**: Copy-paste ready for WORKLOG.md, ORCHESTRATOR_STATE.md, PROJECTS.md, CHECKIN.md, git commits
+- **Verification script**: New `scripts/verify_checkpoint_query.py` (standalone, no side effects)
+- **Predicted outcome**: NEAR_MISS (signal suppression pattern B2, models generating BUY signals, no exit signals firing at T-25h)
+- **Execution plan**: 19:30 UTC pre-check, 20:00 UTC query run, 20–30 min total for NEAR_MISS path
+
+### Checkpoint Status — May 16 20:00 UTC (T-25 Hours)
+
+| Item | Status |
+|---|---|
+| Jetson connectivity | ✅ PASS (31d uptime, SSH responsive) |
+| Alpaca API auth | ✅ PASS ($115,924 equity) |
+| Docker containers | ✅ PASS (2 running: stockbot + web) |
+| Checkpoint query script | ✅ PASS (syntax valid, tested) |
+| Lever A application script | ✅ PASS (ready for NEAR_MISS outcome) |
+| Decision tree logic | ✅ PASS (all 5 paths documented) |
+| Logging templates | ✅ PASS (all files ready) |
+| DB integrity | ✅ PASS (34 fills, 3 round trips, correct state) |
+| Current live metrics | 34 fills, 3 round trips, $5 PnL, aapl_sells=0 |
+| **Overall Status** | **✅ READY** |
+
+### Execution Instructions for May 16
+
+```bash
+# 19:30 UTC — connectivity pre-check (optional but recommended)
+cd /home/awank/dev/SuperClaude_Framework/projects/stockbot
+uv run python scripts/verify_checkpoint_query.py
+
+# 20:00 UTC — checkpoint execution (CRITICAL TIME)
+uv run python scripts/may16_checkpoint_query_alpaca.py | tee /tmp/may16_checkpoint_LIVE.log
+
+# Record output → follow MAY_16_CHECKPOINT_DECISION_TREE.md → copy logging template → commit
+```
+
+### Project Status Snapshots (EOD May 15)
+
+| Project | Status | Next Action |
+|---------|--------|------------|
+| **resistance-research** | Wave 1 pre-staging complete | Execute May 17 upon path decision (A/A+37/B) |
+| **stockbot** | Checkpoint pre-staging COMPLETE | Execute May 16 20:00 UTC checkpoint |
+| **seedwarden** | Track B issues RESOLVED | Begin Gates 1–3 execution (May 15–28) |
+| **cybersecurity-hardening** | Distribution prep complete | Await Phase 1 launch approval + Day 1 date |
+| **mfg-farm** | Blocked on user test print | Awaiting test print results from user |
+
+### Needs Your Input (Critical Path)
+
+1. **Resistance-Research Path Decision** (deadline: EOD May 15 or May 16 AM)
+   - A (immediate full distribution) / A+37 (hybrid election-focused) / B (continue research first)
+   - Triggers Wave 1 send May 17 (5 contacts verified)
+   - Timeline: 3–4.5 hours from decision to Batch 1 in flight
+
+2. **May 16 Checkpoint Execution** (scheduled 20:00 UTC)
+   - Run checkpoint query, record output
+   - Classify outcome (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2)
+   - Follow decision tree, use logging templates
+   - Total time: 20–30 minutes
+
+3. **Seedwarden Gate Execution** (May 15–28 window)
+   - Gates document now specifies 15–20 hours total (not 3 as estimated)
+   - Zone card production: 7.5–9 hours, must start May 24–25 (immediately after Gate 2)
+   - May 30 launch timeline is achievable with realistic time allocation
+
+### Session Summary
+
+✅ Callais correction applied (unblocks Wave 1 send)  
+✅ Seedwarden Track B issues resolved (7 new/updated files, realistic timelines)  
+✅ Stockbot checkpoint pre-staging complete (10/10 verification checks pass)  
+✅ All deliverables committed to master (commit 51ea13bd)  
+✅ Decision trees, logging templates, and verification scripts ready  
+
+**Usage**: 77% all-models (3.4M tokens remaining) — budget healthy  
+**Next checkpoint**: May 16 20:00 UTC (all infrastructure verified and staged)
+
+---
+
+## Session 1089 (Prior) — May 15, 2026, 18:41–18:50 UTC (Orchestrator — Pre-Checkpoint Verification)
 
 **Status**: ✅ **ALL SYSTEMS READY FOR MAY 16 20:00 UTC CHECKPOINT — NO AUTONOMOUS WORK AVAILABLE UNTIL EXECUTION**
 
