@@ -272,19 +272,19 @@
         "preferred_salutation": "Marc"
       },
       "position": {
-        "title": "Founder, Democracy Docket; Partner and Chair, Election & Democracy Practice",
+        "title": "Firm Chair, Elias Law Group; Founder, Democracy Docket",
         "organization_primary": "Democracy Docket",
-        "organization_secondary": "Perkins Coie LLP",
-        "verified_date": "2026-04-29",
-        "verification_source": "democracydocket.com; Perkins Coie firm site"
+        "organization_secondary": "Elias Law Group",
+        "verified_date": "2026-04-29 (updated 2026-05-15: left Perkins Coie 2021, confirmed at elias.law)",
+        "verification_source": "democracydocket.com; elias.law firm site"
       },
       "contact": {
-        "email_primary_pattern": "melias@perkinscoie.com",
-        "email_pattern_note": "Perkins Coie format: first-initial + last@perkinscoie.com — confirmed from firm directory",
-        "email_alternate": "marc@democracydocket.com",
-        "email_alternate_note": "Democracy Docket editorial contact; try if Perkins Coie address bounces",
+        "email_primary_pattern": "melias@elias.law",
+        "email_pattern_note": "Elias Law Group format: confirmed primary contact at elias.law; Perkins Coie address is stale (left 2021)",
+        "email_alternate": "press@democracydocket.com",
+        "email_alternate_note": "Democracy Docket press contact; try if primary bounces",
         "verified_email": null,
-        "verification_url_primary": "https://www.perkinscoie.com/people/marc-e-elias",
+        "verification_url_primary": "https://www.elias.law",
         "verification_url_alternate": "https://www.democracydocket.com/about/",
         "social_x": "@marceelias",
         "social_x_verified": true,
