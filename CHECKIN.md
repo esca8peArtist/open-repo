@@ -1,5 +1,80 @@
 # Check-in
 
+## Session 1093 — May 15, 2026, 19:50–20:10 UTC (Orchestrator — Checkpoint Countdown)
+
+**Status**: ✅ **CHECKPOINT READINESS CONFIRMED — Awaiting May 16 20:00 UTC execution — No autonomous work available**
+
+### Orientation Summary
+
+**Orientation complete:**
+- ✅ ORCHESTRATOR_STATE.md reviewed (auto-generated May 15 19:50:31 UTC)
+- ✅ All 4 active blocks resolved or re-verified (mfg-farm test print is user action, not blocker)
+- ✅ Exploration Queue verified: 4 items staged (51-54), all with external dependencies
+- ✅ Usage: 78.9% all-models, 76h remaining, budget healthy
+
+**Current blockers status:**
+1. **stockbot** (Priority 1): T-24h to May 16 20:00 UTC checkpoint — all infrastructure verified ready in Session 1092
+2. **resistance-research** (Priority 2): Awaiting user path decision (A / A+37 / B) — Phase 1 Wave 1 pre-staged
+3. **cybersecurity-hardening** (Priority 3): Awaiting user Phase 1 launch approval — all distribution materials ready
+4. **mfg-farm** (Priority 4): Awaiting user test print execution — revenue optimization framework complete
+5. **seedwarden** (Priority 5): Track B clear for May 30, Track A decision gates, May 30 analytics pre-staged
+6. **open-repo** (Priority 6): PR #1 waiting 19 days (escalation needed), PR #2 zero-risk merge
+7. **off-grid-living** (Priority 7): Complete, awaiting user social distribution
+8. **workout** (Priority 8): Complete, awaiting user review
+9. **mom-projects**: No blockers, no active work
+
+**Exploration Queue status:**
+- Item 49: ✅ Complete (May 16 decision tree)
+- Item 50: ✅ Complete (distribution measurement framework)
+- Item 51: ✅ Complete (Gate 2 options architecture — committed in Session 1091)
+- Item 52-54: ⏳ Staged for post-checkpoint/post-decision execution
+- Item 60: ✅ Complete (Phase 2 analytics pre-staged in Session 979)
+
+**Autonomous work available:** None until May 16 checkpoint executes or user provides path decisions.
+
+### Checkpoint Readiness
+
+Per Session 1092 pre-flight verification:
+- ✅ Alpaca connectivity active (PA38Z548DIRR account, $115K+ equity, PDT active)
+- ✅ Jetson engine running (AAPL lgbm_ho + ridge_wf active, logs current)
+- ✅ Checkpoint script valid (`may16_checkpoint_query_alpaca.py`, 19.2 KB)
+- ✅ Decision tree ready (`MAY_16_POST_CHECKPOINT_DECISION_TREE.md`, all 4 outcomes)
+- ✅ Lever A deployment staged (`LEVER_A_DEPLOYMENT_CHECKLIST.md`, 10-step procedure)
+- ✅ Master checklist production-ready (`MAY_16_CHECKPOINT_DAY_MASTER_CHECKLIST.md`)
+
+**Timeline:**
+- **May 15 EOD**: User should provide 3 decisions (path, cybersecurity approval, seedwarden tier) to enable May 17+ execution
+- **May 16 19:00 UTC**: Pre-flight health checks (Session 1094 or user-initiated)
+- **May 16 20:00 UTC**: Checkpoint execution
+- **May 16 21:00 UTC**: Post-checkpoint action deployment (Items 51-52, Wave 1 execution, or Lever A deployment per outcome)
+
+### Needed User Input
+
+**Before May 16 20:00 UTC:**
+1. **Resistance-research distribution path** (A / A+37 / B) — enables Wave 1 execution if checkpoint allows
+2. **Cybersecurity-hardening Phase 1 approval** — enables June 1+ Tier 1 launch
+3. **Seedwarden Canva/Kit tier decision** — enables May 20-24 zone card production timeline
+
+**Within 24 hours of May 16:**
+- May 16 20:00 UTC checkpoint execution (user or pre-staged script)
+
+**Post-checkpoint decisions** (dependent on outcome):
+- If PASS: Gate 2 architecture approval (PATH A from exploration Item 51)
+- If NEAR_MISS: Lever A parameter adjustment approval (pre-staged, May 16-17 deployment)
+- If FAR_MISS: Root cause investigation authorization
+
+### Session Summary
+
+✅ Orientation complete — all systems confirmed ready for May 16 checkpoint  
+✅ No autonomous work available until checkpoint executes or user decisions arrive  
+✅ All exploration items properly staged; queue size healthy (4 items)  
+✅ Critical path documented; user input deadlines clear  
+✅ Budget healthy; no token constraints  
+
+**Next session trigger:** May 16 20:00 UTC checkpoint execution or user path decision received.
+
+---
+
 ## Session 1091 — May 15, 2026, 20:30–21:00 UTC (Orchestrator — Critical Path & Post-Checkpoint Readiness)
 
 **Status**: ✅ **CHECKPOINT EXECUTION CONFIRMED READY — Critical user decisions documented — Post-checkpoint execution pre-staged**
