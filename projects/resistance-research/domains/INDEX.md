@@ -1,7 +1,7 @@
 # Domains Index — Democratic Renewal Framework
 
-*Last updated: May 14, 2026 (Domain 39 Healthcare Access as Democratic Infrastructure — full production document added)*
-*Total domains indexed: 55 core + 3 Phase 2 optional expansion + 1 Phase 2 full production*
+*Last updated: May 15, 2026 (Session 1031: Domains 38-40 Phase 2 production documents added — AI Regulatory Capture and Governance, Healthcare Access as Democratic Infrastructure, Surveillance Capitalism and Electoral Manipulation; all three integrated into democratic-renewal-proposal.md Part II and distribution templates)*
+*Total domains indexed: 55 core + 3 Phase 2 optional expansion + 4 Phase 2 full production*
 
 ---
 
@@ -48,9 +48,13 @@
 
 ## Phase 2 Full Production Documents (May 2026)
 
+*Note: These files are located in `projects/resistance-research/` (root level), not in `projects/resistance-research/domains/`. All three are integrated into `democratic-renewal-proposal.md` Part II (Domains 38, 39, 40) and all distribution templates as of Session 1031.*
+
 | File | Domain | Citations | Distribution Target | Key Finding |
 |------|--------|-----------|---------------------|-------------|
-| `domain-39-healthcare-access-democratic-infrastructure.md` | Domain 39: Healthcare Access as Democratic Infrastructure | 48 | June 1, 2026 (HHS OBBBA work requirement guidance comment period) | APSR: rural hospital closures reduce voter turnout in proximate elections; Oregon Experiment: Medicaid increases voter turnout 7% (randomized); five causal pathways from healthcare deprivation to civic exclusion; OBBBA attacks all five simultaneously |
+| `domain-39-healthcare-access-democratic-infrastructure.md` | Domain 39: Healthcare Access as Democratic Infrastructure | 47 | **June 1, 2026 (hard deadline — HHS OBBBA interim final rule)** | APSR: rural hospital closures reduce voter turnout 3.8 ppts (10.5M voter panel); Oregon RCT: Medicaid access increases voter turnout 7%; NVRA mandate at Medicaid offices met at only 1.6% of total registrations 2018-2020; 417 rural hospitals vulnerable to closure; PAVA ($130M disability voter assistance) faces elimination |
+| `domain-38-ai-regulatory-capture-governance.md` | Domain 38: AI Regulatory Capture and Governance | 43 | July 15, 2026 (before EU AI Act Article 50 enforcement August 2, 2026) | Colorado AI Act suspended April 27, 2026 after xAI/DOJ intervention; EO 14110 revoked January 20, 2025; Birhane et al. (May 2026): 27 capture techniques, 24% revolving door incidence; no federal AI statute; EU regulatory arbitrage (same companies, two compliance regimes) |
+| `domain-40-surveillance-capitalism-electoral-manipulation.md` | Domain 40: Surveillance Capitalism and Electoral Manipulation | 47 | July 15, 2026; hard deadline November 3, 2026 (midterms) | NRSC Talarico deepfake March 11, 2026 — first national party committee synthetic candidate video; PNAS Feb 2026: suppression ads reduce turnout 1.86% overall, 14.2% for non-white voters in minority-majority battleground counties; FEC quorum failure; EU Regulation 2024/900 bans political microtargeting — Meta exited EU political ad market |
 
 ---
 
@@ -71,9 +75,11 @@
 **Electoral Architecture**: Domain 1, Domain 33, Domain 37 series, Domain 49, Domain 50, Domain 51
 **Institutional Integrity**: Domain 20, Domain 26, Domain 29, Domain 34, Domain 38 (financial), Domain 38A (intel)
 **Judicial**: Domain 6, Domain 35
-**Healthcare and Civic Capacity**: Domain 31, Domain 41B, Domain 44 (reproductive), Domain 50, **Domain 40 (expansion)**
-**Economic Architecture**: Domain 23, Domain 38 (financial), Domain 47, Domain 51, **Domain 38 (expansion — antitrust)**
-**Information and Knowledge**: Domain 27, Domain 36, Domain 43, Domain 46, **Domain 39 (expansion — education)**
+**Healthcare and Civic Capacity**: Domain 31, Domain 41B, Domain 44 (reproductive), Domain 50, **Domain 39 (Phase 2 production — healthcare as democratic infrastructure)**, Domain 40 (expansion)
+**Economic Architecture**: Domain 23, Domain 38 (financial), Domain 47, Domain 51, Domain 38 (expansion — antitrust)
+**Information and Knowledge**: Domain 27, Domain 36, Domain 43, Domain 46, Domain 39 (expansion — education)
+**AI Governance Cluster**: Domain 36, Domain 43, **Domain 38 (Phase 2 production — AI regulatory capture)**, **Domain 40 (Phase 2 production — surveillance capitalism)**
+**Electoral Integrity Cluster (2026 midterm priority)**: Domain 1, Domain 33, Domain 37 series, Domain 49, Domain 50, Domain 51, **Domain 40 (Phase 2 production — surveillance capitalism/deepfakes)**
 **Rights and Civil Liberties**: Domain 44 (labor), Domain 44 (reproductive), Domain 45 (climate), Domain 52, Domain 54, Domain 55
 **Corporate Capture Trilogy**: Domain 51 (campaign finance) + Domain 42 (drug policy capture) + **Domain 38 (expansion — lobbying/regulatory capture)**
 
@@ -81,8 +87,20 @@
 
 ## Distribution Priority Notes
 
+**IMMEDIATE ACTION REQUIRED — June 1, 2026 hard deadline**:
+- **domain-39-healthcare-access-democratic-infrastructure.md** (root level) → HHS interim final rule on OBBBA work requirements due June 1, 2026 (APA notice-and-comment exempted by OBBBA text). Send Template 13 (institutional outreach) to healthcare advocacy and democracy organizations NOW. Target: CBPP, Georgetown CCF, KFF, NHeLP, state AGs with Medicaid litigation. Substack Post 9 and Reddit cross-posts also on June 1 timeline.
+
+**July 15, 2026 distribution targets** (before EU AI Act Article 50 August 2 enforcement):
+- **domain-38-ai-regulatory-capture-governance.md** (root level) → AI governance and technology policy organizations. EU AI Act August 2 enforcement date is the primary advocacy hook. Template 12. Target: AI Now Institute, EFF, CDT, Brennan Center, Harvard Berkman Klein Center. Substack Post 8.
+- **domain-40-surveillance-capitalism-electoral-manipulation.md** (root level) → Election protection and digital rights organizations. EU regulatory arbitrage framing plus PNAS suppression study. Template 14. Target: Brennan Center, EFF, EPIC, Campaign Legal Center, swing-state voter protection networks. Substack Post 10.
+
 **Highest urgency for 2026 midterm window** (distribute before October 2026):
-- Domain 1, Domain 33, Domain 37 series, Domain 49 (Callais), Domain 50 (NVRA-Medicaid), Domain 51 (campaign finance)
+- Domain 1, Domain 33, Domain 37 series, Domain 49 (Callais), Domain 50 (NVRA-Medicaid), Domain 51 (campaign finance), **domain-40** (surveillance/deepfakes — add to midterm window priority)
+
+**Phase 2 production domain distribution pairings** (Session 1031):
+- **domain-38** → pair with Domain 36 (AI governance) and Domain 29 (DOJ capture) — the Governance Capture cluster
+- **domain-39** → pair with Domain 50 (OBBBA/NVRA) and Domain 41B (disability rights) — the Healthcare and Civic Capacity cluster; bridges to Domain 1 and Domain 37 for voter protection organizations
+- **domain-40** → pair with Domain 21 (data privacy/digital surveillance) and Domain 1 (electoral reform) — Electoral Integrity cluster; also pairs with Domain 43 (epistemic infrastructure)
 
 **Phase 2 expansion domains — recommended distribution pairings**:
 - **domains-38.md** (lobbying/antitrust) → pair with Domain 51 (campaign finance) and Domain 42 (drug policy capture) — the Corporate Capture Trilogy
@@ -91,4 +109,4 @@
 
 ---
 
-*Index created: May 13, 2026. Agent: resistance-research subagent.*
+*Index created: May 13, 2026. Updated: May 15, 2026 (Session 1031 — Domains 38-40 Phase 2 production documents added; integrated into proposal, exec summary, and all distribution templates). Agent: resistance-research subagent.*
