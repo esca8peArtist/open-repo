@@ -237,7 +237,7 @@ The May-June period will test this hypothesis. The administration will likely es
 
 ### 4.4 Cross-Cutting Risks: Supreme Court Decisions Arriving in June-July
 
-Both Watson v. RNC and Louisiana v. Callais decisions are expected in June-July 2026 — during the exact window when state ballot initiatives are launching and Democratic messaging is emphasizing voting rights. An adverse ruling on mail ballot grace periods (Watson) or majority-minority districts (Callais) would create massive pressure for emergency legislative response — but the Senate filibuster prevents that response without Republican votes.
+Watson v. RNC decision is expected by end of June 2026 — during the exact window when state ballot initiatives are launching and Democratic messaging is emphasizing voting rights. Louisiana v. Callais was decided April 29, 2026 (6-3, striking down Louisiana's redistricting map), triggering an immediate five-state redistricting cascade. An adverse ruling on mail ballot grace periods (Watson) combined with the Callais redistricting cascade creates massive pressure for emergency legislative response — but the Senate filibuster prevents that response without Republican votes.
 
 This timing creates a specific analytical question for Domain 35 (Supreme Court section): if both Watson and Callais reach the Supreme Court's feared outcomes, the voting rights voting rights landscape in summer 2026 will have collapsed simultaneously through statutory, constitutional, and judicial channels. The structural implications are severe enough to warrant a separate detailed analysis in Domain 35 Section 7.2 (Voting Rights Cases).
 
