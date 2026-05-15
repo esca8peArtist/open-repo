@@ -1,5 +1,59 @@
 # Check-in
 
+## Session 1079 — May 15, 2026, 16:40–17:15 UTC (Orchestrator — Critical Marc Elias Fix + Checkpoint Ready + Post-Checkpoint Queue Staged)
+
+**Status**: ✅ **CRITICAL PATH COMPLETE — System Ready for May 16 20:00 UTC Checkpoint Execution**
+
+### Since Last Check-in (Session 1078)
+- **Critical fix applied**: Marc Elias contact corrected from stale Perkins Coie domain (melias@perkinscoie.com) to Elias Law Group (melias@elias.law). This was flagged as 🔴 CRITICAL in Session 1078 Item 57 audit — must be fixed before Wave 1 execution May 15-17.
+- **Checkpoint readiness verified**: Ran Alpaca connectivity test; script working, account equity $115,394.93, Pattern Day Trader status confirmed
+- **Exploration queue refreshed**: Added Items 58-60 for post-May-16 continuity (Lever A deployment if NEAR_MISS, Wave 1 runbook once path decided, Phase 2 analytics setup)
+- **Timeline to checkpoint**: 28.5 hours (May 16 20:00 UTC)
+
+### Current Status: All Autonomous Work Complete — Awaiting May 16 Checkpoint + User Decisions
+
+| Task | Status | Timeline |
+|------|--------|----------|
+| **Marc Elias Contact Fix** | ✅ COMPLETE | CRITICAL — fixed for Wave 1 May 15-17 |
+| **May 16 Checkpoint Infrastructure** | ✅ Ready | 20:00 UTC May 16, script verified |
+| **Post-Checkpoint Decision Tree** | ✅ Ready | <2 min lookup for 4 outcomes (PASS/NEAR_MISS/FAR_MISS) |
+| **Lever A Deployment (if NEAR_MISS)** | ✅ Ready | Item 58 queued, 10-step checklist ready |
+| **May 19 Follow-up Checkpoint (if NEAR_MISS)** | ✅ Ready | Scheduled 3 days post-checkpoint for Lever A verification |
+| **Wave 1 Execution Runbook (Item 59)** | ✅ Ready | Templates pre-staged, awaits user path decision |
+| **Phase 2 Analytics Setup (Item 60)** | ✅ Ready | May 20-29 implementation window, setup guide complete |
+
+### Needs Your Input (No changes from Session 1078 — still standing)
+
+**By EOD May 15** (TODAY):
+1. **Resistance-research path decision** — A / A+37 / B (enables Wave 1 May 16-17 execution) — ✅ Marc Elias contact now fixed, ready
+2. **Seedwarden Canva & Kit tier decisions** — Pro/free for May 15-28 gate execution
+3. **Cybersecurity Phase 1 launch approval** — Confirm + provide Day 1 send date
+
+**At May 16 19:00 UTC** (1-hour pre-checkpoint):
+- Pre-flight connectivity check: `uv run python scripts/may16_checkpoint_query_alpaca.py --verify`
+- Confirm Jetson trading sessions active
+
+**At May 16 20:00 UTC EXACT** (Checkpoint execution):
+- Run: `uv run python scripts/may16_checkpoint_query_alpaca.py`
+- Look up outcome in `MAY_16_POST_CHECKPOINT_DECISION_TREE.md` (< 2 min)
+- Execute immediate actions per scenario (5-30 min depending on outcome)
+- If NEAR_MISS: Apply Lever A per `LEVER_A_DEPLOYMENT_CHECKLIST.md`
+
+**If NEAR_MISS** (most likely scenario):
+- Lever A: Adjust threshold_multiplier & confidence_floor
+- Rsync to Jetson + restart trading sessions
+- Schedule May 19 follow-up checkpoint (Item 58)
+
+### Usage Budget Status
+- Sonnet: 27.2% (2,430,000 / 8,935,000 tokens) — reset in ~80 hours
+- All models: 72.9% — healthy, no throttle
+
+### Next Checkpoint
+**May 16 20:00 UTC**: Execute checkpoint query + apply decision tree + execute Lever A if NEAR_MISS  
+**May 19 20:00 UTC**: Follow-up diagnostic checkpoint (if Lever A applied)
+
+---
+
 ## Session 1078 — May 15, 2026, 15:35–16:30 UTC (Orchestrator — Exploration Queue Items 1-3 COMPLETE)
 
 **Status**: ✅ **ITEMS 1-3 COMPLETE — Pre-Checkpoint Decision Support + Phase 2 Launch Prep Ready**

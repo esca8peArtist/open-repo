@@ -1,5 +1,75 @@
 # Work Log
 
+## Session 1079 — May 15, 2026, 16:40–17:15 UTC (Orchestrator — Critical Marc Elias Fix + Checkpoint Validation + Queue Refresh)
+
+**Status**: ✅ **CRITICAL PATH COMPLETE — All autonomous work ready for May 16 checkpoint + post-checkpoint sequencing staged**
+
+**Session Summary** (35 minutes, critical path work + queue refresh):
+
+### 1. Critical Path Fix — Marc Elias Contact Correction
+**🔴 CRITICAL FIX APPLIED**:
+- **Issue identified** (from Session 1078 Item 57 audit): `PHASE_1_CONTACT_VERIFICATION.json` contained stale Marc Elias contact data:
+  - Organization: Perkins Coie LLP (STALE — left 2021)
+  - Email: melias@perkinscoie.com (STALE — correct: melias@elias.law)
+  - URL: Perkins Coie firm page (STALE)
+- **Root cause**: Contact verification created April 30, but Marc Elias left Perkins Coie in 2021 and is now Firm Chair at Elias Law Group
+- **Fix applied**: Updated all three fields to reflect current organization (Elias Law Group) and primary email (melias@elias.law)
+- **Timeline**: Fix required before May 15-17 Wave 1 execution; PHASE_1_WAVE1_EXECUTION_PREP.md explicitly warned "Do not send to Perkins Coie domain"
+- **Verification**: ✅ Contact JSON validated, commit: e760206f
+- **Risk mitigation**: Marc Elias is Contact #5 (highest-priority batch, Election/Domain 1 lead). Sending to stale Perkins Coie address would have bounced, delaying Wave 1 response timeline and potentially triggering "non-delivery" confusion.
+
+### 2. Checkpoint Readiness Verification
+**✅ ALPACA API CONFIRMED WORKING**:
+- Ran `uv run python scripts/may16_checkpoint_query_alpaca.py --verify`
+- Result: Alpaca connection verified, Account PA38Z548DIRR, Equity $115,394.93 (slight intraday variance from prior session 15:45 UTC status: $115,620.59 — expected market movement)
+- Pattern Day Trader: True
+- **Checkpoint script status**: READY — 19,228 bytes, May 15 08:30 UTC creation, syntax validated
+- **Timeline**: May 16 20:00 UTC execution ready; 28.5 hours to checkpoint
+
+### 3. Exploration Queue Refresh (Items 58-60)
+**QUEUE STATUS**: Items 1-57 complete; Items 50-54 staged for post-May-16 execution
+- **Item 50**: Phase 1 Distribution Measurement Framework (awaiting user path decision)
+- **Item 51**: Jetson Infrastructure Optimization (awaiting Gate 1 PASS)
+- **Items 52-54**: Post-checkpoint Phase 2 & operational work (awaiting May 16 result)
+- **Current active items**: 0 (all blocked on May 16 checkpoint or user decisions)
+- **Queue refresh applied**: Added Items 58-60 for post-checkpoint continuity
+  - **Item 58**: Lever A deployment (if NEAR_MISS outcome) + May 19 verification
+  - **Item 59**: Wave 1 execution runbook (once user path decided)
+  - **Item 60**: Phase 2 analytics dashboard setup (May 20-29 window)
+
+### 4. Key Status Summary
+| Component | Status | Timeline | Notes |
+|-----------|--------|----------|-------|
+| **Marc Elias contact fix** | ✅ COMPLETE | NOW | Critical for Wave 1 (May 15-17) |
+| **Checkpoint script** | ✅ READY | May 16 20:00 UTC | Alpaca connectivity verified |
+| **Checkpoint decision tree** | ✅ READY | May 16 20:05 UTC | All four outcomes pre-planned |
+| **May 16 pre-flight checklist** | ✅ READY | May 16 19:00-19:45 UTC | Connectivity + health checks |
+| **Wave 1 execution templates** | ✅ READY | Post-path-decision | Pre-staged, zero setup delay |
+| **Lever A deployment** | ✅ READY | May 16 20:05 (if NEAR_MISS) | 10-step checklist + parameters |
+| **Exploration queue items 58-60** | ✅ READY | May 16+ (post-checkpoint) | Post-checkpoint continuity ensured |
+
+### 5. Next Actions
+**By EOD May 15** (standing request, awaiting from user):
+1. ✅ Marc Elias contact fixed — ready for Wave 1
+2. ⏳ User selects distribution path (A / A+37 / B) — enables Wave 1 execution May 16-17
+3. ⏳ User confirms seedwarden Canva/Kit tier decisions — enables Track B gate execution May 15-28
+4. ⏳ User approves cybersecurity Phase 1 launch + Day 1 send date — enables Tier 1 distribution
+
+**May 16 19:00 UTC** (T-60 min pre-checkpoint):
+- Pre-flight connectivity check: `uv run python scripts/may16_checkpoint_query_alpaca.py --verify`
+- Jetson health check: Verify trading sessions active
+
+**May 16 20:00 UTC EXACT** (Checkpoint execution):
+- Run checkpoint query script
+- Classify outcome using decision tree (<2 min lookup)
+- Execute immediate actions per scenario (20-30 min if NEAR_MISS, <5 min if PASS/FAR_MISS)
+
+**May 19 20:00 UTC** (T+3 days, if Lever A applied):
+- Follow-up checkpoint execution to verify Lever A effect
+- Confidence assessment for Gate 1b (May 26) decision
+
+---
+
 ## Session 1078 — May 15, 2026, 15:35–16:30 UTC (Orchestrator — Exploration Queue Items 1-3 COMPLETE)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS 1-3 COMPLETE — Pre-Checkpoint + Phase 2 Launch Prep Ready**
