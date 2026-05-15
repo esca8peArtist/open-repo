@@ -49,11 +49,13 @@ Sonnet: 77% (3.4M tokens remaining). All-models: 77%. Budget healthy for continu
    - Go/no-go checklist completion
    - TikTok mobile requirement flagging
 
-3. **Stockbot Agent Output** (in progress) — Pre-checkpoint staging:
-   - Pre-checkpoint verification checklist
-   - Post-checkpoint decision tree (4 scenarios)
-   - Logging templates for outcome classification
-   - Exploration queue staging
+3. **Stockbot Pre-Checkpoint Verification (Orchestrator)** ✅ — May 15 20:06 UTC:
+   - **Alpaca API connectivity**: VERIFIED — Account PA38Z548DIRR, Equity $115,736.10, PDT enabled
+   - **Jetson dashboard status**: VERIFIED — Container stockbot running, API responding, sessions=2 active (lgbm_ho + ridge_wf)
+   - **Checkpoint script ready**: may16_checkpoint_query_alpaca.py verified working with --verify flag
+   - **Database**: Docker container trading.db is actively recording fills
+   - **Port binding compliance**: VERIFIED — Docker port mapping restricted to 100.120.18.84:8000 (Tailscale interface only, compliant with CLAUDE.md)
+   - **Readiness status**: INFRASTRUCTURE READY FOR May 16 20:00 UTC CHECKPOINT EXECUTION
 
 ### Next Steps
 
