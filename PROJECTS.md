@@ -69,31 +69,32 @@
 **Status**: Active — Phase 1-5 COMPLETE, **36-Domain Diagnostic Framework + Phase 2 Expansion COMPLETE** (Sessions 502-524, Session 907) — Core proposal architecture complete, completeness assessment done, all 35+ domain documents verified production-ready, distribution infrastructure finalized (Session 520), April-May 2026 domain updates + tracker maintenance current (Sessions 521, 524, 876, 907)
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Phase 1 EXECUTION MATERIALS COMPLETE** (Session 1017). Gist creation prep done, template field fill checklist ready (Domains 51/54/55 contact lists to be created as future work — not blocking Phase 1). Contact verification identified 2 critical corrections: Mason Marks FSU email + Washington AG Nick Brown. Single action checklist for Wave 1 send sequence created. User execution ready: Batch 1 Wave 1 + Domain 42 waves May 14–17 viable. May 28 DEA deadline remains critical for Domain 42.
+**Current focus**: **Phase 1 EXECUTION MATERIALS COMPLETE** (Session 1017). Phase 2 Domains 38-40 PRODUCTION COMPLETE (Session 1031, May 15 02:30-04:45 UTC). All three domains written, researched, cited, and committed to master. Ready for coordination and distribution staging.
 
-**Session 1023 — Phase 2 DOMAINS 38–40 COMPLETE (May 14, 03:30–04:45 UTC)** ✅:
-- **Domain 39-NEW COMPLETE**: `domain-39-healthcare-access-democratic-infrastructure.md` (7,311 words, 48 citations)
-  - Five causal pathways: rural hospital closures → voter turnout (APSR 3.8pp finding); medical debt → civic exclusion ($220B debt); NVRA-Medicaid → voter registration (85-90% with AVR vs 1% without); maternal mortality → community capacity loss (3-4x disparities); disability disenfranchisement → civic exclusion (guardianship, PAVA defunding, work requirement barriers)
-  - Hard deadline: June 1 HHS OBBBA guidance comment window
-  - Movement leverage: healthcare advocates + disability rights + voter access + democracy organizations
-  - Cross-references: Domains 22, 31, 41b, 44 integrated
+**Session 1031 — Phase 2 DOMAINS 38–40 COMPLETE — PRODUCTION FINISHED (May 15, 02:30–04:45 UTC)** ✅:
+
+- **Domain 39 COMPLETE**: `domain-39-healthcare-access-democratic-infrastructure.md` (7,200 words, 47 citations)
+  - Five causal pathways documented: rural hospital closures (Cox/Epp/Shepherd APSR 2025, 3.8pp turnout decline); medical debt ($220B, participatory tax effect); Medicaid/NVRA registration (1.6% actual vs 85% potential); maternal mortality (3.5x Black:white disparity, civic capacity loss); disability disenfranchisement (guardianship + PAVA defunding + work requirements)
+  - **Critical timing update**: June 1 HHS deadline is NOT public comment period (rule exempt from APA). Advocacy via litigation, congressional, state channels
+  - Movement leverage: healthcare + disability + reproductive rights + voter access coalitions
   - Distribution target: May 25-31, June 1 finalization
 
-- **Domain 38-NEW COMPLETE**: `domain-38-regulatory-capture-ai-governance.md` (5,784 words, 20+ citations, scope expanded for live 2026 developments)
-  - Four capture mechanisms documented: statutory vacuum (Biden EO revoked, Trump 14179 "minimally burdensome"), revolving door (24% of AI regulatory incidents), standards body capture (NIST AISCWG + Partnership on AI), legal preemption as capture (Dec 2025 EO + xAI v Colorado live litigation, federal court suspension April 27)
-  - Key evidence: xAI/DOJ/Colorado case (filed April 9, DOJ intervention April 24, suspension April 27) is sharpest revolving-door instance
-  - EU regulatory arbitrage: Same companies comply with Aug 2 Article 50 for EU; deploy unregulated AI in US domestic/electoral contexts
-  - Hard deadline: August 2, 2026 EU enforcement
-  - Distribution target: July 15 (6 weeks before Aug 2)
+- **Domain 38 COMPLETE**: `domain-38-ai-regulatory-capture-governance.md` (6,800 words, 48 citations)
+  - Four capture mechanisms: statutory vacuum (EO 14110 revoked, replaced "minimally burdensome"), revolving-door/ownership-stake (Musk/xAI/DOGE), standards body capture (NIST + Agentic AI Foundation), legal preemption as capture (Dec 2025 EO + xAI v Colorado live case)
+  - Key finding: xAI v Colorado (April 27 suspension) → Colorado legislature passed narrower SB 26-189 (May 9) — strategic retreat to weaker baseline
+  - EU AI Act Article 50 (August 2, 2026) enforcement creates regulatory arbitrage; US companies comply for EU, face no equivalent obligation for US elections
+  - Senate 99-1 rejection of AI moratorium (key political data for reform architecture)
+  - Distribution target: July 15 (before Aug 2 EU enforcement)
 
-- **Domain 40-NEW COMPLETE**: `domain-40-surveillance-capitalism-electoral-manipulation.md` (3,200 words, 37 citations)
-  - Four infrastructure components: data brokers (Thomson Reuters CLEAR + LexisNexis aggregation; 33 state DOJ voter file demands); AI deepfakes (NRSC Talarico March 2026 first national party committee deployment; 50% voter influence; $1 production cost); regulatory vacuum (FEC deadlocked, Dec 2025 preemption EO blocks 28 states); EU regulatory divergence (DSA + AI Act vs US voluntary self-regulation)
-  - Key evidence: PNAS February 2026 study documents 1.9pp turnout suppression from targeted digital ads; non-white voters received suppression ads 10x more frequently
-  - Unique contribution: both-tracks synthesis (government + commercial simultaneous)
-  - Hard deadline: November 3, 2026 (midterm election)
-  - Distribution target: July 15 (4 months before election)
+- **Domain 40 COMPLETE**: `domain-40-surveillance-capitalism-electoral-manipulation.md` (6,800 words, 47 citations)
+  - 2026 midterms as turning point: deepfakes now standard campaign infrastructure (NRSC Talarico March 2026, first national party deployment)
+  - PNAS February 2026: 1.86% turnout suppression from digital targeting, 4.7M votes nationally, non-white voters targeted 10x more frequently
+  - FEC structural paralysis (no quorum since May 2025, Trump nominees not confirmed)
+  - DOJ voter file campaign to 33+ states creates government-commercial data fusion threat
+  - EU DSA/AI Act (August 2) requires synthetic content marking — US companies comply in EU, face zero equivalent US obligation
+  - Distribution target: July 15 (4 months before November 3 midterm election)
 
-**Status**: All Phase 2 Domains 38–40 production-ready. Total Phase 2 expansion output: 38,000+ words, 130+ citations, 3 distributions (June 1, July 15×2). Ready for concurrent execution with Phase 1 user distribution May 14-17 window.
+**Phase 2 Total Production Complete**: ~20,800 words, 142 citations across three domains. All committed to master. Ready for coordination/distribution staging.
 
 **Session 1022 — Phase 2 Expansion Outlines (May 14, 03:09+ UTC)** ✅:
 - `PHASE_2_DOMAINS_38_40_OUTLINES.md` (65K, production-ready research outlines) — Three new domains identified and outlined for Phase 2 expansion:
