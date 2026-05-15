@@ -1,6 +1,69 @@
 # Check-in
 
-## Session 1047 — May 15, 2026, 09:45–11:30 UTC (Orchestrator — Exploration Queue Expansion)
+## Session 1049 — May 15, 2026, 10:45–11:15 UTC (Orchestrator — Pre-Checkpoint Status)
+
+**Status**: ✅ **EXPLORATION QUEUE REFRESHED — Phase 2 research outlines ready for Phase 2 launch. Checkpoint infrastructure verified. All pre-May-16 autonomous work complete. Orchestrator standing by for checkpoint execution and user decisions.**
+
+### Since Last Check-in (Session 1047, May 15 09:45 UTC)
+
+**One autonomous completion + infrastructure verification (2-hour equivalent)**:
+
+**1. Resistance-Research: Phase 2 Domains 57/59 Research Outline Preparation** ✅ (Commit 77f0c344)
+- **Domain 57 (Multilateral Withdrawal)**: 40-50 hour production outline ready. Unique contribution: international accountability infrastructure as democratic load-bearing structure. Closes framework gap around how treaty withdrawals affect domestic governance. Reaches new constituencies (ASIL scholars, CFR, allied democracy orgs). 2026 timing: Trump v. Barbara ruling June-July, UNGA 81 September 22-28.
+- **Domain 59 (Economic Precarity)**: 40-50 hour production outline ready. Unique contribution: frames financial precarity as amplifier for all voter suppression mechanisms. Reaches labor, housing, healthcare, debt, retirement, and youth constituencies. Critical timing: November 3 midterm deadline requires July 15 completion.
+- **Production sequence**: Domain 59 June 10–July 15, Domain 57 July 15–August 10 (or parallel June 25 with 2 researchers)
+- **Status**: Phase 2 research can launch immediately post-Phase-1-Wave-1 (June 10+) without outline rework
+
+**2. Infrastructure Verification — May 16 Checkpoint Readiness** ✅
+- Checkpoint script runs correctly, queries Alpaca API, classifies scenarios correctly
+- Jetson connectivity verified (31 days uptime, load <1.0)
+- Current state matches expectations: 0 AAPL model sells (pre-exit), 2 confirmed round trips, -$2.40 PnL
+- May 16 20:00 UTC execution plan confirmed production-ready (POST_CHECKPOINT_24_HOUR_PLAN.md)
+
+**3. Exploration Queue Refreshed**
+- Added 2 new items for post-checkpoint/post-user-decision work
+- Career-training module gap analysis queued (3-4 hours, independent of user review)
+
+### Project Status Summary (May 15, 11:15 UTC)
+
+| Project | Status | Blocker | Next Action | Timeline |
+|---------|--------|---------|-------------|----------|
+| **stockbot** | May 16 checkpoint ready | None — infrastructure verified | Execute checkpoint at May 16 20:00 UTC | T-8:45h |
+| **resistance-research** | Phase 1 COMPLETE; Phase 2 Domain 57/59 outlines READY | User path decision (A/A+37/B) | **USER DECISION**: Confirm distribution path | May 15+ |
+| **mfg-farm** | All pre-print ready | Test print execution | User executes test print (evaluates snap-arm tolerance) | May 19–31 |
+| **seedwarden** | Track B ready (gates 1-3), Track A protocol ready | Etsy ID verification | **USER ACTION**: Submit Etsy verification (today), execute Track B gates May 15–28 | May 15–30 |
+| **cybersecurity-hardening** | All Phase 2 materials complete | User approval for Phase 1 launch | Awaiting user approval + Day 1 send date confirmation | June 1+ |
+| **career-training** | 150 scenarios complete, module index pending | Module gap analysis | Autonomous exploration available (3-4 hrs) | Post-checkpoint |
+| **open-repo** | PRs open | Maintainer review | Awaiting PR #1 & #2 merge | TBD |
+
+### Needs Your Input (Priority Order)
+
+1. **TODAY (May 15) — CRITICAL**: **Seedwarden Track A**: Submit Etsy biometric ID verification application. See `TRACK_A_BLOCKER_RESOLUTION.md` Section 2 for exact steps. Best-case clearance May 16; worst-case May 22 if submitted today. Delay to May 19 compresses timeline dangerously (clearance May 26 with minimal buffer).
+
+2. **May 15 — HIGH PRIORITY**: **Choose Phase 1 distribution path** for resistance-research:
+   - **Path A** (Immediate, max speed): Wave 1 (Goodman, Weiser, Chenoweth) → Wave 2 (12 civil rights orgs) → Wave 3 (state AGs), May 15-17
+   - **Path A+37** (Dual-track): Phase 1 distribution + Domain 37 research parallel (13-16 hrs May 20–June 15)
+   - **Path B** (Feedback-first): Soft engagement May 20–June 10 → feedback conversations → refined Phase 2
+   - **Impact**: Path A/A+37 → Phase 2 launches June 10+; Path B → Phase 2 launches June 15+. Domain 59 needs July 15 completion for November election deadline.
+
+3. **May 16, 20:00 UTC ± 30 min**: **Execute May 16 checkpoint** for stockbot Gate 1 assessment. Infrastructure ready. Run script: `cd /home/awank/dev/SuperClaude_Framework/projects/stockbot && uv run python scripts/may16_checkpoint_query_alpaca.py` Record four numbers: `aapl_model_sells`, `confirmed_round_trips`, `total_pnl`, `total_fills_since_may5`. Then follow POST_CHECKPOINT_24_HOUR_PLAN.md decision tree for outcome-specific next steps (PASS/NEAR-MISS/FAR-MISS).
+
+### Suggested Priorities for Next Session
+
+1. **POST-CHECKPOINT (May 16, 20:00 UTC+)**:
+   - Apply POST_CHECKPOINT_24_HOUR_PLAN.md decision tree immediately upon checkpoint completion
+   - Create May 16 decision dashboard (Lever A parameter tuning, capital redeployment scenarios)
+   
+2. **USER PATH DECISIONS (May 15–16)**:
+   - Confirm resistance-research Path A/A+37/B → triggers Phase 2 research sequence and Phase 1 Wave 1 timing
+   - Confirm seedwarden Etsy verification submission → unblocks Track A + May 30 Track B launch
+   - Confirm cybersecurity-hardening Phase 1 launch approval + Day 1 send date → Tier 1 distribution sequence locked in
+   
+3. **AUTONOMOUS WORK (Post-checkpoint, if queue available)**:
+   - Career-training module gap analysis (3-4 hours, independent of user review)
+   - Stockbot post-checkpoint scenario documentation (2-3 hours, conditional on checkpoint outcome)
+
+### Session 1047 — May 15, 2026, 09:45–11:30 UTC (Orchestrator — Exploration Queue Items 13–15)
 
 **Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE — Phase 2 research ready, post-test-print strategy ready, Track A resolution protocol ready. All work production-ready for user decisions and May 16 checkpoint.**
 
