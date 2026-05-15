@@ -3491,6 +3491,59 @@ Pending items: 20 (Seedwarden), 32 (Seedwarden), 30 (Seedwarden), 33 (Stockbot p
 
 ---
 
+## Session 1025 — May 15, 2026, 01:22–02:45 UTC (Checkpoint Logged + Open-Repo Docs/Security Fix)
+
+**Status**: ✅ **COMPLETE. All autonomous work finished. Awaiting next user action or Gate 1 monitoring checkpoint (May 16).**
+
+### Checkpoint Results Logging
+
+Logged May 14 20:00 UTC Gate 1 checkpoint results (executed 01:19 UTC May 15) to WORKLOG.md:
+- **Scenario**: NEAR_MISS_B1 (33 fills vs. 150-fill target)
+- **Key metrics**: 0 AAPL sells, -$2.40 P&L, h+10 at checkpoint
+- **Next action**: Monitor for AAPL SELLs; May 16 20:00 UTC second checkpoint
+- **Playbook**: `MAY_12_OUTCOME_ROADMAP.md` Section 4 (near-miss playbook)
+- **Committed to**: WORKLOG.md (`chore(worklog): logged Gate 1 checkpoint results...`)
+
+### Open-Repo Phase 5 Candidate 3 (Docs/Security Fix) — COMPLETED
+
+**Task**: Update README.md + API.md for Phase 4 completion; fix `0.0.0.0` binding security violation.
+
+**Branch**: `feature/open-repo-phase5-docs-security`
+
+**Changes**:
+1. **README.md**:
+   - Status: Phase 2→Phase 4 Complete
+   - Version: 0.2.0→0.4.0
+   - Test count: 35→194 passing tests (4 skipped)
+   - Security fix: `0.0.0.0` → `127.0.0.1` in quickstart (CLAUDE.md #1 compliance)
+   - Project structure: Added API v1/, services/, http_signatures.py, export/zim_writer.py, export/opds_generator.py
+   - Endpoints: Added 30+ routes (federation, export endpoints)
+   - Next Phases: Phase 3→Phase 5 (offline export/Kiwix), Phase 4+→Phase 6+ (advanced federation)
+   - Important Notes: Added Phase 4 scope clarification, Phase 5 pending items note
+
+2. **API.md**:
+   - Version: 0.1.0→0.4.0
+   - Status: "MVP Phase 1"→"Phase 4 (CRUD + Search + Endorsements + Federation + Export Framework)"
+   - Overview: Updated to reflect Phase 4 endpoints and export framework
+
+**Push**:
+- Created feature branch: `git checkout -b feature/open-repo-phase5-docs-security`
+- Committed changes: `git commit -m "docs: open-repo Phase 5 preparation — update README + API.md for Phase 4 completion"`
+- Pushed to open-repo remote: `git subtree push --prefix=projects/open-repo open-repo feature/open-repo-phase5-docs-security`
+- **Branch is ready for PR on open-repo repo**
+
+**Rationale**: 
+- Zero risk (docs only, no code changes)
+- Zero dependencies (can merge independently of PR #1)
+- Fixes critical security issue (0.0.0.0 binding violates CLAUDE.md rule)
+- Brings public-facing docs in line with actual Phase 4 state
+
+**Next step**: Create PR on open-repo repo: https://github.com/esca8peArtist/open-repo
+- Title: "docs: Update README + API.md for Phase 4; fix 0.0.0.0 binding in quickstart"
+- Description: Security compliance fix + Phase 4 status update
+
+---
+
 ## Gate 1 Checkpoint — May 14, 2026
 
 **Time**: 2026-05-15 01:19 UTC

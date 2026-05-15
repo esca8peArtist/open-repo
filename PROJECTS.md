@@ -795,13 +795,18 @@
 **Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
 **Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: **PR #1 OPEN** (2026-04-26): https://github.com/esca8peArtist/open-repo/pull/1
-- Title: "feat: Wave 4 Phase 2 — Federation Service Infrastructure"
+**Current focus**: **PR #1 OPEN** (2026-04-26) + **Phase 5 Candidate 3 IN PROGRESS**
+- PR #1 Title: "feat: Wave 4 Phase 2 — Federation Service Infrastructure"
 - 194/198 tests passing (4 skipped), 0 failures
 - Wave 4 federation complete: partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection
-- **Next**: Await PR merge review. After merge, begin Phase 5 (offline export/Kiwix integration).
+- **Phase 5 Candidate 3 PUSHED** (2026-05-15 01:30 UTC): `feature/open-repo-phase5-docs-security` — README + API.md updates
+  - ✅ Fixed 0.0.0.0 binding security issue → 127.0.0.1 (CLAUDE.md compliance)
+  - ✅ Updated Phase status (2→4) and test count (35→194)
+  - ✅ Updated project structure diagram + Next Phases
+  - ✅ Pushed to open-repo remote via `git subtree push`
+  - **Next**: Create PR on open-repo repo for docs/security fix (zero-risk, can merge anytime)
 **Blocked on**: —
-**Next phase candidates**: `projects/open-repo/PHASE_5_CANDIDATES.md` — 3 items identified (docs update, ZimWriter libzim activation, OPDS feedgen migration); all can start before PR #1 merges.
+**Next phase candidates**: After Candidate 3 PR merges: Candidate 1 (ZimWriter libzim activation), Candidate 2 (OPDS feedgen migration)
 **Notes**: All pushes to GitHub use `git subtree push --prefix=projects/open-repo open-repo <branch>` or `git subtree split` to keep the public repo clean. Never use `git push origin`. PR merge is awaiting maintainer review; no further blocking issues.
 
 ---

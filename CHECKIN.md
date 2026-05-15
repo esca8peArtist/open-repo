@@ -1,5 +1,55 @@
 # Check-in
 
+## Session 1025 — May 15, 2026, 01:22–02:45 UTC (Stockbot Checkpoint Logged + Open-Repo Candidate 3 Completed)
+
+**Status**: ✅ **CHECKPOINT RESULTS LOGGED. OPEN-REPO DOCS/SECURITY FIX PUSHED TO REMOTE. AUTONOMOUS WORK COMPLETED.**
+
+### Since Last Check-in (Previous: Session 1024, May 15 02:25 UTC)
+
+**Accomplishments**:
+1. **Stockbot Checkpoint Results Logged** — May 14 20:00 UTC checkpoint (executed at 01:19 UTC May 15) classified as NEAR_MISS_B1:
+   - 33 total fills (22% of 150-fill target)
+   - 0 AAPL model SELLs (h+10 at checkpoint)
+   - $-2.40 realized P&L
+   - Next monitoring checkpoint: May 16 20:00 UTC
+   - No parameter changes; watch for AAPL SELLs before May 16 leverage adjustment
+   - Full near-miss playbook: `MAY_12_OUTCOME_ROADMAP.md` Section 4
+
+2. **Open-Repo Phase 5 Candidate 3 Completed + Pushed** — README/API.md documentation fix (security fix + Phase 4 status update):
+   - ✅ **Security fix**: Changed `0.0.0.0` binding to `127.0.0.1` in dev server quickstart (CLAUDE.md compliance)
+   - ✅ Updated README: Phase 2→Phase 4, test count 35→194, added federation endpoints, updated Next Phases
+   - ✅ Updated API.md: Version 0.1.0→0.4.0, status updated to Phase 4 with endpoint documentation
+   - ✅ Updated project structure diagram: Added api/v1/, services/, http_signatures.py, export modules
+   - ✅ Pushed to open-repo remote via `git subtree push --prefix=projects/open-repo open-repo feature/open-repo-phase5-docs-security`
+   - **Ready for**: Create PR on open-repo repo (zero dependencies, can merge independently of PR #1)
+
+**In Progress**: None (all autonomous work completed)
+
+**No New Blockers**: All current blocks remain unchanged. mfg-farm test print, cybersecurity-hardening approval, resistance-research distribution path awaiting user action.
+
+### Current Project States
+
+| Project | Status | Next Action |
+|---------|--------|--------------|
+| **stockbot** | ✅ Checkpoint logged (NEAR_MISS_B1) | Monitor for AAPL SELLs; May 16 checkpoint if no triggers; may apply Lever A (threshold adjustment) |
+| **open-repo** | ✅ Phase 5 Candidate 3 pushed | Create PR on open-repo; await merge; start Candidate 1 (ZimWriter) after |
+| **resistance-research** | ✅ Phase 1 ready | Awaiting user distribution path decision (A/A+37/B) |
+| **cybersecurity-hardening** | ⏳ Phase 1 ready | Awaiting user approval for launch date + Tier 1 outreach go-ahead |
+| **seedwarden** | ✅ Track B ready | User gates execution May 15–28; May 28–29 go/no-go check; May 30 launch |
+| **mfg-farm** | 🚫 Test print blocked | Awaiting user test print execution (0.20mm, PLA+, 3 walls, 220–225°C) |
+
+### Items Needing Your Input
+
+1. **Open-repo**: Create PR on https://github.com/esca8peArtist/open-repo for docs/security fix (branch: `feature/open-repo-phase5-docs-security`). This can merge anytime — zero risk, independent of PR #1.
+2. **Stockbot**: Monitor for AAPL SELL fills today/tomorrow. May 16 checkpoint at 20:00 UTC. If no SELLs appear, Lever A adjustment (threshold_multiplier 0.50→0.40) expected.
+3. **Resistance-research**: Confirm distribution path (A / A+37 / B) to trigger Phase 1 execution (May 15–17 viable window closing).
+
+### Usage Status
+
+✅ Budget healthy. Sonnet 21.0% (reset Tuesday 2026-05-21 00:00 UTC). All-models 49.1%.
+
+---
+
 ## Session 1024 — May 15, 2026, 01:11–02:25 UTC (Checkpoint Verified Ready, Phase 5 Planning Complete)
 
 **Status**: ✅ **CHECKPOINT FULLY VERIFIED. OPEN-REPO PHASE 5 READY FOR AUTONOMOUS WORK. ALL TOP PRIORITIES UNBLOCKED.**
