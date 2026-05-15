@@ -1,5 +1,17 @@
 # Work Log
 
+## Session 1030 — May 15, 2026 (Research Agent — Domain 38 AI Regulatory Capture Production)
+
+**Status**: COMPLETE. Domain 38 full research document committed.
+
+**File**: `projects/resistance-research/domain-38-ai-regulatory-capture-governance.md`
+
+**Description**: Comprehensive domain analysis (~6,800 words, 48 citations) on regulatory capture in AI governance. Key findings: (1) US has no statutory AI governance framework; EO 14110 revoked Jan 20, 2025, replaced with "minimally burdensome" posture; (2) Four capture mechanisms documented: statutory vacuum, revolving-door/ownership-stake (Musk/xAI/DOGE), standards body capture (NIST + Agentic AI Foundation), and legal preemption as capture tool; (3) xAI v. Colorado case (April 9 filing, April 24 DOJ intervention, April 27 enforcement suspension) is the live mechanism of capture — Colorado legislature retreated to narrower SB 26-189 (passed May 9, awaiting Polis signature); (4) Senate voted 99-1 to reject AI moratorium provision in OBBBA (July 2025), demonstrating cross-partisan resistance to federal preemption ceiling; (5) EU AI Act Article 50 enforcement (August 2, 2026) creates regulatory arbitrage structure — US companies comply for EU markets, face no equivalent obligation for domestic political AI deployment; (6) Birhane et al. (arxiv 2605.06806) documents 24% revolving-door rate in high-profile AI regulatory incidents and 27 distinct capture mechanisms.
+
+**Distribution target**: July 15, 2026. Hard deadline: August 2, 2026 (EU Article 50 enforcement). Primary targets: Senate Commerce Committee, House Science Committee, EFF, CDT, AI Now Institute, Brennan Center.
+
+---
+
 ## Session 1028 — May 15, 2026, 02:47–04:15 UTC (Live Deployment Readiness — Pre-Gate-2 Prep)
 
 **Status**: ✅ **AUTONOMOUS PRE-GATE-2 WORK COMPLETE. LIVE DEPLOYMENT DOCS PRODUCTION-READY.**
