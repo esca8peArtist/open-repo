@@ -1,5 +1,44 @@
 # Check-in
 
+## Session 1024 — May 15, 2026, 01:11–02:25 UTC (Checkpoint Verified Ready, Phase 5 Planning Complete)
+
+**Status**: ✅ **CHECKPOINT FULLY VERIFIED. OPEN-REPO PHASE 5 READY FOR AUTONOMOUS WORK. ALL TOP PRIORITIES UNBLOCKED.**
+
+### Since Last Check-in (Previous: Session 1021, May 14 04:45 UTC)
+
+**Accomplishments**:
+1. **Stockbot Checkpoint Verification** — All 74 pre-flight tests pass (HMM + vol scalar). Alpaca connectivity verified. Post-checkpoint decision tree confirmed complete. Ready for 20:00 UTC execution today.
+2. **Open-repo Phase 5 Candidates** — Identified 3 prioritized items (README docs fix, ZimWriter libzim activation, OPDS migration). Candidate 1 includes security fix for `0.0.0.0` binding in quickstart. `PHASE_5_CANDIDATES.md` created and staged.
+
+**In Progress**:
+- Stockbot checkpoint: User execution at 20:00 UTC today (all prep complete)
+- Open-repo Phase 5: Candidate 1 (docs/security fix) ready to start autonomously once user signals
+
+**No New Blockers**: mfg-farm test print remains the only active block (user action pending).
+
+### Current Project States
+
+| Project | Status | Next Action | Timeline |
+|---------|--------|--------------|----------|
+| **stockbot** | ✅ Checkpoint ready (verified) | Execute at 20:00 UTC today; follow response framework per outcome | TODAY 20:00 UTC |
+| **resistance-research** | ✅ Phase 1 ready | Execute Wave 1 May 15–17; Phase 2 Domains 38–40 production-ready | May 15–17 |
+| **open-repo** | ✅ Phase 5 candidates ready | Start Candidate 1 (docs/security fix); Candidates 2-3 ready for sequential merge | Autonomous, can start now |
+| **cybersecurity-hardening** | ⏳ Awaiting approval | Approve Phase 1 Tier 1 launch + Day 1 date | User decision |
+| **seedwarden** | ✅ Track B ready | Execute gates May 15–28 per TRACK_B_USER_GATES.md | May 15–30 |
+| **mfg-farm** | 🚫 Test print blocked | Execute test print (0.20mm, PLA+, 3 walls, 220–225°C) | Pending user action |
+
+### Items Needing Your Input
+
+1. **Stockbot checkpoint TODAY (20:00 UTC)** — Execute using MAY_14_CHECKPOINT_EXECUTION_GUIDE.md. Record 8 metric values, classify outcome, follow response framework.
+2. **Open-repo Phase 5 go/no-go** — Candidate 1 (docs/security fix) can start autonomously. Confirm if you want orchestrator to begin work.
+3. **Cybersecurity-hardening launch approval** — Phase 1 Tier 1 distribution ready; awaiting approval for launch date.
+
+### Usage Status
+
+✅ Budget healthy. Sonnet 21.1% (reset Tuesday 2026-05-21 00:00 UTC). All-models 49.2%.
+
+---
+
 ## Session 1021 — May 14, 2026, 02:57–04:45 UTC (All Post-Execution Items Complete — 100% Checkpoint-Ready)
 
 **Status**: ✅ **CHECKPOINT EXECUTION READY (T-15.25h). ALL POST-CHECKPOINT ITEMS (46–48) STAGED. ZERO REMAINING PREP WORK.**

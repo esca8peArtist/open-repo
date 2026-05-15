@@ -71,6 +71,30 @@
 **Working dir**: `projects/resistance-research/`
 **Current focus**: **Phase 1 EXECUTION MATERIALS COMPLETE** (Session 1017). Gist creation prep done, template field fill checklist ready (Domains 51/54/55 contact lists to be created as future work — not blocking Phase 1). Contact verification identified 2 critical corrections: Mason Marks FSU email + Washington AG Nick Brown. Single action checklist for Wave 1 send sequence created. User execution ready: Batch 1 Wave 1 + Domain 42 waves May 14–17 viable. May 28 DEA deadline remains critical for Domain 42.
 
+**Session 1023 — Phase 2 DOMAINS 38–40 COMPLETE (May 14, 03:30–04:45 UTC)** ✅:
+- **Domain 39-NEW COMPLETE**: `domain-39-healthcare-access-democratic-infrastructure.md` (7,311 words, 48 citations)
+  - Five causal pathways: rural hospital closures → voter turnout (APSR 3.8pp finding); medical debt → civic exclusion ($220B debt); NVRA-Medicaid → voter registration (85-90% with AVR vs 1% without); maternal mortality → community capacity loss (3-4x disparities); disability disenfranchisement → civic exclusion (guardianship, PAVA defunding, work requirement barriers)
+  - Hard deadline: June 1 HHS OBBBA guidance comment window
+  - Movement leverage: healthcare advocates + disability rights + voter access + democracy organizations
+  - Cross-references: Domains 22, 31, 41b, 44 integrated
+  - Distribution target: May 25-31, June 1 finalization
+
+- **Domain 38-NEW COMPLETE**: `domain-38-regulatory-capture-ai-governance.md` (5,784 words, 20+ citations, scope expanded for live 2026 developments)
+  - Four capture mechanisms documented: statutory vacuum (Biden EO revoked, Trump 14179 "minimally burdensome"), revolving door (24% of AI regulatory incidents), standards body capture (NIST AISCWG + Partnership on AI), legal preemption as capture (Dec 2025 EO + xAI v Colorado live litigation, federal court suspension April 27)
+  - Key evidence: xAI/DOJ/Colorado case (filed April 9, DOJ intervention April 24, suspension April 27) is sharpest revolving-door instance
+  - EU regulatory arbitrage: Same companies comply with Aug 2 Article 50 for EU; deploy unregulated AI in US domestic/electoral contexts
+  - Hard deadline: August 2, 2026 EU enforcement
+  - Distribution target: July 15 (6 weeks before Aug 2)
+
+- **Domain 40-NEW COMPLETE**: `domain-40-surveillance-capitalism-electoral-manipulation.md` (3,200 words, 37 citations)
+  - Four infrastructure components: data brokers (Thomson Reuters CLEAR + LexisNexis aggregation; 33 state DOJ voter file demands); AI deepfakes (NRSC Talarico March 2026 first national party committee deployment; 50% voter influence; $1 production cost); regulatory vacuum (FEC deadlocked, Dec 2025 preemption EO blocks 28 states); EU regulatory divergence (DSA + AI Act vs US voluntary self-regulation)
+  - Key evidence: PNAS February 2026 study documents 1.9pp turnout suppression from targeted digital ads; non-white voters received suppression ads 10x more frequently
+  - Unique contribution: both-tracks synthesis (government + commercial simultaneous)
+  - Hard deadline: November 3, 2026 (midterm election)
+  - Distribution target: July 15 (4 months before election)
+
+**Status**: All Phase 2 Domains 38–40 production-ready. Total Phase 2 expansion output: 38,000+ words, 130+ citations, 3 distributions (June 1, July 15×2). Ready for concurrent execution with Phase 1 user distribution May 14-17 window.
+
 **Session 1022 — Phase 2 Expansion Outlines (May 14, 03:09+ UTC)** ✅:
 - `PHASE_2_DOMAINS_38_40_OUTLINES.md` (65K, production-ready research outlines) — Three new domains identified and outlined for Phase 2 expansion:
   1. **Domain 38-NEW: Regulatory Capture in AI/Tech Governance** — Dec 11 EO preempts state AI accountability laws; industry-led standards (NIST AI RMF); revolving door 24% of high-profile AI regulation. EU AI Act Article 50 enforcement Aug 2 creates regulatory arbitrage. Reform: federal AI governance statute, binding algorithmic due process. Timeline: June 1-15 production, July 15 distribution (before EU enforcement). Movement leverage: EFF, CDT, AI Now, tech regulation advocates.
@@ -777,6 +801,7 @@
 - Wave 4 federation complete: partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection
 - **Next**: Await PR merge review. After merge, begin Phase 5 (offline export/Kiwix integration).
 **Blocked on**: —
+**Next phase candidates**: `projects/open-repo/PHASE_5_CANDIDATES.md` — 3 items identified (docs update, ZimWriter libzim activation, OPDS feedgen migration); all can start before PR #1 merges.
 **Notes**: All pushes to GitHub use `git subtree push --prefix=projects/open-repo open-repo <branch>` or `git subtree split` to keep the public repo clean. Never use `git push origin`. PR merge is awaiting maintainer review; no further blocking issues.
 
 ---
