@@ -1,5 +1,50 @@
 # Check-in
 
+## Session 1026 — May 15, 2026, 01:31–01:40 UTC (Open-Repo PR #2 Created; Checkpoint Monitor Setup)
+
+**Status**: ✅ **OPEN-REPO PR #2 CREATED FOR PHASE 5 CANDIDATE 3. ORCHESTRATION UPDATES COMMITTED. GATE 1 CHECKPOINT MONITORING IN EFFECT.**
+
+### Since Last Check-in (Previous: Session 1025, May 15 02:45 UTC)
+
+**Accomplishments**:
+1. **Open-Repo PR #2 Created** (May 15, 01:35 UTC):
+   - PR Title: "docs: Update README + API.md for Phase 4; fix 0.0.0.0 binding in quickstart"
+   - URL: https://github.com/esca8peArtist/open-repo/pull/2
+   - Status: Awaiting maintainer review
+   - Content: Phase 4 documentation updates + security fix (0.0.0.0 → 127.0.0.1)
+   - Risk level: Zero (docs-only, can merge independently)
+
+2. **Orchestration State Updated**:
+   - Committed: PROJECTS.md (open-repo status), WORKLOG.md (PR creation logged)
+   - Git commit: `70729cfe` — "session 1026 — open-repo PR #2 created"
+
+**In Progress**: Stockbot Gate 1 monitoring (next checkpoint May 16, 20:00 UTC)
+
+**No New Blockers**: All existing blocks remain (mfg-farm test print, cybersecurity-hardening approval, resistance-research path decision)
+
+### Current Project States
+
+| Project | Status | Next Action |
+|---------|--------|--------------|
+| **stockbot** | ✅ Checkpoint executed (NEAR_MISS_B1) | Monitor for AAPL SELLs; May 16 20:00 UTC next checkpoint; may apply Lever A if no sells |
+| **open-repo** | ✅ PR #2 created (awaiting review) | Await maintainer review/merge; then start Phase 5 Candidate 1 (ZimWriter) |
+| **resistance-research** | ✅ Phase 1 ready | Awaiting user path decision (A/A+37/B) — May 15–17 distribution window open |
+| **cybersecurity-hardening** | ⏳ Awaiting approval | Awaiting user approval for Phase 1 Tier 1 launch date |
+| **seedwarden** | ✅ Track B ready | User gates execution May 15–28; May 30 launch date |
+| **mfg-farm** | 🚫 Blocked | Awaiting user test print execution (0.20mm, PLA+, 3 walls, 220–225°C) |
+
+### Items Needing Your Input
+
+1. **Open-Repo PR #2 Review** — https://github.com/esca8peArtist/open-repo/pull/2 (docs + security fix). Can merge anytime.
+2. **Stockbot Monitoring** — Watch for AAPL SELL fills by May 16 20:00 UTC. If no SELLs, Lever A threshold adjustment expected.
+3. **Resistance-Research Path Decision** — Confirm distribution path (A / A+37 / B) to execute Phase 1 during May 15–17 window.
+
+### Usage Status
+
+✅ Budget healthy. Sonnet 21.9% (reset Tuesday 2026-05-21 00:00 UTC). All-models 50.3%.
+
+---
+
 ## Session 1025 — May 15, 2026, 01:22–02:45 UTC (Stockbot Checkpoint Logged + Open-Repo Candidate 3 Completed)
 
 **Status**: ✅ **CHECKPOINT RESULTS LOGGED. OPEN-REPO DOCS/SECURITY FIX PUSHED TO REMOTE. AUTONOMOUS WORK COMPLETED.**
