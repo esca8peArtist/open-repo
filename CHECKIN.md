@@ -1,5 +1,54 @@
 # Check-in
 
+## Session 1085 — May 15, 2026, 17:20–18:45 UTC (Orchestrator — Phase 2 Expansion + Checkpoint Verification)
+
+**Status**: ✅ **TWO MAJOR DELIVERABLES COMPLETE — Phase 2 Research Begins + Checkpoint All Go**
+
+### Work Executed (2 Parallel Agents)
+
+**resistance-research: Phase 2 Domain 59 (Economic Precarity) — PRODUCTION READY** ✅
+- **Deliverable**: `domain-59-economic-precarity-and-civic-participation.md` (7,200 words, 44 verified sources)
+- **Leading finding**: 42-point income-based voter turnout gap in 2024 (highest in modern US history). Material cause: time poverty architecture, not apathy.
+- **Updates from outline**: CTC refundability restoration is real advocacy target (June-July 2026 Senate Finance markup); OBBBA work requirements actively deployed (Nebraska May 1); gig worker research: voting suppression driven by scheduling unpredictability, not alienation
+- **Status**: Production-ready for Phase 2 distribution integration. Committed to master. Can begin Domain 57 immediately or await user Phase 1 path decision.
+- **Business value**: Unlocks voting rights + election protection + democratic renewal funder networks not currently engaged with economic justice advocacy
+
+**stockbot: May 16 Checkpoint Infrastructure Verification — ALL SYSTEMS GO** ✅
+- **Verification scope**: 6 components verified ready for execution
+- **Results**: ✅ Script ready, ✅ Alpaca auth verified, ✅ Scenario classification complete, ✅ Protocol doc ready, ✅ Items 51-54 staged, ✅ Monitoring infrastructure in place
+- **Non-blocking issues**: curl endpoint timeout (not used), LightGBM feature mismatch pre-existing (investigate if NEAR_MISS result)
+- **User pre-execution checklist** (May 16 19:30 UTC):
+  1. `uv run python scripts/may16_checkpoint_query_alpaca.py --verify` — confirm account/equity
+  2. At 20:00 UTC: run checkpoint script
+  3. Match output to scenario in MAY_16_CHECKPOINT_PROTOCOL.md
+  4. If NEAR_MISS: run Lever A immediately
+- **Status**: Checkpoint infrastructure production-ready. T-27h to execution.
+
+### Decision Points & Next Work
+
+**Awaiting user decisions** (no changes from Session 1084):
+1. **Resistance-Research Phase 1 Distribution Path** (A / A+37 / B) — enables Wave 1 execution May 16-17
+2. **Cybersecurity Phase 1 Launch Date** (approve + set Day 1 send date) — infrastructure ready
+3. **Seedwarden Track A User Actions** (May 20 decision deadline) — tag corrections + Etsy account verification
+4. **Seedwarden Tier Choices** (Canva free/Pro, Kit free/Creator)
+
+**Autonomous work available** (can proceed immediately):
+- Phase 2 Domain 57 (Multilateral Withdrawal) research — 7,400-word outline complete, awaiting execution
+- Phase 4 Product Expansion research — for seedwarden post-Phase-3
+- Mfg-farm product expansion — available whenever Phase 1 shipments begin
+
+### Session Completion
+
+✅ Domain 59 complete and committed — Phase 2 research expansion in progress
+✅ Checkpoint verification complete — all systems ready for May 16 20:00 UTC execution
+✅ WORKLOG.md updated with session progress
+⏳ Awaiting May 16 checkpoint outcome and user path decisions
+
+**Token usage**: ~115K tokens (2 parallel agents, high-value research)
+**Remaining to 90% throttle**: 3.6M tokens (sufficient for full Phase 2 expansion if needed)
+
+---
+
 ## Session 1084 — May 15, 2026, 17:30–18:15 UTC (Orchestrator — Items 51-52 Pre-Staged, Checkpoint T-26 Hours)
 
 **Status**: ✅ **POST-CHECKPOINT WORK PRE-STAGED — Items 51-52 research complete, saves 3-4 hours post-checkpoint execution**
