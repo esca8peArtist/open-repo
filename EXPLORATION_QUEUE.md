@@ -923,3 +923,64 @@ All major pre-work, contingency frameworks, execution support documents, and inf
 6. PR #1 & #2 review/merge (open-repo)
 
 **Next items to queue** (post-events): Will depend on checkpoint outcome and user decisions
+
+---
+
+## Queued Items (Session 1051 — May 15, 2026, Checkpoint T+33 hours)
+
+### ⏳ Item 52: Stockbot May 16 Checkpoint Execution Runbook
+**Status**: QUEUED (Session 1051, May 15 2026, 10:30 UTC)
+**Impact**: CRITICAL — May 16 20:00 UTC checkpoint execution in 33.6 hours; execution guide prevents errors at critical moment
+**Context**: Item 39 (May 14 checkpoint runbook) proved highly valuable for systematic execution. May 16 checkpoint has identical structure but different query (may16_checkpoint_query_alpaca.py vs may14_checkpoint_query_alpaca.py) and outcome interpretation (PASS vs NEAR_MISS vs FAR_MISS scenarios per POST_CHECKPOINT_24_HOUR_PLAN.md).
+**Goal**: Create production-ready execution guide for May 16 checkpoint:
+1. **Pre-execution verification** (19:00 UTC, 15 min) — time sync, Jetson ping, Alpaca API health check, baseline state
+2. **Checkpoint query execution** (20:00 UTC, 15 min) — exact SSH commands, expected outputs, result recording
+3. **Result analysis** (20:15 UTC, 15 min) — scenario classification (PASS / NEAR-MISS Partial / NEAR-MISS B2 / FAR-MISS C2) with reference tables
+4. **Post-checkpoint actions** — outcome-specific decision paths and resource allocation
+5. **Error handling** — 5 failure scenarios with recovery procedures
+6. **Execution log template** — WORKLOG.md update structure
+**Feasibility**: HIGH — POST_CHECKPOINT_24_HOUR_PLAN.md exists (comprehensive 200+ line self-contained plan), may16_checkpoint_query_alpaca.py ready, outcome scenarios pre-defined
+**Effort estimate**: 1–1.5 hours (adapting Item 39 template with May 16 specifics)
+**Deliverable**: `projects/stockbot/MAY_16_CHECKPOINT_EXECUTION_RUNBOOK.md` (850–1,000 lines, comprehensive time-indexed procedure with error scenarios)
+**Why now**: 33.6 hours until checkpoint. Runbook enables error-free execution at critical decision moment. Post-execution enables immediate application of POST_CHECKPOINT_24_HOUR_PLAN.md actions (AMZN training, JPM training, AAPL position verification, etc.) within hours.
+**Blocker**: None (planning work, independent of checkpoint outcome)
+**Next Step**: Complete today (May 15) → user reviews May 16 10:00–19:00 UTC → executes May 16 19:00–20:30 UTC using runbook
+
+---
+
+### ⏳ Item 53: Resistance-Research Phase 2 Domains 57 & 59 Production Roadmap
+**Status**: QUEUED (Session 1051, May 15 2026, 10:30 UTC)
+**Impact**: HIGH — Phase 2 expansion unlocks 90–110 additional research hours (June 15 – August 15); Domains 57–59 complete Phase 2 candidate expansion
+**Context**: Phase 1 execution (May 15–21), Phase 1 distribution amplification (May 21–June 15), user path decision (A / A+37 / B). Assuming Phase 1 launches successfully, Phase 2 research can proceed immediately post-Phase-1 amplification (June 16 start). Domains 57 (Multilateral Withdrawal) and 59 (Economic Precarity) identified in Session 1043; research outlines exist but production roadmap missing.
+**Goal**: Create concrete production roadmap for Domains 57–59 parallel development:
+1. **Domain specification summaries** (Domain 57: NATO/Taiwan/Venezuela unilateralism; Domain 59: Economic precarity as democratic constraint — each with evidence requirement checklist, research scope boundaries, source list templates)
+2. **8-week parallel execution plan** (June 16 – August 15): Wave 1 (June 16-30 Domain 59, 50-60 hours primary research); Wave 2 (July 1-15 Domain 57, 40-50 hours); Wave 3 (July 16-Aug 15 Domain 60 if prioritized); production bottleneck analysis
+3. **Evidence acquisition checklist** — source categories, expert interview list, regulatory/policy document sources per domain
+4. **Quality gate procedure** — self-check validation + peer review with existing domain authors (Domain 1 author for Domain 57, Domain 31 author for Domain 59)
+5. **Publication sequencing** — which domains launch with Phase 2 wave distribution vs Phase 3 institutional targeting
+**Feasibility**: HIGH — Phase 1 production templates exist (Domains 38–40 recent examples), outline structure documented (PHASE_2_DOMAINS_38_40_OUTLINES.md)
+**Effort estimate**: 2.5–3 hours (domain specifications + Gantt timeline + evidence checklists)
+**Deliverable**: `projects/resistance-research/DOMAINS_57_59_PRODUCTION_ROADMAP.md` (domain specification sheets, 8-week execution timeline, evidence acquisition checklist per domain, QA procedures, publication sequencing matrix)
+**Why now**: Phase 1 execution imminent (May 15–21). If successful (metrics known by June 5), Phase 2 research can start June 16 without planning friction. Pre-staging now enables user to approve Phase 2 sequence immediately post-Phase-1.
+**Blocker**: User distribution path decision + Phase 1 execution success (but planning work is path-independent)
+**Next Step**: Phase 1 launch → Phase 1 amplification Week 1-4 (May 21-June 15) → produce this roadmap by June 14 evening → user approves Phase 2 research sequence → June 16 research begins
+
+---
+
+### ⏳ Item 54: Cybersecurity-Hardening Phase 3 Piloting Architecture
+**Status**: QUEUED (Session 1051, May 15 2026, 10:30 UTC)
+**Impact**: MEDIUM — Phase 1 (Tier 1) distribution June 1-15; Phase 2 (Tier 2) pilot June 15-July 15; Phase 3 planning needed for 2026 H2 execution
+**Context**: Phase 1 Tier 1 infrastructure complete (25 contacts, 7-week timeline). Phase 2 Tier 2 pilot readiness framework exists (TIER_2_EXPANSION_ARCHITECTURE.md from Item 27). Phase 3 would extend from Tier 2 pilot success to broader organizational adoption (50+ organizations by December 2026).
+**Goal**: Design Phase 3 piloting architecture covering:
+1. **Tier 3 cohort selection** (post-Tier-2-pilot): Strategic expansion from 3–5 organizations to 20–30 organizations; sector prioritization (media/news orgs highest leverage, then state attorneys general, then election officials)
+2. **Wave-based rollout** (August-December 2026): Wave 1 (Aug 1-30, 8 organizations, focused on election season urgency); Wave 2 (Sept 1-Oct 15, 12 organizations, post-primary analysis); Wave 3 (Oct 16-Nov 15, 10 organizations, final pre-election)
+3. **Messaging variant testing** (Tier 3 vs Tier 2): Different urgency framing for newsrooms vs civil society vs election officials; success metrics per variant
+4. **Scaling infrastructure** (beyond Tier 2 3-person team): Resource allocation, automation opportunities (auto-responses, FAQ templates, community manager training)
+5. **Success metrics by phase**: Adoption >60% (Tier 2), retention >75% (Tier 3 Wave 1), policy uptake tracking, incident response playbook evolution
+6. **Contingency scenarios**: Low Phase 2 adoption impacts Tier 3 go-live decision; election-related security incidents trigger escalation timeline
+**Feasibility**: HIGH — Phase 1 success measurement framework exists (Item 17), Tier 2 pilot infrastructure ready (Item 27), messaging templates complete
+**Effort estimate**: 2.5 hours (cohort selection matrix + wave timeline + resource allocation)
+**Deliverable**: `projects/cybersecurity-hardening/PHASE_3_PILOTING_ARCHITECTURE.md` (Tier 3 cohort selection rubric with 25+ candidate organizations pre-screened, August-December 2026 wave timeline, messaging variants per sector, scaling infrastructure analysis, success metrics per wave, contingency decision trees)
+**Why now**: Phase 1 imminent (June 1 launch date). Pre-planning Phase 3 (6 months out) enables confident commitment to 2026 H2 expansion immediately if Phase 1 metrics support continuation. Prevents summer planning gaps when execution focus is on Phase 2 pilot.
+**Blocker**: None (planning work, independent of Phase 1/2 execution)
+**Next Step**: User approves Phase 1 launch June 1 → execute Item 27 (Tier 2 pilot) in parallel → produce this Phase 3 architecture by July 1 for July-August preparation → Phase 3 piloting begins August 1

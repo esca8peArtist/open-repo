@@ -1,5 +1,60 @@
 # Check-in
 
+## Session 1051 — May 15, 2026, 10:25–10:40 UTC (Orchestrator — Checkpoint T+33h Preparation)
+
+**Status**: ✅ **CHECKPOINT READINESS VERIFIED — Exploration queue expanded for post-checkpoint work. Orchestrator standing by for May 16 20:00 UTC checkpoint execution.**
+
+### Since Last Check-in (Session 1050, May 15 11:30 UTC)
+
+**Work completed (15 min)**:
+
+1. **May 16 Checkpoint Readiness Verification** ✅
+   - May 16 checkpoint infrastructure fully in place: `may16_checkpoint_query_alpaca.py` verified
+   - POST_CHECKPOINT_24_HOUR_PLAN.md production-ready (self-contained execution guide)
+   - Time to checkpoint: **33.6 hours** (May 16 20:00 UTC)
+   - All pre-checkpoint deliverables verified
+
+2. **Exploration Queue Expansion — Items 52–54** ✅
+   - **Item 52: Stockbot May 16 Checkpoint Execution Runbook** — Enables error-free checkpoint execution; adapts Item 39 template to May 16 specifics
+   - **Item 53: Resistance-Research Phase 2 Domains 57–59 Production Roadmap** — 8-week Phase 2 expansion planning (ready for immediate execution post-Phase-1 success)
+   - **Item 54: Cybersecurity-Hardening Phase 3 Piloting Architecture** — August-December 2026 scaling roadmap (Tier 3 cohort selection, wave timeline, resource allocation)
+   - Queue now contains Items 49–54 (9 items identified/completed, ready for post-checkpoint work)
+
+### Critical Timeline — May 16 Checkpoint
+
+**What happens May 16, 20:00–21:30 UTC:**
+1. Orchestrator executes `uv run python scripts/may16_checkpoint_query_alpaca.py`
+2. Captures 4 outcome numbers: `aapl_model_sells`, `confirmed_round_trips`, `total_pnl`, `total_fills_since_may5`
+3. Classifies outcome: PASS / NEAR-MISS Partial / NEAR-MISS B2 / FAR-MISS C2
+4. Immediately applies POST_CHECKPOINT_24_HOUR_PLAN.md (sections 1–6 depending on outcome)
+5. Within 90 min: execute Day 0 Actions → AMZN training begins May 17 (if PASS) or root-cause analysis begins (if FAR-MISS)
+
+**Gate 1 success probability by outcome:**
+- **PASS** (aapl_model_sells ≥ 2): 20–25% — gates 2 deployment; AMZN/JPM training May 17–18
+- **NEAR-MISS Partial** (aapl_model_sells = 1): 30–35% — one session successful; Lever A tuning May 16; checkpoint May 19
+- **NEAR-MISS B2** (confirmed_round_trips = 2): 20–25% — signal suppression; threshold reduction; checkpoint May 19
+- **FAR-MISS C2** (0 trades, 0 sells): 15–20% — infrastructure failure; diagnostics May 16–17
+
+### Project Status Summary (May 15, 10:40 UTC)
+
+| Project | Status | Blocker | Next Action | Timeline |
+|---------|--------|---------|-------------|----------|
+| **stockbot** | May 16 checkpoint T+33h | None — infrastructure verified | Execute checkpoint 20:00 UTC; apply Gate 2 decision tree | May 16 20:00 UTC |
+| **resistance-research** | Phase 1 COMPLETE; Phase 2 ready | User path decision | **USER DECISION URGENT**: Path A/A+37/B → Wave 1 timing | May 15+ |
+| **mfg-farm** | Pre-print COMPLETE | Test print execution | User executes test print | May 19–31 |
+| **seedwarden** | Track B ready | Etsy verification | **USER ACTION**: Submit Etsy ID today | May 15 (critical) |
+| **cybersecurity-hardening** | Phase 2 COMPLETE | User approval | Confirm Phase 1 launch + Day 1 date | May 15–20 |
+
+### Needs Your Input
+
+1. **Resistance-Research Distribution Path**: Choose Path A (immediate Wave 1 May 15–17), Path A+37 (Domain 37 research track), or Path B (soft timeline May 20-June 10). This decision gates Phase 1 execution timing. Please respond in next check-in.
+
+2. **Seedwarden Track A Etsy Verification**: Biometric ID verification status? This gates May 30 Phase 2 launch.
+
+3. **Cybersecurity-Hardening Phase 1 Approval**: Ready for June 1 launch? Confirm Day 1 send date (determines Tier 1 sequence start).
+
+---
+
 ## Session 1050 — May 15, 2026, 10:14–11:30 UTC (Orchestrator — Queue Refresh + Gate 2 Options Analysis)
 
 **Status**: ✅ **EXPLORATION QUEUE REFRESHED — 3 new items added. stockbot Gate 2 options analysis complete. All projects in holding pattern awaiting May 16 checkpoint and user decisions.**
