@@ -1,5 +1,44 @@
 # Check-in
 
+## Session 1089 — May 15, 2026, 18:41–18:50 UTC (Orchestrator — Pre-Checkpoint Verification)
+
+**Status**: ✅ **ALL SYSTEMS READY FOR MAY 16 20:00 UTC CHECKPOINT — NO AUTONOMOUS WORK AVAILABLE UNTIL EXECUTION**
+
+### Work Executed
+
+**Pre-Checkpoint Verification** ✅
+- **Confirmed**: Callais v. Landry decision language correctly updated in Domain 1 file (commit 37f7e8bf) — "DECIDED April 29, 2026 (6-3)" reflects current case status
+- **Confirmed**: All checkpoint infrastructure verified ready (checkpoint query script tested, Alpaca API auth confirmed, scenario classification tree complete)
+- **Confirmed**: Phase 2 path-specific execution roadmap complete and staged for all three paths (A / A+37 / B)
+- **Status**: All projects either awaiting May 16 checkpoint outcome or user decisions — no further autonomous work available
+
+### Needs Your Input (URGENT — BY EOD TODAY, May 15)
+
+Three critical decisions needed TODAY to execute Phase 1 Wave 1 by May 15-17 window (if post-May-17, timeline shifts):
+
+1. **Resistance-Research Distribution Path**: A (full distribution) / A+37 (hybrid dual-track) / B (continued research first)
+   - **Impact**: Enables Batch 1 send May 16-17 (5 verified contacts: Goodman, Weiser, Chenoweth, Bassin, Elias)
+   - **Timeline**: 3-4.5 hours from decision to send
+
+2. **Seedwarden Canva/Kit Tier Selection**: Canva (free/Pro) and Kit (free/Creator)
+   - **Impact**: Determines Track B feature set for May 30 launch
+   - **Deadline**: May 18 to meet May 30 target
+
+3. **Cybersecurity Phase 1 Launch Approval**: Approval + Day 1 send date (recommend June 1)
+   - **Impact**: Activates Item 50 measurement infrastructure
+   - **Status**: All distribution infrastructure complete and production-ready
+
+### Session Completion
+
+✅ All pre-checkpoint verification complete
+✅ Critical bug fix (Callais language) confirmed in place
+✅ Phase 2 planning fully staged for post-decision execution
+⏳ **Awaiting**: May 16 20:00 UTC checkpoint execution + user decisions (items 1-3 above)
+
+**Next**: May 16 20:00 UTC checkpoint execution → classify outcome → deploy Item 51-52 (post-checkpoint actions) + execute Phase 1 Wave 1 distribution (pending user path decision)
+
+---
+
 ## Session 1088 — May 15, 2026, 18:32–19:15 UTC (Orchestrator — Phase 2 Path-Specific Execution Roadmap)
 
 **Status**: ✅ **PHASE 2 PLANNING COMPLETE — All systems ready for May 16 checkpoint and post-decision Phase 2 execution**
