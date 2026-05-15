@@ -98,7 +98,7 @@ Paste the full Domain 1 source file verbatim. Do not edit before pasting.
 
 **Research standard**: All claims sourced to primary materials — court filings, congressional records, peer-reviewed research, official government documents, and primary journalism from named reporters at identified outlets. No anonymous sources used as primary evidence.
 
-**Currency**: Current through [DATE — fill from source file header]. Key pending updates: Watson v. RNC decision (expected June–July 2026); Louisiana v. Callais decision (expected June–July 2026); SAVE Act analog litigation outcomes (FL, MS, SD, UT).
+**Currency**: Current through [DATE — fill from source file header]. Key pending updates: Watson v. RNC decision (expected June–July 2026); Louisiana v. Callais decided April 29, 2026 (6-3 ruling struck Louisiana majority-Black districts); SAVE Act analog litigation outcomes (FL, MS, SD, UT).
 
 **How to stay current**: This document is updated in research sessions tracking active developments. If you received this document via direct outreach and would like to be notified of significant updates, reply to the email you received it through.
 ```
