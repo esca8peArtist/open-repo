@@ -1,5 +1,60 @@
 # Check-in
 
+## Session 1038 — May 15, 2026, 06:20–06:40 UTC (Orchestrator — May 16 Checkpoint Preparation + Lever A Automation)
+
+**Status**: ✅ **CHECKPOINT PREPARATION COMPLETE. Lever A automation script ready for May 16 deployment. All projects remain blocked on user actions/external events. No further autonomous work available.**
+
+### Since Last Check-in (Session 1037, May 15 06:10–06:25 UTC)
+
+**Stockbot May 16 Checkpoint Preparation** ✅ **COMPLETE**:
+- **Deliverable**: `projects/stockbot/scripts/apply_lever_a.py` (145 lines, production-ready)
+  - Automation script to apply Lever A parameter adjustment if May 16 checkpoint shows zero AAPL SELLs
+  - Modifies `active-sessions-2session.json` in place: threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45
+  - Logs all changes to `logs/lever_a_application.log` with timestamp and rationale
+  - Ready for immediate deployment: `uv run python scripts/apply_lever_a.py`
+  - Expected timeline: Run immediately after May 16 checkpoint query at ~20:05 UTC
+  - Expected signal window: 1-3 trading days post-application (May 17-19)
+  
+**Orchestrator State Assessment**:
+- All autonomous work for this session exhausted
+- All priority projects blocked on:
+  - **User actions**: seedwarden plant orders (TODAY), mfg-farm test print, cybersecurity-hardening launch approval, resistance-research path decision
+  - **External events**: stockbot May 16 20:00 UTC checkpoint
+- **Green status**: All projects have clear next steps and no technical blockers
+
+**Token Usage**:
+- Status: 🟢 Sonnet 26.8%, All-models 57.5%, Reset in 90h
+- Session budget: ~50K tokens allocated (total session budget ~200K)
+
+### Needs Your Input
+
+**Stockbot May 16 Checkpoint** (Tomorrow, 20:00 UTC):
+- Orchestrator will automatically execute checkpoint query at 20:00 UTC
+- If AAPL exits fire (h+11 or h+12): No action needed; continue monitoring on Gate 2 timeline
+- If no AAPL exits: Lever A will be automatically applied (~20:05 UTC)
+  - Script ready: `projects/stockbot/scripts/apply_lever_a.py`
+  - No user action required; monitoring continues through May 19
+
+**Seedwarden Phase 2 (TODAY, May 15)**:
+- Confirm plant orders placed (Mountain Rose Herbs, Strictly Medicinal Seeds, Prairie Moon Nursery)
+- Confirm location access (Asheville Botanical Garden OR private forest farm OR indoor fallback)
+- Reference: `PHASE_2_EXECUTION_DAILY_TRACKER_MAY_15_30.md` Section "URGENT — May 15 Status Check"
+
+**Resistance-Research Phase 1** (May 15-17):
+- Decide distribution path: A / A+37 / B
+- Once path chosen, orchestrator can execute Phase 1 in ~2.5-3 hours
+- **Critical deadline**: Domain 50 (Healthcare) has June 1 HHS deadline; distribution must complete by May 25-31
+
+### Suggested Next Actions (In Priority Order)
+
+1. **TODAY (May 15)**: Complete seedwarden plant orders + location access confirmation
+2. **Tomorrow (May 16 20:00 UTC)**: Checkpoint executes; if Lever A needed, orchestrator applies it autonomously
+3. **May 15-17**: Decide on resistance-research Phase 1 distribution path
+4. **May 16+**: Monitor stockbot for AAPL signal fires (May 17-19 expected window if Lever A applied)
+5. **May 30**: Seedwarden Phase 2 launch (tracking via `PHASE_2_EXECUTION_DAILY_TRACKER_MAY_15_30.md`)
+
+---
+
 ## Session 1037 — May 15, 2026, 06:10–06:25 UTC (Orchestrator — Seedwarden Phase 2 Execution Tracker)
 
 **Status**: ✅ **SEEDWARDEN PHASE 2 EXECUTION DAILY TRACKER COMPLETE. All priority projects remain blocked on user actions/external events. Checkpoint today: all projects GREEN with clear next steps.**

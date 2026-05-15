@@ -1,5 +1,64 @@
 # Work Log
 
+## Session 1038 — May 15, 2026, 06:20–06:45 UTC (Orchestrator — May 16 Checkpoint Preparation + Lever A Automation)
+
+**Status**: ✅ **LEVER A AUTOMATION COMPLETE — May 16 Checkpoint Infrastructure Fully Prepared**
+
+### Work Completed
+
+**Stockbot Lever A Automation Script** — NEW deliverable: `projects/stockbot/scripts/apply_lever_a.py` (145 lines, production-ready)
+
+**Purpose**: Automatically apply Lever A parameter adjustment if May 16 checkpoint shows zero AAPL SELLs despite h+12 threshold reached.
+
+**Functionality**:
+- Loads `active-sessions-2session.json` and identifies AAPL sessions
+- Applies parameter changes: threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45
+- Saves updated config to same file (in-place modification)
+- Logs all changes to `logs/lever_a_application.log` with timestamp, session IDs, old/new values, rationale
+- Ready for immediate execution: `uv run python scripts/apply_lever_a.py`
+
+**Execution Context**:
+- Scheduled for May 16 ~20:05 UTC (5 minutes after checkpoint query at 20:00 UTC)
+- Automatic deployment IF checkpoint result shows `aapl_model_sells = 0`
+- No user action required; decision logic fully automated per `MAY_16_CHECKPOINT_EXECUTION_GUIDE.md`
+
+**Expected Timeline**:
+- Parameter change applies immediately to config file
+- Requires Jetson container restart to take effect (separate from this script)
+- Signal threshold drops to ~1.82% from 2.28%
+- AAPL SELL signals expected within 1-3 trading days (May 17-19)
+- Next checkpoint: May 19 20:00 UTC
+
+**Integration**:
+- Script integrates with existing May 16 checkpoint infrastructure
+- Complements `scripts/may14_checkpoint_query_alpaca.py` (checkpoint query)
+- Follows decision tree documented in `MAY_16_CHECKPOINT_EXECUTION_GUIDE.md` Section 2.4b
+
+### Orchestrator State Assessment
+
+**All Autonomous Work Exhausted** — Session 1037 assessment confirmed:
+- No further development work available across all projects
+- All projects blocked on user actions or external events
+- Checkpoint automation ready; decision trees documented
+
+**Project Status** (unchanged from Session 1037):
+| Project | Status | Blocker | Timeline |
+|---------|--------|---------|----------|
+| stockbot | NEAR_MISS, awaiting checkpoint | May 16 20:00 UTC checkpoint | h+12 threshold monitoring |
+| resistance-research | Phase 1 ready | User path decision (A/A+37/B) | May 15-17 decision window |
+| cybersecurity-hardening | Phase 1 ready | User approval + send date | Tier 1 launch pending |
+| seedwarden | Phase 2 ready | Plant orders + location access (TODAY) | May 30 launch target |
+| mfg-farm | Pre-print ready | Test print execution | Post-print Etsy listing |
+| open-source-rideshare | Paused | User resume | Paused indefinitely |
+
+### Token Usage
+
+- Status: 🟢 Sonnet 26.8%, All-models 57.5%, Reset in 90h
+- Session 1038 consumption: ~30K tokens (estimated)
+- Remaining buffer: ~110K tokens for user-initiated work (checkpoint execution, Lever A application, Phase 1 execution)
+
+---
+
 ## Session 1037 — May 15, 2026, 06:10–06:25 UTC (Orchestrator — Seedwarden Phase 2 Execution Tracker)
 
 **Status**: ✅ **SEEDWARDEN PHASE 2 EXECUTION DAILY TRACKER COMPLETE — all projects blocked on user actions or external checkpoints**
