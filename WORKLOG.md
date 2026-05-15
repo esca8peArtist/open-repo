@@ -1,5 +1,39 @@
 # Work Log
 
+## Session 1027 — May 15, 2026, 01:39+ UTC (Gate 2 Preparation & Monitoring)
+
+**Status**: 🟡 **GATE 2 CHECKPOINT MONITORING IN EFFECT. AUTONOMOUS WORK SCOPE IDENTIFIED.**
+
+### Session Context
+- Stockbot Gate 1 checkpoint executed May 14 20:00 UTC → **NEAR_MISS_B1 result** (33 fills, 22% of 150-fill target)
+- Open-repo Phase 5 Candidate 3 completed and PR #2 created (awaiting maintainer review)
+- **Next critical event**: Stockbot Gate 2 checkpoint **May 16 20:00 UTC** (T-42.5 hours)
+- **All other projects**: Blocked on user decisions/actions (resistance-research path, cybersecurity-hardening approval, mfg-farm test print, seedwarden Track B user gates)
+
+### Work Scope Assessment
+1. **Stockbot dominant focus** (priority #1):
+   - Monitor AAPL position for SELL signals between now and May 16 20:00 UTC
+   - If AAPL SELLs appear: no parameter change (engine recovering)
+   - If NO AAPL SELLs by May 16: apply Lever A (threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45)
+   - Prepare for post-Gate-2 execution based on outcome (PASS/NEAR_MISS/FAR_MISS)
+
+2. **Optional pre-work** (if time permits):
+   - **stockbot: Live Trading Deployment Readiness — Minimal Viable Checklist** (3–4 hrs)
+   - Creates Jetson deployment script, pre-stages environment variables, builds startup/shutdown orchestration, tests Alpaca paper→live conversion
+   - Useful regardless of Gate 2 outcome (enables rapid live launch if Gate 2 passes or supports recovery if Gate 2 near-miss)
+
+### Accomplished This Session
+- ✅ Session orientation and project status review
+- ✅ CHECKIN.md updated with current session status
+- ✅ Work scope identified and logged
+
+### Next Steps
+- Decide: Start Live Trading Deployment Readiness checklist (3–4 hrs) or wait until closer to May 16 checkpoint
+- Monitor stockbot system daily until May 16 20:00 UTC
+- Execute Gate 2 checkpoint query at May 16 20:00 UTC per `MAY_12_OUTCOME_ROADMAP.md`
+
+---
+
 ## Session 1024 — May 15, 2026, 01:11–02:25 UTC (Checkpoint Readiness Verification + Phase 5 Candidates)
 
 **Status**: ✅ **CHECKPOINT FULLY VERIFIED. OPEN-REPO PHASE 5 PLANNING COMPLETE. ALL ITEMS ACTIONABLE.**

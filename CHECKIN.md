@@ -1,5 +1,24 @@
 # Check-in
 
+## Session 1027 — May 15, 2026, 01:39+ UTC (Gate 2 Checkpoint Preparation & Monitoring)
+
+**Status**: 🟡 **GATE 2 MONITORING IN EFFECT. NEXT CHECKPOINT MAY 16 20:00 UTC. PRE-CHECKPOINT PREPARATION IN PROGRESS.**
+
+### Since Last Check-in (Previous: Session 1026, May 15 01:31 UTC)
+
+**Accomplishments (in progress)**:
+1. **Session Orientation Complete** — ORCHESTRATOR_STATE reviewed, no new active blocks, all projects assessed for autonomous work
+2. **Stockbot Status** — Gate 1 complete (NEAR_MISS_B1, 33 fills). AAPL h+10 position still open (+$924 unrealized). Next critical checkpoint: May 16 20:00 UTC. Monitoring for AAPL SELL signals (if present by May 16, no parameter change; if absent, apply Lever A threshold adjustment)
+3. **Work Scope Identified** — Only autonomous work available: (a) prepare Live Trading Deployment Readiness checklist (3–4 hrs, pre-work for post-Gate-2), (b) monitor stockbot system until May 16 checkpoint
+
+**In Progress**: 
+- Stockbot Gate 2 preparation (may start Live Trading Deployment Readiness checklist)
+- Monitoring AAPL position age leading up to May 16 20:00 UTC checkpoint
+
+**No New Blockers**: Same as Session 1026 — mfg-farm test print, resistance-research path decision pending
+
+---
+
 ## Session 1026 — May 15, 2026, 01:31–01:40 UTC (Open-Repo PR #2 Created; Checkpoint Monitor Setup)
 
 **Status**: ✅ **OPEN-REPO PR #2 CREATED FOR PHASE 5 CANDIDATE 3. ORCHESTRATION UPDATES COMMITTED. GATE 1 CHECKPOINT MONITORING IN EFFECT.**
