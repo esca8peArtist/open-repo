@@ -908,9 +908,66 @@ Goal: Create completion verification procedures for Track B user gates (Gates 1,
 
 ---
 
+## New Items (Session 1067 — May 15, 2026, T-31 hours to checkpoint)
+
+### ⏳ Item 55: Resistance-Research Phase 1 Wave 1 Pre-Staging & Contact Verification
+**Status**: QUEUED (Session 1067, May 15 2026, 13:30 UTC)
+**Impact**: HIGH — Phase 1 Wave 1 launch is T+1 day after user path decision (likely May 16); pre-staging enables immediate execution
+**Context**: Phase 1 materials complete (Item 28 + 47 ready). User distribution path decision needed TODAY (May 15). Once decision made, Batch 1 send must begin May 15-17. Pre-staging removes execution delay.
+**Goal**: Complete all execution-day prep so that Wave 1 execution is a pure logistics exercise, not a content-prep exercise:
+1. **Verify contact list** (Batch 1 — 25 highest-leverage): Emails current, phone numbers valid, organizations still at same addresses
+2. **Test email delivery** (Gmail/Outlook): Send test emails to 5 diverse recipients; verify no filtering issues, formatting correct
+3. **Pre-fill message templates**: Insert sender name (Anya), timestamp, personalization hooks once user confirms distribution path
+4. **Prepare scheduling calendar**: May 15–17 Batch 1 send timing blocked on user calendar
+5. **Create Wave 1 execution checklist**: Day-by-day checklist (May 15: 5 emails sent + 5 received; May 16: 5 emails + verification; May 17: 15 emails + final verification)
+**Feasibility**: HIGH — all content ready, contacts exist, only logistics work
+**Effort estimate**: 2–2.5 hours
+**Deliverable**: `projects/resistance-research/PHASE_1_WAVE1_EXECUTION_PREP.md` (contact verification status, test send results, filled message templates, May 15-17 calendar, day-by-day checklist)
+**Why now**: User decision today (May 15) → execution begins May 16-17. This pre-staging happens in parallel with decision-making, reduces post-decision friction to 30 min (review checklist + send emails).
+**Blocker**: Requires user to select distribution path (A / A+37 / B) first; once selected, execution can begin immediately
+**Next Step**: User selects path today → immediately activate Item 55 (30 min orchestrator work to review prep); user executes May 15-17 using checklist
+
+---
+
+### ⏳ Item 56: Stockbot Post-Checkpoint Scenario Readiness Validation
+**Status**: QUEUED (Session 1067, May 15 2026, 13:30 UTC)
+**Impact**: CRITICAL — May 16 20:00 UTC checkpoint execution in T-31 hours; validation removes ambiguity at critical decision moment
+**Context**: POST_CHECKPOINT_24_HOUR_PLAN.md and MAY_16_CHECKPOINT_EXECUTION_RUNBOOK.md are production-ready. However, user should have a pre-checkpoint preparation that validates: (1) all decision paths are clear, (2) quick-reference materials are available, (3) contingency procedures are actionable.
+**Goal**: Validate checkpoint execution readiness and create pre-checkpoint preparation materials:
+1. **Decision path clarity audit**: Review MAY_16_CHECKPOINT_EXECUTION_RUNBOOK.md Sections 1-4; verify each scenario (PASS / NEAR-MISS / FAR-MISS C1 / FAR-MISS C2) has a clear 1-page summary with next steps
+2. **Quick-reference checklist**: 1-page summary of May 16 execution timeline (19:00-21:30 UTC windows with specific actions)
+3. **Contingency decision tree**: If FAR-MISS-C2 (worst case), what's the immediate 24-hour recovery plan? Verify POST_CHECKPOINT_24_HOUR_PLAN.md covers this
+4. **Scenario-specific prep**: For each outcome, create 3-5 bullet-point "if this outcome, then do this" quick reference
+5. **Pre-execution checklist**: May 16 19:00 UTC pre-flight (time sync, Jetson connectivity, Alpaca API response test, script file verification)
+**Feasibility**: HIGH — frameworks exist, only need audit + quick-reference consolidation
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/stockbot/CHECKPOINT_READINESS_VALIDATION.md` (decision path clarity audit, 1-page quick-reference timeline, contingency decision tree, 4 scenario-specific prep guides, pre-execution checklist)
+**Why now**: Checkpoint in 31 hours. User should spend May 16 10:00-19:00 UTC reviewing checkpoint materials before execution. This validation document ensures user has consolidated, clear reference materials by May 16 morning.
+**Next Step**: Orchestrator produces validation document May 15 afternoon → user reviews May 16 morning (30 min review) → executes May 16 19:00 UTC with zero ambiguity
+
+---
+
+### ⏳ Item 57: Seedwarden Track B Gate Execution Readiness Audit
+**Status**: QUEUED (Session 1067, May 15 2026, 13:30 UTC)
+**Impact**: MEDIUM — Track B gates (May 15-28) are user-executable if documentation is complete. Audit removes pre-execution friction and identifies any documentation gaps.
+**Context**: TRACK_B_USER_GATES.md (Item 48, completed Session 1043) documents all 3 gates with checkbox steps. TRACK_B_GATE_COMPLETION_VERIFICATION.md (Item 48 verification, Session 1045) provides go/no-go rubric for May 29. But does user have all materials needed to execute gates May 15-28 without asking questions?
+**Goal**: Audit readiness and identify any documentation gaps:
+1. **Gate 1 readiness** (May 15-18, 30 min): Verify Instagram/TikTok/Pinterest setup instructions are complete; identify any tool changes since document creation; test one platform connection if possible
+2. **Gate 2 readiness** (May 19-24, 25 min): Canva Brand Kit export procedure — verify step-by-step instructions match current Canva UI (UI may have changed since doc creation); identify any prerequisite needs (fonts, color palette decisions)
+3. **Gate 3 readiness** (May 27-28, 35 min): Kit account + landing page creation — verify exact URL structure, email setup, 3-person incognito test procedure is actionable
+4. **Documentation gap audit**: Are there any procedural steps missing? Any ambiguous instructions? Any tool/password/credential needs?
+5. **Create user pre-execution checklist**: Checklist for May 14 evening (everything user needs before May 15 Gate 1 start: passwords reset, accounts checked, tool access verified)
+**Feasibility**: HIGH — documentation exists, mostly a verification task
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/seedwarden/TRACK_B_EXECUTION_READINESS.md` (Gate 1-3 readiness audit, UI change log, documentation gap assessment, user pre-execution checklist, contingency troubleshooting tips)
+**Why now**: Track B gates begin May 15 (today). User should have validation document by end of day; if gaps identified, can be fixed before Gate 1 start tomorrow (May 15).
+**Next Step**: Orchestrator produces readiness audit May 15 afternoon → user reviews May 15 evening (20 min) → executes gates May 15-28 using this document if gaps identified, or using existing TRACK_B_USER_GATES.md if audit confirms completeness
+
+---
+
 ## Final Summary (Session 1065 — May 15, 2026)
 
-**Total queue status**: Items 1–53 COMPLETE ✅, Item 54 QUEUED
+**Total queue status**: Items 1–54 COMPLETE ✅, Items 55–57 QUEUED
 
 All major pre-work, contingency frameworks, execution support documents, and production roadmaps finalized.
 

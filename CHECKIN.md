@@ -1,5 +1,82 @@
 # Check-in
 
+## Session 1067 — May 15, 2026, 13:30–15:15 UTC (Orchestrator — Queue refresh + critical findings)
+
+**Status**: ✅ **NEW QUEUE ITEMS READY — Critical issues identified & documented. Awaiting user decisions (3 required today).**
+
+### Since Last Check-in (Session 1066)
+
+**Work completed** (1.75 hours):
+1. **Reviewed state**: All Items 1-54 complete; queue had 0 active items
+2. **Added 3 new queue items** per protocol (Items 55-57, total 5.5-6.5 hours of autonomous work available)
+3. **Executed Items 55-57 in parallel** (3 subagents concurrently):
+   - Item 56 (Checkpoint Readiness): Complete — validation doc ready for May 16
+   - Item 55 (Wave 1 Pre-Staging): Complete — critical contact email error found (**Marc Elias stale email**)
+   - Item 57 (Track B Readiness): Complete — 2 critical gaps identified (**Canva color limit, Kit automation limit**)
+
+### Critical Findings Requiring User Input
+
+**🔴 CRITICAL #1 — Marc Elias Contact Email (resistance-research)**
+- **Issue**: PHASE_1_CONTACT_VERIFICATION.json lists `melias@perkinscoie.com`
+- **Problem**: Stale email (Elias left Perkins Coie in 2021)
+- **Correct**: `melias@elias.law` (Elias Law Group, confirmed as Firm Chair 2026)
+- **Impact**: May 15-17 Wave 1 will bounce to wrong address if not fixed
+- **Action required**: Approve updated email before May 16 Wave 1 send (1 min decision)
+- **Status**: Fixed in PHASE_1_WAVE1_EXECUTION_PREP.md, ready for your approval
+
+**🔴 CRITICAL #2 — Seedwarden Gate 2: Canva Brand Kit Color Limit**
+- **Issue**: TRACK_B_USER_GATES.md specifies 10 colors in Brand Kit
+- **Problem**: Canva free plan allows only 3 colors per Brand Kit (doc says "available on free tier" but incomplete)
+- **Timeline**: Gate 2 happens May 19-24
+- **Fix options**:
+  1. Upgrade to Canva Pro ($15/mo) — enables unlimited colors, unlimited Brand Kits
+  2. Enter remaining 7 colors manually in each design (workaround, ~5 min per design)
+  3. Use pinned hex code reference doc (avoid UI entry, use export/paste method)
+- **Action required**: Decide on fix option by May 18 (10 min decision)
+- **Recommendation**: Option 1 (Pro upgrade) if budget allows; cleanest execution
+
+**🔴 CRITICAL #3 — Seedwarden Gate 3: Kit Automation Conditional Routing Limitation**
+- **Issue**: TRACK_B_USER_GATES.md uses zone-routing with conditionals ("if zone-5 tag, send zone 5 variant")
+- **Problem**: Kit free Newsletter plan disallows conditional logic — only 1 linear automation + 1 sequence allowed
+- **Timeline**: Gate 3 happens May 27-28
+- **Fix options**:
+  1. Upgrade to Kit Creator ($33/mo) — enables visual automations with conditionals
+  2. Simplify zone routing to single non-personalized welcome email (keep it simple, all zones get same email for launch)
+  3. Manual zone routing via segmented lists (split subscriber lists by zone, 3 separate automations)
+- **Action required**: Decide on fix option by May 26 (10 min decision)
+- **Recommendation**: Option 2 (simplification) for May 30 launch — complexity can be added post-launch once system is stable
+
+### Status Summary
+
+| Area | Status | Owner | Deadline |
+|------|--------|-------|----------|
+| **Checkpoint readiness** | ✅ VALIDATION DOC READY | User | May 16 10:00 UTC (review 20 min) |
+| **Marc Elias email fix** | 🔴 USER DECISION NEEDED | User | **TODAY (May 15)** |
+| **Wave 1 pre-staging** | ✅ CHECKLIST READY | User | May 15-17 execution |
+| **Canva color limit fix** | 🔴 USER DECISION NEEDED | User | By May 18 (before Gate 2) |
+| **Kit automation fix** | 🔴 USER DECISION NEEDED | User | By May 26 (before Gate 3) |
+| **Distribution path selection** | 🔴 USER DECISION NEEDED | User | **TODAY (May 15)** |
+| **Seedwarden readiness audit** | ✅ AUDIT COMPLETE | — | No further action needed |
+
+### What You Need to Do Today (May 15)
+
+**URGENT (required today)**:
+1. **Approve Marc Elias email update** — see PHASE_1_WAVE1_EXECUTION_PREP.md Section 1 (1 min)
+2. **Select resistance-research distribution path** — read DECISION_BRIEF_PATH_SELECTION.md from Session 1066, respond with A / A+37 / B (5 min)
+
+**Soon (decide by May 18–26)**:
+3. **Choose Canva Brand Kit fix** (Upgrade vs workaround) — see TRACK_B_EXECUTION_READINESS.md Gap 1 (10 min)
+4. **Choose Kit automation fix** (Upgrade vs simplify) — see TRACK_B_EXECUTION_READINESS.md Gap 2 (10 min)
+
+### Next Phase Gates
+
+**May 16 20:00 UTC**: Stockbot Gate 1 checkpoint execution (CHECKPOINT_READINESS_VALIDATION.md ready)
+**May 15-17**: Wave 1 execution (if path selected) using PHASE_1_WAVE1_EXECUTION_PREP.md checklist
+**May 19–28**: Seedwarden Track B gates (using TRACK_B_USER_GATES.md with your chosen fixes)
+**May 30**: Seedwarden Phase 2 launch (pending Track B completion + go/no-go assessment)
+
+---
+
 ## Session 1066 — May 15, 2026, 14:30+ UTC (Orchestrator — Decision Brief + Item 54 Phase 3 Architecture)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS 1-54 ALL COMPLETE — User decision materials ready. Standing by for May 16 checkpoint execution.**
