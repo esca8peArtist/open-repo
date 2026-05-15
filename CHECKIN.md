@@ -1,5 +1,91 @@
 # Check-in
 
+## Session 1082 — May 15, 2026, 16:38–17:10 UTC (Orchestrator — Items 55-57 Parallel Execution + Checkpoint T-27h)
+
+**Status**: ✅ **ITEMS 55-57 COMPLETE — Critical gaps identified in Seedwarden Track B; Checkpoint readiness validation complete; Wave 1 pre-staging ready**
+
+### Work Executed (3 Parallel Agents, 5 min execution time)
+
+**Item 55 — Resistance-Research Phase 1 Wave 1 Pre-Staging** ✅
+- All 5 Batch 1 contacts live-verified (May 15 16:50 UTC): Ryan Goodman (Just Security), Wendy Weiser (Brennan), Erica Chenoweth (Harvard), Ian Bassin (Protect Democracy), Marc Elias (Democracy Docket)
+- **CRITICAL UPDATE FOUND**: Louisiana v. Callais DECIDED April 29, 2026 (not pending) — redistricting cascade underway. Elias email template must be corrected before send.
+- Contact-specific updates: Chenoweth has April 2026 Ash Center publication (newer than Jan 2026 pre-fill); Goodman needs May 2026 article check on send day
+- All three Gist URLs verified live and accessible
+- May 15-17 send schedule prepared with UTC timestamps
+- Deliverable: `PHASE_1_WAVE1_EXECUTION_PREP.md` — execution checklist ready
+
+**Item 56 — Stockbot Post-Checkpoint Scenario Readiness Validation** ✅
+- All 4 outcome paths verified clear and actionable (PASS / NEAR-MISS Partial / NEAR-MISS B2 / FAR-MISS C2)
+- Naming inconsistency resolved (canonical outcome mapping table created)
+- Pre-execution checklist created: 7 items for May 16 19:00 UTC (time sync, Jetson ping, Alpaca health, script verification)
+- All prerequisite scripts verified present: `may16_checkpoint_query_alpaca.py` (19.2 KB), `apply_lever_a.py` (3.9 KB)
+- Deliverable: `CHECKPOINT_READINESS_VALIDATION.md` — reference guide ready
+
+**Item 57 — Seedwarden Track B Gate Execution Readiness Audit** ✅
+- **TWO CRITICAL GAPS IDENTIFIED requiring user decision**:
+  1. **Gap 1 (Canva)**: Free tier supports 3 colors; Gates doc requires 10 colors
+     - Option A: Canva Pro ($15/mo, cancel June)
+     - Option B: Stay free + manual 7-color entry per session (~3-5 min)
+     - Option C: Stay free + color reference tab
+  2. **Gap 2 (Kit)**: Free tier lacks sequences; Zone routing requires Kit Creator ($33/mo)
+     - Option A: Kit Creator ($33/mo)
+     - Option B: Stay free + remove zone routing, one generic welcome email
+     - Option C: Manual hybrid (hand-email zone cards, only viable <15 signups/day)
+- **Medium gap**: Tag naming conflict (docs use different tag names) — resolved with correct references
+- Gate 1 (May 15-18) fully ready, no gaps
+- 3-test recipients procedure clarified (Gmail plus-addressing: wanka95+test1, +test2, plus one secondary mailbox)
+- Deliverable: `TRACK_B_EXECUTION_READINESS.md` — readiness audit + gap resolution guide
+
+### Checkpoint Status (T-27 hours)
+All systems verified ready. May 16 19:00–21:30 UTC timeline confirmed:
+- 19:00 UTC: Pre-flight verification (7-item checklist from Item 56)
+- 20:00 UTC EXACT: Checkpoint execution
+- 20:05 UTC: Outcome classification + immediate actions
+- 20:30 UTC: Logging complete
+
+### Critical Discovery: Tier Decision Specificity Required
+
+Your May 15 "Seedwarden Canva & Kit tier decisions" actually requires **TWO specific tier choices**:
+1. **Canva**: Free (with 7-color workaround) or Pro ($15/mo)?
+2. **Kit**: Free (with simplified single-email onboarding) or Creator ($33/mo for sequences)?
+
+Combined cost scenarios:
+- **Minimum cost**: Both free ($0, but more manual work + feature loss)
+- **Recommended**: Canva Pro + Kit Creator ($48/mo, full featured until June when Canva cancels)
+- **Balanced**: Canva Pro + Kit free ($15/mo, Zone dropdown removed, manual email routing)
+
+**Recommendation**: Canva Pro ($15 one-time setup cost for Brand Kit) + Kit Creator ($33 running cost) enables full architecture as documented. Kit Creator is the load-bearing choice — Zone routing is core to May 30 launch value prop. Canva Pro is optional if manual color entry is acceptable.
+
+### Needs Your Input (UPDATED — critical specificity added)
+
+**BY EOD TODAY (May 15) — Three User Decisions Required**:
+
+1. **Resistance-Research Path** (A / A+37 / B)
+   - Enables Wave 1 execution May 16-17 using PHASE_1_WAVE1_EXECUTION_PREP.md
+   - Note: Louisiana v. Callais decided April 29 (not pending) — templates corrected in prep doc
+
+2. **Seedwarden Canva Tier** (Free with workaround / Pro $15/mo)
+   - Free: Stay 3 colors, enter 7 manually per session (~3-5 min overhead)
+   - Pro: $15/mo (recommend canceling June post-Brand-Kit setup)
+   
+3. **Seedwarden Kit Tier** (Free with feature loss / Creator $33/mo)
+   - Free: Remove Zone dropdown, one generic welcome email to all subscribers (simpler, less segmentation)
+   - Creator: $33/mo, enables full zone-routing architecture (5 zone-specific welcome emails per subscriber)
+   - **Load-bearing decision**: Zone routing is core to May 30 launch differentiation
+
+4. **Cybersecurity Phase 1 Launch** (Confirm + provide Day 1 send date)
+   - Likely June 1 based on prior estimates
+   - Infrastructure ready in `PHASE_1_EXECUTION_CALENDAR.md`
+
+### Session Completion
+- ✅ Items 55-57 completed
+- ✅ All three documents committed to master
+- ✅ Checkpoint readiness validated for T-27 hours
+- ✅ Critical Canva/Kit gaps identified for user decision
+- ⏳ Awaiting user decisions (4 items, all needed by EOD May 15)
+
+---
+
 ## Session 1081 — May 15, 2026, 18:00–19:20 UTC (Orchestrator — Exploration Queue + Seedwarden Phase 4 Research)
 
 **Status**: ✅ **EXPLORATION QUEUE REFRESHED + PHASE 4 RESEARCH COMPLETE — All systems still ready for May 16 20:00 UTC checkpoint**
