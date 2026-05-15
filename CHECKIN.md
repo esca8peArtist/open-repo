@@ -1,5 +1,55 @@
 # Check-in
 
+## Session 1059 — May 15, 2026, 12:00–12:15 UTC (Orchestrator — Orientation + State Confirmation)
+
+**Status**: ✅ **ALL AUTONOMOUS PRE-WORK COMPLETE — Standing by for May 16 20:00 UTC checkpoint (T-32 hours). No new autonomous work identified.**
+
+### Since Last Check-in (Session 1058)
+
+**Work completed** (15 minutes):
+1. **Oriented** to current state via ORCHESTRATOR_STATE.md and PROJECTS.md
+2. **Confirmed** all autonomous pre-work complete (stockbot checkpoint ready, resistance-research Phase 1 ready, all materials staged)
+3. **Pruned** stockbot PROJECTS.md focus (stale Session 1043 reference → current status summary)
+4. **Verified** INBOX.md has no new items
+5. **Verified** Exploration Queue refreshed (Items 49-56 queued for post-checkpoint/post-decision phases)
+6. **Decision**: No autonomous work available; all projects blocked on external events or user decisions
+
+### Critical Decisions Awaiting User Input
+
+**🔴 URGENT (any time May 15)**:
+- **resistance-research Distribution Path** → User should select **Path A+37 (RECOMMENDED)** per `projects/resistance-research/DISTRIBUTION_PATH_COMPARISON.md`
+  - Triggers Item 55 (Wave 1 Execution Runbook) for 4-6 hour Phase 1 launch May 15-17
+
+**🟡 By May 20 (5 days)**:
+- **seedwarden Track A Blockers** → Complete tag corrections + Etsy verification (15-30 min user time)
+- **cybersecurity-hardening Phase 1 Approval** → Approve Tier 1 launch + confirm Day 1 send date
+
+### May 16 Checkpoint Execution (T-32 hours)
+
+- **Scheduled**: May 16 20:00 UTC
+- **Pre-checkpoint checklist**: `projects/stockbot/MAY_16_CHECKPOINT_VALIDATION_CHECKLIST.md`
+- **Decision framework**: `projects/stockbot/POST_CHECKPOINT_24_HOUR_PLAN.md` (all 4 scenarios covered)
+- **Pre-confirmed outcome**: NEAR_MISS (AAPL h+10 exit did not trigger May 14; position still open)
+
+### Exploration Queue Status
+
+- Items 1-51: ✅ COMPLETE
+- Items 49-56: Ready for May 16-20 execution phases
+  - Item 49: Post-Checkpoint Action Plan (execute May 16 20:05 UTC)
+  - Item 50: Phase 2 Domain 38 Research (post-Phase-1-Wave-1 execution)
+  - Item 51: Seedwarden Analytics Setup (ready May 29-30)
+  - Item 52-54: Queued for respective May 16-20 phases
+  - Item 55: Wave 1 Runbook (triggers on user path decision)
+  - Item 56: Countdown Checklist (ready for daily use)
+
+### Token Budget
+
+Current: 26.8% Sonnet (2,391,233 tokens), 65.9% all-models  
+Reset in 84 hours (May 17 00:00 UTC)  
+Status: Healthy, no action required
+
+---
+
 ## Session 1058 — May 15, 2026, 12:50–13:10 UTC (Orchestrator — Post-Checkpoint Playbook + Queue Expansion)
 
 **Status**: ✅ **POST-CHECKPOINT 24-HOUR PLAN COMPLETE + QUEUE ITEMS 55-56 ADDED — All autonomous work optimized for May 16-20 execution. Awaiting user decisions and checkpoint.**
