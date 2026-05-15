@@ -1,19 +1,27 @@
 # Check-in
 
-## Session 1027 — May 15, 2026, 01:39+ UTC (Gate 2 Checkpoint Preparation & Monitoring)
+## Session 1027 — May 15, 2026, 01:39–03:15 UTC (Gate 2 Checkpoint Preparation Complete)
 
-**Status**: 🟡 **GATE 2 MONITORING IN EFFECT. NEXT CHECKPOINT MAY 16 20:00 UTC. PRE-CHECKPOINT PREPARATION IN PROGRESS.**
+**Status**: ✅ **LIVE TRADING DEPLOYMENT READINESS CHECKLIST COMPLETE. GATE 2 MONITORING READY. ALL ORCHESTRATION COMMITTED.**
 
 ### Since Last Check-in (Previous: Session 1026, May 15 01:31 UTC)
 
-**Accomplishments (in progress)**:
+**Accomplishments**:
 1. **Session Orientation Complete** — ORCHESTRATOR_STATE reviewed, no new active blocks, all projects assessed for autonomous work
-2. **Stockbot Status** — Gate 1 complete (NEAR_MISS_B1, 33 fills). AAPL h+10 position still open (+$924 unrealized). Next critical checkpoint: May 16 20:00 UTC. Monitoring for AAPL SELL signals (if present by May 16, no parameter change; if absent, apply Lever A threshold adjustment)
-3. **Work Scope Identified** — Only autonomous work available: (a) prepare Live Trading Deployment Readiness checklist (3–4 hrs, pre-work for post-Gate-2), (b) monitor stockbot system until May 16 checkpoint
+2. **Stockbot Status Confirmed** — Gate 1 complete (NEAR_MISS_B1, 33 fills). AAPL h+10 position still open (+$924 unrealized). Next critical checkpoint: **May 16 20:00 UTC** (T-42.5 hours)
+3. **Live Trading Deployment Readiness Checklist Created** ✅ — 1,500+ words, 8 sections, production-ready:
+   - Section 1: Alpaca Account Setup Verification (permissions, API keys, PDT status, buying power)
+   - Section 2: Jetson Deployment Script (automated paper-to-live conversion with rollback)
+   - Section 3: Environment Variable Pre-Staging (template, comparison table, validation script)
+   - Section 4: Startup/Shutdown Orchestration (safe sequences, crash recovery, monitoring)
+   - Section 5: Alpaca Paper-to-Live Conversion Testing (4 non-destructive smoke test scripts)
+   - Section 6: 15-Item Go/No-Go Checklist with decision tree
+   - Section 7: Post-Deployment Monitoring (first-hour protocol, daily routine, alert thresholds)
+   - Section 8: Gate 2 Near-Miss Contingency (no re-work needed, ready for May 23 checkpoint)
+4. **Supporting Scripts Created** — `scripts/deploy_live.sh` and `scripts/rollback_to_paper.sh` (production-ready, all syntax-valid)
+5. **Orchestration Committed** — All changes committed to master. CHECKIN, WORKLOG, stockbot submodule now current.
 
-**In Progress**: 
-- Stockbot Gate 2 preparation (may start Live Trading Deployment Readiness checklist)
-- Monitoring AAPL position age leading up to May 16 20:00 UTC checkpoint
+**Monitoring Ready**: AAPL position monitoring framework in place. Lever A (threshold adjustment) will be applied May 16 if no new AAPL SELLs appear between now and checkpoint.
 
 **No New Blockers**: Same as Session 1026 — mfg-farm test print, resistance-research path decision pending
 
