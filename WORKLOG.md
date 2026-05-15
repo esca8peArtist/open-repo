@@ -33,16 +33,51 @@
   - Both close structural framework gaps and reach underrepresented constituencies
 
 - **Session Logistics**:
-  - Checkpointinfrastructure verified (Jetson reachable, script runs, database sync correct)
+  - Checkpoint infrastructure verified (Jetson reachable, script runs, database sync correct)
   - May 16 h+12 checkpoint execution plan confirmed production-ready
   - No blockers for May 16 execution at 20:00 UTC
 
+**Item: career-training Module Gap Analysis & Index Creation** ✅:
+- **Deliverables**: 
+  - `projects/career-training/module-gap-analysis.md` (3,100 words, 28K, commit 506a946d)
+  - `projects/career-training/module-index.md` (v3.0, 26K, reading-order guide for 3 career paths)
+  - `projects/career-training/new-module-proposals.md` (6,800 words, 50K, 5 detailed new module outlines)
+  
+- **Gap Analysis Findings**:
+  - **Top 3 operational gaps identified**: 
+    1. Residential lookahead scheduling (3-week planning, Last Planner System, constraint removal)
+    2. OCIP/CCIP insurance program design (affects bid pricing 3-8%, affects 40+ Residential GC students/year)
+    3. Safety IIPP implementation (operational design, not just compliance description)
+  - **Proposed new modules** (5 total, 58-72 hours):
+    1. Module 34 (Lookahead Scheduling): 10-12h, affects 100% Residential GC + 60% Specialty students, **highest-leverage first module**
+    2. Module 35 (Insurance Program Design): 12-15h, prevents major bid errors
+    3. Module 36 (Safety IIPP Design): 10-12h, operational completeness
+    4. Module 37 (Industrial Commissioning): 12-15h
+    5. Module 38 (Multi-Family/Light Commercial): 14-18h
+  
+- **Path Coverage Assessment**:
+  - **Specialty Sub→PM path**: Well-served (Modules 13, 24, 30, 32 form clean progression)
+  - **Residential GC path**: Underserved (gaps in scheduling, insurance, multi-family variants)
+  - **Industrial GC path**: Well-served (Module 03 CPM, heavy equipment focus)
+  
+- **Deployment Decision**:
+  - **Curriculum is ready to deploy now** (existing 33 modules + 150-scenario workbook are complete, production-quality)
+  - New modules are enhancements, not blockers
+  - `module-index.md` v3.0 serves as implementation guide with reading orders by specialization
+  
+- **Module Index Structure (v3.0)**:
+  - 3 career path reading orders (Residential GC, Industrial GC, Specialty Sub)
+  - Prerequisite clarity (40-60h core, 40-60h path-specific, 20h capstone)
+  - Cross-references to 150-scenario case-study workbook
+  - Integration points for new modules (where they fit in current sequence)
+
 ### Queue Status After Session 1049
 
-- **Completed items (Session 1049)**: 1 (Domains 57/59 outlines)
-- **Remaining items in queue**: 1 (career-training module gap analysis)
-- **Queue health**: 1 item remaining; no new external blockers; all pre-May-16-checkpoint work complete
-- **May 16 checkpoint**: Ready to execute as scheduled (T-9:15h from session end)
+- **Completed items (Session 1049)**: 2 (Domains 57/59 outlines + Module gap analysis)
+- **Remaining items in queue**: 0 (all items complete)
+- **Queue health**: All items complete; exploration queue fully executed for this cycle
+- **May 16 checkpoint**: Ready to execute as scheduled (T-8h from session end)
+- **Next queue additions**: Post-checkpoint (May 16 20:00 UTC) or post-user-decision items
 
 ---
 

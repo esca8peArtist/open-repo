@@ -1,12 +1,12 @@
 # Check-in
 
-## Session 1049 — May 15, 2026, 10:45–11:15 UTC (Orchestrator — Pre-Checkpoint Status)
+## Session 1049 — May 15, 2026, 10:45–11:10 UTC (Orchestrator — Pre-Checkpoint Status + Exploration Queue Complete)
 
-**Status**: ✅ **EXPLORATION QUEUE REFRESHED — Phase 2 research outlines ready for Phase 2 launch. Checkpoint infrastructure verified. All pre-May-16 autonomous work complete. Orchestrator standing by for checkpoint execution and user decisions.**
+**Status**: ✅ **ALL EXPLORATION QUEUE ITEMS COMPLETE — Phase 2 research outlines ready, curriculum audit finished, checkpoint infrastructure verified. All pre-May-16 autonomous work done. Orchestrator standing by for checkpoint execution and user decisions.**
 
 ### Since Last Check-in (Session 1047, May 15 09:45 UTC)
 
-**One autonomous completion + infrastructure verification (2-hour equivalent)**:
+**Two autonomous completions + infrastructure verification (3-hour equivalent)**:
 
 **1. Resistance-Research: Phase 2 Domains 57/59 Research Outline Preparation** ✅ (Commit 77f0c344)
 - **Domain 57 (Multilateral Withdrawal)**: 40-50 hour production outline ready. Unique contribution: international accountability infrastructure as democratic load-bearing structure. Closes framework gap around how treaty withdrawals affect domestic governance. Reaches new constituencies (ASIL scholars, CFR, allied democracy orgs). 2026 timing: Trump v. Barbara ruling June-July, UNGA 81 September 22-28.
@@ -14,15 +14,26 @@
 - **Production sequence**: Domain 59 June 10–July 15, Domain 57 July 15–August 10 (or parallel June 25 with 2 researchers)
 - **Status**: Phase 2 research can launch immediately post-Phase-1-Wave-1 (June 10+) without outline rework
 
-**2. Infrastructure Verification — May 16 Checkpoint Readiness** ✅
+**2. Career-Training: Module Gap Analysis & Index Creation** ✅ (Commit 506a946d)
+- **Deliverables**: `module-gap-analysis.md` (3,100 words), `module-index.md` v3.0 (26K, 3-path reading guide), `new-module-proposals.md` (6,800 words, 5 modules)
+- **Key findings**: 
+  - Top 3 operational gaps: residential lookahead scheduling, OCIP/CCIP insurance design, safety IIPP implementation
+  - 5 new modules proposed (58-72 hours total): Module 34 (Lookahead Scheduling) is highest-leverage, affects 100% of Residential GC path
+  - Residential GC path underserved vs. Specialty Sub→PM path well-served
+  - **Deployment status**: Curriculum ready to ship now (existing 33 modules + 150 scenarios complete); new modules enhance, don't block
+  - Module index v3.0 provides reading orders by career path with prerequisites and cross-references to 150-scenario workbook
+- **Status**: Production-ready for immediate student deployment; new module authoring roadmap clear
+
+**3. Infrastructure Verification — May 16 Checkpoint Readiness** ✅
 - Checkpoint script runs correctly, queries Alpaca API, classifies scenarios correctly
 - Jetson connectivity verified (31 days uptime, load <1.0)
 - Current state matches expectations: 0 AAPL model sells (pre-exit), 2 confirmed round trips, -$2.40 PnL
 - May 16 20:00 UTC execution plan confirmed production-ready (POST_CHECKPOINT_24_HOUR_PLAN.md)
 
-**3. Exploration Queue Refreshed**
-- Added 2 new items for post-checkpoint/post-user-decision work
-- Career-training module gap analysis queued (3-4 hours, independent of user review)
+**4. Exploration Queue: All Items Complete**
+- Completed 2/2 items from Session 1049 queue refresh (Domains 57/59 outlines + Module gap analysis)
+- Queue now empty; no new external blockers
+- Next queue additions: Post-May-16-checkpoint or post-user-decision items
 
 ### Project Status Summary (May 15, 11:15 UTC)
 
