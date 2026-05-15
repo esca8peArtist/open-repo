@@ -1,5 +1,58 @@
 # Work Log
 
+## Session 1047 — May 15, 2026, 09:45–11:30 UTC (Orchestrator — Exploration Queue Items 13–15)
+
+**Status**: ✅ **THREE EXPLORATION ITEMS COMPLETE — Phase 2 research frameworks ready, post-test-print strategy ready, Track A resolution protocol ready.**
+
+### Work Completed
+
+**Item 13: Resistance-Research Phase 2 Domains 57/59 Research Initiation Frameworks** ✅:
+- **Deliverables**: 
+  - `projects/resistance-research/outlines/domain-57-multilateral-withdrawal-outline.md` (~2,400 words, production-ready)
+  - `projects/resistance-research/outlines/domain-59-economic-precarity-outline.md` (~2,300 words, production-ready)
+- **Item 13 (Domain 57 — Multilateral Withdrawal)**:
+  - Core reframe: multilateral withdrawals as removal of external load-bearing structures of domestic democratic governance (regulatory anchors, congressional checkpoints, civil society accountability, scientific standards)
+  - Seven causal pathways: capture acceleration, climate migration, resource conflict escalation, sanction blowback, institutional decay, sovereignty erosion, ally destabilization
+  - Cross-domain bridges: Domains 2, 3, 4, 8, 18, 23, 28, 30
+  - Distribution differentiation: reaches ASIL scholars, foreign policy think tanks (Carnegie, CFR), allied democracy orgs; law review submission viable
+  - Research scope: 40–50 hours, actionable outlines for immediate Phase 2 launch
+  - Key insights: USMCA vs. WTO dispute resolution creates asymmetric partner vulnerability; UNESCO/ILO withdrawal enables domestic anti-labor/-press capture
+  - Commit: `b611a6e3`
+
+- **Item 13 (Domain 59 — Economic Precarity)**:
+  - Core reframe: economic precarity (wages, debt, housing, gig, benefits, healthcare, retirement) as democratic infrastructure, not just welfare policy
+  - Seven causal pathways: wage stagnation→turnout decline, medical debt→suppression, housing precarity→organizing barriers, gig economy→bargaining suppression, benefits access→conditional participation, student debt→intergenerational civic loss, retirement insecurity→turnout drop
+  - Cross-domain bridges: Domains 11, 15, 17, 22, 39, 40, 44
+  - Distribution differentiation: opens siloed constituencies (labor, housing, healthcare, debt, retirement) to each other; economic justice foundations (Ford, Kellogg) + labor press (AFL-CIO Now)
+  - Load-bearing evidence: Desmond-Slee 2023 (eviction→8-9 ppt turnout decline), Finkelstein Oregon Medicaid RCT, Herd-Moynihan administrative burden framework
+  - Research scope: 40–50 hours, actionable outlines for immediate Phase 2 launch
+  - Commit: `b611a6e3`
+
+- **Status**: Both frameworks scoped, sourced, and ready for research initiation immediately upon user distribution path decision. No further prep work needed. If Path A or A+37 is selected, Domain 57/59 can launch May 20 (concurrent with Wave 2).
+
+**Item 14: mfg-farm Post-Test-Print Scaling Strategy** ✅:
+- **Deliverable**: `projects/mfg-farm/POST_TEST_PRINT_SCALING_STRATEGY.md` (~2,700 words, production-ready)
+- **Scope**: PASS and FAIL pathways, volume ramp (1→10→50→100+), QC SOP, supplier negotiation tiers, fulfillment logistics, material comparison, injection molding break-even
+- **Key findings**:
+  - PASS path: Four-gate evaluation (Gate 1: snap-arm engagement is hard stop). Injection molding break-even 1,000–13,050 units (Year 2–3).
+  - FAIL path: Failure type taxonomy (A–F) with root cause + resolution. Type A (cracking) → PETG switch (no design iteration needed, 4 hrs vs. 2 days).
+  - Material specs: Prusament PLA ±0.02mm (highest precision), eSUN PLA+ ±0.03mm (cost-optimized at $12–14/kg)
+  - Decision triggers: When does second printer (+$3.5K) pay for itself? When do custom molds (13K+ units) justify tooling?
+- **Status**: Ready for execution immediately after user test-print evaluation (expected May 19–31). All cost models, timeline, and fallback strategies included.
+- **Commit**: `df8019f6`
+
+**Item 15: Seedwarden Track A Resolution Protocol** ✅:
+- **Deliverable**: `projects/seedwarden/TRACK_A_RESOLUTION_PROTOCOL.md` (~1,900 words, production-ready)
+- **Scope**: Blocker assessment (tag corrections + Etsy verification), day-by-day unblocking sequence, Etsy 2025–2026 verification requirements (Persona biometric ID), interim Gumroad fallback, Track A+B parallelization
+- **Key finding**: Both blockers resolvable in 45 min user action + 1–5 business day Etsy wait. **Critical**: Submit Etsy verification TODAY (May 15) to hit May 16 best-case clearance. Waiting until May 19 compresses worst-case to May 26 (still viable but eliminates buffer).
+- **Etsy verification**: New Persona biometric ID requirement (live selfie + government ID). Not a form submission — this is mandatory for all new US sellers since mid-2025.
+- **Tag corrections**: Non-scriptable in current state (Etsy system fields). Three specific field corrections provided with copy-paste paths.
+- **Fallback**: Gumroad (15-min setup, 10% fee vs. Etsy 9.5%, no pre-launch ID verification).
+- **Status**: Ready for execution. User should initiate Etsy verification within hours to ensure May 30 track A+B unified launch.
+- **Commit**: `df8019f6`
+
+---
+
 ## Session 1046 — May 15, 2026 (Research Agent — Exploration Queue Items: mfg-farm + seedwarden)
 
 **Status**: COMPLETE — both exploration items delivered.

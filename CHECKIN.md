@@ -1,5 +1,82 @@
 # Check-in
 
+## Session 1047 — May 15, 2026, 09:45–11:30 UTC (Orchestrator — Exploration Queue Expansion)
+
+**Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE — Phase 2 research ready, post-test-print strategy ready, Track A resolution protocol ready. All work production-ready for user decisions and May 16 checkpoint.**
+
+### Since Last Check-in (Session 1046, May 15 09:45 UTC)
+
+**Three parallel autonomous completions (40K tokens equivalent)**:
+
+**1. Resistance-Research: Phase 2 Domains 57/59 Research Initiation Frameworks** ✅
+- Both domains scoped at 40–50 hours each, with comprehensive source lists, movement leverage analysis, distribution pathways
+- Domain 57 (Multilateral Withdrawal): Unique contribution frames treaty withdrawals as removal of democratic governance load-bearing structures. Distribution reaches ASIL scholars + foreign policy think tanks + allied democracy organizations. Law review submission viable.
+- Domain 59 (Economic Precarity): Frames wages/debt/housing/gig/benefits/retirement as democratic infrastructure. Opens siloed constituencies (labor, housing, healthcare, debt, retirement security) to each other. Labor press distribution (AFL-CIO Now) is primary channel.
+- Key evidence anchors identified: Desmond-Slee 2023 (eviction→turnout), Finkelstein Oregon Medicaid RCT, Herd-Moynihan
+- **Status**: Ready for immediate Phase 2 launch upon user distribution path decision (Path A / A+37 / B)
+
+**2. mfg-farm: Post-Test-Print Scaling Strategy** ✅
+- PASS pathway: Volume ramp (1→100+ units), four-gate validation, QC SOP, supplier negotiation tiers, Prusament/eSUN material specs
+- FAIL pathway: Failure type taxonomy, root cause analysis, PETG switch strategy (no design iteration for Type A cracking)
+- Capital analysis: Injection molding break-even at 1,000–13,050 units (Year 2–3)
+- **Status**: Ready for execution immediately after user test-print evaluation (May 19–31)
+
+**3. Seedwarden: Track A Resolution Protocol** ✅
+- Both blockers (tag corrections + Etsy verification) scoped as 45 min user action + 1–5 business day Etsy processing
+- **Critical finding**: Etsy now requires Persona biometric ID verification (live selfie + government ID). Must submit TODAY (May 15) for best-case May 16 clearance.
+- Gumroad fallback documented (15-min setup, no pre-launch ID verification) in case Etsy takes >5 business days
+- Track A + Track B parallelization plan: Gates 1–2 May 15–18, Gate 3 May 27–28, then May 29 go/no-go check
+- **Status**: Ready for execution. Action required: User initiates Etsy verification today.
+
+### Project Status Summary
+
+| Project | Status | Next Action | Timeline |
+|---------|--------|-------------|----------|
+| **stockbot** | May 16 checkpoint protocol READY | May 16 19:30 UTC: re-run Jetson assessment; 20:00 UTC: checkpoint executes (automatic) | May 16 |
+| **resistance-research** | Phase 1 COMPLETE; Phase 2 D57/59 frameworks ready | **USER DECISION**: Pick Path A / A+37 / B → Phase 2 launches May 20 | May 15+ |
+| **mfg-farm** | Post-print strategy ready | User executes test print (May 19–31) → scaling strategy applies post-evaluation | May 19–31 |
+| **seedwarden** | Track B gates + Track A resolution ready | **USER ACTION**: Submit Etsy verification today; execute Track B gates May 15–28 | May 15–30 |
+| **cybersecurity-hardening** | Phase 2 complete | Awaiting user approval for Phase 1 Tier 1 launch | June 1+ |
+
+### Needs Your Input (Priority Order)
+
+1. **TODAY (May 15)** (CRITICAL): **Seedwarden Track A**: Submit Etsy verification application now. See `TRACK_A_RESOLUTION_PROTOCOL.md` Section 2 for exact steps (Persona biometric ID required). Best-case clearance May 16; worst-case May 22 if submitted today. If delayed to May 19, worst-case compresses to May 26 with no buffer.
+
+2. **May 15 — DECISION POINT** (HIGH PRIORITY): **Choose Phase 1 distribution path** for resistance-research:
+   - **Path A** (Immediate, 35 domains, max speed): Batch 1 (Goodman, Weiser, Chenoweth, Sunstein, Wiley) → Wave 2 (12 civil rights orgs) → Wave 3 (state AGs)
+   - **Path A+37** (Dual-track, add elections): Phase 1 distribution (Path A) + Domain 37 research parallel (13–16 hrs May 20–June 15)
+   - **Path B** (Staged, feedback loop): Soft engagement May 20–June 10 → feedback conversations May 5–15 → refined Phase 2 research
+   - Phase 2 research (Domains 57/59 frameworks ready) launches immediately if Path A / A+37. If Path B, Domains 57/59 launch post-feedback June 15.
+
+3. **May 16 20:00 UTC** (AUTOMATIC): Checkpoint executes. Jetson infrastructure verified healthy. Script logs exit code. Review `MAY_16_CHECKPOINT_PROTOCOL.md` for outcome-specific actions (Lever A trigger decisions).
+
+4. **May 19–23** (Optional, high-impact): Send Domain 56 summary to Partnership for Public Service + AFGE (one-paragraph email). This positions their June H.R. 492 advocacy around democratic infrastructure framing.
+
+5. **May 19–31**: Execute mfg-farm test print. Post-test-print scaling strategy applies immediately.
+
+6. **May 15–28**: Execute seedwarden Track B gates (3 gates, 60–90 min total, per `TRACK_B_USER_GATES.md`).
+
+### Autonomous Work Status
+
+**Exploration Queue: Items 9–15 Status**
+- Item 9 (Jetson Resilience Assessment) ✅ COMPLETE
+- Item 10 (Post-Gate-1 Architecture) — Pending May 16 checkpoint
+- Item 11 (Distribution Path Execution Guide) ✅ COMPLETE
+- Item 12 (Cybersecurity Tier 2) — Pending user Phase 1 approval
+- Item 13 (Phase 2 D57/59 Research Frameworks) ✅ COMPLETE
+- Item 14 (Post-Test-Print Scaling Strategy) ✅ COMPLETE
+- Item 15 (Track A Resolution Protocol) ✅ COMPLETE
+
+**New items added this session**: 3 (D57/59 frameworks, post-print strategy, Track A protocol)
+**Currently blocked items**: 2 (Items 10, 12)
+**Fully available work**: None until user makes distribution path decision OR May 16 checkpoint completes
+
+### New Blocks
+
+None created. All exploration work production-ready.
+
+---
+
 ## Session 1046 — May 15, 2026, 09:00–09:45 UTC (Orchestrator — Exploration Queue Infrastructure)
 
 **Status**: ✅ **TWO EXPLORATION QUEUE ITEMS COMPLETE — Jetson verified healthy for May 16 checkpoint, distribution execution guides ready for immediate Phase 1 launch.**
