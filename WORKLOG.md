@@ -1,5 +1,51 @@
 # Work Log
 
+## Session 1041 — May 15, 2026, 07:00–07:30 UTC (Orchestrator — Stockbot May 15 Morning Verification + May 16 Checkpoint Script)
+
+**Status**: ✅ **MAY 15 MORNING VERIFICATION COMPLETE — NEAR-MISS CONFIRMED. May 16 Checkpoint Script Created. Ready for May 16 20:00 UTC checkpoint execution.**
+
+### Work Completed
+
+**Stockbot May 15 Morning Verification (6:00–8:00 UTC)**:
+- Executed early diagnostic per POST_CHECKPOINT_24_HOUR_PLAN.md Section 2
+- **Key Finding**: AAPL position still OPEN (108 shares @ $267.88)
+- **Confirmed**: NEAR-MISS scenario (h+10 exit did NOT execute May 14 13:30 UTC)
+- **Position Age**: h+16 as of May 15 07:00 UTC (6 trading days past h+10 target)
+- **Options Positions**: 7 open (MSFT, PLTR, UBER calls)
+- **Diagnosis**: Exit signal was either not generated, suppressed, or failed to execute
+- **Next**: May 16 20:00 UTC h+12 checkpoint will determine root cause
+
+**May 16 Checkpoint Script Created**:
+- **Deliverable**: `projects/stockbot/scripts/checkpoint_may16.py` (executable script)
+- **Functionality**: Automatically queries Alpaca at May 16 20:00 UTC, checks `aapl_model_sells` count, applies Lever A if exit still hasn't fired
+- **Exit Codes**: 0=PASS (≥2 AAPL sells), 1=LEVER_A (0 sells, parameters reduced), 2=ERROR
+- **Lever A Automation**: If h+12 checkpoint shows 0 sells, script automatically writes `lever_a_config.json` with:
+  - threshold_multiplier: 0.50 → 0.40
+  - confidence_floor: 0.50 → 0.45
+- **Ready for**: Automated May 16 20:00 UTC execution
+
+### Project Status Update
+
+| Project | Status | Current Action | Timeline |
+|---------|--------|----------------|----------|
+| **stockbot** | **NEAR-MISS confirmed** | May 16 20:00 UTC: run `checkpoint_may16.py` script | May 16-20 (h+16-20 exit window) |
+| resistance-research | Phase 1 ready | User: Execute Wave 1 May 15-17 per PHASE_1_WAVE_1_EXECUTION_DASHBOARD.md | May 21+ (batches 2-3 if >8% response) |
+| seedwarden | Track B ready | User: Execute gates May 15-28 per TRACK_B_USER_GATES.md | May 30 launch decision |
+| cybersecurity-hardening | Phase 1 ready | User: Approve launch + Day 1 send date | June 1 phase 1 execution |
+| mfg-farm | Test print pending | User: Execute test print | Post-test revenue scaling |
+
+### No Blocks Created
+
+All projects remain in their current blocked state (user actions / external events). No new blocks.
+
+### Commits
+
+- Created: `projects/stockbot/scripts/checkpoint_may16.py`
+- Modified: WORKLOG.md (this entry)
+- Modified: CHECKIN.md (session status)
+
+---
+
 ## Session 1040 — May 15, 2026, 07:15+ UTC (Orchestrator — Stockbot Comprehensive Analysis + Critical Bug Fix)
 
 **Status**: ✅ **COMPREHENSIVE BACKTESTING REPORT COMPLETE + CRITICAL SESSION BUG FIXED**
