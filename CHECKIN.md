@@ -1,5 +1,68 @@
 # Check-in
 
+## Session 1044 — May 15, 2026, 07:46–09:30 UTC (Orchestrator — Post-Checkpoint Decision Automation + Phase 2 Research Framework)
+
+**Status**: ✅ **TWO MAJOR PREP PACKAGES COMPLETE — May 16 decision automation ready, Domain 58 research framework production-ready for May 20 start.**
+
+### Since Last Check-in (Session 1043, May 15 10:00–11:15 UTC)
+
+**Two parallel autonomous completions (10+ hrs equivalent work, spawned subagents)**:
+
+1. **stockbot: Post-Checkpoint Decision Automation Package**
+   - `POST_CHECKPOINT_DECISION_FRAMEWORK.md` (2,000 words): Day 0 / Days 1-3 / Days 4-7 actions for PASS, NEAR_MISS, FAR_MISS outcomes
+   - `LEVER_A_AUTOMATION.md` (1,000 words): Complete Lever A application checklist with code locations and monitoring table
+   - `AMZN_JPM_STAGE_READINESS.md` (1,500 words): Full session configs for AMZN/JPM with deployment gates + risk analysis for 3-ticker concurrent trading
+   - `MAY_16_DECISION_QUICK_REFERENCE.md` (2-page cheat sheet): Outcome → action table, Lever A commands, decision tree
+   - **Critical feature**: All documents executable immediately upon May 16 20:30 UTC checkpoint completion; no additional research required
+   - **Key decision**: Scenario-specific capital allocation prevents over-deployment in Lever A cases
+
+2. **resistance-research: Phase 2 Domain 58 Research Framework**
+   - `DOMAIN_58_TRIBAL_SOVEREIGNTY_OUTLINE.md` (2,200 words): Full problem statement + 7 causal pathways + cross-domain bridges (Domains 1/22/29/39/42/54/40)
+   - `DOMAIN_58_SOURCE_STAGING.md` (1,600 words): 52 sources across 9 categories + 5 SCOTUS dockets + 8 expert contacts (NARF lead)
+   - `DOMAIN_58_EXECUTION_CHECKLIST.md` (1,100 words): Phase-by-phase protocol with pre-execution gate check (*Trump v. Barbara* status) + decision tree if major SCOTUS ruling drops during execution
+   - `DOMAIN_58_DISTRIBUTION_BRIDGE.md` (1,400 words): New distribution pathways (tribal orgs, federal Indian law clinics, NCAI); timing trigger for July 15 baseline or immediate if *Trump v. Barbara* pre-June 10
+   - **Critical timing**: *Trump v. Barbara* expected late June — if issues before June 10, Domain 58 deployment accelerates from July 15 to immediate distribution
+
+### Project Status Summary
+
+| Project | Status | Next Action | Timeline |
+|---------|--------|-------------|----------|
+| **stockbot** | Post-checkpoint automation ready | May 16 20:30 UTC: execute decision framework based on checkpoint result | May 16 20:30 UTC |
+| **resistance-research** | Phase 2 Domain 58 framework complete | May 20: execute Domain 58 research using outline + checklist + sources (8-12 hours) | May 20-22 |
+| **cybersecurity-hardening** | Tier 2 strategy ready | Awaiting user approval for Phase 1 Tier 1 launch → triggers Tier 2 sequencing | June 1+ |
+| **mfg-farm** | Test print pending | User executes test print → revenue ramp + Phase 1 scaling | May 19-31 |
+| **seedwarden** | Track B execution ready | User executes gates May 15-28 → May 30 launch | May 30 |
+
+### Needs Your Input
+
+1. **May 16 20:30 UTC**: After checkpoint executes, review outcome in POST_CHECKPOINT_DECISION_FRAMEWORK.md. All next-step actions are documented per scenario. No additional prep required — just execute the framework.
+
+2. **May 20-22**: resistance-research can begin Domain 58 research using the four framework documents. All research infrastructure is pre-staged (sources, outlines, checklist). Estimated 8-12 hours to production-ready domain document.
+
+3. **mfg-farm**: Execute test print when ready. All post-test revenue and scaling documentation is production-ready in `projects/mfg-farm/`.
+
+4. **cybersecurity-hardening**: Approve Phase 1 Tier 1 launch. Tier 2 strategy is complete and waiting for Phase 1 to begin.
+
+5. **seedwarden Track B**: Execute gates May 15-28 per `TRACK_B_USER_GATES.md` (user work, no autonomous prep remaining).
+
+### Autonomous Work Status
+
+**All autonomous prep work COMPLETE for May 16-30 window**:
+- ✅ Post-checkpoint decision automation (ready for immediate execution)
+- ✅ Phase 2 Domain 58 research framework (ready for May 20 start)
+- ✅ Phase 1 distribution materials (complete, awaiting user execution)
+- ✅ Tier 2 organizational strategy (complete, awaiting Phase 1 start)
+
+**Remaining autonomous work**: None for May 16-30. All projects blocked on user action or scheduled for future start dates.
+
+### Token Usage
+
+- Session 1044 consumption: ~165K tokens (two parallel subagents, decision automation + research prep)
+- Running total: Sonnet ~32%, All-models ~62%, Reset in ~84h
+- Buffer estimate: ~40K tokens sufficient for May 16-30 operations
+
+---
+
 ## Session 1043 — May 15, 2026, 10:00–11:15 UTC (Orchestrator — Phase 2 Domain Candidates + May 16 Checkpoint Protocol)
 
 **Status**: ✅ **MAY 16 CHECKPOINT INFRASTRUCTURE COMPLETE. Phase 2 research expansion roadmap identified. All autonomous infrastructure work complete pending checkpoint execution.**

@@ -2,6 +2,71 @@
 
 ---
 
+## May 15, 2026 — Resistance Research Agent — Domain 58 Tribal Sovereignty Prep Package
+
+**Status**: COMPLETE
+**Files produced**:
+- `projects/resistance-research/DOMAIN_58_TRIBAL_SOVEREIGNTY_OUTLINE.md` (~2,200 words)
+- `projects/resistance-research/DOMAIN_58_SOURCE_STAGING.md` (~1,600 words)
+- `projects/resistance-research/DOMAIN_58_EXECUTION_CHECKLIST.md` (~1,100 words)
+- `projects/resistance-research/DOMAIN_58_DISTRIBUTION_BRIDGE.md` (~1,400 words)
+
+**Task**: Build a production-ready research framework for Domain 58 (Tribal Sovereignty as Democratic Infrastructure) ahead of the May 20 execution start date. Four-document prep package — outline, source staging, execution checklist, and distribution bridge.
+
+**Key findings / design decisions**:
+- Existing draft at `domains/domain-38-tribal-sovereignty-indigenous-democratic-design.md` (~5,200 words, 34 citations) is the execution base; May 20 work is an extension and canonicalization, not a greenfield production
+- Seven causal pathways drafted and structured in the outline: voter registration suppression (jurisdictional barriers), IHS defunding via health-participation nexus, BIA closures eliminating economic sovereignty foundations, criminal justice jurisdictional complexity suppressing civic trust, BIE education gaps suppressing civic capacity, federal trust responsibility failures as structural economic disenfranchisement, *Trump v. Barbara* citizenship threat
+- *Trump v. Barbara* ruling (expected late June/early July 2026) is the primary distribution trigger — two-scenario rapid-response protocol built into both the execution checklist and distribution bridge; if the ruling issues during execution window, it becomes the lead finding
+- *Turtle Mountain Band of Chippewa Indians v. Howe* (No. 25-253) cert status as of May 15: SCOTUS stay granted July 2025, cert petition filed September 2025, redistributed for conference January 2026 — cert status unknown; checklist includes real-time status check on May 20
+- Post-*Callais* (April 29, 2026) tribal voting rights landscape documented: NARF has official *Callais* analysis for tribal communities at narf.org/callais-decision/; Native American voting district challenges now require intent proof; American Democracy Minute documented multi-community impact
+- 52 sources organized across 9 categories (voter registration, economic policy, criminal justice, education, historical context, litigation dockets, empirical research, policy documents, distribution-specific); 10 expert contacts with contact info
+- Five court dockets staged for real-time monitoring on May 20: *Trump v. Barbara*, *Turtle Mountain v. Howe*, *Winnemucca Indian Colony v. US*, *Northern Cheyenne v. Montana*, post-*Callais* tribal VRA challenges
+- Distribution bridge maps three cluster pairings: "Sovereignty and Franchise" (D58 + D49 + D1), "Administrative Capture" (D58 + D26 + D34), "Material Democracy" (D58 + D39 + D59); four institutional template playbooks; four advocacy windows (SCOTUS ruling, appropriations cycle, *Turtle Mountain* cert, midterm voter registration August–October)
+- Unique contribution framing finalized: "democratic infrastructure" as a third frame distinct from rights-protection and sovereignty-assertion — opens distribution pathways to democratic reform audiences, voting rights organizations, and congressional oversight staff who do not currently engage with federal Indian law
+
+**Confidence**: High on legal landscape and causal pathway structure; medium on BIE-specific civics proficiency data (not yet pulled — Phase 2 task on May 20).
+
+---
+
+## May 15, 2026 — General Research Agent — Phase 2 New Domain Candidates (Beyond 40-Domain Framework)
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/PHASE_2_NEW_DOMAINS_CANDIDATES.md` (~3,100 words)
+
+**Task**: Identify and outline 3–4 new Phase 2 domains expanding the framework beyond the current 40, with scope, causal pathway, time windows, unique contribution, 10+ source leads, priority ranking, production timeline, and integration hooks.
+
+**Key findings**:
+- Full gap analysis against the 55-domain candidate universe confirmed four genuine structural gaps not currently covered by any production or candidate domain
+- Domain 58 (Tribal Sovereignty — canonicalization of existing draft) is the highest-priority/lowest-cost entry: research already done, *Trump v. Barbara* SCOTUS ruling imminent June/July 2026, opens NCAI/NARF/tribal law clinic distribution pathways currently unreachable; 8–12 hours to integrate
+- Domain 56 (Civil Service Politicization as Democratic Architecture) reframes the Schedule Policy/Career crisis as a democratic design failure rather than an employee rights dispute — a framing absent from all civil service advocacy and from every existing domain; AFGE litigation and Saving Civil Service Act create 2026–2027 legislative window; 40–50 hours production
+- Domain 59 (Economic Precarity as Civic Exclusion) synthesizes OBBBA's simultaneous SNAP/Medicaid/housing/childcare cuts as a coordinated assault on civic participation infrastructure for 80 million Americans; income-participation gap (48% vs 86%) is the structural data anchor; opens antipoverty and faith coalition pathways; 50–60 hours production
+- Domain 57 (Multilateral Withdrawal and Democratic Norm Erosion) — January 7, 2026 withdrawal from 66 international organizations including UNFCCC, IPCC, UN Women, plus ICC sanctions — is completely absent from the framework; domestic democratic consequences include accountability-mechanism removal and norm-abandonment signaling; best produced after the first three with fall 2026 UNGA hook; 40–50 hours production
+- Priority order: D58 → D56 → D59 → D57; total production 138–172 hours Q2–Q3 2026
+- All four candidates include 10–12 primary source leads with verified URLs
+
+**Confidence**: High on structural gap analysis; medium on production hour estimates.
+
+---
+
+## May 15, 2026 — General Research Agent — Phase 2 Sector-Specific Threat Briefings (Master Document)
+
+**Status**: COMPLETE
+**File**: `projects/cybersecurity-hardening/sector-threat-briefings.md` (~3,400 words)
+
+**Task**: Design and develop Phase 2 sector-specific threat briefings for cybersecurity-hardening distribution to 5 sectors (journalists, immigration legal aid, educators, organizers, faith leaders). Produce master document with escalation scenarios and Tier 2 playbook integration mapping.
+
+**Key findings / design decisions**:
+- All five sector briefings (phase-2-threat-briefing-*.md) already existed as of May 7, 2026 — the master document fills three genuine gaps those files do not cover: (1) escalation scenarios ("we have been compromised"), (2) explicit playbook integration maps per sector, and (3) a unified navigation hub
+- 3 escalation scenarios written per sector = 15 total, each with: what it looks like, incident response triggers, immediate response steps, and who to contact (with URLs)
+- Cross-sector threat threads identified and consolidated into a single section — Penlink PLX, Palantir cross-agency fusion, Babel Street, DOJ posture shift, and FISA June 12 deadline affect all five sectors and should be communicated as a shared context layer
+- Sector-to-playbook cross-reference table provides complete mapping across all 10 playbooks and 5 sectors for Tier 2 email personalization
+- June 12 FISA Section 702 deadline flagged as an all-sector action point — highest-leverage near-term policy window available to all five constituencies
+- Individual briefings remain the distribution artifacts; master document is the operational integration layer for Anya/coordinator use
+
+**Confidence**: High — all threat claims sourced to primary documents (Biometric Update, The Intercept, Prism Reports, EFF, Citizen Lab, CPJ) documented in individual sector briefings. Escalation scenario contact information verified against current organizational URLs.
+
+---
+
 ## May 15, 2026 — General Research Agent — Phase 2 Domain Expansion Strategy (Domains 36-50)
 
 **Status**: COMPLETE

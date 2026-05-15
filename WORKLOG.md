@@ -4574,3 +4574,36 @@ Logged May 14 20:00 UTC Gate 1 checkpoint results (executed 01:19 UTC May 15) to
 All documents are production-ready and can be executed immediately when revenue scaling triggers are met.
 
 ---
+
+---
+
+## Session 1044 (May 15, 2026, 07:46–09:30 UTC) — Orchestrator
+
+**Orientation**: All projects blocked on user action or scheduled for future dates. Most valuable autonomous work available: post-checkpoint decision automation for stockbot (#1 priority, May 16 checkpoint) and Phase 2 research prep for resistance-research (#2 priority, May 20 start).
+
+**Work accomplished**:
+
+### 1. stockbot: Post-Checkpoint Decision Automation Package (Agent: a658f66522b50a742)
+- **POST_CHECKPOINT_DECISION_FRAMEWORK.md** (2,000 words): Complete decision framework for PASS / NEAR_MISS partial / NEAR_MISS B2 / FAR_MISS_C2 scenarios. Day 0 / Days 1-3 / Days 4-7 actions per outcome. Capital allocation strategy: PASS ($20K AAPL + $10K AMZN + $10K JPM), NEAR_MISS (hold AMZN/JPM), FAR_MISS (diagnostic before any lever).
+- **LEVER_A_AUTOMATION.md** (1,000 words): Checklist for applying Lever A threshold changes (multiplier 0.50→0.40, confidence_floor 0.50→0.45). Code locations (trading_session.py ~line 1557). Monitoring table: Day 1/2/3/5 exit_confidence expectations. Rollback vs. escalate-to-Lever-B decision criteria.
+- **AMZN_JPM_STAGE_READINESS.md** (1,500 words): Session configs (AMZN lgbm_ho, JPM ridge_wf) with training datasets and validation specs. Pre-deployment checklist: 6 gated conditions. 3-ticker concurrent risk: combined daily VaR ≈ $32.60 (0.08% of $40K).
+- **MAY_16_DECISION_QUICK_REFERENCE.md** (2-page cheat sheet): Outcome → action table. All Lever A commands in copy-paste order. Outcome decision tree. Document index.
+- **Commit**: c767c26 "feat(stockbot): post-checkpoint decision automation package (T-37h before May 16)"
+- **Key insight**: Scenario-specific capital allocation prevents over-deployment in suppressed-exit scenarios; framework executable immediately at 20:30 UTC with zero additional research.
+
+### 2. resistance-research: Phase 2 Domain 58 Research Framework (Agent: a7a4c88bf66ab2683)
+- **DOMAIN_58_TRIBAL_SOVEREIGNTY_OUTLINE.md** (2,200 words): Problem statement + 7 causal pathways (voter registration barriers, jurisdictional power, economic disenfranchisement, education gaps, criminal justice, federal trust responsibility, healthcare on tribal lands). Cross-domain bridges: Domains 1/22/29/39/42/54/40. Unique contribution: frames tribal sovereignty as DEMOCRATIC INFRASTRUCTURE (not just rights protection).
+- **DOMAIN_58_SOURCE_STAGING.md** (1,600 words): 52 sources across 9 categories (voter registration, jurisdictional power, economic policy, criminal justice, education, historical context). 5 SCOTUS dockets with current status (Trump v. Barbara, Turtle Mountain v. Howe, Callais). 8 expert contacts (NARF priority).
+- **DOMAIN_58_EXECUTION_CHECKLIST.md** (1,100 words): Phase-by-phase protocol (legal/policy 2h, participation data 2h, causal analysis 2h, reform proposals 2h, citations/draft 2h). Pre-execution gate: check *Trump v. Barbara* and *Turtle Mountain* status. Decision tree: if major SCOTUS ruling drops during execution window, specific action sequence provided.
+- **DOMAIN_58_DISTRIBUTION_BRIDGE.md** (1,400 words): New distribution pathways (NCAI, NARF, tribal newspapers, Native vote organizations, federal Indian law clinics). Timing: July 15 baseline OR immediate if *Trump v. Barbara* issues before June 10. Wave sequence: pre-contact Days 28-35, Wave 1 tribal orgs Week 5, Wave 2 broader coalition Week 6-7.
+- **Key timing alert**: *Trump v. Barbara* expected late June. If issues before June 10, Domain 58 deployment accelerates from July 15 to immediate (2-scenario rapid-response protocol pre-built).
+- **Key insight**: Domain 58 opens distribution pathways entirely outside Phase 1 reach; it is constituency expansion, not just another domain.
+
+### State cleanup
+- All four stockbot documents committed to projects/stockbot/ (commit c767c26)
+- All four resistance-research documents created and committed to projects/resistance-research/
+- No blockers encountered; all work production-ready for execution
+- Submodule changes staged and ready for master commit
+
+**Next steps**: Commit all changes to master, prepare for May 16 checkpoint, validate May 20 Domain 58 research execution.
+
