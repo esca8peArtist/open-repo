@@ -1,5 +1,53 @@
 # Check-in
 
+## Session 1060 — May 15, 2026, 13:15–13:25 UTC (Orchestrator — Checkpoint Standby + Confirmation)
+
+**Status**: ✅ **ALL AUTONOMOUS PRE-WORK COMPLETE — Standing by for May 16 20:00 UTC checkpoint (T-31 hours).**
+
+### Since Last Check-in (Session 1059)
+
+**Work completed** (10 minutes):
+1. Confirmed all autonomous pre-work complete (orientation already done in Session 1059)
+2. Verified checkpoint readiness: execution runbook ready, decision framework complete, all 4 outcome paths documented
+3. Confirmed no new autonomous work available (all projects blocked on external events or user decisions)
+4. Updated WORKLOG.md with Session 1060 status
+5. Standing by as expected per prior sessions' assessment
+
+### Status Summary
+
+| Project | Status | Blocker | Timeline |
+|---------|--------|---------|----------|
+| **stockbot** | Checkpoint ready | Execution at May 16 20:00 UTC | May 16 20:00 UTC → outcome classification → post-checkpoint actions |
+| **resistance-research** | Phase 1 ready | **USER PATH DECISION (Path A/A+37/B)** | **NOW** → Wave 1 May 15-17 execution |
+| **seedwarden Track B** | User gates ready | Awaiting user execution | May 15-28 (gates) → May 30 launch |
+| **seedwarden Track A** | Blockers pending | Tag corrections + Etsy verification | May 20 decision |
+| **cybersecurity-hardening** | Production-ready | **USER APPROVAL (Tier 1 launch + Day 1 send)** | May 20 decision |
+| **mfg-farm** | Pre-print complete | Awaiting test execution | May 19-31 window |
+
+### May 16 Checkpoint Execution (T-31 hours)
+
+- **Pre-checkpoint checklist**: `projects/stockbot/MAY_16_CHECKPOINT_VALIDATION_CHECKLIST.md`
+- **Execution runbook**: `projects/stockbot/MAY_16_CHECKPOINT_EXECUTION_RUNBOOK.md` (1,050 lines)
+- **Decision framework**: `projects/stockbot/POST_CHECKPOINT_24_HOUR_PLAN.md` (all 4 scenarios)
+- **Pre-confirmed outcome**: NEAR_MISS (AAPL h+10 exit did not trigger May 14; position still open)
+- **Timeline**: May 16 19:00 UTC validation → 20:00 UTC execution → 20:05–21:30 UTC outcome actions
+
+### Exploration Queue Status
+
+- **Items 1-54**: All staged and ready
+- **Item 52**: Checkpoint execution support (ready May 16)
+- **Item 53**: Phase 2 roadmap (queued for post-Phase-1-launch)
+- **Item 54**: Analytics staging (queued for May 29-30)
+- **Items 55-56**: Wave 1 runbook & countdown checklist (queued for May 15-20 decision/execution)
+
+### Token Budget
+
+Current: 26.8% Sonnet (2,391,233 tokens), 65.9% all-models  
+Reset in 84 hours (May 17 00:00 UTC)  
+Status: Healthy, no action required
+
+---
+
 ## Session 1059 — May 15, 2026, 12:00–12:15 UTC (Orchestrator — Orientation + State Confirmation)
 
 **Status**: ✅ **ALL AUTONOMOUS PRE-WORK COMPLETE — Standing by for May 16 20:00 UTC checkpoint (T-32 hours). No new autonomous work identified.**
