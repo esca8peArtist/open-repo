@@ -2,6 +2,28 @@
 
 ---
 
+## May 15, 2026 — General Research Agent — Phase 2 Domain 39: Healthcare Access as Democratic Infrastructure
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/domain-39-healthcare-access-democratic-infrastructure.md`
+
+**Task**: Full research and production of Domain 39 per PHASE_2_DOMAINS_38_40_OUTLINES.md specification. Hard deadline: June 1, 2026 (HHS interim final rule on OBBBA work requirements).
+
+**Key findings**:
+- APSR 2025 (Cox, Epp, Shepherd) confirms 3.8pp raw voter turnout decline after rural hospital closures; 10.5M rural voter sample; timing-dependent effects largest 4-6 months pre-election. This is the strongest causal anchor in the domain.
+- CBO projection revised upward from 11.8M to 7.5M Medicaid/CHIP losses by 2034 (per Georgetown CCF August 2025 update); work requirements alone drive 5.3M of those losses.
+- NVRA compliance at Medicaid offices: 1.6% of all registrations nationally despite 30 years of mandate; AVR produces 85-90% in Oregon projections vs. 1.6% traditional — 50-fold gap.
+- Procedural disenrollment racial disparities confirmed: Black enrollees 2.19x, Hispanic enrollees 2.08x more likely than white enrollees to lose coverage procedurally (adjusted odds ratios, PMC 11148781).
+- VRA-infant mortality link: 1965 VRA produced 17.5% reduction in Black infant deaths in covered counties within 5 years (Rushovich et al., AJPH 2024) — the strongest historical evidence for political power as health intervention.
+- Black maternal mortality: 50.3 vs 14.5 per 100K live births (CDC 2023, released February 2025); ratio unchanged 2022-2023 despite overall decline.
+- Guardianship disenfranchisement: 9 states maintain blanket bans; 1.3M adults under guardianship; PAVA funding ($10M/year) facing proposed FY2026 elimination.
+- HHS June 1 rule is explicitly exempt from public notice and comment; advocacy channels shift to litigation, discretionary implementation pressure, and state-level organizing.
+- 417 rural hospitals classified vulnerable as of January 2026 (Chartis 2026); individual state allocations from Rural Health Transformation Fund amount to <$100/rural resident in some states.
+
+**Document statistics**: ~7,200 words; 47 citations across peer-reviewed, government, and institutional sources; five causal pathways documented; five-part reform architecture; coalition architecture section; evidence quality assessment with confidence levels.
+
+---
+
 ## May 14, 2026 — Research Agent — Item 44: Phase 1 Contingency Communication Strategy
 
 **Status**: COMPLETE  
