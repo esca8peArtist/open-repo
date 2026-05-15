@@ -5,7 +5,7 @@ status: ready-for-personalization
 phase: 3
 project: resistance-research
 series: distribution-templates
-domain_count: 35
+domain_count: 38
 cross_references:
   - democratic-renewal-proposal.md
   - democratic-renewal-executive-summary.md
@@ -16,13 +16,16 @@ cross_references:
   - domains/domain-27-higher-education-and-academic-freedom.md
   - domains/domain-28-war-powers-venezuela.md
   - domains/domain-29-prosecutorial-weaponization-and-doj-capture.md
+  - domain-38-ai-regulatory-capture-governance.md
+  - domain-39-healthcare-access-democratic-infrastructure.md
+  - domain-40-surveillance-capitalism-electoral-manipulation.md
   - DISTRIBUTION_GUIDE.md
 license: "Creative Commons Attribution 4.0"
 ---
 
 # Reddit Post Templates — Democratic Renewal
 
-*Eight post drafts tailored to specific subreddit communities. Each is written to feel native to that subreddit — not cross-posted marketing. Read each community's rules before posting; subreddit norms change and some require source links in specific formats. Do not post these simultaneously or in close succession — space posts by at least several days. Respond substantively to comments. Posts 6-8 cover Phase 2 domains (27-29) added in Session 509.*
+*Eleven post drafts tailored to specific subreddit communities. Each is written to feel native to that subreddit — not cross-posted marketing. Read each community's rules before posting; subreddit norms change and some require source links in specific formats. Do not post these simultaneously or in close succession — space posts by at least several days. Respond substantively to comments. Posts 6-8 cover Phase 2 domains (27-29). Posts 9-11 cover Domains 38-40 added in Session 1031.*
 
 *Personalize bracketed fields. Add direct links to the relevant documents before posting.*
 
@@ -42,7 +45,7 @@ license: "Creative Commons Attribution 4.0"
 
 Cross-posting a legal research document that I think this community will find substantive, particularly given the volume of active constitutional litigation in the last 18 months.
 
-The document is a 35-domain analysis of structural reform pathways for U.S. democratic institutions, grounded in constitutional design, comparative constitutional law, and the existing litigation record. I'm sharing it here specifically because Domains 1, 2, 6, and 7 are directly relevant to active legal questions and the document cites the controlling case law throughout.
+The document is a 38-domain analysis of structural reform pathways for U.S. democratic institutions, grounded in constitutional design, comparative constitutional law, and the existing litigation record. I'm sharing it here specifically because Domains 1, 2, 6, and 7 are directly relevant to active legal questions and the document cites the controlling case law throughout.
 
 A few things the document addresses that seem most relevant to r/law:
 
@@ -74,7 +77,7 @@ I'm not affiliated with any legal organization. This is independent research. Ha
 
 ### Draft Post
 
-I've been working on a research project for the past several months — a 35-domain proposal for democratic structural reform, grounded in movement research, comparative political science, and the evidentiary record on what has actually worked in other countries. I'm sharing it here because the 2026 midterm timeline is the central constraint, and I think this community understands why.
+I've been working on a research project for the past several months — a 38-domain proposal for democratic structural reform, grounded in movement research, comparative political science, and the evidentiary record on what has actually worked in other countries. I'm sharing it here because the 2026 midterm timeline is the central constraint, and I think this community understands why.
 
 The core argument is not that the right people need to win. It's that the architecture of American democracy has design flaws — some dating to the 18th century, some to 20th-century court decisions, some to 21st-century technological shifts — that a determined minority has learned to exploit simultaneously. Fixing the people without fixing the architecture guarantees recurrence.
 
@@ -87,7 +90,7 @@ The core argument is not that the right people need to win. It's that the archit
 
 **What the proposal covers**:
 
-28 domains: Electoral reform, institutional integrity, democratic participation, digital government, fiscal reform, judicial independence, rights protection, media and information, federalism, education, healthcare, infrastructure, housing, criminal justice, environment and climate, immigration, labor, social safety net, national security, economic concentration, data privacy, reparations and racial justice, higher education and academic freedom, war powers and military unilateralism, prosecutorial weaponization and DOJ capture.
+31 core domains: Electoral reform, institutional integrity, democratic participation, digital government, fiscal reform, judicial independence, rights protection, media and information, federalism, education, healthcare, infrastructure, housing, criminal justice, environment and climate, immigration, labor, social safety net, national security, economic concentration, data privacy, reparations and racial justice, higher education and academic freedom, war powers and military unilateralism, prosecutorial weaponization and DOJ capture, AI regulatory capture, healthcare as democratic infrastructure, and surveillance capitalism and electoral manipulation.
 
 Every reform meets three criteria: (1) it has been implemented or seriously attempted somewhere, (2) the evidence for its effectiveness is documented, and (3) there is a plausible political pathway to adoption in the U.S.
 
@@ -185,11 +188,11 @@ The key insight from the movement research (and from comparative political scien
 - Campaign finance rules correlating policy outcomes with elite donor preferences and showing no significant correlation with median voter preferences (Gilens and Page, 2014)
 - A Supreme Court with life tenure, political appointment, and no enforceable ethics code
 
-**The 28-domain proposal**
+**The 38-domain proposal**
 
-The research produced a 28-domain framework. Every reform in it has been implemented or seriously attempted somewhere, has documented evidence of effectiveness, and has a plausible political pathway. The domains:
+The research produced a 38-domain framework. Every reform in it has been implemented or seriously attempted somewhere, has documented evidence of effectiveness, and has a plausible political pathway. The core domains:
 
-Electoral reform — Institutional integrity — Democratic participation — Digital government — Fiscal reform — Judicial independence — Rights protection — Media and information — Federalism — Education — Healthcare — Infrastructure — Housing — Criminal justice — Environment and climate — Immigration — Labor — Social safety net — National security — Economic concentration — Data privacy — Reparations and racial justice — Higher education and academic freedom — War powers and military unilateralism — Prosecutorial weaponization and DOJ capture
+Electoral reform — Institutional integrity — Democratic participation — Digital government — Fiscal reform — Judicial independence — Rights protection — Media and information — Federalism — Education — Healthcare — Infrastructure — Housing — Criminal justice — Environment and climate — Immigration — Labor — Social safety net — National security — Economic concentration — Data privacy — Reparations and racial justice — Higher education and academic freedom — War powers and military unilateralism — Prosecutorial weaponization and DOJ capture — AI regulatory capture — Healthcare as democratic infrastructure — Surveillance capitalism and electoral manipulation
 
 **Five things that could be done immediately** (no constitutional amendment required):
 
@@ -209,7 +212,7 @@ Poland's PiS government spent eight years stacking courts, capturing media, and 
 
 If the House flips or narrows to a functional check, Phase 1 reforms become achievable. If it does not, the remaining 47% of Project 2025 proceeds with minimal friction, and structural changes to redistricting and judicial authority may close the electoral reversal window.
 
-Full proposal (28 domains, full evidence base): https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+Full proposal (38 domains, full evidence base): https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 Two-page executive summary: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 Litigation tracker (what courts are doing right now): https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 
@@ -229,7 +232,7 @@ Happy to answer specific questions about any domain, the evidence base, or the t
 
 ### Draft Post
 
-I've spent several months synthesizing research from approximately 160 resistance and reform movements (1917–2024) alongside comparative constitutional analysis of what has and has not worked in countries facing similar democratic challenges. The result is a 28-domain reform framework for the United States. I'm sharing it here because I think this community will engage with the comparative evidence most substantively.
+I've spent several months synthesizing research from approximately 160 resistance and reform movements (1917–2024) alongside comparative constitutional analysis of what has and has not worked in countries facing similar democratic challenges. The result is a 38-domain reform framework for the United States. I'm sharing it here because I think this community will engage with the comparative evidence most substantively.
 
 **The comparative context**
 
@@ -253,7 +256,7 @@ The meta-analysis of the movement dataset produces several findings with high co
 
 **The international comparisons in the proposal**
 
-Each of the 28 domains is grounded in comparative evidence from functioning democracies. A few examples:
+Each of the 38 domains is grounded in comparative evidence from functioning democracies. A few examples:
 
 - Ireland has used multi-member districts with STV since 1921 — evidence for proportional representation (Domain 1)
 - New Zealand adopted MMP in 1996 after a public referendum — evidence for the transition from single-member systems
@@ -317,7 +320,7 @@ Domain 27 identifies three specific legislative fixes: (1) a federal academic fr
 
 I'm genuinely interested in feedback from faculty, researchers, and administrators on what Domain 27 gets wrong or is missing. The practitioner perspective is the most valuable gap in documentation built primarily from public records.
 
-Full Domain 27 analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
+Full Domain 27 analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 38-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
 
 ---
 
@@ -373,7 +376,7 @@ Combined with the indictment theory: any operation against an indicted foreign o
 
 The Iran-focused war powers reform analysis (AUMF modernization, automatic funding cutoffs, 60-day clock enforcement) does not close the Venezuela-specific loophole. Domain 28 identifies four additional fixes: a statutory definition of "hostilities" that forecloses executive recharacterization (any operation with combat, foreign casualties, or regime change objectives); congressional standing to sue with D.C. Circuit jurisdiction; mandatory pre-notification for named operations (the OLC memo was finalized ten days before launch — there was time); and automatic Gang of Eight disclosure of any OLC memo concluding a planned operation doesn't require authorization.
 
-Full Domain 28 analysis with vote records and OLC memo analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
+Full Domain 28 analysis with vote records and OLC memo analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 38-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
 
 ---
 
@@ -391,7 +394,7 @@ Full Domain 28 analysis with vote records and OLC memo analysis: https://gist.gi
 
 ### Draft Post
 
-Sharing Domain 29 (Prosecutorial Weaponization and DOJ Capture) from a 28-domain democratic reform research project, because I think this community will find the constitutional analysis — specifically the vindictive and selective prosecution doctrine discussion — the most substantive part.
+Sharing Domain 29 (Prosecutorial Weaponization and DOJ Capture) from a 38-domain democratic reform research project, because I think this community will find the constitutional analysis — specifically the vindictive and selective prosecution doctrine discussion — the most substantive part.
 
 **The Abrego Garcia vindictive prosecution finding (M.D. Tenn., Oct. 2025)**
 
@@ -431,6 +434,6 @@ The Abrego Garcia case is the model for how the existing doctrine can produce re
 
 I'm interested in feedback from practitioners on whether the constitutional analysis here holds up and what the research is missing from a litigation strategy perspective.
 
-Full Domain 29 analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
+Full Domain 29 analysis: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | Full 38-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 | CC 4.0
 
 Interested in discussing the comparative evidence, the movement research methodology, or any specific domain in the comments.

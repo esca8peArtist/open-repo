@@ -5,7 +5,7 @@ status: ready-for-personalization
 phase: 3
 project: resistance-research
 series: distribution-templates
-domain_count: 35
+domain_count: 38
 cross_references:
   - democratic-renewal-proposal.md
   - democratic-renewal-executive-summary.md
@@ -16,13 +16,16 @@ cross_references:
   - domains/domain-27-higher-education-and-academic-freedom.md
   - domains/domain-28-war-powers-venezuela.md
   - domains/domain-29-prosecutorial-weaponization-and-doj-capture.md
+  - domain-38-ai-regulatory-capture-governance.md
+  - domain-39-healthcare-access-democratic-infrastructure.md
+  - domain-40-surveillance-capitalism-electoral-manipulation.md
   - DISTRIBUTION_GUIDE.md
 license: "Creative Commons Attribution 4.0"
 ---
 
 # Institutional Outreach Email Templates
 
-*Eleven email template sets across four categories: legal aid organizations, digital rights and civil liberties organizations, movement and community organizations, and Phase 2 domain-specific outreach (Domains 27-29). Templates 9-11 are new additions in Session 509, targeting universities and academic freedom organizations (Domain 27), foreign policy and war powers organizations (Domain 28), and civil rights and legal accountability organizations (Domain 29). Each template is ready for personalization — bracketed fields must be completed before sending. Templates are designed for individual, personalized outreach; do not send as bulk email. Specificity is the difference between an email that gets read and one that gets deleted.*
+*Fourteen email template sets across five categories: legal aid organizations, digital rights and civil liberties organizations, movement and community organizations, Phase 2 domain-specific outreach (Domains 27-29), and Phase 2 Session 1031 domain-specific outreach (Domains 38-40). Templates 9-11 cover Domains 27-29 (Session 509). Templates 12-14 are new additions for Domains 38-40 (Session 1031): AI governance and technology policy organizations (Domain 38), healthcare advocacy and democracy organizations (Domain 39), and election protection and digital rights organizations (Domain 40). Each template is ready for personalization — bracketed fields must be completed before sending. Templates are designed for individual, personalized outreach; do not send as bulk email. Specificity is the difference between an email that gets read and one that gets deleted.*
 
 *Tone across all templates: professional but warm, collegial rather than salesy, clear about what is being offered and what is being asked. These are research tools offered freely, not products being promoted.*
 
@@ -50,7 +53,7 @@ I'm reaching out because your organization's work on [specific issue area — e.
 
 I want to be clear about what this is: I'm an independent researcher, not affiliated with any organization or institution. This is movement research — an attempt to build a documented, evidence-based resource base that legal and civil society organizations can use freely. It is not a product or a pitch.
 
-The centerpiece is a 35-domain proposal for democratic structural reform, grounded in 160+ movement case studies, comparative constitutional law, and the evidentiary record on what has worked in functioning democracies. The supporting documents include several that I think are directly relevant to legal aid practice:
+The centerpiece is a 38-domain proposal for democratic structural reform, grounded in 160+ movement case studies, comparative constitutional law, and the evidentiary record on what has worked in functioning democracies. The supporting documents include several that I think are directly relevant to legal aid practice:
 
 **The Litigation Tracker** documents active federal cases challenging executive overreach in immigration enforcement, civil service dismantling, civil rights, and constitutional accountability — with case names, court, current status, next deadlines, and links to case pages. It is designed to be a working reference document for attorneys, updated as cases develop. https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0
 
@@ -93,7 +96,7 @@ Thank you for the work your organization does. I'm happy to discuss any of this 
 
 I'm reaching out about research that may be directly useful to your members' work on criminal justice reform and public defense.
 
-I've been developing a 35-domain democratic renewal research project, and Domain 14 (Criminal Justice and Policing) is one of the most extensively documented sections. It may be particularly relevant given your organization's focus on [specific issue — e.g., "sentencing reform" / "cash bail" / "public defender resource equity"].
+I've been developing a 38-domain democratic renewal research project, and Domain 14 (Criminal Justice and Policing) is one of the most extensively documented sections. It may be particularly relevant given your organization's focus on [specific issue — e.g., "sentencing reform" / "cash bail" / "public defender resource equity"].
 
 The Domain 14 analysis covers:
 
@@ -141,7 +144,7 @@ Executive summary: [link]
 
 I'm reaching out about research that directly intersects with [organization name]'s work on [specific focus area — e.g., "surveillance and privacy law" / "platform accountability" / "net neutrality and digital infrastructure"]. I think several sections of the research may be immediately useful to your team.
 
-The project is a 28-domain democratic renewal framework, independently researched and published under Creative Commons Attribution 4.0. The domains most directly relevant to your work:
+The project is a 38-domain democratic renewal framework, independently researched and published under Creative Commons Attribution 4.0. The domains most directly relevant to your work:
 
 **Domain 21 — Data Privacy and Digital Surveillance**: The most detailed section from your perspective. Covers:
 - Comprehensive federal privacy legislation design (modeled on the EU GDPR, Canada's PIPEDA, and the proposed American Data Privacy and Protection Act) with a focus on enforcement architecture independent of FTC deadlock
@@ -234,7 +237,7 @@ I'm reaching out because [organization name]'s organizing work on [specific issu
 
 I want to be clear about what this is: I'm an independent researcher, not affiliated with any organization. This is not an organizational product or a sales pitch. It is a movement resource — designed to be used, adapted, shared, and built on freely by the organizations doing the actual work.
 
-The centerpiece is a 35-domain proposal for democratic structural reform. For a grassroots organizing context, the most immediately relevant domains are probably:
+The centerpiece is a 38-domain proposal for democratic structural reform. For a grassroots organizing context, the most immediately relevant domains are probably:
 
 **Domain 1 — Electoral Reform**: Proportional representation, ranked-choice voting, independent redistricting, public campaign financing, automatic voter registration. The mid-decade redistricting crisis (Texas, North Carolina, Indiana, Missouri) is documented in detail — including the Cook Political Report estimate of 8–12 House seats potentially shifted before a single 2026 vote is cast. This section gives organizers the structural vocabulary to explain why "just vote harder" is insufficient without systemic change.
 
@@ -260,7 +263,7 @@ I would also welcome an opportunity to present these materials at a chapter meet
 
 **Two requests**:
 
-First, feedback on what is missing. The proposal was built from documentary evidence, movement research, and comparative policy analysis — but it was not built by grassroots organizers in the field. What is your organization dealing with right now that isn't reflected in these 28 domains? What would your members find missing if they read the executive summary?
+First, feedback on what is missing. The proposal was built from documentary evidence, movement research, and comparative policy analysis — but it was not built by grassroots organizers in the field. What is your organization dealing with right now that isn't reflected in these 38 domains? What would your members find missing if they read the executive summary?
 
 Second, if these materials seem useful, please share them with your chapter networks and peer organizations. All documents are CC 4.0 — share, adapt, translate, excerpt, modify freely with attribution ("Democratic Renewal Project, resistance-research.org, April 2026").
 
@@ -289,7 +292,7 @@ Thank you for the work your organization does.
 
 I'm reaching out because [faith community name]'s work on [specific social issue — e.g., "immigration ministry" / "affordable housing advocacy" / "anti-poverty work"] intersects with a research project I believe your congregation may find useful for its civic education and community engagement.
 
-I'm an independent researcher, not affiliated with any political party or organization. The project is a 28-domain proposal for democratic structural reform, grounded in comparative evidence from functioning democracies and the research record on what has worked historically. It is not a partisan document — it is a structural analysis.
+I'm an independent researcher, not affiliated with any political party or organization. The project is a 38-domain proposal for democratic structural reform, grounded in comparative evidence from functioning democracies and the research record on what has worked historically. It is not a partisan document — it is a structural analysis.
 
 For faith communities engaged in social ministry, the most relevant domains are probably:
 
@@ -431,7 +434,7 @@ First, would your team review the Domain 27 section and provide feedback on what
 Second, I would welcome introduction to colleagues at peer organizations or in your network who are working on accreditation, visa reform, or the Harvard litigation coalition.
 
 Full Domain 27 analysis: [link to domain-27-higher-education-and-academic-freedom.md]
-Full 28-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+Full 38-domain proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
 Executive summary: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
 All materials CC 4.0 — cite, adapt, excerpt freely with attribution.
 
@@ -508,7 +511,7 @@ The Brennan Center's analysis and Just Security's OLC memo work are cited throug
 I would welcome feedback on what the analysis gets wrong from a national security law perspective, and introductions to colleagues working on war powers reform in the next Congress.
 
 Full Domain 28 analysis: [link to domain-28-war-powers-venezuela.md]
-Full 28-domain proposal: [link]
+Full 38-domain proposal: [link]
 Executive summary: [link]
 CC 4.0 — cite, adapt freely.
 
@@ -533,7 +536,7 @@ CC 4.0 — cite, adapt freely.
 
 [Name],
 
-I'm reaching out about research that directly intersects with [organization name]'s work on [specific focus — e.g., "the SPLC's legal defense" / "Protect Democracy's retaliatory action tracking" / "prosecutorial accountability litigation"]. Domain 29 of a 28-domain democratic renewal framework focuses on prosecutorial weaponization and DOJ capture, and I think the structural analysis and reform proposals may be immediately useful to your work.
+I'm reaching out about research that directly intersects with [organization name]'s work on [specific focus — e.g., "the SPLC's legal defense" / "Protect Democracy's retaliatory action tracking" / "prosecutorial accountability litigation"]. Domain 29 of a 38-domain democratic renewal framework focuses on prosecutorial weaponization and DOJ capture, and I think the structural analysis and reform proposals may be immediately useful to your work.
 
 The domain covers three interconnected areas:
 
@@ -552,7 +555,7 @@ The ABA's opposition to the state bar rule, the Fair and Just Prosecution networ
 Two specific requests: feedback on what the prosecutorial accountability section gets wrong from a litigation perspective; and if the SPLC indictment defense is in your docket, I'd welcome the opportunity to provide any research support.
 
 Full Domain 29 analysis: [link to domain-29-prosecutorial-weaponization-and-doj-capture.md]
-Full 28-domain proposal: [link]
+Full 38-domain proposal: [link]
 Protect Democracy retaliatory action tracker: [https://protectdemocracy.org/work/retaliatory-action-tracker/]
 CC 4.0 — cite, adapt, excerpt freely.
 
@@ -560,3 +563,145 @@ CC 4.0 — cite, adapt, excerpt freely.
 [Contact information]
 
 **Track what resonates.** Note which organizations respond, what questions they ask, and what feedback they provide. That information should improve subsequent outreach and, more importantly, improve the documents themselves.
+
+---
+
+## Category 5: Phase 2 Session 1031 Domain-Specific Outreach (Domains 38-40)
+
+---
+
+### Template 12: AI Governance and Technology Policy Organizations (Domain 38)
+
+**Target organizations**: AI Now Institute, Algorithmic Justice League, Electronic Frontier Foundation (EFF), Center for Democracy and Technology (CDT), Brennan Center for Justice (Democracy Program), Harvard Berkman Klein Center, Georgetown Center on Privacy and Technology, Data & Society Research Institute, Senate Commerce Committee staff (AI subcommittee), House Science Committee staff, Partnership on AI (academic/civil society members only — exclude industry members from this outreach)
+
+**Subject line**: Democratic Renewal Research — Domain 38: AI Regulatory Capture Taxonomy, Colorado AI Act Sequence, EU AI Act Arbitrage Analysis
+
+---
+
+**To**: [Name], [Title]
+**Organization**: [Organization Name]
+**Subject**: Democratic Renewal Research — AI Regulatory Capture: Structural Analysis and Reform Proposals (May 2026)
+
+---
+
+[Name],
+
+I'm reaching out because your organization's work on [specific focus — e.g., "algorithmic accountability" / "AI governance" / "technology policy and democracy"] intersects with Domain 38 of a 38-domain democratic renewal research project. The domain was completed May 15, 2026 and focuses on regulatory capture in AI governance — specifically how the industry being governed is writing the rules that govern it.
+
+The leading finding: On April 27, 2026, a federal judge suspended enforcement of Colorado's AI Act after xAI sued to strike it down and the DOJ intervened on xAI's behalf under the December 2025 AI preemption executive order. By May 9, Colorado's legislature had passed a replacement bill narrowing the original law. This is the clearest available demonstration of what regulatory capture looks like when it operates at the structural level — not through lobbying or regulatory delay, but through the direct use of executive branch litigation authority to eliminate state accountability for a company whose principal holds informal authority inside that executive branch.
+
+The domain covers four areas:
+
+**The statutory vacuum and its consequences**: No federal AI statute exists. EO 14110 was revoked January 20, 2025. The replacement framework ("minimally burdensome approach") is an industry lobbying position elevated to executive policy. Post-Loper, even agency-level AI guidance lacks the legal durability it had under Chevron. The domain analyzes exactly what doesn't exist and why the gap is not an oversight but an architecture.
+
+**Birhane et al. "Big AI's Regulatory Capture" (May 2026, arxiv 2605.06806)**: The first systematic academic taxonomy of AI regulatory capture mechanisms — 27 techniques across five categories, revolving door in 24% of high-profile incidents. The paper's conclusion: "an emergency." The domain synthesizes the taxonomy against the U.S. governance record.
+
+**EU AI Act Article 50 regulatory arbitrage**: Enforcement begins August 2, 2026. US companies will comply with synthetic content disclosure requirements in EU markets while deploying unlabeled deepfakes in US elections and benefits decisions. The domain analyzes this as the clearest advocacy frame available: same companies, same content, two legal environments.
+
+**Five reform proposals**: AI Accountability Act (statutory framework); algorithmic impact assessment mandate (modeled on Canada's AIA); mandatory human review of AI adverse government decisions; capture-resistant standards process reform; AI competition enforcement at FTC/DOJ.
+
+The August 2, 2026 enforcement date creates a concrete window for maximum-impact distribution. Organizations working on EU AI Act compliance or US AI governance advocacy may find the comparative analysis and reform proposals immediately useful.
+
+Two requests: feedback on what the domain gets wrong from your organization's perspective; and whether Domain 38 would be useful material for any current project, publication, or advocacy work.
+
+Full Domain 38 analysis: `domain-38-ai-regulatory-capture-governance.md` [link when published]
+Full 38-domain proposal: [link]
+Birhane et al. paper: https://arxiv.org/abs/2605.06806
+CC 4.0 — cite, adapt, excerpt freely.
+
+[Your name]
+[Contact information]
+
+---
+
+### Template 13: Healthcare Advocacy and Democracy Organizations (Domain 39)
+
+**Target organizations**: Center on Budget and Policy Priorities (CBPP), Georgetown Center for Children and Families (CCF), KFF Health Policy Research, National Health Law Program (NHeLP), Brennan Center for Justice, Protect Democracy, Institute for Responsive Government (NVRA enforcement), National Disability Rights Network (NDRN), Disability Rights Advocates, Disability Belongs, State AG offices with active Medicaid litigation, rural hospital associations in vulnerable-closure states
+
+**Subject line**: Democratic Renewal Research — Domain 39: APSR Hospital Closure Study, NVRA-Medicaid Nexus, June 1 HHS Rule Deadline
+
+**TIMING CRITICAL: The June 1, 2026 HHS interim final rule deadline makes this the highest-urgency distribution of the three new domains. Send before June 1.**
+
+---
+
+**To**: [Name], [Title]
+**Organization**: [Organization Name]
+**Subject**: Democratic Renewal Research — Healthcare Access as Democratic Infrastructure: The APSR Study, OBBBA Impact, and the June 1 HHS Deadline
+
+---
+
+[Name],
+
+I'm reaching out because your organization's work on [specific focus — e.g., "Medicaid policy" / "NVRA enforcement" / "rural hospital access" / "disability voter rights"] intersects with Domain 39 of a 38-domain democratic renewal research project. The domain was completed May 15, 2026 and is explicitly designed to equip the current advocacy fight with a democratic participation argument that has been largely absent from healthcare advocacy to date.
+
+The domain's strategic premise: the political coalition for healthcare defense expands substantially when healthcare access is treated as a voting rights and democratic infrastructure issue alongside a social welfare issue. Voter protection organizations, election law practitioners, and democracy advocacy groups all have standing to engage healthcare fights they currently treat as someone else's portfolio.
+
+The empirical architecture is built on five documented causal pathways:
+
+**Pathway 1 (APSR August 2025)**: Hospital closures reduce voter turnout 3.8 percentage points in affected communities (10.5M rural voter panel study; individual-level fixed effects; Cox, Epp, and Shepherd). The effect is largest 4-6 months before an election. 417 rural hospitals currently vulnerable to closure.
+
+**Pathway 2 (NVRA-Medicaid nexus)**: Medicaid enrollment offices are mandatory voter registration sites under 52 U.S.C. § 20506. Between 2018-2020, they produced only 1.6% of total voter registration forms nationally. Dismantling Medicaid enrollment infrastructure dismantles voter registration infrastructure in the same communities.
+
+**Pathway 3 (Oregon experiment RCT)**: Medicaid access increases voter turnout 7 percentage points (the only randomized controlled trial of Medicaid expansion's democratic effects). This is causal, not correlational.
+
+**Pathway 4 (medical debt)**: 41% of American adults carry medical debt, concentrated in communities with lowest political participation. Research documents that financial stress reduces civic engagement.
+
+**Pathway 5 (disability voter access)**: PAVA — $130M in disability voter assistance since 2003 — faces proposed elimination. Disabled Americans vote at 10-11.7 ppts below non-disabled Americans. PAVA is the primary infrastructure for closing that gap.
+
+**The hard deadline**: HHS must issue an interim final rule on OBBBA work requirement implementation by June 1, 2026. The OBBBA text exempts this rule from APA notice-and-comment. Organizations must act through litigation, legislative pressure, and advocacy campaigns before January 1, 2027, when work requirements take effect.
+
+Domain 39 documents five reform pathways: NVRA enforcement, OBBBA judicial challenge (five litigation theories), work requirement suspension, Rural Hospital Stabilization Fund, and PAVA restoration. The domain is designed to be directly usable as advocacy and litigation support material.
+
+Specific request: feedback on which of the five litigation theories is most viable from your organization's litigation perspective; and whether the democratic participation framing is useful or counterproductive for your advocacy context.
+
+Full Domain 39 analysis: `domain-39-healthcare-access-democratic-infrastructure.md` [link when published]
+Full 38-domain proposal: [link]
+CC 4.0 — cite, adapt, excerpt freely.
+
+[Your name]
+[Contact information]
+
+---
+
+### Template 14: Election Protection and Digital Rights Organizations (Domain 40)
+
+**Target organizations**: Brennan Center for Justice (Democracy Program), Protect Democracy, Democracy Docket, Electronic Frontier Foundation (EFF), Electronic Privacy Information Center (EPIC), Center for Democracy and Technology (CDT), Campaign Legal Center, OpenSecrets, Access Now, News Literacy Project, MediaWise, swing-state voter protection networks (Michigan, Pennsylvania, Wisconsin, Arizona, Georgia, Nevada)
+
+**Subject line**: Democratic Renewal Research — Domain 40: PNAS Suppression Ad Study, NRSC Deepfake, FEC Quorum Failure, EU Comparison
+
+---
+
+**To**: [Name], [Title]
+**Organization**: [Organization Name]
+**Subject**: Democratic Renewal Research — Surveillance Capitalism and Electoral Manipulation: The 2026 Deepfake and Data Broker Crisis (Domain 40)
+
+---
+
+[Name],
+
+I'm reaching out because your organization's work on [specific focus — e.g., "election protection" / "digital rights" / "campaign finance transparency" / "voter suppression documentation"] intersects with Domain 40 of a 38-domain democratic renewal research project. The domain was completed May 15, 2026 and documents the commercial surveillance and AI generation infrastructure that constitutes the electoral manipulation architecture of the 2026 midterm cycle.
+
+The leading finding: 2026 is the year AI-generated synthetic content became standard campaign infrastructure. The NRSC's photorealistic deepfake of Texas Senate candidate James Talarico — released March 11, 2026 — was the first deployment of synthetic candidate video by a national party committee. Multiple additional deepfake cases followed within weeks. None produced meaningful legal consequence. The precedent is set.
+
+The domain covers four components:
+
+**The PNAS February 2026 study**: Targeted digital voter suppression ads — AI-optimized content designed to demobilize — reduced turnout 1.86% among exposed individuals. Non-white voters in minority-majority battleground counties received the ads at 4x the rate of white voters in non-battleground counties and experienced 14.2% lower turnout than comparable non-exposed voters. This is a peer-reviewed causal estimate of the democratic harm. The study methodology (field experiment with verified vote records) makes it the strongest evidence available.
+
+**The commercial attack infrastructure**: Data broker aggregation pipeline (Thomson Reuters CLEAR, LexisNexis Accurint); AI generation at sub-$100 cost per video; geofencing delivery to churches, community centers, and immigrant neighborhood commercial districts; targeting specificity that identifies low-propensity persuadable voters within census tracts. The domain documents each component with primary sources.
+
+**The regulatory vacuum**: FEC quorum failure since at least May 2025 — structurally prevents AI deepfake guidance; December 2025 executive order preempting 28-state disclosure patchwork; no federal deepfake disclosure law; FCC robocall rules do not cover digital advertising.
+
+**The EU contrast**: EU Regulation 2024/900 bans political microtargeting using sensitive personal data. DSA prohibits sensitive-data personalized political advertising. EU AI Act Article 50 mandates synthetic content disclosure (enforcement August 2, 2026). Meta exited the EU political advertising market entirely. US companies comply with EU law while deploying unregulated infrastructure in US elections.
+
+**Five reform proposals**: Federal deepfake disclosure mandate; data broker political use restrictions; FEC quorum reform; campaign AI spending disclosure; state voter protection floor.
+
+The August 2, 2026 EU AI Act enforcement date is the most effective near-term advocacy hook: the same companies that will comply internationally are currently deploying unregulated manipulation infrastructure domestically. Any press coverage of EU enforcement can be paired with the US gap.
+
+Specific requests: feedback on which reform proposal is most actionable from your organization's litigation or legislative perspective; and whether the domain's documentation of the PNAS study and NRSC deepfake sequence is complete from an election protection standpoint.
+
+Full Domain 40 analysis: `domain-40-surveillance-capitalism-electoral-manipulation.md` [link when published]
+Full 38-domain proposal: [link]
+CC 4.0 — cite, adapt, excerpt freely.
+
+[Your name]
+[Contact information]
