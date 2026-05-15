@@ -1,5 +1,25 @@
 # Work Log
 
+## Session 1046 — May 15, 2026 (Research Agent — Exploration Queue Items: mfg-farm + seedwarden)
+
+**Status**: COMPLETE — both exploration items delivered.
+
+### Work Completed
+
+**mfg-farm: Post-Test-Print Production Scaling Strategy** ✅:
+- **Deliverable**: `projects/mfg-farm/POST_TEST_PRINT_SCALING_STRATEGY.md` (~2,700 words)
+- **Scope**: Full PASS and FAIL decision frameworks, volume ramp roadmap (1→100+ units), QC SOP, supplier negotiation checklist, fulfillment setup, FDM material comparison (5 materials with tolerance specs), injection molding break-even analysis, go/no-go decision tree with day-by-day timeline
+- **Key findings**: FDM_TOLERANCE 1.4mm is appropriate; PETG switch resolves Type A (cracking) failures without redesign; injection molding break-even at 1,000–13,050 units (Year 2–3 decision); Prusament ±0.02mm and eSUN PLA+ ±0.03mm are top filament choices for snap-fit precision
+- **Sources**: Protolabs Network snap-fit guide, Formlabs cost comparison 2025, be-cu.com break-even analysis, manufacturer datasheets
+
+**seedwarden: Track A Blocker Resolution Protocol** ✅:
+- **Deliverable**: `projects/seedwarden/TRACK_A_RESOLUTION_PROTOCOL.md` (~1,900 words)
+- **Scope**: Current state assessment of both blockers, exact tag correction steps (copy-paste ready), Etsy 2025–2026 verification requirements (Persona biometric ID + Etsy Payments), day-by-day unblocking sequence, Track A + Track B parallelization plan, interim Gumroad fallback, success/failure criteria
+- **Key finding**: Both blockers resolvable in 45 minutes of user action + 1–5 business day Etsy wait. If verification submitted today (May 15), Track A is live before May 29 go/no-go. Critical action: initiate verification today.
+- **Sources**: Etsy Help Center 2025–2026, Persona verification documentation, Etsy Payments Policy February 2026
+
+---
+
 ## Session 1046 — May 15, 2026, 09:00–09:45 UTC (Orchestrator — Exploration Queue Items 9 + 11)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS COMPLETE — Pre-checkpoint infrastructure verified, distribution execution guides ready for immediate user decision.**
