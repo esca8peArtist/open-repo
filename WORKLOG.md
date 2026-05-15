@@ -117,6 +117,62 @@ All three items committed to their respective project directories. Ready for imm
 | **mfg-farm** | Awaiting | User test print execution | User action |
 | **Exploration Queue** | Exhausted | 0 active items (55-57 complete) | All work done |
 
+---
+
+## Session 1070 — May 15, 2026, 14:15–15:30 UTC (Orchestrator — Parallel exploration queue research)
+
+**Status**: ✅ **TWO CRITICAL ANALYSIS DOCUMENTS COMPLETED — Pre-checkpoint & pre-Phase-2 decision frameworks ready**
+
+**Session Summary** (75 minutes):
+
+### 1. Orientation & Assessment
+- **Verified**: ORCHESTRATOR_STATE.md shows all Exploration Queue items 1-48 complete
+- **Verified**: Three new items added in Session 1050 (line 1253 of PROJECTS.md) with no blockers
+- **Decision**: Spawned two parallel subagents to work on forward-looking research while waiting for May 16 checkpoint and user Phase 1 path decision
+
+### 2. Parallel Exploration Queue Work (Items 1-2 of Session 1050 queue)
+
+**Exploration Item 1 — stockbot: Options Strategy Performance Decomposition & Gate 2 Viability Analysis** ✅ **COMPLETE**
+- **Deliverable**: `projects/stockbot/OPTIONS_VIABILITY_ANALYSIS_GATE2.md` (28 KB, comprehensive)
+- **Key findings**:
+  - 70% covered call win rate is mathematically structural (delta-as-probability), confirmed across all regimes
+  - 12% annualized yield is conservative — actual range 14-15% at current AAPL pricing ($298)
+  - Sharpe improvement from 1.491 to ~1.7-1.9 with covered call overlay (variance reduction from theta income)
+  - IV surface data already available in `src/data/options_provider.py` — no premium feed needed
+  - Total implementation cost: $0 in data, 5-8 hours in Gap 4 safety guardrail + DB schema wiring
+- **Decision framework**: PASS/NEAR_MISS/FAR_MISS scenarios with specific actions per outcome
+  - PASS: Equity expansion wins on capital efficiency (37% ROE vs 14-15% options-only)
+  - NEAR_MISS: Gap 4 guardrail defensively, full options writes deferred
+  - FAR_MISS: All options deferred; equity debugging focus only
+- **Order of operations if PASS**: (1) Gap 4 guardrail (5-8 hrs), (2) Equity 10-ticker expansion, (3) Gap 1 DB schema, (4) First covered call write (estimated June 5-10)
+- **Business value**: Checkpoint outcome → immediate Gate 2 strategy execution; no research lag
+- **Ready for**: May 16 post-checkpoint decision-making (user or orchestrator can execute immediately upon PASS outcome)
+
+**Exploration Item 2 — resistance-research: Phase 2 Candidate Domain Prioritization Matrix** ✅ **COMPLETE**
+- **Deliverable**: `projects/resistance-research/PHASE_2_DOMAIN_PRIORITIZATION_MATRIX.md` (8 KB, production-ready)
+- **Key findings**:
+  - **Rank 1 (immediate)**: Domain 58 — Tribal Sovereignty (CRITICAL: Trump v. Barbara SCOTUS ruling late June/early July, must distribute before ruling)
+  - **Rank 2 (concurrent)**: Domain 56 — Civil Service Politicization (already complete, June 1-30 litigation window, zero production time)
+  - **Rank 3 (late summer)**: Domain 59 — Economic Precarity (80M Americans affected, broadest constituency, September distribution)
+  - **Rank 4 (fall)**: Domain 57 — Multilateral Withdrawal (most intellectually novel, UNGA 81 anchor, August 10 deadline, 40-50 hrs)
+- **Synergy assessment**: Domain 56 strongest for Wave 1 reinforcement (already complete, June 1 communication extends Phase 1 conversation)
+- **Integrated recommendation**: Domain 56 today (distribute immediately), Domain 58 May 20-June 10 (before SCOTUS ruling), Domain 57 June 10-July 20, Domain 59 July 15-Aug 31
+- **Hard deadlines identified**: Domain 56 (June 1-30 litigation), Domain 58 (late June/early July SCOTUS), Domain 57 (Aug 10 UNGA), Domain 59 (Sept midterm)
+- **Business value**: User can select Phase 2 sequence immediately after Phase 1 path decision; informs resource planning
+- **Ready for**: May 15-17 post-Wave-1 planning (user can decide Phase 2 sequencing at same time as Phase 1 path decision)
+
+### 3. Deliverables Committed
+- `projects/stockbot/OPTIONS_VIABILITY_ANALYSIS_GATE2.md` — 28 KB, production-ready, ready for May 16 post-checkpoint use
+- `projects/resistance-research/PHASE_2_DOMAIN_PRIORITIZATION_MATRIX.md` — 8 KB, production-ready, ready for May 15-17 user decision input
+
+### 4. Next Steps (automatically triggered by external events)
+- **May 16 20:00 UTC**: Checkpoint execution → consult `OPTIONS_VIABILITY_ANALYSIS_GATE2.md` for outcome routing and immediate actions
+- **May 15-17**: User selects Phase 1 distribution path → consult `PHASE_2_DOMAIN_PRIORITIZATION_MATRIX.md` for sequencing recommendation
+- **Post-Wave-1 (May 17-20)**: If checkpoint passes, begin stockbot Gate 2 prep (Gap 4 guardrail, equity expansion research)
+- **May 20**: Begin Domain 58 production (if chosen) with 21-day window to June 10 SCOTUS deadline
+
+**Status**: All autonomous work for pre-checkpoint & pre-Phase-2 decisions complete. Awaiting external events (May 16 checkpoint, May 15 user decision) to proceed.
+
 ### 3. Waiting State
 - **Exploration Queue**: All items complete (Items 1-57, 6.5+ hours of work completed)
 - **Available work**: ZERO (all projects blocked on external events or user decisions)
