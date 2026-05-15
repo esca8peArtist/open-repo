@@ -1,5 +1,83 @@
 # Check-in
 
+## Session 1031 — May 15, 2026, 02:30–05:00 UTC (Phase 2 Research Production Complete)
+
+**Status**: ✅ **PHASE 2 DOMAINS 38-40 RESEARCH PRODUCTION COMPLETE. ALL THREE DOMAINS (20,800 WORDS, 142 CITATIONS) COMMITTED AND READY FOR DISTRIBUTION STAGING. CHECKPOINT AT 20:00 UTC TODAY — FULLY PREPARED FOR USER EXECUTION.**
+
+### Since Last Check-in (Session 1029, May 15 02:04 UTC)
+
+**Major Accomplishments**:
+
+**1. Phase 2 Research Production — All Three Domains Complete** ✅
+
+- **Domain 39: Healthcare Access as Democratic Infrastructure** (7,200 words, 47 citations)
+  - File: `projects/resistance-research/domain-39-healthcare-access-democratic-infrastructure.md`
+  - Five causal pathways documented with peer-reviewed evidence (APSR, CDC, NIH sources)
+  - Rural hospital closures (3.8pp turnout decline), medical debt ($220B), Medicaid/NVRA gaps, maternal mortality (3.5x disparities), disability disenfranchisement
+  - **Critical finding**: June 1 HHS deadline is NOT a public comment period (rule exempt from APA). Advocacy must flow through litigation, congressional oversight, state-level organizing
+  - Movement leverage: healthcare + disability + reproductive rights + voter access coalitions
+  - Distribution target: May 25-31, finalized June 1
+
+- **Domain 38: AI Regulatory Capture in Governance** (6,800 words, 48 citations)
+  - File: `projects/resistance-research/domain-38-ai-regulatory-capture-governance.md`
+  - Live case study: xAI v Colorado (April 9 filing, April 24 DOJ intervention, April 27 suspension → Colorado legislature passed narrower SB 26-189 May 9)
+  - Four capture mechanisms: statutory vacuum, revolving-door/ownership-stake, standards body capture (NIST + Agentic AI Foundation), legal preemption
+  - Senate 99-1 rejection of AI moratorium (key political data for reform architecture)
+  - EU AI Act Article 50 (August 2, 2026) enforcement creates regulatory arbitrage; US companies comply in EU, face zero obligation in US
+  - Distribution target: July 15 (before Aug 2 EU enforcement deadline)
+
+- **Domain 40: Surveillance Capitalism & Electoral Manipulation** (6,800 words, 47 citations)
+  - File: `projects/resistance-research/domain-40-surveillance-capitalism-electoral-manipulation.md`
+  - 2026 midterms as turning point: deepfakes now standard campaign infrastructure (NRSC Talarico March 2026 first national party deployment)
+  - PNAS February 2026: 1.86% turnout suppression from digital targeting, 4.7M votes suppressed nationally, non-white voters targeted 10x more frequently
+  - FEC structural paralysis (no quorum since May 2025, Trump nominees not confirmed)
+  - DOJ voter file campaign to 33+ states creates government-commercial data fusion threat
+  - EU DSA/AI Act (August 2) requires synthetic content marking — US companies comply in EU, face zero equivalent US obligation
+  - Distribution target: July 15 (4 months before November 3 midterm election)
+
+**Phase 2 Total**: ~20,800 words, 142 citations, all committed to master and production-ready for coordination/distribution staging.
+
+**2. Stockbot Checkpoint Status** ✅
+- **Checkpoint scheduled**: May 15, 20:00 UTC (T-16h from session start)
+- **Execution materials**: All ready
+  - MAY_14_CHECKPOINT_EXECUTION_GUIDE.md (29K, complete execution playbook)
+  - scripts/may14_checkpoint_query_alpaca.py (15K, verified working, queries Alpaca directly)
+  - Decision tree for all four outcomes (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2) documented
+- **Expected result**: AAPL h+10 SELL trigger (2 fills expected if on schedule)
+- **User action**: Execute checkpoint script at 20:00 UTC per execution guide
+
+### Current Project States
+
+| Project | Status | Next Action |
+|---------|--------|--------------|
+| **stockbot** | ✅ Checkpoint fully prepared | Execute at 20:00 UTC today per MAY_14_CHECKPOINT_EXECUTION_GUIDE.md |
+| **resistance-research** | ✅ Phase 2 Domains 38-40 complete | Phase 1 execution window May 14-17 (user action); Phase 2 distribution staging (July 15 targets) |
+| **mfg-farm** | ⏳ Test print pending | Awaiting user test print execution; Phase 0 revenue analysis gate Jul 31 |
+| **cybersecurity-hardening** | ⏳ Phase 1 approval pending | Awaiting user approval for Tier 1 launch date |
+| **seedwarden** | ✅ Track B ready | User gates execution May 15-28; May 30 launch target |
+| **career-training** | ✅ Complete | Awaiting user review and deployment |
+| **open-repo** | ⏳ PR review pending | PR #1 (April 26) and PR #2 (May 15) awaiting review |
+
+### Needs Your Input
+
+1. **Stockbot Checkpoint (TODAY 20:00 UTC)**: Execute checkpoint per MAY_14_CHECKPOINT_EXECUTION_GUIDE.md. Script is ready; user runs `cd projects/stockbot && uv run python scripts/may14_checkpoint_query_alpaca.py` at checkpoint time.
+
+2. **Resistance-Research Phase 1 Execution (May 14-17 window)**: Phase 2 work is complete, but Phase 1 user distribution is on the original schedule. Confirm if executing Phase 1 user waves per original plan (Batch 1 Wave 1 + Domain 42 waves).
+
+3. **Phase 2 Distribution Coordination**: Three domains ready for staging (Domain 39 June 1 priority, Domain 38 & 40 July 15). Recommend creating a PHASE_2_DISTRIBUTION_COORDINATION.md to track distribution contacts, timeline, and messaging for each movement audience.
+
+**Token Budget**: ~200K tokens this session (3 full research agent sessions). Budget healthy (using ~50% of week).
+
+**Session Duration**: 02:30–05:00 UTC (~2.5 hours for 3 complete domain research + writings).
+
+**Next Steps**:
+1. Execute stockbot checkpoint at 20:00 UTC today
+2. Monitor checkpoint outcome
+3. Prepare Phase 2 distribution coordination (if user approves Phase 2 initiation)
+4. Continue with mfg-farm test print analysis (awaiting user action)
+
+---
+
 ## Session 1029 — May 15, 2026, 02:04–04:15 UTC (Exploration Queue Execution)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS COMPLETE. 4 PRODUCTION-READY DELIVERABLES CREATED. MFGFARM AUTOMATION ARCHITECTURE + CAREER-TRAINING SCENARIOS VERIFIED PRODUCTION-READY.**
