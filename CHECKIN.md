@@ -1,5 +1,87 @@
 # Check-in
 
+## Session 1056 — May 15, 2026, 11:22–12:30 UTC (Orchestrator — Exploration Queue Refresh + Decision Support)
+
+**Status**: ✅ **THREE DECISION-SUPPORT DOCUMENTS COMPLETE — All projects blocked on external events/user decisions. All infrastructure ready for upcoming events.**
+
+### Since Last Check-in (Session 1055)
+
+**Work completed** (70 minutes):
+
+1. **stockbot: May 16 Checkpoint Pre-Flight Validation Checklist** ✅
+   - Comprehensive 7-section framework (14,800 words)
+   - Local validation, day-of pre-flight, execution procedures, fallbacks, timeline, success criteria
+   - Verification completed: checkpoint script works, Alpaca API responsive, dry-run successful
+   - Current status: NEAR_MISS scenario pre-confirmed (aapl_model_sells=0 as of May 15 11:24 UTC)
+   - Next: May 16 20:00 UTC checkpoint execution (T-40.5 hours)
+
+2. **resistance-research: Phase 1 Distribution Path Comparison** ✅
+   - 4,500+ word decision framework comparing Paths A / A+37 / B
+   - Quantified matrix: timeline, contacts, election leverage windows (May 30, June 30, Sept 2026)
+   - Explicit recommendation: **Path A+37 (optimal)** — captures both general audiences AND election protection
+   - Key finding: A+37 dominates Path A (election leverage + zero research delay, 1h extra execution only)
+   - User action: Select path → orchestrator executes Phase 1 (4-6 hours) → May 15-17 Wave 1 launch
+
+3. **seedwarden: Track A Contingency Decision Tree** ✅
+   - 3,000+ word framework for May 20 decision point
+   - Binary: Both Track A blockers resolved by May 19? (tag corrections + Etsy verification)
+   - Option A: Synchronized May 24-30 launch (Phase 1 + Phase 2 together)
+   - Option B: Phase 2 May 30 independent, Phase 1 on Gumroad interim ($1,600–$2,400/week vs. $2,100–$3,200 Etsy)
+   - Gumroad backup: 15-minute setup, fully functional fallback
+   - Key insight: Phase 2 launches May 30 regardless of Track A (zero dependency)
+
+### Critical Decisions Still Awaiting User Input
+
+1. **resistance-research Distribution Path** ← **URGENT (now)**
+   - User selects: Path A (broadest audience) / **Path A+37 (RECOMMENDED)** / Path B (post-election focus)
+   - Impact: Gates Phase 1 Wave 1 launch (May 15-17)
+   - Decision support: DISTRIBUTION_PATH_COMPARISON.md provides full tradeoff analysis
+   
+2. **seedwarden Track A Blocker Resolution** ← **By May 20 (5 days)**
+   - Status check May 20: tag corrections done? Etsy verification complete?
+   - Impact: Option A (synchronized May 24-30) vs. Option B (Gumroad interim)
+   - Decision support: TRACK_A_CONTINGENCY_DECISION_TREE.md provides 5-step May 20 workflow
+
+3. **cybersecurity-hardening Phase 1 Approval** ← **By May 20 (5 days)**
+   - Confirm: Ready to launch Tier 1? Day 1 send date?
+   - Impact: Tier 1 distribution timeline
+   - Status: All materials production-ready; awaiting user go-ahead
+
+### May 16 Checkpoint & Post-Event Sequence
+
+- **May 16 20:00 UTC** (T-40.5h): Checkpoint execution
+  - Command: `cd projects/stockbot && uv run python scripts/may16_checkpoint_query_alpaca.py`
+  - Pre-confirmed scenario: NEAR_MISS (aapl_model_sells=0, requires Lever A)
+  - Next action: Apply Lever A (threshold 0.50→0.40, confidence 0.50→0.45), deploy to Jetson, next checkpoint May 19
+  
+- **May 16-17**: resistance-research Wave 1 launch (if user selects path by May 16)
+  - Path A+37 recommended: 33 Tier 1 contacts, dual-track sequencing (general + election)
+  - Execution: 5-6 hours (Gist, templates, contact verification, social scheduling)
+
+- **May 20**: seedwarden Track A decision + cybersecurity-hardening go/no-go
+  - seedwarden: Option A (synchronized May 24-30) or Option B (Gumroad interim, Etsy TBD)
+  - cybersecurity: Tier 1 launch approval or hold for additional research
+
+### Status Summary
+
+| Project | Current Status | Next Event | User Action |
+|---------|---|---|---|
+| **stockbot** | NEAR_MISS confirmed | May 16 20:00 UTC checkpoint + Lever A | Monitor checkpoint execution |
+| **resistance-research** | Ready for Phase 1 | Select path A / A+37 / B | Choose path (ASAP) |
+| **seedwarden Track A** | Blockers pending | May 20 decision + Gumroad contingency ready | Complete tag corrections + Etsy verification |
+| **seedwarden Track B** | Ready for user gates | User executes Gates 1-3 | Run gates May 15-28 |
+| **cybersecurity-hardening** | Production-ready | Tier 1 approval + Day 1 send date | Approve launch (by May 20) |
+| **mfg-farm** | Awaiting test results | User executes test print | Run print at 0.20mm/PLA+ |
+
+### Token Budget
+
+Current Sonnet usage: 26.8% (2,391,233 tokens)  
+All-models usage: 64.4%  
+Reset in 85 hours (May 17)  
+Status: Healthy, no throttling needed
+
+---
+
 ## Session 1055 — May 15, 2026, 12:15–12:20 UTC (Orchestrator — Pre-Checkpoint Verification)
 
 **Status**: ✅ **CHECKPOINT INFRASTRUCTURE FULLY VERIFIED — Standing by for May 16 20:00 UTC checkpoint execution. Awaiting user decisions on three critical path items.**
