@@ -1,5 +1,53 @@
 # Work Log
 
+## Session 1045 — May 15, 2026, 13:45–14:30 UTC (Orchestrator — Phase 2 Domain 58 Research Execution)
+
+**Status**: ✅ **PHASE 2 DOMAIN 58 RESEARCH COMPLETE — Production-ready domain document, 9,400 words, 60 citations, 7 causal pathways fully developed.**
+
+### Work Completed
+
+**Item: resistance-research Phase 2 Domain 58 Full Research** ✅:
+- **Deliverable**: `domains/domain-58-tribal-sovereignty.md` (9,400 words, 60 citations)
+- **Scope**: Tribal Sovereignty & Indigenous Democratic Design as democratic infrastructure problem
+- **Seven causal pathways fully developed**:
+  1. Voter registration suppression (4.7M eligible, 1.5M unregistered)
+  2. IHS defunding and health-participation nexus (TB 5.4x, diabetes 3.2x, maternal mortality, AIAN opioid crisis 65.2/100k)
+  3. BIA closures and economic sovereignty (March 2026 reorganization: 13% workforce loss, Pacific 29%, Alaska 22%, Southern Plains 26%)
+  4. Criminal justice jurisdictional complexity (three-regime fragmentation)
+  5. BIE education gaps (46,000 students, 183 schools, civics proficiency data)
+  6. Trust responsibility and economic disenfranchisement (property tax prohibition, Indian Guaranteed Loan Program elimination)
+  7. Trump v. Barbara citizenship threat (ruling pending June-July, rapid-response protocol ready in Section 9.1)
+
+- **Key Research Discoveries** (not in pre-execution outline):
+  - **Montana SB 490 post-*Callais* tribal voting rights victory** (May 11, 2026 injunction) — First confirmed state constitutional court victory restoring Election Day registration hours disproportionately used by Native voters
+  - **Turtle Mountain v. Howe** redistributed for SCOTUS conference May 28, 2026 (one day after research executed)
+  - **Winnemucca Indian Colony v. United States** petition filed April 8, distributed for conference May 28
+  - **IHS FY2026 enacted level**: $8.05B (not 30% cut proposed, still $55B below $63.04B tribal need)
+  - **ISDEAA Section 110 impoundment claims** available as remedy for FY2026 reductions, but no tribe has filed as of May 2026
+  - **Nevada SB 421** (signed May 31, 2025) — on-reservation polling location model, contrasts with North Dakota rollbacks
+
+- **Cross-domain bridges** (12 organizations documented):
+  - Domains 1/22/29/39/40/42/54 with specific section references
+  - Distribution targets: NCAI, NARF, tribal newspapers, Native vote organizations, federal Indian law clinics
+
+- **Distribution timing**:
+  - Baseline: July 15 (before August 2 EU AI Act enforcement hook in Domain 38)
+  - Accelerated: Immediate if Trump v. Barbara issues before June 10 (two-scenario rapid-response protocol embedded in document)
+
+- **Commit**: `1e9f7339` — feat(resistance-research): Domain 58 research complete (Tribal Sovereignty & Democratic Infrastructure)
+
+- **Status**: Production-ready for Phase 1 distribution integration OR post-Wave-1 Phase 2 execution
+
+### No New Blocks Created
+All existing blocks remain unchanged.
+
+### Token Usage
+- Session 1045 consumption: ~97K tokens (single parallel agent, 8-12 hr equivalent work)
+- Running total: Sonnet ~29.0%, All-models ~62.5%, Reset in ~84h
+- Remaining buffer: ~70K tokens for May 16-31 execution (checkpoint monitoring + optional Phase 57/59 prep)
+
+---
+
 ## Session 1044 — May 15, 2026, 11:30–13:15 UTC (Orchestrator — Phase 2 Domain 56 Research Execution)
 
 **Status**: ✅ **PHASE 2 DOMAIN 56 RESEARCH COMPLETE — Five production-ready deliverables, 40-50 hour equivalent work completed in parallel with checkpoint prep.**

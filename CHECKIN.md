@@ -1,5 +1,63 @@
 # Check-in
 
+## Session 1045 — May 15, 2026, 13:45–14:30 UTC (Orchestrator — Phase 2 Domain 58 Research Execution)
+
+**Status**: ✅ **PHASE 2 DOMAIN 58 RESEARCH COMPLETE — Tribal Sovereignty & Democratic Infrastructure fully developed, 9,400 words, 60 citations, production-ready for distribution or post-Wave-1 execution.**
+
+### Since Last Check-in (Session 1044, May 15 13:15 UTC)
+
+**Single high-impact autonomous completion (8-12 hrs equivalent work, parallel subagent)**:
+
+**resistance-research: Phase 2 Domain 58 Full Research COMPLETE**
+- `domains/domain-58-tribal-sovereignty.md` (9,400 words, 60 citations): Complete domain document with seven causal pathways, cross-domain bridges to Domains 1/22/29/39/40/42/54, distribution contact matrix (12 organizations)
+- **New research discoveries**: Montana SB 490 post-*Callais* tribal voting rights victory (May 11 injunction), BIA reorganization 13% workforce loss, Turtle Mountain v. Howe redistributed May 28, ISDEAA Section 110 impoundment remedy available but unfiled, AIAN opioid crisis 65.2 per 100k (highest of any racial/ethnic group)
+- **Trump v. Barbara rapid-response protocol embedded**: Two-scenario protocol in Sections 3.2 and 9.1 — ready to activate instantly on ruling (expected June-July 2026)
+- **Distribution timing**: July 15 baseline OR immediate if Trump v. Barbara issues before June 10
+
+**Key research corrections to outline**:
+- Turtle Mountain v. Howe: Cert still pending, redistributed for SCOTUS conference May 28, 2026
+- Voter registration gap corrected: 4.7M eligible, 1.5M unregistered (not 4.7M unregistered)
+- BIA workforce losses quantified: 13% overall, Pacific 29%, Alaska 22%, Southern Plains 26%, Office of Assistant Secretary for Indian Affairs 27%
+- IHS FY2026 enacted: $8.05B (below $63.04B tribal need, slight decrease from prior year)
+
+### Project Status Summary
+
+| Project | Status | Next Action | Timeline |
+|---------|--------|-------------|----------|
+| **resistance-research** | Domains 56+58 COMPLETE; Domains 59/57 ready | Phase 1 distribution (awaiting user path decision) OR Domain 59 research (June 15) | May 15+ |
+| **stockbot** | May 16 checkpoint protocol ready | May 16 20:00 UTC: execute checkpoint script → apply Lever A if needed | May 16 20:00 UTC |
+| **cybersecurity-hardening** | Phase 2 infrastructure complete | User approval for Phase 1 Tier 1 launch → triggers Tier 2 distribution | June 1+ |
+| **seedwarden** | Track B gates ready | User executes gates May 15-28; May 30 launch decision | May 30 |
+| **mfg-farm** | Test print pending | User executes test print; post-test revenue ramp | May 19-31 |
+
+### Needs Your Input
+
+1. **May 16 20:00 UTC — CRITICAL**: Checkpoint executes automatically. Script logs exit code (0=PASS, 1=NEAR_MISS, 2=FAR_MISS, 3=error). Review outcome and apply appropriate actions from `MAY_16_CHECKPOINT_PROTOCOL.md`.
+
+2. **May 19-23 (Optional but high-impact)**: Send Domain 56 Gist URL to Partnership for Public Service + AFGE. This is a brief email (one paragraph) that positions their June advocacy around democratic infrastructure framing — timing advantage before H.R. 492 markup intensifies.
+
+3. **Phase 1 distribution (awaiting your decision)**: Path A (immediate), Path A+37 Hybrid (election integrity focus), or Path B (continue prep). All materials production-ready. Domains 56+58 now integrated; timing window open.
+
+4. **seedwarden Track B**: Execute gates May 15-28 per `TRACK_B_USER_GATES.md` (user action, 60-90 min total).
+
+5. **mfg-farm**: Test print execution when ready. All post-test revenue and scaling documentation is production-ready.
+
+### Autonomous Work Status
+
+**Domains 56 and 58 COMPLETE.** Remaining Phase 2 candidates ready for scheduled execution:
+- Domain 59 (Economic Precarity): June 15-July 15, 50-60 hours — ready for execution when user signals OR after Phase 1 Wave 1 completes
+- Domain 57 (Multilateral Withdrawal): July 15-Aug 15, 40-50 hours — ready for execution when scheduled
+
+**No further autonomous research prep available until**: (1) May 16 checkpoint executes, (2) user initiates Phase 1 distribution and needs pre-distribution Domain 59/57 research, or (3) user completes Phase 1 Wave 1 and signals Phase 2 expansion start.
+
+### Token Usage
+
+- Session 1045 consumption: ~97K tokens (single parallel subagent, Domain 58 research)
+- Running total: Sonnet ~29.0%, All-models ~62.5%, Reset in ~84h
+- Buffer estimate: ~70K tokens sufficient for May 16-31 operations (checkpoint + optional Phase 57/59 prep if needed)
+
+---
+
 ## Session 1044 — May 15, 2026, 11:30–13:15 UTC (Orchestrator — Phase 2 Domain 56 Research Execution)
 
 **Status**: ✅ **PHASE 2 DOMAIN 56 RESEARCH COMPLETE — Five production-ready deliverables (47 citations, 6,800 words), 40-50 hour equivalent work. Ready for Phase 1 expansion or post-Wave-1 Phase 2 execution.**
