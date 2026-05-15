@@ -1,5 +1,58 @@
 # Check-in
 
+## Session 1054 — May 15, 2026, 10:55–11:00 UTC (Orchestrator — Idle Hold, Awaiting User Decisions)
+
+**Status**: ✅ **ALL AUTONOMOUS WORK COMPLETE — All systems verified and ready. Standing by for May 16 20:00 UTC checkpoint execution and user decisions on three critical path decisions.**
+
+### Since Last Check-in (Session 1053, 11:50 UTC)
+
+**Work completed (5 min)**:
+
+1. **Final Checkpoint Infrastructure Verification** ✅
+   - Timestamp: 2026-05-15 10:55 UTC
+   - Checkpoint script location verified: `projects/stockbot/scripts/may16_checkpoint_query_alpaca.py` (19.2 KB, last modified 08:30 UTC)
+   - Status: Ready for execution at 2026-05-16 20:00 UTC
+   - No further autonomous work available on stockbot until checkpoint execution time
+
+2. **Orchestration Files Review** ✅
+   - BLOCKED.md: 1 active block (mfg-farm test print — user action, no blocker resolution commands triggered)
+   - INBOX.md: No new items to process
+   - PROJECTS.md: All top 3 projects awaiting user decisions; no autonomous work available
+   - Exploration Queue: Items 1-56 ALL COMPLETE; Items 53-54 queued for post-checkpoint; no new items needed
+
+3. **Next Actions Identified** ⏳
+   - **User decisions required** (3 items listed below)
+   - **Checkpoint execution** (May 16, 20:00 UTC)
+   - No orchestrator work available until one of these events occurs
+
+### Critical Decisions Still Awaiting User Input (Unchanged from Session 1053)
+
+1. **Resistance-Research Distribution Path** ← **MOST URGENT (within 2–3 hours)**
+   - Choose: Path A (Wave 1 May 15–17) / Path A+37 (Domain 37 research track) / Path B (soft timeline)
+   - Impact: Gates Phase 1 Wave 1 execution timing
+   - Value: Determines whether distribution begins today, tomorrow, or later in May
+
+2. **Seedwarden Track A Etsy Verification** ← **TODAY (within 4–6 hours)**
+   - Status: Biometric ID verification — approved/pending/rejected?
+   - Impact: Gates May 30 Phase 2 launch
+   - Value: Determines Track A co-launch viability
+
+3. **Cybersecurity-Hardening Phase 1 Approval** ← **By May 20 (less urgent)**
+   - Confirm: Ready to launch Phase 1? Day 1 send date?
+   - Impact: Tier 1 distribution timeline
+   - Value: Determines Tier 1 sequence start date and messaging cadence
+
+### May 16 Checkpoint (T-33.1 hours)
+
+- **Time**: 2026-05-16 20:00 UTC (33 hours, 5 minutes from now)
+- **Infrastructure**: ALL VERIFIED ✅ (Session 1053)
+- **Execution command**: `cd projects/stockbot && uv run python scripts/may16_checkpoint_query_alpaca.py`
+- **Expected outcomes**: PASS (aapl_sells ≥2) / NEAR_MISS Partial (aapl_sells=1) / NEAR_MISS B2 (round_trips=2) / FAR_MISS C2 (no trades)
+- **Post-checkpoint routing**: Apply POST_CHECKPOINT_24_HOUR_PLAN.md section per outcome
+- **Status**: Ready; orchestrator will execute on May 16 20:00 UTC unless user provides override command
+
+---
+
 ## Session 1053 — May 15, 2026, 10:46–11:50 UTC (Orchestrator — Pre-Checkpoint Verification)
 
 **Status**: ✅ **PRE-CHECKPOINT VERIFICATION COMPLETE — All systems green. Standing by for May 16 20:00 UTC checkpoint execution.**
