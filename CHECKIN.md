@@ -1,5 +1,75 @@
 # Check-in
 
+## Session 1040 — May 15, 2026, 07:15+ UTC (Orchestrator — Stockbot Comprehensive Backtesting Report + Critical Bug Fix)
+
+**Status**: ✅ **COMPREHENSIVE BACKTESTING REPORT COMPLETE + CRITICAL SESSION BUG FIXED. Stockbot now has clear diagnostic framework for May 16 checkpoint. All projects remain blocked on user actions/external events. No further autonomous work available.**
+
+### Since Last Check-in (Session 1039, May 15 06:27–07:15 UTC)
+
+**Stockbot Live Trading Analysis & Root Cause Discovery** ✅ **COMPLETE**:
+- **Deliverable**: `projects/stockbot/LIVE_TRADING_ANALYSIS_2026-05-15.md` (production-ready comprehensive report)
+- **Commit**: `61a308b` (docs: live trading analysis report 2026-05-15)
+- **Critical Discovery**: Both equity sessions (lgbm_ho, ridge_wf) crashed on first loop iteration due to `is_shutdown_requested()` being called with parentheses on a @property. This was the root cause of 0 AAPL fills May 5–14. **Bug fixed at May 15 02:55 UTC.**
+- **Report Contents**:
+  - Model architecture overview (lgbm_ho and ridge_wf session details)
+  - Live performance analysis (May 5–15): 33 total fills (19 cleanup, 14 residual options), **0 AAPL equity fills due to bug**, 2 confirmed round trips, -$2.40 net PnL
+  - Open position: AAPL 108 shares, unrealized PnL +$924 (checkpoint state) to +$3,276 (May 14 peak)
+  - Checkpoint analysis: May 14 near-miss correctly classified (h+8 at checkpoint, h+10 fires May 14)
+  - Gate 2 readiness: Conditional on May 16 checkpoint outcome
+  - **Decision Framework**: If aapl_model_sells ≥ 2 on May 16 → bug fix confirmed, Gate 2 resumes (2-day slip). If aapl_model_sells = 0 → apply Lever A (threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45)
+  - Confidence in May 16 exit: 60–70%. Primary uncertainty: whether LGBM/ridge models generate SELL signal above threshold during uptrending AAPL
+- **Strategic Recommendations**:
+  - Do NOT activate covered-call overlay until 5 AAPL equity round trips achieved, ARCH-4 implemented, and options OOS backtest ≥60% win rate
+  - Multi-ticker expansion: not before May 20 (Gate 2 Week 2). Prerequisites: ARCH-3 (10 min), ARCH-4 (1–2 hrs), ARCH-6 schema migration (4 hrs)
+  - Undocumented `options_live_session` should be documented or shut down to keep round-trip count clean
+- **Test Coverage**: 4,971 passing tests (181 pre-existing failures unchanged; 46/46 HMM regime scalar tests passing). Zero regressions.
+
+### Project Status Summary
+
+| Project | Status | Next Action | Timeline |
+|---------|--------|-------------|----------|
+| **stockbot** | **Bug fixed, analysis complete** | Validate May 16 20:00 UTC checkpoint: aapl_model_sells ≥ 2 confirms fix; if 0, apply Lever A via `apply_lever_a.py` | May 16-20 (4 trading days for exit trigger) |
+| resistance-research | Phase 1 Wave 1 ready | Execute PHASE_1_WAVE_1_EXECUTION_DASHBOARD.md May 15–17 (5 law school contacts) | May 21–28 Batches 2–3 if >8% reply |
+| seedwarden | Track B user gates ready | Execute TRACK_B_USER_GATES.md May 15–28 → verify using TRACK_B_GATE_COMPLETION_VERIFICATION.md → May 29 go/no-go | May 30 09:00 UTC launch decision |
+| cybersecurity-hardening | Phase 1 ready | User: approve launch + confirm Day 1 send date | June 1 Phase 1 execution |
+| mfg-farm | Test print pending | User: execute test print (0.20mm, PLA+, 3 walls, 220–225°C) | Post-test Etsy listing + supplier negotiation |
+| open-source-rideshare | Paused | User: unpause when ready | Awaiting resume decision |
+
+### Needs Your Input
+
+**Stockbot May 16 Checkpoint** (May 16 20:00 UTC, ~24 hours):
+- Checkpoint executes automatically at 20:00 UTC
+- Check `aapl_model_sells` count in checkpoint query result
+- If ≥ 2: bug fix validated, Gate 2 timeline resumes (2-day slip factored in)
+- If 0: run `uv run python scripts/apply_lever_a.py` to adjust parameters; expect signal within 1–3 trading days
+
+**Resistance-Research Phase 1 Wave 1** (May 15–17):
+- Setup time: 45 minutes (Google Sheets + Bitly links)
+- Day 1 send: May 15, 16:00–18:00 UTC (5 law school contacts with staggered timing)
+- Day 3 contingency decision: if reply rate <8% by May 17 evening, execute escalation sequence in contingency playbook
+
+**Seedwarden Track B Gates** (May 15–29):
+- Execute gates May 15–28 per TRACK_B_USER_GATES.md checklist
+- Gates 1–2 can run in parallel; Gate 3 sequential after Gate 2
+- May 28–29: run verification checklists using TRACK_B_GATE_COMPLETION_VERIFICATION.md (scoring rubric: 3.0 = GO, 2.0–2.99 = CONDITIONAL, <2.0 = NO-GO)
+- May 29 20:00 UTC: final go/no-go decision for May 30 09:00 UTC launch
+
+### Suggested Next Actions (In Priority Order)
+
+1. **May 16 20:00 UTC**: Stockbot checkpoint executes automatically. Monitor `aapl_model_sells` result.
+2. **May 16 20:05 UTC (if needed)**: Apply Lever A via `uv run python scripts/apply_lever_a.py`
+3. **May 15–17**: Execute resistance-research Phase 1 Wave 1 per PHASE_1_WAVE_1_EXECUTION_DASHBOARD.md
+4. **May 15–28**: Execute seedwarden Track B gates per TRACK_B_USER_GATES.md (parallel execution for Gates 1–2)
+5. **May 29 evening**: Seedwarden final go/no-go decision using verification framework
+
+### Token Usage
+
+- **Session 1040 consumption**: ~102K tokens (stockbot agent comprehensive analysis)
+- **Running total**: Sonnet 26.8% + (102K output) = ~27.2%, All-models 58.1% + 2K = ~58.3%, Reset in ~89h
+- **Remaining buffer**: ~70K tokens for May 16–30 execution and monitoring
+
+---
+
 ## Session 1039 — May 15, 2026, 06:27–07:15 UTC (Orchestrator — Exploration Queue Items 46–48 Completion)
 
 **Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE (46–48). High-impact operational infrastructure delivered for May 15–30 critical windows. All projects remain blocked on user actions/external events. No further autonomous work available.**

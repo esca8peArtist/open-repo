@@ -1,5 +1,46 @@
 # Work Log
 
+## Session 1040 — May 15, 2026, 07:15+ UTC (Orchestrator — Stockbot Comprehensive Analysis + Critical Bug Fix)
+
+**Status**: ✅ **COMPREHENSIVE BACKTESTING REPORT COMPLETE + CRITICAL SESSION BUG FIXED**
+
+### Work Completed
+
+**Stockbot Live Trading Analysis & Bug Diagnosis**:
+- **Deliverable**: `projects/stockbot/LIVE_TRADING_ANALYSIS_2026-05-15.md` (production-ready markdown report)
+- **Committed**: Commit `61a308b` (docs: live trading analysis report 2026-05-15)
+- **Key Discovery**: Both equity sessions (lgbm_ho, ridge_wf) crashed on first loop iteration due to `is_shutdown_requested()` being called with parentheses on a @property. This was the root cause of 0 AAPL fills May 5–14. Bug fixed at May 15 02:55 UTC.
+- **Report Contents**:
+  - Model architecture overview (lgbm_ho and ridge_wf session details)
+  - Live performance analysis (May 5–15): 33 total fills (19 cleanup, 14 residual options), 0 AAPL equity fills (bug), 2 confirmed round trips, -$2.40 net PnL
+  - Open position: AAPL 108 shares, unrealized PnL +$924 (state) to +$3,276 (May 14 peak)
+  - Checkpoint analysis: May 14 near-miss correctly classified (h+8 at checkpoint, h+10 fires May 14)
+  - Gate 2 readiness: Conditional on May 16 checkpoint outcome
+  - Decision framework: If aapl_model_sells >= 2 on May 16, bug fix confirmed; if 0, apply Lever A (threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45)
+- **Confidence Assessment**: 60–70% confidence in May 16 exit trigger. Primary uncertainty: whether LGBM/ridge models generate SELL signal above threshold during uptrending AAPL
+- **Recommendations**:
+  - Do not activate covered-call overlay until 5 AAPL equity round trips achieved + ARCH-4 implemented + options OOS backtest >= 60% win rate
+  - Multi-ticker expansion: not before May 20 (Gate 2 Week 2)
+  - Prerequisites: ARCH-3 (10 min), ARCH-4 (1–2 hrs), ARCH-6 schema migration (4 hrs)
+- **Test status**: 4,971 passing (181 pre-existing failures unchanged from baseline; 46/46 HMM regime scalar tests passing). No regressions.
+
+### Project Status Update
+
+| Project | Status | Next Action | Timeline |
+|---------|--------|------------|----------|
+| **stockbot** | **Bug fixed, analysis complete** | Execute May 16 20:00 UTC h+12 checkpoint; validate aapl_model_sells >= 2 to confirm fix. If 0, apply Lever A | May 16-20 (4 trading days for exit) |
+| resistance-research | Phase 1 Wave 1 ready | User: Execute May 15–17 Wave 1 send using PHASE_1_WAVE_1_EXECUTION_DASHBOARD.md | May 15-21 |
+| seedwarden | Track B user gates ready | User: Execute gates May 15–28 using TRACK_B_USER_GATES.md; verify May 29 | May 30 launch decision |
+| cybersecurity-hardening | Phase 1 ready | User: Approve launch + confirm Day 1 send date | June 1 launch |
+| mfg-farm | Test print pending | User: Execute test print (0.20mm, PLA+, 3 walls, 220–225°C) | Post-test Etsy listing |
+| open-source-rideshare | Paused | User: Unpause when ready | Awaiting resume |
+
+### No New Blocks Created
+
+All orchestration state files reviewed; no new active blocks. mfg-farm test print block (user action) remains pending.
+
+---
+
 ## Session 1039 — May 15, 2026, 06:27–07:15 UTC (Orchestrator — Exploration Queue Items 46–48 Completion)
 
 **Status**: ✅ **THREE EXPLORATION QUEUE ITEMS COMPLETE — High-impact operational infrastructure delivered**
