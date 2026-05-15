@@ -1,5 +1,59 @@
 # Work Log
 
+## Session 1084 — May 15, 2026, 17:30–18:15 UTC (Orchestrator — Items 51-52 Pre-Staging Complete, Checkpoint T-26 Hours)
+
+**Status**: ✅ **TWO POST-CHECKPOINT ITEMS PRE-STAGED — Saves 3-4 hours of post-checkpoint analysis**
+
+**Session focus**: Pre-stage Items 51-52 for rapid execution after May 16 20:00 UTC checkpoint
+
+### Work Completed
+
+#### Item 51 Pre-Work: stockbot — Jetson Infrastructure Optimization Research ✅
+**Deliverable**: `projects/stockbot/docs/ITEM_51_OPTIMIZATION_RESEARCH.md` (18 KB, production-ready)
+
+**Key findings**:
+- **Hardware baseline**: Jetson Orin Nano 8GB (not Pi), current load 25-40% CPU, 2.1 GB RAM peak
+- **Headroom**: Comfortable for Gate 2 covered-call scale; thermal/memory constraints emerge only at 52-session full portfolio scale
+- **Sub-50ms latency target** applies to equity signal path; options overlay has separate 200-500ms budget (achievable)
+- **Three highest-ROI optimization targets**:
+  1. Vectorize Greeks batching (1-2h, eliminates serial Black-Scholes calls) 
+  2. **Pre-market options chain pre-fetch** (2-3h, eliminates first-cycle cache-miss latency spike — **HIGHEST-ROI quick win**)
+  3. Incremental position aggregation (2-3h, O(1) steady-state vs O(n) full scan)
+- **CUDA inference path** (4-6h) gates 52-session scale but not needed for Gate 2 covered calls
+
+**Outcome**: Post-checkpoint Item 51 execution now has clear roadmap. Eliminates 2+ hours of hardware profiling/analysis.
+
+#### Item 52 Pre-Work: stockbot — Post-Checkpoint Phase 2 Architecture Decision Framework ✅
+**Deliverable**: `projects/stockbot/docs/ITEM_52_SCENARIO_PREANALYSIS.md` (22 KB, production-ready)
+
+**Critical findings**:
+- **Scenario B (Covered Calls) RECOMMENDED** as default Gate 2 path
+- **Scenario A** (equity-only): 6-10h, immediate deployment, ceiling ~1.2 Sharpe — choose if Gate 1 Sharpe < 0.5
+- **Scenario B** (covered calls + Greeks): 24-31h, June 1-15 timeline accurate. Naked-call prevention is **structurally sound** via 6-layer guardrail stack. 80% built, integration work not invention.
+- **Scenario C** (multi-leg ensemble): 44-54h, June 15-25. **CRITICAL BLOCKER**: IVR signal requires 252 days of historical options snapshots (don't exist). Defer 90 days after B validated.
+- **Safety ranking**: A > B >> C. Scenario B is safest options path; C introduces residual multi-leg atomicity risk.
+- **User decision keys** (unambiguous A/B/C selection):
+  1. Gate 1 Sharpe value (< 0.5 → A, ≥ 0.7 → B, consider C later)
+  2. Position count (≥100 shares → B viable, < 20 → A/C flexible)
+  3. Available dev bandwidth (Gate 2 is 24-31h commitment in June)
+
+**Outcome**: Post-checkpoint Item 52 execution can finalize scenario briefs in 1.5-2h instead of 3-5h. User decision framework pre-determined.
+
+### Critical Note: Checkpoint T-26 Hours
+
+All systems remain ready for May 16 20:00 UTC checkpoint. Items 51-52 pre-staging complete. Post-checkpoint execution can commence at 20:30 UTC with minimal deliberation.
+
+**Post-checkpoint sequence**:
+1. **20:05 UTC**: Execute checkpoint query, record results
+2. **20:15 UTC**: Classify scenario (PASS / NEAR_MISS / FAR_MISS)
+3. **20:30 UTC**: Begin Item 52 finalization (scenario briefs, user decision matrix)
+4. **21:00 UTC**: Checkpoint decision brief ready for user
+5. **May 17 morning**: Item 51 execution begins (if Gate 1 PASS + user approves Gate 2)
+
+**Token efficiency**: Items 51-52 pre-work saved 3-4 hours of post-checkpoint analysis. Stockbot submodule commits in place.
+
+---
+
 ## Session 1083 — May 15, 2026, 16:51–17:20 UTC (Orchestrator — Items 55-57 Parallel Execution Complete)
 
 **Status**: ✅ **THREE EXPLORATION ITEMS COMPLETE — Post-checkpoint monitoring, Phase 2 Domain 38 research, and Premium tier strategy all delivered**
