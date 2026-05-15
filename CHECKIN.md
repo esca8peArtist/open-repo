@@ -1,5 +1,53 @@
 # Check-in
 
+## Session 1072 — May 15, 2026, 16:00–16:10 UTC (Orchestrator — Pre-checkpoint status verification)
+
+**Status**: ✅ **ALL SYSTEMS READY FOR May 16 20:00 UTC CHECKPOINT — Awaiting external events and user decisions.**
+
+### Since Last Check-in (Session 1071)
+
+**Work completed** (10 minutes):
+- **Orientation**: Verified ORCHESTRATOR_STATE.md, BLOCKED.md (1 active block: mfg-farm test print), INBOX.md (no new items)
+- **Status audit**: All 10 projects accounted for — 6 active (5 blocked on external events/user decisions, 1 paused), 3 complete/awaiting user execution
+- **Checkpoint readiness**: `MAY_16_CHECKPOINT_PROTOCOL.md` verified complete and production-ready
+
+### Critical Upcoming Event
+
+**May 16 20:00 UTC Checkpoint** (T-30 hours):
+- **Script ready**: `projects/stockbot/scripts/may16_checkpoint_query_alpaca.py` — queries Alpaca directly for scenario classification
+- **Expected result**: PASS (aapl_model_sells >= 2) if May 15 session bug fix worked; NEAR_MISS (aapl_model_sells=0) if suppression persists
+- **User action required**: Execute exactly at 20:00 UTC: `cd projects/stockbot && uv run python scripts/may16_checkpoint_query_alpaca.py`
+- **Pre-check at 19:30 UTC**: `uv run python scripts/may16_checkpoint_query_alpaca.py --verify` (connectivity test)
+
+### Project Status Summary
+
+| Project | Status | Next Event | Timeline |
+|---------|--------|-----------|----------|
+| **stockbot** | Active | May 16 20:00 UTC checkpoint execution | T-30h |
+| **resistance-research** | Active | User selects distribution path (Wave 1 send A/A+37/B) | Awaiting user decision |
+| **seedwarden** | Active | Gate 1 execution (May 15-18) + user upgrades decision | Gates ready, Canva/Kit decisions due EOD May 16 |
+| **mfg-farm** | Active | Test print execution (user action) | Awaiting 3D print |
+| **cybersecurity-hardening** | Active | User approval for Phase 1 Tier 1 launch | Awaiting user approval |
+| **open-repo** | Active | PR #1 & #2 maintainer review | Awaiting external review |
+| **off-grid-living** | Complete | User executes social media distribution | Awaiting user execution |
+| **open-source-rideshare** | Paused | — | — |
+
+### No Autonomous Work Available
+
+- **Exploration Queue**: Complete (all 48 items done)
+- **All active projects**: Blocked on external events (May 16 checkpoint, user decisions, 3D print, PR review, etc.)
+- **Next autonomous work**: Begins post-checkpoint (May 17) based on checkpoint outcome and user decisions
+
+### Preparation for May 16
+
+Before checkpoint execution at 20:00 UTC, user should:
+1. **Confirm decisions** (if not already done): Canva upgrade path (Gate 2) + Kit upgrade path (Gate 3) — for May 19/27 execution
+2. **Pre-check at 19:30 UTC**: Run `uv run python scripts/may16_checkpoint_query_alpaca.py --verify` to confirm Alpaca connectivity
+3. **Execute at 20:00 UTC**: Run full checkpoint script (see Session 1071 Section 1 for exact command)
+4. **Reference**: `MAY_16_CHECKPOINT_PROTOCOL.md` Section 2-3 for scenario classification and immediate actions
+
+---
+
 ## Session 1071 — May 15, 2026, 15:45–16:00 UTC (Orchestrator — Item 57: Track B gate readiness verification)
 
 **Status**: ✅ **TRACK B GATES READY TO EXECUTE — Two platform upgrade decisions required before user starts.**
