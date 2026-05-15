@@ -101,6 +101,81 @@
 
 ---
 
+## Session 1092 — May 15, 2026, ~21:00 UTC (Orchestrator — Checkpoint Verification & Final Status)
+
+**Status**: ✅ **CHECKPOINT FULLY READY — All systems verified for May 16 20:00 UTC execution**
+
+### Critical Timeline Summary
+
+| Deadline | Action | Status |
+|----------|--------|--------|
+| **NOW (May 15 EOD)** | Path decision (A/A+37/B) | ⏳ AWAITING USER |
+| **NOW (May 15 EOD)** | Cybersecurity approval + date | ⏳ AWAITING USER |
+| **May 18 EOD** | Seedwarden tier (Canva/Kit) | ⏳ AWAITING USER |
+| **May 16 19:00–19:30 UTC** | Pre-flight health checks | 📋 SCHEDULED |
+| **May 16 20:00 UTC EXACT** | Checkpoint execution | 🚀 READY |
+| **May 16 20:05 UTC** | Outcome classification + Lever A (if NEAR_MISS) | 🎯 DECISION TREE READY |
+
+### Checkpoint Execution Status
+
+**All systems verified ready**:
+- ✅ Alpaca API connectivity (Account PA38Z548DIRR active, Pattern Day Trader enabled)
+- ✅ Jetson engine running (AAPL lgbm_ho + ridge_wf active)
+- ✅ Checkpoint query script valid and ready
+- ✅ Decision tree and post-execution procedures staged
+- ✅ Pre-flight health checks scheduled (May 16 19:00 UTC)
+- ✅ Master execution checklist production-ready
+
+**No preparation work needed** — infrastructure verified ready, just await May 16 execution time.
+
+### open-repo PR Status
+
+**Two PRs awaiting review**:
+1. **PR #1** (April 26, 19 days old) — Wave 4 Phase 2 Federation Service
+   - **Status**: AWAITING REVIEW (no reviewers assigned, no review comments)
+   - **Escalation**: This PR has exceeded the 3-day review threshold
+   - **Recommendation**: Assign reviewer or merge directly if approved by main reviewer
+
+2. **PR #2** (May 15, today) — Documentation update + security fix
+   - **Status**: AWAITING REVIEW (zero-risk merge)
+   - **Content**: README/API.md updates + 0.0.0.0 → 127.0.0.1 security fix (CLAUDE.md compliance)
+   - **Recommendation**: Quick approval + merge recommended
+
+### Immediate Next Steps
+
+1. **TODAY (May 15)**: Make three critical decisions
+   - Resistance-research path (A/A+37/B) → enables May 17 Wave 1 execution
+   - Cybersecurity Phase 1 approval + Day 1 date → enables June 1+ execution
+   - Seedwarden Canva/Kit tier → enables May 20-24 zone card production
+
+2. **May 16 19:00 UTC**: Run pre-flight health checks
+   - Alpaca connectivity verification
+   - Jetson engine status check
+   - Decision tree review
+
+3. **May 16 20:00 UTC**: Execute checkpoint query
+   - `uv run python projects/stockbot/scripts/may16_checkpoint_query_alpaca.py`
+   - Classify outcome (PASS / NEAR_MISS / FAR_MISS_C1 / FAR_MISS_C2)
+   - Deploy appropriate Lever (A for NEAR_MISS, decision tree for FAR_MISS)
+
+4. **May 16 21:00 UTC**: Execute Item 51/52 based on checkpoint outcome
+   - Wave 1 execution (if path decision received)
+   - Jetson optimization + Gate 2 planning (if PASS)
+   - Post-checkpoint decision framework (if any FAR_MISS scenario)
+
+### Usage & Budget
+
+- **Sonnet**: 26.8% (2,391,233 tokens used)
+- **All models**: 78.7% (2,391,233 tokens used)
+- **Reset**: 76 hours remaining (Tuesday 00:00 UTC May 21)
+- **Budget status**: Healthy, no throttling concerns
+
+**Upcoming sessions**: May 16 (post-checkpoint execution), May 17+ (Phase 1 Wave 1 + Item 51-52 execution)
+
+**Time to checkpoint**: ~24 hours (May 16 20:00 UTC exact)
+
+---
+
 ## Session 1092 — May 15, 2026, 19:40–19:50 UTC (Orchestrator — Orientation & Readiness Confirmation)
 
 **Status**: ✅ **READY FOR CHECKPOINT — No autonomous work available**
