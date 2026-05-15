@@ -1,5 +1,98 @@
 # Check-in
 
+## Session 1034 — May 15, 2026, 03:19–~05:00 UTC (Orchestrator — Gate 1 Checkpoint Assessment + Phase 1 Execution Prep)
+
+**Status**: ✅ **GATE 1 CHECKPOINT ASSESSED (NEAR_MISS). PHASE 1 EXECUTION INFRASTRUCTURE COMPLETE FOR RESISTANCE-RESEARCH AND CYBERSECURITY-HARDENING. CRITICAL: Domain 42 Wave 1 overdue by 6 days — recommend immediate send today (May 15).**
+
+### Since Last Check-in (Session 1033, May 15 03:19–~04:45 UTC)
+
+**Stockbot Gate 1 Checkpoint Assessment** ✅ **COMPLETE**:
+- Checkpoint query executed at 03:48 UTC (Alpaca API, bypasses local DB)
+- **Results**: 33 total fills since May 5, 0 AAPL model sells (h+10 exit has NOT fired)
+- **Scenario**: NEAR_MISS (h=10 at checkpoint, h+10 window closing today)
+- **Engine status**: ✅ HEALTHY — 33 fills show normal trading activity, 2 confirmed round trips, -$2.40 total P&L (minimal)
+- **Next monitoring**: May 16 checkpoint (h+12). If still no AAPL sells, apply Lever A (threshold adjustment).
+- **Playbook**: See `MAY_12_OUTCOME_ROADMAP.md` Section 4 (NEAR_MISS_B1 decision tree)
+- **Hours until May 15 20:00 UTC full checkpoint**: 16.2 hours (scheduled verification: Alpaca 18:00 UTC, Jetson 19:00 UTC, full query 20:00 UTC)
+
+**Phase 1 Distribution Execution Prep — Resistance-Research** ✅ **COMPLETE**:
+- **3 documents created** (all production-ready):
+  1. `TEMPLATE_FIELD_CHECKLIST.md` — 13 template fields identified, validation rules, fill-time estimate 1 hour
+  2. `EXECUTION_PATH_CHECKLIST.md` — Path A / A+37 / B checklists with decision rationale (Path A+37 recommended)
+  3. `DOMAIN_1_GIST_STAGING.md` — Staging outline for Voting Rights Gist, 10–12 min creation time
+- **Contact verification**: 2 flags identified (Erica Chenoweth: role changed to Academic Dean; Marc Elias: email outdated, use melias@elias.law)
+- **Estimated time to send**: ~2.5–3 hours (spot-check 15 min, universal fields 10 min, URLs 5 min, contact lookups 30 min, spacing/validation 30 min, send 30 min)
+- **Urgent alert**: Domain 42 (Drug Policy) Wave 1 send is 6 days overdue (May 9 plan → May 15 today). May 28 DEA hearing deadline is 13 days away. Must send TODAY to meet NAACP LDF's 10-14 day routing requirement (they must receive by May 17). Time to send: 30-45 min (path-independent).
+
+**Phase 1 Distribution Execution Prep — Cybersecurity-Hardening** ✅ **COMPLETE**:
+- **4 documents created** (all production-ready):
+  1. `TIER_1_DAY1_EXECUTION_CHECKLIST.md` — 12-item checklist, exact send schedule (June 1, 8:30–8:50 AM)
+  2. `SCENARIO_ACTIVATION_DECISION_TREE.md` — 3 escalation scenarios (Palantir, FISA June 12, ICE Mobile Fortify)
+  3. `TIER_1_PERSONALIZATION_HOOKS.md` — Verification status + hooks for all 5 Wave 1 contacts
+  4. `USER_DECISIONS_REQUIRED_FOR_TIER1_LAUNCH.md` — 6 decisions required before launch
+- **Key decision point**: June 1 launch date optimal for using Section 702 FISA reauthorization deadline (June 12) as Week 2 anchor
+- **Estimated time to launch**: ~3-4 hours across 2 days (decisions 30-60 min, Day 0 prep 90-120 min, Day 1 send 60 min)
+
+**Token Usage**:
+- Session 1033 agents: ~196K tokens (Item 44: 112K, Item 42: 84K)
+- Session 1034 agents: ~197K tokens (resistance-research: 90K, cybersecurity-hardening: 107K)
+- **Total session budget used**: ~393K (both agents ran in parallel, efficient)
+- **Status**: 🟢 26.8% Sonnet (headroom available, good pace)
+
+### Needs Your Input
+
+**URGENT (May 15, today)**:
+1. **Domain 42 Wave 1 send** — 6 days overdue. NAACP LDF needs 10-14 days internal routing; must receive by May 17 max. Send time: 30-45 min. Contacts: Drug Policy Alliance, NORML, MPP, LEAP, SSDP, NAACP LDF, others. Gist is live. Use `execution/domain-42-email-template-may28-urgency.md` Template A.
+
+2. **Stockbot May 15 20:00 UTC Checkpoint** — 16 hours away. Engine is healthy (NEAR_MISS scenario). User should verify: (1) Alpaca credentials valid, (2) Jetson is reachable via SSH, (3) Run full checkpoint query at 20:00 UTC (script ready). Expected outcome: May 16 h+12 monitoring if AAPL exit hasn't fired yet.
+
+**This week (May 15-17)**:
+3. **resistance-research Phase 1 path decision** — Select Path A / Path A+37 (recommended) / Path B. Enables execution of 5 Batch 1 emails + Gist creation. Estimated time to send: 2.5-3 hours once path is decided. Documents ready: TEMPLATE_FIELD_CHECKLIST.md, EXECUTION_PATH_CHECKLIST.md, DOMAIN_1_GIST_STAGING.md.
+
+4. **cybersecurity-hardening Tier 1 decision points** — 6 decisions needed:
+   - (1) Launch date (June 1 recommended)
+   - (2) Contact track (policy/institutional vs. grassroots/direct-need vs. both)
+   - (3) Corpus accuracy flags (2 flags recommended for pre-launch resolution, 60-80 min agent work)
+   - (4) Phone escalation authorization (if Week 1 replies <3)
+   - (5) Warm introduction outreach (do professional connections exist to any of 25 contacts?)
+   - (6) Gist content finality confirmation
+   See `USER_DECISIONS_REQUIRED_FOR_TIER1_LAUNCH.md` for full decision record template.
+
+### Current Project States (Updated May 15, 05:00 UTC)
+
+**stockbot** (Priority 1, USER ESCALATED):
+- ✅ Checkpoint query ready & executed (NEAR_MISS scenario confirmed)
+- ⏳ User action: May 15 20:00 UTC checkpoint execution + outcome evaluation
+- Next: Follow POST_GATE_1_RESPONSE_FRAMEWORK.md Section 4 for NEAR_MISS_B1 response (May 16 monitoring)
+
+**resistance-research** (Priority 2):
+- ✅ Phase 1 execution infrastructure COMPLETE (3 documents, contact verification done, template fields identified)
+- ⏳ **URGENT**: Domain 42 Wave 1 send today (6 days overdue)
+- ⏳ User decision: Path A / A+37 / B → execution ~2.5-3 hours
+- Timeline: Phase 1 distribution launch May 15-21 (once path decided)
+
+**cybersecurity-hardening** (Priority 3):
+- ✅ Tier 1 Phase 1 infrastructure COMPLETE (4 documents, scenario decision trees, contact hooks, day-by-day checklist)
+- ⏳ User decision: 6 decision points (see above) → Tier 1 Day 1 June 1
+- Estimated time to launch: ~3-4 hours across 2 days
+
+**mfg-farm** (Priority 4):
+- 🟡 Blocked on test print (user action) — no change
+- ✅ Multi-Printer Farm Architecture roadmap ready (post-test-print planning)
+
+**seedwarden** (Priority 5):
+- ✅ Track B gates documentation COMPLETE (May 15-28 execution ready, May 30 launch on track)
+- 🟡 Track A blocked on user actions (tag corrections, Etsy verification)
+
+**Suggested Next Session Priorities**:
+1. Domain 42 Wave 1 send (30-45 min, today)
+2. Stockbot May 15 20:00 UTC checkpoint execution & evaluation
+3. resistance-research path decision (if not done) → Phase 1 execution
+4. cybersecurity-hardening decision points → Tier 1 launch readiness
+5. seedwarden Track B gates execution (can start immediately once user approves)
+
+---
+
 ## Session 1033 — May 15, 2026, 03:19–~07:00 UTC (Orchestrator — Pre-Checkpoint Prep + Exploration Queue Items 42-44)
 
 **Status**: ✅ **COMPLETE. Orchestration updates done; Exploration Queue Items 42-44 complete; Gate 1 checkpoint ready (20:00 UTC today).**
