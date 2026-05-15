@@ -1,5 +1,71 @@
 # Check-in
 
+## Session 1076 — May 15, 2026, 15:30–15:50 UTC (Orchestrator — Exploration Queue Refresh + Item 49 Execution)
+
+**Status**: ✅ **EXPLORATION QUEUE ITEM 49 COMPLETE — Checkpoint decision framework ready for May 16 execution**
+
+### Since Last Check-in (Session 1075)
+
+**Work completed** (20 minutes, autonomous exploration queue work):
+
+**Exploration Queue Refresh** ✅
+- All projects remain blocked on external dependencies or scheduled events
+- Added Items 49-51 per protocol (prevents idle-only sessions)
+- No work available outside exploration queue
+
+**Item 49: May 16 Post-Checkpoint Decision Tree** ✅ COMPLETE
+- **Deliverable**: `projects/stockbot/MAY_16_POST_CHECKPOINT_DECISION_TREE.md` (4,500+ lines)
+- **Scope**: Rapid-reference decision tree for all 4 checkpoint scenarios
+- **Value**: <2-min lookup time for post-20:00-UTC classification + immediate actions
+- **Features**:
+  - Visual decision tree (ASCII) for PASS, NEAR_MISS Partial, NEAR_MISS B2, FAR_MISS_C2
+  - Scenario→Actions mapping tables
+  - Lever A/B/C parameters and deployment procedures
+  - Gate 2 trigger conditions
+  - Post-execution checklists per outcome
+  - Cross-references all protocol docs (MAY_16_CHECKPOINT_PROTOCOL.md, POST_CHECKPOINT_24_HOUR_PLAN.md, MAY_12_OUTCOME_ROADMAP.md)
+
+**Commits**:
+- `projects/stockbot` submodule: e8daa1a (decision tree doc)
+- Parent repo: 1095fa70 (PROJECTS.md) + 00a516bc (WORKLOG.md)
+
+### Current Status: Awaiting May 16 20:00 UTC Checkpoint Execution
+
+| Task | Status | Timeline | Owner |
+|------|--------|----------|-------|
+| **May 16 Checkpoint Script** | ✅ Ready | 20:00 UTC May 16 | Orchestrator (autonomous) |
+| **Post-Checkpoint Decision Tree** | ✅ Ready (Item 49) | <2 min lookup | Orchestrator (autonomous) |
+| **Lever A Deployment (if NEAR_MISS)** | ✅ Ready | 20:05–21:30 UTC May 16 | Orchestrator (autonomous) |
+| **Item 50: Phase 1 Measurement Framework** | ⏳ Staged | Post-user-decision | Awaiting user path choice |
+| **Item 51: Jetson Optimization** | ⏳ Staged | Post-Gate-1-PASS | Awaiting checkpoint result |
+
+### Needs Your Input (No changes from Session 1075)
+
+**By EOD May 15** (standing request):
+1. **Resistance-research path decision** — A / A+37 / B (enables Phase 1 Wave 1 May 15-17)
+2. **Seedwarden Canva & Kit upgrades** — Pro/free for May 15-28 gate execution
+3. **Cybersecurity Phase 1 launch approval** — Confirm + Day 1 send date
+
+**At May 16 19:00 UTC** (pre-flight check):
+- Run: `uv run python scripts/may16_checkpoint_query_alpaca.py --verify` (connectivity)
+
+**At May 16 20:00 UTC EXACT** (checkpoint execution):
+- Run: `uv run python scripts/may16_checkpoint_query_alpaca.py`
+- Look up outcome in MAY_16_POST_CHECKPOINT_DECISION_TREE.md (< 2 min)
+- Execute immediate actions per scenario (20-30 min if NEAR_MISS + Lever A)
+
+**If NEAR_MISS (most likely)**:
+- Apply Lever A: `uv run python scripts/apply_lever_a.py`
+- Rsync + restart Jetson
+- Notify user via Discord (optional)
+
+### Next Checkpoint
+
+**May 16 20:00 UTC**: Execute checkpoint query + apply decision tree
+**May 19 20:00 UTC**: Follow-up diagnostic checkpoint (if Lever A applied)
+
+---
+
 ## Session 1075 — May 15, 2026, 16:01–16:15 UTC (Orchestrator — May 16 checkpoint health checks)
 
 **Status**: ✅ **MAY 16 CHECKPOINT READY — All critical paths verified, minor API endpoint issue found (not blocking)**
