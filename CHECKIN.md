@@ -1,5 +1,61 @@
 # Check-in
 
+## Session 1094 — May 15, 2026, 20:10–20:25 UTC (Orchestrator — Orientation & Standby)
+
+**Status**: ✅ **CHECKPOINT READINESS CONFIRMED — T-24h to May 16 20:00 UTC — No autonomous work available until execution or user decisions**
+
+### Orientation Summary
+
+**Verification complete:**
+- ✅ ORCHESTRATOR_STATE.md reviewed (May 15 19:58 UTC) — all state current
+- ✅ PROJECTS.md verified — all entries current through Session 1093
+- ✅ BLOCKED.md clean (mfg-farm test print is user action, not resolvable)
+- ✅ INBOX.md empty (no new items)
+- ✅ Git history confirms Session 1093 checkpoint readiness documented
+- ✅ Usage healthy: 79.1% all-models, 76h remaining
+
+### Autonomous Work Analysis
+
+**Exploration Queue status:**
+- Items 1-50: ✅ Complete
+- Items 51-54: 4 items staged (≥3 minimum required)
+  - Item 51: Post-Gate-1 options architecture (blocked on May 16 checkpoint outcome)
+  - Item 52: Phase 2 tier sequencing (blocked on user path decision)
+  - Item 53: open-repo PR review tracking (blocked on PR review status, outside 2h pre-event window)
+  - Item 54: Seedwarden Phase 3-4 research (blocked on Track B gate completion)
+
+**Top 3 projects analysis:**
+1. **stockbot** (Priority 1): May 16 20:00 UTC checkpoint T-24h away. All infrastructure verified ready in Session 1093. Cannot execute early. ❌ No work available until execution.
+2. **resistance-research** (Priority 2): Phase 1 Wave 1 pre-staged. Cannot execute without user path decision (A/A+37/B). ❌ No work available until decision.
+3. **cybersecurity-hardening** (Priority 3): Phase 1 materials complete. Cannot execute without user launch approval + Day 1 date. ❌ No work available until approval.
+
+**Health checks warranted?** No
+- Protocol: only within 2 hours of known scheduled event
+- Checkpoint is T-24h away (outside 2h window)
+
+### Conclusion
+
+**✅ All systems remain ready for May 16 20:00 UTC checkpoint execution**
+
+**Appropriate action**: Standby mode. All decision trees, execution checklists, and post-checkpoint action sequences pre-staged and ready. Awaiting May 16 checkpoint execution or user decisions to unlock work.
+
+**Critical user decisions still pending** (needed before May 16 20:00 UTC):
+1. Resistance-research path (A/A+37/B) — enables Wave 1 execution timing
+2. Cybersecurity Phase 1 approval + Day 1 date — enables June execution
+3. Seedwarden Canva/Kit tier — enables May 20-24 production timeline
+
+### Session Summary
+
+✅ Orientation complete — state verified current, all systems ready for checkpoint  
+✅ No autonomous work available (all projects blocked on external dependencies)  
+✅ Exploration Queue has adequate items (4) with clear dependencies  
+✅ Budget healthy, no token constraints  
+✅ All five orchestration files current and ready for commit  
+
+**Next session trigger**: May 16 20:00 UTC checkpoint execution
+
+---
+
 ## Session 1093 — May 15, 2026, 19:50–20:10 UTC (Orchestrator — Checkpoint Countdown)
 
 **Status**: ✅ **CHECKPOINT READINESS CONFIRMED — Awaiting May 16 20:00 UTC execution — No autonomous work available**
