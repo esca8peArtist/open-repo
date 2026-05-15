@@ -3574,3 +3574,18 @@ Logged May 14 20:00 UTC Gate 1 checkpoint results (executed 01:19 UTC May 15) to
 
 ---
 
+
+### Open-Repo Phase 5 Candidate 3 — PR CREATED (May 15, 2026 01:35 UTC)
+
+**PR**: https://github.com/esca8peArtist/open-repo/pull/2
+**Title**: "docs: Update README + API.md for Phase 4; fix 0.0.0.0 binding in quickstart"
+**Status**: Awaiting review/merge
+
+**Action taken**: Created PR on open-repo GitHub (docs-only, zero-risk, security compliance)
+- Documentation updates (README.md + API.md) now match Phase 4 completion state
+- Fixed 0.0.0.0 → 127.0.0.1 binding security violation per CLAUDE.md absolute rules
+- Can merge independently of PR #1
+
+**Next**: Await maintainer review. No further orchestrator work needed until merge.
+
+---
