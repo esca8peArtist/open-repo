@@ -1,5 +1,42 @@
 # Check-in
 
+## Session 1077 — May 15, 2026, 15:52–16:15 UTC (Orchestrator — Pre-Checkpoint Readiness Review)
+
+**Status**: ✅ **ALL SYSTEMS READY FOR MAY 16 20:00 UTC CHECKPOINT EXECUTION**
+
+### Since Last Check-in (Session 1076)
+- **Work completed**: Pre-flight orientation review (23 minutes)
+- **Changes**: None — all infrastructure from Session 1076 confirmed ready
+- **Checkpoint readiness**: 100% — decision tree, scripts, protocols all verified
+- **Next event**: May 16 20:00 UTC checkpoint + post-checkpoint action sequence
+
+### Current Status: Standby Mode Pending Checkpoint Execution
+
+| Task | Status | Timeline |
+|------|--------|----------|
+| **May 16 Checkpoint Infrastructure** | ✅ Ready | 20:00 UTC May 16 |
+| **Post-Checkpoint Decision Tree** | ✅ Ready (Item 49) | <2 min lookup |
+| **Lever A Deployment** | ✅ Ready | 20:05–21:30 UTC if NEAR_MISS |
+| **Phase 1 Distribution (Items 50)** | ⏳ Blocked | Awaiting user path A/B decision |
+| **Gate 2 Optimization (Item 51)** | ⏳ Blocked | Awaiting Gate 1 checkpoint result |
+
+### Needs Your Input (No change from Session 1076)
+
+**By EOD May 15** (if executing Phase 1 Wave 1 May 15-17):
+1. **Resistance-research path decision** — A / A+37 / B (enables distribution measurement setup)
+2. **Seedwarden Canva/Kit upgrades** — Confirm tier for May 15-28 gate execution
+3. **Cybersecurity Phase 1 launch approval** — Confirm + Day 1 send date
+
+**At May 16 18:00 UTC** (2-hour pre-checkpoint window):
+- Health check recommended: Alpaca API connectivity, Jetson engine status
+- Run: `uv run python projects/stockbot/scripts/may16_checkpoint_query_alpaca.py --verify`
+
+### Usage Budget Status
+- Sonnet: 26.8% (2,391,233 / 8,935,000 tokens) — reset in 81 hours
+- All models: 71.8% — healthy, no throttle
+
+---
+
 ## Session 1076 — May 15, 2026, 15:30–15:50 UTC (Orchestrator — Exploration Queue Refresh + Item 49 Execution)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEM 49 COMPLETE — Checkpoint decision framework ready for May 16 execution**
