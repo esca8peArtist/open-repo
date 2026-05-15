@@ -1,5 +1,39 @@
 # Check-in
 
+## Session 1061 — May 15, 2026, 13:30–14:20 UTC (Orchestrator — Exploration Queue Execution + Final Pre-Checkpoint Prep)
+
+**Status**: ✅ **EXPLORATION QUEUE EXECUTION COMPLETE — Phase 2 Domain 38 outline staged. All autonomous work finished. Standing by for May 16 20:00 UTC checkpoint (T-30.5 hours). Awaiting user decisions.**
+
+### Since Last Check-in (Session 1060)
+
+**Work completed** (50 minutes):
+1. **Oriented** to ORCHESTRATOR_STATE.md, PROJECTS.md, BLOCKED.md, INBOX.md, Exploration Queue
+2. **Verified** mfg-farm test print block remains active (user action required, unresolved)
+3. **Executed exploration queue item**: Phase 2 Domain 38 Research Outline & Staging (3-4 hour estimated, completed in ~45 min)
+   - Created `PHASE_2_DOMAIN_38_RESEARCH_OUTLINE.md` (1,100 words)
+   - Agent note: Full production already complete Session 1031; outline is summary document
+   - Committed: `5d0a1fd8` — `chore(exploration-queue): Phase 2 Domain 38 research outline and staging`
+4. **Verified** all autonomous checkpoint pre-work complete
+5. **Updated** WORKLOG.md and CHECKIN.md with Session 1061 status
+
+### Critical Status Summary
+
+| Area | Status | Action |
+|------|--------|--------|
+| **Checkpoint Readiness** | ✅ READY | Execute May 16 20:00 UTC per runbook |
+| **Exploration Queue** | ✅ COMPLETE | No unblocked items remaining |
+| **User Decisions Pending** | 🔴 URGENT | resistance-research Path A+37 decision triggers Wave 1 May 15-17 |
+| **Test Print Block** | ⚠️ UNRESOLVED | mfg-farm awaiting user execution |
+| **Token Budget** | ✅ HEALTHY | 26.8% Sonnet, 66.3% all-models, reset May 17 00:00 UTC |
+
+### Next Phase Gates
+
+**May 16 20:00 UTC**: Checkpoint execution → outcome routes to `POST_CHECKPOINT_24_HOUR_PLAN.md`
+**May 16+**: If Lever A needed → 5-minute deployment, May 19 follow-up checkpoint
+**May 17+**: If user selects distribution path → execute Phase 1 Wave 1 (4-6 hours)
+
+---
+
 ## Session 1060 — May 15, 2026, 13:15–13:25 UTC (Orchestrator — Checkpoint Standby + Confirmation)
 
 **Status**: ✅ **ALL AUTONOMOUS PRE-WORK COMPLETE — Standing by for May 16 20:00 UTC checkpoint (T-31 hours).**

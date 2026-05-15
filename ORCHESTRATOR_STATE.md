@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-15T10:44:34Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-15T12:13:51Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 26.8% (2,391,233 tokens) | All-models 63.6% | Reset in 85h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 26.8% (2,391,233 tokens) | All-models 66.3% | Reset in 84h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -33,7 +33,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **NEAR_MISS SCENARIO CONFIRMED (May 14 exit did not trigger).** AAPL h+10 exit scheduled for May 14 13:30 UTC did NOT execute (aapl_model_sells: 0). Position remains open (108 shares, +$924 unrealized). Early checkpoint executed 2026-05-15 04:17 UTC via `scripts/may14_checkpoint_query_alpaca.py`. Result: 33 total fills since May 5, 2 confirmed round trips, -$2.40 net pnl. **NEXT CHECKPOINT: May 16 20:00 UTC (h+12) — PROTOCOL COMPLETE (Session 1043).** May 16 checkpoint infrastructure ready: `M … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **GATE 1 CHECKPOINT READY (May 16 20:00 UTC).** AAPL position: 108 shares, +$924 unrealized. May 14 h+10 exit did not trigger (NEAR_MISS scenario confirmed). Early checkpoint (May 15 04:17 UTC): 33 total fills, 2 round trips, -$2.40 net pnl. Unit tests passing: 3690/3723 (0.89% failure in optional features only, NOT trading path). Checkpoint infrastructure: `MAY_16_CHECKPOINT_PROTOCOL.md` ready with scenario classification and Lever A quick-reference. **NEXT**: Execute May 16 20:00 UTC checkpoin … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
