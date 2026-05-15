@@ -1,5 +1,62 @@
 # Check-in
 
+## Session 1043 — May 15, 2026, 10:00–11:15 UTC (Orchestrator — Phase 2 Domain Candidates + May 16 Checkpoint Protocol)
+
+**Status**: ✅ **MAY 16 CHECKPOINT INFRASTRUCTURE COMPLETE. Phase 2 research expansion roadmap identified. All autonomous infrastructure work complete pending checkpoint execution.**
+
+### Since Last Check-in (Session 1042, May 15 08:30–09:45 UTC)
+
+**Two parallel infrastructure completions (7-8 hrs equivalent work)**:
+
+1. **resistance-research: Phase 2 New Domain Candidates**
+   - 4 candidates identified (Tribal Sovereignty, Civil Service, Economic Precarity, Multilateral Withdrawal)
+   - 138-172 hour production estimate across Q2-Q3 2026
+   - Priority ranking: Domain 58 first (8-12 hours, June 1 SCOTUS hook), Domain 56-59-57 follow
+   - Production-ready for Phase 2 research initiation post-Wave-1
+
+2. **stockbot: May 16 Checkpoint Protocol Complete**
+   - `MAY_16_CHECKPOINT_PROTOCOL.md` (1,300 words, production-ready)
+   - `scripts/may16_checkpoint_query_alpaca.py` (automated Alpaca query script)
+   - Pre-checkpoint checklist, scenario classification framework, Lever A quick-reference
+   - Ready for automated execution May 16 20:00 UTC (approximately 29 hours from now)
+
+### Project Status Summary
+
+| Project | Status | Next Action | Timeline |
+|---------|--------|-------------|----------|
+| **stockbot** | Checkpoint protocol ready | May 16 19:30 UTC: pre-checkpoint checklist; 20:00 UTC: execute checkpoint script | May 16 20:00 UTC |
+| **resistance-research** | Phase 2 candidates identified | Phase 2 research: Domain 58 start May 20, Domains 56/59/57 follow June-Aug | June 1+ |
+| **cybersecurity-hardening** | Phase 2 infrastructure complete | User approves Phase 1 launch → execute Tier 1 + monitoring | June 1+ |
+| **seedwarden** | Track B gates ready | User executes gates May 15-28; May 29 go/no-go decision | May 30 |
+| **mfg-farm** | Test print pending | User executes test print; post-print: revenue ramp | Ongoing |
+
+### Needs Your Input
+
+1. **May 16 20:00 UTC**: Checkpoint executes. Script logs exit code (0=PASS, 1=NEAR_MISS, 2=FAR_MISS, 3=error). Review outcome per decision framework in `MAY_16_CHECKPOINT_PROTOCOL.md`.
+
+2. **resistance-research Wave 1**: Ready to execute May 15-17 per `PHASE_1_WAVE_1_EXECUTION_DASHBOARD.md` if you're ready to begin distribution.
+
+3. **cybersecurity-hardening**: Approve Phase 1 Tier 1 launch + confirm Day 1 send date. All infrastructure is production-ready.
+
+4. **seedwarden Track B**: Execute gates May 15-28 per `TRACK_B_USER_GATES.md` (60-90 min total, can be done in one session or spread across 2 weeks).
+
+5. **mfg-farm**: Execute test print specifications (0.20mm layer height, PLA+, 3 walls, 220–225°C) when ready. Post-test revenue scaling fully documented and ready to execute.
+
+### Autonomous Work Status
+
+**All autonomous infrastructure work COMPLETE**. Remaining work is:
+- **Monitoring** (May 16 checkpoint, Phase 1 metrics, litigation signals)
+- **User execution** (Wave 1 distribution, Track B gates, test print, Phase 1 approvals)
+- **Post-execution operations** (Phase 2 research, Tier 2 distribution, revenue ramp)
+
+### Token Usage
+
+- Session 1043 consumption: ~110K tokens (two parallel infrastructure agents)
+- Running total: Sonnet ~29.5%, All-models ~60.1%, Reset in ~86h
+- Buffer estimate: ~50K tokens sufficient for May 16-30 checkpoint + operations
+
+---
+
 ## Session 1042 — May 15, 2026, 08:30–09:45 UTC (Orchestrator — Phase 2 Exploration Queue Completion)
 
 **Status**: ✅ **EXPLORATION QUEUE ITEMS COMPLETE — ALL AUTONOMOUS PHASE 2 INFRASTRUCTURE PRODUCTION-READY. Awaiting May 16 checkpoint and user execution actions.**

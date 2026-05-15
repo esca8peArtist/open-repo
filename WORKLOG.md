@@ -1,5 +1,54 @@
 # Work Log
 
+## Session 1043 — May 15, 2026, 10:00–11:15 UTC (Orchestrator — Phase 2 Domain Candidates + May 16 Checkpoint Protocol)
+
+**Status**: ✅ **TWO PARALLEL INFRASTRUCTURE ITEMS COMPLETE — Phase 2 research expansion pipeline ready, May 16 checkpoint fully documented and automated.**
+
+### Work Completed
+
+**Item: resistance-research Phase 2 New Domain Candidates** ✅:
+- **Deliverable**: `projects/resistance-research/PHASE_2_NEW_DOMAINS_CANDIDATES.md` (3,100 words, production-ready)
+- **Scope**: 4 new Phase 2 domain candidates identified via gap analysis against full 55-domain universe
+- **Candidates**:
+  - **Domain 58 (Priority 1)**: Tribal Sovereignty & Indigenous Democratic Design — 8-12 hours, May 20-June 10 (Trump v. Barbara SCOTUS ruling June-July hook)
+  - **Domain 56 (Priority 2)**: Civil Service Politicization & Nonpartisan Governance — 40-50 hours, June 1-30 (Schedule Policy/Career rule, H.R. 1002 legislative window)
+  - **Domain 59 (Priority 3)**: Economic Precarity as Civic Exclusion Architecture — 50-60 hours, June 15-July 15 (OBBBA 38pp income-participation gap, antipoverty coalition pathways)
+  - **Domain 57 (Priority 4)**: Multilateral Withdrawal & Democratic Norm Erosion — 40-50 hours, July 15-Aug 15 (66-org withdrawal Jan 2026, ICC judge sanctions)
+- **Total Production Estimate**: 138-172 hours across Q2-Q3 2026
+- **Integration**: All four candidates include scope sections, source leads, causal pathways to democracy, time-critical windows, and cross-references to existing Domains 1-40
+- **Status**: Production-ready for Phase 2 research initiation post-Phase-1 Wave-1 completion
+
+**Item: stockbot May 16 Checkpoint Protocol & Automation** ✅:
+- **Deliverables**: 
+  - `projects/stockbot/MAY_16_CHECKPOINT_PROTOCOL.md` (1,300 words, production-ready framework)
+  - `projects/stockbot/scripts/may16_checkpoint_query_alpaca.py` (automated Alpaca query script)
+- **Scope**: Complete framework for May 16 20:00 UTC checkpoint execution
+- **Content**:
+  - Exact execution command + timing
+  - Expected metric table (baseline May 14, two May 16 scenarios)
+  - 4-scenario classification (PASS / NEAR_MISS partial / NEAR_MISS B2 / FAR_MISS_C2) with action sections
+  - Lever A quick-reference parameter table (offline, no need to open MAY_12_OUTCOME_ROADMAP.md)
+  - Pre-checkpoint checklist for May 16 19:30 UTC (credential verify, Jetson ping, script presence, dry-run)
+  - Post-checkpoint actions (ORCHESTRATOR_STATE.md update, Discord notification, git commit)
+  - WORKLOG.md fill-in templates (Template A for PASS, Template B for Lever A applied)
+- **Automation**: Script includes `--verify` flag for pre-checkpoint credential check; exit codes 0=PASS, 1=NEAR_MISS, 2=FAR_MISS, 3=error (machine-parseable)
+- **Lever A Status**: `scripts/apply_lever_a.py` confirmed ready; config uses correct list format; script will add threshold_multiplier and confidence_floor keys on first run
+- **Status**: Production-ready for automated execution May 16 20:00 UTC
+
+### No New Blocks Created
+All existing blocks remain unchanged.
+
+### Commits
+- ✅ Resistance-research: `PHASE_2_NEW_DOMAINS_CANDIDATES.md` committed
+- ✅ Stockbot: `MAY_16_CHECKPOINT_PROTOCOL.md` + `scripts/may16_checkpoint_query_alpaca.py` committed
+
+### Token Usage
+- Session 1043 consumption: ~110K tokens (two parallel agents, 7-8 hr equivalent work)
+- Running total: Sonnet ~29.5%, All-models ~60.1%, Reset in ~86h
+- Remaining buffer: ~50K tokens for May 16-30 execution (sufficient for checkpoint monitoring + post-Wave-1 Phase 2 ops)
+
+---
+
 ## Session 1042 — May 15, 2026, 08:30–09:45 UTC (Orchestrator — Phase 2 Exploration Queue Completion)
 
 **Status**: ✅ **TWO EXPLORATION QUEUE ITEMS COMPLETE — Phase 2 infrastructure production-ready for post-Wave-1 execution.**
