@@ -2,6 +2,25 @@
 
 ---
 
+## May 15, 2026 — General Research Agent — Phase 2 Domain Expansion Strategy (Domains 36-50)
+
+**Status**: COMPLETE
+**Files**:
+- `projects/resistance-research/domain-expansion-strategy.md` (supersedes May 7 and May 9 versions; ~3,200 words; production-ready)
+- `projects/resistance-research/phase-2-domain-candidates-prioritized.csv` (15 candidates, Domains 36-50; exact column structure per task specification)
+
+**Task**: Design Phase 2 domain expansion strategy (Domains 36-50) with gap analysis, 15 domain candidates ranked by adoption likelihood / movement infrastructure integration / cross-domain leverage / timing urgency / unique contribution, movement infrastructure integration assessment, outreach strategy, and timeline.
+
+**Key findings**:
+- Phase 1's structural gap is constituency-level, not policy-level: the framework reaches law professors and AG staff but not union organizers, tenant advocates, or frontline environmental justice leaders
+- Three highest-leverage broker organizations for Phase 2 — M4BL Policy Table, Climate Justice Alliance, SisterSong — connect to every domain on the list and should be targeted before individual domain contacts
+- Top three domains by composite score (24, 23, 23 out of 25): Reproductive Freedom (D36), Criminal Justice/Abolitionism (D37), Environmental Justice (D38) — these share organizing infrastructure and should be released as a cluster in Wave 1
+- Four hard external deadlines: Reproductive Freedom (2026 ballot measures; Comstock Act threat; SCOTUS mifepristone term), LGBTQ+ Rights (4 anti-trans ballot measures November 2026), Labor Rights (NLRB certiorari moving toward disposition), Campaign Finance (DISCLOSE Act legislative calendar)
+- Total estimated production: 185-285 hours for all 15 domains; Wave 1 (4 domains) can begin immediately post-Phase-1 path decision
+- Sources verified: Fifth Circuit NLRB ruling (August 2025); AFL-CIO Supreme Court motion (November 2025); Slee and Desmond 2023 (Eviction Lab); ACLU 2026 LGBTQ+ bill tracker (400+ bills); Trans Legislation Tracker (740 bills, 42 states); OpenSecrets DISCLOSE Act of 2026; H.R.7567 Farm Bill; Cornell tenant organizing analysis
+
+---
+
 ## May 15, 2026 — General Research Agent — Phase 2 Domain 40: Surveillance Capitalism and Electoral Manipulation
 
 **Status**: COMPLETE
