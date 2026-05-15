@@ -2,6 +2,54 @@
 
 ---
 
+## May 15, 2026 — General Research Agent — Item 53: Domains 57 & 59 Phase 2 Production Roadmap
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/DOMAINS_57_59_PRODUCTION_ROADMAP.md` (~4,400 words)
+
+**Task**: Create a Phase 2 production roadmap for Domains 57 (Multilateral Withdrawal and Democratic Norm Erosion) and 59 (Economic Precarity as Civic Exclusion) — converting the outline documents from `PHASE_2_DOMAINS_57_59_OUTLINES.md` into a full operational execution plan.
+
+**Key deliverables within the roadmap**:
+
+*Domain 57 specification summary*:
+- Research scope and out-of-scope boundaries (foreign policy consequences vs. domestic accountability mechanisms)
+- 13-item evidence requirements checklist (what "complete" means)
+- 8-category source list template with confirmed vs. to-acquire status
+- 45–51 hour complexity estimate (HIGH); constitutional law sections are the critical path
+
+*Domain 59 specification summary*:
+- Research scope with explicit out-of-scope notes (no duplication of Domains 31, 47, 50)
+- 14-item evidence requirements checklist
+- 9-category source list template with confirmed vs. to-acquire status
+- 59–65 hour complexity estimate (HIGH); OBBBA compounding argument (Section 5) is the single hardest analytical piece
+- OBBBA enactment update: signed July 4, 2025 — framing shifts from "projected" to "enacted and in implementation"
+
+*8-week parallel execution plan (June 16 – August 10)*:
+- Wave 1 (June 16–30): Domain 59 primary research + Domain 57 pre-production in parallel
+- Wave 2 (July 1–15): Domain 59 synthesis and writing + Domain 57 primary research
+- Wave 3 (July 16 – Aug 10): Domain 57 writing and peer review; Domain 59 final edit and publication
+- Three identified production bottlenecks: Section 5 compounding argument, Domain 57 constitutional law analysis, library-access sources
+- Weekly milestones for each domain through both tracks
+
+*Quality gate procedure*:
+- 6-criterion "complete" definition
+- Self-check validation checklist (5 items, researcher-led)
+- Peer review pairings: Domain 57 with Domain 23 researcher (geopolitics + constitutional authority); Domain 59 with Domain 47 researcher (housing/eviction empirical grounding)
+- Evidence verification checklist (6 items, final pre-publication)
+
+*Publication sequencing matrix*:
+- Domain 57 first distribution: August 10, 2026 (pre-UNGA 81, September 22–28)
+- Domain 59 first distribution: September 1, 2026 (pre-midterm, November 3)
+- Phase 3 institutional targeting: Senate Foreign Relations Committee materials (Oct–Dec 2026); SNAP/Medicaid work requirement comment letters (Jan–Feb 2027); congressional testimony on OBBBA civic consequences (Spring 2027)
+- External event calendar: UNGA, midterms, OBBBA work requirement effective date (December 2026), SNAP cuts (2027)
+
+*Resource allocation*:
+- Researcher skill requirements for each domain (constitutional law literacy for D57; quantitative social science for D59)
+- Tool requirements table (library access, journal databases, Congress.gov, Dallas Fed, Census Bureau, OECD, IDEA)
+- Three contingency plans: researcher unavailability after Week 2 or 4; Phase 1 slip (domain-by-domain flexibility analysis); OBBBA court injunction (framing update protocol)
+
+---
+
 ## May 15, 2026 — Research Agent — Career Training Gap Analysis and Index Rebuild
 
 **Status**: COMPLETE
