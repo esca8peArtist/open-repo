@@ -1,5 +1,78 @@
 # Check-in
 
+## Session 1058 — May 15, 2026, 12:50–13:10 UTC (Orchestrator — Post-Checkpoint Playbook + Queue Expansion)
+
+**Status**: ✅ **POST-CHECKPOINT 24-HOUR PLAN COMPLETE + QUEUE ITEMS 55-56 ADDED — All autonomous work optimized for May 16-20 execution. Awaiting user decisions and checkpoint.**
+
+### Since Last Check-in (Session 1057)
+
+**Work completed** (20 minutes):
+1. **Created `POST_CHECKPOINT_24_HOUR_PLAN.md`** — Comprehensive decision tree + executable procedures
+   - All 4 outcomes covered (PASS / NEAR_MISS / FAR_MISS_C1 / FAR_MISS_C2)
+   - Lever A deployment procedure (threshold 0.50→0.40, confidence 0.50→0.45)
+   - Root cause assessment framework (position age vs signal suppression vs execution vs infrastructure)
+   - Timeline: May 16 20:00-21:30 UTC execution, May 19 follow-up checkpoint
+   - Success criteria explicit per outcome
+
+2. **Added 2 new Exploration Queue items** (Items 55-56, ready for May 16-20 phases)
+   - Item 55: `resistance-research Wave 1 Execution Runbook` (2-3 hrs) — Ready-to-execute guide for 4-6 hour Phase 1 launch once user selects path
+   - Item 56: `cybersecurity-hardening Phase 1 Tier 1 Countdown Checklist` (1-2 hrs) — Daily prep checklist + approval framework for May 20 user decision
+
+3. **Updated WORKLOG.md** with Session 1058 status
+
+### Critical Decisions Still Awaiting User Input
+
+**🔴 URGENT (within next 2 hours)**:
+- **resistance-research Distribution Path** → Select **Path A+37 (RECOMMENDED)**
+  - DECISION_FRAMEWORK: `projects/resistance-research/DISTRIBUTION_PATH_COMPARISON.md`
+  - Impact: Gates May 15-17 Wave 1 launch (34+ Tier 1 contacts)
+  - Item 55 (Wave 1 Runbook) queued for immediate 4-6 hour execution upon decision
+
+**🟡 By May 20 (5 days)**:
+- **seedwarden Track A Blockers** → Complete tag corrections + Etsy verification
+  - DECISION_FRAMEWORK: `projects/seedwarden/TRACK_A_CONTINGENCY_DECISION_TREE.md`
+  - Fallback: Gumroad interim (15-min setup) if Etsy stalls
+- **cybersecurity-hardening Phase 1 Approval** → Approve Tier 1 launch + confirm Day 1 send date
+  - Item 56 (Countdown Checklist) supports daily prep + May 20 approval decision
+
+### May 16 Checkpoint Execution (T-31.25 hours)
+
+- **Pre-checkpoint**: May 16 19:30 UTC validation per `MAY_16_CHECKPOINT_VALIDATION_CHECKLIST.md`
+- **Execution**: May 16 20:00 UTC — query AAPL fills, classify outcome (PASS/NEAR_MISS/FAR_MISS)
+- **Post-checkpoint**: May 16 20:05–21:30 UTC — follow `POST_CHECKPOINT_24_HOUR_PLAN.md` decision tree
+  - PASS: Gate 2 prep begins immediately
+  - NEAR_MISS: Deploy Lever A (threshold 0.50→0.40, confidence 0.50→0.45) + May 19 follow-up
+  - FAR_MISS: Root cause assessment + May 19 follow-up
+- **May 19 20:00 UTC**: Follow-up checkpoint (4-trading-day observation window)
+- **Pre-confirmed outcome**: NEAR_MISS (aapl_model_sells=0, position open at h+8-10)
+
+### Status Summary
+
+| Project | Status | Blocker | Timeline |
+|---------|--------|---------|----------|
+| **stockbot** | NEAR_MISS pre-confirmed | Awaiting May 16 checkpoint | May 16 20:00 UTC checkpoint → Lever A or Gate 2 |
+| **resistance-research** | Wave 1 ready | **USER PATH DECISION** | **NOW** (Path A/A+37/B) |
+| **seedwarden Track B** | Ready for user gates | Awaiting user gates | May 15-28 (gates) → May 30 launch |
+| **seedwarden Track A** | Blockers pending | Tag corrections + Etsy | May 20 decision (Option A/B) |
+| **cybersecurity-hardening** | Production-ready | **USER APPROVAL** | May 20 decision (Tier 1 launch + Day 1 date) |
+| **mfg-farm** | Pre-print complete | Awaiting test execution | May 19-31 window |
+
+### Exploration Queue Status
+
+- **Items 1-51**: ✅ COMPLETE
+- **Items 52-54** (Session 1057): Queued for post-checkpoint phases
+- **Items 55-56** (Session 1058): Queued for May 16-20 execution phases
+  - Item 55: Wave 1 Runbook → triggers on user path decision
+  - Item 56: Countdown Checklist → ready for May 15-20 daily use
+
+### Token Budget
+
+Current: 26.8% Sonnet (2,391,233 tokens), 65.1% all-models  
+Reset in 83 hours (May 17)  
+Status: Healthy, no action required
+
+---
+
 ## Session 1057 — May 15, 2026, 12:30–12:50 UTC (Orchestrator — Queue Refresh + Checkpoint Standby)
 
 **Status**: ✅ **QUEUE REFRESHED FOR POST-CHECKPOINT PHASE — All decision-support docs complete. Standing by for May 16 20:00 UTC checkpoint execution.**
