@@ -1,5 +1,106 @@
 # Check-in
 
+## Session 1091 — May 15, 2026, 20:30–21:00 UTC (Orchestrator — Critical Path & Post-Checkpoint Readiness)
+
+**Status**: ✅ **CHECKPOINT EXECUTION CONFIRMED READY — Critical user decisions documented — Post-checkpoint execution pre-staged**
+
+### Orchestrator Assessment
+
+**Checkpoint Status**: All systems verified ready (Session 1090: 10/10 verification checks, critical config bug fixed).
+
+**Autonomous Work Analysis**:
+- ✅ All top-3 projects (stockbot, resistance-research, cybersecurity-hardening) have infrastructure ready
+- ❌ No autonomous execution possible on Tier-1 projects until:
+  - Stockbot: May 16 20:00 UTC checkpoint execution (user action)
+  - Resistance-research: User path decision (A/A+37/B) needed TODAY
+  - Cybersecurity: User approval + Day 1 send date needed TODAY
+
+**Decision**: Critical path is user communication. Updated CHECKIN with comprehensive decision documentation.
+
+### Critical Path — User Decisions Required TODAY (May 15)
+
+**DECISION 1: Resistance-Research Distribution Path** (deadline: **URGENT — TODAY EOD or May 16 AM**)
+- **Options**: 
+  - **Path A** = Full immediate distribution (all 40 domains, all contacts, maximum reach)
+  - **Path A+37** = Hybrid (general Tier 1+2 distribution starting May 17 + Domain 37 sequenced June 5-10 for election protection focus)
+  - **Path B** = Continue Phase 2 research first (defer distribution to June+)
+- **Impact**: Selects domain sequencing, contact outreach order, timeline (Wave 1 send May 17 vs June+)
+- **Timeline to execution**: 3–4.5 hours from decision to Batch 1 (5 contacts) in flight
+- **Status**: Callais fix already applied (commit 37f7e8bf). Batch 1 emails verified live. All templates ready.
+- **Pre-requisite MET**: ✅ All 40 domains verified production-ready. ✅ All 7 Gists live. ✅ Batch 1 contacts verified current.
+
+**DECISION 2: Cybersecurity Phase 1 Launch Approval** (deadline: **ASAP to enable June 1 Day 1 execution**)
+- **Approval needed**: Launch Tier 1 distribution (25 verified organizations)
+- **Day 1 send date**: Recommend June 1 (based on Tier 1 readiness calendar)
+- **Impact**: Activates Phase 1 Tier 1 distribution + Item 50 measurement infrastructure
+- **Status**: ALL distribution infrastructure complete and production-ready
+  - ✅ Phase 1 Tier 1 messaging templates (25 customized)
+  - ✅ Phase 1 Tier 1 distribution prep doc (exact email sequences, send times, follow-up calendar)
+  - ✅ Phase 2 Scenario Playbooks (4 updated through May 2026 threat intel)
+  - ✅ All materials verified production-ready
+
+**DECISION 3: Seedwarden Canva/Kit Tier Selection** (deadline: **May 18 to meet May 30 launch target**)
+- **Canva**: Free (with 3-color workaround) vs Pro ($15/month, one-time)
+- **Kit**: Free (with feature loss) vs Creator ($33/month, load-bearing for Zone routing)
+- **Timeline**: Zone card production (7.5–9 hours) must start immediately May 20-24 after Gate 2 completion
+- **Impact**: Determines Track B feature set and production workflow
+- **Status**: All prerequisite decisions documented. User gates document (TRACK_B_USER_GATES.md) updated with realistic timelines.
+
+### Post-Checkpoint Execution Pipeline (Ready for May 16 21:00 UTC)
+
+**Outcome-Based Action Plan** (all pre-researched, decision trees ready):
+
+| Outcome | Item | Action | Timeline |
+|---------|------|--------|----------|
+| **PASS** (exit fired) | 51 | Gate 2 planning: options infrastructure evaluation | May 16 21:30–22:00 UTC |
+| **NEAR_MISS** (h+8) | 51 | Lever A application + monitoring activation | May 16 21:30–22:00 UTC |
+| **FAR_MISS_C1** (TBD) | 52 | Post-checkpoint decision framework | May 16 21:30–22:00 UTC |
+| **FAR_MISS_C2** (TBD) | 52 | Post-checkpoint decision framework | May 16 21:30–22:00 UTC |
+
+**All action sequences pre-documented in**: `projects/stockbot/MAY_16_CHECKPOINT_PROTOCOL.md`
+
+**Immediate post-checkpoint (May 17+)**:
+- 🔓 Resistance-research Phase 1 Wave 1 execution (once user path chosen)
+- 🔓 Stockbot Item 51-52 execution per checkpoint outcome
+- 🔓 Cybersecurity Phase 1 Tier 1 execution (once user approval received)
+
+### Exploration Queue Refresh
+
+**Current queue items** (2 active):
+- open-repo Phase 6 planning
+- seedwarden Phase 3-4 research
+
+**New items added** (to reach 5-item queue):
+1. **stockbot Item 51-research** — Post-Gate-1 options architecture evaluation (10–15 hours, ready May 16 21:00 UTC)
+   - Decision gate: Should Gate 2 activate options trading? If yes, which gaps must be closed first?
+   - Research outputs: Updated architecture spec, Gap 4 implementation plan, risk/reward analysis
+
+2. **resistance-research Phase 2 Tier sequencing** — Full Phase 2 execution roadmap by domain tier
+   - Ready immediately after Wave 1 (May 17+)
+   - Output: Week-by-week Phase 2 timeline for all three paths, resource allocation, success metrics
+
+3. **open-repo Phase 5 PR review tracking** — Monitor PR #1 and PR #2 status, identify blocking review comments
+   - Escalate to user if >3 days without review
+   - Output: PR review summary + recommended fixes for submission
+
+### Session Summary
+
+✅ Checkpoint infrastructure verified (Session 1090: all 10 checks PASS)  
+✅ Critical path documented (3 user decisions + timelines documented)  
+✅ Post-checkpoint execution pre-staged (Item 51-52 decision trees ready)  
+✅ Exploration queue refreshed (added 3 new items)  
+✅ Usage check: 78% all-models (3.3M tokens remaining, healthy budget)  
+
+⏳ **Immediate next steps**:
+1. **User makes three decisions**: Path (A/A+37/B), Cybersecurity approval, Seedwarden tier
+2. **May 16 20:00 UTC**: Checkpoint execution + outcome classification
+3. **May 16 21:00 UTC**: Post-checkpoint Item 51-52 execution + Wave 1 execution (if path decided)
+4. **May 17+**: Phase 1 execution full steam for all three approved paths
+
+**Time to checkpoint**: 23 hours 30 minutes (May 16 20:00 UTC)
+
+---
+
 ## Session 1090 — May 15, 2026, 20:06–20:30 UTC (Orchestrator — Pre-Checkpoint Verification + Wave 1 Validation)
 
 **Status**: ✅ **INFRASTRUCTURE VERIFIED — Checkpoint execution ready for May 16 20:00 UTC**
