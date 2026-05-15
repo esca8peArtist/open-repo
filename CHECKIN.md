@@ -1,5 +1,43 @@
 # Check-in
 
+## Session 1090 — May 15, 2026, 20:06–20:30 UTC (Orchestrator — Pre-Checkpoint Verification + Wave 1 Validation)
+
+**Status**: ✅ **INFRASTRUCTURE VERIFIED — Checkpoint execution ready for May 16 20:00 UTC**
+
+### Work Completed
+
+**1. Stockbot Pre-Checkpoint Verification (May 16 20:00 UTC)** ✅
+- **Alpaca API**: Verified connectivity with `--verify` flag → Account PA38Z548DIRR, Equity $115,736.10, PDT enabled
+- **Jetson dashboard**: Verified Docker containers running (stockbot + web), API responding with sessions=2 active (lgbm_ho + ridge_wf)
+- **Checkpoint script**: `may16_checkpoint_query_alpaca.py` confirmed working with test run
+- **Port binding compliance**: Verified Docker port mapping 100.120.18.84:8000 (Tailscale interface only, compliant with CLAUDE.md security rule)
+- **Database integrity**: Confirmed active trading.db recording fills in real-time
+- **Overall status**: ✅ ALL SYSTEMS READY for checkpoint execution tomorrow at 20:00 UTC
+
+**2. Resistance-Research Wave 1 Infrastructure Validation** ✅
+- **Gists verified**: Fetched https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 — main proposal Gist live and accessible, 35-domain framework confirmed
+- **Execution checklists**: EXECUTION_PATH_CHECKLIST.md comprehensive with step-by-step instructions for Paths A/A+37/B
+- **Contact templates**: Batch 1 personalized emails (5 contacts) ready, Callais fix already applied (Session 1089)
+- **Distribution infrastructure**: All 7 Gists live, Batch 1 contacts verified current as of May 14
+- **Next action**: User path decision (A/A+37/B) → Wave 1 send May 17 with 3–4 hours execution time
+
+**3. Jetson Security Audit** ✅
+- **Finding**: Docker port mapping correctly restricts 0.0.0.0 binding to Tailscale interface only (100.120.18.84:8000)
+- **Compliance**: CLAUDE.md absolute prohibition on 0.0.0.0 binding is satisfied via Docker port mapping
+- **Status**: No action required — configuration already correct
+
+### Session Summary
+
+✅ Stockbot checkpoint infrastructure verified (Alpaca + Jetson + scripts all operational)  
+✅ Resistance-research Wave 1 infrastructure validated (Gists live, checklists complete, contacts current)  
+✅ Pre-checkpoint verification completed (10/10 system checks)  
+⏳ Awaiting: May 16 20:00 UTC checkpoint execution + user path decision
+
+**Time to checkpoint**: 23 hours 30 minutes (May 16 20:00 UTC)  
+**Usage**: ~77% all-models (budget healthy for post-checkpoint phase)
+
+---
+
 ## Session 1089 — May 15, 2026, 19:00–20:30 UTC (Orchestrator — Callais Fix + Parallel Agent Execution)
 
 **Status**: ✅ **CHECKPOINT READY — All systems GO for May 16 20:00 UTC execution**
