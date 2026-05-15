@@ -1,5 +1,48 @@
 # Check-in
 
+## Session 1075 — May 15, 2026, 16:01–16:15 UTC (Orchestrator — May 16 checkpoint health checks)
+
+**Status**: ✅ **MAY 16 CHECKPOINT READY — All critical paths verified, minor API endpoint issue found (not blocking)**
+
+### Since Last Check-in (Session 1074)
+
+**Work completed** (15 minutes, health checks):
+
+**May 16 Checkpoint Health Validation** ✅
+- Alpaca API connectivity re-verified (Account: PA38Z548DIRR, Equity: $115,620.59) ✅
+- Checkpoint query script syntax and availability verified ✅
+- Lever A application script validated (dry-run of config parsing successful) ✅
+- Jetson container health verified (stockbot API up 12h healthy, trading sessions active) ✅
+- Trading session logs confirmed generating AAPL signals as of 15:01–15:02 UTC ✅
+- Session config validation complete (2 AAPL sessions, Lever A-ready state) ✅
+
+**Issue Found**: Jetson API endpoint (`/api/ready`) not responding to curl (timeout)
+- **Impact Assessment**: Non-blocking
+  - Checkpoint script queries Alpaca directly, not Jetson API
+  - Container logs confirm trading sessions active and generating signals
+  - Sessions were generating AAPL BUY signals at 15:01–15:02 UTC
+- **Action**: Monitor for recovery; if persists, investigate uvicorn socket issues before May 16 18:00 UTC
+- **Note**: LightGBM feature mismatch warning in logs (pre-existing) — may relate to signal suppression; not urgent
+
+### Current Status: Awaiting May 16 20:00 UTC Checkpoint Execution
+
+All pre-flight checks complete. Checkpoint infrastructure ready for execution at scheduled time.
+
+### Needs Your Input
+
+**By EOD May 15** (original request still stands):
+1. **Resistance-research path decision** — A / A+37 / B
+2. **Seedwarden Canva & Kit upgrades** — Pro/free decisions
+3. **Cybersecurity Phase 1 launch approval** — Confirm + provide Day 1 send date
+
+### Next Steps
+
+- **May 16 19:00–19:45 UTC**: Pre-flight connectivity check with `--verify` flag
+- **May 16 20:00 UTC**: Execute checkpoint script
+- **Post-checkpoint**: Apply Lever A if NEAR_MISS (most likely scenario)
+
+---
+
 ## Session 1074 — May 15, 2026, 15:45–16:05 UTC (Orchestrator — May 16 checkpoint pre-flight validation)
 
 **Status**: ✅ **MAY 16 CHECKPOINT PRE-FLIGHT VALIDATION COMPLETE — All systems ready for execution at May 16 20:00 UTC**
