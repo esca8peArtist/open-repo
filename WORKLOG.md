@@ -72,8 +72,10 @@
 ### Commits This Session
 
 - stockbot: `fb14ba1` (POST_CHECKPOINT_SCENARIO_READINESS.md)
-- resistance-research: WAVE_1_PRESTAGING_READINESS.md committed
+- resistance-research: WAVE_1_PRESTAGING_READINESS.md committed; `37f7e8bf` Domain 1 Callais update (April 29 decided, not pending)
 - seedwarden: TRACK_B_EXECUTION_READINESS_AUDIT.md committed
+
+**✅ CRITICAL FIX COMPLETED**: Callais v. Landry language in Domain 1 updated from "expected June-July 2026" to "decided April 29, 2026, triggering redistricting cascade." This fix ensures the Elias email attachment (Domain 1) doesn't signal stale research.
 
 ### Next Session Actions
 
@@ -84,8 +86,8 @@
 4. Update WORKLOG/PROJECTS/ORCHESTRATOR_STATE with outcome + chosen action
 
 **Awaiting user input** (required before post-checkpoint execution):
-1. Callais correction in Elias email (2 min, critical credibility issue)
-2. Seedwarden Gate 1-3 time estimate revisions (clarify realistic resource allocation)
+1. ✅ Callais correction in Elias email (2 min, critical credibility issue) — **COMPLETED** (commit 37f7e8bf)
+2. Seedwarden Gate 1-3 time estimate revisions (clarify realistic resource allocation) — flagged but not blocking; user can proceed with Track B gates aware of time requirement
 
 **Post-checkpoint (May 16-17)**:
 - If PASS: Activate Item 51 (Jetson optimization), begin Week 1 Gate 2 AAPL monitoring
