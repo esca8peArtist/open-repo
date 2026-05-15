@@ -2,6 +2,24 @@
 
 ---
 
+## May 15, 2026 — Research Agent — Career Training Gap Analysis and Index Rebuild
+
+**Status**: COMPLETE
+**Files produced**:
+- `projects/career-training/module-gap-analysis.md` (~3,100 words) — full module inventory (33 modules), coverage analysis, learning outcome mapping, and prioritized gap list with 5 new module proposals
+- `projects/career-training/module-index.md` — replaced v2.0 with v3.0 reading-order guide: three career paths (Residential GC, Industrial GC, Specialty Sub to PM) with prerequisite phases, estimated hours, and case-study scenario cross-references
+- `projects/career-training/new-module-proposals.md` (~6,800 words) — detailed outlines for 5 new modules (34–38) with learning outcomes, content structure, 3 case-study scenarios each, and production estimates
+
+**Key findings**:
+- Curriculum is deployment-ready now with 33 modules and 150 scenarios; gaps are enhancements, not blockers
+- Top gap: Residential Lookahead Scheduling (no module teaches 3-week lookahead / Last Planner System practice)
+- Second gap: Insurance Program Design — OCIP/CCIP pricing errors systematically lose GCs commercial bids
+- Third gap: Safety Program IIPP — Module 14 describes regulations; no module builds the actual program
+- Industrial GC path best-served by existing modules (Modules 01–04); multi-family / light commercial is the largest structural hole
+- Estimated 58–72 hours to write all 5 new modules; Tier 1 alone is 32–39 hours
+
+---
+
 ## May 15, 2026 — Resistance Research Agent — Phase 2 Domain Outlines: Domains 57 & 59
 
 **Status**: COMPLETE
