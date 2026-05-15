@@ -9,6 +9,14 @@
 **Quick Wins** ✅
 1. **Callais v. Landry Reference Correction** — Fixed stale "pending" language in `execution/DOMAIN_1_GIST_STAGING.md`. Case decided April 29, 2026 (6-3 ruling), not pending. This unblocks Marc Elias email send (Batch 1, Contact B1-5) for May 17. Commit: `cd1609c0`.
 
+**CRITICAL FIX** ⚠️ **Session 1090 — Configuration Error Detected and Resolved**
+1. **Lever A Premature Application** — Configuration file had Lever A values (threshold_multiplier=0.4, confidence_floor=0.45) applied before May 16 checkpoint. Lever A should ONLY be applied AFTER checkpoint IF result is NEAR_MISS (0 AAPL sells).
+2. **Root Cause** — apply_lever_a.py script was inadvertently run, setting parameters prematurely.
+3. **Immediate Fix** — Restored baseline configuration (threshold_multiplier=0.5, confidence_floor=0.5), redeployed to Jetson via rsync, restarted Docker containers.
+4. **Verification** — Jetson dashboard confirmed responding with sessions=2 active, API health check passing.
+5. **Checkpoint Integrity** — Restored. May 16 checkpoint will now execute with correct baseline parameters. Lever A will be applied ONLY IF checkpoint shows NEAR_MISS scenario.
+6. **Git Commit** — stockbot submodule commit `baaa3c8`: "fix: restore baseline configuration before May 16 checkpoint"
+
 **Parallel Agent Spawns** 🔄
 1. **Seedwarden Agent** (Background) — Resolving 4 HIGH-PRIORITY Track B issues:
    - Issue 6: Zone card PDFs missing (4-6h Canva production plan needed)

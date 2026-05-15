@@ -12,7 +12,12 @@
 - **Checkpoint script**: `may16_checkpoint_query_alpaca.py` confirmed working with test run
 - **Port binding compliance**: Verified Docker port mapping 100.120.18.84:8000 (Tailscale interface only, compliant with CLAUDE.md security rule)
 - **Database integrity**: Confirmed active trading.db recording fills in real-time
-- **Overall status**: ✅ ALL SYSTEMS READY for checkpoint execution tomorrow at 20:00 UTC
+- **Configuration integrity**: ⚠️ CRITICAL ISSUE DETECTED AND FIXED
+  - **Issue**: Configuration file had Lever A values (threshold_multiplier=0.4, confidence_floor=0.45) applied prematurely before checkpoint
+  - **Root cause**: apply_lever_a.py script inadvertently executed
+  - **Resolution**: Restored baseline values (0.5, 0.5), redeployed to Jetson, restarted containers
+  - **Verification**: Jetson API responding correctly with baseline config
+- **Overall status**: ✅ ALL SYSTEMS READY for checkpoint execution tomorrow at 20:00 UTC (CORRECTED)
 
 **2. Resistance-Research Wave 1 Infrastructure Validation** ✅
 - **Gists verified**: Fetched https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 — main proposal Gist live and accessible, 35-domain framework confirmed
