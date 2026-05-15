@@ -1,6 +1,52 @@
 # Check-in
 
-## Session 1031 — May 15, 2026, 02:30–05:00 UTC (Phase 2 Research Production Complete)
+## Session 1032 — May 15, 2026, 03:13 UTC (Domains 38-40 Distribution Integration Complete)
+
+**Status**: ✅ **DOMAINS 38-40 DISTRIBUTION INTEGRATION COMPLETE. ALL THREE DOMAINS INTEGRATED INTO PROPOSAL, TEMPLATES, AND DISTRIBUTION STRATEGY. READY FOR PHASE 1 DISTRIBUTION EXECUTION.**
+
+### Since Last Check-in (Session 1031, May 15 02:30–05:00 UTC)
+
+**Major Accomplishments**:
+
+**1. Phase 2 Distribution Integration — Full Coordination Complete** ✅
+
+- **Proposal Integration**: Updated `democratic-renewal-proposal.md` with Domains 38-40 full sections (Part II, lines 2167-2263), cross-domain synthesis, international benchmarks, and fiscal analysis
+  - Domain count: 28→31 in proposal
+  - All three domains now part of complete 31-domain framework
+
+- **Executive Summary**: Updated `democratic-renewal-executive-summary.md` with domain count 28→31 and three new domain rows with key findings and distribution targets
+
+- **Distribution Templates Created**:
+  - **Substack Posts 8-10**: New posts with publication hooks (EU AI Act Aug 2, HHS June 1, pre-election)
+  - **Institutional Templates 12-14**: AI Governance (Template 12), Healthcare (Template 13, TIMING CRITICAL), Election Protection (Template 14)
+  - **Reddit**: Updated cross-references
+
+- **Distribution Coordination**: Created `DOMAINS_38_40_DISTRIBUTION_SEQUENCE.md` with:
+  - Hard deadlines and advocacy windows (Domain 39 June 1, Domains 38-40 July 15-November 3)
+  - Wave sequencing (immediate, July 15, September-October)
+  - Per-domain target organizations and contact approach notes
+  - Cross-domain coordination requirements
+  - Post-distribution tracking metrics
+
+- **INDEX.md Updated**: Added new domains to cross-reference index with distribution priority structure
+
+**Coordination Notes for Execution**:
+- **Domain 39 (Healthcare)**: Time-critical June 1 HHS deadline. APA notice-and-comment is exempted — advocacy flows through litigation, congressional, state channels. Primary targets: CBPP, Georgetown CCF, NHeLP, state AGs, IRG.
+- **Domains 38 & 40**: July 15 distribution window with August 2 EU AI Act enforcement hook. Recommend staggering outreach 3-5 days to avoid inbox collision at shared targets.
+- **Domain 40 Electoral Deadline**: November 3, 2026. September distribution needed for election protection organization integration into 2026 operations.
+
+**2. Stockbot Checkpoint — Final Verification** ✅
+- Checkpoint script (`may14_checkpoint_query_alpaca.py`) verified present and ready (391 lines, modified May 13)
+- User execution timeline confirmed: 18:00 UTC (Alpaca verify), 19:00 UTC (Jetson ping), 20:00 UTC (run query)
+- All decision tree and post-checkpoint materials documented in MAY_14_CHECKPOINT_EXECUTION_GUIDE.md
+- Checkpoint scheduled T-16h 47m from session start
+
+**3. Block Resolution Assessment** ✅
+- No active blocks requiring orchestrator action
+- mfg-farm test-print block remains user-action dependent (no change)
+- All previously resolved blocks remain resolved
+
+### Current Project States
 
 **Status**: ✅ **PHASE 2 DOMAINS 38-40 RESEARCH PRODUCTION COMPLETE. ALL THREE DOMAINS (20,800 WORDS, 142 CITATIONS) COMMITTED AND READY FOR DISTRIBUTION STAGING. CHECKPOINT AT 20:00 UTC TODAY — FULLY PREPARED FOR USER EXECUTION.**
 
