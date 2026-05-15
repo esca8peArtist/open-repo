@@ -420,7 +420,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: **Checkpoint 20:00 UTC TODAY (T-17.5h from session start). Execution guide COMPLETE** (Session 1017, `MAY_14_CHECKPOINT_EXECUTION_GUIDE.md`). AAPL h+10 exit at 13:30 UTC today. Pre-checkpoint timeline 18:00–20:00 UTC documented. All verification complete: checkpoint script 391 lines (corrected TypeError), HMM scalar 46/46 tests, vol scalar 28/28 tests, position sizing integrated correctly. Decision tree ready for all four outcomes (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2). Post-checkpoint response protocols documented per outcome. Expected outcome: NEAR-MISS B1. 
+**Current focus**: **Checkpoint 20:00 UTC TODAY (May 15, T-16.8h from session start 03:19 UTC). Execution guide COMPLETE.** AAPL h+10 exit scheduled for May 14 13:30 UTC (yesterday). If executed, checkpoint should show PASS scenario. Checkpoint script `scripts/may14_checkpoint_query_alpaca.py` ready (queries Alpaca API directly since May 5). Decision tree ready for all four outcomes (PASS/NEAR_MISS/FAR_MISS_C1/FAR_MISS_C2). Post-checkpoint response protocols in `POST_GATE_1_RESPONSE_FRAMEWORK.md`. **User actions TODAY at May 15**: (1) 19:00 UTC: SSH ping Jetson + `curl /api/ready` to confirm session count; (2) 18:00 UTC: `uv run python scripts/may14_checkpoint_query_alpaca.py --verify` for Alpaca connectivity; (3) 20:00 UTC: run full checkpoint query; (4) classify outcome and follow response framework.
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`
@@ -429,15 +429,13 @@
 - **Test coverage**: 144 unit tests, all passing. Zero regressions to existing 1,100+ test suite.
 - **Impact**: Permanent solution to position-sizing collision; ready for Jetson deployment
 
-**Post-checkpoint work**: ARCH-4 cross-session concentration check integrated into new framework. **User actions at May 14**: (1) 19:00 UTC: SSH ping Jetson + `curl /api/ready` to confirm session count; (2) 18:00 UTC: `uv run python scripts/may14_checkpoint_query_alpaca.py --verify` for Alpaca connectivity; (3) 20:00 UTC: run full checkpoint query; (4) classify PASS/NEAR_MISS/FAR_MISS and follow POST_GATE_1_RESPONSE_FRAMEWORK.md.
-
 
 **Comprehensive options backtesting — COMPLETE (Session 900)** (prior):
 - `projects/stockbot/BACKTEST_REPORT_2026-05-08.md` extended from 790 to 1,423 lines with 6 new analytical sections
 - Key Finding: META_LGB_v1 (regime_only) achieves +41.96% return with Sharpe 1.84, Alpha +38.28%
 - Deployment Ready: Three-model portfolio (META + MSFT + SPY) projects +27.78% return, 1.53 Sharpe, -10.17% MaxDD
 
-**Blocked on**: — resolved 2026-05-13 00:18 UTC: should be complete several days ago, please confirm
+**Blocked on**: None — Gate 1 checkpoint infrastructure ready. Awaiting checkpoint execution at 20:00 UTC today (May 15).
 
 **Session 829 (2026-05-06) — MAY 12 OUTCOME ROADMAP COMPLETE (Exploration Queue)**:
 - **Deliverable**: `MAY_12_OUTCOME_ROADMAP.md` created — single actionable reference for May 13 morning
