@@ -1,5 +1,58 @@
 # Check-in
 
+## Session 1050 — May 15, 2026, 10:14–11:30 UTC (Orchestrator — Queue Refresh + Gate 2 Options Analysis)
+
+**Status**: ✅ **EXPLORATION QUEUE REFRESHED — 3 new items added. stockbot Gate 2 options analysis complete. All projects in holding pattern awaiting May 16 checkpoint and user decisions.**
+
+### Since Last Check-in (Session 1049, May 15 11:15 UTC)
+
+**Work completed (40 min)**:
+
+1. **Exploration Queue Refresh**: Added 3 new high-priority items (49–51) for post-May-16 work:
+   - Item 49 (COMPLETED): stockbot — Gate 2 Options Strategy Viability Analysis
+   - Item 50 (Queued): resistance-research — Phase 2 Candidate Prioritization Matrix (2–3 hrs)
+   - Item 51 (Queued): mfg-farm — Post-Test-Print Production Scaling Roadmap (2–3 hrs)
+
+2. **Exploration Item 49: stockbot Gate 2 Options Viability Analysis** ✅
+   - **Deliverable**: `projects/stockbot/research/gate-2-options-viability-may16.md` (2,800 words)
+   - **Key verdict**: Covered calls viable ONLY if Gate 1 passes with Sharpe ≥ 1.0
+   - **Four scenarios documented**:
+     - PASS (Sharpe ≥ 1.0, 20–25% likelihood): Gate 2 immediate activation May 19+, target $744/month net premium
+     - NEAR_MISS (Sharpe 0.75–0.99, 30–35% likelihood): Defer options, pursue multi-ticker equity expansion instead, re-checkpoint June 9
+     - FAR_MISS_C1 (Sharpe 0.5–0.74, 35–40% likelihood): Root cause analysis May 17–19, retry June 12
+     - FAR_MISS_C2 (Sharpe < 0.5, 5–10% likelihood): System failure, post-mortem investigation, suspend paper trading
+   - **Capital analysis**: $75K available for options (covered call collateral) vs. $647K available for equity expansion. Equity scaling is higher priority at Sharpe < 1.0.
+   - **Business impact**: Eliminates post-checkpoint decision lag; user can approve action within hours of May 16 result
+   - **Status**: Production-ready for execution May 17+
+
+### Project Status Summary (May 15, 11:30 UTC)
+
+| Project | Status | Blocker | Next Action | Timeline |
+|---------|--------|---------|-------------|----------|
+| **stockbot** | May 16 checkpoint T-33h | None; infrastructure verified | Execute checkpoint 20:00 UTC; apply Gate 2 decision tree | May 16 20:00 UTC |
+| **resistance-research** | Phase 1 COMPLETE; Phase 2 Domains 57/59 ready | User path decision | **USER DECISION**: Path A/A+37/B → triggers Wave 1 timing | May 15+ (urgent) |
+| **mfg-farm** | All pre-print COMPLETE | Test print execution (user action) | User executes test print; post-print: Item 51 deployment | May 19–31 |
+| **seedwarden** | Track B ready (gates 1-3) | Etsy verification (user action) | **USER ACTION**: Submit Etsy ID verification TODAY | May 15 (critical) |
+| **cybersecurity-hardening** | Tier 1–2 COMPLETE | User approval for Phase 1 launch | **USER APPROVAL**: Confirm launch + Day 1 send date | May 15+ |
+| **career-training** | 150 scenarios COMPLETE; module index ready | None | Curriculum ready for deployment | Post-checkpoint |
+| **open-repo** | PRs #1 & #2 open | Maintainer review | Awaiting merge | TBD |
+
+### Critical User Actions Needed TODAY (May 15)
+
+1. **URGENT — Seedwarden Track A**: Submit Etsy biometric ID verification (45 min action). Best-case May 16 clearance if submitted TODAY; worst-case May 22 if delayed to May 16. Delay to May 19 = May 26 clearance (tracks May 30 launch dangerously).
+
+2. **HIGH PRIORITY — Resistance-Research Path Decision**: Choose Path A (immediate Wave 1 May 15–17) / Path A+37 (dual-track Phase 1 + Domain 37 research) / Path B (soft engagement May 20-June 10). Impact: Phase 2 launch date (June 10 vs. June 15) and November 3 election deadline for Domains 59.
+
+3. **UPCOMING — Cybersecurity-Hardening Phase 1 Approval**: Confirm Phase 1 launch approval + Day 1 send date (Day 1 = Tier 1 first-contact sequence start).
+
+### Next Session Triggers
+
+1. **May 16, 20:00 UTC**: May 16 h+12 checkpoint execution. Immediately apply Gate 2 decision tree (PASS/NEAR-MISS/FAR-MISS) to unlock Gate 2 strategy.
+2. **Post-checkpoint**: If stockbot PASS → run Items 50–51 (Phase 2 prioritization, post-test-print roadmap).
+3. **User decision**: Once resistance-research path selected → Phase 1 Wave 1 execution May 15–17 (or May 20+ per path).
+
+---
+
 ## Session 1049 — May 15, 2026, 10:45–11:10 UTC (Orchestrator — Pre-Checkpoint Status + Exploration Queue Complete)
 
 **Status**: ✅ **ALL EXPLORATION QUEUE ITEMS COMPLETE — Phase 2 research outlines ready, curriculum audit finished, checkpoint infrastructure verified. All pre-May-16 autonomous work done. Orchestrator standing by for checkpoint execution and user decisions.**
