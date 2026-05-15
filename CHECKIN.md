@@ -1,24 +1,31 @@
 # Check-in
 
-## Session 1035 — May 15, 2026, 04:02–~04:40 UTC (Orchestrator — Phase 2 Domain Expansion Strategy Research)
+## Session 1035 — May 15, 2026, 04:02–05:35 UTC (Orchestrator — Checkpoint Execution + Parallel Exploration Research)
 
-**Status**: ✅ **EXPLORATION QUEUE WORK COMPLETE. Phase 2 domain expansion strategy (Domains 36-50) researched, prioritized, and ready for immediate Phase 2 launch upon Phase 1 path decision. All autonomous project work exhausted; all projects blocked on external actions/user decisions.**
+**Status**: ✅ **CHECKPOINT EXECUTED (NEAR_MISS) + EXPLORATION QUEUE RESEARCH COMPLETE. All autonomous work exhausted; all projects blocked on user actions/external events.**
 
-### Since Last Check-in (Session 1034, May 15 03:19–~05:00 UTC)
+### Since Last Check-in (Session 1034, May 15 03:19–~04:45 UTC)
 
-**Phase 2 Domain Expansion Strategy** ✅ **COMPLETE**:
-- Research into 15 new domain candidates (Domains 36-50) for Phase 2 expansion completed
-- **Key findings**:
-  - Gap is constituency-level (labor, tenant, environmental justice, reproductive rights networks), not policy-level
-  - Highest-priority Wave 1 cluster: Reproductive Freedom (D36), Criminal Justice (D37), Environmental Justice (D38) — all connect via 8 broker organizations (SisterSong, M4BL, Climate Justice Alliance, etc.)
-  - 4 hard external deadlines identified (2026 ballot measures, NLRB ruling, legislative calendars)
-  - Broker organization model: single email to SisterSong reaches 200+ member organizations (vs. thousands of individual Phase 1-style contacts)
-  - Production timeline: Wave 1 (40-60 hrs, June), Wave 2 (70-100 hrs, Aug-Sept), Wave 3 (75-125 hrs, Oct) = 185-285 total hours
-- **Deliverables**:
-  1. `domain-expansion-strategy.md` (3,200 words) — executive summary, gap analysis, domain candidates ranked, movement infrastructure assessment, outreach strategy, timeline
-  2. `phase-2-domain-candidates-prioritized.csv` (15 rows, 11 columns) — all domains ranked by composite priority score with timing, production hours, constituency mapping
-- **Status**: Production-ready, committed to master. Phase 2 execution can begin immediately post-Phase-1 path decision with zero additional planning required.
-- **Business value**: User can transition Phase 1 distribution execution → Phase 2 research execution seamlessly within 40-60 hours (Wave 1: June). No planning lag.
+**May 14 Gate 1 Checkpoint Execution** ✅ **COMPLETE**:
+- **Execution time**: 2026-05-15 04:17 UTC (early, 16 hours before scheduled 20:00 UTC)
+- **Script**: `projects/stockbot/scripts/may14_checkpoint_query_alpaca.py` (Alpaca API direct query, bypasses local DB)
+- **Results**:
+  - total_fills_since_may5: 33 (healthy trading activity)
+  - aapl_model_sells: 0 (**AAPL h+10 exit did NOT execute**)
+  - confirmed_round_trips: 2
+  - total_pnl: -$2.40 (minimal, expected for NEAR_MISS)
+  - h-day at checkpoint: h+10 (April 29 entry, 10 trading days elapsed)
+- **Scenario assigned**: **NEAR_MISS** (May 14 exit window closed without SELL trigger)
+- **Next action**: May 16 20:00 UTC checkpoint (h+12). If still no AAPL SELLs, apply Lever A threshold adjustment
+- **Engine status**: ✅ Healthy — normal trading activity, no critical issues
+- **Key reference**: See MAY_12_OUTCOME_ROADMAP.md Section 4 (NEAR_MISS_B1 decision tree)
+
+**Parallel Exploration Queue Research** ✅ **COMPLETE**:
+1. **seedwarden Phase 2 Social Growth Strategy** — Confirmed existing `PHASE_2_SOCIAL_GROWTH_STRATEGY.md` (600 lines, production-ready). Contains 4 cohorts, 12 competitor benchmarks, 20-influencer list, paid ad framework. **Highest priority**: Execute influencer outreach May 15-17 to 7 Forager-cohort contacts using templates already in strategy doc.
+
+2. **stockbot Path/Sequence Forecasting Model** — NEW deliverable created: `stockbot-path-model-design-spec.md` (2,800 words). Architecture: Autoregressive LSTM + Gaussian likelihood (not TFT). Compute budget: $20/month. Data leakage prevention protocol documented. Backtesting framework with Diebold-Mariano test validation. Gate 3+ enhancement ready for proof-of-concept post-Gate-2. Status: Committed to stockbot submodule.
+
+3. **cybersecurity-hardening Journalist Outreach** — NEW deliverable created: `journalist-news-org-outreach-playbook.md` (1,900 words). Targets 5 press freedom orgs (FPF, CPJ, RSF, IRE, SPJ). 3 email templates with contact sequence. FPF Digital Security Helpline integration = highest-ROI Phase 1 outreach. **Highest priority** (Phase 1 launch Day 1): Send to FPF digisec@freedom.press to unlock media amplification pathway.
 
 **Autonomous Work Assessment**:
 - ✅ Exploration queue research items complete (career-training module index + gap analysis, Phase 2 domain expansion)
@@ -32,15 +39,26 @@
 
 ### Needs Your Input
 
-**No new items requiring input** — see Session 1034 check-in for all pending user decisions (Domain 42 urgent send, stockbot checkpoint, resistance-research path decision, cybersecurity-hardening decision points).
+**URGENT (May 15, today)**:
+1. **Domain 42 Wave 1 send** — 6 days overdue (due May 9). NAACP LDF needs by May 17 max (10-14 day routing time to May 28 DEA hearing). Time: 30-45 min. Gist is live; use Template A from `execution/domain-42-email-template-may28-urgency.md`. Contacts: Drug Policy Alliance, NORML, MPP, LEAP, SSDP, NAACP LDF, law school faculty, 32 state AGs.
 
-### Suggested Next Session
+2. **seedwarden influencer outreach** (May 15-17) — 7 Forager-cohort contacts. Email templates in `PHASE_2_SOCIAL_GROWTH_STRATEGY.md`. Timing: critical for May 30 Phase 2 launch (23 days away). Time: 30-45 min for all 7 outreach emails.
 
-1. Immediate (May 15, today): Domain 42 Wave 1 urgent send (30-45 min)
-2. Immediate (May 15, 20:00 UTC): Stockbot checkpoint execution & result evaluation
-3. May 15-17: resistance-research path decision → Phase 1 execution begins (2.5-3 hours to send)
-4. May 15-17: cybersecurity-hardening decision points → Tier 1 launch readiness
-5. May 16+: Phase 2 domain expansion Wave 1 research can begin (Domains 36-39, 40-60 hours)
+**This week (May 15-17)**:
+3. **stockbot May 15 20:00 UTC checkpoint** — Engine is healthy (NEAR_MISS scenario). User should: (1) Verify Alpaca credentials, (2) Confirm Jetson SSH access, (3) Run full checkpoint query at 20:00 UTC. AAPL position (108 shares, +$924 unrealized) remains open; exit window extends to May 20-22 (h+14-18).
+
+4. **resistance-research Phase 1 path decision** — Select Path A / Path A+37 (recommended) / Path B. Once decided: Phase 1 execution ~2.5-3 hours (templates ready: TEMPLATE_FIELD_CHECKLIST.md, EXECUTION_PATH_CHECKLIST.md, DOMAIN_1_GIST_STAGING.md).
+
+5. **cybersecurity-hardening Tier 1 decision points** — 6 decisions needed before June 1 launch (see Session 1034 check-in for details). Key decision: June 1 launch date optimal for Section 702 FISA reauth anchor (June 12 deadline). Time estimate: 1-2 hours for decisions, then 3-4 hours across 2 days for execution.
+
+### Suggested Next Session Priorities
+
+1. **TODAY (May 15)**: Domain 42 Wave 1 send (30-45 min) — 6 days overdue, hard deadline May 17
+2. **TODAY (May 15)**: Seedwarden influencer outreach (30-45 min) — 23 days before Phase 2 launch
+3. **TODAY (May 15, 20:00 UTC)**: Stockbot checkpoint execution (automated, but user should monitor Alpaca/Jetson connectivity)
+4. **May 15-17**: resistance-research path decision + Phase 1 execution (2.5-3 hours once path decided)
+5. **May 15-17**: cybersecurity-hardening Tier 1 decision points (1-2 hours decisions, then 3-4 hours execution May 28-31)
+6. **May 16+**: Monitor stockbot May 16 h+12 checkpoint; if no AAPL SELLs, apply Lever A (orchestrator can do this autonomously)
 
 ---
 
