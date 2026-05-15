@@ -36,21 +36,19 @@
 
 ### Needs Your Input (BY EOD TODAY — May 15)
 
-⏳ **Two critical corrections needed before post-checkpoint execution**:
+✅ **Resistance-Research: Callais v. Landry Language Correction — COMPLETED**
+- **File**: `projects/resistance-research/domains/domain-01-voting-rights-elections.md`
+- **Change**: Updated line 240 from "expected June-July 2026" to "decided April 29, 2026, triggering redistricting cascade"
+- **Commit**: `37f7e8bf`
+- **Impact**: Elias email attachment (Domain 1) no longer signals stale research. Wave 1 send ready.
 
-1. **Resistance-Research: Callais v. Landry Language Correction**
-   - **File**: `projects/resistance-research/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` (section with Marc Elias email template)
-   - **Change**: Replace "Callais v. Landry pending" with "Callais v. Landry decided April 29 (6-3 map struck as unconstitutional racial gerrymander)"
-   - **Impact**: 2-minute fix. Critical for credibility with most legally sophisticated Batch 1 contact.
-   - **Deadline**: Before May 17 Batch 1 send
-
-2. **Seedwarden: Realistic Gate Timeline Revision**
-   - **Issue**: Track B gates document needs to be revised with realistic time estimates (Issue 5)
-   - **Recommendation**: Revise "45-60 min for Gate 3" → "3-5 hours per day May 24-27" (distributed across days, not single session)
-   - **Recommendation**: Add explicit warning about zone card production dependency (Issue 6) — must start immediately after Gate 2 completes
-   - **Recommendation**: Link Gate 3 to full `PHASE_2_GO_NO_GO_DASHBOARD.md` Section 2 audit procedure (Issue 7)
-   - **Recommendation**: Add "Phone ready for TikTok" as Gate 1 prerequisite (Issue 1)
-   - **Deadline**: Before user begins Gate 1 (May 15-18 window)
+⏳ **Seedwarden: Realistic Gate Timeline Revision (informational, not blocking)**
+- **Issue**: Track B gates document has time estimates that don't match actual work (Issue 5-7)
+- **Recommendation**: User should allocate 15-20 hours for Gates 1-3 (May 15-28), not 3 hours as currently estimated
+- **Recommendation**: Zone card production (Issue 6) requires 4-6 hours after Gate 2, must start immediately
+- **Recommendation**: Gate 1 prerequisite (Issue 1): have phone ready for TikTok mobile-app-only access
+- **Note**: Gates document is correct procedurally. These are resource expectation clarifications, not blocking execution.
+- **Deadline**: Before user begins Gate 1 (May 15-18 window) — informational only
 
 ### Autonomous Work Completed This Session
 
