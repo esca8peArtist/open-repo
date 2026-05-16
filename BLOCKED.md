@@ -31,6 +31,23 @@ When the block is resolved (Resolution written OR Verify command passes):
 
 ---
 
+### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
+**Date blocked**: 2026-05-16
+**Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
+**Progress so far**:
+- ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
+- ✅ 1.2 iPhone tracking — steps 1-3 done (tracking off, location audited, personalized ads off). Step 4 (Advanced Data Protection) pending 24-48hr Apple security delay — complete tomorrow
+- 🔄 1.3 VeraCrypt — installed, encryption wizard run, **needs restart to complete pre-boot test**, then click Encrypt to start background encryption
+- ⏳ 1.4 Ente Auth — not started (install from App Store, switch email + financial accounts off SMS 2FA, set carrier SIM PIN)
+- ⏳ 1.5 Bitwarden password manager — not started
+- ⏳ 1.6 Data broker opt-outs — not started (10 sites + 3 federal opt-outs, ~45 min)
+- ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
+**What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
+**Verify with**: `# manual — cannot auto-verify`
+**Resolution**: [leave blank]
+
+---
+
 ### mfg-farm — Test print execution (user action required)
 **Date blocked**: 2026-05-13
 **Context**: All pre-print deliverables are complete: ModRun cable clip designs (`modrun_rail.py`, `modrun_clip.py`), Etsy listing copy, supplier scorecard, production cost model. Test print is required to evaluate snap-arm tolerance (1.4mm is highest-risk feature) and validate design before production scale.
