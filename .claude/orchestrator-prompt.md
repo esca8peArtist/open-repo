@@ -98,6 +98,8 @@ If BLOCKED.md has no changes, `git add` will silently skip it — that is fine. 
 
 ## Working Rules
 
+0. **CRITICAL — Never overwrite resolved state in PROJECTS.md**: When writing or updating a project's `**Current focus**:` line, you MUST first `Read` that field's current value directly from `PROJECTS.md` (not from ORCHESTRATOR_STATE.md — its Focus lines are truncated at 500 chars and may be stale). If the current value starts with `[RESOLVED ...]` or `[PATH DECIDED ...]`, preserve that marker at the front of the new value. Never reconstruct a focus line purely from memory or from ORCHESTRATOR_STATE.md context — always read the source of truth first.
+
 1. Never push to `main` or `master` branches — write to CHECKIN.md needs-approval section instead
 2. `open-source-rideshare` only: push to feature branches freely
 3. All other projects: commit locally, do not push to any remote

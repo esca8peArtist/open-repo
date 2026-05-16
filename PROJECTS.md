@@ -69,13 +69,13 @@
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **Phase 1 WAVE 1 READY FOR USER PATH DECISION (May 15-16) + PHASE 2 PATH-SPECIFIC EXECUTION ROADMAP COMPLETE (Session 1088)**. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, templates ready for all paths A/A+37/B, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap maps all three paths with domain sequencing (Tiers A/B/C), research timeline, distribution waves, resource allocation, success metrics. Ready for immediate post-decision execution (May 17+). Next: User path decision → Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August per path. 
+**Current focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088).
 
 **Phase 2 DOMAINS 56 + 58 RESEARCH COMPLETE**:
   - **Domain 56** (Civil Service Politicization, 47 citations): H.R. 492/S. 134 legislative window June 1-30, DOJ Voting Section collapse (6 attorneys from 30), highest-leverage: Partnership for Public Service + AFGE briefing May 19-23
   - **Domain 58** (Tribal Sovereignty, 60 citations, 9,400 words): Montana SB 490 post-*Callais* voting rights victory (May 11 injunction), BIA reorganization 13% workforce loss, Turtle Mountain v. Howe redistributed May 28, rapid-response protocol for Trump v. Barbara ruling (June-July expected)
 
-**REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 59 (Economic Precarity, 50-60 hrs, June 15-July 15), Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). Total remaining Phase 2 production estimate: 90-110 hours across Q2-Q3 2026. Ready for Phase 1 distribution execution (awaiting user decision: Path A / A+37 / B) + Phase 2 research execution immediately or post-Wave-1.
+**REMAINING Phase 2 CANDIDATES IDENTIFIED**: Domain 59 (Economic Precarity, 50-60 hrs, June 15-July 15), Domain 57 (Multilateral Withdrawal, 40-50 hrs, July 15-Aug 15). Total remaining Phase 2 production estimate: 90-110 hours across Q2-Q3 2026. Phase 1 path decided (Path A + Domain 37); Phase 2 research execution proceeds immediately or post-Wave-1.
 
 **Session 1031 — Phase 2 DOMAINS 38–40 COMPLETE — PRODUCTION FINISHED (May 15, 02:30–04:45 UTC)** ✅:
 

@@ -102,10 +102,42 @@ def _update_blocked_field(filepath: Path, field_re: str, project: str, new_value
     return old_value
 
 
+def _prepend_focus_resolution(filepath: Path, project: str, marker: str) -> bool:
+    """Prepend a resolution marker to **Current focus**: (PROJECTS.md) or
+    **Focus**: (ORCHESTRATOR_STATE.md) for the given project section.
+    Returns True if the field was found and updated."""
+    lines = filepath.read_text().splitlines(keepends=True)
+    in_project = False
+    result_lines = []
+    updated = False
+    # Match both field names used across the two files
+    focus_re = re.compile(r'^(\*\*(?:Current focus|Focus)\*\*:\s*)(.*)', re.DOTALL)
+    for line in lines:
+        if re.match(r'^### ', line):
+            in_project = bool(re.match(r'^### ' + re.escape(project) + r'\b', line, re.IGNORECASE))
+        if in_project and not updated:
+            m = focus_re.match(line.rstrip('\n'))
+            if m:
+                prefix, rest = m.group(1), m.group(2)
+                # Don't double-stamp if already resolved
+                if not rest.startswith('[RESOLVED') and not rest.startswith('[PATH DECIDED'):
+                    line = f"{prefix}{marker} {rest}\n"
+                    updated = True
+                    in_project = False
+        result_lines.append(line)
+    if updated:
+        tmp = filepath.with_suffix('.tmp')
+        tmp.write_text(''.join(result_lines))
+        os.replace(tmp, filepath)
+    return updated
+
+
 def resolve_project_block(project: str, note: str, timestamp: str) -> str:
-    """Directly update **Blocked on** in PROJECTS.md and **Blocked** in
-    ORCHESTRATOR_STATE.md for an immediate, persistent resolution."""
+    """Update **Blocked on** + **Current focus** in PROJECTS.md and the
+    matching fields in ORCHESTRATOR_STATE.md so the resolution survives
+    into the next orchestrator session without being overwritten."""
     cleared = f"— resolved {timestamp}: {note}"
+    focus_marker = f"[RESOLVED {timestamp}: {note}]"
     updated = []
 
     try:
@@ -115,13 +147,27 @@ def resolve_project_block(project: str, note: str, timestamp: str) -> str:
     except Exception as e:
         return f"⚠️ Error updating PROJECTS.md: {e}"
 
+    # Also stamp **Current focus** so the resolution survives orchestrator rewrites
+    try:
+        if _prepend_focus_resolution(PROJECTS, project, focus_marker):
+            updated.append("PROJECTS.md (**Current focus**: resolution marker prepended)")
+    except Exception:
+        pass
+
     state_file = WORKSPACE / "ORCHESTRATOR_STATE.md"
     try:
         old2 = _update_blocked_field(state_file, r'\*\*Blocked\*\*:', project, cleared)
         if old2 is not None:
-            updated.append("ORCHESTRATOR_STATE.md (live view updated)")
+            updated.append("ORCHESTRATOR_STATE.md (**Blocked** updated)")
     except Exception:
-        pass  # state file is auto-generated; PROJECTS.md update is what matters
+        pass
+
+    # Also update **Focus** in ORCHESTRATOR_STATE.md — this is what the orchestrator reads
+    try:
+        if _prepend_focus_resolution(state_file, project, focus_marker):
+            updated.append("ORCHESTRATOR_STATE.md (**Focus**: resolution marker prepended)")
+    except Exception:
+        pass  # state file is auto-generated; PROJECTS.md updates are what matter
 
     if not updated:
         return (
