@@ -16,8 +16,8 @@
 > To recalibrate limits: `python3 scripts/usage-check.py --calibrate <sonnet_pct> <all_pct>`
 
 **Calibrated limits** (back-calculated from UI — update after each weekly reset):
-- **Sonnet token limit: 8,935,000**  ← calibrated 2026-04-26 (UI showed 22%)
-- **All models token limit: 15,114,000**  ← calibrated 2026-04-26 (UI showed 14%)
+- **Sonnet token limit: 64,293,300**  ← calibrated 2026-05-17 (UI showed 5.0%)
+- **All models token limit: 259,556,780**  ← calibrated 2026-05-17 (UI showed 5.0%)
 
 **Alert thresholds** (handled by `scripts/usage-monitor.py`, runs every 30 min via cron):
 - Every 10% crossed → Discord notification
@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088).
+**Current focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088). **NEW INBOX ITEM (2026-05-16)**: Research volunteer opportunities within 15-min drive of Topgolf Katy Freeway, Houston TX (570 Katy Freeway) — orgs focused on social justice, government advocacy, civic engagement, at-risk youth, community organizing, housing/homelessness, food insecurity, legal aid. For each: name, mission, address, distance, volunteer roles, signup info, website/contact. Deliver to `houston-volunteer-orgs.md` (personal use, not for distribution). Prioritize ongoing regular slots (not one-time events).
 
 **Phase 2 DOMAINS 56 + 58 RESEARCH COMPLETE**:
   - **Domain 56** (Civil Service Politicization, 47 citations): H.R. 492/S. 134 legislative window June 1-30, DOJ Voting Section collapse (6 attorneys from 30), highest-leverage: Partnership for Public Service + AFGE briefing May 19-23
@@ -822,7 +822,7 @@
 **Priority**: High
 **Status**: Active — **Phase 1 Individual-scale NEARLY COMPLETE** (5 of 6 domains done; education queued). Completed: 01-water.md, 02-food.md, 03-shelter.md, 05-healthcare.md. Midwest reference docs: extreme-weather.md (complete), calendar.md (complete, 10.3K words, 33 citations).
 **Working dir**: `projects/systems-resilience/`
-**Current focus**: Completing individual-scale documentation + Midwest reference library. COMPLETED: water, food, shelter, healthcare (all Midwest-specific protocols, progressive disclosure, 30+ citations); extreme-weather, calendar (cross-domain timing + seasonal risk management). NEXT: (1) individual/06-education.md (self-directed learning when institutions fail), (2) individual/04-energy.md (solo power needs, grid-tied backup), (3) midwest/foraging-species.md (Zone 5 wild edibles + medicinal plants). Then scale to household/community tier.
+**Current focus**: Completing individual-scale documentation + Midwest reference library. COMPLETED: water, food, shelter, healthcare (all Midwest-specific protocols, progressive disclosure, 30+ citations); extreme-weather, calendar (cross-domain timing + seasonal risk management). **NEW INBOX ITEMS (2026-05-16)**: (A) Research moisture extraction machines + farm tools (schematics, instructions, manual versions), (B) Enhance healthcare.md with holistic/plant-based medicine info, enhance agriculture section with regenerative agriculture + native American methods. NEXT: (1) individual/06-education.md (self-directed learning when institutions fail), (2) individual/04-energy.md (solo power needs, grid-tied backup), (3) midwest/foraging-species.md (Zone 5 wild edibles + medicinal plants), (A) moisture extraction research, (B) healthcare/agriculture enhancements. Then scale to household/community tier.
 **Dependencies**: Pulls from off-grid-living (existing depth), seedwarden (foraging + hunting + container growing content)
 
 ---

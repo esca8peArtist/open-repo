@@ -1,5 +1,131 @@
 # Check-in
 
+## Session 1098 — May 17, 2026, 00:15–01:30 UTC (Orchestrator — INBOX Processing + Parallel Agent Execution)
+
+**Status**: ✅ **SESSION COMPLETE — Systems-Resilience Research Delivered, Resistance-Research Wave 1 Prep Ready**
+
+### Accomplishments This Session
+
+**1. INBOX Processing (3 new items, 2026-05-16)**
+- ✅ Processed 3 new items from INBOX.md
+- ✅ Added items to project focus lines in PROJECTS.md (systems-resilience x2, resistance-research x1)
+- ✅ Cleared INBOX.md
+- ✅ Logged to INBOX.md Processing Log
+
+**2. Systems-Resilience Research — 3 New Deliverables ✅**
+
+Spawned research agent to address user INBOX requests. All research items committed to master:
+
+**(A) Moisture Extraction + Farm Tools** (`midwest/moisture-extraction-farm-tools.md` — 389 lines):
+- Three atmospheric moisture extraction methods: modified dehumidifier (3–10 L/day, most practical), Peltier thermoelectric DIY ($80–145, 200–500 mL/day), passive solar desiccant (60–160 mL/day, no power)
+- Zone 5 humidity feasibility: best June–August (65–80% RH); not viable winter replacement for well/cistern
+- Full Peltier DIY schematic, materials list, 3-stage filtration design
+- Five farm tools for two-person teams: tractor-towed planter, water wheel transplanter, walk-behind seeder (EarthWay/Hoss), jab planter, hand-drawn cart
+- Sizing tables by homestead scale
+
+**(B) Healthcare — Holistic Medicine Enhancement** (expanded `individual/05-healthcare.md` — ~400 lines added):
+- Four-pillar holistic medicine framework
+- Three adaptogens with Zone 5 growing guidance: ashwagandha (annual), eleuthero (Zone 3–8 native), tulsi (treat as annual basil)
+- Three nervines: skullcap (native Midwest), passionflower (hardy Zone 5), lemon balm (Zone 4–9)
+- Five additional Zone 5 medicinal plants (boneset, goldenrod, wild bergamot/bee balm, hawthorn, wild ginger) with Ojibwe/Menominee/Potawatomi ethnobotanical documentation
+- Evidence-based holistic wound care hierarchy, preparation table (8 types), 10 new citations including 1932 *Ethnobotany of the Ojibwe Indians* (Project Gutenberg) and NPS Ojibwe ethnobotany docs
+
+**(C) Agriculture — Regenerative + Native American Methods** (`individual/06-agriculture.md` — NEW file, 388 lines):
+- USDA NRCS four soil health principles at homestead scale
+- Zone 5 cover crop species guide (8 species with planting windows)
+- Biochar production (cone pit burn) with indigenous terra preta context
+- **Three Sisters system research-backed**: Iowa State / PMC 2022 peer-reviewed validation — LER 1.28–1.53 (28–53% less land needed), 54% nitrate reduction, 24% microbial activity increase
+- Complete Three Sisters mound planting instructions with indigenous variety recommendations
+- Six additional Native American techniques: corn hills, garden ridges, fish amendment, river muck, agroforestry, crop rotation
+- Year 1–3 implementation roadmap for transition to regenerative methods
+- 25+ citations (USDA, NRCS, SARE, PMC academic papers, USDA National Agricultural Library)
+
+**Status**: All research items committed to master (commit 6c3eac15 from agent).
+
+**3. Resistance-Research — Phase 1 Wave 1 Batch 1 Prep Identified ✅**
+
+Spawned resistance-research agent to execute Phase 1 Wave 1 Batch 1 contact distribution. Agent correctly identified that **emails must be sent by user** (personalized signature required) and provided exact execution checklist:
+
+**What is ready**:
+- All 5 email bodies written in `execution/phase-1-personalized-batch-1.md` (Wendy Weiser, Marc Elias, Ryan Goodman, Erica Chenoweth, Ian Bassin)
+- All 5 contact emails live-verified (May 15)
+- All 8 Gists live and verified
+- Path A + Domain 37 Hybrid confirmed
+
+**User action required (estimated 90 minutes)** — Send Phase 1 Wave 1 Batch 1:
+1. Open `execution/phase-1-personalized-batch-1.md`
+2. Replace `[Your name]` with your name (5 instances)
+3. Replace `[LINK — CC 4.0]` with main proposal Gist URL: `https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261`
+4. Replace domain-specific `[LINK]` references with Gist URLs from `DISTRIBUTION_GIST_URLS.md`
+5. Fill one personalization placeholder per email:
+   - Goodman: find May 2026 Just Security article (fallback: April Iran/war powers piece)
+   - Weiser: "Analyzing President's Executive Order on Mail Voting" (pre-confirmed, no change)
+   - Chenoweth: "AI for Democracy Movements," Ash Center April 2026 (pre-confirmed)
+   - Bassin: visit `protectdemocracy.org/work` and note most recent filing
+   - Elias: change "pending" to "decided April 29, 2026" for Callais reference
+6. Send 30 minutes apart:
+   - T+0: Weiser
+   - T+30min: Elias
+   - T+60min: Goodman
+   - T+90min: Chenoweth
+   - T+120min: Bassin
+7. Fill send log table in `PHASE_1_BLOCK_5_SEND_CHECKLIST.md`
+
+**Optimal send window**: Monday May 18 or Tuesday May 19 (Saturday May 17 is marginal but not closed)
+
+**URGENT — Domain 42 DEA Track (hard stop May 21)**:
+- Five separate emails in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3
+- Fill `[Your name]` + `[Your contact information]` in each (10 fills total, nothing else changes)
+- Send to: Drug Policy Alliance, NORML, ACLU Criminal Law Reform, The Sentencing Project, LEAP
+- DEA hearing deadline: May 28 (project hard stop: May 21 for 7-day delivery buffer)
+
+**Status**: Agent committed findings to master (commit 6c3eac15).
+
+### Projects Status Update
+
+| Project | Status | Blocker | Next |
+|---------|--------|---------|------|
+| systems-resilience | Active | None | Complete 3 new research items (delivered), next autonomous: individual/04-energy.md |
+| resistance-research | Active | User action | Send Phase 1 Wave 1 Batch 1 emails + Domain 42 DEA outreach by May 21 |
+| stockbot | Active | May 19 checkpoint | Awaiting AAPL sell signals post-Lever A (expected May 19–23) |
+| cybersecurity-hardening | Blocked | User restart | Windows VeraCrypt pre-boot restart + Phase 1 walkthrough resume from step 1.4 |
+| mfg-farm | Blocked | User action | Execute test print (0.20mm, PLA+, 220–225°C) |
+| seedwarden | Active | Track A: 2 user actions | Track B ready for May 30 launch (user gates May 15-28) |
+
+### Needs Your Input
+
+1. **Resistance-Research Phase 1 Wave 1 Batch 1** (HIGH PRIORITY):
+   - Ready to send: 5 verified contacts, all materials prepared
+   - User time: 90 minutes
+   - Optimal window: Mon May 18 or Tue May 19
+   - **Action**: Follow checklist in "User action required" above
+
+2. **Domain 42 DEA Track Outreach** (URGENT — hard stop May 21):
+   - 5 emails ready, just need name + contact info
+   - User time: 30 minutes
+   - **Action**: Fill placeholders in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3, send by May 21
+
+3. **Cybersecurity-Hardening Phase 1** (paused mid-walkthrough):
+   - Awaiting Windows restart for VeraCrypt pre-boot test
+   - **Action**: Restart Windows, type pre-boot password, boot normally, click Encrypt, resume from step 1.4
+
+4. **Stockbot May 19 Checkpoint** (scheduled 20:00 UTC May 19):
+   - Lever A applied (threshold_multiplier 0.50 → 0.40, confidence_floor 0.50 → 0.45)
+   - Expected: AAPL SELLs in 1–3 trading days if threshold adjustment successful
+   - **Action**: Orchestrator will execute checkpoint automatically at T+2d 20:00 UTC
+
+### Next Autonomous Work Available
+
+**High-priority (unblocked)**:
+- systems-resilience: individual/04-energy.md (solo power needs, grid-tied backup)
+- systems-resilience: individual/06-education.md (self-directed learning when institutions fail)
+
+**After user unblocks**:
+- resistance-research: Phase 1 Tier A updates (Domains 33, 35, 25, 19f) — gates on Batch 1 send completion
+- cybersecurity-hardening: Phase 1 walkthrough continuation — gates on Windows restart + VeraCrypt completion
+
+---
+
 ## Session 1097 — May 16, 2026, 21:16–23:30 UTC (Orchestrator — Checkpoint Execution + Systems-Resilience Build)
 
 **Status**: ✅ **SESSION COMPLETE — May 16 Checkpoint Executed, Lever A Applied, Healthcare Guide + Calendar Delivered**
