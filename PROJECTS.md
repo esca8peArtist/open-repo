@@ -820,9 +820,9 @@
 ### systems-resilience
 **Goal**: A practical, actionable knowledge base for when current societal systems fail. Individual → household → community scale. Midwest US (Zone 5), two tracks: rural land owner + suburban homeowner. Six domains: water, food, shelter, energy, healthcare, education. Emphasis on specific quantities, primary sources, schematics, and step-by-step procedures that work without professional support or commercial infrastructure.
 **Priority**: High
-**Status**: Active — **Phase 1 Individual-scale NEARLY COMPLETE** (5 of 6 domains done; education queued). Completed: 01-water.md, 02-food.md, 03-shelter.md, 05-healthcare.md. Midwest reference docs: extreme-weather.md (complete), calendar.md (pending). Sources library established.
+**Status**: Active — **Phase 1 Individual-scale NEARLY COMPLETE** (5 of 6 domains done; education queued). Completed: 01-water.md, 02-food.md, 03-shelter.md, 05-healthcare.md. Midwest reference docs: extreme-weather.md (complete), calendar.md (complete, 10.3K words, 33 citations).
 **Working dir**: `projects/systems-resilience/`
-**Current focus**: Completing individual-scale documentation. Completed: water, food, shelter/extreme-weather, healthcare (all with Midwest-specific protocols, progressive disclosure, 30+ citations per domain). NEXT: (1) michigan/calendar.md (annual timing for all activities, Zone 5 planting/harvest windows), (2) individual/06-education.md (self-directed learning when institutions fail), (3) individual/04-energy.md (solo power needs, grid-tied backup), (4) midwest/foraging-species.md. Then scale to household/community.
+**Current focus**: Completing individual-scale documentation + Midwest reference library. COMPLETED: water, food, shelter, healthcare (all Midwest-specific protocols, progressive disclosure, 30+ citations); extreme-weather, calendar (cross-domain timing + seasonal risk management). NEXT: (1) individual/06-education.md (self-directed learning when institutions fail), (2) individual/04-energy.md (solo power needs, grid-tied backup), (3) midwest/foraging-species.md (Zone 5 wild edibles + medicinal plants). Then scale to household/community tier.
 **Dependencies**: Pulls from off-grid-living (existing depth), seedwarden (foraging + hunting + container growing content)
 
 ---

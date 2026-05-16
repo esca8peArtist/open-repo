@@ -7865,3 +7865,33 @@ Available work pending May 19 checkpoint:
 ---
 
 **Session 1097 complete. Checkpoint executed, Lever A applied, Jetson healthy, healthcare guide delivered.**
+
+## Systems-Resilience — Midwest Annual Calendar Complete
+
+**Project**: systems-resilience
+**Task**: Build midwest/calendar.md (annual activity timing, Midwest Zone 5)
+**Time**: 2026-05-16 22:20–23:25 UTC
+**Status**: ✅ COMPLETE
+
+**Deliverable**: `projects/systems-resilience/midwest/calendar.md` (10.3K words, 816 lines)
+
+**Content delivered**:
+- Zone 5 baseline: 160–175 frost-free days, 34–40" precipitation, groundwater seasonal patterns
+- Quick-reference tables: frost dates, seasonal health risks (8 conditions with peak windows), best activity windows (12 outdoor activities)
+- Month-by-month breakdown (January–December): all 5 domains (food, water, energy, healthcare, shelter) + cross-domain intersection notes
+- 52-week printable action grid: week-labeled, priority action checklist
+- Cross-domain intersection summary: 6 recurring annual events mapped across all domains
+- Rural vs. Suburban track comparison: 10-row activity differentiation table
+- 33 citations from USDA, NOAA, USGS, CDC, EPA, NIMH, Old Farmer's Almanac, Powell Gardens, Midwest Air Pros
+
+**Key insights**:
+- March: spring thaw simultaneously fills cisterns and contaminates surface water
+- May: tornado season peaks during critical corn/bean planting window (highest coordination challenge)
+- October: garlic planting (20-min investment, 6-10x July yield) overlaps with tick tail season, deer rut, flu season opening
+- Lyme/RMSF risk extends May–October (not just spring)
+- SAD onset typically mid-September for Midwest (latitude 41–47°N)
+
+**Project impact**: systems-resilience now has 6/6 individual-scale PLUS both Midwest reference docs complete. Cross-domain timing fully mapped. Ready for energy, education, foraging, and scaling to household/community tiers.
+
+---
+
