@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-15T20:12:32Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-16T21:15:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 26.8% (2,391,233 tokens) | All-models 79.4% | Reset in 76h | check: claude.ai → Settings → Usage & billing
+🟡 Usage: Sonnet 32.5% (2,906,206 tokens) | All-models 83.5% | Reset in 51h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,12 +24,11 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **Phase 1 WAVE 1 READY FOR USER PATH DECISION (May 15-16) + PHASE 2 PATH-SPECIFIC EXECUTION ROADMAP COMPLETE (Session 1088)**. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, templates ready for all paths A/A+37/B, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap maps all three paths with domain sequencing (Tiers A/B/C), research timeline, distribution waves, resource allocation, succe … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088).
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: Phase 2 Scenario Playbooks complete (all 4 playbooks updated through May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). User approval needed for Phase 1 Tier 1 launch + Day 1 send date. Tier 2 messaging templates + distribution prep complete and staged. All materials production-ready.
-**Blocked**: User approval for Phase 1 launch + Day 1 send date
+**Focus**: **SCOPE RESET (2026-05-16): project is now user's personal OpSec implementation plan.** Distribution outreach materials (Tier 1/2/3 templates, contact lists, execution calendar) transferred to resistance-research. Build a phased personal implementation plan for: full-spectrum threat model (government surveillance + doxxing + general privacy), devices: Windows + iPhone/iOS + Linux, starting from scratch. Use existing research in project dir (threat-model.md, opsec-playbook.md, implementation-guid … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
@@ -43,6 +42,10 @@
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
 **Focus**: **PR #1 OPEN** (2026-04-26) + **PR #2 OPEN for Phase 5 Candidate 3** (2026-05-15 01:35 UTC)
+
+### systems-resilience
+**Status**: Active — **Phase 1 in progress** (individual-scale documents for water + food complete; shelter, healthcare, energy, education queued)
+**Focus**: Building individual-scale domain documents with verified primary sources (schematics, books, government guides). Sources library established. Water + food complete. Next: shelter/heating (Midwest-specific: tornado safe room, ice storm hardening, suburban retrofit) then healthcare.
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -61,6 +64,21 @@
 **Focus**: All 35 modules complete with 150 total scenarios (100% of target). Complete curriculum: foundation through business development, all 150 scenarios with full worked answers. Production-ready, awaiting user review and deployment.
 ## Active Blocks
 ---MOVED TO RESOLVED ARCHIVE---
+---
+### cybersecurity-hardening — Phase 1 walkthrough in progress (user restart required)
+**Date blocked**: 2026-05-16
+**Context**: Walking through PERSONAL_OPSEC_PLAN.md Phase 1 steps with user. Paused mid-session for VeraCrypt pre-boot test restart.
+**Progress so far**:
+- ✅ 1.1 Signal — complete (username set, phone number hidden, disappearing messages on)
+- ✅ 1.2 iPhone tracking — steps 1-3 done (tracking off, location audited, personalized ads off). Step 4 (Advanced Data Protection) pending 24-48hr Apple security delay — complete tomorrow
+- 🔄 1.3 VeraCrypt — installed, encryption wizard run, **needs restart to complete pre-boot test**, then click Encrypt to start background encryption
+- ⏳ 1.4 Ente Auth — not started (install from App Store, switch email + financial accounts off SMS 2FA, set carrier SIM PIN)
+- ⏳ 1.5 Bitwarden password manager — not started
+- ⏳ 1.6 Data broker opt-outs — not started (10 sites + 3 federal opt-outs, ~45 min)
+- ⏳ 1.7 iPhone passcode over Face ID — not started (5 min, do anytime)
+**What I need**: Restart Windows machine, type VeraCrypt pre-boot password when prompted, let Windows boot normally, then click Encrypt in VeraCrypt to start background encryption. Then resume Phase 1 walkthrough from step 1.4.
+**Verify with**: `# manual — cannot auto-verify`
+**Resolution**: [leave blank]
 ---
 ### mfg-farm — Test print execution (user action required)
 **Date blocked**: 2026-05-13

@@ -7690,5 +7690,45 @@ None — all changes from Session 1076 already committed. This session is status
 
 ---
 
+## Checkpoint Update — May 16, 2026, 21:16 UTC
+
+### May 16 Gate 1 Checkpoint — NEAR_MISS (Lever A Applied)
+
+**Time**: 2026-05-16 21:16 UTC
+**Query run**: Yes (Alpaca API — `may16_checkpoint_query_alpaca.py`)
+**Jetson status**: Restarted with updated config
+
+**Results**:
+- total_fills_since_may5: 34 (↑1 from May 14)
+- buy_fills: 12
+- sell_fills: 22
+- aapl_model_sells: 0
+- aapl_sells_since_may14: 0 (post-bug-fix window)
+- confirmed_round_trips: 3 (↑1 from May 14)
+- gross_profit: $7.40
+- gross_loss: $2.40
+- total_pnl: $5.00 (↑$7.40 from May 14)
+- may5_baseline: 19 fills (verified)
+
+**Scenario assigned**: NEAR_MISS (probability ~35% post-bug-fix)
+**h-day at checkpoint**: h+12 (April 29 entry, trading days only)
+**Rationale**: Single new round trip confirmed (1 fill delta, +1 round trip); still below expected h+10 AAPL exit window. Signal suppression suspected (threshold currently too high for May 16–19 volatility context).
+
+**Parameter changes applied (Lever A)**:
+- File: `active-sessions-2session.json`
+- threshold_multiplier: 0.50 → 0.40
+- confidence_floor: 0.50 → 0.45
+- Effective threshold: 2.28% → 1.82%
+- Script: `scripts/apply_lever_a.py` (executed 2026-05-16 21:16 UTC)
+- Log: `logs/lever_a_application.log`
+- Deployment: Config rsync'd to Jetson:/opt/stockbot/config/, Docker container restarted
+
+**Expected signal window**: 1-3 trading days (May 19–21)
+**Next checkpoint**: May 19 20:00 UTC (watch for AAPL SELLs after Lever A)
+
+**Post-checkpoint escalation**: If no AAPL SELLs by May 19, escalate to Lever B (HMM confidence reduction) per `MAY_12_OUTCOME_ROADMAP.md` Section 4.3
+
+---
+
 **Session complete. All orchestration files committed. Checkpoint readiness verified.**
 

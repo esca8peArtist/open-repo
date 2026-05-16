@@ -817,6 +817,16 @@
 
 ---
 
+### systems-resilience
+**Goal**: A practical, actionable knowledge base for when current societal systems fail. Individual → household → community scale. Midwest US (Zone 5), two tracks: rural land owner + suburban homeowner. Six domains: water, food, shelter, energy, healthcare, education. Emphasis on specific quantities, primary sources, schematics, and step-by-step procedures that work without professional support or commercial infrastructure.
+**Priority**: High
+**Status**: Active — **Phase 1 in progress** (individual-scale documents for water + food complete; shelter, healthcare, energy, education queued)
+**Working dir**: `projects/systems-resilience/`
+**Current focus**: Building individual-scale domain documents with verified primary sources (schematics, books, government guides). Sources library established. Water + food complete. Next: shelter/heating (Midwest-specific: tornado safe room, ice storm hardening, suburban retrofit) then healthcare.
+**Dependencies**: Pulls from off-grid-living (existing depth), seedwarden (foraging + hunting + container growing content)
+
+---
+
 ### off-grid-living
 **Goal**: A comprehensive plan for off-grid, sustainable living. Define full plans for construction, implementation, operation, maintenance, and repair. Cover the complete operational architecture: food production, shelter, medicine, electricity generation, food preparation and storage, water, and general survival necessities. Include disaster scenarios up to and including nuclear disaster. Also cover community building, organization, and mutual support.
 **Priority**: Medium
