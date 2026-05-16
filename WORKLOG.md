@@ -1,5 +1,47 @@
 # Work Log
 
+## Session 1098 — May 17, 2026 (Research Agent — systems-resilience INBOX requests)
+
+**Status**: ✅ Complete
+
+**Files created/modified**:
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/midwest/moisture-extraction-farm-tools.md` (NEW — 389 lines)
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/individual/06-agriculture.md` (NEW — 388 lines)
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/individual/05-healthcare.md` (ENHANCED — ~400 lines added)
+
+**Scope**:
+
+**(A) Moisture extraction + farm tools** (`midwest/moisture-extraction-farm-tools.md`):
+- Three atmospheric moisture extraction methods: modified dehumidifier (best practical; 3–10 L/day), Peltier thermoelectric (DIY; 200–500 mL/day), passive solar desiccant (no power; 60–160 mL/day)
+- Zone 5 Midwest humidity feasibility analysis by season (best June–August at 65–80% RH)
+- Full Peltier DIY build instructions with ASCII schematic and materials list (~$80–145)
+- Dehumidifier system design with 3-stage filtration schematic
+- Five farm tools for two-person teams: tractor-towed two-row planter (Field Tuff / Knapik), water wheel transplanter, walk-behind push seeder (EarthWay / Hoss), jab planter, hand-drawn cart
+- Sizing table by homestead scale
+
+**(B) Healthcare holistic medicine enhancement** (`individual/05-healthcare.md`):
+- Four-pillar holistic medicine framework added before dental care section
+- Three adaptogens with Zone 5 growing guidance: ashwagandha, eleuthero, tulsi
+- Three nervines: skullcap (native Midwest), passionflower (native southern Midwest), lemon balm
+- Five additional Zone 5 medicinal plants: boneset (Midwest native with Menominee/Ojibwe use), goldenrod, wild bergamot/bee balm, hawthorn, wild ginger
+- Evidence-based holistic wound care hierarchy integrating plant and conventional approaches
+- Preparation table: 8 preparation types with shelf life and best-use guidance
+- 10 new citation sources added including primary ethnobotanical texts (Ojibwe Ethnobotany by Huron H. Smith, 1932; NPS Ojibwe ethnobotany documentation)
+
+**(C) Agriculture section** (`individual/06-agriculture.md`) (NEW file):
+- USDA NRCS four soil health principles applied at homestead scale
+- Cover crop species guide for Zone 5 Midwest (8 species with planting windows and benefits)
+- Biochar production instructions (cone pit burn method) with indigenous context (terra preta)
+- Mycorrhizal fungi ecology and restoration practices
+- Three Sisters system with full research-backed soil health data (LER 1.28–1.53; 54% nitrate reduction; 24% microbial activity increase — Iowa State / PMC 2022 data)
+- Complete Zone 5 mound planting instructions with indigenous variety recommendations
+- Six additional Native American techniques: corn hills, garden ridges, fish amendment, river muck, agroforestry, crop rotation
+- Three Sisters yield table and cover crop nitrogen contribution calculations
+- Year 1–3 implementation roadmap for the transition to regenerative methods
+- 25+ citations including USDA, NRCS, SARE, PMC academic papers, USDA National Agricultural Library
+
+**Sources logged**: All citations embedded in files with live URLs
+
 ## Session 1097b — May 16, 2026 (Research Agent — systems-resilience midwest/calendar.md)
 
 **Status**: ✅ Complete

@@ -437,6 +437,168 @@ A medicinal herb garden is the lowest-cost, highest-long-term-value medical inve
 - Label: herb name, plant part, alcohol percentage, date
 - Shelf life: 3–5 years if stored cool and dark
 
+### Holistic Medicine — Systems and Principles
+
+Holistic medicine treats the person as a unified system — physical, mental, and social — rather than targeting isolated symptoms. In a resource-limited context, this philosophy is practical rather than philosophical: you are unlikely to have access to a specialist for every system, so you need to understand how systems interact.
+
+**The four-pillar holistic framework for Midwest Zone 5:**
+
+1. **Prevention through nutrition and environment:** Most chronic illness in affluent societies is driven by diet, sedentary lifestyle, and environmental exposure — not by pathogen or genetic fate. A whole-food diet derived from the garden plan in `individual/02-food.md`, regular outdoor physical labor, and minimized exposure to synthetic chemicals addresses the majority of chronic disease risk before symptoms emerge.
+
+2. **Stress and the nervous system:** Chronic stress disrupts immune function, sleep, digestion, and hormonal balance. This is not metaphor — cortisol elevation from chronic stress measurably impairs immune response, accelerates wound healing failure, and worsens chronic pain. The isolation, uncertainty, and physical difficulty of grid-down or homestead conditions make nervous system regulation a primary health priority.
+
+3. **Plant medicine as the primary pharmaceutical toolkit:** Before synthetic pharmaceuticals, plant-derived compounds were the only medicines available — and they remain effective, accessible, and self-renewing when grown on the homestead. Evidence levels vary widely (noted per plant below), but several have equivalent or near-equivalent evidence to pharmaceutical alternatives.
+
+4. **Community and connection:** Loneliness and social isolation produce measurable physiological harm equivalent to smoking 15 cigarettes per day in some studies (Holt-Lunstad, 2015, *Perspectives on Psychological Science*). This is particularly relevant for isolated rural homesteads and grid-down scenarios where social contact may be drastically reduced.
+
+---
+
+### Adaptogens — Herbs That Support Stress Resilience
+
+Adaptogens are a class of herbs that help the body maintain homeostasis under physical and psychological stress — they neither sedate nor stimulate but normalize. In a high-stress survival or homestead context, adaptogens address the hormonal and immune disruption that compounds every other health challenge.
+
+**Ashwagandha (*Withania somnifera*):**
+- *Evidence:* Strong — multiple RCTs show significant reductions in cortisol, improved sleep, decreased anxiety scores, and improved physical endurance
+- *Uses:* Chronic stress, adrenal fatigue, poor sleep, reduced immune function, physical endurance under sustained labor
+- *Preparation:* Root powder: 300–600 mg standardized extract (1.5–5% withanolides) taken with food; or decoction: simmer 1 tsp root powder in 8 oz milk or water 15 minutes; once daily before bed
+- *Grow:* Zone 8–10 for perennial; Zone 5 as annual (start indoors in April; transplant after last frost; harvest roots in fall). Full sun, well-drained soil; drought tolerant once established.
+- *Caution:* Avoid in autoimmune conditions (immune stimulant); avoid in pregnancy; mild drug interactions with sedatives and thyroid medications
+
+**Eleuthero (*Eleutherococcus senticosus*) — Siberian Ginseng:**
+- *Evidence:* Moderate-Strong — among the most studied adaptogens globally; improves stress tolerance, physical performance, and immune function
+- *Uses:* Fatigue, immune support, mental endurance under sustained stress
+- *Preparation:* Tincture (1:5, 40% alcohol): 2–4 mL 2–3x/day; or dried root tea: 1 tsp simmered 20 minutes, 2–3 cups/day; use for 6–8 weeks, then rest 2 weeks
+- *Grow:* Zone 3–8; woody shrub; excellent for Zone 5 Midwest; partial shade; reaches 4–6 ft; harvest root in fall of year 3+
+- *Caution:* Mild interactions with digoxin and some psychiatric medications; generally very well tolerated
+
+**Tulsi / Holy Basil (*Ocimum tenuiflorum*):**
+- *Evidence:* Moderate — RCTs show cortisol normalization, blood sugar stabilization, antimicrobial properties
+- *Uses:* Adaptogenic and nervine (calms anxiety while maintaining alertness); general tonic; anti-inflammatory
+- *Preparation:* Fresh or dried leaf tea: steep 1–2 Tbsp dried herb in boiled water, 10 minutes; 2–3 cups/day. Also tincture 1:5 in 40% alcohol; 2–3 mL 2–3x/day
+- *Grow:* Annual in Zone 5 (treat like basil); start indoors April, transplant May; prolific and easy; harvest continuously by pinching tops
+
+Source: [Adaptogens & Nervines: Herbs for Stress and Immune Support — The Herbalist's Path](https://www.theherbalistspath.com/blog/adaptogens-nervines-calm-stess-anxiety) · [NIH NCCIH Herb Reference](https://www.nccih.nih.gov/health/herbsataglance)
+
+---
+
+### Nervines — Herbs for the Nervous System
+
+Nervines directly support the nervous system — calming, trophorestorative (rebuilding), or mildly stimulating. In grid-down or homestead isolation contexts, nervines address the anxiety, sleeplessness, and emotional dysregulation that compound physical health challenges.
+
+**Skullcap (*Scutellaria lateriflora*) — Native Midwest Species:**
+- *Evidence:* Moderate — reduces anxiety without sedation; antispasmodic
+- *Uses:* Anxiety, hyperarousal, headache, muscle tension, PTSD-associated hypervigilance
+- *Preparation:* Fresh plant tincture (most effective): 1:2 in 50% alcohol; 2–4 mL 3x/day. Dried herb loses potency quickly — use within 6 months of harvest; or fresh plant tea: steep 1 Tbsp fresh herb 10 minutes
+- *Grow:* Zone 4–8; native to eastern Midwest; moist, partially shaded areas; grows along creek banks; harvest aerial parts in flower
+
+**Passionflower (*Passiflora incarnata*) — Native to Southern Midwest:**
+- *Evidence:* Moderate — equivalent to low-dose oxazepam (benzodiazepine) for generalized anxiety in one RCT; improves sleep onset
+- *Uses:* Anxiety, insomnia, restlessness, pain-related sleep disruption, GABA-mediated relaxation
+- *Preparation:* Tincture (1:5, 40–60% alcohol): 2–4 mL 30–45 minutes before sleep or when anxious; or tea: 1–2 tsp dried leaf steeped 10 minutes
+- *Grow:* Zone 5–9 (marginally hardy in Zone 5; mulch heavily in winter or grow in protected location; self-seeds); full to part sun; unique flowers; also produces edible fruit (maypop)
+- *Caution:* Do not combine with pharmaceutical sedatives; avoid in pregnancy
+
+**Lemon Balm (*Melissa officinalis*):**
+- *Evidence:* Moderate — reduces anxiety and improves mood in multiple human trials; mild antiviral activity against herpes simplex (topical)
+- *Uses:* Anxiety, mild insomnia, mood regulation, herpes simplex topical treatment, digestive upset associated with anxiety
+- *Preparation:* Fresh leaf tea (best flavor and potency): steep 2 Tbsp fresh or 1 Tbsp dried herb 10 minutes; drink 2–3 cups/day. Tincture: 1:5 in 40% alcohol; 3–4 mL 3x/day
+- *Grow:* Zone 4–9; vigorous Midwest perennial; full sun to part shade; spreads readily — plant in contained area; harvest leaves before flowering
+
+Source: [Herbs and the Nervous System — Traditional Medicinals](https://www.traditionalmedicinals.com/blogs/ppj/herbs-nervous-system) · [Mental Health and Emotional Well-Being — WishGarden Herbs](https://www.wishgardenherbs.com/blogs/wishgarden/what-are-nervines-adaptogens-and-alteratives)
+
+---
+
+### Plant-Based Pharmacy — Zone 5 Medicinal Plants (Extended Guide)
+
+The 10 primary medicinal plants are described earlier in this document. These additional plants deepen and extend the Zone 5 medicinal garden with particular emphasis on plants with Midwest indigenous use records and evidence-backed applications.
+
+**Boneset (*Eupatorium perfoliatum*) — Midwest Native:**
+- *Historical use:* One of the most widely used medicinal plants by Midwest indigenous nations (Menominee, Ojibwe, Potawatomi); used specifically for the deep bone pain of influenza — hence "boneset"
+- *Modern evidence:* Moderate in vitro immunostimulant and anti-inflammatory activity; traditional use validated by ethnobotanical research
+- *Uses:* Influenza with deep aching/bone pain; fever; acute respiratory infection
+- *Preparation:* Cold infusion: 1 oz dried herb steeped in 1 pint cold water overnight; drink 1–2 cups during acute illness. Hot tea is effective but intensely bitter — add honey.
+- *Grow:* Native Zone 3–9 Midwest; moist areas, meadow edges; easy to establish; harvest aerial parts in full bloom (August–September)
+- *Caution:* Use short-term only (acute illness only, not chronic); some pyrrolizidine alkaloid content
+
+**Goldenrod (*Solidago canadensis / S. odora*) — Midwest Native:**
+- *Uses:* Urinary tract support (diuretic + antimicrobial), upper respiratory inflammation, muscle/joint inflammation
+- *Evidence:* Moderate — European Commission approved goldenrod for UTI prevention (German Commission E); in vitro antimicrobial and anti-inflammatory
+- *Preparation:* Tea: 2 tsp dried flower/leaf per cup, steep 10 minutes; drink 3 cups/day for UTI prevention; tincture (1:5, 40% alcohol): 3–5 mL 3x/day
+- *Grow:* Zone 4–9; abundant across Midwest roadsides and meadows; aggressive spreader; harvest flower tops in early bloom (avoid after seed set)
+- *Note:* Goldenrod does NOT cause hay fever — that is ragweed (*Ambrosia* spp.), which blooms at the same time; goldenrod is insect-pollinated, not wind-pollinated
+
+**Wild Bergamot / Bee Balm (*Monarda fistulosa*) — Midwest Native:**
+- *Historical use:* Ojibwe, Menominee, and Potawatomi used aerial parts for cold, fever, and as a carminative (gas/bloating relief)
+- *Active compound:* Thymol and carvacrol — the same antimicrobial compounds found in thyme and oregano; measurable antifungal and antibacterial activity in vitro
+- *Uses:* Respiratory infection, digestive upset, topical antimicrobial for skin
+- *Preparation:* Fresh or dried leaf tea: steep 1–2 Tbsp per cup, 10 minutes; drink 2–3 cups/day; or tincture 1:5 in 40% alcohol for longer-term storage
+- *Grow:* Zone 3–9; native Midwest prairie plant; full sun, tolerates dry soil; spreads by rhizome; harvest aerial parts in bloom (July–August)
+
+**Hawthorn (*Crataegus monogyna / C. laevigata*) — Grown and Native:**
+- *Evidence:* Strong — multiple systematic reviews confirm hawthorn extract (standardized to oligomeric proanthocyanidins) reduces symptoms of heart failure (NYHA class II), lowers blood pressure mildly, and reduces resting heart rate
+- *Uses:* Long-term cardiovascular support; mild to moderate hypertension; heart failure support (adjunct — not replacement for medical care)
+- *Preparation:* Berries + leaves + flowers: decoction (simmer 20 minutes); or tincture 1:5 in 40% alcohol; 2–4 mL 3x/day; requires 6+ weeks of consistent use for cardiovascular effects
+- *Grow:* Zone 4–7; thorny shrub/small tree; full sun; native hawthorn species (*C. mollis*, downy hawthorn) found throughout Midwest; harvest berries in fall after first frost
+- *Caution:* Do not substitute for heart failure medications without medical supervision; some interactions with cardiac glycosides
+
+**Wild Ginger (*Asarum canadense*) — Midwest Native:**
+- *Historical use:* Ojibwe, Potawatomi, and other Midwest nations used root tea for fever, digestive upset, menstrual regulation, and respiratory illness
+- *Active compounds:* Aristolochic acid (AVOID internal use of large amounts — renal toxicity concern); however, the traditional preparation (small amounts of root tea) has a long safety record in culinary/medicinal quantities
+- *Uses:* Mild digestive support; warming carminative; flavoring agent (substitute for *Zingiber officinale* ginger in recipes — distinct but related flavor)
+- *Preparation:* Root tea: small piece fresh root (thumbnail size), simmer 10 minutes; 1–2 cups/day short-term. Use in small culinary quantities only.
+- *Grow:* Woodland understory native across Midwest; Zone 4–7; shade-loving; slow to establish but persistent once established; excellent ground cover in the agroforestry understory layer
+- *Caution:* Do not use in large amounts or chronic high doses — aristolochic acid compounds present (at levels typical of traditional use, safety record is long but internal use should remain culinary/occasional)
+
+Source: [Midwest Medicinal Plants by Lisa M. Rose — Timber Press](https://www.hachettebookgroup.com/titles/lisa-m-rose/midwest-medicinal-plants/9781604698138/) · [Herbal Medicine of Wisconsin Indians — PubMed](https://pubmed.ncbi.nlm.nih.gov/12079202/) · [Ethnobotany of the Ojibwe Indians — Project Gutenberg](https://www.gutenberg.org/files/49527/49527-h/49527-h.htm) · [Ojibwe Ethnobotany — Voyageurs National Park, NPS](https://www.nps.gov/voya/learn/historyculture/ojibwe-ethnobotany.htm) · [Medicinal Plants, Herbs, and Trees of Missouri — Washington University in St. Louis](https://sites.wustl.edu/monh/medicinal-plants-herbs-and-trees-of-missouri/)
+
+---
+
+### Holistic Wound Care — Integrating Plant and Conventional Approaches
+
+The primary wound care protocol (direct pressure, irrigation, closure decision, infection monitoring) is described in the main text above. Herbal wound care is a complement to those steps, not a replacement.
+
+**Evidence-based herbal wound care hierarchy:**
+
+1. **Irrigation first, always** — no herbal preparation substitutes for wound irrigation with clean water at 8 PSI. This is the most important infection prevention step.
+
+2. **Calendula salve or infused oil (apply after irrigation and closure decision):**
+   - Applied to wound margins (not into open cavity) promotes tissue granulation and reduces inflammation
+   - Cochrane-level evidence for radiation dermatitis; moderate evidence for general wound healing
+   - Apply to suture lines and closed lacerations after the first 24 hours
+
+3. **Raw honey (topical, on open wounds not requiring closure):**
+   - Osmotic mechanism draws fluid from bacteria; enzymatic hydrogen peroxide release provides sustained antimicrobial activity
+   - Cochrane review confirms raw honey reduces infection rates and promotes healing in some wound types; genuine clinical evidence
+   - Apply directly to wound surface; cover with non-adherent dressing; change daily
+
+4. **Plantain leaf poultice (field/immediate):**
+   - Crushed fresh plantain leaf applied to insect stings, minor abrasions, or splinter wounds
+   - Draws inflammation; reduces initial swelling; reduces pruritus (itch)
+   - No sterilization possible in field conditions — use only for minor, low-infection-risk wounds; replace with proper irrigation as soon as available
+
+5. **Comfrey root poultice (external, intact skin only):**
+   - Over closed fractures, sprains, or bruises — not on open skin
+   - Clinical evidence for accelerated fracture healing; do not use on open wounds (closes surface before deep layers heal, trapping infection)
+
+---
+
+### Indigenous and Holistic Pharmacy: Preparation Summary
+
+| Preparation | Method | Shelf Life | Best For |
+|---|---|---|---|
+| Tincture (standard 1:5) | Dried herb + 40–60% alcohol, 4–6 weeks | 3–5 years | Root medicines (valerian, echinacea root, ashwagandha), aerial parts for storage |
+| Fresh plant tincture (1:2) | Fresh herb + 95–60% alcohol, 2–4 weeks | 3–5 years | Skullcap, lemon balm, other herbs that lose potency when dried |
+| Decoction (simmered) | Herb + cold water, brought to low simmer 20 min | 24–48 hours refrigerated | Roots and bark (willow bark, hawthorn, boneset root) |
+| Infusion (steeped) | Herb + boiled water, steep 10–15 min covered | 24 hours refrigerated | Aerial parts (calendula flower, lemon balm leaf, chamomile) |
+| Infused oil | Dried herb + olive oil, 4–6 weeks cold, or 4–8 hours low heat | 1–2 years in dark bottle | Topical calendula, comfrey, mullein flower |
+| Salve | Infused oil + beeswax (~1 oz wax per cup oil), melt and pour | 2–3 years | Wound margins, dry skin, rashes, burns |
+| Poultice | Fresh or rehydrated herb applied directly | Single use | Acute field application — stings, sprains |
+| Oxymel | Honey + vinegar (apple cider) + herb, steeped 4 weeks | 1 year | Elderberry, thyme, rosemary — respiratory and immune; gentle and food-safe |
+
+**Resource:** *Making Plant Medicine* by Richo Cech ($30–35; the standard reference for preparation ratios and methods) · *Midwest Medicinal Plants* by Lisa M. Rose (Timber Press; $28–35; Zone 5-specific)
+
+---
+
 ### Off-Grid Dental Care
 
 Dental emergencies are among the most common and most overlooked aspects of medical preparedness. A dental abscess can spread to the mediastinum and kill within days. Toothache can be incapacitating for weeks.
@@ -916,6 +1078,21 @@ Total space needed: approximately 200–400 sq ft for full therapeutic garden fo
 | United Plant Savers | https://unitedplantsavers.org | At-risk native plant conservation; sourcing ethics |
 | NIH National Center for Complementary and Integrative Health | https://www.nccih.nih.gov/health/herbsataglance | Evidence summaries for individual herbs; authoritative |
 
+### Holistic Medicine and Indigenous Ethnobotany References
+
+| Resource | URL | Notes |
+|---|---|---|
+| *Midwest Medicinal Plants* — Lisa M. Rose | https://www.hachettebookgroup.com/titles/lisa-m-rose/midwest-medicinal-plants/9781604698138/ | The primary regional reference; 109 wild herbs; Zone 5-specific; Timber Press |
+| Ethnobotany of the Ojibwe Indians — Huron H. Smith, 1932 | https://www.gutenberg.org/files/49527/49527-h/49527-h.htm | Public domain; primary source; documents medicinal plants of Great Lakes Ojibwe |
+| Ojibwe Ethnobotany — Voyageurs National Park, NPS | https://www.nps.gov/voya/learn/historyculture/ojibwe-ethnobotany.htm | Overview + downloadable plant dataset with Ojibwe names and documented uses |
+| Herbal Medicine of Wisconsin Indians — PubMed (2002) | https://pubmed.ncbi.nlm.nih.gov/12079202/ | Academic survey of traditional plant use by Wisconsin tribal nations |
+| Medicinal Plants, Herbs, and Trees of Missouri | https://sites.wustl.edu/monh/medicinal-plants-herbs-and-trees-of-missouri/ | Washington University; comprehensive regional list with indigenous use notes |
+| Traditional Ojibwe Plants, Herbs and Teas | https://www.legacy.mn.gov/projects/traditional-ojibwe-plants-herbs-and-teas | Minnesota Legacy-funded; living indigenous knowledge documentation |
+| Adaptogens and Nervines Overview — The Herbalist's Path | https://www.theherbalistspath.com/blog/adaptogens-nervines-calm-stess-anxiety | Evidence overview of adaptogen and nervine categories |
+| Herbs and the Nervous System — Traditional Medicinals | https://www.traditionalmedicinals.com/blogs/ppj/herbs-nervous-system | Plant nervine categories with preparation guidance |
+| Mystery and Medicine of Native Americans — The Biomedical Scientist | https://thebiomedicalscientist.net/2022/09/05/mystery-and-medicine-native-americans | Survey of traditional indigenous medicine with phytochemical context |
+| Top 5 Medicinal Plants to Grow in the Midwest — Project Food Forest | https://projectfoodforest.org/2017/04/06/excerpt-top-5-medicinal-plants-to-grow-in-the-midwest/ | Midwest-specific growing and use guide |
+
 ### Mental Health — Seasonal and Isolation
 
 | Resource | URL | Notes |
@@ -934,6 +1111,8 @@ Total space needed: approximately 200–400 sq ft for full therapeutic garden fo
 - **Medicinal plant species identification**: See `midwest/foraging-species.md` (when created) — visual identification of native medicinal plants
 - **Full medical reference**: See `off-grid-living/08-medical-health.md` — comprehensive medical reference including childbirth, CBRN, surgical emergencies, and complete herbal medicine section; this document extends and adapts that foundation for the Midwest individual context
 - **Community health infrastructure**: See `community/05-healthcare.md` (when created) — division of medical roles, community health assessments, quarantine protocols, community pharmacy
+- **Medicinal plant growing and agriculture**: See `individual/06-agriculture.md` — integration of medicinal herbs into the agroforestry and food system; Three Sisters understory planting for medicinal species; soil health for maximizing plant medicine quality
+- **Moisture extraction and tools**: See `midwest/moisture-extraction-farm-tools.md` — farm tools including the hand cart and push seeder for medicinal herb garden management at scale
 
 ---
 
