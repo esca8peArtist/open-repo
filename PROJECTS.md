@@ -820,9 +820,9 @@
 ### systems-resilience
 **Goal**: A practical, actionable knowledge base for when current societal systems fail. Individual → household → community scale. Midwest US (Zone 5), two tracks: rural land owner + suburban homeowner. Six domains: water, food, shelter, energy, healthcare, education. Emphasis on specific quantities, primary sources, schematics, and step-by-step procedures that work without professional support or commercial infrastructure.
 **Priority**: High
-**Status**: Active — **Phase 1 in progress** (individual-scale documents for water + food complete; shelter, healthcare, energy, education queued)
+**Status**: Active — **Phase 1 Individual-scale NEARLY COMPLETE** (5 of 6 domains done; education queued). Completed: 01-water.md, 02-food.md, 03-shelter.md, 05-healthcare.md. Midwest reference docs: extreme-weather.md (complete), calendar.md (pending). Sources library established.
 **Working dir**: `projects/systems-resilience/`
-**Current focus**: Building individual-scale domain documents with verified primary sources (schematics, books, government guides). Sources library established. Water + food complete. Next: shelter/heating (Midwest-specific: tornado safe room, ice storm hardening, suburban retrofit) then healthcare.
+**Current focus**: Completing individual-scale documentation. Completed: water, food, shelter/extreme-weather, healthcare (all with Midwest-specific protocols, progressive disclosure, 30+ citations per domain). NEXT: (1) michigan/calendar.md (annual timing for all activities, Zone 5 planting/harvest windows), (2) individual/06-education.md (self-directed learning when institutions fail), (3) individual/04-energy.md (solo power needs, grid-tied backup), (4) midwest/foraging-species.md. Then scale to household/community.
 **Dependencies**: Pulls from off-grid-living (existing depth), seedwarden (foraging + hunting + container growing content)
 
 ---

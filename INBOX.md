@@ -10,9 +10,11 @@
 ---
 
 ## New Items
+- [2026-05-16 22:29] Also in systems resilience look for schematics or instructions for how to build one of those machines that can extract moisture from the water in the air and some handy farm tools like the trailers where two people can ride behind a tractor and place plants in the ground, or look for a manual version of that
+- [2026-05-16 22:26] For system resilience make sure in healthcare you have some info on holistic and plant based medicine and in agriculture put some details on regenerative agriculture and methods employed by native Americans
 <!-- Add tasks here. Format: - [date] [description] -->
 
-*(no new items)*
+- [2026-05-16] [resistance-research] Research volunteer opportunities within a 15-minute drive of Topgolf on Katy Freeway, Houston TX (address: 570 Katy Freeway, Houston TX 77024). Find organizations actively seeking volunteers focused on: social justice, government advocacy, civic engagement, helping at-risk or troubled youth, community organizing, housing/homelessness, food insecurity, legal aid, or similar causes. For each org: name, mission, address, distance/drive time from Topgolf Katy Freeway, volunteer roles available, how to sign up, and website/contact. Deliver as `projects/resistance-research/houston-volunteer-orgs.md` — prioritize orgs with ongoing regular volunteer slots (not one-time events). This is for personal use by the user, not for distribution.
 
 ## Processing Log
 

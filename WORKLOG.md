@@ -7813,3 +7813,27 @@ Available work pending May 19 checkpoint:
 
 **Session 1097 complete. Checkpoint executed, Lever A applied, Jetson healthy.**
 
+
+## Systems-Resilience Phase 1 — Individual-scale Healthcare Complete
+
+**Project**: systems-resilience
+**Task**: Build individual/05-healthcare.md (healthcare without professional support, Midwest Zone 5)
+**Time**: 2026-05-16 21:25–22:20 UTC
+**Status**: ✅ COMPLETE
+
+**Deliverable**: `projects/systems-resilience/individual/05-healthcare.md` (~8,500 words)
+
+**Content delivered**:
+- Quick reference card: health threat hierarchy (uncontrolled hemorrhage → tick-borne illness)
+- Day 1-3: MARCH protocol, tourniquet, wound packing, anaphylaxis, shock, heat stroke (WMS 2024), hypothermia
+- Week 1-4: Antibiotic selection, ORS formula, wound closure, fracture management
+- Month 1-6: Medical kit ($350–$1,400), herbal garden (10 Zone 5 plants), dental care
+- Year 1+: WFR training, SAD light therapy, preventive medicine, chronic disease management
+- Midwest-specific: Tick disease map, SAD epidemiology, heat acclimatization
+- 31 citations from WMS, CDC, WHO, NEJM, PMC, Hesperian, Illinois DPH, NOLS
+
+**Project status**: systems-resilience Individual-scale documentation is now 5/6 complete (water, food, shelter, healthcare, extreme-weather done). Ready for calendar/energy/education/foraging documents.
+
+---
+
+**Session 1097 complete. Checkpoint executed, Lever A applied, Jetson healthy, healthcare guide delivered.**
