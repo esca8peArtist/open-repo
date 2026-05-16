@@ -1,5 +1,31 @@
 # Work Log
 
+## Session 1097 — May 16, 2026 (Research Agent — systems-resilience individual/05-healthcare.md)
+
+**Status**: ✅ Complete
+
+**File created**: `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/individual/05-healthcare.md`
+
+**Scope**: ~8,500-word healthcare guide for one adult in Midwest US (Zone 5) when professional support is unavailable.
+
+**Structure delivered** (matching PLAN.md template):
+- Quick Reference Card: health threat hierarchy with lethality ranking, Midwest-specific
+- Day 1–3: Hemorrhage control (tourniquet/wound packing), airway emergencies, anaphylaxis, shock, heat stroke (WMS 2024 guidelines), hypothermia staging and rewarming
+- Week 1–4: Antibiotic selection framework (including fish antibiotic practicalities), fever management, ORS formulation, wound closure decision tree, burns, fractures
+- Month 1–6: Full Tier 1 and Tier 2 medical kit with costs; prescription stockpile and SLEP data; 10-plant Zone 5 herbal medicine garden with preparations; dental care (Cavit, abscess I&D, extraction procedure); mental health
+- Year 1+: Full WFR training stack with Midwest-specific course links and costs; SAD light therapy protocol; Midwest preventive medicine calendar; chronic disease management; vision care; medical reference library
+- Rural Track: medicinal herb cultivation at scale, wildcrafting, extended isolation planning, heightened tick risk
+- Suburban Track: constraints, container herb growing, CO risk from combustion devices
+- Midwest Notes: tick-borne disease species and treatment (Lyme/RMSF/Ehrlichiosis/Anaplasmosis); winter SAD protocol with latitude data; poison ivy/sumac treatment; heat/humidity pattern
+- 4 step-by-step procedures: tick removal, wound irrigation and closure, tincture making, dental filling
+- 30+ citations from WMS guidelines, CDC, NOLS/WFR, Hesperian Foundation, WHO ORS standard, NEJM Lyme prophylaxis trial, PMC SAD meta-analysis
+
+**Sources cross-referenced**: off-grid-living/08-medical-health.md (reused supply lists and herbal profiles); seedwarden/medicinal-herbs-candidate-list.md (species selection); sources/books.md and sources/online-resources.md (citation integration)
+
+**PLAN.md updated**: Execution log row added for this document.
+
+---
+
 ## Session 1096 — May 15, 2026, 20:13–21:30 UTC (Orchestrator — Item 60 Seedwarden Phase 2 Analytics Implementation)
 
 **Status**: ✅ **ITEM 60 COMPLETE — Production-ready analytics infrastructure delivered for May 30 launch**
@@ -7728,7 +7754,62 @@ None — all changes from Session 1076 already committed. This session is status
 
 **Post-checkpoint escalation**: If no AAPL SELLs by May 19, escalate to Lever B (HMM confidence reduction) per `MAY_12_OUTCOME_ROADMAP.md` Section 4.3
 
+**Jetson verification (2026-05-16 21:25 UTC)**:
+- SSH access: ✅ Responsive
+- Trading process: ✅ Running (1 pgrep match for python trading)
+- Container status: ✅ Restarted successfully
+- Config deployed: ✅ active-sessions-2session.json active
+
 ---
 
-**Session complete. All orchestration files committed. Checkpoint readiness verified.**
+## Session 1097 — May 16, 2026, 21:16–21:25 UTC (Orchestrator — May 16 Checkpoint Execution)
+
+**Status**: ✅ **CHECKPOINT EXECUTED — May 16 NEAR_MISS, Lever A Applied, Jetson Restarted**
+
+### Actions Completed
+
+1. **Checkpoint execution** (21:16 UTC)
+   - Script: `may16_checkpoint_query_alpaca.py`
+   - Result: NEAR_MISS (34 fills, 3 round trips, +$5 PnL)
+   - h-day: h+12 (still within expected window, signal suppression indicated)
+
+2. **Lever A application** (21:16 UTC)
+   - Script: `scripts/apply_lever_a.py`
+   - Changes: threshold 2.28% → 1.82%, confidence 0.50 → 0.45
+   - Expected effect: Lower entry barriers, faster AAPL exits in May 19–21 window
+
+3. **Jetson deployment** (21:18 UTC)
+   - Rsync: active-sessions-2session.json → /opt/stockbot/config/
+   - Docker restart: `docker compose restart` (successful)
+   - Health verification: Trading process running ✅
+
+4. **WORKLOG.md updated** with full checkpoint results and Lever A details
+
+5. **Git commit** (hash: 1efafd16) with checkpoint results logged
+
+### Status: Ready for May 19 Checkpoint
+
+| Item | Status |
+|------|--------|
+| **Lever A applied** | ✅ |
+| **Jetson restarted** | ✅ |
+| **Config deployed** | ✅ |
+| **Next checkpoint** | May 19 20:00 UTC |
+| **Expected signal window** | May 19–21 (1-3 trading days) |
+
+### Next Actions (Orchestrator)
+
+Post-checkpoint evaluation options (awaiting May 19 results):
+- **If AAPL SELLs detected May 19**: Celebrate, log PASS, proceed to Gate 2 planning (Item 51)
+- **If no AAPL SELLs by May 19**: Apply Lever B (HMM confidence reduction) per roadmap Section 4.3
+
+Available work pending May 19 checkpoint:
+1. **Item 51**: Jetson optimization (queued for Gate 1 PASS)
+2. **Item 52**: Post-checkpoint decision framework (available now — research/analysis work)
+3. **Item 53**: Phase 2 Wave 2 preparation + contingency integration
+4. **Item 54**: Seedwarden post-Track-B-launch operations
+
+---
+
+**Session 1097 complete. Checkpoint executed, Lever A applied, Jetson healthy.**
 
