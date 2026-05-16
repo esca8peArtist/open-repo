@@ -1,5 +1,61 @@
 # Check-in
 
+## Session 1097 — May 16, 2026, 21:16–23:30 UTC (Orchestrator — Checkpoint Execution + Systems-Resilience Build)
+
+**Status**: ✅ **SESSION COMPLETE — May 16 Checkpoint Executed, Lever A Applied, Healthcare Guide + Calendar Delivered**
+
+### Accomplishments This Session
+
+**1. May 16 Gate 1 Checkpoint — NEAR_MISS**
+- ✅ Executed `may16_checkpoint_query_alpaca.py` at 21:16 UTC
+- Result: 34 fills, 3 round trips, +$5 PnL (vs May 14 baseline: 33 fills, 2 round trips, -$2.40)
+- h-day: h+12 (April 29 entry, trading days only)
+- Scenario: NEAR_MISS (signal suppression suspected — threshold currently too high for May 16–19 volatility context)
+- ✅ **Lever A Applied**: threshold_multiplier 0.50 → 0.40, confidence_floor 0.50 → 0.45 (effective threshold: 2.28% → 1.82%)
+- ✅ Config deployed to Jetson via rsync, Docker container restarted
+- ✅ Jetson health verified: trading process running, SSH responsive
+- **Next checkpoint**: May 19 20:00 UTC (expect AAPL exits in 1–3 trading days post-Lever A)
+- **Escalation path**: If no progress by May 19, apply Lever B (HMM confidence reduction)
+
+**2. Systems-Resilience Phase 1 — Individual-scale Healthcare + Midwest Calendar**
+- ✅ **individual/05-healthcare.md** (8.5K words, 31 citations)
+  - Content: MARCH protocol, wound packing, anaphylaxis, heat/cold injury (WMS 2024), hypothermia staging, antibiotic selection, ORS formula, medical kit ($350–$1,400), Zone 5 herbal garden (10 medicinal plants), dental care procedures
+  - Midwest-specific: Tick disease map (black-legged/lone star/dog ticks + Lyme/RMSF/Anaplasmosis), SAD epidemiology at 41–47°N, heat acclimatization
+  - Progressive disclosure: Day 1-3 (critical injuries) → Week 1-4 (common illness) → Month-Year (preventive/chronic)
+- ✅ **midwest/calendar.md** (10.3K words, 33 citations)
+  - Content: Zone 5 baseline (160–175 frost-free days, 34–40" precipitation), frost dates, seasonal health risks (8 conditions), best activity windows (12 outdoor activities)
+  - Month-by-month breakdown: all 5 domains (food/water/energy/healthcare/shelter) + cross-domain intersection notes
+  - 52-week printable action grid, cross-domain intersection summary, rural/suburban track comparison
+  - Key insights: March = simultaneous water fill + contamination risk; May = tornado season + critical planting; October = highest multi-domain coordination (garlic planting + tick tail season + flu season + deer rut)
+
+**3. Projects Status Update**
+- systems-resilience: Phase 1 Individual-scale 5/6 complete (water, food, shelter, healthcare, extreme-weather). Midwest reference library complete (calendar). Ready for energy/education/foraging documents.
+- stockbot: Checkpoint executed, Lever A applied, awaiting May 19 results
+- All other projects: Awaiting external dependencies or user decisions
+
+### Pending User Decisions (Critical for Phase 2 Execution)
+
+1. **resistance-research**: Path decision (A / A+37 / B) — Gates Phase 1 Wave 1 execution (Tier A updates May 18-28)
+2. **seedwarden**: Canva/Kit tier (Pro/free) — Gates Track B execution (May 30 launch)
+3. **cybersecurity-hardening**: Phase 1 launch approval + Day 1 date — Gates personal OpSec implementation
+
+### Next Session Actions
+
+**Awaiting May 19 checkpoint (May 19 20:00 UTC)**:
+- If AAPL SELLs detected: celebrate, log PASS, proceed to Gate 2 planning (Item 51)
+- If no AAPL SELLs: apply Lever B (HMM confidence reduction) per roadmap Section 4.3
+
+**Available autonomous work pending May 19**:
+- systems-resilience: individual/04-energy.md (solo power needs, grid-tied backup) — HIGH-priority next step
+- systems-resilience: individual/06-education.md (self-directed learning when institutions fail) — follows energy
+- systems-resilience: midwest/foraging-species.md (Zone 5 wild edibles + medicinal plants)
+
+**Awaiting user input**:
+- Resistance-research path decision (enables Phase 1 Wave 1)
+- Seedwarden tier selection (enables Track B May 30 launch gate execution)
+
+---
+
 ## Session 1095 (Resumed) — May 15, 2026, 20:25–20:30 UTC (Orchestrator — Final Pre-Checkpoint Verification)
 
 **Status**: ✅ **CHECKPOINT READINESS CONFIRMED — T-24h to May 16 20:00 UTC — No autonomous work available; standby for execution or user decisions**
