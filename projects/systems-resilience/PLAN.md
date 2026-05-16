@@ -245,3 +245,4 @@ Use this template for every new document in `individual/`, `household/`, and `co
 | 2026-05-16 | individual/03-shelter.md | orchestrator + research | ✅ Complete |
 | 2026-05-16 | midwest/extreme-weather.md | orchestrator + research | ✅ Complete |
 | 2026-05-16 | individual/05-healthcare.md | research agent | ✅ Complete |
+| 2026-05-16 | midwest/calendar.md | research agent | ✅ Complete |

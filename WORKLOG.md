@@ -1,5 +1,33 @@
 # Work Log
 
+## Session 1097b — May 16, 2026 (Research Agent — systems-resilience midwest/calendar.md)
+
+**Status**: ✅ Complete
+
+**File created**: `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/midwest/calendar.md`
+
+**Scope**: ~10,300-word annual activity calendar for Midwest Zone 5 covering all six resilience domains across 12 months.
+
+**Structure delivered**:
+- Zone 5 baseline data table (frost dates, precipitation, growing days, groundwater seasonal variation)
+- Three quick-reference tables: frost dates (Zone 5A/5B), peak seasonal health risks (8 conditions with peak windows and interventions), best windows for outdoor activities (12 activities with optimal timing and rationale)
+- Full month-by-month breakdown (January–December) covering all cross-domain activities:
+  - Food: planting, harvest, preservation, hunting, foraging, seed saving by month
+  - Water: collection windows, groundwater seasonal variation, pipe freeze risk, winterization timing
+  - Energy: heating/cooling load variation, solar output by season (25% winter / 100% summer), firewood/propane management
+  - Healthcare: flu season (Jan–Feb peak Midwest), tick season (May 15–July 15 nymphal peak; Aug–Nov adult peak), heat illness (July–Aug peak), SAD (Oct onset through Feb), cold injury windows
+  - Shelter: roof inspection (April, October), weatherization (September), furnace check (September), ice dam management (Jan–Feb)
+- Week-by-week printable action grid (52 weeks, 4-column format)
+- Cross-domain intersection section showing which events require coordinated multi-domain response
+- Rural vs. Suburban track summary table
+- 33 cited sources: USDA, NOAA/MRCC, USGS, CDC, EPA, NIMH, Mayo Clinic, Old Farmer's Almanac, Truveta, HealthBeat, Contagion Live, Solar Insure, Missouri Conservation, and others
+
+**Sources cross-referenced**: individual/01-water.md, individual/02-food.md (planting calendar extracted and expanded), individual/03-shelter.md, individual/05-healthcare.md (tick/SAD/flu data integrated), midwest/extreme-weather.md (tornado/derecho season timing)
+
+**PLAN.md**: Should be updated to mark midwest/calendar.md as ✅ Complete.
+
+---
+
 ## Session 1097 — May 16, 2026 (Research Agent — systems-resilience individual/05-healthcare.md)
 
 **Status**: ✅ Complete
