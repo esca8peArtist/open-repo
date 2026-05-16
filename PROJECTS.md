@@ -373,7 +373,7 @@
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
 **Visibility**: Public — GitHub Gist (public) + private distribution to immigration legal aid organizations
 **Working dir**: `projects/cybersecurity-hardening/`
-**Current focus**: Phase 2 Scenario Playbooks complete (all 4 playbooks updated through May 2026 threat intel). Phase 1 Tier 1 infrastructure ready (25 contacts verified, 7-week timeline). User approval needed for Phase 1 Tier 1 launch + Day 1 send date. Tier 2 messaging templates + distribution prep complete and staged. All materials production-ready.
+**Current focus**: **SCOPE RESET (2026-05-16): project is now user's personal OpSec implementation plan.** Distribution outreach materials (Tier 1/2/3 templates, contact lists, execution calendar) transferred to resistance-research. Build a phased personal implementation plan for: full-spectrum threat model (government surveillance + doxxing + general privacy), devices: Windows + iPhone/iOS + Linux, starting from scratch. Use existing research in project dir (threat-model.md, opsec-playbook.md, implementation-guide.md, device-hardening guides) as the knowledge base. Deliverable: `PERSONAL_OPSEC_PLAN.md` — prioritized, phased, actionable steps the user can start executing immediately.
 
 
 **Session 876 Deliverables**:
@@ -413,7 +413,7 @@
   - **TIER3_DISTRIBUTION_PREP.md** (30 organizations, 16-week timeline)
 
 **Next**: (1) User approves Phase 1 Tier 1 templates + confirms threat accuracy (all flags now resolved); (2) Tier 1 outreach begins immediately; (3) Phase 2 research begins simultaneously; (4) Tier 2 launch ~4 weeks after Tier 1 completion; (5) Tier 3 launch ~12 weeks after.
-**Blocked on**: User approval for Phase 1 launch + Day 1 send date
+**Blocked on**: —
 **Notes**: All three distribution tiers production-ready with fully customized templates. Full trilogy (Gist + three distribution-prep documents + Tier 2 messaging templates + FAQ) complete and accessible. User can begin Tier 1 outreach immediately after approval. Tier 2 template variants already written and tested for maximum impact.
 
 ---
