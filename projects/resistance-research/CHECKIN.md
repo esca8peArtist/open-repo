@@ -1,6 +1,44 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 15, 2026 (Wave 1 Pre-Staging Readiness complete — Exploration Queue Item 55)*
+*Updated: May 17, 2026 (Session 1098 — Batch 1 execution review)*
+
+---
+
+## BATCH 1 SEND — USER ACTION REQUIRED NOW (May 17, 2026)
+
+**Assigned**: Execute Phase 1 Wave 1 Batch 1 contact distribution.
+**Blocked on**: User must send the emails. The agent cannot send email on behalf of the user. All preparation is complete.
+
+**Time required**: 90 minutes total.
+
+**Step-by-step** (everything else is done):
+1. Open `execution/phase-1-personalized-batch-1.md` — 5 personalized email drafts, one per contact
+2. Fill `{{YOUR_NAME}}` and `{{YOUR_CONTACT_INFO}}` in all 5 (3 min)
+3. Fill contact-specific placeholders (per WAVE_1_PRESTAGING_READINESS.md Section 7, items 11-15):
+   - Goodman: fill `{{RECENT_JUST_SECURITY_ARTICLE}}` — visit justsecurity.org for a May 2026 piece; fall back to April Iran/war powers piece
+   - Weiser: pre-filled as "Analyzing the President's Executive Order on Mail Voting" — confirm or update
+   - Chenoweth: pre-filled as "AI for Democracy Movements," Ash Center, April 2026 — confirm or update
+   - Bassin: fill `{{RECENT_PROTECT_DEMOCRACY_FILING}}` — visit protectdemocracy.org/work
+   - Elias: change "pending" to "decided April 29, 2026" for Callais v. Landry reference (2 min)
+4. Select Path A+37 block in each draft, delete the other two path blocks
+5. Quick Gist pre-flight: open 4 Gist URLs in incognito (main proposal, exec summary, domain 37, litigation tracker) — 4 min
+6. Send test email to self — confirm not landing in spam
+7. Send 5 emails in this order, 30 min stagger (override per BATCH_1_CONTACT_LOG.md and PHASE_1_BLOCK_5_SEND_CHECKLIST.md):
+   - T+0: Wendy Weiser — wweiser@brennancenter.org
+   - T+30min: Marc Elias — melias@elias.law (NOT perkinscoie.com — that address is stale and that firm is under federal investigation)
+   - T+60min: Ryan Goodman — ryan.goodman@nyu.edu (alternate: ryan@justsecurity.org)
+   - T+90min: Erica Chenoweth — erica_chenoweth@hks.harvard.edu (underscore required)
+   - T+120min: Ian Bassin — ian@protectdemocracy.org
+8. Log send times in PHASE_1_BLOCK_5_SEND_CHECKLIST.md (send log table) and BATCH_1_CONTACT_LOG.md
+9. Set T+7 reminder: assess response rate — target 2 of 5 substantive replies
+
+**Timing**: Today (Saturday May 17) is marginal per checklist guidance. Monday May 18 is preferred — Tuesday-Thursday is the optimal window. The window is not closed.
+
+**Also pending this week — Domain 42 DEA track (hard deadline May 21)**:
+- 5 emails in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3
+- Fill `[Your name]` and `[Your contact information]` (10 total fills — nothing else)
+- Send order: Drug Policy Alliance, NORML, ACLU Criminal Law Reform, The Sentencing Project, LEAP
+- Must send by May 21 (hard stop). May 28 is the DEA deadline.
 
 ---
 
