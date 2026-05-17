@@ -1,30 +1,45 @@
 # Work Log
 
-## Session 1157 (Orchestrator) — May 17, 2026 14:50–15:10 UTC — Final State Verification
+## Session 1157 (Orchestrator) — May 17, 2026 14:50–15:40 UTC — May 17-18 Breaking Developments Scan + Pre-Wave-1 Currency Check
 
-**Status**: **VERIFIED READY — All systems staged and ready for May 18-19 execution windows. No autonomous work available.**
+**Status**: **READY FOR WAVE 1 EXECUTION — All systems staged. Pre-Wave-1 currency check complete.**
+
+### Work Completed
+
+**resistance-research: May 17-18 Breaking Developments Integration**
+- Spawned resistance-research agent for rapid scan of May 17-18 developments
+- Scope: Congressional votes, court decisions, state legislation, tactical escalations affecting Domains 37, 1, 57, 58
+- **Deliverable**: `domain-updates-may17-18.md` (comprehensive findings) + CHECKIN.md urgent flagging
+- **Key findings**:
+  - **Domain 1 URGENT**: *Callais* cascade accelerating — Florida gerrymander enacted, Louisiana one vote away, South Carolina House vote May 18 (DURING Wave 1 execution window), Alabama SCOTUS stay blocks protective district
+  - **Domain 37**: Mail ballot EO litigation live, Judge Nichols ruling imminent
+  - **Domain 57**: Hungary ICC withdrawal effective June 2 (pro-EU government may reverse after that date)
+  - **Domain 58**: Montana SB 490 injunction May 11 validates domain analysis (positive development)
+- **Integration judgments**: Domain 1 content should be reviewed for *Callais* integration before final Wave 1 send. All domains remain production-ready.
+- **Committed**: 0f947092 (domain updates + CHECKIN flagging)
 
 ### Verification Complete
-- **ORCHESTRATOR_STATE.md**: Confirmed state matches cached summary
-- **BLOCKED.md**: 2 active blocks (both user-action only, no changes)
+- **ORCHESTRATOR_STATE.md**: State confirmed accurate
+- **BLOCKED.md**: 2 active blocks (both user-action only, no changes since Session 1156)
 - **INBOX.md**: No new items to process
-- **PROJECTS.md + Exploration Queue**: 0 executable items; all staged for May 18-19 triggers
+- **PROJECTS.md + Exploration Queue**: Wave-1-prep work COMPLETE; all downstream items staged for May 18+ triggers
 - **Infrastructure**: CLAUDE.md compliant, all prior fixes verified
 - **Upcoming events**: 
-  - May 18 06:00 UTC: resistance-research Wave 1 execution (user action)
-  - May 18 12:00 UTC: orchestrator monitors engagement, applies contingency if needed
-  - May 19 20:00 UTC: stockbot checkpoint execution (user action + orchestrator routing)
+  - **May 18 06:00 UTC**: resistance-research Wave 1 execution (user action; breaking developments scan complete)
+  - **May 18 12:00 UTC**: orchestrator monitoring checkpoint (applies CONTINGENCY_ACTIVATION_PLAYBOOK.md if engagement metrics warrant)
+  - **May 19 20:00 UTC**: stockbot checkpoint execution (infrastructure validated Session 1149)
 
 ### Queue Status Summary
-- ✅ Session 1154-1156: 3 exploration queue items executed (docker fixes, domain scans, seedwarden prep)
-- ⏳ Staged for May 18+: 6+ items waiting for scheduled triggers
-- **Assessment**: Queue correctly populated; no need to add items before May 18 06:00 UTC trigger
+- ✅ Session 1154-1157: Breaking developments scan + all prior items executed
+- ⏳ Staged for May 18+ triggers: 6+ items (Wave-1-contingency analysis, post-checkpoint roadmaps, post-execution monitoring)
+- **Assessment**: Queue exhausted; no executable items remain until May 18 06:00 UTC trigger
 
 ### Time Spent
-- Orientation + state audit: 10 min
-- Exploration Queue review: 5 min
-- CHECKIN/WORKLOG updates: 5 min
-- **Total**: 20 minutes
+- Orientation + ORCHESTRATOR_STATE review: 5 min
+- Agent spawning + execution: 7+ min (agent runtime ~7 minutes)
+- Commit + WORKLOG update: 5 min
+- **Total session time**: 20-25 minutes
+- **Autonomous agent execution time**: ~7 minutes (resistance-research breaking developments scan)
 
 ---
 

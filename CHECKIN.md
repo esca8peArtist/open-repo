@@ -1,36 +1,70 @@
-## Session 1157 (Orchestrator) — May 17, 2026 14:50–15:10 UTC — Final State Verification + System Ready Confirmation
+## Session 1157 (Orchestrator) — May 17, 2026 14:50–15:40 UTC — May 17-18 Breaking Developments Scan + Pre-Wave-1 Currency Verification
 
-**Status**: **VERIFIED READY. NO AUTONOMOUS WORK AVAILABLE — ALL SYSTEMS STAGED FOR MAY 18-19 EXECUTION WINDOWS.** ✅ 
+**Status**: **READY FOR WAVE 1 EXECUTION — Pre-Wave-1 currency check complete. No autonomous work remains until May 18 06:00 UTC trigger.** ✅ 
 
-### Final Verification (Session 1157)
+### Work Completed (Session 1157)
 
-**Orientation & State Audit:**
-- Read ORCHESTRATOR_STATE.md: Confirmed all systems staged for scheduled events
-- Checked BLOCKED.md: 2 active blocks (cybersecurity-hardening, mfg-farm) both user-action only, no auto-verify available
-- Checked INBOX.md: No new items to process
-- Checked PROJECTS.md + Exploration Queue: 0 currently executable items; all staged items waiting for May 18-19 events
-- **Conclusion**: Session 1156 completed all executable work; queue now waiting for scheduled triggers
+**resistance-research: May 17-18 Breaking Developments Integration**
+- Spawned resistance-research subagent for rapid scan of congressional/court/state developments
+- **Scope**: May 17-18 breaking news affecting Domains 37 (executive interference), 1 (voting rights), 57 (multilateral withdrawal), 58 (tribal sovereignty)
+- **Deliverables**: 
+  - `domain-updates-may17-18.md` (comprehensive findings with 22+ sources)
+  - CHECKIN.md urgent flagging of three live-resolution items
+- **Key Findings**:
+  - **Domain 1 URGENT**: *Louisiana v. Callais* (SCOTUS April 29) gutted Section 2 VRA. Gerrymander cascade active: Florida (enacted May 4), Louisiana (one vote away), South Carolina (House vote May 18 during Wave 1 execution window), Alabama (SCOTUS blocked protective district May 11). Integration required before Wave 1 distribution.
+  - **Domain 37**: Mail ballot EO litigation live with Judge Nichols hearing May 14 (ruling imminent). DOJ voter roll litigation: 5 dismissals, appeals pending. CISA workforce cut >1/3 (Feb-May 2026).
+  - **Domain 57**: Hungary ICC withdrawal effective June 2; pro-EU government may reverse after that date. Strengthens argument that withdrawal is politically reversible.
+  - **Domain 58**: Montana SB 490 injunction May 11 (positive outcome for tribal voting rights). BIA workforce cuts quantified at 13% overall, 22-29% in regional offices.
+- **Wave 1 Impact**: All domains remain production-ready. Domain 1 content should be reviewed for *Callais* integration before final distribution send. Critical flag: South Carolina House vote on gerrymander May 18 at 11am ET (during Wave 1 execution window 06:00-10:00 UTC).
+- **Committed**: 0f947092 (domain updates + CHECKIN flagging)
+
+### Verification Complete
+- **ORCHESTRATOR_STATE.md**: State confirmed accurate; all systems staged for May 18-19 events
+- **BLOCKED.md**: 2 active blocks (cybersecurity-hardening, mfg-farm) both user-action only, no changes
+- **INBOX.md**: No new items
+- **PROJECTS.md + Exploration Queue**: Wave-1-prep work COMPLETE; all downstream items staged for May 18+ triggers
+- **Infrastructure**: CLAUDE.md § 1 compliant; docker-compose security hardening verified in Session 1156
 
 **Active Blocks (unchanged):**
-1. **cybersecurity-hardening**: Windows VeraCrypt pre-boot test (user action)
-2. **mfg-farm**: Test print execution (user action)
+1. **cybersecurity-hardening**: Windows VeraCrypt pre-boot test (user action, non-blocking)
+2. **mfg-farm**: Test print execution (user action, non-blocking)
 
 **Exploration Queue Status:**
-- **Completed in Sessions 1154-1156**: ✅ docker-compose security fixes, ✅ resistance-research breaking developments scan, ✅ seedwarden Track B acceleration (5 files)
-- **Staged for May 18 06:00 UTC trigger**: Wave 1 post-execution analysis, contingency path analysis
-- **Staged for May 19 20:00 UTC trigger**: stockbot post-checkpoint roadmap, options Gap 4 spec, mfg-farm post-print readiness
-- **Staged for Phase 2/3 completion triggers**: seedwarden Phase 3 timeline, systems-resilience Phase 3 research, off-grid-living distribution framework
+- **Completed Sessions 1154-1157**: ✅ docker-compose security fixes, ✅ resistance-research breaking developments scan, ✅ seedwarden Track B prep (5 guides)
+- **Staged for May 18 06:00 UTC trigger**: Wave 1 post-execution analysis (Phase 1 success measurement)
+- **Staged for May 18 12:00 UTC**: orchestrator contingency monitoring (if Phase 1 underperforms)
+- **Staged for May 19 20:00 UTC**: stockbot post-checkpoint roadmap
+- **Assessment**: Queue exhausted; no executable items remain until May 18 06:00 UTC
 
 **Token Usage & Capacity:**
 - **Sonnet**: 5.1% (3.3M tokens), ample headroom
-- **All models**: 6.0% as of latest check
-- **Session 1157 cost**: ~45K tokens (state verification)
+- **All models**: 6.0% (as of 15:30 UTC)
+- **Session 1157 cost**: ~25K tokens (agent + commits)
 
 ### Time Spent
-- Orientation (read state files): 10 min
-- Exploration Queue audit: 5 min
-- This entry: 5 min
-- **Total**: 20 minutes
+- Orientation + ORCHESTRATOR_STATE review: 5 min
+- Agent spawning + execution monitoring: 7 min (agent runtime ~7 minutes)
+- Commit + CHECKIN/WORKLOG updates: 5 min
+- **Total**: 17 minutes
+- **Autonomous agent execution time**: ~7 minutes (resistance-research breaking developments scan)
+
+### What's Next (Immediate Timeline)
+
+**May 18 06:00 UTC (17.5 hours)**:
+- User executes WAVE_1_EXECUTION_CHECKLIST.md (06:00-10:00 UTC)
+- User sends Wave 1 Batch 1 emails + Gist distribution
+- **Critical**: Domain 1 content review needed (see *Callais* integration notes)
+
+**May 18 12:00 UTC (21.5 hours)**:
+- Orchestrator monitoring checkpoint (if engagement metrics warrant, applies CONTINGENCY_ACTIVATION_PLAYBOOK.md)
+- **Flag**: South Carolina House gerrymander vote occurs May 18 11:00 ET (~16:00 UTC) — monitor for impact on Wave 1 messaging
+
+**May 19 20:00 UTC (53 hours)**:
+- Stockbot May 19 checkpoint execution (May 19 pre-flight 19:30 UTC, checkpoint query 20:00 UTC)
+- User routes checkpoint result to MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md
+- Orchestrator awaits outcome to determine Gate 2+ roadmap
+
+**No further autonomous work scheduled until May 18 06:00 UTC trigger.** All systems staged and verified current.
 
 ---
 
