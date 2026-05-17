@@ -1,5 +1,114 @@
 # Check-in
 
+## Session 1109 (Orchestrator) — May 17, 2026, 02:16–10:00 UTC — Tier A Updates Research Complete ✅
+
+**Status**: **SESSION COMPLETE — resistance-research Phase 1 Wave 1 Tier A updates research complete; integration pending**
+
+### Accomplishments This Session
+
+**1. Project State Management**
+- Pruned stale resistance-research focus line in PROJECTS.md (removed 20+ session references, clarified Wave 1 readiness)
+- Focus now concisely states: Path decided, Wave 1 ready, Tier A updates May 18-28, Domain E target June 15
+
+**2. Tier A Updates Policy Research (General-Research Agent)**
+- **Deliverable**: `TIER_A_UPDATES_RESEARCH_SESSION_1109.md` (comprehensive 4-domain policy analysis, 45+ sources)
+- **Four policy areas researched**:
+  1. **Domain 33 (State Legislative Autocratization)**: Callais redistricting cascade analysis
+     - Louisiana v. Callais (Apr 29, 2026): VRA Section 2 evidentiary threshold raised to "intentional discrimination"
+     - Cascade effect: 8 states redrawing maps for 2026; 40% of U.S. House seats affected
+     - Louisiana collapsed 2-district Black majority to 1; suspended May 16 primary
+     - Tennessee: Rep. Steve Cohen (19-year incumbent, majority-Black district) retiring after redistricting
+     - Status: Campaign Legal Center calls VRA enforcement "eviscerated"; no Congressional response advanced
+  
+  2. **Domain 35 (SCOTUS 2026 Term)**: Major decisions and pending cases
+     - Louisiana v. Callais (decided April 29): See Domain 33 above
+     - Trump v. Barbara (pending, expected late June/early July): Birthright citizenship challenge to EO 14160
+     - Watson v. RNC (pending, expected late June): Mail ballot grace periods; affects 13+ states; critical for November 2026 midterms
+     - 11+ other cases remaining; term timeline impacts Election Day 2026
+  
+  3. **Domain 25 (FISA Section 702 Reauth)**: Surveillance reauthorization status
+     - April 2026: Repeated short-term extensions (current: 45-day through June 12, 2026)
+     - Central fault line: Warrant requirement for U.S.-person queries (Intel agencies vs. civil liberties)
+     - Long-term proposal died in Senate April 2026 over unrelated "digital currency" rider
+     - Status: 3-4 weeks to reach consensus before June 12 deadline; institutional lock-in of status quo
+  
+  4. **Domain 19f (War Powers)**: Iran conflict and War Powers Resolution status
+     - 60-day clock expired ~May 1, 2026; ceasefire April 7
+     - Senate votes failed 47-50 (April 30) → 49-50 (May 13); margin narrowing
+     - Administration claimed ceasefire "terminates" hostilities (no legal precedent; rejects WPR constitutionality)
+     - Congress took no enforcement action; no AUMF passed
+     - Implication: Sets precedent for future administrations to use ceasefire claims to restart 60-day clock
+
+**Research quality**: 34,817 tokens consumed; 45+ peer-reviewed and official sources; production-ready for domain integration
+
+**3. Task Tracking**
+- Created Task #1: Phase 1 Wave 1 Execution — Batch 1 Send (May 17-18, USER ACTION)
+- Created Task #2: Tier A Updates research (IN PROGRESS; research complete, integration pending)
+
+### State of Projects
+
+**resistance-research**:
+- **Phase 1**: Path A decided (May 12); Wave 1 pre-staging complete; Batch 1 ready to send
+- **Phase 1 Wave 1 timing**: 
+  - Batch 1 send: May 17-18 (USER ACTION: ~2 hours template fill + send)
+  - Batches 2-3 send: May 18-20 (USER ACTION: ~20 additional contacts)
+- **Tier A Updates**: Research complete; integration pending May 18-28 window
+  - Target completion: May 28 (for June 7 distribution to Phase 1 adopters)
+  - Integration work: ~8-10 hours (create Tier A sections, add movement contacts, policy windows, advocacy levers)
+- **Domain E research**: Scheduled June 15 target (Election Administration Seizure domain)
+
+**stockbot**:
+- May 16 checkpoint executed successfully (NEAR_MISS, 34 fills, 3 round trips, +$5 PnL)
+- Lever A applied (threshold 2.28% → 1.82%; confidence 0.50 → 0.45)
+- Jetson deployment and health confirmed
+- Next checkpoint: May 19, 20:00 UTC
+- No autonomous work available until after May 19 checkpoint
+
+**cybersecurity-hardening**:
+- Blocked on user VeraCrypt pre-boot restart (manual action required; Phase 1 walkthrough paused)
+- No autonomous work available until user completes Windows restart
+
+**mfg-farm**:
+- Blocked on user test print execution (specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C)
+- No autonomous work available until user executes test print
+
+### Needs User Input
+
+1. **resistance-research Wave 1 Batch 1 send** (May 17-18, ~2 hours)
+   - Template pre-fill: Goodman, Weiser, Chenoweth, Bassin, Elias (check recent publications, personalize each email)
+   - Test send (verify URLs, check placeholders, confirm delivery)
+   - Send to Batch 1 (5 contacts)
+   - Expected response window: May 17-28
+
+2. **cybersecurity-hardening Phase 1 continuation** (paused at VeraCrypt pre-boot test)
+   - Restart Windows machine
+   - Type VeraCrypt pre-boot password when prompted
+   - Click Encrypt in VeraCrypt to start background encryption
+   - Resume Phase 1 walkthrough from step 1.4
+
+3. **mfg-farm test print execution**
+   - Execute test print with specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C
+   - Evaluate snap-arm clearance (FDM_TOLERANCE = 1.4mm is highest-risk feature)
+   - Report pass/fail decision
+
+### Suggested Priorities for Next Session
+
+1. **resistance-research Wave 1 execution** (May 18 start, time-critical)
+   - If user completes Batch 1 send May 17-18: Orchestrator begins Tier A updates integration immediately (May 18-28 window)
+   - If user hasn't sent Batch 1 yet: Orchestrator can begin integration in parallel while user executes send
+
+2. **Tier A updates integration** (May 18-28, 8-10 hours orchestrator work)
+   - Four domain integration tasks (Domain 33, 35, 25, 19f)
+   - Movement contacts research and addition
+   - Policy windows and advocacy levers documentation
+   - Target completion: May 28 for user review before June 7 distribution
+
+3. **stockbot May 19 checkpoint** (automated, watching for NEAR_MISS → PASS transition)
+   - If AAPL SELLs detected May 19: Proceed to Gate 2 planning (post-checkpoint execution)
+   - If no AAPL SELLs by May 19: Apply Lever B (HMM confidence reduction)
+
+---
+
 ## Session 1108 (Orchestrator) — May 17, 2026, 01:16–03:00 UTC — Phase 2 Household-Scale COMPLETE ✅
 
 **Status**: **SESSION COMPLETE — Phase 2 household-scale coordination framework delivered (6 documents, 47K+ words, 180+ citations)**
