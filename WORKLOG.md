@@ -1,5 +1,36 @@
 # Work Log
 
+## Session 1110 — May 17, 2026 (Research Agent — Midwest Wild Foraging Guide)
+
+**Status**: COMPLETE
+
+**Deliverable**: `projects/systems-resilience/midwest/foraging-species.md` (~6,800 words, ~860 lines, 32 citations, production-ready)
+
+**Work performed**:
+- Read individual/02-food.md and household/03-food-coordination.md to match document structure, citation style, and avoid duplicating existing foraging tables; both documents already referenced this file as forthcoming
+- Read seedwarden/products/wild-edibles-quick-reference.md to pull species ID precedent and coordinate with existing 18-species format (this new document goes substantially deeper on Midwest-specific context, yield planning, and medicinal use)
+- Researched across 10+ web searches: ramp sustainable harvest guidelines (Penn State Extension; United Plant Savers At-Risk list; 10% rule vs. 1/3 rule); black walnut yield per tree (University of Missouri Extension — 66–350 lbs per mature tree); hickory nut caloric analysis (Wisconsin Academy; 657 cal/100g); elderberry antiviral mechanism (Zakay-Rones et al. 2004; Tiralongo et al. Nutrients 2016 RCT); elderberry raw toxicity via cyanogenic glycosides (OSU Extension EM-9446); echinacea immunological mechanism (NCCIH NIH; PMC2362099); goldenrod allergy myth correction (insect-pollinated, not wind — Chesnut Herbs); white pine needle vitamin C content (4–5× citrus — Eat the Planet); purslane omega-3 (Simopoulos et al. 1992 JACN; highest ALA among leafy greens); cattail rhizome starch (70% dry mass; 6,475 lbs flour/acre — Eat the Weeds); acorn indigenous processing (Anishinaabe Menominee methods; Northern Food Forest Nursery); wild rice and Anishinaabe food system (Milwaukee Public Museum; Michigan Sea Grant); poison hemlock identification (MSU Extension — smooth purple-blotched stems, musty not carrot scent, 6–8 leaves potentially fatal); satoyama landscape management (Takeuchi et al. PMC4132462; 1,500–2,500 year tradition); Samuel Thayer credentialing (WPR interview; 2023 National Outdoor Book Award)
+
+**Content delivered**:
+- Opening finding: wild food as nutritional supplement and medicinal resource, not primary calorie source; role in seasonal calendar extending before and beyond garden window
+- Quick-reference card: full 12-month seasonal calendar with priority targets per month; highest-yield species by effort category
+- Spring foraging (March–May): dandelion, chickweed, ramps (with 10% sustainable harvest rule and United Plant Savers context), stinging nettle with full nutritional analysis, fiddlehead ferns, garlic mustard (invasive — harvest freely with Nature Conservancy citation), wild onion, watercress, wood sorrel
+- Summer foraging (June–August): black raspberry, mulberry, wild strawberry, blackberry, elderberry (raw toxicity warning + clinical antiviral evidence), pawpaw; continuous species: lamb's quarters, purslane with omega-3 data, Japanese knotweed
+- Fall foraging (September–November): black walnut (full yield/processing chain), hickory nut, acorn leaching with indigenous processing documentation; persimmon, rose hips (vitamin C), wild carrot (critical hemlock safety differentiation), Jerusalem artichoke, Solomon's seal
+- Winter foraging (December–February): white pine needle tea (vitamin C data), stored wild food strategy
+- Continuous species: stinging nettle, plantain, clover, wild mint, cattail (all four harvest seasons + starch extraction), wild rice (Anishinaabe cultural context)
+- Habitat mapping: oak-hickory forest floor, old field/meadow edge, creek/wetland margins, disturbed areas, native prairie remnants
+- Sustainability ethics: 1/3 rule (general), 10% rule (ramps specifically), full do-not-harvest list (trillium, ginseng, black cohosh, goldenseal, lady's slipper), careful-harvest list (ramps, fiddleheads, morels), harvest-freely invasives (garlic mustard, Japanese knotweed, multiflora rose, autumn olive); documentation protocol
+- Yield estimation table for food security planning: 8 species with realistic annual yields, processing requirements, caloric values
+- Preservation and processing: nuts (walnut, hickory, acorn leaching sequence), berries (fresh, freeze, dry, can), greens/herbs (drying, freezing, nettle salt), roots, medicinal preparations (elderberry syrup, nettle infusion)
+- Medicinal focus: respiratory/immune (elderberry with RCT citations, white pine, echinacea with NCCIH review), anti-inflammatory (goldenrod allergy myth corrected, plantain, St. John's Wort with drug interaction warning), digestive (wild mint, dandelion root, red clover with isoflavone data), women's health (nettle as mineral tonic), topical (plantain, comfrey external-only, jewelweed)
+- Safety and identification: high-risk confusion pairs table (wild carrot/hemlock, elderberry/pokeweed, wild onion/death camas, morel/false morel); 3-tier identification confidence system (Tier 1 beginner-safe through Tier 3 expert-confirm); Samuel Thayer field guide recommendation
+- International precedents: Japanese satoyama landscape management (Takeuchi et al. peer-reviewed); Anishinaabe Great Lakes food systems (wild rice, acorn, maple syrup); European wild food traditions and Scandinavian allemansrätten
+- Implementation timeline: Year 1 (15–20 species, habitat mapping), Year 2 (30–40 species, managed patches), Year 3+ (personal calendar, community knowledge sharing)
+- 32 peer-reviewed and authoritative citations including PMC journal articles, university extension publications, and standard herbal medicine references
+
+---
+
 ## Session 1109 — May 17, 2026 (Research Agent — Community-Scale Resilience Overview)
 
 **Status**: COMPLETE
