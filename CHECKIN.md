@@ -1,5 +1,68 @@
 # Check-in
 
+## Session 1100 — May 16–17, 2026, 23:58 UTC (Orchestrator — INBOX Items Resolution + Stockbot Checkpoint Verification)
+
+**Status**: ✅ **SESSION COMPLETE — New INBOX research items delivered + May 16 checkpoint verified + Ready for Wave 1 distribution**
+
+### Accomplishments This Session
+
+**1. Stockbot May 16 Gate 1 Checkpoint — Verified ✅**
+- Checkpoint executed May 16 00:15 UTC (early execution)
+- Scenario: NEAR_MISS_B2 (signal suppression — aapl_model_sells = 0 despite session bug fix)
+- Results: 34 total fills, 12 buy, 22 sell, 0 AAPL model sells, 3 confirmed round trips, +$5.00 net pnl
+- **Action taken**: Lever A applied (threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45)
+- Deployed: Config rsynced to Jetson, container restarted
+- **Expected effect**: AAPL SELL signals within 1-3 trading days (May 19-20)
+- **Next checkpoint**: May 19 20:00 UTC
+- **Status**: Gate 1 still in play; Lever A adjustment is reasonable and proportional
+
+**2. Resistance-Research — Houston Volunteer Organizations Research ✅**
+- New file: `houston-volunteer-orgs.md` (13 organizations)
+- Content: Full contact details, volunteer roles, drive times from 570 Katy Freeway, commitment levels
+- Entry-point recommendations by mission focus (legal aid, housing, youth mentoring, etc.)
+- Status: Production-ready for user review; personal reference, not for distribution
+- **INBOX item**: [RESOLVED 2026-05-17]
+
+**3. Systems-Resilience — Moisture Extraction + Healthcare Enhancements ✅**
+- New file: `individual/moisture-extraction.md` (4 commercial approaches, 3 DIY methods, 3 manual gravity methods)
+  - Covers: dehumidifiers, Peltier thermoelectric, passive solar desiccant, commercial AWG
+  - All methods include schematics, materials lists, Zone 5 seasonal feasibility
+  - 20+ citations (MIT, EPA, WEF, academic sources)
+- Enhanced: `individual/05-healthcare.md` (condition-by-condition herbal guide + Indigenous seed-saving)
+  - 7 health conditions with herbal remedies (fever, cough, wound care, infection, pain, anxiety, insomnia)
+  - Medicinal garden companion planting integration
+  - Indigenous seed-saving methods adapted for Zone 5
+  - 8 new citations
+- **INBOX items**: [RESOLVED 2026-05-17] moisture extraction + healthcare
+- **Status**: Both files committed; ready for next systems-resilience phase (education.md, energy.md, foraging-species.md)
+
+### Projects Status Update
+
+| Project | Status | Blocker | Next |
+|---------|--------|---------|------|
+| stockbot | Active (Lever A applied) | May 19 checkpoint | Monitor AAPL SELL execution; checkpoint May 19 20:00 UTC |
+| resistance-research | Ready for Wave 1 | User action (send emails) | User sends Phase 1 Wave 1 Batch 1 (Mon-Tue May 18-19) |
+| systems-resilience | Research complete | None | Autonomous: education.md, energy.md, foraging-species.md |
+| cybersecurity-hardening | Blocked | User restart | Windows VeraCrypt pre-boot restart + Phase 1 walkthrough |
+| mfg-farm | Blocked | User action | Execute test print (0.20mm, PLA+, 220–225°C) |
+| seedwarden | Active (Track B) | Track A: user actions | Track B ready May 30 (user gates May 15-28) |
+
+### Needs Your Input
+
+1. **Resistance-Research Phase 1 Wave 1 Batch 1** (HIGH PRIORITY — May 18-19 optimal):
+   - 5 verified contacts, all materials prepared
+   - Estimated user time: 90 minutes
+   - Location: `execution/phase-1-personalized-batch-1.md`
+
+2. **Stockbot May 19 Checkpoint** (May 19 20:00 UTC):
+   - Monitoring Lever A effect (threshold adjustment should increase AAPL SELL signal frequency)
+   - Next gate decision May 19 evening
+
+3. **Systems-Resilience Houston Volunteer Orgs** (personal reference):
+   - File: `houston-volunteer-orgs.md` — ready for user review
+
+---
+
 ## Session 1098 — May 17, 2026, 00:15–01:30 UTC (Orchestrator — INBOX Processing + Parallel Agent Execution)
 
 **Status**: ✅ **SESSION COMPLETE — Systems-Resilience Research Delivered, Resistance-Research Wave 1 Prep Ready**
