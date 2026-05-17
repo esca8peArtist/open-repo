@@ -1,5 +1,47 @@
 # Work Log
 
+## Session 1139 (Orchestrator) — May 17, 2026 11:30–12:15 UTC — mfg-farm Launch Readiness Validation + Pre-Checkpoint Monitoring
+
+**Objective**: Execute exploration queue work (mfg-farm post-test-print readiness validation) during idle time before May 19 stockbot checkpoint; ensure all systems ready for critical May 18-19 execution windows.
+
+**Status**: Complete
+
+**✅ COMPLETED**:
+
+1. **Exploration Queue: mfg-farm Post-Test-Print Product Launch Readiness** (2.5 hours)
+   - Spawned research agent to validate three launch documents against May 2026 data
+   - **Etsy checklist validation** — 4 critical gaps requiring checklist updates post-test-print:
+     * Setup fee ($15-29 non-refundable) + identity verification (Persona) now required
+     * Subcategory selection now mandatory (top-level category no longer sufficient)
+     * Production method disclosure required in listing form
+     * USPS rates up 21% cumulative (Jan 2026: 7.8–12.2%, Apr 2026: +8% temporary)
+   - **Supplier scorecard updates** — 4 vendors spot-checked, 2 price changes:
+     * eSUN PLA+ bulk: $12/kg → $15-18/kg (+40%, tariff impact)
+     * Polymaker: $15/kg → $16.50-18/kg (+10-20%, price increase)
+   - **Cost model verification**:
+     * Filament: documented $12/kg, actual $15-18/kg (optimistic by 40%)
+     * Electricity: documented $0.12/kWh, actual $0.18/kWh residential (outdated by 50%)
+     * Net margin impact: <1% at Phase 1 scale; directionally valid
+   - **Deliverable**: projects/mfg-farm/LAUNCH_READINESS_VALIDATION.md (sourced, 8 citations)
+   - **Commit**: 49ad8156 (agent-committed)
+
+2. **Pre-Checkpoint Status Verification** ✅
+   - stockbot: May 19 20:00 UTC checkpoint ready; monitoring only
+   - resistance-research: Wave 1 materials ready; awaiting user path decision May 18 06:00 UTC
+   - No new blocks; both active blocks remain on user action
+
+**Critical Timeline**:
+- **May 18 06:00 UTC** (18 hours): resistance-research path decision + Wave 1 execution begins
+- **May 19 20:00 UTC** (43 hours): stockbot checkpoint execution (Gate 1 outcome)
+
+**Exploration Queue**: 3 items staged post-checkpoint (stockbot Gap 4, resistance-research Phase 2, seedwarden Phase 4)
+
+**Token Usage**: 5.3% all-models (healthy, well below 80%)
+
+**Next**: May 18 morning (decision deadline) + May 19 20:00 UTC (checkpoint execution)
+
+---
+
 ## Session 1138 (Research Agent) — May 17, 2026 — mfg-farm Launch Readiness Validation
 
 **Objective**: Validate three mfg-farm launch documents against current May 2026 data.
