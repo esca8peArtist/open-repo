@@ -1,3 +1,40 @@
+## Session 1149 (Orchestrator) — May 17, 2026 13:45–14:20 UTC — May 18-19 Checkpoint Window Insurance Policies Complete
+
+**Status**: **BOTH CRITICAL-EVENT INSURANCE POLICIES DOCUMENTED AND READY.** ✅ Stockbot pre-checkpoint validation complete (95% confidence). ✅ Resistance-research Wave 1 contingency plan complete (5 variants + decision tree). All autonomous work staged for May 18-19 execution window. No further autonomous work available.
+
+### Since Last Check-in
+
+**Completed Work**:
+1. **Stockbot Pre-Checkpoint Validation** — 95% confidence for May 19 20:00 UTC checkpoint
+   - Live Jetson health verified: Docker containers healthy, both AAPL sessions cycling correctly, Lever A parameters confirmed (tm=0.40, cf=0.45)
+   - Infrastructure: 131 GB disk free, network connectivity healthy, Alpaca API credentials valid, Discord webhook functional
+   - Risk assessment: 40% business risk (may need Lever B adjustment), 6-8% infrastructure risk (all recoverable)
+   - Deliverable: PRE_CHECKPOINT_VALIDATION_MAY19.md committed
+
+2. **Resistance-Research Wave 1 Contingency Strategy** — 5-variant plan with 2-gate decision tree
+   - Designed for 2-hour activation if Wave 1 underperforms
+   - May 18 12:00 UTC: Pre-select likely variant using response metrics
+   - May 21 onwards: Activate if Tier 1 engagement remains low
+   - Variants: A1–A4 (Tier engagement strategies), B1–B3 (Domain 37 hybrid workarounds)
+   - Deliverable: PHASE_1_POST_WAVE1_CONTINGENCY.md (2,650 words) committed
+
+### What's Next
+
+**May 18 06:00 UTC**:
+- User executes resistance-research Wave 1 checklist (WAVE_1_EXECUTION_CHECKLIST.md)
+- Duration: ~4 hours (06:00–10:00 UTC)
+- Orchestrator monitors and applies contingency decision tree at May 18 12:00 UTC if needed
+
+**May 19 20:00 UTC**:
+- Stockbot checkpoint execution per MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md
+- Pre-flight: 19:30 UTC (`may19_checkpoint_analysis.py --verify`)
+- Main execution: 20:00 UTC (checkpoint query)
+- Route to playbook for PASS / MISS / STILL_MISS scenarios
+
+**No autonomous work available** until these triggers fire. All projects either awaiting May 18-19 events or blocked on user actions (cybersecurity-hardening restart, mfg-farm test print, seedwarden plan decisions).
+
+---
+
 ## Session 1148 (Orchestrator) — May 17, 2026 12:31–13:45 UTC — Pre-Checkpoint + Wave 1 Pre-Execution Verification Complete
 
 **Status**: **BOTH CRITICAL SYSTEMS VERIFIED READY FOR MAY 18-19 EXECUTION WINDOW.** ✅ Stockbot Jetson infrastructure READY (all 12 validation checks pass, T-56h before checkpoint). ✅ Resistance-research Wave 1 materials READY (all Gists live, 2 email address typos fixed). No autonomous work triggers until May 18 06:00 UTC.
