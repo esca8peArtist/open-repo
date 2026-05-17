@@ -1,5 +1,34 @@
 # Work Log
 
+## Session 1106 — May 17, 2026 (Research Agent — Household Food Coordination)
+
+**Status**: COMPLETE
+
+**Deliverable**: `projects/systems-resilience/household/03-food-coordination.md` (~7,800 words, 35 citations, production-ready)
+
+**Work performed**:
+- Read existing Phase 2 docs (01-household-coordination-overview.md, 02-water-coordination.md) to match structure and conventions
+- Researched: Three Sisters polyculture LER evidence (2025 Wiley study), USDA Zone 5 yield data, Cuba Special Period household food response, Andean GIAHS elevation-tier risk distribution, West African compound farming perennial integration, chicken/rabbit/duck production data (land-grant extension), root cellar design/cost, shared canning kitchen infrastructure, NCHFP pressure canning standards, Ostrom commons governance principles for distribution formula, Midwest tornado planting disruption (Ohio State Extension), perennial timeline for Zone 5 (OSU fruit guide, UW hazelnut extension)
+
+**Content delivered**:
+- 3-household food cluster model: Zone A (caloric staples/Three Sisters), Zone B (root crops/garlic), Zone C (market garden/perennials/livestock)
+- Quick-reference yield table for 9 Zone 5 crops with production estimates
+- Labor division calendar (April–October) with hour estimates per task and household
+- Livestock integration: laying hens (18-hen flock, 3,960 eggs/year), meat rabbits (125–250 lbs/year from 3 does), ducks — with governance provisions
+- Shared root cellar specs: 400–600 sq ft, 6 storage sections, $1,333–3,333/household
+- Shared canning kitchen: propane burner setup, scheduling protocol, equipment list
+- Four preservation methods with cluster-scale volumes: pressure canning (200–400 qts/season), fermentation (20–30 gal), dehydration (30–50 lbs), root cellar (10,000–12,000 lbs winter target)
+- Distribution governance: Formula A/B/C comparison; spoilage protocol; shortfall protocol; food log system
+- Water/energy/healthcare integration with specific cross-references to sister documents
+- Midwest-specific challenges: spring flooding, May tornado contingency, October perennial management, winter dormancy gap, tick/pest patterns, root cellar mouse exclusion
+- 3-phase implementation timeline with capital cost estimates
+- International precedent: Cuba (organopónico cluster model), Andes (GIAHS elevation-tier diversification), West Africa (compound farming perennial integration)
+- 4 worksheets: zone assignment plan, preservation volume tracker, labor log, canning kitchen schedule
+
+**Project impact**: systems-resilience Phase 2 household-scale now at 3/6 domains complete (coordination overview, water, food). Next domains: energy, healthcare, community overview.
+
+---
+
 ## Session 1105 — May 17, 2026 01:00–01:45 UTC (Orchestrator Session)
 
 **Status**: COMPLETE

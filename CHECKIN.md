@@ -1,5 +1,28 @@
 # Check-in
 
+## Session 1106 — May 17, 2026 (Research Agent — Household Food Coordination)
+
+**Status**: ✅ **COMPLETE — systems-resilience household/03-food-coordination.md delivered**
+
+### Accomplishment
+
+**Item 57: systems-resilience — Household Food Coordination ✅**
+
+**Deliverable**: `projects/systems-resilience/household/03-food-coordination.md` (~7,800 words, 35 citations)
+
+**Core finding**: A 3-household cluster tolerates 2 simultaneous partial crop failures without entering a food crisis, because distributed production zones (Zone A staples, Zone B roots, Zone C market garden/perennials) face different pest, flood, and frost exposures. Shared root cellar and canning kitchen infrastructure costs $1,333–3,333/household compared to $3,000–9,000 each for individual cellars, while achieving better thermal performance at scale.
+
+**Key design decisions documented**:
+- Three Sisters polyculture in Zone A: Land Equivalency Ratio > 1 confirmed by 2025 peer-reviewed research (Cryan et al., Wiley); nitrogen fixation eliminates fertilizer cost
+- Garlic as highest-ROI crop: 6,000–12,000 lbs/acre (Penn State Extension); 20 minutes planting in October returns 6–10× yield in July; 6–10 month storage without refrigeration
+- Distribution Formula C recommended (equal per-capita baseline + needs-based supplement) following Ostrom commons governance proportionality principle
+- Propane-first canning strategy eliminates electrical load competition with solar-battery system during August–October peak
+- Perennial Zone C (fruit trees, hazelnuts, berry bushes) is the highest long-term resilience investment; first meaningful return year 3–5; labor requirements drop 80% vs. annual crops after establishment
+
+**Phase 2 progress**: 3/6 household domains complete (coordination overview, water, food). Next: energy coordination, healthcare coordination, community overview.
+
+---
+
 ## Session 1105 — May 17, 2026, 01:00–01:45 UTC (Orchestrator — Household Water Coordination + Phase 1 Wave 1 Readiness)
 
 **Status**: ✅ **SESSION COMPLETE — systems-resilience household/02-water-coordination delivered**
