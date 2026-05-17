@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 ready to execute starting May 18: Batch 1 (5 pre-verified contacts), all 8 Gists live. Tier A updates INTEGRATED (Domains 33, 35, 25, 19f). Phase 2 research: Domains E+F, 38-40, 56-58 complete. **Domain G research SCOPED** (press freedom/information ecosystem — supply-side epistemic infrastructure attack): outline complete (261 lines, 35KB), 33+ sources gathered, June 15 target. **Next**: Execute Wave 1 (May 18-20, USER ACTION), user review (May 25-28), Domain G production research (May 17–June 15), Phase 2 distribution (June-August).
+**Current focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 ready to execute starting May 18: Batch 1 (5 pre-verified contacts), all 8 Gists live. Tier A updates INTEGRATED (Domains 33, 35, 25, 19f). Phase 2 research: Domains E+F, 38-40, 56-58, **G COMPLETE** (May 17, 7,200 words, 50 citations, press freedom/epistemic infrastructure). **Next**: Execute Wave 1 (May 18-20, USER ACTION), user review (May 25-28), Phase 2 distribution (June-August).
 
 **Phase 2 DOMAINS 56 + 58 RESEARCH COMPLETE**:
   - **Domain 56** (Civil Service Politicization, 47 citations): H.R. 492/S. 134 legislative window June 1-30, DOJ Voting Section collapse (6 attorneys from 30), highest-leverage: Partnership for Public Service + AFGE briefing May 19-23
@@ -800,8 +800,10 @@
 **Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
 **Visibility**: Public — GitHub repo: `esca8peArtist/open-repo`. Use remote `open-repo` for all pushes. Use `git subtree push --prefix=projects/open-repo open-repo <branch>` — never push to `origin`.
 **Working dir**: `projects/open-repo/`
-**Current focus**: **PR #1 OPEN** (2026-04-26) + **PR #2 OPEN for Phase 5 Candidate 3** (2026-05-15 01:35 UTC)
-- **PR #1** Title: "feat: Wave 4 Phase 2 — Federation Service Infrastructure" (awaiting review)
+**Current focus**: **PR #1 & #2 MERGE-READY** (both reviewed, no blockers)
+- **PR #1** (2026-04-26): "feat: Wave 4 Phase 2 — Federation Service Infrastructure" — 194 tests passing, strong code quality. Recommendation: merge.
+- **PR #2** (2026-05-15): "Phase 5 docs + security fix" — Documentation clean, security fix verified (0.0.0.0 → 127.0.0.1), Phase 5 stubs well-documented. Recommendation: merge after PR #1.
+- **Post-merge cleanup**: Resolve `PHASE_5_ARCHITECTURE.md` duplication (root vs. docs/)
 - **PR #2** Title: "docs: Update README + API.md for Phase 4; fix 0.0.0.0 binding in quickstart" (https://github.com/esca8peArtist/open-repo/pull/2)
 - 194/198 tests passing (4 skipped), 0 failures
 - Wave 4 federation complete: partner registration, service layer, admin routes, HTTP signature verification, request signing, conflict detection

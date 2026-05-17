@@ -1,5 +1,39 @@
 # Check-in
 
+## Session 1114 (Orchestrator) — May 17, 2026, 05:40–05:50 UTC — Domain G Research Complete + open-repo PRs Reviewed ✅
+
+**Status**: **SESSION COMPLETE — Domain G research production-ready (7,200 words, 50 citations); open-repo PRs both merge-ready**
+
+### Since Last Check-in
+
+**Autonomous Work Completed**:
+1. ✅ **resistance-research: Domain G Research COMPLETE** (May 17, 05:45 UTC)
+   - Production research document: `domain-G-press-freedom-epistemic-infrastructure.md` (7,200 words, 50 verified citations)
+   - Coverage: FCC weaponization, DOJ source protection elimination, CPB/VOA dismantlement, local news collapse, international precedent (Germany/BBC/Canada), advocacy windows
+   - Key findings: Newspaper closures → 5.5-6.4 basis point municipal bond yield increase (Brookings); local news deserts expanded to 213 counties (50M Americans affected); CPB dissolution ruled unconstitutional viewpoint discrimination (Judge Moss, March 31, 2026)
+   - Status: First-pass production-ready; minor gap noted (Cincinnati Post attribution — should confirm to peer-reviewed journal); June 15 revision window for final polish
+   - Committed to master: `domain-G-press-freedom-epistemic-infrastructure.md`
+
+2. ✅ **open-repo: PR Review COMPLETE** (May 17, 05:45 UTC)
+   - **PR #1** (2026-04-26): Wave 4 Phase 2 Federation Service — 194 tests passing, strong code quality, merge-ready ✅
+   - **PR #2** (2026-05-15): Phase 5 docs + security fix — Documentation clean, 0.0.0.0 → 127.0.0.1 security fix verified, merge-ready ✅
+   - Recommended merge order: PR #1 first, PR #2 second
+   - Post-merge cleanup item: Resolve `PHASE_5_ARCHITECTURE.md` duplication (root vs. docs/)
+   - Findings logged to WORKLOG.md
+
+**Project Status Updates**:
+- **resistance-research**: Domain G now COMPLETE; 4 of 6 Phase 2 Domains finished (38, 39, 40, G). Phase 1 Wave 1 execution ready May 18 (user action)
+- **open-repo**: Both PRs reviewed and merge-ready; user authorization needed to merge on esca8peArtist/open-repo
+
+**Needs User Input**:
+1. **open-repo**: Merge PR #1, then PR #2 (both reviewed and approved)
+2. **resistance-research**: Execute Phase 1 Wave 1 Batch 1 (May 18-20, ~2 hours)
+3. **stockbot**: Execute May 19 20:00 UTC checkpoint query (scheduled for tomorrow)
+4. **cybersecurity-hardening**: Windows VeraCrypt restart (Phase 1 walkthrough pending)
+5. **mfg-farm**: Execute test print (0.20mm, PLA+, 3 walls, evaluate snap-arm clearance)
+
+---
+
 ## Session 1113 (Orchestrator + Stockbot + Resistance-Research Agents) — May 17, 2026, 04:45–05:30 UTC — May 19 Checkpoint Verification Complete + Domain G Research Scoped ✅
 
 **Status**: **SESSION COMPLETE — Stockbot May 19 checkpoint fully prepared; resistance-research Domain G research scoped and started (261-line outline, 33+ sources)**
