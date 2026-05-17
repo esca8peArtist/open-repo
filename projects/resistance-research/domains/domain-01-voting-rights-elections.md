@@ -508,9 +508,112 @@ Sources:
 - [GPB: Kemp Won't Order Redistricting in Georgia After Supreme Court Weakens Voting Rights (May 1, 2026)](https://www.gpb.org/news/2026/05/01/kemp-wont-order-redistricting-in-georgia-after-supreme-court-weakens-voting-rights)
 - [Campaign Legal Center: What's Next After VRA Evisceration](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next)
 
+### 8.6 May 6-17 Cascade Expansion: Seven States, SCOTUS Shadow Docket Operationalization, and Allen v. Milligan's Effective Overrule
+
+**Updated**: May 17, 2026 (Session 1160)
+
+The Callais redistricting cascade expanded significantly between May 6-17, 2026, revealing a pattern that extends far beyond the May 1-5 initial sprint. As of May 17, at least seven states have either passed new maps, held or scheduled special sessions, or sought emergency court relief. More critically, the Supreme Court's May 11 shadow docket decision vacating the *Allen v. Milligan* injunction mid-primary demonstrates that SCOTUS will operationalize *Callais* in real time, not merely as a retroactive legal doctrine.
+
+#### Louisiana: Map Passed, Open Primary Structure on November 3
+
+The state legislature passed a new congressional map by approximately May 14-15, 2026, eliminating one of Louisiana's two majority-Black districts. Simultaneously, the legislature restructured congressional elections as an open primary on November 3, 2026 — consolidating the primary with the general election and eliminating a separate primary runoff. The May 16 congressional primary deadline was met by suspending the election; approximately 42,000 absentee ballots cast before the suspension were discarded.
+
+**Legal posture**: VRA Section 2 challenges will face the post-Callais intentional discrimination standard. Louisiana will defend the map as partisan rather than racial.
+
+#### Alabama: SCOTUS Vacates *Allen v. Milligan* Injunction — May 11 Order
+
+**This is the most operationally significant development of the entire cascade.** On May 11, 2026, the U.S. Supreme Court, in an unsigned order in *Allen v. Caster* (No. 25-243), vacated the lower court's injunction protecting Alabama's court-ordered majority-Black district. The Court remanded to the Eleventh Circuit to reconsider in light of *Callais*. The order was 6-3, with Sotomayor, Kagan, and Jackson dissenting.
+
+**Immediate operational consequence**: Alabama immediately reverted to its 2023 congressional map — which eliminates the second majority-Black district that *Allen v. Milligan* (2023) had required. Voting in the May 19 primary was already underway when the injunction was vacated.
+
+**Allen v. Milligan is functionally overruled**: The 2023 Supreme Court precedent requiring Alabama to draw a second majority-Black district has been vacated and remanded under the intentional discrimination standard. Because Alabama will argue the 2023 map reflects partisan rather than racial motivation, it will almost certainly survive remand. The remedy *Allen v. Milligan* provided — mandatory inclusion of a majority-Black district — has been reversed not through explicit overruling but through the *Callais* standard shift.
+
+**Sotomayor's dissent explicitly highlighted the shadow docket abuse**: "Alabama's congressional primary election is next week, and vacating the District Court's injunction will immediately replace the current map with Alabama's 2023 Redistricting Plan until the District Court acts, even though voting has already begun."
+
+**Special election mechanics**: Governor Ivey announced a special primary election for August 11, 2026, under the restored 2023 map. A federal court set a May 22 hearing on the new Alabama map — the next litigation checkpoint.
+
+#### Tennessee: Map Enacted May 7, Lawsuits Filed, May 20 Critical Gate
+
+Governor Bill Lee's special session produced the fastest post-*Callais* map enactment. Timeline:
+- May 5: Legislature convenes
+- May 6: Republicans unveil map splitting Memphis into three districts (5, 8, 9), each paired with rural red counties
+- May 7: Both chambers pass; Lee signs the same day
+- May 7: NAACP Tennessee State Conference files federal lawsuit
+- May 12: ACLU files separate federal lawsuit
+- May 12: U.S. District Judge William Campbell (Trump appointee) schedules May 20 hearing on temporary restraining order
+- May 14: NAACP and League of Women Voters file amended complaint alleging **intentional racial discrimination** under the 14th Amendment's Equal Protection Clause
+
+**Critical legal adaptation**: Plaintiffs challenging Tennessee's map are pleading intentional racial discrimination under the Constitution rather than relying on VRA Section 2 — confirming that civil rights litigators have pivoted to the constitutional floor in the post-Callais environment. The May 20 hearing is the first real test of whether the constitutional floor holds.
+
+**May 20 TRO hearing is the gate**: If Judge Campbell denies the temporary restraining order, Tennessee's map proceeds to 2026 elections, and the target — Rep. Steve Cohen's majority-Black District 9 — is eliminated. A 9-0 Republican sweep would be the outcome.
+
+#### Florida: Three Lawsuits Consolidated, State Constitutional Angle Strong
+
+DeSantis signed the map May 4. Three lawsuits were filed May 4-5, consolidated in Leon County Circuit Court:
+1. Elias Law Group on behalf of Equal Ground Education Fund
+2. Common Cause, League of Women Voters Florida, LULAC
+3. Additional voter-plaintiffs
+
+**May 15 injunction hearing**: Two-plus-hour hearing on the temporary injunction motion before Judge Joshua Hawkes (DeSantis appointee). No ruling as of May 17.
+
+**State constitutional lever**: Florida's Fair Districts constitutional amendments (Art. III, Sec. 20-21) prohibit drawing maps "with the intent to favor or disfavor a political party or an incumbent." This is an independent state constitutional basis that does not depend on VRA Section 2 and survives *Callais* entirely. The Florida cases are potentially the strongest test of whether state constitutions can substitute for the eviscerated VRA Section 2. Outcome depends on whether DeSantis-appointed state judges enforce the state constitution against the DeSantis legislative program.
+
+#### Georgia: Special Session Called, But Deferral to 2028 Not a Resistance Victory
+
+On approximately May 13-15, 2026, Governor Brian Kemp announced a special session for June 17, 2026 — explicitly limited to redrawing maps for 2028 elections, not 2026. Kemp stated: "Voting is already underway for the 2026 elections, but it's clear that Callais requires Georgia to adopt new electoral maps before the 2028 election cycle."
+
+**Clarification**: Kemp has not rejected redistricting; he has conceded redistricting is required post-*Callais*. He is merely deferring implementation to 2028. Georgia's majority-Black congressional districts (Rep. Sanford Bishop's District 2, Rep. David Scott's District 13) remain in place for 2026, but are at-risk for 2028. Track Georgia as a 2028 threat, not a 2026 victory.
+
+#### Virginia: Voter-Approved Redistricting Nullified; SCOTUS Denies Emergency (May 16)
+
+**Not previously tracked, but critical precedent**: Virginia's state supreme court nullified a voter-approved redistricting amendment. Three million Virginia voters approved redistricting reform via ballot initiative; the Virginia Supreme Court (4-3) declared it "null and void."
+
+On May 11, Virginia Democrats filed an emergency application with Chief Justice John Roberts asking SCOTUS to revive the voter-approved map. SCOTUS denied the application on May 16. The denial has the effect of closing off the referendum-as-redistricting-reform pathway in states where legislatures gerrymander and voters attempt to override via ballot initiative.
+
+**Constitutional significance**: A state supreme court can nullify a redistricting referendum approved by millions of voters, and the U.S. Supreme Court will not intervene. This eliminates one structural reform pathway for states outside the legislative amendment process.
+
+#### South Carolina: New State in Cascade, Target Is James Clyburn's Seat
+
+Governor Henry McMaster called a special session beginning May 15, 2026, targeting Rep. James Clyburn's majority-Black District 6 — South Carolina's only majority-minority congressional district and one of the House Whip ranks' most influential positions.
+
+**Procedural engineering**: The legislature failed to extend the regular session (which would require a two-thirds supermajority); instead, Republicans used a special session mechanism that requires only a simple majority, specifically to lower the procedural threshold for redistricting. The strategy parallels Tennessee and Alabama — rapid map redrawing post-*Callais* targeting specific Black-opportunity districts.
+
+**Trump pressure**: President Trump publicly called for South Carolina redistricting, adding federal pressure to state actors.
+
+#### SCOTUS Shadow Docket Operationalizing *Callais*
+
+The Supreme Court's May 11 order vacating *Allen v. Milligan* establishes that SCOTUS will use its shadow docket not only to stay lower court injunctions (Texas precedent from 2020s cases) but to affirmatively vacate them mid-primary, with voting already underway. The timeline — injunction vacated with ballots already cast — is the new operative precedent for how the Court will manage *Callais* applications.
+
+**Emerging pattern**: When redistricting challenges generate emergency applications before a primary election, SCOTUS will likely deny stays and allow discriminatory maps to proceed. The Alabama precedent suggests the Court will use unsigned orders to expedite the process, avoiding circuit splitter delays.
+
+#### Upcoming Critical Dates (as of May 17)
+
+- **May 19**: Alabama congressional primary conducted under restored discriminatory map (pending remand resolution)
+- **May 20**: Tennessee TRO hearing before Judge Campbell — gate for whether Memphis district map is blocked or proceeds
+- **May 22**: Alabama federal court hearing on new map challenge
+- **Imminent**: Florida ruling on temporary injunction motion (Judge Hawkes, DeSantis appointee)
+- **June 17**: Georgia special session on redistricting (2028 maps only)
+- **August 11**: Alabama special primary election under restored 2023 map
+- **November 3**: Louisiana open primary (consolidated with general election)
+
+#### Electoral Math Adjustment
+
+The cascade scope expansion to seven states suggests Republicans can add 5-10 House seats through redistricting alone, depending on litigation outcomes. The May 19 (Alabama), May 20 (Tennessee), and May 22 (Alabama court) checkpoints are the immediate gates that will clarify 2026 House majority math. In the current 218-214 Republican configuration, losing 3 seats flips the House to Democratic control. If all pending redistricting efforts succeed, Republicans could move to a 223-212 or safer position — a structural shift disconnected from any midterm election outcomes.
+
+Sources:
+- [Alabama Reflector — SCOTUS vacates ruling (May 11, 2026)](https://alabamareflector.com/2026/05/11/u-s-supreme-court-vacates-ruling-blocking-use-of-2023-alabama-congressional-map/)
+- [SCOTUSblog — Allen v. Caster order clarification](https://www.scotusblog.com/2026/05/court-clears-way-for-alabama-to-use-congressional-map-blocked-by-lower-court-as-racially-discrim/)
+- [Democracy Docket — SCOTUS greenlights Alabama plan (May 11, 2026)](https://www.democracydocket.com/news-alerts/scotus-greenlights-11th-hour-alabama-redistricting-plan-for-2026-election/)
+- [Tennessee Lookout — map passed (May 7, 2026)](https://tennesseelookout.com/2026/05/07/tenn-passes-new-potential-9-0-gop-u-s-house-map-eight-days-after-scotus-guts-voting-rights-act/)
+- [Tennessee Lookout — May 20 hearing scheduled (May 12, 2026)](https://tennesseelookout.com/2026/05/12/federal-judge-sets-may-20-hearing-in-tennessee-redistricting-lawsuit/)
+- [Virginia Mercury — Virginia Democrats emergency application (May 11, 2026)](https://virginiamercury.com/2026/05/11/virginia-democrats-seek-emergency-injunction-from-us-supreme-court-in-redistricting-fight/)
+- [Maryland Matters — SCOTUS rejects Virginia (May 16, 2026)](https://marylandmatters.org/2026/05/16/supreme-court-rejects-virginia-democrats-bid-to-salvage-redistricting-plan/)
+- [NBC News — South Carolina special session (May 15, 2026)](https://www.nbcnews.com/politics/2026-election/south-carolina-governor-mcmaster-calls-special-session-redistricting-rcna345104)
+- [Democracy Docket — South Carolina redistricting (May 15, 2026)](https://www.democracydocket.com/news-alerts/south-carolina-revives-trump-backed-redistricting-push/)
+- [Florida Politics — Florida consolidation (May 14-15, 2026)](https://floridapolitics.com/archives/796028-judge-takes-step-to-consolidate-redistricting-challenges-ahead-of-hearing-to-put-florida-map-on-hold/)
+
 ---
 
-*Section 8 added: May 6, 2026 (Session 8xx)*
-*Purpose: Documents Callais redistricting cascade (May 1-5, 2026) — the most operationally significant post-ruling development for 2026 midterm electoral map.*
-*Purpose: Corrects prior session research error (Session 573 conflated 2024 RISAA outcome with projected 2026 outcome); documents accurate April 28 pre-vote status; provides four-scenario framework for electoral security implications; fill-in checklist ready for post-April 30 completion*
-*Cross-reference: surveillance-tracking.md Post-Deadline Update (corrected to pending status, same session)*
+*Section 8.6 added: May 17, 2026 (Session 1160)*
+*Purpose: Documents Callais cascade expansion (May 6-17, 2026) — seven states, SCOTUS shadow docket operationalization mid-primary, Allen v. Milligan functional overrule, Virginia nullification precedent.*
+*Status: Production-ready for Wave 1 distribution May 18 06:00 UTC.*
