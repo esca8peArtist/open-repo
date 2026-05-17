@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T05:17:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T06:42:16Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.4% | Reset in 43h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.4% | Reset in 41h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 ready to execute starting May 18: Batch 1 (5 pre-verified contacts), all 8 Gists live. Tier A updates INTEGRATED (Domains 33, 35, 25, 19f). Phase 2 research: Domains E+F, 38-40, 56-58, **G COMPLETE** (May 17, 7,200 words, 50 citations, press freedom/epistemic infrastructure). **Next**: Execute Wave 1 (May 18-20, USER ACTION), user review (May 25-28), Phase 2 distribution (June-August).
+**Focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 ready to execute starting May 18: Batch 1 (5 pre-verified contacts), all 8 Gists live. Tier A updates INTEGRATED (Domains 33, 35, 25, 19f). Phase 2 research: Domains 38-40, 56, 58, 49, 50 **DISTRIBUTION-READY**; Domain 59 full-research (59-65 hrs, June 16–Aug 10), Domain 57 full-research (45-51 hrs, July 1–Aug 10). **Phase 2 Execution Plan COMPLETE** (Session 1120): PHASE_2_EXECUTION_PLAN.md covers  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -45,7 +45,7 @@
 
 ### systems-resilience
 **Status**: Active — **Phase 1 INDIVIDUAL-SCALE COMPLETE + PHASE 2 HOUSEHOLD-SCALE INITIATED** (6 individual domains + household coordination overview). Individual-scale COMPLETE: 01-water.md, 02-food.md, 03-shelter.md, 04-energy.md, 05-healthcare.md, 06-agriculture.md + extreme-weather.md, calendar.md (10.3K words, 33 citations). Household-scale LAUNCHED: 01-household-coordination-overview.md (7,449 words, 38 citations).
-**Focus**: **Phase 1-4a COMPLETE** (Sessions 1105-1118). Phase 4a Technology Repair complete: `04-technology-repair-community-infrastructure.md` (7,133 words, 20 citations, community tool library design + repair knowledge infrastructure) + `04-technology-repair-equipment-protocols.md` (8,864 words, 20 citations, solar/pump/generator/small-engine/electronics maintenance + Zone 5 specifics). Phase 4 scoping document identified three remaining options: (2) Agricultural Intensification (15-22 hrs), (3) Educati … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 1-4a COMPLETE** (Sessions 1105-1118). Phase 4a Technology Repair complete: `04-technology-repair-community-infrastructure.md` (7,133 words, 20 citations) + `04-technology-repair-equipment-protocols.md` (8,864 words, 20 citations). **Phase 4b OPTIONS ANALYSIS COMPLETE** (Session 1120): PHASE_4B_OPTIONS_COMPARISON.md (2,400 words) provides detailed comparison of three options: (2) Agricultural Intensification (15-22 hrs, time-critical perennial planning, RECOMMENDED), (3) Education/Knowled … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
