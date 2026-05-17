@@ -4,6 +4,40 @@ Ongoing log of image downloads, content edits, and sourcing decisions.
 
 ---
 
+## Agent Session — Phase 3 Medicinal Herbs Timeline — 2026-05-17
+
+**Task**: Create `phase-3-medicinal-herbs-timeline.md` — detailed research roadmap for Track B
+Phase 3 medicinal herbs (June 22 – July 13) to inform user scope decision before Phase 2
+launch May 30.
+
+**File created**: `projects/seedwarden/phase-3-medicinal-herbs-timeline.md`
+- Word count: approximately 2,700 words
+- Sections: 7 (Etsy market research, grow-guide sourcing, photography, production timeline,
+  Phase 2 integration, weekly milestones, go/no-go decision framework)
+- Cross-referenced: phase-3-medicinal-herbs-etsy-listings.md,
+  phase-3-medicinal-herbs-content-outline.md, phase-3-medicinal-herbs-sourcing-guide.md,
+  PHASE_3_PRODUCTION_TIMELINE.md, phase-3-medicinal-herbs-strategy.md
+
+**Web research conducted**:
+- Etsy medicinal herb digital guide market structure (May 2026)
+- United Plant Savers At-Risk species list (confirmed current 2025: black cohosh, goldenseal,
+  echinacea both species, plus 29+ other at-risk species)
+- University extension cultivation sources confirmed active: forest-farming.extension.org
+  (black cohosh, goldenseal profiles), NC State Extension (Jeanine Davis publications),
+  USDA FS agroforestry notes (goldenseal forest production)
+
+**Key decisions documented**:
+- June 22 start date confirmed as critical path constraint for September 2026 Women's Health
+  bundle launch (outreach must go out June 22 for 4-week response window before July 31 gate)
+- Recommended decision path: authorize research window June 22 (low-cost, low-risk),
+  hold writing sprint authorization to June 15 gate (Phase 2 forager cohort >20% +
+  conversion >1.5%)
+- Photo sourcing priority: lavender, mullein, calendula, elderberry, lemon balm, passionflower
+  have strong Wikimedia CC-BY-SA coverage (Week 1 direct download); black cohosh, goldenseal,
+  ashwagandha require institutional outreach (Week 1 emails)
+
+---
+
 ## Agent Session — Track B Autonomous Prep — Gate 1 Acceleration — 2026-05-17
 
 **Task**: Execute 5-task Track B autonomous prep to reduce user May 18–20 execution time
