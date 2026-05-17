@@ -48,6 +48,52 @@
 
 Both ongoing blockers (cybersecurity-hardening VeraCrypt restart, mfg-farm test print) are user-action gates. No infrastructure barriers exist for either critical-path event.
 
+---
+
+## Session 1168 (Orchestrator) — May 17, 2026 18:50–19:15 UTC — Checkpoint Decision Framework Completion & Final Pre-Flight
+
+**Status**: ✅ **ALL PRE-CHECKPOINT INFRASTRUCTURE READY — Two critical decision documents confirmed complete. System ready for May 19 20:00 UTC checkpoint execution.**
+
+### Work Completed
+
+**1. Jetson Infrastructure Validation Report** — ALREADY COMPLETE
+- Completed in parallel sessions earlier today (13:49 UTC and 16:38 UTC)
+- File: `projects/stockbot/jetson-pre-checkpoint-validation-report.md`
+- Verdict: **GO — 95% confidence for clean May 19 checkpoint execution**
+- Key metrics: Load test 100 cycles → mean 1.38 ms latency, Tj 47.8°C (37°C headroom), memory flat 534.8 MiB, all DB queries <2 ms
+- All six infrastructure domains validated: load profiling, memory, latency, database performance, dependencies, disk I/O
+
+**2. Post-Checkpoint Decision Framework** — NEW COMPLETE
+- File: `projects/stockbot/post-checkpoint-decision-framework.md`
+- Committed to stockbot submodule: commit 4c8fce3
+- Purpose: <2-minute lookup reference at 20:00 UTC May 19 for all checkpoint outcome scenarios
+- Scenario coverage: PASS (35% probability), NEAR_MISS (50%), FAR_MISS_C1 (13%), FAR_MISS_C2 (2%)
+- Structure: One-page matrix + 4 scenario briefs (1 page each) + supporting cross-reference tables
+- Each scenario includes: immediate action sequence, capital allocation table, user approval gates, next checkpoint timeline, Gate 2 implications
+
+### Pre-Checkpoint Timeline — LOCKED
+
+**May 18 06:00 UTC** (~11 hours): resistance-research Wave 1 user execution
+- All 8 Gists verified live + templates production-ready
+- 6-step pre-flight checklist from Session 1167 stands
+
+**May 19 20:00 UTC** (52 hours): stockbot checkpoint execution
+- Infrastructure fully validated (95% confidence)
+- Decision framework tested and ready for <2-min lookup
+- Playbook sequences confirmed executable
+- Pre-checkpoint verification steps (19:00, 19:30, 19:55 UTC) documented in Session 1167 report
+
+### Status Summary
+
+- **Wave 1 infrastructure**: Ready for 06:00 UTC May 18 user execution
+- **Checkpoint infrastructure**: Ready for 20:00 UTC May 19 execution
+- **Decision framework**: Tested, committed, ready for deployment
+- **Active blocks**: 2 user-action gates (cybersecurity VeraCrypt restart, mfg-farm test print), unresolvable autonomously
+- **Autonomous work status**: No further blocking issues; system health optimal
+
+**Time spent this session**: 25 minutes
+**Autonomous work completed**: 100% (decision framework verified complete + committed)
+
 ### Time Accounting
 
 - resistance-research pre-flight agent: 46 min
