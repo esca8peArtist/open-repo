@@ -10308,3 +10308,64 @@ End orchestrator session 1122. Advanced three high-priority projects toward Goal
 - **May 18 06:00 UTC**: Path decision deadline
 - **May 19 20:00 UTC**: Checkpoint execution window
 
+
+---
+
+## Session 1145 — 2026-05-17 11:55 UTC — Autonomous Orchestration
+
+### Orientation & Decision
+
+- Verified all projects blocked on external events (May 18 path decision, May 19 checkpoint)
+- Confirmed no autonomous work available in active projects
+- Per protocol: Exploration Queue has 0 unstarted items (all staged for future triggers)
+- **Action**: Added 3 new exploration items to queue; selected HIGH-priority security item as first work
+
+### Work Completed
+
+**Item: docker-compose Security Audit & Fixes (COMPLETE)**
+
+**Critical Issues Fixed**:
+1. **Network Binding Violations** (.env.template):
+   - `WEBUI_HOST=0.0.0.0` → `WEBUI_HOST=127.0.0.1` (CLAUDE.md compliance)
+   - `AGENTCORE_HOST=0.0.0.0` → `AGENTCORE_HOST=127.0.0.1`
+   - `WIZARD_HOST=0.0.0.0` → `WIZARD_HOST=127.0.0.1`
+   - Risk mitigated: Services now localhost-only (remote access requires explicit Tailscale IP)
+
+2. **Missing Memory Limits** (docker-compose.yml):
+   - Added `deploy.resources.limits.memory` to all 8 services
+   - Added reservations for predictable performance allocation
+   - Service limits: ollama 4G, open-webui 2G, agentcore 4G, wizard 1G, postgres 2G, redis 1G, nginx 512M, chromadb 2G
+   - Risk mitigated: Prevents host OOM scenarios when containers exceed memory
+
+**Deliverables**:
+- `projects/containerized-agents/SECURITY_AUDIT_FIX.md` (1,500+ words) — comprehensive audit report with fix verification, compliance checklist, future enhancements
+- Updated `projects/containerized-agents/.env.template` — all HOST bindings corrected
+- Updated `projects/containerized-agents/docker-compose.yml` — memory limits added to all services
+
+**Commit**: cbd1ab83 — "fix(containerized-agents): critical security fixes — bind 0.0.0.0 violations + missing memory limits"
+
+**Business Value**: Closes critical CLAUDE.md violation (0.0.0.0 binding prohibition) + eliminates host resource exhaustion risk. System is now production-hardened for both security and stability.
+
+### Time Spent
+
+- Orientation: 15 min
+- Security audit + fixes: 35 min
+- Verification + documentation: 20 min
+- **Total**: 70 min
+
+### Next Session
+
+**Upcoming Critical Events**:
+- **May 18 06:00 UTC** (in ~18 hours): resistance-research path decision deadline
+- **May 19 20:00 UTC** (in ~57 hours): stockbot checkpoint execution
+
+**Recommended Next Focus**:
+1. Monitor May 18 path decision (if available via INBOX.md)
+2. If idle before May 19: Start "stockbot: Pre-Checkpoint Jetson Infrastructure Validation" (exploration item, 2-3 hours) to verify all systems ready for checkpoint
+3. May 19 20:00 UTC: Execute checkpoint per playbook
+
+**Available Exploration Items** (if idle):
+- stockbot: Pre-Checkpoint Jetson Infrastructure Validation (2-3 hrs, HIGH value pre-checkpoint)
+- resistance-research: Phase 1 Post-Wave-1 Contingency Path Analysis (2-3 hrs, useful if Wave 1 underperforms)
+
+**Status**: All projects remain healthy; orchestration ready for May 18-19 critical window.
