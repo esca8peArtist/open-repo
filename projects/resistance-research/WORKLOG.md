@@ -2,6 +2,30 @@
 
 ---
 
+## May 17, 2026 — Session 1110 — Tier A Updates Integration (Domains 33, 35, 25, 19f)
+
+**Status**: COMPLETE
+**Session**: Session 1110 (Tier A policy integration)
+
+**Task**: Integrate Tier A policy updates from TIER_A_UPDATES_RESEARCH_SESSION_1109.md into four base domain files.
+
+**Completed integrations**:
+
+1. **Domain 33** (`domain-33-state-legislative-autocratization.md`) — Added "Tier A Update — May 2026" section at end of file. Coverage: Callais redistricting cascade scale (8 states, 40% of House districts), Tennessee Rep. Cohen retirement as first documented Callais political consequence, VRA intentional discrimination evidentiary threshold and Arlington Heights record-building opportunity, preliminary injunction filing window (May 31 – June 20), state VRA analog legislation window, and June-August advocacy window. Movement contacts: Campaign Legal Center, NAACP LDF, MALDEF, Common Cause.
+
+2. **Domain 35** (`domain-35-supreme-court-2026-term-preview-post-loper-landscape.md`) — Added "Tier A Update — May 2026" section at end of Sources list. Coverage: *Trump v. Barbara* (birthright citizenship, expected late June/early July), *Watson v. RNC* (mail ballot grace periods, expected late June, affects 13+ states), Callais redistricting emergency application pipeline on shadow docket, June-July decision window confluence with *Slaughter*. Movement contacts: Brennan Center, NAACP LDF, Constitutional Accountability Center, CEPA. Policy windows include state VRA analog legislation before legislative recess and *Watson* state rapid-response preparation.
+
+3. **Domain 25** (`domain-25-fisa-702-april-2026-outcome.md`) — Added "Tier A Update — May 2026" section at end of file (after Section 13 footer). Coverage: June 12 deadline (3-4 weeks out), warrant requirement fault line, FISC opinion declassification precedent and its June advocacy window, institutional lock-in risk from repeated short-term extensions, commercial data broker loophole unaddressed. Movement contacts: EFF, CDT, Senate Judiciary Committee minority staff (Wyden/Lee offices). Advocacy levers: narrow warrant carve-out ask targeting political opposition/journalists/election officials, FISC opinion amplification campaign, coalition coordination with ICE surveillance track (Domain 39).
+
+4. **Domain 19f** (`domain-19f-war-powers-reform.md`) — Added "Tier A Update — May 2026" section at end of file (after Section 22 footer). Coverage: May 13 seventh vote (49-50, Murkowski joins), margin-narrowing trajectory documented, "ceasefire terminates hostilities" precedent formalized and its future-administration implications, no AUMF passed, no enforcement action, conditional authorization track (90-day Murkowski vehicle), appropriations rider window (FY2027 cycle). Movement contacts: War Powers Congress Initiative, Responsible Statecraft, congressional offices of Collins/Murkowski/Curtis. Advocacy levers: ceasefire-clock theory rebuttal, constituent pressure on margin-thin senators, media education on precedent implications.
+
+**Files modified**: 4 domain files, all in `projects/resistance-research/domains/`
+**Integration standard**: Heading format `### Tier A Update — May 2026`; 3-5 citations per domain from research source; 3 movement contacts per domain with contact strategy; policy windows with deadlines; 2-3 specific advocacy levers; cross-references to related domains maintained.
+**Word count per section**: All under 800 words as specified.
+**Timeline**: Completed May 17, 2026 — in time for May 18-28 window before June 7 distribution.
+
+---
+
 ## May 17, 2026 — Resistance Research Agent — Phase 1 Wave 1 Batch 1 Execution Review
 
 **Status**: CANNOT EXECUTE AUTONOMOUSLY — USER ACTION REQUIRED

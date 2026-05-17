@@ -495,3 +495,46 @@ Sources: [NAACP LDF: Louisiana v. Callais case page](https://www.naacpldf.org/ca
 ---
 
 *Domain 33 is a Phase 2 expansion of the democratic-renewal-proposal.md framework. It provides state-level evidentiary depth for the structural analysis in Domain 1 (Electoral Reform), Domain 6 (Judicial Independence), and Domain 9 (Federalism). The redistricting reform proposals in this domain (Section 5.1) complement Domain 1 subsection 1f (mid-decade redistricting ban) and should be read together. The international precedent analysis (Section 4) connects to the comparative recovery framework in Section 3.5 of the main proposal.*
+
+---
+
+### Tier A Update — May 2026
+
+**Integration date**: May 17, 2026 (Session 1110). Research source: TIER_A_UPDATES_RESEARCH_SESSION_1109.md.
+
+**Lead finding**: The Callais redistricting cascade has now triggered mid-decade map redrawing in 8 states covering approximately 40% of all U.S. House districts — the largest simultaneous redistricting disruption since the Voting Rights Act's passage. The VRA Section 2 shift from discriminatory-effect to intentional-discrimination standard (documented in Section 1.7) is now producing concrete electoral consequences within 18 days of the ruling.
+
+**Redistricting cascade scale (as of mid-May 2026)**
+
+Louisiana, Tennessee, Florida, South Carolina, and Mississippi have completed or scheduled post-Callais special sessions. Tennessee's action is the most advanced: maps passed both chambers May 7, signed same day, eliminating the majority-Black 9th District (Memphis seat held 19 years by Rep. Steve Cohen). Cohen announced May 15 he would not seek re-election in any gerrymandered district — the first documented instance of a House member's political retirement directly caused by post-Callais redistricting. Louisiana suspended its May 16 primaries; SB 121 passed Senate 27-10 (May 14), collapsing the two-district Black majority configuration. The Voting Rights Lab (May 11, 2026) identified 8 states redrawing or on verge of redrawing maps — these 8 states represent approximately 40% of all U.S. House districts. Projected Republican net gain from the combined cascade: 12-14 House seats, enough to overcome Democratic polling advantages even in a wave year.
+
+**VRA evidentiary standard — what changed**
+
+The Callais ruling's most actionable implication for movement work is the evidentiary threshold shift. Under the prior effects standard (Thornburg v. Gingles, 1986), statistical evidence of minority vote dilution was sufficient. Under the new intentional discrimination standard, plaintiffs must show Arlington Heights circumstantial evidence: sequence of events, departures from normal legislative procedures, legislative history, statements by decision-makers. This evidence is being generated right now in real time. Tennessee's extraordinary legislative session (convened May 5, maps signed May 7 — a two-day process), Louisiana's primary suspension, and Mississippi's May 20 scheduling create exactly the compressed, procedure-departing record that Arlington Heights requires. Litigation teams filing within 30 days of map adoption (May 31 – June 20 window for maps adopted May 1-20) have the strongest available evidentiary base.
+
+**Congressional response — what CRS documents, what has not advanced**
+
+The Congressional Research Service (CRS) has outlined three statutory response options: (1) race-neutral redistricting standards mandating independent commissions, (2) VRA amendments codifying a modified Gingles effects-test framework, and (3) federal prohibitions on mid-decade redistricting. None have advanced through the Republican-controlled Congress. The Redistricting Reform Act of 2025 (S. 2885 / H.R. 5449, Padilla/Lofgren) provides the legislative vehicle for options (1) and (3); the Voting Rights Advancement Act provides the vehicle for option (2). Both require a changed Senate majority to advance.
+
+**Movement contacts**
+
+- **Campaign Legal Center** — Lead legal analysis on post-Callais VRA challenge strategy; published "What's Next after Callais?" immediately following the ruling; coordinates intentional discrimination evidentiary frameworks across state litigation teams. Contact strategy: legal coalition coordination, amicus support, state-level VRA analog campaign. [campaignlegal.org](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next)
+- **NAACP Legal Defense Fund** — Lead litigant in Louisiana v. Callais (four-year litigation spine); coordinating preliminary injunction filings across Louisiana, Tennessee, and other cascade states. Contact for litigation support, rapid-response legal updates, and redistricting expert testimony. [naacpldf.org/case-issue/louisiana-v-callais](https://www.naacpldf.org/case-issue/louisiana-v-callais/)
+- **MALDEF (Mexican American Legal Defense and Educational Fund)** — Coordinates VRA and redistricting litigation affecting Latino majority-minority districts in Texas, California, and Southwest states now facing Callais-motivated challenges. Contact for multi-state Latino voting rights coalition work.
+- **Common Cause** — Published redistricting reform analysis and tracks mid-decade remapping in real time (Cook Political Report coordination). Contact strategy: coalition building for Redistricting Reform Act advocacy and state IRC campaigns.
+
+**Policy windows**
+
+- **Preliminary injunction filing window** (May 31 – June 20): Maps adopted in May carry PI filing deadlines within this window. After this window, laches arguments become available to the state and courts are reluctant to enjoin elections after ballots are prepared. This is the most time-critical legal intervention point in the cascade.
+- **State VRA analog legislation** (ongoing): Five states (California, Colorado, New York, Virginia, Washington) have state-level VRA analogs providing effects-test protection independent of the federal Callais standard. Introducing state VRA equivalents in additional states during the current legislative session creates durable minority representation protection that survives the federal doctrinal contraction. The 8-week advocacy window (June-August 2026) identified in Section 13.3 of Domain 35 applies here.
+- **2026 midterm elections** (November 2026): 26 Secretary of State races and three state supreme court seats (Wisconsin, Pennsylvania) that directly control redistricting litigation outcomes. Electoral accountability pressure on Republicans who ratified post-Callais maps is the long-cycle enforcement mechanism.
+
+**Advocacy levers**
+
+- **Intentional discrimination record-building**: Advocacy organizations with access to state legislative proceedings (Common Cause, LDF state chapters) should document all statements by legislators, departures from standard committee procedures, and compressed timelines in current special sessions. This documentation is directly admissible as Arlington Heights circumstantial evidence in VRA Section 2 intentional discrimination challenges.
+- **State VRA analog introduction**: Contact state legislative allies in states without state VRAs (particularly in the Southeast) to introduce effects-test voting rights protections before the current SCOTUS doctrine is extended further. California and Colorado provide model statutory language.
+- **Congressional minority pressure**: While a Republican-controlled Congress will not pass the Redistricting Reform Act, Senate minority members (Padilla, Warnock) have introduced the vehicle and can force floor procedural votes that put Republican members on record. Advocacy contact to Senate minority staff (Judiciary Committee) creates the public record for 2026 electoral accountability.
+
+**Cross-references**: Domain 35 (Section 13 — Post-Callais redistricting emergency application pipeline and SCOTUS shadow docket); Domain 49 (Callais VRA Redistricting Emergency — per-state legal analysis); Domain 37 (ICE enforcement as electoral intimidation mechanism — two-layer voter suppression model); Domain 50 (OBBBA/NVRA enforcement in the same six-state geography as the redistricting cascade).
+
+Sources: [Voting Rights Lab: 8 states redrawing maps post-Callais (May 11, 2026)](https://votingrightslab.org/2026/05/11/callais-redistricting-cascade/); [Campaign Legal Center: What's Next after Callais?](https://campaignlegal.org/update/us-supreme-court-has-eviscerated-voting-rights-act-whats-next); [NAACP LDF: Louisiana v. Callais FAQ](https://www.naacpldf.org/case-issue/louisiana-v-callais-faq/); [The Intercept: Tennessee GOP Moves to Decimate Black Voting Power (May 8, 2026)](https://theintercept.com/2026/05/08/gop-memphis-tennessee-gerrymander-map-black-voters/); [SCOTUSblog: Court Clears Way for Alabama to Use Congressional Map (May 11, 2026)](https://www.scotusblog.com/2026/05/court-clears-way-for-alabama-to-use-congressional-map-blocked-by-lower-court-as-racially-discrim/)
