@@ -1,3 +1,68 @@
+## Session 1139 (Orchestrator) — May 17, 2026 11:30–12:20 UTC — mfg-farm Launch Readiness Validation + Critical Event Prep
+
+**Status**: **Exploration queue work complete. Both critical May 18-19 events infrastructure verified ready. All systems holding pattern pending user decisions/checkpoint outcome.**
+
+### What Was Accomplished
+
+1. **Exploration Queue: mfg-farm Post-Test-Print Launch Readiness Validation** ✅
+   - Spawned research agent to validate three launch documents against May 2026 data
+   - **Key findings**:
+     * Etsy 2026 checklist: 4 gaps requiring updates (setup fee, identity verification, subcategory selection, production method disclosure)
+     * Supplier pricing: eSUN +40% ($12→$15-18/kg), Polymaker +10-20% (tariff impact)
+     * Cost model: filament +40%, electricity +50%, net margin impact <1% at Phase 1 scale
+   - **Deliverable**: projects/mfg-farm/LAUNCH_READINESS_VALIDATION.md (sourced, 8 citations)
+   - **Status**: Ready for immediate post-test-print checklist updates
+   - **Commit**: 49ad8156 (agent-committed); orchestration files updated
+
+2. **System Status Verification** ✅
+   - **stockbot**: May 19 20:00 UTC checkpoint infrastructure verified ready; no action needed until execution
+   - **resistance-research**: Wave 1 materials production-ready; awaiting user path decision May 18 06:00 UTC
+   - **No new blocks**: Both active blocks (cybersecurity-hardening restart, mfg-farm test print) remain on user action
+   - **Token budget healthy**: 5.3% all-models consumption (well below 80% threshold)
+
+### Critical Timeline (Next 48 Hours)
+
+| Time | Event | Action Required |
+|------|-------|---|
+| **May 18 06:00 UTC** (18h) | resistance-research path decision deadline | User: Decide A / A+37 / B per WAVE_1_PREFLIGHT_AND_PATH_DECISION.md |
+| **May 18 morning** (18-22h) | Wave 1 execution window | User: Execute Wave 1 checklist (3-5 hrs) if path approved |
+| **May 19 20:00 UTC** (43h) | stockbot checkpoint execution | User: Run checkpoint query per MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md |
+| **May 19 20:30 UTC** (43.5h) | Post-checkpoint triage | Orchestrator: Route to Gap 4 / Phase 2 / post-checkpoint items based on outcome |
+
+### In Progress
+
+- **May 18 06:00 UTC decision**: Determine resistance-research distribution path (A / A+37 / B)
+- **May 19 20:00 UTC checkpoint**: Gate 1 outcome determination (PASS / NEAR_MISS / FAR_MISS)
+
+### Items Needing Your Input
+
+1. **By May 18 06:00 UTC** (CRITICAL): Path decision for resistance-research Wave 1
+   - Review: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md (15 min)
+   - Decide: A (immediate 34-domain distribution) / A+37 (hybrid + election focus) / B (defer 3 weeks)
+   - **Recommendation**: Path A+37 captures both institutional reach and May 30 DOJ window
+
+2. **May 18 morning**: Execute Wave 1 if path approved
+   - Gist pre-flight (5 min)
+   - Contact spot-check (5 min)
+   - Identity fill-in (30 min)
+   - Send wave (30 min)
+   - **Total**: 1-2 hours execution
+
+3. **May 19 20:00 UTC**: Execute stockbot checkpoint
+   - Run: `cd projects/stockbot && uv run python scripts/may19_checkpoint_analysis.py`
+   - Interpret: PASS / NEAR_MISS / FAR_MISS_C1 / FAR_MISS_C2 per playbook
+   - **Time**: 3-5 min
+
+### Staged for Post-May-19 Work
+
+All autonomous work staged pending May 19 checkpoint outcome:
+- **If stockbot PASSES**: Begin Gap 4 implementation (options naked-call prevention guardrail)
+- **Regardless**: mfg-farm checklist updates, resistance-research Phase 2 planning, seedwarden Phase 4 roadmap (unless Test Print fails)
+
+**No critical path work remains before May 18 decision + May 19 checkpoint.**
+
+---
+
 ## Session 1138 (Orchestrator) — May 17, 2026 11:30–11:45 UTC — Pre-May-18 Holding Pattern Verification
 
 **Status**: **All systems remain READY for May 18-19 critical events. No new autonomous work available; all exploration queue items staged post-May-19. Session preserves budget by skipping redundant audit (Session 1137 completed comprehensive pre-event infrastructure check 1 hour ago).**
