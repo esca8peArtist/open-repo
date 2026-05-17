@@ -11507,3 +11507,82 @@ Sonnet 26.3% / All-models 1.7% — fresh week, plenty of headroom for the 20:00 
 3. **stockbot**: Post-May 14 checkpoint outcome → architecture decisions per roadmap
 
 ---
+
+---
+
+## Session 1136 (Orchestrator) — May 17, 2026, 10:03–11:30 UTC — Wave 1 Pre-Flight + Option A Spec
+
+**Status**: **Two exploration queue items complete. All user-facing materials ready for May 18-19 critical events. Zero blockers identified. Awaiting user decisions & execution windows.**
+
+### What Was Accomplished
+
+1. **Exploration Queue Item 3: Wave 1 Pre-Flight & Path Decision Support** ✅
+   - Deliverable: `WAVE_1_PREFLIGHT_AND_PATH_DECISION.md` (404 lines, comprehensive pre-flight checklist)
+   - Consolidated distribution path decision: Path A vs. Path A+37 Hybrid (RECOMMENDED) vs. Path B
+   - Path A+37 balances institutional reach (law schools, think tanks) + strategic election-protection focus (state AGs, voting rights orgs, election security researchers)
+   - All infrastructure verified production-ready: 8 Gists live, contacts verified, email templates ready, Substack posts pre-written
+   - Wave 1 execution checklists: hour-by-hour sequences for each path, success metrics, contingency triggers
+   - Decision deadline: May 18 06:00 UTC
+
+2. **Exploration Queue Item 1: Containerized-Agents Option A Implementation Spec** ✅
+   - Deliverable: `OPTION_A_IMPLEMENTATION_SPEC.md` (668 lines, production-ready implementation guide)
+   - Option A: lightweight Docker sandboxes for code execution (not wholesale containerization)
+   - Includes: docker-compose.yml service spec, SandboxRunner Python library (100 lines), integration examples (stockbot, mfg-farm), unit tests, manual testing steps, security analysis
+   - Timeline: Phase 1 (4-6 hours), Phase 2 optional (3-5 hours for agent integration)
+   - Status: READY FOR IMPLEMENTATION (optional, non-critical path)
+
+### Project Status (Unchanged)
+
+| Project | Status | Next Action |
+|---------|--------|------------|
+| **stockbot** | May 19 checkpoint VERIFIED READY | May 19 20:00 UTC checkpoint execution |
+| **resistance-research** | Wave 1 pre-flight COMPLETE | User decides path May 18 06:00 UTC; execute Wave 1 May 18 |
+| **cybersecurity-hardening** | Phase 1 paused | User restarts Windows VeraCrypt; resumes walkthrough |
+| **mfg-farm** | Awaiting test print | User executes test print (blocking→product launch) |
+| **seedwarden** | Track B in progress | User executes gates May 15-28; go/no-go May 29 |
+
+### Items Needing Your Input
+
+1. **May 18 06:00 UTC** (CRITICAL): Distribution path decision for resistance-research (A / A+37 / B)
+   - Reference: `WAVE_1_PREFLIGHT_AND_PATH_DECISION.md` Path Decision Framework (section 2)
+   - Recommendation: Path A+37 (captures May 30 DOJ window, election-protection strategic focus)
+   - Execution time: 4-5 hours if Path A+37; 3-4 hours if Path A; 21+ days if Path B
+
+2. **May 18 06:00-10:00 UTC** (CRITICAL): Execute Wave 1 per chosen path
+   - Use checklists in `WAVE_1_PREFLIGHT_AND_PATH_DECISION.md` (Hour-by-hour sequences, success metrics)
+   - Expected outcome: 25-37 Tier 1 emails sent, 5-15 replies by Day 3
+
+3. **May 19 20:00 UTC** (CRITICAL): Execute stockbot checkpoint query
+   - Reference: `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md`
+   - Infrastructure verified READY (zero blockers, Jetson healthy, all systems GO)
+   - Execution: 3-5 min query + action per scenario (PASS/NEAR-MISS/FAR-MISS)
+
+4. **Before May 19**: Optional — containerized-agents Option A Phase 1 (4-6 hours)
+   - If checkpoint PASSES: Wait for Gap 4 implementation (blocked on checkpoint outcome)
+   - If checkpoint is NEAR-MISS or FAR-MISS: Proceed with Gap 4 contingency per playbook
+
+### Suggested Next Steps
+
+1. **May 18 morning**:
+   - Review `WAVE_1_PREFLIGHT_AND_PATH_DECISION.md` Path Decision Framework
+   - Decide: Path A / A+37 (RECOMMENDED) / B
+   - Execute Wave 1 per chosen path (2-4 hours)
+
+2. **May 19 20:00 UTC**:
+   - Execute checkpoint per `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` (3-5 min)
+   - Record outcome (PASS / NEAR-MISS / FAR-MISS)
+   - Follow appropriate scenario path in playbook
+
+3. **Post-May-19**:
+   - If checkpoint PASSES: Begin Gap 4 naked-call prevention implementation (~4-8 hours)
+   - If checkpoint NEAR-MISS/FAR-MISS: Follow playbook contingency procedures
+   - Monitor Wave 1 adoption metrics (May 18-25)
+   - Plan Tier 2 Phase 1 wave (May 21-28)
+
+### Usage
+
+- **Current**: 5.6% all-models (excellent; well below 80% throttle)
+- **Budget health**: Excellent — no throttling needed
+
+---
+

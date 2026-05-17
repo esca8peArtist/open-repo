@@ -9840,3 +9840,77 @@ End orchestrator session 1122. Advanced three high-priority projects toward Goal
 **Committed**: Yes (phase-5-path-decision-framework.md + WORKLOG.md updates)
 
 ---
+
+---
+
+## Session 1136 (Orchestrator) — May 17, 2026 10:03–11:30 UTC — Wave 1 Pre-Flight + Containerized-Agents Option A Spec
+
+**Objective**: Complete Exploration Queue Items 1 & 3 (containerized-agents Option A spec + resistance-research Wave 1 pre-flight); ensure user has all materials for May 18-19 critical execution windows.
+
+**Status**: Complete
+
+**✅ COMPLETED**:
+- Exploration Queue Item 3: resistance-research Phase 1 Wave 1 Pre-Flight Checklist & Path Selection Support
+  - Comprehensive document: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md (404 lines, 24K)
+  - Consolidated three distribution paths (A / A+37 / B) into single decision framework with execution checklists
+  - Path A+37 Hybrid RECOMMENDED (balanced institutional reach + election-protection strategic focus)
+  - All infrastructure verified production-ready as of May 17 10:00 UTC:
+    * 8 Gists verified live
+    * Batch 1 contacts verified (May 14)
+    * Tier 1 contact list verified (May 5)
+    * Email templates (4 sector variants) + Domain 37 specialized variants ready
+    * Substack infrastructure (4 posts pre-written) ready for upload May 18
+    * Election org contacts (12) verified + specialized messaging ready
+  - Wave 1 execution checklists for each path: detailed hour-by-hour sequences, success metrics, contingency triggers
+  - Post-execution: Tier 2 sequencing (weeks 2-4) documented
+  - Decision gate: User must decide by May 18 06:00 UTC; execution begins 06:00-10:00 UTC May 18
+  - Risk assessment: LOW (all infrastructure proven, <5% contingency factors)
+  - Commit: 50e1baf3
+
+- Exploration Queue Item 1: Containerized-Agents Option A Implementation Specification
+  - Comprehensive production-ready specification: OPTION_A_IMPLEMENTATION_SPEC.md (668 lines, 32K)
+  - Complete implementation guide for lightweight Docker code execution sandboxes:
+    * docker-compose.yml service spec (sandbox service, 50 lines)
+    * SandboxRunner Python library (100 lines, full class with error handling)
+    * Integration patterns (examples for stockbot backtesting, mfg-farm print generation)
+    * Unit test suite (pytest fixtures for basic execution, failure handling, timeout protection, file I/O)
+    * Manual testing steps (5-part verification procedure)
+    * Security analysis (isolation properties, threat model, hardening options)
+    * Full implementation checklist (Phase 1: 4-6 hours, Phase 2: 3-5 hours optional)
+    * Failure recovery procedures
+    * FAQ with GPU/Podman/monitoring considerations
+  - Design decisions explained: why asyncio + Docker vs. Kubernetes/Ray/Managed Agents
+  - Timeline estimate: Phase 1 (4-6 hours), Phase 2 optional (3-5 hours)
+  - Success criteria documented
+  - Status: PRODUCTION-READY, zero blockers, ready for Phase 1 implementation (optional, not critical path)
+  - Commit: 0a227a44
+
+**Project Status Summary** (unchanged from Session 1135):
+- stockbot: May 19 checkpoint infrastructure VERIFIED READY (zero blockers)
+- resistance-research: Wave 1 pre-flight materials complete; awaiting user path decision
+- cybersecurity-hardening: Phase 1 paused (user restart required)
+- mfg-farm: Test print blocked (user action)
+- seedwarden: Track B user gates (May 15-28, in progress)
+
+**Critical User Actions Needed**:
+1. **May 18 06:00 UTC** (CRITICAL): Decide distribution path (A / A+37 / B) for resistance-research
+2. **May 18 06:00-10:00 UTC** (CRITICAL): Execute Wave 1 per chosen path using WAVE_1_PREFLIGHT_AND_PATH_DECISION.md checklists
+3. **May 19 20:00 UTC** (CRITICAL): Execute stockbot checkpoint query per MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md
+
+**Suggested Next Session Tasks**:
+1. If May 18-19 execution successful: Monitor Wave 1 responses; prepare for Tier 2 Phase 1 (week 2)
+2. If stockbot checkpoint PASSES (May 19): Begin Gap 4 implementation using gap-4-implementation-plan.md
+3. If idle time before May 19: Optional containerized-agents Phase 1 implementation (4-6 hours)
+
+**Usage**: 5.6% all-models (healthy, well below 80% threshold)
+
+**Session Metrics**:
+- Work type: Exploration queue execution (2 items)
+- Deliverables: 2 comprehensive production-ready specifications (1,072 lines, 56K combined)
+- Commits: 2 (resistance-research + containerized-agents)
+- Files created: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md + OPTION_A_IMPLEMENTATION_SPEC.md
+- Reversibility: All work is documentation + specification; no code changes to live systems
+- Confidence: HIGH — all infrastructure verified, user has complete materials for critical execution windows
+
+**Next Checkpoint**: May 18 morning (Wave 1 execution window) + May 19 20:00 UTC (stockbot checkpoint)
+
