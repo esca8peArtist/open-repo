@@ -147,6 +147,31 @@ This makes Hungary the first EU member state to initiate ICC withdrawal, creatin
 
 Human Rights Watch documents (June 16, 2025) that Hungary will become "the only non-ICC member state in the European Union" upon formal exit — an unprecedented status that raises the EU's internal accountability problem for one of its member states to a new level of urgency.
 
+### 3.2a Hungary Update — May 2026: Democratic Reversal and Planned ICC Rejoin
+
+**May 14-17, 2026 DEVELOPMENT**: Hungary's political landscape shifted dramatically with the April 12, 2026 parliamentary election, in which Péter Magyar's Tisza Party won a landslide 53.6 percent victory, ending Viktor Orbán's Fidesz 16-year rule. This is a material correction to the analysis in section 3.2, which characterized Hungary's June 2, 2026 ICC withdrawal as effectively imminent and irreversible.
+
+**Key findings:**
+
+- **Electoral outcome**: The Tisza Party secured a supermajority in parliament. Magyar's campaign successfully contested the information space through platforms outside Fidesz's media control and achieved record 77 percent turnout. Youth voters provided decisive margin.
+- **Magyar's ICC pledge**: Immediately after the election, Magyar pledged to halt Hungary's ICC withdrawal and stated he would submit a rejoinder application to rejoin the ICC. He committed that Hungary will enforce ICC arrest warrants, including against Benjamin Netanyahu — a direct reversal of Orbán's policy of hosting Netanyahu despite the warrant.
+- **Procedural timeline**: The legal withdrawal under Article 127 of the Rome Statute cannot be stopped before June 2, 2026 (the one-year notice period expires automatically). However, the new government can submit a rejoinder application immediately after June 2, 2026, to rejoin the ICC. The rejoinder application would be processed under Article 127.3 of the Rome Statute, which provides for rejoining after withdrawal. 
+- **Structural significance**: This demonstrates that multilateral withdrawal is reversible when democratic governments are restored. The EU has leverage tools (trade preferences, membership conditionality) that can be deployed to support the new government's commitment. The Tisza victory is the clearest contemporary proof-of-concept that information autocracy has limits and can be defeated through democratic mobilization.
+
+**Revised analysis:**
+
+Domain 57's earlier characterization of Hungary's withdrawal as a stable precedent for EU-member-state exit is now superseded. The correct framing is: Hungary represents a case study in democratic reversal *containing* an ICC withdrawal, not simply a data point in institutional-withdrawal erosion. Orbán's use of the ICC withdrawal as a political signal to his domestic base — severing external accountability as a marker of authoritarian consolidation — is being explicitly reversed by the incoming government's commitment to rejoin and enforce warrants.
+
+**Strategic implications for advocacy:**
+
+1. **EU leverage**: The new Hungarian government's commitment to ICC rejoin creates an opportunity for the EU to condition trade preferences and membership benefits on enforcement of that commitment. EU pressure can accelerate the post-June 2 rejoinder process.
+
+2. **Democratic reversibility narrative**: The Tisza victory and Magyar's explicit ICC commitment provide the strongest democratic-resistance precedent available in the post-2026 accountability landscape. Advocacy organizations should amplify this as evidence that democratic coalitions can successfully contest and reverse democratic backsliding.
+
+3. **NATO/EU coordination**: The new government's position creates a structural shift in EU-Hungary relations. Member states that have been constrained from enforcing Article 7 proceedings now have a government indicating willingness to comply with rule-of-law obligations. The reversibility of the withdrawal commitment should be treated as the baseline expectation for the new government's first 100 days.
+
+**Sources**: [Al Jazeera Liberties — Magyar pledges to reverse ICC withdrawal (April 12, 2026)](https://liberties.aljazeera.com/en/hungarys-court-moment-magyar-pledges-to-reverse-icc-withdrawal/); [Human Rights Watch — Hungary's Road Back to Rule of Law Runs Through the ICC (April 24, 2026)](https://www.hrw.org/news/2026/04/24/hungarys-road-back-to-the-rule-of-law-runs-through-the-icc/); [Times of Israel — Magyar vows ICC return, breaking with Orbán's Netanyahu protection (April 12, 2026)](https://www.timesofisrael.com/no-time-to-waste-pro-eu-magyar-vows-new-era-in-hungary-after-ousting-orban/); [WAFA — Hungarian PM to halt ICC withdrawal (May 2026)](https://english.wafa.ps/Pages/Details/169687)
+
 ### 3.3 Sahel States: Coordinated Withdrawal as Wagner Impunity Shield
 
 On September 22, 2025 — timed to coincide with UNGA High-Level Week — the military juntas of Burkina Faso, Mali, and Niger announced coordinated ICC withdrawal from a joint Alliance of Sahel States platform. The framing invoked "neo-colonialist repression." The operational purpose was transparent: shielding the military juntas and their Russian Wagner Group partners from ICC investigation. Human Rights Watch documents (September 24, 2025) that each of the three regimes came to power through coups and faces credible allegations of atrocities — including Wagner Group killings of approximately 32 civilians in Mali documented in HRW's 2024 report.
