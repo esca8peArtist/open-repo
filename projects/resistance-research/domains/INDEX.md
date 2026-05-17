@@ -1,7 +1,7 @@
 # Domains Index — Democratic Renewal Framework
 
-*Last updated: May 15, 2026 (Session 1031: Domains 38-40 Phase 2 production documents added — AI Regulatory Capture and Governance, Healthcare Access as Democratic Infrastructure, Surveillance Capitalism and Electoral Manipulation; all three integrated into democratic-renewal-proposal.md Part II and distribution templates)*
-*Total domains indexed: 55 core + 3 Phase 2 optional expansion + 4 Phase 2 full production*
+*Last updated: May 17, 2026 (Session 1122 canonicalization: Domain 58 Tribal Sovereignty production document added — canonical file `domain-58-tribal-sovereignty.md` (9,400 words, 60 citations), supersedes `domain-38-tribal-sovereignty-indigenous-democratic-design.md`; integrated into democratic-renewal-executive-summary.md Phase 2 table; DOMAIN_58_DISTRIBUTION_CHECKLIST.md created; INDEX.md cross-reference updated)*
+*Total domains indexed: 55 core + 3 Phase 2 optional expansion + 5 Phase 2 full production*
 
 ---
 
@@ -48,13 +48,14 @@
 
 ## Phase 2 Full Production Documents (May 2026)
 
-*Note: These files are located in `projects/resistance-research/` (root level), not in `projects/resistance-research/domains/`. All three are integrated into `democratic-renewal-proposal.md` Part II (Domains 38, 39, 40) and all distribution templates as of Session 1031.*
+*Note: Domains 38, 39, 40 are located in `projects/resistance-research/` (root level). Domain 58 is located in `projects/resistance-research/domains/`. All four are integrated into `democratic-renewal-executive-summary.md` Phase 2 table.*
 
 | File | Domain | Citations | Distribution Target | Key Finding |
 |------|--------|-----------|---------------------|-------------|
 | `domain-39-healthcare-access-democratic-infrastructure.md` | Domain 39: Healthcare Access as Democratic Infrastructure | 47 | **June 1, 2026 (hard deadline — HHS OBBBA interim final rule)** | APSR: rural hospital closures reduce voter turnout 3.8 ppts (10.5M voter panel); Oregon RCT: Medicaid access increases voter turnout 7%; NVRA mandate at Medicaid offices met at only 1.6% of total registrations 2018-2020; 417 rural hospitals vulnerable to closure; PAVA ($130M disability voter assistance) faces elimination |
 | `domain-38-ai-regulatory-capture-governance.md` | Domain 38: AI Regulatory Capture and Governance | 43 | July 15, 2026 (before EU AI Act Article 50 enforcement August 2, 2026) | Colorado AI Act suspended April 27, 2026 after xAI/DOJ intervention; EO 14110 revoked January 20, 2025; Birhane et al. (May 2026): 27 capture techniques, 24% revolving door incidence; no federal AI statute; EU regulatory arbitrage (same companies, two compliance regimes) |
 | `domain-40-surveillance-capitalism-electoral-manipulation.md` | Domain 40: Surveillance Capitalism and Electoral Manipulation | 47 | July 15, 2026; hard deadline November 3, 2026 (midterms) | NRSC Talarico deepfake March 11, 2026 — first national party committee synthetic candidate video; PNAS Feb 2026: suppression ads reduce turnout 1.86% overall, 14.2% for non-white voters in minority-majority battleground counties; FEC quorum failure; EU Regulation 2024/900 bans political microtargeting — Meta exited EU political ad market |
+| `domains/domain-58-tribal-sovereignty.md` | Domain 58: Tribal Sovereignty as Democratic Infrastructure | 60 | **ACUTE — immediate if *Trump v. Barbara* issues; July 15, 2026 baseline** | Montana SB 490 enjoined May 11, 2026 (post-*Callais* state constitutional model); BIA -13% workforce (-29% Pacific Regional, -22% Alaska), 25+ offices closed; IHS enacted $8.05B against $63B documented need, 1,000+ employees lost, 12 facilities shuttered; *Trump v. Barbara* Solicitor General argued tribal members "not birthright citizens" — contradicting 102 years of settled law; *Turtle Mountain v. Howe* redistributed for SCOTUS conference May 14, 2026; 4.7M eligible-but-unregistered Native voters; first domain to open distribution pathway to NCAI, NARF, and 13-state tribal electorate |
 
 ---
 
@@ -75,17 +76,34 @@
 **Electoral Architecture**: Domain 1, Domain 33, Domain 37 series, Domain 49, Domain 50, Domain 51
 **Institutional Integrity**: Domain 20, Domain 26, Domain 29, Domain 34, Domain 38 (financial), Domain 38A (intel)
 **Judicial**: Domain 6, Domain 35
-**Healthcare and Civic Capacity**: Domain 31, Domain 41B, Domain 44 (reproductive), Domain 50, **Domain 39 (Phase 2 production — healthcare as democratic infrastructure)**, Domain 40 (expansion)
+**Healthcare and Civic Capacity**: Domain 31, Domain 41B, Domain 44 (reproductive), Domain 50, **Domain 39 (Phase 2 production — healthcare as democratic infrastructure)**, Domain 40 (expansion), **Domain 58 (IHS as treaty-obligated healthcare — constitutional argument)**
 **Economic Architecture**: Domain 23, Domain 38 (financial), Domain 47, Domain 51, Domain 38 (expansion — antitrust)
 **Information and Knowledge**: Domain 27, Domain 36, Domain 43, Domain 46, Domain 39 (expansion — education)
 **AI Governance Cluster**: Domain 36, Domain 43, **Domain 38 (Phase 2 production — AI regulatory capture)**, **Domain 40 (Phase 2 production — surveillance capitalism)**
-**Electoral Integrity Cluster (2026 midterm priority)**: Domain 1, Domain 33, Domain 37 series, Domain 49, Domain 50, Domain 51, **Domain 40 (Phase 2 production — surveillance capitalism/deepfakes)**
+**Electoral Integrity Cluster (2026 midterm priority)**: Domain 1, Domain 33, Domain 37 series, Domain 49, Domain 50, Domain 51, **Domain 40 (Phase 2 production — surveillance capitalism/deepfakes)**, **Domain 58 (tribal voter registration gap; 4.7M eligible-but-unregistered; margin variable in MT/ND/SD/AZ/OK)**
 **Rights and Civil Liberties**: Domain 44 (labor), Domain 44 (reproductive), Domain 45 (climate), Domain 52, Domain 54, Domain 55
 **Corporate Capture Trilogy**: Domain 51 (campaign finance) + Domain 42 (drug policy capture) + **Domain 38 (expansion — lobbying/regulatory capture)**
+**Sovereignty and Franchise Cluster (Domain 58 primary cluster)**: **Domain 58** (tribal sovereignty as democratic infrastructure) + Domain 49 (*Callais* VRA redistricting emergency) + Domain 1 (voting rights) — the complete picture for tribal voting rights attorneys and NCAI policy staff; distribute as a set
+**Administrative Capture and Treaty Breach Cluster**: **Domain 58** (BIA/IHS compact impoundment as treaty breach) + Domain 26 (government accountability) + Domain 34 (congressional power of the purse — ICA enforcement architecture; ISDEAA Section 110 cause of action)
+**Cross-Domain Bridges for Domain 58 specifically**:
+- Domain 1: Native American voter suppression — tribal NVRA gaps, tribal ID non-recognition, post-*Callais* Section 2 alternatives
+- Domain 6: Treaty enforcement depends on independent courts; *McGirt* line as most recent reaffirmation
+- Domain 29: DOJ posture on *McGirt* implementation and VAWA tribal jurisdiction enforcement failure — weaponized non-enforcement
+- Domain 31: Federal systems and healthcare access — IHS as the treaty-specific dimension of the rural healthcare collapse
+- Domain 34: ISDEAA compact impoundment as Appropriations Clause violation; ICA enforcement architecture applies directly
+- Domain 39: Oregon Medicaid RCT applied to IHS — making the constitutional argument, not just the policy argument
+- Domain 49: *Callais* ruling's direct impact on Native redistricting cases; *Turtle Mountain v. Howe* as pending companion case
+- Domain 54: Criminal justice jurisdictional complexity in Indian Country — three overlapping regimes, documented enforcement gaps
 
 ---
 
 ## Distribution Priority Notes
+
+**IMMEDIATE ACTION REQUIRED — *Trump v. Barbara* ruling (late June/early July 2026)**:
+- **domains/domain-58-tribal-sovereignty.md** → *Trump v. Barbara* ruling is the distribution trigger. Either ruling outcome (any Sauer language surviving OR broad rejection) triggers immediate distribution to NCAI, NARF, Campaign Legal Center, Brennan Center, and Native Vote Alliance within 72 hours. See `DOMAIN_58_DISTRIBUTION_CHECKLIST.md` for scenario-specific email pre-drafts and legislative text. **Do not wait for the July 15 baseline date if the ruling issues first.**
+
+**IMMEDIATE ACTION REQUIRED — *Turtle Mountain v. Howe* cert decision (expected before end of May 2026)**:
+- **domains/domain-58-tribal-sovereignty.md** → Cert granted triggers immediate distribution to Campaign Legal Center (litigant), Brennan Center (amicus), NARF. Cert denied triggers documentation of Eighth Circuit rule implications for 7-state tribal electorate. See `DOMAIN_58_DISTRIBUTION_CHECKLIST.md` Window B for protocol.
 
 **IMMEDIATE ACTION REQUIRED — June 1, 2026 hard deadline**:
 - **domain-39-healthcare-access-democratic-infrastructure.md** (root level) → HHS interim final rule on OBBBA work requirements due June 1, 2026 (APA notice-and-comment exempted by OBBBA text). Send Template 13 (institutional outreach) to healthcare advocacy and democracy organizations NOW. Target: CBPP, Georgetown CCF, KFF, NHeLP, state AGs with Medicaid litigation. Substack Post 9 and Reddit cross-posts also on June 1 timeline.
@@ -107,6 +125,11 @@
 - **domains-39.md** (education) → pair with Domain 43 (epistemic infrastructure) and Domain 27 (higher education) — the Democratic Knowledge cluster
 - **domains-40.md** (healthcare determinants) → pair with Domain 50 (OBBBA/NVRA) and Domain 41B (disability rights) — the Healthcare and Civic Capacity cluster
 
+**Domain 58 distribution pairings**:
+- **domain-58-tribal-sovereignty.md** + Domain 49 (*Callais*) + Domain 1 (Voting Rights) → "Sovereignty and Franchise Cluster" for tribal legal organizations and voting rights litigators
+- **domain-58-tribal-sovereignty.md** + Domain 26 (Government Accountability) + Domain 34 (Power of the Purse) → "Administrative Capture" cluster for congressional oversight staff
+- **domain-58-tribal-sovereignty.md** + Domain 39 (Healthcare as Democratic Infrastructure) + Domain 59 (when produced) → "Material Democracy" cluster for antipoverty and faith coalition organizations
+
 ---
 
-*Index created: May 13, 2026. Updated: May 15, 2026 (Session 1031 — Domains 38-40 Phase 2 production documents added; integrated into proposal, exec summary, and all distribution templates). Agent: resistance-research subagent.*
+*Index created: May 13, 2026. Updated: May 15, 2026 (Session 1031 — Domains 38-40 Phase 2 production documents added; integrated into proposal, exec summary, and all distribution templates). Updated: May 17, 2026 (Session 1122 canonicalization — Domain 58 Tribal Sovereignty added as fifth Phase 2 full production domain; cross-reference clusters updated; distribution priority notes updated with Trump v. Barbara and Turtle Mountain immediate triggers). Agent: resistance-research subagent.*
