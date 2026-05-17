@@ -1,3 +1,83 @@
+## Session 1133 (Orchestrator) — May 17, 2026, 09:45–10:40 UTC — Exploration Queue Execution + Phase 5 Decision Support
+
+**Status**: **systems-resilience Phase 5 decision-support framework complete. All top-5 projects remain in holding pattern. Exploration queue work provides unblocking decision document for Phase 5 path selection. Next critical milestone: May 18 resistance-research Wave 1 user execution; May 19 stockbot checkpoint.**
+
+### What Was Accomplished
+
+1. **systems-resilience Phase 5 Path Decision-Support Framework — COMPLETE** ✅
+   - Deliverable: `projects/systems-resilience/phase-5-path-decision-framework.md` (296 lines, 24K, production-ready)
+   - Analyzed three Phase 4b paths (Agricultural Intensification, Knowledge Preservation, Governance Scaling) against five decision criteria:
+     - Resource availability (time, capital, land access)
+     - Timeline urgency (annual perennial deadlines vs. FEMA funding windows)
+     - Skill gaps & learning curve
+     - Integration with existing projects (mfg-farm, seedwarden, off-grid-living, resistance-research, cybersecurity-hardening)
+     - Risk tolerance & reversibility
+   - Produced: Decision matrix (3 paths × 15 dimensions) + scenario-specific recommendations + 5-question decision checklist + lookup table
+   - **Key finding**: Phase 5 decision hinges on land access + 15 hours available before June 15 (Zone 5 perennial deadline). If yes → Agricultural Intensification must be first (irreversible annual cycle). If no → Governance Scaling (FEMA July 23 deadline) primary.
+   - **Business value**: User can now make informed Phase 5 path selection by June 1; unblocks rapid June-August execution (estimated 15–22 hours per path)
+
+2. **Project Status Verification**:
+   - **stockbot**: May 19 checkpoint (20:00 UTC ±60 min) infrastructure verified production-ready
+   - **resistance-research**: Wave 1 execution window May 18 morning; all infrastructure staged (8 Gists live, templates ready, 5 Batch 1 contacts verified)
+   - **cybersecurity-hardening**: Phase 1 walkthrough paused (awaiting VeraCrypt pre-boot restart); remainder ~45-60 min
+   - **mfg-farm**: Test print blocked (user action); all pre-print deliverables complete
+   - **seedwarden**: Track B ready May 30 (user gates May 15-28); Track A blocked (user actions)
+
+### In Progress
+
+- **May 18 morning**: resistance-research Wave 1 execution window
+  - Gist pre-flight (5 min), contact spot-check (5 min), identity fill-in (30 min), path confirmation (5 min), send wave (30 min) = 2 hours total
+  - All user-action items identified and sequenced in PROJECTS.md
+
+- **May 19 20:00 UTC**: stockbot checkpoint execution
+  - Query execution (3–5 min), outcome interpretation, playbook action path per scenario
+  - All decision trees pre-analyzed in MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md
+
+- **Post-May-19**: Gap 4 implementation (naked-call prevention guardrail) if checkpoint PASSES
+  - Specification ready in gap-4-implementation-plan.md (413 lines, production-ready)
+  - Estimated execution: 4–8 hours if PASS
+
+### Items Needing Your Input
+
+1. **May 18 morning** (CRITICAL): Wave 1 user-action items
+   - Prepare: Gist pre-flight, contact spot-check, identity fill-in, path confirmation
+   - Execute: Send distribution wave
+   - Duration: 2 hours
+
+2. **May 19 evening 20:00 UTC** (CRITICAL): Checkpoint execution
+   - Run query, interpret outcome, follow playbook path
+   - No immediate decision required — all scenarios handled by pre-analyzed playbooks
+
+3. **By June 1**: Phase 5 path decision
+   - Use phase-5-path-decision-framework.md to evaluate options
+   - **Recommended**: Agricultural Intensification if land + 15 hrs/week available before June 15. Otherwise Governance Scaling.
+   - Once decided, Phase 5 execution timeline clear (June 1–August 15 for single path; staggered if dual-path)
+
+4. **This week**: Cybersecurity-hardening Phase 1 continuation
+   - Restart Windows → VeraCrypt pre-boot test → Encrypt → resume step 1.4
+   - Estimated 45–60 min
+
+5. **Within 7 days**: mfg-farm test print execution
+   - Specifications: 0.20mm layer height, PLA+, 3 walls, 220–225°C
+   - Evaluate snap-arm tolerance; report pass/fail → unlocks revenue scaling sequence
+
+### Suggested Next Steps
+
+1. **May 18 morning**: Execute Wave 1 user-action items (2 hours)
+2. **May 19 evening 20:00 UTC**: Execute checkpoint (3–5 min) + follow playbook action path
+3. **May 20+**: Post-checkpoint work per outcome:
+   - If PASS: Begin Gap 4 implementation (4–8 hours)
+   - If STILL_MISS/FAR_MISS: Follow contingency playbook (root cause + recovery levers)
+4. **May 20-June 1**: Monitor Wave 1 adoption, support Phase 2 path decision if needed
+5. **June 1+**: Execute Phase 5 path (all prep complete, decision framework ready)
+
+### Usage
+
+- **Current**: 5.1% Sonnet tokens (3,256,217 / 64,293,300 weekly limit)
+- **Budget health**: Excellent — well under 80% throttle threshold
+
+---
+
 # Check-in
 
 ## Session 1132 (Orchestrator) — May 17, 2026, 09:18–10:15 UTC — Queue Refresh + Phase 2 Threat Verification
