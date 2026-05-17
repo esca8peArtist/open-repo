@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T09:11:39Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T10:22:29Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.6% | Reset in 39h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.7% | Reset in 38h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -99,42 +99,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+    * Manual testing steps (5-part verification procedure)
+    * Security analysis (isolation properties, threat model, hardening options)
+    * Full implementation checklist (Phase 1: 4-6 hours, Phase 2: 3-5 hours optional)
+    * Failure recovery procedures
+    * FAQ with GPU/Podman/monitoring considerations
+  - Design decisions explained: why asyncio + Docker vs. Kubernetes/Ray/Managed Agents
+  - Timeline estimate: Phase 1 (4-6 hours), Phase 2 optional (3-5 hours)
+  - Success criteria documented
+  - Status: PRODUCTION-READY, zero blockers, ready for Phase 1 implementation (optional, not critical path)
+  - Commit: 0a227a44
 
-**Checkpoint Dependency Chain**:
-- May 19 checkpoint result (PASS/FAIL) gates three major activities:
-  1. stockbot Gap 4 implementation (if PASS)
-  2. Gateway 2 activation timing (depends on checkpoint outcome)
-  3. Options trading activation readiness
+**Project Status Summary** (unchanged from Session 1135):
+- stockbot: May 19 checkpoint infrastructure VERIFIED READY (zero blockers)
+- resistance-research: Wave 1 pre-flight materials complete; awaiting user path decision
+- cybersecurity-hardening: Phase 1 paused (user restart required)
+- mfg-farm: Test print blocked (user action)
+- seedwarden: Track B user gates (May 15-28, in progress)
 
-**No autonomous project work available before May 19**:
-- All top-5 projects awaiting user actions or checkpoint results
-- Exploration queue items all staged for future triggers
-- Gap 4 specification completed as pre-checkpoint preparation
+**Critical User Actions Needed**:
+1. **May 18 06:00 UTC** (CRITICAL): Decide distribution path (A / A+37 / B) for resistance-research
+2. **May 18 06:00-10:00 UTC** (CRITICAL): Execute Wave 1 per chosen path using WAVE_1_PREFLIGHT_AND_PATH_DECISION.md checklists
+3. **May 19 20:00 UTC** (CRITICAL): Execute stockbot checkpoint query per MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md
 
-### Recommendations for Next Session
+**Suggested Next Session Tasks**:
+1. If May 18-19 execution successful: Monitor Wave 1 responses; prepare for Tier 2 Phase 1 (week 2)
+2. If stockbot checkpoint PASSES (May 19): Begin Gap 4 implementation using gap-4-implementation-plan.md
+3. If idle time before May 19: Optional containerized-agents Phase 1 implementation (4-6 hours)
 
-1. **May 19 evening** (after 20:00 UTC checkpoint execution):
-   - Execute appropriate scenario path from `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md`
-   - If PASS: begin Gap 4 implementation immediately (use `gap-4-implementation-plan.md`)
-   - If STILL_MISS/FAR_MISS: follow playbook escalation procedures
+**Usage**: 5.6% all-models (healthy, well below 80% threshold)
 
-2. **May 18-20** (during Wave 1 execution):
-   - Monitor resistance-research user-action items
-   - Support any clarifications needed on Wave 1 execution
-   - Prepare for Phase 2 path decision confirmation
+**Session Metrics**:
+- Work type: Exploration queue execution (2 items)
+- Deliverables: 2 comprehensive production-ready specifications (1,072 lines, 56K combined)
+- Commits: 2 (resistance-research + containerized-agents)
+- Files created: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md + OPTION_A_IMPLEMENTATION_SPEC.md
+- Reversibility: All work is documentation + specification; no code changes to live systems
+- Confidence: HIGH — all infrastructure verified, user has complete materials for critical execution windows
 
-3. **May 20-June 1**:
-   - Phase 2 sequencing (once user path decided)
-   - Integration of Tier A research into base files (May 18-28)
-   - Adoption tracking setup
-
-### Session Metrics
-
-- **Work type**: Preparation + specification writing
-- **Deliverables**: 1 comprehensive implementation spec (413 lines)
-- **Commits**: 1 (stockbot submodule)
-- **Files created**: `gap-4-implementation-plan.md`
-- **Time allocation**: ~60% research/understanding + 40% specification writing
-- **Reversibility**: All work is preparation; no code changes to live systems
-
----
+**Next Checkpoint**: May 18 morning (Wave 1 execution window) + May 19 20:00 UTC (stockbot checkpoint)
