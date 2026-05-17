@@ -90,7 +90,21 @@
 
 ---
 
-*Updated: May 14, 2026 (Session 1010 — Domain 42 Wave 1 package confirmed, sequence verified, user send action isolated)*
+## URGENT MONITORING — BREAKING DEVELOPMENTS MAY 17-18
+
+*Added: May 17, 2026 (breaking developments scan prior to Wave 1)*
+
+Three live developments will resolve on or immediately after May 18 — within the Wave 1 execution window. None block distribution but all are relevant to domain currency:
+
+**1. South Carolina House vote (May 18, expected).** The SC House returns at 11 a.m. ET on May 18 to vote on a congressional redistricting map that would eliminate Clyburn's District 6 — the state's only majority-Black district. If the House passes and Gov. McMaster signs, South Carolina becomes the second state (after Florida) to enact a *Callais*-cascade gerrymander in under three weeks. This updates Domain 1. If the vote fails or is delayed, note it as a failed gerrymander attempt — still relevant evidence. Track: [Democracy Docket SC redistricting page](https://www.democracydocket.com/cases/?state=South+Carolina)
+
+**2. Judge Nichols ruling on mail ballot EO (imminent, no date certain).** Following a May 14 hearing, U.S. District Judge Carl Nichols (Trump appointee) is expected to issue a written ruling on the injunction motion targeting Trump's March 31 mail ballot / voter list executive order. Nichols appeared hesitant to act quickly but did not rule from the bench. This is a live Domain 37 threat. If Nichols grants the injunction, major win; if he denies or narrows it, that accelerates the harm timeline. Track: [Democracy Docket — mail ballot EO case](https://www.democracydocket.com/cases/)
+
+**3. 9th Circuit oral argument: Oregon DOJ voter rolls (May 19, 2026).** The first circuit-level argument in the DOJ voter roll litigation will be heard May 19 in Portland. No ruling from the bench is expected (9th Circuit rarely rules from argument), but the panel composition and the judges' questions will be the first appellate signal on whether the DOJ's theory of NVRA authority can survive review. Track: [9th Circuit calendar](https://www.ca9.uscourts.gov/calendar/)
+
+**Domain 57 correction (Hungary/ICC):** The Domain 57 entry in CHECKIN (below) notes the production document is complete and distribution-ready for August. The domain document should be updated to reflect Peter Magyar's April 12 election victory and his pledge to halt/reverse Hungary's ICC withdrawal — this materially changes the Hungary case study from "withdrawal executed" to "withdrawal executed but reversal pledged by incoming government." This is a strengthening update for the argument (democratic recovery can reverse multilateral withdrawal), not a weakening one. No urgency; recommended as part of July pre-distribution polish pass.
+
+*Updated: May 17, 2026 (breaking developments scan — pre-Wave 1 supplemental)*
 
 ---
 
