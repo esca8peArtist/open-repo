@@ -2,6 +2,48 @@
 
 ---
 
+## May 17, 2026 — Session 1112 — Domain G Scoping: Press Freedom and Epistemic Infrastructure as Democratic Architecture
+
+**Status**: SCOPING COMPLETE — initial research gathered, domain outline drafted
+**Target completion**: June 15, 2026
+**Designation**: Domain G (next letter-domain after Domain F; Domain E and Domain F are production-ready as of May 6, 2026)
+
+**Context**: Phase 1 Wave 1 ready for user execution May 18-20. Phase 2 domains 38-40 complete, 56-58 complete. Domains 57 and 59 production-complete (both exist in domains/ as of May 15). This session begins next autonomous research unit targeting June 15 completion.
+
+**Gap identified**: The framework has Domain 43 (Epistemic Infrastructure and Disinformation) and a Phase 3-priority `domain-media-freedom-recovery.md` file in the domains/ directory. Neither addresses the current active crisis as a coherent Phase 2 production domain integrating: (1) federal weaponization of FCC/DOJ against specific outlets; (2) the structural collapse of local news as a democratic accountability gap (213 news desert counties, 50M Americans without local news); (3) the media consolidation vector (Nexstar-Tegna merger approved March 2026, 80% of TV households in one company); and (4) the dual track of CPB/public broadcasting dismantlement and the USAGM/VOA gutting. These four vectors together constitute a democratic infrastructure attack on the epistemic commons that is analytically distinct from either Domain 43's disinformation focus or the existing media-freedom file's First Amendment doctrine focus.
+
+**Domain G research question**: How has the 2025-2026 assault on press freedom — through FCC weaponization, DOJ journalist subpoenas, public broadcasting dismantlement, USAGM gutting, media consolidation permissiveness, and local news collapse — converted the American information ecosystem from a democratic accountability infrastructure into a captured or absent accountability void, and what structural reforms would restore it?
+
+**Key sources gathered this session**:
+- RSF World Press Freedom Index 2026: US at historic low, ranking 64th globally (down 7 places from 2025; was 57th in 2025 per existing domain-media-freedom-recovery.md, now 64th), confirming accelerating decline
+- FCC: Brendan Carr threatened broadcast licenses over Iran war coverage (March 2026); 8 FCC investigations into specific news organizations for editorial content; Nexstar-Tegna merger approved (March 19, 2026), creating 80% TV household reach for single company — 8 state AGs filed antitrust suit
+- DOJ journalist subpoenas: WSJ subpoenaed March 4, 2026 for Iran war coverage; AG Bondi memo (April 2025) voided journalist source protections and requires AG approval for all journalist arrests; CPJ condemned Trump's direct order to use subpoenas against journalists
+- Public broadcasting dismantlement: CPB shut down January 2026 after Congress voted to cancel appropriations; federal judge ruled NPR/PBS defunding EO unconstitutional (March/April 2026, First Amendment violation); case likely to be appealed
+- USAGM/VOA: Trump signed EO to dismantle USAGM; Kari Lake placed 1,300+ VOA staffers on administrative leave, halted all 49-language broadcasting; Congress appropriated $653M (4x Trump's request) to resist shutdown; VOA now operating with ~130 staff in 6 languages only; Radio Free Europe sued to block grant termination
+- Local news collapse: 213 news desert counties (2025); 1,524 counties with only one news source; 136 newspaper closures in past year (rate: 2+ per week); Medill Northwestern survey (February 2026): 51% of news-desert consumers now get local news from non-journalistic sources
+- Nonprofit journalism: Growing sector (Institute for Nonprofit News, American Journalism Project, Press Forward coalition) but generates a fraction of what newspapers once did; revenue model still heavily foundation-dependent
+
+**Cross-domain connections**:
+- Domain 29 (DOJ Capture): journalist subpoenas as prosecutorial weaponization
+- Domain 43 (Epistemic Infrastructure): information ecosystem overlap — Domain G covers production/delivery infrastructure; Domain 43 covers disinformation flooding of existing channels
+- Domain 27 (Higher Education): academic freedom and journalist protection are parallel suppression vectors
+- Domain 33 (State Legislative Autocratization): state anti-SLAPP law gaps enable SLAPP-based press suppression
+- Domain 37 (Election Interference): media silence in election year compounds interference architecture
+- Domain 56 (Civil Service Politicization): FCC and DOJ personnel capture is the mechanism
+- Domain F (Civil Society Suppression): parallel infrastructure attack (nonprofit newsrooms threatened by IRS-FBI initiative)
+
+**Next steps for June 15 completion**:
+1. Read existing `domains/domain-media-freedom-recovery.md` in full to map what is already documented vs. what needs fresh research (the file appears to be ~Phase 3 framing but contains production-quality Section 1 content)
+2. Research: FCC "news distortion" doctrine and its weaponization; the legal architecture of broadcast license threats (what Carr can and cannot actually do)
+3. Research: Local news economic model collapse — specific data on newspaper revenue decline, ownership consolidation statistics, and the causal link to civic participation suppression (Journal of Politics Snyder/Strömberg 2010 and 2025 follow-up studies)
+4. Research: Nonprofit journalism restoration architecture — Press Forward, American Journalism Project, Local News Initiative, PRESS Act legislative status, Free Speech Protection Act (federal anti-SLAPP)
+5. Research: International comparison — UK press regulation (Leveson Inquiry model vs. IPSO), Germany's public broadcasting model (ARD/ZDF statutory independence), Canada's local journalism initiative
+6. Produce Domain G full document targeting ~7,000 words, 45+ citations
+
+**Files modified**: WORKLOG.md only (scoping entry)
+
+---
+
 ## May 17, 2026 — Session 1110 — Tier A Updates Integration (Domains 33, 35, 25, 19f)
 
 **Status**: COMPLETE

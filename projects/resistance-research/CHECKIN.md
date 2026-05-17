@@ -1,6 +1,20 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 17, 2026 (Session 1098 — Batch 1 execution review)*
+*Updated: May 17, 2026 (Session 1112 — Domain G scoping complete)*
+
+---
+
+## DOMAIN G SCOPING DECISION — REVIEW RECOMMENDED (May 17, 2026)
+
+**What was decided autonomously**: Domain G (next letter-domain after Domain F) has been scoped and an outline document created at `domains/domain-G-press-freedom-information-ecosystem-democratic-infrastructure.md`.
+
+**Research question scoped**: How has the 2025-2026 assault on press freedom — FCC weaponization, DOJ journalist subpoenas, public broadcasting dismantlement (CPB shutdown January 2026), USAGM/VOA gutting, Nexstar-Tegna media consolidation (80% TV households in one company), and accelerating local news collapse (213 news desert counties) — converted the American information ecosystem from a democratic accountability infrastructure into a captured or absent void?
+
+**Why this gap**: All Phase 2 domains through 59 are complete. Domain 43 covers epistemic infrastructure (demand-side: disinformation flooding). Domain G covers the supply-side: how the journalism production infrastructure was destroyed. This completes the pincer argument on the information ecosystem. The existing `domains/domain-media-freedom-recovery.md` is Phase 3-priority and covers First Amendment doctrine only — it does not cover the structural economic and regulatory mechanisms as a democratic infrastructure attack.
+
+**Next action needed from you**: None required — full research production begins May 18 with June 15 completion target. If you disagree with the Domain G scoping (e.g., prefer a different gap domain), flag before May 20.
+
+**Note on naming**: Domain E (election administration seizure) and Domain F (civil society suppression) already exist as complete production documents. Domain G is therefore the correct next designation.
 
 ---
 
