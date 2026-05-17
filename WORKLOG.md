@@ -1,5 +1,21 @@
 # Work Log
 
+## Session 1138 (Research Agent) — May 17, 2026 — mfg-farm Launch Readiness Validation
+
+**Objective**: Validate three mfg-farm launch documents against current May 2026 data.
+
+**Status**: Complete
+
+**Files produced**:
+- `projects/mfg-farm/LAUNCH_READINESS_VALIDATION.md` — Full validation report with sourced findings
+
+**Key findings**:
+1. Etsy checklist: 3 gaps found — $15 setup fee + identity verification not documented; subcategory now mandatory in listing form; production method disclosure now required in listing creation flow
+2. Supplier scorecard: eSUN filament pricing is materially higher (~$15–18/kg bulk vs. $11–13/kg documented) due to 2025–2026 tariff impacts; Pirate Ship rates confirmed accurate; Polymaker increased ~10% in May 2025
+3. Cost model: Electricity assumption outdated ($0.12 vs. $0.18/kWh residential); Bambu P1S promo pricing improves ROI ($399 vs. $699 documented); filament COGS needs upward revision for Phase 1 planning
+
+---
+
 ## Session 1137 (Orchestrator) — May 17, 2026 10:22–11:20 UTC — Pre-Event Infrastructure Audit + State Verification
 
 **Objective**: Conduct final pre-event (May 18-19) infrastructure audit; verify zero blockers remain; update orchestration state files.
