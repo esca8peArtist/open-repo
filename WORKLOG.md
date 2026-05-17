@@ -1,5 +1,34 @@
 # Work Log
 
+## Session 1109 — May 17, 2026 (Research Agent — Community-Scale Resilience Overview)
+
+**Status**: COMPLETE
+
+**Deliverable**: `projects/systems-resilience/household/06-community-scale-overview.md` (~6,600 words, 482 lines, 25 citations, production-ready)
+
+**Phase 2 household-scale documentation now COMPLETE** — 6 documents total (01–06).
+
+**Work performed**:
+- Read existing Phase 2 docs (01–05) to match structure, conventions, and cross-reference patterns
+- Researched: Transition Towns movement (992 communities, 67 countries — Wikipedia, carboncopy.eco); Blue Lake Rancheria community microgrid (500 kW solar + 1 MWh battery, islanded successfully during 2019 PSPS serving 10,000 residents — Schatz Energy Research Center); Puerto Rico post-Hurricane Maria distributed microgrids and Proyecto de Apoyo Mutuo mutual aid (Microgrid Knowledge); Elinor Ostrom commons governance 8 principles (Cambridge University Press, Governing the Commons 1990); EPA Power Resilience Guide for Water and Wastewater Utilities (2023); Findhorn Ecovillage energy and food systems (750 kW wind + biomass, 70%+ food self-sufficient, eko local currency); Auroville 2,500-person community resource commons model (Global Ecovillage Network); FEMA BRIC grants and National Resilience Guidance August 2024; community microgrid cost benchmarks ($2.1M/MW NREL, battery costs ~$94/kWh 2024 — Microgrid Knowledge); EPA community water distribution systems and solar backup pumping; WPSA time banking in mutual aid and crisis settings; Rapid Transition Alliance local currencies (Greece Volos parallel economy); Clean Energy Group solar+storage for rural health centers; rural midwife roles and functions (PMC/Tubon-Gualotuña 2024); Aspen Institute rural disaster preparedness inter-community partnership; Pacific Islander food-sharing customs for disaster resilience; FEMA RAPT skills inventory tool; ham radio emergency communication systems (ARES/RACES protocols)
+
+**Content delivered**:
+- Opening finding: village-scale coordination tolerates cascading infrastructure failures (grid + water + supply chain) that devastate isolated clusters; Puerto Rico, Blue Lake Rancheria, Transition Towns precedents
+- Quick-reference card: community baseline (50 HH, 125 people), skills targets, infrastructure dependency cascade table
+- Section 1 (Governance): cluster consensus → town selectboard + emergency council of 7; Ostrom design principles applied; town charter scope; conflict resolution sequence
+- Section 2 (Infrastructure scaling): water (distributed tanks + solar pumping + gravity distribution + EPA guidance); food (community food hub + grain bin + seed library + community fields); energy (100 kW community microgrid with islanding, Blue Lake Rancheria case study, $2.1M/MW benchmark); healthcare (town clinic, medication cache, midwifery capability, chronic disease registry)
+- Section 3 (Hub-and-cluster physical model): central hub + neighborhood clusters + distributed critical infrastructure; fire/geographic risk distribution
+- Section 4 (Midwest-specific threats): spring flooding (elevated treatment, emergency water pre-positioning); May tornado season (rapid preservation protocol, shelter-in-place, ham radio net); winter extended outage 7+ days (wood heat hubs, energy rationing, caloric adjustment, daily community check-in); agricultural input disruption (seed independence, nitrogen alternatives, draft animal)
+- Section 5 (Economic transition): three exchange models (time banking, commodity-backed, local vouchers); price controls and rationing framework; precedents from Greece and Findhorn
+- Section 6 (Skills and training): complete skills inventory framework; training targets table with pathways; annual training calendar aligned to midwest/calendar.md
+- Section 7 (Inter-community partnerships): trade networks, labor sharing, emergency aid agreements, specialist access; Pacific Islander and Aspen Institute precedents
+- Section 8 (Implementation timeline and capital costs): Phase 1 (months 1–6), Phase 2 (months 6–12), Phase 3 (year 2+); cost summary table ($360K–$783K total, $7,200–$15,660/HH); BRIC, USDA Rural Development, and state hazard mitigation funding sources
+- Section 9 (International precedents): Transition Towns, Findhorn, Auroville, Puerto Rico detailed
+- Section 10 (Existing institution integration): town government, school, library, churches, fire department transition to resilience mode
+- Closing synthesis: path from individual → cluster → community as complete Phase 2 framework
+
+---
+
 ## Session 1108 — May 17, 2026 (Research Agent — Household Healthcare Coordination)
 
 **Status**: COMPLETE
