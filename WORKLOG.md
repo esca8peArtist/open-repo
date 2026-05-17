@@ -1,5 +1,66 @@
 # Work Log
 
+## Session 1101 — May 17, 2026 (Orchestrator — Gate 2 Decision Framework + Phase 2 Contingency Planning)
+
+**Status**: ✅ COMPLETE
+
+**Deliverables**:
+- `projects/stockbot/GATE2_ARCHITECTURE_DECISION_FRAMEWORK.md` (NEW — 33KB, ~600 lines)
+- `projects/resistance-research/PHASE_2_CONTINGENCY_PLAYBOOK.md` (NEW — 10KB, ~370 lines)
+
+**Item 52: stockbot — Gate 2 Architecture Decision Framework (COMPLETE)**
+
+Comprehensive decision framework for Gate 2 options integration, covering:
+- **One-page scenario comparison matrix**: Scenarios A (equity-only), B (covered calls), C (multi-leg ensemble) vs. order latency, Greeks batch size, margin monitoring, deployment timeline, win rate, Gap 4 (naked-call prevention), development effort, user approval gates
+- **Scenario A brief**: Equity-only continuation (no new code). Decision triggers: OOS backtest win rate <60%, AAPL momentum regime, NAV <$150K. Opportunity cost: ~$8,928/year in VRP yield.
+- **Scenario B brief** (recommended path): Covered calls + Greeks. Full gap inventory in dependency order: Phase A (14h foundation), Phase B (8h safety, including Gap 4 naked-call prevention), Phase C (14h operations), Phase D (6h testing). First paper trade: June 4-6 (Lever A success) or June 11-16 (Lever B escalation). Total effort: 36-42h.
+- **Scenario C brief**: Multi-leg ensemble + dynamic hedging. Prerequisite: Scenario B running 30+ days with 20-45% assignment rate. CSP capital lockout: $92,200 frozen at 5-ticker deployment. Bull-call spread requires 52-55% directional accuracy. First Scenario C: July 21-25. Effort: 11-18h on top of stable Scenario B.
+- **Decision flowchart**: Linear path from May 17 → May 19 checkpoint → OOS backtest branch → 30-day Scenario B validation gate
+- **Recommended path**: Wait for May 19, run OOS backtest on Gate 1 outcome, implement Scenario B in Phase A→B→C→D order, implement Gap 4 first (naked-call prevention), target June 4-6 first write.
+
+**Context**: Checkpoint was NEAR_MISS (34 fills, 0 AAPL model sells), not PASS. Lever A applied (threshold 2.28%→1.82%, confidence 0.50→0.45). Framework accounts for both Lever A success and Lever B contingency. Gap 4 (naked-call prevention guardrail) is called out as single hardest safety requirement. Mechanism: before every equity SELL inside symbol lock, query open short calls, fetch current mid-price, block the sell (or attempt buy-to-close first) if option value remains above 5% of entry price.
+
+**Commits**: `ca39bbf` (stockbot submodule)
+
+---
+
+**Item 53: resistance-research — Phase 2 Contingency Playbook + Distribution Roadmap (COMPLETE)**
+
+Comprehensive Phase 2 planning document covering:
+- **Phase 2 Distribution Roadmap** (Path A: 2-3 positive Phase 1 responses):
+  - First tier (June 2-5): Domain 44 (Reproductive Freedom), Domain 47 (Housing Security), Domain 49 (Callais VRA Redistricting)
+  - Second tier (June 10-15): Domain 39 (Healthcare), Domains 41-43 (Disability, Drug Policy, Epistemic Infrastructure)
+  - Timing map: Phase 1 Batch 1 send May 18-19, response windows May 22-28, GO/NO-GO May 28 evening
+
+- **Contingency Playbook** (three branches):
+  1. **Branch 1 — Low Response (<2 of 5)**: Diagnostics, messaging adjustments, retry strategy, Phase 2 launch still proceeds with modified framing
+  2. **Branch 2 — High Response (4+ of 5)**: Acceleration actions, priority Phase 2 contact upranking, same-day follow-up to responders, social media coordination
+  3. **Branch 3 — Controversy/Adversary Response**: Pre-positioned response framework, institutional pushback handling, media engagement protocols
+
+- **Adoption Tracking Framework**: Four-tier adoption signals (response with question, request for brief, forward to colleague, citation in published work, reference in hearing/brief, use in litigation), tracking cadence T+7/T+14/T+30/T+90
+
+- **Expanded Contact Lists** (production-ready for Phase 2):
+  - Universities & research institutes (8 Tier A contacts): Hasen, Scheppele, Allen highlighted for fastest publication cycles
+  - NGO & advocacy (12 Tier A organizations): Domain-specific matches
+  - State governments (8 Tier A): AG offices and election administration units
+  - Labor unions & faith networks (7 Tier B): Longer response cycles, larger networks
+  - Media contacts (8 Tier A): Not cold-outreach targets; relationship-building for post-citation window
+
+- **Phase 2 Research Acceleration Strategy**: Conditional ROI assessment (trigger: Phase 1 feedback identifies which domains resonate most). Three branches:
+  - War powers / DOJ weaponization resonance → Domain 37a (post-election Section 3), Domain 31x (healthcare tariff collision)
+  - Electoral architecture / redistricting resonance → Domain A (trade policy), Domain D (disability rights)
+  - Academic methodology / AI resonance → Domain C (AI governance, Chenoweth connection)
+  
+  Parallelization model: Agent research + user distribution can overlap (research agent-executable, distribution user-only). June-August timeline: 6-8 new domains possible in parallel with Phase 2 distribution.
+
+- **May 28 GO/NO-GO Decision Checklist**: Five specific criteria to assess Phase 2 posture (response count, quality, Domain 42 engagement, research priority, address verification)
+
+- **Three Key Dates**: May 28 GO/NO-GO, June 2-5 Phase 2 Batch 1 send (regardless of Phase 1 outcome), September 1 Domain 37a (post-election Section 3 litigation) in hands of election protection organizations
+
+**Commits**: `de3268fb` (main repo)
+
+---
+
 ## Session 1099 — May 17, 2026 (Research Agent — moisture-extraction individual + healthcare enhancements)
 
 **Status**: Complete

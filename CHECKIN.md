@@ -1,5 +1,108 @@
 # Check-in
 
+## Session 1101 — May 17, 2026, 01:30–02:00 UTC (Orchestrator — Gate 2 Planning + Phase 2 Contingency Framework)
+
+**Status**: ✅ **SESSION COMPLETE — Two Strategic Planning Documents Delivered**
+
+### Accomplishments This Session
+
+**1. Item 52: stockbot — Gate 2 Architecture Decision Framework ✅**
+
+**Deliverable**: `projects/stockbot/GATE2_ARCHITECTURE_DECISION_FRAMEWORK.md` (33KB, comprehensive scenario analysis)
+
+**Content Summary**:
+- **One-page scenario comparison matrix**: Scenarios A (equity-only), B (covered calls), C (multi-leg ensemble)
+- **Scenario A brief**: Equity-only continuation. Zero new development. Decision gates: OOS backtest <60%, momentum regime, NAV <$150K. Opportunity cost: ~$8,928/year.
+- **Scenario B brief** (recommended): Covered calls + Greeks, 70% structural win rate from VRP. Full gap inventory (4 phases, 42h total). Gap 4 (naked-call prevention) is critical safety requirement. Mechanism: before every equity SELL, query open short calls and block if option value >5% of entry price.
+- **Scenario C brief**: Multi-leg ensemble, requires 30-day Scenario B validation first. CSP capital lockout: $92,200 (46% of account).
+- **Decision flowchart**: May 17 → May 19 checkpoint → OOS backtest → 30-day Scenario B gate
+- **Recommended path**: Wait for May 19 checkpoint, implement Scenario B Phase A→B→C→D in order, Gap 4 first, target June 4-6 first write
+
+**Context**: Even though May 16 checkpoint was NEAR_MISS (not PASS), this framework is immediately actionable for planning. Lever A adjustment (threshold 2.28%→1.82%, confidence 0.50→0.45) expected to drive AAPL SELL signals by May 19-20. Framework documents both Lever A success path and Lever B contingency.
+
+**Business impact**: De-risks Gate 2 technical decision under time pressure. Gives Anya clear actionable options with zero ambiguity. Enables rapid post-checkpoint execution within 48 hours.
+
+---
+
+**2. Item 53: resistance-research — Phase 2 Contingency Playbook + Distribution Roadmap ✅**
+
+**Deliverable**: `projects/resistance-research/PHASE_2_CONTINGENCY_PLAYBOOK.md` (10KB, comprehensive Phase 2 planning)
+
+**Content Summary**:
+- **Phase 2 Distribution Roadmap** (Path A: 2-3 positive Phase 1 responses):
+  - First tier (June 2-5): Domain 44 (Reproductive Freedom), Domain 47 (Housing), Domain 49 (Callais VRA Redistricting)
+  - Second tier (June 10-15): Domain 39 (Healthcare), Domains 41-43 (Disability/Drug Policy/Epistemic Infrastructure)
+  - Response timeline: May 22-24 (Elias/Goodman/Bassin), May 25-28 (Weiser/Chenoweth), GO/NO-GO May 28 evening
+
+- **Three-branch Contingency Playbook**:
+  - **Branch 1** (Low response <2/5): Messaging diagnostics, retry strategy, proceed with modified framing
+  - **Branch 2** (High response 4+/5): Acceleration actions, immediate follow-up, social media coordination
+  - **Branch 3** (Controversy): Pre-positioned response framework, institutional pushback handling
+
+- **Expanded Contact Lists** (production-ready):
+  - Universities (8 Tier A): Hasen, Scheppele, Allen prioritized for fast publication
+  - NGOs (12 Tier A): Domain-matched
+  - State governments (8 Tier A): AGs and election administrators
+  - Labor & faith (7 Tier B)
+  - Media (8 Tier A): Post-citation engagement strategy
+
+- **Phase 2 Research Acceleration** (conditional on Phase 1 feedback):
+  - War powers resonance → Domain 37a, Domain 31x
+  - Electoral architecture resonance → Domain A, Domain D
+  - AI/methodology resonance → Domain C
+  - Timeline: June-August, 6-8 new domains possible in parallel
+
+- **May 28 GO/NO-GO Checklist**: Five specific criteria (response count, quality, Domain 42 engagement, research timeline, address verification)
+
+- **Three Key Dates**: May 28 decision, June 2-5 send (regardless of outcome), September 1 Domain 37a completion
+
+**Context**: Item 53 prerequisite was "Phase 1 Wave 1 distribution complete (May 17-18)" — user still sending emails on May 18-19, but planning framework is immediately actionable. Enables Anya to make May 28 GO/NO-GO decision with full clarity on all possible paths.
+
+**Business impact**: Transforms Phase 2 from sequential to overlapping. Phase 2 launch decision can happen within 48 hours of final Batch 1 responses. Research can begin immediately on June 2 (agent work, zero user effort). Contingency coverage prevents decision ambiguity in any outcome scenario (low/high response, controversy).
+
+---
+
+### Projects Status Update
+
+| Project | Status | Blocker | Next |
+|---------|--------|---------|------|
+| **stockbot** (Priority 1) | Active | None | May 19 20:00 UTC checkpoint; use Gate 2 framework to evaluate Scenario path |
+| **resistance-research** (Priority 2) | Awaiting user action | User sends emails | Send Phase 1 Batch 1 (May 18-19 optimal); May 28 GO/NO-GO decision point |
+| **systems-resilience** | Active autonomous | None | individual/04-energy.md (next priority research) |
+| cybersecurity-hardening | Blocked | User restart | Windows VeraCrypt restart + Phase 1 walkthrough resume |
+| mfg-farm | Blocked | User action | Execute test print (0.20mm, PLA+, 220–225°C) |
+| seedwarden | Active | Track A: user actions | Track B ready May 30; user gates May 15-28 |
+
+### Needs Your Input
+
+1. **Resistance-Research Phase 1 Wave 1 Batch 1** (HIGH PRIORITY — May 18-19 optimal):
+   - Ready to send: 5 verified contacts, all materials prepared
+   - Time required: 90 minutes
+   - **Action**: Send using checklist in `execution/phase-1-personalized-batch-1.md`
+
+2. **Domain 42 DEA Track** (URGENT — hard stop May 21):
+   - 5 emails ready, just need name + contact info
+   - Time required: 30 minutes
+   - **Action**: Fill placeholders in `execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md` Section 3, send by May 21
+
+3. **Stockbot May 19 Checkpoint** (scheduled 20:00 UTC):
+   - Lever A applied, expecting AAPL SELL signals in 1–3 trading days
+   - Use Gate 2 framework to evaluate Scenario A/B/C post-checkpoint
+   - **Action**: Orchestrator will execute checkpoint; you review outcomes
+
+4. **Cybersecurity-Hardening Phase 1 Walkthrough** (paused on VeraCrypt):
+   - Ready to resume from step 1.4
+   - **Action**: Restart Windows, type VeraCrypt pre-boot password, click Encrypt, resume walkthrough
+
+### Strategic Deliverables Complete
+
+✅ **Gate 2 Architecture Decision Framework** — comprehensive scenario analysis, ready for post-checkpoint decision-making
+✅ **Phase 2 Contingency Playbook** — complete distribution roadmap with branch logic for May 28 GO/NO-GO decision
+
+**Next orchestrator session** should execute May 19 checkpoint and assess Lever A impact. If AAPL SELLs detected, transition to Gate 2 planning; if not, evaluate Lever B escalation path.
+
+---
+
 ## Session 1100 — May 16–17, 2026, 23:58 UTC (Orchestrator — INBOX Items Resolution + Stockbot Checkpoint Verification)
 
 **Status**: ✅ **SESSION COMPLETE — New INBOX research items delivered + May 16 checkpoint verified + Ready for Wave 1 distribution**
