@@ -1,3 +1,55 @@
+## Session 1134 (Orchestrator) — May 17, 2026, 14:42–15:20 UTC — Containerized-Agents Requirements Analysis
+
+**Status**: **Exploration queue containerized-agents analysis complete. All top-5 projects remain in holding pattern. Security vulnerabilities in docker-compose.yml identified for future remediation. Next critical milestone: May 18 resistance-research Wave 1 user execution (morning); May 19 stockbot checkpoint (20:00 UTC).**
+
+### What Was Accomplished
+
+1. **containerized-agents Requirements Analysis — COMPLETE** ✅
+   - Deliverable: `projects/containerized-agents/REQUIREMENTS_ANALYSIS.md` (4,200+ words, production-ready)
+   - Research scope: Autonomous agent deployment patterns, containerization benefits, orchestration strategies for multi-project workflows
+   - **Key finding**: Lightweight asyncio + Docker sandboxes for code execution is optimal for current scale (RPi 5); Kubernetes/Ray/wholesale Docker Compose overhead not justified
+   - **Critical discoveries**:
+     1. Three security violations in existing docker-compose.yml: `0.0.0.0` binds on open-webui/agentcore/wizard, missing memory limits on all containers, RPi 5 requires kernel flag for cgroup memory support
+     2. Anthropic Managed Agents (April 2026) analysis: viable for pure-generative tasks; unsuitable for file-I/O-heavy research due to `/workspace` filesystem isolation
+   - **Architecture options matrix**: Five options evaluated (asyncio sandbox to Kubernetes to Ray); Option A (asyncio + Docker sandboxes) recommended as Phase 1; Option B (Docker Compose stack) for Phase 2 if parallelization scales
+   - **Business value**: Clarifies project scope, identifies immediate security fixes, provides phased implementation roadmap
+
+2. **Exploration Queue Maintenance** ✅
+   - Crossed out Session 1133 (Phase 5 decision-support) — marked complete
+   - Crossed out Session 1132 (Domain 57/59 threat verification) — marked complete
+   - Marked containerized-agents analysis complete
+   - Added 3 new items for post-May-19 execution window:
+     1. **mfg-farm**: Post-test-print launch readiness validation
+     2. **seedwarden**: Track B Phase 3 medicinal herbs timeline
+     3. **off-grid-living**: Social media distribution execution framework
+
+### In Progress
+
+- **May 18 morning**: resistance-research Wave 1 execution (user actions) — no additional prep needed
+- **May 19 20:00 UTC**: stockbot checkpoint (infrastructure verified production-ready)
+
+### Items Needing Your Input
+
+1. **May 18 morning** (CRITICAL): Wave 1 user execution — 2 hours (Gist pre-flight, contact spot-check, identity fill-in, path confirmation, send)
+2. **May 19 20:00 UTC** (CRITICAL): Checkpoint execution — 3-5 min (query + interpretation per playbook)
+3. **This week**: Cybersecurity Phase 1 continuation (Windows restart → VeraCrypt → resume) — 45-60 min
+4. **Within 7 days**: mfg-farm test print (0.20mm, PLA+, 3 walls, 220-225°C) — triggers revenue scaling sequence
+5. **By June 1**: Phase 5 path decision using decision-framework.md — once decided, June execution timeline clear
+
+### Suggested Next Steps
+
+1. **May 18 morning**: Execute resistance-research Wave 1 (2 hours)
+2. **May 19 20:00 UTC**: Execute stockbot checkpoint (3-5 min + playbook action per outcome)
+3. **May 20-June 1**: Post-checkpoint work; monitor Wave 1 adoption
+4. **Post-May-19**: If any idle time, containerized-agents security fixes (low priority) are identified with specific violation types
+
+### Usage
+
+- **Current**: 5.6% all-models (estimated); Sonnet under 5% (well below 80% throttle threshold)
+- **Budget health**: Excellent
+
+---
+
 ## Session 1133 (Orchestrator) — May 17, 2026, 09:45–10:40 UTC — Exploration Queue Execution + Phase 5 Decision Support
 
 **Status**: **systems-resilience Phase 5 decision-support framework complete. All top-5 projects remain in holding pattern. Exploration queue work provides unblocking decision document for Phase 5 path selection. Next critical milestone: May 18 resistance-research Wave 1 user execution; May 19 stockbot checkpoint.**

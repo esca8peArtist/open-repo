@@ -1,5 +1,60 @@
 # Work Log
 
+## Session 1134 (Orchestrator) — May 17, 2026 14:42–15:20 UTC — Exploration Queue: Containerized-Agents Analysis
+
+**Objective**: Execute containerized-agents exploration queue item; complete requirements analysis for autonomous agent deployment patterns.
+
+**✅ COMPLETED**: Containerized-agents requirements analysis (production-ready)
+
+**Orientation**:
+- ✅ Read ORCHESTRATOR_STATE.md — confirmed all top-5 projects blocked on external events (stockbot May 19 checkpoint, resistance-research May 18 Wave 1)
+- ✅ Read BLOCKED.md — 2 active blocks unchanged (cybersecurity Phase 1 restart, mfg-farm test print)
+- ✅ Read INBOX.md — no new items
+- ✅ Read PROJECTS.md exploration queue — identified containerized-agents analysis as top ready-to-execute item
+
+**Containerized-Agents Requirements Analysis — EXECUTED** (general-research agent):
+- **Deliverable**: `projects/containerized-agents/REQUIREMENTS_ANALYSIS.md` (4,200+ words, production-ready)
+- **Key findings**:
+  1. **Lightweight asyncio + Docker sandboxes for code execution is optimal** for current scale (RPi 5, 5-10 concurrent agents)
+  2. **Kubernetes/Ray/wholesale Docker Compose overhead not justified** at this scale
+  3. **Critical security violations identified** in existing docker-compose.yml:
+     - `0.0.0.0` binds on open-webui, agentcore, wizard containers
+     - Missing memory limits on all containers
+     - RPi 5 requires `cgroup_enable=memory swapaccount=1` kernel flag for memory limits to work
+  4. **Architecture options matrix** provided:
+     - Option A (asyncio + Docker sandboxes): 1-day implementation, recommended for now
+     - Option B (Docker Compose multi-agent stack): 3-5 days, if 3+ projects scale to concurrent execution
+     - Option C (k3s Kubernetes): 1-2 weeks, not recommended until 3+ node cluster
+     - Option D (Ray): 1 week, for 50+ parallel agents or ML training integration
+     - Option E (Anthropic Managed Agents cloud): hours to integrate, unsuitable for file-I/O-heavy research
+- **Anthropic Managed Agents analysis**: Cloud-based solution (April 2026 launch) viable for pure-generative tasks; NOT suitable for multi-project research due to `/workspace` filesystem isolation
+- **Confidence**: High (80%+) on lightweight recommendation; medium (60%) on specific RPi 5 memory specs
+
+**Queue cleanup**:
+- ✅ Crossed out Session 1133 (Phase 5 decision-support) — already complete
+- ✅ Crossed out Session 1132 (Domain 57/59 threat verification) — already complete
+- ✅ Marked containerized-agents item complete
+- ✅ Added 3 new items for post-May-19 window:
+  1. mfg-farm: Post-test-print launch readiness (validate checklists against May 2026 UI)
+  2. seedwarden: Track B Phase 3 medicinal herbs timeline
+  3. off-grid-living: Social media distribution execution framework
+
+**Commits**:
+- `b3166ca9` — chore(exploration-queue): containerized-agents requirements analysis complete
+
+**Time allocation**:
+- Orientation: 10 min
+- Exploration queue execution (general-research agent): 35 min
+- Documentation updates + commits: 5 min
+
+**Next Steps**:
+- May 18 morning: resistance-research Wave 1 execution (user actions)
+- May 19 20:00 UTC: stockbot checkpoint execution
+- May 20+: Depending on checkpoint outcome, proceed with Gap 4 implementation or alternative path
+- Containerized-agents security fixes can be scheduled for low-priority period (post-May 19)
+
+---
+
 ## Session 1132 (Orchestrator) — May 17, 2026 09:18–10:15 UTC — Queue Refresh + Phase 2 Threat Verification
 
 **Objective**: Confirm holding pattern; add exploration items; execute high-value threat verification work.
