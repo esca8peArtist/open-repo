@@ -2,6 +2,23 @@
 
 ---
 
+## May 17, 2026 — Phase 2 Candidates Launch Briefs — Domains 38, 39, 40
+
+**Status**: COMPLETE
+**Files created**:
+- `projects/resistance-research/phase-2-candidates/INDEX.md` — parent index with sequencing table
+- `projects/resistance-research/phase-2-candidates/DOMAIN_38_REGULATORY_CAPTURE_AI.md` — ~850 words, 18 sources, 7 contacts
+- `projects/resistance-research/phase-2-candidates/DOMAIN_39_HEALTHCARE_DEMOCRACY_NEXUS.md` — ~900 words, 18 sources, 7 contacts
+- `projects/resistance-research/phase-2-candidates/DOMAIN_40_SURVEILLANCE_MICROTARGETING.md` — ~900 words, 20 sources, 7 contacts
+
+**Research basis**: Full production documents for all three domains (domain-38-ai-regulatory-capture-governance.md, domain-39-healthcare-access-democratic-infrastructure.md, domain-40-surveillance-capitalism-electoral-manipulation.md) were already production-complete as of May 15, 2026. The launch briefs synthesize each full document into the standardized 8-section Phase 2 planning format: unique angle, core questions, democratic significance, scope, source list (15-20 per domain), contact list (5-8 experts with 2025-2026 work), research window, and success criteria.
+
+**Key additions beyond existing outlines**: The contact lists are new research (verified experts with 2025-2026 publications/work); the success criteria are new (not in the May 14 PHASE_2_DOMAINS_38_40_OUTLINES.md or the full documents); the standardized 8-section format enables side-by-side comparison and distribution decision-making.
+
+**Launch sequencing finding**: Domain 39 is the most time-urgent (HHS interim rule June 1, 2026, exempt from notice-and-comment); Domains 38 and 40 can launch concurrently July 1-15, 2026, targeting the EU AI Act Article 50 August 2 enforcement window and the November 3 midterm constraint.
+
+---
+
 ## May 17, 2026 — Session 1113 — Domain G Production: Press Freedom and Epistemic Infrastructure (First-Pass Complete)
 
 **Status**: FIRST-PASS COMPLETE — 7,200 words, 50 citations, production-ready
