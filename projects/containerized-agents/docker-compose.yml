@@ -72,7 +72,7 @@ services:
     volumes:
       - ollama-data:/root/.ollama
     environment:
-      OLLAMA_HOST: "0.0.0.0"
+      OLLAMA_HOST: "${OLLAMA_BIND:-127.0.0.1}"
       OLLAMA_ORIGINS: "*"
       OLLAMA_MAX_LOADED_MODELS: "${OLLAMA_MAX_LOADED_MODELS:-2}"
       OLLAMA_NUM_PARALLEL: "${OLLAMA_NUM_PARALLEL:-1}"
@@ -108,7 +108,7 @@ services:
     networks:
       - agentcore-net
     ports:
-      - "${WEBUI_HOST:-0.0.0.0}:${WEBUI_PORT:-3000}:8080"
+      - "${WEBUI_HOST:-127.0.0.1}:${WEBUI_PORT:-3000}:8080"
     volumes:
       - open-webui-data:/app/backend/data
     environment:
@@ -162,7 +162,7 @@ services:
     networks:
       - agentcore-net
     ports:
-      - "${AGENTCORE_HOST:-0.0.0.0}:${AGENTCORE_PORT:-8080}:8080"
+      - "${AGENTCORE_HOST:-127.0.0.1}:${AGENTCORE_PORT:-8080}:8080"
     volumes:
       - agentcore-data:/app/data
     environment:
@@ -226,7 +226,7 @@ services:
     networks:
       - agentcore-net
     ports:
-      - "${WIZARD_HOST:-0.0.0.0}:${WIZARD_PORT:-8888}:8888"
+      - "${WIZARD_HOST:-127.0.0.1}:${WIZARD_PORT:-8888}:8888"
     volumes:
       - wizard-data:/app/data
       # Bind-mount the agentcore data dir so wizard can write .env and flag files
@@ -237,7 +237,7 @@ services:
       # would grant the wizard container full host escape capability.
     environment:
       WIZARD_PORT: "8888"
-      WIZARD_BIND: "0.0.0.0"
+      WIZARD_BIND: "${WIZARD_BIND_ADDR:-127.0.0.1}"
       OLLAMA_BASE_URL: "http://ollama:11434"
       AGENTCORE_DATA_DIR: "/app/agentcore-data"
       BUNDLE_VERSION: "${BUNDLE_VERSION:-dev}"
@@ -340,7 +340,7 @@ services:
     networks:
       - agentcore-net
     ports:
-      - "80:80"
+      - "${NGINX_HOST:-127.0.0.1}:80:80"
     volumes:
       - ./docker/services/open-webui/nginx/:/etc/nginx/conf.d/:ro
     depends_on:
