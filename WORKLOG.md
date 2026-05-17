@@ -8429,3 +8429,54 @@ Created two tasks:
 
 Waiting for integration work completion before committing orchestration files.
 
+
+## Session 1110 (Orchestrator) — May 17, 2026, 02:31–02:50 UTC — Tier A Updates Integration Complete ✅
+
+**Status**: **SESSION IN PROGRESS — Tier A integration work delegated to resistance-research agent and completed.**
+
+### Task Summary
+
+Spawned resistance-research subagent for Phase 1 Wave 1 Tier A updates integration (Domains 33, 35, 25, 19f).
+
+### Deliverables Completed
+
+**Tier A Updates Integration** (resistance-research agent):
+- `projects/resistance-research/domains/domain-33-state-legislative-autocratization.md` — Updated with "Tier A Update — May 2026" section (Callais cascade, Tennessee consequence, movement contacts)
+- `projects/resistance-research/domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md` — Updated with "Tier A Update — May 2026" section (Watson v. RNC, Trump v. Barbara pending decisions)
+- `projects/resistance-research/domains/domain-25-fisa-702-april-2026-outcome.md` — Updated with "Tier A Update — May 2026" section (June 12 deadline, FISC opinion window, warrant carve-out strategy)
+- `projects/resistance-research/domains/domain-19f-war-powers-reform.md` — Updated with "Tier A Update — May 2026" section (May 13 vote 49-50, ceasefire precedent, advocacy windows)
+
+**Commit**: `15534c25` on master (200 insertions, 5 files, resistance-research WORKLOG.md + 4 domain files)
+
+**Flag for user review**: Domain 19f Tier A section references May 13 vote as 49-50. If there has been a more recent vote after May 13, the section should be updated with new tally before June 7 distribution.
+
+### Next Actions (Phase 1 Wave 1)
+
+1. **User Wave 1 Batch 1 execution** (May 17-18, ~2 hours USER ACTION)
+   - Template pre-fill: Goodman, Weiser, Chenoweth, Bassin, Elias (check recent publications, personalize)
+   - Test send (verify URLs, check placeholders, confirm delivery)
+   - Send to Batch 1 (5 pre-verified contacts)
+
+2. **User review** (May 25-28, ~2 hours USER ACTION)
+   - Review Tier A updates in four domain files
+   - Verify May 13 vote tally (Domain 19f) — check for any May 14-17 votes
+   - Approve for June 7 distribution window
+
+3. **Batches 2-3 send** (May 18-20, ~2 hours USER ACTION, after Batch 1)
+   - 20 additional pre-verified contacts across two batches
+   - Monitor for responses, bounces, scheduling
+
+### Project Status Updates
+
+**resistance-research**:
+- **Phase 1 Wave 1 status**: Ready to execute May 18-20
+- **Tier A updates status**: INTEGRATION COMPLETE ✅
+- **Timeline**: Research completed (May 17 02:31), integration completed (May 17 02:50), user review (May 25-28), distribution window (June 7)
+- **Next autonomous work**: Post-Wave-1 (May 20), Domain E research begins (June 15 target)
+
+**Stock assessment**: Two major deliverables (research + integration) completed in 34 minutes; Tier A updates now ready for user review and distribution pipeline.
+
+### Work Log Entry Complete
+
+End orchestrator session 1110. All autonomous Tier A integration work complete. Waiting for user Wave 1 execution (Batch 1, May 17-18) before proceeding to post-execution review or additional Phase 2 expansion work.
+

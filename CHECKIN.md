@@ -1,6 +1,12 @@
 # Check-in
 
-## Session 1109 (Orchestrator) — May 17, 2026, 02:16–10:00 UTC — Tier A Updates Research Complete ✅
+## Session 1110 (Orchestrator) — May 17, 2026, 02:31–02:50 UTC — Tier A Updates Integration Complete ✅
+
+**Status**: **SESSION COMPLETE — Tier A updates research (Session 1109) + integration (Session 1110) fully complete; Domains 33, 35, 25, 19f ready for user review**
+
+---
+
+## Session 1109 (Orchestrator) — May 17, 2026, 02:16–02:31 UTC — Tier A Updates Research Complete ✅
 
 **Status**: **SESSION COMPLETE — resistance-research Phase 1 Wave 1 Tier A updates research complete; integration pending**
 
