@@ -9729,3 +9729,24 @@ End orchestrator session 1122. Advanced three high-priority projects toward Goal
 
 **Next**: Execute Phase 5 decision-support research and writing
 
+
+### Exploration Queue Work: systems-resilience Phase 5 Decision-Support COMPLETE (Session 1133)
+
+**Deliverable**: `projects/systems-resilience/phase-5-path-decision-framework.md` (296 lines, 24K)
+
+**Contents**:
+- Executive Summary: three Phase 4b paths with core tensions and deadline analysis
+- Decision Matrix: 3 paths × 15 dimensions (time, deadlines, skills, capital, project integration, risk, reversibility)
+- Path A (Agricultural Intensification): 15-22 hrs, June 15 hard deadline, Zone 5 planting window, high capital, irreversible 5+ yr commitment
+- Path B (Knowledge Preservation): 13-19 hrs, no deadline, low capital, reversible, resistance-research synergy
+- Path C (Governance Scaling): 12-17 hrs, July 23 FEMA deadline, civic engagement required, cybersecurity-hardening/resistance-research integration
+- Decision Checklist: 5 questions (land availability, time, civic interest, knowledge infrastructure, Phase 5 ambition)
+- Final Lookup Table: maps user constraints to recommended path + timeline
+
+**Key Finding**: Phase 5 decision hinges on (1) land access + 15 hrs available before June 15 → Agricultural Intensification must be first (annual deadline). (2) No land/no time → Governance Scaling (FEMA positioning) + Knowledge Preservation secondary.
+
+**Business Value**: Enables user to make data-driven Phase 5 path decision by June 1; unblocks rapid June-August execution.
+
+**Committed**: Yes (phase-5-path-decision-framework.md + WORKLOG.md updates)
+
+---
