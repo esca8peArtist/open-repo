@@ -1,12 +1,20 @@
 # Check-in
 
-## Session 1124 (Orchestrator) — May 17, 2026, 07:43–08:45 UTC — Pre-Event Verification (May 18 Wave 1 + May 19 Checkpoint) ✅
+## Session 1124 (Orchestrator) — May 17, 2026, 07:43–~12:30 UTC — Pre-Event Verification + Gap 4 Preparation
 
-**Status**: **All infrastructure for tomorrow's critical events verified production-ready. Stockbot checkpoint ready for May 19 20:00 UTC execution; resistance-research Wave 1 ready for May 18 launch. No blockers. User-action items (2 hours May 18 morning) are preparation tasks, not prerequisites.**
+**Status**: **All infrastructure for tomorrow's critical events verified production-ready. Stockbot checkpoint ready for May 19 20:00 UTC execution; resistance-research Wave 1 ready for May 18 launch. Gap 4 naked-call prevention guardrail specification completed and committed. No blockers. User-action items (2 hours May 18 morning) are preparation tasks, not prerequisites.**
 
 ### Since Last Check-in (Session 1123 → 1124)
 
 **Work Completed**:
+
+0. ✅ **Stockbot Gap 4 (Naked-Call Prevention Guardrail) — Implementation Specification COMPLETE**
+   - **Deliverable**: `gap-4-implementation-plan.md` (413 lines, production-ready specification)
+   - **Scope**: Comprehensive ready-to-execute implementation guide for preventing naked calls (equity SELL when open covered call would become uncovered)
+   - **Contents**: Design overview, 4 implementation tasks (method code, TradingSession integration, database schema, test cases), database query patterns, integration checklist, time breakdown (2h 45min total)
+   - **Activation trigger**: May 19 checkpoint PASS only; staged per exploration queue
+   - **Strategic value**: Eliminates post-checkpoint implementation delays — can proceed immediately to Gap 4 coding if checkpoint passes
+   - **Committed**: `b3ee560` to stockbot submodule
 
 1. ✅ **Stockbot May 19 Checkpoint — Comprehensive Pre-Execution Verification**
    - Checkpoint analysis script: production-ready, 116 regression tests passing
