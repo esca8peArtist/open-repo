@@ -426,7 +426,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: **MAY 19 CHECKPOINT READY (T-41h, May 19 20:00 UTC).** May 16 checkpoint complete: NEAR_MISS scenario, Lever A deployed. Pre-checkpoint verification: PASS — SSH connectivity OK (uptime 33d 5h), Docker healthy, Lever A thresholds confirmed (threshold_multiplier 0.4, confidence_floor 0.45), trading logs clean. AAPL position: 108 shares, +$924 unrealized. **NEXT**: Execute May 19 20:00 UTC checkpoint query; expect AAPL model sells ≥1 if Lever A successful. If 0 sells → STILL_MISS_B2, escalate to Lever B.
+**Current focus**: **MAY 19 CHECKPOINT EXECUTION STAGING COMPLETE** (Session 1116). May 19 checkpoint infrastructure production-ready: `may19_checkpoint_analysis.py` written with 31 regression tests (all pass), `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` covers PASS/STILL_MISS/FAR_MISS scenarios with decision trees and next-action paths. Execution window: May 19 20:00 UTC ±60 min. Ready for user observation or autonomous execution. **NEXT**: May 19 20:00 UTC execute checkpoint query; expect ≥1 AAPL SELL signal if Lever A successful. If 0 sells → STILL_MISS_B2, apply Lever B per playbook.
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`

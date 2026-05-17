@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T02:16:12Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T04:09:22Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.2% | Reset in 46h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.3% | Reset in 44h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088). **[RESOLVED 20 … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 ready to execute starting May 18: Batch 1 (5 pre-verified contacts), all 8 Gists live. Tier A updates INTEGRATED (Domains 33, 35, 25, 19f). Phase 2 research: Domains E+F, 38-40, 56-58, **G COMPLETE** (May 17, 7,200 words, 50 citations, press freedom/epistemic infrastructure). **Next**: Execute Wave 1 (May 18-20, USER ACTION), user review (May 25-28), Phase 2 distribution (June-August).
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **GATE 1 CHECKPOINT READY (May 16 20:00 UTC).** AAPL position: 108 shares, +$924 unrealized. May 14 h+10 exit did not trigger (NEAR_MISS scenario confirmed). Early checkpoint (May 15 04:17 UTC): 33 total fills, 2 round trips, -$2.40 net pnl. Unit tests passing: 3690/3723 (0.89% failure in optional features only, NOT trading path). Checkpoint infrastructure: `MAY_16_CHECKPOINT_PROTOCOL.md` ready with scenario classification and Lever A quick-reference. **NEXT**: Execute May 16 20:00 UTC checkpoin … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **MAY 19 CHECKPOINT READY (T-41h, May 19 20:00 UTC).** May 16 checkpoint complete: NEAR_MISS scenario, Lever A deployed. Pre-checkpoint verification: PASS — SSH connectivity OK (uptime 33d 5h), Docker healthy, Lever A thresholds confirmed (threshold_multiplier 0.4, confidence_floor 0.45), trading logs clean. AAPL position: 108 shares, +$924 unrealized. **NEXT**: Execute May 19 20:00 UTC checkpoint query; expect AAPL model sells ≥1 if Lever A successful. If 0 sells → STILL_MISS_B2, escalate … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -41,11 +41,11 @@
 
 ### open-repo
 **Status**: Active — Phase 4 COMPLETE, **PR #1 open, awaiting review/merge** (Session 486: 2026-04-26)
-**Focus**: **PR #1 OPEN** (2026-04-26) + **PR #2 OPEN for Phase 5 Candidate 3** (2026-05-15 01:35 UTC)
+**Focus**: **PR #1 & #2 MERGE-READY** (both reviewed, no blockers)
 
 ### systems-resilience
 **Status**: Active — **Phase 1 INDIVIDUAL-SCALE COMPLETE + PHASE 2 HOUSEHOLD-SCALE INITIATED** (6 individual domains + household coordination overview). Individual-scale COMPLETE: 01-water.md, 02-food.md, 03-shelter.md, 04-energy.md, 05-healthcare.md, 06-agriculture.md + extreme-weather.md, calendar.md (10.3K words, 33 citations). Household-scale LAUNCHED: 01-household-coordination-overview.md (7,449 words, 38 citations).
-**Focus**: **Phase 2 HOUSEHOLD-SCALE COMPLETE + Optional Foraging Guide COMPLETE** (Sessions 1105-1108). Seven documents delivered: (1) household/01-household-coordination-overview.md, (2) household/02-water-coordination.md, (3) household/03-food-coordination.md, (4) household/04-energy-coordination.md, (5) household/05-healthcare-coordination.md, (6) household/06-community-scale-overview.md, (7) midwest/foraging-species.md (6,800 words, 32 citations, wild edibles for Zone 5, safety/sustainability). **NEXT … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 1-3 COMPLETE + MASTER INTEGRATION COMPLETE** (Sessions 1105-1115). **Phase 2** (Sessions 1105-1108): 7 documents (household coordination × 5 topics, community overview, midwest foraging; 54K+ words, 212+ citations). **Phase 3** (Session 1112): 3 community-scale deep dives complete — (1) emergency-response-infrastructure.md (5,455 words, 17 citations, ICS structure + comms stack + triage + shelter coordination + 3 Midwest scenario plans), (2) infrastructure-interdependency.md (5,054 wo … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -88,8 +88,6 @@
 **Resolution**: [leave blank]
 ---
 
-## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 1088 (20 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
@@ -101,42 +99,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-- Month 1-6: Medical kit ($350–$1,400), herbal garden (10 Zone 5 plants), dental care
-- Year 1+: WFR training, SAD light therapy, preventive medicine, chronic disease management
-- Midwest-specific: Tick disease map, SAD epidemiology, heat acclimatization
-- 31 citations from WMS, CDC, WHO, NEJM, PMC, Hesperian, Illinois DPH, NOLS
+**Tier A Updates Integration** (resistance-research agent):
+- `projects/resistance-research/domains/domain-33-state-legislative-autocratization.md` — Updated with "Tier A Update — May 2026" section (Callais cascade, Tennessee consequence, movement contacts)
+- `projects/resistance-research/domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md` — Updated with "Tier A Update — May 2026" section (Watson v. RNC, Trump v. Barbara pending decisions)
+- `projects/resistance-research/domains/domain-25-fisa-702-april-2026-outcome.md` — Updated with "Tier A Update — May 2026" section (June 12 deadline, FISC opinion window, warrant carve-out strategy)
+- `projects/resistance-research/domains/domain-19f-war-powers-reform.md` — Updated with "Tier A Update — May 2026" section (May 13 vote 49-50, ceasefire precedent, advocacy windows)
 
-**Project status**: systems-resilience Individual-scale documentation is now 5/6 complete (water, food, shelter, healthcare, extreme-weather done). Ready for calendar/energy/education/foraging documents.
+**Commit**: `15534c25` on master (200 insertions, 5 files, resistance-research WORKLOG.md + 4 domain files)
 
----
+**Flag for user review**: Domain 19f Tier A section references May 13 vote as 49-50. If there has been a more recent vote after May 13, the section should be updated with new tally before June 7 distribution.
 
-**Session 1097 complete. Checkpoint executed, Lever A applied, Jetson healthy, healthcare guide delivered.**
+### Next Actions (Phase 1 Wave 1)
 
-## Systems-Resilience — Midwest Annual Calendar Complete
+1. **User Wave 1 Batch 1 execution** (May 17-18, ~2 hours USER ACTION)
+   - Template pre-fill: Goodman, Weiser, Chenoweth, Bassin, Elias (check recent publications, personalize)
+   - Test send (verify URLs, check placeholders, confirm delivery)
+   - Send to Batch 1 (5 pre-verified contacts)
 
-**Project**: systems-resilience
-**Task**: Build midwest/calendar.md (annual activity timing, Midwest Zone 5)
-**Time**: 2026-05-16 22:20–23:25 UTC
-**Status**: ✅ COMPLETE
+2. **User review** (May 25-28, ~2 hours USER ACTION)
+   - Review Tier A updates in four domain files
+   - Verify May 13 vote tally (Domain 19f) — check for any May 14-17 votes
+   - Approve for June 7 distribution window
 
-**Deliverable**: `projects/systems-resilience/midwest/calendar.md` (10.3K words, 816 lines)
+3. **Batches 2-3 send** (May 18-20, ~2 hours USER ACTION, after Batch 1)
+   - 20 additional pre-verified contacts across two batches
+   - Monitor for responses, bounces, scheduling
 
-**Content delivered**:
-- Zone 5 baseline: 160–175 frost-free days, 34–40" precipitation, groundwater seasonal patterns
-- Quick-reference tables: frost dates, seasonal health risks (8 conditions with peak windows), best activity windows (12 outdoor activities)
-- Month-by-month breakdown (January–December): all 5 domains (food, water, energy, healthcare, shelter) + cross-domain intersection notes
-- 52-week printable action grid: week-labeled, priority action checklist
-- Cross-domain intersection summary: 6 recurring annual events mapped across all domains
-- Rural vs. Suburban track comparison: 10-row activity differentiation table
-- 33 citations from USDA, NOAA, USGS, CDC, EPA, NIMH, Old Farmer's Almanac, Powell Gardens, Midwest Air Pros
+### Project Status Updates
 
-**Key insights**:
-- March: spring thaw simultaneously fills cisterns and contaminates surface water
-- May: tornado season peaks during critical corn/bean planting window (highest coordination challenge)
-- October: garlic planting (20-min investment, 6-10x July yield) overlaps with tick tail season, deer rut, flu season opening
-- Lyme/RMSF risk extends May–October (not just spring)
-- SAD onset typically mid-September for Midwest (latitude 41–47°N)
+**resistance-research**:
+- **Phase 1 Wave 1 status**: Ready to execute May 18-20
+- **Tier A updates status**: INTEGRATION COMPLETE ✅
+- **Timeline**: Research completed (May 17 02:31), integration completed (May 17 02:50), user review (May 25-28), distribution window (June 7)
+- **Next autonomous work**: Post-Wave-1 (May 20), Domain E research begins (June 15 target)
 
-**Project impact**: systems-resilience now has 6/6 individual-scale PLUS both Midwest reference docs complete. Cross-domain timing fully mapped. Ready for energy, education, foraging, and scaling to household/community tiers.
+**Stock assessment**: Two major deliverables (research + integration) completed in 34 minutes; Tier A updates now ready for user review and distribution pipeline.
 
----
+### Work Log Entry Complete
+
+End orchestrator session 1110. All autonomous Tier A integration work complete. Waiting for user Wave 1 execution (Batch 1, May 17-18) before proceeding to post-execution review or additional Phase 2 expansion work.
