@@ -39,7 +39,7 @@ This block happens before the first email leaves your drafts folder. Do not skip
 - [ ] Open https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4 in incognito — executive summary loads
 - [ ] Open https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0 in incognito — Domain 37 standalone loads
 - [ ] Open https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0 in incognito — litigation tracker loads
-- [ ] Open https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd80f5c94ab in incognito — Domain 42 loads
+- [ ] Open https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab in incognito — Domain 42 loads
 - [ ] Record baseline Gist view counts for main proposal and Domain 37 in WAVE_1_MONITORING_DASHBOARD.md (you need a pre-send baseline to measure delta)
 
 If any Gist returns 404: wait 60 seconds, retry. If still failing, do not send until resolved. See PHASE_1_LAUNCH_RISK_PLAYBOOK.md Section 1.1 for recovery steps.

@@ -68,6 +68,127 @@ GOOGLE_SHEET_URL=[paste URL here]
 
 ---
 
+## Agent Session — Track B Autonomous Prep Execution — 2026-05-17 (Session 1153)
+
+**Task**: Create 5 standalone autonomous execution guides (no user-action dependency):
+1. Social accounts staging (bio copy, username fallbacks, profile specs)
+2. Buffer/Later scheduling setup (account connection, brand voice, templates)
+3. Analytics infrastructure (Google Sheets + Discord + GA4 consolidated)
+4. Day 1 content production (complete asset manifest, production timeline, risk mitigations)
+5. Email copy final (5 emails, all bodies, Kit build order, merge field instructions)
+
+**Outcome**: All 5 documents created and saved to `projects/seedwarden/execution/`:
+
+1. **TRACK_B_SOCIAL_ACCOUNTS_STAGING.md** (1,200 lines)
+   - Copy-paste ready bio text for Instagram, TikTok, Pinterest
+   - Username fallback chain: `seedwarden` → `seedwarden.co` → `seedwarden.seeds` → `seedwarden_guides`
+   - Character counts verified (all within platform limits)
+   - Cross-platform verification checklist
+   - Confirmation table for handle tracking
+   - Execution time: 40–55 min (account creation) + 10 min (bio link updates after Kit confirmation)
+
+2. **TRACK_B_BUFFER_LATER_SETUP_GUIDE.md** (1,400 lines)
+   - Step-by-step account creation (Buffer or Later)
+   - Platform-specific account connection workflow (Instagram, TikTok, Pinterest)
+   - Brand voice guidelines per platform (tone, audience, visual style)
+   - Day 1 content scheduling: Instagram Reel (9am), TikTok (7am), Pinterest pins (9am/11am/1pm)
+   - All captions and hashtags from source documents, copy-paste ready
+   - Platform distribution matrix (Instagram reach potential, TikTok FYP discovery, Pinterest SEO)
+   - Execution time: 50–60 min (setup + Day 1 scheduling)
+
+3. **TRACK_B_ANALYTICS_EXECUTION_GUIDE.md** (1,600 lines)
+   - **Part 1: Google Sheets** (15–20 min)
+     - 5 tabs: Daily Metrics, Weekly Summary, Monthly Cohort Performance, KPI Summary, Raw Data Log
+     - Date column: 2026-05-30 to 2026-06-30 (32 rows)
+     - Formulas: AOV, 7-day rolling averages, week-over-week % change, KPI status (conditional formatting)
+     - All formulas copy-paste ready, no customization needed
+   - **Part 2: Discord** (10 min)
+     - #analytics-alerts channel creation
+     - Webhook setup (token storage in .env)
+     - Cron jobs: etsy_daily_sync at 06:00 UTC, discord_daily_alert at 20:00 UTC
+     - Test script provided
+   - **Part 3: GA4** (15 min)
+     - 5 custom dimensions (zone_number, guide_category, acquisition_source, buyer_cohort_inferred, email_campaign_id)
+     - 5 custom metrics (Email Signup Rate, Etsy CTR, Product View Depth, Email Open Rate, Social Referral Value)
+     - GA4 event tracking code snippet (copy-paste for Kit landing page)
+     - 4 audience definitions (Forager Signal, Prepper Signal, High-Value Repeat Candidate, Kit Email Engaged)
+   - Verification checklist for all three systems
+   - Daily/weekly monitoring schedule
+   - Total execution time: 40–50 min (all three systems)
+
+4. **TRACK_B_DAY_1_CONTENT_PRODUCTION_EXECUTIVE.md** (1,800 lines)
+   - **Asset inventory**: 1 video (Instagram Reel), 3 JPEG images (Pinterest pins), 1 derivative (TikTok)
+   - **Instagram Reel specs**:
+     - 1080x1920px, 30–45 seconds, MP4 H.264
+     - Script outline with timecodes (hook 0–3s, visuals 3–40s, CTA 40–45s)
+     - Source mockups: survival-garden mockup + phone variant, optional secondary assets
+     - Caption and hashtags (20 total for Reels)
+   - **Pinterest Pin specs** (3 pins, all 1000x1500px, JPEG):
+     - Pin 1: Survival Garden Regional Plans
+     - Pin 2: Hunting & Foraging Field Manual
+     - Pin 3: Small-Scale Livestock Field Manual
+     - Template structure (5 zones: header, product image, title, description, footer)
+     - All text copy, descriptions, hashtags copy-paste ready
+   - **Production timeline**:
+     - Session A (May 27, 45 min): Build 3 Pinterest pins in Canva
+     - Session B (May 28, 60–90 min): Film and edit Instagram Reel
+     - Session C (May 29, 30 min): Schedule posts in Buffer/Later
+   - **Day 1 content calendar**: Posting schedule with times for TikTok (7am), Instagram (9am), Pinterest (9am/11am/1pm)
+   - **Risk mitigations**: 6 risks identified with fallback procedures
+     - Mockup file not found → substitute related product mockup
+     - Instagram Reel scheduler fails → manual native upload
+     - TikTok unavailable → post May 31 (same-day delay OK)
+     - Pinterest text unreadable → increase font size, simplify description
+     - Etsy listings not live → delay Pinterest pins until ready
+     - Kit landing page not confirmed → use Etsy shop URL as fallback
+   - **May 30 morning go/no-go checklist** (14 items, 5 min)
+   - Execution time: 2.5–3.5 hours across May 27–29
+
+5. **TRACK_B_EMAIL_COPY_FINAL.md** (1,500 lines)
+   - All 5 email subjects and bodies (copy-paste ready for Kit)
+   - Email 1 (Day 0): Welcome + Starter Pack PDF download
+   - Email 2 (Day 2): Heirloom vs. Hybrid vs. GMO education
+   - Email 3 (Day 5): Seed-saving story + Etsy shop link
+   - Email 4 (Day 7): Business model explanation + 4 guide recommendations
+   - Email 5 (Day 10): Conversion offer (SEEDWARDEN15 coupon, 15% off, 5-day window)
+   - Character counts verified (all emails < 2KB, no truncation risk)
+   - Kit merge field syntax: `{SUBSCRIBER_FIRST_NAME}`
+   - Send timing: Immediate, +2d, +3d, +2d, +3d
+   - Kit build order (step-by-step)
+   - Testing & QA checklist
+   - Monitoring plan (daily: delivery/opens, weekly: engagement metrics)
+   - Execution time: 30–45 min (Kit build)
+
+**All documents consolidated from source materials**:
+- TRACK_B_SOCIAL_ACCOUNT_CHECKLIST.md (platform-specific account setup)
+- TRACK_B_FINAL_EXECUTION_GUIDE.md (master timeline)
+- TRACK_B_ANALYTICS_SETUP_GOOGLE_SHEETS.md (Sheets template spec)
+- TRACK_B_ANALYTICS_SETUP_DISCORD_AND_GA4.md (Discord + GA4 configuration)
+- TRACK_B_DAY_1_CONTENT_PRODUCTION_STAGING.md (detailed production steps)
+- TRACK_B_EMAIL_STAGING.md (email bodies + character counts)
+
+**Quality assurance completed**:
+- All bio copy cross-verified against TRACK_B_SOCIAL_ACCOUNT_CHECKLIST.md character limits
+- All captions and hashtags verified against TRACK_B_DAY_1_CONTENT_PRODUCTION_STAGING.md
+- All email subjects/bodies verified against TRACK_B_EMAIL_STAGING.md
+- All formulas tested for syntax (Google Sheets)
+- All links and file paths verified as absolute paths
+- All copy-paste blocks formatted for immediate use (no editing required)
+
+**Impact**: User May 27–30 execution simplified to: (1) open one of these 5 files, (2) follow
+numbered steps, (3) paste copy where indicated. No hunting through parent documents needed.
+Estimated user execution time: 6–8 hours across May 27–30 (vs. 10–12 hours without staging).
+
+**Pending after these documents are complete**:
+- User execution on all social account creation (May 27–29)
+- User execution on all analytics setup (by May 25)
+- User production of Instagram Reel (May 28)
+- User Kit automation build (May 27–28)
+- User Buffer/Later scheduling (May 29–30)
+- User May 30 morning go/no-go verification (5 min)
+
+---
+
 ## Agent Session — Track B Autonomous Prep Scope Review — 2026-05-17
 
 **Task**: Execute Track B autonomous preparation: social account creation, Buffer/Later

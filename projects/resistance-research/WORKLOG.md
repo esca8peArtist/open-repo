@@ -4379,3 +4379,62 @@ One recommended last-minute update: the guide's "Government response indicators"
 
 - `/projects/resistance-research/monitoring/2026-04-28-results.md` — added monitoring protocol, four new developments section, updated sources
 - `/projects/resistance-research/litigation-tracker-2026.md` — added April 26 monitoring pass section with Boasberg DC Circuit ruling, ICE arrest data, updated deadline table
+
+---
+
+## May 17, 2026 — Orchestrator Session 1151 — Wave 1 Preflight Verification + Contingency Playbook
+
+**Session type**: Pre-execution verification + contingency planning
+**Date**: May 17, 2026 (17 hours before May 18 06:00 UTC Wave 1 execution window)
+**Files created**: `CONTINGENCY_ACTIVATION_PLAYBOOK.md` (new)
+**Files read**: `WAVE_1_PREFLIGHT_AND_PATH_DECISION.md`, `PHASE_1_POST_WAVE1_CONTINGENCY.md`
+
+---
+
+### Task 1 — Preflight Verification (WAVE_1_PREFLIGHT_AND_PATH_DECISION.md)
+
+Reviewed the full preflight document against infrastructure status as of May 17 10:00 UTC.
+
+**Findings — all systems verified production-ready. No blockers.**
+
+| Component | Status | Notes |
+|-----------|--------|-------|
+| 8 Gists | VERIFIED LIVE | All domains published, public, linkable as of May 17 10:00 UTC |
+| Batch 1 contacts (5) | VERIFIED | Goodman, Weiser, Chenoweth, Bassin, Elias — verified May 14 via BATCH_1_CONTACT_VERIFICATION.md |
+| Tier 1 contact list (25) | CURRENT | Verified May 5; expected bounce rate <5% |
+| Email templates | PRODUCTION-READY | 4 sector variants (law schools, think tanks, policy, AGs) + 3 Domain 37 variants |
+| Substack infrastructure | READY | 4 posts pre-written in published/substack-posts/ |
+| Election org contacts (12) | VERIFIED | Domain 37 hybrid contacts current |
+| Domain 37 research | PRODUCTION-READY | 8,850 words, 50 sources, litigation windows analyzed |
+| Tier 2 contacts (45+) | IDENTIFIED | Ready for May 21–28 wave |
+
+**One operational note flagged**: The preflight checklist instructs verifying all 8 Gist URLs by clicking them in the Hour 1–2 block (07:00–08:00 UTC May 18) before sending any emails. This is the live confirmation step; the May 17 verification establishes baseline, but a pre-send click-through takes 5 minutes and eliminates the risk of sending emails that reference a Gist that went down overnight. Recommend keeping this step in execution.
+
+**Path decision status**: Path A+37 Hybrid is the recommended and pre-selected path. No infrastructure blockers to any path. Decision is the user's call by 06:00 UTC May 18.
+
+### Task 2 — Contingency Activation Playbook (CONTINGENCY_ACTIVATION_PLAYBOOK.md)
+
+Created a 500–800 word executable contingency playbook condensing PHASE_1_POST_WAVE1_CONTINGENCY.md (all 8 sections) into a format the user can work from directly during May 18–21 if Wave 1 underperforms.
+
+**What the playbook covers**:
+
+- When to activate: specific threshold table distinguishing delivery failure (May 18 12:00 check), low engagement (A2 triggers), zero engagement with confirmed delivery (A3), and full underperformance requiring user decision (A4)
+- Gate 1 (May 18 12:00 UTC): delivery-only check, pre-selection of most likely variant, bookmarking
+- Gate 2 (May 21 10:00 UTC): 72h final assessment, variant selection table, activation authority
+- Step-by-step activation for all 5 variants:
+  - A1 (delivery failure — expanded pool, alternate addresses, 2h to execute)
+  - A2 (low engagement — narrowed single-hook retarget, 90 min to execute, Tier 2 proceeds in parallel)
+  - A3 (zero engagement confirmed delivery — parallel Tier 2 + Tier 3, SSRN submission, 3-4h Day 1)
+  - A4 (full underperformance — PATH B pivot, requires user decision, relaunch no earlier than June 4)
+  - B1 (Domain 37 track zero return — revert to pure Path A, 30 min, archive templates for August window)
+  - B2 (Domain 37 technical issue — diagnose and resend, 1-2h)
+  - B3 (Domain 37 clicks but no replies — repurpose assets for Tier 2 law school + state AG track, 75 min)
+- Quick reference card for Gate 1 and Gate 2 decisions
+- Explicit note: only A4 requires user decision; A1/A2/A3/B1/B2/B3 are within execution authority
+
+**Confidence in contingency plan**: 92% (per source document's own assessment). Single remaining gap: if all 42 secondary contacts also produce zero engagement, a full diagnostic reset is required per PHASE_1_CONTINGENCY_STRATEGY.md Section 10 — this scenario is outside the playbook's scope.
+
+### Files Created/Modified
+
+- `/projects/resistance-research/CONTINGENCY_ACTIVATION_PLAYBOOK.md` — CREATED
+- `/projects/resistance-research/WORKLOG.md` — UPDATED (this entry)

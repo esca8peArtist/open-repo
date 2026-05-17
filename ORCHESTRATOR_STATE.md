@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T10:38:19Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T14:13:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.7% | Reset in 37h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.0% | Reset in 34h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 execution ready May 18: Batch 1 (5 pre-verified contacts verified, all 8 Gists live, email templates ready). User-action items (2 hours May 18 morning): Gist pre-flight, contact spot-check, identity fill-in, path selection, send. Tier A research COMPLETE (Domains 33, 35, 25, 19f); integration into base files scheduled May 18-28. **Phase 2 research: DOMAINS 57, 59, 58 PRODUCTION-READY** (Session 1123): ` … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid.** Wave 1 execution materials READY: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md + 8 Gists live + email templates + Tier 1 contacts verified (all as of May 17). **CONTINGENCY ACTIVATION PLAYBOOK COMPLETE** (Session 1151): CONTINGENCY_ACTIVATION_PLAYBOOK.md executable 2-gate decision framework + 5 variants (A1–A4, B1–B3) — all activatable within 2 hours if Wave 1 underperforms. **NEXT**: May 18 06:00 UTC — user executes Wave 1 checklist (06:00-10:00 UTC … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,11 +32,11 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **MAY 19 CHECKPOINT EXECUTION READY** (Session 1123). Checkpoint infrastructure verified production-ready: `may19_checkpoint_analysis.py` with 52 regression tests (all pass), `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` covers PASS/STILL_MISS/FAR_MISS scenarios. Execution window: May 19 20:00 UTC ±60 min. Two AAPL sessions (lgbm_ho + ridge_wf) running on Jetson, healthy, Lever A parameters live (tm=0.40, cf=0.45). **Security fix**: docker-compose.jetson.yml BIND_HOST changed from 0.0.0.0 to 127.0. … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 19 checkpoint execution infrastructure VERIFIED READY (95% confidence)** (Session 1149: comprehensive Jetson health audit + Docker container validation + Lever A parameter confirmation + network/API/webhook testing). 2 AAPL sessions lgbm_ho + ridge_wf healthy on Jetson, Lever A parameters live tm=0.40 cf=0.45, 131 GB disk free, zero ERROR/CRITICAL logs in 72h. Infrastructure deliverable: PRE_CHECKPOINT_VALIDATION_MAY19.md. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (PASS/MISS scenar … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **Track B user gates documentation COMPLETE — ready for execution May 15–28.** Single-document checklist: `TRACK_B_USER_GATES.md` — all 3 gates with checkbox steps, May 30 launch day sequence, and post-launch schedule. User can execute all 3 gates in one 60–90 min session (Gates 1–2 together May 15–18; Gate 3 alone May 27–28). May 29 evening: 5-question go/no-go check. May 30: launch. Agent work is complete — no further preparation needed before May 30. Track A has 2 open blocker … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[AUTONOMOUS PREP COMPLETE] Track B gates ready for execution May 18–28.** Session 1152 prep work (May 17): 4 autonomous docs created — `TRACK_B_EMAIL_STAGING.md` (5 emails staged, copy-paste ready), `TRACK_B_ANALYTICS_SETUP_GOOGLE_SHEETS.md` + `TRACK_B_ANALYTICS_SETUP_DISCORD_AND_GA4.md` (complete setup guides), `TRACK_B_DAY_1_CONTENT_PRODUCTION_CHECKLIST.md` (specs + mockup export list). No pending user decisions on critical path (Canva Pro deferred to Gate 2 workaround, Kit Creator free  … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -45,7 +45,7 @@
 
 ### systems-resilience
 **Status**: Active — **Phase 1 INDIVIDUAL-SCALE COMPLETE + PHASE 2 HOUSEHOLD-SCALE INITIATED** (6 individual domains + household coordination overview). Individual-scale COMPLETE: 01-water.md, 02-food.md, 03-shelter.md, 04-energy.md, 05-healthcare.md, 06-agriculture.md + extreme-weather.md, calendar.md (10.3K words, 33 citations). Household-scale LAUNCHED: 01-household-coordination-overview.md (7,449 words, 38 citations).
-**Focus**: **Phase 1-4a COMPLETE** (Sessions 1105-1118). Phase 4a Technology Repair complete: `04-technology-repair-community-infrastructure.md` (7,133 words, 20 citations) + `04-technology-repair-equipment-protocols.md` (8,864 words, 20 citations). **Phase 4b OPTIONS ANALYSIS COMPLETE** (Session 1122): `phase-4b-options-comparison.md` (4,702 words, 274 lines) provides detailed user-decision support document comparing three options with irreversibility analysis: (1) **Agricultural Intensification** (15-22  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 4b options COMPLETE** (phase-4b-options-comparison.md: 3 paths with timeline/capital/risk — Agricultural Intensification 15-22 hrs, Knowledge Preservation 13-19 hrs, Governance Scaling 12-17 hrs). **DECISION GATE: June 1** — user chooses Phase 5 path. **NEXT**: User decision by June 1; June execution if selected. Single or dual option (Ag+Governance) achievable by Aug 15 if started June 1.
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -88,10 +88,6 @@
 **Resolution**: [leave blank]
 ---
 
-## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 1123 (15 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: stockbot — focus references Session 1123 (15 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: systems-resilience — focus references Session 1122 (16 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
@@ -103,42 +99,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-    * Manual testing steps (5-part verification procedure)
-    * Security analysis (isolation properties, threat model, hardening options)
-    * Full implementation checklist (Phase 1: 4-6 hours, Phase 2: 3-5 hours optional)
-    * Failure recovery procedures
-    * FAQ with GPU/Podman/monitoring considerations
-  - Design decisions explained: why asyncio + Docker vs. Kubernetes/Ray/Managed Agents
-  - Timeline estimate: Phase 1 (4-6 hours), Phase 2 optional (3-5 hours)
-  - Success criteria documented
-  - Status: PRODUCTION-READY, zero blockers, ready for Phase 1 implementation (optional, not critical path)
-  - Commit: 0a227a44
 
-**Project Status Summary** (unchanged from Session 1135):
-- stockbot: May 19 checkpoint infrastructure VERIFIED READY (zero blockers)
-- resistance-research: Wave 1 pre-flight materials complete; awaiting user path decision
-- cybersecurity-hardening: Phase 1 paused (user restart required)
-- mfg-farm: Test print blocked (user action)
-- seedwarden: Track B user gates (May 15-28, in progress)
+**Ready-to-execute autonomous work** (no decision dependency):
+- Gate 1 social accounts (Instagram, TikTok, Pinterest): 45-60 min
+- Buffer/Later scheduling setup: 20 min
+- Analytics infrastructure (Google Sheets, Discord, GA4): 60-90 min
+- Day 1 content production (using existing mockup images): 2-3 hours
+- Email copy pre-staging + Email 5 date fix: 30 min
 
-**Critical User Actions Needed**:
-1. **May 18 06:00 UTC** (CRITICAL): Decide distribution path (A / A+37 / B) for resistance-research
-2. **May 18 06:00-10:00 UTC** (CRITICAL): Execute Wave 1 per chosen path using WAVE_1_PREFLIGHT_AND_PATH_DECISION.md checklists
-3. **May 19 20:00 UTC** (CRITICAL): Execute stockbot checkpoint query per MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md
+**Deliverable**: `projects/seedwarden/TRACK_B_EXECUTION_READINESS_PLAN.md` (14,942 bytes)
+- Critical path unchanged (Gate 2 Brand Kit → zone-cards → Gate 3 → launch)
+- Total user time May 17-30: 18-24 hours distributed across 13 days
+- No decision-dependency delays; execution can begin immediately
 
-**Suggested Next Session Tasks**:
-1. If May 18-19 execution successful: Monitor Wave 1 responses; prepare for Tier 2 Phase 1 (week 2)
-2. If stockbot checkpoint PASSES (May 19): Begin Gap 4 implementation using gap-4-implementation-plan.md
-3. If idle time before May 19: Optional containerized-agents Phase 1 implementation (4-6 hours)
+**Status**: ~6-7 hours of autonomous prep work available now. Zone-card production is gating dependency for all Gate 3 work; must begin May 24 (same day Brand Kit completes).
 
-**Usage**: 5.6% all-models (healthy, well below 80% threshold)
+---
 
-**Session Metrics**:
-- Work type: Exploration queue execution (2 items)
-- Deliverables: 2 comprehensive production-ready specifications (1,072 lines, 56K combined)
-- Commits: 2 (resistance-research + containerized-agents)
-- Files created: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md + OPTION_A_IMPLEMENTATION_SPEC.md
-- Reversibility: All work is documentation + specification; no code changes to live systems
-- Confidence: HIGH — all infrastructure verified, user has complete materials for critical execution windows
+### Time Spent
 
-**Next Checkpoint**: May 18 morning (Wave 1 execution window) + May 19 20:00 UTC (stockbot checkpoint)
+- Orientation + project status analysis: 10 min
+- Parallel agent spawn + monitoring: 15 min
+- CHECKIN + WORKLOG updates: 10 min
+- **Total**: 35 min (two subagents completed 45+ min autonomously in parallel)
+
+### Next Session
+
+**Immediate Triggers** (next 24 hours):
+- **May 18 06:00 UTC** — resistance-research Wave 1 execution begins (user action, no orchestrator work)
+- **May 18 12:00 UTC** — apply contingency decision tree if Wave 1 metrics warrant (orchestrator monitoring)
+
+**May 19 20:00 UTC** (55 hours from now):
+- Stockbot checkpoint execution (user action, orchestrator analysis)
+
+**Available Exploration Work** (if idle before May 18):
+- Seedwarden: Begin Gate 1 account setup (social accounts, 45-60 min) — fully independent, ready now
+- Seedwarden: Analytics infrastructure setup (GA4, Sheets, Discord, 60-90 min) — fully independent, ready now
+- Stockbot: Final infrastructure health check (optional, 30 min) — checkpoint already verified ready
+
+**Status**: All critical systems ready. Two contingency playbooks staged. May 18-19 execution window prepared.
