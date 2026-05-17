@@ -617,3 +617,45 @@ Sources:
 *Section 8.6 added: May 17, 2026 (Session 1160)*
 *Purpose: Documents Callais cascade expansion (May 6-17, 2026) — seven states, SCOTUS shadow docket operationalization mid-primary, Allen v. Milligan functional overrule, Virginia nullification precedent.*
 *Status: Production-ready for Wave 1 distribution May 18 06:00 UTC.*
+
+---
+
+### 8.7 May 17-18 Update: Alabama Split-Primary, South Carolina Vote, FISA June 12 Deadline
+
+**Added**: May 17, 2026
+
+#### Alabama Split Primary — Operational Mechanics (May 19)
+
+Alabama's May 19 primary proceeds under the 2023 map previously struck down as a VRA violation — the map SCOTUS green-lit via shadow docket order May 11. The mechanism is unusual and deserves precise documentation:
+
+**Tabulated-but-void votes**: Voters in Congressional Districts 1, 2, 6, and 7 (Mobile, Baldwin, Jefferson, and Tuscaloosa-area districts) will cast ballots on May 19, but those votes will be **tabulated and made public while being void for purposes of determining the party nominee**. A special primary election is scheduled for **August 11, 2026** for those four districts. Voters in affected districts must return on August 11 to have their congressional vote count. Alabama Secretary of State Wes Allen characterized this as a "historic win for Alabama voters." The characterization inverts the underlying situation: the May 19 votes are advisory only because SCOTUS vacated the court order requiring a second majority-Black district. The August 11 election — five weeks before the NVRA 90-day quiet period begins August 7 — creates compressed timeline for voter registration, mobilization, and litigation.
+
+**Resistance note**: Voters in affected Alabama districts who cast congressional ballots May 19 in good faith may not understand their vote is non-binding. Voter education about the August 11 requirement is now a concrete mobilization task.
+
+Sources: [Alabama splits U.S. House primaries — NPR (May 12, 2026)](https://www.npr.org/2026/05/12/nx-s1-5819600/alabama-congressional-redistricting-special-election); [SCOTUS greenlights Alabama plan — Democracy Docket](https://www.democracydocket.com/news-alerts/scotus-greenlights-11th-hour-alabama-redistricting-plan-for-2026-election/)
+
+#### South Carolina — House Vote Scheduled May 18
+
+Governor McMaster's special session produced the following procedural status as of May 17:
+
+- The South Carolina House reviewed redistricting bill H. 5683 May 15-16
+- The full House vote is scheduled for **May 18 at 11:00 a.m. ET**
+- The bill targets Rep. James Clyburn's majority-Black District 6 — the lone Democratic-held congressional seat in South Carolina
+- If the House passes it, the bill moves to the Senate; if enacted, the June 9 primary would be delayed to **August 11**
+- **Resistance note**: Five Republican senators previously voted against extending the regular session. Whether those same senators hold in the special session will determine whether South Carolina redistricting completes before the Wave 1 distribution window closes
+
+Sources: [South Carolina Senate rejects redistricting effort — NBC News](https://www.nbcnews.com/politics/2026-election/south-carolina-state-senate-rejects-effort-tackle-redistricting-pressu-rcna344815); [SC House returns for special session — WISTV](https://www.wistv.com/2026/05/15/live-sc-house-returns-after-special-session-called-redistricting/); [McMaster calls special session — The Hill](https://thehill.com/homenews/state-watch/5879222-republican-redistricting-south-carolina/)
+
+#### FISA Section 702 — June 12 Deadline, Senate Still Deadlocked
+
+The 45-day extension of FISA Section 702 that Congress passed April 30, 2026 expires **June 12, 2026**. Congress returned from recess May 11-12. The Senate has not advanced a long-term reauthorization because the House-passed 3-year extension (235-191, no warrant requirement) included a provision banning a Central Bank Digital Currency — a poison pill that drew opposition from both Republican and Democratic senators. The CBDC ban is unrelated to surveillance law; it was attached to the FISA bill by House hardliners as a condition of their vote.
+
+**Status for Domain 1**: Section 7.4 documented the 45-day extension as "Scenario 1 realized" (June 12 new expiration). The Senate deadlock makes Scenario 2 (3-year no-warrant extension) more likely than previously assessed, because the reform window (Scenario 4, warrant amendment) has not attracted sufficient votes and the national security pressure for a quick resolution before the June 12 deadline will favor the intelligence community's preferred clean reauthorization. If the Senate strips the CBDC language and passes the House 3-year extension without a warrant requirement, Section 702 backdoor search authority would extend to approximately 2029 with no U.S. person protection — locking in the surveillance risk for election organizers for the duration of the 2026-2028 election cycle.
+
+Sources: [Congress clears short-term FISA extension — Roll Call (April 30, 2026)](https://rollcall.com/2026/04/30/congress-clears-short-term-fisa-extension/); [House passes FISA reauthorization, Senate roadblock awaits — Axios](https://www.axios.com/2026/04/29/house-passes-fisa-intelligence-bill-senate-opposition); [Surveillance reform hinges on how Congress defines "query" — The American Prospect (May 11, 2026)](https://prospect.org/2026/05/11/government-surveillance-spying-fisa-nsa-fbi-republicans/)
+
+---
+
+*Section 8.7 added: May 17, 2026 (domain-updates-may17-18.md integration)*
+*Key additions: Alabama split-primary mechanics (May 19 votes void for Districts 1, 2, 6, 7; August 11 special election); South Carolina H. 5683 House vote scheduled May 18; FISA June 12 deadline with Senate deadlock analysis.*
+*Status: Production-ready for Wave 1 distribution May 18 06:00 UTC.*

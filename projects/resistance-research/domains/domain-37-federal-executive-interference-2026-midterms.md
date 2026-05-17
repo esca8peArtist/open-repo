@@ -477,6 +477,8 @@ The Republican congressional leadership is moving the second FY2026 reconciliati
 
 Sources: [Roll Call: Reconciliation Bill Text Would Fund ICE, CBP, Ballroom Security (May 5, 2026)](https://rollcall.com/2026/05/05/reconciliation-bill-text-would-fund-ice-cbp-ballroom-security/); [The Hill: House Passes Budget Blueprint for Reconciliation 2.0](https://thehill.com/homenews/5856068-budget-blueprint-reconciliation-dhs-farm-bill/); [CBO: Reconciliation Legislation Senate Committees Text (May 4, 2026)](https://www.cbo.gov/publication/62413); [Senate Releases $72 Billion Reconciliation Package — American Action Forum](https://www.americanactionforum.org/insight/senate-releases-72-billion-reconciliation-package/)
 
+**May 17-18 Update — markup confirmed, timeline on track**: Senate Judiciary and Homeland Security committee markups are scheduled the week of May 19, 2026. House committee markups are on the same timeline. Senate floor passage target remains June 1, 2026. The confirmation of the markup schedule indicates the June 1 target is on track rather than slipping. *[Updated May 17, 2026]*
+
 ### IX.3 Callais Redistricting Impact on Domain 37 Midterm Analysis
 
 The *Callais* redistricting cascade (fully documented in Domain 1 Section 8) changes the Domain 37 midterm interference calculus in a material way that this domain did not anticipate:
