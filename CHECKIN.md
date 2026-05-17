@@ -1,3 +1,64 @@
+## Session 1140 (Orchestrator) — May 17, 2026 11:05–11:45 UTC — Exploration Queue: Post-Wave-1 Synthesis Framework
+
+**Status**: **High-value autonomous work staged for May 20-28 execution. All critical May 18-19 infrastructure verified ready. All projects in holding pattern pending user decisions/checkpoint outcome.**
+
+### What Was Accomplished
+
+1. **Exploration Queue: Post-Wave-1 Impact Synthesis & Tier 2 Transition Framework** ✅
+   - **Created**: projects/resistance-research/POST_WAVE_1_SYNTHESIS_AND_TIER2_TRANSITION.md (386 lines, 10.5K words)
+   - **Purpose**: Operational framework for May 20-28 post-distribution analysis phase
+   - **5 Execution Phases**:
+     1. Data aggregation (normalize engagement scores from monitoring dashboard)
+     2. Sector-level trend analysis (reply rates, patterns, unexpected signals)
+     3. Tier 2 candidate identification (automated scoring + escalation decisions)
+     4. Go/No-Go decision framework (objective criteria for proceeding)
+     5. Tier 2 wave planning (contact prioritization + customized messaging)
+   - **Deliverables**: 9 documents/spreadsheets for Wave 1 impact assessment and Tier 2 readiness
+   - **Time estimate**: 4-6 hours across May 20-28 (compressible to 4 hours daily)
+   - **Business value**: Enables user to transition Wave 1 execution → impact assessment → Tier 2 launch without external planning delays. Reduces decision-making load through automated scoring and objective thresholds.
+   - **Commit**: b80e6f3b
+
+### Critical Timeline (Next 48 Hours)
+
+| Time | Event | Status |
+|------|-------|--------|
+| **May 18 06:00 UTC** (19h) | resistance-research path decision deadline | Awaiting user decision (A / A+37 / B) |
+| **May 18 morning** (19-23h) | Wave 1 execution window | Ready (checklists + templates verified) |
+| **May 19 20:00 UTC** (33h) | stockbot checkpoint | Ready (playbooks verified + infrastructure tested) |
+| **May 20-28** | Post-Wave-1 analysis | Framework now staged and production-ready |
+
+### In Progress
+
+- **May 18 06:00 UTC decision**: Path decision for resistance-research Wave 1
+- **May 19 20:00 UTC checkpoint**: Gate 1 outcome determination
+- **May 20 start**: Wave 1 response tracking + engagement scoring (infrastructure ready)
+
+### Items Needing Your Input
+
+1. **By May 18 06:00 UTC** (CRITICAL): Path decision for resistance-research Wave 1
+   - Review: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md (15 min)
+   - Decide: A (immediate 34-domain distribution) / A+37 (hybrid + election focus) / B (defer 3 weeks)
+   - **Recommendation**: Path A+37 captures both institutional reach and May 30 DOJ window
+
+2. **May 18 morning**: Execute Wave 1 if path approved
+   - Gist pre-flight (5 min) + Contact spot-check (5 min) + Identity fill-in (30 min) + Send (30 min)
+   - **Total**: 1-2 hours execution
+
+3. **May 19 20:00 UTC**: Execute stockbot checkpoint
+   - Run: `cd projects/stockbot && uv run python scripts/may19_checkpoint_analysis.py`
+   - Interpret: PASS / NEAR_MISS / FAR_MISS_C1 / FAR_MISS_C2 per playbook
+
+4. **May 20-28**: Wave 1 analysis phase (new framework now ready)
+   - Execute Phase 1-5 of POST_WAVE_1_SYNTHESIS framework at your pace
+
+### Staged for Post-May-19
+
+- **If stockbot PASSES**: Begin Gap 4 implementation
+- **Regardless**: mfg-farm checklist updates, Phase 2 planning, seedwarden Phase 4 roadmap
+- **If Wave 1 successful**: Begin Tier 2 Wave 1 May 25-26 (using new Tier 2 prioritization framework)
+
+---
+
 ## Session 1139 (Orchestrator) — May 17, 2026 11:30–12:20 UTC — mfg-farm Launch Readiness Validation + Critical Event Prep
 
 **Status**: **Exploration queue work complete. Both critical May 18-19 events infrastructure verified ready. All systems holding pattern pending user decisions/checkpoint outcome.**
