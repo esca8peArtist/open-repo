@@ -1,3 +1,54 @@
+## Session 1145 (Orchestrator) — May 17, 2026 11:55 UTC–12:45 UTC — Security Audit + Exploration Queue Refresh
+
+**Status**: **CRITICAL SECURITY FIX COMPLETE. Three 0.0.0.0 binding violations closed (CLAUDE.md compliance) + memory limits added to all containerized-agents services. Exploration queue refreshed with 3 executable items. All projects remain blocked on May 18-19 events; preparation work advanced.**
+
+### What Was Done
+
+1. **Critical Security Audit & Fixes** ✅
+   - **Issue Identified**: Session 1134 flagged critical security violations in `projects/containerized-agents/`:
+     - 3× services bound to `0.0.0.0` (WEBUI_HOST, AGENTCORE_HOST, WIZARD_HOST) — violates CLAUDE.md absolute prohibition
+     - Missing memory limits on all 8 containers (resource exhaustion risk)
+   - **Fixes Applied**:
+     - `.env.template`: Changed all 3× `HOST=0.0.0.0` → `HOST=127.0.0.1` + added documentation
+     - `docker-compose.yml`: Added `deploy.resources.limits.memory` + `deploy.resources.reservations.memory` to all services
+     - Memory limits: ollama 4G, open-webui 2G, agentcore 4G, wizard 1G, postgres 2G, redis 1G, nginx 512M, chromadb 2G
+   - **Deliverable**: `SECURITY_AUDIT_FIX.md` (1,500+ words) — comprehensive audit report with verification, compliance checklist, future enhancements
+   - **Commit**: cbd1ab83 — "fix(containerized-agents): critical security fixes"
+   - **Business Value**: Closes critical CLAUDE.md violation + eliminates host OOM risk; system production-hardened
+
+2. **Exploration Queue Refresh & Item Addition** ✅
+   - **Assessment**: Verified all projects blocked on external events (May 18 path decision, May 19 checkpoint)
+   - **Action**: Per protocol (if <3 active items, add 2-3), added 3 new items:
+     - ✅ docker-compose security fixes (COMPLETE)
+     - stockbot: Pre-Checkpoint Jetson Infrastructure Validation (2-3 hrs, staged until May 19-15 hours)
+     - resistance-research: Phase 1 Post-Wave-1 Contingency Path Analysis (2-3 hrs, staged for May 18 results)
+
+### Current Project Status
+
+**Unchanged from Session 1143**:
+- ✋ **resistance-research**: Awaiting user path decision (May 18 06:00 UTC, in ~18 hours)
+- ✋ **stockbot**: Awaiting checkpoint execution (May 19 20:00 UTC, in ~57 hours)
+- ✋ **cybersecurity-hardening**: Awaiting user Windows restart (Phase 1 mid-execution)
+- ✋ **mfg-farm**: Awaiting test print evaluation
+- ✋ **seedwarden**: Awaiting user plan decisions (Canva Pro + Kit Creator upgrade gates)
+
+**No additional autonomous work available until May 18-19 events complete.**
+
+### Exploration Items Status
+
+**Available for Next Session**:
+1. ✅ **docker-compose security fixes** — COMPLETE (this session)
+2. **stockbot: Pre-Checkpoint Jetson Infrastructure Validation** — Ready to start; most valuable 2-4 hours before May 19 checkpoint
+3. **resistance-research: Post-Wave-1 Contingency Analysis** — Ready to start after May 18 10:00 UTC (Wave 1 completion)
+
+### Usage & Health Check
+
+- **Token Budget**: Healthy (usage check: OK, no throttling)
+- **Session Time**: ~50 min elapsed (70% security fixes + audit doc, 30% exploration queue management)
+- **Critical Files Status**: All orchestration files current (PROJECTS.md, WORKLOG.md, BLOCKE.md committed)
+
+---
+
 ## Session 1143 (Orchestrator) — May 17, 2026 12:45–14:15 UTC — Exploration Queue Refresh + Phase 3 Community Research
 
 **Status**: **Exploration queue refreshed with 3 new items (May 18-19 window); Phase 3 community-scale research outline ready for production. All projects blocked on May 18-19 events — preparation work complete.**
