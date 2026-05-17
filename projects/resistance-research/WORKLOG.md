@@ -2,6 +2,23 @@
 
 ---
 
+## May 17, 2026 22:00 UTC — Breaking Developments Scan (Wave 1 Pre-Execution Currency Check)
+
+**Status**: COMPLETE
+**File**: `projects/resistance-research/domain-updates-may17-18.md`
+**Scope**: May 17-18 breaking developments scan across Domains 37, 1, 57, 58 — pre-Wave-1 currency verification
+
+**Key findings**:
+
+- **Domain 1 (Voting Rights)**: MATERIAL UPDATE REQUIRED. *Louisiana v. Callais* (SCOTUS, April 29, 2026) 6-3 gutted Section 2 VRA. Florida enacted gerrymander within 1 hour of ruling; Louisiana May 16 elections suspended; Alabama primaries delayed to August. Most significant VRA rollback since *Shelby County* (2013). Must be integrated before distribution.
+- **Domain 37 (Federal Executive Interference)**: UPDATES REQUIRED. DOJ voter roll litigation: 5 dismissals (CA, MI, OR, MA, AZ), DOJ appealing, emergency motions explicitly threatening midterm legitimacy. CISA election security gutted (1/3 workforce cut, programs halted). ICE at polls: threat active but not yet executed; 8+ state preemptive bills. 53+ election deniers running for statewide office in 24 states.
+- **Domain 57 (Multilateral Withdrawal)**: STATUS UPDATE. Hungary ICC withdrawal effective June 2, 2026 (16 days away at time of scan). Sahel states announced withdrawal Sept 2025 but have not formally notified UN — still legally bound to cooperate. Two rounds US sanctions on ICC judges/prosecutors since June 2025.
+- **Domain 58 (Tribal Sovereignty)**: POSITIVE UPDATE. Montana SB 490 enjoined May 11, 2026 — Native voter registration hours protected. BIA workforce down 13% overall (27% at Office of Assistant Secretary level per GAO-26-108673). SB 276 voter ID expansion upheld (mixed: tribal IDs accepted but documentary burden increased).
+
+**Summary**: 3/4 domains require integration updates before distribution. Domain 1 is urgent. Domain 57 requires only a status change on Hungary effective date.
+
+---
+
 ## May 17, 2026 — Critical Security Audit: Docker Compose 0.0.0.0 Bindings (Session 1156+)
 
 **Status**: COMPLETE
