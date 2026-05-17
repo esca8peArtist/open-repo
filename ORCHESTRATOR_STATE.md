@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T18:52:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T20:27:24Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.4% | Reset in 29h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.6% | Reset in 28h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[PATH DECIDED] Wave 1 IMMINENT (May 18 06:00 UTC, ~12h). All production-ready: Domains 1,37,57,58 current through May 17; 8 Gists live; email + contacts verified. Contingency playbook ready (2-gate framework executable within 2h if needed). Phase 2: Domains 38-40 complete (39,200 words, 142 cites); Domains 59/57 outlines staged for June 1 research launch. Awaiting Wave 1 execution, then Phase 1 measurement + Phase 2 approval.**
+**Focus**: **[PATH DECIDED] Wave 1 EXECUTION IMMINENT (May 18 06:00 UTC, ~10h). All production-ready: Domains 1,37,57,58 current through May 17; 8 Gists live; email + contacts verified. Phase 1 measurement staging COMPLETE (Items 33-34): day-0 checklist, daily monitoring template, week-1 synthesis decision gates all production-ready. Contingency playbook ready (2-gate framework executable within 2h if needed). Phase 2: Domains 38-40 complete (39,200 words, 142 cites); Domains 59/57 outlines staged for June … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **May 19 20:00 UTC checkpoint execution — 57 hours to go. Infrastructure verified ready (Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free, zero critical logs). Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (pre-flight 19:30 UTC → checkpoint query 20:00 UTC → decision tree for PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2 scenarios). User action: execute playbook at 20:00 UTC May 19. Post-checkpoint: Gap 4 options implementation ready if PASS. Business risk ~40%, infrastructu … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 19 20:00 UTC checkpoint execution — 48 hours to go. Infrastructure pre-checkpoint audit COMPLETE (Item 35): Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free, zero critical logs, thermal headroom 37°C, network latency 47ms, confidence 95%. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (pre-flight 19:30 UTC → checkpoint query 20:00 UTC → decision tree for PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2 scenarios). User action: execute playbook at 20:00 UTC May 19. Post-ch … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -89,7 +89,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1162 (16 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1162 (26 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
@@ -101,43 +101,43 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-  - DISTRIBUTION_EXECUTION_LOG.md (ready for user to log send times)
-  - WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv (ready for baseline metrics)
-  - POST_WAVE_1_PHASE_1_MEASUREMENT_FRAMEWORK.md (complete hourly monitoring guide)
+- CLAUDE.md compliance: ✅ CONFIRMED
 
-**Deliverable**: `WAVE_1_PRE_FLIGHT_VERIFICATION_REPORT.md` (production-ready, 2,800 words, infrastructure confidence 100%)
+### Files Modified
 
-### Findings
+- `projects/resistance-research/domains/domain-updates-may17-18.md` — created (143 lines)
 
-- **Zero blockers identified** — All 5 Gists live and accessible
-- **All templates verified** — 5/5 present with correct formatting
-- **All contacts current** — 5/5 verified with organizational affiliations confirmed
-- **Path locked and ready** — A+37 path selection blocks in place
-- **Monitoring complete** — All frameworks documented and ready
+### Commits
 
-### Critical User Actions Required (By May 17 22:00 UTC)
+- `857e0ae9` — feat(resistance-research): breaking developments integration May 17-18
+  - Domains 1 + 37 escalations scoped
+  - Implementation roadmap provided
+  - Ready for 90-120 min integration work
 
-User must complete FINAL PRE-LAUNCH CHECKLIST in PHASE_1_WAVE1_EXECUTION_PREP.md (30 min):
-1. Open each of the 5 Gist URLs in incognito window (5 min)
-2. Verify email templates exist (5 min)
-3. Verify contacts are current (10 min)
-4. Block calendar for May 18, 07:00–12:00 UTC (5 min)
+### Assessment
+
+**Autonomous work status**:
+- All immediately executable pre-Wave-1 items completed or verified
+- Breaking developments document production-ready; integration can proceed at user's pace (no immediate blockers)
+- All three projects (stockbot checkpoint, resistance-research Wave 1, seedwarden Track B) remain on-track
+- Security compliance verified (containerized-agents)
+
+**Wave 1 readiness**:
+- Domains 1, 37, 57, 58 verified current through May 17 with escalation framings documented
+- No contradictions to Wave 1 distribution materials identified
+- Integration guidance provided for optional May 18 domain refreshes before Batch 1 sends
 
 ### Time Spent
 
-- Orientation: 2 min
-- Gist accessibility verification: 3 min
-- Email template verification: 5 min
-- Contact information spot-check: 8 min
-- Report writing: 12 min
-- Commit prep: 3 min
-- **Total session**: 33 minutes (autonomous work, 100% complete)
+- Web research (SAVE Act, Callais, CISA): 18 min
+- Integration document drafting: 22 min
+- Git commit + verification: 6 min
+- **Total session**: 46 minutes
 
-### Next Actions
+### Next Autonomous Window
 
-- **May 17 22:00 UTC**: User completes FINAL PRE-LAUNCH CHECKLIST
-- **May 18 07:00 UTC**: User begins template fill-in (35-45 min)
-- **May 18 09:00 UTC**: User sends Batch 1 (5 emails, ~60 min total with monitoring)
-- **May 18 10:30+ UTC**: User monitors for early replies, logs engagement
+**May 19 20:30 UTC** — Upon checkpoint outcome determination:
+- Activate Item 59 (Post-Checkpoint Gate 2 Decision Framework) if PASS outcome
+- Continue monitoring until May 20 if outcome unclear or requires user decision
 
 ---
