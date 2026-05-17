@@ -1,3 +1,60 @@
+## Session 1154 (Orchestrator) — May 17, 2026 14:45–15:35 UTC — Security Hardening + Idle-Window Work Staging
+
+**Status**: **COMPLIANCE COMPLETE. SYSTEMS READY FOR MAY 18-19 EXECUTION.** ✅ Security vulnerability (0.0.0.0 binding) fixed in open-source-rideshare. Exploration queue refreshed with 3 executable items for any idle-window work. All autonomous work staged; no further progress until May 18 06:00 UTC or May 19 20:00 UTC events trigger.
+
+### Since Last Check-in (Session 1153)
+
+**Orientation**: Read ORCHESTRATOR_STATE.md, BLOCKED.md, INBOX.md, PROJECTS.md. No new blockers. All projects remain at yesterday's status.
+
+**Autonomous Work Assessment**:
+- Seedwarden Track B: All prep docs complete; remaining work is browser-UI (user-only)
+- Stockbot: All event infrastructure verified ready (Session 1149)
+- Resistance-research: All Wave 1 materials ready; contingency playbooks staged
+- All other projects: blocked on user decisions or external events
+
+**Work Completed**:
+
+1. **CLAUDE.md Security Compliance Fix** ✅
+   - Found: `open-source-rideshare/deploy/docker-compose.dev.yml` had bare port bindings (`"5432:5432"` = `0.0.0.0:5432`)
+   - Fixed: Changed all 3 violations to explicit `127.0.0.1` bindings (PostgreSQL, Redis, OSRM)
+   - Verified: Full codebase scan for other `0.0.0.0` violations — none found (internal container configs flagged in initial grep, confirmed harmless)
+   - Status: COMPLIANT with CLAUDE.md § 1 "ABSOLUTE PROHIBITION — NO EXCEPTIONS"
+   - Committed to master
+
+2. **Exploration Queue Refresh** ✅
+   - Added 3 new executable items to PROJECTS.md for May 17-19 idle window:
+     - **containerized-agents: Security Hardening** — 45 min (verify/fix all Docker bindings)
+     - **resistance-research: May 17-18 Breaking Developments** — 1.5-2 hours (integrate latest news into Domains 37, 1, 57, 58)
+     - **stockbot: Post-Gate-1 Implementation Roadmap** — 2-3 hours (staged for 20:30 UTC May 19)
+   - Status: All items ready to execute if user remains idle
+
+### Current Blockers (Unchanged)
+
+- **cybersecurity-hardening**: Windows VeraCrypt restart (manual action, no progress)
+- **mfg-farm**: Test print execution (manual action, no progress)
+
+### Usage & Capacity
+
+**Token usage**: 5.1% Sonnet (3.3M tokens), 6.0% all-models. Good headroom for May 18-19 events.
+
+**Session time**: 50 minutes (audit + fixes + queue refresh + documentation)
+
+### What's Next
+
+**May 18 06:00 UTC** (in ~14 hours):
+- resistance-research Wave 1 execution begins (user action)
+- If INBOX contains path decision → execute Wave 1 checklist
+- Orchestrator: Monitor at 12:00 UTC for contingency decision tree
+
+**May 19 20:00 UTC** (in ~52 hours):
+- Stockbot checkpoint execution (infrastructure verified ready)
+- Pre-flight verify at 19:30 UTC
+- Route checkpoint result to playbook (PASS/MISS/STILL_MISS scenarios)
+
+**No further autonomous work until those events trigger.** System is in clean-slate state, all compliance verified, all critical-event staging complete.
+
+---
+
 ## Session 1153 (Orchestrator) — May 17, 2026 ~14:45 UTC — Maintenance Check-In: All Systems Ready for May 18-19 Execution Window
 
 **Status**: **ORCHESTRATION STATE STABLE.** ✅ No new autonomous work available. All projects either blocked on user actions or staged for May 18-19 events. Two active blocks remain unresolved (cybersecurity-hardening Windows restart, mfg-farm test print execution). All contingency playbooks and pre-event validation complete. Ready for May 18 Wave 1 execution.

@@ -1,5 +1,57 @@
 # Work Log
 
+## Session 1154 (Orchestrator) — May 17, 2026 14:45–15:20 UTC — CLAUDE.md Security Hardening + Exploration Queue Refresh
+
+**Status**: **COMPLETE** — Security vulnerability fixed, exploration queue refreshed with 3 executable items for idle-window work.
+
+### Work Completed
+
+**✅ CLAUDE.md Security Compliance Audit & Fix**
+- **Issue found**: `open-source-rideshare/deploy/docker-compose.dev.yml` had bare port bindings equivalent to `0.0.0.0:port` (violation of CLAUDE.md § 1)
+- **Violations fixed**: 
+  - `"5432:5432"` → `"127.0.0.1:5432:5432"` (PostgreSQL)
+  - `"6379:6379"` → `"127.0.0.1:6379:6379"` (Redis)
+  - `"5000:5000"` → `"127.0.0.1:5000:5000"` (OSRM)
+- **Verification**: YAML syntax validated, no other `0.0.0.0` violations found in Docker configs
+- **Clean code search**: Checked all `*.yml` files; only findings were comments + internal container configs (no exposed violations)
+- **Committed**: Fix to master
+
+**✅ Exploration Queue Refresh**
+- Added 3 new executable items for May 17-19 idle window:
+  1. **containerized-agents: Security Hardening** — 45 min (found containerized-agents already compliant)
+  2. **resistance-research: May 17-18 Breaking Developments Integration** — 1.5-2 hours (Domain updates before May 18 Wave 1)
+  3. **stockbot: Post-Gate-1 Implementation Roadmap** — 2-3 hours (staged for post-May-19-checkpoint)
+- **Status**: Verified existing queue items are completed or staged/blocked. New items provide work if user remains idle May 17-18.
+
+**✅ Seedwarden Track B Autonomous Preparation Assessment**
+- All social account creation, Buffer/Later, Google Sheets, Discord/GA4, Kit staging → browser-UI work (user-only actions)
+- All reference docs 100% complete and ready for user execution
+- **Time investment for user**: ~3-4 hours total across May 17-29 (all documented in reference guides)
+- **Status**: Ready for user execution; no autonomous shell work available
+
+### Session Summary
+
+- All major projects remain blocked on external triggers (May 18 Wave 1, May 19 checkpoint, user decisions, manual actions)
+- No meaningful autonomous work available; focused on cleanup and compliance
+- CLAUDE.md security fix removes last blocker for open-source-rideshare dev operations
+- Exploration queue refreshed with idle-window items
+
+### Time Spent
+- Security audit & fixes: 20 min
+- Queue refresh & verification: 15 min
+- Seedwarden assessment: 10 min
+- WORKLOG update: 5 min
+- **Total**: 50 minutes
+
+### Next Session
+
+**May 18 06:00 UTC**: Wave 1 execution trigger (resistance-research, user action)
+**May 19 20:00 UTC**: Checkpoint execution trigger (stockbot, user action with orchestrator monitoring)
+
+No further autonomous work until those triggers or new inbox items arrive.
+
+---
+
 ## Session 1149 (Orchestrator) — May 17, 2026 13:45–14:20 UTC — May 18-19 Checkpoint Window Insurance Policies Complete
 
 **Status**: **COMPLETE** — Both critical-event insurance policies documented and committed. All autonomous work staged for May 18-19 execution window.
