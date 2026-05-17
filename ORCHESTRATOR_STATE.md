@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T06:42:16Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T08:52:02Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.4% | Reset in 41h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.6% | Reset in 39h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -19,12 +19,12 @@
 ## Active Projects
 ### mfg-farm
 **Status**: Active — ready to prototype
-**Focus**: Test print execution pending (user action required). All pre-print deliverables complete — designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Blocking gate**: user to execute test print at 0.20mm layer height, PLA+, 3 walls, 220–225°C — evaluate snap-arm FDM_TOLERANCE (1.4mm is highest-risk feature). Post-print: Etsy listing + supplier negotiation (all materials ready in project dir).
+**Focus**: Test print execution pending (user action required). All pre-print + post-print preparation complete. Pre-print deliverables: designs (`modrun_rail.py`, `modrun_clip.py`), listing copy, supplier scorecard, production cost model. **Post-print deliverables READY**: `etsy-listing-launch-checklist.md` (648 lines, Etsy launch within 5 days post-approval), `supplier-negotiation-playbook-consolidated.md` (551 lines, vendor strategy + volume discounts), `8-printer-farm-cost-model.md` (639 lines, 8-print … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Test print (user action required — see focus above)
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 ready to execute starting May 18: Batch 1 (5 pre-verified contacts), all 8 Gists live. Tier A updates INTEGRATED (Domains 33, 35, 25, 19f). Phase 2 research: Domains 38-40, 56, 58, 49, 50 **DISTRIBUTION-READY**; Domain 59 full-research (59-65 hrs, June 16–Aug 10), Domain 57 full-research (45-51 hrs, July 1–Aug 10). **Phase 2 Execution Plan COMPLETE** (Session 1120): PHASE_2_EXECUTION_PLAN.md covers  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[RESOLVED Tier A Integration]** **PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 execution ready May 18: Batch 1 (5 pre-verified contacts verified, all 8 Gists live, email templates ready). User-action items (2 hours May 18 morning): Gist pre-flight, contact spot-check, identity fill-in, path selection, send. Tier A research COMPLETE (Domains 33, 35, 25, 19f); integration into base files scheduled May 18-28. **Phase 2 research: DOMAINS 57, 59, 58 PRODUCTION-READY** (Session 1123): ` … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **MAY 19 CHECKPOINT EXECUTION STAGING COMPLETE** (Session 1116). May 19 checkpoint infrastructure production-ready: `may19_checkpoint_analysis.py` written with 31 regression tests (all pass), `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` covers PASS/STILL_MISS/FAR_MISS scenarios with decision trees and next-action paths. Execution window: May 19 20:00 UTC ±60 min. Ready for user observation or autonomous execution. **NEXT**: May 19 20:00 UTC execute checkpoint query; expect ≥1 AAPL SELL signal if … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **MAY 19 CHECKPOINT EXECUTION READY** (Session 1123). Checkpoint infrastructure verified production-ready: `may19_checkpoint_analysis.py` with 52 regression tests (all pass), `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` covers PASS/STILL_MISS/FAR_MISS scenarios. Execution window: May 19 20:00 UTC ±60 min. Two AAPL sessions (lgbm_ho + ridge_wf) running on Jetson, healthy, Lever A parameters live (tm=0.40, cf=0.45). **Security fix**: docker-compose.jetson.yml BIND_HOST changed from 0.0.0.0 to 127.0. … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -45,7 +45,7 @@
 
 ### systems-resilience
 **Status**: Active — **Phase 1 INDIVIDUAL-SCALE COMPLETE + PHASE 2 HOUSEHOLD-SCALE INITIATED** (6 individual domains + household coordination overview). Individual-scale COMPLETE: 01-water.md, 02-food.md, 03-shelter.md, 04-energy.md, 05-healthcare.md, 06-agriculture.md + extreme-weather.md, calendar.md (10.3K words, 33 citations). Household-scale LAUNCHED: 01-household-coordination-overview.md (7,449 words, 38 citations).
-**Focus**: **Phase 1-4a COMPLETE** (Sessions 1105-1118). Phase 4a Technology Repair complete: `04-technology-repair-community-infrastructure.md` (7,133 words, 20 citations) + `04-technology-repair-equipment-protocols.md` (8,864 words, 20 citations). **Phase 4b OPTIONS ANALYSIS COMPLETE** (Session 1120): PHASE_4B_OPTIONS_COMPARISON.md (2,400 words) provides detailed comparison of three options: (2) Agricultural Intensification (15-22 hrs, time-critical perennial planning, RECOMMENDED), (3) Education/Knowled … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 1-4a COMPLETE** (Sessions 1105-1118). Phase 4a Technology Repair complete: `04-technology-repair-community-infrastructure.md` (7,133 words, 20 citations) + `04-technology-repair-equipment-protocols.md` (8,864 words, 20 citations). **Phase 4b OPTIONS ANALYSIS COMPLETE** (Session 1122): `phase-4b-options-comparison.md` (4,702 words, 274 lines) provides detailed user-decision support document comparing three options with irreversibility analysis: (1) **Agricultural Intensification** (15-22  … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -99,42 +99,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-3. **Generator** — Oil change (100 hrs standard, 50 hrs heavy load, 20–25 hrs first change). Oil volume by generator size. Carburetor gum prevention (run dry or Sta-Bil within 30 days) + Sea Foam treatment protocol (1:3–4 ratio, 8-min run, overnight soak). Cold-weather startup (<20°F: 5W-30 oil, extended warm-up, never in enclosed space). Fuel storage (treated gasoline 24 months, diesel 12 months with biocide).
 
-4. **Small Engine** — Chainsaw file diameter by pitch table (3/8" standard = 7/32" file). Sharpening procedure (consistent angle 25–35°, depth gauge check). 2-stroke mix (50:1, 2.6 oz oil/gallon). Tractor harvest-season inspection checklist. Hand tool maintenance (axe filing, water-swelling handle tightening, heat-free removal).
+**Checkpoint Dependency Chain**:
+- May 19 checkpoint result (PASS/FAIL) gates three major activities:
+  1. stockbot Gap 4 implementation (if PASS)
+  2. Gateway 2 activation timing (depends on checkpoint outcome)
+  3. Options trading activation readiness
 
-5. **Electronics and Communication** — Radio: battery replacement every 3–5 years, manual GMRS channel programming (VFO mode, frequency entry, CTCSS code, memory save). Multimeter: four-measurement guide with battery voltage table (12.0V discharged, 12.6–12.8V full). Capacitor testing (discharge first, compare to rated µF). Visual failure indicators (bulging caps, burned traces). Soldering (flux application, desoldering wick, joint inspection). Field repair limits: surface-mount ICs unrepairable; design for replaceable modules.
+**No autonomous project work available before May 19**:
+- All top-5 projects awaiting user actions or checkpoint results
+- Exploration queue items all staged for future triggers
+- Gap 4 specification completed as pre-checkpoint preparation
 
-6. **Zone 5 Midwest Specifics** — Freeze protection (self-regulating heat tape, pump house insulation for -20°F ambient, battery storage >32°F, no frozen battery charging). Road salt + humid summer corrosion: October connection inspection, anti-corrosion spray, silica gel in enclosures. Pre-harvest checklist (July 31 deadline): tractor, generator, chainsaw, water system. Weekly checks during harvest (generator oil, chainsaw chain).
+### Recommendations for Next Session
 
-**Research method**: General-research agent fetched primary sources (NREL solar manuals, Simple Pump documentation, iFixit protocols, Repair Café model, Village Earth library), synthesized findings with Zone 5 Midwest context emphasis, wrote two production-ready documents with YAML frontmatter, committed to master.
+1. **May 19 evening** (after 20:00 UTC checkpoint execution):
+   - Execute appropriate scenario path from `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md`
+   - If PASS: begin Gap 4 implementation immediately (use `gap-4-implementation-plan.md`)
+   - If STILL_MISS/FAR_MISS: follow playbook escalation procedures
 
-**Key integration points**:
-- Cross-referenced Phase 1-3 documents (energy systems from Phase 1, household water/power from Phase 2, community-scale mutual aid from Phase 3)
-- Right to Repair legislation context (2025-2026 developments)
-- Zone 5 specifics throughout (freeze protection, harvest season loads, corrosion patterns)
-- Practical, measurable procedures (e.g., "every 100 hours," "3-5 year replacement interval")
+2. **May 18-20** (during Wave 1 execution):
+   - Monitor resistance-research user-action items
+   - Support any clarifications needed on Wave 1 execution
+   - Prepare for Phase 2 path decision confirmation
 
-**Status**: Phase 4a COMPLETE (15-21 hour scope delivered in 14 hours)
+3. **May 20-June 1**:
+   - Phase 2 sequencing (once user path decided)
+   - Integration of Tier A research into base files (May 18-28)
+   - Adoption tracking setup
 
-**Business value**: Fills critical Phase 1-3 gap (equipment maintenance never covered). Community can now sustain critical equipment beyond manufacturer support. De-risks 2-5 year extended disruption scenarios.
+### Session Metrics
 
-**Next Phase 4 work**: User decision on Phase 4b scope — Agricultural Intensification (15-22 hrs), Education/Knowledge Preservation (13-19 hrs), or Governance Scaling (12-17 hrs). June 2026 execution target if selected.
+- **Work type**: Preparation + specification writing
+- **Deliverables**: 1 comprehensive implementation spec (413 lines)
+- **Commits**: 1 (stockbot submodule)
+- **Files created**: `gap-4-implementation-plan.md`
+- **Time allocation**: ~60% research/understanding + 40% specification writing
+- **Reversibility**: All work is preparation; no code changes to live systems
 
-### Session Summary
-
-**Work completed**: Phase 4a Technology Repair research + writing
-**Projects advanced**: systems-resilience (1 of 4 Phase 4 options complete)
-**Time invested**: ~14 hours (within 15-21 hour budget)
-**Commits**: 2 documents to master (`04-technology-repair-*.md`)
-**Orchestration updates**: PROJECTS.md Current focus refreshed
-
-**Status heading into May 18-20**: 
-- Resistance-research Wave 1 execution awaits user action (May 18-20)
-- Stockbot May 19 checkpoint infrastructure staging complete, ready for scheduled execution
-- Systems-resilience Phase 4a complete, awaiting user Phase 4b decision
-- All higher-priority projects either complete or awaiting external events
-
-### Work Log Entry Complete
-
-End orchestrator session 1119. Phase 4a Technology Repair research complete and committed. Systems-resilience project now at Phase 4a completion milestone with three additional Phase 4 options available for user selection.
+---
