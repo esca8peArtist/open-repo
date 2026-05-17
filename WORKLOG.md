@@ -1,5 +1,36 @@
 # Work Log
 
+## Session 1122 (Research Agent) — May 17, 2026 — Domain 57 + 59 Full Research Outlines (Phase 2 Production-Ready)
+
+**Summary**: Completed full research outlines for both remaining Phase 2 expansion domains. Both outlines exceed the 4,000-5,000 word target, include annotated source lists (28 and 26 sources respectively), map causal pathways with empirical anchors from 2024-2026 peer-reviewed research and primary sources, and include production timelines aligned with June 15 and July 1 start dates.
+
+### Files Committed
+
+**1. `domain-59-economic-precarity-research-outline.md`** (5,478 words, 408 lines)
+- 7 causal pathways: acute financial hardship (Schaub APSR 2021, 5pp turnout reduction); medical debt cascade (Johns Hopkins 2026, 44% housing instability risk); housing instability (PNAS MTO 2024, 3.6pp registration loss, 20-year persistence); student debt (2.6M defaults Q1 2026, 25% delinquency rate); food insecurity (SNAP 3M losses, USDA data elimination); precarious employment/childcare (CIRCLE 2024, 38% non-voter barriers); felon disenfranchisement (4M voters, 1-in-22 Black Americans)
+- Lead empirical finding: Schaub (APSR 2021) causal identification — 5pp turnout reduction from acute financial hardship, fully concentrated at lower income distribution
+- 28 annotated sources, all verified
+- 4 movement constituencies: labor unions, economic justice orgs, voting rights orgs, academic research institutions
+- Evidence gaps identified: food insecurity → turnout direct causal chain; gig economy voting access research; geographic overlap analysis
+- Production start: June 15, 2026 | Distribution target: August 15, 2026
+
+**2. `domain-57-multilateral-withdrawal-research-outline.md`** (6,052 words, 399 lines)
+- 6 causal pathways: NATO withdrawal + war powers (Section 1250A, CRS R48868); ICC sanctions + impunity signals (EO 14203, 11 judges/prosecutors designated); UN human rights mechanisms (66-org withdrawal, International IDEA withdrawal); WTO trade law (tariff violations, Appellate Body paralysis); asylum/refugee collapse (USRAP suspended, 4M pending cases frozen); regional destabilization + security void
+- Lead empirical finding: January 7, 2026 — US withdrawal from 66 international organizations including 31 UN entities; January 2026 first EO directive explicitly orders executive branch to withdraw from organizations "contrary to US interests"
+- Constitutional framework: Section 1250A vs. OLC 2020 opinion vs. Youngstown Zone 3 — unresolved judicial question
+- 26 annotated sources, all verified
+- 3 movement constituencies: international law scholars/ASIL, foreign policy institutes (Carnegie/CFR/PIIE), human rights/refugee legal aid (HIAS/IRAP/Human Rights First)
+- Precedent cases: Hungary ICC withdrawal/EU accountability failure; Turkey NATO-without-accountability; 1930s US isolationism and FDR unilateralism
+- Production start: July 1, 2026 | Distribution target: August 15, 2026
+
+### Key Research Findings Added to Knowledge Base
+
+**Domain 59**: Student loan delinquency crisis is historically anomalous (25% rate, near-triple pre-pandemic). The USDA's elimination of food security data collection (30-year survey ended 2025) is a deliberate information suppression that compounds the material harm. The PNAS Moving to Opportunity finding (20-year voting depression from housing voucher relocation) is the most powerful empirical anchor — a positive intervention with negative democratic consequences that holds for nearly two decades.
+
+**Domain 57**: The Trump administration's claim that Paris Agreement withdrawal was "effective immediately" (vs. treaty's 1-year notice provision) is the clearest documented violation of ratified treaty obligations — documented in AJIL. The withdrawal from International IDEA specifically (the intergovernmental democracy-monitoring body) is symbolically and substantively significant. WTO "appeals into the void" — US responsible for 9 of 24 total — documents a pattern of dispute system paralysis predating the January 2026 withdrawal wave.
+
+---
+
 ## Session 1121 (Orchestrator) — May 17, 2026 06:42–07:30 UTC — Domain 57 Pre-Research Completion + Work Staging
 
 **Summary**: Committed all pending work from Session 1120 and prior agent sessions. Spawned resistance-research agent to complete Domain 57 pre-research staging (outline + source library). All Phase 2 expansion domains now have pre-research outlines ready for June 1 user decisions.
