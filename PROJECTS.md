@@ -704,7 +704,14 @@
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/seedwarden/`
-**Current focus**: **[AUTONOMOUS PREP COMPLETE] Track B gates ready for execution May 18–28.** Session 1152 prep work (May 17): 4 autonomous docs created — `TRACK_B_EMAIL_STAGING.md` (5 emails staged, copy-paste ready), `TRACK_B_ANALYTICS_SETUP_GOOGLE_SHEETS.md` + `TRACK_B_ANALYTICS_SETUP_DISCORD_AND_GA4.md` (complete setup guides), `TRACK_B_DAY_1_CONTENT_PRODUCTION_CHECKLIST.md` (specs + mockup export list). No pending user decisions on critical path (Canva Pro deferred to Gate 2 workaround, Kit Creator free tier sufficient). Critical path: Gate 1 (May 17–18, user creates accounts) → Gate 2 (May 24, Canva Brand Kit 30 min) → zone-cards (May 24–25, 4–6 hours) → Gate 3 (May 27–28, Kit automation 2.5–3 hours) → May 29 go/no-go → May 30 launch. Total user time May 17–30: 18–24 hours distributed across 13 days. Track A blockers: (1) 3 tag corrections (15 min) and (2) Etsy verification (10 min + 1-5 day Etsy processing). Phase 3 execution June 22.
+**Current focus**: **[AUTONOMOUS PREP COMPLETE — SESSION 1153]** Track B execution guides complete. Session 1152 + 1153 prep work (May 17): 9 autonomous docs created. **Session 1153** creates 5 new execution guides:
+- `TRACK_B_SOCIAL_ACCOUNTS_STAGING.md` — Copy-paste bio text, username fallbacks, character counts verified (40–55 min execution)
+- `TRACK_B_BUFFER_LATER_SETUP_GUIDE.md` — Account connection, brand voice, Day 1 scheduling (50–60 min execution)
+- `TRACK_B_ANALYTICS_EXECUTION_GUIDE.md` — Google Sheets (15 min), Discord (10 min), GA4 (15 min), all formulas/code copy-paste ready (40–50 min total)
+- `TRACK_B_DAY_1_CONTENT_PRODUCTION_EXECUTIVE.md` — Complete asset manifest, production timeline (3 sessions), risk mitigations with fallbacks (2.5–3.5 hours production)
+- `TRACK_B_EMAIL_COPY_FINAL.md` — All 5 email subjects/bodies, Kit build order, merge field syntax, testing checklist (30–45 min Kit build)
+
+All docs saved to `projects/seedwarden/execution/` — no user-action dependency, pure staging material. **Critical path unchanged**: Gate 1 (May 17–18, create accounts) → Gate 2 (May 24, Canva 30 min) → zone-cards (May 24–25, 4–6 hrs) → Gate 3 (May 27–28, Kit 2.5–3 hrs) → May 29 go/no-go → May 30 launch. **User execution simplified**: Open any execution doc, follow numbered steps, paste copy where indicated. Total user time May 17–30: 6–8 hours (vs. 10–12 without staging). Track A blockers (3 tag corrections + Etsy verification) unchanged. Phase 3 execution June 22.
 
 **Track A blockers (user must act — total ~30 min user time)**:
 - Blocker 1: 3 tag corrections — exact changes documented in `TRACK_A_BLOCKER_RESOLUTION.md` Section "Blocker 1"
