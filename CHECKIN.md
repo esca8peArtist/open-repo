@@ -1,5 +1,114 @@
 # Check-in
 
+## Session 1105 — May 17, 2026, 01:00–01:45 UTC (Orchestrator — Household Water Coordination + Phase 1 Wave 1 Readiness)
+
+**Status**: ✅ **SESSION COMPLETE — systems-resilience household/02-water-coordination delivered**
+
+### Accomplishments This Session
+
+**Item 56: systems-resilience — Household Water Coordination ✅**
+
+**Deliverable**: `projects/systems-resilience/household/02-water-coordination.md` (7,400 words, 29 citations)
+
+**Content summary**:
+- **Core finding**: 3-household distributed-source architecture (3 wells + shared 5,000-gal cistern) tolerates 2 simultaneous primary source failures; single shared well fails cluster on day 1
+- **Cistern design**: 4,500 sq ft combined roof → 79,448 gal/year (3.6x annual demand); shared minimum 4,500 gal using 90-day drought + 25% safety factor
+- **Greywater**: Laundry ($100–250/HH) → shower ($200–400/HH) → shared wetland ($1,500–3,500 cluster); BOD removal 84–92%
+- **Storage tiers**: Individual reserves → individual primary → shared cistern → emergency backup (shallow well + haul station)
+- **Testing**: Annual April protocol (spring thaw peak risk); DIY kits + lab backup; shared water log 5-year retention
+- **Governance**: Water steward (rotating role); 4-stage drought protocol by cistern level; pre-decided Stage 3 equal-per-capita allocation
+- **Implementation**: Phase 1 documentation (1–3 months), Phase 2 individual hardening ($400–2K/HH, 3–6 months), Phase 3 shared cistern ($833–2K/HH split 3-way, 6–12 months), Phase 4 greywater/solar (year 2+)
+- **Integration**: Solar pump sizing, gravity distribution 25-ft elevation (10.8 PSI), 5,500W generator minimum for 1 HP submersible
+- **International precedent**: Germany (1.8M systems), Kenya (multi-plot optimization), Philippines (community durability model), India (traditional Johad/Ahar collective systems)
+
+**Status**: Phase 2 household-scale infrastructure document #2 complete. **Phase 2 progress**: 3/6 household domains done (coordination overview, water coordination). **Next domains**: food, energy, healthcare, community-scale overview, optional foraging.
+
+---
+
+### Resistance-Research Phase 1 Wave 1 Batch 1 — READY FOR USER EXECUTION
+
+**Status**: All preparation complete. **User action required**: 2-hour window to send 5 emails, May 15–24, **hard deadline May 28**.
+
+**Execution package**: `projects/resistance-research/execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md`
+- **5 verified organizations**: Drug Policy Alliance, NORML, ACLU Criminal Law Reform, Sentencing Project, LEAP
+- **Email status**: Prepared, Gist URL pre-filled, contacts verified
+- **User fills**: `[Your name]` + `[Your contact information]` in each email (10 total fields across 5 emails)
+- **Send method**: Copy/paste into Gmail or email client; send to 5 verified addresses
+- **Participation notice drafts**: Included in Section 4 if organizations request them
+- **Contingency**: None — all materials production-ready
+
+**Timeline**: 
+- **May 15–24**: Send window (electronic deadline May 24 11:59 ET for DEA submissions)
+- **May 28**: Hard deadline for DEA-1362 participation notices
+- **May 19–23**: FISA briefing window (highest-leverage) for Domain 56 partner orgs  
+- **June 1–30**: Tier A domain updates (Domains 33, 35, 25, 19f)
+
+**Next phase**: Post-Batch 1 Wave 1 response tracking (real-time metrics in PHASE_1_WAVE1_EXECUTION_DASHBOARD.md); Wave 2 go/no-go decision May 19 (5-contact phase based on Wave 1 response rate).
+
+---
+
+### Stockbot May 16 Checkpoint (Completed Session 1097)
+
+**Checkpoint result**: NEAR_MISS scenario (34 fills, 3 round trips, +$5 PnL, h+12 position age)
+
+**Lever A applied**: Threshold 2.28% → 1.82%, confidence 0.50 → 0.45 (expectation: lower entry barriers, faster AAPL exits in May 19–21 window)
+
+**Jetson deployment**: Config deployed, Docker restarted, trading process running ✅
+
+**Next checkpoint**: May 19 20:00 UTC
+- **Expected outcome**: AAPL SELLs fire if h+10 threshold reached (position age h+8-10 at checkpoint)
+- **Contingency**: If no AAPL SELLs by May 19 → Lever B (HMM confidence reduction) per roadmap Section 4.3
+- **Post-checkpoint work**: Item 51 (Jetson optimization) available if Gate 1 PASS
+
+**Status**: Checkpoint infrastructure verified, Lever A in place, next measurement May 19.
+
+---
+
+### Active Blocks (2)
+
+| Block | Blocking | Action | Deadline |
+|-------|----------|--------|----------|
+| **cybersecurity-hardening** | Phase 1 walkthrough (VeraCrypt pre-boot test) | Windows restart + pre-boot password + Encrypt click | ASAP (no deadline) |
+| **mfg-farm** | Test print execution (0.20mm, PLA+, 3 walls, 220–225°C) | Execute single test print, evaluate snap-arm tolerance | ASAP (no deadline) |
+
+---
+
+### Needs Your Input
+
+1. **Resistance-research Phase 1 Wave 1 Batch 1 execution** (user action):
+   - Time estimate: 1–2 hours
+   - Action: Fill sender fields in 5 emails, send to verified addresses
+   - Execution package ready: `projects/resistance-research/execution/DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md`
+   - Deadline: May 28, 2026 (DEA-1362 participation notice hard deadline June 29 hearing)
+   
+   **Recommended timing**: Execute May 15–19 (before May 19 Tier A briefing window for highest leverage)
+
+2. **VeraCrypt Phase 1 Step 1.3 completion** (cybersecurity-hardening):
+   - Action: Restart Windows, type VeraCrypt pre-boot password, let machine boot, click Encrypt in VeraCrypt
+   - Next step: Phase 1 Step 1.4 (Ente Auth) — install from App Store, switch email + financial accounts off SMS 2FA
+   - No deadline (user pace)
+
+3. **Test print execution** (mfg-farm):
+   - Specs: 0.20mm layer height, PLA+, 3 walls, 220–225°C
+   - Evaluate snap-arm clearance (1.4mm is highest-risk feature)
+   - Report pass/fail decision, then proceed to Etsy listing + supplier negotiation
+   - No deadline (user pace)
+
+---
+
+### Projects Status Update (Post-Session 1105)
+
+| Project | Status | Blocker | Next |
+|---------|--------|---------|------|
+| **systems-resilience** | Active autonomous | None | household/03-food-coordination.md (6K–8K words) |
+| **stockbot** (Priority 1) | Active | None | May 19 20:00 UTC checkpoint; Lever A effect measurement |
+| **resistance-research** (Priority 2, escalated) | **Ready for user execution** | User emails | Send Phase 1 Batch 1; May 28 deadline |
+| **cybersecurity-hardening** | Blocked | User restart | Windows VeraCrypt pre-boot + Phase 1 walkthrough |
+| **mfg-farm** | Blocked | User action | Execute test print |
+| **seedwarden** | Active | Track A user actions | Track B ready May 30; Gates May 15–28 |
+
+---
+
 ## Session 1102 — May 17, 2026, 02:00–03:15 UTC (Orchestrator — systems-resilience Energy Document)
 
 **Status**: ✅ **SESSION COMPLETE — Individual Energy Systems Document Delivered**

@@ -1,5 +1,107 @@
 # Work Log
 
+## Session 1105 — May 17, 2026 01:00–01:45 UTC (Orchestrator Session)
+
+**Status**: COMPLETE
+
+**Deliverables completed**:
+- systems-resilience household/02-water-coordination.md (7,400 words, 29 citations, production-ready)
+- PROJECTS.md updated with new current focus
+- Session preparation for resistance-research Phase 1 Wave 1 Batch 1 user execution
+
+**Work performed**:
+1. **Orientation**: Read ORCHESTRATOR_STATE, BLOCKED.md, INBOX.md, PROJECTS.md
+   - Stockbot May 16 checkpoint executed (Session 1097) — NEAR_MISS, Lever A applied, next checkpoint May 19
+   - Resistance-research Phase 1 Wave 1 Batch 1 ready for immediate user execution (2-hour window, May 28 deadline)
+   - No new INBOX items; 2 active blocks (VeraCrypt restart, test print execution)
+
+2. **Systems-resilience Phase 2 Research** (spawned general-research agent):
+   - Completed household/02-water-coordination.md (7,400 words)
+   - Scope: 3-household rainwater harvesting, greywater systems, storage redundancy, testing, governance, implementation timeline
+   - Key finding: Distributed sources (3 wells) + shared cistern >> single shared well; tolerates 2 simultaneous failures
+   - 29 citations: USGS, Penn State Extension, NSF/ANSI, IWA Publishing, Texas A&M, EPA
+   - Integration: solar pumps, gravity distribution, energy coupling, seasonal contamination windows
+
+3. **Resistance-research Phase 1 Wave 1 Readiness Assessment**:
+   - Reviewed execution package: DOMAIN_42_WAVE_1_EMAIL_PACKAGE.md
+   - 5 emails prepared (Drug Policy Alliance, NORML, ACLU CLR, Sentencing Project, LEAP)
+   - All contact emails verified; Gist URL pre-filled
+   - **User action required**: Fill 10 name/contact fields (2 per email) → send via Gmail/email client
+   - **Timing**: May 28 hard deadline; send window May 15–24 (electronic cutoff); target completion 2 hours
+   - **Contingency**: Pre-written participation notice language included if orgs request it
+
+4. **Project state updates**:
+   - PROJECTS.md: systems-resilience current focus updated to reflect household/02-water-coordination complete
+   - Stockbot: May 16 checkpoint state noted (NEAR_MISS, Lever A applied); next checkpoint May 19
+   - All state files ready for commit
+
+**Key decisions**:
+- Resistance-research Phase 1 Wave 1 execution requires user action; prepared materials but cannot automate email send without SMTP credentials
+- Systems-resilience: prioritized household water coordination (foundational for food, energy, healthcare coordination to follow)
+- Upcoming: Next autonomous work after May 19 stockbot checkpoint depends on outcome (if PASS: Jetson optimization available; if NEAR_MISS/FAR_MISS: continued Lever adjustments)
+
+**Status**: All autonomous work complete. Awaiting: (1) User execution of resistance-research emails (May 15–24), (2) May 19 stockbot checkpoint results, (3) User action on VeraCrypt/test print blocks.
+
+---
+
+## Session 1104 — May 17, 2026 (Research Agent — Household Water Coordination)
+
+**Status**: COMPLETE
+
+**Deliverables**:
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/household/02-water-coordination.md` (NEW — ~7,400 words, 29 citations)
+
+**Item 56: systems-resilience — Household Water Coordination Document (COMPLETE)**
+
+3-household scale water coordination document. Key findings:
+
+- **Distributed-source architecture**: Three independent primary sources (wells/springs) with shared 5,000-gal central cistern outperforms any single shared well; tolerates 2-of-3 simultaneous primary source failures
+- **Cistern sizing**: 4,500 sq ft combined roof area yields 79,448 gal/year (3.6x annual demand); shared cistern minimum 4,500 gal using 90-day drought bridge + 25% safety factor
+- **Multi-tank connection**: Parallel (bottom-to-bottom) connection strongly preferred over series; requires isolation valves; detailed schematic provided for 3-household flow
+- **Greywater tiers**: Laundry-to-landscape ($100–250/HH), branched-drain shower ($200–400/HH), shared constructed wetland ($1,500–3,500 cluster); BOD removal 84–92% in mulch basins; NSF/ANSI 350 standard for engineered systems
+- **Four-layer storage redundancy**: Individual reserves → individual primary source → shared cistern → emergency backup sources (shallow well, haul station)
+- **Frost depth integration**: Zone 5 pipe burial 42–48 inches; in-ground concrete cistern is only frost-proof option; above-ground tanks must drain November–March
+- **Testing protocol**: Annual April coliform + nitrate (spring thaw is peak risk window per 2025 PMC study); DIY kits adequate for routine monitoring, lab required for positive results; shared water log with 5-year record retention
+- **Seasonal contamination**: Spring thaw (nitrate spike), tornado season (sewage intrusion), late summer drought (concentration effect), fall recharge (sediment) — all mapped to testing schedule
+- **Drought protocol**: Four stages triggered by shared cistern level readings (50%, 25%, 10% thresholds); Stage 3 allocates cistern equally per person regardless of which household's well is working; eliminates conflict by pre-deciding the contested question
+- **Water steward role**: Designated rotating position; cistern level reads weekly; test scheduling; drought protocol activation; maintains shared water log
+- **Implementation timeline**: Phase 1 documentation + agreement (Month 1–3); Phase 2 individual hardening (Month 3–6); Phase 3 shared cistern build (Month 6–12); Phase 4 greywater + solar integration (Year 2+)
+- **Energy integration**: Solar-direct pump sizing formula; pump scheduling stagger for shared distribution lines; generator rating for startup surge (5,000W minimum for 1 HP submersible)
+- **Gravity distribution**: 25 ft cistern elevation = 10.8 PSI (adequate for drip, livestock, gravity faucets); eliminates energy-water dependency
+- **International precedent**: Germany (1.8M systems, Berliner Strasse 88 neighborhood model), Kenya (IWA Publishing multi-plot optimization study), Philippines (BWSA community management model), India (Johad/Ahar/Zabo traditional collective systems)
+- 29 citations: Texas A&M AgriLife Extension, USGS, Penn State Extension, NSF/ANSI, Water Systems Council, EPA, IWA Publishing, World Bank/PPIAF, academic studies
+
+---
+
+## Session 1103 — May 17, 2026 (Research Agent — Household Coordination Overview)
+
+**Status**: COMPLETE
+
+**Deliverables**:
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/household/01-household-coordination-overview.md` (NEW — 7,449 words, 760 lines, 38 citations)
+
+**Item 55: systems-resilience — Household Network Coordination Overview (COMPLETE)**
+
+Bridges individual-scale and community-scale resilience. Reference scenario: 3 households, 12 people, 5 acres, Zone 5 Midwest, 60 miles from urban center. Core findings:
+
+- **Governance first**: domain-specialist authority model recommended for 3-household clusters; MOU template sufficient below $10K shared assets; cooperative/LLC above that threshold
+- **Pooling economics**: $31,200 estimated savings over fully individual systems; detailed 14-row decision table with pool/no-pool rationale; non-poolable items identified (food storage, medications, individual hand pumps)
+- **Three worked scenarios**: generator failure in December, well failure during canning season, primary coordinator hospitalization — each traced hour-by-hour with lessons
+- **Coordinated water**: 3-well distributed architecture tolerates 2 simultaneous failures; shared 500-gal gravity tank; failure mode protocol
+- **Coordinated food**: 3-acre integrated farm; labor coordination calendar; shared processing equipment list; seed banking protocol (50/50 split individual/shared)
+- **Coordinated energy**: 2.5–4kW shared array + 20–30kWh shared battery; load priority hierarchy; metering between households; propane pooling economics
+- **Healthcare**: skill distribution model (trauma/herbal/obstetric across households); shared specialty supply cache; crisis support protocol
+- **Communications**: GMRS primary + FRS alternate + physical runner contingency + visual signal emergency (PACE framework)
+- **Seasonal Midwest calendar**: spring activation, summer production, fall harvest/winterization, winter maintenance
+- **Implementation roadmap**: Month 1 (relationship), Months 2–3 (low-stakes coordination), Months 4–6 (first shared investment), Months 6–12 (domain leads), Year 2+ (infrastructure)
+- **Scale boundary**: 5 households is the transition point to community-scale governance
+- **Worksheets included**: skill inventory, shared resource inventory, coordination schedule template, emergency contact list
+- 38 citations: NREL, USDA Rural Development, EPA, Foundation for Intentional Community, FCC, academic ecovillage studies, cooperative farming literature
+
+**Context**: First household-scale document. Directory household/ created. Establishes templates for forthcoming household/02-water-coordination.md, household/03-food-coordination.md, etc.
+
+---
+
 ## Session 1102 — May 17, 2026 (Research Agent — Energy Systems Document, Individual Scale)
 
 **Status**: COMPLETE
