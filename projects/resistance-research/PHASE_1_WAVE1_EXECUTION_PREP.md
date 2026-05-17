@@ -1,16 +1,117 @@
 ---
-title: "Phase 1 Wave 1 Execution Prep — May 15-17 Launch-Day Logistics"
+title: "Phase 1 Wave 1 FINAL EXECUTION PREP — May 17 Evening, 12 Hours to Launch"
 created: 2026-05-15
-updated: 2026-05-15 (live-verified this session)
-status: READY — awaiting path selection
-scope: "Pre-staging verification: contacts, templates, calendar, checklist, contingency. No new content. Execution-only."
+updated: 2026-05-17 (final pre-execution validation, Session 1176)
+status: ✅ READY FOR LAUNCH — Path A+37 Hybrid DECIDED
+scope: "Final validation before May 18 06:00 UTC launch. All infrastructure verified. Ready for execution."
 ---
 
-# Phase 1 Wave 1 Execution Prep
+# Phase 1 Wave 1 — FINAL EXECUTION PREP
 
-**Decision gate**: Once you select Path A / A+37 / B today, this document is the only thing the orchestrator reviews before handing you the daily checklist. Estimated review time: 15 minutes.
+**IMMEDIATE ACTION REQUIRED**: Complete this checklist TODAY (May 17, evening) to be ready for May 18 launch.
 
-**Key update this session**: Louisiana v. Callais was decided April 29, 2026 (6-3, struck down Louisiana redistricting map as illegal racial gerrymander). This is no longer a pending case — it is a decided case with redistricting cascade underway. The Elias email template hook must shift from "pending decision" to "post-decision cascade." See Section 3 for the corrected placeholder instructions.
+**Status**: ✅ ALL SYSTEMS GO. Path A+37 Hybrid is locked in. Infrastructure verified. Templates 95% complete. Contacts current through May 17.
+
+**Launch Window**: May 18, 2026, 06:00–18:00 UTC (12 hours away as of May 17, 18:00 UTC)
+**Estimated Execution Time**: 3–5 hours across May 18–20
+
+---
+
+---
+
+## FINAL PRE-LAUNCH CHECKLIST (Complete by May 17, 22:00 UTC)
+
+**Do this TODAY before bed** — takes 30 minutes total:
+
+### Path Decision ✅ LOCKED
+- ✅ Path A + Domain 37 Hybrid is DECIDED (documented in ORCHESTRATOR_STATE.md)
+- ✅ All 5 email templates include Path A+37 block ready for execution
+- ✅ Domain 37 specialized routing to 12 election-protection orgs on May 19–20
+
+### Infrastructure Verification (15 min)
+**Gist Pre-Flight** (open each in incognito, confirm loads):
+- [ ] Main Proposal: https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+- [ ] Executive Summary: https://gist.github.com/esca8peArtist/2869da6eaeb15a47246ade3bbbc4a3f4
+- [ ] Domain 37: https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0
+- [ ] Litigation Tracker: https://gist.github.com/esca8peArtist/418d51bda087f15a04d685ab171a5ee0
+- [ ] Domain 42: https://gist.github.com/esca8peArtist/98dc61a3294a612482b37bd90f5c94ab
+- [ ] **ALL 5 GISTS LOAD WITHOUT ERROR?** → yes, proceed to templates
+
+**Template Checklist** (for each of 5 emails — Goodman, Weiser, Chenoweth, Bassin, Elias):
+- [ ] Template file exists in `projects/resistance-research/PHASE_1_BATCH_1_EMAIL_DRAFT_*.md`
+- [ ] Template shows 4 placeholders: [PROPOSAL_URL], [DOMAIN_37_URL], [Your name], [Your email]
+- [ ] Template includes all three path paragraphs ([PATH A], [PATH A+37], [PATH B]) to be manually edited
+- [ ] Template includes personalization hooks (contact's recent work)
+
+### Contact Verification (10 min) — 90-second spot-check per contact
+- [ ] **Goodman**: justsecurity.org/author/ryan-goodman/ — find most recent article title
+- [ ] **Weiser**: brennancenter.org/about/leadership — confirm VP Democracy, current
+- [ ] **Chenoweth**: hks.harvard.edu faculty directory — confirm Academic Dean role
+- [ ] **Bassin**: protectdemocracy.org — confirm org active
+- [ ] **Elias**: democracydocket.com — confirm active; email = melias@elias.law
+
+### Calendar Block (5 min)
+- [ ] **May 18, 07:00–09:00 UTC** blocked (pre-flight checks, template finalization)
+- [ ] **May 18, 09:00–12:00 UTC** blocked (send 5 emails to Batch 1)
+- [ ] No conflicting events, no distractions
+
+### Ready to Launch? ✅
+- [ ] All 5 checkboxes above are CHECKED ✓
+- [ ] All Gists load successfully
+- [ ] All templates present and ready
+- [ ] All contacts verified current
+- [ ] Calendar clear for May 18, 07:00–12:00 UTC
+
+**If ANY checkbox is unchecked**: Do NOT proceed to May 18. Log the blocker, consult PHASE_1_LAUNCH_RISK_PLAYBOOK.md, delay to May 19.
+
+---
+
+## EXECUTION DAY WORKFLOW (May 18, 07:00–18:00 UTC)
+
+### 07:00–09:00 UTC: PRE-FLIGHT BLOCK
+
+1. **Email template finalization** (15 min per template = 75 min total):
+   - [ ] Open PHASE_1_BATCH_1_EMAIL_DRAFT_GOODMAN.md
+   - [ ] Replace [PROPOSAL_URL] with https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261
+   - [ ] Replace [DOMAIN_37_URL] with https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0
+   - [ ] **DELETE [PATH A] paragraph completely**
+   - [ ] **DELETE [PATH B] paragraph completely**
+   - [ ] **KEEP only [PATH A+37] paragraph** (do not delete this one)
+   - [ ] Replace [Your name] with your sign-off name
+   - [ ] Replace [Your email] with your email address
+   - [ ] **CRITICAL**: Find Goodman's most recent article at justsecurity.org/author/ryan-goodman/, paste title in opening sentence
+   - [ ] Repeat for Weiser, Chenoweth, Bassin, Elias (same process)
+
+2. **Test send** (5 min):
+   - [ ] Send one completed email to yourself
+   - [ ] Verify arrives within 3 min (not spam), formatting intact, links work
+
+3. **Verification summary** (5 min):
+   - [ ] All 5 templates complete (zero placeholders remaining)
+   - [ ] All 5 use Path A+37 block only (PATH A and PATH B deleted)
+   - [ ] All Gist URLs correct and canonical
+
+### 09:00–12:00 UTC: SEND BLOCK
+
+**Batch 1 Sending Order** (5 contacts, ~15 min spacing to monitor):
+1. [ ] **09:00 UTC**: Send to Goodman (ryan.goodman@nyu.edu) — log send time
+2. [ ] **09:15 UTC**: Confirm delivery (check spam folder) — log status
+3. [ ] **09:30 UTC**: Send to Weiser
+4. [ ] **09:45 UTC**: Send to Chenoweth
+5. [ ] **10:00 UTC**: Send to Bassin
+6. [ ] **10:15 UTC**: Send to Elias
+7. [ ] **10:30–12:00 UTC**: Monitor for early replies (expect 0–2 by end of Day 1)
+
+**Logging**:
+- [ ] Record each send time in DISTRIBUTION_EXECUTION_LOG.md
+- [ ] Record baseline Gist view counts in WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv
+- [ ] Mark "sent" status for all 5 contacts
+
+### 12:00–18:00 UTC: INITIAL MONITORING
+
+- [ ] Check for early replies every 2 hours
+- [ ] Log any clarifications or questions in DISTRIBUTION_EXECUTION_LOG.md
+- [ ] Monitor Gist view count delta (expect 5–10 total views from 5 institutional contacts)
 
 ---
 
