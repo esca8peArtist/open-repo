@@ -56,7 +56,7 @@ The full 35-domain framework is available at [LINK — CC 4.0]. Domain 28 is at 
 
 ## Contact B1-2: Erica Chenoweth — Harvard Kennedy School / Nonviolent Action Lab
 
-**Sending platform**: Email to echenoweth@hks.harvard.edu  
+**Sending platform**: Email to erica_chenoweth@hks.harvard.edu  
 **Subject line**: "Nonviolent resistance meta-analysis that cites your 3.5% threshold — would value your feedback on the methodology"  
 **Template type**: Academic/Think Tank (Methodological Peer)  
 **Best day**: Tuesday or Wednesday, 9:00-11:00 AM ET  
@@ -169,7 +169,7 @@ Full framework at [LINK — CC 4.0].
 
 ## Contact B1-5: Marc Elias — Democracy Docket (Founder)
 
-**Sending platform**: Email to marc@elias.law  
+**Sending platform**: Email to melias@elias.law  
 **Subject line**: "DOJ Voter Roll Litigation Documentation (23 Active Cases) + Systematic Election Interference Framework"  
 **Template type**: Media/Journalist (Newsworthy Documentation)  
 **Best day**: Tuesday, 8:00-9:30 AM ET  
