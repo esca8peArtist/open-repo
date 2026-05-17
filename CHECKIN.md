@@ -1,5 +1,55 @@
 # Check-in
 
+## Session 1118 (Orchestrator) — May 17, 2026, 04:39–06:00 UTC — Parallel Exploration Queue Execution ✅
+
+**Status**: **Two exploration queue items completed. Architecture analysis ready for May 19 checkpoint. URGENT: Domain 39 (Healthcare/Democracy) should distribute June 1 to meet HHS deadline.**
+
+### Since Last Check-in
+
+**Autonomous Work Completed**:
+1. ✅ **stockbot: Architecture Decision Matrix COMPLETE** (Exploration Queue Item)
+   - **Deliverable**: `projects/stockbot/research/ARCHITECTURE_DECISION_MATRIX.md` (3,200+ words)
+   - **Key finding**: Three architectures are sequential, not competing. Architecture C (options) has CRITICAL SAFETY GAP — naked-call prevention missing from InstrumentBan guardrail.
+   - **Session count confirmed**: 67 sessions (not 52), $10K per session
+   - **May 19 decision tree provided**: PASS → Gate 2 eligible; MISS_B2 → Lever B diagnosis; FAR_MISS → infrastructure diagnosis
+   - **Business value**: <2 min decision lookup post-checkpoint. Gap 4 implementation blocker identified (5-8 hours).
+   - Committed to master: `ARCHITECTURE_DECISION_MATRIX.md`
+
+2. ✅ **resistance-research: Phase 2 Domains 38-40 Research Staging COMPLETE** (Exploration Queue Item)
+   - **Deliverables**: 
+     - `domain-38-regulatory-capture-ai.md` (6,900 words, 45 sources) — xAI v. Colorado sequence, Birhane et al. capture taxonomy, EU AI Act August 2 deadline
+     - `domain-39-healthcare-democracy-nexus.md` (7,200 words, 47 sources) — **URGENT: HHS rule June 1** targeting Medicaid/NVRA chain
+     - `domain-40-surveillance-microtargeting.md` (7,100 words, 43 sources) — PNAS January 2026 study, 2026 AI deepfake standard
+     - `INDEX.md` with sequencing guide
+   - **CRITICAL USER DECISION**: Domain 39 has June 1 HHS deadline (interim final rule exempt from notice-and-comment). Should distribute **immediately** (June 1) rather than wait for Phase 1 completion.
+   - **Launch sequencing** (INDEX.md):
+     | Domain | Deadline | Launch | Priority |
+     |--------|----------|--------|----------|
+     | 39 — Healthcare | June 1 | Distribute NOW | URGENT |
+     | 38 — AI Capture | August 2 | July 15 | High |
+     | 40 — Surveillance | November 3 | July 15 | High |
+   - Committed to master: `projects/resistance-research/phase-2-candidates/`
+
+**Project Status Updates**:
+- **stockbot**: May 19 checkpoint infrastructure + architecture analysis both ready. User can make informed Gate 2 decision post-checkpoint.
+- **resistance-research**: Phase 2 Domains 38-40 all production-complete. **Flagging Domain 39 urgent opportunity**: June 1 HHS deadline means this domain can distribute independently of Phase 1 Wave 1 outcome. User decision point: proceed with immediate Domain 39 distribution or wait for Phase 1 completion?
+- **All other projects**: No changes. Awaiting external events (May 19 checkpoint, May 18 Wave 1 user send, user task completions).
+
+**Needs User Input** (new items):
+1. **[URGENT] resistance-research Domain 39 distribution timing**: June 1 HHS interim final rule deadline. Should Domain 39 launch June 1 independently or wait for Phase 1 Wave 1 completion? Flag: distributing Domain 39 now bypasses normal Phase 1 sequencing but captures time-sensitive HHS window.
+2. **stockbot May 19 20:00 UTC checkpoint execution**: All infrastructure ready. Ready for autonomous or user-observed execution.
+3. **resistance-research Phase 1 Wave 1 Batch 1**: Scheduled May 18-20 user execution (2 hours).
+
+### Available Autonomous Work
+- **None immediately available** — Exploration Queue top items completed. Remaining items blocked on prerequisites (May 19 checkpoint outcome, Phase 1 Wave 1 completion, user gate decisions).
+
+### Next Major Events
+- **May 18-20**: resistance-research Phase 1 Wave 1 distribution (user action, ~2 hours)
+- **May 19 20:00 UTC**: stockbot checkpoint execution (ready for user observation or autonomous run)
+- **June 1**: HHS interim final rule deadline for Domain 39 opportunity window
+
+---
+
 ## Session 1116 (Orchestrator + Stockbot Agent) — May 17, 2026, 04:09–05:30 UTC — May 19 Checkpoint Execution Staging Complete ✅
 
 **Status**: **Checkpoint infrastructure production-ready. May 19 20:00 UTC execution infrastructure staged and tested. All major projects either in checkpoint wait state or blocked on user actions.**

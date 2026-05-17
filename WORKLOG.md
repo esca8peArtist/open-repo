@@ -1,5 +1,86 @@
 # Work Log
 
+## Session 1118 (Orchestrator) — May 17, 2026 04:39–06:00 UTC — Parallel Exploration Queue Execution (Stockbot + Resistance-Research)
+
+**Summary**: Spawned two parallel autonomous agents to work Exploration Queue items while top projects await external events. Both agents completed research deliverables with production-ready outputs.
+
+### Item Stockbot — Equity vs Options Architecture Comparative Analysis — COMPLETE
+
+**Deliverable**: `projects/stockbot/research/ARCHITECTURE_DECISION_MATRIX.md` (3,200+ words)
+
+**Key findings**:
+- **Architecture A (2-session AAPL equity)** is what's actually running on Jetson; cannot meet 30 fills/month alone but is the foundation
+- **Architecture B (67-ticker stacker)** is trained/configured but not deployed; correct Gate 2 expansion path; 22-45 fills/month aggregate
+- **Architecture C (options)** has partial/undocumented deployment with **CRITICAL SAFETY GAP**: InstrumentBan guardrail does not query `option_positions` table before equity sells, creating naked-call exposure
+- Session count confirmed: **67 sessions** (not 52 as in older notes), $10K per session
+- Architectures are sequential layers that compound, not competing alternatives
+- May 19 decision tree: PASS → Gate 2 activation eligible; MISS_B2 → Lever B diagnosis (micro-adjustment if confidence 0.40-0.44, HMM if lower); FAR_MISS → infrastructure diagnosis
+- Gap 4 (naked-call prevention) is critical blocker for covered-call activation; estimated 5-8 hours to implement
+
+**Research method**: Codebase investigation (active-sessions.json, TradingSession.py, JETSON_OPTIONS_SYSTEM_CHARACTERIZATION.md, options infrastructure verification)
+
+**Business value**: Eliminates May 19 post-checkpoint decision ambiguity. User can read matrix in <2 min and execute next steps immediately.
+
+**Status**: Committed to master as `ARCHITECTURE_DECISION_MATRIX.md`
+
+---
+
+### Item Resistance-Research — Phase 2 Expansion Domains 38-40 Research Initiation — COMPLETE
+
+**Deliverable**: 
+- `projects/resistance-research/phase-2-candidates/DOMAIN_38_REGULATORY_CAPTURE_AI.md` (~6,900 words, 45 sources)
+- `projects/resistance-research/phase-2-candidates/DOMAIN_39_HEALTHCARE_DEMOCRACY_NEXUS.md` (~7,200 words, 47 sources)
+- `projects/resistance-research/phase-2-candidates/DOMAIN_40_SURVEILLANCE_MICROTARGETING.md` (~7,100 words, 43 sources)
+- `projects/resistance-research/phase-2-candidates/INDEX.md` (sequencing guide + source verification status)
+
+**All three documents production-complete** (discovered they were already research-finished as of May 15; this session created the directory structure and INDEX).
+
+**Key findings per domain**:
+
+**Domain 38 — Regulatory Capture in AI/Tech**:
+- xAI v. Colorado sequence is major 2025-2026 anchor (DOJ intervention April 24 — first federal intervention in state AI law challenge; Colorado legislature narrowed law May 9)
+- Birhane et al. (arxiv:2605.06806, May 2026) identifies 27 capture techniques, 24% revolving-door rate
+- EU AI Act Article 50 enforcement deadline August 2, 2026 — advocacy hook for reform coordination
+- **Launch window**: July 15, 2026 (concurrent with Domain 40)
+
+**Domain 39 — Healthcare/Democracy Nexus** — **URGENT**:
+- Empirical anchor: August 2025 APSR study (Cox, Epp, Shepherd) — hospital closures cause 3.8pp turnout reduction
+- 417 rural hospitals vulnerable to closure as of January 2026
+- **HHS interim final rule due June 1, 2026** — exempt from notice-and-comment period
+- Medicaid/NVRA infrastructure chain is unexploited civil rights theory (Medicaid enrollment sites are NVRA-mandated voter registration sites)
+- **ACTION**: This domain should distribute NOW (not wait for Phase 1), targeting HHS window
+- **Launch window**: URGENT — distribute June 1, 2026 or earlier
+
+**Domain 40 — Surveillance Capitalism & Electoral Microtargeting**:
+- January 2026 PNAS study: targeted suppression ads reduced turnout 1.86%; 4.7M prevented votes extrapolation
+- 2026 midterm AI deepfake standard practice (NRSC-Talarico March 11, Collins-Ossoff Nov 2025, etc.)
+- VRA discriminatory-effect framework applicable
+- EU Regulation 2024/900 bans political microtargeting; Meta exited EU; same tools remain legal in US with no oversight
+- FEC lacks policymaking quorum since May 2025
+- **Launch window**: July 15, 2026 (concurrent with Domain 38)
+
+**Launch sequencing table** (INDEX.md):
+| Priority | Domain | Hard Deadline | Launch |
+|----------|--------|---------------|--------|
+| 1 (URGENT) | 39 — Healthcare | June 1, 2026 | Distribute now |
+| 2 | 38 — AI Regulatory Capture | August 2, 2026 | July 15 (EU Article 50 window) |
+| 3 | 40 — Surveillance | November 3, 2026 | July 15 (concurrent with 38) |
+
+**Business value**: Phase 2 research immediately actionable post-Phase-1-decision. Domain 39 presents unique opportunity to distribute immediately (bypassing Phase 1 sequence) because HHS deadline is imminent — user decision point flagged.
+
+**Status**: Committed to master under `projects/resistance-research/phase-2-candidates/`
+
+---
+
+### Orchestrator Actions
+
+1. **Verified no new INBOX items** — INBOX.md processing log shows no new items since last session
+2. **Confirmed active blocks** — two remain active (cybersecurity-hardening Phase 1 walkthrough, mfg-farm test print). Both are user-action blocks with no change in status.
+3. **Exploration Queue refresh** — Spawned two of three available items with no prerequisites. All work production-ready.
+4. **Status**: All autonomous work from top priorities and Exploration Queue complete. Awaiting: (a) May 18 resistance-research Wave 1 user execution, (b) May 19 20:00 UTC checkpoint execution, (c) user decision on Phase 2 Domain 39 urgent distribution
+
+---
+
 ## Session 1117 (Research Agent) — May 17, 2026 — Systems-Resilience Phase 4 Scoping Complete
 
 **Summary**: Produced Phase 4 scoping document (`projects/systems-resilience/PHASE_4_SCOPING.md`, ~4,000 words) covering all four candidate topics (Technology Repair, Agricultural Intensification, Education/Knowledge Preservation, Governance Scaling). Document includes topic deep dives with scope estimates, recommended sequencing (Technology Repair first), resource totals (55–79 hours for all four topics), success criteria per topic, and a decision framework for Anya to choose between full Phase 4, minimal Phase 4, or deferral.
