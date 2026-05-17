@@ -1,5 +1,39 @@
 # Work Log
 
+## Session 1107 — May 17, 2026 (Research Agent — Household Energy Coordination)
+
+**Status**: COMPLETE
+
+**Deliverable**: `projects/systems-resilience/household/04-energy-coordination.md` (~7,600 words, 32 citations, production-ready)
+
+**Work performed**:
+- Read existing Phase 2 docs (02-water-coordination.md, 03-food-coordination.md) to match structure and conventions
+- Read individual/04-energy.md to identify what is already covered and avoid duplication
+- Researched: NREL PVWatts Zone 5 seasonal generation data, LiFePO4 cold-weather charging limits (BMS cutoff 0°C, 60% capacity at -20°C), propane generator fuel consumption models (5–10 kW range), microgrid load shedding priority literature (IEEE 2030.9, islanded mode review 2017), passive solar heating load reduction (25–37% documented), rocket mass heater efficiency (85–90% vs. 60–75% conventional wood stove), UL 1741 inverter anti-islanding standards, Victron Multiplus frequency-shift AC coupling, ASHRAE Zone 5A winter design temperature (0°F 99th percentile), submersible pump energy consumption and scheduling, HPWH vs. propane tankless water heating in cold climates, pressure canning and dehydrator electrical loads, Feldheim Germany village microgrid model, Denmark Svalin P2P energy community, EIA RECS 2020 Midwest data, Ostrom commons governance principles applied to energy sharing
+
+**Content delivered**:
+- 3-household energy cluster model: distributed solar arrays + shared LiFePO4 battery bank + propane standby generator
+- Quick-reference card: seasonal generation ranges, 5-tier load shedding table with SOC triggers
+- Full load catalog: per-household essential and seasonal loads; 3-household aggregate with diversity factor; summer AC analysis (not viable at cluster solar scale without grid tie)
+- Distributed generation architecture: per-household 1,200–2,400W array sizing, Zone 5 snow loading requirements, panel angle optimization (50–55° for winter priority), snow clearing protocol
+- Shared battery bank: 30 kWh LiFePO4 spec, cold-weather placement requirements (conditioned space above 32°F), Zone 5 failure-mode tolerance table, cost estimate $9,000–$27,000 total / $3,000–$9,000 per household
+- Propane generator: 7.5–10 kW spec, propane vs. diesel/gasoline cold-start comparison, fuel consumption model at 50/65/85% load, 500-gallon vs. 1,000-gallon tank sizing, winter vaporization pressure warnings
+- Microgrid control: Victron Multiplus island-mode voltage/frequency regulation, frequency-shift solar regulation, UL 1741 anti-islanding, load shedding automated sequence, generator start/stop logic
+- Winter outage resilience: 5–7 day overcast window day-by-day protocol, wood heat integration (rocket mass heater 1–2 cords vs. 4–5 cords conventional), passive solar 25–37% load reduction, propane consumption model (105 gallons for 7-day winter scenario), standing reserve minimum 150 gallons
+- Water system integration: pump scheduling (10 AM–3 PM solar window), propane tankless vs. HPWH analysis for Zone 5, SOC-based deferral protocol
+- Food preservation load management: 14–21 kWh/day peak; solar scheduling protocol (August solar surplus covers preservation); propane canning as electrical load removal strategy; dehydrator solar-only policy
+- Smart load coordination: morning SOC tier system (Green/Yellow/Orange/Red), appliance scheduling table, laundry staggering across households, V2H integration as Tier 5 supplement
+- Four disaster scenarios: spring tornado, winter ice storm, extended overcast, generator failure — each with immediate response and design implication
+- Cluster governance: energy steward rotation, generator start decision protocol, SOC management targets, Ostrom principles applied to cost allocation and billing
+- Preventive maintenance schedule (12 tasks, daily through annual)
+- 3-phase implementation timeline: Phase 1 solar + battery + generator ($30,700–$62,500 total / $10,233–$20,833 per household), Phase 2 passive solar + wood heat, Phase 3 smart controls + V2H
+- International precedent: Feldheim Germany (village-scale self-sufficient microgrid), Denmark Svalin P2P energy community
+- 4 worksheets: load audit, monthly generation balance, weekly steward log, annual propane reserve tracker
+
+**Project impact**: systems-resilience Phase 2 household-scale now at 4/6 domains complete (coordination overview, water, food, energy). Next domains: healthcare, community overview.
+
+---
+
 ## Session 1106 — May 17, 2026 (Research Agent — Household Food Coordination)
 
 **Status**: COMPLETE
