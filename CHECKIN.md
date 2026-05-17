@@ -1,5 +1,31 @@
 # Check-in
 
+## Session 1125 (Orchestrator) — May 17, 2026, 08:15–09:35 UTC — Phase 2 Wave 1 Support Preparation
+
+**Status**: **Phase 2 Domain 38-40 research outlines completed as gate-openers for immediate Phase 2 launch. Once user decides Phase 1 distribution path (May 18-20), Phase 2 research can execute without delay. All infrastructure confirmed ready for May 18 Wave 1 start and May 19 checkpoint. Awaiting user Wave 1 execution.**
+
+### Since Last Check-in (Session 1124 → 1125)
+
+**Work Completed**:
+
+0. ✅ **Phase 2 Domains 38-40 Research Outlines — Completion**
+   - **Domain 38: AI Regulatory Capture & Governance** — Outline file created (`PHASE_2_DOMAIN_38_RESEARCH_OUTLINE.md`). Production document (6,800 words, 43 citations) ready. Distribution target: July 15 (before EU AI Act Article 50 enforcement Aug 2).
+   - **Domain 39: Healthcare Access & Democratic Infrastructure** — Outline file created (`PHASE_2_DOMAIN_39_RESEARCH_OUTLINE.md`). Production document (7,800 words, 48 citations) ready. **HIGHEST PRIORITY**: June 1 HHS comment deadline is hardest near-term constraint. Must reach healthcare/disability advocates by May 28 for comment preparation.
+   - **Domain 40: Surveillance Capitalism & Electoral Manipulation** — Outline file created (`PHASE_2_DOMAIN_40_RESEARCH_OUTLINE.md`). Production document (3,200 words, 32 citations) ready. Distribution target: July 15 before November 3 midterm hard constraint. EU Article 50 enforcement (Aug 2) is media hook for regulatory arbitrage framing.
+   - **Sequencing recommendation**: Domain 39 first (June 1 deadline), Domain 38 second (July 15 EU hook), Domain 40 third (July 15 pre-midterm). All three form interlocking set (governance mechanism failure → electoral manipulation infrastructure → parallel healthcare infrastructure attack).
+   - **Committed**: `feat(resistance-research): Phase 2 Domain 38-40 research outlines — Wave 1 preparation`
+
+**Strategic value**: Phase 1 Wave 1 (user-action intensive, May 18-20) happens in parallel with Phase 2 readiness prep. Once user decides Path A / A+37 / B on May 18-20, Phase 2 Domain 39 can launch immediately without research delays. Time-critical June 1 HHS deadline becomes achievable with zero prep lag.
+
+**All systems ready for May 18-19 events**:
+- Stockbot: checkpoint infrastructure ready for May 19 20:00 UTC execution
+- Resistance-research: Wave 1 ready for May 18 execution; Phase 2 outlines ready for immediate launch post-path-decision
+- Seedwarden: Track B ready (no blockers); Phase 3 assets complete
+- Cybersecurity-hardening: Phase 1 paused on user restart (no autonomous work available)
+- mfg-farm: Blocked on test print (no autonomous work available)
+
+---
+
 ## Session 1124 (Orchestrator) — May 17, 2026, 07:43–~12:30 UTC — Pre-Event Verification + Gap 4 Preparation
 
 **Status**: **All infrastructure for tomorrow's critical events verified production-ready. Stockbot checkpoint ready for May 19 20:00 UTC execution; resistance-research Wave 1 ready for May 18 launch. Gap 4 naked-call prevention guardrail specification completed and committed. No blockers. User-action items (2 hours May 18 morning) are preparation tasks, not prerequisites.**
