@@ -1,5 +1,152 @@
 # Check-in
 
+## Session 1112 (Orchestrator + Research Agent) — May 17, 2026, 03:45–04:45 UTC — May 19 Checkpoint Infrastructure Verification + Phase 3 Community-Scale Research ✅
+
+**Status**: **SESSION COMPLETE — Checkpoint infrastructure verified and ready; Phase 3 community-scale research delivered (3 documents, 16K+ words)**
+
+### Accomplishments This Session
+
+**1. Comprehensive May 19 Checkpoint Infrastructure Verification** ✅
+- **Jetson Health**: Responsive (33 days uptime), Docker containers healthy (stockbot Up 27h, web Up 7d)
+- **Alpaca API**: Verified connected and authenticated, account $115,401.77 equity, PDT enabled
+- **Checkpoint Script**: `may16_checkpoint_query_alpaca.py` functional, test run successful
+- **Lever A Status**: Deployed May 16 21:16 UTC across 2 sessions (threshold_multiplier 0.50→0.40, confidence_floor 0.50→0.45), confirmed active on Jetson
+- **Pre-Checkpoint Readiness**: All systems ready for May 19 20:00 UTC execution
+- **Decision Framework**: Scenarios prepared (PASS/STILL_MISS/FAR_MISS) with post-checkpoint actions
+
+**2. Phase 3 Community-Scale Deep Dives — COMPLETE** ✅
+- **Research Deliverables**: 3 production-ready documents, 16,388 total words
+  1. Emergency-Response-Infrastructure.md (5,455 words, 17 citations): ICS structure, comms stack, triage, warming shelters, 3 Midwest scenarios
+  2. Infrastructure-Interdependency.md (5,054 words, 15 citations): Dependency matrix, cascade timeline analysis, interventions, mapping exercise
+  3. Mutual-Aid-Networks.md (5,879 words, 15 citations): Skills census, time banking, barn-raising, tool library, exchange models
+- **Key Findings**: Infrastructure cascades faster than communities expect (4–8h cells, 12–24h food, 48–72h water); mutual aid must pre-exist crises; energy is the hub dependency
+- **File Locations**: `projects/systems-resilience/community/01-03-*.md`
+- **Integration**: Follows Phase 1-2 conventions, cross-referenced with existing docs
+- **Next Work**: Phase 3 integration into consolidated guide OR Phase 4 expansion
+
+### Work Completed vs. Planned
+
+| Task | Planned | Completed | Status |
+|---|---|---|---|
+| Stockbot checkpoint infrastructure verification | May 17 | ✅ Complete | Ready for May 19 |
+| systems-resilience Phase 3 research | Queued | ✅ Complete (16K words) | 3 docs production-ready |
+| May 19 decision framework | May 17-18 | ✅ Complete | Scenarios A-C planned |
+| Lever A verification | May 17 | ✅ Complete | Confirmed deployed/active |
+
+### Current Project Status
+
+| Project | Status | Next Milestone | Lead Responsibility |
+|---|---|---|---|
+| **stockbot** | Checkpoint infrastructure ready | May 19 20:00 UTC checkpoint | Orchestrator (scheduled) |
+| **systems-resilience** | Phase 3 complete, awaiting integration | Phase 3 consolidation or Phase 4 expansion | Orchestrator (future) |
+| **resistance-research** | Tier A integrated, Wave 1 ready | User Wave 1 execution May 18 | User action |
+| **All other projects** | Blocked on user actions | See Session 1111 checkin | User action |
+
+### Needs User Input
+
+1. **resistance-research Wave 1 Batch 1 execution** (May 17-18, ~2 hours) — email to 5 pre-verified contacts
+2. **cybersecurity-hardening VeraCrypt restart & encryption** (Windows machine) — enable background encryption
+3. **mfg-farm test print** (0.20mm, PLA+, 3 walls, 220–225°C) — evaluate snap-arm clearance
+4. **stockbot post-May-19-checkpoint decision** — scenarios PASS/STILL_MISS/FAR_MISS awaiting checkpoint result
+
+### Suggested Priorities for Next Session
+
+1. **May 19 stockbot checkpoint** (scheduled at 20:00 UTC)
+   - Execute `MAY_19_CHECKPOINT_PROTOCOL.md`
+   - Log outcome (PASS/STILL_MISS/FAR_MISS)
+   - Execute post-checkpoint actions (Lever B or Gate 2 planning)
+
+2. **If resistance-research Wave 1 executes successfully (May 18-20)**:
+   - Tier A updates staging for June 7 distribution
+   - Response monitoring and Batch 2-3 coordination
+   - Domain E research (June 15 target)
+
+3. **systems-resilience Phase 3 consolidation** (optional, lower priority)
+   - Integrate 3 community docs into consolidated guide
+   - Or begin Phase 4 (education, agricultural refinement, local government coordination)
+
+---
+
+## Session 1111 (Orchestrator) — May 17, 2026, 02:44–03:35 UTC — State Verification + May 19 Checkpoint Prep ✅
+
+**Status**: **SESSION COMPLETE — State verified, May 19 checkpoint protocol created, no autonomous work available until user actions complete**
+
+### Accomplishments This Session
+
+**1. Comprehensive State Audit**
+- ✅ ORCHESTRATOR_STATE.md verified: Tier A integration complete (Session 1110)
+- ✅ BLOCKED.md reviewed: 2 active blocks (both user actions — VeraCrypt Windows restart, test print execution)
+- ✅ INBOX.md checked: No new items to process
+- ✅ Jetson health: 33 days uptime, Docker healthy, stockbot container Up 26h post-Lever-A deployment
+- ✅ EXPLORATION_QUEUE assessment: All items complete through Session 952
+
+**2. May 19 Checkpoint Protocol — COMPLETE**
+- **Deliverable**: `projects/stockbot/MAY_19_CHECKPOINT_PROTOCOL.md` (comprehensive diagnostic guide)
+- **Content**: 
+  - Pre-checkpoint verification steps (SSH, Docker, log checks)
+  - Checkpoint execution command (Alpaca API query)
+  - Three scenario classification trees (PASS / STILL_MISS / System Failure)
+  - Detailed actions for each outcome (logging, commits, Lever B escalation)
+  - Timing schedule and decision tree
+  - Committed: 6c73147
+- **Strategic value**: Enables smooth May 19 checkpoint execution with clear decision criteria for Lever A effectiveness assessment
+
+**3. Work Availability Assessment**
+- **Blocked**: resistance-research (awaiting user Wave 1 execution May 18-20)
+- **Blocked**: cybersecurity-hardening (Windows VeraCrypt restart pending)
+- **Blocked**: mfg-farm (test print execution pending)
+- **Blocked**: seedwarden (user gates pending)
+- **In wait mode**: stockbot (next checkpoint May 19 20:00 UTC)
+- **Conclusion**: No further autonomous work available until user executes pending actions
+
+**4. Project Status Roll-up**
+
+| Project | Status | Next Milestone | Blocker |
+|---|---|---|---|
+| **stockbot** | Gate 1 NEAR_MISS, Lever A deployed | May 19 checkpoint | Time (2 days) |
+| **resistance-research** | Tier A integrated, Phase 1 Wave 1 ready | User Wave 1 execution | User action (May 18) |
+| **cybersecurity-hardening** | Phase 1 paused at VeraCrypt | Pre-boot test completion | User action (Windows restart) |
+| **mfg-farm** | Pre-print complete | Test print results | User action (execute print) |
+| **seedwarden** | Track B ready, Track A blocked | User gates (May 15-28) | User action (3 gates) |
+| **open-repo** | PRs open awaiting review | PR merge | Maintainer action |
+| **systems-resilience** | Phase 2 complete | Phase 3 research (June+) | Time/priority |
+| **All other projects** | Awaiting user review | Various | User decision |
+
+### Needs User Input
+
+1. **resistance-research Phase 1 Wave 1 Batch 1 execution** (May 17-18, ~2 hours)
+   - Template pre-fill with Goodman, Weiser, Chenoweth, Bassin, Elias contacts
+   - Test send to verify URLs and placeholders
+   - Send to all 5 Batch 1 contacts
+
+2. **cybersecurity-hardening VeraCrypt completion** (Windows machine)
+   - Restart Windows machine, type VeraCrypt pre-boot password
+   - Click Encrypt in VeraCrypt to begin background encryption
+   - Resume Phase 1 walkthrough from step 1.4
+
+3. **mfg-farm test print execution** (0.20mm layer height, PLA+, 3 walls, 220–225°C)
+   - Evaluate snap-arm clearance (FDM_TOLERANCE 1.4mm risk area)
+   - Report pass/fail decision
+
+### Suggested Priorities for Next Session (May 18-19)
+
+1. **If user completes Wave 1 Batch 1 send (May 17-18)**:
+   - Orchestrator can begin Tier A updates staging for June 7 distribution
+   - Post-Wave-1 coordination and response monitoring
+   - Domain E research (Election Administration Seizure) — June 15 target
+
+2. **If user completes VeraCrypt restart & Encrypt (Windows)**:
+   - Continue Phase 1 walkthrough Steps 1.4–1.7
+   - Coordinate with May 25-28 review period
+
+3. **May 19 20:00 UTC — stockbot checkpoint execution**:
+   - Run May 19 checkpoint protocol (ready in `MAY_19_CHECKPOINT_PROTOCOL.md`)
+   - Determine if Lever A successful or Lever B needed
+   - Update WORKLOG.md with outcome
+   - Gate 2 planning if PASS
+
+---
+
 ## Session 1110 (Orchestrator) — May 17, 2026, 02:31–02:50 UTC — Tier A Updates Integration Complete ✅
 
 **Status**: **SESSION COMPLETE — Tier A updates research (Session 1109) + integration (Session 1110) fully complete; Domains 33, 35, 25, 19f ready for user review**
