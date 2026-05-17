@@ -1,5 +1,25 @@
 # Work Log
 
+## Session 1119b (Research Agent) — May 17, 2026 — Systems-Resilience Phase 4b Options Comparison
+
+**Summary**: Produced a 2,400-word decision document comparing the three remaining Phase 4b expansion options for systems-resilience. Document enables immediate user decision (deadline June 1).
+
+### Phase 4b Options Comparison — COMPLETE
+
+**Deliverable**: `projects/systems-resilience/PHASE_4B_OPTIONS_COMPARISON.md` (~2,400 words)
+
+**Key findings**:
+- **Recommendation: Option 2 (Agricultural Intensification)** — highest-value single addition due to irreversibility of delay; perennial systems take 3–5 years to establish, meaning delay has real production consequences
+- **Option 3 (Knowledge Preservation)**: fastest to complete (13–19 hrs), lowest research overhead; second-best if time is the primary constraint
+- **Option 4 (Governance Scaling)**: fills the 150–500 person governance gap not addressed anywhere in Phase 1–3; prerequisite for Phase 5 regional federation work; lowest hour estimate (12–17 hrs)
+- **If running two options**: Agricultural Intensification + Governance Scaling pair well (June–July 2026)
+- All three options completable by June 1 if started by May 20
+- Comparison matrix included covering: effort, unique value, integration complexity, user skill transfer, downstream dependencies, June timeline feasibility
+
+**Research method**: Read existing Phase 1–4a content (PLAN.md, PHASE_4_SCOPING.md, individual/06-agriculture.md, 04-technology-repair-community-infrastructure.md, README.md); web search for primary source validation on all three options (Savanna Institute 2025–2026 farm data, NEH oral history program, Ostrom polycentric governance case studies, FEMA 2025 guide, Midwest seed library governance models)
+
+---
+
 ## Session 1118 (Orchestrator) — May 17, 2026 04:39–06:00 UTC — Parallel Exploration Queue Execution (Stockbot + Resistance-Research)
 
 **Summary**: Spawned two parallel autonomous agents to work Exploration Queue items while top projects await external events. Both agents completed research deliverables with production-ready outputs.
