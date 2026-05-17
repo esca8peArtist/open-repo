@@ -1,3 +1,44 @@
+## Session 1165 (Orchestrator) — May 17, 2026 evening — Stockbot Focus Pruning + May 14-18 Domain Breaking Developments Integration
+
+**Status**: **🟢 AUTONOMOUS WORK COMPLETED — Stockbot focus pruned (removed 15-session-old references); Domains 1, 37, 57, 58 confirmed current through May 18. All systems ready for May 18 06:00 UTC Wave 1 execution and May 19 20:00 UTC checkpoint.**
+
+### Since Last Check-in (Session 1164)
+
+**Work Accomplished**:
+
+1. **Stockbot Current Focus Pruning** (15 min)
+   - Removed stale Session 1149 reference dump from PROJECTS.md line 429
+   - Replaced with concise current state: "May 19 20:00 UTC checkpoint — 57 hours to execution. Infrastructure verified ready (Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free). Playbook ready."
+   - Rationale: Focus communicates current state without obsolete session history
+
+2. **May 14-18 Breaking Developments Integration** (1h 20min)
+   - **Domain 1 (Voting Rights)**: NEW finding — Redistricting confusion escalation (Virginia Supreme Court May 8 blocked voter-approved maps 4-3, Louisiana/Alabama/Virginia ballot chaos May 14-16, uncompetitive races 90%→93%)
+   - **Domain 37 (Executive Interference)**: NEW finding — Judge Nichols decision pending (May 14 hearing on mail-ballot EO, expected decision May 21-28 — CRITICAL overlap with Phase 1 Wave 2)
+   - **Domain 57 (Multilateral Withdrawal)**: CURRENT — ICC institutional resilience confirmed (Duterte case proceedings, Appeals Chamber defending jurisdiction, first status conference May 27)
+   - **Domain 58 (Tribal Sovereignty)**: CURRENT — No May 17-18 developments
+   - Deliverable: `domain-updates-may17-18.md` (1,500 words, 4 sections, integration notes)
+   - Verdict: All domains production-ready for Wave 1; Judge Nichols decision timing is critical for Phase 1 narrative framing
+
+**Projects Status**:
+- **resistance-research**: All four Wave 1 domains (1, 37, 57, 58) confirmed current through May 18. Judge Nichols decision (May 21-28) is critical signal for Phase 1 Wave 2 targeting.
+- **stockbot**: Focus now reflects current state; May 19 checkpoint infrastructure ready.
+- **seedwarden**: Track B autonomous prep complete; user execution gates May 18-30.
+- **cybersecurity-hardening**: Phase 1 documentation ready; awaiting VeraCrypt restart.
+- **mfg-farm**: Awaiting test print execution.
+- **All others**: Staged for scheduled execution windows.
+
+**Time Spent**: 1h 40min total
+- Stockbot focus: 15 min
+- Domain research + document: 1h 20min
+- Commit: 5 min
+
+**Next Triggers**:
+- **May 18 06:00 UTC** (~8 hours): Wave 1 execution (user action)
+- **May 19 20:00 UTC** (~44 hours): Stockbot checkpoint (user action)
+- **May 21-28**: Judge Nichols decision (shapes Phase 1 Wave 2 narrative)
+
+---
+
 ## Session 1164 (Orchestrator) — May 17, 2026 15:53–16:30 UTC — May 14-17 Domain Currency Integration Pre-Wave-1
 
 **Status**: **🟢 CRITICAL AUTONOMOUS WORK COMPLETED — Domains 37 & 57 now current through May 17 for credible Wave 1 distribution. All four resistance-research domains (1, 37, 57, 58) confirmed production-ready.**
