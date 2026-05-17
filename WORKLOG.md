@@ -1,5 +1,23 @@
 # Work Log
 
+## Session 1117 (Research Agent) — May 17, 2026 — Systems-Resilience Phase 4 Scoping Complete
+
+**Summary**: Produced Phase 4 scoping document (`projects/systems-resilience/PHASE_4_SCOPING.md`, ~4,000 words) covering all four candidate topics (Technology Repair, Agricultural Intensification, Education/Knowledge Preservation, Governance Scaling). Document includes topic deep dives with scope estimates, recommended sequencing (Technology Repair first), resource totals (55–79 hours for all four topics), success criteria per topic, and a decision framework for Anya to choose between full Phase 4, minimal Phase 4, or deferral.
+
+**File**: `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/PHASE_4_SCOPING.md`
+
+**Key findings**:
+- Technology Repair is the highest-priority Phase 4 topic (most immediate gap in Phase 1-3; zero dependency on other Phase 4 topics; 15-21 hours to produce 2 documents)
+- Agricultural Intensification is second (builds directly on Phase 1 individual/06-agriculture.md; perennial systems and seed saving require lead time)
+- Education/Knowledge Preservation is third (Kiwix + Raspberry Pi offline server is practical and implementable now; oral history methodology from NEH and Foxfire precedents)
+- Governance Scaling is fourth (genuinely Phase 5 territory for most communities; Phase 3 governance covers 0-24 month disruptions adequately)
+- Three critical gaps identified in Phase 1-3: equipment maintenance assumed not taught, food production is annual-garden-scale only, knowledge assumed to persist
+- Phase 5 sketch provided (metalworking, medical system continuity, long-range communication infrastructure, regional federation governance)
+
+**Sources researched**: 40+ sources across all four topics; NEH oral history programs, Kiwix/Raspberry Pi offline infrastructure, Seed Savers Exchange (Decorah IA), Savanna Institute Midwest agroforestry, Land Institute Kernza, iFixit + Repair Café, NREL solar maintenance manual, Elinor Ostrom polycentric governance, FEMA local officials guide, Christchurch earthquake bottom-up governance case study, John Deere Right to Repair $99M settlement (April 2026)
+
+---
+
 ## Session 1116 (Orchestrator + Stockbot Agent) — May 17, 2026 04:09–05:00 UTC — May 19 Checkpoint Execution Staging Complete
 
 **Summary**: Orchestrator spawned stockbot agent to complete pre-checkpoint preparations (Item 49 decision tree verification + May 19 execution infrastructure staging). All checkpoint infrastructure now production-ready. May 19 execution can proceed at 20:00 UTC with <2 minute decision lookup.
