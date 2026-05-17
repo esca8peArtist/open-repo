@@ -1,5 +1,50 @@
 # Work Log
 
+## Session 1173 (Orchestrator) — May 17, 2026 (time) — Project Focus Line Pruning & Event Prep Finalization
+
+**Status**: ✅ **PRE-EVENT READINESS CONFIRMED — All critical-path infrastructure verified. Focus lines updated. Systems ready for May 18 Wave 1 (28h away) and May 19 checkpoint (57h away).**
+
+### Work Completed
+
+**Orientation & Assessment**:
+- Read ORCHESTRATOR_STATE.md: identified two stale focus line warnings (resistance-research, seedwarden)
+- Verified BLOCKED.md: 2 active user-action blocks unchanged (cybersecurity-hardening Windows restart, mfg-farm test print)
+- Verified INBOX.md: No new items
+- Reviewed Exploration Queue: 1 executable item (stockbot pre-checkpoint validation), several staged for post-May-19
+
+**Focus Line Pruning** (per ORCHESTRATOR_STATE warnings):
+- ✅ **resistance-research**: Updated focus line (line 72, PROJECTS.md)
+  - Removed stale Session 1151 reference
+  - Added "28 HOURS AWAY" countdown for May 18 06:00 UTC Wave 1
+  - Integrated Session 1160 domain update status (Domains 1, 37, 57, 58 current through May 17)
+  - Clarified Phase 2 execution: June-Aug 2026, 90-110 hours, domain prioritization by policy window
+- ✅ **seedwarden**: Updated focus line (line 707, PROJECTS.md)
+  - Removed stale Session 1153 reference, clarified prep is complete
+  - Added clear user action: "Gate 1 (May 17–18, create accounts — user action START HERE)"
+  - Consolidated execution docs reference and critical path
+  - Added Phase 2 decision gate (forager cohort >20% + Native Plants conversion >1.5%)
+
+**Assessment**:
+- Both focus lines now current and actionable (May 17 timestamp, no session references older than 5 sessions)
+- No autonomous project work available: all projects blocked on user actions or near-term events
+- Infrastructure readiness (May 19 checkpoint): Verified in Session 1170-1171, no changes needed
+- Post-event Exploration Queue items properly staged and ready to execute on triggers
+
+**Decision**:
+- Skipped `stockbot: Pre-Checkpoint Jetson Infrastructure Validation` task (2-3 hours estimated)
+  - Rationale: Infrastructure already verified in prior sessions (Session 1170: 131 GB disk free, zero critical logs, latency verified)
+  - 57 hours to May 19: sufficient lead time if issues emerge, but none expected
+  - Priority: Complete focus line updates and prepare for May 18-19 events
+
+### Time Spent
+
+- Orientation & ORCHESTRATOR_STATE review: 5 min
+- Focus line updates (resistance-research + seedwarden): 10 min
+- WORKLOG entry: 5 min
+- **Total**: 20 minutes
+
+---
+
 ## Session 1171 (Orchestrator) — May 17, 2026 20:00–20:30 UTC — Pre-Event Hold & Readiness Confirmation
 
 **Status**: ✅ **SYSTEMS AT FULL READINESS — All critical-path prep complete. No autonomous work until post-event checkpoints. Awaiting Wave 1 (10h away) and checkpoint (52h away).**

@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T14:13:53Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T17:29:38Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.0% | Reset in 34h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.3% | Reset in 30h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -28,15 +28,15 @@
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
-**Focus**: **SCOPE RESET (2026-05-16): project is now user's personal OpSec implementation plan.** Distribution outreach materials (Tier 1/2/3 templates, contact lists, execution calendar) transferred to resistance-research. Build a phased personal implementation plan for: full-spectrum threat model (government surveillance + doxxing + general privacy), devices: Windows + iPhone/iOS + Linux, starting from scratch. Use existing research in project dir (threat-model.md, opsec-playbook.md, implementation-guid … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **PHASE 1 IN PROGRESS — Windows/iPhone/Signal/Authenticator/Passwords setup (Sessions 1157-1162).** User at step 1.3 (VeraCrypt pre-boot test pending Windows restart). **NEW (Session 1162)**: PHASE_1_NEXT_STEPS_GUIDE.md (steps 1.4-1.7 detailed walkthrough: Ente Auth, Bitwarden, data broker opt-outs, iPhone passcode, 1.5-2 hrs) + PHASE_2_PLANNING.md (7-module roadmap: Mullvad VPN, hardware keys, data broker automation, behavioral practices, $200-300, 3 weeks). Both documents production-ready fo … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **May 19 checkpoint execution infrastructure VERIFIED READY (95% confidence)** (Session 1149: comprehensive Jetson health audit + Docker container validation + Lever A parameter confirmation + network/API/webhook testing). 2 AAPL sessions lgbm_ho + ridge_wf healthy on Jetson, Lever A parameters live tm=0.40 cf=0.45, 131 GB disk free, zero ERROR/CRITICAL logs in 72h. Infrastructure deliverable: PRE_CHECKPOINT_VALIDATION_MAY19.md. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (PASS/MISS scenar … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **May 19 20:00 UTC checkpoint execution — 57 hours to go. Infrastructure verified ready (Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free, zero critical logs). Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (pre-flight 19:30 UTC → checkpoint query 20:00 UTC → decision tree for PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2 scenarios). User action: execute playbook at 20:00 UTC May 19. Post-checkpoint: Gap 4 options implementation ready if PASS. Business risk ~40%, infrastructu … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[AUTONOMOUS PREP COMPLETE] Track B gates ready for execution May 18–28.** Session 1152 prep work (May 17): 4 autonomous docs created — `TRACK_B_EMAIL_STAGING.md` (5 emails staged, copy-paste ready), `TRACK_B_ANALYTICS_SETUP_GOOGLE_SHEETS.md` + `TRACK_B_ANALYTICS_SETUP_DISCORD_AND_GA4.md` (complete setup guides), `TRACK_B_DAY_1_CONTENT_PRODUCTION_CHECKLIST.md` (specs + mockup export list). No pending user decisions on critical path (Canva Pro deferred to Gate 2 workaround, Kit Creator free  … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[AUTONOMOUS PREP COMPLETE — SESSION 1153]** Track B execution guides complete. Session 1152 + 1153 prep work (May 17): 9 autonomous docs created. **Session 1153** creates 5 new execution guides:
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -88,6 +88,9 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: resistance-research — focus references Session 1151 (21 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: seedwarden — focus references Session 1153 (19 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
@@ -99,42 +102,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
+- Cross-referenced against domain-updates-may17-18.md (Session 1160 deliverable, status: complete)
+- Verified Domain 1 already updated through May 17 (Section 8.6)
+- Identified remaining work: Domains 37 & 57 still required May 14-17 updates
 
-**Ready-to-execute autonomous work** (no decision dependency):
-- Gate 1 social accounts (Instagram, TikTok, Pinterest): 45-60 min
-- Buffer/Later scheduling setup: 20 min
-- Analytics infrastructure (Google Sheets, Discord, GA4): 60-90 min
-- Day 1 content production (using existing mockup images): 2-3 hours
-- Email copy pre-staging + Email 5 date fix: 30 min
+**Deliverable 1: Domain 37 Integration** (25 min)
+- **Section IX.5 added**: Mail Ballot EO Litigation Update — Judge Carl Nichols Injunction Hearing (May 14, 2026)
+- Key finding: Judge Nichols (Trump appointee) heard oral arguments May 14 on preliminary injunction motion to block March 31 mail ballot EO
+- Mixed signals: hesitation on immediate relief vs. wait for concrete harm; decision imminent
+- Litigation implications: Multiple parallel suits; USPS mail-ballot restriction most operationally disruptive
+- Strategic note: Trump appointee hesitation pattern suggests constitutional arguments have bench strength independent of judicial ideology
+- Timeline: June 30, 2026 deadline critical (OMB must finalize USPS implementation guidance by then)
+- **Status**: Production-ready for Wave 1 distribution
+- **Committed**: c1a78a6a (domain updates commit)
 
-**Deliverable**: `projects/seedwarden/TRACK_B_EXECUTION_READINESS_PLAN.md` (14,942 bytes)
-- Critical path unchanged (Gate 2 Brand Kit → zone-cards → Gate 3 → launch)
-- Total user time May 17-30: 18-24 hours distributed across 13 days
-- No decision-dependency delays; execution can begin immediately
+**Deliverable 2: Domain 57 Integration** (20 min)
+- **Section 3.2a added**: Hungary Update — May 2026 Democratic Reversal and Planned ICC Rejoin
+- Key correction: Peter Magyar's Tisza Party won April 12 election, ending Orbán's 16-year rule (53.6% landslide)
+- Immediate commitment: New government pledged to reverse ICC withdrawal and rejoin ICC
+- Procedural timeline: Formal withdrawal June 2 effective; rejoin via Article 127.3 immediately after
+- Strategic significance: Demonstrates multilateral withdrawal is reversible when democratic governments restored
+- Revised narrative: Hungary represents democratic reversal *containing* ICC withdrawal, not permanent erosion precedent
+- **Status**: Production-ready for Wave 1 distribution
+- **Committed**: c1a78a6a (domain updates commit)
 
-**Status**: ~6-7 hours of autonomous prep work available now. Zone-card production is gating dependency for all Gate 3 work; must begin May 24 (same day Brand Kit completes).
+**Assessment**:
+- All four domains (1, 37, 57, 58) now current through May 17, 2026
+- Domain currency prevents recipients from perceiving Wave 1 materials as dated
+- May 14-17 breaking developments (Nichols hearing, Magyar victory) integrated with proper sourcing
+- Wave 1 distribution ready on May 18 06:00 UTC without requiring user manual updates
 
----
+**Time spent**:
+- Orientation + ORCHESTRATOR_STATE/domain-updates review: 5 min
+- Domain 37 update (research + integration): 12 min
+- Domain 57 update (research + integration): 8 min
+- Git commit + WORKLOG entry: 5 min
+- **Total session time**: 30 minutes
+- **Autonomous work completed**: 100% (no user action needed)
 
-### Time Spent
-
-- Orientation + project status analysis: 10 min
-- Parallel agent spawn + monitoring: 15 min
-- CHECKIN + WORKLOG updates: 10 min
-- **Total**: 35 min (two subagents completed 45+ min autonomously in parallel)
-
-### Next Session
-
-**Immediate Triggers** (next 24 hours):
-- **May 18 06:00 UTC** — resistance-research Wave 1 execution begins (user action, no orchestrator work)
-- **May 18 12:00 UTC** — apply contingency decision tree if Wave 1 metrics warrant (orchestrator monitoring)
-
-**May 19 20:00 UTC** (55 hours from now):
-- Stockbot checkpoint execution (user action, orchestrator analysis)
-
-**Available Exploration Work** (if idle before May 18):
-- Seedwarden: Begin Gate 1 account setup (social accounts, 45-60 min) — fully independent, ready now
-- Seedwarden: Analytics infrastructure setup (GA4, Sheets, Discord, 60-90 min) — fully independent, ready now
-- Stockbot: Final infrastructure health check (optional, 30 min) — checkpoint already verified ready
-
-**Status**: All critical systems ready. Two contingency playbooks staged. May 18-19 execution window prepared.
+**Next actions**: Awaiting May 18 06:00 UTC Wave 1 execution (user-initiated)
