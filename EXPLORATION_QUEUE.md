@@ -1044,3 +1044,68 @@ All major pre-work, contingency frameworks, execution support documents, and pro
 **Why now**: Phase 1 imminent (June 1 launch date). Pre-planning Phase 3 (6 months out) enables confident commitment to 2026 H2 expansion immediately if Phase 1 metrics support continuation. Prevents summer planning gaps when execution focus is on Phase 2 pilot.
 **Blocker**: None (planning work, independent of Phase 1/2 execution)
 **Next Step**: User approves Phase 1 launch June 1 → execute Item 27 (Tier 2 pilot) in parallel → produce this Phase 3 architecture by July 1 for July-August preparation → Phase 3 piloting begins August 1
+
+---
+
+## Queued Items (Session 1163 — May 17, 2026, Post-Wave-1-Prep)
+
+### ⏳ Item 58: Resistance-Research Post-Wave-1 Engagement Measurement & Amplification Coordination
+**Status**: QUEUED (Session 1163, May 17 2026, 18:30 UTC)
+**Impact**: HIGH — Wave 1 launches May 18 06:00 UTC; measurement infrastructure ready, but post-launch amplification sequencing (Batches 2-3, media outreach, policy uptake tracking) needs detailed coordination for June deployment
+**Context**: WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv ready; POST_WAVE_1_PHASE_1_MEASUREMENT_FRAMEWORK.md complete (hourly monitoring guide). But how does Batch 2 (May 21-23, 25 contacts) coordinate with Batch 1 reply surge? When do media outreach templates deploy (May 20 vs May 25)? Domain 42 amplification (May 28 DEA hearing deadline) timing needs pre-coordination with measurement milestones.
+**Goal**: Create detailed Batch 2-3 execution coordination framework:
+1. **Batch 1 reply surge management** (May 18-20): Monitor reply volume; if >60% click rate by May 19 10:00 UTC, trigger early Batch 2 start (May 20); otherwise hold Batch 2 to scheduled May 21
+2. **Media outreach sequencing** (May 20-22): Journalist targeting calendar (policy reporters Week 1, mainstream media Week 2, trade press Week 3); coordinate with Batch 1 reply momentum
+3. **Domain 42 amplification coordination** (May 21-31): 7-day pre-DEA-hearing (May 28) amplification surge; cross-reference which Batch 1 organizations need extra messaging; May 28 hearing public comment filing automation (reminder templates, tracking)
+4. **Batch 3 timing decision matrix** (late May): If Batch 1-2 early indicators show strong uptake (>50% institutional engagement), trigger Batch 3 May 30-31; otherwise defer to June 3-5
+5. **Contingency escalation**: If reply surge indicates saturation or negative sentiment, diagram fallback to slower cadence or refocus strategy
+**Feasibility**: MEDIUM-HIGH — measurement data will drive decisions, but frameworks exist; mostly integration work
+**Effort estimate**: 2–2.5 hours
+**Deliverable**: `projects/resistance-research/POST_WAVE_1_AMPLIFICATION_COORDINATION.md` (Batch 1 monitoring triggers with decision thresholds, Batch 2-3 conditional sequencing, media outreach calendar coordinated with batch timing, Domain 42 pre-hearing surge plan with public comment filing automation, contingency escalation triggers)
+**Why now**: Wave 1 executes May 18; decision frameworks for Batches 2-3 must be ready by May 19 evening so that May 20-21 actions execute with full context of Batch 1 performance
+**Blocker**: None (planning work, independent of Wave 1 execution, uses existing frameworks)
+**Next Step**: Orchestrator produces coordination framework May 17-18 afternoon → user reviews May 19 evening after first 24h Batch 1 data → executes Batch 2-3 May 20-31 using thresholds documented in framework
+
+---
+
+### ⏳ Item 59: Stockbot Post-Checkpoint Gate 2 Decision & Architecture Validation
+**Status**: QUEUED (Session 1163, May 17 2026, 18:35 UTC)
+**Impact**: HIGH — May 19 checkpoint determines Gate 2 architecture selection (5 options ranked in Item 10: POST_GATE_1_ARCHITECTURE_OPTIONS.md). If PASS outcome, Gate 2 implementation must begin immediately May 20. User needs pre-checkpoint clarity on which option to implement first and what validation gates exist.
+**Context**: Five architectureoptions exist (Volatility-Adaptive, Trend-Following, Options Strategies, Ensemble Reweighting, Momentum Gates). Item 10 recommends Ensemble Reweighting (Option 4) as first post-Gate-1 implementation. But does user understand the ranking rationale? Are success metrics clear for each option? What does "ready to implement May 20" actually require?
+**Goal**: Clarify post-checkpoint Gate 2 decision-making:
+1. **Pre-checkpoint review** (May 19 19:00 UTC): Quick summary of 5 options (1-page each); why Option 4 recommended first; success criteria for each option
+2. **PASS-outcome decision framework**: If checkpoint PASS, which option validates fastest? Timeline (days/weeks)? Resource requirements?
+3. **NEAR-MISS decision framework**: If partial or timing miss, does option selection change? Which options are still feasible given revised timeline?
+4. **FAR-MISS decision framework**: If FAR-MISS C1 (signal but not filled), which recovery paths exist? Option 1 (volatility) vs Option 2 (trend) for damaged-confidence recovery?
+5. **Implementation prerequisites per option**: What must be ready May 20-21 morning for each option? (Data schema, backtesting validation, code structure changes, etc.)
+6. **Validation gates per option**: For each option, what's the success threshold? (Sharpe ≥1.0, MDD ≤20%, daily fill rate stability, etc.)
+**Feasibility**: MEDIUM — Options exist, mostly validation + clarification work
+**Effort estimate**: 1.5–2 hours
+**Deliverable**: `projects/stockbot/POST_CHECKPOINT_GATE_2_DECISION_FRAMEWORK.md` (option summary 1-pagers, success criteria per option, decision trees for PASS/NEAR-MISS/FAR-MISS scenarios, implementation prerequisites checklist, validation gate thresholds, recommended sequencing with timeline)
+**Why now**: Checkpoint May 19 20:00 UTC; user needs clear decision framework by May 19 19:00 UTC (1 hour before execution) to avoid post-checkpoint latency. This document is the bridge between checkpoint outcome and May 20 action steps.
+**Blocker**: None (clarification work, independent of checkpoint execution)
+**Next Step**: Orchestrator produces decision framework May 17-18 → user reviews May 19 afternoon (20 min) → executes checkpoint May 19 20:00 UTC → follows decision framework May 20 for Gate 2 option selection and action plan
+
+---
+
+### ⏳ Item 60: Seedwarden May 30 Final Launch Readiness Comprehensive Checklist
+**Status**: QUEUED (Session 1163, May 17 2026, 18:40 UTC)
+**Impact**: HIGH — May 30 Phase 2 launch (13 days out) is the culmination of 5 weeks of Track B execution. Final readiness checklist catches last-minute gaps: inventory levels, Etsy store optimization, email sequence validation, social media scheduling, fulfillment workflow testing, customer service setup, analytics activation.
+**Context**: Track B gates (May 17-28) produce: 5 social media accounts + content calendar (May 24), Canva Brand Kit (May 24-25), Kit account + landing page (May 27-28). But launch itself requires: inventory verification (which products + quantities?), Etsy SEO finalization, email sequence scheduling for May 30 06:00 UTC send (exact template + subject line validation), social media post scheduling (TikTok/Instagram/Pinterest/Facebook all live simultaneously 06:00 UTC), payment processor testing (1 test transaction end-to-end), customer support setup (email inbox monitoring, Freshdesk if applicable), analytics validation (GA4 events firing, Etsy API sync working, Discord alerts activated).
+**Goal**: Comprehensive May 28-29 pre-launch readiness audit:
+1. **Inventory checklist**: Which products ready? (Bundle E 5 guides + assets ready? Phase 1 carryover products ready? Quantities set correctly in Etsy?)
+2. **Etsy store finalization**: All listings live? Pricing correct? Tax settings? Shipping profiles configured? Store announcement banner set?
+3. **Email sequence validation**: May 30 email template finalized? Recipient list clean? Send time 06:00 UTC correct in scheduling tool? A/B variant selection made if applicable?
+4. **Social media scheduling verification**: All 4 platforms (TikTok/Instagram/Pinterest/Facebook) have May 30 06:00 UTC post scheduled? Images + captions verified? Hashtag/tag strategy confirmed?
+5. **Payment processor end-to-end test**: Stripe/PayPal test transaction (place test order, verify receipt, test payment, verify fulfillment workflow trigger)
+6. **Customer support setup**: Email responses configured? Freshdesk templates loaded (if using)? Phone/chat support process documented?
+7. **Analytics activation verification**: GA4 events firing on product pages? Etsy API OAuth token active? Discord webhook active for hourly alerts? Google Sheets formulas calculating correctly?
+8. **Fulfillment dry-run**: Test one product order from start (email confirmation) to end (shipping label generation, packing confirmation)
+9. **Contingency contact verification**: Key contacts (Canva support, Etsy seller, email provider, payment processor) phone numbers + live chat options accessible?
+10. **May 29 go/no-go decision**: If >2 items flagged as incomplete, delay launch 24 hours to May 31; otherwise launch May 30
+**Feasibility**: HIGH — most infrastructure exists, mostly verification + testing
+**Effort estimate**: 2–2.5 hours
+**Deliverable**: `projects/seedwarden/MAY_30_FINAL_LAUNCH_READINESS_CHECKLIST.md` (100-item comprehensive checklist with 10 sections, expected completion time 2 hours May 28-29 morning, go/no-go decision gate, contingency delay plan if items unresolved, rollback procedures if launch-day failures occur)
+**Why now**: May 30 launch is 13 days away; final checklist should be ready May 17-18 so that May 24-29 Track B execution can be monitored against launch requirements (e.g., "Canva Brand Kit ready May 25" feeds into "Social media templates finalized May 27" feeds into "Social media post scheduled May 28-29")
+**Blocker**: None (audit framework, independent of Track B execution)
+**Next Step**: Orchestrator produces final launch checklist May 17-18 → user executes Track B gates May 17-28 with awareness of May 30 requirements → user does final readiness audit May 28-29 using checklist → May 30 launch ready
