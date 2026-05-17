@@ -1,5 +1,40 @@
 # Work Log
 
+## Session 1135 (Orchestrator) — May 17, 2026 15:20–TBD UTC — Security Hardening + Queue Refresh
+
+**Objective**: Fix critical CLAUDE.md violations (0.0.0.0 bindings), add exploration queue items, prepare for May 18-19 event windows.
+
+**Status**: In progress
+
+**✅ COMPLETED**:
+- Security fix: containerized-agents docker-compose.yml (6 × 0.0.0.0 violations → 127.0.0.1 with env var overrides)
+  - OLLAMA_HOST, WEBUI_HOST, AGENTCORE_HOST, WIZARD_HOST, WIZARD_BIND, nginx
+  - All defaults changed to 127.0.0.1 (localhost) with env var override capability
+  - Commit: 7fc9fb8f
+- Verification: No remaining 0.0.0.0 bindings in containerized-agents
+
+**✅ COMPLETED**:
+- Exploration queue refresh — added 3 new items for May 17-19 pre-event window
+  - containerized-agents Option A Implementation spec
+  - stockbot May 19 pre-checkpoint infrastructure verification
+  - resistance-research Phase 1 Wave 1 pre-flight verification
+  - Commit: fbbd88fa
+
+**✅ COMPLETED**:
+- Stockbot May 19 pre-checkpoint infrastructure verification (1.5 hrs)
+  - Jetson SSH: ✓ Connected + verified healthy
+  - Docker containers: ✓ Both running (stockbot-api UP 34h, stockbot-web UP 7d)
+  - Trading sessions: ✓ Both AAPL sessions active + processing correctly
+  - Database: ✓ Current (May 15 19:16 UTC) + synchronized
+  - Checkpoint script: ✓ 31K, ready (104/104 tests passing)
+  - Disk: ✓ 60% free (131G available)
+  - Cron jobs: ✓ Configured, no conflicts with checkpoint time
+  - Market calendar: ✓ May 19 is trading day (Tuesday)
+  - Deliverables: MAY_19_INFRASTRUCTURE_CHECKLIST.md + PRE_CHECKPOINT_VERIFICATION_REPORT.md (both local, comprehensive 12-point checklist + health assessment)
+  - Status: READY FOR MAY 19 20:00 UTC CHECKPOINT (zero blockers, high confidence)
+
+---
+
 ## Session 1134 (Orchestrator) — May 17, 2026 14:42–15:20 UTC — Exploration Queue: Containerized-Agents Analysis
 
 **Objective**: Execute containerized-agents exploration queue item; complete requirements analysis for autonomous agent deployment patterns.
