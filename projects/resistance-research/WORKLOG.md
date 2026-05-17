@@ -2,6 +2,26 @@
 
 ---
 
+## May 17, 2026 — Session 1113 — Domain G Production: Press Freedom and Epistemic Infrastructure (First-Pass Complete)
+
+**Status**: FIRST-PASS COMPLETE — 7,200 words, 50 citations, production-ready
+**File**: `projects/resistance-research/domains/domain-G-press-freedom-epistemic-infrastructure.md`
+**Revision target**: June 15, 2026
+
+**Research completed this session**:
+- Section 1: Democratic theory of press freedom — Snyder-Stromberg JPE 2010 causal findings; Gao-Lee-Murphy Brookings 2018 municipal bond yield findings (5.5-6.4 basis points); Pew 2016 civic engagement data; Cincinnati Post closure study; Germany's Grundversorgung doctrine
+- Section 2: FCC weaponization — 8 FCC investigations; Iran war coverage threats (March 2026); Nexstar-Tegna merger (265 stations, 80% TV households, 8-state AG antitrust suit, California TRO); NRA v. Vullo (2024) coercion standard applied to FCC
+- Section 3: DOJ journalist subpoenas — Bondi memo (April 2025); WSJ subpoenas (March 4, 2026); PRESS Act history (House unanimous January 2024, blocked by Cotton December 2024); Free Speech Protection Act (Raskin-Kiley-Wyden, December 2024); Trump WSJ defamation suit dismissed (April 13, 2026)
+- Section 4: Public broadcasting dismantlement — CPB dissolution (January 5, 2026); NPR/PBS EO ruled unconstitutional (March 31, 2026, Judge Moss); VOA: Kari Lake ruled unlawful, 1,042 employees ordered reinstated but operational collapse to ~120 staff/7 languages; Democracy Defenders Fund lawsuit; Radio Free Europe lawsuit
+- Section 5: Local news collapse — Medill 2025 (213 news desert counties, 50M Americans, 136 closures/year); Alden Global Capital extraction model; nonprofit journalism (INN 400 newsrooms, $650-700M revenue = 1% of what newspapers generated 20 years ago); Press Forward $500M coalition; Local Journalism Sustainability Act H.R. 4514 119th Congress; New York $90M, Illinois journalism tax credits
+- Section 6: International precedents — Germany ARD/ZDF Rundfunkbeitrag/Grundversorgung; BBC Charter 10-year renewal model; Canada Local Journalism Initiative arm's-length administration ($36.1M actual expenditures, 2019-2022)
+- Section 7: Advocacy windows — FISA 702 data broker loophole (Wyden-Lee reform bill); FCC NRA v. Vullo challenges; NPR/PBS enforcement; state anti-SLAPP legislation; PRESS Act Senate strategy; antitrust reversal on Nexstar-Tegna; CPB charter reform; VOA independence statute
+
+**Source count**: 50 footnotes, all verified through search
+**Key gaps noted**: Cincinnati Post study author/journal not fully confirmed (used Shapiro/Gentzkow attribution from Harvard); Pew 2016 full data tables not pulled — top-line findings confirmed; FISA 702 actual reauthorization status as of May 2026 unclear (reauthorized April 2024 with sunset April 2026, reform bill introduced but outcome uncertain)
+
+---
+
 ## May 17, 2026 — Session 1112 — Domain G Scoping: Press Freedom and Epistemic Infrastructure as Democratic Architecture
 
 **Status**: SCOPING COMPLETE — initial research gathered, domain outline drafted
