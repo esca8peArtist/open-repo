@@ -96,6 +96,13 @@ services:
       options:
         max-size: "50m"
         max-file: "3"
+    # Memory limits (prevents runaway memory from consuming host resources)
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
 
   # --------------------------------------------------------------------------
   # open-webui — Chat UI + admin dashboard
@@ -142,6 +149,13 @@ services:
       options:
         max-size: "50m"
         max-file: "3"
+    # Memory limits
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
 
   # --------------------------------------------------------------------------
   # agentcore — Custom orchestration API
@@ -204,6 +218,13 @@ services:
       options:
         max-size: "100m"
         max-file: "5"
+    # Memory limits
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+        reservations:
+          memory: 2G
 
   # --------------------------------------------------------------------------
   # wizard — First-boot setup wizard
@@ -259,6 +280,13 @@ services:
       options:
         max-size: "50m"
         max-file: "3"
+    # Memory limits
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 512M
 
   # --------------------------------------------------------------------------
   # postgres — Relational database
@@ -291,6 +319,13 @@ services:
       options:
         max-size: "20m"
         max-file: "3"
+    # Memory limits
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 512M
 
   # --------------------------------------------------------------------------
   # redis — Message queue and cache (Tier 3+ profiles, multi-agent)
@@ -326,6 +361,13 @@ services:
       options:
         max-size: "20m"
         max-file: "3"
+    # Memory limits
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+        reservations:
+          memory: 256M
 
   # --------------------------------------------------------------------------
   # nginx — Reverse proxy for http://agent.local
@@ -359,6 +401,13 @@ services:
       options:
         max-size: "20m"
         max-file: "3"
+    # Memory limits
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
 
   # --------------------------------------------------------------------------
   # chromadb — Vector database for RAG
@@ -393,3 +442,10 @@ services:
       options:
         max-size: "20m"
         max-file: "3"
+    # Memory limits
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 1G
