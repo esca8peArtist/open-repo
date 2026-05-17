@@ -498,6 +498,47 @@ User must conduct May 30 field photography. Orchestrator ready to coordinate but
 
 ---
 
+## Queued Items (Session 1184)
+
+### ⏳ Item 33: Pre-Wave-1 Final Domain & Infrastructure Validation
+**Status**: QUEUED (Session 1184, May 17 2026, 19:38 UTC)
+**Impact**: CRITICAL — Wave 1 execution May 18 06:00 UTC (10 hours away); final validation ensures zero friction at launch
+**Goal**: Comprehensive final pre-flight validation 2 hours before Wave 1 execution: (1) domain content currency verification (Domains 1, 37, 57, 58 all current through May 17 with breaking developments integrated), (2) Gist live status check (8 Gists created and accessible via GitHub), (3) email templates verified (all placeholders filled, contact-specific personalizations correct), (4) contact list accuracy audit (all email addresses valid, no duplicates, organizational affiliations correct), (5) social media scheduling verified (posts queued in Buffer/Hootsuite with correct timing), (6) contingency communication channels operational (Discord, email fallbacks, Signal groups for real-time coordination)
+**Feasibility**: HIGH — All deliverables production-ready; validation is checklist execution, not research
+**Effort estimate**: 30-45 minutes
+**Deliverable**: `projects/resistance-research/WAVE_1_FINAL_PREFLIGHT_VALIDATION.md` (pre-flight checklist with pass/fail status for all 6 domains, Gist accessibility verification with URLs, email template spot-check (3 random templates verified), contact list sample verification (10 random contacts), social media queue screenshot verification, contingency communication test results — all completed 2 hours before Wave 1 launch time)
+**Why now**: 10 hours to Wave 1 execution; final validation catches last-minute issues (domain updates, Gist access problems, template errors, contact list corruption) that would delay or compromise launch
+**Blocker**: None (autonomous validation, no user actions required)
+**Next Step**: Execute validation checklist 04:00 UTC May 18 → submit pre-flight report to user by 05:00 UTC → Wave 1 launch proceeds 06:00 UTC with confidence
+
+---
+
+### ⏳ Item 34: Phase 1 Measurement System Comprehensive Staging
+**Status**: QUEUED (Session 1184, May 17 2026, 19:38 UTC)
+**Impact**: HIGH — Wave 1 measurement begins immediately after May 18 06:00 UTC execution; measurement infrastructure must be 100% ready with zero friction
+**Goal**: Pre-stage and verify all Phase 1 measurement infrastructure immediately available for May 18 06:00 UTC go-live: (1) Google Sheets master measurement dashboard (5-tab structure: Wave Summary, Contact Engagement, Sector Performance, Media Coverage, KPI Trends) with all formulas pre-built and test data validated, (2) Discord webhook configuration verified (daily summary messages, weekly trend alerts, anomaly detection triggers all operational), (3) email open/click tracking verified (all email templates have tracking pixels, Kit email integration tested), (4) social media analytics connected (Twitter/LinkedIn API keys valid, rate limits confirmed), (5) media monitoring setup (Google Alerts configured for organization mentions + domain keywords, Mention.com dashboard created), (6) incident response playbook staged (procedures for low engagement, high bounce rates, negative sentiment — all with response sequences), (7) May 18-22 measurement calendar created (daily standup topics, weekly review agenda, decision gates for Wave 2 trigger evaluation)
+**Feasibility**: HIGH — Measurement framework exists (Item 17 TIER_1_SUCCESS_MEASUREMENT_FRAMEWORK.md); staging is setup + verification work only
+**Effort estimate**: 1-1.5 hours
+**Deliverable**: `projects/resistance-research/PHASE_1_MEASUREMENT_SYSTEM_STAGING.md` (Google Sheets setup guide with formula verification steps, Discord webhook configuration + test message confirmation, email tracking verification checklist, social media API connectivity confirmation, media monitoring keyword list + alert configuration, incident response matrix with decision thresholds, May 18-22 daily measurement calendar with stakeholder responsibilities)
+**Why now**: 10 hours before Wave 1 launch; measurement must start immediately after distribution to capture early engagement signals (reply rates, open rates, org reactions). Pre-staging infrastructure eliminates setup delays on May 18.
+**Blocker**: None (autonomous infrastructure work)
+**Next Step**: Complete staging May 17 evening → run test message through Discord/email/social May 18 05:00 UTC → measurement system live immediately at Wave 1 go-live 06:00 UTC
+
+---
+
+### ⏳ Item 35: Stockbot Pre-Checkpoint State Readiness Audit
+**Status**: QUEUED (Session 1184, May 17 2026, 19:38 UTC)
+**Impact**: HIGH — Checkpoint May 19 20:00 UTC (57 hours); comprehensive state audit ensures capital, risk, and model alignment before execution
+**Goal**: Deep audit of stockbot Jetson state across 5 dimensions to verify readiness for May 19 20:00 UTC checkpoint: (1) **Capital & Position State**: Current equity balance, 52-ticker position manifest (entry dates, current prices, unrealized P&L), margin utilization, upcoming expirations or rebalance triggers, (2) **Model Configuration Verification**: lgbm_ho and ridge_wf session parameters (feature sets, hyperparameters, lookback windows), active trading hours, entry/exit thresholds, position-sizing logic, (3) **Infrastructure Health**: Jetson disk (target >50 GB free), Docker container status, Alpaca API connectivity, database sync state, cron job execution logs, (4) **Risk Parameter Validation**: Current position limits (15% single-ticker, 40% sector), loss-cutoff thresholds, covered-call overlay readiness (if applicable post-checkpoint decision), margin safety margin, (5) **Checkpoint Query Readiness**: Verify may19_checkpoint_query_alpaca.py script (or equivalent) will execute cleanly, expected output format understood, decision-tree classification procedure for 4 outcomes (PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2) pre-staging
+**Feasibility**: HIGH — Infrastructure audit is SSH queries + log review + script verification; pre-checkpoint work only
+**Effort estimate**: 45-60 minutes
+**Deliverable**: `projects/stockbot/MAY_19_PRECHECK_READINESS_AUDIT.md` (7-section comprehensive audit report: capital state snapshot with P&L summary, 52-ticker position manifest with risk concentration analysis, model parameter verification with drift detection, infrastructure health checklist (disk/container/API/DB/cron with specific commands run + output), risk parameter audit with margin safety ratio, checkpoint script verification + dry-run output, decision-tree pre-staging with 4-outcome classification examples)
+**Why now**: 57 hours to checkpoint; pre-audit identifies drift, configuration mismatches, or risk parameter violations that could affect checkpoint outcome interpretation. Enables confident post-checkpoint action classification.
+**Blocker**: None (autonomous audit work)
+**Next Step**: Execute audit May 18-19 afternoon → deliver report by 19:00 UTC May 19 → user reviews and confirms readiness → checkpoint executes 20:00 UTC May 19 with full confidence in state alignment
+
+---
+
 ## New Items (Session 994 — 2026-05-13, three autonomous high-impact items added)
 
 ### ⏳ Item 33: Stockbot Live Trading Launch Readiness Checklist & Capital Allocation Framework
