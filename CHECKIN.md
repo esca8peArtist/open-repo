@@ -58,11 +58,20 @@
 
 ### Suggested Next Steps
 
-1. **Review path decision framework** in WAVE_1_PREFLIGHT_AND_PATH_DECISION.md (15 min)
-2. **Decide path** (A / A+37 / B) by May 18 06:00 UTC morning
-3. **May 18 morning**: Execute Wave 1 using pre-prepared checklist (2 hours)
-4. **May 19 20:00 UTC**: Execute stockbot checkpoint per verified readiness
-5. **May 20–30**: Monitor Wave 1 responses; await Tier 2 deployment decision
+1. **PRIORITY: Path decision** — Review WAVE_1_PREFLIGHT_AND_PATH_DECISION.md (15 min) and decide A / A+37 / B by May 18 06:00 UTC
+2. **May 18 morning (2 hours)**: Execute resistance-research Wave 1 using pre-prepared checklist
+3. **May 19 20:00 UTC (3-5 min)**: Execute stockbot checkpoint per verified readiness + playbook action
+4. **May 20–June 1**: Monitor Wave 1 responses; begin Phase 2 work contingent on checkpoint outcome
+
+### Staging for Post-May-19 Work
+
+All autonomous exploration queue work is complete and staged:
+- **containerized-agents**: Option A implementation spec complete (OPTION_A_IMPLEMENTATION_SPEC.md); ready for Phase 1 deployment once checkpoint results in (4-8 hours estimated)
+- **mfg-farm**: Post-test-print launch readiness checklist queued for execution once test print completes
+- **seedwarden**: Track B Phase 3 medicinal herbs timeline queued for post-May 30 Phase 3 execution
+- **off-grid-living**: Social media distribution framework queued for when user approves distribution execution
+
+**No critical path blockers remain** before May 18-19 execution windows. All infrastructure verified production-ready.
 
 ---
 
