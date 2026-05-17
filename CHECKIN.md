@@ -1,3 +1,44 @@
+## Session 1141 (Orchestrator) — May 17, 2026 11:30–12:00 UTC — State Maintenance + Exploration Queue Refresh
+
+**Status**: **Orchestration state synced; exploration queue refreshed for post-May-19 execution. All May 18-19 critical materials verified ready. System ready for critical user execution windows.**
+
+### What Was Done
+
+1. **PROJECTS.md Stale FOCUS Lines Updated** ✅
+   - resistance-research, stockbot, systems-resilience focus lines pruned (Sessions 1123/1122 references removed)
+   - Updated to reflect current May 17 state with May 18-19 timeline markers
+   - Ensures BLOCKED.md and PROJECTS.md sync → eliminates false "blocked" signals in future sessions
+
+2. **Exploration Queue Refreshed** ✅
+   - Added 3 new items for post-May-19 window:
+     - resistance-research: Phase 3 Strategic Roadmap (3-4 hrs)
+     - systems-resilience: Phase 5 Agricultural Intensification Deep-Dive (3-4 hrs)
+     - stockbot: Live Options Risk Architecture (3-4 hrs)
+   - All staged with clear trigger conditions
+
+3. **May 18-19 Materials Verified** ✅
+   - WAVE_1_PREFLIGHT_AND_PATH_DECISION.md: 18K, current as of 11:06 UTC
+   - MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md: 26K, current as of 05:16 UTC
+
+### Critical Timeline (36 Hours Ahead)
+
+| Time | Event | Owner | Status |
+|------|-------|-------|--------|
+| **May 18 06:00 UTC** (18h) | resistance-research path decision | **User** | Awaiting decision (A / A+37 / B) |
+| **May 18 06:00-10:00 UTC** | Wave 1 execution | **User** | Materials ready (checklists verified) |
+| **May 19 20:00 UTC** (33h) | stockbot checkpoint | **User** | Playbook ready + infrastructure tested |
+
+### No Autonomous Work Until May 19
+
+All top-priority projects have May 18-19 user action gates:
+- stockbot: Awaits checkpoint execution (May 19)
+- resistance-research: Awaits path decision (May 18) + execution
+- All other projects: Waiting for post-May-19 signals
+
+Exploration Queue has 3 staged items (all waiting for May 18-19 outcomes).
+
+---
+
 ## Session 1140 (Orchestrator) — May 17, 2026 11:05–11:45 UTC — Exploration Queue: Post-Wave-1 Synthesis Framework
 
 **Status**: **High-value autonomous work staged for May 20-28 execution. All critical May 18-19 infrastructure verified ready. All projects in holding pattern pending user decisions/checkpoint outcome.**

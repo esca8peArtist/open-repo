@@ -10168,3 +10168,68 @@ End orchestrator session 1122. Advanced three high-priority projects toward Goal
 
 **Next Checkpoint**: May 18 morning (Wave 1 execution window) + May 19 20:00 UTC (stockbot checkpoint)
 
+
+---
+
+## Session 1141 (Orchestrator) — May 17, 2026 11:30–12:00 UTC — State Maintenance + Exploration Queue Refresh
+
+**Objective**: Maintain orchestration state accuracy; prepare for May 18-19 critical execution windows.
+
+**Status**: Complete
+
+### What Was Accomplished
+
+1. **State Drift Correction** ✅
+   - **Updated FOCUS lines** for 3 projects (resistance-research, stockbot, systems-resilience) in PROJECTS.md
+   - **Issue**: Lines referenced Sessions 1123/1122 (17-18 sessions ago) with truncated/stale info
+   - **Fix**: Pruned to current May 17 state, removed old session numbers, added May 18-19 timeline markers
+   - **Result**: BLOCKED.md and PROJECTS.md now in sync; eliminates false "blocked" signals in future sessions
+   - **Commit**: cc777549
+
+2. **Exploration Queue Refresh** ✅
+   - **Status check**: All 4 currently-executable queue items are staged (waiting for May 18-19 events)
+   - **Added 3 new items** for post-May-19 window:
+     1. **resistance-research: Phase 3 Strategic Roadmap** (trigger: Wave 1 execution, June start)
+     2. **systems-resilience: Phase 5 Agricultural Intensification Deep-Dive** (trigger: Phase 4b decision, June 1)
+     3. **stockbot: Live Options Risk Architecture** (trigger: Gate 1 PASS, post-May-19)
+   - **Result**: Queue refreshed; 0→3 executable items staged for post-checkpoint window
+   - **Commit**: ccd598ba
+
+3. **Critical Materials Verification** ✅
+   - **resistance-research**: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md (18K, May 17 11:06 UTC) ✅ Ready
+   - **stockbot**: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (26K, May 17 05:16 UTC) ✅ Ready
+   - **All May 18-19 execution materials verified present and current**
+
+### Current State
+
+**Projects by Status**:
+- stockbot: May 19 checkpoint execution ready (no autonomous work until checkpoint)
+- resistance-research: Wave 1 pre-flight ready (awaiting May 18 path decision + execution)
+- systems-resilience: Phase 4b options analysis complete (awaiting June 1 user decision)
+- cybersecurity-hardening: Phase 1 paused (user Windows restart required)
+- mfg-farm: Test print blocked (user action required)
+- seedwarden: Track B user gates ready (May 15-28 user execution window)
+
+**All projects aligned with May 18-19 critical events**:
+- May 18 06:00 UTC: resistance-research path decision deadline
+- May 19 20:00 UTC: stockbot checkpoint execution window
+
+### Session Metrics
+
+- **Work type**: State maintenance + queue refresh (no feature development)
+- **Changes**: 2 commits to master (PROJECTS.md updates)
+- **Reversibility**: All changes are metadata (documentation + queue structure); no code changes
+- **Time spent**: 30 min
+
+### Next Session
+
+**Suggested focus**:
+1. Monitor May 18 06:00 UTC for user path decision (if available via INBOX.md)
+2. If May 18 execution completes: Prepare post-Wave-1 analysis infrastructure
+3. If idle before May 19: Consider non-blocking prep work (exploration queue items are all staged, no autonomous work available)
+4. Execute May 19 20:00 UTC checkpoint per MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md
+
+**Critical timeline**:
+- **May 18 06:00 UTC**: Path decision deadline
+- **May 19 20:00 UTC**: Checkpoint execution window
+
