@@ -1,5 +1,37 @@
 # Work Log
 
+## Session 1136 (Orchestrator) — May 17, 2026 TBD–TBD UTC — Wave 1 Pre-Flight Verification + Project State Analysis
+
+**Objective**: Execute resistance-research Wave 1 pre-flight infrastructure check; verify all systems ready for May 18 user execution.
+
+**Status**: Complete
+
+**✅ COMPLETED**:
+- Resistance-research Wave 1 infrastructure pre-flight verification
+  - Spot-checked 4 key Gists: all return HTTP 200 ✓
+  - Verified supporting documents (templates, contacts, checklists) — all production-ready
+  - Contact verification status confirmed (25 Tier 1 contacts pre-verified)
+  - Identified critical path: User path decision (A / A+37 / B) required by May 18 06:00 UTC
+  - Deliverable: Updated CHECKIN.md with Wave 1 readiness summary + decision framework reference
+
+**Project Status Summary** (unchanged from Session 1135):
+- stockbot: May 19 checkpoint infrastructure VERIFIED READY (zero blockers)
+- resistance-research: Wave 1 pre-flight infrastructure VERIFIED READY (awaiting user path decision)
+- cybersecurity-hardening: Phase 1 paused (user restart required)
+- mfg-farm: Test print blocked (user action)
+- seedwarden: Track B user gates (in progress May 15-28)
+
+**Blocks** (no changes):
+- cybersecurity-hardening: Awaiting Windows restart for VeraCrypt pre-boot test
+- mfg-farm: Awaiting test print execution (user action)
+
+**Recommendations**:
+1. User priority: **Path decision by May 18 06:00 UTC** (A / A+37 / B) — all prep work complete
+2. Post-May 19: If stockbot checkpoint PASSES, begin Gap 4 implementation (naked-call prevention guardrail)
+3. Open-repo PRs #1 & #2 are merge-ready but require user approval for main branch push (per CLAUDE.md working rules)
+
+---
+
 ## Session 1135 (Orchestrator) — May 17, 2026 15:20–TBD UTC — Security Hardening + Queue Refresh
 
 **Objective**: Fix critical CLAUDE.md violations (0.0.0.0 bindings), add exploration queue items, prepare for May 18-19 event windows.
