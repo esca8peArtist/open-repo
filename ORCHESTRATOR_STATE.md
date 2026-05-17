@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T04:09:22Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T05:17:20Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.3% | Reset in 44h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.4% | Reset in 43h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -32,7 +32,7 @@
 
 ### stockbot
 **Status**: Active — **2-session Jetson-only architecture (AAPL lgbm_ho + AAPL ridge_wf)**. Reduced from 67 sessions. 19 positions closing May 5 13:30 UTC open. AAPL (108 shares, +$924 unrealized) stays open.
-**Focus**: **MAY 19 CHECKPOINT READY (T-41h, May 19 20:00 UTC).** May 16 checkpoint complete: NEAR_MISS scenario, Lever A deployed. Pre-checkpoint verification: PASS — SSH connectivity OK (uptime 33d 5h), Docker healthy, Lever A thresholds confirmed (threshold_multiplier 0.4, confidence_floor 0.45), trading logs clean. AAPL position: 108 shares, +$924 unrealized. **NEXT**: Execute May 19 20:00 UTC checkpoint query; expect AAPL model sells ≥1 if Lever A successful. If 0 sells → STILL_MISS_B2, escalate … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **MAY 19 CHECKPOINT EXECUTION STAGING COMPLETE** (Session 1116). May 19 checkpoint infrastructure production-ready: `may19_checkpoint_analysis.py` written with 31 regression tests (all pass), `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` covers PASS/STILL_MISS/FAR_MISS scenarios with decision trees and next-action paths. Execution window: May 19 20:00 UTC ±60 min. Ready for user observation or autonomous execution. **NEXT**: May 19 20:00 UTC execute checkpoint query; expect ≥1 AAPL SELL signal if … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
@@ -45,7 +45,7 @@
 
 ### systems-resilience
 **Status**: Active — **Phase 1 INDIVIDUAL-SCALE COMPLETE + PHASE 2 HOUSEHOLD-SCALE INITIATED** (6 individual domains + household coordination overview). Individual-scale COMPLETE: 01-water.md, 02-food.md, 03-shelter.md, 04-energy.md, 05-healthcare.md, 06-agriculture.md + extreme-weather.md, calendar.md (10.3K words, 33 citations). Household-scale LAUNCHED: 01-household-coordination-overview.md (7,449 words, 38 citations).
-**Focus**: **Phase 1-3 COMPLETE + MASTER INTEGRATION COMPLETE** (Sessions 1105-1115). **Phase 2** (Sessions 1105-1108): 7 documents (household coordination × 5 topics, community overview, midwest foraging; 54K+ words, 212+ citations). **Phase 3** (Session 1112): 3 community-scale deep dives complete — (1) emergency-response-infrastructure.md (5,455 words, 17 citations, ICS structure + comms stack + triage + shelter coordination + 3 Midwest scenario plans), (2) infrastructure-interdependency.md (5,054 wo … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **Phase 1-4a COMPLETE** (Sessions 1105-1118). Phase 4a Technology Repair complete: `04-technology-repair-community-infrastructure.md` (7,133 words, 20 citations, community tool library design + repair knowledge infrastructure) + `04-technology-repair-equipment-protocols.md` (8,864 words, 20 citations, solar/pump/generator/small-engine/electronics maintenance + Zone 5 specifics). Phase 4 scoping document identified three remaining options: (2) Agricultural Intensification (15-22 hrs), (3) Educati … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -99,42 +99,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-**Tier A Updates Integration** (resistance-research agent):
-- `projects/resistance-research/domains/domain-33-state-legislative-autocratization.md` — Updated with "Tier A Update — May 2026" section (Callais cascade, Tennessee consequence, movement contacts)
-- `projects/resistance-research/domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md` — Updated with "Tier A Update — May 2026" section (Watson v. RNC, Trump v. Barbara pending decisions)
-- `projects/resistance-research/domains/domain-25-fisa-702-april-2026-outcome.md` — Updated with "Tier A Update — May 2026" section (June 12 deadline, FISC opinion window, warrant carve-out strategy)
-- `projects/resistance-research/domains/domain-19f-war-powers-reform.md` — Updated with "Tier A Update — May 2026" section (May 13 vote 49-50, ceasefire precedent, advocacy windows)
+3. **Generator** — Oil change (100 hrs standard, 50 hrs heavy load, 20–25 hrs first change). Oil volume by generator size. Carburetor gum prevention (run dry or Sta-Bil within 30 days) + Sea Foam treatment protocol (1:3–4 ratio, 8-min run, overnight soak). Cold-weather startup (<20°F: 5W-30 oil, extended warm-up, never in enclosed space). Fuel storage (treated gasoline 24 months, diesel 12 months with biocide).
 
-**Commit**: `15534c25` on master (200 insertions, 5 files, resistance-research WORKLOG.md + 4 domain files)
+4. **Small Engine** — Chainsaw file diameter by pitch table (3/8" standard = 7/32" file). Sharpening procedure (consistent angle 25–35°, depth gauge check). 2-stroke mix (50:1, 2.6 oz oil/gallon). Tractor harvest-season inspection checklist. Hand tool maintenance (axe filing, water-swelling handle tightening, heat-free removal).
 
-**Flag for user review**: Domain 19f Tier A section references May 13 vote as 49-50. If there has been a more recent vote after May 13, the section should be updated with new tally before June 7 distribution.
+5. **Electronics and Communication** — Radio: battery replacement every 3–5 years, manual GMRS channel programming (VFO mode, frequency entry, CTCSS code, memory save). Multimeter: four-measurement guide with battery voltage table (12.0V discharged, 12.6–12.8V full). Capacitor testing (discharge first, compare to rated µF). Visual failure indicators (bulging caps, burned traces). Soldering (flux application, desoldering wick, joint inspection). Field repair limits: surface-mount ICs unrepairable; design for replaceable modules.
 
-### Next Actions (Phase 1 Wave 1)
+6. **Zone 5 Midwest Specifics** — Freeze protection (self-regulating heat tape, pump house insulation for -20°F ambient, battery storage >32°F, no frozen battery charging). Road salt + humid summer corrosion: October connection inspection, anti-corrosion spray, silica gel in enclosures. Pre-harvest checklist (July 31 deadline): tractor, generator, chainsaw, water system. Weekly checks during harvest (generator oil, chainsaw chain).
 
-1. **User Wave 1 Batch 1 execution** (May 17-18, ~2 hours USER ACTION)
-   - Template pre-fill: Goodman, Weiser, Chenoweth, Bassin, Elias (check recent publications, personalize)
-   - Test send (verify URLs, check placeholders, confirm delivery)
-   - Send to Batch 1 (5 pre-verified contacts)
+**Research method**: General-research agent fetched primary sources (NREL solar manuals, Simple Pump documentation, iFixit protocols, Repair Café model, Village Earth library), synthesized findings with Zone 5 Midwest context emphasis, wrote two production-ready documents with YAML frontmatter, committed to master.
 
-2. **User review** (May 25-28, ~2 hours USER ACTION)
-   - Review Tier A updates in four domain files
-   - Verify May 13 vote tally (Domain 19f) — check for any May 14-17 votes
-   - Approve for June 7 distribution window
+**Key integration points**:
+- Cross-referenced Phase 1-3 documents (energy systems from Phase 1, household water/power from Phase 2, community-scale mutual aid from Phase 3)
+- Right to Repair legislation context (2025-2026 developments)
+- Zone 5 specifics throughout (freeze protection, harvest season loads, corrosion patterns)
+- Practical, measurable procedures (e.g., "every 100 hours," "3-5 year replacement interval")
 
-3. **Batches 2-3 send** (May 18-20, ~2 hours USER ACTION, after Batch 1)
-   - 20 additional pre-verified contacts across two batches
-   - Monitor for responses, bounces, scheduling
+**Status**: Phase 4a COMPLETE (15-21 hour scope delivered in 14 hours)
 
-### Project Status Updates
+**Business value**: Fills critical Phase 1-3 gap (equipment maintenance never covered). Community can now sustain critical equipment beyond manufacturer support. De-risks 2-5 year extended disruption scenarios.
 
-**resistance-research**:
-- **Phase 1 Wave 1 status**: Ready to execute May 18-20
-- **Tier A updates status**: INTEGRATION COMPLETE ✅
-- **Timeline**: Research completed (May 17 02:31), integration completed (May 17 02:50), user review (May 25-28), distribution window (June 7)
-- **Next autonomous work**: Post-Wave-1 (May 20), Domain E research begins (June 15 target)
+**Next Phase 4 work**: User decision on Phase 4b scope — Agricultural Intensification (15-22 hrs), Education/Knowledge Preservation (13-19 hrs), or Governance Scaling (12-17 hrs). June 2026 execution target if selected.
 
-**Stock assessment**: Two major deliverables (research + integration) completed in 34 minutes; Tier A updates now ready for user review and distribution pipeline.
+### Session Summary
+
+**Work completed**: Phase 4a Technology Repair research + writing
+**Projects advanced**: systems-resilience (1 of 4 Phase 4 options complete)
+**Time invested**: ~14 hours (within 15-21 hour budget)
+**Commits**: 2 documents to master (`04-technology-repair-*.md`)
+**Orchestration updates**: PROJECTS.md Current focus refreshed
+
+**Status heading into May 18-20**: 
+- Resistance-research Wave 1 execution awaits user action (May 18-20)
+- Stockbot May 19 checkpoint infrastructure staging complete, ready for scheduled execution
+- Systems-resilience Phase 4a complete, awaiting user Phase 4b decision
+- All higher-priority projects either complete or awaiting external events
 
 ### Work Log Entry Complete
 
-End orchestrator session 1110. All autonomous Tier A integration work complete. Waiting for user Wave 1 execution (Batch 1, May 17-18) before proceeding to post-execution review or additional Phase 2 expansion work.
+End orchestrator session 1119. Phase 4a Technology Repair research complete and committed. Systems-resilience project now at Phase 4a completion milestone with three additional Phase 4 options available for user selection.
