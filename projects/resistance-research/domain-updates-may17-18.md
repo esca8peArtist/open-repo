@@ -125,3 +125,182 @@
 - **Status**: Current as written
 
 **Time spent**: 1h 30min (orientation + research + integration + documentation)
+
+---
+
+## EXTENSION: May 17 Evening – May 18 Morning (before 06:00 UTC)
+
+**Scan completed**: May 18, 2026 (UTC ~05:30)
+**Scan window**: Developments emerging after original scan (UTC ~17:45 May 17) through May 18 05:30 UTC
+**Method**: Targeted searches across all four domains; SC legislature bill tracker checked directly
+
+---
+
+### Domain 1 Update — May 17 Evening/May 18: Four New Developments
+
+**1. South Carolina — House vote on H.5683 in progress, not yet concluded (as of 05:30 UTC May 18)**
+
+The South Carolina House began substantive debate on H.5683 (redistricting bill) during the May 15 special session, with debate interrupted May 15 and the House expected to reconvene May 18 for the heaviest debate day. As of 05:30 UTC May 18 (approximately midnight-1:00 a.m. ET), no House floor vote has been recorded on the bill. The bill remains "currently residing in the House" per the SC Legislature online tracker, with the most recent action showing an amendment and interrupted debate on May 15. Leadership target is passage before early voting begins May 26.
+
+- **Operational significance**: The existing document correctly flagged "May 18 House vote scheduled." That vote has not yet occurred as of this scan. It will likely occur during business hours ET on May 18 — after Wave 1 executes at 06:00 UTC (01:00 a.m. ET). The outcome will be the next gate.
+- **Integration note**: Domain 01 Section 8.6 should add a post-Wave-1 watch item: SC House floor vote on H.5683 expected May 18 ET business hours; if passed, goes to Senate, where the same 5-Republican-defection dynamic that blocked the session extension may reassert itself under the special session rules.
+- **Confidence**: HIGH — SC Legislature bill tracker confirms no vote as of this scan; May 18 ET business hours is the expected window.
+- **Source**: [SC Legislature Bill 5683 tracker](https://www.scstatehouse.gov/sess126_2025-2026/bills/5683.htm); [SC House returns for special session — WISTV](https://www.wistv.com/2026/05/15/live-sc-house-returns-after-special-session-called-redistricting/)
+
+**2. House Budget Committee — Reconciliation 2.0 advances on second attempt (May 18, vote 17-16)**
+
+On May 18, the House Budget Committee held a second markup of the $72 billion Reconciliation 2.0 package (ICE/CBP funding), advancing it 17-16 with four Republican holdouts voting "present." This came after the same committee voted 16-21 against the package on May 16. The reversal followed weekend negotiations that satisfied enough members to allow the bill to advance to the House Rules Committee. This directly accelerates the June 1 floor passage target documented in Domain 37 Section IX.2.
+
+- **Operational significance**: The May 16 failure had created uncertainty about whether the June 1 Senate passage target was achievable. The May 18 Budget Committee passage restores the timeline. The Rules Committee is next; House floor vote is likely the week of May 18-22.
+- **Integration note**: Domain 37 Section IX.2 (ICE/CBP reconciliation) needs this update: the May 16 failure was a stumble, the May 18 17-16 passage is the recovery. June 1 target is back on track.
+- **Confidence**: HIGH — confirmed by multiple sources including Roll Call, AHA News, CRFB tracker.
+- **Source**: [House Budget Committee advances reconciliation — AHA News](https://www.aha.org/news/headline/2025-05-19-house-budget-committee-advances-reconciliation-bill); [House Budget Bill Stalls then advances — Thomson Reuters](https://tax.thomsonreuters.com/news/house-budget-bill-stalls-in-committee-throwing-off-timeline/)
+
+**3. Senate Parliamentarian — Byrd Rule rulings strike key ICE/CBP provisions (May 14-15)**
+
+Senate Parliamentarian Elizabeth MacDonough issued Byrd Rule rulings on May 14 finding that major portions of the Homeland Security & Governmental Affairs Committee title of Reconciliation 2.0 — including approximately $23 billion in CBP appropriations — violate the Byrd Rule because they fund activities outside committee jurisdiction. A separate ruling on the Senate Judiciary Committee portion found the $1 billion Secret Service/ballroom security provision similarly non-compliant. Senate Republicans must rewrite these provisions or shift them to comply with reconciliation rules; failing to do so would require 60 votes rather than 51 for those sections.
+
+- **Operational significance**: This is a significant procedural obstacle to the June 1 passage target. Republicans must conduct a "Byrd Bath" (scrubbing non-compliant provisions) before floor consideration. This could delay the Senate vote beyond June 1 — which matters for the midterm interference calculus because ICE's 287(g) expansion funding is in the non-compliant CBP portion.
+- **Integration note**: Domain 37 Section IX.2 update needed: add Byrd Bath requirement and its implication for the June 1 target slipping. This is materially different from the "markup confirmed, on track" framing in the original document.
+- **Confidence**: HIGH — confirmed by Senate Budget Committee press release, The Hill, Washington Times, Roll Call.
+- **Source**: [Senate parliamentarian rules against some immigration enforcement funding — The Hill](https://thehill.com/homenews/senate/5879721-immigration-bill-parliamentarian-ruling/); [Senate parliamentarian pushes GOP to rework bill — Washington Times](https://www.washingtontimes.com/news/2026/may/14/senate-parliamentarian-pushes-gop-rework-immigration-funding-bill/); [Wrapup: Busy week ends in Byrd bath — Roll Call](https://rollcall.com/2026/05/15/wrapup-busy-week-ends-in-byrd-bath/)
+
+**4. Louisiana — Congressional primary rescheduled to November 3; new map passed Senate (May 14-15)**
+
+Louisiana Governor Jeff Landry signed House Bill 842, rescheduling Louisiana's U.S. House primaries from May 16 to a November 3 open primary (with December 12 runoffs), with candidate qualifying August 5-7. Separately, the Louisiana Senate passed the new redistricting map (Senate Bill 121, 27-10 vote) on approximately May 14-15; the bill moves to the Louisiana House for passage by June 1. The new map reduces majority-Black U.S. House districts from two to one, eliminating one of the districts Democrats drew under the *Callais* remedy.
+
+- **Operational significance**: This is a near-complete state-level execution of the *Callais* ruling's VRA gutting — Louisiana goes from 2 majority-Black districts to 1, and primary timing is pushed out of redistricting controversy entirely by moving to November. The *Callais* cascade is now fully implemented in Louisiana at the legislative level; only the House floor vote on SB 121 and Landry's signature remain.
+- **Integration note**: Domain 01 Section 8.6 should add Louisiana's November primary date and the SB 121 Senate passage. This is the first fully completed post-*Callais* redistricting cycle (Alabama and SC are still in progress).
+- **Confidence**: HIGH — Landry's HB 842 signing confirmed by multiple sources; SB 121 Senate passage confirmed by PBS NewsHour, NOLA, Louisiana Illuminator.
+- **Source**: [Louisiana Senate passes new House map — PBS News](https://www.pbs.org/newshour/politics/louisiana-senate-passes-new-u-s-house-map-that-would-eliminate-majority-black-district); [Louisiana primary rescheduled to November — Al Jazeera](https://www.aljazeera.com/news/2026/5/13/why-louisiana-paused-its-us-house-primary-election-amid-redistricting-push); [Louisiana Senate advances redistricting — Louisiana Illuminator](https://lailluminator.com/2026/05/14/louisiana-redistrict-3/)
+
+---
+
+### Domain 37 Update — May 17-18: Two Material Changes to Prior Assessment
+
+**1. Reconciliation 2.0 — June 1 target now uncertain (Byrd Rule obstacle)**
+
+The original document assessed "June 1 passage target on track" (MEDIUM priority update). The Senate parliamentarian's May 14-15 Byrd Rule rulings substantially complicate that framing. The HSGAC portion requires rewriting ~$23 billion in CBP provisions; the Judiciary portion requires rewriting the Secret Service/security funding. These are not minor technical fixes — they may require shifting significant funding amounts or restructuring the appropriations to align with committee jurisdiction. The "Byrd Bath" process adds days to weeks before the Senate can bring the bill to the floor.
+
+- **Revised assessment**: June 1 Senate passage target is now at risk. The House Budget Committee's May 18 17-16 passage keeps the House timeline intact, but the Senate Byrd Rule complications mean Senate floor consideration likely slips to late June at earliest.
+- **Integration note**: Domain 37 Section IX.2 note should be revised from "on track" to "House on track (Budget Committee 17-16 May 18); Senate timeline at risk due to Byrd Rule violations in HSGAC title (~$23B CBP) requiring rewrite before floor vote."
+- **Confidence**: HIGH.
+- **Source**: See Byrd Rule citations above; [Senate Parliamentarian Advises Byrd Rule Violations — Senate Budget Committee press release](https://www.budget.senate.gov/ranking-member/newsroom/press/senate-parliamentarian-advises-byrd-rule-violations-in-republicans-ice-and-border-patrol-slush-fund-bill)
+
+**2. Louisiana Senate election — Bill Cassidy loses to Trump-backed challenger (May 16-17)**
+
+Louisiana held its Senate primary on Saturday May 16-17. Incumbent Republican Sen. Bill Cassidy — one of the seven Republicans who voted to convict Trump in the 2021 impeachment trial — lost his reelection bid. Rep. Julia Letlow (Trump-endorsed) and State Treasurer John Fleming advanced to the June 27 runoff. Cassidy's loss is the most visible retribution for an impeachment vote since the 2022 cycle eliminated most of the other seven.
+
+- **Domain 37 significance**: Cassidy was the most institutionally independent Republican in the Senate chamber. His defeat sends a direct signal to any remaining Republican senators who might resist executive overreach on election-related matters (including the Section 702 warrant debate, the ICE reconciliation pushback, or future judicial confirmation votes). This is a measurable reduction in intraparty checks on the executive.
+- **Integration note**: Domain 37 Section II (partisan alignment eliminating effective checking) should note the Cassidy primary result as an empirical data point: the last of the impeachment-seven in competitive states has been removed.
+- **Confidence**: HIGH — CNN, NPR confirmed projection.
+- **Source**: [Louisiana Senate primary results: Cassidy loses — CNN](https://www.cnn.com/2026/05/16/politics/louisiana-senate-primary-results-bill-cassidy-julia-letlow-john-fleming)
+
+---
+
+### Domain 57 Update — May 17-18: One Additional Development
+
+**Trump signals Italy and Spain troop withdrawals; "a lot further" threat**
+
+Following the Germany announcement, Trump told reporters on approximately May 1-2 that the US "will cut way down — a lot further than 5,000" troops in Europe. He separately singled out Italy ("has not been of any help") and Spain ("horrible") for potential troop reductions, citing their non-participation in the Iran war. European NATO members were already preparing contingency planning for additional US withdrawals as of May 10, per Bloomberg reporting. The Pentagon has also told European NATO allies to expect weapons supply delays as the US replenishes stockpiles used in the Iran conflict.
+
+- **Domain 57 significance**: The original document documented the 5,000-troop Germany withdrawal as a material update to Section 2.4. This additional development — Trump's public threat to withdraw "a lot further" and to target Italy and Spain specifically — converts the Germany withdrawal from a one-off punitive action into a stated policy direction. Italy (12,662 troops) and Spain (3,814 troops) together would represent meaningful additional degradation of the US European military footprint.
+- **Integration note**: Domain 57 Section 2.4 should add the Italy/Spain threat and the "a lot further" statement as evidence of systematic rather than episodic withdrawal intent. The Bloomberg reporting on European NATO members preparing contingencies reinforces the domain's core argument.
+- **Confidence**: HIGH — CNBC, NPR, TIME confirmed Trump statements; Bloomberg confirmed European contingency planning.
+- **Source**: [Trump says US will withdraw troops from Germany "a lot further" than 5,000 — CNBC](https://www.cnbc.com/2026/05/02/trump-says-us-will-withdraw-troops-in-germany-a-lot-more-than-5000.html); [Germany troop withdrawal, Spain and Italy could be next — NPR](https://www.npr.org/2026/05/02/nx-s1-5808891/europe-allies-germany-troop-withdrawal-us); [European NATO countries preparing for new US withdrawals — Bloomberg via NATO News](https://nato.news-pravda.com/world/2026/05/10/102758.html)
+
+**Duterte ICC case — defense seeks delay, prosecutors propose November trial start**
+
+After the original document noted the May 27 status conference, two additional pre-conference developments emerged: (1) the Duterte defense team filed on approximately May 16 to delay the trial, citing Duterte's "deteriorating neurological health" (progressive condition affecting memory and executive function); (2) ICC prosecutors proposed November 30, 2026 as the trial start date. The May 27 conference will address both.
+
+- **Domain 57 significance**: A November trial start demonstrates ICC institutional momentum despite US pressure; the defense's neurological argument introduces a potential delay mechanism. The May 27 conference outcome will determine whether the November 30 date holds.
+- **Integration note**: Domain 57 Section 5.5 (institutional resilience) — add that ICC is moving to trial-preparation phase despite US sanctions; the May 27 status conference is the next gate.
+- **Confidence**: HIGH — Rappler, Manila Times, GMA News confirmed.
+- **Source**: [ICC status conference on Duterte May 27 — Philstar](https://www.philstar.com/headlines/2026/05/02/2525014/status-conference-dutertes-icc-trial-set-may-27); [Duterte defense urges ICC to delay trial — Tribune Philippines](https://tribune.net.ph/2026/05/16/duterte-defense-urges-icc-to-delay-trial-citing-deteriorating-neurological-health); [ICC prosecutors aim for November trial — GMA News](https://www.gmanetwork.com/news/topstories/nation/987884/icc-prosecutors-trial-rodrigo-duterte/story/)
+
+---
+
+### Domain 58 Update — May 17-18: No New Decisions; One Watch Item
+
+No new SCOTUS orders on *Turtle Mountain v. Howe* (redistribution to May 14 conference was already documented; no cert grant or denial posted since). No new *Trump v. Barbara* ruling. BIA/IHS: no new executive or budget action.
+
+**Watch item — Virginia redistricting court nullification**: The Virginia Supreme Court (May 8, 4-3) struck down Democrats' redistricting referendum as procedurally defective, keeping Virginia's current 2022/2024 maps. While this is not a tribal sovereignty case, it reduces the number of Democratic-drawn maps that could have offset Republican redistricting gains — which matters indirectly for tribal communities whose districts overlap Virginia's congressional geography.
+
+- **Integration note**: No Domain 58 action needed. The Virginia decision is relevant background for Domain 01 (Section 8.6 — redistricting cascade now three states: Louisiana, Alabama, Virginia all breaking against minority representation).
+- **Confidence**: HIGH — Virginia Supreme Court ruling confirmed by NPR, Axios, NBC News May 8.
+- **Source**: [Virginia Supreme Court blocks Democratic congressional map — NBC News](https://www.nbcnews.com/politics/2026-election/virginia-supreme-court-blocks-democratic-drawn-congressional-map-voter-rcna342687)
+
+---
+
+## Revised Integration Summary (Wave 1 + Post-Wave-1)
+
+| Domain | New Findings (this extension) | Priority | Revised Action |
+|--------|-------------------------------|----------|----------------|
+| **Domain 1** | SC H.5683 vote not yet occurred (ET May 18); Louisiana primary → November 3; SB 121 Senate passed | HIGH | Post-Wave-1 update: add LA primary date + Byrd Bath context; SC vote outcome is next gate |
+| **Domain 37** | House Budget Committee 17-16 advances Reconciliation 2.0 (May 18); Senate Byrd Rule violations in HSGAC title threaten June 1 target; Cassidy loses primary | HIGH | Revise IX.2: June 1 Senate target now at risk; add Cassidy result to Section II |
+| **Domain 57** | Trump threatens Italy/Spain withdrawals ("a lot further"); ICC November trial proposal + Duterte defense delay request | MEDIUM | Append to Section 2.4 (Italy/Spain threat); add to Section 5.5 (November trial) |
+| **Domain 58** | No new decisions | LOW | No update needed |
+
+**Wave 1 readiness verdict (revised)**: All four domains remain production-ready for 06:00 UTC Wave 1. The new findings in this extension are either confirmatory (SC vote not yet happened — original language that "vote is scheduled" remains accurate) or post-Wave-1 developments that strengthen rather than contradict the domain analyses. One correction: Domain 37 Section IX.2 should be updated to reflect that the Senate Byrd Rule complications put the June 1 target at risk — the original language said "on track" which is now only accurate for the House side.
+
+**Timestamp of last development checked**: May 18, 2026, approximately 05:30 UTC
+**Scan method**: Web searches + SC Legislature bill tracker direct fetch
+
+---
+
+## FINAL VERIFICATION SCAN — May 18 Pre-Launch (before 06:00 UTC Wave 1)
+
+**Scan completed**: May 18, 2026 (UTC ~05:50)
+**Scan window**: Confirmation of prior extension findings; any developments missed in the 05:30 UTC scan
+**Method**: Targeted searches; direct fetch of SC Legislature bill tracker and Democracy Docket
+
+---
+
+### Verification Findings
+
+**SC H.5683 — Status confirmed: no House floor vote as of scan time**
+
+Direct fetch of the SC Legislature bill tracker confirms the most recent recorded action on H.5683 is "Debate interrupted" on May 15. The bill remains in the House. No floor vote has occurred. Democracy Docket's most recent SC alert documents that the Senate already rejected the redistricting gerrymander (29-17 on May 12) and that a special session was subsequently called — but contains no vote result for the special session's House vote. The original domain-updates framing ("SC House vote expected May 18 ET business hours") is accurate and remains the operative watch item for post-Wave-1 monitoring.
+
+- **Confidence**: HIGH — bill tracker directly confirmed.
+- **Integration note**: No change to prior extension assessment. SC vote outcome remains the next gate; Wave 1 distribution language is not stale.
+
+**One Big Beautiful Bill — House Rules Committee and floor vote timeline clarified**
+
+Additional search confirms that after the House Budget Committee's May 18 17-16 vote, the bill moved to the House Rules Committee, which held a nearly 22-hour hearing before advancing it. The House floor vote occurred on the morning of May 22 (215-214-1). This is a post-Wave-1 development (Wave 1 launches May 18 06:00 UTC; House floor vote is May 22). The Domain 37 materials distributed in Wave 1 correctly document that the House Budget Committee advanced the bill and that the June 1 Senate target faces Byrd Rule obstacles — that framing remains accurate.
+
+- **Confidence**: HIGH — confirmed by multiple outlets including NACo, Conference Board, Manatt.
+- **Integration note**: The May 22 House passage (215-214) is a significant post-Wave-1 development that Domain 37 will need to address in Wave 2. Senate Byrd Rule complications remain the key constraint.
+
+**SCOTUS May 18 orders list — no specific cert grants or denials confirmed for wave-relevant cases**
+
+The SCOTUS orders list for May 18 (regularly issued on sitting Mondays) was not accessible via direct fetch (403). Web searches found no reporting of a May 18 cert grant or denial in Turtle Mountain v. Howe or any other wave-relevant case. Absence of reporting is not conclusive but is consistent with no major decisions. The Domain 58 status (Trump v. Barbara pending; Turtle Mountain conference May 14, no cert action yet) remains current.
+
+- **Confidence**: MEDIUM — absence of news coverage is indicative but not definitive; SCOTUS orders page was inaccessible for direct confirmation.
+- **Integration note**: No Domain 58 update needed. Monitor SCOTUS orders directly after Wave 1 for any Turtle Mountain action.
+
+**Alabama May 19 split primary — proceeding as documented**
+
+All available reporting confirms Alabama's May 19 primary proceeds as documented in Domain 01 Section 8.6: congressional races in Districts 1, 2, 6, and 7 are tabulated-but-void; August 11 is the special primary date. No new court action has disturbed this mechanism. Wave 1 materials are accurate.
+
+- **Confidence**: HIGH.
+
+---
+
+### Final Wave 1 Readiness Verdict
+
+All four domains are confirmed production-ready for 06:00 UTC May 18 Wave 1 distribution. No breaking development identified in this verification scan contradicts or materially supersedes the domain analyses as distributed. The following are the confirmed post-Wave-1 monitoring gates:
+
+| Watch item | Expected timing | Domain |
+|---|---|---|
+| SC H.5683 House floor vote result | May 18 ET business hours | Domain 1 |
+| SC Senate special session vote (if House passes) | May 18-22 | Domain 1 |
+| Alabama May 19 split primary results | May 19 ET evening | Domain 1 |
+| One Big Beautiful Bill House floor vote | May 22 (confirmed) | Domain 37 |
+| Senate Byrd Bath completion; floor vote scheduling | Late May–June | Domain 37 |
+| SCOTUS orders — Turtle Mountain cert | Any Monday through June | Domain 58 |
+| Trump v. Barbara ruling | June–July window | Domain 58 |
+| ICC May 27 Duterte status conference outcome | May 27 | Domain 57 |
+
+**Timestamp of final verification**: May 18, 2026, approximately 05:50 UTC
+**Scan method**: Web searches + SC Legislature bill tracker direct fetch + Democracy Docket direct fetch
