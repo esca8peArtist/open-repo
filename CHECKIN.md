@@ -1,5 +1,51 @@
 # Check-in
 
+## Session 1116 (Orchestrator + Stockbot Agent) — May 17, 2026, 04:09–05:30 UTC — May 19 Checkpoint Execution Staging Complete ✅
+
+**Status**: **Checkpoint infrastructure production-ready. May 19 20:00 UTC execution infrastructure staged and tested. All major projects either in checkpoint wait state or blocked on user actions.**
+
+### Since Last Check-in
+
+**Autonomous Work Completed**:
+1. ✅ **stockbot: May 19 Checkpoint Execution Staging COMPLETE** (May 17, 05:00 UTC)
+   - **Item 49 verification**: `MAY16_CHECKPOINT_DECISION_TREE.txt` and `MAY_16_POST_CHECKPOINT_DECISION_TREE.md` both exist and complete (Session 1076). No gaps.
+   - **Checkpoint script created**: `scripts/may19_checkpoint_analysis.py`
+     - Primary metric: AAPL SELL signals since May 16 20:30 UTC (Lever A deployment)
+     - PASS threshold: ≥1 SELL signal
+     - Three outcomes: PASS (exit 0), STILL_MISS_B2 (exit 1), FAR_MISS (exit 2)
+     - Execution window: May 19 20:00 UTC ±60 minutes (not market-sensitive)
+     - 31 new regression tests, all pass; 116 existing tests unaffected
+   - **Execution playbook created**: `MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md` (10 sections)
+     - Pre-checkpoint verification (<5 min), query execution, decision matrix
+     - Per-scenario next-steps: PASS → Gate 2 activation; STILL_MISS → Lever B; FAR_MISS → diagnosis
+     - User approval gates documented
+     - Next checkpoint schedule: May 26 (7-day followup)
+   - **Committed to stockbot**: All scripts, playbook, and tests committed; clean state
+   - **Status**: Ready for May 19 20:00 UTC execution. Decision lookup < 2 minutes.
+
+**Project Status Updates**:
+- **stockbot**: All checkpoint infrastructure ready. Awaiting May 19 20:00 UTC execution.
+- **All other projects**: No changes since Session 1115. All blocked on external dependencies (user actions or scheduled events).
+
+**Needs User Input** (unchanged):
+1. **stockbot**: Execute May 19 20:00 UTC checkpoint query (May 19, scheduled)
+2. **resistance-research**: Execute Phase 1 Wave 1 Batch 1 (May 18-20, ~2 hours)
+3. **cybersecurity-hardening**: Windows VeraCrypt restart (Phase 1 walkthrough pending)
+4. **mfg-farm**: Execute test print (0.20mm, PLA+, 3 walls, evaluate snap-arm clearance)
+5. **seedwarden**: Execute Track B gates (May 15-28, documentation complete + ready)
+6. **open-repo**: Merge PR #1, then PR #2 (both reviewed and approved)
+
+### Available Autonomous Work
+
+- **systems-resilience Phase 4 optional expansion**: Scoping/planning (education, agricultural techniques, governance), estimated 4-6 hours. Deferred pending checkpoint outcome.
+- **All other**: Blocked on external events (May 19 checkpoint, May 18 Wave 1 user action, user gate completions)
+
+### Next Major Event
+
+**May 19 20:00 UTC Checkpoint Execution**: All infrastructure staged. Can execute autonomously or with user observation.
+
+---
+
 ## Session 1115 (Orchestrator) — May 17, 2026, 03:58–06:15 UTC — Systems-Resilience Phase 3 Integration Complete ✅
 
 **Status**: **All major projects blocked on external dependencies (user actions or May 19 checkpoint). Autonomous work: systems-resilience Phase 3 integration COMPLETE.**
