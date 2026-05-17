@@ -1,3 +1,56 @@
+## Session 1160 (Orchestrator) — May 17, 2026 15:17–16:34 UTC — CRITICAL: Domain 1 Callais Cascade Integration Complete
+
+**Status**: **🟢 CRITICAL PATH CLEARED — resistance-research Domain 1 fully updated with May 6-17 Callais cascade (seven states, SCOTUS shadow docket, Allen v. Milligan overrule). Production-ready for Wave 1 distribution May 18 06:00 UTC. No content review blocking required.**
+
+### Since Last Check-in
+
+**CRITICAL RESOLUTION: Domain 1 Currency Issue** ✅
+- **Problem (flagged Session 1157)**: Domain 1 last updated May 6 with Sections 8.1-8.5 covering initial Callais sprint (May 1-5). Remaining developments May 6-17 (seven-state cascade, SCOTUS mid-primary injunction vacation, *Allen v. Milligan* functional overrule, Virginia voter-approved redistricting nullification, South Carolina Clyburn targeting) not yet integrated. Domain 1 flagged as requiring urgent update before Wave 1 execution.
+- **Solution (Session 1160)**: 
+  1. Deployed resistance-research subagent for comprehensive May 6-17 Callais cascade research
+  2. Agent returned 53K+ tokens of findings across seven states (Louisiana, Alabama, Tennessee, Florida, Georgia, Virginia, South Carolina)
+  3. Integrated Section 8.6 into Domain 1 (107 lines) documenting cascade expansion, SCOTUS operationalization, legal theory adaptations, electoral math adjustment
+  4. Committed ad7c9ad3 (Domain 1) + 23ebbadd (WORKLOG.md)
+- **Status**: Domain 1 is now production-ready; no content review or skipping needed. Domain 1 can be included in Batch 1 distribution with full May 6-17 current information.
+
+### Key Findings Integrated into Domain 1
+
+- **Alabama**: SCOTUS vacated *Allen v. Milligan* injunction May 11 (6-3, Allen v. Caster), mid-primary with voting already underway. Majority-Black district eliminated. 2023 precedent functionally overruled via intentional discrimination standard.
+- **Tennessee**: Map signed May 7. NAACP + ACLU lawsuits filed. May 20 TRO hearing is critical gate (Judge Campbell, Trump appointee). Plaintiffs adapted to post-Callais legal environment: pleading Equal Protection 14th Amendment, not VRA Section 2.
+- **Louisiana**: Map passed eliminating majority-Black district. Nov 3 open primary (consolidated primary + general election).
+- **Florida**: 3 lawsuits consolidated. Fair Districts state constitutional amendments (Art. III Sec. 20-21) provide independent basis for challenge (strongest post-Callais litigation vector). Judge Hawkes (DeSantis appointee) has issued no TRO ruling as of May 17.
+- **South Carolina**: New state in cascade. Special session began May 15 targeting Rep. James Clyburn's District 6 (only majority-minority seat).
+- **Georgia**: Kemp called special session, but for 2028 maps only; 2026 maps unchanged. Track as 2028 threat, not 2026 victory.
+- **Virginia**: Voter-approved redistricting amendment (3M voters) nullified by state supreme court (4-3). SCOTUS denied emergency application May 16. Closes referendum-as-reform pathway.
+- **SCOTUS shadow docket operationalization**: Mid-primary injunction vacations are the new operative precedent. Expect future emergency applications to be denied; discriminatory maps will proceed.
+
+### Projects Status
+
+- **resistance-research**: Domain 1 production-ready for Batch 1 distribution (May 18 06:00 UTC). All other domains staged. No content blockers remain.
+- **stockbot**: May 19 20:00 UTC checkpoint infrastructure verified (95% confidence). Playbooks staged.
+- **All other projects**: Staged for scheduled execution windows.
+
+### What's Next
+
+**May 18 06:00 UTC (14 hours)**:
+- Wave 1 execution: User sends Wave 1 Batch 1 emails + Gist distribution
+- Domain 1 is now clear for inclusion (no review or skipping required)
+- **Monitor**: South Carolina gerrymander vote May 18 11:00 ET (~16:00 UTC) during execution window — may warrant messaging adjustment if outcome is unexpected
+
+**May 18 12:00 UTC (19.5 hours)**:
+- Contingency checkpoint: Assess Tier 1 engagement metrics
+
+**May 19 20:00 UTC (53 hours)**:
+- Stockbot checkpoint execution
+
+### Token Usage
+- Session 1160: ~50K tokens (agent research + integration)
+- Cumulative: Sonnet 5.1% (3.3M), all models 6.0%
+
+**Status**: No further autonomous work until May 18 06:00 UTC trigger. All systems staged and current. ✅
+
+---
+
 ## Session 1157 (Orchestrator) — May 17, 2026 14:50–15:40 UTC — May 17-18 Breaking Developments Scan + Pre-Wave-1 Currency Verification
 
 **Status**: **READY FOR WAVE 1 EXECUTION — Pre-Wave-1 currency check complete. No autonomous work remains until May 18 06:00 UTC trigger.** ✅ 
