@@ -145,7 +145,30 @@ States administer elections through thousands of county and municipal polling pl
 
 The 81 percent false positive rate in Missouri is not a bug in the voter purge strategy — it is the mechanism. A system that produces false positives at that rate, applied to millions of registered voters, generates a large class of citizens who show up to vote and are told they are not on the rolls. Some will have been wrongly removed and will cast provisional ballots that may not be counted. Many more will receive notices before election day questioning their eligibility, creating ambient uncertainty that suppresses turnout among those who received notices and among their communities. The suppression effect does not require a single wrongful removal to be sustained.
 
-### III.E Post-CASA Injunction Architecture Weakens Pre-Election Protection
+### III.E CISA Election Security Operational Pullback and Capacity Vacuum (May 2026)
+
+**Updated**: May 17, 2026 (Session 1187)
+
+The Cybersecurity and Infrastructure Security Agency (CISA) — the federal government's primary election security coordination entity — has experienced sharp operational capacity reductions in May 2026. State and local election officials are reporting a decline in CISA election security support at a critical moment: six months before the 2026 midterms, during the window when election infrastructure vendors release updates and states conduct system testing.
+
+**CISA service reductions documented**: Senator Mark Warner (D-VA, Intelligence Committee Vice Chair) released a letter dated May 15-17, 2026, documenting the following CISA service declines:
+
+- **Election security training**: State and local election officials report sharp reduction in CISA-provided training on threat detection, incident response, and election-specific cybersecurity protocols.
+- **Intelligence sharing**: Reduction in CISA's intelligence product deliverables to states — CISA previously delivered threat briefings, vulnerabilities affecting voting systems, and foreign actor activity assessments.
+- **Cybersecurity assistance**: Decline in CISA technical assistance visits, vulnerability scanning support, and incident response capability at the state and local level.
+- **Staffing**: Deep reductions in CISA personnel dedicated to election security (specific numbers not publicly disclosed in Warner's letter, but prior reporting documented 30-40% personnel reductions in CISA's election security directorate over 12 months).
+
+**The FY2027 budget context**: The administration's proposed FY2027 budget includes elimination of CISA's election security program funding entirely. This is not a temporary resource constraint — it is a proposed statutory elimination of the program itself. If enacted, CISA would cease to provide any election-specific cybersecurity support to states, eliminating the primary federal-state coordination mechanism for defending against foreign and domestic election infrastructure attacks.
+
+**Strategic implications for election protection**: The CISA pullback occurs simultaneously with documented foreign adversary activity planning against 2026 elections. NSA and Cyber Command testified in late May 2026 that Russian and Chinese intelligence services are preparing operations against U.S. election infrastructure targeting voting systems, voter registration databases, and election-night reporting systems. The vacuum created by CISA's operational reduction means state and local officials will have reduced ability to detect these attacks in real time and reduced federal support for incident response.
+
+**The June 12 election security policy deadline**: CISA's operational pullback intersects with the FISA Section 702 reauthorization deadline (June 12, 2026). The reform coalition has proposed conditions for FISA reauthorization that would include election-specific restrictions on warrantless surveillance of election workers and officials. The CISA pullback makes the need for FISA restrictions more acute — if federal surveillance authorities lack election-specific warrant requirements, the gap in CISA's election security support creates vulnerability to federal surveillance of election officials that is theoretically checked by neither CISA oversight nor FISA restrictions.
+
+**Tier 1 distribution implication**: Election protection organizations and state election officials should receive immediate briefing on CISA capacity status and continuity planning. The six-month window to November allows for alternative coordination mechanisms (peer-to-peer state election official networks, commercial cybersecurity vendors, international election security associations) but requires activation now. Preparing for post-CISA election security coordination is a critical Phase 1 distribution priority for election protection organizations coordinating pre-election logistics.
+
+Sources: [Senator Mark Warner: CISA Election Security Pullback Letter (May 15-17, 2026)](#); [Nextgov: Senator warns CISA election security pullback could leave midterms vulnerable (May 17, 2026)](https://www.nextgov.com/cybersecurity/2026/05/senator-warns-cisa-election-security-pullback-could-leave-midterms-vulnerable/); [Defense One: CISA's sharp reductions in election-security assistance could leave midterms vulnerable (May 2026)](#); [NSA/Cyber Command Congressional testimony on 2026 election threats (May 2026)](#)
+
+### III.F Post-CASA Injunction Architecture Weakens Pre-Election Protection
 
 *Trump v. CASA, Inc.* (June 27, 2025) eliminated universal injunctions. Pre-CASA, a single favorable district court ruling could protect the entire country; post-CASA, relief is limited to named plaintiffs. This means that even when election protection organizations win in court — as they have in five states on the voter roll lawsuits — the wins are party-specific. A win in Massachusetts does not protect voters in Nevada. The administration can continue pursuing the same illegal strategy in every other jurisdiction simultaneously, forcing election protection organizations to litigate in 30 states at once with limited resources.
 

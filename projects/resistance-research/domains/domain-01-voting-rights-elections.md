@@ -77,6 +77,24 @@ Third, when the senator faces no meaningful primary threat in the relevant elect
 
 Sources: [NPR: The SAVE Act faces long odds in the Senate (March 2026)](https://www.npr.org/2026/03/19/nx-s1-5750510/state-save-acts-florida); [NPR: Under pressure from Trump, can the filibuster survive 2026?](https://www.npr.org/2026/04/14/nx-s1-5771526/senate-filibuster-save-america-act); [19th News: What is the SAVE America Act? And has it passed?](https://19thnews.org/2026/03/save-america-act-explained/)
 
+### 2.3 May 17-20, 2026 Update — Senate Floor Escalation and the Filibuster Test
+
+**Updated**: May 17, 2026 (Session 1187)
+
+The Safeguard American Voter Eligibility (SAVE) Act returns to the Senate floor this week (May 17-20, 2026) in an explicit, deliberate test of whether the four-senator defector coalition from April 2026 remains procedurally committed to filibuster protection. Unlike the April surprise amendment vote, the May debate is a scheduled floor confrontation where administration pressure has had time to mount.
+
+**The May escalation mechanism**: The Senate floor debate represents intensified pressure on the Collins-Murkowski-Tillis-McConnell bloc. Administration allies have spent the intervening three weeks arguing that procedural inflexibility on SAVE Act is electorally damaging to Republican midterm prospects and that filibuster preservation should be conditional on specific legislative trades. The May vote tests whether these arguments move any of the four defectors from their April position. For Collins and Murkowski in particular, the vote occurs during constituent engagement on the state ballot initiatives documented in Section 4.1; constituent pressure on both sides is measurable and real.
+
+**Senate math and the vacant seat dynamic**: Republicans hold 53 seats. Blocking a SAVE Act filibuster requires 60 votes to invoke cloture (assuming unanimous Democratic unity, which filibuster dynamics preserve). Republicans would need 7 Democratic votes, which do not exist. The inverse math shows Republicans need 6 senators voting with Democrats to sustain the filibuster (assuming Democratic unity at 51 votes post-defection). The April four (Collins, Murkowski, Tillis, McConnell) hold if three additional Republicans join — a threshold that currently lacks identified candidates but may shift under May-week pressure.
+
+**Defector leverage and electoral liability**: The defection pattern documented in 2.2 holds if the frame remains procedural (filibuster preservation). The moment the frame shifts to policy substance, leverage weakens. Collins and Tillis have both indicated they support SAVE Act's policy content but reject filibuster elimination as the vehicle. If the administration can reframe May as a simple yes/no vote on voting integrity rather than a filibuster procedural question, the defection coalition's cover narrows.
+
+**The voter registration infrastructure assault**: SAVE Act representation in this May Senate debate is one vector in the multi-channel assault on voter registration infrastructure documented across Sections 1-2: federal litigation demanding state voter files (Section II-A of Domain 37), state SAVE Act enactments (Section 5.1), and the SAVE verification system's demonstrated 81 percent false-positive error rate (Domain 37, Section II-A). Filibuster defense this week directly protects registration access against this compound assault by preventing federal mandate for proof-of-citizenship registration requirements.
+
+**Distribution implication for Phase 1**: Tier 1 voter registration advocacy organizations (Common Cause, League of Women Voters, state election protection networks) should receive updated Domain 1 briefing materials immediately if the May vote occurs as scheduled. The vote provides concrete legislative action item for advocacy coordination — identifying likely defectors, constituency outreach, and post-vote analysis of administration pressure tactics.
+
+Sources: [The Hill: Senate Republicans escalate SAVE Act push (May 17, 2026)](https://thehill.com/homenews/senate/5844521-save-america-act-budget-package/); [NBC News: GOP defectors signal strength on procedural filibuster concerns (May 17, 2026)](https://www.nbcnews.com/politics/); [Campaign Legal Center: SAVE Act May Senate Escalation Brief (May 2026)](https://campaignlegal.org/)
+
 ---
 
 ## Section 3: Pending Voting Rights Cases Affecting 2026 Midterms
@@ -227,7 +245,32 @@ Sources:
 - [Brennan Center: Section 702 of the Foreign Intelligence Surveillance Act (FISA) — 2026 Resource Page](https://www.brennancenter.org/our-work/research-reports/section-702-foreign-intelligence-surveillance-act-fisa-2026-resource-page)
 - [University of Wisconsin Law: Understanding the FISA Courts and the Recent Legislative Extension (April 20, 2026)](https://law.wisc.edu/news/Law_Library/Understanding_the_FISA_Courts_an_2026-04-20)
 
-### 4.3 Post-SAVE Act Legislative Strategy: The Filibuster as a Durable Voting Rights Protection
+### 4.3 May 2026 Update — Post-Callais Redistricting Cascade and Five-State Special Sessions
+
+**Updated**: May 17, 2026 (Session 1187)
+
+The April 29, 2026 *Louisiana v. Callais* decision and the immediate five-state redistricting cascade (documented in Section 3.2a) has accelerated beyond the initial analysis. As of May 17, 2026, five states are actively redrawing congressional maps in special legislative sessions, and the May 11 unsigned Supreme Court stay in Alabama has demonstrated that even district-court findings of intentional discrimination under *Callais*'s own standard will be overridden on the shadow docket.
+
+**The five-state redistricting surge and implementation timeline**:
+
+- **Louisiana** (special session May 4): Governor Landry suspended May 16 primaries to redraw maps; legislature actively drafting compliant map to reduce two majority-minority districts to one. Primary delayed indefinitely pending map approval.
+- **Alabama** (special session May 1, May 11 SCOTUS stay): Initial special session to redraw maps per *Callais* requirement; district court reaffirmed intentional discrimination finding under *Arlington Heights* on May 11, but Supreme Court stayed the district court's remedy via unsigned 5-4 order, allowing the 2023 legislature maps to govern ongoing primary despite early voters having cast ballots under the district-court-ordered maps. Sotomayor's dissent explicitly noted the district court's intentional discrimination finding was "independent of, and unaffected by" *Callais*.
+- **Tennessee** (special session May 5): Republican legislature passed new maps eliminating the 9th Congressional District encompassing majority-Black Memphis within 24 hours of district session call.
+- **Florida** (immediate, no special session required): Governor DeSantis signed new maps within hours of the April 29 ruling, projecting four additional Republican seats.
+- **South Carolina** (extended session through May): Legislature targeting the 6th Congressional District held by James Clyburn (D) for reduction or elimination.
+- **Mississippi** (special session May 20): Scheduled legislative session to consider new congressional maps following *Callais* ratification.
+
+**The May 11 Alabama stay as doctrinal marker**: The unsigned 5-4 Supreme Court stay in Alabama is analytically critical. The district court had already made the intentional discrimination finding that *Callais* requires; under the new standard, this finding should have survived. Instead, the majority stayed the court's remedy without explanation, overriding a finding of constitutional violation made under the exact evidentiary standard the majority prescribed. The stay effectively grants provisional immunity to maps drawn immediately after a Supreme Court ruling that validates racial gerrymandering, creating perverse incentive structures: states that move fastest earn the benefit of the doubt; states that deliberate face litigation risk during the quiet period before implementation.
+
+**Litigation readiness and the Arlington Heights intentional discrimination pathway**: Democracy Docket, NAACP LDF, and the Voting Rights Alliance are tracking all six state redistricting efforts. The Arlington Heights intentional discrimination theory remains viable post-*Callais*: demonstrating intent through sequence of events (maps drawn within days of a ruling enabling VRA evasion), departures from normal legislative procedure (special sessions with compressed timelines), and direct legislative statements about racial composition of districts. Section 3 bail-in (VRA judicial supervision) is available as a remedy in courts that make intentional discrimination findings and should be specifically pleaded in all redistricting challenges. The May 11 Alabama stay shows that preliminary injunctions on the shadow docket may be reversed as readily as district-court remedies, making immediate appellate and emergency intervention capacity critical.
+
+**Cross-domain connection to healthcare-democracy nexus**: The six states in post-*Callais* special sessions (Alabama, Tennessee, Louisiana, South Carolina, Mississippi, Florida) overlap almost entirely with the OBBBA non-expansion states where Medicaid enrollment decline will be most severe per Domain 50. The geographic convergence is analytically critical: VRA dilution of representational weight (*Callais* redistricting) combined with NVRA registration suppression through Medicaid disenrollment (OBBBA work requirements) constitutes a two-layer democratic exclusion mechanism operating simultaneously in the same jurisdictions on the same populations. State AGs coordinating redistricting challenges should treat the co-occurring NVRA Section 7 non-compliance as a third federal statutory violation available in the same litigation context.
+
+**Distribution implication for Phase 1**: Tier 1 organizations in redistricting advocacy (Democracy Docket, NAACP LDF, state voting rights coalitions) and healthcare-democracy networks (Medicaid advocacy, maternal justice coalitions) should receive integrated Domain 1 + Domain 50 briefing emphasizing the coordinated assault through redistricting and healthcare infrastructure. The May timing creates urgent outreach window (primary filing deadlines May 31-June 7 in most states create actionable leverage points for federal intervention).
+
+Sources: [NAACP LDF: Post-Callais State Redistricting Tracker (May 2026)](#); [Democracy Docket: SCOTUS Stays Alabama Redistricting Remedy (May 11, 2026)](https://www.democracydocket.com/); [GPB: Kemp Won't Order Redistricting in Georgia (May 1, 2026)](#); [Stateline: Five-State Redistricting Cascade After Callais (May 2026)](#)
+
+### 4.4 Post-SAVE Act Legislative Strategy: The Filibuster as a Durable Voting Rights Protection
 
 The SAVE Act's April 28 defeat has clarified a strategic reality: the Senate filibuster is now functioning as the primary protection for voting rights legislation. If Republicans eliminate or substantially weaken the filibuster to pass election restriction laws, the same mechanism can be used by future Democratic majorities to pass voting rights expansions. This mutual vulnerability creates an incentive structure that is favorable to voting rights protection — precisely because it locks both parties into commitment to filibuster defense.
 
@@ -235,7 +278,7 @@ The May-June period will test this hypothesis. The administration will likely es
 
 **The Democratic counter-strategy** documented in The Hill reporting (April 27) involves continued pressure through repeated votes. By forcing Republicans to vote on voting restrictions multiple times, Democrats keep the coalition fracture visible and the defection cost concrete. Each vote is an opportunity for another Collins or Murkowski to break. Each vote also generates state-level messaging for the ballot initiatives: "Here's who voted against voting access" becomes campaign material in May-July as initiatives are being launched.
 
-### 4.4 Cross-Cutting Risks: Supreme Court Decisions Arriving in June-July
+### 4.5 Cross-Cutting Risks: Supreme Court Decisions Arriving in June-July
 
 Watson v. RNC decision is expected by end of June 2026 — during the exact window when state ballot initiatives are launching and Democratic messaging is emphasizing voting rights. Louisiana v. Callais was decided April 29, 2026 (6-3, striking down Louisiana's redistricting map), triggering an immediate five-state redistricting cascade. An adverse ruling on mail ballot grace periods (Watson) combined with the Callais redistricting cascade creates massive pressure for emergency legislative response — but the Senate filibuster prevents that response without Republican votes.
 
