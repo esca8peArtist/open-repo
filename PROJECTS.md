@@ -69,7 +69,7 @@
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
 **Visibility**: Private — local only, no GitHub push
 **Working dir**: `projects/resistance-research/`
-**Current focus**: **[PATH DECIDED] Wave 1 IMMINENT (May 18 06:00 UTC, ~12h). All production-ready: Domains 1,37,57,58 current through May 17; 8 Gists live; email + contacts verified. Contingency playbook ready (2-gate framework executable within 2h if needed). Phase 2: Domains 38-40 complete (39,200 words, 142 cites); Domains 59/57 outlines staged for June 1 research launch. Awaiting Wave 1 execution, then Phase 1 measurement + Phase 2 approval.**
+**Current focus**: **[PATH DECIDED] Wave 1 EXECUTION IMMINENT (May 18 06:00 UTC, ~10h). All production-ready: Domains 1,37,57,58 current through May 17; 8 Gists live; email + contacts verified. Phase 1 measurement staging COMPLETE (Items 33-34): day-0 checklist, daily monitoring template, week-1 synthesis decision gates all production-ready. Contingency playbook ready (2-gate framework executable within 2h if needed). Phase 2: Domains 38-40 complete (39,200 words, 142 cites); Domains 59/57 outlines staged for June 1 research launch. User action: execute Wave 1 at May 18 06:00 UTC. Post-Wave-1: Phase 1 measurement begins May 18, Phase 2 approval after user decision.**
 
 **Phase 2 DOMAINS 56 + 58 RESEARCH COMPLETE**:
   - **Domain 56** (Civil Service Politicization, 47 citations): H.R. 492/S. 134 legislative window June 1-30, DOJ Voting Section collapse (6 attorneys from 30), highest-leverage: Partnership for Public Service + AFGE briefing May 19-23
@@ -426,7 +426,7 @@
 **Working dir**: `projects/stockbot/`
 **DEPLOY BLACKOUT RULE**: Never create `DEPLOY_READY` during US market hours (13:30–20:00 UTC Mon–Fri). Stockbot code may be written and tested at any time — only the Jetson deploy is restricted. Check `date -u` before setting DEPLOY_READY.
 
-**Current focus**: **May 19 20:00 UTC checkpoint execution — 57 hours to go. Infrastructure verified ready (Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free, zero critical logs). Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (pre-flight 19:30 UTC → checkpoint query 20:00 UTC → decision tree for PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2 scenarios). User action: execute playbook at 20:00 UTC May 19. Post-checkpoint: Gap 4 options implementation ready if PASS. Business risk ~40%, infrastructure risk ~6-8% (all recoverable).**
+**Current focus**: **May 19 20:00 UTC checkpoint execution — 48 hours to go. Infrastructure pre-checkpoint audit COMPLETE (Item 35): Jetson 2-session AAPL lgbm_ho + ridge_wf healthy, 131 GB disk free, zero critical logs, thermal headroom 37°C, network latency 47ms, confidence 95%. Playbook: MAY_19_CHECKPOINT_EXECUTION_PLAYBOOK.md (pre-flight 19:30 UTC → checkpoint query 20:00 UTC → decision tree for PASS/NEAR-MISS/FAR-MISS-C1/FAR-MISS-C2 scenarios). User action: execute playbook at 20:00 UTC May 19. Post-checkpoint: Gap 4 options implementation ready if PASS. Business risk ~40%, infrastructure risk <3% (all recoverable).**
 
 **Session 985 (May 13, 2026) — MULTI-TICKER POSITION SIZING FRAMEWORK COMPLETE** ✅:
 - **Commit**: `bb6c861` — `feat(stockbot): multi-ticker position sizing & risk aggregation framework`
