@@ -8319,3 +8319,113 @@ Available work pending May 19 checkpoint:
 
 ---
 
+
+---
+
+## Session 1109 — Orchestrator Autonomous Session
+
+**Time**: 2026-05-17 02:16–09:50 UTC (7.5 hours)  
+**Type**: Resistance-Research Phase 1 Wave 1 Tier A Updates (Research Phase)  
+
+### Orientation
+
+- Read ORCHESTRATOR_STATE.md: Two active blocks (cybersecurity-hardening VeraCrypt, mfg-farm test print) require user action; no autonomous resolution possible
+- Processed BLOCKED.md: No new resolutions; both blocks remain active
+- Processed INBOX.md: No new items
+- Pruned stale focus line in resistance-research (PROJECTS.md) — removed "20 sessions ago" references, clarified Wave 1 readiness
+
+### Decision
+
+Highest-priority unblocked work: **resistance-research Phase 1 Wave 1 Tier A updates** (priority #2 project, time-critical May 18-28 window)
+
+Path A decided May 12 (full 35-domain framework). Four domains need Tier A update sections:
+- Domain 33: Callais-triggered redistricting cascade (4-5 hours)
+- Domain 35: SCOTUS decisions + pending cases (3-4 hours)
+- Domain 25: FISA Section 702 April outcomes (1-2 hours)
+- Domain 19f: War Powers status assessment (1-2 hours)
+
+Target completion: May 28 (for June 7 distribution to Phase 1 adopters)
+
+### Work Completed
+
+#### 1. Project State Updates (PROJECTS.md)
+
+Pruned resistance-research current focus line:
+- Old: "**PATH DECIDED...** Phase 2 execution roadmap complete (Session 1088). **[RESOLVED 2026-05-17]**: Houston volunteer organizations..." + 20+ session references
+- New: "**PATH DECIDED: Path A + Domain 37 Hybrid.** Phase 1 Wave 1 ready to execute starting May 18: Batch 1 (5 pre-verified contacts), all 8 Gists live, 2-hour execution window. Houston volunteer organizations research complete and ready for user review. Phase 2 research (Domains 38-40, 56-58) complete; Domains 59, 57 staged for June-July. **Next**: Execute Wave 1 starting May 18, Domain E research by June 15, Phase 2 distribution June-August."
+
+**Impact**: Removed stale session references and clarified Wave 1 status for next session's clarity.
+
+#### 2. Tier A Updates Research (General-Research Agent)
+
+Spawned research agent to analyze four policy areas and produce policy analysis sections:
+
+**Deliverables Created**:
+- `TIER_A_UPDATES_RESEARCH_SESSION_1109.md`: Comprehensive research document covering:
+  1. **State Legislative Dynamics Post-Callais** (Apr 29, 2026 SCOTUS decision)
+     - Callais ruling raised evidentiary threshold for VRA Section 2 claims
+     - Cascade: 8 states redrawing/considering redistricting; 40% of U.S. House seats affected
+     - Louisiana: Suspended May 16 primary, collapsed 2-district Black majority to 1
+     - Tennessee: Cohen (19-year Democratic incumbent) retiring after redistricting
+     - Congressional response options outlined (none advanced in Republican Congress)
+  
+  2. **SCOTUS 2026 Term Status** (major pending decisions)
+     - Trump v. Barbara (birthright citizenship, expected late June/early July)
+     - Watson v. RNC (mail ballot grace periods, expected late June; affects 13+ states)
+     - Other 11+ cases pending
+     - Implications for November 2026 midterm election administration
+  
+  3. **FISA Section 702 Reauthorization** (June 12 deadline)
+     - April 2026: Repeated 45-day extension (expires June 12)
+     - Warrant requirement: Central fault line (Intel agencies vs. civil liberties)
+     - Digital currency rider killed long-term deal in April
+     - 3-4 weeks to reach consensus before June 12 deadline
+  
+  4. **War Powers Legislative Status** (Iran conflict)
+     - 60-day clock expired ~May 1; administration claimed ceasefire "terminates" hostilities
+     - Senate votes failed 47-50 (April 30) → 49-50 (May 13) — margin narrowing
+     - Congress took no enforcement action; no AUMF passed
+     - Administration's "terminated hostilities" argument sets precedent for future executive war-initiation authority
+
+**Research Quality**: 35K tokens used; 45+ sources cited; comprehensive policy analysis across all four domains; ready for integration into domain files
+
+#### 3. Task Tracking
+
+Created two tasks:
+- Task #1: Phase 1 Wave 1 Execution — Batch 1 Send (May 17-18) — **USER ACTION** (template pre-fill, test send, distribution)
+- Task #2: Tier A Updates research — Domains 33, 35, 25, 19f — **IN PROGRESS** (research complete; awaiting integration & user review)
+
+### Next Actions (Session 1110 or user-triggered)
+
+1. **Integrate research into domain files** (May 18-28 window, ~8-10 hours)
+   - Create new "Tier A Update — May 2026" sections for each domain
+   - Add movement organization contacts (for distribution targeting)
+   - Document policy windows and advocacy levers
+   - Integrate into base domain files in `projects/resistance-research/domains/`
+
+2. **User Wave 1 Batch 1 execution** (May 17-18, ~2 hours)
+   - Template pre-fill (~35-45 min): Goodman, Weiser, Chenoweth, Bassin, Elias
+   - Test send to self (verify URLs, check placeholders, confirm delivery)
+   - Send to Batch 1 (5 pre-verified contacts)
+   - Monitor for responses/bounces
+
+3. **Domain E research** (June 15 target, 12-16 hours)
+   - Election Administration Seizure domain research begins after Wave 1 execution complete
+   - Covers CISA personnel audit, state AG election litigation, ProPublica investigation
+
+### Impact Summary
+
+- **Research completed**: All four Tier A update policy analyses complete; 45+ sources compiled; ready for domain integration
+- **Timeline**: Research phase on schedule; integration phase begins May 18; user review May 25-28; distribution June 7
+- **Risk status**: No blockers identified; orchestrator autonomous work proceeding normally; waiting for user Wave 1 execution (May 17-18) before integration work begins
+
+### Files Modified/Created
+
+- ✅ `/PROJECTS.md` — resistance-research focus pruned
+- ✅ `/projects/resistance-research/TIER_A_UPDATES_RESEARCH_SESSION_1109.md` — research document created
+- ✅ Task tracking (#1, #2) created
+
+### Commit Pending
+
+Waiting for integration work completion before committing orchestration files.
+

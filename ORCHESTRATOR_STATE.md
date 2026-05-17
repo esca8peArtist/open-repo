@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-16T23:58:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T02:16:12Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.0% | Reset in 48h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.2% | Reset in 46h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088). **NEW INBOX IT … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088). **[RESOLVED 20 … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -44,8 +44,8 @@
 **Focus**: **PR #1 OPEN** (2026-04-26) + **PR #2 OPEN for Phase 5 Candidate 3** (2026-05-15 01:35 UTC)
 
 ### systems-resilience
-**Status**: Active — **Phase 1 Individual-scale NEARLY COMPLETE** (5 of 6 domains done; education queued). Completed: 01-water.md, 02-food.md, 03-shelter.md, 05-healthcare.md. Midwest reference docs: extreme-weather.md (complete), calendar.md (complete, 10.3K words, 33 citations).
-**Focus**: Completing individual-scale documentation + Midwest reference library. COMPLETED: water, food, shelter, healthcare (all Midwest-specific protocols, progressive disclosure, 30+ citations); extreme-weather, calendar (cross-domain timing + seasonal risk management). **NEW INBOX ITEMS (2026-05-16)**: (A) Research moisture extraction machines + farm tools (schematics, instructions, manual versions), (B) Enhance healthcare.md with holistic/plant-based medicine info, enhance agriculture section with re … *(truncated — prune Current focus in PROJECTS.md)*
+**Status**: Active — **Phase 1 INDIVIDUAL-SCALE COMPLETE + PHASE 2 HOUSEHOLD-SCALE INITIATED** (6 individual domains + household coordination overview). Individual-scale COMPLETE: 01-water.md, 02-food.md, 03-shelter.md, 04-energy.md, 05-healthcare.md, 06-agriculture.md + extreme-weather.md, calendar.md (10.3K words, 33 citations). Household-scale LAUNCHED: 01-household-coordination-overview.md (7,449 words, 38 citations).
+**Focus**: **Phase 2 HOUSEHOLD-SCALE COMPLETE + Optional Foraging Guide COMPLETE** (Sessions 1105-1108). Seven documents delivered: (1) household/01-household-coordination-overview.md, (2) household/02-water-coordination.md, (3) household/03-food-coordination.md, (4) household/04-energy-coordination.md, (5) household/05-healthcare-coordination.md, (6) household/06-community-scale-overview.md, (7) midwest/foraging-species.md (6,800 words, 32 citations, wild edibles for Zone 5, safety/sustainability). **NEXT … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -88,6 +88,8 @@
 **Resolution**: [leave blank]
 ---
 
+## State Drift Warnings
+⚠️ STALE FOCUS: resistance-research — focus references Session 1088 (20 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
