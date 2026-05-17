@@ -1,5 +1,54 @@
 # Work Log
 
+## Session 1113 (Orchestrator + Parallel Agents) — May 17, 2026 04:45–05:30 UTC — May 19 Checkpoint Verification + Domain G Research Scoped
+
+**Summary**: Orchestrator spawned two parallel subagents (stockbot + resistance-research) to work on top priorities while Wave 1 execution pending. Stockbot: Pre-checkpoint verification PASSED, all systems ready for May 19 20:00 UTC. Resistance-research: Domain G research scoped (press freedom/epistemic infrastructure), 261-line outline created, 33+ sources gathered.
+
+### Stockbot Agent Work
+- Pre-checkpoint verification of May 19 checkpoint readiness
+- Verified Jetson connectivity (uptime 33 days, load healthy)
+- Confirmed Docker containers healthy (stockbot Up 27h, web Up 7d)
+- **CRITICAL**: Verified Lever A deployment successful on Jetson:
+  - `threshold_multiplier`: 0.4 (was 0.50 before May 16)
+  - `confidence_floor`: 0.45 (was 0.50 before May 16)
+  - Effective threshold reduction: 2.28% → 1.82% ✅
+- Trading logs clean with no errors
+- Minor transient Alpaca API timeouts (2 events, non-blocking, auto-recovered)
+- **Status**: READY for May 19 20:00 UTC checkpoint execution
+- **Files**: WORKLOG.md updated with verification results (commit 0addfc0)
+
+### Resistance-Research Agent Work
+- Completed domain coverage audit (all Phase 1-2 domains through 59 are complete)
+- Identified research gap: supply-side epistemic infrastructure attack (press freedom, journalism infrastructure)
+- Designated as **Domain G** (Domain E/F already complete, 38-40/56-58 already complete)
+- Created detailed outline document: `domain-G-press-freedom-information-ecosystem-democratic-infrastructure.md`
+  - 261 lines, 35 KB, production-ready outline
+  - 7-section structure with detailed content specifications
+  - 33+ sources catalogued with URLs
+  - Cross-domain connection map (links to Domain 43, media-freedom-recovery, etc.)
+- Research angle: FCC weaponization + DOJ journalist surveillance + CPB/VOA gutting + media consolidation + local news collapse = coordinated epistemic attack
+- Quantified impact: newspaper closures → 5.5-6.4 basis point municipal bond yield increases (Gao-Lee-Murphy/Brookings)
+- **Timeline**: June 15, 2026 production target (before Watson v. RNC ruling late June, timed to FISA 702 deadline June 12)
+- **Files**: Created domain G outline, updated WORKLOG.md and CHECKIN.md
+
+### Orchestration Updates
+- **PROJECTS.md**: Updated stockbot focus (May 19 checkpoint ready, pre-verification PASS), updated resistance-research focus (preserved "[RESOLVED Tier A Integration]" marker, noted Domain G scoping)
+- **CHECKIN.md**: Added Session 1113 entry with full status summary
+- **BLOCKED.md**: No new blocks
+
+### Status Summary
+- **Stockbot**: Ready for checkpoint. Next action: Execute May 19 20:00 UTC query. Expected outcome: aapl_model_sells >= 1 (PASS) or 0 (escalate Lever B).
+- **Resistance-Research**: Wave 1 user execution pending May 18-20. Autonomous Domain G research staged for May 17–June 15 production window. Initial outline + 33 sources complete.
+- **All other projects**: Awaiting user actions (Wave 1 execution, Windows restart, test print, etc.)
+
+### Next Actions
+1. **May 18**: User executes Wave 1 Batch 1 (5 contacts, ~2 hours)
+2. **May 19 19:00 UTC**: Orchestrator pre-checkpoint verification (Jetson connectivity, Docker, trading logs)
+3. **May 19 20:00 UTC**: Execute May 19 checkpoint query, assess Lever A effectiveness
+4. **May 17–June 15**: Resistance-research Domain G production research (parallel with Wave 1 and post-Wave-1 activities)
+
+---
+
 ## Session (Research Agent) — May 17, 2026 — Phase 3 Community-Scale Deep Dives
 
 **Purpose**: Research and write Phase 3 community-scale documents for systems-resilience project

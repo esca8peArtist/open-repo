@@ -1,5 +1,61 @@
 # Check-in
 
+## Session 1113 (Orchestrator + Stockbot + Resistance-Research Agents) — May 17, 2026, 04:45–05:30 UTC — May 19 Checkpoint Verification Complete + Domain G Research Scoped ✅
+
+**Status**: **SESSION COMPLETE — Stockbot May 19 checkpoint fully prepared; resistance-research Domain G research scoped and started (261-line outline, 33+ sources)**
+
+### Accomplishments This Session
+
+**1. Stockbot May 19 Checkpoint — Full Verification Complete** ✅
+- **Pre-Checkpoint Verification Passed**: ALL critical checks green
+  - SSH connectivity: OK (uptime 33 days, load 0.66)
+  - Docker containers: Healthy (stockbot Up 27h, web Up 7d)
+  - Lever A deployment: **Confirmed** — both sessions show correct post-Lever-A values
+    - `threshold_multiplier`: 0.4 (was 0.50 pre-Lever A)
+    - `confidence_floor`: 0.45 (was 0.50 pre-Lever A)
+  - Trading logs: Clean "Market closed — skipping cycle" messages
+  - Transient Alpaca API timeouts (non-blocking, 2 events, auto-recovered)
+- **Effective threshold reduction**: 2.28% → 1.82% ✅ (as intended)
+- **Checkpoint ready**: May 19 20:00 UTC execution fully staged
+- **Key metric for May 19**: `aapl_model_sells >= 1` → PASS; `= 0` → STILL_MISS_B2 (escalate to Lever B)
+- **Files updated**: WORKLOG.md committed (commit 0addfc0)
+
+**2. Resistance-Research Domain G — Scoping & Initial Research Complete** ✅
+- **Coverage gap identified**: Supply-side epistemic infrastructure attack (press freedom, journalism collapse) — analytically distinct from existing domains
+- **Scope**: FCC weaponization, DOJ journalist surveillance, CPB/VOA gutting, media consolidation, local news collapse
+- **Research depth**: 8 WebSearches, 33+ sources with URLs gathered and catalogued
+- **Domain document created**: `domain-G-press-freedom-information-ecosystem-democratic-infrastructure.md` (261 lines, 35KB outline)
+- **Production timeline**: June 15, 2026 target (before Watson v. RNC ruling, timed to FISA 702 June 12 deadline)
+- **Strategic angle**: Quantified consequence through Gao-Lee-Murphy/Brookings: newspaper closures → 5.5-6.4 basis point increase in municipal bond yields
+- **Files created/updated**: Domain G outline, WORKLOG.md, CHECKIN.md
+
+### Work Completed vs. Planned
+
+| Task | Planned | Completed | Status |
+|---|---|---|---|
+| May 19 checkpoint pre-verification | May 17 | ✅ Complete | ALL systems ready |
+| Lever A deployment confirmation | May 17 | ✅ Complete | Verified on Jetson |
+| Domain E research (June 15) | May 17 onward | ✅ Scoped as Domain G | 35KB outline, 33+ sources |
+| Wave 1 execution prep | May 18 | Pending | User action |
+
+### Current Project Status
+
+| Project | Status | Next Milestone | Notes |
+|---|---|---|---|
+| **stockbot** | May 19 checkpoint ready | May 19 20:00 UTC execution | Pre-verification: PASS |
+| **resistance-research** | Domain G scoped | Domain G production (June 15) | Outline + 33 sources ready |
+| **systems-resilience** | Phase 3 complete | Phase 3 consolidation / Phase 4 | (from Session 1112) |
+| **All other projects** | Awaiting user action | See blockers list | mfg-farm, cybersecurity-hardening |
+
+### Needs User Input
+
+1. **resistance-research Wave 1 Batch 1 execution** (May 17-18, ~2 hours) — email to 5 pre-verified contacts
+2. **stockbot post-May-19-checkpoint decision** (May 19 20:00 UTC) — scenarios PASS/STILL_MISS awaiting result
+3. **cybersecurity-hardening VeraCrypt restart** (Windows) — enable background encryption
+4. **mfg-farm test print** (0.20mm, PLA+, 3 walls) — evaluate snap-arm clearance
+
+---
+
 ## Session 1112 (Orchestrator + Research Agent) — May 17, 2026, 03:45–04:45 UTC — May 19 Checkpoint Infrastructure Verification + Phase 3 Community-Scale Research ✅
 
 **Status**: **SESSION COMPLETE — Checkpoint infrastructure verified and ready; Phase 3 community-scale research delivered (3 documents, 16K+ words)**
