@@ -1,24 +1,29 @@
 ---
 title: "Phase 2 Domain 38: AI Regulatory Capture & Governance — Research Outline and Staging"
 created: 2026-05-15
-status: outline-and-staging — production complete as of Session 1030
+updated: 2026-05-17
+status: outline-and-staging — production complete as of Session 1030; updated Session 1125 (Wave 1 preparation)
 production_file: domain-38-ai-regulatory-capture-governance.md
 distribution_target: July 15, 2026
 hard_deadline: August 2, 2026 (EU AI Act Article 50 enforcement)
-session: Exploration Queue — Phase 2 Domain 38 staging pass
+session: "1125 — Wave 1 preparation, Phase 2 gate-opener"
+cross_references:
+  - domains/domain-36-ai-governance-algorithmic-accountability-democratic-authority.md
+  - domains/domain-29-prosecutorial-weaponization-and-doj-capture.md
+  - domains/domain-43-epistemic-infrastructure-disinformation-crisis.md
+  - domains/domain-35-supreme-court-2026-term-preview-post-loper-landscape.md
+  - domains/domain-25-fisa-702-april-2026-outcome.md
 ---
 
 # Phase 2 Domain 38: AI Regulatory Capture & Governance — Research Outline and Staging
 
-*Prepared May 15, 2026. For user decision-making and Phase 2 initiation planning.*
+*Prepared May 15, 2026. Updated May 17, 2026 (Session 1125 — Wave 1 preparation). For user decision-making and Phase 2 initiation planning.*
 
 ---
 
-## Production Status Note
+## Production Status
 
-The full production document for this domain (`domain-38-ai-regulatory-capture-governance.md`) was completed in Session 1030 on May 15, 2026 — 6,800 words, 43 verified citations, status production-ready. This outline serves as a decision-support document: it maps the domain's unique angle, movement leverage, 2026 events, and cross-domain architecture for the user's Phase 2 path decision (and for any researcher who needs the domain's strategic context without reading the full 6,800-word document).
-
-The production timeline section below has been updated to reflect current status.
+The full production document for this domain (`domain-38-ai-regulatory-capture-governance.md`) was completed in Session 1030 on May 15, 2026 — 6,800 words, 43 verified citations, status production-ready. This outline serves as the Phase 2 gate-opener document: it maps the domain's unique angle, movement leverage, 2026 events, and cross-domain architecture for the user's Phase 2 path decision. Updated May 17 to add structured format sections (unique angle, key themes, movement leverage, production timeline, source list, cross-references) consistent with the Phase 2 Domain 39 and Domain 40 outline format.
 
 ---
 
@@ -179,4 +184,92 @@ The domain's cross-domain architecture is one of its strongest features for dist
 
 ---
 
-*Outline prepared: May 15, 2026. Production document: `domain-38-ai-regulatory-capture-governance.md`. Distribution target: July 15, 2026. Hard deadline: August 2, 2026 (EU AI Act Article 50 enforcement). Next action: Gist creation (timed with Domain 42/37 distribution wave sequencing).*
+---
+
+## Summary Format (Phase 2 Gate-Opener Sections)
+
+*Added May 17, 2026 (Session 1125) for consistency with Domain 39 and Domain 40 outline format.*
+
+### Unique Angle (200 words)
+
+Domain 38 differs from Domain 36 (AI Governance, Algorithmic Accountability) in a structurally precise way: Domain 36 documents what AI systems are doing inside the statutory vacuum — WISeR denying Medicare claims without disclosure, ImmigrationOS targeting deportation through unaudited Palantir models, the SSA Insight program flagging disability-favorable administrative law judges. Domain 38 explains why those harms persist despite documentation.
+
+The mechanism: the regulatory architecture that would prevent algorithmic harm was dismantled (EO 14110 revoked January 20, 2025), was never binding (NIST AI RMF is voluntary), is being preempted at the state level (DOJ AI Litigation Task Force, xAI v. Colorado), and is being shaped by the industry that profits from its absence (NIST working groups, the Agentic AI Foundation, AI Alliance, Partnership on AI). This is regulatory capture with a structural feature that distinguishes it from conventional capture: the captured institutions have no statutory authority to be captured in the first place. Capture is happening at the standard-setting layer before binding law is even enacted.
+
+The May 2026 Birhane et al. paper (arxiv.org/abs/2605.06806) provides the first empirical taxonomy of AI regulatory capture — 27 mechanisms, five categories, validated across 100 news articles — and documents revolving-door mechanisms in 24% of high-profile AI regulatory incidents. Domain 38 applies that taxonomy to the 2026 sequence with an electoral consequence argument the paper does not make.
+
+### Key Themes and Evidence (300 words)
+
+**Theme 1: The statutory vacuum as precondition for capture.** No federal AI statute exists. EO 14110 revoked January 20, 2025. EO 14179 replaced it with a "minimally burdensome" directive — an industry lobbying position elevated to executive policy. OMB M-25-21 and M-25-22 replaced Biden-era mandatory NIST AI RMF alignment with voluntary best-practice guidance. The 3,611-item 2025 Federal Agency AI Use Case Inventory is entirely self-reported with no independent verification and no denial-rate or bias-testing disclosure required.
+
+**Theme 2: The four active capture mechanisms.** The revolving door (with an ownership-stake variant — Musk's DOGE access simultaneous with xAI's litigation against Colorado and xAI's Commerce Department certification); standards body capture (NIST AI RMF working groups dominated by Microsoft, Google, Amazon, Meta, IBM; the Agentic AI Foundation co-founded by Anthropic, OpenAI, and Block governs the Model Context Protocol for agentic AI); coalition lobbying as epistemic capture (Partnership on AI, AI Alliance repackaging industry governance preferences as safety vocabulary in federal policy); legal preemption as capture tool (the DOJ AI Litigation Task Force — established January 9, 2026 — deployed to challenge Colorado's SB 24-205, with DOJ intervening April 24 on xAI's behalf, the first federal intervention in a state AI law challenge in US history).
+
+**Theme 3: The xAI v. Colorado sequence.** April 9: xAI files suit against Colorado AI Act. April 24: DOJ intervenes on xAI's behalf. April 27: court suspends enforcement. May 9: Colorado legislature passes SB 26-189 repealing and replacing the original law with a narrower baseline (57-6 House, 34-1 Senate). This sequence — lawsuit to legislative retreat in 30 days — is the case study in how structural capture compresses accountability without eliminating it entirely.
+
+**Theme 4: Regulatory arbitrage as democratic design failure.** EU AI Act Article 50 (enforcement August 2, 2026) requires machine-readable synthetic content watermarking and deepfake disclosure for EU markets. US companies comply for EU users; identical deployments in US domestic political contexts face no equivalent obligation. The "minimally burdensome" standard is not the absence of policy — it is a policy that channels the least accountable AI deployments into US democratic contexts by design.
+
+**Theme 5: Bipartisan resistance documented.** Senate voted 99-1 to strip a 10-year state AI enforcement moratorium from the One Big Beautiful Bill, opposed by 40 state AGs and 17 Republican governors. The political foundation for state floor protection is documented and durable.
+
+### Movement Leverage (100 words)
+
+**AI policy advocacy:** AI Now Institute, Algorithmic Justice League, Center for AI Policy (CAIP — model Responsible AI Act cited directly in reform section), Center for AI Safety. The domain provides mechanism analysis for their legislative push.
+
+**Election protection:** Brennan Center for Justice, Protect Democracy, Democracy Docket — no current election protection organization has a document connecting NIST standards body capture to the absence of deepfake disclosure requirements in domestic elections. Domain 38 provides that synthesis.
+
+**Tech accountability:** EFF (active in WISeR FOIA litigation), CDT, Access Now, EPIC — the legal preemption as capture tool analysis directly supports their state law defense work.
+
+**Congressional:** Senate AI Caucus (Heinrich and Young), Senate Commerce Committee, House Science Committee; Congressional Black Caucus (algorithmic harm disproportionately affects Black communities in benefits and immigration contexts).
+
+### Production Timeline (50 words)
+
+Full document complete May 15 (6,800 words, 43 citations). Distribution target: **July 15, 2026** — six weeks before EU AI Act Article 50 enforcement (August 2). Must reach congressional and civil society targets before the EU enforcement date for the regulatory arbitrage framing to carry maximum media and legislative impact.
+
+### Source List (15 verified sources)
+
+1. Birhane et al. — "Big AI's Regulatory Capture: Mapping Industry Interference and Government Complicity" (May 2026): [https://arxiv.org/abs/2605.06806](https://arxiv.org/abs/2605.06806)
+
+2. December 11, 2025 AI preemption EO: [https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/)
+
+3. Baker Botts — Colorado repeals and replaces AI Act (May 2026): [https://ourtake.bakerbotts.com/post/102msga/colorado-repeals-and-replaces-ai-act](https://ourtake.bakerbotts.com/post/102msga/colorado-repeals-and-replaces-ai-act)
+
+4. Colorado Sun — DOJ joins xAI lawsuit against Colorado AI law (April 24, 2026): [https://coloradosun.com/2026/04/24/doj-joins-lawsuit-colorado-ai-law-federal-court/](https://coloradosun.com/2026/04/24/doj-joins-lawsuit-colorado-ai-law-federal-court/)
+
+5. Time — Senate votes 99-1 to reject AI moratorium: [https://time.com/7299044/senators-reject-10-year-ban-on-state-level-ai-regulation-in-blow-to-big-tech/](https://time.com/7299044/senators-reject-10-year-ban-on-state-level-ai-regulation-in-blow-to-big-tech/)
+
+6. EU AI Act Article 50 text: [https://artificialintelligenceact.eu/article/50/](https://artificialintelligenceact.eu/article/50/)
+
+7. International AI Safety Report 2026 (Bengio et al.): [https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026)
+
+8. TechPolicy.Press — FTC AI preemption authority is limited: [https://www.techpolicy.press/the-ftcs-ai-preemption-authority-is-limited/](https://www.techpolicy.press/the-ftcs-ai-preemption-authority-is-limited/)
+
+9. NIST AI Risk Management Framework: [https://www.nist.gov/itl/ai-risk-management-framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
+10. GAO-26-107859 — AI Acquisitions report: [https://files.gao.gov/reports/GAO-26-107859/index.html](https://files.gao.gov/reports/GAO-26-107859/index.html)
+
+11. CNBC — CAISI pre-deployment agreements with Google, Microsoft, xAI (May 5, 2026): [https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html](https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html)
+
+12. H.R. 5511 — Algorithmic Accountability Act of 2025: [https://www.congress.gov/bill/119th-congress/house-bill/5511/text](https://www.congress.gov/bill/119th-congress/house-bill/5511/text)
+
+13. Linux Foundation — Agentic AI Foundation announcement: [https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation)
+
+14. RealClearPolicy — America's AI governance gap needs independent oversight (Hewlett Foundation, April 2026): [https://www.realclearpolicy.com/articles/2026/04/03/americas_ai_governance_gap_needs_independent_oversight_1174471.html](https://www.realclearpolicy.com/articles/2026/04/03/americas_ai_governance_gap_needs_independent_oversight_1174471.html)
+
+15. Control Risks — Transatlantic AI governance divergence (2026): [https://www.controlrisks.com/our-thinking/insights/ai-visions-in-2026-a-transatlantic-strategic-divide](https://www.controlrisks.com/our-thinking/insights/ai-visions-in-2026-a-transatlantic-strategic-divide)
+
+Additional verified sources in production document (43 total): EO 14179; EO 14110 NIST documentation; OMB M-25-21; Sidley analysis of December 2025 EO; Baker Botts DOJ AI Litigation Task Force; Norton Rose Fulbright xAI/DOJ/Colorado; WilmerHale March 2026 White House AI Framework; Future of Privacy Forum voluntary AI governance; CAIP Responsible AI Act model legislation; NIST AISCWG charter; EU Code of Practice on AI-Generated Content.
+
+### Cross-References (100 words)
+
+**Domain 36** (AI Governance, Algorithmic Accountability) is the harm documentation; Domain 38 is the mechanism explanation for why those harms persist. Distribute together.
+
+**Domain 29** (DOJ Capture) is extended by the AI Litigation Task Force: DOJ's litigation power deployed not to enforce federal law but to eliminate state accountability requirements for a politically preferred industry.
+
+**Domain 35** (SCOTUS/Loper Bright) compounds the statutory vacuum: post-Loper, agency AI rulemaking is more legally fragile without explicit statutory authority, strengthening the case for a federal AI statute.
+
+**Domain 43** (Epistemic Infrastructure/Deepfakes) covers the electoral harm; Domain 38 covers why federal deepfake regulation does not exist — same statutory vacuum and preemption architecture.
+
+**Domain 25** (FISA 702): the commercial data broker loophole remaining after the June 12 extension is enabled by the same absent statutory AI and data governance that Domain 38 analyzes.
+
+---
+
+*Outline prepared: May 15, 2026. Updated: May 17, 2026 (Session 1125). Production document: `domain-38-ai-regulatory-capture-governance.md` (6,800 words, 43 citations). Distribution target: July 15, 2026. Hard deadline: August 2, 2026 (EU AI Act Article 50 enforcement). Next action: Gist creation (timed with Domain 42/37 distribution wave sequencing).*
