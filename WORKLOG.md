@@ -1,5 +1,38 @@
 # Work Log
 
+## Session 1108 — May 17, 2026 (Research Agent — Household Healthcare Coordination)
+
+**Status**: COMPLETE
+
+**Deliverable**: `projects/systems-resilience/household/05-healthcare-coordination.md` (~6,800 words, 33 citations, production-ready)
+
+**Work performed**:
+- Read existing Phase 2 docs (02-water-coordination.md, 03-food-coordination.md, 04-energy-coordination.md) to match structure and conventions
+- Read individual/05-healthcare.md to identify what is already covered and avoid duplication; that doc covers MARCH protocol, hemorrhage control, anaphylaxis, shock, fractures, antibiotics — this doc explicitly defers to it and covers cluster-layer coordination
+- Researched: Cuba consultorio system and Special Period health outcomes (Keck & Reed 2012), Rwanda Binôme CHW model (Partners in Health, Exemplars in Global Health — 70% under-five mortality reduction 2000–2017), CPR/First Aid certification validity and skill retention (Red Cross, AHA — 2-year standard, skill decay within months), doxycycline single-dose Lyme prophylaxis (Nadelman et al. NEJM 2001 — 87% efficacy within 72 hours), insulin refrigeration requirements and outage management (FDA, CDC), psychiatric medication discontinuation syndrome (Fava et al. — 15–50% incidence, paroxetine highest risk), CPAP power requirements and battery backup options, falls prevention home modifications (NCOA — 1 in 4 elders fall annually, 38,000 deaths), pediatric weight-based dosing (St. Louis Children's Hospital tables), febrile seizure management (AAP clinical practice guideline), norovirus containment protocol (CDC — 72-hour post-symptom isolation, soap-and-water superiority), tick-borne illness Midwest incidence (CDC surveillance, Illinois DPH), mental health in emergencies (WHO — psychosocial support evidence, social cohesion as protective factor), WHO ORS formula and dehydration management, postpartum hemorrhage recognition and management, developmental regression in isolated preschoolers (peer-reviewed evidence), advance directives in emergency settings
+
+**Content delivered**:
+- Opening finding: shared expertise, rotation, supply depth, and accessibility are the structural advantages of the cluster model over individual; Cuba and Rwanda precedent
+- Quick-reference card: cluster healthcare baseline comparison table, emergency contact decision tree, trained member roster template
+- Section 1 (Cluster Medical Readiness Audit): 8-skill-level inventory table, training rotation sequence (months 1–6), communication and accessibility protocols for non-English speakers, children, deaf/HoH, and cognitive impairment
+- Section 2 (Shared Medical Supply Infrastructure): hub-plus-per-household architecture, 12-month OTC medication supply table with quantities, wound care inventory table, equipment table with hub vs. per-household quantities, supply rotation protocol
+- Section 3 (Chronic Disease Management): confidential registry template, insulin cold-chain management (summer outage + winter freezing risk), CPAP power requirements and backup architecture (300 Wh battery spec), medication coordination and bulk supply planning, psychiatric medication protocol with tapering pre-planning
+- Section 4 (Pediatric Care): FLACC pain scale for non-verbal children, weight-based dosing quick reference (acetaminophen, ibuprofen, diphenhydramine, ORS), febrile seizure management per AAP guideline, croup, dehydration, otitis media protocols, developmental regression watchlist and structured activity protocol
+- Section 5 (Geriatric Care): functional mapping template, falls prevention (grab bar evidence, cost data, lighting protocol), polypharmacy and simplified outage regimen strategy with prescriber pre-planning, dementia and cognitive impairment management protocols
+- Section 6 (Outbreak/Communicable Disease): tick surveillance cluster protocol (log, species ID, 200 mg doxycycline prophylaxis protocol), influenza and RSV management, norovirus containment (72-hour isolation, bleach disinfection, soup-and-water handwashing), foodborne illness differentiation, fungal infection prevention in humid conditions
+- Section 7 (Mental Health): five-layer architecture (medication continuity, structured schedule, role assignment, conflict resolution, crisis response), MHFA ALGEE protocol, creative outlets as evidence-based intervention
+- Section 8 (Maternal/Reproductive Health): prenatal BP monitoring, birth preparedness kit, postpartum hemorrhage recognition and fundal massage, PPD screening, contraception supply planning including emergency contraception and fertility awareness as backup
+- Section 9 (Integration): water (contamination → GI illness, immune-compromised separate water), food (sodium restriction for hypertension, low-glycemic for diabetes, protein for wound healing), energy (Tier 1 medical loads — insulin fridge, CPAP, nebulizer, any ventilator — explicitly listed for load catalog)
+- Section 10 (Disaster Scenarios): tornado traumatic injury (MARCH + concussion monitoring rotation), norovirus outbreak 6/12 people (containment, Household C support role), diabetic decompensation (DKA vs. hyperglycemia differentiation, treatment vs. evacuation decision), mental health crisis prolonged isolation (MHFA protocol, structural cluster response)
+- Section 11 (Governance and Ethics): START triage protocol pre-agreed, advance directive location registry, consent-override for epinephrine in emergencies, DNR cluster acknowledgment, medication sharing authority, end-of-life comfort care planning
+- Section 12 (Implementation and Costs): 3-phase timeline (Months 1–3, 3–6, ongoing), detailed budget table: $4,300–$10,000 total / $1,433–$3,333 per household (range driven by accessibility modification scope)
+- Section 13 (International Precedent): Cuba consultorio proof-of-concept, Rwanda Binôme model with outcome data
+- Section 14 (Worksheets): Cluster member health summary, monthly supply steward checklist, cluster health log
+
+**Project impact**: systems-resilience Phase 2 household-scale now at 5/6 domains complete (coordination overview, water, food, energy, healthcare). Remaining: community overview.
+
+---
+
 ## Session 1107 — May 17, 2026 (Research Agent — Household Energy Coordination)
 
 **Status**: COMPLETE
