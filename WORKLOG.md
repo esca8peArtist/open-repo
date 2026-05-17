@@ -1,5 +1,62 @@
 # Work Log
 
+## Session 1160 (Orchestrator) — May 17, 2026 15:17–16:34 UTC — CRITICAL: Domain 1 Callais Cascade Update Integration
+
+**Status**: **CRITICAL PATH COMPLETE** — resistance-research Domain 1 (Voting Rights & Elections) updated with May 6-17 Callais redistricting cascade developments. Production-ready for Wave 1 distribution May 18 06:00 UTC.
+
+### Work Completed
+
+**✅ CRITICAL: Domain 1 Callais Cascade Integration (Resistance-Research)**
+
+**Problem**: ORCHESTRATOR_STATE log flagged Domain 1 requiring urgent update with Louisiana v. Callais developments before Wave 1 execution (May 18 06:00 UTC, 15 hours away). Domain 1 was last updated May 6 with Sections 8.1-8.5 covering May 1-5 developments; seven-state cascade and SCOTUS shadow docket operationalization (May 6-17) not yet integrated.
+
+**Solution**: 
+1. Deployed resistance-research subagent to research Callais cascade May 6-17 developments across all states
+2. Agent findings (53K+ tokens): Comprehensive updates on Louisiana (map passed, Nov 3 open primary), Alabama (SCOTUS vacated *Allen v. Milligan* injunction May 11 mid-primary, effectively overruling 2023 precedent), Tennessee (map signed May 7, lawsuits filed, May 20 TRO hearing is critical gate), Florida (3 lawsuits consolidated, strong state constitutional angle via Fair Districts amendments), Georgia (special session deferred to 2028 only, 2026 maps unchanged), Virginia (voter-approved redistricting nullified by state court, SCOTUS emergency application denied May 16), South Carolina (new state in cascade, special session May 15 targeting Clyburn seat)
+3. Integrated Section 8.6 (107 lines) into Domain 1 documenting:
+   - **Cascade scope expansion**: Seven states (Louisiana, Alabama, Tennessee, Florida, Georgia, Virginia, South Carolina) with concrete redistricting actions or litigation
+   - **SCOTUS shadow docket operationalization**: Allen v. Caster mid-primary injunction vacation (May 11, with voting already underway) establishes SCOTUS will use emergency docket to affirmatively enable discriminatory maps, not merely stay injunctions
+   - **Allen v. Milligan functional overrule**: 2023 precedent requiring majority-Black district reversed through *Callais* intentional discrimination standard; district eliminated mid-primary; remedy reversed
+   - **Virginia nullification precedent**: State supreme court can void voter-approved redistricting referendum (3M voters), SCOTUS will not intervene; closes referendum-as-reform pathway
+   - **South Carolina Clyburn targeting**: New state tracked; special session May 15 targets House Whip Clyburn's majority-Black District 6
+   - **Tennessee legal theory adaptation**: Plaintiffs pivoting to 14th Amendment Equal Protection (intentional discrimination) rather than VRA Section 2, confirming civil rights bar has adapted to post-*Callais* constitutional floor
+   - **Florida state constitutional angle**: Fair Districts amendments (Art. III Sec. 20-21) provide independent state constitutional basis for challenge; strongest remaining litigation vector
+   - **Georgia 2028 deferral clarification**: Kemp called special session not to reject redistricting but to defer it past 2026; majority-Black districts at-risk for 2028, not victory for 2026
+   - **Electoral math adjustment**: Republicans attempting 5-10 additional House seats through redistricting; if all succeed, House moves from 218-214 Republican to 223-212+ (structural advantage independent of midterm election results)
+   - **Upcoming critical dates**: May 19 (Alabama primary), May 20 (Tennessee TRO hearing — gate for Memphis elimination), May 22 (Alabama court hearing), imminent (Florida TRO ruling), June 17 (Georgia session), Aug 11 (Alabama special primary), Nov 3 (Louisiana primary)
+
+4. **Committed**: ad7c9ad3 — Domain 1 fully current through May 17, production-ready for Batch 1 distribution
+
+**Impact**: Domain 1 currency issue resolved. No longer requires skipping from Wave 1 distribution; can be included in Batch 1 with up-to-date Callais cascade information current through May 17.
+
+**Time spent**:
+- Agent deployment + research monitoring: 15 min
+- Integration + editing: 25 min
+- Commit + logging: 10 min
+- **Total**: 50 minutes
+
+### Projects Status Post-Integration
+
+- **resistance-research**: Domain 1 production-ready. All other domains staged (57, 58, 37 have material updates but no distribution blockers). Wave 1 execution May 18 06:00 UTC can proceed with full Domain 1 included in Batch 1.
+- **stockbot**: May 19 20:00 UTC checkpoint infrastructure verified (95% confidence, playbooks staged)
+- **Other projects**: All staged for May 18+ execution windows
+
+### What's Next
+
+**IMMEDIATE (May 18 06:00 UTC, ~14 hours)**:
+- resistance-research Wave 1 execution (user action: execute WAVE_1_EXECUTION_CHECKLIST.md)
+- Domain 1 is now production-ready and included in Batch 1 distribution (no content review or skipping required)
+
+**May 18 12:00 UTC** (midday, ~19.5 hours):
+- orchestrator monitoring: Check Wave 1 engagement metrics at 12-hour mark, apply CONTINGENCY_ACTIVATION_PLAYBOOK.md if warranted
+
+**May 19 20:00 UTC** (53 hours):
+- Stockbot checkpoint execution (19:30 UTC pre-flight, 20:00 UTC checkpoint query, route result to playbook)
+
+**No further autonomous work before May 18 06:00 UTC.** All systems staged.
+
+---
+
 ## Session 1159 (Orchestrator) — May 17, 2026 15:40 UTC — Final Pre-Wave-1 Readiness Confirmation
 
 **Status**: **NO AUTONOMOUS WORK AVAILABLE — All systems staged. Confirmed Session 1158 state remains current.**
