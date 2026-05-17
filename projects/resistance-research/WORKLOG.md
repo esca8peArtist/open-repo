@@ -2,6 +2,37 @@
 
 ---
 
+## May 17, 2026 — Critical Security Audit: Docker Compose 0.0.0.0 Bindings (Session 1156+)
+
+**Status**: COMPLETE
+**Scope**: Fix ABSOLUTE PROHIBITION violations in docker-compose.yml files across all projects per CLAUDE.md § 1
+**Time**: 22:30 UTC
+
+**Security violations found and fixed**:
+- **containerized-agents/docker-compose.test.yml**: postgres, redis, chromadb, ollama-stub (4 bare port bindings)
+- **open-source-rideshare/backend/docker-compose.test.yml**: test-db, test-redis (2 bare port bindings)
+- **open-source-rideshare/deploy/docker-compose.prod.yml**: caddy (2 bare port bindings on 80/443)
+- **open-source-rideshare/deploy/docker-compose.dev.yml**: db, redis, osrm (3 services missing memory limits)
+- **stockbot/docker-compose.dashboard.yml**: dashboard-api, dashboard-web (2 services missing memory limits)
+
+**Fixes applied**:
+- Replaced all bare port mappings (e.g., `5432:5432`) with explicit `127.0.0.1` bindings
+- Added memory limits to 9 services previously without constraints:
+  - API services: 512M limit / 256M reservation
+  - Sidecar services (Redis, PostgreSQL): 256–512M limit / 128–256M reservation
+  - Large services (OSRM, ollama-stub): 1G+ limits
+- Added security note to caddy (prod) explaining external access requires host-level reverse proxy
+
+**Audit results**: 9/9 docker-compose files now COMPLIANT
+- No 0.0.0.0 bindings detected
+- No IPv6 wildcard bindings detected
+- All 36+ services with ports now have explicit 127.0.0.1 bindings
+- All services with ports now have memory limits configured
+
+**Commit**: `583677e3` — chore: fix critical security violations — replace 0.0.0.0 bindings with 127.0.0.1
+
+---
+
 ## May 17, 2026 — Phase 1 Post-Wave-1 Contingency Plan (Session 1149)
 
 **Status**: COMPLETE
