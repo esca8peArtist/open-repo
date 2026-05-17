@@ -1,5 +1,40 @@
 # Work Log
 
+## Session 1099 — May 17, 2026 (Research Agent — moisture-extraction individual + healthcare enhancements)
+
+**Status**: Complete
+
+**Files created/modified**:
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/individual/moisture-extraction.md` (NEW — ~680 lines)
+- `/home/awank/dev/SuperClaude_Framework/projects/systems-resilience/individual/05-healthcare.md` (ENHANCED — ~280 lines added)
+
+**Scope**:
+
+**(A) Moisture extraction — individual scale** (`individual/moisture-extraction.md`):
+- Four commercial approaches: compressor dehumidifier (5–15 L/day, $200–400), desiccant dehumidifier (3–8 L/day; best for cold-season use), thermoelectric mini-units (supplemental), commercial AWG (EcoloBlue 30E, Watergen GENNY — 25–30 L/day at $1,800–3,000)
+- DIY Method 1: Full modified dehumidifier build with 3-stage filtration (sediment + carbon block + UV-C) — complete parts list, assembly procedure, flow diagram schematic, cleaning schedule
+- DIY Method 2: Thermoelectric Peltier build with ASCII schematic — 12V solar-compatible; materials list (~$103–208); expected yield 300–700 mL/day
+- Manual Method 1: Passive solar desiccant panel — two-phase night/day operation; cross-section schematic; silica gel regeneration; yield ~100–160 mL per panel
+- Manual Method 2: Stone air well (gravity condenser) — historical basis (Zibold, 1900); materials list; build procedure; cross-section schematic; Zone 5 performance notes
+- Manual Method 3: Mesh fog net / dew collector — Zone 5 river valley application; sizing and yield
+- Water safety section for all AWG methods; annual maintenance calendar; replacement parts schedule
+- Equipment recommendations by homestead size (suburban apartment → rural solar homestead)
+- 20+ cited sources including MIT News (2025), EPA, World Economic Forum, ACS Materials Letters, multiple DIY guides
+
+**(B) Healthcare — herbal condition-by-condition guide + agriculture integration**:
+- Condition-by-condition quick reference tables for 7 health issues (fever, cough/respiratory, wound care, bacterial infection adjuncts, pain, anxiety, insomnia) — each with herb, preparation, evidence rating, and cautions
+- Evidence calibrated to NCCIH standards; conventional treatment hierarchy maintained above herbal options
+- Medicinal garden companion planting integration: yarrow (predatory insect attraction), calendula (trap crop), comfrey (mineral accumulator + liquid fertilizer), echinacea (native bee support), lemon balm (honeybee attractor)
+- Explicit note on companion planting evidence limits citing Illinois Extension UIUC 2025
+- Indigenous seed saving methods adapted for Zone 5 medicinal plants: clay vessel analog (glass jar + silica gel), wood ash preservation, storage conditions, viability timelines by species
+- Medicinal plant seed-saving calendar (Zone 5): 7 species with harvest timing and viability
+- Cross-reference to `individual/06-agriculture.md` for full regenerative agriculture and Three Sisters content
+- 8 new citation sources added (Illinois Extension 2025, MDPI Pharmaceuticals 2024, PMC 2024 respiratory herbs, NativeFoods.info, Midwest Permaculture, FarmstandApp, Native Seeds/SEARCH, Pharmacognosy Journal 2024)
+
+**Confidence note**: The companion planting section explicitly flags the evidence limitations (Illinois Extension UIUC, 2025) rather than presenting anecdotal recommendations as fact. The holistic medicine additions are calibrated to NCCIH evidence categories.
+
+---
+
 ## Session 1098 — May 17, 2026 (Research Agent — systems-resilience INBOX requests)
 
 **Status**: ✅ Complete

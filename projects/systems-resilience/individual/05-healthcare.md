@@ -599,6 +599,174 @@ The primary wound care protocol (direct pressure, irrigation, closure decision, 
 
 ---
 
+### Herbal Quick Reference — Condition-by-Condition
+
+The plants described in detail above and in the extended guide are organized here by presenting complaint for fast field lookup. Evidence ratings use the same scale throughout this document: **Strong** = multiple well-designed human RCTs or meta-analyses; **Moderate** = some human trials or strong traditional use with plausible mechanism; **Traditional** = long-established use, limited modern trials.
+
+For all herbal approaches: they complement — they do not replace — the conventional treatment protocols earlier in this document. If a conventional antibiotic or specific medical intervention is indicated, use it.
+
+**Fever**
+
+| Herb | Preparation | Action | Evidence | Caution |
+|---|---|---|---|---|
+| Yarrow (*Achillea millefolium*) | Tea: 1 Tbsp dried herb steeped 10 min, 3x/day | Diaphoretic — promotes sweating to aid heat dissipation | Traditional | Avoid in pregnancy |
+| Elderberry (*Sambucus canadensis*) | Syrup: 1 Tbsp 4x/day at illness onset | Antiviral; immune modulation — shortens viral fever duration | Moderate-Strong | Cook berries; raw = toxic |
+| Boneset (*Eupatorium perfoliatum*) | Cold infusion: 1 oz/pint overnight; 1–2 cups during acute illness | Specific for influenza-type fever with deep bone pain; immunostimulant | Moderate | Short-term use only; some PA alkaloids |
+| Willow bark (*Salix nigra*) | Decoction: 1–2 tsp dried bark per cup, simmered 20 min | Salicin → salicylate; analgesic + antipyretic, same mechanism as aspirin | Moderate | Not for children <16; peptic ulcer; anticoagulant therapy |
+
+**Note:** Treat fever >39.5°C (103°F) in adults with ibuprofen 400–600 mg + acetaminophen 500 mg simultaneously every 6 hours. Herbal diaphoretics support but do not substitute for conventional antipyretics at dangerous temperatures.
+
+Source: [NIH NCCIH Herbs at a Glance](https://www.nccih.nih.gov/health/herbsataglance) · [Well-Established and Traditional Use of Vegetal Extracts in Cough Treatment — PMC, 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11120585/)
+
+---
+
+**Cough and Respiratory Illness**
+
+| Herb | Preparation | Action | Evidence | Caution |
+|---|---|---|---|---|
+| Mullein (*Verbascum thapsus*) | Leaf tea through fine cloth: 2 Tbsp/cup, 15 min steep | Expectorant; anti-inflammatory bronchial support | Traditional/Low | Always strain through fine cloth; leaf hairs irritate |
+| Wild Bergamot (*Monarda fistulosa*) | Dried leaf tea: 1–2 Tbsp/cup, 10 min; 2–3x/day | Thymol + carvacrol (same antimicrobials as thyme): antispasmodic, antimicrobial | Moderate in vitro | None at culinary/tea doses |
+| Elderberry syrup | 1 Tbsp 4x/day | Reduces upper respiratory illness duration 2–4 days vs. placebo | Moderate-Strong | Cook berries; raw = toxic |
+| Echinacea (*E. purpurea*) | Tincture 2–4 mL 3–5x/day; or root tea 1 tsp simmered 20 min | Reduces cold/URI duration and severity — not prevention | Moderate | Autoimmune disease; daisy allergy; use max 10 days |
+| Thyme (*Thymus vulgaris*) (grow-your-own) | Strong tea: 2 Tbsp fresh/1 Tbsp dried per cup; or oxymel (thyme + honey + vinegar) | Antispasmodic; antimicrobial; expectorant | Moderate | Avoid medicinal doses in pregnancy |
+
+Zone 5 cultivation: Mullein grows wild on Midwest roadsides. Wild Bergamot is native prairie species. Elderberry shrubs produce 10–20 lbs of berries annually per mature plant.
+
+Source: [Herbal Medicine in the Management of Respiratory Disorders — Pharmacognosy Journal, 2024](https://www.pharmacognosyjournal.net/archives/2024/vol6issue1/PartA/6-1-23-471.pdf) · [NIH NCCIH — Echinacea](https://www.nccih.nih.gov/health/echinacea)
+
+---
+
+**Wound Care and Infection Prevention**
+
+| Herb/Substance | Preparation | Action | Evidence | Caution |
+|---|---|---|---|---|
+| Calendula (*Calendula officinalis*) | Infused oil → salve; apply to wound margins after closure | Promotes granulation, reduces inflammation; antifungal skin action | Moderate (wound healing, radiation dermatitis RCTs) | Apply to margins only; not into open cavities |
+| Plantain (*Plantago major*) | Chew fresh leaf; apply poultice directly | Anti-inflammatory; draws inflammation; reduces pruritus | Moderate (topical wound healing) | Field application only for minor wounds; replace with proper irrigation ASAP |
+| Raw honey (local or Manuka) | Apply directly to wound surface; cover with non-adherent dressing; change daily | Osmotic antimicrobial + enzymatic H₂O₂; Cochrane review confirms efficacy for some wound types | Strong (Cochrane review) | For open wounds not requiring closure; do NOT use on deep wounds |
+| Comfrey root (*Symphytum* spp.) | Grate fresh root; apply poultice to intact skin over fracture/sprain | Accelerates healing of fractures and sprains (clinical trials) | Moderate | External only on intact skin; NEVER on open wounds; contains pyrrolizidine alkaloids |
+| Usnea lichen | Strong decoction or tincture; apply topically | Usnic acid: genuine broad-spectrum antimicrobial action | Moderate in vitro | Harvest only from fallen branches; some skin sensitivity |
+
+**Priority order:** Irrigate first (1 liter clean water at 8 PSI via 60 mL syringe with 18g needle). Apply calendula salve to closed wound margins after 24 hours. Use raw honey on clean open wounds that will heal by secondary intention. Herbal antimicrobials supplement — they do not replace — antibiotics for established cellulitis.
+
+Source: [Use of Medicinal Plants in the Process of Wound Healing — MDPI Pharmaceuticals, 2024](https://www.mdpi.com/1424-8247/17/3/303) · [NIH NCCIH Herbs at a Glance](https://www.nccih.nih.gov/health/herbsataglance)
+
+---
+
+**Bacterial Infection (Adjunct Support)**
+
+Herbal antimicrobials at standard preparation doses are not sufficient to treat established systemic bacterial infections — use the antibiotic framework in the "Infection Management" section above. The following herbs provide genuine adjunct benefit for immune support and localized antimicrobial action alongside antibiotics:
+
+| Herb | Role | Preparation | Evidence |
+|---|---|---|---|
+| Echinacea (*E. purpurea*) | Immune activation at infection onset | Tincture 2–4 mL 3–5x/day; max 10 consecutive days | Moderate |
+| Garlic (*Allium sativum*) | Adjunct antimicrobial; genuine allicin activity against some pathogens | 2–4 raw cloves crushed daily (allicin degrades with cooking); or aged garlic extract 600–1,200 mg | Moderate |
+| Goldenrod (*Solidago* spp.) | UTI adjunct (German Commission E approved for UTI) | Tea: 2 tsp dried flower/leaf, 3 cups/day | Moderate |
+| Wild Bergamot / Bee Balm | Topical antimicrobial for skin infections | Strong tea as wound wash; tincture topical | Moderate in vitro |
+
+Source: [NIH NCCIH — Herb-Drug Interactions](https://www.nccih.nih.gov/health/providers/digest/herb-drug-interactions-science)
+
+---
+
+**Pain Management**
+
+| Herb | Preparation | Condition | Evidence | Caution |
+|---|---|---|---|---|
+| Willow bark (*Salix nigra*) | Decoction: 1–2 tsp dried bark/cup, simmered 20 min; 2–3 cups/day | General pain, fever, musculoskeletal | Moderate (equivalent to low-dose aspirin) | Avoid <16 yrs; peptic ulcer; blood thinners |
+| Comfrey root (external) | Fresh root poultice over intact skin | Sprains, fractures, bruising, musculoskeletal pain | Moderate (clinical trials showing accelerated sprain healing) | External only; intact skin; no open wounds |
+| St. John's Wort (infused oil) | Fresh flower bud oil infused in olive oil; apply topically | Nerve pain, neuralgia (topical) | Moderate (topical neuropathic pain) | Not for large body surface area; drug interactions if taken internally |
+| Valerian (*Valeriana officinalis*) | Tincture 3–5 mL; or 400–600 mg standardized extract | Muscle spasm and tension-related pain; sleep disruption from pain | Moderate (muscle relaxant, sleep) | Do not combine with sedative medications |
+
+For acute severe pain: ibuprofen 400–600 mg + acetaminophen 500 mg simultaneously every 6 hours remains the gold standard without prescription opioids. Herbal analgesics are most useful for chronic musculoskeletal pain and tension where herbal-pharmaceutical combinations are appropriate.
+
+---
+
+**Anxiety**
+
+| Herb | Preparation | Evidence | Zone 5 Notes |
+|---|---|---|---|
+| Passionflower (*Passiflora incarnata*) | Tincture 2–4 mL 30–45 min before bedtime or when anxious; or tea 1–2 tsp dried leaf | Moderate — equivalent to low-dose oxazepam in one RCT; NCCIH confirms some clinical trial support for sleep improvement | Native to southern Midwest; Zone 5 marginally hardy; mulch heavily |
+| Skullcap (*Scutellaria lateriflora*) | Fresh plant tincture 1:2 in 50% alcohol, 2–4 mL 3x/day | Moderate — reduces anxiety without sedation; antispasmodic | Native to eastern Midwest; grows along creek banks; Zone 4–8 |
+| Lemon balm (*Melissa officinalis*) | Fresh leaf tea 2 Tbsp, steep 10 min; 2–3 cups/day | Moderate — multiple trials showing anxiety reduction and mood improvement | Zone 4 perennial; spreads vigorously; plant in contained bed |
+| Ashwagandha (*Withania somnifera*) | Standardized extract 300–600 mg with food | Strong — multiple RCTs showing significant cortisol reduction and anxiety score improvement | Grow as Zone 5 annual; harvest roots in fall |
+| Eleuthero (*E. senticosus*) | Tincture 2–4 mL 2–3x/day for 6–8 weeks | Moderate-Strong — adaptogenic; improves stress tolerance | Zone 3–8 woody shrub; excellent Zone 5 perennial |
+
+Behavioral interventions have strong, durable evidence for anxiety management: 30+ minutes of daily moderate-intensity physical activity (meta-analyses show equivalence to pharmaceuticals for mild-moderate anxiety), consistent sleep schedule, and structured social contact. These are first-line, not alternatives to be considered only when herbs fail.
+
+Source: [NIH NCCIH — Passionflower](https://www.nccih.nih.gov/health/passionflower) · [Adaptogens and Nervines — The Herbalist's Path](https://www.theherbalistspath.com/blog/adaptogens-nervines-calm-stess-anxiety)
+
+---
+
+**Insomnia**
+
+| Herb | Preparation | Evidence | Caution |
+|---|---|---|---|
+| Valerian (*Valeriana officinalis*) | Tincture 3–5 mL 30–45 min before sleep; or 400–600 mg standardized extract | Moderate — reduces sleep latency (time to fall asleep) in most trials; NCCIH notes mixed evidence overall | Do not combine with alcohol or pharmaceutical sedatives |
+| Passionflower | Tincture 2–4 mL 30–45 min before sleep | Moderate — some trials show improved total sleep time; NCCIH confirms small study support | Avoid in pregnancy; do not combine with sedatives |
+| Lemon balm | Tea: 2 Tbsp fresh/1 Tbsp dried, steep 10 min; drink 30 min before bed | Moderate — reduces anxiety-driven sleep disruption | Generally very well tolerated |
+| Skullcap | Fresh plant tincture 2–4 mL before sleep | Moderate — reduces hyperarousal; useful for PTSD-associated insomnia and anxiety-driven wakefulness | Use fresh plant tincture; dried herb loses potency quickly |
+| Ashwagandha | 300–600 mg standardized extract taken with evening meal | Strong — multiple RCTs show improved sleep quality scores and sleep onset | Avoid in autoimmune disease; mild interaction with sedatives |
+
+**Non-herbal sleep interventions (higher evidence than herbals):** Consistent wake time regardless of prior night's sleep quality (single most effective sleep hygiene variable — behavioral sleep medicine research). Darkness during sleep hours. Light exposure within 1 hour of waking (sets circadian anchor). These behavioral measures consistently outperform all herbals in head-to-head sleep research.
+
+Source: [NIH NCCIH — St. John's Wort](https://www.nccih.nih.gov/health/st-johns-wort) · [Herbs and the Nervous System — Traditional Medicinals](https://www.traditionalmedicinals.com/blogs/ppj/herbs-nervous-system)
+
+---
+
+### Medicinal Garden Integration with Regenerative Agriculture
+
+The medicinal herb garden and the food production garden function best as an integrated system, not separate plots. This section describes how the holistic medicine plants in this document integrate with the regenerative agriculture principles and indigenous planting methods in `individual/06-agriculture.md`.
+
+**Companion planting for the medicinal garden:**
+
+Several medicinal herbs provide documented ecological benefits to adjacent food crops:
+
+| Herb | Companion Role | Placement | Mechanism |
+|---|---|---|---|
+| Yarrow | Attracts beneficial predatory insects (hoverflies, parasitic wasps) that prey on aphids and caterpillars | Garden perimeter, bed edges | Flat-topped flower clusters provide landing platforms for small predatory insects |
+| Calendula | Trap crop for aphids (aphids prefer calendula; plant sacrificially around tomatoes and brassicas) | Around tomato and pepper beds | Also attracts hoverflies; French marigold (*Tagetes*) has soil nematode suppression via root exudates |
+| Comfrey | Mineral accumulator — deep taproot mines calcium, potassium, and phosphorus from subsoil; cut leaves make a high-potassium comfrey liquid fertilizer | Along bed edges or as a compost activator | Brew comfrey leaves in water 4–6 weeks; dilute 1:10 as liquid feed |
+| Echinacea | Pollinator magnet; attracts native bees that improve vegetable pollination 15–30% | Mixed into flower strips along garden borders | Native to Midwest prairie; supports 40+ native bee species |
+| Elderberry | Nitrogen soil context varies; primarily wildlife and pollinator habitat value; early bloomer supports native bees before main garden blooms | Garden perimeter as windbreak or hedge | Native shrub; existing habitat infrastructure |
+| Lemon balm | Pollinator attraction — powerful honeybee and bumblebee attractant; improves overall garden pollination | Near fruiting crops (squash, beans) | Beekeeping tradition: lemon balm scent attracts and calms bees |
+
+**Important precision note on companion planting:** Illinois Extension (University of Illinois, 2025) reports that most specific companion planting combinations lack peer-reviewed scientific validation at garden scale, and many recommendations are based on anecdotal evidence. The combinations in the table above are supported by the plausible mechanisms indicated — pollinator attraction, trap cropping, nutrient cycling — rather than claims of mutual growth enhancement without mechanism. The Three Sisters system (corn, beans, squash) is validated in the PMC 2022 Iowa State study (see `06-agriculture.md`), but that specific system should not be generalized to "all companion planting works."
+
+Source: [Companion Planting — Illinois Extension, UIUC, 2025](https://extension.illinois.edu/blogs/good-growing/2025-03-07-companion-planting-combining-plants-healthy-well-balanced-garden) · [Plant Guilds — Midwest Permaculture](https://midwestpermaculture.com/plant-guilds/)
+
+---
+
+**Seed Saving for Medicinal Plants — Zone 5 Methods**
+
+Seed saving extends food security to medicinal security — self-renewing plants need not be repurchased. Indigenous seed-keeping practices provide the methodological foundation:
+
+**Traditional techniques adapted for Zone 5:**
+
+1. **Drying:** Harvest seeds when fully ripe (most seeds are ripe when they pull away cleanly, change color, or the seed head begins to shatter). Spread on cotton cloth or screens in shade with good air circulation. Do NOT use newspapers (dyes transfer) or paper towels (seeds stick). Zone 5 humidity requires 2–4 weeks of ambient drying before sealed storage; do not rush this step.
+
+2. **Clay vessel method (adapted from Hopi tradition):** Store seeds in wide-mouth glass jars with tight-fitting lids (the modern equivalent of the clay vessel). The glass jar mimics the narrow-neck/wide-base design that minimizes air exposure. Pack seeds with 1–2 tablespoons of food-grade silica gel to maintain low humidity inside the jar.
+
+3. **Ash preservation (adapted from multiple Great Lakes traditions):** Mix a small amount of wood ash (from clean hardwood) into the seed storage container — approximately 1 teaspoon per quart of seeds. Wood ash is alkaline and weakly antimicrobial; it absorbs moisture and repels many seed-eating insects. This technique is documented among Ojibwe, Cherokee, and other Midwest nations and is substantiated by the chemistry of wood ash. Do not use ash from wood that has been treated, painted, or contaminated.
+
+4. **Storage conditions:** Cool, dark, dry location — root cellar, interior closet, or refrigerator. Target: 45–55°F, <25% relative humidity. Properly stored seeds in sealed glass with desiccant maintain viability 3–10+ years (beans, corn: 3–4 years; small-seeded herbs like echinacea, yarrow: 1–3 years; well-dried valerian root for replanting: 1–2 years).
+
+**Medicinal plant seed-saving calendar (Zone 5):**
+
+| Plant | Seed Harvest Timing | Days After Bloom | Storage Viability |
+|---|---|---|---|
+| Echinacea | September–October when seed heads fully dry | 45–60 days after bloom | 2–3 years |
+| Calendula | Throughout season; harvest when seed head is brown and papery | 30–40 days | 3–5 years |
+| Yarrow | August–September when seeds visible in flat seed heads | 30–40 days | 2–3 years |
+| Valerian | August (before shattering; seed disperses aggressively) | 30 days | 1–2 years |
+| St. John's Wort | August when capsules are fully brown | 30–45 days | 2–3 years |
+| Skullcap | September when seed pods dry and brown | 30 days | 2–3 years |
+| Elderberry | Propagate by division or hardwood cuttings (October–March) — not seed | — | Cuttings root easily |
+
+Source: [7 Indigenous Seed Storage Methods — FarmstandApp](https://www.farmstandapp.com/20647/exploring-indigenous-seed-storage-methods/) · [Native American Seed Saving — NativeFoods.info](https://www.nativefoods.info/native-american-seed-saving-how-indigenous-peoples-preserved-food-security/) · [Seed Saving Instructions — Native Seeds/SEARCH](https://www.nativeseeds.org/pages/seed-saving-instructions)
+
+**For full regenerative agriculture integration:** See `individual/06-agriculture.md` — Three Sisters planting, cover crops, biochar, mycorrhizal networks, and the complete Native American agricultural methods section. The medicinal garden sits at the intersection of that agricultural system and this healthcare system: perennial herbs in the food forest understory layer, annual medicinals as companion borders to food crops, and elderberry as a hedge that serves both food and medicine production.
+
+---
+
 ### Off-Grid Dental Care
 
 Dental emergencies are among the most common and most overlooked aspects of medical preparedness. A dental abscess can spread to the mediastinum and kill within days. Toothache can be incapacitating for weeks.

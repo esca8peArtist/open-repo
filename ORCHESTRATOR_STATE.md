@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-16T21:15:46Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-16T23:58:00Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟡 Usage: Sonnet 32.5% (2,906,206 tokens) | All-models 83.5% | Reset in 51h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 5.0% | Reset in 48h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088).
+**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid (user resolved 2026-05-12 via Discord !resolve)**. Execute Phase 1 Wave 1 immediately: Tier A updates (Domains 33,35,25,19f) May 18-28 → Domain E research target June 15 → Phase 2 distribution June-August. Wave 1 pre-staging complete: Batch 1 (5 contacts) live-verified, Callais fix committed (37f7e8bf), Batches 2-3 staged, all 8 Gists live, checklist prepared (2 hours to Batch 1 send). Phase 2 execution roadmap complete (Session 1088). **NEW INBOX IT … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -44,8 +44,8 @@
 **Focus**: **PR #1 OPEN** (2026-04-26) + **PR #2 OPEN for Phase 5 Candidate 3** (2026-05-15 01:35 UTC)
 
 ### systems-resilience
-**Status**: Active — **Phase 1 in progress** (individual-scale documents for water + food complete; shelter, healthcare, energy, education queued)
-**Focus**: Building individual-scale domain documents with verified primary sources (schematics, books, government guides). Sources library established. Water + food complete. Next: shelter/heating (Midwest-specific: tornado safe room, ice storm hardening, suburban retrofit) then healthcare.
+**Status**: Active — **Phase 1 Individual-scale NEARLY COMPLETE** (5 of 6 domains done; education queued). Completed: 01-water.md, 02-food.md, 03-shelter.md, 05-healthcare.md. Midwest reference docs: extreme-weather.md (complete), calendar.md (complete, 10.3K words, 33 citations).
+**Focus**: Completing individual-scale documentation + Midwest reference library. COMPLETED: water, food, shelter, healthcare (all Midwest-specific protocols, progressive disclosure, 30+ citations); extreme-weather, calendar (cross-domain timing + seasonal risk management). **NEW INBOX ITEMS (2026-05-16)**: (A) Research moisture extraction machines + farm tools (schematics, instructions, manual versions), (B) Enhance healthcare.md with holistic/plant-based medicine info, enhance agriculture section with re … *(truncated — prune Current focus in PROJECTS.md)*
 
 ### off-grid-living
 **Status**: Complete — **publication complete** (GitHub live, awaiting user execution of social media distribution)
@@ -99,42 +99,42 @@
 *(no new items)*
 
 ## Recent Log (last 40 lines of WORKLOG.md)
-### Commits
+- Month 1-6: Medical kit ($350–$1,400), herbal garden (10 Zone 5 plants), dental care
+- Year 1+: WFR training, SAD light therapy, preventive medicine, chronic disease management
+- Midwest-specific: Tick disease map, SAD epidemiology, heat acclimatization
+- 31 citations from WMS, CDC, WHO, NEJM, PMC, Hesperian, Illinois DPH, NOLS
 
-1. `1e400832` — Item 50: Phase 1 Distribution Measurement Playbook created
-2. `6a4bc8a4` — Added Items 52-54 to exploration queue
-3. `de9a0f9c` — Item 50 marked complete in PROJECTS.md and WORKLOG.md
-4. `5df41818` — CHECKIN.md updated with Item 50 completion
-
-### Status: Ready for May 16 Checkpoint
-
-| Component | Status | Detail |
-|-----------|--------|--------|
-| **Checkpoint infrastructure** | ✅ Ready | Scripts, protocols, decision tree all verified |
-| **Phase 1 measurement** | ✅ Complete | Playbook ready for user path selection |
-| **Exploration queue** | ✅ Refreshed | Items 50-54 staged, Items 1-49 complete |
-| **Tier 2 decision gates** | ✅ Ready | Quantified KPI targets for all paths |
-| **Post-checkpoint items** | ✅ Staged | Items 51-54 queued for post-May-16 execution |
-
-### Next Session Actions
-
-**Awaiting May 16 20:00 UTC checkpoint execution**:
-1. Execute `uv run python projects/stockbot/scripts/may16_checkpoint_query_alpaca.py`
-2. Classify outcome (PASS / NEAR_MISS / FAR_MISS_C1 / FAR_MISS_C2)
-3. Deploy Item 49 decision tree for immediate post-checkpoint action (Lever A if NEAR_MISS, or Gate 2 planning if PASS)
-4. Activate Item 51 (Jetson optimization) upon Gate 1 PASS or Item 52 (post-checkpoint decision framework)
-5. Await user path decision for Phase 1 distribution (Path A / A+37 / B) to activate Item 50 monitoring
-
-**Awaiting user decisions**:
-1. Resistance-research path (A / A+37 / B) — enables Item 50 KPI activation
-2. Seedwarden Canva/Kit tier (Pro/free) — enables Track B gate execution
-3. Cybersecurity Phase 1 launch approval — enables Item 50 measurement for cybersecurity-hardening Wave 1
-
-**Awaiting external events**:
-1. May 16 20:00 UTC checkpoint result — triggers Items 51-52 execution
-2. Phase 1 Wave 1 distribution start (May 15-17) — triggers Item 50 daily monitoring activation
-3. Seedwarden Track B launch (May 30) — triggers Item 54 execution
+**Project status**: systems-resilience Individual-scale documentation is now 5/6 complete (water, food, shelter, healthcare, extreme-weather done). Ready for calendar/energy/education/foraging documents.
 
 ---
 
-**Session complete. All orchestration files committed. Checkpoint readiness verified.**
+**Session 1097 complete. Checkpoint executed, Lever A applied, Jetson healthy, healthcare guide delivered.**
+
+## Systems-Resilience — Midwest Annual Calendar Complete
+
+**Project**: systems-resilience
+**Task**: Build midwest/calendar.md (annual activity timing, Midwest Zone 5)
+**Time**: 2026-05-16 22:20–23:25 UTC
+**Status**: ✅ COMPLETE
+
+**Deliverable**: `projects/systems-resilience/midwest/calendar.md` (10.3K words, 816 lines)
+
+**Content delivered**:
+- Zone 5 baseline: 160–175 frost-free days, 34–40" precipitation, groundwater seasonal patterns
+- Quick-reference tables: frost dates, seasonal health risks (8 conditions with peak windows), best activity windows (12 outdoor activities)
+- Month-by-month breakdown (January–December): all 5 domains (food, water, energy, healthcare, shelter) + cross-domain intersection notes
+- 52-week printable action grid: week-labeled, priority action checklist
+- Cross-domain intersection summary: 6 recurring annual events mapped across all domains
+- Rural vs. Suburban track comparison: 10-row activity differentiation table
+- 33 citations from USDA, NOAA, USGS, CDC, EPA, NIMH, Old Farmer's Almanac, Powell Gardens, Midwest Air Pros
+
+**Key insights**:
+- March: spring thaw simultaneously fills cisterns and contaminates surface water
+- May: tornado season peaks during critical corn/bean planting window (highest coordination challenge)
+- October: garlic planting (20-min investment, 6-10x July yield) overlaps with tick tail season, deer rut, flu season opening
+- Lyme/RMSF risk extends May–October (not just spring)
+- SAD onset typically mid-September for Midwest (latitude 41–47°N)
+
+**Project impact**: systems-resilience now has 6/6 individual-scale PLUS both Midwest reference docs complete. Cross-domain timing fully mapped. Ready for energy, education, foraging, and scaling to household/community tiers.
+
+---
