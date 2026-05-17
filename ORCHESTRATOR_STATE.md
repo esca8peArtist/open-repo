@@ -1,8 +1,8 @@
 # Orchestrator State
-> Auto-generated at 2026-05-17T17:29:38Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
+> Auto-generated at 2026-05-17T18:28:47Z — do not edit. Source: PROJECTS.md, WORKLOG.md, BLOCKED.md, INBOX.md.
 
 ## Usage
-🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.3% | Reset in 30h | check: claude.ai → Settings → Usage & billing
+🟢 Usage: Sonnet 5.1% (3,256,217 tokens) | All-models 6.4% | Reset in 30h | check: claude.ai → Settings → Usage & billing
 
 ## Priority Order
 1. stockbot  ← USER ESCALATED 2026-05-08: comprehensive backtesting report (see INBOX)
@@ -24,7 +24,7 @@
 
 ### resistance-research
 **Status**: Active — Phase 1-5 COMPLETE, **40-Domain Diagnostic Framework COMPLETE + Phase 2 Expansion (4 Candidates Identified)** (Sessions 502-524, Session 907, Session 1043) — Core proposal architecture complete, completeness assessment done, all 40 domain documents verified production-ready, distribution infrastructure finalized, Phase 2 research expansion roadmap identified
-**Focus**: **PATH DECIDED: Path A + Domain 37 Hybrid.** Wave 1 execution materials READY: WAVE_1_PREFLIGHT_AND_PATH_DECISION.md + 8 Gists live + email templates + Tier 1 contacts verified (all as of May 17). **CONTINGENCY ACTIVATION PLAYBOOK COMPLETE** (Session 1151): CONTINGENCY_ACTIVATION_PLAYBOOK.md executable 2-gate decision framework + 5 variants (A1–A4, B1–B3) — all activatable within 2 hours if Wave 1 underperforms. **NEXT**: May 18 06:00 UTC — user executes Wave 1 checklist (06:00-10:00 UTC … *(truncated — prune Current focus in PROJECTS.md)*
+**Focus**: **[PATH DECIDED] Wave 1 IMMINENT (May 18 06:00 UTC, ~12h). All production-ready: Domains 1,37,57,58 current through May 17; 8 Gists live; email + contacts verified. Contingency playbook ready (2-gate framework executable within 2h if needed). Phase 2: Domains 38-40 complete (39,200 words, 142 cites); Domains 59/57 outlines staged for June 1 research launch. Awaiting Wave 1 execution, then Phase 1 measurement + Phase 2 approval.**
 
 ### cybersecurity-hardening
 **Status**: Active — **TIER 1, 2, 3 DISTRIBUTION PREP + TIER 2 MESSAGING TEMPLATES COMPLETE** (Sessions 465, 497, 499), ready for user execution
@@ -36,7 +36,7 @@
 
 ### seedwarden
 **Status**: Active — Track A BLOCKED (2 user actions, see `TRACK_A_BLOCKER_RESOLUTION.md`); **Track B CLEAR — May 30 launch target**; **Phase 3 assets COMPLETE (7 files verified, June 22 – July 13 execution)**
-**Focus**: **[AUTONOMOUS PREP COMPLETE — SESSION 1153]** Track B execution guides complete. Session 1152 + 1153 prep work (May 17): 9 autonomous docs created. **Session 1153** creates 5 new execution guides:
+**Focus**: **[AUTONOMOUS PREP COMPLETE — SESSION 1153]** Track B execution guides READY for May 17-18 Gate 1 activation (5 execution guides + master timeline complete). **Critical path**: Gate 1 (May 17–18, create accounts — user action START HERE) → Gate 2 (May 24, Canva 30 min) → zone-cards (May 24–25, 4–6 hrs) → Gate 3 (May 27–28, Kit 2.5–3 hrs) → May 29 go/no-go → **May 30 launch target**. All execution docs in `projects/seedwarden/execution/` with numbered steps + copy-paste re … *(truncated — prune Current focus in PROJECTS.md)*
 **Blocked**: Tag corrections + Etsy account verification (user action, Track A only). Track B has no blockers.
 
 ### open-repo
@@ -89,8 +89,7 @@
 ---
 
 ## State Drift Warnings
-⚠️ STALE FOCUS: resistance-research — focus references Session 1151 (21 sessions ago); prune Current focus in PROJECTS.md
-⚠️ STALE FOCUS: seedwarden — focus references Session 1153 (19 sessions ago); prune Current focus in PROJECTS.md
+⚠️ STALE FOCUS: cybersecurity-hardening — focus references Session 1162 (15 sessions ago); prune Current focus in PROJECTS.md
 ## Recently Resolved (last 5)
 • stockbot — Undocumented options_live_session on Jetson (pre-checkpoint risk assessment required) ← 2026-05-13 (Session 993, 15:45 UTC)
 • mom-projects — Discord user ID not set; mom's messages not being routed ← 2026-05-13 (02:08 UTC)
