@@ -95,6 +95,22 @@ The Safeguard American Voter Eligibility (SAVE) Act returns to the Senate floor 
 
 Sources: [The Hill: Senate Republicans escalate SAVE Act push (May 17, 2026)](https://thehill.com/homenews/senate/5844521-save-america-act-budget-package/); [NBC News: GOP defectors signal strength on procedural filibuster concerns (May 17, 2026)](https://www.nbcnews.com/politics/); [Campaign Legal Center: SAVE Act May Senate Escalation Brief (May 2026)](https://campaignlegal.org/)
 
+### 2.4 May 17-20, 2026 Update — SAVE Act Legislative Escalation and Registration Infrastructure Dismantling
+
+**Updated**: May 17, 2026 (Session 1188)
+
+The Safeguard American Voter Eligibility (SAVE) Act returns to Senate floor debate this week (May 17-20, 2026) in a critical test of whether the four-senator defector coalition will hold against intensified administration pressure. The May escalation differs from the April amendment surprise: this is a scheduled floor confrontation with administration pressure mounting for three weeks.
+
+**The SAVE Act's voter registration dismantling mechanism**: H.R. 7296 eliminates online and mail-based voter registration by requiring documentary proof-of-citizenship (birth certificate, passport, Certificate of Citizenship, or Naturalization Certificate) for all federal voter registration. Standard government-issued driver's licenses — including REAL ID compliant IDs — do not satisfy the bill's requirements. This eliminates the primary voter registration pathways that serve lower-income voters, rural voters, elderly voters, and voters of color who may lack convenient access to citizenship documentation. The registration infrastructure assault documented in Section 1.1 would be federally mandated through the SAVE Act; state-level SAVE Act analogs documented in Section 5.1 represent a secondary vector operating in parallel.
+
+**Senate math and defector vulnerability**: Republicans hold 53 seats. A SAVE Act filibuster requires 60 votes to invoke cloture. Republicans need 7 Democratic votes to reach 60 — a threshold that does not exist. The blocking threshold is 6 Republicans voting with Democrats (assuming Democratic unity at 51 votes). The April four (Collins, Murkowski, Tillis, McConnell) control the outcome unless three additional Republicans break. As of May 17, no additional defectors have been identified, but the May vote tests whether intensified pressure generates new breaks.
+
+**May escalation mechanism and defector cover**: Administration allies are arguing that procedural inflexibility on SAVE Act is electorally damaging to Republican midterm prospects, creating a secondary defection pathway: senators who accept the policy but resist filibuster elimination might reverse position if the frame shifts from "filibuster procedure" to "voter eligibility verification." Collins and Tillis have both signaled support for SAVE Act policy while opposing filibuster elimination — a distinction that exposes both to reframing pressure.
+
+**Integration note**: The SAVE Act Senate debate represents the highest-profile voting registration assault of May 2026. Cross-reference Domain 33 (State Legislative Autocratization) for the related ballot initiative suppression and state SAVE Act enactment strategies operating simultaneously. This section is a tactical escalation of existing voter registration suppression architecture documented in Sections 1-2.
+
+Sources: [The Hill: Senate Republicans escalate SAVE Act push (May 17, 2026)](https://thehill.com/homenews/senate/5844521-save-america-act-budget-package/); [Campaign Legal Center: SAVE Act May Senate Escalation Brief (May 2026)](https://campaignlegal.org/)
+
 ---
 
 ## Section 3: Pending Voting Rights Cases Affecting 2026 Midterms
