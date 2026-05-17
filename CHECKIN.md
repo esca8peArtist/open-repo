@@ -1,5 +1,33 @@
 # Check-in
 
+## Session 1121 (Orchestrator) — May 17, 2026, 06:42–07:45 UTC — Phase 2 Domain Pre-Research Complete + Phase 4b Ready ✅
+
+**Status**: **ALL Phase 2 domain pre-research complete and staged. Phase 4b Agricultural Intensification production-ready. Ready for May 18 Wave 1 user execution and May 28–June 1 decision gates.**
+
+### Since Last Check-in (Session 1120 → 1121)
+
+**Work Completed**:
+1. ✅ **Committed pending work**: Phase 4b Agricultural Intensification full document (6,500 words), Domain 59 pre-research (outline + sources), ORCHESTRATOR_STATE.md
+2. ✅ **Domain 57 Pre-Research Staging COMPLETE** (Exploration Queue)
+   - `DOMAIN_57_RESEARCH_OUTLINE.md` (6,800 words, 40 research questions)
+   - `DOMAIN_57_SOURCE_LIBRARY.md` (5,200 words, 57 sources, 15 organizational contacts)
+   - Status: Staged for July 1 full research phase (53-57 hours June 16-August 10 target)
+
+**Project Status**:
+- **resistance-research**: Phase 2 ALL PRE-RESEARCH COMPLETE
+  - Domains 59, 57 outlines/sources ready for production
+  - Phase 2 execution plan confirms sequencing (D56 May 28, D58 June 15, D59/57 research June-Aug)
+  - Wave 1 ready to execute May 18-20 (5 verified contacts, all 8 Gists live)
+  
+- **systems-resilience**: Phase 4b COMPLETE + DECISION-READY
+  - Agricultural Intensification full document ready (6,500 words, decision-ready June 1)
+  - Time-critical: May-June planting window closes June 15
+  - Options analysis complete (Ag/Education/Governance) awaiting June 1 user decision
+  
+- **stockbot**: May 19 checkpoint infrastructure ready (tomorrow 20:00 UTC)
+
+---
+
 ## Session 1120 (Orchestrator) — May 17, 2026, 05:17–06:30 UTC — Phase 2 Planning & Phase 4b Options Analysis ✅
 
 **Status**: **Phase 2 execution plan complete and ready for user decisions. Phase 4b options analysis enables immediate user selection. Two exploration queue items staged + committed.**
@@ -36,19 +64,35 @@
 - **Next checkpoint**: May 19 20:00 UTC (stockbot), Wave 1 starts May 18 (resistance-research user action)
 
 **Needs User Input**:
-1. **[NEW] systems-resilience Phase 4b scope decision**: By June 1, select Agricultural Intensification (recommended), Education/Knowledge Preservation, or Governance Scaling for June 2026 execution. Dual-option possible.
-2. **[ONGOING] resistance-research Phase 1 Wave 1 execution**: Batch 1 (5 verified contacts) scheduled May 18-20. Autonomous support ready if issues arise during execution.
-3. **[SCHEDULED] stockbot May 19 20:00 UTC checkpoint execution**: Infrastructure ready. User can observe or let run autonomously.
+1. **[CRITICAL TIMELINE] May 18-20: resistance-research Wave 1 execution** — Batch 1 (5 pre-verified contacts) scheduled to begin tomorrow. Contact list live. Autonomous support ready for issue resolution during execution.
+
+2. **[CRITICAL DEADLINE] June 1: systems-resilience Phase 4b scope decision** — Agricultural Intensification (recommended, time-critical perennial planning), Education/Knowledge Preservation (fastest, 13-19 hrs), or Governance Scaling (prerequisite for Phase 5). Single or dual-option selection. Zone 5 planting window closes June 15 — decision urgency is real.
+
+3. **[SCHEDULED] May 19 20:00 UTC: stockbot checkpoint execution** — Full infrastructure ready. Can run autonomously or you can observe execution.
+
+4. **[May 25-28] Phase 1 adoption assessment** — Review Tier 1 outreach results, assess adoption metrics across 7 constituencies. This assessment gates Phase 2 execution decisions (which domains, which sectors, velocity).
 
 ### Available Autonomous Work
-- **Phase 2 research prep**: Could stage Domains 57 and 59 outlines/source gathering if desired (optional, not blocking).
-- **Next after Wave 1 executes**: May 25-28 adoption assessment (triggering Phase 2 sequencing decisions).
+- Post-Wave-1 (May 20): Monitoring dashboard + Tier 2 contact verification
+- Post-Checkpoint (May 19): Gate 2 architecture analysis if Gate 1 PASS
+- Post-Phase-1-Decisions (May 28): Can begin Phase 2 research immediately (Domains 59/57 outlines staged + ready)
 
-### Next Major Events
-- **May 18-20**: resistance-research Wave 1 execution (user action)
-- **May 19 20:00 UTC**: stockbot checkpoint execution (user observation or autonomous)
-- **May 25-28**: Phase 1 adoption assessment + user review
-- **June 1**: Phase 4b scope decision deadline; Phase 2 execution begins
+### Next Major Events & Deadlines
+
+**IMMEDIATE (May 18-20)**:
+- **May 18 00:00 UTC+**: resistance-research Wave 1 execution begins (5 pre-verified contacts, Batch 1)
+- **May 19 20:00 UTC ±60min**: stockbot checkpoint execution (ready to run, no further prep needed)
+
+**DECISION GATES (May 25 - June 1)**:
+- **May 25-28**: resistance-research Phase 1 adoption assessment (user review of Tier 1 results)
+- **June 1**: 
+  - **CRITICAL**: systems-resilience Phase 4b scope decision (Ag/Education/Governance, single or dual)
+  - Phase 2 execution begins (Domains 59/57 research starts June 16)
+
+**CRITICAL TIMELINES**:
+- **Zone 5 Midwest planting window**: CLOSES June 15 (Ag Intensification perennial systems)
+- **Domain 57 UNGA deadline**: August 10 (requires July 1 research start)
+- **Resistance-research Phase 2 completion**: August 10 (Domains 59 + 57)
 
 ---
 
