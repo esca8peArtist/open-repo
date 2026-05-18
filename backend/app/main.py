@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import init_db, close_db
 from app.routes import router
+from app.api.v1.admin.federation_partners import router as federation_admin_router
 from app import __version__
 
 
@@ -47,6 +48,7 @@ def create_app() -> FastAPI:
 
     # Include routers
     app.include_router(router)
+    app.include_router(federation_admin_router)
 
     # Root endpoint
     @app.get("/")

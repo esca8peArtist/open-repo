@@ -14,7 +14,7 @@ from typing import Optional, Dict, Tuple, Any, List
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func, and_
 
-from app.models import Activity, ActivityType, Endorsement, EndorsementType
+from app.models import Activity, ActivityType, Endorsement, EndorsementType, FederationPartner, TrustStatus
 from app.http_signatures import HTTPSignatureUtils
 
 logger = logging.getLogger(__name__)
@@ -107,28 +107,115 @@ class EndorsementPropagationService:
         db: AsyncSession,
         activity: Activity,
         private_key: str,
+        node_url: Optional[str] = None,
     ) -> Dict[str, Tuple[bool, Optional[str]]]:
-        """Send Announce activity to all federation partners.
+        """Send Announce/Undo activity to all trusted federation partners.
+
+        Signs each outbound request with the local node's private key per
+        RFC 8017 + W3C ActivityPub HTTP Signatures, then POSTs the activity
+        JSON to each partner's ``/inbox`` endpoint.
+
+        Signing happens *before* queue submission; existing retry logic is
+        preserved — the Signature header is embedded in the request and
+        remains valid as long as the Date header skew is within ±60 s of
+        the partner's clock.
 
         Args:
-            db: Database session
-            activity: The Activity object to send
-            private_key: Private key for HTTP signature
+            db: Database session.
+            activity: The Activity object to send (Announce or Undo).
+            private_key: PEM-encoded RSA private key of the local node.
+            node_url: Base URL of this node used as ``keyId`` prefix.  When
+                omitted, falls back to the ``actor_url`` base or a sane
+                default.
 
         Returns:
-            Dict mapping partner_url to (success: bool, error_msg: optional)
+            Dict mapping partner base_url → (success: bool, error_msg: str|None).
+            Empty dict if no trusted partners are configured.
         """
-        results = {}
+        results: Dict[str, Tuple[bool, Optional[str]]] = {}
 
-        # For now, return empty results - federation_partners table not yet implemented
-        # When implemented, this will:
-        # 1. Query federation_partners table
-        # 2. For each partner, create HTTP signature and POST to inbox_url
-        # 3. Collect results and log failures
-        #
-        # This is a fire-and-forget operation - don't fail local vote if delivery fails
+        # --- Resolve local key_id for Signature header ---
+        if node_url:
+            local_key_id = f"{node_url}#main-key"
+        elif activity.actor_url:
+            # Strip "/actor" suffix if present to get the base node URL.
+            base = activity.actor_url.removesuffix("/actor")
+            local_key_id = f"{base}#main-key"
+        else:
+            local_key_id = "https://localhost#main-key"
 
-        logger.info(f"Announce activity {activity.activity_id} ready for federation (no partners configured yet)")
+        # --- Query trusted federation partners ---
+        try:
+            result = await db.execute(
+                select(FederationPartner).where(
+                    FederationPartner.trust_state == TrustStatus.TRUSTED
+                )
+            )
+            partners: List[FederationPartner] = list(result.scalars().all())
+        except Exception as exc:
+            logger.error("Failed to query federation partners: %s", exc)
+            return results
+
+        if not partners:
+            logger.info(
+                "Announce activity %s ready for federation (no trusted partners configured)",
+                activity.activity_id,
+            )
+            return results
+
+        body = json.dumps(activity.activity_data)
+        inbox_path = "/inbox"
+
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            for partner in partners:
+                inbox_url = f"{partner.base_url}{inbox_path}"
+                try:
+                    # --- Sign the request ---
+                    sig_headers = HTTPSignatureUtils.sign_request(
+                        method="POST",
+                        url=inbox_url,
+                        private_key_pem=private_key,
+                        key_id=local_key_id,
+                    )
+
+                    response = await client.post(
+                        inbox_url,
+                        content=body,
+                        headers={
+                            **sig_headers,
+                            "Content-Type": "application/ld+json",
+                        },
+                    )
+
+                    success = response.status_code in (200, 201, 202)
+                    if success:
+                        results[partner.base_url] = (True, None)
+                        logger.info(
+                            "Delivered %s to %s (HTTP %d)",
+                            activity.activity_id,
+                            partner.base_url,
+                            response.status_code,
+                        )
+                    else:
+                        error_msg = f"HTTP {response.status_code}"
+                        results[partner.base_url] = (False, error_msg)
+                        logger.warning(
+                            "Delivery of %s to %s failed: %s",
+                            activity.activity_id,
+                            partner.base_url,
+                            error_msg,
+                        )
+
+                except Exception as exc:
+                    error_msg = str(exc)
+                    results[partner.base_url] = (False, error_msg)
+                    logger.error(
+                        "Exception delivering %s to %s: %s",
+                        activity.activity_id,
+                        partner.base_url,
+                        exc,
+                    )
+
         return results
 
     @staticmethod

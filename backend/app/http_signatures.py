@@ -3,7 +3,7 @@
 import base64
 import hashlib
 from datetime import datetime
-from typing import Dict, Tuple
+from typing import Dict, Optional, Tuple
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.backends import default_backend
@@ -221,6 +221,66 @@ class HTTPSignatureUtils:
 
         except Exception:
             return False
+
+
+    @staticmethod
+    def sign_request(
+        method: str,
+        url: str,
+        private_key_pem: str,
+        key_id: str,
+        host: Optional[str] = None,
+        date: Optional[str] = None,
+    ) -> Dict[str, str]:
+        """Sign an outbound HTTP request and return headers to include.
+
+        Builds the canonical signing string from ``(request-target)``,
+        ``host``, and ``date``, signs it with the supplied private key, and
+        returns a dict of HTTP headers that must be attached to the outbound
+        request:
+
+        - ``Signature`` — the full Signature header value
+        - ``Date``       — RFC 7231-formatted date used in the signature
+        - ``Host``       — host extracted from *url* (or the override)
+
+        Args:
+            method: HTTP method in any case (e.g. ``"POST"``).
+            url: Full URL of the target endpoint (e.g.
+                ``"https://node-b.example.com/inbox"``).
+            private_key_pem: PEM-encoded RSA private key of the local node.
+            key_id: Key identifier URI (e.g.
+                ``"https://node-a.example.com#main-key"``).
+            host: Override for the ``Host`` header.  Defaults to the host
+                extracted from *url*.
+            date: Override for the ``Date`` header (RFC 7231 format).
+                Defaults to :func:`get_rfc7231_date`.
+
+        Returns:
+            Dict of HTTP headers to merge into the outbound request.
+        """
+        from urllib.parse import urlparse
+
+        parsed = urlparse(url)
+        request_host = host or parsed.netloc
+        request_date = date or get_rfc7231_date()
+        path = parsed.path or "/"
+        if parsed.query:
+            path = f"{path}?{parsed.query}"
+        request_target = f"{method.lower()} {path}"
+
+        signature_header = HTTPSignatureUtils.build_signature_header(
+            key_id=key_id,
+            private_key_pem=private_key_pem,
+            request_target=request_target,
+            host=request_host,
+            date=request_date,
+        )
+
+        return {
+            "Signature": signature_header,
+            "Date": request_date,
+            "Host": request_host,
+        }
 
 
 def get_rfc7231_date() -> str:
