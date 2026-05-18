@@ -17168,3 +17168,87 @@ Both remain unresolved; no new blockers discovered.
 
 **Token Usage**: ~5% Sonnet, well under budget
 
+
+---
+
+### Session 1281 (May 18, 20:50–22:20 UTC) — Parallel Pre-Checkpoint Infrastructure Validation + Phase 2 Wave 2 Framework
+
+**Status**: ✅ **COMPLETE — TWO CRITICAL QUEUE ITEMS DELIVERED IN PARALLEL. STOCKBOT CHECKPOINT INFRASTRUCTURE VALIDATED (91% GO). RESISTANCE-RESEARCH PHASE 2 WAVE 2 INFRASTRUCTURE READY.**
+
+**Parallel Agent Execution** (3.5 hours wall-clock):
+
+**Stockbot Agent — Checkpoint Infrastructure & Decision Framework**:
+- ✅ **Pre-Checkpoint Jetson Infrastructure Validation Report** (1,600 words)
+  - CPU/GPU: 91.2% idle, 100-cycle load max 0.479 ms
+  - Memory: 13.6% utilization, no leak detected
+  - Database: Max query 2.907 ms (34× below threshold)
+  - Disk: 131 GB free, 0% iowait
+  - Dependencies: All verified (alpaca-py 0.43.4, Python 3.12)
+  - Final confidence: **91% GO** (up from 87%)
+  - Two non-blocking issues documented (MSFT options ghost position, LightGBM feature mismatch)
+  - File: `projects/stockbot/jetson-pre-checkpoint-validation-report.md`
+
+- ✅ **Post-Checkpoint Outcome Decision Framework** (709 lines)
+  - Updated with Session 1280 engine restart context
+  - PASS probability revised 55–65% (based on 91% infrastructure confidence)
+  - Four scenario paths: PASS / NEAR-MISS / FAR-MISS-C1 / FAR-MISS-C2
+  - One-page decision matrix for <2-minute checkpoint response
+  - File: `projects/stockbot/post-checkpoint-outcome-framework.md`
+
+**Resistance-Research Agent — Phase 2 Wave 2 Preparation** (5 deliverables):
+
+- ✅ **Phase 2 Wave 2 Research Activation Timeline**
+  - Per-outcome hours: STRONG 178h, MODERATE 168h, WEAK 154h
+  - Critical path: Domain 59 Section 5 outline before prose writing
+  - Domain 42 sub-batch May 21 if unsent (7 days to deadline)
+  - File: `phase-2-wave-2-research-activation-timeline.md`
+
+- ✅ **Tier 2 Organizational Expansion** (91 contacts across 5 sectors)
+  - New: faith coalition (15 contacts)
+  - High-leverage multipliers: CLINIC (immigration), Jobs with Justice (labor)
+  - Five sector-specific email templates (labor/immigration/civil rights/academic/faith)
+  - File: `phase-2-tier-2-organizational-expansion.md`
+
+- ✅ **Media Strategy** (NO media before Tier 2 first wave rule)
+  - Preserve primary-audience relationships
+  - Exception: If Score 5 (public citation), coordinate within 48h
+  - Under WEAK: Media restricted to 3 external-deadline hooks
+  - File: `phase-2-media-strategy.md`
+
+- ✅ **Phase 1→Phase 2 Bridge Contingency**
+  - Key finding: Universal Score 1 (all reply, none engage) = EXPECTED/MODERATE (not WEAK)
+  - May 21 decision tree: Score 5 override → Elias quality → engagement scoring
+  - Messaging adaptation: Organization-level descriptions, no names without consent
+  - File: `phase-1-to-phase-2-bridge-contingency.md`
+
+- ✅ **Domain 42 DEA Hearing Outreach Prep**
+  - Five new domain-expert contacts identified (Beletsky, Werb, Reddy, Caplan, DPA escalation)
+  - SSDP student network = highest-volume multiplier (dozens of chapters)
+  - Compressed execution: All waves May 21–24 if Category A unsent
+  - File: `phase-2-domain-42-comment-submission-outreach.md`
+
+**Projects Touched**:
+- stockbot (infrastructure validation + decision framework)
+- resistance-research (Phase 2 activation infrastructure)
+
+**Key Findings**:
+- Jetson infrastructure: **91% confidence GO** for May 19 20:00 UTC checkpoint
+- Stockbot checkpoint outcome pathways: All four scenarios have executable decision trees
+- Resistance-research Wave 2: Infrastructure complete for all three activation scenarios (STRONG/MODERATE/WEAK)
+- Critical insight: Universal low-engagement (Score 1) is expected under MODERATE, not WEAK — indicates messaging pivot opportunity, not content failure
+
+**Checkpoint Status**: May 19 20:00 UTC checkpoint execution **READY**
+- Infrastructure validated
+- Decision framework prepared
+- Pre-checkpoint execution steps specified
+- Probability of PASS outcome: 55–65%
+
+**Next Autonomous Work**:
+- May 19 20:00 UTC: Stockbot checkpoint execution (may14_checkpoint_query_alpaca.py) — **User action or autonomously execute**
+- May 20 morning: Resistance-research read early Wave 1 signals (post-send monitoring)
+- May 21 10:30 UTC: Resistance-research Item 61 Wave 1 synthesis framework (signal classification + path activation)
+- May 21 14:00 UTC: User gate to approve Phase 2 path (STRONG/MODERATE/WEAK activation)
+
+**Token Usage**: ~91K Sonnet (parallel agent execution)
+
+**Commit**: bc0efd8a (chore(orchestrator): Session 1281 — Pre-checkpoint infrastructure validation + Phase 2 Wave 2 framework complete)
