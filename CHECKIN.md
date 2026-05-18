@@ -15,19 +15,63 @@
 - Checkpoint execution: 20:00 UTC May 19
 
 **Items needing user input**:
-- **BY 06:00 UTC** (~3.5 hours): Complete 6 Wave 1 setup actions (~50 min total)
-  1. Gist view count baseline (10 min, logged in as esca8peArtist)
-  2. Google Sheets tracking workbook (15 min)
-  3. Calendar reminders × 9 (2 min)
-  4. Google Alerts × 5 (10 min)
-  5. Test email send & confirm delivery (5 min)
-  6. Confirm Elias Callais draft language (2 min)
+- **BY 06:00 UTC** (~3 hours from 02:54 UTC): Complete 6 Wave 1 setup actions (~50 min total) [ORCHESTRATOR STATUS: ALL INFRASTRUCTURE VERIFIED LIVE]
+  
+  **Setup Task Checklist** (do in order, 10-15 min setup + 35-40 min monitoring/prep):
+  
+  1. **Gist view count baseline** (10 min) — logged in as esca8peArtist
+     - Open https://gist.github.com/esca8peArtist/2dec7fd03b08ab5b41c55d402f44c261 (main proposal)
+     - Open https://gist.github.com/esca8peArtist/1277f5d5bcb0fe46604bbaba8fa37fd0 (Domain 37)
+     - Record baseline view counts in WAVE_1_MONITORING_DASHBOARD.md (create if missing)
+     - **Orchestrator note**: All 5 Gists verified live & accessible (HTTP 200)
+  
+  2. **Google Sheets tracking workbook** (15 min)
+     - Create sheet with columns: Contact Name | Organization | Send Time | Status | Response Date | Notes
+     - Include Batch 1 contacts: Weiser, Elias, Goodman, Chenoweth, Bassin (in send order)
+     - Add section for tracking Gist view count deltas
+  
+  3. **Calendar reminders** (2 min)
+     - 08:00 UTC: Batch 1 send block starts (5 emails, 30-min intervals)
+     - 10:30 UTC: Phase 1 measurement begins (check Gist view counts)
+     - 20:00 UTC May 19: Stockbot checkpoint execution
+  
+  4. **Google Alerts** (10 min)
+     - 2026 election | DOJ voter litigation | Callais | redistricting | voting rights
+     - Set frequency: 2× daily during May 18-20 execution window
+  
+  5. **Test email send** (5 min)
+     - Send test email to yourself from the account you'll use for Batch 1 sends
+     - Confirm: arrives in inbox (not spam), formatting intact, Gist links working
+     - If lands in spam: resolve before proceeding (see PHASE_1_LAUNCH_RISK_PLAYBOOK.md)
+  
+  6. **Confirm Elias Callais language** (2 min)
+     - Verify that Domain 37 (or email template) references Callais v. Landry as "decided April 29, 2026" (not "pending")
+     - This is a domain-currency check — if the template still says "pending", it signals staleness
+
+---
+
+## Wave 1 Execution Timeline (May 18, 2026)
+
+**Current time**: 02:54 UTC  
+**Setup deadline**: 06:00 UTC (in ~3 hours)  
+**Execution window**: 06:00–18:00 UTC (12 hours)
+
+| Time | Task | Owner | Notes |
+|------|------|-------|-------|
+| 02:54 UTC | *Current time — setup tasks available* | User | 6 setup tasks, ~50 min |
+| 06:00 UTC | **Setup deadline** | User | If incomplete, flag delay to Discord |
+| 07:00–09:00 UTC | **Pre-flight checks** | Orchestrator | Gist access, contact verification, template scan, spreadsheet baseline, test email |
+| 08:00–12:00 UTC | **Batch 1 send window** | User | 5 emails, 30-min stagger (Weiser → Elias → Goodman → Chenoweth → Bassin) |
+| 10:30 UTC | **Phase 1 measurement begins** | Orchestrator | Gist view counts, response tracking |
+| Day 7 (May 25) | **Response rate assessment** | Orchestrator | Target: 2+ substantive replies |
+
+**If setup is incomplete by 06:00 UTC**: Delay to May 19, 07:00 UTC window. This shifts all subsequent timelines +24 hours. Notify via Discord.
 
 **Suggested priorities for next session**:
-1. Complete Wave 1 user setup by 06:00 UTC
-2. Execute Batch 1 sends 08:00–10:00 UTC
-3. Monitor seedwarden Gate 1 (TODAY May 18, create accounts)
-4. Pre-checkpoint validation 19:00 UTC May 19
+1. Complete Wave 1 user setup by 06:00 UTC (TODAY)
+2. Execute Batch 1 sends 08:00–12:00 UTC (TODAY)
+3. Monitor seedwarden Gate 1 (TODAY May 18, create accounts — separate from Wave 1)
+4. Pre-checkpoint validation 19:00 UTC May 19 (stockbot)
 
 ---
 
