@@ -746,8 +746,8 @@ Goal: Create completion verification procedures for Track B user gates (Gates 1,
 
 ## Queued Items (Session 1005 — 2026-05-13, three new autonomous items added)
 
-### ⏳ Item 40: Seedwarden Phase 3 Herbalist Expert Network Pre-Staging
-**Status**: QUEUED (Session 1005, May 13 2026, 21:50 UTC)
+### ✅ Item 40: Seedwarden Phase 3 Herbalist Expert Network Pre-Staging
+**Status**: COMPLETE (Session 1005, May 13 2026, 21:50 UTC — VERIFIED Session 1247, May 18 2026, 19:26 UTC)
 **Impact**: HIGH — Phase 3 research starts June 1 (19 days); pre-staging herbalist contacts eliminates friction at research start
 **Goal**: Pre-stage expert network and interview framework for medicinal herb research (Domains: Women's Health, Respiratory, Immunity, Sleep, Digestive).
 1. **Herbalist contact identification** (20-25 practitioners, academic herbalists, ethnobotanists): academic institutions with herbal medicine programs, clinical herbalist associations, permaculture/homesteading networks
