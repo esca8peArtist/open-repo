@@ -2,6 +2,18 @@
 
 ---
 
+## May 18, 2026 — Wave 1 Early-Signal Monitoring + Item 61 Synthesis Prep
+
+**Status**: COMPLETE
+
+### Monitoring + Prep Session (Post-Send, ~20:00 UTC)
+
+`WAVE_1_SYNTHESIS_FRAMEWORK_PREP.md` — Created. Pre-analysis document for use by May 21 Item 61 session. Covers: (1) Early-signal monitoring status — no inbox/Bitly access available to agent; no signals observable at 10-hour mark, which is within expected norms; (2) Contingency path likelihood assessment — MODERATE most probable (~50-60%) at 72h gate, driven by Elias and one policy org contact; STRONG possible (~15-25%) if Elias + Weiser/Bassin both respond; WEAK requires all 3 policy/litigation contacts to be silent (likely delivery failure, not content failure); (3) Fastest-to-slowest reply projection: Elias → Bassin → Weiser → Goodman → Chenoweth; (4) Batch 2 pre-prep targets: Hasen/UCLA, Stephanopoulos/Harvard, Metzger/Columbia (verify current emails), domain 42 sub-batch status confirmation; (5) May 21 synthesis deliverables structure: 5 required outputs including classification record, Batch 2 path activation, Domain 42 state AG sends, CHECKIN.md update, Phase 2 authorization framing for 14:00 gate; (6) Risk flags: Domain 42 sub-batch (DPA/NORML/ACLU/Sentencing Project/LEAP) status unclear — may be unsent, must execute May 21 before any other work; Domain 56 May 28 distribution execution prep needed this week; (7) May 21 session priority sequence; (8) May 25 secondary gate scope. ~2,000 words.
+
+**Key finding**: Domain 42 DEA sub-batch (DPA, NORML, ACLU, Sentencing Project, LEAP) shows "DRAFTED — ready to send" status in BATCH_1_CONTACT_LOG.md with send dates blank as of May 13. May 21 session must confirm whether these were sent May 14-20 and execute if not — this is the highest-priority task of the May 21 session given the May 28 hard deadline.
+
+---
+
 ## May 18, 2026 — Item 61: Wave 1 Synthesis Framework (WAVE_1_SYNTHESIS_FRAMEWORK.md)
 
 **Status**: COMPLETE
