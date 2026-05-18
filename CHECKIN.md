@@ -1,3 +1,64 @@
+## Session 1230 (Orchestrator) — May 18, 2026 09:45 UTC – [ongoing] — Wave 1 Post-Execution Monitoring & Response Signal Capture
+
+**Status**: 🟢 **WAVE 1 IN FINAL STAGES (09:45 UTC, 15 minutes to completion at 10:00 UTC)** — Monitoring protocol activated, all frameworks staged, awaiting H+0 baseline metrics from user.
+
+### What You Need To Do (Next 72 Hours)
+
+**May 18, 10:00–10:30 UTC** (NOW → 45 minutes):
+1. **Wave 1 final send** (10:00 UTC): Marc Elias receives email at melias@elias.law
+2. **Bounce check** (10:15 UTC): Scan sent folder for any delivery failures. Record: "X bounces received"
+3. **H+0 Gist baselines** (10:30 UTC): Check each of 5 Gists in incognito browser. Record view counts:
+   - Main proposal baseline: ___
+   - Executive summary baseline: ___
+   - Litigation tracker baseline: ___
+   - Domain 37 baseline: ___
+   - Domain 42 baseline: ___
+4. **Enter H+0 into WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv** (row 1, "Post-Send Baseline" timestamp)
+
+**May 18, 10:30–15:00 UTC** (H+0.5 through H+6):
+- **Hourly checks** at H+1, H+3, H+6 (10:00, 12:00, 15:00 UTC)
+- **Look for**: Bounces, out-of-office replies (positive signal = confirms delivery), Gist view count deltas, any early substantive replies
+- **Log into**: WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv (all 5 rows) + WAVE_1_RESPONSE_TRACKING_TEMPLATE.md
+
+**May 18, 15:00 UTC – May 19, 09:00 UTC** (H+6 through H+24) — **CRITICAL WINDOW**:
+- **Continue hourly monitoring** at H+8, H+12, H+24 (17:00, 21:00, 09:00 UTC May 19)
+- **Watch for**: First-day engagement patterns, reply rate trajectory, domain interest concentration
+- **Critical metric**: H+24 reply rate (target 10-15%, minimum viable 5%, early warning <0%)
+
+**May 19-20, Morning**: **BATCH 2 TIMING DECISION**:
+- Based on H+24 metrics, use POST_WAVE_1_AMPLIFICATION_COORDINATION.md Section 2 decision tree
+- **Strong response (≥60% reply rate)**: Trigger Batch 2 May 20 morning (17:00 UTC May 19)
+- **Moderate response (25-59%)**: Execute Batch 2 May 21 as planned
+- **Weak response (<25%)**: Run Contingency B (pause and reframe)
+
+**May 21-31**: **Execute POST_WAVE_1_AMPLIFICATION_COORDINATION.md**:
+- Batch 2-3 sequencing (user triggers pull)
+- Media outreach (policy reporters, mainstream, trade press)
+- Domain 42 amplification (May 21-31, culminating at May 28 DEA hearing)
+
+### Deliverables Ready For You
+
+**All monitoring frameworks complete and committed**:
+- POST_WAVE_1_PHASE_1_MEASUREMENT_FRAMEWORK.md — operational reference (hourly checkpoints, reply taxonomy, contingency scenarios)
+- POST_WAVE_1_AMPLIFICATION_COORDINATION.md — Batch 1-3 timing, media calendar, Domain 42 surge plan
+- WAVE_1_ENGAGEMENT_SCORING_CALCULATOR.csv — ready for H+0 → H+72 data entry
+- WAVE_1_RESPONSE_TRACKING_TEMPLATE.md — engagement scoring (0-5 scale), sentiment classification
+
+### Needs Your Input
+
+**Immediate (May 18 10:30 UTC)**: H+0 baseline Gist view counts (incognito check)
+**Ongoing (May 18-21)**: Hourly response monitoring + data entry into tracking files
+**May 19 morning**: Batch 2 timing decision (strong/moderate/weak response path)
+
+### Suggested Priorities
+
+1. **May 18 10:00–10:30 UTC**: Complete Wave 1 bounce check + Gist baseline snapshot (45 min task)
+2. **May 18-21**: Keep hourly monitoring active, especially H+24 (May 19 09:00 UTC) decision point
+3. **May 20 morning**: Batch 2 trigger (if strong signals observed)
+4. **May 21-31**: Parallel execution of Batches 2-3 + media outreach per Item 58
+
+---
+
 ## Session 1229 (Orchestrator) — May 18, 2026 09:24–10:40 UTC — Wave 1 Post-Execution Amplification Framework + Exploration Queue Verification Complete
 
 **Status**: 🟢 **WAVE 1 COMPLETE (10:00 UTC) — ITEM 58 CREATED (POST-WAVE-1 AMPLIFICATION COORDINATION) — MONITORING PHASE ACTIVE**
