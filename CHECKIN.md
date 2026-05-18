@@ -1,6 +1,21 @@
+## Session 1220 (Orchestrator) — May 18, 2026 06:43–06:50 UTC — Wave 1 Infrastructure Verification Complete
+
+**Status**: 🟢 **WAVE 1 INFRASTRUCTURE LIVE — READY FOR 08:00 UTC BATCH 1 SENDS**
+
+**Critical findings**:
+- ✅ **All 6 Gists live** (HTTP 200 verified, 06:45 UTC)
+- ✅ **All email templates ready** (272 lines, verified)
+- ✅ **All contact lists verified** (9 contact files staged)
+- ✅ **Measurement system staged** (monitoring dashboard + calculator ready)
+- ✅ **Stockbot pre-checkpoint audit complete** — All infrastructure ready for May 19 20:00 UTC checkpoint
+
+**User setup window**: 07:00–08:00 UTC (flexible deadline, was 06:00 UTC per prior assessment). Complete the 6 setup actions below.
+
+**Next milestone**: Batch 1 sends 08:00–10:00 UTC (1 hour 10 minutes away)
+
 ---
 
-## Needs Your Input (May 18, 06:29 UTC)
+## Needs Your Input (May 18, 06:50 UTC)
 
 ### URGENT — Wave 1 User Setup Actions (DEADLINE PASSED: 06:00 UTC)
 **Time window: 07:00–08:00 UTC (31 min remaining)**
