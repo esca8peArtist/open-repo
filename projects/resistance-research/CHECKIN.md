@@ -1,6 +1,40 @@
 # CHECKIN — Needs Your Input
 
-*Updated: May 18, 2026 — Domain 56 Wave 1 distribution infrastructure staged*
+*Updated: May 19, 2026 — Post-Wave-1 monitoring verification complete; synthesis infrastructure and DEA deadline tracking ready*
+
+---
+
+## DOMAIN 42 DEA — URGENT: CHECK SEND STATUS TODAY (May 19, 2026)
+
+**Hard deadline**: May 28 (9 days). Participation notice to nprm@dea.gov, Docket No. DEA-1362.
+
+**Action needed now**: Open `BATCH_1_CONTACT_LOG.md` Domain 42 section. Check whether Category A sub-batch (DPA, MPP, NORML, LEAP, ACLU Criminal Law Reform, Sentencing Project, SSDP — 7 organizations) has been sent. As of May 13, these showed blank send dates.
+
+- **If Category A is unsent**: May 21 is the last viable execution day (gives organizations 7 days to file a brief participation notice). Execute the compressed calendar in `post-wave-1-monitoring/may28-dea-deadline-tracking.md`.
+- **If Category A has been sent**: Check B, Admin Law Faculty, and C for send status. Update the tracking table.
+
+**Full contact list + send status table + compressed May 21–28 calendar**: `post-wave-1-monitoring/may28-dea-deadline-tracking.md`
+
+This track is path-independent — execute regardless of Wave 1 classification outcome.
+
+---
+
+## WAVE 1 MONITORING — MAY 19–21 (May 19, 2026)
+
+**Status**: Monitoring window open through May 21, 10:30 UTC. Synthesis at May 21, 19:00–20:00 UTC. Zero responses at May 18, 22:53 UTC (baseline, expected).
+
+**Your monitoring tool**: Use `post-wave-1-monitoring/monitoring-dashboard-may19-21.md` for daily checks. It's a faster fill-in form than the signal log. Transfer any signals to `wave-1-signal-log-may18-21.md` after each check.
+
+**Daily checks**:
+- May 19 morning (~14:00 UTC): Policy org contacts (Bassin, Elias, Weiser) have had their first full business day. Key question: Has Elias replied with case-specific content?
+- May 19 evening (~22:00 UTC): Has either Weiser or Bassin replied at Score 3+?
+- May 20 morning (~10:00 UTC): Elias 48-hour anomaly window opens. A reply from Elias with case-specific content now = STRONG for immigration legal aid constituency.
+- May 20 evening (~22:00 UTC): Weiser/Bassin second-chance window. Update Day 2 snapshot in signal log.
+- May 21 morning (before 10:30 UTC): 72-hour window closes. Capture final pre-synthesis data.
+- May 21 14:00 UTC: Preliminary gate — flag ONLY if Score 4+ signal present.
+- May 21 19:00–20:00 UTC: Execute synthesis (`post-wave-1-monitoring/may21-synthesis-execution-checklist.md`). Post result in CHECKIN.md using the template in that file.
+
+**If strong signal arrives before synthesis**: Flag here immediately as "PRELIMINARY STRONG SIGNAL — [contact], Score [X], [content]."
 
 ---
 

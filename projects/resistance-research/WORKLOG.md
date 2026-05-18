@@ -2,6 +2,56 @@
 
 ---
 
+## May 19, 2026 — Post-Wave-1 Monitoring Verification + Synthesis Preparation
+
+**Status**: COMPLETE
+
+### Deliverables (4 files created in `post-wave-1-monitoring/`)
+
+1. **`post-wave-1-monitoring/may21-synthesis-execution-checklist.md`** — Step-by-step May 21 19:00–20:00 UTC synthesis execution checklist. Under 30 minutes. Covers pre-synthesis reads, Part 1 data assembly, classification formula (Part 2), path-activation decision (Part 3), and CHECKIN.md post with exact template. Executable by single operator without consulting any companion file. Corrects timing from the skeleton's "20:00 UTC" execute time to "19:00 UTC begin / 20:00 UTC post" — consistent with the skeleton's own Part 6 guidance.
+
+2. **`post-wave-1-monitoring/phase-2-path-activation-summary.md`** — One-page decision guide for the May 21 user gate. All three paths (STRONG/MODERATE/WEAK) with triggering conditions, immediate actions, Phase 2 domain sequence, and Tier 2 activation timing. Structured as a lookup table — find your classification at the top, read down for the decision. Includes TOO EARLY branch. No companion documents required.
+
+3. **`post-wave-1-monitoring/may28-dea-deadline-tracking.md`** — May 28 DEA deadline tracking document. Contact list (all 24+ contacts from domain-42-dea-briefing-contacts.md consolidated with 5 new contacts from phase-2-domain-42-comment-submission-outreach.md), compressed May 21–28 execution calendar, send status tracking table, critical path verification checklist, and submission protocol. Flags that as of May 19 the Category A sub-batch (DPA, MPP, NORML, LEAP, ACLU, Sentencing Project, SSDP) is still showing blank send dates in BATCH_1_CONTACT_LOG.md — this is the most urgent item in the entire monitoring window.
+
+4. **`post-wave-1-monitoring/monitoring-dashboard-may19-21.md`** — Signal monitoring dashboard template with pre-built May 19, 20, and 21 sections. Structured as a daily two-check form (morning + evening) with one-row signal log entries, Gist delta table, delivery confirmation checklist, and key-question decision trigger for each day. Operationalizes the wave-1-signal-log-may18-21.md cadence as a faster fill-in form for the user's daily monitoring checks.
+
+### Verification findings
+
+**Signal log** (`wave-1-signal-log-may18-21.md`): Correctly structured. Baseline captured at May 18 22:53 UTC (0 responses, expected). May 19, 20, and 21 snapshot sections are pre-built with [fill] fields. No structural gaps. The document is ready to receive daily entries.
+
+**Preliminary signal analysis** (`preliminary-signal-analysis-may18.md`): Baseline metrics are clear and comparison-ready. Response rate = 0/5 (0%), expected given 14h elapsed. Expected distribution by constituency documented (Elias: 24–48h window; Weiser/Bassin: 48–120h; Goodman/Chenoweth: 5–10 days). Path activation indicators for STRONG/MODERATE/WEAK documented in Section 4. Update log has May 19/20/21 rows pre-built; May 19 row should be filled at evening check.
+
+**Synthesis framework** (`wave-1-synthesis-framework-skeleton.md`): All five parts confirmed complete and executable. No structural gaps. The timing in Part 5 says "14:00 UTC preliminary gate" — this is correct, though the task brief specifies 19:00–20:00 UTC as the execution window. Clarified in the synthesis checklist: user gate at 14:00 UTC is for early strong signals; main synthesis execution runs 19:00–20:00 UTC.
+
+**Phase 2 path documents**: All three path scenarios (STRONG/MODERATE/WEAK) are documented across `phase-2-preparation/phase-1-to-phase-2-bridge-contingency.md`, `PHASE_2_OUTCOME_LAUNCH_ROADMAP.md`, and `MAY_21_31_BATCH_2_3_COORDINATION_FRAMEWORK.md`. One gap found and resolved: no single-page lookup document existed that could be used at the May 21 gate without reading across three companion files. `phase-2-path-activation-summary.md` resolves this.
+
+**Domain 42 DEA tracking** (`phase-2-preparation/phase-2-domain-42-comment-submission-outreach.md`): May 28 deadline tracked, all contacts documented, 5 additional domain-expert contacts identified. URGENT finding: as of May 13, Category A sub-batch (DPA, MPP, NORML, LEAP, ACLU, Sentencing Project, SSDP — 7 organizations) showed blank send dates in BATCH_1_CONTACT_LOG.md. If these have not been sent, May 21 is the last viable day to execute the full compressed sequence. Flagged in CHECKIN.md.
+
+### Session context
+Wave 1 distribution confirmed complete May 18, 08:00–10:00 UTC. Now 33+ hours post-send. Monitoring window open through May 21 10:30 UTC. Synthesis at May 21 19:00–20:00 UTC. Domain 42 May 28 deadline is 9 days out as of May 19.
+
+---
+
+## May 18, 2026 — Post-Wave-1 Monitoring Infrastructure
+
+**Status**: COMPLETE
+
+### Deliverables (3 files created)
+
+**Directory created**: `projects/resistance-research/post-wave-1-monitoring/`
+
+1. **`post-wave-1-monitoring/wave-1-signal-log-may18-21.md`** — Running daily ledger of all Batch 1 response signals (replies, OOOs, bounces, Gist deltas) from May 18–21. Structured for daily updates through the 72-hour window. May 18 24-hour snapshot captured at 22:53 UTC: zero responses, within expected range. Per-day snapshot sections pre-built for May 19, 20, and 21. Contains signal category reference (STRONG/MODERATE/WEAK/ADMINISTRATIVE) and score reference. Companion to WAVE_1_RESPONSE_TRACKING_TEMPLATE.md.
+
+2. **`post-wave-1-monitoring/preliminary-signal-analysis-may18.md`** — First 24-hour analysis document. Baseline: 0 responses at 22:53 UTC. Documents expected response distribution by constituency (Tier 1: Elias, 24–48h; Tier 2: Weiser/Bassin, 48–120h; Tier 3: Goodman/Chenoweth, 5–10 days). Monitoring plan for May 19–20–21. Early path-activation indicators for STRONG/MODERATE/WEAK classification. Delivery status protocol. Update log section for daily maintenance.
+
+3. **`post-wave-1-monitoring/wave-1-synthesis-framework-skeleton.md`** — Executable skeleton for May 21 20:00 UTC synthesis task. Five parts: (1) data assembly table; (2) classification formula with Score 5 override and Quality Reply Points thresholds; (3) path-activation decision tree for all four branches (STRONG/MODERATE/WEAK/TOO EARLY) with immediate actions and Phase 2 domain sequences; (4) signal classification rubric; (5) user gate structure for May 21 preliminary (14:00 UTC), May 21 primary synthesis (20:00 UTC), and May 25 final gate. Ready to execute without consulting additional files.
+
+### Session context
+Batch 1 send completed May 18 08:00–10:00 UTC (5 contacts: Goodman, Weiser, Chenoweth, Bassin, Elias). 72-hour monitoring window opened. All three files built from PHASE_2_OUTCOME_LAUNCH_ROADMAP.md constituency threshold framework, WAVE_1_SYNTHESIS_AND_PHASE_2_DECISION_FRAMEWORK.md classification formula, and WAVE_1_DAILY_MONITORING_TEMPLATE.md monitoring cadence. No research actions required until May 21 synthesis or May 25 final gate.
+
+---
+
 ## May 18, 2026 — Phase 3 Strategic Roadmap
 
 **Status**: COMPLETE
